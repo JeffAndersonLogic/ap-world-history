@@ -5,6 +5,9 @@
  */
 window.BEHISTORICAL_TEACHING = {
   meta: {
+    omits: {
+      beready: 'Built and taught before the BeReady standard was added on 2026-09-22. Add one on the next revision of this deck.'
+    },
     topic: '2.1',
     date: 'Thursday, September 17, 2026',
     cohort: 'Green',
@@ -95,7 +98,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'launch', kind: 'process', eyebrow: 'The Lesson in One Chain',
+      retelling: true, phase: 'launch', kind: 'process', eyebrow: 'The Lesson in One Chain',
       title: 'Demand + Systems -> Trade Growth',
       steps: [
         { label: 'DEMAND', text: 'Luxury goods are worth moving' },

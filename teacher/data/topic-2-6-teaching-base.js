@@ -36,17 +36,18 @@ window.BEHISTORICAL_TEACHING = {
 
   flow: [
     { id: 'preflight', label: 'Teacher Preflight', range: 'Before class', minutes: 2, teacher: 'Protect the balance: crops and pathogens, not just plague.', students: 'Not projected.', slide: 1 },
-    { id: 'recap', label: 'Unit Recap', range: '0-6', minutes: 6, teacher: 'Connect 2.6 back to 2.1-2.5.', students: 'Name what moved before today.', slide: 2 },
-    { id: 'turn', label: 'The Turn: Living Things', range: '6-13', minutes: 7, teacher: 'Introduce biological corridors.', students: 'Predict what else moves.', slide: 3 },
-    { id: 'spine', label: 'Three Big Rocks', range: '13-18', minutes: 5, teacher: 'Give students the whole model.', students: 'Copy the three-part frame.', slide: 4 },
-    { id: 'first10', label: 'First & 10', range: '18-28', minutes: 10, teacher: 'Read for two branches: crops and pathogens.', students: 'Annotate examples + consequences.', slide: 5 },
-    { id: 'crops', label: 'Cargo #1: Crops', range: '28-46', minutes: 18, teacher: 'Teach each crop as evidence with a consequence.', students: 'Build one crop causal chain.', slide: 6 },
-    { id: 'cropcheck', label: 'Checkpoint 1', range: '46-52', minutes: 6, teacher: 'Require because language.', students: 'Explain one crop effect.', slide: 9 },
-    { id: 'pathogens', label: 'Cargo #2: Pathogens', range: '52-68', minutes: 16, teacher: 'Teach plague as connectivity vulnerability.', students: 'Explain why route density matters.', slide: 10 },
-    { id: 'power', label: 'Power of the Network', range: '68-75', minutes: 7, teacher: 'Avoid moralizing: networks became powerful.', students: 'Explain same cause, opposite effect.', slide: 12 },
-    { id: 'chains', label: 'Twin Causal Chains', range: '75-83', minutes: 8, teacher: 'Make students rehearse the side-by-side model.', students: 'Write both chains.', slide: 13 },
-    { id: 'verb', label: 'Explain Means Because', range: '83-88', minutes: 5, teacher: 'Turn memory into AP writing.', students: 'Upgrade a list into an explanation.', slide: 14 },
-    { id: 'close', label: 'Landing Sentence', range: '88-90', minutes: 2, teacher: 'Land the answer and bridge to 2.7.', students: 'Say the topic in one sentence.', slide: 15 }
+    { id: 'beready', label: 'BeReady', range: '0-4', minutes: 4, teacher: 'Retrieve Topic 2.5 and bridge to accidental cargo.', students: 'Answer from memory.', slide: 2 },
+    { id: 'recap', label: 'Unit Recap', range: '4-6', minutes: 2, teacher: 'Connect 2.6 back to 2.1-2.5.', students: 'Name what moved before today.', slide: 3 },
+    { id: 'turn', label: 'The Turn: Living Things', range: '6-13', minutes: 7, teacher: 'Introduce biological corridors.', students: 'Predict what else moves.', slide: 4 },
+    { id: 'spine', label: 'Three Big Rocks', range: '13-18', minutes: 5, teacher: 'Give students the whole model.', students: 'Copy the three-part frame.', slide: 5 },
+    { id: 'first10', label: 'First & 10', range: '18-28', minutes: 10, teacher: 'Read for two branches: crops and pathogens.', students: 'Annotate examples + consequences.', slide: 6 },
+    { id: 'crops', label: 'Cargo #1: Crops', range: '28-46', minutes: 18, teacher: 'Teach each crop as evidence with a consequence.', students: 'Build one crop causal chain.', slide: 7 },
+    { id: 'cropcheck', label: 'Checkpoint 1', range: '46-52', minutes: 6, teacher: 'Require because language.', students: 'Explain one crop effect.', slide: 10 },
+    { id: 'pathogens', label: 'Cargo #2: Pathogens', range: '52-68', minutes: 16, teacher: 'Teach plague as connectivity vulnerability.', students: 'Explain why route density matters.', slide: 11 },
+    { id: 'power', label: 'Power of the Network', range: '68-75', minutes: 7, teacher: 'Avoid moralizing: networks became powerful.', students: 'Explain same cause, opposite effect.', slide: 13 },
+    { id: 'chains', label: 'Twin Causal Chains', range: '75-83', minutes: 8, teacher: 'Make students rehearse the side-by-side model.', students: 'Write both chains.', slide: 14 },
+    { id: 'verb', label: 'Explain Means Because', range: '83-88', minutes: 5, teacher: 'Turn memory into AP writing.', students: 'Upgrade a list into an explanation.', slide: 15 },
+    { id: 'close', label: 'Landing Sentence', range: '88-90', minutes: 2, teacher: 'Land the answer and bridge to 2.7.', students: 'Say the topic in one sentence.', slide: 16 }
   ],
 
   quickLaunch: [
@@ -81,12 +82,34 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
+      phase: 'beready', kind: 'process', eyebrow: 'BeReady · 4 Minutes · No Notes',
+      title: 'Pull the network story back from memory.',
+      subtitle: 'Short answers are enough. Retrieve first; we will build from them.',
+      steps: [
+        { label: 'BELIEF', text: 'Name one belief system that spread along a trade network, and the network it used.' },
+        { label: 'TECHNOLOGY', text: 'Name one technology that moved from one region to another.' },
+        { label: 'CITIES', text: 'Why could a network make one city boom and let another decline?' },
+        { label: 'BRIDGE', text: 'People chose to carry goods and ideas. What moved on these routes that nobody chose to carry?' }
+      ],
+      footer: 'Retrieve -> connect -> enter the new problem.',
+      notes: {
+        minutes: 4,
+        land: [
+          'No notes. Take fast verbal answers and do not reteach Topic 2.5.',
+          'Accept brief evidence: Buddhism or Islam and a route; paper, printing, gunpowder, or navigation tools; a city rising at a node, or declining when routes shifted.'
+        ],
+        ask: 'What could ride along on a caravan or a ship without anyone meaning to bring it?',
+        listenFor: 'Seeds, animals, insects, rats, fleas, germs, disease.',
+        ap: 'Retrieval + contextualization: yesterday was intentional transfer; today is accidental biological transfer on the same networks.'
+      }
+    },
+    {
       phase: 'recap', kind: 'hero', eyebrow: 'AP World History · Topic 2.6',
       title: 'The Cargo Nobody Ordered',
       subtitle: 'In 2.1-2.4, people built the roads. In 2.5, ideas moved. Now living things get on the same roads.',
       visual: { type: 'map' },
       notes: {
-        minutes: 4,
+        minutes: 2,
         land: [
           'Start with continuity across the unit. Students already know the networks; they need to see why this topic is the payoff.',
           'The question is no longer only what merchants carried intentionally. Ask what moved accidentally with people, animals, cargo, ships, and caravans.'
@@ -287,7 +310,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'chains', kind: 'process', eyebrow: 'Same Cause · Opposite Effects',
+      retelling: true, phase: 'chains', kind: 'process', eyebrow: 'Same Cause · Opposite Effects',
       title: 'The same network could feed you and kill you.',
       steps: [
         { label: 'CROP', text: 'Network -> crop moves -> grows somewhere new -> food/productivity can increase' },

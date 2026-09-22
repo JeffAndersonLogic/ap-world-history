@@ -86,6 +86,86 @@ check(
   `registry=${[...teachingKeys].sort().join(', ')} files=${studentKeys.join(', ')}`
 );
 
+// DECKS alone cannot answer "is every teacher deck on the pipeline", because a
+// deck that was never added to it is invisible to every check above. Topic 2.3
+// shipped that way: its own teacher page, a "student" link that redirected to
+// the teacher bytes, and a green gate. So membership is read off the disk.
+console.log('\n  Every teacher deck on disk is on the pipeline\n');
+const { NOT_YET_MIGRATED = [] } = require('../build-teaching-os-student-decks.js');
+const pendingKeys = NOT_YET_MIGRATED.map(p => p.key.replace('.', '-'));
+const onDisk = [...new Set(fs.readdirSync(path.join(ROOT, 'teacher'))
+  .map(name => /^topic-(\d+-\d+)-(?:story-)?os\.html$/.exec(name))
+  .filter(Boolean)
+  .map(match => match[1]))].sort();
+for (const key of onDisk) {
+  const inDecks = teachingKeys.includes(key);
+  const pending = pendingKeys.includes(key);
+  check(`teacher/topic-${key}-os.html is in DECKS or declared not yet migrated`, inDecks || pending,
+    inDecks ? 'DECKS' : pending ? 'NOT_YET_MIGRATED' : 'in neither list');
+}
+for (const p of NOT_YET_MIGRATED) {
+  const key = p.key.replace('.', '-');
+  check(`${p.key} not-yet-migrated entry still has a teacher deck and a reason`, onDisk.includes(key) && String(p.reason || '').length > 20);
+  check(`${p.key} is not listed as both migrated and not yet migrated`, !teachingKeys.includes(key));
+}
+
+// A student link must never land on the teacher surface. A redirect is the
+// easy way to do it by accident: the student page is tiny and harmless, and
+// the page it forwards to carries every coaching note.
+const unitDirs = fs.readdirSync(ROOT).filter(d => /^unit-\d+$/.test(d));
+const redirectsToTeacher = [];
+for (const dir of unitDirs) {
+  for (const name of fs.readdirSync(path.join(ROOT, dir)).filter(n => n.endsWith('.html'))) {
+    const src = read(`${dir}/${name}`);
+    if (/location\.(?:replace|href)\s*\(?\s*['"][^'"]*teacher\//.test(src) || /http-equiv=["']refresh["'][^>]*teacher\//i.test(src)) {
+      redirectsToTeacher.push(`${dir}/${name}`);
+    }
+  }
+}
+check('no student-facing page redirects into teacher/', redirectsToTeacher.length === 0, redirectsToTeacher.join(', ') || 'none');
+
+// Each deck's lesson must reach its generated student copy through
+// classPresentation, the one field the renderer reads.
+for (const deck of DECKS) {
+  const key = deck.key.replace('.', '-');
+  const expected = `presentation-topic-${key}-student.html`;
+  const unit = `unit-${deck.key.split('.')[0]}`;
+  const shell = `${unit}/${expected}`;
+  check(`${deck.key} student shell exists`, exists(shell));
+  if (exists(shell)) check(`${deck.key} student shell loads its own generated data`, read(shell).includes(`presentations/topic-${key}-student.js`));
+  const dataFiles = fs.readdirSync(path.join(ROOT, 'assets/data')).filter(n => n.startsWith(`lesson-${key}-`) && n.endsWith('.js'));
+  const declares = dataFiles.filter(n => /classPresentation\s*[:=]/.test(read(`assets/data/${n}`)));
+  const points = declares.some(n => read(`assets/data/${n}`).includes(`url: '${expected}'`));
+  check(`${deck.key} lesson declares classPresentation pointing at ${expected}`, points, declares.join(', ') || 'no classPresentation');
+}
+
+// The authoring standard requires Teacher Preflight, BeReady, and a named
+// retelling slide, and lets a deck omit one only if its source says why.
+console.log('\n  Required instructional functions\n');
+const vm = require('vm');
+for (const deck of DECKS) {
+  const sandbox = { window: {}, console, encodeURIComponent, decodeURIComponent };
+  vm.createContext(sandbox);
+  for (const rel of deck.sources) vm.runInContext(read(rel), sandbox, { filename: rel });
+  const T = sandbox.window.BEHISTORICAL_TEACHING;
+  const omits = (T.meta && T.meta.omits) || {};
+  const explained = fn => typeof omits[fn] === 'string' && omits[fn].trim().length > 20;
+  const has = {
+    preflight: T.slides.some(s => s.phase === 'preflight'),
+    beready: T.slides.some(s => s.phase === 'beready'),
+    retelling: T.slides.filter(s => s.retelling === true && s.phase !== 'preflight').length === 1
+  };
+  for (const fn of ['preflight', 'beready', 'retelling']) {
+    check(`${deck.key} has ${fn} or explains its omission`, has[fn] || explained(fn),
+      has[fn] ? 'present' : explained(fn) ? `omitted: ${omits[fn].slice(0, 60)}...` : 'missing, with no reason in meta.omits');
+    if (has[fn] && omits[fn]) check(`${deck.key} does not both carry and omit ${fn}`, false);
+  }
+  if (has.beready) {
+    const i = T.slides.findIndex(s => s.phase === 'beready');
+    check(`${deck.key} BeReady is the first student-facing slide`, T.slides.slice(0, i).every(s => s.phase === 'preflight'), `slide ${i}`);
+  }
+}
+
 console.log('\n  Authoring process discovery\n');
 const authoringPath = 'docs/PRESENTATION-AUTHORING.md';
 const architecturePath = 'docs/TEACHING-OS.md';

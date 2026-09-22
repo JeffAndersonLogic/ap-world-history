@@ -104,7 +104,7 @@ module.exports = {
     vocabulary: ['Chinggis Khan', 'Mounted Archers', 'Siege Warfare', 'Yam', 'Pax Mongolica', 'Khanates', 'Uyghur Script', 'Greco-Islamic Medical Knowledge', 'Numbering Systems'],
     sections: [
       section('1', 'Build', 'Chinggis Khan Turns Steppe Warriors into an Empire', [
-        'Around 1200, the Mongols were not one giant empire. They were nomadic peoples of the Eurasian steppe. Then Temujin—better known as <span class="kt">Chinggis Khan</span>—united many competing groups and reorganized them into a disciplined military system.',
+        'Around 1200, the Mongols were not one giant empire. They were nomadic peoples of the Eurasian steppe. Then Temujin, better known as <span class="kt">Chinggis Khan</span>, united many competing groups and reorganized them into a disciplined military system.',
         'Mongol armies used fast <span class="kt">mounted archers</span>, intelligence, coordination, and tactics such as feigned retreat. Just as important, they adapted. When horses and bows could not break fortified cities, the Mongols recruited engineers and borrowed <span class="kt">siege warfare</span> from conquered peoples. Their pattern was simple: <strong>conquer → learn → adapt → conquer again.</strong>'
       ], 'AP Thinking, Causation', '<strong>Explain the mechanism, not just the weapon.</strong> Organization, mobility, and adaptation worked together to make conquest possible.'),
       section('2', 'Connect', 'Conquest Creates a New Problem: How Do You Run It?', [
@@ -125,7 +125,7 @@ module.exports = {
     questions: [
       { num: '01', skill: 'Causation', text: 'How did the Mongols build such a large empire?', placeholder: 'The Mongols built power by...' },
       { num: '02', skill: 'Continuity & Change', text: 'What stayed the same about the Silk Roads, and what changed under Mongol rule?', placeholder: 'The routes continued, but Mongol rule changed...' },
-      { num: '03', skill: 'Significance', text: 'Choose one transfer—Greco-Islamic medicine, numbering systems, or the Uyghur script. What does it show about Mongol-era connectivity?', placeholder: 'The example of ___ shows that...' }
+      { num: '03', skill: 'Significance', text: 'Choose one transfer: Greco-Islamic medicine, numbering systems, or the Uyghur script. What does it show about Mongol-era connectivity?', placeholder: 'The example of ___ shows that...' }
     ]
   }),
 
@@ -136,37 +136,39 @@ module.exports = {
     lessonPage: 'lesson-2-3-indian-ocean.html',
     docTitle: 'BeHistorical — Module 03 | First &amp; 10 | Topic 2.3 Indian Ocean Trade',
     headerSubtitle: 'Topic 2.3, Indian Ocean Trade &nbsp;|&nbsp; AP World History: Modern',
-    titleHtml: 'How an Ocean Became a <em>Trade System</em>',
-    deck: 'Indian Ocean exchange intensified because sailors combined environmental knowledge with better maritime technology. Expanding trade strengthened states and port cities, supported diasporic merchant communities, and created opportunities for state-backed voyages such as those led by Zheng He.',
-    skillTags: ['Causation', 'Environment', 'Cultural Interaction'],
+    titleHtml: 'The Ocean That Ran on a <em>Schedule</em>',
+    deck: 'Sailors had crossed the Indian Ocean for centuries. After 1200, predictable winds and better tools let far more goods move far more reliably, and that reliability built port cities, merchant communities, and a stage for Ming China\'s great voyages.',
+    skillTags: ['Causation', 'Contextualization', 'Economic Systems'],
+    supportHeadings: { before: 'The Story to Hold Onto', target: 'Question for Today' },
     supportCards: {
-      beforeYouRead: 'Track a system: monsoon knowledge made movement predictable; the compass, astrolabe, and larger ships increased capability; expanding exchange then changed states and merchant communities.',
-      readingTarget: 'By the end, you should be able to explain the environmental and technological causes of Indian Ocean trade growth and its effects on states, diasporic communities, and interregional contact.'
+      beforeYouRead: '<strong>Old routes → Predictable winds + better tools → More trade → Ports, diasporas, and Zheng He.</strong> Use that chain to organize everything you meet.',
+      readingTarget: 'Why did Indian Ocean trade grow after 1200, and what did that growth change?'
     },
     vocabulary: ['Monsoon Winds', 'Compass', 'Astrolabe', 'Larger Ship Designs', 'Swahili Coast', 'Gujarat', 'Sultanate of Malacca', 'Diasporic Communities', 'Zheng He', 'Ming Dynasty'],
     sections: [
-      section('1', 'Environment', 'Monsoon Knowledge Made Voyages Predictable', [
-        'Indian Ocean sailors learned the seasonal pattern of <span class="kt">monsoon winds</span>. Because the winds reversed direction at predictable times of year, merchants could plan outward and return voyages instead of treating the ocean as an unpredictable barrier.',
-        'Environmental knowledge was therefore an economic resource. Knowing when to sail, where to wait, and when winds would reverse reduced uncertainty and helped support regular long-distance exchange.'
-      ], 'AP Thinking, Environment', '<strong>The monsoon did not cause trade by itself.</strong> The environmental pattern existed; human knowledge of that pattern made it useful.'),
-      section('2', 'Technology', 'Navigation and Larger Ships Expanded What Was Possible', [
-        'Maritime traders used and improved existing technologies, including the <span class="kt">compass</span> and <span class="kt">astrolabe</span>. These tools helped sailors determine direction and position during long voyages.',
-        '<span class="kt">Larger ship designs</span> increased carrying capacity. Combined with navigational knowledge, bigger vessels made it possible to move greater quantities of goods across longer maritime distances.'
-      ], 'AP Thinking, Causation', '<strong>Connect technology to outcome:</strong> better navigation and greater capacity increased the volume and geographic range of trade.'),
-      section('3', 'Effects', 'Trade Strengthened States and Merchant Communities', [
-        'Indian Ocean commerce fostered the growth of states and commercial centers. The CED highlights the <span class="kt">Swahili Coast</span>, <span class="kt">Gujarat</span>, and the <span class="kt">Sultanate of Malacca</span> as examples of places whose power was tied to maritime exchange.',
-        'Merchants also created <span class="kt">diasporic communities</span>. Arab and Persian communities in East Africa, Chinese merchant communities in Southeast Asia, and Malay communities around the basin maintained ties to their home cultures while adapting to local societies.'
-      ], 'AP Thinking, Cultural Interaction', '<strong>Diaspora is two-way interaction.</strong> Merchants introduced traditions into local cultures, and local cultures also influenced merchant communities.'),
-      section('4', 'State-Backed Contact', 'Zheng He and Ming Maritime Activity', [
-        'In the early 15th century, Ming China sponsored major voyages led by Admiral <span class="kt">Zheng He</span>. His fleets traveled through Southeast Asia and the Indian Ocean, visiting ports in South Asia, the Middle East, and East Africa.',
-        'The voyages demonstrate that Indian Ocean connectivity included more than private merchants. States could also use maritime networks for diplomacy, prestige, tribute relationships, and cultural exchange. Zheng He therefore fits the larger CED pattern of interregional contact encouraging cultural and technological transfer.'
-      ], 'AP Thinking, Significance', '<strong>Zheng He is not a side story.</strong> His voyages show how an established commercial network could also support large-scale state-sponsored contact.')
+      section('1', 'Schedule', 'An Old Ocean Starts Running on a Calendar', [
+        'Long before 1200, sailors from East Africa, Arabia, Persia, India, and Southeast Asia were already crossing the Indian Ocean. The routes were old. What changed after 1200 is how much moved along them, and how far.',
+        'The key was the <span class="kt">monsoon winds</span>. In winter, the winds over the Indian Ocean blow from the northeast. In summer, they reverse and blow from the southwest. A merchant who knew that pattern could sail from India to East Africa on the winter winds, trade, wait, and sail home when the winds turned. The ocean stopped being a gamble and started running on a schedule.'
+      ], 'AP Thinking, Contextualization', '<strong>Start before 1200.</strong> Indian Ocean trade was not new. Your job is to explain why an old network grew larger and busier.'),
+      section('2', 'Tools', 'Better Tools Let Ships Go Farther and Carry More', [
+        'Knowing when to sail was half the problem. Sailors also had to know where they were. The <span class="kt">compass</span> pointed north even when clouds hid the stars. The <span class="kt">astrolabe</span> let a navigator measure the height of the sun or a star and work out how far north or south the ship had traveled.',
+        '<span class="kt">Larger ship designs</span> mattered too. A bigger hull carries more cargo on every trip, which makes each long voyage more worth taking. Put predictable winds together with better navigation and bigger ships, and trade grew in two ways at once: more goods moved, and they moved across a wider area.'
+      ], 'AP Thinking, Causation', '<strong>Explain the mechanism, not the gadget.</strong> A compass matters because it made long voyages less risky. Tie each tool to what merchants could now do.'),
+      section('3', 'Ports', 'Waiting for the Wind Built Cities and Communities', [
+        'Here is the catch in the schedule: if the wind turns only twice a year, merchants spend months waiting in port. Waiting merchants need warehouses, markets, lodging, food, ship repair, and people who can translate. The ports that supplied those services grew rich by taxing and organizing the trade that passed through them.',
+        'That is how Indian Ocean trade built states. City-states on the <span class="kt">Swahili Coast</span> of East Africa, such as Kilwa, traded gold and ivory from the African interior. <span class="kt">Gujarat</span> in western India sent cotton textiles across the ocean. The <span class="kt">Sultanate of Malacca</span>, founded around 1400, controlled the Strait of Malacca, the main passage between the Indian Ocean and the South China Sea.',
+        'Some merchants stayed for good and formed <span class="kt">diasporic communities</span>: groups living far from home while keeping ties to it. Arab and Persian merchants settled in East African ports, Chinese merchants settled in Southeast Asia, and Malay communities traded across the whole basin. Influence ran both ways. On the Swahili Coast, a Bantu language absorbed many Arabic words, and Islam took root in the port towns alongside local traditions.'
+      ], 'AP Thinking, Causation', '<strong>Follow the chain to its effects.</strong> Predictable trade meant waiting, waiting built ports, and ports grew into states and communities.'),
+      section('4', 'Twist', 'Zheng He Sailed Into a Network China Did Not Build', [
+        'In the early 1400s, the <span class="kt">Ming Dynasty</span> of China sent Admiral <span class="kt">Zheng He</span> on seven enormous voyages between 1405 and 1433. His fleets visited ports in Southeast Asia, India, Arabia, and East Africa, carrying gifts, collecting tribute, and displaying Chinese power.',
+        'Zheng He did not create Indian Ocean trade. He could sail so far because the network was already there: the ports, the pilots, the knowledge of the winds, and the trading relationships. When the Ming stopped the voyages, the merchant network kept running without them.'
+      ], 'AP Thinking, Significance', '<strong>Use Zheng He as evidence, not as the origin.</strong> His voyages show how large and mature the network had become, and how a state could use it for diplomacy and prestige.')
     ],
-    takeaway: 'Monsoon knowledge made Indian Ocean travel predictable; the compass, astrolabe, and larger ships increased capability; expanding trade strengthened the Swahili Coast, Gujarat, and Malacca, created diasporic communities, and supported state-backed maritime contact under Zheng He.',
+    takeaway: 'The ocean ran on a schedule. Monsoon knowledge made voyages predictable; the compass, astrolabe, and larger ships let more goods travel farther; and the months of waiting built port states on the Swahili Coast, in Gujarat, and at Malacca, along with diasporic merchant communities. Zheng He\'s Ming fleets show how mature that network was by the 1400s.',
     questions: [
-      { num: '01', skill: 'Causation', text: 'Explain how monsoon knowledge and two maritime technologies helped Indian Ocean trade intensify after 1200.', placeholder: 'Indian Ocean trade intensified because...' },
-      { num: '02', skill: 'Effects', text: 'Explain one effect of Indian Ocean trade on a state and one effect on a diasporic merchant community.', placeholder: 'Trade affected the state of ___ by... and merchant communities by...' },
-      { num: '03', skill: 'Significance', text: 'Explain how Zheng He illustrates the role of states in the connected Indian Ocean world.', placeholder: 'Zheng He illustrates state involvement because...' }
+      { num: '01', skill: 'Causation', text: 'Explain how monsoon knowledge and one maritime technology helped Indian Ocean trade grow after 1200.', placeholder: 'Indian Ocean trade grew because...' },
+      { num: '02', skill: 'Effects', text: 'Choose one port state (the Swahili Coast, Gujarat, or Malacca) and one merchant community. Explain how growing trade changed each.', placeholder: 'Growing trade changed ___ by... and it changed merchant communities by...' },
+      { num: '03', skill: 'Significance', text: 'Zheng He sailed into a network China did not build. What do his voyages show about the Indian Ocean world by the 1400s?', placeholder: 'Zheng He\'s voyages show that...' }
     ]
   }),
 

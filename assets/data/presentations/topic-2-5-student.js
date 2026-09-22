@@ -7,6 +7,31 @@ window.BEHISTORICAL_STUDENT_DECK = {
   },
   "slides": [
     {
+      "kind": "process",
+      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "title": "Pull the network story back from memory.",
+      "subtitle": "Short answers are enough. Retrieve first; we will build from them.",
+      "footer": "Retrieve -> connect -> enter the new problem.",
+      "steps": [
+        {
+          "label": "SAHARA",
+          "text": "What made crossing the Sahara practical at a larger scale?"
+        },
+        {
+          "label": "MALI",
+          "text": "How did Mali profit from trade and also help sustain it?"
+        },
+        {
+          "label": "NETWORKS",
+          "text": "Name the three networks Unit 2 has studied so far."
+        },
+        {
+          "label": "BRIDGE",
+          "text": "Merchants paid to carry goods. What else traveled with them for free?"
+        }
+      ]
+    },
+    {
       "kind": "hero",
       "eyebrow": "AP World History · Topic 2.5",
       "title": "What Traveled Without Paying Freight?",

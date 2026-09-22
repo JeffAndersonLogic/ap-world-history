@@ -7,6 +7,31 @@ window.BEHISTORICAL_STUDENT_DECK = {
   },
   "slides": [
     {
+      "kind": "process",
+      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "title": "Pull the network story back from memory.",
+      "subtitle": "Short answers are enough. Retrieve first; we will build from them.",
+      "footer": "Retrieve -> connect -> enter the new problem.",
+      "steps": [
+        {
+          "label": "BELIEF",
+          "text": "Name one belief system that spread along a trade network, and the network it used."
+        },
+        {
+          "label": "TECHNOLOGY",
+          "text": "Name one technology that moved from one region to another."
+        },
+        {
+          "label": "CITIES",
+          "text": "Why could a network make one city boom and let another decline?"
+        },
+        {
+          "label": "BRIDGE",
+          "text": "People chose to carry goods and ideas. What moved on these routes that nobody chose to carry?"
+        }
+      ]
+    },
+    {
       "kind": "hero",
       "eyebrow": "AP World History · Topic 2.6",
       "title": "The Cargo Nobody Ordered",
@@ -29,10 +54,22 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Three Big Rocks",
       "title": "The whole topic has two branches.",
       "cards": [
-        { "title": "BIOLOGICAL CORRIDORS", "text": "Networks connected environments as well as markets." },
-        { "title": "CROPS", "text": "Useful plants moved into new regions and could support more food production." },
-        { "title": "PATHOGENS", "text": "Disease moved through the same connections and could devastate populations." },
-        { "title": "AP VERB", "text": "Explain means because. Lists do not score by themselves." }
+        {
+          "title": "BIOLOGICAL CORRIDORS",
+          "text": "Networks connected environments as well as markets."
+        },
+        {
+          "title": "CROPS",
+          "text": "Useful plants moved into new regions and could support more food production."
+        },
+        {
+          "title": "PATHOGENS",
+          "text": "Disease moved through the same connections and could devastate populations."
+        },
+        {
+          "title": "AP VERB",
+          "text": "Explain means because. Lists do not score by themselves."
+        }
       ]
     },
     {
@@ -61,23 +98,47 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Crop Consequences",
       "title": "Every example needs a so what.",
       "cards": [
-        { "title": "BANANAS -> AFRICA", "text": "New agricultural possibilities in suitable tropical environments." },
-        { "title": "RICE -> EAST ASIA", "text": "Higher productive capacity and support for larger populations." },
-        { "title": "CITRUS -> MEDITERRANEAN", "text": "New crops changed regional agriculture and diets." },
-        { "title": "BECAUSE", "text": "Connectivity moved crops beyond earlier ranges." }
+        {
+          "title": "BANANAS -> AFRICA",
+          "text": "New agricultural possibilities in suitable tropical environments."
+        },
+        {
+          "title": "RICE -> EAST ASIA",
+          "text": "Higher productive capacity and support for larger populations."
+        },
+        {
+          "title": "CITRUS -> MEDITERRANEAN",
+          "text": "New crops changed regional agriculture and diets."
+        },
+        {
+          "title": "BECAUSE",
+          "text": "Connectivity moved crops beyond earlier ranges."
+        }
       ]
     },
     {
       "kind": "process",
       "eyebrow": "Crop Mechanism",
       "title": "A crop matters when it changes what land can support.",
+      "footer": "Bananas, rice, and citrus are evidence for this mechanism.",
       "steps": [
-        { "label": "NETWORK", "text": "Routes connect regions" },
-        { "label": "CROP MOVES", "text": "A useful plant travels" },
-        { "label": "ADOPTION", "text": "People grow it somewhere new" },
-        { "label": "CONSEQUENCE", "text": "Food supply or population support changes" }
-      ],
-      "footer": "Bananas, rice, and citrus are evidence for this mechanism."
+        {
+          "label": "NETWORK",
+          "text": "Routes connect regions"
+        },
+        {
+          "label": "CROP MOVES",
+          "text": "A useful plant travels"
+        },
+        {
+          "label": "ADOPTION",
+          "text": "People grow it somewhere new"
+        },
+        {
+          "label": "CONSEQUENCE",
+          "text": "Food supply or population support changes"
+        }
+      ]
     },
     {
       "kind": "action",
@@ -104,13 +165,25 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "process",
       "eyebrow": "Pathogen Mechanism",
       "title": "The plague was not new. The highway system was better.",
+      "footer": "Connectivity increased the speed and range of vulnerability.",
       "steps": [
-        { "label": "OUTBREAK", "text": "Disease exists in one region" },
-        { "label": "MOVEMENT", "text": "Ships, caravans, people, and animals connect regions" },
-        { "label": "JUMP", "text": "Pathogens reach new populations" },
-        { "label": "EPIDEMIC", "text": "Mortality spreads across connected societies" }
-      ],
-      "footer": "Connectivity increased the speed and range of vulnerability."
+        {
+          "label": "OUTBREAK",
+          "text": "Disease exists in one region"
+        },
+        {
+          "label": "MOVEMENT",
+          "text": "Ships, caravans, people, and animals connect regions"
+        },
+        {
+          "label": "JUMP",
+          "text": "Pathogens reach new populations"
+        },
+        {
+          "label": "EPIDEMIC",
+          "text": "Mortality spreads across connected societies"
+        }
+      ]
     },
     {
       "kind": "hero",
@@ -134,23 +207,47 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "process",
       "eyebrow": "Same Cause · Opposite Effects",
       "title": "The same network could feed you and kill you.",
+      "footer": "This is the slide the lesson is driving toward.",
       "steps": [
-        { "label": "CROP", "text": "Network -> crop moves -> grows somewhere new -> food/productivity can increase" },
-        { "label": "PATHOGEN", "text": "Network -> disease moves -> reaches new populations -> mortality can increase" },
-        { "label": "SAME CAUSE", "text": "Intensified connectivity moves living things farther" },
-        { "label": "OPPOSITE EFFECTS", "text": "Productive capacity and demographic catastrophe can happen together" }
-      ],
-      "footer": "This is the slide the lesson is driving toward."
+        {
+          "label": "CROP",
+          "text": "Network -> crop moves -> grows somewhere new -> food/productivity can increase"
+        },
+        {
+          "label": "PATHOGEN",
+          "text": "Network -> disease moves -> reaches new populations -> mortality can increase"
+        },
+        {
+          "label": "SAME CAUSE",
+          "text": "Intensified connectivity moves living things farther"
+        },
+        {
+          "label": "OPPOSITE EFFECTS",
+          "text": "Productive capacity and demographic catastrophe can happen together"
+        }
+      ]
     },
     {
       "kind": "grid",
       "eyebrow": "AP Writing Move",
       "title": "Explain means because.",
       "cards": [
-        { "title": "LIST", "text": "Bananas spread to Africa." },
-        { "title": "EXPLAIN", "text": "Because Indian Ocean networks moved crops, bananas could spread into suitable African environments and support new agricultural possibilities." },
-        { "title": "LIST", "text": "The plague spread on trade routes." },
-        { "title": "EXPLAIN", "text": "Because trade connected ports and cities more densely, plague could move farther and cause massive mortality." }
+        {
+          "title": "LIST",
+          "text": "Bananas spread to Africa."
+        },
+        {
+          "title": "EXPLAIN",
+          "text": "Because Indian Ocean networks moved crops, bananas could spread into suitable African environments and support new agricultural possibilities."
+        },
+        {
+          "title": "LIST",
+          "text": "The plague spread on trade routes."
+        },
+        {
+          "title": "EXPLAIN",
+          "text": "Because trade connected ports and cities more densely, plague could move farther and cause massive mortality."
+        }
       ]
     },
     {

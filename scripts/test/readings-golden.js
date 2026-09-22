@@ -23,10 +23,12 @@ const FIXTURE = path.join(__dirname, 'fixtures', 'readings-before.json');
 const fromDisk = process.argv.includes('--from-disk');
 
 // Unit 2 was deliberately reauthored as the 2026-09-17 reference standard, with Topic 2.2's story-first First & 10 revision reviewed and approved on 2026-09-21.
+// Topic 2.3's story-first rewrite and the removal of two em dashes from Topic 2.2 landed on
+// 2026-09-22 with the story approval gate explicitly waived by Jeff, not reviewed.
 // Keep the historical fixture untouched, but accept that full rewrite only while
 // its canonical source file is byte-for-byte the approved version below. Any
 // later Unit 2 First & 10 edit changes this Git blob hash and forces a new review.
-const APPROVED_UNIT2_REWRITE_BLOB = '90926d2c4ed96e3fa814f993ccdfc6ad52e2e150';
+const APPROVED_UNIT2_REWRITE_BLOB = '8c04fa92f4a9bf5247c89197845e20b5fab97ce3';
 const unit2SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-2.js');
 function gitBlobSha(text) {
   const body = Buffer.from(text, 'utf8');

@@ -37,17 +37,18 @@ window.BEHISTORICAL_TEACHING = {
 
   flow: [
     { id: 'preflight', label: 'Teacher Preflight', range: 'Before class', minutes: 2, teacher: 'Lock onto the three consequences and the diffusion mechanism.', students: 'Not projected.', slide: 1 },
-    { id: 'launch', label: 'Launch the Consequence Story', range: '0-7', minutes: 7, teacher: 'Show the whole argument before examples.', students: 'Write the three-part frame.', slide: 2 },
-    { id: 'targets', label: 'Three Big Rocks', range: '7-12', minutes: 5, teacher: 'Name the three CED developments.', students: 'Sort examples into the three rocks.', slide: 4 },
-    { id: 'problem', label: 'What Else Travels?', range: '12-18', minutes: 6, teacher: 'Shift from cargo to contact.', students: 'Predict non-economic consequences.', slide: 5 },
-    { id: 'mechanism', label: 'Diffusion Mechanism', range: '18-24', minutes: 6, teacher: 'Model contact -> transmission -> adoption -> consequence.', students: 'Track mechanism, not vocabulary.', slide: 6 },
-    { id: 'diffusion', label: 'Big Rock 1: Diffusion', range: '24-43', minutes: 19, teacher: 'Use beliefs and technologies as two forms of the same process.', students: 'Explain one cultural and one technological example.', slide: 7 },
-    { id: 'cities', label: 'Big Rock 2: Cities', range: '43-59', minutes: 16, teacher: 'Teach urban growth and decline as variation.', students: 'Explain why a network node can rise or fall.', slide: 10 },
-    { id: 'travelers', label: 'Big Rock 3: Travelers', range: '59-69', minutes: 10, teacher: 'Turn travel writing into evidence of connectivity.', students: 'Use a named traveler as evidence.', slide: 12 },
-    { id: 'map', label: 'Map the Movement', range: '69-75', minutes: 6, teacher: 'Trace movement rather than memorizing lines.', students: 'Connect one example to a network.', slide: 13 },
-    { id: 'checkpoint', label: 'Checkpoint Writing', range: '75-84', minutes: 9, teacher: 'Coach mechanism and evidence.', students: 'Explain one intellectual or cultural effect.', slide: 14 },
-    { id: 'debrief', label: 'Common Traps', range: '84-88', minutes: 4, teacher: 'Repair vague diffusion statements.', students: 'Upgrade one weak sentence.', slide: 15 },
-    { id: 'close', label: 'Landing Sentence', range: '88-90', minutes: 2, teacher: 'Land the CED answer and bridge to environmental effects.', students: 'State the three-part answer.', slide: 16 }
+    { id: 'beready', label: 'BeReady', range: '0-4', minutes: 4, teacher: 'Retrieve Topic 2.4 and bridge to what else travels.', students: 'Answer from memory.', slide: 2 },
+    { id: 'launch', label: 'Launch the Consequence Story', range: '4-9', minutes: 5, teacher: 'Show the whole argument before examples.', students: 'Write the three-part frame.', slide: 3 },
+    { id: 'targets', label: 'Three Big Rocks', range: '9-12', minutes: 3, teacher: 'Name the three CED developments.', students: 'Sort examples into the three rocks.', slide: 5 },
+    { id: 'problem', label: 'What Else Travels?', range: '12-18', minutes: 6, teacher: 'Shift from cargo to contact.', students: 'Predict non-economic consequences.', slide: 6 },
+    { id: 'mechanism', label: 'Diffusion Mechanism', range: '18-24', minutes: 6, teacher: 'Model contact -> transmission -> adoption -> consequence.', students: 'Track mechanism, not vocabulary.', slide: 7 },
+    { id: 'diffusion', label: 'Big Rock 1: Diffusion', range: '24-43', minutes: 19, teacher: 'Use beliefs and technologies as two forms of the same process.', students: 'Explain one cultural and one technological example.', slide: 8 },
+    { id: 'cities', label: 'Big Rock 2: Cities', range: '43-59', minutes: 16, teacher: 'Teach urban growth and decline as variation.', students: 'Explain why a network node can rise or fall.', slide: 11 },
+    { id: 'travelers', label: 'Big Rock 3: Travelers', range: '59-69', minutes: 10, teacher: 'Turn travel writing into evidence of connectivity.', students: 'Use a named traveler as evidence.', slide: 13 },
+    { id: 'map', label: 'Map the Movement', range: '69-75', minutes: 6, teacher: 'Trace movement rather than memorizing lines.', students: 'Connect one example to a network.', slide: 14 },
+    { id: 'checkpoint', label: 'Checkpoint Writing', range: '75-84', minutes: 9, teacher: 'Coach mechanism and evidence.', students: 'Explain one intellectual or cultural effect.', slide: 15 },
+    { id: 'debrief', label: 'Common Traps', range: '84-88', minutes: 4, teacher: 'Repair vague diffusion statements.', students: 'Upgrade one weak sentence.', slide: 16 },
+    { id: 'close', label: 'Landing Sentence', range: '88-90', minutes: 2, teacher: 'Land the CED answer and bridge to environmental effects.', students: 'State the three-part answer.', slide: 17 }
   ],
 
   quickLaunch: [
@@ -82,6 +83,28 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
+      phase: 'beready', kind: 'process', eyebrow: 'BeReady · 4 Minutes · No Notes',
+      title: 'Pull the network story back from memory.',
+      subtitle: 'Short answers are enough. Retrieve first; we will build from them.',
+      steps: [
+        { label: 'SAHARA', text: 'What made crossing the Sahara practical at a larger scale?' },
+        { label: 'MALI', text: 'How did Mali profit from trade and also help sustain it?' },
+        { label: 'NETWORKS', text: 'Name the three networks Unit 2 has studied so far.' },
+        { label: 'BRIDGE', text: 'Merchants paid to carry goods. What else traveled with them for free?' }
+      ],
+      footer: 'Retrieve -> connect -> enter the new problem.',
+      notes: {
+        minutes: 4,
+        land: [
+          'No notes. Take fast verbal answers and do not reteach Topic 2.4.',
+          'Accept brief evidence: camel saddles and caravans; Mali taxing and protecting trade; Silk Roads, Indian Ocean, trans-Saharan.'
+        ],
+        ask: 'If a merchant crosses three cultures to sell cloth, what comes home with him besides money?',
+        listenFor: 'Religion, language, stories, technologies, knowledge, people.',
+        ap: 'Retrieval + contextualization: the networks students already know are the setting for today\'s consequences.'
+      }
+    },
+    {
       phase: 'launch', kind: 'hero', eyebrow: 'AP World History · Topic 2.5',
       title: 'What Traveled Without Paying Freight?',
       subtitle: 'Goods moved through networks. So did beliefs, technologies, people, and information.',
@@ -97,7 +120,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'launch', kind: 'process', eyebrow: 'The Lesson in One Chain',
+      retelling: true, phase: 'launch', kind: 'process', eyebrow: 'The Lesson in One Chain',
       title: 'Networks -> Contact -> Cultural Change',
       steps: [
         { label: 'NETWORKS', text: 'Movement becomes more frequent' },

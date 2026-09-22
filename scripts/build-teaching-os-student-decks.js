@@ -33,6 +33,15 @@ const DECKS = [
     backUrl: 'lesson-2-2-mongol-empire.html#lecture'
   },
   {
+    key: '2.3',
+    sources: [
+      'teacher/data/topic-2-3-teaching-base.js',
+      'teacher/data/topic-2-3-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-2-3-student.js',
+    backUrl: 'lesson-2-3-indian-ocean.html#lecture'
+  },
+  {
     key: '2.5',
     sources: [
       'teacher/data/topic-2-5-teaching-base.js',
@@ -49,6 +58,17 @@ const DECKS = [
     ],
     student: 'assets/data/presentations/topic-2-6-student.js',
     backUrl: 'lesson-2-6-environmental-consequences.html#lecture'
+  }
+];
+
+// Teacher decks that exist on disk but are not yet on this pipeline, each with
+// the reason. The architecture contract fails on any teacher/topic-X-X-os.html
+// that is in neither DECKS nor this list, so a new deck cannot quietly skip the
+// student-copy generator the way Topic 2.3 did until 2026-09-22.
+const NOT_YET_MIGRATED = [
+  {
+    key: '2.4',
+    reason: 'Single-file teaching data with no generated student copy. Migrate it the way Topic 2.3 was, before its student slides are linked from the lesson.'
   }
 ];
 
@@ -151,6 +171,24 @@ function topic22Slides(teaching) {
   });
 }
 
+function topic23Slides(teaching) {
+  return projectedSlides(teaching).map(src => {
+    const s = baseStudentSlide(src);
+    // The teacher page draws a two-column "split" slide the student renderer
+    // does not have. Keep what carries the teaching: the steps when there are
+    // steps, otherwise the picture with its header and takeaway.
+    if (src.kind === 'split') {
+      if (Array.isArray(src.steps) && src.steps.length) {
+        s.kind = 'process';
+        delete s.visual;
+      } else {
+        s.kind = 'map';
+      }
+    }
+    return s;
+  });
+}
+
 function topic25Slides(teaching) {
   return projectedSlides(teaching).map(src => {
     const s = baseStudentSlide(src);
@@ -176,6 +214,7 @@ function buildDeck(deck) {
   const builders = {
     '2.1': topic21Slides,
     '2.2': topic22Slides,
+    '2.3': topic23Slides,
     '2.5': topic25Slides,
     '2.6': topic26Slides
   };
@@ -257,4 +296,4 @@ function main() {
 }
 
 if (require.main === module) main();
-module.exports = { DECKS, buildDeck };
+module.exports = { DECKS, NOT_YET_MIGRATED, buildDeck };

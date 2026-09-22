@@ -27,7 +27,7 @@ const BH23_STUDENT_ASSETS = '../assets/images/topics/2-3/';
 const BH23_STUDENT = {
   dhow: BH23_STUDENT_ASSETS + '2.3%20-%20Dhow%20Ship.jpeg',
   diaspora: BH23_STUDENT_ASSETS + '2.3%20-%20Diasporic%20Communities.jpg',
-  tradeMap: BH23_STUDENT_ASSETS + '2.3%20-%20Indian%20Ocean%20Trade%20Map%20Detailed.png',
+  tradeMap: BH23_STUDENT_ASSETS + '2.3%20-%20Indian%20Ocean%20Trade%20Map%20Detailed.jpg',
   orgChart: BH23_STUDENT_ASSETS + '2.3%20-%20Indian%20Ocean%20Trade%20Org%20Chart.png',
   malayMarket: BH23_STUDENT_ASSETS + '2.3%20-%20Malay%20market.jpg',
   monsoonMap: BH23_STUDENT_ASSETS + '2.3%20-%20Monsoons%20map.jpg',
@@ -182,7 +182,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: 'Diasporic communities',
-          caption: 'Diasporic communities made Indian Ocean ports centers of sustained cross-cultural interaction.',
+          caption: 'Diasporic communities made Indian Ocean ports centers of sustained cross-cultural interaction. Illustration (AI-generated).',
           url: BH23_STUDENT.diaspora,
           sourceUrl: BH23_STUDENT.diaspora
         }
@@ -196,7 +196,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: 'Zheng He fleet',
-          caption: 'Zheng He\'s voyages operated within an already mature Indian Ocean exchange system.',
+          caption: 'Zheng He\'s voyages operated within an already mature Indian Ocean exchange system. Illustration (AI-generated).',
           url: BH23_STUDENT.zhengHe,
           sourceUrl: BH23_STUDENT.zhengHe
         }
@@ -208,7 +208,7 @@ window.BEHISTORICAL_LESSON = {
     title: 'Indian Ocean Trade Routes',
     url: BH23_STUDENT.tradeMap,
     sourceUrl: BH23_STUDENT.tradeMap,
-    caption: 'The Indian Ocean basin connected East Africa, Arabia, South Asia, Southeast Asia, and China through maritime routes shaped by seasonal monsoon winds.',
+    caption: 'The Indian Ocean basin connected East Africa, Arabia, South Asia, Southeast Asia, and China through maritime routes shaped by seasonal monsoon winds. Map by Simeon Netchev, World History Encyclopedia. It shows the 1400s and 1500s, so the Portuguese routes on it come after this topic.',
     intro: 'Use the map to connect environment, technology, state growth, diaspora communities, and Zheng He to one maritime system.',
     prompt: 'Why would predictable winds and strategic port locations create both commercial wealth and cultural diversity?',
     notes: [
@@ -225,21 +225,15 @@ window.BEHISTORICAL_LESSON = {
     url: 'deep-reading-topic-2-3-indian-ocean.html'
   },
 
-  studentPresentation: {
-    title: 'Student Presentation: Exchange in the Indian Ocean',
-    desc: 'Projection-ready student version of the 2.3 presentation, aligned to the locked story spine.',
-    url: 'student-presentation-topic-2-3-indian-ocean.html'
-  },
-
   first10: {
     title: 'First & 10: The Ocean That Ran on a Schedule',
-    embedUrl: 'first-and-10-topic-2-3-indian-ocean-capture.html?v=locked-format-v3'
+    embedUrl: 'first-and-10-topic-2-3-indian-ocean-capture.html?v=schedule-v1'
   },
 
   evidenceLab: {
     title: 'Evidence Lab: Proving Indian Ocean Expansion and Effects',
     intro: 'Each piece of evidence belongs to one part of the CED story: causes of expansion, state growth, diasporic communities, or wider transfer.',
-    prompt: 'After 1200, how much did knowledge of the environment—especially monsoon winds—help Indian Ocean trade grow compared with the power of states? Make a clear claim. Use at least two pieces of evidence from different parts of the trade system, explain how each one helped trade grow, and include one example showing that political power or another factor also mattered.',
+    prompt: 'After 1200, how much did knowledge of the environment, especially monsoon winds, help Indian Ocean trade grow compared with the power of states? Make a clear claim. Use at least two pieces of evidence from different parts of the trade system, explain how each one helped trade grow, and include one example showing that political power or another factor also mattered.',
     items: [
       { title: 'Monsoon Winds + Compass + Astrolabe + Larger Ships', detail: 'Evidence that environmental knowledge and maritime technologies increased predictability, range, and carrying capacity.' },
       { title: 'Swahili Coast, Gujarat, and Malacca', detail: 'Evidence that expanding maritime exchange fostered the growth of states and powerful commercial centers.' },

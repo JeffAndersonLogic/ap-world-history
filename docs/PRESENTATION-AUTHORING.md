@@ -144,6 +144,10 @@ The story decides the order.
 
 If a build intentionally omits one of the functions above, the teacher source must explain why.
 
+Three of these are checked by machine, because each is easy to lose without anything looking wrong: Teacher Preflight (a slide with `phase: 'preflight'`), BeReady (a slide with `phase: 'beready'`, first after any preflight), and the retelling slide (exactly one student-visible slide with `retelling: true`, see section 9). A deck that leaves one out records the reason in `meta.omits`, for example `omits: { beready: 'Built and taught before the BeReady standard.' }`. `scripts/test/teaching-os-architecture.test.js` fails a deck that has neither.
+
+**Which decks this applies to.** Every deck built or revised on or after 2026-09-22. Decks already taught before then (Topics 2.1 and 2.2) carry their omissions in `meta.omits` and gain the missing functions the next time they are revised. Topics 2.5 and 2.6 were not yet taught and received BeReady on 2026-09-22.
+
 ### BeReady retrieval standard
 
 BeReady is the first student-facing phase after any teacher-only preflight. Its job is retrieval and transition, not new instruction.
@@ -204,6 +208,8 @@ It may be:
 
 It does not need to display the words "Retelling Slide" to students.
 
+Mark it in the teacher source with `retelling: true` on that slide, so the choice is recorded where the next author will see it and the gate can confirm there is exactly one.
+
 If the team cannot name the retelling slide, the deck probably has not found its conceptual center yet.
 
 For Topic 2.6, the twin causal chains are the retelling slide.
@@ -227,6 +233,12 @@ Default visual sourcing order:
 2. an already verified visual the topic or course already ships
 3. a newly sourced public-domain or licensed asset that is staged and verified before it reaches a slide
 4. a clearly labeled reconstruction when appropriate
+
+### AI-generated images
+
+An AI-generated illustration may be used on a projected slide or a concept card to set a scene, **only when it is labeled on screen** as `Illustration (AI-generated)` in its credit or caption. It is never presented as a historical source, and it never appears in the Evidence Lab, whose whole method is observing a real object. Check an image's C2PA metadata when its origin is unclear; Google and other generators mark their output.
+
+Topic 2.3 is the case: its slide illustrations are AI-generated and labeled, and its Evidence Lab uses the Borobudur ship relief and a Song celadon bowl instead.
 
 **Never write a Commons filename from memory.** A plausible filename is not evidence that the asset exists.
 
@@ -317,6 +329,8 @@ For declared registries, check both directions:
 - every entry points to a real presentation
 
 This catches both orphaned files and stale registry entries.
+
+A declared list checked only against itself can fall behind the repository and stay green forever, so the Teaching OS registry is also checked against the disk: every `teacher/topic-X-X-os.html` must be either in `DECKS` or in `NOT_YET_MIGRATED` (with a reason) in `scripts/build-teaching-os-student-decks.js`. Topic 2.3 was built outside the pipeline, with a "student" page that redirected to the teacher surface, and every check stayed green until this was added. No page under `unit-N/` may redirect into `teacher/`.
 
 ## 15. Instructional verification
 

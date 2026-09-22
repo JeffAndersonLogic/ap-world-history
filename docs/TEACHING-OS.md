@@ -36,6 +36,18 @@ The source-of-truth pipeline is:
 - BeReady is student-facing projected content. Preserve it in generated student decks; only teacher preflight is stripped.
 - Prefer repo-local classroom visuals. If the teacher surface temporarily uses a remote-only visual, the student generator may degrade that slide to a text-led version rather than introduce a brittle dependency.
 
+## What the gate checks
+
+`scripts/test/teaching-os-architecture.test.js`, in the offline suite, checks the parts of this contract that fail silently:
+
+- every `teacher/topic-X-X-os.html` on disk is in `DECKS`, or in `NOT_YET_MIGRATED` with a reason (Topic 2.4 today)
+- every deck has its base, presentation-assets, visual-assets, wrapper, generated student data, and `unit-N/presentation-topic-X-X-student.html` shell
+- the lesson reaches that shell through `classPresentation`, the one field the renderer reads (a field under any other name is silently ignored)
+- no student-facing page redirects into `teacher/`
+- every deck has Teacher Preflight, BeReady, and one `retelling: true` slide, or says why in `meta.omits`
+
+A teacher page may use its own renderer (Topic 2.3 does), but its data still comes through the wrapper, and a preflight slide must never reach the projector. Topic 2.3's page shows a neutral hold screen for preflight slides in `?mode=project`.
+
 ## Authoring boundary
 
 Do not use this architecture document to invent the instructional sequence.
