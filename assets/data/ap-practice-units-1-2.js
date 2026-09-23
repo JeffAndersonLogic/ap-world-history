@@ -478,35 +478,35 @@
       skillBuilder: skill(
         'Sourcing and Situation (Skill 2.A) and Causation',
         'Read a Traveler Before You Trust the Traveler',
-        'Sourcing becomes historical analysis only when a feature of the author, audience, purpose, or situation is connected to a particular claim, emphasis, or silence in the source. "The author may be biased" explains nothing.',
+        'A source is more useful when you know who wrote it and why. Saying "the author is biased" explains nothing. A strong answer explains how one thing about the writer changed what the source says or leaves out.',
         [
-          { label: 'Identify precisely', text: 'Choose one relevant feature of the biographer\'s religious position, purpose, audience, or Mongol-era historical situation.' },
-          { label: 'Locate the effect', text: 'Cite a word, detail, or omission that reflects the selected sourcing feature.' },
-          { label: 'Explain relevance', text: 'Show how the sourcing feature affects the source\'s value for evaluating a claim about cultural diffusion.' }
+          { label: 'Know the writer', text: 'The Module 08 passage about Rabban Bar Sauma was written by a Christian biographer who admired him. Pick one thing about that writer: their religion, their purpose, or who they were writing for.' },
+          { label: 'Find the detail', text: 'Point to a word, a detail, or something missing from the passage that shows that feature at work.' },
+          { label: 'Explain what it means', text: 'Explain how that feature makes the passage more useful, or less useful, as evidence that trade and travel increased contact between religions.' }
         ],
-        'Using the Rabban Bar Sauma passage in Module 08, explain how one relevant feature of the Syriac biographer\'s point of view, purpose, audience, or historical situation affects the source\'s usefulness for evaluating the claim that expanding networks increased cross-cultural religious contact. Identify the feature precisely, cite a revealing detail from the passage, and explain the connection between that feature and what the source can—or cannot—demonstrate.',
-        ['Identifies one specific and historically relevant sourcing feature.', 'Uses a precise source detail rather than a generic accusation of bias.', 'Explains how the feature shaped an emphasis, claim, or omission.', 'Connects the sourcing analysis to the stated historical claim.']
+        'Using the Rabban Bar Sauma passage in Module 08, explain how one thing about the biographer who wrote it (their religion, their purpose, or their audience) affects how useful the passage is as evidence that growing networks increased contact between religions. Name the feature, point to a specific detail in the passage, and explain what the passage can and cannot show because of it.',
+        ['Names one specific thing about the writer.', 'Points to a real detail in the passage, not a general claim of bias.', 'Explains how that feature shaped what the passage says or leaves out.', 'Connects the answer to contact between religions along growing networks.']
       ),
       evidenceLab: evidence(
-        'Evidence Lab: Trace Diffusion, Then Test the Story',
-        'Choose two examples of diffusion from different regions or different categories. A strong explanation names an origin, a route or carrier, a receiving society, and a transformation.',
-        'Evaluate the claim that trade networks spread cultural and technological traditions without producing cultural uniformity. Compare two evidence entries from different regions or categories. For each, trace an origin, carrier or route, receiving society, and local transformation. Explain how the contrast between the examples supports a qualified judgment, then identify one additional source that could test the transformation you described.',
+        'Evidence Lab: Traces of a More Connected World',
+        'Use two of the four cards. Each one shows a different result of connection: a belief that spread, a technology, a connected city that fell, or travel knowledge reaching a mapmaker.',
+        'How did growing trade networks change culture or knowledge in Afro-Eurasia between about 1200 and 1450? Make a clear claim. Use a detail you can see on each of two cards, explain how each detail supports your claim, and name one thing that one of your cards cannot prove on its own.',
         'Causation and Claims and Evidence (Skills 3.D and 6.B)',
-        ['cultural diffusion', 'Islam', 'Buddhism', 'paper', 'printing', 'sugar', 'trade networks'],
-        ['Makes a defensible and qualified judgment about the claim.', 'Traces origin, movement, reception, and transformation for two examples.', 'Uses the comparison to explain why diffusion did not produce uniformity.', 'Identifies an additional source capable of testing the argument.']
+        ['Buddhism', 'Dunhuang', 'paper', 'Baghdad', 'Mongols', 'travel account', 'Catalan Atlas', 'cultural diffusion'],
+        ['Makes a clear claim about how connection changed culture or knowledge.', 'Uses a specific detail from each of two cards.', 'Explains how each detail supports the claim.', 'Names one limit of what a card can prove.']
       ),
       primarySource: source(
         'Primary Source: Rabban Bar Sauma Explains Eastern Christianity, 1288',
-        'Rabban Bar Sauma was a Church of the East monk born near Khanbaliq in Yuan China. The Ilkhan Arghun later sent him west as a diplomatic envoy. A Syriac Christian biographer recorded his meeting with Roman cardinals.',
+        'Rabban Bar Sauma was a monk of the Church of the East, born around 1220 near the city that later became Khanbaliq (Beijing), in Mongol-ruled northern China. The Ilkhan Arghun later sent him west as an envoy. A Christian biographer, writing in Syriac, recorded his meeting with cardinals in Rome.',
         'The Cardinals said unto him, "Where is the Throne of the Catholicus?" He said to them, "In Baghdad." They answered, "What position hast thou there?" And he replied, "I am a deacon in the Cell of the Catholicus, and the director of the disciples, and the Visitor-General." The Cardinals said, "It is a marvellous thing that thou who art a Christian, and a deacon of the Throne of the Patriarch of the East, hast come upon an embassy from the king of the Mongols." And Rabban Sawma said unto them, "Know ye, O our Fathers, that many of our Fathers have gone into the countries of the Mongols, and Turks, and Chinese and have taught them the Gospel, and at the present time there are many Mongols who are Christians."',
-        'Anonymous Syriac biographer, The Monks of Kublai Khan, translated from Syriac by Sir E. A. Wallis Budge (London: Religious Tract Society, 1928), pp. 173 to 174.',
+        'Anonymous Syriac biographer, The Monks of Kublai Khan, translated from Syriac by Sir E. A. Wallis Budge (London: Religious Tract Society, 1928), pp. 173 to 174',
         'This is one continuous exchange in Budge\'s public-domain translation; punctuation is lightly standardized. The text is a religious biography, not Bar Sauma\'s own surviving diary, and its Christian author emphasizes the reach and prestige of the Church of the East.',
         [
-          '(a) Describe one development in cross-cultural or religious exchange illustrated by the passage.',
-          '(b) Explain how the historical situation of Mongol rule contributed to the development described in the passage.',
-          '(c) Explain how the Christian biographer\'s point of view or purpose affects the usefulness of the passage for evaluating the spread of Christianity across Eurasia.'
+          '(a) Describe one example in the passage of religion, or religious people, moving across Asia.',
+          '(b) Explain how Mongol rule helped make the journey or the conversation in the passage possible.',
+          '(c) Explain how the biographer\'s Christian point of view or purpose affects how useful the passage is for showing how far Christianity had spread across Asia.'
         ],
-        'Respond to all three parts in complete sentences. Use a specific passage detail in (a). In (b), trace a mechanism connecting Mongol imperial conditions to Bar Sauma\'s journey or audience. In (c), explain both the insight the biographer\'s position provides and the conclusion it makes less secure.',
+        'Answer all three parts in complete sentences. In (a), use a specific detail from the passage. In (b), explain how Mongol rule made travel between China, Persia and Europe easier. In (c), explain one thing the biographer\'s point of view helps us see and one claim in the source that it makes less certain.',
         'Sourcing and Situation (Skills 2.A and 2.C)',
         ['Rabban Bar Sauma', 'Church of the East', 'Yuan China', 'Ilkhanate', 'Baghdad', 'Mongols', 'cultural diffusion'],
         [{ label: 'Read Budge\'s 1928 translation at Fordham University', url: 'https://sourcebooks.web.fordham.edu/eastasia/13bar-sauma-nestorianpilgrim.asp' }]

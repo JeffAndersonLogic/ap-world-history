@@ -223,7 +223,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 7,
         land: [
           'Paper and gunpowder are the CED examples.',
-          'This image establishes sophisticated use of paper and printing in China. The network story is what explains later wider diffusion.',
+          'This image establishes sophisticated use of paper and printing in China. Papermaking had already spread west to Samarkand and Baghdad by the 700s, centuries before paper money, so the network story explains a diffusion that began long before this note.',
           'The significance is transfer and adaptation, not simply Chinese invention.'
         ],
         ask: 'What does this visual establish — and what part of the diffusion story still requires other evidence?',
@@ -263,7 +263,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'KC-3.3.II says rising productivity and expanding trade networks could buoy urbanization.',
           'A network node attracts merchants, artisans, transport workers, storage, services, tax revenue, and information.',
-          'Samarkand is supporting evidence for how traffic can concentrate economic and cultural life.'
+          'The picture is an AI reconstruction, labeled on the slide: it sets the scene and is not evidence. The evidence is what historians know about Samarkand as a Silk Road market where traffic concentrated economic and cultural life.'
         ],
         ask: 'Why does repeated traffic turn a stop into a city?',
         listenFor: 'Demand for services, markets, labor, storage, taxes, information, and settlement.'

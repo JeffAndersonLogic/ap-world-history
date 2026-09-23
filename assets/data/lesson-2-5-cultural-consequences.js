@@ -140,10 +140,10 @@ window.BEHISTORICAL_LESSON = {
           'The CED point is variation: connectivity did not make every city grow forever. A city\'s fortunes depended on the strength and location of the networks around it.'
         ],
         image: {
-          title: 'Indian Ocean port networks',
-          caption: 'Ports and inland trading cities rose when expanding networks concentrated people, goods, and services.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png'
+          title: 'The Mongol siege of Baghdad, 1258',
+          caption: 'A Persian manuscript painting made about 1430, long after the event. Baghdad had grown rich and famous at the center of connected networks, and in 1258 it fell to Mongol armies: connected cities could rise and could also fall.',
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bagdad1258.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bagdad1258.jpg'
         }
       },
       {
@@ -154,10 +154,10 @@ window.BEHISTORICAL_LESSON = {
           'Their accounts are themselves evidence of intensified exchange: more people could move through long-distance networks, and some of those travelers created written records of cross-cultural contact.'
         ],
         image: {
-          title: 'Travel through connected Afro-Eurasia',
-          caption: 'Travel accounts turned movement through exchange networks into historical evidence.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg'
+          title: 'A caravan on the Catalan Atlas, 1375',
+          caption: 'Detail of a world map made in Majorca in 1375, showing a caravan crossing Asia. The mapmaker drew on travelers\' reports: travel accounts turned movement through networks into knowledge for people who never made the trip.',
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Caravane_Marco_Polo.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Caravane_Marco_Polo.jpg'
         }
       }
     ]
@@ -171,7 +171,7 @@ window.BEHISTORICAL_LESSON = {
     intro: 'Use the map as a network map rather than a route-memorization exercise. Trace how a belief, a technology, or a traveler could move through connected cities and regions.',
     prompt: 'Choose one cultural tradition, one technology, and one traveler. Which network made each movement possible, and what does that reveal about the consequences of connectivity?',
     notes: [
-      'The **Silk Roads** linked East Asia, Central Asia, Southwest Asia, and the Mediterranean, enabling the movement of Buddhism, paper, gunpowder, and travelers such as Marco Polo.',
+      'The **Silk Roads** linked East Asia, Central Asia, Southwest Asia, and the Mediterranean. They had carried Buddhism east centuries earlier, and in this period they carried gunpowder west and travelers such as Marco Polo.',
       'The **Indian Ocean network** connected East Africa, Arabia, South Asia, Southeast Asia, and China, helping Islam and other cultural traditions move with merchants and travelers such as Ibn Battuta.',
       'The **trans-Saharan routes** connected West Africa to North Africa and the wider Islamic world, helping Islam, scholarship, and travelers move across the desert.',
       'Cities located at network nodes could gain population and wealth, while cities bypassed or damaged by changing political and commercial conditions could decline.'
