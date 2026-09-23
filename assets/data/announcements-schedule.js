@@ -731,12 +731,12 @@ window.BEHISTORICAL_SCHEDULE = {
       silverDate: '2026-09-17'
     },
     {
-      date: '2026-10-07',
+      date: '2026-10-08',
       title: 'Eras 2 Exam, c. 1200 to c. 1450',
-      detail: 'Covers Units 1 and 2 in full: state building across six Unit 1 regions, plus the three Afro-Eurasian trade networks of Unit 2 and their cultural, environmental, and comparative consequences.',
+      detail: 'Covers Units 1 and 2 in full: state building across six Unit 1 regions, plus the three Afro-Eurasian trade networks of Unit 2 and their cultural, environmental, and comparative consequences. PSAT scheduling shift: Tuesday, October 6 is not a Green or Silver day; Green takes the exam Wednesday, October 7, and Silver takes it Thursday, October 8.',
       type: 'Exam',
-      greenDate: '2026-10-06',
-      silverDate: '2026-10-07'
+      greenDate: '2026-10-07',
+      silverDate: '2026-10-08'
     }
   ],
 
