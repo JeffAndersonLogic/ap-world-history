@@ -67,4 +67,26 @@
 // house; that card became a documentary text record of her exile instead of a
 // forced or unverified picture, the correct outcome per the Image Contract.
 
-module.exports = [];
+// **2026-09-23, the eight pictures and credit links the nightly check reported
+// dead.** Several are not Evidence Lab cards at all (lecture-card images, a map
+// credit link, a BeInTheRoom background), so `replaces` names an existing card in
+// that topic only to satisfy the tool's staging check. Nothing here is applied
+// by the tool; each verified filename is placed by hand in the right slot, and
+// Units 6 cards in build-unit6.js. Filenames are guesses; `search` is the real
+// question. Delete every entry once its fix lands.
+const STAGING = (topic, replaces, file, search, title) => ({
+  topic, replaces, file, search, title,
+  caption: 'Replacement for a dead Commons file; caption is written by hand when it lands.',
+  prompt: 'NOTICE what the picture shows. INFER what it can and cannot prove.'
+});
+
+module.exports = [
+  STAGING('2.1', 'Silk Roads Across Afro-Eurasia', 'Yuan dynasty blue and white porcelain.jpg', 'Yuan dynasty blue and white porcelain dish', 'Chinese porcelain for export'),
+  STAGING('2.1', 'Silk Roads Across Afro-Eurasia', 'Caravanserai Saad al-Saltaneh Qazvin.jpg', 'Saad al-Saltaneh caravanserai Qazvin courtyard', 'Caravanserai courtyard'),
+  STAGING('2.5', 'Great Buddha at the Mogao Caves, Dunhuang', 'Silk route.jpg', 'Silk Road trade routes map', 'Silk Road scholar background map'),
+  STAGING('4.5', 'Cerro Rico at Potosí, 1552', 'Indian weaver at loom.jpg', 'Indian handloom weaver nineteenth century', 'Indian cotton textile production'),
+  STAGING('4.8', 'CONTINUITY — Indian Ocean Monsoon Trade', 'Cerro de Potosí. Grabado en madera, del libro Crónica del Perú, 1552, de Pedro Cieza de León.jpg', 'Cerro Rico Potosi', 'Potosí and the global silver economy'),
+  STAGING('6.5', 'The port of Buenos Aires', 'Puerto de Buenos Aires 1900.jpg', 'Buenos Aires port 1900', 'The port of Buenos Aires'),
+  STAGING('6.6', 'An indenture ship', 'Indian indentured labourers.jpg', 'Indian indentured labourers ship', 'An indenture ship'),
+  STAGING('8.1', 'League of Nations Mandate Map', 'Colonisation 1945.png', 'world 1945 colonial empires map', 'The World in 1945')
+];
