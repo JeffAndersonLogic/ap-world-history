@@ -35,9 +35,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "subtitle": "The desert never got any smaller. Hold that question: by the end of class you can answer it in one sentence.",
       "position": "lower-left",
       "visual": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg",
-        "alt": "Mansa Musa holding gold on the Catalan Atlas",
-        "credit": "Catalan Atlas, 1375 · Bibliothèque nationale de France · public domain"
+        "url": "../assets/images/topics/2-4/2.4%20-%20Camel%20Caravan.jpg",
+        "alt": "A line of camels and riders crossing high Saharan dunes",
+        "credit": "Modern photograph · the Sahara"
       }
     },
     {
@@ -163,6 +163,17 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "map",
+      "eyebrow": "The Motive · On the Map",
+      "title": "Follow the salt south and the gold north.",
+      "visual": {
+        "url": "../assets/images/topics/2-4/2.4%20-%20Mali.png",
+        "alt": "Map of the Mali Empire and trans-Saharan routes, with salt moving south from Taghaza and gold moving north",
+        "credit": "Map · Mali Empire trade routes and goods"
+      },
+      "footer": "Every arrow is a price difference someone was willing to cross the desert for."
+    },
+    {
       "kind": "source-quote",
       "eyebrow": "Primary Source · Close Read",
       "title": "Ibn Battuta at Taghaza, 1352",
@@ -174,7 +185,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "work": "Travels in Asia and Africa, trans. H. A. R. Gibb",
           "year": "1352"
         },
-        "notice": "The same load of salt, carried farther south. **What happens to its price, and why?**"
+        "notice": "The same load of salt, carried farther south. **What happens to its price, and why?**",
+        "visual": {
+          "url": "../assets/images/topics/2-4/2.4%20-%20Salt%20Slabs.jpg",
+          "alt": "Rows of large rock-salt slabs stacked at a market",
+          "credit": "Modern photograph · Saharan rock salt"
+        }
       }
     },
     {
@@ -305,16 +321,19 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "frame-placard",
+      "kind": "frame-evidence",
       "eyebrow": "Mansa Musa · 1324",
       "title": "One pilgrimage advertises a whole network.",
       "template": {
-        "placard": {
-          "tag": "Evidence · 1375",
-          "name": "The Catalan Atlas",
-          "text": "Drawn in Majorca, fifty years after Mansa Musa's pilgrimage through Cairo. Its label calls him the richest king in the region because of the gold in his land."
+        "sceneLabel": "A modern artist imagines the journey",
+        "evidenceLabel": "A map from 1375 records the reputation",
+        "scene": {
+          "url": "../assets/images/topics/2-4/2.4%20-%20Mansa%20Musa%20Hajj.jpg",
+          "alt": "A modern painting of Mansa Musa holding a gold scepter, with his caravan crossing the desert toward Cairo and Mecca",
+          "credit": "Modern painting · Higgins Bond",
+          "position": "30% 40%"
         },
-        "visual": {
+        "evidence": {
           "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg",
           "alt": "Mansa Musa holding gold on the Catalan Atlas",
           "credit": "Catalan Atlas, 1375 · BnF · public domain"
@@ -395,16 +414,16 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "subtitle": "Explain both, with two pieces of evidence. Draft, work with Socrates, revise. If it is not finished in class, it is homework."
     },
     {
-      "kind": "hero",
+      "kind": "map",
       "eyebrow": "Topic 2.4 · The Big Idea",
       "title": "The Sahara did not shrink.",
       "subtitle": "The system for crossing it got better, and a trade route became an empire's foundation.",
-      "position": "lower-left",
       "visual": {
-        "url": "../assets/images/instructional-maps/topic-2-4.svg",
-        "alt": "Trans-Saharan trade routes",
-        "credit": "BeHistorical instructional map · Topic 2.4"
-      }
+        "url": "../assets/images/topics/2-4/2.4%20-%20Ghana%20Mali%20Songhay%20Map.jpg",
+        "alt": "Map of Africa showing the kingdom of Ghana and the Mali and Songhay empires, with trans-Saharan and Indian Ocean routes",
+        "credit": "Map · Ghana, Mali and Songhay, with trans-Saharan and maritime routes"
+      },
+      "footer": "Ghana, then Mali, then Songhay: the empires changed, and the routes stayed."
     }
   ]
 };

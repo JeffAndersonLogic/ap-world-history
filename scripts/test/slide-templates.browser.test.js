@@ -99,7 +99,8 @@ const EX = sandbox.window.BH_SLIDE_TEMPLATE_EXAMPLES;
    Equation layout printed NETWOR and hid the K. Pictures are not measured;
    they are cropped on purpose, inside frames that clip them. An AI label is
    also measured against the frame it sits in, because a label cut off by its
-   own picture is a label nobody can read. */
+   own picture is a label nobody can read. A photo credit is held to the same
+   rule: a credit cut off at the frame edge names nobody. */
 function measureBoards(label) {
   const out = [];
   const range = document.createRange();
@@ -127,8 +128,15 @@ function measureBoards(label) {
       const within = box => r.top >= box.top - 1 && r.bottom <= box.bottom + 1 && r.left >= box.left - 1 && r.right <= box.right + 1;
       return { text: t.textContent.trim(), inside: within(board) && within(c), px: parseFloat(getComputedStyle(t).fontSize) / scale };
     });
+    const credits = [...slide.querySelectorAll('.bht-src')].map(t => {
+      const r = t.getBoundingClientRect();
+      const clip = t.closest('.bht-frame');
+      const c = clip ? clip.getBoundingClientRect() : board;
+      const within = box => r.top >= box.top - 1 && r.bottom <= box.bottom + 1 && r.left >= box.left - 1 && r.right <= box.right + 1;
+      return { text: t.textContent.trim(), inside: within(board) && within(c) };
+    });
     const ratio = board.width / board.height;
-    out.push({ kind: slide.dataset.template, worst: Math.round(worst), what, tags, ratio, label });
+    out.push({ kind: slide.dataset.template, worst: Math.round(worst), what, tags, credits, ratio, label });
   }
   return out;
 }
@@ -164,9 +172,59 @@ function measureBoards(label) {
     check(`${st.label}: AI labels are painted`, tags.length >= aiKinds, `${tags.length} label(s) on ${aiKinds} example(s) with AI images`);
     const badTags = tags.filter(t => t.text !== T.LABEL || !t.inside || t.px < 9);
     check(`${st.label}: every AI label is the house label, fully visible, at least 9 design px`, badTags.length === 0, badTags.map(t => `${t.kind}: "${t.text}" inside=${t.inside} ${t.px.toFixed(1)}px`).join(' | ') || 'clean');
+    const cut = boards.flatMap(b => b.credits.filter(c => !c.inside).map(c => `${b.kind}: "${c.text}"`));
+    check(`${st.label}: every photo credit is fully visible`, cut.length === 0, cut.join(' | ') || 'clean');
     const decoded = await page.evaluate(() => [...document.querySelectorAll('.bht-img')].filter(i => i.naturalWidth > 0).length);
     check(`${st.label}: local pictures really decoded`, decoded > 0, `${decoded} decoded`);
     check(`${st.label}: no page errors`, errors.length === 0, errors.slice(0, 2).join(' | ') || 'clean');
+    await page.close();
+  }
+
+  /* 2b: every template slide a real deck ships, not only the catalog. The
+     catalog examples are written to fit; a deck's own titles, credits and
+     pictures are not, and Topic 2.4 shipped a credit clipped at its frame
+     edge and a Compounding bar that inherited the student shell's toolbar. */
+  {
+    const real = [];
+    for (const deck of DECKS) {
+      const file = path.join(ROOT, `assets/data/presentations/topic-${deck.key.replace('.', '-')}-student.js`);
+      if (!fs.existsSync(file)) continue;
+      const box = { window: {} };
+      vm.runInNewContext(fs.readFileSync(file, 'utf8'), box);
+      const d = box.window.BEHISTORICAL_STUDENT_DECK;
+      for (const sl of (d && d.slides) || []) if (T.has(sl.kind)) real.push({ deck: deck.key, slide: sl });
+    }
+    const page = await browser.newPage({ viewport: { width: 1400, height: 900 } });
+    await hermetic(page);
+    // Rendered from the student shell's folder so a deck's relative image
+    // paths resolve, and inside that shell's own CSS, which is the host a
+    // generic class name collides with.
+    await page.goto(`${origin}/unit-2/presentation-topic-2-4-student.html`, { waitUntil: 'load' });
+    await page.waitForSelector('#stage .slide', { timeout: 15000 });
+    const boards = [];
+    for (const r of real) {
+      const b = await page.evaluate(sl => {
+        const stage = document.querySelector('#stage');
+        stage.style.cssText = 'width:1280px;height:720px;aspect-ratio:auto';
+        stage.innerHTML = window.BHSlideTemplates.render(sl);
+        return new Promise(res => requestAnimationFrame(() => requestAnimationFrame(res)));
+      }, r.slide);
+      const m = await page.evaluate(measureBoards, r.deck);
+      boards.push(...m.map(x => ({ ...x, id: `${r.deck} ${r.slide.id || x.kind}` })));
+    }
+    check('real decks: template slides measured', boards.length === real.length && real.length > 0, `${boards.length} of ${real.length}`);
+    const over = boards.filter(b => b.worst > 2);
+    check('real decks: no text is painted outside its board', over.length === 0, over.map(b => `${b.id} +${b.worst}px [${b.what}]`).join(' | ') || 'clean');
+    const cut = boards.flatMap(b => b.credits.filter(c => !c.inside).map(c => `${b.id}: "${c.text}"`));
+    check('real decks: every photo credit is fully visible', cut.length === 0, cut.join(' | ') || 'clean');
+    const badTags = boards.flatMap(b => b.tags.filter(t => t.text !== T.LABEL || !t.inside).map(t => `${b.id}: "${t.text}"`));
+    check('real decks: every AI label is the house label and fully visible', badTags.length === 0, badTags.join(' | ') || 'clean');
+    const bars = await page.evaluate(sl => {
+      document.querySelector('#stage').innerHTML = window.BHSlideTemplates.render(sl);
+      const b = document.querySelector('.bht-cp-row > :last-child');
+      return b ? getComputedStyle(b).position : 'missing';
+    }, EX.find(e => e.slide.kind === 'compounding').slide);
+    check('real decks: a Compounding bar keeps its own styling inside the student shell', bars === 'static', `position:${bars}`);
     await page.close();
   }
 
@@ -277,6 +335,24 @@ function measureBoards(label) {
     const boards = await page.evaluate(measureBoards, 'control');
     const clipped = boards.length === 1 && boards[0].tags.some(t => !t.inside);
     check('control: an AI label cut off by its frame is caught', clipped);
+    await page.close();
+  }
+
+  {
+    // A photo credit too long for a narrow side frame, with the wrap turned off.
+    const page = await browser.newPage({ viewport: { width: 1400, height: 900 } });
+    await hermetic(page);
+    await page.goto(`${origin}/teacher/slide-templates.html`, { waitUntil: 'load' });
+    await page.evaluate(() => {
+      const stage = document.querySelector('.stage');
+      stage.style.cssText = 'width:1280px;height:720px;aspect-ratio:auto';
+      stage.innerHTML = window.BHSlideTemplates.render({ kind: 'source-quote', title: 't', template: { quote: 'q', visual: { url: '', credit: 'Modern photograph · a credit far too long for a three hundred unit frame' } } });
+      const st = document.createElement('style'); st.textContent = '.bht-slide .bht-src{white-space:nowrap!important;max-width:none!important}'; document.head.appendChild(st);
+      document.querySelectorAll('.stage').forEach((el, i) => { if (i) el.innerHTML = ''; });
+    });
+    const boards = await page.evaluate(measureBoards, 'control');
+    const cut = boards.length === 1 && boards[0].credits.length > 0 && boards[0].credits.some(c => !c.inside);
+    check('control: a photo credit cut off by its frame is caught', cut, boards[0] ? `${boards[0].credits.length} credit(s)` : 'nothing measured');
     await page.close();
   }
 
