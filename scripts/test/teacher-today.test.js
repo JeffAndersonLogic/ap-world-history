@@ -162,6 +162,10 @@ for (const t of rosOnly) {
   const page = fs.readFileSync(path.join(ROOT, 'teacher', 'index.html'), 'utf8');
   ok('teacher/index.html embeds this exact function, not a copy of it',
     page.includes(String(resolveTeacherSurface)));
+  ok('teacher command center keeps the AP World hero heading',
+    page.includes('AP World Command Center'));
+  ok('teacher command center reuses the Module 01 globe artwork',
+    page.includes('../assets/images/module-art/unit-1/topic-1-1/map.svg'));
 }
 
 console.log('');
