@@ -81,12 +81,13 @@ const STAGING = (topic, replaces, file, search, title) => ({
 });
 
 module.exports = [
-  STAGING('2.1', 'Silk Roads Across Afro-Eurasia', 'Yuan dynasty blue and white porcelain.jpg', 'Yuan dynasty blue and white porcelain dish', 'Chinese porcelain for export'),
-  STAGING('2.1', 'Silk Roads Across Afro-Eurasia', 'Caravanserai Saad al-Saltaneh Qazvin.jpg', 'Saad al-Saltaneh caravanserai Qazvin courtyard', 'Caravanserai courtyard'),
-  STAGING('2.5', 'Great Buddha at the Mogao Caves, Dunhuang', 'Silk route.jpg', 'Silk Road trade routes map', 'Silk Road scholar background map'),
-  STAGING('4.5', 'Cerro Rico at Potosí, 1552', 'Indian weaver at loom.jpg', 'Indian handloom weaver nineteenth century', 'Indian cotton textile production'),
-  STAGING('4.8', 'CONTINUITY — Indian Ocean Monsoon Trade', 'Cerro de Potosí. Grabado en madera, del libro Crónica del Perú, 1552, de Pedro Cieza de León.jpg', 'Cerro Rico Potosi', 'Potosí and the global silver economy'),
-  STAGING('6.5', 'The port of Buenos Aires', 'Puerto de Buenos Aires 1900.jpg', 'Buenos Aires port 1900', 'The port of Buenos Aires'),
-  STAGING('6.6', 'An indenture ship', 'Indian indentured labourers.jpg', 'Indian indentured labourers ship', 'An indenture ship'),
-  STAGING('8.1', 'League of Nations Mandate Map', 'Colonisation 1945.png', 'world 1945 colonial empires map', 'The World in 1945')
+  STAGING('2.1', 'Silk Roads Across Afro-Eurasia', 'Foliated dish with underglaze blue design of melons, bamboo and grapes, Jingdezhen ware, Yuan, 1271-1368, Shanghai Museum.jpg', 'Jingdezhen blue and white Yuan', 'Chinese porcelain for export'),
+  STAGING('2.1', 'Silk Roads Across Afro-Eurasia', 'Caravanserai in Iran.jpg', 'caravanserai courtyard Iran', 'Caravanserai courtyard'),
+  STAGING('2.1', 'Silk Roads Across Afro-Eurasia', 'Sa\'d al-Saltaneh Caravanserai.jpg', 'Qazvin caravanserai', 'Caravanserai courtyard'),
+  STAGING('4.5', 'Cerro Rico at Potosí, 1552', 'Weaver at his loom, India.jpg', 'weaver loom India', 'Indian cotton textile production'),
+  STAGING('4.5', 'Cerro Rico at Potosí, 1552', 'Indian handloom.jpg', 'handloom weaving India cotton', 'Indian cotton textile production'),
+  STAGING('6.5', 'The port of Buenos Aires', 'Puerto madero silos 1900.jpg', 'Puerto Madero 1900', 'The port of Buenos Aires'),
+  STAGING('6.6', 'An indenture ship', 'Fatel Razack.jpg', 'Fatel Razack', 'An indenture ship'),
+  STAGING('6.6', 'An indenture ship', 'Indian indentured labourers in Trinidad.jpg', 'indentured labourers Trinidad', 'An indenture ship'),
+  STAGING('6.6', 'An indenture ship', 'Coolie ship.jpg', 'indentured Indian immigrants arrival', 'An indenture ship')
 ];
