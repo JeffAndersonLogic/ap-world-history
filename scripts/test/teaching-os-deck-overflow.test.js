@@ -158,7 +158,7 @@ function shellFor(key) {
         seen.push(await page.evaluate(() => {
           const stage = document.querySelector('#stage');
           const slide = stage.querySelector('.slide') || stage.firstElementChild;
-          if (!slide) return { title: '(no slide)', overY: 0, overX: 0, imgs: 0, worst: '' };
+          if (!slide) return { title: '(no slide)', sig: '(no slide)', overY: 0, overX: 0, imgs: 0, worst: '' };
           const frame = slide.getBoundingClientRect();
           // Measure painted boxes against the frame, not scrollHeight. A slide
           // whose children are all absolutely positioned reports a scrollHeight
@@ -183,6 +183,11 @@ function shellFor(key) {
           }
           return {
             title: (stage.querySelector('h2')?.textContent || '').trim().slice(0, 44),
+            // Tells slides apart for the walk check. The first h2 alone cannot:
+            // a template slide may have none (a primary source, a placard, a
+            // sharpened claim), and a landing slide can repeat another slide's
+            // heading on purpose, so Topic 2.4 read as 18 slides of 21.
+            sig: (stage.innerText || '').replace(/\s+/g, ' ').trim().slice(0, 240),
             overY, overX, worst,
             imgs: [...stage.querySelectorAll('img')].filter(im => im.naturalWidth > 0).length
           };
@@ -196,7 +201,7 @@ function shellFor(key) {
       // Without this, a walk that never advanced reports every other assertion
       // green having measured slide 1 N times. That false green is not
       // hypothetical: it happened while this defect was being diagnosed.
-      const distinct = new Set(seen.map(s => s.title)).size;
+      const distinct = new Set(seen.map(s => s.sig)).size;
       check(`${label}: the walk really advanced`, total > 0 && distinct === total,
         `${distinct} distinct of ${total}`);
 

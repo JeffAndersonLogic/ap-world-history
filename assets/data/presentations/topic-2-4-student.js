@@ -7,45 +7,42 @@ window.BEHISTORICAL_STUDENT_DECK = {
   },
   "slides": [
     {
-      "kind": "process",
-      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "kind": "beready-recall",
+      "eyebrow": "BeReady · Recall",
       "title": "Pull the ocean story back from memory.",
-      "subtitle": "Short answers are enough. Retrieve first; we will build from them.",
-      "footer": "Retrieve, connect, enter the new problem.",
-      "steps": [
-        {
-          "label": "Monsoon",
-          "text": "What made Indian Ocean voyages predictable?"
-        },
-        {
-          "label": "Ports",
-          "text": "Why did waiting for the wind make port cities grow?"
-        },
-        {
-          "label": "States",
-          "text": "Name one state that grew rich from Indian Ocean trade."
-        },
-        {
-          "label": "Bridge",
-          "text": "The ocean ran on a schedule. The Sahara has no monsoon. What would merchants need to cross a desert again and again?"
-        }
-      ]
+      "template": {
+        "questions": [
+          {
+            "label": "Monsoon",
+            "text": "What made Indian Ocean voyages predictable?"
+          },
+          {
+            "label": "Ports",
+            "text": "Why did waiting for the wind make port cities grow?"
+          },
+          {
+            "label": "States",
+            "text": "Name one state that grew rich from Indian Ocean trade."
+          }
+        ],
+        "turn": "The ocean ran on a schedule. The Sahara has no monsoon. **What would merchants need to cross a desert again and again?**"
+      }
     },
     {
       "kind": "hero",
-      "eyebrow": "AP World History · Topic 2.4",
-      "title": "The Desert Road",
-      "subtitle": "The Sahara stayed dangerous. Trade grew because people built systems that made crossing it possible and profitable.",
+      "eyebrow": "Topic 2.4 · The Question",
+      "title": "How did trade across the Sahara grow?",
+      "subtitle": "The desert never got any smaller. Hold that question: by the end of class you can answer it in one sentence.",
       "position": "lower-left",
       "visual": {
         "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg",
-        "alt": "Mansa Musa depicted on the Catalan Atlas",
+        "alt": "Mansa Musa holding gold on the Catalan Atlas",
         "credit": "Catalan Atlas, 1375 · Bibliothèque nationale de France · public domain"
       }
     },
     {
       "kind": "map",
-      "eyebrow": "Geographic Grounding",
+      "eyebrow": "Module 01 · Map & Geography",
       "title": "The Sahara is the problem in the middle.",
       "subtitle": "West African gold zones · Saharan salt · North African markets",
       "visual": {
@@ -56,282 +53,352 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "footer": "Trade links regions because they need different things."
     },
     {
-      "kind": "process",
-      "eyebrow": "The Network",
-      "title": "Four pieces make the desert route work.",
-      "subtitle": "Camel · Caravan · Oasis · Demand",
-      "footer": "Transportation solves possibility. Demand supplies motive.",
-      "steps": [
-        {
-          "label": "Camel",
-          "text": "Desert-adapted transport"
-        },
-        {
-          "label": "Caravan",
-          "text": "Scale, supplies, security"
-        },
-        {
-          "label": "Oasis",
-          "text": "Water + staged movement"
-        },
-        {
-          "label": "Demand",
-          "text": "Profit justifies the risk"
-        }
-      ]
-    },
-    {
       "kind": "action",
-      "eyebrow": "First & 10 · 10 Minutes",
+      "eyebrow": "Module 02 · First & 10 · 10 Minutes",
       "title": "Read for the causal chain.",
-      "subtitle": "Transportation → trade expansion → Mali"
+      "subtitle": "Desert → tools → motive → more trade → Mali"
     },
     {
-      "kind": "process",
-      "eyebrow": "Transportation Technology",
-      "title": "The camel is useful because the saddle makes it work.",
-      "subtitle": "Animal adaptation + human technology",
-      "footer": "The saddle changes what the animal can do for commerce.",
-      "steps": [
-        {
-          "label": "Endurance",
-          "text": "Long stretches between water"
-        },
-        {
-          "label": "Load",
-          "text": "Saddle improves carrying capacity"
-        },
-        {
-          "label": "Control",
-          "text": "Rider + pack management"
-        },
-        {
-          "label": "Reach",
-          "text": "Regular desert crossings become viable"
+      "kind": "equation-stack",
+      "eyebrow": "The Tools · Makes It Possible",
+      "title": "They made the crossing repeatable.",
+      "footer": "The desert stayed the same size. The **saddle** and the **caravan** are the CED's examples.",
+      "template": {
+        "terms": [
+          {
+            "word": "Camel",
+            "note": "Goes long stretches between wells"
+          },
+          {
+            "word": "Saddle",
+            "note": "Carries heavier loads, and the rider stays in control"
+          },
+          {
+            "word": "Caravan",
+            "note": "Hundreds of animals, guides and shared guards"
+          },
+          {
+            "word": "Oases",
+            "note": "Water at known stops along the way"
+          }
+        ],
+        "result": {
+          "word": "A trade route",
+          "note": "The same crossing, made again and again"
         }
-      ]
+      }
     },
     {
-      "kind": "process",
+      "kind": "split-contrast",
       "eyebrow": "Caravan Organization",
       "title": "One merchant crosses a desert. A caravan builds a system.",
-      "subtitle": "Animals · guides · supplies · security",
       "footer": "Organization turns individual risk into network capacity.",
-      "steps": [
-        {
-          "label": "Pool",
-          "text": "Animals + cargo + labor"
+      "template": {
+        "left": {
+          "tag": "Alone",
+          "title": "One merchant crosses a desert.",
+          "text": [
+            "Carries every risk personally.",
+            "One loss of water or cargo ends the trip."
+          ]
         },
-        {
-          "label": "Guide",
-          "text": "Route + water knowledge"
-        },
-        {
-          "label": "Protect",
-          "text": "Shared security and risk"
-        },
-        {
-          "label": "Stage",
-          "text": "Move between known stopping points"
+        "right": {
+          "tag": "Together",
+          "title": "A caravan builds a system.",
+          "items": [
+            {
+              "label": "Pool",
+              "text": "animals, cargo, labor"
+            },
+            {
+              "label": "Guide",
+              "text": "route and water knowledge"
+            },
+            {
+              "label": "Protect",
+              "text": "shared security and risk"
+            },
+            {
+              "label": "Stage",
+              "text": "known stopping points"
+            }
+          ]
         }
-      ]
+      }
     },
     {
-      "kind": "map",
-      "eyebrow": "Environmental Constraint",
-      "title": "The route follows water as much as profit.",
-      "subtitle": "Oases divide a huge crossing into survivable stages.",
-      "visual": {
-        "url": "../assets/images/instructional-maps/topic-2-4.svg",
-        "alt": "Trans-Saharan routes showing West Africa, Sahara, and North Africa",
-        "credit": "BeHistorical instructional map · Topic 2.4"
-      },
-      "footer": "The environment shapes the route."
-    },
-    {
-      "kind": "process",
-      "eyebrow": "Commercial Demand",
-      "title": "Gold and salt create complementary demand.",
-      "subtitle": "Each side has something the other side values.",
+      "kind": "exchange",
+      "eyebrow": "The Motive · Worth It",
+      "title": "Gold and salt make the risk worth it.",
       "footer": "Goods matter because demand makes transport profitable.",
-      "steps": [
-        {
-          "label": "West Africa",
-          "text": "Major gold production"
-        },
-        {
-          "label": "Sahara",
-          "text": "Major salt deposits"
-        },
-        {
-          "label": "North Africa",
-          "text": "Markets + wider connections"
-        },
-        {
-          "label": "Exchange",
-          "text": "Price differences reward movement"
-        }
-      ]
+      "template": {
+        "lede": "Each region has what another lacks. **Price differences reward movement**, so merchants cross the desert on purpose.",
+        "places": [
+          {
+            "tag": "North",
+            "name": "North Africa",
+            "text": "Buyers for gold; cloth, horses and books go south"
+          },
+          {
+            "tag": "Between",
+            "name": "The Sahara",
+            "text": "Salt mines such as Taghaza"
+          },
+          {
+            "tag": "South",
+            "name": "West Africa",
+            "text": "Major gold fields"
+          }
+        ],
+        "flows": [
+          {
+            "label": "Gold",
+            "dir": "up"
+          },
+          {
+            "label": "Salt",
+            "dir": "down"
+          }
+        ]
+      }
     },
     {
-      "kind": "process",
-      "eyebrow": "Expansion",
-      "title": "Better transport changes both volume and range.",
-      "subtitle": "More goods · farther connections · more regular exchange",
-      "footer": "The AP claim is bigger than “gold traded for salt.”",
-      "steps": [
-        {
-          "label": "Capacity",
-          "text": "Move heavier/larger cargoes"
+      "kind": "source-quote",
+      "eyebrow": "Primary Source · Close Read",
+      "title": "Ibn Battuta at Taghaza, 1352",
+      "footer": "A mithqal is a weight of gold. Distance is what the merchant is paid for.",
+      "template": {
+        "quote": "A camel will carry two of these slabs. … At Iwalatan a load of salt brings eight to ten mithqals; in the town of Malli it sells for twenty to thirty, and sometimes as much as forty.",
+        "attribution": {
+          "author": "Ibn Battuta",
+          "work": "Travels in Asia and Africa, trans. H. A. R. Gibb",
+          "year": "1352"
         },
-        {
-          "label": "Regularity",
-          "text": "Repeat routes more reliably"
-        },
-        {
-          "label": "Volume",
-          "text": "More exchange over time"
-        },
-        {
-          "label": "Range",
-          "text": "Network reaches wider markets"
-        }
-      ]
+        "notice": "The same load of salt, carried farther south. **What happens to its price, and why?**"
+      }
+    },
+    {
+      "kind": "equation-remove",
+      "eyebrow": "Why It Took Both · Take One Away",
+      "title": "Take one away and the route fails.",
+      "footer": "Tools made the crossing possible. Demand made it worth it. The Sahara did not shrink, so you need both.",
+      "template": {
+        "terms": [
+          {
+            "word": "Saddle",
+            "without": "Without it: no animal carries a load that far."
+          },
+          {
+            "word": "Caravan",
+            "without": "Without it: every merchant faces the desert alone."
+          },
+          {
+            "word": "Oases",
+            "without": "Without them: no water, so no crossing."
+          },
+          {
+            "word": "Demand",
+            "without": "Without it: nobody pays for the danger."
+          }
+        ]
+      }
     },
     {
       "kind": "action",
-      "eyebrow": "Checkpoint 1 · 6 Minutes",
+      "eyebrow": "Module 05 · Skill Builder",
+      "title": "Explain why it took both.",
+      "subtitle": "What barrier did the tools overcome? What made the trip worth it? Trace both to one change in West Africa."
+    },
+    {
+      "kind": "compounding",
+      "eyebrow": "Expansion · Compounding",
+      "title": "Better crossings mean more trade, reaching farther.",
+      "footer": "The AP claim: more **volume** and a wider **range**, not just gold for salt.",
+      "template": {
+        "steps": [
+          {
+            "label": "Capacity",
+            "text": "Heavier cargoes move on each crossing."
+          },
+          {
+            "label": "Regularity",
+            "text": "Caravans repeat the route season after season."
+          },
+          {
+            "label": "Volume",
+            "text": "More goods cross, year after year."
+          },
+          {
+            "label": "Range",
+            "text": "The links reach Cairo, the Mediterranean and Mecca."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "action",
+      "eyebrow": "Module 06 · Checkpoint 1",
       "title": "Explain the mechanism.",
-      "subtitle": "How did transportation technology and demand expand trans-Saharan trade?"
+      "subtitle": "How did camel technology and caravans increase the volume and range of trade? Use gold or salt as evidence. On your own: no coach."
     },
     {
-      "kind": "map",
-      "eyebrow": "State Power",
-      "title": "Mali sits inside the network — and grows with it.",
-      "subtitle": "Control territory · tax commerce · support connected cities",
-      "visual": {
-        "url": "../assets/images/instructional-maps/topic-2-4.svg",
-        "alt": "Map connecting Mali to trans-Saharan routes",
-        "credit": "BeHistorical instructional map · Topic 2.4"
-      },
-      "footer": "States can facilitate trade and profit from it at the same time."
+      "kind": "exchange-flow",
+      "eyebrow": "State Power · Exchange",
+      "title": "Mali grew by making trade safe to tax.",
+      "footer": "Trade built the state. The state kept the trade moving.",
+      "template": {
+        "places": [
+          {
+            "name": "Merchants",
+            "note": "Caravans and traders"
+          },
+          {
+            "name": "Mali",
+            "note": "Rulers of the gold lands and the routes"
+          }
+        ],
+        "flows": [
+          {
+            "label": "Taxes and gold",
+            "dir": "right"
+          },
+          {
+            "label": "Safe roads and markets",
+            "dir": "left"
+          }
+        ]
+      }
     },
     {
-      "kind": "process",
-      "eyebrow": "Governance + Commerce",
-      "title": "Mali turns movement into state revenue.",
-      "subtitle": "Control · protect · tax · reinvest",
-      "footer": "Trade builds states. States can strengthen trade.",
-      "steps": [
-        {
-          "label": "Control",
-          "text": "Hold strategic territory"
+      "kind": "timeline",
+      "eyebrow": "Mali Rises · Timeline",
+      "title": "Trans-Saharan gold puts Mali on the map.",
+      "footer": "Spacing is true to scale: the events crowd together as Mali becomes famous.",
+      "template": {
+        "range": [
+          1235,
+          1375
+        ],
+        "tick": 25,
+        "events": [
+          {
+            "year": 1235,
+            "label": "c. 1235",
+            "text": "Sundiata founds the Mali Empire."
+          },
+          {
+            "year": 1324,
+            "label": "1324",
+            "text": "Mansa Musa travels through Cairo on his pilgrimage to Mecca."
+          },
+          {
+            "year": 1352,
+            "label": "1352",
+            "text": "Ibn Battuta crosses the Sahara to visit Mali."
+          },
+          {
+            "year": 1375,
+            "label": "1375",
+            "text": "The Catalan Atlas draws Mansa Musa holding gold."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "frame-placard",
+      "eyebrow": "Mansa Musa · 1324",
+      "title": "One pilgrimage advertises a whole network.",
+      "template": {
+        "placard": {
+          "tag": "Evidence · 1375",
+          "name": "The Catalan Atlas",
+          "text": "Drawn in Majorca, fifty years after Mansa Musa's pilgrimage through Cairo. Its label calls him the richest king in the region because of the gold in his land."
         },
-        {
-          "label": "Facilitate",
-          "text": "Support routes + cities"
-        },
-        {
-          "label": "Tax",
-          "text": "Capture part of exchange"
-        },
-        {
-          "label": "Reinforce",
-          "text": "Wealth strengthens the state"
+        "visual": {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg",
+          "alt": "Mansa Musa holding gold on the Catalan Atlas",
+          "credit": "Catalan Atlas, 1375 · BnF · public domain"
         }
-      ]
+      }
     },
     {
       "kind": "hero",
       "eyebrow": "Cities + Connections",
-      "title": "Trade wealth supports connected urban centers.",
+      "title": "Trade wealth supports connected cities.",
       "subtitle": "Markets · scholarship · Islam · administration",
       "position": "upper-left",
       "visual": {
         "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Djenn%C3%A9_2.jpg",
-        "alt": "The Great Mosque of Djenné, a later reconstruction on the site of earlier mosques",
+        "alt": "The Great Mosque of Djenné, a 1907 building on the site of earlier mosques",
         "credit": "Great Mosque of Djenné · present building 1907, on the site of earlier mosques · Wikimedia Commons"
       }
     },
     {
-      "kind": "hero",
-      "eyebrow": "Mansa Musa · 1324",
-      "title": "One pilgrimage advertises a whole network.",
-      "subtitle": "Mali's wealth becomes visible across the Islamic world.",
-      "position": "lower-left",
-      "visual": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg",
-        "alt": "Mansa Musa holding gold on the Catalan Atlas",
-        "credit": "Catalan Atlas, 1375 · Bibliothèque nationale de France · public domain"
-      }
-    },
-    {
       "kind": "action",
-      "eyebrow": "BeInTheRoom · Mali Court",
+      "eyebrow": "Module 09 · BeInTheRoom · Mali Court",
       "title": "You are inside a state built around exchange.",
       "subtitle": "Choose a role. Make a decision. Defend it with evidence."
     },
     {
-      "kind": "process",
-      "eyebrow": "AP Skill Builder · Causation",
-      "title": "Build the chain — do not skip the middle.",
-      "subtitle": "Cause → mechanism → effect",
-      "footer": "Strong AP writing explains why each arrow works.",
-      "steps": [
-        {
-          "label": "Cause",
-          "text": "Camel/caravan improvements"
+      "kind": "split-contrast",
+      "eyebrow": "The Whole Topic",
+      "title": "The Sahara did not shrink. The system for crossing it did.",
+      "footer": "Retell the whole topic from this slide.",
+      "template": {
+        "left": {
+          "tag": "Stayed the same",
+          "title": "The Sahara did not shrink.",
+          "text": [
+            "Still about two months across.",
+            "Still days without water between wells."
+          ]
         },
-        {
-          "label": "Mechanism",
-          "text": "Lower transport risk + higher capacity"
-        },
-        {
-          "label": "Effect",
-          "text": "More volume + wider range"
-        },
-        {
-          "label": "State Link",
-          "text": "Mali facilitates + profits"
+        "right": {
+          "tag": "Got better",
+          "title": "The system for crossing it did.",
+          "count": 4,
+          "items": [
+            {
+              "label": "Tools",
+              "text": "Saddles and caravans make the crossing **possible**"
+            },
+            {
+              "label": "Motive",
+              "text": "Gold and salt make it **worth it**"
+            },
+            {
+              "label": "Result",
+              "text": "More trade, reaching farther"
+            },
+            {
+              "label": "State",
+              "text": "Mali protects it, taxes it, and grows rich"
+            }
+          ]
         }
-      ]
+      }
     },
     {
-      "kind": "process",
-      "eyebrow": "Network Comparison",
-      "title": "Same Unit 2 question. Different transportation problem.",
-      "subtitle": "Silk Roads · Indian Ocean · Trans-Saharan",
-      "footer": "Different environments. Repeating historical mechanism.",
-      "steps": [
-        {
-          "label": "Silk Roads",
-          "text": "Caravan + overland intermediaries"
-        },
-        {
-          "label": "Indian Ocean",
-          "text": "Monsoon + maritime technology"
-        },
-        {
-          "label": "Trans-Saharan",
-          "text": "Camel + caravan organization"
-        },
-        {
-          "label": "Shared Pattern",
-          "text": "Transport systems expand exchange"
-        }
-      ]
+      "kind": "sharpen",
+      "eyebrow": "Sharpen the Claim",
+      "title": "",
+      "footer": "A claim is AP-sized when it names a cause, a change, and why it mattered.",
+      "template": {
+        "weak": "Gold traded for salt.",
+        "strong": "Saddles, caravans and **complementary demand** turned a dangerous crossing into a **regular network**, and Mali grew rich by **protecting and taxing** it."
+      }
     },
     {
       "kind": "action",
-      "eyebrow": "Final Checkpoint · 2 Minutes",
-      "title": "One sentence. Full chain.",
-      "subtitle": "Explain how technology, trade, and Mali connect."
+      "eyebrow": "Module 10 · Checkpoint 2",
+      "title": "Mali gained from the trade, and kept it moving.",
+      "subtitle": "Explain both, with two pieces of evidence. Draft, work with Socrates, revise. If it is not finished in class, it is homework."
     },
     {
       "kind": "hero",
       "eyebrow": "Topic 2.4 · The Big Idea",
       "title": "The Sahara did not shrink.",
-      "subtitle": "Transportation systems made the distance commercially usable.",
+      "subtitle": "The system for crossing it got better, and a trade route became an empire's foundation.",
       "position": "lower-left",
       "visual": {
         "url": "../assets/images/instructional-maps/topic-2-4.svg",
