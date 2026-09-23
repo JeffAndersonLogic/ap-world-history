@@ -14,6 +14,7 @@ css.textContent=`
 .image-canvas img[src*="assets/images/topics/2-1/"]{width:auto!important;height:auto!important;max-width:100%!important;max-height:100%!important;min-width:0!important;min-height:0!important;object-fit:contain!important;object-position:center center!important;display:block!important}
 .node-field .city-node{overflow:hidden!important;background-color:#060808!important;background-repeat:no-repeat!important;background-position:center center!important;background-size:cover!important}
 .node-field .city-node:first-child{background-image:linear-gradient(180deg,rgba(5,7,8,.16),rgba(5,7,8,.78)),url('${assetPath('2.1 - Samarkand.jpg')}')!important}
+.node-field .city-node:first-child{position:relative}.node-field .city-node:first-child::after{content:'Illustration (AI-generated)';position:absolute;z-index:3;right:.5rem;top:.5rem;padding:.3rem .45rem;border:1px solid rgba(201,164,106,.7);background:rgba(4,6,7,.82);font:800 clamp(.45rem,.6vw,.62rem) var(--ui);letter-spacing:.06em;color:var(--gold)}
 .node-field .city-node:nth-child(2){background-image:linear-gradient(180deg,rgba(5,7,8,.16),rgba(5,7,8,.78)),url('${assetPath('2.1 - Kashgar.jpg')}')!important}
 .node-field .city-node h3,.node-field .city-node p{position:relative;z-index:2;text-shadow:0 2px 16px rgba(0,0,0,.95)}
 .node-field .city-node .dot{position:relative;z-index:2}

@@ -222,37 +222,42 @@ module.exports = {
     lessonPage: 'lesson-2-5-cultural-consequences.html',
     docTitle: 'BeHistorical — Module 05 | First &amp; 10 | Topic 2.5 Cultural Consequences of Connectivity',
     headerSubtitle: 'Topic 2.5, Cultural Consequences of Connectivity &nbsp;|&nbsp; AP World History: Modern',
-    titleHtml: 'Ideas, Cities, and <em>Travelers</em>',
-    deck: 'Intensified exchange changed culture in three major ways: traditions and technologies diffused across regions, the fortunes of cities changed with trade and productivity, and more travelers wrote about the increasingly connected Afro-Eurasian world.',
+    titleHtml: 'Goods Were Never the Only <em>Cargo</em>',
+    deck: 'Connectivity changes what societies know, and what they become. After 1200, the same routes that carried silk, spices, and gold carried beliefs, technologies, and travelers, and each of them left a mark on the places they reached.',
     skillTags: ['Causation', 'Cultural Interaction', 'Continuity & Change'],
+    supportHeadings: { before: 'The Story to Hold Onto', target: 'Question for Today' },
     supportCards: {
-      beforeYouRead: 'Track three distinct consequences. Do not collapse the topic into “things spread.” You need cultural/technological diffusion, changing urban fortunes, and written travel accounts.',
-      readingTarget: 'By the end, you should be able to explain how networks spread traditions and innovations, affected urbanization and city decline, and generated travel writing by Ibn Battuta, Marco Polo, and Margery Kempe.'
+      beforeYouRead: '<strong>Bigger networks → More contact → Diffusion + adaptation → Cultural and intellectual change.</strong> Every example in this reading follows that chain. Use it to organize what you meet.',
+      readingTarget: 'When more people and goods moved across Afro-Eurasia, what else moved with them, and how did it change the societies that received it?'
     },
-    vocabulary: ['Buddhism', 'Hinduism', 'Islam', 'Paper', 'Gunpowder', 'Urbanization', 'Trade Networks', 'Ibn Battuta', 'Marco Polo', 'Margery Kempe', 'Travel Account'],
+    vocabulary: ['Diffusion', 'Adaptation', 'Buddhism', 'Hinduism', 'Islam', 'Paper', 'Gunpowder', 'Urbanization', 'Hangzhou', 'Samarkand', 'Baghdad', 'Ibn Battuta', 'Marco Polo', 'Margery Kempe', 'Travel Account'],
     sections: [
-      section('1', 'Diffusion', 'Beliefs Moved Through Networks', [
-        'Exchange networks carried cultural traditions across political and geographic boundaries. <span class="kt">Buddhism</span> continued to influence East Asia, while <span class="kt">Hinduism and Buddhism</span> spread into Southeast Asia through long-standing commercial and cultural contacts.',
-        '<span class="kt">Islam</span> expanded in sub-Saharan Africa and across parts of Asia through merchants, scholars, rulers, and diasporic communities. The important historical point is not simply that a religion appeared somewhere new; it is that intensified interaction provided repeated pathways for transmission and adaptation.'
-      ], 'AP Thinking, Causation', '<strong>Explain the mechanism of diffusion.</strong> Identify who or what carried the tradition and how repeated contact helped it take root.'),
-      section('2', 'Technology', 'Useful Innovations Traveled Too', [
-        '<span class="kt">Paper</span> and <span class="kt">gunpowder</span>, both associated with Chinese innovation, spread through wider Afro-Eurasian connections. As technologies moved, receiving societies adapted them to local needs.',
-        'Technological diffusion demonstrates why exchange networks had consequences beyond markets. A commercial route could also become a pathway for administrative tools, military innovations, scholarly practices, and new forms of communication.'
-      ], 'AP Thinking, Significance', '<strong>Do not treat technology as a list.</strong> Explain why movement mattered by showing how a receiving society could use or adapt the innovation.'),
-      section('3', 'Cities', 'Connectivity Could Build Cities — or Leave Them Behind', [
-        'The fate of cities varied. Rising productivity and expanding trade networks could support <span class="kt">urbanization</span> by attracting merchants, artisans, administrators, and consumers to commercial centers.',
-        'But cities were not guaranteed permanent success. Warfare, political disruption, or changes in trade routes could contribute to decline. The larger CED point is that urban fortunes changed with the economic and political systems surrounding them.'
-      ], 'AP Thinking, Continuity & Change', '<strong>City growth is not automatic.</strong> Explain why connectivity could increase urbanization in one setting while disruption or route changes could weaken another city.'),
-      section('4', 'Travel Writing', 'More Travelers Recorded a Connected World', [
-        'As exchange networks intensified, more travelers wrote accounts of distant places. <span class="kt">Ibn Battuta</span> described journeys across Africa and Asia. <span class="kt">Marco Polo</span> became famous in Europe for accounts associated with travel across Eurasia.',
-        '<span class="kt">Margery Kempe</span>, an English Christian pilgrim, also left an account of travel. These writers had different purposes and perspectives, but together they show how intensified mobility generated new written descriptions of societies connected by trade, pilgrimage, diplomacy, and religion.'
-      ], 'AP Thinking, Evidence', '<strong>The existence of travel accounts is itself evidence.</strong> More movement and contact created more opportunities for observers to describe distant societies to readers at home.')
+      section('1', 'Beliefs', 'Merchants Carried More Than Goods', [
+        'By 1200, the Silk Roads, the Indian Ocean, and the trans-Saharan routes carried more traffic than ever. But goods were never the only cargo. Merchants, pilgrims, missionaries, and scholars traveled the same routes, and they carried their beliefs with them. More contact meant more chances for an idea to move, which historians call <span class="kt">diffusion</span>.',
+        '<span class="kt">Buddhism</span> kept shaping East Asia, where monasteries, art, and schools of Buddhist thought grew in China, Korea, and Japan. In Southeast Asia, <span class="kt">Hinduism</span> and Buddhism took root through trade with India. The temple at Angkor Wat, in the Khmer Empire, was built for the Hindu god Vishnu and later became a Buddhist site.',
+        '<span class="kt">Islam</span> spread into West Africa and across Asia. In West Africa and Southeast Asia it spread mostly through traders, scholars, and teachers rather than through armies. Rulers in Mali and in port cities like Malacca often converted first, partly because Islam connected them to Muslim merchants and to a wider world of law and learning.'
+      ], 'AP Thinking, Causation', '<strong>Name the carrier.</strong> "Islam spread" is not an explanation. Say who carried it, along which route, and why the people receiving it had a reason to adopt it. Network → contact → diffusion.'),
+      section('2', 'Technology', 'Inventions Moved, and Changed as They Moved', [
+        'Technologies traveled the same way beliefs did. <span class="kt">Paper</span>, invented in China, had spread into the Islamic world centuries earlier, where cheap paper helped fill libraries in cities like Baghdad. From there it spread into Europe, where mills began making it from linen rags.',
+        '<span class="kt">Gunpowder</span>, another Chinese invention, reached Southwest Asia and Europe in the 1200s, along routes the Mongols had tied together. Societies that received it did not simply copy Chinese uses. Over time, armies in Europe and the Islamic world built it into cannons and new kinds of warfare.',
+        'This is <span class="kt">adaptation</span>: a receiving society takes something from outside and reshapes it for its own needs. Diffusion explains how an idea or tool arrived. Adaptation explains what it became once it got there.'
+      ], 'AP Thinking, Causation', '<strong>Finish the chain.</strong> Do not stop at "gunpowder spread to Europe." Explain how the society that received it changed it, and what that change made possible. Contact → diffusion → adaptation → change.'),
+      section('3', 'Cities', 'Connected Cities Could Rise, and Could Fall', [
+        'The same traffic made cities rich. <span class="kt">Hangzhou</span>, the capital of the Southern Song, became one of the largest cities in the world, fed by productive rice farming and busy trade. <span class="kt">Samarkand</span>, in Central Asia, grew into a great Silk Road market where merchants, goods, and ideas met. This growth of cities is called <span class="kt">urbanization</span>.',
+        'But a connected city could also fall. In 1258 the Mongols sacked <span class="kt">Baghdad</span>, killed the caliph, and ended the Abbasid Caliphate, which had ruled from the city for about five hundred years. Baghdad had been one of the great centers of learning in the Islamic world, and it never fully recovered its old place.',
+        'Samarkand shows both sides. The Mongols destroyed it in 1220, and more than a century later it was rebuilt as a magnificent capital. When routes or rulers changed, a city\'s fortunes could change with them.'
+      ], 'AP Thinking, Continuity & Change', '<strong>City growth is not automatic.</strong> Explain what made a city grow, trade plus productive farming, and what could reverse it, war, conquest, or shifting routes. The same network that fed a city could expose it.'),
+      section('4', 'Travelers', 'More People Traveled, So More People Wrote It Down', [
+        'Because more people traveled, more people recorded what they saw. Their writings are called <span class="kt">travel accounts</span>, and they let us see this connected world through the eyes of people who crossed it.',
+        '<span class="kt">Ibn Battuta</span>, a Muslim scholar from Morocco, spent about thirty years traveling through North and West Africa, the Middle East, India, and China, often working as a judge in Muslim communities along the way. <span class="kt">Marco Polo</span>, a merchant from Venice, described his years in Mongol China, and his book made Europeans curious about Asia. <span class="kt">Margery Kempe</span>, an English Christian, went on pilgrimages to Jerusalem and Rome and told her story in a book that is often called the first autobiography in English.',
+        'They traveled for trade, faith, and service, and they wrote for readers back home. That makes their accounts valuable evidence and also means each one shows the world from one traveler\'s point of view.'
+      ], 'AP Thinking, Evidence', '<strong>The accounts are evidence twice.</strong> What they describe tells us about distant places. The fact that so many were written tells us contact was growing. Connectivity changes what societies know.')
     ],
-    takeaway: 'Cultural consequences of connectivity included the diffusion of religions and technologies, changing urban fortunes as trade and productivity shifted, and a growing body of travel writing from figures such as Ibn Battuta, Marco Polo, and Margery Kempe.',
+    takeaway: 'Bigger networks meant more contact, and more contact meant diffusion and adaptation. Buddhism, Hinduism, and Islam spread, mostly through merchants and scholars. Paper and gunpowder moved west and were reshaped by the societies that took them in. Trade built cities like Hangzhou and Samarkand, while the Mongol sack of Baghdad in 1258 showed that connected cities could also fall. And travelers like Ibn Battuta, Marco Polo, and Margery Kempe wrote down the connected world they crossed.',
     questions: [
-      { num: '01', skill: 'Causation', text: 'Explain how one cultural tradition or technology diffused through Afro-Eurasian exchange networks.', placeholder: 'One example of diffusion was...' },
-      { num: '02', skill: 'Continuity & Change', text: 'Explain why intensified trade could contribute to urban growth in some places and decline in others.', placeholder: 'Trade networks affected cities by...' },
-      { num: '03', skill: 'Evidence', text: 'Choose Ibn Battuta, Marco Polo, or Margery Kempe. Explain how that traveler’s written account reflects intensified Afro-Eurasian connectivity.', placeholder: 'The travel account of ___ reflects connectivity because...' }
+      { num: '01', skill: 'Causation', text: 'Choose one belief system or one technology. Explain how contact along a trade network spread it, and how the receiving society adapted it.', placeholder: 'Contact along ___ spread ___ because... The receiving society adapted it by...' },
+      { num: '02', skill: 'Continuity & Change', text: 'Explain how connectivity helped one city grow and how a change in rulers or routes could make a city decline. Use a named city.', placeholder: 'Connectivity helped ___ grow by... A city could decline when...' },
+      { num: '03', skill: 'Evidence', text: 'Choose Ibn Battuta, Marco Polo, or Margery Kempe. Explain how that traveler\'s account is evidence of a more connected world, and name one limit of using it.', placeholder: 'The account of ___ shows a connected world because... One limit is...' }
     ]
   }),
 

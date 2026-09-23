@@ -32,10 +32,13 @@ const fromDisk = process.argv.includes('--from-disk');
 // as written by Jeff before it was built.
 // Two camel-saddle sentences were softened the same night, on review, so they no
 // longer imply the desert could not be crossed regularly before 1200.
+// Topic 2.5's story-first rewrite landed 2026-09-23, its story reviewed and approved
+// as written by Jeff before it was built, with the one requested refinement: the
+// networks -> contact -> diffusion and adaptation -> change chain made explicit.
 // Keep the historical fixture untouched, but accept that full rewrite only while
 // its canonical source file is byte-for-byte the approved version below. Any
 // later Unit 2 First & 10 edit changes this Git blob hash and forces a new review.
-const APPROVED_UNIT2_REWRITE_BLOB = 'bc76d9b5f261fd740a53bb91051d39d6274d15d3';
+const APPROVED_UNIT2_REWRITE_BLOB = 'f19317fea6fd2cf082445842a8f4f567463bfb6e';
 const unit2SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-2.js');
 function gitBlobSha(text) {
   const body = Buffer.from(text, 'utf8');
