@@ -48,6 +48,26 @@ The source-of-truth pipeline is:
 
 A teacher page may use its own renderer (Topic 2.3 does), but its data still comes through the wrapper, and a preflight slide must never reach the projector. Topic 2.3's page shows a neutral hold screen for preflight slides in `?mode=project`.
 
+## Slide templates
+
+`assets/js/behistorical-slide-templates.js` is the one implementation of the slide templates: relationships (equation, exchange, split, compounding and their variations), timelines, primary source and sharpen-the-claim slides, five BeReady openers, and frames for AI-generated images. A template slide is ordinary slide data: `kind` names the template, `eyebrow`, `title`, `subtitle` and `footer` work as usual, and everything else the template needs goes in one `template` object.
+
+**The catalog is `teacher/slide-templates.html`**, linked from the teacher command center. It draws every template from `teacher/data/slide-template-examples.js` with a real Unit 2 example and shows the slide data to copy. To use a template, copy an example into a topic's teaching-base or presentation-assets file and change the words. Choosing one is still the visual plan's job in `docs/PRESENTATION-AUTHORING.md`: pick the template whose shape matches the idea, not the one that was used last.
+
+How it reaches every surface:
+
+- Every renderer, the six teacher pages and `assets/js/behistorical-student-presentation-v1.js`, hands a template slide to the library before its own switch, with one identical line: `if(window.BHSlideTemplates&&window.BHSlideTemplates.has(s.kind))return window.BHSlideTemplates.render(s);`
+- Every topic wrapper (`teacher/data/topic-X-X-teaching.js`) loads the library after the shared cockpit, and every student shell loads it before the student renderer.
+- The student generator passes `template` through whole, like `steps` and `cards`. Notes live beside it in `notes`, never inside it.
+
+**A new deck gets templates by being wired the same way.** Copy the hook line into its renderer and the script tag into its wrapper and shell. `scripts/test/slide-templates.test.js` fails the offline gate for any deck in `DECKS` that is missing either, and for any template with no catalog example.
+
+**AI-generated pictures are labeled by the library, not by the author.** A visual with `ai: true` prints `Historical Reconstruction - AI Generated`, small, and ignores any `credit` it carries, so no template can show an AI image unlabeled or under an old wording. A real source keeps its own `credit`. `cropBottom` hides a label that was printed into a picture file. The annotated-object template is for real objects only, never an AI image.
+
+**The styles are scoped under `.bht-slide`**, because the host pages style bare `h2` and `p` elements, and without the scope their rules win and a template's headline comes out tiny and gold. Sizes are design pixels on a 1280x720 board, and the board keeps 16:9 inside any stage, including a full-window projector.
+
+`scripts/test/slide-templates.browser.test.js`, in the browser suite, draws every example at a 1280x720 board and inside a 4:3 stage and fails on any text painted off its board (measured on the text itself, not its box), any AI label that is missing, cut off by its frame or worded differently, and any Teaching OS teacher page or the student renderer that does not actually draw a template. Its negative controls prove each of those can fail. It runs on the fallback fonts, which are narrower than Cinzel, so when a template's layout changes, also check it with the real fonts before shipping: the film strip's labels overflowed in Cinzel and fit in Georgia.
+
 ## Authoring boundary
 
 Do not use this architecture document to invent the instructional sequence.

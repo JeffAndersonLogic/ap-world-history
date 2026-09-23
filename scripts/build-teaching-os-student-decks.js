@@ -122,6 +122,10 @@ function baseStudentSlide(s) {
   if (Array.isArray(s.nodes)) out.nodes = clone(s.nodes);
   if (s.video) out.video = clone(s.video);
   if (s.action) out.action = { ...clone(s.action), url: publicUrl(s.action.url) };
+  // A slide template's own data (assets/js/behistorical-slide-templates.js).
+  // It is projected content, like steps and cards, so it passes through whole;
+  // teacher notes live in `notes` beside it and never inside it.
+  if (s.template && typeof s.template === 'object') out.template = clone(s.template);
   return out;
 }
 

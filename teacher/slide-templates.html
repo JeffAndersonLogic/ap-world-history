@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BeHistorical | Slide Templates</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* Teacher-only catalog of the slide templates. Every stage below is drawn by
+   the same assets/js/behistorical-slide-templates.js the Teaching OS decks
+   load, from the examples in data/slide-template-examples.js, so what shows
+   here is exactly what a deck will project. */
+:root{--night:#07090a;--panel:#111516;--line:#2f383b;--gold:#c9a46a;--paper:#f5f0e7;--muted:#aeb6b8}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--night);color:var(--paper);font-family:'Libre Baskerville',Georgia,serif}
+a{color:var(--gold)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--gold);color:#101213;padding:10px 14px;font:800 14px 'Montserrat',sans-serif;z-index:10}
+.skip:focus{left:12px;top:12px}
+header{padding:28px 32px 18px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:16px 28px;align-items:flex-end;justify-content:space-between}
+header h1{margin:0;font:900 30px/1.1 'Cinzel',Georgia,serif;color:#fffdf7}
+header p{margin:6px 0 0;max-width:70ch;color:var(--muted);font-size:15px;line-height:1.55}
+header a.back{font:700 13px 'Montserrat',sans-serif;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+nav{padding:14px 32px;display:flex;flex-wrap:wrap;gap:8px;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(7,9,10,.96);z-index:5}
+nav a{font:700 13px 'Montserrat',sans-serif;text-decoration:none;color:var(--paper);border:1px solid var(--line);border-radius:999px;padding:7px 14px}
+nav a:hover{border-color:var(--gold)}
+main{padding:10px 32px 60px}
+section.group > h2{font:800 22px/1.2 'Cinzel',Georgia,serif;color:var(--gold);margin:34px 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,560px),1fr));gap:28px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.stage{position:relative;aspect-ratio:16/9;overflow:hidden;background:#020303}
+.meta{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px}
+.meta h3{margin:0;font:800 17px/1.25 'Cinzel',Georgia,serif;color:#fffdf7}
+.meta code{font:700 13px ui-monospace,Menlo,monospace;color:var(--gold)}
+.meta p{margin:0;font-size:14px;line-height:1.5;color:var(--muted)}
+details summary{cursor:pointer;font:700 13px 'Montserrat',sans-serif;color:var(--paper);margin-top:4px}
+details pre{margin:10px 0 0;max-height:320px;overflow:auto;background:#050606;border:1px solid var(--line);border-radius:8px;padding:12px;font:12px/1.5 ui-monospace,Menlo,monospace;color:#e6ddcc;white-space:pre-wrap;word-break:break-word}
+.missing{padding:30px;color:#ffb4a8;font:700 16px 'Montserrat',sans-serif}
+</style>
+</head>
+<body>
+<a class="skip" href="#main-content">Skip to the templates</a>
+<header>
+  <div>
+    <h1>Slide Templates</h1>
+    <p>Every template the Teaching OS can draw, each with a real Unit 2 example. To use one, copy its slide data into a topic's teaching-base or presentation-assets file and change the words. AI-generated pictures carry the house label automatically when their visual says <code>ai: true</code>.</p>
+  </div>
+  <a class="back" href="index.html">Teacher command center</a>
+</header>
+<nav id="jump" aria-label="Template groups"></nav>
+<main id="main-content"><div id="catalog"></div></main>
+<script src="../assets/js/behistorical-slide-templates.js"></script>
+<script src="data/slide-template-examples.js"></script>
+<script>
+(function(){
+'use strict';
+const T=window.BHSlideTemplates,EX=window.BH_SLIDE_TEMPLATE_EXAMPLES||[];
+const root=document.getElementById('catalog'),nav=document.getElementById('jump');
+if(!T){root.innerHTML='<p class="missing">The template library did not load.</p>';return;}
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const groups=[];
+EX.forEach(e=>{let g=groups.find(x=>x.name===e.group);if(!g){g={name:e.group,items:[]};groups.push(g);}g.items.push(e);});
+nav.innerHTML=groups.map(g=>`<a href="#${slug(g.name)}">${esc(g.name)} (${g.items.length})</a>`).join('');
+root.innerHTML=groups.map(g=>`<section class="group" id="${slug(g.name)}" aria-labelledby="${slug(g.name)}-h"><h2 id="${slug(g.name)}-h">${esc(g.name)}</h2><div class="grid">${g.items.map(e=>{
+  const ok=T.has(e.slide.kind);
+  return `<article class="card" data-kind="${esc(e.slide.kind)}"><div class="stage" role="img" aria-label="${esc(e.name)} example">${ok?T.render(e.slide):'<p class="missing">Unknown template kind</p>'}</div><div class="meta"><h3>${esc(e.name)}</h3><code>kind: '${esc(e.slide.kind)}'</code><p>${esc(e.note||'')}</p><details><summary>Slide data to copy</summary><pre>${esc(JSON.stringify(e.slide,null,2))}</pre></details></div></article>`;
+}).join('')}</div></section>`).join('');
+})();
+</script>
+</body>
+</html>

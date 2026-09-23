@@ -8,3 +8,4 @@ document.write('<script src="data/topic-2-2-teaching-base.js"><\/script>');
 document.write('<script src="data/topic-2-2-presentation-assets.js?v=data-v1"><\/script>');
 document.write('<script src="data/topic-2-2-visual-assets.js?v=visuals-v4"><\/script>');
 document.write('<script src="teaching-os-shared.js?v=shared-v1"><\/script>');
+document.write('<script src="../assets/js/behistorical-slide-templates.js"><\/script>');

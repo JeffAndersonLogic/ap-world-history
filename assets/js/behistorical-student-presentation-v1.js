@@ -28,6 +28,7 @@ function video(s){
 }
 function action(s){return `<section class="slide action"><div class="action-inner"><div class="kicker">${esc(s.eyebrow||'')}</div><h2>${esc(s.title||'')}</h2>${s.subtitle?`<p>${esc(s.subtitle)}</p>`:''}${s.action&&s.action.url?`<a href="${esc(s.action.url)}" class="action-button">${esc(s.action.label||'Open')}</a>`:''}</div></section>`;}
 function renderSlide(s){
+  if(window.BHSlideTemplates&&window.BHSlideTemplates.has(s.kind))return window.BHSlideTemplates.render(s);
   switch(s.kind){case'hero':return hero(s);case'map':return map(s);case'process':return process(s);case'grid':return grid(s);case'nodes':return nodes(s);case'video':return video(s);case'action':return action(s);default:return simple(s);}
 }
 function render(){
