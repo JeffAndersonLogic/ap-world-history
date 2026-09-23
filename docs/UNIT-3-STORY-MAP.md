@@ -1,10 +1,11 @@
 # Unit 3 Story Map: Land-Based Empires
 
-**Status: spines approved by Jeff, 2026-09-23, with two edits:** the unit spine names
-gunpowder, and the 3.3 spine is simpler. Nothing below has been built. This page is the
-unit-level half of the story approval gate in `docs/PRESENTATION-AUTHORING.md` section 8:
-each Unit 3 topic build starts from it instead of inventing its own story. Still open:
-the owns / bridge-only split and the four conflicts, in "What Jeff needs to decide".
+**Status: Approved by Jeff, 2026-09-23.** The unit spine names gunpowder, the 3.3 spine is
+the simpler version, and every recommendation below was accepted as written. Nothing has
+been built yet. This page is the unit-level half of the story approval gate in
+`docs/PRESENTATION-AUTHORING.md` section 8: each Unit 3 topic build starts from it instead
+of inventing its own story, and does not ask for the unit-level decisions again. Each
+topic's own story (beats, retelling slide) still goes through its own gate.
 
 Drafted 2026-09-23 from the Fall 2026 CED contract (`scripts/lib/ced-unit3-contract.js`),
 the protected spine in `docs/UNIT-3-DEEP-AUDIT.md`, and a read of every current Unit 3
@@ -151,12 +152,15 @@ changed.
    Every topic still needs the full production line. The lesson pages, readings, eBook
    chapters and scenarios exist and pass the CED lock.
 
-## What Jeff needs to decide
+## Decisions (all settled 2026-09-23)
 
-1. ~~Unit spine~~ Approved 2026-09-23, gunpowder version.
-2. ~~Topic spines~~ Approved 2026-09-23, with the simpler 3.3 spine.
-3. Confirm the **owns / bridge-only split**, especially devshirme in 3.2 only and
-   Akbar/Aurangzeb as bridge-only in 3.3.
-4. Say whether conflicts 1 and 2 should be fixed as part of each topic's build.
-
-Once approved, change the status line at the top to "Approved by Jeff, <date>".
+1. Unit spine: approved, gunpowder version.
+2. Topic spines: approved, with the simpler 3.3 spine.
+3. Owns / bridge-only split: approved as written. Devshirme and the Janissaries belong
+   to 3.2; 3.1 uses them only to say who fired the guns. Akbar and Aurangzeb are
+   bridge-only in 3.3 and never stand in for Sikhism.
+4. Conflicts 1 and 2 are fixed inside each topic's own build, not ahead of it: the 3.3
+   eBook chapter's opening section is reframed around continuity and change when 3.3 is
+   built, and 3.1's BeSurreal becomes a gunpowder or siege prompt when 3.1 is built.
+   Conflict 3 (the Mughal map under the Constantinople card) is handled in the 3.1
+   visual plan. Conflict 4 is the build itself.
