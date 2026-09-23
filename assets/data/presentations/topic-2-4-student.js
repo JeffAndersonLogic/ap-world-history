@@ -46,9 +46,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "The Sahara is the problem in the middle.",
       "subtitle": "West African gold zones · Saharan salt · North African markets",
       "visual": {
-        "url": "../assets/images/instructional-maps/topic-2-4.svg",
-        "alt": "Instructional map of trans-Saharan routes and West African states",
-        "credit": "BeHistorical instructional map · Topic 2.4"
+        "url": "../assets/images/topics/2-4/2.4%20-%20Mali.png",
+        "alt": "Map of the Mali Empire and trans-Saharan routes, with salt moving south from Taghaza and gold moving north",
+        "credit": "Map · Mali Empire trade routes and goods"
       },
       "footer": "Trade links regions because they need different things."
     },

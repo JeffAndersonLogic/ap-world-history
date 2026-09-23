@@ -21,13 +21,13 @@
   };
 
   lesson.stableImages = {
-    map: '../assets/images/instructional-maps/topic-2-4.svg',
+    map: '../assets/images/topics/2-4/2.4 - Mali.png',
     first10: '../assets/images/module-art/unit-2/topic-2-4/first10.svg',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',
     beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',
     skill: '../assets/images/module-art/unit-2/topic-2-4/skill.svg',
     checkpoint1: '../assets/images/module-art/unit-2/topic-2-4/checkpoint1.svg',
-    evidence: '../assets/images/instructional-maps/topic-2-4.svg',
+    evidence: '../assets/images/topics/2-4/2.4 - Mali.png',
     source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',
     beInTheRoom: '../assets/images/module-art/unit-2/topic-2-4/beintheroom.svg',
     checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Djenn%C3%A9_2.jpg'
@@ -98,7 +98,7 @@
 
   lesson.images = [
     {title:'Mansa Musa on the Catalan Atlas, 1375',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',caption:'Outside evidence from 1375, about fifty years after the hajj. A European map depicts Mali\'s Muslim ruler Mansa Musa holding gold while a camel-mounted Saharan traveler approaches.',prompt:'NOTICE the gold, ruler, and camel imagery. What can you INFER about Mali\'s reputation, trans-Saharan transport, and gold? What should you be cautious about because the image was made by European mapmakers?'},
-    {title:'Trans-Saharan Routes and West African States',url:'../assets/images/instructional-maps/topic-2-4.svg',sourceUrl:'../assets/images/instructional-maps/topic-2-4.svg',caption:'Secondary geographic evidence. A classroom reference map reconstructs major routes, desert crossings, gold-producing regions, salt sources, and West African cities.',prompt:'NOTICE where routes follow oases and meet the Sahel. What can you INFER about chokepoints and the value of caravan knowledge? What does a modern map not prove about the experience of crossing the desert?'},
+    {title:'Trans-Saharan Routes and West African States',url:'../assets/images/topics/2-4/2.4 - Mali.png',sourceUrl:'../assets/images/topics/2-4/2.4 - Mali.png',caption:'Secondary geographic evidence. A classroom reference map reconstructs major routes, desert crossings, gold-producing regions, salt sources, and West African cities.',prompt:'NOTICE where routes follow oases and meet the Sahel. What can you INFER about chokepoints and the value of caravan knowledge? What does a modern map not prove about the experience of crossing the desert?'},
     {title:'Great Mosque of Djenné',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Djenn%C3%A9_2.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Djenn%C3%A9_2.jpg',caption:'Cultural-continuity evidence. The current Great Mosque is a later reconstruction on the site of earlier mosques in Djenné, a major trading city tied to trans-Saharan commerce and Islamic learning.',prompt:'NOTICE the monumental religious architecture. What can you cautiously INFER about the long-term importance of Islam in a trade city? Why can the present building not serve as direct visual evidence for its exact 14th-century form?'},
     {title:'The Reach of the Mali Empire',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Mali_Empire.png',sourceUrl:'https://commons.wikimedia.org/wiki/File:Map_of_the_Mali_Empire.png',caption:'Secondary political evidence. A modern map reconstructs the extent of the Mali Empire relative to major West African trade corridors.',prompt:'NOTICE the empire\'s geographic reach. What can you INFER about why rulers benefited from taxing or protecting trade? What additional evidence would you need to prove how taxes were collected?'}
   ];
