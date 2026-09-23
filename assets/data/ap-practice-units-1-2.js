@@ -438,36 +438,36 @@
     '2.4': {
       skillBuilder: skill(
         'Developments and Processes (Skill 1.B) and Causation',
-        'Explain How the Sahara Became a Trade Zone',
-        'Neither the camel nor demand for gold explains trans-Saharan exchange alone. A strong causal explanation shows why an environmental solution and an economic incentive became mutually reinforcing.',
+        'Explain How the Sahara Became a Trade Route',
+        'Camels alone do not explain trans-Saharan trade, and neither does gold alone. A strong explanation shows how the tools for crossing the desert and the reasons for crossing it worked together.',
         [
-          { label: 'Explain the enabler', text: 'Show how camel physiology, saddle design, caravan organization, or oasis knowledge reduced the cost or risk of desert crossing.' },
-          { label: 'Explain the incentive', text: 'Show how complementary regional demand for gold, salt, or other goods made the difficult journey worthwhile.' },
-          { label: 'Connect cause to consequence', text: 'Trace how increased exchange produced revenue, political reach, or cultural change in West Africa.' }
+          { label: 'Explain the tools', text: 'Show how the camel saddle, caravans, desert guides, or oases made crossing the Sahara safer, more reliable, or able to carry more goods.' },
+          { label: 'Explain the reason', text: 'Show why gold, salt, or other goods made the dangerous trip worth it for merchants.' },
+          { label: 'Connect to a result', text: 'Explain one result of the bigger trade in West Africa, such as Mali\'s wealth, the growth of Timbuktu and Djenné, or the spread of Islam.' }
         ],
-        'Explain why both transportation technology and complementary economic demand were necessary for the expansion of trans-Saharan trade after 1200. Use at least two specific pieces of historical evidence, explain what barrier each factor overcame, and trace their interaction to one political or cultural transformation in West Africa.',
-        ['Explains why neither technology nor demand was sufficient by itself.', 'Uses at least two accurate and specific examples.', 'Identifies the barrier or incentive associated with each factor.', 'Traces the interaction to a specific political or cultural transformation.']
+        'In 3 to 4 sentences, explain how better transportation and demand for goods together made trans-Saharan trade grow between about 1200 and 1450. Use at least two specific examples, say what problem or reason each one explains, and connect the growth of trade to one result in West Africa.',
+        ['Explains that both transportation and demand mattered, not just one.', 'Uses at least two accurate, specific examples.', 'Says what problem each tool solved or why each good was worth the trip.', 'Connects the growth of trade to one specific result in West Africa.']
       ),
       evidenceLab: evidence(
-        'Evidence Lab: From Camel Saddle to Imperial Power',
-        'The evidence set traces a chain from transportation to wealth to religious and intellectual influence. Test whether the pieces form a convincing causal sequence.',
-        'Construct and test a causal explanation using all three evidence entries. Place camel technology, Mansa Musa\'s hajj, and Timbuktu\'s scholarship into defensible roles—as an enabling condition, evidence of accumulated wealth and political reach, or a cultural consequence. Explain every link without treating all three items as causes. Identify the weakest link and name the additional evidence needed to strengthen it.',
+        'Evidence Lab: Gold, Routes, and Mali\'s Power',
+        'Use two of the four cards. Each one shows a different part of the story: the trade routes, Mali\'s reach, its famous wealth, or its trading cities.',
+        'How did trans-Saharan trade help Mali become powerful and connected to the wider world? Make a clear claim. Use a detail you can see on each of two cards, explain how each detail supports your claim, and name one thing that one of your cards cannot prove on its own.',
         'Causation and Claims and Evidence (Skills 1.B and 6.B)',
-        ['camel saddle', 'caravans', 'Mansa Musa', 'hajj', 'Timbuktu', 'trans-Saharan trade'],
-        ['Assigns each entry a defensible causal role.', 'Explains every link in the sequence.', 'Distinguishes causes from evidence of effects.', 'Identifies the weakest inference and evidence that could test it.']
+        ['caravans', 'Mansa Musa', 'Mali', 'Djenné', 'Islam', 'gold', 'trans-Saharan trade'],
+        ['Makes a clear claim about how trade and Mali\'s power were connected.', 'Uses a specific detail from each of two cards.', 'Explains how each detail supports the claim.', 'Names one limit of what a card can prove.']
       ),
       primarySource: source(
         'Primary Source: Ibn Battuta Crosses the Sahara, 1352',
-        'Ibn Battuta joined merchants traveling south from Sijilmasa. His description of Taghaza connects desert ecology, coerced labor, camel transport, salt, and West African gold in one commercial system.',
+        'Ibn Battuta traveled south across the Sahara with merchants from Sijilmasa. His description of Taghaza shows the desert, enslaved salt miners, camel transport, salt, and West African gold as parts of one trade system.',
         'After twenty-five days from Sijilmasa we reached Taghaza, an unattractive village, with the curious feature that its houses and mosques are built of blocks of salt, roofed with camel skins. There are no trees there, nothing but sand. In the sand is a salt mine; they dig for the salt, and find it in thick slabs, lying one on top of the other, as though they had been tool-squared and laid under the surface of the earth. A camel will carry two of these slabs. No one lives at Taghaza except the slaves of the Massufa tribe, who dig for the salt; they subsist on dates imported from Dar\'a and Sijilmasa, camels\' flesh, and millet imported from the Negrolands. The people come up from their country and take away the salt from there. At Iwalatan a load of salt brings eight to ten mithqals; in the town of Malli it sells for twenty to thirty, and sometimes as much as forty.',
-        'Ibn Battuta, Travels in Asia and Africa, 1325 to 1354, translated and selected by H. A. R. Gibb (London: George Routledge & Sons, 1929), trans-Saharan section, pp. 317 to 318.',
+        'Ibn Battuta, Travels in Asia and Africa, 1325 to 1354, translated and selected by H. A. R. Gibb (London: George Routledge & Sons, 1929), trans-Saharan section, pp. 317 to 318',
         'This is a continuous excerpt; punctuation is lightly standardized and one antiquated racial label is replaced by "the people." Gibb\'s place-name spellings are retained. Ibn Battuta traveled with the caravan and visited Taghaza, but some economic details may still reflect what merchants told him.',
         [
-          '(a) Describe one pattern of economic specialization or exchange shown in the passage, using a specific detail from the source.',
-          '(b) Explain how one environmental or technological factor helped produce the commercial pattern described in the passage.',
-          '(c) Explain how one specific development not stated in the passage supports or qualifies the claim that trans-Saharan exchange strengthened West African states.'
+          '(a) Describe one example in the passage of a place producing or selling something that another place needed. Use a specific detail from the source.',
+          '(b) Explain how the desert environment or camel transport helped create the trade described in the passage.',
+          '(c) Explain whether one piece of evidence that is not in the passage supports or weakens the claim that trans-Saharan trade made West African states stronger. Name the evidence.'
         ],
-        'Respond to all three parts in complete sentences. Use a detail about production, transport, imports, or prices in (a). In (b), explain the mechanism connecting environment or technology to that pattern. In (c), name outside evidence and explain how it strengthens or limits a claim about state power.',
+        'Answer all three parts in complete sentences. In (a), use a detail about the salt mine, the food brought in, how salt was carried, or its prices. In (b), explain how the environment or the camels made that trade happen. In (c), name your outside evidence and explain how it supports or weakens the claim about West African states.',
         'Developments and Processes (Skill 1.B), Causation, and Sourcing (Skill 2.B)',
         ['Ibn Battuta', 'Taghaza', 'salt', 'gold', 'camels', 'Massufa', 'trans-Saharan trade'],
         [{ label: 'Read the extended Gibb selection at Fordham University', url: 'https://sourcebooks.fordham.edu/source/1354-ibnbattuta.asp' }]
