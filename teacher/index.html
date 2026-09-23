@@ -24,18 +24,64 @@ a{color:inherit}
 .tc-header{padding:.9rem 1.4rem;background:var(--blackened-steel);border-bottom:2px solid var(--burnished-bronze)}
 .tc-brand{font-family:var(--title);font-weight:700;letter-spacing:.04em;color:var(--antique-gold);font-size:1.05rem}
 .tc-eyebrow{font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-sandstone);margin-top:.2rem}
-.tc-body{flex:1;max-width:920px;margin:0 auto;width:100%;padding:1.4rem}
-.tc-today{background:var(--warm-paper);color:var(--ink);border-radius:10px;padding:1.1rem 1.3rem;margin-bottom:1.6rem;box-shadow:0 2px 10px rgba(0,0,0,.25)}
-.tc-today h2{font-family:var(--title);font-size:1.1rem;margin:0 0 .5rem}
-.tc-today p{margin:0;font-size:.9rem}
-.tc-today .tc-today-open{display:inline-block;margin-top:.7rem;background:var(--antique-gold);color:var(--ink);text-decoration:none;font-weight:700;padding:.6rem 1rem;border-radius:8px;font-size:.85rem}
+.tc-body{flex:1;max-width:1040px;margin:0 auto;width:100%;padding:1.6rem}
+.tc-today{position:relative;overflow:hidden;background:var(--warm-paper);color:var(--ink);border-radius:14px;padding:1.35rem 1.5rem 1.4rem;margin-bottom:2rem;box-shadow:0 10px 30px rgba(0,0,0,.22)}
+.tc-today::before{content:'';position:absolute;inset:0 auto 0 0;width:6px;background:var(--antique-gold)}
+.tc-today h2{font-family:var(--title);font-size:1.35rem;margin:0 0 .35rem}
+.tc-today p{margin:0;font-size:.92rem;color:var(--gunmetal-gray)}
+.tc-today .tc-today-open{display:inline-block;margin-top:.85rem;background:var(--blackened-steel);color:var(--warm-paper);text-decoration:none;font-weight:700;padding:.7rem 1rem;border-radius:8px;font-size:.84rem}
+.tc-today .tc-today-open:hover{background:var(--gunmetal-gray)}
 .tc-today.empty{color:var(--gunmetal-gray)}
-.tc-tools h2{font-family:var(--ui);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--antique-gold);margin:0 0 .8rem}
-.tc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:1rem}
-.tc-card{display:block;background:var(--warm-paper);color:var(--ink);border-radius:10px;padding:1rem 1.15rem;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.25)}
-.tc-card:hover{background:var(--clean-paper)}
-.tc-card h3{font-family:var(--title);font-size:1.05rem;margin:0 0 .4rem}
-.tc-card p{font-size:.86rem;margin:0;color:var(--gunmetal-gray)}
+.tc-section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(250px,.8fr);gap:1.2rem;align-items:end;margin-bottom:.9rem}
+.tc-section-kicker{font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--antique-gold);margin-bottom:.2rem}
+.tc-section-head h2{font-family:var(--title);font-size:1.3rem;margin:0;color:var(--warm-paper)}
+.tc-section-head p{margin:0;color:var(--muted-sandstone);font-size:.82rem;line-height:1.5}
+.tc-unit-stack{display:flex;flex-direction:column;gap:.65rem}
+.tc-unit{background:var(--blackened-steel);border:1px solid var(--gunmetal-gray);border-radius:10px;overflow:hidden}
+.tc-unit[open]{border-color:rgba(201,164,106,.6)}
+.tc-unit summary{list-style:none;cursor:pointer;padding:.85rem 1rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.tc-unit summary::-webkit-details-marker{display:none}
+.tc-unit summary::after{content:'+';font:700 1.1rem var(--ui);color:var(--antique-gold)}
+.tc-unit[open] summary::after{content:'–'}
+.tc-unit summary span{display:flex;align-items:baseline;gap:.7rem;min-width:0}
+.tc-unit summary b{font-family:var(--title);font-size:.94rem;color:var(--warm-paper)}
+.tc-unit summary small{font-family:var(--ui);font-size:.68rem;color:var(--muted-sandstone)}
+.tc-lesson-list{border-top:1px solid var(--gunmetal-gray)}
+.tc-lesson-row{display:grid;grid-template-columns:86px minmax(0,1fr) auto;gap:.8rem;align-items:center;padding:.72rem 1rem;color:var(--warm-paper);text-decoration:none;border-bottom:1px solid rgba(90,95,92,.35);transition:background .14s ease}
+.tc-lesson-row:last-child{border-bottom:0}
+.tc-lesson-row:hover{background:rgba(255,255,255,.045)}
+.tc-lesson-row.active{background:rgba(201,164,106,.12);box-shadow:inset 3px 0 0 var(--antique-gold)}
+.tc-topic-pill{font-family:var(--ui);font-size:.64rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--antique-gold)}
+.tc-lesson-title{font-family:var(--ui);font-size:.84rem;font-weight:650;min-width:0}
+.tc-open{font-family:var(--ui);font-size:.68rem;font-weight:800;color:var(--muted-sandstone);white-space:nowrap}
+.tc-utilities{margin-top:2rem}
+.tc-utility-card{display:block;background:var(--warm-paper);color:var(--ink);border-radius:12px;padding:1.15rem 1.25rem;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+.tc-utility-card:hover{background:var(--clean-paper)}
+.tc-utility-kicker{display:block;font-family:var(--ui);font-size:.62rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--burnished-bronze)}
+.tc-utility-card h3{font-family:var(--title);font-size:1.08rem;margin:.25rem 0 .35rem}
+.tc-utility-card p{font-size:.84rem;margin:0;color:var(--gunmetal-gray);max-width:72ch}
+.tc-utility-open{display:inline-block;margin-top:.7rem;font-family:var(--ui);font-size:.7rem;font-weight:800;color:var(--burnished-bronze)}
+.tc-secondary-stack{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-top:.8rem}
+.tc-secondary{background:rgba(26,28,29,.6);border:1px solid var(--gunmetal-gray);border-radius:10px;overflow:hidden}
+.tc-secondary summary{cursor:pointer;list-style:none;padding:.8rem .95rem;font-family:var(--ui);font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-sandstone);display:flex;justify-content:space-between;align-items:center}
+.tc-secondary summary::-webkit-details-marker{display:none}
+.tc-secondary summary::after{content:'+';color:var(--antique-gold);font-size:1rem}
+.tc-secondary[open] summary::after{content:'–'}
+.tc-secondary-body{border-top:1px solid var(--gunmetal-gray)}
+.tc-secondary-link{display:flex;justify-content:space-between;gap:1rem;align-items:center;padding:.8rem .95rem;text-decoration:none;color:var(--warm-paper)}
+.tc-secondary-link:hover{background:rgba(255,255,255,.04)}
+.tc-secondary-link span:first-child{display:flex;flex-direction:column;gap:.15rem}
+.tc-secondary-link b{font-family:var(--ui);font-size:.78rem}
+.tc-secondary-link small{font-family:var(--ui);font-size:.67rem;line-height:1.45;color:var(--muted-sandstone)}
+.tc-secondary-link>span:last-child{color:var(--antique-gold)}
+@media(max-width:700px){
+  .tc-body{padding:1rem}
+  .tc-section-head{grid-template-columns:1fr}
+  .tc-lesson-row{grid-template-columns:76px minmax(0,1fr)}
+  .tc-open{display:none}
+  .tc-secondary-stack{grid-template-columns:1fr}
+  .tc-unit summary span{align-items:flex-start;flex-direction:column;gap:.15rem}
+}
 .tc-footer-note{padding:.6rem 1.4rem;font-size:.68rem;color:var(--muted-sandstone);border-top:1px solid var(--gunmetal-gray)}
 </style>
 </head>
@@ -47,60 +93,101 @@ a{color:inherit}
   </header>
   <main class="tc-body">
     <div class="tc-today" id="tc-today">Loading today&rsquo;s class&hellip;</div>
-    <section class="tc-tools">
-      <h2>Teacher Tools</h2>
-      <div class="tc-grid">
-      <a class="tc-card" href="run-of-show-index.html">
-        <h3>Run of Show</h3>
-        <p>A minute-by-minute pacing cockpit for a class period: retrieval prompts, teacher moves, a class timer, and a Must-Haves reference.</p>
-      </a>
-      <a class="tc-card" href="command-center-topic-1-7.html">
-        <h3>Topic 1.7 Interactive Lesson</h3>
-        <p>The Unit 1 synthesis pilot: Teacher Command Center + integrated Presentation Mode for comparison and argumentation.</p>
-      </a>
-      <a class="tc-card" href="command-center-topic-2-1.html">
-        <h3>Topic 2.1 Interactive Lesson</h3>
-        <p>The Silk Roads: Teacher Command Center + integrated Presentation Mode for causation and economic systems.</p>
-      </a>
-      <a class="tc-card" href="topic-2-2-os.html">
-        <h3>Topic 2.2 Teaching OS</h3>
-        <p>The Mongol Empire: cinematic projection, run of show, teacher intelligence, AP reasoning, and iPad control in one surface.</p>
-      </a>
-      <a class="tc-card" href="topic-2-3-os.html">
-        <h3>Topic 2.3 Teaching OS</h3>
-        <p>Indian Ocean exchange: monsoon systems, maritime technology, port cities, diasporic communities, contextualization, and iPad control in one surface.</p>
-      </a>
-      <a class="tc-card" href="topic-2-4-os.html">
-        <h3>Topic 2.4 Teaching OS</h3>
-        <p>Trans-Saharan trade: camel technology, caravan organization, expanded exchange, Mali, causation, and iPad control in one surface.</p>
-      </a>
-      <a class="tc-card" href="command-center-topic-2-5.html">
-        <h3>Topic 2.5 Interactive Lesson</h3>
-        <p>Cultural consequences of connectivity: diffusion, changing urban fortunes, travel accounts, AP reasoning, and iPad control in one surface.</p>
-      </a>
-      <a class="tc-card" href="command-center-topic-2-6.html">
-        <h3>Topic 2.6 Interactive Lesson</h3>
-        <p>Environmental consequences of connectivity: biological corridors, crop diffusion, pathogen diffusion, AP causation, and iPad control in one surface.</p>
-      </a>
-      <a class="tc-card" href="command-center-topic-2-7.html">
-        <h3>Topic 2.7 Interactive Lesson</h3>
-        <p>Comparison of economic exchange: one shared problem, three toolkits, the network matrix, AP comparison, an Eras 2 retrieval review, and iPad control in one surface.</p>
-      </a>
-      <a class="tc-card" href="slide-templates.html">
-        <h3>Slide Templates</h3>
-        <p>Every Teaching OS slide template with a real Unit 2 example and the slide data to copy: relationships, timelines, BeReady openers, and frames for AI-generated images.</p>
-      </a>
-      <a class="tc-card" href="skills-lens.html">
+    <section class="tc-library" aria-labelledby="teaching-os-heading">
+      <div class="tc-section-head">
+        <div><div class="tc-section-kicker">Lesson library</div><h2 id="teaching-os-heading">Teaching OS</h2></div>
+        <p>Today opens automatically above. Use this compact library when you need a different lesson.</p>
+      </div>
+      <div class="tc-unit-stack">
+      <details class="tc-unit">
+        <summary><span><b>Unit 1</b><small>1 Teaching OS lesson</small></span></summary>
+        <div class="tc-lesson-list">
+          <a class="tc-lesson-row" data-topic="1.7" href="command-center-topic-1-7.html">
+            <span class="tc-topic-pill">Topic 1.7</span>
+            <span class="tc-lesson-title">Comparison in the Period c. 1200 to c. 1450</span>
+            <span class="tc-open">Open <span aria-hidden="true">&rarr;</span></span>
+          </a>
+        </div>
+      </details>
+      <details class="tc-unit">
+        <summary><span><b>Unit 2</b><small>7 Teaching OS lessons</small></span></summary>
+        <div class="tc-lesson-list">
+          <a class="tc-lesson-row" data-topic="2.1" href="topic-2-1-os.html">
+            <span class="tc-topic-pill">Topic 2.1</span>
+            <span class="tc-lesson-title">The Silk Roads</span>
+            <span class="tc-open">Open <span aria-hidden="true">&rarr;</span></span>
+          </a>
+          <a class="tc-lesson-row" data-topic="2.2" href="topic-2-2-os.html">
+            <span class="tc-topic-pill">Topic 2.2</span>
+            <span class="tc-lesson-title">The Mongol Empire</span>
+            <span class="tc-open">Open <span aria-hidden="true">&rarr;</span></span>
+          </a>
+          <a class="tc-lesson-row" data-topic="2.3" href="topic-2-3-os.html">
+            <span class="tc-topic-pill">Topic 2.3</span>
+            <span class="tc-lesson-title">Exchange in the Indian Ocean</span>
+            <span class="tc-open">Open <span aria-hidden="true">&rarr;</span></span>
+          </a>
+          <a class="tc-lesson-row" data-topic="2.4" href="topic-2-4-os.html">
+            <span class="tc-topic-pill">Topic 2.4</span>
+            <span class="tc-lesson-title">Trans-Saharan Trade Routes</span>
+            <span class="tc-open">Open <span aria-hidden="true">&rarr;</span></span>
+          </a>
+          <a class="tc-lesson-row" data-topic="2.5" href="topic-2-5-os.html">
+            <span class="tc-topic-pill">Topic 2.5</span>
+            <span class="tc-lesson-title">Cultural Consequences of Connectivity</span>
+            <span class="tc-open">Open <span aria-hidden="true">&rarr;</span></span>
+          </a>
+          <a class="tc-lesson-row" data-topic="2.6" href="topic-2-6-os.html">
+            <span class="tc-topic-pill">Topic 2.6</span>
+            <span class="tc-lesson-title">Environmental Consequences of Connectivity</span>
+            <span class="tc-open">Open <span aria-hidden="true">&rarr;</span></span>
+          </a>
+          <a class="tc-lesson-row" data-topic="2.7" href="topic-2-7-os.html">
+            <span class="tc-topic-pill">Topic 2.7</span>
+            <span class="tc-lesson-title">Comparison of Economic Exchange</span>
+            <span class="tc-open">Open <span aria-hidden="true">&rarr;</span></span>
+          </a>
+        </div>
+      </details>
+      </div>
+    </section>
+    <section class="tc-utilities" aria-labelledby="teacher-utilities-heading">
+      <div class="tc-section-head">
+        <div><div class="tc-section-kicker">Teacher utility</div><h2 id="teacher-utilities-heading">Analyze &amp; Build</h2></div>
+        <p>Student analysis stays one click away. Authoring and legacy tools remain available without competing with daily teaching.</p>
+      </div>
+      <a class="tc-utility-card" href="skills-lens.html">
+        <span class="tc-utility-kicker">Student work</span>
         <h3>Skills Lens</h3>
-        <p>Drop a Canvas submissions zip to see completion, response quality, and AP skill trends across the year.</p>
+        <p>Analyze Canvas submissions for completion, response quality, and AP skill trends across the year.</p>
+        <span class="tc-utility-open">Open Skills Lens <span aria-hidden="true">&rarr;</span></span>
       </a>
+      <div class="tc-secondary-stack">
+        <details class="tc-secondary">
+          <summary>Build &amp; Authoring</summary>
+          <div class="tc-secondary-body">
+          <a class="tc-secondary-link" href="slide-templates.html">
+            <span><b>Slide Templates</b><small>Reference every Teaching OS slide template with real Unit 2 examples and copy-ready slide data.</small></span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+          </div>
+        </details>
+        <details class="tc-secondary">
+          <summary>Legacy / Unit 1</summary>
+          <div class="tc-secondary-body">
+          <a class="tc-secondary-link" href="run-of-show-index.html">
+            <span><b>Run of Show</b><small>Standalone pacing pages for Topics 1.4–1.6, before those lessons move into the integrated Teaching OS.</small></span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+          </div>
+        </details>
       </div>
     </section>
   </main>
-  <p class="tc-footer-note">Teacher tool &mdash; never linked from a student page. Generated from scripts/build-teacher-index.js; the Today panel reads assets/data/announcements-schedule.js live in the browser, so it is never a stale snapshot.</p>
+  <p class="tc-footer-note">Teacher-only launch surface. Today reads the live schedule; the lesson library and Today routing are generated from the same registry.</p>
 </div>
 <script id="tc-ros-data" type="application/json">[{"key":"1.4","out":"run-of-show-topic-1-4.html"},{"key":"1.5","out":"run-of-show-topic-1-5.html"},{"key":"1.6","out":"run-of-show-topic-1-6.html"}]</script>
-<script id="tc-interactive-data" type="application/json">[{"key":"1.7","out":"command-center-topic-1-7.html"},{"key":"2.1","out":"command-center-topic-2-1.html"},{"key":"2.2","out":"topic-2-2-os.html"},{"key":"2.3","out":"topic-2-3-os.html"},{"key":"2.4","out":"topic-2-4-os.html"},{"key":"2.5","out":"command-center-topic-2-5.html"},{"key":"2.6","out":"command-center-topic-2-6.html"},{"key":"2.7","out":"command-center-topic-2-7.html"}]</script>
+<script id="tc-interactive-data" type="application/json">[{"key":"1.7","out":"command-center-topic-1-7.html"},{"key":"2.1","out":"topic-2-1-os.html"},{"key":"2.2","out":"topic-2-2-os.html"},{"key":"2.3","out":"topic-2-3-os.html"},{"key":"2.4","out":"topic-2-4-os.html"},{"key":"2.5","out":"topic-2-5-os.html"},{"key":"2.6","out":"topic-2-6-os.html"},{"key":"2.7","out":"topic-2-7-os.html"}]</script>
 <script id="tc-cohort-data" type="application/json">{"green":{"key":"green","label":"Green Day","short":"Green","letter":"G","metal":"verdigris","mark":"#2F5C46","ink":"#2F5C46","tint":"#E7EFE9","onDark":"#7FB496","filled":true},"silver":{"key":"silver","label":"Silver Day","short":"Silver","letter":"S","metal":"pewter","mark":"#8A9298","ink":"#545B5F","tint":"#ECEEEF","onDark":"#B9C1C6","filled":false}}</script>
 <script src="../assets/data/announcements-schedule.js"></script>
 <script>
@@ -148,6 +235,14 @@ function resolveTeacherSurface(today, schedule, interactiveTopics, rosTopics) {
   var today = now.getFullYear() + '-' + pad(now.getMonth() + 1) + '-' + pad(now.getDate());
 
   var found = resolveTeacherSurface(today, sched, INTERACTIVE, ROS);
+  var lessonRows = document.querySelectorAll('.tc-lesson-row[data-topic]');
+  for (var k = 0; k < lessonRows.length; k++) {
+    if (lessonRows[k].getAttribute('data-topic') === found.topic) {
+      lessonRows[k].className += ' active';
+      var unit = lessonRows[k].parentNode && lessonRows[k].parentNode.parentNode;
+      if (unit && unit.tagName === 'DETAILS') unit.open = true;
+    }
+  }
   var cohortInfo = COHORTS[found.cohort] || { label: found.cohort };
   var head = '<h2>Today &mdash; ' + esc(cohortInfo.label) + '</h2>';
 
@@ -159,8 +254,8 @@ function resolveTeacherSurface(today, schedule, interactiveTopics, rosTopics) {
     box.innerHTML = head + '<p>A class day with no topic lesson scheduled.</p>';
   } else if (found.kind === 'interactive') {
     box.innerHTML = head
-      + '<p>Topic ' + esc(found.topic) + ' &middot; Interactive Lesson</p>'
-      + '<a class="tc-today-open" href="' + esc(found.href) + '">Open today&rsquo;s Teacher Command Center &rarr;</a>';
+      + '<p>Topic ' + esc(found.topic) + ' &middot; Teaching OS</p>'
+      + '<a class="tc-today-open" href="' + esc(found.href) + '">Open today&rsquo;s Teaching OS &rarr;</a>';
   } else if (found.kind === 'runofshow') {
     box.innerHTML = head
       + '<p>Topic ' + esc(found.topic) + '</p>'
