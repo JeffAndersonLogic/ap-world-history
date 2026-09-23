@@ -30,7 +30,7 @@ const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..', '..');
 const { resolveTeacherSurface } = require('../lib/teacher-today.js');
-const { INTERACTIVE_TOPICS } = require('../build-teacher-index.js');
+const { TOOLS, INTERACTIVE_TOPICS } = require('../build-teacher-index.js');
 const { TOPICS: ROS_TOPICS } = require('../build-run-of-show.js');
 
 const G = '\x1b[32m', R = '\x1b[31m', W = '\x1b[1m', D = '\x1b[2m', X = '\x1b[0m';
@@ -77,7 +77,26 @@ for (const entry of INTERACTIVE_TOPICS) {
   }
 }
 
-// 2. A topic with a Run of Show and no interactive lesson still gets its page.
+// 2. The visible Teaching OS library and Today routing share one registry.
+//    Unit 2 uses one canonical topic-*-os URL per lesson; compatibility aliases
+//    may remain on disk, but the command center never advertises both.
+{
+  const lessonTools = TOOLS.filter(t => t.kind === 'lesson');
+  const lessonKeys = lessonTools.map(t => t.key);
+  ok('the teacher lesson registry has no duplicate topic keys',
+    new Set(lessonKeys).size === lessonKeys.length, lessonKeys.join(', '));
+  ok('Today routing is derived from every visible lesson entry',
+    lessonTools.length === INTERACTIVE_TOPICS.length &&
+      lessonTools.every(t => INTERACTIVE_TOPICS.some(i => i.key === t.key && i.out === t.href)),
+    lessonTools.length + ' lesson(s)');
+  for (const t of lessonTools.filter(t => t.unit === '2')) {
+    const canonical = 'topic-' + t.key.replace('.', '-') + '-os.html';
+    ok('  Topic ' + t.key + ' uses canonical Teaching OS URL',
+      t.href === canonical, t.href);
+  }
+}
+
+// 3. A topic with a Run of Show and no interactive lesson still gets its page.
 const rosOnly = rosTopics.filter(t => !INTERACTIVE_TOPICS.some(i => i.key === t.key));
 ok('some topic has a Run of Show and no interactive lesson', rosOnly.length > 0, `${rosOnly.length} topic(s)`);
 for (const t of rosOnly) {
@@ -89,7 +108,7 @@ for (const t of rosOnly) {
   }
 }
 
-// 3. Interactive wins when a topic has both. Asserted against a fixture rather
+// 4. Interactive wins when a topic has both. Asserted against a fixture rather
 //    than live data, so it keeps holding on the day a registered topic gains a
 //    Run of Show page as well.
 {
@@ -100,7 +119,7 @@ for (const t of rosOnly) {
     both.kind === 'interactive' && both.href === 'command-center-topic-2-1.html', both.kind);
 }
 
-// 4. The honest answers. Each one is a case the panel used to render badly or
+// 5. The honest answers. Each one is a case the panel used to render badly or
 //    not at all, and none of them may resolve to a link.
 {
   const noclass = resolve('2026-12-25');
@@ -127,7 +146,7 @@ for (const t of rosOnly) {
     resolveTeacherSurface('2026-09-16', null, INTERACTIVE_TOPICS, rosTopics).kind === 'noschedule');
 }
 
-// 5. The key format the registry has to match. "Topic 2.1" against "2.1" is a
+// 6. The key format the registry has to match. "Topic 2.1" against "2.1" is a
 //    mismatch that renders a perfectly normal empty panel, so both spellings
 //    resolve rather than only the one that happens to be typed today.
 {
@@ -137,7 +156,7 @@ for (const t of rosOnly) {
     spelled.kind === 'interactive', spelled.kind);
 }
 
-// 6. The page runs this function's own source, so a hand-edit to the generated
+// 7. The page runs this function's own source, so a hand-edit to the generated
 //    page that changed the routing would pass every other check.
 {
   const page = fs.readFileSync(path.join(ROOT, 'teacher', 'index.html'), 'utf8');
