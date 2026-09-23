@@ -77,4 +77,10 @@
 // map credit was cleared rather than repointed, because the slot draws local
 // artwork and a credit for a different map would be false.
 
+// **2026-09-23, Topic 2.5's two CED summary cards** were replaced by the Mongol
+// siege of Baghdad (Bagdad1258.jpg, a Persian manuscript painting of about 1430)
+// and the Catalan Atlas caravan (Caravane_Marco_Polo.jpg, 1375). Both verified
+// through the Source images workflow; the captions follow what Commons says each
+// file is, including that the Baghdad painting was made long after the siege.
+
 module.exports = [];

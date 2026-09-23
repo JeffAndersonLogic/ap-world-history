@@ -20,7 +20,7 @@ if(open){
 
 const demand=byTitle('Luxury goods made distance worth it');
 if(demand){
-  demand.visual=visual('2.1 - Porcelain silk luxury goods.jpeg','Porcelain and silk representing high-value luxury goods traded across Afro-Eurasia','Topic 2.1 classroom visual · Luxury goods');
+  demand.visual=visual('2.1 - Porcelain silk luxury goods.jpeg','Illustration (AI-generated) of porcelain and silk representing high-value luxury goods traded across Afro-Eurasia, not a historical source','Illustration (AI-generated) · Luxury goods, an imagined scene, not a historical source');
 }
 
 const caravanserai=byTitle('Caravanserai made distance manageable');
@@ -58,7 +58,7 @@ if(causal&&Array.isArray(causal.steps)){
 
 const cities=byTitle('Trade networks create powerful nodes');
 if(cities){
-  cities.visual=visual('2.1 - Samarkand.jpg','Samarkand as a major Silk Road trading city','Topic 2.1 classroom visual · Samarkand');
+  cities.visual=visual('2.1 - Samarkand.jpg','Illustration (AI-generated) of Samarkand as a major Silk Road trading city, not a historical source','Illustration (AI-generated) · Samarkand, an imagined scene, not a historical source');
 }
 
 const close=T.slides.find(s=>s.phase==='close');
