@@ -28,8 +28,8 @@ if(tech) tech.visual={
 const growth=byTitle('Networks can make cities boom');
 if(growth) growth.visual={
   url:'../assets/images/topics/2-1/2.1 - Samarkand.jpg',
-  alt:'Illustration (AI-generated) of Samarkand as a major Afro-Eurasian trading city, not a historical source',
-  credit:'Illustration (AI-generated) · Samarkand, an imagined scene, not a historical source'
+  alt:'Historical reconstruction (AI generated) of Samarkand as a major Afro-Eurasian trading city, not a historical source',
+  credit:'Historical Reconstruction - AI Generated'
 };
 
 const decline=byTitle('connectivity never guarantees');

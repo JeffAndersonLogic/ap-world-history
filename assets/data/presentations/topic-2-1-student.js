@@ -100,8 +100,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Luxury goods made distance worth it.",
       "visual": {
         "url": "../assets/images/topics/2-1/2.1%20-%20Porcelain%20silk%20luxury%20goods.jpeg",
-        "alt": "Illustration (AI-generated) of porcelain and silk representing high-value luxury goods traded across Afro-Eurasia, not a historical source",
-        "credit": "Illustration (AI-generated) · Luxury goods, an imagined scene, not a historical source"
+        "alt": "Historical reconstruction (AI generated) of porcelain and silk representing high-value luxury goods traded across Afro-Eurasia, not a historical source",
+        "credit": "Historical Reconstruction - AI Generated"
       },
       "footer": "Porcelain · textiles · silk · spices · iron · steel"
     },
@@ -170,8 +170,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Trade networks create powerful nodes.",
       "visual": {
         "url": "../assets/images/topics/2-1/2.1%20-%20Samarkand.jpg",
-        "alt": "Illustration (AI-generated) of Samarkand as a major Silk Road trading city, not a historical source",
-        "credit": "Illustration (AI-generated) · Samarkand, an imagined scene, not a historical source"
+        "alt": "Historical reconstruction (AI generated) of Samarkand as a major Silk Road trading city, not a historical source",
+        "credit": "Historical Reconstruction - AI Generated"
       },
       "footer": "Kashgar and Samarkand are evidence, not trivia."
     },
