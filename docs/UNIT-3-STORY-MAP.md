@@ -1,10 +1,10 @@
 # Unit 3 Story Map: Land-Based Empires
 
-**Status: DRAFT, awaiting Jeff's approval.** Nothing below has been built. This page is
-the unit-level half of the story approval gate in `docs/PRESENTATION-AUTHORING.md`
-section 8: approve it once, and each Unit 3 topic build starts from it instead of
-inventing its own story. Until Jeff approves or edits it, no Unit 3 presentation work
-should treat it as settled.
+**Status: spines approved by Jeff, 2026-09-23, with two edits:** the unit spine names
+gunpowder, and the 3.3 spine is simpler. Nothing below has been built. This page is the
+unit-level half of the story approval gate in `docs/PRESENTATION-AUTHORING.md` section 8:
+each Unit 3 topic build starts from it instead of inventing its own story. Still open:
+the owns / bridge-only split and the four conflicts, in "What Jeff needs to decide".
 
 Drafted 2026-09-23 from the Fall 2026 CED contract (`scripts/lib/ced-unit3-contract.js`),
 the protected spine in `docs/UNIT-3-DEEP-AUDIT.md`, and a read of every current Unit 3
@@ -13,12 +13,11 @@ surface. Unit 3 has no dated class days yet; Unit 2 ends with Topic 2.7 (Silver,
 
 ## The unit in one sentence
 
-**A cannon could take a city in weeks. Holding an empire took loyal people, steady
-money, and a believable claim to rule, and the beliefs inside those empires did not
-stay still.**
+**Gunpowder won the land. Holding it took loyal people, steady money, and a
+believable claim to rule, and the beliefs inside those empires did not stay still.**
 
-The shorter version for the wall: **Winning land is the easy part. Holding it is the
-hard part.**
+The shorter version for the wall: **Gunpowder won the land. Holding it was the hard
+part.**
 
 Why this spine: it is already the argument the course's own best material makes. The
 3.1 eBook chapter's thesis is that artillery's real consequence was political: only a
@@ -85,10 +84,9 @@ compare.
 
 ### 3.3 Empires: Belief Systems
 
-- **Story spine:** In these three centuries, faiths split, reformed and blended, and
-  empires both pushed those changes and were shaken by them.
-  The audit's version: **Christianity changes, Islam's divide hardens through imperial
-  rivalry, Sikhism grows from Hindu-Muslim contact.**
+- **Story spine:** Religions changed as much as empires did.
+  The three changes behind it, in the audit's words: **Christianity changes, Islam's
+  divide hardens through imperial rivalry, Sikhism grows from Hindu-Muslim contact.**
 - **Reasoning move:** continuity and change within belief systems. Not "how rulers used
   religion", which is 3.2's job.
 - **This topic owns:** the Protestant *and* Catholic Reformations (both grew
@@ -155,9 +153,8 @@ changed.
 
 ## What Jeff needs to decide
 
-1. Approve, edit or replace the **unit spine** ("Winning land is the easy part. Holding
-   it is the hard part.").
-2. Approve the **four topic spines**, or mark the ones to rework.
+1. ~~Unit spine~~ Approved 2026-09-23, gunpowder version.
+2. ~~Topic spines~~ Approved 2026-09-23, with the simpler 3.3 spine.
 3. Confirm the **owns / bridge-only split**, especially devshirme in 3.2 only and
    Akbar/Aurangzeb as bridge-only in 3.3.
 4. Say whether conflicts 1 and 2 should be fixed as part of each topic's build.
