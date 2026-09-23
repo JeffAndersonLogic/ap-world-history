@@ -68,23 +68,13 @@
 // forced or unverified picture, the correct outcome per the Image Contract.
 
 // **2026-09-23, the eight pictures and credit links the nightly check reported
-// dead.** Several are not Evidence Lab cards at all (lecture-card images, a map
-// credit link, a BeInTheRoom background), so `replaces` names an existing card in
-// that topic only to satisfy the tool's staging check. Nothing here is applied
-// by the tool; each verified filename is placed by hand in the right slot, and
-// Units 6 cards in build-unit6.js. Filenames are guesses; `search` is the real
-// question. Delete every entry once its fix lands.
-const STAGING = (topic, replaces, file, search, title) => ({
-  topic, replaces, file, search, title,
-  caption: 'Replacement for a dead Commons file; caption is written by hand when it lands.',
-  prompt: 'NOTICE what the picture shows. INFER what it can and cannot prove.'
-});
+// dead** were re-sourced through this file and the Source images workflow over
+// three rounds, then placed by hand (several were lecture images or a BeInTheRoom
+// background, not Evidence Lab cards; the two Unit 6 ones went into
+// build-unit6.js). The one surprise worth recording: Futtle_Rozack.jpg is not a
+// photograph of the ship but a page of its 1845 register of indentured
+// laborers, a stronger primary source than the dead photo it replaced. The 8.1
+// map credit was cleared rather than repointed, because the slot draws local
+// artwork and a credit for a different map would be false.
 
-module.exports = [
-  STAGING('2.1', 'Silk Roads Across Afro-Eurasia', 'Jingdezhen blue and white plate Yuan period mid 14th century.jpg', 'Jingdezhen blue and white Yuan', 'Chinese porcelain for export'),
-  STAGING('2.1', 'Silk Roads Across Afro-Eurasia', "Caravanserai of Sa'd al-Saltaneh in Qazvin.jpg", 'Qazvin caravanserai', 'Caravanserai courtyard'),
-  STAGING('4.5', 'Cerro Rico at Potosí, 1552', 'Indian weaver at his loom. Gouache drawing. Wellcome V0045300.jpg', 'weaver loom India', 'Indian cotton textile production'),
-  STAGING('6.5', 'The port of Buenos Aires', 'Puerto madero silos 1900.jpg', 'Puerto Madero 1900', 'The port of Buenos Aires'),
-  STAGING('6.6', 'An indenture ship', 'Futtle Rozack.jpg', 'Fatel Razack ship 1845', 'An indenture ship'),
-  STAGING('6.6', 'An indenture ship', 'Girmitiyas, Indentured labour.jpg', 'girmitiya indentured', 'An indenture ship')
-];
+module.exports = [];

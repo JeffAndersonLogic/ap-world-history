@@ -142,9 +142,9 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Potosí and the global silver economy",
-          caption: "Silver extraction connected labor coercion in the Andes to global exchange and state revenue.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Cerro_Rico_de_Potos%C3%AD.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Cerro_Rico_de_Potos%C3%AD.jpg"
+          caption: "The silver mountain of Potosí in a 1552 woodcut from Pedro Cieza de León's Crónica del Perú. Silver extraction connected labor coercion in the Andes to global exchange and state revenue.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Cerro%20de%20Potos%C3%AD.%20Grabado%20en%20madera%2C%20del%20libro%20Cr%C3%B3nica%20del%20Per%C3%BA%2C%201552%2C%20de%20Pedro%20Cieza%20de%20Le%C3%B3n.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Cerro_de_Potos%C3%AD._Grabado_en_madera,_del_libro_Cr%C3%B3nica_del_Per%C3%BA,_1552,_de_Pedro_Cieza_de_Le%C3%B3n.jpg"
         }
       },
       {

@@ -262,8 +262,8 @@ const MODULE07_EVIDENCE = {
   '6.5': {
     prompt: 'Explain economic imperialism without conquest. Use at least two cards to show how a state could lose control of its own economy, and say what distinguishes this from colonial rule.',
     cards: [
-      picture('Buenos_Aires_Port.jpg', 'The port of Buenos Aires',
-        'Photograph of the port built out with British capital, in a country that was never a colony.',
+      picture('Puerto_madero_silos_1900.jpg', 'Grain silos at Puerto Madero, Buenos Aires, c. 1900',
+        'Photograph of the export docks at Puerto Madero, built in the 1890s by British engineers with British finance, in a country that was never a colony.',
         'NOTICE the scale of the infrastructure and what it is built to move. INFER whose interests the layout serves. What does a port photograph not show about who owns it or who holds the debt?'),
       localMap('topic-6-5.svg', 'Economic imperialism and financial control',
         'BeHistorical reference map. Secondary geographic reconstruction of investment, debt and treaty-port arrangements.',
@@ -306,9 +306,9 @@ const MODULE07_EVIDENCE = {
   '6.6': {
     prompt: 'Make a claim about what caused mass migration after 1750. Use at least two cards, separate a push from a pull, and explain what made the movement physically possible.',
     cards: [
-      picture('Indian_indenture_ship.jpg', 'An indenture ship',
-        'Photograph of a vessel carrying indentured labourers. The contract and the passage were parts of the same system.',
-        'NOTICE the conditions the vessel implies for a voyage of weeks. INFER what a recruiter would have to promise to fill it. What does the ship not tell you about what awaited at the other end?'),
+      picture('Futtle_Rozack.jpg', 'Register of the Fatel Razack, 1845',
+        'A page from the general register of indentured laborers aboard the Fatel Razack, the first ship to bring Indian indentured workers to Trinidad, 1845. The contract and the passage were parts of the same system.',
+        'NOTICE what the register records about each person. INFER what the colonial state needed to know in order to manage contract labor. What does a register not tell you about why each person signed, or what awaited them?'),
       localMap('topic-6-6.svg', 'Global migration flows after 1750',
         'BeHistorical reference map. Secondary geographic reconstruction of the major migration streams of the period.',
         'NOTICE which flows are voluntary, which are contracted, and which are coerced. INFER what the map is flattening by drawing them all as arrows. Which distinction matters most for causation?'),
@@ -675,14 +675,14 @@ const MEDIA = {
   },
   '6.5': {
     map: instructionalMap('6.5'),
-    photo: 'Buenos_Aires_Port.jpg', onCard: 1, onEvidence: 2,
-    photoTitle: 'The port of Buenos Aires',
+    photo: 'Puerto_madero_silos_1900.jpg', onCard: 1, onEvidence: 2,
+    photoTitle: 'Grain silos at Puerto Madero, Buenos Aires, c. 1900',
     photoCaption: 'British capital financed Argentina\'s docks and railways. Economic imperialism could direct an economy without formal colonial rule.'
   },
   '6.6': {
     map: instructionalMap('6.6'),
-    photo: 'Indian_indenture_ship.jpg', onCard: 1, onEvidence: 2,
-    photoTitle: 'An indenture ship carrying Indian laborers',
+    photo: 'Futtle_Rozack.jpg', onCard: 1, onEvidence: 2,
+    photoTitle: 'Register of indentured laborers aboard the Fatel Razack, 1845',
     photoCaption: 'After abolition, plantations recruited indentured workers from India and China under contracts that limited pay, movement, and return.'
   },
   '6.7': {

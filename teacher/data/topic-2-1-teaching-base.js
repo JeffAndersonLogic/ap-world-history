@@ -175,8 +175,8 @@ window.BEHISTORICAL_TEACHING = {
       title: 'Luxury goods made distance worth it.',
       visual: {
         type: 'image',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Blue%20and%20white%20porcelain%20dish%20with%20three%20friends%20of%20winter%2C%20Yuan%20dynasty.JPG',
-        alt: 'Blue and white porcelain dish from the Yuan dynasty'
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jingdezhen%20blue%20and%20white%20plate%20Yuan%20period%20mid%2014th%20century.jpg',
+        alt: 'Blue and white Jingdezhen porcelain plate from the Yuan dynasty, mid-1300s'
       },
       footer: 'Porcelain · textiles · silk · spices · iron · steel',
       notes: {

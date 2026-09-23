@@ -32,10 +32,10 @@
   };
   lesson.images = [
     {
-      "title": "The port of Buenos Aires",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Buenos_Aires_Port.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buenos_Aires_Port.jpg",
-      "caption": "Photograph of the port built out with British capital, in a country that was never a colony.",
+      "title": "Grain silos at Puerto Madero, Buenos Aires, c. 1900",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Puerto_madero_silos_1900.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Puerto_madero_silos_1900.jpg",
+      "caption": "Photograph of the export docks at Puerto Madero, built in the 1890s by British engineers with British finance, in a country that was never a colony.",
       "prompt": "NOTICE the scale of the infrastructure and what it is built to move. INFER whose interests the layout serves. What does a port photograph not show about who owns it or who holds the debt?"
     },
     {

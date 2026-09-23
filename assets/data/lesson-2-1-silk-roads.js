@@ -127,9 +127,9 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: 'Chinese porcelain for export',
-          caption: 'Porcelain is useful evidence because it shows both demand and expanded production for long-distance trade.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Blue%20and%20white%20porcelain%20dish%20with%20three%20friends%20of%20winter%2C%20Yuan%20dynasty.JPG',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Blue_and_white_porcelain_dish_with_three_friends_of_winter,_Yuan_dynasty.JPG'
+          caption: 'A blue-and-white plate made at the Jingdezhen kilns in the mid-1300s, under the Yuan. Porcelain like this shows both demand and expanded production for long-distance trade.',
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jingdezhen%20blue%20and%20white%20plate%20Yuan%20period%20mid%2014th%20century.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Jingdezhen_blue_and_white_plate_Yuan_period_mid_14th_century.jpg'
         }
       },
       {
@@ -142,9 +142,9 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: 'Caravanserai courtyard',
-          caption: 'Caravanserai were trade infrastructure: they turned long journeys into manageable stages.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Caravanserai%20of%20Saad%20al-Saltaneh%20Qazvin%2004.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Caravanserai_of_Saad_al-Saltaneh_Qazvin_04.jpg'
+          caption: 'The Sa\'d al-Saltaneh caravanserai in Qazvin, Iran. This building dates from the 1800s, but it keeps the plan caravanserai had used along trade routes for centuries: they turned long journeys into manageable stages.',
+          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Caravanserai%20of%20Sa%27d%20al-Saltaneh%20in%20Qazvin.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Caravanserai_of_Sa%27d_al-Saltaneh_in_Qazvin.jpg'
         }
       },
       {
