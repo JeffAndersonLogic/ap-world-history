@@ -309,37 +309,38 @@ module.exports = {
     lessonPage: 'lesson-2-7-comparison.html',
     docTitle: 'BeHistorical — Module 07 | First &amp; 10 | Topic 2.7 Comparison of Trade Networks',
     headerSubtitle: 'Topic 2.7, Comparison of Trade Networks &nbsp;|&nbsp; AP World History: Modern',
-    titleHtml: 'Same Problems, Different <em>Trade Systems</em>',
-    deck: 'The Silk Roads, Indian Ocean, and trans-Saharan routes solved different geographic problems but shared larger economic patterns: demand encouraged exchange, technologies and commercial practices reduced trade friction, states and cities benefited, production responded, and wider connectivity spread culture and biology.',
+    titleHtml: 'Three Networks, One <em>Problem</em>',
+    deck: 'Geography picked the tools. Demand did the rest. The Silk Roads, the Indian Ocean, and the trans-Saharan routes were all solving the same problem, distance, and the ground each one crossed decided how.',
     skillTags: ['Comparison', 'Causation', 'Synthesis'],
+    supportHeadings: { before: 'The Story to Hold Onto', target: 'Question for Today' },
     supportCards: {
-      beforeYouRead: 'Compare like with like. Use the same category on both sides: environment, transportation, commercial practices, demand, states/cities, productive capacity, or diffusion.',
-      readingTarget: 'By the end, you should be able to explain meaningful similarities and differences among the three networks and support each comparison with balanced evidence.'
+      beforeYouRead: '<strong>Same problem → Different ground → Different tools → Same results.</strong> You already know all three networks. This reading lines them up so you can compare them.',
+      readingTarget: 'Why did three very different trade networks end up doing the same things?'
     },
-    vocabulary: ['Silk Roads', 'Indian Ocean', 'Trans-Saharan', 'Commercial Practices', 'Credit', 'Caravanserai', 'Monsoon Winds', 'Camel Saddle', 'Luxury Demand', 'Productive Capacity', 'Diffusion'],
+    vocabulary: ['Silk Roads', 'Indian Ocean', 'Trans-Saharan', 'Luxury Demand', 'Commercial Practices', 'Caravanserai', 'Credit', 'Monsoon Winds', 'Camel Saddle', 'Trading Cities', 'Productive Capacity', 'Diffusion'],
     sections: [
-      section('1', 'Comparison', 'Different Environments Required Different Transportation Solutions', [
-        'The <span class="kt">Silk Roads</span> crossed long overland corridors; the <span class="kt">Indian Ocean</span> depended on seasonal winds and open-water navigation; the <span class="kt">trans-Saharan</span> network crossed an arid desert.',
-        'Those environments encouraged different solutions. Caravanserais supported overland merchants, compasses and astrolabes aided maritime navigation, and camel saddles and organized caravans made desert crossings more practical.'
-      ], 'AP Thinking, Comparison', '<strong>A good difference has a cause.</strong> Geography created different transportation problems, so each network developed different technologies and infrastructure.'),
-      section('2', 'Commercial Systems', 'All Networks Had to Lower the Cost and Risk of Exchange', [
-        'Long-distance trade required trust, information, financing, and protection. Silk Roads merchants used forms of <span class="kt">credit</span>, banking, money economies, and caravan infrastructure. Indian Ocean merchants relied heavily on port communities, commercial relationships, and diasporic networks. Trans-Saharan merchants depended on caravan organization and political protection.',
-        'The institutions differed, but the economic problem was similar: merchants needed systems that made moving valuable goods across long distances reliable enough to be profitable.'
-      ], 'AP Thinking, Similarity', '<strong>Compare function as well as form.</strong> Two networks can use different institutions to solve the same problem of risk and transaction cost.'),
-      section('3', 'Demand and Production', 'Trade Connected Distant Consumers to Producers', [
-        'Across Afro-Eurasia, demand for valuable goods stimulated exchange. Luxury demand was especially important on the Silk Roads and Indian Ocean, while gold and salt anchored much trans-Saharan commerce.',
-        'Trade also interacted with <span class="kt">productive capacity</span>. Producers expanded output for distant markets, including textiles and porcelain in Asia and increased iron and steel production in China. The networks were therefore not merely delivery routes; changing trade could stimulate production.'
-      ], 'AP Thinking, Economic Systems', '<strong>Demand and production belong in the comparison.</strong> Ask not only what goods moved, but how distant markets changed what societies produced.'),
-      section('4', 'Consequences', 'All Three Networks Deepened Afro-Eurasian Connectivity', [
-        'Each network supported states or cities that benefited from exchange, though the political forms differed. Trading cities such as Samarkand, maritime states such as Malacca, and land empires such as Mali all gained from strategic positions within exchange systems.',
-        'All three networks also contributed to wider cultural, technological, and biological diffusion. The specific traditions, technologies, crops, and pathogens varied, but the shared pattern was a <span class="kt">deepening and widening of human interaction</span> across regions.'
-      ], 'AP Thinking, Synthesis', '<strong>End with the pattern:</strong> different environments and institutions produced different networks, but all expanded interregional interaction and its economic, cultural, and environmental consequences.')
+      section('1', 'The Problem', 'Every Network Was Solving the Same Problem', [
+        'For three topics we visited the trade networks one at a time: the <span class="kt">Silk Roads</span> across Central Asia, the <span class="kt">Indian Ocean</span> by sea, and the <span class="kt">trans-Saharan</span> routes across the desert. Now we line them up and ask why they look so alike.',
+        'All three were solving the same problem. People wanted things made far away: silk and porcelain from China, pepper from India, gold from West Africa, salt from the Sahara. That <span class="kt">luxury demand</span> made long-distance trade worth doing. But distance made every one of those goods expensive and dangerous to get. Whoever could make distance cheaper and safer could get rich.'
+      ], 'AP Thinking, Comparison', '<strong>Find the similarity underneath.</strong> The networks look different on a map, but demand and distance were the same everywhere. That shared problem is why the results turned out so alike.'),
+      section('2', 'The Big Difference', 'Geography Picked the Tools', [
+        'Each network crossed different ground, so each one needed different tools. On the long overland Silk Roads, <span class="kt">caravanserais</span> gave merchants and their animals a safe place to stop, and <span class="kt">credit</span> meant a merchant did not have to carry a fortune in coins. China\'s flying cash and paper money are examples of the money economies that grew along these routes. These are the <span class="kt">commercial practices</span> that lowered the risk of distance.',
+        'On the Indian Ocean, sailors learned the <span class="kt">monsoon winds</span>, which blow one way for half the year and reverse for the other half. Ships such as dhows and junks were built to use them, so the wind itself became a schedule merchants could plan around. In the Sahara, the <span class="kt">camel saddle</span> let camels carry heavier loads, and organized caravans moved people, water, and protection from oasis to oasis.'
+      ], 'AP Thinking, Comparison', '<strong>A difference needs a because.</strong> The tools differed because the environments differed. A monsoon is useless in a desert, and a camel cannot cross an ocean.'),
+      section('3', 'The Same Results', 'Where Routes Narrowed, Cities and States Grew', [
+        'Different tools led to the same results. The first was that cities and states grew rich where routes narrowed and goods had to pass through. <span class="kt">Trading cities</span> such as Samarkand and Kashgar grew where caravans met on the Silk Roads, under the protection of Mongol rule. Calicut and Malacca grew where ships waited for the winds to change. Timbuktu grew at the edge of the Sahara, and the kingdom of Mali grew rich by taxing and protecting the gold and salt trade.',
+        'The political forms were different, a land empire, port states, a West African kingdom, but the pattern was the same. When goods had to pass through a place, whoever controlled that place could tax the trade and protect it, and trade grew because they did.'
+      ], 'AP Thinking, Comparison', '<strong>Compare what a thing did, not only what it looked like.</strong> A port and a desert city look nothing alike, but they played the same role in their networks.'),
+      section('4', 'The Same Results', 'Demand Far Away Made Workshops Grow, and More Than Goods Moved', [
+        'The second shared result was that trade changed places far from the routes. Because buyers kept asking for more, producers made more. Chinese, Persian, and Indian artisans expanded their production of textiles and porcelain for export, and iron and steel production grew in China. Historians call this growth in <span class="kt">productive capacity</span>: a potter in China could be working for a buyer in East Africa.',
+        'The third shared result was <span class="kt">diffusion</span>. All three networks carried things nobody was selling. Islam and Buddhism traveled with merchants, paper and gunpowder moved west, crops such as bananas, new rice varieties, and citrus moved to new regions, and the bubonic plague traveled the same routes. Different networks carried different things, but all three deepened and widened human interaction across Afro-Eurasia.'
+      ], 'AP Thinking, Synthesis', '<strong>Put it together with both, but, and because.</strong> Both networks did the same thing, but they used different tools, because they crossed different ground. That is a complete AP comparison.')
     ],
-    takeaway: 'The three Unit 2 networks differed in geography, transportation, and institutional solutions, but shared larger patterns: demand drove exchange, commercial systems lowered trade friction, states and cities benefited, production responded, and intensified connectivity spread culture, technology, crops, and disease.',
+    takeaway: 'Three networks, one problem: distance. Geography picked the tools, caravanserais and credit overland, the monsoon and ships by sea, the camel saddle and caravans across the Sahara. Demand did the rest: on all three, trading cities grew, production expanded, and ideas, crops, and disease traveled.',
     questions: [
-      { num: '01', skill: 'Comparison', text: 'Identify one meaningful similarity between two trade networks using the same category on both sides.', placeholder: 'Both ___ and ___ were similar because...' },
-      { num: '02', skill: 'Comparison', text: 'Identify one meaningful difference between two networks and explain why geography, technology, commercial practice, or state support produced that difference.', placeholder: 'The networks differed because...' },
-      { num: '03', skill: 'Synthesis', text: 'Explain how demand, commercial practices, and productive capacity connect the economic story of Unit 2 across more than one trade network.', placeholder: 'Across Unit 2, demand and commercial practices...' }
+      { num: '01', skill: 'Comparison', text: 'Identify one meaningful similarity between two trade networks, using the same category on both sides, and explain why it existed.', placeholder: 'Both ___ and ___ ___ because...' },
+      { num: '02', skill: 'Comparison', text: 'Identify one meaningful difference between two networks and explain why geography, technology, commercial practices, or state support produced that difference.', placeholder: 'The ___ relied on ___, while the ___ relied on ___, because...' },
+      { num: '03', skill: 'Synthesis', text: 'Explain how demand far away changed productive capacity in places that were not on the trade routes themselves.', placeholder: 'Because buyers far away wanted more...' }
     ]
   })
 };

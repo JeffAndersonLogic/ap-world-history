@@ -55,6 +55,9 @@ window.BH_SLIDE_TEMPLATE_EXAMPLES=[
   {group:'Relationships',name:'Split II: mirror',note:'The same questions asked of both sides, labels down the spine.',slide:{
     kind:'split-mirror',eyebrow:'Comparison · Split',title:'Land or sea: why did the ocean carry more?',footer:'Ships could move more weight for less cost, so the sea carried the bulk.',
     template:{left:{name:'Silk Roads'},right:{name:'Indian Ocean'},rows:[{label:'Carries',left:'Mostly luxury goods: light, valuable',right:'Luxury and bulk goods: heavy, cheaper'},{label:'Moves by',left:'Camel caravans',right:'Ships riding the monsoon'},{label:'Main risk',left:'Distance, bandits, deserts',right:'Storms and missing the wind'}]}}},
+  {group:'Relationships',name:'Split IV: matrix',note:'The same questions asked of three or four cases, one column each.',slide:{
+    kind:'split-matrix',eyebrow:'Comparison · Matrix',title:'Three networks, one problem.',footer:'Geography picked the tools. Demand did the rest.',
+    template:{columns:[{name:'Silk Roads'},{name:'Indian Ocean'},{name:'Sahara'}],rows:[{label:'Problem',cells:['Distance and bandits','Distance and open sea','Distance and desert']},{label:'Tools',cells:['Caravanserai, credit','Monsoon, ships','Camel saddle, caravan']},{label:'Cities',cells:['Samarkand, Kashgar','Calicut, Malacca','Timbuktu, Mali']}],result:{label:'Result',text:'On all three, production grew and ideas, crops and disease traveled.'}}}},
   {group:'Relationships',name:'Split III: before and after',note:'A diagonal cut with the turning-point date on it.',slide:{
     kind:'split-diagonal',
     template:{date:'1258',before:{tag:'Before',title:'Baghdad, capital of the Abbasid Caliphate.',text:'A center of trade and learning, home to the House of Wisdom.'},after:{tag:'After',title:'The Mongols sack the city.',text:'The Abbasid Caliphate ends, and power in the region shifts to Mongol rulers.'}}}},

@@ -1,8 +1,9 @@
 # Topic 2.7 Story Draft: Comparison of Economic Exchange
 
-**Status: DRAFT, awaiting Jeff's approval.** This is the story approval gate in
-`docs/PRESENTATION-AUTHORING.md` section 8. Nothing has been built. Once Jeff approves
-or edits it, the Teaching OS build starts from this page.
+**Status: Approved by Jeff, 2026-09-23, and built.** He approved the spine, the three-column
+matrix as the retelling slide, the First & 10 rewrite, and an Eras 2 review embedded at the
+end of the lesson as retrieval through the matrix (about 12 minutes), not a separate segment.
+The teacher source is `teacher/data/topic-2-7-teaching-base.js`.
 
 **Taught:** Green Friday 2026-10-02, Silver Monday 2026-10-05. It is the last topic
 before the Eras 2 exam (2026-10-06/07), so it does two jobs: the 2.7 comparison, and

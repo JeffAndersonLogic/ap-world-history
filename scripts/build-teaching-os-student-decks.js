@@ -67,6 +67,15 @@ const DECKS = [
     ],
     student: 'assets/data/presentations/topic-2-6-student.js',
     backUrl: 'lesson-2-6-environmental-consequences.html#lecture'
+  },
+  {
+    key: '2.7',
+    sources: [
+      'teacher/data/topic-2-7-teaching-base.js',
+      'teacher/data/topic-2-7-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-2-7-student.js',
+    backUrl: 'lesson-2-7-comparison.html#lecture'
   }
 ];
 
@@ -221,6 +230,15 @@ function topic26Slides(teaching) {
   });
 }
 
+function topic27Slides(teaching) {
+  return projectedSlides(teaching).map(src => {
+    const s = baseStudentSlide(src);
+    if (src.kind === 'image') s.kind = 'map';
+    if (src.kind === 'prompt' || src.kind === 'question') s.kind = 'prompt';
+    return s;
+  });
+}
+
 function buildDeck(deck) {
   const teaching = loadTeaching(deck);
   const builders = {
@@ -229,7 +247,8 @@ function buildDeck(deck) {
     '2.3': topic23Slides,
     '2.4': topic24Slides,
     '2.5': topic25Slides,
-    '2.6': topic26Slides
+    '2.6': topic26Slides,
+    '2.7': topic27Slides
   };
   return {
     meta: {

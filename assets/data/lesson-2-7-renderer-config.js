@@ -9,6 +9,12 @@
     note: 'Compare the networks using the same categories: environment, transportation, commercial practices, demand, states/cities, productive capacity, and diffusion.'
   };
 
+  lesson.classPresentation = {
+    title: 'Class Slides: Comparison of Economic Exchange',
+    desc: 'Follow the comparison story: three networks solved the same problem, distance, with the tools their geography allowed, and all three grew trading cities, production and diffusion.',
+    url: 'presentation-topic-2-7-student.html'
+  };
+
   lesson.map = {
     ...lesson.map,
     key: [

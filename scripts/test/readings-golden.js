@@ -35,10 +35,13 @@ const fromDisk = process.argv.includes('--from-disk');
 // Topic 2.5's story-first rewrite landed 2026-09-23, its story reviewed and approved
 // as written by Jeff before it was built, with the one requested refinement: the
 // networks -> contact -> diffusion and adaptation -> change chain made explicit.
+// Topic 2.7's story-first rewrite landed 2026-09-23, its story (same problem,
+// different ground, different tools, same results) reviewed and approved by Jeff
+// before it was built.
 // Keep the historical fixture untouched, but accept that full rewrite only while
 // its canonical source file is byte-for-byte the approved version below. Any
 // later Unit 2 First & 10 edit changes this Git blob hash and forces a new review.
-const APPROVED_UNIT2_REWRITE_BLOB = 'f19317fea6fd2cf082445842a8f4f567463bfb6e';
+const APPROVED_UNIT2_REWRITE_BLOB = 'fa08abb277d6a647148d31d25c8c3707bfd3b4c6';
 const unit2SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-2.js');
 function gitBlobSha(text) {
   const body = Buffer.from(text, 'utf8');

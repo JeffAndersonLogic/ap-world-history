@@ -171,6 +171,14 @@ function splitMirror(s){
   return board('split-mirror',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-mr"><div class="bht-mr-head"><div class="l">${esc(L.name)}</div><div></div><div class="r">${esc(R.name)}</div></div>${rows}</div>`)+foot(s.footer)));
 }
 
+function splitMatrix(s){
+  const t=s.template||{},cols=arr(t.columns).slice(0,4),n=Math.max(1,cols.length);
+  const heads=cols.map(c=>`<div class="c">${esc(c.name)}</div>`).join('');
+  const rows=arr(t.rows).map(r=>`<div class="bht-mx-row"><div class="m">${esc(r.label)}</div>${cols.map((_,i)=>`<div class="c">${rich(arr(r.cells)[i])}</div>`).join('')}</div>`).join('');
+  const span=t.result?`<div class="bht-mx-row bht-mx-span"><div class="m">${esc(t.result.label)}</div><div class="c">${rich(t.result.text)}</div></div>`:'';
+  return board('split-matrix',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-mx" style="--n:${n}"><div class="bht-mx-head"><div></div>${heads}</div>${rows}${span}</div>`)+foot(s.footer)));
+}
+
 function splitDiagonal(s){
   const t=s.template||{},B=t.before||{},A=t.after||{};
   return board('split-diagonal','paper',`<svg class="bht-dg-cut" viewBox="0 0 1280 720" preserveAspectRatio="none" aria-hidden="true"><polygon points="0,0 780,0 500,720 0,720"></polygon></svg><div class="bht-dg-b"><div class="bht-eb">${esc(B.tag||'Before')}</div><h2 class="bht-h">${rich(B.title)}</h2><p>${rich(B.text)}</p></div><div class="bht-dg-date"><span>${esc(t.date)}</span></div><div class="bht-dg-a"><div class="bht-eb">${esc(A.tag||'After')}</div><h2 class="bht-h">${rich(A.title)}</h2><p>${rich(A.text)}</p></div>`);
@@ -379,7 +387,7 @@ function fCover(s){
 const KINDS={
   'equation':equation,'equation-stack':equationStack,'equation-remove':equationRemove,
   'exchange':exchange,'exchange-flow':exchangeFlow,'exchange-hub':exchangeHub,
-  'split-contrast':splitContrast,'split-mirror':splitMirror,'split-diagonal':splitDiagonal,
+  'split-contrast':splitContrast,'split-mirror':splitMirror,'split-matrix':splitMatrix,'split-diagonal':splitDiagonal,
   'compounding':compounding,'compounding-snowball':compoundingSnowball,'compounding-stairs':compoundingStairs,
   'annotated':annotated,
   'timeline':timeline,'timeline-spans':timelineSpans,'timeline-lanes':timelineLanes,
@@ -535,6 +543,15 @@ const CSS=`
 .bht-mr-row .r{font-size:22u;line-height:1.4;padding-left:28u}
 .bht-mr-row .m{font:800 13u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#fffdf7;background:#1a1c1d;text-align:center;padding:10u 4u;border-radius:999u}
 .dark .bht-mr-row .m{background:#c9a46a;color:#101213}
+.bht-mx-head,.bht-mx-row{display:grid;grid-template-columns:150u repeat(var(--n),minmax(0,1fr));column-gap:24u;align-items:center}
+.bht-mx-head{margin-bottom:6u}
+.bht-mx-head .c{font:900 30u/1.1 'Cinzel',Georgia,serif;color:var(--acc);text-align:center}
+.bht-mx-row{border-bottom:1u solid var(--rulec);padding:15u 0}
+.bht-mx-row .c{font-size:21u;line-height:1.35;text-align:center}
+.bht-mx-row .m{font:800 13u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#fffdf7;background:#1a1c1d;text-align:center;padding:10u 4u;border-radius:999u}
+.bht-mx-span{border-bottom:0}
+.bht-mx-span .c{grid-column:2 / -1;font-weight:700}
+.dark .bht-mx-row .m{background:#c9a46a;color:#101213}
 .bht-dg-cut{position:absolute;inset:0;width:100%;height:100%}
 .bht-dg-cut polygon{fill:#1a1c1d}
 .bht-dg-b{position:absolute;left:76u;top:64u;width:430u;display:flex;flex-direction:column;gap:18u;--acc:#c9a46a;--head:#fffdf7}
