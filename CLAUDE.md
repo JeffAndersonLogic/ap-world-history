@@ -55,7 +55,29 @@ thaws, is written down as a note for Jeff, and ships before the topic is taught 
 A factual error fixed during the freeze is mentioned to Green at their next class, so
 the two rooms do not quietly diverge.
 
-Before shipping anything, check whether today falls inside a frozen topic's window.
+**It is enforced, by `scripts/check-teaching-freeze.js`, in three places**, because a
+required check binds to a commit and not to a day: a branch that went green the evening
+before Green's class could otherwise be fast-forwarded onto main the next morning with
+nothing running again. The Validate workflow runs it on every push (the gate main
+enforces), the pre-push hook runs it on any push to main, and the ship-to-main skill runs
+it immediately before the fast-forward. Pushing a working branch is never blocked;
+drafting during a freeze is allowed, and its CI simply stays red until the topic thaws,
+when re-running Validate on that commit turns it green. The dates are the school's, in
+Indiana time, never UTC, so a 9pm push on Green's day still counts as Green's day.
+
+**The override is a commit trailer**, a line reading `Ship-this-fix: <what was broken>`
+in any commit of the change. Write it only when Jeff has said "ship this fix". The
+check prints the topic and the files so the other room can be told.
+
+**What it matches**: a topic's files by name (`lesson-2-3-`, `topic-2-3`, `topics/2-3/`,
+`foundations-3-`), the BeInTheRoom scenario its data links to, and that topic's own
+entry inside `assets/data/ap-practice-units-1-2.js`, which is re-evaluated per topic
+because one file carries fourteen topics. **What it deliberately does not**: shared code
+every topic runs on, such as the renderers and stylesheets, since freezing those would
+freeze the whole course on every school day, and anything under `docs/`.
+`scripts/test/teaching-freeze.test.js`, in the offline suite, replays the real 2.3
+rewrite and must see it refused on 9/22 and allowed on 9/24.
+
 Explicit instructions from Jeff always override this rule; if he asks for a change to
 a frozen topic, remind him once that it is frozen and then do what he says.
 
