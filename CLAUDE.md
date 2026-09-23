@@ -34,6 +34,31 @@ A presentation is not complete because a file or commit exists. Follow the autho
   branch-then-fast-forward flow above is the only route and the escape hatch this
   line used to describe is gone.
 
+### The teaching freeze
+
+**A topic is frozen from the start of its Green day through the end of its Silver
+day.** Both dates are in `assets/data/announcements-schedule.js`. While a topic is
+frozen, nothing that changes what students or the projector show for that topic
+reaches `main`: its lesson page and data files, its First & 10, its deep reading, its
+BeInTheRoom, its Teaching OS pages and its student deck. Work on other topics, and on
+files no student or projector sees, goes on as normal.
+
+The reason is that Green and Silver are different students taught the same lesson. On
+2026-09-22 Topic 2.3 was rewritten the night between the two classes, so the two rooms
+were taught two different lessons, and the teacher spent class time debugging the
+live site. A fix made after Green has been taught is a fix only Silver gets.
+
+**The exception is Jeff saying "ship this fix", and it covers only a broken lesson:** a
+save that loses work, a page or button that does not work, a dead picture, or a factual
+error. Anything that is an improvement rather than a repair waits until the topic
+thaws, is written down as a note for Jeff, and ships before the topic is taught again.
+A factual error fixed during the freeze is mentioned to Green at their next class, so
+the two rooms do not quietly diverge.
+
+Before shipping anything, check whether today falls inside a frozen topic's window.
+Explicit instructions from Jeff always override this rule; if he asks for a change to
+a frozen topic, remind him once that it is frozen and then do what he says.
+
 ## The Gate
 
 The contracts below are enforced by machine, not by memory.
