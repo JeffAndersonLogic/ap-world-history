@@ -77,4 +77,9 @@
 // map credit was cleared rather than repointed, because the slot draws local
 // artwork and a credit for a different map would be false.
 
-module.exports = [];
+module.exports = [
+  { topic: '2.5', replaces: 'Urban-Fortunes Evidence — Cities Rise and Decline', file: 'Bagdad1258.jpg', search: 'siege of Baghdad 1258 manuscript',
+    title: 'The Mongol Siege of Baghdad, 1258', caption: 'Staged for verification.', prompt: 'NOTICE the walls and the attackers. What can you INFER?' },
+  { topic: '2.5', replaces: 'Travel-Account Evidence — A More Connected World', file: 'Caravane_Marco_Polo.jpg', search: 'Catalan Atlas caravan Marco Polo',
+    title: 'A Caravan on the Catalan Atlas, 1375', caption: 'Staged for verification.', prompt: 'NOTICE the travelers and animals. What can you INFER?' }
+];
