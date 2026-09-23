@@ -81,13 +81,10 @@ const STAGING = (topic, replaces, file, search, title) => ({
 });
 
 module.exports = [
-  STAGING('2.1', 'Silk Roads Across Afro-Eurasia', 'Foliated dish with underglaze blue design of melons, bamboo and grapes, Jingdezhen ware, Yuan, 1271-1368, Shanghai Museum.jpg', 'Jingdezhen blue and white Yuan', 'Chinese porcelain for export'),
-  STAGING('2.1', 'Silk Roads Across Afro-Eurasia', 'Caravanserai in Iran.jpg', 'caravanserai courtyard Iran', 'Caravanserai courtyard'),
-  STAGING('2.1', 'Silk Roads Across Afro-Eurasia', 'Sa\'d al-Saltaneh Caravanserai.jpg', 'Qazvin caravanserai', 'Caravanserai courtyard'),
-  STAGING('4.5', 'Cerro Rico at Potosí, 1552', 'Weaver at his loom, India.jpg', 'weaver loom India', 'Indian cotton textile production'),
-  STAGING('4.5', 'Cerro Rico at Potosí, 1552', 'Indian handloom.jpg', 'handloom weaving India cotton', 'Indian cotton textile production'),
+  STAGING('2.1', 'Silk Roads Across Afro-Eurasia', 'Jingdezhen blue and white plate Yuan period mid 14th century.jpg', 'Jingdezhen blue and white Yuan', 'Chinese porcelain for export'),
+  STAGING('2.1', 'Silk Roads Across Afro-Eurasia', "Caravanserai of Sa'd al-Saltaneh in Qazvin.jpg", 'Qazvin caravanserai', 'Caravanserai courtyard'),
+  STAGING('4.5', 'Cerro Rico at Potosí, 1552', 'Indian weaver at his loom. Gouache drawing. Wellcome V0045300.jpg', 'weaver loom India', 'Indian cotton textile production'),
   STAGING('6.5', 'The port of Buenos Aires', 'Puerto madero silos 1900.jpg', 'Puerto Madero 1900', 'The port of Buenos Aires'),
-  STAGING('6.6', 'An indenture ship', 'Fatel Razack.jpg', 'Fatel Razack', 'An indenture ship'),
-  STAGING('6.6', 'An indenture ship', 'Indian indentured labourers in Trinidad.jpg', 'indentured labourers Trinidad', 'An indenture ship'),
-  STAGING('6.6', 'An indenture ship', 'Coolie ship.jpg', 'indentured Indian immigrants arrival', 'An indenture ship')
+  STAGING('6.6', 'An indenture ship', 'Futtle Rozack.jpg', 'Fatel Razack ship 1845', 'An indenture ship'),
+  STAGING('6.6', 'An indenture ship', 'Girmitiyas, Indentured labour.jpg', 'girmitiya indentured', 'An indenture ship')
 ];
