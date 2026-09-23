@@ -87,7 +87,7 @@ module.exports = {
       useThis: {
         tool: `The camel and the saddle together. <em>The mechanism is that the dromedary's tolerance of extreme dehydration, its temperature range and its diet let it cross waterless ground no other pack animal could, while a stable saddle frame let it be loaded to capacity without injury, which is what converts a surviving animal into a commercial vehicle.</em>`,
         limit: `The whole system remained hostage to water. Routes ran between wells, seasons dictated departures, and a dry well or a raided oasis could destroy a caravan outright.`,
-        comparison: `Against the <em>Indian Ocean</em>: the monsoon is free energy that a ship harnesses, while the Sahara supplies nothing and every crossing is a race against a stored resource. That is why maritime trade could carry rice and this trade could carry only gold, salt, cloth and people.`
+        comparison: `Against the <em>Indian Ocean</em>: the monsoon is free energy that a ship harnesses, while the Sahara supplies nothing and every crossing is a race against a stored resource. That is why maritime trade could carry bulky goods like rice while this trade carried mostly goods worth their weight: gold, salt, cloth, copper, books and people.`
       },
       terms: [
         ['Dromedary', 'The one-humped camel of North Africa and Arabia, whose tolerance of dehydration and poor forage made the desert crossing possible.'],
@@ -112,7 +112,7 @@ module.exports = {
           heading: 'Why salt was worth gold',
           blocks: [
             { p: `Human beings lose salt continuously through sweat, and in a hot climate where people work outdoors that loss is substantial and must be replaced or you become seriously ill. West African savanna and forest regions have very little natural salt: the soils do not supply it, the local diet does not, and there is no coast within reach for most of the interior. The Sahara, by contrast, is the dried bed of ancient seas and contains rock salt in quantity, cut in slabs at desert mines.` },
-            { p: `So the exchange is not a curiosity, it is two regions each holding a surplus of something the other physically needed. Gold from the Bambuk and Bure fields near the upper Senegal and Niger rivers, and later from the Akan forest region further south, went north to a Mediterranean and Middle Eastern world that used it for coinage and had almost no domestic source. Salt from mines such as <span class="kt">Taghaza</span> in the deep desert went south to populations who needed it to stay healthy. Each side valued what it lacked, which is the entire economics of the route.` },
+            { p: `So the exchange is not a curiosity, it is two regions each holding a surplus of something the other physically needed. Gold from the Bambuk and Bure fields near the upper Senegal and Niger rivers, and later from the Akan forest region further south, went north to a Mediterranean and Middle Eastern world that used it for coinage and had few large sources of its own. Salt from mines such as <span class="kt">Taghaza</span> in the deep desert went south to populations who needed it to stay healthy. Each side valued what it lacked, which is the entire economics of the route.` },
             { note: {
               kind: 'howknow',
               label: 'How we know: a town built out of its own product',
@@ -161,14 +161,14 @@ module.exports = {
           heading: 'The chain of stops',
           blocks: [
             { p: `At the northern end sat the assembly points in Morocco and Ifriqiya, of which <span class="kt">Sijilmasa</span> in southern Morocco is the best known: the place where a caravan was organized, financed, provisioned and dispatched, and where the goods coming north were sold into Mediterranean markets. In the middle sat the salt mines and the water stops, Taghaza above all. At the southern edge of the desert lay the Sahelian entrepots where the desert traffic met the river system and the savanna trade: Walata, then Timbuktu, Gao on the Niger, and Djenne upstream in the inland delta.` },
-            { p: `<span class="kt">Timbuktu</span> is worth understanding precisely, because students often treat it as a mythical place. It sat a short distance from the Niger, so goods could be transferred between camel and river boat, which is exactly the profile of a transshipment town. That position made it a market, the market made it wealthy, and the wealth funded mosques, scholars and libraries until the city became a center of Islamic learning as well as of commerce. Trade first, then books, and the books were themselves traded: manuscripts were among the most valuable goods brought south across the desert.` }
+            { p: `<span class="kt">Timbuktu</span> is worth understanding precisely, because students often treat it as a mythical place. It sat a short distance from the Niger, so goods could be transferred between camel and river boat, which is exactly the profile of a transshipment town. That position made it a market, the market made it wealthy, and over time the wealth funded mosques and scholars until the city became a center of Islamic learning as well as of commerce; its great libraries grew mostly in the fifteenth and sixteenth centuries. Trade first, then books, and the books were themselves traded: manuscripts were among the most valuable goods brought south across the desert.` }
           ]
         },
         {
           heading: 'Who was paid, and for what',
           blocks: [
             { p: `Four groups took a share, and naming them is a good way to show you understand the system rather than the story. The desert peoples were paid for guiding and for protection, in an arrangement that shaded into tolls. The oasis and mine communities lived on provisioning and on the commodity beneath them. The Sahelian states, Mali most prominently in this period, taxed goods entering and leaving their territory and enforced enough order along the roads to keep the traffic coming. And the merchant networks themselves, North African at one end and Wangara at the other, took the commercial margin.` },
-            { p: `That is why the Topic 1.5 chapter can say Mali's power rested on taxing the crossing rather than on owning the mines. A state astride the meeting point of the desert routes and the river system does not need to produce anything: it needs to make the road safe, the market predictable and the tax collectible. The empire's wealth was a position on a map, converted into revenue by administration.` }
+            { p: `That is why the Topic 1.5 chapter can say Mali's power rested more on taxing and protecting the trade than on digging the gold itself. Mali controlled important West African trade centers and access points connected to the network, but not the whole network across the Sahara and North Africa. A state astride the meeting point of the desert routes and the river system does not need to run every leg of the journey: it needs to make its part of the road safe, the market predictable and the tax collectible. The empire's wealth was a position on a map, converted into revenue by administration.` }
           ]
         }
       ],
@@ -212,7 +212,7 @@ module.exports = {
             { note: {
               kind: 'howknow',
               label: 'How we know: a European map drawn by someone who had never been there',
-              html: `A Catalan atlas produced for a European court in <span class="num">1375</span> shows a crowned African king seated on a throne in the western Sahara, holding a large gold nugget, with a caption naming him as the lord of the region's gold. Nobody at that court had been to Mali. The information reached Mediterranean Europe through North African merchants and travelers, half a century after Mansa Musa's pilgrimage. As evidence about Mali the map is thin; as evidence about the reach of information along trade routes it is superb, because it shows an accurate reputation arriving in a place with no direct contact at all.`
+              html: `A Catalan atlas produced for a European court in <span class="num">1375</span> shows a crowned African king seated on a throne in the western Sahara, holding a large gold nugget, with a caption naming him as the lord of the region's gold. The mapmakers had almost certainly never been to Mali. The information reached Mediterranean Europe through North African merchants and travelers, half a century after Mansa Musa's pilgrimage. As evidence about Mali the map is thin; as evidence about the reach of information along trade routes it is superb, because it shows an accurate reputation arriving in a place with no direct contact at all.`
             } }
           ]
         }
@@ -296,7 +296,7 @@ module.exports = {
       {
         category: 'Continuity and change',
         title: 'The trade did not die, it was undercut',
-        body: `Mali gave way to Songhai and the caravans kept running, but from the 1480s Portuguese ships began buying West African gold directly at coastal forts, so metal that had crossed the desert began leaving by sea and the merchants who took a margin on the desert leg lost it. That is the third time this unit tells the same story: the Silk Roads declined when maritime transport became cheaper and safer, the Indian Ocean's plural order ended when armed fleets arrived, and the Sahara was undercut by a coast. Routes are not closed by enemies nearly as often as they are abandoned for cheaper ones, and an answer that reaches for cost before conspiracy is usually the correct one.`
+        body: `Mali gave way to Songhai and the caravans kept running, but from the 1480s Portuguese ships began buying West African gold directly at coastal forts, so metal that had crossed the desert began leaving by sea and the merchants who took a margin on the desert leg lost it. That is the third time this unit tells the same story: the Silk Roads declined when maritime transport became cheaper and safer, the Indian Ocean's open, mostly unarmed trade was disrupted when armed Portuguese fleets arrived, and the Sahara was undercut by a coast. Routes are not closed by enemies nearly as often as they are abandoned for cheaper ones, and an answer that reaches for cost before conspiracy is usually the correct one.`
       }
     ]
   }

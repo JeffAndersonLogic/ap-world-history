@@ -439,14 +439,14 @@
       skillBuilder: skill(
         'Developments and Processes (Skill 1.B) and Causation',
         'Explain How the Sahara Became a Trade Route',
-        'Camels alone do not explain trans-Saharan trade, and neither does gold alone. A strong explanation shows how the tools for crossing the desert and the reasons for crossing it worked together.',
+        'Camels alone do not explain trans-Saharan trade, and neither does Mali alone. A strong explanation shows how better ways to cross the desert and a powerful state worked together to make trade grow.',
         [
-          { label: 'Explain the tools', text: 'Show how the camel saddle, caravans, desert guides, or oases made crossing the Sahara safer, more reliable, or able to carry more goods.' },
-          { label: 'Explain the reason', text: 'Show why gold, salt, or other goods made the dangerous trip worth it for merchants.' },
-          { label: 'Connect to a result', text: 'Explain one result of the bigger trade in West Africa, such as Mali\'s wealth, the growth of Timbuktu and Djenné, or the spread of Islam.' }
+          { label: 'Explain the transportation', text: 'Show how camel saddles, caravans, desert guides, or oases made crossing the Sahara safer, more reliable, or able to carry more goods.' },
+          { label: 'Explain the state', text: 'Show how Mali helped trade grow: by protecting trade towns and roads, taxing goods, or drawing more people into the network.' },
+          { label: 'Connect to the growth', text: 'Say how each example made trade easier or helped it reach farther, so more goods moved to more places.' }
         ],
-        'In 3 to 4 sentences, explain how better transportation and demand for goods together made trans-Saharan trade grow between about 1200 and 1450. Use at least two specific examples, say what problem or reason each one explains, and connect the growth of trade to one result in West Africa.',
-        ['Explains that both transportation and demand mattered, not just one.', 'Uses at least two accurate, specific examples.', 'Says what problem each tool solved or why each good was worth the trip.', 'Connects the growth of trade to one specific result in West Africa.']
+        'In 3 to 4 sentences, explain how improved transportation and the growth of powerful states helped trans-Saharan trade expand from about 1200 to 1450. Use at least two specific examples, such as camel saddles, caravans, or Mali. Explain how each example made trade easier or increased its reach.',
+        ['Explains both improved transportation and the role of a powerful state.', 'Uses at least two accurate, specific examples.', 'Explains how each example made trade easier or increased its reach.', 'Stays focused on why trade expanded between about 1200 and 1450.']
       ),
       evidenceLab: evidence(
         'Evidence Lab: Gold, Routes, and Mali\'s Power',
