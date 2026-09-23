@@ -127,8 +127,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Trans-Saharan trade routes',
           caption: 'Routes linked West African production zones to North Africa and the Mediterranean.',
-          url: '../assets/images/instructional-maps/topic-2-4.svg',
-          sourceUrl: '../assets/images/instructional-maps/topic-2-4.svg'
+          url: '../assets/images/topics/2-4/2.4 - Mali.png',
+          sourceUrl: '../assets/images/topics/2-4/2.4 - Mali.png'
         }
       },
       {
@@ -150,8 +150,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: 'Trans-Saharan Routes and West African States',
-    url: '../assets/images/instructional-maps/topic-2-4.svg',
-    sourceUrl: '../assets/images/instructional-maps/topic-2-4.svg',
+    url: '../assets/images/topics/2-4/2.4 - Mali.png',
+    sourceUrl: '../assets/images/topics/2-4/2.4 - Mali.png',
     caption: 'Trans-Saharan routes connected West Africa to North Africa and the Mediterranean through a network made commercially viable by camel transport, caravans, and oasis stopping points.',
     intro: 'Use the map to connect environment, transportation technology, trade expansion, and Mali\'s political power.',
     prompt: 'How did solving the transportation problem of the Sahara allow both trade and state power to expand?',
