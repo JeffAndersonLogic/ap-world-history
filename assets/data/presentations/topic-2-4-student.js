@@ -33,7 +33,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Topic 2.4 · The Question",
       "title": "How did trade across the Sahara grow?",
       "subtitle": "The desert never got any smaller. Hold that question: by the end of class you can answer it in one sentence.",
-      "position": "lower-left",
+      "position": "upper-left",
       "visual": {
         "url": "../assets/images/topics/2-4/2.4%20-%20Camel%20Caravan.jpg",
         "alt": "A line of camels and riders crossing high Saharan dunes",
@@ -163,15 +163,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "map",
+      "kind": "frame-question",
       "eyebrow": "The Motive · On the Map",
       "title": "Follow the salt south and the gold north.",
-      "visual": {
-        "url": "../assets/images/topics/2-4/2.4%20-%20Mali.png",
-        "alt": "Map of the Mali Empire and trans-Saharan routes, with salt moving south from Taghaza and gold moving north",
-        "credit": "Map · Mali Empire trade routes and goods"
-      },
-      "footer": "Every arrow is a price difference someone was willing to cross the desert for."
+      "subtitle": "Every arrow is a price difference someone was willing to cross the desert for.",
+      "template": {
+        "visual": {
+          "fit": "contain",
+          "url": "../assets/images/topics/2-4/2.4%20-%20Mali.png",
+          "alt": "Map of the Mali Empire and trans-Saharan routes, with salt moving south from Taghaza and gold moving north",
+          "credit": "Map · Mali Empire trade routes and goods"
+        }
+      }
     },
     {
       "kind": "source-quote",
@@ -414,16 +417,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "subtitle": "Explain both, with two pieces of evidence. Draft, work with Socrates, revise. If it is not finished in class, it is homework."
     },
     {
-      "kind": "map",
+      "kind": "frame-letterbox",
       "eyebrow": "Topic 2.4 · The Big Idea",
       "title": "The Sahara did not shrink.",
       "subtitle": "The system for crossing it got better, and a trade route became an empire's foundation.",
-      "visual": {
-        "url": "../assets/images/topics/2-4/2.4%20-%20Ghana%20Mali%20Songhay%20Map.jpg",
-        "alt": "Map of Africa showing the kingdom of Ghana and the Mali and Songhay empires, with trans-Saharan and Indian Ocean routes",
-        "credit": "Map · Ghana, Mali and Songhay, with trans-Saharan and maritime routes"
-      },
-      "footer": "Ghana, then Mali, then Songhay: the empires changed, and the routes stayed."
+      "template": {
+        "visual": {
+          "ai": true,
+          "url": "../assets/images/topics/2-4/2.4%20-%20Trans%20Saharan%20Trade%20Routes%20illustration.png",
+          "alt": "An illustrated caravan of camels crossing Saharan dunes past an oasis fortress, with a route map in the sky",
+          "position": "50% 96%"
+        }
+      }
     }
   ]
 };

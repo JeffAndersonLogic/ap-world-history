@@ -15,7 +15,8 @@
  * object. The catalog, with a real example of every kind, is
  * teacher/slide-templates.html, built from teacher/data/slide-template-examples.js.
  *
- * Images: a visual is { url, alt, ai, credit, position, cropBottom }.
+ * Images: a visual is { url, alt, ai, credit, position, cropBottom, fit }.
+ * fit:'contain' shows the whole picture, letterboxed, instead of filling the frame.
  * `ai: true` prints the house label, "Historical Reconstruction - AI
  * Generated", small, and nothing else, so no template can show an
  * AI-generated picture unlabeled or labeled some other way. `cropBottom`
@@ -67,7 +68,8 @@ function pic(v,opts){
   if(!v||!v.url)return `<div class="bht-ph"><span>${esc(o.placeholder||'Add an image')}</span></div>`;
   const crop=Math.max(0,Math.min(.3,num(v.cropBottom,0)));
   const pos=esc(v.position||o.position||'50% 50%');
-  const fit=o.fit==='contain'?'contain':'cover';
+  // A visual may ask to be shown whole (a map, a document) in any frame.
+  const fit=o.fit==='contain'||v.fit==='contain'?'contain':'cover';
   const h=crop?` height:${(100/(1-crop)).toFixed(2)}%;`:'';
   const p=crop?pos.replace(/\S+$/,'0%'):pos;
   return `<img class="bht-img" src="${esc(v.url)}" alt="${esc(v.alt||'')}" loading="eager" style="object-fit:${fit}; object-position:${p};${h}">`;

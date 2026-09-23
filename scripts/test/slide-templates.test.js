@@ -101,6 +101,9 @@ const credited = T.render({ kind: 'frame-subtitle', template: { line: 'x', visua
 check('an AI visual shows the house label, never its own credit', aiLabelled(credited));
 const source = T.render({ kind: 'frame-subtitle', template: { line: 'x', visual: { url: 'a.jpg', credit: 'Map · BeHistorical visual' } } });
 check('a real source keeps its own credit and no AI label', source.includes('Map · BeHistorical visual') && !source.includes(LABEL));
+const fitOf = v => (T.render({ kind: 'frame-question', title: 't', template: { visual: v } }).match(/object-fit:(\w+)/) || [])[1];
+check('a visual that asks to be shown whole is not cropped', fitOf({ url: 'm.png', fit: 'contain' }) === 'contain');
+check('control: a visual that does not ask is cropped to fill', fitOf({ url: 'm.png' }) === 'cover');
 
 /* Wiring, for every deck. */
 const { DECKS } = require('../build-teaching-os-student-decks.js');
