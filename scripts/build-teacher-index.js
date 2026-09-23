@@ -27,13 +27,13 @@ const CHECK = process.argv.includes('--check');
 
 const TOOLS = [
   { kind: 'lesson', unit: '1', key: '1.7', title: 'Comparison in the Period c. 1200 to c. 1450', href: 'command-center-topic-1-7.html' },
-  { kind: 'lesson', unit: '2', key: '2.1', title: 'The Silk Roads', href: 'topic-2-1-os.html' },
+  { kind: 'lesson', unit: '2', key: '2.1', title: 'The Silk Roads', href: 'topic-2-1-os.html', aliases: ['command-center-topic-2-1.html'] },
   { kind: 'lesson', unit: '2', key: '2.2', title: 'The Mongol Empire', href: 'topic-2-2-os.html' },
   { kind: 'lesson', unit: '2', key: '2.3', title: 'Exchange in the Indian Ocean', href: 'topic-2-3-os.html' },
   { kind: 'lesson', unit: '2', key: '2.4', title: 'Trans-Saharan Trade Routes', href: 'topic-2-4-os.html' },
-  { kind: 'lesson', unit: '2', key: '2.5', title: 'Cultural Consequences of Connectivity', href: 'topic-2-5-os.html' },
-  { kind: 'lesson', unit: '2', key: '2.6', title: 'Environmental Consequences of Connectivity', href: 'topic-2-6-os.html' },
-  { kind: 'lesson', unit: '2', key: '2.7', title: 'Comparison of Economic Exchange', href: 'topic-2-7-os.html' },
+  { kind: 'lesson', unit: '2', key: '2.5', title: 'Cultural Consequences of Connectivity', href: 'topic-2-5-os.html', aliases: ['command-center-topic-2-5.html'] },
+  { kind: 'lesson', unit: '2', key: '2.6', title: 'Environmental Consequences of Connectivity', href: 'topic-2-6-os.html', aliases: ['command-center-topic-2-6.html'] },
+  { kind: 'lesson', unit: '2', key: '2.7', title: 'Comparison of Economic Exchange', href: 'topic-2-7-os.html', aliases: ['command-center-topic-2-7.html'] },
   { kind: 'primary', label: 'Skills Lens', desc: 'Analyze Canvas submissions for completion, response quality, and AP skill trends across the year.', href: 'skills-lens.html' },
   { kind: 'authoring', label: 'Slide Templates', desc: 'Reference every Teaching OS slide template with real Unit 2 examples and copy-ready slide data.', href: 'slide-templates.html' },
   { kind: 'legacy', label: 'Run of Show', desc: 'Standalone pacing pages for Topics 1.4–1.6, before those lessons move into the integrated Teaching OS.', href: ROS_INDEX_OUT },
