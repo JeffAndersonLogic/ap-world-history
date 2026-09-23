@@ -7,10 +7,11 @@
  *   node scripts/build-teacher-index.js            write teacher/index.html
  *   node scripts/build-teacher-index.js --check    fail on drift, write nothing
  *
- * TOOLS and INTERACTIVE_TOPICS are declared editorial lists, the same shape
- * as VOLUMES in build-ebook.js. The Today panel reads the schedule live in
- * the browser and prefers an integrated Interactive Lesson when a topic has
- * one; otherwise it falls back to that topic's Run of Show when available.
+ * TOOLS is the one declared registry for the teacher landing page. Lesson
+ * entries drive both the visible Teaching OS library and the Today router, so
+ * those two surfaces cannot drift apart. The Today panel reads the schedule
+ * live in the browser and falls back to a standalone Run of Show only when a
+ * topic does not yet have an integrated Teaching OS.
  */
 'use strict';
 
@@ -25,30 +26,25 @@ const ROOT = path.join(__dirname, '..');
 const CHECK = process.argv.includes('--check');
 
 const TOOLS = [
-  { label: 'Run of Show', desc: 'A minute-by-minute pacing cockpit for a class period: retrieval prompts, teacher moves, a class timer, and a Must-Haves reference.', href: ROS_INDEX_OUT },
-  { label: 'Topic 1.7 Interactive Lesson', desc: 'The Unit 1 synthesis pilot: Teacher Command Center + integrated Presentation Mode for comparison and argumentation.', href: 'command-center-topic-1-7.html' },
-  { label: 'Topic 2.1 Interactive Lesson', desc: 'The Silk Roads: Teacher Command Center + integrated Presentation Mode for causation and economic systems.', href: 'command-center-topic-2-1.html' },
-  { label: 'Topic 2.2 Teaching OS', desc: 'The Mongol Empire: cinematic projection, run of show, teacher intelligence, AP reasoning, and iPad control in one surface.', href: 'topic-2-2-os.html' },
-  { label: 'Topic 2.3 Teaching OS', desc: 'Indian Ocean exchange: monsoon systems, maritime technology, port cities, diasporic communities, contextualization, and iPad control in one surface.', href: 'topic-2-3-os.html' },
-  { label: 'Topic 2.4 Teaching OS', desc: 'Trans-Saharan trade: camel technology, caravan organization, expanded exchange, Mali, causation, and iPad control in one surface.', href: 'topic-2-4-os.html' },
-  { label: 'Topic 2.5 Interactive Lesson', desc: 'Cultural consequences of connectivity: diffusion, changing urban fortunes, travel accounts, AP reasoning, and iPad control in one surface.', href: 'command-center-topic-2-5.html' },
-  { label: 'Topic 2.6 Interactive Lesson', desc: 'Environmental consequences of connectivity: biological corridors, crop diffusion, pathogen diffusion, AP causation, and iPad control in one surface.', href: 'command-center-topic-2-6.html' },
-  { label: 'Topic 2.7 Interactive Lesson', desc: 'Comparison of economic exchange: one shared problem, three toolkits, the network matrix, AP comparison, an Eras 2 retrieval review, and iPad control in one surface.', href: 'command-center-topic-2-7.html' },
-  { label: 'Slide Templates', desc: 'Every Teaching OS slide template with a real Unit 2 example and the slide data to copy: relationships, timelines, BeReady openers, and frames for AI-generated images.', href: 'slide-templates.html' },
-  { label: 'Skills Lens', desc: 'Drop a Canvas submissions zip to see completion, response quality, and AP skill trends across the year.', href: 'skills-lens.html' },
+  { kind: 'lesson', unit: '1', key: '1.7', title: 'Comparison in the Period c. 1200 to c. 1450', href: 'command-center-topic-1-7.html' },
+  { kind: 'lesson', unit: '2', key: '2.1', title: 'The Silk Roads', href: 'topic-2-1-os.html' },
+  { kind: 'lesson', unit: '2', key: '2.2', title: 'The Mongol Empire', href: 'topic-2-2-os.html' },
+  { kind: 'lesson', unit: '2', key: '2.3', title: 'Exchange in the Indian Ocean', href: 'topic-2-3-os.html' },
+  { kind: 'lesson', unit: '2', key: '2.4', title: 'Trans-Saharan Trade Routes', href: 'topic-2-4-os.html' },
+  { kind: 'lesson', unit: '2', key: '2.5', title: 'Cultural Consequences of Connectivity', href: 'topic-2-5-os.html' },
+  { kind: 'lesson', unit: '2', key: '2.6', title: 'Environmental Consequences of Connectivity', href: 'topic-2-6-os.html' },
+  { kind: 'lesson', unit: '2', key: '2.7', title: 'Comparison of Economic Exchange', href: 'topic-2-7-os.html' },
+  { kind: 'primary', label: 'Skills Lens', desc: 'Analyze Canvas submissions for completion, response quality, and AP skill trends across the year.', href: 'skills-lens.html' },
+  { kind: 'authoring', label: 'Slide Templates', desc: 'Reference every Teaching OS slide template with real Unit 2 examples and copy-ready slide data.', href: 'slide-templates.html' },
+  { kind: 'legacy', label: 'Run of Show', desc: 'Standalone pacing pages for Topics 1.4–1.6, before those lessons move into the integrated Teaching OS.', href: ROS_INDEX_OUT },
 ];
 
-/* Every integrated teacher surface that the Today panel may route to. */
-const INTERACTIVE_TOPICS = [
-  { key: '1.7', out: 'command-center-topic-1-7.html' },
-  { key: '2.1', out: 'command-center-topic-2-1.html' },
-  { key: '2.2', out: 'topic-2-2-os.html' },
-  { key: '2.3', out: 'topic-2-3-os.html' },
-  { key: '2.4', out: 'topic-2-4-os.html' },
-  { key: '2.5', out: 'command-center-topic-2-5.html' },
-  { key: '2.6', out: 'command-center-topic-2-6.html' },
-  { key: '2.7', out: 'command-center-topic-2-7.html' },
-];
+/* The Today router is derived from the same lesson registry the page renders.
+   One registry means a lesson cannot appear in the library but disappear from
+   Today, or vice versa. */
+const INTERACTIVE_TOPICS = TOOLS
+  .filter(tool => tool.kind === 'lesson')
+  .map(({ key, href }) => ({ key, out: href }));
 
 module.exports = { TOOLS, INTERACTIVE_TOPICS };
 if (require.main !== module) return;
