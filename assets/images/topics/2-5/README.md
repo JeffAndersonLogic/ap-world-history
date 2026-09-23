@@ -33,4 +33,4 @@ The Topic 2.5 Teaching OS is functional now with stable repo-local and Wikimedia
 - Avoid generic stock imagery and decorative portraits.
 - Keep text-safe negative space where possible; the Teaching OS can then place copy without hiding the historical evidence.
 - Repo-local assets are preferred for production stability.
-- If an AI reconstruction is ever used, label it clearly as a historical reconstruction / AI generated.
+- If an AI reconstruction is ever used, label it `Historical Reconstruction - AI Generated`, as `docs/PRESENTATION-AUTHORING.md` requires.

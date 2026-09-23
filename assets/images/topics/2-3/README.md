@@ -16,4 +16,4 @@ Where each picture came from, so a credit or a caption never has to guess.
 | `2.3 - Swahili Merchants.jpg` | Unknown, no generator mark | BeInTheRoom slide, concept card |
 | `2.3 - Indian Ocean Trade Org Chart.png` | Unknown, no generator mark | system slide |
 
-**AI-generated pictures are labeled `Illustration (AI-generated)` wherever a student sees them, and never appear in the Evidence Lab.** See "AI-generated images" in `docs/PRESENTATION-AUTHORING.md`.
+**AI-generated pictures are labeled `Historical Reconstruction - AI Generated` wherever a student sees them, and never appear in the Evidence Lab.** See "AI-generated images" in `docs/PRESENTATION-AUTHORING.md`.

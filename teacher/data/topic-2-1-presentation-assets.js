@@ -27,7 +27,7 @@ const caravanserai=byTitle('Caravanserai made distance manageable');
 if(caravanserai){
   caravanserai.kind='hero';
   caravanserai.position='right';
-  caravanserai.visual=visual('2.1 - Caravanserai Reconstruction.png','Historical reconstruction of a caravanserai serving long-distance merchants','HISTORICAL RECONSTRUCTION — AI GENERATED');
+  caravanserai.visual=visual('2.1 - Caravanserai Reconstruction.png','Historical reconstruction of a caravanserai serving long-distance merchants','Historical Reconstruction - AI Generated');
   caravanserai.footer='Infrastructure reduced the cost and risk of distance.';
   caravanserai.notes=caravanserai.notes||{};
   caravanserai.notes.land=[

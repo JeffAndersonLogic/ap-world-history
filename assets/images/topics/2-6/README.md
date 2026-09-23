@@ -33,4 +33,4 @@ The Topic 2.6 Teaching OS is built from the ninth-grade story spine: trade accid
 - Do not use generic stock plague imagery.
 - Keep text-safe negative space where possible.
 - Repo-local assets are preferred for production stability.
-- If an AI reconstruction is ever used, label it clearly as historical reconstruction / AI generated.
+- If an AI reconstruction is ever used, label it `Historical Reconstruction - AI Generated`, as `docs/PRESENTATION-AUTHORING.md` requires.

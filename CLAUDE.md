@@ -881,7 +881,7 @@ array, so for twelve topics the Evidence Lab drew its task and zero evidence
 cards; the report is what surfaced that, and both units are now converted. If a
 topic's evidence looks good in the data file and thin on the page, this is why.
 
-**An AI-generated picture is never Evidence Lab evidence.** It can set a scene on a slide or a concept card when it is labeled `Illustration (AI-generated)`, but asking a student to "notice the ship design" on an image a generator drew teaches them to treat an invention as a source. Topic 2.3 shipped that on 2026-09-21, replacing a Borobudur ship relief and a Song celadon bowl; both are back. See "AI-generated images" in `docs/PRESENTATION-AUTHORING.md`.
+**An AI-generated picture is never Evidence Lab evidence.** It can set a scene on a slide or a concept card when it is labeled `Historical Reconstruction - AI Generated`, but asking a student to "notice the ship design" on an image a generator drew teaches them to treat an invention as a source. Topic 2.3 shipped that on 2026-09-21, replacing a Borobudur ship relief and a Song celadon bowl; both are back. See "AI-generated images" in `docs/PRESENTATION-AUTHORING.md`.
 
 **Never write a Commons filename straight into a lesson.** A filename from memory
 is indistinguishable from a correct one until something fetches it: the name is

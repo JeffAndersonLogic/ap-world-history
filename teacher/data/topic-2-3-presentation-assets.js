@@ -25,19 +25,19 @@ const BH23 = {
 };
 // AI-generated per their C2PA metadata. Everything else in this folder is a
 // map or diagram with no generator mark.
-const AI='Illustration (AI-generated) · ';
+const AI='Historical Reconstruction - AI Generated';
 
 const VISUALS={
-  'hook':{url:BH23.dhow,alt:'Illustration of a dhow-style sailing ship crossing the Indian Ocean',credit:AI+'Dhow sailing ship'},
+  'hook':{url:BH23.dhow,alt:'Illustration of a dhow-style sailing ship crossing the Indian Ocean',credit:AI},
   'basin':{url:BH23.tradeMap,alt:'Detailed Indian Ocean trade map showing major routes and connected regions',credit:'Simeon Netchev · World History Encyclopedia · Indian Ocean trade map'},
   'monsoon-map':{url:BH23.monsoonMap,alt:'Monsoon map showing seasonal wind patterns across the Indian Ocean',credit:'BeHistorical visual · Monsoon wind map',fit:'cover',position:'50% 100%'},
-  'navigation':{url:BH23.maritimeTech,alt:'Illustration of a compass and astrolabe representing maritime navigation technology',credit:AI+'Compass and astrolabe'},
-  'markets':{url:BH23.malayMarket,alt:'Illustration of a Malay market scene representing a cosmopolitan Indian Ocean port economy',credit:AI+'Malay market',fit:'cover',position:'50% 100%'},
+  'navigation':{url:BH23.maritimeTech,alt:'Illustration of a compass and astrolabe representing maritime navigation technology',credit:AI},
+  'markets':{url:BH23.malayMarket,alt:'Illustration of a Malay market scene representing a cosmopolitan Indian Ocean port economy',credit:AI,fit:'cover',position:'50% 100%'},
   'system-view':{url:BH23.orgChart,alt:'Indian Ocean trade organization chart connecting technologies, routes, states, and communities',credit:'BeHistorical visual · Indian Ocean trade system'},
-  'diaspora':{url:BH23.diaspora,alt:'Illustration of diasporic merchant communities in an Indian Ocean port',credit:AI+'Diasporic communities',fit:'cover',position:'50% 100%'},
-  'zheng-he':{url:BH23.zhengHe,alt:'Illustration of the Zheng He fleet sailing through the Indian Ocean',credit:AI+'Zheng He fleet',fit:'contain',position:'50% 100%'},
+  'diaspora':{url:BH23.diaspora,alt:'Illustration of diasporic merchant communities in an Indian Ocean port',credit:AI,fit:'cover',position:'50% 100%'},
+  'zheng-he':{url:BH23.zhengHe,alt:'Illustration of the Zheng He fleet sailing through the Indian Ocean',credit:AI,fit:'contain',position:'50% 100%'},
   'beintheroom':{url:BH23.swahili,alt:'Swahili merchants in an Indian Ocean port city',credit:'BeHistorical visual · Swahili merchants',fit:'cover',position:'50% 72%'},
-  'landing':{url:BH23.trade,alt:'Illustration of an Indian Ocean trade scene with ships and exchange across the maritime network',credit:AI+'Indian Ocean trade'}
+  'landing':{url:BH23.trade,alt:'Illustration of an Indian Ocean trade scene with ships and exchange across the maritime network',credit:AI}
 };
 for(const slide of T.slides){
   if(VISUALS[slide.id])slide.visual=VISUALS[slide.id];

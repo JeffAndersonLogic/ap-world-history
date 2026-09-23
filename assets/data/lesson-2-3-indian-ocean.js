@@ -182,7 +182,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: 'Diasporic communities',
-          caption: 'Diasporic communities made Indian Ocean ports centers of sustained cross-cultural interaction. Illustration (AI-generated).',
+          caption: 'Diasporic communities made Indian Ocean ports centers of sustained cross-cultural interaction. Historical Reconstruction - AI Generated.',
           url: BH23_STUDENT.diaspora,
           sourceUrl: BH23_STUDENT.diaspora
         }
@@ -196,7 +196,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: 'Zheng He fleet',
-          caption: 'Zheng He\'s voyages operated within an already mature Indian Ocean exchange system. Illustration (AI-generated).',
+          caption: 'Zheng He\'s voyages operated within an already mature Indian Ocean exchange system. Historical Reconstruction - AI Generated.',
           url: BH23_STUDENT.zhengHe,
           sourceUrl: BH23_STUDENT.zhengHe
         }

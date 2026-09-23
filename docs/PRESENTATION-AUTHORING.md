@@ -236,7 +236,9 @@ Default visual sourcing order:
 
 ### AI-generated images
 
-An AI-generated illustration may be used on a projected slide or a concept card to set a scene, **only when it is labeled on screen** as `Illustration (AI-generated)` in its credit or caption. It is never presented as a historical source, and it never appears in the Evidence Lab, whose whole method is observing a real object. Check an image's C2PA metadata when its origin is unclear; Google and other generators mark their output.
+An AI-generated illustration may be used on a projected slide or a concept card to set a scene, **only when it is labeled on screen** as `Historical Reconstruction - AI Generated` in its credit or caption. The label is exactly that text, nothing added, and it stays small: one quiet caption in the corner of the image, never a second badge on top of it. The description of what the picture shows belongs in its alt text, not in the label. It is never presented as a historical source, and it never appears in the Evidence Lab, whose whole method is observing a real object. Check an image's C2PA metadata when its origin is unclear; Google and other generators mark their output.
+
+The wording was settled on 2026-09-23, replacing three variants that had grown up across Topics 2.1 to 2.3 (`HISTORICAL RECONSTRUCTION — AI GENERATED`, `Historical reconstruction · AI generated` and `Illustration (AI-generated)`). If an image has a label printed into the picture itself, prefer a clean copy of the file, because the on-screen label then appears twice.
 
 Topic 2.3 is the case: its slide illustrations are AI-generated and labeled, and its Evidence Lab uses the Borobudur ship relief and a Song celadon bowl instead.
 

@@ -39,7 +39,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "visual": {
         "url": "../assets/images/topics/2-3/2.3%20-%20Dhow%20Ship.jpeg",
         "alt": "Illustration of a dhow-style sailing ship crossing the Indian Ocean",
-        "credit": "Illustration (AI-generated) · Dhow sailing ship"
+        "credit": "Historical Reconstruction - AI Generated"
       }
     },
     {
@@ -186,7 +186,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "visual": {
         "url": "../assets/images/topics/2-3/2.3%20-%20Malay%20market.jpg",
         "alt": "Illustration of a Malay market scene representing a cosmopolitan Indian Ocean port economy",
-        "credit": "Illustration (AI-generated) · Malay market"
+        "credit": "Historical Reconstruction - AI Generated"
       },
       "footer": "Markets connect goods, people, and information."
     },
@@ -235,7 +235,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "visual": {
         "url": "../assets/images/topics/2-3/2.3%20-%20Diasporic%20Communities.jpg",
         "alt": "Illustration of diasporic merchant communities in an Indian Ocean port",
-        "credit": "Illustration (AI-generated) · Diasporic communities"
+        "credit": "Historical Reconstruction - AI Generated"
       },
       "footer": "Diaspora = settle + connect + adapt + blend."
     },
@@ -247,7 +247,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "visual": {
         "url": "../assets/images/topics/2-3/2.3%20-%20Zheng%20He%20Fleet.jpg",
         "alt": "Illustration of the Zheng He fleet sailing through the Indian Ocean",
-        "credit": "Illustration (AI-generated) · Zheng He fleet"
+        "credit": "Historical Reconstruction - AI Generated"
       },
       "footer": "State power moved through an already mature maritime network."
     },
@@ -308,7 +308,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "visual": {
         "url": "../assets/images/topics/2-3/2.3%20-%20Indian%20Ocean%20Trade.jpg",
         "alt": "Illustration of an Indian Ocean trade scene with ships and exchange across the maritime network",
-        "credit": "Illustration (AI-generated) · Indian Ocean trade"
+        "credit": "Historical Reconstruction - AI Generated"
       }
     }
   ]

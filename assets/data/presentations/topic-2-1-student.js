@@ -113,7 +113,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "visual": {
         "url": "../assets/images/topics/2-1/2.1%20-%20Caravanserai%20Reconstruction.png",
         "alt": "Historical reconstruction of a caravanserai serving long-distance merchants",
-        "credit": "HISTORICAL RECONSTRUCTION — AI GENERATED"
+        "credit": "Historical Reconstruction - AI Generated"
       },
       "footer": "Infrastructure reduced the cost and risk of distance."
     },
