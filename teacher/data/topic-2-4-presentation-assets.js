@@ -7,6 +7,9 @@
  * carries the house AI label, and the slide's notes name its two faults (garbled
  * place names, a wheeled cart) as a check for the room, so it is never read as a
  * source. The Ghana, Mali and Songhay map it replaced is unused for now.
+ * On 2026-09-24 Jeff moved the Mali routes-and-goods map onto the Map &
+ * Geography slide, replacing the BeHistorical instructional map there, and
+ * removed the separate goods-map slide as a repeat of the gold-and-salt slide.
  * The folder's Timbuktu photo is 300x200, too small to project. The Djinguereber Mosque photo this deck used returned
  * 404 on Commons (nightly, 2026-09-20) and was replaced by the Djenné photo the
  * lesson's own Evidence Lab already uses.
@@ -19,7 +22,6 @@
 'use strict';
 const T=window.BEHISTORICAL_TEACHING;
 if(!T||!Array.isArray(T.slides))return;
-const MAP='../assets/images/instructional-maps/topic-2-4.svg';
 const LOCAL='../assets/images/topics/2-4/';
 const local=name=>LOCAL+encodeURIComponent(name);
 const DESERT={url:local('2.4 - Camel Caravan.jpg'),alt:'A line of camels and riders crossing high Saharan dunes',credit:'Modern photograph · the Sahara',position:'50% 60%'};
@@ -31,11 +33,10 @@ const HAJJ={url:local('2.4 - Mansa Musa Hajj.jpg'),alt:'A modern painting of Man
 const ATLAS={url:'https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',alt:'Mansa Musa holding gold on the Catalan Atlas',sourceUrl:'https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',credit:'Catalan Atlas, 1375 · Bibliothèque nationale de France · public domain'};
 const VISUALS={
   'hook':DESERT,
-  'basin':{url:MAP,alt:'Instructional map of trans-Saharan routes and West African states',credit:'BeHistorical instructional map · Topic 2.4'},
+  'basin':GOODS_MAP,
   'trade-cities':{url:'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Djenn%C3%A9_2.jpg',alt:'The Great Mosque of Djenné, a 1907 building on the site of earlier mosques',sourceUrl:'https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Djenn%C3%A9_2.jpg',credit:'Great Mosque of Djenné · present building 1907, on the site of earlier mosques · Wikimedia Commons'}
 };
 const TEMPLATE_VISUALS={
-  'goods-map':{visual:GOODS_MAP},
   'taghaza':{visual:SALT},
   'landing':{visual:CARAVAN_AI},
   'mansa-musa':{scene:HAJJ,evidence:{url:ATLAS.url,alt:ATLAS.alt,credit:'Catalan Atlas, 1375 · BnF · public domain'}}
