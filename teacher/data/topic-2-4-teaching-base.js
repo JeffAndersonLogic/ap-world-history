@@ -32,7 +32,7 @@ window.BEHISTORICAL_TEACHING = {
       'Keep the Sahara visible as a real environmental barrier throughout the lesson. It never gets smaller.',
       'Return to the spine at the question, the take-one-away slide, the retelling slide and the landing.',
       'Make the distinction between merchant activity and state facilitation explicit.',
-      'Name the modules due today: Map, First & 10, Skill Builder, Checkpoint 1 and Checkpoint 2. Checkpoint 2 and BeInTheRoom have no slide in this deck since 2026-09-24; BeInTheRoom is not on the Canvas list.'
+      'Name the modules due today: Map, First & 10, Skill Builder, Checkpoint 1 and Checkpoint 2. Checkpoint 2 has no slide in this deck since 2026-09-24: students start it on the lesson page in the last ten minutes, and what is not finished is homework. BeInTheRoom has no slide either and is not on the Canvas list.'
     ],
     could: [
       'Use the full Ibn Battuta passage in Module 08 as homework; the salt-price excerpt on the projector comes from it.',
@@ -54,7 +54,8 @@ window.BEHISTORICAL_TEACHING = {
     {id:'mali',label:'Mali + Mansa Musa',range:'55–68',slide:13},
     {id:'cities',label:'Djenné + Timbuktu',range:'68–75',slide:17},
     {id:'retell',label:'Retell',range:'75–79',slide:19},
-    {id:'close',label:'Close + Bridge',range:'79–80',slide:20}
+    {id:'close',label:'Close + Bridge',range:'79–80',slide:20},
+    {id:'check2',label:'Checkpoint 2 Work Time',range:'80–90',slide:20}
   ],
   quickLaunch: [
     {label:'Student Lesson 2.4',url:'../unit-2/lesson-2-4-trans-saharan.html'},
@@ -170,7 +171,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       id:'landing',phase:'close',kind:'frame-letterbox',eyebrow:'Topic 2.4 · The Big Idea',title:'The Sahara did not shrink.',subtitle:'The system for crossing it got better, and a trade route became an empire\'s foundation.',template:{},
-      notes:{minutes:1,land:['Land the single idea: the environment remains difficult; human systems change what is possible inside it.','The picture is an AI reconstruction, labeled on the slide, and it gets the mood right and some details wrong: its city names are invented and misspelled, and it puts a wheeled cart in the caravan. If there is time, ask what is wrong with the cart. Camels replaced wheels on this route; that is the whole point of the lesson.','Ghana came before Mali and Songhay after it. The states rose and fell; the trade that paid for them kept going.','Bridge forward to Topic 2.5: once networks intensify, ideas, technologies, religions and people move with the goods. Islam crossed the Sahara on these caravans.'],story:'Trade expands when societies solve enough of the transportation problem for demand and political organization to do the rest.',ask:'What is the one sentence you need to remember tomorrow?',listenFor:'Tools and demand → more trade → Mali grows by protecting and taxing it.',ap:'Bridge to cultural consequences of connectivity.'}
+      notes:{minutes:1,land:['Land the single idea: the environment remains difficult; human systems change what is possible inside it.','The picture is an AI reconstruction, labeled on the slide, and it gets the mood right and some details wrong: its city names are invented and misspelled, and it puts a wheeled cart in the caravan. If there is time, ask what is wrong with the cart. Camels replaced wheels on this route; that is the whole point of the lesson.','Ghana came before Mali and Songhay after it. The states rose and fell; the trade that paid for them kept going.','Bridge forward to Topic 2.5: once networks intensify, ideas, technologies, religions and people move with the goods. Islam crossed the Sahara on these caravans.','Then send students to Checkpoint 2 on the lesson page for the rest of the block: draft, work with Socrates, revise. Whatever is not finished is homework, and the Checkpoint 2 card already tells them so.','The prompt asks how Mali both benefited from and facilitated trans-Saharan trade and communication, with at least two specific pieces of evidence. Circulate for both halves: what Mali gained (revenue, wealth, fame) and what Mali gave the network (protection, markets, connected cities).'],story:'Trade expands when societies solve enough of the transportation problem for demand and political organization to do the rest.',ask:'What is the one sentence you need to remember tomorrow?',listenFor:'Tools and demand → more trade → Mali grows by protecting and taxing it.',ap:'Bridge to cultural consequences of connectivity.'}
     }
   ]
 };
