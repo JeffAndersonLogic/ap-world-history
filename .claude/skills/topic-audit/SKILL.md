@@ -31,23 +31,23 @@ audit.
 
 ```bash
 node -e "
-const vm=require('vm'),fs=require('fs'),F=require('./scripts/lib/teaching-freeze');
+const vm=require('vm'),fs=require('fs');
 const c={window:{}};vm.createContext(c);vm.runInContext(fs.readFileSync('assets/data/announcements-schedule.js','utf8'),c);
-const w=F.freezeWindows(c.window.BEHISTORICAL_SCHEDULE);const today=process.env.ON||F.schoolDate(new Date());
-for(const t of process.argv.slice(1)){const x=w[t];console.log(t+': '+(x?('Green '+x.first+', Silver '+x.last+(today>=x.first&&today<=x.last?'  FROZEN on '+today:'')):'not on the schedule'));}
+const today=process.env.ON||new Intl.DateTimeFormat('en-CA',{timeZone:'America/Indiana/Indianapolis'}).format(new Date());
+const w={};for(const d of c.window.BEHISTORICAL_SCHEDULE.days||[]){if(!d.topic||!d.date)continue;const x=w[d.topic]||(w[d.topic]={first:d.date,last:d.date});if(d.date<x.first)x.first=d.date;if(d.date>x.last)x.last=d.date;}
+for(const t of process.argv.slice(1)){const x=w[t];console.log(t+': '+(x?('Green '+x.first+', Silver '+x.last+(today>=x.first&&today<=x.last?'  MID-TEACH on '+today:'')):'not on the schedule'));}
 " 2.6 2.7
 ```
 
 It prints, for example, `2.6: Green 2026-09-30, Silver 2026-10-01`, and adds
-`FROZEN on <date>` when today falls inside that window. Dates are the school's, in
+`MID-TEACH on <date>` when today falls between those two days. Dates are the school's, in
 Indiana time. Set `ON=2026-09-24` in front of the command to ask about another day.
 
 Say the dates in your first line to Jeff: "2.6 is taught Green 9/30, Silver 10/1."
 
-- **Frozen today** (between its Green day and its Silver day, inclusive): switch to
-  `report` mode automatically. List findings as notes for Jeff. Only a broken lesson
-  (lost work, a dead button or picture, a factual error) can ship during a freeze, and
-  only after Jeff says "ship this fix". Remind him once; if he says go, do it.
+- **Mid-teach** (between its Green day and its Silver day, inclusive): audit and fix as
+  normal, but say in the report that Green was already taught the old version, so Jeff
+  can decide whether Green needs to hear about a correction.
 - **Taught in the next few days:** audit it now, this is exactly the window it is for.
 - **Already taught to both rooms:** fine to audit; fixes ship before it is taught again.
 
@@ -55,9 +55,9 @@ Say the dates in your first line to Jeff: "2.6 is taught Green 9/30, Silver 10/1
 
 ```bash
 node -e "
-const vm=require('vm'),fs=require('fs'),F=require('./scripts/lib/teaching-freeze');
+const vm=require('vm'),fs=require('fs');
 const c={window:{}};vm.createContext(c);vm.runInContext(fs.readFileSync('assets/data/announcements-schedule.js','utf8'),c);
-const today=process.env.ON||F.schoolDate(new Date());const end=new Date(today+'T12:00:00Z');end.setUTCDate(end.getUTCDate()+7);const last=end.toISOString().slice(0,10);
+const today=process.env.ON||new Intl.DateTimeFormat('en-CA',{timeZone:'America/Indiana/Indianapolis'}).format(new Date());const end=new Date(today+'T12:00:00Z');end.setUTCDate(end.getUTCDate()+7);const last=end.toISOString().slice(0,10);
 for(const d of c.window.BEHISTORICAL_SCHEDULE.days)if(d.topic&&d.date>=today&&d.date<=last)console.log(d.date,d.cohort,d.topic,(d.modules||[]).join(' '));
 "
 ```
@@ -189,7 +189,7 @@ lesson's own warnings against the myth.
 
 ## Step 5: What to fix, and what to leave for Jeff
 
-**Fix directly** (unless in `report` mode or frozen): jargon rewrites that keep the same
+**Fix directly** (unless in `report` mode): jargon rewrites that keep the same
 demand, prompts that name cards not on the page, clear factual errors, mislabeled
 pictures, dates.
 
@@ -217,7 +217,6 @@ node scripts/build-announcements.js && node scripts/build-canvas-events.js   # t
 
 ```bash
 npm test
-node scripts/check-teaching-freeze.js --strict
 ```
 
 If you touched a slide, also run `npm run test:browser` (needs `npm i playwright-core`).
@@ -227,7 +226,7 @@ A SKIP is not a pass.
 
 **Report to Jeff in plain language**, grouped by module, in this order:
 
-1. The dates it is taught, and whether it is frozen.
+1. The dates it is taught, and whether Green has already had it.
 2. What was fixed, one line each, saying what was wrong and what it says now.
 3. What needs his decision, each with a recommendation.
 4. Report hits reviewed and left alone, with the reason.

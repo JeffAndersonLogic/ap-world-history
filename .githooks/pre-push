@@ -26,22 +26,7 @@ if ! command -v node >/dev/null 2>&1; then
   exit 0
 fi
 
-# A push to main is the moment a change reaches students, so the teaching
-# freeze is checked here as well as in CI: a branch that went green yesterday
-# can be fast-forwarded onto main today without CI running again. Pushes to any
-# other branch are never blocked by the freeze; drafting stays allowed.
 root="$(git rev-parse --show-toplevel)"
-zero="0000000000000000000000000000000000000000"
-while read -r local_ref local_sha remote_ref remote_sha; do
-  [ "$remote_ref" = "refs/heads/main" ] || continue
-  [ "$local_sha" = "$zero" ] && continue
-  [ "$remote_sha" = "$zero" ] && continue
-  if ! node "$root/scripts/check-teaching-freeze.js" --base "$remote_sha" --head "$local_sha" --strict; then
-    echo "" >&2
-    echo "pre-push: blocked by the teaching freeze, push aborted." >&2
-    exit 1
-  fi
-done
 
 echo "pre-push: running offline checks..."
 

@@ -88,20 +88,6 @@ gh run watch <run-id>
 Both must show success on the commit SHA you just pushed, not an older commit on the
 same branch.
 
-## Step 3.5: Check the teaching freeze, right before the fast-forward
-
-```bash
-git fetch origin main
-node scripts/check-teaching-freeze.js --base origin/main --head <branch-name> --strict
-```
-
-A topic being taught is frozen from Green's day through Silver's (see "The teaching
-freeze" in CLAUDE.md). Run this now even though CI ran it on push: CI's green binds to
-the commit, not the day, so a branch that passed yesterday can touch a topic that froze
-this morning. Exit 1 means stop and tell Jeff which topic and files. Only if Jeff has
-said "ship this fix" for a broken lesson, add a commit whose message carries the line
-`Ship-this-fix: <what was broken>`, wait for CI on it, and run the check again.
-
 ## Step 4: Fast-forward main to that commit
 
 Required checks bind to the commit SHA, not the branch, so once both are green the

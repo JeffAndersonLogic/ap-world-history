@@ -34,52 +34,15 @@ A presentation is not complete because a file or commit exists. Follow the autho
   branch-then-fast-forward flow above is the only route and the escape hatch this
   line used to describe is gone.
 
-### The teaching freeze
+### The teaching freeze, retired
 
-**A topic is frozen from the start of its Green day through the end of its Silver
-day.** Both dates are in `assets/data/announcements-schedule.js`. While a topic is
-frozen, nothing that changes what students or the projector show for that topic
-reaches `main`: its lesson page and data files, its First & 10, its deep reading, its
-BeInTheRoom, its Teaching OS pages and its student deck. Work on other topics, and on
-files no student or projector sees, goes on as normal.
-
-The reason is that Green and Silver are different students taught the same lesson. On
-2026-09-22 Topic 2.3 was rewritten the night between the two classes, so the two rooms
-were taught two different lessons, and the teacher spent class time debugging the
-live site. A fix made after Green has been taught is a fix only Silver gets.
-
-**The exception is Jeff saying "ship this fix", and it covers only a broken lesson:** a
-save that loses work, a page or button that does not work, a dead picture, or a factual
-error. Anything that is an improvement rather than a repair waits until the topic
-thaws, is written down as a note for Jeff, and ships before the topic is taught again.
-A factual error fixed during the freeze is mentioned to Green at their next class, so
-the two rooms do not quietly diverge.
-
-**It is enforced, by `scripts/check-teaching-freeze.js`, in three places**, because a
-required check binds to a commit and not to a day: a branch that went green the evening
-before Green's class could otherwise be fast-forwarded onto main the next morning with
-nothing running again. The Validate workflow runs it on every push (the gate main
-enforces), the pre-push hook runs it on any push to main, and the ship-to-main skill runs
-it immediately before the fast-forward. Pushing a working branch is never blocked;
-drafting during a freeze is allowed, and its CI simply stays red until the topic thaws,
-when re-running Validate on that commit turns it green. The dates are the school's, in
-Indiana time, never UTC, so a 9pm push on Green's day still counts as Green's day.
-
-**The override is a commit trailer**, a line reading `Ship-this-fix: <what was broken>`
-in any commit of the change. Write it only when Jeff has said "ship this fix". The
-check prints the topic and the files so the other room can be told.
-
-**What it matches**: a topic's files by name (`lesson-2-3-`, `topic-2-3`, `topics/2-3/`,
-`foundations-3-`), the BeInTheRoom scenario its data links to, and that topic's own
-entry inside `assets/data/ap-practice-units-1-2.js`, which is re-evaluated per topic
-because one file carries fourteen topics. **What it deliberately does not**: shared code
-every topic runs on, such as the renderers and stylesheets, since freezing those would
-freeze the whole course on every school day, and anything under `docs/`.
-`scripts/test/teaching-freeze.test.js`, in the offline suite, replays the real 2.3
-rewrite and must see it refused on 9/22 and allowed on 9/24.
-
-Explicit instructions from Jeff always override this rule; if he asks for a change to
-a frozen topic, remind him once that it is frozen and then do what he says.
+**Retired 2026-09-24, on Jeff's word.** From 2026-09-22 a topic was frozen from the
+start of its Green day through the end of its Silver day, and
+`scripts/check-teaching-freeze.js` refused any change to it in CI, in the pre-push
+hook and in the ship-to-main skill. None of that runs any more, and a change to a topic
+being taught ships the same way as any other change. The checker, its library and its
+test are in `archive/teaching-freeze/`, with a README saying how to restore them. Do
+not rebuild it here without reading that README first.
 
 ## The Gate
 
