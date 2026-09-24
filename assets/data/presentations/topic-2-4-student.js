@@ -41,16 +41,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "map",
+      "kind": "frame-question",
       "eyebrow": "Module 01 · Map & Geography",
       "title": "The Sahara is the problem in the middle.",
       "subtitle": "West African gold zones · Saharan salt · North African markets",
-      "visual": {
-        "url": "../assets/images/topics/2-4/2.4%20-%20Mali.png",
-        "alt": "Map of the Mali Empire and trans-Saharan routes, with salt moving south from Taghaza and gold moving north",
-        "credit": "Map · Mali Empire trade routes and goods"
-      },
-      "footer": "Trade links regions because they need different things."
+      "template": {
+        "visual": {
+          "fit": "contain",
+          "url": "../assets/images/topics/2-4/2.4%20-%20Africa%20Satellite.jpg",
+          "alt": "Satellite image of Africa: the tan Sahara across the north, green West and Central Africa to the south, the Mediterranean above",
+          "credit": "Satellite image · Africa"
+        }
+      }
     },
     {
       "kind": "action",
@@ -245,6 +247,20 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Module 06 · Checkpoint 1",
       "title": "Explain the mechanism.",
       "subtitle": "How did camel technology and caravans increase the volume and range of trade? Use gold or salt as evidence. On your own: no coach."
+    },
+    {
+      "kind": "frame-question",
+      "eyebrow": "Mali · On the Map",
+      "title": "Mali sits where the salt arrives and the gold leaves.",
+      "subtitle": "Follow the salt south from Taghaza and the gold north toward the Mediterranean.",
+      "template": {
+        "visual": {
+          "fit": "contain",
+          "url": "../assets/images/topics/2-4/2.4%20-%20Mali.png",
+          "alt": "Map of the Mali Empire and trans-Saharan routes, with salt moving south from Taghaza and gold moving north",
+          "credit": "Map · Mali Empire trade routes and goods"
+        }
+      }
     },
     {
       "kind": "exchange-flow",
