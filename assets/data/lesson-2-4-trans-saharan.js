@@ -100,6 +100,18 @@ window.BEHISTORICAL_LESSON = {
         url: 'https://youtu.be/fUYUx-0ISW4',
         youtubeId: 'fUYUx-0ISW4',
         prompt: 'Track transportation technology, trade expansion, and Mali\'s role in facilitating exchange.'
+      },
+      {
+        title: 'Mansa Musa, one of the wealthiest people who ever lived - Jessica Smith',
+        url: 'https://youtu.be/O3YJMaL55TM',
+        youtubeId: 'O3YJMaL55TM',
+        prompt: 'Where did Mansa Musa\'s wealth come from? Connect it to Mali\'s control of the gold and salt trade, and notice what his journey to Mecca shows about how far that trade network reached.'
+      },
+      {
+        title: 'The hidden treasures of Timbuktu - Elizabeth Cox',
+        url: 'https://youtu.be/40ehHbdi95o',
+        youtubeId: '40ehHbdi95o',
+        prompt: 'How did trans-Saharan trade turn Timbuktu into a center of Islamic learning? Name one thing, besides gold and salt, that travelled along the caravan routes.'
       }
     ],
     segments: [
