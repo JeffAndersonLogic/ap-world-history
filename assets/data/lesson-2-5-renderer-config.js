@@ -46,7 +46,7 @@
 
   lesson.classPresentation = {
     title: 'Class Slides: Cultural Consequences of Connectivity',
-    desc: 'Follow the three-part consequence story: diffusion, changing city fortunes, and travelers documenting an increasingly connected Afro-Eurasian world.',
+    desc: 'Follow one chain four times: bigger networks brought more contact, which spread and reshaped beliefs and technologies, built and broke cities, and sent travelers home to write about what they saw.',
     url: 'presentation-topic-2-5-student.html'
   };
 

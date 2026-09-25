@@ -210,14 +210,10 @@ function topic24Slides(teaching) {
   return projectedSlides(teaching).map(src => baseStudentSlide(src));
 }
 
+// Rebuilt on the slide templates 2026-09-25, like 2.4: every projected slide is
+// a template or a kind the student renderer draws, so nothing is remapped.
 function topic25Slides(teaching) {
-  return projectedSlides(teaching).map(src => {
-    const s = baseStudentSlide(src);
-    if (src.kind === 'image') s.kind = 'map';
-    if (src.kind === 'prompt' || src.kind === 'question') s.kind = 'prompt';
-    ensureWhy(s, 'Explain how intensified contact produces the cultural or intellectual consequence');
-    return s;
-  });
+  return projectedSlides(teaching).map(src => baseStudentSlide(src));
 }
 
 function topic26Slides(teaching) {

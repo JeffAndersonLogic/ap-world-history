@@ -7,253 +7,404 @@ window.BEHISTORICAL_STUDENT_DECK = {
   },
   "slides": [
     {
-      "kind": "process",
-      "eyebrow": "BeReady · 4 Minutes · No Notes",
-      "title": "Pull the network story back from memory.",
-      "subtitle": "Short answers are enough. Retrieve first; we will build from them.",
-      "footer": "Retrieve -> connect -> enter the new problem.",
-      "steps": [
-        {
-          "label": "SAHARA",
-          "text": "What made crossing the Sahara practical at a larger scale?"
-        },
-        {
-          "label": "MALI",
-          "text": "How did Mali profit from trade and also help sustain it?"
-        },
-        {
-          "label": "NETWORKS",
-          "text": "Name the three networks Unit 2 has studied so far."
-        },
-        {
-          "label": "BRIDGE",
-          "text": "Merchants paid to carry goods. What else traveled with them for free?"
-        }
-      ]
-    },
-    {
-      "kind": "hero",
-      "eyebrow": "AP World History · Topic 2.5",
-      "title": "What Traveled Without Paying Freight?",
-      "subtitle": "Goods moved through networks. So did beliefs, technologies, people, and information.",
-      "position": "left",
-      "visual": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg",
-        "alt": "Map of major Afro-Eurasian exchange routes",
-        "credit": "Wikimedia Commons · exchange-route reference map"
+      "kind": "beready-recall",
+      "eyebrow": "BeReady · Recall",
+      "title": "Pull the desert story back from memory.",
+      "template": {
+        "questions": [
+          {
+            "label": "Tools",
+            "text": "What made crossing the Sahara practical again and again?"
+          },
+          {
+            "label": "Mali",
+            "text": "How did Mali grow rich from the trade, and help it grow?"
+          },
+          {
+            "label": "Timbuktu",
+            "text": "Besides gold and salt, what traveled with the caravans to Timbuktu?"
+          }
+        ],
+        "turn": "Books, scholars, and Islam crossed the Sahara with the gold. **What else did the networks carry, and what did it change?**"
       }
     },
     {
-      "kind": "process",
-      "eyebrow": "The Lesson in One Chain",
-      "title": "Networks -> Contact -> Cultural Change",
-      "footer": "This is the whole lesson. Every example fits inside this chain.",
-      "steps": [
-        {
-          "label": "NETWORKS",
-          "text": "Movement becomes more frequent"
-        },
-        {
-          "label": "CONTACT",
-          "text": "People and societies interact"
-        },
-        {
-          "label": "TRANSFER",
-          "text": "Ideas, technologies, and knowledge move"
-        },
-        {
-          "label": "CONSEQUENCES",
-          "text": "Cultures and cities change"
+      "kind": "frame-question",
+      "eyebrow": "Topic 2.5 · The Question",
+      "title": "What did the networks carry besides goods, and what did it change?",
+      "subtitle": "Goods were never the only cargo. Hold that question: by the end of class you can answer it in one sentence.",
+      "template": {
+        "visual": {
+          "fit": "contain",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Silk_Road_Trade_%28c.1200_CE%29.jpg",
+          "alt": "Map of overland and maritime trade routes across Afro-Eurasia around 1200",
+          "credit": "Map · Afro-Eurasian trade routes, c. 1200"
         }
-      ]
-    },
-    {
-      "kind": "grid",
-      "eyebrow": "What Students Must Know",
-      "title": "Three Big Rocks",
-      "cards": [
-        {
-          "title": "1 · DIFFUSION",
-          "text": "Beliefs and technologies move across regions."
-        },
-        {
-          "title": "2 · CITIES",
-          "text": "Network nodes can grow — or decline."
-        },
-        {
-          "title": "3 · TRAVELERS",
-          "text": "More movement creates more written accounts."
-        },
-        {
-          "title": "AP SKILL",
-          "text": "Explain the mechanism, not just “it spread.”"
-        }
-      ]
-    },
-    {
-      "kind": "prompt",
-      "eyebrow": "The Consequence Problem",
-      "title": "A trade route carries more than cargo.",
-      "subtitle": "Every merchant, monk, pilgrim, scholar, envoy, and conquest creates contact."
-    },
-    {
-      "kind": "process",
-      "eyebrow": "Diffusion Mechanism",
-      "title": "Contact does not mean copy-and-paste.",
-      "footer": "The third box is the reasoning students usually miss.",
-      "steps": [
-        {
-          "label": "CONTACT",
-          "text": "People meet through networks"
-        },
-        {
-          "label": "TRANSMIT",
-          "text": "A belief, practice, or technology moves"
-        },
-        {
-          "label": "ADAPT",
-          "text": "A receiving society uses or reshapes it"
-        },
-        {
-          "label": "CONSEQUENCE",
-          "text": "Culture or knowledge changes"
-        }
-      ]
-    },
-    {
-      "kind": "map",
-      "eyebrow": "Big Rock 1 · Cultural Diffusion",
-      "title": "Beliefs crossed regions.",
-      "visual": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Buddha,_Cave_96,_Mogao_Caves.jpg",
-        "alt": "Great Buddha in Cave 96 at the Mogao Caves in Dunhuang",
-        "credit": "Mogao Caves, Dunhuang · cultural-diffusion evidence"
-      },
-      "footer": "Buddhism · Hinduism · Islam"
-    },
-    {
-      "kind": "map",
-      "eyebrow": "Big Rock 1 · Technological Diffusion",
-      "title": "Technology traveled too.",
-      "visual": {
-        "url": "../assets/images/topics/2-1/2.1 - Chinese Paper Money.jpg",
-        "alt": "Chinese paper money showing established paper and printing technology",
-        "credit": "BeHistorical classroom visual · paper technology"
-      },
-      "footer": "Paper + gunpowder moved outward from China."
-    },
-    {
-      "kind": "process",
-      "eyebrow": "Put Diffusion Together",
-      "title": "A network amplifies an idea by repeating contact.",
-      "footer": "Diffusion is movement + adoption, not just movement.",
-      "steps": [
-        {
-          "label": "ORIGIN",
-          "text": "A tradition or technology exists somewhere"
-        },
-        {
-          "label": "MOVEMENT",
-          "text": "People or texts carry it"
-        },
-        {
-          "label": "ADOPTION",
-          "text": "Another society uses or adapts it"
-        },
-        {
-          "label": "WIDER REACH",
-          "text": "The network carries it farther"
-        }
-      ]
-    },
-    {
-      "kind": "map",
-      "eyebrow": "Big Rock 2 · Urban Growth",
-      "title": "Networks can make cities boom.",
-      "visual": {
-        "url": "../assets/images/topics/2-1/2.1 - Samarkand.jpg",
-        "alt": "Historical reconstruction (AI generated) of Samarkand as a major Afro-Eurasian trading city, not a historical source",
-        "credit": "Historical Reconstruction - AI Generated"
-      },
-      "footer": "Trade + productivity can concentrate people, services, and wealth."
-    },
-    {
-      "kind": "map",
-      "eyebrow": "Big Rock 2 · Urban Decline",
-      "title": "But connectivity never guarantees permanent growth.",
-      "visual": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bagdad1258.jpg",
-        "alt": "Later medieval manuscript depiction of the Mongol siege of Baghdad",
-        "credit": "Later medieval manuscript image · supporting evidence for urban disruption"
-      },
-      "footer": "War · route shifts · political disruption can reverse urban fortunes."
-    },
-    {
-      "kind": "hero",
-      "eyebrow": "Big Rock 3 · Travel Accounts",
-      "title": "More movement created more observers.",
-      "subtitle": "Ibn Battuta · Marco Polo · Margery Kempe",
-      "position": "right",
-      "visual": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Caravane_Marco_Polo.jpg",
-        "alt": "Marco Polo caravan depicted in the Catalan Atlas of 1375",
-        "credit": "Catalan Atlas, 1375 · public domain"
       }
     },
     {
-      "kind": "map",
-      "eyebrow": "Map Check",
-      "title": "Follow the movement, not just the route.",
-      "visual": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg",
-        "alt": "Map of major Afro-Eurasian exchange routes",
-        "credit": "Wikimedia Commons · exchange-route reference map"
-      },
-      "footer": "The same networks moved culture, technology, people, and knowledge."
+      "kind": "compounding",
+      "eyebrow": "The Chain · The Whole Topic",
+      "title": "One chain runs through the whole topic.",
+      "footer": "Watch it happen four times today: **beliefs, technologies, cities, travelers**.",
+      "template": {
+        "steps": [
+          {
+            "label": "Bigger networks",
+            "text": "Mongol roads, monsoon ships, and Saharan caravans carry more traffic than ever."
+          },
+          {
+            "label": "More contact",
+            "text": "Merchants, monks, pilgrims, and scholars meet people unlike themselves."
+          },
+          {
+            "label": "Diffusion + adaptation",
+            "text": "Beliefs and inventions move, and the people who receive them **reshape** them."
+          },
+          {
+            "label": "Cultural change",
+            "text": "Societies change what they believe, what they build, and what they **know**."
+          }
+        ]
+      }
     },
     {
       "kind": "action",
-      "eyebrow": "Checkpoint Writing",
-      "title": "Explain ONE intellectual or cultural effect of connectivity.",
-      "subtitle": "Use one specific CED example and explain the mechanism.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-2-5-cultural-consequences.html#modules"
+      "eyebrow": "Module 02 · First & 10 · 10 Minutes",
+      "title": "Read for the chain.",
+      "subtitle": "Goods Were Never the Only Cargo. Find the chain four times: beliefs, technologies, cities, travelers."
+    },
+    {
+      "kind": "frame-triptych",
+      "eyebrow": "Beliefs · Diffusion",
+      "title": "Beliefs traveled the same routes as goods.",
+      "template": {
+        "panels": [
+          {
+            "title": "Buddhism · East Asia",
+            "visual": {
+              "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Buddha,_Cave_96,_Mogao_Caves.jpg",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Buddha,_Cave_96,_Mogao_Caves.jpg",
+              "alt": "The great seated Buddha in Cave 96 at the Mogao Caves, Dunhuang",
+              "credit": "Mogao Caves, Dunhuang · carved 695",
+              "position": "50% 30%"
+            }
+          },
+          {
+            "title": "Hinduism + Buddhism · Southeast Asia",
+            "visual": {
+              "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Angkor%20Wat.jpg",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Angkor_Wat.jpg",
+              "alt": "The towers of Angkor Wat in Cambodia",
+              "credit": "Angkor Wat · built early 1100s"
+            }
+          },
+          {
+            "title": "Islam · West Africa",
+            "visual": {
+              "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Djenn%C3%A9_2.jpg",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Djenn%C3%A9_2.jpg",
+              "alt": "The mud-brick Great Mosque of Djenné in Mali",
+              "credit": "Great Mosque of Djenné · rebuilt 1907"
+            }
+          }
+        ]
       }
     },
     {
-      "kind": "grid",
-      "eyebrow": "Common Traps",
-      "title": "“It spread” is not an explanation.",
-      "cards": [
-        {
-          "title": "WEAK",
-          "text": "Buddhism spread through Asia."
-        },
-        {
-          "title": "BETTER",
-          "text": "Repeated trade and pilgrimage contacts helped Buddhist teachings move and take root in new societies."
-        },
-        {
-          "title": "WEAK",
-          "text": "All trade cities grew."
-        },
-        {
-          "title": "BETTER",
-          "text": "City fortunes varied with trade, productivity, warfare, and route shifts."
-        }
-      ]
+      "kind": "compounding-stairs",
+      "eyebrow": "Name the Carrier · West Africa and Malacca",
+      "title": "Islam came with the traders.",
+      "footer": "Name the carrier: **who** brought it, along **which route**, and **why** people took it up.",
+      "template": {
+        "steps": [
+          {
+            "label": "Traders",
+            "text": "Muslim merchants settle in trading towns and ports."
+          },
+          {
+            "label": "Rulers",
+            "text": "Kings in Mali and Malacca convert."
+          },
+          {
+            "label": "Scholars",
+            "text": "Mosques, schools, and books follow."
+          },
+          {
+            "label": "Adaptation",
+            "text": "Islam blends with local custom."
+          }
+        ]
+      }
     },
     {
-      "kind": "hero",
-      "eyebrow": "Topic 2.5 · Landing Sentence",
-      "title": "Connectivity changes what societies know — and what they become.",
-      "subtitle": "From c. 1200 to c. 1450, intensified exchange diffused beliefs and technologies, altered city fortunes, and increased travel writing across Afro-Eurasia.",
-      "position": "right",
-      "visual": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg",
-        "alt": "Al-Idrisi world map representing accumulated geographic knowledge",
-        "credit": "Tabula Rogeriana · al-Idrisi, 1154"
+      "kind": "split-mirror",
+      "eyebrow": "Technologies · Diffusion + Adaptation",
+      "title": "Paper and gunpowder changed as they moved.",
+      "footer": "Diffusion says how it arrived. **Adaptation** says what it became.",
+      "template": {
+        "left": {
+          "name": "Paper"
+        },
+        "right": {
+          "name": "Gunpowder"
+        },
+        "rows": [
+          {
+            "label": "Began",
+            "left": "China, by about 100 CE",
+            "right": "China, in a military manual by 1044"
+          },
+          {
+            "label": "Moved",
+            "left": "West to Samarkand and Baghdad by about 800",
+            "right": "West in the 1200s, along routes the Mongols joined"
+          },
+          {
+            "label": "Adapted",
+            "left": "Muslim, then European, mills made it from linen rags",
+            "right": "Armies in the Islamic world and Europe built it into **cannons**"
+          },
+          {
+            "label": "Changed",
+            "left": "Cheaper books filled libraries like Baghdad's",
+            "right": "New kinds of warfare"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "action",
+      "eyebrow": "Module 06 · Checkpoint 1",
+      "title": "Explain how one belief or technology spread.",
+      "subtitle": "Explain how ONE cultural tradition or technology diffused through Afro-Eurasian exchange networks from c. 1200 to c. 1450. Use a specific CED example and explain how the network enabled movement. On your own: no coach."
+    },
+    {
+      "kind": "frame-letterbox",
+      "eyebrow": "Cities · Growth",
+      "title": "Trade and farming built great cities.",
+      "subtitle": "Hangzhou and Samarkand grew where traffic met, fed by productive farms.",
+      "template": {
+        "visual": {
+          "ai": true,
+          "url": "../assets/images/topics/2-1/2.1%20-%20Samarkand.jpg",
+          "alt": "An imagined scene of Samarkand: camel caravans and an ox cart loaded with goods approach a walled city of blue-domed buildings below mountains",
+          "cropBottom": 0.06,
+          "position": "50% 40%"
+        }
+      }
+    },
+    {
+      "kind": "frame-placard",
+      "eyebrow": "Cities · Decline · 1258",
+      "title": "The Mongol siege of Baghdad",
+      "template": {
+        "placard": {
+          "tag": "A Connected City Falls · 1258",
+          "name": "The Mongol siege of Baghdad",
+          "text": "Painted in a Persian history about 1430, nearly two centuries after the siege. Baghdad had been the Abbasid capital for about 500 years and a great center of learning. It never fully recovered its old place."
+        },
+        "visual": {
+          "fit": "contain",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bagdad1258.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bagdad1258.jpg",
+          "alt": "A Persian manuscript painting of Mongol forces besieging Baghdad, with walls, a river and siege engines",
+          "credit": "Persian manuscript painting, c. 1430 · public domain"
+        }
+      }
+    },
+    {
+      "kind": "timeline",
+      "eyebrow": "Cities · Rise and Fall",
+      "title": "The same network could build a city or expose it.",
+      "footer": "Spacing is true to scale. City fortunes **varied**: war, rulers, and routes decided who rose and who fell.",
+      "template": {
+        "range": [
+          1120,
+          1380
+        ],
+        "tick": 20,
+        "events": [
+          {
+            "year": 1138,
+            "label": "1138",
+            "text": "Hangzhou becomes the Southern Song capital and grows huge."
+          },
+          {
+            "year": 1220,
+            "label": "1220",
+            "text": "The Mongols destroy Samarkand."
+          },
+          {
+            "year": 1258,
+            "label": "1258",
+            "text": "The Mongols sack Baghdad; the Abbasid Caliphate ends."
+          },
+          {
+            "year": 1276,
+            "label": "1276",
+            "text": "Hangzhou surrenders to the Mongols and stays a great trading city."
+          },
+          {
+            "year": 1370,
+            "label": "1370",
+            "text": "Timur makes a rebuilt Samarkand his capital."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "timeline-spans",
+      "eyebrow": "Travelers · More Travel, More Writing",
+      "title": "More people traveled, so more people wrote it down.",
+      "footer": "Each account is evidence twice: of distant places, and of a **more connected world**.",
+      "template": {
+        "range": [
+          1250,
+          1450
+        ],
+        "tick": 50,
+        "spans": [
+          {
+            "name": "Marco Polo",
+            "note": "Venice to Yuan China and back",
+            "start": 1271,
+            "end": 1295
+          },
+          {
+            "name": "Ibn Battuta",
+            "note": "Morocco across Dar al-Islam to India and China",
+            "start": 1325,
+            "end": 1354
+          },
+          {
+            "name": "Margery Kempe",
+            "note": "England to Jerusalem, Rome, and Santiago",
+            "start": 1413,
+            "end": 1417
+          }
+        ]
+      }
+    },
+    {
+      "kind": "frame-placard",
+      "eyebrow": "Travelers · What Europe Knew",
+      "title": "A caravan on the Catalan Atlas, 1375",
+      "template": {
+        "placard": {
+          "tag": "What Mapmakers Knew · 1375",
+          "name": "A caravan on the Catalan Atlas",
+          "text": "Made in Majorca and attributed to Abraham Cresques. Riders and camels cross Asia, a scene often linked to the Polos. What travelers reported became what mapmakers knew."
+        },
+        "visual": {
+          "fit": "contain",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Caravane_Marco_Polo.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Caravane_Marco_Polo.jpg",
+          "alt": "Detail of the Catalan Atlas showing a caravan of riders and camels crossing Asia",
+          "credit": "Catalan Atlas, 1375 · public domain"
+        }
+      }
+    },
+    {
+      "kind": "source-quote",
+      "eyebrow": "Primary Source · Close Read",
+      "title": "Rabban Bar Sauma in Rome, 1288",
+      "footer": "Module 08 has the whole exchange.",
+      "template": {
+        "quote": "… many of our Fathers have gone into the countries of the Mongols, and Turks, and Chinese and have taught them the Gospel, and at the present time there are many Mongols who are Christians.",
+        "attribution": {
+          "author": "Rabban Bar Sauma",
+          "work": "The Monks of Kublai Khan, trans. Budge",
+          "year": "1288"
+        },
+        "notice": "A monk from Mongol China, in Rome. **What moved across Asia, and who wrote this down?**"
+      }
+    },
+    {
+      "kind": "action",
+      "eyebrow": "Module 08 · Primary Source · 10 Minutes",
+      "title": "Rabban Bar Sauma explains Eastern Christianity.",
+      "subtitle": "Answer all three parts: (a) religion moving across Asia, (b) how Mongol rule made the journey possible, (c) how the Christian biographer's point of view affects what the passage can show."
+    },
+    {
+      "kind": "split-matrix",
+      "eyebrow": "The Whole Topic",
+      "title": "One chain, four changes.",
+      "footer": "Read each column top to bottom. Retell the topic from this slide.",
+      "template": {
+        "columns": [
+          {
+            "name": "Beliefs"
+          },
+          {
+            "name": "Technologies"
+          },
+          {
+            "name": "Cities"
+          },
+          {
+            "name": "Travelers"
+          }
+        ],
+        "rows": [
+          {
+            "label": "Contact",
+            "cells": [
+              "Merchants, monks, scholars",
+              "Traders, Mongol armies",
+              "Routes cross in one place",
+              "Pilgrims, merchants, envoys"
+            ]
+          },
+          {
+            "label": "Diffusion + adaptation",
+            "cells": [
+              "Faiths take root and blend",
+              "Reshaped for new uses",
+              "Wealth gathers, or war strikes",
+              "Written down for readers at home"
+            ]
+          },
+          {
+            "label": "Change",
+            "cells": [
+              "New faiths in Asia and Africa",
+              "More books; new warfare",
+              "Hangzhou rises; Baghdad falls",
+              "Societies know far more"
+            ]
+          }
+        ],
+        "result": {
+          "label": "Spine",
+          "text": "Connectivity changes what societies know, and what they **become**."
+        }
+      }
+    },
+    {
+      "kind": "sharpen",
+      "eyebrow": "Sharpen the Claim",
+      "title": "",
+      "footer": "An AP-sized claim names the carrier, the change, and why it mattered.",
+      "template": {
+        "weak": "Islam spread to Africa.",
+        "strong": "Because trans-Saharan trade **brought Muslim merchants** to West Africa, Mali's rulers adopted Islam, which **connected them** to Muslim law, learning, and trade partners."
+      }
+    },
+    {
+      "kind": "frame-question",
+      "eyebrow": "Topic 2.5 · The Big Idea",
+      "title": "Connectivity changes what societies know, and what they become.",
+      "subtitle": "More contact spread and reshaped beliefs, technologies, cities, and knowledge.",
+      "template": {
+        "visual": {
+          "fit": "contain",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:TabulaRogeriana.jpg",
+          "alt": "Al-Idrisi's world map, drawn with south at the top, showing Afro-Eurasia and the Indian Ocean",
+          "credit": "Tabula Rogeriana · al-Idrisi, 1154"
+        }
       }
     }
   ]

@@ -1,379 +1,167 @@
-/*
- * Topic 2.5 canonical Teaching OS source.
- * Modeled on Topic 2.1: one visible AP argument, three Big Rocks, repeated mechanism,
- * lean projected copy, and teacher-only intelligence.
+/* Topic 2.5 canonical authored teaching content: cultural consequences of connectivity.
+ * Story approved by Jeff 2026-09-25 as written ("Goods Were Never the Only Cargo"):
+ * four beats, beliefs, technologies, cities, travelers; plague stays in 2.6.
+ * Spine: connectivity changes what societies know, and what they become.
+ * Jeff's one refinement, 2026-09-25: the causal chain has to be unmistakable, so
+ * every beat is taught as the same chain, Bigger networks -> more contact ->
+ * diffusion + adaptation -> cultural and intellectual change, and the retelling
+ * slide runs that chain down all four beats.
+ * Rebuilt 2026-09-25 on the slide templates (assets/js/behistorical-slide-templates.js):
+ * each idea is drawn in the shape it has, not as four numbered boxes.
+ * Pictures are assigned by slide id in topic-2-5-presentation-assets.js, so the
+ * teacher surface and the generated student deck always show the same visuals.
  */
 window.BEHISTORICAL_TEACHING = {
   meta: {
     topic: '2.5',
+    dates: 'September 28–29, 2026',
     minutes: 90,
     title: 'Cultural Consequences of Connectivity',
-    subtitle: 'Trade networks moved more than goods. They changed culture, cities, and knowledge.',
-    essentialQuestion: 'How did intensified exchange networks change cultures, cities, and knowledge across Afro-Eurasia from c. 1200 to c. 1450?',
-    apFocus: 'Cultural Developments + Causation + Continuity and Change',
-    endTarget: 'Students can explain three consequences of intensified exchange: cultural and technological diffusion, changing urban fortunes, and the growth of written travel accounts.'
+    subtitle: 'Goods were never the only cargo. The same routes carried beliefs, technologies, and travelers, and each one changed the places it reached.',
+    spine: 'Connectivity changes what societies know, and what they become.',
+    chain: 'Bigger networks → more contact → diffusion + adaptation → cultural and intellectual change',
+    retelling: 'split-matrix',
+    essentialQuestion: 'What were the intellectual and cultural effects of Afro-Eurasian exchange networks from c. 1200 to c. 1450?',
+    apFocus: 'Causation + Cultural Developments and Interactions + Sourcing',
+    endTarget: 'Students can explain how bigger networks created more contact, how that contact spread and reshaped beliefs (Buddhism, Hinduism, Islam) and technologies (paper, gunpowder), why connected cities rose and fell, and why more travelers (Ibn Battuta, Marco Polo, Margery Kempe) wrote accounts of distant societies.'
   },
-
   priorities: {
     must: [
-      'Teach this as three consequences of connectivity, not a list of things that spread.',
-      'Combine cultural and technological diffusion into one Big Rock because both belong to KC-3.1.III.D.',
-      'Make the mechanism visible: repeated contact -> transmission -> adoption/adaptation -> consequence.',
-      'Teach urbanization with variation: expanding networks could help cities grow, but war, route shifts, or political disruption could contribute to decline.',
-      'Use Ibn Battuta, Marco Polo, and Margery Kempe as evidence that intensified networks produced more written travel accounts.'
+      'Students explain every example as the same chain: bigger networks, more contact, diffusion and adaptation, cultural or intellectual change. "It spread" is never the whole answer.',
+      'Students name a carrier: who brought a belief or technology, along which route, and why the receiving society took it up.',
+      'Students explain adaptation: paper and gunpowder became something new in the societies that received them, and Islam blended with local custom.',
+      'Students explain that connected cities could rise (Hangzhou, Samarkand) and fall (Baghdad, 1258). City fortunes varied; trade did not make every city grow.',
+      'Students use Ibn Battuta, Marco Polo, or Margery Kempe as evidence that more travel produced more written accounts, and name one limit of a travel account.'
     ],
     should: [
-      'Return to the three Big Rocks every few slides so students keep the CED structure in view.',
-      'Keep projected copy sparse; the richer explanation belongs in Teacher Intelligence.',
-      'Use images as historical evidence, not decoration: ask what each visual can and cannot prove.',
-      'Keep Topic 2.6 separate: crops and pathogens are environmental consequences, not today\'s cultural story.'
+      'Keep plague, crops, and pathogens out. They are Topic 2.6, and the landing slide is the bridge.',
+      'Return to the chain at the chain slide, the Islam slide, the technology slide, the retelling slide, and the landing. Do not paste it on every slide.',
+      'Name the modules due today: First & 10 (02), Checkpoint 1 (06), Primary Source (08), and Checkpoint 2 (10). Checkpoint 2 has no slide: students start it on the lesson page in the last ten minutes, and what is not finished is homework, as in 2.4.'
     ],
     could: [
-      'Use the full Heimler 2.5 review after the three-part framework is clear.',
-      'Use the BeInTheRoom Silk Road Scholar activity as extension or reinforcement.',
-      'Use the Evidence Lab if time allows after the checkpoint.'
+      'Use the Evidence Lab (Module 07) as reinforcement or homework: its four cards are the Dunhuang Buddha, Song paper money, the Baghdad siege painting, and the Catalan Atlas caravan.',
+      'Use the Silk Road Scholar BeInTheRoom as an extension for students who finish Checkpoint 2.',
+      'Use the Heimler 2.5 review as retrieval rather than primary instruction.'
     ]
   },
-
   flow: [
-    { id: 'preflight', label: 'Teacher Preflight', range: 'Before class', minutes: 2, teacher: 'Lock onto the three consequences and the diffusion mechanism.', students: 'Not projected.', slide: 1 },
-    { id: 'beready', label: 'BeReady', range: '0-4', minutes: 4, teacher: 'Retrieve Topic 2.4 and bridge to what else travels.', students: 'Answer from memory.', slide: 2 },
-    { id: 'launch', label: 'Launch the Consequence Story', range: '4-9', minutes: 5, teacher: 'Show the whole argument before examples.', students: 'Write the three-part frame.', slide: 3 },
-    { id: 'targets', label: 'Three Big Rocks', range: '9-12', minutes: 3, teacher: 'Name the three CED developments.', students: 'Sort examples into the three rocks.', slide: 5 },
-    { id: 'problem', label: 'What Else Travels?', range: '12-18', minutes: 6, teacher: 'Shift from cargo to contact.', students: 'Predict non-economic consequences.', slide: 6 },
-    { id: 'mechanism', label: 'Diffusion Mechanism', range: '18-24', minutes: 6, teacher: 'Model contact -> transmission -> adoption -> consequence.', students: 'Track mechanism, not vocabulary.', slide: 7 },
-    { id: 'diffusion', label: 'Big Rock 1: Diffusion', range: '24-43', minutes: 19, teacher: 'Use beliefs and technologies as two forms of the same process.', students: 'Explain one cultural and one technological example.', slide: 8 },
-    { id: 'cities', label: 'Big Rock 2: Cities', range: '43-59', minutes: 16, teacher: 'Teach urban growth and decline as variation.', students: 'Explain why a network node can rise or fall.', slide: 11 },
-    { id: 'travelers', label: 'Big Rock 3: Travelers', range: '59-69', minutes: 10, teacher: 'Turn travel writing into evidence of connectivity.', students: 'Use a named traveler as evidence.', slide: 13 },
-    { id: 'map', label: 'Map the Movement', range: '69-75', minutes: 6, teacher: 'Trace movement rather than memorizing lines.', students: 'Connect one example to a network.', slide: 14 },
-    { id: 'checkpoint', label: 'Checkpoint Writing', range: '75-84', minutes: 9, teacher: 'Coach mechanism and evidence.', students: 'Explain one intellectual or cultural effect.', slide: 15 },
-    { id: 'debrief', label: 'Common Traps', range: '84-88', minutes: 4, teacher: 'Repair vague diffusion statements.', students: 'Upgrade one weak sentence.', slide: 16 },
-    { id: 'close', label: 'Landing Sentence', range: '88-90', minutes: 2, teacher: 'Land the CED answer and bridge to environmental effects.', students: 'State the three-part answer.', slide: 17 }
+    {id:'preflight',label:'Teacher Preflight',range:'Before class',slide:0},
+    {id:'beready',label:'BeReady',range:'0–4',slide:1},
+    {id:'open',label:'The Question',range:'4–6',slide:2},
+    {id:'chain',label:'The Chain',range:'6–9',slide:3},
+    {id:'first10',label:'First & 10',range:'9–19',slide:4},
+    {id:'beliefs',label:'Beliefs',range:'19–28',slide:5},
+    {id:'tech',label:'Technologies',range:'28–34',slide:7},
+    {id:'check1',label:'Checkpoint 1',range:'34–41',slide:8},
+    {id:'cities',label:'Cities Rise and Fall',range:'41–51',slide:9},
+    {id:'travelers',label:'Travelers',range:'51–57',slide:12},
+    {id:'source',label:'Primary Source',range:'57–70',slide:14},
+    {id:'retell',label:'Retell',range:'70–78',slide:16},
+    {id:'close',label:'Close + Bridge',range:'78–80',slide:18},
+    {id:'check2',label:'Checkpoint 2 Work Time',range:'80–90',slide:18}
   ],
-
   quickLaunch: [
-    { label: 'Student Lesson 2.5', url: '../unit-2/lesson-2-5-cultural-consequences.html' },
-    { label: 'First & 10', url: '../unit-2/first-and-10-topic-2-5-cultural-consequences-capture.html?v=cargo-v1' },
-    { label: 'BeInTheRoom: Silk Road Scholar', url: '../beintheroom/unit-2/silk-road-scholar.html' },
-    { label: 'Deep Reading', url: '../unit-2/deep-reading-topic-2-5-cultural-consequences.html' },
-    { label: 'Heimler 2.5 Review', url: 'https://youtu.be/buccc2fFw4U' }
+    {label:'Student Lesson 2.5',url:'../unit-2/lesson-2-5-cultural-consequences.html'},
+    {label:'Student Presentation 2.5',url:'../unit-2/presentation-topic-2-5-student.html'},
+    {label:'First & 10',url:'../unit-2/first-and-10-topic-2-5-cultural-consequences-capture.html?v=cargo-v1'},
+    {label:'BeInTheRoom: Silk Road Scholar',url:'../beintheroom/unit-2/silk-road-scholar.html'},
+    {label:'Deep Reading',url:'../unit-2/deep-reading-topic-2-5-cultural-consequences.html'},
+    {label:'Heimler 2.5 Review',url:'https://youtu.be/buccc2fFw4U'}
   ],
-
   projection: {
     storageKey: 'behistorical-topic-2-5-slide',
+    channel: 'behistorical-topic-2-5-os',
     title: 'Topic 2.5 Presentation',
     file: 'present-topic-2-5.html'
   },
-
   slides: [
     {
-      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight · 2 Minutes',
-      title: 'Do not teach the souvenirs. Teach what connectivity changes.',
-      subtitle: 'Networks increase contact. Contact moves beliefs and technologies, reshapes city fortunes, and produces new written knowledge about distant societies.',
-      notes: {
-        minutes: 2,
-        land: [
-          'Topic 2.5 is an effects lesson. The network mechanics were built in 2.1-2.4; now ask what deeper contact does to societies.',
-          'The whole lesson fits three CED developments: diffusion, city fortunes, and travelers.',
-          'Every named example must prove one of those three claims.'
-        ],
-        ask: 'What are the three consequences I am proving today?',
-        listenFor: 'Diffusion, changing cities, travel accounts.',
-        avoid: 'Do not drift into crops and plague; those belong to Topic 2.6.'
-      }
+      id:'preflight',phase:'preflight',kind:'action',eyebrow:'Teacher Preflight · Not Projected',title:'Teach the chain, not a list of things that spread.',subtitle:'Bigger networks → more contact → diffusion + adaptation → cultural and intellectual change. Beliefs, technologies, cities, and travelers are the same chain four times.',big:'2.5',
+      notes:{minutes:2,land:['The learning objective asks for the intellectual and cultural effects of the exchange networks from c. 1200 to c. 1450. Students met the networks in 2.1 to 2.4. Today is what the traffic did to the societies it reached.','The CED has three developments and names the evidence: diffusion of beliefs (Buddhism in East Asia, Hinduism and Buddhism in Southeast Asia, Islam in sub-Saharan Africa and Asia) and technologies (paper and gunpowder from China); cities that rose and declined; and more travelers writing accounts (Ibn Battuta, Margery Kempe, Marco Polo).','The trap is a list: Buddhism spread, paper spread, Ibn Battuta traveled. Every example has to be told as the chain, with a carrier and an adaptation. The second trap is "trade made cities grow". City fortunes varied.','Retelling slide: the matrix near the end. Four columns, one per beat, and the chain runs down every column. If students can redraw it, they can answer both checkpoints.','Pictures: the Dunhuang Buddha, Angkor Wat, the Djenné mosque, the Baghdad siege painting and the Catalan Atlas are real sources, each dated on its slide and several made before or after the period, which the notes say. The Samarkand city scene is AI-generated and labeled on the slide.','Plague stays in 2.6. The landing slide is the bridge.'],story:'After 1200 more traffic moved along the Silk Roads, the Indian Ocean and the Sahara than ever before. Merchants, monks, pilgrims, scholars and envoys met people unlike themselves. Beliefs and inventions moved with them and were reshaped by the people who took them in. Cities where the traffic met grew rich, and some were destroyed. And because more people traveled, more people wrote down what they saw, so societies came to know far more about each other.',ask:'Before class: can you say the whole topic from the retelling matrix in under thirty seconds?',listenFor:'Because bigger networks brought more contact, beliefs and technologies spread and were adapted, connected cities rose and fell, and more travelers wrote accounts, so societies changed what they believed, built and knew.',ap:'Causation: network → contact → diffusion and adaptation → cultural and intellectual change.'}
     },
     {
-      phase: 'beready', kind: 'process', eyebrow: 'BeReady · 4 Minutes · No Notes',
-      title: 'Pull the network story back from memory.',
-      subtitle: 'Short answers are enough. Retrieve first; we will build from them.',
-      steps: [
-        { label: 'SAHARA', text: 'What made crossing the Sahara practical at a larger scale?' },
-        { label: 'MALI', text: 'How did Mali profit from trade and also help sustain it?' },
-        { label: 'NETWORKS', text: 'Name the three networks Unit 2 has studied so far.' },
-        { label: 'BRIDGE', text: 'Merchants paid to carry goods. What else traveled with them for free?' }
-      ],
-      footer: 'Retrieve -> connect -> enter the new problem.',
-      notes: {
-        minutes: 4,
-        land: [
-          'No notes. Take fast verbal answers and do not reteach Topic 2.4.',
-          'Accept brief evidence: camel saddles and caravans; Mali taxing and protecting trade; Silk Roads, Indian Ocean, trans-Saharan.'
-        ],
-        ask: 'If a merchant crosses three cultures to sell cloth, what comes home with him besides money?',
-        listenFor: 'Religion, language, stories, technologies, knowledge, people.',
-        ap: 'Retrieval + contextualization: the networks students already know are the setting for today\'s consequences.'
-      }
+      id:'beready',phase:'beready',kind:'beready-recall',eyebrow:'BeReady · Recall',title:'Pull the desert story back from memory.',
+      template:{questions:[{label:'Tools',text:'What made crossing the Sahara practical again and again?'},{label:'Mali',text:'How did Mali grow rich from the trade, and help it grow?'},{label:'Timbuktu',text:'Besides gold and salt, what traveled with the caravans to Timbuktu?'}],turn:'Books, scholars, and Islam crossed the Sahara with the gold. **What else did the networks carry, and what did it change?**'},
+      notes:{minutes:4,land:['No notes. Take fast verbal answers and do not reteach Topic 2.4.','Accept brief evidence: the camel saddle and caravans; Mali protecting and taxing the routes; books, scholars and Islam on the caravans, from the Timbuktu clip.','The third question is the bridge. Read the turn aloud and take two or three guesses. Do not confirm any; the lesson answers it.'],story:'BeReady ends 2.4 where 2.4 ended, in Timbuktu, and turns it into today\'s question. The caravans that carried gold also carried a religion and a library.',ask:'If a caravan carries books and scholars across the Sahara, what changes at the other end?',listenFor:'People learn new ideas, convert, build mosques and schools, read and write in Arabic.',ap:'Retrieval + causation: the network students already know becomes the cause of today\'s effects.'}
     },
     {
-      phase: 'launch', kind: 'hero', eyebrow: 'AP World History · Topic 2.5',
-      title: 'What Traveled Without Paying Freight?',
-      subtitle: 'Goods moved through networks. So did beliefs, technologies, people, and information.',
-      visual: { type: 'map' },
-      notes: {
-        minutes: 3,
-        land: [
-          'Students already know the Silk Roads, Indian Ocean, and trans-Saharan routes.',
-          'The question changes today: not why the networks grew, but what intensified contact changed.'
-        ],
-        ask: 'If merchants can move through these routes, what can travel with them besides cargo?',
-        listenFor: 'Religion, language, technology, stories, knowledge, people.'
-      }
+      id:'hook',phase:'open',kind:'frame-question',eyebrow:'Topic 2.5 · The Question',title:'What did the networks carry besides goods, and what did it change?',subtitle:'Goods were never the only cargo. Hold that question: by the end of class you can answer it in one sentence.',template:{},
+      notes:{minutes:2,land:['This is the topic question. Leave it up long enough for students to write it down.','The map shows the overland and sea routes around 1200, the same networks as 2.1 to 2.4; add the Sahara crossing from last class with your hand. Nothing new on it today. What is new is what moved along it.'],story:'Every route students know carried people, and people carry ideas. The question moves from how trade worked to what trade did.',ask:'Name one thing that could travel on these routes without anyone selling it.',listenFor:'Religion, language, stories, inventions, knowledge, diseases (hold that one for 2.6).',ap:'Contextualization: the networks are the setting for today\'s effects.'}
     },
     {
-      retelling: true, phase: 'launch', kind: 'process', eyebrow: 'The Lesson in One Chain',
-      title: 'Networks -> Contact -> Cultural Change',
-      steps: [
-        { label: 'NETWORKS', text: 'Movement becomes more frequent' },
-        { label: 'CONTACT', text: 'People and societies interact' },
-        { label: 'TRANSFER', text: 'Ideas, technologies, and knowledge move' },
-        { label: 'CONSEQUENCES', text: 'Cultures and cities change' }
-      ],
-      footer: 'This is the whole lesson. Every example fits inside this chain.',
-      notes: {
-        minutes: 4,
-        land: [
-          'Show the causal frame before introducing names.',
-          'Students are not collecting examples. They are proving what repeated contact does.'
-        ],
-        ask: 'Which box is the bridge between trade and cultural change?',
-        listenFor: 'Contact or repeated interaction.'
-      }
+      id:'chain',phase:'open',kind:'compounding',eyebrow:'The Chain · The Whole Topic',title:'One chain runs through the whole topic.',footer:'Watch it happen four times today: **beliefs, technologies, cities, travelers**.',
+      template:{steps:[{label:'Bigger networks',text:'Mongol roads, monsoon ships, and Saharan caravans carry more traffic than ever.'},{label:'More contact',text:'Merchants, monks, pilgrims, and scholars meet people unlike themselves.'},{label:'Diffusion + adaptation',text:'Beliefs and inventions move, and the people who receive them **reshape** them.'},{label:'Cultural change',text:'Societies change what they believe, what they build, and what they **know**.'}]},
+      notes:{minutes:3,land:['Show the chain before any names. Students are not collecting examples today; they are proving the chain four times.','Each line makes the next one possible, which is why it is drawn growing: more traffic makes more meetings, more meetings make more chances for an idea to move, and ideas that move and take root change a society.','Point at the third line. Adaptation is the step students skip. Diffusion says how something arrived; adaptation says what it became once it got there.'],story:'This is the causal spine Jeff asked to make unmistakable. It comes back on the Islam slide, the technology slide, the retelling matrix and the landing.',ask:'Which line is the bridge between trade and culture?',listenFor:'More contact: the meetings between people are where ideas cross.',ap:'Causation: a chain of causes, each enabling the next.'}
     },
     {
-      phase: 'targets', kind: 'grid', eyebrow: 'What Students Must Know',
-      title: 'Three Big Rocks',
-      cards: [
-        { title: '1 · DIFFUSION', text: 'Beliefs and technologies move across regions.' },
-        { title: '2 · CITIES', text: 'Network nodes can grow — or decline.' },
-        { title: '3 · TRAVELERS', text: 'More movement creates more written accounts.' },
-        { title: 'AP SKILL', text: 'Explain the mechanism, not just “it spread.”' }
-      ],
-      notes: {
-        minutes: 5,
-        land: [
-          'These are the three historical developments in the Topic 2.5 CED.',
-          'Named evidence: Buddhism, Hinduism, Islam, paper, gunpowder, Ibn Battuta, Marco Polo, and Margery Kempe.'
-        ],
-        ask: 'Where would paper fit? Where would Ibn Battuta fit?',
-        listenFor: 'Paper = diffusion; Ibn Battuta = travelers.'
-      }
+      id:'first10',phase:'first10',kind:'action',eyebrow:'Module 02 · First & 10 · 10 Minutes',title:'Read for the chain.',subtitle:'Goods Were Never the Only Cargo. Find the chain four times: beliefs, technologies, cities, travelers.',big:'02',
+      notes:{minutes:10,land:['The detailed narrative belongs in First & 10. The projector gives the reading lens only.','The reading opens with the chain in its "Story to Hold Onto" box and follows it through four sections: Beliefs, Technology, Cities, Travelers. Each callout names the chain.','Circulate for the carrier (merchants, scholars, pilgrims) and for adaptation (paper from rags, gunpowder in cannons).'],story:'Students should come out with one story told four ways, not fifteen vocabulary words.',ask:'In each section, what moved, who carried it, and what did it change?',listenFor:'Islam with merchants and scholars; paper and gunpowder reshaped; Hangzhou and Samarkand grow, Baghdad falls; travelers write it down.',ap:'Causation: cause → mechanism → effect, four times.'}
     },
     {
-      phase: 'problem', kind: 'question', eyebrow: 'The Consequence Problem',
-      title: 'A trade route carries more than cargo.',
-      subtitle: 'Every merchant, monk, pilgrim, scholar, envoy, and conquest creates contact.',
-      notes: {
-        minutes: 6,
-        land: [
-          'Make contact the mechanism students can see.',
-          'A route is historically important because repeated movement links people who otherwise would interact less often.'
-        ],
-        ask: 'Why does repeated contact matter more than one isolated encounter?',
-        listenFor: 'Ideas can be taught, translated, copied, adapted, repeated, and carried farther.'
-      }
+      id:'beliefs',phase:'beliefs',kind:'frame-triptych',eyebrow:'Beliefs · Diffusion',title:'Beliefs traveled the same routes as goods.',
+      template:{panels:[{title:'Buddhism · East Asia'},{title:'Hinduism + Buddhism · Southeast Asia'},{title:'Islam · West Africa'}]},
+      notes:{minutes:5,land:['These are the three CED belief examples, one picture each. Read them left to right as three routes: the Silk Roads, the sea lanes from India, the Sahara.','Left: the great Buddha at the Mogao Caves, at the Silk Road oasis of Dunhuang, carved in 695. It is older than this period, and that is the point: Buddhism had come into China along the Silk Roads centuries earlier, and in 1200 to 1450 its influence kept shaping China, Korea and Japan.','Middle: Angkor Wat in the Khmer Empire, built in the early 1100s for the Hindu god Vishnu, and later a Buddhist site. Hinduism and Buddhism reached Southeast Asia through trade and contact with India.','Right: the Great Mosque of Djenné in Mali. The present building dates from 1907, on the site of earlier mosques; by local tradition Djenné\'s first great mosque was built when its ruler converted in the 1200s. Islam reached West Africa with trans-Saharan merchants and scholars.','Say plainly which pictures are older or newer than the period. None is a photograph of the moment of diffusion; each is evidence that a belief took root far from where it began.'],story:'Three faiths, three routes, one pattern: people carried beliefs along trade networks, and societies at the other end built them into their own landscape.',ask:'What does each building prove, and what can it not prove on its own?',listenFor:'That the belief took root there and mattered enough to build for; not who carried it, or exactly when and how it arrived.',ap:'Evidence: a building is proof a belief was established, not proof of the route it traveled.'}
     },
     {
-      phase: 'mechanism', kind: 'process', eyebrow: 'Diffusion Mechanism',
-      title: 'Contact does not mean copy-and-paste.',
-      steps: [
-        { label: 'CONTACT', text: 'People meet through networks' },
-        { label: 'TRANSMIT', text: 'A belief, practice, or technology moves' },
-        { label: 'ADAPT', text: 'A receiving society uses or reshapes it' },
-        { label: 'CONSEQUENCE', text: 'Culture or knowledge changes' }
-      ],
-      footer: 'The third box is the reasoning students usually miss.',
-      notes: {
-        minutes: 6,
-        land: [
-          'Model diffusion as a process rather than a destination.',
-          'Receiving societies do not passively copy. They select, translate, combine, and adapt.'
-        ],
-        ask: 'Why is “Buddhism spread” an incomplete AP explanation?',
-        listenFor: 'It does not explain how contact enabled movement or how societies received/adapted it.'
-      }
+      id:'islam',phase:'beliefs',kind:'compounding-stairs',eyebrow:'Name the Carrier · West Africa and Malacca',title:'Islam came with the traders.',footer:'Name the carrier: **who** brought it, along **which route**, and **why** people took it up.',
+      template:{steps:[{label:'Traders',text:'Muslim merchants settle in trading towns and ports.'},{label:'Rulers',text:'Kings in Mali and Malacca convert.'},{label:'Scholars',text:'Mosques, schools, and books follow.'},{label:'Adaptation',text:'Islam blends with local custom.'}]},
+      notes:{minutes:4,land:['This is the chain with a carrier named. In West Africa and in Southeast Asian ports, Islam spread mostly through merchants, scholars and teachers, not armies.','Rulers often converted first, partly because Islam connected them to Muslim merchants and to a wider world of law and learning. Conversion was good for business and for rule, and it was also real belief. Both can be true.','The last step is adaptation. When Ibn Battuta visited Mali in 1352 he admired how carefully people kept Friday prayers, and he disapproved of customs he thought un-Islamic. That disapproval is evidence of a local Islam, blended with West African custom.'],story:'Network → contact → diffusion → adaptation. The trans-Saharan caravans from 2.4 brought Muslim traders; Mali\'s rulers took up Islam; Timbuktu grew schools and libraries; and West African Islam kept local practices alongside the new faith.',ask:'Why would a ruler in Mali or Malacca have a reason to convert?',listenFor:'Ties to Muslim merchants and trade partners, a shared law for contracts, literacy and scholars, prestige in a wider Islamic world.',ap:'Causation: name the agent and the motive, not just the result.'}
     },
     {
-      phase: 'diffusion', kind: 'image', eyebrow: 'Big Rock 1 · Cultural Diffusion',
-      title: 'Beliefs crossed regions.',
-      visual: {
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Buddha,_Cave_96,_Mogao_Caves.jpg',
-        alt: 'Great Buddha in Cave 96 at the Mogao Caves in Dunhuang'
-      },
-      footer: 'Buddhism · Hinduism · Islam',
-      notes: {
-        minutes: 8,
-        land: [
-          'The CED examples are Buddhism in East Asia; Hinduism and Buddhism in Southeast Asia; and Islam in sub-Saharan Africa and Asia.',
-          'Use Dunhuang as visible evidence that a major Silk Road oasis could become a center of Buddhist patronage and practice.',
-          'Do not imply merchants alone caused religious diffusion; monks, missionaries, scholars, rulers, and migrants also moved through connected worlds.'
-        ],
-        ask: 'What can this site prove about Buddhism at a trade-route oasis — and what can it not prove by itself?',
-        listenFor: 'It proves strong Buddhist presence/patronage; it does not by itself prove every route or actor that spread Buddhism.'
-      }
+      id:'tech',phase:'tech',kind:'split-mirror',eyebrow:'Technologies · Diffusion + Adaptation',title:'Paper and gunpowder changed as they moved.',footer:'Diffusion says how it arrived. **Adaptation** says what it became.',
+      template:{left:{name:'Paper'},right:{name:'Gunpowder'},rows:[{label:'Began',left:'China, by about 100 CE',right:'China, in a military manual by 1044'},{label:'Moved',left:'West to Samarkand and Baghdad by about 800',right:'West in the 1200s, along routes the Mongols joined'},{label:'Adapted',left:'Muslim, then European, mills made it from linen rags',right:'Armies in the Islamic world and Europe built it into **cannons**'},{label:'Changed',left:'Cheaper books filled libraries like Baghdad\'s',right:'New kinds of warfare'}]},
+      notes:{minutes:6,land:['These are the two CED technology examples, asked the same four questions so students see one process twice.','Paper is a long story: it reached the Islamic world by about 800, far before 1200, and filled Baghdad\'s libraries. In this period it reached Europe, where paper mills were working in Italy by the late 1200s. Do not say paper "later" followed paper money; papermaking spread west centuries before.','Gunpowder moved in the 1200s, along routes the Mongol conquests tied together. The adaptation is the lesson: armies in the Islamic world and Europe built it into cannons and new kinds of warfare, uses that changed the societies that took it in.','Chinese armies had also developed gunpowder weapons. The point is not that Europe invented cannons; it is that the receiving society reshaped the technology for its own needs.'],story:'Network → contact → diffusion → adaptation → change. Paper and gunpowder left China as one thing and became something else wherever they took root.',ask:'Which row is the adaptation, and why is it the one AP readers look for?',listenFor:'Adapted: it shows the receiving society changed the technology, which is what turns "it spread" into an explanation.',ap:'Causation + continuity and change: the same technology, a different use in a different society.'}
     },
     {
-      phase: 'diffusion', kind: 'image', eyebrow: 'Big Rock 1 · Technological Diffusion',
-      title: 'Technology traveled too.',
-      visual: {
-        url: '../assets/images/topics/2-1/2.1 - Chinese Paper Money.jpg',
-        alt: 'Chinese paper money showing established use of paper and printing'
-      },
-      footer: 'Paper + gunpowder moved outward from China.',
-      notes: {
-        minutes: 7,
-        land: [
-          'Paper and gunpowder are the CED examples.',
-          'This image establishes sophisticated use of paper and printing in China. Papermaking had already spread west to Samarkand and Baghdad by the 700s, centuries before paper money, so the network story explains a diffusion that began long before this note.',
-          'The significance is transfer and adaptation, not simply Chinese invention.'
-        ],
-        ask: 'What does this visual establish — and what part of the diffusion story still requires other evidence?',
-        listenFor: 'It establishes paper technology in China; it does not show the full westward route or timing by itself.'
-      }
+      id:'check1',phase:'check1',kind:'action',eyebrow:'Module 06 · Checkpoint 1',title:'Explain how one belief or technology spread.',subtitle:'Explain how ONE cultural tradition or technology diffused through Afro-Eurasian exchange networks from c. 1200 to c. 1450. Use a specific CED example and explain how the network enabled movement. On your own: no coach.',big:'06',
+      notes:{minutes:7,land:['Independent. Checkpoint 1 is the diagnostic, so no Socrates.','Require a named example (Buddhism, Hinduism, Islam, paper, gunpowder), where it moved, and how the network made it move: a carrier and a route. Adaptation earns the strongest answers.','Give feedback in the room: on an alternating block nothing carries over, and this is the skill Checkpoint 2 builds on.'],story:'This checkpoint locks the chain on beliefs and technologies before the story turns to cities and travelers.',ask:'Where in your answer is the sentence that says how the network moved it?',listenFor:'Because trans-Saharan trade brought Muslim merchants to Mali, its rulers adopted Islam; or, because Mongol rule joined the routes, gunpowder reached the Islamic world and Europe, where armies built it into cannons.',ap:'Evidence + reasoning: example → carrier and route → consequence.'}
     },
     {
-      phase: 'diffusion', kind: 'process', eyebrow: 'Put Diffusion Together',
-      title: 'A network amplifies an idea by repeating contact.',
-      steps: [
-        { label: 'ORIGIN', text: 'A tradition or technology exists somewhere' },
-        { label: 'MOVEMENT', text: 'People or texts carry it' },
-        { label: 'ADOPTION', text: 'Another society uses or adapts it' },
-        { label: 'WIDER REACH', text: 'The network carries it farther' }
-      ],
-      footer: 'Diffusion is movement + adoption, not just movement.',
-      notes: {
-        minutes: 4,
-        land: [
-          'Return to mechanism before changing Big Rocks.',
-          'Students should now be able to use either a religion or a technology in a causation sentence.'
-        ],
-        ask: 'Which step turns simple movement into historical diffusion?',
-        listenFor: 'Adoption/adaptation by receiving societies.'
-      }
+      id:'city-growth',phase:'cities',kind:'frame-letterbox',eyebrow:'Cities · Growth',title:'Trade and farming built great cities.',subtitle:'Hangzhou and Samarkand grew where traffic met, fed by productive farms.',template:{},
+      notes:{minutes:3,land:['The CED claim: rising productivity and expanding trade could boost the growth of cities. Both halves matter. Traffic brought merchants, goods, taxes and services; productive farming fed the crowds.','Hangzhou, the Southern Song capital, grew into one of the largest cities in the world on productive rice farming and busy trade. Samarkand grew into a great Silk Road market where merchants, goods and ideas met.','The picture is an AI reconstruction, labeled on the slide. It sets the scene and is not evidence. Its blue domes look like Samarkand after Timur rebuilt it from 1370, not the city the Mongols destroyed in 1220, and a wheeled ox cart is doing a camel\'s job. If there is a minute, ask what is off.'],story:'Where routes crossed, people gathered to trade, rest, pay taxes and sell services, and where farms could feed them, stopping places became great cities.',ask:'Why does repeated traffic turn a stopping place into a city?',listenFor:'Markets, inns, craftsmen, tax revenue, scholars and services gather where merchants keep arriving, and farms nearby can feed them.',ap:'Causation: two causes of urban growth, productivity and trade.'}
     },
     {
-      phase: 'cities', kind: 'image', eyebrow: 'Big Rock 2 · Urban Growth',
-      title: 'Networks can make cities boom.',
-      visual: {
-        url: '../assets/images/topics/2-1/2.1 - Samarkand.jpg',
-        alt: 'Samarkand, a major Afro-Eurasian trading city'
-      },
-      footer: 'Trade + productivity can concentrate people, services, and wealth.',
-      notes: {
-        minutes: 7,
-        land: [
-          'KC-3.3.II says rising productivity and expanding trade networks could buoy urbanization.',
-          'A network node attracts merchants, artisans, transport workers, storage, services, tax revenue, and information.',
-          'The picture is an AI reconstruction, labeled on the slide: it sets the scene and is not evidence. The evidence is what historians know about Samarkand as a Silk Road market where traffic concentrated economic and cultural life.'
-        ],
-        ask: 'Why does repeated traffic turn a stop into a city?',
-        listenFor: 'Demand for services, markets, labor, storage, taxes, information, and settlement.'
-      }
+      id:'baghdad',phase:'cities',kind:'frame-placard',eyebrow:'Cities · Decline · 1258',title:'The Mongol siege of Baghdad',
+      template:{placard:{tag:'A Connected City Falls · 1258',name:'The Mongol siege of Baghdad',text:'Painted in a Persian history about 1430, nearly two centuries after the siege. Baghdad had been the Abbasid capital for about 500 years and a great center of learning. It never fully recovered its old place.'}},
+      notes:{minutes:3,land:['But a connected city could also fall. In 1258 the Mongols sacked Baghdad, killed the caliph and ended the Abbasid Caliphate.','Say what the picture is: a painting in a Persian history manuscript made about 1430 to 1434, long after the event. It is evidence of how the siege was remembered and pictured, not an eyewitness image.','Baghdad\'s libraries were lost in the sack. Keep the claim to what is known: Baghdad lost its place as the center of the Islamic world, and never fully recovered it.'],story:'The same connections that made Baghdad rich made it a target: a famous, wealthy capital on the routes the Mongols now controlled.',ask:'What does this painting show, and what is its limit as evidence of 1258?',listenFor:'Walls, a river, siege weapons, a city under attack; it was painted almost two centuries later, so it shows memory, not an eyewitness view.',ap:'Sourcing: when a source was made shapes what it can prove.'}
     },
     {
-      phase: 'cities', kind: 'image', eyebrow: 'Big Rock 2 · Urban Decline',
-      title: 'But connectivity never guarantees permanent growth.',
-      visual: {
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bagdad1258.jpg',
-        alt: 'Later medieval manuscript depiction of the Mongol siege of Baghdad'
-      },
-      footer: 'War · route shifts · political disruption can reverse urban fortunes.',
-      notes: {
-        minutes: 7,
-        land: [
-          'The CED explicitly says the fate of cities varied greatly.',
-          'Use Baghdad as supporting evidence for how war can devastate a major urban center; do not present it as a CED illustrative example.',
-          'Route shifts and political breakdown can also redirect merchants, revenue, and population away from a city.'
-        ],
-        ask: 'How can the same era of expanding trade produce growth in one city and decline in another?',
-        listenFor: 'Networks are uneven; cities depend on route location, security, state power, productivity, and continued traffic.',
-        avoid: 'Do not teach “trade made all cities grow.”'
-      }
+      id:'city-timeline',phase:'cities',kind:'timeline',eyebrow:'Cities · Rise and Fall',title:'The same network could build a city or expose it.',footer:'Spacing is true to scale. City fortunes **varied**: war, rulers, and routes decided who rose and who fell.',
+      template:{range:[1120,1380],tick:20,events:[{year:1138,label:'1138',text:'Hangzhou becomes the Southern Song capital and grows huge.'},{year:1220,label:'1220',text:'The Mongols destroy Samarkand.'},{year:1258,label:'1258',text:'The Mongols sack Baghdad; the Abbasid Caliphate ends.'},{year:1276,label:'1276',text:'Hangzhou surrenders to the Mongols and stays a great trading city.'},{year:1370,label:'1370',text:'Timur makes a rebuilt Samarkand his capital.'}]},
+      notes:{minutes:4,land:['This is the CED\'s "fortunes varied" on one line. Read it for the pattern, not the dates.','Hangzhou surrendered in 1276 without a sack, kept its trade, and Marco Polo later described it as the finest city in the world. Baghdad resisted and was destroyed. Same conquerors, opposite results.','Samarkand shows both sides in one city: destroyed in 1220, rebuilt as Timur\'s magnificent capital from 1370. The AI picture two slides back is closer to that second city.'],story:'Connectivity never guaranteed permanent growth. War, a change of rulers or a shift in the routes could reverse a city\'s fortunes, and the same network could bring it back.',ask:'Why did Hangzhou and Baghdad end up so differently under the same conquerors?',listenFor:'Hangzhou surrendered and kept its trade and farms; Baghdad resisted and was sacked; rulers\' choices and war decided the outcome.',ap:'Continuity and change: growth and decline in the same connected world, with causes for each.'}
     },
     {
-      phase: 'travelers', kind: 'hero', eyebrow: 'Big Rock 3 · Travel Accounts',
-      title: 'More movement created more observers.',
-      subtitle: 'Ibn Battuta · Marco Polo · Margery Kempe',
-      visual: {
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Caravane_Marco_Polo.jpg',
-        alt: 'Marco Polo caravan depicted in the Catalan Atlas of 1375'
-      },
-      notes: {
-        minutes: 8,
-        land: [
-          'The CED claim is not that travel suddenly began. It is that intensified exchange networks produced increasing numbers of travelers whose writings survive.',
-          'Ibn Battuta, Marco Polo, and Margery Kempe traveled for different reasons, but each left accounts of distant societies.',
-          'Travel accounts are both evidence of connectivity and imperfect sources shaped by the traveler\'s perspective.'
-        ],
-        ask: 'How does a travel account prove connectivity even before we evaluate whether every detail is accurate?',
-        listenFor: 'The traveler could move across long-distance networks and transmit descriptions to other audiences.'
-      }
+      id:'travelers',phase:'travelers',kind:'timeline-spans',eyebrow:'Travelers · More Travel, More Writing',title:'More people traveled, so more people wrote it down.',footer:'Each account is evidence twice: of distant places, and of a **more connected world**.',
+      template:{range:[1250,1450],tick:50,spans:[{name:'Marco Polo',note:'Venice to Yuan China and back',start:1271,end:1295},{name:'Ibn Battuta',note:'Morocco across Dar al-Islam to India and China',start:1325,end:1354},{name:'Margery Kempe',note:'England to Jerusalem, Rome, and Santiago',start:1413,end:1417}]},
+      notes:{minutes:4,land:['The CED claim is not that travel began now. It is that bigger networks meant more travelers, and more of them left written accounts that survive.','Three CED travelers, three motives: Marco Polo, a Venetian merchant in Mongol China; Ibn Battuta, a Moroccan scholar who worked as a judge in Muslim communities across about thirty years; Margery Kempe, an English Christian pilgrim whose book is often called the first autobiography in English. All three dictated their accounts to someone else.','Rabban Bar Sauma, the next slide, is the traveler going the other way: a monk from Mongol China who reached Rome and Paris as an envoy in 1287 and 1288. He is today\'s primary source, Module 08.','Every account is one traveler\'s point of view, written for readers at home. That makes it evidence and gives it limits.'],story:'Connectivity changes what societies know. Travelers moved farther than ever, and what they wrote let readers at home picture places they would never see.',ask:'How does the number of accounts prove something before we check whether any detail is true?',listenFor:'So many people could travel that far and write about it only because the networks connected those places.',ap:'Evidence: travel writing as proof of connectivity, and as a source with a point of view.'}
     },
     {
-      phase: 'map', kind: 'image', eyebrow: 'Map Check',
-      title: 'Follow the movement, not just the route.',
-      visual: { type: 'map' },
-      footer: 'The same networks moved culture, technology, people, and knowledge.',
-      notes: {
-        minutes: 6,
-        land: [
-          'Trace one religion, one technology, and one traveler through the three networks students already know.',
-          'Use the map to synthesize Unit 2 rather than memorize additional place names.'
-        ],
-        ask: 'Which network best explains each example you choose — and where do networks overlap?',
-        listenFor: 'Silk Roads, Indian Ocean, and trans-Saharan routes all support different examples and often connect to one another.'
-      }
+      id:'atlas',phase:'travelers',kind:'frame-placard',eyebrow:'Travelers · What Europe Knew',title:'A caravan on the Catalan Atlas, 1375',
+      template:{placard:{tag:'What Mapmakers Knew · 1375',name:'A caravan on the Catalan Atlas',text:'Made in Majorca and attributed to Abraham Cresques. Riders and camels cross Asia, a scene often linked to the Polos. What travelers reported became what mapmakers knew.'}},
+      notes:{minutes:2,land:['This is the end of the chain for travelers: knowledge. A mapmaker in Majorca who never went to Asia could draw a caravan crossing it, because travelers\' reports had come back along the networks.','The same atlas is the one that shows Mansa Musa holding gold in 2.4. It is a record of what Mediterranean mapmakers knew and believed in 1375.','Keep the claim modest: the caravan is often linked to the Polo family\'s journey, not proven to be it.'],story:'Connectivity changes what societies know. Reports became books; books became maps.',ask:'How did a mapmaker in Majorca know what to draw?',listenFor:'Travelers\' accounts such as Marco Polo\'s, merchants\' reports, and earlier maps, all carried along the networks.',ap:'Contextualization: a source as evidence of what one society knew about another.'}
     },
     {
-      phase: 'checkpoint', kind: 'action', eyebrow: 'Checkpoint Writing',
-      title: 'Explain ONE intellectual or cultural effect of connectivity.',
-      subtitle: 'Use one specific CED example and explain the mechanism.',
-      action: { label: 'Open Student Lesson', url: '../unit-2/lesson-2-5-cultural-consequences.html#modules' },
-      notes: {
-        minutes: 9,
-        land: [
-          'Require evidence plus mechanism.',
-          'Strong pattern: intensified network -> repeated contact/movement -> specific example -> cultural or intellectual consequence.'
-        ],
-        ask: 'Where is the sentence that explains how the network caused the effect?',
-        listenFor: 'Because exchange increased contact/movement, the idea, technology, or traveler could move and affect another society.'
-      }
+      id:'bar-sauma',phase:'source',kind:'source-quote',eyebrow:'Primary Source · Close Read',title:'Rabban Bar Sauma in Rome, 1288',footer:'Module 08 has the whole exchange.',
+      template:{quote:'… many of our Fathers have gone into the countries of the Mongols, and Turks, and Chinese and have taught them the Gospel, and at the present time there are many Mongols who are Christians.',attribution:{author:'Rabban Bar Sauma',work:'The Monks of Kublai Khan, trans. Budge',year:'1288'},notice:'A monk from Mongol China, in Rome. **What moved across Asia, and who wrote this down?**'},
+      notes:{minutes:3,land:['The words are Bar Sauma\'s as his Syriac biographer recorded them; the ellipsis drops only his opening, "Know ye, O our Fathers, that". Rabban Bar Sauma was a monk of the Church of the East, born around 1220 near the city that became Khanbaliq (Beijing). The Ilkhan Arghun sent him west as an envoy. Here he answers the cardinals in Rome, who are amazed that a Christian has come as the Mongol king\'s ambassador.','Observation first: Christian teachers had gone into Mongol, Turkic and Chinese lands, and many Mongols were Christians. That is a belief moving east, the chain running the other way.','Then sourcing, which is Module 08\'s part (c): this is a religious biography by a Christian admirer, not his own surviving diary, and its author wants the Church of the East to sound far-reaching. "Many Mongols who are Christians" is exactly the kind of claim that purpose could inflate.'],story:'One sentence carries the whole chain: Mongol rule joined the routes, a monk crossed them, a faith had traveled along them, and a writer recorded it for readers far away.',ask:'What in the quote is evidence of diffusion, and what might the biographer have reason to exaggerate?',listenFor:'Teachers carried the Gospel into Mongol, Turkic and Chinese lands; "many Mongols who are Christians" may be inflated by a Christian writer.',ap:'Sourcing: a writer\'s purpose shapes what a source can prove.'}
     },
     {
-      phase: 'debrief', kind: 'grid', eyebrow: 'Common Traps',
-      title: '“It spread” is not an explanation.',
-      cards: [
-        { title: 'WEAK', text: 'Buddhism spread through Asia.' },
-        { title: 'BETTER', text: 'Repeated trade and pilgrimage contacts helped Buddhist teachings move and take root in new societies.' },
-        { title: 'WEAK', text: 'All trade cities grew.' },
-        { title: 'BETTER', text: 'City fortunes varied with trade, productivity, warfare, and route shifts.' }
-      ],
-      notes: {
-        minutes: 4,
-        land: [
-          'The upgrade is mechanism and variation, not more vocabulary.',
-          'Have students repair one sentence before the close.'
-        ],
-        ask: 'What makes the better statements historically defensible?',
-        listenFor: 'They explain process and avoid overgeneralization.'
-      }
+      id:'source',phase:'source',kind:'action',eyebrow:'Module 08 · Primary Source · 10 Minutes',title:'Rabban Bar Sauma explains Eastern Christianity.',subtitle:'Answer all three parts: (a) religion moving across Asia, (b) how Mongol rule made the journey possible, (c) how the Christian biographer\'s point of view affects what the passage can show.',big:'08',
+      notes:{minutes:10,land:['The full passage, the sourcing note and the three questions are in Module 08 on the lesson page.','(a) wants a detail from the passage: teachers taking the Gospel into Mongol, Turkic and Chinese lands; a monk from China in Rome. (b) wants the mechanism: Mongol rule joined China, Persia and the routes west, and the Ilkhan sent him as an envoy. (c) wants one thing the point of view helps us see and one claim it makes less certain.','Circulate for part (c). "The author is biased" is not an answer; which claim does the bias make less certain, and why?'],story:'The source is the whole topic in one conversation: a network, contact, a belief that had traveled, and a written record.',ask:'Which claim in the passage would you check against another source, and why?',listenFor:'"Many Mongols who are Christians", because a Christian biographer has a reason to make the Church sound widespread.',ap:'Sourcing and situation (Skills 2.A and 2.C).'}
     },
     {
-      phase: 'close', kind: 'hero', eyebrow: 'Topic 2.5 · Landing Sentence',
-      title: 'Connectivity changes what societies know — and what they become.',
-      subtitle: 'From c. 1200 to c. 1450, intensified exchange diffused beliefs and technologies, altered city fortunes, and increased travel writing across Afro-Eurasia.',
-      visual: {
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
-        alt: 'Al-Idrisi world map representing accumulated Afro-Eurasian geographic knowledge'
-      },
-      notes: {
-        minutes: 2,
-        land: [
-          'This sentence directly answers Learning Objective J.',
-          'Bridge to 2.6: the same networks also moved living things — crops and pathogens — producing environmental consequences.'
-        ],
-        ask: 'What changes when the thing moving through the network is biological rather than cultural?',
-        listenFor: 'Crops, disease, population, environment — Topic 2.6.'
-      }
+      id:'retelling',retelling:true,phase:'synthesis',kind:'split-matrix',eyebrow:'The Whole Topic',title:'One chain, four changes.',footer:'Read each column top to bottom. Retell the topic from this slide.',
+      template:{columns:[{name:'Beliefs'},{name:'Technologies'},{name:'Cities'},{name:'Travelers'}],rows:[{label:'Contact',cells:['Merchants, monks, scholars','Traders, Mongol armies','Routes cross in one place','Pilgrims, merchants, envoys']},{label:'Diffusion + adaptation',cells:['Faiths take root and blend','Reshaped for new uses','Wealth gathers, or war strikes','Written down for readers at home']},{label:'Change',cells:['New faiths in Asia and Africa','More books; new warfare','Hangzhou rises; Baghdad falls','Societies know far more']}],result:{label:'Spine',text:'Connectivity changes what societies know, and what they **become**.'}},
+      notes:{minutes:5,land:['This is the retelling slide. Blank the screen after a minute and have students redraw it: four columns, three rows.','Check that every column runs the same three steps. That is Jeff\'s point for this lesson: one chain, not four lists.','Then ask for one column as one sentence with "because" and "as a result".'],story:'The whole topic in one frame: the networks from 2.1 to 2.4 at the top of every column, a different kind of change at the bottom.',ask:'Pick one column. Say it as one sentence with "because" and "as a result".',listenFor:'Because merchants and scholars crossed the Sahara, Islam took root in Mali and blended with local custom; as a result, Timbuktu became a center of Islamic learning.',ap:'Causation: the same mechanism producing different effects.'}
+    },
+    {
+      id:'sharpen',phase:'synthesis',kind:'sharpen',eyebrow:'Sharpen the Claim',footer:'An AP-sized claim names the carrier, the change, and why it mattered.',
+      template:{weak:'Islam spread to Africa.',strong:'Because trans-Saharan trade **brought Muslim merchants** to West Africa, Mali\'s rulers adopted Islam, which **connected them** to Muslim law, learning, and trade partners.'},
+      notes:{minutes:3,land:['Read the weak claim and ask what is missing. It is true and it explains nothing: no carrier, no route, no reason, no consequence.','Then reveal the strong one and point at the chain inside it: network (trans-Saharan trade), contact (Muslim merchants), diffusion (rulers adopt Islam), change (connected to law, learning and partners).','Have students upgrade their own Checkpoint 1 sentence the same way before Checkpoint 2.'],story:'The upgrade is the chain, not more vocabulary.',ask:'Which words in the strong claim are the network, the contact, and the change?',listenFor:'Trans-Saharan trade; Muslim merchants; rulers adopted Islam and were connected to law, learning and trade partners.',ap:'Argumentation: a defensible claim with a line of reasoning.'}
+    },
+    {
+      id:'landing',phase:'close',kind:'frame-question',eyebrow:'Topic 2.5 · The Big Idea',title:'Connectivity changes what societies know, and what they become.',subtitle:'More contact spread and reshaped beliefs, technologies, cities, and knowledge.',template:{},
+      notes:{minutes:2,land:['Land the single idea: this sentence answers the learning objective.','The map is al-Idrisi\'s world map of 1154, made at the Norman court in Sicily from merchants\' and travelers\' reports, with south at the top as many Arabic mapmakers drew it. It is older than this period and it is the kind of knowledge connectivity produced.','Bridge to 2.6: the same networks also moved living things, crops and pathogens, including the plague. Same chain, different cargo.','Then send students to Checkpoint 2 on the lesson page for the rest of the block: draft, work with Socrates, revise. Whatever is not finished is homework, and the Checkpoint 2 card already says so.','The prompt asks for ONE way intensified exchange affected cities and ONE way it increased written knowledge about distant societies, using Ibn Battuta, Marco Polo or Margery Kempe as evidence. Circulate for both halves, and for a city that declined as well as one that grew.'],story:'Goods were never the only cargo. What the networks carried changed what people believed, built and knew.',ask:'What is the one sentence you need to remember tomorrow?',listenFor:'Bigger networks → more contact → diffusion and adaptation → cultural and intellectual change.',ap:'Bridge to environmental consequences of connectivity (Topic 2.6).'}
     }
   ]
 };
