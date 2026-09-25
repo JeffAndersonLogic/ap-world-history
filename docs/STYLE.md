@@ -158,6 +158,22 @@ deliberate work, and must be labelled as such. Foundations chapters reach past
 c. 1200 for Mansa Musa and for Ibn Battuta at Mali, and both say so in the text.
 An unmarked anachronism teaches a student that the period boundary is decorative.
 
+### Names
+
+**Chinggis Khan, never Genghis Khan**, everywhere a student or a teacher reads it:
+readings, lesson data, study guides, slides, presenter notes and captions. It is the
+course's spelling, it is the romanization modern scholarship uses, and one course
+spelling it two ways teaches a student that there are two people. Jeff's rule, recorded
+here on 2026-09-25 so that no model has to remember it.
+
+Three exceptions, and only three: a direct quotation, the title of a source, and a
+filename or URL. `YuanEmperorAlbumGenghisPortrait.jpg` is a Commons filename and stays
+exactly as it is, because renaming it breaks the picture. Its caption still says
+Chinggis. Temujin is correct for the years before 1206, when he took the title.
+
+Not yet mechanical, because the check-style ratchet reads only the deep-reading and
+First & 10 content modules and the slips found on 2026-09-25 sit outside them.
+
 ### Quotations
 
 Any direct quotation is checked word for word against a reliable source.
