@@ -140,8 +140,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "split-mirror",
-      "eyebrow": "Technologies · Diffusion + Adaptation",
-      "title": "Paper and gunpowder changed as they moved.",
+      "eyebrow": "Paper and Gunpowder · Diffusion + Adaptation",
+      "title": "They changed as they moved.",
       "footer": "Diffusion says how it arrived. **Adaptation** says what it became.",
       "template": {
         "left": {
@@ -168,7 +168,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Changed",
-            "left": "Cheaper books filled libraries like Baghdad's",
+            "left": "Cheaper books filled Baghdad's libraries",
             "right": "New kinds of warfare"
           }
         ]
@@ -178,7 +178,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "action",
       "eyebrow": "Module 06 · Checkpoint 1",
       "title": "Explain how one belief or technology spread.",
-      "subtitle": "Explain how ONE cultural tradition or technology diffused through Afro-Eurasian exchange networks from c. 1200 to c. 1450. Use a specific CED example and explain how the network enabled movement. On your own: no coach."
+      "subtitle": "Explain how ONE belief system or technology spread through Afro-Eurasian trade networks between about 1200 and 1450. Name a specific example (Buddhism, Hinduism, Islam, paper, or gunpowder), say where it moved, and explain how the network helped it spread. On your own: no coach."
     },
     {
       "kind": "frame-letterbox",

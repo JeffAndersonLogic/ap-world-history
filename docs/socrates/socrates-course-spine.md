@@ -318,7 +318,7 @@ Strong answer checklist: Explain how Mali gained from trade. Explain how Mali he
 
 **AP skill focus.** Sourcing and Situation (Skill 2.A) and Causation.
 
-**Checkpoint 1 prompt.** Explain how ONE cultural tradition or technology diffused through Afro-Eurasian exchange networks from c. 1200 to c. 1450. Use a specific CED example and explain how the network enabled movement.
+**Checkpoint 1 prompt.** Explain how ONE belief system or technology spread through Afro-Eurasian trade networks between about 1200 and 1450. Name a specific example (Buddhism, Hinduism, Islam, paper, or gunpowder), say where it moved, and explain how the network helped it spread.
 Strong answer checklist: Name a specific tradition or innovation. Identify where it moved. Explain how intensified exchange enabled the diffusion.
 
 **Checkpoint 2 prompt.** Explain ONE way intensified exchange affected cities and ONE way it increased written knowledge about distant societies. Use a traveler such as Ibn Battuta, Marco Polo, or Margery Kempe as evidence.

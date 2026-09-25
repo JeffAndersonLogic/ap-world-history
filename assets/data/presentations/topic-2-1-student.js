@@ -13,8 +13,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "subtitle": "Why did trade grow after 1200?",
       "visual": {
         "url": "../assets/images/topics/2-1/2.1%20-%20Silk%20Road%20Map%202.jpg",
-        "alt": "Silk Road network map used as a cinematic opening visual",
-        "credit": "Topic 2.1 classroom visual"
+        "alt": "Map of Silk Road and Indian Ocean trade routes connecting China and the Middle East",
+        "credit": "Map · Silk Road and Indian Ocean trade routes, c. 600 to 1700"
       }
     },
     {

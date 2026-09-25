@@ -9,7 +9,7 @@ const byTitle=needle=>T.slides.find(s=>String(s.title||'').toLowerCase().include
 
 const open=T.slides.find(s=>s.phase==='launch'&&s.kind==='hero');
 if(open){
-  open.visual=visual('2.1 - Silk Road Map 2.jpg','Silk Road network map used as a cinematic opening visual','Topic 2.1 classroom visual');
+  open.visual=visual('2.1 - Silk Road Map 2.jpg','Map of Silk Road and Indian Ocean trade routes connecting China and the Middle East','Map · Silk Road and Indian Ocean trade routes, c. 600 to 1700');
   open.notes=open.notes||{};
   open.notes.land=[
     'Unit 1 focused on regional states. Unit 2 changes the scale to connections among those regions.',
