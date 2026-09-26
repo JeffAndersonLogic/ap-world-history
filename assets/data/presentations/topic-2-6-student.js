@@ -46,9 +46,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         ],
         "visual": {
           "ai": true,
-          "url": "../assets/images/topics/2-6/2.6%20-%20Cargo%20bay%20-%20cover.jpg",
-          "alt": "An illustrated medieval harbor at sunset: dockworkers carry sacks, baskets of citrus and bundles of greens down a gangplank from a ship flying a red cross on white, while rats climb down the mooring rope",
-          "position": "20% 50%"
+          "url": "../assets/images/topics/2-6/2.6%20-%20Cargo%20hold%20-%20cover.jpg",
+          "alt": "An illustrated dim ship's cargo hold lit by a shaft of light from a hatch: crates of citrus fruit, bundles of plants and stacked grain sacks, with several rats crawling over the sacks"
         }
       }
     },

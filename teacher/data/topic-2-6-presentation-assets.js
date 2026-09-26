@@ -4,16 +4,17 @@
  * Rebuilt 2026-09-26 with the template deck. Later that day Jeff uploaded
  * pictures to assets/images/topics/2-6/ and placed them himself:
  *
- * - hook, slide 3 (frame-cover): "2.6 - Cargo bay.jpg", AI-generated (Google
- *   content credentials and SynthID in the file), made from a prompt written
- *   for this cover: a 1300s Mediterranean port where sacks, citrus and greens
- *   come off a ship flying Genoa's red cross while rats climb down the
- *   mooring rope. Both cargoes, one ship. The slide loads "- cover.jpg", a
- *   copy with the bottom 80px trimmed to remove the Gemini sparkle; trimming
- *   with `cropBottom` instead drew the image past the board, which
- *   teaching-os-deck-overflow.test.js rejects. It replaced the Bruegel, which Jeff
- *   moved to the memory slide. "2.6 - Cargo hold.jpg", the second prompt's
- *   result, is in the folder and not used yet.
+ * - hook, slide 3 (frame-cover): "2.6 - Cargo hold.jpg", AI-generated (Google
+ *   content credentials and SynthID in the file): a 1300s ship's hold where
+ *   citrus, plants and grain sacks sit together and rats crawl over the
+ *   sacks. Both cargoes, one hold. The slide loads "- cover.jpg", a copy with
+ *   the bottom 80px trimmed to remove the Gemini sparkle; trimming with
+ *   `cropBottom` instead draws the image past the board, which
+ *   teaching-os-deck-overflow.test.js rejects. Jeff swapped it in on
+ *   2026-09-26 for "2.6 - Cargo bay.jpg", the dock scene from the same set of
+ *   prompts, which stays in the folder (with its trimmed copy) unused. The
+ *   hold picture is also the Unit 2 hub card for 2.6. The Bruegel that was
+ *   first on this slide moved to the memory slide.
  * - memory, slide 13 (frame-triptych, two panels): Michael Wolgemut's Dance of
  *   Death woodcut, printed 1493, beside Pieter Bruegel the Elder's The Triumph
  *   of Death, c. 1562, Museo del Prado, public domain. Both are how Europe
@@ -62,11 +63,11 @@ const TRIUMPH={url:local('2.6 - The-Triumph-of-Death-1024x730.webp'),alt:'Pieter
 const CROPS={fit:'contain',url:MAPS+'topic-2-6-crops.svg',alt:'Instructional map tracing bananas into Africa, new rice varieties into East Asia and citrus around the Mediterranean',credit:'BeHistorical instructional map · secondary reconstruction'};
 const PLAGUE_MAP={fit:'contain',url:local('2.6 - Map of the Bubonic Plague - web.jpg'),alt:'Map titled The Spread of the Plague in Europe, 1346 to 1353. Shading from dark red for 1346 to pale lilac for 1352 and 1353 shows the plague arriving from the east at the Black Sea, crossing the Mediterranean to Italy, Egypt and the Levant, and spreading north across Europe to Scandinavia and Russia, with arrows along sea lanes and roads and dots marking cities with known death rates',credit:'Map · Simeon Netchev · World History Encyclopedia',tagPos:'tl'};
 const DANCE={fit:'contain',url:FP+'Danse_macabre_by_Michael_Wolgemut.png',sourceUrl:FILE+'Danse_macabre_by_Michael_Wolgemut.png',alt:'Woodcut of skeletons dancing, from the Dance of Death tradition',credit:'Michael Wolgemut, 1493 · public domain'};
-const CARGO_BAY_AI={ai:true,url:local('2.6 - Cargo bay - cover.jpg'),alt:'An illustrated medieval harbor at sunset: dockworkers carry sacks, baskets of citrus and bundles of greens down a gangplank from a ship flying a red cross on white, while rats climb down the mooring rope',position:'20% 50%'};
+const CARGO_HOLD_AI={ai:true,url:local('2.6 - Cargo hold - cover.jpg'),alt:'An illustrated dim ship\'s cargo hold lit by a shaft of light from a hatch: crates of citrus fruit, bundles of plants and stacked grain sacks, with several rats crawling over the sacks'};
 const RICE_AI={ai:true,url:local('2.6 - Rice in East Asia.jpg'),alt:'An illustrated scene of farmers in straw hats planting rice seedlings in flooded terraced paddies below a hillside village',position:'50% 60%'};
 
 const TEMPLATE_VISUALS={
-  'hook':{visual:CARGO_BAY_AI},
+  'hook':{visual:CARGO_HOLD_AI},
   'crops-map':{visual:CROPS},
   'plague-map':{visual:PLAGUE_MAP},
   'landing':{visual:RICE_AI}

@@ -121,8 +121,8 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'Start with continuity across the unit. Students already know the networks; they need to see why this topic is the payoff.',
           'The question is no longer only what merchants carried intentionally. Ask what moved accidentally with people, animals, cargo, ships, and caravans.',
-          'The cover picture is AI-generated and labeled on the slide. It is set at a Mediterranean port in the 1300s: dockworkers carry sacks, citrus and green bundles off a ship flying Genoa\'s red cross, the same merchants who ran Caffa. Ask students to find the rats on the mooring rope at the left. That is the whole topic in one picture: the food and the plague came off the same ship.',
-          'It sets the scene; it is not evidence. The ship looks more like a vessel from the 1400s than the 1340s, and the green bundles are not clearly any crop.'
+          'The cover picture is AI-generated and labeled on the slide. It is the cargo hold of a merchant ship: crates of citrus, bundles of plants and sacks of grain packed together, and rats crawling over the sacks. Ask students what in this hold nobody meant to ship. That is the whole topic in one picture: the food and the plague rode in the same hold.',
+          'It sets the scene; it is not evidence. The slatted fruit crates look modern, and the faint markings on the sacks are not real writing.'
         ],
         ask: 'What moved through networks before today?',
         listenFor: 'Goods, money, technologies, beliefs, travelers, information.'
