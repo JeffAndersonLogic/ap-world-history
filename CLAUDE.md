@@ -35,11 +35,20 @@ A presentation is not complete because a file or commit exists. Follow the autho
   size the branch list stops being usable and no later pruning fixes the cause.
   Delete it only after `origin/main` and the branch are the same commit and the
   branch is an ancestor of `main`; then it is provably free. **A Claude Code web
-  session cannot do the remote half**: that environment's git proxy drops delete
-  refspecs and answers `Everything up-to-date` to a delete, so the branch survives
-  while the command looks like it worked. Check with `git ls-remote` and say so
-  plainly rather than reporting a branch deleted. The **ship-to-main** skill has
-  the procedure and the exact failure text.
+  session cannot do the remote half**: git writes of that kind are refused there with
+  HTTP 403, and git prints `Everything up-to-date` afterwards, so a delete that was
+  refused by policy reads like a no-op that found nothing to do. Check with
+  `git ls-remote` and say so plainly rather than reporting a branch deleted. The
+  **ship-to-main** skill has the procedure, the exact failure text and the routes
+  that are also blocked.
+- **Before deleting any branch you did not just ship, check whether it heads an open
+  pull request.** Deleting the head branch closes the PR. The repository's own rule is
+  that there are no pull requests, so it is easy to forget that fourteen are open
+  anyway, mostly opened from other tools. In the 2026-09-26 batch pass exactly one
+  branch of 56 was an open PR's head, #7, and nothing about the branch itself said so:
+  it is four months stale, it is named like every other agent branch, and its work was
+  retired from the repository weeks ago. `list_pull_requests` with `state: open` and a
+  `grep -Fxf` against the delete list is the whole check.
 - The rule in `.github/branch-ruleset.json` is applied, as of 2026-09-01: the API
   reports `main` protected. Committing directly to `main` no longer works, so the
   branch-then-fast-forward flow above is the only route and the escape hatch this
