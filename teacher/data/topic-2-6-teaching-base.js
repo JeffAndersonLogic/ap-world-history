@@ -52,7 +52,7 @@ window.BEHISTORICAL_TEACHING = {
 
   quickLaunch: [
     { label: 'Student Lesson 2.6', url: '../unit-2/lesson-2-6-environmental-consequences.html' },
-    { label: 'First & 10', url: '../unit-2/first-and-10-topic-2-6-environmental-consequences-capture.html?v=response-id-fix-v1' },
+    { label: 'First & 10', url: '../unit-2/first-and-10-topic-2-6-environmental-consequences-capture.html?v=feed-kill-v1' },
     { label: 'BeInTheRoom: Plague Europe', url: '../beintheroom/unit-2/plague-europe.html' },
     { label: 'Deep Reading', url: '../unit-2/deep-reading-topic-2-6-environmental-consequences.html' },
     { label: 'Heimler 2.6 Review', url: 'https://youtu.be/PKQzXPAAFBA' }
@@ -165,7 +165,7 @@ window.BEHISTORICAL_TEACHING = {
       title: 'Read for two branches.',
       subtitle: 'Branch 1: crops that changed food supply. Branch 2: pathogens that changed populations.',
       big: '10',
-      action: { label: 'Open First & 10', url: '../unit-2/first-and-10-topic-2-6-environmental-consequences-capture.html?v=response-id-fix-v1' },
+      action: { label: 'Open First & 10', url: '../unit-2/first-and-10-topic-2-6-environmental-consequences-capture.html?v=feed-kill-v1' },
       notes: {
         minutes: 10,
         land: [

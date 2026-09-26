@@ -173,8 +173,8 @@ window.BEHISTORICAL_LESSON = {
   },
 
   first10: {
-    title: 'First & 10: Crops, Pathogens, and Connected Environments',
-    embedUrl: 'first-and-10-topic-2-6-environmental-consequences-capture.html?v=response-id-fix-v1'
+    title: 'First & 10: The Same Network Could Feed You and Kill You',
+    embedUrl: 'first-and-10-topic-2-6-environmental-consequences-capture.html?v=feed-kill-v1'
   },
 
   evidenceLab: {

@@ -84,7 +84,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "subtitle": "Branch 1: crops that changed food supply. Branch 2: pathogens that changed populations.",
       "action": {
         "label": "Open First & 10",
-        "url": "first-and-10-topic-2-6-environmental-consequences-capture.html?v=response-id-fix-v1"
+        "url": "first-and-10-topic-2-6-environmental-consequences-capture.html?v=feed-kill-v1"
       }
     },
     {

@@ -268,37 +268,43 @@ module.exports = {
     lessonPage: 'lesson-2-6-environmental-consequences.html',
     docTitle: 'BeHistorical — Module 06 | First &amp; 10 | Topic 2.6 Environmental Consequences of Connectivity',
     headerSubtitle: 'Topic 2.6, Environmental Consequences of Connectivity &nbsp;|&nbsp; AP World History: Modern',
-    titleHtml: 'Crops and Pathogens <em>on the Move</em>',
-    deck: 'Trade networks moved living things as well as manufactured goods. Crops entered new environments and changed food production, while pathogens traveled through the same connected world and could produce devastating demographic effects.',
+    titleHtml: 'The Same Network Could Feed You and <em>Kill</em> You',
+    deck: 'Nobody planned it, but trade connected more than markets. The same routes that carried silk and spices also carried seeds, rats, fleas, and germs, and what arrived could feed a region or empty it.',
     skillTags: ['Causation', 'Humans & Environment', 'Comparison'],
+    supportHeadings: { before: 'The Story to Hold Onto', target: 'Question for Today' },
     supportCards: {
-      beforeYouRead: 'Keep two branches visible: crops and pathogens. The same connectivity can increase agricultural productivity in one case and spread epidemic disease in another.',
-      readingTarget: 'By the end, you should be able to explain crop diffusion using bananas, new rice varieties, and citrus, and explain how trade routes contributed to the spread of bubonic plague.'
+      beforeYouRead: '<strong>Busier routes → Living things ride along → They land somewhere new → More food, or mass death.</strong> Crops and plague both follow that chain. Only the last step is different.',
+      readingTarget: 'When trade connected distant regions, what living things moved with it, and why did some of them feed people while others killed them?'
     },
-    vocabulary: ['Crop Diffusion', 'Bananas in Africa', 'New Rice Varieties', 'Citrus', 'Mediterranean', 'Bubonic Plague', 'Black Death', 'Pathogen', 'Trade Routes', 'Demographic Change'],
+    vocabulary: ['Ecosystem', 'Crop Diffusion', 'Bananas', 'Agricultural Productivity', 'New Rice Varieties', 'Champa Rice', 'Citrus', 'Pathogen', 'Bubonic Plague', 'Caffa', 'Black Death', 'Demographic Change', 'Labor Shortage'],
     sections: [
-      section('1', 'Environmental Pattern', 'Networks Moved Living Things', [
-        'Merchants and travelers did not carry only textiles, metals, and luxury goods. Seeds, plants, animals, insects, and microorganisms also moved through connected Afro-Eurasian networks.',
-        'That movement could be intentional, as with useful crops, or unintended, as with disease. Topic 2.6 asks students to recognize both as <span class="kt">environmental consequences of connectivity</span>.'
-      ], 'AP Thinking, Causation', '<strong>The network is the pathway.</strong> Explain how repeated movement among regions allowed a crop or pathogen to expand beyond its earlier range.'),
-      section('2', 'Crops', 'Useful Plants Changed Regional Agriculture', [
-        '<span class="kt">Bananas in Africa</span> expanded food options in environments where the crop could thrive. Their diffusion is one example of exchange altering regional agriculture and the ability of communities to support population.',
-        '<span class="kt">New rice varieties in East Asia</span>, including faster-ripening strains, could increase agricultural productivity. <span class="kt">Citrus in the Mediterranean</span> provides another example of crops moving into new growing regions through long-distance contacts.'
-      ], 'AP Thinking, Effects', '<strong>For crops, finish the chain:</strong> network movement → new crop in a suitable environment → changed production, diet, or population-supporting capacity.'),
-      section('3', 'Pathogens', 'The Same Connectivity Spread Plague', [
-        '<span class="kt">Bubonic plague</span> spread along connected trade and travel routes during the 14th century. Movement across overland and maritime corridors helped carry the disease into densely connected Afro-Eurasian populations.',
-        'The resulting <span class="kt">Black Death</span> caused enormous mortality in affected regions. The key Unit 2 mechanism is not that trade created the pathogen; it is that intensified connectivity helped a disease move farther and faster.'
-      ], 'AP Thinking, Causation', '<strong>Distinguish origin from transmission.</strong> A pathogen can exist before a network expands; connectivity changes the scale and speed of its spread.'),
-      section('4', 'Synthesis', 'Connectivity Increased Both Capacity and Vulnerability', [
-        'Crop diffusion and pathogen diffusion point in different directions but arise from the same structural condition: regions were more connected. Useful plants could raise productive capacity, while epidemic disease could sharply reduce population.',
-        'A strong historical explanation therefore avoids calling connectivity simply beneficial or harmful. Networks increased the movement of biological material, and the consequences depended on what moved and the environments and populations that received it.'
-      ], 'AP Thinking, Comparison', '<strong>Compare mechanisms, not morality.</strong> Crops and pathogens both moved through networks; their effects differed because the biological material and receiving environments differed.')
+      section('1', 'The Idea', 'Nobody Ordered This Cargo', [
+        'For five topics you have followed the roads people built: the Silk Roads, the Indian Ocean, and the trans-Saharan routes. You have watched goods, money, beliefs, and inventions travel on them. Every one of those was carried on purpose. Somebody chose to pack the silk, and somebody chose to teach the faith.',
+        'But a caravan or a ship also carried things nobody chose. Seeds rode along in sacks of grain. Rats lived in cargo holds, and fleas lived on the rats. Travelers carried germs in their own bodies. Every region has its own <span class="kt">ecosystem</span>, the plants, animals, and tiny living things that live together in one place. When trade connected distant regions over and over, it connected their ecosystems too, and it did that by accident.',
+        'Some of the living things that moved were useful plants. Others were deadly diseases. This reading follows both, because they traveled the same roads.'
+      ], 'AP Thinking, Causation', '<strong>The route is the cause.</strong> A crop or a disease did not cross a continent on its own. Say which network moved it and what carried it.'),
+      section('2', 'Crops', 'The Road Brought Food', [
+        'The spread of plants into new regions is called <span class="kt">crop diffusion</span>. A new crop mattered when it grew well in its new home and changed what the land there could produce.',
+        '<span class="kt">Bananas</span> were first grown in Southeast Asia. Sailors and traders carried them across the Indian Ocean to East Africa, and from the coast they spread inland. Bananas grow well in warm, wet places where some older crops struggled, so farmers could raise more food from the same land. That is higher <span class="kt">agricultural productivity</span>, and more food could support more people.',
+        'In East Asia, <span class="kt">new rice varieties</span> did the same thing. You met one in Topic 1.1: <span class="kt">Champa rice</span>, a fast-ripening rice from Champa, in present-day Vietnam, that let Chinese farmers harvest more than once a year. More harvests meant more food, and more food supported a larger population and bigger cities.',
+        '<span class="kt">Citrus</span> fruits such as lemons and sour oranges traveled west from South Asia with Muslim merchants and farmers. By the 1200s they grew in orchards around the Mediterranean, in places such as Sicily and Spain, and they changed what farmers there grew and what people ate.'
+      ], 'AP Thinking, Causation', '<strong>A crop name is not an answer.</strong> "Bananas spread to Africa" is true and explains nothing. Finish the chain: a network moved the crop, it grew well in a new place, and that changed how much food the land could produce and how many people it could support.'),
+      section('3', 'Pathogens', 'The Same Road Brought Death', [
+        'A <span class="kt">pathogen</span> is a germ that causes disease. The most famous pathogen of this era caused <span class="kt">bubonic plague</span>. It lived in fleas, the fleas lived on rats and other rodents, and when the rodents died the fleas jumped to people. The disease was not new. Outbreaks had struck centuries earlier. What was new by the 1300s was how connected the world had become.',
+        'Under the Mongols, trade and travel across Afro-Eurasia were busier than ever. Most historians think the plague began spreading in Central Asia and moved west along those routes. By 1346 it had reached the Black Sea, where merchants from Genoa, in Italy, ran the trading port of <span class="kt">Caffa</span>. In 1347 ships from the Black Sea carried infected rats and sailors into the Mediterranean, and the disease reached Constantinople, Sicily, and Egypt. Within a few years it had spread across Europe, North Africa, and Southwest Asia, following the same sea lanes and caravan roads that carried trade.',
+        'The result was the <span class="kt">Black Death</span>. In many regions it killed a third or more of the population, and in some cities about half. A change that large in the number of people living in a place is a <span class="kt">demographic change</span>. With so many dead, there was a <span class="kt">labor shortage</span>: too few people to farm the fields and work in the towns. In parts of Europe, surviving workers could demand higher pay.'
+      ], 'AP Thinking, Causation', '<strong>Trade did not create the plague. It moved it.</strong> The disease existed before. Busier, denser connections let it travel farther and faster and reach people who had never faced it. The plague was not new. The highway system was better.'),
+      section('4', 'The Big Idea', 'The Network Was Not Good or Bad. It Was Powerful.', [
+        'It is tempting to call connectivity good because it spread food, or bad because it spread death. Both are too simple. The same routes did both, at the same time.',
+        'A busy network carries whatever gets on it. When a useful plant landed somewhere it could grow, food production rose and a region could support more people. When a pathogen landed in crowded ports and towns, deaths rose and the population fell. The network was the same. What changed the result was what traveled and where it landed.',
+        'That is the story of this topic. Trade accidentally connected ecosystems, and the same network could feed you and kill you.'
+      ], 'AP Thinking, Comparison', '<strong>Compare the chains, not the morals.</strong> Both chains start the same way: regions connect, a living thing travels, and it lands somewhere new. Only the last step is different: more food, or more death.')
     ],
-    takeaway: 'Afro-Eurasian networks diffused crops such as bananas, new rice varieties, and citrus while also spreading pathogens such as bubonic plague. Connectivity changed environments and populations because it moved living things across regional boundaries.',
+    takeaway: 'Trade accidentally connected ecosystems. Bananas reached Africa, new rice varieties such as Champa rice spread in China, and citrus reached the Mediterranean, and each let the land feed more people. Bubonic plague traveled the same roads in the 1340s, and the Black Death killed a third or more of the population in many regions, leaving labor shortages behind. The network was not good or bad. It was powerful: the same network could feed you and kill you.',
     questions: [
-      { num: '01', skill: 'Causation', text: 'Choose bananas in Africa, new rice varieties in East Asia, or citrus in the Mediterranean. Explain how diffusion of that crop produced an environmental or demographic effect.', placeholder: 'The diffusion of ___ affected ___ by...' },
-      { num: '02', skill: 'Causation', text: 'Explain how intensified trade routes contributed to the spread of bubonic plague without claiming that trade created the disease.', placeholder: 'Trade routes contributed to plague spread by...' },
-      { num: '03', skill: 'Comparison', text: 'Compare crop diffusion and pathogen diffusion as environmental consequences of the same exchange networks.', placeholder: 'Both crops and pathogens moved because... However, their effects differed because...' }
+      { num: '01', skill: 'Causation', text: 'Choose bananas in Africa, new rice varieties in East Asia, or citrus in the Mediterranean. Explain how a trade network moved that crop and how it changed what the land could support.', placeholder: 'A trade network moved ___ to ___ by... As a result, the land could...' },
+      { num: '02', skill: 'Causation', text: 'Explain how trade routes helped bubonic plague spread in the 1300s, and name one consequence of the Black Death. Do not claim that trade created the disease.', placeholder: 'Trade routes helped the plague spread because... One consequence was...' },
+      { num: '03', skill: 'Comparison', text: 'The same network could feed you and kill you. Explain what was the same about how crops and plague spread, and why their effects were opposite.', placeholder: 'Both crops and plague spread because... Their effects were opposite because...' }
     ]
   }),
 
