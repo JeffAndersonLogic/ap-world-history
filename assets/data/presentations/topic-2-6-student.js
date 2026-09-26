@@ -7,40 +7,49 @@ window.BEHISTORICAL_STUDENT_DECK = {
   },
   "slides": [
     {
-      "kind": "process",
-      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "kind": "beready-recall",
+      "eyebrow": "BeReady · Recall · No Notes",
       "title": "Pull the network story back from memory.",
-      "subtitle": "Short answers are enough. Retrieve first; we will build from them.",
-      "footer": "Retrieve -> connect -> enter the new problem.",
-      "steps": [
-        {
-          "label": "BELIEF",
-          "text": "Name one belief system that spread along a trade network, and the network it used."
-        },
-        {
-          "label": "TECHNOLOGY",
-          "text": "Name one technology that moved from one region to another."
-        },
-        {
-          "label": "CITIES",
-          "text": "Why could a network make one city boom and let another decline?"
-        },
-        {
-          "label": "BRIDGE",
-          "text": "People chose to carry goods and ideas. What moved on these routes that nobody chose to carry?"
-        }
-      ]
+      "template": {
+        "questions": [
+          {
+            "label": "Belief",
+            "text": "Name one belief system that spread along a trade network, and the network it used."
+          },
+          {
+            "label": "Technology",
+            "text": "Name one technology that moved from one region to another."
+          },
+          {
+            "label": "Cities",
+            "text": "Why could a network make one city boom and let another decline?"
+          }
+        ],
+        "turn": "People chose to carry goods and ideas. **What moved on these routes that nobody chose to carry?**"
+      }
     },
     {
-      "kind": "hero",
+      "kind": "frame-cover",
       "eyebrow": "AP World History · Topic 2.6",
       "title": "The Cargo Nobody Ordered",
-      "subtitle": "In 2.1-2.4, people built the roads. In 2.5, ideas moved. Now living things get on the same roads.",
-      "position": "left",
-      "visual": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg",
-        "alt": "Map of major Afro-Eurasian exchange routes",
-        "credit": "Wikimedia Commons · exchange-route reference map"
+      "template": {
+        "masthead": "CONNECTED",
+        "issue": "Topic 2.6 · The Living Things Issue",
+        "story": {
+          "tag": "Cover Story",
+          "title": "The Cargo Nobody Ordered"
+        },
+        "lines": [
+          "In 2.1 to 2.4, people built the roads",
+          "In 2.5, ideas moved along them",
+          "Now living things get on the same roads"
+        ],
+        "visual": {
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Silk_route.jpg",
+          "alt": "Map of the overland and maritime exchange routes linking Afro-Eurasia",
+          "credit": "Map · Afro-Eurasian exchange routes"
+        }
       }
     },
     {
@@ -51,30 +60,27 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "grid",
-      "eyebrow": "Three Big Rocks",
+      "eyebrow": "The Shape of the Topic",
       "title": "The whole topic has two branches.",
+      "footer": "Not two topics. **Opposite consequences of the same system.**",
       "cards": [
         {
           "title": "BIOLOGICAL CORRIDORS",
           "text": "Networks connected environments as well as markets."
         },
         {
-          "title": "CROPS",
+          "title": "BRANCH 1 · CROPS",
           "text": "Useful plants moved into new regions and could support more food production."
         },
         {
-          "title": "PATHOGENS",
+          "title": "BRANCH 2 · PATHOGENS",
           "text": "Disease moved through the same connections and could devastate populations."
-        },
-        {
-          "title": "AP VERB",
-          "text": "Explain means because. Lists do not score by themselves."
         }
       ]
     },
     {
       "kind": "action",
-      "eyebrow": "First & 10 · 10 Minutes",
+      "eyebrow": "Module 02 · First & 10 · 10 Minutes",
       "title": "Read for two branches.",
       "subtitle": "Branch 1: crops that changed food supply. Branch 2: pathogens that changed populations.",
       "action": {
@@ -83,38 +89,48 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "map",
-      "eyebrow": "Cargo #1 · Crops",
+      "kind": "frame-placard",
+      "eyebrow": "Cargo 1 · Crops",
       "title": "The road brings food.",
-      "visual": {
-        "url": "../assets/images/instructional-maps/topic-2-6-crops.svg",
-        "alt": "Instructional map of crop diffusion across Afro-Eurasia",
-        "credit": "BeHistorical instructional map · Topic 2.6 crop diffusion"
-      },
-      "footer": "Bananas in Africa · new rice varieties in East Asia · citrus in the Mediterranean"
+      "template": {
+        "placard": {
+          "tag": "Crop Diffusion · Three Movements",
+          "name": "The road brings food.",
+          "text": "Bananas into Africa. New rice varieties in East Asia. Citrus around the Mediterranean. Each one is a plant arriving where it had not grown before."
+        },
+        "visual": {
+          "fit": "contain",
+          "url": "../assets/images/instructional-maps/topic-2-6-crops.svg",
+          "alt": "Instructional map tracing bananas into Africa, new rice varieties into East Asia and citrus around the Mediterranean",
+          "credit": "BeHistorical instructional map · secondary reconstruction"
+        }
+      }
     },
     {
-      "kind": "grid",
+      "kind": "equation-stack",
       "eyebrow": "Crop Consequences",
       "title": "Every example needs a so what.",
-      "cards": [
-        {
-          "title": "BANANAS -> AFRICA",
-          "text": "New agricultural possibilities in suitable tropical environments."
-        },
-        {
-          "title": "RICE -> EAST ASIA",
-          "text": "Higher productive capacity and support for larger populations."
-        },
-        {
-          "title": "CITRUS -> MEDITERRANEAN",
-          "text": "New crops changed regional agriculture and diets."
-        },
-        {
-          "title": "BECAUSE",
-          "text": "Connectivity moved crops beyond earlier ranges."
+      "footer": "A crop name with no consequence attached is **not an answer**.",
+      "template": {
+        "terms": [
+          {
+            "word": "Bananas",
+            "note": "Into Africa: new agricultural possibilities in suitable tropical environments"
+          },
+          {
+            "word": "New rice varieties",
+            "note": "In East Asia: higher productive capacity, supporting larger populations"
+          },
+          {
+            "word": "Citrus",
+            "note": "Around the Mediterranean: changed regional agriculture and diets"
+          }
+        ],
+        "result": {
+          "word": "What the land could support",
+          "note": "Because connectivity moved crops beyond their earlier ranges"
         }
-      ]
+      }
     },
     {
       "kind": "process",
@@ -142,7 +158,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "action",
-      "eyebrow": "Checkpoint 1",
+      "eyebrow": "Module 06 · Checkpoint 1",
       "title": "Trace one crop from network to consequence.",
       "subtitle": "Name the crop. Name the region. Explain what changed because it moved.",
       "action": {
@@ -151,15 +167,22 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "map",
-      "eyebrow": "Cargo #2 · Pathogens",
+      "kind": "frame-placard",
+      "eyebrow": "Cargo 2 · Pathogens",
       "title": "The same road brings death.",
-      "visual": {
-        "url": "../assets/images/instructional-maps/topic-2-6.svg",
-        "alt": "Instructional map of the spread of the Black Death",
-        "credit": "BeHistorical instructional map · Topic 2.6 plague diffusion"
-      },
-      "footer": "Bubonic plague moved through connected trade routes and port cities."
+      "template": {
+        "placard": {
+          "tag": "Reconstructed Map · c. 1340 to 1353",
+          "name": "The same road brings death.",
+          "text": "Bubonic plague plotted along the trade corridors, coastlines and port cities. A reconstruction shows the pattern of spread; it cannot show any single transmission."
+        },
+        "visual": {
+          "fit": "contain",
+          "url": "../assets/images/instructional-maps/topic-2-6.svg",
+          "alt": "Instructional map of the spread of the Black Death across Afro-Eurasian trade corridors",
+          "credit": "BeHistorical instructional map · secondary reconstruction"
+        }
+      }
     },
     {
       "kind": "process",
@@ -173,7 +196,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         },
         {
           "label": "MOVEMENT",
-          "text": "Ships, caravans, people, and animals connect regions"
+          "text": "Ships, caravans, people, and the rats and fleas aboard them"
         },
         {
           "label": "JUMP",
@@ -186,15 +209,22 @@ window.BEHISTORICAL_STUDENT_DECK = {
       ]
     },
     {
-      "kind": "hero",
+      "kind": "frame-placard",
       "eyebrow": "Human Consequence",
       "title": "Connection can become catastrophe.",
-      "subtitle": "The Black Death caused massive mortality and demographic disruption across connected Afro-Eurasian regions.",
-      "position": "right",
-      "visual": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Danse_macabre_by_Michael_Wolgemut.png",
-        "alt": "Michael Wolgemut print of the Dance of Death, 1493",
-        "credit": "Michael Wolgemut, 1493 · later cultural-memory evidence"
+      "template": {
+        "placard": {
+          "tag": "Later Evidence · Printed 1493",
+          "name": "The Dance of Death",
+          "text": "Michael Wolgemut printed this about 145 years after the outbreak. It is evidence of how Europe remembered mass mortality, not a picture of 1348."
+        },
+        "visual": {
+          "fit": "contain",
+          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Danse_macabre_by_Michael_Wolgemut.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Danse_macabre_by_Michael_Wolgemut.png",
+          "alt": "Woodcut of skeletons dancing, from the Dance of Death tradition",
+          "credit": "Michael Wolgemut, 1493 · public domain"
+        }
       }
     },
     {
@@ -204,63 +234,56 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "subtitle": "A powerful network amplifies whatever enters it: crops, ideas, people, goods, or pathogens."
     },
     {
-      "kind": "process",
+      "kind": "split-mirror",
       "eyebrow": "Same Cause · Opposite Effects",
       "title": "The same network could feed you and kill you.",
-      "footer": "This is the slide the lesson is driving toward.",
-      "steps": [
-        {
-          "label": "CROP",
-          "text": "Network -> crop moves -> grows somewhere new -> food/productivity can increase"
+      "footer": "Same first three rows. **Opposite last row.** Both were happening at once.",
+      "template": {
+        "left": {
+          "name": "Crops"
         },
-        {
-          "label": "PATHOGEN",
-          "text": "Network -> disease moves -> reaches new populations -> mortality can increase"
+        "right": {
+          "name": "Pathogens"
         },
-        {
-          "label": "SAME CAUSE",
-          "text": "Intensified connectivity moves living things farther"
-        },
-        {
-          "label": "OPPOSITE EFFECTS",
-          "text": "Productive capacity and demographic catastrophe can happen together"
-        }
-      ]
+        "rows": [
+          {
+            "label": "Network",
+            "left": "Regions connect more often",
+            "right": "Regions connect more often"
+          },
+          {
+            "label": "What moves",
+            "left": "A useful plant travels with people and cargo",
+            "right": "A pathogen travels with people and cargo"
+          },
+          {
+            "label": "Where it lands",
+            "left": "An environment where it grows well",
+            "right": "A population with no prior exposure"
+          },
+          {
+            "label": "Consequence",
+            "left": "Production and the population a region can support **rise**",
+            "right": "Mortality **rises** and population falls"
+          }
+        ]
+      }
     },
     {
-      "kind": "grid",
-      "eyebrow": "AP Writing Move",
+      "kind": "sharpen",
+      "eyebrow": "AP Writing Move · Explain Means Because",
       "title": "Explain means because.",
-      "cards": [
-        {
-          "title": "LIST",
-          "text": "Bananas spread to Africa."
-        },
-        {
-          "title": "EXPLAIN",
-          "text": "Because Indian Ocean networks moved crops, bananas could spread into suitable African environments and support new agricultural possibilities."
-        },
-        {
-          "title": "LIST",
-          "text": "The plague spread on trade routes."
-        },
-        {
-          "title": "EXPLAIN",
-          "text": "Because trade connected ports and cities more densely, plague could move farther and cause massive mortality."
-        }
-      ]
+      "footer": "An AP-sized claim names the **network**, the **movement**, and the **consequence**.",
+      "template": {
+        "weak": "Bananas spread to Africa.",
+        "strong": "Because Indian Ocean networks **moved crops** between regions, bananas could spread into suitable African environments and **open new agricultural possibilities**."
+      }
     },
     {
-      "kind": "hero",
+      "kind": "prompt",
       "eyebrow": "Topic 2.6 · Landing Sentence",
       "title": "Connectivity connected ecosystems.",
-      "subtitle": "From c. 1200 to c. 1450, exchange networks spread crops that could increase productive capacity and pathogens that could cause devastating demographic decline.",
-      "position": "right",
-      "visual": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg",
-        "alt": "Map of major Afro-Eurasian exchange routes",
-        "credit": "Wikimedia Commons · exchange-route reference map"
-      }
+      "subtitle": "From c. 1200 to c. 1450, exchange networks spread crops that could increase productive capacity and pathogens that could cause devastating demographic decline."
     }
   ]
 };

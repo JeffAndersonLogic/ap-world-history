@@ -8,6 +8,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const vm = require('vm');
 const ROOT = path.resolve(__dirname, '..', '..');
 const read = rel => fs.readFileSync(path.join(ROOT, rel), 'utf8');
 const exists = rel => fs.existsSync(path.join(ROOT, rel));
@@ -67,8 +68,30 @@ for (const key of teachingKeys) {
     // Guard actual teacher-coaching fields/labels, not ordinary student prose such as
     // “the story” or a historical use of “land.” The prior broad word check created
     // false positives when projected copy legitimately used those English words.
-    const teacherPayload = /\bnotes\s*:|listenFor|teacher intelligence|AP CONNECTION|["'](?:land|story|ask|avoid)["']\s*:/i;
+    //
+    // "story" is NOT in this list, and that is deliberate. The frame-cover template
+    // carries its own `story: { tag, title }`, which is the cover line students read
+    // on the slide, so a byte check for `"story":` fails every deck that uses that
+    // template. Topic 2.6 was the first real deck to use it, on 2026-09-26, and this
+    // check failed on legitimate projected copy. The teacher field it was guarding is
+    // `story` inside a `notes` object, which `\bnotes\s*:` already catches, and the
+    // parsed assertion below catches it even if the bytes are formatted differently.
+    const teacherPayload = /\bnotes\s*:|listenFor|teacher intelligence|AP CONNECTION|["'](?:land|ask|avoid)["']\s*:/i;
     check(`${key} student bytes contain no teacher coaching payload`, !teacherPayload.test(src));
+
+    // Stronger than the regex and immune to formatting: no slide may carry a notes
+    // object at all. This is what actually keeps presenter coaching out of the bytes.
+    let parsed = null;
+    try {
+      const sandbox = { window: {} };
+      vm.runInContext(src, vm.createContext(sandbox), { filename: student });
+      parsed = sandbox.window.BEHISTORICAL_STUDENT_DECK;
+    } catch (e) { /* reported by the check below */ }
+    const withNotes = parsed && Array.isArray(parsed.slides)
+      ? parsed.slides.filter(sl => sl && Object.prototype.hasOwnProperty.call(sl, 'notes')).length
+      : -1;
+    check(`${key} no student slide carries a notes object`, withNotes === 0,
+      withNotes < 0 ? 'student deck did not parse' : `${withNotes} slide(s) with notes`);
   }
 }
 
@@ -142,7 +165,6 @@ for (const deck of DECKS) {
 // The authoring standard requires Teacher Preflight, BeReady, and a named
 // retelling slide, and lets a deck omit one only if its source says why.
 console.log('\n  Required instructional functions\n');
-const vm = require('vm');
 for (const deck of DECKS) {
   const sandbox = { window: {}, console, encodeURIComponent, decodeURIComponent };
   vm.createContext(sandbox);

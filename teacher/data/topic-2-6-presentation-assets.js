@@ -1,33 +1,49 @@
+/* Topic 2.6 data-only visual assignments. Safe to evaluate in Node: no DOM.
+ * Read by the teacher surface and by scripts/build-teaching-os-student-decks.js.
+ *
+ * Rebuilt 2026-09-26 with the template deck. Every picture here is one this
+ * topic already shipped and the course already verified; nothing is new to
+ * Commons, because the direct image fetch answered 429 from the build session
+ * and an unverified filename must never reach a slide.
+ *
+ * - hook (frame-cover): the Afro-Eurasian route map, the network the whole
+ *   topic rides on.
+ * - crops-map (frame-placard): the local crop-diffusion instructional map.
+ * - plague-map (frame-placard): the local Black Death reconstruction.
+ * - memory (frame-placard): Wolgemut's Dance of Death, printed 1493. The
+ *   credit dates it, because it is 145 years after the outbreak and its own
+ *   placard on the slide says so. It is cultural-memory evidence, not a
+ *   picture of 1348.
+ *
+ * Deliberately without a picture: `turn` and `power` are single-claim question
+ * slides, and `landing` is the 25-word thesis students copy. `landing` used to
+ * reuse the hook's map, which meant the deck opened and closed on the same
+ * image; see the note on that slide.
+ *
+ * Still wanted, and specified in assets/images/topics/2-6/README.md: a
+ * photographic network hero, a crop triptych, and period plague-mortality art.
+ * None can be generated from this session, so none is faked here.
+ */
 (function(){
 'use strict';
 const T=window.BEHISTORICAL_TEACHING;
 if(!T||!Array.isArray(T.slides))return;
-const find=needle=>T.slides.find(s=>String(s.title||'').toLowerCase().includes(String(needle).toLowerCase()));
-const routeMap='https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg';
-const cropMap='../assets/images/instructional-maps/topic-2-6-crops.svg';
-const plagueMap='../assets/images/instructional-maps/topic-2-6.svg';
+const FP='https://commons.wikimedia.org/wiki/Special:FilePath/';
+const FILE='https://commons.wikimedia.org/wiki/File:';
+const MAPS='../assets/images/instructional-maps/';
 
-const hero=T.slides.find(s=>s.phase==='recap');
-if(hero){
-  hero.visual={url:routeMap,alt:'Map of major Afro-Eurasian exchange routes',credit:'Wikimedia Commons · exchange-route reference map'};
-  hero.position='left';
-}
+const ROUTES={url:FP+'Silk_route.jpg',sourceUrl:FILE+'Silk_route.jpg',alt:'Map of the overland and maritime exchange routes linking Afro-Eurasia',credit:'Map · Afro-Eurasian exchange routes'};
+const CROPS={fit:'contain',url:MAPS+'topic-2-6-crops.svg',alt:'Instructional map tracing bananas into Africa, new rice varieties into East Asia and citrus around the Mediterranean',credit:'BeHistorical instructional map · secondary reconstruction'};
+const PLAGUE={fit:'contain',url:MAPS+'topic-2-6.svg',alt:'Instructional map of the spread of the Black Death across Afro-Eurasian trade corridors',credit:'BeHistorical instructional map · secondary reconstruction'};
+const DANCE={fit:'contain',url:FP+'Danse_macabre_by_Michael_Wolgemut.png',sourceUrl:FILE+'Danse_macabre_by_Michael_Wolgemut.png',alt:'Woodcut of skeletons dancing, from the Dance of Death tradition',credit:'Michael Wolgemut, 1493 · public domain'};
 
-const crops=find('The road brings food');
-if(crops)crops.visual={url:cropMap,alt:'Instructional map of crop diffusion across Afro-Eurasia',credit:'BeHistorical instructional map · Topic 2.6 crop diffusion'};
-
-const plague=find('The same road brings death');
-if(plague)plague.visual={url:plagueMap,alt:'Instructional map of the spread of the Black Death',credit:'BeHistorical instructional map · Topic 2.6 plague diffusion'};
-
-const human=find('Connection can become catastrophe');
-if(human){
-  human.visual={url:'https://commons.wikimedia.org/wiki/Special:FilePath/Danse_macabre_by_Michael_Wolgemut.png',alt:'Michael Wolgemut print of the Dance of Death, 1493',credit:'Michael Wolgemut, 1493 · later cultural-memory evidence'};
-  human.position='right';
-}
-
-const close=T.slides.find(s=>s.phase==='close');
-if(close){
-  close.visual={url:routeMap,alt:'Map of major Afro-Eurasian exchange routes',credit:'Wikimedia Commons · exchange-route reference map'};
-  close.position='right';
+const TEMPLATE_VISUALS={
+  'hook':{visual:ROUTES},
+  'crops-map':{visual:CROPS},
+  'plague-map':{visual:PLAGUE},
+  'memory':{visual:DANCE}
+};
+for(const slide of T.slides){
+  if(TEMPLATE_VISUALS[slide.id]&&slide.template)Object.assign(slide.template,TEMPLATE_VISUALS[slide.id]);
 }
 })();
