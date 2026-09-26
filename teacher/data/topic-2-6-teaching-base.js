@@ -121,7 +121,8 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'Start with continuity across the unit. Students already know the networks; they need to see why this topic is the payoff.',
           'The question is no longer only what merchants carried intentionally. Ask what moved accidentally with people, animals, cargo, ships, and caravans.',
-          'The cover painting is Pieter Bruegel the Elder\'s The Triumph of Death, painted about 1562, roughly two centuries after the Black Death. It shows how Europe kept imagining mass death, not an eyewitness scene of 1348. Let it raise the question, then name both cargoes so the lesson does not become only a plague lesson: one thing on these roads fed people, and one killed them.'
+          'The cover picture is AI-generated and labeled on the slide. It is set at a Mediterranean port in the 1300s: dockworkers carry sacks, citrus and green bundles off a ship flying Genoa\'s red cross, the same merchants who ran Caffa. Ask students to find the rats on the mooring rope at the left. That is the whole topic in one picture: the food and the plague came off the same ship.',
+          'It sets the scene; it is not evidence. The ship looks more like a vessel from the 1400s than the 1340s, and the green bundles are not clearly any crop.'
         ],
         ask: 'What moved through networks before today?',
         listenFor: 'Goods, money, technologies, beliefs, travelers, information.'
@@ -296,19 +297,19 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      id: 'memory', phase: 'pathogens', kind: 'frame-placard', eyebrow: 'Human Consequence',
+      id: 'memory', phase: 'pathogens', kind: 'frame-triptych', eyebrow: 'Human Consequence · How Europe Remembered',
       title: 'Connection can become catastrophe.',
       template: {
-        placard: {
-          tag: 'Later Evidence · Printed 1493',
-          name: 'The Dance of Death',
-          text: 'Michael Wolgemut printed this about 145 years after the outbreak. It is evidence of how Europe remembered mass mortality, not a picture of 1348.'
-        }
+        panels: [
+          { title: 'Wolgemut · 1493' },
+          { title: 'Bruegel · c. 1562' }
+        ]
       },
       notes: {
         minutes: 5,
         land: [
-          'This is a later cultural-memory image, not an eyewitness picture of 1348. Use it carefully as evidence that mass mortality shaped memory and imagination.',
+          'Neither picture is an eyewitness picture of 1348. Michael Wolgemut\'s Dance of Death woodcut was printed in 1493, about 145 years after the outbreak. Pieter Bruegel the Elder painted The Triumph of Death about 1562, more than two centuries after it. Use them as evidence that mass mortality shaped how Europe remembered and imagined death, generations later.',
+          'Pair them: both are made long after the plague, and both show death sweeping away people of every rank. Ask what it says that Europe was still picturing this two hundred years on.',
           'The AP consequence is demographic: population loss and disruption. Keep students focused on environmental/demographic effect.'
         ],
         ask: 'What is the consequence we have to explain, not just describe?',

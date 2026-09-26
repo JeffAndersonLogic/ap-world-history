@@ -45,9 +45,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "Now living things get on the same roads"
         ],
         "visual": {
-          "url": "../assets/images/topics/2-6/2.6%20-%20The-Triumph-of-Death-1024x730.webp",
-          "alt": "Pieter Bruegel the Elder's painting The Triumph of Death: an army of skeletons sweeps across a burning, barren landscape, driving crowds of people of every rank into a trap, with a cart of skulls on the left",
-          "credit": "Pieter Bruegel the Elder, c. 1562 · Museo del Prado · public domain"
+          "ai": true,
+          "url": "../assets/images/topics/2-6/2.6%20-%20Cargo%20bay.jpg",
+          "alt": "An illustrated medieval harbor at sunset: dockworkers carry sacks, baskets of citrus and bundles of greens down a gangplank from a ship flying a red cross on white, while rats climb down the mooring rope",
+          "cropBottom": 0.1
         }
       }
     },
@@ -209,22 +210,30 @@ window.BEHISTORICAL_STUDENT_DECK = {
       ]
     },
     {
-      "kind": "frame-placard",
-      "eyebrow": "Human Consequence",
+      "kind": "frame-triptych",
+      "eyebrow": "Human Consequence · How Europe Remembered",
       "title": "Connection can become catastrophe.",
       "template": {
-        "placard": {
-          "tag": "Later Evidence · Printed 1493",
-          "name": "The Dance of Death",
-          "text": "Michael Wolgemut printed this about 145 years after the outbreak. It is evidence of how Europe remembered mass mortality, not a picture of 1348."
-        },
-        "visual": {
-          "fit": "contain",
-          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Danse_macabre_by_Michael_Wolgemut.png",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Danse_macabre_by_Michael_Wolgemut.png",
-          "alt": "Woodcut of skeletons dancing, from the Dance of Death tradition",
-          "credit": "Michael Wolgemut, 1493 · public domain"
-        }
+        "panels": [
+          {
+            "title": "Wolgemut · 1493",
+            "visual": {
+              "fit": "contain",
+              "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Danse_macabre_by_Michael_Wolgemut.png",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Danse_macabre_by_Michael_Wolgemut.png",
+              "alt": "Woodcut of skeletons dancing, from the Dance of Death tradition",
+              "credit": "Michael Wolgemut, 1493 · public domain"
+            }
+          },
+          {
+            "title": "Bruegel · c. 1562",
+            "visual": {
+              "url": "../assets/images/topics/2-6/2.6%20-%20The-Triumph-of-Death-1024x730.webp",
+              "alt": "Pieter Bruegel the Elder's painting The Triumph of Death: an army of skeletons sweeps across a burning, barren landscape, driving crowds of people of every rank into a trap, with a cart of skulls on the left",
+              "credit": "Pieter Bruegel the Elder, c. 1562 · Museo del Prado · public domain"
+            }
+          }
+        ]
       }
     },
     {
