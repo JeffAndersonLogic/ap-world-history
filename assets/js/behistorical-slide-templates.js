@@ -54,9 +54,12 @@ function sub(s){return s.subtitle?`<p class="bht-sub">${rich(s.subtitle)}</p>`:'
 function foot(text){return text?`<div class="bht-foot"><i></i><p>${rich(text)}</p></div>`:'';}
 function head(s){return eyebrow(s)+title(s)+sub(s);}
 
+/* A visual may name its own corner (tl, tr, bl, br) when the default would
+   cover something printed on the picture, such as a map's own title. A corner
+   the template chooses still wins. */
 function tag(v,pos){
   if(!v)return '';
-  const where=pos||'tr';
+  const where=pos||(/^(tl|tr|bl|br)$/.test(v.tagPos)?v.tagPos:'tr');
   if(v.ai)return `<span class="bht-tag bht-ai ${where}">${LABEL}</span>`;
   if(v.credit)return `<span class="bht-tag bht-src ${where}">${esc(v.credit)}</span>`;
   return '';

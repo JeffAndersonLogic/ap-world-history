@@ -45,10 +45,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "Now living things get on the same roads"
         ],
         "visual": {
-          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Silk_route.jpg",
-          "alt": "Map of the overland and maritime exchange routes linking Afro-Eurasia",
-          "credit": "Map · Afro-Eurasian exchange routes"
+          "url": "../assets/images/topics/2-6/2.6%20-%20The-Triumph-of-Death-1024x730.webp",
+          "alt": "Pieter Bruegel the Elder's painting The Triumph of Death: an army of skeletons sweeps across a burning, barren landscape, driving crowds of people of every rank into a trap, with a cart of skulls on the left",
+          "credit": "Pieter Bruegel the Elder, c. 1562 · Museo del Prado · public domain"
         }
       }
     },
@@ -172,15 +171,16 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "The same road brings death.",
       "template": {
         "placard": {
-          "tag": "Reconstructed Map · c. 1340 to 1353",
+          "tag": "Modern Map · 1346 to 1353",
           "name": "The same road brings death.",
-          "text": "Bubonic plague plotted along the trade corridors, coastlines and port cities. A reconstruction shows the pattern of spread; it cannot show any single transmission."
+          "text": "Darker red is earlier. The plague arrives at the Black Sea, then follows sea lanes and roads into Europe, North Africa and Southwest Asia."
         },
         "visual": {
           "fit": "contain",
-          "url": "../assets/images/instructional-maps/topic-2-6.svg",
-          "alt": "Instructional map of the spread of the Black Death across Afro-Eurasian trade corridors",
-          "credit": "BeHistorical instructional map · secondary reconstruction"
+          "url": "../assets/images/topics/2-6/2.6%20-%20Map%20of%20the%20Bubonic%20Plague%20-%20web.jpg",
+          "alt": "Map titled The Spread of the Plague in Europe, 1346 to 1353. Shading from dark red for 1346 to pale lilac for 1352 and 1353 shows the plague arriving from the east at the Black Sea, crossing the Mediterranean to Italy, Egypt and the Levant, and spreading north across Europe to Scandinavia and Russia, with arrows along sea lanes and roads and dots marking cities with known death rates",
+          "credit": "Map · Simeon Netchev · World History Encyclopedia",
+          "tagPos": "tl"
         }
       }
     },
@@ -280,10 +280,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "prompt",
+      "kind": "frame-letterbox",
       "eyebrow": "Topic 2.6 · Landing Sentence",
       "title": "Connectivity connected ecosystems.",
-      "subtitle": "From c. 1200 to c. 1450, exchange networks spread crops that could increase productive capacity and pathogens that could cause devastating demographic decline."
+      "subtitle": "From c. 1200 to c. 1450, exchange networks spread crops that could increase productive capacity and pathogens that could cause devastating demographic decline.",
+      "template": {
+        "visual": {
+          "ai": true,
+          "url": "../assets/images/topics/2-6/2.6%20-%20Rice%20in%20East%20Asia.jpg",
+          "alt": "An illustrated scene of farmers in straw hats planting rice seedlings in flooded terraced paddies below a hillside village",
+          "position": "50% 60%"
+        }
+      }
     }
   ]
 };

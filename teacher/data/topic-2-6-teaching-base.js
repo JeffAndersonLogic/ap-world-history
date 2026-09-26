@@ -120,7 +120,8 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Start with continuity across the unit. Students already know the networks; they need to see why this topic is the payoff.',
-          'The question is no longer only what merchants carried intentionally. Ask what moved accidentally with people, animals, cargo, ships, and caravans.'
+          'The question is no longer only what merchants carried intentionally. Ask what moved accidentally with people, animals, cargo, ships, and caravans.',
+          'The cover painting is Pieter Bruegel the Elder\'s The Triumph of Death, painted about 1562, roughly two centuries after the Black Death. It shows how Europe kept imagining mass death, not an eyewitness scene of 1348. Let it raise the question, then name both cargoes so the lesson does not become only a plague lesson: one thing on these roads fed people, and one killed them.'
         ],
         ask: 'What moved through networks before today?',
         listenFor: 'Goods, money, technologies, beliefs, travelers, information.'
@@ -257,16 +258,18 @@ window.BEHISTORICAL_TEACHING = {
       title: 'The same road brings death.',
       template: {
         placard: {
-          tag: 'Reconstructed Map · c. 1340 to 1353',
+          tag: 'Modern Map · 1346 to 1353',
           name: 'The same road brings death.',
-          text: 'Bubonic plague plotted along the trade corridors, coastlines and port cities. A reconstruction shows the pattern of spread; it cannot show any single transmission.'
+          text: 'Darker red is earlier. The plague arrives at the Black Sea, then follows sea lanes and roads into Europe, North Africa and Southwest Asia.'
         }
       },
       notes: {
         minutes: 7,
         land: [
           'Use the map to show the pattern of spread across connected regions.',
-          'Students do not need a microbiology lesson. They need to see that disease had routes, ships, caravans, port cities, and dense populations as pathways.'
+          'Students do not need a microbiology lesson. They need to see that disease had routes, ships, caravans, port cities, and dense populations as pathways.',
+          'Read the map together: darkest red is 1346, north of the Black Sea and the Caspian (Tana, Astrakhan); 1347 reaches Constantinople, Sicily, Marseille and Egypt by sea; paler shades push north to Scandinavia and Russia by 1350 to 1353. The arrow on the right says the disease arrived along the trade routes from the east in the early 1340s.',
+          'It is a modern map by Simeon Netchev for World History Encyclopedia, and it covers Europe, North Africa and Southwest Asia only, not where the outbreak began. The red and orange dots mark cities with known death rates. The legend has a typo, "Principl routes"; if a student spots it, good reading.'
         ],
         ask: 'Why does a trade-route map help explain a disease map?',
         listenFor: 'The same paths and nodes that moved goods could move people, animals, fleas, rats, and pathogens.'
@@ -371,14 +374,15 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      id: 'landing', phase: 'close', kind: 'question', eyebrow: 'Topic 2.6 · Landing Sentence',
+      id: 'landing', phase: 'close', kind: 'frame-letterbox', eyebrow: 'Topic 2.6 · Landing Sentence',
       title: 'Connectivity connected ecosystems.',
       subtitle: 'From c. 1200 to c. 1450, exchange networks spread crops that could increase productive capacity and pathogens that could cause devastating demographic decline.',
+      template: {},
       notes: {
         minutes: 2,
         land: [
           'This sentence directly answers the Topic 2.6 learning objective. Leave it on screen while students copy it.',
-          'It carries no picture on purpose. It used to reuse the same network map as the opening slide, and a 25-word thesis does not want a photograph competing with it.',
+          'The rice picture was chosen on 2026-09-26 so the deck closes on the crop branch rather than on plague. It is AI-generated and labeled on the slide. Quick check for the room: one farmer is holding a curved harvest sickle while everyone around him is planting seedlings, and a real paddy is not planted and harvested at the same moment. It sets the scene; it is not evidence of anything.',
           'Bridge to 2.7: next students compare the major networks and their effects rather than studying one new consequence.'
         ],
         ask: 'What is the one-sentence answer to Topic 2.6?',
