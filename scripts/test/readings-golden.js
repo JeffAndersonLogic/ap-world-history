@@ -41,10 +41,15 @@ const fromDisk = process.argv.includes('--from-disk');
 // Topic 2.5's chain was carried into its last two callouts and its takeaway on
 // 2026-09-25, when Jeff approved the story again and asked that the chain be
 // unmistakable: sections 3 and 4 and the BeReady line now end on it too.
+// Topic 2.6's story-first rewrite landed 2026-09-26, at Jeff's request that it be
+// brought into the style of the topics around it. It carries the story the 2.6
+// deck already teaches (trade accidentally connected ecosystems; the same network
+// could feed you and kill you). Jeff approved it as written the same day, when
+// asked to choose between shipping it and reading it first.
 // Keep the historical fixture untouched, but accept that full rewrite only while
 // its canonical source file is byte-for-byte the approved version below. Any
 // later Unit 2 First & 10 edit changes this Git blob hash and forces a new review.
-const APPROVED_UNIT2_REWRITE_BLOB = '213dd26fb87717ceda489740d8ee71a23904d9fb';
+const APPROVED_UNIT2_REWRITE_BLOB = '3f4056c0d0af2585e0d9cf48bb95fedc7cd11e63';
 const unit2SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-2.js');
 function gitBlobSha(text) {
   const body = Buffer.from(text, 'utf8');
