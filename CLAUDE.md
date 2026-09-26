@@ -26,9 +26,20 @@ A presentation is not complete because a file or commit exists. Follow the autho
 - `main` is the deploy branch: GitHub Pages serves it, so what is on `main` is
   what students have.
 - Still no pull requests. Push to a working branch, wait for Validate to pass on
-  it, then fast-forward `main` to that commit. This is the one change the branch
-  rule forces, and only because a required check cannot pass on a commit that
-  exists nowhere yet. See "The branch rule" below.
+  it, then fast-forward `main` to that commit, then **delete the working branch**.
+  This is the one change the branch rule forces, and only because a required check
+  cannot pass on a commit that exists nowhere yet. See "The branch rule" below.
+- **Deleting the branch is part of shipping, not tidying afterwards.** Nothing in
+  this flow ever closes a branch otherwise, and on 2026-09-26 the repository was
+  carrying about 300 remote branches, of which 27 were ancestors of `main`. At that
+  size the branch list stops being usable and no later pruning fixes the cause.
+  Delete it only after `origin/main` and the branch are the same commit and the
+  branch is an ancestor of `main`; then it is provably free. **A Claude Code web
+  session cannot do the remote half**: that environment's git proxy drops delete
+  refspecs and answers `Everything up-to-date` to a delete, so the branch survives
+  while the command looks like it worked. Check with `git ls-remote` and say so
+  plainly rather than reporting a branch deleted. The **ship-to-main** skill has
+  the procedure and the exact failure text.
 - The rule in `.github/branch-ruleset.json` is applied, as of 2026-09-01: the API
   reports `main` protected. Committing directly to `main` no longer works, so the
   branch-then-fast-forward flow above is the only route and the escape hatch this
