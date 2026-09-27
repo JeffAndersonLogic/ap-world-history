@@ -83,4 +83,10 @@
 // through the Source images workflow; the captions follow what Commons says each
 // file is, including that the Baghdad painting was made long after the siege.
 
+// **2026-09-27, Topic 2.5's Dunhuang card** replaced the Cave 96 Buddha
+// photograph, which looked up past scaffolding at the statue's chin, with the
+// Diamond Sutra of 868 (British Library, CC0), found sealed at the Mogao Caves.
+// Verified and applied through this workflow; Commons describes it as the
+// frontispiece of the world's earliest dated printed book.
+
 module.exports = [];

@@ -39,7 +39,7 @@ window.BEHISTORICAL_TEACHING = {
       'Name the modules due today: First & 10 (02), Checkpoint 1 (06), Primary Source (08), and Checkpoint 2 (10). Checkpoint 2 has no slide: students start it on the lesson page in the last ten minutes, and what is not finished is homework, as in 2.4.'
     ],
     could: [
-      'Use the Evidence Lab (Module 07) as reinforcement or homework: its four cards are the Dunhuang Buddha, Song paper money, the Baghdad siege painting, and the Catalan Atlas caravan.',
+      'Use the Evidence Lab (Module 07) as reinforcement or homework: its four cards are the Dunhuang Diamond Sutra, Song paper money, the Baghdad siege painting, and the Catalan Atlas caravan.',
       'Use the Silk Road Scholar BeInTheRoom as an extension for students who finish Checkpoint 2.',
       'Use the Heimler 2.5 review as retrieval rather than primary instruction.'
     ]
