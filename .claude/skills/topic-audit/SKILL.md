@@ -222,9 +222,76 @@ npm test
 If you touched a slide, also run `npm run test:browser` (needs `npm i playwright-core`).
 A SKIP is not a pass.
 
-## Step 8: Report and commit
+## Step 8: Write the record
 
-**Report to Jeff in plain language**, grouped by module, in this order:
+**Every run writes a record. This is not optional and it is not paperwork.**
+
+This audit ran once by hand on 2026-09-23, reported to a chat window, and the window
+scrolled away. Nothing recorded which topics had been covered, so by 2026-09-27 the
+only available answer to "is this still happening" was Jeff's own sense that it had
+slipped. An audit whose coverage cannot be inspected is not auditable.
+
+Write `docs/topic-audits/topic-<u>-<t>-<YYYY-MM-DD>.md`, dated today in school time
+(`F3` becomes `topic-F3-<date>.md`):
+
+```markdown
+---
+topic: "2.6"
+audited: 2026-09-30
+mode: fix          # or: report
+---
+
+# Topic 2.6 audit, 2026-09-30
+
+Taught: Green 2026-09-30, Silver 2026-10-01.   <- and say if Green already had it
+
+## Fixed
+- one line each: what was wrong, what it says now, which file
+
+## Needs Jeff's decision
+- one line each, with a recommendation
+
+## Reviewed and left alone
+- report hits looked at and kept, with the reason
+
+## Adjacent findings
+- file, defect, impact, proposed fix, why it was left out of this topic
+```
+
+The front matter is what the machinery reads, so those three keys must be present and
+`audited` must be `YYYY-MM-DD`. A record that does not parse is reported loudly by
+`check-audit-freshness.js` rather than ignored, because a record that silently failed
+to parse would make an audited topic read as never audited.
+
+**The four body sections are the same four things you report to Jeff**, so write them
+once here and let the report quote them, rather than writing a report and then a
+summary of it.
+
+Then rebuild the coverage index, which is generated and never hand-edited:
+
+```bash
+npm run build:audit-index
+```
+
+`npm test` fails on drift, so this is not a step you can forget quietly.
+
+### If you ran the weekly sweep, also write a sweep marker
+
+A sweep over the week's topics additionally writes
+`docs/topic-audits/sweeps/<YYYY-MM-DD>.md`, **even on a week with nothing scheduled
+and even when every topic came back clean.** One or two lines is enough: the date, the
+topics looked at, and what came of it.
+
+That file is the only evidence the automation ran at all. So the rule from the
+`nightly-work-log` Routine applies here word for word: **a missing marker must mean
+"the automation is broken", never "a quiet week".** Skipping it on a quiet week is the
+single change that would restore the exact failure this record-keeping was built to
+end.
+
+## Step 9: Report and commit
+
+**Report to Jeff in plain language**, grouped by module, in this order (the
+record from Step 8 already has all of it):
 
 1. The dates it is taught, and whether Green has already had it.
 2. What was fixed, one line each, saying what was wrong and what it says now.
