@@ -87,7 +87,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
               "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Buddha_at_K%C5%8Dtoku-in,_Close-up_20190421_1.jpg?width=1600",
               "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Buddha_at_K%C5%8Dtoku-in,_Close-up_20190421_1.jpg",
               "alt": "The Great Buddha of Kamakura, a giant seated bronze Buddha, green with age, against a blue sky",
-              "credit": "Great Buddha, Kamakura · cast from 1252 · photo DXR, CC BY-SA 4.0",
+              "credit": "Kamakura Buddha · cast from 1252 · DXR, CC BY-SA 4.0",
               "position": "50% 30%"
             }
           },
