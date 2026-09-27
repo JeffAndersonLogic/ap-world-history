@@ -84,11 +84,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "title": "Buddhism · East Asia",
             "visual": {
-              "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Buddha,_Cave_96,_Mogao_Caves.jpg",
-              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Buddha,_Cave_96,_Mogao_Caves.jpg",
-              "alt": "The great seated Buddha in Cave 96 at the Mogao Caves, Dunhuang",
-              "credit": "Mogao Caves, Dunhuang · carved 695",
-              "position": "50% 30%"
+              "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mural_of_Buddha_in_Mogao_Caves,_Dunhuang.jpg",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mural_of_Buddha_in_Mogao_Caves,_Dunhuang.jpg",
+              "alt": "A wall painting of the Buddha in the Mogao Caves at Dunhuang, a Silk Road oasis in western China",
+              "credit": "Mogao Caves, Dunhuang · wall painting",
+              "position": "50% 40%"
             }
           },
           {
