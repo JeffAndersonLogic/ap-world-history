@@ -58,6 +58,9 @@ const loadsLibraryBefore = (src, before) => {
 const leaks = html => ['undefined', 'NaN', '[object Object]'].filter(bad => html.includes(bad));
 const aiLabelled = html => html.includes(LABEL) && !OLD_LABELS.some(l => html.includes(l));
 const unconverted = css => (css.match(/\d(?:\.\d+)?u\b/g) || []);
+// A negative size must become calc(-7*var(--u)). -calc(...) is invalid CSS, so
+// the browser drops the declaration and nothing on the page says so.
+const badNegatives = css => (css.match(/-calc\(/g) || []);
 
 console.log('\nSlide template contract\n');
 
@@ -66,6 +69,8 @@ check('library label is the house label', T.LABEL === LABEL);
 check('PRESENTATION-AUTHORING.md names the same label', read('docs/PRESENTATION-AUTHORING.md').includes('`' + LABEL + '`'));
 const stray = unconverted(T.css);
 check('every design-pixel size in the stylesheet is converted', stray.length === 0, stray.slice(0, 5).join(' '));
+const neg = badNegatives(T.css);
+check('every negative design-pixel size is valid CSS', neg.length === 0, `${neg.length} invalid`);
 
 /* Examples: both directions. */
 const sandbox = { window: {}, encodeURIComponent };
@@ -135,6 +140,7 @@ const swapped = shellSrc.replace(/<script src="\.\.\/assets\/js\/behistorical-sl
 check('control: a shell loading the library after the renderer is caught', loadsLibraryBefore(shellSrc, 'behistorical-student-presentation-v1.js') && !loadsLibraryBefore(swapped, 'behistorical-student-presentation-v1.js'));
 check('control: an old AI label is caught', !aiLabelled('<span>Illustration (AI-generated)</span>') && !aiLabelled(`<span>${LABEL}</span><span>AI GENERATED</span>`));
 check('control: an unconverted size is caught', unconverted('.x{padding:12u}').length === 1);
+check('control: an invalid negative size is caught', badNegatives('.x{left:-calc(8*var(--u))}').length === 1 && badNegatives('.x{left:calc(-8*var(--u))}').length === 0);
 check('control: a leak is caught', leaks('<b>undefined</b>').length === 1);
 
 console.log(failed ? `\n${failed} slide template check(s) failed.\n` : '\nSlide templates: all checks passed.\n');

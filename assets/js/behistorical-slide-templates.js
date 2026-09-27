@@ -1110,7 +1110,11 @@ const CSS=`
 .bht-ro-leg .n{width:28u;height:28u;border-radius:50%;background:#c9a46a;color:#101213;display:flex;align-items:center;justify-content:center;font:900 13u/1 'Montserrat',Helvetica,sans-serif;margin-top:2u}
 .bht-ro-leg b{display:block;font:800 19u/1.2 'Cinzel',Georgia,serif;color:var(--head)}
 .bht-ro-leg span{display:block;font-size:15u;line-height:1.35;color:var(--soft)}
-`.replace(/(\d+(?:\.\d+)?)u\b/g,'calc($1*var(--u))')
+`.replace(/(-?)(\d+(?:\.\d+)?)u\b/g,'calc($1$2*var(--u))')
+ /* The sign goes inside calc(): -7u used to become -calc(7*var(--u)), which
+    is invalid CSS, so the browser dropped the whole declaration. That is how
+    the Sharpen strike-through, the porthole rivets' centering and the
+    storyboard's AI label position silently stopped working. */
  /* Every rule is scoped under .bht-slide, so a host page's own h2, p or b
     rule cannot outrank a template: the Unit 2 pages and the catalog all style
     bare h2 elements, and without this their titles win and a template's
