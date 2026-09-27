@@ -7,12 +7,14 @@
  * to verify a new file.
  *
  * - hook: the Silk Roads trade map the lesson's Map module already uses.
- * - beliefs: a wall painting of the Buddha in the Mogao Caves (1758x2121, the
- *   picture Foundations 4 already ships), which replaced the Cave 96 Buddha on
- *   2026-09-27 because Jeff judged that photo too poor to project,
+ * - beliefs: the Great Buddha of Kamakura, cast from 1252 (Commons Quality
+ *   image, 4870x6493, DXR, CC BY-SA 4.0, credited on the slide), which replaced
+ *   the Cave 96 Buddha on 2026-09-27 after Jeff judged that photo too poor to
+ *   project. A Mogao mural stood in for a day and was dropped: it is a scan of a
+ *   printed book, page number included, and does not read as the Buddha.
  *   Angkor Wat (Topics 1.3 and 1.7) and the Great Mosque of Djenné (Topic 2.4).
- *   Each credit dates the object, since two of the three are older than the
- *   period and one is a 1907 building on an older site.
+ *   Each credit dates the object: Angkor Wat is older than the period, the Djenné
+ *   building is a 1907 one on an older site, and the Kamakura Buddha is inside it.
  * - city-growth: the AI-generated Samarkand scene (Google C2PA credentials in the
  *   file). ai:true, so the template library prints the house label. cropBottom
  *   hides the generator's sparkle mark in the lower corner. The notes name its
@@ -34,7 +36,7 @@ if(!T||!Array.isArray(T.slides))return;
 const FP='https://commons.wikimedia.org/wiki/Special:FilePath/';
 const FILE='https://commons.wikimedia.org/wiki/File:';
 const MAP={fit:'contain',url:FP+'Silk_Road_Trade_%28c.1200_CE%29.jpg',sourceUrl:FILE+'Silk_Road_Trade_%28c.1200_CE%29.jpg',alt:'Map of overland and maritime trade routes across Afro-Eurasia around 1200',credit:'Map · Afro-Eurasian trade routes, c. 1200'};
-const MOGAO={url:FP+'Mural_of_Buddha_in_Mogao_Caves,_Dunhuang.jpg',sourceUrl:FILE+'Mural_of_Buddha_in_Mogao_Caves,_Dunhuang.jpg',alt:'A wall painting of the Buddha in the Mogao Caves at Dunhuang, a Silk Road oasis in western China',credit:'Mogao Caves, Dunhuang · wall painting',position:'50% 40%'};
+const KAMAKURA={url:FP+'Great_Buddha_at_K%C5%8Dtoku-in,_Close-up_20190421_1.jpg?width=1600',sourceUrl:FILE+'Great_Buddha_at_K%C5%8Dtoku-in,_Close-up_20190421_1.jpg',alt:'The Great Buddha of Kamakura, a giant seated bronze Buddha, green with age, against a blue sky',credit:'Great Buddha, Kamakura · cast from 1252 · photo DXR, CC BY-SA 4.0',position:'50% 30%'};
 const ANGKOR={url:FP+'Angkor%20Wat.jpg',sourceUrl:FILE+'Angkor_Wat.jpg',alt:'The towers of Angkor Wat in Cambodia',credit:'Angkor Wat · built early 1100s'};
 const DJENNE={url:FP+'Great_Mosque_of_Djenn%C3%A9_2.jpg',sourceUrl:FILE+'Great_Mosque_of_Djenn%C3%A9_2.jpg',alt:'The mud-brick Great Mosque of Djenné in Mali',credit:'Great Mosque of Djenné · rebuilt 1907'};
 const SAMARKAND_AI={ai:true,url:'../assets/images/topics/2-1/'+encodeURIComponent('2.1 - Samarkand.jpg'),alt:'An imagined scene of Samarkand: camel caravans and an ox cart loaded with goods approach a walled city of blue-domed buildings below mountains',cropBottom:.06,position:'50% 40%'};
@@ -48,7 +50,7 @@ const TEMPLATE_VISUALS={
   'atlas':{visual:ATLAS},
   'landing':{visual:IDRISI}
 };
-const PANELS={'beliefs':[MOGAO,ANGKOR,DJENNE]};
+const PANELS={'beliefs':[KAMAKURA,ANGKOR,DJENNE]};
 for(const slide of T.slides){
   if(TEMPLATE_VISUALS[slide.id]&&slide.template)Object.assign(slide.template,TEMPLATE_VISUALS[slide.id]);
   if(PANELS[slide.id]&&slide.template&&Array.isArray(slide.template.panels)){

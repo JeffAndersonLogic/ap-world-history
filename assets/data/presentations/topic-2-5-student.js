@@ -84,11 +84,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "title": "Buddhism · East Asia",
             "visual": {
-              "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mural_of_Buddha_in_Mogao_Caves,_Dunhuang.jpg",
-              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mural_of_Buddha_in_Mogao_Caves,_Dunhuang.jpg",
-              "alt": "A wall painting of the Buddha in the Mogao Caves at Dunhuang, a Silk Road oasis in western China",
-              "credit": "Mogao Caves, Dunhuang · wall painting",
-              "position": "50% 40%"
+              "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Buddha_at_K%C5%8Dtoku-in,_Close-up_20190421_1.jpg?width=1600",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Buddha_at_K%C5%8Dtoku-in,_Close-up_20190421_1.jpg",
+              "alt": "The Great Buddha of Kamakura, a giant seated bronze Buddha, green with age, against a blue sky",
+              "credit": "Great Buddha, Kamakura · cast from 1252 · photo DXR, CC BY-SA 4.0",
+              "position": "50% 30%"
             }
           },
           {
