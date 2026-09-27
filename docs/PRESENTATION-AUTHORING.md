@@ -267,7 +267,7 @@ Projected slides should feel closer to museum exhibits than textbook pages: a cl
 
 Teacher Intelligence carries the depth.
 
-The slide templates in `teacher/slide-templates.html` are the visual vocabulary for this step. Match the template to the shape of the idea: parts that add up are an equation, a two-way trade is an exchange, one-against-many is a split, gains that build are compounding, and only a true sequence is a timeline. Four numbered boxes were the default for all of these in Unit 2, and most of them were not sequences. The implementation contract is "Slide templates" in `docs/TEACHING-OS.md`.
+The slide templates in `teacher/slide-templates.html` are the visual vocabulary for this step. Match the template to the shape of the idea: parts that add up are an equation, a two-way trade is an exchange, one-against-many is a split, gains that build are compounding, and only a true sequence is a timeline. Round two added more shapes: a cause that sets off the next is a cause chain, one thing changing as it travels is a diffusion path, places whose fortunes differ are rise and fall, two things with overlap are a Venn, a turning point with things that carried on is continuity and change, a journey is a route on a map, and a source to question is HIPP. Four numbered boxes were the default for all of these in Unit 2, and most of them were not sequences. The implementation contract is "Slide templates" in `docs/TEACHING-OS.md`.
 
 ## 12. Build the canonical teacher presentation
 
