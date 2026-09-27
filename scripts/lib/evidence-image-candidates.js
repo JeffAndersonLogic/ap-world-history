@@ -89,14 +89,10 @@
 // Verified and applied through this workflow; Commons describes it as the
 // frontispiece of the world's earliest dated printed book.
 
-module.exports = [
-  {
-    topic: '2.5',
-    replaces: 'Jiaozi Paper Money in Song China',
-    file: 'Yuan dynasty banknote with its printing plate 1287.jpg',
-    search: 'Yuan dynasty banknote printing plate',
-    title: 'Yuan Paper Money and Its Printing Plate, 1287',
-    caption: 'A paper banknote issued in 1287 by the Yuan dynasty, the Mongol rulers of China, shown with its wooden printing plate. Its text, in Chinese and in the Mongols\' new \'Phags-pa script, sets its value at two strings of coins and threatens counterfeiters with death. Paper money had first come into use in China under the Song dynasty in the 1000s.',
-    prompt: 'NOTICE the plate, the two kinds of writing, and the warning to counterfeiters. What can you INFER about how the Mongols used a Chinese technology to run their empire? When the Mongol ruler of Persia tried paper money in 1294, merchants refused it within months: what does that suggest about moving a technology to a new place?'
-  }
-];
+// **2026-09-27, Topic 2.5's paper money card** replaced the 308-pixel Song
+// jiaozi print with the Yuan banknote of 1287 and its wooden printing plate
+// (PHGCOM, CC BY-SA 3.0), a real note from inside the period. Verified and
+// applied through this workflow. Beware "Jiaozi.jpg" on Commons: it is a plate
+// of dumplings.
+
+module.exports = [];
