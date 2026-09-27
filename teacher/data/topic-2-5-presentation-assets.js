@@ -25,8 +25,8 @@
  * - atlas: the Catalan Atlas caravan, 1375 (the 2.5 Evidence Lab card).
  * - landing: al-Idrisi's world map of 1154, which the old deck closed on.
  *
- * Left out: Song paper money (the paper/gunpowder slide is a comparison, and the
- * note is already an Evidence Lab card); the older Silk_route.jpg map, which the
+ * Left out: paper money (the paper/gunpowder slide is a comparison, and the
+ * Yuan note of 1287 is already an Evidence Lab card); the older Silk_route.jpg map, which the
  * Silk Roads trade map replaces on the question slide.
  */
 (function(){
