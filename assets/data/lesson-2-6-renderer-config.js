@@ -4,9 +4,9 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: Crops and Pathogens on the Move',
-    embedUrl: 'first-and-10-topic-2-6-environmental-consequences-capture.html',
-    note: 'Read for two environmental consequences of connectivity: useful crops moved into new regions, and pathogens moved through the same networks.'
+    title: 'First & 10: The Same Network Could Feed You and Kill You',
+    embedUrl: 'first-and-10-topic-2-6-environmental-consequences-capture.html?v=feed-kill-v1',
+    note: 'Read for the story: busier routes, living things ride along, they land somewhere new, and the result is more food or mass death.'
   };
 
   lesson.map = {

@@ -54,9 +54,12 @@ function sub(s){return s.subtitle?`<p class="bht-sub">${rich(s.subtitle)}</p>`:'
 function foot(text){return text?`<div class="bht-foot"><i></i><p>${rich(text)}</p></div>`:'';}
 function head(s){return eyebrow(s)+title(s)+sub(s);}
 
+/* A visual may name its own corner (tl, tr, bl, br) when the default would
+   cover something printed on the picture, such as a map's own title. A corner
+   the template chooses still wins. */
 function tag(v,pos){
   if(!v)return '';
-  const where=pos||'tr';
+  const where=pos||(/^(tl|tr|bl|br)$/.test(v.tagPos)?v.tagPos:'tr');
   if(v.ai)return `<span class="bht-tag bht-ai ${where}">${LABEL}</span>`;
   if(v.credit)return `<span class="bht-tag bht-src ${where}">${esc(v.credit)}</span>`;
   return '';
@@ -386,6 +389,161 @@ function fCover(s){
   return board('frame-cover','dark',`${frame(t.visual,'bht-full',{noTag:true})}<div class="bht-cv-top"></div><div class="bht-cv-bot"></div><div class="bht-cv-mast"><div class="m">${esc(t.masthead)}</div><div class="i">${esc(t.issue)}</div></div>${tag(t.visual,'bht-cv-tag')}<div class="bht-cv-story"><div class="bht-eb">${esc(st.tag||'Cover Story')}</div><div class="t">${rich(st.title||s.title)}</div></div><div class="bht-cv-lines">${arr(t.lines).slice(0,3).map(l=>`<p>${rich(l)}</p>`).join('<i></i>')}</div>`);
 }
 
+/* ── round 2 (2026-09-27) ──────────────────────────────────────────────── */
+
+/* Cause and effect in a row. `links` are the connector words printed on the
+   arrows ("so", "until"); a step marked `key: true` is the mechanism, and is
+   the one filled in. */
+function causeChain(s){
+  const t=s.template||{},st=arr(t.steps).slice(0,5),n=Math.max(1,st.length),links=arr(t.links);
+  const cols=[];let cells='';
+  st.forEach((x,i)=>{
+    cols.push('minmax(0,1fr)');
+    cells+=`<div class="bht-cc-step ${x.key?'key':''}"><div class="k">${esc(x.tag||String(i+1).padStart(2,'0'))}</div><b>${esc(x.label)}</b><span>${rich(x.text)}</span></div>`;
+    if(i<n-1){cols.push('84u');cells+=`<div class="bht-cc-link"><em>${esc(links[i]||'')}</em><svg viewBox="0 0 84 24" aria-hidden="true"><line x1="4" y1="12" x2="70" y2="12"></line><path d="M66 4 L80 12 L66 20 z"></path></svg></div>`;}
+  });
+  const tpl=cols.join(' ').replace(/84u/g,'calc(84*var(--u))');
+  return board('cause-chain',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-cc" style="grid-template-columns:${tpl||'1fr'}">${cells}</div>`)+foot(s.footer)));
+}
+
+/* One thing moving place to place, changing at each stop. The route winds so
+   the labels can alternate above and below it. */
+function diffusionPath(s){
+  const t=s.template||{},st=arr(t.stops).slice(0,6),n=st.length,W=1128,H=400,hi=150,lo=250;
+  const dx=n>1?(W-160)/(n-1):0,xs=st.map((_,i)=>n>1?80+i*dx:W/2),ys=st.map((_,i)=>i%2?lo:hi);
+  let d=n?`M${xs[0]} ${ys[0]}`:'';
+  for(let i=1;i<n;i++)d+=` C${(xs[i-1]+dx/2).toFixed(0)} ${ys[i-1]} ${(xs[i]-dx/2).toFixed(0)} ${ys[i]} ${xs[i].toFixed(0)} ${ys[i]}`;
+  const lw=Math.min(250,n>1?dx-14:360);
+  let dots='',labels='';
+  st.forEach((x,i)=>{
+    dots+=`<circle cx="${xs[i].toFixed(0)}" cy="${ys[i]}" r="${i?11:17}" class="${i?'':'origin'}"></circle>`;
+    const left=Math.max(0,Math.min(W-lw,xs[i]-lw/2)),up=!(i%2);
+    labels+=`<div class="bht-dp-lab ${up?'up':'down'}" style="left:${(left/W*100).toFixed(2)}%;width:${(lw/W*100).toFixed(2)}%;${up?`bottom:${((H-hi+26)/H*100).toFixed(2)}%`:`top:${((lo+26)/H*100).toFixed(2)}%`}"><em>${esc(x.date)}</em><b>${esc(x.place)}</b><span>${rich(x.text)}</span></div>`;
+  });
+  return board('diffusion-path',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-dp"><svg viewBox="0 0 ${W} ${H}" aria-hidden="true">${d?`<path d="${d}"></path>`:''}${dots}</svg>${labels}</div>`)+foot(s.footer)));
+}
+
+/* Rise and fall: the shape of several places' fortunes on one clock. Levels
+   run 0 to 4 and are a direction, not a measurement, and the slide says so. */
+function timelineFortunes(s){
+  const t=s.template||{},cs=arr(t.cases).slice(0,4),n=Math.max(1,cs.length);
+  const years=cs.flatMap(c=>arr(c.points).map(p=>num(p.year,0)));
+  const ax=axis(t,years.length?years:[0,1]);
+  const W=900,RH=Math.min(108,Math.floor(318/n)),TOP=40,X=y=>(y-ax.y0)/(ax.y1-ax.y0)*W,Y=l=>RH-8-(Math.max(0,Math.min(4,num(l,0)))/4)*(RH-8-TOP);
+  const rows=cs.map((c,k)=>{
+    const pts=arr(c.points).map(p=>[X(num(p.year,ax.y0)),Y(p.level)]);
+    const line=pts.map((p,i)=>`${i?'L':'M'}${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(' ');
+    const area=pts.length?`${line} L${pts[pts.length-1][0].toFixed(1)} ${RH} L${pts[0][0].toFixed(1)} ${RH} Z`:'';
+    let marks='',labs='';
+    arr(c.events).slice(0,3).forEach((e,j)=>{
+      const x=X(num(e.year,ax.y0));
+      // The event sits on the line: find the line's height at that year.
+      let y=RH/2;for(let i=1;i<pts.length;i++)if(x>=pts[i-1][0]&&x<=pts[i][0]){const f=(x-pts[i-1][0])/Math.max(.001,pts[i][0]-pts[i-1][0]);y=pts[i-1][1]+f*(pts[i][1]-pts[i-1][1]);break;}
+      // Labels sit in a strip across the top of the row, on two alternating
+      // lines so neighbours cannot overprint, each on a dotted leader down to
+      // its point, so no label can land on the line itself.
+      marks+=`<line x1="${x.toFixed(1)}" y1="${j%2?TOP-2:TOP-20}" x2="${x.toFixed(1)}" y2="${(y-7).toFixed(1)}" class="lead"></line><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"></circle>`;
+      const right=x>W*.62;
+      labs+=`<div class="bht-ft-ev ${right?'r':''}" style="${right?`right:${((W-x-4)/W*100).toFixed(2)}%`:`left:${((x-4)/W*100).toFixed(2)}%`};top:${j%2?'calc(19*var(--u))':'0'}"><b>${esc(e.label||e.year)}</b> ${esc(e.text)}</div>`;
+    });
+    return `<div class="bht-ft-row"><div class="bht-ft-name"><b>${esc(c.name)}</b><span>${esc(c.note)}</span></div><div class="bht-ft-plot" style="height:calc(${RH}*var(--u))"><svg viewBox="0 0 ${W} ${RH}" preserveAspectRatio="none" aria-hidden="true"><line x1="0" y1="${RH}" x2="${W}" y2="${RH}" class="base"></line>${area?`<path d="${area}" class="area t${k%3}"></path><path d="${line}" class="line t${k%3}"></path>`:''}${marks}</svg>${labs}</div></div>`;
+  }).join('');
+  let ticks='';
+  if(ax.y1>ax.y0){const step=Math.max(1,num(t.tick,50));for(let y=Math.ceil(ax.y0/step)*step;y<=ax.y1;y+=step)ticks+=`<span style="left:${(X(y)/W*100).toFixed(2)}%">${y}</span>`;}
+  const note=t.note===false?'':esc(t.note||'Direction only, not a measurement.');
+  return board('timeline-fortunes',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-ft">${rows}<div class="bht-ft-row axis"><div class="bht-ft-name"><span>${note}</span></div><div class="bht-ft-ticks">${ticks}</div></div></div>`)+foot(s.footer)));
+}
+
+/* Two overlapping circles: what only one side has, and what both share. */
+function splitVenn(s){
+  const t=s.template||{},L=t.left||{},R=t.right||{};
+  const list=(a,cls,x)=>`<div class="bht-vn-list ${cls}" style="left:${(x/1128*100).toFixed(2)}%">${arr(a).slice(0,4).map(v=>`<p>${rich(v)}</p>`).join('')}</div>`;
+  const svg=`<svg viewBox="0 0 1128 430" aria-hidden="true"><circle cx="464" cy="235" r="195" class="l"></circle><circle cx="664" cy="235" r="195" class="r"></circle></svg>`;
+  const names=`<div class="bht-vn-name l">${esc(L.name)}</div><div class="bht-vn-name m">${esc(t.bothLabel||'Both')}</div><div class="bht-vn-name r">${esc(R.name)}</div>`;
+  return board('split-venn',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-vn">${svg}${names}${list(L.items,'l',290)}${list(t.both,'m',485)}${list(R.items,'r',680)}</div>`)+foot(s.footer)));
+}
+
+/* Continuity and change: before and after on either side of a turning point,
+   with what carried on drawn as one unbroken band underneath both. */
+function continuityChange(s){
+  const t=s.template||{},B=t.before||{},A=t.after||{},C=t.continued||{};
+  const side=(x,cls)=>`<div class="bht-cy-side ${cls}"><div class="bht-eb">${esc(x.tag||(cls==='b'?'Before':'After'))}</div>${arr(x.items).slice(0,3).map(v=>`<p>${rich(v)}</p>`).join('')}</div>`;
+  const band=`<div class="bht-cy-band"><div class="tg">${esc(C.tag||'Continued')}</div><div class="its">${arr(C.items).slice(0,3).map(v=>`<p>${rich(v)}</p>`).join('<i></i>')}</div></div>`;
+  return board('continuity-change',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-cy"><div class="bht-cy-top">${side(B,'b')}<div class="bht-cy-turn"><span>${esc(t.date)}</span><i></i></div>${side(A,'a')}</div>${band}</div>`)+foot(s.footer)));
+}
+
+/* HIPP sourcing: the source in the middle, the four questions around it. */
+function sourceHipp(s){
+  const t=s.template||{},a=t.attribution||{};
+  const who=[esc(a.author),a.work?`<i>${esc(a.work)}</i>`:'',esc(a.year)].filter(Boolean).join(', ');
+  const Q=[['H','Historical situation',t.situation],['I','Intended audience',t.audience],['P','Purpose',t.purpose],['P','Point of view',t.pov]];
+  const card=(q,cls)=>`<div class="bht-hp-card ${cls}"><div class="l">${q[0]}</div><div class="c"><div class="bht-eb">${q[1]}</div><p>${rich(q[2]||'')}</p></div></div>`;
+  const mid=t.visual?frame(t.visual,'bht-hp-img',{fit:'contain'}):`<div class="bht-sq-mark">&#8220;</div><p class="q">${rich(t.quote)}</p>`;
+  return board('source-hipp',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-hp">${card(Q[0],'a')}${card(Q[1],'b')}<div class="bht-hp-src">${mid}${who?`<div class="bht-sq-who">${who}</div>`:''}</div>${card(Q[2],'c')}${card(Q[3],'d')}</div>`)+foot(s.footer)));
+}
+
+/* Claim, evidence, reasoning, stacked the way the paragraph is built. */
+function claimEvidence(s){
+  const t=s.template||{},ev=arr(t.evidence).slice(0,3);
+  return board('claim-evidence',themeOf(t,'paper'),pad(eyebrow(s)+grow(`<div class="bht-ce"><div class="bht-ce-claim"><div class="tg">${esc(t.claimLabel||'Claim')}</div><p>${rich(t.claim||s.title)}</p></div><div class="bht-ce-ev" style="grid-template-columns:repeat(${Math.max(1,ev.length)},minmax(0,1fr))">${ev.map(e=>`<div class="card"><div class="tg">${esc(t.evidenceLabel||'Evidence')}</div><p>${rich(e.text)}</p>${e.source?`<span>${esc(e.source)}</span>`:''}</div>`).join('')}</div><div class="bht-ce-why"><div class="tg">${esc(t.reasoningLabel||'Reasoning')}</div><p>${rich(t.reasoning)}</p></div></div>`)+foot(s.footer)));
+}
+
+/* Rank the causes. Leave `weight` out and the bars stay empty for the room to
+   decide; give each a weight from 0 to 1 to show a ranking. */
+function causeRank(s){
+  const t=s.template||{},cs=arr(t.causes).slice(0,5);
+  const rows=cs.map((c,i)=>{
+    const w=c.weight==null?null:Math.max(0,Math.min(1,num(c.weight,0)));
+    return `<div class="bht-rk-row"><div class="n">${i+1}</div><div class="w"><b>${esc(c.label)}</b><span>${rich(c.note)}</span></div><div class="bht-rk-track ${w==null?'open':''}">${w==null?'':`<i style="width:${Math.round(w*100)}%"></i>`}</div></div>`;
+  }).join('');
+  return board('cause-rank',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-rk">${rows}</div>${t.prompt?`<p class="bht-rk-ask">${rich(t.prompt)}</p>`:''}`)+foot(s.footer)));
+}
+
+/* A common belief struck out, and what the evidence actually shows. */
+function mythEvidence(s){
+  const t=s.template||{},rows=arr(t.rows).slice(0,3);
+  const out=rows.map(r=>`<div class="bht-my-row"><div class="m"><span>${rich(r.myth)}</span></div><div class="ar">&#8594;</div><div class="e"><p>${rich(r.evidence)}</p>${r.source?`<span>${esc(r.source)}</span>`:''}</div></div>`).join('');
+  return board('myth-evidence',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-my"><div class="bht-my-head"><div>${esc(t.mythLabel||'People say')}</div><div></div><div>${esc(t.evidenceLabel||'The evidence says')}</div></div>${out}</div>`)+foot(s.footer)));
+}
+
+function brSort(s){const t=s.template||{},cols=arr(t.columns).slice(0,4);return beready('beready-sort','Sort It',`<div class="bht-so"><div class="chips">${arr(t.words).slice(0,10).map(w=>`<span>${esc(w)}</span>`).join('')}</div><div class="cols" style="grid-template-columns:repeat(${Math.max(1,cols.length)},minmax(0,1fr))">${cols.map(c=>`<div><b>${esc(c)}</b><i></i></div>`).join('')}</div></div>`,s,t,'paper');}
+
+/* Closers: the last thing on the screen before the bell. */
+function close321(s){
+  const t=s.template||{},it=arr(t.items).slice(0,3);
+  const cols=it.map(x=>{const k=Math.max(1,Math.min(4,num(x.n,1)));let l='';for(let i=0;i<k;i++)l+='<i></i>';return `<div class="bht-c3-col"><div class="big">${esc(x.n)}</div><p>${rich(x.text)}</p><div class="lines">${l}</div></div>`;}).join('');
+  return board('close-321',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-c3" style="grid-template-columns:repeat(${Math.max(1,it.length)},minmax(0,1fr))">${cols}</div>`)+foot(s.footer)));
+}
+function closeRetell(s){
+  const t=s.template||{};
+  const frameText=rich(t.frame).replace(/_{3,}/g,'<span class="bht-rt-blank"></span>');
+  return board('close-retell',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-rt"><p class="f">${frameText}</p>${arr(t.words).length?`<div class="bht-rt-bank"><div class="bht-eb">${esc(t.bankLabel||'Word bank')}</div><div class="chips">${arr(t.words).slice(0,8).map(w=>`<span>${esc(w)}</span>`).join('')}</div></div>`:''}${t.prompt?`<p class="ask">${rich(t.prompt)}</p>`:''}</div>`)+foot(s.footer)));
+}
+
+/* Two real sources side by side, each with its own label. */
+function fCompare(s){
+  const t=s.template||{},P=arr(t.panels).slice(0,2);
+  const cell=p=>`<div class="c">${frame(p.visual,'bht-cm-img',{fit:'contain',tagPos:'tl'})}<div class="k"><b>${esc(p.tag)}</b><span>${rich(p.text)}</span></div></div>`;
+  return board('frame-compare','paper',pad(head(s)+`<div class="bht-cm">${P.map(cell).join('')}</div>${t.question?`<p class="bht-cm-q">${rich(t.question)}</p>`:''}`,'tight'));
+}
+
+/* A route on a real map. `view` crops the picture to a region ({x,y,w,h} as
+   fractions of the whole image), `ratio` is the image's own width over
+   height, and every stop's x and y are fractions of the whole image, so the
+   pins stay put whatever the crop. */
+function fRoute(s){
+  const t=s.template||{},v=t.view||{},st=arr(t.stops).slice(0,8);
+  const vx=num(v.x,0),vy=num(v.y,0),vw=Math.max(.05,num(v.w,1)),vh=Math.max(.05,num(v.h,1)),ratio=Math.max(.2,num(t.ratio,1));
+  const H=592,Wd=Math.round(Math.min(640,H*ratio*vw/vh));
+  const px=p=>((num(p.x,0)-vx)/vw*100),py=p=>((num(p.y,0)-vy)/vh*100);
+  const vis=t.visual;
+  const img=vis&&vis.url?`<img class="bht-img" src="${esc(vis.url)}" alt="${esc(vis.alt||'')}" loading="eager" style="width:${(100/vw).toFixed(3)}%;height:${(100/vh).toFixed(3)}%;left:${(-vx/vw*100).toFixed(3)}%;top:${(-vy/vh*100).toFixed(3)}%;object-fit:fill">`:`<div class="bht-ph"><span>Add a map or satellite image</span></div>`;
+  const path=st.length>1?`<svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polyline points="${st.map(p=>`${px(p).toFixed(2)},${py(p).toFixed(2)}`).join(' ')}"></polyline></svg>`:'';
+  const pins=st.map((p,i)=>`<div class="bht-ro-pin" style="left:${px(p).toFixed(2)}%;top:${py(p).toFixed(2)}%">${i+1}</div>`).join('');
+  const legend=st.map((p,i)=>`<div class="bht-ro-leg"><div class="n">${i+1}</div><div><b>${esc(p.name)}</b><span>${rich(p.text)}</span></div></div>`).join('');
+  return board('frame-route','dark',pad(`<div class="bht-ro-map" style="width:calc(${Wd}*var(--u))">${img}${path}${pins}${tag(vis,'bl')}</div><div class="bht-col bht-ro-side">${head(s)}<div class="bht-ro-legend">${legend}</div><div class="bht-fill"></div>${foot(s.footer)}</div>`,'row'));
+}
+
 const KINDS={
   'equation':equation,'equation-stack':equationStack,'equation-remove':equationRemove,
   'exchange':exchange,'exchange-flow':exchangeFlow,'exchange-hub':exchangeHub,
@@ -397,7 +555,13 @@ const KINDS={
   'beready-recall':brRecall,'beready-fix':brFix,'beready-bank':brBank,'beready-answer':brAnswer,'beready-odd':brOdd,
   'frame-letterbox':fLetterbox,'frame-question':fQuestion,'frame-placard':fPlacard,'frame-triptych':fTriptych,
   'frame-stepin':fStepIn,'frame-evidence':fEvidence,'frame-subtitle':fSubtitle,'frame-storyboard':fStoryboard,
-  'frame-postcard':fPostcard,'frame-porthole':fPorthole,'frame-number':fNumber,'frame-cover':fCover
+  'frame-postcard':fPostcard,'frame-porthole':fPorthole,'frame-number':fNumber,'frame-cover':fCover,
+  /* round 2 */
+  'cause-chain':causeChain,'diffusion-path':diffusionPath,'split-venn':splitVenn,'continuity-change':continuityChange,
+  'timeline-fortunes':timelineFortunes,
+  'source-hipp':sourceHipp,'claim-evidence':claimEvidence,'cause-rank':causeRank,'myth-evidence':mythEvidence,
+  'beready-sort':brSort,'close-321':close321,'close-retell':closeRetell,
+  'frame-compare':fCompare,'frame-route':fRoute
 };
 
 /* ── styles ────────────────────────────────────────────────────────────── */
@@ -764,6 +928,188 @@ const CSS=`
 .bht-cv-lines{position:absolute;right:76u;bottom:60u;width:330u;display:flex;flex-direction:column;gap:14u;text-align:right}
 .bht-cv-lines p{font-size:19u;line-height:1.4;color:#f5f0e7}
 .bht-cv-lines i{display:block;height:1u;background:rgba(201,164,106,.6)}
+
+/* round 2: cause chain */
+.bht-cc{display:grid;align-items:stretch}
+.bht-cc-step{display:flex;flex-direction:column;gap:10u;min-width:0;padding:24u 22u 26u;border-radius:10u;background:#1a1d1f;border-top:5u solid #8c5a2b}
+.paper .bht-cc-step{background:#fffdf7;border:1u solid #ddd2be;border-top:5u solid #8c5a2b}
+.bht-cc-step .k{font:800 13u/1 'Montserrat',Helvetica,sans-serif;letter-spacing:.18em;color:var(--sub)}
+.bht-cc-step b{font:800 26u/1.15 'Cinzel',Georgia,serif;color:var(--head);overflow-wrap:break-word}
+.bht-cc-step span{font-size:17u;line-height:1.45;color:var(--fg)}
+.bht-cc-step.key{background:#c9a46a;border-top-color:#fffdf7}
+.bht-cc-step.key .k,.bht-cc-step.key b,.bht-cc-step.key span{color:#101213}
+.bht-cc-link{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6u;padding:0 4u}
+.bht-cc-link em{font:800 12u/1.2 'Montserrat',Helvetica,sans-serif;font-style:normal;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);text-align:center}
+.bht-cc-link svg{width:84u;height:24u}
+.bht-cc-link line{stroke:var(--acc);stroke-width:3}
+.bht-cc-link path{fill:var(--acc)}
+
+/* diffusion path */
+.bht-dp{position:relative;width:100%;aspect-ratio:1128/400}
+.bht-dp svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.bht-dp path{fill:none;stroke:#8c5a2b;stroke-width:4;stroke-dasharray:2 12;stroke-linecap:round}
+.bht-dp circle{fill:#8c5a2b;stroke:var(--bg);stroke-width:4}
+.bht-dp circle.origin{fill:var(--bg);stroke:#8c5a2b;stroke-width:6}
+.bht-dp-lab{position:absolute;display:flex;flex-direction:column;gap:3u;text-align:center}
+.bht-dp-lab em{font:800 13u/1.2 'Montserrat',Helvetica,sans-serif;font-style:normal;letter-spacing:.16em;text-transform:uppercase;color:var(--acc)}
+.bht-dp-lab b{font:800 25u/1.1 'Cinzel',Georgia,serif;color:var(--head)}
+.bht-dp-lab span{font-size:16u;line-height:1.35;color:var(--fg)}
+
+/* rise and fall */
+.bht-ft{display:flex;flex-direction:column;gap:10u}
+.bht-ft-row{display:grid;grid-template-columns:200u minmax(0,1fr);column-gap:28u;align-items:center}
+.bht-ft-name{display:flex;flex-direction:column;gap:3u}
+.bht-ft-name b{font:800 26u/1.1 'Cinzel',Georgia,serif;color:var(--head)}
+.bht-ft-name span{font:600 13u/1.35 'Montserrat',Helvetica,sans-serif;color:var(--soft)}
+.bht-ft-plot{position:relative}
+.bht-ft-plot svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.bht-ft-plot .base{stroke:var(--rulec);stroke-width:1.5;vector-effect:non-scaling-stroke}
+.bht-ft-plot .line{fill:none;stroke-width:4;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+.bht-ft-plot .area{stroke:none;opacity:.1}
+.bht-ft-plot .lead{stroke:var(--soft);stroke-width:1.5;stroke-dasharray:3 4;vector-effect:non-scaling-stroke}
+.bht-ft-plot .t0{stroke:#8c5a2b;fill:#8c5a2b}.bht-ft-plot .t1{stroke:#1a1c1d;fill:#1a1c1d}.bht-ft-plot .t2{stroke:#a8652d;fill:#a8652d}
+.dark .bht-ft-plot .t1{stroke:#aeb6b8;fill:#aeb6b8}
+.bht-ft-plot .line.t0,.bht-ft-plot .line.t1,.bht-ft-plot .line.t2{fill:none}
+.bht-ft-plot circle{fill:var(--bg);stroke:var(--head);stroke-width:3;vector-effect:non-scaling-stroke}
+.bht-ft-ev{position:absolute;font:600 13u/1.3 'Montserrat',Helvetica,sans-serif;color:var(--fg);white-space:nowrap}
+.bht-ft-ev b{font-weight:800;color:var(--acc)}
+.bht-ft-ev.r{text-align:right}
+.bht-ft-row.axis{align-items:start}
+.bht-ft-ticks{position:relative;height:22u;border-top:2u solid var(--head)}
+.bht-ft-ticks span{position:absolute;top:4u;transform:translateX(-50%);font:600 13u/1.3 'Montserrat',Helvetica,sans-serif;color:var(--soft)}
+.bht-ft-row.axis .bht-ft-name span{font-style:italic;font-family:'Libre Baskerville',Georgia,serif;font-weight:400}
+
+/* venn */
+.bht-vn{position:relative;width:100%;aspect-ratio:1128/430}
+.bht-vn svg{position:absolute;inset:0;width:100%;height:100%}
+.bht-vn circle.l{fill:rgba(140,90,43,.16);stroke:#8c5a2b;stroke-width:3}
+.bht-vn circle.r{fill:rgba(26,28,29,.08);stroke:#1a1c1d;stroke-width:3}
+.dark .bht-vn circle.r{fill:rgba(174,182,184,.12);stroke:#aeb6b8}
+.bht-vn-name{position:absolute;top:0;width:28%;text-align:center;font:900 28u/1.1 'Cinzel',Georgia,serif;color:var(--head)}
+.bht-vn-name.l{left:16%}.bht-vn-name.r{right:16%}
+.bht-vn-name.m{left:36%;top:9%;font:800 14u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--acc)}
+.bht-vn-list{position:absolute;top:22%;height:66%;width:14%;display:flex;flex-direction:column;justify-content:center;gap:14u;text-align:center}
+.bht-vn-list p{font-size:17u;line-height:1.35}
+.bht-vn-list.m p{font-weight:700}
+
+/* continuity and change */
+.bht-cy{display:flex;flex-direction:column;gap:0}
+.bht-cy-top{display:grid;grid-template-columns:minmax(0,1fr) 190u minmax(0,1fr);align-items:stretch}
+.bht-cy-side{display:flex;flex-direction:column;gap:12u;padding:10u 0 30u}
+.bht-cy-side.a{text-align:right;align-items:flex-end}
+.bht-cy-side p{font-size:22u;line-height:1.4;max-width:24ch}
+.bht-cy-turn{position:relative;display:flex;flex-direction:column;align-items:center}
+.bht-cy-turn span{font:900 44u/1 'Cinzel',Georgia,serif;color:#fffdf7;background:#8c5a2b;border-radius:999u;padding:18u 24u;z-index:1}
+.bht-cy-turn i{flex:1;width:4u;background:repeating-linear-gradient(180deg,#8c5a2b 0 10u,transparent 10u 18u)}
+.bht-cy-band{background:#1a1c1d;color:#f5f0e7;border-radius:10u;padding:22u 28u;display:grid;grid-template-columns:150u minmax(0,1fr);column-gap:24u;align-items:center}
+.dark .bht-cy-band{background:#f5f0e7;color:#151718}
+.bht-cy-band .tg{font:900 26u/1.1 'Cinzel',Georgia,serif;color:#c9a46a}
+.dark .bht-cy-band .tg{color:#6b3e1f}
+.bht-cy-band .its{display:flex;align-items:center;gap:20u}
+.bht-cy-band .its p{font-size:18u;line-height:1.4;flex:1}
+.bht-cy-band .its i{width:8u;height:8u;border-radius:50%;background:#c9a46a;flex:none}
+
+/* HIPP */
+.bht-hp{display:grid;grid-template-columns:minmax(0,1fr) 420u minmax(0,1fr);grid-template-rows:1fr 1fr;column-gap:26u;row-gap:18u;height:100%;max-height:430u}
+.bht-hp-card{display:flex;gap:16u;align-items:flex-start;background:#fffdf7;border:1u solid var(--rulec);border-radius:10u;padding:18u 20u;min-height:0}
+.dark .bht-hp-card{background:#1a1d1f}
+.bht-hp-card.a{grid-column:1;grid-row:1}.bht-hp-card.b{grid-column:1;grid-row:2}.bht-hp-card.c{grid-column:3;grid-row:1}.bht-hp-card.d{grid-column:3;grid-row:2}
+.bht-hp-card .l{font:900 50u/1 'Cinzel',Georgia,serif;color:var(--acc);width:40u;flex:none}
+.bht-hp-card .c{display:flex;flex-direction:column;gap:6u;min-width:0}
+.bht-hp-card .bht-eb{font-size:12u}
+.bht-hp-card p{font-size:17u;line-height:1.42}
+.bht-hp-src{grid-column:2;grid-row:1 / 3;display:flex;flex-direction:column;justify-content:center;gap:12u;background:#1a1c1d;color:#f5f0e7;border-radius:10u;padding:26u 30u}
+.bht-hp-src .bht-sq-mark{color:#c9a46a;font-size:110u;height:74u;margin-top:10u}
+.bht-hp-src .q{font-size:22u;line-height:1.5;color:#fffdf7}
+.bht-hp-src .bht-sq-who{color:#aeb6b8}
+.bht-hp-img{flex:1;min-height:0;border-radius:6u;background:#0b0d0e}
+
+/* claim, evidence, reasoning */
+.bht-ce{display:flex;flex-direction:column;gap:18u}
+.bht-ce .tg{font:800 12u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.2em;text-transform:uppercase}
+.bht-ce-claim{background:#1a1c1d;color:#f5f0e7;border-radius:10u;padding:22u 28u;display:flex;flex-direction:column;gap:8u;--b:#c9a46a}
+.bht-ce-claim .tg{color:#c9a46a}
+.bht-ce-claim p{font:800 28u/1.3 'Cinzel',Georgia,serif;color:#fffdf7}
+.bht-ce-claim p b{color:#c9a46a}
+.bht-ce-ev{display:grid;column-gap:18u}
+.bht-ce-ev .card{position:relative;background:#fffdf7;border:1u solid #ddd2be;border-radius:10u;padding:18u 20u;display:flex;flex-direction:column;gap:8u;color:#151718}
+.bht-ce-ev .card::before{content:'';position:absolute;left:50%;bottom:100%;width:3u;height:18u;background:#8c5a2b}
+.bht-ce-ev .tg{color:#6b3e1f}
+.bht-ce-ev p{font-size:18u;line-height:1.42}
+.bht-ce-ev span{font:600 13u/1.3 'Montserrat',Helvetica,sans-serif;color:#5a5f5c}
+.bht-ce-why{border:2u solid #8c5a2b;border-radius:10u;padding:16u 24u;display:grid;grid-template-columns:130u minmax(0,1fr);column-gap:18u;align-items:center}
+.bht-ce-why .tg{color:var(--acc)}
+.bht-ce-why p{font-size:19u;line-height:1.45}
+
+/* rank the causes */
+.bht-rk{display:flex;flex-direction:column}
+.bht-rk-row{display:grid;grid-template-columns:70u minmax(0,1fr) 300u;column-gap:26u;align-items:center;padding:14u 0;border-bottom:1u solid var(--rulec)}
+.bht-rk-row .n{font:900 46u/1 'Cinzel',Georgia,serif;color:var(--acc)}
+.bht-rk-row .w{display:flex;flex-direction:column;gap:2u}
+.bht-rk-row .w b{font:800 26u/1.15 'Cinzel',Georgia,serif;color:var(--head)}
+.bht-rk-row .w span{font-size:17u;color:var(--soft)}
+.bht-rk-track{height:16u;border-radius:8u;background:rgba(174,182,184,.18);overflow:hidden}
+.paper .bht-rk-track{background:#ebe2d0}
+.bht-rk-track i{display:block;height:100%;background:#c9a46a;border-radius:8u}
+.paper .bht-rk-track i{background:#8c5a2b}
+.bht-rk-track.open{background:transparent;border:2u dashed var(--soft)}
+.bht-rk-ask{padding-top:22u;font-size:24u;line-height:1.45}
+
+/* myth and evidence */
+.bht-my-head,.bht-my-row{display:grid;grid-template-columns:minmax(0,1fr) 60u minmax(0,1.25fr);column-gap:18u;align-items:center}
+.bht-my-head div{font:800 13u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--soft);padding-bottom:10u}
+.bht-my-head div:last-child{color:var(--acc)}
+.bht-my-row{border-top:1u solid var(--rulec);padding:18u 0}
+.bht-my-row .m{position:relative;justify-self:start}
+.bht-my-row .m span{font:700 23u/1.35 'Libre Baskerville',Georgia,serif;color:#8d8f8c;text-decoration:line-through;text-decoration-color:#a8652d;text-decoration-thickness:4u}
+.bht-my-row .ar{font:400 34u/1 'Cinzel',Georgia,serif;color:var(--acc);text-align:center}
+.bht-my-row .e p{font-size:20u;line-height:1.42;color:var(--head)}
+.bht-my-row .e span{display:block;margin-top:6u;font:700 13u/1.3 'Montserrat',Helvetica,sans-serif;letter-spacing:.08em;color:var(--soft)}
+
+/* BeReady: sort it */
+.bht-so .chips{display:flex;flex-wrap:wrap;gap:10u}
+.bht-so .chips span{font:700 19u/1.2 'Montserrat',Helvetica,sans-serif;color:#6b3e1f;background:#efe4d0;border:1u solid #ddd2be;border-radius:999u;padding:9u 18u}
+.dark .bht-so .chips span{background:#1f2426;border-color:#364044;color:#d2b48c}
+.bht-so .cols{display:grid;column-gap:14u;margin-top:26u}
+.bht-so .cols div{display:flex;flex-direction:column;gap:10u}
+.bht-so .cols b{font:800 20u/1.15 'Cinzel',Georgia,serif;color:var(--head);text-align:center}
+.bht-so .cols i{display:block;height:150u;border:2u dashed var(--rulec);border-radius:10u}
+.paper .bht-so .cols i{border-color:#c9b99c}
+
+/* closers */
+.bht-c3{display:grid;column-gap:24u}
+.bht-c3-col{display:flex;flex-direction:column;gap:14u;border-top:5u solid #8c5a2b;padding-top:18u;min-width:0}
+.bht-c3-col .big{font:900 110u/.9 'Cinzel',Georgia,serif;color:var(--acc)}
+.bht-c3-col p{font-size:22u;line-height:1.42;color:var(--head)}
+.bht-c3-col .lines i{display:block;height:44u;border-bottom:1.5u solid var(--rulec)}
+.bht-rt{display:flex;flex-direction:column;gap:26u;border-left:6u solid #8c5a2b;padding-left:36u}
+.bht-rt .f{font-size:34u;line-height:1.9;color:var(--head);max-width:44ch}
+.bht-rt-blank{display:inline-block;width:170u;height:1em;border-bottom:3u solid #8c5a2b;vertical-align:baseline;margin:0 6u}
+.bht-rt-bank{display:flex;align-items:center;gap:20u;flex-wrap:wrap}
+.bht-rt-bank .chips{display:flex;flex-wrap:wrap;gap:10u}
+.bht-rt-bank .chips span{font:700 18u/1.2 'Montserrat',Helvetica,sans-serif;color:#6b3e1f;background:#efe4d0;border:1u solid #ddd2be;border-radius:999u;padding:8u 16u}
+.bht-rt .ask{font:700 18u/1.4 'Montserrat',Helvetica,sans-serif;color:var(--soft)}
+
+/* frames: compare and route */
+.bht-cm{display:grid;grid-template-columns:1fr 1fr;column-gap:24u;flex:1;min-height:0}
+.bht-cm .c{display:flex;flex-direction:column;gap:12u;min-height:0}
+.bht-cm-img{flex:1;min-height:0;border-radius:4u;background:#fffdf7;border:1u solid #ddd2be}
+.bht-cm .k{display:flex;flex-direction:column;gap:4u}
+.bht-cm .k b{font:800 13u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#6b3e1f}
+.bht-cm .k span{font-size:17u;line-height:1.4}
+.bht-cm-q{font-size:21u;line-height:1.45;color:var(--head)}
+.bht-frame-compare .bht-h{font-size:36u;max-width:34ch}
+.bht-ro-map{position:relative;flex:none;height:100%;overflow:hidden;border-radius:6u;background:#0b0d0e}
+.bht-ro-map svg{position:absolute;inset:0;width:100%;height:100%;z-index:1}
+.bht-ro-map polyline{fill:none;stroke:#fffdf7;stroke-width:3;stroke-dasharray:8 7;vector-effect:non-scaling-stroke;filter:drop-shadow(0 1px 2px rgba(0,0,0,.8))}
+.bht-ro-pin{position:absolute;z-index:2;width:32u;height:32u;transform:translate(-50%,-50%);border-radius:50%;background:#c9a46a;border:3u solid #101213;display:flex;align-items:center;justify-content:center;font:900 15u/1 'Montserrat',Helvetica,sans-serif;color:#101213}
+.bht-ro-side{flex:1;padding-left:44u;min-height:0}
+.bht-ro-side .bht-h{font-size:34u;max-width:18ch}
+.bht-ro-legend{display:flex;flex-direction:column;gap:9u}
+.bht-ro-leg{display:grid;grid-template-columns:34u minmax(0,1fr);column-gap:14u;align-items:start}
+.bht-ro-leg .n{width:28u;height:28u;border-radius:50%;background:#c9a46a;color:#101213;display:flex;align-items:center;justify-content:center;font:900 13u/1 'Montserrat',Helvetica,sans-serif;margin-top:2u}
+.bht-ro-leg b{display:block;font:800 19u/1.2 'Cinzel',Georgia,serif;color:var(--head)}
+.bht-ro-leg span{display:block;font-size:15u;line-height:1.35;color:var(--soft)}
 `.replace(/(\d+(?:\.\d+)?)u\b/g,'calc($1*var(--u))')
  /* Every rule is scoped under .bht-slide, so a host page's own h2, p or b
     rule cannot outrank a template: the Unit 2 pages and the catalog all style

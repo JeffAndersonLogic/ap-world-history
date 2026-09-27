@@ -61,7 +61,7 @@ const SUITES = {
     ['scripts/test/evidence-image-surgery.test.js', 'Module 07 image candidates splice the right bytes'],
     ['scripts/test/schedule-cohorts.test.js', 'green/silver alternation, due dates, generated board and Canvas events'],
     ['scripts/test/teacher-today.test.js', 'the Today panel routes a date to the right teacher surface'],
-    ['scripts/test/teaching-freeze.test.js', 'a topic being taught cannot change between Green and Silver']
+    ['scripts/test/topic-audit-coverage.test.js', 'topic audit records, coverage index, and the freshness check going quiet']
   ],
   browser: [
     ['scripts/test/modal-focus.unit.js', 'unit lesson modal focus contract'],

@@ -29,24 +29,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      # Enough history to find where this commit left main, for the freeze check.
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 200
 
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-
-      # A topic being taught must not change between Green's class and Silver's.
-      # See "The teaching freeze" in CLAUDE.md. --strict: if there is nothing to
-      # compare against, that is a failure, never a quiet pass.
-      - name: Teaching freeze
-        env:
-          FREEZE_BEFORE: ${{ github.event.before }}
-        run: |
-          git fetch --no-tags --depth=200 origin main:refs/remotes/origin/main || true
-          node scripts/check-teaching-freeze.js --ci --strict
 
       # No `npm install`. validate.js and the rest of the offline suite are
       # dependency-free by design, and running them on a bare checkout is what

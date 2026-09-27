@@ -41,16 +41,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "map",
+      "kind": "frame-question",
       "eyebrow": "Module 01 · Map & Geography",
       "title": "The Sahara is the problem in the middle.",
       "subtitle": "West African gold zones · Saharan salt · North African markets",
-      "visual": {
-        "url": "../assets/images/instructional-maps/topic-2-4.svg",
-        "alt": "Instructional map of trans-Saharan routes and West African states",
-        "credit": "BeHistorical instructional map · Topic 2.4"
-      },
-      "footer": "Trade links regions because they need different things."
+      "template": {
+        "visual": {
+          "fit": "contain",
+          "url": "../assets/images/topics/2-4/2.4%20-%20Africa%20Satellite.jpg",
+          "alt": "Satellite image of Africa: the tan Sahara across the north, green West and Central Africa to the south, the Mediterranean above",
+          "credit": "Satellite image · Africa"
+        }
+      }
     },
     {
       "kind": "action",
@@ -163,20 +165,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "frame-question",
-      "eyebrow": "The Motive · On the Map",
-      "title": "Follow the salt south and the gold north.",
-      "subtitle": "Every arrow is a price difference someone was willing to cross the desert for.",
-      "template": {
-        "visual": {
-          "fit": "contain",
-          "url": "../assets/images/topics/2-4/2.4%20-%20Mali.png",
-          "alt": "Map of the Mali Empire and trans-Saharan routes, with salt moving south from Taghaza and gold moving north",
-          "credit": "Map · Mali Empire trade routes and goods"
-        }
-      }
-    },
-    {
       "kind": "source-quote",
       "eyebrow": "Primary Source · Close Read",
       "title": "Ibn Battuta at Taghaza, 1352",
@@ -259,6 +247,20 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Module 06 · Checkpoint 1",
       "title": "Explain the mechanism.",
       "subtitle": "How did camel technology and caravans increase the volume and range of trade? Use gold or salt as evidence. On your own: no coach."
+    },
+    {
+      "kind": "frame-question",
+      "eyebrow": "Mali · On the Map",
+      "title": "Mali sits where the salt arrives and the gold leaves.",
+      "subtitle": "Follow the salt south from Taghaza and the gold north toward the Mediterranean.",
+      "template": {
+        "visual": {
+          "fit": "contain",
+          "url": "../assets/images/topics/2-4/2.4%20-%20Mali.png",
+          "alt": "Map of the Mali Empire and trans-Saharan routes, with salt moving south from Taghaza and gold moving north",
+          "credit": "Map · Mali Empire trade routes and goods"
+        }
+      }
     },
     {
       "kind": "exchange-flow",
@@ -344,6 +346,16 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "video",
+      "eyebrow": "Video · TED-Ed · Mansa Musa",
+      "title": "Mansa Musa, one of the wealthiest people who ever lived",
+      "footer": "Where did his wealth come from? Connect it to the gold and salt trade.",
+      "video": {
+        "youtubeId": "O3YJMaL55TM",
+        "label": "Mansa Musa, one of the wealthiest people who ever lived - Jessica Smith (TED-Ed)"
+      }
+    },
+    {
       "kind": "hero",
       "eyebrow": "Cities + Connections",
       "title": "Trade wealth supports connected cities.",
@@ -356,10 +368,14 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "action",
-      "eyebrow": "Module 09 · BeInTheRoom · Mali Court",
-      "title": "You are inside a state built around exchange.",
-      "subtitle": "Choose a role. Make a decision. Defend it with evidence."
+      "kind": "video",
+      "eyebrow": "Video · TED-Ed · Timbuktu",
+      "title": "The hidden treasures of Timbuktu",
+      "footer": "Name one thing, besides gold and salt, that traveled along the caravan routes.",
+      "video": {
+        "youtubeId": "40ehHbdi95o",
+        "label": "The hidden treasures of Timbuktu - Elizabeth Cox (TED-Ed)"
+      }
     },
     {
       "kind": "split-contrast",
@@ -399,22 +415,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
           ]
         }
       }
-    },
-    {
-      "kind": "sharpen",
-      "eyebrow": "Sharpen the Claim",
-      "title": "",
-      "footer": "A claim is AP-sized when it names a cause, a change, and why it mattered.",
-      "template": {
-        "weak": "Gold traded for salt.",
-        "strong": "Saddles, caravans and **complementary demand** turned a dangerous crossing into a **regular network**, and Mali grew rich by **protecting and taxing** it."
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 10 · Checkpoint 2",
-      "title": "Mali gained from the trade, and kept it moving.",
-      "subtitle": "Explain both, with two pieces of evidence. Draft, work with Socrates, revise. If it is not finished in class, it is homework."
     },
     {
       "kind": "frame-letterbox",

@@ -26,60 +26,43 @@ A presentation is not complete because a file or commit exists. Follow the autho
 - `main` is the deploy branch: GitHub Pages serves it, so what is on `main` is
   what students have.
 - Still no pull requests. Push to a working branch, wait for Validate to pass on
-  it, then fast-forward `main` to that commit. This is the one change the branch
-  rule forces, and only because a required check cannot pass on a commit that
-  exists nowhere yet. See "The branch rule" below.
+  it, then fast-forward `main` to that commit, then **delete the working branch**.
+  This is the one change the branch rule forces, and only because a required check
+  cannot pass on a commit that exists nowhere yet. See "The branch rule" below.
+- **Deleting the branch is part of shipping, not tidying afterwards.** Nothing in
+  this flow ever closes a branch otherwise, and on 2026-09-26 the repository was
+  carrying about 300 remote branches, of which 27 were ancestors of `main`. At that
+  size the branch list stops being usable and no later pruning fixes the cause.
+  Delete it only after `origin/main` and the branch are the same commit and the
+  branch is an ancestor of `main`; then it is provably free. **A Claude Code web
+  session cannot do the remote half**: git writes of that kind are refused there with
+  HTTP 403, and git prints `Everything up-to-date` afterwards, so a delete that was
+  refused by policy reads like a no-op that found nothing to do. Check with
+  `git ls-remote` and say so plainly rather than reporting a branch deleted. The
+  **ship-to-main** skill has the procedure, the exact failure text and the routes
+  that are also blocked.
+- **Before deleting any branch you did not just ship, check whether it heads an open
+  pull request.** Deleting the head branch closes the PR. The repository's own rule is
+  that there are no pull requests, so it is easy to forget that fourteen are open
+  anyway, mostly opened from other tools. In the 2026-09-26 batch pass exactly one
+  branch of 56 was an open PR's head, #7, and nothing about the branch itself said so:
+  it is four months stale, it is named like every other agent branch, and its work was
+  retired from the repository weeks ago. `list_pull_requests` with `state: open` and a
+  `grep -Fxf` against the delete list is the whole check.
 - The rule in `.github/branch-ruleset.json` is applied, as of 2026-09-01: the API
   reports `main` protected. Committing directly to `main` no longer works, so the
   branch-then-fast-forward flow above is the only route and the escape hatch this
   line used to describe is gone.
 
-### The teaching freeze
+### The teaching freeze, retired
 
-**A topic is frozen from the start of its Green day through the end of its Silver
-day.** Both dates are in `assets/data/announcements-schedule.js`. While a topic is
-frozen, nothing that changes what students or the projector show for that topic
-reaches `main`: its lesson page and data files, its First & 10, its deep reading, its
-BeInTheRoom, its Teaching OS pages and its student deck. Work on other topics, and on
-files no student or projector sees, goes on as normal.
-
-The reason is that Green and Silver are different students taught the same lesson. On
-2026-09-22 Topic 2.3 was rewritten the night between the two classes, so the two rooms
-were taught two different lessons, and the teacher spent class time debugging the
-live site. A fix made after Green has been taught is a fix only Silver gets.
-
-**The exception is Jeff saying "ship this fix", and it covers only a broken lesson:** a
-save that loses work, a page or button that does not work, a dead picture, or a factual
-error. Anything that is an improvement rather than a repair waits until the topic
-thaws, is written down as a note for Jeff, and ships before the topic is taught again.
-A factual error fixed during the freeze is mentioned to Green at their next class, so
-the two rooms do not quietly diverge.
-
-**It is enforced, by `scripts/check-teaching-freeze.js`, in three places**, because a
-required check binds to a commit and not to a day: a branch that went green the evening
-before Green's class could otherwise be fast-forwarded onto main the next morning with
-nothing running again. The Validate workflow runs it on every push (the gate main
-enforces), the pre-push hook runs it on any push to main, and the ship-to-main skill runs
-it immediately before the fast-forward. Pushing a working branch is never blocked;
-drafting during a freeze is allowed, and its CI simply stays red until the topic thaws,
-when re-running Validate on that commit turns it green. The dates are the school's, in
-Indiana time, never UTC, so a 9pm push on Green's day still counts as Green's day.
-
-**The override is a commit trailer**, a line reading `Ship-this-fix: <what was broken>`
-in any commit of the change. Write it only when Jeff has said "ship this fix". The
-check prints the topic and the files so the other room can be told.
-
-**What it matches**: a topic's files by name (`lesson-2-3-`, `topic-2-3`, `topics/2-3/`,
-`foundations-3-`), the BeInTheRoom scenario its data links to, and that topic's own
-entry inside `assets/data/ap-practice-units-1-2.js`, which is re-evaluated per topic
-because one file carries fourteen topics. **What it deliberately does not**: shared code
-every topic runs on, such as the renderers and stylesheets, since freezing those would
-freeze the whole course on every school day, and anything under `docs/`.
-`scripts/test/teaching-freeze.test.js`, in the offline suite, replays the real 2.3
-rewrite and must see it refused on 9/22 and allowed on 9/24.
-
-Explicit instructions from Jeff always override this rule; if he asks for a change to
-a frozen topic, remind him once that it is frozen and then do what he says.
+**Retired 2026-09-24, on Jeff's word.** From 2026-09-22 a topic was frozen from the
+start of its Green day through the end of its Silver day, and
+`scripts/check-teaching-freeze.js` refused any change to it in CI, in the pre-push
+hook and in the ship-to-main skill. None of that runs any more, and a change to a topic
+being taught ships the same way as any other change. The checker, its library and its
+test are in `archive/teaching-freeze/`, with a README saying how to restore them. Do
+not rebuild it here without reading that README first.
 
 ## The Gate
 
@@ -305,7 +288,19 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/build-run-of-show.js`, generate the Run of Show teacher-cockpit pacing page for each topic in its `TOPICS` list, plus `teacher/run-of-show-index.html`, the one stable URL linking every topic that has one. `--check` fails on drift without writing, wired into `scripts/test/readings-reproducible.test.js` in the offline suite. `validate.js` checks reachability both ways: a declared topic missing its `runOfShow` block or its generated page, and a generated page the index does not link. See "Run of Show" below.
 - `node scripts/build-teacher-index.js`, generate `teacher/index.html`, the teacher command center: one bookmark linking every teacher-only tool (Run of Show, the interactive lessons, Skills Lens), plus a Today panel that reads the schedule live in the browser and surfaces the best teacher surface for whatever topic is being taught right now. `--check` fails on drift without writing, in the offline suite. `validate.js` checks the registry **both ways**: the page links every declared tool, every declared interactive lesson exists and is in the tool grid, no `teacher/command-center-*.html` on disk is missing from `INTERACTIVE_TOPICS`, and none of it is linked from a student page. See "Run of Show" below.
 - `node scripts/test/slide-templates.test.js`, the offline slide template contract: one library, `assets/js/behistorical-slide-templates.js`, handed every template slide by every Teaching OS renderer and loaded by every deck's wrapper and student shell, with a catalog example for every template, escaped text, and the `Historical Reconstruction - AI Generated` label forced on every `ai: true` visual. Carries its own negative controls. In the offline suite. See "Slide templates" in `docs/TEACHING-OS.md`.
-- `node scripts/test/slide-templates.browser.test.js`, draw every template in Chromium and fail on text painted off its board, an AI label missing or cut off, or a Teaching OS page that does not really draw a template. In the browser suite. Runs on fallback fonts, which are narrower than Cinzel, so check a changed layout with the real fonts too.
+- `node scripts/test/slide-templates.browser.test.js`, draw every template in Chromium and fail on text painted off its board, text colliding inside it (a region spilling into the heading or footer, or text over text), an AI label missing or cut off, or a Teaching OS page that does not really draw a template. In the browser suite. Its main passes use fallback fonts, narrower than Cinzel; a webfont pass re-measures every real deck in the brand fonts and prints SKIP when the fonts cannot load, which is not a pass. `BHT_FONT_DIR` serves the fonts from disk for a sandbox whose browser cannot reach Google; see "Slide templates" in `docs/TEACHING-OS.md`.
+- `node scripts/build-topic-audit-index.js`, generate `docs/topic-audits/index.md`, the
+  coverage page for the per-topic audits. `--check` fails on drift, which is what the
+  offline suite runs. Never hand-edit the index. See "Topic audits" below.
+- `node scripts/check-audit-freshness.js [--horizon=N] [--sweep-max-age=N] [--json]`,
+  fail when the topic audit has gone quiet: no weekly sweep marker, a topic taught
+  soon with no record or a stale one, an exhausted schedule, an unreadable record, or
+  a shallow clone. **Nightly, never the push gate**, because an overdue audit must
+  never block a classroom fix. Exit 1 means something needs doing; there is no exit 2,
+  since every input is local.
+- `node scripts/test/topic-audit-coverage.test.js`, drive every branch of that check
+  with synthetic coverage and prove each one is capable of failing, plus an all-clean
+  fixture proving it can still pass. In the offline suite.
 - `node scripts/test/teacher-today.test.js`, prove the Today panel routes a real date to the right teacher surface, against the real schedule and the real registry: every registered lesson on both its cohort days, a Run of Show topic still resolving, interactive outranking Run of Show, and a holiday, a topic-less class day and an unbuilt topic each answering honestly rather than offering a dead link. In the offline suite. See "Run of Show" below.
 
 The student entry point is `index.html`. The project inventory is `docs/command-center.html`, backed by the generated `assets/data/project-status-manifest.js` file. The Google Form and the old Teacher Hub are both retired; see `docs/FORM-CONTRACT.md` and `docs/TEACHER-HUB.md`. Student work reaches the teacher through Canvas only, and the Skills Lens and the teacher command center are the teacher-facing surfaces.
@@ -1303,6 +1298,77 @@ a teacher those topics had no teacher surface on the mornings they were taught.
 Nothing reported it, because the old check compared the page against the declared
 list and the declared list was internally consistent. A list checked only against
 itself can fall behind the repository and stay green forever.
+
+## Topic audits
+
+The **topic-audit** skill audits one topic's student- and projector-facing surfaces
+before it is taught. It exists because the 2.3 Skill Builder shipped prompts written
+above a ninth grader and an Evidence Lab asked about three cards that were not on the
+page, with every structural check green through both.
+
+**It ran once, by hand, on 2026-09-23, and then stopped, and nothing could tell you
+that.** It reported to a chat window that scrolled away. No record said which topics
+were covered, no schedule fired it again, and the only available signal five days later
+was Jeff noticing it felt like it had slipped. The skill's own description already
+referred to "the weekly pre-teaching check", and no such check had ever existed: it was
+a mode the skill supported and nothing invoked.
+
+Three parts now, and each one fixes a different half of that.
+
+**The record.** Every run writes `docs/topic-audits/topic-<u>-<t>-<date>.md` with front
+matter carrying `topic`, `audited` and `mode`. Nothing else is a record: a chat summary
+is not, and a commit message is not, because neither can be counted. The 2.4 and 2.5
+records are marked `reconstructed: true`, because they were rebuilt from commit
+evidence on 2026-09-27 rather than written at the time, and a reconstruction that did
+not say so would be the same dishonesty in a new place.
+
+**The coverage index.** `docs/topic-audits/index.md`, generated by
+`build-topic-audit-index.js` from the records, the schedule and git history.
+**A topic is Fresh only if nothing in it changed after the audit date.** An audit
+describes a topic at a moment and the topic keeps moving: 2.5 was audited on the 23rd,
+revised on the 25th and 26th, and taught on the 28th, so it reads Stale, which is the
+honest answer. The index carries **no date-relative section** and that is load-bearing:
+the first draft printed "taught in the next 10 days" and claimed in a comment to be
+pinned, which meant `--check` in the push gate would have failed on a day passing
+rather than on anything anyone did. Every column on it is now a fact about the commit.
+The live this-week view belongs to the freshness check, against the real clock.
+
+**The freshness check.** `check-audit-freshness.js`, nightly. It fails on five things,
+and the third is the one worth reading twice:
+
+1. **No sweep marker, or one older than eight days.** The sweep writes one on every
+   run, so a missing marker means it did not run.
+2. **A topic taught within ten days that is unaudited or stale.**
+3. **An exhausted schedule.** With no future class days nothing is "taught soon", every
+   coverage assertion passes for want of anything to check, and the script would print
+   a confident pass on a course nobody is scheduling. On 2026-09-27 the schedule ended
+   eight days out, so this was not hypothetical.
+4. **A record that does not parse**, which would otherwise make an audited topic read
+   as never audited.
+5. **A shallow clone.** Staleness compares an audit date against git history, and a
+   shallow clone answers every lookup with nothing, so every audited topic reads Fresh
+   forever. This arrives by way of a one-line workflow change rather than an edit to
+   any of this code, which is why the nightly job sets `fetch-depth: 0` **and** the
+   script refuses to run quietly without the history. The session that built this was
+   itself in a shallow clone.
+
+**A missing sweep marker must mean "the automation is broken", never "a quiet week".**
+That rule is lifted verbatim from the `nightly-work-log` Routine, which vanished once
+and took fifteen days of work logs with it before anyone noticed. So the sweep writes a
+marker even on a week with nothing scheduled and even when every topic comes back
+clean. Skipping it on a quiet week is the one change that restores the original failure.
+
+**The horizon is ten days against a seven-day sweep, deliberately.** A check that also
+stopped at seven would call a topic overdue on the same morning the sweep was still
+entitled to catch it, and the eight-day sweep limit is one day of slack for the same
+reason: a weekly job firing a few hours later than the check must not read as broken.
+
+**Why the split between the push gate and nightly matters.** The offline suite carries
+only the index's `--check`, which is a drift check on a generated file and therefore a
+fact about the commit. The freshness assertions are nightly, because they are true of a
+date rather than of a commit, and because a red push over an overdue audit would put an
+audit between a broken classroom page and its fix. That is the same reasoning that puts
+`check-image-urls.js` on nightly.
 
 ## Socrates, the AI Coach
 

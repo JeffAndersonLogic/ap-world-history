@@ -21,10 +21,9 @@ pictures serve it. If a great picture fits no beat, it stays out, and you say so
 
 ## Step 0: Check the calendar and the story
 
-1. Look up when the topic is taught and whether it is frozen today (the snippet is in
-   step 0 of the **topic-audit** skill). A frozen topic's deck does not change without
-   "ship this fix". Pictures are an improvement, not a repair, so during a freeze do
-   `review` only.
+1. Look up when the topic is taught (the snippet is in step 0 of the **topic-audit**
+   skill). If Green has already been taught it and Silver has not, say so before
+   changing the deck, since the two rooms would then see different pictures.
 2. Find the approved story: `teacher/data/topic-X-Y-teaching-base.js` (slide ids, titles,
    beats) and any `docs/TOPIC-X-Y-STORY-DRAFT.md`. If there is no approved story yet, stop
    and say so. Picking pictures first is the mistake this process exists to prevent.

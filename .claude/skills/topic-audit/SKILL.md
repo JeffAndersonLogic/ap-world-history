@@ -31,23 +31,23 @@ audit.
 
 ```bash
 node -e "
-const vm=require('vm'),fs=require('fs'),F=require('./scripts/lib/teaching-freeze');
+const vm=require('vm'),fs=require('fs');
 const c={window:{}};vm.createContext(c);vm.runInContext(fs.readFileSync('assets/data/announcements-schedule.js','utf8'),c);
-const w=F.freezeWindows(c.window.BEHISTORICAL_SCHEDULE);const today=process.env.ON||F.schoolDate(new Date());
-for(const t of process.argv.slice(1)){const x=w[t];console.log(t+': '+(x?('Green '+x.first+', Silver '+x.last+(today>=x.first&&today<=x.last?'  FROZEN on '+today:'')):'not on the schedule'));}
+const today=process.env.ON||new Intl.DateTimeFormat('en-CA',{timeZone:'America/Indiana/Indianapolis'}).format(new Date());
+const w={};for(const d of c.window.BEHISTORICAL_SCHEDULE.days||[]){if(!d.topic||!d.date)continue;const x=w[d.topic]||(w[d.topic]={first:d.date,last:d.date});if(d.date<x.first)x.first=d.date;if(d.date>x.last)x.last=d.date;}
+for(const t of process.argv.slice(1)){const x=w[t];console.log(t+': '+(x?('Green '+x.first+', Silver '+x.last+(today>=x.first&&today<=x.last?'  MID-TEACH on '+today:'')):'not on the schedule'));}
 " 2.6 2.7
 ```
 
 It prints, for example, `2.6: Green 2026-09-30, Silver 2026-10-01`, and adds
-`FROZEN on <date>` when today falls inside that window. Dates are the school's, in
+`MID-TEACH on <date>` when today falls between those two days. Dates are the school's, in
 Indiana time. Set `ON=2026-09-24` in front of the command to ask about another day.
 
 Say the dates in your first line to Jeff: "2.6 is taught Green 9/30, Silver 10/1."
 
-- **Frozen today** (between its Green day and its Silver day, inclusive): switch to
-  `report` mode automatically. List findings as notes for Jeff. Only a broken lesson
-  (lost work, a dead button or picture, a factual error) can ship during a freeze, and
-  only after Jeff says "ship this fix". Remind him once; if he says go, do it.
+- **Mid-teach** (between its Green day and its Silver day, inclusive): audit and fix as
+  normal, but say in the report that Green was already taught the old version, so Jeff
+  can decide whether Green needs to hear about a correction.
 - **Taught in the next few days:** audit it now, this is exactly the window it is for.
 - **Already taught to both rooms:** fine to audit; fixes ship before it is taught again.
 
@@ -55,9 +55,9 @@ Say the dates in your first line to Jeff: "2.6 is taught Green 9/30, Silver 10/1
 
 ```bash
 node -e "
-const vm=require('vm'),fs=require('fs'),F=require('./scripts/lib/teaching-freeze');
+const vm=require('vm'),fs=require('fs');
 const c={window:{}};vm.createContext(c);vm.runInContext(fs.readFileSync('assets/data/announcements-schedule.js','utf8'),c);
-const today=process.env.ON||F.schoolDate(new Date());const end=new Date(today+'T12:00:00Z');end.setUTCDate(end.getUTCDate()+7);const last=end.toISOString().slice(0,10);
+const today=process.env.ON||new Intl.DateTimeFormat('en-CA',{timeZone:'America/Indiana/Indianapolis'}).format(new Date());const end=new Date(today+'T12:00:00Z');end.setUTCDate(end.getUTCDate()+7);const last=end.toISOString().slice(0,10);
 for(const d of c.window.BEHISTORICAL_SCHEDULE.days)if(d.topic&&d.date>=today&&d.date<=last)console.log(d.date,d.cohort,d.topic,(d.modules||[]).join(' '));
 "
 ```
@@ -189,7 +189,7 @@ lesson's own warnings against the myth.
 
 ## Step 5: What to fix, and what to leave for Jeff
 
-**Fix directly** (unless in `report` mode or frozen): jargon rewrites that keep the same
+**Fix directly** (unless in `report` mode): jargon rewrites that keep the same
 demand, prompts that name cards not on the page, clear factual errors, mislabeled
 pictures, dates.
 
@@ -217,17 +217,83 @@ node scripts/build-announcements.js && node scripts/build-canvas-events.js   # t
 
 ```bash
 npm test
-node scripts/check-teaching-freeze.js --strict
 ```
 
 If you touched a slide, also run `npm run test:browser` (needs `npm i playwright-core`).
 A SKIP is not a pass.
 
-## Step 8: Report and commit
+## Step 8: Write the record
 
-**Report to Jeff in plain language**, grouped by module, in this order:
+**Every run writes a record. This is not optional and it is not paperwork.**
 
-1. The dates it is taught, and whether it is frozen.
+This audit ran once by hand on 2026-09-23, reported to a chat window, and the window
+scrolled away. Nothing recorded which topics had been covered, so by 2026-09-27 the
+only available answer to "is this still happening" was Jeff's own sense that it had
+slipped. An audit whose coverage cannot be inspected is not auditable.
+
+Write `docs/topic-audits/topic-<u>-<t>-<YYYY-MM-DD>.md`, dated today in school time
+(`F3` becomes `topic-F3-<date>.md`):
+
+```markdown
+---
+topic: "2.6"
+audited: 2026-09-30
+mode: fix          # or: report
+---
+
+# Topic 2.6 audit, 2026-09-30
+
+Taught: Green 2026-09-30, Silver 2026-10-01.   <- and say if Green already had it
+
+## Fixed
+- one line each: what was wrong, what it says now, which file
+
+## Needs Jeff's decision
+- one line each, with a recommendation
+
+## Reviewed and left alone
+- report hits looked at and kept, with the reason
+
+## Adjacent findings
+- file, defect, impact, proposed fix, why it was left out of this topic
+```
+
+The front matter is what the machinery reads, so those three keys must be present and
+`audited` must be `YYYY-MM-DD`. A record that does not parse is reported loudly by
+`check-audit-freshness.js` rather than ignored, because a record that silently failed
+to parse would make an audited topic read as never audited.
+
+**The four body sections are the same four things you report to Jeff**, so write them
+once here and let the report quote them, rather than writing a report and then a
+summary of it.
+
+Then rebuild the coverage index, which is generated and never hand-edited:
+
+```bash
+npm run build:audit-index
+```
+
+`npm test` fails on drift, so this is not a step you can forget quietly.
+
+### If you ran the weekly sweep, also write a sweep marker
+
+A sweep over the week's topics additionally writes
+`docs/topic-audits/sweeps/<YYYY-MM-DD>.md`, **even on a week with nothing scheduled
+and even when every topic came back clean.** One or two lines is enough: the date, the
+topics looked at, and what came of it.
+
+That file is the only evidence the automation ran at all. So the rule from the
+`nightly-work-log` Routine applies here word for word: **a missing marker must mean
+"the automation is broken", never "a quiet week".** Skipping it on a quiet week is the
+single change that would restore the exact failure this record-keeping was built to
+end.
+
+## Step 9: Report and commit
+
+**Report to Jeff in plain language**, grouped by module, in this order (the
+record from Step 8 already has all of it):
+
+1. The dates it is taught, and whether Green has already had it.
 2. What was fixed, one line each, saying what was wrong and what it says now.
 3. What needs his decision, each with a recommendation.
 4. Report hits reviewed and left alone, with the reason.

@@ -35,7 +35,7 @@ const offline=document.getElementById('offline');
 const offlineText=document.getElementById('offlineText');
 const badge=document.getElementById('slidebadge');
 const exitPresent=document.getElementById('exitPresent');
-frame.src=(topic==='2-2'||topic==='2-1'||topic==='2-3'||topic==='2-4')?'topic-'+topic+'-os.html':'command-center-topic-'+topic+'.html';
+frame.src=(topic==='2-2'||topic==='2-1'||topic==='2-3'||topic==='2-4'||topic==='2-5')?'topic-'+topic+'-os.html':'command-center-topic-'+topic+'.html';
 let source=null,suppress=false,lastHostIndex=0,relayReady=false,reconnectTimer=null,lastHostSeen=0,reconnectAttempt=0;
 function setStatus(text,ok){status.textContent=text;status.className='status'+(ok?' ok':'');}
 function setOffline(text){if(text)offlineText.textContent=text;offline.classList.remove('hidden');}

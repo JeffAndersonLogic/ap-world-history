@@ -1,9 +1,9 @@
 (function(){
 'use strict';
 /* Topic 2.5 slide composition.
- * Every slide is a template from assets/js/behistorical-slide-templates.js, which
- * owns its own layout, so this file holds only the hold screen the projector shows
- * in place of Teacher Preflight.
+ * Since the 2026-09-25 rebuild every projected slide is a slide template,
+ * which carries its own layout, so this file holds only the projector hold
+ * screen shown in place of the teacher preflight.
  */
 const css=document.createElement('style');
 css.id='topic25-visual-assets';

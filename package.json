@@ -51,7 +51,9 @@
     "build:wordmark": "node scripts/build-wordmark.js",
     "check:module07": "node scripts/check-module07-authored.js",
     "report:evidence": "node scripts/report-evidence-authenticity.js",
-    "source:images": "node scripts/source-evidence-images.js"
+    "source:images": "node scripts/source-evidence-images.js",
+    "build:audit-index": "node scripts/build-topic-audit-index.js",
+    "check:audit-freshness": "node scripts/check-audit-freshness.js"
   },
   "devDependencies": {
     "playwright": "^1.49.0"

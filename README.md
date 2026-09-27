@@ -75,6 +75,12 @@ BeHistorical is the thinking and drafting space; students submit assessed work t
 
 The Google Form and the Teacher Hub dashboard that read its response sheet were both retired on 2026-08-07. `docs/FORM-CONTRACT.md` and `docs/TEACHER-HUB.md` record why, and what the replacements have to guarantee that those did not.
 
+## License
+
+All rights reserved. The repository is public only because GitHub Pages serves
+the course site from it; see `LICENSE` for the terms and the third-party
+material it does not cover.
+
 ## Source alignment
 
 Lesson standards are aligned to the AP World History: Modern Course and Exam Description. Units 6 and 9 were checked against the edition effective Fall 2026. Historical claims and source adaptations should be verified during each topic's content-quality pass before classroom release.
