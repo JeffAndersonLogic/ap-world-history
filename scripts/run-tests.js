@@ -80,6 +80,7 @@ const SUITES = {
     ['scripts/test/topic-2-2-os.test.js', 'Topic 2.2 cinematic teaching OS and projection contract'],
     ['scripts/test/coach-prompt.test.js', 'checkpoint paste matches the Node contract'],
     ['scripts/test/beintheroom-capture.test.js', 'BeInTheRoom reflection survives a reopen and reaches Gather All My Work'],
+    ['scripts/test/room-v2-story.test.js', 'BeInTheRoom v2 story mode plays in order; standard v2 unchanged'],
     ['scripts/test/ebook-a11y.test.js', 'eBook landmarks, focus, reflow, contrast'],
     ['scripts/test/ebook-listen.test.js', 'eBook section narration, one section at a time'],
     ['scripts/test/announcements-refresh.test.js', 'board re-reads its file when the day rolls over']

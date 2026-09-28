@@ -98,7 +98,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "placard": {
           "tag": "Crop Diffusion · Three Movements",
           "name": "The road brings food.",
-          "text": "Bananas into Africa. New rice varieties in East Asia. Citrus around the Mediterranean. Each one is a plant arriving where it had not grown before."
+          "text": "Bananas into Africa. New rice varieties in East Asia. Citrus around the Mediterranean. Each one is a plant spreading into new farmland along trade routes."
         },
         "visual": {
           "fit": "contain",
@@ -277,7 +277,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "Where it lands",
             "left": "An environment where it grows well",
-            "right": "A population with no prior exposure"
+            "right": "People who had never faced it"
           },
           {
             "label": "Consequence",

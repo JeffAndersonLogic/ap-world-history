@@ -109,3 +109,53 @@ a { color: inherit; }
   .room-actions { flex-direction: column; }
   .room-button { width: 100%; }
 }
+
+/* ── Story mode ─────────────────────────────────────────────────────────────
+   Opt-in per scenario with "mode": "story". Every rule below is scoped to
+   .room-story or to a .room-story-* class, so the other v2 scenarios never
+   match any of it. */
+.room-story .room-choice:disabled { cursor: default; opacity: .5; transform: none; }
+.room-story .room-choice:disabled:hover { border-color: rgba(201,164,106,.18); background: rgba(255,253,247,.04); }
+.room-story .room-choice:disabled[aria-pressed="true"] { opacity: 1; border-color: var(--room-gold); background: rgba(201,164,106,.15); }
+.room-story .room-choice-title, .room-story .room-choice-summary { display: block; }
+.room-story .room-button:disabled { cursor: not-allowed; opacity: .45; filter: none; }
+.room-story .room-button:focus-visible, .room-story .room-choice:focus-visible, .room-story-alignment summary:focus-visible { outline: 3px solid var(--room-gold); outline-offset: 2px; }
+
+.room-story-scene { margin: 1.4rem 0 .9rem; padding: 1rem 1.15rem; border-left: 4px solid var(--room-bronze); background: rgba(140,90,43,.12); border-radius: 4px; }
+.room-story-scene-kicker { color: var(--room-gold); font: 800 .68rem/1.4 Montserrat,Arial,sans-serif; text-transform: uppercase; letter-spacing: .14em; }
+.room-story-scene p { margin: .55rem 0 0; color: rgba(245,240,231,.88); font-size: .92rem; }
+
+.room-story-lock { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem .9rem; margin-top: .9rem; }
+.room-story-lock-hint { color: #9da19f; font: 700 .72rem Montserrat,Arial,sans-serif; }
+
+.room-story-result { margin-top: 1rem; padding: 1rem 1.1rem; scroll-margin-top: 5rem; border: 1px solid rgba(201,164,106,.35); border-radius: 6px; background: rgba(201,164,106,.07); }
+.room-story-result:focus { outline: 2px solid rgba(201,164,106,.45); outline-offset: 2px; }
+.room-story-locked-label { color: var(--room-gold); font: 800 .78rem/1.4 Montserrat,Arial,sans-serif; }
+.room-story-costs { display: grid; gap: .35rem; margin-top: .6rem; }
+.room-story-costs p { margin: 0; color: rgba(245,240,231,.82); font-size: .84rem; line-height: 1.5; }
+.room-story-costs strong { color: var(--room-muted); }
+.room-story-next { margin-top: .9rem; padding: .9rem 1rem; border-radius: 4px; background: var(--room-paper); color: var(--room-ink); }
+.room-story-next .room-card-label { color: var(--room-bronze); font-size: .66rem; }
+.room-story-next p { margin: .35rem 0 0; font-size: .92rem; line-height: 1.6; }
+
+.room-story-seal { padding: 1.1rem; border: 1px dashed rgba(201,164,106,.4); border-radius: 6px; background: rgba(255,253,247,.03); }
+.room-story-seal-hint { margin: 0 0 .8rem; color: rgba(245,240,231,.78); font-size: .88rem; }
+.room-story-record { scroll-margin-top: 5rem; }
+.room-story-record:focus { outline: none; }
+.room-story-yours { margin: 0 0 1rem; padding: .9rem 1rem; border: 1px solid rgba(201,164,106,.25); border-radius: 5px; background: rgba(201,164,106,.07); }
+.room-story-yours ul { margin: .45rem 0 0; padding-left: 1.2rem; }
+.room-story-yours li { margin: .25rem 0; font-size: .86rem; color: rgba(245,240,231,.85); }
+.room-story-yours strong { color: var(--room-muted); }
+.room-story-record-item { margin-top: .8rem; padding: .9rem 1rem; border-radius: 4px; background: var(--room-paper); color: var(--room-ink); }
+.room-story-record-item h3 { margin: 0 0 .3rem; color: var(--room-bronze); font: 800 .78rem/1.4 Montserrat,Arial,sans-serif; text-transform: uppercase; letter-spacing: .08em; }
+.room-story-record-item p { margin: 0; font-size: .9rem; line-height: 1.6; }
+
+.room-story-alignment { margin-top: 3rem; padding: .8rem 1rem; border: 1px solid rgba(201,164,106,.18); border-radius: 5px; background: rgba(255,253,247,.025); }
+.room-story-alignment summary { cursor: pointer; color: #9da19f; font: 700 .74rem Montserrat,Arial,sans-serif; letter-spacing: .04em; }
+.room-story-alignment .room-standard { margin: .9rem 0 .2rem; }
+
+@media (max-width: 480px) {
+  .room-story-lock { flex-direction: column; align-items: stretch; }
+  .room-story-scene, .room-story-result, .room-story-seal { padding: .9rem; }
+  .room-story .room-grid { gap: .6rem; }
+}
