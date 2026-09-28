@@ -184,7 +184,7 @@ window.BEHISTORICAL_TEACHING = {
         placard: {
           tag: 'Crop Diffusion · Three Movements',
           name: 'The road brings food.',
-          text: 'Bananas into Africa. New rice varieties in East Asia. Citrus around the Mediterranean. Each one is a plant arriving where it had not grown before.'
+          text: 'Bananas into Africa. New rice varieties in East Asia. Citrus around the Mediterranean. Each one is a plant spreading into new farmland along trade routes.'
         }
       },
       notes: {
@@ -340,7 +340,7 @@ window.BEHISTORICAL_TEACHING = {
         rows: [
           { label: 'Network', left: 'Regions connect more often', right: 'Regions connect more often' },
           { label: 'What moves', left: 'A useful plant travels with people and cargo', right: 'A pathogen travels with people and cargo' },
-          { label: 'Where it lands', left: 'An environment where it grows well', right: 'A population with no prior exposure' },
+          { label: 'Where it lands', left: 'An environment where it grows well', right: 'Crowded towns where no one had faced it' },
           { label: 'Consequence', left: 'Production and the population a region can support **rise**', right: 'Mortality **rises** and population falls' }
         ]
       },
@@ -367,7 +367,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'This is where the lesson converts into AP writing. Students should see exactly why a memorized example is not enough.',
           'Read the weak claim first and ask what is missing. It is true and it explains nothing: no network, no movement, no consequence.',
-          'Then run the plague pair verbally as the second rep. Weak: "The plague spread on trade routes." Strong: "Because trade connected ports and cities more densely, plague could reach populations with no prior exposure and cause massive mortality." This template holds one pair on screen on purpose; the second one is yours to say.',
+          'Then run the plague pair verbally as the second rep. Weak: "The plague spread on trade routes." Strong: "Because trade connected ports and cities more densely, plague could reach crowded cities where no one had faced it and cause massive mortality." This template holds one pair on screen on purpose; the second one is yours to say.',
           'Have students upgrade one of their own sentences the same way before Checkpoint 2.'
         ],
         ask: 'Which word turns recall into causation?',

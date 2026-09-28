@@ -83,7 +83,7 @@ module.exports = {
       "useThis": {
         "tool": "Shipborne transmission along commercial routes. <em>The mechanism is that rodents and their fleas live in cargo and in ships' holds, so a disease of burrowing rodents moves at the speed of merchant shipping rather than of walking, which is why the pandemic appeared in port cities first and radiated inland from each one.</em>",
         "limit": "The origin question is still open. The Kyrgyzstan evidence is strong for an outbreak of an ancestral strain in 1338 to 1339 and is not a proof of where the pandemic began, so say what it shows rather than more than it shows.",
-        "comparison": "Against the <em>Columbian Exchange</em> in Unit 4: both are cases of pathogens moving into populations with no prior exposure along new routes of contact, and the comparison sets up the single most important continuity between Unit 2 and the rest of the course."
+        "comparison": "Against the <em>Columbian Exchange</em> in Unit 4: both are cases of pathogens moving along routes of contact into populations with little or no recent exposure, and the comparison sets up the single most important continuity between Unit 2 and the rest of the course."
       },
       "terms": [
         [
@@ -115,7 +115,7 @@ module.exports = {
       "name": "The Same Mortality, Opposite Results",
       "navLabel": "The consequences",
       "dates": "1347 to 1450 &nbsp;·&nbsp; Europe, Egypt, China",
-      "thesis": "A third to a half of the population died across the affected zone, and the consequences differed completely from region to region. That is the most instructive fact in the topic, because it proves that what a shock does depends on the structure it lands on.",
+      "thesis": "Roughly a third to a half of Europe's population died, Egypt and Syria suffered comparable losses, and the consequences differed completely from region to region. That is the most instructive fact in the topic, because it proves that what a shock does depends on the structure it lands on.",
       "parts": [
         {
           "heading": "Western Europe: labor becomes scarce and expensive",
@@ -261,7 +261,7 @@ module.exports = {
       "name": "Living Things on the Move",
       "navLabel": "Living things on the move",
       "dates": "c. 700 to 1450 &nbsp;·&nbsp; Rats, crops, animals",
-      "thesis": "Trade routes are corridors for organisms as well as cargo. Crops moved intentionally and pathogens moved intentionally or accidentally; comparing the two reveals why greater connectivity could increase both productive capacity and biological vulnerability.",
+      "thesis": "Trade routes are corridors for organisms as well as cargo. Crops moved intentionally and pathogens moved accidentally; comparing the two reveals why greater connectivity could increase both productive capacity and biological vulnerability.",
       "parts": [
         {
           "heading": "Carried on purpose: crops",
