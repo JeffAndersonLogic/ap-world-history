@@ -87,6 +87,17 @@ css.textContent=`
 }
 .project-mode .hero-slide.bottom:has(img[src*="assets/images/topics/2-2/"]) .copy h2{font-size:clamp(2.6rem,3.5vw,4.2rem)!important}
 .project-mode .hero-slide.bottom:has(img[src*="assets/images/topics/2-2/"]) .copy .sub{font-size:clamp(1.3rem,1.65vw,1.9rem)!important}
+
+/* Landing slide (the caravan): its title is the longest of the bottom-caption
+   slides and set in four lines, which ran off the bottom of the quarter-height
+   strip on every screen size. The title gets the wider column and a smaller
+   size, so it sets in two lines and the strip keeps its quarter. The AI label
+   moves to the top corner, over sky, because in the strip's corner it sat on
+   the subtitle's last line. */
+.hero-slide.bottom:has(img[src*="Cinematic%20Mongol%20Caravan"]) .copy{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)!important}
+.hero-slide.bottom:has(img[src*="Cinematic%20Mongol%20Caravan"]) .copy h2{font-size:clamp(1.3rem,2.2vw,2.8rem)!important}
+.project-mode .hero-slide.bottom:has(img[src*="Cinematic%20Mongol%20Caravan"]) .copy h2{font-size:clamp(2rem,2.75vw,3.4rem)!important}
+.hero-slide.bottom:has(img[src*="Cinematic%20Mongol%20Caravan"]) .credit-row{top:2.1%!important;bottom:auto!important}
 `;
 document.head.appendChild(css);
 })();
