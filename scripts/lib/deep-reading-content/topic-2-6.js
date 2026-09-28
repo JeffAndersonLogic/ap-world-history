@@ -156,7 +156,7 @@ module.exports = {
               "p": "In China the fourteenth century brought epidemic disease alongside catastrophic Yellow River flooding, famine, and the collapse of the Yuan paper currency, and the combination fed the risings that ended Mongol rule in <span class=\"num\">1368</span>. Disentangling the plague's specific contribution there is genuinely difficult and historians disagree, which is worth saying rather than asserting a clean causal line."
             },
             {
-              "p": "Everywhere, the social consequences ran along existing fault lines. Religious authority was strained when prayer and clergy could not stop the deaths and clergy died in disproportionate numbers through their duties. Scapegoating followed, and in the German lands accusations that Jews had poisoned wells produced massacres in <span class=\"num\">1348</span> and <span class=\"num\">1349</span>, in several cases before the disease had even arrived. Movements of extreme public penance spread and were suppressed. And a striking amount of art and literature turned to death as a subject in a way that had not been usual before."
+              "p": "Everywhere, the social consequences ran along existing fault lines. Religious authority was strained when prayer and clergy could not stop the deaths and clergy died in disproportionate numbers through their duties. Movements of extreme public penance spread and were suppressed. And a striking amount of art and literature turned to death as a subject in a way that had not been usual before."
             }
           ]
         }
@@ -178,10 +178,6 @@ module.exports = {
         [
           "Iqta",
           "The revenue assignment by which Mamluk officers were paid, which gave them an incentive to squeeze a shrinking tax base harder after the plague."
-        ],
-        [
-          "Scapegoating",
-          "The assignment of blame to a minority in a crisis, as in the 1348 and 1349 massacres of Jewish communities in the German lands."
         ],
         [
           "Recurrence",
