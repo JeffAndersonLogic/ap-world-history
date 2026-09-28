@@ -96,7 +96,11 @@ const MODULE_PURPOSE = {
   checkpoint1: 'the first written checkpoint',
   evidence: 'reading images and sources as evidence',
   source: 'a primary source with interpretation questions',
-  beintheroom: 'a role-play simulation. Work here does NOT reach Canvas',
+  // Only the final reflection is captured, since 2026-09-11, through
+  // assets/js/behistorical-beintheroom-capture.js. This line said the opposite
+  // until 2026-09-28, which contradicted the persona's own Closing section in
+  // the same generated document.
+  beintheroom: 'a role-play simulation. Only the final step-out-of-character reflection reaches Canvas, through Gather All My Work on the lesson page. The role, evidence, decisions, and draft argument stay on the scenario page',
   checkpoint2: 'the synthesis checkpoint'
 };
 
