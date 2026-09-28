@@ -114,7 +114,7 @@ Strong answer checklist: Explain a change in urban fortunes. Use a named travele
 
 ## 2.6 Environmental Consequences of Connectivity
 
-**Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. How exchange networks spread crops and pathogens across Afro-Eurasia c. 1200–1450
+**Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. How exchange networks spread crops and pathogens across Afro-Eurasia, c. 1200 to c. 1450
 
 **College Board key concepts.**
 - KC-3.1.IV (Humans and the Environment): There was continued diffusion of crops and pathogens, with epidemic diseases, including the bubonic plague, along trade routes. Illustrative examples: Bananas in Africa, New rice varieties in East Asia, Spread of citrus in the Mediterranean.
@@ -123,7 +123,7 @@ Strong answer checklist: Explain a change in urban fortunes. Use a named travele
 
 **AP skill focus.** Making Connections (Skill 5.A) and Causation.
 
-**Checkpoint 1 prompt.** Choose ONE required crop example—bananas in Africa, new rice varieties in East Asia, or citrus in the Mediterranean. Explain how exchange networks spread it and what environmental or demographic effect followed.
+**Checkpoint 1 prompt.** Choose ONE required crop example: bananas in Africa, new rice varieties in East Asia, or citrus in the Mediterranean. Explain how exchange networks spread it and what environmental or demographic effect followed.
 Strong answer checklist: Name the crop and destination. Explain how connectivity enabled diffusion. Explain the resulting environmental or demographic effect.
 
 **Checkpoint 2 prompt.** Explain how trade networks contributed to the spread of bubonic plague and identify one demographic or social consequence of that spread.

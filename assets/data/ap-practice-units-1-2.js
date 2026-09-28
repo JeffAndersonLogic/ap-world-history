@@ -517,22 +517,22 @@
       skillBuilder: skill(
         'Making Connections (Skill 5.A) and Causation',
         'Connect Trade Expansion to Environmental Change',
-        'The same networks moved pathogens and crops, but movement alone did not determine their consequences. Historical explanation must connect the transfer to biological properties, receiving environments, labor systems, and patterns of settlement.',
+        'The same trade networks moved crops and diseases, but moving was only the start. To explain a consequence, show what happened after the living thing arrived: how it grew or spread in its new place, and how that changed food, work, or where people lived.',
         [
-          { label: 'Trace the movement', text: 'Identify the network and the specific pathogen or crop that moved through it.' },
-          { label: 'Explain the mechanism', text: 'Show how mobility, ecology, immunity, cultivation, or labor needs turned transfer into consequence.' },
-          { label: 'Compare outcomes', text: 'State a meaningful difference in demographic, economic, social, or ecological effects and explain why it existed.' }
+          { label: 'Trace the movement', text: 'Name the network and the specific crop or pathogen that moved through it.' },
+          { label: 'Explain the mechanism', text: 'Show how the movement caused a result: how travel, the new environment, farming, sickness, or the need for workers turned it into a consequence.' },
+          { label: 'Compare outcomes', text: 'State one real difference between the effects of the crop and the pathogen, and explain why that difference existed.' }
         ],
-        'Compare the diffusion of one pathogen with the diffusion of one crop through expanding exchange networks from c. 1200 to c. 1450. For each example, identify the route or carrier and explain the mechanism that produced a specific consequence. Then explain one important difference between their effects by connecting it to biology, environment, labor, or patterns of human settlement.',
-        ['Uses one accurate pathogen example and one accurate crop example.', 'Traces a route or carrier for each transfer.', 'Explains how each transfer produced a specific consequence.', 'Explains the difference in effects instead of merely stating it.']
+        'Compare how one pathogen and one crop spread through trade networks from c. 1200 to c. 1450. For each one, name the route or what carried it, and explain how it caused a specific result. Then explain one important difference between their effects, and connect that difference to biology, the environment, work, or where people lived.',
+        ['Uses one accurate pathogen example and one accurate crop example.', 'Names a route or carrier for each one.', 'Explains how each one produced a specific consequence.', 'Explains the difference in effects instead of only stating it.']
       ),
       evidenceLab: evidence(
         'Evidence Lab: One Shock, Uneven Consequences',
-        'Use evidence from at least two regions or two different source types. Demographic estimates, chronicles, and environmental data answer different questions.',
-        'Evaluate the extent to which the environmental consequences of connectivity from c. 1200 to c. 1450 were both widespread and uneven. Make a defensible judgment using at least two evidence entries from different regions or source types. Explain how exchange produced each consequence, compare their scale or intensity, and use the limits of one source to qualify the reach of your conclusion.',
+        'Use at least two of the four cards on this page, of different types: the two instructional maps, the modern route map, or the 1493 woodcut. A map and a picture made 145 years later answer different questions.',
+        'How widespread were the environmental effects of trade networks from c. 1200 to c. 1450, and were they the same everywhere? Make a claim you can support with at least two cards of different types. Explain how trade caused each effect, compare how large or widespread the effects were, and use something one card cannot show to limit your claim.',
         'Making Connections and Claims and Evidence (Skills 5.A and 3.D)',
-        ['Black Death', 'Caffa', 'Ibn Khaldun', 'population loss', 'deforestation', 'trade networks'],
-        ['Makes a defensible judgment about extent.', 'Uses specific evidence from different regions or source types.', 'Explains the mechanism and compares scale or intensity.', 'Uses source type or geographic scope to qualify the conclusion.']
+        ['Black Death', 'Caffa', 'bananas', 'citrus', 'population loss', 'trade networks'],
+        ['Makes a clear claim about how widespread the effects were.', 'Uses specific details from at least two cards of different types.', 'Explains how trade caused each effect and compares how large or widespread they were.', 'Uses what one card cannot show to limit the claim.']
       ),
       primarySource: source(
         'Primary Source: Giovanni Boccaccio Describes the Black Death, 1348',
@@ -543,9 +543,9 @@
         [
           '(a) Describe one social or demographic consequence of the plague shown in the passage, using a specific detail from Boccaccio\'s account.',
           '(b) Explain how one feature of Afro-Eurasian exchange networks contributed to the spread or severity of the crisis Boccaccio described.',
-          '(c) Explain how the geographic scope or literary purpose of Boccaccio\'s account limits its usefulness for evaluating the environmental consequences of connectivity across Afro-Eurasia.'
+          '(c) Explain how one fact about this account limits what it can tell us about the environmental effects of trade across all of Afro-Eurasia. Boccaccio wrote about one city, Florence, as the opening of a book of stories.'
         ],
-        'Respond to all three parts in complete sentences. Ground (a) in the passage. In (b), trace a mechanism rather than asserting that trade spread disease. In (c), connect a specific feature of the source to the particular broader conclusion it cannot establish by itself.',
+        'Respond to all three parts in complete sentences. Ground (a) in the passage. In (b), trace a mechanism rather than asserting that trade spread disease. In (c), name the feature of the source and the bigger conclusion it cannot prove on its own.',
         'Making Connections (Skill 5.A) and Sourcing (Skill 2.C)',
         ['Giovanni Boccaccio', 'Black Death', 'Florence', 'public health', 'trade networks', 'demographic decline', 'contagion'],
         [{ label: 'Read Payne\'s complete public-domain translation at Project Gutenberg', url: 'https://www.gutenberg.org/files/23700/23700-h/23700-h.htm' }]
