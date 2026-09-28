@@ -340,7 +340,7 @@ window.BEHISTORICAL_TEACHING = {
         rows: [
           { label: 'Network', left: 'Regions connect more often', right: 'Regions connect more often' },
           { label: 'What moves', left: 'A useful plant travels with people and cargo', right: 'A pathogen travels with people and cargo' },
-          { label: 'Where it lands', left: 'An environment where it grows well', right: 'Crowded towns where no one had faced it' },
+          { label: 'Where it lands', left: 'An environment where it grows well', right: 'People who had never faced it' },
           { label: 'Consequence', left: 'Production and the population a region can support **rise**', right: 'Mortality **rises** and population falls' }
         ]
       },

@@ -267,7 +267,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "Where it lands",
             "left": "An environment where it grows well",
-            "right": "Crowded towns where no one had faced it"
+            "right": "People who had never faced it"
           },
           {
             "label": "Consequence",
