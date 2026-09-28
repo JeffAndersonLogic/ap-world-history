@@ -344,6 +344,12 @@
   //     locked, and a locked decision cannot be changed.
   //   - The historical record is sealed until the student has argued a case,
   //     so the record answers the argument instead of replacing it.
+  //   - It wears the look of the hand-authored BeInTheRoom scenarios rather
+  //     than the dark v2 room: the BeHistorical topbar, a dark hero over an
+  //     optional `heroImage`, and paper cards. A story-mode page therefore
+  //     loads behistorical.css and the brand fonts as well as this renderer's
+  //     stylesheet. The AP alignment is shown to students, as the first card
+  //     under the hero.
   //
   // THE CAPTURE KEY IS WRITTEN FROM ONE PLACE: the reflection box's input
   // event. save() above writes it on every save, which is fine for the other
@@ -482,6 +488,16 @@
     if (label) label.textContent = 'Your work saves on this device';
   }
 
+  // A hero picture is optional and must be a plain https URL, because it is
+  // written into a style attribute. Without one, or if it fails to load, the
+  // gradient alone is the hero, the same way the hand-authored scenarios
+  // degrade.
+  function storyHeroStyle() {
+    const gradient = 'linear-gradient(180deg,rgba(26,28,29,.9),rgba(43,47,49,.94))';
+    const url = String(scenario.heroImage || '');
+    return /^https:\/\/[^"'()\s<>]+$/.test(url) ? `background-image:${gradient},url('${url}')` : `background-image:${gradient}`;
+  }
+
   function storyRender() {
     state.locked = (state.locked && typeof state.locked === 'object') ? state.locked : {};
     state.decisions = (state.decisions && typeof state.decisions === 'object') ? state.decisions : {};
@@ -494,21 +510,34 @@
     }
 
     const title = scenario.title.replace(/\*([^*]+)\*/g, '<em>$1</em>');
+    document.body.classList.add('room-story-body');
     app.innerHTML = `
-      <nav class="room-topbar">
-        <span class="room-brand">BeInTheRoom</span>
-        <a class="room-back" href="${esc(scenario.lessonUrl)}">← Return to Topic ${esc(scenario.id)}</a>
-      </nav>
-      <header class="room-hero">
+      <div class="room-story-page">
+      <nav class="topbar room-story-topbar"><div class="nav">
+        <a class="brand-mini" href="../../index.html"><img src="../../assets/logos/behistorical-logo.jpeg" alt="BeHistorical logo"><span>BeHistorical</span></a>
+        <div class="nav-links"><a href="../index.html">BeInTheRoom Hub</a><a href="${esc(scenario.lessonUrl)}">Topic ${esc(scenario.id)}, ${esc(scenario.topicTitle)}</a></div>
+      </div></nav>
+      <header class="room-hero" style="${storyHeroStyle()}">
         <div class="room-hero-inner">
           <div class="room-kicker">Unit ${esc(scenario.unit)} · Topic ${esc(scenario.id)} · AP World History</div>
           <h1>${title}</h1>
           <div class="room-date">${esc(scenario.location)} · ${esc(scenario.date)}</div>
           <div class="room-premise">${scenario.premise.map(p => `<p>${esc(p)}</p>`).join('')}</div>
           <div class="room-dilemma"><strong>The question in the room:</strong> ${esc(scenario.centralQuestion)}</div>
+          <div class="room-story-hero-actions"><a class="btn" href="#role-section">Choose a Role</a></div>
         </div>
       </header>
       <main class="room-main room-story">
+        <section class="room-section room-story-alignment" id="alignment-section" aria-label="AP alignment">
+          <div class="room-story-stage">Enter the Room</div>
+          <h2>What This Room Is About</h2>
+          <div class="room-standard">
+            <div class="room-standard-item"><span class="room-card-label">Thematic focus</span><p>${esc(scenario.alignment.theme)}</p></div>
+            <div class="room-standard-item"><span class="room-card-label">Learning objective</span><p>${esc(scenario.alignment.objective)}</p></div>
+            <div class="room-standard-item"><span class="room-card-label">Reasoning skill</span><p>${esc(scenario.alignment.skill)}</p></div>
+            <div class="room-standard-item"><span class="room-card-label">Key concepts</span><p>${esc(scenario.alignment.keyConcepts.join(' · '))}</p></div>
+          </div>
+        </section>
         <div class="room-progress"><div class="room-progress-fill" id="room-progress-fill"></div></div>
         <div class="room-progress-label" id="room-progress-label"></div>
 
@@ -566,18 +595,9 @@
           <h3>Historical references consulted</h3>
           <ul class="room-source-list">${scenario.sources.map(source => `<li><a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.label)}</a></li>`).join('')}</ul>
         </section>
-
-        <details class="room-story-alignment">
-          <summary>For your teacher: AP alignment</summary>
-          <section class="room-standard" aria-label="AP alignment">
-            <div class="room-standard-item"><span class="room-card-label">Thematic focus</span><p>${esc(scenario.alignment.theme)}</p></div>
-            <div class="room-standard-item"><span class="room-card-label">Learning objective</span><p>${esc(scenario.alignment.objective)}</p></div>
-            <div class="room-standard-item"><span class="room-card-label">Reasoning skill</span><p>${esc(scenario.alignment.skill)}</p></div>
-            <div class="room-standard-item"><span class="room-card-label">Key concepts</span><p>${esc(scenario.alignment.keyConcepts.join(' · '))}</p></div>
-          </section>
-        </details>
       </main>
-      <footer class="room-footer">BeHistorical · BeInTheRoom · Topic ${esc(scenario.id)}</footer>`;
+      <footer class="room-footer">BeHistorical · BeInTheRoom · Topic ${esc(scenario.id)}</footer>
+      </div>`;
 
     storyRenderDecisions();
     storyBind();
