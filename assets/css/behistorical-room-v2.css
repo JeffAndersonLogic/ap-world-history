@@ -109,3 +109,50 @@ a { color: inherit; }
   .room-actions { flex-direction: column; }
   .room-button { width: 100%; }
 }
+
+/* ── Story mode ─────────────────────────────────────────────────────────────
+   Only scenarios with "mode": "story" render a .room-story wrapper, so every
+   rule below is scoped to it and no existing v2 scenario is affected. */
+.room-story .room-story-beat { margin-bottom: 1.4rem; }
+.room-story .room-story-scene { margin: 0 0 .9rem; padding: 1rem 1.15rem; border-left: 4px solid var(--room-bronze); background: rgba(140,90,43,.12); border-radius: 4px; }
+.room-story .room-story-scene-kicker { margin-bottom: .35rem; color: var(--room-gold); font: 800 .7rem/1.4 Montserrat,Arial,sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+.room-story .room-story-scene p { margin: .5rem 0 0; color: rgba(245,240,231,.9); font-size: .92rem; }
+.room-story .room-story-option .room-choice-summary { display: block; }
+.room-story .room-choice:disabled { cursor: default; transform: none; }
+.room-story .room-choice:disabled[aria-pressed="false"] { opacity: .5; }
+.room-story .room-choice:disabled:hover { border-color: rgba(201,164,106,.18); background: rgba(255,253,247,.04); }
+.room-story .room-choice:disabled[aria-pressed="true"],
+.room-story .room-choice:disabled[aria-pressed="true"]:hover { border-color: var(--room-gold); background: rgba(201,164,106,.15); }
+.room-story .room-button:disabled { cursor: not-allowed; opacity: .45; filter: none; }
+.room-story .room-story-lock-row { align-items: center; }
+.room-story .room-story-lock-hint { color: #9da19f; font: 600 .72rem/1.4 Montserrat,Arial,sans-serif; }
+.room-story .room-story-result { margin-top: 1rem; padding: 1rem 1.1rem; border: 1px solid rgba(201,164,106,.35); border-radius: 6px; background: rgba(255,253,247,.05); scroll-margin-top: 5rem; }
+.room-story .room-story-result:focus { outline: 2px solid rgba(201,164,106,.55); outline-offset: 2px; }
+.room-story .room-story-result-head { display: grid; gap: .15rem; margin-bottom: .6rem; }
+.room-story .room-story-result-head strong { color: var(--room-paper); font-size: 1rem; }
+.room-story .room-story-costs { display: grid; gap: .45rem; }
+.room-story .room-story-costs p { margin: 0; color: rgba(245,240,231,.82); font-size: .84rem; line-height: 1.5; }
+.room-story .room-story-costs strong { color: var(--room-muted); }
+.room-story .room-story-next { margin-top: .9rem; padding: .9rem 1rem; border-left: 4px solid var(--room-gold); background: rgba(201,164,106,.1); border-radius: 4px; }
+.room-story .room-story-next p { margin: .3rem 0 0; color: var(--room-paper); font-size: .9rem; }
+.room-story .room-story-sealed { margin: 0; padding: .9rem 1rem; border: 1px dashed rgba(201,164,106,.3); border-radius: 4px; color: #b9bcba; font-size: .86rem; }
+.room-story .room-story-seal { padding: 1.1rem; border: 1px dashed rgba(201,164,106,.4); border-radius: 6px; background: rgba(255,253,247,.03); }
+.room-story .room-story-seal p { margin: 0; color: rgba(245,240,231,.8); font-size: .88rem; }
+.room-story .room-story-record { display: grid; gap: .8rem; padding: 1.1rem; border: 1px solid rgba(201,164,106,.3); border-radius: 6px; background: rgba(255,253,247,.04); scroll-margin-top: 5rem; }
+.room-story .room-story-record:focus { outline: 2px solid rgba(201,164,106,.55); outline-offset: 2px; }
+.room-story .room-story-record-intro { margin: 0; color: var(--room-paper); font-style: italic; }
+.room-story .room-story-record-item { padding-top: .75rem; border-top: 1px solid rgba(201,164,106,.16); }
+.room-story .room-story-record-item p { margin: .3rem 0 0; color: rgba(245,240,231,.86); font-size: .88rem; }
+.room-story .room-story-choices { margin: .35rem 0 0; padding-left: 1.2rem; color: rgba(245,240,231,.86); font-size: .88rem; }
+.room-story .room-story-choices li { margin: .2rem 0; }
+.room-story .room-story-choices strong { color: var(--room-muted); }
+.room-story .room-story-alignment { margin-top: 2.4rem; padding: .8rem 1rem; border: 1px solid rgba(201,164,106,.2); border-radius: 4px; background: rgba(255,253,247,.025); }
+.room-story .room-story-alignment summary { cursor: pointer; color: var(--room-muted); font: 700 .74rem/1.4 Montserrat,Arial,sans-serif; letter-spacing: .06em; }
+.room-story .room-story-alignment-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .7rem; margin-top: .8rem; }
+.room-story [hidden] { display: none !important; }
+
+@media (max-width: 480px) {
+  .room-story .room-story-alignment-grid { grid-template-columns: 1fr; }
+  .room-story .room-story-lock-row { align-items: stretch; }
+  .room-story .room-story-scene, .room-story .room-story-result, .room-story .room-story-record { padding: .9rem; }
+}
