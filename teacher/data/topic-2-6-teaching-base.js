@@ -129,7 +129,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      id: 'turn', phase: 'turn', kind: 'question', eyebrow: 'The Turn',
+      id: 'turn', phase: 'turn', kind: 'question', kc: 'KC-3.1.IV', eyebrow: 'The Turn',
       title: 'Trade accidentally connected ecosystems.',
       subtitle: 'A route is not just an economic corridor. It can become a biological corridor.',
       notes: {
@@ -143,7 +143,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      id: 'spine', phase: 'spine', kind: 'grid', eyebrow: 'The Shape of the Topic',
+      id: 'spine', phase: 'spine', kind: 'grid', kc: 'KC-3.1.IV', eyebrow: 'The Shape of the Topic',
       title: 'The whole topic has two branches.',
       cards: [
         { title: 'BIOLOGICAL CORRIDORS', text: 'Networks connected environments as well as markets.' },
@@ -178,7 +178,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      id: 'crops-map', phase: 'crops', kind: 'frame-placard', eyebrow: 'Cargo 1 · Crops',
+      id: 'crops-map', phase: 'crops', kind: 'frame-placard', kc: 'KC-3.1.IV', eyebrow: 'Cargo 1 · Crops',
       title: 'The road brings food.',
       template: {
         placard: {
@@ -198,7 +198,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      id: 'crop-so-what', phase: 'crops', kind: 'equation-stack', eyebrow: 'Crop Consequences',
+      id: 'crop-so-what', phase: 'crops', kind: 'equation-stack', kc: 'KC-3.1.IV', eyebrow: 'Crop Consequences',
       title: 'Every example needs a so what.',
       footer: 'A crop name with no consequence attached is **not an answer**.',
       template: {
@@ -220,7 +220,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      id: 'crop-chain', phase: 'crops', kind: 'process', eyebrow: 'Crop Mechanism',
+      id: 'crop-chain', phase: 'crops', kind: 'process', kc: 'KC-3.1.IV', eyebrow: 'Crop Mechanism',
       title: 'A crop matters when it changes what land can support.',
       steps: [
         { label: 'NETWORK', text: 'Routes connect regions' },
@@ -255,7 +255,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      id: 'plague-map', phase: 'pathogens', kind: 'frame-placard', eyebrow: 'Cargo 2 · Pathogens',
+      id: 'plague-map', phase: 'pathogens', kind: 'frame-placard', kc: 'KC-3.1.IV', eyebrow: 'Cargo 2 · Pathogens',
       title: 'The same road brings death.',
       template: {
         placard: {
@@ -277,7 +277,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      id: 'plague-chain', phase: 'pathogens', kind: 'process', eyebrow: 'Pathogen Mechanism',
+      id: 'plague-chain', phase: 'pathogens', kind: 'process', kc: 'KC-3.1.IV', eyebrow: 'Pathogen Mechanism',
       title: 'The plague was not new. The highway system was better.',
       steps: [
         { label: 'OUTBREAK', text: 'Disease exists in one region' },
@@ -297,7 +297,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      id: 'memory', phase: 'pathogens', kind: 'frame-triptych', eyebrow: 'Human Consequence · How Europe Remembered',
+      id: 'memory', phase: 'pathogens', kind: 'frame-triptych', kc: 'KC-3.1.IV', eyebrow: 'Human Consequence · How Europe Remembered',
       title: 'Connection can become catastrophe.',
       template: {
         panels: [
@@ -317,7 +317,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      id: 'power', phase: 'power', kind: 'question', eyebrow: 'The Big Turn',
+      id: 'power', phase: 'power', kind: 'question', kc: 'KC-3.1.IV', eyebrow: 'The Big Turn',
       title: 'The networks did not become bad. They became powerful.',
       subtitle: 'A powerful network amplifies whatever enters it: crops, ideas, people, goods, or pathogens.',
       notes: {
@@ -331,7 +331,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      id: 'retelling', retelling: true, phase: 'chains', kind: 'split-mirror', eyebrow: 'Same Cause · Opposite Effects',
+      id: 'retelling', retelling: true, phase: 'chains', kind: 'split-mirror', kc: 'KC-3.1.IV', eyebrow: 'Same Cause · Opposite Effects',
       title: 'The same network could feed you and kill you.',
       footer: 'Same first three rows. **Opposite last row.** Both were happening at once.',
       template: {
@@ -375,7 +375,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      id: 'landing', phase: 'close', kind: 'frame-letterbox', eyebrow: 'Topic 2.6 · Landing Sentence',
+      id: 'landing', phase: 'close', kind: 'frame-letterbox', kc: 'KC-3.1.IV', eyebrow: 'Topic 2.6 · Landing Sentence',
       title: 'Connectivity connected ecosystems.',
       subtitle: 'From c. 1200 to c. 1450, exchange networks spread crops that could increase productive capacity and pathogens that could cause devastating demographic decline.',
       template: {},

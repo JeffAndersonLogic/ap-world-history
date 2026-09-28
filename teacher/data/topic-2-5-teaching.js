@@ -9,3 +9,4 @@ document.write('<script src="data/topic-2-5-presentation-assets.js?v=pipeline-v1
 document.write('<script src="data/topic-2-5-visual-assets.js?v=pipeline-v1"><\/script>');
 document.write('<script src="teaching-os-shared.js?v=shared-v1"><\/script>');
 document.write('<script src="../assets/js/behistorical-slide-templates.js"><\/script>');
+document.write('<script src="../assets/data/key-concepts.js"><\/script>');

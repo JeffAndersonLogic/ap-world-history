@@ -32,7 +32,7 @@ function renderSlide(s){
   switch(s.kind){case'hero':return hero(s);case'map':return map(s);case'process':return process(s);case'grid':return grid(s);case'nodes':return nodes(s);case'video':return video(s);case'action':return action(s);default:return simple(s);}
 }
 function render(){
-  const s=D.slides[index];qs('#stage').innerHTML=renderSlide(s);qs('#count').textContent=`${index+1} / ${D.slides.length}`;qs('#slideName').textContent=s.eyebrow||'';qs('#prev').disabled=index===0;qs('#next').disabled=index===D.slides.length-1;
+  const s=D.slides[index];qs('#stage').innerHTML=window.BHSlideTemplates?window.BHSlideTemplates.withKeyConcept(s,renderSlide(s)):renderSlide(s);qs('#count').textContent=`${index+1} / ${D.slides.length}`;qs('#slideName').textContent=s.eyebrow||'';qs('#prev').disabled=index===0;qs('#next').disabled=index===D.slides.length-1;
   document.title=`BeHistorical | ${D.meta.topic} | ${s.title||D.meta.title}`;
 }
 function go(n){index=Math.max(0,Math.min(D.slides.length-1,n));render();}

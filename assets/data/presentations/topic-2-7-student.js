@@ -50,6 +50,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "The Shared Problem",
       "title": "Every network was solving the same problem.",
       "footer": "Whoever made distance cheaper and safer got rich.",
+      "kc": "KC-3.3.I.B",
       "template": {
         "terms": [
           {
@@ -83,6 +84,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "grid",
       "eyebrow": "The Big Difference",
       "title": "Geography picked the tools.",
+      "kc": "KC-3.1.I.C.i",
       "cards": [
         {
           "title": "OVERLAND",
@@ -106,6 +108,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "grid",
       "eyebrow": "Same Result #1",
       "title": "Where routes narrow, cities and states grow.",
+      "kc": "KC-3.1.I.A.i",
       "cards": [
         {
           "title": "SILK ROADS",
@@ -130,6 +133,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Same Result #2",
       "title": "Demand far away made workshops grow.",
       "footer": "Chinese porcelain and iron, and Indian cotton cloth, grew with the trade.",
+      "kc": "KC-3.3",
       "template": {
         "steps": [
           {
@@ -155,6 +159,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "grid",
       "eyebrow": "Same Result #3 · Quick Recap",
       "title": "The networks carried more than goods.",
+      "kc": "KC-3.1",
       "cards": [
         {
           "title": "BELIEFS",

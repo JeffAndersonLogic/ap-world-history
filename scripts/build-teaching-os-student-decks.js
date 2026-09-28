@@ -126,6 +126,9 @@ function baseStudentSlide(s) {
   if (s.position) out.position = s.position;
   if (s.visual && s.visual.url) out.visual = publicVisual(s.visual);
   if (s.footer) out.footer = s.footer;
+  // The CED Key Concept the slide teaches, by code. Projected content: the
+  // band is on the board, and its wording comes from assets/data/key-concepts.js.
+  if (s.kc) out.kc = s.kc;
   if (Array.isArray(s.steps)) out.steps = clone(s.steps);
   if (Array.isArray(s.cards)) out.cards = clone(s.cards);
   if (Array.isArray(s.nodes)) out.nodes = clone(s.nodes);

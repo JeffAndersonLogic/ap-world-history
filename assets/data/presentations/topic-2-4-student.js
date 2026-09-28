@@ -65,6 +65,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "The Tools · Makes It Possible",
       "title": "They made the crossing repeatable.",
       "footer": "The desert stayed the same size. The **saddle** and the **caravan** are the CED's examples.",
+      "kc": "KC-3.1.II.A.ii",
       "template": {
         "terms": [
           {
@@ -95,6 +96,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Caravan Organization",
       "title": "One merchant crosses a desert. A caravan builds a system.",
       "footer": "Organization turns individual risk into network capacity.",
+      "kc": "KC-3.1.II.A.ii",
       "template": {
         "left": {
           "tag": "Alone",
@@ -133,6 +135,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "The Motive · Worth It",
       "title": "Gold and salt make the risk worth it.",
       "footer": "Goods matter because demand makes transport profitable.",
+      "kc": "KC-3.1.I.A.iv",
       "template": {
         "lede": "Each region has what another lacks. **Price differences reward movement**, so merchants cross the desert on purpose.",
         "places": [
@@ -169,6 +172,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Primary Source · Close Read",
       "title": "Ibn Battuta at Taghaza, 1352",
       "footer": "A mithqal is a weight of gold. Distance is what the merchant is paid for.",
+      "kc": "KC-3.1.I.A.iv",
       "template": {
         "quote": "A camel will carry two of these slabs. … At Iwalatan a load of salt brings eight to ten mithqals; in the town of Malli it sells for twenty to thirty, and sometimes as much as forty.",
         "attribution": {
@@ -189,6 +193,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Why It Took Both · Take One Away",
       "title": "Take one away and the route fails.",
       "footer": "Tools made the crossing possible. Demand made it worth it. The Sahara did not shrink, so you need both.",
+      "kc": "KC-3.1.II.A.ii",
       "template": {
         "terms": [
           {
@@ -221,6 +226,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Expansion · Compounding",
       "title": "Better crossings mean more trade, reaching farther.",
       "footer": "The AP claim: more **volume** and a wider **range**, not just gold for salt.",
+      "kc": "KC-3.1.I.A.iv",
       "template": {
         "steps": [
           {
@@ -253,6 +259,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Mali · On the Map",
       "title": "Mali sits where the salt arrives and the gold leaves.",
       "subtitle": "Follow the salt south from Taghaza and the gold north toward the Mediterranean.",
+      "kc": "KC-3.1.I.E.ii",
       "template": {
         "visual": {
           "fit": "contain",
@@ -267,6 +274,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "State Power · Exchange",
       "title": "Mali grew by making trade safe to tax.",
       "footer": "Trade built the state. The state kept the trade moving.",
+      "kc": "KC-3.1.I.E.ii",
       "template": {
         "places": [
           {
@@ -295,6 +303,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Mali Rises · Timeline",
       "title": "Trans-Saharan gold puts Mali on the map.",
       "footer": "Spacing is true to scale: the events crowd together as Mali becomes famous.",
+      "kc": "KC-3.1.I.E.ii",
       "template": {
         "range": [
           1235,
@@ -329,6 +338,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-evidence",
       "eyebrow": "Mansa Musa · 1324",
       "title": "One pilgrimage advertises a whole network.",
+      "kc": "KC-3.1.I.E.ii",
       "template": {
         "sceneLabel": "A modern artist imagines the journey",
         "evidenceLabel": "A map from 1375 records the reputation",
@@ -350,6 +360,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Video · TED-Ed · Mansa Musa",
       "title": "Mansa Musa, one of the wealthiest people who ever lived",
       "footer": "Where did his wealth come from? Connect it to the gold and salt trade.",
+      "kc": "KC-3.1.I.E.ii",
       "video": {
         "youtubeId": "O3YJMaL55TM",
         "label": "Mansa Musa, one of the wealthiest people who ever lived - Jessica Smith (TED-Ed)"
@@ -365,13 +376,15 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Djenn%C3%A9_2.jpg",
         "alt": "The Great Mosque of Djenné, a 1907 building on the site of earlier mosques",
         "credit": "Great Mosque of Djenné · present building 1907, on the site of earlier mosques · Wikimedia Commons"
-      }
+      },
+      "kc": "KC-3.1.I.E.ii"
     },
     {
       "kind": "video",
       "eyebrow": "Video · TED-Ed · Timbuktu",
       "title": "The hidden treasures of Timbuktu",
       "footer": "Name one thing, besides gold and salt, that traveled along the caravan routes.",
+      "kc": "KC-3.1.I.E.ii",
       "video": {
         "youtubeId": "40ehHbdi95o",
         "label": "The hidden treasures of Timbuktu - Elizabeth Cox (TED-Ed)"

@@ -289,6 +289,20 @@ The canonical teacher source is the authored presentation.
 
 The student deck is a derivative artifact, never a second authored source.
 
+### Key Concept bands
+
+Every slide that teaches one of the topic's CED Key Concepts names it with `kc: 'KC-3.1.IV'`, and the deck draws that code and its CED wording in a band across the top of the projected slide, in the look of the Essential Question strip. This is standard for every deck from Topic 2.1 on, as of 2026-09-28.
+
+Tagging is an instructional decision, made slide by slide from the step 1 inventory:
+
+- Tag a slide when its claim, evidence, or mechanism is that Key Concept. The crop and plague slides of Topic 2.6 carry KC-3.1.IV; the module handoff that says "open First & 10" does not.
+- One Key Concept per slide. A summary or retelling slide that spans several of the topic's Key Concepts carries none, because a band naming one of them would misdescribe it.
+- Never on Teacher Preflight or BeReady. Neither is the topic's CED content.
+- Every one of the topic's Key Concepts must be on at least one projected slide. If one cannot be tagged anywhere, that is a coverage finding about the deck, not a tagging problem.
+- Write the code only. The wording comes from the lesson's `collegeBoardKeyConcepts`, so a Key Concept is never retyped into a deck.
+
+The implementation contract is "The Key Concept band" in `docs/TEACHING-OS.md`.
+
 See `docs/TEACHING-OS.md` for the file architecture.
 
 ## 13. Generate the student deck
@@ -352,6 +366,7 @@ Before shipping, confirm:
 - the AP reasoning move is visible without turning the lesson into test-prep jargon
 - the retelling slide still captures the whole argument
 - a ninth grader could retell the topic from the deck's structure
+- every Key Concept band sits on a slide that actually teaches that Key Concept, and every Key Concept of the topic is banded somewhere
 
 ### Fact-check the teaching devices too
 

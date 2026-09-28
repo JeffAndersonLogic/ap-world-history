@@ -91,6 +91,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "The monsoon is a round-trip calendar.",
       "subtitle": "Sail with the seasonal reversal, not against it.",
       "footer": "Predictability turns distance into schedule.",
+      "kc": "KC-3.1.II.A.i",
       "steps": [
         {
           "label": "Winter",
@@ -120,7 +121,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "alt": "Monsoon map showing seasonal wind patterns across the Indian Ocean",
         "credit": "BeHistorical visual · Monsoon wind map"
       },
-      "footer": "Timing is part of geography."
+      "footer": "Timing is part of geography.",
+      "kc": "KC-3.1.II.A.i"
     },
     {
       "kind": "process",
@@ -128,6 +130,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Ships turn wind into carrying power.",
       "subtitle": "Better ships and navigational knowledge increased distance, reliability, and cargo volume.",
       "footer": "Technology matters because it changes what merchants can repeatedly do.",
+      "kc": "KC-3.1.I.C.ii",
       "steps": [
         {
           "label": "Sails",
@@ -153,6 +156,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Open water needs more than courage.",
       "subtitle": "Compass · Astrolabe · Stars · Currents · Coastline knowledge",
       "footer": "Knowledge is transportation technology too.",
+      "kc": "KC-3.1.I.C.ii",
       "steps": [
         {
           "label": "Direction",
@@ -188,7 +192,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "alt": "Illustration of a Malay market scene representing a cosmopolitan Indian Ocean port economy",
         "credit": "Historical Reconstruction - AI Generated"
       },
-      "footer": "Markets connect goods, people, and information."
+      "footer": "Markets connect goods, people, and information.",
+      "kc": "KC-3.1.I.A.ii"
     },
     {
       "kind": "map",
@@ -200,7 +205,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "alt": "Indian Ocean trade organization chart connecting technologies, routes, states, and communities",
         "credit": "BeHistorical visual · Indian Ocean trade system"
       },
-      "footer": "The system moves more than merchandise."
+      "footer": "The system moves more than merchandise.",
+      "kc": "KC-3.1.III.B"
     },
     {
       "kind": "process",
@@ -208,6 +214,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Ports become the network’s switching stations.",
       "subtitle": "Swahili Coast city-states, Gujarat, and Malacca grew because they organized exchange.",
       "footer": "A port grows rich by making merchants want to wait there.",
+      "kc": "KC-3.1.I.A.iii",
       "steps": [
         {
           "label": "Storage",
@@ -237,7 +244,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "alt": "Illustration of diasporic merchant communities in an Indian Ocean port",
         "credit": "Historical Reconstruction - AI Generated"
       },
-      "footer": "Diaspora = settle + connect + adapt + blend."
+      "footer": "Diaspora = settle + connect + adapt + blend.",
+      "kc": "KC-3.1.III.B"
     },
     {
       "kind": "map",
@@ -249,7 +257,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "alt": "Illustration of the Zheng He fleet sailing through the Indian Ocean",
         "credit": "Historical Reconstruction - AI Generated"
       },
-      "footer": "State power moved through an already mature maritime network."
+      "footer": "State power moved through an already mature maritime network.",
+      "kc": "KC-3.2.II.A.iii"
     },
     {
       "kind": "map",

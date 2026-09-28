@@ -68,7 +68,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "prompt",
       "eyebrow": "The Economic Problem",
       "title": "A luxury good is valuable only if it survives the journey.",
-      "subtitle": "Distance creates risk. Risk creates cost. Cost limits trade."
+      "subtitle": "Distance creates risk. Risk creates cost. Cost limits trade.",
+      "kc": "KC-3.1.I.C.i"
     },
     {
       "kind": "process",
@@ -103,7 +104,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "alt": "Historical reconstruction (AI generated) of porcelain and silk representing high-value luxury goods traded across Afro-Eurasia, not a historical source",
         "credit": "Historical Reconstruction - AI Generated"
       },
-      "footer": "Porcelain · textiles · silk · spices · iron · steel"
+      "footer": "Porcelain · textiles · silk · spices · iron · steel",
+      "kc": "KC-3.3.I.B"
     },
     {
       "kind": "hero",
@@ -115,13 +117,15 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "alt": "Historical reconstruction of a caravanserai serving long-distance merchants",
         "credit": "Historical Reconstruction - AI Generated"
       },
-      "footer": "Infrastructure reduced the cost and risk of distance."
+      "footer": "Infrastructure reduced the cost and risk of distance.",
+      "kc": "KC-3.1.I.C.i"
     },
     {
       "kind": "grid",
       "eyebrow": "Big Rock 2 · Commercial Practices",
       "title": "Merchants also needed financial systems.",
       "footer": "Commercial tools reduced financial risk; political stability could reduce route risk.",
+      "kc": "KC-3.1.I.C.i",
       "cards": [
         {
           "title": "BILLS OF EXCHANGE",
@@ -173,13 +177,15 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "alt": "Historical reconstruction (AI generated) of Samarkand as a major Silk Road trading city, not a historical source",
         "credit": "Historical Reconstruction - AI Generated"
       },
-      "footer": "Kashgar and Samarkand are evidence, not trivia."
+      "footer": "Kashgar and Samarkand are evidence, not trivia.",
+      "kc": "KC-3.1.I.A.i"
     },
     {
       "kind": "map",
       "eyebrow": "Map Check",
       "title": "Follow the nodes, not just the line.",
-      "footer": "Central Asia matters because routes, cities, and intermediaries converged there."
+      "footer": "Central Asia matters because routes, cities, and intermediaries converged there.",
+      "kc": "KC-3.1.I.A.i"
     },
     {
       "kind": "action",

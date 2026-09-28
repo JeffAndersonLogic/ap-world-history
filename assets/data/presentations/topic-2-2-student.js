@@ -85,7 +85,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "alt": "Chinggis Khan museum visual used to frame Mongol military organization",
         "credit": "Topic 2.2 classroom visual · Chinggis Museum"
       },
-      "footer": "Mechanism: organization makes conquest scalable."
+      "footer": "Mechanism: organization makes conquest scalable.",
+      "kc": "KC-3.2.I.B.iii"
     },
     {
       "kind": "grid",
@@ -98,6 +99,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "credit": "Historical Reconstruction - AI Generated"
       },
       "footer": "Mobility was powerful, but cavalry alone could not take fortified cities.",
+      "kc": "KC-3.2.I.B.iii",
       "cards": [
         {
           "title": "MOBILITY",
@@ -124,13 +126,15 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "alt": "Mongol forces using borrowed siege technology against a fortified city",
         "credit": "Topic 2.2 classroom visual · Mongols Borrow Siege Technology"
       },
-      "footer": "Mechanism: adaptation lets a steppe army conquer fortified cities."
+      "footer": "Mechanism: adaptation lets a steppe army conquer fortified cities.",
+      "kc": "KC-3.2.I.B.iii"
     },
     {
       "kind": "prompt",
       "eyebrow": "Governance Pivot",
       "title": "Conquest creates a new problem.",
-      "subtitle": "How do you rule thousands of miles of diversity?"
+      "subtitle": "How do you rule thousands of miles of diversity?",
+      "kc": "KC-3.2.I.B.iii"
     },
     {
       "kind": "map",
@@ -142,7 +146,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "alt": "Map of the Golden Horde, Chagatai Khanate, Ilkhanate, and Yuan dynasty",
         "credit": "Topic 2.2 classroom map · successor khanates"
       },
-      "footer": "Golden Horde · Chagatai · Ilkhanate · Yuan"
+      "footer": "Golden Horde · Chagatai · Ilkhanate · Yuan",
+      "kc": "KC-3.2.I.B.iii"
     },
     {
       "kind": "hero",
@@ -155,7 +160,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "alt": "Historical reconstruction of the Mongol Yam relay system across the steppe",
         "credit": "Historical Reconstruction - AI Generated"
       },
-      "footer": "The same infrastructure that helps rule an empire also helps connect it."
+      "footer": "The same infrastructure that helps rule an empire also helps connect it.",
+      "kc": "KC-3.1.I.E.i"
     },
     {
       "kind": "grid",
@@ -168,6 +174,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "credit": "Topic 2.2 classroom visual · Knowledge Shared"
       },
       "footer": "Three CED examples. One idea: contact moves knowledge across cultures.",
+      "kc": "KC-3.2.II.A.ii",
       "cards": [
         {
           "title": "MEDICINE",
@@ -194,7 +201,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "alt": "Mongol representatives at a fortified city, reused here as a visual for Mongol borrowing and adaptation",
         "credit": "Historical Reconstruction - AI Generated"
       },
-      "footer": "Direct Mongol example: conquerors borrow and adapt useful cultural technology."
+      "footer": "Direct Mongol example: conquerors borrow and adapt useful cultural technology.",
+      "kc": "KC-3.2.II.A.ii"
     },
     {
       "kind": "process",
@@ -231,7 +239,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "alt": "Historical reconstruction of a protected caravan moving through Mongol-controlled territory",
         "credit": "Historical Reconstruction - AI Generated"
       },
-      "footer": "State change -> Pax Mongolica -> transfer."
+      "footer": "State change -> Pax Mongolica -> transfer.",
+      "kc": "KC-3.1.I.E.i"
     }
   ]
 };

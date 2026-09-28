@@ -55,13 +55,15 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "prompt",
       "eyebrow": "The Turn",
       "title": "Trade accidentally connected ecosystems.",
-      "subtitle": "A route is not just an economic corridor. It can become a biological corridor."
+      "subtitle": "A route is not just an economic corridor. It can become a biological corridor.",
+      "kc": "KC-3.1.IV"
     },
     {
       "kind": "grid",
       "eyebrow": "The Shape of the Topic",
       "title": "The whole topic has two branches.",
       "footer": "Not two topics. **Opposite consequences of the same system.**",
+      "kc": "KC-3.1.IV",
       "cards": [
         {
           "title": "BIOLOGICAL CORRIDORS",
@@ -91,6 +93,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-placard",
       "eyebrow": "Cargo 1 · Crops",
       "title": "The road brings food.",
+      "kc": "KC-3.1.IV",
       "template": {
         "placard": {
           "tag": "Crop Diffusion · Three Movements",
@@ -110,6 +113,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Crop Consequences",
       "title": "Every example needs a so what.",
       "footer": "A crop name with no consequence attached is **not an answer**.",
+      "kc": "KC-3.1.IV",
       "template": {
         "terms": [
           {
@@ -136,6 +140,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Crop Mechanism",
       "title": "A crop matters when it changes what land can support.",
       "footer": "Bananas, rice, and citrus are evidence for this mechanism.",
+      "kc": "KC-3.1.IV",
       "steps": [
         {
           "label": "NETWORK",
@@ -169,6 +174,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-placard",
       "eyebrow": "Cargo 2 · Pathogens",
       "title": "The same road brings death.",
+      "kc": "KC-3.1.IV",
       "template": {
         "placard": {
           "tag": "Modern Map · 1346 to 1353",
@@ -189,6 +195,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Pathogen Mechanism",
       "title": "The plague was not new. The highway system was better.",
       "footer": "Connectivity increased the speed and range of vulnerability.",
+      "kc": "KC-3.1.IV",
       "steps": [
         {
           "label": "OUTBREAK",
@@ -212,6 +219,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-triptych",
       "eyebrow": "Human Consequence · How Europe Remembered",
       "title": "Connection can become catastrophe.",
+      "kc": "KC-3.1.IV",
       "template": {
         "panels": [
           {
@@ -239,13 +247,15 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "prompt",
       "eyebrow": "The Big Turn",
       "title": "The networks did not become bad. They became powerful.",
-      "subtitle": "A powerful network amplifies whatever enters it: crops, ideas, people, goods, or pathogens."
+      "subtitle": "A powerful network amplifies whatever enters it: crops, ideas, people, goods, or pathogens.",
+      "kc": "KC-3.1.IV"
     },
     {
       "kind": "split-mirror",
       "eyebrow": "Same Cause · Opposite Effects",
       "title": "The same network could feed you and kill you.",
       "footer": "Same first three rows. **Opposite last row.** Both were happening at once.",
+      "kc": "KC-3.1.IV",
       "template": {
         "left": {
           "name": "Crops"
@@ -292,6 +302,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Topic 2.6 · Landing Sentence",
       "title": "Connectivity connected ecosystems.",
       "subtitle": "From c. 1200 to c. 1450, exchange networks spread crops that could increase productive capacity and pathogens that could cause devastating demographic decline.",
+      "kc": "KC-3.1.IV",
       "template": {
         "visual": {
           "ai": true,

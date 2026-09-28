@@ -564,6 +564,61 @@ const KINDS={
   'frame-compare':fCompare,'frame-route':fRoute
 };
 
+/* ── the Key Concept band ─────────────────────────────────────────────── */
+
+/* A slide that teaches a CED Key Concept names it, `kc: 'KC-3.1.IV'`, and
+   every renderer passes what it drew through withKeyConcept() on the way to the stage:
+
+     $('stage').innerHTML=window.BHSlideTemplates?window.BHSlideTemplates.withKeyConcept(s,renderSlide(s)):renderSlide(s);
+
+   withKeyConcept() puts a band across the top of the 16:9 board carrying the code and
+   the CED wording, in the look of the cockpit's Essential Question strip, and
+   draws the slide below it, scaled to the room left. The band sits on the
+   board, so it projects: the cockpit strip is hidden in project mode.
+
+   The slide is scaled rather than overlaid on purpose. An overlay covers
+   whatever that slide put at its top edge, an eyebrow or the top of a picture,
+   and which slide that is depends on its kind, so every slide type would need
+   its own fix. Shrinking the slide into the space below keeps every existing
+   layout exactly as designed, a little smaller.
+
+   The wording is never in the slide. It comes from
+   window.BEHISTORICAL_KEY_CONCEPTS, generated from each lesson's
+   collegeBoardKeyConcepts by scripts/build-key-concepts.js, for the topic of
+   the deck on the page. A slide with no `kc` comes back untouched. */
+
+const KC_TWO_LINES=250;
+function deckTopic(){
+  if(typeof window==='undefined')return '';
+  const d=window.BEHISTORICAL_TEACHING||window.BEHISTORICAL_STUDENT_DECK;
+  return d&&d.meta?String(d.meta.topic||'').replace(/^Topic\s+/i,'').trim():'';
+}
+function deckSlides(){
+  if(typeof window==='undefined')return [];
+  const d=window.BEHISTORICAL_TEACHING||window.BEHISTORICAL_STUDENT_DECK;
+  return d&&Array.isArray(d.slides)?d.slides:[];
+}
+function keyConcept(code,topic){
+  const all=typeof window!=='undefined'&&window.BEHISTORICAL_KEY_CONCEPTS||{};
+  const list=arr(all[topic===undefined?deckTopic():topic]);
+  return list.find(k=>k.code===code)||null;
+}
+/* One band height for the whole deck, so the slide does not change size
+   between two slides that both carry a band. Three lines only when some KC on
+   this deck needs them. */
+function bandLines(topic){
+  const long=deckSlides().some(x=>{const k=x&&x.kc&&keyConcept(x.kc,topic);return k&&k.text.length>KC_TWO_LINES;});
+  return long?3:2;
+}
+function withKeyConcept(s,html){
+  if(!s||typeof s.kc!=='string'||!s.kc)return html;
+  installCss();
+  const topic=deckTopic();
+  const k=keyConcept(s.kc,topic);
+  const text=k?k.text:'';
+  return `<div class="bhkc bhkc-l${bandLines(topic)}" data-kc="${esc(s.kc)}"><div class="bhkc-band" role="note" aria-label="Key concept ${esc(s.kc)}"><span class="bhkc-code">${esc(s.kc)}</span><span class="bhkc-text">${esc(text)}</span></div><div class="bhkc-slide">${html}</div></div>`;
+}
+
 /* ── styles ────────────────────────────────────────────────────────────── */
 
 const CSS=`
@@ -1122,17 +1177,37 @@ const CSS=`
  .replace(/\/\*[\s\S]*?\*\//g,'')
  .replace(/([^{}]+)\{/g,(m,sel)=>sel.split(',').map(x=>{const t=x.trim();return t.startsWith('.bht-slide')?t:'.bht-slide '+t;}).join(',')+'{');
 
+
+/* The band's own styles. Not scoped under .bht-slide: the band wraps every
+   kind of slide, template or not. Sizes are design pixels on the 1280x720
+   board, like the templates'. The look follows the Essential Question strip:
+   a gold Montserrat label and the question in Libre Baskerville, on the
+   near-black of the cockpit, over one hairline rule. */
+const KC_CSS=`
+.bhkc{--u:calc(min(100cqw,177.7778cqh)/1280);--bhkc-h:64u;--bhkc-k:.91111;position:absolute;inset:0;container-type:size;background:#030404;overflow:hidden}
+.bhkc.bhkc-l3{--bhkc-h:88u;--bhkc-k:.87778}
+.bhkc-band{position:absolute;left:0;right:0;top:0;height:var(--bhkc-h);display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:20u;align-items:center;padding:0 max(40u,calc((100cqw - 1280*var(--u))/2 + 40u));background:#07090a;border-bottom:1.5u solid #364044;text-align:left}
+.bhkc-code{font:900 13u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#c9a46a;white-space:nowrap}
+.bhkc-text{font:400 16u/1.36 'Libre Baskerville',Georgia,serif;color:#ddd6ca;letter-spacing:0;text-shadow:none;overflow-wrap:break-word}
+.bhkc-slide{position:absolute;left:0;right:0;bottom:0;top:var(--bhkc-h);overflow:hidden;background:#030404}
+.bhkc-slide>.bht-slide{position:absolute!important;inset:0!important}
+.bhkc-slide>:not(.bht-slide){position:absolute!important;left:0!important;top:0!important;right:auto!important;bottom:auto!important;width:100cqw!important;height:100cqh!important;max-width:none!important;max-height:none!important;margin:0!important;transform:scale(var(--bhkc-k));transform-origin:50% 0}
+`.replace(/(-?)(\d+(?:\.\d+)?)u\b/g,'calc($1$2*var(--u))');
+
 function installCss(){
   if(typeof document==='undefined'||document.getElementById('behistorical-slide-templates'))return;
   const el=document.createElement('style');
   el.id='behistorical-slide-templates';
-  el.textContent=CSS;
+  el.textContent=CSS+KC_CSS;
   (document.head||document.documentElement).appendChild(el);
 }
 
 const api={
   LABEL,
   css:CSS,
+  kcCss:KC_CSS,
+  withKeyConcept,
+  keyConcept,
   kinds:Object.keys(KINDS),
   has:kind=>Object.prototype.hasOwnProperty.call(KINDS,kind),
   render:slide=>{installCss();return KINDS[slide.kind](slide||{});}

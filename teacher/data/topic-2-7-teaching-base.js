@@ -141,7 +141,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'problem', kind: 'equation', eyebrow: 'The Shared Problem',
-      title: 'Every network was solving the same problem.',
+      kc: 'KC-3.3.I.B', title: 'Every network was solving the same problem.',
       footer: 'Whoever made distance cheaper and safer got rich.',
       template: {
         terms: [
@@ -166,7 +166,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'tools', kind: 'grid', eyebrow: 'The Big Difference',
-      title: 'Geography picked the tools.',
+      kc: 'KC-3.1.I.C.i', title: 'Geography picked the tools.',
       cards: [
         { title: 'OVERLAND', text: 'Caravanserais for safe stops, and credit so merchants did not carry a fortune.' },
         { title: 'BY SEA', text: 'The monsoon winds as a schedule, and ships built to ride them.' },
@@ -188,7 +188,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'nodes', kind: 'grid', eyebrow: 'Same Result #1',
-      title: 'Where routes narrow, cities and states grow.',
+      kc: 'KC-3.1.I.A.i', title: 'Where routes narrow, cities and states grow.',
       cards: [
         { title: 'SILK ROADS', text: 'Samarkand and Kashgar grew where caravans met, under Mongol protection.' },
         { title: 'INDIAN OCEAN', text: 'Calicut and Malacca grew where ships waited for the wind.' },
@@ -207,7 +207,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'production', kind: 'compounding', eyebrow: 'Same Result #2',
-      title: 'Demand far away made workshops grow.',
+      kc: 'KC-3.3', title: 'Demand far away made workshops grow.',
       footer: 'Chinese porcelain and iron, and Indian cotton cloth, grew with the trade.',
       template: {
         steps: [
@@ -229,7 +229,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'diffusion', kind: 'grid', eyebrow: 'Same Result #3 · Quick Recap',
-      title: 'The networks carried more than goods.',
+      kc: 'KC-3.1', title: 'The networks carried more than goods.',
       cards: [
         { title: 'BELIEFS', text: 'Islam and Buddhism spread along trade routes (2.5).' },
         { title: 'TECHNOLOGY', text: 'Paper and gunpowder moved west (2.5).' },

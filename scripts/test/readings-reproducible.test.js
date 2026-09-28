@@ -32,6 +32,7 @@ const SUITES = [
   ['scripts/build-ebook.js', 'eBook volumes vs the same chapter modules'],
   ['scripts/build-student-decks.js', 'legacy Teach Mode student decks vs their teacher decks, notes stripped'],
   ['scripts/build-teaching-os-student-decks.js', 'Teaching OS student decks vs canonical teacher presentation data'],
+  ['scripts/build-key-concepts.js', 'Key Concept band data vs each lesson\'s collegeBoardKeyConcepts'],
   ['scripts/build-run-of-show.js', 'Run of Show pacing pages vs each topic\'s runOfShow block'],
   ['scripts/build-teacher-index.js', 'teacher command center vs its declared tools and Run of Show topics']
 ];

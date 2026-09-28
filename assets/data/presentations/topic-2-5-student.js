@@ -79,6 +79,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-triptych",
       "eyebrow": "Beliefs · Diffusion",
       "title": "Beliefs traveled the same routes as goods.",
+      "kc": "KC-3.1.III.D",
       "template": {
         "panels": [
           {
@@ -117,6 +118,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Name the Carrier · West Africa and Malacca",
       "title": "Islam came with the traders.",
       "footer": "Name the carrier: **who** brought it, along **which route**, and **why** people took it up.",
+      "kc": "KC-3.1.III.D",
       "template": {
         "steps": [
           {
@@ -143,6 +145,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Paper and Gunpowder · Diffusion + Adaptation",
       "title": "They changed as they moved.",
       "footer": "Diffusion says how it arrived. **Adaptation** says what it became.",
+      "kc": "KC-3.1.III.D",
       "template": {
         "left": {
           "name": "Paper"
@@ -185,6 +188,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Cities · Growth",
       "title": "Trade and farming built great cities.",
       "subtitle": "Hangzhou and Samarkand grew where traffic met, fed by productive farms.",
+      "kc": "KC-3.3.II",
       "template": {
         "visual": {
           "ai": true,
@@ -199,6 +203,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-placard",
       "eyebrow": "Cities · Decline · 1258",
       "title": "The Mongol siege of Baghdad",
+      "kc": "KC-3.3.II",
       "template": {
         "placard": {
           "tag": "A Connected City Falls · 1258",
@@ -219,6 +224,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Cities · Rise and Fall",
       "title": "The same network could build a city or expose it.",
       "footer": "Spacing is true to scale. City fortunes **varied**: war, rulers, and routes decided who rose and who fell.",
+      "kc": "KC-3.3.II",
       "template": {
         "range": [
           1120,
@@ -259,6 +265,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Travelers · More Travel, More Writing",
       "title": "More people traveled, so more people wrote it down.",
       "footer": "Each account is evidence twice: of distant places, and of a **more connected world**.",
+      "kc": "KC-3.1.III.C",
       "template": {
         "range": [
           1250,
@@ -291,6 +298,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-placard",
       "eyebrow": "Travelers · What Europe Knew",
       "title": "A caravan on the Catalan Atlas, 1375",
+      "kc": "KC-3.1.III.C",
       "template": {
         "placard": {
           "tag": "What Mapmakers Knew · 1375",
@@ -311,6 +319,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Primary Source · Close Read",
       "title": "Rabban Bar Sauma in Rome, 1288",
       "footer": "Module 08 has the whole exchange.",
+      "kc": "KC-3.1.III.C",
       "template": {
         "quote": "… many of our Fathers have gone into the countries of the Mongols, and Turks, and Chinese and have taught them the Gospel, and at the present time there are many Mongols who are Christians.",
         "attribution": {

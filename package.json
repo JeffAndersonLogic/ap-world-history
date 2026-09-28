@@ -35,6 +35,7 @@
     "build:ebook": "node scripts/build-ebook.js",
     "build:student-decks": "node scripts/build-student-decks.js && node scripts/build-teaching-os-student-decks.js",
     "build:student-os-decks": "node scripts/build-teaching-os-student-decks.js",
+    "build:key-concepts": "node scripts/build-key-concepts.js",
     "extract:foundations": "node scripts/extract-foundations-content.js",
     "build:readings": "node scripts/build-unit-readings.js",
     "extract:readings": "node scripts/extract-unit-content.js",

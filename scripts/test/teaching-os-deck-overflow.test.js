@@ -187,7 +187,9 @@ function shellFor(key) {
             // a template slide may have none (a primary source, a placard, a
             // sharpened claim), and a landing slide can repeat another slide's
             // heading on purpose, so Topic 2.4 read as 18 slides of 21.
-            sig: (stage.innerText || '').replace(/\s+/g, ' ').trim().slice(0, 240),
+            // The slide under any Key Concept band: two slides teaching the
+            // same KC open with the same band, which is not the same slide.
+            sig: ((stage.querySelector('.bhkc-slide') || stage).innerText || '').replace(/\s+/g, ' ').trim().slice(0, 240),
             overY, overX, worst,
             imgs: [...stage.querySelectorAll('img')].filter(im => im.naturalWidth > 0).length
           };

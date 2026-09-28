@@ -289,6 +289,18 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/build-teacher-index.js`, generate `teacher/index.html`, the teacher command center: one bookmark linking every teacher-only tool (Run of Show, the interactive lessons, Skills Lens), plus a Today panel that reads the schedule live in the browser and surfaces the best teacher surface for whatever topic is being taught right now. `--check` fails on drift without writing, in the offline suite. `validate.js` checks the registry **both ways**: the page links every declared tool, every declared interactive lesson exists and is in the tool grid, no `teacher/command-center-*.html` on disk is missing from `INTERACTIVE_TOPICS`, and none of it is linked from a student page. See "Run of Show" below.
 - `node scripts/test/slide-templates.test.js`, the offline slide template contract: one library, `assets/js/behistorical-slide-templates.js`, handed every template slide by every Teaching OS renderer and loaded by every deck's wrapper and student shell, with a catalog example for every template, escaped text, and the `Historical Reconstruction - AI Generated` label forced on every `ai: true` visual. Carries its own negative controls. In the offline suite. See "Slide templates" in `docs/TEACHING-OS.md`.
 - `node scripts/test/slide-templates.browser.test.js`, draw every template in Chromium and fail on text painted off its board, text colliding inside it (a region spilling into the heading or footer, or text over text), an AI label missing or cut off, or a Teaching OS page that does not really draw a template. In the browser suite. Its main passes use fallback fonts, narrower than Cinzel; a webfont pass re-measures every real deck in the brand fonts and prints SKIP when the fonts cannot load, which is not a pass. `BHT_FONT_DIR` serves the fonts from disk for a sandbox whose browser cannot reach Google; see "Slide templates" in `docs/TEACHING-OS.md`.
+- `node scripts/build-key-concepts.js`, rebuild `assets/data/key-concepts.js`, every
+  unit topic's CED Key Concepts lifted from its lesson data, which is where a class
+  slide's Key Concept band gets its wording. `--check` fails on drift, in the offline
+  suite. Never hand-edit the output. See "The Key Concept band" in `docs/TEACHING-OS.md`.
+- `node scripts/test/deck-key-concepts.test.js`, the offline Key Concept band contract:
+  every deck in `DECKS` tags only its own topic's Key Concepts, bands every one of them
+  on some projected slide, never bands Preflight or BeReady, and is wired to draw the
+  band. Carries its own negative controls. In the offline suite.
+- `node scripts/test/key-concept-band.browser.test.js`, walk every Teaching OS deck in
+  Chromium, teacher projector and student deck, and fail on a missing or stray band,
+  wording that does not fit, or a slide the band pushes out of its room. In the browser
+  suite. `BHT_FONT_DIR` measures it in the brand fonts, as for the slide templates.
 - `node scripts/build-topic-audit-index.js`, generate `docs/topic-audits/index.md`, the
   coverage page for the per-topic audits. `--check` fails on drift, which is what the
   offline suite runs. Never hand-edit the index. See "Topic audits" below.
