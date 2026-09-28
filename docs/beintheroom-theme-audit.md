@@ -267,14 +267,14 @@ Topic 6.8 is a causation capstone and intentionally synthesizes the full evidenc
 
 **Current link status:** The earlier D5 list is an audit snapshot from before the recovery/build sessions. The current repository-wide scan finds 35 unique lesson-linked scenarios and zero missing local scenario targets; three additional Unit 1 scenario files remain documented orphans.
 
----
-
 ## Topic 2.6 Rebuild, Step 0 Gate (2026-09-28)
-
-`beintheroom/unit-2/the-plague-ships.html` replaces `plague-europe.html` as the linked Topic 2.6 scenario. It is built on the shared v2 renderer in story mode (`"mode": "story"`). `plague-europe.html` stays on disk, unlinked, as the rollback; the 2026-07-15 row above is retained as the audit of that file.
 
 | Topic | Scenario | CED theme and dilemma | Verdict |
 |---|---|---|---|
 | 2.6 Environmental Consequences of Connectivity | `unit-2/the-plague-ships.html` | ENV: students decide how open a port stays when trade networks carry disease, then whether to reopen trade that also carries food and crops. | PASS |
 
-**Transplant test:** The dilemma depends on trade connectivity carrying both pathogens and crops, so it cannot move to the 1918 influenza scenario (`unit-9/influenza-1918.html`) or Topic 1.6 unchanged.
+**Transplant test:** The dilemma depends on trade connectivity carrying both pathogens and crops, so it cannot move to the 1918 influenza scenario (`unit-9/influenza-1918.html`) or Topic 1.6 unchanged. Moving it would require replacing the Afro-Eurasian trade routes, the crop diffusion evidence, and the reopening decision, not merely renaming people or places.
+
+**Supersedes:** the 2026-07-15 row for `plague-europe.html` as the linked Topic 2.6 scenario. That file stays on disk, unlinked, as the rollback: pointing `beInTheRoom.url` in `assets/data/lesson-2-6-renderer-config.js` back at `../beintheroom/unit-2/plague-europe.html` restores it.
+
+**Build note:** `the-plague-ships.html` is the first v2 scenario with `"mode": "story"`, which locks each choice before showing its costs and consequence, releases decisions one at a time, and seals a historical record until the student has argued a case. The other v2 scenarios do not set the mode and render as before.

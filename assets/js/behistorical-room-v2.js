@@ -329,124 +329,172 @@
 
   // ── STORY MODE ──────────────────────────────────────────────────────────────
   //
-  // Opt-in, per scenario, with "mode": "story" in its config. Every other v2
-  // scenario takes render() above and never reaches a line of this section.
+  // Opt-in, per scenario, with "mode": "story" in its config. Everything above
+  // this line is the path the other v2 scenarios take, and story mode shares
+  // only its read-only helpers (esc, the role and evidence cards, the selected*
+  // lookups, the MagicSchool resolver). Nothing below is reachable unless the
+  // scenario asks for it.
   //
-  // What is different, and why:
-  //   - Options show only a title and an action. The costs (benefits, worries,
-  //     tradeoff) stay hidden until the student locks a choice in, so the
-  //     student decides on the history in front of them rather than on a
-  //     printed answer to "which option has the smallest downside".
-  //   - A locked choice cannot be changed, and it produces a consequence.
-  //   - Decisions arrive one at a time, so decision 2 is a reaction to
-  //     decision 1 rather than a row on a worksheet.
+  // What story mode changes, and why:
+  //   - A choice is tentative until the student locks it in. Only then do its
+  //     costs (benefits, worries, tradeoff) and its historical consequence
+  //     appear, so a student chooses on the situation rather than on a card
+  //     that has already told them which option is expensive.
+  //   - Decisions arrive one at a time. Decision N+1 stays hidden until N is
+  //     locked, and a locked decision cannot be changed.
   //   - The historical record is sealed until the student has argued a case,
-  //     so they commit before they can compare.
+  //     so the record answers the argument instead of replacing it.
   //
-  // Capture has one rule here, and it is stricter than save() above: the
-  // topic-keyed reflection is written ONLY from the reflection box's own input
-  // event. save() above writes it on every click, which is safe there because
-  // state.reflection always mirrors the box, but a page load or a role click
-  // must never be able to write an empty reflection over a stored one. See
-  // assets/js/behistorical-beintheroom-capture.js.
-
-  let storyPending = {};
-
-  function storyNormalize() {
-    if (!state.locked || typeof state.locked !== 'object') state.locked = {};
-    state.revealed = state.revealed === true;
-    // A locked id the config no longer offers is not a lock.
-    scenario.decisions.forEach(decision => {
-      const id = state.locked[decision.id];
-      if (id && !decision.options.some(option => option.id === id)) delete state.locked[decision.id];
-    });
-    // The topic-keyed capture is the store the lesson page reads. If this
-    // page's own state has no reflection and the store does, show the student
-    // what Gather All My Work will carry. Reading only: nothing is written here.
-    if (!String(state.reflection || '').trim() && window.BHBeInTheRoomCapture) {
-      const stored = window.BHBeInTheRoomCapture.read(scenario.id);
-      if (stored && stored.a) state.reflection = String(stored.a);
-    }
-  }
+  // THE CAPTURE KEY IS WRITTEN FROM ONE PLACE: the reflection box's input
+  // event. save() above writes it on every save, which is fine for the other
+  // v2 scenarios, but in story mode a click on a role card must never be able
+  // to overwrite a stored reflection with an empty one. storySave() therefore
+  // writes this page's own state and nothing else.
 
   function storySave() {
-    try { localStorage.setItem(storageKey, JSON.stringify(state)); } catch { /* storage blocked */ }
-    updateStoryProgress();
+    try { localStorage.setItem(storageKey, JSON.stringify(state)); }
+    catch { /* Private browsing, or storage blocked: the page still works. */ }
+    storyUpdateProgress();
   }
 
-  function storyOption(decision) {
-    return decision.options.find(item => item.id === state.locked[decision.id]) || null;
+  function storyLockedOption(decision) {
+    const id = state.locked[decision.id];
+    return id ? decision.options.find(option => option.id === id) : undefined;
   }
 
   function storyAllLocked() {
-    return scenario.decisions.every(decision => state.locked[decision.id]);
+    return scenario.decisions.every(decision => storyLockedOption(decision));
   }
 
-  function storyRoleCard(role) {
-    const pressed = state.role === role.id;
-    return `<button class="room-choice" type="button" data-story-role="${esc(role.id)}" aria-pressed="${pressed}">
-      <span class="room-choice-title">${esc(role.name)}</span>
-      <span class="room-choice-summary">${esc(role.position)}</span>
-    </button>`;
-  }
-
-  function storyEvidenceCard(item) {
-    const pressed = state.evidence.includes(item.id);
-    return `<button class="room-choice room-evidence" type="button" data-story-evidence="${esc(item.id)}" aria-pressed="${pressed}">
-      <span class="room-choice-title">${esc(item.label)}</span>
-      <span class="room-choice-summary">${esc(item.text)}</span>
-    </button>`;
+  // The decisions a student can see: every locked one, plus the first one not
+  // yet locked.
+  function storyVisibleDecisions() {
+    const visible = [];
+    for (const decision of scenario.decisions) {
+      visible.push(decision);
+      if (!storyLockedOption(decision)) break;
+    }
+    return visible;
   }
 
   function storyOptionCard(decision, option) {
-    const lockedId = state.locked[decision.id];
-    const pressed = lockedId ? lockedId === option.id : storyPending[decision.id] === option.id;
-    return `<button class="room-choice room-story-option" type="button" data-story-decision="${esc(decision.id)}" data-story-option="${esc(option.id)}" aria-pressed="${pressed}"${lockedId ? ' disabled' : ''}>
+    const locked = storyLockedOption(decision);
+    const pressed = locked ? locked.id === option.id : state.decisions[decision.id] === option.id;
+    return `<button class="room-choice" type="button" data-story-decision="${esc(decision.id)}" data-story-option="${esc(option.id)}" aria-pressed="${pressed}"${locked ? ' disabled' : ''}>
       <span class="room-choice-title">${esc(option.title)}</span>
       <span class="room-choice-summary">${esc(option.action)}</span>
     </button>`;
   }
 
-  function storyResult(decision) {
-    const option = storyOption(decision);
-    if (!option) return '';
-    return `<div class="room-story-result" id="story-result-${esc(decision.id)}" tabindex="-1">
-      <div class="room-story-result-head"><span class="room-card-label">You locked in</span><strong>${esc(option.title)}</strong></div>
+  function storyResult(decision, option) {
+    return `<div class="room-story-result" id="story-result-${esc(decision.id)}" tabindex="-1" aria-label="What your choice set in motion">
+      <div class="room-story-locked-label">You locked in: ${esc(option.title)}</div>
       <div class="room-story-costs">
         <p><strong>Who benefits:</strong> ${esc(option.benefits)}</p>
         <p><strong>Who worries:</strong> ${esc(option.worries)}</p>
         <p><strong>Tradeoff:</strong> ${esc(option.tradeoff)}</p>
       </div>
-      ${option.consequence ? `<div class="room-story-next"><span class="room-card-label">What happens next</span><p>${esc(option.consequence)}</p></div>` : ''}
+      <div class="room-story-next">
+        <span class="room-card-label">What happens next</span>
+        <p>${esc(option.consequence)}</p>
+      </div>
     </div>`;
   }
 
   function storyDecision(decision, index) {
-    const locked = Boolean(state.locked[decision.id]);
-    const scene = decision.scene && Array.isArray(decision.scene.text) ? decision.scene : null;
-    return `<div class="room-story-beat" id="story-beat-${esc(decision.id)}" data-story-index="${index}">
-      ${scene ? `<div class="room-story-scene">
-        ${scene.kicker ? `<div class="room-story-scene-kicker">${esc(scene.kicker)}</div>` : ''}
-        ${scene.text.map(p => `<p>${esc(p)}</p>`).join('')}
-      </div>` : ''}
-      <article class="room-decision">
-        <h3>Decision ${index + 1} of ${scenario.decisions.length}: ${esc(decision.title)}</h3>
-        <p class="room-decision-prompt">${esc(decision.prompt)}</p>
-        <div class="room-grid" id="story-options-${esc(decision.id)}">${decision.options.map(option => storyOptionCard(decision, option)).join('')}</div>
-        ${locked ? '' : `<div class="room-actions room-story-lock-row">
-          <button class="room-button" type="button" data-story-lock="${esc(decision.id)}"${storyPending[decision.id] ? '' : ' disabled'}>Lock it in</button>
-          <span class="room-story-lock-hint">Once you lock it in, you cannot change it.</span>
-        </div>`}
-        ${storyResult(decision)}
-      </article>
-    </div>`;
+    const locked = storyLockedOption(decision);
+    const selected = state.decisions[decision.id];
+    const scene = decision.scene ? `<div class="room-story-scene">
+        <div class="room-story-scene-kicker">${esc(decision.scene.kicker)}</div>
+        ${(decision.scene.text || []).map(p => `<p>${esc(p)}</p>`).join('')}
+      </div>` : '';
+    const lock = locked ? storyResult(decision, locked) : `<div class="room-story-lock">
+        <button class="room-button" type="button" data-story-lock="${esc(decision.id)}"${selected ? '' : ' disabled'}>Lock it in</button>
+        <span class="room-story-lock-hint">${selected ? 'Once you lock it in, you cannot change it.' : 'Tap a choice first.'}</span>
+      </div>`;
+    return `${scene}<article class="room-decision" id="story-decision-${esc(decision.id)}">
+      <h3>${index + 1}. ${esc(decision.title)}</h3>
+      <p class="room-decision-prompt">${esc(decision.prompt)}</p>
+      <div class="room-grid" role="group" aria-label="${esc(decision.title)}">${decision.options.map(option => storyOptionCard(decision, option)).join('')}</div>
+      ${lock}
+    </article>`;
   }
 
-  function renderStory() {
-    storyNormalize();
+  function storyRenderDecisions() {
+    document.getElementById('story-decisions').innerHTML = storyVisibleDecisions().map(storyDecision).join('');
+  }
+
+  function storyRecord() {
+    const record = scenario.record || { intro: '', items: [] };
+    const yours = scenario.decisions.map(decision => {
+      const option = storyLockedOption(decision);
+      return `<li><strong>${esc(decision.title)}:</strong> ${esc(option ? option.title : 'Not locked in')}</li>`;
+    }).join('');
+    return `<p class="room-intro">${esc(record.intro)}</p>
+      <div class="room-story-yours"><span class="room-card-label">Your decisions</span><ul>${yours}</ul></div>
+      ${(record.items || []).map(item => `<div class="room-story-record-item"><h3>${esc(item.label)}</h3><p>${esc(item.text)}</p></div>`).join('')}`;
+  }
+
+  function storyRenderRecord() {
+    const body = document.getElementById('story-record-body');
+    const seal = document.getElementById('story-record-seal');
+    if (state.revealed) {
+      seal.hidden = true;
+      body.hidden = false;
+      body.innerHTML = storyRecord();
+      return;
+    }
+    body.hidden = true;
+    seal.hidden = false;
+    const ready = Boolean(state.argument.trim());
+    const button = document.getElementById('story-open-record');
+    button.disabled = !ready;
+    document.getElementById('story-record-hint').textContent = ready
+      ? 'Your case is on the table. The record is ready.'
+      : 'The record stays sealed until you write your case in step 4.';
+  }
+
+  function storyUpdateGates() {
+    const done = storyAllLocked();
+    ['story-case-section', 'coach-section', 'story-record-section'].forEach(id => {
+      document.getElementById(id).hidden = !done;
+    });
+    document.getElementById('reflection-section').hidden = !(done && state.revealed);
+  }
+
+  function storyRoleDetail() {
+    const container = document.getElementById('room-role-detail');
+    const role = selectedRole();
+    if (!role) { container.innerHTML = ''; return; }
+    container.innerHTML = `<div class="room-detail"><h3>${esc(role.name)}</h3><div class="room-detail-grid">
+      <p><strong>Power and limits:</strong> ${esc(role.power)}</p><p><strong>Goals:</strong> ${esc(role.goals)}</p>
+      <p><strong>Fears:</strong> ${esc(role.fears)}</p><p><strong>Historical lens:</strong> ${esc(role.lens)}</p>
+      <p><strong>Blind spot or tension:</strong> ${esc(role.blindSpot)}</p>
+    </div></div>`;
+  }
+
+  function storyUpdateProgress() {
+    const checks = [state.role, state.evidence.length >= 2, storyAllLocked(), state.argument.trim(), state.revealed, state.reflection.trim()];
+    const value = Math.round((checks.filter(Boolean).length / checks.length) * 100);
+    const fill = document.getElementById('room-progress-fill');
+    if (fill) fill.style.width = `${value}%`;
+    const label = document.getElementById('room-progress-label');
+    if (label) label.textContent = 'Your work saves on this device';
+  }
+
+  function storyRender() {
+    state.locked = (state.locked && typeof state.locked === 'object') ? state.locked : {};
+    state.decisions = (state.decisions && typeof state.decisions === 'object') ? state.decisions : {};
+    state.revealed = state.revealed === true;
+    // A stored reflection with no page state behind it (a cleared page key, a
+    // second visit after the draft was lost) is put back in the box, read only.
+    if (!state.reflection.trim() && window.BHBeInTheRoomCapture) {
+      const saved = window.BHBeInTheRoomCapture.read(scenario.id);
+      if (saved && saved.a) state.reflection = saved.a;
+    }
+
     const title = scenario.title.replace(/\*([^*]+)\*/g, '<em>$1</em>');
     app.innerHTML = `
-      <div class="room-story">
       <nav class="room-topbar">
         <span class="room-brand">BeInTheRoom</span>
         <a class="room-back" href="${esc(scenario.lessonUrl)}">← Return to Topic ${esc(scenario.id)}</a>
@@ -460,40 +508,37 @@
           <div class="room-dilemma"><strong>The question in the room:</strong> ${esc(scenario.centralQuestion)}</div>
         </div>
       </header>
-      <main class="room-main">
+      <main class="room-main room-story">
         <div class="room-progress"><div class="room-progress-fill" id="room-progress-fill"></div></div>
-        <div class="room-progress-label" id="room-progress-label">Your work saves on this device</div>
+        <div class="room-progress-label" id="room-progress-label"></div>
 
         <section class="room-section" id="role-section">
-          <div class="room-step"><span class="room-step-num">1</span><span class="room-step-label">Choose a historical perspective</span></div>
-          <p class="room-intro">Each role has real influence, real limits, and a blind spot. Choose the perspective you will defend.</p>
-          <div class="room-grid" id="room-roles">${scenario.roles.map(storyRoleCard).join('')}</div>
+          <div class="room-step"><span class="room-step-num">1</span><span class="room-step-label">Choose who you are</span></div>
+          <p class="room-intro">Each role has real influence, real limits, and a blind spot. Choose the person you will be in this city.</p>
+          <div class="room-grid" id="room-roles">${scenario.roles.map(roleCard).join('')}</div>
           <div id="room-role-detail"></div>
         </section>
 
         <section class="room-section" id="evidence-section">
           <div class="room-step"><span class="room-step-num">2</span><span class="room-step-label">Examine and select evidence</span></div>
-          <p class="room-intro">Select at least two evidence cards. Strong recommendations connect facts to the role's goals and the decision's tradeoffs.</p>
-          <div class="room-evidence-grid" id="room-evidence">${scenario.evidence.map(storyEvidenceCard).join('')}</div>
+          <p class="room-intro">Select at least two evidence cards. You will lean on them when you make your case.</p>
+          <div class="room-evidence-grid" id="room-evidence">${scenario.evidence.map(evidenceCard).join('')}</div>
           <div class="room-counter" id="room-evidence-count"></div>
         </section>
 
         <section class="room-section" id="decision-section">
           <div class="room-step"><span class="room-step-num">3</span><span class="room-step-label">Make the decisions</span></div>
-          <p class="room-intro">Choose one option, then lock it in. You will see what it cost only after you commit, and the next decision will not wait for you to feel certain.</p>
-          <div id="story-decisions">${scenario.decisions.map(storyDecision).join('')}</div>
+          <p class="room-intro">Decisions come one at a time. Tap a choice, then lock it in. You will not see what it costs until you commit, and you cannot take it back.</p>
+          <div id="story-decisions"></div>
         </section>
 
-        <section class="room-section" id="case-section">
+        <section class="room-section" id="story-case-section" hidden>
           <div class="room-step"><span class="room-step-num">4</span><span class="room-step-label">Make your case</span></div>
-          <p class="room-story-sealed" id="story-case-sealed">This opens after you lock in all ${scenario.decisions.length} decisions.</p>
-          <div class="room-field" id="story-case-field">
-            <label for="story-argument">Your historically defensible recommendation</label>
-            <textarea id="story-argument" placeholder="Speaking as your role, say which of your decisions mattered most and why. Use at least two pieces of evidence you selected.">${esc(state.argument)}</textarea>
-          </div>
+          <p class="room-intro">You have lived with your three decisions. Now defend them.</p>
+          <div class="room-field"><label for="room-argument">Your historically defensible recommendation</label><textarea id="room-argument" placeholder="State what your role recommends, explain why, and use specific selected evidence.">${esc(state.argument)}</textarea></div>
         </section>
 
-        <section class="room-section" id="coach-section">
+        <section class="room-section" id="coach-section" hidden>
           <div class="room-step"><span class="room-step-num">5</span><span class="room-step-label">Bring Socrates into the room</span></div>
           <p class="room-intro">Build a prompt that puts your decision in front of Socrates, the same coach you work with at a checkpoint. He will test your reasoning here, not write your argument for you.</p>
           <div class="room-actions">
@@ -505,12 +550,16 @@
           <div class="room-prompt" id="room-prompt" tabindex="0">Your prompt will appear here after your selections and draft are complete.</div>
         </section>
 
-        <section class="room-section" id="record-section">
+        <section class="room-section" id="story-record-section" hidden>
           <div class="room-step"><span class="room-step-num">6</span><span class="room-step-label">The historical record</span></div>
-          <div id="story-record"></div>
+          <div class="room-story-seal" id="story-record-seal">
+            <p class="room-story-seal-hint" id="story-record-hint"></p>
+            <button class="room-button" id="story-open-record" type="button">Open the historical record</button>
+          </div>
+          <div class="room-story-record" id="story-record-body" tabindex="-1" hidden></div>
         </section>
 
-        <section class="room-section room-reflection" id="reflection-section">
+        <section class="room-section room-reflection" id="reflection-section" hidden>
           <div class="room-step"><span class="room-step-num">7</span><span class="room-step-label">Step out of the room</span></div>
           <p class="room-intro">${esc(scenario.reflectionPrompt)}</p>
           <div class="room-field"><label for="room-reflection">AP reflection</label><textarea id="room-reflection" placeholder="Step out of character and explain what this dilemma reveals about Topic ${esc(scenario.id)}.">${esc(state.reflection)}</textarea></div>
@@ -520,66 +569,73 @@
 
         <details class="room-story-alignment">
           <summary>For your teacher: AP alignment</summary>
-          <div class="room-story-alignment-grid">
+          <section class="room-standard" aria-label="AP alignment">
             <div class="room-standard-item"><span class="room-card-label">Thematic focus</span><p>${esc(scenario.alignment.theme)}</p></div>
             <div class="room-standard-item"><span class="room-card-label">Learning objective</span><p>${esc(scenario.alignment.objective)}</p></div>
             <div class="room-standard-item"><span class="room-card-label">Reasoning skill</span><p>${esc(scenario.alignment.skill)}</p></div>
             <div class="room-standard-item"><span class="room-card-label">Key concepts</span><p>${esc(scenario.alignment.keyConcepts.join(' · '))}</p></div>
-          </div>
+          </section>
         </details>
       </main>
-      <footer class="room-footer">BeHistorical · BeInTheRoom · Topic ${esc(scenario.id)}</footer>
-      </div>`;
+      <footer class="room-footer">BeHistorical · BeInTheRoom · Topic ${esc(scenario.id)}</footer>`;
 
+    storyRenderDecisions();
     storyBind();
-    updateStoryRoleDetail();
+    storyRoleDetail();
     updateEvidenceCount();
-    updateStoryDecisions();
-    updateStoryCase();
-    renderStoryRecord();
-    updateStoryProgress();
+    storyRenderRecord();
+    storyUpdateGates();
+    storyUpdateProgress();
   }
 
   function storyBind() {
-    document.querySelectorAll('[data-story-role]').forEach(button => button.addEventListener('click', () => {
-      state.role = button.dataset.storyRole;
-      document.querySelectorAll('[data-story-role]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
-      updateStoryRoleDetail();
+    document.querySelectorAll('[data-role]').forEach(button => button.addEventListener('click', () => {
+      state.role = button.dataset.role;
+      document.querySelectorAll('[data-role]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+      storyRoleDetail();
       storySave();
     }));
 
-    document.querySelectorAll('[data-story-evidence]').forEach(button => button.addEventListener('click', () => {
-      const id = button.dataset.storyEvidence;
+    document.querySelectorAll('[data-evidence]').forEach(button => button.addEventListener('click', () => {
+      const id = button.dataset.evidence;
       state.evidence = state.evidence.includes(id) ? state.evidence.filter(item => item !== id) : [...state.evidence, id];
       button.setAttribute('aria-pressed', String(state.evidence.includes(id)));
       updateEvidenceCount();
       storySave();
     }));
 
-    // Delegated, because a lock replaces the lock row with the result panel.
-    document.getElementById('story-decisions').addEventListener('click', event => {
+    // Decision cards are re-rendered on every lock, so their clicks are
+    // delegated to the container rather than bound per card.
+    const decisions = document.getElementById('story-decisions');
+    decisions.addEventListener('click', event => {
       const option = event.target.closest('[data-story-option]');
       if (option && !option.disabled) {
         const decisionId = option.dataset.storyDecision;
-        if (state.locked[decisionId]) return;
-        storyPending[decisionId] = option.dataset.storyOption;
-        document.querySelectorAll(`[data-story-decision="${decisionId}"]`).forEach(item => item.setAttribute('aria-pressed', String(item === option)));
-        const lock = document.querySelector(`[data-story-lock="${decisionId}"]`);
-        if (lock) lock.disabled = false;
+        const decision = scenario.decisions.find(item => item.id === decisionId);
+        if (!decision || storyLockedOption(decision)) return;
+        state.decisions[decisionId] = option.dataset.storyOption;
+        decisions.querySelectorAll(`[data-story-decision="${decisionId}"]`).forEach(item => item.setAttribute('aria-pressed', String(item === option)));
+        const lock = decisions.querySelector(`[data-story-lock="${decisionId}"]`);
+        if (lock) {
+          lock.disabled = false;
+          lock.nextElementSibling.textContent = 'Once you lock it in, you cannot change it.';
+        }
+        storySave();
         return;
       }
       const lock = event.target.closest('[data-story-lock]');
-      if (lock && !lock.disabled) lockStoryDecision(lock.dataset.storyLock);
+      if (lock && !lock.disabled) storyLock(lock.dataset.storyLock);
     });
 
-    const argument = document.getElementById('story-argument');
+    const argument = document.getElementById('room-argument');
     argument.addEventListener('input', () => {
       state.argument = argument.value;
       storySave();
-      renderStoryRecord();
+      storyRenderRecord();
     });
 
-    // The one place the topic-keyed reflection is written in story mode.
+    // The one place the capture key is written. See the note at the top of
+    // this section.
     const reflection = document.getElementById('room-reflection');
     reflection.addEventListener('input', () => {
       state.reflection = reflection.value;
@@ -589,124 +645,49 @@
       }
     });
 
-    document.getElementById('room-build-prompt').addEventListener('click', buildStoryPrompt);
-    document.getElementById('room-copy-prompt').addEventListener('click', copyStoryPrompt);
-  }
-
-  function lockStoryDecision(decisionId) {
-    const decision = scenario.decisions.find(item => item.id === decisionId);
-    const optionId = storyPending[decisionId];
-    if (!decision || !optionId || state.locked[decisionId]) return;
-    if (!decision.options.some(option => option.id === optionId)) return;
-    state.locked[decisionId] = optionId;
-    delete storyPending[decisionId];
-    storySave();
-
-    const beat = document.getElementById(`story-beat-${decisionId}`);
-    const index = scenario.decisions.indexOf(decision);
-    const holder = document.createElement('div');
-    holder.innerHTML = storyDecision(decision, index);
-    beat.replaceWith(holder.firstElementChild);
-
-    updateStoryDecisions();
-    updateStoryCase();
-    const panel = document.getElementById(`story-result-${decisionId}`);
-    if (panel) {
-      panel.focus({ preventScroll: true });
-      panel.scrollIntoView({ block: 'start' });
-    }
-  }
-
-  // Decision N+1 stays hidden until decision N is locked.
-  function updateStoryDecisions() {
-    let open = true;
-    scenario.decisions.forEach(decision => {
-      const beat = document.getElementById(`story-beat-${decision.id}`);
-      if (beat) beat.hidden = !open;
-      if (!state.locked[decision.id]) open = false;
+    document.getElementById('story-open-record').addEventListener('click', () => {
+      if (!state.argument.trim()) return;
+      state.revealed = true;
+      storySave();
+      storyRenderRecord();
+      storyUpdateGates();
+      const body = document.getElementById('story-record-body');
+      body.focus({ preventScroll: true });
+      document.getElementById('story-record-section').scrollIntoView({ behavior: storyScrollBehavior(), block: 'start' });
     });
+
+    document.getElementById('room-build-prompt').addEventListener('click', storyBuildPrompt);
+    document.getElementById('room-copy-prompt').addEventListener('click', storyCopyPrompt);
   }
 
-  function updateStoryCase() {
-    const ready = storyAllLocked();
-    document.getElementById('story-case-sealed').hidden = ready;
-    document.getElementById('story-case-field').hidden = !ready;
+  function storyScrollBehavior() {
+    try { return window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'; }
+    catch { return 'auto'; }
   }
 
-  function updateStoryRoleDetail() {
-    const container = document.getElementById('room-role-detail');
-    const role = scenario.roles.find(item => item.id === state.role);
-    if (!role) { container.innerHTML = ''; return; }
-    container.innerHTML = `<div class="room-detail"><h3>${esc(role.name)}</h3><div class="room-detail-grid">
-      <p><strong>Power and limits:</strong> ${esc(role.power)}</p><p><strong>Goals:</strong> ${esc(role.goals)}</p>
-      <p><strong>Fears:</strong> ${esc(role.fears)}</p><p><strong>Historical lens:</strong> ${esc(role.lens)}</p>
-      <p><strong>Blind spot or tension:</strong> ${esc(role.blindSpot)}</p>
-    </div></div>`;
-  }
-
-  function renderStoryRecord() {
-    const container = document.getElementById('story-record');
-    const record = scenario.record || { intro: '', items: [] };
-    if (state.revealed) {
-      if (container.dataset.state === 'open') return;
-      container.dataset.state = 'open';
-      const choices = scenario.decisions.map(decision => {
-        const option = storyOption(decision);
-        return `<li><strong>${esc(decision.title)}:</strong> ${option ? esc(option.title) : 'Not locked in'}</li>`;
-      }).join('');
-      container.innerHTML = `<div class="room-story-record" id="story-record-open" tabindex="-1">
-        ${record.intro ? `<p class="room-story-record-intro">${esc(record.intro)}</p>` : ''}
-        <div class="room-story-record-item"><span class="room-card-label">Your decisions</span><ul class="room-story-choices">${choices}</ul></div>
-        ${(record.items || []).map(item => `<div class="room-story-record-item"><span class="room-card-label">${esc(item.label)}</span><p>${esc(item.text)}</p></div>`).join('')}
-      </div>`;
-      return;
+  function storyLock(decisionId) {
+    const decision = scenario.decisions.find(item => item.id === decisionId);
+    if (!decision || storyLockedOption(decision)) return;
+    const choice = decision.options.find(option => option.id === state.decisions[decisionId]);
+    if (!choice) return;
+    state.locked[decisionId] = choice.id;
+    storySave();
+    storyRenderDecisions();
+    storyUpdateGates();
+    const result = document.getElementById(`story-result-${decisionId}`);
+    if (result) {
+      result.focus({ preventScroll: true });
+      result.scrollIntoView({ behavior: storyScrollBehavior(), block: 'start' });
     }
-    const ready = Boolean(String(state.argument || '').trim());
-    if (container.dataset.state !== 'sealed') {
-      container.dataset.state = 'sealed';
-      container.innerHTML = `<div class="room-story-seal">
-        <p id="story-record-note"></p>
-        <div class="room-actions"><button class="room-button" type="button" id="story-record-open-button">Open the historical record</button></div>
-      </div>`;
-      document.getElementById('story-record-open-button').addEventListener('click', () => {
-        if (!String(state.argument || '').trim()) return;
-        state.revealed = true;
-        storySave();
-        renderStoryRecord();
-        const opened = document.getElementById('story-record-open');
-        if (opened) {
-          opened.focus({ preventScroll: true });
-          opened.scrollIntoView({ block: 'start' });
-        }
-      });
-    }
-    document.getElementById('story-record-open-button').disabled = !ready;
-    document.getElementById('story-record-note').textContent = ready
-      ? 'Your case is written. Open the record to see what actually happened.'
-      : 'The record stays sealed until you have made your case above.';
   }
 
-  function storyCompletion() {
-    const checks = [state.role, state.evidence.length >= 2, storyAllLocked(), String(state.argument || '').trim(), state.revealed, String(state.reflection || '').trim()];
-    return Math.round((checks.filter(Boolean).length / checks.length) * 100);
-  }
-
-  function updateStoryProgress() {
-    document.getElementById('room-progress-fill').style.width = `${storyCompletion()}%`;
-    document.getElementById('room-progress-label').textContent = 'Your work saves on this device';
-  }
-
-  function storyLockedDecisions() {
-    return scenario.decisions.map(decision => ({ decision, option: storyOption(decision) })).filter(item => item.option);
-  }
-
-  function buildStoryPrompt() {
+  function storyBuildPrompt() {
     const status = document.getElementById('room-status');
     const missing = [];
     if (!state.role) missing.push('choose a role');
     if (state.evidence.length < 2) missing.push('select at least two evidence cards');
     if (!storyAllLocked()) missing.push('lock in every decision');
-    if (!String(state.argument || '').trim()) missing.push('make your case');
+    if (!state.argument.trim()) missing.push('draft your recommendation');
     if (missing.length) {
       status.classList.remove('success');
       status.textContent = `Before building: ${missing.join('; ')}.`;
@@ -715,20 +696,25 @@
 
     const role = selectedRole();
     const facts = selectedEvidence().map(item => `- ${item.label}: ${item.text}`);
-    const decisions = storyLockedDecisions().map(item => `- ${item.decision.title}: ${item.option.title}, ${item.option.action}`);
-    // Same paste as buildPrompt() above, with the tradeoff and opposition
-    // sections replaced by one sentence, because story mode has no boxes for
-    // them. The last line stays byte-identical to what a checkpoint sends.
+    const decisions = scenario.decisions.map(decision => ({ decision, option: storyLockedOption(decision) }))
+      .map(item => `- ${item.decision.title}: ${item.option.title}, ${item.option.action}`);
+    // Every line here matches buildPrompt() above except two: the tradeoff and
+    // opposition sections are gone, because story mode does not ask for them,
+    // and the line before "Coach me on one thing" tells Socrates where to push
+    // instead. The last line must stay byte-identical to buildPrompt()'s, which
+    // is byte-identical to what a checkpoint sends; scripts/test/
+    // room-v2-story.test.js compares the two in a browser.
     const prompt = `Socrates, I am in a BeInTheRoom simulation and you are in the room with me. Push me to explain because, not just name facts.\n\nScenario: ${scenario.title.replaceAll('*', '')}\nTopic: ${scenario.id}, ${scenario.topicTitle}\nCentral dilemma: ${scenario.centralQuestion}\n\nMy role: ${role.name}\nPower and limits: ${role.power}\nGoals: ${role.goals}\nFears: ${role.fears}\nBlind spot: ${role.blindSpot}\n\nMy decisions:\n${decisions.join('\n')}\n\nMy selected evidence:\n${facts.join('\n')}\n\nMy first draft:\n${state.argument}\n\nI did not write out a tradeoff or an opposing view separately. If the weakest part of my argument is a cost I ignored or a role that would fight me, push me there.\n\nCoach me on one thing: is my decision defensible given my role, my evidence, and the tradeoff I accepted? Name the weakest part of it and tell me what to revise. I am aiming for a stronger 4 to 6 sentence historically grounded argument.\n\nAfter I revise once, tell me whether it holds. When it does, I will step out of character and explain what this scenario reveals about Topic ${scenario.id}. That reflection is the box at the end of this scenario, and it is what reaches Canvas through Gather All My Work on the lesson page.\n\nGive me one thing to work on at a time. Do not write my final answer for me.`;
     document.getElementById('room-prompt').textContent = prompt;
     status.classList.add('success');
     status.textContent = 'Prompt built. Read it once, then copy it to Socrates.';
+    storySave();
   }
 
-  async function copyStoryPrompt() {
+  async function storyCopyPrompt() {
     const prompt = document.getElementById('room-prompt').textContent;
     const status = document.getElementById('room-status');
-    if (prompt.startsWith('Your prompt')) { buildStoryPrompt(); return; }
+    if (prompt.startsWith('Your prompt')) { storyBuildPrompt(); return; }
     try {
       await navigator.clipboard.writeText(prompt);
       status.classList.add('success');
@@ -743,6 +729,6 @@
     }
   }
 
-  if (scenario.mode === 'story') renderStory();
+  if (scenario.mode === 'story') storyRender();
   else render();
 })();
