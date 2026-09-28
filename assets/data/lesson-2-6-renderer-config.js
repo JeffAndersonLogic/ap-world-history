@@ -34,7 +34,7 @@
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-2/plague-europe.html',
+    url: '../beintheroom/unit-2/the-plague-ships.html',
     desc: 'Enter a plague-struck port city as one case study in the pathogen side of a larger ecological story about living things moving through trade networks.'
   };
 

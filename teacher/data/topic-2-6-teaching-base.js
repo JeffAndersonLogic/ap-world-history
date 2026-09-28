@@ -53,7 +53,7 @@ window.BEHISTORICAL_TEACHING = {
   quickLaunch: [
     { label: 'Student Lesson 2.6', url: '../unit-2/lesson-2-6-environmental-consequences.html' },
     { label: 'First & 10', url: '../unit-2/first-and-10-topic-2-6-environmental-consequences-capture.html?v=feed-kill-v1' },
-    { label: 'BeInTheRoom: Plague Europe', url: '../beintheroom/unit-2/plague-europe.html' },
+    { label: 'BeInTheRoom: The Plague Ships', url: '../beintheroom/unit-2/the-plague-ships.html' },
     { label: 'Deep Reading', url: '../unit-2/deep-reading-topic-2-6-environmental-consequences.html' },
     { label: 'Heimler 2.6 Review', url: 'https://youtu.be/PKQzXPAAFBA' }
   ],

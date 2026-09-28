@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Plague Ships | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "2.6",
+  "unit": "2",
+  "topicTitle": "Environmental Consequences of Connectivity",
+  "file": "the-plague-ships.html",
+  "title": "The *Plague Ships*",
+  "location": "A Mediterranean port city",
+  "date": "1347 to 1351",
+  "lessonUrl": "../../unit-2/lesson-2-6-environmental-consequences.html",
+  "mode": "story",
+  "alignment": {
+    "theme": "Humans and the Environment (ENV)",
+    "objective": "Explain the environmental effects of the various networks of exchange in Afro-Eurasia from c. 1200 to c. 1450.",
+    "skill": "Causation and argumentation",
+    "keyConcepts": [
+      "KC-3.1.IV",
+      "Disease and crop diffusion along trade networks",
+      "Demographic consequences of the Black Death"
+    ]
+  },
+  "premise": [
+    "October 1347. Twelve Genoese galleys have just rowed into your harbor from the Black Sea. Most of the sailors are dead or dying, covered in black swellings. These ships sailed the same routes that bring your city its silk, spices, and grain.",
+    "No one in your city knows what this sickness is. Physicians blame corrupted air. Preachers call it God's judgment. Rumors are already moving along the docks.",
+    "Over the next four years you will face three decisions. Nothing you learn will come with certainty."
+  ],
+  "centralQuestion": "When the trade routes that feed your city start carrying death, how open should your city stay?",
+  "roles": [
+    {
+      "id": "official",
+      "name": "City Official",
+      "position": "You sit on the council that runs the port, the gates, and the grain supply.",
+      "power": "You can close the harbor and gates, ration grain, and hire guards, but every order costs the city money or loyalty.",
+      "goals": "Keep the city fed, orderly, and still standing when this ends.",
+      "fears": "Starvation if trade stops, riots if people panic, and a council too sick to govern.",
+      "lens": "My job is to keep this city working. If it stops working, more people die than the sickness kills.",
+      "preference": "Close what must be closed, but keep grain moving.",
+      "blindSpot": "You may protect the city's wealth and call it protecting its people."
+    },
+    {
+      "id": "physician",
+      "name": "Physician",
+      "position": "You trained in the medicine of Galen and Ibn Sina, and people are begging you for help.",
+      "power": "The council listens to you, but your theory of bad air and bodily humors cannot explain what you are seeing.",
+      "goals": "Treat the sick, find a cause, and stay alive long enough to keep working.",
+      "fears": "Catching it yourself, and giving advice that makes things worse.",
+      "lens": "We do not understand this. But doing nothing is also a choice.",
+      "preference": "Isolate the sick and cleanse the air, even without proof that either works.",
+      "blindSpot": "You may trust the books over what you see with your own eyes."
+    },
+    {
+      "id": "merchant",
+      "name": "Merchant",
+      "position": "Your family fortune rides on the ships from the east.",
+      "power": "You have contacts in every port, money to lend the council, and knowledge of how goods and people move.",
+      "goals": "Protect your family and business, and learn whether trade can ever be safe again.",
+      "fears": "Being blamed for the sickness, and losing everything if the harbor closes for good.",
+      "lens": "I carried goods from the east. I did not know I was carrying death. Does that matter?",
+      "preference": "Keep trade open with inspections, because a closed port starves slowly.",
+      "blindSpot": "You may count ships and profits more carefully than you count the dead."
+    },
+    {
+      "id": "priest",
+      "name": "Parish Priest",
+      "position": "You hear confessions, give last rites, and bury the dead.",
+      "power": "Your parish listens to you, and in a crisis people look to the Church for meaning and comfort.",
+      "goals": "Stay with the dying, explain the catastrophe, and keep your people's faith.",
+      "fears": "Dying before you can give the sacraments, and watching your people lose faith.",
+      "lens": "God permits suffering. Our task is to understand why and to stay with those who suffer.",
+      "preference": "Keep caregivers in the city and lead the people in prayer and penance.",
+      "blindSpot": "Crowded processions and bedside visits may spread what you are trying to heal."
+    },
+    {
+      "id": "laborer",
+      "name": "Farm Laborer",
+      "position": "You work the fields outside the walls that feed the city.",
+      "power": "Your labor feeds everyone, but lords and the council decide your wages and whether you may enter the city.",
+      "goals": "Keep your family alive and fed, and hold on to your land and work.",
+      "fears": "Sickness in your village, a harvest with no one to bring it in, and being locked out of the city market.",
+      "lens": "The city argues about ships. We worry about the harvest.",
+      "preference": "Keep the roads and markets open so food can move.",
+      "blindSpot": "The roads you need may also carry the sickness to your village."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "origins",
+      "label": "Plague from Central Asia",
+      "text": "The disease came from rodent populations in Central Asia and moved west along trade routes, reaching the Black Sea by 1346.",
+      "why": "Shows the sickness arrived through connection."
+    },
+    {
+      "id": "routes",
+      "label": "Connected Routes",
+      "text": "Mongol rule linked Afro-Eurasian trade routes, so goods, people, and diseases crossed huge distances faster than before.",
+      "why": "The connection that brought wealth also brought danger."
+    },
+    {
+      "id": "fleas",
+      "label": "Rats, Fleas, and Ships",
+      "text": "Historians now know plague spread through fleas on rats that rode in ships and grain stores, a cause no one in 1347 could see.",
+      "why": "Explains why closing gates to people may not stop it."
+    },
+    {
+      "id": "miasma",
+      "label": "What Physicians Believed",
+      "text": "Most physicians blamed corrupted air, called miasma, and treated patients with diet, bloodletting, and strong smells.",
+      "why": "Policy followed the best available theory, even a wrong one."
+    },
+    {
+      "id": "grain",
+      "label": "A City Fed by Sea",
+      "text": "Mediterranean port cities depended on grain shipped by sea, and Sicily was one of the region's great grain suppliers.",
+      "why": "Closing the harbor could mean hunger."
+    },
+    {
+      "id": "crops",
+      "label": "What Else the Routes Carried",
+      "text": "The same networks spread citrus into the Mediterranean, bananas into Africa, and new rice varieties in East Asia, supporting larger populations.",
+      "why": "Connectivity fed people as well as killed them."
+    },
+    {
+      "id": "cloth",
+      "label": "Suspicion of Goods",
+      "text": "Some cities feared the sickness traveled in used cloth and bedding, and burned it in public.",
+      "why": "Supports inspecting cargo, not just people."
+    },
+    {
+      "id": "caregivers",
+      "label": "Who Cares for the Sick",
+      "text": "Priests, physicians, and notaries had to visit the dying to hear confessions, treat them, and write their wills.",
+      "why": "Care exposed the caregivers."
+    },
+    {
+      "id": "granada",
+      "label": "An Observer in Granada",
+      "text": "In the years after 1349, the physician Ibn al-Khatib argued from observation that plague traveled with people and their belongings, including arrivals by sea at a healthy port.",
+      "why": "Evidence for isolating arrivals, not just cleansing the air."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "harbor",
+      "title": "The galleys in the harbor",
+      "prompt": "The sick sailors are still aboard. What does the city do with the ships?",
+      "options": [
+        {
+          "id": "expel",
+          "title": "Drive the ships out",
+          "action": "Order the galleys back to sea at once and forbid anyone to board them.",
+          "benefits": "The visible source of sickness leaves the harbor.",
+          "worries": "Merchants lose their cargo, and the ships will land somewhere else.",
+          "tradeoff": "You protect your city by pushing the danger onto another port.",
+          "consequence": "Messina drove the Genoese galleys out in October 1347. It was already too late. The sickness stayed in the city, and people fleeing Messina carried it across Sicily."
+        },
+        {
+          "id": "dock",
+          "title": "Let them dock and treat the sick",
+          "action": "Bring the sailors ashore for care and unload the cargo as usual.",
+          "benefits": "Sailors receive care, and the city keeps its trade and grain.",
+          "worries": "Everyone who touches the sick or the cargo is exposed.",
+          "tradeoff": "Compassion and commerce both open the door wider.",
+          "consequence": "In ports that kept unloading, the sickness moved from the docks into the neighborhoods within days. The cargo holds carried what no one could see: rats and fleas."
+        },
+        {
+          "id": "hold",
+          "title": "Keep crews aboard, unload grain only",
+          "action": "Anchor the ships offshore, keep the sailors aboard, and bring only grain ashore under guard.",
+          "benefits": "The city eats, and contact with the sick stays limited.",
+          "worries": "Guards and dock workers are still exposed, and the sailors are left to die aboard.",
+          "tradeoff": "You accept some risk to keep the city fed.",
+          "consequence": "A partial barrier limits contact with the sick. But in 1347 no one knew that rats and fleas could ride ashore in the grain sacks themselves."
+        }
+      ]
+    },
+    {
+      "id": "inside",
+      "title": "The sickness inside the walls",
+      "prompt": "What should the city do now that the sickness is inside?",
+      "scene": {
+        "kicker": "Spring 1348. Inside the walls.",
+        "text": [
+          "Whatever the council did with the galleys, the sickness is now in every district. Carts collect bodies at dawn. Some physicians and priests have stopped visiting the sick.",
+          "Families who can afford it are packing wagons for their country estates. The council asks for your recommendation."
+        ]
+      },
+      "options": [
+        {
+          "id": "seal",
+          "title": "Seal the city",
+          "action": "Close the gates to travelers from infected towns, ban imported used cloth, and control burials.",
+          "benefits": "Fewer new arrivals, and fewer chances for sickness to come in from outside.",
+          "worries": "Trade and food shipments slow, and people inside cannot leave.",
+          "tradeoff": "You trade freedom of movement and commerce for a chance at control.",
+          "consequence": "In May 1348, Pistoia banned travel to and from Pisa and Lucca, burned imported used cloth, and regulated burials. The rules followed the bad air theory, targeting smells, cloth, and bodies rather than rats and fleas. Historians still debate how much they helped."
+        },
+        {
+          "id": "care",
+          "title": "Pay caregivers to stay",
+          "action": "Use city money to keep physicians, priests, and gravediggers working.",
+          "benefits": "The sick are treated, the dying receive last rites, and the dead are buried.",
+          "worries": "Caregivers die at high rates, and the money runs out.",
+          "tradeoff": "You keep the city humane by spending the lives of those who care.",
+          "consequence": "Caregivers died in huge numbers. In England, so many priests died that in January 1349 the Bishop of Bath and Wells told the dying they could confess to a layperson if no priest could be found."
+        },
+        {
+          "id": "cleanse",
+          "title": "Cleanse the air and pray",
+          "action": "Burn fires and strong herbs in the streets, and lead processions asking God for mercy.",
+          "benefits": "People act together, and the city shows it is doing something.",
+          "worries": "Crowds gather, and nothing touches the real cause.",
+          "tradeoff": "Unity and hope, built on an explanation that is wrong.",
+          "consequence": "This was the official science. In October 1348, the medical faculty of Paris blamed a 1345 alignment of planets for corrupting the air. Pope Clement VI sat between great fires on his physician's advice and survived. Some historians think the heat helped by keeping fleas away."
+        },
+        {
+          "id": "flee",
+          "title": "Let people leave",
+          "action": "Open the gates so anyone who can reach the countryside may go.",
+          "benefits": "Those who leave may survive, and the city is less crowded.",
+          "worries": "The poor cannot leave, and those who flee may carry the sickness with them.",
+          "tradeoff": "Survival for some, spread to others.",
+          "consequence": "Wealthy Italian families fled to country estates, as the storytellers in Boccaccio's Decameron do. The poor stayed. Refugees from Messina died on the roads and spread the plague across Sicily, and Catania locked its gates against them."
+        }
+      ]
+    },
+    {
+      "id": "reopen",
+      "title": "The ships come back",
+      "prompt": "Should the harbor reopen to ships from the east?",
+      "scene": {
+        "kicker": "1351. The dying slows.",
+        "text": [
+          "The worst has passed. Fields outside the walls stand half harvested because too few workers survived, and the survivors are asking for higher wages.",
+          "In the harbor, a merchant galley waits with spices, cloth, and grain. Its captain swears no one aboard is sick. You have heard that before."
+        ]
+      },
+      "options": [
+        {
+          "id": "open",
+          "title": "Reopen fully",
+          "action": "Welcome ships back and restore trade as quickly as possible.",
+          "benefits": "Food, goods, and jobs return, and the city can rebuild.",
+          "worries": "If sickness returns, it comes by the same route.",
+          "tradeoff": "Recovery now, risk later.",
+          "consequence": "Trade came back, and so did the plague. It returned in waves for centuries, including a major outbreak in 1361 and 1362."
+        },
+        {
+          "id": "wait",
+          "title": "Reopen with a waiting period",
+          "action": "Let ships trade only after crews and cargo wait offshore for a set number of days with no sign of sickness.",
+          "benefits": "Trade returns, and a hidden sickness has time to show itself before anyone comes ashore.",
+          "worries": "Merchants lose time and money, and guards must enforce the rule.",
+          "tradeoff": "Slower trade in exchange for a safer harbor.",
+          "consequence": "You are ahead of history. In 1377, the trading city of Ragusa, today's Dubrovnik, made arrivals from plague areas wait 30 days on a nearby island or town. Venice later built a permanent island quarantine hospital, and a 40 day wait gave us the word quarantine. Waiting periods lowered the risk but did not end outbreaks."
+        },
+        {
+          "id": "closed",
+          "title": "Stay closed except for grain",
+          "action": "Keep the harbor closed to all ships except guarded grain deliveries.",
+          "benefits": "Fewer ships means fewer chances for the sickness to return.",
+          "worries": "Merchants move to other ports, and the city grows poorer.",
+          "tradeoff": "Safety for now, decline over time.",
+          "consequence": "A port that stays closed while rivals reopen risks losing its merchants to them. And rats and fleas can still ride in with the grain."
+        }
+      ]
+    }
+  ],
+  "record": {
+    "intro": "Here is what the wider world lived through. History is not an answer key: people made reasonable choices with the knowledge they had.",
+    "items": [
+      {
+        "label": "The death toll",
+        "text": "Between 1347 and 1351, the plague killed an estimated 30 to 60 percent of Europe's people, and it struck North Africa and Southwest Asia as well."
+      },
+      {
+        "label": "Who gained power afterward",
+        "text": "With so many workers dead, survivors demanded higher wages. England tried to freeze wages with the Ordinance of Labourers in 1349 and the Statute of Labourers in 1351. The laws largely failed, and wages rose."
+      },
+      {
+        "label": "The same routes, both ways",
+        "text": "The networks that carried plague had also carried citrus, rice, and bananas to new regions. Historians study both as environmental consequences of the same connections."
+      }
+    ]
+  },
+  "reflectionPrompt": "Step out of character. Pick one of your three decisions and compare it with what happened in history. Then explain how trade networks produced environmental and demographic consequences in Afro-Eurasia from c. 1200 to c. 1450, using at least one piece of evidence from the room.",
+  "sources": [
+    {
+      "label": "World History Commons, Health Ordinances of Pistoia, 1348",
+      "url": "https://worldhistorycommons.org/health-ordinances-pistoia-1348"
+    },
+    {
+      "label": "The Report of the Paris Medical Faculty, October 1348",
+      "url": "https://sites.uwm.edu/carlin/the-report-of-the-paris-medical-faculty-october-1348/"
+    },
+    {
+      "label": "The concept of quarantine in history: from plague to SARS (PMC)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7133622/"
+    },
+    {
+      "label": "Avalon Project, The Statute of Labourers, 1351",
+      "url": "https://avalon.law.yale.edu/medieval/statlab.asp"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-beintheroom-capture.js"></script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>
