@@ -35,11 +35,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "subtitle": "Goods were never the only cargo. Hold that question: by the end of class you can answer it in one sentence.",
       "template": {
         "visual": {
-          "fit": "contain",
-          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Silk_Road_Trade_%28c.1200_CE%29.jpg",
-          "alt": "Map of overland and maritime trade routes across Afro-Eurasia around 1200",
-          "credit": "Map · Afro-Eurasian trade routes, c. 1200"
+          "ai": true,
+          "url": "../assets/images/topics/2-5/2.5%20-%20Cultural%20Highway.jpg",
+          "alt": "An imagined Silk Road market below blue-domed buildings: a turbaned scholar reads from a book in Arabic script, a Buddhist monk in red robes talks with a merchant, and books, maps and pottery cover the tables while camels pass behind",
+          "position": "62% 50%"
         }
       }
     },
@@ -192,10 +191,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "visual": {
           "ai": true,
-          "url": "../assets/images/topics/2-1/2.1%20-%20Samarkand.jpg",
-          "alt": "An imagined scene of Samarkand: camel caravans and an ox cart loaded with goods approach a walled city of blue-domed buildings below mountains",
-          "cropBottom": 0.06,
-          "position": "50% 40%"
+          "url": "../assets/images/topics/2-5/2.5%20-%20Technology%20Moves.jpg",
+          "alt": "An imagined city market under brick arches: scribes write on stacks of paper, workers pack crates of paper and blue-and-white porcelain, and three men inspect a long gun",
+          "position": "50% 62%"
         }
       }
     },
@@ -408,11 +406,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "subtitle": "More contact spread and reshaped beliefs, technologies, cities, and knowledge.",
       "template": {
         "visual": {
-          "fit": "contain",
-          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg",
-          "sourceUrl": "https://commons.wikimedia.org/wiki/File:TabulaRogeriana.jpg",
-          "alt": "Al-Idrisi's world map, drawn with south at the top, showing Afro-Eurasia and the Indian Ocean",
-          "credit": "Tabula Rogeriana · al-Idrisi, 1154"
+          "ai": true,
+          "url": "../assets/images/topics/2-5/2.5%20-%20Travelers%20see%20connected%20world.jpg",
+          "alt": "An imagined traveler with a staff and satchel stands on a hill above a walled trading city full of caravans, writing in a book while a local man points and explains",
+          "position": "72% 50%"
         }
       }
     }
