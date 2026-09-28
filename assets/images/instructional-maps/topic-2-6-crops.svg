@@ -21,6 +21,10 @@
       .halo{paint-order:stroke;stroke:#FFFDF7;stroke-width:5;stroke-linejoin:round}
       .city{fill:#1A1C1D;stroke:#FFFDF7;stroke-width:4}
       .flow{fill:none;stroke:#8C5A2B;stroke-width:6;stroke-linecap:round;opacity:.9}
+      .callout{fill:#FFFDF7;stroke:#3E4447;stroke-width:2.2;opacity:.96}
+      .calloutTitle{font-family:Arial,Helvetica,sans-serif;font-weight:800;font-size:20px;fill:#1A1C1D;letter-spacing:.5px}
+      .calloutText{font-family:Arial,Helvetica,sans-serif;font-size:16px;fill:#3E4447}
+      .leader{fill:none;stroke:#3E4447;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
       #land path{fill:#E4DAC4;stroke:#A99B7F;stroke-width:3}
       #graticule line{stroke:#9FB0AE;stroke-width:1.5;opacity:.35}
     </style>
@@ -67,13 +71,32 @@
 
   <g id="highlights">
     <ellipse cx="1266.7" cy="455.6" rx="57.8" ry="55.6" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="1266.7" y="537.1" text-anchor="middle" fill="#1A1C1D"><tspan x="1266.7" dy="0">ORIGIN ZONE</tspan></text>
     <ellipse cx="888.9" cy="500.0" rx="57.8" ry="44.4" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="888.9" y="570.4" text-anchor="middle" fill="#1A1C1D"><tspan x="888.9" dy="0">BANANAS</tspan></text>
     <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="1297.8" y="350.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">NEW RICE</tspan></text>
     <ellipse cx="875.6" cy="300.0" rx="106.7" ry="33.3" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="875.6" y="359.3" text-anchor="middle" fill="#1A1C1D"><tspan x="875.6" dy="0">CITRUS</tspan></text>
+  </g>
+
+  <g id="region-callouts">
+    <path class="leader" d="M855,250 L872,268"/>
+    <rect class="callout" x="690" y="166" width="330" height="84" rx="14"/>
+    <text class="calloutTitle" x="710" y="196">MEDITERRANEAN</text>
+    <text class="calloutText" x="710" y="222">Citrus spreads west into the basin</text>
+
+    <path class="leader" d="M1362,291 L1380,291"/>
+    <rect class="callout" x="1380" y="236" width="185" height="84" rx="14"/>
+    <text class="calloutTitle" x="1400" y="266">EAST ASIA</text>
+    <text class="calloutText" x="1400" y="292">New rice varieties</text>
+    <text class="calloutText" x="1400" y="312">spread north</text>
+
+    <path class="leader" d="M874,544 L852,556"/>
+    <rect class="callout" x="660" y="556" width="310" height="84" rx="14"/>
+    <text class="calloutTitle" x="680" y="586">TROPICAL AFRICA</text>
+    <text class="calloutText" x="680" y="612">Bananas arrive by sea and spread inland</text>
+
+    <path class="leader" d="M1323,478 L1338,503"/>
+    <rect class="callout" x="1338" y="503" width="227" height="84" rx="14"/>
+    <text class="calloutTitle" x="1358" y="533">SOUTHEAST ASIA</text>
+    <text class="calloutText" x="1358" y="559">Banana + rice homelands</text>
   </g>
   <g id="flows">
     <path class="flow" d="M1266.7,455.6 Q1099.1,424.9 977.8,544.4" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
@@ -91,11 +114,16 @@
   </g>
   <g id="places">
     <circle class="city" cx="1284.4" cy="427.8" r="10"/>
-    <text class="place halo" x="1304.4" y="423.8" text-anchor="start">Champa</text>
-    <text class="placenote halo" x="1304.4" y="445.8" text-anchor="start">fast-ripening rice</text>
+    <path class="leader" d="M1294,424 L1360,402"/>
+    <rect class="callout" x="1360" y="365" width="205" height="76" rx="12"/>
+    <text class="place" x="1378" y="393">Champa</text>
+    <text class="placenote" x="1378" y="416">central Vietnam · rice source</text>
+
     <circle class="city" cx="973.3" cy="533.3" r="10"/>
-    <text class="place halo" x="953.3" y="529.3" text-anchor="end">Swahili coast</text>
-    <text class="placenote halo" x="953.3" y="551.3" text-anchor="end">bananas arrive by sea</text>
+    <path class="leader" d="M980,541 L1010,576"/>
+    <rect class="callout" x="1010" y="562" width="265" height="78" rx="12"/>
+    <text class="place" x="1028" y="591">Swahili Coast</text>
+    <text class="placenote" x="1028" y="615">East Africa · bananas arrive by sea</text>
   </g>
 
   <g id="titleband">
