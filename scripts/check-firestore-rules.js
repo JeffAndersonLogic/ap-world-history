@@ -151,7 +151,39 @@ function assertRules(rawSource, report) {
 
   // The per-document ceiling is this system's only enforceable cost control,
   // since Firestore cannot be spend-capped. Losing it is silent.
-  report('a per-document size ceiling is enforced', /\.size\(\)\s*<=\s*\d+/.test(source));
+  // Specifically the response body's ceiling. A generic `.size() <= N` match
+  // stopped meaning anything once the short metadata fields grew their own
+  // bounds: removing the one that matters left three others satisfying it,
+  // and the negative control caught that rather than prose.
+  report('a per-document size ceiling is enforced on the response body',
+    /text\.size\(\)\s*<=\s*\d+/.test(source));
+
+  // ── The four invariants an external review added on 2026-09-29 ────────────
+  //
+  // Each was a real hole and each would be silent if it came back: the rules
+  // would still compile, still deny an outsider, and still pass every check
+  // above.
+
+  // Without a derived id, one signed-in student can create unlimited documents
+  // by varying the document name, which is unbounded storage and unbounded
+  // writes with nothing in the rules to notice.
+  report('the document id is derived from author, topic and slot',
+    /responseId\s*==\s*request\.auth\.uid\s*\+/.test(source));
+
+  // A client-supplied updatedAt makes the conflict rule guessable and lets a
+  // device backdate a write to win a merge it should have lost.
+  report('timestamps are pinned to server time',
+    /updatedAt\s*==\s*request\.time/.test(source));
+
+  // Without this a student who owns a record can move it to another topic or
+  // slot, or rewrite when it was created, and it still passes every other test.
+  report('an update may only touch the mutable fields',
+    /affectedKeys\(\)/.test(source) && /\.hasOnly\(\['text'/.test(source));
+
+  // Verified district email is the real check. Pinning the provider means that
+  // enabling another sign-in method later cannot quietly widen who satisfies it.
+  report('the sign-in provider is pinned',
+    /sign_in_provider\s*==\s*'google\.com'/.test(source));
 }
 
 // ── The run ──────────────────────────────────────────────────────────────────
@@ -193,7 +225,16 @@ const MUTATIONS = [
   ['the field allowlist becomes a floor',
     s => s.replace(/\.keys\(\)\.hasOnly\(/, '.keys().hasAny(')],
   ['the per-document size ceiling is removed',
-    s => s.replace(/&& request\.resource\.data\.text\.size\(\) <= \d+/, '')],
+    s => s.replace(/&&\s*request\.resource\.data\.text\.size\(\)\s*<=\s*\d+/, '')],
+  ['the document id goes back to whatever the client names it',
+    s => s.replace(/responseId == request\.auth\.uid \+/, 'responseId == responseId + \'\' +')],
+  ['updatedAt is trusted from the client again',
+    s => s.replace(/request\.resource\.data\.updatedAt == request\.time/, 'request.resource.data.updatedAt is timestamp')],
+  ['an update may touch any field again',
+    s => s.replace(/&&\s*onlyMutableFieldsChanged\(\)/, '')
+          .replace(/request\.resource\.data\.diff\(resource\.data\)\.affectedKeys\(\)\n\s*\.hasOnly\(\[[^\]]*\]\)/, 'true')],
+  ['the sign-in provider check is dropped',
+    s => s.replace(/&&\s*request\.auth\.token\.firebase\.sign_in_provider == 'google\.com'/, '')],
   ['delete is opened up to the author',
     s => s.replace(/allow delete: if false;/, 'allow delete: if ownsStored();')],
   ['a wildcard match is added "temporarily" while debugging',

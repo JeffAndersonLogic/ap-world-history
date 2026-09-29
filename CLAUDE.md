@@ -1168,6 +1168,25 @@ on a bare checkout, in its own `rules` suite rather than folded into `browser`.
 **Neither CI workflow runs it yet**, which is a real gap and is stated in the
 README rather than papered over.
 
+**An external review on 2026-09-29 found the rules protected confidentiality
+well and bounded write volume badly**, and the fix is the shape of the data
+rather than a new rule. The document id is **derived**,
+`{uid}__{topicKey}__{slotId}`, because before that any signed-in student could
+create unlimited documents by varying the name and every create passed. Six other
+findings were taken with it: server-pinned timestamps, `affectedKeys().hasOnly`
+so an edit cannot move a record to another topic or slot, `confidence` required
+rather than read-when-absent, every optional field bounded, a character-count
+ceiling stated as characters, and the sign-in provider pinned. `firestore/README.md`
+lists all seven.
+
+**A rules-level rate limit was suggested and declined, and the reason is the
+whole project.** Firestore's offline persistence flushes queued mutations on
+reconnect, so a minimum-interval rule would reject some of them, and a rejected
+mutation is reverted by the client SDK. That is a student losing what they wrote
+on the bus, which is the failure this system exists to prevent. **The rules bound
+document count, the client bounds write rate, and the daily quota is the
+backstop.**
+
 **The offline check strips comments before parsing, and that is load-bearing.**
 The prose in `firestore.rules` explaining why a catch-all deny is useless contains
 the literal `allow read, write: if false;`. The first version of the checker

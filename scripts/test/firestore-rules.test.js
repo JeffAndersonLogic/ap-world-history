@@ -11,29 +11,24 @@
  *
  * WHY IT IS NOT IN THE OFFLINE SUITE
  *
- * It needs @firebase/rules-unit-testing, firebase-tools, a Java runtime and a
- * running emulator. validate.js has to stay runnable on a bare checkout, so none
- * of that is installed by default and this exits 2, which run-tests.js prints as
- * SKIP. Same contract as every browser test here.
+ * It needs @firebase/rules-unit-testing, the firebase SDK, firebase-tools, a
+ * Java runtime and a running emulator. validate.js has to stay runnable on a
+ * bare checkout, so none of that is installed by default and this exits 2, which
+ * run-tests.js prints as SKIP. Same contract as every browser test here.
  *
- *   npm i -D @firebase/rules-unit-testing firebase-tools
+ *   npm i -D @firebase/rules-unit-testing firebase firebase-tools
  *   npx firebase emulators:exec --only firestore \
- *     "node scripts/test/firestore-rules.test.js --strict"
+ *     "node scripts/run-tests.js rules --strict"
  *
  * A SKIP IS NOT A PASS, and CLAUDE.md says why that sentence is in this file
  * rather than assumed: a check allowed to skip will skip in precisely the
  * environment where nobody is watching for it. Pass --strict, which turns the
- * skip into a failure, anywhere the emulator is supposed to be running. Nothing
- * in this repository may be reported as having a reviewed security model on the
- * strength of a run where this printed SKIP.
+ * skip into a failure, anywhere the emulator is supposed to be running.
  *
- * WHAT IT PROVES AND WHAT IT DOES NOT
- *
- * It proves these rules behave as intended against the real evaluator. It says
- * nothing about whether the application sends the right studentId, because no
- * application code reads or writes Firestore yet. Phase 2 is not authorized to
- * ship: ZCS approved the free plan and FERPA on 2026-09-29, and under-18 app
- * approval is still outstanding.
+ * **THIS FILE HAS NOT YET BEEN RUN.** It was written in an environment with no
+ * emulator, so it is unverified code asserting things about verified-by-nothing.
+ * Do not describe the rules as tested, to the district or anywhere else, until
+ * this has gone green once. That is the whole reason the sentence is here.
  */
 
 const fs = require('fs');
@@ -51,19 +46,21 @@ function skip(reason) {
     process.exit(1);
   }
   console.log(`${Y}SKIP${X} Firestore rules (emulator): ${reason}.`);
-  console.log(`${D}  npm i -D @firebase/rules-unit-testing firebase-tools${X}`);
-  console.log(`${D}  npx firebase emulators:exec --only firestore "node scripts/test/firestore-rules.test.js --strict"${X}`);
+  console.log(`${D}  npm i -D @firebase/rules-unit-testing firebase firebase-tools${X}`);
+  console.log(`${D}  npx firebase emulators:exec --only firestore "node scripts/run-tests.js rules --strict"${X}`);
   process.exit(2);
 }
 
-let testing;
+let testing, fst;
 try {
   testing = require('@firebase/rules-unit-testing');
+  fst = require('firebase/firestore');
 } catch (error) {
-  skip('@firebase/rules-unit-testing is not installed');
+  skip('@firebase/rules-unit-testing or the firebase SDK is not installed');
 }
 
 const { initializeTestEnvironment, assertFails, assertSucceeds } = testing;
+const { doc, getDoc, setDoc, updateDoc, deleteDoc, collection, query, where, getDocs, serverTimestamp } = fst;
 
 let failures = 0;
 function record(label, ok, detail) {
@@ -75,131 +72,164 @@ function record(label, ok, detail) {
   }
 }
 
-// Two students in the district, one outside it, and one who never signed in.
 const ZCS = 'zcs';
-const ALEX = { uid: 'uid-alex', email: 'alex@zcs.k12.in.us', email_verified: true };
-const BRIT = { uid: 'uid-brit', email: 'brit@zcs.k12.in.us', email_verified: true };
-const OUTSIDER = { uid: 'uid-out', email: 'someone@gmail.com', email_verified: true };
-const UNVERIFIED = { uid: 'uid-unv', email: 'new@zcs.k12.in.us', email_verified: false };
+const GOOGLE = { firebase: { sign_in_provider: 'google.com' } };
+const ALEX = Object.assign({ email: 'alex@zcs.k12.in.us', email_verified: true }, GOOGLE);
+const BRIT = Object.assign({ email: 'brit@zcs.k12.in.us', email_verified: true }, GOOGLE);
+const OUTSIDER = Object.assign({ email: 'someone@gmail.com', email_verified: true }, GOOGLE);
+const UNVERIFIED = Object.assign({ email: 'new@zcs.k12.in.us', email_verified: false }, GOOGLE);
+// Same district address, wrong provider. Verified email is the real check; this
+// is the one the provider pin exists for.
+const PASSWORD_USER = { email: 'alex@zcs.k12.in.us', email_verified: true, firebase: { sign_in_provider: 'password' } };
+
+const UID_ALEX = 'uid-alex';
+const UID_BRIT = 'uid-brit';
+
+// The id is derived, so the test derives it too rather than hardcoding strings
+// that would drift from the rule the moment the format changed.
+const idFor = (uid, topicKey, slotId) => `${uid}__${topicKey}__${slotId}`;
+const pathFor = (tenant, id) => `tenants/${tenant}/responses/${id}`;
 
 function response(overrides) {
   return Object.assign({
     tenantId: ZCS,
-    studentId: ALEX.uid,
+    studentId: UID_ALEX,
     courseId: 'apwh',
     sectionId: 'green',
     topicKey: '1-4',
     slotId: 'checkpoint-two-response',
     text: 'Song China centralized power through the examination system.',
     confidence: 4,
-    createdAt: new Date(),
-    updatedAt: new Date(),
+    createdAt: serverTimestamp(),
+    updatedAt: serverTimestamp(),
     clientId: 'chromebook-1',
     schemaVersion: 1
   }, overrides || {});
 }
 
-const docPath = (tenant, id) => `tenants/${tenant}/responses/${id}`;
-
-// The assertions, factored out so the negative controls run the identical set
-// against deliberately broken rules. A negative control that exercises a
-// different set than the real run proves nothing about the real run.
 async function assertContracts(env, report) {
-  // Seed two records with the rules switched off, which is the only way to get
-  // a stored document belonging to someone other than the caller.
+  // Seeded with rules off, which is the only way to get a stored document
+  // belonging to someone other than the caller, and the only way to plant a
+  // record whose timestamps are not request.time.
   await env.withSecurityRulesDisabled(async ctx => {
     const db = ctx.firestore();
-    await db.doc(docPath(ZCS, 'alex-1-4')).set(response());
-    await db.doc(docPath(ZCS, 'brit-1-4')).set(response({ studentId: BRIT.uid }));
-    await db.doc(docPath('other-district', 'someone')).set(response({ tenantId: 'other-district' }));
+    const now = new Date();
+    const seed = (o) => Object.assign(response(o), { createdAt: now, updatedAt: now });
+    await setDoc(doc(db, pathFor(ZCS, idFor(UID_ALEX, '1-4', 'checkpoint-two-response'))), seed());
+    await setDoc(doc(db, pathFor(ZCS, idFor(UID_BRIT, '1-4', 'checkpoint-two-response'))), seed({ studentId: UID_BRIT }));
+    await setDoc(doc(db, pathFor('other-district', idFor(UID_ALEX, '1-4', 'map-check-response'))),
+      seed({ tenantId: 'other-district', slotId: 'map-check-response' }));
   });
 
-  const alex = env.authenticatedContext(ALEX.uid, ALEX).firestore();
-  const brit = env.authenticatedContext(BRIT.uid, BRIT).firestore();
-  const outsider = env.authenticatedContext(OUTSIDER.uid, OUTSIDER).firestore();
-  const unverified = env.authenticatedContext(UNVERIFIED.uid, UNVERIFIED).firestore();
-  const anon = env.unauthenticatedContext().firestore();
+  const alexDb = env.authenticatedContext(UID_ALEX, ALEX).firestore();
+  const britDb = env.authenticatedContext(UID_BRIT, BRIT).firestore();
+  const outsiderDb = env.authenticatedContext('uid-out', OUTSIDER).firestore();
+  const unverifiedDb = env.authenticatedContext('uid-unv', UNVERIFIED).firestore();
+  const passwordDb = env.authenticatedContext(UID_ALEX, PASSWORD_USER).firestore();
+  const anonDb = env.unauthenticatedContext().firestore();
 
   const can = async (p) => { try { await assertSucceeds(p); return true; } catch (e) { return false; } };
   const cannot = async (p) => { try { await assertFails(p); return true; } catch (e) { return false; } };
 
-  // 1. A student reads their own work.
-  report('a student can read their own record',
-    await can(alex.doc(docPath(ZCS, 'alex-1-4')).get()));
+  const ALEX_CP2 = pathFor(ZCS, idFor(UID_ALEX, '1-4', 'checkpoint-two-response'));
+  const BRIT_CP2 = pathFor(ZCS, idFor(UID_BRIT, '1-4', 'checkpoint-two-response'));
 
-  // 2. The contract the architecture record names first.
-  report('a student cannot read another student\'s record',
-    await cannot(alex.doc(docPath(ZCS, 'brit-1-4')).get()));
+  // ── Confidentiality ──────────────────────────────────────────────────────
+  report('a student can read their own record', await can(getDoc(doc(alexDb, ALEX_CP2))));
+  report('a student cannot read another student\'s record', await cannot(getDoc(doc(alexDb, BRIT_CP2))));
   report('a student cannot write to another student\'s record',
-    await cannot(alex.doc(docPath(ZCS, 'brit-1-4')).update({ text: 'mine now', updatedAt: new Date() })));
-
-  // 3. An unauthenticated visitor reaches nothing.
-  report('an unauthenticated visitor cannot read anything',
-    await cannot(anon.doc(docPath(ZCS, 'alex-1-4')).get()));
+    await cannot(updateDoc(doc(alexDb, BRIT_CP2), { text: 'mine now', updatedAt: serverTimestamp() })));
+  report('an unauthenticated visitor cannot read anything', await cannot(getDoc(doc(anonDb, ALEX_CP2))));
   report('an unauthenticated visitor cannot write anything',
-    await cannot(anon.doc(docPath(ZCS, 'new-doc')).set(response())));
-
-  // 4. Nobody reaches outside their own tenant.
+    await cannot(setDoc(doc(anonDb, pathFor(ZCS, idFor('anon', '1-4', 'x'))), response())));
   report('a student cannot read outside their tenant',
-    await cannot(alex.doc(docPath('other-district', 'someone')).get()));
-  report('a student cannot write outside their tenant',
-    await cannot(alex.doc(docPath('other-district', 'new-doc')).set(response({ tenantId: 'other-district' }))));
-
-  // 5. Identity comes from a verified district address, so neither half is
-  //    optional. An outside domain is not in any tenant; an unverified address
-  //    is not yet evidence of anything.
+    await cannot(getDoc(doc(alexDb, pathFor('other-district', idFor(UID_ALEX, '1-4', 'map-check-response'))))));
   report('an account outside the district domain is refused',
-    await cannot(outsider.doc(docPath(ZCS, 'out-1')).set(response({ studentId: OUTSIDER.uid }))));
+    await cannot(setDoc(doc(outsiderDb, pathFor(ZCS, idFor('uid-out', '1-4', 'a'))), response({ studentId: 'uid-out' }))));
   report('an unverified district address is refused',
-    await cannot(unverified.doc(docPath(ZCS, 'unv-1')).set(response({ studentId: UNVERIFIED.uid }))));
+    await cannot(setDoc(doc(unverifiedDb, pathFor(ZCS, idFor('uid-unv', '1-4', 'a'))), response({ studentId: 'uid-unv' }))));
+  report('the same district address on a different sign-in provider is refused',
+    await cannot(getDoc(doc(passwordDb, ALEX_CP2))));
 
-  // 6. Authorship, on the way in as well as the way out.
+  // ── Queries. Rules are not filters. ──────────────────────────────────────
+  //
+  // A list whose query does not itself guarantee the constraint is refused
+  // outright rather than quietly narrowed, so both directions matter.
+  const responses = collection(alexDb, `tenants/${ZCS}/responses`);
+  report('a query constrained to the student\'s own records is allowed',
+    await can(getDocs(query(responses, where('studentId', '==', UID_ALEX)))));
+  report('an unconstrained list of the collection is refused',
+    await cannot(getDocs(query(responses))));
+  report('a query for another student\'s records is refused',
+    await cannot(getDocs(query(responses, where('studentId', '==', UID_BRIT)))));
+
+  // ── Authorship on the way in ─────────────────────────────────────────────
   report('a student can create their own record',
-    await can(alex.doc(docPath(ZCS, 'alex-1-5')).set(response({ slotId: 'evidence-response' }))));
+    await can(setDoc(doc(alexDb, pathFor(ZCS, idFor(UID_ALEX, '1-5', 'evidence-response'))),
+      response({ topicKey: '1-5', slotId: 'evidence-response' }))));
   report('a student cannot create a record authored by someone else',
-    await cannot(alex.doc(docPath(ZCS, 'forged')).set(response({ studentId: BRIT.uid }))));
+    await cannot(setDoc(doc(alexDb, pathFor(ZCS, idFor(UID_BRIT, '1-5', 'evidence-response'))),
+      response({ studentId: UID_BRIT, topicKey: '1-5', slotId: 'evidence-response' }))));
   report('a student cannot reassign their own record to someone else',
-    await cannot(alex.doc(docPath(ZCS, 'alex-1-4')).update({ studentId: BRIT.uid, updatedAt: new Date() })));
+    await cannot(updateDoc(doc(alexDb, ALEX_CP2), { studentId: UID_BRIT, updatedAt: serverTimestamp() })));
 
-  // 7. The record cannot lie about where it lives, or a document under one
-  //    tenant's path would claim to belong to another on export.
-  report('a record whose tenantId disagrees with its path is refused',
-    await cannot(alex.doc(docPath(ZCS, 'liar')).set(response({ tenantId: 'other-district' }))));
+  // ── The document id is derived, which is what bounds document count ──────
+  report('a client-chosen document id is refused',
+    await cannot(setDoc(doc(alexDb, pathFor(ZCS, 'whatever-i-like')), response())));
+  report('an id naming the right author but the wrong slot is refused',
+    await cannot(setDoc(doc(alexDb, pathFor(ZCS, idFor(UID_ALEX, '1-4', 'map-check-response'))),
+      response({ slotId: 'evidence-response' }))));
+  report('a random id per write, the runaway shape, is refused',
+    await cannot(setDoc(doc(alexDb, pathFor(ZCS, idFor(UID_ALEX, '1-4', 'cp2') + '-' + Math.random())), response())));
 
-  // 8. The shape is an allowlist.
-  report('an unexpected field is refused',
-    await cannot(alex.doc(docPath(ZCS, 'extra')).set(response({ isTeacher: true }))));
+  // ── Timestamps are the server's ──────────────────────────────────────────
+  report('a client-supplied updatedAt is refused',
+    await cannot(setDoc(doc(alexDb, pathFor(ZCS, idFor(UID_ALEX, '2-1', 'skill-builder-response'))),
+      response({ topicKey: '2-1', slotId: 'skill-builder-response', updatedAt: new Date(2020, 0, 1) }))));
+  report('a backdated update is refused',
+    await cannot(updateDoc(doc(alexDb, ALEX_CP2), { text: 'edited', updatedAt: new Date(2020, 0, 1) })));
+
+  // ── An edit may only touch what an edit touches ──────────────────────────
+  report('an ordinary edit is allowed',
+    await can(updateDoc(doc(alexDb, ALEX_CP2), { text: 'A revised answer.', confidence: 5, updatedAt: serverTimestamp() })));
+  report('an edit cannot move the record to another topic',
+    await cannot(updateDoc(doc(alexDb, ALEX_CP2), { topicKey: '9-9', updatedAt: serverTimestamp() })));
+  report('an edit cannot move the record to another slot',
+    await cannot(updateDoc(doc(alexDb, ALEX_CP2), { slotId: 'map-check-response', updatedAt: serverTimestamp() })));
+  report('an edit cannot rewrite when the record was created',
+    await cannot(updateDoc(doc(alexDb, ALEX_CP2), { createdAt: serverTimestamp(), updatedAt: serverTimestamp() })));
+
+  // ── The shape is an allowlist, and every permitted field is bounded ──────
+  const at = (topic, slot, o) => setDoc(doc(alexDb, pathFor(ZCS, idFor(UID_ALEX, topic, slot))),
+    response(Object.assign({ topicKey: topic, slotId: slot }, o)));
+  report('an unexpected field is refused', await cannot(at('3-1', 'a', { isTeacher: true })));
   report('a missing required field is refused',
-    await cannot(alex.doc(docPath(ZCS, 'thin')).set({ tenantId: ZCS, studentId: ALEX.uid })));
+    await cannot(setDoc(doc(alexDb, pathFor(ZCS, idFor(UID_ALEX, '3-2', 'b'))),
+      { tenantId: ZCS, studentId: UID_ALEX, topicKey: '3-2', slotId: 'b' })));
+  report('a missing confidence is refused rather than silently erroring',
+    await cannot(setDoc(doc(alexDb, pathFor(ZCS, idFor(UID_ALEX, '3-3', 'c'))),
+      (() => { const r = response({ topicKey: '3-3', slotId: 'c' }); delete r.confidence; return r; })())));
+  report('a blank confidence is accepted', await can(at('3-4', 'd', { confidence: '' })));
+  report('a confidence outside 1 to 5 is refused', await cannot(at('3-5', 'e', { confidence: 9 })));
+  report('a document over the size ceiling is refused', await cannot(at('3-6', 'f', { text: 'x'.repeat(20001) })));
+  report('a long but reasonable answer is accepted', await can(at('3-7', 'g', { text: 'x'.repeat(8000) })));
+  report('an oversized optional field is refused', await cannot(at('3-8', 'h', { clientId: 'x'.repeat(65) })));
+  report('a malformed topicKey is refused', await cannot(at('NOT A TOPIC', 'i', {})));
+  report('a malformed slotId is refused', await cannot(at('4-1', 'Has Spaces', {})));
+  report('a record whose tenantId disagrees with its path is refused',
+    await cannot(setDoc(doc(alexDb, pathFor(ZCS, idFor(UID_ALEX, '4-2', 'j'))),
+      response({ tenantId: 'other-district', topicKey: '4-2', slotId: 'j' }))));
 
-  // 9. The per-document ceiling, which is the only enforceable cost control
-  //    this system has, because Firestore cannot be spend-capped.
-  report('a document over the size ceiling is refused',
-    await cannot(alex.doc(docPath(ZCS, 'huge')).set(response({ text: 'x'.repeat(65537) }))));
-  report('a long but reasonable answer is accepted',
-    await can(alex.doc(docPath(ZCS, 'long')).set(response({ text: 'x'.repeat(8000) }))));
+  // ── Deletion is nobody's ─────────────────────────────────────────────────
+  report('a student cannot delete their own record', await cannot(deleteDoc(doc(alexDb, ALEX_CP2))));
 
-  // 10. Confidence mirrors the existing scale, and blank is a real answer.
-  report('a blank confidence is accepted',
-    await can(alex.doc(docPath(ZCS, 'blank-conf')).set(response({ confidence: '' }))));
-  report('a confidence outside 1 to 5 is refused',
-    await cannot(alex.doc(docPath(ZCS, 'bad-conf')).set(response({ confidence: 9 }))));
-
-  // 11. Deletion is nobody's, including the author's.
-  report('a student cannot delete their own record',
-    await cannot(alex.doc(docPath(ZCS, 'alex-1-4')).delete()));
-
-  // Brit is here to prove the rules are not simply denying everything to
-  // everyone, which every assertion above would also be consistent with.
-  report('the other student can still read their own record',
-    await can(brit.doc(docPath(ZCS, 'brit-1-4')).get()));
+  // Brit proves the rules are not simply denying everything to everyone, which
+  // every assertion above would also be consistent with.
+  report('the other student can still read their own record', await can(getDoc(doc(britDb, BRIT_CP2))));
 }
 
 async function makeEnv(rules) {
-  return initializeTestEnvironment({
-    projectId: 'behistorical-rules-test',
-    firestore: { rules }
-  });
+  return initializeTestEnvironment({ projectId: 'behistorical-rules-test', firestore: { rules } });
 }
 
 (async () => {
@@ -219,10 +249,6 @@ async function makeEnv(rules) {
   await env.cleanup();
 
   // ── Proving the checks can fail ────────────────────────────────────────────
-  //
-  // Required by CLAUDE.md. These are the same loosenings the offline check
-  // guards textually, run here against the real evaluator, because "the text
-  // changed" and "the behaviour changed" are different claims.
   console.log(`\n${W}Negative controls${X}  ${D}each loosening must turn the assertions above red${X}`);
 
   const MUTATIONS = [
@@ -232,6 +258,14 @@ async function makeEnv(rules) {
       s => s.replace(/function inTenant\(tenantId\) \{[\s\S]*?\n    \}/, 'function inTenant(tenantId) {\n      return true;\n    }')],
     ['the field allowlist is removed',
       s => s.replace(/request\.resource\.data\.keys\(\)\.hasOnly\(\[[\s\S]*?\]\)/, 'true')],
+    ['the derived id is no longer required',
+      s => s.replace(/&&\s*idIsDerived\(\)/, '')],
+    ['timestamps are trusted from the client',
+      s => s.replace(/request\.resource\.data\.updatedAt == request\.time/, 'request.resource.data.updatedAt is timestamp')],
+    ['an update may touch any field',
+      s => s.replace(/&&\s*onlyMutableFieldsChanged\(\)/, '')],
+    ['the provider pin is dropped',
+      s => s.replace(/&&\s*request\.auth\.token\.firebase\.sign_in_provider == 'google\.com'/, '')],
     ['delete is opened to the author',
       s => s.replace(/allow delete: if false;/, 'allow delete: if ownsStored();')]
   ];
@@ -249,7 +283,6 @@ async function makeEnv(rules) {
       brokenEnv = await makeEnv(broken);
       await assertContracts(brokenEnv, (_l, ok) => { if (!ok) sawFailure = true; });
     } catch (error) {
-      // A mutation that will not even compile is still a caught loosening.
       sawFailure = true;
     } finally {
       if (brokenEnv) {

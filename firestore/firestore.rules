@@ -14,6 +14,9 @@ rules_version = '2';
 // 04_PRODUCTS/BeHistorical/Student-Response-Persistence-Architecture-2026-09-08.md.
 // Nothing in the student-facing site reads or writes any of this yet.
 //
+// Hardened 2026-09-29 after an external review. See firestore/README.md for what
+// that review found and the one recommendation it made that was declined.
+//
 // THERE IS NO CATCH-ALL DENY IN THIS FILE, DELIBERATELY.
 //
 // A `match /{document=**} { allow read, write: if false; }` looks like a
@@ -36,6 +39,14 @@ service cloud.firestore {
       return request.auth != null && request.auth.uid != null;
     }
 
+    // Defense in depth. Verified district email is the real check; pinning the
+    // provider means that enabling another sign-in method later, for some
+    // unrelated reason, cannot quietly widen who satisfies the domain test.
+    function viaGoogle() {
+      return signedIn()
+        && request.auth.token.firebase.sign_in_provider == 'google.com';
+    }
+
     // The tenant a caller belongs to, derived from their verified Workspace
     // email domain rather than from a custom claim.
     //
@@ -49,7 +60,7 @@ service cloud.firestore {
     // config document because a config document is a read on every request and a
     // second thing to secure.
     function tenantOfCaller() {
-      return !signedIn() ? ''
+      return !viaGoogle() ? ''
         : !(request.auth.token.email is string) ? ''
         : request.auth.token.email_verified != true ? ''
         : request.auth.token.email.lower().split('@')[1] == 'zcs.k12.in.us' ? 'zcs'
@@ -62,10 +73,9 @@ service cloud.firestore {
 
     // ── Student responses ──────────────────────────────────────────────────
     //
-    // tenants/{tenantId}/responses/{responseId}, flat, exactly as the
-    // architecture record specifies. Two levels of path is what keeps these
-    // rules short enough to audit, which is the one thing here that cannot be
-    // got wrong.
+    // tenants/{tenantId}/responses/{responseId}, flat, as the architecture
+    // record specifies. Two levels of path is what keeps these rules short
+    // enough to audit, which is the one thing here that cannot be got wrong.
 
     match /tenants/{tenantId}/responses/{responseId} {
 
@@ -82,52 +92,119 @@ service cloud.firestore {
         return signedIn() && request.resource.data.studentId == request.auth.uid;
       }
 
+      // THE DOCUMENT ID IS DERIVED, NOT CHOSEN, and this is the change the
+      // external review mattered most for.
+      //
+      // Before it, a signed-in student could create unlimited documents by
+      // varying responseId, because every create satisfied every other check. A
+      // client bug looping on create would have manufactured a new document per
+      // iteration: unbounded storage, unbounded writes, and nothing in the rules
+      // to notice. Deriving the id from the author, the topic and the slot means
+      // one response has exactly one address, so a loop rewrites one document
+      // instead of creating millions.
+      //
+      // This bounds the document COUNT. It does not bound the write RATE; see
+      // "the rate limit that is not here" in firestore/README.md for why that is
+      // the client's job and the daily quota's, and not this file's.
+      function idIsDerived() {
+        return responseId == request.auth.uid + '__'
+          + request.resource.data.topicKey + '__'
+          + request.resource.data.slotId;
+      }
+
       // A response is a fixed shape. hasOnly is what makes this an allowlist
       // rather than a floor: a field nobody designed cannot be smuggled in, and
       // an attacker cannot park arbitrary data in a record that is otherwise
-      // valid.
+      // valid. Every permitted field is typed and bounded, not just the ones
+      // that are required, because an unvalidated optional field is a hole with
+      // a smaller sign on it.
       function shapeIsValid() {
         return request.resource.data.keys().hasOnly([
                  'tenantId', 'studentId', 'courseId', 'sectionId', 'topicKey',
                  'slotId', 'text', 'confidence', 'createdAt', 'updatedAt',
                  'clientId', 'schemaVersion'
                ])
+            // confidence is REQUIRED and may be the empty string. It used to be
+            // optional while the rule read it unconditionally, which in Firestore
+            // means a create that omitted it was denied by an evaluation error
+            // rather than by a decision. A blank answer is expressed as '', not
+            // as an absent key.
             && request.resource.data.keys().hasAll([
                  'tenantId', 'studentId', 'courseId', 'topicKey', 'slotId',
-                 'text', 'updatedAt', 'schemaVersion'
+                 'text', 'confidence', 'createdAt', 'updatedAt', 'schemaVersion'
                ])
             // The record cannot lie about where it lives.
             && request.resource.data.tenantId == tenantId
             && request.resource.data.courseId is string
+            && request.resource.data.courseId.size() <= 32
+            // Bounded shapes rather than an enumerated list of every topic and
+            // slot: enumerating would put a second copy of the lesson inventory
+            // in the security model, and it would go stale silently.
             && request.resource.data.topicKey is string
+            && request.resource.data.topicKey.matches('^[a-z0-9]{1,4}-?[0-9]{0,2}$')
             && request.resource.data.slotId is string
+            && request.resource.data.slotId.matches('^[a-z0-9-]{1,64}$')
             && request.resource.data.schemaVersion is int
-            // A size ceiling is a cost control as much as an abuse control. A
-            // runaway loop cannot be stopped by a spend cap on this product, so
-            // the ceiling that does exist is per document. 64KiB is roughly
-            // sixty times the longest checkpoint answer anyone has written.
+            // A size ceiling is a cost control as much as an abuse control.
+            // Firestore rules count CHARACTERS here, not bytes: String.size() is
+            // a character count, so this is 20,000 characters, roughly sixteen
+            // times the longest checkpoint answer anyone has written.
             && request.resource.data.text is string
-            && request.resource.data.text.size() <= 65536
+            && request.resource.data.text.size() <= 20000
             // Blank is a real answer and must stay cheap to express.
             && (request.resource.data.confidence == ''
                 || (request.resource.data.confidence is int
                     && request.resource.data.confidence >= 1
                     && request.resource.data.confidence <= 5))
-            && request.resource.data.updatedAt is timestamp;
+            // Timestamps are the server's, never the client's. A client-supplied
+            // updatedAt makes the conflict rule guessable and lets a device
+            // backdate a write to win a merge it should have lost.
+            && request.resource.data.updatedAt == request.time
+            && request.resource.data.createdAt is timestamp
+            // Optional fields are still validated when present.
+            && (!('sectionId' in request.resource.data.keys())
+                || (request.resource.data.sectionId is string
+                    && request.resource.data.sectionId.size() <= 32))
+            && (!('clientId' in request.resource.data.keys())
+                || (request.resource.data.clientId is string
+                    && request.resource.data.clientId.size() <= 64));
+      }
+
+      // What an ordinary edit is allowed to touch. Everything else about a
+      // record, who wrote it, which topic and slot it answers, when it was
+      // created, is fixed at creation. Without this a student who owns a
+      // document could move their Checkpoint 2 answer onto the Map slot, or
+      // rewrite its topic, and the record would still pass every other check.
+      function onlyMutableFieldsChanged() {
+        return request.resource.data.diff(resource.data).affectedKeys()
+                 .hasOnly(['text', 'confidence', 'updatedAt', 'clientId']);
       }
 
       // A student reads their own work and nobody else's. Both halves are load
       // bearing: inTenant alone would let one district's student read another
       // student in the same district, and ownsStored alone would let a caller
       // from any domain read a record whose studentId they somehow matched.
+      //
+      // For `list`, remember that rules are filters' gatekeeper and not filters
+      // themselves: a query without an explicit studentId constraint is refused
+      // outright rather than silently narrowed. The emulator test asserts both
+      // directions.
       allow get, list: if inTenant(tenantId) && ownsStored();
 
-      allow create: if inTenant(tenantId) && ownsIncoming() && shapeIsValid();
+      allow create: if inTenant(tenantId)
+                    && ownsIncoming()
+                    && idIsDerived()
+                    && shapeIsValid()
+                    && request.resource.data.createdAt == request.time;
 
       // An update must be the author's, before and after. Without ownsIncoming
       // a student could rewrite their own record to carry someone else's
       // studentId and hand it away.
-      allow update: if inTenant(tenantId) && ownsStored() && ownsIncoming() && shapeIsValid();
+      allow update: if inTenant(tenantId)
+                    && ownsStored()
+                    && ownsIncoming()
+                    && shapeIsValid()
+                    && onlyMutableFieldsChanged();
 
       // Deletion is refused outright, for everyone, including the author.
       //
