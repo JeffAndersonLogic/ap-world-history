@@ -1129,6 +1129,52 @@ write to a cloud one-for-one**, and the keystroke path is the reason that
 sentence is in this file rather than assumed: any sync layer is a separate
 throttle over all three, never a hook on the existing ones.
 
+## Firestore security rules
+
+`firestore/firestore.rules` is the security model for student response
+persistence, and `firestore/README.md` is the standing explanation. **Nothing in
+the site reads or writes Firestore yet**; this is Phase 2 groundwork, and Phase 2
+cannot ship until under-18 app approval lands in the ZCS Workspace Admin console.
+
+ZCS approved the **free Spark plan** and confirmed FERPA on 2026-09-29, after
+Finance declined open-ended billing. Three things follow from that and none of
+them are cosmetic:
+
+**Firestore cannot be spend-capped, so the free plan's daily quota is the only
+hard financial stop.** Google's native spend caps cover Firebase AI Logic, App
+Hosting, Cloud Functions and Extensions; Firestore is not on the list and takes
+no configurable operations quota either. A runaway loop on Spark produces an
+outage; the same loop on Blaze produces an invoice nobody can bound. **Do not
+"upgrade to Blaze to be safe."** It is strictly less safe financially, and it is
+a decision that has to go back through the district.
+
+**Spark has no Cloud Functions, so tenant identity is derived from the verified
+Workspace email domain rather than from a custom claim.** That is the one design
+choice in this file made against a billing constraint rather than a security one,
+and it is the first thing to revisit if the plan ever changes.
+
+**The per-document size ceiling is a cost control.** It is the only limit that
+applies per write rather than per day, and losing it is silent.
+
+**Deletion is refused for everyone, including the author.** A system installed
+because student work vanishes does not ship a delete button a student can reach.
+
+**Two checks, and the split is the usual one.** `scripts/check-firestore-rules.js`
+is offline, dependency-free and in the push gate; it cannot evaluate the rules and
+only catches the shapes that are catastrophic on their face, above all
+`allow read, write: if request.auth != null`. `scripts/test/firestore-rules.test.js`
+runs them against the real engine and needs the emulator, so it exits 2 and SKIPs
+on a bare checkout, in its own `rules` suite rather than folded into `browser`.
+**Neither CI workflow runs it yet**, which is a real gap and is stated in the
+README rather than papered over.
+
+**The offline check strips comments before parsing, and that is load-bearing.**
+The prose in `firestore.rules` explaining why a catch-all deny is useless contains
+the literal `allow read, write: if false;`. The first version of the checker
+counted five allow statements in a file with four and reported a wildcard block
+that does not exist as safely denied. It passed, on a comment. A checker that
+reads documentation as code can be made to pass by writing a sentence.
+
 ## The Lecture Deck
 
 The deck is a sequence and carries sequence controls in **both** renderers:

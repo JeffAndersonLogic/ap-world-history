@@ -1,0 +1,143 @@
+rules_version = '2';
+
+// BeHistorical student response persistence: the security model.
+//
+// In Firestore the rules ARE the protection. There is no application server in
+// front of this and no second layer behind it, so a wrong line here is not a
+// bug, it is every student's writing readable by anyone who can sign in. That
+// is why this file is short, why every allow is constrained by identity rather
+// than by authentication, and why it is checked twice: offline by
+// scripts/check-firestore-rules.js in the push gate, and against the real
+// Firestore engine by scripts/test/firestore-rules.test.js.
+//
+// Phase 2 of the persistence plan in AndersonLogic-OS at
+// 04_PRODUCTS/BeHistorical/Student-Response-Persistence-Architecture-2026-09-08.md.
+// Nothing in the student-facing site reads or writes any of this yet.
+//
+// THERE IS NO CATCH-ALL DENY IN THIS FILE, DELIBERATELY.
+//
+// A `match /{document=**} { allow read, write: if false; }` looks like a
+// backstop and is not one: Firestore ORs the allow statements of every matching
+// rule, so an explicit false cannot veto a true written elsewhere. It would read
+// as a safety net while catching nothing. The real default is that anything this
+// file does not name is refused, and the offline check enforces that no rule is
+// satisfiable by being signed in alone.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Identity ───────────────────────────────────────────────────────────
+    //
+    // Signed in is necessary and never sufficient. Every allow below also
+    // constrains WHICH records, because "any authenticated user" is the shape
+    // that turns one student's account into every student's work.
+
+    function signedIn() {
+      return request.auth != null && request.auth.uid != null;
+    }
+
+    // The tenant a caller belongs to, derived from their verified Workspace
+    // email domain rather than from a custom claim.
+    //
+    // Custom claims would be cleaner and are how this should work eventually.
+    // They need a Cloud Function on the auth trigger, and Cloud Functions
+    // require the paid plan, which ZCS finance declined on 2026-09-29. Deriving
+    // from the domain needs no server and no billing account, and the domain is
+    // asserted by Google rather than by us.
+    //
+    // Adding a district is one line here. It stays in the rules rather than in a
+    // config document because a config document is a read on every request and a
+    // second thing to secure.
+    function tenantOfCaller() {
+      return !signedIn() ? ''
+        : !(request.auth.token.email is string) ? ''
+        : request.auth.token.email_verified != true ? ''
+        : request.auth.token.email.lower().split('@')[1] == 'zcs.k12.in.us' ? 'zcs'
+        : '';
+    }
+
+    function inTenant(tenantId) {
+      return tenantOfCaller() != '' && tenantOfCaller() == tenantId;
+    }
+
+    // ── Student responses ──────────────────────────────────────────────────
+    //
+    // tenants/{tenantId}/responses/{responseId}, flat, exactly as the
+    // architecture record specifies. Two levels of path is what keeps these
+    // rules short enough to audit, which is the one thing here that cannot be
+    // got wrong.
+
+    match /tenants/{tenantId}/responses/{responseId} {
+
+      // The record already stored belongs to the caller.
+      function ownsStored() {
+        return signedIn() && resource.data.studentId == request.auth.uid;
+      }
+
+      // The record being written names the caller as its author. Checked
+      // separately from ownsStored: on a create there is no stored document, and
+      // on an update a caller must not be able to reassign a record to someone
+      // else or away from themselves.
+      function ownsIncoming() {
+        return signedIn() && request.resource.data.studentId == request.auth.uid;
+      }
+
+      // A response is a fixed shape. hasOnly is what makes this an allowlist
+      // rather than a floor: a field nobody designed cannot be smuggled in, and
+      // an attacker cannot park arbitrary data in a record that is otherwise
+      // valid.
+      function shapeIsValid() {
+        return request.resource.data.keys().hasOnly([
+                 'tenantId', 'studentId', 'courseId', 'sectionId', 'topicKey',
+                 'slotId', 'text', 'confidence', 'createdAt', 'updatedAt',
+                 'clientId', 'schemaVersion'
+               ])
+            && request.resource.data.keys().hasAll([
+                 'tenantId', 'studentId', 'courseId', 'topicKey', 'slotId',
+                 'text', 'updatedAt', 'schemaVersion'
+               ])
+            // The record cannot lie about where it lives.
+            && request.resource.data.tenantId == tenantId
+            && request.resource.data.courseId is string
+            && request.resource.data.topicKey is string
+            && request.resource.data.slotId is string
+            && request.resource.data.schemaVersion is int
+            // A size ceiling is a cost control as much as an abuse control. A
+            // runaway loop cannot be stopped by a spend cap on this product, so
+            // the ceiling that does exist is per document. 64KiB is roughly
+            // sixty times the longest checkpoint answer anyone has written.
+            && request.resource.data.text is string
+            && request.resource.data.text.size() <= 65536
+            // Blank is a real answer and must stay cheap to express.
+            && (request.resource.data.confidence == ''
+                || (request.resource.data.confidence is int
+                    && request.resource.data.confidence >= 1
+                    && request.resource.data.confidence <= 5))
+            && request.resource.data.updatedAt is timestamp;
+      }
+
+      // A student reads their own work and nobody else's. Both halves are load
+      // bearing: inTenant alone would let one district's student read another
+      // student in the same district, and ownsStored alone would let a caller
+      // from any domain read a record whose studentId they somehow matched.
+      allow get, list: if inTenant(tenantId) && ownsStored();
+
+      allow create: if inTenant(tenantId) && ownsIncoming() && shapeIsValid();
+
+      // An update must be the author's, before and after. Without ownsIncoming
+      // a student could rewrite their own record to carry someone else's
+      // studentId and hand it away.
+      allow update: if inTenant(tenantId) && ownsStored() && ownsIncoming() && shapeIsValid();
+
+      // Deletion is refused outright, for everyone, including the author.
+      //
+      // This system exists because student work vanishes. A delete path that a
+      // student can reach is one more way for it to vanish, and "I deleted it by
+      // accident" is indistinguishable at the database from the failure this
+      // project was installed to fix. District retention and deletion are
+      // administrative operations run with admin credentials, which bypass these
+      // rules by design.
+      allow delete: if false;
+    }
+  }
+}

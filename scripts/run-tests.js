@@ -37,6 +37,7 @@ const SUITES = {
   offline: [
     ['scripts/validate.js', 'structure, capture wiring, image integrity'],
     ['scripts/check-module07-authored.js', 'Units converted to one authored Module 07 evidence pool'],
+    ['scripts/check-firestore-rules.js', 'Firestore rules not loosened into the shape that leaks everything'],
     ['scripts/test/canvas-paragraphs.test.js', 'Canvas blank-line round trip'],
     ['scripts/test/canvas-rich-clipboard.test.js', 'Canvas rich hierarchy + HTML/plain clipboard contract'],
     ['scripts/test/canvas-zip.test.js', 'zip reader + CLI/browser CSV parity'],
@@ -77,6 +78,20 @@ const SUITES = {
     ['scripts/test/ebook-a11y.test.js', 'eBook landmarks, focus, reflow, contrast'],
     ['scripts/test/ebook-listen.test.js', 'eBook section narration, one section at a time'],
     ['scripts/test/announcements-refresh.test.js', 'board re-reads its file when the day rolls over']
+  ],
+  // A third suite, because the Firestore rules have a third dependency story:
+  // not a bare checkout, not Chromium, but @firebase/rules-unit-testing plus a
+  // Java runtime and a running emulator. It is its own suite rather than a line
+  // in `browser` so that a Chromium job cannot report green having skipped it,
+  // and so the command to run it says what it needs.
+  //
+  //   npx firebase emulators:exec --only firestore "node scripts/run-tests.js rules --strict"
+  //
+  // Neither CI workflow runs this yet. That is a gap and it is written down
+  // rather than papered over: scripts/check-firestore-rules.js is what actually
+  // gates a push today, and it is textual.
+  rules: [
+    ['scripts/test/firestore-rules.test.js', 'security rules against the real Firestore engine']
   ]
 };
 
@@ -127,9 +142,12 @@ const args = process.argv.slice(2);
 const strict = args.includes('--strict');
 const which = args.find(a => !a.startsWith('-')) || 'offline';
 
+// `all` stays offline + browser deliberately. `rules` needs the emulator wrapped
+// around the whole command, not a package it can locate itself, so folding it in
+// would make `npm run test:all` print a SKIP that nothing can act on.
 const names = which === 'all' ? ['offline', 'browser'] : [which];
 if (names.some(n => !SUITES[n])) {
-  console.error(`Unknown suite "${which}". Expected: offline, browser, all.`);
+  console.error(`Unknown suite "${which}". Expected: offline, browser, rules, all.`);
   process.exit(2);
 }
 

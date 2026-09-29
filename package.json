@@ -50,7 +50,9 @@
     "build:wordmark": "node scripts/build-wordmark.js",
     "check:module07": "node scripts/check-module07-authored.js",
     "report:evidence": "node scripts/report-evidence-authenticity.js",
-    "source:images": "node scripts/source-evidence-images.js"
+    "source:images": "node scripts/source-evidence-images.js",
+    "test:rules": "node scripts/run-tests.js rules",
+    "check:rules": "node scripts/check-firestore-rules.js"
   },
   "devDependencies": {
     "playwright": "^1.49.0"
