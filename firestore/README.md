@@ -87,8 +87,14 @@ capable of failing is an assumption rather than evidence.
 
 ## Still to do before anything reaches a student
 
-- Under-18 app approval in the ZCS Workspace Admin console. Nothing works
-  without it.
+- **App access configuration in the ZCS Workspace Admin console. Nothing works
+  without it.** Students designated as under 18 are blocked from any third-party
+  app that has no access setting yet, which is the default for Education
+  accounts rather than something a district switches on. There is no
+  "allow unconfigured apps for minors" toggle to look for: configuring the app
+  *is* the mechanism. **The setting to request is Limited, not Trusted.** Limited
+  permits sign-in and unrestricted profile data, which is all this needs; Trusted
+  would grant restricted Google services the app never touches.
 - A ZCS-owned project for the rules to be deployed into.
 - A second pair of eyes on this file from someone on the district's Cloud team.
 - The emulator in CI, so the real check gates rather than skips.
