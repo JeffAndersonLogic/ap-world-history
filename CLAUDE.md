@@ -1168,6 +1168,19 @@ on a bare checkout, in its own `rules` suite rather than folded into `browser`.
 **Neither CI workflow runs it yet**, which is a real gap and is stated in the
 README rather than papered over.
 
+**It has now been run: green on 2026-09-29**, 37 assertions and 8 negative
+controls, no rule changes needed. `npm run test:rules:emulator` is the one
+command, after `npm i --no-save firebase-tools firebase @firebase/rules-unit-testing`.
+The install is `--no-save` for the same reason `playwright-core` is: 731 packages
+in `devDependencies` would be installed by every CI job including the ones that
+never run this.
+
+**Production Firestore is deny-all and these rules are not deployed.** The
+`behistorical-zcs` project exists with `allow read, write: if false` live, which
+is where it stays until a person reviews and decides. **Nothing here deploys**:
+there is no `firebase deploy` in any script, and adding one is a decision rather
+than a convenience.
+
 **An external review on 2026-09-29 found the rules protected confidentiality
 well and bounded write volume badly**, and the fix is the shape of the data
 rather than a new rule. The document id is **derived**,

@@ -25,10 +25,20 @@
  * environment where nobody is watching for it. Pass --strict, which turns the
  * skip into a failure, anywhere the emulator is supposed to be running.
  *
- * **THIS FILE HAS NOT YET BEEN RUN.** It was written in an environment with no
- * emulator, so it is unverified code asserting things about verified-by-nothing.
- * Do not describe the rules as tested, to the district or anywhere else, until
- * this has gone green once. That is the whole reason the sentence is here.
+ * FIRST GREEN RUN: 2026-09-29, against cloud-firestore-emulator v1.22.0. All 37
+ * assertions passed and all 8 negative controls caught, with no rule changes
+ * needed. Before that this file carried a warning that it had never been
+ * executed; it is recorded here rather than deleted, because "written" and
+ * "run" are different claims and the gap between them lasted a day.
+ *
+ * WHAT THE ENGINE PRINTS THAT LOOKS LIKE A PROBLEM AND IS NOT
+ *
+ * A run logs many `evaluation error at L<n>` lines beside its PERMISSION_DENIED
+ * results. Firestore evaluates every allow statement that matches the path, so a
+ * create attempt also evaluates `allow update`, whose `ownsStored()` reads
+ * `resource.data` on a document that does not exist yet and throws. The write is
+ * denied either way. What matters is that the paths which SHOULD succeed
+ * evaluate cleanly, and every positive assertion here passes.
  */
 
 const fs = require('fs');
@@ -229,7 +239,7 @@ async function assertContracts(env, report) {
 }
 
 async function makeEnv(rules) {
-  return initializeTestEnvironment({ projectId: 'behistorical-rules-test', firestore: { rules } });
+  return initializeTestEnvironment({ projectId: 'demo-behistorical-rules', firestore: { rules } });
 }
 
 (async () => {

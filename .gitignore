@@ -6,3 +6,9 @@ package-lock.json
 
 # Socrates eval transcripts, regenerated per run and not a fixture.
 scripts/test/.socrates-eval-out/
+
+# Firebase emulator scratch. Regenerated on every run, never a fixture.
+firestore-debug.log
+firebase-debug.log
+ui-debug.log
+.firebase/

@@ -130,18 +130,42 @@ and passed on it.
 
 **`node scripts/test/firestore-rules.test.js`** runs the rules against
 Firestore's own engine and is the check that actually knows whether the model
-works. It needs the emulator:
+works. One command:
 
 ```bash
-npm i -D @firebase/rules-unit-testing firebase-tools
-npx firebase emulators:exec --only firestore \
-  "node scripts/run-tests.js rules --strict"
+npm i --no-save firebase-tools firebase @firebase/rules-unit-testing
+npm run test:rules:emulator
 ```
 
-It exits 2 and prints SKIP when those are absent, the same contract every
-browser test here follows. **A SKIP is not a pass**, and neither CI workflow
-runs this yet. That gap is real and written down rather than papered over: what
-gates a push today is the textual check.
+The install is `--no-save` on purpose, the same way `playwright-core` is treated:
+`validate.js` must stay runnable on a bare checkout, and 731 packages in
+`devDependencies` would be installed by every CI job including the ones that
+never run this.
+
+**First green run: 2026-09-29**, against cloud-firestore-emulator v1.22.0. 37
+assertions, 8 negative controls, no rule changes needed. That date is recorded
+because "written" and "run" are different claims and there was a day between
+them.
+
+It exits 2 and prints SKIP without the emulator, the same contract every browser
+test here follows. **A SKIP is not a pass**, and neither CI workflow runs this
+yet. That gap is real and written down rather than papered over: what gates a
+push today is the textual check.
+
+**The project is `behistorical-zcs` and the emulator runs as
+`demo-behistorical-rules`.** `.firebaserc` names the real project; the test uses
+a separate `demo-` prefixed id, which is Firebase's own convention for an
+emulator-only project and which makes it impossible for a test run to touch
+anything real. `singleProjectMode` is off in `firebase.json` so the two ids can
+coexist. The emulator is pinned to `127.0.0.1:8085`: this container has no IPv6,
+and the default port was being held by a previous run.
+
+**A run prints many `evaluation error at L<n>` lines and they are not a
+problem.** Firestore evaluates every allow statement matching the path, so a
+create attempt also evaluates `allow update`, whose `ownsStored()` reads
+`resource.data` on a document that does not exist and throws. The write is denied
+either way. What matters is that the paths which should succeed evaluate
+cleanly, and every positive assertion passes.
 
 Both carry their own negative controls, because a green from a check never shown
 capable of failing is an assumption rather than evidence.
@@ -157,10 +181,13 @@ capable of failing is an assumption rather than evidence.
   permits sign-in and unrestricted profile data, which is all this needs; Trusted
   would grant restricted Google services the app never touches.
 - A ZCS-owned project for the rules to be deployed into.
-- **Run the emulator test.** It has never been executed: it was written in an
-  environment with no emulator and it SKIPs. Until it goes green once, the rules
-  are written and gated textually and verified by nothing. Do not describe them
-  as tested.
+- ~~Run the emulator test.~~ **Done 2026-09-29**, green on the first run.
+- **Production Firestore is still deny-all, and stays that way.** The project
+  exists and the database exists, with `allow read, write: if false` live. These
+  rules are not deployed and must not be until a person has reviewed them and
+  decided to. Nothing in this repository deploys anything; there is no
+  `firebase deploy` in any script, and adding one is a decision rather than a
+  convenience.
 - A second pair of eyes on this file from someone on the district's Cloud team.
 - The emulator in CI, so the real check gates rather than skips.
 - The sync layer itself, which does not exist. `assets/js/behistorical-save-health.js`
