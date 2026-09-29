@@ -1611,6 +1611,9 @@ section('Teacher command center');
     //
     const interactive = TC_INTERACTIVE || [];
     const declaredPages = new Set(interactive.map(t => t.out));
+    const compatibilityAliases = new Set(
+      TC_TOOLS.flatMap(tool => Array.isArray(tool.aliases) ? tool.aliases : [])
+    );
     for (const entry of interactive) {
       totalChecks++;
       const outPath = path.join(ROOT, 'teacher', entry.out);
@@ -1629,8 +1632,8 @@ section('Teacher command center');
     for (const found of glob(path.join(ROOT, 'teacher'), /^command-center-.*\.html$/)) {
       const base = path.basename(found);
       totalChecks++;
-      if (!declaredPages.has(base)) {
-        err(found, 'interactive lesson has no entry in build-teacher-index.js INTERACTIVE_TOPICS, so the Today panel can never route to it');
+      if (!declaredPages.has(base) && !compatibilityAliases.has(base)) {
+        err(found, 'interactive lesson has no entry in build-teacher-index.js INTERACTIVE_TOPICS and is not a registered compatibility alias');
       }
     }
   }

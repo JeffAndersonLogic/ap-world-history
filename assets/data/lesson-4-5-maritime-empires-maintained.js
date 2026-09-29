@@ -174,9 +174,9 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Indian cotton textile production",
-          caption: "Global demand often intensified existing artisan production instead of replacing it.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Indian_weaver.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Indian_weaver.jpg"
+          caption: "An Indian weaver at his loom, in a gouache drawing now in the Wellcome Collection. Global demand often intensified existing artisan production instead of replacing it.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Indian%20weaver%20at%20his%20loom.%20Gouache%20drawing.%20Wellcome%20V0045300.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Indian_weaver_at_his_loom._Gouache_drawing._Wellcome_V0045300.jpg"
         }
       },
       {

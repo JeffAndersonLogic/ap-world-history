@@ -13,8 +13,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "subtitle": "Why did trade grow after 1200?",
       "visual": {
         "url": "../assets/images/topics/2-1/2.1%20-%20Silk%20Road%20Map%202.jpg",
-        "alt": "Silk Road network map used as a cinematic opening visual",
-        "credit": "Topic 2.1 classroom visual"
+        "alt": "Map of Silk Road and Indian Ocean trade routes connecting China and the Middle East",
+        "credit": "Map · Silk Road and Indian Ocean trade routes, c. 600 to 1700"
       }
     },
     {
@@ -68,7 +68,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "prompt",
       "eyebrow": "The Economic Problem",
       "title": "A luxury good is valuable only if it survives the journey.",
-      "subtitle": "Distance creates risk. Risk creates cost. Cost limits trade."
+      "subtitle": "Distance creates risk. Risk creates cost. Cost limits trade.",
+      "kc": "KC-3.1.I.C.i"
     },
     {
       "kind": "process",
@@ -100,10 +101,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Luxury goods made distance worth it.",
       "visual": {
         "url": "../assets/images/topics/2-1/2.1%20-%20Porcelain%20silk%20luxury%20goods.jpeg",
-        "alt": "Porcelain and silk representing high-value luxury goods traded across Afro-Eurasia",
-        "credit": "Topic 2.1 classroom visual · Luxury goods"
+        "alt": "Historical reconstruction (AI generated) of porcelain and silk representing high-value luxury goods traded across Afro-Eurasia, not a historical source",
+        "credit": "Historical Reconstruction - AI Generated"
       },
-      "footer": "Porcelain · textiles · silk · spices · iron · steel"
+      "footer": "Porcelain · textiles · silk · spices · iron · steel",
+      "kc": "KC-3.3.I.B"
     },
     {
       "kind": "hero",
@@ -113,15 +115,17 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "visual": {
         "url": "../assets/images/topics/2-1/2.1%20-%20Caravanserai%20Reconstruction.png",
         "alt": "Historical reconstruction of a caravanserai serving long-distance merchants",
-        "credit": "HISTORICAL RECONSTRUCTION — AI GENERATED"
+        "credit": "Historical Reconstruction - AI Generated"
       },
-      "footer": "Infrastructure reduced the cost and risk of distance."
+      "footer": "Infrastructure reduced the cost and risk of distance.",
+      "kc": "KC-3.1.I.C.i"
     },
     {
       "kind": "grid",
       "eyebrow": "Big Rock 2 · Commercial Practices",
       "title": "Merchants also needed financial systems.",
       "footer": "Commercial tools reduced financial risk; political stability could reduce route risk.",
+      "kc": "KC-3.1.I.C.i",
       "cards": [
         {
           "title": "BILLS OF EXCHANGE",
@@ -170,16 +174,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Trade networks create powerful nodes.",
       "visual": {
         "url": "../assets/images/topics/2-1/2.1%20-%20Samarkand.jpg",
-        "alt": "Samarkand as a major Silk Road trading city",
-        "credit": "Topic 2.1 classroom visual · Samarkand"
+        "alt": "Historical reconstruction (AI generated) of Samarkand as a major Silk Road trading city, not a historical source",
+        "credit": "Historical Reconstruction - AI Generated"
       },
-      "footer": "Kashgar and Samarkand are evidence, not trivia."
+      "footer": "Kashgar and Samarkand are evidence, not trivia.",
+      "kc": "KC-3.1.I.A.i"
     },
     {
       "kind": "map",
       "eyebrow": "Map Check",
       "title": "Follow the nodes, not just the line.",
-      "footer": "Central Asia matters because routes, cities, and intermediaries converged there."
+      "footer": "Central Asia matters because routes, cities, and intermediaries converged there.",
+      "kc": "KC-3.1.I.A.i"
     },
     {
       "kind": "action",

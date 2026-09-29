@@ -104,7 +104,7 @@ module.exports = {
     vocabulary: ['Chinggis Khan', 'Mounted Archers', 'Siege Warfare', 'Yam', 'Pax Mongolica', 'Khanates', 'Uyghur Script', 'Greco-Islamic Medical Knowledge', 'Numbering Systems'],
     sections: [
       section('1', 'Build', 'Chinggis Khan Turns Steppe Warriors into an Empire', [
-        'Around 1200, the Mongols were not one giant empire. They were nomadic peoples of the Eurasian steppe. Then Temujin—better known as <span class="kt">Chinggis Khan</span>—united many competing groups and reorganized them into a disciplined military system.',
+        'Around 1200, the Mongols were not one giant empire. They were nomadic peoples of the Eurasian steppe. Then Temujin, better known as <span class="kt">Chinggis Khan</span>, united many competing groups and reorganized them into a disciplined military system.',
         'Mongol armies used fast <span class="kt">mounted archers</span>, intelligence, coordination, and tactics such as feigned retreat. Just as important, they adapted. When horses and bows could not break fortified cities, the Mongols recruited engineers and borrowed <span class="kt">siege warfare</span> from conquered peoples. Their pattern was simple: <strong>conquer → learn → adapt → conquer again.</strong>'
       ], 'AP Thinking, Causation', '<strong>Explain the mechanism, not just the weapon.</strong> Organization, mobility, and adaptation worked together to make conquest possible.'),
       section('2', 'Connect', 'Conquest Creates a New Problem: How Do You Run It?', [
@@ -125,7 +125,7 @@ module.exports = {
     questions: [
       { num: '01', skill: 'Causation', text: 'How did the Mongols build such a large empire?', placeholder: 'The Mongols built power by...' },
       { num: '02', skill: 'Continuity & Change', text: 'What stayed the same about the Silk Roads, and what changed under Mongol rule?', placeholder: 'The routes continued, but Mongol rule changed...' },
-      { num: '03', skill: 'Significance', text: 'Choose one transfer—Greco-Islamic medicine, numbering systems, or the Uyghur script. What does it show about Mongol-era connectivity?', placeholder: 'The example of ___ shows that...' }
+      { num: '03', skill: 'Significance', text: 'Choose one transfer: Greco-Islamic medicine, numbering systems, or the Uyghur script. What does it show about Mongol-era connectivity?', placeholder: 'The example of ___ shows that...' }
     ]
   }),
 
@@ -136,37 +136,39 @@ module.exports = {
     lessonPage: 'lesson-2-3-indian-ocean.html',
     docTitle: 'BeHistorical — Module 03 | First &amp; 10 | Topic 2.3 Indian Ocean Trade',
     headerSubtitle: 'Topic 2.3, Indian Ocean Trade &nbsp;|&nbsp; AP World History: Modern',
-    titleHtml: 'How an Ocean Became a <em>Trade System</em>',
-    deck: 'Indian Ocean exchange intensified because sailors combined environmental knowledge with better maritime technology. Expanding trade strengthened states and port cities, supported diasporic merchant communities, and created opportunities for state-backed voyages such as those led by Zheng He.',
-    skillTags: ['Causation', 'Environment', 'Cultural Interaction'],
+    titleHtml: 'The Ocean That Ran on a <em>Schedule</em>',
+    deck: 'Sailors had crossed the Indian Ocean for centuries. After 1200, predictable winds and better tools let far more goods move far more reliably, and that reliability built port cities, merchant communities, and a stage for Ming China\'s great voyages.',
+    skillTags: ['Causation', 'Contextualization', 'Economic Systems'],
+    supportHeadings: { before: 'The Story to Hold Onto', target: 'Question for Today' },
     supportCards: {
-      beforeYouRead: 'Track a system: monsoon knowledge made movement predictable; the compass, astrolabe, and larger ships increased capability; expanding exchange then changed states and merchant communities.',
-      readingTarget: 'By the end, you should be able to explain the environmental and technological causes of Indian Ocean trade growth and its effects on states, diasporic communities, and interregional contact.'
+      beforeYouRead: '<strong>Old routes → Predictable winds + better tools → More trade → Ports, diasporas, and Zheng He.</strong> Use that chain to organize everything you meet.',
+      readingTarget: 'Why did Indian Ocean trade grow after 1200, and what did that growth change?'
     },
     vocabulary: ['Monsoon Winds', 'Compass', 'Astrolabe', 'Larger Ship Designs', 'Swahili Coast', 'Gujarat', 'Sultanate of Malacca', 'Diasporic Communities', 'Zheng He', 'Ming Dynasty'],
     sections: [
-      section('1', 'Environment', 'Monsoon Knowledge Made Voyages Predictable', [
-        'Indian Ocean sailors learned the seasonal pattern of <span class="kt">monsoon winds</span>. Because the winds reversed direction at predictable times of year, merchants could plan outward and return voyages instead of treating the ocean as an unpredictable barrier.',
-        'Environmental knowledge was therefore an economic resource. Knowing when to sail, where to wait, and when winds would reverse reduced uncertainty and helped support regular long-distance exchange.'
-      ], 'AP Thinking, Environment', '<strong>The monsoon did not cause trade by itself.</strong> The environmental pattern existed; human knowledge of that pattern made it useful.'),
-      section('2', 'Technology', 'Navigation and Larger Ships Expanded What Was Possible', [
-        'Maritime traders used and improved existing technologies, including the <span class="kt">compass</span> and <span class="kt">astrolabe</span>. These tools helped sailors determine direction and position during long voyages.',
-        '<span class="kt">Larger ship designs</span> increased carrying capacity. Combined with navigational knowledge, bigger vessels made it possible to move greater quantities of goods across longer maritime distances.'
-      ], 'AP Thinking, Causation', '<strong>Connect technology to outcome:</strong> better navigation and greater capacity increased the volume and geographic range of trade.'),
-      section('3', 'Effects', 'Trade Strengthened States and Merchant Communities', [
-        'Indian Ocean commerce fostered the growth of states and commercial centers. The CED highlights the <span class="kt">Swahili Coast</span>, <span class="kt">Gujarat</span>, and the <span class="kt">Sultanate of Malacca</span> as examples of places whose power was tied to maritime exchange.',
-        'Merchants also created <span class="kt">diasporic communities</span>. Arab and Persian communities in East Africa, Chinese merchant communities in Southeast Asia, and Malay communities around the basin maintained ties to their home cultures while adapting to local societies.'
-      ], 'AP Thinking, Cultural Interaction', '<strong>Diaspora is two-way interaction.</strong> Merchants introduced traditions into local cultures, and local cultures also influenced merchant communities.'),
-      section('4', 'State-Backed Contact', 'Zheng He and Ming Maritime Activity', [
-        'In the early 15th century, Ming China sponsored major voyages led by Admiral <span class="kt">Zheng He</span>. His fleets traveled through Southeast Asia and the Indian Ocean, visiting ports in South Asia, the Middle East, and East Africa.',
-        'The voyages demonstrate that Indian Ocean connectivity included more than private merchants. States could also use maritime networks for diplomacy, prestige, tribute relationships, and cultural exchange. Zheng He therefore fits the larger CED pattern of interregional contact encouraging cultural and technological transfer.'
-      ], 'AP Thinking, Significance', '<strong>Zheng He is not a side story.</strong> His voyages show how an established commercial network could also support large-scale state-sponsored contact.')
+      section('1', 'Schedule', 'An Old Ocean Starts Running on a Calendar', [
+        'Long before 1200, sailors from East Africa, Arabia, Persia, India, and Southeast Asia were already crossing the Indian Ocean. The routes were old. What changed after 1200 is how much moved along them, and how far.',
+        'The key was the <span class="kt">monsoon winds</span>. In winter, the winds over the Indian Ocean blow from the northeast. In summer, they reverse and blow from the southwest. A merchant who knew that pattern could sail from India to East Africa on the winter winds, trade, wait, and sail home when the winds turned. The ocean stopped being a gamble and started running on a schedule.'
+      ], 'AP Thinking, Contextualization', '<strong>Start before 1200.</strong> Indian Ocean trade was not new. Your job is to explain why an old network grew larger and busier.'),
+      section('2', 'Tools', 'Better Tools Let Ships Go Farther and Carry More', [
+        'Knowing when to sail was half the problem. Sailors also had to know where they were. The <span class="kt">compass</span> pointed north even when clouds hid the stars. The <span class="kt">astrolabe</span> let a navigator measure the height of the sun or a star and work out how far north or south the ship had traveled.',
+        '<span class="kt">Larger ship designs</span> mattered too. A bigger hull carries more cargo on every trip, which makes each long voyage more worth taking. Put predictable winds together with better navigation and bigger ships, and trade grew in two ways at once: more goods moved, and they moved across a wider area.'
+      ], 'AP Thinking, Causation', '<strong>Explain the mechanism, not the gadget.</strong> A compass matters because it made long voyages less risky. Tie each tool to what merchants could now do.'),
+      section('3', 'Ports', 'Waiting for the Wind Built Cities and Communities', [
+        'Here is the catch in the schedule: if the wind turns only twice a year, merchants spend months waiting in port. Waiting merchants need warehouses, markets, lodging, food, ship repair, and people who can translate. The ports that supplied those services grew rich by taxing and organizing the trade that passed through them.',
+        'That is how Indian Ocean trade built states. City-states on the <span class="kt">Swahili Coast</span> of East Africa, such as Kilwa, traded gold and ivory from the African interior. <span class="kt">Gujarat</span> in western India sent cotton textiles across the ocean. The <span class="kt">Sultanate of Malacca</span>, founded around 1400, controlled the Strait of Malacca, the main passage between the Indian Ocean and the South China Sea.',
+        'Some merchants stayed for good and formed <span class="kt">diasporic communities</span>: groups living far from home while keeping ties to it. Arab and Persian merchants settled in East African ports, Chinese merchants settled in Southeast Asia, and Malay communities traded across the whole basin. Influence ran both ways. On the Swahili Coast, a Bantu language absorbed many Arabic words, and Islam took root in the port towns alongside local traditions.'
+      ], 'AP Thinking, Causation', '<strong>Follow the chain to its effects.</strong> Predictable trade meant waiting, waiting built ports, and ports grew into states and communities.'),
+      section('4', 'Twist', 'Zheng He Sailed Into a Network China Did Not Build', [
+        'In the early 1400s, the <span class="kt">Ming Dynasty</span> of China sent Admiral <span class="kt">Zheng He</span> on seven enormous voyages between 1405 and 1433. His fleets visited ports in Southeast Asia, India, Arabia, and East Africa, carrying gifts, collecting tribute, and displaying Chinese power.',
+        'Zheng He did not create Indian Ocean trade. He could sail so far because the network was already there: the ports, the pilots, the knowledge of the winds, and the trading relationships. When the Ming stopped the voyages, the merchant network kept running without them.'
+      ], 'AP Thinking, Significance', '<strong>Use Zheng He as evidence, not as the origin.</strong> His voyages show how large and mature the network had become, and how a state could use it for diplomacy and prestige.')
     ],
-    takeaway: 'Monsoon knowledge made Indian Ocean travel predictable; the compass, astrolabe, and larger ships increased capability; expanding trade strengthened the Swahili Coast, Gujarat, and Malacca, created diasporic communities, and supported state-backed maritime contact under Zheng He.',
+    takeaway: 'The ocean ran on a schedule. Monsoon knowledge made voyages predictable; the compass, astrolabe, and larger ships let more goods travel farther; and the months of waiting built port states on the Swahili Coast, in Gujarat, and at Malacca, along with diasporic merchant communities. Zheng He\'s Ming fleets show how mature that network was by the 1400s.',
     questions: [
-      { num: '01', skill: 'Causation', text: 'Explain how monsoon knowledge and two maritime technologies helped Indian Ocean trade intensify after 1200.', placeholder: 'Indian Ocean trade intensified because...' },
-      { num: '02', skill: 'Effects', text: 'Explain one effect of Indian Ocean trade on a state and one effect on a diasporic merchant community.', placeholder: 'Trade affected the state of ___ by... and merchant communities by...' },
-      { num: '03', skill: 'Significance', text: 'Explain how Zheng He illustrates the role of states in the connected Indian Ocean world.', placeholder: 'Zheng He illustrates state involvement because...' }
+      { num: '01', skill: 'Causation', text: 'Explain how monsoon knowledge and one maritime technology helped Indian Ocean trade grow after 1200.', placeholder: 'Indian Ocean trade grew because...' },
+      { num: '02', skill: 'Effects', text: 'Choose one port state (the Swahili Coast, Gujarat, or Malacca) and one merchant community. Explain how growing trade changed each.', placeholder: 'Growing trade changed ___ by... and it changed merchant communities by...' },
+      { num: '03', skill: 'Significance', text: 'Zheng He sailed into a network China did not build. What do his voyages show about the Indian Ocean world by the 1400s?', placeholder: 'Zheng He\'s voyages show that...' }
     ]
   }),
 
@@ -177,37 +179,39 @@ module.exports = {
     lessonPage: 'lesson-2-4-trans-saharan.html',
     docTitle: 'BeHistorical — Module 04 | First &amp; 10 | Topic 2.4 Trans-Saharan Trade',
     headerSubtitle: 'Topic 2.4, Trans-Saharan Trade &nbsp;|&nbsp; AP World History: Modern',
-    titleHtml: 'Gold, <em>Salt</em>, and the Desert Road',
-    deck: 'Camel technology and organized caravans made larger-scale desert exchange practical. Strong demand for gold and salt made it profitable, and states such as Mali benefited from and helped sustain the expanding network.',
+    titleHtml: 'The Sahara Did Not <em>Shrink</em>',
+    deck: 'The desert stayed just as wide and just as dry. What changed after 1200 was the system for crossing it, and that system made West African gold, Saharan salt, and the Mali Empire part of one connected world.',
     skillTags: ['Causation', 'Technology', 'Governance'],
+    supportHeadings: { before: 'The Story to Hold Onto', target: 'Question for Today' },
     supportCards: {
-      beforeYouRead: 'Track the chain from transportation technology to increased trade volume and range, then to state power. Gold and salt explain the incentive; camel technology and caravans explain how the Sahara could be crossed at scale.',
-      readingTarget: 'By the end, you should be able to explain how camel saddles and caravans expanded trans-Saharan trade and how Mali facilitated trade and communication.'
+      beforeYouRead: '<strong>A desert in the middle → Saddles + caravans → Gold + salt → More trade → Mali.</strong> Use that chain to organize everything you meet.',
+      readingTarget: 'How did people make the Sahara crossable and profitable, and what did that build?'
     },
     vocabulary: ['Camel Saddle', 'Caravan', 'Gold', 'Salt', 'Trade Volume', 'Geographic Range', 'Mali Empire', 'Mansa Musa', 'Timbuktu'],
     sections: [
-      section('1', 'Technology', 'Camel Technology Made Desert Trade More Practical', [
-        'The Sahara remained an extreme environment, but camels were well adapted to desert travel. Improvements in the <span class="kt">camel saddle</span> allowed merchants to transport heavier loads more efficiently across long distances.',
-        'Merchants organized animals and people into <span class="kt">caravans</span> that pooled knowledge, protection, and supplies. Transportation technology did not erase the desert; it changed the economic possibilities of crossing it.'
-      ], 'AP Thinking, Causation', '<strong>A camel is not an explanation.</strong> Explain how carrying capacity, endurance, and caravan organization reduced the practical barriers to exchange.'),
-      section('2', 'Economic Incentive', 'Gold and Salt Made the Journey Worthwhile', [
-        'West Africa possessed major gold resources, while Saharan regions supplied salt that was essential to human diets and valuable in West African markets. This complementary demand made long-distance exchange profitable.',
-        'As transportation improved and demand remained strong, trans-Saharan trade increased in <span class="kt">volume</span> and expanded in <span class="kt">geographic range</span>, connecting West African societies more closely to North Africa and the wider Islamic world.'
-      ], 'AP Thinking, Mechanism', '<strong>Technology made exchange possible; demand made it worthwhile.</strong> Strong causation explains how the two factors worked together.'),
-      section('3', 'Governance', 'Mali Benefited from and Facilitated Trade', [
-        'The <span class="kt">Mali Empire</span> rose in a region crossed by major trade routes. Rulers benefited by taxing commerce and controlling strategic territory, while political protection could make merchants more willing to use the routes.',
-        'Mali therefore did not merely become rich because trade happened around it. Imperial expansion also helped facilitate trade and communication by drawing more people into a connected political and economic system.'
-      ], 'AP Thinking, Governance', '<strong>Show the two-way relationship:</strong> trade strengthened Mali, and Mali in turn helped sustain trade.'),
-      section('4', 'Evidence', 'Mansa Musa and Timbuktu Reveal the Scale of Connection', [
-        '<span class="kt">Mansa Musa</span> used the wealth and connections of Mali during his pilgrimage to Mecca, making the empire visible across North Africa and the Islamic world.',
-        '<span class="kt">Timbuktu</span> grew as a commercial and intellectual center linked to trans-Saharan exchange. These examples help students see the effects of a network whose foundation remained transportation technology, profitable commodities, and state support.'
-      ], 'AP Thinking, Evidence', '<strong>Use Mansa Musa and Timbuktu as evidence of the network\'s effects, not as substitutes for explaining how the network worked.')
+      section('1', 'Problem', 'The Sahara Was the Problem in the Middle', [
+        'Picture three regions that needed each other. West Africa had rich gold fields. The Sahara had salt, mined at places like Taghaza. North Africa had busy markets tied to the Mediterranean and the wider Islamic world. Between them lay weeks of sand, heat, and very little water.',
+        'People had crossed the Sahara for centuries, so this was not a new route. The question for this topic is why crossing it became regular and large enough to change the region after 1200.'
+      ], 'AP Thinking, Contextualization', '<strong>Start with the problem, not the goods.</strong> Before you can explain why trade grew, explain what made the desert so hard to cross.'),
+      section('2', 'Tools', 'Saddles and Caravans Made the Crossing Regular', [
+        'Camels could already survive long stretches without water. Improved <span class="kt">camel saddle</span> designs made them far more useful for trade: better saddles let camels carry heavier loads and riders farther, so each trip could move more goods.',
+        'Merchants also traveled in <span class="kt">caravans</span>, large groups of people and animals moving together. Experienced guides led them from one oasis to the next, and travelers shared supplies, knowledge, and protection. One merchant alone might not survive the desert. A caravan made the crossing more efficient and more reliable, and able to carry far larger quantities of goods, season after season.'
+      ], 'AP Thinking, Causation', '<strong>Explain the mechanism, not the camel.</strong> "Camels" is not an explanation. Say what the saddle and the caravan let merchants do that they could not do before.'),
+      section('3', 'Motive', 'Gold and Salt Made the Risk Worth Taking', [
+        'Crossing the Sahara was still dangerous and expensive, so merchants needed a reason to go. <span class="kt">Gold</span> from West Africa was in high demand in North Africa and beyond. <span class="kt">Salt</span> was scarce in West Africa, where people needed it in a hot climate and used it to preserve food. Each side had something the other valued, and the difference in value paid for the journey.',
+        'With better transport and a strong reason to travel, trade grew in two ways. Its <span class="kt">trade volume</span> increased, because more goods moved across the desert. Its <span class="kt">geographic range</span> expanded, because the network reached farther, linking West Africa more closely to North Africa and the Islamic world.'
+      ], 'AP Thinking, Causation', '<strong>Technology made the trip possible; demand made it worthwhile.</strong> A strong explanation uses both causes and says how they worked together.'),
+      section('4', 'State', 'Mali Grew by Sitting Across the Routes', [
+        'The <span class="kt">Mali Empire</span> rose across the southern end of these routes. Its rulers controlled key trading towns, protected the roads, and taxed the goods that moved through them. That wealth made Mali stronger, and a stronger Mali made the routes safer and busier, drawing more people and places into the network.',
+        'Trade also built cities. <span class="kt">Timbuktu</span> and Djenné became centers of commerce and of Islamic learning, where scholars, books, and merchants from across the Sahara met. In 1324, the ruler <span class="kt">Mansa Musa</span> made a pilgrimage to Mecca. Writers in Cairo reported that he gave away so much gold that its value there fell, and a European map from 1375 shows him holding a golden nugget.',
+        'The Sahara did not shrink. The system for crossing it got better, and that system built one of the richest empires of its time.'
+      ], 'AP Thinking, Governance', '<strong>Show the two-way relationship.</strong> Trade made Mali rich, and Mali in turn protected and expanded the trade. Mansa Musa is evidence of that wealth, not the whole story.')
     ],
-    takeaway: 'Camel saddles and caravans made large-scale Sahara crossings practical; gold and salt made them profitable; expanding exchange increased trade volume and range; and Mali both profited from and facilitated the resulting network.',
+    takeaway: 'The Sahara did not shrink. Camel saddles and caravans made regular crossings practical, gold and salt made them profitable, and trade grew in volume and geographic range. The Mali Empire grew by protecting and taxing the routes, Timbuktu and Djenné became centers of trade and learning, and Mansa Musa\'s pilgrimage made Mali\'s wealth famous.',
     questions: [
-      { num: '01', skill: 'Causation', text: 'Explain how camel technology and caravan organization increased the volume and range of trans-Saharan trade.', placeholder: 'Camel technology expanded trade because...' },
-      { num: '02', skill: 'Causation', text: 'Explain why gold and salt created a strong economic incentive for trans-Saharan exchange.', placeholder: 'Gold and salt made exchange profitable because...' },
-      { num: '03', skill: 'Governance', text: 'Explain how Mali both benefited from and facilitated trans-Saharan trade and communication.', placeholder: 'Mali benefited from trade by... and facilitated it by...' }
+      { num: '01', skill: 'Causation', text: 'Explain how the camel saddle and caravan organization made regular trade across the Sahara possible.', placeholder: 'Regular desert trade became possible because...' },
+      { num: '02', skill: 'Causation', text: 'Why did gold and salt make merchants willing to cross the Sahara, and what happened to trade as a result?', placeholder: 'Gold and salt made the risk worth it because... As a result, trade...' },
+      { num: '03', skill: 'Governance', text: 'Explain how Mali both profited from trans-Saharan trade and helped it grow.', placeholder: 'Mali profited from trade by... and helped it grow by...' }
     ]
   }),
 
@@ -218,37 +222,42 @@ module.exports = {
     lessonPage: 'lesson-2-5-cultural-consequences.html',
     docTitle: 'BeHistorical — Module 05 | First &amp; 10 | Topic 2.5 Cultural Consequences of Connectivity',
     headerSubtitle: 'Topic 2.5, Cultural Consequences of Connectivity &nbsp;|&nbsp; AP World History: Modern',
-    titleHtml: 'Ideas, Cities, and <em>Travelers</em>',
-    deck: 'Intensified exchange changed culture in three major ways: traditions and technologies diffused across regions, the fortunes of cities changed with trade and productivity, and more travelers wrote about the increasingly connected Afro-Eurasian world.',
+    titleHtml: 'Goods Were Never the Only <em>Cargo</em>',
+    deck: 'Connectivity changes what societies know, and what they become. After 1200, the same routes that carried silk, spices, and gold carried beliefs, technologies, and travelers, and each of them left a mark on the places they reached.',
     skillTags: ['Causation', 'Cultural Interaction', 'Continuity & Change'],
+    supportHeadings: { before: 'The Story to Hold Onto', target: 'Question for Today' },
     supportCards: {
-      beforeYouRead: 'Track three distinct consequences. Do not collapse the topic into “things spread.” You need cultural/technological diffusion, changing urban fortunes, and written travel accounts.',
-      readingTarget: 'By the end, you should be able to explain how networks spread traditions and innovations, affected urbanization and city decline, and generated travel writing by Ibn Battuta, Marco Polo, and Margery Kempe.'
+      beforeYouRead: '<strong>Bigger networks → More contact → Diffusion + adaptation → Cultural and intellectual change.</strong> Every example in this reading follows that chain. Use it to organize what you meet.',
+      readingTarget: 'When more people and goods moved across Afro-Eurasia, what else moved with them, and how did it change the societies that received it?'
     },
-    vocabulary: ['Buddhism', 'Hinduism', 'Islam', 'Paper', 'Gunpowder', 'Urbanization', 'Trade Networks', 'Ibn Battuta', 'Marco Polo', 'Margery Kempe', 'Travel Account'],
+    vocabulary: ['Diffusion', 'Adaptation', 'Buddhism', 'Hinduism', 'Islam', 'Paper', 'Gunpowder', 'Urbanization', 'Hangzhou', 'Samarkand', 'Baghdad', 'Ibn Battuta', 'Marco Polo', 'Margery Kempe', 'Travel Account'],
     sections: [
-      section('1', 'Diffusion', 'Beliefs Moved Through Networks', [
-        'Exchange networks carried cultural traditions across political and geographic boundaries. <span class="kt">Buddhism</span> continued to influence East Asia, while <span class="kt">Hinduism and Buddhism</span> spread into Southeast Asia through long-standing commercial and cultural contacts.',
-        '<span class="kt">Islam</span> expanded in sub-Saharan Africa and across parts of Asia through merchants, scholars, rulers, and diasporic communities. The important historical point is not simply that a religion appeared somewhere new; it is that intensified interaction provided repeated pathways for transmission and adaptation.'
-      ], 'AP Thinking, Causation', '<strong>Explain the mechanism of diffusion.</strong> Identify who or what carried the tradition and how repeated contact helped it take root.'),
-      section('2', 'Technology', 'Useful Innovations Traveled Too', [
-        '<span class="kt">Paper</span> and <span class="kt">gunpowder</span>, both associated with Chinese innovation, spread through wider Afro-Eurasian connections. As technologies moved, receiving societies adapted them to local needs.',
-        'Technological diffusion demonstrates why exchange networks had consequences beyond markets. A commercial route could also become a pathway for administrative tools, military innovations, scholarly practices, and new forms of communication.'
-      ], 'AP Thinking, Significance', '<strong>Do not treat technology as a list.</strong> Explain why movement mattered by showing how a receiving society could use or adapt the innovation.'),
-      section('3', 'Cities', 'Connectivity Could Build Cities — or Leave Them Behind', [
-        'The fate of cities varied. Rising productivity and expanding trade networks could support <span class="kt">urbanization</span> by attracting merchants, artisans, administrators, and consumers to commercial centers.',
-        'But cities were not guaranteed permanent success. Warfare, political disruption, or changes in trade routes could contribute to decline. The larger CED point is that urban fortunes changed with the economic and political systems surrounding them.'
-      ], 'AP Thinking, Continuity & Change', '<strong>City growth is not automatic.</strong> Explain why connectivity could increase urbanization in one setting while disruption or route changes could weaken another city.'),
-      section('4', 'Travel Writing', 'More Travelers Recorded a Connected World', [
-        'As exchange networks intensified, more travelers wrote accounts of distant places. <span class="kt">Ibn Battuta</span> described journeys across Africa and Asia. <span class="kt">Marco Polo</span> became famous in Europe for accounts associated with travel across Eurasia.',
-        '<span class="kt">Margery Kempe</span>, an English Christian pilgrim, also left an account of travel. These writers had different purposes and perspectives, but together they show how intensified mobility generated new written descriptions of societies connected by trade, pilgrimage, diplomacy, and religion.'
-      ], 'AP Thinking, Evidence', '<strong>The existence of travel accounts is itself evidence.</strong> More movement and contact created more opportunities for observers to describe distant societies to readers at home.')
+      section('1', 'Beliefs', 'Merchants Carried More Than Goods', [
+        'By 1200, the Silk Roads, the Indian Ocean, and the trans-Saharan routes carried more traffic than ever. But goods were never the only cargo. Merchants, pilgrims, missionaries, and scholars traveled the same routes, and they carried their beliefs with them. More contact meant more chances for an idea to move, which historians call <span class="kt">diffusion</span>.',
+        '<span class="kt">Buddhism</span> kept shaping East Asia, where monasteries, art, and schools of Buddhist thought grew in China, Korea, and Japan. In Southeast Asia, <span class="kt">Hinduism</span> and Buddhism took root through trade with India. The temple at Angkor Wat, in the Khmer Empire, was built for the Hindu god Vishnu and later became a Buddhist site.',
+        '<span class="kt">Islam</span> spread into West Africa and across Asia. In West Africa and Southeast Asia it spread mostly through traders, scholars, and teachers rather than through armies. Rulers in Mali and in port cities like Malacca often converted first, partly because Islam connected them to Muslim merchants and to a wider world of law and learning.'
+      ], 'AP Thinking, Causation', '<strong>Name the carrier.</strong> "Islam spread" is not an explanation. Say who carried it, along which route, and why the people receiving it had a reason to adopt it. Network → contact → diffusion.'),
+      section('2', 'Technology', 'Inventions Moved, and Changed as They Moved', [
+        'Technologies traveled the same way beliefs did. <span class="kt">Paper</span>, invented in China, had spread into the Islamic world centuries earlier, where cheap paper helped fill libraries in cities like Baghdad. From there it spread into Europe, where mills began making it from linen rags.',
+        '<span class="kt">Gunpowder</span>, another Chinese invention, reached Southwest Asia and Europe in the 1200s, along routes the Mongols had tied together. Societies that received it did not simply copy Chinese uses. Over time, armies in Europe and the Islamic world built it into cannons and new kinds of warfare.',
+        'This is <span class="kt">adaptation</span>: a receiving society takes something from outside and reshapes it for its own needs. Diffusion explains how an idea or tool arrived. Adaptation explains what it became once it got there.'
+      ], 'AP Thinking, Causation', '<strong>Finish the chain.</strong> Do not stop at "gunpowder spread to Europe." Explain how the society that received it changed it, and what that change made possible. Contact → diffusion → adaptation → change.'),
+      section('3', 'Cities', 'Connected Cities Could Rise, and Could Fall', [
+        'The same traffic made cities rich. <span class="kt">Hangzhou</span>, the capital of the Southern Song, became one of the largest cities in the world, fed by productive rice farming and busy trade. <span class="kt">Samarkand</span>, in Central Asia, grew into a great Silk Road market where merchants, goods, and ideas met. This growth of cities is called <span class="kt">urbanization</span>.',
+        'But a connected city could also fall. In 1258 the Mongols sacked <span class="kt">Baghdad</span>, killed the caliph, and ended the Abbasid Caliphate, which had ruled from the city for about five hundred years. Baghdad had been one of the great centers of learning in the Islamic world, and it never fully recovered its old place.',
+        'Samarkand shows both sides. The Mongols destroyed it in 1220, and more than a century later it was rebuilt as a magnificent capital. When routes or rulers changed, a city\'s fortunes could change with them.'
+      ], 'AP Thinking, Continuity & Change', '<strong>City growth is not automatic.</strong> Explain what made a city grow (trade plus productive farming) and what could reverse it (war, conquest, or shifting routes). The same network that fed a city could expose it. Network → contact → a city rises, or falls.'),
+      section('4', 'Travelers', 'More People Traveled, So More People Wrote It Down', [
+        'Because more people traveled, more people recorded what they saw. Their writings are called <span class="kt">travel accounts</span>, and they let us see this connected world through the eyes of people who crossed it.',
+        '<span class="kt">Ibn Battuta</span>, a Muslim scholar from Morocco, spent about thirty years traveling through North and West Africa, the Middle East, India, and China, often working as a judge in Muslim communities along the way. <span class="kt">Marco Polo</span>, a merchant from Venice, described his years in Mongol China, and his book made Europeans curious about Asia. <span class="kt">Margery Kempe</span>, an English Christian, went on pilgrimages to Jerusalem and Rome and told her story in a book that is often called the first autobiography in English.',
+        'They traveled for trade, faith, and service, and they wrote for readers back home. That makes their accounts valuable evidence and also means each one shows the world from one traveler\'s point of view.'
+      ], 'AP Thinking, Evidence', '<strong>The accounts are evidence twice.</strong> What they describe tells us about distant places. The fact that so many were written tells us contact was growing. Network → contact → travel → written knowledge: connectivity changes what societies know.')
     ],
-    takeaway: 'Cultural consequences of connectivity included the diffusion of religions and technologies, changing urban fortunes as trade and productivity shifted, and a growing body of travel writing from figures such as Ibn Battuta, Marco Polo, and Margery Kempe.',
+    takeaway: 'Bigger networks meant more contact, and more contact meant diffusion and adaptation. Buddhism, Hinduism, and Islam spread, mostly through merchants and scholars. Paper and gunpowder moved west and were reshaped by the societies that took them in. Trade built cities like Hangzhou and Samarkand, while the Mongol sack of Baghdad in 1258 showed that connected cities could also fall. And travelers like Ibn Battuta, Marco Polo, and Margery Kempe wrote down the connected world they crossed. Every time, the chain was the same, and connectivity changed what societies believed, built, and knew.',
     questions: [
-      { num: '01', skill: 'Causation', text: 'Explain how one cultural tradition or technology diffused through Afro-Eurasian exchange networks.', placeholder: 'One example of diffusion was...' },
-      { num: '02', skill: 'Continuity & Change', text: 'Explain why intensified trade could contribute to urban growth in some places and decline in others.', placeholder: 'Trade networks affected cities by...' },
-      { num: '03', skill: 'Evidence', text: 'Choose Ibn Battuta, Marco Polo, or Margery Kempe. Explain how that traveler’s written account reflects intensified Afro-Eurasian connectivity.', placeholder: 'The travel account of ___ reflects connectivity because...' }
+      { num: '01', skill: 'Causation', text: 'Choose one belief system or one technology. Explain how contact along a trade network spread it, and how the receiving society adapted it.', placeholder: 'Contact along ___ spread ___ because... The receiving society adapted it by...' },
+      { num: '02', skill: 'Continuity & Change', text: 'Explain how connectivity helped one city grow and how a change in rulers or routes could make a city decline. Use a named city.', placeholder: 'Connectivity helped ___ grow by... A city could decline when...' },
+      { num: '03', skill: 'Evidence', text: 'Choose Ibn Battuta, Marco Polo, or Margery Kempe. Explain how that traveler\'s account is evidence of a more connected world, and name one limit of using it.', placeholder: 'The account of ___ shows a connected world because... One limit is...' }
     ]
   }),
 
@@ -259,37 +268,43 @@ module.exports = {
     lessonPage: 'lesson-2-6-environmental-consequences.html',
     docTitle: 'BeHistorical — Module 06 | First &amp; 10 | Topic 2.6 Environmental Consequences of Connectivity',
     headerSubtitle: 'Topic 2.6, Environmental Consequences of Connectivity &nbsp;|&nbsp; AP World History: Modern',
-    titleHtml: 'Crops and Pathogens <em>on the Move</em>',
-    deck: 'Trade networks moved living things as well as manufactured goods. Crops entered new environments and changed food production, while pathogens traveled through the same connected world and could produce devastating demographic effects.',
+    titleHtml: 'The Same Network Could Feed You and <em>Kill</em> You',
+    deck: 'Nobody planned it, but trade connected more than markets. The same routes that carried silk and spices also carried seeds, rats, fleas, and germs, and what arrived could feed a region or empty it.',
     skillTags: ['Causation', 'Humans & Environment', 'Comparison'],
+    supportHeadings: { before: 'The Story to Hold Onto', target: 'Question for Today' },
     supportCards: {
-      beforeYouRead: 'Keep two branches visible: crops and pathogens. The same connectivity can increase agricultural productivity in one case and spread epidemic disease in another.',
-      readingTarget: 'By the end, you should be able to explain crop diffusion using bananas, new rice varieties, and citrus, and explain how trade routes contributed to the spread of bubonic plague.'
+      beforeYouRead: '<strong>Busier routes → Living things ride along → They land somewhere new → More food, or mass death.</strong> Crops and plague both follow that chain. Only the last step is different.',
+      readingTarget: 'When trade connected distant regions, what living things moved with it, and why did some of them feed people while others killed them?'
     },
-    vocabulary: ['Crop Diffusion', 'Bananas in Africa', 'New Rice Varieties', 'Citrus', 'Mediterranean', 'Bubonic Plague', 'Black Death', 'Pathogen', 'Trade Routes', 'Demographic Change'],
+    vocabulary: ['Ecosystem', 'Crop Diffusion', 'Bananas', 'Agricultural Productivity', 'New Rice Varieties', 'Champa Rice', 'Citrus', 'Pathogen', 'Bubonic Plague', 'Caffa', 'Black Death', 'Demographic Change', 'Labor Shortage'],
     sections: [
-      section('1', 'Environmental Pattern', 'Networks Moved Living Things', [
-        'Merchants and travelers did not carry only textiles, metals, and luxury goods. Seeds, plants, animals, insects, and microorganisms also moved through connected Afro-Eurasian networks.',
-        'That movement could be intentional, as with useful crops, or unintended, as with disease. Topic 2.6 asks students to recognize both as <span class="kt">environmental consequences of connectivity</span>.'
-      ], 'AP Thinking, Causation', '<strong>The network is the pathway.</strong> Explain how repeated movement among regions allowed a crop or pathogen to expand beyond its earlier range.'),
-      section('2', 'Crops', 'Useful Plants Changed Regional Agriculture', [
-        '<span class="kt">Bananas in Africa</span> expanded food options in environments where the crop could thrive. Their diffusion is one example of exchange altering regional agriculture and the ability of communities to support population.',
-        '<span class="kt">New rice varieties in East Asia</span>, including faster-ripening strains, could increase agricultural productivity. <span class="kt">Citrus in the Mediterranean</span> provides another example of crops moving into new growing regions through long-distance contacts.'
-      ], 'AP Thinking, Effects', '<strong>For crops, finish the chain:</strong> network movement → new crop in a suitable environment → changed production, diet, or population-supporting capacity.'),
-      section('3', 'Pathogens', 'The Same Connectivity Spread Plague', [
-        '<span class="kt">Bubonic plague</span> spread along connected trade and travel routes during the 14th century. Movement across overland and maritime corridors helped carry the disease into densely connected Afro-Eurasian populations.',
-        'The resulting <span class="kt">Black Death</span> caused enormous mortality in affected regions. The key Unit 2 mechanism is not that trade created the pathogen; it is that intensified connectivity helped a disease move farther and faster.'
-      ], 'AP Thinking, Causation', '<strong>Distinguish origin from transmission.</strong> A pathogen can exist before a network expands; connectivity changes the scale and speed of its spread.'),
-      section('4', 'Synthesis', 'Connectivity Increased Both Capacity and Vulnerability', [
-        'Crop diffusion and pathogen diffusion point in different directions but arise from the same structural condition: regions were more connected. Useful plants could raise productive capacity, while epidemic disease could sharply reduce population.',
-        'A strong historical explanation therefore avoids calling connectivity simply beneficial or harmful. Networks increased the movement of biological material, and the consequences depended on what moved and the environments and populations that received it.'
-      ], 'AP Thinking, Comparison', '<strong>Compare mechanisms, not morality.</strong> Crops and pathogens both moved through networks; their effects differed because the biological material and receiving environments differed.')
+      section('1', 'The Idea', 'Nobody Ordered This Cargo', [
+        'For five topics you have followed the roads people built: the Silk Roads, the Indian Ocean, and the trans-Saharan routes. You have watched goods, money, beliefs, and inventions travel on them. Every one of those was carried on purpose. Somebody chose to pack the silk, and somebody chose to teach the faith.',
+        'But a caravan or a ship also carried things nobody chose. Seeds rode along in sacks of grain. Rats lived in cargo holds, and fleas lived on the rats. Travelers carried germs in their own bodies. Every region has its own <span class="kt">ecosystem</span>, the plants, animals, and tiny living things that live together in one place. When trade connected distant regions over and over, it connected their ecosystems too, and it did that by accident.',
+        'Some of the living things that moved were useful plants. Others were deadly diseases. This reading follows both, because they traveled the same roads.'
+      ], 'AP Thinking, Causation', '<strong>The route is the cause.</strong> A crop or a disease did not cross a continent on its own. Say which network moved it and what carried it.'),
+      section('2', 'Crops', 'The Road Brought Food', [
+        'The spread of plants into new regions is called <span class="kt">crop diffusion</span>. A new crop mattered when it grew well in its new home and changed what the land there could produce.',
+        '<span class="kt">Bananas</span> were first grown in Southeast Asia. Sailors and traders carried them across the Indian Ocean to East Africa, and from the coast they spread inland. Bananas grow well in warm, wet places where some older crops struggled, so farmers could raise more food from the same land. That is higher <span class="kt">agricultural productivity</span>, and more food could support more people.',
+        'In East Asia, <span class="kt">new rice varieties</span> did the same thing. You met one in Topic 1.1: <span class="kt">Champa rice</span>, a fast-ripening rice from Champa, in present-day Vietnam, that let Chinese farmers harvest more than once a year. More harvests meant more food, and more food supported a larger population and bigger cities.',
+        '<span class="kt">Citrus</span> fruits such as lemons and sour oranges traveled west from South Asia with Muslim merchants and farmers. By the 1200s they grew in orchards around the Mediterranean, in places such as Sicily and Spain, and they changed what farmers there grew and what people ate.'
+      ], 'AP Thinking, Causation', '<strong>A crop name is not an answer.</strong> "Bananas spread to Africa" is true and explains nothing. Finish the chain: a network moved the crop, it grew well in a new place, and that changed how much food the land could produce and how many people it could support.'),
+      section('3', 'Pathogens', 'The Same Road Brought Death', [
+        'A <span class="kt">pathogen</span> is a germ that causes disease. The most famous pathogen of this era caused <span class="kt">bubonic plague</span>. It lived in fleas, the fleas lived on rats and other rodents, and when the rodents died the fleas jumped to people. The disease was not new. Outbreaks had struck centuries earlier. What was new by the 1300s was how connected the world had become.',
+        'Under the Mongols, trade and travel across Afro-Eurasia were busier than ever. Most historians think the plague began spreading in Central Asia and moved west along those routes. By 1346 it had reached the Black Sea, where merchants from Genoa, in Italy, ran the trading port of <span class="kt">Caffa</span>. In 1347 ships from the Black Sea carried infected rats and sailors into the Mediterranean, and the disease reached Constantinople, Sicily, and Egypt. Within a few years it had spread across Europe, North Africa, and Southwest Asia, following the same sea lanes and caravan roads that carried trade.',
+        'The result was the <span class="kt">Black Death</span>. In many regions it killed a third or more of the population, and in some cities about half. A change that large in the number of people living in a place is a <span class="kt">demographic change</span>. With so many dead, there was a <span class="kt">labor shortage</span>: too few people to farm the fields and work in the towns. In parts of Europe, surviving workers could demand higher pay.'
+      ], 'AP Thinking, Causation', '<strong>Trade did not create the plague. It moved it.</strong> The disease existed before. Busier, denser connections let it travel farther and faster and reach people who had never faced it. The plague was not new. The highway system was better.'),
+      section('4', 'The Big Idea', 'The Network Was Not Good or Bad. It Was Powerful.', [
+        'It is tempting to call connectivity good because it spread food, or bad because it spread death. Both are too simple. The same routes did both, at the same time.',
+        'A busy network carries whatever gets on it. When a useful plant landed somewhere it could grow, food production rose and a region could support more people. When a pathogen landed in crowded ports and towns, deaths rose and the population fell. The network was the same. What changed the result was what traveled and where it landed.',
+        'That is the story of this topic. Trade accidentally connected ecosystems, and the same network could feed you and kill you.'
+      ], 'AP Thinking, Comparison', '<strong>Compare the chains, not the morals.</strong> Both chains start the same way: regions connect, a living thing travels, and it lands somewhere new. Only the last step is different: more food, or more death.')
     ],
-    takeaway: 'Afro-Eurasian networks diffused crops such as bananas, new rice varieties, and citrus while also spreading pathogens such as bubonic plague. Connectivity changed environments and populations because it moved living things across regional boundaries.',
+    takeaway: 'Trade accidentally connected ecosystems. Bananas reached Africa, new rice varieties such as Champa rice spread in China, and citrus reached the Mediterranean, and each let the land feed more people. Bubonic plague traveled the same roads in the 1340s, and the Black Death killed a third or more of the population in many regions, leaving labor shortages behind. The network was not good or bad. It was powerful: the same network could feed you and kill you.',
     questions: [
-      { num: '01', skill: 'Causation', text: 'Choose bananas in Africa, new rice varieties in East Asia, or citrus in the Mediterranean. Explain how diffusion of that crop produced an environmental or demographic effect.', placeholder: 'The diffusion of ___ affected ___ by...' },
-      { num: '02', skill: 'Causation', text: 'Explain how intensified trade routes contributed to the spread of bubonic plague without claiming that trade created the disease.', placeholder: 'Trade routes contributed to plague spread by...' },
-      { num: '03', skill: 'Comparison', text: 'Compare crop diffusion and pathogen diffusion as environmental consequences of the same exchange networks.', placeholder: 'Both crops and pathogens moved because... However, their effects differed because...' }
+      { num: '01', skill: 'Causation', text: 'Choose bananas in Africa, new rice varieties in East Asia, or citrus in the Mediterranean. Explain how a trade network moved that crop and how it changed what the land could support.', placeholder: 'A trade network moved ___ to ___ by... As a result, the land could...' },
+      { num: '02', skill: 'Causation', text: 'Explain how trade routes helped bubonic plague spread in the 1300s, and name one consequence of the Black Death. Do not claim that trade created the disease.', placeholder: 'Trade routes helped the plague spread because... One consequence was...' },
+      { num: '03', skill: 'Comparison', text: 'The same network could feed you and kill you. Explain what was the same about how crops and plague spread, and why their effects were opposite.', placeholder: 'Both crops and plague spread because... Their effects were opposite because...' }
     ]
   }),
 
@@ -300,37 +315,38 @@ module.exports = {
     lessonPage: 'lesson-2-7-comparison.html',
     docTitle: 'BeHistorical — Module 07 | First &amp; 10 | Topic 2.7 Comparison of Trade Networks',
     headerSubtitle: 'Topic 2.7, Comparison of Trade Networks &nbsp;|&nbsp; AP World History: Modern',
-    titleHtml: 'Same Problems, Different <em>Trade Systems</em>',
-    deck: 'The Silk Roads, Indian Ocean, and trans-Saharan routes solved different geographic problems but shared larger economic patterns: demand encouraged exchange, technologies and commercial practices reduced trade friction, states and cities benefited, production responded, and wider connectivity spread culture and biology.',
+    titleHtml: 'Three Networks, One <em>Problem</em>',
+    deck: 'Geography picked the tools. Demand did the rest. The Silk Roads, the Indian Ocean, and the trans-Saharan routes were all solving the same problem, distance, and the ground each one crossed decided how.',
     skillTags: ['Comparison', 'Causation', 'Synthesis'],
+    supportHeadings: { before: 'The Story to Hold Onto', target: 'Question for Today' },
     supportCards: {
-      beforeYouRead: 'Compare like with like. Use the same category on both sides: environment, transportation, commercial practices, demand, states/cities, productive capacity, or diffusion.',
-      readingTarget: 'By the end, you should be able to explain meaningful similarities and differences among the three networks and support each comparison with balanced evidence.'
+      beforeYouRead: '<strong>Same problem → Different ground → Different tools → Same results.</strong> You already know all three networks. This reading lines them up so you can compare them.',
+      readingTarget: 'Why did three very different trade networks end up doing the same things?'
     },
-    vocabulary: ['Silk Roads', 'Indian Ocean', 'Trans-Saharan', 'Commercial Practices', 'Credit', 'Caravanserai', 'Monsoon Winds', 'Camel Saddle', 'Luxury Demand', 'Productive Capacity', 'Diffusion'],
+    vocabulary: ['Silk Roads', 'Indian Ocean', 'Trans-Saharan', 'Luxury Demand', 'Commercial Practices', 'Caravanserai', 'Credit', 'Monsoon Winds', 'Camel Saddle', 'Trading Cities', 'Productive Capacity', 'Diffusion'],
     sections: [
-      section('1', 'Comparison', 'Different Environments Required Different Transportation Solutions', [
-        'The <span class="kt">Silk Roads</span> crossed long overland corridors; the <span class="kt">Indian Ocean</span> depended on seasonal winds and open-water navigation; the <span class="kt">trans-Saharan</span> network crossed an arid desert.',
-        'Those environments encouraged different solutions. Caravanserais supported overland merchants, compasses and astrolabes aided maritime navigation, and camel saddles and organized caravans made desert crossings more practical.'
-      ], 'AP Thinking, Comparison', '<strong>A good difference has a cause.</strong> Geography created different transportation problems, so each network developed different technologies and infrastructure.'),
-      section('2', 'Commercial Systems', 'All Networks Had to Lower the Cost and Risk of Exchange', [
-        'Long-distance trade required trust, information, financing, and protection. Silk Roads merchants used forms of <span class="kt">credit</span>, banking, money economies, and caravan infrastructure. Indian Ocean merchants relied heavily on port communities, commercial relationships, and diasporic networks. Trans-Saharan merchants depended on caravan organization and political protection.',
-        'The institutions differed, but the economic problem was similar: merchants needed systems that made moving valuable goods across long distances reliable enough to be profitable.'
-      ], 'AP Thinking, Similarity', '<strong>Compare function as well as form.</strong> Two networks can use different institutions to solve the same problem of risk and transaction cost.'),
-      section('3', 'Demand and Production', 'Trade Connected Distant Consumers to Producers', [
-        'Across Afro-Eurasia, demand for valuable goods stimulated exchange. Luxury demand was especially important on the Silk Roads and Indian Ocean, while gold and salt anchored much trans-Saharan commerce.',
-        'Trade also interacted with <span class="kt">productive capacity</span>. Producers expanded output for distant markets, including textiles and porcelain in Asia and increased iron and steel production in China. The networks were therefore not merely delivery routes; changing trade could stimulate production.'
-      ], 'AP Thinking, Economic Systems', '<strong>Demand and production belong in the comparison.</strong> Ask not only what goods moved, but how distant markets changed what societies produced.'),
-      section('4', 'Consequences', 'All Three Networks Deepened Afro-Eurasian Connectivity', [
-        'Each network supported states or cities that benefited from exchange, though the political forms differed. Trading cities such as Samarkand, maritime states such as Malacca, and land empires such as Mali all gained from strategic positions within exchange systems.',
-        'All three networks also contributed to wider cultural, technological, and biological diffusion. The specific traditions, technologies, crops, and pathogens varied, but the shared pattern was a <span class="kt">deepening and widening of human interaction</span> across regions.'
-      ], 'AP Thinking, Synthesis', '<strong>End with the pattern:</strong> different environments and institutions produced different networks, but all expanded interregional interaction and its economic, cultural, and environmental consequences.')
+      section('1', 'The Problem', 'Every Network Was Solving the Same Problem', [
+        'For three topics we visited the trade networks one at a time: the <span class="kt">Silk Roads</span> across Central Asia, the <span class="kt">Indian Ocean</span> by sea, and the <span class="kt">trans-Saharan</span> routes across the desert. Now we line them up and ask why they look so alike.',
+        'All three were solving the same problem. People wanted things made far away: silk and porcelain from China, pepper from India, gold from West Africa, salt from the Sahara. That <span class="kt">luxury demand</span> made long-distance trade worth doing. But distance made every one of those goods expensive and dangerous to get. Whoever could make distance cheaper and safer could get rich.'
+      ], 'AP Thinking, Comparison', '<strong>Find the similarity underneath.</strong> The networks look different on a map, but demand and distance were the same everywhere. That shared problem is why the results turned out so alike.'),
+      section('2', 'The Big Difference', 'Geography Picked the Tools', [
+        'Each network crossed different ground, so each one needed different tools. On the long overland Silk Roads, <span class="kt">caravanserais</span> gave merchants and their animals a safe place to stop, and <span class="kt">credit</span> meant a merchant did not have to carry a fortune in coins. China\'s flying cash and paper money are examples of the money economies that grew along these routes. These are the <span class="kt">commercial practices</span> that lowered the risk of distance.',
+        'On the Indian Ocean, sailors learned the <span class="kt">monsoon winds</span>, which blow one way for half the year and reverse for the other half. Ships such as dhows and junks were built to use them, so the wind itself became a schedule merchants could plan around. In the Sahara, the <span class="kt">camel saddle</span> let camels carry heavier loads, and organized caravans moved people, water, and protection from oasis to oasis.'
+      ], 'AP Thinking, Comparison', '<strong>A difference needs a because.</strong> The tools differed because the environments differed. A monsoon is useless in a desert, and a camel cannot cross an ocean.'),
+      section('3', 'The Same Results', 'Where Routes Narrowed, Cities and States Grew', [
+        'Different tools led to the same results. The first was that cities and states grew rich where routes narrowed and goods had to pass through. <span class="kt">Trading cities</span> such as Samarkand and Kashgar grew where caravans met on the Silk Roads, under the protection of Mongol rule. Calicut and Malacca grew where ships waited for the winds to change. Timbuktu grew at the edge of the Sahara, and the kingdom of Mali grew rich by taxing and protecting the gold and salt trade.',
+        'The political forms were different, a land empire, port states, a West African kingdom, but the pattern was the same. When goods had to pass through a place, whoever controlled that place could tax the trade and protect it, and trade grew because they did.'
+      ], 'AP Thinking, Comparison', '<strong>Compare what a thing did, not only what it looked like.</strong> A port and a desert city look nothing alike, but they played the same role in their networks.'),
+      section('4', 'The Same Results', 'Demand Far Away Made Workshops Grow, and More Than Goods Moved', [
+        'The second shared result was that trade changed places far from the routes. Because buyers kept asking for more, producers made more. Chinese, Persian, and Indian artisans expanded their production of textiles and porcelain for export, and iron and steel production grew in China. Historians call this growth in <span class="kt">productive capacity</span>: a potter in China could be working for a buyer in East Africa.',
+        'The third shared result was <span class="kt">diffusion</span>. All three networks carried things nobody was selling. Islam and Buddhism traveled with merchants, paper and gunpowder moved west, crops such as bananas, new rice varieties, and citrus moved to new regions, and the bubonic plague traveled the same routes. Different networks carried different things, but all three deepened and widened human interaction across Afro-Eurasia.'
+      ], 'AP Thinking, Synthesis', '<strong>Put it together with both, but, and because.</strong> Both networks did the same thing, but they used different tools, because they crossed different ground. That is a complete AP comparison.')
     ],
-    takeaway: 'The three Unit 2 networks differed in geography, transportation, and institutional solutions, but shared larger patterns: demand drove exchange, commercial systems lowered trade friction, states and cities benefited, production responded, and intensified connectivity spread culture, technology, crops, and disease.',
+    takeaway: 'Three networks, one problem: distance. Geography picked the tools, caravanserais and credit overland, the monsoon and ships by sea, the camel saddle and caravans across the Sahara. Demand did the rest: on all three, trading cities grew, production expanded, and ideas, crops, and disease traveled.',
     questions: [
-      { num: '01', skill: 'Comparison', text: 'Identify one meaningful similarity between two trade networks using the same category on both sides.', placeholder: 'Both ___ and ___ were similar because...' },
-      { num: '02', skill: 'Comparison', text: 'Identify one meaningful difference between two networks and explain why geography, technology, commercial practice, or state support produced that difference.', placeholder: 'The networks differed because...' },
-      { num: '03', skill: 'Synthesis', text: 'Explain how demand, commercial practices, and productive capacity connect the economic story of Unit 2 across more than one trade network.', placeholder: 'Across Unit 2, demand and commercial practices...' }
+      { num: '01', skill: 'Comparison', text: 'Identify one meaningful similarity between two trade networks, using the same category on both sides, and explain why it existed.', placeholder: 'Both ___ and ___ ___ because...' },
+      { num: '02', skill: 'Comparison', text: 'Identify one meaningful difference between two networks and explain why geography, technology, commercial practices, or state support produced that difference.', placeholder: 'The ___ relied on ___, while the ___ relied on ___, because...' },
+      { num: '03', skill: 'Synthesis', text: 'Explain how demand far away changed productive capacity in places that were not on the trade routes themselves.', placeholder: 'Because buyers far away wanted more...' }
     ]
   })
 };

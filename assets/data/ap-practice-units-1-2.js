@@ -411,11 +411,11 @@
       ),
       evidenceLab: evidence(
         'Evidence Lab: A Maritime System',
-        'Use evidence from at least two levels of the system: environment, port-state economy, and cultural diffusion.',
-        'Evaluate the extent to which learned use of the environment, rather than political power alone, explains the expansion of Indian Ocean trade after 1200. Make a defensible judgment and use at least two evidence entries from different levels of the system. Explain the causal role of each entry, then use a contrasting example or limitation to qualify your conclusion.',
+        'Question: After 1200, how much did knowledge of the environment, especially monsoon winds, help Indian Ocean trade grow compared with the power of states?',
+        'After 1200, how much did knowledge of the environment, especially monsoon winds, help Indian Ocean trade grow compared with the power of states? Make a clear claim. Use at least two pieces of evidence from different parts of the trade system, explain how each one helped trade grow, and include one example showing that political power or another factor also mattered.',
         'Making Connections and Causation (Skills 5.A and 6.B)',
         ['monsoon winds', 'Kilwa', 'gold trade', 'diasporic communities', 'Islam', 'Indian Ocean'],
-        ['Makes a defensible judgment about the relative importance of factors.', 'Uses evidence from at least two levels of the maritime system.', 'Explains how each example affected the growth of exchange.', 'Qualifies the conclusion with a relevant contrast or limitation.']
+        ['Makes a clear claim about how important environmental knowledge was compared with state power.', 'Uses at least two pieces of evidence from different parts of Indian Ocean trade.', 'Explains how each example helped trade grow.', 'Includes one example showing that political power or another factor also mattered.']
       ),
       primarySource: source(
         'Primary Source: Ibn Battuta Describes Kilwa, 1331',
@@ -438,36 +438,36 @@
     '2.4': {
       skillBuilder: skill(
         'Developments and Processes (Skill 1.B) and Causation',
-        'Explain How the Sahara Became a Trade Zone',
-        'Neither the camel nor demand for gold explains trans-Saharan exchange alone. A strong causal explanation shows why an environmental solution and an economic incentive became mutually reinforcing.',
+        'Explain How the Sahara Became a Trade Route',
+        'Camels alone do not explain trans-Saharan trade, and neither does Mali alone. A strong explanation shows how better ways to cross the desert and a powerful state worked together to make trade grow.',
         [
-          { label: 'Explain the enabler', text: 'Show how camel physiology, saddle design, caravan organization, or oasis knowledge reduced the cost or risk of desert crossing.' },
-          { label: 'Explain the incentive', text: 'Show how complementary regional demand for gold, salt, or other goods made the difficult journey worthwhile.' },
-          { label: 'Connect cause to consequence', text: 'Trace how increased exchange produced revenue, political reach, or cultural change in West Africa.' }
+          { label: 'Explain the transportation', text: 'Show how camel saddles, caravans, desert guides, or oases made crossing the Sahara safer, more reliable, or able to carry more goods.' },
+          { label: 'Explain the state', text: 'Show how Mali helped trade grow: by protecting trade towns and roads, taxing goods, or drawing more people into the network.' },
+          { label: 'Connect to the growth', text: 'Say how each example made trade easier or helped it reach farther, so more goods moved to more places.' }
         ],
-        'Explain why both transportation technology and complementary economic demand were necessary for the expansion of trans-Saharan trade after 1200. Use at least two specific pieces of historical evidence, explain what barrier each factor overcame, and trace their interaction to one political or cultural transformation in West Africa.',
-        ['Explains why neither technology nor demand was sufficient by itself.', 'Uses at least two accurate and specific examples.', 'Identifies the barrier or incentive associated with each factor.', 'Traces the interaction to a specific political or cultural transformation.']
+        'In 3 to 4 sentences, explain how improved transportation and the growth of powerful states helped trans-Saharan trade expand from about 1200 to 1450. Use at least two specific examples, such as camel saddles, caravans, or Mali. Explain how each example made trade easier or increased its reach.',
+        ['Explains both improved transportation and the role of a powerful state.', 'Uses at least two accurate, specific examples.', 'Explains how each example made trade easier or increased its reach.', 'Stays focused on why trade expanded between about 1200 and 1450.']
       ),
       evidenceLab: evidence(
-        'Evidence Lab: From Camel Saddle to Imperial Power',
-        'The evidence set traces a chain from transportation to wealth to religious and intellectual influence. Test whether the pieces form a convincing causal sequence.',
-        'Construct and test a causal explanation using all three evidence entries. Place camel technology, Mansa Musa\'s hajj, and Timbuktu\'s scholarship into defensible roles—as an enabling condition, evidence of accumulated wealth and political reach, or a cultural consequence. Explain every link without treating all three items as causes. Identify the weakest link and name the additional evidence needed to strengthen it.',
+        'Evidence Lab: Gold, Routes, and Mali\'s Power',
+        'Use two of the four cards. Each one shows a different part of the story: the trade routes, Mali\'s reach, its famous wealth, or its trading cities.',
+        'How did trans-Saharan trade help Mali become powerful and connected to the wider world? Make a clear claim. Use a detail you can see on each of two cards, explain how each detail supports your claim, and name one thing that one of your cards cannot prove on its own.',
         'Causation and Claims and Evidence (Skills 1.B and 6.B)',
-        ['camel saddle', 'caravans', 'Mansa Musa', 'hajj', 'Timbuktu', 'trans-Saharan trade'],
-        ['Assigns each entry a defensible causal role.', 'Explains every link in the sequence.', 'Distinguishes causes from evidence of effects.', 'Identifies the weakest inference and evidence that could test it.']
+        ['caravans', 'Mansa Musa', 'Mali', 'Djenné', 'Islam', 'gold', 'trans-Saharan trade'],
+        ['Makes a clear claim about how trade and Mali\'s power were connected.', 'Uses a specific detail from each of two cards.', 'Explains how each detail supports the claim.', 'Names one limit of what a card can prove.']
       ),
       primarySource: source(
         'Primary Source: Ibn Battuta Crosses the Sahara, 1352',
-        'Ibn Battuta joined merchants traveling south from Sijilmasa. His description of Taghaza connects desert ecology, coerced labor, camel transport, salt, and West African gold in one commercial system.',
+        'Ibn Battuta traveled south across the Sahara with merchants from Sijilmasa. His description of Taghaza shows the desert, enslaved salt miners, camel transport, salt, and West African gold as parts of one trade system.',
         'After twenty-five days from Sijilmasa we reached Taghaza, an unattractive village, with the curious feature that its houses and mosques are built of blocks of salt, roofed with camel skins. There are no trees there, nothing but sand. In the sand is a salt mine; they dig for the salt, and find it in thick slabs, lying one on top of the other, as though they had been tool-squared and laid under the surface of the earth. A camel will carry two of these slabs. No one lives at Taghaza except the slaves of the Massufa tribe, who dig for the salt; they subsist on dates imported from Dar\'a and Sijilmasa, camels\' flesh, and millet imported from the Negrolands. The people come up from their country and take away the salt from there. At Iwalatan a load of salt brings eight to ten mithqals; in the town of Malli it sells for twenty to thirty, and sometimes as much as forty.',
-        'Ibn Battuta, Travels in Asia and Africa, 1325 to 1354, translated and selected by H. A. R. Gibb (London: George Routledge & Sons, 1929), trans-Saharan section, pp. 317 to 318.',
+        'Ibn Battuta, Travels in Asia and Africa, 1325 to 1354, translated and selected by H. A. R. Gibb (London: George Routledge & Sons, 1929), trans-Saharan section, pp. 317 to 318',
         'This is a continuous excerpt; punctuation is lightly standardized and one antiquated racial label is replaced by "the people." Gibb\'s place-name spellings are retained. Ibn Battuta traveled with the caravan and visited Taghaza, but some economic details may still reflect what merchants told him.',
         [
-          '(a) Describe one pattern of economic specialization or exchange shown in the passage, using a specific detail from the source.',
-          '(b) Explain how one environmental or technological factor helped produce the commercial pattern described in the passage.',
-          '(c) Explain how one specific development not stated in the passage supports or qualifies the claim that trans-Saharan exchange strengthened West African states.'
+          '(a) Describe one example in the passage of a place producing or selling something that another place needed. Use a specific detail from the source.',
+          '(b) Explain how the desert environment or camel transport helped create the trade described in the passage.',
+          '(c) Explain whether one piece of evidence that is not in the passage supports or weakens the claim that trans-Saharan trade made West African states stronger. Name the evidence.'
         ],
-        'Respond to all three parts in complete sentences. Use a detail about production, transport, imports, or prices in (a). In (b), explain the mechanism connecting environment or technology to that pattern. In (c), name outside evidence and explain how it strengthens or limits a claim about state power.',
+        'Answer all three parts in complete sentences. In (a), use a detail about the salt mine, the food brought in, how salt was carried, or its prices. In (b), explain how the environment or the camels made that trade happen. In (c), name your outside evidence and explain how it supports or weakens the claim about West African states.',
         'Developments and Processes (Skill 1.B), Causation, and Sourcing (Skill 2.B)',
         ['Ibn Battuta', 'Taghaza', 'salt', 'gold', 'camels', 'Massufa', 'trans-Saharan trade'],
         [{ label: 'Read the extended Gibb selection at Fordham University', url: 'https://sourcebooks.fordham.edu/source/1354-ibnbattuta.asp' }]
@@ -478,35 +478,35 @@
       skillBuilder: skill(
         'Sourcing and Situation (Skill 2.A) and Causation',
         'Read a Traveler Before You Trust the Traveler',
-        'Sourcing becomes historical analysis only when a feature of the author, audience, purpose, or situation is connected to a particular claim, emphasis, or silence in the source. "The author may be biased" explains nothing.',
+        'A source is more useful when you know who wrote it and why. Saying "the author is biased" explains nothing. A strong answer explains how one thing about the writer changed what the source says or leaves out.',
         [
-          { label: 'Identify precisely', text: 'Choose one relevant feature of the biographer\'s religious position, purpose, audience, or Mongol-era historical situation.' },
-          { label: 'Locate the effect', text: 'Cite a word, detail, or omission that reflects the selected sourcing feature.' },
-          { label: 'Explain relevance', text: 'Show how the sourcing feature affects the source\'s value for evaluating a claim about cultural diffusion.' }
+          { label: 'Know the writer', text: 'The Module 08 passage about Rabban Bar Sauma was written by a Christian biographer who admired him. Pick one thing about that writer: their religion, their purpose, or who they were writing for.' },
+          { label: 'Find the detail', text: 'Point to a word, a detail, or something missing from the passage that shows that feature at work.' },
+          { label: 'Explain what it means', text: 'Explain how that feature makes the passage more useful, or less useful, as evidence that trade and travel increased contact between religions.' }
         ],
-        'Using the Rabban Bar Sauma passage in Module 08, explain how one relevant feature of the Syriac biographer\'s point of view, purpose, audience, or historical situation affects the source\'s usefulness for evaluating the claim that expanding networks increased cross-cultural religious contact. Identify the feature precisely, cite a revealing detail from the passage, and explain the connection between that feature and what the source can—or cannot—demonstrate.',
-        ['Identifies one specific and historically relevant sourcing feature.', 'Uses a precise source detail rather than a generic accusation of bias.', 'Explains how the feature shaped an emphasis, claim, or omission.', 'Connects the sourcing analysis to the stated historical claim.']
+        'Using the Rabban Bar Sauma passage in Module 08, explain how one thing about the biographer who wrote it (their religion, their purpose, or their audience) affects how useful the passage is as evidence that growing networks increased contact between religions. Name the feature, point to a specific detail in the passage, and explain what the passage can and cannot show because of it.',
+        ['Names one specific thing about the writer.', 'Points to a real detail in the passage, not a general claim of bias.', 'Explains how that feature shaped what the passage says or leaves out.', 'Connects the answer to contact between religions along growing networks.']
       ),
       evidenceLab: evidence(
-        'Evidence Lab: Trace Diffusion, Then Test the Story',
-        'Choose two examples of diffusion from different regions or different categories. A strong explanation names an origin, a route or carrier, a receiving society, and a transformation.',
-        'Evaluate the claim that trade networks spread cultural and technological traditions without producing cultural uniformity. Compare two evidence entries from different regions or categories. For each, trace an origin, carrier or route, receiving society, and local transformation. Explain how the contrast between the examples supports a qualified judgment, then identify one additional source that could test the transformation you described.',
+        'Evidence Lab: Traces of a More Connected World',
+        'Use two of the four cards. Each one shows a different result of connection: a belief that spread, a technology, a connected city that fell, or travel knowledge reaching a mapmaker.',
+        'How did growing trade networks change culture or knowledge in Afro-Eurasia between about 1200 and 1450? Make a clear claim. Use a detail you can see on each of two cards, explain how each detail supports your claim, and name one thing that one of your cards cannot prove on its own.',
         'Causation and Claims and Evidence (Skills 3.D and 6.B)',
-        ['cultural diffusion', 'Islam', 'Buddhism', 'paper', 'printing', 'sugar', 'trade networks'],
-        ['Makes a defensible and qualified judgment about the claim.', 'Traces origin, movement, reception, and transformation for two examples.', 'Uses the comparison to explain why diffusion did not produce uniformity.', 'Identifies an additional source capable of testing the argument.']
+        ['Buddhism', 'Dunhuang', 'paper', 'Baghdad', 'Mongols', 'travel account', 'Catalan Atlas', 'cultural diffusion'],
+        ['Makes a clear claim about how connection changed culture or knowledge.', 'Uses a specific detail from each of two cards.', 'Explains how each detail supports the claim.', 'Names one limit of what a card can prove.']
       ),
       primarySource: source(
         'Primary Source: Rabban Bar Sauma Explains Eastern Christianity, 1288',
-        'Rabban Bar Sauma was a Church of the East monk born near Khanbaliq in Yuan China. The Ilkhan Arghun later sent him west as a diplomatic envoy. A Syriac Christian biographer recorded his meeting with Roman cardinals.',
+        'Rabban Bar Sauma was a monk of the Church of the East, born around 1220 near the city that later became Khanbaliq (Beijing), in Mongol-ruled northern China. The Ilkhan Arghun later sent him west as an envoy. A Christian biographer, writing in Syriac, recorded his meeting with cardinals in Rome.',
         'The Cardinals said unto him, "Where is the Throne of the Catholicus?" He said to them, "In Baghdad." They answered, "What position hast thou there?" And he replied, "I am a deacon in the Cell of the Catholicus, and the director of the disciples, and the Visitor-General." The Cardinals said, "It is a marvellous thing that thou who art a Christian, and a deacon of the Throne of the Patriarch of the East, hast come upon an embassy from the king of the Mongols." And Rabban Sawma said unto them, "Know ye, O our Fathers, that many of our Fathers have gone into the countries of the Mongols, and Turks, and Chinese and have taught them the Gospel, and at the present time there are many Mongols who are Christians."',
-        'Anonymous Syriac biographer, The Monks of Kublai Khan, translated from Syriac by Sir E. A. Wallis Budge (London: Religious Tract Society, 1928), pp. 173 to 174.',
+        'Anonymous Syriac biographer, The Monks of Kublai Khan, translated from Syriac by Sir E. A. Wallis Budge (London: Religious Tract Society, 1928), pp. 173 to 174',
         'This is one continuous exchange in Budge\'s public-domain translation; punctuation is lightly standardized. The text is a religious biography, not Bar Sauma\'s own surviving diary, and its Christian author emphasizes the reach and prestige of the Church of the East.',
         [
-          '(a) Describe one development in cross-cultural or religious exchange illustrated by the passage.',
-          '(b) Explain how the historical situation of Mongol rule contributed to the development described in the passage.',
-          '(c) Explain how the Christian biographer\'s point of view or purpose affects the usefulness of the passage for evaluating the spread of Christianity across Eurasia.'
+          '(a) Describe one example in the passage of religion, or religious people, moving across Asia.',
+          '(b) Explain how Mongol rule helped make the journey or the conversation in the passage possible.',
+          '(c) Explain how the biographer\'s Christian point of view or purpose affects how useful the passage is for showing how far Christianity had spread across Asia.'
         ],
-        'Respond to all three parts in complete sentences. Use a specific passage detail in (a). In (b), trace a mechanism connecting Mongol imperial conditions to Bar Sauma\'s journey or audience. In (c), explain both the insight the biographer\'s position provides and the conclusion it makes less secure.',
+        'Answer all three parts in complete sentences. In (a), use a specific detail from the passage. In (b), explain how Mongol rule made travel between China, Persia and Europe easier. In (c), explain one thing the biographer\'s point of view helps us see and one claim in the source that it makes less certain.',
         'Sourcing and Situation (Skills 2.A and 2.C)',
         ['Rabban Bar Sauma', 'Church of the East', 'Yuan China', 'Ilkhanate', 'Baghdad', 'Mongols', 'cultural diffusion'],
         [{ label: 'Read Budge\'s 1928 translation at Fordham University', url: 'https://sourcebooks.web.fordham.edu/eastasia/13bar-sauma-nestorianpilgrim.asp' }]
@@ -517,22 +517,22 @@
       skillBuilder: skill(
         'Making Connections (Skill 5.A) and Causation',
         'Connect Trade Expansion to Environmental Change',
-        'The same networks moved pathogens and crops, but movement alone did not determine their consequences. Historical explanation must connect the transfer to biological properties, receiving environments, labor systems, and patterns of settlement.',
+        'The same trade networks moved crops and diseases, but moving was only the start. To explain a consequence, show what happened after the living thing arrived: how it grew or spread in its new place, and how that changed food, work, or where people lived.',
         [
-          { label: 'Trace the movement', text: 'Identify the network and the specific pathogen or crop that moved through it.' },
-          { label: 'Explain the mechanism', text: 'Show how mobility, ecology, immunity, cultivation, or labor needs turned transfer into consequence.' },
-          { label: 'Compare outcomes', text: 'State a meaningful difference in demographic, economic, social, or ecological effects and explain why it existed.' }
+          { label: 'Trace the movement', text: 'Name the network and the specific crop or pathogen that moved through it.' },
+          { label: 'Explain the mechanism', text: 'Show how the movement caused a result: how travel, the new environment, farming, sickness, or the need for workers turned it into a consequence.' },
+          { label: 'Compare outcomes', text: 'State one real difference between the effects of the crop and the pathogen, and explain why that difference existed.' }
         ],
-        'Compare the diffusion of one pathogen with the diffusion of one crop through expanding exchange networks from c. 1200 to c. 1450. For each example, identify the route or carrier and explain the mechanism that produced a specific consequence. Then explain one important difference between their effects by connecting it to biology, environment, labor, or patterns of human settlement.',
-        ['Uses one accurate pathogen example and one accurate crop example.', 'Traces a route or carrier for each transfer.', 'Explains how each transfer produced a specific consequence.', 'Explains the difference in effects instead of merely stating it.']
+        'Compare how one pathogen and one crop spread through trade networks from c. 1200 to c. 1450. For each one, name the route or what carried it, and explain how it caused a specific result. Then explain one important difference between their effects, and connect that difference to biology, the environment, work, or where people lived.',
+        ['Uses one accurate pathogen example and one accurate crop example.', 'Names a route or carrier for each one.', 'Explains how each one produced a specific consequence.', 'Explains the difference in effects instead of only stating it.']
       ),
       evidenceLab: evidence(
         'Evidence Lab: One Shock, Uneven Consequences',
-        'Use evidence from at least two regions or two different source types. Demographic estimates, chronicles, and environmental data answer different questions.',
-        'Evaluate the extent to which the environmental consequences of connectivity from c. 1200 to c. 1450 were both widespread and uneven. Make a defensible judgment using at least two evidence entries from different regions or source types. Explain how exchange produced each consequence, compare their scale or intensity, and use the limits of one source to qualify the reach of your conclusion.',
+        'Use at least two of the four cards on this page, of different types: the two instructional maps, the modern route map, or the 1493 woodcut. A map and a picture made 145 years later answer different questions.',
+        'How widespread were the environmental effects of trade networks from c. 1200 to c. 1450, and were they the same everywhere? Make a claim you can support with at least two cards of different types. Explain how trade caused each effect, compare how large or widespread the effects were, and use something one card cannot show to limit your claim.',
         'Making Connections and Claims and Evidence (Skills 5.A and 3.D)',
-        ['Black Death', 'Caffa', 'Ibn Khaldun', 'population loss', 'deforestation', 'trade networks'],
-        ['Makes a defensible judgment about extent.', 'Uses specific evidence from different regions or source types.', 'Explains the mechanism and compares scale or intensity.', 'Uses source type or geographic scope to qualify the conclusion.']
+        ['Black Death', 'Caffa', 'bananas', 'citrus', 'population loss', 'trade networks'],
+        ['Makes a clear claim about how widespread the effects were.', 'Uses specific details from at least two cards of different types.', 'Explains how trade caused each effect and compares how large or widespread they were.', 'Uses what one card cannot show to limit the claim.']
       ),
       primarySource: source(
         'Primary Source: Giovanni Boccaccio Describes the Black Death, 1348',
@@ -543,9 +543,9 @@
         [
           '(a) Describe one social or demographic consequence of the plague shown in the passage, using a specific detail from Boccaccio\'s account.',
           '(b) Explain how one feature of Afro-Eurasian exchange networks contributed to the spread or severity of the crisis Boccaccio described.',
-          '(c) Explain how the geographic scope or literary purpose of Boccaccio\'s account limits its usefulness for evaluating the environmental consequences of connectivity across Afro-Eurasia.'
+          '(c) Explain how one fact about this account limits what it can tell us about the environmental effects of trade across all of Afro-Eurasia. Boccaccio wrote about one city, Florence, as the opening of a book of stories.'
         ],
-        'Respond to all three parts in complete sentences. Ground (a) in the passage. In (b), trace a mechanism rather than asserting that trade spread disease. In (c), connect a specific feature of the source to the particular broader conclusion it cannot establish by itself.',
+        'Respond to all three parts in complete sentences. Ground (a) in the passage. In (b), trace a mechanism rather than asserting that trade spread disease. In (c), name the feature of the source and the bigger conclusion it cannot prove on its own.',
         'Making Connections (Skill 5.A) and Sourcing (Skill 2.C)',
         ['Giovanni Boccaccio', 'Black Death', 'Florence', 'public health', 'trade networks', 'demographic decline', 'contagion'],
         [{ label: 'Read Payne\'s complete public-domain translation at Project Gutenberg', url: 'https://www.gutenberg.org/files/23700/23700-h/23700-h.htm' }]

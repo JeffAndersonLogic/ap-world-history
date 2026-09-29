@@ -29,7 +29,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      # Full history, for the same reason nightly.yml has it. The topic audit
+      # index is derived from `git log`, and in a depth-1 checkout every file
+      # reads as last changed by the tip commit. Any push dated after the newest
+      # audit record then made every audited topic read Stale here while a normal
+      # clone read it Fresh, so no committed index could satisfy both and
+      # `topic-audit-coverage.test.js` failed on content that had nothing to do
+      # with a topic. It cost about a second of checkout.
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:

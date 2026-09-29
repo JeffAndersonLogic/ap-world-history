@@ -67,4 +67,32 @@
 // house; that card became a documentary text record of her exile instead of a
 // forced or unverified picture, the correct outcome per the Image Contract.
 
+// **2026-09-23, the eight pictures and credit links the nightly check reported
+// dead** were re-sourced through this file and the Source images workflow over
+// three rounds, then placed by hand (several were lecture images or a BeInTheRoom
+// background, not Evidence Lab cards; the two Unit 6 ones went into
+// build-unit6.js). The one surprise worth recording: Futtle_Rozack.jpg is not a
+// photograph of the ship but a page of its 1845 register of indentured
+// laborers, a stronger primary source than the dead photo it replaced. The 8.1
+// map credit was cleared rather than repointed, because the slot draws local
+// artwork and a credit for a different map would be false.
+
+// **2026-09-23, Topic 2.5's two CED summary cards** were replaced by the Mongol
+// siege of Baghdad (Bagdad1258.jpg, a Persian manuscript painting of about 1430)
+// and the Catalan Atlas caravan (Caravane_Marco_Polo.jpg, 1375). Both verified
+// through the Source images workflow; the captions follow what Commons says each
+// file is, including that the Baghdad painting was made long after the siege.
+
+// **2026-09-27, Topic 2.5's Dunhuang card** replaced the Cave 96 Buddha
+// photograph, which looked up past scaffolding at the statue's chin, with the
+// Diamond Sutra of 868 (British Library, CC0), found sealed at the Mogao Caves.
+// Verified and applied through this workflow; Commons describes it as the
+// frontispiece of the world's earliest dated printed book.
+
+// **2026-09-27, Topic 2.5's paper money card** replaced the 308-pixel Song
+// jiaozi print with the Yuan banknote of 1287 and its wooden printing plate
+// (PHGCOM, CC BY-SA 3.0), a real note from inside the period. Verified and
+// applied through this workflow. Beware "Jiaozi.jpg" on Commons: it is a plate
+// of dumplings.
+
 module.exports = [];

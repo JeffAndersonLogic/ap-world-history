@@ -33,6 +33,24 @@ const DECKS = [
     backUrl: 'lesson-2-2-mongol-empire.html#lecture'
   },
   {
+    key: '2.3',
+    sources: [
+      'teacher/data/topic-2-3-teaching-base.js',
+      'teacher/data/topic-2-3-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-2-3-student.js',
+    backUrl: 'lesson-2-3-indian-ocean.html#lecture'
+  },
+  {
+    key: '2.4',
+    sources: [
+      'teacher/data/topic-2-4-teaching-base.js',
+      'teacher/data/topic-2-4-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-2-4-student.js',
+    backUrl: 'lesson-2-4-trans-saharan.html#lecture'
+  },
+  {
     key: '2.5',
     sources: [
       'teacher/data/topic-2-5-teaching-base.js',
@@ -49,8 +67,23 @@ const DECKS = [
     ],
     student: 'assets/data/presentations/topic-2-6-student.js',
     backUrl: 'lesson-2-6-environmental-consequences.html#lecture'
+  },
+  {
+    key: '2.7',
+    sources: [
+      'teacher/data/topic-2-7-teaching-base.js',
+      'teacher/data/topic-2-7-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-2-7-student.js',
+    backUrl: 'lesson-2-7-comparison.html#lecture'
   }
 ];
+
+// Teacher decks that exist on disk but are not yet on this pipeline, each with
+// the reason. The architecture contract fails on any teacher/topic-X-X-os.html
+// that is in neither DECKS nor this list, so a new deck cannot quietly skip the
+// student-copy generator the way Topic 2.3 did until 2026-09-22.
+const NOT_YET_MIGRATED = [];
 
 function clone(value) {
   return value == null ? value : JSON.parse(JSON.stringify(value));
@@ -93,11 +126,18 @@ function baseStudentSlide(s) {
   if (s.position) out.position = s.position;
   if (s.visual && s.visual.url) out.visual = publicVisual(s.visual);
   if (s.footer) out.footer = s.footer;
+  // The CED Key Concept the slide teaches, by code. Projected content: the
+  // band is on the board, and its wording comes from assets/data/key-concepts.js.
+  if (s.kc) out.kc = s.kc;
   if (Array.isArray(s.steps)) out.steps = clone(s.steps);
   if (Array.isArray(s.cards)) out.cards = clone(s.cards);
   if (Array.isArray(s.nodes)) out.nodes = clone(s.nodes);
   if (s.video) out.video = clone(s.video);
   if (s.action) out.action = { ...clone(s.action), url: publicUrl(s.action.url) };
+  // A slide template's own data (assets/js/behistorical-slide-templates.js).
+  // It is projected content, like steps and cards, so it passes through whole;
+  // teacher notes live in `notes` beside it and never inside it.
+  if (s.template && typeof s.template === 'object') out.template = clone(s.template);
   return out;
 }
 
@@ -151,14 +191,32 @@ function topic22Slides(teaching) {
   });
 }
 
-function topic25Slides(teaching) {
+function topic23Slides(teaching) {
   return projectedSlides(teaching).map(src => {
     const s = baseStudentSlide(src);
-    if (src.kind === 'image') s.kind = 'map';
-    if (src.kind === 'prompt' || src.kind === 'question') s.kind = 'prompt';
-    ensureWhy(s, 'Explain how intensified contact produces the cultural or intellectual consequence');
+    // The teacher page draws a two-column "split" slide the student renderer
+    // does not have. Keep what carries the teaching: the steps when there are
+    // steps, otherwise the picture with its header and takeaway.
+    if (src.kind === 'split') {
+      if (Array.isArray(src.steps) && src.steps.length) {
+        s.kind = 'process';
+        delete s.visual;
+      } else {
+        s.kind = 'map';
+      }
+    }
     return s;
   });
+}
+
+function topic24Slides(teaching) {
+  return projectedSlides(teaching).map(src => baseStudentSlide(src));
+}
+
+// Rebuilt on the slide templates 2026-09-25, like 2.4: every projected slide is
+// a template or a kind the student renderer draws, so nothing is remapped.
+function topic25Slides(teaching) {
+  return projectedSlides(teaching).map(src => baseStudentSlide(src));
 }
 
 function topic26Slides(teaching) {
@@ -171,13 +229,25 @@ function topic26Slides(teaching) {
   });
 }
 
+function topic27Slides(teaching) {
+  return projectedSlides(teaching).map(src => {
+    const s = baseStudentSlide(src);
+    if (src.kind === 'image') s.kind = 'map';
+    if (src.kind === 'prompt' || src.kind === 'question') s.kind = 'prompt';
+    return s;
+  });
+}
+
 function buildDeck(deck) {
   const teaching = loadTeaching(deck);
   const builders = {
     '2.1': topic21Slides,
     '2.2': topic22Slides,
+    '2.3': topic23Slides,
+    '2.4': topic24Slides,
     '2.5': topic25Slides,
-    '2.6': topic26Slides
+    '2.6': topic26Slides,
+    '2.7': topic27Slides
   };
   return {
     meta: {
@@ -257,4 +327,4 @@ function main() {
 }
 
 if (require.main === module) main();
-module.exports = { DECKS, buildDeck };
+module.exports = { DECKS, NOT_YET_MIGRATED, buildDeck };

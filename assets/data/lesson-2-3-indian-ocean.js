@@ -23,6 +23,18 @@
   }
 })();
 
+const BH23_STUDENT_ASSETS = '../assets/images/topics/2-3/';
+const BH23_STUDENT = {
+  dhow: BH23_STUDENT_ASSETS + '2.3%20-%20Dhow%20Ship.jpeg',
+  diaspora: BH23_STUDENT_ASSETS + '2.3%20-%20Diasporic%20Communities.jpg',
+  tradeMap: BH23_STUDENT_ASSETS + '2.3%20-%20Indian%20Ocean%20Trade%20Map%20Detailed.jpg',
+  orgChart: BH23_STUDENT_ASSETS + '2.3%20-%20Indian%20Ocean%20Trade%20Org%20Chart.png',
+  malayMarket: BH23_STUDENT_ASSETS + '2.3%20-%20Malay%20market.jpg',
+  monsoonMap: BH23_STUDENT_ASSETS + '2.3%20-%20Monsoons%20map.jpg',
+  swahili: BH23_STUDENT_ASSETS + '2.3%20-%20Swahili%20Merchants.jpg',
+  zhengHe: BH23_STUDENT_ASSETS + '2.3%20-%20Zheng%20He%20Fleet.jpg'
+};
+
 window.BEHISTORICAL_LESSON = {
   meta: {
     course: 'AP WORLD HISTORY',
@@ -118,6 +130,18 @@ window.BEHISTORICAL_LESSON = {
         url: 'https://youtu.be/r-D9F2TiirY',
         youtubeId: 'r-D9F2TiirY',
         prompt: 'Track the CED chain: monsoon knowledge + maritime technology -> more trade -> stronger states and diaspora communities -> wider cultural transfer.'
+      },
+      {
+        title: 'Topic 2.3 Supplemental Clip — Indian Ocean Trade (34:24–44:47)',
+        url: 'https://www.youtube.com/embed/svQbhZR0NyA?start=2064&end=2687&rel=0',
+        youtubeId: 'svQbhZR0NyA',
+        sourceUrl: 'https://www.youtube.com/watch?v=svQbhZR0NyA&t=2055s',
+        prompt: 'Watch only 34:24–44:47. Identify one piece of evidence that fits the Topic 2.3 story: environmental knowledge or maritime technology -> expanded trade -> stronger port states, diasporic communities, or wider cultural transfer.'
+      },
+      {
+        title: 'Zheng He | PBS World Explorers',
+        url: 'https://indiana.pbslearningmedia.org/resource/e27de4d3-c939-4d55-ab55-2dc300db99ff/zheng-he/',
+        prompt: 'How do Zheng He\'s voyages show Ming state power operating within an Indian Ocean trading system that already connected East Africa, South Asia, Southeast Asia, and China?'
       }
     ],
     segments: [
@@ -129,10 +153,10 @@ window.BEHISTORICAL_LESSON = {
           'Environmental knowledge and maritime technology worked together: they lowered risk, increased carrying capacity, and expanded the volume and geographic range of trade.'
         ],
         image: {
-          title: 'Indian Ocean basin',
+          title: 'Monsoon wind system',
           caption: 'Seasonal winds and maritime technologies turned the ocean into a predictable exchange system.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png'
+          url: BH23_STUDENT.monsoonMap,
+          sourceUrl: BH23_STUDENT.monsoonMap
         }
       },
       {
@@ -143,10 +167,10 @@ window.BEHISTORICAL_LESSON = {
           'Goods such as spices, textiles, gold, ivory, and porcelain mattered because the flow of valuable products generated revenue and political leverage for states controlling strategic ports and routes.'
         ],
         image: {
-          title: 'Indian Ocean trade routes',
-          caption: 'Commercial nodes became political nodes because states could tax and protect exchange.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png'
+          title: 'Swahili Coast merchants',
+          caption: 'Commercial nodes became political nodes because states could tax, protect, and organize exchange.',
+          url: BH23_STUDENT.swahili,
+          sourceUrl: BH23_STUDENT.swahili
         }
       },
       {
@@ -157,10 +181,10 @@ window.BEHISTORICAL_LESSON = {
           'Diasporic communities were more than temporary visitors: they created durable networks of trust, family, religion, language, and commercial knowledge across the ocean.'
         ],
         image: {
-          title: 'Port-city cultural interaction',
-          caption: 'Diasporic communities made Indian Ocean ports centers of sustained cross-cultural interaction.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png'
+          title: 'Diasporic communities',
+          caption: 'Diasporic communities made Indian Ocean ports centers of sustained cross-cultural interaction. Historical Reconstruction - AI Generated.',
+          url: BH23_STUDENT.diaspora,
+          sourceUrl: BH23_STUDENT.diaspora
         }
       },
       {
@@ -171,10 +195,10 @@ window.BEHISTORICAL_LESSON = {
           'Zheng He\'s expeditions demonstrate how intensified interregional contact encouraged **technological and cultural transfers** across a maritime world already tied together by trade.'
         ],
         image: {
-          title: 'Indian Ocean maritime reach',
-          caption: 'Zheng He\'s voyages operated within an already mature Indian Ocean exchange system.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png'
+          title: 'Zheng He fleet',
+          caption: 'Zheng He\'s voyages operated within an already mature Indian Ocean exchange system. Historical Reconstruction - AI Generated.',
+          url: BH23_STUDENT.zhengHe,
+          sourceUrl: BH23_STUDENT.zhengHe
         }
       }
     ]
@@ -182,9 +206,9 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: 'Indian Ocean Trade Routes',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-    sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png',
-    caption: 'The Indian Ocean basin connected East Africa, Arabia, South Asia, Southeast Asia, and China through maritime routes shaped by seasonal monsoon winds.',
+    url: BH23_STUDENT.tradeMap,
+    sourceUrl: BH23_STUDENT.tradeMap,
+    caption: 'The Indian Ocean basin connected East Africa, Arabia, South Asia, Southeast Asia, and China through maritime routes shaped by seasonal monsoon winds. Map by Simeon Netchev, World History Encyclopedia. It shows the 1400s and 1500s, so the Portuguese routes on it come after this topic.',
     intro: 'Use the map to connect environment, technology, state growth, diaspora communities, and Zheng He to one maritime system.',
     prompt: 'Why would predictable winds and strategic port locations create both commercial wealth and cultural diversity?',
     notes: [
@@ -202,14 +226,14 @@ window.BEHISTORICAL_LESSON = {
   },
 
   first10: {
-    title: 'First & 10: The Ocean That Connected the World',
-    embedUrl: 'first-and-10-topic-2-3-indian-ocean-capture.html?v=response-id-fix-v1'
+    title: 'First & 10: The Ocean That Ran on a Schedule',
+    embedUrl: 'first-and-10-topic-2-3-indian-ocean-capture.html?v=schedule-v1'
   },
 
   evidenceLab: {
     title: 'Evidence Lab: Proving Indian Ocean Expansion and Effects',
     intro: 'Each piece of evidence belongs to one part of the CED story: causes of expansion, state growth, diasporic communities, or wider transfer.',
-    prompt: 'Choose one piece of evidence and explain the mechanism connecting it to the growth or effects of Indian Ocean exchange after 1200.',
+    prompt: 'After 1200, how much did knowledge of the environment, especially monsoon winds, help Indian Ocean trade grow compared with the power of states? Make a clear claim. Use at least two pieces of evidence from different parts of the trade system, explain how each one helped trade grow, and include one example showing that political power or another factor also mattered.',
     items: [
       { title: 'Monsoon Winds + Compass + Astrolabe + Larger Ships', detail: 'Evidence that environmental knowledge and maritime technologies increased predictability, range, and carrying capacity.' },
       { title: 'Swahili Coast, Gujarat, and Malacca', detail: 'Evidence that expanding maritime exchange fostered the growth of states and powerful commercial centers.' },

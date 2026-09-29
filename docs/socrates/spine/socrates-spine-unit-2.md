@@ -106,7 +106,7 @@ Strong answer checklist: Explain how Mali gained from trade. Explain how Mali he
 
 **AP skill focus.** Sourcing and Situation (Skill 2.A) and Causation.
 
-**Checkpoint 1 prompt.** Explain how ONE cultural tradition or technology diffused through Afro-Eurasian exchange networks from c. 1200 to c. 1450. Use a specific CED example and explain how the network enabled movement.
+**Checkpoint 1 prompt.** Explain how ONE belief system or technology spread through Afro-Eurasian trade networks between about 1200 and 1450. Name a specific example (Buddhism, Hinduism, Islam, paper, or gunpowder), say where it moved, and explain how the network helped it spread.
 Strong answer checklist: Name a specific tradition or innovation. Identify where it moved. Explain how intensified exchange enabled the diffusion.
 
 **Checkpoint 2 prompt.** Explain ONE way intensified exchange affected cities and ONE way it increased written knowledge about distant societies. Use a traveler such as Ibn Battuta, Marco Polo, or Margery Kempe as evidence.
@@ -114,7 +114,7 @@ Strong answer checklist: Explain a change in urban fortunes. Use a named travele
 
 ## 2.6 Environmental Consequences of Connectivity
 
-**Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. How exchange networks spread crops and pathogens across Afro-Eurasia c. 1200–1450
+**Where this sits.** Unit 2: Networks of Exchange, c. 1200 to c. 1450. How exchange networks spread crops and pathogens across Afro-Eurasia, c. 1200 to c. 1450
 
 **College Board key concepts.**
 - KC-3.1.IV (Humans and the Environment): There was continued diffusion of crops and pathogens, with epidemic diseases, including the bubonic plague, along trade routes. Illustrative examples: Bananas in Africa, New rice varieties in East Asia, Spread of citrus in the Mediterranean.
@@ -123,7 +123,7 @@ Strong answer checklist: Explain a change in urban fortunes. Use a named travele
 
 **AP skill focus.** Making Connections (Skill 5.A) and Causation.
 
-**Checkpoint 1 prompt.** Choose ONE required crop example—bananas in Africa, new rice varieties in East Asia, or citrus in the Mediterranean. Explain how exchange networks spread it and what environmental or demographic effect followed.
+**Checkpoint 1 prompt.** Choose ONE required crop example: bananas in Africa, new rice varieties in East Asia, or citrus in the Mediterranean. Explain how exchange networks spread it and what environmental or demographic effect followed.
 Strong answer checklist: Name the crop and destination. Explain how connectivity enabled diffusion. Explain the resulting environmental or demographic effect.
 
 **Checkpoint 2 prompt.** Explain how trade networks contributed to the spread of bubonic plague and identify one demographic or social consequence of that spread.

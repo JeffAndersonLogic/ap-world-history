@@ -9,7 +9,7 @@ const byTitle=needle=>T.slides.find(s=>String(s.title||'').toLowerCase().include
 
 const open=T.slides.find(s=>s.phase==='launch'&&s.kind==='hero');
 if(open){
-  open.visual=visual('2.1 - Silk Road Map 2.jpg','Silk Road network map used as a cinematic opening visual','Topic 2.1 classroom visual');
+  open.visual=visual('2.1 - Silk Road Map 2.jpg','Map of Silk Road and Indian Ocean trade routes connecting China and the Middle East','Map · Silk Road and Indian Ocean trade routes, c. 600 to 1700');
   open.notes=open.notes||{};
   open.notes.land=[
     'Unit 1 focused on regional states. Unit 2 changes the scale to connections among those regions.',
@@ -20,14 +20,14 @@ if(open){
 
 const demand=byTitle('Luxury goods made distance worth it');
 if(demand){
-  demand.visual=visual('2.1 - Porcelain silk luxury goods.jpeg','Porcelain and silk representing high-value luxury goods traded across Afro-Eurasia','Topic 2.1 classroom visual · Luxury goods');
+  demand.visual=visual('2.1 - Porcelain silk luxury goods.jpeg','Historical reconstruction (AI generated) of porcelain and silk representing high-value luxury goods traded across Afro-Eurasia, not a historical source','Historical Reconstruction - AI Generated');
 }
 
 const caravanserai=byTitle('Caravanserai made distance manageable');
 if(caravanserai){
   caravanserai.kind='hero';
   caravanserai.position='right';
-  caravanserai.visual=visual('2.1 - Caravanserai Reconstruction.png','Historical reconstruction of a caravanserai serving long-distance merchants','HISTORICAL RECONSTRUCTION — AI GENERATED');
+  caravanserai.visual=visual('2.1 - Caravanserai Reconstruction.png','Historical reconstruction of a caravanserai serving long-distance merchants','Historical Reconstruction - AI Generated');
   caravanserai.footer='Infrastructure reduced the cost and risk of distance.';
   caravanserai.notes=caravanserai.notes||{};
   caravanserai.notes.land=[
@@ -58,7 +58,7 @@ if(causal&&Array.isArray(causal.steps)){
 
 const cities=byTitle('Trade networks create powerful nodes');
 if(cities){
-  cities.visual=visual('2.1 - Samarkand.jpg','Samarkand as a major Silk Road trading city','Topic 2.1 classroom visual · Samarkand');
+  cities.visual=visual('2.1 - Samarkand.jpg','Historical reconstruction (AI generated) of Samarkand as a major Silk Road trading city, not a historical source','Historical Reconstruction - AI Generated');
 }
 
 const close=T.slides.find(s=>s.phase==='close');

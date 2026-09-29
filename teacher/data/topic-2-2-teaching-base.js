@@ -4,6 +4,10 @@
  */
 window.BEHISTORICAL_TEACHING = {
   meta: {
+    omits: {
+      preflight: 'Built and taught before Teacher Preflight was required. Add one on the next revision of this deck.',
+      beready: 'Built and taught before the BeReady standard was added on 2026-09-22. Add one on the next revision of this deck.'
+    },
     topic: '2.2',
     date: 'Friday, September 18, 2026',
     cohort: 'Green',
@@ -132,7 +136,7 @@ window.BEHISTORICAL_TEACHING = {
       visual: {
         url: '../assets/images/reconstructions/topic-2-2-mounted-archers.webp?v=production-v5',
         alt: 'Historical reconstruction of coordinated Mongol mounted archers on the steppe',
-        credit: 'Historical reconstruction · AI generated'
+        credit: 'Historical Reconstruction - AI Generated'
       },
       notes: {
         minutes: 4,
@@ -223,7 +227,7 @@ window.BEHISTORICAL_TEACHING = {
       visual: {
         url: '../assets/images/reconstructions/topic-2-2-yam-relay.webp?v=production-v5',
         alt: 'Historical reconstruction of a mounted Mongol courier approaching a Yam relay station',
-        credit: 'Historical reconstruction · AI generated'
+        credit: 'Historical Reconstruction - AI Generated'
       },
       notes: {
         minutes: 3,
@@ -281,7 +285,7 @@ window.BEHISTORICAL_TEACHING = {
       visual: {
         url: '../assets/images/reconstructions/topic-2-2-protected-caravan.webp?v=production-v5',
         alt: 'Historical reconstruction of a protected caravan moving through Mongol-controlled territory',
-        credit: 'Historical reconstruction · AI generated'
+        credit: 'Historical Reconstruction - AI Generated'
       },
       notes: {
         minutes: 6,

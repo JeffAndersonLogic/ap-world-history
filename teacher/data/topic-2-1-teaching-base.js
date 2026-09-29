@@ -5,6 +5,9 @@
  */
 window.BEHISTORICAL_TEACHING = {
   meta: {
+    omits: {
+      beready: 'Built and taught before the BeReady standard was added on 2026-09-22. Add one on the next revision of this deck.'
+    },
     topic: '2.1',
     date: 'Thursday, September 17, 2026',
     cohort: 'Green',
@@ -95,7 +98,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'launch', kind: 'process', eyebrow: 'The Lesson in One Chain',
+      retelling: true, phase: 'launch', kind: 'process', eyebrow: 'The Lesson in One Chain',
       title: 'Demand + Systems -> Trade Growth',
       steps: [
         { label: 'DEMAND', text: 'Luxury goods are worth moving' },
@@ -135,7 +138,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'problem', kind: 'question', eyebrow: 'The Economic Problem',
-      title: 'A luxury good is valuable only if it survives the journey.',
+      kc: 'KC-3.1.I.C.i', title: 'A luxury good is valuable only if it survives the journey.',
       subtitle: 'Distance creates risk. Risk creates cost. Cost limits trade.',
       notes: {
         minutes: 6,
@@ -169,11 +172,11 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'demand', kind: 'image', eyebrow: 'Big Rock 1 · Demand',
-      title: 'Luxury goods made distance worth it.',
+      kc: 'KC-3.3.I.B', title: 'Luxury goods made distance worth it.',
       visual: {
         type: 'image',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Blue%20and%20white%20porcelain%20dish%20with%20three%20friends%20of%20winter%2C%20Yuan%20dynasty.JPG',
-        alt: 'Blue and white porcelain dish from the Yuan dynasty'
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jingdezhen%20blue%20and%20white%20plate%20Yuan%20period%20mid%2014th%20century.jpg',
+        alt: 'Blue and white Jingdezhen porcelain plate from the Yuan dynasty, mid-1300s'
       },
       footer: 'Porcelain · textiles · silk · spices · iron · steel',
       notes: {
@@ -189,7 +192,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'systems', kind: 'embed', eyebrow: 'Big Rock 2 · Transportation Infrastructure',
-      title: 'Caravanserai made distance manageable.',
+      kc: 'KC-3.1.I.C.i', title: 'Caravanserai made distance manageable.',
       embed: {
         url: 'https://www.canva.com/design/DAHU8YGxw5k/view?embed',
         fallback: 'https://www.canva.com/d/gBexzatsmhMDKh4',
@@ -208,7 +211,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'systems', kind: 'grid', eyebrow: 'Big Rock 2 · Commercial Practices',
-      title: 'Merchants also needed financial systems.',
+      kc: 'KC-3.1.I.C.i', title: 'Merchants also needed financial systems.',
       cards: [
         { title: 'BILLS OF EXCHANGE', text: 'A safer written promise of payment.' },
         { title: 'BANKING HOUSES', text: 'Institutions that handled money and credit.' },
@@ -246,7 +249,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'cities', kind: 'image', eyebrow: 'Big Rock 3 · Trading Cities',
-      title: 'Trade networks create powerful nodes.',
+      kc: 'KC-3.1.I.A.i', title: 'Trade networks create powerful nodes.',
       visual: {
         type: 'image',
         url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Registan%20square%20Samarkand.jpg',
@@ -266,7 +269,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'map', kind: 'image', eyebrow: 'Map Check',
-      title: 'Follow the nodes, not just the line.',
+      kc: 'KC-3.1.I.A.i', title: 'Follow the nodes, not just the line.',
       visual: { type: 'map' },
       footer: 'Central Asia matters because routes, cities, and intermediaries converged there.',
       notes: {

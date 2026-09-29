@@ -85,7 +85,7 @@ module.exports = {
       "useThis": {
         "tool": "Naming the carrier. <em>The mechanism is that nothing spreads on its own: a merchant with a reason to travel, a teacher following the merchant, a ruler with a reason to adopt, or a captive craftsman moved by force carries it, and identifying which one turns a claim about diffusion into an argument with a person in it.</em>",
         "limit": "Contact is not adoption. Societies rejected, ignored or heavily modified far more than they took, and the interesting question is usually why something was accepted here and not there.",
-        "comparison": "Against <em>the Americas</em> in Topic 1.4: two continents with dense internal exchange and no contact with Afro-Eurasia, which is why the same centuries produced no shared technologies at all. That absence is the control case that shows what connectivity was actually doing."
+        "comparison": "Against <em>the Americas</em> in Topic 1.4: two continents with dense internal exchange and no contact with Afro-Eurasia, which is why the same centuries produced no technologies shared with Afro-Eurasia at all. That absence is the control case that shows what connectivity was actually doing."
       },
       "terms": [
         [
@@ -126,7 +126,7 @@ module.exports = {
               "p": "Islam is the clearest case because it moved along all three networks by the same mechanism: resident merchants, then teachers, then rulers. Across the <b>Indian Ocean</b> it reached the Swahili coast, the Maldives, Gujarat's ports, the north Javanese coast and Melaka, where the merchant communities described in the Topic 2.3 chapter settled and intermarried. Across the <b>Sahara</b> it reached the Sahelian courts and the Wangara trading diaspora, as the Topic 2.4 chapter sets out. Along the <b>overland routes</b> it moved into Central Asia and among Turkic and Mongol peoples, with the Ilkhanate's conversion under Ghazan in <span class=\"num\">1295</span> as a spectacular instance of state adoption."
             },
             {
-              "p": "The mechanism, stated once so you can reuse it: conversion carried a written commercial law recognized across the network, Arabic literacy, standard partnership contracts and membership in the largest trading system on earth, and Sufi teachers made the religion locally usable by tolerating existing devotional practice rather than demanding it be abandoned first. Ports and courts converted; interiors and villages converted slowly or not at all."
+              "p": "The mechanism, stated once so you can reuse it: conversion carried a written commercial law recognized across the network, Arabic literacy, standard partnership contracts and membership in a trading network that stretched from West Africa to China, and Sufi teachers made the religion locally usable by tolerating existing devotional practice rather than demanding it be abandoned first. Ports and courts converted; interiors and villages converted slowly or not at all."
             }
           ]
         },
@@ -172,7 +172,7 @@ module.exports = {
         ],
         [
           "Sufi orders",
-          "The mystical brotherhoods whose adaptability to local devotional practice made them the most effective missionary channel of the period."
+          "The mystical brotherhoods whose adaptability to local devotional practice made them one of the most effective missionary channels of the period."
         ],
         [
           "John of Montecorvino",
@@ -214,7 +214,7 @@ module.exports = {
               "p": "<b>Gunpowder</b> was compounded in China, where military manuals give formulas by the eleventh century and fire lances and bombs were in use in the wars of the twelfth and thirteenth. Knowledge of it appears in Europe in the thirteenth century, with the earliest illustrations of cannon in the <span class=\"num\">1320</span>s, and by the fifteenth century huge siege guns are decisive in European and Ottoman warfare. Mongol-era contact is the most likely conduit. The important observation is what each society did with it: China developed it extensively for siege and naval war, and European and Ottoman states poured resources into cannon that could break the walls their own politics were organized around."
             },
             {
-              "p": "<b>The compass</b> was described in China in the eleventh century and its use for navigation at sea by the early twelfth. It appears in European writing by the end of the twelfth century and across the Indian Ocean in the same period. It does not create long-distance sailing, which existed already, but it removes the dependence on clear skies, which lengthens the sailing season and makes schedules more reliable."
+              "p": "<b>The compass</b> was described in China in the eleventh century and its use for navigation at sea by the early twelfth. It appears in European writing by the end of the twelfth century and in Indian Ocean and Islamic sources in the thirteenth century. It does not create long-distance sailing, which existed already, but it removes the dependence on clear skies, which lengthens the sailing season and makes schedules more reliable."
             },
             {
               "p": "<b>Printing</b> is the case that requires care. Woodblock printing was long established in China and Korea, and movable type was invented in China in the eleventh century and cast in metal in Korea, where a book printed with metal type survives from <span class=\"num\">1377</span>. European movable type appears around <span class=\"num\">1450</span>. There is no evidence of transmission, the technical solutions differ, and most historians treat the European development as independent. Say so: it is a better answer, and it is also the perfect illustration of why chronological proximity is not proof."

@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: 'Unit 2: Networks of Exchange',
     topic: 'Topic 2.6',
     title: 'Environmental Consequences of Connectivity',
-    subtitle: 'How exchange networks spread crops and pathogens across Afro-Eurasia c. 1200–1450',
+    subtitle: 'How exchange networks spread crops and pathogens across Afro-Eurasia, c. 1200 to c. 1450',
     feedbackToolUrl: 'https://student.magicschool.ai/s/login?joinCode=czwb9Q',
     canvasSubmissionNote: 'Organize your thinking here, submit your final work in Canvas.'
   },
@@ -101,7 +101,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: 'Afro-Eurasian exchange networks',
-          caption: 'The same networks that moved goods also carried crops and pathogens.',
+          caption: 'A modern map of Silk Road routes. The same networks that moved goods also carried crops and pathogens.',
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg'
         }
@@ -115,7 +115,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: 'Indian Ocean connections',
-          caption: 'Maritime exchange linked crop-producing regions across the Indian Ocean basin.',
+          caption: 'A modern map of the Indian Ocean basin. Maritime exchange linked crop-producing regions across it.',
           url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png'
         }
@@ -155,7 +155,7 @@ window.BEHISTORICAL_LESSON = {
     title: 'Map: Environmental Diffusion Through Afro-Eurasian Networks',
     url: '../assets/images/instructional-maps/topic-2-6.svg',
     sourceUrl: '../assets/images/instructional-maps/topic-2-6.svg',
-    caption: 'Trade corridors connected regions closely enough for both useful crops and epidemic disease to move across Afro-Eurasia.',
+    caption: 'The Spread of the Black Death, c. 1340 to 1353, a BeHistorical instructional map. It shows the plague side of this topic: the disease moving from Central Asia along the Silk Roads, across the Black Sea to Italian ports, then inland and into North Africa. The same corridors carried crops, which the notes below describe.',
     intro: 'Use the map to connect geography to biological diffusion. The routes that linked cities, ports, and caravan networks moved living organisms as well as manufactured goods.',
     prompt: 'Why would the same exchange network be able to spread both a useful crop and a deadly pathogen? What determines the environmental consequence?',
     notes: [
@@ -173,8 +173,8 @@ window.BEHISTORICAL_LESSON = {
   },
 
   first10: {
-    title: 'First & 10: Crops, Pathogens, and Connected Environments',
-    embedUrl: 'first-and-10-topic-2-6-environmental-consequences-capture.html?v=response-id-fix-v1'
+    title: 'First & 10: The Same Network Could Feed You and Kill You',
+    embedUrl: 'first-and-10-topic-2-6-environmental-consequences-capture.html?v=feed-kill-v1'
   },
 
   evidenceLab: {

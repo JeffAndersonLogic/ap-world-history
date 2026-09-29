@@ -128,6 +128,7 @@ One projected slide should usually carry one argument.
 A finished BeHistorical presentation should contain these instructional functions:
 
 - Teacher Preflight
+- BeReady retrieval that activates prior learning and bridges into the new topic
 - a visible topic question or problem
 - organizing claims that help students sort the evidence
 - historical story
@@ -142,6 +143,28 @@ The story decides the order.
 "Big Rocks" are an optional organizing device. Use two, three, four, or none if that is what the history supports. Never invent a third claim because an older template once said "Three Big Rocks."
 
 If a build intentionally omits one of the functions above, the teacher source must explain why.
+
+Three of these are checked by machine, because each is easy to lose without anything looking wrong: Teacher Preflight (a slide with `phase: 'preflight'`), BeReady (a slide with `phase: 'beready'`, first after any preflight), and the retelling slide (exactly one student-visible slide with `retelling: true`, see section 9). A deck that leaves one out records the reason in `meta.omits`, for example `omits: { beready: 'Built and taught before the BeReady standard.' }`. `scripts/test/teaching-os-architecture.test.js` fails a deck that has neither.
+
+**Which decks this applies to.** Every deck built or revised on or after 2026-09-22. Decks already taught before then (Topics 2.1 and 2.2) carry their omissions in `meta.omits` and gain the missing functions the next time they are revised. Topics 2.5 and 2.6 were not yet taught and received BeReady on 2026-09-22.
+
+### BeReady retrieval standard
+
+BeReady is the first student-facing phase after any teacher-only preflight. Its job is retrieval and transition, not new instruction.
+
+Default BeReady pattern:
+
+- 3-5 minutes
+- no notes at first
+- two or three short retrieval prompts students should be able to answer from memory
+- prompts drawn mainly from the immediately preceding topic, with earlier course themes used only when they sharpen the connection
+- one explicit bridge that turns the retrieved idea into the problem, contrast, or question of the new topic
+
+BeReady should feel fast. Take answers, surface the pattern, and move on. Do not let it become a mini-review lecture, a vocabulary dump, or a preview that teaches today's content before the story begins.
+
+The bridge is required. Retrieval without a bridge is review; BeReady exists to make prior learning useful for the lesson students are about to enter.
+
+At the opening of a course or unit where there is no meaningful prior topic to retrieve, the teacher source may substitute a short baseline prompt or explain why BeReady is intentionally omitted.
 
 ### Topic 2.6 proof case
 
@@ -185,6 +208,8 @@ It may be:
 
 It does not need to display the words "Retelling Slide" to students.
 
+Mark it in the teacher source with `retelling: true` on that slide, so the choice is recorded where the next author will see it and the gate can confirm there is exactly one.
+
 If the team cannot name the retelling slide, the deck probably has not found its conceptual center yet.
 
 For Topic 2.6, the twin causal chains are the retelling slide.
@@ -208,6 +233,14 @@ Default visual sourcing order:
 2. an already verified visual the topic or course already ships
 3. a newly sourced public-domain or licensed asset that is staged and verified before it reaches a slide
 4. a clearly labeled reconstruction when appropriate
+
+### AI-generated images
+
+An AI-generated illustration may be used on a projected slide or a concept card to set a scene, **only when it is labeled on screen** as `Historical Reconstruction - AI Generated` in its credit or caption. The label is exactly that text, nothing added, and it stays small: one quiet caption in the corner of the image, never a second badge on top of it. The description of what the picture shows belongs in its alt text, not in the label. It is never presented as a historical source, and it never appears in the Evidence Lab, whose whole method is observing a real object. Check an image's C2PA metadata when its origin is unclear; Google and other generators mark their output.
+
+The wording was settled on 2026-09-23, replacing three variants that had grown up across Topics 2.1 to 2.3 (`HISTORICAL RECONSTRUCTION — AI GENERATED`, `Historical reconstruction · AI generated` and `Illustration (AI-generated)`). If an image has a label printed into the picture itself, prefer a clean copy of the file, because the on-screen label then appears twice.
+
+Topic 2.3 is the case: its slide illustrations are AI-generated and labeled, and its Evidence Lab uses the Borobudur ship relief and a Song celadon bowl instead.
 
 **Never write a Commons filename from memory.** A plausible filename is not evidence that the asset exists.
 
@@ -234,6 +267,8 @@ Projected slides should feel closer to museum exhibits than textbook pages: a cl
 
 Teacher Intelligence carries the depth.
 
+The slide templates in `teacher/slide-templates.html` are the visual vocabulary for this step. Match the template to the shape of the idea: parts that add up are an equation, a two-way trade is an exchange, one-against-many is a split, gains that build are compounding, and only a true sequence is a timeline. Round two added more shapes: a cause that sets off the next is a cause chain, one thing changing as it travels is a diffusion path, places whose fortunes differ are rise and fall, two things with overlap are a Venn, a turning point with things that carried on is continuity and change, a journey is a route on a map, and a source to question is HIPP. Four numbered boxes were the default for all of these in Unit 2, and most of them were not sequences. The implementation contract is "Slide templates" in `docs/TEACHING-OS.md`.
+
 ## 12. Build the canonical teacher presentation
 
 Implementation begins only after the story, evidence, beats, gate, retelling slide, and visual plan are settled.
@@ -253,6 +288,20 @@ The teacher source carries:
 The canonical teacher source is the authored presentation.
 
 The student deck is a derivative artifact, never a second authored source.
+
+### Key Concept bands
+
+Every slide that teaches one of the topic's CED Key Concepts names it with `kc: 'KC-3.1.IV'`, and the deck draws that code and its CED wording in a band across the top of the projected slide, in the look of the Essential Question strip. This is standard for every deck from Topic 2.1 on, as of 2026-09-28.
+
+Tagging is an instructional decision, made slide by slide from the step 1 inventory:
+
+- Tag a slide when its claim, evidence, or mechanism is that Key Concept. The crop and plague slides of Topic 2.6 carry KC-3.1.IV; the module handoff that says "open First & 10" does not.
+- One Key Concept per slide. A summary or retelling slide that spans several of the topic's Key Concepts carries none, because a band naming one of them would misdescribe it.
+- Never on Teacher Preflight or BeReady. Neither is the topic's CED content.
+- Every one of the topic's Key Concepts must be on at least one projected slide. If one cannot be tagged anywhere, that is a coverage finding about the deck, not a tagging problem.
+- Write the code only. The wording comes from the lesson's `collegeBoardKeyConcepts`, so a Key Concept is never retyped into a deck.
+
+The implementation contract is "The Key Concept band" in `docs/TEACHING-OS.md`.
 
 See `docs/TEACHING-OS.md` for the file architecture.
 
@@ -299,6 +348,8 @@ For declared registries, check both directions:
 
 This catches both orphaned files and stale registry entries.
 
+A declared list checked only against itself can fall behind the repository and stay green forever, so the Teaching OS registry is also checked against the disk: every `teacher/topic-X-X-os.html` must be either in `DECKS` or in `NOT_YET_MIGRATED` (with a reason) in `scripts/build-teaching-os-student-decks.js`. Topic 2.3 was built outside the pipeline, with a "student" page that redirected to the teacher surface, and every check stayed green until this was added. No page under `unit-N/` may redirect into `teacher/`.
+
 ## 15. Instructional verification
 
 Technical correctness is not instructional correctness.
@@ -315,6 +366,7 @@ Before shipping, confirm:
 - the AP reasoning move is visible without turning the lesson into test-prep jargon
 - the retelling slide still captures the whole argument
 - a ninth grader could retell the topic from the deck's structure
+- every Key Concept band sits on a slide that actually teaches that Key Concept, and every Key Concept of the topic is banded somewhere
 
 ### Fact-check the teaching devices too
 
@@ -425,7 +477,8 @@ When this standard must be reduced to a few lines, preserve these ideas:
 1. CED decides what must be learned.
 2. Tell the ninth-grade story and find the spine before designing slides.
 3. Every example needs a "so what"; examples serve claims rather than becoming trivia slides.
-4. The story decides the order and slide count.
-5. Approve the story, name the retelling slide, then let assets and code enter.
-6. One canonical teacher source generates the student deck.
-7. Verify instruction and software separately, prove new checks can fail, report adjacent findings, then ship.
+4. Start the student-facing sequence with a fast BeReady retrieval + bridge when prior learning exists.
+5. The story decides the order and slide count.
+6. Approve the story, name the retelling slide, then let assets and code enter.
+7. One canonical teacher source generates the student deck.
+8. Verify instruction and software separately, prove new checks can fail, report adjacent findings, then ship.

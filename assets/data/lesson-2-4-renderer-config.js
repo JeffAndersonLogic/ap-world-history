@@ -4,9 +4,9 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: Gold, Salt, and the Desert Road',
-    embedUrl: 'first-and-10-topic-2-4-trans-saharan-capture.html',
-    note: 'Read for the causal chain: camel technology + caravan organization -> greater trade volume and range -> stronger West African states such as Mali.'
+    title: 'First & 10: The Sahara Did Not Shrink',
+    embedUrl: 'first-and-10-topic-2-4-trans-saharan-capture.html?v=desert-v1',
+    note: 'Read for the story: a desert in the middle, then saddles and caravans, then gold and salt, then more trade, then Mali.'
   };
 
   lesson.map = {
@@ -31,6 +31,12 @@
     source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',
     beInTheRoom: '../assets/images/module-art/unit-2/topic-2-4/beintheroom.svg',
     checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Djenn%C3%A9_2.jpg'
+  };
+
+  lesson.classPresentation = {
+    title: 'Class Slides: The Desert Road',
+    desc: 'Follow the causal chain: camel saddles and caravans made regular desert crossings practical, gold and salt made them worth the risk, and Mali grew by protecting and taxing the trade.',
+    url: 'presentation-topic-2-4-student.html'
   };
 
   lesson.beInTheRoom = {
@@ -63,8 +69,8 @@
       title: 'Checkpoint 1: Technology and Trade Growth',
       subtitle: 'Checks why trans-Saharan exchange intensified.',
       cardDesc: 'Camel saddle, caravans, gold, and salt.',
-      learningTargets: [lesson.learningTargets[0].target],
-      successCriteria: [lesson.successCriteria[0].criteria],
+      learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
+      successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
       prompt: 'Explain how camel technology and caravan organization increased the volume and geographic range of trans-Saharan trade. Use gold and/or salt as supporting evidence.',
       responseType: 'Checkpoint 1',
       terms: ['camel saddle', 'caravan', 'gold', 'salt', 'trade volume', 'geographic range'],
@@ -74,8 +80,8 @@
       title: 'Checkpoint 2: Mali and the Trade Network',
       subtitle: 'Checks how empire expansion influenced trade and communication.',
       cardDesc: 'Mali, Mansa Musa, taxation, protection, and commercial connections.',
-      learningTargets: [lesson.learningTargets[1].target],
-      successCriteria: [lesson.successCriteria[1].criteria],
+      learningTargets: [lesson.learningTargets[2].target],
+      successCriteria: [lesson.successCriteria[2].criteria],
       prompt: 'Explain how Mali both benefited from and facilitated trans-Saharan trade and communication. Use at least two specific pieces of evidence.',
       responseType: 'Checkpoint 2',
       terms: ['Mali', 'Mansa Musa', 'Timbuktu', 'taxation', 'protection', 'trade', 'communication'],
@@ -91,9 +97,9 @@
   };
 
   lesson.images = [
-    {title:'Mansa Musa on the Catalan Atlas, 1375',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',caption:'Contemporary external evidence. A European map depicts Mali\'s Muslim ruler Mansa Musa holding gold while a camel-mounted Saharan traveler approaches.',prompt:'NOTICE the gold, ruler, and camel imagery. What can you INFER about Mali\'s reputation, trans-Saharan transport, and gold? What should you be cautious about because the image was made by European mapmakers?'},
+    {title:'Mansa Musa on the Catalan Atlas, 1375',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',caption:'Outside evidence from 1375, about fifty years after the hajj. A European map depicts Mali\'s Muslim ruler Mansa Musa holding gold while a camel-mounted Saharan traveler approaches.',prompt:'NOTICE the gold, ruler, and camel imagery. What can you INFER about Mali\'s reputation, trans-Saharan transport, and gold? What should you be cautious about because the image was made by European mapmakers?'},
     {title:'Trans-Saharan Routes and West African States',url:'../assets/images/instructional-maps/topic-2-4.svg',sourceUrl:'../assets/images/instructional-maps/topic-2-4.svg',caption:'Secondary geographic evidence. A classroom reference map reconstructs major routes, desert crossings, gold-producing regions, salt sources, and West African cities.',prompt:'NOTICE where routes follow oases and meet the Sahel. What can you INFER about chokepoints and the value of caravan knowledge? What does a modern map not prove about the experience of crossing the desert?'},
     {title:'Great Mosque of Djenné',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Djenn%C3%A9_2.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Djenn%C3%A9_2.jpg',caption:'Cultural-continuity evidence. The current Great Mosque is a later reconstruction on the site of earlier mosques in Djenné, a major trading city tied to trans-Saharan commerce and Islamic learning.',prompt:'NOTICE the monumental religious architecture. What can you cautiously INFER about the long-term importance of Islam in a trade city? Why can the present building not serve as direct visual evidence for its exact 14th-century form?'},
-    {title:'Mali and the Wider Islamic World',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Mali_Empire.png',sourceUrl:'https://commons.wikimedia.org/wiki/File:Map_of_the_Mali_Empire.png',caption:'Secondary political evidence. A modern map reconstructs the extent of the Mali Empire relative to major West African trade corridors.',prompt:'NOTICE the empire\'s geographic reach. What can you INFER about why rulers benefited from taxing or protecting trade? What additional evidence would you need to prove how taxes were collected?'}
+    {title:'The Reach of the Mali Empire',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Mali_Empire.png',sourceUrl:'https://commons.wikimedia.org/wiki/File:Map_of_the_Mali_Empire.png',caption:'Secondary political evidence. A modern map reconstructs the extent of the Mali Empire relative to major West African trade corridors.',prompt:'NOTICE the empire\'s geographic reach. What can you INFER about why rulers benefited from taxing or protecting trade? What additional evidence would you need to prove how taxes were collected?'}
   ];
 })();

@@ -10,6 +10,13 @@ name: Nightly
 # The browser suite runs again here against main specifically, because these are
 # the contracts that have broken silently before and a nightly run catches drift
 # that arrives from somewhere other than a push.
+#
+# check-audit-freshness.js is here for a different reason again: it is the check
+# that shouts when the weekly topic-audit sweep stops running. It cannot sit on the
+# push path because an overdue audit must never be the thing standing between a
+# broken classroom page and its fix. It is red until the sweep has run and the
+# topics being taught this week have records, which is the point: silence about a
+# missing audit is what this whole mechanism exists to end.
 
 on:
   schedule:
@@ -77,3 +84,28 @@ jobs:
 
       - name: Full suite
         run: node scripts/run-tests.js all --strict
+
+  audits:
+    name: Topic audits are fresh and the sweep is alive
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          # The staleness signal compares an audit's date against the date content
+          # last changed, which is git history. A shallow clone truncates that
+          # history, every lookup comes back empty, and the check would report
+          # every audited topic as fresh forever, which is the exact false green
+          # it exists to refuse.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # No npm install: this reads the repo, the schedule and git history, and
+      # nothing else. Keeping it dependency-free means it still runs on a bare
+      # checkout, the same property the offline suite has.
+      - name: Are the audits fresh?
+        run: node scripts/check-audit-freshness.js

@@ -24,9 +24,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Three Big Rocks",
       "footer": "State change -> Pax Mongolica -> transfer.",
       "cards": [
-        { "title": "1 · STATE CHANGE", "text": "Build a vast empire, then fragment into regional khanates." },
-        { "title": "2 · PAX MONGOLICA", "text": "Change conditions on exchange networks that already existed." },
-        { "title": "3 · TRANSFER", "text": "Move knowledge and cultural practices across regions." }
+        {
+          "title": "1 · STATE CHANGE",
+          "text": "Build a vast empire, then fragment into regional khanates."
+        },
+        {
+          "title": "2 · PAX MONGOLICA",
+          "text": "Change conditions on exchange networks that already existed."
+        },
+        {
+          "title": "3 · TRANSFER",
+          "text": "Move knowledge and cultural practices across regions."
+        }
       ]
     },
     {
@@ -60,7 +69,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "First & 10 · 10 Minutes",
       "title": "Read for three CED dimensions.",
       "subtitle": "State change. Pax Mongolica. Transfer.",
-      "action": { "label": "Open First & 10", "url": "first-and-10-topic-2-2-mongol-empire-capture.html?v=response-id-fix-v1" }
+      "action": {
+        "label": "Open First & 10",
+        "url": "first-and-10-topic-2-2-mongol-empire-capture.html?v=response-id-fix-v1"
+      }
     },
     {
       "kind": "hero",
@@ -73,24 +85,35 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "alt": "Chinggis Khan museum visual used to frame Mongol military organization",
         "credit": "Topic 2.2 classroom visual · Chinggis Museum"
       },
-      "footer": "Mechanism: organization makes conquest scalable."
+      "footer": "Mechanism: organization makes conquest scalable.",
+      "kc": "KC-3.2.I.B.iii"
     },
     {
       "kind": "grid",
       "eyebrow": "Big Rock 1 · State Change · Build",
       "title": "Why Mongol conquest worked.",
       "subtitle": "Mobility, deception, and organization worked together.",
-      "footer": "Mobility was powerful, but cavalry alone could not take fortified cities.",
-      "cards": [
-        { "title": "MOBILITY", "text": "Mounted archers move fast and fight at range." },
-        { "title": "DECEPTION", "text": "Feigned retreat pulls enemies out of position." },
-        { "title": "ORGANIZATION", "text": "Discipline turns steppe skill into an empire-building army." }
-      ],
       "visual": {
         "url": "../assets/images/topics/2-2/2.2%20-%20Cinematic%20Mongol%20Archers.png",
         "alt": "Historical reconstruction of coordinated Mongol mounted archers on the steppe",
-        "credit": "HISTORICAL RECONSTRUCTION — AI GENERATED"
-      }
+        "credit": "Historical Reconstruction - AI Generated"
+      },
+      "footer": "Mobility was powerful, but cavalry alone could not take fortified cities.",
+      "kc": "KC-3.2.I.B.iii",
+      "cards": [
+        {
+          "title": "MOBILITY",
+          "text": "Mounted archers move fast and fight at range."
+        },
+        {
+          "title": "DECEPTION",
+          "text": "Feigned retreat pulls enemies out of position."
+        },
+        {
+          "title": "ORGANIZATION",
+          "text": "Discipline turns steppe skill into an empire-building army."
+        }
+      ]
     },
     {
       "kind": "hero",
@@ -103,13 +126,15 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "alt": "Mongol forces using borrowed siege technology against a fortified city",
         "credit": "Topic 2.2 classroom visual · Mongols Borrow Siege Technology"
       },
-      "footer": "Mechanism: adaptation lets a steppe army conquer fortified cities."
+      "footer": "Mechanism: adaptation lets a steppe army conquer fortified cities.",
+      "kc": "KC-3.2.I.B.iii"
     },
     {
       "kind": "prompt",
       "eyebrow": "Governance Pivot",
       "title": "Conquest creates a new problem.",
-      "subtitle": "How do you rule thousands of miles of diversity?"
+      "subtitle": "How do you rule thousands of miles of diversity?",
+      "kc": "KC-3.2.I.B.iii"
     },
     {
       "kind": "map",
@@ -121,7 +146,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "alt": "Map of the Golden Horde, Chagatai Khanate, Ilkhanate, and Yuan dynasty",
         "credit": "Topic 2.2 classroom map · successor khanates"
       },
-      "footer": "Golden Horde · Chagatai · Ilkhanate · Yuan"
+      "footer": "Golden Horde · Chagatai · Ilkhanate · Yuan",
+      "kc": "KC-3.2.I.B.iii"
     },
     {
       "kind": "hero",
@@ -132,26 +158,37 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "visual": {
         "url": "../assets/images/topics/2-2/2.2%20-%20Mongol%20Yam%20Relay%20Across%20the%20Steppe.png",
         "alt": "Historical reconstruction of the Mongol Yam relay system across the steppe",
-        "credit": "HISTORICAL RECONSTRUCTION — AI GENERATED"
+        "credit": "Historical Reconstruction - AI Generated"
       },
-      "footer": "The same infrastructure that helps rule an empire also helps connect it."
+      "footer": "The same infrastructure that helps rule an empire also helps connect it.",
+      "kc": "KC-3.1.I.E.i"
     },
     {
       "kind": "grid",
       "eyebrow": "Big Rock 3 · Transfer",
       "title": "Connection moves knowledge.",
       "subtitle": "Pax Mongolica moves more than goods. It moves ideas.",
-      "footer": "Three CED examples. One idea: contact moves knowledge across cultures.",
-      "cards": [
-        { "title": "MEDICINE", "text": "Greco-Islamic medical knowledge -> western Europe" },
-        { "title": "MATHEMATICS", "text": "Numbering systems -> Europe" },
-        { "title": "WRITING", "text": "Mongols adopt the Uyghur script" }
-      ],
       "visual": {
         "url": "../assets/images/topics/2-2/2.2%20-%20Knowledge%20Shared.jpg",
         "alt": "Knowledge moving across cultures through Mongol-era Eurasian connections",
         "credit": "Topic 2.2 classroom visual · Knowledge Shared"
-      }
+      },
+      "footer": "Three CED examples. One idea: contact moves knowledge across cultures.",
+      "kc": "KC-3.2.II.A.ii",
+      "cards": [
+        {
+          "title": "MEDICINE",
+          "text": "Greco-Islamic medical knowledge -> western Europe"
+        },
+        {
+          "title": "MATHEMATICS",
+          "text": "Numbering systems -> Europe"
+        },
+        {
+          "title": "WRITING",
+          "text": "Mongols adopt the Uyghur script"
+        }
+      ]
     },
     {
       "kind": "hero",
@@ -162,9 +199,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "visual": {
         "url": "../assets/images/topics/2-2/2.2%20-%20Cinematic%20Mongol%20city%20gate.png",
         "alt": "Mongol representatives at a fortified city, reused here as a visual for Mongol borrowing and adaptation",
-        "credit": "HISTORICAL RECONSTRUCTION — AI GENERATED"
+        "credit": "Historical Reconstruction - AI Generated"
       },
-      "footer": "Direct Mongol example: conquerors borrow and adapt useful cultural technology."
+      "footer": "Direct Mongol example: conquerors borrow and adapt useful cultural technology.",
+      "kc": "KC-3.2.II.A.ii"
     },
     {
       "kind": "process",
@@ -172,10 +210,22 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "State Change -> Pax Mongolica -> Transfer -> Significance",
       "footer": "If students can explain this chain, they understand Topic 2.2.",
       "steps": [
-        { "label": "STATE CHANGE", "text": "Build a vast empire; unified rule fragments" },
-        { "label": "PAX MONGOLICA", "text": "Political conditions on older routes change" },
-        { "label": "TRANSFER", "text": "Knowledge crosses cultural boundaries" },
-        { "label": "SIGNIFICANCE", "text": "Eurasia becomes more interconnected" }
+        {
+          "label": "STATE CHANGE",
+          "text": "Build a vast empire; unified rule fragments"
+        },
+        {
+          "label": "PAX MONGOLICA",
+          "text": "Political conditions on older routes change"
+        },
+        {
+          "label": "TRANSFER",
+          "text": "Knowledge crosses cultural boundaries"
+        },
+        {
+          "label": "SIGNIFICANCE",
+          "text": "Eurasia becomes more interconnected"
+        }
       ]
     },
     {
@@ -187,9 +237,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "visual": {
         "url": "../assets/images/topics/2-2/2.2%20-%20Cinematic%20Mongol%20Caravan.png",
         "alt": "Historical reconstruction of a protected caravan moving through Mongol-controlled territory",
-        "credit": "HISTORICAL RECONSTRUCTION — AI GENERATED"
+        "credit": "Historical Reconstruction - AI Generated"
       },
-      "footer": "State change -> Pax Mongolica -> transfer."
+      "footer": "State change -> Pax Mongolica -> transfer.",
+      "kc": "KC-3.1.I.E.i"
     }
   ]
 };

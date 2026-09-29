@@ -35,6 +35,7 @@
     "build:ebook": "node scripts/build-ebook.js",
     "build:student-decks": "node scripts/build-student-decks.js && node scripts/build-teaching-os-student-decks.js",
     "build:student-os-decks": "node scripts/build-teaching-os-student-decks.js",
+    "build:key-concepts": "node scripts/build-key-concepts.js",
     "extract:foundations": "node scripts/extract-foundations-content.js",
     "build:readings": "node scripts/build-unit-readings.js",
     "extract:readings": "node scripts/extract-unit-content.js",
@@ -45,6 +46,7 @@
     "build:classroom-config": "node scripts/build-classroom-config.js",
     "build:save-health": "node scripts/build-save-health.js",
     "check:style": "node scripts/check-style.js",
+    "stamp:versions": "node scripts/stamp-asset-versions.js",
     "build:canvas-events": "node scripts/build-canvas-events.js",
     "check:schedule": "node scripts/test/schedule-cohorts.test.js",
     "build:wordmark": "node scripts/build-wordmark.js",
@@ -53,7 +55,9 @@
     "source:images": "node scripts/source-evidence-images.js",
     "test:rules": "node scripts/run-tests.js rules",
     "check:rules": "node scripts/check-firestore-rules.js",
-    "test:rules:emulator": "firebase emulators:exec --only firestore --project demo-behistorical-rules \"node scripts/run-tests.js rules --strict\""
+    "test:rules:emulator": "firebase emulators:exec --only firestore --project demo-behistorical-rules \"node scripts/run-tests.js rules --strict\"",
+    "build:audit-index": "node scripts/build-topic-audit-index.js",
+    "check:audit-freshness": "node scripts/check-audit-freshness.js"
   },
   "devDependencies": {
     "playwright": "^1.49.0"

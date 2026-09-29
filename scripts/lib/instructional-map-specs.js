@@ -192,6 +192,29 @@ module.exports = [
     note: 'BeHistorical instructional map. Arrows show the broad direction and sequence of transmission, not exact routes; coastlines are simplified for classroom projection.'
   },
   {
+    id: 'topic-2-6-crops',
+    code: 'Topic 2.6',
+    title: 'Crop Diffusion Across Afro-Eurasia, c. 1200-1450',
+    subtitle: 'Topic 2.6 · The three CED crop examples',
+    highlights: [
+      { zone: 'seAsia', label: 'ORIGIN ZONE', tone: 'sand', legend: 'Southeast Asia: banana and fast-ripening rice homelands' },
+      { zone: 'centralAfrica', label: 'BANANAS', tone: 'sage', legend: 'Bananas into tropical Africa: farmland the grain crops handled poorly' },
+      { zone: 'eastAsia', label: 'NEW RICE', tone: 'gold', legend: 'New rice varieties in East Asia: more harvests from the same land' },
+      { zone: 'mediterranean', label: 'CITRUS', tone: 'bronze', legend: 'Citrus around the Mediterranean: changed crops and diets' }
+    ],
+    flows: [
+      { from: 'seAsia', to: 'swahiliCoast', label: 'bananas across the Indian Ocean', bow: 0.26 },
+      { from: 'swahiliCoast', to: 'centralAfrica', label: 'inland into tropical Africa', bow: -0.18 },
+      { from: 'seAsia', to: 'eastAsia', label: 'new rice varieties north', bow: -0.22 },
+      { from: 'southAsia', to: 'mediterranean', label: 'citrus west through Southwest Asia', bow: 0.28 }
+    ],
+    points: [
+      { at: [109, 13], label: 'Champa', note: 'fast-ripening rice' },
+      { at: [39, -6], label: 'Swahili coast', note: 'bananas arrive by sea', side: 'left' }
+    ],
+    note: 'BeHistorical instructional map. Arrows show broad direction, not exact routes or dates. The CED calls this continued diffusion: banana cultivation in Africa and fast-ripening rice in China both began before 1200 and kept spreading through this period.'
+  },
+  {
     id: 'topic-2-7',
     code: 'Topic 2.7',
     title: 'All Three Afro-Eurasian Trade Networks, c. 1200-1450',

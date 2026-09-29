@@ -43,11 +43,11 @@
   };
   lesson.images = [
     {
-      "title": "An indenture ship",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Indian_indenture_ship.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_indenture_ship.jpg",
-      "caption": "Photograph of a vessel carrying indentured labourers. The contract and the passage were parts of the same system.",
-      "prompt": "NOTICE the conditions the vessel implies for a voyage of weeks. INFER what a recruiter would have to promise to fill it. What does the ship not tell you about what awaited at the other end?"
+      "title": "Register of the Fatel Razack, 1845",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Futtle_Rozack.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Futtle_Rozack.jpg",
+      "caption": "A page from the general register of indentured laborers aboard the Fatel Razack, the first ship to bring Indian indentured workers to Trinidad, 1845. The contract and the passage were parts of the same system.",
+      "prompt": "NOTICE what the register records about each person. INFER what the colonial state needed to know in order to manage contract labor. What does a register not tell you about why each person signed, or what awaited them?"
     },
     {
       "title": "Global migration flows after 1750",

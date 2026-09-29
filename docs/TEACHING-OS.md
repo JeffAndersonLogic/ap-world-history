@@ -33,7 +33,59 @@ The source-of-truth pipeline is:
 - Keep visual substitutions data-only in `topic-X-X-presentation-assets.js` so the same final visual choices feed both teacher and generated student versions.
 - Student Content Delivery keeps the existing Concept Cards. The generated class presentation is an additional callout above those cards through `lesson.classPresentation`.
 - Student files must contain no `notes`, Teacher Intelligence, LAND, STORY, ASK, LISTEN FOR, AP CONNECTION, briefing data, timer controls, iPad controls, or teacher preflight slides.
+- BeReady is student-facing projected content. Preserve it in generated student decks; only teacher preflight is stripped.
 - Prefer repo-local classroom visuals. If the teacher surface temporarily uses a remote-only visual, the student generator may degrade that slide to a text-led version rather than introduce a brittle dependency.
+
+## What the gate checks
+
+`scripts/test/teaching-os-architecture.test.js`, in the offline suite, checks the parts of this contract that fail silently:
+
+- every `teacher/topic-X-X-os.html` on disk is in `DECKS`, or in `NOT_YET_MIGRATED` with a reason (empty since 2026-09-22, when Topic 2.4 was migrated)
+- every deck has its base, presentation-assets, visual-assets, wrapper, generated student data, and `unit-N/presentation-topic-X-X-student.html` shell
+- the lesson reaches that shell through `classPresentation`, the one field the renderer reads (a field under any other name is silently ignored)
+- no student-facing page redirects into `teacher/`
+- every deck has Teacher Preflight, BeReady, and one `retelling: true` slide, or says why in `meta.omits`
+
+A teacher page may use its own renderer (Topic 2.3 does), but its data still comes through the wrapper, and a preflight slide must never reach the projector. Topic 2.3's page shows a neutral hold screen for preflight slides in `?mode=project`.
+
+## Slide templates
+
+`assets/js/behistorical-slide-templates.js` is the one implementation of the slide templates: relationships (equation, exchange, split, compounding and their variations, plus a cause chain, a diffusion path, a Venn and continuity and change), timelines (including rise and fall), primary source, HIPP sourcing, claim-evidence-reasoning, rank the causes, myth and evidence, and sharpen-the-claim slides, six BeReady openers, two closers (3-2-1 and retell it), and frames for pictures, including two real sources compared and a route on a map. The second round, from cause chain to route, was added on 2026-09-27 and is marked New in the catalog. A template slide is ordinary slide data: `kind` names the template, `eyebrow`, `title`, `subtitle` and `footer` work as usual, and everything else the template needs goes in one `template` object.
+
+**The catalog is `teacher/slide-templates.html`**, linked from the teacher command center. It draws every template from `teacher/data/slide-template-examples.js` with a real Unit 2 example and shows the slide data to copy. To use a template, copy an example into a topic's teaching-base or presentation-assets file and change the words. Choosing one is still the visual plan's job in `docs/PRESENTATION-AUTHORING.md`: pick the template whose shape matches the idea, not the one that was used last.
+
+How it reaches every surface:
+
+- Every renderer, the six teacher pages and `assets/js/behistorical-student-presentation-v1.js`, hands a template slide to the library before its own switch, with one identical line: `if(window.BHSlideTemplates&&window.BHSlideTemplates.has(s.kind))return window.BHSlideTemplates.render(s);`
+- Every topic wrapper (`teacher/data/topic-X-X-teaching.js`) loads the library after the shared cockpit, and every student shell loads it before the student renderer.
+- The student generator passes `template` through whole, like `steps` and `cards`. Notes live beside it in `notes`, never inside it.
+
+**A new deck gets templates by being wired the same way.** Copy the hook line into its renderer and the script tag into its wrapper and shell. `scripts/test/slide-templates.test.js` fails the offline gate for any deck in `DECKS` that is missing either, and for any template with no catalog example.
+
+**AI-generated pictures are labeled by the library, not by the author.** A visual with `ai: true` prints `Historical Reconstruction - AI Generated`, small, and ignores any `credit` it carries, so no template can show an AI image unlabeled or under an old wording. A real source keeps its own `credit`. `cropBottom` hides a label that was printed into a picture file. The annotated-object template is for real objects only, never an AI image.
+
+**The styles are scoped under `.bht-slide`**, because the host pages style bare `h2` and `p` elements, and without the scope their rules win and a template's headline comes out tiny and gold. Sizes are design pixels on a 1280x720 board, and the board keeps 16:9 inside any stage, including a full-window projector.
+
+`scripts/test/slide-templates.browser.test.js`, in the browser suite, draws every example at a 1280x720 board and inside a 4:3 stage and fails on any text painted off its board (measured on the text itself, not its box), any AI label that is missing, cut off by its frame or worded differently, and any Teaching OS teacher page or the student renderer that does not actually draw a template. It also fails on a **collision inside the board**, which the edge check cannot see because every letter stays on the slide: a template's middle region spilling into its heading or footer, or text painted over other text. Topic 2.5's first draft had three of these on 2026-09-25, caught by eye before it shipped (a matrix with its column headers under its title, a staircase with its footer across the bars, a span chart pushed onto its axis), and all three are kept in the test as negative controls. Its negative controls prove each of those checks can fail.
+
+The main passes run on the fallback fonts, which are narrower than Cinzel: the film strip's labels overflowed in Cinzel and fit in Georgia, and two of the three 2.5 collisions only happen in the real fonts. So a **webfont pass** measures every real deck again in the brand fonts, with the 2.5 controls. CI can reach the font host and runs it; a sandbox whose browser cannot will print `SKIP`, which is not a pass. Where curl can reach the font host but the browser cannot, save the `css2` response as `fonts.css` and each woff2 it names (path slashes turned into underscores) in one folder, and run the test with `BHT_FONT_DIR` set to it.
+
+## The Key Concept band
+
+A slide that teaches a CED Key Concept carries `kc: 'KC-3.1.IV'`, the code alone, in its teaching-base or presentation-assets data. Every renderer then draws a band across the top of the projected board with that code in gold Montserrat and the CED wording in Libre Baskerville, the look of the cockpit's Essential Question strip. The cockpit strip is hidden in `?mode=project`; the band is on the board, so it projects, and it reaches the generated student deck the same way. Which slides to tag is an authoring decision: see "Key Concept bands" in `docs/PRESENTATION-AUTHORING.md`.
+
+How it works:
+
+- **The wording has one source**, each lesson's `collegeBoardKeyConcepts`. `scripts/build-key-concepts.js` lifts it, through the reader the Socrates Kit uses, into `assets/data/key-concepts.js`, keyed by topic. A lesson data file cannot be loaded by a teacher page because it touches the DOM when it loads, which is why the generated file exists. `--check` is in the offline suite, so an edited Key Concept that was not rebuilt fails the push. Never hand-edit the generated file.
+- **`withKeyConcept(slide, html)` in `assets/js/behistorical-slide-templates.js` is the one implementation.** It returns the slide's HTML untouched when the slide has no `kc`. Every renderer passes what it drew through it, with one identical line at the point it fills the stage: `$('stage').innerHTML=window.BHSlideTemplates?window.BHSlideTemplates.withKeyConcept(s,renderSlide(s)):renderSlide(s);` (the 2.1 page's renderer is named `render`). The topic comes from the deck on the page, `BEHISTORICAL_TEACHING` or `BEHISTORICAL_STUDENT_DECK`.
+- **The slide shrinks under the band; the band never covers it.** An overlay would sit on whatever each slide kind puts at its top edge. So the band takes the top 64 design pixels of the 1280x720 board (88 when some Key Concept on the deck runs past 250 characters, so it can wrap to three lines), and the slide is drawn in the room below: a template's board letterboxes itself there, and any other slide kind is laid out at full stage size and scaled down whole, about 9%. The scaling is what keeps the older kinds right, because several of them size their type to the viewport rather than to their box. The band height is fixed per deck so a slide does not change size between two banded slides.
+- **Every wrapper and every student shell loads `../assets/data/key-concepts.js`**, the shell before the student renderer. The student generator passes `kc` through like `template`.
+
+**A new deck gets the band by being wired the same way**: the hook line in its renderer, the script tag in its wrapper and shell, and `kc` on its slides. `scripts/test/deck-key-concepts.test.js`, in the offline suite, fails for any deck in `DECKS` that is missing the wiring, tags a code that is not one of its own topic's Key Concepts, puts a band on Teacher Preflight or BeReady, or leaves any of its topic's Key Concepts off every projected slide. That last one is what makes this a standard rather than a feature: a deck cannot ship with a Key Concept of its topic never on the projector.
+
+`scripts/test/key-concept-band.browser.test.js`, in the browser suite, walks every slide of every deck on the teacher projector and the student deck, at 1920x1080 and 4:3, and fails when a tagged slide draws no band, an untagged one draws one, the wording does not fit its band, or the slide under it is drawn under the band or spills out of its room. A slide that already runs off the stage with no band is printed as a NOTE rather than failed, because that defect belongs to the slide; the band must not make it worse. Run it with `BHT_FONT_DIR` (see "Slide templates" above) to measure in the brand fonts: Topic 2.3's longest Key Concept fits two lines in Georgia and not in Libre Baskerville, which is how the band's type size was set.
+
+**Decks still owed the band.** The Unit 1 Teach Mode decks (`unit-1/deck-topic-1-3-*` to `1-6-*`) and the Topic 1.7 command center are built on the older Teach Mode shell and `present-topic-1-7.html`, not on the Teaching OS renderers, so they do not load the library and cannot draw the band yet. Each needs either migration onto the Teaching OS or the same hook added to its own renderer, and then its slides tagged by the rules above.
 
 ## Authoring boundary
 
@@ -45,7 +97,7 @@ The canonical design process is `docs/PRESENTATION-AUTHORING.md`:
 
 By the time implementation begins here, the historical story, spine, evidence, narrative beats, story gate, retelling slide, and visual plan should already be settled.
 
-The finished deck must still carry the required instructional functions defined in the authoring standard: Teacher Preflight, a visible topic question or problem, organizing claims, story, mechanism where needed, return to the spine, and AP synthesis. Their count and order follow the story rather than a fixed template.
+The finished deck must still carry the required instructional functions defined in the authoring standard: Teacher Preflight, BeReady retrieval + bridge, a visible topic question or problem, organizing claims, story, mechanism where needed, return to the spine, and AP synthesis. Their count and order follow the story rather than a fixed template.
 
 ## Shared teacher surface
 

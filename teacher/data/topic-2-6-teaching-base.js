@@ -36,23 +36,24 @@ window.BEHISTORICAL_TEACHING = {
 
   flow: [
     { id: 'preflight', label: 'Teacher Preflight', range: 'Before class', minutes: 2, teacher: 'Protect the balance: crops and pathogens, not just plague.', students: 'Not projected.', slide: 1 },
-    { id: 'recap', label: 'Unit Recap', range: '0-6', minutes: 6, teacher: 'Connect 2.6 back to 2.1-2.5.', students: 'Name what moved before today.', slide: 2 },
-    { id: 'turn', label: 'The Turn: Living Things', range: '6-13', minutes: 7, teacher: 'Introduce biological corridors.', students: 'Predict what else moves.', slide: 3 },
-    { id: 'spine', label: 'Three Big Rocks', range: '13-18', minutes: 5, teacher: 'Give students the whole model.', students: 'Copy the three-part frame.', slide: 4 },
-    { id: 'first10', label: 'First & 10', range: '18-28', minutes: 10, teacher: 'Read for two branches: crops and pathogens.', students: 'Annotate examples + consequences.', slide: 5 },
-    { id: 'crops', label: 'Cargo #1: Crops', range: '28-46', minutes: 18, teacher: 'Teach each crop as evidence with a consequence.', students: 'Build one crop causal chain.', slide: 6 },
-    { id: 'cropcheck', label: 'Checkpoint 1', range: '46-52', minutes: 6, teacher: 'Require because language.', students: 'Explain one crop effect.', slide: 9 },
-    { id: 'pathogens', label: 'Cargo #2: Pathogens', range: '52-68', minutes: 16, teacher: 'Teach plague as connectivity vulnerability.', students: 'Explain why route density matters.', slide: 10 },
-    { id: 'power', label: 'Power of the Network', range: '68-75', minutes: 7, teacher: 'Avoid moralizing: networks became powerful.', students: 'Explain same cause, opposite effect.', slide: 12 },
-    { id: 'chains', label: 'Twin Causal Chains', range: '75-83', minutes: 8, teacher: 'Make students rehearse the side-by-side model.', students: 'Write both chains.', slide: 13 },
-    { id: 'verb', label: 'Explain Means Because', range: '83-88', minutes: 5, teacher: 'Turn memory into AP writing.', students: 'Upgrade a list into an explanation.', slide: 14 },
-    { id: 'close', label: 'Landing Sentence', range: '88-90', minutes: 2, teacher: 'Land the answer and bridge to 2.7.', students: 'Say the topic in one sentence.', slide: 15 }
+    { id: 'beready', label: 'BeReady', range: '0-4', minutes: 4, teacher: 'Retrieve Topic 2.5 and bridge to accidental cargo.', students: 'Answer from memory.', slide: 2 },
+    { id: 'recap', label: 'Unit Recap', range: '4-6', minutes: 2, teacher: 'Connect 2.6 back to 2.1-2.5.', students: 'Name what moved before today.', slide: 3 },
+    { id: 'turn', label: 'The Turn: Living Things', range: '6-13', minutes: 7, teacher: 'Introduce biological corridors.', students: 'Predict what else moves.', slide: 4 },
+    { id: 'spine', label: 'Three Big Rocks', range: '13-18', minutes: 5, teacher: 'Give students the whole model.', students: 'Copy the three-part frame.', slide: 5 },
+    { id: 'first10', label: 'First & 10', range: '18-28', minutes: 10, teacher: 'Read for two branches: crops and pathogens.', students: 'Annotate examples + consequences.', slide: 6 },
+    { id: 'crops', label: 'Cargo #1: Crops', range: '28-46', minutes: 18, teacher: 'Teach each crop as evidence with a consequence.', students: 'Build one crop causal chain.', slide: 7 },
+    { id: 'cropcheck', label: 'Checkpoint 1', range: '46-52', minutes: 6, teacher: 'Require because language.', students: 'Explain one crop effect.', slide: 10 },
+    { id: 'pathogens', label: 'Cargo #2: Pathogens', range: '52-68', minutes: 16, teacher: 'Teach plague as connectivity vulnerability.', students: 'Explain why route density matters.', slide: 11 },
+    { id: 'power', label: 'Power of the Network', range: '68-75', minutes: 7, teacher: 'Avoid moralizing: networks became powerful.', students: 'Explain same cause, opposite effect.', slide: 13 },
+    { id: 'chains', label: 'Twin Causal Chains', range: '75-83', minutes: 8, teacher: 'Make students rehearse the side-by-side model.', students: 'Write both chains.', slide: 14 },
+    { id: 'verb', label: 'Explain Means Because', range: '83-88', minutes: 5, teacher: 'Turn memory into AP writing.', students: 'Upgrade a list into an explanation.', slide: 15 },
+    { id: 'close', label: 'Landing Sentence', range: '88-90', minutes: 2, teacher: 'Land the answer and bridge to 2.7.', students: 'Say the topic in one sentence.', slide: 16 }
   ],
 
   quickLaunch: [
     { label: 'Student Lesson 2.6', url: '../unit-2/lesson-2-6-environmental-consequences.html' },
-    { label: 'First & 10', url: '../unit-2/first-and-10-topic-2-6-environmental-consequences-capture.html?v=response-id-fix-v1' },
-    { label: 'BeInTheRoom: Plague Europe', url: '../beintheroom/unit-2/plague-europe.html' },
+    { label: 'First & 10', url: '../unit-2/first-and-10-topic-2-6-environmental-consequences-capture.html?v=feed-kill-v1' },
+    { label: 'BeInTheRoom: The Plague Ships', url: '../beintheroom/unit-2/the-plague-ships.html' },
     { label: 'Deep Reading', url: '../unit-2/deep-reading-topic-2-6-environmental-consequences.html' },
     { label: 'Heimler 2.6 Review', url: 'https://youtu.be/PKQzXPAAFBA' }
   ],
@@ -65,7 +66,7 @@ window.BEHISTORICAL_TEACHING = {
 
   slides: [
     {
-      phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight · 2 Minutes',
+      id: 'preflight', phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight · 2 Minutes',
       title: 'This is not only the Black Death lesson.',
       subtitle: 'Teach the environmental story: exchange networks moved living things. Crops and pathogens are opposite consequences of the same connectivity.',
       notes: {
@@ -81,22 +82,54 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'recap', kind: 'hero', eyebrow: 'AP World History · Topic 2.6',
-      title: 'The Cargo Nobody Ordered',
-      subtitle: 'In 2.1-2.4, people built the roads. In 2.5, ideas moved. Now living things get on the same roads.',
-      visual: { type: 'map' },
+      id: 'beready', phase: 'beready', kind: 'beready-recall', eyebrow: 'BeReady · Recall · No Notes',
+      title: 'Pull the network story back from memory.',
+      template: {
+        questions: [
+          { label: 'Belief', text: 'Name one belief system that spread along a trade network, and the network it used.' },
+          { label: 'Technology', text: 'Name one technology that moved from one region to another.' },
+          { label: 'Cities', text: 'Why could a network make one city boom and let another decline?' }
+        ],
+        turn: 'People chose to carry goods and ideas. **What moved on these routes that nobody chose to carry?**'
+      },
       notes: {
         minutes: 4,
         land: [
+          'No notes. Take fast verbal answers and do not reteach Topic 2.5.',
+          'Accept brief evidence: Buddhism or Islam and a route; paper, printing, gunpowder, or navigation tools; a city rising at a node, or declining when routes shifted.'
+        ],
+        ask: 'What could ride along on a caravan or a ship without anyone meaning to bring it?',
+        listenFor: 'Seeds, animals, insects, rats, fleas, germs, disease.',
+        ap: 'Retrieval + contextualization: yesterday was intentional transfer; today is accidental biological transfer on the same networks.'
+      }
+    },
+    {
+      id: 'hook', phase: 'recap', kind: 'frame-cover', eyebrow: 'AP World History · Topic 2.6',
+      title: 'The Cargo Nobody Ordered',
+      template: {
+        masthead: 'CONNECTED',
+        issue: 'Topic 2.6 · The Living Things Issue',
+        story: { tag: 'Cover Story', title: 'The Cargo Nobody Ordered' },
+        lines: [
+          'In 2.1 to 2.4, people built the roads',
+          'In 2.5, ideas moved along them',
+          'Now living things get on the same roads'
+        ]
+      },
+      notes: {
+        minutes: 2,
+        land: [
           'Start with continuity across the unit. Students already know the networks; they need to see why this topic is the payoff.',
-          'The question is no longer only what merchants carried intentionally. Ask what moved accidentally with people, animals, cargo, ships, and caravans.'
+          'The question is no longer only what merchants carried intentionally. Ask what moved accidentally with people, animals, cargo, ships, and caravans.',
+          'The cover picture is AI-generated and labeled on the slide. It is the cargo hold of a merchant ship: crates of citrus, bundles of plants and sacks of grain packed together, and rats crawling over the sacks. Ask students what in this hold nobody meant to ship. That is the whole topic in one picture: the food and the plague rode in the same hold.',
+          'It sets the scene; it is not evidence. The slatted fruit crates look modern, and the faint markings on the sacks are not real writing.'
         ],
         ask: 'What moved through networks before today?',
         listenFor: 'Goods, money, technologies, beliefs, travelers, information.'
       }
     },
     {
-      phase: 'turn', kind: 'question', eyebrow: 'The Turn',
+      id: 'turn', phase: 'turn', kind: 'question', kc: 'KC-3.1.IV', eyebrow: 'The Turn',
       title: 'Trade accidentally connected ecosystems.',
       subtitle: 'A route is not just an economic corridor. It can become a biological corridor.',
       notes: {
@@ -110,14 +143,14 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'spine', kind: 'grid', eyebrow: 'Three Big Rocks',
+      id: 'spine', phase: 'spine', kind: 'grid', kc: 'KC-3.1.IV', eyebrow: 'The Shape of the Topic',
       title: 'The whole topic has two branches.',
       cards: [
         { title: 'BIOLOGICAL CORRIDORS', text: 'Networks connected environments as well as markets.' },
-        { title: 'CROPS', text: 'Useful plants moved into new regions and could support more food production.' },
-        { title: 'PATHOGENS', text: 'Disease moved through the same connections and could devastate populations.' },
-        { title: 'AP VERB', text: 'Explain means because. Lists do not score by themselves.' }
+        { title: 'BRANCH 1 · CROPS', text: 'Useful plants moved into new regions and could support more food production.' },
+        { title: 'BRANCH 2 · PATHOGENS', text: 'Disease moved through the same connections and could devastate populations.' }
       ],
+      footer: 'Not two topics. **Opposite consequences of the same system.**',
       notes: {
         minutes: 4,
         land: [
@@ -129,11 +162,11 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'first10', kind: 'action', eyebrow: 'First & 10 · 10 Minutes',
+      id: 'first10', phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10 · 10 Minutes',
       title: 'Read for two branches.',
       subtitle: 'Branch 1: crops that changed food supply. Branch 2: pathogens that changed populations.',
       big: '10',
-      action: { label: 'Open First & 10', url: '../unit-2/first-and-10-topic-2-6-environmental-consequences-capture.html?v=response-id-fix-v1' },
+      action: { label: 'Open First & 10', url: '../unit-2/first-and-10-topic-2-6-environmental-consequences-capture.html?v=feed-kill-v1' },
       notes: {
         minutes: 10,
         land: [
@@ -145,13 +178,15 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'crops', kind: 'image', eyebrow: 'Cargo #1 · Crops',
+      id: 'crops-map', phase: 'crops', kind: 'frame-placard', kc: 'KC-3.1.IV', eyebrow: 'Cargo 1 · Crops',
       title: 'The road brings food.',
-      visual: {
-        url: '../assets/images/instructional-maps/topic-2-6-crops.svg',
-        alt: 'Instructional map of crop diffusion across Afro-Eurasia'
+      template: {
+        placard: {
+          tag: 'Crop Diffusion · Three Movements',
+          name: 'The road brings food.',
+          text: 'Bananas into Africa. New rice varieties in East Asia. Citrus around the Mediterranean. Each one is a plant spreading into new farmland along trade routes.'
+        }
       },
-      footer: 'Bananas in Africa · new rice varieties in East Asia · citrus in the Mediterranean',
       notes: {
         minutes: 6,
         land: [
@@ -163,14 +198,17 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'crops', kind: 'grid', eyebrow: 'Crop Consequences',
+      id: 'crop-so-what', phase: 'crops', kind: 'equation-stack', kc: 'KC-3.1.IV', eyebrow: 'Crop Consequences',
       title: 'Every example needs a so what.',
-      cards: [
-        { title: 'BANANAS -> AFRICA', text: 'New agricultural possibilities in suitable tropical environments.' },
-        { title: 'RICE -> EAST ASIA', text: 'Higher productive capacity and support for larger populations.' },
-        { title: 'CITRUS -> MEDITERRANEAN', text: 'New crops changed regional agriculture and diets.' },
-        { title: 'BECAUSE', text: 'Connectivity moved crops beyond earlier ranges.' }
-      ],
+      footer: 'A crop name with no consequence attached is **not an answer**.',
+      template: {
+        terms: [
+          { word: 'Bananas', note: 'Into Africa: new agricultural possibilities in suitable tropical environments' },
+          { word: 'New rice varieties', note: 'In East Asia: higher productive capacity, supporting larger populations' },
+          { word: 'Citrus', note: 'Around the Mediterranean: changed regional agriculture and diets' }
+        ],
+        result: { word: 'What the land could support', note: 'Because connectivity moved crops beyond their earlier ranges' }
+      },
       notes: {
         minutes: 7,
         land: [
@@ -182,7 +220,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'crops', kind: 'process', eyebrow: 'Crop Mechanism',
+      id: 'crop-chain', phase: 'crops', kind: 'process', kc: 'KC-3.1.IV', eyebrow: 'Crop Mechanism',
       title: 'A crop matters when it changes what land can support.',
       steps: [
         { label: 'NETWORK', text: 'Routes connect regions' },
@@ -202,7 +240,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'cropcheck', kind: 'action', eyebrow: 'Checkpoint 1',
+      id: 'check1', phase: 'cropcheck', kind: 'action', eyebrow: 'Module 06 · Checkpoint 1',
       title: 'Trace one crop from network to consequence.',
       subtitle: 'Name the crop. Name the region. Explain what changed because it moved.',
       action: { label: 'Open Student Lesson', url: '../unit-2/lesson-2-6-environmental-consequences.html#modules' },
@@ -217,29 +255,33 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'pathogens', kind: 'image', eyebrow: 'Cargo #2 · Pathogens',
+      id: 'plague-map', phase: 'pathogens', kind: 'frame-placard', kc: 'KC-3.1.IV', eyebrow: 'Cargo 2 · Pathogens',
       title: 'The same road brings death.',
-      visual: {
-        url: '../assets/images/instructional-maps/topic-2-6.svg',
-        alt: 'Instructional map of the spread of the Black Death'
+      template: {
+        placard: {
+          tag: 'Modern Map · 1346 to 1353',
+          name: 'The same road brings death.',
+          text: 'Darker red is earlier. The plague arrives at the Black Sea, then follows sea lanes and roads into Europe, North Africa and Southwest Asia.'
+        }
       },
-      footer: 'Bubonic plague moved through connected trade routes and port cities.',
       notes: {
         minutes: 7,
         land: [
           'Use the map to show the pattern of spread across connected regions.',
-          'Students do not need a microbiology lesson. They need to see that disease had routes, ships, caravans, port cities, and dense populations as pathways.'
+          'Students do not need a microbiology lesson. They need to see that disease had routes, ships, caravans, port cities, and dense populations as pathways.',
+          'Read the map together: darkest red is 1346, north of the Black Sea and the Caspian (Tana, Astrakhan); 1347 reaches Constantinople, Sicily, Marseille and Egypt by sea; paler shades push north to Scandinavia and Russia by 1350 to 1353. The arrow on the right says the disease arrived along the trade routes from the east in the early 1340s.',
+          'It is a modern map by Simeon Netchev for World History Encyclopedia, and it covers Europe, North Africa and Southwest Asia only, not where the outbreak began. The red and orange dots mark cities with known death rates. The legend has a typo, "Principl routes"; if a student spots it, good reading.'
         ],
         ask: 'Why does a trade-route map help explain a disease map?',
         listenFor: 'The same paths and nodes that moved goods could move people, animals, fleas, rats, and pathogens.'
       }
     },
     {
-      phase: 'pathogens', kind: 'process', eyebrow: 'Pathogen Mechanism',
+      id: 'plague-chain', phase: 'pathogens', kind: 'process', kc: 'KC-3.1.IV', eyebrow: 'Pathogen Mechanism',
       title: 'The plague was not new. The highway system was better.',
       steps: [
         { label: 'OUTBREAK', text: 'Disease exists in one region' },
-        { label: 'MOVEMENT', text: 'Ships, caravans, people, and animals connect regions' },
+        { label: 'MOVEMENT', text: 'Ships, caravans, people, and the rats and fleas aboard them' },
         { label: 'JUMP', text: 'Pathogens reach new populations' },
         { label: 'EPIDEMIC', text: 'Mortality spreads across connected societies' }
       ],
@@ -255,17 +297,19 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'pathogens', kind: 'hero', eyebrow: 'Human Consequence',
+      id: 'memory', phase: 'pathogens', kind: 'frame-triptych', kc: 'KC-3.1.IV', eyebrow: 'Human Consequence · How Europe Remembered',
       title: 'Connection can become catastrophe.',
-      subtitle: 'The Black Death caused massive mortality and demographic disruption across connected Afro-Eurasian regions.',
-      visual: {
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Danse_macabre_by_Michael_Wolgemut.png',
-        alt: 'Michael Wolgemut print of the Dance of Death, 1493'
+      template: {
+        panels: [
+          { title: 'Wolgemut · 1493' },
+          { title: 'Bruegel · c. 1562' }
+        ]
       },
       notes: {
         minutes: 5,
         land: [
-          'This is a later cultural-memory image, not an eyewitness picture of 1348. Use it carefully as evidence that mass mortality shaped memory and imagination.',
+          'Neither picture is an eyewitness picture of 1348. Michael Wolgemut\'s Dance of Death woodcut was printed in 1493, about 145 years after the outbreak. Pieter Bruegel the Elder painted The Triumph of Death about 1562, more than two centuries after it. Use them as evidence that mass mortality shaped how Europe remembered and imagined death, generations later.',
+          'Pair them: both are made long after the plague, and both show death sweeping away people of every rank. Ask what it says that Europe was still picturing this two hundred years on.',
           'The AP consequence is demographic: population loss and disruption. Keep students focused on environmental/demographic effect.'
         ],
         ask: 'What is the consequence we have to explain, not just describe?',
@@ -273,7 +317,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'power', kind: 'question', eyebrow: 'The Big Turn',
+      id: 'power', phase: 'power', kind: 'question', kc: 'KC-3.1.IV', eyebrow: 'The Big Turn',
       title: 'The networks did not become bad. They became powerful.',
       subtitle: 'A powerful network amplifies whatever enters it: crops, ideas, people, goods, or pathogens.',
       notes: {
@@ -287,15 +331,19 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'chains', kind: 'process', eyebrow: 'Same Cause · Opposite Effects',
+      id: 'retelling', retelling: true, phase: 'chains', kind: 'split-mirror', kc: 'KC-3.1.IV', eyebrow: 'Same Cause · Opposite Effects',
       title: 'The same network could feed you and kill you.',
-      steps: [
-        { label: 'CROP', text: 'Network -> crop moves -> grows somewhere new -> food/productivity can increase' },
-        { label: 'PATHOGEN', text: 'Network -> disease moves -> reaches new populations -> mortality can increase' },
-        { label: 'SAME CAUSE', text: 'Intensified connectivity moves living things farther' },
-        { label: 'OPPOSITE EFFECTS', text: 'Productive capacity and demographic catastrophe can happen together' }
-      ],
-      footer: 'This is the slide the lesson is driving toward.',
+      footer: 'Same first three rows. **Opposite last row.** Both were happening at once.',
+      template: {
+        left: { name: 'Crops' },
+        right: { name: 'Pathogens' },
+        rows: [
+          { label: 'Network', left: 'Regions connect more often', right: 'Regions connect more often' },
+          { label: 'What moves', left: 'A useful plant travels with people and cargo', right: 'A pathogen travels with people and cargo' },
+          { label: 'Where it lands', left: 'An environment where it grows well', right: 'People who had never faced it' },
+          { label: 'Consequence', left: 'Production and the population a region can support **rise**', right: 'Mortality **rises** and population falls' }
+        ]
+      },
       notes: {
         minutes: 7,
         land: [
@@ -307,36 +355,35 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'verb', kind: 'grid', eyebrow: 'AP Writing Move',
+      id: 'sharpen', phase: 'verb', kind: 'sharpen', eyebrow: 'AP Writing Move · Explain Means Because',
       title: 'Explain means because.',
-      cards: [
-        { title: 'LIST', text: 'Bananas spread to Africa.' },
-        { title: 'EXPLAIN', text: 'Because Indian Ocean networks moved crops, bananas could spread into suitable African environments and support new agricultural possibilities.' },
-        { title: 'LIST', text: 'The plague spread on trade routes.' },
-        { title: 'EXPLAIN', text: 'Because trade connected ports and cities more densely, plague could move farther and cause massive mortality.' }
-      ],
+      footer: 'An AP-sized claim names the **network**, the **movement**, and the **consequence**.',
+      template: {
+        weak: 'Bananas spread to Africa.',
+        strong: 'Because Indian Ocean networks **moved crops** between regions, bananas could spread into suitable African environments and **open new agricultural possibilities**.'
+      },
       notes: {
         minutes: 5,
         land: [
           'This is where the lesson converts into AP writing. Students should see exactly why a memorized example is not enough.',
-          'Have students upgrade one list sentence into an explain sentence.'
+          'Read the weak claim first and ask what is missing. It is true and it explains nothing: no network, no movement, no consequence.',
+          'Then run the plague pair verbally as the second rep. Weak: "The plague spread on trade routes." Strong: "Because trade connected ports and cities more densely, plague could reach crowded cities where no one had faced it and cause massive mortality." This template holds one pair on screen on purpose; the second one is yours to say.',
+          'Have students upgrade one of their own sentences the same way before Checkpoint 2.'
         ],
         ask: 'Which word turns recall into causation?',
         listenFor: 'Because.'
       }
     },
     {
-      phase: 'close', kind: 'hero', eyebrow: 'Topic 2.6 · Landing Sentence',
+      id: 'landing', phase: 'close', kind: 'frame-letterbox', kc: 'KC-3.1.IV', eyebrow: 'Topic 2.6 · Landing Sentence',
       title: 'Connectivity connected ecosystems.',
       subtitle: 'From c. 1200 to c. 1450, exchange networks spread crops that could increase productive capacity and pathogens that could cause devastating demographic decline.',
-      visual: {
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-        alt: 'Map of major Afro-Eurasian exchange routes'
-      },
+      template: {},
       notes: {
         minutes: 2,
         land: [
-          'This sentence directly answers the Topic 2.6 learning objective.',
+          'This sentence directly answers the Topic 2.6 learning objective. Leave it on screen while students copy it.',
+          'The rice picture was chosen on 2026-09-26 so the deck closes on the crop branch rather than on plague. It is AI-generated and labeled on the slide. Quick check for the room: one farmer is holding a curved harvest sickle while everyone around him is planting seedlings, and a real paddy is not planted and harvested at the same moment. It sets the scene; it is not evidence of anything.',
           'Bridge to 2.7: next students compare the major networks and their effects rather than studying one new consequence.'
         ],
         ask: 'What is the one-sentence answer to Topic 2.6?',

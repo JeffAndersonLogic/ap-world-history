@@ -44,6 +44,9 @@ const SUITES = {
     ['scripts/test/readings-reproducible.test.js', 'generated readings match the content model'],
     ['scripts/test/save-health.test.js', 'a failed draft save is counted, not lost'],
     ['scripts/test/teaching-os-architecture.test.js', 'Teaching OS shared architecture and student-deck source of truth'],
+    ['scripts/test/slide-templates.test.js', 'slide templates: one library, wired into every renderer, AI label enforced'],
+    ['scripts/test/deck-key-concepts.test.js', 'Key Concept band: every deck tags its own topic\'s KCs, and every renderer draws the band'],
+    ['scripts/test/asset-versions.test.js', 'deploy-time version stamp changes only tag values'],
     ['scripts/test/foundations-golden.js', 'Foundations content vs the hand-authored originals'],
     ['scripts/test/readings-golden.js', '58 unit readings vs the hand-authored originals'],
     ['scripts/test/socrates-contract.test.js', 'AI coach kit reproducible, persona unit-agnostic'],
@@ -59,7 +62,8 @@ const SUITES = {
     ['scripts/test/image-check-throttle.test.js', 'rate limiting is not reported as a broken image'],
     ['scripts/test/evidence-image-surgery.test.js', 'Module 07 image candidates splice the right bytes'],
     ['scripts/test/schedule-cohorts.test.js', 'green/silver alternation, due dates, generated board and Canvas events'],
-    ['scripts/test/teacher-today.test.js', 'the Today panel routes a date to the right teacher surface']
+    ['scripts/test/teacher-today.test.js', 'the Today panel routes a date to the right teacher surface'],
+    ['scripts/test/topic-audit-coverage.test.js', 'topic audit records, coverage index, and the freshness check going quiet']
   ],
   browser: [
     ['scripts/test/modal-focus.unit.js', 'unit lesson modal focus contract'],
@@ -67,6 +71,8 @@ const SUITES = {
     ['scripts/test/canvas-rich-clipboard.browser.js', 'Canvas rich clipboard end-to-end on Topic 1.1'],
     ['scripts/test/lecture-deck.test.js', 'lecture deck flow, scroll lock, video block'],
     ['scripts/test/teaching-os-deck-overflow.test.js', 'Teaching OS student decks fit their frame'],
+    ['scripts/test/slide-templates.browser.test.js', 'slide templates fit, label AI images, and draw on every Teaching OS page'],
+    ['scripts/test/key-concept-band.browser.test.js', 'Key Concept band draws on every tagged slide, fits its wording, and covers nothing'],
     ['scripts/test/lightbox-sweep.js', 'enlargeable images operable on all 77'],
     ['scripts/test/confidence.test.js', 'confidence scale'],
     ['scripts/test/skills-lens.test.js', 'Skills Lens panels'],
@@ -75,6 +81,7 @@ const SUITES = {
     ['scripts/test/topic-2-2-os.test.js', 'Topic 2.2 cinematic teaching OS and projection contract'],
     ['scripts/test/coach-prompt.test.js', 'checkpoint paste matches the Node contract'],
     ['scripts/test/beintheroom-capture.test.js', 'BeInTheRoom reflection survives a reopen and reaches Gather All My Work'],
+    ['scripts/test/room-v2-story.test.js', 'BeInTheRoom v2 story mode plays in order; standard v2 unchanged'],
     ['scripts/test/ebook-a11y.test.js', 'eBook landmarks, focus, reflow, contrast'],
     ['scripts/test/ebook-listen.test.js', 'eBook section narration, one section at a time'],
     ['scripts/test/announcements-refresh.test.js', 'board re-reads its file when the day rolls over']

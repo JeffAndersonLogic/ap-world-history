@@ -4,9 +4,9 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: Ideas, Cities, and Travelers',
-    embedUrl: 'first-and-10-topic-2-5-cultural-consequences-capture.html',
-    note: 'Read for three consequences of intensified exchange: cultural/technological diffusion, changing urban fortunes, and more travelers recording what they encountered.'
+    title: 'First & 10: Goods Were Never the Only Cargo',
+    embedUrl: 'first-and-10-topic-2-5-cultural-consequences-capture.html?v=cargo-v1',
+    note: 'Read for the chain: bigger networks, then more contact, then diffusion and adaptation, then cultural and intellectual change. Watch it happen to beliefs, technologies, cities, and travelers.'
   };
 
   lesson.map = {
@@ -40,13 +40,13 @@
 
   lesson.beSurreal = {
     title: 'BeSurreal: The Medieval World Through Travelers\' Eyes',
-    text: 'Ibn Battuta, Marco Polo, and Margery Kempe traveled for very different reasons, but each left written accounts that exposed readers to places, peoples, institutions, and customs far from home. Intensified networks did not just move people; they generated new written evidence about a connected world.',
+    text: 'Ibn Battuta, Marco Polo, and Margery Kempe traveled for very different reasons, but each left an account (all three dictated theirs to someone else, who wrote it down) that exposed readers to places, peoples, institutions, and customs far from home. Intensified networks did not just move people; they generated new written evidence about a connected world.',
     prompt: 'How does the growth of travel writing itself serve as evidence that Afro-Eurasian networks were intensifying?'
   };
 
   lesson.classPresentation = {
     title: 'Class Slides: Cultural Consequences of Connectivity',
-    desc: 'Follow the three-part consequence story: diffusion, changing city fortunes, and travelers documenting an increasingly connected Afro-Eurasian world.',
+    desc: 'Follow one chain four times: bigger networks brought more contact, which spread and reshaped beliefs and technologies, built and broke cities, and sent travelers home to write about what they saw.',
     url: 'presentation-topic-2-5-student.html'
   };
 
@@ -71,7 +71,7 @@
       cardDesc: 'Religion, paper, and gunpowder across Afro-Eurasia.',
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Explain how ONE cultural tradition or technology diffused through Afro-Eurasian exchange networks from c. 1200 to c. 1450. Use a specific CED example and explain how the network enabled movement.',
+      prompt: 'Explain how ONE belief system or technology spread through Afro-Eurasian trade networks between about 1200 and 1450. Name a specific example (Buddhism, Hinduism, Islam, paper, or gunpowder), say where it moved, and explain how the network helped it spread.',
       responseType: 'Checkpoint 1',
       terms: ['Buddhism', 'Hinduism', 'Islam', 'paper', 'gunpowder', 'diffusion'],
       focus: ['Name a specific tradition or innovation.', 'Identify where it moved.', 'Explain how intensified exchange enabled the diffusion.']
@@ -98,9 +98,21 @@
   };
 
   lesson.images = [
-  { title: 'Great Buddha at the Mogao Caves, Dunhuang', url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Buddha,_Cave_96,_Mogao_Caves.jpg', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Great_Buddha,_Cave_96,_Mogao_Caves.jpg', caption: 'Religious-diffusion evidence. The Mogao cave complex at the Silk Road oasis of Dunhuang preserves centuries of Buddhist patronage along an overland exchange corridor.', prompt: 'NOTICE the scale and religious imagery. What can you INFER about Buddhism’s presence at a trade-route oasis? What evidence would you need to prove how merchants, rulers, and monks each contributed to diffusion?' },
-  { title: 'Jiaozi Paper Money in Song China', url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jiao%20zi.jpg', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Jiao_zi.jpg', caption: 'Technology-origin evidence. Paper and printing were established technologies in China before their wider diffusion westward.', prompt: 'NOTICE the sophisticated use of paper. What does this establish about the technology at its eastern origin? What does it not prove about the route by which papermaking later spread?' },
-  { title: 'Urban-Fortunes Evidence — Cities Rise and Decline', label: 'CED historical development · Topic 2.5', sourceText: ['The fate of cities varied as productivity, trade routes, political power, and conflict changed.', 'Some places experienced increased urbanization while others declined as networks and political conditions shifted.'], caption: 'CED-aligned historical-development anchor, paraphrased rather than quoted from a primary source.', prompt: 'Why can the same era of expanding interregional trade produce growth in some cities and decline in others? What city-level evidence would you seek to test the claim?' },
-  { title: 'Travel-Account Evidence — A More Connected World', label: 'CED illustrative examples · Topic 2.5', sourceText: ['More travelers moved through intensified exchange networks and left written accounts of distant societies.', 'Ibn Battuta, Marco Polo, and Margery Kempe provide three different examples of travel writing from the wider period.'], caption: 'CED-aligned travel-account anchor. The wording is a synthesis, not a quotation from any traveler.', prompt: 'How does the growth of travel writing itself provide evidence of connectivity? What limits would you place on using one traveler’s account to generalize about an entire society?' }
+    {
+      title: 'The Diamond Sutra, Printed 868, Found at Dunhuang',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Diamond%20Sutra%20of%20868%20AD%20-%20The%20Diamond%20Sutra%20%28868%29%2C%20frontispiece%20and%20text%20-%20BL%20Or.%208210-P.2.jpg?width=1200',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Diamond_Sutra_of_868_AD_-_The_Diamond_Sutra_%28868%29%2C_frontispiece_and_text_-_BL_Or._8210-P.2.jpg',
+      caption: 'A Buddhist scripture first written in India, here in the Chinese translation made around 400 by Kumarajiva, a monk from the Silk Road oasis of Kucha. This copy was printed from carved wooden blocks in 868 and found sealed in a cave at the Mogao Caves, Dunhuang, in 1900. It is the earliest dated printed book known, made more than three centuries before this period.',
+      prompt: 'NOTICE the writing, the picture, and how the page was made. What can you INFER about how Buddhism, a religion that began in India, took root in China? Because this book is older than 1200, what can it show about the period 1200 to 1450, and what can it not?'
+    },
+    {
+      title: 'Yuan Paper Money and Its Printing Plate, 1287',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yuan%20dynasty%20banknote%20with%20its%20printing%20plate%201287.jpg?width=1200',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Yuan_dynasty_banknote_with_its_printing_plate_1287.jpg',
+      caption: 'A paper banknote issued in 1287 by the Yuan dynasty, the Mongol rulers of China, shown with its wooden printing plate. Its text, in Chinese and in the Mongols\' new \'Phags-pa script, sets its value at two strings of coins and threatens counterfeiters with death. Paper money had first come into use in China under the Song dynasty in the 1000s.',
+      prompt: 'NOTICE the plate, the two kinds of writing, and the warning to counterfeiters. What can you INFER about how the Mongols used a Chinese technology to run their empire? When the Mongol ruler of Persia tried paper money in 1294, merchants refused it within months: what does that suggest about moving a technology to a new place?'
+    },
+  { title: 'The Mongol Siege of Baghdad, 1258', url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bagdad1258.jpg', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bagdad1258.jpg', caption: 'Painting from a Persian history manuscript made about 1430 to 1434, nearly two centuries after the event, showing Mongol forces besieging Baghdad. Baghdad had been the capital of the Abbasid Caliphate and one of the great centers of learning in the Islamic world.', prompt: 'NOTICE the walls, the river, and the siege weapons. What can you INFER about how a rich, connected city could be exposed to conquest? Because the artist worked long after 1258, what can this picture prove, and what can it not?' },
+  { title: 'A Caravan on the Catalan Atlas, 1375', url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Caravane_Marco_Polo.jpg', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Caravane_Marco_Polo.jpg', caption: 'Detail of the Catalan Atlas, a world map made in Majorca in 1375 and attributed to the mapmaker Abraham Cresques. It shows a caravan of riders and camels crossing Asia, a scene often connected with the Polo family\'s journey.', prompt: 'NOTICE who is traveling and how they are moving. What can you INFER about how European mapmakers learned about Asia by 1375? What does a map made in Majorca suggest about how far travel accounts had spread?' }
 ];
 })();

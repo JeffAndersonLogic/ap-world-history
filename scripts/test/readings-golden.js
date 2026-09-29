@@ -23,10 +23,33 @@ const FIXTURE = path.join(__dirname, 'fixtures', 'readings-before.json');
 const fromDisk = process.argv.includes('--from-disk');
 
 // Unit 2 was deliberately reauthored as the 2026-09-17 reference standard, with Topic 2.2's story-first First & 10 revision reviewed and approved on 2026-09-21.
+// Topic 2.3's story-first rewrite and the removal of two em dashes from Topic 2.2 landed on
+// 2026-09-22. The story was first built under an explicit waiver, then reviewed and
+// approved as written by Jeff the same evening.
+// Topic 2.4's last callout gained its missing </strong> the same night, a markup
+// repair with no change to the words.
+// Topic 2.4's story-first rewrite landed 2026-09-22, its story reviewed and approved
+// as written by Jeff before it was built.
+// Two camel-saddle sentences were softened the same night, on review, so they no
+// longer imply the desert could not be crossed regularly before 1200.
+// Topic 2.5's story-first rewrite landed 2026-09-23, its story reviewed and approved
+// as written by Jeff before it was built, with the one requested refinement: the
+// networks -> contact -> diffusion and adaptation -> change chain made explicit.
+// Topic 2.7's story-first rewrite landed 2026-09-23, its story (same problem,
+// different ground, different tools, same results) reviewed and approved by Jeff
+// before it was built.
+// Topic 2.5's chain was carried into its last two callouts and its takeaway on
+// 2026-09-25, when Jeff approved the story again and asked that the chain be
+// unmistakable: sections 3 and 4 and the BeReady line now end on it too.
+// Topic 2.6's story-first rewrite landed 2026-09-26, at Jeff's request that it be
+// brought into the style of the topics around it. It carries the story the 2.6
+// deck already teaches (trade accidentally connected ecosystems; the same network
+// could feed you and kill you). Jeff approved it as written the same day, when
+// asked to choose between shipping it and reading it first.
 // Keep the historical fixture untouched, but accept that full rewrite only while
 // its canonical source file is byte-for-byte the approved version below. Any
 // later Unit 2 First & 10 edit changes this Git blob hash and forces a new review.
-const APPROVED_UNIT2_REWRITE_BLOB = '90926d2c4ed96e3fa814f993ccdfc6ad52e2e150';
+const APPROVED_UNIT2_REWRITE_BLOB = '3f4056c0d0af2585e0d9cf48bb95fedc7cd11e63';
 const unit2SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-2.js');
 function gitBlobSha(text) {
   const body = Buffer.from(text, 'utf8');

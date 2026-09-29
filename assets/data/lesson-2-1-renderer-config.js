@@ -24,7 +24,8 @@
   };
 
   lesson.stableImages = {
-    map: '../assets/images/topics/2-1/2.1 - Silk Road Map.png',
+    // Not the AI-generated '2.1 - Silk Road Map.png': a map slot takes a real map.
+    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
     first10: '../assets/images/module-art/unit-2/topic-2-1/first10.svg',
     contentDelivery: '../assets/images/module-art/unit-2/topic-2-1/contentdelivery.svg',
     beSurreal: '../assets/images/topics/2-1/2.1 - Chinese Paper Money.jpg',

@@ -269,10 +269,10 @@ window.FOUNDATION_TOPIC = {
         'Where routes cross, **wealth and power pile up**, and the most important cargo is often the one nobody was selling.'
       ],
       image: {
-        title: 'Great Buddha, Cave 96, Mogao Caves at Dunhuang',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Buddha,_Cave_96,_Mogao_Caves.jpg',
-        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Great_Buddha,_Cave_96,_Mogao_Caves.jpg',
-        caption: 'The Mogao Caves at Dunhuang, funded by Silk Road merchants seeking protection on the road, are the clearest visual proof that trade networks moved religion. A merchant who paid for a cave painting was buying spiritual insurance, buying into a Buddhist community that spanned the route, and leaving evidence that would survive 1,600 years for historians to read.'
+        title: 'Travelers on the Road, Mogao Cave 103, Dunhuang (712 to 765)',
+        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Xuanzang_returned_from_India._Dunhuang_mural%2C_Cave_103._High_Tang_period_%28712-765%29..jpg',
+        sourceUrl: 'https://commons.wikimedia.org/wiki/File:Xuanzang_returned_from_India._Dunhuang_mural,_Cave_103._High_Tang_period_%28712-765%29..jpg',
+        caption: 'Travelers lead a loaded elephant through the mountains in this Tang dynasty painting from Mogao Cave 103, made between 712 and 765, often identified as the monk Xuanzang returning from India with Buddhist scriptures. The Mogao Caves at Dunhuang, funded by Silk Road merchants seeking protection on the road, are the clearest visual proof that trade networks moved religion. A merchant who paid for a cave painting was buying spiritual insurance, buying into a Buddhist community that spanned the route, and leaving evidence that would survive 1,600 years for historians to read.'
       }
     }
   ],
