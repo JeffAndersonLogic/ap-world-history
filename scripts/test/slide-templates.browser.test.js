@@ -306,6 +306,46 @@ function measureBoards(label) {
       return b ? getComputedStyle(b).position : 'missing';
     }, EX.find(e => e.slide.kind === 'compounding').slide);
     check('real decks: a Compounding bar keeps its own styling inside the student shell', bars === 'static', `position:${bars}`);
+
+    /* An annotated object's pins must sit on the picture where the data puts
+       them. They were drawn in a fixed 1128x560 SVG scaled uniformly while the
+       picture frame stretched with the box, so on Topic 3.1, the first deck to
+       use the template, a two-line heading moved every pin off the bombard. */
+    const pinDrift = sl => {
+      const img = document.querySelector('#stage .bht-an-img');
+      if (!img) return { drawn: 0, worst: 1 };
+      const f = img.getBoundingClientRect();
+      const pins = [...document.querySelectorAll('#stage .bht-an-pin')].map(el => {
+        const r = el.getBoundingClientRect();
+        return [(r.left + r.width / 2 - f.left) / f.width, (r.top + r.height / 2 - f.top) / f.height];
+      });
+      const want = ((sl.template || {}).pins || []).slice(0, 5);
+      const worst = want.reduce((m, p, i) => pins[i] ? Math.max(m, Math.abs(pins[i][0] - p.x), Math.abs(pins[i][1] - p.y)) : 1, 0);
+      return { drawn: pins.length, want: want.length, worst };
+    };
+    const annotated = real.filter(r => r.slide.kind === 'annotated');
+    const drift = [];
+    for (const r of annotated) {
+      await page.evaluate(sl => {
+        const stage = document.querySelector('#stage');
+        stage.style.cssText = 'width:1280px;height:720px;aspect-ratio:auto';
+        stage.innerHTML = window.BHSlideTemplates.render(sl);
+        return new Promise(res => requestAnimationFrame(() => requestAnimationFrame(res)));
+      }, r.slide);
+      const m = await page.evaluate(pinDrift, r.slide);
+      if (m.drawn !== m.want || m.worst > 0.02) drift.push(`${r.deck}: ${m.drawn}/${m.want} pins, off by ${(m.worst * 100).toFixed(1)}%`);
+    }
+    check('real decks: every annotated pin sits where its data puts it on the picture', drift.length === 0, drift.join(' | ') || `${annotated.length} annotated slide(s)`);
+    if (annotated.length) {
+      // Control: the same slide with one pin moved a tenth of the frame must fail.
+      const moved = await page.evaluate(sl => {
+        const pin = document.querySelector('#stage .bht-an-pin');
+        pin.style.left = `calc(${pin.style.left} + 3.9%)`;
+        return null;
+      }, annotated[annotated.length - 1].slide);
+      const m = await page.evaluate(pinDrift, annotated[annotated.length - 1].slide);
+      check('control: a pin moved off its spot is caught', m.worst > 0.02, `off by ${(m.worst * 100).toFixed(1)}%`);
+    }
     await page.close();
   }
 

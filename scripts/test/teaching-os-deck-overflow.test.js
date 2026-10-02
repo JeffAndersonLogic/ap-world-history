@@ -116,6 +116,60 @@ function shellFor(key) {
   return `unit-${key.split('.')[0]}/presentation-topic-${slug}-student.html`;
 }
 
+// Measures what the current slide paints outside its board. Shared by the
+// deck walk and the controls below, so a control tests the real measurement.
+function measureSlide() {
+          const stage = document.querySelector('#stage');
+          const slide = stage.querySelector('.slide') || stage.firstElementChild;
+          if (!slide) return { title: '(no slide)', sig: '(no slide)', overY: 0, overX: 0, imgs: 0, worst: '' };
+          const frame = slide.getBoundingClientRect();
+          // Measure painted boxes against the frame, not scrollHeight. A slide
+          // whose children are all absolutely positioned reports a scrollHeight
+          // larger than its clientHeight even when every child sits comfortably
+          // inside, so the first version of this check failed eight hero slides
+          // on which nothing was actually clipped. What matters to a student is
+          // whether something they are meant to read is painted outside the
+          // board, and that is a rectangle comparison.
+          let overY = 0, overX = 0, worst = '';
+          for (const el of slide.querySelectorAll('*')) {
+            const cs = getComputedStyle(el);
+            if (cs.visibility === 'hidden' || cs.display === 'none' || cs.opacity === '0') continue;
+            let r = el.getBoundingClientRect();
+            // A picture inside a template's picture frame is cropped by that
+            // frame on purpose (a route map zooms into part of a satellite
+            // image), so it counts only where the frame shows it. This is for
+            // images in named frames only: text is always measured whole,
+            // because text clipped by the board is exactly what a student
+            // cannot read.
+            const crop = el.tagName === 'IMG' && el.closest('.bht-frame, .bht-ro-map');
+            if (crop) {
+              const c = crop.getBoundingClientRect();
+              r = { left: Math.max(r.left, c.left), right: Math.min(r.right, c.right), top: Math.max(r.top, c.top), bottom: Math.min(r.bottom, c.bottom) };
+              r.width = Math.max(0, r.right - r.left); r.height = Math.max(0, r.bottom - r.top);
+            }
+            if (!r.width || !r.height) continue;
+            const below = Math.round(r.bottom - frame.bottom);
+            const above = Math.round(frame.top - r.top);
+            const right = Math.round(r.right - frame.right);
+            const left = Math.round(frame.left - r.left);
+            const y = Math.max(below, above), x = Math.max(right, left);
+            if (y > overY) { overY = y; worst = el.className || el.tagName.toLowerCase(); }
+            if (x > overX) overX = x;
+          }
+          return {
+            title: (stage.querySelector('h2')?.textContent || '').trim().slice(0, 44),
+            // Tells slides apart for the walk check. The first h2 alone cannot:
+            // a template slide may have none (a primary source, a placard, a
+            // sharpened claim), and a landing slide can repeat another slide's
+            // heading on purpose, so Topic 2.4 read as 18 slides of 21.
+            // The slide under any Key Concept band: two slides teaching the
+            // same KC open with the same band, which is not the same slide.
+            sig: ((stage.querySelector('.bhkc-slide') || stage).innerText || '').replace(/\s+/g, ' ').trim().slice(0, 240),
+            overY, overX, worst,
+            imgs: [...stage.querySelectorAll('img')].filter(im => im.naturalWidth > 0).length
+          };
+}
+
 (async () => {
   await new Promise(r => server.listen(0, r));
   const port = server.address().port;
@@ -155,45 +209,7 @@ function shellFor(key) {
       const total = Number(((await page.$eval('#count', el => el.textContent)).split('/')[1] || '0').trim());
       const seen = [];
       for (let i = 0; i < total; i++) {
-        seen.push(await page.evaluate(() => {
-          const stage = document.querySelector('#stage');
-          const slide = stage.querySelector('.slide') || stage.firstElementChild;
-          if (!slide) return { title: '(no slide)', sig: '(no slide)', overY: 0, overX: 0, imgs: 0, worst: '' };
-          const frame = slide.getBoundingClientRect();
-          // Measure painted boxes against the frame, not scrollHeight. A slide
-          // whose children are all absolutely positioned reports a scrollHeight
-          // larger than its clientHeight even when every child sits comfortably
-          // inside, so the first version of this check failed eight hero slides
-          // on which nothing was actually clipped. What matters to a student is
-          // whether something they are meant to read is painted outside the
-          // board, and that is a rectangle comparison.
-          let overY = 0, overX = 0, worst = '';
-          for (const el of slide.querySelectorAll('*')) {
-            const cs = getComputedStyle(el);
-            if (cs.visibility === 'hidden' || cs.display === 'none' || cs.opacity === '0') continue;
-            const r = el.getBoundingClientRect();
-            if (!r.width || !r.height) continue;
-            const below = Math.round(r.bottom - frame.bottom);
-            const above = Math.round(frame.top - r.top);
-            const right = Math.round(r.right - frame.right);
-            const left = Math.round(frame.left - r.left);
-            const y = Math.max(below, above), x = Math.max(right, left);
-            if (y > overY) { overY = y; worst = el.className || el.tagName.toLowerCase(); }
-            if (x > overX) overX = x;
-          }
-          return {
-            title: (stage.querySelector('h2')?.textContent || '').trim().slice(0, 44),
-            // Tells slides apart for the walk check. The first h2 alone cannot:
-            // a template slide may have none (a primary source, a placard, a
-            // sharpened claim), and a landing slide can repeat another slide's
-            // heading on purpose, so Topic 2.4 read as 18 slides of 21.
-            // The slide under any Key Concept band: two slides teaching the
-            // same KC open with the same band, which is not the same slide.
-            sig: ((stage.querySelector('.bhkc-slide') || stage).innerText || '').replace(/\s+/g, ' ').trim().slice(0, 240),
-            overY, overX, worst,
-            imgs: [...stage.querySelectorAll('img')].filter(im => im.naturalWidth > 0).length
-          };
-        }));
+        seen.push(await page.evaluate(measureSlide));
         if (i < total - 1) { await page.click('#next').catch(() => {}); await page.waitForTimeout(90); }
       }
 
@@ -224,6 +240,42 @@ function shellFor(key) {
       check(`${label}: no page errors`, errors.length === 0, errors.slice(0, 2).join(' | ') || 'clean');
       await page.close();
     }
+  }
+
+  /* Controls. The frame rule above loosens what counts as overflow, so it has
+     to be shown not to excuse a real one: a picture spilling off the board
+     outside any frame must still fail, and the same picture inside a frame
+     that crops it must pass. */
+  {
+    const deck = DECKS[0];
+    const page = await browser.newPage({ viewport: { width: 1280, height: 800 } });
+    await page.route('**/*', route => {
+      const url = route.request().url();
+      if (url.startsWith(origin)) return route.continue();
+      if (route.request().resourceType() === 'image') return route.fulfill({ status: 200, contentType: 'image/svg+xml', body: STAND_IN });
+      return route.abort();
+    });
+    await page.goto(`${origin}/${shellFor(deck.key)}`, { waitUntil: 'domcontentloaded' });
+    await page.waitForSelector('#stage .slide', { timeout: 15000 });
+    const inject = framed => page.evaluate(f => {
+      const slide = document.querySelector('#stage .slide') || document.querySelector('#stage').firstElementChild;
+      slide.querySelectorAll('.ctl-probe').forEach(n => n.remove());
+      const img = document.createElement('img');
+      img.src = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2210%22 height=%2210%22/%3E';
+      img.style.cssText = 'position:absolute;left:0;top:0;width:200px;height:2000px';
+      if (!f) { img.className = 'ctl-probe'; slide.appendChild(img); return; }
+      const box = document.createElement('div');
+      box.className = 'bht-frame ctl-probe';
+      box.style.cssText = 'position:absolute;left:10px;top:10px;width:100px;height:100px;overflow:hidden';
+      box.appendChild(img); slide.appendChild(box);
+    }, framed);
+    await inject(false);
+    const loose = await page.evaluate(measureSlide);
+    check('control: a picture spilling off the board outside any frame is caught', loose.overY > 2, `+${loose.overY}px`);
+    await inject(true);
+    const framed = await page.evaluate(measureSlide);
+    check('control: the same picture cropped by its frame is not counted', framed.overY <= 2, `+${framed.overY}px`);
+    await page.close();
   }
 
   await browser.close();

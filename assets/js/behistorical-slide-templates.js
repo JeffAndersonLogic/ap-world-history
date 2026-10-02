@@ -210,13 +210,18 @@ function compoundingStairs(s){
 function annotated(s){
   const t=s.template||{},pins=arr(t.pins).slice(0,5),n=Math.max(1,pins.length);
   const IW=440,IH=520,IT=10,rowH=520/n;
-  let svg='',labels='';
+  let svg='',labels='',pinsHtml='';
   pins.forEach((p,i)=>{
     const px=num(p.x,.5)*IW,py=IT+num(p.y,.5)*IH,ly=IT+rowH*i+rowH/2;
-    svg+=`<line x1="${px.toFixed(0)}" y1="${py.toFixed(0)}" x2="520" y2="${ly.toFixed(0)}"></line><line x1="520" y1="${ly.toFixed(0)}" x2="560" y2="${ly.toFixed(0)}"></line><circle cx="${px.toFixed(0)}" cy="${py.toFixed(0)}" r="9" class="ring"></circle><circle cx="${px.toFixed(0)}" cy="${py.toFixed(0)}" r="3" class="dot"></circle>`;
+    // The leader lines stretch with the box (preserveAspectRatio none) so they
+    // stay on the same percentages as the frame and the labels; the pin itself
+    // is HTML so it stays round. A uniformly scaled SVG drifted off the picture
+    // whenever the heading wrapped and changed the box's shape.
+    svg+=`<line x1="${px.toFixed(0)}" y1="${py.toFixed(0)}" x2="520" y2="${ly.toFixed(0)}"></line><line x1="520" y1="${ly.toFixed(0)}" x2="560" y2="${ly.toFixed(0)}"></line>`;
+    pinsHtml+=`<i class="bht-an-pin" style="left:${(px/1128*100).toFixed(2)}%;top:${(py/560*100).toFixed(2)}%"></i>`;
     labels+=`<div class="bht-an-lab" style="top:${((ly-20)/560*100).toFixed(2)}%"><b>${esc(p.label)}</b><span>${rich(p.text)}</span></div>`;
   });
-  return board('annotated',themeOf(t,'dark'),pad(head(s)+`<div class="bht-an">${frame(t.visual,'bht-an-img',{placeholder:t.placeholder||'Add the real object this slide annotates'})}<svg class="bht-an-svg" viewBox="0 0 1128 560" aria-hidden="true">${svg}</svg>${labels}</div>`+foot(s.footer)));
+  return board('annotated',themeOf(t,'dark'),pad(head(s)+`<div class="bht-an">${frame(t.visual,'bht-an-img',{placeholder:t.placeholder||'Add the real object this slide annotates'})}<svg class="bht-an-svg" viewBox="0 0 1128 560" preserveAspectRatio="none" aria-hidden="true">${svg}</svg>${pinsHtml}${labels}</div>`+foot(s.footer)));
 }
 
 /* ── time ──────────────────────────────────────────────────────────────── */
@@ -810,10 +815,10 @@ const CSS=`
 .bht-an{position:relative;flex:1;min-height:0}
 .bht-an-img{position:absolute;left:0;top:1.8%;width:39%;height:92.9%;border-radius:10u}
 .bht-an-svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-.bht-an-svg line{stroke:#c9a46a;stroke-width:1.5}
-.bht-an-svg .ring{fill:none;stroke:#c9a46a;stroke-width:3}
-.bht-an-svg .dot{fill:#c9a46a}
-.paper .bht-an-svg line,.paper .bht-an-svg .ring{stroke:#6b3e1f}.paper .bht-an-svg .dot{fill:#6b3e1f}
+.bht-an-svg line{stroke:#c9a46a;stroke-width:1.5;vector-effect:non-scaling-stroke}
+.bht-an-pin{position:absolute;width:18u;height:18u;margin:-9u 0 0 -9u;border:3u solid #c9a46a;border-radius:50%;pointer-events:none}
+.bht-an-pin::after{content:'';position:absolute;left:50%;top:50%;width:6u;height:6u;margin:-3u 0 0 -3u;border-radius:50%;background:#c9a46a}
+.paper .bht-an-svg line{stroke:#6b3e1f}.paper .bht-an-pin{border-color:#6b3e1f}.paper .bht-an-pin::after{background:#6b3e1f}
 .bht-an-lab{position:absolute;left:51%;width:45%}
 .bht-an-lab b{display:block;font:800 15u/1.3 'Montserrat',Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--acc)}
 .bht-an-lab span{display:block;font-size:20u;line-height:1.4;margin-top:4u}

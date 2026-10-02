@@ -232,6 +232,30 @@ module.exports = [
     ]
   },
 
+  // ── Unit 3 ──────────────────────────────────────────────────────────────────
+  {
+    id: 'topic-3-1',
+    code: 'Topic 3.1',
+    title: 'Four Land Empires and the Rivals at Their Edges',
+    subtitle: 'Topic 3.1 · Gunpowder empires, c. 1450-1750',
+    highlights: [
+      // Ottoman is drawn last so its label sits on top of the Safavid zone.
+      { zone: 'iran', label: 'SAFAVID', tone: 'plum', legend: 'Safavid: Iran' },
+      { zone: 'southAsia', label: 'MUGHAL', tone: 'bronze', legend: 'Mughal: South Asia' },
+      { zone: 'eastAsia', label: 'QING (MANCHU)', tone: 'sand', legend: 'Qing: China, then Central and East Asia' },
+      { zone: 'ottoman', label: 'OTTOMAN', tone: 'gold', legend: 'Ottoman: Southern Europe, the Middle East and North Africa' }
+    ],
+    flows: [
+      { from: 'maghreb', to: 'westAfrica', label: 'Moroccan army across the Sahara, 1590-1591', bow: 0.18 }
+    ],
+    points: [
+      { at: [29, 41], label: 'Constantinople', note: 'falls to Ottoman guns, 1453', side: 'left' },
+      { at: [66, 32], label: 'Kandahar', note: 'contested, 1595-1653' },
+      { at: [0, 17], label: 'Tondibi', note: 'Morocco defeats Songhai, 1591' }
+    ],
+    note: 'BeHistorical instructional map. Empire zones mark where each empire was centered, not its borders at any one date; coastlines are simplified for classroom projection.'
+  },
+
   // ── Unit 4 ──────────────────────────────────────────────────────────────────
   {
     id: 'topic-4-7',

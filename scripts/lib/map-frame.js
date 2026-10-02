@@ -105,6 +105,12 @@ const ZONES = {
   indonesia: [110, -3, 16, 7],
   philippines: [122, 12, 5, 6],
   northAfrica: [14, 27, 24, 6],
+  // Morocco and the western Maghreb, so an arrow out of Morocco starts in
+  // Morocco rather than at northAfrica's centre in Libya.
+  maghreb: [-6, 31, 6, 4],
+  // The Ottoman core c. 1550: the Balkans, Anatolia and the Levant. Anatolia
+  // alone is too small to carry the empire's name on a world map.
+  ottoman: [28, 38, 11, 6],
   westAfrica: [-4, 12, 15, 7],
   centralAfrica: [20, 0, 13, 8],
   eastAfrica: [38, 2, 8, 10],

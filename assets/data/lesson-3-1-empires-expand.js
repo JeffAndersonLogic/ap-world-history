@@ -114,12 +114,12 @@ window.BEHISTORICAL_LESSON = {
         title: "Gunpowder and the New Empires",
         bullets: [
           "**Gunpowder weapons**, especially large-caliber **cannons** and **matchlock firearms**, transformed warfare after c. 1450 by making traditional fortifications vulnerable and giving states with access to gunpowder technology decisive military advantages.",
-          "Before gunpowder artillery, fortified walls and castles could withstand sieges for months or years. Ottoman **bombards** (massive siege cannons) could breach stone walls in days, fundamentally shifting the military balance toward offensive power and against defensive fortification.",
+          "Before gunpowder artillery, fortified walls and castles could withstand sieges for months or years. Ottoman **bombards** (massive siege cannons) could break stone walls that had held for centuries, shifting the military balance toward the attacker and against the fortification.",
           "States that controlled gunpowder technology and the iron foundries to produce cannons were not just militarily stronger, they were structurally different from earlier empires. Maintaining and deploying gunpowder armies required **centralized state resources**, bureaucratic organization, and sustained revenue extraction."
         ],
         image: {
-          title: "Ottoman Empire expansion, 1359–1839",
-          caption: "Ottoman territorial expansion over nearly five centuries, beginning in Anatolia and expanding across three continents.",
+          title: "The Ottoman Empire, c. 1300 to 1920 (animated map)",
+          caption: "An animated map of the Ottoman Empire from its start in Anatolia around 1300 to its end in 1920. The growth across three continents, up to about 1700, is the part this topic covers; the later frames show its decline.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif"
         }
@@ -129,7 +129,7 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "The **Ottoman Empire** (est. c. 1299) expanded from a small Anatolian principality to control the Balkans, Anatolia, the Arab Middle East, and North Africa by c. 1550. Under Suleiman the Magnificent (r. 1520–1566), the Ottomans controlled one of the largest empires in the world.",
           "The **Safavid Empire** (est. 1501) unified Persia under Shia Islam and served as the Ottoman Empire's eastern rival. The **Mughal Empire** (est. 1526) under Babur and his successors conquered most of the Indian subcontinent. The **Qing Dynasty** (est. 1644) expanded China's borders into Central Asia, Tibet, and Mongolia.",
-          "The **Russian Empire** expanded eastward across Siberia and southward toward Central Asia during the same period, a land-based imperial expansion as significant as those of the more commonly studied 'Gunpowder Empires.' All of these states used gunpowder weapons and recruited military forces from conquered or enslaved populations."
+          "The **Russian Empire** also expanded east across Siberia in these centuries, though the CED's list for this topic names the Ottoman, Safavid, Mughal, and Manchu (Qing) empires. All of these states fought with gunpowder weapons, and all needed large treasuries to pay for them."
         ],
         image: {
           title: "Topkapi Palace, Istanbul",
@@ -146,10 +146,24 @@ window.BEHISTORICAL_LESSON = {
           "Sultan Mehmed II claimed the title of **Caesar (Kayser-i Rum)**, Emperor of Rome, asserting Ottoman legitimacy as the successors of both the Roman Empire and the Islamic caliphate. The conquest demonstrated what gunpowder artillery could accomplish and announced that a new era of imperial power had arrived in Eurasia."
         ],
         image: {
-          title: "The Mughal Empire at its height, c. 1700",
-          caption: "Gunpowder, cavalry, and revenue systems let the Mughals expand across South Asia, the same combination the Ottomans and Safavids used.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Mughal_Empire_%281700%29.png"
+          title: "The Dardanelles Gun, 1464",
+          caption: "Cast for Mehmed II in 1464, eleven years after the conquest: a surviving bronze bombard of the same kind that broke Constantinople's walls. About 17 tonnes, in two halves that screw together.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Turkish_Bombard_at_Fort_Nelson.JPG",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Great_Turkish_Bombard_at_Fort_Nelson.JPG"
+        }
+      },
+      {
+        title: "Rivals at the Edges: Kandahar and Tondibi",
+        bullets: [
+          "**Political and religious disputes** turned growing empires into rivals. The CED names two cases: the Safavid and Mughal conflict, and the Songhai Empire's conflict with Morocco.",
+          "The **Safavids** and **Mughals** fought for decades over **Kandahar**, a fortress on the main road between Iran and India. The dispute was political: whoever held Kandahar controlled the road. The city changed hands four times between 1595 and 1649, and Mughal sieges with heavy guns failed in 1649, 1652, and 1653, a reminder that guns did not always win.",
+          "**Ahmad al-Mansur**, the sultan of Morocco, claimed to be the rightful caliph of all Muslims and demanded the revenue of Songhai's Taghaza salt mines. When Songhai refused, a Moroccan army of a few thousand, armed with firearms, crossed the Sahara and destroyed a far larger Songhai army at **Tondibi** in 1591. Songhai never recovered as an empire."
+        ],
+        image: {
+          title: "Four land empires and the rivals at their edges",
+          caption: "BeHistorical instructional map: the Ottoman, Safavid, Mughal, and Qing empires, with Constantinople, Kandahar, and Tondibi marked, and the Moroccan army's route across the Sahara.",
+          url: "../assets/images/instructional-maps/topic-3-1.svg",
+          sourceUrl: "../assets/images/instructional-maps/topic-3-1.svg"
         }
       }
     ]
@@ -159,7 +173,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Ottoman Empire Expansion: A Land-Based Empire in Action",
     url: "https://commons.wikimedia.org/wiki/Special:FilePath/Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif",
     sourceUrl: "https://commons.wikimedia.org/wiki/File:Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif",
-    caption: "Ottoman territorial expansion from c. 1359 to 1839, showing the empire's growth from Anatolia across three continents.",
+    caption: "An animated map of the Ottoman Empire from its start around 1300 to its end in 1920. Watch the early frames: the growth from Anatolia across three continents, up to about 1700, is the part this topic covers.",
     intro: "Use this map to trace how the Ottoman Empire expanded from a small Anatolian principality into one of the largest land-based empires in history, connecting Europe, Asia, and Africa.",
     prompt: "Where did Ottoman expansion begin, and in which directions did it spread? What geographic factors, seas, straits, mountain passes, shaped the routes of Ottoman conquest?",
     notes: [
@@ -176,7 +190,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   first10: {
-    title: 'First & 10: The Gunpowder Empires',
+    title: 'First & 10: Big States Got Bigger',
     embedUrl: 'first-and-10-topic-3-1-empires-expand-capture.html?v=response-id-fix-v1'
   },
 

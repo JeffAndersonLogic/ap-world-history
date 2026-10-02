@@ -31,7 +31,7 @@ wins. The block came from the lesson they are actually sitting in.
 **Checkpoint 1 prompt.** Explain how gunpowder technology changed warfare and enabled land-based empires to expand their territories after c. 1450. Use specific evidence, name a specific weapon, empire, or military event.
 Strong answer checklist: Name at least one specific gunpowder weapon and explain how it changed warfare. Connect the military technology to territorial expansion by at least one empire. Explain what advantage gunpowder weapons gave empires over their opponents.
 
-**Checkpoint 2 prompt.** Describe the geographic expansion of at least TWO land-based empires after c. 1450. Then explain ONE interstate rivalry named by the CED, either the Safavid–Mughal conflict or Songhai's conflict with Morocco, showing how political or religious disputes fueled the conflict.
+**Checkpoint 2 prompt.** Describe where at least TWO land-based empires expanded after c. 1450. Then choose ONE rivalry between states, either the Safavid–Mughal conflict over Kandahar or Songhai's conflict with Morocco, and explain what caused it: how did a political or religious dispute lead to the conflict?
 Strong answer checklist: Name at least two land-based empires and describe specific regions they conquered. Name one CED state rivalry and identify the states involved. Explain how a political or religious dispute helped produce or intensify the conflict.
 
 ## 3.2 Empires: Administration

@@ -174,7 +174,8 @@ const OVERVIEWS = {
 
   '2.6': "The same exchange networks that moved merchants and goods also moved living things. Today you trace two environmental consequences together: crops such as bananas, new rice varieties, and citrus diffused into new regions and affected production and population, while pathogens such as bubonic plague traveled along trade routes and produced enormous demographic and social disruption.",
 
-  '2.7': "Comparison asks you to explain the networks together rather than retell them one at a time. Today you compare the Silk Roads, Indian Ocean, and trans-Saharan systems through the same categories: environment and transportation, commercial practices and finance, demand and productive capacity, the role of states and cities, and the cultural or environmental effects of exchange. The goal is an AP-style argument built from both meaningful similarities and meaningful differences."
+  '2.7': "Comparison asks you to explain the networks together rather than retell them one at a time. Today you compare the Silk Roads, Indian Ocean, and trans-Saharan systems through the same categories: environment and transportation, commercial practices and finance, demand and productive capacity, the role of states and cities, and the cultural or environmental effects of exchange. The goal is an AP-style argument built from both meaningful similarities and meaningful differences.",
+  '3.1': "Between 1450 and 1750, a few land-based empires grew bigger than almost any states before them, and gunpowder is a big part of why. Today you follow the loop that made it happen: cannons could break the old walls, only big, rich states could afford cannons, and the land they conquered paid for more guns. Then you look at what happened when growing empires ran into each other, at Kandahar and at Tondibi."
 };
 
 /* ---------------------------------------------------------

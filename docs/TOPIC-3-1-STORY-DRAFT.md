@@ -1,13 +1,15 @@
 # Topic 3.1 Story Draft: Empires Expand
 
-**Status: Draft for Jeff's review, 2026-10-02. Not approved. Nothing has been built.**
-Produced by `/build-topic 3.1 plan`. The unit-level decisions (unit spine, topic spine,
-owns and bridge-only split, hand-offs) come from `docs/UNIT-3-STORY-MAP.md`, approved
-2026-09-23, and are not reopened here except where the fact-check in section 4 asks for
-one word to change.
+**Status: Approved by Jeff, 2026-10-02, and in build.** He answered every decision at the
+end of this draft (recorded in "Decisions" below): the spine takes "could break", the
+gunpowder loop is the retelling slide, Kandahar's failed Mughal sieges stay in as the limit
+of guns, Russia and Chaldiran get one line each, BeSurreal becomes a Byzantine defender on
+the land walls, the First & 10 is rewritten in this build, and the adjacent finding is
+fixed as its own commit. The unit-level decisions come from `docs/UNIT-3-STORY-MAP.md`,
+approved 2026-09-23.
 
-**Taught:** not yet scheduled. Unit 2 ends with Topic 2.7 (Silver, 2026-10-05) and the
-Eras 2 exam (2026-10-06/07). Phase 8 of the build needs the Green and Silver dates.
+**Taught:** Green Friday 2026-10-09. Fall break follows, so Silver takes 3.1 on Monday
+2026-10-19.
 
 ## 1. What the CED requires
 
@@ -220,7 +222,20 @@ AI reconstructions are allowed on a slide only with the label
      `validate.js` prohibition so it cannot return.
    - *Why left out:* it touches every unit topic, not 3.1; it should be its own commit.
 
-## What Jeff needs to decide
+## Decisions (Jeff, 2026-10-02)
+
+1. **Spine:** "Cannons could break the old walls, and only big, rich states could afford
+   cannons, so big states got bigger." Wall version: "Guns take land. Land pays for guns."
+2. **Retelling slide:** the gunpowder loop.
+3. **Kandahar as the limit:** included, one line.
+4. **Russia and Chaldiran:** one line each.
+5. **BeSurreal:** a Byzantine defender on the land walls, the night of 28 May 1453.
+6. **First & 10:** rewritten to this story in this build.
+7. **Dates:** Green Friday 2026-10-09; Silver Monday 2026-10-19, after fall break.
+8. **Adjacent finding:** fix it, as a separate commit.
+
+## The questions as they were put
+
 
 1. **The spine:** keep "useless", or take the proposed "Cannons could break the old
    walls..."? And the wall version, "Guns take land. Land pays for guns."?

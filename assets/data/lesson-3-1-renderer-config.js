@@ -34,7 +34,7 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: The Gunpowder Empires',
+    title: 'First & 10: Big States Got Bigger',
     embedUrl: 'first-and-10-topic-3-1-empires-expand-capture.html?v=response-id-fix-v1',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 3.1 lesson path.'
   };
@@ -62,17 +62,23 @@
     checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Qianlong_Emperor.jpg'
   };
 
+  lesson.classPresentation = {
+    title: 'Class Slides: Empires Expand',
+    desc: 'Follow the gunpowder story: cannons could break the old walls, only big, rich states could afford them, so big states got bigger, until their borders met rivals at Kandahar and Tondibi.',
+    url: 'presentation-topic-3-1-student.html'
+  };
+
   lesson.beInTheRoom = {
     url: '../beintheroom/unit-3/the-constantinople-breach.html',
     desc: 'Join Mehmed II’s siege council in 1453. Combine gunpowder, infantry, naval pressure, logistics, and diplomacy to turn a damaged wall into durable imperial expansion.'
   };
 
   lesson.beSurreal = {
-    title: 'BeSurreal: You Are a Janissary Recruit, Edirne, 1452',
-    desc: 'The night before the Ottoman army begins its march toward Constantinople, you are a 17-year-old devshirme conscript from the Balkans. You were taken from your village six years ago. You have converted to Islam, learned Ottoman Turkish, mastered the matchlock musket, and been absorbed into the most elite infantry force in the known world. The smell of gunpowder and forge-smoke fills the camp. Tomorrow, the march begins.',
-    intro: 'You are sitting in the Janissary barracks in Edirne, the Ottoman capital before Istanbul, cleaning your matchlock rifle by firelight. Around you, thousands of men are doing the same. The great bombard cannons, each one requiring sixty oxen to move, have already been sent ahead toward Constantinople. You have heard that Sultan Mehmed II has ordered the largest siege artillery ever assembled. You have heard that the Theodosian Walls have held for a thousand years. You have heard that God is on your side.',
-    detail: 'You were eight years old when the devshirme collectors came to your village in Serbia. You do not remember your parents\' faces clearly anymore. You remember the walk to the capital, the language lessons, the prayers, the drilling. You remember learning that loyalty to the sultan was everything, that the corps was your family now. You do not think of yourself as Serbian anymore. You are a Janissary. Tomorrow you will march toward the greatest city in the world and put its walls to the test of Ottoman cannon and Ottoman will.',
-    prompt: 'You have one hour before lights out. Write a letter you will never send, to the family you no longer remember clearly. What do you tell them about who you have become? What do you feel about what tomorrow holds? Do you believe in what you are doing, or is belief beside the point?'
+    title: 'BeSurreal: You Are on the Land Walls, Constantinople, 28 May 1453',
+    desc: 'It is the last night of the siege. For seven weeks you have watched the Ottoman cannons batter walls that have stood for a thousand years, and every night you and the other defenders have rebuilt what the guns knocked down. Tonight the enemy camp has gone quiet.',
+    intro: 'You are a young defender on the land walls of Constantinople, standing behind a barrier of timber, earth and barrels where solid stone used to be. Each day the great guns fire only a few shots, because they are slow to load, and each shot brings down a piece of a wall that held off every army for a thousand years. Each night you fill the gap again. Below you, the Ottoman army is far larger than yours. Earlier this evening, people from all over the city crowded into the great church of Hagia Sophia to pray. Everyone expects the attack before dawn.',
+    detail: 'The older men on the wall remember 1422, when the Ottomans tried before and failed. What is different now is the guns. You have seen the stone balls, taller than your knee, and you have heard that the sultan\'s gun maker first offered to build cannons for your own emperor, who could not afford him. The walls did not get weaker. The enemy got richer.',
+    prompt: 'You have one hour before the attack. Write what you would say to the person standing next to you on the wall. What has changed since 1422? Who wins wars now, the side with the strongest walls or the side with the most money? Are you staying at your post?'
   };
 
   lesson.skillBuilder = {
@@ -80,9 +86,9 @@
     title: 'Causation: How Gunpowder Caused Imperial Expansion',
     intro: 'Causation means explaining WHY something happened, identifying the causes that produced a specific historical outcome. For Topic 3.1, you need to explain how gunpowder technology caused the expansion of land-based empires after c. 1450. A strong causal argument does more than list what happened, it explains the connection between cause and effect.',
     steps: [
-      { label: 'Identify the cause', text: 'Gunpowder weapons, specifically large-caliber cannons and matchlock firearms, became available to rulers across Eurasia after c. 1450 through a combination of technological diffusion from China, improvements in iron casting, and state investment in military production.' },
+      { label: 'Identify the cause', text: 'Gunpowder weapons, specifically large-caliber cannons and matchlock firearms, became available to rulers across Eurasia after c. 1450 through a combination of technological diffusion from China, improvements in metal casting, and state investment in military production.' },
       { label: 'Explain the mechanism', text: 'Cannons made traditional fortifications, stone walls, castles, city defenses, vulnerable for the first time. Rulers with gunpowder artillery could breach walls that had previously been impregnable, enabling conquest of territories that would have been impossible to take with pre-gunpowder armies.' },
-      { label: 'Connect to the effect', text: 'Because gunpowder weapons gave states decisive military advantages, rulers who acquired them could expand rapidly at the expense of states that lacked them. The Ottoman conquest of Constantinople (1453) is the clearest example: the Theodosian Walls had resisted sieges for a thousand years, but fell within weeks to Ottoman bombard artillery.' }
+      { label: 'Connect to the effect', text: 'Because gunpowder weapons gave states decisive military advantages, rulers who acquired them could expand rapidly at the expense of states that lacked them. The Ottoman conquest of Constantinople (1453) is the clearest example: the city\'s land walls had held against every attack by land for a thousand years, but Ottoman bombard artillery broke them in seven weeks.' }
     ],
     prompt: 'In 2–3 sentences, explain how gunpowder technology caused the expansion of ONE specific land-based empire. Identify the cause (gunpowder), explain the mechanism (what it allowed the empire to do), and connect it to a specific territorial gain or conquest.'
   };
@@ -105,7 +111,7 @@
       cardDesc: 'Major land empires, geographic expansion, and political or religious rivalry.',
       learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Describe the geographic expansion of at least TWO land-based empires after c. 1450. Then explain ONE interstate rivalry named by the CED, either the Safavid–Mughal conflict or Songhai\'s conflict with Morocco, showing how political or religious disputes fueled the conflict.',
+      prompt: 'Describe where at least TWO land-based empires expanded after c. 1450. Then choose ONE rivalry between states, either the Safavid–Mughal conflict over Kandahar or Songhai\'s conflict with Morocco, and explain what caused it: how did a political or religious dispute lead to the conflict?',
       responseType: 'Checkpoint 2',
       terms: ['Ottoman Empire', 'Safavid Empire', 'Mughal Empire', 'Qing Dynasty', 'Manchu', 'Safavid–Mughal conflict', 'Kandahar', 'Songhai', 'Morocco', 'Tondibi', 'Sunni', 'Shia', 'rivalry'],
       focus: ['Name at least two land-based empires and describe specific regions they conquered.', 'Name one CED state rivalry and identify the states involved.', 'Explain how a political or religious dispute helped produce or intensify the conflict.']
@@ -114,7 +120,7 @@
 
   lesson.evidenceLab = {
     title: 'Evidence Lab: Gunpowder, Conquest, and Imperial Scale',
-    task: 'Choose TWO evidence cards that address the same question: how did early modern land empires gain or hold territory? Start with what the source directly shows, then infer what it suggests about military technology, geographic expansion, or imperial power. A map or portrait can show scale or political memory, but it cannot prove a causal mechanism by itself.',
+    task: 'Choose TWO evidence cards that help answer the same question: how did land empires win or hold territory between 1450 and 1750? Start with what the source shows, then say what it suggests about guns, geography, or the power of the state. A map can show how big an empire was, but it cannot show by itself why the empire grew.',
     prompt: 'Using two evidence cards, make one claim about how land-based empires expanded after c. 1450. Cite one concrete detail from each source, explain how the evidence supports your claim, and identify one limitation in either source.'
   };
 

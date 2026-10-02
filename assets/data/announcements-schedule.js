@@ -672,9 +672,10 @@ window.BEHISTORICAL_SCHEDULE = {
     },
 
     /* ---- Topic 2.7, Comparison ----------------------------- */
-    // No reading assigned here: Topic 3.1 exists but is not yet in this
-    // schedule, so there is no next meeting to derive a due date from. Add
-    // the 3.1 reading here once Unit 3 gets dated class days.
+    // The 3.1 reading is assigned here, due at each cohort's 3.1 meeting:
+    // Green on 2026-10-09, Silver on 2026-10-19 after fall break. Sections 01
+    // and 06 carry the 3.1 spine (the mechanism, and the rivalries and limits
+    // of guns); the empire sections between them are optional.
     // Module 09 now exists for 2.7, but the Canvas required-work subset intentionally
     // remains 05, 06, 07, and 10. BeInTheRoom is available as optional enrichment.
     // field at all). This topic really runs 01-08 and 10, nine modules.
@@ -683,13 +684,47 @@ window.BEHISTORICAL_SCHEDULE = {
       cohort: 'green',
       topic: '2.7',
       modules: ['05', '06', '07', '10'],
-      homework: ''
+      reading: {
+        for: '3.1',
+        where: 'ebook/unit-3.html',
+        required: [
+          "01 What Gunpowder Actually Changed",
+          "06 Rivalries, and the Limits of Guns"
+        ]
+      }
     },
     {
       date: '2026-10-05',
       cohort: 'silver',
       topic: '2.7',
       modules: ['05', '06', '07', '10'],
+      reading: {
+        for: '3.1',
+        where: 'ebook/unit-3.html',
+        required: [
+          "01 What Gunpowder Actually Changed",
+          "06 Rivalries, and the Limits of Guns"
+        ]
+      }
+    },
+
+    /* ---- Topic 3.1, Empires Expand ------------------------- */
+    // Fall break falls between the two meetings, so Silver takes 3.1 ten
+    // days after Green. No reading is assigned here yet: Topic 3.2 has no
+    // dated class days, so there is no next meeting to derive a due date
+    // from. Add the 3.2 reading here once it does.
+    {
+      date: '2026-10-09',
+      cohort: 'green',
+      topic: '3.1',
+      modules: ['02', '06', '07', '10'],
+      homework: ''
+    },
+    {
+      date: '2026-10-19',
+      cohort: 'silver',
+      topic: '3.1',
+      modules: ['02', '06', '07', '10'],
       homework: ''
     }
   ],
