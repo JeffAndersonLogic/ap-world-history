@@ -566,12 +566,12 @@
         ['Makes a defensible comparison within one shared category.', 'Uses precise evidence from at least two networks.', 'Explains how every example supports the line of reasoning.', 'Uses the third example to qualify rather than merely repeat the claim.']
       ),
       evidenceLab: evidence(
-        'Evidence Lab: Build and Stress-Test a Network Comparison',
-        'Select evidence from at least three networks or travelers. Use the set to support a comparison and then search for the piece that makes the argument more complex.',
-        'Develop a comparative argument about how geography, technology, or state power shaped the Silk Roads, Indian Ocean, and trans-Saharan networks. Establish one meaningful similarity and one meaningful difference within the same category. Use one precise evidence entry from each network, explain how every example supports the comparison, and use at least one example to qualify the argument by revealing an exception or limit.',
+        'Evidence Lab: Compare and Test a Geography Claim',
+        'This is the move you practiced in the Skill Builder, but now every example has to be something you can see on a map. Use the three route maps. Choose two networks to compare, then use the third network to test your claim.',
+        'Choose two of the three networks. Write a claim that explains one important similarity and one important difference in how geography shaped those two networks from c. 1200 to c. 1450. Cite one detail you can see on each of their maps, and explain how each detail supports your claim. Then use a detail from the third network\'s map to show a limit, an exception, or a condition on your claim.',
         'Argumentation and Comparison (Skills 6.B and 6.D)',
-        ['Silk Roads', 'Indian Ocean', 'trans-Saharan trade', 'geography', 'technology', 'state power'],
-        ['Makes a defensible argument containing both similarity and difference.', 'Uses precise evidence from all three networks.', 'Explains how every example supports the comparison.', 'Uses one example to establish a genuine qualification or limit.']
+        ['geography', 'Silk Roads', 'Indian Ocean', 'trans-Saharan trade', 'monsoon', 'Sahara', 'mountains', 'desert', 'camel caravans'],
+        ['States a claim with one similarity and one difference about geography.', 'Compares two networks and stays with geography the whole time.', 'Cites one detail you can see on each of the two maps you compare.', 'Explains how each detail supports the claim.', 'Uses a detail from the third map to limit or change the claim, not just to add another fact.']
       ),
       primarySource: source(
         'Paired Primary Sources: Merchant Institutions Across Two Networks',

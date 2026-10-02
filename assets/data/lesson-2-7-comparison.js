@@ -204,13 +204,7 @@ window.BEHISTORICAL_LESSON = {
   evidenceLab: {
     title: 'Evidence Lab: Build a CED-Level Comparison',
     intro: 'A strong comparison uses the same analytical categories across networks rather than listing unrelated facts.',
-    prompt: 'Choose two networks. Explain one similarity and one difference using evidence about transportation, commercial practices, demand, state or city growth, productive capacity, or diffusion.',
-    items: [
-      { title: 'Silk Roads', detail: 'Caravanserai, credit, money economies, Kashgar and Samarkand, luxury demand, textiles, porcelain, iron, and steel.' },
-      { title: 'Indian Ocean', detail: 'Monsoon knowledge, compass, astrolabe, larger ships, Swahili Coast states, Gujarat, Malacca, and diasporic merchant communities.' },
-      { title: 'Trans-Saharan', detail: 'Camel saddle, caravans, oases, Mali, and long-distance gold-salt exchange.' },
-      { title: 'Shared Consequences', detail: 'Expanded trade volume and range, growth of commercial nodes, cultural and technological diffusion, crop and pathogen movement, and increased productive capacity.' }
-    ]
+    prompt: 'Choose two networks. Explain one similarity and one difference using evidence about transportation, commercial practices, demand, state or city growth, productive capacity, or diffusion.'
   },
 
   primarySource: {
