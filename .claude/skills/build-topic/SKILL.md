@@ -145,6 +145,21 @@ summary standing in for an available object.
 If a Phase 3 constraint check found something out of line (a mis-titled card, an off-spine
 opening section), it is fixed here, inside this topic's build, as the unit story map decides.
 
+### The First & 10 is rewritten to the approved story, not checked against it
+
+"Still tells the spine" is the bar for the other surfaces. The reading gets the story-first
+rewrite that Topics 2.4 to 2.7 got (commits `ac4ac321`, `7d1a1d18`, `11809ec3`, `72b7d752`),
+written to the "First & 10 Reading Standard" in `CLAUDE.md`, which is the rule:
+
+1. **Rewrite it from the Phase 4 story.** An old reading that roughly agrees is not done.
+   One section per beat (2.4, 2.5 and 2.6 each used four), the spine stated up front, every
+   vocabulary chip used in context, and the callouts carrying the chain.
+2. **Strip teacher language** from student text ("These examples help students see...").
+3. **One title everywhere**: the reading and both lesson files. Rebuild Canvas
+   (`npm run build:canvas-events`) so the assignment carries it too.
+4. **Keep three questions and the answer capture** in the same shape.
+5. **Show Jeff the reading.** Story approval in Phase 4 is not approval of the prose.
+
 ## Phase 8: Schedule, required modules and Canvas
 
 **Blocked until Jeff gives class dates.** If the topic has none, stop after listing what this
@@ -176,7 +191,12 @@ phase will need. Do not guess.
 
 ## Phase 9: Verify
 
-1. `npm test`. It names every generated file that drifted.
+1. `npm test`. It names every generated file that drifted. A First & 10 edit also fails
+   `readings-golden.js`, **by design**: it pins each `reading-content/unit-N.js` either to
+   the frozen originals or to an approved fingerprint (`APPROVED_UNIT2_REWRITE_BLOB` and its
+   siblings). Do not quiet it. Once Jeff has approved the reading, update that unit's
+   fingerprint, or add one on the Unit 2 pattern, with a dated comment saying what he
+   approved. Until then, report it as failing pending his review.
 2. `npm run test:browser` if a slide or template changed (needs `npm i playwright-core`).
    A SKIP is not a pass.
 3. **Instructional verification** (section 15): the deck answers the actual learning objective;
