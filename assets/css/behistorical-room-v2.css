@@ -159,3 +159,125 @@ a { color: inherit; }
   .room-story-scene, .room-story-result, .room-story-seal { padding: .9rem; }
   .room-story .room-grid { gap: .6rem; }
 }
+
+/* ── Story mode, the hand-authored look ─────────────────────────────────────
+   A story-mode page renders inside .room-story-page and adds .room-story-body
+   to <body>, and it loads behistorical.css for the topbar, .btn and .eyebrow.
+   These rules re-skin the room classes above into the paper cards, Cinzel
+   headings and dark summary panels the hand-authored BeInTheRoom scenarios
+   use. Nothing outside .room-story-page or .room-story-body can match them.
+   Gold is kept to dark surfaces; on paper the labels are bronze or oxidized
+   brown, because antique gold on paper is about 2.1:1. */
+body.room-story-body {
+  background: radial-gradient(circle at top left, rgba(201,164,106,.18), transparent 34rem), linear-gradient(180deg, #F5F0E7, #ece1d1 42%, #F5F0E7);
+  color: #151718;
+  font-family: "Libre Baskerville", Georgia, serif;
+  line-height: 1.7;
+}
+.room-story-page { max-width: 1180px; margin: 0 auto; padding: 24px; }
+.room-story-page [hidden] { display: none !important; }
+.room-story-page :focus-visible { outline: 3px solid #8C5A2B; outline-offset: 3px; }
+
+.room-story-page .room-hero { color: #F5F0E7; background-color: #1A1C1D; background-position: center; background-size: cover; border: 1px solid rgba(201,164,106,.35); border-bottom: 1px solid rgba(201,164,106,.35); border-radius: 28px; margin-top: 18px; box-shadow: 0 14px 32px rgba(26,28,29,.12); }
+.room-story-page .room-hero-inner { max-width: none; padding: 42px 28px; }
+.room-story-page .room-kicker { color: #D2B48C; font-weight: 900; letter-spacing: .18em; font-size: .74rem; }
+.room-story-page .room-hero h1 { font-family: "Cinzel", Georgia, serif; font-weight: 900; color: #C9A46A; font-size: clamp(2.2rem,6vw,5rem); line-height: 1.02; margin: 10px 0; max-width: none; overflow-wrap: break-word; }
+.room-story-page .room-date { font-family: "Montserrat", Arial, sans-serif; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; font-size: .76rem; color: #D2B48C; }
+.room-story-page .room-premise { max-width: 900px; color: #F5F0E7; }
+.room-story-page .room-premise p { font-size: 1.04rem; line-height: 1.65; }
+.room-story-page .room-dilemma { max-width: 900px; border-radius: 14px; border-left-width: 6px; background: rgba(201,164,106,.12); line-height: 1.6; }
+.room-story-page .room-dilemma strong { font-family: "Montserrat", Arial, sans-serif; text-transform: uppercase; letter-spacing: .08em; font-size: .78rem; }
+.room-story-page .room-story-hero-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+
+.room-story-page .room-main { max-width: none; width: auto; margin: 0 0 40px; padding: 0; }
+.room-story-page .room-section { background: #FFFDF7; color: #151718; border: 1px solid rgba(26,28,29,.14); border-radius: 20px; padding: 22px; margin: 24px 0; box-shadow: 0 14px 32px rgba(26,28,29,.12); scroll-margin-top: 96px; }
+.room-story-page .room-story-stage { font-family: "Montserrat", Arial, sans-serif; font-weight: 900; text-transform: uppercase; letter-spacing: .12em; color: #8C5A2B; font-size: .72rem; margin-bottom: 8px; }
+.room-story-page .room-section h2, .room-story-page .room-section h3 { font-family: "Cinzel", Georgia, serif; color: #1A1C1D; margin-top: 0; }
+.room-story-page .room-section h2 { font-size: clamp(1.35rem,3vw,1.8rem); margin-bottom: .6rem; }
+.room-story-page .room-step { margin-bottom: .6rem; }
+.room-story-page .room-step-num { background: #8C5A2B; color: #FFFDF7; }
+.room-story-page .room-step-label { font-family: "Cinzel", Georgia, serif; color: #1A1C1D; font-size: clamp(1.2rem,2.6vw,1.6rem); letter-spacing: .02em; text-transform: none; font-weight: 900; }
+.room-story-page .room-intro { color: #151718; font-size: 1rem; }
+
+.room-story-page .room-story-alignment { margin-top: 24px; }
+.room-story-page .room-standard { grid-template-columns: repeat(auto-fit,minmax(min(100%,210px),1fr)); gap: 12px; margin: 14px 0 0; }
+.room-story-page .room-standard-item { background: #f7efe3; border: 1px solid rgba(107,62,31,.16); border-radius: 14px; padding: 12px; }
+.room-story-page .room-card-label { color: #6B3E1F; font-size: .72rem; letter-spacing: .08em; }
+.room-story-page .room-standard-item p { color: #151718; font-size: .92rem; line-height: 1.45; }
+
+.room-story-page .room-progress { height: 8px; margin-top: 8px; background: rgba(26,28,29,.1); }
+.room-story-page .room-progress-label { color: #6B3E1F; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; font-size: .7rem; margin: 6px 0 0; }
+
+.room-story-page .room-grid, .room-story-page .room-evidence-grid { grid-template-columns: repeat(auto-fit,minmax(min(100%,230px),1fr)); gap: 14px; }
+.room-story-page .room-choice { color: #151718; background: #fffdf7; border: 1px solid rgba(107,62,31,.18); border-top: 6px solid #5A5F5C; border-radius: 18px; padding: 16px; box-shadow: 0 14px 32px rgba(26,28,29,.08); transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
+.room-story-page .room-choice:hover { transform: translateY(-3px); background: #fffdf7; border-color: rgba(107,62,31,.18); border-top-color: #C9A46A; box-shadow: 0 20px 54px rgba(0,0,0,.18); }
+.room-story-page .room-choice[aria-pressed="true"], .room-story-page .room-choice:disabled[aria-pressed="true"] { opacity: 1; transform: translateY(-3px); border-color: #C9A46A; border-top-color: #C9A46A; background: #fbf3e4; box-shadow: 0 20px 54px rgba(0,0,0,.18), 0 0 0 2px rgba(201,164,106,.55); }
+.room-story-page .room-choice:disabled[aria-pressed="false"], .room-story-page .room-choice:disabled[aria-pressed="false"]:hover { opacity: .5; transform: none; box-shadow: none; background: #fffdf7; border-color: rgba(107,62,31,.18); border-top-color: #5A5F5C; }
+.room-story-page .room-choice-title { font-family: "Cinzel", Georgia, serif; font-weight: 800; font-size: 1.02rem; line-height: 1.3; color: #1A1C1D; }
+.room-story-page .room-choice-summary { margin-top: 6px; color: #151718; font-size: .9rem; line-height: 1.5; }
+.room-story-page .room-evidence { border-top-width: 5px; border-radius: 16px; padding: 14px; }
+.room-story-page .room-evidence .room-choice-title { font-family: "Montserrat", Arial, sans-serif; font-size: .9rem; line-height: 1.35; }
+.room-story-page .room-evidence .room-choice-summary { font-size: .88rem; }
+.room-story-page .room-counter { color: #6B3E1F; font-weight: 900; text-transform: uppercase; letter-spacing: .08em; font-size: .76rem; }
+.room-story-page .room-counter.ready { color: #3f6b4f; }
+
+.room-story-page .room-detail, .room-story-page .room-story-result { background: linear-gradient(180deg,#1A1C1D,#2B2F31); color: #F5F0E7; border: 1px solid rgba(201,164,106,.38); border-left: 7px solid #C9A46A; border-radius: 18px; padding: 18px; margin-top: 16px; scroll-margin-top: 96px; }
+.room-story-page .room-detail h3 { font-family: "Cinzel", Georgia, serif; color: #C9A46A; }
+.room-story-page .room-detail p { color: #F5F0E7; font-size: .92rem; line-height: 1.5; background: rgba(255,253,247,.08); border: 1px solid rgba(210,180,140,.2); border-radius: 14px; padding: 12px; }
+.room-story-page .room-detail strong { display: block; color: #D2B48C; font-family: "Montserrat", Arial, sans-serif; text-transform: uppercase; letter-spacing: .1em; font-size: .68rem; margin-bottom: 4px; }
+.room-story-page .room-detail-grid { gap: 12px; }
+
+.room-story-page .room-story-scene { background: #f6efe3; border-left: 6px solid #8C5A2B; border-radius: 16px; padding: 18px; margin: 28px 0 14px; box-shadow: 0 14px 32px rgba(26,28,29,.08); }
+.room-story-page .room-story-scene-kicker { color: #8C5A2B; font-weight: 900; }
+.room-story-page .room-story-scene p { color: #151718; font-size: 1rem; line-height: 1.6; }
+.room-story-page .room-decision { background: #fffdf7; border: 1px solid rgba(26,28,29,.14); border-radius: 18px; padding: 18px; box-shadow: 0 14px 32px rgba(26,28,29,.08); }
+.room-story-page .room-decision h3 { font-family: "Cinzel", Georgia, serif; color: #1A1C1D; font-size: 1.2rem; }
+.room-story-page .room-decision-prompt { color: #151718; font-size: .98rem; }
+.room-story-page .room-story-lock-hint { color: #3E4447; }
+.room-story-page .room-story-locked-label { font-family: "Cinzel", Georgia, serif; font-size: 1.1rem; color: #C9A46A; }
+.room-story-page .room-story-costs { gap: 10px; }
+.room-story-page .room-story-costs p { color: #F5F0E7; font-size: .92rem; background: rgba(255,253,247,.08); border: 1px solid rgba(210,180,140,.2); border-radius: 14px; padding: 12px; }
+.room-story-page .room-story-costs strong { color: #D2B48C; }
+.room-story-page .room-story-next { background: #f6efe3; border-left: 6px solid #8C5A2B; border-radius: 14px; padding: 14px 16px; }
+.room-story-page .room-story-next .room-card-label { color: #8C5A2B; }
+
+.room-story-page .room-button { border-radius: 999px; min-height: 42px; padding: 11px 17px; border: 1px solid rgba(201,164,106,.38); background: linear-gradient(135deg, rgba(255,255,255,.06), transparent 40%), linear-gradient(180deg, #3E4447, #2B2F31); color: #FFFDF7; font-size: .76rem; font-weight: 900; letter-spacing: .1em; box-shadow: 0 10px 22px rgba(26,28,29,.18); }
+.room-story-page .room-button.secondary, .room-story-page .room-button.magic { background: #FFFDF7; color: #2B2F31; border-color: rgba(90,95,92,.35); box-shadow: none; }
+.room-story-page .room-field label { color: #6B3E1F; font-weight: 900; text-transform: uppercase; letter-spacing: .08em; }
+.room-story-page .room-field textarea { min-height: 170px; border: 1px solid rgba(26,28,29,.18); border-radius: 14px; padding: 14px; background: #fffdf7; color: #151718; font-family: "Libre Baskerville", Georgia, serif; line-height: 1.6; }
+.room-story-page .room-field textarea:focus { outline: none; box-shadow: 0 0 0 4px rgba(201,164,106,.35); border-color: #C9A46A; }
+.room-story-page .room-status { color: #9e4f43; }
+.room-story-page .room-status.success { color: #3f6b4f; }
+.room-story-page .room-prompt { background: #151718; color: #f5f0e7; border-radius: 16px; border: 1px solid rgba(201,164,106,.35); padding: 16px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .86rem; line-height: 1.5; max-height: 360px; }
+
+.room-story-page .room-story-seal { border: 1px dashed rgba(107,62,31,.35); border-radius: 14px; background: #f7efe3; }
+.room-story-page .room-story-seal-hint { color: #151718; }
+.room-story-page .room-story-record > .room-intro { font-style: italic; }
+.room-story-page .room-story-yours, .room-story-page .room-story-record-item { background: #f6efe3; color: #151718; border: 0; border-left: 5px solid #5A5F5C; border-radius: 12px; padding: 14px 16px; }
+.room-story-page .room-story-yours li { color: #151718; font-size: .95rem; }
+.room-story-page .room-story-yours strong { color: #6B3E1F; }
+.room-story-page .room-story-record-item h3 { font-family: "Montserrat", Arial, sans-serif; color: #6B3E1F; }
+
+.room-story-page .room-reflection { background: #FFFDF7; border: 1px solid rgba(26,28,29,.14); }
+.room-story-page .room-reflection > .room-intro { background: #f6efe3; border-left: 6px solid #8C5A2B; border-radius: 16px; padding: 18px; }
+.room-story-page .room-source-list li { color: #151718; font-size: .88rem; }
+.room-story-page .room-source-list a { color: #6B3E1F; }
+.room-story-page .room-footer { background: transparent; border-top: 0; color: #5A5F5C; }
+
+@media (max-width: 900px) {
+  .room-story-page { padding: 12px; }
+  .room-story-page .room-hero { border-radius: 22px; }
+  .room-story-page .room-hero-inner { padding: 30px 20px; }
+}
+@media (max-width: 820px) {
+  /* behistorical.css stacks the topbar at this width, which makes it about
+     170px tall on a phone. Pinned, it would cover the result panel a lock-in
+     scrolls to, so in story mode it scrolls away with the page. */
+  .room-story-page .room-story-topbar { position: static; }
+  .room-story-page .room-section, .room-story-page .room-story-result, .room-story-page .room-story-record { scroll-margin-top: 16px; }
+}
+@media (max-width: 480px) {
+  .room-story-page .room-section { padding: 18px 16px; }
+  .room-story-page .room-hero-inner { padding: 26px 16px; }
+  .room-story-page .room-story-hero-actions .btn { width: 100%; }
+}

@@ -142,14 +142,29 @@ function scenarioFrom(rel) {
 
     check('the hero asks the question in the room',
       (await room.textContent('.room-dilemma')).startsWith('The question in the room:'));
-    check('the AP alignment is not at the top of the page',
+    // The alignment is shown to students, as the first card under the hero.
+    // It used to sit collapsed at the bottom for the teacher; Jeff reversed
+    // that on 2026-09-28, since there is no reason to hide it.
+    check('the AP alignment is visible, first under the hero, and not collapsed',
       await room.evaluate(() => {
-        const standard = document.querySelector('.room-standard');
-        const details = standard && standard.closest('details');
-        return !!details && !details.open && details === document.querySelector('.room-main').lastElementChild;
+        const card = document.getElementById('alignment-section');
+        return !!card && card === document.querySelector('.room-main').firstElementChild
+          && card.offsetParent !== null && !document.querySelector('details');
       }));
-    check('the alignment is labelled for the teacher',
-      (await room.textContent('.room-story-alignment summary')).trim() === 'For your teacher: AP alignment');
+    check('the alignment carries theme, objective, skill, and key concepts',
+      await room.evaluate(objective => {
+        const text = document.getElementById('alignment-section').textContent;
+        return ['Thematic focus', 'Learning objective', 'Reasoning skill', 'Key concepts'].every(label => text.includes(label))
+          && text.includes(objective);
+      }, plague.alignment.objective));
+    // The hand-authored BeInTheRoom look: paper body, the BeHistorical topbar
+    // with its logo, and a Cinzel hero title.
+    check('it wears the hand-authored BeInTheRoom look',
+      await room.evaluate(() => document.body.classList.contains('room-story-body')
+        && /linear-gradient/.test(getComputedStyle(document.body).backgroundImage)
+        && !!document.querySelector('.topbar .brand-mini img[src$="behistorical-logo.jpeg"]')
+        && getComputedStyle(document.querySelector('.room-section')).backgroundColor === 'rgb(255, 253, 247)'
+        && /Cinzel/.test(getComputedStyle(document.querySelector('.room-hero h1')).fontFamily)));
     check('the progress label names where work saves and carries no percent',
       (await room.textContent('#room-progress-label')) === 'Your work saves on this device');
 
