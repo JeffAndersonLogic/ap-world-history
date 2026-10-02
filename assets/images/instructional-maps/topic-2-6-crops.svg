@@ -20,6 +20,7 @@
       .badge{fill:#8C5A2B;stroke:#FFFDF7;stroke-width:3}
       .halo{paint-order:stroke;stroke:#FFFDF7;stroke-width:5;stroke-linejoin:round}
       .city{fill:#1A1C1D;stroke:#FFFDF7;stroke-width:4}
+      .leader{stroke:#1A1C1D;stroke-width:2.5;stroke-linecap:round;opacity:.7}
       .flow{fill:none;stroke:#8C5A2B;stroke-width:6;stroke-linecap:round;opacity:.9}
       #land path{fill:#E4DAC4;stroke:#A99B7F;stroke-width:3}
       #graticule line{stroke:#9FB0AE;stroke-width:1.5;opacity:.35}
@@ -76,28 +77,29 @@
     <circle class="badge" cx="1110.7" cy="462.4" r="17"/>
     <text class="badgenum" x="1110.7" y="469.4" text-anchor="middle">1</text>
     <path class="flow" d="M977.8,544.4 Q925.3,538.2 888.9,500.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="929.3" cy="458.2" r="17"/>
-    <text class="badgenum" x="929.3" y="465.2" text-anchor="middle">2</text>
+    <circle class="badge" cx="929.3" cy="530.2" r="17"/>
+    <text class="badgenum" x="929.3" y="537.2" text-anchor="middle">2</text>
     <path class="flow" d="M1266.7,455.6 Q1250.4,376.5 1297.8,311.1" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="1266.3" cy="403.9" r="17"/>
-    <text class="badgenum" x="1266.3" y="410.9" text-anchor="middle">3</text>
+    <circle class="badge" cx="1266.3" cy="379.9" r="17"/>
+    <text class="badgenum" x="1266.3" y="386.9" text-anchor="middle">3</text>
     <path class="flow" d="M1146.7,377.8 Q1032.9,263.0 875.6,300.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="1022.0" cy="300.9" r="17"/>
     <text class="badgenum" x="1022.0" y="307.9" text-anchor="middle">4</text>
   </g>
   <g id="region-labels">
     <text class="region halo" x="1266.7" y="537.1" text-anchor="middle" fill="#1A1C1D"><tspan x="1266.7" dy="0">ORIGIN ZONE</tspan></text>
-    <text class="region halo" x="888.9" y="570.4" text-anchor="middle" fill="#1A1C1D"><tspan x="888.9" dy="0">BANANAS</tspan></text>
-    <text class="region halo" x="1297.8" y="350.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">NEW RICE</tspan></text>
+    <text class="region halo" x="816.9" y="546.4" text-anchor="middle" fill="#1A1C1D"><tspan x="816.9" dy="0">BANANAS</tspan></text>
+    <text class="region halo" x="1369.8" y="386.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1369.8" dy="0">NEW RICE</tspan></text>
     <text class="region halo" x="875.6" y="359.3" text-anchor="middle" fill="#1A1C1D"><tspan x="875.6" dy="0">CITRUS</tspan></text>
   </g>
   <g id="places">
     <circle class="city" cx="1284.4" cy="427.8" r="10"/>
     <text class="place halo" x="1304.4" y="423.8" text-anchor="start">Champa</text>
     <text class="placenote halo" x="1304.4" y="445.8" text-anchor="start">fast-ripening rice</text>
+    <line class="leader" x1="973.3" y1="533.3" x2="953.3" y2="573.3"/>
     <circle class="city" cx="973.3" cy="533.3" r="10"/>
-    <text class="place halo" x="953.3" y="529.3" text-anchor="end">Swahili coast</text>
-    <text class="placenote halo" x="953.3" y="551.3" text-anchor="end">bananas arrive by sea</text>
+    <text class="place halo" x="953.3" y="589.3" text-anchor="end">Swahili coast</text>
+    <text class="placenote halo" x="953.3" y="611.3" text-anchor="end">bananas arrive by sea</text>
   </g>
 
   <g id="titleband">

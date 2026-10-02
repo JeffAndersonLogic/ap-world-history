@@ -20,6 +20,7 @@
       .badge{fill:#8C5A2B;stroke:#FFFDF7;stroke-width:3}
       .halo{paint-order:stroke;stroke:#FFFDF7;stroke-width:5;stroke-linejoin:round}
       .city{fill:#1A1C1D;stroke:#FFFDF7;stroke-width:4}
+      .leader{stroke:#1A1C1D;stroke-width:2.5;stroke-linecap:round;opacity:.7}
       .flow{fill:none;stroke:#8C5A2B;stroke-width:6;stroke-linecap:round;opacity:.9}
       #land path{fill:#E4DAC4;stroke:#A99B7F;stroke-width:3}
       #graticule line{stroke:#9FB0AE;stroke-width:1.5;opacity:.35}
@@ -78,12 +79,12 @@
     <circle class="badge" cx="607.2" cy="438.9" r="17"/>
     <text class="badgenum" x="607.2" y="445.9" text-anchor="middle">1</text>
     <path class="flow" d="M817.8,233.3 Q890.0,317.0 1000.0,327.8" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="899.4" cy="346.8" r="17"/>
-    <text class="badgenum" x="899.4" y="353.8" text-anchor="middle">2</text>
+    <circle class="badge" cx="899.4" cy="298.8" r="17"/>
+    <text class="badgenum" x="899.4" y="305.8" text-anchor="middle">2</text>
   </g>
   <g id="region-labels">
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">UN HEADQUARTERS</tspan></text>
-    <text class="region halo" x="817.8" y="303.8" text-anchor="middle" fill="#1A1C1D"><tspan x="817.8" dy="0">EU &amp; NATO</tspan></text>
+    <text class="region halo" x="352.4" y="401.8" text-anchor="middle" fill="#1A1C1D"><tspan x="352.4" dy="0">UN HEADQUARTERS</tspan></text>
+    <text class="region halo" x="781.8" y="315.8" text-anchor="middle" fill="#1A1C1D"><tspan x="781.8" dy="0">EU &amp; NATO</tspan></text>
     <text class="region halo" x="888.9" y="570.4" text-anchor="middle" fill="#1A1C1D"><tspan x="888.9" dy="0">PEACEKEEPING</tspan></text>
     <text class="region halo" x="1000.0" y="403.8" text-anchor="middle" fill="#1A1C1D"><tspan x="1000.0" dy="0">PEACEKEEPING</tspan></text>
     <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">SECURITY COUNCIL</tspan></text>
@@ -91,8 +92,8 @@
   </g>
   <g id="places">
     <circle class="city" cx="471.1" cy="273.9" r="10"/>
-    <text class="place halo" x="451.1" y="269.9" text-anchor="end">New York</text>
-    <text class="placenote halo" x="451.1" y="291.9" text-anchor="end">UN headquarters</text>
+    <text class="place halo" x="451.1" y="233.9" text-anchor="end">New York</text>
+    <text class="placenote halo" x="451.1" y="255.9" text-anchor="end">UN headquarters</text>
     <circle class="city" cx="819.1" cy="211.1" r="10"/>
     <text class="place halo" x="839.1" y="207.1" text-anchor="start">The Hague</text>
     <text class="placenote halo" x="839.1" y="229.1" text-anchor="start">international courts</text>

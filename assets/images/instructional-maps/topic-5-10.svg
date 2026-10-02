@@ -20,6 +20,7 @@
       .badge{fill:#8C5A2B;stroke:#FFFDF7;stroke-width:3}
       .halo{paint-order:stroke;stroke:#FFFDF7;stroke-width:5;stroke-linejoin:round}
       .city{fill:#1A1C1D;stroke:#FFFDF7;stroke-width:4}
+      .leader{stroke:#1A1C1D;stroke-width:2.5;stroke-linecap:round;opacity:.7}
       .flow{fill:none;stroke:#8C5A2B;stroke-width:6;stroke-linecap:round;opacity:.9}
       #land path{fill:#E4DAC4;stroke:#A99B7F;stroke-width:3}
       #graticule line{stroke:#9FB0AE;stroke-width:1.5;opacity:.35}
@@ -82,8 +83,8 @@
     <text class="badgenum" x="870.0" y="347.2" text-anchor="middle">2</text>
   </g>
   <g id="region-labels">
-    <text class="region halo" x="791.1" y="259.3" text-anchor="middle" fill="#1A1C1D"><tspan x="791.1" dy="0">INDUSTRIAL CORE</tspan></text>
-    <text class="region halo" x="817.8" y="303.8" text-anchor="middle" fill="#1A1C1D"><tspan x="817.8" dy="0">INDUSTRIAL CORE</tspan></text>
+    <text class="region halo" x="791.1" y="175.3" text-anchor="middle" fill="#1A1C1D"><tspan x="791.1" dy="0">INDUSTRIAL CORE</tspan></text>
+    <text class="region halo" x="709.8" y="327.8" text-anchor="middle" fill="#1A1C1D"><tspan x="709.8" dy="0">INDUSTRIAL CORE</tspan></text>
     <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">INDUSTRIAL CORE</tspan></text>
     <text class="region halo" x="1417.8" y="348.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1417.8" dy="0">INDUSTRIAL CORE</tspan></text>
     <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">EXPORT PERIPHERY</tspan></text>

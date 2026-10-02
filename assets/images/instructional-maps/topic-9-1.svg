@@ -20,6 +20,7 @@
       .badge{fill:#8C5A2B;stroke:#FFFDF7;stroke-width:3}
       .halo{paint-order:stroke;stroke:#FFFDF7;stroke-width:5;stroke-linejoin:round}
       .city{fill:#1A1C1D;stroke:#FFFDF7;stroke-width:4}
+      .leader{stroke:#1A1C1D;stroke-width:2.5;stroke-linecap:round;opacity:.7}
       .flow{fill:none;stroke:#8C5A2B;stroke-width:6;stroke-linecap:round;opacity:.9}
       #land path{fill:#E4DAC4;stroke:#A99B7F;stroke-width:3}
       #graticule line{stroke:#9FB0AE;stroke-width:1.5;opacity:.35}
@@ -81,8 +82,8 @@
     <text class="badgenum" x="1147.6" y="302.6" text-anchor="middle">2</text>
   </g>
   <g id="region-labels">
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">RESEARCH &amp;</tspan><tspan x="364.4" dy="25">ENERGY</tspan></text>
-    <text class="region halo" x="346.7" y="431.6" text-anchor="middle" fill="#1A1C1D"><tspan x="346.7" dy="0">GREEN REVOLUTION</tspan></text>
+    <text class="region halo" x="364.4" y="329.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">RESEARCH &amp;</tspan><tspan x="364.4" dy="25">ENERGY</tspan></text>
+    <text class="region halo" x="346.7" y="455.6" text-anchor="middle" fill="#1A1C1D"><tspan x="346.7" dy="0">GREEN REVOLUTION</tspan></text>
     <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">GREEN REVOLUTION</tspan></text>
     <text class="region halo" x="1000.0" y="403.8" text-anchor="middle" fill="#1A1C1D"><tspan x="1000.0" dy="0">OIL</tspan></text>
     <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">MANUFACTURING</tspan></text>

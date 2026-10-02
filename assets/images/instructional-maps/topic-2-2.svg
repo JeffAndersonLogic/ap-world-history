@@ -20,6 +20,7 @@
       .badge{fill:#8C5A2B;stroke:#FFFDF7;stroke-width:3}
       .halo{paint-order:stroke;stroke:#FFFDF7;stroke-width:5;stroke-linejoin:round}
       .city{fill:#1A1C1D;stroke:#FFFDF7;stroke-width:4}
+      .leader{stroke:#1A1C1D;stroke-width:2.5;stroke-linecap:round;opacity:.7}
       .flow{fill:none;stroke:#8C5A2B;stroke-width:6;stroke-linecap:round;opacity:.9}
       #land path{fill:#E4DAC4;stroke:#A99B7F;stroke-width:3}
       #graticule line{stroke:#9FB0AE;stroke-width:1.5;opacity:.35}
@@ -74,8 +75,8 @@
   </g>
   <g id="flows">
     <path class="flow" d="M1222.2,238.9 Q1247.0,288.6 1297.8,311.1" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="1253.5" cy="161.8" r="17"/>
-    <text class="badgenum" x="1253.5" y="168.8" text-anchor="middle">1</text>
+    <circle class="badge" cx="1253.5" cy="281.8" r="17"/>
+    <text class="badgenum" x="1253.5" y="288.8" text-anchor="middle">1</text>
     <path class="flow" d="M1222.2,238.9 Q1112.8,240.5 1040.0,322.2" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="1121.9" cy="260.5" r="17"/>
     <text class="badgenum" x="1121.9" y="267.5" text-anchor="middle">2</text>
@@ -83,23 +84,23 @@
     <circle class="badge" cx="1066.7" cy="258.4" r="17"/>
     <text class="badgenum" x="1066.7" y="265.4" text-anchor="middle">3</text>
     <path class="flow" d="M1297.8,311.1 Q1143.2,218.2 1000.0,327.8" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="1146.1" cy="196.8" r="17"/>
-    <text class="badgenum" x="1146.1" y="203.8" text-anchor="middle">4</text>
+    <circle class="badge" cx="1146.1" cy="316.8" r="17"/>
+    <text class="badgenum" x="1146.1" y="323.8" text-anchor="middle">4</text>
   </g>
   <g id="region-labels">
-    <text class="region halo" x="1222.2" y="333.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1222.2" dy="0">MONGOL HEARTLAND</tspan></text>
-    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">YUAN</tspan></text>
-    <text class="region halo" x="1097.8" y="374.0" text-anchor="middle" fill="#1A1C1D"><tspan x="1097.8" dy="0">CHAGATAI</tspan></text>
-    <text class="region halo" x="1040.0" y="411.1" text-anchor="middle" fill="#1A1C1D"><tspan x="1040.0" dy="0">ILKHANATE</tspan></text>
+    <text class="region halo" x="1222.2" y="369.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1222.2" dy="0">MONGOL HEARTLAND</tspan></text>
+    <text class="region halo" x="1297.8" y="410.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">YUAN</tspan></text>
+    <text class="region halo" x="1097.8" y="410.0" text-anchor="middle" fill="#1A1C1D"><tspan x="1097.8" dy="0">CHAGATAI</tspan></text>
+    <text class="region halo" x="992.0" y="375.1" text-anchor="middle" fill="#1A1C1D"><tspan x="992.0" dy="0">ILKHANATE</tspan></text>
     <text class="region halo" x="915.6" y="287.1" text-anchor="middle" fill="#1A1C1D"><tspan x="915.6" dy="0">GOLDEN HORDE</tspan></text>
   </g>
   <g id="places">
     <circle class="city" cx="1253.3" cy="238.9" r="10"/>
-    <text class="place halo" x="1273.3" y="234.9" text-anchor="start">Karakorum</text>
-    <text class="placenote halo" x="1273.3" y="256.9" text-anchor="start">Mongol capital</text>
+    <text class="place halo" x="1273.3" y="222.9" text-anchor="start">Karakorum</text>
+    <text class="placenote halo" x="1273.3" y="244.9" text-anchor="start">Mongol capital</text>
     <circle class="city" cx="1315.6" cy="277.8" r="10"/>
-    <text class="place halo" x="1335.6" y="297.8" text-anchor="start">Dadu / Beijing</text>
-    <text class="placenote halo" x="1335.6" y="319.8" text-anchor="start">Yuan capital</text>
+    <text class="place halo" x="1335.6" y="285.8" text-anchor="start">Dadu / Beijing</text>
+    <text class="placenote halo" x="1335.6" y="307.8" text-anchor="start">Yuan capital</text>
   </g>
 
   <g id="titleband">

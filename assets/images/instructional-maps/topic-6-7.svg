@@ -20,6 +20,7 @@
       .badge{fill:#8C5A2B;stroke:#FFFDF7;stroke-width:3}
       .halo{paint-order:stroke;stroke:#FFFDF7;stroke-width:5;stroke-linejoin:round}
       .city{fill:#1A1C1D;stroke:#FFFDF7;stroke-width:4}
+      .leader{stroke:#1A1C1D;stroke-width:2.5;stroke-linecap:round;opacity:.7}
       .flow{fill:none;stroke:#8C5A2B;stroke-width:6;stroke-linecap:round;opacity:.9}
       #land path{fill:#E4DAC4;stroke:#A99B7F;stroke-width:3}
       #graticule line{stroke:#9FB0AE;stroke-width:1.5;opacity:.35}
@@ -86,7 +87,7 @@
     <text class="region halo" x="471.1" y="448.2" text-anchor="middle" fill="#1A1C1D"><tspan x="471.1" dy="0">INDIAN DIASPORA</tspan></text>
     <text class="region halo" x="968.9" y="570.4" text-anchor="middle" fill="#1A1C1D"><tspan x="968.9" dy="0">INDIAN DIASPORA</tspan></text>
     <text class="region halo" x="1266.7" y="537.1" text-anchor="middle" fill="#1A1C1D"><tspan x="1266.7" dy="0">CHINESE DIASPORA</tspan></text>
-    <text class="region halo" x="515.6" y="728.0" text-anchor="middle" fill="#1A1C1D"><tspan x="515.6" dy="0">EUROPEAN</tspan><tspan x="515.6" dy="25">DIASPORA</tspan></text>
+    <text class="region halo" x="515.6" y="716.0" text-anchor="middle" fill="#1A1C1D"><tspan x="515.6" dy="0">EUROPEAN</tspan><tspan x="515.6" dy="25">DIASPORA</tspan></text>
     <text class="region halo" x="1395.6" y="714.9" text-anchor="middle" fill="#1A1C1D"><tspan x="1395.6" dy="0">EXCLUSION</tspan></text>
   </g>
   <g id="places">

@@ -20,6 +20,7 @@
       .badge{fill:#8C5A2B;stroke:#FFFDF7;stroke-width:3}
       .halo{paint-order:stroke;stroke:#FFFDF7;stroke-width:5;stroke-linejoin:round}
       .city{fill:#1A1C1D;stroke:#FFFDF7;stroke-width:4}
+      .leader{stroke:#1A1C1D;stroke-width:2.5;stroke-linecap:round;opacity:.7}
       .flow{fill:none;stroke:#8C5A2B;stroke-width:6;stroke-linecap:round;opacity:.9}
       #land path{fill:#E4DAC4;stroke:#A99B7F;stroke-width:3}
       #graticule line{stroke:#9FB0AE;stroke-width:1.5;opacity:.35}
@@ -77,12 +78,12 @@
     <circle class="badge" cx="623.3" cy="298.4" r="17"/>
     <text class="badgenum" x="623.3" y="305.4" text-anchor="middle">1</text>
     <path class="flow" d="M871.1,222.2 Q977.8,355.1 1146.7,377.8" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="993.3" cy="351.6" r="17"/>
-    <text class="badgenum" x="993.3" y="358.6" text-anchor="middle">2</text>
+    <circle class="badge" cx="993.3" cy="327.6" r="17"/>
+    <text class="badgenum" x="993.3" y="334.6" text-anchor="middle">2</text>
   </g>
   <g id="region-labels">
     <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">1918 INFLUENZA</tspan></text>
-    <text class="region halo" x="871.1" y="309.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">1918 INFLUENZA</tspan></text>
+    <text class="region halo" x="823.1" y="333.3" text-anchor="middle" fill="#1A1C1D"><tspan x="823.1" dy="0">1918 INFLUENZA</tspan></text>
     <text class="region halo" x="888.9" y="570.4" text-anchor="middle" fill="#1A1C1D"><tspan x="888.9" dy="0">MALARIA &amp; HIV</tspan></text>
     <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">SMALLPOX</tspan><tspan x="1146.7" dy="25">ERADICATION</tspan></text>
     <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">AGING</tspan><tspan x="1297.8" dy="25">POPULATIONS</tspan></text>

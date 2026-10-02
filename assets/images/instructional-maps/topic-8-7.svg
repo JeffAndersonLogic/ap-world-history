@@ -20,6 +20,7 @@
       .badge{fill:#8C5A2B;stroke:#FFFDF7;stroke-width:3}
       .halo{paint-order:stroke;stroke:#FFFDF7;stroke-width:5;stroke-linejoin:round}
       .city{fill:#1A1C1D;stroke:#FFFDF7;stroke-width:4}
+      .leader{stroke:#1A1C1D;stroke-width:2.5;stroke-linecap:round;opacity:.7}
       .flow{fill:none;stroke:#8C5A2B;stroke-width:6;stroke-linecap:round;opacity:.9}
       #land path{fill:#E4DAC4;stroke:#A99B7F;stroke-width:3}
       #graticule line{stroke:#9FB0AE;stroke-width:1.5;opacity:.35}
@@ -84,8 +85,8 @@
     <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">CIVIL RIGHTS</tspan></text>
     <text class="region halo" x="911.1" y="709.3" text-anchor="middle" fill="#1A1C1D"><tspan x="911.1" dy="0">ANTI-APARTHEID</tspan></text>
     <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">NONVIOLENCE</tspan></text>
-    <text class="region halo" x="480.0" y="631.8" text-anchor="middle" fill="#1A1C1D"><tspan x="480.0" dy="0">LATIN AMERICA</tspan></text>
-    <text class="region halo" x="871.1" y="309.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">PRAGUE &amp; 1968</tspan></text>
+    <text class="region halo" x="480.0" y="643.8" text-anchor="middle" fill="#1A1C1D"><tspan x="480.0" dy="0">LATIN AMERICA</tspan></text>
+    <text class="region halo" x="859.1" y="309.3" text-anchor="middle" fill="#1A1C1D"><tspan x="859.1" dy="0">PRAGUE &amp; 1968</tspan></text>
   </g>
   <g id="places">
     

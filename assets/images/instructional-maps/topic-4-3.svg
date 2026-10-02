@@ -20,6 +20,7 @@
       .badge{fill:#8C5A2B;stroke:#FFFDF7;stroke-width:3}
       .halo{paint-order:stroke;stroke:#FFFDF7;stroke-width:5;stroke-linejoin:round}
       .city{fill:#1A1C1D;stroke:#FFFDF7;stroke-width:4}
+      .leader{stroke:#1A1C1D;stroke-width:2.5;stroke-linecap:round;opacity:.7}
       .flow{fill:none;stroke:#8C5A2B;stroke-width:6;stroke-linecap:round;opacity:.9}
       #land path{fill:#E4DAC4;stroke:#A99B7F;stroke-width:3}
       #graticule line{stroke:#9FB0AE;stroke-width:1.5;opacity:.35}
@@ -80,15 +81,15 @@
     <circle class="badge" cx="629.9" cy="394.6" r="17"/>
     <text class="badgenum" x="629.9" y="401.6" text-anchor="middle">2</text>
     <path class="flow" d="M782.2,433.3 Q695.1,528.6 568.9,555.6" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="685.3" cy="535.5" r="17"/>
-    <text class="badgenum" x="685.3" y="542.5" text-anchor="middle">3</text>
+    <circle class="badge" cx="685.3" cy="511.5" r="17"/>
+    <text class="badgenum" x="685.3" y="518.5" text-anchor="middle">3</text>
     <path class="flow" d="M480.0,577.8 Q260.0,439.1 0.0,444.4 M1600.0,444.4 Q1468.9,332.4 1297.8,311.1" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="250.0" cy="475.1" r="17"/>
     <text class="badgenum" x="250.0" y="482.1" text-anchor="middle">4</text>
   </g>
   <g id="region-labels">
-    <text class="region halo" x="871.1" y="309.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">EASTERN</tspan><tspan x="871.1" dy="25">HEMISPHERE</tspan></text>
-    <text class="region halo" x="782.2" y="498.2" text-anchor="middle" fill="#1A1C1D"><tspan x="782.2" dy="0">WEST AFRICA</tspan></text>
+    <text class="region halo" x="883.1" y="309.3" text-anchor="middle" fill="#1A1C1D"><tspan x="883.1" dy="0">EASTERN</tspan><tspan x="883.1" dy="25">HEMISPHERE</tspan></text>
+    <text class="region halo" x="818.2" y="522.2" text-anchor="middle" fill="#1A1C1D"><tspan x="818.2" dy="0">WEST AFRICA</tspan></text>
     <text class="region halo" x="346.7" y="431.6" text-anchor="middle" fill="#1A1C1D"><tspan x="346.7" dy="0">MESOAMERICA</tspan></text>
     <text class="region halo" x="480.0" y="703.8" text-anchor="middle" fill="#1A1C1D"><tspan x="480.0" dy="0">ANDES</tspan></text>
     <text class="region halo" x="568.9" y="648.2" text-anchor="middle" fill="#1A1C1D"><tspan x="568.9" dy="0">AMAZONIA</tspan></text>

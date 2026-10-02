@@ -20,6 +20,7 @@
       .badge{fill:#8C5A2B;stroke:#FFFDF7;stroke-width:3}
       .halo{paint-order:stroke;stroke:#FFFDF7;stroke-width:5;stroke-linejoin:round}
       .city{fill:#1A1C1D;stroke:#FFFDF7;stroke-width:4}
+      .leader{stroke:#1A1C1D;stroke-width:2.5;stroke-linecap:round;opacity:.7}
       .flow{fill:none;stroke:#8C5A2B;stroke-width:6;stroke-linecap:round;opacity:.9}
       #land path{fill:#E4DAC4;stroke:#A99B7F;stroke-width:3}
       #graticule line{stroke:#9FB0AE;stroke-width:1.5;opacity:.35}
@@ -76,19 +77,19 @@
     
   </g>
   <g id="region-labels">
-    <text class="region halo" x="782.2" y="522.2" text-anchor="middle" fill="#1A1C1D"><tspan x="782.2" dy="0">ASANTE &amp;</tspan><tspan x="782.2" dy="25">WASSOULOU</tspan></text>
+    <text class="region halo" x="782.2" y="534.2" text-anchor="middle" fill="#1A1C1D"><tspan x="782.2" dy="0">ASANTE &amp;</tspan><tspan x="782.2" dy="25">WASSOULOU</tspan></text>
     <text class="region halo" x="911.1" y="709.3" text-anchor="middle" fill="#1A1C1D"><tspan x="911.1" dy="0">XHOSA &amp; ZULU</tspan></text>
     <text class="region halo" x="1146.7" y="531.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">INDIAN REBELLION</tspan><tspan x="1146.7" dy="25">1857</tspan></text>
-    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">BOXER RISING</tspan></text>
-    <text class="region halo" x="973.3" y="575.8" text-anchor="middle" fill="#1A1C1D"><tspan x="973.3" dy="0">ETHIOPIA</tspan></text>
+    <text class="region halo" x="1309.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1309.8" dy="0">BOXER RISING</tspan></text>
+    <text class="region halo" x="973.3" y="599.8" text-anchor="middle" fill="#1A1C1D"><tspan x="973.3" dy="0">ETHIOPIA</tspan></text>
   </g>
   <g id="places">
     <circle class="city" cx="795.6" cy="461.1" r="10"/>
-    <text class="place halo" x="815.6" y="457.1" text-anchor="start">Asante</text>
-    <text class="placenote halo" x="815.6" y="479.1" text-anchor="start">War of the Golden Stool, 1900</text>
+    <text class="place halo" x="815.6" y="469.1" text-anchor="start">Asante</text>
+    <text class="placenote halo" x="815.6" y="491.1" text-anchor="start">War of the Golden Stool, 1900</text>
     <circle class="city" cx="973.3" cy="422.2" r="10"/>
-    <text class="place halo" x="993.3" y="394.2" text-anchor="start">Adwa, 1896</text>
-    <text class="placenote halo" x="993.3" y="416.2" text-anchor="start">Ethiopian victory</text>
+    <text class="place halo" x="993.3" y="406.2" text-anchor="start">Adwa, 1896</text>
+    <text class="placenote halo" x="993.3" y="428.2" text-anchor="start">Ethiopian victory</text>
   </g>
 
   <g id="titleband">

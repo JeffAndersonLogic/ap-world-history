@@ -134,37 +134,102 @@ function flowPath(fromZone, toZone, bow, via) {
   return arc(x1, y1, x2, y2, bow);
 }
 
+// Points along a route, read back off its own path data (absolute M, Q and C,
+// which is all this file writes). The placer treats them as obstacles so a name
+// is never set where a route line will run.
+function samplePath(d) {
+  const out = [];
+  const tokens = d.match(/[MQC]|-?\d+(?:\.\d+)?/g) || [];
+  let i = 0;
+  let cur = null;
+  const num = () => Number(tokens[i++]);
+  while (i < tokens.length) {
+    const cmd = tokens[i++];
+    if (cmd === 'M') {
+      cur = [num(), num()];
+      out.push(cur);
+    } else if (cmd === 'Q') {
+      const c = [num(), num()];
+      const e = [num(), num()];
+      for (let t = 0.1; t <= 1.0001; t += 0.1) {
+        const u = 1 - t;
+        out.push([u * u * cur[0] + 2 * u * t * c[0] + t * t * e[0], u * u * cur[1] + 2 * u * t * c[1] + t * t * e[1]]);
+      }
+      cur = e;
+    } else if (cmd === 'C') {
+      const c1 = [num(), num()];
+      const c2 = [num(), num()];
+      const e = [num(), num()];
+      for (let t = 0.1; t <= 1.0001; t += 0.1) {
+        const u = 1 - t;
+        const f = [u * u * u, 3 * u * u * t, 3 * u * t * t, t * t * t];
+        out.push([f[0] * cur[0] + f[1] * c1[0] + f[2] * c2[0] + f[3] * e[0], f[0] * cur[1] + f[1] * c1[1] + f[2] * c2[1] + f[3] * e[1]]);
+      }
+      cur = e;
+    }
+  }
+  return out;
+}
+
 /**
- * Greedy label placement: keeps a list of claimed boxes and nudges each new
- * label vertically until it stops overlapping. It counts the times it ran out of
- * room and had to place a label anyway; build-instructional-maps.js fails on a
- * non-zero count, so an overcrowded spec is caught at build time rather than
- * shipped as unreadable overlapping text.
+ * Greedy label placement: keeps a list of claimed boxes and moves each new label
+ * to the nearest spot, in any direction, that overlaps neither another label nor
+ * a route line. Offset zero comes first, so a label that was already clear stays
+ * exactly where it was. It counts the times it ran out of room and had to place a
+ * label anyway; build-instructional-maps.js fails on a non-zero count, so an
+ * overcrowded spec is caught at build time rather than shipped as unreadable
+ * overlapping text.
  */
+const MAX_NUDGE = 228;
+const NUDGES = (() => {
+  const list = [[0, 0]];
+  const steps = MAX_NUDGE / 12;
+  for (let j = -steps; j <= steps; j++) {
+    for (let i = -steps; i <= steps; i++) {
+      if (i === 0 && j === 0) continue;
+      if (Math.hypot(i * 12, j * 12) <= MAX_NUDGE) list.push([i * 12, j * 12]);
+    }
+  }
+  // A route badge slides only along the vertical, 24 pixels at a time and as far
+  // as it always could (14 steps), which reaches past the label radius.
+  for (let step = 1; step <= 14; step++) list.push([0, step * 24], [0, -step * 24]);
+  // Nearest first; at equal distance prefer moving up or down, which is how
+  // labels were always nudged.
+  return list.sort((a, b) => (Math.hypot(a[0], a[1]) - Math.hypot(b[0], b[1])) || (Math.abs(b[1]) - Math.abs(a[1])));
+})();
+
 function createPlacer() {
   const claimed = [];
+  const routes = [];
   let forced = 0;
   const overlaps = (a, b) => !(a.x2 < b.x1 || b.x2 < a.x1 || a.y2 < b.y1 || b.y2 < a.y1);
   return {
     forcedCount: () => forced,
     claim(box) { claimed.push(box); },
-    place(cx, cy, width, height, anchor = 'middle') {
+    // A route claims a thin corridor around itself, for labels only.
+    claimRoute(points) {
+      for (const [x, y] of points) routes.push({ x1: x - 11, x2: x + 11, y1: y - 11, y2: y + 11 });
+    },
+    place(cx, cy, width, height, anchor = 'middle', { avoidRoutes = true, verticalOnly = false, below = 6 } = {}) {
       const half = anchor === 'middle' ? width / 2 : 0;
       const left = anchor === 'end' ? -width : -half;
-      const offsets = [0];
-      for (let step = 1; step <= 14; step++) offsets.push(step * 24, -step * 24);
-      for (const offset of offsets) {
-        const y = cy + offset;
+      for (const [dx, dy] of NUDGES) {
+        // A route badge has to stay on its route, so it only slides along the
+        // vertical, in the same 24-pixel steps it always used.
+        if (verticalOnly && (dx !== 0 || dy % 24 !== 0)) continue;
+        const x = cx + dx;
+        const y = cy + dy;
         if (y - height < 128 || y > HEIGHT - 128) continue;
-        const box = { x1: cx + left - 6, x2: cx + left + width + 6, y1: y - height - 4, y2: y + 6 };
-        if (!claimed.some((other) => overlaps(box, other))) {
-          claimed.push(box);
-          return y;
-        }
+        if (x + left < 12 || x + left + width > WIDTH - 12) continue;
+        const box = { x1: x + left - 6, x2: x + left + width + 6, y1: y - height - 4, y2: y + below };
+        if (claimed.some((other) => overlaps(box, other))) continue;
+        if (avoidRoutes && routes.some((other) => overlaps(box, other))) continue;
+        claimed.push(box);
+        return { x, y };
       }
       forced += 1;
       claimed.push({ x1: cx + left, x2: cx + left + width, y1: cy - height, y2: cy });
-      return cy;
+      return { x: cx, y: cy };
     }
   };
 }
@@ -222,15 +287,45 @@ function renderMap(spec) {
   const legendTop = HEIGHT - legendBoxHeight - 68;
   placer.claim({ x1: 46, x2: 46 + legendBoxWidth, y1: legendTop, y2: legendTop + legendBoxHeight });
 
+  // Route lines are known before any name is placed, so no name lands on one.
+  const flowGeometry = flows.map((f) => flowPath(f.from, f.to, f.bow, f.via));
+  flowGeometry.forEach((g) => placer.claimRoute(samplePath(g.d)));
+  // Badges are pinned to their routes, so they are placed first and names go
+  // around them. Placing them last left a name no room beside its own badge.
+  const badgeY = flows.map((f, index) => {
+    if (!f.label) return null;
+    const { mid } = flowGeometry[index];
+    return placer.place(mid[0], mid[1] + 17, 40, 40, 'middle', { avoidRoutes: false, verticalOnly: true }).y - 17;
+  });
+
+  // City dots are obstacles too: a name set over one reads with a hole in it.
+  points.forEach((p) => {
+    const [x, y] = project(p.at[0], p.at[1]);
+    placer.claim({ x1: x - 12, x2: x + 12, y1: y - 12, y2: y + 12 });
+  });
+
   const pointLayer = points.map((p) => {
     const [x, y] = project(p.at[0], p.at[1]);
     const anchor = p.side === 'left' ? 'end' : 'start';
     const offset = p.side === 'left' ? -20 : 20;
-    const width = Math.max(String(p.label).length, String(p.note || '').length) * 9 + 12;
-    const baseline = placer.place(x + offset, y - 4, width, p.note ? 40 : 22, anchor);
-    return `<circle class="city" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="10"/>
-    <text class="place halo" x="${(x + offset).toFixed(1)}" y="${baseline.toFixed(1)}" text-anchor="${anchor}">${esc(p.label)}</text>
-    ${p.note ? `<text class="placenote halo" x="${(x + offset).toFixed(1)}" y="${(baseline + 22).toFixed(1)}" text-anchor="${anchor}">${esc(p.note)}</text>` : ''}`;
+    const width = Math.max(String(p.label).length, String(p.note || '').length) * 11 + 12;
+    // The note hangs 22px below the name, so the box has to reach down to it.
+    const spot = placer.place(x + offset, y - 4, width, 22, anchor, { below: p.note ? 30 : 6 });
+    const baseline = spot.y;
+    // A name the placer had to move well away from its dot gets a leader line,
+    // so it is still plain which dot it belongs to.
+    let leader = '';
+    if (Math.hypot(spot.x - (x + offset), baseline - (y - 4)) > 36) {
+      const textWidth = Math.max(String(p.label).length * 9.6, String(p.note || '').length * 6.8);
+      const left = anchor === 'end' ? spot.x - textWidth : spot.x;
+      const nearX = Math.max(left, Math.min(x, left + textWidth));
+      const nearY = Math.max(baseline - 16, Math.min(y, baseline + (p.note ? 26 : 4)));
+      leader = `<line class="leader" x1="${x.toFixed(1)}" y1="${y.toFixed(1)}" x2="${nearX.toFixed(1)}" y2="${nearY.toFixed(1)}"/>
+    `;
+    }
+    return `${leader}<circle class="city" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="10"/>
+    <text class="place halo" x="${spot.x.toFixed(1)}" y="${baseline.toFixed(1)}" text-anchor="${anchor}">${esc(p.label)}</text>
+    ${p.note ? `<text class="placenote halo" x="${spot.x.toFixed(1)}" y="${(baseline + 22).toFixed(1)}" text-anchor="${anchor}">${esc(p.note)}</text>` : ''}`;
   }).join('\n    ');
 
   const highlightShapes = [];
@@ -242,7 +337,9 @@ function renderMap(spec) {
     highlightShapes.push(ellipse(h.zone, h.tone, h.opacity == null ? 0.5 : h.opacity));
     if (!h.label) return '';
     const labelLines = wrap(h.label, 16);
-    const width = Math.max(...labelLines.map((line) => line.length)) * 13 + 12;
+    // Georgia bold capitals measure 11 to 17px a character at this size; 16 is
+    // the safe estimate (13 let a long name run under a neighbour).
+    const width = Math.max(...labelLines.map((line) => line.length)) * 16 + 12;
     let labelX = cx;
     let labelY = Math.min(edge + 26, HEIGHT - 150);
     let anchor = 'middle';
@@ -260,21 +357,22 @@ function renderMap(spec) {
       labelY = cy + 7;
       anchor = 'end';
     }
-    const baseline = placer.place(labelX, labelY, width, labelLines.length * 25, anchor);
+    // Extra lines of a wrapped name hang below the first baseline.
+    const spot = placer.place(labelX, labelY, width, 22, anchor, { below: 6 + (labelLines.length - 1) * 25 });
+    const baseline = spot.y;
     const label = labelLines
-      .map((line, index) => `<tspan x="${labelX.toFixed(1)}" dy="${index === 0 ? 0 : 25}">${esc(line)}</tspan>`)
+      .map((line, index) => `<tspan x="${spot.x.toFixed(1)}" dy="${index === 0 ? 0 : 25}">${esc(line)}</tspan>`)
       .join('');
-    return `<text class="region halo" x="${labelX.toFixed(1)}" y="${baseline.toFixed(1)}" text-anchor="${anchor}" fill="${palette.text}">${label}</text>`;
+    return `<text class="region halo" x="${spot.x.toFixed(1)}" y="${baseline.toFixed(1)}" text-anchor="${anchor}" fill="${palette.text}">${label}</text>`;
   }).filter(Boolean).join('\n    ');
   const highlightLayer = highlightShapes.join('\n    ');
 
   const flowLayer = flows.map((f, index) => {
-    const { d, mid } = flowPath(f.from, f.to, f.bow, f.via);
+    const { d, mid } = flowGeometry[index];
     const dash = f.style === 'solid' ? '' : ' stroke-dasharray="18 13"';
     let badge = '';
     if (f.label) {
-      const baseline = placer.place(mid[0], mid[1] + 17, 40, 40);
-      const cy = baseline - 17;
+      const cy = badgeY[index];
       badge = `<circle class="badge" cx="${mid[0].toFixed(1)}" cy="${cy.toFixed(1)}" r="17"/>
     <text class="badgenum" x="${mid[0].toFixed(1)}" y="${(cy + 7).toFixed(1)}" text-anchor="middle">${index + 1}</text>`;
     }
@@ -325,6 +423,7 @@ function renderMap(spec) {
       .badge{fill:${BRONZE};stroke:${PAPER};stroke-width:3}
       .halo{paint-order:stroke;stroke:${PAPER};stroke-width:5;stroke-linejoin:round}
       .city{fill:${INK};stroke:${PAPER};stroke-width:4}
+      .leader{stroke:${INK};stroke-width:2.5;stroke-linecap:round;opacity:.7}
       .flow{fill:none;stroke:${BRONZE};stroke-width:6;stroke-linecap:round;opacity:.9}
       #land path{fill:${LAND_FILL};stroke:${LAND_STROKE};stroke-width:3}
       #graticule line{stroke:#9FB0AE;stroke-width:1.5;opacity:.35}

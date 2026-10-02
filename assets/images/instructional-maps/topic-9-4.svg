@@ -20,6 +20,7 @@
       .badge{fill:#8C5A2B;stroke:#FFFDF7;stroke-width:3}
       .halo{paint-order:stroke;stroke:#FFFDF7;stroke-width:5;stroke-linejoin:round}
       .city{fill:#1A1C1D;stroke:#FFFDF7;stroke-width:4}
+      .leader{stroke:#1A1C1D;stroke-width:2.5;stroke-linecap:round;opacity:.7}
       .flow{fill:none;stroke:#8C5A2B;stroke-width:6;stroke-linecap:round;opacity:.9}
       #land path{fill:#E4DAC4;stroke:#A99B7F;stroke-width:3}
       #graticule line{stroke:#9FB0AE;stroke-width:1.5;opacity:.35}
@@ -78,8 +79,8 @@
     <circle class="badge" cx="183.1" cy="314.0" r="17"/>
     <text class="badgenum" x="183.1" y="321.0" text-anchor="middle">1</text>
     <path class="flow" d="M364.4,283.3 Q184.0,337.7 0.0,297.2 M1600.0,297.2 Q1450.7,343.5 1297.8,311.1" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="183.1" cy="386.0" r="17"/>
-    <text class="badgenum" x="183.1" y="393.0" text-anchor="middle">2</text>
+    <circle class="badge" cx="183.1" cy="242.0" r="17"/>
+    <text class="badgenum" x="183.1" y="249.0" text-anchor="middle">2</text>
   </g>
   <g id="region-labels">
     <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">NAFTA</tspan></text>

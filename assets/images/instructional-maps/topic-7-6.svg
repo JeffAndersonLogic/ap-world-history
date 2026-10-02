@@ -20,6 +20,7 @@
       .badge{fill:#8C5A2B;stroke:#FFFDF7;stroke-width:3}
       .halo{paint-order:stroke;stroke:#FFFDF7;stroke-width:5;stroke-linejoin:round}
       .city{fill:#1A1C1D;stroke:#FFFDF7;stroke-width:4}
+      .leader{stroke:#1A1C1D;stroke-width:2.5;stroke-linecap:round;opacity:.7}
       .flow{fill:none;stroke:#8C5A2B;stroke-width:6;stroke-linecap:round;opacity:.9}
       #land path{fill:#E4DAC4;stroke:#A99B7F;stroke-width:3}
       #graticule line{stroke:#9FB0AE;stroke-width:1.5;opacity:.35}
@@ -78,14 +79,14 @@
     <circle class="badge" cx="1355.8" cy="289.2" r="17"/>
     <text class="badgenum" x="1355.8" y="296.2" text-anchor="middle">1</text>
     <path class="flow" d="M875.6,300.0 Q894.4,394.6 973.3,450.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="909.4" cy="408.8" r="17"/>
-    <text class="badgenum" x="909.4" y="415.8" text-anchor="middle">2</text>
+    <circle class="badge" cx="909.4" cy="384.8" r="17"/>
+    <text class="badgenum" x="909.4" y="391.8" text-anchor="middle">2</text>
   </g>
   <g id="region-labels">
     <text class="region halo" x="1417.8" y="348.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1417.8" dy="0">JAPAN</tspan></text>
     <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">CHINA INVADED</tspan></text>
-    <text class="region halo" x="871.1" y="309.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">GERMANY</tspan></text>
-    <text class="region halo" x="875.6" y="359.3" text-anchor="middle" fill="#1A1C1D"><tspan x="875.6" dy="0">ITALY</tspan></text>
+    <text class="region halo" x="871.1" y="273.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">GERMANY</tspan></text>
+    <text class="region halo" x="827.6" y="383.3" text-anchor="middle" fill="#1A1C1D"><tspan x="827.6" dy="0">ITALY</tspan></text>
     <text class="region halo" x="973.3" y="503.8" text-anchor="middle" fill="#1A1C1D"><tspan x="973.3" dy="0">ETHIOPIA 1935</tspan></text>
     <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">NEUTRALITY</tspan></text>
   </g>

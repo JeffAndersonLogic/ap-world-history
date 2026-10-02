@@ -20,6 +20,7 @@
       .badge{fill:#8C5A2B;stroke:#FFFDF7;stroke-width:3}
       .halo{paint-order:stroke;stroke:#FFFDF7;stroke-width:5;stroke-linejoin:round}
       .city{fill:#1A1C1D;stroke:#FFFDF7;stroke-width:4}
+      .leader{stroke:#1A1C1D;stroke-width:2.5;stroke-linecap:round;opacity:.7}
       .flow{fill:none;stroke:#8C5A2B;stroke-width:6;stroke-linecap:round;opacity:.9}
       #land path{fill:#E4DAC4;stroke:#A99B7F;stroke-width:3}
       #graticule line{stroke:#9FB0AE;stroke-width:1.5;opacity:.35}
@@ -84,16 +85,17 @@
     <text class="badgenum" x="612.4" y="365.2" text-anchor="middle">3</text>
   </g>
   <g id="region-labels">
-    <text class="region halo" x="791.1" y="259.3" text-anchor="middle" fill="#1A1C1D"><tspan x="791.1" dy="0">FACTORY CORE</tspan></text>
-    <text class="region halo" x="817.8" y="303.8" text-anchor="middle" fill="#1A1C1D"><tspan x="817.8" dy="0">WESTERN EUROPE</tspan></text>
+    <text class="region halo" x="791.1" y="175.3" text-anchor="middle" fill="#1A1C1D"><tspan x="791.1" dy="0">FACTORY CORE</tspan></text>
+    <text class="region halo" x="709.8" y="447.8" text-anchor="middle" fill="#1A1C1D"><tspan x="709.8" dy="0">WESTERN EUROPE</tspan></text>
     <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">RAW MATERIALS</tspan></text>
     <text class="region halo" x="888.9" y="570.4" text-anchor="middle" fill="#1A1C1D"><tspan x="888.9" dy="0">RAW MATERIALS</tspan></text>
     <text class="region halo" x="533.3" y="731.6" text-anchor="middle" fill="#1A1C1D"><tspan x="533.3" dy="0">RAW MATERIALS</tspan></text>
   </g>
   <g id="places">
+    <line class="leader" x1="942.2" y1="333.3" x2="942.2" y2="373.3"/>
     <circle class="city" cx="942.2" cy="333.3" r="10"/>
-    <text class="place halo" x="962.2" y="329.3" text-anchor="start">Suez Canal, 1869</text>
-    <text class="placenote halo" x="962.2" y="351.3" text-anchor="start">steamship shortcut</text>
+    <text class="place halo" x="914.2" y="389.3" text-anchor="start">Suez Canal, 1869</text>
+    <text class="placenote halo" x="914.2" y="411.3" text-anchor="start">steamship shortcut</text>
   </g>
 
   <g id="titleband">
