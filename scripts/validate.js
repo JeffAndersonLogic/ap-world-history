@@ -163,6 +163,15 @@ function checkDataFile(filePath) {
   if (!src.includes('feedbackToolUrl')) warn(filePath, 'meta missing feedbackToolUrl');
   if (!src.includes('canvasSubmissionNote')) warn(filePath, 'meta missing canvasSubmissionNote');
 
+  // The First & 10 card's note told students to "build your AI Coach prompt"
+  // on 73 topics for a month after the reading lost its coach builder on
+  // 2026-08-31, with every check green, because nothing read the note. Found
+  // during the Topic 3.1 build. A note may not send a student looking for a
+  // button that does not exist.
+  for (const hit of src.matchAll(/note\s*:\s*['"`]([^'"`]*coach prompt[^'"`]*)/gi)) {
+    err(filePath, `a note tells students to build a coach prompt, which the First & 10 no longer has: "${hit[1].slice(0, 80)}"`);
+  }
+
   if (/youtubeId\s*:\s*['"]YT_/.test(src)) {
     warn(filePath, 'placeholder YouTube ID(s), replace with real Heimler\'s History video IDs');
   }
@@ -215,6 +224,15 @@ function checkRendererConfig(rcPath, unitDir) {
     if (!combined.includes(key)) {
       err(rcPath, `'${key}' missing from both data file and renderer-config`);
     }
+  }
+
+  // The First & 10 card's note told students to "build your AI Coach prompt"
+  // on 73 topics for a month after the reading lost its coach builder on
+  // 2026-08-31, with every check green, because nothing read the note. Found
+  // during the Topic 3.1 build. A note may not send a student looking for a
+  // button that does not exist.
+  for (const hit of rcSrc.matchAll(/note\s*:\s*['"`]([^'"`]*coach prompt[^'"`]*)/gi)) {
+    err(rcPath, `a note tells students to build a coach prompt, which the First & 10 no longer has: "${hit[1].slice(0, 80)}"`);
   }
 
   // Parentheses in stableImages URLs
@@ -549,6 +567,22 @@ section('First & 10 storage key, write and read sides agree');
     }
   }
   sectionDone(`3 endpoints agree on ${FIRST10_STORAGE_PREFIX}<TOPIC_KEY>`);
+}
+
+// 7b2. The First & 10 card's default instruction names no coach.
+//
+// A topic with no note of its own falls back to the renderer's default text,
+// which the data-file check above cannot see. Both renderers, so a Foundations
+// default that ever grows one is caught too.
+section('First & 10 card instructions name no coach prompt');
+{
+  for (const file of [path.join(ROOT, 'assets', 'js', 'behistorical-topic-renderer-v1.js'), path.join(ROOT, 'foundations', 'foundations-topic-renderer.js')]) {
+    totalChecks++;
+    for (const hit of read(file).matchAll(/first10\.note\s*\|\|\s*['"`]([^'"`]*)/g)) {
+      if (/coach prompt/i.test(hit[1])) err(file, `the default First & 10 instruction tells students to build a coach prompt: "${hit[1].slice(0, 80)}"`);
+    }
+  }
+  sectionDone('both renderers checked');
 }
 
 // 7c. Deep readings are reachable from the lesson that owns them.

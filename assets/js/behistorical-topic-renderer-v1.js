@@ -1501,7 +1501,7 @@ function renderFirst10() {
     return `
       <div class="first10-note">
         <strong>${L.first10.title}</strong><br>
-        ${L.first10.note || 'Use the embedded reading window below, then answer the questions and build your AI Coach prompt.'}
+        ${L.first10.note || 'Use the embedded reading window below, then answer the three questions and rate your confidence.'}
       </div>
       <div class="first10-frame-wrap">
         <iframe class="first10-frame" src="${L.first10.embedUrl}" title="${L.first10.title}"></iframe>

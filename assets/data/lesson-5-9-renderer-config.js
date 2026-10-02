@@ -28,7 +28,7 @@
     ...lesson.first10,
     title: 'First & 10: A New Kind of Society',
     embedUrl: 'first-and-10-topic-5-9-society-and-the-industrial-age-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 5.9 lesson path.'
+    note: 'Read the First & 10 narrative, answer the three questions and rate your confidence, then return to the 5.9 lesson path.'
   };
 
   lesson.map = {

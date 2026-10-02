@@ -602,7 +602,7 @@ function buildLesson(topic) {
     ...(DEEP_READINGS[topic.id] ? { deepReading: DEEP_READINGS[topic.id] } : {}),
     first10: {
       title: `First & 10: ${topic.title}`, embedUrl: `first-and-10-topic-${topic.id.replace('.', '-')}-${topic.slug}-capture.html`,
-      note: `Read the narrative, answer three AP-thinking questions, build your coach prompt, and return to Topic ${topic.id}.`
+      note: `Read the narrative, answer the three questions and rate your confidence, then return to Topic ${topic.id}.`
     },
     lecture: {
       title: `${topic.title}: Global Patterns and Historical Mechanisms`,

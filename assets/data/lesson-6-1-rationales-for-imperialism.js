@@ -118,7 +118,7 @@ window.BEHISTORICAL_LESSON = {
   first10: {
     title: "First & 10: The Language of Conquest",
     embedUrl: "first-and-10-topic-6-1-rationales-for-imperialism-capture.html?v=response-id-fix-v1",
-    note: "Read the First & 10 narrative on the four ideologies of empire, answer the three questions, build your AI Coach prompt, then return to the 6.1 lesson path."
+    note: "Read the First & 10 narrative on the four ideologies of empire, answer the three questions and rate your confidence, then return to the 6.1 lesson path."
   },
 
   lecture: {

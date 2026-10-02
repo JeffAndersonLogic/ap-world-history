@@ -31,7 +31,7 @@
     ...lesson.first10,
     title: 'First & 10: The Powder Keg',
     embedUrl: 'first-and-10-topic-7-2-causes-wwi-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 7.2 lesson path.'
+    note: 'Read the First & 10 narrative, answer the three questions and rate your confidence, then return to the 7.2 lesson path.'
   };
 
   lesson.map = {

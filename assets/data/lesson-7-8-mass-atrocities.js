@@ -198,7 +198,7 @@ window.BEHISTORICAL_LESSON = {
 
   first10: {
     title: "First & 10: Mass Atrocities After 1900",
-    note: "Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 7.8 lesson path."
+    note: "Read the First & 10 narrative, answer the three questions and rate your confidence, then return to the 7.8 lesson path."
   },
 
   images: [],
