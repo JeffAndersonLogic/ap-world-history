@@ -67,15 +67,10 @@
 
   <g id="highlights">
     <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">CIVIL RIGHTS</tspan></text>
     <ellipse cx="911.1" cy="638.9" rx="53.3" ry="44.4" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="911.1" y="709.3" text-anchor="middle" fill="#1A1C1D"><tspan x="911.1" dy="0">ANTI-APARTHEID</tspan></text>
     <ellipse cx="1146.7" cy="377.8" rx="53.3" ry="55.6" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">NONVIOLENCE</tspan></text>
     <ellipse cx="480.0" cy="577.8" rx="26.7" ry="100.0" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <text class="region halo" x="480.0" y="631.8" text-anchor="middle" fill="#1A1C1D"><tspan x="480.0" dy="0">LATIN AMERICA</tspan></text>
     <ellipse cx="871.1" cy="222.2" rx="115.6" ry="61.1" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
-    <text class="region halo" x="871.1" y="309.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">PRAGUE &amp; 1968</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M1146.7,377.8 Q778.2,142.8 364.4,283.3" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
@@ -84,6 +79,13 @@
     <path class="flow" d="M364.4,283.3 Q708.9,351.8 911.1,638.9" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="673.3" cy="406.4" r="17"/>
     <text class="badgenum" x="673.3" y="413.4" text-anchor="middle">2</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">CIVIL RIGHTS</tspan></text>
+    <text class="region halo" x="911.1" y="709.3" text-anchor="middle" fill="#1A1C1D"><tspan x="911.1" dy="0">ANTI-APARTHEID</tspan></text>
+    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">NONVIOLENCE</tspan></text>
+    <text class="region halo" x="480.0" y="631.8" text-anchor="middle" fill="#1A1C1D"><tspan x="480.0" dy="0">LATIN AMERICA</tspan></text>
+    <text class="region halo" x="871.1" y="309.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">PRAGUE &amp; 1968</tspan></text>
   </g>
   <g id="places">
     

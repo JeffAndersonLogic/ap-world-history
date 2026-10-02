@@ -67,17 +67,11 @@
 
   <g id="highlights">
     <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">UN HEADQUARTERS</tspan></text>
     <ellipse cx="817.8" cy="233.3" rx="62.2" ry="44.4" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
-    <text class="region halo" x="817.8" y="303.8" text-anchor="middle" fill="#1A1C1D"><tspan x="817.8" dy="0">EU &amp; NATO</tspan></text>
     <ellipse cx="888.9" cy="500.0" rx="57.8" ry="44.4" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="888.9" y="570.4" text-anchor="middle" fill="#1A1C1D"><tspan x="888.9" dy="0">PEACEKEEPING</tspan></text>
     <ellipse cx="1000.0" cy="327.8" rx="75.6" ry="50.0" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="1000.0" y="403.8" text-anchor="middle" fill="#1A1C1D"><tspan x="1000.0" dy="0">PEACEKEEPING</tspan></text>
     <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">SECURITY COUNCIL</tspan></text>
     <ellipse cx="533.3" cy="583.3" rx="80.0" ry="122.2" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="533.3" y="731.6" text-anchor="middle" fill="#1A1C1D"><tspan x="533.3" dy="0">REGIONAL BLOCS</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M364.4,283.3 Q587.7,486.1 888.9,500.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
@@ -86,6 +80,14 @@
     <path class="flow" d="M817.8,233.3 Q890.0,317.0 1000.0,327.8" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="899.4" cy="346.8" r="17"/>
     <text class="badgenum" x="899.4" y="353.8" text-anchor="middle">2</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">UN HEADQUARTERS</tspan></text>
+    <text class="region halo" x="817.8" y="303.8" text-anchor="middle" fill="#1A1C1D"><tspan x="817.8" dy="0">EU &amp; NATO</tspan></text>
+    <text class="region halo" x="888.9" y="570.4" text-anchor="middle" fill="#1A1C1D"><tspan x="888.9" dy="0">PEACEKEEPING</tspan></text>
+    <text class="region halo" x="1000.0" y="403.8" text-anchor="middle" fill="#1A1C1D"><tspan x="1000.0" dy="0">PEACEKEEPING</tspan></text>
+    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">SECURITY COUNCIL</tspan></text>
+    <text class="region halo" x="533.3" y="731.6" text-anchor="middle" fill="#1A1C1D"><tspan x="533.3" dy="0">REGIONAL BLOCS</tspan></text>
   </g>
   <g id="places">
     <circle class="city" cx="471.1" cy="273.9" r="10"/>

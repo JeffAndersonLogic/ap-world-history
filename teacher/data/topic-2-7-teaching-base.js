@@ -370,10 +370,12 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'close', kind: 'hero', eyebrow: 'Topic 2.7 · Landing Sentence',
+      phase: 'close', kind: 'frame-question', eyebrow: 'Topic 2.7 · Landing Sentence',
       title: 'Geography picked the tools. Demand did the rest.',
       subtitle: 'From c. 1200 to c. 1450, the Silk Roads, Indian Ocean and trans-Saharan networks solved the same problem with different tools, and all three grew trading cities, production and diffusion.',
-      visual: { type: 'map' },
+      // The map sits beside the sentence, never under it: as a hero background
+      // the copy panel covered the Indian Ocean label and the whole map key.
+      template: { visual: { type: 'map' } },
       notes: {
         minutes: 2,
         land: [

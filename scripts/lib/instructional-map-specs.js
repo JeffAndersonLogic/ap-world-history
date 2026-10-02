@@ -219,16 +219,23 @@ module.exports = [
     code: 'Topic 2.7',
     title: 'All Three Afro-Eurasian Trade Networks, c. 1200-1450',
     subtitle: 'Topic 2.7 · Comparing the Silk Roads, Indian Ocean, and Sahara',
+    // Explicit coordinates rather than named zones: the named ones put the Silk
+    // Roads over Mongolia and the Indian Ocean far south of where the monsoon
+    // trade ran, and their centers are inland, so every route between them
+    // crossed land. Each route here follows its network: overland through the
+    // Tarim and Samarkand, by sea round the Malay peninsula and the tip of
+    // India, and north across the desert from the Niger bend. Every name sits
+    // clear of every route line.
     highlights: [
-      { zone: 'steppe', label: 'SILK ROADS', tone: 'gold', legend: 'Silk Roads: overland, caravan, luxury goods' },
-      { zone: 'indianOcean', label: 'INDIAN OCEAN', tone: 'slate', legend: 'Indian Ocean: monsoon sailing, bulk goods' },
-      { zone: 'northAfrica', label: 'TRANS-SAHARAN', tone: 'sand', legend: 'Trans-Saharan: camel caravans, gold and salt' }
+      { zone: [86, 39, 24, 6], label: 'SILK ROADS', labelSide: 'above', tone: 'gold', legend: 'Silk Roads: overland, caravan, luxury goods' },
+      { zone: [70, -1, 22, 10], label: 'INDIAN OCEAN', tone: 'slate', legend: 'Indian Ocean: monsoon sailing, bulk goods' },
+      { zone: [-1, 22, 10, 9.5], label: 'TRANS-SAHARAN', labelSide: 'right', tone: 'sand', legend: 'Trans-Saharan: camel caravans, gold and salt' }
     ],
     flows: [
-      { from: 'eastAsia', to: 'swAsia', label: 'Silk Roads overland' },
-      { from: 'eastAsia', to: 'southAsia', label: 'Indian Ocean monsoon routes', bow: 0.3 },
-      { from: 'southAsia', to: 'swahiliCoast', label: 'to the Swahili coast', bow: 0.24 },
-      { from: 'westAfrica', to: 'northAfrica', label: 'across the Sahara', bow: -0.2 }
+      { from: [108, 34], via: [[88, 41], [66, 40]], to: [39, 35], label: 'Silk Roads overland, China to the Mediterranean' },
+      { from: [116, 20], via: [[108, 9], [103.2, 3.1], [96, 5.6], [80, 4.6]], to: [74.5, 12], label: 'Indian Ocean monsoon route, China to India' },
+      { from: [72, 16], via: [[58, 5]], to: [43, -6], label: 'Indian Ocean monsoon route to the Swahili coast' },
+      { from: [-3, 14], via: [[-3, 22]], to: [0, 30.5], label: 'Across the Sahara, the Niger bend to North Africa' }
     ]
   },
 

@@ -67,20 +67,22 @@
 
   <g id="highlights">
     <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">PUEBLO REVOLT</tspan><tspan x="364.4" dy="25">1680</tspan></text>
     <ellipse cx="568.9" cy="555.6" rx="62.2" ry="66.7" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="568.9" y="648.2" text-anchor="middle" fill="#1A1C1D"><tspan x="568.9" dy="0">MAROON</tspan><tspan x="568.9" dy="25">COMMUNITIES</tspan></text>
     <ellipse cx="471.1" cy="400.0" rx="48.9" ry="22.2" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="471.1" y="448.2" text-anchor="middle" fill="#1A1C1D"><tspan x="471.1" dy="0">PRIVATEERS</tspan></text>
     <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">MING COLLAPSE</tspan><tspan x="1297.8" dy="25">1644</tspan></text>
     <ellipse cx="946.7" cy="283.3" rx="48.9" ry="27.8" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="946.7" y="337.1" text-anchor="middle" fill="#1A1C1D"><tspan x="946.7" dy="0">OTTOMAN REVOLTS</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M817.8,233.3 Q614.4,254.3 471.1,400.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="629.4" cy="285.5" r="17"/>
     <text class="badgenum" x="629.4" y="292.5" text-anchor="middle">1</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">PUEBLO REVOLT</tspan><tspan x="364.4" dy="25">1680</tspan></text>
+    <text class="region halo" x="568.9" y="648.2" text-anchor="middle" fill="#1A1C1D"><tspan x="568.9" dy="0">MAROON</tspan><tspan x="568.9" dy="25">COMMUNITIES</tspan></text>
+    <text class="region halo" x="471.1" y="448.2" text-anchor="middle" fill="#1A1C1D"><tspan x="471.1" dy="0">PRIVATEERS</tspan></text>
+    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">MING COLLAPSE</tspan><tspan x="1297.8" dy="25">1644</tspan></text>
+    <text class="region halo" x="946.7" y="337.1" text-anchor="middle" fill="#1A1C1D"><tspan x="946.7" dy="0">OTTOMAN REVOLTS</tspan></text>
   </g>
   <g id="places">
     

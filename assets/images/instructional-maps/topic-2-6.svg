@@ -67,13 +67,9 @@
 
   <g id="highlights">
     <ellipse cx="1097.8" cy="255.6" rx="66.7" ry="44.4" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="1097.8" y="326.0" text-anchor="middle" fill="#1A1C1D"><tspan x="1097.8" dy="0">ORIGIN ZONE</tspan></text>
     <ellipse cx="1000.0" cy="327.8" rx="75.6" ry="50.0" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="1000.0" y="403.8" text-anchor="middle" fill="#1A1C1D"><tspan x="1000.0" dy="0">SOUTHWEST ASIA</tspan></text>
     <ellipse cx="875.6" cy="300.0" rx="106.7" ry="33.3" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="875.6" y="359.3" text-anchor="middle" fill="#1A1C1D"><tspan x="875.6" dy="0">MEDITERRANEAN</tspan></text>
     <ellipse cx="871.1" cy="222.2" rx="115.6" ry="61.1" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <text class="region halo" x="871.1" y="309.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">EUROPE</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M1097.8,255.6 Q1035.9,274.1 1000.0,327.8" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
@@ -88,6 +84,12 @@
     <path class="flow" d="M875.6,300.0 Q853.9,321.0 862.2,350.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="861.4" cy="395.0" r="17"/>
     <text class="badgenum" x="861.4" y="402.0" text-anchor="middle">4</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="1097.8" y="326.0" text-anchor="middle" fill="#1A1C1D"><tspan x="1097.8" dy="0">ORIGIN ZONE</tspan></text>
+    <text class="region halo" x="1000.0" y="403.8" text-anchor="middle" fill="#1A1C1D"><tspan x="1000.0" dy="0">SOUTHWEST ASIA</tspan></text>
+    <text class="region halo" x="875.6" y="359.3" text-anchor="middle" fill="#1A1C1D"><tspan x="875.6" dy="0">MEDITERRANEAN</tspan></text>
+    <text class="region halo" x="871.1" y="309.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">EUROPE</tspan></text>
   </g>
   <g id="places">
     <circle class="city" cx="951.1" cy="250.0" r="10"/>

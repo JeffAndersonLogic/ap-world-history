@@ -67,13 +67,9 @@
 
   <g id="highlights">
     <ellipse cx="782.2" cy="433.3" rx="66.7" ry="38.9" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="782.2" y="474.2" text-anchor="middle" fill="#1A1C1D"><tspan x="782.2" dy="0">MALI &amp; HAUSA</tspan><tspan x="782.2" dy="25">STATES</tspan></text>
     <ellipse cx="973.3" cy="450.0" rx="22.2" ry="27.8" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="973.3" y="479.8" text-anchor="middle" fill="#1A1C1D"><tspan x="973.3" dy="0">ETHIOPIA</tspan></text>
     <ellipse cx="977.8" cy="544.4" rx="17.8" ry="55.6" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="1013.6" y="551.4" text-anchor="start" fill="#1A1C1D"><tspan x="1013.6" dy="0">SWAHILI COAST</tspan></text>
     <ellipse cx="911.1" cy="638.9" rx="53.3" ry="44.4" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="911.1" y="709.3" text-anchor="middle" fill="#1A1C1D"><tspan x="911.1" dy="0">GREAT ZIMBABWE</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M782.2,433.3 Q837.2,406.1 862.2,350.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
@@ -85,6 +81,12 @@
     <path class="flow" d="M977.8,544.4 Q1092.2,491.5 1146.7,377.8" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="1077.2" cy="476.3" r="17"/>
     <text class="badgenum" x="1077.2" y="483.3" text-anchor="middle">3</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="782.2" y="474.2" text-anchor="middle" fill="#1A1C1D"><tspan x="782.2" dy="0">MALI &amp; HAUSA</tspan><tspan x="782.2" dy="25">STATES</tspan></text>
+    <text class="region halo" x="973.3" y="479.8" text-anchor="middle" fill="#1A1C1D"><tspan x="973.3" dy="0">ETHIOPIA</tspan></text>
+    <text class="region halo" x="1013.6" y="551.4" text-anchor="start" fill="#1A1C1D"><tspan x="1013.6" dy="0">SWAHILI COAST</tspan></text>
+    <text class="region halo" x="911.1" y="709.3" text-anchor="middle" fill="#1A1C1D"><tspan x="911.1" dy="0">GREAT ZIMBABWE</tspan></text>
   </g>
   <g id="places">
     <circle class="city" cx="786.7" cy="405.6" r="10"/>

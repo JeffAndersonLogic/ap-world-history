@@ -67,15 +67,10 @@
 
   <g id="highlights">
     <ellipse cx="480.0" cy="577.8" rx="26.7" ry="100.0" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="480.0" y="703.8" text-anchor="middle" fill="#1A1C1D"><tspan x="480.0" dy="0">POTOSÍ</tspan></text>
     <ellipse cx="346.7" cy="372.2" rx="44.4" ry="33.3" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="346.7" y="431.6" text-anchor="middle" fill="#1A1C1D"><tspan x="346.7" dy="0">NEW SPAIN</tspan></text>
     <ellipse cx="1342.2" cy="433.3" rx="22.2" ry="33.3" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="1342.2" y="492.7" text-anchor="middle" fill="#1A1C1D"><tspan x="1342.2" dy="0">MANILA</tspan></text>
     <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">MING &amp; QING</tspan><tspan x="1297.8" dy="25">CHINA</tspan></text>
     <ellipse cx="817.8" cy="233.3" rx="62.2" ry="44.4" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
-    <text class="region halo" x="817.8" y="303.8" text-anchor="middle" fill="#1A1C1D"><tspan x="817.8" dy="0">SEVILLE</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M480.0,577.8 Q710.9,466.4 817.8,233.3" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
@@ -87,6 +82,13 @@
     <path class="flow" d="M1342.2,433.3 Q1339.6,365.1 1297.8,311.1" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="1329.8" cy="320.7" r="17"/>
     <text class="badgenum" x="1329.8" y="327.7" text-anchor="middle">3</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="480.0" y="703.8" text-anchor="middle" fill="#1A1C1D"><tspan x="480.0" dy="0">POTOSÍ</tspan></text>
+    <text class="region halo" x="346.7" y="431.6" text-anchor="middle" fill="#1A1C1D"><tspan x="346.7" dy="0">NEW SPAIN</tspan></text>
+    <text class="region halo" x="1342.2" y="492.7" text-anchor="middle" fill="#1A1C1D"><tspan x="1342.2" dy="0">MANILA</tspan></text>
+    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">MING &amp; QING</tspan><tspan x="1297.8" dy="25">CHINA</tspan></text>
+    <text class="region halo" x="817.8" y="303.8" text-anchor="middle" fill="#1A1C1D"><tspan x="817.8" dy="0">SEVILLE</tspan></text>
   </g>
   <g id="places">
     <circle class="city" cx="508.0" cy="608.9" r="10"/>

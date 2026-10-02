@@ -67,15 +67,10 @@
 
   <g id="highlights">
     <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">QING CHINA</tspan></text>
     <ellipse cx="515.6" cy="694.4" rx="35.6" ry="55.6" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="515.6" y="728.0" text-anchor="middle" fill="#1A1C1D"><tspan x="515.6" dy="0">ARGENTINA</tspan></text>
     <ellipse cx="568.9" cy="555.6" rx="62.2" ry="66.7" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="568.9" y="648.2" text-anchor="middle" fill="#1A1C1D"><tspan x="568.9" dy="0">BRAZIL</tspan></text>
     <ellipse cx="933.3" cy="355.6" rx="26.7" ry="27.8" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="933.3" y="409.3" text-anchor="middle" fill="#1A1C1D"><tspan x="933.3" dy="0">EGYPT</tspan></text>
     <ellipse cx="946.7" cy="283.3" rx="48.9" ry="27.8" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
-    <text class="region halo" x="946.7" y="337.1" text-anchor="middle" fill="#1A1C1D"><tspan x="946.7" dy="0">OTTOMAN EMPIRE</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M791.1,200.0 Q1022.2,356.9 1297.8,311.1" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
@@ -87,6 +82,13 @@
     <path class="flow" d="M933.3,355.6 Q828.0,309.1 791.1,200.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="845.1" cy="269.4" r="17"/>
     <text class="badgenum" x="845.1" y="276.4" text-anchor="middle">3</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">QING CHINA</tspan></text>
+    <text class="region halo" x="515.6" y="728.0" text-anchor="middle" fill="#1A1C1D"><tspan x="515.6" dy="0">ARGENTINA</tspan></text>
+    <text class="region halo" x="568.9" y="648.2" text-anchor="middle" fill="#1A1C1D"><tspan x="568.9" dy="0">BRAZIL</tspan></text>
+    <text class="region halo" x="933.3" y="409.3" text-anchor="middle" fill="#1A1C1D"><tspan x="933.3" dy="0">EGYPT</tspan></text>
+    <text class="region halo" x="946.7" y="337.1" text-anchor="middle" fill="#1A1C1D"><tspan x="946.7" dy="0">OTTOMAN EMPIRE</tspan></text>
   </g>
   <g id="places">
     

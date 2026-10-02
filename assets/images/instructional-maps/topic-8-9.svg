@@ -67,17 +67,11 @@
 
   <g id="highlights">
     <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">UNITED STATES</tspan></text>
     <ellipse cx="1075.6" cy="166.7" rx="142.2" ry="55.6" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <text class="region halo" x="1075.6" y="248.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1075.6" dy="0">SOVIET UNION</tspan></text>
     <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">KOREA &amp; VIETNAM</tspan></text>
     <ellipse cx="888.9" cy="500.0" rx="57.8" ry="44.4" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="888.9" y="570.4" text-anchor="middle" fill="#1A1C1D"><tspan x="888.9" dy="0">AFRICAN PROXY</tspan><tspan x="888.9" dy="25">WARS</tspan></text>
     <ellipse cx="471.1" cy="400.0" rx="48.9" ry="22.2" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="471.1" y="448.2" text-anchor="middle" fill="#1A1C1D"><tspan x="471.1" dy="0">CUBA</tspan></text>
     <ellipse cx="1146.7" cy="377.8" rx="53.3" ry="55.6" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
-    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">NON-ALIGNED</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M364.4,283.3 Q180.8,253.8 0.0,297.2 M1600.0,297.2 Q1447.5,273.9 1297.8,311.1" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
@@ -89,6 +83,14 @@
     <path class="flow" d="M471.1,400.0 Q664.0,516.8 888.9,500.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="672.0" cy="483.4" r="17"/>
     <text class="badgenum" x="672.0" y="490.4" text-anchor="middle">3</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">UNITED STATES</tspan></text>
+    <text class="region halo" x="1075.6" y="248.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1075.6" dy="0">SOVIET UNION</tspan></text>
+    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">KOREA &amp; VIETNAM</tspan></text>
+    <text class="region halo" x="888.9" y="570.4" text-anchor="middle" fill="#1A1C1D"><tspan x="888.9" dy="0">AFRICAN PROXY</tspan><tspan x="888.9" dy="25">WARS</tspan></text>
+    <text class="region halo" x="471.1" y="448.2" text-anchor="middle" fill="#1A1C1D"><tspan x="471.1" dy="0">CUBA</tspan></text>
+    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">NON-ALIGNED</tspan></text>
   </g>
   <g id="places">
     

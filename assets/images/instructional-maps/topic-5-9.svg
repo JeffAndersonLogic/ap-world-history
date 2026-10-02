@@ -67,18 +67,20 @@
 
   <g id="highlights">
     <ellipse cx="791.1" cy="200.0" rx="40.0" ry="33.3" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="791.1" y="283.3" text-anchor="middle" fill="#1A1C1D"><tspan x="791.1" dy="0">MANCHESTER &amp;</tspan><tspan x="791.1" dy="25">LONDON</tspan></text>
     <ellipse cx="817.8" cy="233.3" rx="62.2" ry="44.4" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="817.8" y="327.8" text-anchor="middle" fill="#1A1C1D"><tspan x="817.8" dy="0">RUHR &amp; PARIS</tspan></text>
     <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">CHICAGO &amp; NEW</tspan><tspan x="364.4" dy="25">YORK</tspan></text>
     <ellipse cx="1417.8" cy="288.9" rx="26.7" ry="33.3" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="1417.8" y="348.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1417.8" dy="0">OSAKA</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M871.1,222.2 Q606.8,161.6 364.4,283.3" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="612.3" cy="255.2" r="17"/>
     <text class="badgenum" x="612.3" y="262.2" text-anchor="middle">1</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="791.1" y="283.3" text-anchor="middle" fill="#1A1C1D"><tspan x="791.1" dy="0">MANCHESTER &amp;</tspan><tspan x="791.1" dy="25">LONDON</tspan></text>
+    <text class="region halo" x="817.8" y="327.8" text-anchor="middle" fill="#1A1C1D"><tspan x="817.8" dy="0">RUHR &amp; PARIS</tspan></text>
+    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">CHICAGO &amp; NEW</tspan><tspan x="364.4" dy="25">YORK</tspan></text>
+    <text class="region halo" x="1417.8" y="348.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1417.8" dy="0">OSAKA</tspan></text>
   </g>
   <g id="places">
     <circle class="city" cx="791.1" cy="205.6" r="10"/>

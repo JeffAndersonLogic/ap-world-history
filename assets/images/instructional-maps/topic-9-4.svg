@@ -67,17 +67,11 @@
 
   <g id="highlights">
     <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">NAFTA</tspan></text>
     <ellipse cx="346.7" cy="372.2" rx="44.4" ry="33.3" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="346.7" y="431.6" text-anchor="middle" fill="#1A1C1D"><tspan x="346.7" dy="0">MAQUILADORAS</tspan></text>
     <ellipse cx="871.1" cy="222.2" rx="115.6" ry="61.1" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
-    <text class="region halo" x="871.1" y="309.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">EUROPEAN UNION</tspan></text>
     <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">FACTORY OF THE</tspan><tspan x="1297.8" dy="25">WORLD</tspan></text>
     <ellipse cx="1266.7" cy="455.6" rx="57.8" ry="55.6" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="1266.7" y="537.1" text-anchor="middle" fill="#1A1C1D"><tspan x="1266.7" dy="0">ASEAN</tspan></text>
     <ellipse cx="1146.7" cy="377.8" rx="53.3" ry="55.6" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">SERVICES</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M1297.8,311.1 Q1450.7,343.5 1600.0,297.2 M0.0,297.2 Q184.0,337.7 364.4,283.3" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
@@ -86,6 +80,14 @@
     <path class="flow" d="M364.4,283.3 Q184.0,337.7 0.0,297.2 M1600.0,297.2 Q1450.7,343.5 1297.8,311.1" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="183.1" cy="386.0" r="17"/>
     <text class="badgenum" x="183.1" y="393.0" text-anchor="middle">2</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">NAFTA</tspan></text>
+    <text class="region halo" x="346.7" y="431.6" text-anchor="middle" fill="#1A1C1D"><tspan x="346.7" dy="0">MAQUILADORAS</tspan></text>
+    <text class="region halo" x="871.1" y="309.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">EUROPEAN UNION</tspan></text>
+    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">FACTORY OF THE</tspan><tspan x="1297.8" dy="25">WORLD</tspan></text>
+    <text class="region halo" x="1266.7" y="537.1" text-anchor="middle" fill="#1A1C1D"><tspan x="1266.7" dy="0">ASEAN</tspan></text>
+    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">SERVICES</tspan></text>
   </g>
   <g id="places">
     

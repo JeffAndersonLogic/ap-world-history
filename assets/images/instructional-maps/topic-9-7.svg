@@ -67,15 +67,10 @@
 
   <g id="highlights">
     <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">SEATTLE 1999</tspan></text>
     <ellipse cx="346.7" cy="372.2" rx="44.4" ry="33.3" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="346.7" y="431.6" text-anchor="middle" fill="#1A1C1D"><tspan x="346.7" dy="0">ZAPATISTAS 1994</tspan></text>
     <ellipse cx="568.9" cy="555.6" rx="62.2" ry="66.7" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="568.9" y="648.2" text-anchor="middle" fill="#1A1C1D"><tspan x="568.9" dy="0">PORTO ALEGRE</tspan></text>
     <ellipse cx="817.8" cy="233.3" rx="62.2" ry="44.4" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
-    <text class="region halo" x="817.8" y="303.8" text-anchor="middle" fill="#1A1C1D"><tspan x="817.8" dy="0">FARM &amp; LABOR</tspan><tspan x="817.8" dy="25">PROTEST</tspan></text>
     <ellipse cx="1146.7" cy="377.8" rx="53.3" ry="55.6" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">ANTI-DAM</tspan><tspan x="1146.7" dy="25">MOVEMENTS</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M346.7,372.2 Q371.6,331.0 364.4,283.3" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
@@ -84,6 +79,13 @@
     <path class="flow" d="M568.9,555.6 Q764.2,449.2 817.8,233.3" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="728.8" cy="421.8" r="17"/>
     <text class="badgenum" x="728.8" y="428.8" text-anchor="middle">2</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">SEATTLE 1999</tspan></text>
+    <text class="region halo" x="346.7" y="431.6" text-anchor="middle" fill="#1A1C1D"><tspan x="346.7" dy="0">ZAPATISTAS 1994</tspan></text>
+    <text class="region halo" x="568.9" y="648.2" text-anchor="middle" fill="#1A1C1D"><tspan x="568.9" dy="0">PORTO ALEGRE</tspan></text>
+    <text class="region halo" x="817.8" y="303.8" text-anchor="middle" fill="#1A1C1D"><tspan x="817.8" dy="0">FARM &amp; LABOR</tspan><tspan x="817.8" dy="25">PROTEST</tspan></text>
+    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">ANTI-DAM</tspan><tspan x="1146.7" dy="25">MOVEMENTS</tspan></text>
   </g>
   <g id="places">
     

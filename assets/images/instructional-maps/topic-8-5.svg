@@ -67,22 +67,24 @@
 
   <g id="highlights">
     <ellipse cx="1146.7" cy="377.8" rx="53.3" ry="55.6" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">INDIA 1947</tspan></text>
     <ellipse cx="1266.7" cy="455.6" rx="57.8" ry="55.6" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="1266.7" y="537.1" text-anchor="middle" fill="#1A1C1D"><tspan x="1266.7" dy="0">INDOCHINA &amp;</tspan><tspan x="1266.7" dy="25">INDONESIA</tspan></text>
     <ellipse cx="782.2" cy="433.3" rx="66.7" ry="38.9" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="782.2" y="498.2" text-anchor="middle" fill="#1A1C1D"><tspan x="782.2" dy="0">GHANA 1957</tspan></text>
     <ellipse cx="862.2" cy="350.0" rx="106.7" ry="33.3" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <text class="region halo" x="862.2" y="409.3" text-anchor="middle" fill="#1A1C1D"><tspan x="862.2" dy="0">ALGERIA 1962</tspan></text>
     <ellipse cx="968.9" cy="488.9" rx="35.6" ry="55.6" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="968.9" y="570.4" text-anchor="middle" fill="#1A1C1D"><tspan x="968.9" dy="0">EAST AFRICA</tspan></text>
     <ellipse cx="911.1" cy="638.9" rx="53.3" ry="44.4" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
-    <text class="region halo" x="911.1" y="709.3" text-anchor="middle" fill="#1A1C1D"><tspan x="911.1" dy="0">LUSOPHONE 1975</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M1146.7,377.8 Q952.2,325.4 782.2,433.3" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="958.3" cy="341.5" r="17"/>
     <text class="badgenum" x="958.3" y="348.5" text-anchor="middle">1</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">INDIA 1947</tspan></text>
+    <text class="region halo" x="1266.7" y="537.1" text-anchor="middle" fill="#1A1C1D"><tspan x="1266.7" dy="0">INDOCHINA &amp;</tspan><tspan x="1266.7" dy="25">INDONESIA</tspan></text>
+    <text class="region halo" x="782.2" y="498.2" text-anchor="middle" fill="#1A1C1D"><tspan x="782.2" dy="0">GHANA 1957</tspan></text>
+    <text class="region halo" x="862.2" y="409.3" text-anchor="middle" fill="#1A1C1D"><tspan x="862.2" dy="0">ALGERIA 1962</tspan></text>
+    <text class="region halo" x="968.9" y="570.4" text-anchor="middle" fill="#1A1C1D"><tspan x="968.9" dy="0">EAST AFRICA</tspan></text>
+    <text class="region halo" x="911.1" y="709.3" text-anchor="middle" fill="#1A1C1D"><tspan x="911.1" dy="0">LUSOPHONE 1975</tspan></text>
   </g>
   <g id="places">
     

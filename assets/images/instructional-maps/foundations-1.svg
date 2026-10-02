@@ -67,20 +67,22 @@
 
   <g id="highlights">
     <ellipse cx="933.3" cy="355.6" rx="26.7" ry="27.8" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="933.3" y="409.3" text-anchor="middle" fill="#1A1C1D"><tspan x="933.3" dy="0">NILE</tspan></text>
     <ellipse cx="1000.0" cy="327.8" rx="75.6" ry="50.0" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="1000.0" y="475.8" text-anchor="middle" fill="#1A1C1D"><tspan x="1000.0" dy="0">TIGRIS &amp;</tspan><tspan x="1000.0" dy="25">EUPHRATES</tspan></text>
     <ellipse cx="1146.7" cy="377.8" rx="53.3" ry="55.6" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="1146.7" y="411.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">INDUS &amp; GANGES</tspan></text>
     <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="1297.8" y="374.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">YELLOW &amp; YANGTZE</tspan></text>
     <ellipse cx="1222.2" cy="238.9" rx="97.8" ry="44.4" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
-    <text class="region halo" x="1222.2" y="285.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1222.2" dy="0">EURASIAN STEPPE</tspan></text>
     <ellipse cx="480.0" cy="577.8" rx="26.7" ry="100.0" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <text class="region halo" x="480.0" y="679.8" text-anchor="middle" fill="#1A1C1D"><tspan x="480.0" dy="0">ANDEAN HIGHLANDS</tspan></text>
   </g>
   <g id="flows">
     
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="933.3" y="409.3" text-anchor="middle" fill="#1A1C1D"><tspan x="933.3" dy="0">NILE</tspan></text>
+    <text class="region halo" x="1000.0" y="475.8" text-anchor="middle" fill="#1A1C1D"><tspan x="1000.0" dy="0">TIGRIS &amp;</tspan><tspan x="1000.0" dy="25">EUPHRATES</tspan></text>
+    <text class="region halo" x="1146.7" y="411.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">INDUS &amp; GANGES</tspan></text>
+    <text class="region halo" x="1297.8" y="374.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">YELLOW &amp; YANGTZE</tspan></text>
+    <text class="region halo" x="1222.2" y="285.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1222.2" dy="0">EURASIAN STEPPE</tspan></text>
+    <text class="region halo" x="480.0" y="679.8" text-anchor="middle" fill="#1A1C1D"><tspan x="480.0" dy="0">ANDEAN HIGHLANDS</tspan></text>
   </g>
   <g id="places">
     <circle class="city" cx="937.8" cy="355.6" r="10"/>

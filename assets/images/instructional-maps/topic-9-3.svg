@@ -67,20 +67,22 @@
 
   <g id="highlights">
     <ellipse cx="568.9" cy="555.6" rx="62.2" ry="66.7" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="568.9" y="648.2" text-anchor="middle" fill="#1A1C1D"><tspan x="568.9" dy="0">DEFORESTATION</tspan></text>
     <ellipse cx="1097.8" cy="255.6" rx="66.7" ry="44.4" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="1097.8" y="326.0" text-anchor="middle" fill="#1A1C1D"><tspan x="1097.8" dy="0">ARAL SEA</tspan></text>
     <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">INDUSTRIAL</tspan><tspan x="1297.8" dy="25">EMISSIONS</tspan></text>
     <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">HIGH CONSUMPTION</tspan></text>
     <ellipse cx="1120.0" cy="600.0" rx="97.8" ry="88.9" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
-    <text class="region halo" x="1120.0" y="714.9" text-anchor="middle" fill="#1A1C1D"><tspan x="1120.0" dy="0">RISING SEAS</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M364.4,283.3 Q180.8,253.8 0.0,297.2 M1600.0,297.2 Q1447.5,273.9 1297.8,311.1" marker-end="url(#arrow)"/>
     <circle class="badge" cx="181.5" cy="272.1" r="17"/>
     <text class="badgenum" x="181.5" y="279.1" text-anchor="middle">1</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="568.9" y="648.2" text-anchor="middle" fill="#1A1C1D"><tspan x="568.9" dy="0">DEFORESTATION</tspan></text>
+    <text class="region halo" x="1097.8" y="326.0" text-anchor="middle" fill="#1A1C1D"><tspan x="1097.8" dy="0">ARAL SEA</tspan></text>
+    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">INDUSTRIAL</tspan><tspan x="1297.8" dy="25">EMISSIONS</tspan></text>
+    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">HIGH CONSUMPTION</tspan></text>
+    <text class="region halo" x="1120.0" y="714.9" text-anchor="middle" fill="#1A1C1D"><tspan x="1120.0" dy="0">RISING SEAS</tspan></text>
   </g>
   <g id="places">
     

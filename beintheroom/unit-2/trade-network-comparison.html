@@ -14,10 +14,15 @@
     .eyebrow,.label{font:700 .72rem Montserrat,Arial,sans-serif;text-transform:uppercase;letter-spacing:.14em;color:var(--gold)}
     h1,h2{font-family:Cinzel,Georgia,serif} h1{font-size:clamp(2rem,5vw,4rem);line-height:1.05;margin:.35rem 0 1rem} h2{font-size:1.45rem;margin:.25rem 0 .8rem}
     .deck{max-width:830px;color:var(--sand);font-size:1.05rem}
-    .card{background:#23272a;border:1px solid var(--gun);border-radius:8px;padding:22px;margin:18px 0}
+    /* behistorical.css treats .card as a light paper surface and sets its text to
+       ink; this page's cards are charcoal, so the text has to be set back to paper
+       or it renders near-black on near-black. */
+    .card{background:#23272a;color:var(--paper);border:1px solid var(--gun);border-radius:8px;padding:22px;margin:18px 0}
     .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.network{background:#1f2224;border:1px solid var(--gun);padding:16px;border-radius:6px}.network h3{font:700 1rem Montserrat,Arial,sans-serif;color:var(--gold);margin:0 0 .65rem}.network p{margin:.35rem 0;font-size:.9rem}
     .evidence{display:grid;grid-template-columns:1fr 1fr;gap:14px}.evidence article{border-left:3px solid var(--gold);background:#1f2224;padding:14px 16px}.evidence strong{color:var(--gold)}
     .task{background:var(--paper);color:var(--ink);border-radius:8px;padding:22px}.task h2{color:var(--ink)}
+    /* Antique gold is a dark-surface colour: 2.1:1 on paper. On the light task card the eyebrow uses oxidized bronze instead. */
+    .task .label{color:#6b3e1f}
     textarea{width:100%;min-height:140px;box-sizing:border-box;margin-top:12px;padding:14px;border:1px solid #8b867d;border-radius:5px;background:var(--clean);color:var(--ink);font:1rem/1.5 'Libre Baskerville',Georgia,serif}
     .frame{padding:14px 16px;border:1px solid #b8a88f;background:#fff9ee;margin:12px 0;font-size:.94rem}.back{display:inline-block;margin-top:24px;color:var(--gold);font:700 .78rem Montserrat,Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em}
     @media(max-width:760px){.grid,.evidence{grid-template-columns:1fr}}

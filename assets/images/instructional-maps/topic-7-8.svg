@@ -67,20 +67,22 @@
 
   <g id="highlights">
     <ellipse cx="946.7" cy="283.3" rx="48.9" ry="27.8" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
-    <text class="region halo" x="946.7" y="337.1" text-anchor="middle" fill="#1A1C1D"><tspan x="946.7" dy="0">ARMENIANS, 1915</tspan></text>
     <ellipse cx="871.1" cy="222.2" rx="115.6" ry="61.1" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <text class="region halo" x="871.1" y="285.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">THE HOLOCAUST</tspan></text>
     <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">NANJING, 1937</tspan></text>
     <ellipse cx="888.9" cy="500.0" rx="57.8" ry="44.4" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="888.9" y="570.4" text-anchor="middle" fill="#1A1C1D"><tspan x="888.9" dy="0">RWANDA, 1994</tspan></text>
     <ellipse cx="915.6" cy="216.7" rx="66.7" ry="44.4" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="915.6" y="239.1" text-anchor="middle" fill="#1A1C1D"><tspan x="915.6" dy="0">BOSNIA, 1992-95</tspan></text>
     <ellipse cx="1266.7" cy="455.6" rx="57.8" ry="55.6" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="1266.7" y="537.1" text-anchor="middle" fill="#1A1C1D"><tspan x="1266.7" dy="0">CAMBODIA,</tspan><tspan x="1266.7" dy="25">1975-79</tspan></text>
   </g>
   <g id="flows">
     
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="946.7" y="337.1" text-anchor="middle" fill="#1A1C1D"><tspan x="946.7" dy="0">ARMENIANS, 1915</tspan></text>
+    <text class="region halo" x="871.1" y="285.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">THE HOLOCAUST</tspan></text>
+    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">NANJING, 1937</tspan></text>
+    <text class="region halo" x="888.9" y="570.4" text-anchor="middle" fill="#1A1C1D"><tspan x="888.9" dy="0">RWANDA, 1994</tspan></text>
+    <text class="region halo" x="915.6" y="239.1" text-anchor="middle" fill="#1A1C1D"><tspan x="915.6" dy="0">BOSNIA, 1992-95</tspan></text>
+    <text class="region halo" x="1266.7" y="537.1" text-anchor="middle" fill="#1A1C1D"><tspan x="1266.7" dy="0">CAMBODIA,</tspan><tspan x="1266.7" dy="25">1975-79</tspan></text>
   </g>
   <g id="places">
     

@@ -40,8 +40,15 @@ function tone(name) {
   return TONES[name] || TONES.gold;
 }
 
+// A spec names a zone from map-frame.js, or gives explicit coordinates when no
+// named zone fits: [lon, lat, rLon, rLat] for an area, [lon, lat] for a route
+// end. Named zones are the default and render exactly as they always have.
+function area(name) {
+  return Array.isArray(name) ? name : zone(name);
+}
+
 function ellipse(zoneName, toneName, opacity) {
-  const [lon, lat, rLon, rLat] = zone(zoneName);
+  const [lon, lat, rLon, rLat] = area(zoneName);
   const [cx, cy] = project(lon, lat);
   const [ex, ey] = project(lon + rLon, lat - rLat);
   const palette = tone(toneName);
@@ -70,9 +77,40 @@ function arc(x1, y1, x2, y2, bow) {
   };
 }
 
-function flowPath(fromZone, toZone, bow) {
-  const [flon, flat] = zone(fromZone);
-  const [tlon, tlat] = zone(toZone);
+// A route given waypoints is drawn as a smooth curve through every one of them
+// (Catmull-Rom, written out as cubic Beziers). A two-point arc cannot follow a
+// sea lane: the Indian Ocean route from China to India has to bend round the
+// Malay peninsula and the tip of India, and a single bow sends it over the
+// Himalayas instead. The badge sits on the middle waypoint, or on the middle of
+// the middle segment when the count is even.
+function viaPath(points) {
+  const pts = points.map(([lon, lat]) => project(lon, lat));
+  const at = (i) => pts[Math.max(0, Math.min(pts.length - 1, i))];
+  const fmt = ([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`;
+  const segments = [];
+  for (let i = 0; i < pts.length - 1; i++) {
+    const [p0, p1, p2, p3] = [at(i - 1), at(i), at(i + 1), at(i + 2)];
+    const c1 = [p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6];
+    const c2 = [p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6];
+    segments.push({ p1, c1, c2, p2 });
+  }
+  let mid;
+  if (pts.length % 2 === 1) {
+    mid = pts[(pts.length - 1) / 2];
+  } else {
+    const { p1, c1, c2, p2 } = segments[pts.length / 2 - 1];
+    mid = [0, 1].map((k) => 0.125 * p1[k] + 0.375 * c1[k] + 0.375 * c2[k] + 0.125 * p2[k]);
+  }
+  return {
+    d: `M${fmt(pts[0])} ` + segments.map(({ c1, c2, p2 }) => `C${fmt(c1)} ${fmt(c2)} ${fmt(p2)}`).join(' '),
+    mid
+  };
+}
+
+function flowPath(fromZone, toZone, bow, via) {
+  const [flon, flat] = area(fromZone);
+  const [tlon, tlat] = area(toZone);
+  if (via && via.length) return viaPath([[flon, flat], ...via, [tlon, tlat]]);
   const [x1, y1] = project(flon, flat);
   const [x2, y2] = project(tlon, tlat);
 
@@ -195,13 +233,14 @@ function renderMap(spec) {
     ${p.note ? `<text class="placenote halo" x="${(x + offset).toFixed(1)}" y="${(baseline + 22).toFixed(1)}" text-anchor="${anchor}">${esc(p.note)}</text>` : ''}`;
   }).join('\n    ');
 
-  const highlightLayer = highlights.map((h) => {
-    const [lon, lat, rLon, rLat] = zone(h.zone);
+  const highlightShapes = [];
+  const highlightLabels = highlights.map((h) => {
+    const [lon, lat, rLon, rLat] = area(h.zone);
     const [cx, cy] = project(lon, lat);
     const [, edge] = project(lon, lat - rLat);
     const palette = tone(h.tone);
-    const shape = ellipse(h.zone, h.tone, h.opacity == null ? 0.5 : h.opacity);
-    if (!h.label) return shape;
+    highlightShapes.push(ellipse(h.zone, h.tone, h.opacity == null ? 0.5 : h.opacity));
+    if (!h.label) return '';
     const labelLines = wrap(h.label, 16);
     const width = Math.max(...labelLines.map((line) => line.length)) * 13 + 12;
     let labelX = cx;
@@ -212,6 +251,9 @@ function renderMap(spec) {
       labelX += 18;
       labelY = cy + 7;
       anchor = 'start';
+    } else if (h.labelSide === 'above') {
+      const [, top] = project(lon, lat + rLat);
+      labelY = top - 12 - (labelLines.length - 1) * 25;
     } else if (h.labelSide === 'left') {
       [labelX] = project(lon - rLon, lat);
       labelX -= 18;
@@ -222,12 +264,12 @@ function renderMap(spec) {
     const label = labelLines
       .map((line, index) => `<tspan x="${labelX.toFixed(1)}" dy="${index === 0 ? 0 : 25}">${esc(line)}</tspan>`)
       .join('');
-    return `${shape}
-    <text class="region halo" x="${labelX.toFixed(1)}" y="${baseline.toFixed(1)}" text-anchor="${anchor}" fill="${palette.text}">${label}</text>`;
-  }).join('\n    ');
+    return `<text class="region halo" x="${labelX.toFixed(1)}" y="${baseline.toFixed(1)}" text-anchor="${anchor}" fill="${palette.text}">${label}</text>`;
+  }).filter(Boolean).join('\n    ');
+  const highlightLayer = highlightShapes.join('\n    ');
 
   const flowLayer = flows.map((f, index) => {
-    const { d, mid } = flowPath(f.from, f.to, f.bow);
+    const { d, mid } = flowPath(f.from, f.to, f.bow, f.via);
     const dash = f.style === 'solid' ? '' : ' stroke-dasharray="18 13"';
     let badge = '';
     if (f.label) {
@@ -303,6 +345,9 @@ function renderMap(spec) {
   </g>
   <g id="flows">
     ${flowLayer}
+  </g>
+  <g id="region-labels">
+    ${highlightLabels}
   </g>
   <g id="places">
     ${pointLayer}

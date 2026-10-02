@@ -67,18 +67,20 @@
 
   <g id="highlights">
     <ellipse cx="782.2" cy="433.3" rx="66.7" ry="38.9" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="782.2" y="522.2" text-anchor="middle" fill="#1A1C1D"><tspan x="782.2" dy="0">ASANTE &amp;</tspan><tspan x="782.2" dy="25">WASSOULOU</tspan></text>
     <ellipse cx="911.1" cy="638.9" rx="53.3" ry="44.4" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="911.1" y="709.3" text-anchor="middle" fill="#1A1C1D"><tspan x="911.1" dy="0">XHOSA &amp; ZULU</tspan></text>
     <ellipse cx="1146.7" cy="377.8" rx="53.3" ry="55.6" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="1146.7" y="531.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">INDIAN REBELLION</tspan><tspan x="1146.7" dy="25">1857</tspan></text>
     <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">BOXER RISING</tspan></text>
     <ellipse cx="973.3" cy="450.0" rx="22.2" ry="27.8" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="973.3" y="575.8" text-anchor="middle" fill="#1A1C1D"><tspan x="973.3" dy="0">ETHIOPIA</tspan></text>
   </g>
   <g id="flows">
     
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="782.2" y="522.2" text-anchor="middle" fill="#1A1C1D"><tspan x="782.2" dy="0">ASANTE &amp;</tspan><tspan x="782.2" dy="25">WASSOULOU</tspan></text>
+    <text class="region halo" x="911.1" y="709.3" text-anchor="middle" fill="#1A1C1D"><tspan x="911.1" dy="0">XHOSA &amp; ZULU</tspan></text>
+    <text class="region halo" x="1146.7" y="531.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">INDIAN REBELLION</tspan><tspan x="1146.7" dy="25">1857</tspan></text>
+    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">BOXER RISING</tspan></text>
+    <text class="region halo" x="973.3" y="575.8" text-anchor="middle" fill="#1A1C1D"><tspan x="973.3" dy="0">ETHIOPIA</tspan></text>
   </g>
   <g id="places">
     <circle class="city" cx="795.6" cy="461.1" r="10"/>

@@ -67,17 +67,11 @@
 
   <g id="highlights">
     <ellipse cx="871.1" cy="222.2" rx="115.6" ry="61.1" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
-    <text class="region halo" x="871.1" y="309.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">EUROPEAN THEATRE</tspan></text>
     <ellipse cx="1075.6" cy="166.7" rx="142.2" ry="55.6" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <text class="region halo" x="1075.6" y="248.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1075.6" dy="0">EASTERN FRONT</tspan></text>
     <ellipse cx="862.2" cy="350.0" rx="106.7" ry="33.3" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="862.2" y="409.3" text-anchor="middle" fill="#1A1C1D"><tspan x="862.2" dy="0">NORTH AFRICA</tspan></text>
     <ellipse cx="1288.9" cy="516.7" rx="71.1" ry="38.9" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="1288.9" y="581.6" text-anchor="middle" fill="#1A1C1D"><tspan x="1288.9" dy="0">PACIFIC THEATRE</tspan></text>
     <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">CHINA THEATRE</tspan></text>
     <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">ARSENAL</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M364.4,283.3 Q592.8,318.5 791.1,200.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
@@ -86,6 +80,14 @@
     <path class="flow" d="M364.4,283.3 Q167.1,294.3 0.0,400.0 M1600.0,400.0 Q1429.3,417.9 1288.9,516.7" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="174.6" cy="318.0" r="17"/>
     <text class="badgenum" x="174.6" y="325.0" text-anchor="middle">2</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="871.1" y="309.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">EUROPEAN THEATRE</tspan></text>
+    <text class="region halo" x="1075.6" y="248.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1075.6" dy="0">EASTERN FRONT</tspan></text>
+    <text class="region halo" x="862.2" y="409.3" text-anchor="middle" fill="#1A1C1D"><tspan x="862.2" dy="0">NORTH AFRICA</tspan></text>
+    <text class="region halo" x="1288.9" y="581.6" text-anchor="middle" fill="#1A1C1D"><tspan x="1288.9" dy="0">PACIFIC THEATRE</tspan></text>
+    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">CHINA THEATRE</tspan></text>
+    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">ARSENAL</tspan></text>
   </g>
   <g id="places">
     

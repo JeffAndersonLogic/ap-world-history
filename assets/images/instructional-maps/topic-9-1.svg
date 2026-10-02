@@ -67,15 +67,10 @@
 
   <g id="highlights">
     <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">RESEARCH &amp;</tspan><tspan x="364.4" dy="25">ENERGY</tspan></text>
     <ellipse cx="346.7" cy="372.2" rx="44.4" ry="33.3" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="346.7" y="431.6" text-anchor="middle" fill="#1A1C1D"><tspan x="346.7" dy="0">GREEN REVOLUTION</tspan></text>
     <ellipse cx="1146.7" cy="377.8" rx="53.3" ry="55.6" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">GREEN REVOLUTION</tspan></text>
     <ellipse cx="1000.0" cy="327.8" rx="75.6" ry="50.0" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="1000.0" y="403.8" text-anchor="middle" fill="#1A1C1D"><tspan x="1000.0" dy="0">OIL</tspan></text>
     <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">MANUFACTURING</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M346.7,372.2 Q745.3,567.0 1146.7,377.8" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
@@ -84,6 +79,13 @@
     <path class="flow" d="M1000.0,327.8 Q1146.2,271.8 1297.8,311.1" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="1147.6" cy="295.6" r="17"/>
     <text class="badgenum" x="1147.6" y="302.6" text-anchor="middle">2</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">RESEARCH &amp;</tspan><tspan x="364.4" dy="25">ENERGY</tspan></text>
+    <text class="region halo" x="346.7" y="431.6" text-anchor="middle" fill="#1A1C1D"><tspan x="346.7" dy="0">GREEN REVOLUTION</tspan></text>
+    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">GREEN REVOLUTION</tspan></text>
+    <text class="region halo" x="1000.0" y="403.8" text-anchor="middle" fill="#1A1C1D"><tspan x="1000.0" dy="0">OIL</tspan></text>
+    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">MANUFACTURING</tspan></text>
   </g>
   <g id="places">
     

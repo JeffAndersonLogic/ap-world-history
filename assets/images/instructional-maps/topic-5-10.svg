@@ -67,17 +67,11 @@
 
   <g id="highlights">
     <ellipse cx="791.1" cy="200.0" rx="40.0" ry="33.3" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="791.1" y="259.3" text-anchor="middle" fill="#1A1C1D"><tspan x="791.1" dy="0">INDUSTRIAL CORE</tspan></text>
     <ellipse cx="817.8" cy="233.3" rx="62.2" ry="44.4" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="817.8" y="303.8" text-anchor="middle" fill="#1A1C1D"><tspan x="817.8" dy="0">INDUSTRIAL CORE</tspan></text>
     <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">INDUSTRIAL CORE</tspan></text>
     <ellipse cx="1417.8" cy="288.9" rx="26.7" ry="33.3" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="1417.8" y="348.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1417.8" dy="0">INDUSTRIAL CORE</tspan></text>
     <ellipse cx="1146.7" cy="377.8" rx="53.3" ry="55.6" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">EXPORT PERIPHERY</tspan></text>
     <ellipse cx="888.9" cy="500.0" rx="57.8" ry="44.4" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="888.9" y="570.4" text-anchor="middle" fill="#1A1C1D"><tspan x="888.9" dy="0">EXPORT PERIPHERY</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M1146.7,377.8 Q1004.4,217.8 791.1,200.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
@@ -86,6 +80,14 @@
     <path class="flow" d="M791.1,200.0 Q900.0,330.4 888.9,500.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="870.0" cy="340.2" r="17"/>
     <text class="badgenum" x="870.0" y="347.2" text-anchor="middle">2</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="791.1" y="259.3" text-anchor="middle" fill="#1A1C1D"><tspan x="791.1" dy="0">INDUSTRIAL CORE</tspan></text>
+    <text class="region halo" x="817.8" y="303.8" text-anchor="middle" fill="#1A1C1D"><tspan x="817.8" dy="0">INDUSTRIAL CORE</tspan></text>
+    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">INDUSTRIAL CORE</tspan></text>
+    <text class="region halo" x="1417.8" y="348.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1417.8" dy="0">INDUSTRIAL CORE</tspan></text>
+    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">EXPORT PERIPHERY</tspan></text>
+    <text class="region halo" x="888.9" y="570.4" text-anchor="middle" fill="#1A1C1D"><tspan x="888.9" dy="0">EXPORT PERIPHERY</tspan></text>
   </g>
   <g id="places">
     

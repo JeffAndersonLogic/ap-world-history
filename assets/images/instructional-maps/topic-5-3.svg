@@ -67,13 +67,9 @@
 
   <g id="highlights">
     <ellipse cx="791.1" cy="200.0" rx="40.0" ry="33.3" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="791.1" y="259.3" text-anchor="middle" fill="#1A1C1D"><tspan x="791.1" dy="0">BRITAIN</tspan></text>
     <ellipse cx="1146.7" cy="377.8" rx="53.3" ry="55.6" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">SOUTH ASIA</tspan></text>
     <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">US SOUTH</tspan></text>
     <ellipse cx="782.2" cy="433.3" rx="66.7" ry="38.9" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="782.2" y="498.2" text-anchor="middle" fill="#1A1C1D"><tspan x="782.2" dy="0">WEST AFRICA</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M364.4,283.3 Q592.8,318.5 791.1,200.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
@@ -82,6 +78,12 @@
     <path class="flow" d="M791.1,200.0 Q933.3,360.0 1146.7,377.8" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="951.1" cy="324.4" r="17"/>
     <text class="badgenum" x="951.1" y="331.4" text-anchor="middle">2</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="791.1" y="259.3" text-anchor="middle" fill="#1A1C1D"><tspan x="791.1" dy="0">BRITAIN</tspan></text>
+    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">SOUTH ASIA</tspan></text>
+    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">US SOUTH</tspan></text>
+    <text class="region halo" x="782.2" y="498.2" text-anchor="middle" fill="#1A1C1D"><tspan x="782.2" dy="0">WEST AFRICA</tspan></text>
   </g>
   <g id="places">
     <circle class="city" cx="791.1" cy="205.6" r="10"/>

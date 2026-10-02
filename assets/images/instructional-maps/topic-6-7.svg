@@ -67,17 +67,11 @@
 
   <g id="highlights">
     <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">CHINATOWNS</tspan></text>
     <ellipse cx="471.1" cy="400.0" rx="48.9" ry="22.2" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="471.1" y="448.2" text-anchor="middle" fill="#1A1C1D"><tspan x="471.1" dy="0">INDIAN DIASPORA</tspan></text>
     <ellipse cx="968.9" cy="488.9" rx="35.6" ry="55.6" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="968.9" y="570.4" text-anchor="middle" fill="#1A1C1D"><tspan x="968.9" dy="0">INDIAN DIASPORA</tspan></text>
     <ellipse cx="1266.7" cy="455.6" rx="57.8" ry="55.6" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <text class="region halo" x="1266.7" y="537.1" text-anchor="middle" fill="#1A1C1D"><tspan x="1266.7" dy="0">CHINESE DIASPORA</tspan></text>
     <ellipse cx="515.6" cy="694.4" rx="35.6" ry="55.6" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="515.6" y="728.0" text-anchor="middle" fill="#1A1C1D"><tspan x="515.6" dy="0">EUROPEAN</tspan><tspan x="515.6" dy="25">DIASPORA</tspan></text>
     <ellipse cx="1395.6" cy="638.9" rx="84.4" ry="50.0" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
-    <text class="region halo" x="1395.6" y="714.9" text-anchor="middle" fill="#1A1C1D"><tspan x="1395.6" dy="0">EXCLUSION</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M1297.8,311.1 Q1256.2,377.7 1266.7,455.6" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
@@ -86,6 +80,14 @@
     <path class="flow" d="M1146.7,377.8 Q1035.6,397.8 968.9,488.9" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="1046.7" cy="415.6" r="17"/>
     <text class="badgenum" x="1046.7" y="422.6" text-anchor="middle">2</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">CHINATOWNS</tspan></text>
+    <text class="region halo" x="471.1" y="448.2" text-anchor="middle" fill="#1A1C1D"><tspan x="471.1" dy="0">INDIAN DIASPORA</tspan></text>
+    <text class="region halo" x="968.9" y="570.4" text-anchor="middle" fill="#1A1C1D"><tspan x="968.9" dy="0">INDIAN DIASPORA</tspan></text>
+    <text class="region halo" x="1266.7" y="537.1" text-anchor="middle" fill="#1A1C1D"><tspan x="1266.7" dy="0">CHINESE DIASPORA</tspan></text>
+    <text class="region halo" x="515.6" y="728.0" text-anchor="middle" fill="#1A1C1D"><tspan x="515.6" dy="0">EUROPEAN</tspan><tspan x="515.6" dy="25">DIASPORA</tspan></text>
+    <text class="region halo" x="1395.6" y="714.9" text-anchor="middle" fill="#1A1C1D"><tspan x="1395.6" dy="0">EXCLUSION</tspan></text>
   </g>
   <g id="places">
     

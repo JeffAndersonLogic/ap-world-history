@@ -67,17 +67,11 @@
 
   <g id="highlights">
     <ellipse cx="1417.8" cy="288.9" rx="26.7" ry="33.3" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <text class="region halo" x="1417.8" y="348.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1417.8" dy="0">JAPAN</tspan></text>
     <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">CHINA INVADED</tspan></text>
     <ellipse cx="871.1" cy="222.2" rx="115.6" ry="61.1" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
-    <text class="region halo" x="871.1" y="309.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">GERMANY</tspan></text>
     <ellipse cx="875.6" cy="300.0" rx="106.7" ry="33.3" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="875.6" y="359.3" text-anchor="middle" fill="#1A1C1D"><tspan x="875.6" dy="0">ITALY</tspan></text>
     <ellipse cx="973.3" cy="450.0" rx="22.2" ry="27.8" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <text class="region halo" x="973.3" y="503.8" text-anchor="middle" fill="#1A1C1D"><tspan x="973.3" dy="0">ETHIOPIA 1935</tspan></text>
     <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">NEUTRALITY</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M1417.8,288.9 Q1353.8,278.4 1297.8,311.1" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
@@ -86,6 +80,14 @@
     <path class="flow" d="M875.6,300.0 Q894.4,394.6 973.3,450.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="909.4" cy="408.8" r="17"/>
     <text class="badgenum" x="909.4" y="415.8" text-anchor="middle">2</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="1417.8" y="348.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1417.8" dy="0">JAPAN</tspan></text>
+    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">CHINA INVADED</tspan></text>
+    <text class="region halo" x="871.1" y="309.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">GERMANY</tspan></text>
+    <text class="region halo" x="875.6" y="359.3" text-anchor="middle" fill="#1A1C1D"><tspan x="875.6" dy="0">ITALY</tspan></text>
+    <text class="region halo" x="973.3" y="503.8" text-anchor="middle" fill="#1A1C1D"><tspan x="973.3" dy="0">ETHIOPIA 1935</tspan></text>
+    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">NEUTRALITY</tspan></text>
   </g>
   <g id="places">
     

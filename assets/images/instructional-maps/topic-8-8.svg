@@ -67,15 +67,10 @@
 
   <g id="highlights">
     <ellipse cx="1075.6" cy="166.7" rx="142.2" ry="55.6" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <text class="region halo" x="1075.6" y="248.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1075.6" dy="0">SOVIET UNION</tspan></text>
     <ellipse cx="915.6" cy="216.7" rx="66.7" ry="44.4" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
-    <text class="region halo" x="915.6" y="287.1" text-anchor="middle" fill="#1A1C1D"><tspan x="915.6" dy="0">EASTERN BLOC</tspan></text>
     <ellipse cx="1097.8" cy="255.6" rx="66.7" ry="44.4" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="1097.8" y="326.0" text-anchor="middle" fill="#1A1C1D"><tspan x="1097.8" dy="0">AFGHANISTAN</tspan></text>
     <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">UNITED STATES</tspan></text>
     <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">CHINA</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M1097.8,255.6 Q1102.7,207.1 1075.6,166.7" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
@@ -84,6 +79,13 @@
     <path class="flow" d="M364.4,283.3 Q745.7,381.4 1075.6,166.7" marker-end="url(#arrow)"/>
     <circle class="badge" cx="732.8" cy="303.2" r="17"/>
     <text class="badgenum" x="732.8" y="310.2" text-anchor="middle">2</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="1075.6" y="248.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1075.6" dy="0">SOVIET UNION</tspan></text>
+    <text class="region halo" x="915.6" y="287.1" text-anchor="middle" fill="#1A1C1D"><tspan x="915.6" dy="0">EASTERN BLOC</tspan></text>
+    <text class="region halo" x="1097.8" y="326.0" text-anchor="middle" fill="#1A1C1D"><tspan x="1097.8" dy="0">AFGHANISTAN</tspan></text>
+    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">UNITED STATES</tspan></text>
+    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">CHINA</tspan></text>
   </g>
   <g id="places">
     <circle class="city" cx="857.8" cy="211.1" r="10"/>

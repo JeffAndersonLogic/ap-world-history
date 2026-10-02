@@ -67,15 +67,10 @@
 
   <g id="highlights">
     <ellipse cx="791.1" cy="200.0" rx="40.0" ry="33.3" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <text class="region halo" x="791.1" y="259.3" text-anchor="middle" fill="#1A1C1D"><tspan x="791.1" dy="0">BRITAIN</tspan></text>
     <ellipse cx="817.8" cy="233.3" rx="62.2" ry="44.4" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <text class="region halo" x="817.8" y="327.8" text-anchor="middle" fill="#1A1C1D"><tspan x="817.8" dy="0">FRANCE &amp; LOW</tspan><tspan x="817.8" dy="25">COUNTRIES</tspan></text>
     <ellipse cx="871.1" cy="222.2" rx="115.6" ry="61.1" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <text class="region halo" x="871.1" y="381.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">CENTRAL EUROPE</tspan></text>
     <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">BRITISH AMERICA</tspan></text>
     <ellipse cx="471.1" cy="400.0" rx="48.9" ry="22.2" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <text class="region halo" x="471.1" y="448.2" text-anchor="middle" fill="#1A1C1D"><tspan x="471.1" dy="0">SAINT-DOMINGUE</tspan></text>
   </g>
   <g id="flows">
     <path class="flow" d="M817.8,233.3 Q582.1,176.7 364.4,283.3" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
@@ -87,6 +82,13 @@
     <path class="flow" d="M817.8,233.3 Q674.4,379.1 471.1,400.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="659.4" cy="347.9" r="17"/>
     <text class="badgenum" x="659.4" y="354.9" text-anchor="middle">3</text>
+  </g>
+  <g id="region-labels">
+    <text class="region halo" x="791.1" y="259.3" text-anchor="middle" fill="#1A1C1D"><tspan x="791.1" dy="0">BRITAIN</tspan></text>
+    <text class="region halo" x="817.8" y="327.8" text-anchor="middle" fill="#1A1C1D"><tspan x="817.8" dy="0">FRANCE &amp; LOW</tspan><tspan x="817.8" dy="25">COUNTRIES</tspan></text>
+    <text class="region halo" x="871.1" y="381.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">CENTRAL EUROPE</tspan></text>
+    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">BRITISH AMERICA</tspan></text>
+    <text class="region halo" x="471.1" y="448.2" text-anchor="middle" fill="#1A1C1D"><tspan x="471.1" dy="0">SAINT-DOMINGUE</tspan></text>
   </g>
   <g id="places">
     
