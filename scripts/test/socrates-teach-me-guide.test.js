@@ -84,10 +84,13 @@ function check(name, pass, detail) {
   await page.click('[data-teach-me-id="topic-1-1"]');
   const panel = await page.evaluate(() => ({
     textarea: document.querySelector('#topic-1-1 .teach-me-panel textarea').value,
-    disabled: document.querySelector('#topic-1-1 .teach-me-open').getAttribute('aria-disabled')
+    disabled: document.querySelector('#topic-1-1 .teach-me-open').getAttribute('aria-disabled'),
+    href: document.querySelector('#topic-1-1 .teach-me-open').href
   }));
   check('button reveals the same prepared message', panel.textarea === first.pastes['topic-1-1']);
-  check('Open Socrates stays disabled until the join URL is configured', first.url || panel.disabled === 'true');
+  check('Open Socrates follows the configured room state', first.url
+    ? panel.href === first.url && panel.disabled !== 'true'
+    : panel.disabled === 'true');
   await page.click('#topic-1-1 .teach-me-copy');
   await page.waitForFunction(() => /copied/i.test(document.querySelector('#topic-1-1 .teach-me-status').textContent));
   const clipboard = await page.evaluate(() => navigator.clipboard.readText());

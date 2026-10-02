@@ -26,7 +26,7 @@
 
   var STORAGE_KEY = 'behistorical-classroom';
   var CLASSROOMS = {"kelly":"https://student.magicschool.ai/s/login?joinCode=a4fGJw"};
-  var TEACH_ME_URL = "";
+  var TEACH_ME_URL = "https://student.magicschool.ai/s/login?joinCode=KbZuaA";
 
   function currentClassroomUrl() {
     try {

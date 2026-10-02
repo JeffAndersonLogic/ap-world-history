@@ -30,6 +30,6 @@ const CLASSROOMS = {
 // The standalone Teach Me chatbot is Jeff's single room for every student.
 // Leave empty until the bot is created, then paste its student join URL here.
 // It deliberately ignores ?classroom=kelly.
-const TEACH_ME_URL = '';
+const TEACH_ME_URL = 'https://student.magicschool.ai/s/login?joinCode=KbZuaA';
 
 module.exports = { DEFAULT_MAGICSCHOOL_URL, CLASSROOMS, TEACH_ME_URL };
