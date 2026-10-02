@@ -174,7 +174,11 @@ const OVERVIEWS = {
 
   '2.6': "The same exchange networks that moved merchants and goods also moved living things. Today you trace two environmental consequences together: crops such as bananas, new rice varieties, and citrus diffused into new regions and affected production and population, while pathogens such as bubonic plague traveled along trade routes and produced enormous demographic and social disruption.",
 
-  '2.7': "Comparison asks you to explain the networks together rather than retell them one at a time. Today you compare the Silk Roads, Indian Ocean, and trans-Saharan systems through the same categories: environment and transportation, commercial practices and finance, demand and productive capacity, the role of states and cities, and the cultural or environmental effects of exchange. The goal is an AP-style argument built from both meaningful similarities and meaningful differences."
+  '2.7': "Comparison asks you to explain the networks together rather than retell them one at a time. Today you compare the Silk Roads, Indian Ocean, and trans-Saharan systems through the same categories: environment and transportation, commercial practices and finance, demand and productive capacity, the role of states and cities, and the cultural or environmental effects of exchange. The goal is an AP-style argument built from both meaningful similarities and meaningful differences.",
+
+  /* Unit 3. Same rule: the lesson's own targets, addressed to a student. */
+
+  '3.1': "Between 1450 and 1750, a handful of land-based empires grew far larger than any before them, and gunpowder is a big part of why. Today you follow how cannons and firearms changed warfare, where the Ottoman, Safavid, Mughal, and Manchu empires expanded, and how growing empires collided in rivalries such as the Safavid and Mughal conflict over Kandahar and Songhai's conflict with Morocco."
 };
 
 /* ---------------------------------------------------------
@@ -262,6 +266,9 @@ const MODULE_NOTES = {
   },
   '2.6': {
     '01': 'Where the plague originated, and the trade routes that carried it from Central Asia into Europe and North Africa.'
+  },
+  '3.1': {
+    '01': 'Where Ottoman expansion began, which directions it spread, and how seas and straits shaped the routes of conquest.'
   }
 };
 

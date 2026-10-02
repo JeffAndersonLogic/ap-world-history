@@ -39,6 +39,7 @@ in this folder, the schedule, and git history.
 | 2.5 | 2026-09-28 | 2026-09-29 | Stale | 2026-09-23 | `topic-2-5-2026-09-23.md` |
 | 2.6 | 2026-09-30 | 2026-10-01 | Fresh | 2026-09-28 | `topic-2-6-2026-09-28.md` |
 | 2.7 | 2026-10-02 | 2026-10-05 | Never | - | - |
+| 3.1 | 2026-10-09 | 2026-10-19 | Never | - | - |
 
 ## Totals
 
@@ -47,7 +48,7 @@ in this folder, the schedule, and git history.
 | Fresh | 1 | audited, and nothing has changed since |
 | Stale | 2 | the topic changed after its audit |
 | Review | 0 | a file shared across the unit changed after its audit |
-| Never | 17 | no audit record exists |
+| Never | 18 | no audit record exists |
 
 ## Is the weekly sweep alive?
 

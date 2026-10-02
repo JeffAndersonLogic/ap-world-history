@@ -672,9 +672,10 @@ window.BEHISTORICAL_SCHEDULE = {
     },
 
     /* ---- Topic 2.7, Comparison ----------------------------- */
-    // No reading assigned here: Topic 3.1 exists but is not yet in this
-    // schedule, so there is no next meeting to derive a due date from. Add
-    // the 3.1 reading here once Unit 3 gets dated class days.
+    // No reading is assigned here on purpose. Topic 3.1 is now scheduled
+    // (Green Fri 10/9, Silver Mon 10/19), but the Eras 2 exam falls between
+    // this topic and it (PSAT Tue 10/6, exam Wed 10/7 and Thu 10/8) and fall
+    // break follows. Assigning a 3.1 reading here is Jeff's call.
     // Module 09 now exists for 2.7, but the Canvas required-work subset intentionally
     // remains 05, 06, 07, and 10. BeInTheRoom is available as optional enrichment.
     // field at all). This topic really runs 01-08 and 10, nine modules.
@@ -690,6 +691,29 @@ window.BEHISTORICAL_SCHEDULE = {
       cohort: 'silver',
       topic: '2.7',
       modules: ['05', '06', '07', '10'],
+      homework: ''
+    },
+
+    /* ---- Topic 3.1, Empires Expand ------------------------ */
+    // Green meets Fri 10/9, the day after the Eras 2 exam (Wed 10/7 Green,
+    // Thu 10/8 Silver; Tue 10/6 is the PSAT and neither cohort). Fall break
+    // follows, so Silver's first meeting is Mon 10/19. The two rooms are a
+    // week and a half apart, which is why neither carries a reading.
+    // `modules` is a PROPOSAL mirroring Topic 2.6's shape, not a decision:
+    // which modules are required is Jeff's teaching call, and it feeds both
+    // this board and the Canvas assignment. See docs/TOPIC-3-1-STORY-DRAFT.md.
+    {
+      date: '2026-10-09',
+      cohort: 'green',
+      topic: '3.1',
+      modules: ['01', '02', '06', '09', '10'],
+      homework: ''
+    },
+    {
+      date: '2026-10-19',
+      cohort: 'silver',
+      topic: '3.1',
+      modules: ['01', '02', '06', '09', '10'],
       homework: ''
     }
   ],
