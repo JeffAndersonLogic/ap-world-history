@@ -1456,7 +1456,11 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '07', title: 'Evidence Lab' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Complete the Unit 1 and Unit 2 Progress Checks in AP Classroom before your Eras 2 Exam.', due: 'Wednesday, October 7' },
+        { text: 'Study with the Eras 2 Exam Study Guide, linked in Canvas and on the Unit 1 and Unit 2 pages.', due: 'Wednesday, October 7' }
+      ],
+      homeworkDue: 'Wednesday, October 7'
     },
     /* 2026-10-05  <-  lesson-2-7-comparison.js */
     {
@@ -1480,7 +1484,11 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '07', title: 'Evidence Lab' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Complete the Unit 1 and Unit 2 Progress Checks in AP Classroom before your Eras 2 Exam.', due: 'Thursday, October 8' },
+        { text: 'Study with the Eras 2 Exam Study Guide, linked in Canvas and on the Unit 1 and Unit 2 pages.', due: 'Thursday, October 8' }
+      ],
+      homeworkDue: 'Thursday, October 8'
     }
   ],
 

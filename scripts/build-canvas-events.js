@@ -578,6 +578,74 @@ function homeworkCell(topic) {
   return out.join('\n');
 }
 
+/* ---------------------------------------------------------
+   Work and links that live outside BeHistorical
+
+   Two optional schedule fields, both read only here:
+
+     outsideWork  required work done on another site, such as the
+                  AP Classroom progress checks before an exam:
+                    { where: 'AP Classroom', href: 'https://...',
+                      tasks: ['Unit 1 Progress Check', ...],
+                      note: 'optional line under the list' }
+     resources    links a student studies from, such as a study
+                  guide: [{ text, href, desc }]. A relative href is
+                  a page in this repo and must exist on disk, so a
+                  renamed study guide fails the build rather than
+                  shipping a blue underlined 404 into Canvas.
+
+   The plain homework strings on the same day still carry the task
+   to the board, which cannot click anything. These carry the links.
+   --------------------------------------------------------- */
+function resourceHref(href) {
+  const h = String(href || '').trim();
+  if (/^https?:\/\//.test(h)) return h;
+  const local = h.replace(/^\/+/, '').split(/[?#]/)[0];
+  if (!local || !fs.existsSync(path.join(ROOT, local))) {
+    throw new Error(`resource link "${h}" names no file in this repository`);
+  }
+  return `${BASE_URL}/${h.replace(/^\/+/, '')}`;
+}
+
+function linkLine(text, href, desc) {
+  return (
+    `                    <li style="margin: 0 0 6px 0;"><a class="inline_disabled" href="${resourceHref(href)}" ` +
+    `target="_blank" rel="noopener" style="font-family: ${UI}; font-size: 14px; color: ${OXIDIZED}; font-weight: bold;">${esc(text)}</a>` +
+    `${desc ? ' ' + esc(desc) : ''}</li>`
+  );
+}
+
+function resourcesCell(topic) {
+  const lines = [];
+  const w = topic.outsideWork;
+  if (w && w.href) lines.push(linkLine(w.where, w.href, w.linkDesc || ''));
+  for (const r of topic.resources || []) lines.push(linkLine(r.text, r.href, r.desc || ''));
+  if (!lines.length) return '';
+  return [
+    `                <ul style="margin: 0 0 0 18px; padding: 0; font-family: ${BODY}; font-size: 15px; line-height: 1.5; color: ${INK};">`,
+    ...lines,
+    '                </ul>'
+  ].join('\n');
+}
+
+function outsideWorkBlock(topic) {
+  const w = topic.outsideWork;
+  if (!w || !w.tasks || !w.tasks.length) return [];
+  const out = [
+    `                <p style="font-family: ${UI}; font-size: 12px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: ${DEEP_BRONZE}; margin: 16px 0 6px;">Also required, in ${esc(w.where)}</p>`,
+    `                <ul style="margin: 0 0 0 18px; padding: 0; font-family: ${BODY}; font-size: 15px; line-height: 1.5; color: ${INK};">`,
+    ...w.tasks.map((t) => `                    <li style="margin: 0 0 6px 0;"><strong>${esc(t)}.</strong></li>`),
+    '                </ul>'
+  ];
+  if (w.href) {
+    out.push(`                <p style="font-family: ${UI}; font-size: 14px; margin: 8px 0 0 0;"><a class="inline_disabled" href="${resourceHref(w.href)}" target="_blank" rel="noopener" style="color: ${OXIDIZED}; font-weight: bold;">Open ${esc(w.where)}</a></p>`);
+  }
+  if (w.note) {
+    out.push(`                <p style="font-family: ${BODY}; font-size: 14px; color: ${MUTED}; margin: 8px 0 0 0;">${esc(w.note)}</p>`);
+  }
+  return out;
+}
+
 function buildEvent(topic) {
   return [
     band(topic),
@@ -587,6 +655,7 @@ function buildEvent(topic) {
     row('LEARNING TARGETS', bulletList(topic.targets, topic.noTargetsMessage)),
     row('SUCCESS CRITERIA', bulletList(topic.criteria, topic.noCriteriaMessage)),
     row("TONIGHT'S WORK", homeworkCell(topic)),
+    ...(resourcesCell(topic) ? [row('STUDY RESOURCES', resourcesCell(topic))] : []),
     row('BeHistorical Link',
       `                <p style="font-family: ${UI}; font-size: 14px; margin: 0;"><a class="inline_disabled" href="${topic.href}" target="_blank" rel="noopener" style="color: ${OXIDIZED}; font-weight: bold;">${esc(topic.linkText)}</a></p>`),
     row('ASSIGNMENT', `                <p style="font-family: ${UI}; font-size: 14px; color: ${MUTED}; margin: 0;">[INSERT ASSIGNMENT LINK]</p>`),
@@ -693,6 +762,7 @@ function requiredCell(topic) {
   out.push(`                <ul style="margin: 0 0 0 18px; padding: 0; font-family: ${BODY}; font-size: 15px; line-height: 1.5; color: ${INK};">`);
   req.forEach((m) => out.push(moduleLine(topic, m)));
   out.push('                </ul>');
+  out.push(...outsideWorkBlock(topic));
   return out.join('\n');
 }
 
@@ -743,7 +813,9 @@ function submitCell(topic) {
     `                    <li style="margin: 0 0 8px 0;">Come back here, paste into the text box, and submit.</li>`,
     '                </ol>',
     `                <p style="font-family: ${BODY}; font-size: 14px; color: ${MUTED}; margin: 10px 0 0 0;">The First &amp; 10 answers are the fragile ones. The reading opens in its own window, so if you never open it, those three slots come through blank.</p>`
-  ].join('\n');
+  ].concat(topic.outsideWork && topic.outsideWork.tasks && topic.outsideWork.tasks.length
+    ? [`                <p style="font-family: ${BODY}; font-size: 14px; color: ${INK}; margin: 10px 0 0 0;"><strong>The ${esc(topic.outsideWork.where)} work is submitted inside ${esc(topic.outsideWork.where)}</strong> when you finish it. It does not go in this text box, and your teacher sees it there.</p>`]
+    : []).join('\n');
 }
 
 /* The DUE row is the same per-cohort chips the event carries under Tonight's
@@ -793,9 +865,10 @@ function buildAssignment(topic) {
     row('SUCCESS CRITERIA', bulletList(topic.criteria, topic.noCriteriaMessage)),
     row('HOW TO SUBMIT', submitCell(topic)),
     row('BeHistorical Link',
-      `                <p style="font-family: ${UI}; font-size: 14px; margin: 0;"><a class="inline_disabled" href="${topic.href}" target="_blank" rel="noopener" style="color: ${OXIDIZED}; font-weight: bold;">${esc(topic.linkText)}</a></p>`),
-    row('DUE', dueCell(topic))
+      `                <p style="font-family: ${UI}; font-size: 14px; margin: 0;"><a class="inline_disabled" href="${topic.href}" target="_blank" rel="noopener" style="color: ${OXIDIZED}; font-weight: bold;">${esc(topic.linkText)}</a></p>`)
   );
+  if (resourcesCell(topic)) rows.push(row('STUDY RESOURCES', resourcesCell(topic)));
+  rows.push(row('DUE', dueCell(topic)));
   return [
     band(topic),
     `<table style="border-collapse: collapse; width: 100%; border-color: ${RULE}; border-style: solid;" border="1" cellpadding="10">`,
@@ -918,6 +991,8 @@ function build() {
       hasRequired: Boolean(entry.modules),
       moduleDescs: found ? found.moduleDescs : {},
       homework,
+      outsideWork: entry.outsideWork || null,
+      resources: Array.isArray(entry.resources) ? entry.resources : [],
       due: homework.length ? due : '',
       href: found ? found.href : `${BASE_URL}/`,
       linkText: found ? found.linkText : 'BeHistorical'
@@ -956,6 +1031,8 @@ function build() {
         hasRequired: day.hasRequired,
         moduleDescs: day.moduleDescs,
         homework: day.homework,
+        outsideWork: day.outsideWork,
+        resources: day.resources,
         href: day.href,
         linkText: day.linkText,
         noTargetsMessage: day.isTopicDay
@@ -990,6 +1067,14 @@ function build() {
       warn(`${topic.code}: ${day.cohort.label} is assigned different homework from ` +
         `${topic.meetings[0].cohort.label}. The event prints ${topic.meetings[0].cohort.label}'s. ` +
         `Split them into two Canvas assignments, or make the schedule agree.`);
+    }
+
+    if (topic.meetings.length &&
+        JSON.stringify([topic.outsideWork, topic.resources]) !==
+        JSON.stringify([day.outsideWork, day.resources])) {
+      warn(`${topic.code}: ${day.cohort.label} has different outsideWork or resources from ` +
+        `${topic.meetings[0].cohort.label}. Canvas prints ${topic.meetings[0].cohort.label}'s. ` +
+        'Make the schedule agree.');
     }
 
     topic.meetings.push({ date: day.date, cohort: day.cohort, due: day.due });
@@ -1200,7 +1285,9 @@ function build() {
     asg.push(`**Topic:** \`${topic.code}\`  **Full title:** ${topic.title || '(none)'}`);
     asg.push('');
     asg.push(`**Required:** ${topic.required.length} of ${topic.modules.length} modules, ` +
-      `${topic.required.map((m) => m.number).join(', ')}`);
+      `${topic.required.map((m) => m.number).join(', ')}` +
+      (topic.outsideWork && topic.outsideWork.tasks && topic.outsideWork.tasks.length
+        ? `, plus in ${topic.outsideWork.where}: ${topic.outsideWork.tasks.join(', ')}` : ''));
     asg.push('');
     asg.push('**Assign to, one row per section:**');
     asg.push('');

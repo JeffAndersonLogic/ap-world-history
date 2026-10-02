@@ -672,25 +672,54 @@ window.BEHISTORICAL_SCHEDULE = {
     },
 
     /* ---- Topic 2.7, Comparison ----------------------------- */
-    // No reading assigned here: Topic 3.1 exists but is not yet in this
-    // schedule, so there is no next meeting to derive a due date from. Add
-    // the 3.1 reading here once Unit 3 gets dated class days.
-    // Module 09 now exists for 2.7, but the Canvas required-work subset intentionally
-    // remains 05, 06, 07, and 10. BeInTheRoom is available as optional enrichment.
-    // field at all). This topic really runs 01-08 and 10, nine modules.
+    // The last topic before the Eras 2 Exam, so tonight's work is exam
+    // review: the Unit 1 and Unit 2 Progress Checks in AP Classroom and the
+    // Eras 2 study guide. There is no later class day in this list before
+    // the exam, so the due date is typed: each cohort's own exam day.
+    // `outsideWork` and `resources` are read by build-canvas-events.js and
+    // become clickable links in the Canvas event and assignment; the plain
+    // homework lines carry the same tasks to the board.
+    // Module 09 exists for 2.7, but the Canvas required-work subset
+    // intentionally remains 05, 06, 07, and 10. BeInTheRoom is optional.
     {
       date: '2026-10-02',
       cohort: 'green',
       topic: '2.7',
       modules: ['05', '06', '07', '10'],
-      homework: ''
+      homework: [
+        'Complete the Unit 1 and Unit 2 Progress Checks in AP Classroom before your Eras 2 Exam.',
+        'Study with the Eras 2 Exam Study Guide, linked in Canvas and on the Unit 1 and Unit 2 pages.'
+      ],
+      homeworkDue: 'Wednesday, October 7',
+      outsideWork: {
+        where: 'AP Classroom',
+        href: 'https://apclassroom.collegeboard.org/',
+        tasks: ['Unit 1 Progress Check', 'Unit 2 Progress Check'],
+        note: 'Sign in with your College Board account, open AP World History: Modern, and find both progress checks under Assignments. Complete every part your teacher has unlocked there before your Eras 2 Exam.'
+      },
+      resources: [
+        { text: 'Eras 2 Exam Study Guide', href: 'study-guides/era-2-exam-study-guide.html', desc: 'Units 1 and 2, c. 1200 to c. 1450.' }
+      ]
     },
     {
       date: '2026-10-05',
       cohort: 'silver',
       topic: '2.7',
       modules: ['05', '06', '07', '10'],
-      homework: ''
+      homework: [
+        'Complete the Unit 1 and Unit 2 Progress Checks in AP Classroom before your Eras 2 Exam.',
+        'Study with the Eras 2 Exam Study Guide, linked in Canvas and on the Unit 1 and Unit 2 pages.'
+      ],
+      homeworkDue: 'Thursday, October 8',
+      outsideWork: {
+        where: 'AP Classroom',
+        href: 'https://apclassroom.collegeboard.org/',
+        tasks: ['Unit 1 Progress Check', 'Unit 2 Progress Check'],
+        note: 'Sign in with your College Board account, open AP World History: Modern, and find both progress checks under Assignments. Complete every part your teacher has unlocked there before your Eras 2 Exam.'
+      },
+      resources: [
+        { text: 'Eras 2 Exam Study Guide', href: 'study-guides/era-2-exam-study-guide.html', desc: 'Units 1 and 2, c. 1200 to c. 1450.' }
+      ]
     }
   ],
 

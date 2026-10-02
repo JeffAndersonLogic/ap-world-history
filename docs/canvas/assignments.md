@@ -1185,14 +1185,14 @@ block so the short name can be written from them, not guessed at here.
 
 **Topic:** `2.7`  **Full title:** Comparison of Economic Exchange
 
-**Required:** 4 of 10 modules, 05, 06, 07, 10
+**Required:** 4 of 10 modules, 05, 06, 07, 10, plus in AP Classroom: Unit 1 Progress Check, Unit 2 Progress Check
 
 **Assign to, one row per section:**
 
 | Section | Taught | Due |
 | --- | --- | --- |
-| Green Day | Friday, October 2 | no later meeting |
-| Silver Day | Monday, October 5 | no later meeting |
+| Green Day | Friday, October 2 | Wednesday, October 7 |
+| Silver Day | Monday, October 5 | Thursday, October 8 |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
@@ -1226,6 +1226,13 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose TWO cards from different networks that address the SAME category. Balance the evidence before writing the comparison.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> Different geography produced different solutions to long-distance exchange.</li>
                 </ul>
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #4a2a15; margin: 16px 0 6px;">Also required, in AP Classroom</p>
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;"><strong>Unit 1 Progress Check.</strong></li>
+                    <li style="margin: 0 0 6px 0;"><strong>Unit 2 Progress Check.</strong></li>
+                </ul>
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 8px 0 0 0;"><a class="inline_disabled" href="https://apclassroom.collegeboard.org/" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Open AP Classroom</a></p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 8px 0 0 0;">Sign in with your College Board account, open AP World History: Modern, and find both progress checks under Assignments. Complete every part your teacher has unlocked there before your Eras 2 Exam.</p>
             </td>
         </tr>
         <tr>
@@ -1280,6 +1287,7 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 8px 0;">Come back here, paste into the text box, and submit.</li>
                 </ol>
                 <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">The First &amp; 10 answers are the fragile ones. The reading opens in its own window, so if you never open it, those three slots come through blank.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #151718; margin: 10px 0 0 0;"><strong>The AP Classroom work is submitted inside AP Classroom</strong> when you finish it. It does not go in this text box, and your teacher sees it there.</p>
             </td>
         </tr>
         <tr>
@@ -1292,12 +1300,24 @@ block so the short name can be written from them, not guessed at here.
         </tr>
         <tr>
             <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">STUDY RESOURCES</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;"><a class="inline_disabled" href="https://apclassroom.collegeboard.org/" target="_blank" rel="noopener" style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #6b3e1f; font-weight: bold;">AP Classroom</a></li>
+                    <li style="margin: 0 0 6px 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/study-guides/era-2-exam-study-guide.html" target="_blank" rel="noopener" style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #6b3e1f; font-weight: bold;">Eras 2 Exam Study Guide</a> Units 1 and 2, c. 1200 to c. 1450.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DUE</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 0 0 10px;">Most of this work is meant to be completed during class. If it is not finished in the block, the next class meeting is the normal soft deadline, and the hard deadline is before the next unit exam, unless your teacher tells you otherwise.</p>
                 <p style="margin: 0;">
-                    <span style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c;">No later meeting in the schedule, so no due date is derived.</span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px;">Green due Wednesday, October 7</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px;">Silver due Thursday, October 8</span></span>
                 </p>
             </td>
         </tr>
