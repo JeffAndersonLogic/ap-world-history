@@ -1,5 +1,11 @@
 # Socrates, the course-wide AI coach
 
+The Era 2 study guide also uses a separate MagicSchool chatbot named
+**Socrates: Teach Me**. It shares the Socrates voice but has a different job:
+the student teaches and the bot checks against private notes prepared from the
+visible guide cards. Keeping it separate protects the live Checkpoint 2 and
+BeInTheRoom behavior while Teach Me is measured and revised.
+
 Socrates is the MagicSchool chatbot behind join code `czwb9Q`. Students reach him
 from exactly two places: the AI Coach bridge on Checkpoint 2, and each
 BeInTheRoom scenario's own paste. See "The two surfaces" below.
@@ -51,18 +57,25 @@ the other 76 topics get coached with.
 
 ## The files
 
-Everything except the persona is generated. Rebuild with
+Everything except the two personas is generated. Rebuild with
 `node scripts/build-socrates.js`, or `npm run build:socrates`.
 
 - `socrates-instructions.md`, paste into the MagicSchool instructions field. The
   persona plus a one-line-per-unit index of which topics exist.
+- `socrates-teach-me-instructions.md`, paste into the separate Socrates: Teach
+  Me chatbot. Give this chatbot no course spine or other attachment.
 - `socrates-course-spine.md`, upload as the chatbot's attachment.
 - `spine/socrates-spine-<unit>.md`, the same content split ten ways. Use these
   instead if the single file hits an upload limit, or if retrieval is picking the
   wrong topic: asked for Topic 6.4, ten small documents choose better than one of
   119 pages. Largest is Unit 8 at 39 KB.
 - `socrates-paste-contract.md`, the exact shape of the message a page sends, and
-  the three files that have to agree on it.
+  the files that have to agree on it.
+
+The hand-authored Teach Me source is
+`scripts/lib/socrates-teach-me-persona.js`. The guide passes visible card text
+through `buildTeachMePrompt()` in the existing shared prompt builder. There is
+no second builder and no hidden copy of the study guide content.
 
 ## Deploying a change
 
@@ -79,6 +92,25 @@ Step 4 and step 5 are the only manual steps, and they are manual because they
 happen in a vendor web UI. Nothing in this repo can log into MagicSchool, so
 nothing here can prove the bot is configured correctly. What the repo can prove,
 and does, is that the documents are reproducible from the lesson data.
+
+## Deploying Teach Me
+
+1. Create one new MagicSchool chatbot named `Socrates: Teach Me` in Jeff's
+   classroom. All students use this one room, including students who reached the
+   shared site with `?classroom=kelly`.
+2. Paste `socrates-teach-me-instructions.md` into its instructions field.
+3. Do not add the course spine or any other knowledge attachment.
+4. Copy the chatbot's student join URL into `TEACH_ME_URL` in
+   `scripts/lib/classroom-config.js`.
+5. Run `node scripts/build-classroom-config.js`, then run the offline and browser
+   test suites.
+6. Open the Era 2 study guide, use a Teach Me button, copy the prepared message,
+   and verify the chatbot's first reply is the exact three-line opening before
+   publishing the site change.
+
+Until step 4 is complete, the guide builds and copies every prepared message but
+keeps the Open Socrates link disabled. That prevents students from being sent to
+the existing coaching chatbot by mistake.
 
 ## Version 2, the length retune, 2026-08-29
 

@@ -80,6 +80,7 @@ const SUITES = {
     ['scripts/test/topic-1-7-five-questions.test.js', 'Topic 1.7 five-question path'],
     ['scripts/test/topic-2-2-os.test.js', 'Topic 2.2 cinematic teaching OS and projection contract'],
     ['scripts/test/coach-prompt.test.js', 'checkpoint paste matches the Node contract'],
+    ['scripts/test/socrates-teach-me-guide.test.js', '20 Teach Me pastes match the reviewed guide fixture'],
     ['scripts/test/beintheroom-capture.test.js', 'BeInTheRoom reflection survives a reopen and reaches Gather All My Work'],
     ['scripts/test/room-v2-story.test.js', 'BeInTheRoom v2 story mode plays in order; standard v2 unchanged'],
     ['scripts/test/ebook-a11y.test.js', 'eBook landmarks, focus, reflow, contrast'],

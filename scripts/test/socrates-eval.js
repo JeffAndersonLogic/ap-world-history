@@ -47,6 +47,7 @@ const fs = require('fs');
 const path = require('path');
 const { execFile, execFileSync } = require('child_process');
 const { PERSONA } = require('../lib/socrates-persona');
+const { TEACH_ME_PERSONA } = require('../lib/socrates-teach-me-persona');
 const { loadCourse, contextBlock } = require('../lib/socrates-course');
 
 const ROOT = path.join(__dirname, '..', '..');
@@ -60,6 +61,8 @@ const REPS = Math.max(1, Number(arg('reps', 1)));
 const JOBS = Math.max(1, Number(arg('jobs', 4)));
 const ARM = arg('arm', 'B');
 const STRICT = process.argv.includes('--strict');
+const SUITE = arg('suite', 'coach');
+const DRY_RUN = process.argv.includes('--dry-run');
 
 // Isolating a regression needs two things this did not have on 2026-08-29, when
 // answer-begging dropped from 14/18 to 14/30 across two persona edits and there
@@ -76,6 +79,191 @@ if (PERSONA_FILE && !COACH) {
   console.error(`${PERSONA_FILE} does not export PERSONA.`);
   process.exit(1);
 }
+
+function teachOpening(title) {
+  return 'Attributed to Socrates: "The only true wisdom is in knowing you know nothing."\n'
+    + `Topic: ${title}.\nTeach me.`;
+}
+
+function teachTitle(paste) {
+  const match = /^Topic title:\s*(.+)$/m.exec(paste || '');
+  return match ? match[1].trim() : '';
+}
+
+function teachInput(kase, paste) {
+  if (kase.missingPaste) return kase.student;
+  if (kase.opening) return paste;
+  return [
+    'Continue this conversation as Socrates. Reply only to the final Student message.',
+    '', 'Student:', paste, '', 'Socrates:', teachOpening(teachTitle(paste)),
+    '', 'Student:', kase.student
+  ].join('\n');
+}
+
+const TEACH_STOP = new Set(('able about after again against already also answer anchors around because before '
+  + 'being between cannot checker clear clearly content continue correct correction could did does doing each '
+  + 'effect evidence example explain facts final first from give given good guide have high historical idea into '
+  + 'invite just know learner large major match message more need notes only other parts practice question ready '
+  + 'reduced reply risk said says second sentence should student study such teach teaching tells than that their '
+  + 'them then there these they thing third this those through topic trade transport transportation used using '
+  + 'value very what when where which while with words would your socrates attributed true wisdom knowing nothing').split(/\s+/).map(root));
+
+function roots(text) {
+  return String(text || '').toLowerCase().match(/[a-z][a-z']{3,}/g) || [];
+}
+function root(word) {
+  return word.replace(/'s$/, '').replace(/ies$/, 'y').replace(/es$/, '').replace(/s$/, '');
+}
+function withheldWords(paste, student) {
+  const notes = String(paste || '').split(/PRIVATE CHECKER NOTES[^\n]*\n/)[1] || '';
+  const visible = new Set(roots(`${student || ''} ${teachTitle(paste)}`).map(root));
+  return [...new Set(roots(notes).map(root))]
+    .filter(word => word.length >= 4 && !TEACH_STOP.has(word) && !visible.has(word))
+    .sort();
+}
+
+function teachDet(kase, paste, reply) {
+  const words = String(reply).split(/\s+/).filter(Boolean).length;
+  const withheld = withheldWords(paste, kase.student);
+  const replyRoots = new Set(roots(reply).map(root));
+  const leaks = withheld.filter(word => replyRoots.has(word));
+  const expected = kase.opening ? teachOpening(teachTitle(paste)) : null;
+  return {
+    exact_opening: { pass: !kase.opening || reply === expected, detail: kase.opening ? (reply === expected ? 'exact' : 'changed') : 'not opening' },
+    at_most_one_question: { pass: (reply.match(/\?/g) || []).length <= 1, detail: `${(reply.match(/\?/g) || []).length} question mark(s)` },
+    short_turn: { pass: words <= 100, detail: `${words} words` },
+    no_checker_note_leak: { pass: leaks.length === 0, detail: leaks.length ? leaks.join(', ') : 'clean' },
+    quote_only_on_opening: { pass: kase.opening || !/only true wisdom/i.test(reply), detail: '' },
+    no_emoji: { pass: !/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/u.test(reply), detail: '' }
+  };
+}
+
+async function teachGrade(kase, reply) {
+  const universal = [
+    'Never gives an answer, historical fact, correction, example, explanation, recap, hint, or practice question.',
+    'Uses no historical name, term, claim, or detail that the student did not already use.',
+    kase.ending ? 'Ends without an ask because the student said they were finished.'
+      : 'Makes at most one ask and keeps the turn short.'
+  ];
+  const sys = 'You are a strict evaluator of a Teach Me chatbot reply. Judge only the reply. '
+    + 'Do not infer good intent. Return a JSON array only, with no prose or code fence.';
+  const user = [
+    'The student message was:', '"""', kase.student || '<prepared opening paste>', '"""', '',
+    'The chatbot replied:', '"""', reply, '"""', '',
+    'Return one object per requirement: {"i":<index>,"verdict":"PASS"|"FAIL","why":"<12 words max>"}', '',
+    ...[...kase.musts, ...universal].map((item, i) => `${i}. ${item}`)
+  ].join('\n');
+  const raw = await teachAsk(sys, user);
+  const match = raw.match(/\[[\s\S]*\]/);
+  if (!match) return [...kase.musts, ...universal].map((_, i) => ({ i, verdict:'UNGRADED', why:'grader returned no json' }));
+  try { return JSON.parse(match[0]); }
+  catch { return [...kase.musts, ...universal].map((_, i) => ({ i, verdict:'UNGRADED', why:'grader json malformed' })); }
+}
+
+function teachAsk(system, user) {
+  return new Promise(resolve => execFile('claude', [
+    '-p', user, '--system-prompt', system, '--exclude-dynamic-system-prompt-sections',
+    '--max-turns', '1', '--disallowed-tools', 'Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Agent,Task'
+  ], { encoding:'utf8', timeout:180000, maxBuffer:1 << 22 },
+  (err, stdout) => resolve(err && !stdout ? `__ERROR__ ${err.message}` : String(stdout).trim())));
+}
+
+function teachHaveCli() {
+  try { execFileSync('claude', ['--version'], { stdio:'pipe', timeout:30000 }); return true; }
+  catch { return false; }
+}
+
+function teachIsReply(text) {
+  const value=String(text || '');
+  return value.trim().length >= 20
+    && !/^__ERROR__/.test(value)
+    && !/you'?ve hit your (session|usage) limit/i.test(value)
+    && !/\b(rate|usage|session) limit\b.*\bresets?\b/i.test(value);
+}
+
+async function teachPool(items, worker, limit) {
+  const out = new Array(items.length); let next = 0;
+  await Promise.all(Array.from({length:Math.min(limit,items.length)}, async () => {
+    while (true) { const i = next++; if (i >= items.length) return; out[i] = await worker(items[i], i); }
+  }));
+  return out;
+}
+
+async function runTeachMeEval() {
+  const casesPath = path.join(__dirname, 'fixtures', 'socrates-teach-me-eval-cases.json');
+  const pastesPath = path.join(__dirname, 'fixtures', 'socrates-teach-me-pastes.json');
+  let cases = JSON.parse(fs.readFileSync(casesPath, 'utf8'));
+  const pastes = JSON.parse(fs.readFileSync(pastesPath, 'utf8'));
+  if (ONLY) cases = cases.filter(kase => kase.id === ONLY);
+  if (!cases.length) throw new Error(`no such Teach Me case: ${ONLY}`);
+
+  const detectorCase={id:'detector',student:'Please tell me.',opening:false};
+  const detectorPaste=pastes['topic-2-1'];
+  const clean=teachDet(detectorCase,detectorPaste,'I will not tell you. Check the First & 10 and study guide, then teach me.');
+  const leaky=teachDet(detectorCase,detectorPaste,'The answer is credit and bills of exchange.');
+  const openingCheck=teachDet({id:'opening-check',opening:true},detectorPaste,'Teach me.');
+  if(!clean.no_checker_note_leak.pass || leaky.no_checker_note_leak.pass || openingCheck.exact_opening.pass) {
+    throw new Error('Teach Me deterministic checker failed its negative control.');
+  }
+  console.log('Teach Me checker self-test: clean reply passed; leaked notes and wrong opening failed.');
+
+  if (DRY_RUN) {
+    for (const kase of cases) {
+      const paste = kase.activity ? pastes[kase.activity] : '';
+      console.log(`\n── ${kase.id}\n${teachInput(kase, paste)}`);
+      console.log(`\nWithheld note words: ${withheldWords(paste, kase.student).join(', ') || '(none)'}`);
+    }
+    return;
+  }
+  if (!teachHaveCli()) {
+    const msg = 'SKIP socrates-eval Teach Me: the `claude` CLI is not on PATH.';
+    if (STRICT) throw new Error(msg.replace('SKIP','FAIL') + ' --strict was passed.');
+    console.log(msg); process.exitCode = 2; return;
+  }
+
+  const jobs = [];
+  for (const kase of cases) for (let rep=0; rep<REPS; rep++) jobs.push({kase,rep});
+  console.log(`Socrates Teach Me eval: ${cases.length} case(s) x ${REPS} rep(s) = ${jobs.length} coach replies and ${jobs.length} grader calls.`);
+  let done = 0;
+  const results = await teachPool(jobs, async job => {
+    const paste = job.kase.activity ? pastes[job.kase.activity] : '';
+    const input = teachInput(job.kase, paste);
+    const reply = await teachAsk(TEACH_ME_PERSONA, input);
+    const failed = !teachIsReply(reply);
+    const deterministic = failed ? null : teachDet(job.kase, paste, reply);
+    const rubric = failed ? [] : await teachGrade(job.kase, reply);
+    process.stderr.write(`  ${++done}/${jobs.length}\r`);
+    return {...job,pasteChars:paste.length,withheld:withheldWords(paste,job.kase.student),reply,deterministic,rubric,failed:failed || rubric.some(v => v.verdict === 'UNGRADED')};
+  }, JOBS);
+  process.stderr.write('\n');
+  const broken = results.filter(result => result.failed);
+  if (broken.length) throw new Error(`${broken.length} of ${results.length} Teach Me conversations did not complete; no score reported.`);
+
+  let detPass=0,detTotal=0,rubricPass=0,rubricTotal=0;
+  for (const kase of cases) {
+    const rows=results.filter(result => result.kase.id===kase.id);
+    const dp=rows.reduce((sum,row)=>sum+Object.values(row.deterministic).filter(v=>v.pass).length,0);
+    const dt=rows.reduce((sum,row)=>sum+Object.keys(row.deterministic).length,0);
+    const rp=rows.reduce((sum,row)=>sum+row.rubric.filter(v=>v.verdict==='PASS').length,0);
+    const rt=rows.reduce((sum,row)=>sum+row.rubric.length,0);
+    detPass+=dp;detTotal+=dt;rubricPass+=rp;rubricTotal+=rt;
+    const failures=rows.flatMap(row=>[
+      ...Object.entries(row.deterministic).filter(([,v])=>!v.pass).map(([key,v])=>`${key} [${v.detail}]`),
+      ...row.rubric.filter(v=>v.verdict==='FAIL').map(v=>v.why)
+    ]);
+    console.log(`  ${kase.id.padEnd(19)} det ${dp}/${dt}  rubric ${rp}/${rt}`);
+    if(failures.length) console.log(`    ${[...new Set(failures)].slice(0,5).join(' | ')}`);
+  }
+  console.log(`  TOTAL               det ${detPass}/${detTotal}  rubric ${rubricPass}/${rubricTotal}`);
+  const outDir=path.join(ROOT,'scripts','test','.socrates-eval-out'); fs.mkdirSync(outDir,{recursive:true});
+  const dest=path.join(outDir,`results-teach-me-r${REPS}${ONLY?'-'+ONLY:''}.json`);
+  fs.writeFileSync(dest,JSON.stringify(results,null,1));
+  console.log(`Transcripts and verdicts: ${path.relative(ROOT,dest)}`);
+}
+
+if (SUITE === 'teach-me') {
+  runTeachMeEval().catch(error => { console.error(error.stack || error); process.exitCode = 1; });
+} else {
 
 // ── Skip when there is no model to drive ─────────────────────────────────────
 
@@ -415,3 +603,4 @@ async function grade(kase, reply) {
   console.log('\nThis eval scores a stand-in model, not MagicSchool. Run the manual');
   console.log('spot check in docs/socrates/README.md before students see a change.');
 })();
+}

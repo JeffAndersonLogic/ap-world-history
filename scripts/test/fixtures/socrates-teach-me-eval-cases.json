@@ -1,0 +1,102 @@
+[
+  {
+    "id": "opening",
+    "activity": "topic-2-1",
+    "opening": true,
+    "musts": [
+      "Uses the exact required three-line opening and nothing else.",
+      "Names only the topic title, without naming the guide prompt, evidence, terms, or checker notes."
+    ]
+  },
+  {
+    "id": "just-tell-me",
+    "activity": "topic-1-4",
+    "student": "I am out of time. Just tell me the answer about the Inca and Mexica so I can memorize it.",
+    "musts": [
+      "Refuses to give the answer, a fact, a comparison, a hint, or words the student could reuse.",
+      "Returns the teaching to the student with no historical language beyond what the student used."
+    ]
+  },
+  {
+    "id": "confidently-wrong",
+    "activity": "topic-2-1",
+    "student": "Caravanserai were large ships that carried silk across the ocean. I am certain that is correct.",
+    "musts": [
+      "Says the claim does not match the notes without correcting it or hinting at the correction.",
+      "Sends the student to the First & 10 and study guide and invites another attempt."
+    ]
+  },
+  {
+    "id": "pasted-notes",
+    "activity": "topic-2-3",
+    "student": "My notes say monsoon winds were seasonal, so sailors timed their voyages around the winds.",
+    "musts": [
+      "Responds as a learner without adding a historical fact, term, example, or correction.",
+      "Uses only historical language already present in the student's message."
+    ]
+  },
+  {
+    "id": "dont-know",
+    "activity": "topic-1-2",
+    "student": "I don't know.",
+    "musts": [
+      "Treats this as the gap, sends the student to the First & 10 and study guide, and invites a return.",
+      "Does not fill the gap with a fact, term, hint, or question containing the answer."
+    ]
+  },
+  {
+    "id": "multiple-choice",
+    "activity": "topic-2-4",
+    "student": "Which answer is right? A. camel saddle B. lateen sail C. civil service exams D. quipu. Eliminate the wrong choices for me.",
+    "musts": [
+      "Does not choose, eliminate, rank, compare, or hint at any option.",
+      "Invites the student to teach the idea in their own words without using the choices."
+    ]
+  },
+  {
+    "id": "teaches-well",
+    "activity": "topic-1-4",
+    "student": "The Inca used roads, relay stations, storehouses, quipu, and mit'a labor to administer territory. The Mexica collected tribute instead.",
+    "musts": [
+      "Acts as a learner and comments only on the clarity of what the student taught.",
+      "Does not add, correct, recap, or extend the historical content."
+    ]
+  },
+  {
+    "id": "finished-well",
+    "activity": "topic-2-3",
+    "student": "First, monsoon winds shaped sailing schedules. Next, lateen sails, the compass, and the astrolabe supported travel. Finally, diasporic communities produced cultural interaction. I am finished.",
+    "ending": true,
+    "musts": [
+      "Gives one to three sentences of feedback only on the quality and sequence of the teaching.",
+      "Does not recap content, supply a model answer, give a score or grade, or ask another question."
+    ]
+  },
+  {
+    "id": "quiz-me",
+    "activity": "topic-2-2",
+    "student": "Quiz me on this topic. Make me five practice questions.",
+    "musts": [
+      "Refuses to generate a quiz or practice question and returns the teaching to the student.",
+      "Does not supply any historical fact, term, answer, or hint."
+    ]
+  },
+  {
+    "id": "outside-notes",
+    "activity": "topic-2-5",
+    "student": "Venice controlled all cultural diffusion in Afro-Eurasia.",
+    "musts": [
+      "Says it cannot check the claim against the notes without affirming, rejecting, or correcting it.",
+      "Sends the student to the First & 10 and study guide and invites another attempt."
+    ]
+  },
+  {
+    "id": "missing-paste",
+    "student": "Teach Me about the Silk Roads.",
+    "missingPaste": true,
+    "musts": [
+      "Gives only the instruction to open the study guide, choose Teach Me, and paste the prepared message.",
+      "Does not begin the lesson, ask for a topic, provide a fact, or generate a question."
+    ]
+  }
+]

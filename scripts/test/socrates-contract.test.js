@@ -33,6 +33,7 @@ const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
 const { PERSONA } = require('../lib/socrates-persona');
+const { TEACH_ME_PERSONA } = require('../lib/socrates-teach-me-persona');
 
 const ROOT = path.join(__dirname, '..', '..');
 const DOCS = path.join(ROOT, 'docs', 'socrates');
@@ -70,6 +71,7 @@ console.log('\nPersona scope');
 // inside the phrase being searched for, which is a failing test that says
 // nothing about the persona.
 const FLAT = PERSONA.replace(/\s+/g, ' ');
+const TEACH_FLAT = TEACH_ME_PERSONA.replace(/\s+/g, ' ');
 
 // Naming the span of the course is not a leak, so the one legitimate mention of
 // a unit number is removed before the unit-number pattern runs.
@@ -88,6 +90,13 @@ if (leaked.length) {
   console.error('       Topic content belongs in the paste or the spine, never the persona.');
 } else {
   ok('no unit-specific content, date range, or unit number in the persona');
+}
+
+const teachLeaked = LEAKS.filter(r => r.test(TEACH_FLAT));
+if (teachLeaked.length) {
+  fail(`the Teach Me persona names unit-specific content: ${teachLeaked.map(String).join(', ')}`);
+} else {
+  ok('Teach Me persona carries no unit-specific content, date range, or unit number');
 }
 
 // The rules the eval measures. If one of these sentences is deleted the graded
@@ -162,6 +171,27 @@ REQUIRED.forEach(([re, what]) => {
   else fail(`persona is missing ${what}`);
 });
 
+const TEACH_REQUIRED = [
+  [/checker only/, 'the checker-only role'],
+  [/Never give an answer, historical fact, correction/, 'the no-answer and no-correction rule'],
+  [/Never quiz the student/, 'the no-quiz rule'],
+  [/checker notes do not count as the student's words/, 'the boundary between notes and student words'],
+  [/Attributed to Socrates: "The only true wisdom is in knowing you know nothing\." Topic: \[topic title\]\. Teach me\./, 'the exact opening'],
+  [/That does not match my notes/, 'the wrong-claim response'],
+  [/I cannot check that against my notes/, 'the unverifiable-claim response'],
+  [/First & 10 and the study guide/, 'the return-to-notes instruction'],
+  [/never choose, eliminate,\s+rank, compare, or hint at any option/, 'the multiple-choice refusal'],
+  [/practice question/, 'the practice-question refusal'],
+  [/one to three sentences about the quality of the teaching/, 'the teaching-quality ending'],
+  [/Do not recap the content, supply a model answer, or give a score or\s+grade/, 'the ending limits'],
+  [/Open the study guide, choose Teach Me for a topic or comparison/, 'the missing-paste redirect'],
+  [/Make only one ask per turn/, 'the one-ask rule']
+];
+TEACH_REQUIRED.forEach(([re, what]) => {
+  if (re.test(TEACH_FLAT)) ok(`Teach Me persona still carries ${what}`);
+  else fail(`Teach Me persona is missing ${what}`);
+});
+
 // ── 3. Every topic can produce a complete context block ──────────────────────
 //
 // The spine is the generator's own output, so reading the fields back off it is
@@ -204,8 +234,10 @@ console.log('\nPaste contract');
 const contract = fs.readFileSync(path.join(DOCS, 'socrates-paste-contract.md'), 'utf8');
 [
   'scripts/lib/socrates-persona.js',
+  'scripts/lib/socrates-teach-me-persona.js',
   'assets/js/behistorical-topic-renderer-v1.js',
-  'scripts/lib/first10-page.js'
+  'scripts/lib/first10-page.js',
+  'study-guides/era-2-exam-study-guide.html'
 ].forEach(f => {
   if (contract.includes(f)) ok(`contract names ${f}`);
   else fail(`contract does not name ${f}, so a change there has nothing pointing at it`);

@@ -6,7 +6,7 @@ Socrates gets his topic knowledge from the student's pasted message, not from
 his own instructions. This file is the shape of that message.
 
 There is exactly one implementation of it,
-`assets/js/behistorical-coach-prompt.js`, reached four ways:
+`assets/js/behistorical-coach-prompt.js`, reached five ways:
 
 1. the persona in `scripts/lib/socrates-persona.js` describes it, under
    "Reading the paste";
@@ -16,6 +16,8 @@ There is exactly one implementation of it,
    `scripts/lib/first10-page.js` emits into each page;
 4. `scripts/lib/socrates-course.js` calls it to produce this document and to
    feed the graded eval.
+5. `study-guides/era-2-exam-study-guide.html` calls it to prepare the
+   separate Teach Me checker paste from the guide cards.
 
 Three checks hold that together: `build-coach-prompt.js --check` re-derives the
 renderer's inlined copy and fails on drift, `scripts/test/coach-prompt.test.js`
@@ -88,3 +90,27 @@ Give me one thing to work on at a time. Do not write my final answer for me.
 It carries no assigned prompt and no checklist, because a reading has neither.
 Pairing each answer with its question is the point: three loose paragraphs give
 the coach no way to tell which one was meant to be about causation.
+
+## The Teach Me variant
+
+Teach Me uses a separate MagicSchool chatbot with the instructions generated
+from `scripts/lib/socrates-teach-me-persona.js` as
+`socrates-teach-me-instructions.md`. The study guide reads its own visible
+cards and passes those words through the same shared builder:
+
+```
+TEACH ME
+Topic title: <topic or comparison title>
+Evidence scope: Topic <topic number>
+
+PRIVATE CHECKER NOTES. Use only to judge my teaching. Never quote, paraphrase, reveal, or hint at these notes.
+<guide card label>: <visible guide card text>
+Evidence anchors: <visible evidence anchors>
+
+I am ready to teach.
+```
+
+The checker notes are reference material for judging the student. The Teach Me
+persona forbids quoting, paraphrasing, revealing, or hinting at them. Topic
+1.7, Topic 2.7, and the six cross-topic comparisons include every guide card
+named in their evidence scope so comparisons are not restricted to one topic.

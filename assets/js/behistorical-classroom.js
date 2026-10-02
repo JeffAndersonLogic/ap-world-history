@@ -17,6 +17,7 @@
 
   var STORAGE_KEY = 'behistorical-classroom';
   var CLASSROOMS = {"kelly":"https://student.magicschool.ai/s/login?joinCode=a4fGJw"};
+  var TEACH_ME_URL = "";
 
   function currentClassroomUrl() {
     try {
@@ -38,5 +39,12 @@
     return currentClassroomUrl() || defaultUrl;
   }
 
-  global.BHClassroom = { resolveMagicSchoolUrl: resolveMagicSchoolUrl };
+  function resolveTeachMeUrl() {
+    return TEACH_ME_URL || null;
+  }
+
+  global.BHClassroom = {
+    resolveMagicSchoolUrl: resolveMagicSchoolUrl,
+    resolveTeachMeUrl: resolveTeachMeUrl
+  };
 })(window);

@@ -24,7 +24,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { CLASSROOMS } = require('./lib/classroom-config');
+const { CLASSROOMS, TEACH_ME_URL } = require('./lib/classroom-config');
 
 const ROOT = path.join(__dirname, '..');
 const GENERATED = path.join(ROOT, 'assets', 'js', 'behistorical-classroom.js');
@@ -61,6 +61,7 @@ function generatedSource() {
 
   var STORAGE_KEY = 'behistorical-classroom';
   var CLASSROOMS = ${JSON.stringify(CLASSROOMS)};
+  var TEACH_ME_URL = ${JSON.stringify(TEACH_ME_URL)};
 
   function currentClassroomUrl() {
     try {
@@ -82,7 +83,14 @@ function generatedSource() {
     return currentClassroomUrl() || defaultUrl;
   }
 
-  global.BHClassroom = { resolveMagicSchoolUrl: resolveMagicSchoolUrl };
+  function resolveTeachMeUrl() {
+    return TEACH_ME_URL || null;
+  }
+
+  global.BHClassroom = {
+    resolveMagicSchoolUrl: resolveMagicSchoolUrl,
+    resolveTeachMeUrl: resolveTeachMeUrl
+  };
 })(window);
 `;
 }

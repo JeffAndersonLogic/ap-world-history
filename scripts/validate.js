@@ -1815,6 +1815,59 @@ section('Enlargeable images are operable buttons');
 }
 
 //
+// The Era 2 guide is the only source of Teach Me checker notes. These checks
+// pin the wiring that would otherwise fail silently: the shared builder must
+// load before the guide code, every activity must be mapped once, and the
+// separate room URL must come from classroom-config rather than being typed
+// into the page.
+//
+section('Era 2 Teach Me guide wiring');
+{
+  const guidePath = path.join(ROOT, 'study-guides', 'era-2-exam-study-guide.html');
+  const builderPath = path.join(ROOT, 'assets', 'js', 'behistorical-coach-prompt.js');
+  const configPath = path.join(ROOT, 'scripts', 'lib', 'classroom-config.js');
+  const guide = read(guidePath);
+  const builder = read(builderPath);
+  const config = read(configPath);
+  totalChecks += 3;
+  if (!guide) err(guidePath, 'study guide is missing');
+  if (!builder || !/function buildTeachMePrompt\(/.test(builder)) {
+    err(builderPath, 'shared prompt builder has no buildTeachMePrompt function');
+  }
+  if (!config || !/const TEACH_ME_URL\s*=/.test(config)) {
+    err(configPath, 'classroom config has no single Teach Me room URL');
+  }
+  if (guide) {
+    const promptAt = guide.indexOf('../assets/js/behistorical-coach-prompt.js');
+    const classroomAt = guide.indexOf('../assets/js/behistorical-classroom.js');
+    const appAt = guide.indexOf("var ACTIVITIES = [");
+    totalChecks++;
+    if (promptAt < 0 || classroomAt < 0 || appAt < 0 || promptAt > appAt || classroomAt > appAt) {
+      err(guidePath, 'shared prompt and classroom scripts must load before the Teach Me guide code');
+    }
+    const activityIds = [...guide.matchAll(/\{id:'([^']+)'/g)].map(m => m[1]);
+    totalChecks++;
+    if (activityIds.length !== 20 || new Set(activityIds).size !== 20) {
+      err(guidePath, `maps ${activityIds.length} Teach Me activities with ${new Set(activityIds).size} unique ids, expected 20`);
+    }
+    for (const topic of ['1-1','1-2','1-3','1-4','1-5','1-6','1-7','2-1','2-2','2-3','2-4','2-5','2-6','2-7']) {
+      totalChecks++;
+      if (!guide.includes(`id="topic-${topic}"`) || !activityIds.includes(`topic-${topic}`)) {
+        err(guidePath, `Topic ${topic.replace('-', '.')} is missing its card or Teach Me activity`);
+      }
+    }
+    totalChecks++;
+    if (/joinCode=/.test(guide)) err(guidePath, 'hard-codes a MagicSchool room instead of using classroom-config');
+    totalChecks++;
+    if (!/scope:\['1\.7','1\.1','1\.4','1\.5','1\.6'\]/.test(guide)
+      || !/scope:\['2\.7','2\.1','2\.3','2\.4'\]/.test(guide)) {
+      err(guidePath, 'comparison topics do not carry their approved cross-topic evidence scopes');
+    }
+  }
+  sectionDone('20 activities use the shared builder and one classroom-config Teach Me room');
+}
+
+//
 // The README's current inventory, checked against what this run counted.
 //
 // README.md is the first thing anyone reads and it had drifted quietly: on

@@ -2,12 +2,13 @@
 /**
  * build-socrates.js
  *
- * Generates the Socrates Kit under `docs/socrates/`, the three documents that
- * configure the course-wide MagicSchool AI coach:
+ * Generates the Socrates Kit under `docs/socrates/`, including the documents
+ * that configure the course-wide coach and the separate Teach Me chatbot:
  *
  *   socrates-instructions.md    paste into the MagicSchool instructions field
  *   socrates-course-spine.md    upload as the chatbot's one attachment
  *   socrates-paste-contract.md  the exact shape of the prompt a page sends
+ *   socrates-teach-me-instructions.md  paste into the Teach Me chatbot
  *
  * WHY THIS SCRIPT EXISTS
  *
@@ -48,6 +49,8 @@ const fs = require('fs');
 const path = require('path');
 const { loadCourse, contextBlock } = require("./lib/socrates-course");
 const { PERSONA } = require('./lib/socrates-persona');
+const { TEACH_ME_PERSONA } = require('./lib/socrates-teach-me-persona');
+const { buildTeachMePrompt } = require('../assets/js/behistorical-coach-prompt');
 
 const ROOT = path.join(__dirname, '..');
 const RENDERER = path.join(ROOT, 'assets', 'js', 'behistorical-topic-renderer-v1.js');
@@ -151,6 +154,10 @@ function instructionsDoc(topics) {
   ].join('\n');
 }
 
+function teachMeInstructionsDoc() {
+  return [GEN, '', TEACH_ME_PERSONA.trim(), ''].join('\n');
+}
+
 function spineEntry(t) {
   const lines = [`## ${t.id} ${t.title}`, ''];
   lines.push(`**Where this sits.** ${t.unit}${t.span ? `, ${t.span}` : ''}.`
@@ -223,6 +230,14 @@ function contractDoc(topics) {
   // model, so this document cannot describe a shape the code does not produce.
   const sample = topics.find(t => t.id === '7.2') || topics.find(t => t.kind === 'unit');
   const block = contextBlock(sample, { draft: '<the student\'s draft, verbatim>' });
+  const teachMeBlock = buildTeachMePrompt({
+    title: '<topic or comparison title>',
+    scope: ['<topic number>'],
+    notes: [
+      { label: '<guide card label>', text: '<visible guide card text>' },
+      { label: 'Evidence anchors', text: '<visible evidence anchors>' }
+    ]
+  });
 
   return [
     GEN,
@@ -233,7 +248,7 @@ function contractDoc(topics) {
     'his own instructions. This file is the shape of that message.',
     '',
     'There is exactly one implementation of it,',
-    '`assets/js/behistorical-coach-prompt.js`, reached four ways:',
+    '`assets/js/behistorical-coach-prompt.js`, reached five ways:',
     '',
     '1. the persona in `scripts/lib/socrates-persona.js` describes it, under',
     '   "Reading the paste";',
@@ -243,6 +258,8 @@ function contractDoc(topics) {
     '   `scripts/lib/first10-page.js` emits into each page;',
     '4. `scripts/lib/socrates-course.js` calls it to produce this document and to',
     '   feed the graded eval.',
+    '5. `study-guides/era-2-exam-study-guide.html` calls it to prepare the',
+    '   separate Teach Me checker paste from the guide cards.',
     '',
     'Three checks hold that together: `build-coach-prompt.js --check` re-derives the',
     'renderer\'s inlined copy and fails on drift, `scripts/test/coach-prompt.test.js`',
@@ -300,6 +317,22 @@ function contractDoc(topics) {
     'It carries no assigned prompt and no checklist, because a reading has neither.',
     'Pairing each answer with its question is the point: three loose paragraphs give',
     'the coach no way to tell which one was meant to be about causation.',
+    '',
+    '## The Teach Me variant',
+    '',
+    'Teach Me uses a separate MagicSchool chatbot with the instructions generated',
+    'from `scripts/lib/socrates-teach-me-persona.js` as',
+    '`socrates-teach-me-instructions.md`. The study guide reads its own visible',
+    'cards and passes those words through the same shared builder:',
+    '',
+    '```',
+    teachMeBlock,
+    '```',
+    '',
+    'The checker notes are reference material for judging the student. The Teach Me',
+    'persona forbids quoting, paraphrasing, revealing, or hinting at them. Topic',
+    '1.7, Topic 2.7, and the six cross-topic comparisons include every guide card',
+    'named in their evidence scope so comparisons are not restricted to one topic.',
     ''
   ].join('\n');
 }
@@ -312,6 +345,7 @@ if (!topics.length) problems.push('no topics resolved at all, the lesson data re
 
 const files = Object.assign({
   'socrates-instructions.md': instructionsDoc(topics),
+  'socrates-teach-me-instructions.md': teachMeInstructionsDoc(),
   'socrates-course-spine.md': spineDoc(topics),
   'socrates-paste-contract.md': contractDoc(topics)
 }, unitSpineDocs(topics));

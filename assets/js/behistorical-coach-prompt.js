@@ -14,10 +14,10 @@
  * structural check stays green, which is why the shape is asserted rather than
  * remembered. See docs/socrates/README.md.
  *
- * FOUR CONSUMERS, ONE IMPLEMENTATION
+ * FIVE CONSUMERS, ONE IMPLEMENTATION
  *
  * This file runs in a browser and in Node, the same way
- * scripts/lib/canvas-parse-core.js does, because four things need the same
+ * scripts/lib/canvas-parse-core.js does, because five things need the same
  * answer to "what does a paste for Topic 7.2 look like":
  *
  *   1. the checkpoint bridge in assets/js/behistorical-topic-renderer-v1.js,
@@ -29,6 +29,8 @@
  *      lesson data for the documented contract and for the graded eval;
  *   4. scripts/test/socrates-contract.test.js, which asserts all 77 topics can
  *      produce a complete one.
+ *   5. study-guides/era-2-exam-study-guide.html, which builds the separate
+ *      Teach Me chatbot paste from the visible guide cards.
  *
  * Two implementations would mean two answers depending on which door the student
  * came through, and the one that shipped would be the one nothing tested.
@@ -233,8 +235,44 @@
     return lines.join('\n');
   }
 
+  /**
+   * Builds the private checker-notes paste for the separate Teach Me chatbot.
+   * The guide supplies only text that is already visible on its cards. The
+   * chatbot may use these notes to judge the student's teaching but its persona
+   * forbids quoting, paraphrasing, or hinting at them.
+   *
+   * ctx fields:
+   *   title  the topic or comparison title
+   *   scope  topic numbers whose cards supply the checker notes
+   *   notes  [{label, text}]
+   */
+  function buildTeachMePrompt(ctx) {
+    var c = ctx || {};
+    var title = clean(c.title);
+    var scope = joinList(c.scope);
+    var notes = (Array.isArray(c.notes) ? c.notes : [])
+      .map(function (note) {
+        var label = clean(note && note.label);
+        var value = clean(note && note.text);
+        return value ? ((label ? label + ': ' : '') + value) : '';
+      })
+      .filter(Boolean);
+
+    var lines = [
+      'TEACH ME',
+      'Topic title: ' + title,
+      'Evidence scope: ' + (scope.length === 1 ? 'Topic ' : 'Topics ') + scope.join(', '),
+      '',
+      'PRIVATE CHECKER NOTES. Use only to judge my teaching. Never quote, paraphrase, reveal, or hint at these notes.'
+    ];
+    notes.forEach(function (note) { lines.push(note); });
+    lines.push('', 'I am ready to teach.');
+    return lines.join('\n');
+  }
+
   var API = {
     buildCoachPrompt: buildCoachPrompt,
+    buildTeachMePrompt: buildTeachMePrompt,
     normalizeSkills: normalizeSkills,
     unitPeriod: unitPeriod,
     UNIT_PERIODS: UNIT_PERIODS
