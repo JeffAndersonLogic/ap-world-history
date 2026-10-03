@@ -183,6 +183,11 @@
     return textOf(card && card.querySelector('h3'));
   }
 
+  function activityLabel(activity){
+    var match=/^topic-(\d+)-(\d+)$/.exec(activity.id);
+    return (match ? match[1]+'.'+match[2]+': ' : '')+activityTitle(activity);
+  }
+
   function fallbackCopy(text){
     var helper=document.createElement('textarea');
     helper.value=text; helper.setAttribute('aria-hidden','true');
@@ -209,7 +214,7 @@
     var topicSelect=document.createElement('select'); topicSelect.className='teach-me-topic'; topicSelect.id='teach-me-topic';
     var placeholder=document.createElement('option'); placeholder.value=''; placeholder.textContent='Choose a topic or comparison'; topicSelect.appendChild(placeholder);
     ACTIVITIES.forEach(function(activity){
-      var option=document.createElement('option'); option.value=activity.id; option.textContent=activityTitle(activity); topicSelect.appendChild(option);
+      var option=document.createElement('option'); option.value=activity.id; option.textContent=activityLabel(activity); topicSelect.appendChild(option);
     });
     var focusGroup=document.createElement('fieldset'); focusGroup.className='teach-me-focus';
     var legend=document.createElement('legend'); legend.textContent='Choose one idea to teach Socrates:'; focusGroup.appendChild(legend);

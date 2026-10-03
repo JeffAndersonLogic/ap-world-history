@@ -80,13 +80,18 @@ if (PERSONA_FILE && !COACH) {
   process.exit(1);
 }
 
-function teachOpening(title) {
+function teachOpening(title, focus) {
   return 'Attributed to Socrates: "The only true wisdom is in knowing you know nothing."\n'
-    + `Topic: ${title}.\nTeach me. Where would you begin?`;
+    + `Topic: ${title}.\nTeaching focus: ${focus}\nTeach me. Where would you begin?`;
 }
 
 function teachTitle(paste) {
   const match = /^Topic title:\s*(.+)$/m.exec(paste || '');
+  return match ? match[1].trim() : '';
+}
+
+function teachFocus(paste) {
+  const match = /^Opening focus:\s*(.+)$/m.exec(paste || '');
   return match ? match[1].trim() : '';
 }
 
@@ -95,7 +100,7 @@ function teachInput(kase, paste) {
   if (kase.opening) return paste;
   return [
     'Continue this conversation as Socrates. Reply only to the final Student message.',
-    '', 'Student:', paste, '', 'Socrates:', teachOpening(teachTitle(paste)),
+    '', 'Student:', paste, '', 'Socrates:', teachOpening(teachTitle(paste), teachFocus(paste)),
     '', 'Student:', kase.student
   ].join('\n');
 }
@@ -116,7 +121,7 @@ function root(word) {
 }
 function withheldWords(paste, student) {
   const notes = String(paste || '').split(/PRIVATE CHECKER NOTES[^\n]*\n/)[1] || '';
-  const visible = new Set(roots(`${student || ''} ${teachTitle(paste)}`).map(root));
+  const visible = new Set(roots(`${student || ''} ${teachTitle(paste)} ${teachFocus(paste)}`).map(root));
   return [...new Set(roots(notes).map(root))]
     .filter(word => word.length >= 4 && !TEACH_STOP.has(word) && !visible.has(word))
     .sort();
@@ -127,7 +132,7 @@ function teachDet(kase, paste, reply) {
   const withheld = withheldWords(paste, kase.student);
   const replyRoots = new Set(roots(reply).map(root));
   const leaks = withheld.filter(word => replyRoots.has(word));
-  const expected = kase.opening ? teachOpening(teachTitle(paste)) : null;
+  const expected = kase.opening ? teachOpening(teachTitle(paste), teachFocus(paste)) : null;
   return {
     exact_opening: { pass: !kase.opening || reply === expected, detail: kase.opening ? (reply === expected ? 'exact' : 'changed') : 'not opening' },
     at_most_one_question: { pass: (reply.match(/\?/g) || []).length <= 1, detail: `${(reply.match(/\?/g) || []).length} question mark(s)` },

@@ -102,6 +102,7 @@ cards and passes those words through the same shared builder:
 TEACH ME
 Topic title: <topic or comparison title>
 Teaching focus I chose: <visible teaching target chosen by the student>
+Opening focus: <visible teaching target chosen by the student>.
 Evidence scope: Topic <topic number>
 
 PRIVATE CHECKER NOTES. Use only to judge my teaching. Never quote, paraphrase, reveal, or hint at these notes.
@@ -113,8 +114,10 @@ I am ready to teach.
 
 Before the paste is prepared, the student chooses one visible "Be able to
 explain" item or comparison prompt. That choice appears as the Teaching
-focus above the private notes. It gives the conversation a clear starting
-point without asking Socrates to reveal a target from the checker notes.
+focus above the private notes. The builder also creates an Opening focus
+from the same words, changing question marks to periods so Socrates can name
+the focus without adding extra asks. It gives the conversation a clear
+starting point without revealing a target from the checker notes.
 The guide uses one launcher for all activities and copies this paste without
 displaying it. The same student action opens the configured Socrates room.
 

@@ -110,7 +110,7 @@ and does, is that the documents are reproducible from the lesson data.
    test suites.
 6. Open the Era 2 study guide, use the Teach Me launcher, choose a topic and
    teaching focus, then select Copy Prompt and Open Socrates. Paste the copied
-   prompt and verify the chatbot's first reply is the exact three-line opening
+   prompt and verify the chatbot's first reply is the exact four-line opening
    before publishing the site change.
 
 Until step 4 is complete, the guide prepares the hidden message but keeps the

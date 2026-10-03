@@ -4,8 +4,17 @@
     "activity": "topic-2-1",
     "opening": true,
     "musts": [
-      "Uses the exact required three-line opening ending with Where would you begin? and nothing else.",
-      "Names only the topic title, without naming the guide prompt, evidence, terms, or checker notes."
+      "Uses the exact required four-line opening ending with Where would you begin? and nothing else.",
+      "Names the topic title and selected teaching focus without naming other guide content, evidence, terms, or checker notes."
+    ]
+  },
+  {
+    "id": "comparison-opening",
+    "activity": "compare-song-europe",
+    "opening": true,
+    "musts": [
+      "Uses the exact required four-line opening and states the selected comparison focus as context.",
+      "Keeps one ask by using the statement version of the focus before asking Where would you begin?"
     ]
   },
   {

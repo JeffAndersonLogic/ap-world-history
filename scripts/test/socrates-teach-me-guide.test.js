@@ -101,11 +101,19 @@ function check(name, pass, detail) {
   await page.click('#teach-me-start');
   const beforeChoice = await page.evaluate(() => ({
     topicOptions: document.querySelectorAll('#teach-me-topic option').length,
+    topicLabels: Object.fromEntries([...document.querySelectorAll('#teach-me-topic option')]
+      .filter(option => /^topic-\d+-\d+$/.test(option.value))
+      .map(option => [option.value, option.textContent])),
     textareas: document.querySelectorAll('.teach-me-panel textarea').length,
     privateNotesVisible: document.querySelector('.teach-me-panel').innerText.includes('PRIVATE CHECKER NOTES'),
     disabled: document.querySelector('.teach-me-open').getAttribute('aria-disabled')
   }));
   check('launcher lists all 20 activities', beforeChoice.topicOptions === 21, `${beforeChoice.topicOptions - 1} activities`);
+  check('every numbered topic option begins with its topic number',
+    Object.entries(beforeChoice.topicLabels).every(([id, label]) => {
+      const number = id.replace('topic-', '').replace('-', '.');
+      return label.startsWith(`${number}: `);
+    }));
   check('private prompt is never displayed in a textarea', beforeChoice.textareas === 0 && !beforeChoice.privateNotesVisible);
   check('combined action stays disabled before the choices are complete', beforeChoice.disabled === 'true');
 
