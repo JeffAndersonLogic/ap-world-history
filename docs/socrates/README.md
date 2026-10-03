@@ -74,8 +74,12 @@ Everything except the two personas is generated. Rebuild with
 
 The hand-authored Teach Me source is
 `scripts/lib/socrates-teach-me-persona.js`. The guide passes visible card text
-through `buildTeachMePrompt()` in the existing shared prompt builder. There is
-no second builder and no hidden copy of the study guide content.
+through `buildTeachMePrompt()` in the existing shared prompt builder. Before a
+paste is prepared, the student chooses one visible "Be able to explain" item or
+comparison prompt as the teaching focus. One launcher near the top of the guide
+serves all activities. The private paste is copied without being displayed,
+then the same action opens Socrates. There is no second builder and no hidden
+copy of the study guide content.
 
 ## Deploying a change
 
@@ -104,13 +108,14 @@ and does, is that the documents are reproducible from the lesson data.
    `scripts/lib/classroom-config.js`.
 5. Run `node scripts/build-classroom-config.js`, then run the offline and browser
    test suites.
-6. Open the Era 2 study guide, use a Teach Me button, copy the prepared message,
-   and verify the chatbot's first reply is the exact three-line opening before
-   publishing the site change.
+6. Open the Era 2 study guide, use the Teach Me launcher, choose a topic and
+   teaching focus, then select Copy Prompt and Open Socrates. Paste the copied
+   prompt and verify the chatbot's first reply is the exact three-line opening
+   before publishing the site change.
 
-Until step 4 is complete, the guide builds and copies every prepared message but
-keeps the Open Socrates link disabled. That prevents students from being sent to
-the existing coaching chatbot by mistake.
+Until step 4 is complete, the guide prepares the hidden message but keeps the
+Copy Prompt and Open Socrates link disabled. That prevents students from being
+sent to the existing coaching chatbot by mistake.
 
 ## Version 2, the length retune, 2026-08-29
 

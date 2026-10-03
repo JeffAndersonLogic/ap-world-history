@@ -54,23 +54,40 @@ function check(name, pass, detail) {
 
   await page.goto(`http://127.0.0.1:${port}/study-guides/era-2-exam-study-guide.html`,
     { waitUntil: 'domcontentloaded' });
-  await page.waitForSelector('[data-teach-me-id]');
+  await page.waitForSelector('#teach-me-start');
 
   const first = await page.evaluate(() => ({
-    buttons: document.querySelectorAll('[data-teach-me-id]').length,
+    launcherButtons: document.querySelectorAll('#teach-me-start').length,
+    inlineButtons: document.querySelectorAll('[data-teach-me-id]').length,
     ids: window.BH_TEACH_ME.activities.map(a => a.id),
-    pastes: Object.fromEntries(window.BH_TEACH_ME.activities.map(a => [a.id, window.BH_TEACH_ME.pasteFor(a)])),
+    focuses: Object.fromEntries(window.BH_TEACH_ME.activities.map(a => [a.id, window.BH_TEACH_ME.focusesFor(a)])),
+    allFocusPastesValid: window.BH_TEACH_ME.activities.every(a =>
+      window.BH_TEACH_ME.focusesFor(a).every(focus => {
+        const paste = window.BH_TEACH_ME.pasteFor(a, focus);
+        return paste.includes(`Teaching focus I chose: ${focus}`)
+          && paste.indexOf('Teaching focus I chose:') < paste.indexOf('PRIVATE CHECKER NOTES');
+      })),
+    pastes: Object.fromEntries(window.BH_TEACH_ME.activities.map(a => {
+      const focus = window.BH_TEACH_ME.focusesFor(a)[0];
+      return [a.id, window.BH_TEACH_ME.pasteFor(a, focus)];
+    })),
     url: window.BHClassroom.resolveTeachMeUrl()
   }));
-  check('all 20 approved activities have one button', first.buttons === 20, `${first.buttons} buttons`);
+  check('the guide has one Teach Me launcher', first.launcherButtons === 1, `${first.launcherButtons} launcher`);
+  check('topic cards have no repeated Teach Me buttons', first.inlineButtons === 0, `${first.inlineButtons} inline buttons`);
   check('all 20 activity ids are unique', new Set(first.ids).size === 20, `${new Set(first.ids).size} unique`);
+  check('every activity offers at least one teaching focus',
+    Object.values(first.focuses).every(items => items.length > 0));
+  check('Topic 1.1 offers its four Be able to explain choices', first.focuses['topic-1-1'].length === 4,
+    `${first.focuses['topic-1-1'].length} choices`);
+  check('every choice builds a paste with its focus above the private notes', first.allFocusPastesValid);
   check('page has no JavaScript errors', errors.length === 0, errors.join('; '));
 
   const afterSecondMount = await page.evaluate(() => {
     window.BH_TEACH_ME.mount();
-    return document.querySelectorAll('[data-teach-me-id]').length;
+    return document.querySelectorAll('#teach-me-start').length;
   });
-  check('mounting twice does not duplicate buttons', afterSecondMount === 20, `${afterSecondMount} buttons`);
+  check('mounting twice does not duplicate the launcher', afterSecondMount === 1, `${afterSecondMount} launcher`);
 
   const cardScope = await page.evaluate(() => ({
     oneSeven: window.BH_TEACH_ME.activities.find(a => a.id === 'topic-1-7').scope,
@@ -81,21 +98,41 @@ function check(name, pass, detail) {
   check('Topic 2.7 reads its four approved cards', cardScope.twoSeven.join(',') === '2.7,2.1,2.3,2.4');
   check('all-networks comparison reads the three network cards', cardScope.allNetworks.join(',') === '2.1,2.3,2.4');
 
-  await page.click('[data-teach-me-id="topic-1-1"]');
-  const panel = await page.evaluate(() => ({
-    textarea: document.querySelector('#topic-1-1 .teach-me-panel textarea').value,
-    disabled: document.querySelector('#topic-1-1 .teach-me-open').getAttribute('aria-disabled'),
-    href: document.querySelector('#topic-1-1 .teach-me-open').href
+  await page.click('#teach-me-start');
+  const beforeChoice = await page.evaluate(() => ({
+    topicOptions: document.querySelectorAll('#teach-me-topic option').length,
+    textareas: document.querySelectorAll('.teach-me-panel textarea').length,
+    privateNotesVisible: document.querySelector('.teach-me-panel').innerText.includes('PRIVATE CHECKER NOTES'),
+    disabled: document.querySelector('.teach-me-open').getAttribute('aria-disabled')
   }));
-  check('button reveals the same prepared message', panel.textarea === first.pastes['topic-1-1']);
-  check('Open Socrates follows the configured room state', first.url
+  check('launcher lists all 20 activities', beforeChoice.topicOptions === 21, `${beforeChoice.topicOptions - 1} activities`);
+  check('private prompt is never displayed in a textarea', beforeChoice.textareas === 0 && !beforeChoice.privateNotesVisible);
+  check('combined action stays disabled before the choices are complete', beforeChoice.disabled === 'true');
+
+  await page.selectOption('#teach-me-topic', 'topic-1-1');
+  const focusState = await page.evaluate(() => ({
+    choices: document.querySelectorAll('.teach-me-choice input').length,
+    disabled: document.querySelector('.teach-me-open').getAttribute('aria-disabled')
+  }));
+  check('Topic 1.1 displays its four focus choices', focusState.choices === 4, `${focusState.choices} choices`);
+  check('combined action stays disabled until a focus is chosen', focusState.disabled === 'true');
+
+  await page.locator('.teach-me-choice input').first().check();
+  const panel = await page.evaluate(() => ({
+    disabled: document.querySelector('.teach-me-open').getAttribute('aria-disabled'),
+    href: document.querySelector('.teach-me-open').href,
+    privateNotesVisible: document.querySelector('.teach-me-panel').innerText.includes('PRIVATE CHECKER NOTES')
+  }));
+  check('private checker notes remain hidden after selection', !panel.privateNotesVisible);
+  check('combined action follows the configured room state', first.url
     ? panel.href === first.url && panel.disabled !== 'true'
     : panel.disabled === 'true');
-  await page.click('#topic-1-1 .teach-me-copy');
-  await page.waitForFunction(() => /copied/i.test(document.querySelector('#topic-1-1 .teach-me-status').textContent));
+  await page.evaluate(() => document.querySelector('.teach-me-open').addEventListener('click', event => event.preventDefault(), { once: true, capture: true }));
+  await page.click('.teach-me-open');
+  await page.waitForFunction(() => /copied/i.test(document.querySelector('.teach-me-status').textContent));
   const clipboard = await page.evaluate(() => navigator.clipboard.readText());
   const normalizedClipboard = clipboard.replace(/\r\n/g, '\n');
-  check('Copy prepared message copies the exact visible paste', normalizedClipboard === first.pastes['topic-1-1'],
+  check('one action copies the exact hidden prompt', normalizedClipboard === first.pastes['topic-1-1'],
     `${clipboard.length} clipboard chars`);
 
   await page.goto(`http://127.0.0.1:${port}/study-guides/era-2-exam-study-guide.html?classroom=kelly`,

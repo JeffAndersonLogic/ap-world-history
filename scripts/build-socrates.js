@@ -232,6 +232,7 @@ function contractDoc(topics) {
   const block = contextBlock(sample, { draft: '<the student\'s draft, verbatim>' });
   const teachMeBlock = buildTeachMePrompt({
     title: '<topic or comparison title>',
+    focus: '<visible teaching target chosen by the student>',
     scope: ['<topic number>'],
     notes: [
       { label: '<guide card label>', text: '<visible guide card text>' },
@@ -328,6 +329,13 @@ function contractDoc(topics) {
     '```',
     teachMeBlock,
     '```',
+    '',
+    'Before the paste is prepared, the student chooses one visible "Be able to',
+    'explain" item or comparison prompt. That choice appears as the Teaching',
+    'focus above the private notes. It gives the conversation a clear starting',
+    'point without asking Socrates to reveal a target from the checker notes.',
+    'The guide uses one launcher for all activities and copies this paste without',
+    'displaying it. The same student action opens the configured Socrates room.',
     '',
     'The checker notes are reference material for judging the student. The Teach Me',
     'persona forbids quoting, paraphrasing, revealing, or hinting at them. Topic',

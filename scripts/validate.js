@@ -1829,10 +1829,13 @@ section('Era 2 Teach Me guide wiring');
   const guide = read(guidePath);
   const builder = read(builderPath);
   const config = read(configPath);
-  totalChecks += 3;
+  totalChecks += 4;
   if (!guide) err(guidePath, 'study guide is missing');
   if (!builder || !/function buildTeachMePrompt\(/.test(builder)) {
     err(builderPath, 'shared prompt builder has no buildTeachMePrompt function');
+  }
+  if (!builder || !/Teaching focus I chose:/.test(builder)) {
+    err(builderPath, 'Teach Me paste does not carry the student-selected teaching focus');
   }
   if (!config || !/const TEACH_ME_URL\s*=/.test(config)) {
     err(configPath, 'classroom config has no single Teach Me room URL');
@@ -1859,12 +1862,24 @@ section('Era 2 Teach Me guide wiring');
     totalChecks++;
     if (/joinCode=/.test(guide)) err(guidePath, 'hard-codes a MagicSchool room instead of using classroom-config');
     totalChecks++;
+    if (!/function focusesFor\(activity\)/.test(guide) || !/Choose one idea to teach Socrates:/.test(guide)) {
+      err(guidePath, 'does not require the student to choose a visible teaching focus');
+    }
+    totalChecks++;
+    if ((guide.match(/id="teach-me-start"/g) || []).length !== 1 || /data-teach-me-id/.test(guide)) {
+      err(guidePath, 'must use one Teach Me launcher rather than repeated topic-card buttons');
+    }
+    totalChecks++;
+    if (!/Copy Prompt and Open Socrates/.test(guide) || /teach-me-panel textarea/.test(guide)) {
+      err(guidePath, 'must keep the private prompt hidden and use one combined copy-and-open action');
+    }
+    totalChecks++;
     if (!/scope:\['1\.7','1\.1','1\.4','1\.5','1\.6'\]/.test(guide)
       || !/scope:\['2\.7','2\.1','2\.3','2\.4'\]/.test(guide)) {
       err(guidePath, 'comparison topics do not carry their approved cross-topic evidence scopes');
     }
   }
-  sectionDone('20 activities use the shared builder and one classroom-config Teach Me room');
+  sectionDone('one launcher serves 20 activities through the shared builder and one Teach Me room');
 }
 
 //

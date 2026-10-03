@@ -82,7 +82,7 @@ if (PERSONA_FILE && !COACH) {
 
 function teachOpening(title) {
   return 'Attributed to Socrates: "The only true wisdom is in knowing you know nothing."\n'
-    + `Topic: ${title}.\nTeach me.`;
+    + `Topic: ${title}.\nTeach me. Where would you begin?`;
 }
 
 function teachTitle(paste) {
