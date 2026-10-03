@@ -273,16 +273,15 @@ const CHECKPOINT_MS = {};
   }
 
   /**
-   * Builds the private checker-notes paste for the separate Teach Me chatbot.
-   * The guide supplies only text that is already visible on its cards. The
-   * chatbot may use these notes to judge the student's teaching but its persona
-   * forbids quoting, paraphrasing, or hinting at them.
+   * Builds the student-visible paste for the separate Teach Me chatbot. It
+   * identifies the selected activity but carries no checker content. The
+   * chatbot receives that content through its teacher-configured private
+   * knowledge file instead.
    *
    * ctx fields:
    *   title  the topic or comparison title
    *   focus  the visible teaching target the student chose
-   *   scope  topic numbers whose cards supply the checker notes
-   *   notes  [{label, text}]
+   *   scope  topic numbers the private knowledge file should consult
    */
   function buildTeachMePrompt(ctx) {
     var c = ctx || {};
@@ -291,14 +290,6 @@ const CHECKPOINT_MS = {};
     var openingFocus = focus.replace(/\?/g, '.');
     if (openingFocus && !/[.!]$/.test(openingFocus)) openingFocus += '.';
     var scope = joinList(c.scope);
-    var notes = (Array.isArray(c.notes) ? c.notes : [])
-      .map(function (note) {
-        var label = clean(note && note.label);
-        var value = clean(note && note.text);
-        return value ? ((label ? label + ': ' : '') + value) : '';
-      })
-      .filter(Boolean);
-
     var lines = [
       'TEACH ME',
       'Topic title: ' + title,
@@ -306,10 +297,8 @@ const CHECKPOINT_MS = {};
       'Opening focus: ' + openingFocus,
       'Evidence scope: ' + (scope.length === 1 ? 'Topic ' : 'Topics ') + scope.join(', '),
       '',
-      'PRIVATE CHECKER NOTES. Use only to judge my teaching. Never quote, paraphrase, reveal, or hint at these notes.'
+      'I am ready to teach.'
     ];
-    notes.forEach(function (note) { lines.push(note); });
-    lines.push('', 'I am ready to teach.');
     return lines.join('\n');
   }
 

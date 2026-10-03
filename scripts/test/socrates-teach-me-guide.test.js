@@ -64,8 +64,18 @@ function check(name, pass, detail) {
     allFocusPastesValid: window.BH_TEACH_ME.activities.every(a =>
       window.BH_TEACH_ME.focusesFor(a).every(focus => {
         const paste = window.BH_TEACH_ME.pasteFor(a, focus);
-        return paste.includes(`Teaching focus I chose: ${focus}`)
-          && paste.indexOf('Teaching focus I chose:') < paste.indexOf('PRIVATE CHECKER NOTES');
+        const lines = paste.split('\n');
+        return lines.length === 7
+          && lines[0] === 'TEACH ME'
+          && lines[1].startsWith('Topic title: ')
+          && lines[2] === `Teaching focus I chose: ${focus}`
+          && lines[3].startsWith('Opening focus: ')
+          && lines[4].startsWith('Evidence scope: Topic')
+          && lines[5] === ''
+          && lines[6] === 'I am ready to teach.'
+          && !paste.includes('PRIVATE CHECKER NOTES')
+          && !paste.includes('Know:')
+          && !paste.includes('Evidence anchors:');
       })),
     pastes: Object.fromEntries(window.BH_TEACH_ME.activities.map(a => {
       const focus = window.BH_TEACH_ME.focusesFor(a)[0];
@@ -80,7 +90,7 @@ function check(name, pass, detail) {
     Object.values(first.focuses).every(items => items.length > 0));
   check('Topic 1.1 offers its four Be able to explain choices', first.focuses['topic-1-1'].length === 4,
     `${first.focuses['topic-1-1'].length} choices`);
-  check('every choice builds a paste with its focus above the private notes', first.allFocusPastesValid);
+  check('every choice builds a short setup with no checker content', first.allFocusPastesValid);
   check('page has no JavaScript errors', errors.length === 0, errors.join('; '));
 
   const afterSecondMount = await page.evaluate(() => {
@@ -114,7 +124,7 @@ function check(name, pass, detail) {
       const number = id.replace('topic-', '').replace('-', '.');
       return label.startsWith(`${number}: `);
     }));
-  check('private prompt is never displayed in a textarea', beforeChoice.textareas === 0 && !beforeChoice.privateNotesVisible);
+  check('student setup is never displayed in a textarea', beforeChoice.textareas === 0 && !beforeChoice.privateNotesVisible);
   check('combined action stays disabled before the choices are complete', beforeChoice.disabled === 'true');
 
   await page.selectOption('#teach-me-topic', 'topic-1-1');
@@ -131,7 +141,7 @@ function check(name, pass, detail) {
     href: document.querySelector('.teach-me-open').href,
     privateNotesVisible: document.querySelector('.teach-me-panel').innerText.includes('PRIVATE CHECKER NOTES')
   }));
-  check('private checker notes remain hidden after selection', !panel.privateNotesVisible);
+  check('private checker content stays out of the panel after selection', !panel.privateNotesVisible);
   check('combined action follows the configured room state', first.url
     ? panel.href === first.url && panel.disabled !== 'true'
     : panel.disabled === 'true');
@@ -142,6 +152,8 @@ function check(name, pass, detail) {
   const normalizedClipboard = clipboard.replace(/\r\n/g, '\n');
   check('one action copies the exact hidden prompt', normalizedClipboard === first.pastes['topic-1-1'],
     `${clipboard.length} clipboard chars`);
+  check('the copied student message contains no checker notes or evidence answers',
+    !/PRIVATE CHECKER NOTES|Know:|Evidence anchors:/.test(normalizedClipboard));
 
   await page.goto(`http://127.0.0.1:${port}/study-guides/era-2-exam-study-guide.html?classroom=kelly`,
     { waitUntil: 'domcontentloaded' });

@@ -63,7 +63,10 @@ Everything except the two personas is generated. Rebuild with
 - `socrates-instructions.md`, paste into the MagicSchool instructions field. The
   persona plus a one-line-per-unit index of which topics exist.
 - `socrates-teach-me-instructions.md`, paste into the separate Socrates: Teach
-  Me chatbot. Give this chatbot no course spine or other attachment.
+  Me chatbot.
+- `socrates-teach-me-knowledge.md`, paste into the Teach Me chatbot's Specific
+  knowledge field. It is generated from the live Era 2 study guide and is never
+  included in a student's paste.
 - `socrates-course-spine.md`, upload as the chatbot's attachment.
 - `spine/socrates-spine-<unit>.md`, the same content split ten ways. Use these
   instead if the single file hits an upload limit, or if retrieval is picking the
@@ -73,13 +76,13 @@ Everything except the two personas is generated. Rebuild with
   the files that have to agree on it.
 
 The hand-authored Teach Me source is
-`scripts/lib/socrates-teach-me-persona.js`. The guide passes visible card text
-through `buildTeachMePrompt()` in the existing shared prompt builder. Before a
-paste is prepared, the student chooses one visible "Be able to explain" item or
-comparison prompt as the teaching focus. One launcher near the top of the guide
-serves all activities. The private paste is copied without being displayed,
-then the same action opens Socrates. There is no second builder and no hidden
-copy of the study guide content.
+`scripts/lib/socrates-teach-me-persona.js`. The guide passes only the selected
+topic, focus, and evidence scope through `buildTeachMePrompt()` in the existing
+shared prompt builder. The checker content is generated from that same guide
+into `socrates-teach-me-knowledge.md`, so there is no second authored copy and
+students never paste the answers into MagicSchool. One launcher near the top of
+the guide serves all activities, and the same action copies the short setup and
+opens Socrates.
 
 ## Deploying a change
 
@@ -103,7 +106,9 @@ and does, is that the documents are reproducible from the lesson data.
    classroom. All students use this one room, including students who reached the
    shared site with `?classroom=kelly`.
 2. Paste `socrates-teach-me-instructions.md` into its instructions field.
-3. Do not add the course spine or any other knowledge attachment.
+3. Paste the contents of `socrates-teach-me-knowledge.md` into Specific
+   knowledge. Replace the previous text rather than adding another copy. Do not
+   add the course spine. The generated text is well below that field's limit.
 4. Copy the chatbot's student join URL into `TEACH_ME_URL` in
    `scripts/lib/classroom-config.js`.
 5. Run `node scripts/build-classroom-config.js`, then run the offline and browser

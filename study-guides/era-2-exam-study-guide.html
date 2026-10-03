@@ -90,35 +90,6 @@
   ];
 
   function textOf(node){ return node ? node.textContent.replace(/\s+/g,' ').trim() : ''; }
-  function listText(node){
-    return [].slice.call(node ? node.querySelectorAll(':scope > li') : [])
-      .map(textOf).filter(Boolean).join(' ');
-  }
-  function cardNotes(topic){
-    var card=document.getElementById('topic-'+topic.replace(/\./g,'-')), notes=[];
-    if(!card) return notes;
-    [].slice.call(card.querySelectorAll('.label')).forEach(function(label){
-      var next=label.nextElementSibling, value='';
-      if(next && next.tagName==='UL') value=listText(next);
-      else if(next && next.tagName==='P') value=textOf(next);
-      if(value) notes.push({label:textOf(label),text:value});
-    });
-    if(topic==='2.7'){
-      var rows=[].slice.call(card.querySelectorAll('table tr')).slice(1);
-      var networkText=rows.map(function(row){
-        var cells=row.cells;
-        return textOf(cells[0])+': '+textOf(cells[1])+'; '+textOf(cells[3])+'.';
-      }).join(' ');
-      if(networkText) notes.push({label:'Network environments and examples',text:networkText});
-    }
-    var evidence=card.querySelector('.evidence');
-    if(evidence){
-      var copy=evidence.cloneNode(true), strong=copy.querySelector('strong');
-      if(strong) strong.remove();
-      notes.push({label:'Evidence anchors',text:textOf(copy)});
-    }
-    return notes;
-  }
 
   function comparisonTable(){
     var heading=document.getElementById('compare');
@@ -152,25 +123,12 @@
   }
 
   function contextFor(activity,focus){
-    var title=activity.title, notes=[];
+    var title=activity.title;
     if(activity.card){
       var card=document.getElementById(activity.card);
       title=textOf(card && card.querySelector('h3'));
     }
-    activity.scope.forEach(function(topic){
-      cardNotes(topic).forEach(function(note){
-        notes.push({label:(activity.scope.length>1?'Topic '+topic+' '+note.label:note.label),text:note.text});
-      });
-    });
-    if(typeof activity.row==='number'){
-      var table=comparisonTable(), row=table && table.rows[activity.row+1];
-      if(row){
-        var promptCell=row.cells[1].cloneNode(true);
-        [].slice.call(promptCell.querySelectorAll('.teach-me-action,.teach-me-panel')).forEach(function(node){node.remove();});
-        notes.push({label:'Guide prompt',text:textOf(promptCell)});
-      }
-    }
-    return {title:title,focus:focus,scope:activity.scope,notes:notes};
+    return {title:title,focus:focus,scope:activity.scope};
   }
 
   function pasteFor(activity,focus){

@@ -175,8 +175,8 @@ const TEACH_REQUIRED = [
   [/checker only/, 'the checker-only role'],
   [/Never give an answer, historical fact, correction/, 'the no-answer and no-correction rule'],
   [/Never quiz the student/, 'the no-quiz rule'],
-  [/checker notes do not count as the student's words/, 'the boundary between notes and student words'],
-  [/teaching focus above the checker notes was chosen by the student and does count/, 'the selected focus counts as student words'],
+  [/private knowledge does not count as the student's words/, 'the boundary between private knowledge and student words'],
+  [/Teaching focus in the opening message was chosen by the student and does count/, 'the selected focus counts as student words'],
   [/Attributed to Socrates: "The only true wisdom is in knowing you know nothing\." Topic: \[topic title\]\. Teaching focus: \[opening focus\] Teach me\. Where would you begin\?/, 'the exact contextual opening'],
   [/using the topic title and Opening focus exactly as named in the paste/, 'the opening names the selected teaching focus'],
   [/That does not match my notes/, 'the wrong-claim response'],
@@ -193,6 +193,20 @@ TEACH_REQUIRED.forEach(([re, what]) => {
   if (re.test(TEACH_FLAT)) ok(`Teach Me persona still carries ${what}`);
   else fail(`Teach Me persona is missing ${what}`);
 });
+
+const teachKnowledge = fs.readFileSync(path.join(DOCS, 'socrates-teach-me-knowledge.md'), 'utf8');
+const teachKnowledgeTopics = [...teachKnowledge.matchAll(/^## Topic \d\.\d:/gm)].length;
+const teachKnowledgeComparisons = [...teachKnowledge.matchAll(/^## Comparison:/gm)].length;
+if (teachKnowledgeTopics === 14 && teachKnowledgeComparisons === 6) {
+  ok('Teach Me private knowledge covers 14 topics and 6 cross-topic comparisons');
+} else {
+  fail(`Teach Me private knowledge covers ${teachKnowledgeTopics} topics and ${teachKnowledgeComparisons} comparisons, expected 14 and 6`);
+}
+if (/Never quote,\s+paraphrase, summarize, reveal, or hint/.test(teachKnowledge)) {
+  ok('Teach Me private knowledge carries its non-disclosure boundary');
+} else {
+  fail('Teach Me private knowledge is missing its non-disclosure boundary');
+}
 
 // ── 3. Every topic can produce a complete context block ──────────────────────
 //

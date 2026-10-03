@@ -9,6 +9,7 @@
  *   socrates-course-spine.md    upload as the chatbot's one attachment
  *   socrates-paste-contract.md  the exact shape of the prompt a page sends
  *   socrates-teach-me-instructions.md  paste into the Teach Me chatbot
+ *   socrates-teach-me-knowledge.md  paste as Teach Me private knowledge
  *
  * WHY THIS SCRIPT EXISTS
  *
@@ -50,10 +51,12 @@ const path = require('path');
 const { loadCourse, contextBlock } = require("./lib/socrates-course");
 const { PERSONA } = require('./lib/socrates-persona');
 const { TEACH_ME_PERSONA } = require('./lib/socrates-teach-me-persona');
+const { buildTeachMeKnowledgeDocument } = require('./lib/socrates-teach-me-knowledge');
 const { buildTeachMePrompt } = require('../assets/js/behistorical-coach-prompt');
 
 const ROOT = path.join(__dirname, '..');
 const RENDERER = path.join(ROOT, 'assets', 'js', 'behistorical-topic-renderer-v1.js');
+const TEACH_ME_GUIDE = path.join(ROOT, 'study-guides', 'era-2-exam-study-guide.html');
 const OUT = path.join(ROOT, 'docs', 'socrates');
 const CHECK = process.argv.includes('--check');
 
@@ -158,6 +161,10 @@ function teachMeInstructionsDoc() {
   return [GEN, '', TEACH_ME_PERSONA.trim(), ''].join('\n');
 }
 
+function teachMeKnowledgeDoc() {
+  return [GEN, '', buildTeachMeKnowledgeDocument(fs.readFileSync(TEACH_ME_GUIDE, 'utf8')).trim(), ''].join('\n');
+}
+
 function spineEntry(t) {
   const lines = [`## ${t.id} ${t.title}`, ''];
   lines.push(`**Where this sits.** ${t.unit}${t.span ? `, ${t.span}` : ''}.`
@@ -233,11 +240,7 @@ function contractDoc(topics) {
   const teachMeBlock = buildTeachMePrompt({
     title: '<topic or comparison title>',
     focus: '<visible teaching target chosen by the student>',
-    scope: ['<topic number>'],
-    notes: [
-      { label: '<guide card label>', text: '<visible guide card text>' },
-      { label: 'Evidence anchors', text: '<visible evidence anchors>' }
-    ]
+    scope: ['<topic number>']
   });
 
   return [
@@ -332,15 +335,16 @@ function contractDoc(topics) {
     '',
     'Before the paste is prepared, the student chooses one visible "Be able to',
     'explain" item or comparison prompt. That choice appears as the Teaching',
-    'focus above the private notes. The builder also creates an Opening focus',
+    'focus in the student message. The builder also creates an Opening focus',
     'from the same words, changing question marks to periods so Socrates can name',
     'the focus without adding extra asks. It gives the conversation a clear',
-    'starting point without revealing a target from the checker notes.',
+    'starting point without placing checker content in the student paste.',
     'The guide uses one launcher for all activities and copies this paste without',
     'displaying it. The same student action opens the configured Socrates room.',
     '',
-    'The checker notes are reference material for judging the student. The Teach Me',
-    'persona forbids quoting, paraphrasing, revealing, or hinting at them. Topic',
+    'The generated `socrates-teach-me-knowledge.md` file carries the guide content',
+    'privately through MagicSchool Specific knowledge. The Teach Me persona forbids',
+    'quoting, paraphrasing, revealing, or hinting at it. Topic',
     '1.7, Topic 2.7, and the six cross-topic comparisons include every guide card',
     'named in their evidence scope so comparisons are not restricted to one topic.',
     ''
@@ -356,6 +360,7 @@ if (!topics.length) problems.push('no topics resolved at all, the lesson data re
 const files = Object.assign({
   'socrates-instructions.md': instructionsDoc(topics),
   'socrates-teach-me-instructions.md': teachMeInstructionsDoc(),
+  'socrates-teach-me-knowledge.md': teachMeKnowledgeDoc(),
   'socrates-course-spine.md': spineDoc(topics),
   'socrates-paste-contract.md': contractDoc(topics)
 }, unitSpineDocs(topics));

@@ -1815,21 +1815,21 @@ section('Enlargeable images are operable buttons');
 }
 
 //
-// The Era 2 guide is the only source of Teach Me checker notes. These checks
-// pin the wiring that would otherwise fail silently: the shared builder must
-// load before the guide code, every activity must be mapped once, and the
-// separate room URL must come from classroom-config rather than being typed
-// into the page.
+// The Era 2 guide is the source of Teach Me checker knowledge. The generated
+// private knowledge document goes into MagicSchool, while the student paste
+// carries only routing context. These checks pin both sides of that boundary.
 //
 section('Era 2 Teach Me guide wiring');
 {
   const guidePath = path.join(ROOT, 'study-guides', 'era-2-exam-study-guide.html');
   const builderPath = path.join(ROOT, 'assets', 'js', 'behistorical-coach-prompt.js');
   const configPath = path.join(ROOT, 'scripts', 'lib', 'classroom-config.js');
+  const knowledgePath = path.join(ROOT, 'docs', 'socrates', 'socrates-teach-me-knowledge.md');
   const guide = read(guidePath);
   const builder = read(builderPath);
   const config = read(configPath);
-  totalChecks += 4;
+  const knowledge = read(knowledgePath);
+  totalChecks += 8;
   if (!guide) err(guidePath, 'study guide is missing');
   if (!builder || !/function buildTeachMePrompt\(/.test(builder)) {
     err(builderPath, 'shared prompt builder has no buildTeachMePrompt function');
@@ -1837,8 +1837,23 @@ section('Era 2 Teach Me guide wiring');
   if (!builder || !/Teaching focus I chose:/.test(builder)) {
     err(builderPath, 'Teach Me paste does not carry the student-selected teaching focus');
   }
+  if (!builder || /PRIVATE CHECKER NOTES|Evidence anchors:|Know:/.test(builder)) {
+    err(builderPath, 'Teach Me student paste builder contains private checker content');
+  }
   if (!config || !/const TEACH_ME_URL\s*=/.test(config)) {
     err(configPath, 'classroom config has no single Teach Me room URL');
+  }
+  if (!knowledge) {
+    err(knowledgePath, 'generated private Teach Me knowledge is missing');
+  } else {
+    const topicHeadings = knowledge.match(/^## Topic \d+\.\d+:/gm) || [];
+    const comparisonHeadings = knowledge.match(/^## Comparison:/gm) || [];
+    if (topicHeadings.length !== 14) {
+      err(knowledgePath, `contains ${topicHeadings.length} topic sections, expected 14`);
+    }
+    if (comparisonHeadings.length !== 6) {
+      err(knowledgePath, `contains ${comparisonHeadings.length} comparison sections, expected 6`);
+    }
   }
   if (guide) {
     const promptAt = guide.indexOf('../assets/js/behistorical-coach-prompt.js');
@@ -1871,7 +1886,7 @@ section('Era 2 Teach Me guide wiring');
     }
     totalChecks++;
     if (!/Copy Prompt and Open Socrates/.test(guide) || /teach-me-panel textarea/.test(guide)) {
-      err(guidePath, 'must keep the private prompt hidden and use one combined copy-and-open action');
+      err(guidePath, 'must keep the student setup out of a textarea and use one combined copy-and-open action');
     }
     totalChecks++;
     if (!/scope:\['1\.7','1\.1','1\.4','1\.5','1\.6'\]/.test(guide)
@@ -1879,7 +1894,7 @@ section('Era 2 Teach Me guide wiring');
       err(guidePath, 'comparison topics do not carry their approved cross-topic evidence scopes');
     }
   }
-  sectionDone('one launcher serves 20 activities through the shared builder and one Teach Me room');
+  sectionDone('one launcher serves 20 activities with private knowledge kept out of student pastes');
 }
 
 //

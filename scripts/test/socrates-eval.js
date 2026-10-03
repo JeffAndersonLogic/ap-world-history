@@ -52,6 +52,7 @@ const { loadCourse, contextBlock } = require('../lib/socrates-course');
 
 const ROOT = path.join(__dirname, '..', '..');
 const CASES = path.join(__dirname, 'fixtures', 'socrates-eval-cases.json');
+const TEACH_ME_KNOWLEDGE_PATH = path.join(ROOT, 'docs', 'socrates', 'socrates-teach-me-knowledge.md');
 
 const arg = (name, def) => {
   const i = process.argv.indexOf(`--${name}`);
@@ -119,8 +120,50 @@ function roots(text) {
 function root(word) {
   return word.replace(/'s$/, '').replace(/ies$/, 'y').replace(/es$/, '').replace(/s$/, '');
 }
+
+function teachKnowledgeSections(document) {
+  const sections = new Map();
+  let heading = '';
+  let body = [];
+  const save = () => {
+    if (heading) sections.set(heading, body.join('\n').trim());
+  };
+  for (const line of String(document || '').split(/\r?\n/)) {
+    if (/^## /.test(line)) {
+      save();
+      heading = line.slice(3).trim();
+      body = [];
+    } else if (/^# /.test(line)) {
+      save();
+      heading = '';
+      body = [];
+    } else if (heading) {
+      body.push(line);
+    }
+  }
+  save();
+  return sections;
+}
+
+function teachKnowledgeFor(paste, knowledgeDocument) {
+  const sections = teachKnowledgeSections(knowledgeDocument);
+  const scope = (/^Evidence scope:\s*(.+)$/m.exec(paste || '') || [])[1] || '';
+  const topicNumbers = [...scope.matchAll(/\d+\.\d+/g)].map(match => match[0]);
+  const selected = [];
+  for (const number of topicNumbers) {
+    const heading = [...sections.keys()].find(key => key.startsWith(`Topic ${number}:`));
+    if (heading) selected.push(`${heading}\n${sections.get(heading)}`);
+  }
+  const comparisonHeading = `Comparison: ${teachTitle(paste)}`;
+  if (sections.has(comparisonHeading)) {
+    selected.push(`${comparisonHeading}\n${sections.get(comparisonHeading)}`);
+  }
+  return selected.join('\n\n');
+}
+
 function withheldWords(paste, student) {
-  const notes = String(paste || '').split(/PRIVATE CHECKER NOTES[^\n]*\n/)[1] || '';
+  const knowledgeDocument = fs.readFileSync(TEACH_ME_KNOWLEDGE_PATH, 'utf8');
+  const notes = teachKnowledgeFor(paste, knowledgeDocument);
   const visible = new Set(roots(`${student || ''} ${teachTitle(paste)} ${teachFocus(paste)}`).map(root));
   return [...new Set(roots(notes).map(root))]
     .filter(word => word.length >= 4 && !TEACH_STOP.has(word) && !visible.has(word))
@@ -199,6 +242,8 @@ async function runTeachMeEval() {
   const pastesPath = path.join(__dirname, 'fixtures', 'socrates-teach-me-pastes.json');
   let cases = JSON.parse(fs.readFileSync(casesPath, 'utf8'));
   const pastes = JSON.parse(fs.readFileSync(pastesPath, 'utf8'));
+  const teachMeKnowledge = fs.readFileSync(TEACH_ME_KNOWLEDGE_PATH, 'utf8');
+  const teachMeSystem = `${TEACH_ME_PERSONA}\n\n${teachMeKnowledge}`;
   if (ONLY) cases = cases.filter(kase => kase.id === ONLY);
   if (!cases.length) throw new Error(`no such Teach Me case: ${ONLY}`);
 
@@ -216,7 +261,7 @@ async function runTeachMeEval() {
     for (const kase of cases) {
       const paste = kase.activity ? pastes[kase.activity] : '';
       console.log(`\n── ${kase.id}\n${teachInput(kase, paste)}`);
-      console.log(`\nWithheld note words: ${withheldWords(paste, kase.student).join(', ') || '(none)'}`);
+      console.log(`\nWithheld private-reference words: ${withheldWords(paste, kase.student).join(', ') || '(none)'}`);
     }
     return;
   }
@@ -233,7 +278,7 @@ async function runTeachMeEval() {
   const results = await teachPool(jobs, async job => {
     const paste = job.kase.activity ? pastes[job.kase.activity] : '';
     const input = teachInput(job.kase, paste);
-    const reply = await teachAsk(TEACH_ME_PERSONA, input);
+    const reply = await teachAsk(teachMeSystem, input);
     const failed = !teachIsReply(reply);
     const deterministic = failed ? null : teachDet(job.kase, paste, reply);
     const rubric = failed ? [] : await teachGrade(job.kase, reply);
