@@ -6,6 +6,13 @@ const root=path.resolve(__dirname,'../..'),read=f=>fs.readFileSync(path.join(roo
 execFileSync(process.execPath,[path.join(root,'scripts/build-unit2-atlas.js'),'--check'],{stdio:'inherit'});
 const sandbox={window:{}};vm.runInNewContext(read('assets/data/unit2-network-atlas.js'),sandbox);
 const topics=sandbox.window.BH_UNIT2_ATLAS.topics;assert.equal(Object.keys(topics).length,7);
+// Use the same geometry and interpolation as the viewer, not a bounding-box guess.
+const d3=require(path.join(root,'assets/vendor/atlas/d3-7.9.0.min.js')),topo=require(path.join(root,'assets/vendor/atlas/topojson-client-3.1.0.min.js'));
+const world={window:{}};vm.runInNewContext(read('assets/vendor/atlas/world-land-110m.js'),world);
+const land=topo.feature(world.window.BH_ATLAS_WORLD,world.window.BH_ATLAS_WORLD.objects.land);
+function seaCorridor(path){for(let i=0;i<path.length-1;i++){const between=d3.geoInterpolate(path[i],path[i+1]);for(let k=1;k<20;k++)assert(!d3.geoContains(land,between(k/20)),'Sea corridor crosses Sumatra');}}
+const ocean=topics['2.3'].views[0].sets[0].paths[2];seaCorridor(ocean.slice(ocean.findIndex(ll=>ll[0]===93)));
+assert.throws(()=>seaCorridor([[93,6],[97,5],[102.24,2.2]]),/Sea corridor crosses Sumatra/,'The original inland sea route must fail');
 for(const [id,t] of Object.entries(topics)){
  assert(t.source.text&&t.source.attribution&&t.source.sourceNote&&t.source.sourceLinks.length,'Source transparency: '+id);
  assert(fs.existsSync(path.join(root,'unit-2',t.lesson)),'Lesson link: '+id);

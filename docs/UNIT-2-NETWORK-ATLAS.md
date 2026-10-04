@@ -6,7 +6,9 @@ The hub embeds the same graphic served by `unit-2/network-atlas.html`. Its heigh
 
 ## Historical scope
 
-The graphic uses Natural Earth coastlines and selected approximate corridors, not political boundaries or exact itineraries. Topic views preserve the course's commercial, political, cultural, and environmental distinctions. Monsoon arrows describe the Arabian Sea seasonal pattern only. Crop views use regional markers without invented voyage arrows. The plague connections do not establish one origin or every transmission route. Older origins, later expansion, early-fifteenth-century Malacca, and Zheng He's 1405 to 1433 chronology remain explicit. Niani is a regional marker, not a claim about a verified capital site.
+The graphic uses Natural Earth coastlines and selected approximate corridors, not political boundaries or exact itineraries. Topic views preserve the course's commercial, political, cultural, and environmental distinctions. Monsoon arrows describe the Arabian Sea seasonal pattern only. Crop views use regional markers without invented voyage arrows. The plague connections do not establish one origin or every transmission route. Older origins, later expansion, early-fifteenth-century Malacca, and Zheng He's 1405 to 1433 chronology remain explicit. The Manding heartland marker is a broad regional example, not Niani or a verified capital site.
+
+The October 4 accuracy corrections route the shared Indian Ocean corridor around northern Sumatra and through the Strait of Malacca, relabel the southern Mali regional marker, and date Bar Sauma's conversation with the Roman cardinals to his first visit in 1287. The source date is corrected in the canonical course data and propagated through the atlas generator. The maps remain selected references rather than complete inventories of every CED example.
 
 Place and route notes are labeled course explanations. Optional historical sources, attribution, adaptation notes, and links are generated from the canonical course source objects, not maintained as a second transcription. The full topic lesson remains the reference for complete coverage.
 

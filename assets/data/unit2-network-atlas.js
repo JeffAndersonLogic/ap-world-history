@@ -428,8 +428,20 @@ window.BH_UNIT2_ATLAS = {
                     6
                   ],
                   [
+                    95.2,
+                    6.2
+                  ],
+                  [
                     97,
-                    5
+                    6
+                  ],
+                  [
+                    99,
+                    4.5
+                  ],
+                  [
+                    101,
+                    2.6
                   ],
                   [
                     102.24,
@@ -598,8 +610,20 @@ window.BH_UNIT2_ATLAS = {
                     6
                   ],
                   [
+                    95.2,
+                    6.2
+                  ],
+                  [
                     97,
-                    5
+                    6
+                  ],
+                  [
+                    99,
+                    4.5
+                  ],
+                  [
+                    101,
+                    2.6
                   ],
                   [
                     102.24,
@@ -697,12 +721,12 @@ window.BH_UNIT2_ATLAS = {
               "detail": "A trade and scholarly center linked Saharan caravans with West African networks."
             },
             {
-              "name": "Niani region",
+              "name": "Manding heartland: regional example",
               "ll": [
                 -8,
                 12.6
               ],
-              "detail": "A southern connection to Mali’s wider economy. The marker identifies a region rather than a verified medieval capital site."
+              "detail": "A broad regional example of Mali’s southern economic connections. This marker does not locate Niani or identify a verified medieval capital site."
             }
           ],
           "sets": [
@@ -761,7 +785,7 @@ window.BH_UNIT2_ATLAS = {
       "period": "Islam, Buddhism, Hinduism, and paper had spread before 1200. This view examines continued contacts and effects during 1200 to 1450, not the origins of those traditions.",
       "lesson": "lesson-2-5-cultural-consequences.html",
       "source": {
-        "title": "Primary Source: Rabban Bar Sauma Explains Eastern Christianity, 1288",
+        "title": "Primary Source: Rabban Bar Sauma Explains Eastern Christianity, 1287",
         "intro": "Rabban Bar Sauma was a monk of the Church of the East, born around 1220 near the city that later became Khanbaliq (Beijing), in Mongol-ruled northern China. The Ilkhan Arghun later sent him west as an envoy. A Christian biographer, writing in Syriac, recorded his meeting with cardinals in Rome.",
         "text": "The Cardinals said unto him, \"Where is the Throne of the Catholicus?\" He said to them, \"In Baghdad.\" They answered, \"What position hast thou there?\" And he replied, \"I am a deacon in the Cell of the Catholicus, and the director of the disciples, and the Visitor-General.\" The Cardinals said, \"It is a marvellous thing that thou who art a Christian, and a deacon of the Throne of the Patriarch of the East, hast come upon an embassy from the king of the Mongols.\" And Rabban Sawma said unto them, \"Know ye, O our Fathers, that many of our Fathers have gone into the countries of the Mongols, and Turks, and Chinese and have taught them the Gospel, and at the present time there are many Mongols who are Christians.\"",
         "attribution": "Anonymous Syriac biographer, The Monks of Kublai Khan, translated from Syriac by Sir E. A. Wallis Budge (London: Religious Tract Society, 1928), pp. 173 to 174",
@@ -895,8 +919,20 @@ window.BH_UNIT2_ATLAS = {
                     6
                   ],
                   [
+                    95.2,
+                    6.2
+                  ],
+                  [
                     97,
-                    5
+                    6
+                  ],
+                  [
+                    99,
+                    4.5
+                  ],
+                  [
+                    101,
+                    2.6
                   ],
                   [
                     102.24,
@@ -1445,8 +1481,20 @@ window.BH_UNIT2_ATLAS = {
                     6
                   ],
                   [
+                    95.2,
+                    6.2
+                  ],
+                  [
                     97,
-                    5
+                    6
+                  ],
+                  [
+                    99,
+                    4.5
+                  ],
+                  [
+                    101,
+                    2.6
                   ],
                   [
                     102.24,
@@ -1723,8 +1771,20 @@ window.BH_UNIT2_ATLAS = {
                     6
                   ],
                   [
+                    95.2,
+                    6.2
+                  ],
+                  [
                     97,
-                    5
+                    6
+                  ],
+                  [
+                    99,
+                    4.5
+                  ],
+                  [
+                    101,
+                    2.6
                   ],
                   [
                     102.24,
@@ -1784,12 +1844,12 @@ window.BH_UNIT2_ATLAS = {
               "detail": "A trade and scholarly center linked Saharan caravans with West African networks."
             },
             {
-              "name": "Niani region",
+              "name": "Manding heartland: regional example",
               "ll": [
                 -8,
                 12.6
               ],
-              "detail": "A southern connection to Mali’s wider economy. The marker identifies a region rather than a verified medieval capital site."
+              "detail": "A broad regional example of Mali’s southern economic connections. This marker does not locate Niani or identify a verified medieval capital site."
             }
           ],
           "sets": [
