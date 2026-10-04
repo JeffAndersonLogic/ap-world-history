@@ -239,6 +239,36 @@ module.exports = [
     ]
   },
 
+  // ── Unit 3 ──────────────────────────────────────────────────────────────────
+  {
+    id: 'topic-3-1',
+    code: 'Topic 3.1',
+    title: 'Land-Based Empires and Two Rivalries, c. 1450-1750',
+    subtitle: 'Topic 3.1 · Ottoman, Safavid, Mughal, Qing, and the Kandahar and Tondibi rivalries',
+    // Explicit coordinates, as for 2.7 (centre x, centre y, half-width, half-height
+    // in degrees). Zones are the core of each empire,
+    // schematic rather than borders (the empires' limits moved across 300
+    // years). Kandahar sits on the Safavid-Mughal frontier; Tondibi is on the
+    // Niger bend, the end of Morocco's 1591 crossing of the Sahara.
+    highlights: [
+      { zone: [31, 38.5, 15, 5], label: 'OTTOMAN', labelSide: 'above', tone: 'gold', legend: 'Ottoman: Anatolia, the Balkans, the Arab lands and North Africa' },
+      { zone: [55, 32.5, 8, 5.5], label: 'SAFAVID', labelSide: 'below', tone: 'plum', legend: 'Safavid: Iran' },
+      { zone: [80, 23.5, 9, 6.5], label: 'MUGHAL', labelSide: 'below', tone: 'bronze', legend: 'Mughal: northern India, then most of the subcontinent' },
+      { zone: [110, 34, 13, 8], label: 'QING', labelSide: 'above', tone: 'slate', legend: 'Qing (Manchu): China, then the steppe frontier' },
+      { zone: [-6, 32, 5, 3], label: 'MOROCCO', labelSide: 'above', tone: 'sage', legend: 'Morocco: crossed the Sahara with firearms in 1591' },
+      { zone: [0, 15.5, 9, 3], label: 'SONGHAI', labelSide: 'below', tone: 'sand', legend: 'Songhai: the Niger bend, broken at Tondibi' }
+    ],
+    flows: [
+      { from: [-8, 31.6], via: [[-4, 24]], to: [0.3, 16.8], label: 'Morocco\'s 1591 expedition across the Sahara' }
+    ],
+    points: [
+      { at: [28.98, 41.0], label: 'Constantinople', note: 'taken 1453' },
+      { at: [65.7, 31.6], label: 'Kandahar', note: 'Safavid-Mughal frontier' },
+      { at: [0.3, 16.8], label: 'Tondibi', note: '1591' }
+    ],
+    note: 'BeHistorical instructional map. Empire zones show each core region, not borders, which moved over 300 years; coastlines are simplified for classroom projection.'
+  },
+
   // ── Unit 4 ──────────────────────────────────────────────────────────────────
   {
     id: 'topic-4-7',

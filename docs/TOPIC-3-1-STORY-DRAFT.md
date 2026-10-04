@@ -1,9 +1,10 @@
 # Topic 3.1 Story Draft: Empires Expand
 
-**Status: DRAFT, drafted 2026-10-04. Not yet approved by Jeff.** Nothing downstream
-(deck, First & 10 rewrite, BeSurreal, schedule, Canvas) should be built from this until the
-story approval gate in `docs/PRESENTATION-AUTHORING.md` section 8 is satisfied, by review or
-by an explicit waiver.
+**Status: Approved by Jeff, 2026-10-04.** He approved the spine, the causal-chain retelling
+slide, the recommended weight for religion in the Kandahar story (state the CED's "political and
+religious," show both, cite one source for the religious piece), Chaldiran as a one-line gun
+proof with 3.3 owning its religious meaning, reframing the chapter's "not about faith" line, and
+the First & 10 rewrite as part of this build.
 
 **Taught:** not on the schedule yet. Unit 3 has no dated class days. Unit 2 ends with
 Topic 2.7 (Silver, 2026-10-05) and the Eras 2 exam (2026-10-06/07).
@@ -226,18 +227,12 @@ Per the build-topic skill, pictures are chosen after approval. What the story wi
   route from Morocco to the Niger and Songhai.
 - Panipat: the Baburnama illustration (already in the Evidence Lab).
 
-## What Jeff needs to decide
+## Decisions (all settled 2026-10-04)
 
-1. **Approve or edit the spine:** "Cannons made old walls useless, and only big states could
-   afford cannons, so big states got bigger."
-2. **Approve the causal chain as the retelling slide,** or name a different one.
-3. **How much weight does religion get in the Kandahar story?** Recommended: state the CED's
-   "political and religious" and show both, with a cited source for the religious piece.
-   Alternative: say only that the empires were rivals and let Checkpoint 2 push students to
-   argue the religion question.
-4. **Keep Chaldiran as a one-line proof of the gun mechanism,** with 3.3 owning its religious
-   meaning? Recommended yes.
-5. **Reframe the chapter's "not about faith" line** as part of this build? Recommended yes,
-   since it conflicts with KC-4.3.III.i.
-6. **Is the First & 10 rewrite part of this build?** It is shared across all four Unit 3
-   topics, so it must be done in this session and not in parallel with another Unit 3 topic.
+1. Spine approved.
+2. Causal chain approved as the retelling slide.
+3. Religion in the Kandahar story: state the CED's "political and religious," show both, with
+   one cited source for the religious piece (recommended option).
+4. Chaldiran stays a one-line proof of the gun mechanism; 3.3 owns its religious meaning.
+5. The chapter's "not about faith" line is reframed in this build.
+6. The First & 10 rewrite is part of this build. Unit 3 stays one topic at a time.

@@ -2,6 +2,12 @@
   const lesson = window.BEHISTORICAL_LESSON;
   if (!lesson) return;
 
+  lesson.classPresentation = {
+    title: 'Class Slides: Empires Expand',
+    desc: 'Follow the story: cannons broke the old walls, only big states could afford cannons, so big states got bigger, and when they ran into each other, political and religious disputes made rivals.',
+    url: 'presentation-topic-3-1-student.html'
+  };
+
   lesson.collegeBoardKeyConcepts = [
     {
       code: 'Unit 3: Learning Objective A',

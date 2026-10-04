@@ -76,6 +76,15 @@ const DECKS = [
     ],
     student: 'assets/data/presentations/topic-2-7-student.js',
     backUrl: 'lesson-2-7-comparison.html#lecture'
+  },
+  {
+    key: '3.1',
+    sources: [
+      'teacher/data/topic-3-1-teaching-base.js',
+      'teacher/data/topic-3-1-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-3-1-student.js',
+    backUrl: 'lesson-3-1-empires-expand.html#lecture'
   }
 ];
 
@@ -105,7 +114,9 @@ function loadTeaching(deck) {
 
 function publicUrl(url) {
   if (!url) return url;
-  return url.startsWith('../unit-2/') ? url.slice('../unit-2/'.length) : url;
+  // A deck's student shell sits beside its lesson in unit-N/, so a link to a
+  // sibling lesson page is made relative to that folder.
+  return url.replace(/^\.\.\/unit-\d+\//, '');
 }
 
 function publicVisual(v) {
@@ -238,6 +249,15 @@ function topic27Slides(teaching) {
   });
 }
 
+function topic31Slides(teaching) {
+  return projectedSlides(teaching).map(src => {
+    const s = baseStudentSlide(src);
+    if (src.kind === 'image') s.kind = 'map';
+    if (src.kind === 'prompt' || src.kind === 'question') s.kind = 'prompt';
+    return s;
+  });
+}
+
 function buildDeck(deck) {
   const teaching = loadTeaching(deck);
   const builders = {
@@ -247,7 +267,8 @@ function buildDeck(deck) {
     '2.4': topic24Slides,
     '2.5': topic25Slides,
     '2.6': topic26Slides,
-    '2.7': topic27Slides
+    '2.7': topic27Slides,
+    '3.1': topic31Slides
   };
   return {
     meta: {
