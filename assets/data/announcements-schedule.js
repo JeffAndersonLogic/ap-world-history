@@ -729,17 +729,27 @@ window.BEHISTORICAL_SCHEDULE = {
     // & 10, is read in class, so the 2.7 days carry no reading block for 3.1.
     // BeInTheRoom (09) exists and is optional; the required subset is 02, 06,
     // 07 and 10, and the Skill Builder (05) is not required for this topic.
+    // `homeworkDue` is typed because Topic 3.2 is not in this list yet: it is
+    // each cohort's 3.2 class day under strict alternation (Green Tuesday
+    // October 20, Silver Wednesday October 21, confirmed by Jeff 2026-10-04).
+    // Delete both `homeworkDue` lines when the 3.2 days are added and the date
+    // derives. The homework line is the standing rule that Checkpoint 2 and any
+    // unfinished required module are finished at home.
     {
       date: '2026-10-09',
       cohort: 'green',
       topic: '3.1',
-      modules: ['02', '06', '07', '10']
+      modules: ['02', '06', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 3.1 module you did not complete in class.',
+      homeworkDue: 'Tuesday, October 20'
     },
     {
       date: '2026-10-19',
       cohort: 'silver',
       topic: '3.1',
-      modules: ['02', '06', '07', '10']
+      modules: ['02', '06', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 3.1 module you did not complete in class.',
+      homeworkDue: 'Wednesday, October 21'
     }
   ],
 

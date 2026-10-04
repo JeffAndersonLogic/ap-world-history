@@ -2019,8 +2019,8 @@ deleted row in the schedule and every affected date moves with it.
 
 | Section | Taught | Work due |
 | --- | --- | --- |
-| Green Day | Friday, October 9 | nothing assigned |
-| Silver Day | Monday, October 19 | nothing assigned |
+| Green Day | Friday, October 9 | Tuesday, October 20 |
+| Silver Day | Monday, October 19 | Wednesday, October 21 |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
@@ -2071,7 +2071,14 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 8px 0;">Finish Checkpoint 2, and any other required 3.1 module you did not complete in class.
+                    </li>
+                </ul>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Tuesday, October 20</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Wednesday, October 21</span></span>
+                </p>
             </td>
         </tr>
         <tr>

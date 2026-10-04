@@ -62,7 +62,12 @@ const approvedUnit2Rewrite = !fromDisk && fs.existsSync(unit2SourcePath)
 // audit. Accept that reviewed First & 10 rewrite only while the authored Unit 3
 // source remains byte-for-byte this approved Git blob. Any later edit forces a
 // fresh review instead of silently moving the historical baseline.
-const APPROVED_UNIT3_REWRITE_BLOB = 'a00ac0e1d0133f6be4fe889dce355c340123be1d';
+// Topic 3.1's story-first First & 10 rewrite landed 2026-10-04 (four sections:
+// the wall problem, the cannon, only a state can pay, when big states meet; the
+// chain "a cannon breaks the wall, only a big treasury can pay, big states grow,
+// empires meet, rivalries" stated up front). Jeff approved the prose as written
+// the same day, which is why this hash moved.
+const APPROVED_UNIT3_REWRITE_BLOB = 'dda850e6759409315adabe5aba57e4858a2217e7';
 const unit3SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-3.js');
 const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
   && gitBlobSha(fs.readFileSync(unit3SourcePath, 'utf8')) === APPROVED_UNIT3_REWRITE_BLOB;

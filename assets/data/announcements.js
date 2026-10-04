@@ -1514,7 +1514,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '07', title: 'Evidence Lab' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 3.1 module you did not complete in class.', due: 'Tuesday, October 20' }
+      ],
+      homeworkDue: 'Tuesday, October 20'
     },
     /* 2026-10-19  <-  lesson-3-1-empires-expand.js */
     {
@@ -1538,7 +1541,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '07', title: 'Evidence Lab' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 3.1 module you did not complete in class.', due: 'Wednesday, October 21' }
+      ],
+      homeworkDue: 'Wednesday, October 21'
     }
   ],
 
