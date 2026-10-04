@@ -161,6 +161,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   map: {
+    atlasUrl: 'network-atlas.html?topic=2.4',
     title: 'Trans-Saharan Routes and West African States',
     url: '../assets/images/instructional-maps/topic-2-4.svg',
     sourceUrl: '../assets/images/instructional-maps/topic-2-4.svg',

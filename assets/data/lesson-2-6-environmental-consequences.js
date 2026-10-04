@@ -152,6 +152,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   map: {
+    atlasUrl: 'network-atlas.html?topic=2.6',
     title: 'Map: Environmental Diffusion Through Afro-Eurasian Networks',
     url: '../assets/images/instructional-maps/topic-2-6.svg',
     sourceUrl: '../assets/images/instructional-maps/topic-2-6.svg',

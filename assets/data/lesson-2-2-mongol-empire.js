@@ -169,6 +169,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   map: {
+    atlasUrl: 'network-atlas.html?topic=2.2',
     title: 'Map of the Mongol Empire and Successor Khanates',
     url: 'https://commons.wikimedia.org/wiki/Special:FilePath/MongolEmpireDivisions1300.png',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:MongolEmpireDivisions1300.png',

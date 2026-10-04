@@ -205,6 +205,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   map: {
+    atlasUrl: 'network-atlas.html?topic=2.3',
     title: 'Indian Ocean Trade Routes',
     url: BH23_STUDENT.tradeMap,
     sourceUrl: BH23_STUDENT.tradeMap,

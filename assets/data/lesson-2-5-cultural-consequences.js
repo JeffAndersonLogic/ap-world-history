@@ -164,6 +164,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   map: {
+    atlasUrl: 'network-atlas.html?topic=2.5',
     title: 'Map: Networks of Cultural Diffusion, c. 1200–1450',
     url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_Road_Trade_%28c.1200_CE%29.jpg',

@@ -1460,6 +1460,9 @@ function closeLectureModal() { bhCloseModal('lecture-modal'); }
 // ── Module render functions ───────────────────────────────────────────────────
 
 function renderMap() {
+  const atlasLink = L.map && L.map.atlasUrl
+    ? `<div class="first10-note"><strong>Explore the Unit 2 Network Atlas</strong><p>Predict, trace a connection, inspect a historical source, and explain what changed. Add your atlas work to Map Check, then return here to gather your work for Canvas.</p><a class="btn" href="${L.map.atlasUrl}">Open this topic in the Network Atlas</a></div>`
+    : '';
   // Embedded map path (topic 1.3 only). The embedded page has its own scratch
   // textareas but no capture path, so the standard Map Check draft box goes
   // below the frame; without it this one topic would be the only lesson whose
@@ -1469,7 +1472,7 @@ function renderMap() {
     ${draftBlock('map-check-response', L.map.prompt || 'Summarize what the map shows about this topic.', 'Map Check')}`;
   }
   return `
-    <article class="card map-card">
+    ${atlasLink}<article class="card map-card">
       <div class="map-grid">
         <figure class="map-figure">
           <img src="${mediaImageUrl(L.map.url, 'map')}" alt="${L.map.title}" role="button" tabindex="0"

@@ -75,7 +75,18 @@ jobs:
       # install would skip every test and the job would pass green having
       # verified nothing at all.
       - name: Modal focus, lightbox, confidence, Skills Lens
+        env:
+          BH_ATLAS_SHOTS_DIR: atlas-qa
         run: node scripts/run-tests.js browser --strict
+
+      - name: Preserve atlas layout review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unit2-atlas-layout
+          path: atlas-qa/*.png
+          if-no-files-found: ignore
+          retention-days: 7
 
       - name: Student decks and teacher readability
         run: node scripts/test/student-presentations.test.js
