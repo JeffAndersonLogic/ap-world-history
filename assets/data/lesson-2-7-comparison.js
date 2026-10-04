@@ -176,7 +176,6 @@ window.BEHISTORICAL_LESSON = {
   },
 
   map: {
-    atlasUrl: 'network-atlas.html?topic=2.7',
     title: 'Map: Comparing the Three Afro-Eurasian Exchange Networks',
     url: '../assets/images/instructional-maps/topic-2-7.svg',
     sourceUrl: '../assets/images/instructional-maps/topic-2-7.svg',

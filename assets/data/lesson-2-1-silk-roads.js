@@ -165,7 +165,6 @@ window.BEHISTORICAL_LESSON = {
   },
 
   map: {
-    atlasUrl: 'network-atlas.html?topic=2.1',
     title: 'Silk Road Routes Across Afro-Eurasia',
     url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg',

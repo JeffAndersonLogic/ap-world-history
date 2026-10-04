@@ -3,43 +3,28 @@
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Unit 2 Network Atlas | BeHistorical</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/behistorical-brand-lock.css">
   <link rel="stylesheet" href="../assets/css/behistorical-network-atlas.css">
   <script defer src="../assets/vendor/atlas/d3-7.9.0.min.js"></script>
   <script defer src="../assets/vendor/atlas/topojson-client-3.1.0.min.js"></script>
   <script defer src="../assets/vendor/atlas/world-land-110m.js"></script>
   <script defer src="../assets/data/unit2-network-atlas.js"></script>
-  <script defer src="../assets/js/behistorical-save-health.js"></script>
   <script defer src="../assets/js/behistorical-network-atlas.js"></script>
 </head>
 <body>
 <main id="network-atlas" class="atlas-shell">
-  <nav class="atlas-nav" aria-label="Course navigation"><a href="index.html">Unit 2</a><a id="lesson-link" href="lesson-2-1-silk-roads.html">Current lesson</a><a href="../ebook/unit-2.html">Unit 2 eBook</a></nav>
-  <header class="atlas-hero"><div class="atlas-brand">BeHistorical</div><p class="eyebrow">UNIT 2 · c. 1200 to c. 1450</p><h1>Network Atlas</h1><p id="unit-question" class="atlas-big-question"></p><p class="atlas-deck">Trace a connection. Examine the evidence. Explain what changed.</p></header>
-  <div id="save-status" role="status" aria-live="polite"></div>
-  <section class="atlas-controls" aria-label="Investigation controls">
-    <label for="atlas-topic">Choose your investigation<select id="atlas-topic"></select></label>
-    <fieldset class="mode-controls"><legend>How are you using the atlas?</legend><label><input type="radio" name="atlas-mode" value="explore" checked> Explore</label><label><input type="radio" name="atlas-mode" value="recall"> Recall later</label></fieldset>
-  </section>
-  <section class="atlas-section" aria-labelledby="investigation-title"><p id="skill-label" class="eyebrow"></p><h2 id="investigation-title"></h2><p id="focus"></p><p id="period" class="period-note"></p><p id="carry" class="carry-note"></p></section>
-  <section class="atlas-section" aria-labelledby="predict-heading"><h2 id="predict-heading"><span class="step">1</span> Predict</h2><label id="prediction-label" for="prediction"></label><textarea id="prediction" data-draft="prediction" rows="3"></textarea><button id="reveal-map" type="button">Explore the connections</button></section>
-  <section class="atlas-section map-section" aria-labelledby="map-heading"><h2 id="map-heading"><span class="step">2</span> Explore</h2><div id="view-controls" class="view-controls" aria-label="Map view"></div><div id="reveal-note" class="reveal-note">Make a prediction, then reveal the connections. You may explore even if you are unsure.</div>
-    <svg id="atlas-map" role="img" aria-label="Afro-Eurasia with selected historical exchange connections"></svg>
-    <div id="map-legend" class="map-legend"></div>
-    <p class="map-caption">Modern coastlines from Natural Earth. Historical connections are selected, approximate corridors, not exact sailing tracks, political boundaries, or proof that one traveler completed an entire route.</p>
-    <div id="map-exploration" hidden>
-      <label for="atlas-place">Explore a place<select id="atlas-place"></select></label><article class="place-detail"><h3 id="place-title"></h3><p id="place-detail"></p><p class="source-note">How we know: this place note is a course explanation. Treat the map as an instructional reconstruction and examine the historical source below before making a claim.</p><label for="evidence-note">My observation and why it could matter</label><textarea id="evidence-note" rows="3" data-draft="evidenceNote"></textarea><button id="keep-evidence" type="button">Keep this evidence</button><span id="evidence-status" role="status"></span></article>
-      <details id="relay-panel"><summary>Follow a good through intermediaries</summary><p>Illustrative relay of Chinese porcelain through maritime markets. These stops explain how intermediaries could connect markets; they are not a documented itinerary of one object or merchant.</p><div id="relay-controls" class="view-controls"></div><p id="relay-detail" aria-live="polite"></p></details>
-      <details class="text-map"><summary>Read the map as text</summary><div id="map-text"></div></details>
+  <nav class="atlas-nav" aria-label="Course navigation"><a href="index.html#network-atlas">Unit 2</a><a href="../ebook/unit-2.html">Unit 2 eBook</a></nav>
+  <header class="atlas-header"><p class="eyebrow">BeHistorical · Unit 2 · c. 1200 to c. 1450</p><h1>Networks of Exchange</h1></header>
+  <p id="atlas-status" role="status" hidden></p>
+  <div class="atlas-content">
+    <div class="atlas-toolbar"><label for="atlas-topic">Explore a topic<select id="atlas-topic"></select></label><div id="view-controls" class="view-controls" aria-label="Map view"></div></div>
+    <p class="atlas-instruction">Click or tap a route or numbered place to discover its story.</p>
+    <div class="atlas-layout">
+      <div class="atlas-map-area"><svg id="atlas-map" role="group" aria-label="Interactive map of selected Afro-Eurasian exchange connections"></svg><div id="map-legend" class="map-legend" aria-label="Explore a connection"></div><p class="map-caption">Selected, approximate connections, not exact itineraries or political boundaries. Natural Earth coastlines.</p></div>
+      <aside class="atlas-info" aria-label="Selected map information"><label for="atlas-place">Jump to a place<select id="atlas-place"></select></label><div id="selection-detail" aria-live="polite" aria-atomic="true"><p id="detail-kind" class="eyebrow"></p><h2 id="place-title"></h2><p id="place-detail"></p></div><p id="period" class="period-note"></p></aside>
     </div>
-  </section>
-  <section id="source-section" class="atlas-section" hidden aria-labelledby="source-heading"><h2 id="source-heading">Inspect a historical source</h2><h3 id="source-title"></h3><p id="source-intro"></p><blockquote id="source-text"></blockquote><p id="source-attribution" class="source-note"></p><p id="source-note" class="source-note"></p><div id="source-links" class="source-links"></div><label id="source-question" for="source-response"></label><textarea id="source-response" data-draft="sourceResponse" rows="3"></textarea></section>
-  <section class="atlas-section" aria-labelledby="explain-heading"><h2 id="explain-heading"><span class="step">3</span> Explain</h2><label id="explanation-label" for="explanation"></label><textarea id="explanation" data-draft="explanation" rows="5"></textarea><details><summary>Check my reasoning</summary><ul id="self-check"></ul></details></section>
-  <section class="atlas-section" aria-labelledby="recall-heading"><h2 id="recall-heading"><span class="step">4</span> Return and recall</h2><p>On a later visit, select Recall later and answer before revealing the details again. This is practice, not an automatic score.</p><label id="transfer-label" for="transfer"></label><textarea id="transfer" data-draft="transfer" rows="3"></textarea></section>
-  <section class="atlas-section notebook-section" aria-labelledby="notebook-heading"><h2 id="notebook-heading">My Unit 2 evidence notebook</h2><p>Keep selected observations here. Revisit them in 2.7 and explain their connection to your claim.</p><div id="evidence-bank"></div><details><summary>Review my earlier explanations</summary><div id="earlier-work"></div></details></section>
-  <section class="atlas-section submission-section" aria-labelledby="submission-heading"><h2 id="submission-heading">Bring my work into the lesson</h2><p>Your atlas writing saves in this browser on this device. To include it in your Canvas submission, add it to Map Check, return to the lesson, and use Gather All My Work.</p><p>Adding atlas work preserves any existing Map Check response. Check the preview before adding it.</p><details><summary>Preview my atlas response</summary><pre id="submission-preview"></pre></details><div class="action-row"><button id="send-to-map" type="button">Add my atlas work to Map Check</button><button id="copy-work" type="button">Copy my atlas work</button><button id="print-work" type="button">Print atlas and notebook</button></div><p id="submission-status" role="status" aria-live="polite"></p><textarea id="copy-fallback" aria-label="Atlas work for manual copying" readonly hidden></textarea></section>
-  <footer class="atlas-footer"><a href="https://apcentral.collegeboard.org/media/pdf/ap-world-history-modern-course-and-exam-description.pdf" target="_blank" rel="noopener">College Board framework</a><a href="https://www.naturalearthdata.com/about/terms-of-use/" target="_blank" rel="noopener">Basemap attribution</a><p>BeHistorical · Networks of Exchange</p></footer>
+    <details class="atlas-reference"><summary>Read this map as text</summary><div id="map-text"></div></details>
+    <details class="atlas-reference"><summary>Historical source and map context</summary><p id="focus"></p><p class="source-note">Place and route notes are BeHistorical course explanations. This selected map is a visual reference, not a complete account of the topic.</p><h3 id="source-title"></h3><p id="source-intro"></p><blockquote id="source-text"></blockquote><p id="source-attribution" class="source-note"></p><p id="source-note" class="source-note"></p><div id="source-links" class="source-links"></div><a id="lesson-link" href="lesson-2-7-comparison.html" target="_top">Read the full topic lesson</a></details>
+  </div>
 </main>
 </body></html>

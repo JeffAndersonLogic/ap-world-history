@@ -23,7 +23,7 @@ that no check in this repository makes.
 
 Open `index.html` through a local static server to explore the student site. Open `docs/command-center.html` for the generated project inventory.
 
-Unit 2 also has a shared [Network Atlas](unit-2/network-atlas.html), linked from its hub and all seven Map & Geography modules. Students predict, explore connections, inspect the course's historical sources, keep observations, and practice later recall. Selected writing joins the existing Map Check response for Canvas submission. See [the atlas teaching and capture guide](docs/UNIT-2-NETWORK-ATLAS.md).
+Unit 2 has a visual [Network Atlas](unit-2/network-atlas.html), embedded on the unit hub. Students click routes or places to read information and switch topic or seasonal views. It is a reference graphic, not a module or assignment: no questions, writing, grading, or submission. See [the atlas guide](docs/UNIT-2-NETWORK-ATLAS.md).
 
 ## Architecture
 

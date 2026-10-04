@@ -35,7 +35,7 @@ const W = '\x1b[1m', D = '\x1b[2m', X = '\x1b[0m';
 // bare checkout; browser needs playwright-core and a Chromium binary.
 const SUITES = {
   offline: [
-    ['scripts/test/unit2-atlas.test.js', 'Unit 2 atlas: source alignment, draft isolation, and safe Map Check import'],
+    ['scripts/test/unit2-atlas.test.js', 'Unit 2 atlas: visual-only content, canonical sources, and hub integration'],
     ['scripts/validate.js', 'structure, capture wiring, image integrity'],
     ['scripts/check-module07-authored.js', 'Units converted to one authored Module 07 evidence pool'],
     ['scripts/check-firestore-rules.js', 'Firestore rules not loosened into the shape that leaks everything'],
@@ -67,7 +67,7 @@ const SUITES = {
     ['scripts/test/topic-audit-coverage.test.js', 'topic audit records, coverage index, and the freshness check going quiet']
   ],
   browser: [
-    ['scripts/test/unit2-atlas.browser.test.js', 'Unit 2 atlas: interactive map, persistence, accessibility, and Canvas capture'],
+    ['scripts/test/unit2-atlas.browser.test.js', 'Unit 2 atlas: direct map clicks, keyboard, touch, and responsive hub embed'],
     ['scripts/test/modal-focus.unit.js', 'unit lesson modal focus contract'],
     ['scripts/test/modal-focus.foundations.js', 'foundations modal focus contract'],
     ['scripts/test/canvas-rich-clipboard.browser.js', 'Canvas rich clipboard end-to-end on Topic 1.1'],
