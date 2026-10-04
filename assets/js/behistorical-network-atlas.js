@@ -1,11 +1,11 @@
 (function(global){
 'use strict';
 const root=document.getElementById('network-atlas');if(!root)return;
-const $=id=>document.getElementById(id),data=global.BH_UNIT2_ATLAS;
-if(!data||!global.d3||!global.topojson||!global.BH_ATLAS_WORLD){$('atlas-status').hidden=false;$('atlas-status').textContent='The interactive map could not load. Use the Unit 2 topic pages while it is unavailable.';return;}
+const $=id=>document.getElementById(id),data=global.BH_NETWORK_ATLAS||global.BH_UNIT2_ATLAS;
+if(!data||!global.d3||!global.topojson||!global.BH_ATLAS_WORLD){$('atlas-status').hidden=false;$('atlas-status').textContent='The interactive map could not load. Use the unit topic pages while it is unavailable.';return;}
 const params=new URLSearchParams(global.location.search),embedded=params.get('embed')==='1';
 document.documentElement.classList.toggle('atlas-embedded',embedded);
-let topic=data.topics[params.get('topic')]?params.get('topic'):'2.7',view=0,selection={kind:'overview'};
+let topic=data.topics[params.get('topic')]?params.get('topic'):(data.defaultTopic||'2.7'),view=0,selection={kind:'overview'};
 const svg=global.d3.select($('atlas-map')),land=global.topojson.feature(global.BH_ATLAS_WORLD,global.BH_ATLAS_WORLD.objects.land);
 const t=()=>data.topics[topic],v=()=>t().views[view];
 function sendHeight(){if(embedded&&global.parent!==global)global.parent.postMessage({type:'BH_ATLAS_HEIGHT',height:Math.ceil(root.getBoundingClientRect().height)},global.location.origin);}
@@ -37,17 +37,21 @@ function nearestPlace(event,index,projection){
  return nearest;
 }
 function draw(){
- const w=$('atlas-map').clientWidth;if(!w)return;const h=Math.max(250,w*.60),small=w<550;
+ const active=document.activeElement,focused=active&&active.ownerSVGElement===svg.node()?{place:active.getAttribute('data-place'),route:active.getAttribute('data-route'),label:active.getAttribute('aria-label')}:null;
+ const w=$('atlas-map').clientWidth;if(!w)return;const h=Math.max(250,w*(v().aspect||.60)),small=w<550;
  svg.attr('viewBox',`0 0 ${w} ${h}`).attr('height',h);svg.selectAll('*').remove();svg.append('title').text(`${t().title}: ${v().name}`);svg.append('desc').text('Click, tap, or focus a connection or numbered place and press Enter to read its information. The place menu and map legend provide equivalent controls.');
- const proj=global.d3.geoEquirectangular().center([59,21]).scale((w-24)/(160*Math.PI/180)).translate([w/2,h/2]),path=global.d3.geoPath(proj);
+ const frame=v().frame,center=frame?[(frame[0][0]+frame[1][0])/2,(frame[0][1]+frame[1][1])/2]:[59,21];
+ const scale=frame?Math.min((w-48)/((frame[1][0]-frame[0][0])*Math.PI/180),(h-48)/((frame[1][1]-frame[0][1])*Math.PI/180)):(w-24)/(160*Math.PI/180);
+ const proj=global.d3.geoEquirectangular().center(center).scale(scale).translate([w/2,h/2]),path=global.d3.geoPath(proj);
  const defs=svg.append('defs');defs.append('clipPath').attr('id','atlas-map-clip').append('rect').attr('width',w).attr('height',h);defs.append('marker').attr('id','atlas-wind-arrow').attr('viewBox','0 0 10 10').attr('refX',9).attr('refY',5).attr('markerWidth',5).attr('markerHeight',5).attr('orient','auto').append('path').attr('d','M0 0L10 5L0 10Z').attr('fill','var(--atlas-highlight)');
  const g=svg.append('g').attr('clip-path','url(#atlas-map-clip)');g.append('path').datum(land).attr('class','atlas-land').attr('d',path).attr('fill','var(--atlas-land)').attr('stroke','var(--atlas-border)').attr('stroke-width',.6);
- const labels=small?[[[11,3],'AFRICA'],[[103,56],'ASIA'],[[76,-18],'INDIAN OCEAN']]:[[[12,3],'AFRICA'],[[15,54],'EUROPE'],[[63,52],'CENTRAL ASIA'],[[114,29],'CHINA'],[[83,21],'INDIA'],[[76,-18],'INDIAN OCEAN']];
+ const labels=v().labels||(small?[[[11,3],'AFRICA'],[[103,56],'ASIA'],[[76,-18],'INDIAN OCEAN']]:[[[12,3],'AFRICA'],[[15,54],'EUROPE'],[[63,52],'CENTRAL ASIA'],[[114,29],'CHINA'],[[83,21],'INDIA'],[[76,-18],'INDIAN OCEAN']]);
  labels.forEach(([ll,label])=>{const xy=proj(ll);g.append('text').attr('x',xy[0]).attr('y',xy[1]).attr('text-anchor','middle').text(label);});
  v().sets.forEach((set,i)=>{const selected=selection.kind==='route'&&selection.index===i;for(const coordinates of set.paths){const line={type:'LineString',coordinates};g.append('path').datum(line).attr('class','atlas-route').attr('d',path).attr('fill','none').attr('stroke',`var(--atlas-${set.color})`).attr('stroke-width',selected?4:2.5).attr('stroke-dasharray',set.dash||null);accessibleHit(g.append('path').datum(line).attr('class','atlas-route-hit').attr('data-route',i).attr('d',path).attr('fill','none').attr('stroke','transparent').attr('stroke-width',20),set.key,()=>select('route',i));}});
  if(topic==='2.3'){const line={type:'LineString',coordinates:view===0?[[53,0],[67,17]]:[[67,17],[53,0]]};g.append('path').datum(line).attr('class','atlas-wind').attr('d',path).attr('fill','none').attr('stroke','var(--atlas-highlight)').attr('stroke-width',2.5).attr('stroke-dasharray','7 4').attr('marker-end','url(#atlas-wind-arrow)');accessibleHit(g.append('path').datum(line).attr('class','atlas-route-hit').attr('d',path).attr('fill','none').attr('stroke','transparent').attr('stroke-width',20),'Arabian Sea seasonal winds',()=>select('wind'));}
  v().places.forEach((p,i)=>{const xy=proj(p.ll),selected=selection.kind==='place'&&selection.index===i;g.append('circle').attr('cx',xy[0]).attr('cy',xy[1]).attr('r',selected?8:6).attr('fill',selected?'var(--atlas-ink)':'var(--atlas-highlight)').attr('stroke','var(--atlas-clean)').attr('stroke-width',1.5);g.append('text').attr('x',xy[0]+10).attr('y',xy[1]-9).text(i+1);accessibleHit(g.append('circle').attr('class','atlas-place-hit').attr('data-place',i).attr('cx',xy[0]).attr('cy',xy[1]).attr('r',22).attr('fill','transparent'),p.name,event=>select('place',nearestPlace(event,i,proj)));});
- $('map-legend').replaceChildren(...v().sets.map((set,i)=>{const b=button(set.key,selection.kind==='route'&&selection.index===i,()=>select('route',i)),mark=document.createElement('span');b.className='map-key';mark.className='map-swatch';mark.style.borderColor=`var(--atlas-${set.color})`;if(set.dash)mark.style.borderTopStyle='dashed';b.prepend(mark);return b;}));if(topic==='2.3')$('map-legend').append(button('Arabian Sea seasonal winds',selection.kind==='wind',()=>select('wind')));sendHeight();
+ $('map-legend').replaceChildren(...v().sets.map((set,i)=>{const b=button(set.key,selection.kind==='route'&&selection.index===i,()=>select('route',i)),mark=document.createElement('span');b.className='map-key';mark.className='map-swatch';mark.style.borderColor=`var(--atlas-${set.color})`;if(set.dash)mark.style.borderTopStyle='dashed';b.prepend(mark);return b;}));if(topic==='2.3')$('map-legend').append(button('Arabian Sea seasonal winds',selection.kind==='wind',()=>select('wind')));
+ if(focused){const nodes=root.querySelectorAll(focused.place!==null?'.atlas-place-hit':'.atlas-route-hit');for(const node of nodes){if(node.getAttribute('aria-label')===focused.label&&node.getAttribute('data-place')===focused.place&&node.getAttribute('data-route')===focused.route){node.focus();break;}}}sendHeight();
 }
 function render(){
  view=0;selection={kind:'overview'};$('atlas-topic').value=topic;$('period').textContent=t().period;$('focus').textContent=t().focus;$('lesson-link').href=t().lesson;

@@ -35,6 +35,7 @@ const W = '\x1b[1m', D = '\x1b[2m', X = '\x1b[0m';
 // bare checkout; browser needs playwright-core and a Chromium binary.
 const SUITES = {
   offline: [
+    ['scripts/test/unit1-atlas.test.js', 'Unit 1 atlas: regional coverage and visual-only hub'],
     ['scripts/test/unit2-atlas.test.js', 'Unit 2 atlas: visual-only content, canonical sources, and hub integration'],
     ['scripts/validate.js', 'structure, capture wiring, image integrity'],
     ['scripts/check-module07-authored.js', 'Units converted to one authored Module 07 evidence pool'],
@@ -67,6 +68,7 @@ const SUITES = {
     ['scripts/test/topic-audit-coverage.test.js', 'topic audit records, coverage index, and the freshness check going quiet']
   ],
   browser: [
+    ['scripts/test/unit1-atlas.browser.test.js', 'Unit 1 atlas: regional map interaction and responsive embed'],
     ['scripts/test/unit2-atlas.browser.test.js', 'Unit 2 atlas: direct map clicks, keyboard, touch, and responsive hub embed'],
     ['scripts/test/modal-focus.unit.js', 'unit lesson modal focus contract'],
     ['scripts/test/modal-focus.foundations.js', 'foundations modal focus contract'],

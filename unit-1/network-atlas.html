@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Unit 1 Network Atlas | BeHistorical</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/behistorical-network-atlas.css">
+  <script defer src="../assets/vendor/atlas/d3-7.9.0.min.js"></script>
+  <script defer src="../assets/vendor/atlas/topojson-client-3.1.0.min.js"></script>
+  <script defer src="../assets/vendor/atlas/world-land-110m.js"></script>
+  <script defer src="../assets/data/unit1-network-atlas.js"></script>
+  <script defer src="../assets/js/behistorical-network-atlas.js"></script>
+</head>
+<body>
+<main id="network-atlas" class="atlas-shell">
+  <nav class="atlas-nav" aria-label="Course navigation"><a href="index.html#network-atlas">Unit 1</a><a href="../ebook/unit-1.html">Unit 1 eBook</a></nav>
+  <header class="atlas-header"><p class="eyebrow">BeHistorical · Unit 1 · c. 1200 to c. 1450</p><h1>The Global Tapestry</h1></header>
+  <p id="atlas-status" role="status" hidden></p>
+  <div class="atlas-content">
+    <div class="atlas-toolbar"><label for="atlas-topic">Explore a topic<select id="atlas-topic"></select></label><div id="view-controls" class="view-controls" aria-label="Map view"></div></div>
+    <p class="atlas-instruction">Click or tap a connection or numbered place to discover its story.</p>
+    <div class="atlas-layout">
+      <div class="atlas-map-area"><svg id="atlas-map" role="group" aria-label="Interactive map of selected regional states and connections"></svg><div id="map-legend" class="map-legend" aria-label="Explore a connection"></div><p class="map-caption">Selected, approximate centers and relationships, not exact itineraries or political boundaries. Markers span different dates; no lines imply transoceanic American connections. Natural Earth coastlines.</p></div>
+      <aside class="atlas-info" aria-label="Selected map information"><label for="atlas-place">Jump to a place<select id="atlas-place"></select></label><div id="selection-detail" aria-live="polite" aria-atomic="true"><p id="detail-kind" class="eyebrow"></p><h2 id="place-title"></h2><p id="place-detail"></p></div><p id="period" class="period-note"></p></aside>
+    </div>
+    <details class="atlas-reference"><summary>Read this map as text</summary><div id="map-text"></div></details>
+    <details class="atlas-reference"><summary>Historical source and map context</summary><p id="focus"></p><p class="source-note">Place and route notes are BeHistorical course explanations. This selected map is a visual reference, not a complete account of the topic.</p><h3 id="source-title"></h3><p id="source-intro"></p><blockquote id="source-text"></blockquote><p id="source-attribution" class="source-note"></p><p id="source-note" class="source-note"></p><div id="source-links" class="source-links"></div><a id="lesson-link" href="lesson-1-7-comparison.html" target="_top">Read the full topic lesson</a></details>
+  </div>
+</main>
+</body></html>
