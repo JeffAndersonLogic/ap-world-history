@@ -544,6 +544,53 @@ function fRoute(s){
   return board('frame-route','dark',pad(`<div class="bht-ro-map" style="width:calc(${Wd}*var(--u))">${img}${path}${pins}${tag(vis,'bl')}</div><div class="bht-col bht-ro-side">${head(s)}<div class="bht-ro-legend">${legend}</div><div class="bht-fill"></div>${foot(s.footer)}</div>`,'row'));
 }
 
+/* ── round 3 (2026-10-04): Unit 3, land-based empires ──────────────────────
+   Built for the four moves Unit 3 keeps making: take one event apart (a siege,
+   a battle, a policy), show one claim holding up several branches, set two
+   states against each other over a contested place, and hand students the
+   sentence they will have to write. Each takes up to four lines of text and
+   no more, so a slide stays readable from the back of the room. */
+
+/* One event or place taken apart: where and when on a stamp, up to four
+   labeled facts, and what the case proves. */
+function caseFile(s){
+  const t=s.template||{},rows=arr(t.rows).slice(0,4);
+  const stamp=`<div class="bht-cf-stamp">${t.tag?`<div class="tg">${esc(t.tag)}</div>`:''}<div class="pl${String(t.place||'').length>10?' lg':''}">${esc(t.place)}</div>${t.date?`<div class="dt">${esc(t.date)}</div>`:''}${t.visual?frame(t.visual,'bht-cf-pic',{fit:'contain'}):''}</div>`;
+  const body=rows.map(r=>`<div class="bht-cf-row"><div class="l">${esc(r.label)}</div><p>${rich(r.text)}</p></div>`).join('');
+  const proves=t.proves?`<div class="bht-cf-proves"><div class="tg">${esc(t.provesLabel||'What it proves')}</div><p>${rich(t.proves)}</p></div>`:'';
+  return board('case-file',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-cf">${stamp}<div class="bht-cf-rows">${body}</div></div>`)+proves));
+}
+
+/* One claim and the branches that hold it up. Each branch has a name, a line
+   of explanation, and up to three examples as chips. */
+function branchTree(s){
+  const t=s.template||{},br=arr(t.branches).slice(0,4),n=Math.max(1,br.length);
+  const ys=br.map((_,i)=>((i+.5)/n*100).toFixed(2));
+  const lines=br.length?`<svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 H46 M46 ${ys[0]} V${ys[ys.length-1]} M46 ${ys.join(' H100 M46 ')} H100"></path></svg>`:'';
+  const rows=br.map((b,i)=>`<div class="bht-bt-br"><div class="n">${esc(b.tag||String(i+1))}</div><div class="w"><b>${esc(b.label)}</b>${b.note?`<span>${rich(b.note)}</span>`:''}${arr(b.items).length?`<div class="chips">${arr(b.items).slice(0,3).map(x=>`<i>${esc(x)}</i>`).join('')}</div>`:''}</div></div>`).join('');
+  return board('branch-tree',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-bt"><div class="bht-bt-claim"><div class="tg">${esc(t.claimLabel||'The claim')}</div><p>${rich(t.claim)}</p></div><div class="bht-bt-lines">${lines}</div><div class="bht-bt-brs" style="grid-template-rows:repeat(${n},minmax(0,1fr))">${rows}</div></div>`)+foot(s.footer)));
+}
+
+/* Two states over one contested place, and the disputes that set them against
+   each other. */
+function faceOff(s){
+  const t=s.template||{},L=t.left||{},R=t.right||{},M=t.between||{},ds=arr(t.disputes).slice(0,3);
+  const side=(x,cls)=>`<div class="bht-fo-side ${cls}"><b>${esc(x.name)}</b>${x.note?`<span>${rich(x.note)}</span>`:''}</div>`;
+  const mid=`<div class="bht-fo-mid"><div class="pt"><em>${esc(M.label||'Contested')}</em><b>${esc(M.name)}</b>${M.note?`<span>${rich(M.note)}</span>`:''}</div></div>`;
+  const dis=ds.length?`<div class="bht-fo-ds" style="grid-template-columns:repeat(${ds.length},minmax(0,1fr))">${ds.map(d=>`<div class="bht-fo-d"><div class="tg">${esc(d.tag)}</div><p>${rich(d.text)}</p></div>`).join('')}</div>`:'';
+  return board('face-off',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-fo"><div class="bht-fo-top">${side(L,'l')}${mid}${side(R,'r')}</div>${dis}</div>`)+foot(s.footer)));
+}
+
+/* The sentence students will write, with the blanks showing what goes in
+   each, and one finished example under it. Write a blank as {{hint}}. */
+function sentenceFrame(s){
+  const t=s.template||{};
+  const parts=String(t.frame==null?'':t.frame).split(/\{\{(.+?)\}\}/);
+  const html=parts.map((x,i)=>i%2?`<span class="bht-sf-slot"><i>${esc(x)}</i></span>`:rich(x)).join('');
+  const ex=t.example?`<div class="bht-sf-ex"><div class="tg">${esc(t.exampleLabel||'Filled in')}</div><p>${rich(t.example)}</p></div>`:'';
+  return board('sentence-frame',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-sf"><p class="bht-sf-line">${html}</p>${ex}</div>`)+foot(s.footer)));
+}
+
 const KINDS={
   'equation':equation,'equation-stack':equationStack,'equation-remove':equationRemove,
   'exchange':exchange,'exchange-flow':exchangeFlow,'exchange-hub':exchangeHub,
@@ -561,7 +608,9 @@ const KINDS={
   'timeline-fortunes':timelineFortunes,
   'source-hipp':sourceHipp,'claim-evidence':claimEvidence,'cause-rank':causeRank,'myth-evidence':mythEvidence,
   'beready-sort':brSort,'close-321':close321,'close-retell':closeRetell,
-  'frame-compare':fCompare,'frame-route':fRoute
+  'frame-compare':fCompare,'frame-route':fRoute,
+  /* round 3 */
+  'case-file':caseFile,'branch-tree':branchTree,'face-off':faceOff,'sentence-frame':sentenceFrame
 };
 
 /* ── the Key Concept band ─────────────────────────────────────────────── */
@@ -1165,6 +1214,78 @@ const CSS=`
 .bht-ro-leg .n{width:28u;height:28u;border-radius:50%;background:#c9a46a;color:#101213;display:flex;align-items:center;justify-content:center;font:900 13u/1 'Montserrat',Helvetica,sans-serif;margin-top:2u}
 .bht-ro-leg b{display:block;font:800 19u/1.2 'Cinzel',Georgia,serif;color:var(--head)}
 .bht-ro-leg span{display:block;font-size:15u;line-height:1.35;color:var(--soft)}
+/* round 3: case file */
+.bht-cf{display:grid;grid-template-columns:290u minmax(0,1fr);column-gap:44u;align-items:start;min-height:0}
+.bht-cf-stamp{border:3u solid var(--acc);border-radius:8u;padding:20u 22u 22u;display:flex;flex-direction:column;gap:8u;min-width:0}
+.bht-cf-stamp .tg{font:800 13u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--acc)}
+.bht-cf-stamp .pl{font:800 30u/1.1 'Cinzel',Georgia,serif;color:var(--head)}
+.bht-cf-stamp .pl.lg{font-size:23u}
+.bht-cf-stamp .dt{font:900 52u/1 'Cinzel',Georgia,serif;color:var(--acc)}
+.bht-cf-pic{height:140u;margin-top:8u;border-radius:4u}
+.bht-cf-rows{display:flex;flex-direction:column;min-width:0}
+.bht-cf-row{display:grid;grid-template-columns:150u minmax(0,1fr);column-gap:22u;padding:12u 0;border-top:1u solid var(--rulec)}
+.bht-cf-row:first-child{border-top:0;padding-top:0}
+.bht-cf-row .l{font:800 13u/1.5 'Montserrat',Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);padding-top:4u}
+.bht-cf-row p{font-size:20u;line-height:1.4}
+.bht-cf-proves{background:#1a1c1d;color:#f5f0e7;border-radius:10u;padding:18u 28u;display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:26u;align-items:center}
+.dark .bht-cf-proves{background:#f5f0e7;color:#151718}
+.bht-cf-proves .tg{font:900 21u/1.15 'Cinzel',Georgia,serif;color:#c9a46a;max-width:9em}
+.dark .bht-cf-proves .tg{color:#6b3e1f}
+.bht-cf-proves p{font:700 20u/1.35 'Libre Baskerville',Georgia,serif}
+.bht-cf-proves b{color:inherit}
+
+/* round 3: branch tree */
+.bht-bt{display:grid;grid-template-columns:330u 70u minmax(0,1fr);align-items:stretch;min-height:0}
+.bht-bt-claim{align-self:center;background:#c9a46a;color:#101213;border-radius:10u;padding:26u 26u 30u;display:flex;flex-direction:column;gap:12u}
+.paper .bht-bt-claim{background:#1a1c1d;color:#f5f0e7}
+.bht-bt-claim .tg{font:800 13u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.2em;text-transform:uppercase;opacity:.8}
+.bht-bt-claim p{font:800 27u/1.25 'Cinzel',Georgia,serif}
+.bht-bt-claim b{color:inherit}
+.bht-bt-lines svg{width:100%;height:100%;display:block}
+.bht-bt-lines path{fill:none;stroke:var(--acc);stroke-width:3;vector-effect:non-scaling-stroke}
+.bht-bt-brs{display:grid;row-gap:12u;min-width:0}
+.bht-bt-br{display:grid;grid-template-columns:50u minmax(0,1fr);column-gap:16u;align-items:center;background:#181b1c;border:1u solid #2b3134;border-left:5u solid #c9a46a;border-radius:8u;padding:12u 20u;min-height:0}
+.paper .bht-bt-br{background:#fffdf7;border:1u solid #ddd2be;border-left:5u solid #8c5a2b}
+.bht-bt-br .n{font:900 28u/1 'Cinzel',Georgia,serif;color:var(--acc);text-align:center}
+.bht-bt-br .w{display:flex;flex-direction:column;gap:4u;min-width:0}
+.bht-bt-br b{font:800 24u/1.15 'Cinzel',Georgia,serif;color:var(--head)}
+.bht-bt-br span{font-size:16u;line-height:1.35;color:var(--soft)}
+.bht-bt-br .chips{display:flex;flex-wrap:wrap;gap:8u;margin-top:2u}
+.bht-bt-br .chips i{font:700 13u/1 'Montserrat',Helvetica,sans-serif;font-style:normal;letter-spacing:.04em;color:var(--head);border:1.5u solid var(--acc);border-radius:999u;padding:6u 12u}
+
+/* round 3: face off */
+.bht-fo{display:flex;flex-direction:column;gap:26u;min-height:0}
+.bht-fo-top{display:grid;grid-template-columns:minmax(0,1fr) 300u minmax(0,1fr);align-items:center;position:relative}
+.bht-fo-top::before{content:'';position:absolute;left:10%;right:10%;top:50%;height:3u;background:var(--acc);opacity:.55}
+.bht-fo-side{position:relative;display:flex;flex-direction:column;gap:8u;padding:30u 28u;border-radius:10u;background:#181b1c;border:1u solid #2b3134;border-top:5u solid #8c5a2b;min-width:0}
+.paper .bht-fo-side{background:#fffdf7;border:1u solid #ddd2be;border-top:5u solid #8c5a2b}
+.bht-fo-side.r{border-top-color:#c9a46a}
+.bht-fo-side b{font:800 38u/1.1 'Cinzel',Georgia,serif;color:var(--head);overflow-wrap:break-word}
+.bht-fo-side span{font-size:19u;line-height:1.4;color:var(--soft)}
+.bht-fo-mid{position:relative;display:flex;justify-content:center;padding:0 14u}
+.bht-fo-mid .pt{position:relative;display:flex;flex-direction:column;align-items:center;gap:3u;text-align:center;background:#c9a46a;color:#101213;border-radius:14u;padding:14u 18u;min-width:0;max-width:100%}
+.bht-fo-mid em{font:800 11u/1.2 'Montserrat',Helvetica,sans-serif;font-style:normal;letter-spacing:.2em;text-transform:uppercase}
+.bht-fo-mid b{font:900 26u/1.1 'Cinzel',Georgia,serif;color:#101213;overflow-wrap:break-word}
+.bht-fo-mid span{font:600 14u/1.3 'Montserrat',Helvetica,sans-serif}
+.bht-fo-ds{display:grid;gap:18u}
+.bht-fo-d{border-top:4u solid var(--acc);padding:12u 4u 0;min-width:0}
+.bht-fo-d .tg{font:800 15u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--acc);margin-bottom:6u}
+.bht-fo-d p{font-size:22u;line-height:1.4}
+
+/* round 3: sentence frame */
+.bht-sf{display:flex;flex-direction:column;gap:30u}
+.bht-sf-line{font:600 36u/2 'Libre Baskerville',Georgia,serif;color:var(--head);max-width:30em}
+.bht-sf-line b{color:var(--acc)}
+.bht-sf-slot{display:inline-block;vertical-align:baseline;min-width:150u;margin:0 4u;border-bottom:4u solid var(--acc);text-align:center;line-height:1.1;padding:0 8u 3u}
+.bht-sf-slot i{font:800 13u/1 'Montserrat',Helvetica,sans-serif;font-style:normal;letter-spacing:.16em;text-transform:uppercase;color:var(--sub)}
+.bht-sf-ex{background:#1a1c1d;color:#f5f0e7;border-radius:10u;padding:20u 28u;display:flex;flex-direction:column;gap:8u}
+.dark .bht-sf-ex{background:#f5f0e7;color:#151718}
+.bht-sf-ex .tg{font:800 13u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#c9a46a}
+.dark .bht-sf-ex .tg{color:#6b3e1f}
+.bht-sf-ex p{font-size:21u;line-height:1.45}
+.bht-sf-ex b{color:#c9a46a}
+.dark .bht-sf-ex b{color:#6b3e1f}
+
 `.replace(/(-?)(\d+(?:\.\d+)?)u\b/g,'calc($1$2*var(--u))')
  /* The sign goes inside calc(): -7u used to become -calc(7*var(--u)), which
     is invalid CSS, so the browser dropped the whole declaration. That is how

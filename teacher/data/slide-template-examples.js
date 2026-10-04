@@ -174,7 +174,27 @@ window.BH_SLIDE_TEMPLATE_EXAMPLES=[
   {round:2,group:'Image frames',name:'Route on a map',note:'Numbered stops on a real map. view crops the picture; each stop’s x and y are fractions of the whole image, so pins stay put whatever the crop.',slide:{
     kind:'frame-route',eyebrow:'Topic 2.4 · Route',title:'Ibn Battuta crosses the Sahara, 1352 to 1353.',footer:'He was home in Morocco by 1354.',
     template:{visual:{url:img('2-4','2.4 - Africa Satellite.jpg'),alt:'Satellite image of northwest Africa, the Sahara in tan and the Sahel in green',credit:'Satellite image · Africa'},ratio:1258/1252,view:{x:.08,y:.03,w:.32,h:.37},
-      stops:[{name:'Sijilmasa',text:'Early 1352: leaves the edge of Morocco',x:.2,y:.108},{name:'Taghaza',text:'Salt mines, and houses built of salt',x:.181,y:.194},{name:'Walata',text:'April 1352: the first town of Mali',x:.165,y:.269},{name:'Mali’s capital',text:'Eight months at the court of Mansa Sulayman; the site is still debated',x:.149,y:.339},{name:'Timbuktu',text:'1353, on the Niger',x:.211,y:.275},{name:'Gao',text:'1353, down the river',x:.245,y:.282},{name:'Takedda',text:'A copper town; then north toward home',x:.329,y:.268}]}}}
+      stops:[{name:'Sijilmasa',text:'Early 1352: leaves the edge of Morocco',x:.2,y:.108},{name:'Taghaza',text:'Salt mines, and houses built of salt',x:.181,y:.194},{name:'Walata',text:'April 1352: the first town of Mali',x:.165,y:.269},{name:'Mali’s capital',text:'Eight months at the court of Mansa Sulayman; the site is still debated',x:.149,y:.339},{name:'Timbuktu',text:'1353, on the Niger',x:.211,y:.275},{name:'Gao',text:'1353, down the river',x:.245,y:.282},{name:'Takedda',text:'A copper town; then north toward home',x:.329,y:.268}]}}},
+  /* Round 3, 2026-10-04: shapes built for Unit 3, land-based empires. Marked round:3. */
+  {round:3,group:'Unit 3 shapes',name:'Case file',note:'One event or place taken apart: a stamp with where and when (and a small picture if you have one), up to four labeled facts, and what the case proves. For sieges, battles, policies and turning points.',slide:{
+    kind:'case-file',eyebrow:'Topic 3.1 · Case File',title:'How the Ottomans broke Constantinople.',
+    template:{tag:'Siege',place:'Constantinople',date:'1453',visual:{url:'../assets/images/topics/3-1/dardanelles-gun.jpg',alt:'The Dardanelles Gun, a huge Ottoman bronze bombard cast in 1464',credit:'Dardanelles Gun, 1464 · Public domain',position:'50% 55%'},
+      rows:[{label:'Who',text:'Sultan **Mehmed II** and the Ottoman army against the defenders of the city'},{label:'Weapon',text:'Giant bronze **bombards**, built with the help of a Hungarian engineer named Urban'},{label:'Result',text:'The walls fell after about seven weeks, from 6 April to 29 May'},{label:'Cost',text:'Only a state could pay for the metal, powder, crews and haulers'}],
+      proves:'Cannons broke walls that had held for about a thousand years.'}}},
+  {round:3,group:'Unit 3 shapes',name:'Trunk and branches',note:'One claim on the left holds up two to four branches. Each branch has a name, a line of explanation and up to three examples as chips.',slide:{
+    kind:'branch-tree',eyebrow:'Unit 3 · Trunk and Branches',title:'How rulers held what guns won.',footer:'Each branch is one way to answer the same problem: why should these people obey?',
+    template:{claimLabel:'The claim',claim:'Conquest wins land. Three things **hold it**.',branches:[
+      {label:'People who serve',note:'Officials and soldiers whose loyalty runs to the throne',items:['Devshirme','Mansabdars','Salaried samurai']},
+      {label:'Symbols that justify',note:'A believable claim to rule, shown in stone and ceremony',items:['Divine right','Versailles','Mughal tombs']},
+      {label:'Systems that pay',note:'Armies and officials cost money every year',items:['Tax farming','Zamindars','Tribute lists']}]}}},
+  {round:3,group:'Unit 3 shapes',name:'Rivalry face-off',note:'Two states, one contested place between them, and the disputes (political, religious, economic) that set them against each other. Up to three dispute cards.',slide:{
+    kind:'face-off',eyebrow:'Topic 3.1 · Rivalry',title:'Two empires, one fortress.',footer:'The College Board names both political and religious disputes as causes of rivalry.',
+    template:{left:{name:'Safavid Empire',note:'Iran. Shia Islam was the state religion.'},right:{name:'Mughal Empire',note:'India. The emperors were Sunni Muslims.'},between:{label:'Contested',name:'Kandahar',note:'Frontier fortress'},
+      disputes:[{tag:'Political',text:'Each empire wanted the frontier fortress for itself, and it changed hands more than once.'},{tag:'Religious',text:'Different traditions of Islam stood behind the two empires.'}]}}},
+  {round:3,group:'Unit 3 shapes',name:'Sentence frame',note:'The sentence students will write, with each blank showing what goes in it ({{like this}}), and one finished example under it. Works for causation, comparison, and continuity and change.',slide:{
+    kind:'sentence-frame',eyebrow:'Unit 3 · Sentence Frame',title:'Say it in one sentence.',footer:'Same category on both sides, then because.',
+    template:{frame:'{{Empire A}} and {{Empire B}} both {{did the same thing}}, but they differed because {{a reason}}; this mattered because {{an effect}}.',exampleLabel:'Filled in',
+      example:'The **Ottomans** and the **Safavids** both **used firearms in battle**, but they differed because **the Ottomans fielded them first, at Chaldiran in 1514, and the Safavids built their own gun forces afterward**; this mattered because **the weapon spread to whoever could pay for it**.'}}}
 
 ];
 })();
