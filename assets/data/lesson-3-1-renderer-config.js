@@ -40,7 +40,7 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: The Gunpowder Empires',
+    title: 'First & 10: Guns Broke the Walls',
     embedUrl: 'first-and-10-topic-3-1-empires-expand-capture.html?v=response-id-fix-v1',
     note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 3.1 lesson path.'
   };

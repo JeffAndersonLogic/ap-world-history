@@ -24,157 +24,158 @@ module.exports = {
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
     "showFooterNote": false,
     "headerSubtitle": "Topic 3.1, Empires Expand &nbsp;|&nbsp; AP World History: Modern",
-    "titleHtml": "The <em>Gunpowder</em> Empires",
-    "deck": "Between c. 1450 and c. 1750, a new kind of empire emerged across Eurasia and North Africa. These land-based states, Ottoman, Safavid, Mughal, Qing, and Russian, used gunpowder weapons to conquer vast territories, organize enormous armies, and reshape the political map of the world. Understanding how they expanded requires seeing both the military technology and the state power behind it.",
+    "titleHtml": "Guns Broke the <em>Walls</em>",
+    "deck": "For centuries a thick wall let a lord say no to a king. Then cannons arrived, and only a few states could afford them. That is how a handful of empires got huge, and why they soon ran into each other.",
     "skillTags": [
       "Causation",
-      "Continuity & Change",
+      "Contextualization",
       "Argumentation"
     ],
     "supportCards": {
-      "beforeYouRead": "Track how gunpowder technology changed what empires could do militarily, specifically what it allowed rulers to attack and defend. Strong AP historians connect military technology to political outcomes: a cannon is not just a weapon, it is a political fact.",
-      "readingTarget": "By the end, you should be able to explain how gunpowder enabled land-based imperial expansion, identify major land empires with geographic evidence, and explain how political or religious disputes fueled a specific rivalry such as Safavid–Mughal conflict or Songhai–Morocco conflict."
+      "beforeYouRead": "<strong>A cannon breaks the wall → Only a big treasury can pay for it → Big states grow → Empires meet → Rivalries.</strong> Every example in this reading is one link in that chain.",
+      "readingTarget": "How did guns help a few empires get so big between 1450 and 1750, and what happened when those empires ran into each other?"
     },
     "vocabulary": [
-      "Gunpowder Empire",
+      "Siege",
+      "Theodosian Walls",
+      "Constantinople",
+      "Bombard",
+      "Treasury",
       "Ottoman Empire",
       "Safavid Empire",
       "Mughal Empire",
       "Qing Dynasty",
-      "Janissaries",
-      "Devshirme",
-      "Constantinople / Istanbul",
-      "Byzantine Empire",
-      "Cannon",
-      "Matchlock",
-      "Pax Mongolica",
-      "Safavid–Mughal Rivalry",
-      "Songhai–Morocco Rivalry"
+      "Chaldiran",
+      "Panipat",
+      "Rivalry",
+      "Kandahar",
+      "Tondibi"
     ],
     "sections": [
       {
         "number": "1",
-        "label": "Contextualization",
-        "heading": "A World of Empires, c. 1450: What Came Before",
+        "label": "The Idea",
+        "heading": "A Wall Let a Lord Say No to a King",
         "blocks": [
           {
             "type": "p",
-            "html": "To understand why the land-based empires of c. 1450–c. 1750 matter, you need to know what the world looked like before them. In the 13th and early 14th centuries, the <span class=\"kt\">Mongol Empire</span> had been the dominant land-based power in Eurasia, the largest contiguous land empire in history. The <span class=\"kt\">Pax Mongolica</span>, the period of relative stability under Mongol rule, had facilitated long-distance trade across the Silk Roads and connected East Asia to the Middle East and Europe in ways that had not existed before."
+            "html": "In Unit 2 you followed the trade networks that connected Afro-Eurasia, and you saw that gunpowder traveled on them. This unit asks a new question: what did states do once they had it?"
           },
           {
             "type": "p",
-            "html": "But by the mid-14th century, the Mongol Empire had fragmented into competing successor states, and the <span class=\"kt\">Black Death</span>, which spread along Mongol trade routes, had devastated populations from China to Western Europe. The political landscape of Eurasia was unstable, fragmented, and contested. Into this disrupted world, new states began to emerge in the late 14th and 15th centuries, armed with a technology that would change everything: <span class=\"kt\">gunpowder weapons</span>."
+            "html": "To see why the answer mattered, start with the problem guns solved. Picture a duke in a stone castle who will not obey the king. The king could send an army, but the walls are thick and tall. He could starve the duke out, which takes months while the king's own army has to be fed. Or he could storm the wall and lose thousands of soldiers. The cost was so high that kings often left the duke alone. The same was true of walled cities and mountain forts. A strong wall let a local lord say no to a faraway ruler."
           },
           {
             "type": "p",
-            "html": "Gunpowder itself originated in Tang Dynasty China around the 9th century and had spread westward through the Islamic world to Europe by the 13th and 14th centuries. But the critical development came in the 15th century: rulers and engineers learned how to cast large-caliber <span class=\"kt\">bronze and iron cannons</span> capable of hurling stone or iron balls with enough force to breach stone walls. This was not a minor military innovation, it was a revolution that made every castle, every city wall, and every traditional fortification suddenly vulnerable."
+            "html": "The most famous walls in the region protected Constantinople. The <span class=\"kt\">Theodosian Walls</span>, built in the 400s, had stopped attackers for about a thousand years. Any attacker laying a <span class=\"kt\">siege</span> to that city had to either starve it or climb those walls, and for a thousand years nobody had managed either."
           }
         ],
         "callout": {
           "label": "AP Thinking, Contextualization",
-          "raw": "<p>Before analyzing the gunpowder empires, you need to understand what the world looked like before them. <strong>The fragmentation of the Mongol Empire, the disruption of the Black Death, and the spread of gunpowder technology from China westward all set the stage for the new land-based empires of c. 1450.</strong> Contextualization means placing a historical development in its broader setting, not just saying \"gunpowder empires expanded\" but explaining what conditions made that expansion possible and what earlier patterns it continued or changed.</p>"
+          "raw": "<p><strong>Start with what was already true.</strong> Before you explain why guns changed things, say what they replaced: a world where a wall could beat an army.</p>"
         }
       },
       {
         "number": "2",
-        "label": "Key Concept",
-        "heading": "Gunpowder Changes War: Cannons, Matchlocks, and the New Military",
+        "label": "The Cannon",
+        "heading": "The Cannon Changed the Math",
         "blocks": [
           {
             "type": "p",
-            "html": "The term \"<span class=\"kt\">Gunpowder Empire</span>\" was coined by the historian Marshall Hodgson in the 1970s to describe the Ottoman, Safavid, and Mughal empires specifically, but historians now apply the concept more broadly to any of the major land-based states of c. 1450–c. 1750 that used gunpowder technology to gain and consolidate power. The concept captures something real: these were states whose military power was qualitatively different from anything that had come before, because gunpowder weapons changed the fundamental equation of war."
+            "html": "Gunpowder began in China and spread west along the networks of exchange. By the 1400s, rulers could cast huge guns out of bronze and iron. A wall is built tall and thin because that stops ladders and battering rams. A heavy iron ball does not climb the wall. It hits it sideways and breaks it. Sieges that used to take a year began to take weeks."
           },
           {
             "type": "p",
-            "html": "Before gunpowder artillery, military advantage went to whoever could build the strongest walls and maintain the longest sieges. A well-fortified city, with thick stone walls, a good water supply, and enough stored food, could hold out for months or years against an attacker without artillery. The Byzantine capital of <span class=\"kt\">Constantinople</span>, protected by its famous <span class=\"kt\">Theodosian Walls</span> (built in the 5th century), had resisted sieges for a thousand years. Attackers had tried every medieval technique: ladders, battering rams, tunneling, starvation. None had succeeded against walls that were thirty feet thick in places and backed by a deep moat."
+            "html": "In 1453 the young Ottoman sultan Mehmed II set out to take <span class=\"kt\">Constantinople</span>. A Hungarian engineer named Urban helped build giant guns called <span class=\"kt\">bombards</span>. The siege began on 6 April, and the Ottoman guns pounded the walls day after day. On 29 May, about seven weeks later, the city fell. Walls that had held for a thousand years were broken by a new weapon, and people everywhere understood that the old rules had changed."
           },
           {
             "type": "p",
-            "html": "Then came the cannon. By the mid-15th century, Ottoman engineers and their hired European contractors had mastered the casting of truly massive bronze bombards, siege guns that could hurl stone balls weighing hundreds of pounds. These were not the small primitive gunpowder weapons of a century earlier. They were precision instruments of destruction, capable of firing repeatedly over days and weeks, systematically destroying fortifications that no previous military technology could touch. The implications were immediate and obvious to everyone who witnessed their power: <span class=\"kt\">no wall was safe</span>."
-          },
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">matchlock musket</span>, a handheld firearm ignited by a slow-burning match, also transformed infantry warfare. Soldiers armed with matchlocks did not need years of training to be effective; a farmer could learn to load and fire a matchlock in weeks. Massed infantry with firearms could devastate cavalry forces that had dominated battlefields for centuries. States that could equip large numbers of soldiers with matchlock firearms gained decisive advantages over opponents who relied on traditional weapons, bows, spears, and swords."
+            "html": "You can still see what one of those guns looked like. The Dardanelles Gun, cast in 1464, survives in a museum in England. It is huge, and you can tell from its size how much metal and skill it took to make."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p>Causation requires explaining the mechanism, HOW a cause produced an effect. Gunpowder weapons caused imperial expansion not just because they were powerful, but because of what they specifically allowed rulers to DO: <strong>breach walls that had previously been impregnable, defeat cavalry with massed infantry, and sustain offensive operations over greater distances.</strong> A strong causal argument identifies the mechanism, not just the correlation between \"gunpowder appeared\" and \"empires expanded.\"</p>"
+          "raw": "<p><strong>Name the cause, the mechanism, and the effect.</strong> The cause is the cannon. The mechanism is that a wall built to stop things that climb cannot stop things that smash. The effect is that sieges took weeks instead of a year.</p>"
         }
       },
       {
         "number": "3",
-        "label": "Key Concept",
-        "heading": "The Major Empires and Their Expansion",
+        "label": "The Catch",
+        "heading": "Only a Big State Could Pay for a Cannon",
         "blocks": [
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Ottoman Empire</span> began as a small Turkish principality in northwestern Anatolia around 1299 under Osman I. By the mid-15th century it had already conquered most of Anatolia and expanded into the Balkans, modern Greece, Bulgaria, Serbia, and Romania. Under Sultan <span class=\"kt\">Mehmed II</span> (r. 1444–1481), the Ottomans conquered Constantinople (1453) and completed their domination of the Anatolian peninsula. His successors continued: under <span class=\"kt\">Selim I</span> (r. 1512–1520), the Ottomans defeated the Safavids at the Battle of Chaldiran (1514) and conquered Egypt and Syria. Under <span class=\"kt\">Suleiman the Magnificent</span> (r. 1520–1566), the empire reached its greatest extent, from Hungary in the northwest to Yemen in the southeast, controlling nearly the entire coastline of the Mediterranean and controlling access to the Black Sea."
+            "html": "Here is the catch. A duke cannot build a cannon in his backyard. A cannon needs huge amounts of metal, workshops to cast it, a steady supply of gunpowder, trained crews to fire it, and teams of people and animals to drag it to the wall. All of that costs a fortune. Only a state that could tax many people and fill a <span class=\"kt\">treasury</span> could pay for it."
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Safavid Empire</span> (est. 1501 in Persia) was smaller but religiously significant. Shah Ismail I declared <span class=\"kt\">Shia Islam</span> the official state religion of Persia, a dramatic break with the Sunni majority and a direct challenge to Ottoman religious authority. The resulting Sunni-Shia rivalry became one of the defining conflicts of the early modern Muslim world, shaping politics across Southwest and Central Asia. The Safavid state used gunpowder weapons and organized military forces to unify Persia and resist Ottoman expansion to the west and Uzbek pressure to the northeast."
+            "html": "So the new weapon did more than help rulers win battles. It helped big, rich rulers beat small, local ones. The same guns pushed outward against neighboring states and inward against rebel nobles and cities that used to get away with saying no. A wall could no longer protect you from your own ruler."
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Mughal Empire</span> was established in 1526 when <span class=\"kt\">Babur</span>, a Central Asian ruler descended from both Timur and Chinggis Khan, used artillery to defeat the much larger army of the Delhi Sultanate at the <span class=\"kt\">First Battle of Panipat</span>. His army was outnumbered but possessed field artillery, which devastated the Sultanate's war elephants and infantry. The Mughals subsequently conquered most of the Indian subcontinent over the next century, reaching their greatest extent under <span class=\"kt\">Aurangzeb</span> (r. 1658–1707). At its height, the Mughal Empire controlled a population of perhaps 150 million people, among the most populous empires in world history."
-          }
-        ],
-        "callout": {
-          "label": "AP Thinking, Continuity &amp; Change",
-          "raw": "<p>What changed and what stayed the same about imperial expansion between c. 1200 and c. 1750? The pattern of large land-based empires controlling trade routes and taxing populations was not new, the Mongols had done this. <strong>What changed was the military technology: gunpowder weapons gave states the ability to conquer fortified cities and defeat cavalry forces that previously could not be overcome.</strong> The continuity was the goal, control over territory, people, and resources. The change was the means.</p>"
-        }
-      },
-      {
-        "number": "4",
-        "label": "Key Concept",
-        "heading": "Expansion Meets Rivalry: Kandahar and Tondibi",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "Expansion did not occur into empty space. As land empires grew, they collided with other states that wanted the same territory, trade routes, or political influence. The CED names two rivalries that make this mechanism visible: the <span class=\"kt\">Safavid–Mughal conflict</span> and the <span class=\"kt\">Songhai Empire's conflict with Morocco</span>."
-          },
-          {
-            "type": "p",
-            "html": "The Safavids and Mughals repeatedly contested <span class=\"kt\">Kandahar</span>, a strategic city linking Iran, Central Asia, and the Indian subcontinent. The rivalry was political and territorial, and it unfolded in a region where the Safavid Shia state bordered the largely Sunni Mughal ruling elite. The important point is not that sectarian identity alone caused every battle; it is that political and religious difference could reinforce interstate rivalry."
-          },
-          {
-            "type": "p",
-            "html": "Farther west, Morocco invaded the <span class=\"kt\">Songhai Empire</span> in 1591. Moroccan forces equipped with firearms defeated Songhai at the <span class=\"kt\">Battle of Tondibi</span>, helping fracture a major West African empire and demonstrating again that gunpowder advantage mattered when expanding states collided over wealth and trade."
+            "html": "This is how four land empires got huge. The <span class=\"kt\">Ottoman Empire</span> grew across Southern Europe, the Middle East, and North Africa. At <span class=\"kt\">Chaldiran</span> in 1514, Ottoman firearms and artillery broke a charge by the cavalry of the <span class=\"kt\">Safavid Empire</span> in Iran, and the Safavids then built musketeer and artillery forces of their own. In 1526 the founder of the <span class=\"kt\">Mughal Empire</span>, Babur, beat a much larger army at <span class=\"kt\">Panipat</span> in India with cannons and soldiers carrying matchlock guns. The <span class=\"kt\">Qing Dynasty</span>, ruled by the Manchus, used firearms to take China in 1644 and then pushed across the steppe, the grasslands where nomad horsemen had once been nearly unbeatable."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p>Do not stop at saying two states fought. Explain the mechanism: <strong>expansion created overlapping claims; political or religious disputes intensified the rivalry; military capacity determined what each state could do about it.</strong> That causal chain is the Topic 3.1 job.</p>"
+          "raw": "<p><strong>The treasury is part of the mechanism.</strong> If you only write \"they had guns,\" you leave out why only some states grew. A strong answer says the guns were expensive, so the states that could pay for them got bigger.</p>"
         }
-      }    ],
-    "takeaway": "Land empires expanded through gunpowder weapons, organized armies, and the state resources needed to sustain them. Ottoman, Safavid, Mughal, Qing/Manchu, and other land empires grew across Eurasia, but expansion also created rivalries when states competed for territory, wealth, and legitimacy. Safavid–Mughal conflict and Songhai–Morocco conflict show the full mechanism: expansion created overlapping claims, political or religious disputes intensified conflict, and military technology shaped the outcome.",
+      },
+      {
+        "number": "4",
+        "label": "When Big States Meet",
+        "heading": "Big States Grew Until They Bumped Into Each Other",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Empires that keep growing eventually reach someone else's border. When they did, disputes over power and religion could turn neighbors into a <span class=\"kt\">rivalry</span>. The College Board names two examples."
+          },
+          {
+            "type": "p",
+            "html": "The first is the Safavids and the Mughals. <span class=\"kt\">Kandahar</span> was a fortress on the border between their empires, and each wanted it. That is the political side of the dispute. The religious side was real too: the Safavids made Shia Islam the religion of their state, while the Mughal emperors were Sunni Muslims. Historians argue about how much each mattered. A strong answer names both and explains how they fed each other."
+          },
+          {
+            "type": "p",
+            "html": "The second is Morocco and the Songhai Empire in West Africa. In 1591 Morocco sent a few thousand soldiers across the Sahara with firearms. At <span class=\"kt\">Tondibi</span> they destroyed a Songhai army that was many times larger, and the Songhai empire broke apart. It is one of the clearest tests of the whole story: same century, same region, one side with guns and one without."
+          },
+          {
+            "type": "p",
+            "html": "There is also a twist. Morocco won the battle and could not really govern what it won, and Kandahar kept changing hands even though both sides had cannons. Guns can win a place. They do not run it. Mehmed took Constantinople in seven weeks. Now he had to run it, and that is the next topic."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Do not stop at \"two states fought.\"</strong> Say what the dispute was about, political, religious, or both, and how it turned neighbors into rivals. Then say what weapons let each side do about it.</p>"
+        }
+      }
+    ],
+    "takeaway": "A strong wall once let a lord say no to a king. Cannons broke the walls, as at Constantinople in 1453, and only big states with big treasuries could afford them. So the Ottoman, Safavid, Mughal, and Qing empires got bigger, and when growing empires met, political and religious disputes turned them into rivals, as at Kandahar and Tondibi. Guns could win a place, but they could not run it.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
         "num": "01",
         "skill": "Causation",
-        "text": "Explain how gunpowder technology contributed to the expansion of land-based empires after c. 1450. Use at least one specific empire as evidence.",
-        "placeholder": "Gunpowder technology contributed to imperial expansion because..."
+        "text": "Explain how guns helped one empire expand after 1450. Name the weapon, what it did to the old way of fighting, and one specific battle or empire.",
+        "placeholder": "Guns helped ___ expand because the weapon... For example, at..."
       },
       {
         "num": "02",
-        "skill": "Continuity & Change",
-        "text": "What changed about warfare and imperial expansion between c. 1200–c. 1450 and c. 1450–c. 1750? What stayed the same?",
-        "placeholder": "What changed was... What stayed the same was..."
+        "skill": "Causation",
+        "text": "Why could only large states make full use of cannons? Explain how that helped some states get bigger.",
+        "placeholder": "Only large states could use cannons because... As a result..."
       },
       {
         "num": "03",
         "skill": "Argumentation",
-        "text": "Choose either the Safavid–Mughal rivalry or Songhai's conflict with Morocco. Explain how a political or religious dispute contributed to the conflict, and use one specific piece of evidence.",
-        "placeholder": "The rivalry between ___ and ___ intensified because... Evidence that shows this is..."
+        "text": "Choose either the Safavid and Mughal rivalry or Songhai's conflict with Morocco. Explain how a political or religious dispute helped turn the two states into rivals, and use one specific piece of evidence.",
+        "placeholder": "The rivalry between ___ and ___ grew because... Evidence that shows this is..."
       }
     ],
     "builderBody": "After answering the three questions, build one prompt for the BeHistorical AI Coach. The prompt will include your responses and ask the coach to question, challenge, and improve your thinking without writing the final answer for you.",
@@ -189,7 +190,7 @@ module.exports = {
       "label": "Content Delivery &#8594;"
     },
     "lessonFile": "../unit-3/index.html",
-    "padQuestionNumbers": true,
+    "padQuestionNumbers": true
   },
   "3.2": {
     "topicKey": "3.2",

@@ -176,7 +176,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   first10: {
-    title: 'First & 10: The Gunpowder Empires',
+    title: 'First & 10: Guns Broke the Walls',
     embedUrl: 'first-and-10-topic-3-1-empires-expand-capture.html?v=response-id-fix-v1'
   },
 
