@@ -146,10 +146,10 @@ window.BEHISTORICAL_LESSON = {
           "Sultan Mehmed II claimed the title of **Caesar (Kayser-i Rum)**, Emperor of Rome, asserting Ottoman legitimacy as the successors of both the Roman Empire and the Islamic caliphate. The conquest demonstrated what gunpowder artillery could accomplish and announced that a new era of imperial power had arrived in Eurasia."
         ],
         image: {
-          title: "The Mughal Empire at its height, c. 1700",
-          caption: "Gunpowder, cavalry, and revenue systems let the Mughals expand across South Asia, the same combination the Ottomans and Safavids used.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Mughal_Empire_%281700%29.png"
+          title: "The Dardanelles Gun, Ottoman Empire, 1464",
+          caption: "A surviving Ottoman bronze bombard, cast in 1464 and now at Fort Nelson in England. It is the kind of gun that broke the walls of Constantinople in 1453, though it is not the gun from that siege.",
+          url: "../assets/images/topics/3-1/dardanelles-gun.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Great_Turkish_Bombard_at_Fort_Nelson.JPG"
         }
       }
     ]
