@@ -372,14 +372,14 @@ Strong answer checklist: Use the same category on both sides. Use specific evide
 - KC-4.3.II.B (Governance): Land empires included the Manchu in Central and East Asia; the Mughal in South and Central Asia; the Ottoman in Southern Europe, the Middle East, and North Africa; and the Safavids in the Middle East.
 - KC-4.3.III.i (Governance): Political and religious disputes led to rivalries and conflict between states. Illustrative examples: Safavid–Mughal conflict, Songhai Empire’s conflict with Morocco.
 
-**Expected evidence terms.** gunpowder, cannon, matchlock, bombard, Janissaries, devshirme, Ottoman, Mughal, Safavid, Qing, Ottoman Empire, Safavid Empire, Mughal Empire, Qing Dynasty, Manchu, Safavid–Mughal conflict, Kandahar, Songhai, Morocco, Tondibi, Sunni, Shia, rivalry.
+**Expected evidence terms.** gunpowder, cannon, matchlock, bombard, Constantinople, Chaldiran, Panipat, Ottoman, Mughal, Safavid, Qing, Ottoman Empire, Safavid Empire, Mughal Empire, Qing Dynasty, Manchu, Safavid–Mughal conflict, Kandahar, Songhai, Morocco, Tondibi, Sunni, Shia, rivalry.
 
 **AP skill focus.** Causation practice.
 
 **Checkpoint 1 prompt.** Explain how gunpowder technology changed warfare and enabled land-based empires to expand their territories after c. 1450. Use specific evidence, name a specific weapon, empire, or military event.
 Strong answer checklist: Name at least one specific gunpowder weapon and explain how it changed warfare. Connect the military technology to territorial expansion by at least one empire. Explain what advantage gunpowder weapons gave empires over their opponents.
 
-**Checkpoint 2 prompt.** Describe the geographic expansion of at least TWO land-based empires after c. 1450. Then explain ONE interstate rivalry named by the CED, either the Safavid–Mughal conflict or Songhai's conflict with Morocco, showing how political or religious disputes fueled the conflict.
+**Checkpoint 2 prompt.** Describe how at least TWO land-based empires grew after c. 1450. Then explain ONE rivalry between states that the College Board names, either the Safavid–Mughal conflict or Songhai's conflict with Morocco. Show how political or religious disputes caused or increased the conflict.
 Strong answer checklist: Name at least two land-based empires and describe specific regions they conquered. Name one CED state rivalry and identify the states involved. Explain how a political or religious dispute helped produce or intensify the conflict.
 
 ## 3.2 Empires: Administration

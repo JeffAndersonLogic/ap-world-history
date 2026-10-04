@@ -129,7 +129,7 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "The **Ottoman Empire** (est. c. 1299) expanded from a small Anatolian principality to control the Balkans, Anatolia, the Arab Middle East, and North Africa by c. 1550. Under Suleiman the Magnificent (r. 1520–1566), the Ottomans controlled one of the largest empires in the world.",
           "The **Safavid Empire** (est. 1501) unified Persia under Shia Islam and served as the Ottoman Empire's eastern rival. The **Mughal Empire** (est. 1526) under Babur and his successors conquered most of the Indian subcontinent. The **Qing Dynasty** (est. 1644) expanded China's borders into Central Asia, Tibet, and Mongolia.",
-          "The **Russian Empire** expanded eastward across Siberia and southward toward Central Asia during the same period, a land-based imperial expansion as significant as those of the more commonly studied 'Gunpowder Empires.' All of these states used gunpowder weapons and recruited military forces from conquered or enslaved populations."
+          "The **Russian Empire** expanded eastward across Siberia and southward toward Central Asia during the same period, a land-based imperial expansion as significant as those of the more commonly studied 'Gunpowder Empires.' All of these states used gunpowder weapons, and some, such as the Ottomans and the Safavids, built part of their armies from conquered or captive peoples."
         ],
         image: {
           title: "Topkapi Palace, Istanbul",

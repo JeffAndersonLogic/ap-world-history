@@ -21,7 +21,7 @@ const scenarios = [
       keyConcepts: ['KC-4.3.II', 'KC-4.3.II.B', 'Gunpowder and armed expansion']
     },
     premise: [
-      'Sultan Mehmed II has surrounded Constantinople, the last major center of the Byzantine Empire. The city’s layered Theodosian Walls have defeated armies for centuries, but Ottoman founders have cast bombards large enough to damage masonry that once seemed unbreakable.',
+      'Sultan Mehmed II has surrounded Constantinople, the last major center of the Byzantine Empire. The city’s layered Theodosian Walls have defeated armies for centuries, but Ottoman metalworkers have cast bombards large enough to damage masonry that once seemed unbreakable.',
       'The weapons are powerful but slow. Large guns require long loading and cooling cycles, damaged walls are repaired at night, and repeated infantry attacks consume men and supplies. At sea, a defensive chain blocks Ottoman ships from entering the Golden Horn and forces the city’s small garrison to defend fewer approaches.',
       'You sit on Mehmed’s war council. Your recommendation must turn gunpowder, manpower, naval pressure, and logistics into conquest without exhausting the army or provoking a wider Christian relief effort. You know only what the council could know before the city falls.'
     ],

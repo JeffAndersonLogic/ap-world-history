@@ -42,7 +42,7 @@
     ...lesson.first10,
     title: 'First & 10: Guns Broke the Walls',
     embedUrl: 'first-and-10-topic-3-1-empires-expand-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 3.1 lesson path.'
+    note: 'Read for the story: a cannon breaks the wall, only a big treasury can pay for it, big states grow, they run into each other, and rivalries follow.'
   };
 
   lesson.map = {
@@ -87,7 +87,7 @@
     intro: 'Causation means explaining WHY something happened, identifying the causes that produced a specific historical outcome. For Topic 3.1, you need to explain how gunpowder technology caused the expansion of land-based empires after c. 1450. A strong causal argument does more than list what happened, it explains the connection between cause and effect.',
     steps: [
       { label: 'Identify the cause', text: 'Gunpowder weapons, specifically large-caliber cannons and matchlock firearms, became available to rulers across Eurasia after c. 1450 through a combination of technological diffusion from China, improvements in iron casting, and state investment in military production.' },
-      { label: 'Explain the mechanism', text: 'Cannons made traditional fortifications, stone walls, castles, city defenses, vulnerable for the first time. Rulers with gunpowder artillery could breach walls that had previously been impregnable, enabling conquest of territories that would have been impossible to take with pre-gunpowder armies.' },
+      { label: 'Explain the mechanism', text: 'Cannons made traditional fortifications, stone walls, castles, and city defenses, far easier to break than before. Rulers with gunpowder artillery could breach walls that had resisted earlier siege weapons for centuries, which made it possible to conquer places that would have been too costly to take with pre-gunpowder armies.' },
       { label: 'Connect to the effect', text: 'Because gunpowder weapons gave states decisive military advantages, rulers who acquired them could expand rapidly at the expense of states that lacked them. The Ottoman conquest of Constantinople (1453) is the clearest example: the Theodosian Walls had resisted sieges for a thousand years, but fell within weeks to Ottoman bombard artillery.' }
     ],
     prompt: 'In 2–3 sentences, explain how gunpowder technology caused the expansion of ONE specific land-based empire. Identify the cause (gunpowder), explain the mechanism (what it allowed the empire to do), and connect it to a specific territorial gain or conquest.'
@@ -102,7 +102,7 @@
       successCriteria: [lesson.successCriteria[0].criteria],
       prompt: 'Explain how gunpowder technology changed warfare and enabled land-based empires to expand their territories after c. 1450. Use specific evidence, name a specific weapon, empire, or military event.',
       responseType: 'Checkpoint 1',
-      terms: ['gunpowder', 'cannon', 'matchlock', 'bombard', 'Janissaries', 'devshirme', 'Ottoman', 'Mughal', 'Safavid', 'Qing'],
+      terms: ['gunpowder', 'cannon', 'matchlock', 'bombard', 'Constantinople', 'Chaldiran', 'Panipat', 'Ottoman', 'Mughal', 'Safavid', 'Qing'],
       focus: ['Name at least one specific gunpowder weapon and explain how it changed warfare.', 'Connect the military technology to territorial expansion by at least one empire.', 'Explain what advantage gunpowder weapons gave empires over their opponents.']
     },
     {
@@ -111,7 +111,7 @@
       cardDesc: 'Major land empires, geographic expansion, and political or religious rivalry.',
       learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Describe the geographic expansion of at least TWO land-based empires after c. 1450. Then explain ONE interstate rivalry named by the CED, either the Safavid–Mughal conflict or Songhai\'s conflict with Morocco, showing how political or religious disputes fueled the conflict.',
+      prompt: 'Describe how at least TWO land-based empires grew after c. 1450. Then explain ONE rivalry between states that the College Board names, either the Safavid–Mughal conflict or Songhai\'s conflict with Morocco. Show how political or religious disputes caused or increased the conflict.',
       responseType: 'Checkpoint 2',
       terms: ['Ottoman Empire', 'Safavid Empire', 'Mughal Empire', 'Qing Dynasty', 'Manchu', 'Safavid–Mughal conflict', 'Kandahar', 'Songhai', 'Morocco', 'Tondibi', 'Sunni', 'Shia', 'rivalry'],
       focus: ['Name at least two land-based empires and describe specific regions they conquered.', 'Name one CED state rivalry and identify the states involved.', 'Explain how a political or religious dispute helped produce or intensify the conflict.']
