@@ -6,9 +6,9 @@
  * Story approved by Jeff 2026-10-04 (docs/TOPIC-3-1-STORY-DRAFT.md).
  * Retelling slide: the causal chain (phase 'chain').
  *
- * The four module slides near the end (Skill Builder, Checkpoint 1, Evidence Lab,
- * Checkpoint 2) are a PROPOSAL modeled on Topic 2.7. Which modules a 90-minute
- * block requires is Jeff's call and is settled in the schedule (Phase 8).
+ * Required modules, set by Jeff 2026-10-04 and written in the schedule: 02 First & 10
+ * (read in class), 06 Checkpoint 1, 07 Evidence Lab, 10 Checkpoint 2.
+ * Taught Green Friday 2026-10-09 and Silver Monday 2026-10-19.
  */
 window.BEHISTORICAL_TEACHING = {
   meta: {
@@ -32,7 +32,7 @@ window.BEHISTORICAL_TEACHING = {
     should: [
       'Use the causal chain as the retelling slide and have students redraw it from memory.',
       'Name the two limits at the end (Tondibi, Kandahar) so the hand-off to 3.2 is earned.',
-      'Name the modules due today once the schedule fixes them.'
+      'Name the modules due today: 02 First & 10 (in class), 06 Checkpoint 1, 07 Evidence Lab, 10 Checkpoint 2.'
     ],
     could: [
       'Use the BeInTheRoom Constantinople breach scenario as an extension for students who finish early.',
@@ -44,20 +44,20 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'preflight', label: 'Teacher Preflight', range: 'Before class', minutes: 2, teacher: 'The spine, the owns and bridge-only split, and the political and religious reading of Kandahar.', students: 'Not projected.', slide: 1 },
     { id: 'beready', label: 'BeReady', range: '0-4', minutes: 4, teacher: 'Retrieve gunpowder, the Mongols and the cost of holding an empire. Bridge to the question.', students: 'Answer from memory.', slide: 2 },
     { id: 'question', label: 'The Question', range: '4-6', minutes: 2, teacher: 'Pose the topic question and hold it.', students: 'Predict an answer.', slide: 3 },
-    { id: 'wall', label: 'The Wall Problem', range: '6-9', minutes: 3, teacher: 'A wall let a lord say no to a king.', students: 'Explain why a wall worked.', slide: 4 },
-    { id: 'cannon', label: 'The Cannon', range: '9-13', minutes: 4, teacher: 'Why a wall is the wrong shape against an iron ball.', students: 'Say what changed.', slide: 5 },
-    { id: 'proof', label: 'Constantinople, 1453', range: '13-18', minutes: 5, teacher: 'Seven weeks. The proof.', students: 'Read the gun as evidence.', slide: 6 },
-    { id: 'pays', label: 'Only a State Can Pay', range: '18-22', minutes: 4, teacher: 'Metal, foundries, powder, gunners, haulers.', students: 'Explain who could afford this.', slide: 7 },
-    { id: 'empires', label: 'Four Winners', range: '22-25', minutes: 3, teacher: 'The four empires on one map.', students: 'Name each empire and where it grew.', slide: 8 },
-    { id: 'proofs', label: 'One Weapon, Four Stories', range: '25-28', minutes: 3, teacher: 'One line each: Chaldiran, the Safavid answer, Panipat, the Qing.', students: 'Match each empire to its proof.', slide: 9 },
-    { id: 'panipat', label: 'Panipat, 1526', range: '28-30', minutes: 2, teacher: 'See the guns in a source.', students: 'Notice the cannons, then source the picture.', slide: 10 },
-    { id: 'meet', label: 'Big States Meet', range: '30-32', minutes: 2, teacher: 'Growth makes neighbors, and neighbors make rivals.', students: 'Predict what happens at the borders.', slide: 11 },
-    { id: 'kandahar', label: 'Safavid and Mughal', range: '32-36', minutes: 4, teacher: 'Kandahar: political and religious.', students: 'Name both kinds of dispute.', slide: 12 },
-    { id: 'tondibi', label: 'Morocco and Songhai', range: '36-40', minutes: 4, teacher: 'Tondibi, 1591: guns decide a war.', students: 'Compare the two armies.', slide: 13 },
-    { id: 'twist', label: 'The Twist', range: '40-43', minutes: 3, teacher: 'Guns win places. They do not run them.', students: 'Say what is still missing.', slide: 14 },
-    { id: 'chain', label: 'The Chain', range: '43-50', minutes: 7, teacher: 'Students redraw the causal chain from memory.', students: 'Retell the whole topic.', slide: 15 },
-    { id: 'sharpen', label: 'Sharpen the Claim', range: '50-55', minutes: 5, teacher: 'Model one causal sentence.', students: 'Upgrade a weak claim.', slide: 16 },
-    { id: 'skill', label: 'Skill Builder', range: '55-62', minutes: 7, teacher: 'Module 05: one empire, cause, mechanism, effect.', students: 'Write 2 to 3 causal sentences.', slide: 17 },
+    { id: 'first10', label: 'First & 10', range: '6-16', minutes: 10, teacher: 'Module 02: students read the whole story in class.', students: 'Read for the chain and underline the because sentences.', slide: 4 },
+    { id: 'wall', label: 'The Wall Problem', range: '16-18', minutes: 2, teacher: 'A wall let a lord say no to a king.', students: 'Explain why a wall worked.', slide: 5 },
+    { id: 'cannon', label: 'The Cannon', range: '18-21', minutes: 3, teacher: 'Why a wall is the wrong shape against an iron ball.', students: 'Say what changed.', slide: 6 },
+    { id: 'proof', label: 'Constantinople, 1453', range: '21-26', minutes: 5, teacher: 'Seven weeks. The proof.', students: 'Read the gun as evidence.', slide: 7 },
+    { id: 'pays', label: 'Only a State Can Pay', range: '26-29', minutes: 3, teacher: 'Metal, foundries, powder, gunners, haulers.', students: 'Explain who could afford this.', slide: 8 },
+    { id: 'empires', label: 'Four Winners', range: '29-32', minutes: 3, teacher: 'The four empires on one map.', students: 'Name each empire and where it grew.', slide: 9 },
+    { id: 'proofs', label: 'One Weapon, Four Stories', range: '32-35', minutes: 3, teacher: 'One line each: Chaldiran, the Safavid answer, Panipat, the Qing.', students: 'Match each empire to its proof.', slide: 10 },
+    { id: 'panipat', label: 'Panipat, 1526', range: '35-37', minutes: 2, teacher: 'See the guns in a source.', students: 'Notice the cannons, then source the picture.', slide: 11 },
+    { id: 'meet', label: 'Big States Meet', range: '37-39', minutes: 2, teacher: 'Growth makes neighbors, and neighbors make rivals.', students: 'Predict what happens at the borders.', slide: 12 },
+    { id: 'kandahar', label: 'Safavid and Mughal', range: '39-43', minutes: 4, teacher: 'Kandahar: political and religious.', students: 'Name both kinds of dispute.', slide: 13 },
+    { id: 'tondibi', label: 'Morocco and Songhai', range: '43-47', minutes: 4, teacher: 'Tondibi, 1591: guns decide a war.', students: 'Compare the two armies.', slide: 14 },
+    { id: 'twist', label: 'The Twist', range: '47-50', minutes: 3, teacher: 'Guns win places. They do not run them.', students: 'Say what is still missing.', slide: 15 },
+    { id: 'chain', label: 'The Chain', range: '50-57', minutes: 7, teacher: 'Students redraw the causal chain from memory.', students: 'Retell the whole topic.', slide: 16 },
+    { id: 'sharpen', label: 'Sharpen the Claim', range: '57-62', minutes: 5, teacher: 'Model one causal sentence.', students: 'Upgrade a weak claim.', slide: 17 },
     { id: 'cp1', label: 'Checkpoint 1', range: '62-68', minutes: 6, teacher: 'Independent: how gunpowder enabled expansion.', students: 'Work without the coach.', slide: 18 },
     { id: 'evidence', label: 'Evidence Lab', range: '68-78', minutes: 10, teacher: 'Module 07: evidence from two cards.', students: 'Build a claim from two sources.', slide: 19 },
     { id: 'cp2', label: 'Checkpoint 2', range: '78-87', minutes: 9, teacher: 'Module 10: two empires and one rivalry. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 20 },
@@ -91,7 +91,7 @@ window.BEHISTORICAL_TEACHING = {
           'Owns: gunpowder as the cause of expansion; the four empires the CED names; interstate rivalry from political and religious disputes (Safavid-Mughal at Kandahar, Songhai-Morocco at Tondibi).',
           'Bridge only: devshirme and the Janissaries (3.2), what Chaldiran did to the Sunni-Shia divide (3.3), Russia (brief or omitted), armed trade at sea (Unit 4).',
           'KC-4.3.III.i names political and religious disputes. The 3.1 eBook chapter argues Kandahar was about a strategic corridor, not faith. Both readings are defensible history; the CED asks students to carry both kinds of dispute, so show both and let Checkpoint 2 make students argue it.',
-          'Modules due today are set by the schedule. The four module slides here are a proposal.'
+          'Modules due today: 02 First & 10 (done in class), 06 Checkpoint 1, 07 Evidence Lab, 10 Checkpoint 2. Checkpoint 2 finishes at home if it is not done in class.'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
         listenFor: 'Cannons broke the walls, only big states could afford them, so big states got bigger and then ran into each other.',
@@ -138,14 +138,32 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
+      phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10 · 10 Minutes',
+      title: 'Read for the chain.',
+      subtitle: 'A cannon breaks the wall, only a big treasury can pay for it, big states grow, they meet, and rivalries follow. Underline the because sentences.',
+      big: '10',
+      action: { label: 'Open First & 10', url: '../unit-3/first-and-10-topic-3-1-empires-expand-capture.html?v=response-id-fix-v1' },
+      notes: {
+        minutes: 10,
+        land: [
+          'Students read the whole story first, in class. The slides that follow retell it with evidence, so they are retrieval and sourcing, not a first telling.',
+          'Circulate for students connecting each example to a consequence. Do not accept example-only notes.',
+          'The reading answers three questions at the bottom. They are the First & 10 capture and go to Canvas through Gather All My Work.'
+        ],
+        ask: 'Which sentence in the reading explains why only some states grew?',
+        listenFor: 'The one about the treasury: only a state that taxes many people could pay for a cannon.'
+      }
+    },
+    {
       phase: 'wall', kind: 'question', eyebrow: 'What Was Already True',
       title: 'A wall let a lord say no to a king.',
       subtitle: 'Attack it and you starve for months or lose thousands storming it. So most of the time the king left him alone.',
       notes: {
-        minutes: 3,
+        minutes: 2,
         land: [
           'Set up the old rule: a castle, a walled city or a mountain fort let a local ruler defy a distant one, because taking it cost more than it was worth.',
           'Constantinople is the strongest case. Its land walls had stopped attackers for roughly a thousand years.',
+          'Students have just read this. Take two or three answers to retrieve it, and do not retell it.',
           'Do not mention cannons yet. Let students feel the problem first.'
         ],
         ask: 'If you were the king, what would you do about a duke behind thick walls?',
@@ -168,7 +186,7 @@ window.BEHISTORICAL_TEACHING = {
         ]
       },
       notes: {
-        minutes: 4,
+        minutes: 3,
         land: [
           'KC-4.3.II: imperial expansion relied on the increased use of gunpowder, cannons and armed trade.',
           'The mechanism is shape and force. A wall is high and thin because that stops ladders and rams. A heavy iron ball hits it sideways and breaks it.',
@@ -213,7 +231,7 @@ window.BEHISTORICAL_TEACHING = {
         { title: 'BECAUSE', text: 'Only a state that taxes many people could pay for all of it.' }
       ],
       notes: {
-        minutes: 4,
+        minutes: 3,
         land: [
           'This is the mechanism that turns a weapon into a political story: only a large, taxing state could afford artillery, so the weapon moved power from local lords to central treasuries.',
           'The same guns pointed outward at neighbors and inward at rebel nobles and autonomous cities. Expansion is the visible half; centralization is the invisible half.',
@@ -402,21 +420,6 @@ window.BEHISTORICAL_TEACHING = {
         ],
         ask: 'Which three words carry the structure?',
         listenFor: 'Cannons, because, grew.'
-      }
-    },
-    {
-      phase: 'skill', kind: 'action', eyebrow: 'Module 05 · Skill Builder',
-      title: 'Explain how gunpowder caused one empire to expand.',
-      subtitle: 'Name the cause, explain the mechanism, connect it to a specific conquest.',
-      action: { label: 'Open Student Lesson', url: '../unit-3/lesson-3-1-empires-expand.html#modules' },
-      notes: {
-        minutes: 7,
-        land: [
-          'Circulate for a named weapon, a mechanism and a specific territorial gain. Constantinople, Chaldiran, Panipat and Tondibi all work.',
-          'Push students who finish to add why only a state could use the weapon.'
-        ],
-        ask: 'Where is your mechanism, and where is your effect?',
-        listenFor: 'A sentence that explains what the weapon let the empire do, then names a conquest.'
       }
     },
     {

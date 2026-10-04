@@ -720,6 +720,26 @@ window.BEHISTORICAL_SCHEDULE = {
       resources: [
         { text: 'Eras 2 Exam Study Guide', href: 'study-guides/era-2-exam-study-guide.html', desc: 'Units 1 and 2, c. 1200 to c. 1450.' }
       ]
+    },
+
+    /* ---- Topic 3.1, Empires Expand ------------------------- */
+    // Green Friday 2026-10-09, the first class after the Eras 2 exam. Silver
+    // Monday 2026-10-19, the first Monday back after fall break (dates from
+    // Jeff, 2026-10-04; the repo has no break calendar). Module 02, the First
+    // & 10, is read in class, so the 2.7 days carry no reading block for 3.1.
+    // BeInTheRoom (09) exists and is optional; the required subset is 02, 06,
+    // 07 and 10, and the Skill Builder (05) is not required for this topic.
+    {
+      date: '2026-10-09',
+      cohort: 'green',
+      topic: '3.1',
+      modules: ['02', '06', '07', '10']
+    },
+    {
+      date: '2026-10-19',
+      cohort: 'silver',
+      topic: '3.1',
+      modules: ['02', '06', '07', '10']
     }
   ],
 

@@ -1460,7 +1460,8 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'Complete the Unit 1 and Unit 2 Progress Checks in AP Classroom before your Eras 2 Exam.', due: 'Wednesday, October 7' },
         { text: 'Study with the Eras 2 Exam Study Guide, linked in Canvas and on the Unit 1 and Unit 2 pages.', due: 'Wednesday, October 7' }
       ],
-      homeworkDue: 'Wednesday, October 7'
+      homeworkDue: 'Wednesday, October 7',
+      dueDate: '2026-10-09'
     },
     /* 2026-10-05  <-  lesson-2-7-comparison.js */
     {
@@ -1488,7 +1489,56 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'Complete the Unit 1 and Unit 2 Progress Checks in AP Classroom before your Eras 2 Exam.', due: 'Thursday, October 8' },
         { text: 'Study with the Eras 2 Exam Study Guide, linked in Canvas and on the Unit 1 and Unit 2 pages.', due: 'Thursday, October 8' }
       ],
-      homeworkDue: 'Thursday, October 8'
+      homeworkDue: 'Thursday, October 8',
+      dueDate: '2026-10-19'
+    },
+    /* 2026-10-09  <-  lesson-3-1-empires-expand.js */
+    {
+      date: '2026-10-09',
+      cohort: 'green',
+      unit: 'Unit 3: Land-Based Empires',
+      topic: 'Empires Expand',
+      learningTargets: [
+        { text: 'I can explain how gunpowder technology enabled land-based empires to expand their territories between c. 1450 and c. 1750.', label: 'Governance' },
+        { text: 'I can identify the major land-based empires and describe the geography and methods of their expansion.', label: 'Governance' },
+        { text: 'I can explain how political and religious disputes led to rivalries and conflict between land-based empires, such as the Safavid–Mughal conflict and the Songhai Empire\'s conflict with Morocco.', label: 'Governance' }
+      ],
+      successCriteria: [
+        { text: 'I can name specific gunpowder weapons (cannons, firearms) and explain how they gave empires military advantages over rivals and fortified opponents.', label: 'Governance' },
+        { text: 'I can describe the expansion of at least two empires with specific geographic and chronological evidence (e.g., Ottomans into Anatolia, Balkans, North Africa; Mughals across the Indian subcontinent).', label: 'Governance' },
+        { text: 'I can identify a specific imperial rivalry (e.g., the Safavid–Mughal conflict or the Songhai Empire\'s conflict with Morocco) and explain how political and religious disputes fueled conflict between states.', label: 'Governance' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: []
+    },
+    /* 2026-10-19  <-  lesson-3-1-empires-expand.js */
+    {
+      date: '2026-10-19',
+      cohort: 'silver',
+      unit: 'Unit 3: Land-Based Empires',
+      topic: 'Empires Expand',
+      learningTargets: [
+        { text: 'I can explain how gunpowder technology enabled land-based empires to expand their territories between c. 1450 and c. 1750.', label: 'Governance' },
+        { text: 'I can identify the major land-based empires and describe the geography and methods of their expansion.', label: 'Governance' },
+        { text: 'I can explain how political and religious disputes led to rivalries and conflict between land-based empires, such as the Safavid–Mughal conflict and the Songhai Empire\'s conflict with Morocco.', label: 'Governance' }
+      ],
+      successCriteria: [
+        { text: 'I can name specific gunpowder weapons (cannons, firearms) and explain how they gave empires military advantages over rivals and fortified opponents.', label: 'Governance' },
+        { text: 'I can describe the expansion of at least two empires with specific geographic and chronological evidence (e.g., Ottomans into Anatolia, Balkans, North Africa; Mughals across the Indian subcontinent).', label: 'Governance' },
+        { text: 'I can identify a specific imperial rivalry (e.g., the Safavid–Mughal conflict or the Songhai Empire\'s conflict with Morocco) and explain how political and religious disputes fueled conflict between states.', label: 'Governance' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: []
     }
   ],
 

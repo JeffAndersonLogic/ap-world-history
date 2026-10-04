@@ -36,6 +36,16 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kc": "Unit 3: Learning Objective A"
     },
     {
+      "kind": "action",
+      "eyebrow": "Module 02 · First & 10 · 10 Minutes",
+      "title": "Read for the chain.",
+      "subtitle": "A cannon breaks the wall, only a big treasury can pay for it, big states grow, they meet, and rivalries follow. Underline the because sentences.",
+      "action": {
+        "label": "Open First & 10",
+        "url": "first-and-10-topic-3-1-empires-expand-capture.html?v=response-id-fix-v1"
+      }
+    },
+    {
       "kind": "prompt",
       "eyebrow": "What Was Already True",
       "title": "A wall let a lord say no to a king.",
@@ -293,16 +303,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "weak": "Gunpowder helped empires grow.",
         "strong": "**Cannons** broke the walls that protected local lords, **and because** only a state with a big treasury could pay for them, **big states grew bigger** and absorbed their neighbors."
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 05 · Skill Builder",
-      "title": "Explain how gunpowder caused one empire to expand.",
-      "subtitle": "Name the cause, explain the mechanism, connect it to a specific conquest.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-3-1-empires-expand.html#modules"
       }
     },
     {
