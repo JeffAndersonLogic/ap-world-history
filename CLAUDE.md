@@ -1382,9 +1382,11 @@ Auth SDK, imported from Google's host at a version pinned in the config.
 
 **Turning it on is a decision with a list, and it is not one edit.**
 
-1. Fill in `firebase.apiKey`, `authDomain` and `appId` from the console's web app
-   registration (Project settings, Your apps). They identify the project and are
-   not secrets. Until they are there the engine cannot connect whatever else is set.
+1. ~~Fill in `firebase.apiKey`, `authDomain` and `appId`~~ **Done 2026-10-05**, from
+   the console's web app registration. They identify the project and are not
+   secrets. The registration also produced a Google Analytics `measurementId`,
+   deliberately left out: nothing loads Analytics, and analytics over student
+   activity is a separate ask to the district that has not been made.
 2. Enable Google as a sign-in method (Authentication), confirm ZCS approved *that*
    OAuth client, and add the site's host to Authorized domains.
 3. Deploy the current `firestore.rules` to the `behistoric` project after ZCS
@@ -1392,6 +1394,20 @@ Auth SDK, imported from Google's host at a version pinned in the config.
 4. Run a pretend student through a full lesson with `pilot` and `?sync=on`, which
    switches the backup on for one browser only. Then set `pilot` false, because
    it is a hidden switch a curious student could find, and then `enabled` true.
+   `pilot` is true in the shipped config today, which only matters once step 3 has
+   put real rules in the project: before that, a student who found `?sync=on`
+   would sign in and be refused, which is noise and nothing worse.
+
+**Storage belongs to the address, and the site is moving to behistorical.com.**
+`localStorage` is per origin, so a student's saved work, the backup's own record,
+the `?sync=on` pilot flag and Kelly's `?classroom=kelly` choice all stay behind at
+`jeffandersonlogic.github.io` and are invisible at the new address. GitHub Pages
+also redirects the old address to a custom domain, so a student cannot simply
+revisit it. The new domain has to be added to Firebase Authentication's
+Authorized domains before sign-in works there (the OAuth client uses
+`behistoric.firebaseapp.com` and does not change). The backup is what makes the
+move survivable: the new address looks to the engine exactly like a wiped device,
+so work already uploaded comes back. Work that was never uploaded does not.
 
 **What it does not cover, stated so nobody assumes it does.** The lesson page has
 to be open for the engine to run: a BeInTheRoom reflection typed in its own tab is

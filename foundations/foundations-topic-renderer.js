@@ -881,10 +881,10 @@ window.BH_SYNC_CONFIG = Object.freeze({
   "dayCap": 600,
   "sdkVersion": "12.19.0",
   "firebase": {
-    "apiKey": null,
-    "authDomain": null,
+    "apiKey": "AIzaSyDq4oEqKf_tjZJPmC1iyZ9hbrfz0E07Prs",
+    "authDomain": "behistoric.firebaseapp.com",
     "projectId": "behistoric",
-    "appId": null
+    "appId": "1:20943260001:web:d639c8b9f833701a62dd20"
   }
 });
 // Student response sync: backs a student's work up to Cloud Firestore and puts

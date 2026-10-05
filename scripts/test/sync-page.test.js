@@ -188,12 +188,34 @@ async function suite(browser) {
     await s.context.close();
   }
   {
-    // pilot is true in the shipped config, but with no project details the
-    // engine cannot connect, so ?sync=on alone must not turn anything on.
-    const s = await open(browser, UNIT_PAGE + '?sync=on', { on: false });
+    // With the project details removed the engine cannot connect, so ?sync=on
+    // alone must not turn anything on. The shipped config has them, so this
+    // blanks the key to keep that guard under test.
+    const s = await open(browser, UNIT_PAGE + '?sync=on', { on: false, patch: b => b.replace(/"apiKey": "[^"]*"/, '"apiKey": null') });
     await s.p.waitForTimeout(1200);
-    check('?sync=on does nothing until the project details are filled in', await s.p.evaluate(() => !document.getElementById('bh-sync')));
+    check('?sync=on does nothing without the project details', await s.p.evaluate(() => !document.getElementById('bh-sync')));
     await s.context.close();
+  }
+
+  // ── The pilot switch: one browser, by ?sync=on ─────────────────────────────
+  section('The pilot switch');
+  {
+    const s = await open(browser, UNIT_PAGE + '?sync=on', { on: false });
+    const on = await waitFor(s.p, () => !!document.getElementById('bh-sync'));
+    check('the shipped config is off for everyone and pilot is on', await s.p.evaluate(() => window.BH_SYNC_CONFIG.enabled === false && window.BH_SYNC_CONFIG.pilot === true));
+    check('?sync=on turns the backup on in that browser', on);
+    check('and it is remembered for the next page, with no parameter', await (async () => {
+      await s.p.goto(`http://127.0.0.1:${server.address().port}${UNIT_PAGE}`, { waitUntil: 'load' });
+      return waitFor(s.p, () => !!document.getElementById('bh-sync'));
+    })());
+    await s.p.goto(`http://127.0.0.1:${server.address().port}${UNIT_PAGE}?sync=off`, { waitUntil: 'load' });
+    await s.p.waitForTimeout(1200);
+    check('?sync=off turns it off again', await s.p.evaluate(() => !document.getElementById('bh-sync')));
+    await s.context.close();
+    const other = await open(browser, UNIT_PAGE, { on: false });
+    await other.p.waitForTimeout(1200);
+    check('a browser that never used ?sync=on is untouched', await other.p.evaluate(() => !document.getElementById('bh-sync')));
+    await other.context.close();
   }
 
   // ── A wiped device gets its work back ──────────────────────────────────────
@@ -337,6 +359,11 @@ async function suite(browser) {
       name: 'the backup is told the lesson has no slots',
       patch: b => b.replace("slots: () => collectLessonWork().map(w => ({ id: w.id, text: w.text, confidence: w.confidence })),", "slots: () => [],"),
       expect: /typed answer reaches the cloud/
+    },
+    {
+      name: 'the pilot switch is ignored',
+      patch: b => b.replace("if (!cfg || cfg.pilot !== true) return false;", "return false;"),
+      expect: /turns the backup on in that browser/
     },
     {
       name: 'the backup turns itself on in the shipped config',

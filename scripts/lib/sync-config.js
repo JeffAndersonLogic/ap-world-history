@@ -11,11 +11,11 @@
  * THE BACKUP IS OFF, and these are the three things that turn it on:
  *
  *   firebase   the web app's public settings from the Firebase console, Project
- *              settings, Your apps. They identify the project and are not
- *              secrets: access is decided by firestore/firestore.rules and by the
- *              student's own sign-in, never by keeping these private. Until they
- *              are filled in the engine cannot connect whatever else is set,
- *              which is deliberate.
+ *              settings, Your apps. Filled in on 2026-10-05. They identify the
+ *              project and are not secrets: access is decided by
+ *              firestore/firestore.rules and by the student's own sign-in. If any
+ *              of the three is ever null the engine cannot connect whatever else
+ *              is set, which is deliberate.
  *   pilot      with `enabled` false, true lets ONE browser opt in by opening any
  *              lesson with ?sync=on (and out again with ?sync=off). That is how
  *              a pretend student tests this against the real project before a
@@ -63,10 +63,17 @@ module.exports = {
   sdkVersion: '12.19.0',
 
   firebase: {
-    // Filled in from the console's web app registration. null means "not yet".
-    apiKey: null,
-    authDomain: null,
+    // From the console's web app registration for the `behistoric` project,
+    // 2026-10-05. They identify the project and are not secrets: what protects a
+    // student's work is firestore/firestore.rules and the student's own sign-in,
+    // never the privacy of these. The registration also produced a measurementId
+    // for Google Analytics. It is deliberately NOT here and nothing loads
+    // Analytics: the request to the district was for student work to stop
+    // disappearing, and analytics over student activity is a separate ask that
+    // has not been made.
+    apiKey: 'AIzaSyDq4oEqKf_tjZJPmC1iyZ9hbrfz0E07Prs',
+    authDomain: 'behistoric.firebaseapp.com',
     projectId: 'behistoric',
-    appId: null
+    appId: '1:20943260001:web:d639c8b9f833701a62dd20'
   }
 };
