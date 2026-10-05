@@ -157,7 +157,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'wall', kind: 'question', eyebrow: 'What Was Already True',
+      phase: 'wall', kind: 'frame-letterbox', eyebrow: 'What Was Already True',
       title: 'A wall let a lord say no to a king.',
       subtitle: 'Attack it and you starve for months or lose thousands storming it. So most of the time the king left him alone.',
       notes: {
@@ -165,6 +165,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'Set up the old rule: a castle, a walled city or a mountain fort let a local ruler defy a distant one, because taking it cost more than it was worth.',
           'Constantinople is the strongest case. Its land walls had stopped attackers for roughly a thousand years.',
+          'The diagram is a BeHistorical drawing, roughly to scale, from published measurements of the Land Walls. Walk it from the left: moat, moat wall, open terrace, outer wall, open terrace, inner wall. An attacker crossed every layer under fire from the one behind it.',
           'Students have just read this. Take two or three answers to retrieve it, and do not retell it.',
           'Do not mention cannons yet. Let students feel the problem first.'
         ],

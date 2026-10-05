@@ -25,6 +25,9 @@
  *   The haul picture is modeled on the Akbarnama's bullocks dragging siege guns at
  *   Ranthambhor, 1568, and the teacher note says so.
  *
+ * - wall (frame-letterbox): theodosian-walls-cross-section.svg, an original
+ *   BeHistorical diagram drawn roughly to scale from published measurements.
+ *
  * Not yet placed, and why: the Theodosian Walls (wall beat) and a period
  * depiction of the 1453 siege. The wall and siege slides are text-led until
  * those are sourced and verified. Candidates are listed in
@@ -42,6 +45,11 @@ const AI=(name,alt,extra)=>Object.assign({url:IMG+'topics/3-1/'+encodeURICompone
 const siegeAI=AI('3.1 - Bombards at the Walls.jpg','Reconstruction of Ottoman guns firing from behind earth banks at the broken walls of Constantinople, with soldiers and ladders at the breach');
 const haulAI=AI('3.1 - Hauling the Great Gun.jpg','Reconstruction of oxen and many men dragging a huge bronze siege gun up a rocky road toward a hilltop fortress, with an elephant and more guns behind');
 const by=id=>T.slides.find(s=>s.phase===id);
+
+// The wall beat: an original cross-section drawn from published measurements of
+// the Theodosian Land Walls (not traced from any copyrighted reconstruction).
+const wall=by('wall');
+if(wall)wall.template=Object.assign({},wall.template,{visual:{url:IMG+'topics/3-1/theodosian-walls-cross-section.svg',alt:'Cross-section of the Land Walls of Constantinople, roughly to scale: a moat about 20 meters wide, a low moat wall, an open terrace, the outer wall about 8.5 meters high, a second terrace, and the inner wall about 12 meters high with towers up to about 20 meters, with a person drawn for scale',credit:'BeHistorical diagram · approximate measurements',fit:'contain'}});
 
 const siege=by('siege');
 if(siege)siege.template=Object.assign({},siege.template,{visual:Object.assign({},siegeAI)});

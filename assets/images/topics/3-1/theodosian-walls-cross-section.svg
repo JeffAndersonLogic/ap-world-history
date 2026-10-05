@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="600" viewBox="0 0 1800 600" role="img" aria-labelledby="t d">
+  <title id="t">The Land Walls of Constantinople in cross-section</title>
+  <desc id="d">A BeHistorical diagram drawn roughly to scale from published measurements of the Theodosian Land Walls, built in the 400s. From the west, an attacker met a moat about 20 meters wide, a low moat wall, an open outer terrace, the outer wall about 8.5 meters high, a second open terrace, and the inner wall about 12 meters high with towers up to about 20 meters. A person is drawn for scale.</desc>
+  <!-- Scale: 1 meter = 18 px. x = 200 + meters * 18; ground at y = 440. -->
+  <rect width="1800" height="600" fill="#efe7d8"/>
+  <!-- sky wash -->
+  <rect width="1800" height="440" fill="#efe7d8"/>
+
+  <!-- earth, with the moat cut out -->
+  <path d="M0 440 H290 L308 566 H632 L650 440 H1800 V600 H0 Z" fill="#cbb48e"/>
+  <path d="M0 440 H290 L308 566 H632 L650 440 H1800" fill="none" stroke="#6b5a45" stroke-width="3"/>
+  <!-- water in the lower moat -->
+  <path d="M297.7 494 L308 566 H632 L642.3 494 Z" fill="#8fb3c4"/>
+  <path d="M297.7 494 H642.3" stroke="#5f8799" stroke-width="2"/>
+
+  <!-- towers behind the cut, drawn lighter -->
+  <g fill="#e2d6c1" stroke="#b6a587" stroke-width="2">
+    <path d="M920 440 V242 h8 v-12 h12 v12 h12 v-12 h12 v12 h12 v-12 h12 v12 h12 v-12 h12 v12 h4 V440 Z"/>
+    <path d="M1262 440 V116 h10 v-14 h14 v14 h14 v-14 h14 v14 h14 v-14 h14 v14 h14 v-14 h14 v14 h14 v-14 h14 v14 h14 v-14 h14 v14 h18 V440 Z"/>
+  </g>
+
+  <!-- moat wall (low breastwork) -->
+  <path d="M650 440 V407.6 h3 v-8 h5 v8 h4 v-8 h5 v8 h1 V440 Z" fill="#d9ccb3" stroke="#6b5a45" stroke-width="2.5"/>
+  <!-- outer wall, about 8.5 m high and 2 m thick -->
+  <path d="M992 440 V287 h6 v-12 h8 v12 h8 v-12 h8 v12 h4 V440 Z" fill="#d9ccb3" stroke="#6b5a45" stroke-width="3"/>
+  <!-- inner wall, about 12 m high and 5 m thick -->
+  <path d="M1352 440 V224 h8 v-14 h12 v14 h12 v-14 h12 v14 h12 v-14 h12 v14 h12 v-14 h10 V440 Z" fill="#d9ccb3" stroke="#6b5a45" stroke-width="3"/>
+  <!-- masonry bands, like the brick courses in the real walls -->
+  <g stroke="#a8652d" stroke-width="2" opacity=".55">
+    <path d="M992 330 H1028 M992 380 H1028"/>
+    <path d="M1352 280 H1442 M1352 330 H1442 M1352 380 H1442"/>
+  </g>
+
+  <!-- a person, for scale: 1.75 m -->
+  <g fill="#1a1c1d">
+    <circle cx="830" cy="414" r="4.5"/>
+    <path d="M826 419 h8 l2 11 h-3 l-1 10 h-2.5 l-0.5 -9 l-0.5 9 h-2.5 l-1 -10 h-3 Z"/>
+  </g>
+
+  <g font-family="Montserrat, Helvetica, Arial, sans-serif" fill="#1a1c1d">
+    <!-- direction -->
+    <text x="40" y="300" font-size="20" font-weight="800" letter-spacing="3" fill="#6b3e1f">FROM THE WEST</text>
+    <path d="M40 320 H230" stroke="#6b3e1f" stroke-width="4"/>
+    <path d="M226 310 L246 320 L226 330 Z" fill="#6b3e1f"/>
+    <text x="1600" y="400" font-size="24" font-weight="800" letter-spacing="4" fill="#6b3e1f">THE CITY</text>
+
+    <!-- 1 moat -->
+    <text x="470" y="372" font-size="22" font-weight="800" text-anchor="middle">1  MOAT</text>
+    <text x="470" y="398" font-size="18" text-anchor="middle">about 20 m wide, partly flooded</text>
+    <path d="M290 418 H650" stroke="#1a1c1d" stroke-width="1.5"/>
+    <path d="M290 411 V425 M650 411 V425" stroke="#1a1c1d" stroke-width="1.5"/>
+
+    <!-- 2 moat wall -->
+    <text x="585" y="300" font-size="22" font-weight="800" text-anchor="middle">2  MOAT WALL</text>
+    <text x="585" y="324" font-size="18" text-anchor="middle">low breastwork</text>
+    <path d="M620 332 L657 396" stroke="#1a1c1d" stroke-width="1.5"/>
+
+    <!-- 3 outer terrace -->
+    <text x="830" y="350" font-size="22" font-weight="800" text-anchor="middle">3  OPEN TERRACE</text>
+    <text x="830" y="376" font-size="18" text-anchor="middle">no cover for attackers</text>
+
+    <!-- 4 outer wall -->
+    <text x="900" y="150" font-size="22" font-weight="800" text-anchor="end">4  OUTER WALL</text>
+    <text x="900" y="176" font-size="18" text-anchor="end">about 8.5 m high, 2 m thick</text>
+    <path d="M905 168 L996 280" stroke="#1a1c1d" stroke-width="1.5"/>
+
+    <!-- 5 inner terrace -->
+    <text x="1190" y="350" font-size="22" font-weight="800" text-anchor="middle">5  OPEN TERRACE</text>
+    <text x="1190" y="376" font-size="18" text-anchor="middle">a second killing ground</text>
+
+    <!-- 6 inner wall -->
+    <text x="1240" y="44" font-size="22" font-weight="800" text-anchor="end">6  INNER WALL</text>
+    <text x="1240" y="70" font-size="18" text-anchor="end">about 12 m high, 5 m thick,</text>
+    <text x="1240" y="94" font-size="18" text-anchor="end">96 towers up to about 20 m</text>
+    <path d="M1245 86 L1356 216" stroke="#1a1c1d" stroke-width="1.5"/>
+
+    <!-- terrace widths, below ground -->
+    <path d="M668 505 H992 M1028 505 H1352" stroke="#1a1c1d" stroke-width="1.5"/>
+    <path d="M668 498 V512 M992 498 V512 M1028 498 V512 M1352 498 V512" stroke="#1a1c1d" stroke-width="1.5"/>
+    <text x="830" y="532" font-size="17" text-anchor="middle">about 15 to 20 m</text>
+    <text x="1190" y="532" font-size="17" text-anchor="middle">about 15 to 20 m</text>
+    <text x="830" y="468" font-size="15" text-anchor="middle">a person, for scale</text>
+
+    <!-- note -->
+    <text x="680" y="578" font-size="15" fill="#3d3326">Approximate measurements from published surveys, which differ by a few meters. Lighter shapes are towers standing behind the cut.</text>
+  </g>
+</svg>

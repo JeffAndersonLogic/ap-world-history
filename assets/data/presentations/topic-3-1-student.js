@@ -46,10 +46,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "prompt",
+      "kind": "frame-letterbox",
       "eyebrow": "What Was Already True",
       "title": "A wall let a lord say no to a king.",
-      "subtitle": "Attack it and you starve for months or lose thousands storming it. So most of the time the king left him alone."
+      "subtitle": "Attack it and you starve for months or lose thousands storming it. So most of the time the king left him alone.",
+      "template": {
+        "visual": {
+          "url": "../assets/images/topics/3-1/theodosian-walls-cross-section.svg",
+          "alt": "Cross-section of the Land Walls of Constantinople, roughly to scale: a moat about 20 meters wide, a low moat wall, an open terrace, the outer wall about 8.5 meters high, a second terrace, and the inner wall about 12 meters high with towers up to about 20 meters, with a person drawn for scale",
+          "credit": "BeHistorical diagram · approximate measurements",
+          "fit": "contain"
+        }
+      }
     },
     {
       "kind": "equation",
