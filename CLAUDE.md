@@ -1251,8 +1251,12 @@ in `devDependencies` would be installed by every CI job including the ones that
 never run this.
 
 **Production Firestore is deny-all and these rules are not deployed.** The
-`behistorical-zcs` project exists with `allow read, write: if false` live, which
-is where it stays until a person reviews and decides. **Nothing here deploys**:
+project is `behistoric`, created by ZCS IT on 2026-10-05 with Jeff and JJ Nielsen
+as owners, on the free Spark plan, with a Standard-edition `(default)` database in
+us-east5 (Columbus) started in production mode, so `allow read, write: if false`
+is live, which is where it stays until a person reviews and decides. An earlier
+project, `behistorical-zcs`, was made on 2026-09-29 and is superseded; it is not
+used, and nothing in the site ever read or wrote it. **Nothing here deploys**:
 there is no `firebase deploy` in any script, and adding one is a decision rather
 than a convenience.
 

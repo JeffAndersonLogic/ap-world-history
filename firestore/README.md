@@ -152,7 +152,7 @@ test here follows. **A SKIP is not a pass**, and neither CI workflow runs this
 yet. That gap is real and written down rather than papered over: what gates a
 push today is the textual check.
 
-**The project is `behistorical-zcs` and the emulator runs as
+**The project is `behistoric` (ZCS-owned, Spark) and the emulator runs as
 `demo-behistorical-rules`.** `.firebaserc` names the real project; the test uses
 a separate `demo-` prefixed id, which is Firebase's own convention for an
 emulator-only project and which makes it impossible for a test run to touch
