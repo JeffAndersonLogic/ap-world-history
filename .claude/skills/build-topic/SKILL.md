@@ -1,6 +1,6 @@
 ---
 name: build-topic
-description: "Run the full BeHistorical production line for one topic, or several in order, the way Unit 2 and Topic 3.1 were built: CED, existing-course check, ninth-grade story, spine, approval gate, retelling slide, Teaching OS deck, the other module surfaces, schedule and required-module choice, Canvas event and assignment, a claim-ledger accuracy loop with independent reviewers, audit, and verification. Use whenever Jeff says 'plan Topic 3.1', 'build 3.2', 'mirror Unit 2 for Unit 3', 'start the next topic', 'what does this topic still need', or '/build-topic'. This is the conductor: it sequences the other skills and points at the two authoring documents rather than restating them. Not for auditing an already-built topic (topic-audit), choosing pictures (presentation-images), or shipping (ship-to-main)."
+description: "Run the full BeHistorical production line for one topic, one fresh session per topic, the way Unit 2 and Topic 3.1 were built: CED, existing-course check, ninth-grade story, spine, approval gate, retelling slide, Teaching OS deck, the other module surfaces, schedule and required-module choice, Canvas event and assignment, a claim-ledger accuracy loop with independent reviewers, audit, and verification. Use whenever Jeff says 'plan Topic 3.1', 'build 3.2', 'mirror Unit 2 for Unit 3', 'start the next topic', 'what does this topic still need', or '/build-topic'. This is the conductor: it sequences the other skills and points at the two authoring documents rather than restating them. Not for auditing an already-built topic (topic-audit), choosing pictures (presentation-images), or shipping (ship-to-main)."
 ---
 
 # Build Topic
@@ -38,24 +38,28 @@ the four. Green tests prove plumbing, not history.
   except the story draft.
 - `build` ("build it", "run it"): run Phases 5 to 10. Never ships. Shipping is **ship-to-main**,
   and only when Jeff says so.
-- Several topics (`/build-topic 3.2 3.3 3.4 build`): see "Several topics in one session" below.
+- **One fresh session per topic** is the default (Jeff, 2026-10-05). See "A unit, one topic per
+  session" below.
 
-## Several topics in one session
+## A unit, one topic per session
 
-Allowed, and run **strictly in order, one topic at a time**: a topic reaches its Phase 4 gate
-and its own First & 10 approval before the next topic's Phase 3 begins. Two topics in flight at
-once is the parallel-session collision in a single session, because they share the same files.
+Each topic gets **its own fresh session**, run strictly in order. A fresh session starts with
+the full rules in view; a long session gets summarized and loses detail, which is the wrong
+trade for the accuracy loop. So nothing may depend on conversation memory:
 
-- **Keep the state in the repo, not in the conversation.** A long session gets summarized and
-  loses detail. Everything another session (or this one, after a summary) would need lives in
-  committed files: the story draft with its status line, the claim ledger, the audit record.
-  Commit after each gate so a summary can never lose an approval or a finding.
-- **While waiting on Jeff, do work that does not depend on his answer**: the next topic's
-  Phase 0 to 2 reading, the picture shopping list, the adjacent-findings list. Never start the
-  next topic's story draft while the current one's prose approval is pending, because a
-  correction to one reading can change what the next one bridges from.
-- **Carry lessons forward.** If the accuracy loop finds a defect class in one topic, search the
-  next topic for the same class before its reviewers run, and say so in the report.
+- **Everything lives in committed, pushed files**: the story draft with its status line, the
+  claim ledger, the picture list, the audit record. Commit and push after each gate.
+- **Start from the previous topic's work, not from a stale `main`.** A unit's topics share
+  files (Unit 3's First & 10 is one file for all four topics). If the previous topic has
+  reached `main`, branch from `main`. If it has not, branch from the previous topic's working
+  branch, say so in the report, and never start from a `main` that lacks it, or the two
+  readings will collide when both ship.
+- **Do not start the next topic's session until the previous topic's First & 10 is approved**
+  and its fingerprint moved, because a correction to one reading can change what the next one
+  bridges from.
+- **Carry lessons forward through the files.** The previous topic's audit record and claim
+  ledger say which defect classes turned up. Read them in Phase 0 and search this topic for
+  the same classes before its reviewers run.
 
 ## Rules that hold in every phase
 
