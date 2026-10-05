@@ -1,6 +1,7 @@
 # Topic 3.2 Story Draft: Empires: Administration
 
-**Status: Draft for Jeff's review, 2026-10-05. Not approved.** Nothing downstream has been
+**Status: Draft for Jeff's review, 2026-10-05. Not approved.** Every story claim has been
+checked against sources; the ledger records what each source actually says. Nothing downstream has been
 built. The claim ledger for every date, number and causal claim below is
 `docs/TOPIC-3-2-CLAIM-LEDGER.md`.
 
@@ -74,7 +75,8 @@ Read for contradictions only, not as the source of the story.
    projected backward." The millet is also not in 3.2's CED. Recommendation: drop the millet
    from student surfaces in 3.2; keep the eBook's careful paragraph.
 4. **The First & 10 says the Mughals governed "hundreds of millions of people."** Estimates
-   for c. 1600 are on the order of 100 to 150 million (see ledger). Also "the Qing ruled
+   for c. 1600 are about 60 to 115 million for the empire and 100 to 150 million for all of
+   India; even c. 1700 the empire is about 150 to 160 million (see ledger). Also "the Qing ruled
    China, the largest economy on earth" (a superlative; ledger), 16 vocabulary chips, a stale
    AI Coach `builderBody`, a `docTitle` saying "Module 01" over a "Module 02" badge, and a
    `lessonFile` pointing at the 3.1 lesson. The reading is rewritten anyway.
@@ -123,31 +125,35 @@ government, and some rose to grand vizier, the highest office under the sultan. 
 **Janissaries**, the sultan's elite soldiers. They had no family power inside the empire; every
 bit of their status came from the sultan. The Mughal emperor Akbar did it a different way. He
 gave every noble, Muslim and Hindu Rajput alike, a numbered rank, a **mansab**, that set his
-pay and how many horsemen he owed. He paid them with the right to collect taxes from a piece of
-land, but moved them around and did not let their sons inherit it. In Japan the Tokugawa
-shoguns pulled samurai off the land and paid them salaries, usually in rice. In all three, the
+pay and how many horsemen he owed. He paid them in cash or with the right to collect taxes from
+a piece of land for a while, moved them to new posts every few years, and took the land back
+when they died, so a rank could not simply pass to a son. In Japan, under the Tokugawa
+shoguns, most samurai were moved off the land into castle towns and paid stipends, usually
+counted in rice. In all three, the
 ruler turned people who might become rivals into people whose careers depended on him.
 
 **Second, a reason to obey.** Soldiers and officials can force people for a while, but no ruler
 can afford to force everyone all the time. The cheaper way is to make obeying feel right. In
-Europe, kings claimed **divine right**: God chose them, so disobeying the king was disobeying
-God. Louis XIV of France built the enormous palace of **Versailles** and had the great nobles
+Europe, kings claimed **divine right**: their power came from God, so they answered to God
+alone, and disobeying the king meant disobeying God. Louis XIV of France built the enormous palace of **Versailles** and had the great nobles
 live at court, where he could watch them. The Mughals built huge tombs and mosques, like the
-Taj Mahal. The Qing emperors, who were Manchus ruling Chinese people, had themselves painted in
-the robes of a Chinese emperor. In the Andes, the Inca ruler claimed to descend from the Sun,
+Taj Mahal. The Qing emperors were Manchus ruling a mostly Chinese
+empire, and their official portraits showed them as a Chinese Son of Heaven, on a dragon throne
+covered in imperial dragons. In the Andes, the Inca ruler claimed to descend from the Sun,
 and the Sun's temple at Cuzco was the center of the empire. In West Africa, Songhai's ruler
-Askia Muhammad made the pilgrimage to Mecca and built up Islam at home, so his rule looked like
-the rule of a proper Muslim king. Religion, art and buildings all said the same thing: this
+Askia Muhammad made the pilgrimage to Mecca, came home recognized as a caliph's deputy for West
+Africa, and supported Muslim scholars, so his rule looked like the rule of a proper Muslim
+king. Religion, art and buildings all said the same thing: this
 ruler belongs here.
 
 **Third, money.** Officials and soldiers need pay. Palaces and mosques cost a fortune. So
 rulers had to collect from millions of farmers, and that is harder than it sounds. The Mexica
 in central Mexico made conquered towns send set amounts of goods, like cotton cloaks, cacao and
-feathers, and kept painted lists of it. The Ottomans used **tax farming**: they sold the right
-to collect an area's taxes to someone who paid the treasury up front and kept whatever extra he
-could squeeze out. The Mughals relied on **zamindars**, local landholders who collected the land
-tax and kept a share. And Ming China made people pay their taxes in silver, which made the money
-easier to count and move.
+feathers, and kept painted lists of it. The Ottomans used **tax farming**: they auctioned the right
+to collect an area's taxes. The winner paid the state a fixed sum, often partly in advance, and
+kept whatever extra he could squeeze out. The Mughals relied on **zamindars**, local landholders who collected the land
+tax and kept a share. And Ming China, around 1580, turned many separate taxes and
+labor duties into one payment in silver, which made the money easier to count and move.
 
 Now see the chain. Money pays the people. The people collect the money and keep order. And the
 symbols make paying and serving feel like the right thing to do. Take away any one and the other
@@ -155,8 +161,8 @@ two get harder: without money there are no salaries; without loyal servants the 
 away; without legitimacy every tax needs a soldier behind it.
 
 And each tool had a catch. Middlemen kept part of what they collected. Servants wanted their
-sons to inherit their jobs, and over time the Janissaries became powerful enough to overthrow a
-sultan. Holding an empire never stopped being hard.
+sons to inherit their jobs. By the 1600s Janissaries' sons were joining the corps, and in 1622
+the Janissaries killed a sultan, Osman II, who tried to cut their pay. Holding an empire never stopped being hard.
 
 One more thing to notice: rulers kept using religion to justify their power. But in these same
 centuries religion itself was changing, sometimes in ways no ruler could control. That is
@@ -181,11 +187,11 @@ and its own slides; no branch borrows another's.
 | Branch | Evidence | CED anchor | What it proves (the "so what") |
 |---|---|---|---|
 | People | Ottoman devshirme and the Janissaries | KC-4.3.I.C (named) | A ruler can build an elite with no outside loyalties; status that comes only from the sultan makes officials depend on him. |
-| People | Mughal mansabdars, paid by jagirs, rotated, not inherited; Rajputs given rank | KC-4.3.I.C | Instead of importing outsiders, rank the nobles you already have, so their pay and status come from the emperor. |
-| People | Salaried samurai (Tokugawa Japan) | KC-4.3.I.C (named) | A warrior paid a stipend and living in the castle town has no land base to rebel from. |
+| People | Mughal mansabdars, paid in cash or by jagirs, rotated, not inherited; Rajputs given rank | KC-4.3.I.C | Instead of importing outsiders, rank the nobles you already have, so their pay and status come from the emperor. (Rajput home kingdoms, the watan jagirs, were the hereditary exception.) |
+| People | Salaried samurai (Tokugawa Japan) | KC-4.3.I.C (named) | A warrior paid a stipend and living in the castle town has no land base to rebel from. Most samurai, not all: some senior retainers kept fiefs. |
 | Symbols | European divine right; Versailles | KC-4.3.I.A (both named) | An idea (God chose the king) and a building (a palace that kept nobles under watch) both made obedience feel right. |
 | Symbols | Mughal mausolea and mosques (the Taj Mahal) | KC-4.3.I.A (named) | Monumental building shows wealth, piety and permanence to people who will never meet the ruler. |
-| Symbols | Qing imperial portraits | KC-4.3.I.A (named) | A Manchu ruler presented as a Chinese Son of Heaven, so outsiders' rule looks traditional. |
+| Symbols | Qing imperial portraits | KC-4.3.I.A (named) | A Manchu ruler presented in the conventions of a Chinese Son of Heaven (dragon throne, imperial dragons), in a Manchu-cut court robe, so outsiders' rule looks traditional. |
 | Symbols | Inca sun temple at Cuzco (Coricancha); Songhai promotion of Islam | KC-4.3.I.A (both named) | Religion as legitimacy outside Eurasia: the ruler as the Sun's descendant; the ruler as a pilgrim and patron of Islam. |
 | Money | Ottoman tax farming | KC-4.3.I.D (named) | Fast cash with no tax bureaucracy, at the price of squeezed farmers and powerful middlemen. |
 | Money | Mughal zamindars | KC-4.3.I.D (named) | Local landholders who know the fields collect the tax and keep a share. |
