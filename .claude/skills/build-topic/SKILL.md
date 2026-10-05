@@ -88,10 +88,12 @@ trade for the accuracy loop. So nothing may depend on conversation memory:
 
 0. **Nobody else is on this topic.** `git fetch origin main`, then look at recent commits and
    remote branches touching this topic or the unit's shared files (for Unit 3,
-   `scripts/lib/reading-content/unit-3.js` and `scripts/build-unit3-rooms.js`). If someone
-   else is mid-build, stop and tell Jeff. 2.5 was rebuilt on a branch and on `main` on
-   consecutive days and one version was thrown away (`795dc4dc`); nothing warned either
-   session.
+   `scripts/lib/reading-content/unit-3.js` and `scripts/build-unit3-rooms.js`). If they changed
+   since the baseline you expected, read the diff. **Stop only** if the changes overlap this
+   topic, leave a conflict you cannot resolve, or cannot be confidently attributed to an
+   already finished topic; otherwise record the baseline change in the report and carry on.
+   2.5 was rebuilt on a branch and on `main` on consecutive days and one version was thrown
+   away (`795dc4dc`); nothing warned either session.
 1. **Calendar.** Use the snippet in step 0 of the **topic-audit** skill to print the topic's
    Green and Silver dates. If it prints "not on the schedule", also grep the schedule for
    comments: Jeff's dates are sometimes recorded there before the topic has entries (3.2's
@@ -294,12 +296,21 @@ technical checks.
 ### 9A. The claim ledger
 
 `docs/TOPIC-X-Y-CLAIM-LEDGER.md`, started in Phase 3, committed with the topic. One row per
-factual claim on **every** surface: the First & 10, the deep reading and eBook chapter, every
-slide with its speaker notes and picture credits, lecture cards, checkpoints, Skill Builder,
-Evidence Lab, Primary Source, BeSurreal, BeInTheRoom (roles included) and the Canvas text.
-Hooks, analogies and counterfactuals are claims too.
+**material** historical claim, across every student- and teacher-facing surface: the First &
+10, the deep reading and eBook chapter, every slide with its speaker notes and picture credits,
+lecture cards, checkpoints, Skill Builder, Evidence Lab, Primary Source, BeSurreal, BeInTheRoom
+and the Canvas text. A claim that repeats across surfaces is **one row** listing every place
+it appears. Directions such as "look at the map" are not claims.
 
-| Claim | Where it appears | Sources checked | Status |
+**A claim is material if a student would learn something false were it wrong**: about
+chronology, cause, comparison, what a piece of evidence is, or what the CED requires. **Always
+material, whatever they look like:** every date, number and name-to-place pairing; every
+picture caption and credit; every superlative or "first"; and every claim inside a hook,
+analogy, counterfactual, BeInTheRoom role or slide note. Unit 2's errors hid in exactly the
+places that sound minor (a celadon bowl captioned "at Kilwa", Taghaza misplaced in a role), so
+"minor" is never a reason to leave a row out.
+
+| Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
 
 Status is exactly one of:
@@ -311,11 +322,25 @@ Status is exactly one of:
 - **NEEDS JEFF**: say why, and leave the claim in its safest narrow form. This does not stop
   the build (rule 7); it goes in the report.
 
-**Verify against sources.** Use web search. Prefer the College Board CED, university and
-museum sources, and the standard scholarly references. Check every date and number against two
-independent sources where you can. A figure that comes from a later chronicle says so on the
-page and is never stated as fact. If you are not sure a claim is wrong, it is NEEDS JEFF, not a
-rewrite of history you are unsure of.
+**Verify against sources, with each source in its role.** Use web search.
+
+- **The CED decides scope; scholarship decides truth.** The CED is the authority for what must
+  be taught, which examples are required and which skill is assessed. University, museum and
+  standard scholarly sources are the authority for whether a claim is true. The CED's silence
+  is not evidence that something did not happen, and an outside source never expands required
+  content beyond the approved story map.
+- **Source to claim fit.** A citation verifies a sentence only if the source says what the
+  sentence says. A general history of the Ottomans does not verify a specific number, motive,
+  cause or superlative unless it states it. Record the source's actual words in the ledger;
+  when they fall short of the sentence, narrow the sentence or mark it NEEDS JEFF rather than
+  stretching the source.
+- **Quality over count.** One authoritative scholarly or institutional source is enough for
+  routine chronology. Require **two independent sources** for a date or number that is
+  disputed, surprising, approximate, consequential or easily mythologized, and whenever
+  sources conflict. Two weak websites do not outweigh one specialist source.
+- A figure that comes from a later chronicle says so on the page and is never stated as fact.
+- If you are not sure a claim is wrong, it is NEEDS JEFF, not a rewrite of history you are
+  unsure of.
 
 **Where to hunt.** The topic-audit skill, Step 2C, lists where errors have actually hidden;
 read it rather than relying on a summary. The four recurring classes since 2.4 are dates and
@@ -328,7 +353,9 @@ pre-1453 Hagia Sophia.
 
 Open the real lesson page and both decks in a browser and check, module by module:
 
-1. **Page truth.** Every prompt names only cards, maps and sources a student can actually see.
+1. **Page truth.** Every prompt, direction, question, caption and reference points at
+   something the student can actually see or has explicitly been given. (Explanatory prose
+   need not point at anything; this is about telling a student to look at or use something.)
    This failed in every topic from 2.4 to 2.7.
 2. **Targets.** Every checkpoint displays the target it really assesses.
 3. **Captions.** Each one describes the picture above it, and says when a picture is a modern
@@ -347,13 +374,29 @@ Open the real lesson page and both decks in a browser and check, module by modul
 
 The builder shares the build's blind spots, and a checker that shares a failure mode with the
 thing it checks confirms the bug. So launch a **fresh subagent that has not seen your
-reasoning**. Give it only the rendered surfaces, the CED contract and the unit story map, and
-tell it to find errors, not to confirm the work. Fix what it finds and log each fix in the
-ledger. Then launch **another** fresh reviewer.
+reasoning**. Give it only the rendered surfaces, the CED contract, the unit story map and the
+defect definition below, and tell it to find errors, not to confirm the work.
 
-**Stop rule.** Stop only when a fresh reviewer's full pass finds no new defect **and** every
+**A defect is a demonstrable failure** of accuracy, chronology, sourcing or source to claim
+fit, CED alignment, story-map ownership, page truth, ninth-grade readability, accessibility, or
+a technical check. A preference about wording or design, or a reviewer's unsupported
+speculation, is not a defect.
+
+**The reviewer does not have the last word.** Evaluate every finding independently: fix the
+supported ones, reject the unsupported ones with a one-line reason, and log both in the ledger
+(a "Review findings" section with each finding and its disposition). A reviewer that sounds
+confident is not thereby right, and a fix made only because a reviewer asked is a second way to
+put an error in.
+
+**Then a fresh reviewer runs a full pass**, never only a check of the corrected spots, since a
+fix can break something nearby. Repeat until a full pass turns up no supported defect.
+
+**Stop rule.** Stop when a fresh reviewer's full pass finds no supported defect **and** every
 ledger row has a status. Green tests, fatigue and "probably fine" are not stopping conditions.
-Neither is hedging until a report goes quiet.
+Neither is hedging until a report goes quiet. The defect definition is what keeps this from
+running forever on style objections. **Safety valve:** if three full passes in a row still find
+supported defects, stop and tell Jeff, because something systemic is wrong (the story, a source
+the topic leans on, or a renderer) and another pass will not fix it.
 
 ### 9D. Technical verification
 
@@ -369,7 +412,10 @@ Neither is hedging until a report goes quiet.
 4. **Instructional verification** (section 15): the deck answers the actual learning objective;
    every example is attached to a claim; the retelling slide captures the argument; every Key
    Concept is banded on some projected slide; a ninth grader could retell the topic.
-5. Any new check you write is shown able to fail before its green is trusted.
+5. Any **new automated check** written during this build is shown to fail on a known bad
+   fixture or a temporary controlled mutation before its green is trusted, and the source is
+   restored afterwards. Established checks that have already been shown to fail do not need
+   re-proving.
 6. Run the **topic-audit** skill in fix mode. It writes its dated record in
    `docs/topic-audits/`; then run `npm run build:audit-index`, or `npm test` fails on drift
    (3.1's 10-05 CI run did).
