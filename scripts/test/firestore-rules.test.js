@@ -87,6 +87,15 @@ const GOOGLE = { firebase: { sign_in_provider: 'google.com' } };
 const ALEX = Object.assign({ email: 'alex@zcs.k12.in.us', email_verified: true }, GOOGLE);
 const BRIT = Object.assign({ email: 'brit@zcs.k12.in.us', email_verified: true }, GOOGLE);
 const OUTSIDER = Object.assign({ email: 'someone@gmail.com', email_verified: true }, GOOGLE);
+// ZCS students sign in with stumail addresses and staff with zcs.k12.in.us. Both
+// are one tenant; neither lookalike below is any tenant.
+const STUDENT = Object.assign({ email: 'sam@stumail.zcs.k12.in.us', email_verified: true }, GOOGLE);
+const LOOKALIKES = [
+  ['a suffix lookalike of the staff domain', 'x@evilzcs.k12.in.us'],
+  ['a suffix lookalike of the student domain', 'x@notstumail.zcs.k12.in.us'],
+  ['a district name used as a path', 'x@stumail.zcs.k12.in.us.evil.com'],
+  ['a deeper subdomain', 'x@lab.stumail.zcs.k12.in.us']
+].map(([label, email]) => [label, Object.assign({ email, email_verified: true }, GOOGLE)]);
 const UNVERIFIED = Object.assign({ email: 'new@zcs.k12.in.us', email_verified: false }, GOOGLE);
 // Same district address, wrong provider. Verified email is the real check; this
 // is the one the provider pin exists for.
@@ -156,6 +165,22 @@ async function assertContracts(env, report) {
     await cannot(getDoc(doc(alexDb, pathFor('other-district', idFor(UID_ALEX, '1-4', 'map-check-response'))))));
   report('an account outside the district domain is refused',
     await cannot(setDoc(doc(outsiderDb, pathFor(ZCS, idFor('uid-out', '1-4', 'a'))), response({ studentId: 'uid-out' }))));
+  // The student domain. This is the case the rules failed on before 2026-10-05:
+  // they accepted staff addresses only, which would have refused every student.
+  const UID_SAM = 'uid-sam';
+  const samDb = env.authenticatedContext(UID_SAM, STUDENT).firestore();
+  const SAM_CP2 = pathFor(ZCS, idFor(UID_SAM, '1-4', 'checkpoint-two-response'));
+  report('a student on a stumail address can create their own record',
+    await can(setDoc(doc(samDb, SAM_CP2), response({ studentId: UID_SAM }))));
+  report('and read it back',
+    await can(getDoc(doc(samDb, SAM_CP2))));
+  report('but not another student\'s',
+    await cannot(getDoc(doc(samDb, BRIT_CP2))));
+  for (const [label, claims] of LOOKALIKES) {
+    const uid = 'uid-look-' + label.length;
+    report(`${label} is refused`,
+      await cannot(setDoc(doc(env.authenticatedContext(uid, claims).firestore(), pathFor(ZCS, idFor(uid, '1-4', 'a'))), response({ studentId: uid, slotId: 'a' }))));
+  }
   report('an unverified district address is refused',
     await cannot(setDoc(doc(unverifiedDb, pathFor(ZCS, idFor('uid-unv', '1-4', 'a'))), response({ studentId: 'uid-unv' }))));
   report('the same district address on a different sign-in provider is refused',
@@ -274,6 +299,10 @@ async function makeEnv(rules) {
       s => s.replace(/request\.resource\.data\.updatedAt == request\.time/, 'request.resource.data.updatedAt is timestamp')],
     ['an update may touch any field',
       s => s.replace(/&&\s*onlyMutableFieldsChanged\(\)/, '')],
+    ['the district check becomes a suffix match',
+      s => s.replace(/\.split\('@'\)\[1\] in \[[^\]]*\]/, () => ".matches('.*zcs\\\\.k12\\\\.in\\\\.us$')")],
+    ['the student domain is dropped',
+      s => s.replace(/, 'stumail\.zcs\.k12\.in\.us'/, '')],
     ['the provider pin is dropped',
       s => s.replace(/&&\s*request\.auth\.token\.firebase\.sign_in_provider == 'google\.com'/, '')],
     ['delete is opened to the author',

@@ -5,12 +5,23 @@ persistence. In Firestore the rules are the entire protection: no application
 server sits in front of this and nothing sits behind it, so a wrong line here is
 every student's writing readable by anyone who can sign in.
 
-**Nothing in the student-facing site reads or writes Firestore yet.** This is
-Phase 2 of the persistence plan in AndersonLogic-OS at
+**The backup code exists and is switched off, so no student's page reads or writes
+Firestore yet** (see "Student response backup" in the repository's CLAUDE.md). This
+is Phase 2 of the persistence plan in AndersonLogic-OS at
 `04_PRODUCTS/BeHistorical/Student-Response-Persistence-Architecture-2026-09-08.md`.
 ZCS approved the free Spark plan and confirmed FERPA on 2026-09-29. Under-18 app
-approval in the Workspace Admin console is still outstanding, and until it lands
-no student can sign in at all.
+approval in the Workspace Admin console was reported done on 2026-10-05: ZCS IT
+configured app access as Limited for ZHS students and staff. That reply is the
+only record of it, and the real test is a student sign-in.
+
+## Two domains, one tenant (changed 2026-10-05)
+
+Staff sign in as `@zcs.k12.in.us` and students as `@stumail.zcs.k12.in.us`. The
+rules accepted staff only until ZCS IT said so, which would have refused every
+student. `tenantOfCaller()` now accepts both, as an exact match on the whole domain
+after the `@`, and maps both to the tenant `zcs`. **The copy of the rules emailed to
+ZCS on 2026-09-29 predates this change**, so anyone reviewing it should be sent the
+current file.
 
 ## The record
 

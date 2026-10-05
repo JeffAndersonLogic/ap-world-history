@@ -1207,9 +1207,22 @@ throttle over all three, never a hook on the existing ones.
 ## Firestore security rules
 
 `firestore/firestore.rules` is the security model for student response
-persistence, and `firestore/README.md` is the standing explanation. **Nothing in
-the site reads or writes Firestore yet**; this is Phase 2 groundwork, and Phase 2
-cannot ship until under-18 app approval lands in the ZCS Workspace Admin console.
+persistence, and `firestore/README.md` is the standing explanation. **The backup
+code exists and is switched off**, see "Student response backup" below, so no
+student's page reads or writes Firestore. ZCS IT confirmed on 2026-10-05 that app
+access is configured as Limited for ZHS students and staff, which was the
+Admin-console gate; what is left before it can be on is in that section.
+
+**The rules accept two email domains, both mapped to the one tenant:**
+`zcs.k12.in.us` for staff and `stumail.zcs.k12.in.us` for students. They accepted
+staff only until 2026-10-05, which would have refused every student on the first
+save with "tell your teacher". It is an exact match on the whole domain after the
+`@`, never a suffix test, and the emulator test carries four lookalikes
+(`evilzcs.k12.in.us`, `notstumail.zcs.k12.in.us`, `stumail.zcs.k12.in.us.evil.com`,
+`lab.stumail.zcs.k12.in.us`) plus a mutation turning the check into a suffix match.
+That mutation is what showed the first version of those lookalike assertions were
+refused for the wrong reason (a slot id that did not match the derived document
+id), so they proved nothing until it was fixed. A negative control earned its keep.
 
 ZCS approved the **free Spark plan** and confirmed FERPA on 2026-09-29, after
 Finance declined open-ended billing. Three things follow from that and none of
@@ -1285,6 +1298,119 @@ the literal `allow read, write: if false;`. The first version of the checker
 counted five allow statements in a file with four and reported a wildcard block
 that does not exist as safely denied. It passed, on a comment. A checker that
 reads documentation as code can be made to pass by writing a sentence.
+
+## Student response backup
+
+`assets/js/behistorical-sync.js` backs a student's work up to Firestore and puts
+it back on a device that lost it. **It is built, tested and switched off.**
+`scripts/lib/sync-config.js` is the only switch: `enabled` is false, and
+`mount()` returns before it builds an element or makes a request, so a student's
+page today makes no call to Google and leaves nothing of its own in storage.
+`scripts/build-sync.js` inlines the config and the engine into both renderers
+between sentinels, for the reason the save counter is inlined; `--check` is in the
+offline suite. Never hand-edit between the sentinels.
+
+**It is a separate layer over the three save paths and never a hook on them.** The
+renderers save 600ms after a keystroke, the readings 500ms and BeInTheRoom on every
+keystroke. All correct for `localStorage` and indefensible against a billed
+database. So the engine is not called from any writer. It reads the same
+`collectLessonWork()` Gather All My Work reads, a few times a minute, and compares
+it with what it last confirmed. That one list covers the renderer's drafts, the
+First & 10 answers and the BeInTheRoom reflection, and a loop in any of the three
+moves a snapshot and cannot move the write rate. The renderer supplies only two
+things the engine cannot know: `slots()` and `apply()`, which puts a restored
+answer back in the key that path reads (the First & 10 payload array, the
+BeInTheRoom key, or the draft and confidence keys).
+
+**Who bounds what.** The rules bound how many documents can exist (the id is
+derived). The engine bounds how often one is written: a slot at most once per
+`windowMs` (30 seconds, which the sync projection puts inside the free plan's
+20,000 writes), never twice inside `minGapMs` even as the page closes, one write in
+flight, exponential backoff on failure, and a brake at `sessionCap` writes per page
+load or `dayCap` per device per day that stops and says so. The free plan's
+daily quota is the backstop. A rules-level rate limit was declined, see
+`firestore/README.md`.
+
+**The rule for two copies that disagree** is the architecture record's, and it is
+`decide()`, a pure function with its own exhaustive checks. It uses a third value,
+the baseline: a hash of what this device last confirmed. The hash is deliberate,
+so the engine's own record never holds a second copy of a student's writing, and
+it lives under `behistorical-sync-*`, outside the `behistorical-draft-<topic>-`
+prefix `collectLessonWork()` sweeps, or it would be pasted into Canvas as an
+answer.
+
+- Nothing here and something in the cloud, nothing recorded: a new or wiped
+  device. **Restore.** This is the case the project exists for.
+- Nothing here and something recorded: the student cleared it. Leave it alone.
+- Edited here only: push. Changed in the cloud only: take it.
+- Both changed, or both non-empty with no baseline: **ask the student**, in a
+  native `<dialog>`, and write nothing meanwhile. The losing copy is kept.
+- **An empty answer is never written**, by two separate locks. A cleared box, a
+  wiped store and a blanked textarea look identical to a sync layer, and one of
+  them is the failure this exists to survive. The cost is that clearing an
+  answer does not clear the cloud copy, which is the safe direction to be wrong in.
+
+**Four save states, and "Saved" means safe off this device:** saving; saved; saved
+on this device only (offline, or not signed in); save problem (a choice is
+waiting, the account is refused, the daily quota is spent, or the brake tripped).
+A spent quota and a refused account are `problem`, not `device`, because the whole
+point is that failure is loud.
+
+**Why the transport uses REST and not the Firestore SDK.** The SDK keeps its own
+queue of unsent writes and applies them whenever it reconnects, underneath the
+engine's queue and invisible to it, so a stale write could land after a newer one
+or after the student had chosen a version in the dialog. REST has no hidden queue:
+a write is acknowledged or it failed, and the engine, whose queue lives in the
+student's own storage, is the only thing that retries. REST also gives the conflict
+rule a precondition for free: an update names the `updateTime` it was based on and
+the server refuses it if the document has moved. Sign-in alone uses the Firebase
+Auth SDK, imported from Google's host at a version pinned in the config.
+`behistorical-sync-transport.js` is loaded only when the backup is on.
+
+**What was found by testing, and is worth knowing before changing any of it:**
+
+- The rules answer an update to a document that does not exist exactly like a
+  refusal, because there is no stored record to check ownership against. An
+  administrator deleting a record (retention runs with admin credentials, which the
+  rules cannot stop) would have turned a student's account into "not allowed".
+  The transport now looks, and reports a missing record as a conflict.
+- A create that is refused might be a race (the document is already there) or a
+  real refusal. The transport tells them apart with a read.
+- The `currentDocument: { exists: false }` precondition on a create is
+  defense in depth: the rules refuse the same write independently, so removing it
+  is not detectable by a test. It stayed anyway and is not claimed as covered.
+
+**Turning it on is a decision with a list, and it is not one edit.**
+
+1. Fill in `firebase.apiKey`, `authDomain` and `appId` from the console's web app
+   registration (Project settings, Your apps). They identify the project and are
+   not secrets. Until they are there the engine cannot connect whatever else is set.
+2. Enable Google as a sign-in method (Authentication), confirm ZCS approved *that*
+   OAuth client, and add the site's host to Authorized domains.
+3. Deploy the current `firestore.rules` to the `behistoric` project after ZCS
+   review. Production is deny-all until then, which is correct.
+4. Run a pretend student through a full lesson with `pilot` and `?sync=on`, which
+   switches the backup on for one browser only. Then set `pilot` false, because
+   it is a hidden switch a curious student could find, and then `enabled` true.
+
+**What it does not cover, stated so nobody assumes it does.** The lesson page has
+to be open for the engine to run: a BeInTheRoom reflection typed in its own tab is
+backed up by the lesson tab that opened it, and one typed after the lesson tab was
+closed waits for the next time the lesson opens. The conflict dialog keeps the
+losing copy on this device only; the architecture record asked for the last few
+versions in the cloud, which needs a field the rules do not allow yet and is
+unbuilt. Google sign-in, the popup and the real Workspace setting are untested
+here, and are exactly what the pretend student is for.
+
+**Four checks, because each failure is silent in a different way.**
+`sync-engine.test.js` (offline) proves the decisions, the brake and the sign-in
+domain logic against a fake server and a virtual clock, with eleven negative
+controls. `sync-page.test.js` (browser) proves the real lesson pages: silent when
+off, restore into the keys each path reads, typing noticed, the dialog, offline,
+Foundations, with its own controls. `sync-transport.test.js` (the `rules` suite)
+runs the real requests and the engine against the emulator with the real rules.
+`firestore-rules.test.js` holds the rules. The last two need the emulator and
+SKIP without it; a SKIP is not a pass.
 
 ## The Lecture Deck
 

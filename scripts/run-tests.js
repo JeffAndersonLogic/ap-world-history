@@ -46,6 +46,7 @@ const SUITES = {
     ['scripts/test/canvas-zip.test.js', 'zip reader + CLI/browser CSV parity'],
     ['scripts/test/readings-reproducible.test.js', 'generated readings match the content model'],
     ['scripts/test/save-health.test.js', 'a failed draft save is counted, not lost'],
+    ['scripts/test/sync-engine.test.js', 'backup engine: restore, never overwrite, never write empty, bounded writes, sign-in domains'],
     ['scripts/test/teaching-os-architecture.test.js', 'Teaching OS shared architecture and student-deck source of truth'],
     ['scripts/test/slide-templates.test.js', 'slide templates: one library, wired into every renderer, AI label enforced'],
     ['scripts/test/deck-key-concepts.test.js', 'Key Concept band: every deck tags its own topic\'s KCs, and every renderer draws the band'],
@@ -69,6 +70,7 @@ const SUITES = {
     ['scripts/test/topic-audit-coverage.test.js', 'topic audit records, coverage index, and the freshness check going quiet']
   ],
   browser: [
+    ['scripts/test/sync-page.test.js', 'backup on the real lesson pages: off by default, restore, typing, conflicts, Foundations'],
     ['scripts/test/unit3-atlas.browser.test.js', 'Unit 3 atlas: direct clicks, keyboard, touch, and responsive hub'],
     ['scripts/test/unit1-atlas.browser.test.js', 'Unit 1 atlas: regional map interaction and responsive embed'],
     ['scripts/test/unit2-atlas.browser.test.js', 'Unit 2 atlas: direct map clicks, keyboard, touch, and responsive hub embed'],
@@ -105,7 +107,8 @@ const SUITES = {
   // rather than papered over: scripts/check-firestore-rules.js is what actually
   // gates a push today, and it is textual.
   rules: [
-    ['scripts/test/firestore-rules.test.js', 'security rules against the real Firestore engine']
+    ['scripts/test/firestore-rules.test.js', 'security rules against the real Firestore engine'],
+    ['scripts/test/sync-transport.test.js', 'backup requests and engine against the real rules in the emulator']
   ]
 };
 

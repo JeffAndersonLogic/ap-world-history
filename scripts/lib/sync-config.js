@@ -1,0 +1,72 @@
+'use strict';
+
+/**
+ * The one place the student response backup is switched on, and the one place
+ * the Firebase project is named.
+ *
+ * `scripts/build-sync.js` inlines this, with the engine in
+ * assets/js/behistorical-sync.js, into both lesson renderers between sentinels.
+ * Nothing else reads it. Change it here and rebuild.
+ *
+ * THE BACKUP IS OFF, and these are the three things that turn it on:
+ *
+ *   firebase   the web app's public settings from the Firebase console, Project
+ *              settings, Your apps. They identify the project and are not
+ *              secrets: access is decided by firestore/firestore.rules and by the
+ *              student's own sign-in, never by keeping these private. Until they
+ *              are filled in the engine cannot connect whatever else is set,
+ *              which is deliberate.
+ *   pilot      with `enabled` false, true lets ONE browser opt in by opening any
+ *              lesson with ?sync=on (and out again with ?sync=off). That is how
+ *              a pretend student tests this against the real project before a
+ *              real class has it, without publishing anything that reaches
+ *              anyone else. It is also a hidden switch a curious student could
+ *              find, which is acceptable only while sign-in is not yet approved
+ *              for under-18 accounts, since it would simply be refused. Set it
+ *              false before `enabled` goes true.
+ *   enabled    true turns it on for every student. Do not set it until ZCS has
+ *              answered which Unconfigured third-party apps setting applies to
+ *              under-18 accounts, a pretend student has been through a full
+ *              lesson, and the rules have been deployed after ZCS review.
+ *
+ * THE TWO NUMBERS THAT ARE THE ANSWER TO THE DISTRICT'S QUESTION
+ *
+ *   windowMs   a slot is written at most once per window. 30 seconds keeps every
+ *              realistic day inside the free plan's 20,000 writes: the sync
+ *              projection in behistorical-save-health.js measured 200 writes per
+ *              student per lesson at 10 seconds, 76 at 30, 45 at 60.
+ *   sessionCap, dayCap
+ *              the brake. A page load past sessionCap writes, or a device past
+ *              dayCap in one day, stops backing up and says so. Both sit at
+ *              roughly five times a heavy real day, so they are reached by a
+ *              loop and never by a student.
+ */
+
+module.exports = {
+  enabled: false,
+  pilot: true,
+
+  tenantId: 'zcs',
+  courseId: 'apwh',
+  // The domains a sign-in is accepted from, checked again after the Google popup.
+  // Staff sign in with zcs.k12.in.us and students with stumail.zcs.k12.in.us, which
+  // ZCS IT confirmed on 2026-10-05. firestore/firestore.rules checks the same two
+  // for real; this only saves a personal account a confusing refusal. There is no
+  // `hd` hint on the chooser because it takes one domain and there are two.
+  allowedDomains: ['zcs.k12.in.us', 'stumail.zcs.k12.in.us'],
+
+  windowMs: 30000,
+  sessionCap: 400,
+  dayCap: 600,
+
+  // Pinned, so what students load is what was reviewed. Raise it deliberately.
+  sdkVersion: '12.19.0',
+
+  firebase: {
+    // Filled in from the console's web app registration. null means "not yet".
+    apiKey: null,
+    authDomain: null,
+    projectId: 'behistoric',
+    appId: null
+  }
+};

@@ -56,6 +56,14 @@ service cloud.firestore {
     // from the domain needs no server and no billing account, and the domain is
     // asserted by Google rather than by us.
     //
+    // Two domains, one tenant, added 2026-10-05 on ZCS IT's word that students
+    // sign in with their stumail accounts. Staff are zcs.k12.in.us and students
+    // are stumail.zcs.k12.in.us. Before this the rule accepted staff only, so every
+    // student would have been refused with "tell your teacher" on the first save.
+    // It is an exact match on the whole domain after the @, never a suffix test:
+    // evilzcs.k12.in.us and stumail.zcs.k12.in.us.evil.com both end in a district
+    // name and are neither.
+    //
     // Adding a district is one line here. It stays in the rules rather than in a
     // config document because a config document is a read on every request and a
     // second thing to secure.
@@ -63,7 +71,7 @@ service cloud.firestore {
       return !viaGoogle() ? ''
         : !(request.auth.token.email is string) ? ''
         : request.auth.token.email_verified != true ? ''
-        : request.auth.token.email.lower().split('@')[1] == 'zcs.k12.in.us' ? 'zcs'
+        : request.auth.token.email.lower().split('@')[1] in ['zcs.k12.in.us', 'stumail.zcs.k12.in.us'] ? 'zcs'
         : '';
     }
 
