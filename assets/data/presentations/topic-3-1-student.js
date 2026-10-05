@@ -87,6 +87,20 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "frame-letterbox",
+      "eyebrow": "Constantinople, April and May 1453",
+      "title": "Day after day, the guns pounded the walls.",
+      "subtitle": "Ottoman guns fired from behind earth banks and wooden screens. By night the defenders patched the gaps.",
+      "kc": "KC-4.3.II",
+      "template": {
+        "visual": {
+          "url": "../assets/images/topics/3-1/3.1%20-%20Bombards%20at%20the%20Walls.jpg",
+          "alt": "Reconstruction of Ottoman guns firing from behind earth banks at the broken walls of Constantinople, with soldiers and ladders at the breach",
+          "ai": true
+        }
+      }
+    },
+    {
       "kind": "frame-number",
       "eyebrow": "The Proof · Constantinople, 1453",
       "title": "",
@@ -101,6 +115,20 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "alt": "The Dardanelles Gun, a huge Ottoman bronze bombard cast in 1464, shown in two pieces on display at Fort Nelson",
           "credit": "The Dardanelles Gun, cast 1464 · Royal Armouries, Fort Nelson · Photo: Gaius Cornelius, public domain",
           "position": "50% 55%"
+        }
+      }
+    },
+    {
+      "kind": "frame-letterbox",
+      "eyebrow": "The Catch",
+      "title": "Moving one gun took a small army.",
+      "subtitle": "Oxen, ropes, carts and many people, before a single shot was fired.",
+      "kc": "KC-4.3.II",
+      "template": {
+        "visual": {
+          "url": "../assets/images/topics/3-1/3.1%20-%20Hauling%20the%20Great%20Gun.jpg",
+          "alt": "Reconstruction of oxen and many men dragging a huge bronze siege gun up a rocky road toward a hilltop fortress, with an elephant and more guns behind",
+          "ai": true
         }
       }
     },

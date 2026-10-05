@@ -31,6 +31,8 @@ All file paths in the HTML are written for a page in `unit-3/` or `teacher/`
 
 ## The list
 
+**Placed in the deck, 2026-10-05:** #3 Bombards at the Walls (cropped to the siege lines, because the full picture showed a minareted Hagia Sophia and Ottoman mosques, which is the city after 1453) and #4 Hauling the Great Gun (modeled on the Akbarnama's siege of Ranthambhor, 1568). Both are slides of their own, labeled by `ai: true`.
+
 ### 1. Walls Hold
 - **Beat:** the wall problem (slide "A wall let a lord say no to a king"), and the Constantinople lecture card.
 - **Scene:** The land walls of Constantinople on a calm morning: a deep ditch, a low outer wall, a

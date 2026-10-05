@@ -47,21 +47,23 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'first10', label: 'First & 10', range: '6-16', minutes: 10, teacher: 'Module 02: students read the whole story in class.', students: 'Read for the chain and underline the because sentences.', slide: 4 },
     { id: 'wall', label: 'The Wall Problem', range: '16-18', minutes: 2, teacher: 'A wall let a lord say no to a king.', students: 'Explain why a wall worked.', slide: 5 },
     { id: 'cannon', label: 'The Cannon', range: '18-21', minutes: 3, teacher: 'Why a wall is the wrong shape against an iron ball.', students: 'Say what changed.', slide: 6 },
-    { id: 'proof', label: 'Constantinople, 1453', range: '21-26', minutes: 5, teacher: 'Seven weeks. The proof.', students: 'Read the gun as evidence.', slide: 7 },
-    { id: 'pays', label: 'Only a State Can Pay', range: '26-29', minutes: 3, teacher: 'Metal, foundries, powder, gunners, haulers.', students: 'Explain who could afford this.', slide: 8 },
-    { id: 'empires', label: 'Four Winners', range: '29-32', minutes: 3, teacher: 'The four empires on one map.', students: 'Name each empire and where it grew.', slide: 9 },
-    { id: 'proofs', label: 'One Weapon, Four Stories', range: '32-35', minutes: 3, teacher: 'One line each: Chaldiran, the Safavid answer, Panipat, the Qing.', students: 'Match each empire to its proof.', slide: 10 },
-    { id: 'panipat', label: 'Panipat, 1526', range: '35-37', minutes: 2, teacher: 'See the guns in a source.', students: 'Notice the cannons, then source the picture.', slide: 11 },
-    { id: 'meet', label: 'Big States Meet', range: '37-39', minutes: 2, teacher: 'Growth makes neighbors, and neighbors make rivals.', students: 'Predict what happens at the borders.', slide: 12 },
-    { id: 'kandahar', label: 'Safavid and Mughal', range: '39-43', minutes: 4, teacher: 'Kandahar: political and religious.', students: 'Name both kinds of dispute.', slide: 13 },
-    { id: 'tondibi', label: 'Morocco and Songhai', range: '43-47', minutes: 4, teacher: 'Tondibi, 1591: guns decide a war.', students: 'Compare the two armies.', slide: 14 },
-    { id: 'twist', label: 'The Twist', range: '47-50', minutes: 3, teacher: 'Guns win places. They do not run them.', students: 'Say what is still missing.', slide: 15 },
-    { id: 'chain', label: 'The Chain', range: '50-57', minutes: 7, teacher: 'Students redraw the causal chain from memory.', students: 'Retell the whole topic.', slide: 16 },
-    { id: 'sharpen', label: 'Sharpen the Claim', range: '57-62', minutes: 5, teacher: 'Model one causal sentence.', students: 'Upgrade a weak claim.', slide: 17 },
-    { id: 'cp1', label: 'Checkpoint 1', range: '62-68', minutes: 6, teacher: 'Independent: how gunpowder enabled expansion.', students: 'Work without the coach.', slide: 18 },
-    { id: 'evidence', label: 'Evidence Lab', range: '68-78', minutes: 10, teacher: 'Module 07: evidence from two cards.', students: 'Build a claim from two sources.', slide: 19 },
-    { id: 'cp2', label: 'Checkpoint 2', range: '78-87', minutes: 9, teacher: 'Module 10: two empires and one rivalry. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 20 },
-    { id: 'close', label: 'Landing Sentence', range: '87-90', minutes: 3, teacher: 'Land the answer and hand off to 3.2.', students: 'Say the topic in one sentence.', slide: 21 }
+    { id: 'siege', label: 'The Guns at Work', range: '21-22', minutes: 1, teacher: 'Reconstruction: set the scene of the bombardment.', students: 'Say what is happening to the wall.', slide: 7 },
+    { id: 'proof', label: 'Constantinople, 1453', range: '22-26', minutes: 4, teacher: 'Seven weeks. The proof.', students: 'Read the gun as evidence.', slide: 8 },
+    { id: 'haul', label: 'Moving One Gun', range: '26-27', minutes: 1, teacher: 'Reconstruction: the cost of moving a gun.', students: 'Count what it takes to move one gun.', slide: 9 },
+    { id: 'pays', label: 'Only a State Can Pay', range: '27-29', minutes: 2, teacher: 'Metal, foundries, powder, gunners, haulers.', students: 'Explain who could afford this.', slide: 10 },
+    { id: 'empires', label: 'Four Winners', range: '29-32', minutes: 3, teacher: 'The four empires on one map.', students: 'Name each empire and where it grew.', slide: 11 },
+    { id: 'proofs', label: 'One Weapon, Four Stories', range: '32-35', minutes: 3, teacher: 'One line each: Chaldiran, the Safavid answer, Panipat, the Qing.', students: 'Match each empire to its proof.', slide: 12 },
+    { id: 'panipat', label: 'Panipat, 1526', range: '35-37', minutes: 2, teacher: 'See the guns in a source.', students: 'Notice the cannons, then source the picture.', slide: 13 },
+    { id: 'meet', label: 'Big States Meet', range: '37-39', minutes: 2, teacher: 'Growth makes neighbors, and neighbors make rivals.', students: 'Predict what happens at the borders.', slide: 14 },
+    { id: 'kandahar', label: 'Safavid and Mughal', range: '39-43', minutes: 4, teacher: 'Kandahar: political and religious.', students: 'Name both kinds of dispute.', slide: 15 },
+    { id: 'tondibi', label: 'Morocco and Songhai', range: '43-47', minutes: 4, teacher: 'Tondibi, 1591: guns decide a war.', students: 'Compare the two armies.', slide: 16 },
+    { id: 'twist', label: 'The Twist', range: '47-50', minutes: 3, teacher: 'Guns win places. They do not run them.', students: 'Say what is still missing.', slide: 17 },
+    { id: 'chain', label: 'The Chain', range: '50-57', minutes: 7, teacher: 'Students redraw the causal chain from memory.', students: 'Retell the whole topic.', slide: 18 },
+    { id: 'sharpen', label: 'Sharpen the Claim', range: '57-62', minutes: 5, teacher: 'Model one causal sentence.', students: 'Upgrade a weak claim.', slide: 19 },
+    { id: 'cp1', label: 'Checkpoint 1', range: '62-68', minutes: 6, teacher: 'Independent: how gunpowder enabled expansion.', students: 'Work without the coach.', slide: 20 },
+    { id: 'evidence', label: 'Evidence Lab', range: '68-78', minutes: 10, teacher: 'Module 07: evidence from two cards.', students: 'Build a claim from two sources.', slide: 21 },
+    { id: 'cp2', label: 'Checkpoint 2', range: '78-87', minutes: 9, teacher: 'Module 10: two empires and one rivalry. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 22 },
+    { id: 'close', label: 'Landing Sentence', range: '87-90', minutes: 3, teacher: 'Land the answer and hand off to 3.2.', students: 'Say the topic in one sentence.', slide: 23 }
   ],
 
   quickLaunch: [
@@ -199,6 +201,22 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
+      phase: 'siege', kind: 'frame-letterbox', eyebrow: 'Constantinople, April and May 1453',
+      kc: 'KC-4.3.II',
+      title: 'Day after day, the guns pounded the walls.',
+      subtitle: 'Ottoman guns fired from behind earth banks and wooden screens. By night the defenders patched the gaps.',
+      notes: {
+        minutes: 1,
+        land: [
+          'Historical Reconstruction, AI generated. It sets the scene; it is not evidence. The real evidence is on the next slide, the Dardanelles Gun.',
+          'The picture is cropped on purpose. The full image showed Hagia Sophia with four minarets and Ottoman domed mosques in the city, which is Istanbul after 1453, not the Christian city under siege.',
+          'One honest caution if a student asks: the biggest bombards sat on heavy timber beds, not on wheeled carriages like the guns drawn here.'
+        ],
+        ask: 'What is happening to the wall in this picture?',
+        listenFor: 'It is being broken open, and people are climbing in through the gaps.'
+      }
+    },
+    {
       phase: 'proof', kind: 'frame-number', eyebrow: 'The Proof · Constantinople, 1453',
       kc: 'KC-4.3.II',
       template: {
@@ -208,7 +226,7 @@ window.BEHISTORICAL_TEACHING = {
         text: 'Walls that had held for about a thousand years fell to the bombards of the young sultan Mehmed II.'
       },
       notes: {
-        minutes: 5,
+        minutes: 4,
         land: [
           'The siege ran from 6 April to 29 May 1453, about seven weeks. A Hungarian engineer named Urban helped build the bombards.',
           'The picture is the Dardanelles Gun, cast in 1464 and now in the Royal Armouries at Fort Nelson. It is a surviving gun of the kind the Ottomans used, not the gun from the 1453 siege itself. Say so.',
@@ -222,6 +240,21 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
+      phase: 'haul', kind: 'frame-letterbox', eyebrow: 'The Catch',
+      kc: 'KC-4.3.II',
+      title: 'Moving one gun took a small army.',
+      subtitle: 'Oxen, ropes, carts and many people, before a single shot was fired.',
+      notes: {
+        minutes: 1,
+        land: [
+          'Historical Reconstruction, AI generated, modeled on a real Mughal painting in the Akbarnama: bullocks dragging siege guns up to Ranthambhor Fort during Akbar\'s siege of 1568. It sets the scene; it is not evidence.',
+          'It is a different empire and more than a century after 1453. That is fine here: the point is what any state had to pay to move a gun, which is the next slide.'
+        ],
+        ask: 'Count what it takes to move this one gun. Who pays for all of it?',
+        listenFor: 'The ruler, the state, the treasury.'
+      }
+    },
+    {
       phase: 'pays', kind: 'grid', eyebrow: 'The Catch',
       kc: 'KC-4.3.II', title: 'Only a big state could pay for a cannon.',
       cards: [
@@ -231,7 +264,7 @@ window.BEHISTORICAL_TEACHING = {
         { title: 'BECAUSE', text: 'Only a state that taxes many people could pay for all of it.' }
       ],
       notes: {
-        minutes: 3,
+        minutes: 2,
         land: [
           'This is the mechanism that turns a weapon into a political story: only a large, taxing state could afford artillery, so the weapon moved power from local lords to central treasuries.',
           'The same guns pointed outward at neighbors and inward at rebel nobles and autonomous cities. Expansion is the visible half; centralization is the invisible half.',
