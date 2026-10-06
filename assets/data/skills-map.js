@@ -4491,7 +4491,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "10",
           "module": "Checkpoint 2",
           "label": "Module 10, Checkpoint 2",
-          "prompt": "Explain TWO methods rulers used to legitimize and consolidate their power: (1) one example of religious ideas, art, or monumental architecture that made a ruler's power look rightful, and (2) one system for collecting tribute or taxes that paid for state power. For each one, describe the situation the ruler was in and explain how the method strengthened him.",
+          "prompt": "Explain TWO methods rulers used to legitimize and consolidate their power: (1) one example of religious ideas, art, or monumental architecture that made a ruler's power look rightful, and (2) one system for collecting tribute or taxes that paid for state power. For each one, describe the context (the situation the ruler was in) and explain how the method strengthened him.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -4512,7 +4512,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "criteria": [
             "Name one religious idea, work of art, or building and the ruler who used it.",
             "Name one tribute or tax system and the empire that used it.",
-            "For each, describe the ruler's situation and explain how the method strengthened his power."
+            "For each, describe the context, the ruler's situation, and explain how the method strengthened his power."
           ],
           "learningTargets": [
             "I can explain how rulers used religious ideas, art, and monumental architecture to legitimize their rule.",

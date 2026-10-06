@@ -125,10 +125,13 @@
       cardDesc: 'How rulers made their power look rightful, and how they paid for it.',
       learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Explain TWO methods rulers used to legitimize and consolidate their power: (1) one example of religious ideas, art, or monumental architecture that made a ruler\'s power look rightful, and (2) one system for collecting tribute or taxes that paid for state power. For each one, describe the situation the ruler was in and explain how the method strengthened him.',
+      prompt: 'Explain TWO methods rulers used to legitimize and consolidate their power: (1) one example of religious ideas, art, or monumental architecture that made a ruler\'s power look rightful, and (2) one system for collecting tribute or taxes that paid for state power. For each one, describe the context (the situation the ruler was in) and explain how the method strengthened him.',
       responseType: 'Checkpoint 2',
+      // This checkpoint asks for each method in its context, the CED's suggested
+      // skill for 3.2 (4.A); the Skill Builder's comparison label does not fit it.
+      skill: 'Contextualization',
       terms: ['divine right', 'Songhai promotion of Islam', 'Qing imperial portraits', 'Mughal mausolea', 'Versailles', 'zamindar', 'Ottoman tax farming', 'Mexica tribute', 'Ming taxes in silver', 'legitimacy', 'revenue'],
-      focus: ['Name one religious idea, work of art, or building and the ruler who used it.', 'Name one tribute or tax system and the empire that used it.', 'For each, describe the ruler\'s situation and explain how the method strengthened his power.']
+      focus: ['Name one religious idea, work of art, or building and the ruler who used it.', 'Name one tribute or tax system and the empire that used it.', 'For each, describe the context, the ruler\'s situation, and explain how the method strengthened his power.']
     }
   ];
 
