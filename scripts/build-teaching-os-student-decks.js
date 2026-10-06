@@ -94,6 +94,15 @@ const DECKS = [
     ],
     student: 'assets/data/presentations/topic-3-2-student.js',
     backUrl: 'lesson-3-2-empires-administration.html#lecture'
+  },
+  {
+    key: '3.3',
+    sources: [
+      'teacher/data/topic-3-3-teaching-base.js',
+      'teacher/data/topic-3-3-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-3-3-student.js',
+    backUrl: 'lesson-3-3-belief-systems.html#lecture'
   }
 ];
 
@@ -278,7 +287,8 @@ function buildDeck(deck) {
     '2.6': topic26Slides,
     '2.7': topic27Slides,
     '3.1': topic31Slides,
-    '3.2': topic31Slides
+    '3.2': topic31Slides,
+    '3.3': topic31Slides
   };
   return {
     meta: {
