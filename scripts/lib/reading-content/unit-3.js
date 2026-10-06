@@ -415,11 +415,10 @@ module.exports = {
     "showFooterNote": false,
     "headerSubtitle": "Topic 3.3, Empires: Belief Systems &nbsp;|&nbsp; AP World History: Modern",
     "titleHtml": "Belief Systems <em>in Motion</em>",
-    "deck": "Between c. 1450 and c. 1750, belief systems did not simply disappear or get replaced. Christianity changed through Protestant and Catholic reform, Ottoman-Safavid political rivalry intensified an older Sunni-Shia divide, and Sikhism developed in Punjab amid sustained interaction between Hindu and Muslim communities. The AP task is continuity and change: identify what persisted, what changed, and what historical interaction explains the change.",
+    "deck": "Religions changed as much as empires did. Christianity split and reformed, Ottoman-Safavid political rivalry intensified an older Sunni-Shia divide, and Sikhism developed as a distinct tradition in a context of Hindu-Muslim interaction. Track the same three questions in every section: what changed, what continued, and what caused the change?",
     "skillTags": [
       "Continuity & Change",
-      "Causation",
-      "Sourcing"
+      "Sourcing & Situation"
     ],
     "supportCards": {
       "beforeYouRead": "Do not treat every religious development as a ruler's policy. Track the belief system itself: what existed before 1450, what changed after 1450, and what political or cultural interaction helped produce that change.",
@@ -530,7 +529,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "From 1450 to 1750, major belief systems showed both continuity and change. Christianity remained a major world religion but changed through Protestant and Catholic reform. The Sunni-Shia split continued from earlier centuries, but Ottoman-Safavid political rivalry intensified its geopolitical importance. In South Asia, sustained Hindu-Muslim interaction formed the context in which Sikhism developed as a distinct religious tradition. The AP move is always the same: name what continued, name what changed, and explain the interaction or conflict that produced the change.",
+    "takeaway": "Religions changed as much as empires did, but they changed in different ways. Christianity split and reformed while remaining a major world religion. The Sunni-Shia divide continued from earlier centuries, but Ottoman-Safavid political rivalry intensified it. In South Asia, Sikhism developed as a distinct tradition in a context of Hindu-Muslim interaction. Ask the same three questions every time: what changed, what continued, and what caused the change?",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
@@ -553,7 +552,7 @@ module.exports = {
         "placeholder": "Sikhism developed in a context where... It became distinct through..."
       }
     ],
-    "builderBody": "After answering the three questions, build one prompt for the BeHistorical AI Coach. The prompt will include your responses and ask the coach to question, challenge, and improve your thinking without writing the final answer for you.",
+    "builderBody": "",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "",
     "navPrev": {
@@ -564,7 +563,7 @@ module.exports = {
       "href": "../unit-3/lesson-3-3-belief-systems.html",
       "label": "Content Delivery &#8594;"
     },
-    "lessonFile": "../unit-3/lesson-3-2-empires-administration.html",
+    "lessonFile": "../unit-3/lesson-3-3-belief-systems.html",
     "padQuestionNumbers": true
   },
   "3.4": {
