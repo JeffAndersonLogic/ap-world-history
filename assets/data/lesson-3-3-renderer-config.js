@@ -2,6 +2,12 @@
   const lesson = window.BEHISTORICAL_LESSON;
   if (!lesson) return;
 
+  lesson.classPresentation = {
+    title: 'Class Slides: Empires: Belief Systems',
+    desc: 'Follow three kinds of religious change: Christianity split and reformed, Ottoman-Safavid rivalry intensified an older Sunni-Shia divide, and Sikhism developed as a distinct tradition in a context of Hindu-Muslim interaction.',
+    url: 'presentation-topic-3-3-student.html'
+  };
+
   lesson.collegeBoardKeyConcepts = [
     {
       code: 'Unit 3: Learning Objective C',
