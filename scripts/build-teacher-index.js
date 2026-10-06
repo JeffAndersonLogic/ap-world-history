@@ -37,6 +37,7 @@ const TOOLS = [
   { kind: 'lesson', unit: '3', key: '3.1', title: 'Empires Expand', href: 'topic-3-1-os.html' },
   { kind: 'lesson', unit: '3', key: '3.2', title: 'Empires: Administration', href: 'topic-3-2-os.html' },
   { kind: 'lesson', unit: '3', key: '3.3', title: 'Empires: Belief Systems', href: 'topic-3-3-os.html' },
+  { kind: 'lesson', unit: '3', key: '3.4', title: 'Comparison in Land-Based Empires', href: 'topic-3-4-os.html' },
   { kind: 'primary', label: 'Skills Lens', desc: 'Analyze Canvas submissions for completion, response quality, and AP skill trends across the year.', href: 'skills-lens.html' },
   { kind: 'authoring', label: 'Slide Templates', desc: 'Reference every Teaching OS slide template with real Unit 2 examples and copy-ready slide data.', href: 'slide-templates.html' },
   { kind: 'legacy', label: 'Run of Show', desc: 'Standalone pacing pages for Topics 1.4–1.6, before those lessons move into the integrated Teaching OS.', href: ROS_INDEX_OUT },
