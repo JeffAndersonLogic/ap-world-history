@@ -284,7 +284,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "The Mughals in India had a third answer. Akbar's family came from Central Asia, and he ruled a land where most people were Hindu and where Rajput kings had armies of their own. Instead of fighting all of them, Akbar gave the powerful men already there, Muslim and Hindu alike, a numbered rank, called a mansab. Many of these officials, called <span class=\"kt\">mansabdars</span>, were paid with a jagir: the right to collect the land tax from one area. Every few years the jagirs were moved, and a son did not inherit his father's rank. A mansabdar could get rich serving the emperor, but he could never turn one place into his own little kingdom."
+            "html": "The Mughals in India had a third answer. Akbar's family came from Central Asia, and he ruled a land where most people were Hindu and where Rajput kings had armies of their own. Akbar gave each of his officials a numbered rank, called a mansab. Most of these officials came from Central Asia and Persia, but he also gave ranks to powerful men already in India, Muslim and Hindu alike, including Rajput kings, instead of fighting all of them. Many of these officials, called <span class=\"kt\">mansabdars</span>, were paid with a jagir: the right to collect the land tax from one area. Every few years the jagirs were moved, and a son did not inherit his father's rank. A mansabdar could get rich serving the emperor, but most could never turn one place into their own little kingdom. The Rajput kings were the main exception: they usually kept their home lands."
           }
         ],
         "callout": {
@@ -307,7 +307,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Art did this work too. The Qing emperors who ruled China were Manchus, outsiders from the northeast ruling an empire where most people were Han Chinese. Their official <span class=\"kt\">imperial portraits</span> showed them facing forward in yellow robes covered with dragons, the color and the symbol of a Chinese emperor. The fur collar, the hat and the cut of the robe were Qing court dress, which kept Manchu styles. The Qianlong Emperor was also painted as a Buddhist holy figure, for his Tibetan and Mongol subjects. Same ruler, different picture, depending on who needed convincing."
+            "html": "Art did this work too. The Qing emperors who ruled China were Manchus, outsiders from the northeast ruling an empire where most people were Han Chinese. Their official <span class=\"kt\">imperial portraits</span> showed them facing forward in yellow robes covered with dragons, the color and the symbol of a Chinese emperor. The fur collar, the hat and the cut of the robe were Qing court dress, which kept Manchu styles. The Qianlong Emperor was also painted as a Buddhist holy figure, for his Tibetan and Mongol subjects. Same ruler, shown in a different role for each audience."
           },
           {
             "type": "p",

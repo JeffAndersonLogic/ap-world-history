@@ -75,7 +75,10 @@ const approvedUnit2Rewrite = !fromDisk && fs.existsSync(unit2SourcePath)
 // zamindars), listed in docs/TOPIC-3-2-STORY-DRAFT.md under "Corrections after
 // the fact-check". A comparison against 38da055e shows only 3.2 changed. Jeff
 // has the list in the build report; he has not reviewed these lines one by one.
-const APPROVED_UNIT3_REWRITE_BLOB = '4e860e965062dea96d98d38c80f696e741fdabf7';
+// Moved a third time (from 4e860e96) after reviewer pass 2 narrowed the
+// mansabdar lines (most officials came from Central Asia and Persia; Rajput
+// kings kept their home lands) and the portrait line. Still only 3.2 changed.
+const APPROVED_UNIT3_REWRITE_BLOB = '19b0c0b8e8acbdde5e7b8f3a05758427369f1e56';
 const unit3SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-3.js');
 const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
   && gitBlobSha(fs.readFileSync(unit3SourcePath, 'utf8')) === APPROVED_UNIT3_REWRITE_BLOB;

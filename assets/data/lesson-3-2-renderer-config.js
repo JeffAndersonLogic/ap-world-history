@@ -148,8 +148,8 @@
       title: 'The young Akbar watches an arrest, from the Akbarnama',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Court_of_Akbar_from_Akbarnama.jpg',
-      caption: 'A page from the Akbarnama, the official history of Akbar\'s reign, designed by Basawan and painted by Shankar about 1590 to 1595 (Art Institute of Chicago). It shows Akbar at thirteen, days after he became emperor in 1556, as Shah Abu\'l-Maali, a powerful favorite of his late father, is seized.',
-      prompt: 'NOTICE where the young Akbar sits and what is happening to the man beside him. What can you INFER about how a new ruler dealt with a powerful servant who might not obey him? How is this like Mehmed\'s arrest of Çandarlı Halil? This page was made decades later for Akbar\'s own official history: what might it show in its best light?'
+      caption: 'A page from the Akbarnama, the official history of Akbar\'s reign, designed by Basawan and painted by Shankar about 1590 to 1595 (Art Institute of Chicago). It shows Akbar at thirteen, days after he became emperor in 1556, as Shah Abu\'l-Maali, a powerful favorite of his late father, is seized on the orders of the regent Bairam Khan, who stands before the throne.',
+      prompt: 'NOTICE where the young Akbar sits and what is happening to the man beside him. What can you INFER about how a new reign dealt with a powerful servant who might not obey it? How is this like Mehmed\'s arrest of Çandarlı Halil? This page was made decades later for Akbar\'s own official history: what might it show in its best light?'
     },
     {
       title: 'The Qianlong Emperor, by Giuseppe Castiglione',

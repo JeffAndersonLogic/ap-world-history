@@ -2151,7 +2151,7 @@ deleted row in the schedule and every affected date moves with it.
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;">I can describe at least two ways rulers recruited bureaucratic elites or military professionals (e.g., the Ottoman devshirme, salaried samurai) and explain how they served centralized control.</li>
-                    <li style="margin: 0 0 6px 0;">I can give specific examples of religious ideas, art, or monumental architecture used to legitimize rule (e.g., European notions of divine right, Mughal mausolea and mosques, the palace at Versailles).</li>
+                    <li style="margin: 0 0 6px 0;">I can give at least one specific example of religious ideas, art, or monumental architecture used to legitimize rule (e.g., European notions of divine right, Mughal mausolea and mosques, the palace at Versailles).</li>
                     <li style="margin: 0 0 6px 0;">I can describe at least two tax-collection systems (e.g., Mughal zamindar tax collection, Ottoman tax farming, Mexica tribute lists, Ming collection of taxes in hard currency) and explain how they funded state power and expansion.</li>
                 </ul>
             </td>

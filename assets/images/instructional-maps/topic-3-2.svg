@@ -67,19 +67,19 @@
   </g>
 
   <g id="highlights">
-    <ellipse cx="346.7" cy="388.9" rx="26.7" ry="22.2" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
+    <ellipse cx="364.4" cy="397.2" rx="22.2" ry="19.4" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
     <ellipse cx="808.9" cy="241.7" rx="22.2" ry="22.2" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
     <ellipse cx="800.0" cy="413.9" rx="40.0" ry="16.7" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
     <ellipse cx="937.8" cy="286.1" rx="57.8" ry="27.8" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
     <ellipse cx="1155.6" cy="369.4" rx="40.0" ry="36.1" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
     <ellipse cx="1297.8" cy="322.2" rx="53.3" ry="44.4" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <ellipse cx="1408.9" cy="300.0" rx="22.2" ry="22.2" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
+    <ellipse cx="1408.9" cy="300.0" rx="22.2" ry="22.2" fill="#A3ABC6" fill-opacity="0.5" stroke="#3E4A6B" stroke-width="4"/>
   </g>
   <g id="flows">
     
   </g>
   <g id="region-labels">
-    <text class="region halo" x="346.7" y="437.1" text-anchor="middle" fill="#1A1C1D"><tspan x="346.7" dy="0">MEXICA</tspan></text>
+    <text class="region halo" x="364.4" y="442.7" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">MEXICA</tspan></text>
     <text class="region halo" x="808.9" y="207.4" text-anchor="middle" fill="#1A1C1D"><tspan x="808.9" dy="0">FRANCE</tspan></text>
     <text class="region halo" x="800.0" y="456.6" text-anchor="middle" fill="#1A1C1D"><tspan x="800.0" dy="0">SONGHAI</tspan></text>
     <text class="region halo" x="937.8" y="246.3" text-anchor="middle" fill="#1A1C1D"><tspan x="937.8" dy="0">OTTOMAN</tspan></text>
@@ -107,7 +107,7 @@
       <rect x="18" y="137" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="155">Ottoman: the devshirme and tax farming</text>
       <rect x="18" y="170" width="40" height="23" rx="4" fill="#C08552" fill-opacity=".6" stroke="#8C5A2B" stroke-width="3"/><text class="small" x="74" y="188">Mughal: mansabdars, zamindars, the Taj Mahal</text>
       <rect x="18" y="203" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="221">China: Ming taxes in silver, then Qing portraits</text>
-      <rect x="18" y="236" width="40" height="23" rx="4" fill="#B49AA8" fill-opacity=".6" stroke="#6B4A5A" stroke-width="3"/><text class="small" x="74" y="254">Japan: salaried samurai</text>
+      <rect x="18" y="236" width="40" height="23" rx="4" fill="#A3ABC6" fill-opacity=".6" stroke="#3E4A6B" stroke-width="3"/><text class="small" x="74" y="254">Japan: salaried samurai</text>
   </g>
 
   <rect x="0" y="948" width="1600" height="52" fill="url(#paper)" opacity=".93"/>

@@ -60,7 +60,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Governance"
     },
     {
-      criteria: "I can give specific examples of religious ideas, art, or monumental architecture used to legitimize rule (e.g., European notions of divine right, Mughal mausolea and mosques, the palace at Versailles).",
+      criteria: "I can give at least one specific example of religious ideas, art, or monumental architecture used to legitimize rule (e.g., European notions of divine right, Mughal mausolea and mosques, the palace at Versailles).",
       kc: 'KC-4.3.I.A',
       theme: "Governance"
     },
@@ -122,7 +122,7 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "Right after Constantinople fell in 1453, Mehmed II had his **grand vizier**, Çandarlı Halil, arrested and soon executed. Halil came from a powerful Turkish family. He had helped push the teenage Mehmed off the throne once before, in 1446, and had argued against the siege. A servant with family power of his own can say no.",
           "The Ottoman **devshirme** took Christian boys, mostly from the Balkans, from their families, converted them to Islam and trained them. The strongest became **Janissaries**; the ablest could rise to govern provinces or become grand vizier. Japan's rulers and great lords did the same job differently: after more than a century of civil war, from the late 1500s most **samurai** were moved off their lands into castle towns and paid a yearly stipend by their lord, counted in rice.",
-          "The Mughal **mansabdar** system was a third answer. Akbar's family came from Central Asia, and he ruled a mostly Hindu land where Rajput kings had armies of their own. He gave the powerful men already there, Muslim and Hindu alike, a numbered rank, often paid with a **jagir** (the right to collect the land tax from one area) that was moved every few years and could not be inherited. All three made the people with weapons and offices depend on the ruler."
+          "The Mughal **mansabdar** system was a third answer. Akbar's family came from Central Asia, and he ruled a mostly Hindu land where Rajput kings had armies of their own. He gave each official a numbered rank, often paid with a **jagir** (the right to collect the land tax from one area) that was moved every few years and could not be inherited. Most of his nobles came from Central Asia and Persia, but he also ranked powerful men already in India, Muslim and Hindu alike; Rajput kings usually kept their home lands. All three made the people with weapons and offices depend on the ruler."
         ],
         image: {
           title: "Topkapı Palace from the water (modern photograph)",

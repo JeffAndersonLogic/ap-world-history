@@ -428,8 +428,12 @@ corrections. The story, its spine and its order are unchanged.
    "lived on pay, not on land of their own", and in Japan "the new rulers and the great lords
    wanted warriors with no land of their own to rebel from".
 3. Mansabdars: Akbar's context added (a Central Asian dynasty ruling a mostly Hindu land where
-   Rajput kings had armies; he ranked the powerful men already there, Muslim and Hindu alike).
+   Rajput kings had armies). Most of his officials came from Central Asia and Persia, and he also
+   ranked powerful men already in India, Muslim and Hindu, including Rajput kings, who usually
+   kept their home lands; so "most" mansabdars, not all, could never build a kingdom of their own.
 4. Qing portraits: yellow robes covered with dragons, the color and symbol of a Chinese emperor,
    in Qing court dress that kept Manchu styles. Not "the robes of a traditional Chinese emperor".
+   The court portrait was a private court scroll, so the closing line is "Same ruler, shown in a
+   different role for each audience", not "depending on who needed convincing".
 5. Zamindars: the Mughals ruled through local landholders who already held their villages and
    knew them, rather than "needed people who knew the land village by village".

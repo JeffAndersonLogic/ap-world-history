@@ -1561,7 +1561,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       ],
       successCriteria: [
         { text: 'I can describe at least two ways rulers recruited bureaucratic elites or military professionals (e.g., the Ottoman devshirme, salaried samurai) and explain how they served centralized control.', label: 'Governance' },
-        { text: 'I can give specific examples of religious ideas, art, or monumental architecture used to legitimize rule (e.g., European notions of divine right, Mughal mausolea and mosques, the palace at Versailles).', label: 'Governance' },
+        { text: 'I can give at least one specific example of religious ideas, art, or monumental architecture used to legitimize rule (e.g., European notions of divine right, Mughal mausolea and mosques, the palace at Versailles).', label: 'Governance' },
         { text: 'I can describe at least two tax-collection systems (e.g., Mughal zamindar tax collection, Ottoman tax farming, Mexica tribute lists, Ming collection of taxes in hard currency) and explain how they funded state power and expansion.', label: 'Governance' }
       ],
       modules: [
@@ -1585,7 +1585,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       ],
       successCriteria: [
         { text: 'I can describe at least two ways rulers recruited bureaucratic elites or military professionals (e.g., the Ottoman devshirme, salaried samurai) and explain how they served centralized control.', label: 'Governance' },
-        { text: 'I can give specific examples of religious ideas, art, or monumental architecture used to legitimize rule (e.g., European notions of divine right, Mughal mausolea and mosques, the palace at Versailles).', label: 'Governance' },
+        { text: 'I can give at least one specific example of religious ideas, art, or monumental architecture used to legitimize rule (e.g., European notions of divine right, Mughal mausolea and mosques, the palace at Versailles).', label: 'Governance' },
         { text: 'I can describe at least two tax-collection systems (e.g., Mughal zamindar tax collection, Ottoman tax farming, Mexica tribute lists, Ming collection of taxes in hard currency) and explain how they funded state power and expansion.', label: 'Governance' }
       ],
       modules: [

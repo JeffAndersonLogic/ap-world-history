@@ -64,7 +64,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'frame', label: 'Say It in One Sentence', range: '55-59', minutes: 4, teacher: 'Model one comparison sentence with context.', students: 'Write one of your own.', slide: 16 },
     { id: 'cp1', label: 'Checkpoint 1', range: '59-65', minutes: 6, teacher: 'Independent: compare two ways rulers got people to serve them.', students: 'Work without the coach.', slide: 17 },
     { id: 'evidence', label: 'Evidence Lab', range: '65-75', minutes: 10, teacher: 'Module 07: a claim from two pieces of evidence.', students: 'Build a claim from two sources.', slide: 18 },
-    { id: 'cp2', label: 'Checkpoint 2', range: '75-87', minutes: 12, teacher: 'Module 10: one symbol and one revenue system. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 19 },
+    { id: 'cp2', label: 'Checkpoint 2', range: '75-87', minutes: 12, teacher: 'Module 10: one symbol and two revenue systems. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 19 },
     { id: 'close', label: 'Landing Sentence', range: '87-90', minutes: 3, teacher: 'Land the answer and hand off to 3.3.', students: 'Say the topic in one sentence.', slide: 20 }
   ],
 
@@ -232,13 +232,13 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'mansab', kind: 'equation', eyebrow: 'Job One · A Third Answer',
       kc: 'KC-4.3.I.C', title: 'The Mughal mansabdar.',
-      footer: 'Rich in the emperor\'s service, but never a kingdom of his own.',
+      footer: 'Rich in the emperor\'s service, but rarely a kingdom of his own.',
       template: {
         terms: [
           { word: 'A numbered rank', note: 'the mansab set his pay and his horsemen' },
           { word: 'A jagir that moves', note: 'the right to collect the land tax from one area, moved every few years' }
         ],
-        result: { word: 'A loyal official', note: 'no inherited rank and no fixed land base' },
+        result: { word: 'An official who depends on him', note: 'no inherited rank, and land that moves' },
         groups: [
           { from: 0, to: 0, label: 'Rank' },
           { from: 1, to: 1, label: 'Pay' }
@@ -248,7 +248,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Akbar\'s ranks ran in numbered grades; officials were paid in cash or, more often, by a jagir, which was normally transferred every few years. Rank was not inherited.',
-          'Context: Akbar\'s family came from Central Asia, and he ruled a mostly Hindu land where Rajput kings had armies of their own. He ranked the powerful men already there, Muslim and Hindu alike, and gave high ranks to Rajput kings, which turned possible rivals into commanders. Two sentences; it is not a separate lesson.',
+          'Context: Akbar\'s family came from Central Asia, and he ruled a mostly Hindu land where Rajput kings had armies of their own. Most of his nobles came from Central Asia and Persia (by the end of his reign about 70 percent were of foreign origin, Britannica), but he also ranked powerful men already in India, Muslim and Hindu alike, and gave high ranks to Rajput kings, who usually kept their home lands as hereditary watan jagirs. Ranking them turned possible rivals into commanders. A few sentences; it is not a separate lesson.',
           'Mansabdar is not one of the CED\'s named examples. It stays because it links job one to job three: the jagir is pay and a tax system at once.'
         ],
         ask: 'Why move the jagir every few years?',
@@ -289,9 +289,9 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'Situation', text: 'The Qing emperors were **Manchus**, outsiders ruling an empire where most people were Han Chinese' },
           { label: 'Picture one', text: 'Court portraits like this one: the yellow and dragons of a **Chinese emperor**, in Manchu court dress' },
           { label: 'Picture two', text: 'The Qianlong Emperor painted as a **Buddhist holy figure**, for Tibetan and Mongol subjects' },
-          { label: 'So what', text: 'Same ruler, different picture, depending on who needed convincing' }
+          { label: 'So what', text: 'Same ruler, shown in a different role for each audience' }
         ],
-        proves: 'Art made a ruler look rightful to each group he ruled.'
+        proves: 'Art showed the ruler in the role each audience expected.'
       },
       notes: {
         minutes: 2,
@@ -424,7 +424,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         frame: 'Both {{ruler A}} and {{ruler B}} {{did the same job}} by {{a shared method}}, but {{how they differed}}. They differed because {{the situation each was in}}.',
         exampleLabel: 'Filled in',
-        example: 'Both **the Ottoman sultans** and **Japan\'s rulers** **gave themselves loyal fighters** by **paying them so they had no power base of their own**, but **the Ottomans built a new group out of Christian boys while Japan moved an old warrior class off its land**. They differed because **the Ottomans feared powerful Turkish families, and Japan\'s rulers and lords, after a century of civil war, feared warriors with land of their own**.'
+        example: 'Both **the Ottoman sultans** and **Japan\'s rulers and great lords** **got loyal fighters** by **paying them so they had no power base of their own**, but **the Ottomans built a new group out of Christian boys while Japan moved an old warrior class off its land**. They differed because **the Ottomans feared powerful Turkish families, and Japan\'s rulers and lords, after a century of civil war, feared warriors with land of their own**.'
       },
       notes: {
         minutes: 4,
@@ -469,14 +469,14 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'cp2', kind: 'action', eyebrow: 'Module 10 · Checkpoint 2',
-      title: 'One symbol, and one way to pay.',
+      title: 'One symbol, and two ways to pay.',
       subtitle: 'Draft, work with Socrates, revise. If it is not finished in class, it is homework.',
       action: { label: 'Open Student Lesson', url: '../unit-3/lesson-3-2-empires-administration.html#modules' },
       notes: {
         minutes: 12,
         land: [
           'The revised answer in the box is what goes to Canvas.',
-          'Checkpoint 2 checks Learning Targets 2 and 3: one religious idea, art or building that made a ruler\'s power look rightful, and one revenue system, each with the situation that ruler was in.'
+          'Checkpoint 2 checks Learning Targets 2 and 3: one religious idea, art or building that made a ruler\'s power look rightful, and two revenue systems from different empires, with the situation the ruler was in for the symbol and at least one system.'
         ],
         ask: 'Does each example say what situation the ruler was in?',
         listenFor: 'A named tool, how it helped, and the ruler\'s situation.'

@@ -132,7 +132,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "equation",
       "eyebrow": "Job One · A Third Answer",
       "title": "The Mughal mansabdar.",
-      "footer": "Rich in the emperor's service, but never a kingdom of his own.",
+      "footer": "Rich in the emperor's service, but rarely a kingdom of his own.",
       "kc": "KC-4.3.I.C",
       "template": {
         "terms": [
@@ -146,8 +146,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
           }
         ],
         "result": {
-          "word": "A loyal official",
-          "note": "no inherited rank and no fixed land base"
+          "word": "An official who depends on him",
+          "note": "no inherited rank, and land that moves"
         },
         "groups": [
           {
@@ -216,10 +216,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "So what",
-            "text": "Same ruler, different picture, depending on who needed convincing"
+            "text": "Same ruler, shown in a different role for each audience"
           }
         ],
-        "proves": "Art made a ruler look rightful to each group he ruled.",
+        "proves": "Art showed the ruler in the role each audience expected.",
         "visual": {
           "url": "../assets/images/topics/3-2/qianlong-emperor.jpg",
           "alt": "Court portrait of the young Qianlong Emperor in a fur-trimmed hat and a yellow robe embroidered with dragons, with Chinese inscriptions and seals",
@@ -390,7 +390,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "frame": "Both {{ruler A}} and {{ruler B}} {{did the same job}} by {{a shared method}}, but {{how they differed}}. They differed because {{the situation each was in}}.",
         "exampleLabel": "Filled in",
-        "example": "Both **the Ottoman sultans** and **Japan's rulers** **gave themselves loyal fighters** by **paying them so they had no power base of their own**, but **the Ottomans built a new group out of Christian boys while Japan moved an old warrior class off its land**. They differed because **the Ottomans feared powerful Turkish families, and Japan's rulers and lords, after a century of civil war, feared warriors with land of their own**."
+        "example": "Both **the Ottoman sultans** and **Japan's rulers and great lords** **got loyal fighters** by **paying them so they had no power base of their own**, but **the Ottomans built a new group out of Christian boys while Japan moved an old warrior class off its land**. They differed because **the Ottomans feared powerful Turkish families, and Japan's rulers and lords, after a century of civil war, feared warriors with land of their own**."
       }
     },
     {
@@ -416,7 +416,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "action",
       "eyebrow": "Module 10 · Checkpoint 2",
-      "title": "One symbol, and one way to pay.",
+      "title": "One symbol, and two ways to pay.",
       "subtitle": "Draft, work with Socrates, revise. If it is not finished in class, it is homework.",
       "action": {
         "label": "Open Student Lesson",

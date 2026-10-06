@@ -139,7 +139,25 @@ the jagir crisis attributed to Chandra and Athar Ali; jharokha darshan from Akba
 the county magistrate; caliph of the western Sudan; Topkapı seclusion from the late 1400s; the
 scenario's Todar Mal role line (who headed finance in 1580 is disputed) and its skill label.
 
+### Reviewer pass 2 (fresh, full, after the fixes above)
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | Mansabdars "could never" hold a kingdom of their own: Rajput kings kept their home lands as hereditary watan jagirs (Hansraj College, Delhi University; Britannica). | Fixed: "most could never", with the Rajput exception, in the reading, lecture card, slide 7 ("rarely") and the eBook. |
+| 2 | The pass-1 fix said Akbar ranked "the powerful men already there", but about 70 percent of his mansabdars were of foreign origin (Britannica). The eBook said "rather than importing outsiders". | Fixed: most of his officials came from Central Asia and Persia; he also ranked powerful men already in India, Muslim and Hindu, including Rajput kings. Reading, lecture card, deck notes, eBook. |
+| 3 | The deck still said Checkpoint 2 asks for one revenue system. | Fixed: "One symbol, and two ways to pay", notes and flow row. |
+| 4 | The eBook still had tax farmers paying "up front" (that is the later malikâne). | Fixed: a fixed sum, often partly in advance and the rest in installments. |
+| 5 | The court portrait is framed as aimed at an audience ("who needed convincing"), but it was a private court scroll. | Fixed: "Same ruler, shown in a different role for each audience"; slide "What it proves" now "Art showed the ruler in the role each audience expected"; eBook to match. |
+| 6 | The map's Mexica zone sat on the Tarascan kingdom; Mexica and Japan shared a color. | Fixed: zone moved to the Valley of Mexico and the south; Japan given a new color. |
+| 7 | The model comparison sentence still had "Japan's rulers" paying the samurai. | Fixed: "Japan's rulers and great lords got loyal fighters". |
+| 8 | The Akbar arrest was ordered by the regent Bairam Khan, who stands in the picture (Art Institute of Chicago 1919.898). | Fixed: caption names Bairam Khan; the prompt asks how "a new reign" dealt with a powerful servant. |
+| 9 | Slide 7 result "A loyal official": Akbar faced revolts by his own officers (1560s, 1580 to 1581). | Fixed: "An official who depends on him". |
+| 10 | eBook heading promised the devshirme "in the words of the people it took"; the sources are not by the recruits. | Fixed: "seen from several sides". |
+| 11 | The scenario and eBook use jargon above a ninth grader. | Fixed in the scenario (evidence and options rewritten in plain words). In the eBook, the optional textbook-depth layer, the named jargon is glossed or replaced; the chapter stays harder than the First & 10 by design. |
+| 12 | Success criterion 2 says "specific examples" but Checkpoint 2 asks for one symbol. | Fixed: "at least one specific example". The board and Canvas text were rebuilt from it. |
+| 13 | The Canvas event says "Nothing tonight" while Checkpoint 2 may be homework. | Deliberate and pending: the homework line waits on the 3.3 dates, which only Jeff can give. |
+
 ### Next
 
-A fresh full reviewer pass runs on the corrected surfaces. The loop ends when one pass finds no
-supported defect.
+A fresh full reviewer pass (pass 3) runs on the corrected surfaces. The loop ends when one pass
+finds no supported defect.
