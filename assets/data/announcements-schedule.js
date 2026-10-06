@@ -785,13 +785,34 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-10-22',
       cohort: 'green',
       topic: '3.3',
-      modules: ['02', '06', '07', '10']
+      modules: ['02', '06', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 3.3 module you did not complete in class.'
     },
     {
       date: '2026-10-23',
       cohort: 'silver',
       topic: '3.3',
-      modules: ['02', '06', '07', '10']
+      modules: ['02', '06', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 3.3 module you did not complete in class.'
+    },
+
+    /* ---- Topic 3.4, Comparison in Land-Based Empires ------ */
+    // Green Monday 2026-10-26 and Silver Tuesday 2026-10-27, confirmed from
+    // Jeff's 2026-27 Green/Silver calendar image on 2026-10-06.
+    // Required subset approved with the 3.4 story: 02 First & 10, 05 Skill
+    // Builder, 07 Evidence Lab and 10 Checkpoint 2. Checkpoint 1 and
+    // BeInTheRoom remain optional.
+    {
+      date: '2026-10-26',
+      cohort: 'green',
+      topic: '3.4',
+      modules: ['02', '05', '07', '10']
+    },
+    {
+      date: '2026-10-27',
+      cohort: 'silver',
+      topic: '3.4',
+      modules: ['02', '05', '07', '10']
     }
   ],
 
