@@ -118,6 +118,12 @@
       prompt: 'NOTICE how Luther is represented as an individual religious authority. What can you INFER about the visibility of reform leaders in an age of print and confessional conflict? What can a portrait not prove about why ordinary people adopted Protestant ideas?'
     },
     {
+      title: 'Council of Trent, Canon on Justification, 1547',
+      sourceText: 'If anyone says that the sinner is justified by faith alone ... let him be anathema.',
+      caption: 'Catholic Reformation evidence. A canon from the Council of Trent states a Catholic position during the era of confessional reform.',
+      prompt: 'NOTICE what claim the council rejects. What can you INFER about Catholic reform and doctrinal clarification? What can an official church decree not prove about what every Catholic believed or practiced?'
+    },
+    {
       title: 'Battle of Chaldiran, Selim-nama, 1524',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Chaldiran_miniature._Sel%C4%ABm-n%C4%81ma%2C_by_%C5%9E%C5%ABkr%C4%AB-i_Bitlis%C4%AB%2C_1524_%28National_Library_of_Israel%2C_Ms._Yah._Ar._1116%29.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Battle_of_Chaldiran_miniature._Sel%C4%ABm-n%C4%81ma,_by_%C5%9E%C5%ABkr%C4%AB-i_Bitlis%C4%AB,_1524_(National_Library_of_Israel,_Ms._Yah._Ar._1116).jpg',
