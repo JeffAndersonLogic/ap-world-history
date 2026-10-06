@@ -352,7 +352,7 @@ function fEvidence(s){
 }
 function fSubtitle(s){
   const t=s.template||{};
-  return board('frame-subtitle','dark',`${frame(t.visual,'bht-full')}<div class="bht-sub-veil"></div>${s.eyebrow?`<div class="bht-sub-eb">${eyebrow(s)}</div>`:''}<div class="bht-sub-line"><p>${rich(t.line||s.title)}</p></div>`);
+  return board('frame-subtitle','dark',`${frame(t.visual,'bht-full')}<div class="bht-sub-veil"></div>${s.eyebrow?`<div class="bht-sub-top"></div><div class="bht-sub-eb">${eyebrow(s)}</div>`:''}<div class="bht-sub-line"><p>${rich(t.line||s.title)}</p>${s.subtitle?`<p class="s">${rich(s.subtitle)}</p>`:''}</div>`);
 }
 /* A strip of small pictures carries one label for the strip: a label per
    frame is cut off by frames this narrow. A strip that mixes AI images with
@@ -396,13 +396,22 @@ function fCover(s){
    the one filled in. */
 function causeChain(s){
   const t=s.template||{},st=arr(t.steps).slice(0,5),n=Math.max(1,st.length),links=arr(t.links);
+  // Five cards leave each one about 140u of text room, so the arrows and the
+  // padding narrow, and the type is sized from the longest single word: a word
+  // that cannot fit its card gets broken mid-word ("Treasu / ry"), which is the
+  // defect this replaces. Cinzel runs about .72em a letter at its widest, Libre
+  // Baskerville about .58em; break-word stays underneath as the floor.
+  const linkW=n>=5?60:84,padX=n>=5?18:22,room=(1128-(n-1)*linkW)/n-2*padX;
+  const longest=list=>list.reduce((m,v)=>Math.max(m,...String(v||'').replace(/\*\*/g,'').split(/\s+/).map(w=>w.length)),1);
+  const lab=Math.max(18,Math.min(26,Math.floor(room/(longest(st.map(x=>x.label))*.72))));
+  const txt=Math.max(14,Math.min(17,Math.floor(room/(longest(st.map(x=>x.text))*.58))));
   const cols=[];let cells='';
   st.forEach((x,i)=>{
     cols.push('minmax(0,1fr)');
-    cells+=`<div class="bht-cc-step ${x.key?'key':''}"><div class="k">${esc(x.tag||String(i+1).padStart(2,'0'))}</div><b>${esc(x.label)}</b><span>${rich(x.text)}</span></div>`;
-    if(i<n-1){cols.push('84u');cells+=`<div class="bht-cc-link"><em>${esc(links[i]||'')}</em><svg viewBox="0 0 84 24" aria-hidden="true"><line x1="4" y1="12" x2="70" y2="12"></line><path d="M66 4 L80 12 L66 20 z"></path></svg></div>`;}
+    cells+=`<div class="bht-cc-step ${x.key?'key':''}" style="padding-left:calc(${padX}*var(--u));padding-right:calc(${padX}*var(--u))"><div class="k">${esc(x.tag||String(i+1).padStart(2,'0'))}</div><b style="font-size:calc(${lab}*var(--u))">${esc(x.label)}</b><span style="font-size:calc(${txt}*var(--u))">${rich(x.text)}</span></div>`;
+    if(i<n-1){cols.push(`calc(${linkW}*var(--u))`);cells+=`<div class="bht-cc-link"><em>${esc(links[i]||'')}</em><svg viewBox="0 0 84 24" aria-hidden="true" style="width:calc(${linkW}*var(--u))"><line x1="4" y1="12" x2="70" y2="12"></line><path d="M66 4 L80 12 L66 20 z"></path></svg></div>`;}
   });
-  const tpl=cols.join(' ').replace(/84u/g,'calc(84*var(--u))');
+  const tpl=cols.join(' ');
   return board('cause-chain',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-cc" style="grid-template-columns:${tpl||'1fr'}">${cells}</div>`)+foot(s.footer)));
 }
 
@@ -984,10 +993,12 @@ const CSS=`
 .bht-fe .k{font:800 13u/1.3 'Montserrat',Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#5a5f5c}
 .bht-fe .k.ev{color:#6b3e1f}
 .bht-frame-evidence .bht-h{font-size:36u;max-width:34ch}
-.bht-sub-veil{position:absolute;left:0;right:0;bottom:0;height:260u;background:linear-gradient(180deg,rgba(5,6,6,0),rgba(5,6,6,.85) 70%)}
-.bht-sub-eb{position:absolute;left:76u;top:56u}
+.bht-sub-veil{position:absolute;left:0;right:0;bottom:0;height:280u;background:linear-gradient(180deg,rgba(5,6,6,0),rgba(5,6,6,.88) 65%)}
+.bht-sub-top{position:absolute;left:0;right:0;top:0;height:150u;background:linear-gradient(180deg,rgba(5,6,6,.8),rgba(5,6,6,0))}
+.bht-sub-eb{position:absolute;left:76u;top:56u;text-shadow:0 2u 10u rgba(0,0,0,.9)}
 .bht-sub-line{position:absolute;left:140u;right:140u;bottom:64u;text-align:center}
 .bht-sub-line p{font-size:30u;line-height:1.45;color:#fffdf7;text-shadow:0 2u 14u rgba(0,0,0,.8)}
+.bht-sub-line p.s{margin-top:10u;font-size:21u;line-height:1.45;color:#e6d3b3}
 .bht-sbd-h{padding-left:20u;display:flex;flex-direction:column;gap:12u}
 .bht-sbd-h .bht-h{font-size:38u;max-width:30ch}
 .bht-sbd{position:relative;background:#050606;border-radius:4u;padding:12u 0}

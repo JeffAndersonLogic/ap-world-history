@@ -95,7 +95,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "frame-letterbox",
+      "kind": "frame-subtitle",
       "eyebrow": "Constantinople, April and May 1453",
       "title": "Day after day, the guns pounded the walls.",
       "subtitle": "Ottoman guns fired from behind earth banks and wooden screens. By night the defenders patched the gaps.",

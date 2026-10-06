@@ -17,11 +17,14 @@
  *   Lodhi and Babur.jpg"; this copy resized to 800px wide for classroom
  *   wifi). A later court painting, not a photograph; the placard says so.
  *
- * - siege and haul (frame-letterbox): two AI-generated Historical Reconstructions
+ * - siege (frame-subtitle) and haul (frame-letterbox): two AI-generated Historical Reconstructions
  *   Jeff made on 2026-10-05, labeled by the template from `ai: true`. Both had the
  *   Gemini sparkle in the corner: the siege picture is cropped to the siege lines
  *   (900x470), which also removes an anachronistic skyline of Ottoman mosques and a
  *   minareted Hagia Sophia; the haul picture has its bottom 88px trimmed (1408x680).
+ *   The siege slide is full-bleed rather than letterboxed (2026-10-06, on Jeff's
+ *   ask to zoom out): the letterbox strip showed about two thirds of the picture's
+ *   height, the full board shows all of it and about 93% of its width.
  *   The haul picture is modeled on the Akbarnama's bullocks dragging siege guns at
  *   Ranthambhor, 1568, and the teacher note says so.
  *

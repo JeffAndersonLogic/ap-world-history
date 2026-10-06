@@ -202,7 +202,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'siege', kind: 'frame-letterbox', eyebrow: 'Constantinople, April and May 1453',
+      phase: 'siege', kind: 'frame-subtitle', eyebrow: 'Constantinople, April and May 1453',
       kc: 'KC-4.3.II',
       title: 'Day after day, the guns pounded the walls.',
       subtitle: 'Ottoman guns fired from behind earth banks and wooden screens. By night the defenders patched the gaps.',
