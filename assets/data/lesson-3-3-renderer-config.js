@@ -119,8 +119,12 @@
     },
     {
       title: 'Council of Trent, Canon on Justification, 1547',
-      sourceText: 'If anyone says that the sinner is justified by faith alone ... let him be anathema.',
-      caption: 'Catholic Reformation evidence. A canon from the Council of Trent states a Catholic position during the era of confessional reform.',
+      label: 'Council decree · Session VI · 1547',
+      sourceText: [
+        'If anyone says that the sinner is justified by faith alone...',
+        '...let him be anathema.'
+      ],
+      caption: 'Catholic Reformation evidence. A canon from the Council of Trent states an official Catholic position during the era of confessional reform.',
       prompt: 'NOTICE what claim the council rejects. What can you INFER about Catholic reform and doctrinal clarification? What can an official church decree not prove about what every Catholic believed or practiced?'
     },
     {
