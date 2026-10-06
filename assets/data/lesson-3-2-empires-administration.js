@@ -99,62 +99,62 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: "Governing Land-Based Empires: Systems of Control and Accommodation",
-    intro: "Use these cards to track three connected methods rulers used to consolidate power: loyal bureaucratic or military personnel, religious or visual legitimation, and revenue systems that funded the state and further expansion.",
+    title: "Holding What You Won: People, Symbols and Money",
+    intro: "Use these cards to deepen the First & 10. Each card is one of the three jobs every ruler had to do, and each one compares two rulers who did the same job in different ways. Ask of every example: what situation was this ruler in, and how did this tool help him keep control?",
     videos: [],
     segments: [
       {
-        title: "The Problem of Running an Empire",
+        title: "The Problem: Three Jobs After the Conquest",
         bullets: [
-          "Every land-based empire c. 1450–1750 faced the same fundamental challenge: how do you govern millions of diverse subjects, speaking different languages, following different religions, owing loyalty to local lords, when you lack modern communications, a professional bureaucracy, or reliable enforcement?",
-          "**Revenue extraction** was the core function of imperial administration. Without taxes, tribute, and military service, empires could not pay armies, build infrastructure, or fund imperial courts. The question was not whether to extract resources but how to do so without triggering revolt.",
-          "**Loyalty** was the second problem. Every emperor needed administrators and soldiers who were loyal to him personally, not to local lords, tribal leaders, or rival nobles who might challenge imperial authority. Administrative innovation was largely about solving the loyalty problem."
+          "Gunpowder let a few rulers conquer enormous lands fast (Topic 3.1). The conquest left each ruler with **millions of people** who spoke other languages, followed other religions, and never asked to be ruled by him, plus powerful local men with lands and followers of their own.",
+          "To hold on, every ruler had **three jobs**: find people who would serve him and not turn on him; convince everyone else that he deserved to rule; and collect enough money to pay for armies, salaries and palaces.",
+          "Every ruler did all three jobs, but not in the same way. The question for every example is **why**: what situation was that ruler in?"
         ],
         image: {
-          title: "Topkapi Palace, Istanbul — seat of Ottoman power",
-          caption: "The Ottoman imperial court at Topkapi was the administrative heart of an empire spanning three continents. The palace trained and housed the devshirme recruits who staffed the imperial bureaucracy.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Istanbul_asv2020-02_img19_Topkap%C4%B1_Palace.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Istanbul_asv2020-02_img19_Topkap%C4%B1_Palace.jpg"
-        }
-      },
-      {
-        title: "Administrative Innovation: Devshirme, Mansabdar, and the Examination System",
-        bullets: [
-          "The **Ottoman devshirme** system recruited Christian boys from the Balkans, converted them to Islam, educated them in Ottoman language and culture, and assigned them as administrators or janissary soldiers. Because they had no family connections inside the empire, these recruits depended entirely on the sultan, creating a class of administrators loyal to imperial authority rather than to local noble networks.",
-          "The **Mughal mansabdar system** assigned every official a numbered rank (mansab) that determined his military obligations and revenue rights. Mansabdars received a **jagir**, the right to collect revenue from a designated territory, in exchange for maintaining a quota of cavalry soldiers. Crucially, jagirs were not hereditary: when a mansabdar died or was reassigned, the jagir reverted to the emperor, preventing the accumulation of independent noble power.",
-          "The **Qing civil service examination** system required officials to master Confucian texts and demonstrate literary skill through written exams. This created a bureaucracy whose members shared a common education, shared values (loyalty to the emperor and hierarchical order), and owed their positions to imperial appointment rather than to birth or military service. The Banner system maintained a separate Manchu military force that preserved Qing ethnic identity alongside the Chinese examination bureaucracy."
-        ],
-        image: {
-          title: "Mughal Empire at its greatest extent, c. 1700",
-          caption: "The Mughal Empire administered hundreds of provinces through the mansabdar system, linking military obligation to revenue rights across a subcontinent.",
+          title: "The Mughal Empire, c. 1700 (a modern map)",
+          caption: "A modern map of the Mughal Empire near its greatest size. Ruling land this large and this varied is the problem every tool in this topic tries to solve.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Mughal_Empire_%281700%29.png"
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Mughal_Empire_(1700).png"
         }
       },
       {
-        title: "Accommodation: Working With Local Elites",
+        title: "People Who Serve: Devshirme, Salaried Samurai and Mansabdars",
         bullets: [
-          "**Direct control was often impossible.** Empires lacked the administrative capacity to replace every local lord, religious leader, or tribal chief with a loyal imperial official. The practical solution was accommodation, incorporating local elites into the imperial system rather than eliminating them.",
-          "**Akbar's incorporation of Rajput nobles** is the clearest example. The Mughals were Muslim rulers governing a majority-Hindu population. Rather than imposing Islamic governance on Hindu nobles, Akbar recruited Rajput kings and princes into the mansabdar system, gave them high ranks, and married into their families. Rajputs became some of the most loyal and effective Mughal commanders, not because they were coerced but because the system gave them status, revenue, and a stake in imperial success.",
-          "The **Ottoman millet system** granted semi-autonomous governance to recognized religious communities (Greek Orthodox, Armenian Christian, Jewish). Each millet maintained its own courts, schools, and religious institutions. In exchange, millet leaders collected taxes and maintained order within their communities. The Ottomans gained stability without having to directly administer millions of non-Muslim subjects; the communities gained protection and self-governance."
+          "The day after Constantinople fell in 1453, Mehmed II had his **grand vizier**, Çandarlı Halil, arrested and soon executed. Halil came from a powerful Turkish family, and a servant with family power of his own can say no.",
+          "The Ottoman **devshirme** took Christian boys, mostly from the Balkans, from their families, converted them to Islam and trained them. The strongest became **Janissaries**; the ablest could rise to govern provinces or become grand vizier. Japan's rulers did the same job differently: from the late 1500s most **samurai** were moved off their lands into castle towns and paid a yearly stipend in rice.",
+          "The Mughal **mansabdar** system was a third answer: a numbered rank, often paid with a **jagir** (the right to collect the land tax from one area) that was moved every few years and could not be inherited. All three made the people with weapons and offices depend on the ruler."
         ],
         image: {
-          title: "Akbar's multicultural Mughal court",
-          caption: "Akbar deliberately incorporated Hindu Rajput nobles, Muslim commanders, and Persian scholars into a single imperial service. Accommodation was a calculated strategy, not generosity.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Court_of_Akbar_from_Akbarnama.jpg"
+          title: "Topkapı Palace from the water (modern photograph)",
+          caption: "The Ottoman sultans' palace in Istanbul after 1453, photographed in 2007. Its palace school trained the most promising devshirme recruits for high office.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_Bosphorus.JPG",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Topkapi_Palace_Bosphorus.JPG"
         }
       },
       {
-        title: "Legitimacy and Revenue: Why Obey, and Who Pays?",
+        title: "Symbols That Justify: Religion, Art and Monumental Architecture",
         bullets: [
-          "Rulers used **religious ideas, art, and monumental architecture** to make authority appear legitimate. European monarchs invoked **divine right**; Mughal emperors sponsored mosques and **mausolea**; Qing rulers used imperial portraiture; Louis XIV made **Versailles** a stage for royal power.",
-          "Rulers also needed dependable revenue. Mughal **zamindars** collected land taxes, Ottoman **tax farming** converted collection rights into immediate state income, Mexica tribute moved goods toward the capital, and Ming rulers increasingly demanded taxes in hard currency.",
-          "These methods worked together: loyal personnel extended central control, legitimacy made rule easier to accept, and revenue paid the armies, officials, courts, and projects that sustained imperial power and expansion."
+          "**Religious ideas.** Louis XIV of France claimed **divine right**: God chose the king, so disobeying the king meant disobeying God. Askia Muhammad, who took the Songhai throne by force in 1493, could not claim it by birth, so he made the pilgrimage to Mecca, returned with the title of caliph, and supported Islamic scholars and judges.",
+          "**Art.** The Qing emperors were Manchus ruling a mostly Han Chinese empire. Their **imperial portraits** showed them in the robes of a traditional Chinese emperor, and the Qianlong Emperor was also painted as a Buddhist holy figure for his Tibetan and Mongol subjects.",
+          "**Monumental architecture.** Mughal **mausolea and mosques**, such as the Taj Mahal, showed a dynasty that was rich, faithful to Islam and permanent. Louis XIV's palace at **Versailles**, his court's home from 1682, did that and a second job: it kept the great nobles at court, where the king could watch them."
         ],
         image: {
-          title: "Taj Mahal and Mughal imperial patronage",
-          caption: "Monumental architecture made dynastic wealth, religious patronage, and imperial authority visible.",
+          title: "The Qianlong Emperor, by Giuseppe Castiglione",
+          caption: "Part of a Qing court painting of the Qianlong Emperor and his consorts. A Manchu ruler shown in the robes of a Chinese emperor.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Qianlong_Emperor.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Qianlong_Emperor.jpg"
+        }
+      },
+      {
+        title: "Systems That Pay: Tribute, Tax Farming and New Taxes",
+        bullets: [
+          "Armies, salaries and palaces, and the guns of Topic 3.1, cost enormous sums. Rulers needed **revenue** and raised it through **tribute**, **tax farming**, and new ways of collecting taxes.",
+          "The Ottomans used **tax farming**: the state sold the right to collect a tax to a bidder, who paid first and kept the extra. It grew in the late 1500s, when the sultans needed cash fast for salaried soldiers. The Mughals relied on **zamindars**, local landholders who knew the fields, to collect the land tax and keep a share.",
+          "The Mexica kept painted **tribute lists** of what each conquered province owed the capital, such as cotton cloaks, cacao and feathers. Ming China combined many taxes and labor duties into payments in **silver**. The three jobs held each other up: money paid the people who served, the people who served collected the money, and symbols made serving and paying feel right."
+        ],
+        image: {
+          title: "The Taj Mahal, Agra (modern photograph)",
+          caption: "Photographed in 2004. Shah Jahan's mausoleum for his wife took enormous revenue to build: the money job and the symbols job in one building.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Taj_Mahal_in_March_2004.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Taj_Mahal_in_March_2004.jpg"
         }
@@ -178,7 +178,7 @@ window.BEHISTORICAL_LESSON = {
 
   deepReading: {
     title: 'Who Collects, and Who Serves',
-    desc: 'A textbook-depth companion on the elites built to have no alternative, the tax systems that actually delivered the money, the buildings that justified taking it, and the bargains with local power that made empire affordable and then fragile. Optional.',
+    desc: 'A textbook-depth companion to the three jobs: the servants built to have no alternative, the symbols and buildings that made rule look rightful, the tax systems that delivered the money, and the bargains with local power that made empire affordable and then fragile. Optional.',
     url: 'deep-reading-topic-3-2-empires-administration.html'
   },
 
@@ -208,13 +208,19 @@ window.BEHISTORICAL_LESSON = {
   },
 
   primarySource: {
-    title: "Primary Source: Akbar and the Mansabdar System (adapted from the Ain-i-Akbari, c. 1590)",
-    intro: "The Ain-i-Akbari ('Institutes of Akbar') was a detailed administrative record compiled by Akbar's court historian Abu'l-Fazl ibn Mubarak. This adapted passage describes how Akbar organized his imperial administration through the mansabdar system of ranked officials.",
-    text: "His Majesty has established ranks for the commanders of his armies and the governors of his provinces, numbering from ten to ten thousand. Each commander holds a rank (mansab) that determines the number of horsemen he must maintain and present for inspection. In return, he receives from the imperial treasury the right to collect revenue from an assigned territory (jagir) sufficient to support his establishment. No rank is inherited by a son, nor does any territory belong permanently to a commander, all assignments return to the emperor upon death or reassignment. In this way His Majesty ensures that the wealth of the empire flows to those who serve him faithfully, and that no commander may accumulate power sufficient to challenge imperial authority.",
+    title: "Primary Source: Two Visitors Describe How Rulers Held Power (1520s and 1550s)",
+    intro: "Two outsiders described rulers in this unit. Leo Africanus, a traveler born in Granada and raised in Morocco, visited Timbuktu in the Songhai Empire early in the 1500s; his description of Africa was finished in 1526. Ogier Ghiselin de Busbecq was the Habsburg ambassador to Süleyman the Magnificent and described the Ottoman court in letters from the 1550s. The College Board suggests this pair for comparing how rulers legitimized and consolidated power.",
+    attribution: "Leo Africanus, The History and Description of Africa, translated by John Pory (1600), edited by Robert Brown (Hakluyt Society, 1896), vol. 3, pp. 824 to 825; Ogier Ghiselin de Busbecq, The Life and Letters of Ogier Ghiselin de Busbecq, translated by C. T. Forster and F. H. B. Daniell (London, 1881), vol. 1, p. 154",
+    text: "<strong>Leo Africanus, on the king of Timbuktu (Songhai):</strong> The rich king of Tombuto hath many plates and scepters of gold, some whereof weigh 1300 pounds: and he keeps a magnificent and well furnished court. [...] Whosoever will speak unto this king must first fall down before his feet, and then taking up earth must sprinkle it upon his own head and shoulders [...]. Here are great store of doctors, judges, priests, and other learned men, that are bountifully maintained at the king's cost and charges.<br><br><strong>Busbecq, on the Ottoman sultan:</strong> In making his appointments the Sultan pays no regard to any pretensions on the score of wealth or rank, nor does he take into consideration recommendations or popularity; he considers each case on its own merits, and examines carefully into the character, ability, and disposition of the man whose promotion is in question. It is by merit that men rise in the service, a system which ensures that posts should only be assigned to the competent. [...] Those who receive the highest offices from the Sultan are for the most part the sons of shepherds or herdsmen, and so far from being ashamed of their parentage, they actually glory in it.",
+    sourceNote: "Both passages are quoted from the printed English translations; [...] marks where words were left out, and the spelling of the 1600 translation is modernized (\"hath\" means \"has\"). Leo's king of Tombuto was the Songhai ruler of his day, Askia Muhammad, whose capital was Gao. The 1300 pounds of gold is Leo's claim, not a measured fact. Busbecq praised the Ottoman system partly to criticize Europe, where, he wrote, birth decided everything; the \"sons of shepherds\" were probably men raised through the devshirme, though he does not use that word.",
+    sourceLinks: [
+      { label: "Leo Africanus, Pory translation, 1896 edition (archive.org)", url: "https://archive.org/details/historyanddescr02porygoog" },
+      { label: "Busbecq, Forster and Daniell translation, 1881 (archive.org)", url: "https://archive.org/details/lifelettbusbecq01forsuoft" }
+    ],
     questions: [
-      "According to this source, how did the mansabdar system prevent the rise of independent noble power that might threaten the emperor?",
-      "What does the non-hereditary nature of jagir assignments reveal about Akbar's strategy for maintaining imperial control?",
-      "What might this source leave out about the actual experience of mansabdars, particularly those of Hindu Rajput background, within the Mughal system?"
+      "Which job does each passage show a ruler doing: finding people who serve him, or making his power look rightful? Use one detail from each passage.",
+      "Leo describes scholars and judges paid by the king, and Busbecq describes officials who rise by merit. Explain one way these two methods were alike and one way they were different.",
+      "Both writers were outsiders. How might Busbecq's purpose, praising the Ottomans to criticize his own Europe, affect how much you trust his description?"
     ]
   }
 

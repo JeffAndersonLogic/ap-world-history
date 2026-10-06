@@ -16,15 +16,22 @@
  * in this chapter is an answer to one of two questions. Who collects, and what
  * stops them keeping it? Who serves, and what stops them becoming a rival?
  *
+ * Section order follows the CED's three Key Concepts in the CED's own order
+ * (KC-4.3.I.C, I.A, I.D): people who serve (02), symbols that justify (03),
+ * systems that pay (04). The local-elites bargain (05) and where the machinery
+ * cracked (06) are kept at the end as depth. Jeff's decision 9 on the approved
+ * story, 2026-10-06 (docs/TOPIC-3-2-STORY-DRAFT.md), which also added the
+ * salaried samurai to 02 and Songhai, divine right and the Qing portraits to 03.
+ *
  * Three things carried deliberately:
  *
- *   1. Tax farming is not a curiosity, it is the central fiscal fact of the
- *      period, and its incentive structure explains more about the eighteenth
- *      century than any ruler's personality does.
- *   2. Monumental architecture is not decoration in this topic. A mosque
+ *   1. Monumental architecture is not decoration in this topic. A mosque
  *      complex with a soup kitchen, a hospital and a school is a welfare state
  *      with a dome on it, and saying so is the difference between describing
  *      the Suleymaniye and explaining it.
+ *   2. Tax farming is not a curiosity, it is the central fiscal fact of the
+ *      period, and its incentive structure explains more about the eighteenth
+ *      century than any ruler's personality does.
  *   3. Every one of these empires ruled through local elites it could not
  *      replace, and the recurring trade-off, cheap rule now against weak
  *      control later, is the single most transferable idea in Unit 3.
@@ -39,18 +46,18 @@ module.exports = {
   docTitle: 'BeHistorical | Deep Reading | Topic 3.2: Who Collects, and Who Serves',
   eyebrow: 'Topic 3.2 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Who Collects, and Who <em>Serves</em>',
-  deck: `An empire is a machine for turning the harvest of villages nobody at the capital will ever visit into armies, palaces and salaries. This chapter takes the machine apart: the elites who were built to have no alternative, the tax systems that actually delivered the money, the buildings that justified taking it, and the bargains with local power that made all of it affordable and, eventually, fragile.`,
-  meta: ['Six sections', 'Elites, revenue, legitimacy, bargains', 'Read alongside the First & 10'],
+  deck: `An empire is a machine for turning the harvest of villages nobody at the capital will ever visit into armies, palaces and salaries. This chapter takes the machine apart: the elites who were built to have no alternative, the religious claims, pictures and buildings that justified the whole arrangement, the tax systems that actually delivered the money, and the bargains with local power that made all of it affordable and, eventually, fragile.`,
+  meta: ['Six sections', 'Elites, legitimacy, revenue, bargains', 'Read alongside the First & 10'],
   footerNote: 'Topic 3.2 &nbsp;·&nbsp; Who Collects, and Who Serves &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',
-    intro: `Two questions run through the whole chapter: who serves, and who collects. Sections 02 and 05 answer the first from opposite ends, imported servants and local notables; sections 03 and 06 answer the second and then show what went wrong with it. Section 04 is why anyone put up with any of it.`,
+    intro: `Two questions run through the whole chapter: who serves, and who collects. Sections 02 to 04 follow the three jobs every ruler in this unit had to do, in order: find people who would serve, convince everyone else he deserved to rule, and collect the money to pay for both. Sections 02 and 05 answer the first question from opposite ends, imported servants and local notables; sections 04 and 06 answer the second and then show what went wrong with it. Section 03 is why anyone put up with any of it.`,
     steps: [
       `<b>01 The problem:</b> what governing at this scale actually required.`,
-      `<b>02 Servants with nowhere else to go:</b> devshirme, ghulams, mansabdars, banners, service nobility.`,
-      `<b>03 Getting paid:</b> timar, tax farming, zabt, the single whip, the soul tax.`,
-      `<b>04 Legitimacy you can stand inside:</b> mosque complexes, squares, mausolea, palaces.`,
+      `<b>02 Servants with nowhere else to go:</b> devshirme, ghulams, mansabdars, banners, service nobility, salaried samurai.`,
+      `<b>03 Legitimacy you can stand inside:</b> divine right, Songhai Islam, Qing portraits, mosque complexes, squares, mausolea, palaces.`,
+      `<b>04 Getting paid:</b> timar, tax farming, zabt, the single whip, the soul tax.`,
       `<b>05 The bargain with local elites:</b> zamindars, notables, gentry, and what it cost.`,
       `<b>06 Where the machinery cracked:</b> incentives, entrenchment, and the fiscal squeeze.`,
       `<b>Then the closing section</b>, which turns all of it into comparison sentences you can write.`
@@ -105,8 +112,8 @@ module.exports = {
       accent: 'rust',
       name: 'Servants With Nowhere Else to Go',
       navLabel: 'The service elites',
-      dates: 'c. 1450 to 1750 &nbsp;·&nbsp; Devshirme, ghulam, mansabdar, banner, rank',
-      thesis: `Five empires, five ways rulers tried to bind military and administrative elites to the throne. The variations are dictated by what each had available, and the failure mode is identical in every case.`,
+      dates: 'c. 1450 to 1750 &nbsp;·&nbsp; Devshirme, ghulam, mansabdar, banner, rank, samurai',
+      thesis: `Five empires, five ways rulers tried to bind military and administrative elites to the throne. The variations are dictated by what each had available, and the failure mode is identical in every case. Japan's salaried samurai, at the end, show the same job done with a different tool.`,
       parts: [
         {
           heading: 'The five systems',
@@ -129,6 +136,12 @@ module.exports = {
             { p: `Do not flatten these into one design. The Ottoman and Safavid corps and the Mughal mansab were built to keep standing from descending, the Qing banner was hereditary by intention, and the Russian nobility was hereditary before Peter tied its advancement to service. What they share is the direction they drifted: elites created or reorganized to serve the center developed corporate and familial interests of their own. Janissary status became effectively hereditary and the corps became a political actor able to depose sultans. Mansabs were not inheritable in principle, and in practice great houses reproduced their position across generations. Banner households became a hereditary stipendiary class with declining military value. Russian service nobility became, by the later eighteenth century, a nobility exempted from compulsory service altogether.` },
             { p: `The reason is worth stating because it is general. A man who has power wants his son to have it, and a ruler who needs that man's cooperation this year is poorly placed to refuse. Institutional designs that depend on permanently denying inheritance require constant enforcement by a center that is strong enough not to need the concession, and any period of weakness converts a service elite into an aristocracy. That is not a story about decadence; it is what happens to a rule that nobody has an interest in enforcing.` }
           ]
+        },
+        {
+          heading: 'Same job, different tool: salaried samurai',
+          blocks: [
+            { p: `Japan was not a land-based empire, but its rulers faced the same danger the devshirme was built against. For more than a century, in the Sengoku period, lords with their own lands and armies had fought each other in civil war. Starting in the late <span class="num">1500</span>s, with Hideyoshi's sword hunt of <span class="num">1588</span> and the separation of warriors from farmers, and then under the Tokugawa shoguns from <span class="num">1603</span>, most samurai were moved off their lands into their lords' castle towns and paid stipends counted in rice. A <span class="kt">salaried samurai</span> lived on his lord's pay, not on land he controlled. Set that beside the devshirme: same job, different tool. The Ottomans built a new class out of outsiders; Japan remade an old warrior class by cutting it off from the land.` }
+          ]
         }
       ],
       useThis: {
@@ -141,14 +154,72 @@ module.exports = {
         ['Mansab', 'The Mughal numerical rank fixing an officer&rsquo;s pay and cavalry obligation, granted by the emperor and not inherited.'],
         ['Banner', 'A hereditary Qing military and social unit of Manchu, Mongol or allied Chinese households, garrisoned and stipendiary.'],
         ['Table of Ranks', 'Peter I&rsquo;s 1722 grading of military, civil and court offices, which tied advancement and access to noble status to state service while leaving the hereditary nobility in place.'],
-        ['Praetorian problem', 'The tendency of a guard created to protect a ruler to become a power that makes and unmakes rulers, as the janissaries did.']
+        ['Praetorian problem', 'The tendency of a guard created to protect a ruler to become a power that makes and unmakes rulers, as the janissaries did.'],
+        ['Salaried samurai', 'A Japanese warrior moved off his land into his lord&rsquo;s castle town and paid a stipend counted in rice, so that he lived on his lord&rsquo;s pay rather than on land he controlled.']
       ]
     },
 
     // ── 03 ────────────────────────────────────────────────────────────────────
     {
-      id: 'revenue',
+      id: 'legitimacy',
       num: '03',
+      accent: 'oxide',
+      name: 'Legitimacy You Can Stand Inside',
+      navLabel: 'Legitimacy in stone',
+      dates: 'c. 1490 to 1750 &nbsp;·&nbsp; Faith, portraits, domes, squares, tombs, palaces',
+      thesis: `Rulers made their power look rightful with religious ideas, pictures and buildings, and they spent astonishing sums on the buildings because a building is an argument that works on people who cannot read, will never meet the ruler, and use it every week.`,
+      parts: [
+        {
+          heading: 'The mosque complex as a welfare state',
+          blocks: [
+            { p: `The <span class="kt">Suleymaniye</span> in Istanbul, built for Suleiman by the architect Sinan in the <span class="num">1550</span>s, is usually taught as a beautiful mosque. It is more useful understood as an institution. The complex included the mosque itself and, around it, a hospital, a public kitchen feeding the poor, schools, a caravanserai, baths and a medical college, funded in perpetuity by an endowment of rents from shops and villages.` },
+            { p: `Consider what that does politically. It provides services the state would otherwise have to organize, in the ruler's name, permanently, without further expenditure from the treasury. It employs teachers, doctors and cooks who depend on the endowment. It gives ordinary people a daily, tangible reason to associate the dynasty with charity rather than with taxation. And it does all of this in a building that dominates the skyline of the capital. Legitimacy purchased once and delivered for centuries is far better value than a campaign, which is why every empire in this unit built like this.` },
+            { p: `The same logic explains Isfahan's great square under Abbas I, framed by a royal mosque, a court mosque, the palace gate and the entrance to the bazaar, so that religion, dynasty, government and commerce faced each other across a single space that the public used. And it explains the Taj Mahal, a mausoleum for an emperor's wife that also announces, in white marble at enormous cost and with an entire garden complex around it, that the dynasty's dead are permanent. The Mughals paired tombs like it with great mosques in their capitals, so that the same skyline said the dynasty was faithful to Islam and here to stay.` }
+          ]
+        },
+        {
+          heading: 'Religious ideas and the painted ruler',
+          blocks: [
+            { p: `<b>A claim from God, by birth.</b> In France, Louis XIV claimed <span class="kt">divine right</span>: God had chosen the king, so disobeying the king meant disobeying God. Louis's claim came with his birth.` },
+            { p: `<b>A claim from God, earned.</b> Askia Muhammad had a harder problem. He took the Songhai throne by force in <span class="num">1493</span>, so he could not claim it by birth. In the <span class="num">1490</span>s he made the pilgrimage to Mecca and came home with the title of <span class="kt">caliph</span>, a leader of Muslims, and at home he supported Islamic scholars and judges. Promoting Islam made Askia the protector of the faith, which gave his subjects a reason to accept a ruler who had seized power. Divine right and Songhai's promotion of Islam both tied the ruler to God; the difference is that Louis inherited his claim and Askia had to build his.` },
+            { p: `<b>The painted emperor.</b> The Qing rulers were Manchus governing a mostly Han Chinese empire. Their official <span class="kt">imperial portraits</span> showed them in the robes and poses of a traditional Chinese emperor. The Qianlong Emperor was also painted as the Buddhist bodhisattva Manjushri for his Tibetan and Mongol subjects. Same ruler, different picture, depending on who needed convincing.` }
+          ]
+        },
+        {
+          heading: 'Ritual, distance and visibility',
+          blocks: [
+            { p: `Buildings work with ceremony, and each empire calibrated the ruler's visibility differently, which is itself worth comparing. Ottoman sultans after the fifteenth century became progressively less visible, secluded within Topkapi behind layers of court protocol, which made access to them a scarce resource distributed by the household. Mughal emperors did the opposite: the ruler appeared daily at a palace window to be seen by the public, a practice that made the emperor's continued existence and health a matter of public knowledge and turned attendance into an act of loyalty.` },
+            { p: `The Qing emperors toured. Kangxi and Qianlong both made repeated grand progresses through the southern provinces, the wealthy and culturally self-confident heartland of Chinese elite society, and had the tours documented in enormous painted scrolls. A Manchu ruler traveling in state through Chinese cities, patronizing Chinese scholarship, sacrificing at Chinese sites and being painted doing so, is making an argument that his rule is legitimate in Chinese terms.` },
+            { p: `And in France, Louis XIV moved his court to Versailles in <span class="num">1682</span> and drew the great nobles to live at court, where their status depended on closeness to the king's person and keeping up appearances there was expensive. As a boy Louis had lived through the <span class="kt">Fronde</span>, begun in <span class="num">1648</span>, when great nobles rose against the crown. At Versailles the great nobles lived at court under the king's eye, away from their regional power bases. That is a building used as a political trap: the aristocracy that had rebelled within living memory was housed, honored, indebted and neutralized in one place. Whenever a prompt asks how rulers used architecture to legitimize authority, Versailles is worth citing not for its beauty but for what it did to the people inside it.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Do not treat these as vanity projects with a legitimizing side effect, and do not treat "divine right" as a synonym for legitimacy generally. Divine right is a specific European doctrine holding that a monarch's authority comes directly from God and is not accountable to subjects or clergy. An Ottoman sultan claimed to be caliph and protector of the holy cities; a Mughal emperor used Persianate and Islamic imagery of sacred kingship while presiding over a multi-faith court; a Qing emperor held the Mandate of Heaven and simultaneously patronized Tibetan Buddhism to legitimize rule over Mongols and Tibetans. Naming the specific claim each ruler made, rather than applying one label to all of them, is the difference between a comparison and a generalization.`
+            } }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `The endowed complex. <em>The mechanism is that a mosque built with a hospital, kitchen, school and baths, funded in perpetuity by an endowment of rents, delivers public services in the dynasty's name forever without further treasury spending, employs a body of people who depend on it, and gives ordinary subjects a weekly reason to associate the ruler with charity rather than with taxation.</em>`,
+        limit: `Legitimacy in stone is expensive, immobile and slow. It works on the population near it and does nothing for a distant frontier province, which is why it accompanies rather than replaces the elites and revenue systems in sections 02 and 04.`,
+        comparison: `Against <em>Versailles</em>: the Ottoman and Safavid complexes bought public consent by giving something to the people who used them, while Versailles bought aristocratic obedience by making the nobility live where the king could watch them. Same instrument, two entirely different targets.`
+      },
+      terms: [
+        ['Suleymaniye', 'Sinan&rsquo;s mosque complex for Suleiman, with hospital, kitchen, schools and baths endowed in perpetuity.'],
+        ['Waqf endowment', 'The permanent charitable trust of rents that funded such complexes, delivering services in a ruler&rsquo;s name without recurring treasury cost.'],
+        ['Naqsh-e Jahan', 'Isfahan&rsquo;s planned royal square, framed by mosque, palace and bazaar, staging religion, dynasty, government and commerce in one space.'],
+        ['Divine right', 'The specific European claim that a monarch&rsquo;s authority comes directly from God and is not accountable to subjects or clergy.'],
+        ['Imperial tour', 'The Qing progresses through the southern provinces, documented in painted scrolls, arguing for Manchu legitimacy in Chinese terms.'],
+        ['Caliph', 'A leader of Muslims; the title Askia Muhammad brought home from his pilgrimage to Mecca, giving a ruler who had seized the Songhai throne a religious claim to it.'],
+        ['Imperial portraits', 'Official paintings of the Qing emperors in the robes and poses of a traditional Chinese emperor; the Qianlong Emperor was also painted as the bodhisattva Manjushri for Tibetan and Mongol subjects.'],
+        ['Fronde', 'The rising of great French nobles against the crown, begun in 1648, which Louis XIV lived through as a boy.']
+      ]
+    },
+
+    // ── 04 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'revenue',
+      num: '04',
       accent: 'iron',
       name: 'Getting Paid',
       navLabel: 'Getting paid',
@@ -196,52 +267,6 @@ module.exports = {
         ['Single whip reform', 'The late Ming consolidation of taxes and labor obligations into payments made in silver.'],
         ['Poll tax', 'Peter I&rsquo;s per-male-peasant tax funding the standing army, which deepened serfdom by making landlords responsible for collection.'],
         ['Ayan', 'The Ottoman provincial notables who emerged from tax farming as a durable local power in the eighteenth century.']
-      ]
-    },
-
-    // ── 04 ────────────────────────────────────────────────────────────────────
-    {
-      id: 'legitimacy',
-      num: '04',
-      accent: 'oxide',
-      name: 'Legitimacy You Can Stand Inside',
-      navLabel: 'Legitimacy in stone',
-      dates: 'c. 1550 to 1700 &nbsp;·&nbsp; Domes, squares, tombs, palaces',
-      thesis: `Rulers spent astonishing sums on buildings because a building is an argument that works on people who cannot read, will never meet the ruler, and use it every week.`,
-      parts: [
-        {
-          heading: 'The mosque complex as a welfare state',
-          blocks: [
-            { p: `The <span class="kt">Suleymaniye</span> in Istanbul, built for Suleiman by the architect Sinan in the <span class="num">1550</span>s, is usually taught as a beautiful mosque. It is more useful understood as an institution. The complex included the mosque itself and, around it, a hospital, a public kitchen feeding the poor, schools, a caravanserai, baths and a medical college, funded in perpetuity by an endowment of rents from shops and villages.` },
-            { p: `Consider what that does politically. It provides services the state would otherwise have to organize, in the ruler's name, permanently, without further expenditure from the treasury. It employs teachers, doctors and cooks who depend on the endowment. It gives ordinary people a daily, tangible reason to associate the dynasty with charity rather than with taxation. And it does all of this in a building that dominates the skyline of the capital. Legitimacy purchased once and delivered for centuries is far better value than a campaign, which is why every empire in this unit built like this.` },
-            { p: `The same logic explains Isfahan's great square under Abbas I, framed by a royal mosque, a court mosque, the palace gate and the entrance to the bazaar, so that religion, dynasty, government and commerce faced each other across a single space that the public used. And it explains the Taj Mahal, a mausoleum for an emperor's wife that also announces, in white marble at enormous cost and with an entire garden complex around it, that the dynasty's dead are permanent.` }
-          ]
-        },
-        {
-          heading: 'Ritual, distance and visibility',
-          blocks: [
-            { p: `Buildings work with ceremony, and each empire calibrated the ruler's visibility differently, which is itself worth comparing. Ottoman sultans after the fifteenth century became progressively less visible, secluded within Topkapi behind layers of court protocol, which made access to them a scarce resource distributed by the household. Mughal emperors did the opposite: the ruler appeared daily at a palace window to be seen by the public, a practice that made the emperor's continued existence and health a matter of public knowledge and turned attendance into an act of loyalty.` },
-            { p: `The Qing emperors toured. Kangxi and Qianlong both made repeated grand progresses through the southern provinces, the wealthy and culturally self-confident heartland of Chinese elite society, and had the tours documented in enormous painted scrolls. A Manchu ruler traveling in state through Chinese cities, patronizing Chinese scholarship, sacrificing at Chinese sites and being painted doing so, is making an argument that his rule is legitimate in Chinese terms.` },
-            { p: `And in France, Louis XIV moved his court to Versailles and required the high nobility to attend it, where their status depended on proximity to the king's person and their fortunes were consumed by the cost of living there. That is a building used as a political trap: the aristocracy that had rebelled within living memory was housed, honored, indebted and neutralized in one place. Whenever a prompt asks how rulers used architecture to legitimize authority, Versailles is worth citing not for its beauty but for what it did to the people inside it.` },
-            { note: {
-              kind: 'misconception',
-              label: 'Common mistake to avoid',
-              html: `Do not treat these as vanity projects with a legitimizing side effect, and do not treat "divine right" as a synonym for legitimacy generally. Divine right is a specific European doctrine holding that a monarch's authority comes directly from God and is not accountable to subjects or clergy. An Ottoman sultan claimed to be caliph and protector of the holy cities; a Mughal emperor used Persianate and Islamic imagery of sacred kingship while presiding over a multi-faith court; a Qing emperor held the Mandate of Heaven and simultaneously patronized Tibetan Buddhism to legitimize rule over Mongols and Tibetans. Naming the specific claim each ruler made, rather than applying one label to all of them, is the difference between a comparison and a generalization.`
-            } }
-          ]
-        }
-      ],
-      useThis: {
-        tool: `The endowed complex. <em>The mechanism is that a mosque built with a hospital, kitchen, school and baths, funded in perpetuity by an endowment of rents, delivers public services in the dynasty's name forever without further treasury spending, employs a body of people who depend on it, and gives ordinary subjects a weekly reason to associate the ruler with charity rather than with taxation.</em>`,
-        limit: `Legitimacy in stone is expensive, immobile and slow. It works on the population near it and does nothing for a distant frontier province, which is why it accompanies rather than replaces the elites and revenue systems in sections 02 and 03.`,
-        comparison: `Against <em>Versailles</em>: the Ottoman and Safavid complexes bought public consent by giving something to the people who used them, while Versailles bought aristocratic obedience by making the nobility live where the king could watch them. Same instrument, two entirely different targets.`
-      },
-      terms: [
-        ['Suleymaniye', 'Sinan&rsquo;s mosque complex for Suleiman, with hospital, kitchen, schools and baths endowed in perpetuity.'],
-        ['Waqf endowment', 'The permanent charitable trust of rents that funded such complexes, delivering services in a ruler&rsquo;s name without recurring treasury cost.'],
-        ['Naqsh-e Jahan', 'Isfahan&rsquo;s planned royal square, framed by mosque, palace and bazaar, staging religion, dynasty, government and commerce in one space.'],
-        ['Divine right', 'The specific European claim that a monarch&rsquo;s authority comes directly from God and is not accountable to subjects or clergy.'],
-        ['Imperial tour', 'The Qing progresses through the southern provinces, documented in painted scrolls, arguing for Manchu legitimacy in Chinese terms.']
       ]
     },
 
@@ -294,13 +319,13 @@ module.exports = {
       name: 'Where the Machinery Cracked',
       navLabel: 'Where it cracked',
       dates: 'c. 1600 to 1750 &nbsp;·&nbsp; Incentives, entrenchment, squeeze',
-      thesis: `The eighteenth-century troubles of these empires were not moral failures. They were the predictable consequences of the arrangements in sections 02, 03 and 05, arriving on schedule.`,
+      thesis: `The eighteenth-century troubles of these empires were not moral failures. They were the predictable consequences of the arrangements in sections 02, 04 and 05, arriving on schedule.`,
       parts: [
         {
           heading: 'Four cracks, each traceable to a design choice',
           blocks: [
             { p: `<b>Service elites became hereditary interests.</b> Section 02 explained why. The janissaries are the sharpest case: a corps designed to have no attachments became a hereditary body with commercial interests, resistant to military reform precisely because reform threatened its position, and capable of deposing sultans who pushed too hard.` },
-            { p: `<b>Tax farming hollowed out the fiscal relationship.</b> Section 03 explained the incentive. Add the lifetime and eventually inheritable farms and the state has sold its own revenue stream in advance, so that in a crisis it has nothing left to mortgage. Meanwhile the holders have become a provincial elite with armed retainers.` },
+            { p: `<b>Tax farming hollowed out the fiscal relationship.</b> Section 04 explained the incentive. Add the lifetime and eventually inheritable farms and the state has sold its own revenue stream in advance, so that in a crisis it has nothing left to mortgage. Meanwhile the holders have become a provincial elite with armed retainers.` },
             { p: `<b>Assignments outran revenue.</b> The Mughal case in the Topic 3.1 chapter: more ranks awarded than jagirs could pay, officers squeezing cultivators to make up the shortfall, and the loyalty the system was designed to buy becoming unaffordable at exactly the moment when war made it essential.` },
             { p: `<b>External shocks met these weaknesses.</b> The seventeenth century brought a run of them across Eurasia: a colder climate phase with poor harvests, disrupted silver flows, epidemic disease, and expensive wars. States with sound finances survived such a decade; states that had already sold their future revenue did not.` },
             { note: {
@@ -344,14 +369,14 @@ module.exports = {
         body: `The Ottomans levied Christian boys through the devshirme and made them kul of the sultan's household, with no lineage, land or clients; Abbas I built ghulam regiments from Caucasian converts for the same reason. Akbar took the warrior aristocracy he already had, Turkish, Persian, Afghan, Indian Muslim and Rajput, and ranked every member of it on a non-hereditary mansab that fixed his pay and his cavalry obligation. The difference exists because of what each state could get away with: the Ottomans held a subject Christian population from which children could be levied, while a Mughal dynasty ruling a Hindu majority needed that majority's warrior elite inside the system rather than outside it.`
       },
       {
-        category: 'Revenue',
-        title: 'Tax farming and zabt are opposite bets on the same problem',
-        body: `Ottoman iltizam, and from 1695 lifetime malikane farms, sold the right to collect a district's taxes for cash up front, requiring no collectors and no supervision, and leaving the holder to extract whatever he could above his bid. Akbar's zabt measured cultivated land, classified soils, assessed average yields and prices over years, and fixed a predictable cash demand. The difference exists because the two states were buying different things: the Ottomans bought immediate liquidity for war and paid for it with extraction and, eventually, a provincial notable class, while the Mughals bought administrative capacity and paid for it with the cost of surveyors, records and the officials to keep them.`
-      },
-      {
         category: 'Legitimacy',
         title: 'A mosque complex and a palace are both political instruments aimed at different people',
         body: `The Suleymaniye combined a mosque with a hospital, a public kitchen, schools and baths, endowed in perpetuity, so that the dynasty delivered visible charity to ordinary subjects forever at no recurring cost to the treasury. Versailles concentrated the French high nobility around the king's person, where status depended on proximity and fortunes were consumed by attendance. The difference exists because the two rulers faced different threats: an Ottoman sultan needed the consent of a vast and diverse subject population, while Louis XIV needed to neutralize an aristocracy that had rebelled within living memory.`
+      },
+      {
+        category: 'Revenue',
+        title: 'Tax farming and zabt are opposite bets on the same problem',
+        body: `Ottoman iltizam, and from 1695 lifetime malikane farms, sold the right to collect a district's taxes for cash up front, requiring no collectors and no supervision, and leaving the holder to extract whatever he could above his bid. Akbar's zabt measured cultivated land, classified soils, assessed average yields and prices over years, and fixed a predictable cash demand. The difference exists because the two states were buying different things: the Ottomans bought immediate liquidity for war and paid for it with extraction and, eventually, a provincial notable class, while the Mughals bought administrative capacity and paid for it with the cost of surveyors, records and the officials to keep them.`
       },
       {
         category: 'The general form',

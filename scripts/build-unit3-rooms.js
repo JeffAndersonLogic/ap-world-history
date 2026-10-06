@@ -80,7 +80,7 @@ const scenarios = [
     lessonUrl: '../../unit-3/lesson-3-2-empires-administration.html',
     alignment: {
       theme: 'Governance (GOV)',
-      objective: 'Explain how rulers employed economic strategies to consolidate and maintain power from 1450 to 1750.',
+      objective: 'Explain how rulers used a variety of methods to legitimize and consolidate their power in land-based empires from 1450 to 1750.',
       skill: 'Comparison and causation',
       keyConcepts: ['KC-4.3.I.C', 'KC-4.3.I.A', 'KC-4.3.I.D']
     },

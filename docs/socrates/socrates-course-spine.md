@@ -392,15 +392,15 @@ Strong answer checklist: Name at least two land-based empires and describe speci
 - KC-4.3.I.A (Governance): Rulers continued to use religious ideas, art, and monumental architecture to legitimize their rule. Illustrative examples: Mexica practice of human sacrifice, European notions of divine right, Songhai promotion of Islam, Qing imperial portraits, Incan sun temple of Cuzco, Mughal mausolea and mosques, European palaces, such as Versailles.
 - KC-4.3.I.D (Governance): Rulers used tribute collection, tax farming, and innovative tax-collection systems to generate revenue in order to forward state power and expansion. Illustrative examples: Mughal zamindar tax collection, Ottoman tax farming, Mexica tribute lists, Ming practice of collecting taxes in hard currency.
 
-**Expected evidence terms.** devshirme, mansabdar, jagir, timar, tax farming, tribute, civil service examination, Banner system, janissary, grand vizier, divine right, Songhai promotion of Islam, Qing imperial portraits, Mughal mausolea, Versailles, zamindar, Ottoman tax farming, Mexica tribute, Ming hard-currency taxes, legitimacy, revenue.
+**Expected evidence terms.** mansabdar, mansab, jagir, devshirme, Janissaries, salaried samurai, grand vizier, bureaucratic elites, military professionals, centralized control, divine right, Songhai promotion of Islam, Qing imperial portraits, Mughal mausolea, Versailles, zamindar, Ottoman tax farming, Mexica tribute, Ming taxes in silver, legitimacy, revenue.
 
 **AP skill focus.** Comparison practice.
 
-**Checkpoint 1 prompt.** Explain how land-based empires used bureaucracies, taxation systems, or military recruitment to consolidate power over diverse populations. Use at least two specific examples.
-Strong answer checklist: Name at least two specific administrative or military systems. Explain how each system extracted resources or maintained loyalty. Connect your examples to the broader challenge of governing diverse, large territories.
+**Checkpoint 1 prompt.** Compare the Mughal mansabdar system with EITHER the Ottoman devshirme OR Japan's salaried samurai. Explain one way they were alike and one way they were different in how they gave a ruler officials or soldiers who depended on him, and explain why they were different.
+Strong answer checklist: Name both systems and the empire each belonged to. Give one similarity and one difference in how each made officials or soldiers depend on the ruler. Explain why they differed by describing each ruler's situation.
 
-**Checkpoint 2 prompt.** Explain TWO different methods rulers used to legitimize and consolidate power: (1) one example involving religious ideas, art, or monumental architecture, and (2) one example involving tribute, tax farming, or an innovative tax-collection system. Explain how each method strengthened the ruler or state.
-Strong answer checklist: Use one specific religious, artistic, or architectural example and explain how it legitimized rule. Use one specific revenue system and explain how it generated resources for state power or expansion. Connect both methods to the larger problem of consolidating authority across a large empire.
+**Checkpoint 2 prompt.** Explain TWO methods rulers used to legitimize and consolidate their power: (1) one example of religious ideas, art, or monumental architecture that made a ruler's power look rightful, and (2) one system for collecting tribute or taxes that paid for state power. For each one, describe the situation the ruler was in and explain how the method strengthened him.
+Strong answer checklist: Name one religious idea, work of art, or building and the ruler who used it. Name one tribute or tax system and the empire that used it. For each, describe the ruler's situation and explain how the method strengthened his power.
 
 ## 3.3 Empires: Belief Systems
 

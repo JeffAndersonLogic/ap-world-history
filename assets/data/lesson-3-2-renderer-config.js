@@ -87,91 +87,92 @@
   };
 
   lesson.beSurreal = {
-    title: 'BeSurreal: You Are a Mansabdar in Akbar\'s Court, Delhi, c. 1580',
-    desc: 'You hold a rank of 1,000 in the Mughal imperial service, commanding 1,000 cavalry soldiers in exchange for revenue rights over your assigned jagir.',
-    intro: 'You are a Rajput Hindu nobleman who has accepted a mansabdar rank from the Mughal Emperor Akbar. You hold a rank of 1,000 (mansab), which means you must maintain and present 1,000 cavalry soldiers when called upon. In exchange, you have been assigned a jagir, the right to collect revenue from a designated territory in Rajasthan. You speak Persian at court, maintain your Hindu religious practices in private, and serve alongside Muslim, Hindu, and Central Asian commanders in a single imperial army.',
-    detail: 'Your situation is neither prisoner nor free lord. You accepted the rank because refusing would mean losing your kingdom, but accepting means your lands are technically imperial grants, revocable at the emperor\'s pleasure. Your son will not automatically inherit your rank or your jagir. You are part of a system designed to make you depend on the emperor rather than on your own inherited wealth. Yet within that system, you have real power, real status, and real revenue. Akbar has treated your religious practices with respect, he has even abolished the jizya tax on non-Muslims, and you have come to see the Mughal system as compatible with your identity, even if you did not choose it freely.',
-    prompt: 'Was Akbar\'s incorporation of Rajput nobles into the mansabdar system a sign of imperial strength or imperial weakness? Use evidence from the scenario to support your argument.'
+    title: 'BeSurreal: You Are a Noble Called to Versailles, c. 1690',
+    desc: 'You are a French noble with an estate far from Paris. The king expects you at his palace at Versailles, and so does everyone who matters.',
+    intro: 'You are a French noble. Your family owns land and a château far from Paris, where local people have known your name for generations. As a boy, your grandfather heard stories of the Fronde, the years when great nobles rose up against the crown. Now King Louis XIV has moved his court to his enormous palace at Versailles, and the great nobles of France spend their days there: at the king\'s ceremonies, at his table, in the long halls where everyone watches who the king speaks to.',
+    detail: 'At Versailles you have no army and no say over your own lands while you are away. What you have is a chance at the king\'s favor: a post, a pension, an honor for your family. Every day the king\'s routine is a ceremony, and nobles compete for the right to be close to him. Back home, your estate is run by others while you wait in the halls. You are surrounded by gold, mirrors and painted ceilings that all say the same thing: the king is the center of France, and his power comes from God.',
+    prompt: 'Is Versailles a palace or a cage? Argue whether Louis XIV gained more by impressing nobles like you or by keeping you where he could watch you, and use details from the scenario to support your answer.'
   };
 
   lesson.skillBuilder = {
     label: 'Comparison practice',
-    title: 'Comparing Administrative Systems Across Empires',
-    intro: 'Comparison means identifying both similarities and differences between historical cases and explaining WHY those patterns exist. For Topic 3.2, you need to compare how different empires solved the same problem: governing large, diverse territories without triggering revolt or losing control to independent nobles.',
+    title: 'Same Job, Different Tools: Devshirme and Salaried Samurai',
+    intro: 'Comparison means finding how two cases are alike and how they differ, then explaining WHY they differ. In Topic 3.2 the why is the context: the situation each ruler was in. The Ottoman devshirme and Japan\'s salaried samurai did the same job, giving a ruler soldiers and officials who depended on him. They did it in different ways.',
     steps: [
-      { label: 'Identify the shared problem', text: 'All land-based empires needed loyal administrators, reliable revenue, and military service. The problem was universal, the solutions differed.' },
-      { label: 'Compare the Ottoman and Mughal systems', text: 'Devshirme created loyalty by removing recruits from their families; mansabdar created loyalty by making rank non-hereditary and revenue conditional on service. Both solved the loyalty problem, through different mechanisms.' },
-      { label: 'Explain the difference', text: 'Context shaped the solution. The Ottomans drew on a diverse Balkan population; the Mughals governed a majority-Hindu subcontinent. Each system reflected the specific ethnic, religious, and geographic challenge each empire faced.' }
+      { label: 'Name the shared job', text: 'Both systems answered the same question: who will serve me and not turn on me?' },
+      { label: 'Find a similarity', text: 'Look for what both did to make soldiers and officials depend on the ruler for their pay and position.' },
+      { label: 'Find a difference', text: 'Who did each system use? The devshirme took Christian boys and trained them; Japan\'s rulers moved an old warrior class off its land.' },
+      { label: 'Explain why: the context', text: 'What was each ruler afraid of? The Ottoman sultan feared powerful Turkish families; Japan\'s rulers feared warrior lords after a century of civil war.' }
     ],
-    prompt: 'In 3–4 sentences, compare how the Ottoman devshirme system and the Mughal mansabdar system each solved the problem of administrative loyalty. Identify one similarity and one difference, and explain why the difference existed.'
+    prompt: 'In 3 to 4 sentences, compare the Ottoman devshirme and Japan\'s salaried samurai. Give one similarity and one difference, and explain why they differed by describing the situation each ruler was in.'
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: Bureaucracy, Taxation, and Military Recruitment',
+      title: 'Checkpoint 1: People Who Serve',
       subtitle: 'Checks Learning Target 1 and Success Criteria 1.',
-      cardDesc: 'How empires connected the imperial center to the periphery through administration.',
+      cardDesc: 'Compare two ways rulers built officials and soldiers who depended on them.',
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Explain how land-based empires used bureaucracies, taxation systems, or military recruitment to consolidate power over diverse populations. Use at least two specific examples.',
+      prompt: 'Compare the Mughal mansabdar system with EITHER the Ottoman devshirme OR Japan\'s salaried samurai. Explain one way they were alike and one way they were different in how they gave a ruler officials or soldiers who depended on him, and explain why they were different.',
       responseType: 'Checkpoint 1',
-      terms: ['devshirme', 'mansabdar', 'jagir', 'timar', 'tax farming', 'tribute', 'civil service examination', 'Banner system', 'janissary', 'grand vizier'],
-      focus: ['Name at least two specific administrative or military systems.', 'Explain how each system extracted resources or maintained loyalty.', 'Connect your examples to the broader challenge of governing diverse, large territories.']
+      terms: ['mansabdar', 'mansab', 'jagir', 'devshirme', 'Janissaries', 'salaried samurai', 'grand vizier', 'bureaucratic elites', 'military professionals', 'centralized control'],
+      focus: ['Name both systems and the empire each belonged to.', 'Give one similarity and one difference in how each made officials or soldiers depend on the ruler.', 'Explain why they differed by describing each ruler\'s situation.']
     },
     {
-      title: 'Checkpoint 2: Legitimacy and Revenue',
-      subtitle: 'Checks Learning Targets 2–3 and Success Criteria 2–3.',
-      cardDesc: 'How rulers made authority legitimate and paid for imperial power.',
+      title: 'Checkpoint 2: Symbols and Revenue',
+      subtitle: 'Checks Learning Targets 2 and 3 and Success Criteria 2 and 3.',
+      cardDesc: 'How rulers made their power look rightful, and how they paid for it.',
       learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Explain TWO different methods rulers used to legitimize and consolidate power: (1) one example involving religious ideas, art, or monumental architecture, and (2) one example involving tribute, tax farming, or an innovative tax-collection system. Explain how each method strengthened the ruler or state.',
+      prompt: 'Explain TWO methods rulers used to legitimize and consolidate their power: (1) one example of religious ideas, art, or monumental architecture that made a ruler\'s power look rightful, and (2) one system for collecting tribute or taxes that paid for state power. For each one, describe the situation the ruler was in and explain how the method strengthened him.',
       responseType: 'Checkpoint 2',
-      terms: ['divine right', 'Songhai promotion of Islam', 'Qing imperial portraits', 'Mughal mausolea', 'Versailles', 'zamindar', 'Ottoman tax farming', 'Mexica tribute', 'Ming hard-currency taxes', 'legitimacy', 'revenue'],
-      focus: ['Use one specific religious, artistic, or architectural example and explain how it legitimized rule.', 'Use one specific revenue system and explain how it generated resources for state power or expansion.', 'Connect both methods to the larger problem of consolidating authority across a large empire.']
+      terms: ['divine right', 'Songhai promotion of Islam', 'Qing imperial portraits', 'Mughal mausolea', 'Versailles', 'zamindar', 'Ottoman tax farming', 'Mexica tribute', 'Ming taxes in silver', 'legitimacy', 'revenue'],
+      focus: ['Name one religious idea, work of art, or building and the ruler who used it.', 'Name one tribute or tax system and the empire that used it.', 'For each, describe the ruler\'s situation and explain how the method strengthened his power.']
     }
   ];
 
   lesson.evidenceLab = {
-    title: 'Evidence Lab: How Rulers Made Empire Visible',
-    task: 'Choose TWO cards from different empires. Classify each as evidence primarily about administration, elite incorporation, legitimacy, or imperial scale. Then move from observation to inference. Visual and geographic evidence can reveal how rulers represented power or the problems they faced; it cannot by itself explain every tax or bureaucratic rule.',
-    prompt: 'Using two evidence cards from different empires, make one claim about how rulers maintained centralized control over large, diverse populations. Cite one concrete detail from each source, explain why each detail supports your claim, and identify one important limit of the visual or geographic evidence.'
+    title: 'Evidence Lab: How Rulers Held What They Won',
+    task: 'Choose TWO cards from different empires. For each, decide which job it is evidence for: people who serve, symbols that justify, or the size of the problem rulers faced. Start with what the source directly shows, then infer what it suggests. A painting, a building or a map can show how a ruler wanted to be seen or how big his empire was; it cannot by itself show how taxes were collected or whether officials stayed loyal.',
+    prompt: 'Using two cards from different empires, make one claim about how rulers kept control of large empires. Cite one concrete detail from each source, explain how each detail supports your claim, and name one thing either source cannot show.'
   };
 
   lesson.images = [
     {
-      title: 'Court of Akbar, Akbarnama',
+      title: 'The court of Akbar, from the Akbarnama',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Court_of_Akbar_from_Akbarnama.jpg',
-      caption: 'Mughal court evidence. A court painting from the Akbarnama represents Emperor Akbar surrounded by officials and elites in an imperial setting.',
-      prompt: 'NOTICE how Akbar and the people around him are arranged. What can you INFER about hierarchy, access to the ruler, and incorporation of elites? What does a court-sponsored image likely emphasize or hide?'
+      caption: 'A Mughal court painting by the artist Basawan, made about 1585 to 1595 for the Akbarnama, the official history of Akbar\'s reign. It shows the young emperor surrounded by officials and nobles.',
+      prompt: 'NOTICE where Akbar is placed and how the people around him are arranged. What can you INFER about who served the emperor and how close each could get to him? This was made for Akbar\'s own official history: what might it show in its best light?'
     },
     {
-      title: 'Mughal Empire, c. 1700',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mughal_Empire_(1700).png',
-      caption: 'Administrative-scale evidence. A secondary map shows the geographic extent of Mughal rule near its height.',
-      prompt: 'NOTICE the size and diversity of the territory. What administrative problem does this scale create? How could systems such as mansab rank, jagir assignments, and provincial government answer that problem? What does the map not prove about whether those systems worked well?'
-    },
-    {
-      title: 'Topkapı Palace and the Bosphorus',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_Bosphorus.JPG',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Topkapi_Palace_Bosphorus.JPG',
-      caption: 'Ottoman institutional and legitimacy evidence. Topkapı Palace served as an imperial residence and administrative center overlooking a strategic waterway.',
-      prompt: 'NOTICE the palace\'s scale and location. What can you INFER about the concentration of imperial authority and the symbolic value of place? What would you need written records to establish about devshirme, tax farming, or daily administration?'
-    },
-    {
-      title: 'Shah Abbas I',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Shah_Abbas_I.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Shah_Abbas_I.jpg',
-      caption: 'Safavid legitimacy evidence. A royal portrait represents Shah Abbas I, a ruler associated with military and administrative consolidation of the Safavid state.',
-      prompt: 'NOTICE how the shah is presented. What can you INFER about royal authority and the political use of image? What can a portrait not tell you about how taxes were collected or provincial officials were managed?'
-    },
-    {
-      title: 'Qianlong Emperor',
+      title: 'The Qianlong Emperor, by Giuseppe Castiglione',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Qianlong_Emperor.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Qianlong_Emperor.jpg',
-      caption: 'Qing legitimacy evidence. An imperial portrait of the Qianlong Emperor represents Manchu rule over a large, predominantly Han Chinese empire.',
-      prompt: 'NOTICE clothing, posture, and visual conventions of rulership. What can you INFER about how the Qing presented imperial legitimacy? What additional evidence would you need to explain Banner institutions or the civil service bureaucracy?'
+      caption: 'Part of a Qing court painting of the Qianlong Emperor and his consorts, painted by the Italian court artist Giuseppe Castiglione. The Qing emperors were Manchus ruling an empire where most people were Han Chinese.',
+      prompt: 'NOTICE the emperor\'s clothing, pose and expression. What can you INFER about how a Manchu ruler wanted his Chinese subjects to see him? What can a portrait not tell you about how the empire was actually governed?'
+    },
+    {
+      title: 'The Taj Mahal, Agra (modern photograph)',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Taj_Mahal_in_March_2004.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Taj_Mahal_in_March_2004.jpg',
+      caption: 'A photograph taken in 2004 of the Taj Mahal, the mausoleum the Mughal emperor Shah Jahan built for his wife in the 1600s.',
+      prompt: 'NOTICE the size, the symmetry and the materials. What can you INFER about the message this tomb sent about the Mughal dynasty? What does a building like this not tell you about the people who paid for it?'
+    },
+    {
+      title: 'Topkapı Palace from the water (modern photograph)',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_Bosphorus.JPG',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Topkapi_Palace_Bosphorus.JPG',
+      caption: 'A photograph taken in 2007 of Topkapı Palace in Istanbul, the Ottoman sultans\' palace after the conquest of Constantinople. Its palace school trained the most promising devshirme recruits for high office.',
+      prompt: 'NOTICE where the palace sits and how it looks from the sea. What can you INFER about why a sultan would keep his top servants and trainees inside his own palace? What would you need written records to learn about the devshirme?'
+    },
+    {
+      title: 'The Mughal Empire, c. 1700 (a modern map)',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mughal_Empire_(1700).png',
+      caption: 'A modern map showing the Mughal Empire near its greatest size, around 1700.',
+      prompt: 'NOTICE how large the empire is and how far its edges are from the capital. What can you INFER about why the emperor needed officials who depended on him? What does the map not show about whether those officials stayed loyal?'
     }
   ];
 })();
