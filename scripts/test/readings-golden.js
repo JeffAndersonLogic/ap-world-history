@@ -64,12 +64,12 @@ const approvedUnit2Rewrite = !fromDisk && fs.existsSync(unit2SourcePath)
 // fresh review instead of silently moving the historical baseline.
 // Topic 3.1's story-first First & 10 rewrite landed 2026-10-04 and Jeff approved
 // it the same day (blob dda850e6). Topic 3.2's rewrite, "Holding What You Won",
-// landed 2026-10-06: five sections written from the approved 3.2 story (the
-// problem, people who serve, symbols that justify, systems that pay, how the
-// three jobs fit). Jeff approved the narrative as written ("Excellent story!")
-// and said "Ship" on 2026-10-06, which is why this hash moved. A diff against
-// dda850e6 shows only the 3.2 entry changed; 3.1, 3.3 and 3.4 are untouched.
-const APPROVED_UNIT3_REWRITE_BLOB = '38da055e795afbdc4598b8cc4f6961a615d2912b';
+// was approved and moved the hash on 2026-10-06. Topic 3.3's rewrite, "Belief
+// Systems in Motion", was written from Jeff's approved 3.3 story; Jeff then said
+// "Ship to main" on 2026-10-06, which is the prose approval for this fingerprint.
+// A comparison against the prior approved Unit 3 blob shows only the 3.3 entry
+// changed; 3.1, 3.2 and 3.4 are byte-for-byte unchanged.
+const APPROVED_UNIT3_REWRITE_BLOB = '9a7efee58f34ce1a38f71c80567c30cee1a9565c';
 const unit3SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-3.js');
 const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
   && gitBlobSha(fs.readFileSync(unit3SourcePath, 'utf8')) === APPROVED_UNIT3_REWRITE_BLOB;
