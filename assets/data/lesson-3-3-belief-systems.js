@@ -167,7 +167,7 @@ window.BEHISTORICAL_LESSON = {
 
   deepReading: {
     title: 'Belief Systems in Motion',
-    desc: 'A textbook-depth companion on three forms of religious change: Protestant and Catholic reform within Christianity, Ottoman-Safavid rivalry intensifying an older Sunni-Shi'a divide, and the development of Sikhism in a context of Hindu-Muslim interaction. Optional.',
+    desc: 'A textbook-depth companion on three forms of religious change: Protestant and Catholic reform within Christianity, Ottoman-Safavid rivalry intensifying an older Sunni-Shi\'a divide, and the development of Sikhism in a context of Hindu-Muslim interaction. Optional.',
     url: 'deep-reading-topic-3-3-belief-systems.html'
   },
 
@@ -183,7 +183,8 @@ window.BEHISTORICAL_LESSON = {
     items: [
       { title: "Din-i-Ilahi — Akbar's syncretic religious movement", detail: "Evidence of a ruler deliberately constructing a new religious synthesis to signal tolerance and draw diverse subjects into a shared imperial identity, and of the limits of that strategy when it attracted few genuine adherents." },
       { title: "Ottoman Sultan as Caliph — using Sunni leadership for legitimacy", detail: "Evidence that religious titles and roles were political tools: controlling Mecca and Medina and claiming the caliphate gave Ottoman rulers authority that extended beyond military power alone, projecting influence across the Muslim world." },
-      { title: "Battle of Chaldiran (1514) — Sunni-Shia conflict as imperial warfare", detail: "Evidence that religious difference was not merely a backdrop to political rivalry but could be the direct cause of military conflict, with the Ottoman sultan framing the invasion of Safavid Persia explicitly as a war against heresy." }
+      { title: "Battle of Chaldiran (1514) — Ottoman-Safavid rivalry", detail: "Evidence of political and military rivalry between the Ottoman and Safavid empires. The rivalry intensified an older Sunni-Shia division; the battle did not create that division." },
+      { title: "Martin Luther and the Protestant Reformation", detail: "Evidence of a break within western Christian traditions. Use a reform text or contemporary representation to distinguish what the source shows about reform arguments from what it cannot prove about why ordinary people changed religious allegiance." }
     ]
   },
 
