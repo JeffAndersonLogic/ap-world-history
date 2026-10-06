@@ -42,7 +42,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Cultural Developments and Interactions"
     },
     {
-      target: "I can describe the Sunni-Shia divide between the Ottoman and Safavid empires and explain how religious difference drove political conflict.",
+      target: "I can explain how political rivalry between the Ottoman and Safavid empires intensified the existing Sunni-Shia split within Islam.",
       kc: 'KC-4.1.VI.ii',
       theme: "Cultural Developments and Interactions"
     },
@@ -152,27 +152,27 @@ window.BEHISTORICAL_LESSON = {
   },
 
   map: {
-    title: "The Ottoman-Safavid Frontier: A Sunni-Shia Divide",
+    title: "Ottoman-Safavid Rivalry: An Old Divide Gains New Political Weight",
     url: "https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Safavid_Empire%2C_circa_1630.png",
     sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Safavid_Empire%2C_circa_1630.png",
     caption: "The Safavid Empire at its height, showing the Ottoman Empire to the west and the Mughal Empire to the east, each a land-based empire with distinct religious identities and policies.",
-    intro: "Use the map to locate the key empires and trace the geographic and religious boundaries between them. Notice how the Safavid Empire's position between two Sunni empires shaped the urgency of its Shia identity.",
-    prompt: "How does the geographic position of the Safavid Empire between the Ottoman and Mughal empires help explain why religious identity became such a powerful political tool for Safavid rulers?",
+    intro: "Use the map to locate the Ottoman and Safavid empires. The Sunni-Shia split was centuries older than either state; the map helps you see where political rivalry gave that older religious division new imperial weight.",
+    prompt: "What does this map help explain about the political rivalry between the Ottoman and Safavid empires? Then separate continuity from change: what religious division already existed, and what became more politically important during the rivalry?",
     notes: [
-      "The Safavid Empire controlled modern-day Iran and parts of Iraq, Afghanistan, and the Caucasus, geographically wedged between Ottoman Sunni power to the west and Mughal Sunni power to the east.",
-      "Forced conversion to Shia Islam gave the Safavid state a distinctive identity that made it impossible to confuse with its neighbors, a religious identity that was also a political boundary.",
-      "The Ottoman-Safavid border shifted repeatedly across the 16th and 17th centuries as military campaigns won and lost territory, but the Sunni-Shia divide remained a constant feature of their relationship."
+      "The Safavid Empire centered on Iran and bordered the Ottoman Empire to the west. Their frontier became a repeated zone of political and military conflict.",
+      "Shah Isma'il made Twelver Shi'a Islam the official religion of the Safavid state. This did not create the Sunni-Shi'a split, but it tied sectarian identity more closely to Safavid state identity.",
+      "The Ottoman-Safavid border shifted repeatedly in the 16th and 17th centuries. The key continuity-and-change point is that an older Sunni-Shi'a division continued while imperial rivalry intensified its political significance."
     ]
   },
 
   deepReading: {
-    title: 'Faith, and the Uses of It',
-    desc: 'A textbook-depth companion on the Reformation as a political event, the Catholic response that carried the church across the world, the sectarian border Chaldiran drew and left behind, the arithmetic of ruling people who believe otherwise, and Sikhism. Optional.',
+    title: 'Belief Systems in Motion',
+    desc: 'A textbook-depth companion on three forms of religious change: Protestant and Catholic reform within Christianity, Ottoman-Safavid rivalry intensifying an older Sunni-Shi'a divide, and the development of Sikhism in a context of Hindu-Muslim interaction. Optional.',
     url: 'deep-reading-topic-3-3-belief-systems.html'
   },
 
   first10: {
-    title: 'First & 10: God, Power, and Empire',
+    title: 'First & 10: Belief Systems in Motion',
     embedUrl: 'first-and-10-topic-3-3-belief-systems-capture.html?v=response-id-fix-v1'
   },
 
@@ -188,22 +188,22 @@ window.BEHISTORICAL_LESSON = {
   },
 
   primarySource: {
-    title: "Primary Source: Abu'l Fazl on Akbar's Religious Policy",
-    intro: "Abu'l Fazl was Akbar's court historian and closest intellectual advisor. His Ain-i-Akbari (Institutes of Akbar) described the emperor's religious approach in detail. This adapted passage reflects his account of Akbar's governing philosophy at Fatehpur Sikri.",
-    text: "His Majesty has always been devoted to seeking truth. He has inquired of men of every creed and faith, listening carefully to arguments advanced by the wise of every sect. He has assembled scholars of Islam, of Hinduism, of Zoroastrianism, and of Christianity, and caused them to debate in his presence. From each he has learned what is excellent in their tradition. It is His Majesty's conviction that no single creed has a monopoly on truth, and that rulers who impose one faith upon all do injury both to their subjects and to God, who has placed different illuminations in different traditions. He has therefore removed the poll tax upon those who follow other faiths and has opened the highest offices of the empire to men of every religion who prove themselves worthy by service and ability.",
+    title: "Primary Source: Martin Luther, Ninety-Five Theses (1517)",
+    intro: "Luther wrote the Ninety-Five Theses as a challenge to the sale of indulgences and to claims about how forgiveness worked. Read the short excerpt as evidence from the opening stage of the Protestant Reformation, then source it: what was Luther trying to change, and what can this text not tell you about how ordinary Europeans responded?",
+    text: "When our Lord and Master Jesus Christ said, ‘Repent,’ he willed the entire life of believers to be one of repentance.",
     questions: [
-      "What does Abu'l Fazl's account reveal about Akbar's justification for religious tolerance? How does he frame it as both a religious principle and a practical governing strategy?",
-      "What specific policies does the source describe, and how do they connect to Akbar's broader approach to managing a diverse empire?",
-      "Abu'l Fazl was Akbar's loyal court historian. How might his perspective shape this account, and what might a conservative Muslim scholar or a Hindu subject have written about the same policies?"
+      "What practice or religious problem is Luther trying to redirect attention toward in this opening thesis?",
+      "How does this source provide evidence of change within western Christianity rather than the disappearance of Christianity?",
+      "The source was written by a reformer trying to persuade an audience. How does that purpose affect what it can and cannot prove about the wider Reformation?"
     ]
   },
 
   beSurreal: {
-    title: "You Are at Akbar's Court, Fatehpur Sikri, c. 1580",
-    desc: "The emperor has invited scholars from Islam, Hinduism, Jainism, Zoroastrianism, and Christianity to debate at his court. As a court scribe, you're recording a debate between a Sufi mystic and a Jesuit priest. Akbar himself has announced his Din-i-Ilahi, and most people at court are unsure whether to follow it or just pretend to.",
-    intro: "You have been summoned to the emperor's ibadat khana, his House of Worship, where debates among religious scholars have been held every Thursday evening for years. Tonight the atmosphere is tense. A Sufi mystic from Persia and a Jesuit priest from Goa are arguing about the nature of God. Akbar sits on a raised platform, listening carefully, asking sharp questions that no one quite knows how to answer.",
-    detail: "You are a court scribe, your job is to record the debate accurately. But you are also a Muslim who studied at a madrasa, and some of what the emperor has proposed in his Din-i-Ilahi makes you uneasy. He has asked nobles to prostrate themselves before him at dawn as a gesture of loyalty, something that looks like worship to some. He has abolished the jizya. He has placed Hindus and Rajputs in the highest military commands. You believe in the emperor's justice, but you are not sure what to make of his religion. Most of your colleagues, you suspect, feel the same, publicly supportive, privately uncertain. The Jesuit is now arguing that Christ is uniquely divine. The Sufi responds that all rivers flow to the same ocean. The emperor is smiling.",
-    prompt: "Write two sentences recording the debate: one for the Sufi's argument, one for the Jesuit's. Then write one sentence, your private reaction as a Muslim scribe, something you will never show the emperor. What do you write?"
+    title: "You Run a Print Shop in Wittenberg, c. 1520",
+    desc: "A reform movement is moving faster than church officials can contain it. Your press can multiply a sermon or pamphlet into hundreds of copies, but every page you print ties your business to a religious argument.",
+    intro: "Customers are asking for short German-language pamphlets by Martin Luther. University students want them. Clergy argue about them. Some local officials are willing to protect printers; others fear disorder. You are not deciding whether Luther is right. You are deciding what a printer can learn about a religious break while it is happening.",
+    detail: "On your worktable are two possible jobs: a Latin theological argument aimed at educated clergy and a shorter German pamphlet aimed at a much wider reading public. Both criticize existing church practices. Printing either one could spread reform ideas farther than a single sermon, but sales do not tell you whether every buyer agrees with the text.",
+    prompt: "Choose which job you print first and explain why. Then write one sentence explaining what the popularity of printed reform material could show a historian, and one thing it could not prove about why people became Protestant."
   },
 
   beInTheRoom: {
