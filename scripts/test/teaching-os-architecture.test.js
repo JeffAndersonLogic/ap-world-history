@@ -198,8 +198,12 @@ if (exists(authoringPath)) {
   const contract = read(authoringPath);
   check(
     'authoring contract locks the final production line',
-    contract.includes('CED -> existing-course constraint check -> ninth-grade story -> memorable spine -> must-have evidence -> narrative beats -> story approval gate -> retelling slide -> asset and capability inventory -> visual plan -> canonical teacher build -> generated student deck -> ecosystem and registry sync -> instructional verification -> technical verification -> adjacent findings -> ship')
+    // Changed 2026-10-06 on Jeff's word: the CED is the College Board's own
+    // document, and the First & 10 is written from the approved story before
+    // the teacher presentation is built from it.
+    contract.includes('CED (the College Board\'s own document) -> existing-course constraint check -> ninth-grade story -> memorable spine -> must-have evidence -> narrative beats -> story approval gate -> First & 10 written from the approved story -> retelling slide -> asset and capability inventory -> visual plan -> canonical teacher build from the approved story -> generated student deck -> ecosystem and registry sync -> instructional verification -> technical verification -> adjacent findings -> ship')
   );
+  check('authoring contract makes the CED rule iron-clad', contract.includes('## 1. Start with the CED, and never drift from it') && contract.includes('scripts/lib/ced-source/unit-N.js'));
   check('authoring contract says slide count follows the story', contract.includes('Slide count follows the story.'));
   check('authoring contract contains no numeric slide-count target', !/\b12\s*(?:to|-)\s*16\b/.test(contract));
   check('authoring contract makes Big Rocks optional', contract.includes('Big Rocks" are an optional organizing device'));

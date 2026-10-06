@@ -16,16 +16,36 @@ Existing slides, available images, vocabulary lists, old lesson organization, an
 
 The locked production line is:
 
-**CED -> existing-course constraint check -> ninth-grade story -> memorable spine -> must-have evidence -> narrative beats -> story approval gate -> retelling slide -> asset and capability inventory -> visual plan -> canonical teacher build -> generated student deck -> ecosystem and registry sync -> instructional verification -> technical verification -> adjacent findings -> ship**
+**CED (the College Board's own document) -> existing-course constraint check -> ninth-grade story -> memorable spine -> must-have evidence -> narrative beats -> story approval gate -> First & 10 written from the approved story -> retelling slide -> asset and capability inventory -> visual plan -> canonical teacher build from the approved story -> generated student deck -> ecosystem and registry sync -> instructional verification -> technical verification -> adjacent findings -> ship**
 
-## 1. Start with the CED
+## 1. Start with the CED, and never drift from it
 
-Before designing slides, inspect the topic's current College Board framework and isolate:
+**This is the iron-clad rule of topic development (Jeff, 2026-10-06).** Every story is built
+from the course CED, and nothing downstream may drift from it.
 
-- learning objective or objectives
-- essential knowledge and key concepts
-- illustrative examples College Board names
-- the reasoning move implied by the learning-objective verb
+"The CED" means the College Board's own document, the Fall 2026 Course and Exam Description,
+transcribed per unit into `scripts/lib/ced-source/unit-N.js` with page numbers. Read the topic
+from that file and isolate:
+
+- the learning objective, quoted verbatim
+- every Key Concept (historical development) sentence: this is the required content
+- the CED's **reasoning process** for the topic, which becomes the story's reasoning move
+- the CED's **suggested skill**
+- the illustrative examples, marked **optional**: the CED says they "do not in any way
+  constitute additional, preferred, or required information." Choose the fewest that tell
+  the story well; never treat the list as a checklist.
+
+Never take any of this from a copy: the lesson data, a unit story map, a
+`ced-unitN-contract.js`, an audit, a Socrates spine or memory. When a copy disagrees with the
+CED, the copy is wrong; name it and correct it. On 2026-10-06 the approved Unit 3 story map
+gave 3.2 the reasoning move "causation" where the CED says Comparison, and a 3.2 story drafted
+from the copies inherited it with every check green. If a unit has no source file yet,
+transcribe it from the PDF before its first story is drafted.
+
+`scripts/test/ced-source.test.js` enforces this in the offline suite: the lesson data, the
+unit contract, the story map and every story draft must match the source file, and each story
+draft must quote the learning objective verbatim, name every Key Concept, give the CED's
+reasoning process as its reasoning move, and cite the source file.
 
 The CED is the content authority. Do not start from an old presentation and retrofit the CED afterward.
 
@@ -271,7 +291,7 @@ The slide templates in `teacher/slide-templates.html` are the visual vocabulary 
 
 ## 12. Build the canonical teacher presentation
 
-Implementation begins only after the story, evidence, beats, gate, retelling slide, and visual plan are settled.
+Implementation begins only after the story, evidence, beats, gate, retelling slide, and visual plan are settled. **The First & 10 is written first, from the approved story, and the teacher presentation is built from that same story** (Jeff, 2026-10-06). The deck deepens the story the reading has already told; it never tells a different one.
 
 The teacher source carries:
 

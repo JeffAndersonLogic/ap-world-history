@@ -159,6 +159,10 @@ If you are not sure a claim is wrong, list it for Jeff with why you doubt it. Do
 
 ### E. CED alignment
 
+- Check against `scripts/lib/ced-source/unit-N.js`, the College Board's own wording, never
+  against the lesson data, the story map or a contract, which are copies. The topic must
+  teach the CED's Key Concept sentences and practise the CED's reasoning process for the
+  topic (`node scripts/test/ced-source.test.js` checks the copies match the source).
 - The Skill Builder and checkpoints should practise the topic's actual CED learning
   objectives. 2.4's Skill Builder paired transportation with demand; the CED pairs
   improved transportation with the growth of a powerful state.

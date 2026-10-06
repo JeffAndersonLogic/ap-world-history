@@ -1,7 +1,9 @@
 'use strict';
 
 // Locked instructional contract for AP World History Unit 3.
-// Source: AP World History: Modern CED, Effective Fall 2026.
+// Source: AP World History: Modern CED, Effective Fall 2026, as transcribed in
+// scripts/lib/ced-source/unit-3.js. That file is the source; this is a copy, and
+// scripts/test/ced-source.test.js fails when the two disagree.
 // Purpose: make Unit 3 CED alignment a build requirement after the 2026 audit repair.
 // This does not replace human instructional review.
 
@@ -38,6 +40,7 @@ module.exports = {
       illustrativeExamples: [
         'Ottoman devshirme',
         'Salaried samurai',
+        'Mexica practice of human sacrifice',
         'European notions of divine right',
         'Songhai promotion of Islam',
         'Qing imperial portraits',

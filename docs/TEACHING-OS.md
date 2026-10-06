@@ -93,7 +93,7 @@ Do not use this architecture document to invent the instructional sequence.
 
 The canonical design process is `docs/PRESENTATION-AUTHORING.md`:
 
-**CED -> existing-course constraint check -> ninth-grade story -> memorable spine -> must-have evidence -> narrative beats -> story approval gate -> retelling slide -> asset and capability inventory -> visual plan -> canonical teacher build -> generated student deck -> ecosystem and registry sync -> instructional verification -> technical verification -> adjacent findings -> ship**
+**CED (the College Board's own document) -> existing-course constraint check -> ninth-grade story -> memorable spine -> must-have evidence -> narrative beats -> story approval gate -> First & 10 written from the approved story -> retelling slide -> asset and capability inventory -> visual plan -> canonical teacher build from the approved story -> generated student deck -> ecosystem and registry sync -> instructional verification -> technical verification -> adjacent findings -> ship**
 
 By the time implementation begins here, the historical story, spine, evidence, narrative beats, story gate, retelling slide, and visual plan should already be settled.
 

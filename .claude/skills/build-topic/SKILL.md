@@ -1,6 +1,6 @@
 ---
 name: build-topic
-description: "Run the full BeHistorical production line for one topic, one fresh session per topic, the way Unit 2 and Topic 3.1 were built: CED, existing-course check, ninth-grade story, spine, approval gate, retelling slide, Teaching OS deck, the other module surfaces, schedule and required-module choice, Canvas event and assignment, a claim-ledger accuracy loop with independent reviewers, audit, and verification. Use whenever Jeff says 'plan Topic 3.1', 'build 3.2', 'mirror Unit 2 for Unit 3', 'start the next topic', 'what does this topic still need', or '/build-topic'. This is the conductor: it sequences the other skills and points at the two authoring documents rather than restating them. Not for auditing an already-built topic (topic-audit), choosing pictures (presentation-images), or shipping (ship-to-main)."
+description: "Run the full BeHistorical production line for one topic, one fresh session per topic, starting, always, from the College Board CED itself (scripts/lib/ced-source/unit-N.js, never a copy of it): CED, existing-course check, ninth-grade story, spine, approval gate, First & 10 written from the approved story, then the Teaching OS deck from the same story, the other module surfaces, schedule and required-module choice, Canvas event and assignment, a claim-ledger accuracy loop with independent reviewers, audit, and verification. Use whenever Jeff says 'plan Topic 3.1', 'build 3.2', 'mirror Unit 2 for Unit 3', 'start the next topic', 'what does this topic still need', or '/build-topic'. This is the conductor: it sequences the other skills and points at the two authoring documents rather than restating them. Not for auditing an already-built topic (topic-audit), choosing pictures (presentation-images), or shipping (ship-to-main)."
 ---
 
 # Build Topic
@@ -14,6 +14,30 @@ right (the failure the whole repo is built to refuse):
 - `docs/TEACHING-OS.md`: the implementation contract (files, generators, tests)
 
 Read both before Phase 1. Also read `CLAUDE.md` for the git rules and the module-role contract.
+
+## The CED rule: iron-clad, above every other rule here
+
+**The story is built from the course CED, and nothing ever drifts from it** (Jeff,
+2026-10-06). It is the foundation of topic development in BeHistorical. The full rule is "The
+CED rule" in `CLAUDE.md` and section 1 of `docs/PRESENTATION-AUTHORING.md`; in short:
+
+- **The CED is the College Board's own document**, transcribed per unit into
+  `scripts/lib/ced-source/unit-N.js` with page numbers. Never the lesson data, the story map,
+  `ced-unitN-contract.js`, an audit, a spine or memory: those are copies.
+- **The story takes from that file**: the learning objective verbatim, every Key Concept
+  sentence, the CED's reasoning process as the story's reasoning move, the suggested skill,
+  and the illustrative examples as optional (choose the fewest that tell the story well).
+- **When a copy disagrees with the CED, the copy is wrong**, the approved unit story map
+  included. Name it, correct it, never inherit it.
+- **No source file for the unit yet? Transcribe one from the PDF first.**
+- **Order after the gate: First & 10 from the approved story, then the teacher presentation
+  from the same story**, then everything else.
+- `scripts/test/ced-source.test.js` fails the push when the lesson data, the contract, the
+  story map or a story draft drifts from the source file.
+
+On 2026-10-06 the first 3.2 draft broke this: it took the CED from the repo's copies, so it
+inherited the story map's "causation" where the CED says Comparison, and dropped an example the
+CED names. Every check was green.
 
 **Model on 3.1, 2.7 and 2.6, not the whole of Unit 2.** Topics 2.1 to 2.3 were built before
 BeReady, the retelling slide and the Key Concept band were standard, and carry `meta.omits`
@@ -101,8 +125,10 @@ trade for the accuracy loop. So nothing may depend on conversation memory:
    continue: everything except Phase 8 can proceed.
 2. **Unit story map.** Look for `docs/UNIT-N-STORY-MAP.md`. If it exists and is approved, the
    unit spine, the topic spine, the "owns / bridge only" split and the hand-offs are already
-   decided; do not ask for them again. If it does not exist, the unit needs one before any topic
-   (that is a unit-level story gate, drafted from the CED contract and the unit's deep audit).
+   decided; do not ask for them again, **except where the map disagrees with the CED source
+   file**: then the CED wins, the map is corrected, and the correction is reported. If it does
+   not exist, the unit needs one before any topic (a unit-level story gate, drafted from
+   `scripts/lib/ced-source/unit-N.js`).
 3. **What already exists.** Check the topic against the surface table below and list what is
    built and what is missing. Also read `docs/UNIT-N-DEEP-AUDIT.md`, and the
    `ced-unitN-contract` and `unitN-coherence-contract` files in `scripts/lib/` if they exist.
@@ -118,9 +144,16 @@ trade for the accuracy loop. So nothing may depend on conversation memory:
 
 ## Phase 1: CED
 
-Isolate the learning objective(s), essential knowledge and key concepts, the named illustrative
-examples, and the reasoning move the objective's verb implies. Source: the unit's CED contract
-in `scripts/lib/` and `collegeBoardKeyConcepts` in the lesson data.
+**Source: `scripts/lib/ced-source/unit-N.js`, the College Board's own wording. Nothing else.**
+If the file does not exist, transcribe the unit from the CED PDF (the URL is in the Unit 3
+file) before anything else, with page numbers, and add it to the check.
+
+From it, take for the topic: the learning objective (verbatim), every Key Concept sentence,
+the **reasoning process** the CED assigns (this is the story's reasoning move, not one inferred
+from a verb or taken from the story map), the **suggested skill**, the thematic focus, and the
+illustrative examples, which the CED says are optional. Note any sample activity the CED gives
+for the topic. Then compare the lesson data, the unit contract and the story map against it;
+every disagreement is a Phase 2 conflict, and the copy is what gets corrected.
 
 ## Phase 2: Existing-course constraint check
 
@@ -135,7 +168,10 @@ Follow sections 3 to 6 and 9 of `docs/PRESENTATION-AUTHORING.md`. Write the resu
 `docs/TOPIC-X-Y-STORY-DRAFT.md`, shaped like `docs/TOPIC-3-1-STORY-DRAFT.md` and
 `docs/TOPIC-2-7-STORY-DRAFT.md`:
 
-1. What the CED requires
+1. What the CED requires, quoted from `scripts/lib/ced-source/unit-N.js` with its page: the
+   learning objective verbatim, every Key Concept code and sentence, the reasoning process
+   (written as the `**Reasoning move:**` line), the suggested skill, and the illustrative
+   examples marked optional. `ced-source.test.js` checks the draft for all of this.
 2. Constraint check (what students already see, and what is out of line)
 3. The ninth-grade story
 4. The spine
@@ -164,7 +200,40 @@ gives two different approval dates.
 
 In `plan` mode, end here with the visual requirements listed per beat.
 
-## Phase 5: Assets and visual plan
+## Phase 5: Write the First & 10 from the approved story
+
+**The reading comes first after the gate, and the teacher presentation is built after it from
+the same story** (Jeff, 2026-10-06). The First & 10 is the common story every student reads;
+the deck deepens it and never tells a different one.
+
+It is rewritten to the approved story, not checked against it. The reading gets the story-first
+rewrite that Topics 2.4 to 2.7 got (commits `ac4ac321`, `7d1a1d18`, `11809ec3`, `72b7d752`),
+written to the "First & 10 Reading Standard" in `CLAUDE.md`, which is the rule:
+
+1. **Rewrite it from the Phase 4 story**, which was built from the CED. An old reading that roughly agrees is not done.
+   One section per beat (2.4, 2.5 and 2.6 each used four), the spine stated up front, every
+   vocabulary chip used in context, and the callouts carrying the chain.
+2. **Strip teacher language** from student text ("These examples help students see...").
+3. **One title everywhere**: the reading and both lesson files. Rebuild Canvas
+   (`npm run build:canvas-events`) so the assignment carries it too.
+4. **Keep three questions and the answer capture** in the same shape.
+5. **Keep the unit's contract terms.** Where `scripts/lib/unitN-coherence-contract.js` exists,
+   it requires term clusters in the First & 10 and the other surfaces (3.2's reading must keep
+   devshirme, mansabdar, divine right or Versailles, tax farming or zamindar, and so on). A
+   story-first rewrite that drops one fails CI. Read the contract before writing, not after.
+6. **Clear leftovers while you are in the entry**: a stray `builderBody` about building an AI
+   Coach prompt (the builder was retired 2026-08-31), and a `docTitle` module number that
+   disagrees with its siblings.
+7. **Show Jeff the reading.** Story approval in Phase 4 is not approval of the prose. Build
+   the deck while he reads it, from the same story, and fold his prose corrections into both.
+8. **Mind the shared fingerprint.** `readings-golden.js` pins the **whole**
+   `reading-content/unit-N.js` file to one approved hash (`APPROVED_UNIT3_REWRITE_BLOB` for
+   Unit 3), so a new hash also re-approves every other topic's text in that file. Before moving
+   it, prove with `git diff` that only this topic's entry changed since the last approved
+   commit, then update the hash with a dated comment naming the topic Jeff approved, and fix
+   the comment's description if it still names an older approval.
+
+## Phase 6: Assets and visual plan
 
 Now, and not earlier, look at pictures and renderer capability. Use the **presentation-images**
 skill for uploaded pictures and to stage any new Commons candidates for verification. Pick the
@@ -181,7 +250,11 @@ with **presentation-images** when they arrive. Commons can rate-limit a session 
 `scripts/source-evidence-images.js`, and never fill the gap with a filename from memory or a
 scan of a printed book (`4a20e483`).
 
-## Phase 6: Build the teacher deck and the student deck
+## Phase 7: Build the teacher deck from the approved story, then the other surfaces
+
+The deck is built from the approved story and the First & 10 written from it: same spine, same
+beats, same reasoning move, same examples. If the deck needs a fact the reading does not carry,
+that is fine; if it needs a different argument, the story is wrong and goes back to Jeff.
 
 Files for topic `X-Y` (copy the shape of `topic-2-6` or `topic-2-7`):
 
@@ -200,7 +273,7 @@ Files for topic `X-Y` (copy the shape of `topic-2-6` or `topic-2-7`):
 Then generate: `npm run build:key-concepts && npm run build:student-os-decks`.
 Never edit `assets/data/presentations/topic-X-Y-student.js`.
 
-## Phase 7: The other module surfaces
+### The other module surfaces
 
 Edit the source for each, then rebuild. Confirm each still tells this topic's spine and that
 nothing has been added from an adjacent topic.
@@ -210,7 +283,7 @@ nothing has been added from an adjacent topic.
 | Targets, criteria, map, lecture cards, videos, deep-reading card | `assets/data/lesson-X-Y-<slug>.js` | none |
 | Checkpoints, Skill Builder, Evidence Lab pictures, BeSurreal, BeInTheRoom link, `classPresentation` | `assets/data/lesson-X-Y-renderer-config.js` | none |
 | Skill Builder / Evidence Lab / Primary Source prompts, Units 1 and 2 only | `assets/data/ap-practice-units-1-2.js` | none |
-| First & 10 reading | `scripts/lib/reading-content/unit-N.js` | `npm run build:readings` |
+| First & 10 reading (written in Phase 5) | `scripts/lib/reading-content/unit-N.js` | `npm run build:readings` |
 | Deep reading and eBook chapter | `scripts/lib/deep-reading-content/topic-X-Y.js` | `npm run build:deep-readings && npm run build:ebook` |
 | BeInTheRoom | Unit 3: `scripts/build-unit3-rooms.js` (3.1 to 3.3), scenario file (3.4); Units 6 and 9: their generators | run the generator |
 | Skills map (checkpoint terms, skill labels) | lesson data | `node scripts/build-skills-map.js` |
@@ -222,34 +295,6 @@ summary standing in for an available object.
 
 If a Phase 3 constraint check found something out of line (a mis-titled card, an off-spine
 opening section), it is fixed here, inside this topic's build, as the unit story map decides.
-
-### The First & 10 is rewritten to the approved story, not checked against it
-
-"Still tells the spine" is the bar for the other surfaces. The reading gets the story-first
-rewrite that Topics 2.4 to 2.7 got (commits `ac4ac321`, `7d1a1d18`, `11809ec3`, `72b7d752`),
-written to the "First & 10 Reading Standard" in `CLAUDE.md`, which is the rule:
-
-1. **Rewrite it from the Phase 4 story.** An old reading that roughly agrees is not done.
-   One section per beat (2.4, 2.5 and 2.6 each used four), the spine stated up front, every
-   vocabulary chip used in context, and the callouts carrying the chain.
-2. **Strip teacher language** from student text ("These examples help students see...").
-3. **One title everywhere**: the reading and both lesson files. Rebuild Canvas
-   (`npm run build:canvas-events`) so the assignment carries it too.
-4. **Keep three questions and the answer capture** in the same shape.
-5. **Keep the unit's contract terms.** Where `scripts/lib/unitN-coherence-contract.js` exists,
-   it requires term clusters in the First & 10 and the other surfaces (3.2's reading must keep
-   devshirme, mansabdar, divine right or Versailles, tax farming or zamindar, and so on). A
-   story-first rewrite that drops one fails CI. Read the contract before writing, not after.
-6. **Clear leftovers while you are in the entry**: a stray `builderBody` about building an AI
-   Coach prompt (the builder was retired 2026-08-31), and a `docTitle` module number that
-   disagrees with its siblings.
-7. **Show Jeff the reading.** Story approval in Phase 4 is not approval of the prose.
-8. **Mind the shared fingerprint.** `readings-golden.js` pins the **whole**
-   `reading-content/unit-N.js` file to one approved hash (`APPROVED_UNIT3_REWRITE_BLOB` for
-   Unit 3), so a new hash also re-approves every other topic's text in that file. Before moving
-   it, prove with `git diff` that only this topic's entry changed since the last approved
-   commit, then update the hash with a dated comment naming the topic Jeff approved, and fix
-   the comment's description if it still names an older approval.
 
 ## Phase 8: Schedule, required modules and Canvas
 
@@ -401,7 +446,7 @@ the topic leans on, or a renderer) and another pass will not fix it.
 ### 9D. Technical verification
 
 1. `npm test`. It names every generated file that drifted. A First & 10 edit also fails
-   `readings-golden.js`, **by design** (see Phase 7, step 8). Do not quiet it. Until Jeff has
+   `readings-golden.js`, **by design** (see Phase 5, step 8). Do not quiet it. Until Jeff has
    approved the reading, report it as failing pending his review.
 2. `npm i --no-save playwright-core && npm run test:browser` if a slide or template changed.
    A SKIP is not a pass. **The brand-font pass skips in the cloud sandbox and fails in CI**:

@@ -56,6 +56,7 @@ const SUITES = {
     ['scripts/test/socrates-contract.test.js', 'AI coach kit reproducible, persona unit-agnostic'],
     ['scripts/test/readings-parse.test.js', '77 reading script blocks are valid JavaScript'],
     ['scripts/test/ap-practice-units12.test.js', 'Units 1-2 AP practice rigor and CED alignment'],
+    ['scripts/test/ced-source.test.js', 'the story starts from the CED: lesson data, contracts, story maps and story drafts match the College Board source'],
     ['scripts/test/ced-unit2-contract.test.js', 'Unit 2 canonical CED coverage =100%'],
     ['scripts/test/unit2-instructional-coherence.test.js', 'Unit 2 cross-surface traceability + assessment alignment'],
     ['scripts/test/ced-unit3-contract.test.js', 'Unit 3 canonical/runtime CED coverage =100%'],

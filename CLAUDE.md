@@ -1,5 +1,34 @@
 # BeHistorical, Claude Code Rules
 
+## The CED rule (iron-clad, Jeff, 2026-10-06)
+
+**Every topic's story is built from the course CED, and nothing ever drifts from it.** This is
+the foundation of topic development in BeHistorical and it outranks every other document in
+this repository, the unit story maps included.
+
+- **"The CED" means the College Board's own document**: the AP World History: Modern Course
+  and Exam Description, effective Fall 2026, transcribed per unit into
+  `scripts/lib/ced-source/unit-N.js` with page numbers. It does **not** mean the lesson data,
+  a story map, a `ced-unitN-contract.js`, an audit, a Socrates spine, or anyone's memory. All
+  of those are copies, and a copy can be wrong: on 2026-10-06 the approved Unit 3 story map
+  gave 3.2 the reasoning move "causation" where the CED says Comparison, and a story drafted
+  from the copies inherited the mistake.
+- **A story starts from that file**: the learning objective quoted verbatim, every Key
+  Concept sentence, the CED's reasoning process as the story's reasoning move, its suggested
+  skill, and its illustrative examples marked optional (the CED says they are "not in any way
+  ... required"; the Key Concept sentences are the required content).
+- **When any copy disagrees with the CED, the copy is wrong.** Name the conflict, correct
+  the copy, and never carry it into the story.
+- **If a unit has no `scripts/lib/ced-source/unit-N.js` yet, transcribe it from the PDF
+  before drafting that unit's first story.** Never draft from a copy instead.
+- **The order after the story is fixed:** Jeff approves the story, then the First & 10 is
+  written from the approved story, then the teacher presentation is built from the same
+  story. Everything else follows those.
+- **It is enforced by machine.** `scripts/test/ced-source.test.js`, in the offline suite,
+  fails the push when the lesson data, the unit contract, the story map or a story draft
+  disagrees with the CED source file, and carries negative controls that prove each check
+  can fail.
+
 ## Presentation design authority
 
 For any request to plan, build, revise, audit, or model a BeHistorical class presentation, read **both** of these before changing code:
@@ -9,9 +38,9 @@ For any request to plan, build, revise, audit, or model a BeHistorical class pre
 
 The locked production line is:
 
-**CED -> existing-course constraint check -> ninth-grade story -> memorable spine -> must-have evidence -> narrative beats -> story approval gate -> retelling slide -> asset and capability inventory -> visual plan -> canonical teacher build -> generated student deck -> ecosystem and registry sync -> instructional verification -> technical verification -> adjacent findings -> ship**
+**CED (the College Board's own document) -> existing-course constraint check -> ninth-grade story -> memorable spine -> must-have evidence -> narrative beats -> story approval gate -> First & 10 written from the approved story -> retelling slide -> asset and capability inventory -> visual plan -> canonical teacher build from the approved story -> generated student deck -> ecosystem and registry sync -> instructional verification -> technical verification -> adjacent findings -> ship**
 
-Do not start by cloning an old deck, counting slides, or searching for images. The CED decides what students must learn; the ninth-grade story decides how they encounter it. Organizing claims follow the history rather than a fixed count.
+Do not start by cloning an old deck, counting slides, or searching for images. The CED, read from `scripts/lib/ced-source/unit-N.js` and never from a copy, decides what students must learn; the ninth-grade story decides how they encounter it. Organizing claims follow the history rather than a fixed count.
 
 The story approval gate must be satisfied before implementation, either by reviewed approval or by Jeff explicitly waiving the gate. If waived, say so in the final build report.
 

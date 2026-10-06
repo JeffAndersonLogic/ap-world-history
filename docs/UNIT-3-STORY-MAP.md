@@ -1,5 +1,11 @@
 # Unit 3 Story Map: Land-Based Empires
 
+**CED source: `scripts/lib/ced-source/unit-3.js`**, the College Board's own wording for
+Unit 3, transcribed from the Fall 2026 CED. Where this map and that file disagree, the file
+is right and this map is corrected (as 3.2's reasoning move was on 2026-10-06). The named
+examples under each topic below are the CED's *illustrative* examples, which the CED says
+are optional; the required content is each topic's Key Concept sentences.
+
 **Status: Approved by Jeff, 2026-09-23.** The unit spine names gunpowder, the 3.3 spine is
 the simpler version, and every recommendation below was accepted as written. Nothing has
 been built yet. This page is the unit-level half of the story approval gate in
@@ -68,7 +74,10 @@ compare.
 - **Story spine:** Conquest wins land; people, legitimacy and money hold it.
   Three parts, in this order: **people who serve, symbols that justify, systems that
   pay.**
-- **Reasoning move:** causation (how rulers legitimized and consolidated power).
+- **Reasoning move:** comparison, the CED's reasoning process for this topic, with
+  contextualization (4.A) as its suggested skill. Corrected 2026-10-06: this line said
+  "causation", which is not what the CED says (Course Framework p. 67 and p. 70). The CED
+  wins; see `scripts/lib/ced-source/unit-3.js`.
 - **This topic owns** all three branches, with equal weight (the audit found the
   legitimacy branch was being crowded out):
   - People: devshirme, salaried samurai, mansabdars.
