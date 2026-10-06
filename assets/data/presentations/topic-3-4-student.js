@@ -29,11 +29,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "question",
+      "kind": "prompt",
       "eyebrow": "The Question",
       "title": "How did different empires increase their influence?",
-      "subtitle": "And why did they use different methods?",
-      "kc": "Unit 3: Learning Objective D"
+      "subtitle": "And why did they use different methods?"
     },
     {
       "kind": "action",
@@ -72,6 +71,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "split-venn",
       "eyebrow": "Job One · Expand",
       "title": "Gunpowder increases territorial reach.",
+      "visual": {
+        "url": "../assets/images/topics/3-1/panipat-1526.jpg",
+        "alt": "Historical image representing the First Battle of Panipat in 1526",
+        "credit": "Panipat, 1526 · verified Unit 3 asset"
+      },
       "footer": "Same job: expansion. Different campaigns; shared mechanism: military capacity increased influence.",
       "kc": "KC-4.3.II",
       "template": {
@@ -96,10 +100,29 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "split-venn",
+      "kind": "grid",
       "eyebrow": "Job Two · Hold",
       "title": "Authority needs people to carry it.",
       "footer": "Same job: hold. Different systems; both make imperial orders travel.",
+      "kc": "KC-4.3.II.B",
+      "cards": [
+        {
+          "title": "OTTOMAN",
+          "text": "Devshirme: recruited and trained service elite whose careers depended on the sultan."
+        },
+        {
+          "title": "MUGHAL",
+          "text": "Mansabdars: ranked imperial officials serving the emperor."
+        },
+        {
+          "title": "SAME JOB",
+          "text": "Extend central authority through servants who govern and fight."
+        },
+        {
+          "title": "COMPARE",
+          "text": "Different mechanisms, same political problem."
+        }
+      ],
       "template": {
         "left": {
           "name": "Devshirme",
@@ -122,10 +145,28 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "split-venn",
+      "kind": "grid",
       "eyebrow": "Job Three · Pay",
       "title": "Influence costs money.",
       "footer": "Same job: pay. Do not rank the systems; explain the mechanism.",
+      "cards": [
+        {
+          "title": "OTTOMAN",
+          "text": "Tax farming turned collection rights into state revenue."
+        },
+        {
+          "title": "MUGHAL",
+          "text": "Land revenue and zamindars connected agricultural wealth to the state."
+        },
+        {
+          "title": "SAME JOB",
+          "text": "Fund armies, officials, courts, and government."
+        },
+        {
+          "title": "COMPARE",
+          "text": "Explain the mechanism; do not rank the systems."
+        }
+      ],
       "template": {
         "left": {
           "name": "Ottoman tax farming",
@@ -148,10 +189,28 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "split-venn",
+      "kind": "grid",
       "eyebrow": "Job Four · Justify",
       "title": "Power also has to look legitimate.",
       "footer": "Same job: justify. Different media can do similar political work.",
+      "cards": [
+        {
+          "title": "MUGHAL",
+          "text": "Monumental architecture projected dynastic wealth, faith, and permanence."
+        },
+        {
+          "title": "QING",
+          "text": "Imperial portraiture presented authority through visual traditions of rulership."
+        },
+        {
+          "title": "SAME JOB",
+          "text": "Make authority visible and credible."
+        },
+        {
+          "title": "COMPARE",
+          "text": "Different media can do similar political work."
+        }
+      ],
       "template": {
         "left": {
           "name": "Mughal architecture",
@@ -174,7 +233,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "question",
+      "kind": "prompt",
       "eyebrow": "Qualification · Topic 3.3 Returns",
       "title": "Belief was not only a ruler’s tool.",
       "subtitle": "Ottoman-Safavid rivalry intensified an older Sunni-Shia divide. Empire could shape belief too.",
@@ -185,6 +244,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Retell the Topic",
       "title": "Compare the job, not the empire.",
       "footer": "Same job → different tools → why different? → how did influence grow?",
+      "kc": "KC-4.1.VI",
       "cards": [
         {
           "title": "EXPAND",
@@ -235,10 +295,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "question",
+      "kind": "prompt",
       "eyebrow": "Landing · 2 Minutes",
       "title": "Same jobs. Different tools.",
-      "subtitle": "These empires grew over land. Next: states learn to project influence across oceans."
+      "subtitle": "These empires grew over land. Next: states learn to project influence across oceans.",
+      "kc": "KC-4.1"
     }
   ]
 };
