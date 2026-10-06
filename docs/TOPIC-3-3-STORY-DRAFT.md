@@ -1,6 +1,6 @@
 # Topic 3.3 Story Draft — Empires: Belief Systems
 
-**Status: Draft for Jeff's approval, 2026-10-06**
+**Status: Approved by Jeff, 2026-10-06**
 
 This draft follows the BeHistorical `build-topic` production line. The source of truth is
 `scripts/lib/ced-source/unit-3.js`, transcribed from the Fall 2026 College Board CED. The
@@ -295,3 +295,7 @@ the Metropolitan Museum of Art on Safavid state Shi'ism and the 1514 Ottoman-Saf
 and standard reference material on the Reformation, Council of Trent, and Sikhism. The claim
 ledger records the exact claim/source relationship and will expand across every surface after
 story approval.
+
+## Approval
+
+Jeff approved the story and said **“Approved- run it”** on 2026-10-06. The build proceeds from this story.
