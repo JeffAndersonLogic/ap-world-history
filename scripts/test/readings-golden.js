@@ -68,7 +68,7 @@ const approvedUnit2Rewrite = !fromDisk && fs.existsSync(unit2SourcePath)
 // approved the First & 10 prose on 2026-10-06 ("First & 10 approved — finish it.").
 // A comparison against the prior approved Unit 3 blob shows only the 3.4 entry
 // changed; 3.1, 3.2 and 3.3 are byte-for-byte unchanged.
-const APPROVED_UNIT3_REWRITE_BLOB = 'f17cd854dd452790a186fdc952a0b23ac376ecb2';
+const APPROVED_UNIT3_REWRITE_BLOB = '00403cfc49c8bf9ba6811f974387edf8ba8617a6';
 const unit3SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-3.js');
 const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
   && gitBlobSha(fs.readFileSync(unit3SourcePath, 'utf8')) === APPROVED_UNIT3_REWRITE_BLOB;
