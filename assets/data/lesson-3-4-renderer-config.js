@@ -4,9 +4,9 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: Comparing the Empires',
+    title: 'First & 10: Same Jobs, Different Tools',
     embedUrl: 'first-and-10-topic-3-4-comparison-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 3.4 lesson path.'
+    note: 'Read the First & 10 narrative, answer the three questions, then return to the 3.4 lesson path.'
   };
 
   lesson.map = {
@@ -41,7 +41,7 @@
   lesson.skillBuilder = {
     label: 'Comparison and argumentation practice',
     title: 'Comparing Methods of Increasing Imperial Influence',
-    intro: 'Topic 3.4 has one governing question: how did different empires increase their influence from 1450 to 1750? Choose a shared category, compare at least two empires, and explain how specific evidence supports the comparison rather than listing features.',
+    intro: 'Compare the job, not the empire. Choose one shared job, expand, hold, pay, or justify, compare two methods for doing that job, and explain how both methods increased imperial influence.',
     steps: [
       { label: 'Choose the method', text: 'Strong categories include military expansion, administrative or revenue systems, incorporation of elites, and religious or cultural legitimation.' },
       { label: 'Build the comparison', text: 'Identify a meaningful similarity or difference, then use specific evidence from at least two empires. Keep the category constant so you are comparing the same process.' },
@@ -76,6 +76,12 @@
       focus: ['Answer the exact increased-influence question.', 'Use relevant evidence from at least two different empires.', 'Explain how the evidence supports the comparison, not just what each empire did.']
     }
   ];
+
+  lesson.classPresentation = {
+    title: 'Class Slides: Comparison in Land-Based Empires',
+    desc: 'Compare the job, not the empire: expand, hold, pay, or justify. Keep one category constant and connect both methods to increased influence.',
+    url: 'presentation-topic-3-4-student.html'
+  };
 
   lesson.collegeBoardKeyConcepts = [
     {
@@ -123,9 +129,9 @@
   ];
 
   lesson.evidenceLab = {
-    title: 'Evidence Lab: Comparing Land Empires with Matched Evidence',
-    task: 'Choose TWO cards from different empires and compare the SAME category. Cards are labeled as geographic scale, court/elite organization, or ruler representation. Do not compare an empire\'s territorial map with another empire\'s portrait unless your claim explicitly explains why those different source types answer the same question. Use observation, inference, and source limits before writing the comparison.',
-    prompt: 'Using two evidence cards from different land-based empires, make one comparison claim about imperial scale, elite organization, or political legitimacy. Cite one concrete detail from each source, explain the similarity OR difference, and explain one historical reason the pattern existed.'
+    title: 'Evidence Lab: Same Job, Matched Evidence',
+    task: 'Choose TWO cards from different empires that answer the SAME imperial job. Keep the category constant: expand, hold, pay, or justify. Use observation and source limits before writing the comparison; a true fact is not relevant evidence unless it supports the job you chose.',
+    prompt: 'Using two evidence cards from different land-based empires, make one comparison claim about the same imperial job. Cite one concrete detail from each source, explain the similarity or difference, explain one historical reason for the pattern, and connect both methods to increased imperial influence.'
   };
 
   lesson.images = [
