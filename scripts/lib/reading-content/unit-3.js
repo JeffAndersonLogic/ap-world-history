@@ -575,166 +575,66 @@ module.exports = {
     "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
-    "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
-    },
+    "supportHeadings": {"before":"Before You Read","target":"Reading Target"},
     "showFooter": true,
     "showFooterNote": false,
     "headerSubtitle": "Topic 3.4, Comparison in Land-Based Empires &nbsp;|&nbsp; AP World History: Modern",
-    "titleHtml": "Comparing the <em>Empires</em>",
-    "deck": "Five major land-based empires, Ottoman, Safavid, Mughal, Qing, and Russian, increased their influence between c. 1450 and c. 1750 through military expansion, administrative and revenue systems, and political or religious legitimation. Topic 3.4 asks you to compare those methods, not simply compare the empires as lists of features.",
-    "skillTags": [
-      "Comparison",
-      "Argumentation",
-      "Contextualization"
-    ],
+    "titleHtml": "Same Jobs, <em>Different Tools</em>",
+    "deck": "Compare the job, not the empire. Land-based empires increased their influence by solving recurring problems: expand, hold, pay, and justify. Topic 3.4 asks you to keep one job constant, compare the methods two empires used, explain why they were similar or different, and connect both methods back to increased influence.",
+    "skillTags": ["Comparison","Argumentation"],
     "supportCards": {
-      "beforeYouRead": "Build a comparison chart around one question: how did this empire increase its influence? Track military expansion, administration and revenue, elite incorporation, and religious or cultural legitimation. Compare the same category across empires.",
-      "readingTarget": "By the end, you should be able to compare the methods by which at least two empires increased their influence from 1450 to 1750, using specific evidence and explaining why the similarity or difference existed."
+      "beforeYouRead": "You already learned the evidence in Topics 3.1 to 3.3. Do not build four new empire biographies. Choose one job, compare two methods for doing that job, and keep asking how each method increased imperial influence.",
+      "readingTarget": "By the end, you should be able to compare one method by which two land-based empires increased their influence, support the comparison with specific Unit 3 evidence, and explain why the similarity or difference existed."
     },
-    "vocabulary": [
-      "Comparison",
-      "Gunpowder Empire",
-      "Devshirme",
-      "Mansabdar",
-      "Banner System",
-      "Millet System",
-      "Din-i-Ilahi",
-      "Caliphate",
-      "Serfdom",
-      "Table of Ranks",
-      "Confucian Examination"
-    ],
+    "vocabulary": ["Comparison","Influence","Gunpowder","Devshirme","Mansabdar","Tax Farming","Zamindar","Legitimation","Monumental Architecture","Imperial Portraiture"],
     "sections": [
       {
-        "number": "1",
-        "label": "Contextualization",
-        "heading": "What AP Comparison Actually Requires",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "Comparison is one of the six AP Historical Thinking Skills and one of the most consistently tested on the AP World History exam. But most students misunderstand what it requires. Comparison is not listing, it is not simply writing \"the Ottoman Empire did X and the Mughal Empire did Y\" and stopping there. A genuine <span class=\"kt\">comparison argument</span> requires three things: (1) identifying a meaningful similarity or difference, (2) providing specific evidence from at least two cases, and (3) explaining <span class=\"kt\">why</span> the similarity or difference existed, what it reveals about the nature of imperial rule."
-          },
-          {
-            "type": "p",
-            "html": "The \"why\" is what transforms a list into an argument. \"Both the Ottoman and Mughal empires developed administrative systems that recruited officials from outside the traditional hereditary nobility\", that is a similarity. \"This similarity existed because both empires faced the same problem: how do you build loyal administrators when hereditary nobles have independent bases of power that might challenge the ruler?\", that is the explanation that makes it a comparison argument. The AP exam rewards the explanation, not just the identification."
-          },
-          {
-            "type": "p",
-            "html": "Topic 3.4 is Unit 3's dedicated comparison topic, which means this skill is non-negotiable. You need to be able to compare the major land-based empires on at least three dimensions: military expansion, administrative systems, and religious policy."
-          }
+        "number":"1","label":"The Comparison Rule","heading":"Compare the Job, Not the Empire",
+        "blocks":[
+          {"type":"p","html":"Topics 3.1 to 3.3 gave you a lot of names: Ottoman, Safavid, Mughal, Qing, cannons, devshirme, mansabdars, tax farming, portraits, mosques, and religious rivalry. If Topic 3.4 becomes a memory contest, it misses the point. The College Board asks you to compare the <span class=\"kt\">methods</span> by which empires increased their <span class=\"kt\">influence</span>."},
+          {"type":"p","html":"The useful comparison is not simply Empire A versus Empire B. It is <strong>job versus job</strong>. Empires had recurring jobs: expand territory, hold control, pay for the state, and justify authority. Keep one job constant. Then compare how two empires did it, why their methods were similar or different, and how each method increased influence."}
         ],
-        "callout": {
-          "label": "AP Thinking, Comparison Skill",
-          "raw": "<p>Every comparison argument needs: <strong>(1) a claim, similarity or difference, (2) evidence from at least two empires, and (3) an explanation of significance, why the pattern existed and what it reveals.</strong> If you can state the claim and provide the evidence but cannot explain why the similarity or difference existed, you have described but not analyzed. AP scoring rewards analysis.</p>"
-        }
+        "callout":{"label":"AP Thinking, Comparison","raw":"<p><strong>Same job → different tools → why different? → how did influence grow?</strong> That chain keeps your comparison analytical instead of turning it into two lists.</p>"}
       },
       {
-        "number": "2",
-        "label": "Key Concept",
-        "heading": "Shared Patterns: What All Five Empires Had in Common",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "Despite their geographic spread and cultural differences, the five major land-based empires shared three defining characteristics that historians use to group them as a coherent historical category."
-          },
-          {
-            "type": "p",
-            "html": "<strong>First: gunpowder military technology.</strong> The Ottoman conquest of Constantinople in 1453 with massive cannon, the Mughal victory at the First Battle of Panipat in 1526 with artillery and matchlock firearms, the Safavid defense against Uzbek raiders using firearms, all reflect a common military revolution. This is why historians sometimes call these states \"<span class=\"kt\">gunpowder empires</span>.\" The technology was not invented by any of them, but its adoption and deployment transformed the military balance across Eurasia."
-          },
-          {
-            "type": "p",
-            "html": "<strong>Second: the loyalty problem and its administrative solutions.</strong> Every empire needed administrators loyal to the ruler rather than to regional elites or hereditary nobles who might build independent power bases. The <span class=\"kt\">Ottoman devshirme</span> recruited boys from Christian families, converted them, and trained them as palace administrators and Janissary soldiers, men with no family connections or tribal loyalties inside the empire. The <span class=\"kt\">Mughal mansabdar</span> ranked military-administrative officers by grade, granting non-hereditary revenue rights (jagirs) in exchange for military service, preventing the rise of a hereditary landed nobility. The <span class=\"kt\">Qing Banner system</span> organized the Manchu military around ethnicity and personal loyalty. Russia's <span class=\"kt\">Table of Ranks</span> tied noble status to state service rather than birth. All four systems solved the same problem, through different mechanisms."
-          },
-          {
-            "type": "p",
-            "html": "<strong>Third: religion as legitimacy.</strong> Every empire used religion to legitimize imperial authority. The Ottoman sultan claimed the Sunni caliphate. The Safavid Shah claimed descent from Shia imams. Akbar's Mughal court embodied a universal spiritual authority through the Din-i-Ilahi. The Qing emperor performed Confucian rituals for Han Chinese subjects and patronized Tibetan Buddhism for Mongol and Tibetan subjects. Russia's tsar ruled as protector of Orthodox Christianity. The specific religion differed; the function, using religious authority to justify political power, was universal."
-          }
+        "number":"2","label":"Expand and Hold","heading":"Military Power Wins Land; Servants Carry Authority",
+        "blocks":[
+          {"type":"p","html":"For <span class=\"kt\">expansion</span>, compare military methods. Ottoman cannon helped break Constantinople's defenses in 1453. At Panipat in 1526, Babur's Mughal forces used artillery and firearms as part of the victory that helped establish Mughal power in northern India. In both cases, gunpowder weapons increased influence by helping a state defeat rivals and gain territory."},
+          {"type":"p","html":"For <span class=\"kt\">holding</span> territory, compare people and institutions. The Ottoman <span class=\"kt\">devshirme</span> supplied trained servants and soldiers whose careers depended on the sultan. Mughal <span class=\"kt\">mansabdars</span> held ranked positions in imperial service and commonly received revenue assignments that could be transferred. Different mechanisms, same job: extend the ruler's authority through people who governed and fought in the ruler's name."}
         ],
-        "callout": {
-          "label": "AP Thinking, Comparison",
-          "raw": "<p>When you identify a similarity across empires, you must explain why similar conditions produced similar solutions. <strong>Similar administrative systems existed because all empires faced the same loyalty problem. Similar uses of religion existed because all rulers needed legitimacy beyond brute force.</strong> The shared challenge explains the shared response.</p>"
-        }
+        "callout":{"label":"AP Thinking, Argumentation","raw":"<p>Do not stop at “both used gunpowder” or “both had officials.” Add the consequence: <strong>how did that method increase influence?</strong> Territory gained, orders carried out, rivals defeated, or central authority extended.</p>"}
       },
       {
-        "number": "3",
-        "label": "Key Concept",
-        "heading": "Meaningful Differences: What Set Each Empire Apart",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "Understanding differences requires understanding context. The most important variable shaping difference was the <span class=\"kt\">composition of the conquered population</span>, the religious, ethnic, and demographic mix that each empire actually governed."
-          },
-          {
-            "type": "p",
-            "html": "<strong>Religious policy</strong> was where differences were sharpest. The <span class=\"kt\">Safavids</span> forcibly converted their mostly Sunni population to Shia Islam, viable because Persia was a relatively compact territory with a population that could be monitored and enforced against. The <span class=\"kt\">Mughals</span> under Akbar pursued tolerance, because they were governing a Hindu majority of roughly 80% of the population, and coercion at that scale would have been impossible. Aurangzeb's later reimposition of the jizya confirmed the analysis: when he tried enforcement, he got rebellion. The <span class=\"kt\">Ottoman millet system</span> offered a middle path, recognizing religious communities as semi-autonomous self-governing bodies in exchange for tax compliance and political loyalty. Each policy reflected the ruler's specific demographic reality."
-          },
-          {
-            "type": "p",
-            "html": "<strong>Administrative strategy</strong> also differed. The <span class=\"kt\">Qing</span> Manchu rulers governed a Han Chinese majority that outnumbered them perhaps 50 to 1. Their solution: maintain Manchu ethnic military identity through the Banner system while retaining the Chinese civil service examination, letting Han Chinese fill the bureaucracy that the Manchu could not staff alone. The <span class=\"kt\">Russian Empire's</span> expansion across Siberia encountered sparsely populated indigenous peoples, producing a colonial extraction model (yasak fur tribute) fundamentally different from the dense urban governance the Mughals or Ottomans practiced. Context determined strategy."
-          },
-          {
-            "type": "pull",
-            "html": "\"Identifying a difference is not enough. You must explain what it reveals, why rulers facing different conditions made different choices, and what those choices tell us about the nature of imperial power.\""
-          }
+        "number":"3","label":"Pay and Justify","heading":"Influence Needs Resources and a Believable Claim to Rule",
+        "blocks":[
+          {"type":"p","html":"For <span class=\"kt\">paying</span> the state, compare revenue systems. Ottoman rulers used <span class=\"kt\">tax farming</span> for parts of their revenue system: the state granted the right to collect particular taxes in return for payment. Mughal rulers relied heavily on land revenue and used local intermediaries including <span class=\"kt\">zamindars</span>. The mechanisms differed, but both turned resources from subjects and land into revenue that supported armies, officials, courts, and government."},
+          {"type":"p","html":"For <span class=\"kt\">justifying</span> rule, compare visible claims to authority. Mughal rulers used monumental architecture, including mosques and mausolea, to project dynastic wealth, faith, and permanence. Qing emperors used <span class=\"kt\">imperial portraiture</span> and multiple traditions of rulership to present authority to different audiences. Different media could do the same political job: make imperial authority visible and credible."},
+          {"type":"p","html":"Religious rivalry also reminds us not to make the comparison too simple. Ottoman-Safavid political rivalry intensified an older Sunni-Shi'a divide. Empires could use religious identity to strengthen rule, while imperial conflict could also change the political importance of religious identity."}
         ],
-        "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>The best comparison arguments connect differences to context. <strong>Don't just note that Mughal and Safavid religious policies differed, explain that the difference reflects the different demographic realities each ruler faced: a Hindu majority (Mughal) vs. a compact, convertible population (Safavid).</strong> Connecting difference to context is what distinguishes an analytical argument from a descriptive list.</p>"
-        }
+        "callout":{"label":"AP Thinking, Qualification","raw":"<p>A strong comparison does not claim every empire worked the same way. It identifies a shared job, then explains the different tools and conditions. Topic 3.3 also gives you a useful qualification: belief was not merely a tool rulers controlled.</p>"}
       },
       {
-        "number": "4",
-        "label": "Skill Application",
-        "heading": "Writing a Comparison Argument: Step by Step",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "A comparison argument has a predictable structure. Learning to build it deliberately, claim, evidence, explanation, will serve you on every AP exam question that uses the comparison skill."
-          }
+        "number":"4","label":"Build the Argument","heading":"Turn Unit 3 Evidence into One Defensible Comparison",
+        "blocks":[
+          {"type":"p","html":"Start by naming one job: expand, hold, pay, or justify. Choose two empires for which you have specific evidence in that category. State a meaningful similarity or difference. Then explain <em>why</em> the pattern existed and connect both examples to the exact learning objective: increasing imperial influence."},
+          {"type":"p","html":"A useful frame is: <strong>Both ___ and ___ increased their influence through ___, but ___ used ___ while ___ used ___. They differed because ___. This mattered because ___.</strong> The blanks force you to compare the same process, use evidence from both cases, and explain significance."}
         ],
-        "callout": {
-          "label": "AP Thinking, Comparison Practice",
-          "raw": "<p>Practice writing a single comparison sentence: \"[Empire A] and [Empire B] were similar in that both [shared pattern], [Empire A] through [specific evidence] and [Empire B] through [specific evidence], because [shared challenge or condition].\" <strong>This one-sentence formula contains all the elements of a comparison argument.</strong> Master it and you can build a full paragraph from it on any AP exam.</p>"
-        }
+        "callout":{"label":"AP Thinking, Skill 6.B","raw":"<p><strong>Support an argument using specific and relevant evidence.</strong> Relevant is the key word. A true fact about an empire does not help unless it actually supports the comparison you are making.</p>"}
       }
     ],
-    "takeaway": "The major land-based empires increased influence through overlapping methods: military expansion, administrative and revenue systems, incorporation of elites, and religious or cultural legitimation. Their exact solutions differed because they governed different populations, territories, and rivalries. For AP Comparison, keep one method constant, identify a meaningful similarity or difference, provide evidence from both empires, and explain how the method increased influence and why the pattern existed.",
-    "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Supported Answers Only",
-    "questions": [
-      {
-        "num": "01",
-        "skill": "Comparison",
-        "text": "Choose two empires and compare one military method they used to increase influence. Identify a similarity or difference and explain how the method expanded or protected imperial power.",
-        "placeholder": "Both the ___ and ___ increased influence through military power by..."
-      },
-      {
-        "num": "02",
-        "skill": "Comparison",
-        "text": "Choose two empires and compare one nonmilitary method, administration, revenue, elite incorporation, or legitimation, that they used to increase influence. Explain why their approaches were similar or different.",
-        "placeholder": "The ___ and ___ differed in how they increased influence through ___ because..."
-      },
-      {
-        "num": "03",
-        "skill": "Argumentation",
-        "text": "Write a short argument answering the College Board question: compare the methods by which various empires increased their influence from 1450 to 1750. Use evidence from at least two empires.",
-        "placeholder": "Empires increased influence in similar/different ways because... Evidence from ___ and ___ shows..."
-      }
+    "takeaway": "Compare the job, not the empire. Land-based empires increased influence by expanding with military power, holding territory through servants and institutions, paying for state power through revenue systems, and justifying authority through religion, art, architecture, and court culture. Keep one category constant, use specific evidence from two empires, explain why the methods were similar or different, and connect both back to increased influence.",
+    "checkBadge":"Check Your Thinking","checkTitle":"Three Questions, Supported Answers Only",
+    "questions":[
+      {"num":"01","skill":"Comparison","text":"Choose two empires and compare one method they used to expand or hold influence. Keep the job constant, identify a similarity or difference, and explain how each method increased influence.","placeholder":"Both ___ and ___ increased influence by... But..."},
+      {"num":"02","skill":"Comparison","text":"Choose two empires and compare one method they used to pay for or justify imperial power. Why were their methods similar or different?","placeholder":"The ___ and ___ both needed to... They differed because..."},
+      {"num":"03","skill":"Argumentation","text":"Answer the Topic 3.4 question in a short argument: compare the methods by which two empires increased their influence from 1450 to 1750. Use specific evidence from both and explain why the comparison matters.","placeholder":"Both ___ and ___ increased their influence through... This mattered because..."}
     ],
-    "builderBody": "After answering the three questions, build one prompt for the BeHistorical AI Coach. The prompt will include your responses and ask the coach to question, challenge, and improve your thinking without writing the final answer for you.",
-    "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "",
-    "navPrev": {
-      "href": "../unit-3/lesson-3-3-belief-systems.html",
-      "label": "&#8592; Topic 3.3: Empires and Belief Systems"
-    },
-    "navNext": {
-      "href": "../unit-3/lesson-3-4-comparison.html",
-      "label": "Content Delivery &#8594;"
-    },
-    "lessonFile": "../unit-3/lesson-3-3-belief-systems.html",
-    "padQuestionNumbers": true,
+    "builderBody":"",
+    "submitNote":"Organize your thinking here, submit your final work in Canvas.",
+    "footerNote":"",
+    "navPrev":{"href":"../unit-3/lesson-3-3-belief-systems.html","label":"&#8592; Topic 3.3: Empires: Belief Systems"},
+    "navNext":{"href":"../unit-3/lesson-3-4-comparison.html","label":"Content Delivery &#8594;"},
+    "lessonFile":"../unit-3/lesson-3-4-comparison.html",
+    "padQuestionNumbers":true
   }
 };
