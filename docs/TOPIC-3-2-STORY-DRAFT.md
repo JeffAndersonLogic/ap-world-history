@@ -1,374 +1,344 @@
 # Topic 3.2 Story Draft: Empires: Administration
 
-**Status: Draft for Jeff's review, 2026-10-06. Not yet approved.** Nothing downstream of this
-page has been built. The claim ledger for every date, number and causal claim below is
-`docs/TOPIC-3-2-CLAIM-LEDGER.md`.
+**Status: Draft for Jeff's review, revision 2, 2026-10-06. Not yet approved.** Nothing
+downstream of this page has been built.
 
-**Taught:** Green Tuesday 2026-10-20, Silver Wednesday 2026-10-21. These dates are recorded
-only in the `homeworkDue` comment on 3.1's days in `assets/data/announcements-schedule.js`
-(confirmed by Jeff 2026-10-04). 3.2 has no schedule entries yet.
+**Why there is a revision 2.** Revision 1 (commit `820ea796`) took the CED from the repo's
+copies (the lesson data, `ced-unit3-contract.js` and the story map) instead of the CED itself.
+It inherited the story map's reasoning move, "causation", where the CED says **Comparison**,
+and it treated every illustrative example as required. This revision is rebuilt from the
+College Board's own Topic 3.2 page. The rule that this never happens again is now in
+`CLAUDE.md`, `docs/PRESENTATION-AUTHORING.md` section 1 and the build-topic skill, and
+`scripts/test/ced-source.test.js` enforces it.
 
-Built from the unit story map (`docs/UNIT-3-STORY-MAP.md`, approved 2026-09-23), so the unit
-spine, the topic spine, the "owns / bridge only" split and the hand-offs are not re-opened
-here. Branched from `main` at `af95f25`, which already carries all of 3.1.
+**Taught:** Green Tuesday 2026-10-20, Silver Wednesday 2026-10-21 (Jeff, 2026-10-04; recorded
+only in the `homeworkDue` comment on 3.1's days in `assets/data/announcements-schedule.js`).
+
+The claim ledger is `docs/TOPIC-3-2-CLAIM-LEDGER.md`.
 
 ## 1. What the CED requires
 
-Source: `scripts/lib/ced-unit3-contract.js` and `collegeBoardKeyConcepts` in
-`assets/data/lesson-3-2-renderer-config.js`.
+**Source: `scripts/lib/ced-source/unit-3.js`**, transcribed from the AP World History: Modern
+Course and Exam Description, effective Fall 2026, Course Framework p. 70 (Topic 3.2) and p. 67
+(Unit 3 overview). Quoted, not paraphrased.
 
-- **Learning objective (Unit 3, B):** Explain how rulers used a variety of methods to
-  legitimize and consolidate their power in land-based empires from 1450 to 1750.
-- **KC-4.3.I.C (people):** Recruitment and use of bureaucratic elites, as well as the
-  development of military professionals, became more common among rulers who wanted to
-  maintain centralized control over their populations and resources. Illustrative examples:
-  Ottoman devshirme, salaried samurai.
-- **KC-4.3.I.A (symbols):** Rulers continued to use religious ideas, art, and monumental
-  architecture to legitimize their rule. Illustrative examples: European notions of divine
-  right, Songhai promotion of Islam, Qing imperial portraits, Incan sun temple of Cuzco,
-  Mughal mausolea and mosques, European palaces such as Versailles. (The lesson data also
-  lists the Mexica practice of human sacrifice; the CED contract in the repo does not. See
-  question 3.)
-- **KC-4.3.I.D (money):** Rulers used tribute collection, tax farming, and innovative
-  tax-collection systems to generate revenue in order to forward state power and expansion.
-  Illustrative examples: Mughal zamindar tax collection, Ottoman tax farming, Mexica tribute
-  lists, Ming practice of collecting taxes in hard currency.
-- **Reasoning move:** causation. "How rulers used methods to legitimize and consolidate"
-  asks for the mechanism: what the tool did, and why it made people serve, obey or pay.
-- **Two words in the CED that are easy to drop.** KC-4.3.I.A says rulers *continued* to use
-  these tools, so legitimacy through religion and buildings is not new in 1450; students met
-  it in Unit 1. KC-4.3.I.D says revenue *forwarded state power and expansion*, which is the
-  link back to 3.1: the cannons had to be paid for.
+- **Learning objective (Unit 3: Learning Objective B):** "Explain how rulers used a variety of
+  methods to legitimize and consolidate their power in land-based empires from 1450 to 1750."
+- **Required content, the three historical development statements, in the CED's order:**
+  - **KC-4.3.I.C:** "Recruitment and use of bureaucratic elites, as well as the development of
+    military professionals, became more common among rulers who wanted to maintain centralized
+    control over their populations and resources."
+  - **KC-4.3.I.A:** "Rulers continued to use religious ideas, art, and monumental architecture
+    to legitimize their rule."
+  - **KC-4.3.I.D:** "Rulers used tribute collection, tax farming, and innovative tax-collection
+    systems to generate revenue in order to forward state power and expansion."
+- **Reasoning move:** Comparison. This is the CED's reasoning process for Topic 3.2 (p. 67).
+  The CED's comparison skills are to describe similarities and differences, explain relevant
+  similarities and differences, and explain their relative significance.
+- **Suggested skill:** 4.A Contextualization, "Identify and describe a historical context for
+  a specific historical development or process."
+- **Thematic focus:** Governance (GOV).
+- **Illustrative examples, which are optional.** The CED says illustrative examples "are
+  intended as examples and do not in any way constitute additional, preferred, or required
+  information. Historical development statements comprise the knowledge required to
+  demonstrate mastery of the learning objective" (p. 85). Its list for 3.2:
+  - Bureaucratic elites or military professionals: Ottoman devshirme; salaried samurai.
+  - Religious ideas: Mexica practice of human sacrifice; European notions of divine right;
+    Songhai promotion of Islam.
+  - Art and monumental architecture: Qing imperial portraits; Incan sun temple of Cuzco; Mughal
+    mausolea and mosques; European palaces, such as Versailles.
+  - Tax-collection systems: Mughal zamindar tax collection; Ottoman tax farming; Mexica tribute
+    lists; Ming practice of collecting taxes in hard currency.
+- **The CED's own sample activity for 3.2 (p. 68, optional):** close reading of short excerpts
+  on the rulers of the Ottoman and Songhay empires from Leo Africanus, *Description of
+  Timbuktu* (1526), and Busbecq, *The Turkish Letters* (1555 to 1562): identify the historical
+  context, then highlight similarities in the methods the rulers used to legitimize and
+  consolidate power.
 
-## 2. Constraint check (what students already see, and what is out of line)
+**What follows from the CED for the story:**
+1. The story must teach the three statements, and every example exists only to make one of them
+   clear. Four or five well-chosen examples, compared, do this better than thirteen named ones.
+2. The move is comparison: the same job done differently by different rulers, and why.
+3. The skill is contextualization: each "why" is the situation that ruler faced.
+4. The CED's word "continued" (KC-4.3.I.A) means legitimacy through religion and buildings was
+   not new in 1450; students saw it in Unit 1. The CED's phrase "forward state power and
+   expansion" (KC-4.3.I.D) is the link to 3.1: the guns had to be paid for.
 
-Read only for contradictions, not as the source of the story.
+## 2. Constraint check (what students already see, against the CED)
 
-**Consistent with the CED:**
-- The three learning targets and three success criteria map exactly to KC-4.3.I.C, I.A
-  and I.D, and the criteria name the CED's own examples.
-- Checkpoint 2 now asks for one legitimacy example and one revenue example, which closed the
-  gap the 2026 deep audit found (the legitimacy branch was not assessed).
-- The coherence contract (`scripts/lib/unit3-coherence-contract.js`) already requires
-  devshirme, mansabdar, religious ideas or monumental architecture, divine right or
-  Versailles, tax farming or zamindar, and revenue on the reading and the other surfaces.
-  The rewrite keeps every one of them.
+**Matches the CED** (confirmed by `ced-source.test.js`): the lesson's learning objective, its
+three Key Concept sentences and its illustrative-example list are the CED's, word for word. The
+declared Skill Builder skill, "Comparison practice", matches the CED's reasoning process.
 
-**Out of line, each with where it gets fixed:**
-1. **Salaried samurai are never taught.** Success criterion 1 names them, so a student is
-   told to use an example no surface explains. The lecture, the First & 10 and the eBook
-   chapter never mention samurai. Fix in this build.
-2. **The legitimacy branch is still crowded out.** The lecture gives a full card to
-   "Accommodation" (Rajput nobles and the Ottoman millet system, neither in the CED for this
-   topic), and legitimacy shares half of one card with revenue. The First & 10 gives
-   legitimacy one paragraph out of thirteen. Songhai, the Inca sun temple, the Qing
-   portraits and the Mexica tribute lists appear only as one-line name drops. Fix: one
-   lecture card and one reading section per branch.
-3. **Checkpoint 1 displays Learning Target 1 (people) but its prompt also accepts
-   "taxation systems",** which is Learning Target 3. A student could answer it entirely
-   about taxes and meet the prompt while missing the target it says it checks. Fix the
-   prompt to match the target it displays.
-4. **The Skill Builder teaches comparison** (devshirme against mansabdar), while the
-   objective's move is causation and 3.4 is the unit's comparison topic. A teaching call;
-   see question 6.
-5. **The First & 10 has 16 vocabulary chips**, several never used in its text (Vizier,
-   Bureaucracy), and its longest section is about the timar, which the CED does not name.
-   It also says timars "kept revenue flowing to the imperial center"; a timar holder kept
-   that revenue to pay for himself and his horsemen, which is the point of the system. The
-   Qing Banner sentence says banners were "defined by ethnicity and region"; there were
-   Manchu, Mongol and Han banners, not regional ones. The reading is rewritten from this
-   story in any case (Phase 7), so these are listed, not patched.
-6. **Leftovers:** a `builderBody` about building an AI Coach prompt in the reading's entry
-   (not rendered, but stale), a First & 10 note on the lesson page that still says "build
-   your AI Coach prompt", and a `docTitle` that says "Module 01" while the badge says
-   Module 02.
-7. **BeSurreal is set at "Akbar's Court, Delhi, c. 1580".** Akbar's court in 1580 was at
-   Fatehpur Sikri, not Delhi. It also tells a Rajput chief his jagir in Rajasthan will not
-   pass to his son; Rajput chiefs' home lands were usually held as hereditary watan jagirs,
-   which is the exception to the rule the card teaches. Fix or replace in this build (see
-   question 7).
-8. **The BeInTheRoom page's alignment line misquotes the objective** ("how rulers employed
-   economic strategies to consolidate and maintain power", which is not the CED wording).
-   Fix in the generator in this build.
-9. **The Primary Source is labeled "adapted from the Ain-i-Akbari"** but reads as a modern
-   composed summary, the same problem 3.1's audit found with its Tursun Beg passage. See
-   question 8.
-10. **The eBook chapter runs people, money, legitimacy, local elites, decline**, so its order
-    is not the spine's, and it never mentions samurai, Songhai, Cuzco or the Mexica. See
-    question 9.
+**Copies that disagreed with the CED, now corrected:**
+1. `docs/UNIT-3-STORY-MAP.md` gave 3.2 the reasoning move "causation". Corrected to comparison,
+   with a dated note.
+2. `scripts/lib/ced-unit3-contract.js` dropped "Mexica practice of human sacrifice" from the
+   CED's list. Restored. (It stays optional; see question 3.)
+
+**Out of line with the CED on the student surfaces, fixed in this build:**
+3. **KC-4.3.I.C is taught without one of the CED's two examples.** Success criterion 1 names
+   salaried samurai, and no surface explains them.
+4. **KC-4.3.I.A is crowded out.** The lecture gives a whole card to "Accommodation" (Rajput
+   nobles, the Ottoman millet system), which is not in this topic's CED page, and gives
+   legitimacy half of one card. The First & 10 gives it one paragraph out of thirteen.
+5. **Checkpoint 1 displays Learning Target 1 (KC-4.3.I.C) but its prompt also accepts
+   "taxation systems"**, which is KC-4.3.I.D. Its prompt is fixed to match its target.
+6. **The First & 10 is built around material the CED does not name** (the timar gets the
+   longest section; the Qing Banner and examination systems get another), carries 16
+   vocabulary chips, and has two factual slips: it says timars "kept revenue flowing to the
+   imperial center" (a timar holder kept that revenue to support himself and his horsemen),
+   and that Qing banners were "defined by ethnicity and region" (there were Manchu, Mongol and
+   Han banners, not regional ones). It is rewritten from this story.
+7. **Leftovers:** a stale `builderBody` in the reading's entry, a lesson-page note that still
+   says "build your AI Coach prompt", a `docTitle` saying "Module 01" beside a "Module 02"
+   badge.
+8. **BeSurreal** is set at "Akbar's Court, Delhi, c. 1580" (Akbar's court was then at
+   Fatehpur Sikri) and tells a Rajput chief his Rajasthan jagir will not pass to his son
+   (Rajput home lands were usually hereditary watan jagirs). See question 7.
+9. **The BeInTheRoom page misquotes the objective** ("how rulers employed economic strategies
+   to consolidate and maintain power" is not the CED's wording). Fixed in the generator.
+10. **The Primary Source** is labeled "adapted from the Ain-i-Akbari" but reads as a modern
+    summary. See question 8.
+11. **The eBook chapter** runs people, money, legitimacy, local elites, decline, and never
+    mentions samurai or Songhai. See question 9.
 
 ## 3. The ninth-grade story
 
-You already know how Mehmed took Constantinople: big guns, seven weeks, the walls came down.
-Now picture the morning after. He owns a battered city, an army, and an empire that stretches across the Balkans and much of Anatolia. Millions of people live in it who speak other languages, pray in
-other ways, and never asked to be ruled by him. Cannons do not collect taxes. Cannons do not
-make anyone believe he deserves to be in charge. So every ruler in this unit had to answer
-three questions, and the answers are the whole topic.
+**The context: what was going on?** You know how 3.1 ended. Gunpowder let a few rulers
+conquer huge territories fast. Mehmed took Constantinople in seven weeks. Babur took north India in 1526. In the 1640s the Manchus took China. Now picture the morning after a conquest
+like that. The ruler owns land full of people who speak other languages, pray in other ways,
+and never asked to be ruled by him. Some of the most powerful people in it have their own
+lands, their own soldiers, their own followers. And those new gun armies cost a fortune. So
+every ruler in this unit faced the same three jobs. **Find people who will serve you and not
+turn on you. Convince everyone else that you deserve to rule. Collect enough money to pay for
+all of it.** The College Board's point is that rulers did all three, in different ways. Our
+job is to compare the ways, and explain why they were different.
 
-**Question one: who will serve me?** A ruler cannot do everything himself. He needs
-governors, generals, judges and soldiers. The danger is that the most powerful of them have
-families, lands and followers of their own, and a man with his own power can say no. Mehmed
-knew this. The day after Constantinople fell, he had his grand vizier, Çandarlı Halil,
-arrested, and soon had him executed. Halil came from a Turkish family that had held that top job for much of the past hundred years. Mehmed wanted servants who owed everything to him.
+**Job one: people who serve.** Mehmed knew the danger. The day after Constantinople fell, he had
+his grand vizier, Çandarlı Halil, arrested, and soon executed. Halil came from a Turkish family
+that had held that top job for much of the past hundred years, and a man with family power of
+his own can say no. Rulers wanted servants who depended on them for everything.
 
-The Ottomans had a system for making exactly that kind of servant. It was called the
-**devshirme**. Ottoman officials took Christian boys, mostly from the Balkans, away from their
-families, converted them to Islam and trained them. The strongest became **Janissaries**, the
-sultan's own professional soldiers. The smartest went to palace schools and could rise to
-govern provinces or even become grand vizier. It was forced and it was cruel to the families.
-It also produced men with no family power inside the empire at all. Their whole lives
-depended on the sultan.
+Compare two answers. The Ottomans used the **devshirme**. Officials took Christian boys, mostly
+from the Balkans, away from their families, converted them to Islam and trained them. The
+strongest became **Janissaries**, the sultan's professional soldiers; the smartest went to
+palace schools and could rise to govern provinces or even become grand vizier. It was forced,
+and cruel to the families. It produced men with no family power inside the empire, whose whole
+lives depended on the sultan.
 
-The Mughals in India solved the same problem a different way. Akbar gave his officials a
-numbered rank, a **mansab**, which set their pay and how many horsemen they had to bring.
-Many were paid with a **jagir**, the right to collect the land tax from one area. But the
-jagir moved: officials were shifted around every few years, and a son did not inherit his
-father's rank. So a **mansabdar** could get rich serving the emperor, but could never turn one
-place into his own little kingdom. Akbar even gave high ranks to Hindu Rajput kings, which
-turned possible rivals into commanders of his army.
+Japan answered the same question differently. Japan had just come through more than a century
+of civil war between lords with their own lands and armies. Starting in the late 1500s, its
+rulers took most samurai off their lands, moved them into their lords' castle towns, and paid
+them a yearly stipend counted in rice. A **salaried samurai** was a professional warrior and
+official who lived on a salary, not on land he controlled.
 
-Japan used the same idea with warriors. Samurai had once lived on their own lands. Starting in the late 1500s, and under the Tokugawa shoguns who ruled from 1603, most were moved into their lords' castle towns and paid a yearly stipend, counted in rice. A **salaried samurai** was a professional soldier and
-official who lived on a salary from his lord, not on land he controlled himself.
+*Same:* both turned the men with weapons and offices into people who lived on the ruler's pay.
+*Different:* the Ottomans built a new class out of outsiders; Japan remade an old warrior class
+by cutting it off from its land. *Why:* the context. The Ottomans ruled many conquered Christian
+subjects and feared over-mighty Turkish families; Japan's rulers feared the warrior lords who had
+just spent a century fighting each other.
 
-Three empires, one mechanism: pay people for service, keep them away from a power base of
-their own, and they stay loyal because they have nowhere else to go.
+The Mughals had a third answer. Akbar gave officials a numbered rank, a **mansab**, and paid
+many of them with a **jagir**, the right to collect the land tax from one area. Jagirs were moved
+every few years and ranks were not inherited, so a **mansabdar** could get rich serving the
+emperor but could never turn one place into his own kingdom.
 
-**Question two: why should anyone obey me?** Most people would never see the ruler, and
-fear alone is expensive. So rulers made their power look like it came from somewhere higher,
-or simply too great to argue with. They used three kinds of tools, and every one of them was
-something people could see or hear about.
+**Job two: symbols that justify.** Most people would never see the ruler. So rulers used
+religious ideas, art and huge buildings to make their power look rightful, and the CED says they
+**continued** to: you saw rulers do this in Unit 1.
 
-*Religious ideas.* In Europe, kings like Louis XIV of France claimed **divine right**: God had
-chosen the king, so disobeying the king meant disobeying God. In West Africa, Askia Muhammad
-had seized the Songhai throne in 1493, so he needed a reason for people to accept him. He
-made the pilgrimage to Mecca, came home with the title of caliph, a deputy leader for
-Muslims, and backed Islamic scholars and judges at home. **Songhai's promotion of Islam** made
-the ruler the protector of the faith. In the Andes, the Inca ruler was called the son of the
-Sun, and the sun temple at the center of Cuzco, the **Coricancha**, put that claim in stone at
-the heart of the capital.
+Compare two religious ideas. In France, Louis XIV claimed **divine right**: God had placed the
+king on the throne, so obeying the king meant obeying God. In West Africa, Askia Muhammad had
+seized the Songhai throne in 1493, so birth could not be his claim. He made the pilgrimage to
+Mecca, came home with the title of caliph, a deputy leader for Muslims, and backed Islamic
+scholars and judges. **Songhai's promotion of Islam** made him the protector of the faith.
+*Same:* both tied the ruler to God. *Different:* Louis's claim came with his birth; Askia's had
+to be earned, because he took power by force. *Why:* the context of how each got the throne.
 
-*Art.* The Qing emperors were Manchus, outsiders ruling a mostly Han Chinese empire. Their
-**imperial portraits** showed them in the robes and poses of a Chinese emperor. The Qianlong
-Emperor was also painted as a Buddhist holy figure for his Tibetan and Mongol subjects. Same
-ruler, different picture, depending on who needed convincing.
+Compare two buildings. The Mughals built enormous **mausolea and mosques**, tombs such as the
+Taj Mahal and great mosques in their capitals, that showed the dynasty as rich, pious and
+permanent. Louis XIV moved his court to the palace of **Versailles** in 1682. As a boy he had
+lived through the Fronde, years when great nobles rose against the crown. At Versailles the
+great nobles spent their time at court, competing for the king's favor under his eye, instead
+of building power on their own estates. *Same:* both are monumental architecture that made a
+ruler's power impossible to miss. *Different:* a Mughal tomb honored the dynasty and its faith;
+Versailles was also a working tool for watching the nobles. *Why:* Louis's context was a
+nobility that had already rebelled once.
 
-*Monumental architecture.* The Mughals built enormous **mausolea and mosques**, tombs such as
-the Taj Mahal and great mosques in their capitals, that said this family was rich, pious and
-permanent. Louis XIV moved his court to the palace of **Versailles** in 1682. It was a
-building designed to make the king look like the center of everything, and it did a second
-job: the great nobles of France spent their time at court, competing for the king's favor,
-instead of building power back home.
+**Job three: systems that pay.** Armies, salaries and palaces cost enormous amounts, including
+the guns from 3.1. The CED names three ways rulers raised it: tribute, tax farming, and innovative tax-collection systems.
 
-**Question three: who pays?** Armies, salaries and palaces cost enormous amounts, including the guns from 3.1. So rulers built systems to get money out of millions of farmers.
-The Ottomans used **tax farming**: the state sold the right to collect a tax to a bidder, who
-paid the state and then collected from the people, keeping whatever extra he could get. The sultan got cash fast, and the farmers could get squeezed. The Mughals relied on
-**zamindars**, local landholders who knew every field, to collect the land tax and keep a
-share of it. The Mexica in central Mexico kept painted **tribute lists** showing what each
-conquered province owed the capital: cloaks, cacao, feathers, warrior costumes. (The copies that survive were made around the time of the Spanish conquest, or just after it.) And in Ming
-China, the government combined many taxes and labor duties into payments in **silver**, a
-change called the Single Whip reform, which made taxes simpler to collect and tied China to
-the silver of the wider world. That last connection is a Unit 4 story.
+Compare two ways of collecting. The Ottomans used **tax farming**: the state sold the right to
+collect a tax to a bidder, who paid the state and kept whatever extra he collected. It grew in
+the late 1500s, when the sultans needed cash fast to pay salaried soldiers. The Mughals relied on
+**zamindars**, local landholders who knew the fields, to collect the land tax and keep a share.
+*Same:* both handed collection to a middleman. *Different:* the Ottoman tax farmer bought his
+right for cash; the zamindar held his by inheritance and local standing. *Why:* the Ottomans needed money now;
+the Mughals needed people who knew a huge farming country village by village.
 
-**The twist.** The three answers were not separate. Money paid the people who served, the
-people who served collected the money, and the symbols made both serving and paying feel
-right. The cleverest tools did two jobs at once: a jagir paid an official and tied him to the
-emperor; Versailles was a symbol and a leash on the nobles.
+Compare what was paid. The Mexica kept painted **tribute lists** of what each conquered province
+owed the capital: cloaks, cacao, feathers, warrior costumes. Ming China combined many taxes and
+labor duties into payments in **silver**, which made collection simpler. *Same:* both moved
+wealth from the provinces to the center. *Different:* goods from conquered peoples against one
+tax in coin. Where China's silver came from is a Unit 4 story.
 
-Rulers used religion to justify their power. But what happened to religion itself in these
-same centuries? That question is Topic 3.3.
+**The landing.** Three jobs, and every ruler had to do all three: money paid the people who
+served, the people who served collected the money, and the symbols made serving and paying feel
+right. The tools differed because each ruler's situation differed.
+
+Rulers used religion to justify their power. But what happened to religion itself in these same
+centuries? That question is Topic 3.3.
 
 ## 4. The spine
 
-**Conquest wins land; people, legitimacy and money hold it.** Three parts, in this order:
-**people who serve, symbols that justify, systems that pay.** (Approved in the unit story map.)
+**Conquest wins land; people, legitimacy and money hold it.** People who serve, symbols that
+justify, systems that pay: the CED's own order (KC-4.3.I.C, I.A, I.D). (Approved in the unit
+story map; consistent with the CED.)
 
 Shorter for the wall: **Guns win land. People, symbols and money hold it.**
 
-The question every example answers: **how did this help a ruler keep control of people who
-had no reason to obey?**
-
-The unit spine, "Gunpowder won the land. Holding it was the hard part," is this topic's
-whole subject.
+The comparison every example answers: **same job, different tools. Why different?**
 
 ## 5. Must-have evidence and what each one proves
 
-Weight is equal across the three branches, measured in class time, not in number of
-examples. Legitimacy has the most named examples, so they are grouped into three moves
-(belief, image, building) rather than given a slide each.
+Only the Key Concept sentences are required. These examples are chosen because each sits in a
+comparison that makes its Key Concept clear. Weight is equal across the three jobs in class time.
 
-| Evidence | CED anchor | What it proves (the "so what") |
-|---|---|---|
-| Mehmed and Çandarlı Halil, 1453 (hook) | KC-4.3.I.C | A ruler's most dangerous servants are the ones with power of their own. Sets up why rulers built new kinds of servants. |
-| Ottoman devshirme and the Janissaries | KC-4.3.I.C | Loyalty by design: men with no family power inside the empire depend wholly on the sultan. |
-| Mughal mansabdars and jagirs (Rajputs inside it) | KC-4.3.I.C | Loyalty by rank and rotation: paid well, moved often, nothing inherited. |
-| Salaried samurai | KC-4.3.I.C | The same idea in Japan: warriors taken off their land and paid a stipend. |
-| Divine right (Louis XIV) | KC-4.3.I.A | Religious idea: obeying the king is obeying God. |
-| Songhai promotion of Islam (Askia Muhammad) | KC-4.3.I.A | A ruler who took the throne by force wins acceptance as protector of the faith. |
-| Inca sun temple at Cuzco (Coricancha) | KC-4.3.I.A | Religion and architecture together: the ruler as son of the Sun, at the center of the capital. |
-| Qing imperial portraits | KC-4.3.I.A | Art: an outsider dynasty shows itself as the rightful emperor, a different image for each audience. |
-| Mughal mausolea and mosques | KC-4.3.I.A | Architecture: a dynasty that looks rich, pious and permanent. |
-| Versailles | KC-4.3.I.A (and I.C) | Architecture that also controls the nobles. Carries the twist. |
-| Ottoman tax farming | KC-4.3.I.D | Cash now for the state, squeeze later for the farmers. |
-| Mughal zamindar tax collection | KC-4.3.I.D | The state needs local men who know the fields, and pays them a share. |
-| Mexica tribute lists | KC-4.3.I.D | Conquered provinces pay the center, recorded in a painted ledger. |
-| Ming taxes in silver | KC-4.3.I.D | An "innovative tax-collection system": one payment in silver. Its link to world silver is a bridge to Unit 4 only. |
+| Evidence | CED anchor | Compared with | What the comparison proves |
+|---|---|---|---|
+| Mehmed and Çandarlı Halil, 1453 (context hook) | KC-4.3.I.C | none | Why rulers wanted servants with no power of their own. |
+| Ottoman devshirme and Janissaries (CED example) | KC-4.3.I.C | salaried samurai | Same job, new class built from outsiders. |
+| Salaried samurai (CED example) | KC-4.3.I.C | devshirme | Same job, an old class cut off from its land. |
+| Mughal mansabdars and jagirs (not a CED example; kept because the Unit 3 coherence contract requires it and it links to zamindars) | KC-4.3.I.C | the other two, one line | A third way: rank and rotation. |
+| Divine right (CED example) | KC-4.3.I.A, religious ideas | Songhai Islam | Religious claim that comes with birth. |
+| Songhai promotion of Islam (CED example) | KC-4.3.I.A, religious ideas | divine right | Religious claim earned by a ruler who took power by force. |
+| Mughal mausolea and mosques (CED example) | KC-4.3.I.A, architecture | Versailles | Building as dynastic and religious statement. |
+| Versailles (CED example) | KC-4.3.I.A, architecture | Mughal tombs | Building as statement and as a tool to watch the nobles. |
+| Ottoman tax farming (CED example) | KC-4.3.I.D | zamindars | Cash now, through a bidder. |
+| Mughal zamindar collection (CED example) | KC-4.3.I.D | tax farming | Local knowledge, through a landholder. |
+| Mexica tribute lists (CED example) | KC-4.3.I.D | Ming silver | Goods from conquered provinces. |
+| Ming taxes in silver (CED example) | KC-4.3.I.D | Mexica tribute | One tax in coin. Silver's source is Unit 4. |
+
+**CED examples not used in the class story**, all optional: Mexica human sacrifice, Qing imperial
+portraits, the Incan sun temple of Cuzco. See question 3.
 
 ## 6. Narrative beats
 
 1. **Teacher Preflight.**
-2. **BeReady.** No notes. Three prompts from 3.1: (a) Why could only big states make full use
-   of cannons? (b) Name the four land empires the College Board names, and where each was.
-   (c) Morocco won at Tondibi. What did it find hard afterward? **Bridge:** "Mehmed took
+2. **BeReady.** No notes. Three prompts from 3.1: (a) Why could only big states make full use of
+   cannons? (b) Name the four land empires the College Board names, and where each was. (c)
+   Morocco won at Tondibi. What did it find hard afterward? **Bridge:** "Mehmed took
    Constantinople in seven weeks. Now he has to run it."
-3. **Topic question on screen:** Once an empire had conquered the land, how did its ruler
-   get millions of people to serve, obey and pay?
-4. **The three questions.** Who will serve me? Why should anyone obey me? Who pays? Name
-   them once, as the map for the whole lesson.
-5. **People, the hook:** the morning after 1453. Mehmed arrests Çandarlı Halil. Why a
-   servant with his own family power is a danger.
-6. **People, the mechanism:** devshirme and Janissaries; mansabdars and jagirs (Rajputs as
-   one line); salaried samurai. One mechanism, three empires: pay them, keep them from a
-   power base, and they have nowhere else to go.
-7. **Symbols, belief:** divine right; Askia Muhammad and Songhai Islam; the Inca as son of
-   the Sun.
-8. **Symbols, image and stone:** Qing portraits (one ruler, two pictures); Mughal tombs and
-   mosques; the Coricancha; Versailles.
-9. **Money:** tax farming; zamindars; Mexica tribute lists; Ming silver (Single Whip). One
-   line pointing at Unit 4 for where the silver came from.
-10. **The twist:** the three parts hold each other up, and the best tools did two jobs
-    (jagir, Versailles).
-11. **Retelling slide** (proposed below).
-12. **Reasoning:** model one causal sentence, then students write 2 to 3 sentences about
-    ONE tool: *[Ruler] used [tool], which [what it did], so [who] [served / obeyed / paid]
-    because ___.*
-13. **AP synthesis and hand-off:** answer the learning objective in two sentences, then
-    "Rulers used religion to justify their power. But what happened to religion itself in
-    these same centuries?"
+3. **Topic question**, the learning objective in student words: How did rulers make their power
+   look rightful and keep control of their empires, and why did different rulers do it
+   differently?
+4. **Context (4.A):** the morning after a conquest. Huge, diverse empires; powerful local men;
+   expensive gun armies. Three jobs.
+5. **Job one, people:** the Halil hook; devshirme compared with salaried samurai (same,
+   different, why); mansabdars as a third way.
+6. **Job two, symbols, religious ideas:** divine right compared with Songhai Islam.
+7. **Job two, symbols, buildings:** Mughal tombs and mosques compared with Versailles.
+8. **Job three, money:** tax farming compared with zamindars; Mexica tribute compared with Ming
+   silver.
+9. **The landing:** the three jobs hold each other up; the tools differ because the contexts
+   differ.
+10. **Retelling slide** (below).
+11. **Reasoning, comparison with context:** model one sentence, then students write 2 to 3
+    sentences on ONE pair: *Both ___ and ___ [did this job] by ___, but ___, while ___. They
+    differed because ___ [the context].*
+12. **AP synthesis and hand-off:** answer the learning objective in two sentences, then "Rulers
+    used religion to justify their power. But what happened to religion itself in these same
+    centuries?"
 
 ## 7. Proposed retelling slide
 
-**Trunk and branches**, the Unit 3 template built for exactly this shape: one claim holding
-up three branches, each with its example chips.
+**Trunk and branches**, with each branch carrying its comparison.
 
 - **Trunk:** Conquest wins land. People, symbols and money hold it.
-- **Branch 1, People who serve** (Who will serve me?): devshirme, mansabdars, salaried
-  samurai.
-- **Branch 2, Symbols that justify** (Why should anyone obey me?): divine right, Songhai
-  Islam, Inca sun temple, Qing portraits, Mughal tombs and mosques, Versailles.
-- **Branch 3, Systems that pay** (Who pays?): tax farming, zamindars, Mexica tribute, Ming
-  silver.
+- **People who serve:** devshirme / salaried samurai (outsiders made loyal / warriors taken off
+  their land).
+- **Symbols that justify:** divine right / Songhai Islam; Versailles / Mughal tombs.
+- **Systems that pay:** tax farming / zamindars; Mexica tribute / Ming silver.
 
-Why this and not a chain: 3.2's argument is three parts holding up one claim, not a sequence
-of causes. A student who can redraw the tree from memory, with the question on each branch,
-can answer any 3.2 prompt by picking a branch and an example.
+Why this shape: the topic's content is three parts holding up one claim, and the CED's reasoning
+move is comparison, so each branch shows its pair. A student who can redraw the tree with one pair
+per branch, and say why the pair differs, can answer any 3.2 prompt.
 
-## 8. Owns / bridge-only (from the unit story map)
+## 8. Owns / bridge-only (from the unit story map, checked against the CED)
 
-- **3.2 owns:** all three branches with equal weight. People: devshirme, salaried samurai,
-  mansabdars. Legitimacy: divine right, Versailles, Qing imperial portraits, Mughal mausolea
-  and mosques, the Inca sun temple at Cuzco, Songhai promotion of Islam. Money: Ottoman tax
-  farming, Mughal zamindar collection, Mexica tribute lists, Ming taxes in silver.
-- **Bridge only:** religious *change* (3.3). Here religion appears only as a ruler's tool.
-  Also bridge only, by this draft's choice: Ming silver's link to Japan and Spanish America
-  (Unit 4), and the cracks in these systems after 1700 (eBook depth, not class content).
-- **Out of the class story** (recommended, question 5): the Ottoman millet system and the
-  Qing examination and Banner systems. Real and accurate, but not CED examples for this
-  topic, and they are what crowded legitimacy out before. They can stay in the eBook.
-- **Hands to 3.3:** "Rulers used religion to justify their power. But what happened to
-  religion itself in these same centuries?"
+- **3.2 owns:** the three Key Concepts (KC-4.3.I.C, I.A, I.D) and the examples above.
+- **Bridge only:** religious *change* (3.3); where Ming silver came from (Unit 4).
+- **Out of the class story:** the Ottoman millet system and the Qing examination and Banner
+  systems. Accurate, but not on the CED page for this topic, and they are what crowded
+  KC-4.3.I.A out. They can stay in the eBook as depth.
+- **Hands to 3.3:** "Rulers used religion to justify their power. But what happened to religion
+  itself in these same centuries?"
 
 ## 9. Visuals each beat needs (what kind of object, not yet a file)
 
-Pictures are chosen after approval. Jeff's shopping list is `docs/UNIT-3-PICTURE-LIST.md`;
-this story uses every row on it and adds one.
+From `docs/UNIT-3-PICTURE-LIST.md`, rows this story uses:
 
-- Beat 5: no picture needed; a simple card naming Mehmed and Halil. (An Ottoman portrait of
-  Mehmed exists, but the slide's point is a decision, not a face.)
-- Beat 6: the Süleymanname devshirme registration miniature (1558, on the list). Mansabdar
-  ranks and samurai stipends have no good single picture: a rank and pay ladder diagram, as
-  the list recommends.
-- Beat 7: Rigaud's Louis XIV (1701, on the list); the Tomb of Askia, Gao (modern photograph
-  of the 1495 building, on the list); Coricancha walls under Santo Domingo (modern
-  photograph, on the list).
-- Beat 8: Qianlong in court robes (1736, on the list) **and, added by this story,** *The
-  Qianlong Emperor as Manjushri, the Bodhisattva of Wisdom*, Freer Gallery of Art,
-  Smithsonian, F2000.4, mid-18th century, imperial workshop with the face by Giuseppe
-  Castiglione. The pair is the slide: one emperor, two images, two audiences. Bichitr's
-  *Jahangir Preferring a Sufi Shaikh to Kings* (on the list) for the Mughal claim; a modern
-  photograph of the Taj Mahal or Humayun's Tomb for the buildings.
-- Beat 9: Codex Mendoza tribute page (c. 1541, a post-conquest copy, on the list); a Ming
-  silver ingot dated by a museum (on the list). Tax farming and zamindars: a chain diagram,
-  peasant to collector to treasury.
-- Beat 11: the trunk-and-branches template, no picture.
-
-Any AI reconstruction carries `Historical Reconstruction - AI Generated` and never goes into
-the Evidence Lab.
+- Beat 5: Süleymanname devshirme registration miniature (1558). Samurai stipends and mansabdar
+  ranks have no good single picture: a simple diagram.
+- Beat 6: Rigaud's Louis XIV (1701); the Tomb of Askia, Gao (modern photograph of the 1495
+  building).
+- Beat 7: a modern photograph of the Taj Mahal or Humayun's Tomb; a view of Versailles; Bichitr's
+  *Jahangir Preferring a Sufi Shaikh to Kings* if a Mughal legitimacy picture is wanted.
+- Beat 8: Codex Mendoza tribute page (c. 1541, post-conquest); a Ming silver ingot a museum dates
+  to the Ming. Tax farming and zamindars: a chain diagram.
+- **No longer needed by this story:** the Qianlong court-robes portrait, the Coricancha, and the
+  Qianlong-as-Manjushri thangka revision 1 added. Kept on the list in case question 3 brings Qing
+  portraits back.
 
 ## 10. Questions for Jeff (one list)
 
 **From 3.1's open decisions, which cross into 3.2**
 
-1. **The devshirme card in 3.1.** I checked the live 3.1 page: its lecture now shows three
-   cards (gunpowder, the four empires, Constantinople) and no devshirme card. The only
-   devshirme text left in 3.1 is two entries in an Evidence Lab list the page never draws.
-   So nothing devshirme reaches 3.1 students, and 3.2 teaches the system in full.
-   **Recommend:** 3.2 owns devshirme as this draft does; I list the two dead 3.1 entries as
-   an adjacent finding rather than edit 3.1. (3.1's other half of that decision, that it has
-   no lecture card for the two rivalries, stays 3.1's.)
-2. **The Moroccan motive.** 3.1's eBook chapter says Morocco invaded Songhai for the gold
-   and salt trade. Sources support that, and also say al-Mansur wanted Songhai to pay him for
-   the Taghaza salt mines and may have been pressing his claim to be caliph, a religious
-   and political claim. This crosses into 3.2 because 3.2 teaches Songhai's rulers using
-   Islam for legitimacy. **Recommend:** 3.2 says nothing about Morocco (its Songhai story is
-   Askia Muhammad, a century earlier); 3.1's chapter keeps the economic motive and adds one
-   sentence that Morocco's sultan also claimed authority as caliph, marked "historians also
-   point to", so the CED's political-and-religious framing is visible. That edit is 3.1's,
-   so I would make it only on your word.
+1. **The devshirme card in 3.1.** The live 3.1 page shows three lecture cards and no devshirme
+   card; the only devshirme text left in 3.1 is two entries in an Evidence Lab list the page never
+   draws. **Recommend:** 3.2 teaches devshirme in full, as here; I list the two dead 3.1 entries
+   as an adjacent finding rather than edit 3.1.
+2. **The Moroccan motive.** Sources support 3.1's gold-and-salt motive, and also say al-Mansur
+   demanded payment for the Taghaza salt and may have pressed his claim to be caliph. The CED lists
+   Morocco against Songhai under KC-4.3.III.i (political and religious) for 3.1 and again under
+   KC-4.3.III.ii in Unit 4. **Recommend:** 3.2 says nothing about Morocco; 3.1's chapter keeps the
+   economic motive and adds one sourced sentence on the caliphate claim. That edit is 3.1's, so
+   only on your word.
 
 **Scope**
 
-3. **Mexica human sacrifice.** The lesson lists it among the CED's examples for
-   KC-4.3.I.A; the approved story map and the repo's CED contract leave it out. **Recommend:**
-   leave it out of the slides, reading and checkpoints, as the story map does. The Key
-   Concept band shows the CED's sentence, not its examples, so nothing displays it.
-4. **The opening hook** (Mehmed arresting and executing his grand vizier). It is the cleanest
-   way into "who will serve me", and it continues 3.1's last line. **Recommend:** keep, worded
-   as in the story. One nuance is in the ledger: historians agree on the arrest and
-   execution, but the full switch to devshirme-trained grand viziers took until the 1500s,
-   so the story says only that Mehmed wanted servants who owed everything to him.
-5. **Accommodation, millet, and the Qing exam and Banners.** **Recommend:** fold the Rajputs
-   into the mansabdar paragraph (one line), and take the millet system and the Qing
-   exam and Banner systems out of the lecture and the First & 10. They stay in the eBook as
-   depth. This is what gives legitimacy its equal share.
+3. **Optional CED examples left out:** Mexica human sacrifice, Qing imperial portraits, the Inca
+   sun temple. **Recommend:** leave them out of the class story, reading and checkpoints; the two
+   religious-idea and two building examples already make KC-4.3.I.A clear. Qing portraits could go
+   in the eBook. Say if you want any of them in class.
+4. **The opening hook** (Mehmed and Halil). **Recommend:** keep, worded as above. Historians agree
+   on the arrest and execution; the full switch to devshirme-trained grand viziers came under
+   Süleyman, so the story claims only what Mehmed wanted.
+5. **Take the millet system and the Qing exam and Banners out of the lecture and the First & 10**,
+   and fold the Rajputs into one mansabdar line. **Recommend:** yes.
 
 **Teaching calls**
 
-6. **Skill Builder skill.** It now teaches comparison (devshirme against mansabdar).
-   **Recommend:** make it causation, using the sentence frame in beat 12, since the objective
-   asks "how" and 3.4 is the comparison topic.
-7. **BeSurreal.** It is a Rajput mansabdar (people), and the BeInTheRoom is Akbar's revenue
-   commission (people and money), so no activity puts a student inside the legitimacy
-   branch. **Recommend:** replace the BeSurreal with a legitimacy prompt, for example a
-   provincial noble arriving at Versailles in the 1680s, or a scholar in Timbuktu under
-   Askia Muhammad, and fix the BeInTheRoom's misquoted objective. If you prefer to keep the
-   mansabdar, I will fix its city (Fatehpur Sikri, not Delhi) and the inheritance line.
-8. **Primary Source.** The "adapted from the Ain-i-Akbari" passage reads as a modern
-   summary. **Recommend:** replace it with a short real passage from H. Blochmann's 1873
-   English translation of the Ain-i-Akbari (public domain), with a plain-language gloss
-   under it, and say on the page that it is a translation. Or, if you prefer a legitimacy
-   source for balance, a short passage on divine right from Bossuet or James I.
-9. **The eBook chapter.** **Recommend:** reorder its sections to the spine (people, symbols,
-   money), add short passages for the samurai, Songhai, Cuzco and the Mexica tribute lists,
-   and keep the local-elites and "where it cracked" sections as depth at the end. This is the
-   largest single edit in the build.
-10. **Required modules for October 20 and 21.** 3.1 required 02, 06, 07 and 10.
-    **Recommend** the same for 3.2: the First & 10 read in class, both checkpoints and the
-    Evidence Lab, with the Skill Builder and BeInTheRoom optional. I will report the minutes
-    against the 80-minute budget once the deck is built.
-11. **Reading title.** The First & 10 is "Running an Empire". **Recommend:** "Holding What
-    You Won", used on the reading, both lesson files and the Canvas assignment. Keep the old
-    title if you prefer it.
-12. **Pictures.** The story adds one row to the shopping list: the Qianlong-as-Manjushri
-    thangka (Freer F2000.4), to pair with the court-robes portrait. I have added it to
-    `docs/UNIT-3-PICTURE-LIST.md`. Until your uploads arrive I will build with pictures
-    already verified in the repo or leave slots empty.
+6. **Skill Builder.** It already teaches comparison, which is the CED's move. **Recommend:** keep
+   comparison, add the CED's contextualization step ("what situation was each ruler in?"), and
+   compare devshirme with salaried samurai rather than with the mansabdar system.
+7. **BeSurreal.** The BeInTheRoom is Akbar's revenue commission (people and money), so no activity
+   puts a student inside the symbols job. **Recommend:** a legitimacy prompt, for example a
+   provincial noble arriving at Versailles in the 1680s, or a scholar in Timbuktu under Askia
+   Muhammad. If you prefer to keep the mansabdar, I fix the city and the inheritance line.
+8. **Primary Source.** **Recommend:** the CED's own sample pair, short excerpts from Leo Africanus
+   on the Songhai court and Busbecq on the Ottoman court, both in public-domain translations,
+   replacing the composed Ain-i-Akbari passage. They match the story exactly: Busbecq on how the
+   sultan chose his servants (people), Leo on the Songhai king's scholars and judges (symbols).
+   Every line checked against the printed translation before it ships.
+9. **The eBook chapter.** **Recommend:** reorder to people, symbols, money; add the samurai and
+   Songhai; keep the local-elites and "where it cracked" sections as depth at the end.
+10. **Required modules for October 20 and 21.** **Recommend** the same as 3.1: 02 (First & 10, in
+    class), 06, 07 and 10, with the Skill Builder and BeInTheRoom optional. Minutes reported once
+    the deck exists.
+11. **Reading title.** **Recommend** "Holding What You Won" everywhere, or keep "Running an
+    Empire".
+
+**After you approve:** the First & 10 is written from this story first, and you read it; the
+teacher presentation is built from the same story next.
