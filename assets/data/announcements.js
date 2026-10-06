@@ -1682,7 +1682,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '07', title: 'Evidence Lab' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 3.4 module you did not complete in class. Then review Topics 3.1 to 3.4 for the Unit 3 Quiz.', due: 'Wednesday, October 28' }
+      ],
+      homeworkDue: 'Wednesday, October 28'
     },
     /* 2026-10-27  <-  lesson-3-4-comparison.js */
     {
@@ -1706,14 +1709,18 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '07', title: 'Evidence Lab' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 3.4 module you did not complete in class. Then review Topics 3.1 to 3.4 for the Unit 3 Quiz.', due: 'Thursday, October 29' }
+      ],
+      homeworkDue: 'Thursday, October 29'
     }
   ],
 
   assessments: [
     { date: '2026-08-25', title: 'Foundations Assessment', detail: 'Covers Foundations 0 to 5, in class Monday, August 24 for Green and Tuesday, August 25 for Silver', type: 'Test' },
     { date: '2026-09-17', title: 'Unit 1 Quiz', detail: 'Covers Topics 1.1 to 1.7, state building and societal organization across six Unit 1 regions, c. 1200 to c. 1450. Given at the start of the block on the same day Topic 2.1 begins, Wednesday, September 16 for Green and Thursday, September 17 for Silver, not on a separate day.', type: 'Quiz', greenDate: '2026-09-16', silverDate: '2026-09-17' },
-    { date: '2026-10-08', title: 'Eras 2 Exam, c. 1200 to c. 1450', detail: 'Covers Units 1 and 2 in full: state building across six Unit 1 regions, plus the three Afro-Eurasian trade networks of Unit 2 and their cultural, environmental, and comparative consequences. PSAT scheduling shift: Tuesday, October 6 is not a Green or Silver day; Green takes the exam Wednesday, October 7, and Silver takes it Thursday, October 8.', type: 'Exam', greenDate: '2026-10-07', silverDate: '2026-10-08' }
+    { date: '2026-10-08', title: 'Eras 2 Exam, c. 1200 to c. 1450', detail: 'Covers Units 1 and 2 in full: state building across six Unit 1 regions, plus the three Afro-Eurasian trade networks of Unit 2 and their cultural, environmental, and comparative consequences. PSAT scheduling shift: Tuesday, October 6 is not a Green or Silver day; Green takes the exam Wednesday, October 7, and Silver takes it Thursday, October 8.', type: 'Exam', greenDate: '2026-10-07', silverDate: '2026-10-08' },
+    { date: '2026-10-29', title: 'Unit 3 Quiz', detail: 'Covers Topics 3.1 to 3.4, land-based empires, c. 1450 to c. 1750: how empires expanded, how rulers administered and justified their rule, how belief systems shaped and divided them, and how to compare them. In class Wednesday, October 28 for Green and Thursday, October 29 for Silver.', type: 'Quiz', greenDate: '2026-10-28', silverDate: '2026-10-29' }
   ],
 
   reminders: [

@@ -2289,8 +2289,8 @@ deleted row in the schedule and every affected date moves with it.
 
 | Section | Taught | Work due |
 | --- | --- | --- |
-| Green Day | Monday, October 26 | nothing assigned |
-| Silver Day | Tuesday, October 27 | nothing assigned |
+| Green Day | Monday, October 26 | Wednesday, October 28 |
+| Silver Day | Tuesday, October 27 | Thursday, October 29 |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
@@ -2341,7 +2341,14 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 8px 0;">Finish Checkpoint 2, and any other required 3.4 module you did not complete in class. Then review Topics 3.1 to 3.4 for the Unit 3 Quiz.
+                    </li>
+                </ul>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Wednesday, October 28</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Thursday, October 29</span></span>
+                </p>
             </td>
         </tr>
         <tr>
@@ -2442,6 +2449,41 @@ Quizzes & Exams slide.
 </table>
 ```
 
+## Unit 3 Quiz
+
+**Event title:** `APW - Unit 3 Quiz`
+
+**Assign to, one row per section:**
+
+| Section | Date |
+| --- | --- |
+| Green Day | Wednesday, October 28 |
+| Silver Day | Thursday, October 29 |
+
+```html
+<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
+    <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
+    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Quiz</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Unit 3 Quiz</div>
+    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Wednesday, October 28</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Thursday, October 29</span></span>
+    </div>
+</div>
+<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
+    <tbody>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Covers Topics 3.1 to 3.4, land-based empires, c. 1450 to c. 1750: how empires expanded, how rulers administered and justified their rule, how belief systems shaped and divided them, and how to compare them. In class Wednesday, October 28 for Green and Thursday, October 29 for Silver.</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
 ---
 
-25 events, built from 50 class days (25 green, 25 silver), plus 2 quiz/exam event(s).
+25 events, built from 50 class days (25 green, 25 silver), plus 3 quiz/exam event(s).
