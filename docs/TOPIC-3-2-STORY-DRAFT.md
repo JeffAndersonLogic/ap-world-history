@@ -105,90 +105,132 @@ declared Skill Builder skill, "Comparison practice", matches the CED's reasoning
 
 ## 3. The ninth-grade story
 
-**The context: what was going on?** You know how 3.1 ended. Gunpowder let a few rulers
-conquer huge territories fast. Mehmed took Constantinople in seven weeks. Babur took north India in 1526. In the 1640s the Manchus took China. Now picture the morning after a conquest
-like that. The ruler owns land full of people who speak other languages, pray in other ways,
-and never asked to be ruled by him. Some of the most powerful people in it have their own
-lands, their own soldiers, their own followers. And those new gun armies cost a fortune. So
-every ruler in this unit faced the same three jobs. **Find people who will serve you and not
-turn on you. Convince everyone else that you deserve to rule. Collect enough money to pay for
-all of it.** The College Board's point is that rulers did all three, in different ways. Our
-job is to compare the ways, and explain why they were different.
+Written the way the First & 10 will tell it: to the student, in the reading's voice, with every
+term explained the first time it appears and the comparisons carried in AP Thinking boxes, as
+the reading carries them. After approval the reading adds its vocabulary chips, takeaway and
+three questions around this text; it does not tell a different story. Nothing here goes beyond
+the claim ledger.
 
-**Job one: people who serve.** Mehmed knew the danger. The day after Constantinople fell, he had
-his grand vizier, Çandarlı Halil, arrested, and soon executed. Halil came from a Turkish family
-that had held that top job for much of the past hundred years, and a man with family power of
-his own can say no. Rulers wanted servants who depended on them for everything.
+### 1. The morning after the conquest
 
-Compare two answers. The Ottomans used the **devshirme**. Officials took Christian boys, mostly
-from the Balkans, away from their families, converted them to Islam and trained them. The
-strongest became **Janissaries**, the sultan's professional soldiers; the smartest went to
-palace schools and could rise to govern provinces or even become grand vizier. It was forced,
-and cruel to the families. It produced men with no family power inside the empire, whose whole
-lives depended on the sultan.
+Topic 3.1 ended with a problem. Gunpowder let a few rulers conquer enormous lands fast. Mehmed
+II took Constantinople in seven weeks in 1453. Babur won north India in 1526. In 1644 the
+Manchus took Beijing and went on to conquer China.
 
-Japan answered the same question differently. Japan had just come through more than a century
-of civil war between lords with their own lands and armies. Starting in the late 1500s, its
-rulers took most samurai off their lands, moved them into their lords' castle towns, and paid
-them a yearly stipend counted in rice. A **salaried samurai** was a professional warrior and
-official who lived on a salary, not on land he controlled.
+Now imagine you are one of those rulers on the morning after. You own a huge stretch of land
+full of people who speak other languages, pray in other ways, and never asked to be ruled by
+you. Some of them are powerful: they have their own lands, their own soldiers and their own
+followers. And your new army, with its cannons and guns, costs a fortune to keep.
 
-*Same:* both turned the men with weapons and offices into people who lived on the ruler's pay.
-*Different:* the Ottomans built a new class out of outsiders; Japan remade an old warrior class
-by cutting it off from its land. *Why:* the context. The Ottomans ruled many conquered Christian
-subjects and feared over-mighty Turkish families; Japan's rulers feared the warrior lords who had
-just spent a century fighting each other.
+Winning the land was the fast part. Holding it was the hard part. To hold on, every ruler in
+this unit had to do three jobs:
 
-The Mughals had a third answer. Akbar gave officials a numbered rank, a **mansab**, and paid
-many of them with a **jagir**, the right to collect the land tax from one area. Jagirs were moved
-every few years and ranks were not inherited, so a **mansabdar** could get rich serving the
-emperor but could never turn one place into his own kingdom.
+1. Find people who would serve him and not turn on him.
+2. Convince everyone else that he deserved to rule.
+3. Collect enough money to pay for all of it.
 
-**Job two: symbols that justify.** Most people would never see the ruler. So rulers used
-religious ideas, art and huge buildings to make their power look rightful, and the CED says they
-**continued** to: you saw rulers do this in Unit 1.
+Every ruler did all three jobs. They did not do them the same way, and the reasons they
+differed tell you a lot about each empire.
 
-Compare two religious ideas. In France, Louis XIV claimed **divine right**: God had placed the
-king on the throne, so obeying the king meant obeying God. In West Africa, Askia Muhammad had
-seized the Songhai throne in 1493, so birth could not be his claim. He made the pilgrimage to
-Mecca, came home with the title of caliph, a deputy leader for Muslims, and backed Islamic
-scholars and judges. **Songhai's promotion of Islam** made him the protector of the faith.
-*Same:* both tied the ruler to God. *Different:* Louis's claim came with his birth; Askia's had
-to be earned, because he took power by force. *Why:* the context of how each got the throne.
+> **AP Thinking, Contextualization.** Before you explain any tool a ruler used, ask what
+> situation he was in. A ruler who had just conquered strangers, or who had taken the throne by
+> force, needed different tools than one whose family had ruled for generations.
 
-Compare two buildings. The Mughals built enormous **mausolea and mosques**, tombs such as the
-Taj Mahal and great mosques in their capitals, that showed the dynasty as rich, pious and
-permanent. Louis XIV moved his court to the palace of **Versailles** in 1682. As a boy he had
-lived through the Fronde, years when great nobles rose against the crown. At Versailles the
-great nobles spent their time at court, competing for the king's favor under his eye, instead
-of building power on their own estates. *Same:* both are monumental architecture that made a
-ruler's power impossible to miss. *Different:* a Mughal tomb honored the dynasty and its faith;
-Versailles was also a working tool for watching the nobles. *Why:* Louis's context was a
-nobility that had already rebelled once.
+### 2. People who serve
 
-**Job three: systems that pay.** Armies, salaries and palaces cost enormous amounts, including
-the guns from 3.1. The CED names three ways rulers raised it: tribute, tax farming, and innovative tax-collection systems.
+Mehmed knew how dangerous a powerful servant could be. The day after Constantinople fell, he
+had his **grand vizier**, his chief minister, arrested, and soon executed. That minister,
+Çandarlı Halil, came from a Turkish family that had held the job for much of the past hundred
+years. A servant with a powerful family of his own can say no to his ruler. Rulers wanted
+servants who depended on them for everything.
 
-Compare two ways of collecting. The Ottomans used **tax farming**: the state sold the right to
-collect a tax to a bidder, who paid the state and kept whatever extra he collected. It grew in
-the late 1500s, when the sultans needed cash fast to pay salaried soldiers. The Mughals relied on
-**zamindars**, local landholders who knew the fields, to collect the land tax and keep a share.
-*Same:* both handed collection to a middleman. *Different:* the Ottoman tax farmer bought his
-right for cash; the zamindar held his by inheritance and local standing. *Why:* the Ottomans needed money now;
-the Mughals needed people who knew a huge farming country village by village.
+The Ottomans had a system for making servants like that. It was called the **devshirme**, a
+Turkish word meaning "collecting." Ottoman officials took Christian boys, mostly from the
+Balkans, away from their families, converted them to Islam and trained them. The strongest
+became **Janissaries**, the sultan's own full-time soldiers. The smartest went to schools in the
+palace and could rise to govern whole provinces, or even become grand vizier. The devshirme was
+forced, and it was cruel to the families who lost their sons. But it gave the sultan men who had
+no family power inside the empire. Everything they had came from him.
 
-Compare what was paid. The Mexica kept painted **tribute lists** of what each conquered province
-owed the capital: cloaks, cacao, feathers, warrior costumes. Ming China combined many taxes and
-labor duties into payments in **silver**, which made collection simpler. *Same:* both moved
-wealth from the provinces to the center. *Different:* goods from conquered peoples against one
-tax in coin. Where China's silver came from is a Unit 4 story.
+Japan solved the same problem in a different way. Japan was not a giant empire, but its rulers
+faced the same danger. For more than a century, Japanese lords with their own lands and armies
+had fought each other in civil wars. Starting in the late 1500s, Japan's new rulers and its
+great lords moved most **samurai**, the warrior class, off their lands and into the towns around
+their lords' castles. Instead of living off land he controlled, a **salaried samurai** received
+a fixed yearly payment from his lord, counted in rice.
 
-**The landing.** Three jobs, and every ruler had to do all three: money paid the people who
-served, the people who served collected the money, and the symbols made serving and paying feel
-right. The tools differed because each ruler's situation differed.
+The Mughals in India had a third answer. The emperor Akbar gave each of his officials a numbered
+rank, called a **mansab**. Many of these officials, called **mansabdars**, were paid with a
+**jagir**: the right to collect the land tax from one area. Every few years the jagirs were
+moved, and a son did not inherit his father's rank. A mansabdar could get rich serving the
+emperor, but he could never turn one place into his own little kingdom.
+
+> **AP Thinking, Comparison.** The devshirme and the salaried samurai did the same job: both
+> turned the people with weapons into people who lived on their ruler's pay. They did it in
+> different ways. The Ottomans built a new group out of outsiders, while Japan remade an old
+> warrior group by cutting it off from its land. Why? The Ottoman sultan feared powerful Turkish
+> families; Japan's rulers feared warrior lords who had just spent a century at war.
+
+### 3. Symbols that justify
+
+Most people in an empire would never see their ruler. No ruler could force millions of people to
+obey every day, so rulers tried to make their power look rightful, as if it came from God or was
+too great to question. They used religious ideas, art and huge buildings. Rulers had done this
+for centuries, as you saw in Unit 1, and these rulers kept doing it.
+
+Start with religious ideas. In France, King Louis XIV claimed **divine right**: God had chosen
+the king, so disobeying the king meant disobeying God. In West Africa, Askia Muhammad had a
+harder problem. He took the throne of the Songhai Empire by force in 1493, so he could not claim
+it by birth. He made the pilgrimage to Mecca and came home with the title of **caliph**, a
+leader of Muslims. Back home he supported Islamic scholars and judges. Promoting Islam made
+Askia the protector of the faith, which gave people a reason to accept a ruler who had seized
+power.
+
+Buildings did the same work in stone. The Mughal emperors built enormous mosques and
+**mausoleums**, giant tombs such as the Taj Mahal. They told everyone that this family was rich,
+faithful to Islam and here to stay. In France, Louis XIV moved his **court**, the nobles and
+officials who lived and worked around the king, to his enormous palace at **Versailles** in
+1682. As a boy, Louis had lived through years when France's great nobles rose up against the
+king. At Versailles, the great nobles spent their time at court, competing for the king's
+attention where he could watch them, instead of building up power on their own lands.
+
+> **AP Thinking, Comparison.** Divine right and Songhai's promotion of Islam both tied the ruler
+> to God. Louis's claim came with his birth; Askia had to earn his, because he took power by
+> force. The Mughal tombs and Versailles both made a ruler's power impossible to miss, but
+> Versailles did a second job: it kept the nobles where the king could see them.
+
+### 4. Systems that pay
+
+Armies, salaries and palaces cost enormous amounts of money, and so did the guns from Topic 3.1.
+Rulers raised it in three main ways: **tribute**, which is payment taken from conquered peoples;
+tax farming; and new ways of collecting taxes.
+
+The Ottomans used **tax farming**. The government sold the right to collect a tax to a bidder,
+who paid the state and then kept whatever extra he could collect. Tax farming grew in the late
+1500s, when the sultans needed cash fast to pay their full-time soldiers. The sultan got money
+quickly, but tax farmers could squeeze the people who paid. The Mughals relied on **zamindars**,
+local landholders who knew the fields and villages, to collect the land tax. A zamindar's right
+usually passed down in his family, and he kept a share of what he collected.
+
+Other rulers differed in what people paid. The Mexica, often called the Aztecs, kept painted
+tribute lists showing what each conquered province owed their capital: cotton cloaks, cacao
+beans, feathers and warrior costumes. Ming China moved the other way. It combined many separate
+taxes and labor duties into payments made in **silver**, which made taxes simpler to collect.
+Where all that silver came from is a story for Unit 4.
+
+> **AP Thinking, Comparison.** Tax farming and zamindars both handed tax collection to a
+> middleman. The Ottoman tax farmer bought his right for cash, because the sultan needed money
+> now. The zamindar held his through his family and his standing in the countryside, because
+> the Mughals needed people who knew a huge farming land village by village.
+
+### 5. How it fits together
+
+The three jobs depended on each other. Money paid the people who served. The people who served
+collected the money. Symbols made serving and paying feel right. Every ruler had to do all
+three, but each one chose tools that fit his own situation.
 
 Rulers used religion to justify their power. But what happened to religion itself in these same
-centuries? That question is Topic 3.3.
+centuries? That is the next topic.
 
 ## 4. The spine
 
