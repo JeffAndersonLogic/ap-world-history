@@ -32,7 +32,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "prompt",
       "eyebrow": "The Question",
       "title": "How did different empires increase their influence?",
-      "subtitle": "And why did they use different methods?"
+      "subtitle": "And why did they use different methods?",
+      "kc": "Unit 3: Learning Objective D"
     },
     {
       "kind": "action",
@@ -48,6 +49,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "grid",
       "eyebrow": "The Comparison Rule",
       "title": "Same category or no comparison.",
+      "kc": "KC-4.3",
       "cards": [
         {
           "title": "GOOD",

@@ -32,7 +32,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "prompt",
       "eyebrow": "The Question",
       "title": "What changed, what continued, and what shaped the change?",
-      "subtitle": "Three cases. Three different kinds of religious change."
+      "subtitle": "Three cases. Three different kinds of religious change.",
+      "kc": "Unit 3: Learning Objective C"
     },
     {
       "kind": "action",
