@@ -1517,7 +1517,8 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Finish Checkpoint 2, and any other required 3.1 module you did not complete in class.', due: 'Tuesday, October 20' }
       ],
-      homeworkDue: 'Tuesday, October 20'
+      homeworkDue: 'Tuesday, October 20',
+      dueDate: '2026-10-20'
     },
     /* 2026-10-19  <-  lesson-3-1-empires-expand.js */
     {
@@ -1544,7 +1545,56 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Finish Checkpoint 2, and any other required 3.1 module you did not complete in class.', due: 'Wednesday, October 21' }
       ],
-      homeworkDue: 'Wednesday, October 21'
+      homeworkDue: 'Wednesday, October 21',
+      dueDate: '2026-10-21'
+    },
+    /* 2026-10-20  <-  lesson-3-2-empires-administration.js */
+    {
+      date: '2026-10-20',
+      cohort: 'green',
+      unit: 'Unit 3: Land-Based Empires',
+      topic: 'Empires: Administration',
+      learningTargets: [
+        { text: 'I can explain how rulers recruited bureaucratic elites and developed military professionals to maintain centralized control over their populations and resources.', label: 'Governance' },
+        { text: 'I can explain how rulers used religious ideas, art, and monumental architecture to legitimize their rule.', label: 'Governance' },
+        { text: 'I can explain how rulers used tribute collection, tax farming, and innovative tax-collection systems to generate revenue and forward state power and expansion.', label: 'Governance' }
+      ],
+      successCriteria: [
+        { text: 'I can describe at least two ways rulers recruited bureaucratic elites or military professionals (e.g., the Ottoman devshirme, salaried samurai) and explain how they served centralized control.', label: 'Governance' },
+        { text: 'I can give specific examples of religious ideas, art, or monumental architecture used to legitimize rule (e.g., European notions of divine right, Mughal mausolea and mosques, the palace at Versailles).', label: 'Governance' },
+        { text: 'I can describe at least two tax-collection systems (e.g., Mughal zamindar tax collection, Ottoman tax farming, Mexica tribute lists, Ming collection of taxes in hard currency) and explain how they funded state power and expansion.', label: 'Governance' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: []
+    },
+    /* 2026-10-21  <-  lesson-3-2-empires-administration.js */
+    {
+      date: '2026-10-21',
+      cohort: 'silver',
+      unit: 'Unit 3: Land-Based Empires',
+      topic: 'Empires: Administration',
+      learningTargets: [
+        { text: 'I can explain how rulers recruited bureaucratic elites and developed military professionals to maintain centralized control over their populations and resources.', label: 'Governance' },
+        { text: 'I can explain how rulers used religious ideas, art, and monumental architecture to legitimize their rule.', label: 'Governance' },
+        { text: 'I can explain how rulers used tribute collection, tax farming, and innovative tax-collection systems to generate revenue and forward state power and expansion.', label: 'Governance' }
+      ],
+      successCriteria: [
+        { text: 'I can describe at least two ways rulers recruited bureaucratic elites or military professionals (e.g., the Ottoman devshirme, salaried samurai) and explain how they served centralized control.', label: 'Governance' },
+        { text: 'I can give specific examples of religious ideas, art, or monumental architecture used to legitimize rule (e.g., European notions of divine right, Mughal mausolea and mosques, the palace at Versailles).', label: 'Governance' },
+        { text: 'I can describe at least two tax-collection systems (e.g., Mughal zamindar tax collection, Ottoman tax farming, Mexica tribute lists, Ming collection of taxes in hard currency) and explain how they funded state power and expansion.', label: 'Governance' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: []
     }
   ],
 

@@ -2,6 +2,12 @@
   const lesson = window.BEHISTORICAL_LESSON;
   if (!lesson) return;
 
+  lesson.classPresentation = {
+    title: 'Class Slides: Empires: Administration',
+    desc: 'Follow the story: guns won the land, and every ruler then had three jobs to hold it: find people who would serve, convince everyone he deserved to rule, and collect the money to pay for it all.',
+    url: 'presentation-topic-3-2-student.html'
+  };
+
   lesson.collegeBoardKeyConcepts = [
     {
       code: 'Unit 3: Learning Objective B',

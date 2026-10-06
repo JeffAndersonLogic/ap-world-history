@@ -729,27 +729,48 @@ window.BEHISTORICAL_SCHEDULE = {
     // & 10, is read in class, so the 2.7 days carry no reading block for 3.1.
     // BeInTheRoom (09) exists and is optional; the required subset is 02, 06,
     // 07 and 10, and the Skill Builder (05) is not required for this topic.
-    // `homeworkDue` is typed because Topic 3.2 is not in this list yet: it is
-    // each cohort's 3.2 class day under strict alternation (Green Tuesday
-    // October 20, Silver Wednesday October 21, confirmed by Jeff 2026-10-04).
-    // Delete both `homeworkDue` lines when the 3.2 days are added and the date
-    // derives. The homework line is the standing rule that Checkpoint 2 and any
-    // unfinished required module are finished at home.
+    // The homework line is the standing rule that Checkpoint 2 and any
+    // unfinished required module are finished at home. Its due date derives
+    // from each cohort's 3.2 day below.
     {
       date: '2026-10-09',
       cohort: 'green',
       topic: '3.1',
       modules: ['02', '06', '07', '10'],
-      homework: 'Finish Checkpoint 2, and any other required 3.1 module you did not complete in class.',
-      homeworkDue: 'Tuesday, October 20'
+      homework: 'Finish Checkpoint 2, and any other required 3.1 module you did not complete in class.'
     },
     {
       date: '2026-10-19',
       cohort: 'silver',
       topic: '3.1',
       modules: ['02', '06', '07', '10'],
-      homework: 'Finish Checkpoint 2, and any other required 3.1 module you did not complete in class.',
-      homeworkDue: 'Wednesday, October 21'
+      homework: 'Finish Checkpoint 2, and any other required 3.1 module you did not complete in class.'
+    },
+
+    /* ---- Topic 3.2, Empires: Administration ---------------- */
+    // Green Tuesday 2026-10-20, Silver Wednesday 2026-10-21 (dates from Jeff,
+    // 2026-10-04). Required modules set by Jeff 2026-10-06: 02 (the First &
+    // 10, read in class), 06, 07 and 10, so the 3.1 days carry no reading
+    // block for 3.2. The Skill Builder (05) and BeInTheRoom (09) exist and are
+    // optional. No homework line yet, on purpose: a due date derives from each
+    // cohort's next meeting, and Topic 3.3 has no dates. With a homework line
+    // and no due date the board shows homework while the Canvas event prints
+    // "nothing assigned", which schedule-cohorts.test.js rightly fails. When
+    // Jeff gives 3.3's dates, add to both days: homework: 'Finish Checkpoint
+    // 2, and any other required 3.2 module you did not complete in class.'
+    // Never type a homeworkDue in its place. The Checkpoint 2 card already
+    // tells students to finish it at home.
+    {
+      date: '2026-10-20',
+      cohort: 'green',
+      topic: '3.2',
+      modules: ['02', '06', '07', '10']
+    },
+    {
+      date: '2026-10-21',
+      cohort: 'silver',
+      topic: '3.2',
+      modules: ['02', '06', '07', '10']
     }
   ],
 
