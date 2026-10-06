@@ -29,11 +29,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "question",
+      "kind": "prompt",
       "eyebrow": "The Question",
       "title": "What changed, what continued, and what shaped the change?",
-      "subtitle": "Three cases. Three different kinds of religious change.",
-      "kc": "Unit 3: Learning Objective C"
+      "subtitle": "Three cases. Three different kinds of religious change."
     },
     {
       "kind": "action",
@@ -117,7 +116,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       ]
     },
     {
-      "kind": "question",
+      "kind": "prompt",
       "eyebrow": "Islam · Continuity First",
       "title": "The Sunni-Shia split was already old.",
       "subtitle": "The Ottomans and Safavids did not create it.",
@@ -127,6 +126,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "process",
       "eyebrow": "Islam · Rivalry",
       "title": "Political rivalry intensifies an older divide.",
+      "visual": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Safavid_Empire%2C_circa_1630.png",
+        "alt": "Map showing the Safavid Empire and neighboring Ottoman territory",
+        "credit": "Safavid Empire map · Wikimedia Commons"
+      },
       "kc": "KC-4.1.VI.ii",
       "steps": [
         {
@@ -262,7 +266,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "question",
+      "kind": "prompt",
       "eyebrow": "Landing · 2 Minutes",
       "title": "Religions changed as much as empires did.",
       "subtitle": "Next: which empires leaned on force, administration, money, legitimacy, and belief in similar or different ways?"
