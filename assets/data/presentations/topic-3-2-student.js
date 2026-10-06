@@ -166,24 +166,24 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "split-venn",
       "eyebrow": "Job Two · Religious Ideas",
-      "title": "Two rulers, one claim: God is on my side.",
+      "title": "Two rulers, one claim.",
       "footer": "Why different? Louis inherited his throne; Askia took his by force.",
       "kc": "KC-4.3.I.A",
       "template": {
         "left": {
-          "name": "Divine right, France",
+          "name": "Divine right",
           "items": [
+            "Louis XIV, France",
             "God chose the king",
-            "Disobey the king, disobey God",
             "Came with his birth"
           ]
         },
         "right": {
-          "name": "Askia Muhammad, Songhai",
+          "name": "Songhai Islam",
           "items": [
-            "Took the throne by force in 1493",
-            "Pilgrimage to Mecca, title of caliph",
-            "Backed Islamic scholars and judges"
+            "Askia Muhammad",
+            "Took the throne by force, 1493",
+            "Caliph, and patron of scholars"
           ]
         },
         "both": [
@@ -193,28 +193,40 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "grid",
+      "kind": "case-file",
       "eyebrow": "Job Two · Art",
       "title": "One emperor, two pictures.",
       "kc": "KC-4.3.I.A",
-      "cards": [
-        {
-          "title": "THE SITUATION",
-          "text": "The Qing emperors were Manchus, outsiders ruling an empire where most people were Han Chinese."
-        },
-        {
-          "title": "PICTURE ONE",
-          "text": "Imperial portraits in the robes and poses of a traditional Chinese emperor."
-        },
-        {
-          "title": "PICTURE TWO",
-          "text": "The Qianlong Emperor painted as a Buddhist holy figure, for Tibetan and Mongol subjects."
-        },
-        {
-          "title": "SO WHAT",
-          "text": "Same ruler, different picture, depending on who needed convincing."
+      "template": {
+        "tag": "Imperial portrait",
+        "place": "Qing China",
+        "date": "1736",
+        "rows": [
+          {
+            "label": "Situation",
+            "text": "The Qing emperors were **Manchus**, outsiders ruling an empire where most people were Han Chinese"
+          },
+          {
+            "label": "Picture one",
+            "text": "Court portraits like this one: the robes and pose of a traditional **Chinese emperor**"
+          },
+          {
+            "label": "Picture two",
+            "text": "The Qianlong Emperor painted as a **Buddhist holy figure**, for Tibetan and Mongol subjects"
+          },
+          {
+            "label": "So what",
+            "text": "Same ruler, different picture, depending on who needed convincing"
+          }
+        ],
+        "proves": "Art made a ruler look rightful to each group he ruled.",
+        "visual": {
+          "url": "../assets/images/topics/3-2/qianlong-emperor.jpg",
+          "alt": "Court portrait of the young Qianlong Emperor in a fur-trimmed hat and a yellow robe embroidered with dragons, with Chinese inscriptions and seals",
+          "credit": "Court portrait, 1736 · Public domain",
+          "fit": "contain"
         }
-      ]
+      }
     },
     {
       "kind": "split-venn",

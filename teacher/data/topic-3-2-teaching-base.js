@@ -257,11 +257,11 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'belief', kind: 'split-venn', eyebrow: 'Job Two · Religious Ideas',
       kc: 'KC-4.3.I.A',
-      title: 'Two rulers, one claim: God is on my side.',
+      title: 'Two rulers, one claim.',
       footer: 'Why different? Louis inherited his throne; Askia took his by force.',
       template: {
-        left: { name: 'Divine right, France', items: ['God chose the king', 'Disobey the king, disobey God', 'Came with his birth'] },
-        right: { name: 'Askia Muhammad, Songhai', items: ['Took the throne by force in 1493', 'Pilgrimage to Mecca, title of caliph', 'Backed Islamic scholars and judges'] },
+        left: { name: 'Divine right', items: ['Louis XIV, France', 'God chose the king', 'Came with his birth'] },
+        right: { name: 'Songhai Islam', items: ['Askia Muhammad', 'Took the throne by force, 1493', 'Caliph, and patron of scholars'] },
         both: ['Tied the ruler to God', 'Gave people a reason to obey']
       },
       notes: {
@@ -278,20 +278,26 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'portraits', kind: 'grid', eyebrow: 'Job Two · Art',
+      phase: 'portraits', kind: 'case-file', eyebrow: 'Job Two · Art',
       kc: 'KC-4.3.I.A', title: 'One emperor, two pictures.',
-      cards: [
-        { title: 'THE SITUATION', text: 'The Qing emperors were Manchus, outsiders ruling an empire where most people were Han Chinese.' },
-        { title: 'PICTURE ONE', text: 'Imperial portraits in the robes and poses of a traditional Chinese emperor.' },
-        { title: 'PICTURE TWO', text: 'The Qianlong Emperor painted as a Buddhist holy figure, for Tibetan and Mongol subjects.' },
-        { title: 'SO WHAT', text: 'Same ruler, different picture, depending on who needed convincing.' }
-      ],
+      template: {
+        tag: 'Imperial portrait',
+        place: 'Qing China',
+        date: '1736',
+        rows: [
+          { label: 'Situation', text: 'The Qing emperors were **Manchus**, outsiders ruling an empire where most people were Han Chinese' },
+          { label: 'Picture one', text: 'Court portraits like this one: the robes and pose of a traditional **Chinese emperor**' },
+          { label: 'Picture two', text: 'The Qianlong Emperor painted as a **Buddhist holy figure**, for Tibetan and Mongol subjects' },
+          { label: 'So what', text: 'Same ruler, different picture, depending on who needed convincing' }
+        ],
+        proves: 'Art made a ruler look rightful to each group he ruled.'
+      },
       notes: {
         minutes: 2,
         land: [
           'Qing imperial portraits are a CED example under "Art and monumental architecture."',
           'The Freer Gallery\'s thangka of the Qianlong Emperor as Manjushri (F2000.4): the Smithsonian notes that relations with Mongol and Tibetan subjects "were couched in Buddhist, rather than Confucian, cultural rhetoric."',
-          'Pictures to add when uploaded: the court-robes portrait (1736) and the Manjushri thangka side by side. The thangka\'s face is by Giuseppe Castiglione; the rest was painted by court artists.'
+          'The picture is the Qianlong Emperor\'s court portrait in a yellow dragon robe, from the handscroll of inauguration portraits of the emperor and his consorts. Its inscription dates it to the eighth month of the first year of Qianlong, 1736. It is attributed to Giuseppe Castiglione, an Italian Jesuit at the Qing court. Picture to add when uploaded: the Manjushri thangka beside it; the thangka\'s face is by Castiglione and the rest was painted by court artists.'
         ],
         ask: 'Who was each picture meant to convince?',
         listenFor: 'Han Chinese subjects; Tibetan and Mongol Buddhists.'

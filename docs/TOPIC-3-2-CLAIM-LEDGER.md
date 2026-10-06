@@ -61,6 +61,21 @@ scholarship decides truth.
 |---|---|---|---|
 | Morocco's 1591 invasion of Songhai was motivated by the gold and salt trade (3.1 eBook chapter). | `scripts/lib/deep-reading-content/topic-3-1.js`, section 06 | Wikipedia, "Moroccan invasion of the Songhai Empire" (as summarised): al-Mansur demanded payment for the Taghaza salt and sought West African gold; the invasion "may have been" a way to elevate his claim to be a universal Muslim ruler. | NEEDS JEFF (3.1's open decision; story draft question 2). |
 
+## Claims added during the build (First & 10, deck, lesson surfaces)
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| Leo Africanus passage on the king of Tombuto (gold plates and scepters "some whereof weigh 1300 pounds", prostration ritual, "doctors, judges, priests, and other learned men ... bountifully maintained at the king's cost"). | Primary Source | Pory translation, ed. Brown, Hakluyt Society 1896, vol. 3, pp. 824 to 825; read in the archive.org scan (historyanddescr02porygoog) and cross-checked in a second scan; spelling modernized and cuts marked on the page. The 1300 pounds is labeled as Leo's claim. Brown's note 9 identifies the king as Askia (Muhammad), whose capital was Gao. | VERIFIED (quotation and attribution) |
+| Busbecq passage on appointment by merit ("In making his appointments the Sultan pays no regard to any pretensions on the score of wealth or rank ... sons of shepherds or herdsmen"). | Primary Source | Forster and Daniell, *The Life and Letters of Ogier Ghiselin de Busbecq*, London 1881, vol. 1, p. 154 (archive.org lifelettbusbecq01forsuoft), read in the scan. Letter I, Amasya; the editors date it 1 September 1555. | VERIFIED (quotation); "the sons of shepherds were probably devshirme men" is stated on the page as probable, as the editors' and agent's reading, not Busbecq's word. |
+| The CED suggests the Leo Africanus and Busbecq pair for 3.2. | Primary Source intro | CED p. 68, sample activity 2. | VERIFIED |
+| The Qianlong court portrait is dated 1736. | Deck slide 10 (case file), presentation-assets credit | The painting's own inscription, legible in the image: 乾隆元年八月吉日, "an auspicious day in the eighth month of the first year of Qianlong", i.e. 1736. Commons: "Part of the painting Qianlong Emperor and His Consorts", artist Giuseppe Castiglione, public domain. | VERIFIED (date from the inscription); attribution "attributed to Castiglione" kept as attribution. |
+| Topkapı caption: the sultans' palace after the conquest; its palace school trained the most promising devshirme recruits. | Lecture card 2, Evidence Lab card | Standard (Enderun palace school); scholarly source owed. | NEEDS SECOND SOURCE (reviewer pass pending) |
+| Taj Mahal caption: Shah Jahan's mausoleum for his wife, built in the 1600s; photograph taken 2004. | Evidence Lab card, lecture card 4 | Commons: photograph 6 March 2004 (CC BY-SA 3.0, used by URL with its source link). UNESCO dates the building to the mid-1600s. | VERIFIED in outline; UNESCO citation owed. |
+| BeSurreal: Versailles c. 1690, nobles at court competing for the king's favor, the king's daily routine as ceremony, posts and pensions. | BeSurreal | Britannica and Château de Versailles in outline (see the Versailles rows above). | NEEDS SECOND SOURCE (reviewer pass pending) |
+
 ## Review findings
 
-None yet. Independent reviewers run in Phase 9.
+**Not yet run.** On 2026-10-06 the first independent reviewer and three claim fact-checkers were
+started and all four were stopped by a usage limit before reporting. Jeff said "Ship" before
+they could be rerun. The loop continues after shipping; every finding it supports is fixed and
+shipped as a follow-up, and this section records each finding and its disposition.
