@@ -153,6 +153,13 @@ window.BEHISTORICAL_STUDENT_DECK = {
       ]
     },
     {
+      "kind": "map",
+      "eyebrow": "Map Evidence · Ottoman-Safavid Frontier",
+      "title": "An older religious divide gains imperial geography.",
+      "subtitle": "Locate the Ottoman and Safavid cores before explaining how political rivalry intensified the Sunni-Shia split.",
+      "footer": "BeHistorical instructional map · Unit 3"
+    },
+    {
       "kind": "grid",
       "eyebrow": "Sikhism · Context",
       "title": "Punjab was a place of sustained interaction.",

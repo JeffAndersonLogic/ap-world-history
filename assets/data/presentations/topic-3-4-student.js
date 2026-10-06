@@ -70,7 +70,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       ]
     },
     {
-      "kind": "split-venn",
+      "kind": "grid",
       "eyebrow": "Job One · Expand",
       "title": "Gunpowder increases territorial reach.",
       "visual": {
@@ -80,26 +80,31 @@ window.BEHISTORICAL_STUDENT_DECK = {
       },
       "footer": "Same job: expansion. Different campaigns; shared mechanism: military capacity increased influence.",
       "kc": "KC-4.3.II",
-      "template": {
-        "left": {
-          "name": "Ottoman",
-          "items": [
-            "Constantinople, 1453",
-            "Cannon against fortifications"
-          ]
+      "cards": [
+        {
+          "title": "OTTOMAN",
+          "text": "Constantinople, 1453: cannon helped break fortified defenses."
         },
-        "right": {
-          "name": "Mughal",
-          "items": [
-            "Panipat, 1526",
-            "Artillery and firearms in battle"
-          ]
+        {
+          "title": "MUGHAL",
+          "text": "Panipat, 1526: artillery and firearms contributed to victory."
         },
-        "both": [
-          "Gunpowder military power",
-          "Defeat rivals and gain territory"
-        ]
-      }
+        {
+          "title": "SAME JOB",
+          "text": "Defeat rivals and gain territory."
+        },
+        {
+          "title": "COMPARE",
+          "text": "Different campaigns; shared mechanism: military capacity increased influence."
+        }
+      ]
+    },
+    {
+      "kind": "map",
+      "eyebrow": "Evidence · Panipat, 1526",
+      "title": "Military technology becomes evidence.",
+      "subtitle": "Use the image as evidence of Mughal battlefield organization, not as proof that gunpowder alone caused victory.",
+      "footer": "Historical image · First Battle of Panipat"
     },
     {
       "kind": "grid",
