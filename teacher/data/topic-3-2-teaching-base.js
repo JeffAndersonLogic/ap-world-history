@@ -256,14 +256,18 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'belief', kind: 'split-venn', eyebrow: 'Job Two · Religious Ideas',
+      phase: 'belief', kind: 'split-mirror', eyebrow: 'Job Two · Religious Ideas',
       kc: 'KC-4.3.I.A',
       title: 'Two rulers, one claim.',
       footer: 'Why different? Louis inherited his throne; Askia took his by force.',
       template: {
-        left: { name: 'Divine right', items: ['Louis XIV, France', 'God chose the king', 'Came with his birth'] },
-        right: { name: 'Songhai Islam', items: ['Askia Muhammad', 'Took the throne by force, 1493', 'Caliph, and patron of scholars'] },
-        both: ['Tied the ruler to God', 'Gave people a reason to obey']
+        left: { name: 'Louis XIV, France' },
+        right: { name: 'Askia Muhammad' },
+        rows: [
+          { label: 'Got power', left: 'Came with his birth', right: 'Took the throne by force, 1493' },
+          { label: 'The claim', left: '**Divine right**: God chose the king', right: '**Songhai Islam**: caliph, and patron of scholars' },
+          { label: 'What it did', left: 'Tied the ruler to God and gave people a reason to obey', right: 'Tied the ruler to God and gave people a reason to obey' }
+        ]
       },
       notes: {
         minutes: 5,
@@ -305,14 +309,15 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'buildings', kind: 'split-venn', eyebrow: 'Job Two · Monumental Architecture',
+      phase: 'buildings', kind: 'frame-compare', eyebrow: 'Job Two · Monumental Architecture',
       kc: 'KC-4.3.I.A',
       title: 'Power you can stand inside.',
-      footer: 'Why different? Louis had lived through a revolt of the great nobles.',
       template: {
-        left: { name: 'Mughal tombs and mosques', items: ['Giant tombs such as the Taj Mahal', 'Great mosques in their capitals', 'Rich, faithful to Islam, here to stay'] },
-        right: { name: 'Versailles', items: ['Louis XIV moves his court there, 1682', 'Nobles compete for the king\'s favor', 'Kept where the king can watch them'] },
-        both: ['Made power impossible to miss', 'Cost a fortune']
+        panels: [
+          { tag: 'Mughal tombs and mosques', text: 'Giant tombs such as the **Taj Mahal**, and great mosques in their capitals: rich, faithful to Islam, here to stay.' },
+          { tag: 'Versailles', text: 'Louis XIV moves his court there in 1682. **Nobles** compete for the king\'s favor, kept where he can watch them.' }
+        ],
+        question: '**Both** made power impossible to miss, and cost a fortune. **Why different?** Louis had lived through a revolt of the great nobles.'
       },
       notes: {
         minutes: 4,
@@ -320,7 +325,7 @@ window.BEHISTORICAL_TEACHING = {
           'Both are CED examples: Mughal mausolea and mosques, and European palaces such as Versailles.',
           'Louis was nine when the Fronde began in 1648, a revolt in which great nobles took up arms against the crown. Britannica connects his later policies to that memory. At Versailles the great nobles lived at court, away from their regional power bases.',
           'Versailles does two jobs at once: a symbol, and a way to keep the nobles under the king\'s eye. That is the twist this slide earns.',
-          'Picture to add when uploaded: a modern photograph of the Taj Mahal or Humayun\'s Tomb, captioned as modern.'
+          'Both pictures are modern photographs of buildings from this period, credited on the slide: the Taj Mahal at Agra, and the garden front of Versailles.'
         ],
         ask: 'What second job did Versailles do that a tomb did not?',
         listenFor: 'It kept the nobles at court, where the king could watch them.'

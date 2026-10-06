@@ -218,6 +218,45 @@ function measureBoards(label) {
   return out;
 }
 
+/* Runs in the page. Every line of text in a Venn has to sit inside its own
+   region: a left-only line inside the left circle and clear of the right one,
+   a shared line inside both, and the circle names and the Both label where
+   they belong. Measured per rendered line, on the real circles, so a line that
+   only clips the stroke is caught. Returns one entry per offending line. */
+function measureVenn(label) {
+  const bad = [];
+  const range = document.createRange();
+  for (const vn of document.querySelectorAll('.bht-vn')) {
+    const circ = [...vn.querySelectorAll('svg circle')].map(c => { const b = c.getBoundingClientRect(); return { x: b.left + b.width / 2, y: b.top + b.height / 2, r: b.width / 2 }; });
+    if (circ.length !== 2) { bad.push(`${label}: ${circ.length} circles`); continue; }
+    const scale = vn.getBoundingClientRect().width / 1128;
+    const pad = 1.5 * scale + 1; // half the 3-unit stroke, plus a pixel
+    const [L, R] = circ;
+    const inside = (c, x, y) => Math.hypot(x - c.x, y - c.y) <= c.r - pad;
+    const outside = (c, x, y) => Math.hypot(x - c.x, y - c.y) >= c.r + pad;
+    const rule = { l: (x, y) => inside(L, x, y) && outside(R, x, y), r: (x, y) => inside(R, x, y) && outside(L, x, y), m: (x, y) => inside(L, x, y) && inside(R, x, y), name: (x, y) => outside(L, x, y) && outside(R, x, y) };
+    const groups = [
+      ...[...vn.querySelectorAll('.bht-vn-list')].map(el => [el, ['l', 'r', 'm'].find(k => el.classList.contains(k))]),
+      ...[...vn.querySelectorAll('.bht-vn-name')].map(el => [el, 'name']),
+      ...[...vn.querySelectorAll('.bht-vn-both')].map(el => [el, 'm'])
+    ];
+    for (const [el, k] of groups) {
+      const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+      for (let node; (node = walker.nextNode());) {
+        if (!node.textContent.trim()) continue;
+        range.selectNodeContents(node);
+        for (const q of range.getClientRects()) {
+          if (q.width < 1) continue;
+          const ins = q.height * 0.18; // the glyph box carries leading above and below the letters
+          const pts = [[q.left, q.top + ins], [q.right, q.top + ins], [q.left, q.bottom - ins], [q.right, q.bottom - ins]];
+          if (!pts.every(([x, y]) => rule[k](x, y))) bad.push(`${label} [${k}] "${node.textContent.trim().slice(0, 28)}"`);
+        }
+      }
+    }
+  }
+  return bad;
+}
+
 (async () => {
   await new Promise(r => server.listen(0, r));
   const origin = `http://127.0.0.1:${server.address().port}`;
@@ -244,6 +283,8 @@ function measureBoards(label) {
     check(`${st.label}: no text is painted outside its board`, over.length === 0, over.map(b => `${b.kind} +${b.worst}px [${b.what}]`).join(' | ') || 'clean');
     const hit = boards.filter(b => b.collide > 2);
     check(`${st.label}: nothing collides inside its board`, hit.length === 0, hit.map(b => `${b.kind} ${b.collide}px [${b.collideWhat}]`).join(' | ') || 'clean');
+    const venn = await page.evaluate(measureVenn, st.label);
+    check(`${st.label}: every Venn line sits inside its own region of the circles`, venn.length === 0, venn.join(' | ') || 'clean');
     const skewed = boards.filter(b => Math.abs(b.ratio - 16 / 9) > 0.01);
     check(`${st.label}: every board keeps 16:9`, skewed.length === 0, skewed.map(b => b.kind).join(', ') || 'clean');
     const tags = boards.flatMap(b => b.tags.map(t => ({ ...t, kind: b.kind })));
@@ -280,7 +321,8 @@ function measureBoards(label) {
     // generic class name collides with.
     await page.goto(`${origin}/unit-2/presentation-topic-2-4-student.html`, { waitUntil: 'load' });
     await page.waitForSelector('#stage .slide', { timeout: 15000 });
-    const boards = [];
+    const boards = [], vennBad = [];
+    let vennSeen = 0;
     for (const r of real) {
       const b = await page.evaluate(sl => {
         const stage = document.querySelector('#stage');
@@ -290,7 +332,9 @@ function measureBoards(label) {
       }, r.slide);
       const m = await page.evaluate(measureBoards, r.deck);
       boards.push(...m.map(x => ({ ...x, id: `${r.deck} ${r.slide.id || x.kind}` })));
+      if (r.slide.kind === 'split-venn') { vennSeen++; vennBad.push(...await page.evaluate(measureVenn, `${r.deck} ${r.slide.title || ''}`)); }
     }
+    check('real decks: every Venn line sits inside its own region of the circles', vennBad.length === 0, vennBad.join(' | ') || `${vennSeen} Venn slide(s)`);
     check('real decks: template slides measured', boards.length === real.length && real.length > 0, `${boards.length} of ${real.length}`);
     const over = boards.filter(b => b.worst > 2);
     check('real decks: no text is painted outside its board', over.length === 0, over.map(b => `${b.id} +${b.worst}px [${b.what}]`).join(' | ') || 'clean');
@@ -475,6 +519,32 @@ function measureBoards(label) {
     await page.close();
   }
 
+  /* Negative control: a Venn whose left list is pushed across the right
+     circle's edge, which is the shape the 3.2 first draft shipped, must be
+     caught; so must a name dropped onto a circle. */
+  {
+    const page = await browser.newPage({ viewport: { width: 1400, height: 900 } });
+    await hermetic(page);
+    await page.goto(`${origin}/teacher/slide-templates.html`, { waitUntil: 'load' });
+    const caught = await page.evaluate(src => {
+      const measure = new Function(`return (${src})`)();
+      const stage = document.querySelector('.stage');
+      const s = JSON.parse(JSON.stringify(window.BH_SLIDE_TEMPLATE_EXAMPLES.find(e => e.slide.kind === 'split-venn').slide));
+      stage.style.cssText = 'width:1280px;height:720px;aspect-ratio:auto';
+      document.querySelectorAll('.stage').forEach((el, i) => { if (i) el.innerHTML = ''; });
+      stage.innerHTML = window.BHSlideTemplates.render(s);
+      const clean = measure('clean').length;
+      stage.querySelector('.bht-vn-list.l').style.left = '33%';
+      const list = measure('list').length;
+      stage.querySelector('.bht-vn-list.l').style.left = '';
+      stage.querySelector('.bht-vn-name.r').style.top = '30%';
+      const name = measure('name').length;
+      return { clean, list, name };
+    }, measureVenn.toString());
+    check('control: a Venn line crossing a circle edge is caught', caught.clean === 0 && caught.list > 0 && caught.name > 0, JSON.stringify(caught));
+    await page.close();
+  }
+
   /* 5: the real decks again, in the brand webfonts. Cinzel runs wider than
      Georgia, so a deck that fits in the fallbacks can still collide or overflow
      in the face the room sees; two of the three Topic 2.5 first-draft slides
@@ -525,7 +595,7 @@ function measureBoards(label) {
         stage.innerHTML = window.BHSlideTemplates.render(x);
         return new Promise(res => requestAnimationFrame(() => requestAnimationFrame(res)));
       }, sl);
-      const boards = [];
+      const boards = [], vennBad = [];
       for (const deck of DECKS) {
         const file = path.join(ROOT, `assets/data/presentations/topic-${deck.key.replace('.', '-')}-student.js`);
         if (!fs.existsSync(file)) continue;
@@ -534,8 +604,10 @@ function measureBoards(label) {
         for (const sl of ((box.window.BEHISTORICAL_STUDENT_DECK || {}).slides || []).filter(x => T.has(x.kind))) {
           await draw(sl);
           boards.push(...(await page.evaluate(measureBoards, deck.key)).map(x => ({ ...x, id: `${deck.key} ${x.kind}` })));
+          if (sl.kind === 'split-venn') vennBad.push(...await page.evaluate(measureVenn, `${deck.key} ${sl.title || ''}`));
         }
       }
+      check('webfonts: every Venn line sits inside its own region of the circles', vennBad.length === 0, vennBad.join(' | ') || 'clean');
       const over = boards.filter(b => b.worst > 2);
       check('webfonts: real decks keep all text on the board', over.length === 0, over.map(b => `${b.id} +${b.worst}px [${b.what}]`).join(' | ') || `${boards.length} slides`);
       const hit = boards.filter(b => b.collide > 2);

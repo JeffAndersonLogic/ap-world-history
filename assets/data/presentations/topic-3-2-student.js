@@ -174,31 +174,34 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "split-venn",
+      "kind": "split-mirror",
       "eyebrow": "Job Two · Religious Ideas",
       "title": "Two rulers, one claim.",
       "footer": "Why different? Louis inherited his throne; Askia took his by force.",
       "kc": "KC-4.3.I.A",
       "template": {
         "left": {
-          "name": "Divine right",
-          "items": [
-            "Louis XIV, France",
-            "God chose the king",
-            "Came with his birth"
-          ]
+          "name": "Louis XIV, France"
         },
         "right": {
-          "name": "Songhai Islam",
-          "items": [
-            "Askia Muhammad",
-            "Took the throne by force, 1493",
-            "Caliph, and patron of scholars"
-          ]
+          "name": "Askia Muhammad"
         },
-        "both": [
-          "Tied the ruler to God",
-          "Gave people a reason to obey"
+        "rows": [
+          {
+            "label": "Got power",
+            "left": "Came with his birth",
+            "right": "Took the throne by force, 1493"
+          },
+          {
+            "label": "The claim",
+            "left": "**Divine right**: God chose the king",
+            "right": "**Songhai Islam**: caliph, and patron of scholars"
+          },
+          {
+            "label": "What it did",
+            "left": "Tied the ruler to God and gave people a reason to obey",
+            "right": "Tied the ruler to God and gave people a reason to obey"
+          }
         ]
       }
     },
@@ -230,6 +233,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           }
         ],
         "proves": "Art made a ruler look rightful to each group he ruled.",
+        "pictureSize": "large",
         "visual": {
           "url": "../assets/images/topics/3-2/qianlong-emperor.jpg",
           "alt": "Court portrait of the young Qianlong Emperor in a fur-trimmed hat and a yellow robe embroidered with dragons, with Chinese inscriptions and seals",
@@ -239,32 +243,32 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "split-venn",
+      "kind": "frame-compare",
       "eyebrow": "Job Two · Monumental Architecture",
       "title": "Power you can stand inside.",
-      "footer": "Why different? Louis had lived through a revolt of the great nobles.",
       "kc": "KC-4.3.I.A",
       "template": {
-        "left": {
-          "name": "Mughal tombs and mosques",
-          "items": [
-            "Giant tombs such as the Taj Mahal",
-            "Great mosques in their capitals",
-            "Rich, faithful to Islam, here to stay"
-          ]
-        },
-        "right": {
-          "name": "Versailles",
-          "items": [
-            "Louis XIV moves his court there, 1682",
-            "Nobles compete for the king's favor",
-            "Kept where the king can watch them"
-          ]
-        },
-        "both": [
-          "Made power impossible to miss",
-          "Cost a fortune"
-        ]
+        "panels": [
+          {
+            "tag": "Mughal tombs and mosques",
+            "text": "Giant tombs such as the **Taj Mahal**, and great mosques in their capitals: rich, faithful to Islam, here to stay.",
+            "visual": {
+              "url": "../assets/images/topics/3-2/taj-mahal.jpg",
+              "alt": "The Taj Mahal, a white marble tomb with a large central dome and four tall minarets, seen down a long reflecting pool lined with cypress trees",
+              "credit": "Taj Mahal, Agra · Modern photograph: Yann, edited by Jim Carter · CC BY-SA 4.0"
+            }
+          },
+          {
+            "tag": "Versailles",
+            "text": "Louis XIV moves his court there in 1682. **Nobles** compete for the king's favor, kept where he can watch them.",
+            "visual": {
+              "url": "../assets/images/topics/3-2/versailles-garden-facade.jpg",
+              "alt": "The long stone garden front of the Palace of Versailles, three stories of arched windows and columns with statues along the roofline, above a pool and a wide gravel terrace",
+              "credit": "Versailles, garden front · Modern photograph: Trizek · CC BY-SA 3.0"
+            }
+          }
+        ],
+        "question": "**Both** made power impossible to miss, and cost a fortune. **Why different?** Louis had lived through a revolt of the great nobles."
       }
     },
     {

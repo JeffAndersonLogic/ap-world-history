@@ -473,10 +473,47 @@ function splitVenn(s){
   const figs=[[L.visual,'l'],[R.visual,'r']].filter(([v])=>v&&v.url);
   const allAi=figs.length>0&&figs.every(([v])=>v.ai);
   const fig=figs.map(([v,c])=>`<div class="bht-vn-fig ${c}"><img src="${esc(v.url)}" alt="${esc(v.alt||'')}" loading="eager">${allAi?'':tag(v,c==='l'?'bl':'br')}</div>`).join('')+(allAi?`<span class="bht-tag bht-ai br bht-vn-tag">${LABEL}</span>`:'');
-  const list=(a,cls,x)=>`<div class="bht-vn-list ${cls}" style="left:${(x/1128*100).toFixed(2)}%">${arr(a).slice(0,4).map(v=>`<p>${rich(v)}</p>`).join('')}</div>`;
-  const svg=`<svg viewBox="0 0 1128 430" aria-hidden="true"><circle cx="464" cy="235" r="195" class="l"></circle><circle cx="664" cy="235" r="195" class="r"></circle></svg>`;
-  const names=`<div class="bht-vn-name l">${esc(L.name)}</div><div class="bht-vn-name m">${esc(t.bothLabel||'Both')}</div><div class="bht-vn-name r">${esc(R.name)}</div>`;
-  return board('split-venn',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-vn">${svg}${names}${list(L.items,'l',290)}${list(t.both,'m',485)}${list(R.items,'r',680)}${fig}</div>`)+foot(s.footer)));
+  // Every line has to sit inside its own region of the circles, so each region
+  // gets the largest rectangle that fits it (VENN, in the 1128x430 box) and the
+  // type is sized to fill that rectangle by a word-wrap estimate. The browser
+  // test measures every rendered line against the real circles.
+  const V=VENN,box=VENN_BOX,pct=(v,of)=>(v/of*100).toFixed(2)+'%';
+  const left=arr(L.items).slice(0,4),both=arr(t.both).slice(0,4),right=arr(R.items).slice(0,4);
+  const side=Math.min(vennFont(left,box.side.w,box.side.h,.56),vennFont(right,box.side.w,box.side.h,.56));
+  const mid=vennFont(both,box.mid.w,box.mid.h,.6);
+  const list=(a,cls,b,size)=>`<div class="bht-vn-list ${cls}" style="left:${pct(b.x,1128)};top:${pct(b.y,430)};width:${pct(b.w,1128)};height:${pct(b.h,430)};font-size:calc(${size}*var(--u))">${a.map(v=>`<p>${rich(v)}</p>`).join('')}</div>`;
+  const svg=`<svg viewBox="0 0 1128 430" aria-hidden="true"><circle cx="${V.cxL}" cy="${V.cy}" r="${V.r}" class="l"></circle><circle cx="${V.cxR}" cy="${V.cy}" r="${V.r}" class="r"></circle></svg>`;
+  const nameSize=v=>Math.max(16,Math.min(28,Math.floor(360/(Math.max(1,String(v||'').length)*.74))));
+  const names=`<div class="bht-vn-name l" style="font-size:calc(${nameSize(L.name)}*var(--u))">${esc(L.name)}</div><div class="bht-vn-name r" style="font-size:calc(${nameSize(R.name)}*var(--u))">${esc(R.name)}</div><div class="bht-vn-both">${esc(t.bothLabel||'Both')}</div>`;
+  return board('split-venn',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-vn">${svg}${names}${list(left,'l',box.left,side)}${list(both,'m',box.mid,mid)}${list(right,'r',box.right,side)}${fig}</div>`)+foot(s.footer)));
+}
+/* The Venn's geometry, in the units of its 1128x430 box. Two circles of radius
+   r whose centers are d apart leave a left-only region exactly d wide at every
+   height, so a rectangle spanning cy-h to cy+h fits it from cxL-sqrt(r²-h²) to
+   cxR-r. The shared lens at half-height h runs from cxR-sqrt(r²-h²) to
+   cxL+sqrt(r²-h²). A margin keeps type off the stroke. */
+const VENN={cxL:459,cxR:669,cy:235,r:195};
+const VENN_BOX=(function(){
+  const {cxL,cxR,cy,r}=VENN,sq=h=>Math.sqrt(r*r-h*h),m=12;
+  const hs=112,hm=92;
+  const sx=cxL-sq(hs)+m,sw=(cxR-r-m)-sx;
+  const left={x:sx,y:cy-hs,w:sw,h:2*hs};
+  const right={x:1128-sx-sw,y:cy-hs,w:sw,h:2*hs};
+  const mx=cxR-sq(hm)+m*.6,mw=(cxL+sq(hm)-m*.6)-mx;
+  const mid={x:mx,y:cy-hm,w:mw,h:2*hm};
+  return {left,right,mid,side:{w:sw,h:2*hs},mid:mid};
+})();
+/* The largest size, 12u to 18u, at which a greedy word wrap of the items fits
+   the box. `k` is the face's average letter width in ems: about .56 for Libre
+   Baskerville, .6 bold. Lines run 1.3, items sit 10u apart. */
+function vennFont(items,w,h,k){
+  const words=items.map(v=>String(v||'').replace(/\*\*/g,'').split(/\s+/).filter(Boolean));
+  for(let f=18;f>=12;f--){
+    let lines=0,fits=true;
+    words.forEach(ws=>{let cur=0,n=1;ws.forEach(word=>{const ww=word.length*k*f;if(ww>w)fits=false;const add=cur?cur+.28*f+ww:ww;if(add>w){n++;cur=ww;}else cur=add;});lines+=n;});
+    if(fits&&lines*1.3*f+Math.max(0,items.length-1)*10<=h)return f;
+  }
+  return 12;
 }
 
 /* Continuity and change: before and after on either side of a turning point,
@@ -571,10 +608,15 @@ function fRoute(s){
    labeled facts, and what the case proves. */
 function caseFile(s){
   const t=s.template||{},rows=arr(t.rows).slice(0,4);
-  const stamp=`<div class="bht-cf-stamp">${t.tag?`<div class="tg">${esc(t.tag)}</div>`:''}<div class="pl${String(t.place||'').length>10?' lg':''}">${esc(t.place)}</div>${t.date?`<div class="dt">${esc(t.date)}</div>`:''}${t.visual?frame(t.visual,'bht-cf-pic',{fit:'contain'}):''}</div>`;
+  // pictureSize:'large' gives the picture the whole stamp column at full
+  // height, for a case whose picture is the evidence (a portrait the room has
+  // to see whole). Its credit then sits under it rather than over it.
+  const big=t.pictureSize==='large'&&t.visual&&t.visual.url;
+  const pic=!t.visual?'':big?`${frame(t.visual,'bht-cf-pic big',{fit:'contain',noTag:true})}${t.visual.ai?`<span class="bht-tag bht-ai bht-cf-cap">${LABEL}</span>`:t.visual.credit?`<span class="bht-tag bht-src bht-cf-cap">${esc(t.visual.credit)}</span>`:''}`:frame(t.visual,'bht-cf-pic',{fit:'contain'});
+  const stamp=`<div class="bht-cf-stamp${big?' big':''}">${t.tag?`<div class="tg">${esc(t.tag)}</div>`:''}<div class="pl${String(t.place||'').length>10?' lg':''}">${esc(t.place)}${big&&t.date?` <span class="dt">${esc(t.date)}</span>`:''}</div>${!big&&t.date?`<div class="dt">${esc(t.date)}</div>`:''}${pic}</div>`;
   const body=rows.map(r=>`<div class="bht-cf-row"><div class="l">${esc(r.label)}</div><p>${rich(r.text)}</p></div>`).join('');
   const proves=t.proves?`<div class="bht-cf-proves"><div class="tg">${esc(t.provesLabel||'What it proves')}</div><p>${rich(t.proves)}</p></div>`:'';
-  return board('case-file',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-cf">${stamp}<div class="bht-cf-rows">${body}</div></div>`)+proves));
+  return board('case-file',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-cf${big?' big':''}">${stamp}<div class="bht-cf-rows">${body}</div></div>`)+proves));
 }
 
 /* One claim and the branches that hold it up. Each branch has a name, a line
@@ -1107,11 +1149,11 @@ const CSS=`
 .bht-vn circle.l{fill:rgba(140,90,43,.16);stroke:#8c5a2b;stroke-width:3}
 .bht-vn circle.r{fill:rgba(26,28,29,.08);stroke:#1a1c1d;stroke-width:3}
 .dark .bht-vn circle.r{fill:rgba(174,182,184,.12);stroke:#aeb6b8}
-.bht-vn-name{position:absolute;top:0;width:28%;text-align:center;font:900 28u/1.1 'Cinzel',Georgia,serif;color:var(--head)}
-.bht-vn-name.l{left:16%}.bht-vn-name.r{right:16%}
-.bht-vn-name.m{left:36%;top:9%;font:800 14u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--acc)}
-.bht-vn-list{position:absolute;top:22%;height:66%;width:14%;display:flex;flex-direction:column;justify-content:center;gap:14u;text-align:center}
-.bht-vn-list p{font-size:17u;line-height:1.35}
+.bht-vn-name{position:absolute;top:0;width:360u;white-space:nowrap;font:900 28u/1.1 'Cinzel',Georgia,serif;color:var(--head)}
+.bht-vn-name.l{right:calc(50% + 16u);text-align:right}.bht-vn-name.r{left:calc(50% + 16u)}
+.bht-vn-both{position:absolute;left:0;right:0;top:23.6%;text-align:center;font:800 13u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--acc)}
+.bht-vn-list{position:absolute;display:flex;flex-direction:column;justify-content:center;gap:10u;text-align:center}
+.bht-vn-list p{font-size:1em;line-height:1.3}
 .bht-vn-list.m p{font-weight:700}
 .bht-vn-fig{position:absolute;bottom:0;height:100%;width:250u}
 .bht-vn-fig.l{left:0}.bht-vn-fig.r{right:0}
@@ -1221,7 +1263,7 @@ const CSS=`
 .bht-cm .c{display:flex;flex-direction:column;gap:12u;min-height:0}
 .bht-cm-img{flex:1;min-height:0;border-radius:4u;background:#fffdf7;border:1u solid #ddd2be}
 .bht-cm .k{display:flex;flex-direction:column;gap:4u}
-.bht-cm .k b{font:800 13u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#6b3e1f}
+.bht-cm .k>b{font:800 13u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#6b3e1f}
 .bht-cm .k span{font-size:17u;line-height:1.4}
 .bht-cm-q{font-size:21u;line-height:1.45;color:var(--head)}
 .bht-frame-compare .bht-h{font-size:36u;max-width:34ch}
@@ -1244,6 +1286,12 @@ const CSS=`
 .bht-cf-stamp .pl.lg{font-size:23u}
 .bht-cf-stamp .dt{font:900 52u/1 'Cinzel',Georgia,serif;color:var(--acc)}
 .bht-cf-pic{height:140u;margin-top:8u;border-radius:4u}
+.bht-cf.big{grid-template-columns:400u minmax(0,1fr);align-items:stretch;height:100%}
+.bht-cf-stamp.big{padding:16u 18u 14u;min-height:0}
+.bht-cf-stamp.big .pl{font-size:26u}
+.bht-cf-stamp.big .pl .dt{font-size:26u;color:var(--acc)}
+.bht-cf-pic.big{flex:1;height:auto;min-height:0;margin-top:4u;background:transparent}
+.bht-tag.bht-cf-cap{position:static;align-self:flex-start;white-space:normal}
 .bht-cf-rows{display:flex;flex-direction:column;min-width:0}
 .bht-cf-row{display:grid;grid-template-columns:150u minmax(0,1fr);column-gap:22u;padding:12u 0;border-top:1u solid var(--rulec)}
 .bht-cf-row:first-child{border-top:0;padding-top:0}
