@@ -1,2 +1,2 @@
-/* Topic 3.3 presentation assets. Historical images remain on the student lesson until verified repo-local copies are staged. */
-(function(){'use strict';const T=window.BEHISTORICAL_TEACHING;if(!T)return;})();
+/* Topic 3.3 verified visual assignment. */
+(function(){'use strict';const T=window.BEHISTORICAL_TEACHING;if(!T||!Array.isArray(T.slides))return;const s=T.slides.find(x=>x.phase==='chaldiran');if(s)s.visual={url:'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Safavid_Empire%2C_circa_1630.png',alt:'Map showing the Safavid Empire and neighboring Ottoman territory',credit:'Safavid Empire map · Wikimedia Commons',fit:'contain'};})();
