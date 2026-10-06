@@ -648,7 +648,7 @@ function fPair(s){
   };
   const body=rows.map(r=>`<div class="r"><div class="l">${esc(r.label)}</div><p>${rich(r.text)}</p></div>`).join('');
   const proves=t.proves?`<div class="bht-pr-proves"><div class="tg">${esc(t.provesLabel||'What it proves')}</div><p>${rich(t.proves)}</p></div>`:'';
-  return board('frame-pair',themeOf(t,'paper'),`<div class="bht-pr" style="--ph:${H}"><div class="bht-pr-pics">${P.map(cell).join('')}</div><div class="bht-pr-side">${head(s)}<div class="bht-pr-rows">${body}</div>${proves}</div></div>`);
+  return board('frame-pair',themeOf(t,'paper'),`<div class="bht-pr" style="--ph:${H}"><div class="bht-pr-pics">${P.map(cell).join('')}</div><div class="bht-pr-side${proves?' full':''}">${head(s)}<div class="bht-pr-rows">${body}</div>${proves}</div></div>`);
 }
 
 /* One claim and the branches that hold it up. Each branch has a name, a line
@@ -1339,7 +1339,7 @@ const CSS=`
 .bht-ss-row:not(:last-child)::after{content:'';position:absolute;left:38u;bottom:-17u;border-left:9u solid transparent;border-right:9u solid transparent;border-top:12u solid var(--acc)}
 .bht-ss-row.key{background:#c9a46a;border-left-color:#fffdf7}
 .bht-ss-row.key .lb,.bht-ss-row.key p,.bht-ss-row.key b{color:#101213}
-.bht-pr{position:absolute;inset:0;padding:44u 60u 40u;display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:44u;align-items:start}
+.bht-pr{position:absolute;inset:0;padding:44u 60u 40u;display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:44u;align-items:center}
 .bht-pr-pics{display:flex;gap:18u;align-items:flex-start}
 .bht-pr .c{display:flex;flex-direction:column;gap:10u;min-width:0}
 .bht-pr-img{height:calc(var(--ph)*var(--u));border-radius:4u;border:1u solid var(--rulec);background:#fffdf7}
@@ -1347,7 +1347,8 @@ const CSS=`
 .bht-pr .k>b{font:800 13u/1.25 'Montserrat',Helvetica,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--acc)}
 .bht-pr .k>span:not(.bht-tag){font-size:18u;line-height:1.35}
 .bht-tag.bht-pr-cap{position:static;align-self:flex-start;max-width:100%;margin-top:2u}
-.bht-pr-side{display:flex;flex-direction:column;gap:14u;min-width:0;height:100%}
+.bht-pr-side{display:flex;flex-direction:column;gap:14u;min-width:0}
+.bht-pr-side.full{height:100%}
 .bht-pr-side .bht-h{font-size:40u;max-width:14ch}
 .bht-pr-rows{display:flex;flex-direction:column;margin-top:6u}
 .bht-pr-rows .r{padding:12u 0;border-top:1u solid var(--rulec)}

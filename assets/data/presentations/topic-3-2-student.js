@@ -174,33 +174,42 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "split-mirror",
+      "kind": "frame-pair",
       "eyebrow": "Job Two · Religious Ideas",
       "title": "Two rulers, one claim.",
-      "footer": "Why different? Louis inherited his throne; Askia took his by force.",
       "kc": "KC-4.3.I.A",
       "template": {
-        "left": {
-          "name": "Louis XIV, France"
-        },
-        "right": {
-          "name": "Askia Muhammad"
-        },
+        "pictureHeight": 340,
+        "panels": [
+          {
+            "tag": "Louis XIV, France · Divine right",
+            "text": "God chose the king, and the claim came with his birth.",
+            "visual": {
+              "url": "../assets/images/topics/3-2/louis-xiv-rigaud-1701.jpg",
+              "alt": "Full-length portrait of Louis XIV in a white ermine cloak over a blue robe covered in gold fleurs-de-lis, one hand on a scepter, his crown on a cushion beside him, under red curtains",
+              "credit": "Louis XIV in coronation robes, Rigaud, 1701 · Louvre · Public domain",
+              "ratio": 0.7175
+            }
+          },
+          {
+            "tag": "Askia Muhammad, Songhai · Islam",
+            "text": "Took the throne by force, 1493. **Caliph**, and patron of scholars.",
+            "visual": {
+              "url": "../assets/images/topics/3-2/tomb-of-askia-gao.jpg",
+              "alt": "The Tomb of Askia at Gao, a mud-brick pyramid with wooden beams sticking out of its sides, behind a mud wall, with a painted sign in French in front of it",
+              "credit": "Tomb of Askia, Gao · Modern photograph: Gio53 · CC BY-SA 4.0",
+              "ratio": 1.3333
+            }
+          }
+        ],
         "rows": [
           {
-            "label": "Got power",
-            "left": "Came with his birth",
-            "right": "Took the throne by force, 1493"
+            "label": "Both",
+            "text": "Tied the ruler to God and gave people a reason to obey."
           },
           {
-            "label": "The claim",
-            "left": "**Divine right**: God chose the king",
-            "right": "**Songhai Islam**: caliph, and patron of scholars"
-          },
-          {
-            "label": "What it did",
-            "left": "Tied the ruler to God and gave people a reason to obey",
-            "right": "Tied the ruler to God and gave people a reason to obey"
+            "label": "Why different?",
+            "text": "Louis inherited his throne; Askia took his by force."
           }
         ]
       }
@@ -305,33 +314,46 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "split-mirror",
+      "kind": "frame-pair",
       "eyebrow": "Job Three · What Was Paid",
       "title": "Goods, or coin?",
-      "footer": "Where China's silver came from is a Unit 4 story.",
       "kc": "KC-4.3.I.D",
       "template": {
-        "left": {
-          "name": "Mexica tribute"
-        },
-        "right": {
-          "name": "Ming taxes in silver"
-        },
+        "pictureHeight": 320,
+        "panels": [
+          {
+            "tag": "Mexica tribute · conquered provinces",
+            "text": "Cotton cloaks, cacao, feathers, warrior costumes.",
+            "visual": {
+              "url": "../assets/images/topics/3-2/codex-mendoza-tribute-46r.jpg",
+              "alt": "A page of the Codex Mendoza listing tribute: place-name glyphs down the left, and beside them painted cloaks, a warrior costume, a shield, feathers, green jade beads and vessels of cacao, with Spanish notes",
+              "credit": "Codex Mendoza, folio 46r, c. 1541, made after the conquest · Public domain",
+              "ratio": 0.7028
+            }
+          },
+          {
+            "tag": "Ming taxes · across the empire",
+            "text": "Silver, in place of many separate taxes and labor duties.",
+            "visual": {
+              "url": "../assets/images/topics/3-2/ming-silver-ingot-jiajing-31.jpg",
+              "alt": "A dark silver ingot shaped like a shallow bowl, stamped with inscriptions, on a museum stand with a label reading Jiajing year 31 silver ingot, Ming",
+              "credit": "Silver ingot, Jiajing year 31 (1552) · Shanghai Museum · Photo: Gary Lee Todd · CC0",
+              "ratio": 1.5
+            }
+          }
+        ],
         "rows": [
           {
-            "label": "Who paid",
-            "left": "Conquered provinces",
-            "right": "Taxpayers across the empire"
+            "label": "Mexica tribute",
+            "text": "Wealth moved from conquered provinces to the capital, recorded in painted lists."
           },
           {
-            "label": "What",
-            "left": "Cotton cloaks, cacao, feathers, warrior costumes",
-            "right": "Silver, in place of many separate taxes and labor duties"
+            "label": "Ming silver",
+            "text": "One simpler tax, easier to collect."
           },
           {
-            "label": "So what",
-            "left": "Wealth moved from conquered provinces to the capital, recorded in painted lists",
-            "right": "One simpler tax, easier to collect"
+            "label": "Looking ahead",
+            "text": "Where China's silver came from is a Unit 4 story."
           }
         ]
       }

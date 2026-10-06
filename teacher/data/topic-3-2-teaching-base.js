@@ -256,17 +256,18 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'belief', kind: 'split-mirror', eyebrow: 'Job Two · Religious Ideas',
+      phase: 'belief', kind: 'frame-pair', eyebrow: 'Job Two · Religious Ideas',
       kc: 'KC-4.3.I.A',
       title: 'Two rulers, one claim.',
-      footer: 'Why different? Louis inherited his throne; Askia took his by force.',
       template: {
-        left: { name: 'Louis XIV, France' },
-        right: { name: 'Askia Muhammad' },
+        pictureHeight: 340,
+        panels: [
+          { tag: 'Louis XIV, France · Divine right', text: 'God chose the king, and the claim came with his birth.' },
+          { tag: 'Askia Muhammad, Songhai · Islam', text: 'Took the throne by force, 1493. **Caliph**, and patron of scholars.' }
+        ],
         rows: [
-          { label: 'Got power', left: 'Came with his birth', right: 'Took the throne by force, 1493' },
-          { label: 'The claim', left: '**Divine right**: God chose the king', right: '**Songhai Islam**: caliph, and patron of scholars' },
-          { label: 'What it did', left: 'Tied the ruler to God and gave people a reason to obey', right: 'Tied the ruler to God and gave people a reason to obey' }
+          { label: 'Both', text: 'Tied the ruler to God and gave people a reason to obey.' },
+          { label: 'Why different?', text: 'Louis inherited his throne; Askia took his by force.' }
         ]
       },
       notes: {
@@ -275,7 +276,7 @@ window.BEHISTORICAL_TEACHING = {
           'Both are CED examples under "Religious ideas" for KC-4.3.I.A: European notions of divine right, and Songhai promotion of Islam.',
           'Askia Muhammad seized the throne in 1493. He made the hajj in the 1490s (sources give 1495 to 1498) and returned with the title of caliph; sources disagree on who granted it, so the slide does not say.',
           'The CED word is "continued": rulers had used religion to justify rule long before 1450, as in Unit 1.',
-          'Pictures to add when uploaded: Rigaud\'s Louis XIV (1701), and the Tomb of Askia at Gao, captioned as a modern photograph of the 1495 building.'
+          'Picture one is Hyacinthe Rigaud\'s portrait of Louis XIV in coronation robes (1701, the Louvre): ermine, fleur-de-lis, crown and scepter at his side. He was 62 and had ruled for decades, so it is image-making, not a snapshot. Picture two is a modern photograph of the Tomb of Askia at Gao, built in 1495. The mud building is replastered regularly, and the sign in front of it (in French) says it was built in 1495 by Askia Mohamed I, who made the pilgrimage to Mecca and was named caliph in 1497.'
         ],
         ask: 'Why did Askia have to work harder for his religious claim than Louis did?',
         listenFor: 'He took power by force, so he could not claim it by birth.',
@@ -354,17 +355,19 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'paid', kind: 'split-mirror', eyebrow: 'Job Three · What Was Paid',
+      phase: 'paid', kind: 'frame-pair', eyebrow: 'Job Three · What Was Paid',
       kc: 'KC-4.3.I.D',
       title: 'Goods, or coin?',
-      footer: 'Where China\'s silver came from is a Unit 4 story.',
       template: {
-        left: { name: 'Mexica tribute' },
-        right: { name: 'Ming taxes in silver' },
+        pictureHeight: 320,
+        panels: [
+          { tag: 'Mexica tribute · conquered provinces', text: 'Cotton cloaks, cacao, feathers, warrior costumes.' },
+          { tag: 'Ming taxes · across the empire', text: 'Silver, in place of many separate taxes and labor duties.' }
+        ],
         rows: [
-          { label: 'Who paid', left: 'Conquered provinces', right: 'Taxpayers across the empire' },
-          { label: 'What', left: 'Cotton cloaks, cacao, feathers, warrior costumes', right: 'Silver, in place of many separate taxes and labor duties' },
-          { label: 'So what', left: 'Wealth moved from conquered provinces to the capital, recorded in painted lists', right: 'One simpler tax, easier to collect' }
+          { label: 'Mexica tribute', text: 'Wealth moved from conquered provinces to the capital, recorded in painted lists.' },
+          { label: 'Ming silver', text: 'One simpler tax, easier to collect.' },
+          { label: 'Looking ahead', text: 'Where China\'s silver came from is a Unit 4 story.' }
         ]
       },
       notes: {
@@ -373,7 +376,7 @@ window.BEHISTORICAL_TEACHING = {
           'Both are CED examples: Mexica tribute lists, and the Ming practice of collecting taxes in hard currency.',
           'The surviving tribute lists (the Codex Mendoza, c. 1541, probably copied from the Matrícula de Tributos) were made around or just after the Spanish conquest. Say so if you show one.',
           'The Single Whip reform combined land tax, labor service and other levies into one payment in silver; it spread empire-wide around 1580. Stop there. The silver flows from Japan and the Americas are Unit 4.',
-          'Pictures to add when uploaded: a Codex Mendoza tribute page and a Ming silver ingot a museum dates to the Ming.'
+          'Picture one is folio 46r of the Codex Mendoza: province name-glyphs down the left, and beside them the goods owed, which here include cloaks, a warrior costume and shield, feathers, jade beads and loads of cacao. Picture two is a Ming silver ingot in the Shanghai Museum whose own label reads "Jiajing year 31", which is 1552, a generation before the Single Whip reform. It shows silver as money, not the reform itself.'
         ],
         ask: 'Which system needed coins to work?',
         listenFor: 'The Ming silver tax.'

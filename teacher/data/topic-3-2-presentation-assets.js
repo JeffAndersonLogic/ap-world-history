@@ -1,9 +1,11 @@
 /* Topic 3.2 data-only visual assignments. Safe to evaluate in Node: no DOM.
  * Read by the teacher surface and by scripts/build-teaching-os-student-decks.js.
  *
- * Six pictures are placed: the two Qianlong pictures on the portraits slide,
- * two AI-generated figures on the people Venn, and two modern photographs on
- * the buildings comparison (all below). The others wait, on purpose. Jeff's 3.2 uploads have not arrived
+ * Ten pictures are placed: the two Qianlong pictures on the portraits slide,
+ * two AI-generated figures on the people Venn, two modern photographs on the
+ * buildings comparison, Louis XIV and the Tomb of Askia on the belief slide, and
+ * a Codex Mendoza tribute page and a Ming silver ingot on the paid slide (all
+ * below). The others wait, on purpose. Jeff's 3.2 uploads have not arrived
  * (docs/UNIT-3-PICTURE-LIST.md is the shopping list), and the build-topic rule is
  * to build with pictures already verified in the repo or none, never a filename
  * from memory. No repo-local picture fits a 3.2 beat: the only Unit 3 map,
@@ -78,5 +80,39 @@ const buildings=by('buildings');
 if(buildings&&buildings.template&&Array.isArray(buildings.template.panels)){
   const pics=[taj,versailles];
   buildings.template=Object.assign({},buildings.template,{panels:buildings.template.panels.map((p,i)=>Object.assign({},p,{visual:Object.assign({},pics[i])}))});
+}
+
+// belief (frame-pair): two pictures from Wikimedia Commons, described by Commons on
+// 2026-10-06 and saved here at 1300px tall or 1280 wide so the student deck never
+// depends on Wikimedia.
+// - Rigaud, Louis XIV in coronation robes, 1701, the Louvre: "Portrait of Louis XIV
+//   of France in Coronation Robes (by Hyacinthe Rigaud) - Louvre Museum.jpg", public
+//   domain, 2883x4018.
+// - Tomb of Askia, Gao: "Tombeau askia.jpg", CC BY-SA 4.0, photograph by Gio53. Chosen
+//   over the other Commons photographs because the tomb fills the frame and the sign in
+//   front of it (in French) states the 1495 date, Askia Mohamed I's pilgrimage and his
+//   naming as caliph in 1497. Commons' own description of the file is wrong ("from
+//   1400"); the sign and UNESCO say 1495. Caption it as a modern photograph.
+const louis={url:IMG+'topics/3-2/louis-xiv-rigaud-1701.jpg',alt:'Full-length portrait of Louis XIV in a white ermine cloak over a blue robe covered in gold fleurs-de-lis, one hand on a scepter, his crown on a cushion beside him, under red curtains',credit:'Louis XIV in coronation robes, Rigaud, 1701 · Louvre · Public domain',ratio:0.7175};
+const askia={url:IMG+'topics/3-2/tomb-of-askia-gao.jpg',alt:'The Tomb of Askia at Gao, a mud-brick pyramid with wooden beams sticking out of its sides, behind a mud wall, with a painted sign in French in front of it',credit:'Tomb of Askia, Gao · Modern photograph: Gio53 · CC BY-SA 4.0',ratio:1.3333};
+const belief=by('belief');
+if(belief&&belief.template&&Array.isArray(belief.template.panels)){
+  const pics=[louis,askia];
+  belief.template=Object.assign({},belief.template,{panels:belief.template.panels.map((p,n)=>Object.assign({},p,{visual:Object.assign({},pics[n])}))});
+}
+
+// paid (frame-pair): Codex Mendoza folio 46r (Commons "Codex Mendoza folio 46r.jpg",
+// public domain, 2581x3673), a tribute page: province glyphs and the goods owed. The
+// codex was made about 1541 for the Spanish viceroy, probably copied from earlier Mexica
+// records, so the credit says it was made after the conquest. Beside it, "Ming Silver
+// Ingot 01.jpg" (CC0, Gary Lee Todd, Shanghai Museum Coin Gallery, 2010), whose museum
+// label reads "Jiajing year 31 silver ingot, Ming": 1552, before the Single Whip reform
+// (empire-wide about 1580), so it shows silver as money and not the reform.
+const codex={url:IMG+'topics/3-2/codex-mendoza-tribute-46r.jpg',alt:'A page of the Codex Mendoza listing tribute: place-name glyphs down the left, and beside them painted cloaks, a warrior costume, a shield, feathers, green jade beads and vessels of cacao, with Spanish notes',credit:'Codex Mendoza, folio 46r, c. 1541, made after the conquest · Public domain',ratio:0.7028};
+const ingot={url:IMG+'topics/3-2/ming-silver-ingot-jiajing-31.jpg',alt:'A dark silver ingot shaped like a shallow bowl, stamped with inscriptions, on a museum stand with a label reading Jiajing year 31 silver ingot, Ming',credit:'Silver ingot, Jiajing year 31 (1552) · Shanghai Museum · Photo: Gary Lee Todd · CC0',ratio:1.5};
+const paid=by('paid');
+if(paid&&paid.template&&Array.isArray(paid.template.panels)){
+  const pics=[codex,ingot];
+  paid.template=Object.assign({},paid.template,{panels:paid.template.panels.map((p,n)=>Object.assign({},p,{visual:Object.assign({},pics[n])}))});
 }
 })();
