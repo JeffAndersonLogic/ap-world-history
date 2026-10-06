@@ -1570,7 +1570,11 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '07', title: 'Evidence Lab' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 3.2 module you did not complete in class.', due: 'Thursday, October 22' }
+      ],
+      homeworkDue: 'Thursday, October 22',
+      dueDate: '2026-10-22'
     },
     /* 2026-10-21  <-  lesson-3-2-empires-administration.js */
     {
@@ -1591,6 +1595,114 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       modules: [
         { number: '02', title: 'First & 10 Reading' },
         { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 3.2 module you did not complete in class.', due: 'Friday, October 23' }
+      ],
+      homeworkDue: 'Friday, October 23',
+      dueDate: '2026-10-23'
+    },
+    /* 2026-10-22  <-  lesson-3-3-belief-systems.js */
+    {
+      date: '2026-10-22',
+      cohort: 'green',
+      unit: 'Unit 3: Land-Based Empires',
+      topic: 'Empires: Belief Systems',
+      learningTargets: [
+        { text: 'I can explain how the Protestant Reformation marked a break with existing Christian traditions, and how both the Protestant and Catholic reformations contributed to the growth of Christianity.', label: 'Cultural Developments and Interactions' },
+        { text: 'I can explain how political rivalry between the Ottoman and Safavid empires intensified the existing Sunni-Shia split within Islam.', label: 'Cultural Developments and Interactions' },
+        { text: 'I can explain how Sikhism developed in South Asia in a context of interactions between Hinduism and Islam.', label: 'Cultural Developments and Interactions' }
+      ],
+      successCriteria: [
+        { text: 'I can describe a major change introduced by the Protestant Reformation (e.g., Luther\'s challenge to Church authority and the rise of new Protestant denominations) and explain how the Protestant and Catholic reformations both expanded Christianity.', label: 'Cultural Developments and Interactions' },
+        { text: 'I can explain the Battle of Chaldiran (1514) as both a religious and political conflict between rival empires.', label: 'Cultural Developments and Interactions' },
+        { text: 'I can explain how Sikhism, founded by Guru Nanak, emerged from interactions between Hindu and Islamic traditions in South Asia.', label: 'Cultural Developments and Interactions' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 3.3 module you did not complete in class.', due: 'Monday, October 26' }
+      ],
+      homeworkDue: 'Monday, October 26',
+      dueDate: '2026-10-26'
+    },
+    /* 2026-10-23  <-  lesson-3-3-belief-systems.js */
+    {
+      date: '2026-10-23',
+      cohort: 'silver',
+      unit: 'Unit 3: Land-Based Empires',
+      topic: 'Empires: Belief Systems',
+      learningTargets: [
+        { text: 'I can explain how the Protestant Reformation marked a break with existing Christian traditions, and how both the Protestant and Catholic reformations contributed to the growth of Christianity.', label: 'Cultural Developments and Interactions' },
+        { text: 'I can explain how political rivalry between the Ottoman and Safavid empires intensified the existing Sunni-Shia split within Islam.', label: 'Cultural Developments and Interactions' },
+        { text: 'I can explain how Sikhism developed in South Asia in a context of interactions between Hinduism and Islam.', label: 'Cultural Developments and Interactions' }
+      ],
+      successCriteria: [
+        { text: 'I can describe a major change introduced by the Protestant Reformation (e.g., Luther\'s challenge to Church authority and the rise of new Protestant denominations) and explain how the Protestant and Catholic reformations both expanded Christianity.', label: 'Cultural Developments and Interactions' },
+        { text: 'I can explain the Battle of Chaldiran (1514) as both a religious and political conflict between rival empires.', label: 'Cultural Developments and Interactions' },
+        { text: 'I can explain how Sikhism, founded by Guru Nanak, emerged from interactions between Hindu and Islamic traditions in South Asia.', label: 'Cultural Developments and Interactions' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 3.3 module you did not complete in class.', due: 'Tuesday, October 27' }
+      ],
+      homeworkDue: 'Tuesday, October 27',
+      dueDate: '2026-10-27'
+    },
+    /* 2026-10-26  <-  lesson-3-4-comparison.js */
+    {
+      date: '2026-10-26',
+      cohort: 'green',
+      unit: 'Unit 3: Land-Based Empires',
+      topic: 'Comparison in Land-Based Empires',
+      learningTargets: [
+        { text: 'I can compare the methods by which various empires increased their influence from 1450 to 1750.', label: 'Governance' },
+        { text: 'I can compare specific methods of increasing influence, including military expansion, administration, revenue, and religious or cultural legitimation, across at least two empires.', label: 'Governance' },
+        { text: 'I can construct a supported comparison argument using specific Unit 3 evidence and explain how that evidence supports my claim.', label: 'Argumentation' }
+      ],
+      successCriteria: [
+        { text: 'I can identify one meaningful similarity or difference in the methods two empires used to increase their influence and explain why the pattern existed.', label: 'Governance' },
+        { text: 'I can use specific evidence about expansion, administration, revenue, or religious and cultural legitimation from at least two empires and connect each example to increased imperial influence.', label: 'Governance' },
+        { text: 'I can write a comparison argument with a defensible claim, evidence from at least two empires, and explanation of how the evidence supports the comparison.', label: 'Argumentation' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: []
+    },
+    /* 2026-10-27  <-  lesson-3-4-comparison.js */
+    {
+      date: '2026-10-27',
+      cohort: 'silver',
+      unit: 'Unit 3: Land-Based Empires',
+      topic: 'Comparison in Land-Based Empires',
+      learningTargets: [
+        { text: 'I can compare the methods by which various empires increased their influence from 1450 to 1750.', label: 'Governance' },
+        { text: 'I can compare specific methods of increasing influence, including military expansion, administration, revenue, and religious or cultural legitimation, across at least two empires.', label: 'Governance' },
+        { text: 'I can construct a supported comparison argument using specific Unit 3 evidence and explain how that evidence supports my claim.', label: 'Argumentation' }
+      ],
+      successCriteria: [
+        { text: 'I can identify one meaningful similarity or difference in the methods two empires used to increase their influence and explain why the pattern existed.', label: 'Governance' },
+        { text: 'I can use specific evidence about expansion, administration, revenue, or religious and cultural legitimation from at least two empires and connect each example to increased imperial influence.', label: 'Governance' },
+        { text: 'I can write a comparison argument with a defensible claim, evidence from at least two empires, and explanation of how the evidence supports the comparison.', label: 'Argumentation' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '05', title: 'AP Skill Builder' },
         { number: '07', title: 'Evidence Lab' },
         { number: '10', title: 'Checkpoint 2' }
       ],

@@ -2,6 +2,12 @@
   const lesson = window.BEHISTORICAL_LESSON;
   if (!lesson) return;
 
+  lesson.classPresentation = {
+    title: 'Class Slides: Empires: Belief Systems',
+    desc: 'Follow three kinds of religious change: Christianity split and reformed, Ottoman-Safavid rivalry intensified an older Sunni-Shia divide, and Sikhism developed as a distinct tradition in a context of Hindu-Muslim interaction.',
+    url: 'presentation-topic-3-3-student.html'
+  };
+
   lesson.collegeBoardKeyConcepts = [
     {
       code: 'Unit 3: Learning Objective C',
@@ -31,18 +37,18 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: God, Power, and Empire',
+    title: 'First & 10: Belief Systems in Motion',
     embedUrl: 'first-and-10-topic-3-3-belief-systems-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 3.3 lesson path.'
+    note: 'Read the First & 10 narrative, answer the three questions, then return to the 3.3 lesson path.'
   };
 
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'Ottoman Empire (Sunni)', detail: 'The Ottomans controlled Anatolia, the Arab world, and the Balkans. Their sultan claimed the title of Caliph, protector of Sunni Islam worldwide.' },
-      { label: 'Safavid Empire (Shia)', detail: 'The Safavids controlled modern-day Iran. Shah Ismail I forced conversion to Shia Islam, creating a religiously distinct state on the Ottoman border.' },
-      { label: 'Mughal Empire', detail: 'The Mughals ruled most of the Indian subcontinent. Under Akbar, they pursued religious tolerance; under Aurangzeb, strict Sunni enforcement.' },
-      { label: 'Geographic takeaway', detail: 'The Safavid state was geographically surrounded by Sunni powers, making Shia identity an essential distinguishing mark of political loyalty.' }
+      { label: 'Ottoman Empire (Sunni)', detail: 'A major Sunni power west of the Safavid state. Political and military rivalry with the Safavids intensified the political importance of an older Sunni-Shi\'a division.' },
+      { label: 'Safavid Empire (Shi\'a)', detail: 'Shah Isma\'il made Twelver Shi\'a Islam the official religion of the Safavid state in 1501.' },
+      { label: 'Continuity', detail: 'Sunni and Shi\'a traditions existed centuries before the Ottoman-Safavid rivalry.' },
+      { label: 'Change', detail: 'The rivalry tied sectarian identity more closely to competing imperial states and intensified the divide.' }
     ]
   };
 
@@ -98,9 +104,9 @@
   ];
 
   lesson.evidenceLab = {
-    title: 'Evidence Lab: Belief as Reform, Rivalry, and Political Strategy',
-    task: 'Choose TWO cards from different religious settings. Decide what each source actually reveals before deciding what historical claim it can support. Pay attention to when the image was created: a contemporary court image and a later devotional portrait do different kinds of historical work.',
-    prompt: 'Using two evidence cards from different religious settings, make one claim about continuity or change within belief systems from c. 1450 to c. 1750. Cite one concrete detail from each source, explain how political or cultural interaction shaped the development, and explain one limitation or perspective issue that affects your interpretation.'
+    title: 'Evidence Lab: Three Kinds of Religious Change',
+    task: 'Choose TWO cards from different religious settings. Decide what each source can actually prove, then use them to compare two kinds of religious change: reform within Christianity, an older Islamic division intensified by imperial rivalry, or the emergence of Sikhism in South Asia.',
+    prompt: 'Using two evidence cards from different religious settings, make one claim about continuity and change within belief systems from c. 1450 to c. 1750. Cite one concrete detail from each source, explain what changed and what continued, then explain one sourcing limitation or perspective issue that affects your interpretation.'
   };
 
   lesson.images = [
@@ -112,18 +118,21 @@
       prompt: 'NOTICE how Luther is represented as an individual religious authority. What can you INFER about the visibility of reform leaders in an age of print and confessional conflict? What can a portrait not prove about why ordinary people adopted Protestant ideas?'
     },
     {
+      title: 'Council of Trent, Canon on Justification, 1547',
+      label: 'Council decree · Session VI · 1547',
+      sourceText: [
+        'If anyone says that the sinner is justified by faith alone...',
+        '...let him be anathema.'
+      ],
+      caption: 'Catholic Reformation evidence. A canon from the Council of Trent states an official Catholic position during the era of confessional reform.',
+      prompt: 'NOTICE what claim the council rejects. What can you INFER about Catholic reform and doctrinal clarification? What can an official church decree not prove about what every Catholic believed or practiced?'
+    },
+    {
       title: 'Battle of Chaldiran, Selim-nama, 1524',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Chaldiran_miniature._Sel%C4%ABm-n%C4%81ma%2C_by_%C5%9E%C5%ABkr%C4%AB-i_Bitlis%C4%AB%2C_1524_%28National_Library_of_Israel%2C_Ms._Yah._Ar._1116%29.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Battle_of_Chaldiran_miniature._Sel%C4%ABm-n%C4%81ma,_by_%C5%9E%C5%ABkr%C4%AB-i_Bitlis%C4%AB,_1524_(National_Library_of_Israel,_Ms._Yah._Ar._1116).jpg',
       caption: 'Ottoman-Safavid rivalry evidence. An Ottoman manuscript miniature made about a decade after the 1514 battle depicts the conflict between the Sunni Ottoman and Shia Safavid empires.',
       prompt: 'NOTICE how the battle and opposing forces are represented. What can you INFER about the importance of the conflict in Ottoman political memory? Why should a historian be cautious about using an Ottoman victory narrative as neutral evidence about the Safavids?'
-    },
-    {
-      title: 'Court of Akbar, Akbarnama',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Court_of_Akbar_from_Akbarnama.jpg',
-      caption: 'Mughal accommodation evidence. A Mughal court image represents Akbar at the center of a diverse imperial elite during a reign associated with religious accommodation and debate.',
-      prompt: 'NOTICE who is gathered around the emperor and how hierarchy is organized. What can you INFER about Akbar\'s strategy of incorporating varied elites? What written policy evidence would you need before claiming the image proves religious tolerance by itself?'
     },
     {
       title: 'Guru Nanak, 19th-Century Devotional Portrait',

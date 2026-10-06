@@ -10,16 +10,13 @@
  * Islamic traditions. Each is a case where the classroom summary is a sentence
  * and the mechanism is a page.
  *
- * The organizing argument, which holds the three together: in this period
- * religion is the main instrument of legitimacy available to a ruler, and that
- * makes every doctrinal question a political question and every political
- * quarrel available for religious framing. The Reformation redistributed church
- * property and princely independence; the Sunni-Shia border was drawn by armies
- * and still runs where they left it; Akbar's abolition of the jizya and
- * Aurangzeb's reimposition are two revenue and loyalty calculations wearing
- * theological clothes.
- *
- * Three things carried deliberately:
+ * The organizing argument: religions changed as much as empires did, but in different ways.
+Christianity split and reformed; Ottoman-Safavid political rivalry intensified an older
+Sunni-Shi'a divide; Sikhism developed as a distinct tradition in a context of Hindu-Muslim
+interaction. The chapter uses continuity and change as its frame, not religion as a ruler's
+instrument.
+
+Three things carried deliberately:
  *
  *   1. Both reformations grew Christianity, which students find counterintuitive
  *      and the criteria explicitly ask for. Catholic missionary orders founded
@@ -41,66 +38,68 @@ module.exports = {
   sourceFile: 'deep-reading-topic-3-3-belief-systems.html',
   lessonFile: 'lesson-3-3-belief-systems.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 3.3: Faith, and the Uses of It',
+  docTitle: 'BeHistorical | Deep Reading | Topic 3.3: Belief Systems in Motion',
   eyebrow: 'Topic 3.3 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
-  titleHtml: 'Faith, and the Uses of <em>It</em>',
-  deck: `Between <span class="num">1450</span> and <span class="num">1750</span> religion was the only language of legitimacy every subject understood, which made it the most powerful instrument a ruler had and the most dangerous. This chapter covers the Reformation as a political event, the sectarian border two empires drew and left behind, the arithmetic of ruling people who believe otherwise, and the tradition that began in the space where two of these worlds met.`,
-  meta: ['Six sections', 'Belief as instrument and as conviction', 'Read alongside the First & 10'],
-  footerNote: 'Topic 3.3 &nbsp;·&nbsp; Faith, and the Uses of It &nbsp;·&nbsp; Companion to the First &amp; 10',
+  titleHtml: 'Belief Systems <em>in Motion</em>',
+  deck: `Between <span class="num">1450</span> and <span class="num">1750</span>, belief systems did not stand still. Western Christianity split and reformed, an older Sunni-Shi'a division gained new political weight through Ottoman-Safavid rivalry, and Sikhism developed as a distinct tradition in Punjab. The thread through every section is continuity and change: what persisted, what changed, and why.`,
+  meta: ['Six sections', 'Continuity and change', 'Read alongside the First & 10'],
+  footerNote: 'Topic 3.3 &nbsp;·&nbsp; Belief Systems in Motion &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',
-    intro: `Section 01 is the frame that makes the rest coherent, and sections 02 to 06 are the four cases the success criteria name plus the one they imply. If you are short of time, read 01 and then whichever case your prompt names; each of 02 to 06 stands on its own.`,
+    intro: `Read every section with the same three questions: what continued, what changed, and what historical interaction or conflict helps explain the change? Section 01 gives the frame; sections 02 to 04 cover Christianity and the Ottoman-Safavid divide; section 05 is optional imperial context; section 06 is Sikhism.`,
     steps: [
-      `<b>01 Religion as an instrument:</b> the four jobs it did for a ruler, and its one great risk.`,
-      `<b>02 The Reformation:</b> what actually changed, and why princes were interested.`,
-      `<b>03 The Catholic response:</b> Trent, the Jesuits, and how both reformations grew the church.`,
-      `<b>04 Sunni and Shia:</b> Chaldiran, a manufactured identity, and a border still on the map.`,
-      `<b>05 Ruling people who believe otherwise:</b> jizya, millets, Akbar, Aurangzeb, the Qing.`,
-      `<b>06 Sikhism:</b> a new tradition, and how to write about it accurately.`,
-      `<b>Then the closing section</b>, which turns all of it into comparison sentences you can write.`
+      `<b>01 The frame:</b> three different kinds of religious change.`,
+      `<b>02 Protestant Reformation:</b> a break within western Christianity.`,
+      `<b>03 Catholic Reformation:</b> reform, discipline and missionary growth.`,
+      `<b>04 Sunni and Shi'a:</b> an old divide intensified by Ottoman-Safavid rivalry.`,
+      `<b>05 Imperial policy:</b> optional context for how rulers managed religious diversity; do not confuse this with the topic's core story.`,
+      `<b>06 Sikhism:</b> a distinct tradition developing in a context of Hindu-Muslim interaction.`
     ]
   },
 
   empires: [
     // ── 01 ────────────────────────────────────────────────────────────────────
     {
-      id: 'instrument',
+      id: 'frame',
       num: '01',
       accent: 'gold',
-      name: 'The Four Jobs Religion Did for a Ruler',
-      navLabel: 'Religion as instrument',
+      name: 'Three Ways Belief Systems Changed',
+      navLabel: 'The continuity-and-change frame',
       dates: 'c. 1450 to 1750 &nbsp;·&nbsp; The frame',
-      thesis: `Religion was not one thing to an early modern state. It was a claim to rule, a way of organizing subjects, a source of trained personnel, and a reason to fight, and rulers used all four, often at the same time.`,
+      thesis: `Religions changed as much as empires did, but they did not all change in the same way: Christianity split and reformed, an old divide within Islam gained new political weight, and Sikhism emerged as a distinct tradition.`,
       parts: [
         {
-          heading: 'The four jobs',
+          heading: 'Do not confuse change with replacement',
           blocks: [
-            { p: `<b>Legitimacy.</b> Nobody in this period believed a ruler should govern because a majority chose him. The available claims were dynastic and divine: God, or Heaven, or the imams, or the community of believers had placed this family in authority. An Ottoman sultan was protector of Mecca and Medina; a Safavid shah claimed descent from the imams; a Qing emperor held the Mandate of Heaven; a French king ruled by divine right. Strip out the religious claim and there is nothing left to say about why anyone should obey.` },
-            { p: `<b>Administration.</b> Religious institutions came with personnel, records, courts and buildings, and no state in this period could have replaced them. Judges applying religious law settled disputes; clergy recorded births, marriages and deaths; endowments funded schools, hospitals and kitchens, as the Topic 3.2 chapter describes; and in most of these empires the men who could read and write in the required language had been trained by a religious institution.` },
-            { p: `<b>Managing difference.</b> Every empire here ruled people of several faiths and had to decide the terms. Those terms, who pays what, who may build what, whose courts govern whose marriages, who may hold office, are the practical content of religious policy, and they were adjusted for political reasons throughout.` },
-            { p: `<b>Mobilization.</b> Religion turns a border dispute into a duty. It recruits, it justifies taxes, and it makes an enemy into an infidel or a heretic, which is a category you can fight without negotiating. That is the fourth job, and it is also the risk: a ruler who has made his legitimacy religious cannot easily compromise on religion, and a doctrinal quarrel becomes a permanent war.` }
+            { p: `Continuity and change asks two questions at once. A belief system can change dramatically without disappearing. Western Christianity is the clearest example: the Protestant Reformation broke institutional unity, but Christianity remained powerful, and both Protestant and Catholic reform movements helped it grow.` },
+            { p: `The same rule prevents a major error in the Islamic case. The <span class="kt">Sunni-Shi'a split</span> was centuries older than the Ottoman and Safavid empires. The change was not the creation of two branches. It was the way political rivalry between two neighboring empires intensified that older division and tied it more closely to state identity.` },
+            { p: `Sikhism is a third kind of change. Hindu and Muslim traditions continued to shape South Asia, while a <span class="kt">distinct Sikh tradition</span> developed in Punjab in a context where Hindu and Muslim communities had interacted for generations. Context is not the same as mixture: Sikhism is not accurately described as a simple blend of the two.` }
           ]
         },
         {
-          heading: 'The analytical rule for this whole topic',
+          heading: 'The three-question test',
           blocks: [
-            { p: `When you meet a religious policy in Unit 3, ask what it did rather than what it professed. Not "was Akbar tolerant?" but "what did abolishing the jizya buy him, and from whom?" Not "were the Ottomans tolerant of Christians?" but "what did governing them through their own religious leaders save the state, and what did the jizya bring in?" Not "was Luther sincere?", which he plainly was, but "why did a doctrinal argument about indulgences turn into a redistribution of church lands to German princes?"` },
-            { p: `This is not a claim that belief was insincere. These were believing societies and most of these rulers were believers; Aurangzeb's piety was genuine and so was Akbar's curiosity. The point is that sincere belief and political calculation are not alternatives, and the questions above are the ones that produce explanations rather than verdicts. A student who scores well in this topic is one who can say what a policy accomplished, for whom, and at what cost.` }
+            { p: `For every case, complete the same chain: <strong>what continued, what changed, and what caused or shaped the change?</strong> For Christianity, the change is reform and confessional division. For Islam, it is the political intensification of an older sectarian divide. For Sikhism, it is the emergence of a new religious tradition in a setting of sustained interaction.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Rulers still used religion to justify authority, and this chapter includes one optional section on imperial policy for context. But that is not Topic 3.3's main question. Topic 3.2 owns religion as a tool of legitimacy. Topic 3.3 owns <strong>change within belief systems themselves</strong>.`
+            } }
           ]
         }
       ],
       useThis: {
-        tool: `Religion as the only universal language of legitimacy. <em>The mechanism is that in a world with no theory of popular consent, the sole available answer to "why should I obey you?" is a religious one, which makes control of religious claims the foundation of political authority and makes every doctrinal dispute a dispute about who may rule.</em>`,
-        limit: `The same dependence is the trap. A ruler whose legitimacy is religious cannot compromise doctrine without undermining himself, which is why the Ottoman-Safavid and European wars of religion were so hard to end.`,
-        comparison: `Against <em>Topic 1.7</em>: the same four jobs appear in the earlier unit, with Neo-Confucianism, the caliphate, temple endowment and Theravada merit-making. Unit 3 differs in that religious difference became a reason for war between states of the same religion, which is new and is what section 04 is about.`
+        tool: `The three-question frame: <em>what continued, what changed, and what historical interaction or conflict shaped the change?</em>`,
+        limit: `Do not force all three cases into one mechanism. Reform, intensified division and emergence are different kinds of change.`,
+        comparison: `Against <em>Topic 3.2</em>: there religion was something rulers used. Here belief systems are historical actors that change too.`
       },
       terms: [
-        ['Legitimacy', 'The accepted reason a ruler may command obedience, which in this period was always framed religiously.'],
-        ['Confessionalization', 'The process by which states and churches aligned so that religious identity and political loyalty became the same thing.'],
-        ['Religious law', 'The bodies of law, sharia and canon law among them, that governed marriage, inheritance and disputes and supplied states with courts they did not have to build.'],
-        ['Toleration', 'A policy of permitting other faiths on defined terms, adopted for political reasons and revocable for political reasons.'],
-        ['Mobilization', 'The use of religious framing to raise soldiers, justify taxes and turn a rival state into an enemy that need not be negotiated with.']
+        ['Continuity', 'A feature or pattern that persists across the period even while other things change.'],
+        ['Change', 'A meaningful historical development within a belief system or in the relationship among belief communities.'],
+        ['Reformation', 'A movement to reform religious belief, practice or institutions; in this topic both Protestant and Catholic reform matter.'],
+        ['Sectarian divide', 'A division within a religious tradition, such as Sunni and Shi\'a Islam.'],
+        ['Historical context', 'The conditions surrounding a development that help explain why it took the form it did.']
       ]
     },
 
