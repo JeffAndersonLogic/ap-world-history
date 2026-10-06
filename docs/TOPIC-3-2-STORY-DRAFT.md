@@ -1,7 +1,9 @@
 # Topic 3.2 Story Draft: Empires: Administration
 
-**Status: Draft for Jeff's review, revision 2, 2026-10-06. Not yet approved.** Nothing
-downstream of this page has been built.
+**Status: Approved by Jeff, 2026-10-06** ("Excellent story! Run it in full"), revision 2 with
+section 3 as the student narrative. With "run it in full" he took the recommendation on every
+question in section 10; the decisions are recorded at the end of this page. The First & 10
+prose still goes to him for its own approval.
 
 **Why there is a revision 2.** Revision 1 (commit `820ea796`) took the CED from the repo's
 copies (the lesson data, `ced-unit3-contract.js` and the story map) instead of the CED itself.
@@ -175,8 +177,7 @@ emperor, but he could never turn one place into his own little kingdom.
 
 Most people in an empire would never see their ruler. No ruler could force millions of people to
 obey every day, so rulers tried to make their power look rightful, as if it came from God or was
-too great to question. They used religious ideas, art and huge buildings. Rulers had done this
-for centuries, as you saw in Unit 1, and these rulers kept doing it.
+too great to question. They used religious ideas, art and huge buildings. Rulers had done this for centuries, as you saw in Unit 1, and these rulers kept doing it.
 
 Start with religious ideas. In France, King Louis XIV claimed **divine right**: God had chosen
 the king, so disobeying the king meant disobeying God. In West Africa, Askia Muhammad had a
@@ -185,6 +186,12 @@ it by birth. He made the pilgrimage to Mecca and came home with the title of **c
 leader of Muslims. Back home he supported Islamic scholars and judges. Promoting Islam made
 Askia the protector of the faith, which gave people a reason to accept a ruler who had seized
 power.
+
+Art did this work too. The Qing emperors who ruled China were Manchus, outsiders from the
+northeast ruling an empire where most people were Han Chinese. Their official **imperial
+portraits** showed them in the robes and poses of a traditional Chinese emperor. The Qianlong
+Emperor was also painted as a Buddhist holy figure, for his Tibetan and Mongol subjects. Same
+ruler, different picture, depending on who needed convincing.
 
 Buildings did the same work in stone. The Mughal emperors built enormous mosques and
 **mausoleums**, giant tombs such as the Taj Mahal. They told everyone that this family was rich,
@@ -255,6 +262,7 @@ comparison that makes its Key Concept clear. Weight is equal across the three jo
 | Mughal mansabdars and jagirs (not a CED example; kept because the Unit 3 coherence contract requires it and it links to zamindars) | KC-4.3.I.C | the other two, one line | A third way: rank and rotation. |
 | Divine right (CED example) | KC-4.3.I.A, religious ideas | Songhai Islam | Religious claim that comes with birth. |
 | Songhai promotion of Islam (CED example) | KC-4.3.I.A, religious ideas | divine right | Religious claim earned by a ruler who took power by force. |
+| Qing imperial portraits (CED example) | KC-4.3.I.A, art | none; one paragraph | An outsider dynasty shown as the rightful emperor, with a different image for each audience. Added at approval to keep the narrative's "art" promise. |
 | Mughal mausolea and mosques (CED example) | KC-4.3.I.A, architecture | Versailles | Building as dynastic and religious statement. |
 | Versailles (CED example) | KC-4.3.I.A, architecture | Mughal tombs | Building as statement and as a tool to watch the nobles. |
 | Ottoman tax farming (CED example) | KC-4.3.I.D | zamindars | Cash now, through a bidder. |
@@ -262,8 +270,7 @@ comparison that makes its Key Concept clear. Weight is equal across the three jo
 | Mexica tribute lists (CED example) | KC-4.3.I.D | Ming silver | Goods from conquered provinces. |
 | Ming taxes in silver (CED example) | KC-4.3.I.D | Mexica tribute | One tax in coin. Silver's source is Unit 4. |
 
-**CED examples not used in the class story**, all optional: Mexica human sacrifice, Qing imperial
-portraits, the Incan sun temple of Cuzco. See question 3.
+**CED examples not used in the class story**, both optional: Mexica human sacrifice and the Incan sun temple of Cuzco. Qing imperial portraits were added back at approval (see Decisions).
 
 ## 6. Narrative beats
 
@@ -280,7 +287,7 @@ portraits, the Incan sun temple of Cuzco. See question 3.
 5. **Job one, people:** the Halil hook; devshirme compared with salaried samurai (same,
    different, why); mansabdars as a third way.
 6. **Job two, symbols, religious ideas:** divine right compared with Songhai Islam.
-7. **Job two, symbols, buildings:** Mughal tombs and mosques compared with Versailles.
+7. **Job two, symbols, art and buildings:** Qing portraits (one ruler, two pictures); Mughal tombs and mosques compared with Versailles.
 8. **Job three, money:** tax farming compared with zamindars; Mexica tribute compared with Ming
    silver.
 9. **The landing:** the three jobs hold each other up; the tools differ because the contexts
@@ -300,7 +307,7 @@ portraits, the Incan sun temple of Cuzco. See question 3.
 - **Trunk:** Conquest wins land. People, symbols and money hold it.
 - **People who serve:** devshirme / salaried samurai (outsiders made loyal / warriors taken off
   their land).
-- **Symbols that justify:** divine right / Songhai Islam; Versailles / Mughal tombs.
+- **Symbols that justify:** divine right / Songhai Islam; Qing portraits; Versailles / Mughal tombs.
 - **Systems that pay:** tax farming / zamindars; Mexica tribute / Ming silver.
 
 Why this shape: the topic's content is three parts holding up one claim, and the CED's reasoning
@@ -329,9 +336,7 @@ From `docs/UNIT-3-PICTURE-LIST.md`, rows this story uses:
   *Jahangir Preferring a Sufi Shaikh to Kings* if a Mughal legitimacy picture is wanted.
 - Beat 8: Codex Mendoza tribute page (c. 1541, post-conquest); a Ming silver ingot a museum dates
   to the Ming. Tax farming and zamindars: a chain diagram.
-- **No longer needed by this story:** the Qianlong court-robes portrait, the Coricancha, and the
-  Qianlong-as-Manjushri thangka revision 1 added. Kept on the list in case question 3 brings Qing
-  portraits back.
+- Beat 7 also: the Qianlong court-robes portrait (1736) and the Qianlong-as-Manjushri thangka (Freer F2000.4), as a pair: one ruler, two images. **No longer needed:** the Coricancha.
 
 ## 10. Questions for Jeff (one list)
 
@@ -384,3 +389,28 @@ From `docs/UNIT-3-PICTURE-LIST.md`, rows this story uses:
 
 **After you approve:** the First & 10 is written from this story first, and you read it; the
 teacher presentation is built from the same story next.
+
+## Decisions (settled 2026-10-06, "Run it in full")
+
+Jeff approved the story and took the recommendation on every question in section 10:
+
+1. 3.2 teaches the devshirme in full. The two unrendered devshirme entries left in 3.1's data
+   file are reported as an adjacent finding, not edited.
+2. 3.2 says nothing about Morocco. **3.1's eBook sentence on the Moroccan motive is not edited**:
+   the recommendation was conditional on Jeff's word, and an edit to 3.1 now would also mark 3.1
+   stale three days before its Green day. Reported again in the build report.
+3. Mexica human sacrifice and the Incan sun temple stay out. Qing imperial portraits are back
+   in, as one paragraph, so the narrative's "religious ideas, art and huge buildings" has an art
+   example (recommended when the narrative was shown).
+4. The Mehmed and Çandarlı Halil hook stays, worded as above.
+5. The millet system and the Qing examination and Banner systems leave the lecture and the First
+   & 10; the Rajputs fold into the mansabdar paragraph.
+6. Skill Builder: comparison with a contextualization step, devshirme against salaried samurai.
+7. BeSurreal becomes a legitimacy prompt; BeInTheRoom's misquoted objective is corrected.
+8. Primary Source: the CED's own pair, Leo Africanus on Timbuktu and Busbecq on the Ottoman
+   court, from public-domain translations checked against the printed text.
+9. eBook chapter: reordered to people, symbols, money, with the samurai and Songhai added and the
+   local-elites and "where it cracked" sections kept at the end as depth.
+10. Required modules for Oct 20 and 21: 02, 06, 07 and 10.
+11. Reading title: "Holding What You Won", everywhere.
+12. Length: the narrative stays at full length (Jeff called it excellent as shown).
