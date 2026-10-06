@@ -73,11 +73,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "grid",
       "eyebrow": "Job One · Expand",
       "title": "Gunpowder increases territorial reach.",
-      "visual": {
-        "url": "../assets/images/topics/3-1/panipat-1526.jpg",
-        "alt": "Historical image representing the First Battle of Panipat in 1526",
-        "credit": "Panipat, 1526 · verified Unit 3 asset"
-      },
       "footer": "Same job: expansion. Different campaigns; shared mechanism: military capacity increased influence.",
       "kc": "KC-4.3.II",
       "cards": [
@@ -104,6 +99,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "Evidence · Panipat, 1526",
       "title": "Military technology becomes evidence.",
       "subtitle": "Use the image as evidence of Mughal battlefield organization, not as proof that gunpowder alone caused victory.",
+      "visual": {
+        "url": "../assets/images/topics/3-1/panipat-1526.jpg",
+        "alt": "Historical illustration representing the First Battle of Panipat in 1526",
+        "credit": "Panipat, 1526 · verified Unit 3 asset"
+      },
       "footer": "Historical image · First Battle of Panipat"
     },
     {
