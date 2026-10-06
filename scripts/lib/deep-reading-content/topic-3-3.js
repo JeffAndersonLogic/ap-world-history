@@ -83,7 +83,7 @@ module.exports = {
             { p: `For every case, complete the same chain: <strong>what continued, what changed, and what caused or shaped the change?</strong> For Christianity, the change is reform and confessional division. For Islam, it is the political intensification of an older sectarian divide. For Sikhism, it is the emergence of a new religious tradition in a setting of sustained interaction.` },
             { note: {
               kind: 'misconception',
-              label: 'Keep Topic 3.2 out of Topic 3.3',
+              label: 'Common mistake to avoid',
               html: `Rulers still used religion to justify authority, and this chapter includes one optional section on imperial policy for context. But that is not Topic 3.3's main question. Topic 3.2 owns religion as a tool of legitimacy. Topic 3.3 owns <strong>change within belief systems themselves</strong>.`
             } }
           ]
