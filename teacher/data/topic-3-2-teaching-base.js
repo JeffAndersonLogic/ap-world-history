@@ -221,6 +221,7 @@ window.BEHISTORICAL_TEACHING = {
           'Devshirme: a forced levy of Christian boys, mostly from the Balkans, converted to Islam and trained; the strongest became Janissaries, the ablest went to palace schools and could become governors or grand vizier. It was forced and cruel to the families; say so.',
           'Samurai: after more than a century of civil war between lords with their own lands and armies, starting in the late 1500s most samurai were moved off their lands into castle towns and paid stipends counted in rice. Hideyoshi\'s 1588 sword hunt is part of the same separation of warriors from farmers.',
           'Japan was not a giant empire. The CED uses it because its rulers faced the same danger and answered it with the same idea.',
+          'The two men are Historical Reconstructions, AI generated: they put a face on each answer and are not evidence. The samurai carries a ledger as well as two swords, which is the point: a warrior turned salaried official. The Janissary\'s brocade coat is grander than most rank-and-file wore; that is the picture\'s choice, not the record\'s.',
           'Picture to add when uploaded: the Süleymanname devshirme registration miniature (1558), captioned as an Ottoman court painting.'
         ],
         ask: 'One similarity, one difference, and why they differed.',

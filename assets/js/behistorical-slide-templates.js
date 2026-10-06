@@ -463,13 +463,20 @@ function timelineFortunes(s){
   return board('timeline-fortunes',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-ft">${rows}<div class="bht-ft-row axis"><div class="bht-ft-name"><span>${note}</span></div><div class="bht-ft-ticks">${ticks}</div></div></div>`)+foot(s.footer)));
 }
 
-/* Two overlapping circles: what only one side has, and what both share. */
+/* Two overlapping circles: what only one side has, and what both share.
+   Each side may stand a figure beside its circle (`left.visual`,
+   `right.visual`): a cut-out on a transparent ground, drawn whole and standing
+   on the bottom edge, so two figures cut from one picture at one scale keep
+   their true heights. Two AI figures share one label, as a film strip does. */
 function splitVenn(s){
   const t=s.template||{},L=t.left||{},R=t.right||{};
+  const figs=[[L.visual,'l'],[R.visual,'r']].filter(([v])=>v&&v.url);
+  const allAi=figs.length>0&&figs.every(([v])=>v.ai);
+  const fig=figs.map(([v,c])=>`<div class="bht-vn-fig ${c}"><img src="${esc(v.url)}" alt="${esc(v.alt||'')}" loading="eager">${allAi?'':tag(v,c==='l'?'bl':'br')}</div>`).join('')+(allAi?`<span class="bht-tag bht-ai br bht-vn-tag">${LABEL}</span>`:'');
   const list=(a,cls,x)=>`<div class="bht-vn-list ${cls}" style="left:${(x/1128*100).toFixed(2)}%">${arr(a).slice(0,4).map(v=>`<p>${rich(v)}</p>`).join('')}</div>`;
   const svg=`<svg viewBox="0 0 1128 430" aria-hidden="true"><circle cx="464" cy="235" r="195" class="l"></circle><circle cx="664" cy="235" r="195" class="r"></circle></svg>`;
   const names=`<div class="bht-vn-name l">${esc(L.name)}</div><div class="bht-vn-name m">${esc(t.bothLabel||'Both')}</div><div class="bht-vn-name r">${esc(R.name)}</div>`;
-  return board('split-venn',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-vn">${svg}${names}${list(L.items,'l',290)}${list(t.both,'m',485)}${list(R.items,'r',680)}</div>`)+foot(s.footer)));
+  return board('split-venn',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-vn">${svg}${names}${list(L.items,'l',290)}${list(t.both,'m',485)}${list(R.items,'r',680)}${fig}</div>`)+foot(s.footer)));
 }
 
 /* Continuity and change: before and after on either side of a turning point,
@@ -1106,6 +1113,10 @@ const CSS=`
 .bht-vn-list{position:absolute;top:22%;height:66%;width:14%;display:flex;flex-direction:column;justify-content:center;gap:14u;text-align:center}
 .bht-vn-list p{font-size:17u;line-height:1.35}
 .bht-vn-list.m p{font-weight:700}
+.bht-vn-fig{position:absolute;bottom:0;height:100%;width:250u}
+.bht-vn-fig.l{left:0}.bht-vn-fig.r{right:0}
+.bht-vn-fig img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:50% 100%}
+.bht-tag.bht-vn-tag{right:-56u;top:0;bottom:auto}
 
 /* continuity and change */
 .bht-cy{display:flex;flex-direction:column;gap:0}

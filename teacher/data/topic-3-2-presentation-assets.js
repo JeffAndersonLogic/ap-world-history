@@ -1,7 +1,8 @@
 /* Topic 3.2 data-only visual assignments. Safe to evaluate in Node: no DOM.
  * Read by the teacher surface and by scripts/build-teaching-os-student-decks.js.
  *
- * One picture is placed: the Qianlong court portrait (below). The others wait, on purpose. Jeff's 3.2 uploads have not arrived
+ * Three pictures are placed: the Qianlong court portrait, and two AI-generated
+ * figures on the people Venn (both below). The others wait, on purpose. Jeff's 3.2 uploads have not arrived
  * (docs/UNIT-3-PICTURE-LIST.md is the shopping list), and the build-topic rule is
  * to build with pictures already verified in the repo or none, never a filename
  * from memory. No repo-local picture fits a 3.2 beat: the only Unit 3 map,
@@ -31,4 +32,22 @@ const by=id=>T.slides.find(s=>s.phase===id);
 const qianlong={url:IMG+'topics/3-2/qianlong-emperor.jpg',alt:'Court portrait of the young Qianlong Emperor in a fur-trimmed hat and a yellow robe embroidered with dragons, with Chinese inscriptions and seals',credit:'Court portrait, 1736 · Public domain',fit:'contain'};
 const portraits=by('portraits');
 if(portraits)portraits.template=Object.assign({},portraits.template,{visual:Object.assign({},qianlong)});
+
+// people (split-venn): a Janissary beside the devshirme circle and a salaried
+// samurai beside the samurai circle. Both are cut from one AI-generated picture
+// Jeff supplied on 2026-10-06 (the two men standing in a castle-town street and
+// an Ottoman arcade, 1408x768, with the Gemini sparkle in its corner). The
+// backgrounds were removed with rembg's BiRefNet model, which also removed the
+// sparkle, and both canvases are 731px tall with the feet on the bottom edge,
+// so the two men keep the heights they had in the source. Labeled by the
+// template from `ai: true`; they set a scene and are never evidence.
+const AI=(name,alt)=>({url:IMG+'topics/3-2/'+encodeURIComponent(name),alt,ai:true});
+const people=by('people');
+if(people){
+  const t=people.template||{};
+  people.template=Object.assign({},t,{
+    left:Object.assign({},t.left,{visual:AI('3.2 - Janissary.png','Reconstruction of a Janissary in a tall white felt hat with a brass plume holder, a red brocade coat, a green sash and red boots, holding a long musket and a curved sword')}),
+    right:Object.assign({},t.right,{visual:AI('3.2 - Salaried Samurai.png','Reconstruction of a samurai official in a dark blue robe with stiff winged shoulders and wide trousers, two swords at his belt and a ledger in his hand')})
+  });
+}
 })();

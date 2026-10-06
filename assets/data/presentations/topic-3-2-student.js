@@ -112,7 +112,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "Christian boys taken from their families",
             "Converted and trained",
             "Janissaries, governors, even grand viziers"
-          ]
+          ],
+          "visual": {
+            "url": "../assets/images/topics/3-2/3.2%20-%20Janissary.png",
+            "alt": "Reconstruction of a Janissary in a tall white felt hat with a brass plume holder, a red brocade coat, a green sash and red boots, holding a long musket and a curved sword",
+            "ai": true
+          }
         },
         "right": {
           "name": "Salaried samurai",
@@ -120,7 +125,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "An old warrior class",
             "Moved off their lands into castle towns",
             "Paid a yearly stipend in rice"
-          ]
+          ],
+          "visual": {
+            "url": "../assets/images/topics/3-2/3.2%20-%20Salaried%20Samurai.png",
+            "alt": "Reconstruction of a samurai official in a dark blue robe with stiff winged shoulders and wide trousers, two swords at his belt and a ledger in his hand",
+            "ai": true
+          }
         },
         "both": [
           "Lived on the ruler's pay",
