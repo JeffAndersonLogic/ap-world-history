@@ -10,15 +10,13 @@
  * from different empires and a statement of significance. Everything here comes
  * from the chapters for 3.1 to 3.3; what this one adds is the frame.
  *
- * The organizing insight for Unit 3 specifically: these five empires faced one
- * problem in five variants, and their institutional differences are mostly
- * explained by three variables. Did the ruling group share the religion of the
- * majority? Could the state pay in cash, or only in land? And who was on the
- * other side of the frontier, a fortified rival, a nomadic confederation, or
- * nobody in particular? Answer those three about any two empires and the
- * comparison writes itself.
- *
- * Section 04 exists because the hindsight trap is the characteristic failure of
+ * The organizing insight for Unit 3 specifically: compare the job, not the empire.
+Students already learned the evidence in Topics 3.1 to 3.3. This chapter's job is to keep one
+method category constant, compare two empires, explain why their methods were similar or
+different, and connect both methods to increased influence. Russia can remain optional depth,
+but the core comparison uses the CED's reviewed land empires and previously taught evidence.
+
+Section 04 exists because the hindsight trap is the characteristic failure of
  * this unit. Students write the eighteenth century backward from the
  * nineteenth, so the Ottomans are declining from 1566, the Mughals are doomed
  * from Aurangzeb, and the Qing are stagnating at the exact moment they doubled
@@ -32,64 +30,61 @@ module.exports = {
   sourceFile: 'deep-reading-topic-3-4-comparison.html',
   lessonFile: 'lesson-3-4-comparison.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 3.4: One Problem, Five Answers',
+  docTitle: 'BeHistorical | Deep Reading | Topic 3.4: Same Jobs, Different Tools',
   eyebrow: 'Topic 3.4 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
-  titleHtml: 'One Problem, Five <em>Answers</em>',
-  deck: `Five empires, one problem: how does a small ruling group hold an enormous population it does not resemble, with an army it cannot fully afford, through officials it cannot see? This chapter puts the answers side by side, names the three variables that explain most of the differences, and then shows how to write a comparison that earns the point rather than describing two empires in turn.`,
-  meta: ['Five sections', 'No new content, one new skill', 'Read alongside the First & 10'],
-  footerNote: 'Topic 3.4 &nbsp;·&nbsp; One Problem, Five Answers &nbsp;·&nbsp; Companion to the First &amp; 10',
+  titleHtml: 'Same Jobs, Different <em>Tools</em>',
+  deck: `Compare the job, not the empire. Land-based empires increased influence by expanding, holding, paying and justifying power with different tools. This chapter puts those methods side by side and shows how to turn familiar Unit 3 evidence into a defensible comparison argument.`,
+  meta: ['Five sections', 'No new required content, one comparison skill', 'Read alongside the First & 10'],
+  footerNote: 'Topic 3.4 &nbsp;·&nbsp; Same Jobs, Different Tools &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',
-    intro: `This chapter introduces almost no new evidence; everything comes from the chapters for Topics 3.1 to 3.3. Section 03 is the one that does the most work, because it reduces the differences between five empires to three variables you can check quickly on any pair a prompt hands you.`,
+    intro: `Start with the job the prompt asks about. Keep that category constant across two empires, then explain the similarity or difference and connect both methods to increased influence. The core evidence comes from Topics 3.1 to 3.3; optional profiles are reference, not new required content.`,
     steps: [
-      `<b>01 The five profiles:</b> the same six questions asked of each empire.`,
-      `<b>02 What they shared:</b> four similarities, each with the reason attached.`,
-      `<b>03 The three variables:</b> religion, cash and frontier, which generate most of the differences.`,
-      `<b>04 The eighteenth century:</b> what happened, and how not to write it backward.`,
-      `<b>05 Writing it:</b> five failures specific to this unit, and a worked paragraph.`,
-      `<b>Then the closing section</b>, which is four finished comparisons to use as models.`
+      `<b>01 Compare the job:</b> expand, hold, pay or justify.`,
+      `<b>02 What they shared:</b> identify a meaningful similarity and its cause.`,
+      `<b>03 Why they differed:</b> use historical context, not a memorized empire list.`,
+      `<b>04 Avoid hindsight:</b> compare the period on its own terms.`,
+      `<b>05 Write it:</b> claim, relevant evidence from both empires, explanation, increased influence.`
     ]
   },
 
   empires: [
     // ── 01 ────────────────────────────────────────────────────────────────────
     {
-      id: 'profiles',
+      id: 'jobs',
       num: '01',
       accent: 'gold',
-      name: 'The Five Profiles',
-      navLabel: 'The five profiles',
-      dates: 'c. 1450 to 1750 &nbsp;·&nbsp; Six questions, five times',
-      thesis: `Ask the same six questions of each empire and the answers line up into a comparison. Ask different questions of each and you have five descriptions.`,
+      name: 'Compare the Job, Not the Empire',
+      navLabel: 'The four jobs',
+      dates: 'c. 1450 to 1750 &nbsp;·&nbsp; The frame',
+      thesis: `Empires increased influence by solving recurring jobs with different tools. Comparison works when the job stays constant.`,
       parts: [
         {
-          heading: 'The Ottomans and the Safavids',
+          heading: 'Four jobs, familiar evidence',
           blocks: [
-            { p: `<b>Ottomans.</b> <em>Expansion:</em> artillery and salaried infantry, from Constantinople in 1453 to Hungary, Egypt and North Africa. <em>Who serves:</em> devshirme recruits made kul of the sultan's household, plus timar-holding cavalry. <em>Who collects:</em> timar, then increasingly tax farming, and from 1695 lifetime farms. <em>Legitimacy:</em> protector of Mecca and Medina, leading Sunni power, sultanic law alongside religious law, endowed mosque complexes delivering public services. <em>Religious difference:</em> non-Muslims governed through their own religious leaders and taxed by the jizya. <em>Frontier:</em> fortified European states to the west, a rival gunpowder empire to the east.` },
-            { p: `<b>Safavids.</b> <em>Expansion:</em> tribal cavalry devotion first, artillery and paid infantry only after Chaldiran taught the lesson. <em>Who serves:</em> Qizilbash tribal cavalry, then Abbas I's ghulam regiments of Caucasian converts. <em>Who collects:</em> crown lands expanded under Abbas, plus a royal monopoly on silk. <em>Legitimacy:</em> descent claims and imposed Twelver Shiism, staged in Isfahan's royal square. <em>Religious difference:</em> a majority converted to the state's confession, with minorities present and constrained. <em>Frontier:</em> the Ottomans west, the Mughals east, Uzbeks north.` }
+            { p: `For <b>expansion</b>, compare military methods: Ottoman cannon at Constantinople and Mughal artillery and firearms at Panipat. For <b>holding</b>, compare people and institutions: Ottoman devshirme and Mughal mansabdars. For <b>paying</b>, compare revenue: Ottoman tax farming and Mughal land-revenue collection. For <b>justifying</b>, compare visible claims to authority: Mughal monumental architecture and Qing imperial portraiture.` },
+            { p: `The point is not that every empire used identical tools. The point is that two different tools can answer the same political job. Once the category is fixed, a similarity or difference becomes meaningful because you can explain what each method accomplished and why the methods diverged.` }
           ]
         },
         {
-          heading: 'The Mughals, the Qing and Russia',
+          heading: 'The exact question',
           blocks: [
-            { p: `<b>Mughals.</b> <em>Expansion:</em> Panipat in 1526 with field artillery, then absorption of the subcontinent to Aurangzeb's death. <em>Who serves:</em> mansabdars ranked by the emperor, drawn from Turks, Persians, Afghans, Indian Muslims and Hindu Rajputs. <em>Who collects:</em> jagir assignments paying mansabdars, zabt assessment on measured land, and hereditary zamindars at the village end. <em>Legitimacy:</em> Persianate sacred kingship, daily public appearance, monumental mausolea. <em>Religious difference:</em> the central question, answered by Akbar with abolition of the jizya and by Aurangzeb with its return. <em>Frontier:</em> the Safavids at Kandahar, the Deccan powers, and an unguarded coast.` },
-            { p: `<b>Qing.</b> <em>Expansion:</em> conquest of Ming China in 1644 and then the steppe, ending the nomadic threat permanently. <em>Who serves:</em> hereditary banners plus the entire Chinese examined bureaucracy, often paired in office. <em>Who collects:</em> a simplified land tax paid in silver, with the head tax eventually merged into it. <em>Legitimacy:</em> plural, the Mandate of Heaven to Chinese subjects and patronage of Tibetan Buddhism to Mongols and Tibetans. <em>Religious difference:</em> managed by presenting the emperor in several idioms rather than by taxing a hierarchy. <em>Frontier:</em> the steppe, closed by 1760, and a coast the state did not prioritize.` },
-            { p: `<b>Russia.</b> <em>Expansion:</em> artillery against Tatar khanates, then small armed parties and river forts across Siberia to the Pacific. <em>Who serves:</em> a nobility holding land in exchange for service, formalized by Peter I's table of ranks. <em>Who collects:</em> a poll tax on male peasants, collected through landlords, which deepened serfdom. <em>Legitimacy:</em> Orthodoxy, with the church subordinated to the state under Peter. <em>Religious difference:</em> Orthodox uniformity pressed at the center, pragmatic accommodation at the edges. <em>Frontier:</em> almost everywhere, and mostly against people with no firearms.` }
+            { p: `The College Board asks you to compare methods by which empires <strong>increased their influence</strong>. That phrase is the landing point for every paragraph. Gunpowder matters because it can help win territory. Officials matter because they carry central authority. Revenue matters because it sustains armies and government. Legitimation matters because it makes authority visible and credible.` },
+            { note: { kind: 'misconception', label: 'Common mistake to avoid', html: `Do not write two empire biographies and call them a comparison. And do not compare two facts merely because both are important. Ottoman cannon and a Mughal mausoleum belong to different categories; devshirme and mansabdars belong to the same one.` } }
           ]
         }
       ],
       useThis: {
-        tool: `A fixed question set. <em>The mechanism is that comparison requires a shared category, so asking every empire the same six questions, how it expanded, who served, who collected, how it legitimized, how it handled religious difference and who was on the frontier, produces answers that can be set against each other instead of five self-contained descriptions.</em>`,
-        limit: `Profiles are the setup. A table of features earns nothing until you explain why the entries differ, which is section 03.`,
-        comparison: `Pick your category from the prompt before you write. If it names administration, compare devshirme against mansabdari; if it names religion, compare Akbar against Ismail; if it names expansion, compare the Qing steppe campaigns against Ottoman sieges.`
+        tool: `The fixed-category rule: <em>same job, two methods, why similar or different, how each increased influence.</em>`,
+        limit: `A category can be too broad. "Government" is usually too broad; "recruiting servants who extend central authority" is usable.`,
+        comparison: `Against Topic 2.7: the skill is the same. Hold one variable constant so the comparison explains rather than lists.`
       },
       terms: [
-        ['Land-based empire', 'A state expanding across contiguous territory rather than overseas, the category this unit compares.'],
-        ['Conquest elite', 'A ruling group of different origin from the majority it governs, which fits the Qing and the Mughals closely and Russia hardly at all.'],
-        ['Service elite', 'Officials and soldiers whose status comes from the ruler rather than from birth or land, the standard early modern solution to loyalty.'],
-        ['Revenue system', 'The arrangement by which a state converts rural production into money or service, and the best single predictor of what else it can do.'],
-        ['Frontier type', 'Whether an empire faced fortified rivals, gunpowder equals, or mobile peoples, which shaped the army and therefore the state.']
+        ['Influence', 'The territorial, political, economic or cultural reach an empire could exercise.'],
+        ['Comparison category', 'The shared job or process held constant across two cases.'],
+        ['Relevant evidence', 'A specific fact that actually supports the comparison claim being made.'],
+        ['Qualification', 'A limit or complication that makes a claim more accurate without abandoning it.']
       ]
     },
 
