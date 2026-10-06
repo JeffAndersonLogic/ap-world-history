@@ -118,8 +118,8 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: 'Lecture: Comparing Land-Based Empires, c. 1450–c. 1750',
-    intro: 'Topic 3.4 is the comparison topic for Unit 3, and comparison is one of the most AP-tested historical thinking skills. You must be able to identify meaningful similarities AND differences across empires with specific evidence, and connect those comparisons to a broader historical argument about the nature of imperial rule.',
+    title: 'Lecture: Same Jobs, Different Tools',
+    intro: 'Topic 3.4 is the Unit 3 comparison capstone. Keep one job constant, compare the methods two empires used, and connect both pieces of evidence to the College Board question: how did the method increase imperial influence?',
     videos: [
       {
         title: 'AP World UNIT 3 REVIEW [Everything You NEED to Know!]',
@@ -204,17 +204,17 @@ window.BEHISTORICAL_LESSON = {
   },
 
   first10: {
-    title: 'First & 10: Comparing the Empires',
+    title: 'First & 10: Same Jobs, Different Tools',
     embedUrl: 'first-and-10-topic-3-4-comparison-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 3.4 lesson path.'
+    note: 'Read the First & 10 narrative, answer the three questions, then return to the 3.4 lesson path.'
   },
 
   beSurreal: {
-    title: 'BeSurreal: You Are a Traveler Who Has Visited Three Empires, c. 1600',
-    desc: 'A decade of travel from Istanbul to Isfahan to Agra. You\'ve attended Friday prayer at the Süleymaniye Mosque, visited Shah Abbas\'s court, and dined in Akbar\'s courtyard at Fatehpur Sikri.',
-    intro: 'Imagine you\'ve spent a decade traveling from Istanbul to Isfahan to Agra. In each city you\'ve attended a Friday prayer at the Süleymaniye Mosque, visited Shah Abbas\'s court in Isfahan, and dined in Akbar\'s courtyard at Fatehpur Sikri. Each ruler asked you the same question: "Which emperor is the greatest?" You\'ve realized the comparison itself is the wrong frame, each empire worked differently because it faced different problems.',
-    detail: 'In Istanbul, you witnessed the devshirme boys, Christian-born, now Muslim, drilling in the Janissary barracks, loyal to the Sultan alone. In Isfahan, Shah Abbas\'s courtiers whispered about the forced conversion of Sunni populations, the exquisite tilework of the mosques a veneer over deep sectarian anxiety. In Agra, Akbar\'s court was a riot of diversity: Hindu Rajput commanders, Sufi mystics, Jesuit missionaries, all eating together, debating theology. Three empires, three different solutions to the same question: how do you hold together a diverse, conquered population? The comparison reveals that there is no single right answer, only different answers suited to different conditions.',
-    prompt: 'If you had to advise one of these three rulers on religious policy, what would you recommend, and what specific evidence from the other two empires would you use to support your advice?'
+    title: 'BeSurreal: You Are the Comparison Referee',
+    desc: 'Two students make comparisons using true historical facts. Your job is to decide which comparison actually keeps the category constant and answers how imperial influence increased.',
+    intro: 'Comparison is not two accurate facts placed next to each other. Student A compares Ottoman devshirme with Mughal mansabdars because both extend a ruler\'s authority through imperial servants. Student B compares Ottoman cannon with a Mughal mausoleum because both are important. Both students know real history, but only one has built a valid fixed-category comparison.',
+    detail: 'Your referee card has four questions: Are both examples doing the same job? Is the evidence specific? Does the explanation say why the methods were similar or different? Does it connect both methods to increased influence? A comparison fails if any one of those pieces is missing.',
+    prompt: 'Rule on the two comparisons. Explain why Student A or Student B has the stronger comparison, then repair the weaker one by replacing one piece of evidence so both examples answer the same imperial job. Finish by explaining how the repaired comparison answers increased influence.'
   },
 
   evidenceLab: {
