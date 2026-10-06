@@ -1,6 +1,6 @@
 # Topic 3.4 Story Draft — Comparison in Land-Based Empires
 
-**Status: Draft for Jeff's approval, 2026-10-06**
+**Status: Approved by Jeff, 2026-10-06**
 
 This draft follows the BeHistorical `build-topic` production line. It starts from
 `scripts/lib/ced-source/unit-3.js`, the College Board CED transcription, not from the current
@@ -335,3 +335,7 @@ preserved, and whether the conclusion actually answers "increased influence."
 The current course's unsupported or over-neat claims about "all five" empires, a single cause for
 Mughal religious policy, Safavid coercion working because territory was compact, and Russia as a
 required fifth case are not carried into this story.
+
+## Approval
+
+Jeff approved the story and said **“Approved run it”** on 2026-10-06. The build proceeds from this story.
