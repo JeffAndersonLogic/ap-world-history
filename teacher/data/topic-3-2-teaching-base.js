@@ -283,17 +283,16 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'portraits', kind: 'case-file', eyebrow: 'Job Two · Art',
+      phase: 'portraits', kind: 'frame-pair', eyebrow: 'Job Two · Art',
       kc: 'KC-4.3.I.A', title: 'One emperor, two pictures.',
       template: {
-        tag: 'Imperial portrait',
-        place: 'Qing China',
-        date: '1736',
+        panels: [
+          { tag: 'Picture one · for Han Chinese subjects', text: 'The robes and pose of a traditional **Chinese emperor**.' },
+          { tag: 'Picture two · for Tibetan and Mongol subjects', text: 'The same emperor, painted as a **Buddhist holy figure**.' }
+        ],
         rows: [
-          { label: 'Situation', text: 'The Qing emperors were **Manchus**, outsiders ruling an empire where most people were Han Chinese' },
-          { label: 'Picture one', text: 'Court portraits like this one: the robes and pose of a traditional **Chinese emperor**' },
-          { label: 'Picture two', text: 'The Qianlong Emperor painted as a **Buddhist holy figure**, for Tibetan and Mongol subjects' },
-          { label: 'So what', text: 'Same ruler, different picture, depending on who needed convincing' }
+          { label: 'Situation', text: 'The Qing emperors were **Manchus**, outsiders ruling an empire where most people were Han Chinese.' },
+          { label: 'So what', text: 'Same ruler, different picture, depending on who needed convincing.' }
         ],
         proves: 'Art made a ruler look rightful to each group he ruled.'
       },
@@ -302,7 +301,8 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'Qing imperial portraits are a CED example under "Art and monumental architecture."',
           'The Freer Gallery\'s thangka of the Qianlong Emperor as Manjushri (F2000.4): the Smithsonian notes that relations with Mongol and Tibetan subjects "were couched in Buddhist, rather than Confucian, cultural rhetoric."',
-          'The picture is the Qianlong Emperor\'s court portrait in a yellow dragon robe, from the handscroll of inauguration portraits of the emperor and his consorts. Its inscription dates it to the eighth month of the first year of Qianlong, 1736. It is attributed to Giuseppe Castiglione, an Italian Jesuit at the Qing court. Picture to add when uploaded: the Manjushri thangka beside it; the thangka\'s face is by Castiglione and the rest was painted by court artists.'
+          'Picture one is the full-length court-dress portrait of the Qianlong Emperor, 1736, attributed to Giuseppe Castiglione, an Italian Jesuit at the Qing court: yellow dragon robe, dragon throne, the pose of a Chinese emperor. Picture two is the Freer Gallery\'s thangka (F2000.4), the emperor in the yellow hat and robes of a Tibetan Buddhist teacher, at the center of a gathering of Buddhist figures. Only the face is Castiglione\'s; Chinese and Tibetan court artists painted the rest. Both are public domain; the thangka is a scan from a book page, so its colors are a little flat.',
+          'Neither is a snapshot. Both are images made for an audience, which is the point of the slide.'
         ],
         ask: 'Who was each picture meant to convince?',
         listenFor: 'Han Chinese subjects; Tibetan and Mongol Buddhists.'

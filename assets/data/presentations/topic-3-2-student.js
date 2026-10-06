@@ -206,40 +206,44 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "case-file",
+      "kind": "frame-pair",
       "eyebrow": "Job Two · Art",
       "title": "One emperor, two pictures.",
       "kc": "KC-4.3.I.A",
       "template": {
-        "tag": "Imperial portrait",
-        "place": "Qing China",
-        "date": "1736",
+        "panels": [
+          {
+            "tag": "Picture one · for Han Chinese subjects",
+            "text": "The robes and pose of a traditional **Chinese emperor**.",
+            "visual": {
+              "url": "../assets/images/topics/3-2/qianlong-court-dress-1736.jpg",
+              "alt": "Full-length portrait of the Qianlong Emperor seated on a carved dragon throne, in a yellow robe embroidered with dragons and a black fur-trimmed cape, a red-crowned hat with a pearl finial, on a patterned carpet",
+              "credit": "Court-dress portrait, 1736 · Public domain",
+              "ratio": 0.729
+            }
+          },
+          {
+            "tag": "Picture two · for Tibetan and Mongol subjects",
+            "text": "The same emperor, painted as a **Buddhist holy figure**.",
+            "visual": {
+              "url": "../assets/images/topics/3-2/qianlong-manjushri-thangka.jpg",
+              "alt": "A Tibetan Buddhist thangka: the Qianlong Emperor in the yellow hat and orange robes of a Buddhist teacher, seated on a throne in the center of a green landscape ringed with small Buddhist figures and circles of deities",
+              "credit": "Qianlong as Manjushri, thangka, mid-1700s · Freer Gallery · Public domain",
+              "ratio": 0.519
+            }
+          }
+        ],
         "rows": [
           {
             "label": "Situation",
-            "text": "The Qing emperors were **Manchus**, outsiders ruling an empire where most people were Han Chinese"
-          },
-          {
-            "label": "Picture one",
-            "text": "Court portraits like this one: the robes and pose of a traditional **Chinese emperor**"
-          },
-          {
-            "label": "Picture two",
-            "text": "The Qianlong Emperor painted as a **Buddhist holy figure**, for Tibetan and Mongol subjects"
+            "text": "The Qing emperors were **Manchus**, outsiders ruling an empire where most people were Han Chinese."
           },
           {
             "label": "So what",
-            "text": "Same ruler, different picture, depending on who needed convincing"
+            "text": "Same ruler, different picture, depending on who needed convincing."
           }
         ],
-        "proves": "Art made a ruler look rightful to each group he ruled.",
-        "pictureSize": "large",
-        "visual": {
-          "url": "../assets/images/topics/3-2/qianlong-emperor.jpg",
-          "alt": "Court portrait of the young Qianlong Emperor in a fur-trimmed hat and a yellow robe embroidered with dragons, with Chinese inscriptions and seals",
-          "credit": "Court portrait, 1736 · Public domain",
-          "fit": "contain"
-        }
+        "proves": "Art made a ruler look rightful to each group he ruled."
       }
     },
     {

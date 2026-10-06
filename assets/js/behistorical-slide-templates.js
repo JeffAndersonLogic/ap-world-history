@@ -608,15 +608,47 @@ function fRoute(s){
    labeled facts, and what the case proves. */
 function caseFile(s){
   const t=s.template||{},rows=arr(t.rows).slice(0,4);
-  // pictureSize:'large' gives the picture the whole stamp column at full
-  // height, for a case whose picture is the evidence (a portrait the room has
-  // to see whole). Its credit then sits under it rather than over it.
-  const big=t.pictureSize==='large'&&t.visual&&t.visual.url;
-  const pic=!t.visual?'':big?`${frame(t.visual,'bht-cf-pic big',{fit:'contain',noTag:true})}${t.visual.ai?`<span class="bht-tag bht-ai bht-cf-cap">${LABEL}</span>`:t.visual.credit?`<span class="bht-tag bht-src bht-cf-cap">${esc(t.visual.credit)}</span>`:''}`:frame(t.visual,'bht-cf-pic',{fit:'contain'});
-  const stamp=`<div class="bht-cf-stamp${big?' big':''}">${t.tag?`<div class="tg">${esc(t.tag)}</div>`:''}<div class="pl${String(t.place||'').length>10?' lg':''}">${esc(t.place)}${big&&t.date?` <span class="dt">${esc(t.date)}</span>`:''}</div>${!big&&t.date?`<div class="dt">${esc(t.date)}</div>`:''}${pic}</div>`;
+  const stamp=`<div class="bht-cf-stamp">${t.tag?`<div class="tg">${esc(t.tag)}</div>`:''}<div class="pl${String(t.place||'').length>10?' lg':''}">${esc(t.place)}</div>${t.date?`<div class="dt">${esc(t.date)}</div>`:''}${t.visual?frame(t.visual,'bht-cf-pic',{fit:'contain'}):''}</div>`;
   const body=rows.map(r=>`<div class="bht-cf-row"><div class="l">${esc(r.label)}</div><p>${rich(r.text)}</p></div>`).join('');
   const proves=t.proves?`<div class="bht-cf-proves"><div class="tg">${esc(t.provesLabel||'What it proves')}</div><p>${rich(t.proves)}</p></div>`:'';
-  return board('case-file',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-cf${big?' big':''}">${stamp}<div class="bht-cf-rows">${body}</div></div>`)+proves));
+  return board('case-file',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-cf">${stamp}<div class="bht-cf-rows">${body}</div></div>`)+proves));
+}
+
+/* A story told in a few beats, stacked top to bottom so every beat gets the
+   whole width and the type can be large: a label, one sentence, and an arrow
+   to the next beat. Three to five beats a student can retell from the back of
+   the room. A beat marked `key: true` is the one the lesson drives to and is
+   filled in. It replaces the numbered circles of the older process slide,
+   whose four columns left each sentence about 150 design pixels of room and
+   set it at 15. */
+function storySteps(s){
+  const t=s.template||{},st=arr(t.steps).slice(0,5),n=Math.max(1,st.length);
+  // The label column is 250u less its padding. Cinzel runs about .76em a
+  // letter, so the longest label word sets one size for the whole slide.
+  const longest=Math.max(1,...st.map(x=>Math.max(1,...String(x.label||'').split(/\s+/).map(w=>w.length))));
+  const lab=Math.max(20,Math.min(30,Math.floor(210/(longest*.76))));
+  const txt=n>=5?26:n===4?30:34;
+  const rows=st.map(x=>`<li class="bht-ss-row${x.key?' key':''}"><span class="lb" style="font-size:calc(${lab}*var(--u))">${esc(x.label)}</span><p style="font-size:calc(${txt}*var(--u))">${rich(x.text)}</p></li>`).join('');
+  return board('story-steps',themeOf(t,'dark'),pad(head(s)+grow(`<ol class="bht-ss">${rows}</ol>`)+foot(s.footer)));
+}
+
+/* Two tall pictures, side by side and shown whole, with the story beside
+   them: for two portraits or paintings that only make sense as a pair, where
+   frame-compare's half-width frames would leave a tall picture small. Each
+   panel's visual gives `ratio` (its width over its height), and both are drawn
+   at one shared height, so neither is cropped or letterboxed. Beside them go
+   up to three labeled rows and an optional line saying what the pair proves. */
+function fPair(s){
+  const t=s.template||{},P=arr(t.panels).slice(0,2),rows=arr(t.rows).slice(0,3);
+  const H=Math.max(300,Math.min(520,num(t.pictureHeight,440)));
+  const cell=p=>{
+    const v=p.visual||{},r=Math.max(.4,Math.min(1.6,num(v.ratio,.75)));
+    const cap=!v.url?'':v.ai?`<span class="bht-tag bht-ai bht-pr-cap">${LABEL}</span>`:v.credit?`<span class="bht-tag bht-src bht-pr-cap">${esc(v.credit)}</span>`:'';
+    return `<div class="c" style="width:calc(${(H*r).toFixed(1)}*var(--u))">${frame(v,'bht-pr-img',{fit:'contain',noTag:true})}<div class="k"><b>${esc(p.tag)}</b>${p.text?`<span>${rich(p.text)}</span>`:''}${cap}</div></div>`;
+  };
+  const body=rows.map(r=>`<div class="r"><div class="l">${esc(r.label)}</div><p>${rich(r.text)}</p></div>`).join('');
+  const proves=t.proves?`<div class="bht-pr-proves"><div class="tg">${esc(t.provesLabel||'What it proves')}</div><p>${rich(t.proves)}</p></div>`:'';
+  return board('frame-pair',themeOf(t,'paper'),`<div class="bht-pr" style="--ph:${H}"><div class="bht-pr-pics">${P.map(cell).join('')}</div><div class="bht-pr-side">${head(s)}<div class="bht-pr-rows">${body}</div>${proves}</div></div>`);
 }
 
 /* One claim and the branches that hold it up. Each branch has a name, a line
@@ -668,7 +700,9 @@ const KINDS={
   'beready-sort':brSort,'close-321':close321,'close-retell':closeRetell,
   'frame-compare':fCompare,'frame-route':fRoute,
   /* round 3 */
-  'case-file':caseFile,'branch-tree':branchTree,'face-off':faceOff,'sentence-frame':sentenceFrame
+  'case-file':caseFile,'branch-tree':branchTree,'face-off':faceOff,'sentence-frame':sentenceFrame,
+  /* round 4 */
+  'story-steps':storySteps,'frame-pair':fPair
 };
 
 /* ── the Key Concept band ─────────────────────────────────────────────── */
@@ -1286,12 +1320,6 @@ const CSS=`
 .bht-cf-stamp .pl.lg{font-size:23u}
 .bht-cf-stamp .dt{font:900 52u/1 'Cinzel',Georgia,serif;color:var(--acc)}
 .bht-cf-pic{height:140u;margin-top:8u;border-radius:4u}
-.bht-cf.big{grid-template-columns:400u minmax(0,1fr);align-items:stretch;height:100%}
-.bht-cf-stamp.big{padding:16u 18u 14u;min-height:0}
-.bht-cf-stamp.big .pl{font-size:26u}
-.bht-cf-stamp.big .pl .dt{font-size:26u;color:var(--acc)}
-.bht-cf-pic.big{flex:1;height:auto;min-height:0;margin-top:4u;background:transparent}
-.bht-tag.bht-cf-cap{position:static;align-self:flex-start;white-space:normal}
 .bht-cf-rows{display:flex;flex-direction:column;min-width:0}
 .bht-cf-row{display:grid;grid-template-columns:150u minmax(0,1fr);column-gap:22u;padding:12u 0;border-top:1u solid var(--rulec)}
 .bht-cf-row:first-child{border-top:0;padding-top:0}
@@ -1303,6 +1331,34 @@ const CSS=`
 .dark .bht-cf-proves .tg{color:#6b3e1f}
 .bht-cf-proves p{font:700 20u/1.35 'Libre Baskerville',Georgia,serif}
 .bht-cf-proves b{color:inherit}
+.bht-ss{flex:1 1 auto;min-height:0;display:grid;grid-auto-rows:minmax(0,1fr);row-gap:20u;list-style:none;margin:0;padding:0}
+.bht-ss-row{position:relative;display:grid;grid-template-columns:250u minmax(0,1fr);column-gap:24u;align-items:center;border-radius:10u;background:#1a1d1f;border-left:6u solid #8c5a2b;padding:0 28u 0 0;min-height:0}
+.paper .bht-ss-row{background:#fffdf7;border:1u solid #ddd2be;border-left:6u solid #8c5a2b}
+.bht-ss-row .lb{font:800 28u/1.1 'Cinzel',Georgia,serif;color:var(--head);padding-left:22u;overflow-wrap:break-word}
+.bht-ss-row p{line-height:1.3;color:var(--fg)}
+.bht-ss-row:not(:last-child)::after{content:'';position:absolute;left:38u;bottom:-17u;border-left:9u solid transparent;border-right:9u solid transparent;border-top:12u solid var(--acc)}
+.bht-ss-row.key{background:#c9a46a;border-left-color:#fffdf7}
+.bht-ss-row.key .lb,.bht-ss-row.key p,.bht-ss-row.key b{color:#101213}
+.bht-pr{position:absolute;inset:0;padding:44u 60u 40u;display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:44u;align-items:start}
+.bht-pr-pics{display:flex;gap:18u;align-items:flex-start}
+.bht-pr .c{display:flex;flex-direction:column;gap:10u;min-width:0}
+.bht-pr-img{height:calc(var(--ph)*var(--u));border-radius:4u;border:1u solid var(--rulec);background:#fffdf7}
+.bht-pr .k{display:flex;flex-direction:column;gap:3u}
+.bht-pr .k>b{font:800 13u/1.25 'Montserrat',Helvetica,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--acc)}
+.bht-pr .k>span:not(.bht-tag){font-size:18u;line-height:1.35}
+.bht-tag.bht-pr-cap{position:static;align-self:flex-start;max-width:100%;margin-top:2u}
+.bht-pr-side{display:flex;flex-direction:column;gap:14u;min-width:0;height:100%}
+.bht-pr-side .bht-h{font-size:40u;max-width:14ch}
+.bht-pr-rows{display:flex;flex-direction:column;margin-top:6u}
+.bht-pr-rows .r{padding:12u 0;border-top:1u solid var(--rulec)}
+.bht-pr-rows .l{font:800 13u/1.3 'Montserrat',Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);margin-bottom:4u}
+.bht-pr-rows p{font-size:24u;line-height:1.35}
+.bht-pr-proves{margin-top:auto;background:#1a1c1d;color:#f5f0e7;border-radius:10u;padding:16u 22u;display:flex;flex-direction:column;gap:4u}
+.dark .bht-pr-proves{background:#f5f0e7;color:#151718}
+.bht-pr-proves .tg{font:900 18u/1.15 'Cinzel',Georgia,serif;color:#c9a46a}
+.dark .bht-pr-proves .tg{color:#6b3e1f}
+.bht-pr-proves p{font:700 22u/1.35 'Libre Baskerville',Georgia,serif}
+.bht-pr-proves b{color:inherit}
 
 /* round 3: branch tree */
 .bht-bt{display:grid;grid-template-columns:330u 70u minmax(0,1fr);align-items:stretch;min-height:0}

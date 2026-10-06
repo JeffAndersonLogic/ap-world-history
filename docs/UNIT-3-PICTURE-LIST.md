@@ -17,6 +17,62 @@ miniature from the Selimname (c. 1524), Guru Nanak (19th-century portrait), Sül
 Great (the Mardefeld miniature: Mardefeld was a painter as well as Prussia's envoy, so that
 credit is correct), and two secondary maps.
 
+## Update, 2026-10-06: slide by slide, after the 3.2 to 3.4 decks were built
+
+Slide numbers are the teacher deck's. **Placed** means it is on a slide now. **On Commons** means
+Commons returned that file name in a search on 2026-10-06 and described its licence, size and date;
+nothing below marked that way has been placed, and each still needs the caption check in the
+presentation-images skill. **Needs you** means no verified file turned up.
+
+### Already placed
+
+| Slide | Picture | What it is |
+|---|---|---|
+| 3.1 slide 7 | Bombards at the Walls | AI reconstruction, labeled |
+| 3.1 slide 9 | Hauling the Great Gun | AI reconstruction, labeled |
+| 3.1 slide 8 | Dardanelles Gun | real object, 1464 |
+| 3.1 slide 13 | Baburnama Panipat | Mughal court painting, later |
+| 3.2 slide 7 | Janissary and salaried samurai | AI reconstructions cut from one picture, labeled |
+| 3.2 slide 10 | Qianlong court-dress portrait (1736) and the Freer thangka (F2000.4) | two real paintings, whole |
+| 3.2 slide 11 | Taj Mahal and Versailles garden front | modern photographs, credited |
+| 3.4 slide 7 | Baburnama Panipat | reused from 3.1 |
+
+### Topic 3.2
+
+| Slide | Picture | Why it helps a ninth grader | Status |
+|---|---|---|---|
+| 9, Louis XIV and Askia | Rigaud, *Louis XIV in Coronation Robes* (Louvre, 1701), beside the Tomb of Askia, Gao | Divine right made visible, next to Songhai rule tied to Islam. The slide is a text table today | On Commons: "Portrait of Louis XIV of France in Coronation Robes (by Hyacinthe Rigaud) - Louvre Museum.jpg" (public domain, 2883x4018). Tomb: "Tombeau dAskia in Gao by David Sessoms.jpg" (CC BY-SA 2.0, 2006, so a modern photograph of a 1495 building; credit the photographer) |
+| 13, Goods or coin | Codex Mendoza tribute page, beside a Ming silver ingot | Cloaks, feathers and jade owed as tribute, against a lump of silver paid as tax. The contrast is the slide | On Commons: "Codex Mendoza folio 46r.jpg" (public domain, 2581x3673; I looked at it: provinces down the left, goods owed beside them). Made about 1541 for the Spanish viceroy, so caption it as a later copy of Mexica records. Ingot: "Ming Silver Ingot 01.jpg" (CC0, Shanghai Museum Coin Gallery, 2010) |
+| 7, devshirme | Registration of Christian boys, Süleymanname miniature (1558) | The only real picture of how the levy worked, to stand beside the AI Janissary | On Commons: "Janissary Recruitment in the Balkans-Suleymanname.jpg" (public domain, 683x800, small, so half a slide at most). Needs a slot: a one-minute slide after slide 7 is the cleanest |
+| 6, Halil's arrest | Gentile Bellini, portrait of Mehmed II (1480) | Puts a face on the sultan who appears in 3.1 and 3.2 | On Commons: "Bellini, Gentile - Portrait of Mehmed II - National Gallery, London.jpg" (public domain, 4439x6000). Nice to have |
+| 18, Evidence Lab | Bichitr, *Jahangir Preferring a Sufi Shaikh to Kings* (c. 1615 to 1618) | A Mughal emperor claiming spiritual authority over two kings. Strong second source for legitimacy | On Commons: "Bichitr - Jahangir Preferring a Sufi Shaikh to Kings, from the St. Petersburg album - Google Art Project.jpg" (public domain, 2474x3600). The two kings are the painter's invention |
+| 8, 12, 15 | Mansabdars, tax farming, zamindars, samurai stipends | | **No good picture.** Use a diagram (a rank ladder, a chain from farmer to treasury) |
+
+### Topic 3.3
+
+| Slide | Picture | Why it helps | Status |
+|---|---|---|---|
+| 6, Protestant Reformation | A map of Western Christianity c. 1560, Catholic and Protestant | "Unity fractures" is a map before it is a sentence | **Needs you.** Commons search returned no clean map. Needs a secondary map with a clear date |
+| 6, Protestant Reformation | A printing of the Ninety-five Theses, 1517 | Printing carried the break faster than any earlier dissent | **Needs you.** Search found only a book scan. Do not use a 19th-century door painting as the posting |
+| 7, Catholic reform | *The Council of Trent*, Venetian painting, formerly attributed to Titian | The Catholic side reforming itself, not only reacting | On Commons: "Tridentinum.jpg" (public domain, 1631x1132, 1550 to 1600). Confirm it is the Louvre painting before placing |
+| 7, Catholic reform | Matteo Ricci and Xu Guangqi, from Kircher, *China Illustrata* (1667) | "Jesuits: schools and missions expand", shown in China | On Commons: "Matteo Ricci and Xu Guangqi from Athanasius Kircher (3756759).jpg" (public domain, 2076x3022) |
+| 9, Chaldiran | *Shah Ismail at the Battle of Chaldiran*, Chehel Sotoun mural, with the Ottoman Selimname miniature already in the Evidence Lab | Two sides, both painted later. Teaches sourcing as well as the rivalry | On Commons: "Shah Ismail in 1514 at the Battle of Chaldiran. Qajar Iran painting, 19th century.jpg", and "\"Shah Ismail at the Battle of Chaldiran\", from Bijan's Tarikh-i Jahangusha-yi Khaqan Sahibqiran, Iran, Isfahan; end of the 1680s (1).jpg". Both are later memory, and the caption must say so |
+| 12 and 14, Sikh emergence and sourcing | Janamsakhi page, British Library MS Panj B 40 (1733) | The "later devotional portrait" the sourcing slide talks about, shown | On Commons: "1733 CE Janamsakhi British Library MS Panj B 40, Guru Nanak hagiography 1, Bhai Sangu Mal.jpg" (CC BY-SA 4.0, Ms Sarah Welch, 1216x1860). Not a portrait from life; Nanak died in 1539 |
+| 12, institutions | Harmandir Sahib, Amritsar | The Sikh center of worship | On Commons: "Harmandir Sahib, Amritsar, India.jpg" (CC BY-SA 4.0, 2018). Caution: the present building is from the 1760s. Caption as a modern photograph, or skip |
+| 8 and 11 | Sunni and Shia, Punjab as a crossroads | | **No good single picture.** The 3.1 map on slide 10 already carries the geography |
+
+### Topic 3.4
+
+3.4 teaches the comparison, so it needs **no new pictures**, only the ones above set side by side.
+Its slides 6, 10 and 11 are text only today, and each could take pictures you already own:
+
+| Slide | Reuse |
+|---|---|
+| 6, expand | Dardanelles Gun (3.1) beside Panipat (3.1) |
+| 10, justify | Taj Mahal (3.2) beside the Qianlong court-dress portrait (3.2) |
+| 11, qualify | The Chaldiran pair from 3.3 |
+| 8 and 9, hold and pay | **No good picture** for Mughal mansabdars or Ottoman tax farming. Use a diagram |
+
 ## 3.2: Conquest wins land; people, legitimacy and money hold it
 
 **Updated 2026-10-06 at the 3.2 story gate (approved).** The approved story uses every row below

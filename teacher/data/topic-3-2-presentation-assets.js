@@ -1,9 +1,9 @@
 /* Topic 3.2 data-only visual assignments. Safe to evaluate in Node: no DOM.
  * Read by the teacher surface and by scripts/build-teaching-os-student-decks.js.
  *
- * Five pictures are placed: the Qianlong court portrait, two AI-generated
- * figures on the people Venn, and two modern photographs on the buildings
- * comparison (all below). The others wait, on purpose. Jeff's 3.2 uploads have not arrived
+ * Six pictures are placed: the two Qianlong pictures on the portraits slide,
+ * two AI-generated figures on the people Venn, and two modern photographs on
+ * the buildings comparison (all below). The others wait, on purpose. Jeff's 3.2 uploads have not arrived
  * (docs/UNIT-3-PICTURE-LIST.md is the shopping list), and the build-topic rule is
  * to build with pictures already verified in the repo or none, never a filename
  * from memory. No repo-local picture fits a 3.2 beat: the only Unit 3 map,
@@ -23,16 +23,27 @@ if(!T||!Array.isArray(T.slides))return;
 const IMG='../assets/images/';
 const by=id=>T.slides.find(s=>s.phase===id);
 
-// portraits (case-file): the Qianlong Emperor's court portrait in a yellow dragon
-// robe, from the handscroll of inauguration portraits of the emperor and his
-// consorts; its inscription reads the eighth month of the first year of
-// Qianlong, 1736. Attributed to Giuseppe Castiglione. Public domain (Wikimedia
-// Commons, "Qianlong Emperor.jpg"; this copy 1280x1140, saved 2026-10-06 so the
-// student deck never depends on Wikimedia). It is the same painting the 3.2
-// Evidence Lab already uses.
-const qianlong={url:IMG+'topics/3-2/qianlong-emperor.jpg',alt:'Court portrait of the young Qianlong Emperor in a fur-trimmed hat and a yellow robe embroidered with dragons, with Chinese inscriptions and seals',credit:'Court portrait, 1736 · Public domain',fit:'contain'};
+// portraits (frame-pair): the two pictures the slide is about, shown whole.
+// Picture one is the Qianlong Emperor in court dress, 1736, attributed to
+// Giuseppe Castiglione, Palace Museum, Beijing: Wikimedia Commons, "清高宗乾隆帝朝服像.jpg"
+// (public domain, 3644x4996; this copy 948x1300, saved 2026-10-06). It replaces
+// the head-and-shoulders crop from the handscroll of the emperor and his
+// consorts, which was a detail of a larger painting and not the whole portrait.
+// Picture two is the thangka of the Qianlong Emperor as Manjushri, Freer Gallery
+// of Art F2000.4, mid-18th century: Commons "Portrait of the Qianlong emperor as
+// the bodhisattva Manjushri.jpg" (public domain), whose Wikidata item Q110917158
+// records the Freer inventory number F2000.4 and depicts the Qianlong Emperor.
+// The file is a scan from a book page, so its white page margin was cropped off
+// (this copy 675x1300) and its colors are a little flat. `ratio` is each
+// picture's width over its height, which the template needs to draw both at one
+// shared height without cropping either.
+const courtDress={url:IMG+'topics/3-2/qianlong-court-dress-1736.jpg',alt:'Full-length portrait of the Qianlong Emperor seated on a carved dragon throne, in a yellow robe embroidered with dragons and a black fur-trimmed cape, a red-crowned hat with a pearl finial, on a patterned carpet',credit:'Court-dress portrait, 1736 · Public domain',ratio:0.729};
+const manjushri={url:IMG+'topics/3-2/qianlong-manjushri-thangka.jpg',alt:'A Tibetan Buddhist thangka: the Qianlong Emperor in the yellow hat and orange robes of a Buddhist teacher, seated on a throne in the center of a green landscape ringed with small Buddhist figures and circles of deities',credit:'Qianlong as Manjushri, thangka, mid-1700s · Freer Gallery · Public domain',ratio:0.519};
 const portraits=by('portraits');
-if(portraits)portraits.template=Object.assign({},portraits.template,{pictureSize:'large',visual:Object.assign({},qianlong)});
+if(portraits&&portraits.template&&Array.isArray(portraits.template.panels)){
+  const pics=[courtDress,manjushri];
+  portraits.template=Object.assign({},portraits.template,{panels:portraits.template.panels.map((p,n)=>Object.assign({},p,{visual:Object.assign({},pics[n])}))});
+}
 
 // people (split-venn): a Janissary beside the devshirme circle and a salaried
 // samurai beside the samurai circle. Both are cut from one AI-generated picture

@@ -69,52 +69,58 @@ window.BEHISTORICAL_STUDENT_DECK = {
       ]
     },
     {
-      "kind": "process",
+      "kind": "story-steps",
       "eyebrow": "Christianity · Break",
       "title": "A challenge becomes a Reformation.",
       "kc": "KC-4.1.VI.i",
-      "steps": [
-        {
-          "label": "1517",
-          "text": "Luther challenges indulgences and church authority."
-        },
-        {
-          "label": "Break",
-          "text": "New Protestant churches develop."
-        },
-        {
-          "label": "Change",
-          "text": "Western Christian institutional unity fractures."
-        },
-        {
-          "label": "Continuity",
-          "text": "Christianity remains powerful."
-        }
-      ]
+      "template": {
+        "steps": [
+          {
+            "label": "1517",
+            "text": "Luther challenges indulgences and church authority."
+          },
+          {
+            "label": "Break",
+            "text": "New Protestant churches develop."
+          },
+          {
+            "label": "Change",
+            "key": true,
+            "text": "Western Christian institutional unity fractures."
+          },
+          {
+            "label": "Continuity",
+            "text": "Christianity remains powerful."
+          }
+        ]
+      }
     },
     {
-      "kind": "process",
+      "kind": "story-steps",
       "eyebrow": "Christianity · Reform",
       "title": "Catholicism changed too.",
       "kc": "KC-4.1.VI.i",
-      "steps": [
-        {
-          "label": "Trent",
-          "text": "1545-1563: doctrine clarified and discipline reformed."
-        },
-        {
-          "label": "Training",
-          "text": "Seminaries improve clerical education."
-        },
-        {
-          "label": "Jesuits",
-          "text": "Schools and missions expand."
-        },
-        {
-          "label": "Growth",
-          "text": "Both reformations contribute to Christianity's growth."
-        }
-      ]
+      "template": {
+        "steps": [
+          {
+            "label": "Trent",
+            "text": "1545-1563: doctrine clarified and discipline reformed."
+          },
+          {
+            "label": "Training",
+            "text": "Seminaries improve clerical education."
+          },
+          {
+            "label": "Jesuits",
+            "text": "Schools and missions expand."
+          },
+          {
+            "label": "Growth",
+            "key": true,
+            "text": "Both reformations contribute to Christianity's growth."
+          }
+        ]
+      }
     },
     {
       "kind": "prompt",
@@ -124,28 +130,31 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kc": "KC-4.1.VI.ii"
     },
     {
-      "kind": "process",
+      "kind": "story-steps",
       "eyebrow": "Islam · Rivalry",
       "title": "Political rivalry intensifies an older divide.",
       "kc": "KC-4.1.VI.ii",
-      "steps": [
-        {
-          "label": "1501",
-          "text": "Safavid state makes Twelver Shi'a Islam official."
-        },
-        {
-          "label": "Rivalry",
-          "text": "Sunni Ottoman and Shi'a Safavid states compete."
-        },
-        {
-          "label": "1514",
-          "text": "Ottoman victory at Chaldiran."
-        },
-        {
-          "label": "Change",
-          "text": "Sectarian identity gains sharper imperial meaning."
-        }
-      ]
+      "template": {
+        "steps": [
+          {
+            "label": "1501",
+            "text": "Safavid state makes Twelver Shi'a Islam official."
+          },
+          {
+            "label": "Rivalry",
+            "text": "Sunni Ottoman and Shi'a Safavid states compete."
+          },
+          {
+            "label": "1514",
+            "text": "Ottoman victory at Chaldiran."
+          },
+          {
+            "label": "Change",
+            "key": true,
+            "text": "Sectarian identity gains sharper imperial meaning."
+          }
+        ]
+      }
     },
     {
       "kind": "map",
@@ -184,28 +193,31 @@ window.BEHISTORICAL_STUDENT_DECK = {
       ]
     },
     {
-      "kind": "process",
+      "kind": "story-steps",
       "eyebrow": "Sikhism · Emergence",
       "title": "A distinct tradition develops.",
       "kc": "KC-4.1.VI.iii",
-      "steps": [
-        {
-          "label": "Nanak",
-          "text": "1469-1539: devotion to one God, ethical living, service."
-        },
-        {
-          "label": "Community",
-          "text": "Followers gather around the Gurus."
-        },
-        {
-          "label": "Institutions",
-          "text": "Practices, scripture, and community structures develop."
-        },
-        {
-          "label": "Change",
-          "text": "A distinct Sikh tradition emerges."
-        }
-      ]
+      "template": {
+        "steps": [
+          {
+            "label": "Nanak",
+            "text": "1469-1539: devotion to one God, ethical living, service."
+          },
+          {
+            "label": "Community",
+            "text": "Followers gather around the Gurus."
+          },
+          {
+            "label": "Institutions",
+            "text": "Practices, scripture, and community structures develop."
+          },
+          {
+            "label": "Change",
+            "key": true,
+            "text": "A distinct Sikh tradition emerges."
+          }
+        ]
+      }
     },
     {
       "kind": "grid",
