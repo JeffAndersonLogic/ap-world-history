@@ -806,13 +806,21 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-10-26',
       cohort: 'green',
       topic: '3.4',
-      modules: ['02', '05', '07', '10']
+      modules: ['02', '05', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 3.4 module you did not complete in class. Then review Topics 3.1 to 3.4 for the Unit 3 Quiz.',
+      // The Unit 3 Quiz is each cohort's next meeting (Jeff, 2026-10-06).
+      // It is an assessment, not a topic day, so the due date is stated here.
+      homeworkDue: 'Wednesday, October 28'
     },
     {
       date: '2026-10-27',
       cohort: 'silver',
       topic: '3.4',
-      modules: ['02', '05', '07', '10']
+      modules: ['02', '05', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 3.4 module you did not complete in class. Then review Topics 3.1 to 3.4 for the Unit 3 Quiz.',
+      // The Unit 3 Quiz is each cohort's next meeting (Jeff, 2026-10-06).
+      // It is an assessment, not a topic day, so the due date is stated here.
+      homeworkDue: 'Thursday, October 29'
     }
   ],
 
@@ -859,6 +867,14 @@ window.BEHISTORICAL_SCHEDULE = {
       type: 'Exam',
       greenDate: '2026-10-07',
       silverDate: '2026-10-08'
+    },
+    {
+      date: '2026-10-29',
+      title: 'Unit 3 Quiz',
+      detail: 'Covers Topics 3.1 to 3.4, land-based empires, c. 1450 to c. 1750: how empires expanded, how rulers administered and justified their rule, how belief systems shaped and divided them, and how to compare them. In class Wednesday, October 28 for Green and Thursday, October 29 for Silver.',
+      type: 'Quiz',
+      greenDate: '2026-10-28',
+      silverDate: '2026-10-29'
     }
   ],
 
