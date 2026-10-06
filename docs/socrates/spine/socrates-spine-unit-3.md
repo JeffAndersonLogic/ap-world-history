@@ -51,8 +51,8 @@ Strong answer checklist: Name at least two land-based empires and describe speci
 **Checkpoint 1 prompt.** Compare the Mughal mansabdar system with EITHER the Ottoman devshirme OR Japan's salaried samurai. Explain one way they were alike and one way they were different in how they gave a ruler officials or soldiers who depended on him, and explain why they were different.
 Strong answer checklist: Name both systems and the empire each belonged to. Give one similarity and one difference in how each made officials or soldiers depend on the ruler. Explain why they differed by describing each ruler's situation.
 
-**Checkpoint 2 prompt.** Explain TWO methods rulers used to legitimize and consolidate their power: (1) one example of religious ideas, art, or monumental architecture that made a ruler's power look rightful, and (2) one system for collecting tribute or taxes that paid for state power. For each one, describe the context (the situation the ruler was in) and explain how the method strengthened him.
-Strong answer checklist: Name one religious idea, work of art, or building and the ruler who used it. Name one tribute or tax system and the empire that used it. For each, describe the context, the ruler's situation, and explain how the method strengthened his power.
+**Checkpoint 2 prompt.** Explain TWO methods rulers used to legitimize and consolidate their power: (1) one example of religious ideas, art, or monumental architecture that made a ruler's power look rightful, and (2) two systems for collecting tribute or taxes, from different empires, that paid for state power. For the symbol and for at least one of the tax systems, describe the context (the situation the ruler was in) and explain how the method strengthened him.
+Strong answer checklist: Name one religious idea, work of art, or building and the ruler who used it. Name two tribute or tax systems and the empire that used each. For the symbol and at least one tax system, describe the context, the ruler's situation, and explain how the method strengthened his power.
 
 ## 3.3 Empires: Belief Systems
 

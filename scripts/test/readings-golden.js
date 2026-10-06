@@ -69,7 +69,13 @@ const approvedUnit2Rewrite = !fromDisk && fs.existsSync(unit2SourcePath)
 // three jobs fit). Jeff approved the narrative as written ("Excellent story!")
 // and said "Ship" on 2026-10-06, which is why this hash moved. A diff against
 // dda850e6 shows only the 3.2 entry changed; 3.1, 3.3 and 3.4 are untouched.
-const APPROVED_UNIT3_REWRITE_BLOB = '38da055e795afbdc4598b8cc4f6961a615d2912b';
+// Moved again the same day (from 38da055e) for the accuracy loop Jeff asked
+// for: five fact-check corrections to 3.2 (Halil's arrest and motive, the
+// samurai stipend coming from the lord, Akbar's context, Qing court dress, the
+// zamindars), listed in docs/TOPIC-3-2-STORY-DRAFT.md under "Corrections after
+// the fact-check". A comparison against 38da055e shows only 3.2 changed. Jeff
+// has the list in the build report; he has not reviewed these lines one by one.
+const APPROVED_UNIT3_REWRITE_BLOB = '4e860e965062dea96d98d38c80f696e741fdabf7';
 const unit3SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-3.js');
 const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
   && gitBlobSha(fs.readFileSync(unit3SourcePath, 'utf8')) === APPROVED_UNIT3_REWRITE_BLOB;

@@ -69,13 +69,77 @@ scholarship decides truth.
 | Busbecq passage on appointment by merit ("In making his appointments the Sultan pays no regard to any pretensions on the score of wealth or rank ... sons of shepherds or herdsmen"). | Primary Source | Forster and Daniell, *The Life and Letters of Ogier Ghiselin de Busbecq*, London 1881, vol. 1, p. 154 (archive.org lifelettbusbecq01forsuoft), read in the scan. Letter I, Amasya; the editors date it 1 September 1555. | VERIFIED (quotation); "the sons of shepherds were probably devshirme men" is stated on the page as probable, as the editors' and agent's reading, not Busbecq's word. |
 | The CED suggests the Leo Africanus and Busbecq pair for 3.2. | Primary Source intro | CED p. 68, sample activity 2. | VERIFIED |
 | The Qianlong court portrait is dated 1736. | Deck slide 10 (case file), presentation-assets credit | The painting's own inscription, legible in the image: 乾隆元年八月吉日, "an auspicious day in the eighth month of the first year of Qianlong", i.e. 1736. Commons: "Part of the painting Qianlong Emperor and His Consorts", artist Giuseppe Castiglione, public domain. | VERIFIED (date from the inscription); attribution "attributed to Castiglione" kept as attribution. |
-| Topkapı caption: the sultans' palace after the conquest; its palace school trained the most promising devshirme recruits. | Lecture card 2, Evidence Lab card | Standard (Enderun palace school); scholarly source owed. | NEEDS SECOND SOURCE (reviewer pass pending) |
+| Topkapı caption: the sultans' palace after the conquest; its palace school trained the most promising devshirme recruits. | Lecture card 2, Evidence Lab card | Standard (Enderun palace school); scholarly source owed. | VERIFIED (topkapipalace.com.tr, Enderun; fact-check 2026-10-06) |
 | Taj Mahal caption: Shah Jahan's mausoleum for his wife, built in the 1600s; photograph taken 2004. | Evidence Lab card, lecture card 4 | Commons: photograph 6 March 2004 (CC BY-SA 3.0, used by URL with its source link). UNESCO dates the building to the mid-1600s. | VERIFIED in outline; UNESCO citation owed. |
-| BeSurreal: Versailles c. 1690, nobles at court competing for the king's favor, the king's daily routine as ceremony, posts and pensions. | BeSurreal | Britannica and Château de Versailles in outline (see the Versailles rows above). | NEEDS SECOND SOURCE (reviewer pass pending) |
+| BeSurreal: Versailles c. 1690, nobles at court competing for the king's favor, the king's daily routine as ceremony, posts and pensions. | BeSurreal | Britannica and Château de Versailles in outline (see the Versailles rows above); Château de Versailles quoting Saint-Simon on the king marking absentees. | VERIFIED (fact-check 2026-10-06) |
 
 ## Review findings
 
-**Not yet run.** On 2026-10-06 the first independent reviewer and three claim fact-checkers were
-started and all four were stopped by a usage limit before reporting. Jeff said "Ship" before
-they could be rerun. The loop continues after shipping; every finding it supports is fixed and
-shipped as a follow-up, and this section records each finding and its disposition.
+Four reviews ran on 2026-10-06 after the first ship: one independent reviewer of every
+surface (pass 1) and three claim fact-checkers (the reading and lesson page; the teacher deck;
+the eBook chapter and scenario). Each finding was checked against the cited source before it
+was acted on. Fixed means fixed in the follow-up ship.
+
+### Reviewer pass 1
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | BeSurreal shows "undefined": the renderer prints `text`, the data had only `intro` and `detail`. The grandfather "heard stories of the Fronde" as a boy, which the dates do not allow. | Fixed: `text` added (intro and detail), grandfather "lived through the Fronde". Other topics with the same gap are an adjacent finding. |
+| 2 | The Commons map "Mughal Empire (1700).png" carries a factual-accuracy dispute ("No source, obviously exaggerated borders"). | Confirmed on Commons. Fixed: replaced in the map module and lecture card 1 by a new BeHistorical map of the topic's empires (core zones, not borders); dropped from the Evidence Lab, which keeps four cards. 3.1, 3.3 and 3.4 still use it: adjacent finding. |
+| 3 | Qing portraits "in the robes of a traditional Chinese emperor": Qing court dress kept Manchu features. | Fixed everywhere: yellow and dragons were the Chinese imperial color and symbol; hat, fur collar and cut were Qing court dress. |
+| 4 | The mansabdar paragraph gives no context, though the topic's skill is contextualization. | Fixed: Akbar's Central Asian family, a mostly Hindu land, Rajput kings with armies; he ranked the powerful men already there. |
+| 5 | Success criterion 3 asks for at least two tax systems; Checkpoint 2 asked for one. | Fixed: Checkpoint 2 now asks for two systems from different empires, with context for the symbol and at least one system. |
+| 6 | Samurai were paid by their own lord, not "the ruler"; the overlap "lived on the ruler's pay" and "Japan's rulers feared warrior lords" misstate it. | Fixed: "lived on pay, not land of their own"; the new rulers and the great lords wanted warriors with no land to rebel from. |
+| 7 | The Akbar painting is captioned as Akbar among his nobles; it shows the arrest of Shah Abu'l-Maali. | Confirmed (Commons title; Art Institute of Chicago 1919.898). Fixed: caption names the scene, Basawan and Shankar, c. 1590 to 1595; prompt points at the arrest and links it to Halil. |
+| 8 | The eBook's silver "How we know" box states a contested thesis as fact. | Fixed: two sentences, both sides, Unit 4 bridge. |
+| 9 | The Topkapı prompt asks about things the photograph cannot show. | Fixed: prompt now points at the site, the water and the extent of the walls. |
+| 10 | The 3.2 scenario's alignment label says "Comparison and causation". | Fixed: "Comparison, with contextualization". |
+| 11 | Canvas "Due: no later meeting" for 3.2. | Rejected: that table is the teacher's instruction, outside the block pasted into Canvas, and it fills in once Jeff gives the 3.3 dates. |
+
+### Fact-checker: reading and lesson page
+
+| Finding | Disposition |
+|---|---|
+| Qing robes (as pass 1, #3); Evidence Lab prompt assumed Han subjects saw the portrait (Cleveland: a private court scroll). | Fixed: prompt asks how the Qing court wanted its emperor shown and remembered. |
+| Akbar painting (as pass 1, #7). | Fixed. |
+| "The day after Constantinople fell": sources differ on the day. Mehmed's motive was concrete: Halil helped depose him in 1446 and opposed the siege. | Fixed: "Right after"; the 1446 and siege facts added (Britannica, TDV). |
+| Topkapı "the sultans' palace after the conquest": built from 1459. | Fixed. |
+| Leo "visited Timbuktu early in the 1500s": Britannica says he may have. | Fixed: "wrote that he had visited". |
+| Busbecq "letters from the 1550s": embassy 1554 to 1562, passage from 1555. | Fixed. |
+| Tax farmer "paid first" (lecture card 4): installments; paying up front is the later malikâne. | Fixed: "promised the state a fixed sum". |
+| Samurai "stipend in rice": counted in rice, often paid in cash. | Fixed: "counted in rice". |
+| Disputed Mughal map (NEEDS JEFF). | Fixed by replacement (pass 1, #2), so no decision is needed. |
+| BeSurreal grandfather and Fronde. | Fixed (pass 1, #1). |
+| Module-card background pictures (stableImages) do not match their modules. | Rejected: `stableImages` is not read by the renderer (`stableImageKey` has no caller); module cards draw local artwork. The map entry was pointed at the new map anyway. |
+| Devshirme, Enderun school, BeSurreal court life, samurai "most", mansab transfers. | Verified; the two "needs second source" rows above are now VERIFIED. |
+
+### Fact-checker: teacher deck
+
+| Finding | Disposition |
+|---|---|
+| Portrait slide: robes and the audience ("for Han Chinese subjects"). | Fixed on the slide, notes and listen-for. |
+| Credit omits the painter. | Fixed: "Castiglione, 1736". Notes cite Cleveland 1969.31. |
+| Mehmed's later viziers "raised in his service"; the Süleyman switch is one historian's argument. | Fixed: "converts from Balkan and Byzantine noble families"; "some historians argue". |
+| Halil's execution date and place; the "64 years" figure has no non-Wikipedia source. | Fixed: both accounts given; "most of the years from 1365 to 1453 (about 64)". |
+| Fronde: Parlement first, nobles from 1650. | Fixed. |
+| "The Mughals needed local knowledge" is not the main reason the sources give. | Fixed: "worked through local landholders who already held their villages", here and in the reading. |
+| Japan's rulers and lords; stipend from the lord; "counted in rice"; "pays a set sum". | Fixed. |
+| "The CED uses Japan because..." (the CED gives no reason). | Fixed. |
+| Tomb of Askia "the 1495 building". | Fixed: "UNESCO dates the building to 1495; replastered many times". |
+
+### Fact-checker: eBook chapter and scenario
+
+All 22 supported findings fixed: the Zat and Sawar card (anachronistic for c. 1580, replaced by
+rank setting pay and horsemen); Manchu and Chinese population figures (Elliott, Campbell and Lee
+2016); Mughal and Qing population dates; Qing robes; the Table of Ranks; "every service elite"
+narrowed to the Ottoman, Mughal and Russian cases; devshirme property "could be seized"; most
+grand viziers from the levy for much of the 1500s; "every empire built like this" narrowed;
+uniformity (the 1645 queue order); the Fronde; the ayan; the silver box; zabt land classes;
+the jagir crisis attributed to Chandra and Athar Ali; jharokha darshan from Akbar to Shah Jahan;
+the county magistrate; caliph of the western Sudan; Topkapı seclusion from the late 1400s; the
+scenario's Todar Mal role line (who headed finance in 1580 is disputed) and its skill label.
+
+### Next
+
+A fresh full reviewer pass runs on the corrected surfaces. The loop ends when one pass finds no
+supported defect.

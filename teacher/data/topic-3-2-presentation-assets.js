@@ -28,7 +28,7 @@ const by=id=>T.slides.find(s=>s.phase===id);
 // Commons, "Qianlong Emperor.jpg"; this copy 1280x1140, saved 2026-10-06 so the
 // student deck never depends on Wikimedia). It is the same painting the 3.2
 // Evidence Lab already uses.
-const qianlong={url:IMG+'topics/3-2/qianlong-emperor.jpg',alt:'Court portrait of the young Qianlong Emperor in a fur-trimmed hat and a yellow robe embroidered with dragons, with Chinese inscriptions and seals',credit:'Court portrait, 1736 · Public domain',fit:'contain'};
+const qianlong={url:IMG+'topics/3-2/qianlong-emperor.jpg',alt:'Court portrait of the young Qianlong Emperor in a fur-trimmed hat and a yellow robe embroidered with dragons, with Chinese inscriptions and seals',credit:'Castiglione, 1736 · Public domain',fit:'contain'};
 const portraits=by('portraits');
 if(portraits)portraits.template=Object.assign({},portraits.template,{visual:Object.assign({},qianlong)});
 })();

@@ -61,15 +61,15 @@
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'Provincial structure', detail: 'The Mughal Empire divided its territory into provinces (subah), each governed by an appointed official (subadar) who answered to the emperor.' },
-      { label: 'Mansabdar network', detail: 'Provincial governors and military commanders were mansabdars, ranked officials whose revenue rights (jagir) were assigned and revoked by the emperor, not inherited.' },
-      { label: 'Rajput incorporation', detail: 'Hindu Rajput kingdoms in northern India were incorporated into Mughal administration through mansabdar appointments and strategic marriages, not conquest alone.' },
-      { label: 'Geographic takeaway', detail: 'The scale of the empire made direct central control impossible, the mansabdar system created a network of personally loyal officials across vast distances.' }
+      { label: 'People who serve', detail: 'The Ottoman devshirme, Japan\'s salaried samurai and the Mughal mansabdars.' },
+      { label: 'Symbols that justify', detail: 'Divine right and Versailles in France, Songhai\'s promotion of Islam, Qing imperial portraits, and Mughal tombs and mosques.' },
+      { label: 'Systems that pay', detail: 'Ottoman tax farming, Mughal zamindars, Mexica tribute lists and Ming taxes in silver.' },
+      { label: 'Geographic takeaway', detail: 'These rulers lived on four continents, and many never had any contact with each other, yet each faced the same problem of holding what he had won or inherited.' }
     ]
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png',
+    map:             '../assets/images/instructional-maps/topic-3-2.svg',
     first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Istanbul_asv2020-02_img19_Topkap%C4%B1_Palace.jpg',
     beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Suleiman_the_Magnificent_of_the_Ottoman_Empire.jpg',
@@ -89,8 +89,10 @@
   lesson.beSurreal = {
     title: 'BeSurreal: You Are a Noble Called to Versailles, c. 1690',
     desc: 'You are a French noble with an estate far from Paris. The king expects you at his palace at Versailles, and so does everyone who matters.',
-    intro: 'You are a French noble. Your family owns land and a château far from Paris, where local people have known your name for generations. As a boy, your grandfather heard stories of the Fronde, the years when great nobles rose up against the crown. Now King Louis XIV has moved his court to his enormous palace at Versailles, and the great nobles of France spend their days there: at the king\'s ceremonies, at his table, in the long halls where everyone watches who the king speaks to.',
+    intro: 'You are a French noble. Your family owns land and a château far from Paris, where local people have known your name for generations. Your grandfather lived through the Fronde, the years when great nobles rose up against the crown. Now King Louis XIV has moved his court to his enormous palace at Versailles, and the great nobles of France spend their days there: at the king\'s ceremonies, at his table, in the long halls where everyone watches who the king speaks to.',
     detail: 'At Versailles you have no army and no say over your own lands while you are away. What you have is a chance at the king\'s favor: a post, a pension, an honor for your family. Every day the king\'s routine is a ceremony, and nobles compete for the right to be close to him. Back home, your estate is run by others while you wait in the halls. You are surrounded by gold, mirrors and painted ceilings that all say the same thing: the king is the center of France, and his power comes from God.',
+    // The renderer prints `text`; intro and detail stay for the generators that read them.
+    text: 'You are a French noble. Your family owns land and a château far from Paris, where local people have known your name for generations. Your grandfather lived through the Fronde, the years when great nobles rose up against the crown. Now King Louis XIV has moved his court to his enormous palace at Versailles, and the great nobles of France spend their days there: at the king\'s ceremonies, at his table, in the long halls where everyone watches who the king speaks to.</p><p>At Versailles you have no army and no say over your own lands while you are away. What you have is a chance at the king\'s favor: a post, a pension, an honor for your family. Every day the king\'s routine is a ceremony, and nobles compete for the right to be close to him. Back home, your estate is run by others while you wait in the halls. You are surrounded by gold, mirrors and painted ceilings that all say the same thing: the king is the center of France, and his power comes from God.',
     prompt: 'Is Versailles a palace or a cage? Argue whether Louis XIV gained more by impressing nobles like you or by keeping you where he could watch you, and use details from the scenario to support your answer.'
   };
 
@@ -102,7 +104,7 @@
       { label: 'Name the shared job', text: 'Both systems answered the same question: who will serve me and not turn on me?' },
       { label: 'Find a similarity', text: 'Look for what both did to make soldiers and officials depend on the ruler for their pay and position.' },
       { label: 'Find a difference', text: 'Who did each system use? The devshirme took Christian boys and trained them; Japan\'s rulers moved an old warrior class off its land.' },
-      { label: 'Explain why: the context', text: 'What was each ruler afraid of? The Ottoman sultan feared powerful Turkish families; Japan\'s rulers feared warrior lords after a century of civil war.' }
+      { label: 'Explain why: the context', text: 'What was each ruler afraid of? The Ottoman sultan feared powerful Turkish families; in Japan, after more than a century of civil war, the new rulers and the great lords wanted warriors with no land of their own to rebel from.' }
     ],
     prompt: 'In 3 to 4 sentences, compare the Ottoman devshirme and Japan\'s salaried samurai. Give one similarity and one difference, and explain why they differed by describing the situation each ruler was in.'
   };
@@ -125,36 +127,36 @@
       cardDesc: 'How rulers made their power look rightful, and how they paid for it.',
       learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Explain TWO methods rulers used to legitimize and consolidate their power: (1) one example of religious ideas, art, or monumental architecture that made a ruler\'s power look rightful, and (2) one system for collecting tribute or taxes that paid for state power. For each one, describe the context (the situation the ruler was in) and explain how the method strengthened him.',
+      prompt: 'Explain TWO methods rulers used to legitimize and consolidate their power: (1) one example of religious ideas, art, or monumental architecture that made a ruler\'s power look rightful, and (2) two systems for collecting tribute or taxes, from different empires, that paid for state power. For the symbol and for at least one of the tax systems, describe the context (the situation the ruler was in) and explain how the method strengthened him.',
       responseType: 'Checkpoint 2',
       // This checkpoint asks for each method in its context, the CED's suggested
       // skill for 3.2 (4.A); the Skill Builder's comparison label does not fit it.
       skill: 'Contextualization',
       terms: ['divine right', 'Songhai promotion of Islam', 'Qing imperial portraits', 'Mughal mausolea', 'Versailles', 'zamindar', 'Ottoman tax farming', 'Mexica tribute', 'Ming taxes in silver', 'legitimacy', 'revenue'],
-      focus: ['Name one religious idea, work of art, or building and the ruler who used it.', 'Name one tribute or tax system and the empire that used it.', 'For each, describe the context, the ruler\'s situation, and explain how the method strengthened his power.']
+      focus: ['Name one religious idea, work of art, or building and the ruler who used it.', 'Name two tribute or tax systems and the empire that used each.', 'For the symbol and at least one tax system, describe the context, the ruler\'s situation, and explain how the method strengthened his power.']
     }
   ];
 
   lesson.evidenceLab = {
     title: 'Evidence Lab: How Rulers Held What They Won',
-    task: 'Choose TWO cards from different empires. For each, decide which job it is evidence for: people who serve, symbols that justify, or the size of the problem rulers faced. Start with what the source directly shows, then infer what it suggests. A painting, a building or a map can show how a ruler wanted to be seen or how big his empire was; it cannot by itself show how taxes were collected or whether officials stayed loyal.',
+    task: 'Choose TWO cards from different empires. For each, decide which job it is evidence for: people who serve, or symbols that justify. Start with what the source directly shows, then infer what it suggests. A painting or a building can show how a ruler wanted to be seen or how he treated his servants; it cannot by itself show how taxes were collected or whether officials stayed loyal.',
     prompt: 'Using two cards from different empires, make one claim about how rulers kept control of large empires. Cite one concrete detail from each source, explain how each detail supports your claim, and name one thing either source cannot show.'
   };
 
   lesson.images = [
     {
-      title: 'The court of Akbar, from the Akbarnama',
+      title: 'The young Akbar watches an arrest, from the Akbarnama',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Court_of_Akbar_from_Akbarnama.jpg',
-      caption: 'A Mughal court painting by the artist Basawan, made about 1585 to 1595 for the Akbarnama, the official history of Akbar\'s reign. It shows the young emperor surrounded by officials and nobles.',
-      prompt: 'NOTICE where Akbar is placed and how the people around him are arranged. What can you INFER about who served the emperor and how close each could get to him? This was made for Akbar\'s own official history: what might it show in its best light?'
+      caption: 'A page from the Akbarnama, the official history of Akbar\'s reign, designed by Basawan and painted by Shankar about 1590 to 1595 (Art Institute of Chicago). It shows Akbar at thirteen, days after he became emperor in 1556, as Shah Abu\'l-Maali, a powerful favorite of his late father, is seized.',
+      prompt: 'NOTICE where the young Akbar sits and what is happening to the man beside him. What can you INFER about how a new ruler dealt with a powerful servant who might not obey him? How is this like Mehmed\'s arrest of Çandarlı Halil? This page was made decades later for Akbar\'s own official history: what might it show in its best light?'
     },
     {
       title: 'The Qianlong Emperor, by Giuseppe Castiglione',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Qianlong_Emperor.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Qianlong_Emperor.jpg',
-      caption: 'Part of a Qing court painting of the Qianlong Emperor and his consorts, painted by the Italian court artist Giuseppe Castiglione. The Qing emperors were Manchus ruling an empire where most people were Han Chinese.',
-      prompt: 'NOTICE the emperor\'s clothing, pose and expression. What can you INFER about how a Manchu ruler wanted his Chinese subjects to see him? What can a portrait not tell you about how the empire was actually governed?'
+      caption: 'Part of a Qing court handscroll of the Qianlong Emperor and his consorts, painted by the Italian court artist Giuseppe Castiglione in 1736, the first year of the emperor\'s reign. The Qing emperors were Manchus ruling an empire where most people were Han Chinese.',
+      prompt: 'NOTICE the yellow color, the dragons, the fur collar and the hat. Yellow and dragons were the color and symbol of a Chinese emperor; the hat, the fur and the cut of the robe were Qing court dress that kept Manchu styles. What can you INFER about how the Qing court wanted its emperor shown and remembered? What can a portrait not tell you about how the empire was actually governed?'
     },
     {
       title: 'The Taj Mahal, Agra (modern photograph)',
@@ -167,15 +169,8 @@
       title: 'Topkapı Palace from the water (modern photograph)',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_Bosphorus.JPG',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Topkapi_Palace_Bosphorus.JPG',
-      caption: 'A photograph taken in 2007 of Topkapı Palace in Istanbul, the Ottoman sultans\' palace after the conquest of Constantinople. Its palace school trained the most promising devshirme recruits for high office.',
-      prompt: 'NOTICE where the palace sits and how it looks from the sea. What can you INFER about why a sultan would keep his top servants and trainees inside his own palace? What would you need written records to learn about the devshirme?'
-    },
-    {
-      title: 'The Mughal Empire, c. 1700 (a modern map)',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mughal_Empire_(1700).png',
-      caption: 'A modern map showing the Mughal Empire near its greatest size, around 1700.',
-      prompt: 'NOTICE how large the empire is and how far its edges are from the capital. What can you INFER about why the emperor needed officials who depended on him? What does the map not show about whether those officials stayed loyal?'
+      caption: 'A photograph taken in 2007 of Topkapı Palace in Istanbul, which Mehmed II began building in 1459, after the conquest of Constantinople. Its palace school trained the most promising devshirme recruits for high office.',
+      prompt: 'NOTICE where the palace sits, on a point of land above the water, and how much ground its walls and buildings cover. What can you INFER about why a sultan would raise and train his top servants inside a place like this? What would you need written records to learn about the devshirme?'
     }
   ];
 })();

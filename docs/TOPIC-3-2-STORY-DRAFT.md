@@ -414,3 +414,22 @@ Jeff approved the story and took the recommendation on every question in section
 10. Required modules for Oct 20 and 21: 02, 06, 07 and 10.
 11. Reading title: "Holding What You Won", everywhere.
 12. Length: the narrative stays at full length (Jeff called it excellent as shown).
+
+## Corrections after the fact-check (2026-10-06)
+
+Section 3 above is the story as Jeff approved it. The fact-check after the first ship found five
+places where it said more than the sources do, and the shipped First & 10 carries these
+corrections. The story, its spine and its order are unchanged.
+
+1. Halil's arrest: "right after" Constantinople fell, not "the day after" (sources differ), and
+   the concrete reason added: he had helped push the teenage Mehmed off the throne in 1446 and
+   argued against the siege.
+2. Samurai: the stipend came from the samurai's own lord, so the comparison says both groups
+   "lived on pay, not on land of their own", and in Japan "the new rulers and the great lords
+   wanted warriors with no land of their own to rebel from".
+3. Mansabdars: Akbar's context added (a Central Asian dynasty ruling a mostly Hindu land where
+   Rajput kings had armies; he ranked the powerful men already there, Muslim and Hindu alike).
+4. Qing portraits: yellow robes covered with dragons, the color and symbol of a Chinese emperor,
+   in Qing court dress that kept Manchu styles. Not "the robes of a traditional Chinese emperor".
+5. Zamindars: the Mughals ruled through local landholders who already held their villages and
+   knew them, rather than "needed people who knew the land village by village".

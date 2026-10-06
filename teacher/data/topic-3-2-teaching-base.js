@@ -187,7 +187,7 @@ window.BEHISTORICAL_TEACHING = {
         rows: [
           { label: 'Who', text: '**Çandarlı Halil**, Mehmed\'s **grand vizier**, his chief minister' },
           { label: 'Family', text: 'A Turkish family that had held the top job for much of the past hundred years' },
-          { label: 'What', text: 'Arrested the day after the city fell, and soon executed' },
+          { label: 'What', text: 'Arrested right after the city fell, and soon executed' },
           { label: 'The lesson', text: 'A servant with family power of his own can say no to his ruler' }
         ],
         proves: 'Rulers wanted servants who depended on them for everything.'
@@ -195,9 +195,10 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'Britannica: "The day after the capture of the city, Çandarlı was arrested and soon afterward was executed in Edirne." He had argued against the siege.',
-          'The Çandarlı family held the grand vizierate for 64 of the years between 1365 and 1453.',
-          'Careful: the slide claims only what Mehmed wanted. The full switch to grand viziers raised through the devshirme came later, under Süleyman; Mehmed\'s next viziers were mostly men from converted Balkan and Byzantine noble families raised in his service. Do not say his next vizier was a devshirme boy.'
+          'Britannica: "The day after the capture of the city, Çandarlı was arrested and soon afterward was executed in Edirne." The TDV İslâm Ansiklopedisi has him dismissed on 30 May and executed about forty days later, in Edirne or Istanbul; the slide gives neither the day nor the place.',
+          'Worth telling the class: in 1446 Halil helped bring Murad II back to the throne in place of the teenage Mehmed, and in 1453 he argued against the siege. That is a servant with family power saying no.',
+          'The Çandarlı family held the grand vizierate for most of the years from 1365 to 1453 (about 64 of them, counting the tenures in the standard lists).',
+          'Careful: the slide claims only what Mehmed wanted. Most of Mehmed\'s later grand viziers were converts from Balkan and Byzantine noble families; some historians argue the full switch to grand viziers raised through the devshirme came later, under Süleyman. Do not say his next vizier was a devshirme boy.'
         ],
         ask: 'Why would a sultan fear his own chief minister?',
         listenFor: 'The minister had his own family power and could say no.',
@@ -208,11 +209,11 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'people', kind: 'split-venn', eyebrow: 'Job One · People Who Serve',
       kc: 'KC-4.3.I.C',
       title: 'Same job, two answers.',
-      footer: 'Why different? The Ottomans feared powerful Turkish families; Japan\'s rulers feared warrior lords.',
+      footer: 'Why different? The Ottomans feared Turkish families; Japan feared warriors with land.',
       template: {
         left: { name: 'Ottoman devshirme', items: ['Christian boys taken from their families', 'Converted and trained', 'Janissaries, governors, even grand viziers'] },
-        right: { name: 'Salaried samurai', items: ['An old warrior class', 'Moved off their lands into castle towns', 'Paid a yearly stipend in rice'] },
-        both: ['Lived on the ruler\'s pay', 'No power base of their own']
+        right: { name: 'Salaried samurai', items: ['An old warrior class', 'Moved off their lands into castle towns', 'A stipend counted in rice'] },
+        both: ['Lived on pay, not land', 'No power base of their own']
       },
       notes: {
         minutes: 5,
@@ -220,11 +221,11 @@ window.BEHISTORICAL_TEACHING = {
           'Both are the CED\'s own examples for KC-4.3.I.C.',
           'Devshirme: a forced levy of Christian boys, mostly from the Balkans, converted to Islam and trained; the strongest became Janissaries, the ablest went to palace schools and could become governors or grand vizier. It was forced and cruel to the families; say so.',
           'Samurai: after more than a century of civil war between lords with their own lands and armies, starting in the late 1500s most samurai were moved off their lands into castle towns and paid stipends counted in rice. Hideyoshi\'s 1588 sword hunt is part of the same separation of warriors from farmers.',
-          'Japan was not a giant empire. The CED uses it because its rulers faced the same danger and answered it with the same idea.',
+          'Japan was not a giant empire. The CED lists it as an example; it fits because its rulers and lords faced the same danger, armed warriors with land of their own, and answered it with the same idea. The stipend came from the samurai\'s own lord.',
           'Picture to add when uploaded: the Süleymanname devshirme registration miniature (1558), captioned as an Ottoman court painting.'
         ],
         ask: 'One similarity, one difference, and why they differed.',
-        listenFor: 'Both lived on the ruler\'s pay; one was a new group of outsiders, the other an old class cut off from its land; because each ruler feared a different rival.',
+        listenFor: 'Both lived on pay, not land of their own; one was a new group of outsiders, the other an old class cut off from its land; because each ruler feared a different rival.',
         ap: 'Comparison: similarity, difference, and the context that explains the difference.'
       }
     },
@@ -247,7 +248,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Akbar\'s ranks ran in numbered grades; officials were paid in cash or, more often, by a jagir, which was normally transferred every few years. Rank was not inherited.',
-          'Akbar gave high ranks to Hindu Rajput kings, which turned possible rivals into commanders. One sentence; it is not a separate lesson.',
+          'Context: Akbar\'s family came from Central Asia, and he ruled a mostly Hindu land where Rajput kings had armies of their own. He ranked the powerful men already there, Muslim and Hindu alike, and gave high ranks to Rajput kings, which turned possible rivals into commanders. Two sentences; it is not a separate lesson.',
           'Mansabdar is not one of the CED\'s named examples. It stays because it links job one to job three: the jagir is pay and a tax system at once.'
         ],
         ask: 'Why move the jagir every few years?',
@@ -270,7 +271,7 @@ window.BEHISTORICAL_TEACHING = {
           'Both are CED examples under "Religious ideas" for KC-4.3.I.A: European notions of divine right, and Songhai promotion of Islam.',
           'Askia Muhammad seized the throne in 1493. He made the hajj in the 1490s (sources give 1495 to 1498) and returned with the title of caliph; sources disagree on who granted it, so the slide does not say.',
           'The CED word is "continued": rulers had used religion to justify rule long before 1450, as in Unit 1.',
-          'Pictures to add when uploaded: Rigaud\'s Louis XIV (1701), and the Tomb of Askia at Gao, captioned as a modern photograph of the 1495 building.'
+          'Pictures to add when uploaded: Rigaud\'s Louis XIV (1701), and the Tomb of Askia at Gao, captioned as a modern photograph. UNESCO dates the building to 1495; it is mud brick and has been replastered many times.'
         ],
         ask: 'Why did Askia have to work harder for his religious claim than Louis did?',
         listenFor: 'He took power by force, so he could not claim it by birth.',
@@ -286,7 +287,7 @@ window.BEHISTORICAL_TEACHING = {
         date: '1736',
         rows: [
           { label: 'Situation', text: 'The Qing emperors were **Manchus**, outsiders ruling an empire where most people were Han Chinese' },
-          { label: 'Picture one', text: 'Court portraits like this one: the robes and pose of a traditional **Chinese emperor**' },
+          { label: 'Picture one', text: 'Court portraits like this one: the yellow and dragons of a **Chinese emperor**, in Manchu court dress' },
           { label: 'Picture two', text: 'The Qianlong Emperor painted as a **Buddhist holy figure**, for Tibetan and Mongol subjects' },
           { label: 'So what', text: 'Same ruler, different picture, depending on who needed convincing' }
         ],
@@ -297,10 +298,10 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'Qing imperial portraits are a CED example under "Art and monumental architecture."',
           'The Freer Gallery\'s thangka of the Qianlong Emperor as Manjushri (F2000.4): the Smithsonian notes that relations with Mongol and Tibetan subjects "were couched in Buddhist, rather than Confucian, cultural rhetoric."',
-          'The picture is the Qianlong Emperor\'s court portrait in a yellow dragon robe, from the handscroll of inauguration portraits of the emperor and his consorts. Its inscription dates it to the eighth month of the first year of Qianlong, 1736. It is attributed to Giuseppe Castiglione, an Italian Jesuit at the Qing court. Picture to add when uploaded: the Manjushri thangka beside it; the thangka\'s face is by Castiglione and the rest was painted by court artists.'
+          'The picture is the Qianlong Emperor\'s court portrait in a yellow dragon robe, from the handscroll of inauguration portraits of the emperor and his consorts. Its inscription dates it to the eighth month of the first year of Qianlong, 1736. It is by Giuseppe Castiglione, an Italian Jesuit at the Qing court (Cleveland Museum of Art 1969.31). Yellow and dragons were the Chinese imperial color and symbol; the fur hat, the fur collar and the cut of the robe were Qing court dress that kept Manchu features. The handscroll was a private court picture kept in a lacquer box, so call it the court\'s picture of its emperor, not a poster for the public. Picture to add when uploaded: the Manjushri thangka beside it; the thangka\'s face is by Castiglione and the rest was painted by court artists.'
         ],
         ask: 'Who was each picture meant to convince?',
-        listenFor: 'Han Chinese subjects; Tibetan and Mongol Buddhists.'
+        listenFor: 'One shows the emperor of China, Chinese symbols in Manchu dress; the other speaks to Tibetan and Mongol Buddhists.'
       }
     },
     {
@@ -317,7 +318,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 4,
         land: [
           'Both are CED examples: Mughal mausolea and mosques, and European palaces such as Versailles.',
-          'Louis was nine when the Fronde began in 1648, a revolt in which great nobles took up arms against the crown. Britannica connects his later policies to that memory. At Versailles the great nobles lived at court, away from their regional power bases.',
+          'Louis was nine when the Fronde began in 1648; from 1650 great nobles took up arms against the crown. Britannica connects his later policies to that memory. At Versailles the great nobles lived at court, away from their regional power bases.',
           'Versailles does two jobs at once: a symbol, and a way to keep the nobles under the king\'s eye. That is the twist this slide earns.',
           'Picture to add when uploaded: a modern photograph of the Taj Mahal or Humayun\'s Tomb, captioned as modern.'
         ],
@@ -329,10 +330,10 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'collect', kind: 'split-venn', eyebrow: 'Job Three · Who Collects',
       kc: 'KC-4.3.I.D',
       title: 'Two middlemen, two reasons.',
-      footer: 'Why different? The sultan needed cash now; the Mughals needed local knowledge.',
+      footer: 'Why different? The sultan needed cash now; the Mughals worked through local landholders.',
       template: {
-        left: { name: 'Ottoman tax farming', items: ['The state sells the right to collect', 'The bidder pays first, keeps the extra', 'Grew in the late 1500s'] },
-        right: { name: 'Mughal zamindars', items: ['Local landholders who knew the fields', 'Right usually passed down in the family', 'Kept a share of what they collected'] },
+        left: { name: 'Ottoman tax farming', items: ['The state sells the right to collect', 'The bidder pays the state a set sum, keeps the extra', 'Grew in the late 1500s'] },
+        right: { name: 'Mughal zamindars', items: ['Local landholders who held their villages', 'Right usually passed down in the family', 'Kept a share of what they collected'] },
         both: ['A middleman collects the tax', 'The people paying could be squeezed']
       },
       notes: {
@@ -423,7 +424,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         frame: 'Both {{ruler A}} and {{ruler B}} {{did the same job}} by {{a shared method}}, but {{how they differed}}. They differed because {{the situation each was in}}.',
         exampleLabel: 'Filled in',
-        example: 'Both **the Ottoman sultans** and **Japan\'s rulers** **gave themselves loyal fighters** by **paying them so they had no power base of their own**, but **the Ottomans built a new group out of Christian boys while Japan moved an old warrior class off its land**. They differed because **the Ottomans feared powerful Turkish families, and Japan\'s rulers feared warrior lords after a century of civil war**.'
+        example: 'Both **the Ottoman sultans** and **Japan\'s rulers** **gave themselves loyal fighters** by **paying them so they had no power base of their own**, but **the Ottomans built a new group out of Christian boys while Japan moved an old warrior class off its land**. They differed because **the Ottomans feared powerful Turkish families, and Japan\'s rulers and lords, after a century of civil war, feared warriors with land of their own**.'
       },
       notes: {
         minutes: 4,

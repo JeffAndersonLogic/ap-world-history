@@ -272,7 +272,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Mehmed knew how dangerous a powerful servant could be. The day after Constantinople fell, he had his <span class=\"kt\">grand vizier</span>, his chief minister, arrested, and soon executed. That minister, Çandarlı Halil, came from a Turkish family that had held the job for much of the past hundred years. A servant with a powerful family of his own can say no to his ruler. Rulers wanted servants who depended on them for everything."
+            "html": "Mehmed knew how dangerous a powerful servant could be. Right after Constantinople fell, he had his <span class=\"kt\">grand vizier</span>, his chief minister, arrested, and soon executed. That minister, Çandarlı Halil, came from a Turkish family that had held the job for much of the past hundred years. Halil had helped push the teenage Mehmed off the throne once before, in 1446, and he had argued against attacking Constantinople at all. A servant with a powerful family of his own can say no to his ruler. Rulers wanted servants who depended on them for everything."
           },
           {
             "type": "p",
@@ -284,12 +284,12 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "The Mughals in India had a third answer. The emperor Akbar gave each of his officials a numbered rank, called a mansab. Many of these officials, called <span class=\"kt\">mansabdars</span>, were paid with a jagir: the right to collect the land tax from one area. Every few years the jagirs were moved, and a son did not inherit his father's rank. A mansabdar could get rich serving the emperor, but he could never turn one place into his own little kingdom."
+            "html": "The Mughals in India had a third answer. Akbar's family came from Central Asia, and he ruled a land where most people were Hindu and where Rajput kings had armies of their own. Instead of fighting all of them, Akbar gave the powerful men already there, Muslim and Hindu alike, a numbered rank, called a mansab. Many of these officials, called <span class=\"kt\">mansabdars</span>, were paid with a jagir: the right to collect the land tax from one area. Every few years the jagirs were moved, and a son did not inherit his father's rank. A mansabdar could get rich serving the emperor, but he could never turn one place into his own little kingdom."
           }
         ],
         "callout": {
           "label": "AP Thinking, Comparison",
-          "raw": "<p><strong>Same job, different tools.</strong> The devshirme and the salaried samurai both turned the people with weapons into people who lived on their ruler's pay. The Ottomans built a new group out of outsiders, while Japan remade an old warrior group by cutting it off from its land. Why? The Ottoman sultan feared powerful Turkish families; Japan's rulers feared warrior lords who had just spent a century at war.</p>"
+          "raw": "<p><strong>Same job, different tools.</strong> The devshirme and the salaried samurai both turned the people with weapons into people who lived on pay, not on land of their own. The Ottomans built a new group out of outsiders, while Japan remade an old warrior group by cutting it off from its land. Why? The Ottoman sultan feared powerful Turkish families; in Japan, after a century of civil war, the new rulers and the great lords wanted warriors with no land of their own to rebel from.</p>"
         }
       },
       {
@@ -307,7 +307,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Art did this work too. The Qing emperors who ruled China were Manchus, outsiders from the northeast ruling an empire where most people were Han Chinese. Their official <span class=\"kt\">imperial portraits</span> showed them in the robes and poses of a traditional Chinese emperor. The Qianlong Emperor was also painted as a Buddhist holy figure, for his Tibetan and Mongol subjects. Same ruler, different picture, depending on who needed convincing."
+            "html": "Art did this work too. The Qing emperors who ruled China were Manchus, outsiders from the northeast ruling an empire where most people were Han Chinese. Their official <span class=\"kt\">imperial portraits</span> showed them facing forward in yellow robes covered with dragons, the color and the symbol of a Chinese emperor. The fur collar, the hat and the cut of the robe were Qing court dress, which kept Manchu styles. The Qianlong Emperor was also painted as a Buddhist holy figure, for his Tibetan and Mongol subjects. Same ruler, different picture, depending on who needed convincing."
           },
           {
             "type": "p",
@@ -330,7 +330,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "The Ottomans used <span class=\"kt\">tax farming</span>. The government sold the right to collect a tax to a bidder, who paid the state and then kept whatever extra he could collect. Tax farming grew in the late 1500s, when the sultans needed cash fast to pay their full-time soldiers. The sultan got money quickly, but tax farmers could squeeze the people who paid. The Mughals relied on <span class=\"kt\">zamindars</span>, local landholders who knew the fields and villages, to collect the land tax. A zamindar's right usually passed down in his family, and he kept a share of what he collected."
+            "html": "The Ottomans used <span class=\"kt\">tax farming</span>. The government sold the right to collect a tax to a bidder, who paid the state and then kept whatever extra he could collect. Tax farming grew in the late 1500s, when the sultans needed cash fast to pay their full-time soldiers. The sultan got money quickly, but tax farmers could squeeze the people who paid. The Mughals relied on <span class=\"kt\">zamindars</span>, local landholders who already held their villages and knew them, to collect the land tax. A zamindar's right usually passed down in his family, and he kept a share of what he collected."
           },
           {
             "type": "p",
@@ -339,7 +339,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Comparison",
-          "raw": "<p><strong>Tax farming and zamindars both handed tax collection to a middleman.</strong> The Ottoman tax farmer bought his right for cash, because the sultan needed money now. The zamindar held his through his family and his standing in the countryside, because the Mughals needed people who knew a huge farming land village by village.</p>"
+          "raw": "<p><strong>Tax farming and zamindars both handed tax collection to a middleman.</strong> The Ottoman tax farmer bought his right for cash, because the sultan needed money now. The zamindar held his through his family and his standing in the countryside, because the Mughals ruled through local landholders who already held their villages and knew them.</p>"
         }
       },
       {

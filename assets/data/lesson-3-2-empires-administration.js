@@ -111,22 +111,22 @@ window.BEHISTORICAL_LESSON = {
           "Every ruler did all three jobs, but not in the same way. The question for every example is **why**: what situation was that ruler in?"
         ],
         image: {
-          title: "The Mughal Empire, c. 1700 (a modern map)",
-          caption: "A modern map of the Mughal Empire near its greatest size. Ruling land this large and this varied is the problem every tool in this topic tries to solve.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Mughal_Empire_(1700).png"
+          title: "One Problem, Many Rulers, c. 1450 to 1750 (a BeHistorical map)",
+          caption: "The empires in this topic, from the Mexica to Japan. Each zone marks an empire's core region, not its borders. Every one of these rulers had to hold land and people he had won or inherited.",
+          url: "../assets/images/instructional-maps/topic-3-2.svg",
+          sourceUrl: "../assets/images/instructional-maps/topic-3-2.svg"
         }
       },
       {
         title: "People Who Serve: Devshirme, Salaried Samurai and Mansabdars",
         bullets: [
-          "The day after Constantinople fell in 1453, Mehmed II had his **grand vizier**, Çandarlı Halil, arrested and soon executed. Halil came from a powerful Turkish family, and a servant with family power of his own can say no.",
-          "The Ottoman **devshirme** took Christian boys, mostly from the Balkans, from their families, converted them to Islam and trained them. The strongest became **Janissaries**; the ablest could rise to govern provinces or become grand vizier. Japan's rulers did the same job differently: from the late 1500s most **samurai** were moved off their lands into castle towns and paid a yearly stipend in rice.",
-          "The Mughal **mansabdar** system was a third answer: a numbered rank, often paid with a **jagir** (the right to collect the land tax from one area) that was moved every few years and could not be inherited. All three made the people with weapons and offices depend on the ruler."
+          "Right after Constantinople fell in 1453, Mehmed II had his **grand vizier**, Çandarlı Halil, arrested and soon executed. Halil came from a powerful Turkish family. He had helped push the teenage Mehmed off the throne once before, in 1446, and had argued against the siege. A servant with family power of his own can say no.",
+          "The Ottoman **devshirme** took Christian boys, mostly from the Balkans, from their families, converted them to Islam and trained them. The strongest became **Janissaries**; the ablest could rise to govern provinces or become grand vizier. Japan's rulers and great lords did the same job differently: after more than a century of civil war, from the late 1500s most **samurai** were moved off their lands into castle towns and paid a yearly stipend by their lord, counted in rice.",
+          "The Mughal **mansabdar** system was a third answer. Akbar's family came from Central Asia, and he ruled a mostly Hindu land where Rajput kings had armies of their own. He gave the powerful men already there, Muslim and Hindu alike, a numbered rank, often paid with a **jagir** (the right to collect the land tax from one area) that was moved every few years and could not be inherited. All three made the people with weapons and offices depend on the ruler."
         ],
         image: {
           title: "Topkapı Palace from the water (modern photograph)",
-          caption: "The Ottoman sultans' palace in Istanbul after 1453, photographed in 2007. Its palace school trained the most promising devshirme recruits for high office.",
+          caption: "The palace Mehmed II began building in Istanbul in 1459, after the conquest, photographed in 2007. Its palace school trained the most promising devshirme recruits for high office.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_Bosphorus.JPG",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Topkapi_Palace_Bosphorus.JPG"
         }
@@ -135,12 +135,12 @@ window.BEHISTORICAL_LESSON = {
         title: "Symbols That Justify: Religion, Art and Monumental Architecture",
         bullets: [
           "**Religious ideas.** Louis XIV of France claimed **divine right**: God chose the king, so disobeying the king meant disobeying God. Askia Muhammad, who took the Songhai throne by force in 1493, could not claim it by birth, so he made the pilgrimage to Mecca, returned with the title of caliph, and supported Islamic scholars and judges.",
-          "**Art.** The Qing emperors were Manchus ruling a mostly Han Chinese empire. Their **imperial portraits** showed them in the robes of a traditional Chinese emperor, and the Qianlong Emperor was also painted as a Buddhist holy figure for his Tibetan and Mongol subjects.",
+          "**Art.** The Qing emperors were Manchus ruling a mostly Han Chinese empire. Their **imperial portraits** showed them facing forward in yellow robes covered with dragons, the color and symbol of a Chinese emperor, but in Manchu-style court dress, and the Qianlong Emperor was also painted as a Buddhist holy figure for his Tibetan and Mongol subjects.",
           "**Monumental architecture.** Mughal **mausolea and mosques**, such as the Taj Mahal, showed a dynasty that was rich, faithful to Islam and permanent. Louis XIV's palace at **Versailles**, his court's home from 1682, did that and a second job: it kept the great nobles at court, where the king could watch them."
         ],
         image: {
           title: "The Qianlong Emperor, by Giuseppe Castiglione",
-          caption: "Part of a Qing court painting of the Qianlong Emperor and his consorts. A Manchu ruler shown in the robes of a Chinese emperor.",
+          caption: "Part of a Qing court painting of the Qianlong Emperor and his consorts. A Manchu ruler in the yellow and the dragons of a Chinese emperor, wearing Qing court dress.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Qianlong_Emperor.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Qianlong_Emperor.jpg"
         }
@@ -149,7 +149,7 @@ window.BEHISTORICAL_LESSON = {
         title: "Systems That Pay: Tribute, Tax Farming and New Taxes",
         bullets: [
           "Armies, salaries and palaces, and the guns of Topic 3.1, cost enormous sums. Rulers needed **revenue** and raised it through **tribute**, **tax farming**, and new ways of collecting taxes.",
-          "The Ottomans used **tax farming**: the state sold the right to collect a tax to a bidder, who paid first and kept the extra. It grew in the late 1500s, when the sultans needed cash fast for salaried soldiers. The Mughals relied on **zamindars**, local landholders who knew the fields, to collect the land tax and keep a share.",
+          "The Ottomans used **tax farming**: the state sold the right to collect a tax to a bidder, who promised the state a fixed sum and kept the extra. It grew in the late 1500s, when the sultans needed cash fast for salaried soldiers. The Mughals relied on **zamindars**, local landholders who already held their villages and knew them, to collect the land tax and keep a share.",
           "The Mexica kept painted **tribute lists** of what each conquered province owed the capital, such as cotton cloaks, cacao and feathers. Ming China combined many taxes and labor duties into payments in **silver**. The three jobs held each other up: money paid the people who served, the people who served collected the money, and symbols made serving and paying feel right."
         ],
         image: {
@@ -163,16 +163,16 @@ window.BEHISTORICAL_LESSON = {
   },
 
   map: {
-    title: "The Mughal Empire and Its Administrative Provinces",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Mughal_Empire_%281700%29.png",
-    caption: "The Mughal Empire at its greatest extent c. 1700, showing the provincial structure administered through the mansabdar system.",
-    intro: "Use the map to understand how the Mughal Empire organized vast territories through administrative provinces, each governed by mansabdars who owed military service and revenue to the emperor.",
-    prompt: "How did the geographic scale of the Mughal Empire make centralized administration difficult, and how did the mansabdar system address that challenge?",
+    title: "One Problem, Many Rulers, c. 1450 to 1750",
+    url: "../assets/images/instructional-maps/topic-3-2.svg",
+    sourceUrl: "../assets/images/instructional-maps/topic-3-2.svg",
+    caption: "A BeHistorical map of the empires in this topic. Each zone marks an empire's core region, not its borders, which moved over three centuries.",
+    intro: "Every empire highlighted on this map appears in today's story. Use the map to see how widely the same problem was shared: each ruler had to hold land and people he had won or inherited.",
+    prompt: "NOTICE how far apart these empires are, from Mexico to Japan. Pick two on different continents. What does it suggest that both rulers needed people who would serve them, symbols that made their rule look rightful, and money to pay for it all?",
     notes: [
-      "The Mughal Empire at its height covered most of the Indian subcontinent, a territory too large to govern from a single center without delegated authority.",
-      "Each province (subah) was administered by a governor (subadar) who was typically a mansabdar of high rank, appointed by the emperor and subject to reassignment.",
-      "The jagir system meant that provincial revenue rights belonged to the emperor, who distributed them as rewards, preventing provincial governors from accumulating independent power."
+      "The zones mark where each empire's power was centered, not its borders. Borders moved over three centuries, so a single border line would be wrong for most of this period.",
+      "The Mexica appear because their tribute lists are one of the College Board's examples, even though their empire fell to Spain in 1521, early in this period.",
+      "Japan was not a giant land-based empire like the Ottomans or the Mughals, but its rulers faced the same danger: armed men with power of their own."
     ]
   },
 
@@ -209,7 +209,7 @@ window.BEHISTORICAL_LESSON = {
 
   primarySource: {
     title: "Primary Source: Two Visitors Describe How Rulers Held Power (1520s and 1550s)",
-    intro: "Two outsiders described rulers in this unit. Leo Africanus, a traveler born in Granada and raised in Morocco, visited Timbuktu in the Songhai Empire early in the 1500s; his description of Africa was finished in 1526. Ogier Ghiselin de Busbecq was the Habsburg ambassador to Süleyman the Magnificent and described the Ottoman court in letters from the 1550s. The College Board suggests this pair for comparing how rulers legitimized and consolidated power.",
+    intro: "Two outsiders described rulers in this unit. Leo Africanus, a traveler born in Granada and raised in Morocco, wrote that he had visited Timbuktu in the Songhai Empire; his description of Africa was finished in 1526. Ogier Ghiselin de Busbecq was the Habsburg ambassador to Süleyman the Magnificent from 1554 to 1562 and described the Ottoman court in his letters; this passage comes from a letter of 1555. The College Board suggests this pair for comparing how rulers legitimized and consolidated power.",
     attribution: "Leo Africanus, The History and Description of Africa, translated by John Pory (1600), edited by Robert Brown (Hakluyt Society, 1896), vol. 3, pp. 824 to 825; Ogier Ghiselin de Busbecq, The Life and Letters of Ogier Ghiselin de Busbecq, translated by C. T. Forster and F. H. B. Daniell (London, 1881), vol. 1, p. 154",
     text: "<strong>Leo Africanus, on the king of Timbuktu (Songhai):</strong> The rich king of Tombuto hath many plates and scepters of gold, some whereof weigh 1300 pounds: and he keeps a magnificent and well furnished court. [...] Whosoever will speak unto this king must first fall down before his feet, and then taking up earth must sprinkle it upon his own head and shoulders [...]. Here are great store of doctors, judges, priests, and other learned men, that are bountifully maintained at the king's cost and charges.<br><br><strong>Busbecq, on the Ottoman sultan:</strong> In making his appointments the Sultan pays no regard to any pretensions on the score of wealth or rank, nor does he take into consideration recommendations or popularity; he considers each case on its own merits, and examines carefully into the character, ability, and disposition of the man whose promotion is in question. It is by merit that men rise in the service, a system which ensures that posts should only be assigned to the competent. [...] Those who receive the highest offices from the Sultan are for the most part the sons of shepherds or herdsmen, and so far from being ashamed of their parentage, they actually glory in it.",
     sourceNote: "Both passages are quoted from the printed English translations; [...] marks where words were left out, and the spelling of the 1600 translation is modernized (\"hath\" means \"has\"). Leo's king of Tombuto was the Songhai ruler of his day, Askia Muhammad, whose capital was Gao. The 1300 pounds of gold is Leo's claim, not a measured fact. Busbecq praised the Ottoman system partly to criticize Europe, where, he wrote, birth decided everything; the \"sons of shepherds\" were probably men raised through the devshirme, though he does not use that word.",

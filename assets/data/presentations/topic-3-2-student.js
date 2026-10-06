@@ -89,7 +89,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "What",
-            "text": "Arrested the day after the city fell, and soon executed"
+            "text": "Arrested right after the city fell, and soon executed"
           },
           {
             "label": "The lesson",
@@ -103,7 +103,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "split-venn",
       "eyebrow": "Job One · People Who Serve",
       "title": "Same job, two answers.",
-      "footer": "Why different? The Ottomans feared powerful Turkish families; Japan's rulers feared warrior lords.",
+      "footer": "Why different? The Ottomans feared Turkish families; Japan feared warriors with land.",
       "kc": "KC-4.3.I.C",
       "template": {
         "left": {
@@ -119,11 +119,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "items": [
             "An old warrior class",
             "Moved off their lands into castle towns",
-            "Paid a yearly stipend in rice"
+            "A stipend counted in rice"
           ]
         },
         "both": [
-          "Lived on the ruler's pay",
+          "Lived on pay, not land",
           "No power base of their own"
         ]
       }
@@ -208,7 +208,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Picture one",
-            "text": "Court portraits like this one: the robes and pose of a traditional **Chinese emperor**"
+            "text": "Court portraits like this one: the yellow and dragons of a **Chinese emperor**, in Manchu court dress"
           },
           {
             "label": "Picture two",
@@ -223,7 +223,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "visual": {
           "url": "../assets/images/topics/3-2/qianlong-emperor.jpg",
           "alt": "Court portrait of the young Qianlong Emperor in a fur-trimmed hat and a yellow robe embroidered with dragons, with Chinese inscriptions and seals",
-          "credit": "Court portrait, 1736 · Public domain",
+          "credit": "Castiglione, 1736 · Public domain",
           "fit": "contain"
         }
       }
@@ -261,21 +261,21 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "split-venn",
       "eyebrow": "Job Three · Who Collects",
       "title": "Two middlemen, two reasons.",
-      "footer": "Why different? The sultan needed cash now; the Mughals needed local knowledge.",
+      "footer": "Why different? The sultan needed cash now; the Mughals worked through local landholders.",
       "kc": "KC-4.3.I.D",
       "template": {
         "left": {
           "name": "Ottoman tax farming",
           "items": [
             "The state sells the right to collect",
-            "The bidder pays first, keeps the extra",
+            "The bidder pays the state a set sum, keeps the extra",
             "Grew in the late 1500s"
           ]
         },
         "right": {
           "name": "Mughal zamindars",
           "items": [
-            "Local landholders who knew the fields",
+            "Local landholders who held their villages",
             "Right usually passed down in the family",
             "Kept a share of what they collected"
           ]
@@ -390,7 +390,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "frame": "Both {{ruler A}} and {{ruler B}} {{did the same job}} by {{a shared method}}, but {{how they differed}}. They differed because {{the situation each was in}}.",
         "exampleLabel": "Filled in",
-        "example": "Both **the Ottoman sultans** and **Japan's rulers** **gave themselves loyal fighters** by **paying them so they had no power base of their own**, but **the Ottomans built a new group out of Christian boys while Japan moved an old warrior class off its land**. They differed because **the Ottomans feared powerful Turkish families, and Japan's rulers feared warrior lords after a century of civil war**."
+        "example": "Both **the Ottoman sultans** and **Japan's rulers** **gave themselves loyal fighters** by **paying them so they had no power base of their own**, but **the Ottomans built a new group out of Christian boys while Japan moved an old warrior class off its land**. They differed because **the Ottomans feared powerful Turkish families, and Japan's rulers and lords, after a century of civil war, feared warriors with land of their own**."
       }
     },
     {

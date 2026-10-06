@@ -268,6 +268,26 @@ module.exports = [
     ],
     note: 'BeHistorical instructional map. Empire zones show each core region, not borders, which moved over 300 years; coastlines are simplified for classroom projection.'
   },
+  {
+    id: 'topic-3-2',
+    code: 'Topic 3.2',
+    title: 'One Problem, Many Rulers, c. 1450-1750',
+    subtitle: 'Topic 3.2 · Where this topic\'s rulers held what they won',
+    // Replaces the Commons "Mughal Empire (1700).png", which carries a
+    // factual-accuracy dispute ("No source, obviously exaggerated borders").
+    // Zones are core regions, as on the 3.1 map, and every one is a case the
+    // 3.2 story uses; nothing here claims a border.
+    highlights: [
+      { zone: [-102, 20, 6, 4], label: 'MEXICA', labelSide: 'below', tone: 'plum', legend: 'Mexica: tribute lists' },
+      { zone: [2, 46.5, 5, 4], label: 'FRANCE', labelSide: 'above', tone: 'slate', legend: 'France: divine right and Versailles' },
+      { zone: [0, 15.5, 9, 3], label: 'SONGHAI', labelSide: 'below', tone: 'sand', legend: 'Songhai: promoting Islam' },
+      { zone: [31, 38.5, 13, 5], label: 'OTTOMAN', labelSide: 'above', tone: 'gold', legend: 'Ottoman: the devshirme and tax farming' },
+      { zone: [80, 23.5, 9, 6.5], label: 'MUGHAL', labelSide: 'below', tone: 'bronze', legend: 'Mughal: mansabdars, zamindars, the Taj Mahal' },
+      { zone: [112, 32, 12, 8], label: 'MING, THEN QING', labelSide: 'above', tone: 'sage', legend: 'China: Ming taxes in silver, then Qing portraits' },
+      { zone: [137, 36, 5, 4], label: 'JAPAN', labelSide: 'below', tone: 'plum', legend: 'Japan: salaried samurai' }
+    ],
+    note: 'BeHistorical instructional map. Zones show each empire\'s core region, not its borders, which moved over 300 years; coastlines are simplified for classroom projection.'
+  },
 
   // ── Unit 4 ──────────────────────────────────────────────────────────────────
   {
