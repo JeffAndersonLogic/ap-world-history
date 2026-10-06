@@ -183,7 +183,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   first10: {
-    title: 'First & 10: Running an Empire',
+    title: 'First & 10: Holding What You Won',
     embedUrl: 'first-and-10-topic-3-2-empires-administration-capture.html?v=response-id-fix-v1'
   },
 

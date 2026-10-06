@@ -47,9 +47,9 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: Running an Empire',
+    title: 'First & 10: Holding What You Won',
     embedUrl: 'first-and-10-topic-3-2-empires-administration-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 3.2 lesson path.'
+    note: 'Read for the story: winning land was fast and holding it was hard, so every ruler needed people who serve, symbols that justify, and systems that pay.'
   };
 
   lesson.map = {
