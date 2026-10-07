@@ -126,8 +126,11 @@ window.BHSyncTransport = { create: function (cfg) {
 const UNIT_PAGE = '/unit-1/lesson-1-3-south-southeast-asia.html';
 const FOUNDATIONS_PAGE = '/foundations/foundations-3-states-power.html';
 
-// Opens a page with the backup switched on (by rewriting the config the
-// renderer inlines), the stand-in transport, and a seeded cloud and device.
+// Opens a page against the stand-in transport and a seeded cloud and device.
+// `on: true` (the default) is the config exactly as shipped, which is on for
+// every student since 2026-10-07. `on: false` rewrites the inlined config to the
+// pre-launch posture, off with the pilot switch available, so the code that
+// honours "off" and "pilot" stays under test for the day it is needed again.
 let open = async function (browser, page, opts) {
   const o = Object.assign({ on: true, docs: {}, user: { uid: 'student1' }, local: {}, patch: null }, opts || {});
   const context = await browser.newContext();
@@ -149,12 +152,11 @@ let open = async function (browser, page, opts) {
     const res = await route.fetch();
     let body = await res.text();
     if (o.on) {
+      body = body.replace('"windowMs": 30000', '"windowMs": 400');
+    } else {
       body = body
-        .replace('"enabled": false', '"enabled": true')
-        .replace('"apiKey": null', '"apiKey": "test"')
-        .replace('"authDomain": null', '"authDomain": "test.example"')
-        .replace('"appId": null', '"appId": "test"')
-        .replace('"windowMs": 30000', '"windowMs": 400');
+        .replace('"enabled": true', '"enabled": false')
+        .replace('"pilot": false', '"pilot": true');
     }
     if (o.patch) body = o.patch(body);
     await route.fulfill({ response: res, body });
@@ -177,14 +179,24 @@ const ls = (p, key) => p.evaluate(k => localStorage.getItem(k), key);
 
 async function suite(browser) {
   // ── Off by default ─────────────────────────────────────────────────────────
-  section('Off unless switched on');
+  section('On as shipped, and silent when the config says off');
+  {
+    const s = await open(browser, UNIT_PAGE, {});
+    const shown = await waitFor(s.p, () => !!document.getElementById('bh-sync'));
+    check('the shipped switch is on for every student', await s.p.evaluate(() => window.BH_SYNC_CONFIG && window.BH_SYNC_CONFIG.enabled === true && window.BH_SYNC_CONFIG.pilot === false));
+    check('a student with no parameter sees the backup', shown);
+    await s.context.close();
+    const f = await open(browser, FOUNDATIONS_PAGE, {});
+    check('and so does a Foundations student', await waitFor(f.p, () => !!document.getElementById('bh-sync')));
+    await f.context.close();
+  }
   {
     const s = await open(browser, UNIT_PAGE, { on: false });
     await s.p.waitForTimeout(1500);
     check('the backup engine is present and silent', await s.p.evaluate(() => !!window.BHSync && !document.getElementById('bh-sync')));
     check('the page makes no request to Google or to the transport', !s.requests.some(u => /gstatic\.com\/firebasejs|firestore\.googleapis\.com|identitytoolkit|securetoken|behistorical-sync-transport/.test(u)), s.requests.filter(u => /sync|firebase|firestore|identitytoolkit/.test(u)).join(' '));
     check('and leaves nothing of its own in storage', await s.p.evaluate(() => Object.keys(localStorage).every(k => k.indexOf('behistorical-sync-') !== 0)));
-    check('the shipped switch is off', await s.p.evaluate(() => window.BH_SYNC_CONFIG && window.BH_SYNC_CONFIG.enabled === false));
+    check('the config in that browser says off', await s.p.evaluate(() => window.BH_SYNC_CONFIG && window.BH_SYNC_CONFIG.enabled === false));
     await s.context.close();
   }
   {
@@ -202,7 +214,7 @@ async function suite(browser) {
   {
     const s = await open(browser, UNIT_PAGE + '?sync=on', { on: false });
     const on = await waitFor(s.p, () => !!document.getElementById('bh-sync'));
-    check('the shipped config is off for everyone and pilot is on', await s.p.evaluate(() => window.BH_SYNC_CONFIG.enabled === false && window.BH_SYNC_CONFIG.pilot === true));
+    check('with the config off and pilot on', await s.p.evaluate(() => window.BH_SYNC_CONFIG.enabled === false && window.BH_SYNC_CONFIG.pilot === true));
     check('?sync=on turns the backup on in that browser', on);
     check('and it is remembered for the next page, with no parameter', await (async () => {
       await s.p.goto(`http://127.0.0.1:${server.address().port}${UNIT_PAGE}`, { waitUntil: 'load' });
@@ -366,10 +378,9 @@ async function suite(browser) {
       expect: /turns the backup on in that browser/
     },
     {
-      name: 'the backup turns itself on in the shipped config',
-      patch: null,
-      shippedOn: true,
-      expect: /the shipped switch is off/
+      name: 'the backup is switched off in the shipped config',
+      patch: b => b.replace('"enabled": true', '"enabled": false'),
+      expect: /the shipped switch is on for every student|a student with no parameter sees the backup/
     }
   ];
 
@@ -381,7 +392,7 @@ async function suite(browser) {
     const realOpen = open;
     // eslint-disable-next-line no-global-assign
     open = (b, pg, o) => realOpen(b, pg, Object.assign({}, o, {
-      patch: c.patch ? (body => c.patch(body)) : (body => body.replace('"enabled": false', '"enabled": true'))
+      patch: body => c.patch(body)
     }));
     try { await suite(browser); } catch (e) { failed.push('crashed: ' + e.message); }
     // eslint-disable-next-line no-global-assign

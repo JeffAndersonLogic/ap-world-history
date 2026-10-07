@@ -5,8 +5,8 @@ persistence. In Firestore the rules are the entire protection: no application
 server sits in front of this and nothing sits behind it, so a wrong line here is
 every student's writing readable by anyone who can sign in.
 
-**The backup code exists and is switched off, so no student's page reads or writes
-Firestore yet** (see "Student response backup" in the repository's CLAUDE.md). This
+**The backup is on for every student as of 2026-10-07** (see "Student response
+backup" in the repository's CLAUDE.md). This
 is Phase 2 of the persistence plan in AndersonLogic-OS at
 `04_PRODUCTS/BeHistorical/Student-Response-Persistence-Architecture-2026-09-08.md`.
 ZCS approved the free Spark plan and confirmed FERPA on 2026-09-29. Under-18 app

@@ -93,6 +93,7 @@ function makeServer() {
     docs,
     rev: 0,
     online: true,
+    hold: null,           // a promise a fetch waits on, to put a request in flight
     failWith: null,       // 'quota' | 'denied' | 'auth'
     attempts: 0,          // every call that reached the server, accepted or not
     log: [],
@@ -116,8 +117,11 @@ function makeServer() {
       user: () => user,
       onAuthChange: cb => { listener = cb; },
       signIn: () => { user = { uid: 'u1' }; if (listener) listener(user); return Promise.resolve(); },
+      // A different account becoming the signed-in one, the way the SDK reports it.
+      as: uid => { user = uid ? { uid } : null; if (listener) listener(user); },
       async fetch() {
         gate('fetch');
+        if (server.hold) await server.hold;
         server.log.push({ op: 'fetch' });
         const out = {};
         docs.forEach((v, k) => { out[k] = { text: v.text, confidence: v.confidence, rev: v.rev }; });
@@ -165,19 +169,20 @@ function rig(Sync, config) {
   const storage = (config && config.storage) || makeStorage();
   const page = (config && config.page) || makePage();
   const states = [];
+  const transport = server.transport(config && config.user);
   const engine = Sync.create(Object.assign({
     topicKey: '1.4',
     slots: page.slots,
     apply: page.apply,
     storage,
-    transport: server.transport(config && config.user),
+    transport,
     now: clock.now,
     setTimeout: clock.setTimeout,
     clearTimeout: clock.clearTimeout,
     isOnline: () => server.online,
     onState: s => states.push(s)
   }, (config && config.engine) || {}));
-  return { engine, clock, server, storage, page, states };
+  return { engine, clock, server, storage, page, states, transport };
 }
 
 // ── Checks ───────────────────────────────────────────────────────────────────
@@ -228,6 +233,88 @@ async function suite(Sync) {
     check('the state is saved', r.engine.state().code === 'saved', r.engine.state().message);
     await r.clock.advance(120000);
     check('a restore does not echo into a write later', server.writes().length === 0);
+  }
+
+  // ── One account per device ─────────────────────────────────────────────────
+  //
+  // Students keep one Chromebook for years, so the case is a swapped or
+  // inherited device, not a shared one. Without this the engine treated whatever
+  // was saved in the browser as belonging to whoever signed in, and would have
+  // uploaded the first student's answers into the second student's record.
+  section('A second account on the same device is refused');
+  {
+    const storage = makeStorage();
+    const first = rig(Sync, { storage, user: { uid: 'alice' } });
+    await first.engine.start();
+    await first.clock.advance(100);
+    first.page.type('checkpoint-one-response', 'Alice wrote this.', '3');
+    await first.clock.advance(5000);
+    check('the first account backs up as normal', first.server.writes().length === 1);
+    check('the device remembers whose it is', storage.getItem('behistorical-sync-owner') === 'alice');
+    check('the owner record holds an id and none of the writing', storage.dump().filter(e => e[0] === 'behistorical-sync-owner').every(e => e[1] === 'alice'));
+
+    const secondServer = makeServer();
+    secondServer.put('checkpoint-one-response', 'Bob wrote this elsewhere.', '2');
+    const second = rig(Sync, { storage, user: { uid: 'bob' }, server: secondServer, page: makePage({ 'checkpoint-one-response': { text: 'Alice wrote this.', confidence: '3' } }) });
+    await second.engine.start();
+    await second.clock.advance(100);
+    check('a different account on this device is refused', second.engine.state().code === 'problem' && /different account/.test(second.engine.state().message), second.engine.state().message);
+    check('the refused account reads nothing from the cloud', secondServer.log.length === 0 && secondServer.attempts === 0, `${secondServer.attempts} calls`);
+    check('the refused account is not handed its own saved answers over the first one', second.page.applied.length === 0);
+    second.page.type('first10-q1', 'typed after the refusal');
+    await second.clock.advance(120000);
+    check('and nothing is ever written under the refused account', secondServer.writes().length === 0 && secondServer.attempts === 0, `${secondServer.attempts} calls`);
+    check('the device still belongs to the first account', storage.getItem('behistorical-sync-owner') === 'alice');
+
+    const back = rig(Sync, { storage, user: { uid: 'alice' }, server: first.server, page: first.page });
+    await back.engine.start();
+    await back.clock.advance(100);
+    check('the first account is welcomed back', back.engine.state().code === 'saved', back.engine.state().message);
+  }
+  {
+    // A device with a baseline from before this rule existed has no owner yet:
+    // the first account to sign in on it claims it, and nobody is locked out.
+    const storage = makeStorage();
+    storage.setItem('behistorical-sync-meta-1-4', JSON.stringify({ v: 1, base: {} }));
+    const r = rig(Sync, { storage, user: { uid: 'carol' } });
+    await r.engine.start();
+    await r.clock.advance(100);
+    check('a device that predates the rule is claimed by the first account', storage.getItem('behistorical-sync-owner') === 'carol' && r.engine.state().code === 'saved');
+  }
+  {
+    // The account changes inside one page, with nothing reloaded.
+    const r = rig(Sync, { user: { uid: 'alice' } });
+    await r.engine.start();
+    await r.clock.advance(100);
+    r.page.type('checkpoint-one-response', 'Alice again.');
+    await r.clock.advance(5000);
+    const before = r.server.writes().length;
+    r.transport.as('bob');
+    await r.clock.advance(100);
+    check('switching accounts in one page is refused', r.engine.state().code === 'problem' && /different account/.test(r.engine.state().message), r.engine.state().message);
+    r.page.type('checkpoint-one-response', 'Typed while Bob is signed in.');
+    await r.clock.advance(120000);
+    check('switching accounts in one page writes nothing under the new one', r.server.writes().length === before, `${r.server.writes().length - before} extra writes`);
+    r.transport.as('alice');
+    await r.clock.advance(60000);
+    check('the owner signing back in resumes the backup', r.engine.state().code === 'saved' && r.server.writes().length > before, r.engine.state().message);
+  }
+  {
+    // The second account signs in while the first account's request is still
+    // out. What comes back belongs to the first and must not land on the second.
+    const server = makeServer();
+    server.put('checkpoint-one-response', 'Alice saved this.', '4');
+    let release;
+    server.hold = new Promise(res => { release = res; });
+    const r = rig(Sync, { server, user: { uid: 'alice' } });
+    r.engine.start();
+    await r.clock.advance(50);
+    r.transport.as('bob');
+    await r.clock.advance(50);
+    release();
+    await r.clock.advance(200);
+    check('an answer in flight for one account is not given to the next', r.page.applied.length === 0, JSON.stringify(r.page.applied));
+    check('and the second account stays refused', r.engine.state().code === 'problem');
   }
 
   // ── Throttle and the runaway loop ──────────────────────────────────────────
@@ -597,6 +684,21 @@ async function signInSuite(Transport) {
       name: 'a failure retries immediately instead of backing off',
       patch: s => s.replace("      return Math.min(cfg.backoffMaxMs, cfg.backoffBaseMs * Math.pow(2, Math.max(0, failures - 1)));", "      return 0;"),
       expect: /does not hammer|retries back off/
+    },
+    {
+      name: 'any account may use any device',
+      patch: s => s.replace("      if (owner && owner !== uid) return false;\n", ""),
+      expect: /different account on this device is refused|second account|nothing is ever written under the refused/
+    },
+    {
+      name: 'a switch of account inside one page keeps the old account\'s state',
+      patch: s => s.replace("      if (prev && prev.uid !== user.uid) {", "      if (false) {"),
+      expect: /switching accounts in one page/
+    },
+    {
+      name: 'a request still out for the last account is trusted for the next',
+      patch: s => s.replace("          if (!user || user.uid !== forUid) { again = !!user; return; }\n", ""),
+      expect: /in flight for one account/
     },
     {
       name: 'the baseline stores the writing itself',

@@ -8,7 +8,9 @@
  * assets/js/behistorical-sync.js, into both lesson renderers between sentinels.
  * Nothing else reads it. Change it here and rebuild.
  *
- * THE BACKUP IS OFF, and these are the three things that turn it on:
+ * THE BACKUP IS ON FOR EVERY STUDENT as of 2026-10-07, after a student's answers
+ * were backed up from her own Chromebook and restored in a clean browser on a
+ * second computer. These are the three switches, and what each one does:
  *
  *   firebase   the web app's public settings from the Firebase console, Project
  *              settings, Your apps. Filled in on 2026-10-05. They identify the
@@ -17,17 +19,17 @@
  *              of the three is ever null the engine cannot connect whatever else
  *              is set, which is deliberate.
  *   pilot      with `enabled` false, true lets ONE browser opt in by opening any
- *              lesson with ?sync=on (and out again with ?sync=off). That is how
- *              a pretend student tests this against the real project before a
- *              real class has it, without publishing anything that reaches
- *              anyone else. It is also a hidden switch a curious student could
- *              find, which is acceptable only while sign-in is not yet approved
- *              for under-18 accounts, since it would simply be refused. Set it
- *              false before `enabled` goes true.
- *   enabled    true turns it on for every student. Do not set it until ZCS has
- *              answered which Unconfigured third-party apps setting applies to
- *              under-18 accounts, a pretend student has been through a full
- *              lesson, and the rules have been deployed after ZCS review.
+ *              lesson with ?sync=on (and out again with ?sync=off). It was how a
+ *              pretend student tested this against the real project before a
+ *              class had it. It is false now, and it should stay false while
+ *              `enabled` is true: it has nothing left to do, and a hidden switch
+ *              is only worth keeping if the code might need to be turned back
+ *              off for one browser. To turn the backup off again for everyone,
+ *              set `enabled` false, rebuild, and ship.
+ *   enabled    true turns it on for every student. It went true on 2026-10-07.
+ *              What is still open is ZCS's formal review of firestore.rules,
+ *              which Jeff published himself for testing, and the iPhone sign-in,
+ *              which fails on iOS Safari and does not affect a Chromebook.
  *
  * THE TWO NUMBERS THAT ARE THE ANSWER TO THE DISTRICT'S QUESTION
  *
@@ -43,8 +45,8 @@
  */
 
 module.exports = {
-  enabled: false,
-  pilot: true,
+  enabled: true,
+  pilot: false,
 
   tenantId: 'zcs',
   courseId: 'apwh',
