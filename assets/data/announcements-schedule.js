@@ -722,6 +722,45 @@ window.BEHISTORICAL_SCHEDULE = {
       ]
     },
 
+    /* ---- Eras 2 Exam ---------------------------------------- */
+    // The exam is its own class-day entry so the TODAY board shows the
+    // assessment, exam-aligned learning targets and success criteria, and
+    // the simple 3.1 eBook reading that follows it.
+    {
+      date: '2026-10-07',
+      cohort: 'green',
+      topicTitle: 'Eras 2 Exam, c. 1200 to c. 1450',
+      unit: 'Units 1 and 2',
+      learningTargets: [
+        'I can explain and compare how states developed, maintained power, and organized societies across different regions from c. 1200 to c. 1450.',
+        'I can explain the causes and effects of the growth of the Silk Roads, Indian Ocean, and Trans-Saharan trade networks.',
+        'I can analyze how increased connectivity led to cultural, technological, economic, and environmental change across Afro-Eurasia.'
+      ],
+      successCriteria: [
+        'I can use specific historical evidence from multiple regions to explain similarities and differences in state building and governance.',
+        'I can connect transportation technology, commercial practices, empire building, and environmental knowledge to the growth of long-distance trade.',
+        'I can use historical reasoning, especially causation and comparison, to explain how exchange networks changed societies.'
+      ],
+      homework: 'Read the 3.1 eBook — Empires Expand.'
+    },
+    {
+      date: '2026-10-08',
+      cohort: 'silver',
+      topicTitle: 'Eras 2 Exam, c. 1200 to c. 1450',
+      unit: 'Units 1 and 2',
+      learningTargets: [
+        'I can explain and compare how states developed, maintained power, and organized societies across different regions from c. 1200 to c. 1450.',
+        'I can explain the causes and effects of the growth of the Silk Roads, Indian Ocean, and Trans-Saharan trade networks.',
+        'I can analyze how increased connectivity led to cultural, technological, economic, and environmental change across Afro-Eurasia.'
+      ],
+      successCriteria: [
+        'I can use specific historical evidence from multiple regions to explain similarities and differences in state building and governance.',
+        'I can connect transportation technology, commercial practices, empire building, and environmental knowledge to the growth of long-distance trade.',
+        'I can use historical reasoning, especially causation and comparison, to explain how exchange networks changed societies.'
+      ],
+      homework: 'Read the 3.1 eBook — Empires Expand.'
+    },
+
     /* ---- Topic 3.1, Empires Expand ------------------------- */
     // Green Friday 2026-10-09, the first class after the Eras 2 exam. Silver
     // Monday 2026-10-19, the first Monday back after fall break (dates from

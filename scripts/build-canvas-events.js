@@ -176,6 +176,8 @@ const OVERVIEWS = {
 
   '2.7': "Comparison asks you to explain the networks together rather than retell them one at a time. Today you compare the Silk Roads, Indian Ocean, and trans-Saharan systems through the same categories: environment and transportation, commercial practices and finance, demand and productive capacity, the role of states and cities, and the cultural or environmental effects of exchange. The goal is an AP-style argument built from both meaningful similarities and meaningful differences.",
 
+  'Eras 2 Exam, c. 1200 to c. 1450': 'Covers Units 1 and 2 in full: state building across six Unit 1 regions, plus the three Afro-Eurasian trade networks of Unit 2 and their cultural, environmental, and comparative consequences.',
+
   '3.1': "A few empires got huge after 1450, and guns are a big part of why. Today you follow the story: cannons broke the walls that had protected castles and cities, only big states with big treasuries could afford them, and the Ottoman, Safavid, Mughal, and Qing empires grew. Then you see what happened when growing empires ran into each other, through the Safavid and Mughal rivalry and Morocco's war with Songhai.",
   '3.2': "Gunpowder won these empires their land, but holding it was the hard part. Today you follow the three jobs every ruler had to do: find people who would serve him, convince everyone he deserved to rule, and collect the money to pay for it all. You compare how different rulers did the same job, from the Ottoman devshirme and Japan's salaried samurai to Versailles and Mughal tombs, and explain why they did it differently.",
   '3.3': "Religions changed as much as empires did. Today you track three different kinds of religious change: Christianity split and reformed, Ottoman-Safavid political rivalry intensified an older Sunni-Shia divide, and Sikhism developed as a distinct tradition in a context of Hindu-Muslim interaction. For every case, ask what changed, what continued, and what shaped the change.",
@@ -1105,8 +1107,9 @@ function build() {
     }
   }
 
+  const scheduledCodes = new Set(topics.map((t) => t.code));
   const assessmentEvents = (schedule.assessments || [])
-    .filter((a) => a && a.greenDate && a.silverDate)
+    .filter((a) => a && a.greenDate && a.silverDate && !scheduledCodes.has(a.title))
     .map((a) => assessmentEventTopic(a, courseName));
 
   /* ---- the document ---- */
@@ -1220,8 +1223,12 @@ function build() {
   out.push('');
 
   /* ---- the assignment document ---- */
-  const built = topics.filter((t) => t.hasRequired && t.required.length);
-  const pending = topics.filter((t) => !(t.hasRequired && t.required.length));
+  const splitAssessmentTitles = new Set((schedule.assessments || [])
+    .filter((a) => a && a.greenDate && a.silverDate)
+    .map((a) => a.title));
+  const assignmentTopics = topics.filter((t) => !splitAssessmentTitles.has(t.code));
+  const built = assignmentTopics.filter((t) => t.hasRequired && t.required.length);
+  const pending = assignmentTopics.filter((t) => !(t.hasRequired && t.required.length));
 
   const asg = [];
   asg.push('# Canvas Assignment Bodies, Paste-Ready');
@@ -1334,7 +1341,7 @@ function build() {
   asg.push('---');
   asg.push('');
   asg.push(`${built.length} assignments built, ${pending.length} pending, ` +
-    `out of ${topics.length} topics in the schedule.`);
+    `out of ${assignmentTopics.length} topics in the schedule.`);
   asg.push('');
 
   return { events: out.join('\n'), assignments: asg.join('\n') };
