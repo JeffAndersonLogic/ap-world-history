@@ -1492,7 +1492,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homeworkDue: 'Thursday, October 8',
       dueDate: '2026-10-19'
     },
-    /* 2026-10-07  <-  custom schedule entry */
+    /* 2026-10-07  <-  written by hand in the schedule */
     {
       date: '2026-10-07',
       cohort: 'green',
@@ -1514,7 +1514,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homeworkDue: 'Friday, October 9',
       dueDate: '2026-10-09'
     },
-    /* 2026-10-08  <-  custom schedule entry */
+    /* 2026-10-08  <-  written by hand in the schedule */
     {
       date: '2026-10-08',
       cohort: 'silver',
