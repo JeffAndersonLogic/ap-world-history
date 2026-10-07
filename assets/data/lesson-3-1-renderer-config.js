@@ -164,6 +164,17 @@
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Map_of_the_Safavid_Empire,_circa_1630.png',
       caption: 'Secondary geographic evidence. A reference map locates the Safavid Empire between major Ottoman, Mughal, and Central Asian powers.',
       prompt: 'NOTICE the Safavid state\'s position between rival empires. What can you INFER about why military technology and frontier defense mattered? What evidence would be needed to prove how religion affected those rivalries?'
+    },
+    {
+      title: 'Al-Sa\'di on the Aftermath of the Moroccan Invasion',
+      label: 'Chronicle excerpt · Songhai–Morocco conflict · after 1591',
+      sourceText: [
+        'Everywhere people turned on one another; in every place and in every direction there was robbery,',
+        'and war spared neither the lives, nor the property, nor the standing of the inhabitants.'
+      ],
+      sourceUrl: 'https://ganzaa.org/learn/units/1032-senior-1-history-and-citizenship-trans-saharan-trade/decline-of-the-trade',
+      caption: 'Abd al-Rahman al-Sa\'di, writing in Timbuktu in the mid-17th century, described the disorder that followed the Moroccan conquest of Songhai. The English wording shown here is the Ganzaa translation from O. Houdas\'s 1900 public-domain French edition. This is a later chronicle account, not an eyewitness report of the Battle of Tondibi itself.',
+      prompt: 'NOTICE what the chronicler says happened to political and social order after the invasion. What can you INFER about how interstate rivalry could weaken an empire? What can this later account not prove about why Morocco defeated Songhai at Tondibi in 1591?'
     }
   ];
 })();
