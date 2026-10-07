@@ -2011,6 +2011,96 @@ deleted row in the schedule and every affected date moves with it.
 </table>
 ```
 
+## Eras 2 Exam, c. 1200 to c. 1450
+
+**Event title:** `APW - Eras 2 Exam, c. 1200 to c. 1450 - Eras 2 Exam, c. 1200 to c. 1450`
+
+**Assign to, one row per section:**
+
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Wednesday, October 7 | Friday, October 9 |
+| Silver Day | Thursday, October 8 | Monday, October 19 |
+
+```html
+<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
+    <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
+    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Units 1 and 2</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Eras 2 Exam, c. 1200 to c. 1450</div>
+    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Wednesday, October 7</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Thursday, October 8</span></span>
+    </div>
+</div>
+<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
+    <tbody>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Covers Units 1 and 2 in full: state building across six Unit 1 regions, plus the three Afro-Eurasian trade networks of Unit 2 and their cultural, environmental, and comparative consequences.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can explain and compare how states developed, maintained power, and organized societies across different regions from c. 1200 to c. 1450.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain the causes and effects of the growth of the Silk Roads, Indian Ocean, and Trans-Saharan trade networks.</li>
+                    <li style="margin: 0 0 6px 0;">I can analyze how increased connectivity led to cultural, technological, economic, and environmental change across Afro-Eurasia.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can use specific historical evidence from multiple regions to explain similarities and differences in state building and governance.</li>
+                    <li style="margin: 0 0 6px 0;">I can connect transportation technology, commercial practices, empire building, and environmental knowledge to the growth of long-distance trade.</li>
+                    <li style="margin: 0 0 6px 0;">I can use historical reasoning, especially causation and comparison, to explain how exchange networks changed societies.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 8px 0;">Read the 3.1 eBook — Empires Expand.
+                    </li>
+                </ul>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Friday, October 9</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Monday, October 19</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">BeHistorical</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
 ## Topic 3.1: Empires Expand
 
 **Event title:** `APW - 3.1 - Empires Expand`
@@ -2414,41 +2504,6 @@ Quizzes & Exams slide.
 </table>
 ```
 
-## Eras 2 Exam, c. 1200 to c. 1450
-
-**Event title:** `APW - Eras 2 Exam, c. 1200 to c. 1450`
-
-**Assign to, one row per section:**
-
-| Section | Date |
-| --- | --- |
-| Green Day | Wednesday, October 7 |
-| Silver Day | Thursday, October 8 |
-
-```html
-<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
-    <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
-    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Exam</div>
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Eras 2 Exam, c. 1200 to c. 1450</div>
-    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
-        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Wednesday, October 7</span></span>
-        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Thursday, October 8</span></span>
-    </div>
-</div>
-<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
-    <tbody>
-        <tr>
-            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
-                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
-            </td>
-            <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Covers Units 1 and 2 in full: state building across six Unit 1 regions, plus the three Afro-Eurasian trade networks of Unit 2 and their cultural, environmental, and comparative consequences. PSAT scheduling shift: Tuesday, October 6 is not a Green or Silver day; Green takes the exam Wednesday, October 7, and Silver takes it Thursday, October 8.</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-```
-
 ## Unit 3 Quiz
 
 **Event title:** `APW - Unit 3 Quiz`
@@ -2486,4 +2541,4 @@ Quizzes & Exams slide.
 
 ---
 
-25 events, built from 50 class days (25 green, 25 silver), plus 3 quiz/exam event(s).
+26 events, built from 52 class days (26 green, 26 silver), plus 2 quiz/exam event(s).
