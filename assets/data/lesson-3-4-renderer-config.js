@@ -176,7 +176,7 @@
       sourceText: [
         'His Majesty takes from each bigha of tilled land ten sers of grain as a royalty.',
         'Store-houses have been constructed in every district.',
-        'He appoints experienced people to look after the store-houses and writers who watch the receipts and charges.'
+        'He also appoints everywhere experienced people to look after these store-houses, and selects for this purpose active Dárogahs and clever writers, who watch the receipts and charges.'
       ],
       sourceUrl: 'https://persian.packhum.org/text/000702051/6',
       caption: 'Mughal / revenue administration. Abu\'l-Fazl\'s Ain-i-Akbari, an official account of Akbar\'s government, describes assessment, storage, and record keeping in the imperial revenue system.',
