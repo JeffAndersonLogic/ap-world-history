@@ -190,14 +190,19 @@ window.BEHISTORICAL_LESSON = {
 
   primarySource: {
     title: "Primary Source: Martin Luther, Ninety-Five Theses (1517)",
-    intro: "Luther wrote the Ninety-Five Theses as a challenge to the sale of indulgences and to claims about how forgiveness worked. Read the short excerpt as evidence from the opening stage of the Protestant Reformation, then source it: what was Luther trying to change, and what can this text not tell you about how ordinary Europeans responded?",
-    text: "When our Lord and Master Jesus Christ said, ‘Repent,’ he willed the entire life of believers to be one of repentance.",
+    intro: "Luther's Ninety-Five Theses challenged claims being made about indulgences and forgiveness. Read the four complete theses below as a short source packet. Use Luther's own claims to identify what he wanted to change while also noticing what remained Christian in his argument.",
+    attribution: "Martin Luther, Disputation on the Power and Efficacy of Indulgences (Ninety-Five Theses), 1517, English translation in Works of Martin Luther, translated by Adolph Spaeth, L. D. Reed, Henry Eyster Jacobs, et al. (Philadelphia: A. J. Holman, 1915), vol. 1, pp. 29–38.",
+    text: "<strong>Thesis 21:</strong> Therefore those preachers of indulgences are in error, who say that by the pope's indulgences a man is freed from every penalty, and saved.<br><br><strong>Thesis 28:</strong> It is certain that when the penny jingles into the money-box, gain and avarice can be increased, but the result of the intercession of the Church is in the power of God alone.<br><br><strong>Thesis 36:</strong> Every truly repentant Christian has a right to full remission of penalty and guilt, even without letters of pardon.<br><br><strong>Thesis 43:</strong> Christians are to be taught that he who gives to the poor or lends to the needy does a better work than buying pardons.",
+    sourceNote: "These are four complete numbered theses, 21, 28, 36, and 43, from the public-domain 1915 English translation. They are presented together as a short source packet rather than as one continuous prose passage. Luther was a reformer arguing against claims made by indulgence preachers; the theses show his argument, but they do not by themselves show how all Europeans understood the controversy or why particular people later became Protestant.",
+    sourceLinks: [
+      { label: "Project Gutenberg: Works of Martin Luther, Volume I", url: "https://www.gutenberg.org/ebooks/274" }
+    ],
     questions: [
-      "What practice or religious problem is Luther trying to redirect attention toward in this opening thesis?",
-      "How does this source provide evidence of change within western Christianity rather than the disappearance of Christianity?",
-      "The source was written by a reformer trying to persuade an audience. How does that purpose affect what it can and cannot prove about the wider Reformation?"
+      "What specific claim about indulgences is Luther rejecting? Use one phrase from the theses as evidence.",
+      "How do these theses show both change and continuity within western Christianity? Identify what Luther challenges and one Christian belief or practice he keeps.",
+      "Luther wrote these propositions to challenge church practices and persuade an audience. How does that purpose affect what the source can and cannot prove about the wider Reformation?"
     ]
-  },
+  }
 
   beSurreal: {
     title: "You Run a Print Shop in Wittenberg, c. 1520",
