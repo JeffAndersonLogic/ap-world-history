@@ -136,46 +136,50 @@
 
   lesson.images = [
     {
-      title: 'Suleiman the Magnificent — Ruler Representation',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Suleiman_the_Magnificent_of_the_Ottoman_Empire.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Suleiman_the_Magnificent_of_the_Ottoman_Empire.jpg',
-      caption: 'Ottoman / ruler representation. A portrait of Suleiman presents dynastic authority over a multiethnic, multireligious empire.',
-      prompt: 'NOTICE the symbols of rank and the dress. INFER what claim to authority the image is making. Set it beside the Qianlong and Peter the Great cards: what do three very different empires share in how their rulers chose to be seen?'
+      title: 'Battle of Chaldiran, Selim-nama, 1524 — Expand',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Chaldiran_miniature._Sel%C4%ABm-n%C4%81ma%2C_by_%C5%9E%C5%ABkr%C4%AB-i_Bitlis%C4%AB%2C_1524_%28National_Library_of_Israel%2C_Ms._Yah._Ar._1116%29.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Battle_of_Chaldiran_miniature._Sel%C4%ABm-n%C4%81ma,_by_%C5%9E%C5%ABkr%C4%AB-i_Bitlis%C4%AB,_1524_(National_Library_of_Israel,_Ms._Yah._Ar._1116).jpg',
+      caption: 'Ottoman-Safavid / military expansion. An Ottoman manuscript miniature made about a decade after the 1514 battle depicts the conflict in which Ottoman gunpowder weapons helped defeat Safavid forces.',
+      prompt: 'NOTICE how weapons and formations are represented. What can you INFER about military technology as a method of increasing influence? Compare this only with another expansion card, and remember that an Ottoman victory narrative is not neutral evidence about the Safavids.'
     },
     {
-      title: 'Safavid Empire, c. 1630 — Geographic Scale',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Safavid_Empire%2C_circa_1630.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Map_of_the_Safavid_Empire,_circa_1630.png',
-      caption: 'Safavid / geographic scale. A secondary map locates a Persian-centered empire between Ottoman, Mughal, and Central Asian rivals.',
-      prompt: 'NOTICE the Safavid frontier position. What can you INFER about external rivalry and the political value of a distinct Shia identity? What does a map alone not prove about internal religious policy?'
+      title: 'First Battle of Panipat, 1526 — Expand',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/1526-First_Battle_of_Panipat-Ibrahim_Lodhi_and_Babur.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:1526-First_Battle_of_Panipat-Ibrahim_Lodhi_and_Babur.jpg',
+      caption: 'Mughal / military expansion. A late-16th-century Baburnama illustration commemorates Babur\'s victory at Panipat, where field artillery and firearms helped establish Mughal rule in northern India.',
+      prompt: 'NOTICE how troops, commanders, and weapons are represented. What can you INFER about military conquest as a method of increasing Mughal influence? Compare this with Chaldiran and explain what a later court painting cannot prove about the battle by itself.'
     },
     {
-      title: 'Court of Akbar — Elite Organization',
+      title: 'Court of Akbar — Hold / Justify',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Court_of_Akbar_from_Akbarnama.jpg',
-      caption: 'Mughal / court and elite organization. A Mughal court painting depicts Akbar at the center of an imperial elite drawn from varied backgrounds.',
-      prompt: 'NOTICE the visual hierarchy and composition of the court. What can you INFER about incorporating elites around the emperor? Compare with a ruler-representation or court card only if your category is legitimacy or elite organization.'
+      caption: 'Mughal / elite organization. A court painting from Akbar\'s official history places the emperor at the center of an imperial elite drawn from varied backgrounds.',
+      prompt: 'NOTICE the visual hierarchy and the people gathered around Akbar. What can you INFER about incorporating elites as a way to hold a diverse empire or justify the emperor\'s authority? What might an official court history show in its best light?'
     },
     {
-      title: 'Qianlong Emperor — Ruler Representation',
+      title: 'Qianlong Emperor — Hold / Justify',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Qianlong_Emperor.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Qianlong_Emperor.jpg',
-      caption: 'Qing / ruler representation. An imperial portrait presents a Manchu emperor ruling a vast multiethnic state while drawing on Chinese traditions of emperorship.',
-      prompt: 'NOTICE clothing, pose, and visual conventions. What can you INFER about Qing legitimacy and adaptation? Compare with another ruler-representation card and explain how political context shaped the image.'
+      caption: 'Qing / ruler representation. A court portrait presents a Manchu emperor ruling a vast multiethnic state while drawing on Chinese traditions of emperorship.',
+      prompt: 'NOTICE clothing, pose, and visual conventions. What can you INFER about how representation could help a minority dynasty hold power or justify its rule? Compare with the Akbar card and explain what a portrait cannot prove about everyday administration.'
     },
     {
-      title: 'Peter the Great — Ruler Representation',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Peter_the_Great%2C_Tsar_of_Russia.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Peter_the_Great,_Tsar_of_Russia.jpg',
-      caption: 'Russia / ruler representation. An early-18th-century portrait by Gustav von Mardefeld presents Peter I in the visual language of European monarchy.',
-      prompt: 'NOTICE clothing, posture, and symbols of rank. What can you INFER about Peter\'s presentation of Russian imperial authority? Compare with the Qianlong card on how rulers used visual culture to legitimize very different empires.'
+      title: 'Ottoman Defter — Bayt Nabala Tax Record, 1526 — Pay',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ottoman_Defter_of_Liwa_of_al-Quds_-_Bayt_Nabala_Tax_Record.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Ottoman_Defter_of_Liwa_of_al-Quds_-_Bayt_Nabala_Tax_Record.jpg',
+      caption: 'Ottoman / revenue administration. This 1526 tax-register entry from the district of Jerusalem records annual revenue associated with Bayt Nabala in akçe.',
+      prompt: 'NOTICE the kind of information a tax register records. What can you INFER about how written revenue administration helped an empire turn territory into usable state income? Compare this with the Mughal revenue card and identify one thing a single local entry cannot prove about the whole Ottoman system.'
     },
     {
-      title: 'Mughal Empire, c. 1700 — Geographic Scale',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mughal_Empire_(1700).png',
-      caption: 'Mughal / geographic scale. A secondary reconstruction shows the Mughal Empire near its territorial height across much of the Indian subcontinent.',
-      prompt: 'NOTICE the size and internal geographic diversity. What can you INFER about why rulers needed ranked officials, revenue systems, and accommodation of local elites? Compare with another geographic-scale card.'
+      title: 'Ain-i-Akbari — Akbar\'s Grain Revenue — Pay',
+      label: 'Administrative record · Mughal Empire · c. 1590s',
+      sourceText: [
+        'His Majesty takes from each bigha of tilled land ten sers of grain as a royalty.',
+        'Store-houses have been constructed in every district.',
+        'He appoints experienced people to look after the store-houses and writers who watch the receipts and charges.'
+      ],
+      caption: 'Mughal / revenue administration. Abu\'l-Fazl\'s Ain-i-Akbari, an official account of Akbar\'s government, describes assessment, storage, and record keeping in the imperial revenue system.',
+      prompt: 'NOTICE the rate, store-houses, and officials named in the record. What can you INFER about how regular assessment and record keeping supported Mughal power? Compare this with the Ottoman tax register and explain why an official manual may describe the intended system better than uneven local practice.'
     }
-  ];
+  ]
 })();
