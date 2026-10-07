@@ -202,7 +202,7 @@ window.BEHISTORICAL_LESSON = {
       "How do these theses show both change and continuity within western Christianity? Identify what Luther challenges and one Christian belief or practice he keeps.",
       "Luther wrote these propositions to challenge church practices and persuade an audience. How does that purpose affect what the source can and cannot prove about the wider Reformation?"
     ]
-  }
+  },
 
   beSurreal: {
     title: "You Run a Print Shop in Wittenberg, c. 1520",
