@@ -107,6 +107,12 @@ window.BEHISTORICAL_LESSON = {
         url: "https://youtu.be/kG_A3ET3foc",
         youtubeId: "kG_A3ET3foc",
         prompt: "Use this clip to review how gunpowder technology enabled imperial expansion and why the Ottoman Empire's growth matters for AP World History."
+      },
+      {
+        title: "The City of Walls: Constantinople - Lars Brownworth",
+        url: "https://youtu.be/MNMoi5Af1SY",
+        youtubeId: "MNMoi5Af1SY",
+        prompt: "Use this clip to review why Constantinople's defensive walls and strategic location mattered, then connect the city's fall in 1453 to Ottoman gunpowder expansion."
       }
     ],
     segments: [
