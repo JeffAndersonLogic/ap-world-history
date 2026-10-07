@@ -1237,10 +1237,10 @@ throttle over all three, never a hook on the existing ones.
 
 `firestore/firestore.rules` is the security model for student response
 persistence, and `firestore/README.md` is the standing explanation. **The backup
-code exists and is switched off**, see "Student response backup" below, so no
-student's page reads or writes Firestore. ZCS IT confirmed on 2026-10-05 that app
-access is configured as Limited for ZHS students and staff, which was the
-Admin-console gate; what is left before it can be on is in that section.
+is on for every student as of 2026-10-07**, see "Student response backup" below.
+ZCS IT confirmed on 2026-10-05 that app access is configured as Limited for ZHS
+students and staff, which was the Admin-console gate; what is still open is in
+that section.
 
 **The rules accept two email domains, both mapped to the one tenant:**
 `zcs.k12.in.us` for staff and `stumail.zcs.k12.in.us` for students. They accepted
@@ -1331,10 +1331,11 @@ reads documentation as code can be made to pass by writing a sentence.
 ## Student response backup
 
 `assets/js/behistorical-sync.js` backs a student's work up to Firestore and puts
-it back on a device that lost it. **It is built, tested and switched off.**
-`scripts/lib/sync-config.js` is the only switch: `enabled` is false, and
-`mount()` returns before it builds an element or makes a request, so a student's
-page today makes no call to Google and leaves nothing of its own in storage.
+it back on a device that lost it. **It is on for every student as of 2026-10-07.**
+`scripts/lib/sync-config.js` is the only switch: `enabled` is true and `pilot` is
+false. Setting `enabled` false and shipping turns it off again for everyone, and
+`mount()` then returns before it builds an element or makes a request, so a page
+makes no call to Google and leaves nothing of its own in storage.
 `scripts/build-sync.js` inlines the config and the engine into both renderers
 between sentinels, for the reason the save counter is inlined; `--check` is in the
 offline suite. Never hand-edit between the sentinels.
@@ -1423,9 +1424,35 @@ Auth SDK, imported from Google's host at a version pinned in the config.
 4. Run a pretend student through a full lesson with `pilot` and `?sync=on`, which
    switches the backup on for one browser only. Then set `pilot` false, because
    it is a hidden switch a curious student could find, and then `enabled` true.
-   `pilot` is true in the shipped config today, which only matters once step 3 has
-   put real rules in the project: before that, a student who found `?sync=on`
-   would sign in and be refused, which is noise and nothing worse.
+   **Done 2026-10-07.** A student's answers were backed up from her own
+   Chromebook and a second student's came back in a clean incognito window on a
+   different computer, through the real district sign-in and the real database.
+   Jeff published the rules himself for that test; ZCS's own review of
+   `firestore.rules` is still outstanding and is the first open item.
+
+**One account owns a device, and a second one is refused.** The first account to
+sign in on a browser is written to `behistorical-sync-owner` (a Firebase user id,
+never a name or an email, outside the draft prefix). A different account signing
+in there, or switching accounts inside one page, reads nothing, restores nothing
+and writes nothing, and the box says the backup is paused and to tell the
+teacher. Before this the engine treated whatever was saved in the browser as the
+signed-in student's, and would have uploaded the first student's answers under the
+second. A request still in flight for the last account is discarded rather than
+applied to the next. **What it cannot do** is know who typed what was already
+there before the first sign-in, so a loaner or inherited Chromebook whose site
+data has not been cleared belongs to whoever signs in first. Clearing the site
+data for the address is how a person hands a device on. Students keep one
+Chromebook for years, which is why this was judged enough. `sync-engine.test.js`
+carries three negative controls for it.
+
+**The iPhone sign-in fails and is a known gap.** The sign-in opens a pop-up on
+`behistoric.firebaseapp.com`, and iOS Safari (every browser on an iPhone) keeps the
+page and the pop-up from sharing storage, so the handler stops with "missing
+initial state". It worked once and failed once on the same phone. The fix is
+Google's own sign-in button with `signInWithCredential`, which also stops depending
+on `firebaseapp.com`, which the district filter blocked until JJ Nielsen allowed
+it. It needs the sites added as authorized JavaScript origins on the OAuth client
+(`jeffandersonlogic.github.io`, later `behistorical.com`). Not built.
 
 **Storage belongs to the address, and the site is moving to behistorical.com.**
 `localStorage` is per origin, so a student's saved work, the backup's own record,

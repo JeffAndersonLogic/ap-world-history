@@ -89,6 +89,13 @@
   var RECOVER_PREFIX = 'behistorical-sync-recover-';
   var CLIENT_KEY = 'behistorical-sync-client';
   var WRITES_KEY = 'behistorical-sync-writes';
+  // The one account this device backs up. Written at the first sign-in and
+  // never changed by the engine, so a second account on the same Chromebook is
+  // refused rather than handed the first student's answers. It holds a Firebase
+  // user id, never a name or an email, and sits outside the
+  // `behistorical-draft-<topic>-` prefix the Gather panel sweeps.
+  var OWNER_KEY = 'behistorical-sync-owner';
+  var FOREIGN_MESSAGE = 'This Chromebook already backs up a different account, so the backup is paused here to keep two students\' work apart. Your work is still saved on this device. Tell your teacher.';
   var PILOT_KEY = 'behistorical-sync-pilot';
 
   // The same shapes firestore/firestore.rules accepts. They are repeated here so
@@ -261,6 +268,7 @@
     var tripped = '';
     var invalid = {};           // slot -> message, for slots the rules would refuse
     var lastEmitted = '';
+    var foreign = '';           // set when another account owns this device
     var clientId = '';
     var flushing = false;
 
@@ -279,6 +287,34 @@
         try { storage.setItem(CLIENT_KEY, clientId); } catch (e) { /* a new id each load is harmless */ }
       }
       return clientId;
+    }
+
+    // The device belongs to the first account that signs in. Everything the
+    // student typed here before then is theirs by assumption, which is the one
+    // thing a page cannot check, and the reason a swapped or inherited device
+    // needs its site data cleared by a person.
+    function mayUseDevice() {
+      var uid = user && user.uid ? String(user.uid) : '';
+      if (!uid) return false;
+      var owner = '';
+      try { owner = storage.getItem(OWNER_KEY) || ''; } catch (e) { owner = ''; }
+      if (owner && owner !== uid) return false;
+      if (!owner) { try { storage.setItem(OWNER_KEY, uid); } catch (e) { /* no storage, no guard, and no baseline either */ } }
+      return true;
+    }
+
+    function setUser(next) {
+      var prev = user;
+      user = next || null;
+      foreign = '';
+      if (!user) { reconciled = false; return; }
+      if (prev && prev.uid !== user.uid) {
+        // A different account in the same page: nothing learned for the last
+        // one carries over.
+        reconciled = false;
+        remote = {};
+        conflicts = {};
+      }
     }
 
     function writesToday() {
@@ -343,6 +379,7 @@
       if (ids.length) problems.push('two versions of an answer disagree and you need to choose one');
       Object.keys(invalid).forEach(function (k) { problems.push(invalid[k]); });
       if (tripped) problems.push(tripped);
+      if (foreign) problems.push(foreign);
       if (fatal) problems.push(fatal.message);
       if (problems.length) {
         return {
@@ -418,11 +455,18 @@
 
     function reconcile() {
       if (reconciling || reconciled || stopped || !user) return Promise.resolve();
+      if (!mayUseDevice()) { foreign = FOREIGN_MESSAGE; emit(); return Promise.resolve(); }
+      foreign = '';
+      var forUid = user.uid;
+      var again = false;
       reconciling = true;
       emit();
       return Promise.resolve()
         .then(function () { return transport.fetch(topic); })
         .then(function (docs) {
+          // The account changed while the request was out: what came back
+          // belongs to the last one.
+          if (!user || user.uid !== forUid) { again = !!user; return; }
           reconcileSlots(snapshot(), docs || {});
           reconciled = true;
           offlineSince = 0;
@@ -432,6 +476,7 @@
           reconciling = false;
           emit();
           schedule();
+          if (again) reconcile();
         });
     }
 
@@ -603,8 +648,8 @@
 
     // ── Lifecycle ───────────────────────────────────────────────────────────
     function onAuth(next) {
-      user = next || null;
-      if (!user) { reconciled = false; emit(); return; }
+      setUser(next);
+      if (!user) { emit(); return; }
       reconcile();
     }
 
@@ -630,7 +675,7 @@
         .then(function () {
           booted = true;
           offlineSince = 0;
-          user = transport.user();
+          setUser(transport.user());
           if (transport.onAuthChange) transport.onAuthChange(onAuth);
           if (!tickTimer) tickTimer = setT(tick, cfg.tickMs);
           if (user) return reconcile();
@@ -662,7 +707,7 @@
       return Promise.resolve()
         .then(function () { return transport.signIn(); })
         .then(function () {
-          user = transport.user();
+          setUser(transport.user());
           if (user) return reconcile();
         })
         .catch(function (error) {
