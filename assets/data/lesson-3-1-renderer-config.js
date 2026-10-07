@@ -169,11 +169,11 @@
       title: 'Al-Sa\'di on the Aftermath of the Moroccan Invasion',
       label: 'Chronicle excerpt · Songhai–Morocco conflict · after 1591',
       sourceText: [
-        'Everywhere people turned on one another;',
-        'in every place and in every direction there was robbery,',
-        'and war spared neither lives, property, nor standing.'
+        'Everywhere people turned on one another; in every place and in every direction there was robbery,',
+        'and war spared neither the lives, nor the property, nor the standing of the inhabitants.'
       ],
-      caption: 'Abd al-Rahman al-Sa\'di, writing in Timbuktu in the mid-17th century, described the disorder that followed the Moroccan conquest of Songhai. This is a later chronicle account, not an eyewitness report of the Battle of Tondibi itself.',
+      sourceUrl: 'https://ganzaa.org/learn/units/1032-senior-1-history-and-citizenship-trans-saharan-trade/decline-of-the-trade',
+      caption: 'Abd al-Rahman al-Sa\'di, writing in Timbuktu in the mid-17th century, described the disorder that followed the Moroccan conquest of Songhai. The English wording shown here is the Ganzaa translation from O. Houdas\'s 1900 public-domain French edition. This is a later chronicle account, not an eyewitness report of the Battle of Tondibi itself.',
       prompt: 'NOTICE what the chronicler says happened to political and social order after the invasion. What can you INFER about how interstate rivalry could weaken an empire? What can this later account not prove about why Morocco defeated Songhai at Tondibi in 1591?'
     }
   ];
