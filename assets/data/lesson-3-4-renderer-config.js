@@ -182,5 +182,5 @@
       caption: 'Mughal / revenue administration. Abu\'l-Fazl\'s Ain-i-Akbari, an official account of Akbar\'s government, describes assessment, storage, and record keeping in the imperial revenue system.',
       prompt: 'NOTICE the rate, store-houses, and officials named in the record. What can you INFER about how regular assessment and record keeping supported Mughal power? Compare this with the Ottoman tax register and explain why an official manual may describe the intended system better than uneven local practice.'
     }
-  ]
+  ];
 })();
