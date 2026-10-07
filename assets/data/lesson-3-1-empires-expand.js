@@ -201,13 +201,19 @@ window.BEHISTORICAL_LESSON = {
   },
 
   primarySource: {
-    title: "Primary Source: An Ottoman Account of the Fall of Constantinople",
-    intro: "The following is an adapted passage from the account of the Ottoman historian Tursun Beg, who wrote about Mehmed II's conquest of Constantinople. This account, written shortly after the conquest, reflects both pride in Ottoman military achievement and the ideological significance the Ottomans attached to the victory.",
-    text: "When the Sultan Mehmed, son of Murad, had brought together from every corner of his lands the cannons and bombardiers, the soldiers and engineers, and the provisions and equipment needed for so great a siege, he moved his forces to the walls of Constantinople. The great bombard shook the walls day and night, and where the great towers had stood for a thousand years, there were now heaps of stone. On the twenty-ninth day of May, in the year 857 of the Hijra, the soldiers of Islam crossed through the breaches in the walls and took possession of the great city. The Sultan entered the Church of the Hagia Sofia and gave thanks to God for this victory over the infidels. He then proclaimed himself Caesar of Rome and Sovereign of the Two Seas and the Two Continents. All the world knew that a new age had begun.",
+    title: "Primary Source: Nicolò Barbaro Watches the Siege of Constantinople (1453)",
+    intro: "Nicolò Barbaro was a Venetian surgeon inside Constantinople during the Ottoman siege. He kept a day-by-day diary of the fighting. Read this classroom rendering for what an eyewitness defender noticed about artillery, repairs, and the final assault, then consider what his position inside the city allowed him to see and what it may have shaped.",
+    attribution: "Nicolò Barbaro, Diary of the Siege of Constantinople, 1453; classroom rendering based on the eyewitness diary and the English translation by John Melville-Jones (New York, 1969).",
+    text: "On the landward side, the Ottoman army brought its great guns close to the walls and fired against them day after day. Where the masonry was broken, the defenders worked to rebuild the gaps with earth, timber, barrels, and other materials. Ottoman forces also filled parts of the ditch and kept troops ready for assaults. During the final attack, soldiers came against the damaged defenses in repeated waves while the defenders fought from the walls and the improvised barriers behind them. The pressure continued until Ottoman troops entered the city and the defense collapsed.",
+    sourceNote: "This is a classroom rendering of a continuous portion of Barbaro's eyewitness diary, not a verbatim quotation from the 1969 English translation. The wording is paraphrased and modernized while preserving the reported sequence: repeated artillery fire, repair of breaches, preparation of the ditch, and the final infantry assault. Barbaro was a Venetian defender inside the city, so his account is especially useful for the defenders' experience but is not neutral about the Ottoman attackers or the other forces involved in the siege.",
+    sourceLinks: [
+      { label: "De Re Militari: Barbaro, Diary of the Siege of Constantinople", url: "https://www.deremilitari.org/RESOURCES/SOURCES/constantinople3.htm" },
+      { label: "Fordham Medieval Sourcebook: Fall of Constantinople source index", url: "https://sourcebooks.web.fordham.edu/sbook1c.asp" }
+    ],
     questions: [
-      "What specific military technologies does this account highlight, and how does it portray their role in the conquest?",
-      "How does Tursun Beg frame the conquest in religious and political terms? What claims does Mehmed II make through his titles after the victory?",
-      "What might this source leave out about the experience of the conquest, from the perspective of Constantinople's defenders, its civilian population, or the Byzantine emperor?"
+      "What details in Barbaro's account show how Ottoman artillery changed the problem faced by Constantinople's defenders?",
+      "What details show that cannon fire alone did not capture the city? Explain what else had to happen before Ottoman forces could enter.",
+      "How might Barbaro's position as a Venetian defender inside Constantinople shape what he noticed, emphasized, or blamed?"
     ]
   }
 
