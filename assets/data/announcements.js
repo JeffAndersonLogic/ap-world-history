@@ -1492,6 +1492,50 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homeworkDue: 'Thursday, October 8',
       dueDate: '2026-10-19'
     },
+    /* 2026-10-07  <-  custom schedule entry */
+    {
+      date: '2026-10-07',
+      cohort: 'green',
+      unit: 'Units 1 and 2',
+      topic: 'Eras 2 Exam, c. 1200 to c. 1450',
+      learningTargets: [
+        { text: 'I can explain and compare how states developed, maintained power, and organized societies across different regions from c. 1200 to c. 1450.' },
+        { text: 'I can explain the causes and effects of the growth of the Silk Roads, Indian Ocean, and Trans-Saharan trade networks.' },
+        { text: 'I can analyze how increased connectivity led to cultural, technological, economic, and environmental change across Afro-Eurasia.' }
+      ],
+      successCriteria: [
+        { text: 'I can use specific historical evidence from multiple regions to explain similarities and differences in state building and governance.' },
+        { text: 'I can connect transportation technology, commercial practices, empire building, and environmental knowledge to the growth of long-distance trade.' },
+        { text: 'I can use historical reasoning, especially causation and comparison, to explain how exchange networks changed societies.' }
+      ],
+      homework: [
+        { text: 'Read the 3.1 eBook — Empires Expand.', due: 'Friday, October 9' }
+      ],
+      homeworkDue: 'Friday, October 9',
+      dueDate: '2026-10-09'
+    },
+    /* 2026-10-08  <-  custom schedule entry */
+    {
+      date: '2026-10-08',
+      cohort: 'silver',
+      unit: 'Units 1 and 2',
+      topic: 'Eras 2 Exam, c. 1200 to c. 1450',
+      learningTargets: [
+        { text: 'I can explain and compare how states developed, maintained power, and organized societies across different regions from c. 1200 to c. 1450.' },
+        { text: 'I can explain the causes and effects of the growth of the Silk Roads, Indian Ocean, and Trans-Saharan trade networks.' },
+        { text: 'I can analyze how increased connectivity led to cultural, technological, economic, and environmental change across Afro-Eurasia.' }
+      ],
+      successCriteria: [
+        { text: 'I can use specific historical evidence from multiple regions to explain similarities and differences in state building and governance.' },
+        { text: 'I can connect transportation technology, commercial practices, empire building, and environmental knowledge to the growth of long-distance trade.' },
+        { text: 'I can use historical reasoning, especially causation and comparison, to explain how exchange networks changed societies.' }
+      ],
+      homework: [
+        { text: 'Read the 3.1 eBook — Empires Expand.', due: 'Monday, October 19' }
+      ],
+      homeworkDue: 'Monday, October 19',
+      dueDate: '2026-10-19'
+    },
     /* 2026-10-09  <-  lesson-3-1-empires-expand.js */
     {
       date: '2026-10-09',
