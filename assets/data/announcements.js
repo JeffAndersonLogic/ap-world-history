@@ -1461,7 +1461,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'Study with the Eras 2 Exam Study Guide, linked in Canvas and on the Unit 1 and Unit 2 pages.', due: 'Wednesday, October 7' }
       ],
       homeworkDue: 'Wednesday, October 7',
-      dueDate: '2026-10-09'
+      dueDate: '2026-10-07'
     },
     /* 2026-10-05  <-  lesson-2-7-comparison.js */
     {
@@ -1490,7 +1490,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'Study with the Eras 2 Exam Study Guide, linked in Canvas and on the Unit 1 and Unit 2 pages.', due: 'Thursday, October 8' }
       ],
       homeworkDue: 'Thursday, October 8',
-      dueDate: '2026-10-19'
+      dueDate: '2026-10-08'
     },
     /* 2026-10-07  <-  written by hand in the schedule */
     {
