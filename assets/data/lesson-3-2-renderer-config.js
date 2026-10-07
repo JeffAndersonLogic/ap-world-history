@@ -176,6 +176,13 @@
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mughal_Empire_(1700).png',
       caption: 'A modern map showing the Mughal Empire near its greatest size, around 1700.',
       prompt: 'NOTICE how large the empire is and how far its edges are from the capital. What can you INFER about why the emperor needed officials who depended on him? What does the map not show about whether those officials stayed loyal?'
+    },
+    {
+      title: 'Codex Mendoza Tribute List — Huaxtepec Province',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bodl_Arch.Selden.A.1_roll113D_frame27.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bodl_Arch.Selden.A.1_roll113D_frame27.jpg',
+      caption: 'Revenue evidence. This page from the Codex Mendoza, compiled in the early colonial period from Indigenous knowledge, records tribute goods and quantities associated with the Mexica province of Huaxtepec.',
+      prompt: 'NOTICE the repeated goods and quantities recorded on the page. What can you INFER about how tribute turned conquest into recurring state revenue? Because the manuscript was compiled after the Spanish conquest, what can it not prove by itself about how consistently tribute was collected before 1521?'
     }
   ];
 })();
