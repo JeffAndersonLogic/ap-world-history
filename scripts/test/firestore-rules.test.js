@@ -101,9 +101,10 @@ const UNVERIFIED = Object.assign({ email: 'new@zcs.k12.in.us', email_verified: f
 // is the one the provider pin exists for.
 const PASSWORD_USER = { email: 'alex@zcs.k12.in.us', email_verified: true, firebase: { sign_in_provider: 'password' } };
 
-// The named teacher reader. Exactly this address is on the list in
-// firestore.rules; Mike Kelly is added there and here when his address is known.
+// The named teacher readers, exactly as on the list in firestore.rules.
 const JEFF = Object.assign({ email: 'janderson@zcs.k12.in.us', email_verified: true }, GOOGLE);
+const KELLY = Object.assign({ email: 'Mkelly@zcs.k12.in.us', email_verified: true }, GOOGLE);
+const KELLY_NAMESAKE_STUDENT = Object.assign({ email: 'mkelly@stumail.zcs.k12.in.us', email_verified: true }, GOOGLE);
 const JEFF_UNVERIFIED = Object.assign({ email: 'janderson@zcs.k12.in.us', email_verified: false }, GOOGLE);
 const JEFF_PASSWORD = { email: 'janderson@zcs.k12.in.us', email_verified: true, firebase: { sign_in_provider: 'password' } };
 // Another teacher in the same district. Staff is not the reader list.
@@ -112,6 +113,7 @@ const OTHER_TEACHER = Object.assign({ email: 'other.teacher@zcs.k12.in.us', emai
 const NAMESAKE_STUDENT = Object.assign({ email: 'janderson@stumail.zcs.k12.in.us', email_verified: true }, GOOGLE);
 
 const UID_JEFF = 'uid-jeff';
+const UID_KELLY = 'uid-kelly';
 const UID_ALEX = 'uid-alex';
 const UID_BRIT = 'uid-brit';
 
@@ -307,6 +309,20 @@ async function assertContracts(env, report) {
   report('the reader\'s address on a different sign-in provider is refused',
     await cannot(getDoc(doc(jeffPasswordDb, BRIT_CP2))));
 
+  // Mike Kelly. Google may return the address with a capital letter, which the
+  // rule lowercases, so the test signs him in the way a real token can look.
+  const kellyDb = env.authenticatedContext(UID_KELLY, KELLY).firestore();
+  const kellyNamesakeDb = env.authenticatedContext('uid-kelly-namesake', KELLY_NAMESAKE_STUDENT).firestore();
+  report('the second named reader can read any student\'s record, whatever the capitalization of his address',
+    await can(getDoc(doc(kellyDb, BRIT_CP2))));
+  report('and list a topic across students',
+    await can(getDocs(query(collection(kellyDb, `tenants/${ZCS}/responses`), where('topicKey', '==', '1-4')))));
+  report('a student who shares his local part cannot read another student\'s record',
+    await cannot(getDoc(doc(kellyNamesakeDb, BRIT_CP2))));
+  report('he cannot edit or delete a student\'s record',
+    await cannot(updateDoc(doc(kellyDb, BRIT_CP2), { text: 'changed', updatedAt: serverTimestamp() })) &&
+    await cannot(deleteDoc(doc(kellyDb, BRIT_CP2))));
+
   report('a reader cannot edit a student\'s record',
     await cannot(updateDoc(doc(jeffDb, BRIT_CP2), { text: 'changed by a teacher', updatedAt: serverTimestamp() })));
   report('a reader cannot create a record in a student\'s name',
@@ -372,6 +388,8 @@ async function makeEnv(rules) {
     // that is not a gap. It stays in the rule as defense in depth and is covered
     // offline: scripts/check-firestore-rules.js asserts the check is present and
     // carries a mutation for its removal.
+    ['the second reader is dropped from the list',
+      s => s.replace(", 'mkelly@zcs.k12.in.us'", '')],
     ['the reader allow loses its tenant check',
       s => s.replace('allow get, list: if inTenant(tenantId) && isReader();', 'allow get, list: if isReader();')],
     ['a reader may edit any record',

@@ -128,12 +128,22 @@ other. A reader cannot create, update or delete. The emulator asserts each.
 domains are: a document is a read on every request and a second thing to secure.
 Changing who may read is a one-line edit, a ZCS review and a deploy.
 
-**Not deployed.** Production is deny-all and stays that way until ZCS has reviewed
-this access model. **Mike Kelly is not on the list yet** because his address has not
-been supplied: add him in `firestore.rules` and as a constant in
-`scripts/test/firestore-rules.test.js`.
+**Not deployed by this repo.** Nothing here deploys, and production is deny-all until
+Jeff publishes the rules to the `behistoric` project. The list holds the two teachers who
+team-teach the course, Jeff Anderson and Mike Kelly. **Entries are lowercase**, because
+the caller's address is lowercased before it is compared; Google can return
+`Mkelly@zcs.k12.in.us`, and the emulator test signs him in that way on purpose. An entry
+typed with a capital letter would look right and match nobody, so the offline checker
+fails on one.
 
-**What each check covers.** The emulator test has fourteen reader assertions and five
+**The reach is district-wide, not per section.** A response records no class section and
+no teacher, so a reader can read every response in the tenant. That is acceptable for two
+co-teachers and is a decision, not an accident. Limiting a reader to their own sections
+would need a roster of student accounts per section, and a rules lookup of it costs a read
+on the free plan each time. A section value written by the student's own device is a
+convenience for filtering and is not a security boundary.
+
+**What each check covers.** The emulator test has eighteen reader assertions and six
 negative controls. One thing it cannot see: `isReader()` repeats the
 `email_verified` check that `inTenant()` already makes, so removing it from
 `isReader()` changes no answer and no assertion can fail. It stays as defense in

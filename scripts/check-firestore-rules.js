@@ -147,6 +147,11 @@ function assertRules(rawSource, report) {
     readers.length > 0 && readers.every(a => /^[a-z0-9._-]+@[a-z0-9.-]+$/.test(a)), readers.join(', '));
   report('the reader list is short enough to read at a glance', readers.length > 0 && readers.length <= 5,
     `${readers.length} reader(s)`);
+  // The token's address is lowercased before it is compared, so an entry with a
+  // capital letter can never match. It would look right in the file and lock the
+  // named person out, silently.
+  report('every reader address is lowercase, because the comparison lowercases the caller',
+    readers.length > 0 && readers.every(a => a === a.toLowerCase()));
   report('every reader is a district STAFF address, never a student one',
     readers.length > 0 && readers.every(a => a.endsWith('@zcs.k12.in.us')));
   report('the reader check never uses a suffix, prefix, pattern or local-part test',
@@ -273,6 +278,8 @@ const MUTATIONS = [
     s => s.replace(/\.lower\(\) in \[[^\]]*\]/, ".lower().split('@')[0] == 'janderson'")],
   ['a student address is added to the readers',
     s => s.replace(/\.lower\(\) in \['janderson@zcs\.k12\.in\.us'/, ".lower() in ['janderson@zcs.k12.in.us', 'janderson@stumail.zcs.k12.in.us'")],
+  ['a reader address is typed with a capital letter, so it can never match',
+    s => s.replace("'mkelly@zcs.k12.in.us'", "'Mkelly@zcs.k12.in.us'")],
   ['the reader list swells past five',
     s => s.replace(/\.lower\(\) in \['janderson@zcs\.k12\.in\.us'/, ".lower() in ['janderson@zcs.k12.in.us', 'a@zcs.k12.in.us', 'b@zcs.k12.in.us', 'c@zcs.k12.in.us', 'd@zcs.k12.in.us', 'e@zcs.k12.in.us'")],
   ['a reader is allowed to delete',

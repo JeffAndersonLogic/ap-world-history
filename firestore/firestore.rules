@@ -98,10 +98,16 @@ service cloud.firestore {
     // to secure. Changing who may read is a one-line edit, a ZCS review and a
     // deploy, which is the right amount of friction for that decision.
     //
-    // Mike Kelly is NOT on the list yet because his address has not been
-    // supplied. Adding him is one more entry here and one more constant in
-    // scripts/test/firestore-rules.test.js. Do not deploy before ZCS has reviewed
-    // this access model.
+    // Jeff Anderson and Mike Kelly, who team-teach the course. Entries are
+    // LOWERCASE because the token's address is lowercased before it is compared:
+    // an entry with a capital letter in it can never match anyone. Adding a
+    // person is one more entry here and one more constant in
+    // scripts/test/firestore-rules.test.js.
+    //
+    // This list is district-wide in reach: a reader can read every response in
+    // the tenant, because a response records no class section. Limiting it to a
+    // teacher's own sections would need a roster, and each roster lookup costs a
+    // read on the free plan. See firestore/README.md.
     //
     // Read only. isReader() is used by exactly one allow statement and it grants
     // get and list. A reader cannot create, update or delete, and the emulator
@@ -110,7 +116,7 @@ service cloud.firestore {
       return viaGoogle()
         && request.auth.token.email is string
         && request.auth.token.email_verified == true
-        && request.auth.token.email.lower() in ['janderson@zcs.k12.in.us'];
+        && request.auth.token.email.lower() in ['janderson@zcs.k12.in.us', 'mkelly@zcs.k12.in.us'];
     }
 
     // ── Student responses ──────────────────────────────────────────────────
