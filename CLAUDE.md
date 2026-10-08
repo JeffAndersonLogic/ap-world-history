@@ -1488,20 +1488,26 @@ SKIP without it; a SKIP is not a pass.
 
 `teacher/xray.html` shows a teacher which prompts in a topic are working, from backed-up
 responses, calculated in the browser. **This build reads no real record.** It runs on an
-invented class (`scripts/lib/xray-demo-data.js`, two periods of Topic 2.3) and its policy
+invented class (`scripts/lib/xray-demo-data.js`, the seven real sections for Topic 2.3) and its policy
 is `default-src 'none'`, so it makes no request at all. Pointing it at real data is
 blocked on ZCS reviewing the teacher-reader rule in `firestore/firestore.rules` and on
 the open questions in AndersonLogic-OS, `04_PRODUCTS/BeHistorical/Curriculum-X-Ray-Design-2026-10-08.md`.
 It is deliberately not linked from the teacher command center yet.
 
+- `scripts/lib/xray-sections.js`, the seven classes and who teaches them (G1 and G3 Mike
+  Kelly; G4 and S1 to S4 Jeff Anderson; there is no G2). Deliberately not in
+  `classroom-config.js`, which is inlined into every student page.
+- `scripts/lib/xray-roster.js`, joins a Firebase user export and a Canvas gradebook export
+  into "backup account to class" and class sizes, in the browser, keeping the class only.
+  How to make the two files: `docs/XRAY-CLASS-LIST.md`.
 - `scripts/lib/xray-core.js`, the calculations. One file, Node and browser. Reads nothing,
   stores nothing, sends nothing, calls no AI, never names a student (an answer carries a
   short code), never scores or ranks.
 - `node scripts/build-xray.js`, inline that file, the demo data and a prompt catalog lifted
   from `assets/data/skills-map.js` into the page. `--check` fails on drift. Never hand-edit
   between the sentinels.
-- `node scripts/test/xray-core.test.js` (offline) and `node scripts/test/xray-page.test.js`
-  (browser). Each carries negative controls.
+- `node scripts/test/xray-core.test.js`, `node scripts/test/xray-roster.test.js` (offline) and
+  `node scripts/test/xray-page.test.js` (browser). Each carries negative controls.
 
 **Every signal has a row in `CONTRACT`** saying what it can and cannot tell a teacher, and
 the page prints the row beside the figure. The test fails if a signal exists without one. A
@@ -1510,9 +1516,9 @@ terms missing, terms widely used, confident but thin) says where to read and nev
 thresholds are starting guesses in `THRESHOLDS`, to be tuned against real classes.
 
 **The page is organized around decisions, not a report.** It opens on **Priorities**: the
-flagged prompts across both periods, most important first, each with its caveat beside
+flagged prompts across the classes chosen, most important first, each with its caveat beside
 it. **Read answers** steps through the answers worth reading, by button or arrow key.
-**Compare periods** and **All prompts** are their own views, and the full measurement
+**Compare classes** (all seven, never paired) and **All prompts** are their own views, and the full measurement
 contract is behind "How to read this page". `priorities()` and `evidenceQueue()` in the
 library do the ranking, so the page is a thin layer and the order is tested.
 
@@ -1543,17 +1549,25 @@ Things learned building it, worth knowing before changing it:
 - **Checkpoint 1 and Checkpoint 2 ask different questions**, and each slot keeps only the
   latest text, so the pre-coaching draft is gone. Nothing may compare the two as a measure
   of improvement.
-- **The period filter matters.** Silver's skipped Primary Source disappears in the combined
-  view, because the other period's answers dilute it.
-- **A record carries no class period, teacher or name.** Period is meant to come from the
-  optional `sectionId`, written by a per-class link like `?classroom=kelly`, and nothing
-  writes it yet. A student without one lands in "Unassigned" rather than being guessed at.
-- **A section is a cohort plus a period, and the demo class is wrong about that.** The real
-  sections are G1 and G3 (Mike Kelly) and G4, S1, S2, S3 and S4 (Jeff Anderson); proposed
-  `sectionId` values are `g1` to `s4`. The invented demo class still has two whole classes
-  called Green and Silver and has not been brought into line, because the section sizes
-  are not known. The seven classes are independent and do not pair by number (G1 has no
-  special tie to S1). Do not read the demo's two-period layout as how the course is cut.
+- **Flags are per class, never from the combined view.** One class's full set hides
+  another's missing records: S3's Primary Source reads as Few records alone and vanishes
+  when all seven are pooled. The page never flags from a pooled analysis.
+- **A record carries no class, teacher or name, and the class comes from a roster.**
+  The seven classes are independent and do not pair by number (G1 has no special tie to
+  S1). The class list is built in the page from the teacher's two exports and only
+  "account to class" and the class sizes survive the join. The test searches the result for
+  an `@` and for every name it was given. Staff accounts are set aside before matching, so
+  a teacher whose name matches a student's is never filed into that student's class. A
+  student in two classes, or an address matching two accounts, is left out and counted.
+- **The roster is the authority over a record's own `sectionId`.** The student side
+  writes none and nothing here changes the student side. The earlier plan to tag each
+  answer through per-class links was set aside on 2026-10-08: it touched code every
+  student's backup runs through, depended on every student opening the right link, and
+  could not supply class sizes.
+- **Canvas's login column may not be the district email.** If nothing matches, the page
+  says so in words. It matches on the part before the `@`, ignoring capitals.
+- **The export files hold student emails and the repo is public.** `users.json`, gradebook
+  CSVs and `firebase-users*` are in `.gitignore`. Delete them after building the list.
 
 ## The Lecture Deck
 

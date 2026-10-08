@@ -9,20 +9,31 @@
  * It is deterministic: the same seed makes the same class on every machine, so a
  * test can assert exact results and a screenshot never changes by itself.
  *
+ * THE CLASS. Seven invented sections, named as the real ones are: G1 and G3 are
+ * Mike Kelly's, G4 and S1 to S4 are Jeff Anderson's. A record carries no section,
+ * exactly as a real one does not. Each student has an account id; which class that
+ * account belongs to comes only from the invented roster files generated here
+ * (a Firebase user export and a Canvas gradebook export), joined by
+ * scripts/lib/xray-roster.js, which is the same path real files will take.
+ *
  * WHAT IS PLANTED, ON PURPOSE. These patterns are put in so the flags can be
  * checked against a known answer. They are NOT findings about any real room, and
  * the page says so beside the demo banner:
- *   - Silver, Evidence Lab: most answers state a general claim and mention none of
- *     the expected terms.                                           (Floor)
- *   - Silver, Primary Source: fewer than half of Silver has a record. (Skipped)
- *   - Green, Checkpoint 1: nearly everyone names the wind and the technologies.
- *                                                                    (Ceiling)
- *   - Green, Checkpoint 2: six students rate themselves Could teach it and wrote
- *     a single short sentence.                                (Confident but thin)
- *   - Silver, Evidence Lab: three answers changed in the last minute, which the
- *     page sets aside as possibly still being typed.
- *   - Three students carry no class section, and one record names a slot that is
- *     not in the topic's catalog, so both of those paths are exercised.
+ *   - S2, Evidence Lab: most answers state a general claim and mention none of the
+ *     expected terms.                                              (Terms missing)
+ *   - S3, Primary Source: fewer than half of enrolled students have a record.
+ *                                                                    (Few records)
+ *   - G3, Checkpoint 1: nearly everyone names the wind and the technologies.
+ *                                                              (Terms widely used)
+ *   - G1, Checkpoint 2: six students rate themselves Could teach it and wrote a
+ *     single short sentence.                                (Confident but thin)
+ *   - S2, Evidence Lab: three answers changed in the last minute, which the page
+ *     sets aside as possibly still being typed.
+ *   - A few enrolled students in every section have no backup account yet, three
+ *     backup accounts are on no roster, one staff account is in the export, the
+ *     Canvas file carries its usual "Points Possible" and test-student rows plus a
+ *     G2 section that is not a class, and one record names a prompt that is not in
+ *     the topic's catalog, so each of those paths is exercised.
  *
  * Records are the shape the database stores (see firestore/firestore.rules),
  * except that updatedAt is plain milliseconds. The ids start `demo-`.
@@ -36,21 +47,10 @@
   var NOW = Date.UTC(2026, 9, 8, 19, 30, 0);
   var SEED = 20261008;
 
-  var SECTIONS = [
-    { id: 'anderson-green', label: 'Green', size: 24 },
-    { id: 'anderson-silver', label: 'Silver', size: 22 }
-  ];
-
   var ORDER = [
     'map-check-response', 'first10-q1', 'first10-q2', 'first10-q3', 'skill-builder-response',
     'checkpoint-one-response', 'evidence-response', 'primary-source-response', 'checkpoint-two-response'
   ];
-
-  // Chance a student in each section has a record for each slot, in ORDER.
-  var RESPOND = {
-    'anderson-green': [1, 1, 1, 1, 0.96, 0.96, 0.92, 0.83, 0.88],
-    'anderson-silver': [1, 1, 0.95, 0.9, 0.9, 0.86, 0.8, 0.41, 0.7]
-  };
 
   function mulberry32(a) {
     return function () {
@@ -192,89 +192,128 @@
     return Math.max(1, Math.min(5, Math.round(base)));
   }
 
+  function lib(name, key) {
+    if (typeof module === 'object' && typeof require === 'function') return require('./' + name);
+    return self[key];
+  }
+
+  // Enrolled students per section, and how many of them have never signed in.
+  var SIZES = { g4: 25, s1: 24, s2: 23, s3: 21, s4: 26, g1: 22, g3: 20 };
+  var NO_ACCOUNT = { g4: 2, s1: 1, s2: 2, s3: 3, s4: 1, g1: 1, g3: 2 };
+  var STRENGTH = { g1: 0.6, g3: 0.66, g4: 0.62, s1: 0.5, s2: 0.46, s3: 0.5, s4: 0.52 };
+  var BASE_RESPOND = [1, 1, 0.98, 0.96, 0.95, 0.94, 0.9, 0.86, 0.9];
+  var CANVAS_NAME = {
+    g1: 'G1 - AP World History (Kelly)', g3: 'G3 - AP World History (Kelly)', g4: 'G4 AP World History',
+    s1: 'S1 AP World History', s2: 'S2 AP World History', s3: 'S3 AP World History', s4: 'S4 AP World History'
+  };
+
+  function two(n) { return ('0' + n).slice(-2); }
+  function loginFor(id, n) { return 'demo' + id + two(n); }
+  function csvCell(v) { v = String(v); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; }
+
   function makeDemo() {
+    var Sections = lib('xray-sections.js', 'BHXRaySections');
+    var Roster = lib('xray-roster.js', 'BHXRayRoster');
     var rand = mulberry32(SEED);
     var records = [];
+    var users = [];
+    var canvasRows = [];
     var minute = 60000;
+    var ids = Sections.SECTIONS.map(function (x) { return x.id; });
 
-    function rec(studentId, sectionId, slotId, text, confidence, ageMinutes) {
-      var r = {
-        tenantId: 'demo', studentId: studentId, courseId: 'apwh', topicKey: '2-3', slotId: slotId,
+    function rec(uid, slotId, text, confidence, ageMinutes) {
+      return {
+        tenantId: 'demo', studentId: uid, courseId: 'apwh', topicKey: '2-3', slotId: slotId,
         text: text, confidence: confidence, createdAt: NOW - ageMinutes * minute - 30 * minute,
         updatedAt: NOW - ageMinutes * minute, clientId: 'demo-device', schemaVersion: 1
       };
-      if (sectionId) r.sectionId = sectionId;
-      return r;
     }
 
-    var thinGreen = {};
-    // Planted: six Green students are confident and thin on Checkpoint 2.
-    [2, 5, 9, 13, 17, 21].forEach(function (i) { thinGreen['demo-g-' + ('0' + i).slice(-2)] = true; });
+    // Planted: six students in G1 are confident and thin on Checkpoint 2.
+    var thinG1 = {};
+    [2, 5, 9, 13, 17, 21].forEach(function (i) { thinG1[i] = true; });
+    var draftsS2 = { 19: 0, 20: 1, 21: 2 };   // three S2 students with accounts are mid-sentence
 
-    SECTIONS.forEach(function (sec) {
-      var key = sec.id === 'anderson-green' ? 'g' : 's';
-      var bias = sec.id === 'anderson-green' ? 0.1 : -0.35;
-      for (var i = 1; i <= sec.size; i++) {
-        var id = 'demo-' + key + '-' + ('0' + i).slice(-2);
-        var strength = Math.max(0.05, Math.min(0.98,
-          (sec.id === 'anderson-green' ? 0.66 : 0.46) + (rand() - 0.5) * 0.7));
+    ids.forEach(function (id) {
+      var size = SIZES[id];
+      var withAccount = size - NO_ACCOUNT[id];
+      for (var i = 1; i <= size; i++) {
+        canvasRows.push({ id: id, n: i });
+        if (i > withAccount) continue;                    // enrolled, never signed in
+        var uid = 'demo-' + id + '-' + two(i);
+        users.push({ localId: uid, email: loginFor(id, i) + '@' + Roster.STUDENT_DOMAIN });
+        var strength = Math.max(0.05, Math.min(0.98, STRENGTH[id] + (rand() - 0.5) * 0.7));
         ORDER.forEach(function (slotId, idx) {
-          if (rand() > RESPOND[sec.id][idx]) return;
+          var chance = BASE_RESPOND[idx];
+          if (id === 's3' && slotId === 'primary-source-response') chance = 0.4;   // planted
+          if (rand() > chance) return;
           var tier = tierFor(strength, rand);
 
-          // Planted shapes.
-          if (sec.id === 'anderson-green' && slotId === 'checkpoint-one-response') tier = rand() < 0.88 ? 0 : 1;
-          if (sec.id === 'anderson-silver' && slotId === 'evidence-response') tier = rand() < 0.92 ? 2 : tier;
+          if (id === 'g3' && slotId === 'checkpoint-one-response') tier = rand() < 0.88 ? 0 : 1;   // planted
+          if (id === 's2' && slotId === 'evidence-response') tier = rand() < 0.92 ? 2 : tier;      // planted
 
           var text = pick(rand, BANK[slotId][tier]);
-          var conf = confidenceFor(strength, tier, rand, sec.id === 'anderson-green' ? 0.2 : -0.2);
-
-          if (sec.id === 'anderson-green' && slotId === 'checkpoint-two-response' && thinGreen[id]) {
+          var conf = confidenceFor(strength, tier, rand, strength > 0.55 ? 0.15 : -0.2);
+          if (id === 'g1' && slotId === 'checkpoint-two-response' && thinG1[i]) {   // planted
             text = pick(rand, THIN_CONFIDENT);
             conf = 5;
           }
+          if (id === 's2' && slotId === 'evidence-response' && i in draftsS2) return;   // replaced below
 
           // Answers are written over the course of a period, oldest first.
           var age = 60 + (ORDER.length - idx) * 6 + Math.floor(rand() * 5);
-          records.push(rec(id, sec.id, slotId, text, conf, age));
+          records.push(rec(uid, slotId, text, conf, age));
         });
+        if (id === 's2' && i in draftsS2) {
+          records.push(rec(uid, 'evidence-response', DRAFTS[draftsS2[i]], 3, 0.4 + draftsS2[i] * 0.1));
+        }
       }
     });
 
-    // Planted: three Silver answers changed in the last minute, so the page
-    // sets them aside as possibly still being typed.
-    DRAFTS.forEach(function (text, i) {
-      records.push(rec('demo-s-' + ('0' + (20 + i)).slice(-2), 'anderson-silver', 'evidence-response', text, 3, 0.4 + i * 0.1));
-    });
-    // Replace any earlier record for those three students on that slot.
-    var draftIds = { 'demo-s-20': 1, 'demo-s-21': 1, 'demo-s-22': 1 };
-    records = records.filter(function (r) {
-      return !(draftIds[r.studentId] && r.slotId === 'evidence-response' && r.updatedAt < NOW - 2 * minute);
-    });
-
-    // Planted: three students with no class section recorded.
+    // Three backup accounts that are on no roster (another teacher's students,
+    // say). Their answers have a real account and no class.
     for (var u = 1; u <= 3; u++) {
-      var uid = 'demo-u-0' + u;
+      var xid = 'demo-x-0' + u;
+      users.push({ localId: xid, email: 'demoother0' + u + '@' + Roster.STUDENT_DOMAIN });
       [1, 5, 6].forEach(function (idx) {
-        records.push(rec(uid, null, ORDER[idx], pick(rand, BANK[ORDER[idx]][1]), 3, 90 + idx));
+        records.push(rec(xid, ORDER[idx], pick(rand, BANK[ORDER[idx]][1]), 3, 90 + idx));
       });
     }
+    // A staff account in the export, which must never be filed into a class.
+    users.push({ localId: 'demo-staff-01', email: 'demo.teacher@zcs.k12.in.us' });
 
-    // Planted: one record naming a slot that is not in the topic's catalog.
-    records.push(rec('demo-g-03', 'anderson-green', 'beintheroom-response',
+    // One record naming a slot that is not in the topic's catalog.
+    records.push(rec('demo-g1-03', 'beintheroom-response',
       'If I were the Kilwa sultan I would keep the harbor open to every merchant.', 4, 100));
 
-    var sizes = { 'unassigned': 3 };
-    SECTIONS.forEach(function (s) { sizes[s.id] = s.size; });
+    // The two files, as the real exports will look.
+    var firebaseText = JSON.stringify({ users: users.map(function (x) {
+      return { localId: x.localId, email: x.email, emailVerified: true, createdAt: '1759800000000', providerUserInfo: [{ providerId: 'google.com' }] };
+    }) }, null, 2);
+
+    var lines = ['Student,ID,SIS User ID,SIS Login ID,Section,Assignment 1 (1)',
+      '    Points Possible,,,,,10',
+      '"Student, Test",9999,,teststudent,G4 AP World History,'];
+    canvasRows.forEach(function (r) {
+      lines.push([csvCell('Demo, Student ' + r.id.toUpperCase() + '-' + two(r.n)), 1000 + lines.length, 5000 + lines.length,
+        loginFor(r.id, r.n), CANVAS_NAME[r.id], ''].map(csvCell).join(','));
+    });
+    // Rows a real export carries that are not one of the seven classes.
+    lines.push(['"Demo, Student G2-01"', 2001, 6001, 'demog201', 'G2 Advisory', ''].join(','));
+    lines.push(['"Demo, Student G2-02"', 2002, 6002, 'demog202', 'G2 Advisory', ''].join(','));
+    lines.push(['"Demo, Student DUAL-01"', 2003, 6003, 'demodual01', '"G4 AP World History, S1 AP World History"', ''].join(','));
+    var canvasText = lines.join('\r\n') + '\r\n';
+
+    var roster = Roster.buildClassList({ firebaseText: firebaseText, canvasText: canvasText });
 
     return {
       synthetic: true,
       nowMs: NOW,
       topicKey: '2-3',
-      sections: SECTIONS.map(function (s) { return { id: s.id, label: s.label }; })
-        .concat([{ id: 'unassigned', label: 'Unassigned' }]),
-      sectionSizes: sizes,
-      records: records
+      sections: Sections.SECTIONS,
+      records: records,
+      files: { firebaseText: firebaseText, canvasText: canvasText },
+      roster: roster
     };
   }
 

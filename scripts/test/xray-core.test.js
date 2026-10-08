@@ -50,17 +50,22 @@ function catalogFor(topic) {
 
 const CAT = catalogFor('2.3');
 const demo = D.makeDemo();
-const base = { records: demo.records, catalog: CAT, sectionSizes: demo.sectionSizes, nowMs: demo.nowMs };
+const Sx = require('../lib/xray-sections.js');
+const SECTION_IDS = Sx.SECTIONS.map(x => x.id);
+const base = { records: demo.records, catalog: CAT, sectionSizes: demo.roster.enrolled, sectionByUid: demo.roster.sectionByUid, nowMs: demo.nowMs };
 const run = (section, over, lib) => (lib || X).analyze(Object.assign({}, base, { section }, over || {}));
 const flagsOf = a => a.slots.filter(s => s.flags.length).map(s => `${s.slotId}:${s.flags.map(f => f.id).sort().join('+')}`).sort();
 
 // The planted patterns, written down independently of the code that finds them.
 const EXPECTED = {
-  'anderson-green': ['checkpoint-one-response:ceiling', 'checkpoint-two-response:confidentThin'],
-  'anderson-silver': ['evidence-response:floor', 'primary-source-response:skipped']
+  g1: ['checkpoint-two-response:confidentThin'],
+  g3: ['checkpoint-one-response:ceiling'],
+  s2: ['evidence-response:floor'],
+  s3: ['primary-source-response:skipped'],
+  g4: [], s1: [], s4: []
 };
 function plantedFound(over, lib) {
-  return ['anderson-green', 'anderson-silver'].every(sec =>
+  return SECTION_IDS.every(sec =>
     JSON.stringify(flagsOf(run(sec, over, lib))) === JSON.stringify(EXPECTED[sec].slice().sort()));
 }
 
@@ -71,7 +76,7 @@ console.log(`${W}The measurement contract${Z}`);
 check('every contract row says what it tells and what it cannot',
   Object.keys(X.CONTRACT).every(k => X.CONTRACT[k].name && X.CONTRACT[k].tells && X.CONTRACT[k].cannotTell));
 const emitted = new Set();
-['all', 'anderson-green', 'anderson-silver', 'unassigned'].forEach(sec => {
+SECTION_IDS.concat(['all', 'unassigned']).forEach(sec => {
   const a = run(sec);
   a.slots.forEach(s => s.flags.forEach(f => emitted.add('flag:' + f.id)));
 });
@@ -87,21 +92,22 @@ check('confidence words are BeHistorical\'s own scale',
 
 // ── The planted patterns, and nothing else ──────────────────────────────────
 console.log(`\n${W}Detectors find the planted patterns and nothing else${Z}`);
-['anderson-green', 'anderson-silver'].forEach(sec => {
+SECTION_IDS.forEach(sec => {
   const got = flagsOf(run(sec));
-  check(`${sec}: exactly the planted flags`, JSON.stringify(got) === JSON.stringify(EXPECTED[sec].slice().sort()), got.join(' | '));
+  check(`${sec.toUpperCase()}: exactly the planted flags`, JSON.stringify(got) === JSON.stringify(EXPECTED[sec].slice().sort()), got.join(' | ') || 'none');
 });
-const allPrimary = run('all').slots.find(s => s.slotId === 'primary-source-response');
-check('the combined view hides Silver\'s Skipped, which is why the period filter exists',
-  allPrimary.flags.every(f => f.id !== 'skipped'), `${allPrimary.n + allPrimary.pending} of ${allPrimary.size}`);
+const everySize = Object.assign({}, demo.roster.enrolled, { unassigned: 3 });
+const allPrimary = run('all', { sectionSizes: everySize }).slots.find(s => s.slotId === 'primary-source-response');
+check('the combined view hides S3\'s Few records, which is why flags are per class',
+  allPrimary.flags.every(f => f.id !== 'skipped'), `${allPrimary.n + allPrimary.pending} of ${allPrimary.size} combined`);
 
 // ── Priorities and the answer queue, which the page is a thin layer over ────
 console.log(`\n${W}Priorities and the answers to read${Z}`);
-const byPeriod = ['anderson-green', 'anderson-silver'].map(id => ({ id, label: id.split('-')[1], analysis: run(id) }));
+const byPeriod = SECTION_IDS.map(id => ({ id, label: id.toUpperCase(), analysis: run(id) }));
 const pri = X.priorities(byPeriod);
-const priKeys = pri.map(p => `${p.periodId.split('-')[1]}:${p.slotId}:${p.flag.id}`);
-const EXPECTED_ORDER = ['silver:evidence-response:floor', 'green:checkpoint-two-response:confidentThin',
-  'silver:primary-source-response:skipped', 'green:checkpoint-one-response:ceiling'];
+const priKeys = pri.map(p => `${p.periodId}:${p.slotId}:${p.flag.id}`);
+const EXPECTED_ORDER = ['s2:evidence-response:floor', 'g1:checkpoint-two-response:confidentThin',
+  's3:primary-source-response:skipped', 'g3:checkpoint-one-response:ceiling'];
 check('priorities list every flag, instructional signals first, then missing records, then widely-used terms',
   JSON.stringify(priKeys) === JSON.stringify(EXPECTED_ORDER), priKeys.join(' > '));
 check('every flag is labelled in plain words, with a glyph and a caveat that travels with it',
@@ -119,28 +125,29 @@ check('the first answers to read belong to the first priority',
 check('an answer appears once in the queue',
   new Set(flaggedQueue.map(q => q.periodId + q.slotId + q.answer.code)).size === flaggedQueue.length);
 const evQueue = X.evidenceQueue(byPeriod, 'evidence-response');
-check('a prompt\'s own queue holds only that prompt, from both periods',
+check('a prompt\'s own queue holds only that prompt, from every class in scope',
   evQueue.length > 0 && evQueue.every(q => q.slotId === 'evidence-response') &&
-  new Set(evQueue.map(q => q.periodId)).size === 2);
-check('no queue item carries a student id', !/demo-[gsu]-\d\d/.test(JSON.stringify([flaggedQueue, evQueue, pri])));
+  new Set(evQueue.map(q => q.periodId)).size === SECTION_IDS.length);
+check('no queue item carries a student id', !/demo-[a-z0-9]+-\d\d/.test(JSON.stringify([flaggedQueue, evQueue, pri])));
 
 // ── Period filtering, settling, thin, unmatched, unassigned ─────────────────
 console.log(`\n${W}Behaviour the page relies on${Z}`);
-const g = run('anderson-green'), s = run('anderson-silver'), u = run('unassigned'), all = run('all');
-check('period filter: each period holds only its own answers',
-  g.records + s.records + u.records === all.records, `${g.records}+${s.records}+${u.records}=${all.records}`);
+const s = run('s2'), u = run('unassigned'), all = run('all');
+const perSection = SECTION_IDS.map(id => run(id).records);
+check('class filter: each class holds only its own answers, and every answer is in exactly one',
+  perSection.reduce((a, b) => a + b, 0) + u.records === all.records, `${perSection.join('+')}+${u.records}=${all.records}`);
 check('three half-typed answers are set aside, not analyzed', all.setAside === 3, `${all.setAside}`);
-const silverEv = s.slots.find(x => x.slotId === 'evidence-response');
+const s2Ev = s.slots.find(x => x.slotId === 'evidence-response');
 check('a set-aside answer still counts as a student who responded',
-  silverEv.pending === 3 && silverEv.respondedShare === (silverEv.n + 3) / 22, `${silverEv.n}+${silverEv.pending} of 22`);
+  s2Ev.pending === 3 && s2Ev.respondedShare === (s2Ev.n + 3) / 23, `${s2Ev.n}+${s2Ev.pending} of 23`);
 check('with settling off, nothing is set aside', run('all', { thresholds: { settleMinutes: 0 } }).setAside === 0);
 check('one record naming a prompt outside the topic is counted and left out', all.unmatched === 1);
 check('the unassigned bucket exists and is too thin to flag',
   u.records > 0 && flagsOf(u).length === 0 && u.slots.filter(x => x.n).every(x => x.thin));
 check('with no section size, Skipped cannot be judged and is never raised',
-  flagsOf(run('anderson-silver', { sectionSizes: {} })).every(f => !f.endsWith(':skipped')));
+  flagsOf(run('s3', { sectionSizes: {} })).every(f => !f.endsWith(':skipped')));
 check('the combined view needs every section\'s size',
-  run('all', { sectionSizes: { 'anderson-green': 24 } }).sizeKnown === false);
+  run('all', { sectionSizes: { g1: 22 } }).sizeKnown === false);
 
 // Thin: extreme data under the minimum n raises nothing.
 const tiny = [1, 2, 3, 4].map(i => ({ studentId: 'demo-t-' + i, sectionId: 'x', topicKey: '2-3', slotId: 'checkpoint-two-response',
@@ -164,10 +171,10 @@ check('a term made only of prompt words must match in full (a known undercount, 
 
 // ── Privacy ─────────────────────────────────────────────────────────────────
 console.log(`\n${W}A student is never named${Z}`);
-const dump = JSON.stringify([all, g, s, u]);
-check('no student id appears anywhere in the output', !/demo-[gsu]-\d\d/.test(dump));
-check('every answer is labelled with a short code only', /S-[0-9A-Z]{5}/.test(dump) && X.studentCode('demo-g-01') !== X.studentCode('demo-g-02'));
-check('a code is stable', X.studentCode('demo-g-01') === X.studentCode('demo-g-01'));
+const dump = JSON.stringify([all, s, u]);
+check('no student id appears anywhere in the output', !/demo-[a-z0-9]+-\d\d/.test(dump));
+check('every answer is labelled with a short code only', /S-[0-9A-Z]{5}/.test(dump) && X.studentCode('demo-g1-01') !== X.studentCode('demo-g1-02'));
+check('a code is stable', X.studentCode('demo-g1-01') === X.studentCode('demo-g1-01'));
 
 // ── Determinism ─────────────────────────────────────────────────────────────
 console.log(`\n${W}Same input, same output${Z}`);
@@ -175,7 +182,7 @@ check('the invented class is identical on every build', JSON.stringify(D.makeDem
 const shuffled = demo.records.slice().reverse();
 check('the result does not depend on record order',
   JSON.stringify(flagsOf(run('all', { records: shuffled }))) === JSON.stringify(flagsOf(all)) &&
-  JSON.stringify(run('anderson-silver', { records: shuffled }).slots.map(x => x.words && x.words.median)) ===
+  JSON.stringify(run('s2', { records: shuffled }).slots.map(x => x.words && x.words.median)) ===
   JSON.stringify(s.slots.map(x => x.words && x.words.median)));
 
 // ── A later AI source cannot change Phase A ─────────────────────────────────
@@ -184,7 +191,7 @@ check('every observation produced today is tagged as coming from a rule',
   demo.records.every(r => X.normalizeRecord(r).observations.every(o => o.source === 'rule')));
 const withAi = demo.records.map(r => Object.assign({}, r, { aiLevel: 'Strong', observations: [{ source: 'ai', signal: 'reasoning', value: 3 }] }));
 check('extra AI fields on a record change no flag and no figure',
-  JSON.stringify(run('anderson-silver', { records: withAi })) === JSON.stringify(s));
+  JSON.stringify(run('s2', { records: withAi })) === JSON.stringify(s));
 
 // ── The page is not stale ───────────────────────────────────────────────────
 console.log(`\n${W}The page matches its sources${Z}`);
@@ -230,14 +237,14 @@ function patched(from, to) {
 (function () {
   const lib = patched("var PRIORITY_ORDER = ['floor', 'confidentThin', 'skipped', 'ceiling'];", "var PRIORITY_ORDER = ['ceiling', 'skipped', 'confidentThin', 'floor'];");
   if (!lib) return check('priority order mutation changed nothing, so it proves nothing', false);
-  const bp = ['anderson-green', 'anderson-silver'].map(id => ({ id, label: id.split('-')[1], analysis: run(id, {}, lib) }));
-  const got = lib.priorities(bp).map(p => `${p.periodId.split('-')[1]}:${p.slotId}:${p.flag.id}`);
+  const bp = SECTION_IDS.map(id => ({ id, label: id.toUpperCase(), analysis: run(id, {}, lib) }));
+  const got = lib.priorities(bp).map(p => `${p.periodId}:${p.slotId}:${p.flag.id}`);
   check('the priority order is reversed, and the check notices', JSON.stringify(got) !== JSON.stringify(EXPECTED_ORDER));
 })();
 (function () {
   const lib = patched('caveat: FLAG_DEFS[id].caveat,', "caveat: '',");
   if (!lib) return check('caveat mutation changed nothing, so it proves nothing', false);
-  const a = run('anderson-silver', {}, lib);
+  const a = run('s2', {}, lib);
   check('a flag loses its caveat, and the check notices', a.slots.some(s => s.flags.some(f => !f.caveat)));
 })();
 
@@ -246,9 +253,9 @@ function patched(from, to) {
   if (!src.includes(from)) return check(`${name}: the mutation changed nothing, so it proves nothing`, false);
   const mod = { exports: {} };
   new Function('module', 'exports', src.replace(from, to))(mod, mod.exports);
-  const a = mod.exports.analyze(Object.assign({}, base, { section: 'anderson-silver' }));
+  const a = mod.exports.analyze(Object.assign({}, base, { section: 's2' }));
   const ev = a.slots.find(x => x.slotId === 'evidence-response');
-  check(`${name}, and the check notices`, ev.respondedShare !== (ev.n + 3) / 22);
+  check(`${name}, and the check notices`, ev.respondedShare !== (ev.n + 3) / 23);
 })('a set-aside answer stops counting as a response', 'respondedShare: size ? (n + pending) / size : null', 'respondedShare: size ? n / size : null');
 
 console.log('');

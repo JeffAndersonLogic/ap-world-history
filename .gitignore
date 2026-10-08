@@ -12,3 +12,11 @@ firestore-debug.log
 firebase-debug.log
 ui-debug.log
 .firebase/
+
+# Curriculum X-Ray class list. These exports hold student emails and logins and must
+# never be committed. They are read in the browser and not kept (docs/XRAY-CLASS-LIST.md).
+users.json
+firebase-users*.json
+firebase-users*.csv
+*gradebook*.csv
+*Grades*.csv

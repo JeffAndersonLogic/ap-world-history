@@ -69,6 +69,7 @@ const SUITES = {
     ['scripts/test/schedule-cohorts.test.js', 'green/silver alternation, due dates, generated board and Canvas events'],
     ['scripts/test/teacher-today.test.js', 'the Today panel routes a date to the right teacher surface'],
     ['scripts/test/topic-audit-coverage.test.js', 'topic audit records, coverage index, and the freshness check going quiet'],
+    ['scripts/test/xray-roster.test.js', 'Curriculum X-Ray class list: two exports in, account to class out, class only, careful join'],
     ['scripts/test/xray-core.test.js', 'Curriculum X-Ray: measurement contract, planted patterns found and nothing else, no student named, page not stale']
   ],
   browser: [

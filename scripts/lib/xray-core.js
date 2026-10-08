@@ -203,12 +203,15 @@
 
   // One stored record in, one in-memory shape out. Nothing here is written back.
   // `observations` is where later analyses attach, each tagged with its source.
-  function normalizeRecord(rec) {
+  // `section` is the class from the roster join, when there is one. It wins over
+  // anything written on the record, because the roster is the authority on who is
+  // in which class and a record's own field is only what a device said.
+  function normalizeRecord(rec, section) {
     var text = String(rec.text == null ? '' : rec.text);
     var conf = typeof rec.confidence === 'number' && rec.confidence >= 1 && rec.confidence <= 5 ? rec.confidence : null;
     var n = {
       code: studentCode(rec.studentId),
-      section: rec.sectionId ? String(rec.sectionId) : 'unassigned',
+      section: section ? String(section) : (rec.sectionId ? String(rec.sectionId) : 'unassigned'),
       topicKey: rec.topicKey,
       slotId: rec.slotId,
       text: text,
@@ -352,7 +355,8 @@
     catalog.slots.forEach(function (s) { bySlot[s.slotId] = true; });
 
     var topicRecords = (opts.records || []).filter(function (r) { return topicIdFromKey(r.topicKey) === catalog.topicId; });
-    var normalized = topicRecords.map(normalizeRecord);
+    var sectionByUid = opts.sectionByUid || null;
+    var normalized = topicRecords.map(function (r) { return normalizeRecord(r, sectionByUid && sectionByUid[r.studentId]); });
 
     var unmatched = normalized.filter(function (n) { return !bySlot[n.slotId]; }).length;
     var cutoff = nowMs - T.settleMinutes * 60000;
