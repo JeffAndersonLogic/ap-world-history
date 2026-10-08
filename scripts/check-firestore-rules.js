@@ -48,7 +48,10 @@ const RESPONSE_PATH = 'match /tenants/{tenantId}/responses/{responseId}';
 
 // A condition that does not name one of these is not constrained by identity.
 // `false` is the other acceptable answer, and it is checked separately.
-const OWNERSHIP_TOKENS = ['ownsStored', 'ownsIncoming'];
+// isReader() is the other acceptable answer to "whose record": a closed list of
+// named teachers. It is checked on its own terms below, because a function with
+// a reassuring name can say anything.
+const OWNERSHIP_TOKENS = ['ownsStored', 'ownsIncoming', 'isReader'];
 const TENANT_TOKENS = ['inTenant'];
 
 // Comments are stripped before anything is parsed, and this is not tidiness.
@@ -127,6 +130,33 @@ function assertRules(rawSource, report) {
       if (verb === 'write' || verb === 'create' || verb === 'update') writes++;
     }
   }
+
+  // ── The teacher readers ────────────────────────────────────────────────────
+  //
+  // The only way anyone but the author reads a student's response. The failure
+  // to rule out is the tempting one: "staff may read", which is every adult in
+  // the district. The rules cannot be evaluated here, so what is checked is the
+  // SHAPE that makes that mistake impossible, and each piece has a mutation
+  // below that proves it can fail.
+  const readerFn = /function\s+isReader\(\)\s*\{([\s\S]*?)\n    \}/.exec(source);
+  const readerBody = readerFn ? readerFn[1] : '';
+  report('a named-reader function exists', Boolean(readerFn));
+  const listMatch = /\.lower\(\)\s+in\s+\[([^\]]*)\]/.exec(readerBody);
+  const readers = listMatch ? (listMatch[1].match(/'[^']*'/g) || []).map(x => x.slice(1, -1)) : [];
+  report('readers are matched against a closed list of exact addresses',
+    readers.length > 0 && readers.every(a => /^[a-z0-9._-]+@[a-z0-9.-]+$/.test(a)), readers.join(', '));
+  report('the reader list is short enough to read at a glance', readers.length > 0 && readers.length <= 5,
+    `${readers.length} reader(s)`);
+  report('every reader is a district STAFF address, never a student one',
+    readers.length > 0 && readers.every(a => a.endsWith('@zcs.k12.in.us')));
+  report('the reader check never uses a suffix, prefix, pattern or local-part test',
+    readerFn && !/matches\(|endsWith\(|startsWith\(|contains\(|split\('@'\)\[0\]/.test(readerBody));
+  report('the reader check needs a verified email and the pinned provider',
+    /email_verified\s*==\s*true/.test(readerBody) && /viaGoogle\(\)/.test(readerBody));
+  const readerAllows = allows.filter(a => a.condition.includes('isReader'));
+  report('isReader is used, and only to read',
+    readerAllows.length > 0 && readerAllows.every(a => a.verbs.every(v => v === 'get' || v === 'list' || v === 'read')),
+    readerAllows.map(a => a.verbs.join(',')).join(' | '));
 
   report('some read path is granted, so the rules are not vacuous', reads > 0, `${reads} read verb(s)`);
   report('some write path is granted, so the rules are not vacuous', writes > 0, `${writes} write verb(s)`);
@@ -237,6 +267,18 @@ const MUTATIONS = [
     s => s.replace(/&&\s*request\.auth\.token\.firebase\.sign_in_provider == 'google\.com'/, '')],
   ['delete is opened up to the author',
     s => s.replace(/allow delete: if false;/, 'allow delete: if ownsStored();')],
+  ['every district account becomes a reader',
+    s => s.replace(/function isReader\(\) \{[\s\S]*?\n    \}/, 'function isReader() {\n      return true;\n    }')],
+  ['the reader test becomes a local-part match',
+    s => s.replace(/\.lower\(\) in \[[^\]]*\]/, ".lower().split('@')[0] == 'janderson'")],
+  ['a student address is added to the readers',
+    s => s.replace(/\.lower\(\) in \['janderson@zcs\.k12\.in\.us'/, ".lower() in ['janderson@zcs.k12.in.us', 'janderson@stumail.zcs.k12.in.us'")],
+  ['the reader list swells past five',
+    s => s.replace(/\.lower\(\) in \['janderson@zcs\.k12\.in\.us'/, ".lower() in ['janderson@zcs.k12.in.us', 'a@zcs.k12.in.us', 'b@zcs.k12.in.us', 'c@zcs.k12.in.us', 'd@zcs.k12.in.us', 'e@zcs.k12.in.us'")],
+  ['a reader is allowed to delete',
+    s => s.replace(/allow delete: if false;/, 'allow delete: if inTenant(tenantId) && isReader();')],
+  ['the reader check stops requiring a verified email',
+    s => s.replace(/&&\s*request\.auth\.token\.email_verified == true\n\s*&&\s*request\.auth\.token\.email\.lower\(\) in/, '&& request.auth.token.email.lower() in')],
   ['a wildcard match is added "temporarily" while debugging',
     s => s.replace(/service cloud\.firestore \{\n(\s*)match \/databases\/\{database\}\/documents \{/,
       'service cloud.firestore {\n$1match /databases/{database}/documents {\n      match /{document=**} {\n        allow read, write: if request.auth != null;\n      }')]

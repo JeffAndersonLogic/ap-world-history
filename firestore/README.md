@@ -106,6 +106,40 @@ account could still burn the daily quota by rewriting one document in a loop. On
 the free plan that costs nothing and produces an outage rather than a bill, which
 is the containment, and it is why the free plan is the right place to start.
 
+## Who may read other students' work: a closed list of named teachers (proposed 2026-10-08)
+
+Until now only the student who wrote a record could read it, so no teacher-facing
+view of the responses could exist. The Curriculum X-Ray design
+(AndersonLogic-OS, `04_PRODUCTS/BeHistorical/Curriculum-X-Ray-Design-2026-10-08.md`)
+needs teachers to read them, and this is the access model for that.
+
+**It is `isReader()`, a closed list of exact addresses, and it is not "staff".** The
+staff domain is every teacher, aide and substitute in the district. A rule saying
+staff may read responses would hand every student's writing to all of them. The
+function matches the whole verified address against a list in the rules, never a
+suffix and never a local part, because `janderson@stumail.zcs.k12.in.us` is a
+student who shares a name with a teacher and is not on it.
+
+**Read only.** One `allow get, list` uses it, still behind `inTenant()`, and it is a
+separate statement from the student's own read so editing one cannot loosen the
+other. A reader cannot create, update or delete. The emulator asserts each.
+
+**The list is in the rules rather than a database document**, for the reason the
+domains are: a document is a read on every request and a second thing to secure.
+Changing who may read is a one-line edit, a ZCS review and a deploy.
+
+**Not deployed.** Production is deny-all and stays that way until ZCS has reviewed
+this access model. **Mike Kelly is not on the list yet** because his address has not
+been supplied: add him in `firestore.rules` and as a constant in
+`scripts/test/firestore-rules.test.js`.
+
+**What each check covers.** The emulator test has fourteen reader assertions and five
+negative controls. One thing it cannot see: `isReader()` repeats the
+`email_verified` check that `inTenant()` already makes, so removing it from
+`isReader()` changes no answer and no assertion can fail. It stays as defense in
+depth, and the offline checker asserts its presence and carries a mutation for its
+removal.
+
 ## Deletion is refused for everyone, including the author
 
 This system exists because student work vanishes. A delete path a student can

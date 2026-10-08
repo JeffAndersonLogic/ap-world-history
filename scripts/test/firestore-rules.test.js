@@ -101,6 +101,17 @@ const UNVERIFIED = Object.assign({ email: 'new@zcs.k12.in.us', email_verified: f
 // is the one the provider pin exists for.
 const PASSWORD_USER = { email: 'alex@zcs.k12.in.us', email_verified: true, firebase: { sign_in_provider: 'password' } };
 
+// The named teacher reader. Exactly this address is on the list in
+// firestore.rules; Mike Kelly is added there and here when his address is known.
+const JEFF = Object.assign({ email: 'janderson@zcs.k12.in.us', email_verified: true }, GOOGLE);
+const JEFF_UNVERIFIED = Object.assign({ email: 'janderson@zcs.k12.in.us', email_verified: false }, GOOGLE);
+const JEFF_PASSWORD = { email: 'janderson@zcs.k12.in.us', email_verified: true, firebase: { sign_in_provider: 'password' } };
+// Another teacher in the same district. Staff is not the reader list.
+const OTHER_TEACHER = Object.assign({ email: 'other.teacher@zcs.k12.in.us', email_verified: true }, GOOGLE);
+// A STUDENT who shares the reader's local part. Same tenant, different person.
+const NAMESAKE_STUDENT = Object.assign({ email: 'janderson@stumail.zcs.k12.in.us', email_verified: true }, GOOGLE);
+
+const UID_JEFF = 'uid-jeff';
 const UID_ALEX = 'uid-alex';
 const UID_BRIT = 'uid-brit';
 
@@ -258,6 +269,51 @@ async function assertContracts(env, report) {
   // ── Deletion is nobody's ─────────────────────────────────────────────────
   report('a student cannot delete their own record', await cannot(deleteDoc(doc(alexDb, ALEX_CP2))));
 
+  // ── Teacher readers: a closed list, read only ────────────────────────────
+  //
+  // The X-Ray's access model. Each negative below is a way "teacher may read"
+  // goes wrong: staff in general, a student with the same name, an unverified or
+  // wrong-provider sign-in, another district, and any form of write.
+  const jeffDb = env.authenticatedContext(UID_JEFF, JEFF).firestore();
+  const otherTeacherDb = env.authenticatedContext('uid-teacher2', OTHER_TEACHER).firestore();
+  const namesakeDb = env.authenticatedContext('uid-namesake', NAMESAKE_STUDENT).firestore();
+  const jeffUnverifiedDb = env.authenticatedContext(UID_JEFF, JEFF_UNVERIFIED).firestore();
+  const jeffPasswordDb = env.authenticatedContext(UID_JEFF, JEFF_PASSWORD).firestore();
+  const jeffResponses = collection(jeffDb, `tenants/${ZCS}/responses`);
+  const topicQuery = query(jeffResponses, where('topicKey', '==', '1-4'));
+
+  report('a named reader can read any student\'s record', await can(getDoc(doc(jeffDb, BRIT_CP2))));
+  report('a named reader can list one topic', await can(getDocs(topicQuery)));
+  const spansStudents = await (async () => {
+    try {
+      const snap = await getDocs(topicQuery);
+      return new Set(snap.docs.map(d => d.data().studentId)).size >= 2;
+    } catch (e) { return false; }
+  })();
+  report('and that list really spans more than one student', spansStudents);
+  report('a named reader can list the whole tenant', await can(getDocs(query(jeffResponses))));
+  report('a named reader cannot read another district',
+    await cannot(getDoc(doc(jeffDb, pathFor('other-district', idFor(UID_ALEX, '1-4', 'map-check-response'))))));
+
+  report('another district teacher who is not named cannot read a student\'s record',
+    await cannot(getDoc(doc(otherTeacherDb, BRIT_CP2))));
+  report('and cannot list a topic',
+    await cannot(getDocs(query(collection(otherTeacherDb, `tenants/${ZCS}/responses`), where('topicKey', '==', '1-4')))));
+  report('a student who shares the reader\'s local part cannot read another student\'s record',
+    await cannot(getDoc(doc(namesakeDb, BRIT_CP2))));
+  report('and cannot list the tenant',
+    await cannot(getDocs(query(collection(namesakeDb, `tenants/${ZCS}/responses`)))));
+  report('the reader\'s address unverified is refused', await cannot(getDoc(doc(jeffUnverifiedDb, BRIT_CP2))));
+  report('the reader\'s address on a different sign-in provider is refused',
+    await cannot(getDoc(doc(jeffPasswordDb, BRIT_CP2))));
+
+  report('a reader cannot edit a student\'s record',
+    await cannot(updateDoc(doc(jeffDb, BRIT_CP2), { text: 'changed by a teacher', updatedAt: serverTimestamp() })));
+  report('a reader cannot create a record in a student\'s name',
+    await cannot(setDoc(doc(jeffDb, pathFor(ZCS, idFor(UID_BRIT, '6-1', 'reader-forged'))),
+      response({ studentId: UID_BRIT, topicKey: '6-1', slotId: 'reader-forged' }))));
+  report('a reader cannot delete a student\'s record', await cannot(deleteDoc(doc(jeffDb, BRIT_CP2))));
+
   // Brit proves the rules are not simply denying everything to everyone, which
   // every assertion above would also be consistent with.
   report('the other student can still read their own record', await can(getDoc(doc(britDb, BRIT_CP2))));
@@ -305,6 +361,23 @@ async function makeEnv(rules) {
       s => s.replace(/, 'stumail\.zcs\.k12\.in\.us'/, '')],
     ['the provider pin is dropped',
       s => s.replace(/&&\s*request\.auth\.token\.firebase\.sign_in_provider == 'google\.com'/, '')],
+    ['every district account becomes a reader',
+      s => s.replace(/function isReader\(\) \{[\s\S]*?\n    \}/, 'function isReader() {\n      return true;\n    }')],
+    ['the reader test becomes a local-part match',
+      s => s.replace(/\.lower\(\) in \[[^\]]*\]/, ".lower().split('@')[0] == 'janderson'")],
+    // Deliberately no mutation for "isReader() stops requiring a verified email".
+    // inTenant(), which every reader allow also requires, already refuses an
+    // unverified address, so removing the second check is not detectable by any
+    // assertion here and a mutation for it would report "NOT caught" for a reason
+    // that is not a gap. It stays in the rule as defense in depth and is covered
+    // offline: scripts/check-firestore-rules.js asserts the check is present and
+    // carries a mutation for its removal.
+    ['the reader allow loses its tenant check',
+      s => s.replace('allow get, list: if inTenant(tenantId) && isReader();', 'allow get, list: if isReader();')],
+    ['a reader may edit any record',
+      s => s.replace(/allow delete: if false;/, 'allow update: if inTenant(tenantId) && isReader();\n      allow delete: if false;')],
+    ['a reader may delete',
+      s => s.replace(/allow delete: if false;/, 'allow delete: if inTenant(tenantId) && isReader();')],
     ['delete is opened to the author',
       s => s.replace(/allow delete: if false;/, 'allow delete: if ownsStored();')]
   ];

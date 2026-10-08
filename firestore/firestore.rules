@@ -79,6 +79,40 @@ service cloud.firestore {
       return tenantOfCaller() != '' && tenantOfCaller() == tenantId;
     }
 
+    // ── Teacher readers ────────────────────────────────────────────────────
+    //
+    // The two people who may read every student's response in the tenant, for
+    // the Curriculum X-Ray (see AndersonLogic-OS, 04_PRODUCTS/BeHistorical/
+    // Curriculum-X-Ray-Design-2026-10-08.md).
+    //
+    // THIS IS A CLOSED LIST OF EXACT ADDRESSES, NOT "STAFF". The staff domain
+    // is every teacher, aide and substitute in the district, and a rule that said
+    // "staff may read responses" would hand every student's writing to all of
+    // them. An address here is a named person and nothing else. It is an exact
+    // match on the whole verified address, never a suffix or local-part test:
+    // janderson@stumail.zcs.k12.in.us is a student who happens to share a name
+    // and is not on this list.
+    //
+    // The list lives in the rules and not in a database document for the reason
+    // the domains do: a document is a read on every request and a second thing
+    // to secure. Changing who may read is a one-line edit, a ZCS review and a
+    // deploy, which is the right amount of friction for that decision.
+    //
+    // Mike Kelly is NOT on the list yet because his address has not been
+    // supplied. Adding him is one more entry here and one more constant in
+    // scripts/test/firestore-rules.test.js. Do not deploy before ZCS has reviewed
+    // this access model.
+    //
+    // Read only. isReader() is used by exactly one allow statement and it grants
+    // get and list. A reader cannot create, update or delete, and the emulator
+    // test asserts each.
+    function isReader() {
+      return viaGoogle()
+        && request.auth.token.email is string
+        && request.auth.token.email_verified == true
+        && request.auth.token.email.lower() in ['janderson@zcs.k12.in.us'];
+    }
+
     // ── Student responses ──────────────────────────────────────────────────
     //
     // tenants/{tenantId}/responses/{responseId}, flat, as the architecture
@@ -198,6 +232,12 @@ service cloud.firestore {
       // outright rather than silently narrowed. The emulator test asserts both
       // directions.
       allow get, list: if inTenant(tenantId) && ownsStored();
+
+      // A named teacher reads the tenant's responses. Still inTenant, so a
+      // reader's reach ends at the district, and still an allow of its own, so
+      // the student path above is untouched and cannot be loosened by editing
+      // this one. Reads only: nothing here grants a write of any kind.
+      allow get, list: if inTenant(tenantId) && isReader();
 
       allow create: if inTenant(tenantId)
                     && ownsIncoming()
