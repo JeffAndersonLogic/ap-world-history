@@ -1548,6 +1548,11 @@ Things learned building it, worth knowing before changing it:
 - **A record carries no class period, teacher or name.** Period is meant to come from the
   optional `sectionId`, written by a per-class link like `?classroom=kelly`, and nothing
   writes it yet. A student without one lands in "Unassigned" rather than being guessed at.
+- **A section is a cohort plus a period, and the demo class is wrong about that.** The real
+  sections are G1 and G3 (Mike Kelly) and G4, S1, S2, S3 and S4 (Jeff Anderson); proposed
+  `sectionId` values are `g1` to `s4`. The invented demo class still has two whole classes
+  called Green and Silver and has not been brought into line, because the section sizes
+  and pairings are not confirmed. Do not read its two-period layout as how the course is cut.
 
 ## The Lecture Deck
 
