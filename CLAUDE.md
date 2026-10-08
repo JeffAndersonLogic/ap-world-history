@@ -1552,7 +1552,8 @@ Things learned building it, worth knowing before changing it:
   sections are G1 and G3 (Mike Kelly) and G4, S1, S2, S3 and S4 (Jeff Anderson); proposed
   `sectionId` values are `g1` to `s4`. The invented demo class still has two whole classes
   called Green and Silver and has not been brought into line, because the section sizes
-  and pairings are not confirmed. Do not read its two-period layout as how the course is cut.
+  are not known. The seven classes are independent and do not pair by number (G1 has no
+  special tie to S1). Do not read the demo's two-period layout as how the course is cut.
 
 ## The Lecture Deck
 
