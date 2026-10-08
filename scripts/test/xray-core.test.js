@@ -95,6 +95,35 @@ const allPrimary = run('all').slots.find(s => s.slotId === 'primary-source-respo
 check('the combined view hides Silver\'s Skipped, which is why the period filter exists',
   allPrimary.flags.every(f => f.id !== 'skipped'), `${allPrimary.n + allPrimary.pending} of ${allPrimary.size}`);
 
+// ── Priorities and the answer queue, which the page is a thin layer over ────
+console.log(`\n${W}Priorities and the answers to read${Z}`);
+const byPeriod = ['anderson-green', 'anderson-silver'].map(id => ({ id, label: id.split('-')[1], analysis: run(id) }));
+const pri = X.priorities(byPeriod);
+const priKeys = pri.map(p => `${p.periodId.split('-')[1]}:${p.slotId}:${p.flag.id}`);
+const EXPECTED_ORDER = ['silver:evidence-response:floor', 'green:checkpoint-two-response:confidentThin',
+  'silver:primary-source-response:skipped', 'green:checkpoint-one-response:ceiling'];
+check('priorities list every flag, instructional signals first, then missing records, then widely-used terms',
+  JSON.stringify(priKeys) === JSON.stringify(EXPECTED_ORDER), priKeys.join(' > '));
+check('every flag is labelled in plain words, with a glyph and a caveat that travels with it',
+  Object.keys(X.FLAG_DEFS).every(k => X.FLAG_DEFS[k].label && X.FLAG_DEFS[k].glyph && X.FLAG_DEFS[k].caveat.length > 20) &&
+  pri.every(p => p.flag.caveat && p.flag.label));
+check('no flag label uses the technical names', Object.keys(X.FLAG_DEFS).every(k => !/^(Floor|Ceiling|Skipped)$/.test(X.FLAG_DEFS[k].label)));
+check('the "few records" caveat refuses to call a missing record a skipped task',
+  /do not prove/i.test(X.FLAG_DEFS.skipped.caveat) && X.FLAG_DEFS.skipped.label === 'Few records');
+const flaggedQueue = X.evidenceQueue(byPeriod);
+check('the flagged queue walks the priorities in order and reads at least one answer from each',
+  flaggedQueue.length > 0 && pri.every(p => flaggedQueue.some(q => q.periodId === p.periodId && q.slotId === p.slotId)),
+  `${flaggedQueue.length} answers`);
+check('the first answers to read belong to the first priority',
+  flaggedQueue[0].periodId === pri[0].periodId && flaggedQueue[0].slotId === pri[0].slotId);
+check('an answer appears once in the queue',
+  new Set(flaggedQueue.map(q => q.periodId + q.slotId + q.answer.code)).size === flaggedQueue.length);
+const evQueue = X.evidenceQueue(byPeriod, 'evidence-response');
+check('a prompt\'s own queue holds only that prompt, from both periods',
+  evQueue.length > 0 && evQueue.every(q => q.slotId === 'evidence-response') &&
+  new Set(evQueue.map(q => q.periodId)).size === 2);
+check('no queue item carries a student id', !/demo-[gsu]-\d\d/.test(JSON.stringify([flaggedQueue, evQueue, pri])));
+
 // ── Period filtering, settling, thin, unmatched, unassigned ─────────────────
 console.log(`\n${W}Behaviour the page relies on${Z}`);
 const g = run('anderson-green'), s = run('anderson-silver'), u = run('unassigned'), all = run('all');
@@ -164,7 +193,7 @@ check('teacher/xray.html is up to date with the library, the demo data and the c
   (built.stderr || built.stdout || '').trim().split('\n')[0]);
 const page = fs.readFileSync(path.join(ROOT, 'teacher/xray.html'), 'utf8');
 check('the page forbids every network route', /connect-src 'none'/.test(page) && /default-src 'none'/.test(page));
-check('the page says it is demonstration data', /DEMONSTRATION DATA/.test(page));
+check('the page says it is demonstration data, in the header and in a note', /Demo data/.test(page) && /Invented students/.test(page));
 
 // ── Negative controls ───────────────────────────────────────────────────────
 console.log(`\n${W}Negative controls${Z}  ${Dm}each break must turn the planted-pattern check red${Z}`);
@@ -190,6 +219,27 @@ check('(the check itself passes on the real library)', plantedFound());
     broken.matchTerm('gold trade', 'trade grew a lot', X.wordSet('trade grew a lot'), pw) !== 'none');
   check(`${name}, and the planted Floor goes missing`, plantedFound({}, broken) === false);
 })('echoed prompt words earn a partial match again', '!echoed[w] && words[w]', 'words[w]');
+
+function patched(from, to) {
+  const src = fs.readFileSync(path.join(ROOT, 'scripts/lib/xray-core.js'), 'utf8');
+  if (!src.includes(from)) return null;
+  const mod = { exports: {} };
+  new Function('module', 'exports', src.replace(from, to))(mod, mod.exports);
+  return mod.exports;
+}
+(function () {
+  const lib = patched("var PRIORITY_ORDER = ['floor', 'confidentThin', 'skipped', 'ceiling'];", "var PRIORITY_ORDER = ['ceiling', 'skipped', 'confidentThin', 'floor'];");
+  if (!lib) return check('priority order mutation changed nothing, so it proves nothing', false);
+  const bp = ['anderson-green', 'anderson-silver'].map(id => ({ id, label: id.split('-')[1], analysis: run(id, {}, lib) }));
+  const got = lib.priorities(bp).map(p => `${p.periodId.split('-')[1]}:${p.slotId}:${p.flag.id}`);
+  check('the priority order is reversed, and the check notices', JSON.stringify(got) !== JSON.stringify(EXPECTED_ORDER));
+})();
+(function () {
+  const lib = patched('caveat: FLAG_DEFS[id].caveat,', "caveat: '',");
+  if (!lib) return check('caveat mutation changed nothing, so it proves nothing', false);
+  const a = run('anderson-silver', {}, lib);
+  check('a flag loses its caveat, and the check notices', a.slots.some(s => s.flags.some(f => !f.caveat)));
+})();
 
 (function patchedSource(name, from, to) {
   const src = fs.readFileSync(path.join(ROOT, 'scripts/lib/xray-core.js'), 'utf8');

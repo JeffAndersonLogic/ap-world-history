@@ -7,12 +7,18 @@
  *   - It makes no request beyond loading itself, and its own policy refuses a
  *     fetch to anywhere, including its own origin.
  *   - Nothing is analyzed until the teacher presses Analyze Class.
- *   - After that: nine prompts in order, the planted flags in the right periods,
- *     the half-typed answers set aside, and no student id anywhere on screen.
- *   - It works from the keyboard: Analyze, switching period, opening a prompt.
- *   - A flag is never colour alone: every chip carries its word.
- *   - Opening a prompt shows what its numbers can and cannot tell a teacher.
- *   - Nothing overflows sideways at 320px.
+ *   - The first screen is a decision: the four planted priorities, in order, all
+ *     visible without scrolling, each with its caveat beside it.
+ *   - THE USABILITY PROXY. From opening the page to reading the first flagged
+ *     answer takes two interactions, and nothing is scrolled to find a priority.
+ *     This is a proxy and not the benchmark: the benchmark is a person with a
+ *     stopwatch, and the protocol is in the design record.
+ *   - The methodology is behind an explanation control and closed by default;
+ *     the caveats are not.
+ *   - Reading answers works by button and by arrow key, and tabs by arrow key.
+ *   - Compare periods and All prompts are their own views.
+ *   - A flag is never colour alone. No student id is on screen.
+ *   - Nothing overflows sideways at 320px, in any view.
  *
  * Offline calculations live in xray-core.test.js; this is the other half.
  *
@@ -68,7 +74,7 @@ function check(name, pass, detail) {
   const port = server.address().port;
   const url = `http://127.0.0.1:${port}/teacher/xray.html`;
   const browser = await chromium.launch({ executablePath: EXE, args: ['--no-sandbox'] });
-  const ctx = await browser.newContext({ viewport: { width: 1100, height: 900 } });
+  const ctx = await browser.newContext({ viewport: { width: 1100, height: 800 } });
   const page = await ctx.newPage();
 
   const requests = [];
@@ -91,75 +97,116 @@ function check(name, pass, detail) {
   check('a picture from another host is refused by the policy', cspBlocked === true);
 
   console.log('\nNothing is analyzed until asked');
-  check('the empty state shows and no prompt cards exist', await page.isVisible('#empty') && (await page.locator('#cards article').count()) === 0);
-  check('the demonstration banner is visible', await page.isVisible('.demo'));
+  check('the empty state shows and no priority exists', await page.isVisible('#empty') && (await page.locator('.pri').count()) === 0 && await page.locator('#out').isHidden());
+  check('the page says it is demo data, in the header and in a note', await page.isVisible('.pill') && /Invented students/.test(await page.textContent('.demo')));
 
-  console.log('\nAnalyze Class, by keyboard');
+  console.log('\nThe first screen is a decision');
+  let interactions = 0;
   await page.focus('#analyze');
-  await page.keyboard.press('Enter');
-  check('nine prompts appear, in the order a student meets them',
-    (await page.locator('#cards article').count()) === 9 &&
-    (await page.locator('#cards article .mod').first().textContent()) === 'Map & Geography Check' &&
-    (await page.locator('#cards article .mod').last().textContent()) === 'Checkpoint 2');
-  const status = await page.textContent('#status');
-  check('the status line reports the set-aside answers and the stray record',
-    /3 set aside/.test(status) && /1 record names a prompt/.test(status), status);
-  check('the empty state is gone', !(await page.isVisible('#empty')));
-
-  console.log('\nThe planted flags land in the right period');
-  const matrix = await page.evaluate(() => {
-    const out = {};
-    document.querySelectorAll('#matrix tbody tr').forEach(tr => {
-      const name = tr.querySelector('th').textContent;
-      out[name] = Array.prototype.map.call(tr.querySelectorAll('td'), td => td.textContent.replace(/\s+/g, ' ').trim());
-    });
-    return out;
-  });
-  check('Green: Checkpoint 1 is a Ceiling', /Ceiling/.test(matrix['Checkpoint 1'][0]), matrix['Checkpoint 1'][0]);
-  check('Green: Checkpoint 2 is Confident but thin', /Confident but thin/.test(matrix['Checkpoint 2'][0]));
-  check('Silver: Evidence Lab is a Floor', /Floor/.test(matrix['Evidence Lab'][1]));
-  check('Silver: Primary Source is Skipped', /Skipped/.test(matrix['Primary Source'][1]));
-  check('no other prompt raises a flag',
-    Object.keys(matrix).filter(k => !['Checkpoint 1', 'Checkpoint 2', 'Evidence Lab', 'Primary Source'].includes(k))
-      .every(k => matrix[k].every(c => /None|Too few/.test(c))));
-
-  console.log('\nA flag is never colour alone');
+  await page.keyboard.press('Enter'); interactions++;
+  const scrollY0 = await page.evaluate(() => window.scrollY);
+  const cards = await page.evaluate(() => Array.prototype.map.call(document.querySelectorAll('.pri'), c => {
+    const r = c.getBoundingClientRect();
+    return { text: c.textContent.replace(/\s+/g, ' ').trim(), bottom: Math.round(r.bottom), top: Math.round(r.top) };
+  }));
+  check('four priorities appear', cards.length === 4, cards.length + '');
+  check('in order: Terms missing, Confident but thin, Few records, Terms widely used',
+    /Terms missing/.test(cards[0].text) && /Confident but thin/.test(cards[1].text) && /Few records/.test(cards[2].text) && /Terms widely used/.test(cards[3].text));
+  check('each says which period and which prompt',
+    /Silver.*Evidence Lab/.test(cards[0].text) && /Green.*Checkpoint 2/.test(cards[1].text) && /Silver.*Primary Source/.test(cards[2].text) && /Green.*Checkpoint 1/.test(cards[3].text));
+  check('all four are on screen without scrolling (1100x800)', scrollY0 === 0 && cards.every(c => c.bottom <= 800), cards.map(c => c.bottom).join(','));
+  check('the tab announces how many priorities there are', /Priorities\s*4/.test(await page.textContent('#t-priorities')));
+  const caveats = await page.evaluate(() => Array.prototype.map.call(document.querySelectorAll('.pri'), c => {
+    const q = c.querySelector('.caveat'); const r = q.getBoundingClientRect();
+    return { text: q.textContent, visible: r.height > 0 && r.top < 800 };
+  }));
+  check('every priority shows its caveat beside the flag, not behind a click', caveats.every(c => c.visible && c.text.length > 30));
+  check('the caveat for missing records refuses to call it skipped work',
+    /do not prove/i.test(caveats[2].text) && !/Skipped/.test(cards[2].text));
   const chips = await page.evaluate(() => Array.prototype.map.call(document.querySelectorAll('.flag'), f => f.textContent.replace(/\s+/g, ' ').trim()));
-  check('every flag chip carries a letter and its word',
-    chips.length > 0 && chips.every(c => /^[A-Z]\s?(Skipped|Floor|Ceiling|Confident but thin)$/.test(c)), chips.slice(0, 4).join(' | '));
+  check('every flag chip carries a letter and its words, never colour alone',
+    chips.length > 0 && chips.every(c => /^[A-Z]\s?(Terms missing|Confident but thin|Few records|Terms widely used)$/.test(c)), chips.join(' | '));
 
-  console.log('\nPeriod switching and prompt detail');
-  await page.click('button[data-sec="anderson-silver"]');
-  check('switching period updates the status line', /^Silver/.test(await page.textContent('#status')));
-  check('the pressed period is announced', (await page.getAttribute('button[data-sec="anderson-silver"]', 'aria-pressed')) === 'true' &&
-    (await page.getAttribute('button[data-sec="all"]', 'aria-pressed')) === 'false');
-  const evBtn = page.locator('#cards article:nth-child(7) > button');
-  check('a prompt starts collapsed', (await evBtn.getAttribute('aria-expanded')) === 'false' && await page.locator('#det-6').isHidden());
-  await evBtn.focus();
-  await page.keyboard.press('Enter');
-  check('Enter opens it', (await evBtn.getAttribute('aria-expanded')) === 'true' && await page.locator('#det-6').isVisible());
-  const detailText = await page.textContent('#det-6');
-  check('it says what the numbers can and cannot tell', /Cannot tell/.test(detailText) && /Evidence terms/.test(detailText) && /provisional/i.test(detailText));
-  check('it shows the term table and the answers to read first', /monsoon winds/.test(detailText) && /Read these first/.test(detailText));
-  check('it compares the class periods', /Compare class periods/.test(detailText) && /Green/.test(detailText) && /Silver/.test(detailText));
-  check('open state survives switching period', (await (async () => {
-    await page.click('button[data-sec="anderson-green"]');
-    return page.locator('#cards article:nth-child(7) > button').getAttribute('aria-expanded');
-  })()) === 'true');
+  console.log('\nThe methodology is one click away, and closed by default');
+  check('"How to read this page" starts closed and its contract text is hidden',
+    (await page.evaluate(() => document.querySelector('details.how').open)) === false && await page.locator('details.how .cant').first().isHidden());
+  await page.click('details.how summary');
+  const how = await page.textContent('details.how');
+  check('opened, it states what each signal can and cannot tell, and the thresholds in words',
+    await page.locator('details.how .cant').first().isVisible() && /Cannot tell/.test(how) && /Terms missing: at least 60%/.test(how) && /starting values/.test(how));
+  await page.click('details.how summary');
+
+  console.log('\nTwo interactions to the first flagged answer (the usability proxy)');
+  await page.locator('.pri').first().locator('.btn:not(.alt)').click(); interactions++;
+  const firstAnswer = await page.evaluate(() => { const b = document.querySelector('#p-evidence .ans'); return b ? b.textContent : ''; });
+  check('Analyze, then Read answers: the first flagged answer is on screen', interactions === 2 && firstAnswer.length > 10 && await page.locator('#p-evidence .ans').isVisible(), firstAnswer.slice(0, 40));
+  check('it opened on the Read answers tab and followed the priority\'s period',
+    (await page.getAttribute('#t-evidence', 'aria-selected')) === 'true' && (await page.getAttribute('button[data-sec="anderson-silver"]', 'aria-pressed')) === 'true');
+  check('the flag and its caveat travel with the answer', /Terms missing/.test(await page.textContent('#ev-card')) && /Students may have used different words/.test(await page.textContent('#ev-card')));
+  check('focus lands on the answer', await page.evaluate(() => document.activeElement && document.activeElement.id === 'ev-card'));
+
+  console.log('\nReading answers, by button and by key');
+  const countText = () => page.textContent('.nav .count');
+  check('it counts the answers', /^Answer 1 of \d+$/.test(await countText()), await countText());
+  check('Previous is disabled on the first answer', await page.locator('.nav .btn').first().isDisabled());
+  await page.keyboard.press('ArrowRight');
+  check('the right arrow key steps forward', /^Answer 2 of/.test(await countText()), await countText());
+  await page.keyboard.press('ArrowLeft');
+  check('the left arrow key steps back', /^Answer 1 of/.test(await countText()));
+  const total = parseInt((await countText()).replace(/\D+\d+\D+/, ''), 10);
+  for (let i = 1; i < total; i++) await page.locator('.nav .btn').nth(1).click();
+  check('Next is disabled on the last answer', await page.locator('.nav .btn').nth(1).isDisabled() && /of/.test(await countText()));
+  await page.selectOption('#qslot', '');
+  const flaggedTotal = parseInt((await countText()).replace(/\D+\d+\D+/, ''), 10);
+  check('"Flagged prompts" queues answers from more than one prompt', flaggedTotal > total, `${flaggedTotal} vs ${total} for one prompt`);
+
+  console.log('\nTabs');
+  await page.focus('#t-evidence');
+  await page.keyboard.press('ArrowRight');
+  check('arrow keys move between tabs and the panel follows',
+    (await page.getAttribute('#t-compare', 'aria-selected')) === 'true' && await page.locator('#p-compare').isVisible() && await page.locator('#p-evidence').isHidden());
+  const cmp = await page.evaluate(() => Array.prototype.map.call(document.querySelectorAll('#p-compare thead th'), t => t.textContent));
+  check('Compare periods is its own view with a column per period, whatever the period choice',
+    cmp.join('|') === 'Prompt|Green|Silver' && (await page.locator('#p-compare tbody tr').count()) === 9);
+  const cmpText = await page.textContent('#p-compare');
+  check('it shows Green\'s Terms widely used and Silver\'s Terms missing side by side', /Terms widely used/.test(cmpText) && /Terms missing/.test(cmpText) && /Few records/.test(cmpText));
+
+  console.log('\nAll prompts');
+  await page.click('#t-prompts');
+  check('with Silver chosen, nine collapsed rows', (await page.locator('#p-prompts .prow').count()) === 9 && (await page.locator('#p-prompts .prow > button[aria-expanded="false"]').count()) === 9);
+  await page.locator('#p-prompts .prow > button').nth(6).click();
+  const rowText = await page.textContent('#p-prompts .prow:nth-child(7)');
+  check('opening a row shows its numbers and what they cannot tell', /Authored terms/.test(rowText) && /Cannot tell/.test(rowText) && /monsoon winds/.test(rowText));
+
+  console.log('\nSwitching period');
+  await page.click('button[data-sec="both"]');
+  check('Both shows a section per period in All prompts', (await page.locator('#p-prompts .prow').count()) === 18);
+  await page.click('button[data-sec="unassigned"]');
+  await page.click('#t-priorities');
+  check('"No period" has too few answers to flag, and says flagged-nothing is not the same as fine',
+    (await page.locator('.pri').count()) === 0 && /not the same as everything being fine/.test(await page.textContent('#p-priorities')));
 
   console.log('\nNo student is named');
+  await page.click('button[data-sec="both"]');
+  await page.click('#t-evidence');
   const visible = await page.evaluate(() => document.body.innerText);
   check('no student id is on screen', !/demo-[gsu]-\d\d/.test(visible));
   check('answers are labelled by short code', /S-[0-9A-Z]{5}/.test(visible));
 
-  console.log('\nOne reading column on a phone');
+  console.log('\nOne reading column on a phone, in every view');
   const phone = await browser.newContext({ viewport: { width: 320, height: 700 } });
   const pp = await phone.newPage();
   await pp.goto(url);
+  const sideways = () => pp.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+  check('before analyzing', (await sideways()) <= 0);
   await pp.click('#analyze');
-  await pp.click('#cards article:nth-child(7) > button');
-  const overflow = await pp.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
-  check('nothing scrolls sideways at 320px', overflow <= 0, 'overflow ' + overflow + 'px');
+  for (const [tab, name] of [['priorities', 'Priorities'], ['evidence', 'Read answers'], ['compare', 'Compare periods'], ['prompts', 'All prompts']]) {
+    await pp.click('#t-' + tab);
+    if (tab === 'priorities') await pp.locator('.pri .btn.alt').first().click();
+    if (tab === 'prompts') await pp.locator('#p-prompts .prow > button').nth(6).click();
+    const o = await sideways();
+    check(name + ' fits 320px', o <= 0, 'overflow ' + o + 'px');
+  }
   await phone.close();
 
   check('the page raised no script error', errors.length === 0, errors.join(' | '));

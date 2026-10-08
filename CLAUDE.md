@@ -1505,9 +1505,28 @@ It is deliberately not linked from the teacher command center yet.
 
 **Every signal has a row in `CONTRACT`** saying what it can and cannot tell a teacher, and
 the page prints the row beside the figure. The test fails if a signal exists without one. A
-count of how much a student wrote is a count of how much a student wrote. A flag (Skipped,
-Floor, Ceiling, Confident but thin) says where to read and never what is wrong. The
+count of how much a student wrote is a count of how much a student wrote. A flag (few records,
+terms missing, terms widely used, confident but thin) says where to read and never what is wrong. The
 thresholds are starting guesses in `THRESHOLDS`, to be tuned against real classes.
+
+**The page is organized around decisions, not a report.** It opens on **Priorities**: the
+flagged prompts across both periods, most important first, each with its caveat beside
+it. **Read answers** steps through the answers worth reading, by button or arrow key.
+**Compare periods** and **All prompts** are their own views, and the full measurement
+contract is behind "How to read this page". `priorities()` and `evidenceQueue()` in the
+library do the ranking, so the page is a thin layer and the order is tested.
+
+The flags keep their technical ids in code and the design record (`floor`, `ceiling`,
+`skipped`, `confidentThin`) and wear plain labels on screen: **Terms missing**, **Terms
+widely used**, **Few records**, **Confident but thin**. "Skipped" was renamed because
+a missing record is not proof a student skipped anything, and the label contradicted its
+own caveat.
+
+**The usability benchmark is under two minutes from opening the page to knowing what
+needs attention.** `xray-page.test.js` carries a proxy for it (two interactions to the
+first flagged answer, all four priorities on screen at 1100x800 without scrolling). It is
+a proxy, not the benchmark: the benchmark is a person with a stopwatch, protocol in the
+design record. The proxy is tight at 800px tall and fails on a 650px laptop window.
 
 Things learned building it, worth knowing before changing it:
 

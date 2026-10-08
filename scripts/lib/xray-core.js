@@ -86,12 +86,33 @@
     }
   };
 
+  // The ids are the technical names the design record and the tests use. The
+  // labels are what a teacher reads, in plain words. `caveat` is the one sentence
+  // that must travel with the flag wherever it is shown, because each of these is
+  // easy to read as more than it is. The full contract sits behind a disclosure;
+  // this sentence never does.
   var FLAG_DEFS = {
-    skipped: { label: 'Skipped', glyph: 'S' },
-    floor: { label: 'Floor', glyph: 'F' },
-    ceiling: { label: 'Ceiling', glyph: 'C' },
-    confidentThin: { label: 'Confident but thin', glyph: 'T' }
+    floor: {
+      label: 'Terms missing', glyph: 'M',
+      caveat: 'This does not show the explanation is wrong. Students may have used different words.'
+    },
+    confidentThin: {
+      label: 'Confident but thin', glyph: 'T',
+      caveat: 'A short answer can be right, and confidence is the student\'s own report.'
+    },
+    skipped: {
+      label: 'Few records', glyph: 'R',
+      caveat: 'Missing records do not prove students skipped the work. Someone offline or not signed in leaves no record.'
+    },
+    ceiling: {
+      label: 'Terms widely used', glyph: 'W',
+      caveat: 'Matching terms does not show they were used correctly. It may also mean the prompt is not separating anyone.'
+    }
   };
+
+  // The order the page lists priorities in: the instructional signals first, then
+  // the missing-records signal, then the one that may simply be good news.
+  var PRIORITY_ORDER = ['floor', 'confidentThin', 'skipped', 'ceiling'];
 
   var STOP = { and: 1, the: 1, of: 1, for: 1, with: 1, from: 1, that: 1, this: 1, into: 1 };
 
@@ -316,7 +337,7 @@
   }
 
   function flag(id, why) {
-    return { id: id, label: FLAG_DEFS[id].label, glyph: FLAG_DEFS[id].glyph, why: why };
+    return { id: id, label: FLAG_DEFS[id].label, glyph: FLAG_DEFS[id].glyph, caveat: FLAG_DEFS[id].caveat, why: why };
   }
 
   // opts: records, catalog, section ('all' or a section id), sectionSizes
@@ -373,7 +394,55 @@
     };
   }
 
+  // byPeriod: [{ id, label, analysis }]. Every flag raised in any of those
+  // periods, one entry per (period, prompt, flag), most worth attention first.
+  // The combined all-periods analysis is never used here on purpose: a period
+  // with few records is hidden by another period's full set.
+  function priorities(byPeriod) {
+    var out = [];
+    byPeriod.forEach(function (p, pi) {
+      p.analysis.slots.forEach(function (s, si) {
+        s.flags.forEach(function (f) {
+          out.push({
+            key: p.id + '|' + s.slotId + '|' + f.id,
+            periodId: p.id, periodLabel: p.label, slotId: s.slotId, module: s.module, prompt: s.prompt,
+            flag: f, slot: s, _o: [PRIORITY_ORDER.indexOf(f.id), pi, si]
+          });
+        });
+      });
+    });
+    out.sort(function (a, b) { return (a._o[0] - b._o[0]) || (a._o[1] - b._o[1]) || (a._o[2] - b._o[2]); });
+    out.forEach(function (x) { delete x._o; });
+    return out;
+  }
+
+  // The answers worth reading, one list, in the order a teacher should meet them.
+  // With no slotId it walks the flagged prompts (most important first); with one
+  // it holds that prompt's answers in each period given. An answer appears once.
+  function evidenceQueue(byPeriod, slotId) {
+    var seen = {}, out = [];
+    function take(periodId, periodLabel, slot) {
+      slot.readFirst.forEach(function (a) {
+        var k = periodId + '|' + slot.slotId + '|' + a.code;
+        if (seen[k]) return;
+        seen[k] = true;
+        out.push({ periodId: periodId, periodLabel: periodLabel, slotId: slot.slotId, module: slot.module,
+          prompt: slot.prompt, flags: slot.flags, answer: a });
+      });
+    }
+    if (slotId) {
+      byPeriod.forEach(function (p) {
+        var slot = p.analysis.slots.filter(function (s) { return s.slotId === slotId; })[0];
+        if (slot) take(p.id, p.label, slot);
+      });
+    } else {
+      priorities(byPeriod).forEach(function (pr) { take(pr.periodId, pr.periodLabel, pr.slot); });
+    }
+    return out;
+  }
+
   return {
+    PRIORITY_ORDER: PRIORITY_ORDER, priorities: priorities, evidenceQueue: evidenceQueue,
     CONFIDENCE_WORDS: CONFIDENCE_WORDS, THRESHOLDS: THRESHOLDS, CONTRACT: CONTRACT, FLAG_DEFS: FLAG_DEFS,
     studentCode: studentCode, topicIdFromKey: topicIdFromKey, normalizeRecord: normalizeRecord,
     buildCatalog: buildCatalog, analyze: analyze, matchTerm: matchTerm, wordSet: wordSet

@@ -25,106 +25,127 @@
   --blackened-steel:#1A1C1D; --charcoal-steel:#2B2F31; --gunmetal-gray:#3E4447; --aged-iron:#5A5F5C;
   --muted-sandstone:#D2B48C; --burnished-bronze:#8C5A2B; --antique-gold:#C9A46A;
   --warm-paper:#F5F0E7; --clean-paper:#FFFDF7; --ink:#151718; --ink-2:#3E4447; --rule:#D9D0BF;
-  --oxidized:#2F5D50;
   /* One hue, light to dark, for the 1 to 5 confidence ramp. A magnitude, so sequential. */
   --c1:#EFE3C9; --c2:#E0C98F; --c3:#C9A46A; --c4:#9C7433; --c5:#6B4B1D;
-  --focus:#151718;
-  --demo:#8C5A2B;
+  --focus:#151718; --demo:#8C5A2B;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--warm-paper);color:var(--ink);font:16px/1.6 Georgia,"Libre Baskerville",serif}
-.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
-header.top{background:var(--blackened-steel);color:var(--warm-paper);padding:20px 0 18px;border-bottom:4px solid var(--antique-gold)}
-header.top h1{margin:0;font:700 1.55rem/1.2 Georgia,serif;letter-spacing:.01em}
-header.top p{margin:6px 0 0;color:var(--muted-sandstone);font:.95rem/1.5 system-ui,Arial,sans-serif}
-.demo{background:#FFF4DC;border:2px solid var(--demo);border-radius:6px;padding:12px 14px;margin:18px 0;font:.92rem/1.5 system-ui,Arial,sans-serif}
-.demo b{color:var(--demo)}
-a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
-.controls{background:var(--clean-paper);border:1px solid var(--rule);border-radius:8px;padding:14px 16px;margin:18px 0}
-.controls h2{margin:0 0 8px;font:700 .8rem/1 system-ui,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--aged-iron)}
-.row{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:flex-end}
-.field{display:flex;flex-direction:column;gap:4px;font:.85rem/1.2 system-ui,Arial,sans-serif;color:var(--ink-2)}
-.field select,.field input{font:1rem system-ui,Arial,sans-serif;padding:7px 9px;border:1px solid var(--aged-iron);border-radius:5px;background:#fff;color:var(--ink)}
-.field input[type=number]{width:5.2rem}
-.seg{display:inline-flex;border:1px solid var(--aged-iron);border-radius:6px;overflow:hidden}
+body{margin:0;background:var(--warm-paper);color:var(--ink);font:16px/1.55 Georgia,"Libre Baskerville",serif}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+.ui{font-family:system-ui,Arial,sans-serif}
+header.top{background:var(--blackened-steel);color:var(--warm-paper);border-bottom:4px solid var(--antique-gold)}
+header.top .wrap{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:12px}
+.eyebrow{margin:0;font:700 .72rem/1.2 system-ui,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-sandstone)}
+header.top h1{margin:2px 0 0;font:700 1.45rem/1.2 Georgia,serif}
+.pill{font:700 .78rem/1 system-ui,Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:6px 10px;border:2px solid var(--antique-gold);border-radius:99px;color:var(--antique-gold)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.demo{margin:10px 0 0;font:.85rem/1.45 system-ui,Arial,sans-serif;color:var(--ink-2);border-left:4px solid var(--demo);padding:2px 0 2px 10px}
+.controls{background:var(--clean-paper);border:1px solid var(--rule);border-radius:8px;padding:10px 14px;margin:10px 0 6px}
+.row{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:flex-end}
+.field{display:flex;flex-direction:column;gap:4px;font:.82rem/1.2 system-ui,Arial,sans-serif;color:var(--ink-2);min-width:0}
+.field select,.field input{font:1rem system-ui,Arial,sans-serif;padding:7px 9px;border:1px solid var(--aged-iron);border-radius:5px;background:#fff;color:var(--ink);max-width:100%}
+.field input[type=number]{width:4.8rem}
+.seg{display:inline-flex;flex-wrap:wrap;border:1px solid var(--aged-iron);border-radius:6px;overflow:hidden}
 .seg button{font:600 .9rem system-ui,Arial,sans-serif;padding:8px 13px;border:0;border-right:1px solid var(--aged-iron);background:#fff;color:var(--ink);cursor:pointer}
 .seg button:last-child{border-right:0}
 .seg button[aria-pressed=true]{background:var(--blackened-steel);color:var(--warm-paper)}
 .go{font:700 1rem system-ui,Arial,sans-serif;padding:10px 18px;border:0;border-radius:6px;background:var(--burnished-bronze);color:#fff;cursor:pointer}
 .go:hover{background:#74481F}
-.note{font:.85rem/1.5 system-ui,Arial,sans-serif;color:var(--ink-2);margin:8px 0 0}
-#status{font:.9rem/1.5 system-ui,Arial,sans-serif;margin:10px 0;color:var(--ink-2)}
-#empty{background:var(--clean-paper);border:1px dashed var(--aged-iron);border-radius:8px;padding:26px;text-align:center;color:var(--ink-2);margin:18px 0}
-h2.sec{font:700 1.15rem/1.3 Georgia,serif;margin:28px 0 8px}
-.matrix{width:100%;border-collapse:collapse;background:var(--clean-paper);border:1px solid var(--rule);font:.9rem/1.45 system-ui,Arial,sans-serif}
-.matrix caption{text-align:left;font:.85rem/1.4 system-ui,Arial,sans-serif;color:var(--ink-2);padding:0 0 6px}
-.matrix th,.matrix td{border-top:1px solid var(--rule);padding:8px 10px;text-align:left;vertical-align:top}
-.matrix thead th{background:var(--charcoal-steel);color:var(--warm-paper);border-top:0;font-weight:600}
-.matrix tbody th{font-weight:600;width:30%}
-.none{color:var(--aged-iron)}
-.flag{max-width:100%;display:inline-flex;align-items:center;gap:6px;margin:2px 6px 2px 0;padding:2px 9px 2px 5px;border-radius:5px;font:700 .8rem/1.5 system-ui,Arial,sans-serif;color:var(--ink);background:#fff}
-.flag .g{display:inline-grid;place-items:center;width:1.35rem;height:1.35rem;background:var(--ink);color:#fff;font-size:.72rem;border-radius:3px}
+.sizes{margin-top:8px;font:.85rem/1.4 system-ui,Arial,sans-serif;color:var(--ink-2)}
+.sizes summary{cursor:pointer}
+.sizes .row{margin-top:8px}
+#status{font:.82rem/1.45 system-ui,Arial,sans-serif;margin:6px 0;color:var(--ink-2)}
+#empty{background:var(--clean-paper);border:1px dashed var(--aged-iron);border-radius:8px;padding:22px;text-align:center;color:var(--ink-2);margin:12px 0;font-family:system-ui,Arial,sans-serif}
+dl.stats{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px;font-family:system-ui,Arial,sans-serif}
+dl.stats div{flex:1 1 140px;background:var(--clean-paper);border:1px solid var(--rule);border-radius:8px;padding:5px 12px}
+dl.stats dt{font:700 .72rem/1.2 system-ui,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--aged-iron)}
+dl.stats dd{margin:0;font:700 1.3rem/1.2 Georgia,serif}
+details.how{background:var(--clean-paper);border:1px solid var(--rule);border-radius:8px;padding:6px 14px;margin:0 0 8px;font:.9rem/1.5 system-ui,Arial,sans-serif}
+details.how summary{cursor:pointer;font-weight:700}
+details.how dl{margin:8px 0 0}
+details.how dt{font-weight:700;margin-top:8px}
+details.how dd{margin:0;color:var(--ink-2)}
+details.how .cant b,.cant b{color:var(--burnished-bronze)}
+.tabs{display:flex;flex-wrap:wrap;gap:4px;border-bottom:2px solid var(--charcoal-steel);margin:4px 0 10px}
+.tabs button{font:700 .92rem system-ui,Arial,sans-serif;padding:9px 14px;border:2px solid transparent;border-bottom:0;background:transparent;color:var(--ink-2);cursor:pointer;border-radius:6px 6px 0 0}
+.tabs button[aria-selected=true]{background:var(--charcoal-steel);color:var(--warm-paper)}
+.tabs .n{display:inline-block;min-width:1.4em;text-align:center;margin-left:6px;padding:0 5px;border-radius:99px;background:var(--antique-gold);color:var(--ink);font-size:.8rem}
+.panel[hidden]{display:none}
+.panel>h2{margin:0 0 2px;font:700 1.1rem/1.3 Georgia,serif}
+.lede{margin:0 0 10px;font:.88rem/1.5 system-ui,Arial,sans-serif;color:var(--ink-2)}
+.flag{max-width:100%;display:inline-flex;align-items:center;gap:6px;padding:2px 9px 2px 5px;border-radius:5px;font:700 .82rem/1.5 system-ui,Arial,sans-serif;color:var(--ink);background:#fff}
+.flag .g{flex:none;display:inline-grid;place-items:center;width:1.35rem;height:1.35rem;background:var(--ink);color:#fff;font-size:.72rem;border-radius:3px}
 .flag-skipped{border:2px dashed var(--ink)}
 .flag-floor{border:3px double var(--ink)}
 .flag-ceiling{border:2px solid var(--ink);border-left-width:6px}
 .flag-confidentThin{border:2px dotted var(--ink);background:#FFF4DC}
-.cards{display:grid;gap:12px}
-.card{background:var(--clean-paper);border:1px solid var(--rule);border-radius:8px}
-.card>button{all:unset;display:block;box-sizing:border-box;width:100%;padding:14px 16px;cursor:pointer}
-.card>button:focus-visible{outline:3px solid var(--focus);outline-offset:-3px;border-radius:8px}
-.card .mod{font:700 .78rem/1 system-ui,Arial,sans-serif;letter-spacing:.07em;text-transform:uppercase;color:var(--burnished-bronze)}
-.card .prompt{margin:4px 0 8px;font-size:1rem;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.card[data-open=true] .prompt{-webkit-line-clamp:unset;display:block}
-.figs{display:flex;flex-wrap:wrap;gap:6px 22px;font:.88rem/1.4 system-ui,Arial,sans-serif;color:var(--ink-2)}
-.figs b{color:var(--ink)}
-.thin{font:700 .75rem/1.4 system-ui,Arial,sans-serif;border:1px dashed var(--aged-iron);border-radius:4px;padding:1px 6px;color:var(--aged-iron)}
-.detail{padding:4px 16px 16px;border-top:1px solid var(--rule)}
-.detail[hidden]{display:none}
-.detail h3{font:700 .8rem/1 system-ui,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--aged-iron);margin:18px 0 8px}
-.conf{display:flex;gap:2px;height:22px;max-width:520px}
+.none{color:var(--aged-iron);font:.88rem system-ui,Arial,sans-serif}
+.list{display:grid;gap:12px}
+.list.pri-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));align-items:start}
+.pri{background:var(--clean-paper);border:1px solid var(--rule);border-left:8px solid var(--charcoal-steel);border-radius:8px;padding:10px 14px 12px}
+.pri .top{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin-bottom:6px}
+.where{font:700 .75rem/1.2 system-ui,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--burnished-bronze)}
+.period-tag{font:700 .75rem/1 system-ui,Arial,sans-serif;padding:3px 8px;border-radius:4px;background:var(--charcoal-steel);color:var(--warm-paper)}
+.pri h3{margin:2px 0 4px;font:700 1rem/1.35 Georgia,serif}
+.caveat{margin:0 0 8px;font:italic .85rem/1.4 Georgia,serif;color:var(--ink-2)}
+.pri .promptline{margin:0 0 10px;font:.88rem/1.4 system-ui,Arial,sans-serif;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+.btn{font:700 .9rem system-ui,Arial,sans-serif;padding:8px 14px;border-radius:6px;border:2px solid var(--charcoal-steel);background:var(--charcoal-steel);color:var(--warm-paper);cursor:pointer}
+.btn.alt{background:#fff;color:var(--ink)}
+.btn[disabled]{opacity:.45;cursor:default}
+.more{margin-top:10px;border-top:1px solid var(--rule);padding-top:4px}
+.more[hidden]{display:none}
+.more h4{font:700 .75rem/1 system-ui,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--aged-iron);margin:14px 0 6px}
+.conf{display:flex;gap:2px;height:20px;max-width:480px}
 .conf span{display:block;min-width:2px;border-radius:3px}
 .conf-text{font:.85rem/1.5 system-ui,Arial,sans-serif;margin:6px 0 0;color:var(--ink-2)}
-dl.contract{margin:0;font:.88rem/1.5 system-ui,Arial,sans-serif}
-dl.contract dt{font-weight:700;margin-top:8px}
-dl.contract dd{margin:0;color:var(--ink-2)}
-dl.contract .cant b{color:var(--burnished-bronze)}
-.terms{border-collapse:collapse;font:.88rem/1.4 system-ui,Arial,sans-serif;width:100%;max-width:520px}
+.terms{border-collapse:collapse;font:.88rem/1.4 system-ui,Arial,sans-serif;width:100%;max-width:480px}
 .terms th,.terms td{padding:5px 12px 5px 0;text-align:left;border-bottom:1px solid var(--rule)}
-ol.read{margin:0;padding-left:1.2rem}
-ol.read li{margin:0 0 12px}
-.meta{font:.8rem/1.4 system-ui,Arial,sans-serif;color:var(--ink-2)}
-blockquote{margin:4px 0 0;padding:6px 12px;border-left:4px solid var(--antique-gold);background:#fff;white-space:pre-wrap;overflow-wrap:anywhere}
-.cmp{display:flex;flex-wrap:wrap;gap:8px 28px;font:.88rem/1.5 system-ui,Arial,sans-serif}
-.cmp div{flex:1 1 180px;min-width:0}
-footer{margin:40px 0 60px;font:.85rem/1.5 system-ui,Arial,sans-serif;color:var(--ink-2)}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.figs{display:flex;flex-wrap:wrap;gap:4px 20px;font:.88rem/1.4 system-ui,Arial,sans-serif;color:var(--ink-2)}
+.figs b{color:var(--ink)}
+.thin{font:700 .75rem/1.4 system-ui,Arial,sans-serif;border:1px dashed var(--aged-iron);border-radius:4px;padding:1px 6px;color:var(--aged-iron)}
+.ev{background:var(--clean-paper);border:1px solid var(--rule);border-radius:8px;padding:16px}
+.ev:focus{outline:3px solid var(--focus);outline-offset:2px}
+.ev .ans{margin:10px 0 8px;padding:10px 14px;border-left:5px solid var(--antique-gold);background:#fff;font-size:1.12rem;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}
+.meta{font:.82rem/1.45 system-ui,Arial,sans-serif;color:var(--ink-2)}
+.nav{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:12px}
+.nav .count{font:700 .9rem system-ui,Arial,sans-serif}
+.cmp{width:100%;border-collapse:collapse;background:var(--clean-paper);border:1px solid var(--rule);font:.9rem/1.45 system-ui,Arial,sans-serif}
+.cmp th,.cmp td{border-top:1px solid var(--rule);padding:8px 10px;text-align:left;vertical-align:top;overflow-wrap:anywhere}
+.cmp thead th{background:var(--charcoal-steel);color:var(--warm-paper);border-top:0}
+.cmp tbody th{width:28%}
+.cmp .sm{display:block;color:var(--ink-2);font-size:.82rem;margin-top:3px}
+.prow{background:var(--clean-paper);border:1px solid var(--rule);border-radius:8px}
+.prow>button{all:unset;display:block;box-sizing:border-box;width:100%;padding:10px 14px;cursor:pointer}
+.prow>button:focus-visible{outline:3px solid var(--focus);outline-offset:-3px;border-radius:8px}
+.prow .mod{font:700 .75rem/1 system-ui,Arial,sans-serif;letter-spacing:.07em;text-transform:uppercase;color:var(--burnished-bronze);margin-bottom:3px;display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}
+.prow .more{margin:0 14px 12px}
+h3.pg{font:700 1rem/1.3 Georgia,serif;margin:18px 0 8px}
+footer{margin:34px 0 50px;font:.82rem/1.5 system-ui,Arial,sans-serif;color:var(--ink-2)}
 @media (max-width:560px){
-  .matrix{font-size:.8rem;table-layout:fixed}.matrix th,.matrix td{padding:6px;overflow-wrap:anywhere}
-  .matrix tbody th{width:34%}
-  .field{width:100%}
-  .field select{width:100%;max-width:100%}
-  .seg{display:flex;flex-wrap:wrap;width:100%}
-  .seg button{flex:1 1 auto;border-bottom:1px solid var(--aged-iron);padding:8px 10px}
+  .field{width:100%}.field select{width:100%}
+  .seg{display:flex;width:100%}.seg button{flex:1 1 auto;border-bottom:1px solid var(--aged-iron);padding:8px 10px}
   .go{width:100%}
+  .cmp{table-layout:fixed;font-size:.8rem}.cmp th,.cmp td{padding:6px}
+  .tabs button{padding:8px 9px;font-size:.85rem}
 }
 </style>
 </head>
 <body>
 <header class="top">
   <div class="wrap">
-    <h1>Curriculum X-Ray</h1>
-    <p>Which prompts are working? Calculated in this browser from backed-up responses. Nothing is stored and nothing is sent.</p>
+    <div>
+      <p class="eyebrow">BeHistorical · Teacher tools</p>
+      <h1>Curriculum X-Ray</h1>
+    </div>
+    <span class="pill">Demo data</span>
   </div>
 </header>
 
 <main class="wrap" id="main">
-  <div class="demo" role="note">
-    <b>DEMONSTRATION DATA.</b> Every student on this page is invented. Four patterns were planted on purpose so the flags have something known to find: a Floor, a Skipped, a Ceiling and a Confident but thin. They are tests of the page, not findings about any room. This build makes no network request and no AI call.
-  </div>
+  <p class="demo"><b>Invented students.</b> Four patterns were planted to test the flags. They are not findings about any room.</p>
 
-  <section class="controls" aria-labelledby="ctl">
-    <h2 id="ctl">Choose the class</h2>
+  <section class="controls" aria-label="Choose the class">
     <div class="row">
       <div class="field">
         <label for="topic">Topic</label>
@@ -134,24 +155,34 @@ footer{margin:40px 0 60px;font:.85rem/1.5 system-ui,Arial,sans-serif;color:var(-
         <span id="seclabel">Class period</span>
         <div class="seg" role="group" aria-labelledby="seclabel" id="sections"></div>
       </div>
-      <div class="field" id="sizes" aria-label="Students in each section"></div>
       <button class="go" id="analyze" type="button">Analyze Class</button>
     </div>
-    <p class="note">Press Analyze Class when the period is over. Answers changed in the last few minutes are set aside, because the backup saves half-typed sentences. The data cannot say how many students a section has, so type the real count.</p>
+    <details class="sizes" id="sizesbox">
+      <summary id="sizesum">Enrolled counts</summary>
+      <p style="margin:6px 0 0">The data cannot say how many students a section has, so type the real count. It is what lets the page notice missing records.</p>
+      <div class="row" id="sizes"></div>
+    </details>
   </section>
 
   <div id="status" role="status" aria-live="polite"></div>
-  <div id="empty">Nothing analyzed yet. Choose a class period and press <b>Analyze Class</b>.</div>
+  <div id="empty">Nothing analyzed yet. Press <b>Analyze Class</b> when the period is over.</div>
+
   <div id="out" hidden>
-    <h2 class="sec">Flags by class period</h2>
-    <div id="matrix"></div>
-    <h2 class="sec" id="cardshead">Prompts, in the order a student meets them</h2>
-    <p class="note" style="margin:0 0 10px">A flag says where to read, never what is wrong. Open a prompt to see what each number can and cannot tell you.</p>
-    <div class="cards" id="cards"></div>
+    <details class="how">
+      <summary>How to read this page (what each number can and cannot tell you)</summary>
+      <div id="how"></div>
+    </details>
+
+    <div class="tabs" role="tablist" aria-label="Views" id="tabs"></div>
+
+    <section class="panel" id="p-priorities" role="tabpanel" aria-labelledby="t-priorities"></section>
+    <section class="panel" id="p-evidence" role="tabpanel" aria-labelledby="t-evidence" hidden></section>
+    <section class="panel" id="p-compare" role="tabpanel" aria-labelledby="t-compare" hidden></section>
+    <section class="panel" id="p-prompts" role="tabpanel" aria-labelledby="t-prompts" hidden></section>
   </div>
 
   <footer>
-    <p>Phase A, Evidence Explorer. Counts only: how many responded, how much was written, which authored terms appear, and each student's own 1 to 5 confidence. Whether an answer is <em>correct</em> is a judgment this page does not make. AI reasoning analysis is not part of this build and would need district approval first.</p>
+    <p>Counts only: who responded, how much was written, which authored terms appear, and each student's own 1 to 5 confidence. Whether an answer is <em>correct</em> is a judgment this page does not make. AI analysis is not part of this build and would need district approval first.</p>
   </footer>
 </main>
 
@@ -247,12 +278,33 @@ footer{margin:40px 0 60px;font:.85rem/1.5 system-ui,Arial,sans-serif;color:var(-
     }
   };
 
+  // The ids are the technical names the design record and the tests use. The
+  // labels are what a teacher reads, in plain words. `caveat` is the one sentence
+  // that must travel with the flag wherever it is shown, because each of these is
+  // easy to read as more than it is. The full contract sits behind a disclosure;
+  // this sentence never does.
   var FLAG_DEFS = {
-    skipped: { label: 'Skipped', glyph: 'S' },
-    floor: { label: 'Floor', glyph: 'F' },
-    ceiling: { label: 'Ceiling', glyph: 'C' },
-    confidentThin: { label: 'Confident but thin', glyph: 'T' }
+    floor: {
+      label: 'Terms missing', glyph: 'M',
+      caveat: 'This does not show the explanation is wrong. Students may have used different words.'
+    },
+    confidentThin: {
+      label: 'Confident but thin', glyph: 'T',
+      caveat: 'A short answer can be right, and confidence is the student\'s own report.'
+    },
+    skipped: {
+      label: 'Few records', glyph: 'R',
+      caveat: 'Missing records do not prove students skipped the work. Someone offline or not signed in leaves no record.'
+    },
+    ceiling: {
+      label: 'Terms widely used', glyph: 'W',
+      caveat: 'Matching terms does not show they were used correctly. It may also mean the prompt is not separating anyone.'
+    }
   };
+
+  // The order the page lists priorities in: the instructional signals first, then
+  // the missing-records signal, then the one that may simply be good news.
+  var PRIORITY_ORDER = ['floor', 'confidentThin', 'skipped', 'ceiling'];
 
   var STOP = { and: 1, the: 1, of: 1, for: 1, with: 1, from: 1, that: 1, this: 1, into: 1 };
 
@@ -477,7 +529,7 @@ footer{margin:40px 0 60px;font:.85rem/1.5 system-ui,Arial,sans-serif;color:var(-
   }
 
   function flag(id, why) {
-    return { id: id, label: FLAG_DEFS[id].label, glyph: FLAG_DEFS[id].glyph, why: why };
+    return { id: id, label: FLAG_DEFS[id].label, glyph: FLAG_DEFS[id].glyph, caveat: FLAG_DEFS[id].caveat, why: why };
   }
 
   // opts: records, catalog, section ('all' or a section id), sectionSizes
@@ -534,7 +586,55 @@ footer{margin:40px 0 60px;font:.85rem/1.5 system-ui,Arial,sans-serif;color:var(-
     };
   }
 
+  // byPeriod: [{ id, label, analysis }]. Every flag raised in any of those
+  // periods, one entry per (period, prompt, flag), most worth attention first.
+  // The combined all-periods analysis is never used here on purpose: a period
+  // with few records is hidden by another period's full set.
+  function priorities(byPeriod) {
+    var out = [];
+    byPeriod.forEach(function (p, pi) {
+      p.analysis.slots.forEach(function (s, si) {
+        s.flags.forEach(function (f) {
+          out.push({
+            key: p.id + '|' + s.slotId + '|' + f.id,
+            periodId: p.id, periodLabel: p.label, slotId: s.slotId, module: s.module, prompt: s.prompt,
+            flag: f, slot: s, _o: [PRIORITY_ORDER.indexOf(f.id), pi, si]
+          });
+        });
+      });
+    });
+    out.sort(function (a, b) { return (a._o[0] - b._o[0]) || (a._o[1] - b._o[1]) || (a._o[2] - b._o[2]); });
+    out.forEach(function (x) { delete x._o; });
+    return out;
+  }
+
+  // The answers worth reading, one list, in the order a teacher should meet them.
+  // With no slotId it walks the flagged prompts (most important first); with one
+  // it holds that prompt's answers in each period given. An answer appears once.
+  function evidenceQueue(byPeriod, slotId) {
+    var seen = {}, out = [];
+    function take(periodId, periodLabel, slot) {
+      slot.readFirst.forEach(function (a) {
+        var k = periodId + '|' + slot.slotId + '|' + a.code;
+        if (seen[k]) return;
+        seen[k] = true;
+        out.push({ periodId: periodId, periodLabel: periodLabel, slotId: slot.slotId, module: slot.module,
+          prompt: slot.prompt, flags: slot.flags, answer: a });
+      });
+    }
+    if (slotId) {
+      byPeriod.forEach(function (p) {
+        var slot = p.analysis.slots.filter(function (s) { return s.slotId === slotId; })[0];
+        if (slot) take(p.id, p.label, slot);
+      });
+    } else {
+      priorities(byPeriod).forEach(function (pr) { take(pr.periodId, pr.periodLabel, pr.slot); });
+    }
+    return out;
+  }
+
   return {
+    PRIORITY_ORDER: PRIORITY_ORDER, priorities: priorities, evidenceQueue: evidenceQueue,
     CONFIDENCE_WORDS: CONFIDENCE_WORDS, THRESHOLDS: THRESHOLDS, CONTRACT: CONTRACT, FLAG_DEFS: FLAG_DEFS,
     studentCode: studentCode, topicIdFromKey: topicIdFromKey, normalizeRecord: normalizeRecord,
     buildCatalog: buildCatalog, analyze: analyze, matchTerm: matchTerm, wordSet: wordSet
@@ -841,11 +941,14 @@ window.BH_XRAY_CATALOGS = {"2.3":{"topicId":"2.3","title":"Exchange in the India
   var CAT = window.BH_XRAY_CATALOGS['2.3'];
   var $ = function (id) { return document.getElementById(id); };
 
-  var state = { section: 'all', sizes: {}, loaded: null, open: {} };
-  DEMO.sections.forEach(function (s) { state.sizes[s.id] = DEMO.sectionSizes[s.id]; });
-  var LABEL = { all: 'All periods' };
+  var PERIODS = DEMO.sections.filter(function (s) { return s.id !== 'unassigned'; });
+  var LABEL = {};
   DEMO.sections.forEach(function (s) { LABEL[s.id] = s.label; });
 
+  var state = { period: 'both', view: 'priorities', sizes: {}, loaded: null, openRows: {}, queueSlot: '', queueIndex: 0 };
+  DEMO.sections.forEach(function (s) { state.sizes[s.id] = DEMO.sectionSizes[s.id]; });
+
+  var TABS = [['priorities', 'Priorities'], ['evidence', 'Read answers'], ['compare', 'Compare periods'], ['prompts', 'All prompts']];
   var CONF_COLORS = ['', 'var(--c1)', 'var(--c2)', 'var(--c3)', 'var(--c4)', 'var(--c5)'];
 
   function el(tag, attrs, kids) {
@@ -858,6 +961,7 @@ window.BH_XRAY_CATALOGS = {"2.3":{"topicId":"2.3","title":"Exchange in the India
     (kids || []).forEach(function (c) { n.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); });
     return n;
   }
+  function clear(n) { while (n.firstChild) n.removeChild(n.firstChild); return n; }
 
   function flagChip(f) {
     return el('span', { class: 'flag flag-' + f.id }, [el('span', { class: 'g', 'aria-hidden': 'true', text: f.glyph }), f.label]);
@@ -867,72 +971,85 @@ window.BH_XRAY_CATALOGS = {"2.3":{"topicId":"2.3","title":"Exchange in the India
     return X.analyze({ records: state.loaded.records, catalog: CAT, section: section, sectionSizes: state.sizes, nowMs: DEMO.nowMs });
   }
 
+  // The periods the teacher is looking at, each with its own analysis. The
+  // combined all-periods analysis is never used for flags: one period's full set
+  // would hide another period's missing records.
+  function scope() {
+    var ids = state.period === 'both' ? PERIODS.map(function (p) { return p.id; }) : [state.period];
+    return ids.map(function (id) { return { id: id, label: LABEL[id], analysis: run(id) }; });
+  }
+
   // ── controls ──────────────────────────────────────────────────────────────
   function buildControls() {
-    var seg = $('sections');
-    seg.textContent = '';
-    [{ id: 'all', label: 'All periods' }].concat(DEMO.sections).forEach(function (s) {
-      var b = el('button', { type: 'button', 'data-sec': s.id, 'aria-pressed': String(state.section === s.id), text: s.label });
+    var seg = clear($('sections'));
+    [{ id: 'both', label: 'Both' }].concat(PERIODS).concat([{ id: 'unassigned', label: 'No period' }]).forEach(function (p) {
+      var b = el('button', { type: 'button', 'data-sec': p.id, 'aria-pressed': String(state.period === p.id), text: p.label });
       b.addEventListener('click', function () {
-        state.section = s.id;
-        Array.prototype.forEach.call(seg.children, function (c) { c.setAttribute('aria-pressed', String(c.getAttribute('data-sec') === s.id)); });
+        state.period = p.id; state.queueIndex = 0;
+        Array.prototype.forEach.call(seg.children, function (c) { c.setAttribute('aria-pressed', String(c.getAttribute('data-sec') === p.id)); });
         if (state.loaded) render();
       });
       seg.appendChild(b);
     });
-    var sizes = $('sizes');
-    sizes.textContent = '';
-    sizes.appendChild(el('span', { text: 'Students enrolled' }));
-    var wrap = el('div', { class: 'row', style: 'gap:8px 14px' });
+    var sizes = clear($('sizes'));
     DEMO.sections.forEach(function (s) {
       var id = 'size-' + s.id;
       var input = el('input', { type: 'number', id: id, min: '1', max: '400', value: String(state.sizes[s.id]) });
       input.addEventListener('change', function () {
         var v = parseInt(input.value, 10);
-        if (v > 0) state.sizes[s.id] = v; else { delete state.sizes[s.id]; }
+        if (v > 0) state.sizes[s.id] = v; else delete state.sizes[s.id];
+        sizeSummary();
         if (state.loaded) render();
       });
-      wrap.appendChild(el('label', { for: id, class: 'meta' }, [s.label + ' ', input]));
+      sizes.appendChild(el('label', { for: id, class: 'meta' }, [s.label + ' ', input]));
     });
-    sizes.appendChild(wrap);
+    sizeSummary();
+  }
+  function sizeSummary() {
+    $('sizesum').textContent = 'Enrolled counts: ' + PERIODS.map(function (p) { return p.label + ' ' + (state.sizes[p.id] || '?'); }).join(', ') + ' (change)';
   }
 
-  // ── rendering ─────────────────────────────────────────────────────────────
+  // ── pieces ────────────────────────────────────────────────────────────────
+  function respondedText(s) {
+    var n = s.n + s.pending;
+    return s.size ? n + ' of ' + s.size : String(n);
+  }
+
   function figures(s) {
     var f = el('div', { class: 'figs' });
-    var resp = s.size ? (s.n + s.pending) + ' of ' + s.size : String(s.n + s.pending);
-    f.appendChild(el('span', {}, ['Responded ', el('b', { text: resp })]));
-    if (!s.size) f.appendChild(el('span', { class: 'meta', text: '(enter the section size)' }));
+    f.appendChild(el('span', {}, ['Responded ', el('b', { text: respondedText(s) })]));
+    if (!s.size) f.appendChild(el('span', { class: 'meta', text: '(enter the enrolled count)' }));
     if (s.words) f.appendChild(el('span', {}, ['Median ', el('b', { text: s.words.median + ' words' })]));
-    if (s.hasTerms) f.appendChild(el('span', {}, ['Terms ', el('b', { text: s.terms.floorAnswers + ' none, ' + s.terms.ceilingAnswers + ' strong' })]));
-    else f.appendChild(el('span', { class: 'none', text: 'No terms authored' }));
-    if (s.thin) f.appendChild(el('span', { class: 'thin', text: 'Thin: fewer than ' + X.THRESHOLDS.minN + ' answers, nothing flagged' }));
+    if (s.hasTerms && s.terms) f.appendChild(el('span', {}, ['Terms ', el('b', { text: s.terms.floorAnswers + ' none, ' + s.terms.ceilingAnswers + ' strong' })]));
+    else if (!s.hasTerms) f.appendChild(el('span', { class: 'none', text: 'No terms authored' }));
+    if (s.thin) f.appendChild(el('span', { class: 'thin', text: 'Thin: under ' + X.THRESHOLDS.minN + ' answers, nothing flagged' }));
     return f;
   }
 
   function confBar(s) {
     var wrap = el('div');
     var bar = el('div', { class: 'conf', role: 'img', 'aria-label': 'Confidence, counts per rating' });
-    var total = s.confidence.rated;
     var words = [];
     for (var i = 1; i <= 5; i++) {
       var c = s.confidence.counts[i];
       words.push(X.CONFIDENCE_WORDS[i] + ' ' + c);
       if (c) bar.appendChild(el('span', { style: 'flex:' + c + ';background:' + CONF_COLORS[i], title: X.CONFIDENCE_WORDS[i] + ': ' + c }));
     }
-    if (!total) bar.appendChild(el('span', { style: 'flex:1;background:var(--rule)' }));
+    if (!s.confidence.rated) bar.appendChild(el('span', { style: 'flex:1;background:var(--rule)' }));
     wrap.appendChild(bar);
     wrap.appendChild(el('p', { class: 'conf-text', text: words.join('  ·  ') + (s.confidence.blank ? '  ·  No rating ' + s.confidence.blank : '') }));
     return wrap;
   }
 
-  function detail(s, all) {
-    var d = el('div', { class: 'detail' });
-    d.appendChild(el('h3', { text: 'Confidence, in the students\' words' }));
-    if (s.confidence) d.appendChild(confBar(s)); else d.appendChild(el('p', { class: 'none', text: 'No answers in this view.' }));
-
+  // The numbers behind a prompt. Used inside a priority and inside an All
+  // prompts row, so the two can never disagree.
+  function numbers(s) {
+    var d = el('div');
+    d.appendChild(figures(s));
+    d.appendChild(el('h4', { text: 'Confidence, in the students\' words' }));
+    d.appendChild(s.confidence ? confBar(s) : el('p', { class: 'none', text: 'No answers in this view.' }));
     if (s.hasTerms && s.terms) {
-      d.appendChild(el('h3', { text: 'Authored terms, mentioned in full or in part' }));
+      d.appendChild(el('h4', { text: 'Authored terms, mentioned in full or in part' }));
       var t = el('table', { class: 'terms' });
       t.appendChild(el('thead', {}, [el('tr', {}, [el('th', { scope: 'col', text: 'Term' }), el('th', { scope: 'col', text: 'In full' }), el('th', { scope: 'col', text: 'In part' })])]));
       var tb = el('tbody');
@@ -942,115 +1059,239 @@ window.BH_XRAY_CATALOGS = {"2.3":{"topicId":"2.3","title":"Exchange in the India
       t.appendChild(tb);
       d.appendChild(t);
     }
-
-    d.appendChild(el('h3', { text: 'Compare class periods' }));
-    var cmp = el('div', { class: 'cmp' });
-    DEMO.sections.forEach(function (sec) {
-      var other = all[sec.id] && all[sec.id].slots.filter(function (x) { return x.slotId === s.slotId; })[0];
-      if (!other) return;
-      var box = el('div', {}, [el('b', { text: sec.label }), el('br'),
-        'Responded ' + (other.size ? (other.n + other.pending) + ' of ' + other.size : other.n + other.pending), el('br'),
-        other.words ? 'Median ' + other.words.median + ' words' : 'No answers', el('br')]);
-      if (other.flags.length) other.flags.forEach(function (f) { box.appendChild(flagChip(f)); });
-      else box.appendChild(el('span', { class: 'none', text: other.thin ? 'Too few to flag' : 'No flags' }));
-      cmp.appendChild(box);
-    });
-    d.appendChild(cmp);
-
-    d.appendChild(el('h3', { text: 'Read these first' }));
-    if (s.readFirst.length) {
-      var ol = el('ol', { class: 'read' });
-      s.readFirst.forEach(function (r) {
-        var cw = r.confidence ? X.CONFIDENCE_WORDS[r.confidence] : 'no rating';
-        ol.appendChild(el('li', {}, [
-          el('div', { class: 'meta', text: r.code + ' · ' + (LABEL[r.section] || 'Unassigned') + ' · ' + cw + ' · ' + r.words + ' words · ' + r.why }),
-          el('blockquote', { text: r.text })
-        ]));
-      });
-      d.appendChild(ol);
-    } else d.appendChild(el('p', { class: 'none', text: 'No answers to read in this view.' }));
-
-    d.appendChild(el('h3', { text: 'What these numbers can and cannot tell you' }));
-    var dl = el('dl', { class: 'contract' });
-    ['responded', 'length', s.hasTerms ? 'terms' : null, 'confidence', 'flags', 'ai'].forEach(function (k) {
+    d.appendChild(el('h4', { text: 'What this can and cannot tell you' }));
+    var dl = el('dl', { class: 'how' });
+    ['responded', 'length', s.hasTerms ? 'terms' : null, 'confidence', 'flags'].forEach(function (k) {
       if (!k) return;
       var row = X.CONTRACT[k];
-      dl.appendChild(el('dt', { text: row.name }));
-      dl.appendChild(el('dd', { text: row.tells }));
-      dl.appendChild(el('dd', { class: 'cant' }, [el('b', { text: 'Cannot tell: ' }), row.cannotTell]));
+      dl.appendChild(el('dt', { text: row.name, style: 'font-weight:700;margin-top:6px;font:700 .88rem system-ui' }));
+      dl.appendChild(el('dd', { style: 'margin:0;font:.85rem/1.45 system-ui;color:var(--ink-2)', text: row.tells }));
+      dl.appendChild(el('dd', { class: 'cant', style: 'margin:0;font:.85rem/1.45 system-ui;color:var(--ink-2)' }, [el('b', { text: 'Cannot tell: ' }), row.cannotTell]));
     });
     d.appendChild(dl);
     return d;
   }
 
+  function toggle(btn, panel) {
+    var now = btn.getAttribute('aria-expanded') !== 'true';
+    btn.setAttribute('aria-expanded', String(now));
+    panel.hidden = !now;
+  }
+
+  // ── views ─────────────────────────────────────────────────────────────────
+  function viewPriorities(sc) {
+    var host = clear($('p-priorities'));
+    var list = X.priorities(sc);
+    host.appendChild(el('h2', { text: 'Review priorities' }));
+    host.appendChild(el('p', { class: 'lede', text: 'A flag says where to read, never what is wrong.' }));
+    if (!list.length) {
+      host.appendChild(el('p', { class: 'none', text: 'Nothing is flagged for this selection. That is not the same as everything being fine: these signals only count records and terms.' }));
+      return;
+    }
+    var wrap = el('div', { class: 'list pri-grid' });
+    list.forEach(function (p, i) {
+      var card = el('article', { class: 'pri', 'data-key': p.key });
+      card.appendChild(el('div', { class: 'top' }, [
+        el('span', { class: 'period-tag', text: p.periodLabel }),
+        el('span', { class: 'where', text: p.module }),
+        flagChip(p.flag)
+      ]));
+      card.appendChild(el('h3', { text: p.flag.why }));
+      card.appendChild(el('p', { class: 'caveat', text: p.flag.caveat }));
+      var more = el('div', { class: 'more', id: 'more-' + i, hidden: '' });
+      more.appendChild(el('h4', { text: 'The prompt' }));
+      more.appendChild(el('p', { class: 'meta', text: p.prompt }));
+      more.appendChild(numbers(p.slot));
+      var read = el('button', { type: 'button', class: 'btn', text: 'Read answers' });
+      read.addEventListener('click', function () { readAnswers(p.periodId, p.slotId); });
+      var det = el('button', { type: 'button', class: 'btn alt', 'aria-expanded': 'false', 'aria-controls': 'more-' + i, text: 'Numbers behind this' });
+      det.addEventListener('click', function () { toggle(det, more); });
+      card.appendChild(el('div', { class: 'btns' }, [read, det]));
+      card.appendChild(more);
+      wrap.appendChild(card);
+    });
+    host.appendChild(wrap);
+  }
+
+  function readAnswers(periodId, slotId) {
+    state.period = periodId; state.queueSlot = slotId; state.queueIndex = 0; state.view = 'evidence';
+    Array.prototype.forEach.call($('sections').children, function (c) { c.setAttribute('aria-pressed', String(c.getAttribute('data-sec') === periodId)); });
+    render();
+    var card = $('ev-card'); if (card) card.focus();
+  }
+
+  function viewEvidence(sc) {
+    var host = clear($('p-evidence'));
+    host.appendChild(el('h2', { text: 'Read answers' }));
+    host.appendChild(el('p', { class: 'lede', text: 'A few answers chosen by rule, never by judgment: the confident but short ones, the shortest, and a typical one. Use the buttons or the left and right arrow keys.' }));
+
+    var sel = el('select', { id: 'qslot' });
+    sel.appendChild(el('option', { value: '', text: 'Flagged prompts, most important first' }));
+    CAT.slots.forEach(function (s) { sel.appendChild(el('option', { value: s.slotId, text: s.module })); });
+    sel.value = state.queueSlot;
+    sel.addEventListener('change', function () { state.queueSlot = sel.value; state.queueIndex = 0; viewEvidence(scope()); });
+    host.appendChild(el('div', { class: 'field', style: 'margin-bottom:12px' }, [el('label', { for: 'qslot', text: 'Show answers for' }), sel]));
+
+    var q = X.evidenceQueue(sc, state.queueSlot || null);
+    if (!q.length) {
+      host.appendChild(el('p', { class: 'none', text: 'No answers to read for this selection.' }));
+      return;
+    }
+    state.queueIndex = Math.max(0, Math.min(state.queueIndex, q.length - 1));
+    var item = q[state.queueIndex], a = item.answer;
+
+    var card = el('div', { class: 'ev', id: 'ev-card', tabindex: '-1' });
+    var top = el('div', { class: 'top', style: 'display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center' }, [
+      el('span', { class: 'period-tag', text: item.periodLabel }), el('span', { class: 'where', text: item.module })]);
+    item.flags.forEach(function (f) { top.appendChild(flagChip(f)); });
+    card.appendChild(top);
+    var pr = el('details', { style: 'margin-top:6px' }, [el('summary', { class: 'meta', style: 'cursor:pointer', text: 'The prompt' }), el('p', { class: 'meta', text: item.prompt })]);
+    card.appendChild(pr);
+    card.appendChild(el('blockquote', { class: 'ans', text: a.text, style: 'margin:10px 0 8px' }));
+    card.appendChild(el('p', { class: 'meta', text: a.code + ' · ' + (a.confidence ? X.CONFIDENCE_WORDS[a.confidence] : 'no rating') + ' · ' + a.words + ' words · ' + a.why }));
+    item.flags.forEach(function (f) { card.appendChild(el('p', { class: 'caveat', style: 'margin:6px 0 0', text: f.caveat })); });
+
+    var prev = el('button', { type: 'button', class: 'btn alt', text: 'Previous' });
+    var next = el('button', { type: 'button', class: 'btn', text: 'Next' });
+    if (state.queueIndex === 0) prev.setAttribute('disabled', '');
+    if (state.queueIndex === q.length - 1) next.setAttribute('disabled', '');
+    function go(d) { state.queueIndex += d; viewEvidence(scope()); var c = $('ev-card'); if (c) c.focus(); }
+    prev.addEventListener('click', function () { go(-1); });
+    next.addEventListener('click', function () { go(1); });
+    card.appendChild(el('div', { class: 'nav' }, [prev, el('span', { class: 'count', 'aria-live': 'polite', text: 'Answer ' + (state.queueIndex + 1) + ' of ' + q.length }), next]));
+    host.appendChild(card);
+  }
+
+  function viewCompare() {
+    var host = clear($('p-compare'));
+    host.appendChild(el('h2', { text: 'Compare periods' }));
+    host.appendChild(el('p', { class: 'lede', text: 'The same prompt can look different in different rooms. This ignores the period choice above and shows both.' }));
+    var cols = PERIODS.map(function (p) { return { id: p.id, label: p.label, a: run(p.id) }; });
+    var table = el('table', { class: 'cmp' });
+    table.appendChild(el('thead', {}, [el('tr', {}, [el('th', { scope: 'col', text: 'Prompt' })].concat(cols.map(function (c) { return el('th', { scope: 'col', text: c.label }); })))]));
+    var tb = el('tbody');
+    CAT.slots.forEach(function (slot, i) {
+      var tr = el('tr', {}, [el('th', { scope: 'row', text: slot.module })]);
+      cols.forEach(function (c) {
+        var s = c.a.slots[i], td = el('td');
+        if (s.flags.length) s.flags.forEach(function (f) { td.appendChild(flagChip(f)); td.appendChild(document.createTextNode(' ')); });
+        else td.appendChild(el('span', { class: 'none', text: s.thin ? 'Too few to flag' : 'No flags' }));
+        td.appendChild(el('span', { class: 'sm', text: respondedText(s) + ' responded' + (s.words ? ' · median ' + s.words.median + ' words' : '') }));
+        tr.appendChild(td);
+      });
+      tb.appendChild(tr);
+    });
+    table.appendChild(tb);
+    host.appendChild(table);
+  }
+
+  function viewPrompts(sc) {
+    var host = clear($('p-prompts'));
+    host.appendChild(el('h2', { text: 'All prompts' }));
+    host.appendChild(el('p', { class: 'lede', text: 'Every prompt in the order a student meets them. Open one for its numbers.' }));
+    sc.forEach(function (p) {
+      if (sc.length > 1) host.appendChild(el('h3', { class: 'pg', text: p.label }));
+      var list = el('div', { class: 'list', style: 'gap:8px' });
+      p.analysis.slots.forEach(function (s, i) {
+        var key = p.id + '|' + s.slotId;
+        var open = !!state.openRows[key];
+        var row = el('article', { class: 'prow' });
+        var btn = el('button', { type: 'button', 'aria-expanded': String(open), 'aria-controls': 'row-' + p.id + '-' + i });
+        var head = el('div', { class: 'mod' }, [s.module]);
+        s.flags.forEach(function (f) { head.appendChild(flagChip(f)); });
+        btn.appendChild(head);
+        btn.appendChild(figures(s));
+        var more = el('div', { class: 'more', id: 'row-' + p.id + '-' + i });
+        more.hidden = !open;
+        more.appendChild(el('p', { class: 'meta', text: s.prompt }));
+        s.flags.forEach(function (f) { more.appendChild(el('p', { class: 'caveat', text: f.caveat })); });
+        more.appendChild(numbers(s));
+        btn.addEventListener('click', function () { state.openRows[key] = btn.getAttribute('aria-expanded') !== 'true'; toggle(btn, more); });
+        row.appendChild(btn); row.appendChild(more);
+        list.appendChild(row);
+      });
+      host.appendChild(list);
+    });
+  }
+
+  function howText() {
+    var host = clear($('how'));
+    var T = X.THRESHOLDS;
+    host.appendChild(el('p', { class: 'meta', text: 'Everything here is a count, never a judgment about whether an answer is right. A flag is a prompt to go and read some answers. This build makes no network request and no AI call.' }));
+    var dl = el('dl');
+    Object.keys(X.CONTRACT).forEach(function (k) {
+      var row = X.CONTRACT[k];
+      dl.appendChild(el('dt', { text: row.name }));
+      dl.appendChild(el('dd', { text: row.tells }));
+      dl.appendChild(el('dd', { class: 'cant' }, [el('b', { text: 'Cannot tell: ' }), row.cannotTell]));
+    });
+    host.appendChild(dl);
+    host.appendChild(el('p', { class: 'meta', style: 'margin-top:10px', text:
+      'When a flag is raised, in plain words. Terms missing: at least ' + Math.round(T.floorShare * 100) + '% of answers mention none of the prompt\'s authored terms, even in part. ' +
+      'Terms widely used: at least ' + Math.round(T.ceilingShare * 100) + '% of answers match ' + T.ceilingTerms + ' or more terms in full. ' +
+      'Confident but thin: at least ' + T.confidentThinMin + ' answers, and ' + Math.round(T.confidentThinShare * 100) + '% of them, say Solid or Could teach it with under ' + T.thinWords + ' words or no term at all. ' +
+      'Few records: fewer than ' + Math.round(T.skippedBelow * 100) + '% of enrolled students have a record. ' +
+      'Nothing is flagged under ' + T.minN + ' answers. Answers changed in the last ' + T.settleMinutes + ' minutes are set aside, because the backup saves half-typed sentences. These are starting values, to be tuned against real classes.' }));
+  }
+
+  // ── render ────────────────────────────────────────────────────────────────
   function render() {
-    var res = run(state.section);
-    var all = {};
-    DEMO.sections.forEach(function (s) { all[s.id] = run(s.id); });
+    var sc = scope();
     var allRes = run('all');
+    var list = X.priorities(sc);
 
     $('empty').hidden = true;
     $('out').hidden = false;
 
-    var bits = [(LABEL[state.section] || state.section) + ' · ' + res.records + ' answers analyzed',
-      'newest answer ' + new Date(res.newestMs).toISOString().slice(11, 16) + ' UTC'];
+    var analyzed = sc.reduce(function (n, p) { return n + p.analysis.records; }, 0);
+    var bits = [(state.period === 'both' ? 'Both periods' : LABEL[state.period]),
+      analyzed + ' answers analyzed', list.length + (list.length === 1 ? ' prompt flagged' : ' prompts flagged')];
     if (allRes.setAside) bits.push(allRes.setAside + ' set aside as possibly still being typed');
-    if (allRes.unmatched) bits.push(allRes.unmatched + ' record names a prompt that is not in this topic and was left out');
-    if (state.section === 'all' && !res.sizeKnown) bits.push('section sizes incomplete, so Skipped cannot be judged');
+    if (allRes.unmatched) bits.push(allRes.unmatched + ' record outside this topic left out');
+    bits.push('newest answer ' + new Date(allRes.newestMs).toISOString().slice(11, 16) + ' UTC');
     $('status').textContent = bits.join('  ·  ');
 
-    // Flags by class period.
-    var mx = $('matrix'); mx.textContent = '';
-    var table = el('table', { class: 'matrix' });
-    table.appendChild(el('caption', { text: 'Which prompts raised a flag in which class period. The same prompt can look different in different rooms.' }));
-    var cols = DEMO.sections.filter(function (s) { return s.id !== 'unassigned'; });
-    table.appendChild(el('thead', {}, [el('tr', {}, [el('th', { scope: 'col', text: 'Prompt' })].concat(cols.map(function (c) { return el('th', { scope: 'col', text: c.label }); })))]));
-    var tbody = el('tbody');
-    CAT.slots.forEach(function (slot, i) {
-      var tr = el('tr', {}, [el('th', { scope: 'row', text: slot.module })]);
-      cols.forEach(function (c) {
-        var cell = el('td');
-        var s = all[c.id].slots[i];
-        if (s.flags.length) s.flags.forEach(function (f) { cell.appendChild(flagChip(f)); });
-        else cell.appendChild(el('span', { class: 'none', text: s.thin ? 'Too few to flag' : 'None' }));
-        tr.appendChild(cell);
-      });
-      tbody.appendChild(tr);
+    // Tabs.
+    var tabs = clear($('tabs'));
+    TABS.forEach(function (t) {
+      var b = el('button', { type: 'button', role: 'tab', id: 't-' + t[0], 'aria-selected': String(state.view === t[0]), 'aria-controls': 'p-' + t[0], tabindex: state.view === t[0] ? '0' : '-1', 'data-view': t[0] }, [t[1]]);
+      if (t[0] === 'priorities') b.appendChild(el('span', { class: 'n', text: String(list.length) }));
+      b.addEventListener('click', function () { state.view = t[0]; render(); });
+      tabs.appendChild(b);
     });
-    table.appendChild(tbody);
-    mx.appendChild(table);
+    TABS.forEach(function (t) { $('p-' + t[0]).hidden = state.view !== t[0]; });
 
-    // Prompt cards.
-    var cards = $('cards'); cards.textContent = '';
-    res.slots.forEach(function (s, i) {
-      var open = !!state.open[s.slotId];
-      var card = el('article', { class: 'card', 'data-open': String(open) });
-      var btn = el('button', { type: 'button', 'aria-expanded': String(open), 'aria-controls': 'det-' + i });
-      btn.appendChild(el('div', { class: 'mod', text: s.module }));
-      btn.appendChild(el('p', { class: 'prompt', text: s.prompt }));
-      btn.appendChild(figures(s));
-      if (s.flags.length) {
-        var fl = el('div', { style: 'margin-top:8px' });
-        s.flags.forEach(function (f) { fl.appendChild(flagChip(f)); fl.appendChild(el('span', { class: 'meta', text: f.why + ' ' })); });
-        btn.appendChild(fl);
-      }
-      var det = detail(s, all);
-      det.id = 'det-' + i; det.hidden = !open;
-      btn.addEventListener('click', function () {
-        var now = btn.getAttribute('aria-expanded') !== 'true';
-        state.open[s.slotId] = now;
-        btn.setAttribute('aria-expanded', String(now));
-        card.setAttribute('data-open', String(now));
-        det.hidden = !now;
-      });
-      card.appendChild(btn); card.appendChild(det);
-      cards.appendChild(card);
-    });
+    viewPriorities(sc);
+    viewEvidence(sc);
+    viewCompare();
+    viewPrompts(sc);
+    howText();
   }
+
+  // Tabs: arrow keys move between them, as a tablist should.
+  $('tabs').addEventListener('keydown', function (e) {
+    if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+    var i = TABS.map(function (t) { return t[0]; }).indexOf(state.view);
+    i = (i + (e.key === 'ArrowRight' ? 1 : TABS.length - 1)) % TABS.length;
+    state.view = TABS[i][0];
+    render();
+    $('t-' + state.view).focus();
+    e.preventDefault();
+  });
+
+  // Reading answers: left and right step through them while focus is in the panel.
+  $('p-evidence').addEventListener('keydown', function (e) {
+    if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+    if (/^(SELECT|INPUT|TEXTAREA)$/.test(e.target.tagName)) return;
+    var btns = $('p-evidence').querySelectorAll('.nav .btn');
+    var b = e.key === 'ArrowRight' ? btns[1] : btns[0];
+    if (b && !b.hasAttribute('disabled')) { b.click(); e.preventDefault(); }
+  });
 
   $('analyze').addEventListener('click', function () {
     // The real page will fetch here. The demo "loads" its invented records.
     state.loaded = { records: DEMO.records };
+    state.view = 'priorities';
     render();
   });
 
