@@ -1484,6 +1484,52 @@ runs the real requests and the engine against the emulator with the real rules.
 `firestore-rules.test.js` holds the rules. The last two need the emulator and
 SKIP without it; a SKIP is not a pass.
 
+## The Curriculum X-Ray (demonstration build)
+
+`teacher/xray.html` shows a teacher which prompts in a topic are working, from backed-up
+responses, calculated in the browser. **This build reads no real record.** It runs on an
+invented class (`scripts/lib/xray-demo-data.js`, two periods of Topic 2.3) and its policy
+is `default-src 'none'`, so it makes no request at all. Pointing it at real data is
+blocked on ZCS reviewing the teacher-reader rule in `firestore/firestore.rules` and on
+the open questions in AndersonLogic-OS, `04_PRODUCTS/BeHistorical/Curriculum-X-Ray-Design-2026-10-08.md`.
+It is deliberately not linked from the teacher command center yet.
+
+- `scripts/lib/xray-core.js`, the calculations. One file, Node and browser. Reads nothing,
+  stores nothing, sends nothing, calls no AI, never names a student (an answer carries a
+  short code), never scores or ranks.
+- `node scripts/build-xray.js`, inline that file, the demo data and a prompt catalog lifted
+  from `assets/data/skills-map.js` into the page. `--check` fails on drift. Never hand-edit
+  between the sentinels.
+- `node scripts/test/xray-core.test.js` (offline) and `node scripts/test/xray-page.test.js`
+  (browser). Each carries negative controls.
+
+**Every signal has a row in `CONTRACT`** saying what it can and cannot tell a teacher, and
+the page prints the row beside the figure. The test fails if a signal exists without one. A
+count of how much a student wrote is a count of how much a student wrote. A flag (Skipped,
+Floor, Ceiling, Confident but thin) says where to read and never what is wrong. The
+thresholds are starting guesses in `THRESHOLDS`, to be tuned against real classes.
+
+Things learned building it, worth knowing before changing it:
+
+- **The term lists are menus, not checklists.** Checkpoint 2 asks for a few of seven
+  acceptable examples, so an answer is judged on how many terms it mentions and never on
+  the share of the list it covers.
+- **A word the prompt already contains never earns a partial term match.** Without that,
+  "trade" in "gold trade" hit nearly every answer and Floor could never fire. A term made
+  entirely of prompt words has to match in full, which undercounts a student who writes
+  "monsoon" for "monsoon winds"; that is documented and tested, and is why Floor only fires
+  at 60% of answers.
+- **A half-typed answer is not an answer.** The backup saves drafts, so anything changed in
+  the last five minutes is set aside, but it still counts as a student who responded.
+- **Checkpoint 1 and Checkpoint 2 ask different questions**, and each slot keeps only the
+  latest text, so the pre-coaching draft is gone. Nothing may compare the two as a measure
+  of improvement.
+- **The period filter matters.** Silver's skipped Primary Source disappears in the combined
+  view, because the other period's answers dilute it.
+- **A record carries no class period, teacher or name.** Period is meant to come from the
+  optional `sectionId`, written by a per-class link like `?classroom=kelly`, and nothing
+  writes it yet. A student without one lands in "Unassigned" rather than being guessed at.
+
 ## The Lecture Deck
 
 The deck is a sequence and carries sequence controls in **both** renderers:

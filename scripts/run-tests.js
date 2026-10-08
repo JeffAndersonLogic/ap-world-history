@@ -68,10 +68,12 @@ const SUITES = {
     ['scripts/test/evidence-image-surgery.test.js', 'Module 07 image candidates splice the right bytes'],
     ['scripts/test/schedule-cohorts.test.js', 'green/silver alternation, due dates, generated board and Canvas events'],
     ['scripts/test/teacher-today.test.js', 'the Today panel routes a date to the right teacher surface'],
-    ['scripts/test/topic-audit-coverage.test.js', 'topic audit records, coverage index, and the freshness check going quiet']
+    ['scripts/test/topic-audit-coverage.test.js', 'topic audit records, coverage index, and the freshness check going quiet'],
+    ['scripts/test/xray-core.test.js', 'Curriculum X-Ray: measurement contract, planted patterns found and nothing else, no student named, page not stale']
   ],
   browser: [
     ['scripts/test/sync-page.test.js', 'backup on the real lesson pages: off by default, restore, typing, conflicts, Foundations'],
+    ['scripts/test/xray-page.test.js', 'Curriculum X-Ray page: sealed from the network, keyboard, flags carry words, fits 320px'],
     ['scripts/test/unit3-atlas.browser.test.js', 'Unit 3 atlas: direct clicks, keyboard, touch, and responsive hub'],
     ['scripts/test/unit1-atlas.browser.test.js', 'Unit 1 atlas: regional map interaction and responsive embed'],
     ['scripts/test/unit2-atlas.browser.test.js', 'Unit 2 atlas: direct map clicks, keyboard, touch, and responsive hub embed'],
