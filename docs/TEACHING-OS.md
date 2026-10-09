@@ -126,6 +126,18 @@ This exists because Topics 2.6, 2.7 and 3.1 to 3.4 shipped the button, and a sho
 
 `scripts/test/teaching-os-briefing.browser.test.js`, in the browser suite, clicks Briefing on every deck in `DECKS` and asserts it opens with that deck's end target and first Must-land line, that the share tools copy the right link and text and print on a white page, that Escape and B work, that the slide does not move behind it, that `#briefing` opens it, that the projector never shows it, and that every local link on the page resolves (Topics 3.3 and 3.4 shipped a Student Lesson button naming 3.2's file). Its negative controls switch the shared briefing off, remove the projector guard and plant a dead link, and each must be caught.
 
+### The projector
+
+**The projection window is the teacher page with `?mode=project`, and it follows the teacher through the slide number in `T.projection.storageKey`.** Every time the teacher page draws a slide it saves the number there; a projector page listens for the browser's `storage` event and draws the same slide. A teacher page that reloads mid-class resumes on the saved slide rather than dragging the projector back to slide 1.
+
+**Teacher Preflight never reaches a projected screen.** Both the projection window and Present (F) on the teacher's own screen, which is often what is mirrored to the room, draw a neutral title screen in its place, and Escape brings the cockpit back with the preflight in view.
+
+This exists because Topics 2.6, 2.7 and 3.1 to 3.4 shipped a teacher page that saved the slide number and a projector that never read it: the projection window opened on Teacher Preflight and stayed there all lesson. Topics 2.1 and 2.3 to 2.5 hid preflight in the projection window but not in Present. Both were found on 2026-10-09, the same day as the Briefing button, and both had every check green because nothing opened two windows.
+
+**The iPad Remote frames `topic-X-X-os.html` for every topic but the 1.7 pilot**, in `teacher/remote-host.html` and `teacher/ipad-remote.html`. It used to name the topics that had that page and send everything else to `command-center-topic-X-X.html`, a list that fell behind: 3.1, 3.3 and 3.4 framed files that were never made.
+
+`scripts/test/teaching-os-projection.browser.test.js`, in the browser suite, opens every deck in `DECKS` with its projection window beside it and asserts that the projector opens without Teacher Preflight, follows the teacher, that a reload resumes, that Present never shows preflight and Escape returns, and that the iPad Remote loads the topic. Its negative controls deafen the projector, remove the hold screen and restore the remote's old topic list, and each must be caught. A new deck is covered by being in `DECKS`.
+
 ## Topic-specific visual composition
 
 Examples of rules that belong in a topic visual file:
