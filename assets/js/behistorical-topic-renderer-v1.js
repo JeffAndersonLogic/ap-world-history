@@ -2633,12 +2633,21 @@ function renderFirst10() {
 
 // ── BeSurreal ─────────────────────────────────────────────────────────────────
 
+// The 10-module standard documents beSurreal as title/desc/intro/detail/prompt,
+// and that is how Units 3, 4, 5 and part of 8 are authored. Older topics carry a
+// single `text` instead. Reading only `text` printed the word "undefined" in
+// place of the whole scene on every topic written to the documented shape, so
+// `text` wins when present (those pages render unchanged) and the documented
+// fields are the fallback. scripts/test/besurreal-render.test.js is the check.
 function renderBeSurreal() {
   const s = L.beSurreal || {};
+  const body = s.text
+    ? [s.text]
+    : [s.desc, s.intro, s.detail].filter(Boolean);
   return `
     <article class="card">
       <h3>${s.title}</h3>
-      <p>${s.text}</p>
+      ${body.map(p => `<p>${p}</p>`).join('\n      ')}
       <div class="question"><strong>BeSurreal Question</strong><br>${s.prompt}</div>
     </article>`;
 }

@@ -39,6 +39,7 @@ const SUITES = {
     ['scripts/test/unit1-atlas.test.js', 'Unit 1 atlas: regional coverage and visual-only hub'],
     ['scripts/test/unit2-atlas.test.js', 'Unit 2 atlas: visual-only content, canonical sources, and hub integration'],
     ['scripts/validate.js', 'structure, capture wiring, image integrity'],
+    ['scripts/test/besurreal-render.test.js', 'Module 04 BeSurreal renders a full scene on every unit lesson, no "undefined"'],
     ['scripts/check-module07-authored.js', 'Units converted to one authored Module 07 evidence pool'],
     ['scripts/check-firestore-rules.js', 'Firestore rules not loosened into the shape that leaks everything'],
     ['scripts/test/canvas-paragraphs.test.js', 'Canvas blank-line round trip'],
