@@ -87,7 +87,9 @@ window.BHSyncTransport = { create: function (cfg) {
     if (F.offline) { var e = new Error('offline'); e.code = 'offline'; throw e; }
   }
   return {
-    ready: function () { return Promise.resolve(); },
+    // readyDelay stands in for a slow school network loading Google's sign-in
+    // library and restoring the saved session, which takes seconds.
+    ready: function () { return new Promise(function (r) { setTimeout(r, F.readyDelay || 0); }); },
     user: function () { return F.user; },
     onAuthChange: function (cb) { listener = cb; },
     signIn: function () { F.user = { uid: 'student1' }; if (listener) listener(F.user); return Promise.resolve(); },
@@ -132,13 +134,24 @@ const FOUNDATIONS_PAGE = '/foundations/foundations-3-states-power.html';
 // pre-launch posture, off with the pilot switch available, so the code that
 // honours "off" and "pilot" stays under test for the day it is needed again.
 let open = async function (browser, page, opts) {
-  const o = Object.assign({ on: true, docs: {}, user: { uid: 'student1' }, local: {}, patch: null }, opts || {});
+  const o = Object.assign({ on: true, docs: {}, user: { uid: 'student1' }, local: {}, patch: null, readyDelay: 0 }, opts || {});
   const context = await browser.newContext();
   const p = await context.newPage();
   const requests = [];
   p.on('request', r => requests.push(r.url()));
-  await p.addInitScript(({ docs, user, local }) => {
-    window.__fake = { docs: {}, user: user, rev: 0, writes: [], offline: false };
+  await p.addInitScript(({ docs, user, local, readyDelay }) => {
+    window.__fake = { docs: {}, user: user, rev: 0, writes: [], offline: false, readyDelay: readyDelay };
+    // Records whether the sign-in button was ever visible, however briefly,
+    // because a flash of it is exactly what a student clicks.
+    window.__askedSignIn = false;
+    window.__syncTexts = [];
+    new MutationObserver(() => {
+      const t = document.querySelector('#bh-sync [data-text]');
+      const said = t ? t.textContent : '';
+      if (said && said !== window.__syncTexts[window.__syncTexts.length - 1]) window.__syncTexts.push(said);
+      const b = document.querySelector('#bh-sync button');
+      if (b && !b.hidden && /Back up my work/.test(b.textContent)) window.__askedSignIn = true;
+    }).observe(document, { subtree: true, childList: true, attributes: true, characterData: true });
     Object.keys(docs).forEach(k => { window.__fake.rev += 1; window.__fake.docs[k] = { text: docs[k].text, confidence: docs[k].confidence || '', rev: 'r' + window.__fake.rev }; });
     // Seed the device once, never on a reload, or a reload would put back what
     // the student had since changed.
@@ -146,7 +159,7 @@ let open = async function (browser, page, opts) {
       Object.keys(local).forEach(k => localStorage.setItem(k, local[k]));
       sessionStorage.setItem('__seeded', '1');
     }
-  }, { docs: o.docs, user: o.user, local: o.local });
+  }, { docs: o.docs, user: o.user, local: o.local, readyDelay: o.readyDelay });
 
   const rewrite = async route => {
     const res = await route.fetch();
@@ -334,6 +347,26 @@ async function suite(browser) {
     await s.context.close();
   }
 
+  // ── Not checked yet is not signed out ──────────────────────────────────────
+  section('A slow sign-in check never asks a signed-in student to sign in');
+  {
+    const s = await open(browser, UNIT_PAGE, { readyDelay: 2500 });
+    const settled = await waitFor(s.p, () => /Saved\./.test((document.getElementById('bh-sync') || {}).textContent || ''), null, 8000);
+    const said = await s.p.evaluate(() => window.__syncTexts);
+    check('while the sign-in check runs, the box says it is checking', /^Checking/.test(said[0] || ''), said.join(' > '));
+    check('a signed-in student settles to saved', settled, said.join(' > '));
+    check('a signed-in student never sees the sign-in button, even for a moment', await s.p.evaluate(() => window.__askedSignIn === false));
+    await s.context.close();
+  }
+  {
+    // The watcher has to be able to see the button, or the check above proves
+    // nothing.
+    const s = await open(browser, UNIT_PAGE, { readyDelay: 1500, user: null });
+    const asked = await waitFor(s.p, () => window.__askedSignIn === true, null, 6000);
+    check('a student who really is signed out is offered the button once checked', asked, await statusText(s.p));
+    await s.context.close();
+  }
+
   // ── Foundations ────────────────────────────────────────────────────────────
   section('Foundations pages');
   {
@@ -381,6 +414,11 @@ async function suite(browser) {
       name: 'the backup is switched off in the shipped config',
       patch: b => b.replace('"enabled": true', '"enabled": false'),
       expect: /the shipped switch is on for every student|a student with no parameter sees the backup/
+    },
+    {
+      name: 'the box treats "not checked yet" as signed out',
+      patch: b => b.replace("      if (!booted) {\n        if (offlineSince > 0 || bootSlow) {", "      if (false) {\n        if (offlineSince > 0 || bootSlow) {"),
+      expect: /never sees the sign-in button|box says it is checking/
     }
   ];
 

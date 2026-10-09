@@ -1030,6 +1030,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
     sessionCap: 400,
     dayCap: 600,
     tickMs: 3000,
+    bootWaitMs: 15000,
     backoffBaseMs: 5000,
     backoffMaxMs: 120000,
     recoverKeep: 3
@@ -1309,6 +1310,19 @@ window.BH_SYNC_CONFIG = Object.freeze({
           fatal: !!fatal
         };
       }
+      // Not checked yet is not the same as signed out. Until the sign-in library
+      // has loaded and restored the saved session, there is no telling whether
+      // this student is signed in, and on a slow school network that takes
+      // seconds on every page. Showing the sign-in button in that window asked
+      // students who were already signed in to sign in again on every topic.
+      // If the library cannot load, or has not answered within bootWaitMs, the
+      // button would not work anyway, so the honest message is the offline one.
+      if (!booted) {
+        if (offlineSince > 0 || bootSlow) {
+          return { code: 'device', message: 'Saved on this device only. You are offline, and your work will back up when you reconnect.', conflicts: [], needsSignIn: false };
+        }
+        return { code: 'saving', message: 'Checking your saved work.', conflicts: [], needsSignIn: false };
+      }
       var dirty = dirtyIds(snap);
       if (!user) {
         return { code: 'device', message: 'Saved on this device only. Back up your work to keep it safe.', conflicts: [], needsSignIn: true };
@@ -1587,12 +1601,24 @@ window.BH_SYNC_CONFIG = Object.freeze({
 
     var bootRetry = null;
     var booted = false;
+    var bootWait = null;        // bounds how long "Checking" can show
+    var bootSlow = false;       // the library has not answered within bootWaitMs
     function bootstrap() {
       if (booted || stopped) return Promise.resolve();
+      if (!bootWait && !bootSlow) {
+        bootWait = setT(function () {
+          bootWait = null;
+          if (booted || stopped) return;
+          bootSlow = true;
+          emit();
+        }, cfg.bootWaitMs);
+      }
       return Promise.resolve()
         .then(function () { return transport.ready(); })
         .then(function () {
           booted = true;
+          bootSlow = false;
+          if (bootWait) { clearT(bootWait); bootWait = null; }
           offlineSince = 0;
           setUser(transport.user());
           if (transport.onAuthChange) transport.onAuthChange(onAuth);
@@ -1661,6 +1687,7 @@ window.BH_SYNC_CONFIG = Object.freeze({
       if (tickTimer) clearT(tickTimer);
       if (reconcileRetry) clearT(reconcileRetry);
       if (bootRetry) clearT(bootRetry);
+      if (bootWait) clearT(bootWait);
     }
 
     function online() {

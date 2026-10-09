@@ -170,6 +170,7 @@ function rig(Sync, config) {
   const page = (config && config.page) || makePage();
   const states = [];
   const transport = server.transport(config && config.user);
+  if (config && config.ready) transport.ready = config.ready;
   const engine = Sync.create(Object.assign({
     topicKey: '1.4',
     slots: page.slots,
@@ -530,6 +531,57 @@ async function suite(Sync) {
     check('signing in backs up what was typed before', r.server.docs.get('checkpoint-one-response').text === 'Typed before signing in.');
   }
 
+  // ── Not checked yet is not signed out ──────────────────────────────────────
+  //
+  // Kelly's students were asked to sign in again on every topic page. The
+  // sign-in library takes seconds to load and restore the saved session on a
+  // school network, and until it had, the engine said "signed out" and showed
+  // the button. A student who clicked it got the Google pop-up again.
+  section('The sign-in button waits for the sign-in check');
+  const everAsked = states => states.some(st => st.needsSignIn);
+  const deferred = () => { let res, rej; const p = new Promise((a, b) => { res = a; rej = b; }); return { p, res, rej }; };
+  {
+    const d = deferred();
+    const r = rig(Sync, { ready: () => d.p });
+    r.engine.start();
+    await r.clock.advance(3000);
+    check('before the sign-in check finishes, no sign-in button', r.engine.state().needsSignIn === false && !everAsked(r.states), r.engine.state().message);
+    check('before the sign-in check finishes, the box says it is checking', r.engine.state().code === 'saving' && /^Checking/.test(r.engine.state().message), r.engine.state().message);
+    d.res();
+    await r.clock.advance(200);
+    check('a student whose sign-in is restored is never shown the sign-in button', !everAsked(r.states) && r.engine.state().code === 'saved', r.states.map(st => st.code).join(' > '));
+  }
+  {
+    const d = deferred();
+    const r = rig(Sync, { user: null, ready: () => d.p });
+    r.engine.start();
+    await r.clock.advance(3000);
+    check('a signed-out student is not asked before the sign-in check finishes', !everAsked(r.states));
+    d.res();
+    await r.clock.advance(200);
+    check('a student who really is signed out gets the sign-in button once checked', r.engine.state().needsSignIn === true && r.engine.state().code === 'device');
+  }
+  {
+    const r = rig(Sync, { user: null, ready: () => Promise.reject(Object.assign(new Error('blocked'), { code: 'offline' })) });
+    r.engine.start();
+    await r.clock.advance(60000);
+    check('when the sign-in library cannot load, no sign-in button', !everAsked(r.states), r.states.map(st => st.code).join(' > '));
+    check('when the sign-in library cannot load, the offline message shows', r.engine.state().code === 'device' && /offline/.test(r.engine.state().message), r.engine.state().message);
+  }
+  {
+    const d = deferred();
+    const r = rig(Sync, { user: null, ready: () => d.p });
+    r.engine.start();
+    await r.clock.advance(14000);
+    check('a sign-in check that never answers still says checking at 14 seconds', r.engine.state().code === 'saving');
+    await r.clock.advance(2000);
+    check('a sign-in check that never answers falls back to the offline message, bounded', r.engine.state().code === 'device' && /offline/.test(r.engine.state().message), r.engine.state().message);
+    check('a sign-in check that never answers never shows the sign-in button', !everAsked(r.states));
+    d.res();
+    await r.clock.advance(200);
+    check('a late answer from the sign-in check still lands', r.engine.state().needsSignIn === true);
+  }
+
   // ── Page closing ───────────────────────────────────────────────────────────
   section('A page that is closing');
   {
@@ -705,6 +757,16 @@ async function signInSuite(Transport) {
       patch: s => s.replace("    function saveMeta() { writeJson(storage, META_PREFIX + topic, meta); }",
         "    function saveMeta() { meta.leak = JSON.stringify(opts.slots()); writeJson(storage, META_PREFIX + topic, meta); }"),
       expect: /hashes and never the writing/
+    },
+    {
+      name: 'the box treats "not checked yet" as signed out',
+      patch: s => s.replace("      if (!booted) {\n        if (offlineSince > 0 || bootSlow) {", "      if (false) {\n        if (offlineSince > 0 || bootSlow) {"),
+      expect: /sign-in check|sign-in library cannot load/
+    },
+    {
+      name: 'a sign-in check that never answers shows "checking" forever',
+      patch: s => s.replace("          bootSlow = true;\n          emit();", "          void 0;"),
+      expect: /never answers falls back/
     }
   ];
 

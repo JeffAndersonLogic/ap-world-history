@@ -1409,6 +1409,14 @@ Auth SDK, imported from Google's host at a version pinned in the config.
 - The `currentDocument: { exists: false }` precondition on a create is
   defense in depth: the rules refuse the same write independently, so removing it
   is not detectable by a test. It stayed anyway and is not claimed as covered.
+- **Not checked yet is not signed out.** Until Google's sign-in library has
+  loaded and restored the saved session, `user` is null for a student who is
+  signed in, and on a school network that takes seconds on every page. The box
+  showed "Back up my work" in that window, so Kelly's students were asked to sign
+  in again on every topic (found 2026-10-09). Until the check finishes the box
+  says "Checking your saved work." with no button; if the library cannot load,
+  or has not answered within `bootWaitMs` (15 seconds), it shows the offline
+  message, also with no button, because sign-in could not work then anyway.
 
 **Turning it on is a decision with a list, and it is not one edit.**
 
@@ -1476,7 +1484,7 @@ here, and are exactly what the pretend student is for.
 
 **Four checks, because each failure is silent in a different way.**
 `sync-engine.test.js` (offline) proves the decisions, the brake and the sign-in
-domain logic against a fake server and a virtual clock, with eleven negative
+domain logic against a fake server and a virtual clock, with thirteen negative
 controls. `sync-page.test.js` (browser) proves the real lesson pages: silent when
 off, restore into the keys each path reads, typing noticed, the dialog, offline,
 Foundations, with its own controls. `sync-transport.test.js` (the `rules` suite)
