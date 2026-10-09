@@ -11,7 +11,11 @@ let browser;
 // page.evaluate keeps the query and the check in the same task, so neither can
 // hold markers a redraw has just removed.
 async function settle(page){await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));}
-async function routeClick(page){const hit=page.locator('.atlas-route-hit').first();await hit.scrollIntoViewIfNeeded();const q=await hit.evaluate(el=>{for(const f of [.2,.3,.4,.5,.6,.7,.8]){const p=el.getPointAtLength(el.getTotalLength()*f),q=new DOMPoint(p.x,p.y).matrixTransform(el.getScreenCTM());if(document.elementFromPoint(q.x,q.y)===el)return{x:q.x,y:q.y};}throw Error('No visible connection segment');});await page.mouse.click(q.x,q.y);assert.equal(await page.locator('#detail-kind').textContent(),'Connection','Direct connection click updates information');}
+// A click that changes the view can trigger a second redraw a frame later,
+// which replaces every route line, so a line located before it settles can be
+// detached mid-scroll. That failed the negative control twice in CI on 2026-10-09
+// with "Element is not attached to the DOM" instead of the expected assertion.
+async function routeClick(page){await settle(page);const hit=page.locator('.atlas-route-hit').first();await hit.scrollIntoViewIfNeeded();const q=await hit.evaluate(el=>{for(const f of [.2,.3,.4,.5,.6,.7,.8]){const p=el.getPointAtLength(el.getTotalLength()*f),q=new DOMPoint(p.x,p.y).matrixTransform(el.getScreenCTM());if(document.elementFromPoint(q.x,q.y)===el)return{x:q.x,y:q.y};}throw Error('No visible connection segment');});await page.mouse.click(q.x,q.y);assert.equal(await page.locator('#detail-kind').textContent(),'Connection','Direct connection click updates information');}
 async function focusResize(page){await page.locator('.atlas-place-hit').first().focus();const name=await page.locator('.atlas-place-hit').first().getAttribute('aria-label');await page.setViewportSize({width:950,height:1000});await page.waitForFunction(()=>document.getElementById('atlas-map').viewBox.baseVal.width===document.getElementById('atlas-map').clientWidth);assert.equal(await page.evaluate(()=>document.activeElement.getAttribute('aria-label')),name,'Resize preserves keyboard focus');}
 (async()=>{
  await new Promise(r=>server.listen(0,'127.0.0.1',r));const base=`http://127.0.0.1:${server.address().port}`;
