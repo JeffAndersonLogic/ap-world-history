@@ -1855,7 +1855,12 @@ window.BH_SYNC_CONFIG = Object.freeze({
       };
     }
     return {
-      ready: function () { return load().then(function () {}); },
+      // ready() must wait for the real transport's own ready(), which loads the
+      // sign-in library and restores the saved session. Resolving as soon as the
+      // script file had loaded made every page look signed out until the student
+      // clicked "Back up my work", which is what finally loaded the library. So
+      // a signed-in student was asked to sign in again on every topic page.
+      ready: function () { return load().then(function (t) { return t.ready(); }); },
       user: function () { return real ? real.user() : null; },
       onAuthChange: function (cb) { if (real) real.onAuthChange(cb); },
       signIn: through('signIn'),

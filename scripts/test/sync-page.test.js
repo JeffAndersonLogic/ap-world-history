@@ -83,16 +83,20 @@ const STUB_TRANSPORT = `
 window.BHSyncTransport = { create: function (cfg) {
   var F = window.__fake;
   var listener = null;
+  // Like the real SDK, the saved sign-in is unknown until ready() has run.
+  // A stand-in that answered user() before then is how a page that never
+  // called ready() passed this test while asking every student to sign in.
+  var restored = false;
   function gate() {
     if (F.offline) { var e = new Error('offline'); e.code = 'offline'; throw e; }
   }
   return {
     // readyDelay stands in for a slow school network loading Google's sign-in
     // library and restoring the saved session, which takes seconds.
-    ready: function () { return new Promise(function (r) { setTimeout(r, F.readyDelay || 0); }); },
-    user: function () { return F.user; },
+    ready: function () { return new Promise(function (r) { setTimeout(function () { restored = true; r(); }, F.readyDelay || 0); }); },
+    user: function () { return restored ? F.user : null; },
     onAuthChange: function (cb) { listener = cb; },
-    signIn: function () { F.user = { uid: 'student1' }; if (listener) listener(F.user); return Promise.resolve(); },
+    signIn: function () { restored = true; F.user = { uid: 'student1' }; if (listener) listener(F.user); return Promise.resolve(); },
     fetch: function () {
       return Promise.resolve().then(function () {
         gate();
@@ -419,6 +423,11 @@ async function suite(browser) {
       name: 'the box treats "not checked yet" as signed out',
       patch: b => b.replace("      if (!booted) {\n        if (offlineSince > 0 || bootSlow) {", "      if (false) {\n        if (offlineSince > 0 || bootSlow) {"),
       expect: /never sees the sign-in button|box says it is checking/
+    },
+    {
+      name: 'the page never asks the sign-in library to restore the saved sign-in',
+      patch: b => b.replace("ready: function () { return load().then(function (t) { return t.ready(); }); },", "ready: function () { return load().then(function () {}); },"),
+      expect: /never sees the sign-in button|settles to saved|a student with no parameter sees the backup|status settles to saved/
     }
   ];
 

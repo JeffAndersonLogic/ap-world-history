@@ -1417,6 +1417,15 @@ Auth SDK, imported from Google's host at a version pinned in the config.
   says "Checking your saved work." with no button; if the library cannot load,
   or has not answered within `bootWaitMs` (15 seconds), it shows the offline
   message, also with no button, because sign-in could not work then anyway.
+- **That was not the whole cause, and the rest was one line.** The lazy loader's
+  `ready()` resolved once the transport script had loaded and never called the
+  transport's own `ready()`, so the sign-in library was not loaded and the saved
+  session was never restored until a click on "Back up my work" loaded it. Every
+  page looked signed out to everyone (Jeff confirmed it on his own laptop
+  2026-10-09: the box read "Saved" with the account chooser still open). The
+  browser test's stand-in transport used to answer `user()` before `ready()` had
+  run, which is how this passed; it now returns null until then, and a negative
+  control reverts the line.
 
 **Turning it on is a decision with a list, and it is not one edit.**
 
