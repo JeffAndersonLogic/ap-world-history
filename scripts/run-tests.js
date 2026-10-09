@@ -83,6 +83,7 @@ const SUITES = {
     ['scripts/test/teaching-os-deck-overflow.test.js', 'Teaching OS student decks fit their frame'],
     ['scripts/test/slide-templates.browser.test.js', 'slide templates fit, label AI images, and draw on every Teaching OS page'],
     ['scripts/test/key-concept-band.browser.test.js', 'Key Concept band draws on every tagged slide, fits its wording, and covers nothing'],
+    ['scripts/test/teaching-os-briefing.browser.test.js', 'Briefing opens, shares, and stays off the projector on every Teaching OS page'],
     ['scripts/test/lightbox-sweep.js', 'enlargeable images operable on all 77'],
     ['scripts/test/confidence.test.js', 'confidence scale'],
     ['scripts/test/skills-lens.test.js', 'Skills Lens panels'],

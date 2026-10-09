@@ -110,8 +110,21 @@ The finished deck must still carry the required instructional functions defined 
 - wide Teacher Intelligence column
 - readable quick-reference typography
 - responsive teacher-surface sizing
+- the Briefing drawer and its share tools
 
 A future Topic 2.3+ Teaching OS should load this shared layer rather than copying those rules into a topic file.
+
+### The Briefing
+
+**A page gets the briefing by having a `#briefingBtn` in its header, and nothing else.** The shared layer builds the drawer from the deck's own data: `meta.subtitle` (the spine), `meta.essentialQuestion`, `meta.apFocus`, `meta.endTarget`, `priorities.must/should/could`, `flow` (the run of show) and `quickLaunch`. There is no second copy of any of it to keep in step.
+
+This exists because Topics 2.6, 2.7 and 3.1 to 3.4 shipped the button, and a shortcut line reading "B briefing", with no drawer, no click handler and no key behind either, and every check was green because nothing ever clicked it. A teacher found it on 2026-10-09. Topics 2.1 to 2.5 keep the drawer they were built with; the shared layer adds only the share tools and the `#briefing` link to it, so do not build a second drawer on those pages.
+
+**Sharing is for co-teachers, and nothing is sent anywhere.** The drawer offers Copy link (the page with `#briefing`, which opens straight to the briefing), Copy briefing text (plain text for an email or a Teams message, Quick launch links made absolute), Share on a device that supports it, and Print (the briefing alone, on white). The teacher command center's Today panel links `#briefing` on every Teaching OS day, so a co-teacher can bookmark `teacher/index.html` and read the day's briefing from there. Teacher pages are already public on GitHub Pages, so a shared link exposes nothing that was private.
+
+**The briefing never opens on the projector.** `?mode=project` and Present both refuse it, by click, by B and by link, because priorities and run-of-show moves are teacher-only. While it is open on the teacher screen, the arrow, space, F and P keys do not reach the deck behind it.
+
+`scripts/test/teaching-os-briefing.browser.test.js`, in the browser suite, clicks Briefing on every deck in `DECKS` and asserts it opens with that deck's end target and first Must-land line, that the share tools copy the right link and text and print on a white page, that Escape and B work, that the slide does not move behind it, that `#briefing` opens it, that the projector never shows it, and that every local link on the page resolves (Topics 3.3 and 3.4 shipped a Student Lesson button naming 3.2's file). Its negative controls switch the shared briefing off, remove the projector guard and plant a dead link, and each must be caught.
 
 ## Topic-specific visual composition
 

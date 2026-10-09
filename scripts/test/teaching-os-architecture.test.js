@@ -27,6 +27,7 @@ if (exists(shared)) {
   const src = read(shared);
   check('shared cockpit owns the Run of Show toggle', src.includes("id='runOfShowToggle'") || src.includes("id=\"runOfShowToggle\"") || src.includes("btn.id='runOfShowToggle'"));
   check('shared cockpit owns teacher layout CSS', src.includes('.cockpit') && src.includes('.intel-scroll') && src.includes('.timeline'));
+  check('shared cockpit owns the Briefing drawer and its share tools', src.includes('function installBriefing') && src.includes("getElementById('briefingBtn')") && src.includes('data-bhb="link"'));
 }
 
 const { DECKS } = require('../build-teaching-os-student-decks.js');

@@ -116,6 +116,8 @@ a{color:inherit}
 .tc-today p{margin:0;font-size:.82rem;line-height:1.5;color:var(--gunmetal-gray)}
 .tc-today .tc-today-open{align-self:flex-start;display:inline-block;margin-top:.95rem;background:var(--antique-gold);color:var(--ink);text-decoration:none;font-weight:800;padding:.68rem .88rem;border-radius:8px;font-size:.74rem;transition:transform .14s ease,background .14s ease}
 .tc-today .tc-today-open:hover{background:var(--muted-sandstone);transform:translateY(-1px)}
+.tc-today .tc-today-brief{align-self:flex-start;display:inline-block;margin-top:.6rem;color:var(--ink);font-weight:700;font-size:.74rem;text-underline-offset:3px}
+.tc-today .tc-today-brief:hover{color:var(--gunmetal-gray)}
 .tc-today.empty{background:#e9e2d6;color:var(--gunmetal-gray)}
 .tc-section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(250px,.8fr);gap:1.2rem;align-items:end;margin-bottom:.9rem}
 .tc-section-kicker{font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--antique-gold);margin-bottom:.2rem}
@@ -283,7 +285,13 @@ ${String(resolveTeacherSurface)}
   } else if (found.kind === 'interactive') {
     box.innerHTML = head
       + '<p>' + esc(lessonTitle || 'Teaching OS') + '</p>'
-      + '<a class="tc-today-open" href="' + esc(found.href) + '">Open Topic ' + esc(found.topic) + ' Teaching OS &rarr;</a>';
+      + '<a class="tc-today-open" href="' + esc(found.href) + '">Open Topic ' + esc(found.topic) + ' Teaching OS &rarr;</a>'
+      /* Every Teaching OS page (topic-X-X-os.html) opens straight to its
+         briefing at #briefing, which is the link co-teachers share. The 1.7
+         command center has no briefing, so it gets no link. */
+      + (found.href.slice(-8) === '-os.html'
+        ? '<a class="tc-today-brief" href="' + esc(found.href) + '#briefing">Read today&rsquo;s briefing</a>'
+        : '');
   } else if (found.kind === 'runofshow') {
     box.innerHTML = head
       + '<p>' + esc(lessonTitle || 'Run of Show') + '</p>'
