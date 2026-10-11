@@ -357,40 +357,11 @@ logo-drop \
 work/iran-unit-20260826
 ```
 
-### AndersonLogic-OS — 24, after `claude/land-open-work` lands
+### AndersonLogic-OS — moved to that repository
 
-Seventeen were already absorbed. The other seven carried the only copy of the
-Department OS product brief, the Cardinal Room Month 2 deliverables, the SkillLens
-judgment layer, and two skills; all seven merged into `claude/land-open-work` with
-no conflicts. Fast-forward `main` to it, then all 24 are absorbed.
-
-```bash
-git push origin --delete \
-claude/anderson-logic-consulting-bzbafx \
-claude/anderson-professional-background-9m3f6i \
-claude/andersonlogic-os-addition-xz9n6c \
-claude/andersonlogic-os-visual-gysouv \
-claude/behistorical-ebook-stress-test-kcrlx2 \
-claude/behistorical-google-form-sheet-jxtv4l \
-claude/behistorical-monetization-readiness-784vh3 \
-claude/behistorical-productivity-strategy-qzrme6 \
-claude/cardinal-room-canva-packs-ekuebs \
-claude/cardinal-room-email-summary-3zm7yb \
-claude/cardinal-room-linkedin-page-x1x91b \
-claude/cardinal-room-scope-ekjmgw \
-claude/cardinal-room-scope-report-uugooe \
-claude/claude-pd-teachers-consulting-po6bb0 \
-claude/claude-teachers-career-impact-2660c7 \
-claude/framework-porting-audit-rhgn6a \
-claude/gci-cardinal-room-brief-c33gje \
-claude/os-development-interview-jwitpp \
-claude/pd-curriculum-another-district-wpown6 \
-claude/project-task-tracking-sync-txm7wg \
-claude/school-department-os-tfh644 \
-claude/skills-implementation-review-0g5lwz \
-claude/skillslens-html-prototype-frp05f \
-claude/social-media-canva-prompts-k12jak
-```
+This list moved on 2026-10-11 to the AndersonLogic-OS repository, which is private, in
+`07_SOPS/Repository-Maintenance.md`, word for word. Its branch names describe private
+consulting work, which does not belong in a public repository.
 
 ### AtTheTurn — 4, after `claude/land-open-work` lands
 
