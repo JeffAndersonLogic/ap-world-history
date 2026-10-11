@@ -48,7 +48,7 @@ const server=http.createServer((req,res)=>{
  await page.evaluate(()=>{window.__CLASS_PULSE_TEST__.STATE.auth={auth:{currentUser:{email:'janderson@zcs.k12.in.us'}},getIdToken:async()=> 'synthetic-test-token'}});
  await page.locator('#refresh').click();
  await page.waitForTimeout(200);
- ok('live read returned three checkpoint snapshots',/3 checkpoint snapshots/.test(await page.textContent('#liveBanner')));
+ ok('live read returned three checkpoint snapshots',/3 module response snapshots/.test(await page.textContent('#liveBanner')));
  ok('real mode never generates pretend progress',/No historical trend yet/.test(await page.textContent('#trendHeading')) && await page.locator('#metrics .metric').first().locator('strong').textContent()==='—');
  await page.locator('[data-nav=students]').first().click();
  ok('drilldown reads real-shaped snapshot without a grade',await page.locator('#studentList .studentrow').count()===2 && /Winds were predictable/.test(await page.textContent('#studentDetail')) && /Not analyzed/.test(await page.textContent('#studentDetail')));
