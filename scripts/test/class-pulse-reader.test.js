@@ -13,6 +13,7 @@ const d=doc('uid-one','checkpoint-one-response','Seasonal winds helped','green')
 assert.equal(P.normalize(d).completionState,'backup-snapshot');
 assert.equal(P.normalize(d).confidence,4);
 assert.equal(P.normalize(doc('uid','not-a-checkpoint','x','green')),null);
+assert.equal(P.normalize(doc('uid','evidence-response','evidence-based reasoning','green')).slotId,'evidence-response');
 assert.throws(()=>P.makeQuery('../bad'),/Invalid/);
 assert.equal(P.makeQuery('2-3').structuredQuery.where.fieldFilter.value.stringValue,'2-3');
 let requests=[];
