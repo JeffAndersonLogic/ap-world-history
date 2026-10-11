@@ -8,7 +8,7 @@
 })(typeof globalThis!=='undefined'?globalThis:this,function(){
   'use strict';
   var topicPattern=/^[0-9]{1,2}-[0-9]{1,2}$/;
-  var checkpointSlots={'checkpoint-one-response':true,'checkpoint-two-response':true};
+  var allowedSlots={'map-check-response':true,'first10-q1':true,'first10-q2':true,'first10-q3':true,'skill-builder-response':true,'checkpoint-one-response':true,'evidence-response':true,'primary-source-response':true,'checkpoint-two-response':true};
   function stringField(fields,name){
     var f=fields&&fields[name];
     return f&&typeof f.stringValue==='string'?f.stringValue:'';
@@ -17,7 +17,7 @@
     if(!document||!document.fields||typeof document.name!=='string')return null;
     var f=document.fields,topic=stringField(f,'topicKey'),slot=stringField(f,'slotId');
     var uid=stringField(f,'studentId');
-    if(!topicPattern.test(topic)||!checkpointSlots[slot]||!uid)return null;
+    if(!topicPattern.test(topic)||!allowedSlots[slot]||!uid)return null;
     var c=f.confidence&&f.confidence.integerValue;
     var confidence=c!=null?Number(c):null;
     if(!Number.isInteger(confidence)||confidence<1||confidence>5)confidence=null;
