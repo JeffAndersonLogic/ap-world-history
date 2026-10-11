@@ -27,3 +27,25 @@ Run `node scripts/test/class-pulse-reader.test.js` from the repository root. It 
 6. Never deploy teacher-facing live data or changes to student sync as part of a synthetic demo build.
 
 This file is an integration boundary, not a production-ready Class Pulse.
+
+
+## Current dashboard page (development)
+
+`teacher/class-pulse.html` now contains a responsive, self-contained Class Pulse interface in two explicitly separated modes:
+
+- **Fictional demo:** 48 authored sample records, four broad understanding bands, checkpoint-specific must-haves, clickable criterion heat map, response arrival simulation and individual response drill-down. The heat-map ratings are fixture labels, not derived from real students or a semantic AI model.
+- **Teacher Firebase read:** a teacher-initiated Google Workspace sign-in and authenticated Firestore `:runQuery` read via `class-pulse-reader.js`. It shows genuine checkpoint backup snapshots and individual texts when authorized, but all semantic bands remain *not analyzed*. No provider receives the writing except Firebase itself.
+- **Optional local period mapping:** reuse the existing X-Ray roster parser through a Firebase Authentication users export plus a Canvas gradebook CSV. The files are parsed in browser memory; names and emails are discarded by the roster join and files are cleared from inputs. They are not uploaded.
+- **Preview safety:** with JavaScript blocked, the page exposes only a static fictional response archive. Real student records never appear in static markup.
+- **Live status:** the page is on a working Git branch, not on `main`, and the proposed teacher reader permissions have not been deployed by this work. A direct download is adequate for demo, but live Google sign-in should be tested from an authorized HTTPS origin; iOS sign-in was already a known issue in the student sync setup.
+- **Current scope:** Topic 2.3 is the complete offline example. On the hosted course site, the teacher page loads the generated skills map for broader topic prompts and criteria. Additional topics have not yet been semantic-calibrated.
+
+The read adapter returns latest backups only, **not** Canvas submissions or historical revisions. Classroom understanding ratings cannot responsibly be inferred from word counts or topic terminology alone. Actual automated semantic classification requires calibration and confirmation of the permitted data processing path.
+
+### Tests
+
+- `scripts/test/class-pulse-reader.test.js`: synthetic REST adapter shapes, read transport and confidence parsing.
+- `scripts/test/class-pulse-page-contract.test.js`: UI/privacy contract and five deliberately broken negative controls.
+- `scripts/test/class-pulse-page.browser.test.js`: demonstrated mode, drill-down, mock Firestore read, no semantic inference in live mode, 320px layout, and script-disabled fallback.
+
+The new tests are registered in `scripts/run-tests.js`. Browser CI must run to prove the committed test is green; local QA of the standalone file was also performed with Chromium.
