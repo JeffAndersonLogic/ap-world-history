@@ -1,8 +1,9 @@
 # Topic 4.1 Story Draft: Technological Innovations from 1450 to 1750
 
-**Status: Draft for Jeff's review, 2026-10-11. Not approved.** To be reviewed together with
-`docs/UNIT-4-STORY-MAP.md` (Jeff's choice, 2026-10-11). Nothing downstream of this draft has
-been built.
+**Status: Approved by Jeff, 2026-10-11.** Reviewed together with `docs/UNIT-4-STORY-MAP.md`
+and approved with every recommendation in section 11 ("Approved, go with your
+recommendations"). The twist in section 3 now carries the recommended narrower wording
+(question 12). Decisions are recorded at the end of this file.
 
 **Taught:** not on the schedule yet. The last scheduled Unit 3 days are the Unit 3 Quiz
 (Green 2026-10-28, Silver 2026-10-29). 4.1's dates are a question for Jeff (question 9 below).
@@ -158,8 +159,8 @@ about: goods and people could now travel by sea between Europe and Asia, and acr
 Atlantic between hemispheres that had not been connected, and trade began to move along routes
 that had not existed before.
 
-Here is the twist. In 1400, Europe did not have the best ships or the best navigators in the
-world; the Indian Ocean and China did. Europe faced a harder ocean, and it solved it by putting
+Here is the twist. In 1400 the biggest ships and the longest voyages were in the Indian Ocean
+and China, not Europe. Europe faced a harder ocean, and it solved it by putting
 together knowledge from older worlds. The breakthrough was a combination, not a European
 invention.
 
@@ -268,7 +269,7 @@ The ones that changed the story:
 | The fluyt dates to about 1600 | Supported (Hoorn, usually 1595; some sources earlier). Story says "around 1600." |
 | The volta do mar was learned over decades in the 1400s | Supported in outline; sources date it from the 1420s to the 1440s. Story avoids a start year. |
 | Da Gama's fleet saw no land for about three months | Supported (sources give 90 to 95 days). Story says "about three months." |
-| "In 1400 Europe did not have the best ships or navigators" | **NEEDS JEFF** (wording). "Best" has no single measure. Recommend the concrete version: "In 1400 the biggest ships and the longest voyages were in the Indian Ocean and China, not Europe." |
+| "In 1400 Europe did not have the best ships or navigators" | **NARROWED** (Jeff, 2026-10-11) to "In 1400 the biggest ships and the longest voyages were in the Indian Ocean and China, not Europe," with Zheng He as the proof. Ship sizes are checked before any number is used. |
 
 ## 10. Visual requirements per beat (listed, not sourced)
 
@@ -323,3 +324,26 @@ Asked together with the Unit 4 story map's questions.
     navigators" is a superlative with no single measure. *Recommendation:* "In 1400 the
     biggest ships and the longest voyages were in the Indian Ocean and China, not Europe,"
     with Zheng He as the proof students already know from 2.3.
+
+## Decisions (all settled 2026-10-11)
+
+Jeff approved the story and took every recommendation in section 11.
+
+1. Spine approved as written in section 4.
+2. The context-plus-chain retelling slide approved.
+3. The Skill Builder teaches 4.A Contextualization (the older networks the tools came from);
+   Checkpoint 2 keeps causation and declares its own `skill` so Socrates coaches causation.
+4. Learning target 1 is rewritten to name the change in where Europeans could travel and
+   trade, with a matching success criterion.
+5. The Map module keeps the diffusion map and its text is rewritten to match it; the "from
+   1415" map key is fixed.
+6. The BeSurreal becomes a Portuguese pilot on a caravel off West Africa in the 1480s who must
+   convince the captain to sail away from land to get home.
+7. The João de Barros "adapted passage" is checked; if it is not a real passage it is replaced
+   with a real source on the same idea.
+8. The section 9 wording for the lateen sail and the compass is used everywhere 4.1 says it.
+9. **Class dates: not yet given.** Phase 8 waits for them.
+10. **Pictures: not yet uploaded.** The section 10 shopping list goes to Jeff as a picture
+    request; the build uses pictures already verified in the repo or local artwork until then.
+11. Required modules are proposed at Phase 8.
+12. The twist's wording narrowed, as above.

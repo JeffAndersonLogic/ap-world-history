@@ -6,8 +6,9 @@ and that file disagree, the file is right and this map is corrected. The named e
 each topic are the CED's *illustrative* examples, which the CED says are optional; the required
 content is each topic's Key Concept sentences.
 
-**Status: Draft for Jeff's review, 2026-10-11. Not approved.** Reviewed together with
-`docs/TOPIC-4-1-STORY-DRAFT.md` (Jeff's choice). Once approved, this page is the unit-level half
+**Status: Approved by Jeff, 2026-10-11**, reviewed together with
+`docs/TOPIC-4-1-STORY-DRAFT.md`, with every recommendation below accepted ("Approved, go with
+your recommendations"). Nothing on 4.2 to 4.8 has been built or changed. This page is the unit-level half
 of the story approval gate in `docs/PRESENTATION-AUTHORING.md` section 8: each Unit 4 topic build
 starts from it and does not ask for the unit-level decisions again. Each topic's own story
 (beats, retelling slide) still goes through its own gate.
@@ -291,7 +292,7 @@ transoceanic route" (4.5); "the first large territorial empire ever governed acr
 Challenges to State Power", dropping "and External"; 4.8 reads "in the Period from c. 1450 to
 c. 1750". A teaching call whether lesson titles quote the CED exactly.
 
-## Decisions needed (asked together with the 4.1 story)
+## Decisions (all settled 2026-10-11, recommendations accepted)
 
 1. **Unit spine.** Approve, or change?
 2. **Topic spines.** Approve the eight above, or change any?
@@ -304,3 +305,8 @@ c. 1750". A teaching call whether lesson titles quote the CED exactly.
 5. **Suggested skills.** Recommendation: each topic build proposes whether its Skill Builder
    moves to the CED's suggested skill, and declares Checkpoint 2's own skill where it differs,
    rather than deciding all eight now.
+
+**Settled:** the unit spine and all eight topic spines as written; the owns / bridge-only split
+as written, including the four contested calls in item 3; each conflict is fixed inside its own
+topic's build and nothing on 4.2 to 4.8 is touched during the 4.1 build; each topic build
+proposes its own Skill Builder skill and declares Checkpoint 2's skill where it differs.
