@@ -40,15 +40,23 @@ const SOURCE_REL = unit => `scripts/lib/ced-source/unit-${unit}.js`;
 // The day the CED rule was made iron-clad. See checkDraft.
 const RULE_DATE = '2026-10-06';
 
+// An em dash between words reads as a comma: the house style replaces em
+// dashes in prose with commas, which is how the lesson data quotes the two
+// Unit 4 Key Concepts the CED prints with one (KC-4.1.II.A and
+// KC-4.1.IV.D.ii). An en dash in a range or a pairing stays a hyphen.
 const norm = s => String(s == null ? '' : s)
   .replace(/<[^>]+>/g, ' ')
   .replace(/[‘’]/g, "'")
+  .replace(/\s*—\s*/g, ', ')
   .replace(/[–—]/g, '-')
   .replace(/\*\*/g, '')
   .replace(/\s+/g, ' ')
   .trim();
 const low = s => norm(s).toLowerCase();
 const sameSet = (a, b) => a.length === b.length && a.every(x => b.includes(x));
+// Unit 3 topics carry one learning objective; several Unit 4 topics carry two
+// to four, each under its own thematic focus. Both shapes are read the same way.
+const losOf = topic => topic.learningObjectives || [topic.learningObjective];
 
 // A code's CED wording. The CED itself prints one Key Concept slightly
 // differently on two pages (KC-4.3.II.B with and without "the" on pp. 69 and
@@ -69,11 +77,18 @@ function checkLesson(id, ced, lesson, texts) {
   const fails = [];
   if (!lesson) return [`${id}: no lesson data found`];
   const kcs = lesson.kcs || [];
-  const lo = kcs.find(k => /Learning Objective/i.test(k.code));
-  if (!lo) fails.push(`${id} lesson: no learning objective in collegeBoardKeyConcepts`);
+  const lessonLos = kcs.filter(k => /Learning Objective/i.test(k.code));
+  const cedLos = losOf(ced);
+  if (!lessonLos.length) fails.push(`${id} lesson: no learning objective in collegeBoardKeyConcepts`);
   else {
-    if (norm(lo.code) !== norm(ced.learningObjective.code)) fails.push(`${id} lesson: learning objective code "${lo.code}", CED says "${ced.learningObjective.code}"`);
-    if (norm(lo.text) !== norm(ced.learningObjective.text)) fails.push(`${id} lesson: learning objective wording differs from the CED`);
+    for (const want of cedLos) {
+      const lo = lessonLos.find(k => norm(k.code) === norm(want.code));
+      if (!lo) fails.push(`${id} lesson: ${want.code} is in the CED and missing from collegeBoardKeyConcepts`);
+      else if (norm(lo.text) !== norm(want.text)) fails.push(`${id} lesson: ${want.code} wording differs from the CED`);
+    }
+    for (const lo of lessonLos) {
+      if (!cedLos.some(w => norm(w.code) === norm(lo.code))) fails.push(`${id} lesson: learning objective code "${lo.code}" is not on this topic's CED page`);
+    }
   }
   const lessonKcs = kcs.filter(k => !/Learning Objective/i.test(k.code));
   const want = ced.keyConcepts.map(k => k.code);
@@ -95,7 +110,7 @@ function checkContract(id, ced, entry) {
   const fails = [];
   if (!entry) return fails;
   const los = (entry.learningObjectives || []).map(norm);
-  if (!sameSet(los, [norm(ced.learningObjective.text)])) fails.push(`${id} contract: learningObjectives differ from the CED`);
+  if (!sameSet(los, losOf(ced).map(lo => norm(lo.text)))) fails.push(`${id} contract: learningObjectives differ from the CED`);
   if (!sameSet((entry.keyConcepts || []).map(norm), ced.keyConcepts.map(k => k.code))) fails.push(`${id} contract: keyConcepts differ from the CED (${(entry.keyConcepts || []).join(', ')})`);
   const cedEx = examplesOf(ced);
   const have = (entry.illustrativeExamples || []).map(norm);
@@ -131,7 +146,7 @@ function checkMap(id, ced, md) {
 function checkDraft(id, unit, ced, md, file) {
   const fails = [];
   const text = norm(md);
-  if (!text.includes(norm(ced.learningObjective.text))) fails.push(`${file}: does not quote the CED learning objective verbatim`);
+  for (const lo of losOf(ced)) if (!text.includes(norm(lo.text))) fails.push(`${file}: does not quote ${lo.code} verbatim`);
   for (const k of ced.keyConcepts) if (!text.includes(k.code)) fails.push(`${file}: does not name ${k.code}`);
   const move = reasoningMove(md);
   if (!move) fails.push(`${file}: no "**Reasoning move:**" line`);
@@ -200,7 +215,7 @@ function negativeControls(inputs) {
     ['contract adds an example the CED does not list', b => { b.contract.topics[id].illustrativeExamples.push('Ottoman millet system'); }],
     ['draft paraphrases the learning objective', b => {
       const d = b.drafts[id];
-      const words = b.source.topics[id].learningObjective.text.split(/\s+/).map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+      const words = losOf(b.source.topics[id])[0].text.split(/\s+/).map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
       const before = d.md;
       d.md = d.md.replace(new RegExp(words.join('\\s+'), 'g'), 'Explain how rulers ran empires.');
       if (d.md === before) throw new Error('learning objective not found in the draft');
@@ -208,9 +223,22 @@ function negativeControls(inputs) {
     ['draft gives a reasoning move the CED does not', b => { const d = b.drafts[id]; d.md = d.md.replace(/\*\*Reasoning move:\*\*\s*\S+/, '**Reasoning move:** narration'); }],
     ['draft cites a copy instead of the CED source', b => { const d = b.drafts[id]; d.md = d.md.split(SOURCE_REL(b.unit)).join('scripts/lib/ced-unit3-contract.js'); }]
   ];
+  // Unit 4 is where a topic first carried several learning objectives, and a
+  // check written for one can pass a copy that keeps the first and drops the
+  // rest. These two run against such a topic, when one exists.
+  const multi = inputs.map(i => ({ i, id: Object.keys(i.source.topics).find(t => losOf(i.source.topics[t]).length > 1) })).find(x => x.id);
+  if (multi) {
+    const m = multi.id;
+    const last = b => losOf(b.source.topics[m]).slice(-1)[0];
+    controls.push(
+      ['lesson drops one of a topic\'s several learning objectives', b => { b.lessons[m].kcs = b.lessons[m].kcs.filter(k => norm(k.code) !== norm(last(b).code)); }, multi.i],
+      ['contract drops one of a topic\'s several learning objectives', b => { const c = b.contract.topics[m]; c.learningObjectives = c.learningObjectives.filter(t => norm(t) !== norm(last(b).text)); }, multi.i]
+    );
+  }
   const fails = [];
-  for (const [name, mutate] of controls) {
-    const b = Object.assign({}, base, { lessons: clone(base.lessons), contract: clone(base.contract), drafts: clone(base.drafts) });
+  for (const [name, mutate, own] of controls) {
+    const src = own || base;
+    const b = Object.assign({}, src, { lessons: clone(src.lessons), contract: clone(src.contract), drafts: clone(src.drafts) });
     try { mutate(b); } catch (e) { fails.push(`negative control "${name}" could not be applied: ${e.message}`); continue; }
     if (run([b]).length === 0) fails.push(`negative control "${name}" stayed green, so the check cannot see that failure`);
   }

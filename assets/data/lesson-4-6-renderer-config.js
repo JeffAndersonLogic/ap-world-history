@@ -4,6 +4,12 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
+      "code": "Unit 4: Learning Objective L",
+      "theme": "Learning Objective",
+      "text": "Explain the effects of the development of state power from 1450 to 1750.",
+      "illustrativeExamples": []
+    },
+    {
       "code": "KC-4.3.III.iii",
       "theme": "Governance",
       "text": "State expansion and centralization led to resistance from an array of social, political, and economic groups on a local level.",
@@ -21,7 +27,7 @@
       "theme": "Governance",
       "text": "Enslaved persons challenged existing authorities in the Americas through organized resistance.",
       "illustrativeExamples": [
-        "Establishment of Maroon societies in the Caribbean and Brazil",
+        "The establishment of Maroon societies in the Caribbean and Brazil",
         "Resistance of enslaved persons in North America"
       ]
     }

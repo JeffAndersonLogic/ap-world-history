@@ -73,6 +73,12 @@ window.BEHISTORICAL_LESSON = {
 
   collegeBoardKeyConcepts: [
     {
+      code: 'Unit 4: Learning Objective D',
+      theme: 'Learning Objective',
+      text: 'Explain the causes of the Columbian Exchange and its effects on the Eastern and Western Hemispheres.',
+      illustrativeExamples: []
+    },
+    {
       code: 'KC-4.1.V',
       theme: 'Humans and the Environment',
       text: 'The new connections between the Eastern and Western Hemispheres resulted in the exchange of new plants, animals, and diseases, known as the Columbian Exchange.',

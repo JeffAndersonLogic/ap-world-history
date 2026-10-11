@@ -79,51 +79,45 @@ window.BEHISTORICAL_LESSON = {
       illustrativeExamples: []
     },
     {
-      code: 'KC-4.1.IV',
-      theme: 'Economic Systems',
-      text: 'New global circulation of goods was facilitated by chartered monopoly companies and global silver flows, while regional Afro-Eurasian markets continued to flourish.',
+      code: 'KC-4.1',
+      theme: 'Transoceanic Interconnections',
+      text: 'The interconnection of the Eastern and Western Hemispheres, made possible by transoceanic voyaging, transformed trade and had a significant social impact on the world.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.1.II',
+      theme: 'Transoceanic Interconnections',
+      text: 'Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.1.II.A',
+      theme: 'Transoceanic Interconnections',
+      text: 'The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns, all of which made transoceanic travel and trade possible.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'KC-4.2',
+      theme: 'Transoceanic Interconnections',
+      text: 'Although the world’s productive systems continued to be heavily centered on agriculture, major changes occurred in agricultural labor, the systems and locations of manufacturing, gender and social structures, and environmental processes.',
       illustrativeExamples: []
     },
     {
       code: 'KC-4.2.II',
-      theme: 'Economic Systems',
-      text: 'Growing global demand intensified labor, expanded plantations, and contributed to the development and intensification of the Atlantic slave trade.',
+      theme: 'Transoceanic Interconnections',
+      text: 'The demand for labor intensified as a result of the growing global demand for raw materials and finished products. Traditional peasant agriculture increased and changed in nature, plantations expanded, and the Atlantic slave trade developed and intensified.',
       illustrativeExamples: []
     },
     {
-      code: 'KC-4.2.II.A',
-      theme: 'Economic Systems',
-      text: 'Peasant and artisan labor continued and intensified in many regions as demand for food and consumer goods increased.',
-      illustrativeExamples: ['Western Europe wool and linen', 'India cotton', 'China silk']
-    },
-    {
-      code: 'KC-4.2.II.C',
-      theme: 'Social Interactions and Organization',
-      text: 'The growth of plantation economies increased demand for enslaved labor in the Americas and produced major demographic, social, and cultural changes.',
+      code: 'KC-4.3',
+      theme: 'Transoceanic Interconnections',
+      text: 'Empires achieved increased scope and influence around the world, shaping and being shaped by the diverse populations they incorporated.',
       illustrativeExamples: []
     },
     {
-      code: 'KC-4.2.II.D',
-      theme: 'Economic Systems',
-      text: 'Colonial economies in the Americas used existing labor systems and introduced new systems including chattel slavery, indentured servitude, encomienda, and hacienda.',
-      illustrativeExamples: ['Incan mit’a']
-    },
-    {
-      code: 'KC-4.2.III.A',
-      theme: 'Social Interactions and Organization',
-      text: 'Imperial conquest and widening economic opportunities contributed to new political and economic elites, including the casta system in the Americas.',
-      illustrativeExamples: []
-    },
-    {
-      code: 'KC-4.2.III.B',
-      theme: 'Social Interactions and Organization',
-      text: 'The power of existing political and economic elites fluctuated as increasingly powerful rulers challenged their influence.',
-      illustrativeExamples: ['Ottoman timars', 'Russian boyars', 'European nobility']
-    },
-    {
-      code: 'KC-4.2.III.C',
-      theme: 'Social Interactions and Organization',
-      text: 'Gender and family structures changed in some regions, including demographic changes in Africa associated with the trade of enslaved persons.',
+      code: 'KC-4.3.III.ii',
+      theme: 'Transoceanic Interconnections',
+      text: 'Economic disputes led to rivalries and conflict between states.',
       illustrativeExamples: []
     }
   ],

@@ -298,6 +298,10 @@ window.BEHISTORICAL_KEY_CONCEPTS = {
   ],
   "4.1": [
     {
+      "code": "Unit 4: Learning Objective A",
+      "text": "Explain how cross-cultural interactions resulted in the diffusion of technology and facilitated changes in patterns of trade and travel from 1450 to 1750."
+    },
+    {
       "code": "KC-4.1.II",
       "text": "Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation."
     },
@@ -307,6 +311,14 @@ window.BEHISTORICAL_KEY_CONCEPTS = {
     }
   ],
   "4.2": [
+    {
+      "code": "Unit 4: Learning Objective B",
+      "text": "Describe the role of states in the expansion of maritime exploration from 1450 to 1750."
+    },
+    {
+      "code": "Unit 4: Learning Objective C",
+      "text": "Explain the economic causes and effects of maritime exploration by the various European states."
+    },
     {
       "code": "KC-4.1.III",
       "text": "New state-supported transoceanic maritime exploration occurred in this period."
@@ -325,6 +337,10 @@ window.BEHISTORICAL_KEY_CONCEPTS = {
     }
   ],
   "4.3": [
+    {
+      "code": "Unit 4: Learning Objective D",
+      "text": "Explain the causes of the Columbian Exchange and its effects on the Eastern and Western Hemispheres."
+    },
     {
       "code": "KC-4.1.V",
       "text": "The new connections between the Eastern and Western Hemispheres resulted in the exchange of new plants, animals, and diseases, known as the Columbian Exchange."
@@ -347,6 +363,18 @@ window.BEHISTORICAL_KEY_CONCEPTS = {
     }
   ],
   "4.4": [
+    {
+      "code": "Unit 4: Learning Objective E",
+      "text": "Explain the process of state building and expansion among various empires and states in the period from 1450 to 1750."
+    },
+    {
+      "code": "Unit 4: Learning Objective F",
+      "text": "Explain the continuities and changes in economic systems and labor systems from 1450 to 1750."
+    },
+    {
+      "code": "Unit 4: Learning Objective G",
+      "text": "Explain changes and continuities in systems of slavery in the period from 1450 to 1750."
+    },
     {
       "code": "KC-4.3.II.A.i",
       "text": "Europeans established new trading posts in Africa and Asia, which proved profitable for the rulers and merchants involved in new global trade networks. Some Asian states sought to limit the disruptive economic and cultural effects of European-dominated long-distance trade by adopting restrictive or isolationist trade policies."
@@ -377,6 +405,22 @@ window.BEHISTORICAL_KEY_CONCEPTS = {
     }
   ],
   "4.5": [
+    {
+      "code": "Unit 4: Learning Objective H",
+      "text": "Explain how rulers employed economic strategies to consolidate and maintain power throughout the period from 1450 to 1750."
+    },
+    {
+      "code": "Unit 4: Learning Objective I",
+      "text": "Explain the continuities and changes in networks of exchange from 1450 to 1750."
+    },
+    {
+      "code": "Unit 4: Learning Objective J",
+      "text": "Explain how political, economic, and cultural factors affected society from 1450 to 1750."
+    },
+    {
+      "code": "Unit 4: Learning Objective K",
+      "text": "Explain the similarities and differences in how various belief systems affected societies from 1450 to 1750."
+    },
     {
       "code": "KC-4.1.IV.C",
       "text": "Mercantilist policies and practices were used by European rulers to expand and control their economies and claim overseas territories. Joint-stock companies, influenced by these mercantilist principles, were used by rulers and merchants to finance exploration and were used by rulers to compete against one another in global trade."
@@ -412,6 +456,10 @@ window.BEHISTORICAL_KEY_CONCEPTS = {
   ],
   "4.6": [
     {
+      "code": "Unit 4: Learning Objective L",
+      "text": "Explain the effects of the development of state power from 1450 to 1750."
+    },
+    {
       "code": "KC-4.3.III.iii",
       "text": "State expansion and centralization led to resistance from an array of social, political, and economic groups on a local level."
     },
@@ -421,6 +469,10 @@ window.BEHISTORICAL_KEY_CONCEPTS = {
     }
   ],
   "4.7": [
+    {
+      "code": "Unit 4: Learning Objective M",
+      "text": "Explain how social categories, roles, and practices have been maintained or have changed over time."
+    },
     {
       "code": "KC-4.3.I.B",
       "text": "Many states, such as the Mughal and Ottoman empires, adopted practices to accommodate the ethnic and religious diversity of their subjects or to utilize the economic, political, and military contributions of different ethnic or religious groups. In other cases, states suppressed diversity or limited certain groups’ roles in society, politics, or the economy."
@@ -440,36 +492,32 @@ window.BEHISTORICAL_KEY_CONCEPTS = {
       "text": "Explain how economic developments from 1450 to 1750 affected social structures over time."
     },
     {
-      "code": "KC-4.1.IV",
-      "text": "Global circulation of goods and silver expanded while regional Afro-Eurasian markets continued."
+      "code": "KC-4.1",
+      "text": "The interconnection of the Eastern and Western Hemispheres, made possible by transoceanic voyaging, transformed trade and had a significant social impact on the world."
+    },
+    {
+      "code": "KC-4.1.II",
+      "text": "Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation."
+    },
+    {
+      "code": "KC-4.1.II.A",
+      "text": "The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns, all of which made transoceanic travel and trade possible."
+    },
+    {
+      "code": "KC-4.2",
+      "text": "Although the world’s productive systems continued to be heavily centered on agriculture, major changes occurred in agricultural labor, the systems and locations of manufacturing, gender and social structures, and environmental processes."
     },
     {
       "code": "KC-4.2.II",
-      "text": "Growing global demand intensified labor, expanded plantations, and contributed to the Atlantic slave trade."
+      "text": "The demand for labor intensified as a result of the growing global demand for raw materials and finished products. Traditional peasant agriculture increased and changed in nature, plantations expanded, and the Atlantic slave trade developed and intensified."
     },
     {
-      "code": "KC-4.2.II.A",
-      "text": "Peasant and artisan labor continued and intensified in many regions."
+      "code": "KC-4.3",
+      "text": "Empires achieved increased scope and influence around the world, shaping and being shaped by the diverse populations they incorporated."
     },
     {
-      "code": "KC-4.2.II.C",
-      "text": "Plantation growth increased demand for enslaved labor and produced demographic, social, and cultural change."
-    },
-    {
-      "code": "KC-4.2.II.D",
-      "text": "Colonial American economies used existing labor systems and introduced new forms including chattel slavery, indentured servitude, encomienda, and hacienda."
-    },
-    {
-      "code": "KC-4.2.III.A",
-      "text": "Imperial conquest and widening economic opportunity contributed to new political and economic elites."
-    },
-    {
-      "code": "KC-4.2.III.B",
-      "text": "The power of existing political and economic elites fluctuated as rulers centralized power."
-    },
-    {
-      "code": "KC-4.2.III.C",
-      "text": "Gender and family structures changed in some regions, including demographic changes in Africa associated with the trade of enslaved persons."
+      "code": "KC-4.3.III.ii",
+      "text": "Economic disputes led to rivalries and conflict between states."
     }
   ],
   "5.1": [

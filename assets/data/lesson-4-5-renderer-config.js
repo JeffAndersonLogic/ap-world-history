@@ -4,6 +4,30 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
+      "code": "Unit 4: Learning Objective H",
+      "theme": "Learning Objective",
+      "text": "Explain how rulers employed economic strategies to consolidate and maintain power throughout the period from 1450 to 1750.",
+      "illustrativeExamples": []
+    },
+    {
+      "code": "Unit 4: Learning Objective I",
+      "theme": "Learning Objective",
+      "text": "Explain the continuities and changes in networks of exchange from 1450 to 1750.",
+      "illustrativeExamples": []
+    },
+    {
+      "code": "Unit 4: Learning Objective J",
+      "theme": "Learning Objective",
+      "text": "Explain how political, economic, and cultural factors affected society from 1450 to 1750.",
+      "illustrativeExamples": []
+    },
+    {
+      "code": "Unit 4: Learning Objective K",
+      "theme": "Learning Objective",
+      "text": "Explain the similarities and differences in how various belief systems affected societies from 1450 to 1750.",
+      "illustrativeExamples": []
+    },
+    {
       "code": "KC-4.1.IV.C",
       "theme": "Governance",
       "text": "Mercantilist policies and practices were used by European rulers to expand and control their economies and claim overseas territories. Joint-stock companies, influenced by these mercantilist principles, were used by rulers and merchants to finance exploration and were used by rulers to compete against one another in global trade.",

@@ -83,6 +83,24 @@ window.BEHISTORICAL_LESSON = {
 
   collegeBoardKeyConcepts: [
     {
+      code: 'Unit 4: Learning Objective E',
+      theme: 'Learning Objective',
+      text: 'Explain the process of state building and expansion among various empires and states in the period from 1450 to 1750.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'Unit 4: Learning Objective F',
+      theme: 'Learning Objective',
+      text: 'Explain the continuities and changes in economic systems and labor systems from 1450 to 1750.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'Unit 4: Learning Objective G',
+      theme: 'Learning Objective',
+      text: 'Explain changes and continuities in systems of slavery in the period from 1450 to 1750.',
+      illustrativeExamples: []
+    },
+    {
       code: 'KC-4.3.II.A.i',
       theme: 'Governance',
       text: 'Europeans established new trading posts in Africa and Asia, which proved profitable for the rulers and merchants involved in new global trade networks. Some Asian states sought to limit the disruptive economic and cultural effects of European-dominated long-distance trade by adopting restrictive or isolationist trade policies.',

@@ -19,6 +19,7 @@ wins. The block came from the lesson they are actually sitting in.
 **Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How maritime technologies — compass, astrolabe, lateen sail, caravel, and printed maps — made sustained oceanic exploration possible after c. 1400
 
 **College Board key concepts.**
+- Unit 4: Learning Objective A (Learning Objective): Explain how cross-cultural interactions resulted in the diffusion of technology and facilitated changes in patterns of trade and travel from 1450 to 1750.
 - KC-4.1.II (Technology and Innovation): Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation.
 - KC-4.1.II.A (Technology and Innovation): The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns—all of which made transoceanic travel and trade possible. Illustrative examples: Caravel, Carrack, Fluyt, Lateen sail, Compass, Astronomical charts.
 
@@ -37,6 +38,8 @@ Strong answer checklist: Use two specific examples of cross-cultural knowledge o
 **Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. Why European states sponsored maritime exploration after c. 1450, and what the key voyages of the Portuguese and Spanish found and created
 
 **College Board key concepts.**
+- Unit 4: Learning Objective B (Learning Objective): Describe the role of states in the expansion of maritime exploration from 1450 to 1750.
+- Unit 4: Learning Objective C (Learning Objective): Explain the economic causes and effects of maritime exploration by the various European states.
 - KC-4.1.III (Governance): New state-supported transoceanic maritime exploration occurred in this period.
 - KC-4.1.III.A (Economic Systems): Portuguese development of maritime technology and navigational skills led to increased travel to and trade with Africa and Asia and resulted in the construction of a global trading-post empire.
 - KC-4.1.III.B (Economic Systems): Spanish sponsorship of the voyages of Columbus and subsequent voyages across the Atlantic and Pacific dramatically increased European interest in transoceanic travel and trade.
@@ -57,6 +60,7 @@ Strong answer checklist: Use one Iberian voyage and one northern Atlantic voyage
 **Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How contact between Eastern and Western Hemispheres after 1492 transferred plants, animals, diseases, and people — and produced the largest demographic catastrophe in human history
 
 **College Board key concepts.**
+- Unit 4: Learning Objective D (Learning Objective): Explain the causes of the Columbian Exchange and its effects on the Eastern and Western Hemispheres.
 - KC-4.1.V (Humans and the Environment): The new connections between the Eastern and Western Hemispheres resulted in the exchange of new plants, animals, and diseases, known as the Columbian Exchange.
 - KC-4.1.V.A (Humans and the Environment): European colonization of the Americas led to the unintentional transfer of disease vectors, including mosquitoes and rats, and the spread of diseases that were endemic in the Eastern Hemisphere, including smallpox, measles, and malaria. Some of these diseases substantially reduced the indigenous populations, with catastrophic effects in many areas.
 - KC-4.1.V.B (Humans and the Environment): American foods became staple crops in various parts of Europe, Asia, and Africa. Cash crops were grown primarily on plantations with coerced labor and were exported mostly to Europe and the Middle East.
@@ -78,6 +82,9 @@ Strong answer checklist: Explain disease vulnerability and include a disease vec
 **Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How Portugal, Spain, and then the Dutch, British, and French built maritime empires using three distinct models: trading post empire, territorial colonialism, and joint-stock company
 
 **College Board key concepts.**
+- Unit 4: Learning Objective E (Learning Objective): Explain the process of state building and expansion among various empires and states in the period from 1450 to 1750.
+- Unit 4: Learning Objective F (Learning Objective): Explain the continuities and changes in economic systems and labor systems from 1450 to 1750.
+- Unit 4: Learning Objective G (Learning Objective): Explain changes and continuities in systems of slavery in the period from 1450 to 1750.
 - KC-4.3.II.A.i (Governance): Europeans established new trading posts in Africa and Asia, which proved profitable for the rulers and merchants involved in new global trade networks. Some Asian states sought to limit the disruptive economic and cultural effects of European-dominated long-distance trade by adopting restrictive or isolationist trade policies. Illustrative examples: Ming China, Tokugawa Japan.
 - KC-4.3.II.C (Governance): Driven largely by political, religious, and economic rivalries, European states established new maritime empires, including the Portuguese, Spanish, Dutch, French, and British.
 - KC-4.3.II.A.ii (Governance): The expansion of maritime trading networks fostered the growth of states in Africa, including the Asante and the Kingdom of the Kongo, whose participation in trading networks led to an increase in their influence.
@@ -101,6 +108,10 @@ Strong answer checklist: Compare an older/adapted labor system with a new or exp
 **Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How European maritime empires used forced labor, colonial administration, and silver extraction to sustain themselves — and how American silver transformed global trade networks
 
 **College Board key concepts.**
+- Unit 4: Learning Objective H (Learning Objective): Explain how rulers employed economic strategies to consolidate and maintain power throughout the period from 1450 to 1750.
+- Unit 4: Learning Objective I (Learning Objective): Explain the continuities and changes in networks of exchange from 1450 to 1750.
+- Unit 4: Learning Objective J (Learning Objective): Explain how political, economic, and cultural factors affected society from 1450 to 1750.
+- Unit 4: Learning Objective K (Learning Objective): Explain the similarities and differences in how various belief systems affected societies from 1450 to 1750.
 - KC-4.1.IV.C (Governance): Mercantilist policies and practices were used by European rulers to expand and control their economies and claim overseas territories. Joint-stock companies, influenced by these mercantilist principles, were used by rulers and merchants to finance exploration and were used by rulers to compete against one another in global trade.
 - KC-4.3.III.ii (Governance): Economic disputes led to rivalries and conflict between states. Illustrative examples: Muslim–European rivalry in the Indian Ocean, Moroccan conflict with the Songhai Empire.
 - KC-4.1.IV.D.i (Economic Systems): The Atlantic trading system involved the movement of goods, wealth, and labor, including enslaved persons.
@@ -125,8 +136,9 @@ Strong answer checklist: Use one specific social-effect example and explain how 
 **Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How colonized peoples, enslaved Africans, and rival European powers challenged maritime empires from within and without
 
 **College Board key concepts.**
+- Unit 4: Learning Objective L (Learning Objective): Explain the effects of the development of state power from 1450 to 1750.
 - KC-4.3.III.iii (Governance): State expansion and centralization led to resistance from an array of social, political, and economic groups on a local level. Illustrative examples: Pueblo Revolts, Fronde, Cossack revolts, Maratha conflict with Mughals, Ana Nzinga’s resistance (as ruler of Ndongo and Matamba), Metacom’s War (King Philip’s War).
-- KC-5.3.III.C (Governance): Enslaved persons challenged existing authorities in the Americas through organized resistance. Illustrative examples: Establishment of Maroon societies in the Caribbean and Brazil, Resistance of enslaved persons in North America.
+- KC-5.3.III.C (Governance): Enslaved persons challenged existing authorities in the Americas through organized resistance. Illustrative examples: The establishment of Maroon societies in the Caribbean and Brazil, Resistance of enslaved persons in North America.
 
 **Expected evidence terms.** Pueblo Revolt, Popé, Tewa, kiva, religious suppression, labor demands, drought, Spanish colonial rule, resistance, maroon communities, Palmares, Zumbi, quilombo, escape, autonomy, geography, organized resistance.
 
@@ -143,6 +155,7 @@ Strong answer checklist: Define maroon resistance and use Palmares as specific e
 **Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How European colonialism reorganized social order — creating the casta system in Spanish America, racializing slavery in the Atlantic world, and producing new hierarchies wherever it reached
 
 **College Board key concepts.**
+- Unit 4: Learning Objective M (Learning Objective): Explain how social categories, roles, and practices have been maintained or have changed over time.
 - KC-4.3.I.B (Social Interactions and Organization): Many states, such as the Mughal and Ottoman empires, adopted practices to accommodate the ethnic and religious diversity of their subjects or to utilize the economic, political, and military contributions of different ethnic or religious groups. In other cases, states suppressed diversity or limited certain groups’ roles in society, politics, or the economy. Illustrative examples: Expulsion of Jews from Spain and Portugal; the acceptance of Jews in the Ottoman Empire, Restrictive policies against Han Chinese in Qing China, Varying status of different classes of women within the Ottoman Empire.
 - KC-4.2.III.A (Social Interactions and Organization): Imperial conquests and widening global economic opportunities contributed to the formation of new political and economic elites, including in China with the transition to the Qing Dynasty and in the Americas with the rise of the Casta system.
 - KC-4.2.III.B (Social Interactions and Organization): The power of existing political and economic elites fluctuated as the elites confronted new challenges to their ability to affect the policies of the increasingly powerful monarchs and leaders. Illustrative examples: Ottoman timars, Russian boyars, European nobility.
@@ -163,14 +176,13 @@ Strong answer checklist: Use two specific existing-elite examples from different
 
 **College Board key concepts.**
 - Unit 4: Learning Objective N (Learning Objective): Explain how economic developments from 1450 to 1750 affected social structures over time.
-- KC-4.1.IV (Economic Systems): Global circulation of goods and silver expanded while regional Afro-Eurasian markets continued.
-- KC-4.2.II (Economic Systems): Growing global demand intensified labor, expanded plantations, and contributed to the Atlantic slave trade.
-- KC-4.2.II.A (Economic Systems): Peasant and artisan labor continued and intensified in many regions. Illustrative examples: Western Europe wool and linen, India cotton, China silk.
-- KC-4.2.II.C (Social Interactions and Organization): Plantation growth increased demand for enslaved labor and produced demographic, social, and cultural change.
-- KC-4.2.II.D (Economic Systems): Colonial American economies used existing labor systems and introduced new forms including chattel slavery, indentured servitude, encomienda, and hacienda. Illustrative examples: Incan mit’a.
-- KC-4.2.III.A (Social Interactions and Organization): Imperial conquest and widening economic opportunity contributed to new political and economic elites. Illustrative examples: Casta system.
-- KC-4.2.III.B (Social Interactions and Organization): The power of existing political and economic elites fluctuated as rulers centralized power. Illustrative examples: Ottoman timars, Russian boyars, European nobility.
-- KC-4.2.III.C (Social Interactions and Organization): Gender and family structures changed in some regions, including demographic changes in Africa associated with the trade of enslaved persons.
+- KC-4.1 (Transoceanic Interconnections): The interconnection of the Eastern and Western Hemispheres, made possible by transoceanic voyaging, transformed trade and had a significant social impact on the world.
+- KC-4.1.II (Transoceanic Interconnections): Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation.
+- KC-4.1.II.A (Transoceanic Interconnections): The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns, all of which made transoceanic travel and trade possible.
+- KC-4.2 (Transoceanic Interconnections): Although the world’s productive systems continued to be heavily centered on agriculture, major changes occurred in agricultural labor, the systems and locations of manufacturing, gender and social structures, and environmental processes.
+- KC-4.2.II (Transoceanic Interconnections): The demand for labor intensified as a result of the growing global demand for raw materials and finished products. Traditional peasant agriculture increased and changed in nature, plantations expanded, and the Atlantic slave trade developed and intensified.
+- KC-4.3 (Transoceanic Interconnections): Empires achieved increased scope and influence around the world, shaping and being shaped by the diverse populations they incorporated.
+- KC-4.3.III.ii (Transoceanic Interconnections): Economic disputes led to rivalries and conflict between states.
 
 **Expected evidence terms.** plantation economy, chattel slavery, mit’a, encomienda, hacienda, Potosí, mercantilism, artisan labor, casta, elites, gender, family, economic developments, social structures, continuity, change, plantation, slavery, peasant labor.
 

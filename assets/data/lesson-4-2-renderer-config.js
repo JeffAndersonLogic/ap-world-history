@@ -4,6 +4,18 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
+      "code": "Unit 4: Learning Objective B",
+      "theme": "Learning Objective",
+      "text": "Describe the role of states in the expansion of maritime exploration from 1450 to 1750.",
+      "illustrativeExamples": []
+    },
+    {
+      "code": "Unit 4: Learning Objective C",
+      "theme": "Learning Objective",
+      "text": "Explain the economic causes and effects of maritime exploration by the various European states.",
+      "illustrativeExamples": []
+    },
+    {
       "code": "KC-4.1.III",
       "theme": "Governance",
       "text": "New state-supported transoceanic maritime exploration occurred in this period.",

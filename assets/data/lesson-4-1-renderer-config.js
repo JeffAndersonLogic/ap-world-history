@@ -4,6 +4,12 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
+      "code": "Unit 4: Learning Objective A",
+      "theme": "Learning Objective",
+      "text": "Explain how cross-cultural interactions resulted in the diffusion of technology and facilitated changes in patterns of trade and travel from 1450 to 1750.",
+      "illustrativeExamples": []
+    },
+    {
       "code": "KC-4.1.II",
       "theme": "Technology and Innovation",
       "text": "Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation.",

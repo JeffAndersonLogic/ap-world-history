@@ -4,6 +4,12 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
+      "code": "Unit 4: Learning Objective M",
+      "theme": "Learning Objective",
+      "text": "Explain how social categories, roles, and practices have been maintained or have changed over time.",
+      "illustrativeExamples": []
+    },
+    {
       "code": "KC-4.3.I.B",
       "theme": "Social Interactions and Organization",
       "text": "Many states, such as the Mughal and Ottoman empires, adopted practices to accommodate the ethnic and religious diversity of their subjects or to utilize the economic, political, and military contributions of different ethnic or religious groups. In other cases, states suppressed diversity or limited certain groups’ roles in society, politics, or the economy.",
