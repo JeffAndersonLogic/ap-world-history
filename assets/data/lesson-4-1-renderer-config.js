@@ -136,7 +136,7 @@
       title: 'Petrus Roselli Portolan Chart, 15th Century',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/15th_century_Portolan_chart_by_Petrus_Roselli_-_Carte_marine_de_la_mer_M%C3%A9diterran%C3%A9e_et_de_la_mer_Noire.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:15th_century_Portolan_chart_by_Petrus_Roselli_-_Carte_marine_de_la_mer_M%C3%A9diterran%C3%A9e_et_de_la_mer_Noire.jpg',
-      caption: 'A 15th-century portolan chart by Petrus Roselli: a sea chart of the Mediterranean and Black Sea, with detailed coastlines and lines for compass directions. Sailors made and used charts like this before and during the early Atlantic voyages.',
+      caption: 'A 15th-century portolan chart by Petrus Roselli: a sea chart of the Mediterranean and Black Sea, with detailed coastlines and lines for compass directions. Charts like this were made for sailors before and during the early Atlantic voyages.',
       prompt: 'NOTICE the coastlines and the lines crossing the sea. What can you INFER about what sailors already knew before c. 1500? Why would a chart like this be less help far out in the open Atlantic?'
     },
     {

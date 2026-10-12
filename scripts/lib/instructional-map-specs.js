@@ -835,7 +835,7 @@ module.exports = [
     ],
     flows: [
       { from: [-11, 36.5], via: [[-17, 28], [-21, 20]], to: [-19.5, 14], label: 'Out: trade winds and the Canary Current push south' },
-      { from: [-21, 12], via: [[-36, 18], [-45, 29], [-36, 37.5]], to: [-11, 39.2], label: 'Home: sail away from land, west and north, then ride the westerlies' }
+      { from: [-21, 12], via: [[-32, 19], [-37, 29], [-29, 37.5]], to: [-11, 39.2], label: 'Home: sail away from land, west and north, then ride the westerlies' }
     ],
     note: 'BeHistorical instructional map. Routes are schematic. Along northwest Africa the trade winds and the Canary Current run south all year, so the way home was the long loop out to sea: the volta do mar.'
   },

@@ -1,6 +1,6 @@
 # Topic 4.1 Claim Ledger: Technological Innovations from 1450 to 1750
 
-**Status: Phase 9 review, pass 2 complete, 2026-10-12** (story stage 2026-10-11). Started with the story draft
+**Status: Phase 9 review, pass 3 complete, 2026-10-12** (story stage 2026-10-11). Started with the story draft
 (`docs/TOPIC-4-1-STORY-DRAFT.md`) so the story Jeff reviews has already been checked. Rows for
 the build surfaces (First & 10, deck and notes, lecture cards, checkpoints, Evidence Lab, Primary
 Source, BeSurreal, BeInTheRoom, Canvas text) are added in Phase 9.
@@ -216,6 +216,45 @@ it found is smaller, and several items were found by both.
 
 Reviewer 4 independently confirmed the MHS 52528 astrolabe's date (early 1500s) and its
 Alramech star name in the Oxford History of Science Museum catalogue.
+
+**Pass 3, 2026-10-12.** Two more fresh reviewers. Both judged every one of the nine held
+reading corrections accurate. The history reviewer found the topic "in good shape": no
+defects in the reading, lesson page, deck, simulation or maps, and three in the optional
+eBook. The page-truth reviewer found seven, one of them a real map error.
+
+### Reviewer 5: page truth
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | Tools map: the shared `westernEurope` zone sits on France, so "Iberian pilots" and all three arrows landed there, and the labels piled up | Fixed: explicit Iberia and Mediterranean zones; checked the rendered map by eye |
+| 2 | eBook "use this" box still said the volta "worked only with" latitude readings | Fixed |
+| 3 | eBook misconception note put the fluyt in transoceanic trade | Fixed |
+| 4 | BeInTheRoom volta card said "west", every other surface "west and north" | Fixed |
+| 5 | Compass, lateen sail and astronomical charts were listed under KC-4.1.II.A; the CED lists them under the cross-cultural statement, KC-4.1.II | Fixed in both files. The CED test checks the set of examples, not their placement, so it could not catch this |
+| 6 | The volta slide line had no verb | Fixed |
+| 7 | Corrections doc rows 7 and 8 named the wrong part of the reading | Fixed |
+| U | Livro das Armadas often dated c. 1568; the Commons image is small for projection | Kept c. 1566 (matches Commons) |
+| U | eBook "better ships than Europe" | Fixed: "long-established shipping" |
+
+### Reviewer 6: history
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | eBook: the charts were "printed" on paper; portolans were hand-drawn, usually on vellum | Fixed |
+| 2 | eBook: printing made tables error-free | Fixed: printing made copies the same, not correct |
+| 3 | eBook: "to sail anywhere"; "the reason Europeans solved the Atlantic is that they had the problem" | Fixed: "as far as East Africa"; "part of the reason" |
+| U | Caravel "of the 1430s" (Eanes in 1434 sailed a barca) | Fixed: "of the 1440s" |
+| U | "Royal Cosmographer" is a 16th-century office | Fixed: "Royal Mathematician and Chart Keeper" (João II's advisers were a junta of mathematicians) |
+| U | Ptolemy's Geography reached Italy c. 1397 to 1406 | Fixed: "around 1400" |
+| U | Many surviving portolans were presentation copies | Fixed: "made for sailors" |
+| U | The wind map's loop bulged to about 45°W, well west of the Azores | Fixed: the loop now runs through the Azores |
+| U | Whether Dias swung offshore on purpose is debated | Kept: the scenario offers it as a choice |
+| Adjacent | Topic 4.2's reading teaches Henry's "court in Sagres" as an organized knowledge center; the 4.1 deck tells the teacher the Sagres school is a myth | Reported to Jeff; outside 4.1 |
+
+**Stop rule.** Pass 3 still found defects, so the loop did not end on a clean pass. The
+safety valve applies: after three passes the remaining findings go to Jeff rather than to
+a fourth pass. Every pass 3 finding is fixed above; the trend was 38 defects, then 25,
+then 10, with no new myths after pass 1.
 
 ### Changes waiting on Jeff
 
