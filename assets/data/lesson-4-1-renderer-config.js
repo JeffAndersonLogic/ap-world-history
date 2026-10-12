@@ -19,7 +19,11 @@
       "code": "KC-4.1.II",
       "theme": "Technology and Innovation",
       "text": "Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation.",
-      "illustrativeExamples": []
+      "illustrativeExamples": [
+        "Lateen sail",
+        "Compass",
+        "Astronomical charts"
+      ]
     },
     {
       "code": "KC-4.1.II.A",
@@ -28,10 +32,7 @@
       "illustrativeExamples": [
         "Caravel",
         "Carrack",
-        "Fluyt",
-        "Lateen sail",
-        "Compass",
-        "Astronomical charts"
+        "Fluyt"
       ]
     }
   ];

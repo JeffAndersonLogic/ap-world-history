@@ -451,8 +451,8 @@ Strong answer checklist: Answer the exact increased-influence question. Use rele
 
 **College Board key concepts.**
 - Unit 4: Learning Objective A (Learning Objective): Explain how cross-cultural interactions resulted in the diffusion of technology and facilitated changes in patterns of trade and travel from 1450 to 1750.
-- KC-4.1.II (Technology and Innovation): Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation.
-- KC-4.1.II.A (Technology and Innovation): The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns, all of which made transoceanic travel and trade possible. Illustrative examples: Caravel, Carrack, Fluyt, Lateen sail, Compass, Astronomical charts.
+- KC-4.1.II (Technology and Innovation): Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation. Illustrative examples: Lateen sail, Compass, Astronomical charts.
+- KC-4.1.II.A (Technology and Innovation): The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns, all of which made transoceanic travel and trade possible. Illustrative examples: Caravel, Carrack, Fluyt.
 
 **Expected evidence terms.** compass, astrolabe, astronomical charts, lateen sail, caravel, carrack, latitude, dead reckoning, volta do mar, trade winds, magnetic compass, China, Islamic astronomy, currents, cross-cultural diffusion.
 

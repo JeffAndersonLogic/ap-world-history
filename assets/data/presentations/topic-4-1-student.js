@@ -238,7 +238,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "",
       "kc": "KC-4.1.II.A",
       "template": {
-        "line": "To get home, sail away from land. No coast and almost no landmarks: the compass, the wind and, more and more, latitude.",
+        "line": "To get home, sail away from land. With no coast in sight, pilots trusted the compass, the wind and, more and more, their latitude readings.",
         "visual": {
           "url": "../assets/images/topics/4-1/4.1%20-%20Volta%20do%20Mar.jpg",
           "alt": "Reconstruction of a single small sailing ship alone on a wide blue ocean under rows of white clouds, no land in sight",

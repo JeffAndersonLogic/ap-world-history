@@ -806,16 +806,16 @@ module.exports = [
     title: "Where Europe's Sea Tools Came From",
     subtitle: 'Topic 4.1 \u00b7 Technological innovations',
     highlights: [
-      { zone: 'westernEurope', label: 'IBERIAN PILOTS', tone: 'gold', legend: 'Iberia: pilots combine the tools' },
-      { zone: 'mediterranean', label: 'LATEEN SAIL', tone: 'slate', legend: 'Mediterranean: lateen sail, Greek astronomy' },
+      { zone: [-4.5, 40, 5, 3.5], label: 'IBERIAN PILOTS', labelSide: 'left', tone: 'gold', legend: 'Iberia: pilots combine the tools' },
+      { zone: [17, 37, 11, 4], label: 'LATEEN SAIL', tone: 'slate', legend: 'Mediterranean: lateen sail, Greek astronomy' },
       { zone: 'swAsia', label: 'ASTRONOMY', tone: 'sand', legend: 'Islamic world: astrolabe, astronomical charts' },
       { zone: 'eastAsia', label: 'COMPASS', tone: 'bronze', legend: 'China: the magnetic compass' },
       { zone: 'indianOcean', label: 'MONSOON', tone: 'slate', legend: 'Indian Ocean: the monsoon world' }
     ],
     flows: [
-      { from: 'eastAsia', to: 'westernEurope', label: 'compass (route debated)', bow: -0.18 },
-      { from: 'swAsia', to: 'westernEurope', label: 'astronomy, Arabic to Latin', bow: 0.22 },
-      { from: 'mediterranean', to: 'westernEurope', label: 'lateen sail', bow: 0.3 }
+      { from: 'eastAsia', to: [-2, 41.5], label: 'compass (route debated)', bow: -0.18 },
+      { from: 'swAsia', to: [-1.5, 39.5], label: 'astronomy, Arabic to Latin', bow: 0.22 },
+      { from: [17, 37], to: [-1.5, 38.5], label: 'lateen sail', bow: 0.3 }
     ],
     note: 'BeHistorical instructional map. Europe combined borrowed tools with new ships and learned the Atlantic winds itself; routes are schematic and coastlines simplified for classroom projection.'
   },

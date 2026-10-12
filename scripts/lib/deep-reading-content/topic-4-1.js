@@ -42,7 +42,7 @@ module.exports = {
   docTitle: 'BeHistorical | Deep Reading | Topic 4.1: Sailing Away to Get Home',
   eyebrow: 'Topic 4.1 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Sailing Away to Get <em>Home</em>',
-  deck: `The Indian Ocean had better ships than Europe and a wind that reversed on schedule. The Atlantic offered neither, and the technology in this chapter is the answer to that harder problem: how to leave the sight of land for weeks, find a place you have never been, and get back against the wind that brought you.`,
+  deck: `The Indian Ocean had long-established shipping and a wind that reversed on schedule. The Atlantic offered neither, and the technology in this chapter is the answer to that harder problem: how to leave the sight of land for weeks, find a place you have never been, and get back against the wind that brought you.`,
   meta: ['Four sections', 'The problem before the technology', 'Read alongside the First & 10'],
   footerNote: 'Topic 4.1 &nbsp;·&nbsp; Sailing Away to Get Home &nbsp;·&nbsp; Companion to the First &amp; 10',
 
@@ -134,7 +134,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that the caravel crossed the Atlantic and opened the world, full stop. The caravel was an exploring vessel, superb for probing the African coast, and too small to be the backbone of transoceanic commerce. The trade that followed ran in carracks, galleons and later fluyts. Naming the right ship for the right job, explorer, armed carrier, cheap freighter, is exactly the specificity the success criteria ask for, and it takes one extra clause.`
+              html: `Do not write that the caravel crossed the Atlantic and opened the world, full stop. The caravel was an exploring vessel, superb for probing the African coast, and too small to be the backbone of transoceanic commerce. The long-distance trade that followed ran mostly in carracks and galleons; the fluyt later made freight cheap, mostly in Europe's own waters. Naming the right ship for the right job, explorer, armed carrier, cheap freighter, is exactly the specificity the success criteria ask for, and it takes one extra clause.`
             } }
           ]
         }
@@ -234,7 +234,7 @@ module.exports = {
       ],
       useThis: {
         tool: `The volta do mar. <em>The mechanism is that the northeast trades push a ship south and hold it there, so a returning vessel stands far out into the open Atlantic on a northwesterly course to reach the belt of westerlies at higher latitudes and rides those home. It converts an unsailable return into a routine one, and it is knowledge of the ocean rather than a device.</em>`,
-        limit: `It took decades of incremental voyages to learn, and it worked only with latitude measurement good enough to know when to turn and ships able to stay at sea for weeks. No single innovation here is sufficient alone.`,
+        limit: `It took decades of voyages to learn. It needed ships able to stay at sea for weeks, and it became far more reliable once pilots could measure latitude and knew when to turn. No single innovation here is sufficient alone.`,
         comparison: `Against the <em>monsoon</em> in Topic 2.3: both are wind systems that made long voyages routine, and the difference is that the monsoon announces itself twice a year to anyone on the coast, while the Atlantic pattern had to be discovered by sailing into open ocean on the guess that something useful was out there.`
       },
       terms: [
