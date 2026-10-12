@@ -7,7 +7,7 @@ const server=http.createServer((req,res)=>{const f=path.resolve(root,'.'+new URL
 let browser;
 const settle=page=>page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));
 async function directRoute(page){
- await settle(page);const hit=page.locator('.atlas-route-hit').first();await hit.scrollIntoViewIfNeeded();
+ await page.locator('#atlas-place').selectOption('0');await settle(page);const hit=page.locator('.atlas-route-hit').first();await hit.scrollIntoViewIfNeeded();
  const q=await hit.evaluate(el=>{for(const f of [.2,.3,.4,.5,.6,.7,.8]){const p=el.getPointAtLength(el.getTotalLength()*f),q=new DOMPoint(p.x,p.y).matrixTransform(el.getScreenCTM());if(document.elementFromPoint(q.x,q.y)===el)return{x:q.x,y:q.y};}throw Error('No visible connection segment');});
  await page.mouse.click(q.x,q.y);assert.equal(await page.locator('#detail-kind').textContent(),'Connection','Direct connection click');
 }
@@ -23,7 +23,13 @@ async function audit(page,u){
    assert.equal(await page.evaluate(()=>document.activeElement.getAttribute('aria-label')),name,'Focus survives redraw');
    await page.locator('#atlas-place').selectOption('0');assert.equal(await page.locator('#place-title').textContent(),name);
    const count=await page.locator('.map-key').count();if(count){await page.locator('.map-key').first().click();assert.equal(await page.locator('#detail-kind').textContent(),'Connection');await directRoute(page);}
-   await page.locator('.atlas-place-hit').first().click();assert.equal(await page.locator('#detail-kind').textContent(),'Place','Direct marker click');
+   await page.locator('#atlas-place').selectOption('');await settle(page);
+   const marker=page.locator('.atlas-place-hit').first();await marker.scrollIntoViewIfNeeded();
+   // Overlapping hit areas intentionally select the geographically nearest point.
+   // Click the rendered center as a user would, rather than require this one
+   // invisible hit area to be topmost over a neighboring invisible hit area.
+   const q=await marker.evaluate(el=>{const q=new DOMPoint(el.cx.baseVal.value,el.cy.baseVal.value).matrixTransform(el.getScreenCTM());return{x:q.x,y:q.y};});
+   await page.mouse.click(q.x,q.y);assert.equal(await page.locator('#detail-kind').textContent(),'Place','Direct marker click');
   }
  }
 }
@@ -35,6 +41,9 @@ let base;
  for(const u of [4,5]){
   // Negative control: disabling marker key handlers must fail the same interaction audit.
   await page.route('**/behistorical-network-atlas.js',r=>r.fulfill({contentType:'text/javascript',body:fs.readFileSync(path.join(root,'assets/js/behistorical-network-atlas.js'),'utf8').replace(".on('keydown',event=>{if(event.key==='Enter'||event.key===' ')",".on('keydown',event=>{if(false)")}));
+  await assert.rejects(()=>audit(page,u),/AssertionError/);await page.unroute('**/behistorical-network-atlas.js');
+  // Independently demonstrate direct clicks fail when click handlers are removed.
+  await page.route('**/behistorical-network-atlas.js',r=>r.fulfill({contentType:'text/javascript',body:fs.readFileSync(path.join(root,'assets/js/behistorical-network-atlas.js'),'utf8').replace(".on('click',fn)",".on('click',()=>{})")}));
   await assert.rejects(()=>audit(page,u),/AssertionError/);await page.unroute('**/behistorical-network-atlas.js');await audit(page,u);
   for(const width of [360,768,1100]){
    await page.setViewportSize({width,height:1000});await page.goto(base+'/unit-'+u+'/index.html');const id='#unit'+u+'-atlas-frame';await page.locator(id).scrollIntoViewIfNeeded();const frame=page.frameLocator(id);await frame.locator('.atlas-place-hit').first().waitFor();await frame.locator('#atlas-topic').selectOption(u+'.1');
