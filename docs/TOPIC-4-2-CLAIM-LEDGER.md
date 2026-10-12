@@ -158,3 +158,32 @@ otherwise the reason it was not taken is given.
 21. Timeline footer "more than seventy years" under a 1415 to 1511 span. **Fixed:** "nearly a century." Unlabeled tick marks are the timeline template's own behavior on every deck. **Not changed here.**
 22. Strike-through between the two lines of the weak claim. **Fixed** by shortening it to one line. Present-mode "The Question" subtitle touching the title's descenders and unequal face-off card heights are the shared renderer and template. **Not changed here:** the same layout ships on 4.1 and Unit 3; reported as an adjacent finding.
 23. (Found by `slide-templates.browser.test.js`) the shortened retelling matrix still collided with its heading in the brand fonts after the item 4 wording change. **Fixed** by shortening its cells; the test passes in both font passes.
+
+### Pass 3, reviewer 5 (history)
+
+1. The Malindi pillar was dated "1498" and "on the way to India," and students were asked to read meaning from where it stands. The National Museums of Kenya give "1498 or 1499"; most historians put it on the 1499 return; it was moved from its first site. **Fixed** in both captions and the prompt.
+2. (Flagged as unsettled, not as a defect) Columbus "ordered the fleet to slow" on the night of 11 October. **Changed anyway** to what the Las Casas abstract supports: a careful watch and a promised reward, and sails taken in only after land was sighted (Primary Source and BeSurreal).
+
+Everything else checked clean, with sources (pepper prices, Lybyer's wording, Cabot's patent, the French fishery, the image dates, every date and figure, CED alignment, ownership).
+
+### Pass 3, reviewer 6 (page truth and readability)
+
+1. Checkpoint 2 displayed Target 2 for Portugal and Spain while asking about one. **Fixed:** the card shows "For ONE of Portugal or Spain."
+2. Checkpoint 2's "connect the two" demand was on no displayed criterion. **Fixed:** SC3 now asks how Portugal's and Spain's routes led the northern state to look north.
+3. Map prompts asked "why north" of a map that shows only where. **Fixed:** the page key adds "Why north?" (Portugal's route, Tordesillas), and both prompts say to use the key.
+4. The map's own key is about 6 px when projected. **Narrowed:** the slide footer states the Magellan note and the teacher note says to name the routes aloud or open the map file full screen. Redesigning the map for the projector is not done in this build.
+5. The Barentsz arrowhead ran under the map's title band. **Fixed.**
+6. The student map slide lacked the teacher slide's Magellan line. **Fixed:** moved to the footer, which the student deck keeps.
+7. Deep reading said the criteria ask for dates. **Fixed.**
+8. F10 section 2 callout labeled Causation teaches the role of states. **Fixed:** "AP Thinking, The Role of States."
+9. A Skill Builder example pair was a treaty, not one state's voyages. **Fixed.**
+10. Three student prompts above ninth grade (Checkpoint 1 checklist, Checkpoint 2, the map prompt). **Fixed** with the reviewer's plain rewrites, adapted.
+- Shared, not 4.2: the lecture modal's Back to Modules button over the image corner; a blank Teacher Intelligence title on Sharpen slides (4.1 is built the same way); timeline tick labels dropped near data points. Reported as adjacent findings.
+
+### Stop rule
+
+Three full passes in a row found supported defects, so under the build skill's safety valve the loop stops here with pass 3's findings fixed, and the report leads with it. The trend was down and to small items: pass 1 found 30 (the biggest, "only a ruler could pay," changed the story's framing on every surface), pass 2 found 29 (one date contradiction and one wrong sponsor among mostly wording and layout), pass 3 found 11 (one uncertain monument date, the rest checkpoint wording and map legibility). No new myth turned up after pass 1. Pass 3's fixes have not themselves been through a fresh reviewer.
+
+## Status totals (2026-10-12)
+
+Story claims and Phase 9 claims together: every row has a status. NEEDS JEFF: none.

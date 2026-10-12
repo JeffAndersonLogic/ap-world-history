@@ -65,7 +65,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Economic Systems"
     },
     {
-      criteria: "I can use one English, French, or Dutch voyage to explain the search for another route to Asia and one effect it had, such as cod fishing, the fur trade, or land claims.",
+      criteria: "I can use one English, French, or Dutch voyage to explain the search for another route to Asia and one effect it had, such as cod fishing, the fur trade, or land claims, and explain how Portugal's and Spain's routes led it to look north.",
       kc: 'KC-4.1.III.C',
       theme: "Economic Systems"
     }
@@ -184,7 +184,7 @@ window.BEHISTORICAL_LESSON = {
     sourceUrl: "../assets/images/instructional-maps/topic-4-2.svg",
     caption: "A BeHistorical instructional map of the three directions European states paid for: Portugal around Africa to India, Spain west across the Atlantic, and England, France, and the Dutch across the North Atlantic and toward the Arctic. Routes are schematic and coastlines simplified.",
     intro: "Use the map to see the whole topic at once. Find each numbered route (1 to 5) in the map key, and notice which states went which way. Open the map full size to read the key.",
-    prompt: "Using the map, explain why England, France, and the Dutch sailed north instead of following Portugal's or Spain's route. Then name one place on the map where a voyage found something other than a route to Asia, and say what it found."
+    prompt: "Use the map and its key. Why did England, France, and the Dutch sail north? Then find one place on the map where a voyage found something other than a way to Asia. What did it find?"
   },
 
   deepReading: {

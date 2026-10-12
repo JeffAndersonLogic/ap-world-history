@@ -304,7 +304,7 @@ module.exports = {
           }
         ],
         "callout": {
-          "label": "AP Thinking, Causation",
+          "label": "AP Thinking, The Role of States",
           "raw": "<p><strong>Name the state's role.</strong> The College Board asks about the role of states, not just the explorers. A strong answer says which ruler backed the voyage, what the ruler gave (money, ships, permission, or promises), and what the ruler wanted back.</p>"
         }
       },

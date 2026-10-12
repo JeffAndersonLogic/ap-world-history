@@ -87,7 +87,14 @@ const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
 // nine corrections to that prose ("Approved"), listed with their reasons in
 // docs/TOPIC-4-1-READING-CORRECTIONS.md; the fingerprint moved from 7f110bc...
 // and again only the 4.1 entry changed.
-const APPROVED_UNIT4_REWRITE_BLOB = 'b2880b2f87627ac93884cd5c066bd850aeff2351';
+// Topic 4.2's story-first rewrite, "Who Paid?", was written from the 4.2 story
+// (docs/TOPIC-4-2-STORY-DRAFT.md) on 2026-10-12 and went through three
+// independent review passes (six reviewers; findings and dispositions in
+// docs/TOPIC-4-2-CLAIM-LEDGER.md), approved under Jeff's standing rule of
+// 2026-10-12, which delegates story and reading approval to the reviewer loop.
+// The fingerprint moved from b2880b2... and only the 4.2 entry changed; 4.1 and
+// 4.3 to 4.8 are byte-for-byte unchanged.
+const APPROVED_UNIT4_REWRITE_BLOB = 'b98e3cdebf4a497b0626d456456a0f7199663831';
 const unit4SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-4.js');
 const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
   && gitBlobSha(fs.readFileSync(unit4SourcePath, 'utf8')) === APPROVED_UNIT4_REWRITE_BLOB;

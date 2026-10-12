@@ -61,6 +61,7 @@
       { label: '2. Spain, west across the Atlantic', detail: 'Paid for by Isabella and Ferdinand. Columbus reached the Caribbean in 1492. Magellan\'s fleet later sailed on across the Pacific (1519 to 1522); that voyage is not drawn on this map, and the note at the bottom of the map describes it.' },
       { label: '3, 4 and 5. England, France, and the Dutch, north', detail: 'Route 3 is Cabot for England in 1497, route 4 Cartier for France in the 1530s, route 5 Barentsz for the Dutch in the 1590s. Each looked for another route to Asia; none found one.' },
       { label: 'Black dots: Elmina, Calicut, Malacca', detail: 'A Portuguese fort for the gold trade (1482), the Indian port da Gama reached (1498), and a port Portugal seized (1511): three links in a trading-post empire.' },
+      { label: 'Why north?', detail: 'Portugal held the route around Africa, and Spain and Portugal split the newly found lands between them in the Treaty of Tordesillas (1494). Other states had to look for another way.' },
       { label: 'Shaded oval: North Atlantic coast', detail: 'Where the northern voyages found cod, furs, and land to claim instead of a route to Asia.' }
     ]
   };
@@ -92,7 +93,7 @@
       { label: 'Name the second development', text: 'In 1492 Isabella and Ferdinand of Spain paid for Columbus to sail west across the Atlantic to reach Asia.' },
       { label: 'Explain the link', text: 'Because Portugal already held the route around Africa, and had turned Columbus down, Spain\'s only way to reach Asia\'s trade was west. One state\'s voyages shaped another state\'s choice.' }
     ],
-    prompt: 'In 2 to 3 sentences, explain how ONE state\'s voyages connected to ANOTHER state\'s decision to back voyages of its own. Name both states and both developments, and use because or so to show the link. (Example pairs: Portugal\'s African route and Spain\'s voyage west; the Treaty of Tordesillas and the English, French, or Dutch crossings.)'
+    prompt: 'In 2 to 3 sentences, explain how ONE state\'s voyages connected to ANOTHER state\'s decision to back voyages of its own. Name both states and both developments, and use because or so to show the link. (Example pairs: Portugal\'s African route and Spain\'s voyage west; Spain\'s and Portugal\'s claims to the southern routes and England\'s decision to back Cabot.)'
   };
 
   lesson.checkpoints = [
@@ -105,15 +106,15 @@
       prompt: 'Explain ONE economic reason European rulers backed ocean voyages after c. 1450. Then name ONE ruler or royal sponsor (such as Prince Henry, or Isabella and Ferdinand) and explain how they backed a voyage: what they gave (money, ships, permission, titles, or a share) and what they wanted back.',
       responseType: 'Checkpoint 1',
       terms: ['state sponsorship', 'spice trade', 'middlemen', 'royal monopoly', 'Prince Henry', 'Isabella and Ferdinand', 'titles', 'share of profits', 'risk'],
-      focus: ['Name one economic reason, explained as a mechanism, not a label.', 'Name one ruler and how that ruler backed a voyage.', 'Say what the ruler gave and what the ruler wanted back.']
+      focus: ['Give one money reason and show how it works (not just "spices," but "spices passed through many sellers, so...").', 'Name one ruler and how that ruler backed a voyage.', 'Say what the ruler gave and what the ruler wanted back.']
     },
     {
       title: 'Checkpoint 2: Two Voyages, Two Sponsors, Cause and Effect',
       subtitle: 'Checks Learning Targets 1–3 and Success Criteria 1–3.',
       cardDesc: 'One Portuguese or Spanish voyage, one English, French, or Dutch voyage: who paid, why, and what it produced.',
-      learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target, lesson.learningTargets[2].target],
+      learningTargets: [lesson.learningTargets[0].target, 'For ONE of Portugal or Spain: ' + lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Pick ONE Portuguese or Spanish voyage (such as da Gama\'s or Columbus\'s) and ONE English, French, or Dutch voyage (such as Cabot\'s, Cartier\'s, or Hudson\'s). For EACH voyage, explain: (1) which state backed it and what it gave the explorer (money, ships, permission, titles, or a share), (2) one economic reason the state backed it, and (3) one economic effect it had. Last, explain how the first voyage, or the route it opened, helped lead the second state to explore.',
+      prompt: 'Choose ONE Portuguese or Spanish voyage (such as da Gama\'s or Columbus\'s) and ONE English, French, or Dutch voyage (such as Cabot\'s, Cartier\'s, or Hudson\'s). For each one, say: who backed it and what they gave the explorer; one money reason they wanted it; and one thing it produced. Last, explain how the first voyage, or the route it opened, helped lead the second state to explore.',
       responseType: 'Checkpoint 2',
       skill: 'Causation',
       terms: ['Vasco da Gama', 'Columbus', 'Magellan', 'Elcano', 'John Cabot', 'Jacques Cartier', 'Henry Hudson', 'state sponsorship', 'trading-post empire', 'Treaty of Tordesillas', 'route to Asia', 'cod fishing', 'fur trade', 'economic effect'],
@@ -154,7 +155,7 @@
       url: '../assets/images/instructional-maps/topic-4-2.svg',
       sourceUrl: '../assets/images/instructional-maps/topic-4-2.svg',
       caption: 'A modern BeHistorical map, not a source from the time. It shows the three directions European states paid for: Portugal around Africa, Spain west, and England, France, and the Dutch in the north.',
-      prompt: 'NOTICE the northern routes and where they end. What can you INFER about why England, France, and the Dutch sailed north? What does a modern map leave out about what each voyage actually found?'
+      prompt: 'NOTICE the northern routes and where they end. Using the key and what you read, what can you INFER about why England, France, and the Dutch sailed north? What does a modern map leave out about what each voyage actually found?'
     }
   ];
 })();

@@ -44,7 +44,7 @@ module.exports = {
 
   howTo: {
     heading: 'How to Use This',
-    intro: `Section 01 explains why rulers backed the voyages, and it is the part most answers in this topic leave out. Sections 02 and 03 are the voyages with the dates the criteria ask for, section 03 also carries the Treaty of Tordesillas, and section 04 is the northern powers' response. Read 01 even if you read nothing else.`,
+    intro: `Section 01 explains why rulers backed the voyages, and it is the part most answers in this topic leave out. Sections 02 and 03 are the voyages, with who paid, what they wanted and what they produced; section 03 also carries the Treaty of Tordesillas, and section 04 is the northern powers' response. Read 01 even if you read nothing else.`,
     steps: [
       `<b>01 Why a state paid:</b> the pepper margin, the crusading inheritance, and the contract Columbus signed.`,
       `<b>02 The Portuguese program:</b> more than seventy years of small steps to Calicut.`,

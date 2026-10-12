@@ -346,11 +346,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "map",
       "eyebrow": "The Whole Topic on One Map",
       "title": "Three ways to Asia, and who paid.",
-      "subtitle": "Not drawn: Magellan's fleet, which sailed on from South America across the Pacific, 1519 to 1522.",
       "visual": {
         "url": "../assets/images/instructional-maps/topic-4-2.svg",
         "alt": "Map of routes: Portugal around Africa to India, Spain west to the Caribbean, England, France and the Dutch across the North Atlantic and toward the Arctic"
       },
+      "footer": "Not drawn: Magellan's fleet, which sailed on across the Pacific, 1519 to 1522.",
       "kc": "KC-4.1.III"
     },
     {

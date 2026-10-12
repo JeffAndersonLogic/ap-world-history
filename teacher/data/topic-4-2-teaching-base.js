@@ -385,13 +385,14 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'map', kind: 'map', eyebrow: 'The Whole Topic on One Map',
       kc: 'KC-4.1.III', title: 'Three ways to Asia, and who paid.',
-      subtitle: 'Not drawn: Magellan\'s fleet, which sailed on from South America across the Pacific, 1519 to 1522.',
+      footer: 'Not drawn: Magellan\'s fleet, which sailed on across the Pacific, 1519 to 1522.',
       visual: { url: '../assets/images/instructional-maps/topic-4-2.svg', alt: 'Map of routes: Portugal around Africa to India, Spain west to the Caribbean, England, France and the Dutch across the North Atlantic and toward the Arctic' },
       notes: {
         minutes: 2,
         land: [
           'Routes are schematic. Magellan\'s route is not drawn; the note at the bottom of the map describes it.',
-          'Read it by sponsor: south and east for Portugal, west for Spain, north for everyone else.'
+          'Read it by sponsor: south and east for Portugal, west for Spain, north for everyone else.',
+          'The map\'s own key is small when projected. Name the five numbered routes aloud, or open the map file full screen (assets/images/instructional-maps/topic-4-2.svg) to read the key.'
         ],
         ask: 'Why did the northern states sail north and not south?',
         listenFor: 'Portugal and Spain held the southern routes.'
