@@ -5090,7 +5090,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "10",
           "module": "Checkpoint 2",
           "label": "Module 10, Checkpoint 2",
-          "prompt": "Name TWO tools or ideas Europe borrowed, and the older world each came from (Classical, Islamic, or Asian). Then explain how ONE new ship and ONE thing sailors learned about the winds or currents let ships cross the ocean and come back. End with one new sea route and what could now travel on it.",
+          "prompt": "Name TWO tools or ideas Europe borrowed, and the older world each came from (Classical, Islamic, or Asian). Then explain how ONE new ship and ONE thing sailors learned about the winds or currents led to ships that could cross the ocean and come back. End with the result: one new sea route and what could now travel on it.",
           "skill": "",
           "skills": [],
           "skillRaw": "",

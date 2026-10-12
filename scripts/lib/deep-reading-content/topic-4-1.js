@@ -193,7 +193,7 @@ module.exports = {
       terms: [
         ['Mariner\'s astrolabe', 'A simplified, heavy version of the Islamic instrument, hung vertically to measure the altitude of the sun or a star from a moving deck.'],
         ['Declination tables', 'Tables of the sun&rsquo;s position through the year, without which a noon sighting cannot be converted into a latitude. These are among the astronomical charts European pilots inherited and improved.'],
-        ['Dead reckoning', 'Estimating position from course, speed and elapsed time, the only method available for longitude in this period and cumulatively inaccurate.'],
+        ['Dead reckoning', 'Estimating position from course, speed and elapsed time, the only practical method for longitude in this period and cumulatively inaccurate.'],
         ['Running down the latitude', 'Sailing to a destination&rsquo;s latitude and then along it until landfall; slower than a direct course and far more reliable.'],
         ['Portolan chart', 'A coastal sailing chart covered in rhumb lines between compass roses, recording bearings between known points rather than a coordinate grid.']
       ]

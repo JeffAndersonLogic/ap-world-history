@@ -102,7 +102,7 @@
       cardDesc: 'Cross-cultural diffusion plus practical technologies and environmental knowledge.',
       learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Name TWO tools or ideas Europe borrowed, and the older world each came from (Classical, Islamic, or Asian). Then explain how ONE new ship and ONE thing sailors learned about the winds or currents let ships cross the ocean and come back. End with one new sea route and what could now travel on it.',
+      prompt: 'Name TWO tools or ideas Europe borrowed, and the older world each came from (Classical, Islamic, or Asian). Then explain how ONE new ship and ONE thing sailors learned about the winds or currents led to ships that could cross the ocean and come back. End with the result: one new sea route and what could now travel on it.',
       responseType: 'Checkpoint 2',
       skill: 'Causation',
       terms: ['magnetic compass', 'China', 'astrolabe', 'Islamic astronomy', 'lateen sail', 'caravel', 'carrack', 'volta do mar', 'trade winds', 'currents', 'cross-cultural diffusion'],

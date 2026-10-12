@@ -461,7 +461,7 @@ Strong answer checklist: Answer the exact increased-influence question. Use rele
 **Checkpoint 1 prompt.** Identify at least THREE specific maritime technologies European sailors used after c. 1450. For each one, explain what problem it solved at sea. Then name ONE new sea route these technologies made possible.
 Strong answer checklist: Name at least three specific technologies. For each, explain the problem it solved at sea. Name one new sea route the technologies made possible.
 
-**Checkpoint 2 prompt.** Name TWO tools or ideas Europe borrowed, and the older world each came from (Classical, Islamic, or Asian). Then explain how ONE new ship and ONE thing sailors learned about the winds or currents let ships cross the ocean and come back. End with one new sea route and what could now travel on it.
+**Checkpoint 2 prompt.** Name TWO tools or ideas Europe borrowed, and the older world each came from (Classical, Islamic, or Asian). Then explain how ONE new ship and ONE thing sailors learned about the winds or currents led to ships that could cross the ocean and come back. End with the result: one new sea route and what could now travel on it.
 Strong answer checklist: Use two specific examples of cross-cultural knowledge or technology transfer. Explain one ship-design innovation and the problem it solved. Explain one wind/current pattern and how sailors used it to complete long voyages.
 
 ## 4.2 Exploration: Causes and Events
