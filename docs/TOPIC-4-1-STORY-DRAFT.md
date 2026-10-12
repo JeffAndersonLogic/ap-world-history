@@ -347,3 +347,10 @@ Jeff approved the story and took every recommendation in section 11.
     request; the build uses pictures already verified in the repo or local artwork until then.
 11. Required modules are proposed at Phase 8.
 12. The twist's wording narrowed, as above.
+
+**2026-10-12, CED alignment pass (Jeff approved).** Asked whether this is the story the CED
+tells, a line-by-line check against `scripts/lib/ced-source/unit-4.js` found three gaps, fixed
+in the First & 10 without changing the spine: it now uses the CED's term "astronomical charts,"
+names currents beside winds (the Canary Current), and shows the cross-cultural interaction that
+carried the knowledge (merchants on the Unit 2 networks; translators in Toledo). Question 1 now
+also asks how one tool reached Europe. The deck is built to the same wording.

@@ -47,6 +47,19 @@ Phase 9 because it is a date, a number or easy to mythologize.
 | The "school of Sagres" where Prince Henry gathered pilots, cartographers and astronomers | Current BeSurreal and its desc; not in the story | Modern historians call it a misconception, created by Purchas and Prévost and romanticized in the 19th century (Beazley 1894); Henry employed some cartographers but there was no navigation school (Wikipedia "Sagres school"; Encyclopedia.com, "Henry, Prince the Navigator"). | REMOVED from the story; the BeSurreal is rewritten in this build (question 6) |
 | Ibn Majid piloted da Gama to India | Not used anywhere in the story | A widely repeated myth; the pilot from Malindi is not securely identified. Listed so it is not introduced in a deck note or a BeInTheRoom role. | REMOVED (pre-emptively) |
 
+## Claims added by the CED alignment pass (2026-10-12)
+
+Jeff asked whether the story is the one the CED tells; three gaps were found and fixed in the
+First & 10 with his approval: the CED's own term "astronomical charts," currents beside winds,
+and the cross-cultural interaction that carried the knowledge.
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| Astronomical charts were tables showing where the sun and stars would be on each day of the year | First & 10 section 2, callout, takeaway | The CED's illustrative example is "astronomical charts." The navigational use is solar declination tables (Zacuto's almanac's main contribution; see the Zacuto row above). | VERIFIED as a description of what pilots used; the CED term is kept |
+| Knowledge moved with merchants on the Unit 2 trade networks and with scholars in Toledo, where Christian and Jewish translators turned Arabic books, many by Muslim scholars, into Latin | First & 10 section 2 | Toledo School of Translators: scholars working in Toledo in the 12th and 13th centuries translated Islamic philosophical and scientific works from Arabic into Latin, under Archbishop Raymond and later Alfonso X (Wikipedia, citing the standard literature); Britannica, "Toledan school": Spanish scholars translated important Arabic and Jewish works into Latin. Muslim scholars working alongside them is asserted only by a weak source, so the reading does not say it. | NARROWED (from "Muslim, Jewish and Christian scholars worked side by side") |
+| Ptolemy's great work of Greek astronomy was preserved and studied in Arabic before Europeans could read it again | First & 10 section 2 | Gerard of Cremona translated the *Almagest* from Arabic in Toledo, giving the first complete Latin version of the Greek work via Arabic intermediaries (Toledo School of Translators literature). | VERIFIED; re-check against a specialist source before projection |
+| The currents turn in the same wheel as the winds; the Canary Current flows south along northwest Africa all year | First & 10 section 4 | Britannica, "Canary Current": branches south from the North Atlantic Current and flows southwestward along the northwest coast of Africa as far as Senegal. University of Miami ocean-currents page: flows year-round toward the equator; it is the eastern arm of the North Atlantic gyre, driven by the trade winds. | VERIFIED |
+
 ## Existing-surface claims found in the constraint check (to be fixed in the build)
 
 These are on today's 4.1 pages and are not in the story. They are logged now so the build cannot

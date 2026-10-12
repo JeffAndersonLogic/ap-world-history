@@ -46,7 +46,7 @@ module.exports = {
       "Magnetic Compass",
       "Astrolabe",
       "Latitude",
-      "Astronomical Tables",
+      "Astronomical Charts",
       "Lateen Sail",
       "Caravel",
       "Carrack",
@@ -85,7 +85,11 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Europe solved its problem mostly with tools it did not invent. The <span class=\"kt\">magnetic compass</span> came from China, where sailors were using a magnetized needle at sea by about 1100. Europeans were writing about the compass by about 1190. Historians still debate how it traveled west, but it gave sailors a direction to steer when clouds hid the sun and stars."
+            "html": "Europe solved its problem mostly with tools and knowledge it did not invent, and that knowledge did not travel on its own. It moved with people: merchants on the trade networks you studied in Unit 2, and scholars in places like Toledo, a city in Spain where Christian and Jewish translators turned Arabic books, many written by Muslim scholars, into Latin. One of those books was Ptolemy's great work of Greek astronomy, which had been preserved and studied in Arabic before Europeans could read it again."
+          },
+          {
+            "type": "p",
+            "html": "The <span class=\"kt\">magnetic compass</span> came from China, where sailors were using a magnetized needle at sea by about 1100. Europeans were writing about the compass by about 1190. Historians still debate how it traveled west, but it gave sailors a direction to steer when clouds hid the sun and stars."
           },
           {
             "type": "p",
@@ -93,7 +97,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "A sun reading only helps if you know where the sun should be on that day, so pilots also needed <span class=\"kt\">astronomical tables</span>. Those had a family tree, too. Muslim and Jewish astronomers in Toledo, in Spain, built tables of the sky. Astronomers working for a king of Castile built new tables on them. Then a Jewish astronomer named Abraham Zacuto produced an almanac that was printed in Portugal in 1496 and carried on Portuguese voyages."
+            "html": "A sun reading only helps if you know where the sun should be on that day, so pilots also needed <span class=\"kt\">astronomical charts</span>: tables showing where the sun and stars would be on each day of the year. Those had a family tree, too. Before those translators, Muslim and Jewish astronomers in Toledo had built tables of the sky. Astronomers working for a king of Castile built new tables on them. Then a Jewish astronomer named Abraham Zacuto produced an almanac that was printed in Portugal in 1496 and carried on Portuguese voyages."
           },
           {
             "type": "p",
@@ -102,7 +106,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Contextualization",
-          "raw": "<p><strong>Name the world each tool came from.</strong> The College Board says this knowledge came from the Classical, Islamic, and Asian worlds. A strong answer names a tool and its world: the compass from China, the astrolabe from Greek and Islamic astronomy, the lateen sail from the Mediterranean and the Islamic seas.</p>"
+          "raw": "<p><strong>Name the world each tool came from.</strong> The College Board says this knowledge came from the Classical, Islamic, and Asian worlds. A strong answer names a tool and its world: the compass from China, the astrolabe and astronomical charts from Greek and Islamic astronomy, the lateen sail from the Mediterranean and the Islamic seas. Then say how it traveled: with merchants, or with scholars who translated it.</p>"
         }
       },
       {
@@ -139,7 +143,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "The last piece could not be borrowed, because no one had needed it before: a map of the Atlantic's winds. Over decades of voyages in the 1400s, Portuguese sailors learned that the winds of the North Atlantic turn in a giant wheel. Near Africa, the trade winds blow toward the southwest. Farther north, the <span class=\"kt\">westerlies</span> blow back toward Europe."
+            "html": "The last piece could not be borrowed, because no one had needed it before: a map of the Atlantic's winds. Over decades of voyages in the 1400s, Portuguese sailors learned that the winds of the North Atlantic turn in a giant wheel. Near Africa, the trade winds blow toward the southwest. Farther north, the <span class=\"kt\">westerlies</span> blow back toward Europe. The currents move in the same wheel. Along the northwest coast of Africa, the Canary Current flows south all year, so a ship heading home faced the wind and the water at once."
           },
           {
             "type": "p",
@@ -152,7 +156,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>Show how the pieces combine.</strong> No single tool made ocean voyages possible. The mechanism is the combination: instruments to know where you are, ships to survive the trip, and wind knowledge to find the way home.</p>"
+          "raw": "<p><strong>Show how the pieces combine.</strong> No single tool made ocean voyages possible. The mechanism is the combination: instruments to know where you are, ships to survive the trip, and knowledge of winds and currents to find the way home.</p>"
         }
       },
       {
@@ -183,15 +187,15 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "The Atlantic's wind did not turn around, so the hard part was getting home. Europe borrowed tools from older worlds (the compass from China, the astrolabe from Greek and Islamic astronomy, the lateen sail from the Mediterranean and the Islamic seas), built new ships (caravel, carrack, fluyt), and learned the Atlantic's wind wheel (the volta do mar). Together they made the ocean a two-way road, and new routes for trade and travel opened around Africa to Asia and across the Atlantic.",
+    "takeaway": "The Atlantic's wind did not turn around, so the hard part was getting home. Europe borrowed tools from older worlds (the compass from China, the astrolabe and astronomical charts from Greek and Islamic astronomy, the lateen sail from the Mediterranean and the Islamic seas), built new ships (caravel, carrack, fluyt), and learned how the Atlantic's winds and currents turn (the volta do mar). Together they made the ocean a two-way road, and new routes for trade and travel opened around Africa to Asia and across the Atlantic.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
         "num": "01",
         "skill": "Contextualization",
-        "text": "Name TWO tools European sailors used on the ocean. For each one, name the older world it came from (Classical, Islamic, or Asian) and explain how it helped sailors at sea.",
-        "placeholder": "The ___ came from ___. It helped sailors by... The ___ came from ___. It helped sailors by..."
+        "text": "Name TWO tools or kinds of knowledge European sailors used on the ocean. For each one, name the older world it came from (Classical, Islamic, or Asian) and explain how it helped sailors at sea. Then explain how ONE of them reached Europe.",
+        "placeholder": "The ___ came from ___. It helped sailors by... The ___ came from ___. It helped sailors by... One of them reached Europe through..."
       },
       {
         "num": "02",
