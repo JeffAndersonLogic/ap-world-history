@@ -46,24 +46,25 @@
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'Atlantic Ocean', detail: 'The primary geographic challenge for European explorers, an open ocean with no landmarks, unpredictable currents, and no reliable way to determine position without navigational instruments.' },
-      { label: 'African coast', detail: 'Portuguese explorers systematically extended their knowledge of the African coast southward from 1415, producing portolan charts that documented coastlines, harbors, and wind patterns.' },
-      { label: 'Cape of Good Hope', detail: 'The southern tip of Africa, rounded by Bartolomeu Dias in 1488, the critical geographic point that proved a sea route to the Indian Ocean was accessible from the Atlantic.' },
-      { label: 'Geographic takeaway', detail: 'Oceanic exploration required three overlapping technologies working together: instruments for navigation (compass, astrolabe), a ship design that could work against the wind (caravel with lateen sails), and a knowledge infrastructure to record and share discoveries (portolan charts, printing press).' }
+      { label: 'China', detail: 'The magnetic compass, used at sea by about 1100. Europeans were writing about it by about 1190; historians debate how it traveled west.' },
+      { label: 'The Islamic world', detail: 'Astronomers who made the astrolabe precise and built tables of the sky. Greek astronomy, including Ptolemy\'s great book, was studied and corrected in Arabic.' },
+      { label: 'The Mediterranean', detail: 'The lateen sail, used since Roman times, and the Greek astronomy the Islamic world inherited.' },
+      { label: 'Iberia', detail: 'Portuguese and Spanish pilots and shipbuilders combined the borrowed tools with new ships, and learned the Atlantic\'s winds and currents by sailing them.' },
+      { label: 'The Indian Ocean', detail: 'An older ocean world that already ran on the monsoon. It is context for the story, not a tool Europe borrowed.' }
     ]
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
+    map:             '../assets/images/instructional-maps/topic-4-1.svg',
     first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Qianlong_Emperor.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Shah_Abbas_I.jpg'
+    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Caravela_de_armada_of_Joao_Serrao.jpg',
+    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Caravela_de_armada_of_Joao_Serrao.jpg',
+    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/15th_century_Portolan_chart_by_Petrus_Roselli_-_Carte_marine_de_la_mer_M%C3%A9diterran%C3%A9e_et_de_la_mer_Noire.jpg',
+    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/MHS_52528_Astrolabe.jpg',
+    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/15th_century_Portolan_chart_by_Petrus_Roselli_-_Carte_marine_de_la_mer_M%C3%A9diterran%C3%A9e_et_de_la_mer_Noire.jpg',
+    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg',
+    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
+    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -72,28 +73,28 @@
   };
 
   lesson.skillBuilder = {
-    label: 'Causation practice',
-    title: 'Causation: How Technology Enabled Exploration',
-    intro: 'Causation means explaining WHY something happened, identifying causes and explaining the MECHANISM by which they produced a historical outcome. For Topic 4.1, you need to explain how specific maritime technologies caused European oceanic exploration to become possible after c. 1450. A strong causal argument names a specific technology, explains what problem it solved, and connects the solution to a specific exploratory outcome that would not have been possible without it.',
+    label: 'Contextualization practice',
+    title: 'Contextualization: Where the Tools Came From',
+    intro: 'Contextualization means describing the bigger situation a development happened in. For Topic 4.1, the development is European ships crossing oceans and coming back. The context is an older world of ocean travel and learning that Europe sat at the edge of: Chinese sailors with the compass, astronomers in the Islamic world, the Mediterranean with its lateen sails, and an Indian Ocean that ran on the monsoon. A strong answer describes that context first, then shows how it made the European development possible.',
     steps: [
-      { label: 'Identify the cause', text: 'The caravel combined lateen sails (for maneuvering against the wind) with square sails (for downwind speed) in a small, shallow-draft hull. This solved the specific problem of returning north from West Africa against the prevailing southward winds, a problem that had made extended Atlantic exploration nearly impossible with traditional square-rigged ships.' },
-      { label: 'Explain the mechanism', text: 'Because the caravel could sail against the wind, Portuguese navigators could probe further south along the African coast without fearing they could not get home. Each voyage extended the known coastline by a measured distance. The geographic knowledge from each voyage was systematically incorporated into updated portolan charts, which served as the foundation for the next expedition.' },
-      { label: 'Connect to the effect', text: 'The caravel, combined with latitude-measuring instruments (astrolabe, cross-staff) and the knowledge infrastructure of portolan charts and later printed maps, allowed Portugal to achieve sustained, systematic, state-sponsored oceanic exploration. Without the caravel\'s design, the instruments for measuring position, or the knowledge infrastructure for recording and sharing discoveries, the Portuguese model of exploration would not have worked.' }
+      { label: 'Name the development', text: 'By the late 1400s, Portuguese ships could sail far out into the Atlantic and come home again.' },
+      { label: 'Describe the context', text: 'Long before that, other peoples had the tools. Chinese sailors used the compass at sea by about 1100. Astronomers in the Islamic world had made the astrolabe precise and built tables of the sky. The lateen sail had sailed the Mediterranean since Roman times. Indian Ocean sailors already ran their trade on the monsoon.' },
+      { label: 'Connect the context to the development', text: 'This knowledge reached Europe with merchants and with translators in places like Toledo, so Portuguese pilots could combine it with new ships and their own knowledge of the Atlantic\'s winds. The context explains why the breakthrough was a combination, not a European invention.' }
     ],
-    prompt: 'In 2–3 sentences, explain how ONE specific maritime technology caused a specific change in European navigators\' ability to explore. Name the technology, explain the mechanism (what problem it solved), and connect it to a specific voyaging outcome that would not have been possible without it.'
+    prompt: 'In 2 to 3 sentences, describe the context for European ocean voyages after 1450. Name ONE older world (Classical, Islamic, or Asian) and one tool or kind of knowledge from it, then explain how that context made European ocean travel possible.'
   };
 
   lesson.checkpoints = [
     {
       title: 'Checkpoint 1: Maritime Technologies and Navigation',
       subtitle: 'Checks Learning Target 1 and Success Criteria 1.',
-      cardDesc: 'Compass, astrolabe, lateen sail, caravel, the tools that made oceanic voyaging possible.',
+      cardDesc: 'Compass, astrolabe, lateen sail, caravel: the tools that let ships go out and come home.',
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Identify at least THREE specific maritime technologies that enabled European oceanic exploration after c. 1450. For each technology, explain what specific navigation problem it solved and how it contributed to making extended oceanic voyaging possible.',
+      prompt: 'Identify at least THREE specific maritime technologies European sailors used after c. 1450. For each one, explain what problem it solved at sea. Then name ONE new sea route these technologies made possible.',
       responseType: 'Checkpoint 1',
-      terms: ['compass', 'astrolabe', 'lateen sail', 'caravel', 'dead reckoning', 'latitude', 'portolan chart', 'cross-staff', 'quadrant', 'square sail'],
-      focus: ['Name at least three specific technologies.', 'For each, explain the specific navigation problem it solved.', 'Connect the technologies to the capability for extended oceanic voyaging.']
+      terms: ['compass', 'astrolabe', 'astronomical charts', 'lateen sail', 'caravel', 'carrack', 'latitude', 'dead reckoning', 'volta do mar', 'trade winds'],
+      focus: ['Name at least three specific technologies.', 'For each, explain the problem it solved at sea.', 'Name one new sea route the technologies made possible.']
     },
     {
       title: 'Checkpoint 2: Borrowed Knowledge, Ship Design, Winds, and Currents',
@@ -101,8 +102,9 @@
       cardDesc: 'Cross-cultural diffusion plus practical technologies and environmental knowledge.',
       learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Explain how European navigators drew on knowledge or technology from TWO earlier traditions — Classical, Islamic, or Asian — and then explain how ONE ship-design innovation and ONE piece of wind/current knowledge made transoceanic travel more reliable. Build the causal chain from adopted knowledge to oceanic capability.',
+      prompt: 'Explain how European navigators drew on knowledge or technology from TWO earlier traditions (Classical, Islamic, or Asian), and then explain how ONE ship-design innovation and ONE piece of wind or current knowledge made transoceanic travel more reliable. Build the causal chain from adopted knowledge to a ship that could go out and come home, and end with one new route for trade or travel.',
       responseType: 'Checkpoint 2',
+      skill: 'Causation',
       terms: ['magnetic compass', 'China', 'astrolabe', 'Islamic astronomy', 'lateen sail', 'caravel', 'carrack', 'volta do mar', 'trade winds', 'currents', 'cross-cultural diffusion'],
       focus: ['Use two specific examples of cross-cultural knowledge or technology transfer.', 'Explain one ship-design innovation and the problem it solved.', 'Explain one wind/current pattern and how sailors used it to complete long voyages.']
     }
@@ -123,11 +125,11 @@
       prompt: 'NOTICE hull shape, sails, or rigging. What can you INFER about maneuverability and oceanic travel? What would you need engineering or voyage records to prove about actual performance at sea?'
     },
     {
-      title: 'European Astrolabe, 1500–1550',
+      title: 'European Astronomer\'s Astrolabe, 1500 to 1550',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/MHS_52528_Astrolabe.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:MHS_52528_Astrolabe.jpg',
-      caption: 'Navigation-instrument evidence. A brass astrolabe dated to the first half of the 16th century, from a navigational tradition with deep Classical and Islamic roots.',
-      prompt: 'NOTICE the graduated circular design. What navigation problem could an instrument like this help solve? What does the object itself reveal about technological transfer, and what does it not tell you about who taught sailors to use it?'
+      caption: 'Knowledge-transfer evidence. A European brass astrolabe made between 1500 and 1550, with Latin star names on its pierced star map. It is an astronomer\'s instrument, not the heavy open-ring mariner\'s astrolabe used at sea, but it carries the Greek and Islamic astronomy that Portuguese pilots turned into a sea tool. History of Science Museum, Oxford.',
+      prompt: 'NOTICE the pierced star map and the Latin star names. What can you INFER about where the knowledge in this instrument came from and how it reached Europe? What would a pilot have to change to use an instrument like this on a rolling deck?'
     },
     {
       title: 'Petrus Roselli Portolan Chart, 15th Century',

@@ -806,16 +806,18 @@ module.exports = [
     title: 'What Europe Knew, and How It Learned It',
     subtitle: 'Topic 4.1 \u00b7 Technological innovations',
     highlights: [
-      { zone: 'westernEurope', label: 'IBERIAN COURTS', tone: 'gold', legend: 'Portuguese and Spanish navigation schools' },
-      { zone: 'swAsia', label: 'ASTRONOMY & MATH', tone: 'sand', legend: 'Astrolabe, algebra, and star tables from the Islamic world' },
-      { zone: 'eastAsia', label: 'COMPASS & STERNPOST', tone: 'bronze', legend: 'Chinese magnetic compass and sternpost rudder' },
-      { zone: 'indianOcean', label: 'MONSOON KNOWLEDGE', tone: 'slate', legend: 'Indian Ocean pilots\' wind and current knowledge' }
+      { zone: 'westernEurope', label: 'IBERIAN PILOTS', tone: 'gold', legend: 'Iberia: pilots combine the tools' },
+      { zone: 'mediterranean', label: 'LATEEN SAIL', tone: 'slate', legend: 'Mediterranean: lateen sail, Greek astronomy' },
+      { zone: 'swAsia', label: 'ASTRONOMY', tone: 'sand', legend: 'Islamic world: astrolabe, astronomical charts' },
+      { zone: 'eastAsia', label: 'COMPASS', tone: 'bronze', legend: 'China: the magnetic compass' },
+      { zone: 'indianOcean', label: 'MONSOON', tone: 'slate', legend: 'Indian Ocean: the monsoon world' }
     ],
     flows: [
-      { from: 'eastAsia', to: 'swAsia', label: 'compass technology west' },
-      { from: 'swAsia', to: 'westernEurope', label: 'instruments and astronomy west', bow: 0.22 }
+      { from: 'eastAsia', to: 'westernEurope', label: 'compass (route debated)', bow: -0.18 },
+      { from: 'swAsia', to: 'westernEurope', label: 'astronomy, Arabic to Latin', bow: 0.22 },
+      { from: 'mediterranean', to: 'westernEurope', label: 'lateen sail', bow: 0.3 }
     ],
-    note: 'BeHistorical instructional map. European voyaging combined borrowed instruments with local ship design; coastlines are simplified for classroom projection.'
+    note: 'BeHistorical instructional map. Europe combined borrowed tools with new ships and learned the Atlantic winds itself; routes are schematic and coastlines simplified for classroom projection.'
   },
   {
     id: 'topic-4-2',

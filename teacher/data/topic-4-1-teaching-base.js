@@ -278,7 +278,7 @@ window.BEHISTORICAL_TEACHING = {
           'What it gets right: the mariner\'s astrolabe is a heavy, open brass ring with spokes, hung from the thumb so it stays upright, and the pilot sights the sun through holes rather than looking at it. That is the Portuguese adaptation of the flat instrument on the Toledo slide.',
           'Two small things it gets wrong, if a sharp student notices: the big sail behind the pilot looks square, when many caravels of the 1480s still carried lateen sails; and the young sailor writes with what looks like a wooden pencil, which is later.',
           'Latitude is how far north or south you are. Longitude, east and west, could not be measured at sea in this period; dead reckoning filled the gap.',
-          'The real object is in the Evidence Lab and the eBook: surviving mariner\'s astrolabes, the oldest from c. 1496 to 1501.'
+          'The Evidence Lab\'s astrolabe is the astronomer\'s kind (Oxford, 1500 to 1550), the instrument the sea version grew out of. The oldest surviving mariner\'s astrolabe, the Sodré astrolabe, dates from c. 1496 to 1501.'
         ],
         ask: 'What does one noon reading tell this pilot?',
         listenFor: 'How far north or south the ship is: its latitude.'

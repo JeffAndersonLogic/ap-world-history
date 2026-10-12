@@ -447,21 +447,21 @@ Strong answer checklist: Answer the exact increased-influence question. Use rele
 
 ## 4.1 Technological Innovations
 
-**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How maritime technologies — compass, astrolabe, lateen sail, caravel, and printed maps — made sustained oceanic exploration possible after c. 1400
+**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How tools borrowed from older worlds, new ships, and knowledge of the Atlantic's winds let European ships cross oceans and come home, from 1450 to 1750
 
 **College Board key concepts.**
 - Unit 4: Learning Objective A (Learning Objective): Explain how cross-cultural interactions resulted in the diffusion of technology and facilitated changes in patterns of trade and travel from 1450 to 1750.
 - KC-4.1.II (Technology and Innovation): Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation.
 - KC-4.1.II.A (Technology and Innovation): The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns—all of which made transoceanic travel and trade possible. Illustrative examples: Caravel, Carrack, Fluyt, Lateen sail, Compass, Astronomical charts.
 
-**Expected evidence terms.** compass, astrolabe, lateen sail, caravel, dead reckoning, latitude, portolan chart, cross-staff, quadrant, square sail, magnetic compass, China, Islamic astronomy, carrack, volta do mar, trade winds, currents, cross-cultural diffusion.
+**Expected evidence terms.** compass, astrolabe, astronomical charts, lateen sail, caravel, carrack, latitude, dead reckoning, volta do mar, trade winds, magnetic compass, China, Islamic astronomy, currents, cross-cultural diffusion.
 
-**AP skill focus.** Causation practice.
+**AP skill focus.** Contextualization practice.
 
-**Checkpoint 1 prompt.** Identify at least THREE specific maritime technologies that enabled European oceanic exploration after c. 1450. For each technology, explain what specific navigation problem it solved and how it contributed to making extended oceanic voyaging possible.
-Strong answer checklist: Name at least three specific technologies. For each, explain the specific navigation problem it solved. Connect the technologies to the capability for extended oceanic voyaging.
+**Checkpoint 1 prompt.** Identify at least THREE specific maritime technologies European sailors used after c. 1450. For each one, explain what problem it solved at sea. Then name ONE new sea route these technologies made possible.
+Strong answer checklist: Name at least three specific technologies. For each, explain the problem it solved at sea. Name one new sea route the technologies made possible.
 
-**Checkpoint 2 prompt.** Explain how European navigators drew on knowledge or technology from TWO earlier traditions — Classical, Islamic, or Asian — and then explain how ONE ship-design innovation and ONE piece of wind/current knowledge made transoceanic travel more reliable. Build the causal chain from adopted knowledge to oceanic capability.
+**Checkpoint 2 prompt.** Explain how European navigators drew on knowledge or technology from TWO earlier traditions (Classical, Islamic, or Asian), and then explain how ONE ship-design innovation and ONE piece of wind or current knowledge made transoceanic travel more reliable. Build the causal chain from adopted knowledge to a ship that could go out and come home, and end with one new route for trade or travel.
 Strong answer checklist: Use two specific examples of cross-cultural knowledge or technology transfer. Explain one ship-design innovation and the problem it solved. Explain one wind/current pattern and how sailors used it to complete long voyages.
 
 ## 4.2 Exploration: Causes and Events

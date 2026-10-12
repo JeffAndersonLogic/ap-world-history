@@ -30,14 +30,14 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 4: Transoceanic Interconnections",
     topic: "Topic 4.1",
     title: "Technological Innovations",
-    subtitle: "How maritime technologies — compass, astrolabe, lateen sail, caravel, and printed maps — made sustained oceanic exploration possible after c. 1400",
+    subtitle: "How tools borrowed from older worlds, new ships, and knowledge of the Atlantic's winds let European ships cross oceans and come home, from 1450 to 1750",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 
   learningTargets: [
     {
-      target: "I can identify and explain the maritime technologies that enabled European oceanic exploration after c. 1450.",
+      target: "I can identify maritime technologies Europeans used after c. 1450 and explain how they changed where Europeans could travel and trade.",
       kc: 'KC-4.1.II.A',
       theme: "Technology and Innovation"
     },
@@ -55,7 +55,7 @@ window.BEHISTORICAL_LESSON = {
 
   successCriteria: [
     {
-      criteria: "I can name at least three specific maritime technologies and explain what navigation problem each one solved for sailors attempting extended oceanic voyages.",
+      criteria: "I can name at least three specific maritime technologies, explain what problem each one solved at sea, and name one new sea route they made possible.",
       kc: 'KC-4.1.II.A',
       theme: "Technology and Innovation"
     },
@@ -100,14 +100,14 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Finding Your Way: Compass, Astrolabe, and Latitude Navigation",
         bullets: [
-          "The **magnetic compass**, originating in China, reaching Europe via Arab trade networks by c. 1100, gave sailors a reliable indicator of direction regardless of weather. In the open Atlantic, where clouds could obscure stars for days, knowing north from south was essential for maintaining course. The compass did not tell sailors where they were; it told them which way they were going, a crucial but partial solution to the navigation problem.",
-          "The **astrolabe** allowed sailors to measure the angle of the sun or a star above the horizon, determining **latitude**, how far north or south of the equator a ship had traveled. Arab astronomers had refined the astrolabe over centuries; European sailors adapted it for use at sea. With latitude measurements, a navigator could follow a known parallel eastward or westward, knowing they were on a consistent course.",
+          "The **magnetic compass** was used at sea in China by about 1100 and was known in Europe by about 1190; historians still debate how it traveled west. It gave sailors a reliable indicator of direction regardless of weather. In the open Atlantic, where clouds could obscure stars for days, knowing north from south was essential for maintaining course. The compass did not tell sailors where they were; it told them which way they were going, a crucial but partial solution to the navigation problem.",
+          "The **astrolabe** allowed sailors to measure the angle of the sun or a star above the horizon, determining **latitude**, how far north or south of the equator a ship had traveled. The astrolabe began as a Greek idea and was refined over centuries by astronomers in the Islamic world. In the 1480s Portuguese pilots adapted a simple, heavy version, the mariner's astrolabe, for use at sea. With latitude measurements, a navigator could follow a known parallel eastward or westward, knowing they were on a consistent course.",
           "**Dead reckoning**, calculating position by tracking known speed, direction, and elapsed time, provided a working method for estimating position between direct stellar or solar observations. Combined with compass direction and astrolabe readings, dead reckoning gave navigators enough information to make extended oceanic voyages survivable.",
-          "The **cross-staff** and **quadrant** offered simpler, cheaper alternatives to the full astrolabe for measuring solar altitude, making latitude determination accessible to skilled navigators who were not specialist astronomers. By c. 1450, a trained Portuguese pilot had multiple overlapping tools for navigation, redundancy that reduced the risk of extended voyaging."
+          "A noon sun reading only gives latitude if the pilot knows where the sun should be that day, so pilots carried **astronomical charts**: tables of the sun's position for each day of the year. Those tables came from a long tradition of Islamic and Jewish astronomy; in 1496 Abraham Zacuto's almanac was printed in Portugal and carried on Portuguese voyages. The **quadrant**, and later the **cross-staff**, gave pilots other ways to measure the height of the sun or a star."
         ],
         image: {
           title: "Persian Astrolabe, 18th Century",
-          caption: "A Persian astrolabe, the intricate astronomical instrument used to determine latitude at sea. European sailors adapted Arab astrolabe designs for maritime navigation, one example of how European maritime technology synthesized Arab, Chinese, and Mediterranean knowledge.",
+          caption: "An 18th-century Persian astrolabe, an astronomer's instrument from the Islamic tradition that the mariner's astrolabe grew out of. Instruments like this were not used at sea: Portuguese pilots carried a simpler, heavier version that could hang steady on a rolling deck.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg"
         }
@@ -116,24 +116,24 @@ window.BEHISTORICAL_LESSON = {
         title: "The Ship That Could Go Anywhere: The Caravel",
         bullets: [
           "Traditional European **square-rigged ships**, built for Mediterranean and Baltic coastal trade, sailed efficiently with the wind behind them but struggled to sail against the wind or at sharp angles to it. Returning northward up the African coast meant sailing against the prevailing southward winds, which made square-rigged ships nearly useless for sustained Atlantic exploration.",
-          "The **lateen sail**, a triangular sail used throughout the Arab and Indian Ocean world, could be angled to catch wind from the side, allowing ships to **tack** (zig-zag) upwind. Portuguese shipbuilders had encountered the lateen sail through Mediterranean contact with Arab traders and recognized its potential for Atlantic work.",
-          "The **caravel** (developed c. 1440s) combined square sails for downwind speed with lateen sails for upwind maneuverability, in a small, relatively shallow-draft hull that could navigate coastal rivers and harbors as well as open ocean swells. It was not the fastest or largest ship of the era, but it was the most versatile for exploration, able to probe unknown coastlines and then return home against adverse winds.",
+          "The **lateen sail**, a triangular sail used on the Mediterranean since Roman times and common across the seas of the Islamic world, could be angled to catch wind from the side, allowing ships to **tack** (zig-zag) upwind. Portuguese shipbuilders took this old Mediterranean sail and put it to work in the Atlantic.",
+          "The exploration **caravel** of the 1430s and 1440s carried lateen sails on two or three masts, in a small, relatively shallow-draft hull that could navigate coastal rivers and harbors as well as open ocean swells. Later caravels added square sails for speed with the wind behind them. The caravel was not the fastest or largest ship of the era, but it suited exploration: it could probe unknown coastlines and work its way home against adverse winds.",
           "The caravel made the Portuguese model of systematic coastal exploration viable. Every voyage south along the African coast had to include a return north, and without the lateen sail's ability to work against the prevailing southward winds, Portuguese navigators would have had no reliable way home. The caravel solved the return-voyage problem that had made extended exploration too dangerous to attempt."
         ],
         image: {
-          title: "World Map, c. 1700",
-          caption: "By 1700, European maritime exploration had produced detailed world maps, the direct result of the navigational technologies and systematic state-sponsored voyaging developed in the 15th century.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG"
+          title: "Portuguese Caravel, Livro das Armadas, c. 1566",
+          caption: "A Portuguese caravel painted in the Livro das Armadas, a 16th-century record of the fleets sent to India. It is a later picture of the ship type, not a drawing made in the 1440s.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Caravela_de_armada_of_Joao_Serrao.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Caravela_de_armada_of_Joao_Serrao.jpg"
         }
       },
       {
         title: "Cross-Cultural Knowledge and the Ocean Environment",
         bullets: [
           "European maritime innovation was **cumulative and cross-cultural**. The magnetic compass originated in China; the astrolabe drew on Classical and especially Islamic astronomical traditions; the lateen sail had long been used around the Mediterranean and Indian Ocean.",
-          "Sailors also needed practical environmental knowledge. Portuguese mariners learned the **volta do mar** — using Atlantic wind systems and currents to sail away from the African coast before turning back toward Europe — because the shortest-looking route was not always the navigable route.",
-          "Ship design combined technologies for different conditions. The **caravel** paired maneuverability and lateen rigging with an ocean-capable hull, while larger carracks carried more cargo and provisions on long voyages.",
-          "The causal chain is the Topic 4.1 job: **borrowed knowledge + improved tools + ship design + wind/current knowledge -> more reliable transoceanic travel and trade**."
+          "Sailors also needed practical environmental knowledge. Portuguese mariners learned the **volta do mar**: to get home from West Africa, they sailed away from the coast, out west and north into the open Atlantic, until they reached the westerlies that blow toward Europe. Along the coast, both the trade winds and the Canary Current pushed south, so the shortest-looking route was not the navigable one.",
+          "Ship design matched different jobs. The **caravel** paired maneuverability and lateen rigging with an ocean-capable hull; larger **carracks** carried more cargo and provisions on long voyages; and around 1600 the Dutch **fluyt** carried big cargoes with small, cheap crews.",
+          "The causal chain is the Topic 4.1 job: **borrowed knowledge + improved tools + ship design + wind and current knowledge -> ships that could go out and come home -> new patterns of trade and travel**."
         ],
         image: {
           title: "Atlantic wind and current systems",
@@ -146,12 +146,12 @@ window.BEHISTORICAL_LESSON = {
   },
 
   map: {
-    title: "The Waldseemüller Map, 1507: What Europe Knew",
+    title: "Where Europe's Sea Tools Came From",
     url: "../assets/images/instructional-maps/topic-4-1.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-4-1.svg",
-    caption: "The 1507 Waldseemüller map, the first printed world map to show the Americas as separate continents and use the name 'America.' This map was only possible because of the cartographic knowledge accumulated through decades of Portuguese and Spanish voyages, combined with the printing press that made its wide distribution possible.",
-    intro: "Examine this map and consider what it reveals: European cartographers in 1507 knew the shape of Africa, had a rough outline of the Americas, and knew that a vast ocean lay between America and Asia. All of this knowledge was less than 20 years old, accumulated through exploration voyages that were themselves only possible because of the maritime technologies you're studying.",
-    prompt: "What does the Waldseemüller map reveal about the geographic knowledge European navigators had accumulated by 1507? What does it still get wrong, and what does that suggest about the limits of early modern cartography?"
+    caption: "A BeHistorical instructional map of where the tools of ocean travel came from: the compass from China, the astrolabe and astronomical charts from Greek and Islamic astronomy, and the lateen sail from the Mediterranean. Europe's own contribution was combining them with new ships and learning the Atlantic's winds.",
+    intro: "Follow the arrows on this map. Each one shows knowledge moving toward Europe from an older world. Notice how far some of it traveled, and how many different peoples carried it before it reached Portuguese and Spanish pilots.",
+    prompt: "Using the map, name TWO tools or kinds of knowledge that reached Europe from older worlds, and the world each one came from. Then explain why knowledge of the Atlantic's winds is not shown arriving from anywhere."
   },
 
   deepReading: {
@@ -172,33 +172,38 @@ window.BEHISTORICAL_LESSON = {
     prompt: "Choose one piece of evidence and explain how it supports a specific argument about the role of technology in enabling European exploration. Use causation: identify the technology, explain the mechanism, and connect it to a specific exploratory outcome.",
     items: [
       { title: "The caravel's lateen sails — solving the return voyage problem", detail: "Evidence that the key technological innovation was not just going south, but being able to come back. The lateen sail's ability to work against prevailing winds made the Portuguese model of systematic coastal exploration viable. Without it, every southward voyage would have been a one-way trip." },
-      { title: "Waldseemüller map (1507) — 1,000 printed copies", detail: "Evidence that the printing press transformed geographic knowledge from rare manuscript to widely circulated commodity. The Waldseemüller map was printed in 1,000 copies, more than any previous geographic work. This scale of distribution created the knowledge infrastructure that made subsequent voyages more informed and state investment in exploration more rational." },
+      { title: "Waldseemüller map (1507) — 1,000 printed copies", detail: "Evidence that the printing press transformed geographic knowledge from rare manuscript to widely circulated commodity. Its makers reported printing about 1,000 copies. This scale of distribution created the knowledge infrastructure that made subsequent voyages more informed and state investment in exploration more rational." },
       { title: "Arab astrolabe tradition reaching European sailors", detail: "Evidence that European maritime technology was not purely European, it synthesized Arab, Chinese, and Mediterranean traditions. The astrolabe reached Europe through Arab trade networks; the lateen sail came from the Indian Ocean world. Evaluating this evidence requires acknowledging that 'European exploration' built on centuries of prior non-European navigational knowledge." }
     ]
   },
 
   primarySource: {
-    title: "Primary Source: João de Barros on Portuguese Navigation",
-    intro: "João de Barros (1496–1570) was a Portuguese historian often called the 'Portuguese Livy.' His Décadas da Ásia described Portuguese expansion in Asia and Africa in detail. This adapted passage reflects his account of how Portuguese navigators developed the methods needed for systematic Atlantic exploration.",
-    text: "The pilots who sailed for the king learned to determine their latitude by the height of the sun at noon, measuring with the quadrant and the cross-staff the degrees of arc above the horizon. They carried charts on which the coasts they had discovered were drawn with great care, and these charts were brought back to Lisbon and improved with each new voyage. The king's cosmographers would study the measurements made at sea and produce new maps that were more exact than those before them. In this way, each voyage beyond the previous farthest point was not a venture into total ignorance but a careful extension of what was already known. The caravel that sailed south had been built for exactly this purpose, to go where other ships could not, to return home against winds that would have driven a square-rigged vessel back upon the coast, and to carry not just men and cargo but the instruments and records that transformed the ocean from mystery into something that could be measured, documented, and crossed again.",
+    title: "Primary Source: A Crew Member's Journal of Vasco da Gama's Voyage (1497)",
+    intro: "The only surviving eyewitness journal of Vasco da Gama's first voyage was kept by a member of the crew whose name is not certain. In this passage the fleet leaves the Cape Verde Islands and crosses the South Atlantic far from any coast, the long loop out into open ocean that the volta do mar made possible. Read it for what the sailors did to keep track of where they were, and for how long they went without seeing land.",
+    attribution: "Anonymous journal (Roteiro) of Vasco da Gama's first voyage, August to November 1497; from E. G. Ravenstein's English translation, A Journal of the First Voyage of Vasco da Gama, 1497-1499 (London: Hakluyt Society, 1898).",
+    text: "On Thursday, August 3, we left in an easterly direction. On August 18, when about 200 leagues from Samtiaguo, going south, the captain-major's main yard broke, and we lay to under foresail and mainsail for two days and a night. On the 22nd of the same month, when going S. by W., we saw many birds resembling herons. On the approach of night they flew vigorously to the S.S.E., as if making for the land. On the same day, being then quite 800 leagues out at sea, we saw a whale. On Friday, October 27, the eve of St. Simon and Jude, we saw many whales, as also quoquas and seals. On Wednesday, November 1, the day of All Saints, we perceived many indications of the neighbourhood of land, including gulf-weed, which grows along the coast. On Saturday, the 4th of the same month, a couple of hours before break of day, we had soundings in 110 fathoms, and at nine o'clock we sighted the land.",
+    sourceNote: "This is a verbatim excerpt from Ravenstein's 1898 English translation, which is in the public domain. Page numbers, footnote markers and Ravenstein's bracketed explanations have been removed; nothing else has been changed. Samtiaguo is the island of Santiago in the Cape Verde Islands; a league is roughly three miles; quoquas is the journal's word for an animal Ravenstein could not identify; soundings in 110 fathoms means the crew lowered a weighted line and touched bottom about 660 feet down.",
+    sourceLinks: [
+      { label: "Project Gutenberg: A Journal of the First Voyage of Vasco da Gama (Ravenstein, 1898)", url: "https://www.gutenberg.org/files/46440/46440-h/46440-h.htm" }
+    ],
     questions: [
-      "What does Barros's account reveal about how Portuguese exploration was organized as a systematic, cumulative process? How does the relationship between navigators at sea and cosmographers in Lisbon illustrate the role of state-sponsored knowledge-building?",
-      "What specific technologies or methods does Barros mention? How do these connect to the broader AP concept of how maritime technologies enabled long-distance exploration?",
-      "Barros was a Portuguese court historian celebrating Portuguese achievements. How might his perspective shape this account? What elements might he emphasize or omit, and how would a competing Spanish navigator or an Arab merchant displaced by the Portuguese spice routes have described the same developments?"
+      "The writer leaves the Cape Verde Islands on August 3 and sights land on November 4. About how long was the fleet out of sight of land, and what does that tell you about the problem these sailors had to solve?",
+      "Find TWO details that show the crew keeping track of where they were or watching for land: a direction, a distance, a sounding, or a sign from nature. What tool or skill does each detail suggest they were using?",
+      "The writer was a crew member, not a pilot or a cosmographer. What might he leave out about how the ship was navigated, and what other kind of source would help you find out which instruments the pilots used?"
     ]
   },
 
   beSurreal: {
-    title: "BeSurreal: You Are a Navigator at Prince Henry's Court, Sagres, c. 1460",
-    desc: "Prince Henry the Navigator has assembled the best pilots, cartographers, and astronomers in Portugal at his court in Sagres. You are a young navigator who has just returned from a voyage probing 200 miles of unknown West African coastline. Tonight you will brief the prince on what you found, and propose what the next expedition must do.",
-    intro: "You stand before a table covered with charts, some printed in Lisbon, most handwritten and annotated with the observations of the past decade's voyages. To your left, a Portuguese chart-maker has been working for three days on a new portolan chart incorporating your measurements. To your right, an Arab pilot who has sailed the Indian Ocean for thirty years is describing monsoon wind patterns to a Portuguese translator. Prince Henry sits at the head of the table, listening carefully to everything.",
-    detail: "You carry a cross-staff and a leather-bound journal of latitude measurements taken each day at noon. You have sailed south for weeks along a coast where no European ship had been before, measuring the angle of the noon sun each day to calculate how far south you had traveled. You have returned with a precise record of 200 miles of African coastline, depths, currents, prevailing winds, water color changes that signal shallow water, the location of a major river mouth that might lead inland. It is not much on its own. But you know the prince is already planning the next voyage, which will start where yours ended. You understand, in a way you couldn't have before this journey, that you are not just a sailor, you are a link in a chain. Each voyage extends the edge of the known world by a measured distance. Eventually, someone will find the end of Africa. Then what?",
-    prompt: "What do you say to Prince Henry tonight? Brief him on what you found, and, more importantly, on what the next voyage needs to do that yours couldn't. What technology proved most valuable? What do you still lack? And what do you think lies at the southern end of Africa?"
+    title: "BeSurreal: You Are a Pilot on a Caravel Off West Africa, c. 1485",
+    desc: "Your caravel has spent months probing the coast of West Africa, and now it is time to go home to Portugal. For weeks the wind has blown from the northeast. The captain wants to creep back along the coast. You think the only way home is to sail away from it.",
+    intro: "It is noon. You stand on the small stern deck with a heavy brass astrolabe hanging from your thumb, waiting for a ray of sun to pass through both sight holes. Your book of sun tables lies open on a chest beside you. The captain keeps looking east, toward the coast, the only landmark anyone on board trusts.",
+    detail: "You have measured the sun at every clear noon, and with your tables those readings tell you how far south you are. Older pilots have told you what earlier voyages learned: far out to the west and north, beyond the empty ocean, the wind turns and blows toward Portugal. The crew does not like the idea. Sailing out of sight of land means trusting the compass, your latitude readings, and a wind no one on board can see yet.",
+    prompt: "What do you say to the captain? Convince him to sail away from the coast in order to get home. Use at least TWO tools or kinds of knowledge (the compass, the astrolabe and sun tables, the caravel's lateen sails, or the wind wheel), and explain where ONE of them came from before it reached Portugal."
   },
 
   beInTheRoom: {
     url: '',
-    desc: "Step into Prince Henry's court at Sagres and experience how Portuguese navigators combined instruments, ship design, and state sponsorship to systematically extend the known world southward along the African coast."
+    desc: "Advise João II before the Dias expedition: combine instruments, ship design, Atlantic wind knowledge, African intelligence, and state finance to find and return from a route around southern Africa."
   }
 
 };

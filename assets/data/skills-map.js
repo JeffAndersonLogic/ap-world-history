@@ -5057,7 +5057,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "06",
           "module": "Checkpoint 1",
           "label": "Module 06, Checkpoint 1",
-          "prompt": "Identify at least THREE specific maritime technologies that enabled European oceanic exploration after c. 1450. For each technology, explain what specific navigation problem it solved and how it contributed to making extended oceanic voyaging possible.",
+          "prompt": "Identify at least THREE specific maritime technologies European sailors used after c. 1450. For each one, explain what problem it solved at sea. Then name ONE new sea route these technologies made possible.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -5065,32 +5065,32 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "terms": [
             "compass",
             "astrolabe",
+            "astronomical charts",
             "lateen sail",
             "caravel",
-            "dead reckoning",
+            "carrack",
             "latitude",
-            "portolan chart",
-            "cross-staff",
-            "quadrant",
-            "square sail"
+            "dead reckoning",
+            "volta do mar",
+            "trade winds"
           ],
           "criteria": [
             "Name at least three specific technologies.",
-            "For each, explain the specific navigation problem it solved.",
-            "Connect the technologies to the capability for extended oceanic voyaging."
+            "For each, explain the problem it solved at sea.",
+            "Name one new sea route the technologies made possible."
           ],
           "learningTargets": [
-            "I can identify and explain the maritime technologies that enabled European oceanic exploration after c. 1450."
+            "I can identify maritime technologies Europeans used after c. 1450 and explain how they changed where Europeans could travel and trade."
           ],
           "successCriteria": [
-            "I can name at least three specific maritime technologies and explain what navigation problem each one solved for sailors attempting extended oceanic voyages."
+            "I can name at least three specific maritime technologies, explain what problem each one solved at sea, and name one new sea route they made possible."
           ]
         },
         "checkpoint-two-response": {
           "ord": "10",
           "module": "Checkpoint 2",
           "label": "Module 10, Checkpoint 2",
-          "prompt": "Explain how European navigators drew on knowledge or technology from TWO earlier traditions — Classical, Islamic, or Asian — and then explain how ONE ship-design innovation and ONE piece of wind/current knowledge made transoceanic travel more reliable. Build the causal chain from adopted knowledge to oceanic capability.",
+          "prompt": "Explain how European navigators drew on knowledge or technology from TWO earlier traditions (Classical, Islamic, or Asian), and then explain how ONE ship-design innovation and ONE piece of wind or current knowledge made transoceanic travel more reliable. Build the causal chain from adopted knowledge to a ship that could go out and come home, and end with one new route for trade or travel.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -5188,7 +5188,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "01",
           "module": "Map & Geography Check",
           "label": "Module 01, Map & Geography Check",
-          "prompt": "What does the Waldseemüller map reveal about the geographic knowledge European navigators had accumulated by 1507? What does it still get wrong, and what does that suggest about the limits of early modern cartography?",
+          "prompt": "Using the map, name TWO tools or kinds of knowledge that reached Europe from older worlds, and the world each one came from. Then explain why knowledge of the Atlantic's winds is not shown arriving from anywhere.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -5202,7 +5202,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "08",
           "module": "Primary Source",
           "label": "Module 08, Primary Source",
-          "prompt": "What does Barros's account reveal about how Portuguese exploration was organized as a systematic, cumulative process? How does the relationship between navigators at sea and cosmographers in Lisbon illustrate the role of state-sponsored knowledge-building? What specific technologies or methods does Barros mention? How do these connect to the broader AP concept of how maritime technologies enabled long-distance exploration? Barros was a Portuguese court historian celebrating Portuguese achievements. How might his perspective shape this account? What elements might he emphasize or omit, and how would a competing Spanish navigator or an Arab merchant displaced by the Portuguese spice routes have described the same developments?",
+          "prompt": "The writer leaves the Cape Verde Islands on August 3 and sights land on November 4. About how long was the fleet out of sight of land, and what does that tell you about the problem these sailors had to solve? Find TWO details that show the crew keeping track of where they were or watching for land: a direction, a distance, a sounding, or a sign from nature. What tool or skill does each detail suggest they were using? The writer was a crew member, not a pilot or a cosmographer. What might he leave out about how the ship was navigated, and what other kind of source would help you find out which instruments the pilots used?",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -5216,12 +5216,12 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "05",
           "module": "AP Skill Builder",
           "label": "Module 05, AP Skill Builder",
-          "prompt": "In 2–3 sentences, explain how ONE specific maritime technology caused a specific change in European navigators' ability to explore. Name the technology, explain the mechanism (what problem it solved), and connect it to a specific voyaging outcome that would not have been possible without it.",
-          "skill": "Causation",
+          "prompt": "In 2 to 3 sentences, describe the context for European ocean voyages after 1450. Name ONE older world (Classical, Islamic, or Asian) and one tool or kind of knowledge from it, then explain how that context made European ocean travel possible.",
+          "skill": "Contextualization",
           "skills": [
-            "Causation"
+            "Contextualization"
           ],
-          "skillRaw": "Causation practice",
+          "skillRaw": "Contextualization practice",
           "skillFrom": "skillBuilder.label",
           "terms": [],
           "criteria": [],
