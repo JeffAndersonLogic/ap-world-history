@@ -195,7 +195,7 @@ const scenarios = [
       E('portugal', 'Portugal\'s African Route', 'Portugal had spent decades paying for voyages down the African coast, and in 1488 Dias sailed around its southern tip.', 'Shows why Spain needed a different route.'),
       E('granada', 'Granada Has Fallen', 'The last Muslim kingdom in Spain surrendered in January 1492. The war is over, but it was expensive.', 'Connects religion, the crown\'s attention, and its budget.'),
       E('canaries', 'The Canary Islands', 'Castile held several of the Canary Islands, off the coast of Africa, close to winds that blow west.', 'Shows how geography made the plan possible.'),
-      E('distance', 'A Wrong Distance', 'Columbus argued that Asia lay much closer to the west than it really does.', 'Shows the voyage was backed partly on a mistake.'),
+      E('distance', 'Two Estimates of the Distance', 'Columbus argues that Asia lies only a few thousand miles west. Portugal\'s royal experts said it lies much farther away, and turned him down.', 'Makes the size of the risk part of the decision.'),
       E('capitulations', 'The Proposed Contract', 'Columbus asks to be Admiral of the Ocean Sea, to govern any lands he finds, and to keep a tenth of the wealth from them.', 'Shows how a ruler paid with promises as well as money.'),
       E('crew', 'A Small Fleet', 'Three ships cost the crown less, but carry fewer supplies and fewer men.', 'Creates a choice between cost and safety.'),
       E('religion', 'Spreading Christianity', 'The monarchs and Columbus both spoke of converting the people they might meet.', 'Adds a motive beyond money.'),

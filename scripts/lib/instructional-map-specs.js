@@ -849,9 +849,9 @@ module.exports = [
     // the Dutch north. Routes are schematic; Magellan's Pacific crossing runs off
     // the western edge of this world view, and under the key, so the note carries it.
     highlights: [
-      { zone: [-6, 39.5, 4.5, 3], label: 'PORTUGAL AND SPAIN', labelSide: 'left', tone: 'gold', legend: 'Portugal and Spain: royal sponsors' },
+      { zone: [-6, 39.5, 4.5, 3], label: 'PORTUGAL AND SPAIN', labelSide: 'above', tone: 'gold', legend: 'Portugal and Spain: royal sponsors' },
       { zone: [2, 51.5, 6, 4], label: 'ENGLAND, FRANCE, DUTCH', labelSide: 'above', tone: 'slate', legend: 'England, France, Dutch: northern sponsors' },
-      { zone: [-62, 48, 9, 5], label: 'NORTH ATLANTIC COAST', labelSide: 'above', tone: 'sand', legend: 'North Atlantic coast: cod, furs, claims' },
+      { zone: [-62, 48, 9, 5], label: 'NORTH ATLANTIC COAST', labelSide: 'above', tone: 'sage', legend: 'North Atlantic coast: cod, furs, claims' },
       { zone: [-74, 21, 9, 4], label: 'CARIBBEAN 1492', labelSide: 'below', tone: 'plum', legend: 'Columbus reaches the Caribbean, 1492' }
     ],
     flows: [

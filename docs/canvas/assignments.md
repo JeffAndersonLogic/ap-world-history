@@ -2006,7 +2006,7 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong></li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> You Are a Sailor on Columbus's Fleet, October 11, 1492.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> Why rulers, not merchants, paid for ocean voyages, and what they offered in return.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> Why rulers backed ocean voyages, and how: by paying, or by granting rights.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Columbus's Journal, October 11 to 12, 1492.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Advise Isabella and Ferdinand at Santa Fe in 1492: decide whether to pay for Columbus's voyage west, what to promise him, and what to do about Portugal's claims.</li>
                 </ul>
@@ -2019,8 +2019,8 @@ block so the short name can be written from them, not guessed at here.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can describe the role of states in maritime exploration: why rulers, not merchants, paid for voyages and what they offered explorers in return.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain the economic causes and effects of Portuguese and Spanish exploration, from the route around Africa and the trading-post empire to Columbus and the voyages across the Atlantic and Pacific.</li>
+                    <li style="margin: 0 0 6px 0;">I can describe the role of states in maritime exploration: how rulers backed voyages, by paying for them or by granting explorers rights, and what they offered explorers in return.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain the economic causes and effects of Portuguese and Spanish exploration, from Portugal's ships and navigation skills, the route around Africa, and the trading-post empire to Columbus and the voyages across the Atlantic and Pacific.</li>
                     <li style="margin: 0 0 6px 0;">I can explain why England, France, and the Dutch sponsored northern Atlantic crossings, and what those voyages produced instead of a route to Asia.</li>
                 </ul>
             </td>
@@ -2031,8 +2031,8 @@ block so the short name can be written from them, not guessed at here.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain one economic reason rulers paid for voyages (such as cutting out the middlemen in the spice trade) and name one thing a ruler gave an explorer in return (such as titles or a share of the profits).</li>
-                    <li style="margin: 0 0 6px 0;">I can name who paid for Portuguese and Spanish voyages, what they wanted, and one economic effect for each: Portugal's trading-post empire from Africa to Asia, and Spain's voyages making all of Europe more interested in ocean trade.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain one economic reason rulers backed voyages (such as cutting out the middlemen in the spice trade) and name one thing a ruler gave an explorer (such as ships, permission to claim land, titles, or a share of the profits).</li>
+                    <li style="margin: 0 0 6px 0;">I can name who backed Portuguese and Spanish voyages, what they wanted, and one economic effect for each: Portugal's ships and navigation skills leading to more trade with Africa and Asia and a trading-post empire, and Spain's voyages making all of Europe more interested in ocean trade.</li>
                     <li style="margin: 0 0 6px 0;">I can use one English, French, or Dutch voyage to explain the search for another route to Asia and one effect it had, such as cod fishing, the fur trade, or land claims.</li>
                 </ul>
             </td>

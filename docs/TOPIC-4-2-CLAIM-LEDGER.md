@@ -58,3 +58,67 @@ Status is exactly one of VERIFIED, NARROWED, REMOVED, NEEDS JEFF.
 | These states later built colonies on the coasts they claimed | Story §3; F10 §5 (bridge) | Jamestown 1607, Quebec 1608, New Netherland from 1614; 4.4's material. | VERIFIED as a bridge sentence |
 | Cabral reached Brazil in 1500 on his way to India and claimed it for Portugal | Deep reading §02; deck note | Britannica Kids, "Pedro Álvares Cabral": sighted land 22 April 1500, "landed and claimed it for Portugal." | VERIFIED |
 | Balboa crossed Panama and saw the Pacific in 1513 | Deck note only | Standard; date 25 September 1513. Only a timeline site reached in this pass. | VERIFIED in outline; re-check before projection |
+
+## Claims added in Phase 9 (2026-10-12)
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| (Draft) Only a ruler could pay; rulers, not merchants, paid for the voyages | Draft F10 §2, LT1, SC1, lecture card 1, Checkpoint 1, deck "state" slide and end target, deep reading §01 | Henry VII's letters patent to John Cabot, 5 March 1496: Cabot to sail "at their own proper costs and charges," the king to have "the fifth part of the whole capital gained." Fernão Gomes: Afonso V granted him "a monopoly on Gulf of Guinea trade in 1469 in return for an annual rent of 200,000 reais and a commitment to explore one hundred leagues of unknown coast ... every year." The CED says "state-supported" and "under ... sponsorship." | NARROWED everywhere to "rulers backed the voyages, by paying for them or by licensing them"; the deck's role-of-states slide now shows both (Columbus paid for, Cabot licensed) |
+| Portuguese sailors built light caravels, mapped the coast as they went and learned the Atlantic's winds, so each voyage's charts helped the next go farther | F10 §3; lecture card 2; deck timeline (1440s event) and notes; LT2, SC2 | KC-4.1.III.A ("Portuguese development of maritime technology and navigational skills led to..."); Topic 4.1's verified rows on the caravel and the volta do mar. Added because pass 1 found the cause half of III.A on no required surface. | VERIFIED |
+| England's king licensed Cabot; Cabot and his backers paid | F10 §5; lecture card 4; deck; deep reading §04 | Letters patent, as above. | VERIFIED |
+| The Dutch Republic had no crown; Hudson sailed for a Dutch trading company | Deck matrix; deep reading §04 | The Dutch Republic (1588 to 1795) was a republic; Hudson's 1609 contract was with the VOC (World History Encyclopedia, "Henry Hudson"). | VERIFIED |
+| The Pacific is "most of" the Earth (deep reading, draft) | Deep reading §03 | NOAA CPC: the Pacific covers "32% of Earth's total surface area and 46% of Earth's ocean surface area." | NARROWED to "far wider than anyone in Europe had guessed" |
+| The circumnavigation "established the true size of the globe" (deep reading, draft) | Deep reading, terms | Treaty of Zaragoza (1529) literature: "Geographic knowledge at that time was inadequate for an accurate assignment of longitude." | NARROWED to "showed the Pacific was far wider than Europeans had expected" |
+| Magellan's expedition "cost four ships" (deep reading, draft) | Deep reading §03 | The San Antonio deserted at the strait and "reached Seville on 6 (or 8) May 1521 with 55 survivors." | NARROWED to "only one of the five ships completed the voyage" |
+| Cabot reached Newfoundland (deep reading, draft) | Deep reading §04 | Britannica, "John Cabot": landfall "variously believed to be in southern Labrador, Newfoundland, or Cape Breton Island." | NARROWED to "probably Newfoundland or Cape Breton" |
+| Every margin in the spice chain went to "somebody who was not European" (deep reading, draft) | Deep reading §01 | Contradicts its own sentence, which names Venetian merchants. | NARROWED to "most of those margins went to Muslim states and merchants, and the last to Venice" |
+| "Spain's program begins" in 1492 (deep reading, draft) | Deep reading §01 | Castile's conquest of the Canaries ran from 1402 to 1496 (Britannica, "Canary Islands"). | NARROWED to "Spain's westward bet comes in" 1492 |
+| Drake's plunder, letters of marque, privateering, the EIC and VOC as joint-stock companies (deep reading §04, draft) | Deep reading §04 and terms | Story-map ownership: inter-state rivalry and joint-stock companies are 4.5's; bridge only here. | REMOVED to one bridge sentence each |
+| Hudson's 1611 mutiny (deep reading, draft) | Deep reading §04 | True (Royal Museums Greenwich), but outside 4.2's story; Hudson's Dutch voyage is the one the lesson uses. | REMOVED; Hudson's 1609 Dutch voyage added so the surfaces agree |
+| Portugal's program lasted "about eighty years" (deck) and "seventy years" (deep reading) | Deck timeline footer; deep reading | Ceuta 1415 to Calicut 1498 is 83 years; Henry's coastal voyages from the 1420s to 1498 about 75. | NARROWED to "more than seventy years" on both |
+| Columbus "argued that Asia lay much closer to the west than it really does" (BeInTheRoom card, which tells students to use only what was known in 1492) | BeInTheRoom evidence | Hindsight inside a scenario that forbids it. | NARROWED to Columbus's estimate against Portugal's experts' |
+| The Malindi pillar has a cross on top and stands on the shore | Evidence Lab prompt; lecture caption | The Commons photograph (`Pillar_of_Vasco_da_Gama.jpg`), viewed 2026-10-12: a tapering white pillar topped by a small cross, on a headland above the sea. | VERIFIED; prompt now says to open the picture full size, since the card crops the top |
+| `Columbus_Taking_Possession.jpg` is a picture made in the 1800s, with banners and Columbus at the center | Lecture card 3; Evidence Lab; BeSurreal card | Viewed 2026-10-12: a color lithograph in 19th-century style, Columbus kneeling at the center holding a royal banner, two more banners behind him. The Library of Congress holds it as an 1893 print. | VERIFIED as "made in the 1800s" |
+| `Vasco_da_Gama.jpg` is a 16th-century portrait (draft caption) | Lecture card 1 | Viewed 2026-10-12: a black-and-white line engraving in a 19th-century style, not a painting. | NARROWED to "an engraving made long after his lifetime" |
+
+## Review findings
+
+Each finding is logged with its disposition. A finding is fixed when it is a demonstrable defect;
+otherwise the reason it was not taken is given.
+
+### Pass 1, reviewer 1 (history)
+
+1. "Only a ruler could pay," on five surfaces. **Fixed** (row above). The most important finding of the pass.
+2. Deep reading: "every margin ... not European" contradicts its own Venetians. **Fixed.**
+3. Deep reading: "the Pacific is most of it." **Fixed.**
+4. Deep reading: circumnavigation "established the true size of the globe." **Fixed.**
+5. Deep reading: "cost four ships." **Fixed.**
+6. Deep reading: Cabot "reaching Newfoundland." **Fixed.**
+7. Deep reading: "Spain's program begins" in 1492. **Fixed.**
+8. Deep reading §04 carries 4.5 material (plunder, privateering, joint-stock companies) and Hudson's 1611 mutiny. **Fixed:** cut to bridge sentences; two terms replaced with letters patent and the fur trade.
+
+### Pass 1, reviewer 2 (page truth and readability)
+
+1. KC-4.1.III.A's cause (Portuguese technology and navigation) on no required surface. **Fixed** in F10, lecture card 2, deck timeline and notes, LT2 and SC2.
+2. Checkpoint 2 assesses the role of states but displayed only targets 2 and 3. **Fixed:** it displays all three.
+3. Map: "PORTUGAL AND SPAIN" label in the mid-Atlantic; two near-identical swatches. **Fixed:** label beside Iberia; the North Atlantic oval is now green.
+4. Map cropped on the teacher projector (key and note cut off). **Fixed** in `topic-4-2-visual-assets.js`; screenshot checked at 1920x1080.
+5. Map module key does not match the map's numbered routes; Magellan "runs off the edge" when it is not drawn. **Fixed:** the page key is numbered to match, and says Magellan is in the map's note.
+6. Pillar prompt asks for the cross the card crops. **Fixed:** the prompt says to open the picture.
+7. Fallback artwork `module-art/unit-4/topic-4-2/evidence-NN.svg` and `lecture-04.svg` missing. **Not fixed here: adjacent finding.** 4.1 and 3.1 lack them too, so it is a course-wide gap in `build-module-art.js` coverage, reported to Jeff.
+8. Commons images served at full size (Waldseemüller is 13708 px wide). **Fixed:** `?width=1200` on every 4.2 Commons URL.
+9. The deck's stairs said "Magellan and Elcano ... sail around the world," which its own myth slide calls a myth. **Fixed.**
+10. Deep reading margin sentence. Same as history 2. **Fixed.**
+11. Deep reading contents put Tordesillas in section 04. **Fixed.**
+12. Hudson English in the deep reading, Dutch everywhere else. **Fixed.**
+13. Matrix "Each crown" for the Dutch. **Fixed.**
+14. Seventy versus eighty years. **Fixed.**
+15. BeInTheRoom hindsight card. **Fixed.**
+16. Skill Builder example pairs garbled. **Fixed.**
+17. Checkpoint 2 prompt four tasks in one paragraph. **Fixed:** numbered steps.
+18. Primary Source archaic phrases ("well-dispositioned," "naked as their mothers bore them"). **Fixed** in the adapted translation.
+19. "Volta do mar" unexplained in the F10. **Fixed** with a gloss.
+20. Deep reading phrases above a ninth grader ("risk profile," "expected value," "uninsurable risk"). **Fixed.**
+21. Credit chip over the map's footnote on the student slide. **Fixed:** the map slide carries no separate credit; the map names itself.
+22. Student deck does not fit a 1366x657 Chromebook screen. **Not fixed here: adjacent finding** in the shared student shell, reported to Jeff.
+23. (Found by `slide-templates.browser.test.js`, not a reviewer) the Spain staircase's step text collided with the heading in both font passes. **Fixed** by shortening the steps; the test now passes in both passes, the brand-font pass included.

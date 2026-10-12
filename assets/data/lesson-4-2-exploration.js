@@ -37,12 +37,12 @@ window.BEHISTORICAL_LESSON = {
 
   learningTargets: [
     {
-      target: "I can describe the role of states in maritime exploration: why rulers, not merchants, paid for voyages and what they offered explorers in return.",
+      target: "I can describe the role of states in maritime exploration: how rulers backed voyages, by paying for them or by granting explorers rights, and what they offered explorers in return.",
       kc: 'KC-4.1.III',
       theme: "Governance"
     },
     {
-      target: "I can explain the economic causes and effects of Portuguese and Spanish exploration, from the route around Africa and the trading-post empire to Columbus and the voyages across the Atlantic and Pacific.",
+      target: "I can explain the economic causes and effects of Portuguese and Spanish exploration, from Portugal's ships and navigation skills, the route around Africa, and the trading-post empire to Columbus and the voyages across the Atlantic and Pacific.",
       kc: 'KC-4.1.III.A; KC-4.1.III.B',
       theme: "Economic Systems"
     },
@@ -55,12 +55,12 @@ window.BEHISTORICAL_LESSON = {
 
   successCriteria: [
     {
-      criteria: "I can explain one economic reason rulers paid for voyages (such as cutting out the middlemen in the spice trade) and name one thing a ruler gave an explorer in return (such as titles or a share of the profits).",
+      criteria: "I can explain one economic reason rulers backed voyages (such as cutting out the middlemen in the spice trade) and name one thing a ruler gave an explorer (such as ships, permission to claim land, titles, or a share of the profits).",
       kc: 'KC-4.1.III',
       theme: "Governance"
     },
     {
-      criteria: "I can name who paid for Portuguese and Spanish voyages, what they wanted, and one economic effect for each: Portugal's trading-post empire from Africa to Asia, and Spain's voyages making all of Europe more interested in ocean trade.",
+      criteria: "I can name who backed Portuguese and Spanish voyages, what they wanted, and one economic effect for each: Portugal's ships and navigation skills leading to more trade with Africa and Asia and a trading-post empire, and Spain's voyages making all of Europe more interested in ocean trade.",
       kc: 'KC-4.1.III.A; KC-4.1.III.B',
       theme: "Economic Systems"
     },
@@ -116,24 +116,24 @@ window.BEHISTORICAL_LESSON = {
     videos: [],
     segments: [
       {
-        title: "The Cause: Spices, Middlemen, and Why a Ruler Paid",
+        title: "The Cause: Spices, Middlemen, and Why Rulers Backed the Voyages",
         bullets: [
           "Pepper grew on the southwest coast of India and cost little there. On its way to Europe it passed through **middlemen**: Indian Ocean merchants, traders in Egypt or Syria, and Venetian merchants. Each took a profit, so pepper in Europe cost many times more. A sea route straight to India would let a ruler buy cheap and sell dear. That is the main **economic cause** of these voyages.",
           "The Ottoman capture of Constantinople in 1453 did **not** close the spice trade. Spices kept reaching Europe through Egypt and Venice, and Portugal's voyages down the African coast had started decades before 1453.",
-          "A voyage into unknown water might take years and bring back nothing, which a merchant could not risk. Only a ruler had the ships, the money, and the power to keep paying. This is **state sponsorship**. Rulers also paid in promises that cost nothing up front: titles, a share of future profits, and the right to govern new lands.",
+          "A voyage into unknown water might take years and bring back nothing, and few merchants would risk that alone. So rulers backed the voyages: this is **state sponsorship**. Sometimes a ruler paid for the ships; sometimes a ruler gave a merchant or captain permission to explore and claim land in return for a share. Rulers also paid in promises that cost nothing up front: titles, a share of future profits, and the right to govern new lands.",
           "Rulers had other motives too, such as spreading Christianity and beating rival kingdoms. But the trade is what kept the money coming."
         ],
         image: {
           title: "Vasco da Gama",
           caption: "An engraving of Vasco da Gama, the Portuguese commander who reached India by sea in 1498, made long after his lifetime. It shows how he was remembered, not what he looked like.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg?width=1200",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg"
         }
       },
       {
         title: "Portugal: Step by Step to a Trading-Post Empire",
         bullets: [
-          "In 1415 Portugal captured **Ceuta**, a Muslim port in North Africa. From the 1420s a royal prince, Henry, paid for voyage after voyage down the West African coast. He did not go on them, and the \"navigation school at Sagres\" is a later legend.",
+          "In 1415 Portugal captured **Ceuta**, a Muslim port in North Africa. From the 1420s a royal prince, Henry, paid for voyage after voyage down the West African coast. He did not go on them, and the \"navigation school at Sagres\" is a later legend. Portuguese sailors built light caravels, mapped the coast as they went, and learned the Atlantic's winds, so each voyage's charts helped the next one go farther.",
           "Each voyage came back with something to sell: gold, ivory, pepper, and, from the 1440s, enslaved Africans. Each return made the next voyage easier to pay for. In 1482 Portugal built a fort at **Elmina** to control a royal trade in gold.",
           "**Bartolomeu Dias** sailed around the southern tip of Africa in 1488. **Vasco da Gama** reached **Calicut** in India in 1498. He lost two of his four ships and more than half his men, but the spices he brought home showed how much money the route could make. Lisbon became a major pepper market, and the crown ran the pepper trade itself.",
           "Portugal then seized fortified ports such as **Goa** (1510) and **Malacca** (1511). It held ports, not large lands, and tried to control the sea trade between them: a **global trading-post empire**. How those posts worked is Topic 4.4."
@@ -141,7 +141,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "The Vasco da Gama Pillar, Malindi",
           caption: "A modern photograph of the pillar at Malindi, Kenya. Da Gama's fleet set up a stone marker here in 1498; the pillar has been rebuilt and repaired since. Portuguese captains set up markers like it to claim the routes they sailed for their king.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg?width=1200",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg"
         }
       },
@@ -156,7 +156,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Columbus Taking Possession",
           caption: "A picture made in the 1800s, more than three centuries after 1492, imagining Columbus claiming land for the Spanish crown. It shows how Europeans later remembered the voyage, not what happened on the beach.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg?width=1200",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg"
         }
       },
@@ -164,9 +164,9 @@ window.BEHISTORICAL_LESSON = {
         title: "The Northern Crossings: England, France, and the Dutch",
         bullets: [
           "England, France, and the Dutch wanted Asia's trade too, but Portugal held the route around Africa and Spain held the route west. So they sponsored voyages across the North Atlantic, looking for another way to Asia over the top of the world.",
-          "**England** sent **John Cabot**, an Italian sailor, west in 1497; he reached the coast of North America. **France** sent Giovanni da **Verrazzano** along that coast in 1524 and **Jacques Cartier** up the St. Lawrence River in the 1530s. **Dutch** voyages under Willem Barentsz in the 1590s tried to sail around the north of Russia, and in 1609 Henry Hudson, sailing for a Dutch trading company, explored the Hudson River.",
+          "**England**'s king gave **John Cabot**, an Italian sailor, permission to sail west and claim land; Cabot and his backers paid, and in 1497 he reached the coast of North America. **France** sent Giovanni da **Verrazzano** along that coast in 1524 and **Jacques Cartier** up the St. Lawrence River in the 1530s. **Dutch** voyages under Willem Barentsz in the 1590s tried to sail around the north of Russia, and in 1609 Henry Hudson, sailing for a Dutch trading company, explored the Hudson River.",
           "None found a sea route to Asia; Arctic ice blocked every way through. But the voyages paid in other ways: cod off Newfoundland, furs traded with Indigenous peoples along the St. Lawrence, and claims to North American coasts where these states later built colonies.",
-          "The pattern across all three stories: a ruler paid, a voyage came back with gold, spices, or news, the next voyage became easier to fund, and rival rulers wanted voyages of their own."
+          "The pattern across all three stories: a ruler backed a voyage, a voyage came back with gold, spices, or news, the next voyage became easier to fund, and rival rulers wanted voyages of their own."
         ],
         image: {
           title: "Three Ways to Asia, and Who Paid",
@@ -183,7 +183,7 @@ window.BEHISTORICAL_LESSON = {
     url: "../assets/images/instructional-maps/topic-4-2.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-4-2.svg",
     caption: "A BeHistorical instructional map of the three directions European states paid for: Portugal around Africa to India, Spain west across the Atlantic, and England, France, and the Dutch across the North Atlantic and toward the Arctic. Routes are schematic and coastlines simplified.",
-    intro: "Use the map to see the whole topic at once. Find each numbered route in the key, and notice which states went which way.",
+    intro: "Use the map to see the whole topic at once. Find each numbered route (1 to 5) in the map key, and notice which states went which way. Open the map full size to read the key.",
     prompt: "Using the map, explain why England, France, and the Dutch sailed north instead of following Portugal's or Spain's route. Then name one place on the map where a voyage found something other than a route to Asia, and say what it found."
   },
 
@@ -208,7 +208,7 @@ window.BEHISTORICAL_LESSON = {
   primarySource: {
     title: "Primary Source: Columbus's Journal, October 11 to 12, 1492",
     intro: "Columbus kept a journal of his first voyage. The original is lost; it survives in a summary made by the priest Bartolomé de las Casas, who copied some passages word for word and retold others, which is why the text switches between \"he\" and \"I.\" This is an adapted English translation of the entries for October 11 and 12, 1492, when the fleet reached an island in the Bahamas.",
-    text: "Thursday, 11 October. As the night drew on, he ordered the fleet to slow and not sail beyond the distance a man could see. About two hours after midnight they saw land clearly. Friday, 12 October. At dawn they saw people, naked, on the shore. The Admiral went ashore in the armed boat, and with him the royal standard. He called to the two captains to be witnesses that he was taking possession of this island for the King and Queen of Castile. They saw many trees, very green, and many streams, and fruits of various kinds. The people all went naked as their mothers bore them. They are very well built, with very handsome bodies and very good faces, and their hair coarse, almost like the tail of a horse. They are friendly and well-dispositioned people who bear no arms except for small spears. I showed one of them a sword and through ignorance he grabbed it by the blade and cut himself. They should be good and intelligent servants, for I see that they say very quickly everything that is said to them. I believe that they could easily be made Christians, for it seemed to me that they had no religion of their own.",
+    text: "Thursday, 11 October. As the night drew on, he ordered the fleet to slow and not sail beyond the distance a man could see. About two hours after midnight they saw land clearly. Friday, 12 October. At dawn they saw people, naked, on the shore. The Admiral went ashore in the armed boat, and with him the royal standard. He called to the two captains to be witnesses that he was taking possession of this island for the King and Queen of Castile. They saw many trees, very green, and many streams, and fruits of various kinds. The people all went about wearing no clothes at all. They are very well built, with very handsome bodies and very good faces, and their hair coarse, almost like the tail of a horse. They are friendly, good-natured people who bear no arms except for small spears. I showed one of them a sword and through ignorance he grabbed it by the blade and cut himself. They should be good and intelligent servants, for I see that they say very quickly everything that is said to them. I believe that they could easily be made Christians, for it seemed to me that they had no religion of their own.",
     questions: [
       "Columbus takes possession of the island \"for the King and Queen of Castile.\" What does that tell you about who paid for this voyage and what they expected from it?",
       "Find one thing Columbus notices that his royal sponsors would care about. Explain why he might include it in a record written for them.",

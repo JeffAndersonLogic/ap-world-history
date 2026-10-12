@@ -240,13 +240,13 @@ module.exports = {
     "showFooterNote": false,
     "headerSubtitle": "Topic 4.2, Exploration: Causes and Events &nbsp;|&nbsp; AP World History: Modern",
     "titleHtml": "Who <em>Paid</em>?",
-    "deck": "Ships could now cross the ocean and come back, but every voyage cost a fortune. Rulers paid, because they wanted the trade of Asia. Portugal went around Africa, Spain went west, and England, France, and the Dutch went north, and every voyage that paid made the next one easier to fund.",
+    "deck": "Ships could now cross the ocean and come back, but every voyage cost a fortune. Rulers backed the voyages, because they wanted the trade of Asia. Portugal went around Africa, Spain went west, and England, France, and the Dutch went north, and every voyage that paid made the next one easier to fund.",
     "skillTags": [
       "Causation",
       "Making Connections"
     ],
     "supportCards": {
-      "beforeYouRead": "<strong>Rulers paid → Voyages came back with gold, spices, or news → The next voyage was easier to fund → Rival rulers wanted voyages of their own.</strong> For every state in this reading, ask three things: who paid, what did they want, and what did they get?",
+      "beforeYouRead": "<strong>Rulers backed voyages → Voyages came back with gold, spices, or news → The next voyage was easier to fund → Rival rulers wanted voyages of their own.</strong> For every state in this reading, ask three things: who paid, what did they want, and what did they get?",
       "readingTarget": "Why did European rulers pay for ocean voyages, and what did those voyages bring back?"
     },
     "vocabulary": [
@@ -269,7 +269,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "In the last topic, borrowed tools, new ships, and the volta do mar let a ship sail out into the Atlantic and come home. But a voyage cost a fortune: ships, food for months, wages for dozens of sailors, and a real chance that nobody came back with anything to sell. So who paid, and what did they want?"
+            "html": "In the last topic, borrowed tools, new ships, and the volta do mar (a wide loop out to sea to catch the winds that blow toward home) let a ship sail out into the Atlantic and come home. But a voyage cost a fortune: ships, food for months, wages for dozens of sailors, and a real chance that nobody came back with anything to sell. So who paid, and what did they want?"
           },
           {
             "type": "p",
@@ -292,11 +292,11 @@ module.exports = {
       {
         "number": "2",
         "label": "The Role of States",
-        "heading": "Why a Ruler, Not a Merchant, Paid",
+        "heading": "Rulers Backed the Voyages",
         "blocks": [
           {
             "type": "p",
-            "html": "A merchant could not carry that risk alone. A voyage into unknown water might take years and come back with nothing at all. Only a ruler had the ships, the money, and the power to keep paying, voyage after voyage. This is <span class=\"kt\">state sponsorship</span>: a government paying for exploration."
+            "html": "A voyage into unknown water might take years and come back with nothing at all. Few merchants would risk that on their own. So rulers stepped in. This is <span class=\"kt\">state sponsorship</span>: a government backing exploration. Sometimes a ruler paid for the ships outright. Sometimes a ruler gave a merchant or a captain official permission to explore, and the right to the trade, in return for a share of whatever came back. Either way, the ruler set the terms and claimed the results."
           },
           {
             "type": "p",
@@ -305,7 +305,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>Name the state's role.</strong> The College Board asks about the role of states, not just the explorers. A strong answer says who paid, what they gave the explorer, and what they wanted back.</p>"
+          "raw": "<p><strong>Name the state's role.</strong> The College Board asks about the role of states, not just the explorers. A strong answer says which ruler backed the voyage, what the ruler gave (money, ships, permission, or promises), and what the ruler wanted back.</p>"
         }
       },
       {
@@ -315,7 +315,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Portugal went first, and it went step by step. In 1415 Portugal captured Ceuta, a Muslim port in North Africa. From the 1420s, a royal prince named Henry paid for voyage after voyage down the coast of West Africa. He did not go on those voyages himself, and the famous \"navigation school\" at Sagres is a legend written down centuries later."
+            "html": "Portugal went first, and it went step by step. In 1415 Portugal captured Ceuta, a Muslim port in North Africa. From the 1420s, a royal prince named Henry paid for voyage after voyage down the coast of West Africa. He did not go on those voyages himself, and the famous \"navigation school\" at Sagres is a legend written down centuries later. Portuguese sailors built light caravels, mapped the coast as they went, and learned the Atlantic's winds, and each voyage's charts helped the next one go farther."
           },
           {
             "type": "p",
@@ -332,7 +332,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>Follow one state from cause to effect.</strong> For Portugal: the crown paid for voyages because it wanted gold and then spices, the voyages went step by step around Africa to India, and the effect was more trade with Africa and Asia and a global trading-post empire.</p>"
+          "raw": "<p><strong>Follow one state from cause to effect.</strong> For Portugal: the crown backed voyages because it wanted gold and then spices, Portuguese ships and navigation skills carried them step by step around Africa to India, and the effect was more trade with Africa and Asia and a global trading-post empire.</p>"
         }
       },
       {
@@ -369,11 +369,11 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "England, France, and the Dutch wanted the trade of Asia too. But Portugal held the route around Africa, and Spain held the route west. So they paid for voyages across the North Atlantic, looking for another way to Asia over the top of the world: a <span class=\"kt\">Northwest Passage</span> above North America, or a northeast route above Russia."
+            "html": "England, France, and the Dutch wanted the trade of Asia too. But Portugal held the route around Africa, and Spain held the route west. So they backed voyages across the North Atlantic, looking for another way to Asia over the top of the world: a <span class=\"kt\">Northwest Passage</span> above North America, or a northeast route above Russia."
           },
           {
             "type": "p",
-            "html": "In 1497 England sent John Cabot, an Italian sailor, across the North Atlantic, and he reached the coast of North America. France sent Giovanni da Verrazzano along that coast in 1524, and Jacques Cartier up the St. Lawrence River in the 1530s. Dutch voyages under Willem Barentsz in the 1590s tried to sail around the north of Russia. In 1609 Henry Hudson, sailing for a Dutch trading company, explored the river that now carries his name."
+            "html": "In 1497 England's king gave John Cabot, an Italian sailor, permission to sail west and claim lands for England, and Cabot and his backers paid for the voyage themselves. He crossed the North Atlantic and reached the coast of North America. France sent Giovanni da Verrazzano along that coast in 1524, and Jacques Cartier up the St. Lawrence River in the 1530s. Dutch voyages under Willem Barentsz in the 1590s tried to sail around the north of Russia. In 1609 Henry Hudson, sailing for a Dutch trading company, explored the river that now carries his name."
           },
           {
             "type": "p",
@@ -392,7 +392,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Put the three stories side by side and the same pattern repeats. A ruler paid. A voyage came back with gold, spices, or news of new lands. That return made the next voyage easier to fund, and it made rival rulers want voyages of their own."
+            "html": "Put the three stories side by side and the same pattern repeats. A ruler backed a voyage. A voyage came back with gold, spices, or news of new lands. That return made the next voyage easier to fund, and it made rival rulers want voyages of their own."
           },
           {
             "type": "p",
@@ -405,19 +405,19 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>Answer both halves.</strong> The College Board asks for the role of states and for the economic causes and effects. One strong sentence does both: who paid, what they wanted, and what they got.</p>"
+          "raw": "<p><strong>Answer both halves.</strong> The College Board asks for the role of states and for the economic causes and effects. One strong sentence does both: who backed the voyage, what they wanted, and what they got.</p>"
         }
       }
     ],
-    "takeaway": "Asian spices passed through many middlemen, so a sea route straight to India promised huge profits. Only rulers could carry the risk, so states paid, with money, ships, titles, and shares. Portugal went step by step around Africa to India and built a trading-post empire. Spain backed Columbus's westward gamble, and its voyages across the Atlantic and Pacific made all of Europe interested. England, France, and the Dutch looked for a northern route to Asia, never found one, and got fish, furs, and land claims instead. Every voyage that paid made the next one easier to fund.",
+    "takeaway": "Asian spices passed through many middlemen, so a sea route straight to India promised huge profits. Few merchants would carry that risk alone, so states backed the voyages, with money, ships, permission to explore, titles, and shares. Portugal went step by step around Africa to India and built a trading-post empire. Spain backed Columbus's westward gamble, and its voyages across the Atlantic and Pacific made all of Europe interested. England, France, and the Dutch looked for a northern route to Asia, never found one, and got fish, furs, and land claims instead. Every voyage that paid made the next one easier to fund.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
         "num": "01",
         "skill": "Causation",
-        "text": "Explain ONE economic reason European rulers paid for ocean voyages. Then explain why a ruler, not a merchant, was the one who paid.",
-        "placeholder": "Rulers paid because... A sea route would... A ruler paid instead of a merchant because..."
+        "text": "Explain ONE economic reason European rulers backed ocean voyages. Then explain ONE way a ruler backed a voyage: by paying for it, or by giving an explorer permission and rights in return for a share.",
+        "placeholder": "Rulers backed voyages because... A sea route would... One way a ruler backed a voyage was..."
       },
       {
         "num": "02",
@@ -428,7 +428,7 @@ module.exports = {
       {
         "num": "03",
         "skill": "Making Connections",
-        "text": "Explain how ONE state's voyages connected to ANOTHER state's decision to pay for voyages of its own. Then name one thing the English, French, or Dutch voyages found instead of a route to Asia.",
+        "text": "Explain how ONE state's voyages connected to ANOTHER state's decision to back voyages of its own. Then name one thing the English, French, or Dutch voyages found instead of a route to Asia.",
         "placeholder": "Because ___ already..., ___ decided to... The northern voyages found..."
       }
     ],

@@ -139,16 +139,21 @@ road, so Europe had to go by sea. It is not true. The spice trade through Egypt 
 running, and Portugal's voyages down the coast of Africa had already been going for decades
 before 1453. The real reason was the cost of all those middlemen.
 
-A merchant could not carry that risk alone. A voyage into unknown water might take years and
-return nothing. Only a ruler had the ships, the money and the power to keep paying, and rulers
-paid in things that cost them nothing up front: titles, a share of future profits, and the
-right to govern whatever was found. That is the **role of states**: rulers paid, and they wrote
-the deals.
+A voyage into unknown water might take years and return nothing, and few merchants would risk
+that alone. So rulers backed the voyages, in two ways. Sometimes the crown paid for the ships.
+Sometimes it licensed a merchant or a captain to explore at his own cost, in return for a share
+and a claim: England's Henry VII did that for John Cabot in 1496, and Portugal leased the Guinea
+trade to the merchant Fernão Gomes in 1469 on condition that he explore new coast every year.
+Either way rulers paid in things that cost them nothing up front (titles, a share of future
+profits, the right to govern whatever was found) and set the terms. That is the **role of
+states**.
 
 **Portugal went first, and step by step.** In 1415 Portugal captured Ceuta, a Muslim port in
 North Africa. From the 1420s a royal prince, Henry, paid for voyage after voyage down the coast
 of West Africa. He did not go on those voyages himself, and the famous "school of navigation" at Sagres is a
-legend. Each voyage went a little farther and came back with something: gold, ivory, pepper
+legend. Portuguese sailors built light caravels, mapped the coast as they went and learned the
+Atlantic's winds, so each voyage's charts helped the next go farther. Each voyage also came
+back with something: gold, ivory, pepper
 from the West African coast, and from the 1440s, enslaved Africans. Each return made the next
 voyage easier to pay for and easier to justify. In 1482 Portugal built a fort at Elmina, on the Gold Coast, to trade for
 gold, a royal trade that made the crown much richer. In 1488 Bartolomeu Dias rounded the southern tip of Africa. In 1498 Vasco da Gama reached
@@ -178,9 +183,9 @@ interest** in ocean travel and trade.
 
 **Then the northern states joined in.** England, France and the Dutch wanted the trade of Asia
 too, but Portugal held the route around Africa and Spain held the route west. So they looked for
-another way: across the North Atlantic and around the top of the world. In 1497 England sent
-John Cabot, an Italian sailor, west across the North Atlantic, and he reached the coast of North
-America. France sent Giovanni da Verrazzano along that coast in 1524 and Jacques Cartier up the
+another way: across the North Atlantic and around the top of the world. In 1496 England's king
+licensed John Cabot, an Italian sailor, to sail west at his own and his backers' cost, and in
+1497 he reached the coast of North America. France sent Giovanni da Verrazzano along that coast in 1524 and Jacques Cartier up the
 St. Lawrence River in the 1530s. Dutch voyages under Willem Barentsz in the 1590s tried to sail
 around the north of Russia, and in 1609 Henry Hudson, sailing for a Dutch trading company,
 explored the river that now carries his name. None of them found a sea route to Asia; Arctic ice
@@ -188,7 +193,7 @@ blocked every way through. But the voyages paid in other ways: rich cod fishing 
 furs traded with Indigenous peoples along the St. Lawrence, and claims to North American coasts
 that these states would build colonies on later.
 
-Here is the pattern. A ruler paid. A voyage came back with gold, spices, or news of new lands.
+Here is the pattern. A ruler backed a voyage. A voyage came back with gold, spices, or news of new lands.
 That return made the next voyage easier to fund, and it made rival rulers want voyages of their
 own. Who paid, what they wanted, and what they got is the whole topic.
 
@@ -204,7 +209,12 @@ next one easier to fund.** (Approved with the unit story map, 2026-10-11.)
 of new lands that persuaded someone to fund the next one. Columbus's first voyage paid in news,
 not gold, and that is still what made the second fleet more than five times larger.
 
-Shorter for the wall: **Rulers paid. Voyages paid back. More ships sailed.**
+"Paid for" also has to cover licensing. The first review pass (see the claim ledger) found that
+England's crown licensed Cabot rather than funding him, and that Portugal leased exploration to a
+merchant in 1469. The approved spine is kept, and every surface says rulers **backed** the
+voyages, by paying for them or by licensing them.
+
+Shorter for the wall: **Rulers backed the voyages. Voyages paid back. More ships sailed.**
 
 ## 5. Must-have evidence and what each one proves
 
@@ -212,7 +222,7 @@ Shorter for the wall: **Rulers paid. Voyages paid back. More ships sailed.**
 |---|---|---|
 | The spice chain: pepper cheap in India, expensive in Europe, many middlemen | LO C (economic cause) | The economic cause, stated as a mechanism: a sea route to the source cuts out the middlemen. |
 | 1453 did not close the spice trade; Portuguese voyages began about thirty years earlier | LO C (cause), story map's qualified 1453 | Corrects the most common wrong cause. Bridge only, one paragraph and one myth row. |
-| A voyage cost a fortune and might return nothing; rulers paid in titles, shares and rights | KC-4.1.III, LO B | The role of states: why a ruler, not a merchant, paid. |
+| A voyage cost a fortune and might return nothing; rulers paid for some and licensed others, and paid in titles, shares and rights | KC-4.1.III, LO B | The role of states: how rulers backed voyages, and why. |
 | The Capitulations of Santa Fe, April 1492: Admiral, governor, a tenth | KC-4.1.III.B, LO B | A real state contract. What a ruler offered and what it asked for. |
 | Henry, a royal prince, paying for voyages down the coast; Ceuta 1415; gold, ivory, pepper and enslaved people from the 1440s; Elmina 1482 | KC-4.1.III.A, KC-4.1.III | State sponsorship, step by step, each return paying for the next. |
 | Dias 1488, da Gama 1498 to Calicut and a profitable return | KC-4.1.III.A | Increased travel to and trade with Asia; the economic effect. |
@@ -237,7 +247,7 @@ Named examples are evidence inside a claim. None earns its own slide unless the 
    them, and what did they want?"
 3. **Topic question on screen:** Why did rulers pay for ocean voyages, and what did they get?
 4. **The cause: the spice chain.** Pepper in India, the middlemen, the price in Europe.
-5. **Why a state paid.** Risk only a ruler could carry; payment in titles, shares and rights.
+5. **How rulers backed voyages.** Paying for them, or licensing them; payment in titles, shares and rights.
 6. **Portugal, step by step.** Ceuta, Henry's voyages, Elmina, Dias, da Gama: each return paid
    for the next.
 7. **Portugal's effect.** A trading-post empire: forts at ports from Africa to Asia.
@@ -262,7 +272,7 @@ rows that are the causal chain of the topic.
 
 | | Portugal | Spain | England, France, Dutch |
 |---|---|---|---|
-| **Who paid** | Prince Henry, then the kings | Isabella and Ferdinand | Each crown, then Dutch merchants and their company |
+| **Who backed** | Prince Henry, then the kings | Isabella and Ferdinand | English and French kings; a Dutch trading company |
 | **What they wanted** | Gold, then spices, by going around Africa | Asia's trade by sailing west | Another route to Asia, in the north |
 | **What they got** | A trading-post empire from Africa to Asia | The Americas, and the Pacific crossed; all of Europe interested | No route to Asia; fish, furs and claims |
 

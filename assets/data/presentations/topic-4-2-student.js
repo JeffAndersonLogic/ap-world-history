@@ -75,36 +75,36 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "split-mirror",
       "eyebrow": "The Role of States",
-      "title": "Why a ruler, not a merchant, paid.",
-      "footer": "Rulers paid in ships and money, and in promises that cost nothing up front.",
+      "title": "Two ways a ruler backed a voyage.",
+      "footer": "Either way, the ruler set the terms and claimed the results.",
       "kc": "KC-4.1.III",
       "template": {
         "left": {
-          "name": "A merchant"
+          "name": "Paid for it"
         },
         "right": {
-          "name": "A ruler"
+          "name": "Licensed it"
         },
         "rows": [
           {
-            "label": "Money",
-            "left": "Enough for one cargo",
-            "right": "Taxes from a whole kingdom"
+            "label": "Example",
+            "left": "Isabella and Ferdinand, for Columbus, 1492",
+            "right": "Henry VII of England, for Cabot, 1496"
           },
           {
-            "label": "Risk",
-            "left": "One lost voyage could ruin him",
-            "right": "Could pay for voyage after voyage"
+            "label": "Who paid",
+            "left": "The crown, with help from backers",
+            "right": "Cabot and his backers"
           },
           {
-            "label": "Time",
-            "left": "Needs a profit soon",
-            "right": "Could wait years for a route"
+            "label": "Ruler gave",
+            "left": "Ships, money, titles, a share",
+            "right": "Permission to sail and claim land"
           },
           {
-            "label": "Can offer",
-            "left": "A share of one cargo",
-            "right": "Titles, land to govern, the sole right to a trade"
+            "label": "Ruler got",
+            "left": "Most of the profit and the new lands",
+            "right": "A fifth of the profit, and the claims"
           }
         ]
       }
@@ -113,7 +113,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "timeline",
       "eyebrow": "Portugal · Step by Step",
       "title": "Each return made the next voyage easier to pay for.",
-      "footer": "Spacing is true to scale: about eighty years, step by step.",
+      "footer": "Spacing is true to scale: more than seventy years, step by step.",
       "kc": "KC-4.1.III.A",
       "template": {
         "range": [
@@ -130,7 +130,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "year": 1444,
             "label": "1440s",
-            "text": "Gold, ivory and enslaved Africans brought back from the West African coast."
+            "text": "Caravels reach West Africa; gold, ivory and enslaved Africans brought back."
           },
           {
             "year": 1482,
@@ -223,25 +223,24 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "compounding-stairs",
       "eyebrow": "Spain · The Effect",
       "title": "Interest in ocean trade snowballed.",
-      "footer": "The College Board's words: voyages that \"dramatically increased European interest\" in ocean travel and trade.",
       "kc": "KC-4.1.III.B",
       "template": {
         "steps": [
           {
             "label": "1492",
-            "text": "Three ships reach the Caribbean, not Asia"
+            "text": "Three ships sail west"
           },
           {
             "label": "1493",
-            "text": "Columbus's letter printed across Europe; at least 17 ships sail"
+            "text": "At least 17 ships sail"
           },
           {
             "label": "1494",
-            "text": "Spain and Portugal split their claims at Tordesillas"
+            "text": "Tordesillas splits the claims"
           },
           {
             "label": "1519 to 1522",
-            "text": "Magellan and Elcano cross the Pacific and sail around the world"
+            "text": "The Pacific crossed"
           }
         ]
       }
@@ -334,8 +333,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Three ways to Asia, and who paid.",
       "visual": {
         "url": "../assets/images/instructional-maps/topic-4-2.svg",
-        "alt": "Map of routes: Portugal around Africa to India, Spain west to the Caribbean, England, France and the Dutch across the North Atlantic and toward the Arctic",
-        "credit": "Map · BeHistorical instructional map"
+        "alt": "Map of routes: Portugal around Africa to India, Spain west to the Caribbean, England, France and the Dutch across the North Atlantic and toward the Arctic"
       },
       "kc": "KC-4.1.III"
     },
@@ -343,13 +341,13 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "compounding-snowball",
       "eyebrow": "The Pattern",
       "title": "Every voyage that paid brought more ships.",
-      "footer": "Rulers paid. Voyages paid back. More ships sailed.",
+      "footer": "Rulers backed the voyages. Voyages paid back. More ships sailed.",
       "kc": "KC-4.1.III",
       "template": {
         "steps": [
           {
-            "label": "A ruler pays",
-            "text": "Ships, money, and promises"
+            "label": "A ruler backs it",
+            "text": "Money, ships, rights, promises"
           },
           {
             "label": "A voyage returns",
@@ -410,11 +408,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
         ],
         "rows": [
           {
-            "label": "Who paid",
+            "label": "Who backed",
             "cells": [
               "Prince Henry, then the kings",
               "Isabella and Ferdinand",
-              "Each crown, then Dutch merchants"
+              "English and French kings; a Dutch trading company"
             ]
           },
           {
@@ -447,7 +445,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "footer": "Who paid, what they wanted, what it caused, and how it connects.",
       "template": {
         "weak": "European countries explored because of God, glory, and gold.",
-        "strong": "**Portugal's crown** paid for voyages around Africa to reach Asia's spices without the middlemen, and **because Portugal already held that route**, Spain's rulers **paid Columbus to sail west**, which led other states to sponsor voyages of their own."
+        "strong": "**Portugal's crown** backed voyages around Africa to reach Asia's spices without the middlemen, and **because Portugal already held that route**, Spain's rulers **paid Columbus to sail west**, which led other states to sponsor voyages of their own."
       }
     },
     {
@@ -493,8 +491,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "prompt",
       "eyebrow": "Topic 4.2 · Landing Sentence",
-      "title": "Rulers paid. Voyages paid back. More ships sailed.",
-      "subtitle": "Rulers paid for voyages because they wanted the trade of Asia, and every voyage that paid made the next one easier to fund. Next: Columbus was looking for a route to Asia. What he started was an exchange of living things nobody planned.",
+      "title": "Rulers backed the voyages. Voyages paid back. More ships sailed.",
+      "subtitle": "Rulers backed voyages because they wanted the trade of Asia, and every voyage that paid made the next one easier to fund. Next: Columbus was looking for a route to Asia. What he started was an exchange of living things nobody planned.",
       "kc": "Unit 4: Learning Objective C"
     }
   ]

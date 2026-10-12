@@ -1892,7 +1892,8 @@ label when it does not.** That is not the duplication this repo forbids: two
 modules practising two skills are two different facts, each stated once. Twelve
 checkpoints declare one today. An explicit empty string means "this checkpoint
 has no clean AP reasoning skill" and sends no line, which is honest rather than
-forcing a label onto a descriptive prompt; Topic 4.2 is the one.
+forcing a label onto a descriptive prompt. No checkpoint uses it today: Topic 4.2,
+which this sentence used to name, declares Causation since its 2026-10-12 build.
 
 **Do not fix a mismatch by editing `skillBuilder.label`.** That label describes
 the Skill Builder module, and on every topic checked it was accurate. Retagging

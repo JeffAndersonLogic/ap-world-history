@@ -480,11 +480,11 @@ Strong answer checklist: Use two specific examples of cross-cultural knowledge o
 
 **AP skill focus.** Making Connections practice.
 
-**Checkpoint 1 prompt.** Explain ONE economic reason European rulers paid for ocean voyages after c. 1450. Then explain why a ruler, not a merchant, paid, and name ONE thing a ruler gave an explorer in return.
-Strong answer checklist: Name one economic reason, explained as a mechanism, not a label. Explain why only a ruler could carry the risk. Name one thing a ruler offered an explorer.
+**Checkpoint 1 prompt.** Explain ONE economic reason European rulers backed ocean voyages after c. 1450. Then name ONE ruler and explain how that ruler backed a voyage: what the ruler gave (money, ships, permission, titles, or a share) and what the ruler wanted back.
+Strong answer checklist: Name one economic reason, explained as a mechanism, not a label. Name one ruler and how that ruler backed a voyage. Say what the ruler gave and what the ruler wanted back.
 
-**Checkpoint 2 prompt.** Choose ONE Portuguese or Spanish voyage, such as Vasco da Gama's or Columbus's, and ONE English, French, or Dutch voyage, such as Cabot's, Cartier's, or Hudson's. For each, name the state that paid, explain ONE economic reason it paid, and explain ONE economic effect the voyage caused. Then explain how one of these voyages connects to the other state's decision to explore.
-Strong answer checklist: Use one Iberian voyage and one northern voyage, each with its sponsor. Give one economic cause and one economic effect for each. Connect the two: how one state's voyages shaped another state's choice.
+**Checkpoint 2 prompt.** Pick ONE Portuguese or Spanish voyage (such as da Gama's or Columbus's) and ONE English, French, or Dutch voyage (such as Cabot's, Cartier's, or Hudson's). For EACH voyage, explain: (1) which state backed it, (2) one economic reason the state backed it, and (3) one economic effect it had. Last, explain how the first voyage, or the route it opened, helped lead the second state to explore.
+Strong answer checklist: Use one Iberian voyage and one northern voyage, each with the state that backed it. Give one economic cause and one economic effect for each. Connect the two: how one state's voyages shaped another state's choice.
 
 ## 4.3 Columbian Exchange
 

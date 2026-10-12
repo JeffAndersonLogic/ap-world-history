@@ -5254,7 +5254,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "06",
           "module": "Checkpoint 1",
           "label": "Module 06, Checkpoint 1",
-          "prompt": "Explain ONE economic reason European rulers paid for ocean voyages after c. 1450. Then explain why a ruler, not a merchant, paid, and name ONE thing a ruler gave an explorer in return.",
+          "prompt": "Explain ONE economic reason European rulers backed ocean voyages after c. 1450. Then name ONE ruler and explain how that ruler backed a voyage: what the ruler gave (money, ships, permission, titles, or a share) and what the ruler wanted back.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -5272,21 +5272,21 @@ window.BEHISTORICAL_SKILLS_MAP = {
           ],
           "criteria": [
             "Name one economic reason, explained as a mechanism, not a label.",
-            "Explain why only a ruler could carry the risk.",
-            "Name one thing a ruler offered an explorer."
+            "Name one ruler and how that ruler backed a voyage.",
+            "Say what the ruler gave and what the ruler wanted back."
           ],
           "learningTargets": [
-            "I can describe the role of states in maritime exploration: why rulers, not merchants, paid for voyages and what they offered explorers in return."
+            "I can describe the role of states in maritime exploration: how rulers backed voyages, by paying for them or by granting explorers rights, and what they offered explorers in return."
           ],
           "successCriteria": [
-            "I can explain one economic reason rulers paid for voyages (such as cutting out the middlemen in the spice trade) and name one thing a ruler gave an explorer in return (such as titles or a share of the profits)."
+            "I can explain one economic reason rulers backed voyages (such as cutting out the middlemen in the spice trade) and name one thing a ruler gave an explorer (such as ships, permission to claim land, titles, or a share of the profits)."
           ]
         },
         "checkpoint-two-response": {
           "ord": "10",
           "module": "Checkpoint 2",
           "label": "Module 10, Checkpoint 2",
-          "prompt": "Choose ONE Portuguese or Spanish voyage, such as Vasco da Gama's or Columbus's, and ONE English, French, or Dutch voyage, such as Cabot's, Cartier's, or Hudson's. For each, name the state that paid, explain ONE economic reason it paid, and explain ONE economic effect the voyage caused. Then explain how one of these voyages connects to the other state's decision to explore.",
+          "prompt": "Pick ONE Portuguese or Spanish voyage (such as da Gama's or Columbus's) and ONE English, French, or Dutch voyage (such as Cabot's, Cartier's, or Hudson's). For EACH voyage, explain: (1) which state backed it, (2) one economic reason the state backed it, and (3) one economic effect it had. Last, explain how the first voyage, or the route it opened, helped lead the second state to explore.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -5308,16 +5308,18 @@ window.BEHISTORICAL_SKILLS_MAP = {
             "economic effect"
           ],
           "criteria": [
-            "Use one Iberian voyage and one northern voyage, each with its sponsor.",
+            "Use one Iberian voyage and one northern voyage, each with the state that backed it.",
             "Give one economic cause and one economic effect for each.",
             "Connect the two: how one state's voyages shaped another state's choice."
           ],
           "learningTargets": [
-            "I can explain the economic causes and effects of Portuguese and Spanish exploration, from the route around Africa and the trading-post empire to Columbus and the voyages across the Atlantic and Pacific.",
+            "I can describe the role of states in maritime exploration: how rulers backed voyages, by paying for them or by granting explorers rights, and what they offered explorers in return.",
+            "I can explain the economic causes and effects of Portuguese and Spanish exploration, from Portugal's ships and navigation skills, the route around Africa, and the trading-post empire to Columbus and the voyages across the Atlantic and Pacific.",
             "I can explain why England, France, and the Dutch sponsored northern Atlantic crossings, and what those voyages produced instead of a route to Asia."
           ],
           "successCriteria": [
-            "I can name who paid for Portuguese and Spanish voyages, what they wanted, and one economic effect for each: Portugal's trading-post empire from Africa to Asia, and Spain's voyages making all of Europe more interested in ocean trade.",
+            "I can explain one economic reason rulers backed voyages (such as cutting out the middlemen in the spice trade) and name one thing a ruler gave an explorer (such as ships, permission to claim land, titles, or a share of the profits).",
+            "I can name who backed Portuguese and Spanish voyages, what they wanted, and one economic effect for each: Portugal's ships and navigation skills leading to more trade with Africa and Asia and a trading-post empire, and Spain's voyages making all of Europe more interested in ocean trade.",
             "I can use one English, French, or Dutch voyage to explain the search for another route to Asia and one effect it had, such as cod fishing, the fur trade, or land claims."
           ]
         },
@@ -5339,7 +5341,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "02",
           "module": "First & 10, Question 1",
           "label": "Module 02, First & 10, Question 1",
-          "prompt": "Explain ONE economic reason European rulers paid for ocean voyages. Then explain why a ruler, not a merchant, was the one who paid.",
+          "prompt": "Explain ONE economic reason European rulers backed ocean voyages. Then explain ONE way a ruler backed a voyage: by paying for it, or by giving an explorer permission and rights in return for a share.",
           "skill": "Causation",
           "skills": [
             "Causation"
@@ -5371,7 +5373,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "02",
           "module": "First & 10, Question 3",
           "label": "Module 02, First & 10, Question 3",
-          "prompt": "Explain how ONE state's voyages connected to ANOTHER state's decision to pay for voyages of its own. Then name one thing the English, French, or Dutch voyages found instead of a route to Asia.",
+          "prompt": "Explain how ONE state's voyages connected to ANOTHER state's decision to back voyages of its own. Then name one thing the English, French, or Dutch voyages found instead of a route to Asia.",
           "skill": "",
           "skills": [],
           "skillRaw": "Making Connections",
@@ -5413,7 +5415,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "05",
           "module": "AP Skill Builder",
           "label": "Module 05, AP Skill Builder",
-          "prompt": "In 2 to 3 sentences, explain how ONE state's voyages connected to ANOTHER state's decision to pay for voyages of its own. Name both states and both developments, and use because or so to show the link. (Example pairs: Portugal and Spain; Spain and Portugal and the northern states; Columbus's first voyage and the 1493 fleet.)",
+          "prompt": "In 2 to 3 sentences, explain how ONE state's voyages connected to ANOTHER state's decision to back voyages of its own. Name both states and both developments, and use because or so to show the link. (Example pairs: Portugal's African route and Spain's voyage west; the Treaty of Tordesillas and the English, French, or Dutch crossings.)",
           "skill": "",
           "skills": [],
           "skillRaw": "Making Connections practice",

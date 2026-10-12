@@ -8,7 +8,7 @@
  * written from the same story, and this deck retells it in the same words.
  * Spine: Rulers paid for voyages because they wanted the trade, and every voyage
  * that paid made the next one easier to fund.
- * Wall version: Rulers paid. Voyages paid back. More ships sailed.
+ * Wall version: Rulers backed the voyages. Voyages paid back. More ships sailed.
  * Retelling slide: the three-column matrix (phase 'matrix').
  *
  * Taught Green Friday 2026-10-30 and Silver Monday 2026-11-02. Required modules:
@@ -19,15 +19,15 @@ window.BEHISTORICAL_TEACHING = {
     topic: '4.2',
     minutes: 90,
     title: 'Exploration: Causes and Events',
-    subtitle: 'Rulers paid. Voyages paid back. More ships sailed.',
+    subtitle: 'Rulers backed the voyages. Voyages paid back. More ships sailed.',
     essentialQuestion: 'What role did states play in maritime exploration from 1450 to 1750, and what were its economic causes and effects?',
     apFocus: 'Causation, with Making Connections 5.B',
-    endTarget: 'Students can explain why rulers, not merchants, paid for ocean voyages; trace who paid, what they wanted and what they got for Portugal, Spain, and England, France and the Dutch; and connect one state\'s voyage to another state\'s decision to sponsor its own.'
+    endTarget: 'Students can explain why and how rulers backed ocean voyages, by paying for them or by granting explorers rights; trace who paid, what they wanted and what they got for Portugal, Spain, and England, France and the Dutch; and connect one state\'s voyage to another state\'s decision to sponsor its own.'
   },
 
   priorities: {
     must: [
-      'Answer both learning objectives: the role of states (who paid, and with what) and the economic causes and effects (what they wanted, and what they got).',
+      'Answer both learning objectives: the role of states (who backed the voyages, by paying or by granting rights) and the economic causes and effects (what they wanted, and what they got).',
       'State the economic cause as a mechanism: spices passed through many middlemen, so a sea route to India meant buying cheap and selling dear.',
       'Give the northern crossings equal standing: England, France and the Dutch looked for another way to Asia, never found it, and got fish, furs and claims.',
       'Land the spine with the matrix: every voyage that paid made the next one easier to fund, and made rivals want their own.'
@@ -49,7 +49,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'question', label: 'The Question', range: '4-5', minutes: 1, teacher: 'Pose the topic question.', students: 'Predict an answer.', slide: 3 },
     { id: 'first10', label: 'First & 10', range: '5-17', minutes: 12, teacher: 'Module 02: students read "Who Paid?" in class.', students: 'For each state: who paid, what they wanted, what they got.', slide: 4 },
     { id: 'spice', label: 'The Spice Chain', range: '17-20', minutes: 3, teacher: 'Every middleman took a cut.', students: 'Say why a sea route would pay.', slide: 5 },
-    { id: 'state', label: 'Why a Ruler Paid', range: '20-23', minutes: 3, teacher: 'Merchant against ruler.', students: 'Say why only a ruler could pay.', slide: 6 },
+    { id: 'state', label: 'How Rulers Backed Voyages', range: '20-23', minutes: 3, teacher: 'Two ways to back a voyage.', students: 'Say what a ruler gave and wanted back.', slide: 6 },
     { id: 'portugal', label: 'Portugal, Step by Step', range: '23-26', minutes: 3, teacher: 'Ceuta to Malacca.', students: 'Find where each return paid for the next.', slide: 7 },
     { id: 'calicut', label: 'Calicut, 1498', range: '26-27', minutes: 1, teacher: 'Reconstruction: newcomers in a busy ocean.', students: 'Say what da Gama came for.', slide: 8 },
     { id: 'posts', label: 'What Portugal Got', range: '27-29', minutes: 2, teacher: 'The trading-post empire.', students: 'Ports, not lands.', slide: 9 },
@@ -85,7 +85,7 @@ window.BEHISTORICAL_TEACHING = {
   slides: [
     {
       phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight · 2 Minutes',
-      title: 'Rulers paid. Voyages paid back. More ships sailed.',
+      title: 'Rulers backed the voyages. Voyages paid back. More ships sailed.',
       subtitle: 'Causation, with Making Connections 5.B. Who paid, what they wanted, what they got: for Portugal, Spain, and England, France and the Dutch.',
       notes: {
         minutes: 2,
@@ -155,8 +155,8 @@ window.BEHISTORICAL_TEACHING = {
           'Circulate for students who sort by state (Portugal, Spain, the northern states), not just by explorer.',
           'The three questions at the bottom are the First & 10 capture and reach Canvas through Gather All My Work.'
         ],
-        ask: 'Which sentence explains why a ruler, not a merchant, paid?',
-        listenFor: 'A voyage might take years and come back with nothing; only a ruler had the ships, money and power to keep paying.'
+        ask: 'Which sentence explains how rulers backed the voyages?',
+        listenFor: 'Sometimes they paid for the ships; sometimes they gave an explorer permission and rights in return for a share.'
       }
     },
     {
@@ -184,39 +184,41 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'state', kind: 'split-mirror', eyebrow: 'The Role of States',
-      kc: 'KC-4.1.III', title: 'Why a ruler, not a merchant, paid.',
-      footer: 'Rulers paid in ships and money, and in promises that cost nothing up front.',
+      kc: 'KC-4.1.III', title: 'Two ways a ruler backed a voyage.',
+      footer: 'Either way, the ruler set the terms and claimed the results.',
       template: {
-        left: { name: 'A merchant' },
-        right: { name: 'A ruler' },
+        left: { name: 'Paid for it' },
+        right: { name: 'Licensed it' },
         rows: [
-          { label: 'Money', left: 'Enough for one cargo', right: 'Taxes from a whole kingdom' },
-          { label: 'Risk', left: 'One lost voyage could ruin him', right: 'Could pay for voyage after voyage' },
-          { label: 'Time', left: 'Needs a profit soon', right: 'Could wait years for a route' },
-          { label: 'Can offer', left: 'A share of one cargo', right: 'Titles, land to govern, the sole right to a trade' }
+          { label: 'Example', left: 'Isabella and Ferdinand, for Columbus, 1492', right: 'Henry VII of England, for Cabot, 1496' },
+          { label: 'Who paid', left: 'The crown, with help from backers', right: 'Cabot and his backers' },
+          { label: 'Ruler gave', left: 'Ships, money, titles, a share', right: 'Permission to sail and claim land' },
+          { label: 'Ruler got', left: 'Most of the profit and the new lands', right: 'A fifth of the profit, and the claims' }
         ]
       },
       notes: {
         minutes: 3,
         land: [
-          'This is Learning Objective B: the role of states. The state paid, and it wrote the terms.',
+          'This is Learning Objective B: the role of states. The CED says "state-supported" and "under ... sponsorship," not "paid for by rulers alone," and the sources show both kinds.',
+          'Henry VII\'s letters patent (5 March 1496) let Cabot sail "at their own proper costs and charges" and gave the king "the fifth part of the whole capital gained." Portugal did the same in 1469, leasing the Guinea trade to the merchant Fernão Gomes on condition that he explore a hundred leagues of new coast a year.',
+          'The Columbus contract (next Spain slide) is the other kind: the crown paid most of the cost, with the town of Palos ordered to supply two ships and Columbus\'s backers paying part.',
           'A royal monopoly is the crown\'s sole right to a trade. Portugal\'s crown ran the pepper trade that way through its trading house in Lisbon, the Casa da Índia.',
-          'Rulers had other motives too, spreading Christianity and beating rival kingdoms among them. The CED\'s objective for this topic is the economic one, and the trade is what kept the money coming. Do not teach "God, Glory, and Gold" as the answer; it names three categories and explains nothing.'
+          'Rulers had other motives too, spreading Christianity and beating rival kingdoms among them. Do not teach "God, Glory, and Gold" as the answer; it names three categories and explains nothing.'
         ],
-        ask: 'Why could a ruler wait years for a voyage to pay off when a merchant could not?',
-        listenFor: 'A ruler had a whole kingdom\'s taxes; one failure would not ruin the crown.',
+        ask: 'Why would a king license a voyage instead of paying for it?',
+        listenFor: 'He risks nothing, and still gets a share and a claim if it works.',
         ap: 'Causation: the state\'s role is a cause of exploration, not just background.'
       }
     },
     {
       phase: 'portugal', kind: 'timeline', eyebrow: 'Portugal · Step by Step',
       kc: 'KC-4.1.III.A', title: 'Each return made the next voyage easier to pay for.',
-      footer: 'Spacing is true to scale: about eighty years, step by step.',
+      footer: 'Spacing is true to scale: more than seventy years, step by step.',
       template: {
         range: [1410, 1515], tick: 15,
         events: [
           { year: 1415, label: '1415', text: 'Portugal captures Ceuta in North Africa.' },
-          { year: 1444, label: '1440s', text: 'Gold, ivory and enslaved Africans brought back from the West African coast.' },
+          { year: 1444, label: '1440s', text: 'Caravels reach West Africa; gold, ivory and enslaved Africans brought back.' },
           { year: 1482, label: '1482', text: 'Fort at Elmina to control the gold trade.' },
           { year: 1498, label: '1498', text: 'Da Gama reaches Calicut in India.' },
           { year: 1511, label: '1510 to 1511', text: 'Forts at Goa and Malacca.' }
@@ -225,7 +227,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 3,
         land: [
-          'KC-4.1.III.A: Portuguese maritime technology and navigational skill led to more travel to and trade with Africa and Asia, and to a global trading-post empire. This is the "led to" in one picture.',
+          'KC-4.1.III.A: Portuguese maritime technology and navigational skill led to more travel to and trade with Africa and Asia, and to a global trading-post empire. Name the cause out loud: light caravels, charts made voyage by voyage, and the volta do mar from 4.1. Each voyage\'s charts helped the next one go farther. The rest of the line is the "led to."',
           'Prince Henry, a son of the king, paid for the West African voyages from the 1420s. He did not go on them, and the "school of Sagres" is a legend traced to writers of the 1600s and 1700s.',
           'From the 1440s the voyages brought back enslaved Africans; a large group was sold at Lagos, Portugal, in 1444 (the chronicler Zurara). Name it plainly. The Atlantic slave trade itself is 4.4.',
           'Dias sailed around the southern tip of Africa in 1488. Da Gama left Lisbon in July 1497, reached Calicut in May 1498, and lost two of four ships and more than half his men.',
@@ -304,19 +306,19 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'spain', kind: 'compounding-stairs', eyebrow: 'Spain · The Effect',
       kc: 'KC-4.1.III.B', title: 'Interest in ocean trade snowballed.',
-      footer: 'The College Board\'s words: voyages that "dramatically increased European interest" in ocean travel and trade.',
       template: {
         steps: [
-          { label: '1492', text: 'Three ships reach the Caribbean, not Asia' },
-          { label: '1493', text: 'Columbus\'s letter printed across Europe; at least 17 ships sail' },
-          { label: '1494', text: 'Spain and Portugal split their claims at Tordesillas' },
-          { label: '1519 to 1522', text: 'Magellan and Elcano cross the Pacific and sail around the world' }
+          { label: '1492', text: 'Three ships sail west' },
+          { label: '1493', text: 'At least 17 ships sail' },
+          { label: '1494', text: 'Tordesillas splits the claims' },
+          { label: '1519 to 1522', text: 'The Pacific crossed' }
         ]
       },
       notes: {
         minutes: 3,
         land: [
           'KC-4.1.III.B: Spanish sponsorship of Columbus and later voyages across the Atlantic and Pacific dramatically increased European interest in ocean travel and trade. The stairs show that effect.',
+          'Elcano brought one ship home in 1522; Magellan was killed in 1521 (myth slide). The 1492 fleet reached the Caribbean, not Asia.',
           'Columbus brought back little gold from the first voyage. It paid in news: his letter was printed at least six times in Latin in 1493 alone, plus Spanish and Italian editions. The second fleet was at least 17 ships and more than 1,200 people (Britannica: more than 1,300).',
           'Magellan, a Portuguese captain sailing for Spain, left in 1519 with five ships and about 270 men to reach the Spice Islands by sailing west. He was killed at Mactan in the Philippines in 1521. Elcano brought the Victoria home in 1522 with 18 men.',
           'Columbus died in 1506 still believing he had reached Asia. The conquests that followed are 4.3 and 4.4.'
@@ -380,11 +382,11 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'map', kind: 'map', eyebrow: 'The Whole Topic on One Map',
       kc: 'KC-4.1.III', title: 'Three ways to Asia, and who paid.',
-      visual: { url: '../assets/images/instructional-maps/topic-4-2.svg', alt: 'Map of routes: Portugal around Africa to India, Spain west to the Caribbean, England, France and the Dutch across the North Atlantic and toward the Arctic', credit: 'Map · BeHistorical instructional map' },
+      visual: { url: '../assets/images/instructional-maps/topic-4-2.svg', alt: 'Map of routes: Portugal around Africa to India, Spain west to the Caribbean, England, France and the Dutch across the North Atlantic and toward the Arctic' },
       notes: {
         minutes: 2,
         land: [
-          'Routes are schematic. Magellan\'s route is not drawn: it runs under the map key and off the western edge. The note at the bottom carries it.',
+          'Routes are schematic. Magellan\'s route is not drawn; the note at the bottom of the map describes it.',
           'Read it by sponsor: south and east for Portugal, west for Spain, north for everyone else.'
         ],
         ask: 'Why did the northern states sail north and not south?',
@@ -394,10 +396,10 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'pattern', kind: 'compounding-snowball', eyebrow: 'The Pattern',
       kc: 'KC-4.1.III', title: 'Every voyage that paid brought more ships.',
-      footer: 'Rulers paid. Voyages paid back. More ships sailed.',
+      footer: 'Rulers backed the voyages. Voyages paid back. More ships sailed.',
       template: {
         steps: [
-          { label: 'A ruler pays', text: 'Ships, money, and promises' },
+          { label: 'A ruler backs it', text: 'Money, ships, rights, promises' },
           { label: 'A voyage returns', text: 'With gold, spices, or news' },
           { label: 'The next is easier', text: 'More money, more ships' },
           { label: 'Rivals join', text: 'Other rulers want their own', twist: true }
@@ -442,7 +444,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         columns: [{ name: 'Portugal' }, { name: 'Spain' }, { name: 'England, France, Dutch' }],
         rows: [
-          { label: 'Who paid', cells: ['Prince Henry, then the kings', 'Isabella and Ferdinand', 'Each crown, then Dutch merchants'] },
+          { label: 'Who backed', cells: ['Prince Henry, then the kings', 'Isabella and Ferdinand', 'English and French kings; a Dutch trading company'] },
           { label: 'Wanted', cells: ['Gold, then spices, around Africa', 'Asia\'s trade, by sailing west', 'Another route to Asia, in the north'] },
           { label: 'Got', cells: ['A trading-post empire', 'The Americas, the Pacific crossed, all Europe interested', 'No route; fish, furs, claims'] }
         ],
@@ -452,6 +454,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 5,
         land: [
           'This is the slide the lesson drives toward. Show it, then hide it and have students redraw the nine cells from memory.',
+          'In row 1, England\'s king licensed Cabot rather than paying; the Dutch Republic had no king, and Hudson sailed for its trading company.',
           'Row 1 answers Learning Objective B (the role of states). Rows 2 and 3 answer Learning Objective C (economic causes and effects). Each column is one complete cause-to-effect chain.',
           'Reading across a row is the suggested skill, 5.B: how one state\'s choice connects to the next.'
         ],
@@ -464,7 +467,7 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Who paid, what they wanted, what it caused, and how it connects.',
       template: {
         weak: 'European countries explored because of God, glory, and gold.',
-        strong: '**Portugal\'s crown** paid for voyages around Africa to reach Asia\'s spices without the middlemen, and **because Portugal already held that route**, Spain\'s rulers **paid Columbus to sail west**, which led other states to sponsor voyages of their own.'
+        strong: '**Portugal\'s crown** backed voyages around Africa to reach Asia\'s spices without the middlemen, and **because Portugal already held that route**, Spain\'s rulers **paid Columbus to sail west**, which led other states to sponsor voyages of their own.'
       },
       notes: {
         minutes: 3,
@@ -503,7 +506,7 @@ window.BEHISTORICAL_TEACHING = {
           'Checkpoint 1 is not required for 4.2. Use it for early finishers or as a quick diagnostic if the room is ahead.',
           'Give feedback in the room: on an alternating block nothing carries over.'
         ],
-        ask: 'Who paid, what did they give the explorer, and what did they want back?',
+        ask: 'Who backed the voyage, what did they give the explorer, and what did they want back?',
         listenFor: 'A named ruler, a named promise (titles, a share, governorship), and a named goal.'
       }
     },
@@ -531,7 +534,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 10,
         land: [
           'The revised answer in the box is what goes to Canvas.',
-          'Checkpoint 2 asks for one Portuguese or Spanish voyage and one English, French or Dutch voyage: the sponsor, one economic cause and one economic effect for each, then one connection between them. That is both learning objectives and all four Key Concepts.',
+          'Checkpoint 2 asks for one Portuguese or Spanish voyage and one English, French or Dutch voyage: the state that backed it, one economic cause and one economic effect for each, then one connection between them. That is both learning objectives and all four Key Concepts, and it displays all three learning targets.',
           'Push students past the goal to the effect: a northern voyage that found no route to Asia still had an effect.'
         ],
         ask: 'Does each voyage have a sponsor, a cause and an effect?',
@@ -541,8 +544,8 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'close', kind: 'question', eyebrow: 'Topic 4.2 · Landing Sentence',
       kc: 'Unit 4: Learning Objective C',
-      title: 'Rulers paid. Voyages paid back. More ships sailed.',
-      subtitle: 'Rulers paid for voyages because they wanted the trade of Asia, and every voyage that paid made the next one easier to fund. Next: Columbus was looking for a route to Asia. What he started was an exchange of living things nobody planned.',
+      title: 'Rulers backed the voyages. Voyages paid back. More ships sailed.',
+      subtitle: 'Rulers backed voyages because they wanted the trade of Asia, and every voyage that paid made the next one easier to fund. Next: Columbus was looking for a route to Asia. What he started was an exchange of living things nobody planned.',
       notes: {
         minutes: 2,
         land: [
