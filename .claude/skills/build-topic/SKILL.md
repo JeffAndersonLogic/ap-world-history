@@ -1,6 +1,6 @@
 ---
 name: build-topic
-description: "Run the full BeHistorical production line for one topic, one fresh session per topic, starting, always, from the College Board CED itself (scripts/lib/ced-source/unit-N.js, never a copy of it): CED, existing-course check, ninth-grade story, spine, approval gate, First & 10 written from the approved story, then the Teaching OS deck from the same story, the other module surfaces, schedule and required-module choice, Canvas event and assignment, a claim-ledger accuracy loop with independent reviewers, audit, and verification. Use whenever Jeff says 'plan Topic 3.1', 'build 3.2', 'mirror Unit 2 for Unit 3', 'start the next topic', 'what does this topic still need', or '/build-topic'. This is the conductor: it sequences the other skills and points at the two authoring documents rather than restating them. Not for auditing an already-built topic (topic-audit), choosing pictures (presentation-images), or shipping (ship-to-main)."
+description: "Run the full BeHistorical production line for one topic, one fresh session per topic, starting, always, from the College Board CED itself (scripts/lib/ced-source/unit-N.js, never a copy of it): CED, existing-course check, ninth-grade story, spine, approval gate, First & 10 written from the approved story, then the Teaching OS deck from the same story, the other module surfaces, schedule and required-module choice, Canvas event and assignment, a claim-ledger accuracy loop with independent reviewers, audit, and verification. Runs end to end without stopping for Jeff (his standing rule of 2026-10-12): the independent reviewer loop stands in for his story and reading approvals, and the build stops once, finished, before shipping. Use whenever Jeff says 'update topic 4.2', 'plan Topic 3.1', 'build 3.2', 'mirror Unit 2 for Unit 3', 'start the next topic', 'what does this topic still need', or '/build-topic'. This is the conductor: it sequences the other skills and points at the two authoring documents rather than restating them. Not for auditing an already-built topic (topic-audit), choosing pictures (presentation-images), or shipping (ship-to-main)."
 ---
 
 # Build Topic
@@ -58,10 +58,18 @@ the four. Green tests prove plumbing, not history.
 
 `/build-topic <topic> [plan|build]`
 
-- `plan` (default when Jeff says "plan it" or "show me"): stop after Phase 4. Nothing is written
-  except the story draft.
-- `build` ("build it", "run it"): run Phases 5 to 10. Never ships. Shipping is **ship-to-main**,
-  and only when Jeff says so.
+- **Default, and what "update topic X.Y" or "build X.Y" means: run Phases 0 to 10 without
+  stopping** (Jeff, 2026-10-12). The independent reviewer loop in Phase 9 stands in for Jeff's
+  approval of the story (Phase 4) and of the First & 10 prose (Phase 5). The build stops once,
+  finished and committed on a working branch, with the Phase 10 report. Never ships: shipping
+  is **ship-to-main**, and only when Jeff says "ship it".
+- `plan` (only when Jeff says "plan it", "show me the story first" or similar): stop after
+  Phase 4 for his review. Nothing is written except the story draft. That topic's gate is then
+  his again.
+- **Ask Jeff nothing mid-build.** Every default he would otherwise be asked for is set below:
+  dates (Phase 8), required modules (Phase 8), pictures (Phase 6), approvals (Phases 4 and 5).
+  The only things that may stop a build are a missing credential for an external service, and
+  a review loop that is still finding defects after three full passes (Phase 9C).
 - **One fresh session per topic** is the default (Jeff, 2026-10-05). See "A unit, one topic per
   session" below.
 
@@ -78,9 +86,9 @@ trade for the accuracy loop. So nothing may depend on conversation memory:
   reached `main`, branch from `main`. If it has not, branch from the previous topic's working
   branch, say so in the report, and never start from a `main` that lacks it, or the two
   readings will collide when both ship.
-- **Do not start the next topic's session until the previous topic's First & 10 is approved**
-  and its fingerprint moved, because a correction to one reading can change what the next one
-  bridges from.
+- **Do not start the next topic's session until the previous topic's build has finished**
+  (its review loop passed and its reading fingerprint moved), because a correction to one
+  reading can change what the next one bridges from.
 - **Carry lessons forward through the files.** The previous topic's audit record and claim
   ledger say which defect classes turned up. Read them in Phase 0 and search this topic for
   the same classes before its reviewers run.
@@ -100,13 +108,14 @@ trade for the accuracy loop. So nothing may depend on conversation memory:
    do not drop it.
 6. **Never invent dates.** Class dates, exam dates and due dates come from Jeff or from
    `assets/data/announcements-schedule.js`.
-7. **Teaching calls are Jeff's; flagged facts do not stop the build.** Required modules,
-   pictures, slide cuts, and anything that changes what is taught or assessed: propose with a
-   reason and let him decide. A claim you cannot verify or settle is marked NEEDS JEFF in the
-   claim ledger, left in its safest narrow form, and **listed in the final report**; the build
-   carries on around it. Only the story gate and the prose approval stop the work.
-8. **Batch questions.** Everything Jeff needs to answer for a topic goes in one message at the
-   Phase 4 gate, not one question at a time across the build.
+7. **Make the teaching calls, then report them; flagged facts do not stop the build.**
+   Required modules, pictures and slide cuts are decided in the build, each with its reason
+   in the final report, so Jeff can overrule any of them after. A claim you cannot verify or
+   settle is marked NEEDS JEFF in the claim ledger, left in its safest narrow form, and
+   **listed in the final report**; the build carries on around it.
+8. **No mid-build questions.** Anything Jeff must answer goes in the Phase 10 report. The
+   exception is a missing credential for an external service, which is stated once, worked
+   around, and listed in the report.
 
 ## Phase 0: Situation
 
@@ -189,9 +198,16 @@ claim in the story, so the story Jeff approves has already been checked.
 
 ## Phase 4: Approval gate
 
-**Commit the draft, then stop** and show Jeff the draft. The gate is satisfied by his review or
-by an explicit waiver. A blanket "go ahead" before he has seen the story is a waiver, and the
-final report must then say: **Story approval was explicitly waived for this build.**
+**Default (Jeff's standing rule, 2026-10-12): commit the draft and keep going.** Set its status
+line to `Delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12)`. The
+Phase 9 reviewers check the story against the CED source file and the scholarship, and the
+final report says: **Story and reading approval were delegated to the independent reviewer
+loop (Jeff's standing rule of 2026-10-12).**
+
+**In `plan` mode only, commit the draft, then stop** and show Jeff the draft. The gate is then
+satisfied by his review or by an explicit waiver. A blanket "go ahead" before he has seen the
+story is a waiver, and the final report must then say: **Story approval was explicitly waived
+for this build.**
 
 Approving the story is the whole gate: Jeff does not need to see a slide outline first. When
 he approves, set the draft's status line to `Approved by Jeff, <date>` and commit it. 2.4 to
@@ -224,14 +240,17 @@ written to the "First & 10 Reading Standard" in `CLAUDE.md`, which is the rule:
 6. **Clear leftovers while you are in the entry**: a stray `builderBody` about building an AI
    Coach prompt (the builder was retired 2026-08-31), and a `docTitle` module number that
    disagrees with its siblings.
-7. **Show Jeff the reading.** Story approval in Phase 4 is not approval of the prose. Build
-   the deck while he reads it, from the same story, and fold his prose corrections into both.
+7. **The prose is approved by the Phase 9 review loop** (Jeff's standing rule, 2026-10-12),
+   not by Jeff. Build the deck from the same story, and fold every reviewer correction into
+   both the reading and the deck.
 8. **Mind the shared fingerprint.** `readings-golden.js` pins the **whole**
    `reading-content/unit-N.js` file to one approved hash (`APPROVED_UNIT3_REWRITE_BLOB` for
    Unit 3), so a new hash also re-approves every other topic's text in that file. Before moving
    it, prove with `git diff` that only this topic's entry changed since the last approved
-   commit, then update the hash with a dated comment naming the topic Jeff approved, and fix
-   the comment's description if it still names an older approval.
+   commit, then update the hash with a dated comment naming the topic, the review passes it
+   went through, and "approved under Jeff's standing rule of 2026-10-12", and fix the comment's
+   description if it still names an older approval. Move it **after** the Phase 9 loop, so the
+   fingerprint records the reviewed prose rather than the first draft.
 
 ## Phase 6: Assets and visual plan
 
@@ -240,8 +259,21 @@ skill for uploaded pictures and to stage any new Commons candidates for verifica
 slide template by the shape of the idea (`teacher/slide-templates.html`). AI pictures carry
 exactly `Historical Reconstruction - AI Generated` and never appear in the Evidence Lab.
 
-**If Jeff has not uploaded pictures yet, do not block and do not guess filenames.** Give him a
-shopping list, one row per beat: what the object is, its date and maker, where it is held,
+**Pictures are sourced in the build, not waited for** (Jeff, 2026-10-12). For each beat that
+needs one, in this order: (1) a picture already verified in the repo; (2) a real historical
+object, painting or map from Wikimedia Commons, staged and verified with
+`scripts/source-evidence-images.js` and read against its caption with `--describe`;
+(3) **if `GEMINI_API_KEY` is set in the environment**, an AI reconstruction generated from a
+prompt written to the standard in `docs/TOPIC-4-1-IMAGE-PROMPTS.md`, checked by eye against its
+"check before use" list, saved to `assets/images/topics/X-Y/`, and labeled
+`Historical Reconstruction - AI Generated`. Without a key, AI pictures are skipped, the prompts
+are saved to `docs/TOPIC-X-Y-IMAGE-PROMPTS.md`, and the report says so. A real object outranks
+an AI scene wherever one exists. **Vary the slide templates** across the deck by the shape of
+each idea, and reuse a template only where the shape repeats.
+
+If no picture can be verified for a beat, do not block and do not guess filenames. Leave
+`url` empty so the local artwork shows, and list the beat in the report as a shopping-list
+row: what the object is, its date and maker, where it is held,
 which beat and claim it carries, and anything to watch for (a modern photograph of an old
 building, a later copy, a European imagining of an Asian ruler). Build with pictures already
 verified in the repo, or leave `url` empty so the local artwork shows, and wire his uploads in
@@ -298,12 +330,17 @@ opening section), it is fixed here, inside this topic's build, as the unit story
 
 ## Phase 8: Schedule, required modules and Canvas
 
-**Blocked until Jeff gives class dates.** If the topic has none, stop after listing what this
-phase will need. Do not guess.
+**Dates default to the next class pair** (Jeff, 2026-10-12): the next Green day and the next
+Silver day after the last scheduled topic. A school day is known only when Jeff has named it
+or it is already in `assets/data/announcements-schedule.js` (topic days, `homeworkDue` lines,
+assessment dates); 4.1's homework lines name Green Friday 2026-10-30 and Silver Monday
+2026-11-02. If the next class pair is not known that way, build without schedule entries and
+list the dates as the one open item in the report. Never invent a school day.
 
 1. **Schedule.** Add the topic's Green and Silver days to `assets/data/announcements-schedule.js`.
-   - Required modules are a teaching call about one 90-minute block. Propose a list with a
-     reason for each, and let Jeff decide. Both days carry the same `modules` list. With the
+   - Required modules are chosen in the build (Jeff, 2026-10-12): pick the set this topic's
+     story needs in one 90-minute block, give the reason for each in the report, and account
+     for anything else on that day (a quiz in the same block argues for fewer). Both days carry the same `modules` list. With the
      proposal, report the authored minutes against the 80-minute budget (plus a 5-minute
      reserve) and the count of teacher-launched activities against 5 to 7, from the
      2026-09-15 decision in AndersonLogic-OS. Report them; do not enforce them: Jeff declined
@@ -440,14 +477,16 @@ fix can break something nearby. Repeat until a full pass turns up no supported d
 ledger row has a status. Green tests, fatigue and "probably fine" are not stopping conditions.
 Neither is hedging until a report goes quiet. The defect definition is what keeps this from
 running forever on style objections. **Safety valve:** if three full passes in a row still find
-supported defects, stop and tell Jeff, because something systemic is wrong (the story, a source
-the topic leans on, or a renderer) and another pass will not fix it.
+supported defects, fix what they found, stop the loop, and lead the report with it, because
+something systemic may be wrong (the story, a source the topic leans on, or a renderer) and
+another pass will not fix it. Say plainly whether the third pass was trending down to small
+items (4.1: 38, 25, then 10 defects, no new myths after pass 1) or still finding big ones.
 
 ### 9D. Technical verification
 
-1. `npm test`. It names every generated file that drifted. A First & 10 edit also fails
-   `readings-golden.js`, **by design** (see Phase 5, step 8). Do not quiet it. Until Jeff has
-   approved the reading, report it as failing pending his review.
+1. `npm test`. It names every generated file that drifted. A First & 10 edit fails
+   `readings-golden.js` **by design** until the fingerprint moves (Phase 5, step 8), which
+   happens after the review loop.
 2. `npm i --no-save playwright-core && npm run test:browser` if a slide or template changed.
    A SKIP is not a pass. **The brand-font pass skips in the cloud sandbox and fails in CI**:
    download the woff2 files with `curl`, set `BHT_FONT_DIR`, and get a real result. 2.6 shipped
@@ -470,11 +509,13 @@ the topic leans on, or a renderer) and another pass will not fix it.
 Tell Jeff, in plain language (he is a teacher, not a programmer):
 
 1. What was built, by surface
-2. Whether the story gate was satisfied by approval or waived (with the exact waiver sentence)
+2. How the story gate was satisfied: by the reviewer loop under Jeff's standing rule (with
+   the exact sentence from Phase 4), by his approval, or by an explicit waiver
 3. The claim ledger in totals (VERIFIED, NARROWED, REMOVED, NEEDS JEFF), then **every NEEDS
    JEFF item listed** with a recommendation
 4. What each independent reviewer found, and whether the last pass was clean
-5. The required-modules decision and who made it, with the minutes and launch count
+5. The required modules and dates chosen, each with its reason, plus the minutes and launch
+   count, so Jeff can overrule them
 6. Which checks ran, which skipped, and which were shown able to fail
 7. Adjacent findings
 8. What is left for him: Canvas steps, dates still needed, pictures to upload, decisions

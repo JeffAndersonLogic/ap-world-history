@@ -200,6 +200,7 @@ The gate is satisfied in one of two ways:
 
 1. **Reviewed approval:** Jeff approves the story and memorable spine, either explicitly or through the normal collaborative review that produced the final version.
 2. **Explicit waiver:** Jeff directly instructs the system to proceed without story approval.
+3. **Standing delegation (since 2026-10-12):** for a topic build Jeff starts with "update topic X.Y" or "build X.Y", the independent reviewer loop stands in for his approval of the story and of the First & 10 prose. The reviewers check the story against the CED source file and the scholarship before anything is shipped, and the final build report says: **Story and reading approval were delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12).** Jeff can still ask to see any story first, and then the gate is his again for that topic.
 
 "Run it" after the story has already been reviewed does not require a redundant approval question.
 

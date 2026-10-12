@@ -21,9 +21,11 @@ this repository, the unit story maps included.
   the copy, and never carry it into the story.
 - **If a unit has no `scripts/lib/ced-source/unit-N.js` yet, transcribe it from the PDF
   before drafting that unit's first story.** Never draft from a copy instead.
-- **The order after the story is fixed:** Jeff approves the story, then the First & 10 is
+- **The order after the story is fixed:** the story is approved, then the First & 10 is
   written from the approved story, then the teacher presentation is built from the same
-  story. Everything else follows those.
+  story. Everything else follows those. Since 2026-10-12 "approved" means passed by the
+  independent reviewer loop, not by Jeff, unless he asks to see the story first; see the
+  next section.
 - **It is enforced by machine.** `scripts/test/ced-source.test.js`, in the offline suite,
   fails the push when the lesson data, the unit contract, the story map or a story draft
   disagrees with the CED source file, and carries negative controls that prove each check
@@ -42,7 +44,7 @@ The locked production line is:
 
 Do not start by cloning an old deck, counting slides, or searching for images. The CED, read from `scripts/lib/ced-source/unit-N.js` and never from a copy, decides what students must learn; the ninth-grade story decides how they encounter it. Organizing claims follow the history rather than a fixed count.
 
-The story approval gate must be satisfied before implementation, either by reviewed approval or by Jeff explicitly waiving the gate. If waived, say so in the final build report.
+**Standing rule since 2026-10-12 (Jeff): topic builds run end to end without stopping for him.** When Jeff says "update topic X.Y" or "build X.Y", the story approval gate and the First & 10 prose approval are both satisfied by the independent reviewer loop (fresh reviewers each round until a clean round or three rounds, every finding fixed or logged in the claim ledger), not by Jeff. The build stops once, finished on a working branch, with one report; it reaches students only when Jeff says "ship it". If Jeff asks to see a story first, stop there for that topic. The final build report says: **Story and reading approval were delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12).** The decision record is in AndersonLogic-OS, `04_PRODUCTS/BeHistorical/Decisions.md`.
 
 When another AI model's proposal is supplied, evaluate it independently against the CED, historical evidence, the authoring standard, and the current repository. Agreement is not a goal. Keep, modify, reject, or verify its claims when that distinction matters.
 
