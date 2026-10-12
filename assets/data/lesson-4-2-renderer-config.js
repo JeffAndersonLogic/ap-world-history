@@ -132,8 +132,8 @@
       title: 'Vasco da Gama Pillar, Malindi',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg?width=1200',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Pillar_of_Vasco_da_Gama.jpg',
-      caption: 'A monument, in a modern photograph. Da Gama\'s fleet set up a stone marker at Malindi, on the coast of Kenya, in 1498, on the way to India; the pillar has been rebuilt and repaired since. Portuguese captains carried markers like this to claim routes for their king.',
-      prompt: 'Open the picture full size. NOTICE the cross on top and where the pillar stands, on the shore. What can you INFER about who the voyage was working for, and what it was claiming? What can this monument not tell you about how the ruler of Malindi saw the Portuguese?'
+      caption: 'A monument, in a modern photograph. Da Gama\'s fleet set up a stone marker at Malindi, on the coast of Kenya, in 1498 or 1499; the pillar has been moved, rebuilt and repaired since. Portuguese captains carried markers like this to claim routes for their king.',
+      prompt: 'Open the picture full size. NOTICE the cross on top. What can you INFER about who the voyage was working for, and what it was claiming? What can this monument not tell you about how the ruler of Malindi saw the Portuguese?'
     },
     {
       title: 'Columbus Taking Possession, a Later Picture',
