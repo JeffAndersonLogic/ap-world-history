@@ -21,7 +21,7 @@ wins. The block came from the lesson they are actually sitting in.
 **College Board key concepts.**
 - Unit 4: Learning Objective A (Learning Objective): Explain how cross-cultural interactions resulted in the diffusion of technology and facilitated changes in patterns of trade and travel from 1450 to 1750.
 - KC-4.1.II (Technology and Innovation): Knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread, facilitating European technological developments and innovation.
-- KC-4.1.II.A (Technology and Innovation): The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns—all of which made transoceanic travel and trade possible. Illustrative examples: Caravel, Carrack, Fluyt, Lateen sail, Compass, Astronomical charts.
+- KC-4.1.II.A (Technology and Innovation): The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns, all of which made transoceanic travel and trade possible. Illustrative examples: Caravel, Carrack, Fluyt, Lateen sail, Compass, Astronomical charts.
 
 **Expected evidence terms.** compass, astrolabe, astronomical charts, lateen sail, caravel, carrack, latitude, dead reckoning, volta do mar, trade winds, magnetic compass, China, Islamic astronomy, currents, cross-cultural diffusion.
 
@@ -30,7 +30,7 @@ wins. The block came from the lesson they are actually sitting in.
 **Checkpoint 1 prompt.** Identify at least THREE specific maritime technologies European sailors used after c. 1450. For each one, explain what problem it solved at sea. Then name ONE new sea route these technologies made possible.
 Strong answer checklist: Name at least three specific technologies. For each, explain the problem it solved at sea. Name one new sea route the technologies made possible.
 
-**Checkpoint 2 prompt.** Name TWO tools or ideas Europe borrowed, and the older world each came from (Classical, Islamic, or Asian). Then explain how ONE new ship and ONE thing sailors learned about the winds or currents led to ships that could cross the ocean and come back. End with the result: one new sea route and what could now travel on it.
+**Checkpoint 2 prompt.** Name TWO tools or ideas Europe borrowed, and the older world each came from (Classical, Islamic, or Asian), and say how ONE of them reached Europe, for example through translators in Toledo or sailors on the Mediterranean. Then explain how ONE new ship and ONE thing sailors learned about the winds or currents led to ships that could cross the ocean and come back. End with the result: one new sea route and what could now travel on it.
 Strong answer checklist: Use two specific examples of cross-cultural knowledge or technology transfer. Explain one ship-design innovation and the problem it solved. Explain one wind/current pattern and how sailors used it to complete long voyages.
 
 ## 4.2 Exploration: Causes and Events

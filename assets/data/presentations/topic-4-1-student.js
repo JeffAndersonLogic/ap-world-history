@@ -227,7 +227,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Home",
-            "text": "Ride them home. Sailors called the loop the volta do mar."
+            "text": "Ride them home. Historians call this loop the volta do mar."
           }
         ]
       }
@@ -238,7 +238,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "",
       "kc": "KC-4.1.II.A",
       "template": {
-        "line": "To get home, sail away from land. No coast and no landmarks: only latitude, the compass and the wind.",
+        "line": "To get home, sail away from land. No coast and almost no landmarks: the compass, the wind and, more and more, latitude.",
         "visual": {
           "url": "../assets/images/topics/4-1/4.1%20-%20Volta%20do%20Mar.jpg",
           "alt": "Reconstruction of a single small sailing ship alone on a wide blue ocean under rows of white clouds, no land in sight",
@@ -304,8 +304,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "source": "Nautical archaeology"
           },
           {
-            "myth": "In 1400, Europe had the biggest ships.",
-            "evidence": "The biggest ships and longest voyages were in the Indian Ocean and China.",
+            "myth": "In the early 1400s, Europe had the biggest ships.",
+            "evidence": "The biggest ships and longest voyages were in China and the Indian Ocean.",
             "source": "Topic 2.3"
           }
         ]

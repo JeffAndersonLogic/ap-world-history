@@ -307,7 +307,7 @@ window.BEHISTORICAL_KEY_CONCEPTS = {
     },
     {
       "code": "KC-4.1.II.A",
-      "text": "The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns—all of which made transoceanic travel and trade possible."
+      "text": "The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns, all of which made transoceanic travel and trade possible."
     }
   ],
   "4.2": [

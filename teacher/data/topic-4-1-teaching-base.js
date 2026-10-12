@@ -59,7 +59,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'wind', label: 'The Wind Wheel', range: '34-37', minutes: 3, teacher: 'The one thing nobody could borrow.', students: 'Trace the loop home.', slide: 12 },
     { id: 'volta', label: 'Sailing Away to Get Home', range: '37-38', minutes: 1, teacher: 'Reconstruction: a caravel alone in open ocean.', students: 'Say why there is no land in the picture.', slide: 13 },
     { id: 'payoff', label: 'A Road Both Ways', range: '38-41', minutes: 3, teacher: 'Dias, Columbus, da Gama as proof. New patterns of trade and travel.', students: 'Name a new route and what moved on it.', slide: 14 },
-    { id: 'calicut', label: 'Calicut, 1498', range: '41-42', minutes: 1, teacher: 'Reconstruction: arriving in a busy ocean.', students: 'Count whose ships are in the picture.', slide: 15 },
+    { id: 'calicut', label: 'Calicut, 1498', range: '41-42', minutes: 1, teacher: 'Reconstruction: arriving in a busy ocean.', students: 'Say what the busy water tells you about this ocean.', slide: 15 },
     { id: 'twist', label: 'The Twist', range: '42-45', minutes: 3, teacher: 'Myth and evidence: a combination, not an invention.', students: 'Correct each myth.', slide: 16 },
     { id: 'chain', label: 'The Chain', range: '45-51', minutes: 6, teacher: 'Students redraw the cause chain from memory.', students: 'Retell the whole topic.', slide: 17 },
     { id: 'sharpen', label: 'Sharpen the Claim', range: '51-55', minutes: 4, teacher: 'Model one causal sentence.', students: 'Upgrade a weak claim.', slide: 18 },
@@ -315,7 +315,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'Out', text: 'Ride the trade winds south along Africa.' },
           { label: 'Turn away', key: true, text: 'To come home, sail away from land, west and north into open ocean.' },
           { label: 'Catch', text: 'Reach the westerlies, which blow back toward Europe.' },
-          { label: 'Home', text: 'Ride them home. Sailors called the loop the volta do mar.' }
+          { label: 'Home', text: 'Ride them home. Historians call this loop the volta do mar.' }
         ]
       },
       notes: {
@@ -328,14 +328,14 @@ window.BEHISTORICAL_TEACHING = {
         ],
         ask: 'Why does sailing away from land get you home?',
         listenFor: 'Out at sea you reach the westerlies, which blow toward Europe.',
-        ap: 'Causation: the mechanism is the combination. Latitude tells you when to turn; the ship survives the weeks; the wind carries you home.'
+        ap: 'Causation: the combination is the mechanism. The wind carries you home, the ship lasts the weeks, and latitude readings made the turn far surer.'
       }
     },
     {
       phase: 'volta', kind: 'frame-subtitle', eyebrow: 'The Volta do Mar',
       kc: 'KC-4.1.II.A',
       template: {
-        line: 'To get home, sail away from land. No coast and no landmarks: only latitude, the compass and the wind.'
+        line: 'To get home, sail away from land. No coast and almost no landmarks: the compass, the wind and, more and more, latitude.'
       },
       notes: {
         minutes: 1,
@@ -395,7 +395,7 @@ window.BEHISTORICAL_TEACHING = {
         rows: [
           { myth: 'Europeans invented the tools of ocean travel.', evidence: 'Compass from China; astrolabe from Greek and Islamic astronomy; lateen sail from the Roman Mediterranean.', source: 'Topic 4.1' },
           { myth: 'Europe got the lateen sail from Arab sailors.', evidence: 'It sailed the Mediterranean in Roman times, before Islam.', source: 'Nautical archaeology' },
-          { myth: 'In 1400, Europe had the biggest ships.', evidence: 'The biggest ships and longest voyages were in the Indian Ocean and China.', source: 'Topic 2.3' }
+          { myth: 'In the early 1400s, Europe had the biggest ships.', evidence: 'The biggest ships and longest voyages were in China and the Indian Ocean.', source: 'Topic 2.3' }
         ]
       },
       notes: {

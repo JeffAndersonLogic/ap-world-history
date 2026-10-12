@@ -1,6 +1,6 @@
 # Topic 4.1 Claim Ledger: Technological Innovations from 1450 to 1750
 
-**Status: Phase 9 review, pass 1 complete, 2026-10-12** (story stage 2026-10-11). Started with the story draft
+**Status: Phase 9 review, pass 2 complete, 2026-10-12** (story stage 2026-10-11). Started with the story draft
 (`docs/TOPIC-4-1-STORY-DRAFT.md`) so the story Jeff reviews has already been checked. Rows for
 the build surfaces (First & 10, deck and notes, lecture cards, checkpoints, Evidence Lab, Primary
 Source, BeSurreal, BeInTheRoom, Canvas text) are added in Phase 9.
@@ -165,8 +165,61 @@ itself. Every finding is listed with what was done about it.
 | U8 | Da Gama reached Calicut with three ships | Fixed in the note |
 | U9 | The planispheric astrolabe's star names were unconfirmed | Checked by eye on the photograph; see claims above |
 
+**Pass 2, 2026-10-12.** Two fresh reviewers, briefed independently and told not to read
+this ledger first. Reviewer 3 read for page truth, consistency, readability and CED fit;
+Reviewer 4 read for history. Pass 2 found no new myths and confirmed the pass 1 fixes; what
+it found is smaller, and several items were found by both.
+
+### Reviewer 3: page truth, consistency, readability
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | "In 1400" the biggest ships were in China and the Indian Ocean, but Zheng He sailed 1405 to 1433 | Fixed in the deck ("early 1400s"); reading sentence held for Jeff |
+| 2 | The deck's flow table told students to count ships, which the Calicut note forbids | Fixed |
+| 3 | Waldseemüller: "printed in Germany" (it was Saint-Dié, now France) and "shows lands earlier maps did not" (de la Cosa 1500, Cantino 1502 already do) | Fixed: first map to name America and draw it apart from Asia |
+| 4 | BeInTheRoom: the coastal return option said the trade winds oppose a ship "most of the way" from the Cape | Fixed: the southeast trades help at first; the northeast trades and Canary Current oppose it from West Africa north |
+| 5 | The source note misquoted Ravenstein's "600 leagues" | Fixed: "some 300 leagues between August 18 and 22", his own figure |
+| 6 | Checkpoint 2 asked where a tool came from but not how it traveled (the "cross-cultural interactions" half of the learning objective) | Fixed: the prompt now asks how ONE tool reached Europe. Pass 1 had declined this; a second reviewer raising it independently, plus the CED's own wording, tipped it |
+| 7 | "How long ocean voyages became possible" reads as duration | Fixed |
+| 8 | Held patch: the kamal sentence was a broken list and never said what a kamal is | Fixed in the held patch |
+| 9 | The live reading contradicts the deck until the held patch lands | Open until Jeff approves the patch |
+| 10 | Lecture cards were the densest student text in the topic | Fixed: six sentences rewritten; Checkpoint 2 card description and success criterion 2 too |
+| 11 | Reading: a vague "those translators" and a 70-word BeReady sentence | Fixed in the held patch |
+| 12 | eBook jargon ("cashing in", "reconnaissance vehicle", "optimized for cargo"); "no landmarks at all" | Fixed |
+| 13 | The config's Key Concept quote kept the CED's em dash | Fixed: comma, matching the lesson data |
+| 14 | Asset header said "two small faults", the note lists three | Fixed |
+| U | Roselli "before the Atlantic voyages"; BeInTheRoom description overstated what the interpreter knew; map title differed from the module title; Ptolemy's two books could merge | All fixed |
+| U | BeInTheRoom is set at a royal council (leans toward 4.2) | Kept: the central question and every decision are about technology and winds |
+| U | Q3 and Checkpoint 2 ask "what could now travel" and the reading names no goods | Kept on purpose: goods and motives are 4.2 |
+
+### Reviewer 4: history
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | Ravenstein misquote | Fixed (same as Reviewer 3, #5) |
+| 2 | Coastal return winds; Dias actually came home along the coast | Fixed; the option no longer says the winds oppose the whole way. Not added as a hint inside the option, because it would steer students to one answer |
+| 3 | Waldseemüller place of printing | Fixed |
+| 4 | The Serrão picture shows a later rig (square foresail) than the lateen-only caravel the card describes | Fixed: both captions say so |
+| 5 | "The loop only worked with latitude readings": the volta was sailed by the 1440s and 1450s, before documented latitude readings (quadrant c. 1460, astrolabe 1480s) | Fixed in the deck and eBook ("grew far more reliable"); reading sentence held for Jeff |
+| 6 | eBook: "China stopped sailing" (only the Ming treasure fleets stopped) | Fixed |
+| 7 | eBook "How we know" claimed plotted return tracks that do not exist | Fixed: reconstructed from scattered evidence |
+| 8 | eBook: voyages "look like right angles on a map" | Fixed: landfall by running along a known latitude |
+| 9 | "In 1400" | Fixed (same as Reviewer 3, #1) |
+| 10 | eBook "no landmarks" vs the patched reading's "a few islands" | Fixed |
+| 11 | Apply the held patch (kamal, fluyt) | Waiting on Jeff |
+| U | "Portuguese sailors called this loop the volta do mar": the period terms were the volta da Guiné or da Mina | Narrowed to "historians call" in the deck and eBook; reading sentence held for Jeff |
+| U | A league is roughly three miles | Fixed: about three and a half; the fathom figure is now attributed to Ravenstein |
+| U | Portuguese secrecy | Narrowed further in the eBook ("how strict that control was is debated") |
+| U | Zacuto's 1496 almanac was Vizinho's Latin adaptation | Kept in the reading as "Zacuto's almanac", the usual name; the eBook gives the 1470s composition. Listed here so it is visible |
+| U | Caravel tonnage ranges vary | Kept: the eBook's 50 to 70 tons is a common range |
+| U | Whether Dias's offshore swing was deliberate | Kept: the scenario offers it as a choice, not a fact |
+
+Reviewer 4 independently confirmed the MHS 52528 astrolabe's date (early 1500s) and its
+Alramech star name in the Oxford History of Science Museum catalogue.
+
 ### Changes waiting on Jeff
 
-Four sentences in the approved First & 10 are wrong or overclaim (Reviewer 2 #4, #14, U6, U7).
-The corrected sentences are written but **not applied**, because the reading is guarded by
-its approval fingerprint and changing it re-opens approval. They go in when Jeff approves them.
+Nine places in the approved First & 10 are wrong, overclaim or read badly (pass 1: Reviewer 2
+#4, #14, U6, U7; pass 2: Reviewer 3 #1, #8, #11 and Reviewer 4 #5, U). The corrections are
+written but **not applied**, because the reading is guarded by its approval fingerprint
+and changing it re-opens approval. They go in when Jeff approves them.

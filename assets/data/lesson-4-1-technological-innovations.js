@@ -60,7 +60,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Technology and Innovation"
     },
     {
-      criteria: "I can give a specific example of knowledge or technology from the Classical, Islamic, or Asian world (e.g., the compass, the lateen sail, or Arabic astronomical and mathematical learning) that European navigators adopted.",
+      criteria: "I can give a specific example of knowledge or technology from the Classical, Islamic, or Asian world (for example, the compass, the lateen sail, or star tables from Islamic astronomers) that European navigators adopted.",
       kc: 'KC-4.1.II',
       theme: "Technology and Innovation"
     },
@@ -100,9 +100,9 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Finding Your Way: Compass, Astrolabe, and Latitude Navigation",
         bullets: [
-          "The **magnetic compass** was used at sea in China by about 1100 and was known in Europe by about 1190; historians still debate how it traveled west. It gave sailors a reliable indicator of direction regardless of weather. In the open Atlantic, where clouds could obscure stars for days, knowing north from south was essential for maintaining course. The compass did not tell sailors where they were; it told them which way they were going, a crucial but partial solution to the navigation problem.",
-          "The **astrolabe** allowed sailors to measure the angle of the sun or a star above the horizon, determining **latitude**, how far north or south of the equator a ship had traveled. The astrolabe began as a Greek idea and was refined over centuries by astronomers in the Islamic world. In the 1480s Portuguese pilots adapted a simple, heavy version, the mariner's astrolabe, for use at sea. With latitude measurements, a navigator could follow a known parallel eastward or westward, knowing they were on a consistent course.",
-          "**Dead reckoning**, calculating position by tracking known speed, direction, and elapsed time, provided a working method for estimating position between direct stellar or solar observations. Combined with compass direction and astrolabe readings, dead reckoning gave navigators enough information to make extended oceanic voyages survivable.",
+          "The **magnetic compass** was used at sea in China by about 1100 and was known in Europe by about 1190; historians still debate how it traveled west. It showed which way the ship was heading, even under clouds. In the open Atlantic, clouds could hide the stars for days, so knowing north from south kept a ship on course. But the compass did not tell sailors where they were, only which way they were going. It solved half the problem.",
+          "The **astrolabe** allowed sailors to measure the angle of the sun or a star above the horizon, determining **latitude**, how far north or south of the equator a ship had traveled. The astrolabe began as a Greek idea and was refined over centuries by astronomers in the Islamic world. In the 1480s Portuguese pilots adapted a simple, heavy version, the mariner's astrolabe, for use at sea. Once a pilot knew the latitude of a place, he could sail north or south until he reached it, then turn and sail straight east or west along that line.",
+          "**Dead reckoning** means guessing your position from your speed, your direction and how long you have sailed. Pilots used it between sun and star readings. Together, the compass, the astrolabe and dead reckoning told a pilot enough to survive weeks out of sight of land.",
           "A noon sun reading only gives latitude if the pilot knows where the sun should be that day, so pilots carried **astronomical charts**: tables of the sun's position for each day of the year. Those tables came from a long tradition of Islamic and Jewish astronomy; in 1496 Abraham Zacuto's almanac was printed in Portugal and carried on Portuguese voyages. The **quadrant**, and later the **cross-staff**, gave pilots other ways to measure the height of the sun or a star."
         ],
         image: {
@@ -122,7 +122,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Portuguese Caravel, Livro das Armadas, c. 1566",
-          caption: "A Portuguese caravel painted in the Livro das Armadas, a 16th-century record of the fleets sent to India. It is a later picture of the ship type, not a drawing made in the 1440s.",
+          caption: "A Portuguese caravel painted in the Livro das Armadas, a 16th-century record of the fleets sent to India. It is a later picture of the ship type, not a drawing made in the 1440s. It shows a later, larger caravel with a square sail on the foremast and lateen sails behind it; the early exploring caravels carried lateen sails only.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Caravela_de_armada_of_Joao_Serrao.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Caravela_de_armada_of_Joao_Serrao.jpg"
         }
@@ -130,9 +130,9 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Cross-Cultural Knowledge and the Ocean Environment",
         bullets: [
-          "European maritime innovation was **cumulative and cross-cultural**. The magnetic compass originated in China; the astrolabe drew on Classical and especially Islamic astronomical traditions; the lateen sail had long been used around the Mediterranean and Indian Ocean.",
-          "Sailors also needed practical environmental knowledge. Portuguese mariners learned the **volta do mar**: to get home from West Africa, they sailed away from the coast, out west and north into the open Atlantic, until they reached the westerlies that blow toward Europe. Along the coast, both the trade winds and the Canary Current pushed south, so the shortest-looking route was not the navigable one.",
-          "Ship design matched different jobs. The **caravel** paired maneuverability and lateen rigging with an ocean-capable hull; larger **carracks** carried more cargo and provisions on long voyages; and around 1600 the Dutch **fluyt** carried big cargoes with small, cheap crews.",
+          "Europe's sea tools came from many places and built up over centuries. The magnetic compass was first described in China; the astrolabe came from Greek ideas developed by astronomers in the Islamic world; the lateen sail had long been used on the Mediterranean and across the seas of the Islamic world.",
+          "Sailors also needed practical environmental knowledge. Portuguese mariners learned the **volta do mar**: to get home from West Africa, they sailed away from the coast, out west and north into the open Atlantic, until they reached the westerlies that blow toward Europe. Along the coast, both the trade winds and the Canary Current pushed south, so the shortest route home on the map was the hardest one to sail.",
+          "Ship design matched different jobs. The small **caravel** turned quickly and could handle shifting winds, and its hull could survive the open ocean; larger **carracks** carried more cargo and provisions on long voyages; and around 1600 the Dutch **fluyt** carried big cargoes with small, cheap crews.",
           "The causal chain is the Topic 4.1 job: **borrowed knowledge + improved tools + ship design + wind and current knowledge -> ships that could go out and come home -> new patterns of trade and travel**."
         ],
         image: {
@@ -177,7 +177,7 @@ window.BEHISTORICAL_LESSON = {
     intro: "The only surviving eyewitness journal of Vasco da Gama's first voyage was kept by a member of the crew whose name is not certain. In this passage the fleet leaves the Cape Verde Islands and crosses the South Atlantic far from any coast, a long loop far out into the open ocean, the same idea as the volta do mar: sail away from land to find a better wind. Read it for what the sailors did to keep track of where they were, and for how long they went without seeing land.",
     attribution: "Anonymous journal (Roteiro) of Vasco da Gama's first voyage, August to November 1497; from E. G. Ravenstein's English translation, A Journal of the First Voyage of Vasco da Gama, 1497-1499 (London: Hakluyt Society, 1898)",
     text: "On Thursday, August 3, we left in an easterly direction. On August 18, when about 200 leagues from Samtiaguo, going south, the captain-major's main yard broke, and we lay to under foresail and mainsail for two days and a night. On the 22nd of the same month, when going S. by W., we saw many birds resembling herons. On the approach of night they flew vigorously to the S.S.E., as if making for the land. On the same day, being then quite 800 leagues out at sea, we saw a whale. On Friday, October 27, the eve of St. Simon and Jude, we saw many whales, as also quoquas and seals. On Wednesday, November 1, the day of All Saints, we perceived many indications of the neighbourhood of land, including gulf-weed, which grows along the coast. On Saturday, the 4th of the same month, a couple of hours before break of day, we had soundings in 110 fathoms, and at nine o'clock we sighted the land.",
-    sourceNote: "This is a verbatim excerpt from Ravenstein's 1898 English translation, which is in the public domain. Page numbers, footnote markers and Ravenstein's bracketed explanations have been removed; nothing else has been changed. Samtiaguo is the island of Santiago in the Cape Verde Islands; a league is roughly three miles; quoquas is the journal's word for an animal Ravenstein could not identify; soundings in 110 fathoms means the crew lowered a weighted line and touched bottom about 630 feet down (a Portuguese fathom was about 5.76 feet). Ravenstein also notes that the August dates here cannot all be right: the fleet could not have sailed 600 leagues in four days, and the 800-league reckoning probably belongs to late October.",
+    sourceNote: "This is a verbatim excerpt from Ravenstein's 1898 English translation, which is in the public domain. Page numbers, footnote markers and Ravenstein's bracketed explanations have been removed; nothing else has been changed. Samtiaguo is the island of Santiago in the Cape Verde Islands; a league is roughly three and a half miles; quoquas is the journal's word for an animal Ravenstein could not identify; soundings in 110 fathoms means the crew lowered a weighted line and touched bottom about 630 feet down (Ravenstein gives a Portuguese fathom as about 5.76 feet). Ravenstein also notes that the August dates here cannot all be right: the fleet could not have covered some 300 leagues between August 18 and 22, and he suggests the 22nd may really be October 22.",
     sourceLinks: [
       { label: "Project Gutenberg: A Journal of the First Voyage of Vasco da Gama (Ravenstein, 1898)", url: "https://www.gutenberg.org/files/46440/46440-h/46440-h.htm" }
     ],
@@ -198,7 +198,7 @@ window.BEHISTORICAL_LESSON = {
 
   beInTheRoom: {
     url: '',
-    desc: "Advise the pilots of the Dias expedition, 1487: combine instruments, ship design, Atlantic wind knowledge, and what African coastal peoples knew to find a route around southern Africa and get home."
+    desc: "Advise the pilots of the Dias expedition, 1487: combine instruments, ship design, Atlantic wind knowledge, and what African coastal peoples knew about harbors, water and food to find a route around southern Africa and get home."
   }
 
 };

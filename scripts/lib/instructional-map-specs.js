@@ -803,7 +803,7 @@ module.exports = [
   {
     id: 'topic-4-1',
     code: 'Topic 4.1',
-    title: 'What Europe Knew, and How It Learned It',
+    title: "Where Europe's Sea Tools Came From",
     subtitle: 'Topic 4.1 \u00b7 Technological innovations',
     highlights: [
       { zone: 'westernEurope', label: 'IBERIAN PILOTS', tone: 'gold', legend: 'Iberia: pilots combine the tools' },

@@ -9,7 +9,7 @@
  * library from `ai: true`. Each carries C2PA metadata and no printed label or
  * generator mark, so nothing is cropped. None is evidence, and none appears in
  * the Evidence Lab. Reviewed 2026-10-12 against each prompt's "check before use"
- * list; the two small faults found are named in the slide notes:
+ * list; the small faults found are named in the slide notes:
  *
  * - coast (frame-subtitle): a lateen-rigged caravel off the desert coast of
  *   northwest Africa, against the wind. Passes its check.

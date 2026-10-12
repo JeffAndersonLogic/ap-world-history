@@ -56,7 +56,7 @@ const scenarios = [
       ]),
       D('return', 'Plan the way home', 'Once the ships round the cape, how should they get back to Lisbon?', [
         O('volta', 'Use the volta do mar again', 'Sail north, then swing far west into the open Atlantic to pick up the winds that blow toward Portugal.', 'The crew sails with the wind instead of fighting it for months.', 'The ships are out of sight of land for weeks and depend on the pilot’s latitude readings.', 'A faster trip home costs the comfort of seeing land.'),
-        O('hug', 'Fight back up the coast', 'Sail north along Africa, tacking against the wind and stopping for water.', 'Land, food and water are always close.', 'The trade winds blow against the ships for most of the way, so the trip could take months longer.', 'Staying safe near land makes the trip home slow and exhausting.'),
+        O('hug', 'Follow the coast back north', 'Sail north along Africa, stopping for water and at the Portuguese post at Mina.', 'Land, food and water are always close, and at first the southeast trade winds and the current help the ships north.', 'From West Africa north, the trade winds and the Canary Current blow against the ships, so the last part of the trip could take months.', 'Staying near land is safer, but the final leg home is slow and exhausting.'),
         O('wait', 'Wait for a change in the wind', 'Anchor at a safe harbor in southern Africa until the winds shift, then head north.', 'The crew can rest and trade for food.', 'Nobody knows when or whether the wind will change, and supplies keep shrinking.', 'Waiting avoids a hard choice but may waste the whole season.')
       ])
     ],

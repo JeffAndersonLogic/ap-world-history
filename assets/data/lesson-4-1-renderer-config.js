@@ -24,7 +24,7 @@
     {
       "code": "KC-4.1.II.A",
       "theme": "Technology and Innovation",
-      "text": "The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns—all of which made transoceanic travel and trade possible.",
+      "text": "The developments included the production of new tools, innovations in ship designs, and an improved understanding of regional wind and currents patterns, all of which made transoceanic travel and trade possible.",
       "illustrativeExamples": [
         "Caravel",
         "Carrack",
@@ -69,7 +69,7 @@
 
   lesson.beInTheRoom = {
     url: '../beintheroom/unit-4/the-cape-route-brief.html',
-    desc: 'Advise the pilots of the Dias expedition, 1487: combine instruments, ship design, Atlantic wind knowledge, and what African coastal peoples knew to find a route around southern Africa and get home.'
+    desc: 'Advise the pilots of the Dias expedition, 1487: combine instruments, ship design, Atlantic wind knowledge, and what African coastal peoples knew about harbors, water and food to find a route around southern Africa and get home.'
   };
 
   lesson.skillBuilder = {
@@ -99,10 +99,10 @@
     {
       title: 'Checkpoint 2: Borrowed Knowledge, Ship Design, Winds, and Currents',
       subtitle: 'Checks Learning Targets 2–3 and Success Criteria 2–3.',
-      cardDesc: 'Cross-cultural diffusion plus practical technologies and environmental knowledge.',
+      cardDesc: 'Borrowed tools, new ships, and what sailors learned about the wind.',
       learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Name TWO tools or ideas Europe borrowed, and the older world each came from (Classical, Islamic, or Asian). Then explain how ONE new ship and ONE thing sailors learned about the winds or currents led to ships that could cross the ocean and come back. End with the result: one new sea route and what could now travel on it.',
+      prompt: 'Name TWO tools or ideas Europe borrowed, and the older world each came from (Classical, Islamic, or Asian), and say how ONE of them reached Europe, for example through translators in Toledo or sailors on the Mediterranean. Then explain how ONE new ship and ONE thing sailors learned about the winds or currents led to ships that could cross the ocean and come back. End with the result: one new sea route and what could now travel on it.',
       responseType: 'Checkpoint 2',
       skill: 'Causation',
       terms: ['magnetic compass', 'China', 'astrolabe', 'Islamic astronomy', 'lateen sail', 'caravel', 'carrack', 'volta do mar', 'trade winds', 'currents', 'cross-cultural diffusion'],
@@ -113,7 +113,7 @@
   lesson.evidenceLab = {
     title: 'Evidence Lab: Solving the Problems of Oceanic Navigation',
     task: 'Choose TWO cards. For each, say what the object directly shows, then what it tells you about how ocean travel became possible or what it changed. Do not treat a later picture or map as an eyewitness record without saying what kind of source it is.',
-    prompt: 'Using two cards, make one claim about how long ocean voyages became possible after 1450, or what they changed. For each card, give one detail you can see, explain what it shows about tools, ships, or knowledge, and name one thing the source cannot tell you.'
+    prompt: 'Using two cards, make one claim about how it became possible to make long ocean voyages after 1450, or what those voyages changed. For each card, give one detail you can see, explain what it shows about tools, ships, or knowledge, and name one thing the source cannot tell you.'
   };
 
   lesson.images = [
@@ -121,7 +121,7 @@
       title: 'Portuguese Caravela in the Livro das Armadas, c. 1566',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Caravela_de_armada_of_Joao_Serrao.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Caravela_de_armada_of_Joao_Serrao.jpg',
-      caption: 'A Portuguese caravel, the ship of João Serrão in the 1502 fleet to India, painted in the Livro das Armadas about 1566. It is a later picture of the ship, not a drawing made at sea.',
+      caption: 'A Portuguese caravel, the ship of João Serrão in the 1502 fleet to India, painted in the Livro das Armadas about 1566. It is a later picture of the ship, not a drawing made at sea. It shows a later, larger caravel with a square sail on the foremast and lateen sails behind it; the early exploring caravels carried lateen sails only.',
       prompt: 'NOTICE the shape of the hull and the sails. What can you INFER about how this ship handled the wind? What would you need besides a picture to know how well it really sailed?'
     },
     {
@@ -135,15 +135,15 @@
       title: 'Petrus Roselli Portolan Chart, 15th Century',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/15th_century_Portolan_chart_by_Petrus_Roselli_-_Carte_marine_de_la_mer_M%C3%A9diterran%C3%A9e_et_de_la_mer_Noire.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:15th_century_Portolan_chart_by_Petrus_Roselli_-_Carte_marine_de_la_mer_M%C3%A9diterran%C3%A9e_et_de_la_mer_Noire.jpg',
-      caption: 'A 15th-century portolan chart by Petrus Roselli: a sea chart of the Mediterranean and Black Sea, with detailed coastlines and lines for compass directions. Sailors made charts like this before the Atlantic voyages.',
+      caption: 'A 15th-century portolan chart by Petrus Roselli: a sea chart of the Mediterranean and Black Sea, with detailed coastlines and lines for compass directions. Sailors made and used charts like this before and during the early Atlantic voyages.',
       prompt: 'NOTICE the coastlines and the lines crossing the sea. What can you INFER about what sailors already knew before c. 1500? Why would a chart like this be less help far out in the open Atlantic?'
     },
     {
       title: 'Waldseemüller World Map, 1507',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Waldseemuller_map_2.jpg',
-      caption: 'The 1507 world map by Martin Waldseemüller, printed in Germany. It drew in information from recent Atlantic voyages, and it shows lands across the Atlantic that earlier European maps did not.',
-      prompt: 'NOTICE the lands on the far left, across the Atlantic. What can you INFER about how the voyages changed what Europeans knew about the world? What can a map made in Germany not tell you about the voyages themselves?'
+      caption: 'The 1507 world map by Martin Waldseemüller, printed at Saint-Dié (today in France). It used reports from recent Atlantic voyages and was the first map to name America and draw it as a land separate from Asia.',
+      prompt: 'NOTICE the lands on the far left, across the Atlantic. What can you INFER about how the voyages changed what Europeans knew about the world? What can a map made in Europe, by people who never sailed, not tell you about the voyages themselves?'
     }
   ];
 })();
