@@ -799,7 +799,7 @@ window.BH_NETWORK_ATLAS = {
           "aspect": 0.6
         },
         {
-          "name": "Rail, steamship, and telegraph",
+          "name": "Steamships and telegraph",
           "frame": [
             [
               -180,
@@ -817,7 +817,7 @@ window.BH_NETWORK_ATLAS = {
                 -2.5,
                 53.45
               ],
-              "detail": "The Liverpool and Manchester Railway opened in 1830, linking commercial and industrial centers. Railways reduced some transport costs and times. This short connection is one dated railway example, not a complete network."
+              "detail": "The Liverpool and Manchester Railway opened in 1830, linking commercial and industrial centers. Railways reduced some transport costs and times. This marker locates one dated railway example, not a complete network. Use the close-up view to see its connection."
             },
             {
               "name": "Atlantic: durable telegraph link, 1866",
@@ -837,24 +837,6 @@ window.BH_NETWORK_ATLAS = {
             }
           ],
           "sets": [
-            {
-              "key": "Liverpool–Manchester railway example",
-              "color": "sea",
-              "detail": "A simplified connection between the two cities, opened in 1830. The line does not reproduce the railway’s exact track.",
-              "paths": [
-                [
-                  [
-                    -2.98,
-                    53.41
-                  ],
-                  [
-                    -2.24,
-                    53.48
-                  ]
-                ]
-              ],
-              "dash": "6 4"
-            },
             {
               "key": "Atlantic telegraph relationship",
               "color": "silk",
@@ -902,6 +884,67 @@ window.BH_NETWORK_ATLAS = {
             ]
           ],
           "aspect": 0.6
+        },
+        {
+          "name": "Railway close-up: 1830",
+          "frame": [
+            [
+              -3.3,
+              53
+            ],
+            [
+              -1.9,
+              53.8
+            ]
+          ],
+          "places": [
+            {
+              "name": "Liverpool: ports and global resources",
+              "ll": [
+                -2.98,
+                53.41
+              ],
+              "detail": "Liverpool linked British industry to overseas markets and raw materials. Cotton commerce connected manufacturing to distant agricultural labor. Port access was one advantage among several; imports and exports were embedded in unequal political and economic relationships."
+            },
+            {
+              "name": "Manchester: factories and textiles",
+              "ll": [
+                -2.24,
+                53.48
+              ],
+              "detail": "Factories concentrated machinery and workers, divided tasks, and expanded textile output. Britain’s industrial growth drew on capital, property institutions, agricultural change, workers, transport, and access to resources. Cotton supplies linked mills to global systems, including enslaved labor."
+            }
+          ],
+          "sets": [
+            {
+              "key": "Liverpool–Manchester railway example",
+              "color": "sea",
+              "detail": "Opened in 1830, this railway connected a port and an industrial center. This close-up shows a schematic connection, not the exact track or every intermediate station.",
+              "paths": [
+                [
+                  [
+                    -2.98,
+                    53.41
+                  ],
+                  [
+                    -2.24,
+                    53.48
+                  ]
+                ]
+              ],
+              "dash": "6 4"
+            }
+          ],
+          "labels": [
+            [
+              [
+                -2.6,
+                53.67
+              ],
+              "NORTHWEST ENGLAND"
+            ]
+          ],
+          "aspect": 0.65
         }
       ]
     },

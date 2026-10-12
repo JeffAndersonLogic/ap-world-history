@@ -71,6 +71,11 @@ jobs:
           npm install --no-save playwright
           npx playwright install --with-deps chromium
 
+      - name: Unit 4 and Unit 5 map interactions
+        env:
+          BH_ATLAS_SHOTS_DIR: atlas-qa
+        run: node scripts/test/unit45-atlases.browser.test.js
+
       # --strict turns a missing browser into a failure. Without it, a broken
       # install would skip every test and the job would pass green having
       # verified nothing at all.

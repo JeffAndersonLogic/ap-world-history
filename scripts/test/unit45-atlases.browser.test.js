@@ -8,7 +8,7 @@ let browser;
 const settle=page=>page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));
 async function directRoute(page){
  await page.locator('#atlas-place').selectOption('0');await settle(page);const hit=page.locator('.atlas-route-hit').first();await hit.scrollIntoViewIfNeeded();
- const q=await hit.evaluate(el=>{for(const f of [.2,.3,.4,.5,.6,.7,.8]){const p=el.getPointAtLength(el.getTotalLength()*f),q=new DOMPoint(p.x,p.y).matrixTransform(el.getScreenCTM());if(document.elementFromPoint(q.x,q.y)===el)return{x:q.x,y:q.y};}throw Error('No visible connection segment');});
+ const q=await hit.evaluate(el=>{for(const f of [.2,.3,.4,.5,.6,.7,.8]){const p=el.getPointAtLength(el.getTotalLength()*f),q=new DOMPoint(p.x,p.y).matrixTransform(el.getScreenCTM());if(document.elementFromPoint(q.x,q.y)===el)return{x:q.x,y:q.y};}throw Error('No visible connection segment: '+el.getAttribute('aria-label'));});
  await page.mouse.click(q.x,q.y);assert.equal(await page.locator('#detail-kind').textContent(),'Connection','Direct connection click');
 }
 async function audit(page,u){
@@ -53,5 +53,5 @@ let base;
    if(process.env.BH_ATLAS_SHOTS_DIR){fs.mkdirSync(process.env.BH_ATLAS_SHOTS_DIR,{recursive:true});await page.screenshot({path:path.join(process.env.BH_ATLAS_SHOTS_DIR,'unit'+u+'-'+width+'.png'),fullPage:true});}
   }
  }
- assert.deepEqual(errors,[]);console.log('PASS Units 4–5 browser: 37 views, marker keyboard selection, focus, place menus, connection legend, negative controls, responsive hubs, and iframe height.');
+ assert.deepEqual(errors,[]);console.log('PASS Units 4–5 browser: all topic views, direct clicks, marker keyboard selection, focus, place menus, connection legend, negative controls, responsive hubs, and iframe height.');
 })().catch(e=>{console.error(e);process.exitCode=1;}).finally(async()=>{if(browser)await browser.close();server.close();});
