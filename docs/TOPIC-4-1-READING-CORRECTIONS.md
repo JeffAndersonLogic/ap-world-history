@@ -1,6 +1,7 @@
-# Topic 4.1 First & 10: Corrections Waiting on Jeff
+# Topic 4.1 First & 10: Corrections (approved and applied)
 
-**Written 2026-10-12, after review passes 1 and 2.** Jeff approved the 4.1 reading on
+**Approved by Jeff and applied 2026-10-12.** Written after review passes 1 and 2; pass 3
+judged all nine accurate. Jeff approved the 4.1 reading on
 2026-10-12. Four independent reviewers then found nine places where it is wrong,
 overclaims or reads badly. The corrections below are written and tested (house style and
 CED checks pass with them applied) but are **not in the reading yet**: the reading is

@@ -83,8 +83,11 @@ const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
 // the prose on 2026-10-12 ("The reading is approved, build the deck."). A
 // comparison against the prior approved Unit 4 blob (574729..., the 2026-09-18
 // repair) shows only the 4.1 entry changed; 4.2 to 4.8 are byte-for-byte
-// unchanged.
-const APPROVED_UNIT4_REWRITE_BLOB = '7f110bcbdd0ee6b79340107272077c94fb4c6cfc';
+// unchanged. On 2026-10-12, after three independent review passes, Jeff approved
+// nine corrections to that prose ("Approved"), listed with their reasons in
+// docs/TOPIC-4-1-READING-CORRECTIONS.md; the fingerprint moved from 7f110bc...
+// and again only the 4.1 entry changed.
+const APPROVED_UNIT4_REWRITE_BLOB = 'b2880b2f87627ac93884cd5c066bd850aeff2351';
 const unit4SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-4.js');
 const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
   && gitBlobSha(fs.readFileSync(unit4SourcePath, 'utf8')) === APPROVED_UNIT4_REWRITE_BLOB;

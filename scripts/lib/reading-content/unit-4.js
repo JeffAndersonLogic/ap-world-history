@@ -62,11 +62,11 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "In Unit 2 you saw how the Indian Ocean ran on a schedule. The <span class=\"kt\">monsoon</span> winds blow from the northeast in winter and turn around to blow from the southwest in summer. A merchant could sail to East Africa, trade, wait a few months, and ride the reversed wind home. Indian Ocean sailors already used the compass and the astrolabe, and in the early 1400s the Ming admiral Zheng He led large fleets as far as East Africa."
+            "html": "In Unit 2 you saw how the Indian Ocean ran on a schedule. The <span class=\"kt\">monsoon</span> winds blow from the northeast in winter and turn around to blow from the southwest in summer. A merchant could sail to East Africa, trade, wait a few months, and ride the reversed wind home. Indian Ocean sailors already used the compass, and they measured the height of the stars with simple tools such as the kamal, a small wooden card on a knotted string. In the early 1400s the Ming admiral Zheng He led large fleets as far as East Africa."
           },
           {
             "type": "p",
-            "html": "Now stand on the coast of Portugal around 1430. The Atlantic Ocean is in front of you, and it does not work like that. Off the northwest coast of Africa, the <span class=\"kt\">trade winds</span> blow from the northeast nearly all year. Sailing south along the coast is easy. Sailing back north means fighting that same wind the whole way, and it never turns around for you. Far from the coast there are no islands to hop between and no landmarks to steer by."
+            "html": "Now stand on the coast of Portugal around 1430. The Atlantic Ocean is in front of you, and it does not work like that. Off the northwest coast of Africa, the <span class=\"kt\">trade winds</span> blow from the northeast nearly all year. Sailing south along the coast is easy. Sailing back north means fighting that same wind the whole way, and it never turns around for you. Far from the coast there are only a few scattered islands, and no landmarks to steer by."
           },
           {
             "type": "p",
@@ -85,7 +85,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Europe solved its problem mostly with tools and knowledge it did not invent, and that knowledge did not travel on its own. It moved with people: merchants on the trade networks you studied in Unit 2, and scholars in places like Toledo, a city in Spain where Christian and Jewish translators turned Arabic books, many written by Muslim scholars, into Latin. One of those books was Ptolemy's great work of Greek astronomy, which had been preserved and studied in Arabic before Europeans could read it again."
+            "html": "Europe solved its problem mostly with tools and knowledge it did not invent, and that knowledge did not travel on its own. It moved with people: merchants on the trade networks you studied in Unit 2, and scholars in places like Toledo, a city in Spain where Christian and Jewish translators turned Arabic books, many written by Muslim scholars, into Latin. One of those books was Ptolemy's great work of Greek astronomy, which scholars in the Islamic world had preserved, studied, and corrected in Arabic."
           },
           {
             "type": "p",
@@ -97,7 +97,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "A sun reading only helps if you know where the sun should be on that day, so pilots also needed <span class=\"kt\">astronomical charts</span>: tables showing where the sun and stars would be on each day of the year. Those had a family tree, too. Before those translators, Muslim and Jewish astronomers in Toledo had built tables of the sky. Astronomers working for a king of Castile built new tables on them. Then a Jewish astronomer named Abraham Zacuto produced an almanac that was printed in Portugal in 1496 and carried on Portuguese voyages."
+            "html": "A sun reading only helps if you know where the sun should be on that day, so pilots also needed <span class=\"kt\">astronomical charts</span>: tables showing where the sun and stars would be on each day of the year. Those had a family tree, too. Even before the translators got to work, Muslim and Jewish astronomers in Toledo had built tables of the sky. Astronomers working for a king of Castile built new tables on them. Then a Jewish astronomer named Abraham Zacuto produced an almanac that was printed in Portugal in 1496 and carried on Portuguese voyages."
           },
           {
             "type": "p",
@@ -128,7 +128,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">fluyt</span> came much later. Dutch shipbuilders designed it around 1600 to do one job very well: carry a large cargo with a small, cheap crew. That is what made ocean trade pay off voyage after voyage."
+            "html": "The <span class=\"kt\">fluyt</span> came much later. Dutch shipbuilders designed it around 1600 to do one job very well: carry a large cargo with a small, cheap crew. That made carrying goods by sea much cheaper."
           }
         ],
         "callout": {
@@ -147,11 +147,11 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "So to get home from West Africa, a ship did something that feels backward. Instead of fighting the wind along the coast, it sailed away from land, out west and north into the open ocean, until it reached the westerlies, and then it rode them home. Portuguese sailors called this loop the <span class=\"kt\">volta do mar</span>, roughly \"the turn of the sea.\""
+            "html": "So to get home from West Africa, a ship did something that feels backward. Instead of fighting the wind along the coast, it sailed away from land, out west and north into the open ocean, until it reached the westerlies, and then it rode them home. Historians call this loop the <span class=\"kt\">volta do mar</span>, roughly \"the turn of the sea.\""
           },
           {
             "type": "p",
-            "html": "The loop only worked with the other tools. A pilot needed latitude readings to know when to turn, and a ship that could stay at sea for weeks. That is why the College Board lists new tools, new ship designs, and knowledge of winds and currents together."
+            "html": "The loop needed a ship that could stay at sea for weeks, and it grew far more reliable once pilots could read their latitude, because then they knew when to turn. That is why the College Board lists new tools, new ship designs, and knowledge of winds and currents together."
           }
         ],
         "callout": {
@@ -174,7 +174,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Here is the twist. In 1400 the biggest ships and the longest voyages were in the Indian Ocean and China, not Europe. Europe faced a harder ocean and solved it by combining knowledge from older worlds. The breakthrough was a combination, not a European invention."
+            "html": "Here is the twist. In the early 1400s the biggest ships and the longest voyages were in the Indian Ocean and China, not Europe. Europe faced a harder ocean and solved it by combining knowledge from older worlds. The breakthrough was a combination, not a European invention."
           },
           {
             "type": "p",
@@ -187,7 +187,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "The Atlantic's wind did not turn around, so the hard part was getting home. Europe borrowed tools from older worlds (the compass from China, the astrolabe and astronomical charts from Greek and Islamic astronomy, the lateen sail from the Mediterranean and the Islamic seas), built new ships (caravel, carrack, fluyt), and learned how the Atlantic's winds and currents turn (the volta do mar). Together they made the ocean a two-way road, and new routes for trade and travel opened around Africa to Asia and across the Atlantic.",
+    "takeaway": "The Atlantic's wind did not turn around, so the hard part was getting home. Europe borrowed tools from older worlds: the compass from China, the astrolabe and astronomical charts from Greek and Islamic astronomy, and the lateen sail from the Mediterranean and the Islamic seas. It built new ships (caravel, carrack, fluyt) and learned how the Atlantic's winds and currents turn (the volta do mar). Together they made the ocean a two-way road, and new routes for trade and travel opened around Africa to Asia and across the Atlantic.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [

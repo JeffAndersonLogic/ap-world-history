@@ -258,6 +258,9 @@ then 10, with no new myths after pass 1.
 
 ### Changes waiting on Jeff
 
+**Approved by Jeff and applied, 2026-10-12.**
+
+
 Nine places in the approved First & 10 are wrong, overclaim or read badly (pass 1: Reviewer 2
 #4, #14, U6, U7; pass 2: Reviewer 3 #1, #8, #11 and Reviewer 4 #5, U). The corrections are
 written but **not applied**, because the reading is guarded by its approval fingerprint
