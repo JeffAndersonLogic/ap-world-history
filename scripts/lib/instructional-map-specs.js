@@ -849,17 +849,17 @@ module.exports = [
     // the Dutch north. Routes are schematic; Magellan's Pacific crossing runs off
     // the western edge of this world view, and under the key, so the note carries it.
     highlights: [
-      { zone: [-6, 39.5, 4.5, 3], label: 'PORTUGAL AND SPAIN', labelSide: 'above', tone: 'gold', legend: 'Portugal and Spain: royal sponsors' },
-      { zone: [2, 51.5, 6, 4], label: 'ENGLAND, FRANCE, DUTCH', labelSide: 'above', tone: 'slate', legend: 'England, France, Dutch: northern sponsors' },
+      { zone: [-5.5, 40, 4.5, 3], label: 'IBERIA', labelSide: 'left', tone: 'gold', legend: 'Iberia (Portugal and Spain): royal sponsors' },
+      { zone: [3, 53, 4, 3], label: 'NORTHERN STATES', labelSide: 'right', tone: 'slate', legend: 'Northern states (England, France, Dutch): sponsors' },
       { zone: [-62, 48, 9, 5], label: 'NORTH ATLANTIC COAST', labelSide: 'above', tone: 'sage', legend: 'North Atlantic coast: cod, furs, claims' },
       { zone: [-74, 21, 9, 4], label: 'CARIBBEAN 1492', labelSide: 'below', tone: 'plum', legend: 'Columbus reaches the Caribbean, 1492' }
     ],
     flows: [
       { from: [-9, 37], via: [[-19, 18], [-12, -5], [8, -33], [20, -36], [42, -20], [52, 0]], to: [74, 11.5], label: 'Portugal: around Africa to India, 1498' },
       { from: [-7, 36], via: [[-18, 28], [-45, 24]], to: [-71, 22.5], label: 'Spain: west across the Atlantic, 1492' },
-      { from: [-4, 51], via: [[-30, 55]], to: [-54, 50], label: 'England: Cabot, 1497' },
-      { from: [-3, 48], via: [[-35, 46]], to: [-68, 48.5], label: 'France: Cartier, 1530s' },
-      { from: [4, 55], via: [[6, 63], [22, 66.5]], to: [44, 66], label: 'Dutch: Barentsz, 1590s, toward the Arctic' }
+      { from: [-5, 51.5], via: [[-30, 55]], to: [-54, 50], label: 'England: Cabot, 1497' },
+      { from: [-4.8, 47.5], via: [[-35, 44.5]], to: [-68, 48.5], label: 'France: Cartier, 1530s' },
+      { from: [4, 56], via: [[3, 62]], to: [10, 67], label: 'Dutch: Barentsz, 1590s, north toward the Arctic' }
     ],
     points: [
       { at: [-1.3, 5.1], label: 'Elmina', note: 'Portuguese fort, 1482', side: 'left' },

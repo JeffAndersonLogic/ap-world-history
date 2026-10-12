@@ -67,8 +67,8 @@
   </g>
 
   <g id="highlights">
-    <ellipse cx="773.3" cy="280.6" rx="20.0" ry="16.7" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <ellipse cx="808.9" cy="213.9" rx="26.7" ry="22.2" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
+    <ellipse cx="775.6" cy="277.8" rx="20.0" ry="16.7" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
+    <ellipse cx="813.3" cy="205.6" rx="17.8" ry="16.7" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
     <ellipse cx="524.4" cy="233.3" rx="40.0" ry="27.8" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
     <ellipse cx="471.1" cy="383.3" rx="40.0" ry="22.2" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
   </g>
@@ -79,19 +79,19 @@
     <path class="flow" d="M768.9,300.0 C760.7,307.4 748.1,333.3 720.0,344.4 C691.9,355.6 639.3,361.6 600.0,366.7 C560.7,371.8 503.7,373.6 484.4,375.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="664.2" cy="357.8" r="17"/>
     <text class="badgenum" x="664.2" y="364.8" text-anchor="middle">2</text>
-    <path class="flow" d="M782.2,216.7 C763.0,213.0 703.7,193.5 666.7,194.4 C629.6,195.4 577.8,217.6 560.0,222.2" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <path class="flow" d="M777.8,213.9 C759.3,210.6 703.0,193.1 666.7,194.4 C630.4,195.8 577.8,217.6 560.0,222.2" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="666.7" cy="194.4" r="17"/>
     <text class="badgenum" x="666.7" y="201.4" text-anchor="middle">3</text>
-    <path class="flow" d="M786.7,233.3 C763.0,235.2 692.6,244.9 644.4,244.4 C596.3,244.0 522.2,232.9 497.8,230.6" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="644.4" cy="268.4" r="17"/>
-    <text class="badgenum" x="644.4" y="275.4" text-anchor="middle">4</text>
-    <path class="flow" d="M817.8,194.4 C819.3,187.0 813.3,160.6 826.7,150.0 C840.0,139.4 869.6,133.3 897.8,130.6 C925.9,127.8 979.3,132.9 995.6,133.3" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="856.7" cy="161.3" r="17"/>
-    <text class="badgenum" x="856.7" y="168.3" text-anchor="middle">5</text>
+    <path class="flow" d="M778.7,236.1 C756.3,238.9 691.3,253.7 644.4,252.8 C597.6,251.9 522.2,234.3 497.8,230.6" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <circle class="badge" cx="644.4" cy="252.8" r="17"/>
+    <text class="badgenum" x="644.4" y="259.8" text-anchor="middle">4</text>
+    <path class="flow" d="M817.8,188.9 C817.0,183.3 808.9,165.7 813.3,155.6 C817.8,145.4 839.3,132.4 844.4,127.8" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <circle class="badge" cx="813.3" cy="155.6" r="17"/>
+    <text class="badgenum" x="813.3" y="162.6" text-anchor="middle">5</text>
   </g>
   <g id="region-labels">
-    <text class="region halo" x="893.3" y="274.9" text-anchor="middle" fill="#1A1C1D"><tspan x="893.3" dy="0">PORTUGAL AND</tspan><tspan x="893.3" dy="25">SPAIN</tspan></text>
-    <text class="region halo" x="976.9" y="214.7" text-anchor="middle" fill="#1A1C1D"><tspan x="976.9" dy="0">ENGLAND, FRANCE,</tspan><tspan x="976.9" dy="25">DUTCH</tspan></text>
+    <text class="region halo" x="725.6" y="308.8" text-anchor="end" fill="#1A1C1D"><tspan x="725.6" dy="0">IBERIA</tspan></text>
+    <text class="region halo" x="849.1" y="212.6" text-anchor="start" fill="#1A1C1D"><tspan x="849.1" dy="0">NORTHERN STATES</tspan></text>
     <text class="region halo" x="500.4" y="156.6" text-anchor="middle" fill="#1A1C1D"><tspan x="500.4" dy="0">NORTH ATLANTIC</tspan><tspan x="500.4" dy="25">COAST</tspan></text>
     <text class="region halo" x="471.1" y="431.6" text-anchor="middle" fill="#1A1C1D"><tspan x="471.1" dy="0">CARIBBEAN 1492</tspan></text>
   </g>
@@ -118,15 +118,15 @@
   <g id="legend" transform="translate(46,721)">
     <rect x="0" y="0" width="1030" height="211" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
     <text class="small" x="18" y="28" font-weight="700">Map Key</text>
-      <rect x="18" y="38" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="56">Portugal and Spain: royal sponsors</text>
-      <rect x="18" y="71" width="40" height="23" rx="4" fill="#9FB0AE" fill-opacity=".6" stroke="#4E6260" stroke-width="3"/><text class="small" x="74" y="89">England, France, Dutch: northern sponsors</text>
+      <rect x="18" y="38" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="56">Iberia (Portugal and Spain): royal sponsors</text>
+      <rect x="18" y="71" width="40" height="23" rx="4" fill="#9FB0AE" fill-opacity=".6" stroke="#4E6260" stroke-width="3"/><text class="small" x="74" y="89">Northern states (England, France, Dutch): sponsors</text>
       <rect x="18" y="104" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="122">North Atlantic coast: cod, furs, claims</text>
       <rect x="18" y="137" width="40" height="23" rx="4" fill="#B49AA8" fill-opacity=".6" stroke="#6B4A5A" stroke-width="3"/><text class="small" x="74" y="155">Columbus reaches the Caribbean, 1492</text>
       <circle class="badge" cx="33" cy="181" r="14"/><text class="badgenum" x="33" y="187" text-anchor="middle" font-size="16">1</text><line x1="51" x2="72" y1="181" y2="181" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,175 L84,181 L72,187 Z" fill="#8C5A2B"/><text class="small" x="94" y="188">Portugal: around Africa to India, 1498</text>
       <circle class="badge" cx="533" cy="49" r="14"/><text class="badgenum" x="533" y="55" text-anchor="middle" font-size="16">2</text><line x1="551" x2="572" y1="49" y2="49" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,43 L584,49 L572,55 Z" fill="#8C5A2B"/><text class="small" x="594" y="56">Spain: west across the Atlantic, 1492</text>
       <circle class="badge" cx="533" cy="82" r="14"/><text class="badgenum" x="533" y="88" text-anchor="middle" font-size="16">3</text><line x1="551" x2="572" y1="82" y2="82" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,76 L584,82 L572,88 Z" fill="#8C5A2B"/><text class="small" x="594" y="89">England: Cabot, 1497</text>
       <circle class="badge" cx="533" cy="115" r="14"/><text class="badgenum" x="533" y="121" text-anchor="middle" font-size="16">4</text><line x1="551" x2="572" y1="115" y2="115" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,109 L584,115 L572,121 Z" fill="#8C5A2B"/><text class="small" x="594" y="122">France: Cartier, 1530s</text>
-      <circle class="badge" cx="533" cy="148" r="14"/><text class="badgenum" x="533" y="154" text-anchor="middle" font-size="16">5</text><line x1="551" x2="572" y1="148" y2="148" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,142 L584,148 L572,154 Z" fill="#8C5A2B"/><text class="small" x="594" y="155">Dutch: Barentsz, 1590s, toward the Arctic</text>
+      <circle class="badge" cx="533" cy="148" r="14"/><text class="badgenum" x="533" y="154" text-anchor="middle" font-size="16">5</text><line x1="551" x2="572" y1="148" y2="148" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,142 L584,148 L572,154 Z" fill="#8C5A2B"/><text class="small" x="594" y="155">Dutch: Barentsz, 1590s, north toward the Arctic</text>
   </g>
 
   <rect x="0" y="948" width="1600" height="52" fill="url(#paper)" opacity=".93"/>

@@ -178,7 +178,7 @@ const scenarios = [
     id: '4.2', unit: '4', topicTitle: 'Exploration: Causes and Events', file: 'the-santa-fe-bargain.html',
     title: 'The *Santa Fe Bargain*', location: 'Royal camp at Santa Fe, outside Granada', date: 'April 1492',
     lessonUrl: '../../unit-4/lesson-4-2-exploration.html',
-    alignment: { theme: 'Governance (GOV) and Economic Systems (ECN)', objective: 'Describe the role of states in the expansion of maritime exploration from 1450 to 1750. Explain the economic causes and effects of maritime exploration by the various European states.', skill: 'Causation and making connections', keyConcepts: ['KC-4.1.III', 'KC-4.1.III.B', 'State sponsorship and rivalry with Portugal'] },
+    alignment: { theme: 'Governance (GOV) and Economic Systems (ECN)', objective: 'Describe the role of states in the expansion of maritime exploration from 1450 to 1750. Explain the economic causes and effects of maritime exploration by the various European states.', skill: 'Causation and making connections', keyConcepts: ['KC-4.1.III', 'KC-4.1.III.B'] },
     premise: [
       'Granada, the last Muslim kingdom in Spain, surrendered to Queen Isabella and King Ferdinand in January 1492. Now Christopher Columbus is back at court with his plan: sail west across the Atlantic to reach Asia and its spices.',
       'Portugal has spent decades paying for voyages down the coast of Africa, and it already holds that route south. Portugal\'s king turned Columbus down because his experts said Asia was much farther west than Columbus claimed. Nobody in this room knows that two continents lie in the way.',
@@ -216,7 +216,7 @@ const scenarios = [
       ]),
       D('claims', 'Decide how to treat Portugal and new lands', 'What should the crown do about claims once the voyage finds land?', [
         O('tradefirst', 'Trade and talk first', 'Allow trade and missionaries, but no claiming land until the crown decides.', 'Contact starts with less force and more information.', 'A small crew may ignore orders, or Portugal may claim first.', 'Holding back protects Spain\'s reputation but slows it down.'),
-        O('claim', 'Claim land right away', 'Let Columbus claim lands for the crown and build forts.', 'Spain moves before Portugal can.', 'A ceremony on the beach replaces anyone\'s consent and invites violence.', 'Speed depends on ignoring the people already there.'),
+        O('claim', 'Claim land right away', 'Let Columbus claim lands for the crown and build forts.', 'Spain moves before Portugal can.', 'Claiming land with a ceremony ignores whether the people living there agree, and can lead to violence.', 'Speed depends on ignoring the people already there.'),
         O('papal', 'Ask the pope and negotiate with Portugal', 'Wait to make big claims until the pope approves and Spain and Portugal agree on a dividing line.', 'Less chance of war with Portugal.', 'The people who live in those lands still have no say.', 'An agreement between European rulers is not the same as a fair one.')
       ])
     ],

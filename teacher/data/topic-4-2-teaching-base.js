@@ -54,7 +54,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'calicut', label: 'Calicut, 1498', range: '26-27', minutes: 1, teacher: 'Reconstruction: newcomers in a busy ocean.', students: 'Say what da Gama came for.', slide: 8 },
     { id: 'posts', label: 'What Portugal Got', range: '27-29', minutes: 2, teacher: 'The trading-post empire.', students: 'Ports, not lands.', slide: 9 },
     { id: 'contract', label: 'The Contract', range: '29-32', minutes: 3, teacher: 'Santa Fe, April 1492.', students: 'Say what the rulers gave and what they wanted.', slide: 10 },
-    { id: 'spain', label: 'Interest Snowballs', range: '32-35', minutes: 3, teacher: 'Three ships, then seventeen, then the Pacific.', students: 'Name the effect the CED names.', slide: 11 },
+    { id: 'spain', label: 'Interest Grows', range: '32-35', minutes: 3, teacher: 'Three ships, then seventeen, then the Pacific.', students: 'Name the effect the CED names.', slide: 11 },
     { id: 'line', label: 'Tordesillas', range: '35-37', minutes: 2, teacher: 'Two crowns split the claims.', students: 'Say who was left out.', slide: 12 },
     { id: 'north', label: 'The Northern Crossings', range: '37-41', minutes: 4, teacher: 'England, France, Dutch.', students: 'What they looked for, what they found.', slide: 13 },
     { id: 'map', label: 'Three Ways to Asia', range: '41-43', minutes: 2, teacher: 'The whole topic on one map.', students: 'Trace each sponsor\'s route.', slide: 14 },
@@ -109,7 +109,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         questions: [
           { label: 'Topic 4.1', text: 'Why was getting home the hardest part of an Atlantic voyage?' },
-          { label: 'Topic 4.1', text: 'Name one tool Europe borrowed and the older world it came from.' },
+          { label: 'Topic 4.1', text: 'Name one tool Europe borrowed, and where it came from.' },
           { label: 'Topic 2.3', text: 'Name one good that traveled from the Indian Ocean toward Europe.' }
         ],
         turn: 'Ships could now go and come back. But a voyage cost a fortune. **Who paid for them, and what did they want?**'
@@ -188,7 +188,7 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Either way, the ruler set the terms and claimed the results.',
       template: {
         left: { name: 'Paid for it' },
-        right: { name: 'Licensed it' },
+        right: { name: 'Gave permission' },
         rows: [
           { label: 'Example', left: 'Isabella and Ferdinand, for Columbus, 1492', right: 'Henry VII of England, for Cabot, 1496' },
           { label: 'Who paid', left: 'The crown, with help from backers', right: 'Cabot and his backers' },
@@ -213,7 +213,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'portugal', kind: 'timeline', eyebrow: 'Portugal · Step by Step',
       kc: 'KC-4.1.III.A', title: 'Each return made the next voyage easier to pay for.',
-      footer: 'Spacing is true to scale: more than seventy years, step by step.',
+      footer: 'Spacing is true to scale: nearly a century, step by step.',
       template: {
         range: [1410, 1515], tick: 15,
         events: [
@@ -304,14 +304,17 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'spain', kind: 'compounding-stairs', eyebrow: 'Spain · The Effect',
-      kc: 'KC-4.1.III.B', title: 'Interest in ocean trade snowballed.',
+      phase: 'spain', kind: 'timeline', eyebrow: 'Spain · The Effect',
+      kc: 'KC-4.1.III.B', title: 'Interest in ocean trade grew fast.',
+      footer: 'Three ships in 1492, at least seventeen in 1493.',
       template: {
-        steps: [
-          { label: '1492', text: 'Three ships sail west' },
-          { label: '1493', text: 'At least 17 ships sail' },
-          { label: '1494', text: 'Tordesillas splits the claims' },
-          { label: '1519 to 1522', text: 'The Pacific crossed' }
+        range: [1490, 1525], tick: 5,
+        events: [
+          { year: 1492, label: '1492', text: 'Three ships reach the Caribbean.' },
+          { year: 1493, label: '1493', text: 'Letter printed across Europe; at least 17 ships sail.' },
+          { year: 1494, label: '1494', text: 'Tordesillas splits the claims.' },
+          { year: 1519, label: '1519', text: 'Magellan\'s fleet sails west.' },
+          { year: 1522, label: '1522', text: 'Elcano brings one ship home.' }
         ]
       },
       notes: {
@@ -355,7 +358,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'north', kind: 'split-matrix', eyebrow: 'The Northern Crossings',
       kc: 'KC-4.1.III.C', title: 'Looking for another way to Asia.',
-      footer: 'None found a route to Asia. Arctic ice blocked every way through.',
+      footer: 'None found a route to Asia. North America and Arctic ice blocked every way through.',
       template: {
         columns: [{ name: 'England' }, { name: 'France' }, { name: 'The Dutch' }],
         rows: [
@@ -382,6 +385,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'map', kind: 'map', eyebrow: 'The Whole Topic on One Map',
       kc: 'KC-4.1.III', title: 'Three ways to Asia, and who paid.',
+      subtitle: 'Not drawn: Magellan\'s fleet, which sailed on from South America across the Pacific, 1519 to 1522.',
       visual: { url: '../assets/images/instructional-maps/topic-4-2.svg', alt: 'Map of routes: Portugal around Africa to India, Spain west to the Caribbean, England, France and the Dutch across the North Atlantic and toward the Arctic' },
       notes: {
         minutes: 2,
@@ -422,9 +426,9 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'The real causes are more useful than the myths.',
       template: {
         rows: [
-          { myth: 'The Ottomans closed the spice road in 1453, so Europe had to go by sea.', evidence: 'The trade through Egypt and Venice kept running, and Portugal\'s voyages had begun decades earlier.', source: 'Historians since 1915' },
-          { myth: 'Prince Henry ran a school of navigation at Sagres.', evidence: 'He paid for voyages. The school is a legend written down centuries later.', source: 'Topics 4.1 and 4.2' },
-          { myth: 'Magellan sailed around the world.', evidence: 'He was killed in the Philippines in 1521. Elcano brought the last ship home in 1522.', source: 'Topic 4.2' }
+          { myth: 'The Ottomans closed the spice road in 1453, so Europe had to go by sea.', evidence: 'The trade through Egypt and Venice kept running, and Portugal\'s voyages had begun decades earlier.', source: 'A. H. Lybyer, 1915' },
+          { myth: 'Prince Henry ran a school of navigation at Sagres.', evidence: 'He paid for voyages. No record from his time describes a school; the story was written down centuries later.', source: 'Historians of Henry' },
+          { myth: 'Magellan sailed around the world.', evidence: 'He was killed in the Philippines in 1521. Elcano brought the last ship home in 1522.', source: 'Pigafetta\'s journal of the voyage' }
         ]
       },
       notes: {
@@ -442,13 +446,13 @@ window.BEHISTORICAL_TEACHING = {
       retelling: true, phase: 'matrix', kind: 'split-matrix', eyebrow: 'The Whole Topic',
       title: 'Who paid, what they wanted, what they got.',
       template: {
-        columns: [{ name: 'Portugal' }, { name: 'Spain' }, { name: 'England, France, Dutch' }],
+        columns: [{ name: 'Portugal' }, { name: 'Spain' }, { name: 'The north' }],
         rows: [
-          { label: 'Who backed', cells: ['Prince Henry, then the kings', 'Isabella and Ferdinand', 'English and French kings; Dutch leaders, then a trading company'] },
+          { label: 'Who backed', cells: ['Prince Henry, then the kings', 'Isabella and Ferdinand', 'Kings; Dutch leaders, later a company'] },
           { label: 'Wanted', cells: ['Gold, then spices, around Africa', 'Asia\'s trade, by sailing west', 'Another route to Asia, in the north'] },
-          { label: 'Got', cells: ['A trading-post empire', 'The Americas, the Pacific crossed, all Europe interested', 'No route; fish, furs, claims'] }
+          { label: 'Got', cells: ['A trading-post empire', 'New lands; all Europe interested', 'No route; fish, furs, claims'] }
         ],
-        result: { label: 'So', text: 'Every voyage that paid made the next one easier to fund, and made rivals want their own.' }
+        result: { label: 'So', text: 'Every voyage that paid made the next easier to fund, and made rivals want their own.' }
       },
       notes: {
         minutes: 5,
@@ -466,7 +470,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'sharpen', kind: 'sharpen', eyebrow: 'Sharpen the Claim',
       footer: 'Who paid, what they wanted, what it caused, and how it connects.',
       template: {
-        weak: 'European countries explored because of God, glory, and gold.',
+        weak: 'Europeans explored for God, glory, and gold.',
         strong: '**Portugal\'s crown** backed voyages around Africa to reach Asia\'s spices without the middlemen, and **because Portugal already held that route**, Spain\'s rulers **paid Columbus to sail west**, which led other states to sponsor voyages of their own.'
       },
       notes: {
@@ -534,7 +538,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 10,
         land: [
           'The revised answer in the box is what goes to Canvas.',
-          'Checkpoint 2 asks for one Portuguese or Spanish voyage and one English, French or Dutch voyage: the state that backed it, one economic cause and one economic effect for each, then one connection between them. That is both learning objectives and all four Key Concepts, and it displays all three learning targets.',
+          'Checkpoint 2 asks for one Portuguese or Spanish voyage and one English, French or Dutch voyage: the state that backed it and what it gave, one economic cause and one economic effect for each, then one connection between them. That covers both learning objectives, KC-4.1.III, KC-4.1.III.C, and III.A or III.B depending on the voyage the student picks; the other Iberian Key Concept is carried by the First & 10 and the Skill Builder.',
           'Push students past the goal to the effect: a northern voyage that found no route to Asia still had an effect.'
         ],
         ask: 'Does each voyage have a sponsor, a cause and an effect?',

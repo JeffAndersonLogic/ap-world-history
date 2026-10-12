@@ -18,7 +18,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Topic 4.1",
-            "text": "Name one tool Europe borrowed and the older world it came from."
+            "text": "Name one tool Europe borrowed, and where it came from."
           },
           {
             "label": "Topic 2.3",
@@ -83,7 +83,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "name": "Paid for it"
         },
         "right": {
-          "name": "Licensed it"
+          "name": "Gave permission"
         },
         "rows": [
           {
@@ -113,7 +113,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "timeline",
       "eyebrow": "Portugal · Step by Step",
       "title": "Each return made the next voyage easier to pay for.",
-      "footer": "Spacing is true to scale: more than seventy years, step by step.",
+      "footer": "Spacing is true to scale: nearly a century, step by step.",
       "kc": "KC-4.1.III.A",
       "template": {
         "range": [
@@ -220,27 +220,42 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "compounding-stairs",
+      "kind": "timeline",
       "eyebrow": "Spain · The Effect",
-      "title": "Interest in ocean trade snowballed.",
+      "title": "Interest in ocean trade grew fast.",
+      "footer": "Three ships in 1492, at least seventeen in 1493.",
       "kc": "KC-4.1.III.B",
       "template": {
-        "steps": [
+        "range": [
+          1490,
+          1525
+        ],
+        "tick": 5,
+        "events": [
           {
+            "year": 1492,
             "label": "1492",
-            "text": "Three ships sail west"
+            "text": "Three ships reach the Caribbean."
           },
           {
+            "year": 1493,
             "label": "1493",
-            "text": "At least 17 ships sail"
+            "text": "Letter printed across Europe; at least 17 ships sail."
           },
           {
+            "year": 1494,
             "label": "1494",
-            "text": "Tordesillas splits the claims"
+            "text": "Tordesillas splits the claims."
           },
           {
-            "label": "1519 to 1522",
-            "text": "The Pacific crossed"
+            "year": 1519,
+            "label": "1519",
+            "text": "Magellan's fleet sails west."
+          },
+          {
+            "year": 1522,
+            "label": "1522",
+            "text": "Elcano brings one ship home."
           }
         ]
       }
@@ -281,7 +296,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "split-matrix",
       "eyebrow": "The Northern Crossings",
       "title": "Looking for another way to Asia.",
-      "footer": "None found a route to Asia. Arctic ice blocked every way through.",
+      "footer": "None found a route to Asia. North America and Arctic ice blocked every way through.",
       "kc": "KC-4.1.III.C",
       "template": {
         "columns": [
@@ -331,6 +346,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "map",
       "eyebrow": "The Whole Topic on One Map",
       "title": "Three ways to Asia, and who paid.",
+      "subtitle": "Not drawn: Magellan's fleet, which sailed on from South America across the Pacific, 1519 to 1522.",
       "visual": {
         "url": "../assets/images/instructional-maps/topic-4-2.svg",
         "alt": "Map of routes: Portugal around Africa to India, Spain west to the Caribbean, England, France and the Dutch across the North Atlantic and toward the Arctic"
@@ -375,17 +391,17 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "myth": "The Ottomans closed the spice road in 1453, so Europe had to go by sea.",
             "evidence": "The trade through Egypt and Venice kept running, and Portugal's voyages had begun decades earlier.",
-            "source": "Historians since 1915"
+            "source": "A. H. Lybyer, 1915"
           },
           {
             "myth": "Prince Henry ran a school of navigation at Sagres.",
-            "evidence": "He paid for voyages. The school is a legend written down centuries later.",
-            "source": "Topics 4.1 and 4.2"
+            "evidence": "He paid for voyages. No record from his time describes a school; the story was written down centuries later.",
+            "source": "Historians of Henry"
           },
           {
             "myth": "Magellan sailed around the world.",
             "evidence": "He was killed in the Philippines in 1521. Elcano brought the last ship home in 1522.",
-            "source": "Topic 4.2"
+            "source": "Pigafetta's journal of the voyage"
           }
         ]
       }
@@ -403,7 +419,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "name": "Spain"
           },
           {
-            "name": "England, France, Dutch"
+            "name": "The north"
           }
         ],
         "rows": [
@@ -412,7 +428,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "cells": [
               "Prince Henry, then the kings",
               "Isabella and Ferdinand",
-              "English and French kings; Dutch leaders, then a trading company"
+              "Kings; Dutch leaders, later a company"
             ]
           },
           {
@@ -427,14 +443,14 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "label": "Got",
             "cells": [
               "A trading-post empire",
-              "The Americas, the Pacific crossed, all Europe interested",
+              "New lands; all Europe interested",
               "No route; fish, furs, claims"
             ]
           }
         ],
         "result": {
           "label": "So",
-          "text": "Every voyage that paid made the next one easier to fund, and made rivals want their own."
+          "text": "Every voyage that paid made the next easier to fund, and made rivals want their own."
         }
       }
     },
@@ -444,7 +460,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "",
       "footer": "Who paid, what they wanted, what it caused, and how it connects.",
       "template": {
-        "weak": "European countries explored because of God, glory, and gold.",
+        "weak": "Europeans explored for God, glory, and gold.",
         "strong": "**Portugal's crown** backed voyages around Africa to reach Asia's spices without the middlemen, and **because Portugal already held that route**, Spain's rulers **paid Columbus to sail west**, which led other states to sponsor voyages of their own."
       }
     },

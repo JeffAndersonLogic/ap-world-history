@@ -42,7 +42,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Governance"
     },
     {
-      target: "I can explain the economic causes and effects of Portuguese and Spanish exploration, from Portugal's ships and navigation skills, the route around Africa, and the trading-post empire to Columbus and the voyages across the Atlantic and Pacific.",
+      target: "I can explain why Portugal and Spain backed voyages and what they got: Portugal's ships and navigation led it around Africa to a trading-post empire, and Spain's voyages across the Atlantic and Pacific made all of Europe more interested in ocean trade.",
       kc: 'KC-4.1.III.A; KC-4.1.III.B',
       theme: "Economic Systems"
     },
@@ -60,7 +60,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Governance"
     },
     {
-      criteria: "I can name who backed Portuguese and Spanish voyages, what they wanted, and one economic effect for each: Portugal's ships and navigation skills leading to more trade with Africa and Asia and a trading-post empire, and Spain's voyages making all of Europe more interested in ocean trade.",
+      criteria: "For a Portuguese or Spanish voyage, I can name who backed it, what they wanted, and one economic effect, such as Portugal's trading-post empire or Spain's voyages making Europe more interested in ocean trade.",
       kc: 'KC-4.1.III.A; KC-4.1.III.B',
       theme: "Economic Systems"
     },
@@ -165,7 +165,7 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "England, France, and the Dutch wanted Asia's trade too, but Portugal held the route around Africa and Spain held the route west. So they sponsored voyages across the North Atlantic, looking for another way to Asia over the top of the world.",
           "**England**'s king gave **John Cabot**, an Italian sailor, permission to sail west and claim land; Cabot and his backers paid, and in 1497 he reached the coast of North America. **France** sent Giovanni da **Verrazzano** along that coast in 1524 and **Jacques Cartier** up the St. Lawrence River in the 1530s. **Dutch** voyages under Willem Barentsz in the 1590s tried to sail around the north of Russia, and in 1609 Henry Hudson, sailing for a Dutch trading company, explored the Hudson River.",
-          "None found a sea route to Asia; Arctic ice blocked every way through. But the voyages paid in other ways: cod off Newfoundland, furs traded with Indigenous peoples along the St. Lawrence, and claims to North American coasts where these states later built colonies.",
+          "None found a sea route to Asia; North America and Arctic ice blocked every way through. But the voyages paid in other ways: cod off Newfoundland, furs traded with Indigenous peoples along the St. Lawrence, and claims to North American coasts where these states later built colonies.",
           "The pattern across all three stories: a ruler backed a voyage, a voyage came back with gold, spices, or news, the next voyage became easier to fund, and rival rulers wanted voyages of their own."
         ],
         image: {

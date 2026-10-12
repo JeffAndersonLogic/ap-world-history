@@ -44,7 +44,7 @@ module.exports = {
 
   howTo: {
     heading: 'How to Use This',
-    intro: `Section 01 is the motive, and it is the section most answers in this topic are missing. Sections 02 and 03 are the voyages with the dates the criteria ask for, section 03 also carries the Treaty of Tordesillas, and section 04 is the northern powers' response. Read 01 even if you read nothing else.`,
+    intro: `Section 01 explains why rulers backed the voyages, and it is the part most answers in this topic leave out. Sections 02 and 03 are the voyages with the dates the criteria ask for, section 03 also carries the Treaty of Tordesillas, and section 04 is the northern powers' response. Read 01 even if you read nothing else.`,
     steps: [
       `<b>01 Why a state paid:</b> the pepper margin, the crusading inheritance, and the contract Columbus signed.`,
       `<b>02 The Portuguese program:</b> more than seventy years of small steps to Calicut.`,
@@ -63,12 +63,12 @@ module.exports = {
       name: 'Why a State Paid',
       navLabel: 'Why a state paid',
       dates: 'c. 1415 to 1500 &nbsp;·&nbsp; Margin, faith, and a contract',
-      thesis: `Three motives, and each one becomes an argument rather than a slogan the moment you attach the mechanism to it. Spices were not merely valuable, they carried a specific markup collected by specific intermediaries; religion was not a general piety, it was an institution with a war behind it; and glory had a contract with a percentage in it.`,
+      thesis: `Rulers had three kinds of reasons, and each one only explains something once you say how it worked. Spices were not just valuable: middlemen added to the price at every step. Religion was not just faith: it came with a long war against Muslim states behind it. And glory came with a written contract that promised a share of the profits.`,
       parts: [
         {
           heading: 'The margin',
           blocks: [
-            { p: `Pepper grew on the Malabar coast of India and cost little there. By the time it reached a European table it had crossed the Indian Ocean, been sold at a Red Sea or Gulf port, carried overland through Mamluk Egypt or Ottoman territory, taxed at each transfer, sold again to Venetian merchants who held privileged access to those markets, and shipped to European ports. Most of those margins went to Muslim states and merchants, and the last to Venice, and the retail price at the end was a large multiple of the price at the source.` },
+            { p: `Pepper grew on the Malabar coast of India and cost little there. By the time it reached a European table it had crossed the Indian Ocean, been sold at a Red Sea or Gulf port, carried overland through Mamluk Egypt or Ottoman territory, taxed at each transfer, sold again to Venetian merchants who held privileged access to those markets, and shipped to European ports. Most of those margins went to Muslim states and merchants, and the last to Venice, and the retail price at the end was a large multiple of the price at the source. One historian's figures (M. N. Pearson): a kilo of pepper that cost 1 or 2 grams of silver where it grew cost 10 to 14 in Alexandria, 14 to 18 in Venice, and 20 to 30 elsewhere in Europe.` },
             { p: `That is the economic motive stated properly, and notice what it implies. The prize was not "spices are valuable," it was <em>cutting out the chain</em>. A European power that reached the source by sea would buy at Calicut prices and sell at Lisbon prices, capturing every margin between. It would also, as a bonus its rulers cared about, stop enriching the Muslim states and the Venetian republic that currently collected them.` },
             { p: `Historians since A. H. Lybyer in 1915 have made the necessary correction here: the Ottomans did not close the overland routes, spice prices did not jump after 1453, and no blockade forced Europe to sea. The trade continued. What drove the search was the cost and the number of hands it passed through, which is a motive of a completely different kind and a much better one to write.` }
           ]
@@ -88,7 +88,7 @@ module.exports = {
             { note: {
               kind: 'howknow',
               label: 'How we know: read the contract as a risk assessment',
-              html: `Columbus's terms look extravagant, and they are evidence of exactly how unlikely the crown thought success was. You do not promise a tenth of a hemisphere and a hereditary admiralty to someone you expect to succeed; you promise it when you doubt you will ever have to pay. The same logic explains the later fight: once the voyages did produce wealth, the Spanish crown spent decades in litigation with Columbus's heirs trying to claw those terms back. The generosity of a contract before the event, and the reluctance after it, tell you more about how the risk was perceived than any chronicler's account of royal enthusiasm.`
+              html: `Columbus's terms look extravagant, and one way to read them is as evidence of how unlikely the crown thought success was. You do not promise a tenth of a hemisphere and a hereditary admiralty to someone you expect to succeed; you promise it when you doubt you will ever have to pay. The same logic explains the later fight: once the voyages did produce wealth, the Spanish crown spent decades in litigation with Columbus's heirs trying to claw those terms back. The generosity of a contract before the event, and the reluctance after it, tell you more about how the risk was perceived than any chronicler's account of royal enthusiasm.`
             } }
           ]
         }
@@ -121,7 +121,7 @@ module.exports = {
           heading: 'Down the coast, decade by decade',
           blocks: [
             { p: `After Ceuta in <span class="num">1415</span>, Portuguese expeditions worked south along the African coast under royal patronage, most associated with Prince Henry, whose household organized and financed voyages for decades. Progress was slow and psychological as much as technical: Cape Bojador, on the Saharan coast, is traditionally said to have been passed in <span class="num">1434</span>, after years in which crews feared the sea beyond it.` },
-            { p: `The pattern repeats: sail further, plant a marker, trade where possible, come home using the volta do mar described in the Topic 4.1 chapter, and record everything. By the <span class="num">1440</span>s Portuguese ships were trading on the Senegal coast, buying gold that had previously crossed the Sahara by camel, which is the redirection the Topic 2.4 chapter flags at its end, and buying enslaved people, which is where the Atlantic slave trade begins. In <span class="num">1488</span> Bartolomeu Dias was blown around the southern tip of Africa and realized the coast now ran northeast: the ocean was connected.` },
+            { p: `The pattern repeats: sail further, plant a marker, trade where possible, come home using the volta do mar described in the Topic 4.1 chapter, and record everything. By the <span class="num">1440</span>s Portuguese ships were trading on the Senegal coast, buying gold that had previously crossed the Sahara by camel, which is the change of route the Topic 2.4 chapter points to at its end, and buying enslaved people, which is where the Atlantic slave trade begins. In <span class="num">1488</span> Bartolomeu Dias was blown around the southern tip of Africa and realized the coast now ran northeast: the ocean was connected.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -226,7 +226,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not treat Tordesillas as though it governed the world. It was an agreement between two Catholic monarchies, built on papal grants that only Catholic monarchies recognized, and it had no force at all for Protestant England and the Dutch Republic after the Reformation, still less for the Ottomans, the Mughals, the Ming or any of the peoples whose territory it purported to allocate. A French king is said to have asked to see the clause in Adam's will that divided the world between Spain and Portugal. Write it as a settlement between two claimants that shaped where they expanded, and note who ignored it, and you have the treaty and its limits in two sentences.`
+              html: `Do not treat Tordesillas as though it governed the world. It was an agreement between two Catholic monarchies, built on papal grants, and it had no force for any state that refused to accept it: Catholic France, Protestant England and the Dutch Republic after the Reformation, and still less the Ottomans, the Mughals, the Ming, or any of the peoples whose lands it claimed to divide. A French king is said to have asked to see the clause in Adam's will that divided the world between Spain and Portugal. Write it as a settlement between two claimants that shaped where they expanded, and note who ignored it, and you have the treaty and its limits in two sentences.`
             } },
             { p: `In the end the English and the Dutch reached Asia by Portugal's own route around Africa, through trading companies founded around 1600; what those companies were is where Topic 4.5 picks up.` }
           ]

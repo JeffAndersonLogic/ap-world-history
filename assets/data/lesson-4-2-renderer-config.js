@@ -102,7 +102,7 @@
       cardDesc: 'Why rulers backed ocean voyages, and how: by paying, or by granting rights.',
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Explain ONE economic reason European rulers backed ocean voyages after c. 1450. Then name ONE ruler and explain how that ruler backed a voyage: what the ruler gave (money, ships, permission, titles, or a share) and what the ruler wanted back.',
+      prompt: 'Explain ONE economic reason European rulers backed ocean voyages after c. 1450. Then name ONE ruler or royal sponsor (such as Prince Henry, or Isabella and Ferdinand) and explain how they backed a voyage: what they gave (money, ships, permission, titles, or a share) and what they wanted back.',
       responseType: 'Checkpoint 1',
       terms: ['state sponsorship', 'spice trade', 'middlemen', 'royal monopoly', 'Prince Henry', 'Isabella and Ferdinand', 'titles', 'share of profits', 'risk'],
       focus: ['Name one economic reason, explained as a mechanism, not a label.', 'Name one ruler and how that ruler backed a voyage.', 'Say what the ruler gave and what the ruler wanted back.']
@@ -113,11 +113,11 @@
       cardDesc: 'One Portuguese or Spanish voyage, one English, French, or Dutch voyage: who paid, why, and what it produced.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Pick ONE Portuguese or Spanish voyage (such as da Gama\'s or Columbus\'s) and ONE English, French, or Dutch voyage (such as Cabot\'s, Cartier\'s, or Hudson\'s). For EACH voyage, explain: (1) which state backed it, (2) one economic reason the state backed it, and (3) one economic effect it had. Last, explain how the first voyage, or the route it opened, helped lead the second state to explore.',
+      prompt: 'Pick ONE Portuguese or Spanish voyage (such as da Gama\'s or Columbus\'s) and ONE English, French, or Dutch voyage (such as Cabot\'s, Cartier\'s, or Hudson\'s). For EACH voyage, explain: (1) which state backed it and what it gave the explorer (money, ships, permission, titles, or a share), (2) one economic reason the state backed it, and (3) one economic effect it had. Last, explain how the first voyage, or the route it opened, helped lead the second state to explore.',
       responseType: 'Checkpoint 2',
       skill: 'Causation',
       terms: ['Vasco da Gama', 'Columbus', 'Magellan', 'Elcano', 'John Cabot', 'Jacques Cartier', 'Henry Hudson', 'state sponsorship', 'trading-post empire', 'Treaty of Tordesillas', 'route to Asia', 'cod fishing', 'fur trade', 'economic effect'],
-      focus: ['Use one Iberian voyage and one northern voyage, each with the state that backed it.', 'Give one economic cause and one economic effect for each.', 'Connect the two: how one state\'s voyages shaped another state\'s choice.']
+      focus: ['Use one Iberian voyage and one northern voyage, each with the state that backed it and what it gave.', 'Give one economic cause and one economic effect for each.', 'Connect the two: how one state\'s voyages shaped another state\'s choice.']
     }
   ];
 

@@ -122,3 +122,39 @@ otherwise the reason it was not taken is given.
 21. Credit chip over the map's footnote on the student slide. **Fixed:** the map slide carries no separate credit; the map names itself.
 22. Student deck does not fit a 1366x657 Chromebook screen. **Not fixed here: adjacent finding** in the shared student shell, reported to Jeff.
 23. (Found by `slide-templates.browser.test.js`, not a reviewer) the Spain staircase's step text collided with the heading in both font passes. **Fixed** by shortening the steps; the test now passes in both passes, the brand-font pass included.
+
+### Pass 2, reviewer 3 (history)
+
+1. F10 dated Cabot's permission 1497; the letters patent are 5 March 1496 (the deck and deep reading already said so). **Fixed.**
+2. Deep reading cited "the Topic 2.1 chapter" for the 1453 correction; that chapter does not contain it. **Fixed:** cited to Lybyer (1915) directly.
+3. F10 "The real reason was the cost of all those middlemen" is a sole cause, contradicted by Portugal's gold motive in the same reading. **Fixed:** "the main economic reason ... along with Portugal's hunt for West African gold"; "the main economic cause."
+4. The retelling matrix said the Dutch voyages were backed by a trading company; Barentsz's were backed by the States-General, Prince Maurice and Amsterdam (the VOC dates from 1602). **Fixed** in the cell and the note.
+5. F10 "Spain got ... a route across the Pacific"; only a westward crossing by 1522 (the return route came with Urdaneta, 1565). **Fixed:** "the first crossing of the Pacific."
+6. Pepper prices in a teacher note had no unit. **Fixed:** per kilo (Pearson, via World History Encyclopedia).
+7. Deep reading stated Portuguese route secrecy as fact for 1415 to 1500; Cortesão's secrecy thesis is accepted for João II's reign, not Henry's (Biblioteca Nacional de Portugal). **Fixed:** dated to João II from the 1480s.
+
+### Pass 2, reviewer 4 (page truth and readability)
+
+1. Evidence Lab fallback artwork missing. **Fixed for 4.2:** `build-module-art.js` run and only `unit-4/topic-4-2/` kept (evidence-01 to -04, lecture-04, refreshed module art). The builder rewrites about 600 files course-wide; that drift is reported to Jeff as an adjacent finding.
+2. Checkpoint 2 listed SC1 but did not ask what the ruler gave; SC2 asked for Portugal and Spain while the prompt asks for one. **Fixed:** the prompt asks what the state gave; SC2 is now "for a Portuguese or Spanish voyage"; the teacher note no longer claims all four Key Concepts.
+3. "Arctic ice blocked every way through" next to the French voyages; Verrazzano and Cartier were stopped by the continent. **Fixed:** "North America and Arctic ice."
+4. Cabot date. Same as reviewer 3, item 1. **Fixed.**
+5. "A Dutch trading company" for Barentsz. Same as reviewer 3, item 4. **Fixed.**
+6. The staircase drew bars for things that are not quantities. **Fixed:** replaced with a true-scale timeline.
+7. Map: Cartier started from the Britain oval; Barentsz drawn over land; labels over the wrong countries. **Fixed:** tighter ovals, short labels ("IBERIA", "NORTHERN STATES") beside their ovals, Cartier from Brittany, Barentsz north along the coast. Re-rendered and checked by eye.
+8. The map's Magellan note is too small to read on the slide. **Fixed:** the map slide's subtitle states it.
+9. Myth slide cited the lesson as its own evidence. **Fixed:** Lybyer 1915; historians of Henry; Pigafetta's journal.
+10. LT2 and SC2 were 40 to 50 words. **Fixed:** rewritten shorter.
+11. BeReady prompt wording. **Fixed.**
+12. "Licensed it" undefined. **Fixed:** "Gave permission."
+13. BeInTheRoom "A ceremony on the beach replaces anyone's consent." **Fixed:** plain rewrite.
+14. Deep reading pitched above ninth grade in How to Use This and section 01. **Fixed** in the intro and section 01 thesis; the chapter is optional and the rest stands.
+15. Deep reading card promises "the pepper price at each end"; the chapter gave none. **Fixed:** Pearson's figures added.
+16. "You promise it when you doubt you will ever have to pay" stated as fact. **Fixed:** "one way to read them."
+17. "Common mistake" box said only Catholic monarchies recognized the grants, while the closing card names Catholic France as ignoring the treaty. **Fixed:** "no force for any state that refused to accept it: Catholic France, ..."
+18. Checkpoint 1 asks for a ruler; Prince Henry was not one. **Fixed:** "ruler or royal sponsor."
+19. F10 section 5 callout labeled Making Connections teaches an effect. **Fixed:** Causation.
+20. BeInTheRoom listed a phrase as a Key Concept. **Fixed:** codes only.
+21. Timeline footer "more than seventy years" under a 1415 to 1511 span. **Fixed:** "nearly a century." Unlabeled tick marks are the timeline template's own behavior on every deck. **Not changed here.**
+22. Strike-through between the two lines of the weak claim. **Fixed** by shortening it to one line. Present-mode "The Question" subtitle touching the title's descenders and unequal face-off card heights are the shared renderer and template. **Not changed here:** the same layout ships on 4.1 and Unit 3; reported as an adjacent finding.
+23. (Found by `slide-templates.browser.test.js`) the shortened retelling matrix still collided with its heading in the brand fonts after the item 4 wording change. **Fixed** by shortening its cells; the test passes in both font passes.

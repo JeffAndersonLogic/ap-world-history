@@ -377,11 +377,11 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "None of them found a sea route to Asia. Arctic ice blocked every way through. But the voyages paid in other ways. The sea off Newfoundland was full of cod, and within a few decades dozens of French ships a year were fishing there. Along the St. Lawrence, the French traded with Indigenous peoples for furs, and the <span class=\"kt\">fur trade</span> grew. And each state claimed North American coasts where it would later build colonies."
+            "html": "None of them found a sea route to Asia. The land of North America and the Arctic ice blocked every way through. But the voyages paid in other ways. The sea off Newfoundland was full of cod, and within a few decades dozens of French ships a year were fishing there. Along the St. Lawrence, the French traded with Indigenous peoples for furs, and the <span class=\"kt\">fur trade</span> grew. And each state claimed North American coasts where it would later build colonies."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Making Connections",
+          "label": "AP Thinking, Causation",
           "raw": "<p><strong>A voyage can miss its goal and still have an effect.</strong> The northern crossings failed to find a route to Asia, but they produced fish, furs, and land claims. When you explain an effect, say what the voyage actually produced, not just what it was looking for.</p>"
         }
       },
