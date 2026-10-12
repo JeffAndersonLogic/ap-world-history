@@ -1729,7 +1729,8 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Finish Checkpoint 2, and any other required 3.4 module you did not complete in class. Then review Topics 3.1 to 3.4 for the Unit 3 Quiz.', due: 'Wednesday, October 28' }
       ],
-      homeworkDue: 'Wednesday, October 28'
+      homeworkDue: 'Wednesday, October 28',
+      dueDate: '2026-10-28'
     },
     /* 2026-10-27  <-  lesson-3-4-comparison.js */
     {
@@ -1756,7 +1757,62 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Finish Checkpoint 2, and any other required 3.4 module you did not complete in class. Then review Topics 3.1 to 3.4 for the Unit 3 Quiz.', due: 'Thursday, October 29' }
       ],
-      homeworkDue: 'Thursday, October 29'
+      homeworkDue: 'Thursday, October 29',
+      dueDate: '2026-10-29'
+    },
+    /* 2026-10-28  <-  lesson-4-1-technological-innovations.js */
+    {
+      date: '2026-10-28',
+      cohort: 'green',
+      unit: 'Unit 4: Transoceanic Interconnections',
+      topic: 'Technological Innovations',
+      learningTargets: [
+        { text: 'I can identify maritime technologies Europeans used after c. 1450 and explain how they changed where Europeans could travel and trade.', label: 'Technology and Innovation' },
+        { text: 'I can explain how knowledge and tools from the Classical, Islamic, and Asian worlds spread to Europe and helped Europeans build new technology.', label: 'Technology and Innovation' },
+        { text: 'I can explain how new tools, new ship designs, and a better understanding of winds and currents made it possible to sail and trade across oceans.', label: 'Technology and Innovation' }
+      ],
+      successCriteria: [
+        { text: 'I can name at least three specific maritime technologies, explain what problem each one solved at sea, and name one new sea route they made possible.', label: 'Technology and Innovation' },
+        { text: 'I can give a specific example of knowledge or technology from the Classical, Islamic, or Asian world (for example, the compass, the lateen sail, or star tables from Islamic astronomers) that European navigators adopted.', label: 'Technology and Innovation' },
+        { text: 'I can name specific ship designs (caravel, carrack, fluyt) and borrowed technologies (lateen sail, compass, astronomical charts) and explain what each contributed to ocean travel.', label: 'Technology and Innovation' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.1 module you did not complete in class.', due: 'Friday, October 30' }
+      ],
+      homeworkDue: 'Friday, October 30'
+    },
+    /* 2026-10-29  <-  lesson-4-1-technological-innovations.js */
+    {
+      date: '2026-10-29',
+      cohort: 'silver',
+      unit: 'Unit 4: Transoceanic Interconnections',
+      topic: 'Technological Innovations',
+      learningTargets: [
+        { text: 'I can identify maritime technologies Europeans used after c. 1450 and explain how they changed where Europeans could travel and trade.', label: 'Technology and Innovation' },
+        { text: 'I can explain how knowledge and tools from the Classical, Islamic, and Asian worlds spread to Europe and helped Europeans build new technology.', label: 'Technology and Innovation' },
+        { text: 'I can explain how new tools, new ship designs, and a better understanding of winds and currents made it possible to sail and trade across oceans.', label: 'Technology and Innovation' }
+      ],
+      successCriteria: [
+        { text: 'I can name at least three specific maritime technologies, explain what problem each one solved at sea, and name one new sea route they made possible.', label: 'Technology and Innovation' },
+        { text: 'I can give a specific example of knowledge or technology from the Classical, Islamic, or Asian world (for example, the compass, the lateen sail, or star tables from Islamic astronomers) that European navigators adopted.', label: 'Technology and Innovation' },
+        { text: 'I can name specific ship designs (caravel, carrack, fluyt) and borrowed technologies (lateen sail, compass, astronomical charts) and explain what each contributed to ocean travel.', label: 'Technology and Innovation' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.1 module you did not complete in class.', due: 'Monday, November 2' }
+      ],
+      homeworkDue: 'Monday, November 2'
     }
   ],
 

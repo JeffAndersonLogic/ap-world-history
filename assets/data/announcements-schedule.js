@@ -860,6 +860,30 @@ window.BEHISTORICAL_SCHEDULE = {
       // The Unit 3 Quiz is each cohort's next meeting (Jeff, 2026-10-06).
       // It is an assessment, not a topic day, so the due date is stated here.
       homeworkDue: 'Thursday, October 29'
+    },
+
+    /* ---- Topic 4.1, Technological Innovations from 1450 to 1750 ------ */
+    // Green Wednesday 2026-10-28 and Silver Thursday 2026-10-29 (Jeff,
+    // 2026-10-12), in the same block as the Unit 3 Quiz on each cohort's day.
+    // Required subset (Jeff, 2026-10-12): 02 First & 10, 06 Checkpoint 1,
+    // 07 Evidence Lab and 10 Checkpoint 2.
+    {
+      date: '2026-10-28',
+      cohort: 'green',
+      topic: '4.1',
+      modules: ['02', '06', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 4.1 module you did not complete in class.',
+      // Each cohort's next class (Jeff, 2026-10-12); no later day is on the schedule yet.
+      homeworkDue: 'Friday, October 30'
+    },
+    {
+      date: '2026-10-29',
+      cohort: 'silver',
+      topic: '4.1',
+      modules: ['02', '06', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 4.1 module you did not complete in class.',
+      // Each cohort's next class (Jeff, 2026-10-12); no later day is on the schedule yet.
+      homeworkDue: 'Monday, November 2'
     }
   ],
 
