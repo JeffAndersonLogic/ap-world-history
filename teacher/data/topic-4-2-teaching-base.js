@@ -174,7 +174,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 3,
         land: [
           'Learning Objective C asks for economic causes. This is the main one, stated as a mechanism: a sea route straight to India meant buying at the India price and selling at the Europe price.',
-          'A historian\'s figures, if a student wants a number (M. N. Pearson, as summarized by World History Encyclopedia): pepper cost about 1 to 2 grams of silver where it grew, 10 to 14 in Alexandria, 14 to 18 in Venice, and 20 to 30 elsewhere in Europe.',
+          'A historian\'s figures, if a student wants a number (M. N. Pearson, as summarized by World History Encyclopedia): a kilo of pepper cost about 1 to 2 grams of silver where it grew, 10 to 14 in Alexandria, 14 to 18 in Venice, and 20 to 30 elsewhere in Europe.',
           'The Red Sea route ran through Mamluk Egypt, which the Ottomans did not take until 1517. That is why the 1453 story fails (myth slide).'
         ],
         ask: 'If you could sail straight to India, which of these steps would you skip?',
@@ -444,7 +444,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         columns: [{ name: 'Portugal' }, { name: 'Spain' }, { name: 'England, France, Dutch' }],
         rows: [
-          { label: 'Who backed', cells: ['Prince Henry, then the kings', 'Isabella and Ferdinand', 'English and French kings; a Dutch trading company'] },
+          { label: 'Who backed', cells: ['Prince Henry, then the kings', 'Isabella and Ferdinand', 'English and French kings; Dutch leaders, then a trading company'] },
           { label: 'Wanted', cells: ['Gold, then spices, around Africa', 'Asia\'s trade, by sailing west', 'Another route to Asia, in the north'] },
           { label: 'Got', cells: ['A trading-post empire', 'The Americas, the Pacific crossed, all Europe interested', 'No route; fish, furs, claims'] }
         ],
@@ -454,7 +454,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 5,
         land: [
           'This is the slide the lesson drives toward. Show it, then hide it and have students redraw the nine cells from memory.',
-          'In row 1, England\'s king licensed Cabot rather than paying; the Dutch Republic had no king, and Hudson sailed for its trading company.',
+          'In row 1, England\'s king licensed Cabot rather than paying; the Dutch Republic had no king: Barentsz\'s voyages were backed by the States-General, Prince Maurice and the city of Amsterdam, and Hudson in 1609 by the Dutch East India Company, founded in 1602.',
           'Row 1 answers Learning Objective B (the role of states). Rows 2 and 3 answer Learning Objective C (economic causes and effects). Each column is one complete cause-to-effect chain.',
           'Reading across a row is the suggested skill, 5.B: how one state\'s choice connects to the next.'
         ],

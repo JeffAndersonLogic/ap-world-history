@@ -137,7 +137,7 @@ sell at the high one.
 You may have heard that the Ottomans captured Constantinople in 1453 and "closed" the spice
 road, so Europe had to go by sea. It is not true. The spice trade through Egypt and Venice kept
 running, and Portugal's voyages down the coast of Africa had already been going for decades
-before 1453. The real reason was the cost of all those middlemen.
+before 1453. The main economic reason was the cost of all those middlemen, along with Portugal's hunt for West African gold.
 
 A voyage into unknown water might take years and return nothing, and few merchants would risk
 that alone. So rulers backed the voyages, in two ways. Sometimes the crown paid for the ships.
@@ -272,7 +272,7 @@ rows that are the causal chain of the topic.
 
 | | Portugal | Spain | England, France, Dutch |
 |---|---|---|---|
-| **Who backed** | Prince Henry, then the kings | Isabella and Ferdinand | English and French kings; a Dutch trading company |
+| **Who backed** | Prince Henry, then the kings | Isabella and Ferdinand | English and French kings; Dutch leaders, then a trading company |
 | **What they wanted** | Gold, then spices, by going around Africa | Asia's trade by sailing west | Another route to Asia, in the north |
 | **What they got** | A trading-post empire from Africa to Asia | The Americas, and the Pacific crossed; all of Europe interested | No route to Asia; fish, furs and claims |
 

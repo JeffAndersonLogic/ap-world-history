@@ -70,7 +70,7 @@ module.exports = {
           blocks: [
             { p: `Pepper grew on the Malabar coast of India and cost little there. By the time it reached a European table it had crossed the Indian Ocean, been sold at a Red Sea or Gulf port, carried overland through Mamluk Egypt or Ottoman territory, taxed at each transfer, sold again to Venetian merchants who held privileged access to those markets, and shipped to European ports. Most of those margins went to Muslim states and merchants, and the last to Venice, and the retail price at the end was a large multiple of the price at the source.` },
             { p: `That is the economic motive stated properly, and notice what it implies. The prize was not "spices are valuable," it was <em>cutting out the chain</em>. A European power that reached the source by sea would buy at Calicut prices and sell at Lisbon prices, capturing every margin between. It would also, as a bonus its rulers cared about, stop enriching the Muslim states and the Venetian republic that currently collected them.` },
-            { p: `The Topic 2.1 chapter makes the necessary correction here: the Ottomans did not close the overland routes and no blockade forced Europe to sea. The trade continued. What drove the search was the cost and the number of hands it passed through, which is a motive of a completely different kind and a much better one to write.` }
+            { p: `Historians since A. H. Lybyer in 1915 have made the necessary correction here: the Ottomans did not close the overland routes, spice prices did not jump after 1453, and no blockade forced Europe to sea. The trade continued. What drove the search was the cost and the number of hands it passed through, which is a motive of a completely different kind and a much better one to write.` }
           ]
         },
         {
@@ -115,7 +115,7 @@ module.exports = {
       name: 'The Portuguese Program',
       navLabel: 'The Portuguese',
       dates: '1415 to 1500 &nbsp;·&nbsp; Ceuta to Calicut',
-      thesis: `Not a voyage but a program: more than seventy years of incremental, state-funded expeditions, each pushing a little further and bringing back route knowledge that was treated as a state secret. It is the least dramatic and most instructive story in the unit.`,
+      thesis: `Not a voyage but a program: more than seventy years of incremental, state-funded expeditions, each pushing a little further and bringing back route knowledge that, at least under João II from the 1480s, was guarded as a state secret. It is the least dramatic and most instructive story in the unit.`,
       parts: [
         {
           heading: 'Down the coast, decade by decade',
@@ -125,7 +125,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Henry "the Navigator" did not navigate, and the school of navigation at Sagres, with its academy of cartographers and instrument makers, is largely a later invention. What the evidence supports is a prince who systematically financed voyages, collected the knowledge they brought back, and pursued the enterprise for a mixture of crusading, commercial and dynastic reasons. That is less romantic and more useful, because "a state that funded repeated expeditions and treated the results as strategic information" is a mechanism, and a school on a cliff is a picture.`
+              html: `Henry "the Navigator" did not navigate, and the school of navigation at Sagres, with its academy of cartographers and instrument makers, is largely a later invention. What the evidence supports is a prince who systematically financed voyages, collected the knowledge they brought back, and pursued the enterprise for a mixture of crusading, commercial and dynastic reasons. That is less romantic and more useful, because "a state that funded repeated expeditions and collected what they brought back" is a mechanism, and a school on a cliff is a picture.`
             } }
           ]
         },
@@ -140,7 +140,7 @@ module.exports = {
         }
       ],
       useThis: {
-        tool: `Incremental state-funded reconnaissance. <em>The mechanism is that each expedition pushed a fixed distance further, brought its route knowledge home to be recorded, and was funded again on the strength of it, so risk was taken in small repeated doses over seventy years rather than gambled on one voyage, and the accumulated charts and wind knowledge became a state asset guarded as strategic information.</em>`,
+        tool: `Incremental state-funded reconnaissance. <em>The mechanism is that each expedition pushed a fixed distance further, brought its route knowledge home to be recorded, and was funded again on the strength of it, so risk was taken in small repeated doses over seventy years rather than gambled on one voyage, and the accumulated charts and wind knowledge became a state asset, guarded closely under João II.</em>`,
         limit: `The program was built on gold and captives from the West African coast long before it reached Asia, which means the Atlantic slave trade begins during the exploration phase and not as a later consequence of it.`,
         comparison: `Against <em>Columbus</em> in section 03: more than seventy years of incremental coastal work versus one speculative leap across open ocean on a bad calculation. Both were state-funded, and the contrast in method is the reason Portugal reached the actual spice source and Spain found something else entirely.`
       },
@@ -260,7 +260,7 @@ module.exports = {
       {
         category: 'Method',
         title: 'Portugal accumulated; Spain gambled',
-        body: `Portugal ran a program of state-backed expeditions lasting more than seventy years down the African coast, passing Bojador in 1434, rounding the Cape with Dias in 1488, reaching Calicut with da Gama in 1498, and treating the accumulated charts and wind knowledge as guarded state property. Spain funded a single speculative crossing in 1492 based on a circumference estimate the Portuguese advisers had rejected as too small. The difference in method predicts the difference in empire: incremental reconnaissance found the actual spice source and produced a chain of fortified ports, while a leap into the unknown found a hemisphere and produced territorial conquest.`
+        body: `Portugal ran a program of state-backed expeditions lasting more than seventy years down the African coast, passing Bojador in 1434, rounding the Cape with Dias in 1488, reaching Calicut with da Gama in 1498, and guarding the accumulated charts and wind knowledge closely, above all under João II. Spain funded a single speculative crossing in 1492 based on a circumference estimate the Portuguese advisers had rejected as too small. The difference in method predicts the difference in empire: incremental reconnaissance found the actual spice source and produced a chain of fortified ports, while a leap into the unknown found a hemisphere and produced territorial conquest.`
       },
       {
         category: 'Terms of trade',

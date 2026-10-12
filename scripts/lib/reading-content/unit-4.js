@@ -277,11 +277,11 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Whoever could sail straight to India could buy at the low price and sell at the high one. That is the economic cause of the voyages in this topic."
+            "html": "Whoever could sail straight to India could buy at the low price and sell at the high one. That is the main economic cause of the voyages in this topic."
           },
           {
             "type": "p",
-            "html": "You may have heard that the Ottomans captured Constantinople in 1453 and \"closed\" the spice road, so Europe had to go by sea. Historians reject that story. The spice trade through Egypt and Venice kept running, and Portugal's voyages down the coast of Africa had already been going for decades before 1453. The real reason was the cost of all those middlemen."
+            "html": "You may have heard that the Ottomans captured Constantinople in 1453 and \"closed\" the spice road, so Europe had to go by sea. Historians reject that story. The spice trade through Egypt and Venice kept running, and Portugal's voyages down the coast of Africa had already been going for decades before 1453. The main economic reason was the cost of all those middlemen, along with Portugal's hunt for West African gold."
           }
         ],
         "callout": {
@@ -373,7 +373,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In 1497 England's king gave John Cabot, an Italian sailor, permission to sail west and claim lands for England, and Cabot and his backers paid for the voyage themselves. He crossed the North Atlantic and reached the coast of North America. France sent Giovanni da Verrazzano along that coast in 1524, and Jacques Cartier up the St. Lawrence River in the 1530s. Dutch voyages under Willem Barentsz in the 1590s tried to sail around the north of Russia. In 1609 Henry Hudson, sailing for a Dutch trading company, explored the river that now carries his name."
+            "html": "In 1496 England's king gave John Cabot, an Italian sailor, permission to sail west and claim lands for England, and Cabot and his backers paid for the voyage themselves. In 1497 he crossed the North Atlantic and reached the coast of North America. France sent Giovanni da Verrazzano along that coast in 1524, and Jacques Cartier up the St. Lawrence River in the 1530s. Dutch voyages under Willem Barentsz in the 1590s tried to sail around the north of Russia. In 1609 Henry Hudson, sailing for a Dutch trading company, explored the river that now carries his name."
           },
           {
             "type": "p",
@@ -396,7 +396,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Portugal got a trading-post empire from Africa to Asia. Spain got lands across the Atlantic and a route across the Pacific, and all of Europe got interested. England, France, and the Dutch got no route to Asia, but they got fish, furs, and claims."
+            "html": "Portugal got a trading-post empire from Africa to Asia. Spain got lands across the Atlantic and the first crossing of the Pacific, and all of Europe got interested. England, France, and the Dutch got no route to Asia, but they got fish, furs, and claims."
           },
           {
             "type": "p",

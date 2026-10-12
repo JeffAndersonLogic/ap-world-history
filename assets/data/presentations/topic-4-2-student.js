@@ -412,7 +412,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "cells": [
               "Prince Henry, then the kings",
               "Isabella and Ferdinand",
-              "English and French kings; a Dutch trading company"
+              "English and French kings; Dutch leaders, then a trading company"
             ]
           },
           {
