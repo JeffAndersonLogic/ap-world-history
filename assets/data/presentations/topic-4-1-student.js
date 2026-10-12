@@ -77,7 +77,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "Landmarks",
             "left": "Coasts and ports along the way",
-            "right": "Far from the coast, none at all"
+            "right": "Far from the coast, a few islands at most"
           }
         ]
       }
@@ -112,7 +112,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "text": "A Greek idea, made precise in the Islamic world, reached Europe through Muslim Spain."
         },
         {
-          "title": "ASTRONOMICAL CHARTS",
+          "title": "ASTRONOMICAL CHARTS · CLASSICAL AND ISLAMIC",
           "text": "Tables of where the sun and stars would be each day. Built by Muslim and Jewish astronomers; Zacuto's almanac printed in Portugal in 1496."
         },
         {
@@ -154,7 +154,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-letterbox",
-      "eyebrow": "Toledo, Spain, 1200s",
+      "eyebrow": "Toledo, Spain, 1100s and 1200s",
       "title": "Knowledge moved with people.",
       "subtitle": "Christian and Jewish translators turned Arabic books, many by Muslim scholars, into Latin.",
       "kc": "KC-4.1.II",
@@ -201,7 +201,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         },
         {
           "title": "BECAUSE",
-          "text": "Each design solved a different problem: exploring, surviving long voyages, or making trade pay."
+          "text": "Each design solved a different problem: exploring, surviving long voyages, or carrying goods cheaply."
         }
       ]
     },

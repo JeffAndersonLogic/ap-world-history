@@ -820,6 +820,26 @@ module.exports = [
     note: 'BeHistorical instructional map. Europe combined borrowed tools with new ships and learned the Atlantic winds itself; routes are schematic and coastlines simplified for classroom projection.'
   },
   {
+    id: 'topic-4-1-winds',
+    code: 'Topic 4.1',
+    title: 'The Atlantic Wind Wheel, and the Way Home',
+    subtitle: 'Topic 4.1 \u00b7 Trade winds, westerlies, and the volta do mar',
+    // Explicit coordinates, as for 2.7. Schematic: the outward leg runs south
+    // with the northeast trade winds and the Canary Current along northwest
+    // Africa; the way home swings west and north into the open Atlantic, past
+    // the latitude of the Azores, then east on the westerlies to Lisbon.
+    highlights: [
+      { zone: [-8.5, 39.5, 3, 2.2], label: 'PORTUGAL', labelSide: 'above', tone: 'gold', legend: 'Portugal: where the voyages began and ended' },
+      { zone: [-14, 12, 5, 4], label: 'WEST AFRICA', labelSide: 'below', tone: 'sand', legend: 'West African coast: where ships turned for home' },
+      { zone: [-28, 38.5, 3.5, 1.6], label: 'AZORES', labelSide: 'above', tone: 'slate', legend: 'Azores: on the long loop home' }
+    ],
+    flows: [
+      { from: [-11, 36.5], via: [[-17, 28], [-21, 20]], to: [-19.5, 14], label: 'Out: trade winds and the Canary Current push south' },
+      { from: [-21, 12], via: [[-36, 18], [-45, 29], [-36, 37.5]], to: [-11, 39.2], label: 'Home: sail away from land, west and north, then ride the westerlies' }
+    ],
+    note: 'BeHistorical instructional map. Routes are schematic. Along northwest Africa the trade winds and the Canary Current run south all year, so the way home was the long loop out to sea: the volta do mar.'
+  },
+  {
     id: 'topic-4-2',
     code: 'Topic 4.2',
     title: 'European Exploration Routes, 1415-1522',

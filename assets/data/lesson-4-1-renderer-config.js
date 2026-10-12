@@ -63,13 +63,13 @@
     checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/MHS_52528_Astrolabe.jpg',
     evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/15th_century_Portolan_chart_by_Petrus_Roselli_-_Carte_marine_de_la_mer_M%C3%A9diterran%C3%A9e_et_de_la_mer_Noire.jpg',
     source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
+    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Caravela_de_armada_of_Joao_Serrao.jpg',
     checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg'
   };
 
   lesson.beInTheRoom = {
     url: '../beintheroom/unit-4/the-cape-route-brief.html',
-    desc: 'Advise João II before the Dias expedition: combine instruments, ship design, Atlantic wind knowledge, African intelligence, and state finance to find and return from a route around southern Africa.'
+    desc: 'Advise the pilots of the Dias expedition, 1487: combine instruments, ship design, Atlantic wind knowledge, and what African coastal peoples knew to find a route around southern Africa and get home.'
   };
 
   lesson.skillBuilder = {
@@ -102,7 +102,7 @@
       cardDesc: 'Cross-cultural diffusion plus practical technologies and environmental knowledge.',
       learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Explain how European navigators drew on knowledge or technology from TWO earlier traditions (Classical, Islamic, or Asian), and then explain how ONE ship-design innovation and ONE piece of wind or current knowledge made transoceanic travel more reliable. Build the causal chain from adopted knowledge to a ship that could go out and come home, and end with one new route for trade or travel.',
+      prompt: 'Name TWO tools or ideas Europe borrowed, and the older world each came from (Classical, Islamic, or Asian). Then explain how ONE new ship and ONE thing sailors learned about the winds or currents let ships cross the ocean and come back. End with one new sea route and what could now travel on it.',
       responseType: 'Checkpoint 2',
       skill: 'Causation',
       terms: ['magnetic compass', 'China', 'astrolabe', 'Islamic astronomy', 'lateen sail', 'caravel', 'carrack', 'volta do mar', 'trade winds', 'currents', 'cross-cultural diffusion'],
@@ -112,8 +112,8 @@
 
   lesson.evidenceLab = {
     title: 'Evidence Lab: Solving the Problems of Oceanic Navigation',
-    task: 'Choose TWO cards that solve different navigation problems: ship design, measuring position, charting coastlines, or organizing new geographic knowledge. Identify what each object directly shows, then infer what practical problem it helped solve. Do not treat a later model or map as direct eyewitness evidence without saying what kind of source it is.',
-    prompt: 'Using two evidence cards, make one claim about why sustained transoceanic voyaging became more feasible after c. 1450. Cite one concrete detail from each source, explain the mechanism each technology or knowledge tool addressed, and identify one source limitation.'
+    task: 'Choose TWO cards. For each, say what the object directly shows, then what it tells you about how ocean travel became possible or what it changed. Do not treat a later picture or map as an eyewitness record without saying what kind of source it is.',
+    prompt: 'Using two cards, make one claim about how long ocean voyages became possible after 1450, or what they changed. For each card, give one detail you can see, explain what it shows about tools, ships, or knowledge, and name one thing the source cannot tell you.'
   };
 
   lesson.images = [
@@ -121,29 +121,29 @@
       title: 'Portuguese Caravela in the Livro das Armadas, c. 1566',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Caravela_de_armada_of_Joao_Serrao.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Caravela_de_armada_of_Joao_Serrao.jpg',
-      caption: 'Ship-design evidence. A 16th-century Portuguese illustration depicts a caravela de armada associated with the early Portuguese Indian Ocean voyages.',
-      prompt: 'NOTICE hull shape, sails, or rigging. What can you INFER about maneuverability and oceanic travel? What would you need engineering or voyage records to prove about actual performance at sea?'
+      caption: 'A Portuguese caravel, the ship of João Serrão in the 1502 fleet to India, painted in the Livro das Armadas about 1566. It is a later picture of the ship, not a drawing made at sea.',
+      prompt: 'NOTICE the shape of the hull and the sails. What can you INFER about how this ship handled the wind? What would you need besides a picture to know how well it really sailed?'
     },
     {
       title: 'European Astronomer\'s Astrolabe, 1500 to 1550',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/MHS_52528_Astrolabe.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:MHS_52528_Astrolabe.jpg',
-      caption: 'Knowledge-transfer evidence. A European brass astrolabe made between 1500 and 1550, with Latin star names on its pierced star map. It is an astronomer\'s instrument, not the heavy open-ring mariner\'s astrolabe used at sea, but it carries the Greek and Islamic astronomy that Portuguese pilots turned into a sea tool. History of Science Museum, Oxford.',
-      prompt: 'NOTICE the pierced star map and the Latin star names. What can you INFER about where the knowledge in this instrument came from and how it reached Europe? What would a pilot have to change to use an instrument like this on a rolling deck?'
+      caption: 'A European brass astrolabe made between 1500 and 1550, with star names on its pierced star map. Most names are Latin, but some, like Alramech (the star Arcturus), are Arabic words written in Latin letters. It is an astronomer\'s instrument, not the heavy open-ring mariner\'s astrolabe used at sea. History of Science Museum, Oxford.',
+      prompt: 'NOTICE the star names. Find one that does not look Latin. What does that tell you about where this knowledge came from? What would a pilot have to change to use an instrument like this on a rolling deck?'
     },
     {
       title: 'Petrus Roselli Portolan Chart, 15th Century',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/15th_century_Portolan_chart_by_Petrus_Roselli_-_Carte_marine_de_la_mer_M%C3%A9diterran%C3%A9e_et_de_la_mer_Noire.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:15th_century_Portolan_chart_by_Petrus_Roselli_-_Carte_marine_de_la_mer_M%C3%A9diterran%C3%A9e_et_de_la_mer_Noire.jpg',
-      caption: 'Cartographic baseline evidence. A 15th-century portolan chart represents detailed coastlines and sailing directions developed before and during the opening of Atlantic exploration.',
-      prompt: 'NOTICE coastline detail and navigation lines. What can you INFER about cumulative maritime knowledge before c. 1500? How does this support continuity as well as innovation in European navigation?'
+      caption: 'A 15th-century portolan chart by Petrus Roselli: a sea chart of the Mediterranean and Black Sea, with detailed coastlines and lines for compass directions. Sailors made charts like this before the Atlantic voyages.',
+      prompt: 'NOTICE the coastlines and the lines crossing the sea. What can you INFER about what sailors already knew before c. 1500? Why would a chart like this be less help far out in the open Atlantic?'
     },
     {
       title: 'Waldseemüller World Map, 1507',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Waldseemuller_map_2.jpg',
-      caption: 'Knowledge-infrastructure evidence. The 1507 Waldseemüller map incorporated information from recent Atlantic voyages into a printed representation of the world.',
-      prompt: 'NOTICE how newly encountered lands are represented alongside older geographic knowledge. What can you INFER about how exploration changed mapmaking? Why does a printed map show knowledge circulation better than it shows how accurate every voyage report was?'
+      caption: 'The 1507 world map by Martin Waldseemüller, printed in Germany. It drew in information from recent Atlantic voyages, and it shows lands across the Atlantic that earlier European maps did not.',
+      prompt: 'NOTICE the lands on the far left, across the Atlantic. What can you INFER about how the voyages changed what Europeans knew about the world? What can a map made in Germany not tell you about the voyages themselves?'
     }
   ];
 })();

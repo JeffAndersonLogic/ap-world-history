@@ -5090,7 +5090,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "10",
           "module": "Checkpoint 2",
           "label": "Module 10, Checkpoint 2",
-          "prompt": "Explain how European navigators drew on knowledge or technology from TWO earlier traditions (Classical, Islamic, or Asian), and then explain how ONE ship-design innovation and ONE piece of wind or current knowledge made transoceanic travel more reliable. Build the causal chain from adopted knowledge to a ship that could go out and come home, and end with one new route for trade or travel.",
+          "prompt": "Name TWO tools or ideas Europe borrowed, and the older world each came from (Classical, Islamic, or Asian). Then explain how ONE new ship and ONE thing sailors learned about the winds or currents let ships cross the ocean and come back. End with one new sea route and what could now travel on it.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -5114,19 +5114,19 @@ window.BEHISTORICAL_SKILLS_MAP = {
             "Explain one wind/current pattern and how sailors used it to complete long voyages."
           ],
           "learningTargets": [
-            "I can explain how knowledge, scientific learning, and technology from the Classical, Islamic, and Asian worlds spread and facilitated European technological developments and innovation.",
-            "I can explain how new tools, innovations in ship design, and an improved understanding of regional wind and current patterns made transoceanic travel and trade possible."
+            "I can explain how knowledge and tools from the Classical, Islamic, and Asian worlds spread to Europe and helped Europeans build new technology.",
+            "I can explain how new tools, new ship designs, and a better understanding of winds and currents made it possible to sail and trade across oceans."
           ],
           "successCriteria": [
             "I can give a specific example of knowledge or technology from the Classical, Islamic, or Asian world (e.g., the compass, the lateen sail, or Arabic astronomical and mathematical learning) that European navigators adopted.",
-            "I can name specific ship designs (caravel, carrack, fluyt) and navigational tools (lateen sail, compass, astronomical charts) and explain what each contributed to oceanic travel."
+            "I can name specific ship designs (caravel, carrack, fluyt) and borrowed technologies (lateen sail, compass, astronomical charts) and explain what each contributed to ocean travel."
           ]
         },
         "evidence-response": {
           "ord": "07",
           "module": "Evidence Lab",
           "label": "Module 07, Evidence Lab",
-          "prompt": "Using two evidence cards, make one claim about why sustained transoceanic voyaging became more feasible after c. 1450. Cite one concrete detail from each source, explain the mechanism each technology or knowledge tool addressed, and identify one source limitation.",
+          "prompt": "Using two cards, make one claim about how long ocean voyages became possible after 1450, or what they changed. For each card, give one detail you can see, explain what it shows about tools, ships, or knowledge, and name one thing the source cannot tell you.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -5202,7 +5202,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "08",
           "module": "Primary Source",
           "label": "Module 08, Primary Source",
-          "prompt": "The writer leaves the Cape Verde Islands on August 3 and sights land on November 4. About how long was the fleet out of sight of land, and what does that tell you about the problem these sailors had to solve? Find TWO details that show the crew keeping track of where they were or watching for land: a direction, a distance, a sounding, or a sign from nature. What tool or skill does each detail suggest they were using? The writer was a crew member, not a pilot or a cosmographer. What might he leave out about how the ship was navigated, and what other kind of source would help you find out which instruments the pilots used?",
+          "prompt": "The writer leaves the Cape Verde Islands on August 3 and sights land on November 4. About how long was the fleet out of sight of land, and what does that tell you about the problem these sailors had to solve? Find TWO details that show the crew keeping track of where they were or watching for land: a compass direction, a sounding, or a sign from nature such as birds or seaweed. What tool or skill does each detail suggest they were using? The writer was a crew member, not a pilot or a royal mapmaker. What might he leave out about how the ship was navigated, and what other kind of source would help you find out which instruments the pilots used?",
           "skill": "",
           "skills": [],
           "skillRaw": "",

@@ -118,7 +118,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 4,
         land: [
           'No notes. Take fast answers and do not reteach.',
-          'Accept: gunpowder, devshirme or mansabdars, tax systems, monumental architecture; the monsoon winds reverse with the seasons; the compass or the astrolabe.',
+          'Accept: gunpowder, devshirme or mansabdars, tax systems, monumental architecture; the monsoon winds reverse with the seasons; the compass, or a tool for measuring the height of the stars. Topic 2.3 named the astrolabe; Indian Ocean pilots mostly used simpler tools such as the kamal and wooden quadrants, so accept the idea and do not dwell on the name.',
           'This is 3.4\'s hand-off: "These empires grew over land. The next states learn to project influence across oceans." Topic 2.3 is the context the whole lesson sits in.',
           'The turn is the lesson\'s problem in disguise. Do not answer it yet.'
         ],
@@ -170,7 +170,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'Wind', left: 'The monsoon turns around each season', right: 'The trade wind blows from the northeast nearly all year' },
           { label: 'Going out', left: 'Ride one season\'s wind', right: 'Easy: sail south with the wind' },
           { label: 'Coming home', left: 'Wait, then ride the reversed wind', right: 'Hard: the wind never turns around' },
-          { label: 'Landmarks', left: 'Coasts and ports along the way', right: 'Far from the coast, none at all' }
+          { label: 'Landmarks', left: 'Coasts and ports along the way', right: 'Far from the coast, a few islands at most' }
         ]
       },
       notes: {
@@ -208,7 +208,7 @@ window.BEHISTORICAL_TEACHING = {
       cards: [
         { title: 'COMPASS · ASIAN', text: 'From China, used at sea by about 1100. In Europe by about 1190; how it got there is debated.' },
         { title: 'ASTROLABE · CLASSICAL AND ISLAMIC', text: 'A Greek idea, made precise in the Islamic world, reached Europe through Muslim Spain.' },
-        { title: 'ASTRONOMICAL CHARTS', text: 'Tables of where the sun and stars would be each day. Built by Muslim and Jewish astronomers; Zacuto\'s almanac printed in Portugal in 1496.' },
+        { title: 'ASTRONOMICAL CHARTS · CLASSICAL AND ISLAMIC', text: 'Tables of where the sun and stars would be each day. Built by Muslim and Jewish astronomers; Zacuto\'s almanac printed in Portugal in 1496.' },
         { title: 'LATEEN SAIL · CLASSICAL AND ISLAMIC', text: 'On the Mediterranean since Roman times; common across the seas of the Islamic world.' }
       ],
       footer: 'Classical, Islamic, Asian: the three worlds the College Board names.',
@@ -251,7 +251,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'toledo', kind: 'frame-letterbox', eyebrow: 'Toledo, Spain, 1200s',
+      phase: 'toledo', kind: 'frame-letterbox', eyebrow: 'Toledo, Spain, 1100s and 1200s',
       kc: 'KC-4.1.II',
       title: 'Knowledge moved with people.',
       subtitle: 'Christian and Jewish translators turned Arabic books, many by Muslim scholars, into Latin.',
@@ -260,7 +260,8 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'Historical Reconstruction, AI generated. It sets the scene; it is not evidence.',
           'What it gets right: handwritten manuscripts, not printed books (printing in Europe begins c. 1450); a flat astronomer\'s astrolabe on the table; Mudéjar arches and tilework.',
-          'The Arabic writing in the picture is not real text. If a student asks, say so: AI invents letters.'
+          'The Arabic writing in the picture is not real text. If a student asks, say so: AI invents letters.',
+          'The tonsured man wears a habit like a Franciscan friar\'s. That order was founded in 1209, so the picture fits the 1200s translators (under Alfonso X, many worked into Castilian as well as Latin), not Gerard of Cremona in 1175. The slide\'s claim, translators turning Arabic books into Latin, holds for both centuries.'
         ],
         ask: 'What is being passed from one person to the other?',
         listenFor: 'Knowledge, out of an Arabic book and into a Latin one.'
@@ -275,8 +276,8 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Historical Reconstruction, AI generated. It sets the scene; it is not evidence.',
-          'What it gets right: the mariner\'s astrolabe is a heavy, open brass ring with spokes, hung from the thumb so it stays upright, and the pilot sights the sun through holes rather than looking at it. That is the Portuguese adaptation of the flat instrument on the Toledo slide.',
-          'Two small things it gets wrong, if a sharp student notices: the big sail behind the pilot looks square, when many caravels of the 1480s still carried lateen sails; and the young sailor writes with what looks like a wooden pencil, which is later.',
+          'What it gets right: the mariner\'s astrolabe is a heavy, open ring with spokes, hung from the thumb so it stays upright. That is the Portuguese adaptation of the flat instrument on the Toledo slide. Many early sea astrolabes were wood or bronze; da Gama\'s fleet carried a large wooden one and smaller metal ones.',
+          'Three things it gets wrong, if a sharp student notices: the pointer arm has no sighting vanes, though a real one had two small plates with holes so the pilot could catch the sun\'s ray without looking at the sun; the big sail behind the pilot looks square, when many caravels of the 1480s still carried lateen sails; and the young sailor writes with what looks like a wooden pencil, which is later.',
           'Latitude is how far north or south you are. Longitude, east and west, could not be measured at sea in this period; dead reckoning filled the gap.',
           'The Evidence Lab\'s astrolabe is the astronomer\'s kind (Oxford, 1500 to 1550), the instrument the sea version grew out of. The oldest surviving mariner\'s astrolabe, the Sodré astrolabe, dates from c. 1496 to 1501.'
         ],
@@ -291,7 +292,7 @@ window.BEHISTORICAL_TEACHING = {
         { title: 'CARAVEL · EXPLORE', text: 'Small and light with lateen sails. Works against the wind and slips along unknown coasts.' },
         { title: 'CARRACK · HAUL', text: 'Large, square sails and a lateen at the back. Room for months of food, water, cargo and guns.' },
         { title: 'FLUYT · MAKE IT PAY', text: 'Dutch, around 1600. A big cargo with a small, cheap crew.' },
-        { title: 'BECAUSE', text: 'Each design solved a different problem: exploring, surviving long voyages, or making trade pay.' }
+        { title: 'BECAUSE', text: 'Each design solved a different problem: exploring, surviving long voyages, or carrying goods cheaply.' }
       ],
       notes: {
         minutes: 3,
@@ -299,7 +300,7 @@ window.BEHISTORICAL_TEACHING = {
           'These are the CED\'s three illustrative examples of ship design. They are optional, but they are the three students will meet.',
           'Caravel: typically two or three lateen-rigged masts (Britannica). Square-rigged caravels came at the end of the 1400s; the old 4.1 lecture said the 1440s caravel "combined" both, which is wrong for that date.',
           'Carrack: usually square sails on the fore and main masts and a lateen on the mizzen. The Portuguese called it a nau.',
-          'Fluyt: first built at Hoorn, usually dated 1595. It is here as a ship design. How the Dutch used it to dominate trade belongs to 4.5.'
+          'Fluyt: first built at Hoorn, usually dated 1595. It is here as a ship design: cheap to build and sail. Fluyts did most of their work in European bulk trades such as the Baltic; how the Dutch used shipping to compete in global trade belongs to 4.5.'
         ],
         ask: 'Which ship would you send to explore a coast nobody has mapped, and why?',
         listenFor: 'The caravel: small, light, and able to work against the wind.',
@@ -323,7 +324,7 @@ window.BEHISTORICAL_TEACHING = {
           'This is the third item in KC-4.1.II.A: "an improved understanding of regional wind and currents patterns." Unlike the tools, it could not be borrowed. Portuguese sailors learned it over decades of voyages in the 1400s.',
           'The currents turn the same way. The Canary Current runs south along northwest Africa all year (Britannica); that is why the coast route home fought both wind and water.',
           'Volta do mar means roughly "the turn of the sea." It is a wind route. It is not the same as latitude sailing, which the old reading confused it with.',
-          'Columbus used the same wheel turned west in 1492: the Canaries for the trade winds out, a more northerly track for the westerlies home.'
+          'Columbus used the same pattern in 1492, turned west: south to the Canaries for the trade winds out, a more northerly track for the westerlies home. Nobody had yet ridden the trade winds all the way across; he was betting the pattern held.'
         ],
         ask: 'Why does sailing away from land get you home?',
         listenFor: 'Out at sea you reach the westerlies, which blow toward Europe.',
@@ -379,11 +380,11 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 1,
         land: [
           'Historical Reconstruction, AI generated. It sets the scene; it is not evidence.',
-          'What it gets right: the Portuguese ships anchor offshore, because Calicut had no deep harbor; local ships far outnumber them; no Chinese junks, because the Ming voyages had ended in 1433; Kerala-style sloping roofs.',
+          'What it gets right: the big ships anchor offshore, because Calicut had no deep harbor; local ships far outnumber them; no Chinese junks, because the Ming voyages had ended in 1433; Kerala-style sloping roofs. What it muddles: some of the lateen-sailed ships have European-style hulls, so do not ask students to count Portuguese ships. Da Gama arrived with three: two naus and a caravel.',
           'Use it to set up the twist: the Portuguese arrived as newcomers to an ocean that already had its own ships, routes and merchants. What they did there is 4.4.'
         ],
-        ask: 'Whose ships are in this picture, and who has more?',
-        listenFor: 'A few Portuguese ships, and many more Indian Ocean ships.'
+        ask: 'What does this busy harbor tell you about this ocean before the Portuguese arrived?',
+        listenFor: 'It was already full of ships, traders and routes. The Portuguese were newcomers.'
       }
     },
     {

@@ -1,6 +1,6 @@
 # Topic 4.1 Claim Ledger: Technological Innovations from 1450 to 1750
 
-**Status: Story stage, 2026-10-11.** Started with the story draft
+**Status: Phase 9 review, pass 1 complete, 2026-10-12** (story stage 2026-10-11). Started with the story draft
 (`docs/TOPIC-4-1-STORY-DRAFT.md`) so the story Jeff reviews has already been checked. Rows for
 the build surfaces (First & 10, deck and notes, lecture cards, checkpoints, Evidence Lab, Primary
 Source, BeSurreal, BeInTheRoom, Canvas text) are added in Phase 9.
@@ -75,6 +75,98 @@ miss them; each gets its final row when its surface is rewritten.
 | The João de Barros passage is "adapted" | Primary Source module | Unknown whether it is a real passage. A text written for the lesson cannot be a primary source. | **NEEDS JEFF** (question 7): check first |
 | Module-card pictures for 4.3, 4.7, Unit 3 and 4.5 topics | `stableImages` | Off-topic pictures on 4.1's cards. | To fix (visual plan) |
 
+## Claims added in Phase 9 (2026-10-12)
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| Indian Ocean pilots measured star heights with simple tools such as the kamal and wooden quadrants, not the astrolabe | First & 10 §1 (pending Jeff's re-approval); deck BeReady accept note; eBook §03 | Da Gama journal (Ravenstein, Hakluyt Society 1898): the Calicut pilots "trust to quadrants of wood"; kamal literature (reviewer 2's sources). The astrolabe was mainly a land instrument for astronomers. | VERIFIED; replaces "used the compass and the astrolabe" |
+| 110 fathoms is about 630 feet | Primary Source note | Ravenstein's footnote 41: a Portuguese fathom (braça) is 5.76 feet. 110 x 5.76 = 634. | VERIFIED; replaces "about 660 feet" (English fathom) |
+| Ravenstein says the August dates in the excerpt cannot be right | Primary Source note | Ravenstein footnote 35 and appendix: August 18 to 22 implies an impossible distance; the 800-league reckoning probably belongs to October 22. | VERIFIED; question 2 no longer asks students to use a distance |
+| Zacuto composed his tables in the 1470s (Salamanca, in Hebrew) and they were printed at Leiria in 1496 | eBook §03; deck notes | Ravenstein gives the title "Almanach perpetuum ... cujus radix est 1473"; Vizinho's Latin translation printed at Leiria, 1496. | VERIFIED |
+| The planispheric astrolabe on the Evidence Lab card carries Latin star names and one Arabic-derived name, Alramech (Arcturus) | Evidence Lab card 2 | Read off the Commons photograph of MHS 52528 by eye; Alramech is the Latinized Arabic name for Arcturus. The museum record itself was not reached. | VERIFIED by inspection; the card no longer calls it "European" without support |
+| Off northwest Africa the trade wind blows from the northeast, and the Canary Current runs south; the way home ran northwest to the Azores latitudes and then east on the westerlies | New wind map `topic-4-1-winds.svg`; lecture card 3; eBook | Volta do mar and North Atlantic gyre sources above; the map is schematic and carries no dates or numbers. | VERIFIED in outline |
+| The square-rigged cog was a northern European ship (North Sea and Baltic) that reached the Mediterranean around 1300 | Lecture card 2 | Reviewer 2, with the standard ship-type literature; the Mediterranean's own traditional rig was largely lateen. | VERIFIED; replaces "built for Mediterranean and Baltic coastal trade" |
+| Whether Europe's stern-post rudder came from China or was invented separately is debated | eBook §04 and closing card | Needham argues transmission; Mott argues independent invention. | NARROWED; was "the stern-post rudder is Chinese" |
+| Columbus used the pattern the Portuguese had learned near Africa and bet that it held all the way across | eBook §04; deck notes | Columbus's journal (Las Casas abstract, Sept. 22, 1492): the crew feared no wind would carry them home. | NARROWED; was "using a system the Portuguese had already mapped" |
+| The Portuguese crown tried to keep its best charts from rivals, though charts still moved (the Cantino map, 1502) | eBook; BeInTheRoom | The broad "policy of secrecy" (Cortesão) is contested; specific restrictions and the smuggled Cantino map are documented. | NARROWED; was "guarded charts as strategic assets" |
+| The marine chronometer came in the 1760s, just after the period Unit 4 covers | eBook §03 and closing card | Harrison's H4 sea trial, 1761; Unit 4 runs c. 1450 to c. 1750. | VERIFIED; was "a century after this unit ends" |
+
 ## Review findings
 
-None yet. Independent reviewers run in Phase 9.
+**Pass 1, 2026-10-12.** Two independent reviewers, each given a fresh bundle of every 4.1
+surface (reading, lesson data, renderer config, eBook chapter, deck, BeInTheRoom) and told to
+find defects, not to agree. Reviewer 1 read for page truth, consistency between surfaces and
+ninth-grade readability. Reviewer 2 read for historical accuracy against sources it fetched
+itself. Every finding is listed with what was done about it.
+
+### Reviewer 1: page truth, consistency, readability
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | Lecture card 3's picture was the "where the tools came from" map, captioned as Atlantic winds | Fixed: a new wind map (`topic-4-1-winds`) built from the map specs and used on card 3 |
+| 2 | Lecture card 2 and the eBook said the caravel solved the trip home by beating up the coast | Fixed: card retitled "The Explorer's Ship: The Caravel"; the volta do mar is the answer everywhere |
+| 3 | The Waldseemüller map is printing (bridge only) and points the cause the wrong way | Partly fixed: the card is reframed as "what the voyages changed" and the Evidence Lab prompt now allows that. Replacing it with a Sodré astrolabe or Zacuto page was blocked because Commons rate-limited this session, so no new file could be verified. **Open for a later pass** |
+| 4 | The astrolabe card asked for an inference its picture did not support | Fixed: caption names Alramech, prompt asks students to find the one non-Latin star name |
+| 5 | The Evidence Lab task mentioned a "later model" not on the page | Fixed |
+| 6 | BeInTheRoom taught state sponsorship and finance (4.2) | Fixed: new reflection, the finance role replaced by an African interpreter, the knowledge-control decision replaced by "Plan the way home", "state finance" dropped from the card |
+| 7 | The eBook taught motives for exploration (4.2) | Fixed: cut to one hand-off sentence; Periphery term deleted |
+| 8 | The eBook said the lateen sail came from the Indian Ocean | Fixed: the reading's wording in all three places |
+| 9 | The eBook put the chronometer "a century after this unit ends" | Fixed: "just after the period this unit covers" |
+| 10 | The eBook taught Dutch trade dominance (4.5) and Portuguese naval power (4.4), and said Indian Ocean traders "never needed" guns | Fixed: one hand-off sentence each; Broadside term deleted |
+| 11 | Success criterion 3 called the lateen sail a navigational tool | Fixed: "borrowed technologies" |
+| 12 | The Map module intro described carriers the map does not show | Fixed |
+| 13 | Checkpoint 2 was hard for a ninth grader to read | Fixed with the reviewer's wording |
+| 14 | The Evidence Lab prompt and captions used jargon | Fixed |
+| 15 | Targets 2 and 3 and the lecture intro restated CED wording | Fixed |
+| 16 | "Cosmographer" undefined in Primary Source question 3 | Fixed: "royal mapmaker" |
+| 17 | BeInTheRoom wording was abstract | Fixed throughout the scenario |
+| 18 | eBook answer boxes above ninth-grade level | Fixed |
+| 19 | The deck gave Toledo two centuries on back-to-back slides | Fixed: "1100s and 1200s", with a note on the later friar's habit |
+| 20 | One Borrowed Tools card had no world label | Fixed |
+| 21 | The eBook said the wind blew from the north | Fixed: northeast |
+| 22 | Double period after the Primary Source attribution | Fixed |
+| U1 | Primary Source intro tied da Gama's South Atlantic loop to the volta do mar | Fixed: "the same idea" |
+| U2 | Portuguese secrecy stated as fact | Narrowed (see claims above) |
+| U3 | Columbus overclaim | Narrowed |
+| U4 | "Printed" declination tables; the eBook never uses "astronomical charts" | Fixed both |
+| U5 | Checkpoint 2 does not ask how the knowledge traveled | Declined: the reading's question 1 and the Skill Builder both assess it, and adding it would make Checkpoint 2 too long for the end of the block |
+| U6 | Calicut picture: counting ships may be muddled | Fixed: the ask no longer counts ships, and the note says not to |
+| U7 | BeInTheRoom thumbnail was a 1498 Malindi pillar for a 1487 scenario | Fixed: the Livro das Armadas caravel |
+| U8 | Toledo translations were often into Castilian under Alfonso X | Kept: the slide's example is Gerard's Latin Almagest of 1175 |
+| U9 | "Coastal exploration had gone nowhere for centuries" | Fixed: removed |
+
+### Reviewer 2: history
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | Chronometer gap | Fixed (same as Reviewer 1, #9) |
+| 2 | 110 fathoms is about 630 feet, not 660 | Fixed |
+| 3 | Ravenstein says the excerpt's August dates are wrong | Fixed: note added, question 2 no longer uses a distance |
+| 4 | Indian Ocean sailors used the kamal, not the astrolabe | Fixed in the deck; **the reading sentence waits on Jeff's re-approval** |
+| 5 | Lecture card 2: caravel solved the return; square rig "nearly useless" | Fixed |
+| 6 | The cog was a northern ship, not a Mediterranean one | Fixed |
+| 7 | eBook lateen origin | Fixed (same as Reviewer 1, #8) |
+| 8 | `evidenceLab.items` carried two myths and printing | Fixed: `items` deleted (it was never rendered) |
+| 9 | Columbus overclaim | Fixed |
+| 10 | "A trading world that had never needed" guns | Fixed |
+| 11 | Zacuto "in the 1490s" | Fixed: composed in the 1470s, printed 1496 |
+| 12 | Toledo date, and the friar's habit is later than 1209 | Fixed, with the note |
+| 13 | Lecture card 3 picture | Fixed (same as Reviewer 1, #1) |
+| 14 | "No islands" is wrong for 1430 (Madeira, the Azores) | Fixed in the deck; **the reading sentence waits on Jeff's re-approval** |
+| 15 | The astrolabe picture has no sighting vanes, so the note's praise was wrong | Fixed: listed as a third fault |
+| 16 | eBook contradicted itself on what Europe supplied | Fixed |
+| U1 | Stern-post rudder origin | Narrowed |
+| U2 | Printing came from Asia | Fixed: paper diffused, printing developed in Europe |
+| U3 | Secrecy | Narrowed |
+| U4 | BeSurreal c. 1485: brass astrolabe and a book of sun tables may be too early | Fixed: "heavy astrolabe", "handwritten sun tables" |
+| U5 | Primary Source intro and the volta | Fixed |
+| U6 | The fluyt mostly served European bulk trades | Fixed in the deck and eBook (Baltic, hand-off to 4.5); **the reading sentence waits on Jeff's re-approval** |
+| U7 | Ptolemy: Byzantium always had it, and Sicily had a Latin version c. 1160 | Fixed in the deck notes; **the reading sentence waits on Jeff's re-approval** |
+| U8 | Da Gama reached Calicut with three ships | Fixed in the note |
+| U9 | The planispheric astrolabe's star names were unconfirmed | Checked by eye on the photograph; see claims above |
+
+### Changes waiting on Jeff
+
+Four sentences in the approved First & 10 are wrong or overclaim (Reviewer 2 #4, #14, U6, U7).
+The corrected sentences are written but **not applied**, because the reading is guarded by
+its approval fingerprint and changing it re-opens approval. They go in when Jeff approves them.
