@@ -35,6 +35,7 @@ const W = '\x1b[1m', D = '\x1b[2m', X = '\x1b[0m';
 // bare checkout; browser needs playwright-core and a Chromium binary.
 const SUITES = {
   offline: [
+    ['scripts/test/unit45-atlases.test.js', 'Units 4–5 atlases: content, geography, hub integration, and negative controls'],
     ['scripts/test/unit3-atlas.test.js', 'Unit 3 atlas: reviewed evidence, geographic scope, and visual-only hub'],
     ['scripts/test/unit1-atlas.test.js', 'Unit 1 atlas: regional coverage and visual-only hub'],
     ['scripts/test/unit2-atlas.test.js', 'Unit 2 atlas: visual-only content, canonical sources, and hub integration'],
@@ -73,6 +74,7 @@ const SUITES = {
   ],
   browser: [
     ['scripts/test/sync-page.test.js', 'backup on the real lesson pages: off by default, restore, typing, conflicts, Foundations'],
+    ['scripts/test/unit45-atlases.browser.test.js', 'Units 4–5 atlases: all views, keyboard, responsive hubs, and negative controls'],
     ['scripts/test/unit3-atlas.browser.test.js', 'Unit 3 atlas: direct clicks, keyboard, touch, and responsive hub'],
     ['scripts/test/unit1-atlas.browser.test.js', 'Unit 1 atlas: regional map interaction and responsive embed'],
     ['scripts/test/unit2-atlas.browser.test.js', 'Unit 2 atlas: direct map clicks, keyboard, touch, and responsive hub embed'],
