@@ -872,18 +872,44 @@ window.BEHISTORICAL_SCHEDULE = {
       cohort: 'green',
       topic: '4.1',
       modules: ['02', '06', '07', '10'],
-      homework: 'Finish Checkpoint 2, and any other required 4.1 module you did not complete in class.',
-      // Each cohort's next class (Jeff, 2026-10-12); no later day is on the schedule yet.
-      homeworkDue: 'Friday, October 30'
+      homework: 'Finish Checkpoint 2, and any other required 4.1 module you did not complete in class.'
     },
     {
       date: '2026-10-29',
       cohort: 'silver',
       topic: '4.1',
       modules: ['02', '06', '07', '10'],
-      homework: 'Finish Checkpoint 2, and any other required 4.1 module you did not complete in class.',
-      // Each cohort's next class (Jeff, 2026-10-12); no later day is on the schedule yet.
-      homeworkDue: 'Monday, November 2'
+      homework: 'Finish Checkpoint 2, and any other required 4.1 module you did not complete in class.'
+    },
+
+    /* ---- Topic 4.2, Exploration: Causes and Events from 1450 to 1750 ------ */
+    // Green Friday 2026-10-30 and Silver Monday 2026-11-02: the days Jeff named
+    // on 2026-10-12 as each cohort's class after 4.1 (they were 4.1's
+    // homeworkDue lines, which these entries replace; 4.1's due dates are now
+    // derived from them).
+    // Required subset (4.2 build, 2026-10-12, under Jeff's standing rule): 02
+    // First & 10, 05 Skill Builder (5.B Making Connections, the CED's suggested
+    // skill), 07 Evidence Lab and 10 Checkpoint 2. Checkpoint 1 and BeInTheRoom
+    // stay optional.
+    {
+      date: '2026-10-30',
+      cohort: 'green',
+      topic: '4.2',
+      modules: ['02', '05', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 4.2 module you did not complete in class.',
+      // No later class day is on the schedule yet, and dates are never
+      // invented. Replace with the real weekday once Jeff names the next day.
+      homeworkDue: 'your next class'
+    },
+    {
+      date: '2026-11-02',
+      cohort: 'silver',
+      topic: '4.2',
+      modules: ['02', '05', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 4.2 module you did not complete in class.',
+      // No later class day is on the schedule yet, and dates are never
+      // invented. Replace with the real weekday once Jeff names the next day.
+      homeworkDue: 'your next class'
     }
   ],
 

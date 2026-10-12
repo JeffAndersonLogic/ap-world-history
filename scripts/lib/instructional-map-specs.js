@@ -842,25 +842,31 @@ module.exports = [
   {
     id: 'topic-4-2',
     code: 'Topic 4.2',
-    title: 'European Exploration Routes, 1415-1522',
+    title: 'Three Ways to Asia, and Who Paid',
     subtitle: 'Topic 4.2 \u00b7 Exploration: causes and events',
+    // Explicit coordinates. Three groups of sponsors, three directions: Portugal
+    // around Africa, Spain west (and on across the Pacific), England, France and
+    // the Dutch north. Routes are schematic; Magellan's Pacific crossing runs off
+    // the western edge of this world view, and under the key, so the note carries it.
     highlights: [
-      { zone: 'westernEurope', label: 'IBERIA', tone: 'gold', legend: 'Portugal and Spain: the voyages set out from here' },
-      { zone: 'westAfrica', label: 'WEST AFRICAN COAST', tone: 'sand', legend: 'Portuguese coastal forts and trade, 1415-1490s' },
-      { zone: 'southAsia', label: 'CALICUT 1498', tone: 'bronze', legend: 'Da Gama reaches India, 1498' },
-      { zone: 'caribbean', label: 'CARIBBEAN 1492', tone: 'plum', legend: 'Columbus lands in the Caribbean, 1492' },
-      { zone: 'indonesia', label: 'SPICE ISLANDS', tone: 'sage', legend: 'The Moluccas: the goal of the whole enterprise' }
+      { zone: [-6, 39.5, 4.5, 3], label: 'PORTUGAL AND SPAIN', labelSide: 'left', tone: 'gold', legend: 'Portugal and Spain: royal sponsors' },
+      { zone: [2, 51.5, 6, 4], label: 'ENGLAND, FRANCE, DUTCH', labelSide: 'above', tone: 'slate', legend: 'England, France, Dutch: northern sponsors' },
+      { zone: [-62, 48, 9, 5], label: 'NORTH ATLANTIC COAST', labelSide: 'above', tone: 'sand', legend: 'North Atlantic coast: cod, furs, claims' },
+      { zone: [-74, 21, 9, 4], label: 'CARIBBEAN 1492', labelSide: 'below', tone: 'plum', legend: 'Columbus reaches the Caribbean, 1492' }
     ],
     flows: [
-      { from: 'westernEurope', to: 'westAfrica', label: 'down the African coast' },
-      { from: 'westAfrica', to: 'southAsia', label: 'round the Cape to India, 1498', bow: 0.3 },
-      { from: 'westernEurope', to: 'caribbean', label: 'west across the Atlantic, 1492', bow: -0.2 },
-      { from: 'southernCone', to: 'indonesia', label: 'Magellan through the Pacific, 1519-1522', bow: 0.22 }
+      { from: [-9, 37], via: [[-19, 18], [-12, -5], [8, -33], [20, -36], [42, -20], [52, 0]], to: [74, 11.5], label: 'Portugal: around Africa to India, 1498' },
+      { from: [-7, 36], via: [[-18, 28], [-45, 24]], to: [-71, 22.5], label: 'Spain: west across the Atlantic, 1492' },
+      { from: [-4, 51], via: [[-30, 55]], to: [-54, 50], label: 'England: Cabot, 1497' },
+      { from: [-3, 48], via: [[-35, 46]], to: [-68, 48.5], label: 'France: Cartier, 1530s' },
+      { from: [4, 55], via: [[6, 63], [22, 66.5]], to: [44, 66], label: 'Dutch: Barentsz, 1590s, toward the Arctic' }
     ],
     points: [
-      { at: [-17, 15], label: 'Cape Verde', note: 'Atlantic staging point', side: 'left' },
-      { at: [18, -34], label: 'Cape of Good Hope', note: 'rounded 1488' }
-    ]
+      { at: [-1.3, 5.1], label: 'Elmina', note: 'Portuguese fort, 1482', side: 'left' },
+      { at: [75.8, 11.2], label: 'Calicut', note: 'da Gama, 1498' },
+      { at: [102.2, 2.2], label: 'Malacca', note: 'Portuguese, 1511' }
+    ],
+    note: 'BeHistorical instructional map. Routes are schematic and coastlines simplified. Magellan\'s fleet crossed the Pacific to the Philippines, where he was killed in 1521; Elcano brought one ship home in 1522. No northern voyage found a sea route to Asia.'
   },
   {
     id: 'topic-4-3',

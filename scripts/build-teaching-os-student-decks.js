@@ -121,6 +121,15 @@ const DECKS = [
     ],
     student: 'assets/data/presentations/topic-4-1-student.js',
     backUrl: 'lesson-4-1-technological-innovations.html#lecture'
+  },
+  {
+    key: '4.2',
+    sources: [
+      'teacher/data/topic-4-2-teaching-base.js',
+      'teacher/data/topic-4-2-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-4-2-student.js',
+    backUrl: 'lesson-4-2-exploration.html#lecture'
   }
 ];
 
@@ -308,7 +317,8 @@ function buildDeck(deck) {
     '3.2': topic31Slides,
     '3.3': topic31Slides,
     '3.4': topic31Slides,
-    '4.1': topic31Slides
+    '4.1': topic31Slides,
+    '4.2': topic31Slides
   };
   return {
     meta: {

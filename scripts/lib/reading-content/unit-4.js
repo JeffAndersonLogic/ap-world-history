@@ -233,197 +233,205 @@ module.exports = {
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
     "showFooterNote": false,
     "headerSubtitle": "Topic 4.2, Exploration: Causes and Events &nbsp;|&nbsp; AP World History: Modern",
-    "titleHtml": "Why They <em>Sailed</em>",
-    "deck": "Between 1415 and 1522, European sailors mapped the African coast, reached India by sea, found an entirely unknown pair of continents, and sailed all the way around the world. None of this happened by accident. Behind every voyage was a tangle of motives, religious, commercial, political, and behind every motive was state money, state ships, and state power.",
+    "titleHtml": "Who <em>Paid</em>?",
+    "deck": "Ships could now cross the ocean and come back, but every voyage cost a fortune. Rulers paid, because they wanted the trade of Asia. Portugal went around Africa, Spain went west, and England, France, and the Dutch went north, and every voyage that paid made the next one easier to fund.",
     "skillTags": [
       "Causation",
-      "Contextualization",
-      "Argumentation"
+      "Making Connections"
     ],
     "supportCards": {
-      "beforeYouRead": "As you read, track the THREE types of motivation behind European exploration, religious, economic, and political. For each voyage mentioned, ask yourself: who paid for it, what did they expect to gain, and what did they actually find? The motive and the outcome are often different things.",
-      "readingTarget": "By the end, you should be able to explain why states sponsored maritime exploration, trace major Portuguese and Spanish voyages, and explain how English, French, and Dutch sponsorship extended northern Atlantic exploration in search of routes and commercial opportunities."
+      "beforeYouRead": "<strong>Rulers paid → Voyages came back with gold, spices, or news → The next voyage was easier to fund → Rival rulers wanted voyages of their own.</strong> For every state in this reading, ask three things: who paid, what did they want, and what did they get?",
+      "readingTarget": "Why did European rulers pay for ocean voyages, and what did those voyages bring back?"
     },
     "vocabulary": [
-      "Prince Henry the Navigator",
-      "Vasco da Gama",
-      "Christopher Columbus",
-      "Ferdinand Magellan",
-      "John Cabot",
-      "Jacques Cartier",
-      "Dutch Northern Voyages",
-      "Reconquista",
-      "Treaty of Tordesillas",
-      "Cape of Good Hope",
-      "Encomienda",
-      "Taíno",
       "Spice Trade",
+      "Middlemen",
+      "State Sponsorship",
+      "Royal Monopoly",
+      "Trading-Post Empire",
+      "Calicut",
+      "Treaty of Tordesillas",
       "Circumnavigation",
-      "Patronage"
+      "Northwest Passage",
+      "Fur Trade"
     ],
     "sections": [
       {
         "number": "1",
-        "label": "Contextualization",
-        "heading": "Why Europe? The Reconquista and the Desire for Trade",
+        "label": "The Cause",
+        "heading": "Pepper Was Cheap in India and Expensive in Europe",
         "blocks": [
           {
             "type": "p",
-            "html": "By c. 1450, European merchants and monarchs faced a commercial problem that had been building for decades. <span class=\"kt\">Spices</span>, pepper from India, cloves from the Maluku Islands, nutmeg from the Banda Islands, cinnamon from Sri Lanka, were among the most valuable commodities in the medieval European economy. They preserved food, disguised the taste of meat that was turning, and functioned as medicine and luxury goods. European aristocrats and wealthy merchants competed to acquire them. But every spice that reached a European market had passed through multiple middlemen: Arab traders in the Indian Ocean, Italian merchants in the eastern Mediterranean, Ottoman merchants after 1453, and each middleman took a cut."
+            "html": "In the last topic, borrowed tools, new ships, and the volta do mar let a ship sail out into the Atlantic and come home. But a voyage cost a fortune: ships, food for months, wages for dozens of sailors, and a real chance that nobody came back with anything to sell. So who paid, and what did they want?"
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Ottoman conquest of Constantinople in 1453</span> intensified this problem. The Ottomans now controlled the principal land and sea routes through which goods moved from Asia to Europe. This did not block trade entirely, the Ottomans were willing to trade, but it meant European merchants were dependent on Ottoman goodwill and Ottoman pricing. For Portugal and Spain, positioned at the western edge of Europe with Atlantic coastlines, there was an obvious theoretical alternative: sail around the Ottomans entirely by finding a direct sea route to Asia."
+            "html": "Start with what Europe wanted: the goods of Asia, above all spices. This was the <span class=\"kt\">spice trade</span>. Pepper grew on the southwest coast of India and cost little there. By the time it reached a market in Europe, it had passed through many hands. Indian Ocean merchants carried it to the Red Sea or the Persian Gulf. It crossed Egypt or Syria. Venetian merchants bought it in ports such as Alexandria and shipped it to Europe. Each of these <span class=\"kt\">middlemen</span> took a profit, so pepper in Europe cost many times what it cost in India."
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Reconquista</span>, the centuries-long campaign by Christian kingdoms of the Iberian Peninsula to reclaim territory from Muslim rulers, provided both the ideology and the institutions for this outward push. By 1492, the last Muslim kingdom in Iberia (Granada) had been conquered by Ferdinand and Isabella of Spain. The Reconquista had created a warrior culture, a crusading religious ideology that framed expansion as the spread of Christianity, military orders experienced in fighting Muslim opponents, and a nobility accustomed to the idea that conquest brought wealth, land, and social status. These institutions and attitudes were easily redirected toward Atlantic exploration, the vocabulary was the same (fighting for God, claiming land for the crown) even if the direction was different."
+            "html": "Whoever could sail straight to India could buy at the low price and sell at the high one. That is the economic cause of the voyages in this topic."
           },
           {
             "type": "p",
-            "html": "Portugal's geographic position reinforced these motivations. Jutting into the Atlantic as the westernmost point of continental Europe, Portugal had long-standing fishing and coastal trading traditions. Portuguese fishermen regularly ventured into the Atlantic to fish the rich waters off the African coast. <span class=\"kt\">Prince Henry the Navigator</span>'s court at Sagres became a center for gathering geographic knowledge, bringing together sailors, mapmakers, astronomers, and translators from across the Mediterranean and Atlantic worlds."
+            "html": "You may have heard that the Ottomans captured Constantinople in 1453 and \"closed\" the spice road, so Europe had to go by sea. Historians reject that story. The spice trade through Egypt and Venice kept running, and Portugal's voyages down the coast of Africa had already been going for decades before 1453. The real reason was the cost of all those middlemen."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>European exploration was not inevitable. It required a specific combination of circumstances: disrupted trade routes raising the price of Asian goods, a crusading religious ideology that could justify expansion, state capacity to fund voyages, and existing maritime expertise. <strong>Contextualization means explaining WHY this happened HERE and NOW, in Portugal and Spain, after 1450, in the Atlantic.</strong> Without these specific conditions, the same technologies might have existed without producing exploration.</p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>State the cause as a mechanism.</strong> \"Europeans wanted spices\" is not yet a cause. \"Spices passed through many middlemen, so a sea route straight to India would let a ruler buy cheap and sell dear\" explains why someone would pay for a voyage.</p>"
         }
       },
       {
         "number": "2",
-        "label": "Key Concept",
-        "heading": "The Portuguese Model — Down Africa and Around to India",
+        "label": "The Role of States",
+        "heading": "Why a Ruler, Not a Merchant, Paid",
         "blocks": [
           {
             "type": "p",
-            "html": "<span class=\"kt\">Prince Henry the Navigator</span> (1394–1460) is one of the most important figures in the history of exploration, not because he sailed anywhere himself, but because of what he organized. At his court in Sagres on the southwestern tip of Portugal, Henry assembled the best geographic knowledge available, funded expeditions year after year, and established a systematic approach to exploration: each voyage would go a little further than the last, gather information about coastlines and currents, and return to add to the collective knowledge base. This was institutional knowledge-building on a scale that had never been applied to ocean exploration before."
+            "html": "A merchant could not carry that risk alone. A voyage into unknown water might take years and come back with nothing at all. Only a ruler had the ships, the money, and the power to keep paying, voyage after voyage. This is <span class=\"kt\">state sponsorship</span>: a government paying for exploration."
           },
           {
             "type": "p",
-            "html": "Henry's motivations were multiple and intertwined. He wanted to find a direct sea route to the gold of West Africa, bypassing the trans-Saharan caravan routes controlled by Islamic merchants. He wanted to find the legendary Christian kingdom of <span class=\"kt\">Prester John</span>, believed to lie somewhere in Africa or Asia, a potential ally against the Islamic world that surrounded Christendom. And he wanted to find a sea route to the spice-producing regions of Asia. These were not contradictory motives, they all pointed in the same direction: south along the African coast and then, perhaps, east toward India."
-          },
-          {
-            "type": "p",
-            "html": "The progress was slow but relentless. Portuguese explorers pushed further south each decade: the Azores in the 1430s, the Cape Verde Islands in the 1460s, the mouth of the Congo River in the 1480s. In 1488, <span class=\"kt\">Bartolomeu Dias</span> rounded what he called the \"Cape of Storms\" at the southern tip of Africa, renamed by the Portuguese king the <span class=\"kt\">Cape of Good Hope</span> to encourage further exploration. Dias had proven that a sea route to the Indian Ocean existed. Ten years later, <span class=\"kt\">Vasco da Gama</span> completed the journey, arriving at Calicut (Kozhikode) on the southwest coast of India in 1498. He brought back enough spices to cover the entire cost of his expedition sixty times over."
-          },
-          {
-            "type": "p",
-            "html": "The strategic implications were immediate. Portugal had found a direct sea route to the spice trade that bypassed every Islamic and Italian middleman. Within a decade, the Portuguese had established armed trading posts (<span class=\"kt\">feitorias</span>) along the African and Indian coasts, using naval power to control the sea lanes and force Asian merchants to trade through Portuguese-controlled ports. This was not the peaceful exchange of goods, it was commercial empire enforced by cannon."
+            "html": "Rulers also paid in things that cost them nothing up front. They promised explorers titles, a share of future profits, and the right to govern whatever lands they found. And they kept the biggest prize for themselves: a <span class=\"kt\">royal monopoly</span>, the crown's sole right to a trade. Rulers wanted the voyages for more than money, too. Spreading Christianity and beating rival kingdoms mattered to them. But the trade is what kept the money coming."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p>The Portuguese voyages were caused by a combination of economic incentive (spice profits), religious motivation (crusading and conversion), state power (royal sponsorship), and technological readiness (the caravel). <strong>No single cause explains Portuguese expansion, the AP expects you to identify MULTIPLE causes and explain how they worked together.</strong> When asked for causation, describe the mechanism: how did each cause contribute, and why did they reinforce each other?</p>"
+          "raw": "<p><strong>Name the state's role.</strong> The College Board asks about the role of states, not just the explorers. A strong answer says who paid, what they gave the explorer, and what they wanted back.</p>"
         }
       },
       {
         "number": "3",
-        "label": "Key Concept",
-        "heading": "Columbus, the Caribbean, and the Encounter",
+        "label": "Portugal",
+        "heading": "Step by Step Around Africa",
         "blocks": [
           {
             "type": "p",
-            "html": "<span class=\"kt\">Christopher Columbus</span> was a Genoese sailor who had spent years trying to find a royal sponsor for an audacious proposal: reach Asia by sailing west across the Atlantic. Columbus's calculation was based on a significant underestimate of the earth's circumference, he believed Asia was roughly where the Americas actually are, making a western route to Asia seem feasible. Most educated Europeans knew the earth was round; the dispute was about its size. Columbus was wrong about the size. The Portuguese rejected his proposal because their geographers correctly calculated that Asia was far too distant for a westward voyage to be practical. Ferdinand and Isabella of Spain, newly unified after the Reconquista and looking for ways to compete with Portugal, agreed to fund him in 1492."
+            "html": "Portugal went first, and it went step by step. In 1415 Portugal captured Ceuta, a Muslim port in North Africa. From the 1420s, a royal prince named Henry paid for voyage after voyage down the coast of West Africa. He did not go on those voyages himself, and the famous \"navigation school\" at Sagres is a legend written down centuries later."
           },
           {
             "type": "p",
-            "html": "On October 12, 1492, Columbus landed in the Bahamas, where he encountered the <span class=\"kt\">Taíno</span> people, a prosperous, organized society who grew crops, fished, traded among islands, and had never seen a European or a horse. Columbus believed he had reached islands off the coast of Asia (hence \"the Indies\" and \"Indians\") and spent three more voyages trying to find the wealthy Asian civilizations he expected. He never acknowledged that he had found something entirely new, continents that no living European knew existed, home to tens of millions of people with sophisticated civilizations."
+            "html": "Each voyage went a little farther and came back with something to sell: gold, ivory, and pepper from the West African coast, and, from the 1440s, enslaved Africans. Each return made the next voyage easier to pay for. In 1482 Portugal built a fort at Elmina, on the Gold Coast, to control a royal trade in gold. In 1488 Bartolomeu Dias sailed around the southern tip of Africa."
           },
           {
             "type": "p",
-            "html": "Spain moved quickly to follow up Columbus's voyages with conquest. The <span class=\"kt\">encomienda system</span>, grants of indigenous labor to Spanish colonists, was established within years of Columbus's first landing. Spanish conquistadors, armed with steel weapons, horses (unknown in the Americas), and firearms, began systematically conquering the Caribbean islands and then the mainland. Hernán Cortés destroyed the Aztec Empire between 1519 and 1521; Francisco Pizarro conquered the Inca Empire between 1532 and 1572. The speed and totality of these conquests shocked even the Spanish themselves, and they were made possible not primarily by military technology, but by the devastating effects of European diseases on populations that had never been exposed to them."
+            "html": "In 1498 Vasco da Gama reached <span class=\"kt\">Calicut</span>, a busy trading port on the southwest coast of India. He lost two of his four ships and more than half his men, but the spices he brought home showed how much money the sea route could make. Lisbon became a major market for pepper, and the king's trading house ran the pepper trade as a royal monopoly."
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Treaty of Tordesillas</span> (1494), brokered by Pope Alexander VI, divided the non-European world between Spain and Portugal along a line drawn through the Atlantic Ocean, everything west of the line to Spain, everything east to Portugal. The treaty reflected the assumption that two Catholic kingdoms could divide the entire world between them, with no reference to the wishes or existence of the hundreds of millions of people who actually lived in those territories. Other European powers, England, France, the Dutch, rejected this arrangement, but it shaped the initial pattern of European colonization for decades."
-          }
-        ],
-        "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Columbus's \"discovery\" of the Americas is one of the most contested phrases in history. The continents were not unknown, they were home to tens of millions of people with complex civilizations. <strong>The AP skill is to recognize multiple perspectives: from the European perspective, this was \"discovery\"; from the Taíno perspective, it was the beginning of catastrophe.</strong> Strong historical thinking acknowledges both perspectives and uses precise language, \"Columbus initiated sustained European contact with the Americas\" is more accurate than \"Columbus discovered America.\"</p>"
-        }
-      },
-      {
-        "number": "4",
-        "label": "Key Concept",
-        "heading": "Magellan's Circumnavigation and What It Proved",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Ferdinand Magellan</span>, a Portuguese navigator sailing under the Spanish flag, led the expedition that completed the first circumnavigation of the globe between 1519 and 1522. The voyage answered the question that Columbus's miscalculation had left open: were the Americas a separate landmass, or were they connected to Asia? Magellan's crossing of the Pacific, a voyage of more than three months across an ocean vastly larger than Columbus had imagined, made the answer undeniable. The Americas were an entirely separate pair of continents, and the Pacific was not a narrow channel but the largest ocean on earth."
-          },
-          {
-            "type": "p",
-            "html": "The human cost of the circumnavigation was enormous. Magellan departed with five ships and 270 crew members. He was killed in the Philippines in April 1521, caught up in a local political conflict he had inserted himself into while attempting to convert indigenous people to Christianity. His surviving captain, <span class=\"kt\">Juan Sebastián Elcano</span>, completed the voyage and limped back to Spain in September 1522 with one ship and eighteen surviving crew members. The spices they carried were enough to cover the entire cost of the expedition and generate a profit, but 252 men had died."
-          },
-          {
-            "type": "p",
-            "html": "The circumnavigation had enormous strategic implications. Spain now understood the true size and shape of the world, and recognized the Pacific as a potential route to the Asian spice trade. The Philippines, named for the Spanish prince who would become Philip II, became Spain's base in Asia, establishing a Pacific trade route that would eventually connect Spanish America to Chinese markets via the <span class=\"kt\">Manila Galleon</span> trade. The world was now, for the first time, truly connected: a single network of sea routes that circled the entire globe."
-          },
-          {
-            "type": "p",
-            "html": "The broader significance was profound. For thousands of years, the Eastern and Western Hemispheres had developed in complete isolation from each other, separate civilizations, separate biological systems, separate histories. Magellan's circumnavigation was the final proof that these separate worlds were in fact one world, connected by a continuous ocean. The consequences of that connection, the exchange of plants, animals, diseases, and people that historians call the <span class=\"kt\">Columbian Exchange</span>, were already transforming every continent on earth. The age of truly global history had begun."
-          }
-        ],
-        "callout": {
-          "label": "AP Thinking, Continuity &amp; Change",
-          "raw": "<p>Before 1492, no regular contact existed between the Eastern and Western Hemispheres. After Magellan's circumnavigation, the globe had been connected for the first time in human history. <strong>This was one of the most significant changes in world history, it created the preconditions for the Columbian Exchange, the Atlantic slave trade, and global capitalism.</strong> Identifying the scale and permanence of this change, and connecting it to subsequent developments, is the core CCOT skill for this period.</p>"
-        }
-      },
-      {
-        "number": "5",
-        "label": "Key Concept",
-        "heading": "The Latecomers Go North: England, France, and the Dutch",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "Portugal and Spain were not the only states willing to finance risky oceanic exploration. <span class=\"kt\">England</span> backed John Cabot's 1497 crossing to the North Atlantic, where fishing grounds and claims in the Newfoundland region became economically important. <span class=\"kt\">France</span> sponsored Verrazzano and <span class=\"kt\">Jacques Cartier</span>, whose voyages along the North American coast and St. Lawrence connected exploration to fisheries, fur trading, and later colonial claims."
-          },
-          {
-            "type": "p",
-            "html": "English and <span class=\"kt\">Dutch</span> expeditions also searched for Northwest and Northeast Passages to Asia. These routes did not become dependable early modern commercial highways because Arctic conditions made them impractical for wooden sailing fleets, but the voyages expanded geographic knowledge and helped states identify other Atlantic commercial opportunities."
-          },
-          {
-            "type": "p",
-            "html": "The economic logic links the whole topic: states spent money on exploration because direct routes, fisheries, fur markets, and access to Asian trade promised revenue and strategic advantage. Voyages that failed at their original goal could still produce maps, claims, and commercial knowledge that made later trade and colonization possible."
+            "html": "Portugal then seized a chain of fortified ports from Africa to India and on to Southeast Asia, including Goa in 1510 and Malacca in 1511. It did not conquer large lands. It held ports and tried to control the sea trade between them. This is the <span class=\"kt\">trading-post empire</span> the College Board names. How those posts worked, and how Asian and African rulers answered them, is Topic 4.4."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p>For every voyage, connect <strong>state sponsorship -> economic or political motive -> route -> commercial or geographic effect</strong>. That causal chain is more useful than memorizing explorer names by themselves.</p>"
+          "raw": "<p><strong>Follow one state from cause to effect.</strong> For Portugal: the crown paid for voyages because it wanted gold and then spices, the voyages went step by step around Africa to India, and the effect was more trade with Africa and Asia and a global trading-post empire.</p>"
+        }
+      },
+      {
+        "number": "4",
+        "label": "Spain",
+        "heading": "A Gamble on Sailing West",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Christopher Columbus, a sailor from Genoa, wanted to reach Asia by sailing west. Portugal's king turned him down, because his experts judged that Columbus had badly underestimated the distance to Asia, and they were right. Portugal also already held the route south along Africa. If Spain wanted its own way to Asia, it would have to go west."
+          },
+          {
+            "type": "p",
+            "html": "In 1492, right after conquering Granada, Queen Isabella and King Ferdinand signed a contract with Columbus. If he succeeded, he would be \"Admiral of the Ocean Sea,\" govern the lands he found, and keep a tenth of the wealth from them. Columbus reached the Caribbean in October 1492, not Asia, and brought back little gold. But his letter about the voyage was printed again and again across Europe, and Spain's next fleet, in 1493, was at least seventeen ships instead of three."
+          },
+          {
+            "type": "p",
+            "html": "Spain and Portugal now both claimed newly found lands, so in 1494 they signed the <span class=\"kt\">Treaty of Tordesillas</span>. It drew a line through the Atlantic: lands to the west for Spain, lands to the east for Portugal. Nobody asked the people who lived in those lands."
+          },
+          {
+            "type": "p",
+            "html": "Spain kept going, across the Pacific too. In 1519 Ferdinand Magellan, a Portuguese captain working for Spain, sailed west to reach the Spice Islands. Magellan was killed in the Philippines in 1521. In 1522 Juan Sebastián Elcano brought one ship and eighteen men home to Spain, completing the first <span class=\"kt\">circumnavigation</span>, a voyage all the way around the world. The College Board names the effect of Spain's voyages: they dramatically increased European interest in ocean travel and trade. What happened in the Americas next is the next three topics."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Making Connections",
+          "raw": "<p><strong>Connect one state's decision to another's.</strong> Spain's choice did not happen alone. Portugal turned Columbus down and already held the African route, so Spain's only way to Asia was west. Showing how one development led to another is the skill this topic practices.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "The Northern Crossings",
+        "heading": "Looking for Another Way to Asia",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "England, France, and the Dutch wanted the trade of Asia too. But Portugal held the route around Africa, and Spain held the route west. So they paid for voyages across the North Atlantic, looking for another way to Asia over the top of the world: a <span class=\"kt\">Northwest Passage</span> above North America, or a northeast route above Russia."
+          },
+          {
+            "type": "p",
+            "html": "In 1497 England sent John Cabot, an Italian sailor, across the North Atlantic, and he reached the coast of North America. France sent Giovanni da Verrazzano along that coast in 1524, and Jacques Cartier up the St. Lawrence River in the 1530s. Dutch voyages under Willem Barentsz in the 1590s tried to sail around the north of Russia. In 1609 Henry Hudson, sailing for a Dutch trading company, explored the river that now carries his name."
+          },
+          {
+            "type": "p",
+            "html": "None of them found a sea route to Asia. Arctic ice blocked every way through. But the voyages paid in other ways. The sea off Newfoundland was full of cod, and within a few decades dozens of French ships a year were fishing there. Along the St. Lawrence, the French traded with Indigenous peoples for furs, and the <span class=\"kt\">fur trade</span> grew. And each state claimed North American coasts where it would later build colonies."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Making Connections",
+          "raw": "<p><strong>A voyage can miss its goal and still have an effect.</strong> The northern crossings failed to find a route to Asia, but they produced fish, furs, and land claims. When you explain an effect, say what the voyage actually produced, not just what it was looking for.</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "The Pattern",
+        "heading": "Every Voyage That Paid Brought More Ships",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Put the three stories side by side and the same pattern repeats. A ruler paid. A voyage came back with gold, spices, or news of new lands. That return made the next voyage easier to fund, and it made rival rulers want voyages of their own."
+          },
+          {
+            "type": "p",
+            "html": "Portugal got a trading-post empire from Africa to Asia. Spain got lands across the Atlantic and a route across the Pacific, and all of Europe got interested. England, France, and the Dutch got no route to Asia, but they got fish, furs, and claims."
+          },
+          {
+            "type": "p",
+            "html": "Columbus was looking for a route to Asia. What he started was an exchange of plants, animals, and diseases that nobody planned. That is the next topic."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Answer both halves.</strong> The College Board asks for the role of states and for the economic causes and effects. One strong sentence does both: who paid, what they wanted, and what they got.</p>"
         }
       }
     ],
-    "takeaway": "European maritime exploration was state-supported and driven by overlapping economic, religious, and political motives. Portugal developed the Cape route to Africa and Asia; Spain sponsored Columbus and the Magellan expedition across the Atlantic and Pacific; England, France, and the Dutch sponsored northern Atlantic voyages such as those of John Cabot, Jacques Cartier, and Dutch Arctic navigators. The economic pattern matters: rulers invested in voyages to gain more direct access to commodities and trade, and the resulting routes, maps, fisheries, fur markets, and claims expanded later commercial opportunities.",
+    "takeaway": "Asian spices passed through many middlemen, so a sea route straight to India promised huge profits. Only rulers could carry the risk, so states paid, with money, ships, titles, and shares. Portugal went step by step around Africa to India and built a trading-post empire. Spain backed Columbus's westward gamble, and its voyages across the Atlantic and Pacific made all of Europe interested. England, France, and the Dutch looked for a northern route to Asia, never found one, and got fish, furs, and land claims instead. Every voyage that paid made the next one easier to fund.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
         "num": "01",
         "skill": "Causation",
-        "text": "Explain at least TWO motivations behind European maritime exploration after c. 1450. For each, explain what specifically drove the motivation and give one specific example.",
-        "placeholder": "The first motivation was... It drove exploration because... An example is... The second motivation was..."
+        "text": "Explain ONE economic reason European rulers paid for ocean voyages. Then explain why a ruler, not a merchant, was the one who paid.",
+        "placeholder": "Rulers paid because... A sea route would... A ruler paid instead of a merchant because..."
       },
       {
         "num": "02",
-        "skill": "Continuity & Change",
-        "text": "Choose ONE English, French, or Dutch-sponsored northern Atlantic voyage. Explain the route, the economic or commercial goal, and one effect even if the voyage did not find a usable passage to Asia.",
-        "placeholder": "The state sponsored... The voyage followed... Its economic goal was... One effect was..."
+        "skill": "Causation",
+        "text": "Choose Portugal OR Spain. Name who paid for its voyages, what they wanted, and ONE economic effect of those voyages.",
+        "placeholder": "In ___, the voyages were paid for by... They wanted... One effect was..."
       },
       {
         "num": "03",
-        "skill": "Argumentation",
-        "text": "Compare ONE Iberian voyage with ONE English, French, or Dutch-sponsored voyage. What economic motive did they share, and what difference in route or outcome mattered?",
-        "placeholder": "Both voyages were motivated by... They differed because... That difference mattered because..."
+        "skill": "Making Connections",
+        "text": "Explain how ONE state's voyages connected to ANOTHER state's decision to pay for voyages of its own. Then name one thing the English, French, or Dutch voyages found instead of a route to Asia.",
+        "placeholder": "Because ___ already..., ___ decided to... The northern voyages found..."
       }
     ],
-    "builderBody": "After answering the three questions, build a prompt for your AI Coach. The prompt will include your responses and ask the coach to give feedback on your historical thinking, pointing out gaps, suggesting stronger evidence, and asking a follow-up question.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "",
     "navPrev": {

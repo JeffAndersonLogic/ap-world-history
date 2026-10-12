@@ -2,6 +2,12 @@
   const lesson = window.BEHISTORICAL_LESSON;
   if (!lesson) return;
 
+  lesson.classPresentation = {
+    title: 'Class Slides: Who Paid?',
+    desc: 'Follow the story: rulers paid for voyages because they wanted the trade, and every voyage that paid made the next one easier to fund.',
+    url: 'presentation-topic-4-2-student.html'
+  };
+
   lesson.collegeBoardKeyConcepts = [
     {
       "code": "Unit 4: Learning Objective B",
@@ -43,80 +49,82 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: Why They Sailed',
+    title: 'First & 10: Who Paid?',
     embedUrl: 'first-and-10-topic-4-2-exploration-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 4.2 lesson path.'
+    note: 'Read the First & 10 narrative, answer the three questions, then return to the 4.2 lesson path.'
   };
 
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'Portuguese route, east around Africa', detail: 'The Portuguese route went south along the African coast and around the Cape of Good Hope to reach India, confirmed viable by Dias (1488) and first completed by da Gama (1498). This route gave Portugal direct access to Asian spice markets.' },
-      { label: 'Spanish route, west across the Atlantic', detail: 'Columbus sailed west hoping to reach Asia; instead found the Caribbean (1492). Subsequent Spanish voyages established contact with the Americas and enabled the conquest of the Aztec and Inca empires.' },
-      { label: 'Treaty of Tordesillas line (1494)', detail: 'A north-south line drawn through the Atlantic divided the world between Spain (west) and Portugal (east). The line gave Brazil to Portugal and most of the Americas to Spain, all without consulting any non-European peoples.' },
-      { label: 'Geographic takeaway', detail: 'By 1522, the Magellan-Elcano circumnavigation had proved the world\'s oceans were connected, the Americas were separate from Asia, and the Pacific was vastly larger than Columbus had imagined, establishing the true geographic scale of the planet.' }
+      { label: 'Portugal, around Africa', detail: 'Paid for by Prince Henry and then the kings. Step by step down the West African coast, around the southern tip of Africa with Dias in 1488, and on to Calicut in India with da Gama in 1498.' },
+      { label: 'Spain, west across the Atlantic', detail: 'Paid for by Isabella and Ferdinand. Columbus reached the Caribbean in 1492. Magellan\'s fleet later sailed on across the Pacific (1519 to 1522); that route runs off the edge of this map.' },
+      { label: 'England, France, and the Dutch, north', detail: 'Cabot for England in 1497, Cartier for France in the 1530s, Barentsz for the Dutch in the 1590s. Each looked for another route to Asia; none found one.' },
+      { label: 'Elmina, Calicut, Malacca', detail: 'A Portuguese fort for the gold trade (1482), the Indian port da Gama reached (1498), and a port Portugal seized (1511): three links in a trading-post empire.' },
+      { label: 'North Atlantic coast', detail: 'Where the northern voyages found cod, furs, and land to claim instead of a route to Asia.' }
     ]
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg'
+    map:             '../assets/images/instructional-maps/topic-4-2.svg',
+    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg',
+    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
+    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
+    skill:           '../assets/images/instructional-maps/topic-4-2.svg',
+    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg',
+    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
+    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
+    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
+    checkpoint2:     '../assets/images/instructional-maps/topic-4-2.svg'
   };
 
   lesson.beInTheRoom = {
     url: '../beintheroom/unit-4/the-santa-fe-bargain.html',
-    desc: 'Negotiate the 1492 Santa Fe bargain: decide whether to sponsor Columbus, limit his contractual authority, and define Spanish conduct toward rival claims and inhabited lands.'
+    desc: 'Advise Isabella and Ferdinand at Santa Fe in 1492: decide whether to pay for Columbus\'s voyage west, what to promise him, and what to do about Portugal\'s claims.'
   };
 
   lesson.skillBuilder = {
-    label: 'Causation practice',
-    title: 'Causation: Why Did European States Sponsor Exploration?',
-    intro: 'Causation requires identifying multiple causes and explaining how they worked together. For Topic 4.2, the question is not just WHAT happened (European states sponsored exploration) but WHY, what combination of motivations, enabling conditions, and specific circumstances produced this historical outcome in this place at this time. A strong causal argument identifies at least two causes, explains how each contributed, and avoids the trap of treating any single factor as the sole explanation.',
+    label: 'Making Connections practice',
+    title: 'Making Connections: How One State\'s Voyage Led to Another\'s',
+    intro: 'Making Connections means explaining how one historical development relates to another. For Topic 4.2, the connection runs between states: what one ruler paid for changed what the next ruler decided to pay for. A strong answer names the first development, names the second, and explains the link with because or so.',
     steps: [
-      { label: 'Identify multiple causes', text: 'Economic motivation (bypassing Ottoman-controlled spice routes), religious ideology (crusading and converting souls from the Reconquista), state competition (rivalry between Portugal and Spain), and technological readiness (caravel, astrolabe) all contributed. No single cause explains European exploration.' },
-      { label: 'Explain how causes worked together', text: 'The disruption of spice trade routes (economic cause) created incentive. The Reconquista ideology (religious cause) provided justification and directed military energy outward. State rivalry (political cause) created urgency, if Portugal found the sea route to Asia, Spain needed its own route. Technology (enabling condition) made all of it feasible.' },
-      { label: 'Connect to specific evidence', text: 'Prince Henry\'s court at Sagres combined all these factors: royal patronage (state), crusading purpose (religion), commercial intelligence gathering (economics), and systematic navigation and cartography (technology). Da Gama\'s 1498 voyage succeeded because all four causes aligned at the same moment.' }
+      { label: 'Name the first development', text: 'Portugal paid for voyages down the coast of Africa for decades, and by the 1480s it held that route to the south.' },
+      { label: 'Name the second development', text: 'In 1492 Isabella and Ferdinand of Spain paid for Columbus to sail west across the Atlantic to reach Asia.' },
+      { label: 'Explain the link', text: 'Because Portugal already held the route around Africa, and had turned Columbus down, Spain\'s only way to reach Asia\'s trade was west. One state\'s voyages shaped another state\'s choice.' }
     ],
-    prompt: 'In 3–4 sentences, explain why European states, specifically Portugal and/or Spain, sponsored maritime exploration after c. 1450. Identify at least two distinct causes (economic, religious, political, or technological), explain how each contributed, and explain why this happened in the Iberian Peninsula rather than elsewhere in Europe.'
+    prompt: 'In 2 to 3 sentences, explain how ONE state\'s voyages connected to ANOTHER state\'s decision to pay for voyages of its own. Name both states and both developments, and use because or so to show the link. (Example pairs: Portugal and Spain; Spain and Portugal and the northern states; Columbus\'s first voyage and the 1493 fleet.)'
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: Motives and the Portuguese Model',
+      title: 'Checkpoint 1: The Role of States',
       subtitle: 'Checks Learning Target 1 and Success Criteria 1.',
-      cardDesc: 'God, Glory, Gold, the motivations behind European exploration and the Portuguese model of systematic state-sponsored voyaging.',
+      cardDesc: 'Why rulers, not merchants, paid for ocean voyages, and what they offered in return.',
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Explain at least TWO motivations behind European maritime exploration after c. 1450. For each motivation, explain what drove it specifically (not just a label like "gold" but what specific economic reality made profit-seeking a motive), and connect it to a specific state action or voyage.',
+      prompt: 'Explain ONE economic reason European rulers paid for ocean voyages after c. 1450. Then explain why a ruler, not a merchant, paid, and name ONE thing a ruler gave an explorer in return.',
       responseType: 'Checkpoint 1',
-      terms: ['Reconquista', 'spice trade', 'Prince Henry', 'crusading', 'God Glory Gold', 'state sponsorship', 'Ottoman Empire', 'Lisbon', 'feitorias', 'cartography'],
-      focus: ['Name at least two distinct motivations (religious, economic, and/or political).', 'For each, explain the specific historical context that made it a motivation (not just a label).', 'Connect each motivation to a specific Portuguese or Spanish action.']
+      terms: ['state sponsorship', 'spice trade', 'middlemen', 'royal monopoly', 'Prince Henry', 'Isabella and Ferdinand', 'titles', 'share of profits', 'risk'],
+      focus: ['Name one economic reason, explained as a mechanism, not a label.', 'Explain why only a ruler could carry the risk.', 'Name one thing a ruler offered an explorer.']
     },
     {
-      title: 'Checkpoint 2: Voyages, Routes, and Economic Effects',
+      title: 'Checkpoint 2: Two Voyages, Two Sponsors, Cause and Effect',
       subtitle: 'Checks Learning Targets 2–3 and Success Criteria 2–3.',
-      cardDesc: 'Portuguese and Spanish routes plus English, French, and Dutch northern Atlantic exploration.',
+      cardDesc: 'One Portuguese or Spanish voyage, one English, French, or Dutch voyage: who paid, why, and what it produced.',
       learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Describe ONE Portuguese or Spanish voyage and ONE English, French, or Dutch-sponsored northern Atlantic voyage. For each, identify the route and state sponsor. Then explain one economic cause that motivated the voyage and one economic or commercial effect it produced or made possible.',
+      prompt: 'Choose ONE Portuguese or Spanish voyage, such as Vasco da Gama\'s or Columbus\'s, and ONE English, French, or Dutch voyage, such as Cabot\'s, Cartier\'s, or Hudson\'s. For each, name the state that paid, explain ONE economic reason it paid, and explain ONE economic effect the voyage caused. Then explain how one of these voyages connects to the other state\'s decision to explore.',
       responseType: 'Checkpoint 2',
-      terms: ['Vasco da Gama', 'Columbus', 'Magellan', 'John Cabot', 'Jacques Cartier', 'Dutch exploration', 'Cape of Good Hope', 'Caribbean', 'St. Lawrence', 'fisheries', 'fur trade', 'state sponsorship', 'trade routes'],
-      focus: ['Use one Iberian voyage and one northern Atlantic voyage with specific route evidence.', 'Identify the state sponsor and economic motivation for each.', 'Explain an economic or commercial effect such as expanded trade access, fisheries, fur commerce, geographic knowledge, or later claims.']
+      skill: 'Causation',
+      terms: ['Vasco da Gama', 'Columbus', 'Magellan', 'Elcano', 'John Cabot', 'Jacques Cartier', 'Henry Hudson', 'state sponsorship', 'trading-post empire', 'Treaty of Tordesillas', 'route to Asia', 'cod fishing', 'fur trade', 'economic effect'],
+      focus: ['Use one Iberian voyage and one northern voyage, each with its sponsor.', 'Give one economic cause and one economic effect for each.', 'Connect the two: how one state\'s voyages shaped another state\'s choice.']
     }
   ];
 
   lesson.evidenceLab = {
-    title: 'Evidence Lab: Voyages, Claims, and the Map of a New Oceanic World',
-    task: 'Choose TWO cards that help answer why exploration mattered, not just where explorers went. Distinguish contemporary traces, later commemorations, and secondary maps. Look for evidence of state sponsorship, territorial claiming, route knowledge, or changing geographic understanding, then identify what each source leaves out.',
-    prompt: 'Using two evidence cards, make one claim about how state-sponsored exploration changed European geographic knowledge or imperial ambitions after c. 1450. Cite one concrete detail from each source, explain how it supports your claim, and identify one perspective or chronology limitation.'
+    title: 'Evidence Lab: Who Paid, and What For',
+    task: 'Choose TWO cards. For each, say what kind of source it is (a monument, a later picture, a map made at the time, or a modern map), what it directly shows, and what it suggests about who paid for exploration or what the voyages produced.',
+    prompt: 'Using two cards, make one claim about the role of states or the economic causes or effects of exploration after c. 1450. For each card, give one detail you can see, explain how it supports your claim, and name one thing the source cannot tell you.'
   };
 
   lesson.images = [
@@ -124,29 +132,29 @@
       title: 'Vasco da Gama Pillar, Malindi',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Pillar_of_Vasco_da_Gama.jpg',
-      caption: 'Portuguese route-and-claim evidence. The pillar at Malindi on the East African coast commemorates the Portuguese presence along the route da Gama used toward India.',
-      prompt: 'NOTICE the monument\'s placement and Christian/royal symbolism. What can you INFER about how Portuguese voyages combined navigation, diplomacy, and territorial claims? What can the monument not tell you about how local rulers viewed the Portuguese?'
+      caption: 'A monument, in a modern photograph. Da Gama\'s fleet set up a stone marker at Malindi, on the coast of Kenya, in 1498, on the way to India; the pillar has been rebuilt and repaired since. Portuguese captains carried markers like this to claim routes for their king.',
+      prompt: 'NOTICE the cross on top and where the pillar stands, on the shore. What can you INFER about who the voyage was working for, and what it was claiming? What can this monument not tell you about how the ruler of Malindi saw the Portuguese?'
     },
     {
-      title: 'Columbus Taking Possession',
+      title: 'Columbus Taking Possession, a Later Picture',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Columbus_Taking_Possession.jpg',
-      caption: 'Later imperial-memory evidence. A later European representation depicts Columbus formally claiming land in the Caribbean for the Spanish crown.',
-      prompt: 'NOTICE who performs the claim, who witnesses it, and whose authority is visually centered. What can you INFER about European assumptions of sovereignty? Why is a later commemorative image not neutral eyewitness evidence of 1492?'
+      caption: 'A picture made in the 1800s, more than three centuries after 1492, imagining Columbus claiming land in the Caribbean for the Spanish crown. It is a later memory of the event, not an eyewitness record.',
+      prompt: 'NOTICE the flags and who stands at the center. Whose authority is the artist showing? What can you INFER about who the voyage was for? Why can a picture made centuries later not tell you what really happened that morning?'
     },
     {
       title: 'Waldseemüller World Map, 1507',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Waldseemuller_map_2.jpg',
-      caption: 'Changing-knowledge evidence. The printed Waldseemüller map incorporated recent Atlantic information and famously applied the name America to lands across the Atlantic.',
-      prompt: 'NOTICE how the Atlantic world is represented relative to older map traditions. What can you INFER about the speed at which voyage reports changed European geographic knowledge? What uncertainties remain visible?'
+      caption: 'A world map printed at Saint-Dié (today in France) in 1507, fifteen years after Columbus\'s first voyage. It used reports of the Spanish and Portuguese voyages and was the first map to name America.',
+      prompt: 'NOTICE the new lands on the far left. What can you INFER about how quickly news of the voyages spread, and how it increased European interest in ocean travel? What can a map printed in Europe not tell you about the people who lived in those lands?'
     },
     {
-      title: 'Exploration Routes and Treaty of Tordesillas',
+      title: 'Three Ways to Asia, and Who Paid',
       url: '../assets/images/instructional-maps/topic-4-2.svg',
       sourceUrl: '../assets/images/instructional-maps/topic-4-2.svg',
-      caption: 'Secondary geographic reconstruction. The BeHistorical map compares Portuguese and Spanish routes and marks the Treaty of Tordesillas division.',
-      prompt: 'NOTICE how routes and the treaty line divide oceanic space. What can you INFER about state rivalry and imperial ambition? What does a modern reconstruction not show about Indigenous sovereignty or local knowledge?'
+      caption: 'A modern BeHistorical map, not a source from the time. It shows the three directions European states paid for: Portugal around Africa, Spain west, and England, France, and the Dutch in the north.',
+      prompt: 'NOTICE the northern routes and where they end. What can you INFER about why England, France, and the Dutch sailed north? What does a modern map leave out about what each voyage actually found?'
     }
   ];
 })();

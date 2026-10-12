@@ -1785,7 +1785,8 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Finish Checkpoint 2, and any other required 4.1 module you did not complete in class.', due: 'Friday, October 30' }
       ],
-      homeworkDue: 'Friday, October 30'
+      homeworkDue: 'Friday, October 30',
+      dueDate: '2026-10-30'
     },
     /* 2026-10-29  <-  lesson-4-1-technological-innovations.js */
     {
@@ -1812,7 +1813,62 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Finish Checkpoint 2, and any other required 4.1 module you did not complete in class.', due: 'Monday, November 2' }
       ],
-      homeworkDue: 'Monday, November 2'
+      homeworkDue: 'Monday, November 2',
+      dueDate: '2026-11-02'
+    },
+    /* 2026-10-30  <-  lesson-4-2-exploration.js */
+    {
+      date: '2026-10-30',
+      cohort: 'green',
+      unit: 'Unit 4: Transoceanic Interconnections',
+      topic: 'Exploration: Causes and Events',
+      learningTargets: [
+        { text: 'I can describe the role of states in maritime exploration: why rulers, not merchants, paid for voyages and what they offered explorers in return.', label: 'Governance' },
+        { text: 'I can explain the economic causes and effects of Portuguese and Spanish exploration, from the route around Africa and the trading-post empire to Columbus and the voyages across the Atlantic and Pacific.', label: 'Economic Systems' },
+        { text: 'I can explain why England, France, and the Dutch sponsored northern Atlantic crossings, and what those voyages produced instead of a route to Asia.', label: 'Economic Systems' }
+      ],
+      successCriteria: [
+        { text: 'I can explain one economic reason rulers paid for voyages (such as cutting out the middlemen in the spice trade) and name one thing a ruler gave an explorer in return (such as titles or a share of the profits).', label: 'Governance' },
+        { text: 'I can name who paid for Portuguese and Spanish voyages, what they wanted, and one economic effect for each: Portugal\'s trading-post empire from Africa to Asia, and Spain\'s voyages making all of Europe more interested in ocean trade.', label: 'Economic Systems' },
+        { text: 'I can use one English, French, or Dutch voyage to explain the search for another route to Asia and one effect it had, such as cod fishing, the fur trade, or land claims.', label: 'Economic Systems' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.2 module you did not complete in class.', due: 'your next class' }
+      ],
+      homeworkDue: 'your next class'
+    },
+    /* 2026-11-02  <-  lesson-4-2-exploration.js */
+    {
+      date: '2026-11-02',
+      cohort: 'silver',
+      unit: 'Unit 4: Transoceanic Interconnections',
+      topic: 'Exploration: Causes and Events',
+      learningTargets: [
+        { text: 'I can describe the role of states in maritime exploration: why rulers, not merchants, paid for voyages and what they offered explorers in return.', label: 'Governance' },
+        { text: 'I can explain the economic causes and effects of Portuguese and Spanish exploration, from the route around Africa and the trading-post empire to Columbus and the voyages across the Atlantic and Pacific.', label: 'Economic Systems' },
+        { text: 'I can explain why England, France, and the Dutch sponsored northern Atlantic crossings, and what those voyages produced instead of a route to Asia.', label: 'Economic Systems' }
+      ],
+      successCriteria: [
+        { text: 'I can explain one economic reason rulers paid for voyages (such as cutting out the middlemen in the spice trade) and name one thing a ruler gave an explorer in return (such as titles or a share of the profits).', label: 'Governance' },
+        { text: 'I can name who paid for Portuguese and Spanish voyages, what they wanted, and one economic effect for each: Portugal\'s trading-post empire from Africa to Asia, and Spain\'s voyages making all of Europe more interested in ocean trade.', label: 'Economic Systems' },
+        { text: 'I can use one English, French, or Dutch voyage to explain the search for another route to Asia and one effect it had, such as cod fishing, the fur trade, or land claims.', label: 'Economic Systems' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.2 module you did not complete in class.', due: 'your next class' }
+      ],
+      homeworkDue: 'your next class'
     }
   ],
 

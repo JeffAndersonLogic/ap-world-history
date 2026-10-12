@@ -30,24 +30,24 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 4: Transoceanic Interconnections",
     topic: "Topic 4.2",
     title: "Exploration: Causes and Events",
-    subtitle: "Why European states sponsored maritime exploration after c. 1450, and what the key voyages of the Portuguese and Spanish found and created",
+    subtitle: "Why European rulers paid for ocean voyages after c. 1450, and what Portugal, Spain, England, France, and the Dutch got for it",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 
   learningTargets: [
     {
-      target: "I can describe the role of states in sponsoring new transoceanic maritime exploration, and explain the religious, economic, and political motivations behind it.",
+      target: "I can describe the role of states in maritime exploration: why rulers, not merchants, paid for voyages and what they offered explorers in return.",
       kc: 'KC-4.1.III',
       theme: "Governance"
     },
     {
-      target: "I can describe the key European voyages: Portuguese exploration of the African coast and route to India, Columbus's Caribbean voyage, and Magellan's circumnavigation.",
+      target: "I can explain the economic causes and effects of Portuguese and Spanish exploration, from the route around Africa and the trading-post empire to Columbus and the voyages across the Atlantic and Pacific.",
       kc: 'KC-4.1.III.A; KC-4.1.III.B',
       theme: "Economic Systems"
     },
     {
-      target: "I can explain how English, French, and Dutch states sponsored northern Atlantic crossings in search of alternative routes and trading opportunities, and connect those voyages to the economic causes and effects of exploration.",
+      target: "I can explain why England, France, and the Dutch sponsored northern Atlantic crossings, and what those voyages produced instead of a route to Asia.",
       kc: 'KC-4.1.III.C',
       theme: "Economic Systems"
     }
@@ -55,17 +55,17 @@ window.BEHISTORICAL_LESSON = {
 
   successCriteria: [
     {
-      criteria: "I can explain at least two specific motivations for European exploration, including economic incentives (spice trade profits) and religious motivations (conversion, crusading), and connect each to specific state actions.",
+      criteria: "I can explain one economic reason rulers paid for voyages (such as cutting out the middlemen in the spice trade) and name one thing a ruler gave an explorer in return (such as titles or a share of the profits).",
       kc: 'KC-4.1.III',
       theme: "Governance"
     },
     {
-      criteria: "I can trace the key routes: Portuguese south along Africa and around the Cape to India (Dias 1488, da Gama 1498), Columbus to the Caribbean (1492), Magellan's circumnavigation (1519–1522).",
+      criteria: "I can name who paid for Portuguese and Spanish voyages, what they wanted, and one economic effect for each: Portugal's trading-post empire from Africa to Asia, and Spain's voyages making all of Europe more interested in ocean trade.",
       kc: 'KC-4.1.III.A; KC-4.1.III.B',
       theme: "Economic Systems"
     },
     {
-      criteria: "I can use specific English, French, and Dutch exploration examples to show how northern Atlantic sponsorship expanded routes, geographic knowledge, fishing or fur-trade opportunities, and competition for commerce.",
+      criteria: "I can use one English, French, or Dutch voyage to explain the search for another route to Asia and one effect it had, such as cod fishing, the fur trade, or land claims.",
       kc: 'KC-4.1.III.C',
       theme: "Economic Systems"
     }
@@ -111,66 +111,66 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: "Why They Sailed: European Exploration, 1415–1522",
-    intro: "Use these cards to explain why European states sponsored maritime exploration after c. 1450, what motivated rulers and merchants to fund dangerous and expensive voyages, and what the key expeditions of the Portuguese and Spanish found, created, and destroyed.",
+    title: "Who Paid, and What For: European Exploration, c. 1415 to 1610",
+    intro: "Use these cards after the First & 10. Each one answers the topic's three questions for one part of the story: who paid, what they wanted, and what they got.",
     videos: [],
     segments: [
       {
-        title: "Why Europe? Motives, the Reconquista, and the Disrupted Trade Routes",
+        title: "The Cause: Spices, Middlemen, and Why a Ruler Paid",
         bullets: [
-          "Asian spices, silk, and luxury goods were highly profitable in European markets, but long-distance commerce passed through multiple established Mediterranean and Asian networks and intermediaries. European rulers and merchants therefore had strong incentives to seek direct maritime access to profitable markets. The **Ottoman conquest of Constantinople (1453)** changed the political setting of eastern Mediterranean trade, but it did not simply close all overland trade or single-handedly cause oceanic exploration; the search for maritime routes had broader economic, political, religious, and technological causes.",
-          "**Portugal and Spain** had both just completed the **Reconquista**, the centuries-long campaign to expel Muslims from the Iberian Peninsula (completed 1492 in Spain). That campaign had produced military institutions, a warrior nobility, and a crusading religious ideology that could be redirected toward Atlantic expansion. Exploring and 'discovering' new lands offered the Spanish and Portuguese crowns a way to convert souls, claim territory, and project power without the constraints of established European politics.",
-          "**Prince Henry the Navigator** (1394–1460) organized Portuguese exploration of the African coast from his court at Sagres, not sailing himself but systematically sponsoring voyages year by year, gathering geographic and commercial intelligence. His motives combined the commercial (find gold and spice routes), the religious (find the legendary Christian kingdom of Prester John as an ally against Islam), and the political (establish Portuguese maritime dominance). The Portuguese model was state-sponsored, systematic, and cumulative.",
-          "The shorthand **'God, Glory, and Gold'** captures the three overlapping European motivations: religious conversion and crusading ideology, national prestige and competition between states, and commercial profit from trade and extraction. In practice, these motivations reinforced each other: conquering territory could bring both souls to convert and wealth to extract."
+          "Pepper grew on the southwest coast of India and cost little there. On its way to Europe it passed through **middlemen**: Indian Ocean merchants, traders in Egypt or Syria, and Venetian merchants. Each took a profit, so pepper in Europe cost many times more. A sea route straight to India would let a ruler buy cheap and sell dear. That is the main **economic cause** of these voyages.",
+          "The Ottoman capture of Constantinople in 1453 did **not** close the spice trade. Spices kept reaching Europe through Egypt and Venice, and Portugal's voyages down the African coast had started decades before 1453.",
+          "A voyage into unknown water might take years and bring back nothing, which a merchant could not risk. Only a ruler had the ships, the money, and the power to keep paying. This is **state sponsorship**. Rulers also paid in promises that cost nothing up front: titles, a share of future profits, and the right to govern new lands.",
+          "Rulers had other motives too, such as spreading Christianity and beating rival kingdoms. But the trade is what kept the money coming."
         ],
         image: {
           title: "Vasco da Gama",
-          caption: "Portrait of Vasco da Gama, the Portuguese explorer who reached India by sea in 1498, establishing the first direct maritime trade route between Europe and Asia.",
+          caption: "An engraving of Vasco da Gama, the Portuguese commander who reached India by sea in 1498, made long after his lifetime. It shows how he was remembered, not what he looked like.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg"
         }
       },
       {
-        title: "The Portuguese Model — Down Africa and Around to India",
+        title: "Portugal: Step by Step to a Trading-Post Empire",
         bullets: [
-          "The Portuguese systematically explored the African coast southward from 1415, establishing a series of trading posts (**feitorias**) along the West African coast. Each voyage extended the known coastline by a few hundred miles, with the geographic knowledge recorded in portolan charts and brought back to Lisbon. By 1471, the Portuguese had reached the equator; by 1482, they had established a major fort at Elmina (modern Ghana), trading for gold and enslaved Africans.",
-          "**Bartolomeu Dias** rounded the **Cape of Good Hope** in 1488, the southern tip of Africa, proving that a sea route to the Indian Ocean was possible from the Atlantic. Dias's crew forced him to turn back before he could continue to India, but the critical geographic fact was established: Africa had a southern end, and the ocean beyond it connected to Asia.",
-          "**Vasco da Gama** completed the voyage in 1498, reaching **Calicut** (Kozhikode) on the southwestern coast of India. He returned with enough spices to cover his entire voyage cost sixty times over, a commercial return that electrified European investors and confirmed the viability of the eastern sea route. Portugal subsequently established a network of fortified trading posts across the Indian Ocean, using naval power to control key straits and ports.",
-          "The Portuguese model was extractive and militaristic: they did not primarily colonize territory but seized control of existing trade routes by force, threatening established Arab, Indian, and Swahili traders. This created enormous wealth for Portugal but also provoked resistance across the Indian Ocean world."
+          "In 1415 Portugal captured **Ceuta**, a Muslim port in North Africa. From the 1420s a royal prince, Henry, paid for voyage after voyage down the West African coast. He did not go on them, and the \"navigation school at Sagres\" is a later legend.",
+          "Each voyage came back with something to sell: gold, ivory, pepper, and, from the 1440s, enslaved Africans. Each return made the next voyage easier to pay for. In 1482 Portugal built a fort at **Elmina** to control a royal trade in gold.",
+          "**Bartolomeu Dias** sailed around the southern tip of Africa in 1488. **Vasco da Gama** reached **Calicut** in India in 1498. He lost two of his four ships and more than half his men, but the spices he brought home showed how much money the route could make. Lisbon became a major pepper market, and the crown ran the pepper trade itself.",
+          "Portugal then seized fortified ports such as **Goa** (1510) and **Malacca** (1511). It held ports, not large lands, and tried to control the sea trade between them: a **global trading-post empire**. How those posts worked is Topic 4.4."
         ],
         image: {
-          title: "Pillar of Vasco da Gama",
-          caption: "The Padrão commemorating Vasco da Gama's arrival in India in 1498, one of several stone pillars erected by Portuguese explorers to claim territorial presence along new routes.",
+          title: "The Vasco da Gama Pillar, Malindi",
+          caption: "A modern photograph of the pillar at Malindi, Kenya. Da Gama's fleet set up a stone marker here in 1498; the pillar has been rebuilt and repaired since. Portuguese captains set up markers like it to claim the routes they sailed for their king.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg"
         }
       },
       {
-        title: "Columbus, the Caribbean, and Magellan's Circumnavigation",
+        title: "Spain: A Gamble on Sailing West",
         bullets: [
-          "**Christopher Columbus** (sailing for Spain, 1492) proposed reaching Asia by sailing *west* across the Atlantic, a gamble based on a significant underestimate of the earth's circumference. On October 12, 1492, he landed in the **Bahamas**, where he encountered the **Taíno people**. Columbus never accepted that he had found unknown continents; he died in 1506 still believing he had reached islands off the Asian coast. The **Treaty of Tordesillas** (1494) divided the non-European world between Spain and Portugal: everything west of a line in the Atlantic went to Spain, everything east went to Portugal.",
-          "Spanish **conquistadors** followed Columbus with remarkable speed: within 30 years, Hernán Cortés had destroyed the **Aztec Empire** (1521) and Francisco Pizarro the **Inca Empire** (1532). The Spanish conquest was enabled by military technology, alliances with indigenous peoples who were enemies of these empires, and, crucially, by disease. Smallpox arrived in Mesoamerica with Cortés's army in 1519 and killed an estimated 30–50% of the Aztec population before the military conquest was complete.",
-          "**Ferdinand Magellan** (sailing for Spain, 1519–1522) led the first circumnavigation of the globe, proving that the Pacific Ocean was vastly larger than Columbus had imagined and that the Americas were entirely separate from Asia. Magellan was killed in the Philippines in 1521; only one ship and 18 of 270 crew members completed the voyage. The circumnavigation established the global scale of the world and created the conditions for sustained Spanish competition with Portugal for Pacific trade routes.",
-          "From the **Taíno perspective**, Columbus's arrival was the beginning of catastrophe. Within 50 years of first contact, the Taíno population of Hispaniola had been reduced from an estimated 250,000 to near extinction, killed by disease, violence, and forced labor. The **encomienda system** enslaved indigenous peoples for Spanish labor needs. The Treaty of Tordesillas, drawn without any consultation of non-European peoples, reflected a European assumption that the world existed to be divided by European powers."
+          "**Christopher Columbus**, a sailor from Genoa, wanted to reach Asia by sailing west. Portugal turned him down because its experts judged he had badly underestimated the distance, and they were right. Portugal also already held the route around Africa, so Spain's way to Asia had to be west.",
+          "In April 1492, just after conquering Granada, **Isabella and Ferdinand** signed a contract with Columbus: if he succeeded, he would be Admiral of the Ocean Sea, govern the lands he found, and keep a tenth of the wealth from them. He reached the Caribbean in October 1492 and brought back little gold, but news of the voyage spread across Europe, and the 1493 fleet was at least seventeen ships.",
+          "In 1494 Spain and Portugal negotiated the **Treaty of Tordesillas**, a line through the Atlantic splitting newly found lands between them: west for Spain, east for Portugal. Nobody asked the people who lived there.",
+          "In 1519 **Magellan**, a Portuguese captain sailing for Spain, set out west to reach the Spice Islands across the Pacific. He was killed in the Philippines in 1521, and **Elcano** brought one ship home in 1522, the first voyage around the world. The effect the College Board names: Spain's voyages **dramatically increased European interest** in ocean travel and trade."
         ],
         image: {
-          title: "Waldseemüller Map, 1507",
-          caption: "The Waldseemüller map of 1507 shows the Americas as separate continents for the first time, the direct result of Spanish and Portuguese voyages from 1492 onward. Notice the vast unknown Pacific Ocean to the west of America.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg"
+          title: "Columbus Taking Possession",
+          caption: "A picture made in the 1800s, more than three centuries after 1492, imagining Columbus claiming land for the Spanish crown. It shows how Europeans later remembered the voyage, not what happened on the beach.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg"
         }
       },
       {
-        title: "Northern Atlantic Exploration: English, French, and Dutch Routes",
+        title: "The Northern Crossings: England, France, and the Dutch",
         bullets: [
-          "**England** sponsored John Cabot's 1497 Atlantic crossing, which strengthened English claims and knowledge of North Atlantic coastlines and fisheries while pursuing an alternative route toward Asia.",
-          "**France** sponsored explorers such as Jacques Cartier in the St. Lawrence region, tying state-supported exploration to fisheries, fur-trade opportunities, geographic knowledge, and later colonial claims.",
-          "The **Dutch Republic** combined maritime expertise, commercial finance, and state-backed companies as Dutch navigators pursued northern passages and entered Atlantic and Asian trade networks.",
-          "The economic reasoning is central: states sponsored voyages because new routes could open direct access to commodities and commercial opportunities; successful voyages then expanded knowledge and made future trade and colonization more feasible."
+          "England, France, and the Dutch wanted Asia's trade too, but Portugal held the route around Africa and Spain held the route west. So they sponsored voyages across the North Atlantic, looking for another way to Asia over the top of the world.",
+          "**England** sent **John Cabot**, an Italian sailor, west in 1497; he reached the coast of North America. **France** sent Giovanni da **Verrazzano** along that coast in 1524 and **Jacques Cartier** up the St. Lawrence River in the 1530s. **Dutch** voyages under Willem Barentsz in the 1590s tried to sail around the north of Russia, and in 1609 Henry Hudson, sailing for a Dutch trading company, explored the Hudson River.",
+          "None found a sea route to Asia; Arctic ice blocked every way through. But the voyages paid in other ways: cod off Newfoundland, furs traded with Indigenous peoples along the St. Lawrence, and claims to North American coasts where these states later built colonies.",
+          "The pattern across all three stories: a ruler paid, a voyage came back with gold, spices, or news, the next voyage became easier to fund, and rival rulers wanted voyages of their own."
         ],
         image: {
-          title: "Northern Atlantic exploration routes",
-          caption: "English, French, and Dutch sponsorship extended exploration beyond the Iberian routes.",
+          title: "Three Ways to Asia, and Who Paid",
+          caption: "A BeHistorical instructional map: Portugal's route around Africa, Spain's route west, and the English, French, and Dutch crossings in the north. Routes are schematic.",
           url: "../assets/images/instructional-maps/topic-4-2.svg",
           sourceUrl: "../assets/images/instructional-maps/topic-4-2.svg"
         }
@@ -179,59 +179,54 @@ window.BEHISTORICAL_LESSON = {
   },
 
   map: {
-    title: "European Exploration Routes, 1415–1522",
+    title: "Three Ways to Asia, and Who Paid",
     url: "../assets/images/instructional-maps/topic-4-2.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-4-2.svg",
-    caption: "The 1507 Waldseemüller map captures European geographic knowledge just 15 years after Columbus. Notice the Americas appear on the left, Africa at bottom right, and Asia to the far right, and notice how much of the world is still unknown or imprecisely mapped.",
-    intro: "Use the map to trace the major exploration routes: Portuguese southward along the African coast, around the Cape of Good Hope, and east to India; Spanish westward across the Atlantic to the Caribbean; and the Magellan-Elcano circumnavigation route. Consider what each route was designed to reach and what it actually found.",
-    prompt: "Using the map, identify the geographic barriers that European explorers had to overcome. Which route, Portuguese or Spanish, represented a greater geographic challenge? What does the shape of the Americas on this early map suggest about how quickly European knowledge of new discoveries circulated?"
+    caption: "A BeHistorical instructional map of the three directions European states paid for: Portugal around Africa to India, Spain west across the Atlantic, and England, France, and the Dutch across the North Atlantic and toward the Arctic. Routes are schematic and coastlines simplified.",
+    intro: "Use the map to see the whole topic at once. Find each numbered route in the key, and notice which states went which way.",
+    prompt: "Using the map, explain why England, France, and the Dutch sailed north instead of following Portugal's or Spain's route. Then name one place on the map where a voyage found something other than a route to Asia, and say what it found."
   },
 
   deepReading: {
     title: "Who Paid, and What For",
-    desc: "A textbook-depth companion on why a state would fund a voyage that might return nothing: the pepper margin, the crusading inheritance, and the capitulaciones that made a contract out of a gamble, followed by the Portuguese program from Ceuta to Calicut, the Spanish bet, and the latecomers who went north. Optional, and useful when a checkpoint asks about motives.",
+    desc: "A textbook-depth companion on why a state would fund a voyage that might return nothing: the pepper price at each end of the chain and the contract Columbus signed, followed by the Portuguese program from Ceuta to Calicut, the Spanish bet, and the latecomers who went north. Optional, and useful when a checkpoint asks about causes and effects.",
     url: "deep-reading-topic-4-2-exploration.html"
   },
 
   first10: {
-    title: 'First & 10: Why They Sailed',
+    title: 'First & 10: Who Paid?',
     embedUrl: 'first-and-10-topic-4-2-exploration-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 4.2 lesson path.'
+    note: 'Read the First & 10 narrative, answer the three questions, then return to the 4.2 lesson path.'
   },
 
   evidenceLab: {
-    title: "Evidence Lab: Motives, Encounters, and Multiple Perspectives",
-    intro: "Use the evidence below to analyze the motives behind European exploration and the experiences of different peoples during the era of contact. Strong historical thinking requires evaluating evidence from multiple perspectives, not just the perspective of the explorers.",
-    prompt: "Choose one piece of evidence and explain what it reveals about the causes, nature, or consequences of European exploration. Consider: whose perspective does this evidence represent, and what perspective does it leave out?",
-    items: [
-      { title: "Columbus's journal entry — 'These people are very unskilled in arms'", detail: "Evidence of Columbus's immediate calculation that the Taíno could be conquered and enslaved, written on the first day of contact. Evaluate this source for what it reveals about the motivations behind exploration and for the perspective it systematically excludes." },
-      { title: "Treaty of Tordesillas (1494) — dividing the world between Spain and Portugal", detail: "Evidence of European assumptions about the right to divide and control non-European territories without the consent of those territories' inhabitants. The treaty was drawn with papal authority and treated the entire non-European world as available for European claim." },
-      { title: "Da Gama's cargo return — voyage costs covered 60 times over", detail: "Evidence of the commercial logic driving state sponsorship of exploration. The profit from da Gama's first voyage to India demonstrates how economic incentives made the risk of expensive and dangerous voyages rational for state sponsors, and explains why Portugal and Spain invested so heavily in exploration." }
-    ]
+    title: "Evidence Lab: Who Paid, and What For",
+    intro: "Use the evidence below to analyze who paid for exploration, what they wanted, and what the voyages produced. Say what kind of source each card is before you use it.",
+    prompt: "Choose two cards and make one claim about the role of states or the economic causes or effects of exploration. Name one thing each source cannot tell you."
   },
 
   primarySource: {
-    title: "Primary Source: Columbus's Journal, October 11–12, 1492",
-    intro: "Columbus kept a detailed journal of his first voyage, which survives only in an abstract made by the priest Bartolomé de las Casas. This adapted passage describes Columbus's first observations on landing in the Bahamas on October 12, 1492, and his immediate assessment of the Taíno people he encountered.",
-    text: "Thursday, 11 October. As the night drew on, he ordered the fleet to slow and not sail beyond the distance a man could see. About two hours after midnight they saw a light, and at two hours past midnight they saw land clearly. Friday, 12 October. At dawn they saw people, naked, on the shore. The Admiral went ashore in the armed boat, and with him the royal standard. He called to the two captains to be witnesses that he was taking possession of this island for the King and Queen of Castile. They saw many trees, very green, and many streams, and fruits of various kinds. The people all went naked as their mothers bore them. They are very well built, with very handsome bodies and very good faces, and their hair coarse, almost like the tail of a horse. They are friendly and well-dispositioned people who bear no arms except for small spears. I showed one of them a sword and through ignorance he grabbed it by the blade and cut himself. They should be good and intelligent servants, for I see that they say very quickly everything that is said to them. I believe that they could easily be made Christians, for it seemed to me that they had no religion of their own.",
+    title: "Primary Source: Columbus's Journal, October 11 to 12, 1492",
+    intro: "Columbus kept a journal of his first voyage. The original is lost; it survives in a summary made by the priest Bartolomé de las Casas, who copied some passages word for word and retold others, which is why the text switches between \"he\" and \"I.\" This is an adapted English translation of the entries for October 11 and 12, 1492, when the fleet reached an island in the Bahamas.",
+    text: "Thursday, 11 October. As the night drew on, he ordered the fleet to slow and not sail beyond the distance a man could see. About two hours after midnight they saw land clearly. Friday, 12 October. At dawn they saw people, naked, on the shore. The Admiral went ashore in the armed boat, and with him the royal standard. He called to the two captains to be witnesses that he was taking possession of this island for the King and Queen of Castile. They saw many trees, very green, and many streams, and fruits of various kinds. The people all went naked as their mothers bore them. They are very well built, with very handsome bodies and very good faces, and their hair coarse, almost like the tail of a horse. They are friendly and well-dispositioned people who bear no arms except for small spears. I showed one of them a sword and through ignorance he grabbed it by the blade and cut himself. They should be good and intelligent servants, for I see that they say very quickly everything that is said to them. I believe that they could easily be made Christians, for it seemed to me that they had no religion of their own.",
     questions: [
-      "What does Columbus's account reveal about his motivations and assumptions? Identify at least two specific things Columbus says and explain what each reveals about his goals for the voyage and for the peoples he encountered.",
-      "Columbus describes the Taíno as potential 'servants' and notes they have 'no religion of their own.' How do these observations connect to the 'God, Glory, and Gold' framework for understanding European exploration motives?",
-      "This account was written by Columbus for the Spanish monarchs who sponsored his voyage. How might that audience shape what Columbus chose to emphasize or omit? What might the Taíno have recorded about the same encounter if they had a written record?"
+      "Columbus takes possession of the island \"for the King and Queen of Castile.\" What does that tell you about who paid for this voyage and what they expected from it?",
+      "Find one thing Columbus notices that his royal sponsors would care about. Explain why he might include it in a record written for them.",
+      "This account was written by a European for European rulers, and survives only in a priest's summary. What does it leave out about the Taíno people who were on that shore?"
     ]
   },
 
   beSurreal: {
     title: "BeSurreal: You Are a Sailor on Columbus's Fleet, October 11, 1492",
-    desc: "It is the night of October 11, 1492. You are a sailor aboard the Pinta, one of three ships in Columbus's fleet. You have been at sea for 33 days since leaving the Canary Islands. Tonight, the crew saw a light on the horizon. Columbus believes it is land. You believe it, too.",
-    intro: "You are standing on the deck of the Pinta in the middle of the night, watching a faint light on the horizon that might be a fire, or might be wishful thinking. The captain has ordered the fleet to slow and hold position until dawn. Around you, men who have been growing mutinous for weeks are suddenly very quiet. You can feel the tension differently now, not the dangerous restlessness of the past week, but something almost like prayer.",
-    detail: "You signed on for this voyage in Palos three months ago for reasons you can barely remember clearly: the promise of reward, the pressure of debt, the sense that nothing was keeping you home. You have been at sea before, always within sight of the European coast. This has been nothing like that. For 33 days, no land. The compass has behaved strangely. The winds carried you west so steadily that men began to whisper that they might never carry you back east. You have eaten dried meat and biscuit until you cannot taste anything. You have dreamed about water that doesn't move. Columbus has been wrong about the distance before, he told the crew the crossing would be short, and it has been anything but. But the light on the horizon is real. Tomorrow morning, whatever that light is, your life will have changed permanently in ways you cannot yet imagine.",
-    prompt: "Write your journal entry for tonight, October 11, 1492, and for the morning after. What are you feeling now, watching that light? And what do you see and feel on the morning of October 12, when you first step onto this island and first see the people who live there?"
+    desc: "It is the night of October 11, 1492. You are a sailor aboard the Pinta, one of three ships Queen Isabella and King Ferdinand are paying for. You left the Canary Islands about five weeks ago. Tonight someone saw a light.",
+    intro: "You are standing on the deck of the Pinta in the middle of the night, watching for land. The Admiral has ordered the fleet to slow down. Around you, men who have been grumbling for weeks are suddenly very quiet.",
+    detail: "You signed on at Palos this summer. The town was ordered by the crown to supply two of the three ships, so many of the crew are neighbors. You have been at sea before, but always near the coast. This time, for about five weeks, there has been no land at all, only the wind pushing you west. The Admiral promised the crew a short crossing, and it has been anything but. Everyone knows the monarchs did not pay for this trip to find empty sea: they want a route to the riches of Asia, and the Admiral was promised titles and a share of everything he finds. Tomorrow morning, whatever is out there, somebody will have to report it to Spain.",
+    prompt: "Write your journal entry for tonight. Who paid for this voyage, and what do they expect you to bring back? What will you tell them if this island is not Asia?"
   },
 
   beInTheRoom: {
     url: '',
-    desc: "Step into the Spanish court to argue for Columbus's Atlantic voyage, navigate the Portuguese route around Africa with Vasco da Gama, or encounter the Treaty of Tordesillas from the perspective of an indigenous leader hearing of European claims to your land."
+    desc: "Step into the Spanish court in 1492 and decide whether to pay for Columbus's voyage, and on what terms."
   }
 
 };

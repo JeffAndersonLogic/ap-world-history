@@ -466,7 +466,7 @@ Strong answer checklist: Use two specific examples of cross-cultural knowledge o
 
 ## 4.2 Exploration: Causes and Events
 
-**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. Why European states sponsored maritime exploration after c. 1450, and what the key voyages of the Portuguese and Spanish found and created
+**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. Why European rulers paid for ocean voyages after c. 1450, and what Portugal, Spain, England, France, and the Dutch got for it
 
 **College Board key concepts.**
 - Unit 4: Learning Objective B (Learning Objective): Describe the role of states in the expansion of maritime exploration from 1450 to 1750.
@@ -476,15 +476,15 @@ Strong answer checklist: Use two specific examples of cross-cultural knowledge o
 - KC-4.1.III.B (Economic Systems): Spanish sponsorship of the voyages of Columbus and subsequent voyages across the Atlantic and Pacific dramatically increased European interest in transoceanic travel and trade.
 - KC-4.1.III.C (Economic Systems): Northern Atlantic crossings were undertaken under English, French, and Dutch sponsorship, often with the goal of finding alternative sailing routes to Asia.
 
-**Expected evidence terms.** Reconquista, spice trade, Prince Henry, crusading, God Glory Gold, state sponsorship, Ottoman Empire, Lisbon, feitorias, cartography, Vasco da Gama, Columbus, Magellan, John Cabot, Jacques Cartier, Dutch exploration, Cape of Good Hope, Caribbean, St. Lawrence, fisheries, fur trade, trade routes.
+**Expected evidence terms.** state sponsorship, spice trade, middlemen, royal monopoly, Prince Henry, Isabella and Ferdinand, titles, share of profits, risk, Vasco da Gama, Columbus, Magellan, Elcano, John Cabot, Jacques Cartier, Henry Hudson, trading-post empire, Treaty of Tordesillas, route to Asia, cod fishing, fur trade, economic effect.
 
-**AP skill focus.** Causation practice.
+**AP skill focus.** Making Connections practice.
 
-**Checkpoint 1 prompt.** Explain at least TWO motivations behind European maritime exploration after c. 1450. For each motivation, explain what drove it specifically (not just a label like "gold" but what specific economic reality made profit-seeking a motive), and connect it to a specific state action or voyage.
-Strong answer checklist: Name at least two distinct motivations (religious, economic, and/or political). For each, explain the specific historical context that made it a motivation (not just a label). Connect each motivation to a specific Portuguese or Spanish action.
+**Checkpoint 1 prompt.** Explain ONE economic reason European rulers paid for ocean voyages after c. 1450. Then explain why a ruler, not a merchant, paid, and name ONE thing a ruler gave an explorer in return.
+Strong answer checklist: Name one economic reason, explained as a mechanism, not a label. Explain why only a ruler could carry the risk. Name one thing a ruler offered an explorer.
 
-**Checkpoint 2 prompt.** Describe ONE Portuguese or Spanish voyage and ONE English, French, or Dutch-sponsored northern Atlantic voyage. For each, identify the route and state sponsor. Then explain one economic cause that motivated the voyage and one economic or commercial effect it produced or made possible.
-Strong answer checklist: Use one Iberian voyage and one northern Atlantic voyage with specific route evidence. Identify the state sponsor and economic motivation for each. Explain an economic or commercial effect such as expanded trade access, fisheries, fur commerce, geographic knowledge, or later claims.
+**Checkpoint 2 prompt.** Choose ONE Portuguese or Spanish voyage, such as Vasco da Gama's or Columbus's, and ONE English, French, or Dutch voyage, such as Cabot's, Cartier's, or Hudson's. For each, name the state that paid, explain ONE economic reason it paid, and explain ONE economic effect the voyage caused. Then explain how one of these voyages connects to the other state's decision to explore.
+Strong answer checklist: Use one Iberian voyage and one northern voyage, each with its sponsor. Give one economic cause and one economic effect for each. Connect the two: how one state's voyages shaped another state's choice.
 
 ## 4.3 Columbian Exchange
 
