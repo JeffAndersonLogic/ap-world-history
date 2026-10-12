@@ -77,7 +77,14 @@ const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
 // audit. Accept the reviewed First & 10 rewrite only while the authored Unit 4
 // source remains byte-for-byte this approved Git blob. Any later edit forces a
 // fresh review instead of silently moving the historical baseline.
-const APPROVED_UNIT4_REWRITE_BLOB = '574729156c54a4f3b177987d118ca58c72f9bb7b';
+// Topic 4.1's story-first rewrite, "Getting Home", was written from Jeff's
+// approved 4.1 story (2026-10-11), aligned to the CED's own wording on 2026-10-12
+// (astronomical charts, currents, the translators of Toledo), and Jeff approved
+// the prose on 2026-10-12 ("The reading is approved, build the deck."). A
+// comparison against the prior approved Unit 4 blob (574729..., the 2026-09-18
+// repair) shows only the 4.1 entry changed; 4.2 to 4.8 are byte-for-byte
+// unchanged.
+const APPROVED_UNIT4_REWRITE_BLOB = '7f110bcbdd0ee6b79340107272077c94fb4c6cfc';
 const unit4SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-4.js');
 const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
   && gitBlobSha(fs.readFileSync(unit4SourcePath, 'utf8')) === APPROVED_UNIT4_REWRITE_BLOB;

@@ -2,6 +2,12 @@
   const lesson = window.BEHISTORICAL_LESSON;
   if (!lesson) return;
 
+  lesson.classPresentation = {
+    title: 'Class Slides: Getting Home',
+    desc: 'Follow the story: Europe borrowed its sea tools from older worlds, built new ships around them, and learned the Atlantic\'s winds, and that turned the ocean into a road that ran both ways.',
+    url: 'presentation-topic-4-1-student.html'
+  };
+
   lesson.collegeBoardKeyConcepts = [
     {
       "code": "Unit 4: Learning Objective A",
