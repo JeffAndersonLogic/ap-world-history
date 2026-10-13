@@ -415,6 +415,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   const node = (tag, text, className) => {const el=document.createElement(tag); if (text !== undefined) el.textContent=text; if(className) el.className=className; return el;};
   const core = window.SkillLensPilot, data = PILOT_DATA, contract=data.contract;
   let history=[], decisions=[], selected=new Set(), focus, currentId, dirty=false;
+  const actionDrafts={};
   const flash = message => {$('feedback').textContent=message;};
   const summary = () => core.summarize(contract,data.responses,data.analyses,history);
   const current = () => data.responses.find(r=>r.id === currentId);
@@ -426,7 +427,10 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       const button=node('button',undefined,'pattern');button.type='button';button.dataset.criterion=p.id;button.setAttribute('aria-pressed',String(focus===p.id));
       button.append(node('span',p.label,'pattern-label'),node('span',p.gap+' / '+p.assessed,'count'),node('span','partly or not yet shown'),node('span',p.meets+' meet · '+p.review+' unreviewed / not analyzed','muted'));
       button.addEventListener('click',()=>{
+        if(focus===p.id)return;
+        actionDrafts[focus]=$('action').value;
         focus=p.id; selected.clear(); $('filter').value='gap'; currentId=null;
+        $('action').value=actionDrafts[focus] || '';
         render();
         document.querySelector('[data-criterion="'+focus+'"]').focus();
       });return button;
@@ -487,11 +491,12 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     $('correction').addEventListener('submit',event=>{event.preventDefault();try{
       const label=current().label;
       history=core.correct(contract,current(),history,focus,$('band').value,$('reason').value);dirty=true;
+      $('filter').value='all';
       render();flash('Saved your judgment for '+label+'. Class patterns now include your change.');
     }catch(error){flash(error.message);}});
     $('decision-form').addEventListener('submit',event=>{event.preventDefault();try{
       decisions.push(core.decision(contract,data.responses,data.analyses,history,focus,Array.from(selected),$('action').value));dirty=true;
-      $('action').value='';selected.clear();renderSelection();$('include').checked=false;renderDecisions();flash('Decision recorded with the response evidence and judgments as they are now. Download your review to keep it.');
+      $('action').value='';delete actionDrafts[focus];selected.clear();renderSelection();$('include').checked=false;renderDecisions();flash('Decision recorded with the response evidence and judgments as they are now. Download your review to keep it.');
     }catch(error){flash(error.message);}});
     $('export').addEventListener('click',()=>{
       const output={format:'behistorical-synthetic-review-v1',exportedAt:new Date().toISOString(),synthetic:true,teacher:'Jeff Anderson',contract,responses:data.responses,originalAnalyses:data.analyses,overrides:history,decisions,summary:summary()};

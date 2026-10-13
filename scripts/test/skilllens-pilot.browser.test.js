@@ -8,12 +8,25 @@ let served=html,browser;const server=http.createServer((req,res)=>{res.setHeader
  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const url='http://127.0.0.1:'+server.address().port;
  browser=await chromium.launch({executablePath:process.env.PW_CHROME||chromium.executablePath(),args:['--no-sandbox']});
  const page=await browser.newPage({viewport:{width:1280,height:1000},acceptDownloads:true}),errors=[];page.on('pageerror',e=>errors.push(e.message));
+ page.on('dialog',dialog=>dialog.accept());
  async function changeFocus(){await page.goto(url);await page.locator('[data-criterion="monsoons"]').click();assert.equal(await page.locator('#focus-description').textContent(),'Explain the seasonal winds');}
  assert(html.includes('focus=p.id;'));served=html.replace('focus=p.id;','focus=focus;');await assert.rejects(changeFocus,/AssertionError/);served=html;await changeFocus();
- await page.locator('[data-criterion="technology"]').click();assert.equal(await page.locator('#student').inputValue(),'S02');
+ async function correctionStays(){
+ await page.goto(url);await page.locator('[data-criterion="technology"]').click();assert.equal(await page.locator('#student').inputValue(),'S02');
  assert.equal(await page.locator('mark').textContent(),'They used a compass and an astrolabe.');
  await page.locator('#correction-details summary').click();await page.locator('#band').selectOption('meets');await page.locator('#reason').fill('Synthetic correction to test the workflow.');await page.locator('#correction button').click();
  assert.equal(await page.locator('[data-criterion="technology"] .count').textContent(),'3 / 8');
+ assert.equal(await page.locator('#student').inputValue(),'S02','Corrected response stays visible');
+ }
+ async function draftFollowsFocus(){
+ await page.goto(url);
+ await page.locator('#action').fill('Technology draft');await page.locator('[data-criterion="monsoons"]').click();assert.equal(await page.locator('#action').inputValue(),'','An action is not silently attached to another focus');await page.locator('[data-criterion="technology"]').click();assert.equal(await page.locator('#action').inputValue(),'Technology draft','Draft survives changing focus');
+ }
+ const keepVisible="      $('filter').value='all';",keepDraft="actionDrafts[focus]=$('action').value;";
+ assert(html.includes(keepVisible)&&html.includes(keepDraft));
+ served=html.replace(keepVisible,"      $('filter').value='gap';");await assert.rejects(correctionStays,/AssertionError/);
+ served=html.replace(keepDraft,'');await assert.rejects(draftFollowsFocus,/AssertionError/);
+ served=html;await draftFollowsFocus();await correctionStays();
  await page.locator('#filter').selectOption('all');await page.locator('#student').selectOption('S02');await page.locator('.history summary').click();assert((await page.locator('.history').textContent()).includes('Original: Partly shown'));
  await page.locator('#include').check();await page.locator('#action').fill('Compare a named tool with a tool-function explanation, then revise.');await page.locator('#decision-form button').click();assert.equal(await page.locator('.decision-record').count(),1);
  const download=page.waitForEvent('download');await page.locator('#export').click();const artifact=await download;const saved=JSON.parse(fs.readFileSync(await artifact.path(),'utf8'));
