@@ -321,6 +321,29 @@ window.BEHISTORICAL_STUDENT_DECK = {
       ]
     },
     {
+      "kind": "source-hipp",
+      "eyebrow": "Skill 2.B · Source It · A Real Object",
+      "title": "Luther, painted by a friend.",
+      "footer": "It can show how Luther was presented. It cannot show why ordinary people converted.",
+      "template": {
+        "attribution": {
+          "author": "Lucas Cranach the Elder",
+          "work": "Portrait of Martin Luther",
+          "year": "1528"
+        },
+        "situation": "Saxony, 1528. Luther has broken with Rome, and the rulers of Saxony protect him.",
+        "audience": "Supporters of reform. Cranach's workshop painted many copies of Luther's portrait.",
+        "purpose": "To make the reformer known by sight: a plain, steady, serious scholar.",
+        "pov": "Cranach was Luther's friend and the Saxon court painter. He was on Luther's side.",
+        "visual": {
+          "url": "../assets/images/topics/3-3/luther-cranach-1528.jpg",
+          "alt": "Painted portrait of Martin Luther from the chest up, in a black scholar's cap and black robe against a blue-green background, looking to the side",
+          "credit": "Veste Coburg · Public domain",
+          "tagPos": "bl"
+        }
+      }
+    },
+    {
       "kind": "action",
       "eyebrow": "Module 07 · Evidence Lab · 9 Minutes",
       "title": "Build one continuity-and-change claim from two sources.",

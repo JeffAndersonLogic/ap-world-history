@@ -26,9 +26,16 @@
  *   Each stands beside the story steps of its own beat, so no slide was added and
  *   no beat moved. None of them is evidence, and none goes in the Evidence Lab.
  *
- * Still wanted, from the story draft's visual list (section 9): a real source for
- * the sourcing slide, such as a Cranach portrait of Luther, a near-contemporary
- * Chaldiran manuscript painting, or a later devotional image of Guru Nanak. Stage
+ * - source-luther (source-hipp): the one real source in the deck, added on Jeff's
+ *   ask of 2026-10-13. Lucas Cranach the Elder, Portrait of Martin Luther, 1528,
+ *   Veste Coburg: Wikimedia Commons "Lucas Cranach d.Ä. - Martin Luther, 1528
+ *   (Veste Coburg).jpg", public domain, 2148x3400. Commons' own description,
+ *   read on 2026-10-13: "Portrait of Martin Luther", Lucas Cranach the Elder,
+ *   1528. Saved here at 830x1314 from the thumbnail the Commons API returned,
+ *   so the student deck never depends on Wikimedia.
+ *
+ * Still wanted, from the story draft's visual list (section 9): a near-contemporary
+ * Chaldiran manuscript painting and a later devotional image of Guru Nanak. Stage
  * and verify any Commons candidate first; never type a filename from memory.
  */
 (function(){
@@ -45,6 +52,9 @@ if(map)map.visual={
   alt:'Instructional map showing the Ottoman, Safavid, Mughal and Qing land empires, including the Ottoman-Safavid frontier',
   credit:'BeHistorical instructional map · Unit 3'
 };
+
+const luther=by('source-luther');
+if(luther&&luther.template)luther.template=Object.assign({},luther.template,{visual:{url:LOCAL+'luther-cranach-1528.jpg',alt:'Painted portrait of Martin Luther from the chest up, in a black scholar\'s cap and black robe against a blue-green background, looking to the side',credit:'Veste Coburg · Public domain',tagPos:'bl'}});
 
 const SCENES={
   protestant:{pictures:[{caption:'A German print shop',visual:AI('3.3 - German Printing Shop.jpg','Reconstruction of a German print shop: a pressman pulls the bar of a wooden screw press, a boy holds two leather ink balls, a compositor sets type from a slanted case, and printed sheets hang drying on lines overhead',{position:'38% 50%'})}]},
