@@ -112,7 +112,7 @@
       title: 'Checkpoint 2: Two Voyages, Two Sponsors, Cause and Effect',
       subtitle: 'Checks Learning Targets 1–3 and Success Criteria 1–3.',
       cardDesc: 'One Portuguese or Spanish voyage, one English, French, or Dutch voyage: who paid, why, and what it produced.',
-      learningTargets: [lesson.learningTargets[0].target, 'For ONE of Portugal or Spain: ' + lesson.learningTargets[1].target, lesson.learningTargets[2].target],
+      learningTargets: [lesson.learningTargets[0].target, 'I can explain why Portugal OR Spain backed voyages and one thing those voyages produced (Portugal: a trading-post empire; Spain: more European interest in ocean trade).', lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
       prompt: 'Choose ONE Portuguese or Spanish voyage (such as da Gama\'s or Columbus\'s) and ONE English, French, or Dutch voyage (such as Cabot\'s, Cartier\'s, or Hudson\'s). For each one, say: who backed it and what they gave the explorer; one money reason they wanted it; and one thing it produced. Last, explain how the first voyage, or the route it opened, helped lead the second state to explore.',
       responseType: 'Checkpoint 2',
@@ -140,7 +140,7 @@
       title: 'Columbus Taking Possession, a Later Picture',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg?width=1200',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Columbus_Taking_Possession.jpg',
-      caption: 'A picture made in the 1800s, more than three centuries after 1492, imagining Columbus claiming land in the Caribbean for the Spanish crown. It is a later memory of the event, not an eyewitness record.',
+      caption: 'A color print published in 1893, four centuries after 1492, imagining Columbus claiming land in the Caribbean for the Spanish crown. It is a later memory of the event, not an eyewitness record.',
       prompt: 'NOTICE the flags and who stands at the center. Whose authority is the artist showing? What can you INFER about who the voyage was for? Why can a picture made centuries later not tell you what really happened that morning?'
     },
     {

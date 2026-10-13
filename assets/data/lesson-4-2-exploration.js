@@ -65,7 +65,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Economic Systems"
     },
     {
-      criteria: "I can use one English, French, or Dutch voyage to explain the search for another route to Asia and one effect it had, such as cod fishing, the fur trade, or land claims, and explain how Portugal's and Spain's routes led it to look north.",
+      criteria: "I can use one English, French, or Dutch voyage to explain the search for another route to Asia and one effect it had, such as cod fishing, the fur trade, or land claims, and explain how Portugal's and Spain's hold on the southern routes led that state to look north.",
       kc: 'KC-4.1.III.C',
       theme: "Economic Systems"
     }
@@ -155,7 +155,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Columbus Taking Possession",
-          caption: "A picture made in the 1800s, more than three centuries after 1492, imagining Columbus claiming land for the Spanish crown. It shows how Europeans later remembered the voyage, not what happened on the beach.",
+          caption: "A color print published in 1893, four centuries after 1492, imagining Columbus claiming land for the Spanish crown. It shows how Europeans later remembered the voyage, not what happened on the beach.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg?width=1200",
           sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg"
         }
@@ -221,7 +221,7 @@ window.BEHISTORICAL_LESSON = {
     desc: "It is the night of October 11, 1492. You are a sailor aboard the Pinta, one of three ships Queen Isabella and King Ferdinand are paying for. You left the Canary Islands about five weeks ago. Tonight someone saw a light.",
     intro: "You are standing on the deck of the Pinta in the middle of the night, watching for land. The Admiral has ordered everyone to keep watch and promised a reward to whoever sees land first. Around you, men who have been grumbling for weeks are suddenly very quiet.",
     detail: "You signed on at Palos this summer. The town was ordered by the crown to supply two of the three ships, so many of the crew are neighbors. You have been at sea before, but always near the coast. This time, for about five weeks, there has been no land at all, only the wind pushing you west. The Admiral promised the crew a short crossing, and it has been anything but. Everyone knows the monarchs did not pay for this trip to find empty sea: they want a route to the riches of Asia, and the Admiral was promised titles and a share of everything he finds. Tomorrow morning, whatever is out there, somebody will have to report it to Spain.",
-    prompt: "Write your journal entry for tonight. Who paid for this voyage, and what do they expect you to bring back? What will you tell them if this island is not Asia?"
+    prompt: "Write your journal entry for tonight. Who paid for this voyage, and what do they expect you to bring back? What will you tell them if the land you find tomorrow is not Asia?"
   },
 
   beInTheRoom: {
