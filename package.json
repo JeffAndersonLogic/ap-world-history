@@ -20,6 +20,8 @@
     "build:announcements": "node scripts/build-announcements.js",
     "build:skills-map": "node scripts/build-skills-map.js",
     "build:skills-lens": "node scripts/build-skills-lens.js",
+    "build:skilllens-pilot": "node scripts/build-skilllens-pilot.js",
+    "test:skilllens-pilot": "node scripts/test/skilllens-pilot.test.js && node scripts/test/skilllens-pilot.browser.test.js",
     "build:status": "node scripts/generate-status-manifest.js",
     "build:unit6": "node scripts/build-unit6.js",
     "build:unit9": "node scripts/build-unit9.js",
