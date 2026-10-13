@@ -5,36 +5,52 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; img-src data:; font-src data:; object-src 'none'; base-uri 'none'; form-action 'none'">
-<title>BeHistorical · Synthetic teacher pilot</title>
+<title>BeHistorical · Class Pulse</title>
 <style>/* PILOT_CSS */</style>
 </head>
 <body>
-<a class="skip" href="#patterns">Skip to class patterns</a>
-<header><div class="brand">BEHISTORICAL <span>TEACHER WORKSPACE</span></div><span class="badge demo">Synthetic pilot</span></header>
+<a class="skip" href="#page-title">Skip to class pulse</a>
+<header><div class="brand">Be<span>Historical</span></div><span class="product-name">Instructional Intelligence</span><span class="badge demo">Synthetic pilot</span></header>
+<div class="app-shell">
+<aside class="sidebar"><p class="eyebrow">EXPLORE</p><nav aria-label="Teacher workspace">
+<a href="#sample-preview" data-view="pulse" aria-current="page"><span aria-hidden="true">◉</span> Class Pulse</a>
+<a href="#sample-assignment" data-view="targets"><span aria-hidden="true">◎</span> Learning Targets</a>
+<a href="#sample-evidence" data-view="evidence"><span aria-hidden="true">▣</span> Student Evidence</a>
+<a href="#sample-meaning" data-view="meaning"><span aria-hidden="true">◇</span> What This Means</a>
+</nav><p class="sidebar-note"><strong>Evidence, not grades.</strong><br>Each color describes writing for this checkpoint, never a student’s permanent ability.</p></aside>
 <main>
-<div class="intro"><div><p class="eyebrow">JEFF’S AP WORLD CLASS · TOPIC 2.3</p><h1>What needs attention?</h1><p class="lede">Start with a pattern. Read the writing. Choose your next step.</p></div><button id="export" type="button" disabled hidden>Download review</button></div>
-<p class="notice">All 12 students and their responses are invented. Judgments are authored examples, not AI results. No independent accuracy evaluation has been run.</p>
+<div class="intro"><div><p class="eyebrow">TEACHER COMMAND CENTER / EVIDENCE EXPLORER</p><h1 id="page-title" tabindex="-1">Class Pulse</h1><p class="lede" id="page-subtitle">The learning picture, with the writing behind it.</p></div><button id="export" type="button" disabled hidden>Download review</button></div>
+<p class="notice"><strong>Fictional classroom.</strong> All 12 students and their responses are invented. Judgments are authored examples, not AI results. No accuracy evaluation has been run.</p>
+<div class="scope-bar" aria-label="Pilot scope"><div><span>Topic</span><strong>2.3 · Indian Ocean Exchange</strong></div><div><span>Checkpoint</span><strong>1 · Independent response</strong></div><div><span>Class</span><strong>Jeff’s sample class</strong></div></div>
 <div id="load-state" role="status"></div>
 <!-- PILOT_PREVIEW -->
 <div id="workspace" hidden>
-<details class="assignment"><summary>Assignment &amp; what counts as evidence</summary><p id="prompt"></p><div id="rubric"></div><p class="muted">Criteria are for this response only. They do not describe a student’s general ability. Source: College Board CED, effective Fall 2026, Topic 2.3, pp. 57–58.</p></details>
-<section aria-labelledby="coverage-title" class="coverage"><h2 id="coverage-title">Response coverage</h2><div id="coverage"></div><p class="muted">Pattern counts include only judgments that can be interpreted for that criterion. Blank, missing, and unreviewed work are shown separately.</p></section>
-<section id="patterns" aria-labelledby="patterns-title"><div class="section-title"><h2 id="patterns-title">1. Find a class pattern</h2><span class="muted">Select a focus below</span></div><div id="pattern-cards"></div></section>
+<section id="pulse-view" data-screen="pulse" aria-label="Class Pulse">
+<div id="coverage" class="metric-grid"></div>
+<div class="pulse-grid" id="patterns">
+<section class="panel overview" aria-labelledby="overview-title"><p class="eyebrow">SELECTED CHECKPOINT</p><h2 id="overview-title">Understanding at a glance</h2><p class="muted" id="overall-coverage"></p><div id="overall-bar" class="stacked-bar" role="img"></div><div id="overall-legend" class="legend"></div><div id="closer-look" class="insight"></div><p class="fine-print">“Meets all criteria” requires evidence for every essential criterion. A response with an unresolved criterion stays outside this distribution.</p></section>
+<section class="panel heatmap-panel" aria-labelledby="patterns-title"><p class="eyebrow">LEARNING TARGET EVIDENCE</p><h2 id="patterns-title">Success criteria heat map</h2><p class="muted">Select a colored segment to read the responses behind it.</p><div id="pattern-cards"></div><div class="legend"><span><i class="swatch meets"></i>Meets</span><span><i class="swatch partial"></i>Partly shown</span><span><i class="swatch not_yet"></i>Not yet shown</span></div><p class="fine-print">Green share = meets this criterion. Each row states its own denominator; unjudged and absent work are excluded.</p><button type="button" class="text-button" id="explore-all">Explore all responses →</button></section>
+</div>
+<div class="lower-grid"><section class="panel"><p class="eyebrow">RESPONSE COVERAGE</p><h2>Outside the class pattern</h2><p class="muted">Missing evidence needs a different response from a learning gap.</p><div id="coverage-details"></div></section><section class="panel"><p class="eyebrow">TEACHER REFERENCE</p><h2>Checkpoint must-haves</h2><p id="prompt-short"></p><ol id="must-haves"></ol><button type="button" class="text-button" data-view="targets">Read criteria and acceptable evidence →</button></section></div>
+</section>
+<section id="assignment" data-screen="targets" class="panel" hidden><p class="eyebrow">TOPIC 2.3 · CHECKPOINT 1</p><h2>What counts as evidence?</h2><p id="prompt"></p><div id="rubric"></div><p class="muted">Criteria are for this response only. They do not describe a student’s general ability. Source: College Board CED, effective Fall 2026, Topic 2.3, pp. 57–58.</p><button type="button" class="text-button" data-view="evidence">Read student evidence →</button></section>
+<section data-screen="meaning" class="panel" hidden><p class="eyebrow">FROM PATTERN TO NEXT STEP</p><h2>Read the writing before deciding</h2><p>A colored segment is a provisional interpretation of one response. Read the full response and highlighted evidence, check the criterion, and correct a judgment when you disagree.</p><p>Partly shown can mean an incomplete explanation. Not yet shown can mean a missing causal connection or a misconception. The written interpretation helps distinguish these; the color alone cannot.</p><p>Needs review, not analyzed, blank, and missing work remain separate. None of these establishes a learning gap. Choose a focused next step only after checking the supporting responses.</p><p>A documented teaching decision shows use of the tool. It does not demonstrate improved student learning.</p><button type="button" class="text-button" data-view="evidence">Check the response evidence →</button></section>
 <p id="feedback" role="status" aria-live="polite"></p>
-<div class="review-grid">
-<section class="panel evidence" aria-labelledby="evidence-title"><p class="eyebrow">RESPONSE EVIDENCE</p><h2 id="evidence-title">2. Check the writing</h2><p id="focus-description"></p>
-<div class="filters"><label>Show<select id="filter"><option value="gap">Partly or not yet shown</option><option value="meets">Meets this criterion</option><option value="review">Needs your review</option><option value="not_analyzed">Not analyzed</option><option value="blank">Blank submissions</option><option value="missing">No submission</option><option value="all">All 12 students</option></select></label><label>Response<select id="student"></select></label></div>
+<div class="review-grid" data-screen="evidence" hidden>
+<section class="panel evidence" aria-labelledby="evidence-title"><p class="eyebrow">RESPONSE EVIDENCE</p><h2 id="evidence-title">Check the writing</h2><label>Criterion<select id="criterion-filter"></select></label><p id="focus-description" class="muted"></p>
+<div class="filters"><label>Show<select id="filter"><option value="gap">Partly or not yet shown</option><option value="meets">Meets this criterion</option><option value="partial">Partly shown</option><option value="not_yet">Not yet shown</option><option value="review">Needs review on this criterion</option><option value="response_review">Responses needing any review</option><option value="not_analyzed">Not analyzed</option><option value="blank">Blank submissions</option><option value="missing">No submission</option><option value="all">All 12 students</option></select></label><label>Response<select id="student"></select></label></div>
 <p id="empty" hidden></p><div id="response-detail"></div>
 <form id="correction" hidden><details id="correction-details"><summary>Change this judgment</summary><p class="muted">Your judgment updates the pattern. The original and every change remain in the downloaded record.</p><label>Your judgment<select id="band"><option value="meets">Meets this criterion</option><option value="partial">Partly shown</option><option value="not_yet">Not yet shown</option><option value="review">Needs your review</option></select></label><label>Why? Point to the writing or explain the uncertainty<textarea id="reason" required maxlength="2000" rows="3"></textarea></label><button type="submit">Save my judgment</button></details></form>
 <div id="evidence-choice" hidden><label class="check"><input type="checkbox" id="include">Use this response in my decision</label></div>
 </section>
-<section class="panel decision" aria-labelledby="decision-title"><p class="eyebrow">INSTRUCTIONAL ACTION</p><h2 id="decision-title">3. Choose a next step</h2><p class="muted">A suggestion to consider after reading the responses.</p><p id="suggestion" class="suggestion"></p>
+<section class="panel decision" aria-labelledby="decision-title"><p class="eyebrow">INSTRUCTIONAL ACTION</p><h2 id="decision-title">Choose a next step</h2><p class="muted">A suggestion to consider after reading the responses.</p><p id="suggestion" class="suggestion"></p>
 <form id="decision-form"><label>What will you reteach, clarify, or change?<textarea id="action" rows="5" required maxlength="3000" placeholder="Describe your next step and who it will support…"></textarea></label><p class="muted">Responses selected as supporting evidence:</p><div id="selected-evidence"></div><button type="submit">Record decision</button></form>
 <p class="muted">A recorded decision shows use of the tool. It does not demonstrate improved learning.</p><div id="decisions"></div></section>
 </div>
 <footer><strong>Local session only.</strong> Download your review to keep judgments and decisions before closing this page. No sign-in, uploads, or saved browser data. This build accepts only the included synthetic set.</footer>
 </div>
 </main>
+</div>
 <script>/* PILOT_CORE */</script>
 <script>/* PILOT_DATA */</script>
 <script>/* PILOT_APP */</script>

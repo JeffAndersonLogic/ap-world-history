@@ -25,8 +25,10 @@ of leaving the class behind an indefinite loading message. The user's reported
 viewer has not been directly inspected; script blocking is a reproduced failure
 mode, not a confirmed diagnosis of their device.
 
-1. Select **Explain two maritime technologies**. Initially four of eight
-   interpretable responses show a gap on this criterion.
+1. Start on **Class Pulse**. The criterion heatmap sits beside the overall
+   class distribution. Select the amber segment for **Explain two maritime
+   technologies** to open its three partly-shown responses. Selecting the
+   criterion label opens all four responses showing a gap (partial or not yet).
 2. Read Synthetic student 02. The response names a compass and astrolabe but
    does not explain either function. Exact words are highlighted; the
    interpretation is labeled separately. The whole response stays visible.
@@ -43,6 +45,29 @@ The 12 roster entries include nine authored analyses (one abstains), one
 unanalyzed response, one blank submission, and one missing submission. Eight
 responses are fully assessable. Criterion denominators can differ after a
 teacher reviews only part of a response. None of the samples is a holdout.
+
+## Class Pulse visual direction
+
+The uploaded `class-pulse (13).html` is the visual reference for this revision:
+dark brand bar, left navigation, warm background, compact summary cards, and a
+criterion heatmap next to the class distribution. Student Evidence is a separate
+view reached by a colored segment. The interface centers Jeff's sample class.
+
+The heatmap uses the three canonical checkpoint criteria, with numeric counts
+inside green/amber/red segments and accessible labels containing criterion,
+band, count, and denominator. Green share is the share meeting that criterion;
+it is not model confidence. Each row uses its own assessed denominator, which
+can differ from the fully assessed response count after a partial teacher review.
+The four coverage states stay outside the colored distribution. Selecting
+"Needs your review" in coverage lists responses with any unresolved criterion,
+even if the currently selected criterion already has a teacher judgment.
+
+The fixed topic, checkpoint, and class bar states the actual pilot scope. The
+reference's simulated arrival timeline, sync button, and additional classes
+are omitted. Actual coverage and checkpoint criteria fill the lower row. On
+narrow screens the heatmap comes before the overall distribution. The readable
+script-free version also includes the heatmap and response lists; it does not
+pretend to offer interactive filtering or editing.
 
 ## What changed
 
@@ -175,7 +200,9 @@ The browser test needs Playwright and Chromium; `PW_CHROME` can specify an
 installed Chromium binary. `BH_PILOT_SHOTS_DIR` optionally captures responsive
 screenshots. The tests first reject deliberately broken quote validation,
 essential-criterion aggregation, correction handling, generated content, and
-pattern selection, then verify the real implementation. Browser checks cover
+pattern selection, then verify the real implementation. Heatmap checks also
+reject a miswired segment filter, incorrect bar counts, and substitution of the
+full-response denominator for a criterion-specific denominator. Browser checks cover
 quote highlighting, overrides, original preservation, decision export,
 coverage states, narrow-screen overflow, local file opening, the network lock,
 and recovery from invalid bundled evidence.
