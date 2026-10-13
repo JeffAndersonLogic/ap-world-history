@@ -94,7 +94,11 @@ const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
 // 2026-10-12, which delegates story and reading approval to the reviewer loop.
 // The fingerprint moved from b2880b2... and only the 4.2 entry changed; 4.1 and
 // 4.3 to 4.8 are byte-for-byte unchanged.
-const APPROVED_UNIT4_REWRITE_BLOB = 'b98e3cdebf4a497b0626d456456a0f7199663831';
+// On 2026-10-13 a fourth review pass found one unqualified "first" in the 4.2
+// entry ("the first crossing of the Pacific"; Polynesian voyagers crossed it
+// centuries earlier); it now reads "the first European crossing". The fingerprint
+// moved from b98e3cd... and only that 4.2 sentence changed.
+const APPROVED_UNIT4_REWRITE_BLOB = '3c4abacfa819d5a8ba0d3d99be6c7625d24f8836';
 const unit4SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-4.js');
 const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
   && gitBlobSha(fs.readFileSync(unit4SourcePath, 'utf8')) === APPROVED_UNIT4_REWRITE_BLOB;

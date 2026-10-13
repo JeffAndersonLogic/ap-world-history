@@ -187,3 +187,9 @@ Three full passes in a row found supported defects, so under the build skill's s
 ## Status totals (2026-10-12)
 
 Story claims and Phase 9 claims together: every row has a status. NEEDS JEFF: none.
+
+### Pass 4, reviewer 7 (history), 2026-10-13, after the build shipped at `213fce2`
+
+1. F10 section 6, "Spain got ... the first crossing of the Pacific," is an unqualified first: Austronesian and Polynesian voyagers crossed and settled the Pacific centuries earlier (Ioannidis et al., *Nature* 583, 2020: "conclusive evidence for prehistoric contact of Polynesian individuals with Native American individuals (around AD 1200)"). **Fixed:** "the first European crossing of the Pacific." The fingerprint moved for that sentence only.
+
+Everything else checked clean, with sources: Lybyer's wording, Cabot's patent, Pearson's prices, every date and figure, the Newfoundland fishery, the primary source and captions, cross-surface consistency, the deep reading's references to other chapters, CED alignment and story-map ownership.

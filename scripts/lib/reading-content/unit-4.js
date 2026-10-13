@@ -396,7 +396,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Portugal got a trading-post empire from Africa to Asia. Spain got lands across the Atlantic and the first crossing of the Pacific, and all of Europe got interested. England, France, and the Dutch got no route to Asia, but they got fish, furs, and claims."
+            "html": "Portugal got a trading-post empire from Africa to Asia. Spain got lands across the Atlantic and the first European crossing of the Pacific, and all of Europe got interested. England, France, and the Dutch got no route to Asia, but they got fish, furs, and claims."
           },
           {
             "type": "p",
