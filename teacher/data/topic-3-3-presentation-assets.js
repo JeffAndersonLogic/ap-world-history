@@ -7,8 +7,12 @@
  * - protestant, catholic, chaldiran, sikh-emerge (story-scene): five pictures
  *   Jeff uploaded to assets/images/topics/3-3/ on 2026-10-13. All five are
  *   AI-generated: each is Gemini's 1376x768, carries C2PA content credentials,
- *   and has the Gemini sparkle in its bottom-right corner, which `cropBottom`
- *   hides (the sparkle sits in the bottom 11%). The template prints the house
+ *   and had the Gemini sparkle in its bottom-right corner. The bottom 84px
+ *   of each file were trimmed on 2026-10-13 to remove it (now 1376x684), as
+ *   Topic 3.1 did, rather than hidden with `cropBottom`: these frames reach the
+ *   board's edge, and an image drawn taller than its frame there reads as
+ *   painted off the board to teaching-os-deck-overflow.test.js. The trim also
+ *   dropped the C2PA metadata; the untrimmed originals are in commit aa8d835. The template prints the house
  *   label from `ai: true`, and each slide's notes say what the picture gets right
  *   and what it gets wrong, so the room reads it as a reconstruction:
  *   - Catholic Reformation: the Council of Trent. The crowd is far too big.
@@ -33,7 +37,7 @@ const T=window.BEHISTORICAL_TEACHING;
 if(!T||!Array.isArray(T.slides))return;
 const by=id=>T.slides.find(s=>s.phase===id);
 const LOCAL='../assets/images/topics/3-3/';
-const AI=(name,alt,extra)=>Object.assign({url:LOCAL+encodeURIComponent(name),alt,ai:true,cropBottom:.11},extra||{});
+const AI=(name,alt,extra)=>Object.assign({url:LOCAL+encodeURIComponent(name),alt,ai:true},extra||{});
 
 const map=by('rivalry-map');
 if(map)map.visual={

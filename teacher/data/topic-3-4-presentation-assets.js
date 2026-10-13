@@ -5,8 +5,11 @@
  *
  * Five pictures Jeff uploaded to assets/images/topics/3-4/ on 2026-10-13. All
  * five are AI-generated: each is Gemini's 1376x768, carries C2PA content
- * credentials and has the Gemini sparkle in its bottom-right corner, which
- * `cropBottom` hides (the Manchu picture also has a thin black strip there).
+ * credentials and had the Gemini sparkle in its bottom-right corner (the
+ * Manchu picture also had a thin black strip along the bottom). The bottom 84px
+ * of each file were trimmed on 2026-10-13 to remove both (now 1376x684), for
+ * the reason given in topic-3-3-presentation-assets.js; the untrimmed
+ * originals, with their C2PA metadata, are in commit 7b7cd6c.
  * The templates print the house label from `ai: true`, and each slide's notes
  * say what the picture shows and what it gets wrong:
  * - question (frame-subtitle): Isfahan, Naqsh-e Jahan Square. Polo goals drawn
@@ -37,7 +40,7 @@ const T=window.BEHISTORICAL_TEACHING;
 if(!T||!Array.isArray(T.slides))return;
 const by=id=>T.slides.find(s=>s.phase===id);
 const IMG='../assets/images/topics/';
-const AI=(folder,name,alt,extra)=>Object.assign({url:IMG+folder+'/'+encodeURIComponent(name),alt,ai:true,cropBottom:.11},extra||{});
+const AI=(folder,name,alt,extra)=>Object.assign({url:IMG+folder+'/'+encodeURIComponent(name),alt,ai:true},extra||{});
 
 const panipat=by('expand-proof');
 if(panipat)panipat.visual={

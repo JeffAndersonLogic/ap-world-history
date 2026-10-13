@@ -39,7 +39,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "url": "../assets/images/topics/3-4/3.4%20-%20Isfahan.jpg",
           "alt": "Reconstruction of Naqsh-e Jahan Square in Isfahan: a long open square with camels, riders and a polo game, a tiled dome on the left, a great mosque under scaffolding at the far end and a tall palace on the right, with shops under arcades on both sides",
           "ai": true,
-          "cropBottom": 0.11,
           "position": "50% 40%"
         }
       }
@@ -145,7 +144,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "url": "../assets/images/topics/3-4/3.4%20-%20Mughal%20Mansabdar.jpg",
             "alt": "Reconstruction of a Mughal muster in a red sandstone courtyard: a groom brands a horse while an officer and a line of armored troopers wait, and two scribes write in ledgers at a low table",
             "ai": true,
-            "cropBottom": 0.11,
             "position": "45% 50%"
           }
         },
@@ -171,7 +169,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "url": "../assets/images/topics/3-4/3.4%20-%20Ottoman%20Tax%20Farm.jpg",
             "alt": "Reconstruction of an Ottoman tax-farm auction: turbaned officials and bidders sit on carpets in a blue-tiled room, one pointing as he bids, with ledgers open and bags of coins on a cushion",
             "ai": true,
-            "cropBottom": 0.11,
             "position": "50% 45%"
           }
         },
@@ -185,7 +182,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "url": "../assets/images/topics/3-4/3.4%20-%20Mughal%20Land%20Survey.jpg",
             "alt": "Reconstruction of a Mughal revenue survey: two men stretch a jointed bamboo measuring rod across a wheat field while a scribe writes at a low desk and an official sits under a parasol",
             "ai": true,
-            "cropBottom": 0.11,
             "position": "40% 50%"
           }
         },
@@ -243,7 +239,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "url": "../assets/images/topics/3-3/3.3%20-%20Chaldiran.jpg",
           "alt": "Reconstruction of the Battle of Chaldiran: Ottoman infantry in tall white felt hats fire muskets from behind chained cannons and carts at charging Safavid horsemen in red-topped caps",
           "ai": true,
-          "cropBottom": 0.11,
           "position": "50% 62%"
         }
       }
@@ -314,7 +309,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "url": "../assets/images/topics/3-4/3.4%20-%20Manchu%20enter%20China.jpg",
           "alt": "Reconstruction of Manchu horsemen in yellow, white, red and blue armor riding through a gate in the Great Wall under a plaque reading First Pass Under Heaven, past Ming soldiers in red, with the wall running down the mountains to the sea",
           "ai": true,
-          "cropBottom": 0.11,
           "position": "50% 45%"
         }
       }
