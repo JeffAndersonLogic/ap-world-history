@@ -9,6 +9,29 @@ let served=html,browser;const server=http.createServer((req,res)=>{res.setHeader
  browser=await chromium.launch({executablePath:process.env.PW_CHROME||chromium.executablePath(),args:['--no-sandbox']});
  const page=await browser.newPage({viewport:{width:1280,height:1000},acceptDownloads:true}),errors=[];page.on('pageerror',e=>errors.push(e.message));
  page.on('dialog',dialog=>dialog.accept());
+ // Reproduce script-blocking file viewers. The readable sample must not depend
+ // on app startup; the old page left all responses hidden behind a spinner.
+ const previewContext=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}});
+ const previewPage=await previewContext.newPage();
+ async function readableSample(){
+  await previewPage.goto(url);
+  assert.equal(await previewPage.locator('#sample-preview').isVisible(),true,'Sample visible without scripts');
+  assert.equal(await previewPage.locator('.preview-response').count(),12);
+  assert((await previewPage.locator('#preview-coverage').textContent()).includes('8 responses assessed'));
+  assert.equal(await previewPage.locator('.preview-pattern').count(),3);
+  assert.equal(await previewPage.locator('#sample-S02').locator('..').locator('blockquote').first().isVisible(),true,'Student writing visible without scripts');
+  assert(!(await previewPage.locator('#load-state').textContent()).includes('Opening'));
+ }
+ assert(html.includes('id="sample-preview"'));
+ served=html.replace('id="sample-preview"','id="sample-preview" hidden');await assert.rejects(readableSample,/AssertionError/);
+ served=html;await readableSample();
+ await previewPage.locator('#sample-S12').click();assert((await previewPage.locator('#sample-S12').locator('..').textContent()).includes('not evidence of misunderstanding'));
+ assert(await previewPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Preview fits a phone');
+ if(process.env.BH_PILOT_SHOTS_DIR){fs.mkdirSync(process.env.BH_PILOT_SHOTS_DIR,{recursive:true});await previewPage.screenshot({path:path.join(process.env.BH_PILOT_SHOTS_DIR,'pilot-no-scripts.png'),fullPage:true});}
+ await previewContext.close();
+ served=html.replace(/<script>[\s\S]*?<\/script>/g,'');await page.goto(url);assert.equal(await page.locator('#sample-preview').isVisible(),true,'Stripped scripts leave readable sample');
+ served=html.replace('const PILOT_DATA =','const MISSING_PILOT_DATA =');await page.goto(url);assert((await page.locator('#load-state').textContent()).includes('could not open'));assert.equal(await page.locator('#sample-preview').isVisible(),true,'Startup error preserves readable sample');
+ served=html;await page.goto(url);assert.equal(await page.locator('#sample-preview').isVisible(),false,'Hide read-only copy after successful startup');assert.equal(await page.locator('#export').isVisible(),true);
  async function changeFocus(){await page.goto(url);await page.locator('[data-criterion="monsoons"]').click();assert.equal(await page.locator('#focus-description').textContent(),'Explain the seasonal winds');}
  assert(html.includes('focus=p.id;'));served=html.replace('focus=p.id;','focus=focus;');await assert.rejects(changeFocus,/AssertionError/);served=html;await changeFocus();
  async function correctionStays(){

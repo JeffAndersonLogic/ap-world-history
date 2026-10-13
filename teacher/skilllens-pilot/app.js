@@ -2,6 +2,7 @@
   'use strict';
   const $ = id => document.getElementById(id);
   const node = (tag, text, className) => {const el=document.createElement(tag); if (text !== undefined) el.textContent=text; if(className) el.className=className; return el;};
+  try {
   const core = window.SkillLensPilot, data = PILOT_DATA, contract=data.contract;
   let history=[], decisions=[], selected=new Set(), focus, currentId, dirty=false;
   const actionDrafts={};
@@ -68,7 +69,6 @@
   function renderSelection(){ $('selected-evidence').textContent=selected.size?Array.from(selected).map(id=>data.responses.find(r=>r.id===id).label).join(', '):'None yet. Select “Use this response in my decision” after reading the writing.'; }
   function render(){renderPatterns();$('focus-description').textContent=criterion().label;$('suggestion').textContent=criterion().action;renderEvidence();renderSelection();}
   function renderDecisions(){ $('decisions').replaceChildren(...decisions.map((d,i)=>{const item=node('article',undefined,'decision-record');item.append(node('h3','Decision '+(i+1)),node('p',d.action),node('p',contract.criteria.find(c=>c.id===d.criterionId).label+' · '+d.evidence.map(e=>e.response.label).join(', '),'muted'));return item;})); }
-  try {
     if(data.synthetic!==true||data.responses.length!==12)throw new Error('The synthetic sample could not be verified.');
     for(const analysis of data.analyses){const response=data.responses.find(r=>r.id===analysis.responseId);if(!response||!core.validate(contract,response,analysis).valid)throw new Error('The authored sample contains an invalid evidence record.');}
     focus=summary().patterns.slice().sort((a,b)=>b.gap-a.gap)[0].id;
@@ -92,7 +92,7 @@
       const url=URL.createObjectURL(new Blob([JSON.stringify(output,null,2)],{type:'application/json'}));const link=node('a');link.href=url;link.download='behistorical-synthetic-review.json';document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);dirty=false;flash('Review download requested. Keep the JSON file as your record; this pilot does not re-import saved reviews.');
     });
     window.addEventListener('beforeunload',event=>{if(dirty){event.preventDefault();event.returnValue='';}});
-    render();$('workspace').hidden=false;$('load-state').hidden=true;$('export').disabled=false;
+    render();$('workspace').hidden=false;$('sample-preview').hidden=true;$('load-state').hidden=true;$('export').disabled=false;$('export').hidden=false;
   } catch(error) {
     $('workspace').hidden=true;$('load-state').textContent='The sample could not open. '+error.message+' ';
     const retry=node('button','Try again');retry.addEventListener('click',()=>location.reload());$('load-state').append(retry);

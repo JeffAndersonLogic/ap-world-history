@@ -15,6 +15,16 @@ updates that arrived during this build.
 Open `teacher/skilllens-pilot.html` directly in a browser. Everything is inside
 that one file. No server, sign-in, internet connection, or API key is needed.
 
+File-preview compatibility: the class summary and all 12 synthetic responses
+are also generated as plain HTML from the same criteria and judgment engine.
+They remain readable when a viewer disables or strips scripts. This mode is
+explicitly read-only; editing and export require opening the downloaded file
+in a desktop browser. Successful interactive startup hides the read-only copy.
+Initialization failures retain that copy and show a recovery message, instead
+of leaving the class behind an indefinite loading message. The user's reported
+viewer has not been directly inspected; script blocking is a reproduced failure
+mode, not a confirmed diagnosis of their device.
+
 1. Select **Explain two maritime technologies**. Initially four of eight
    interpretable responses show a gap on this criterion.
 2. Read Synthetic student 02. The response names a compass and astrolabe but
