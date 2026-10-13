@@ -681,6 +681,43 @@ function sentenceFrame(s){
   return board('sentence-frame',themeOf(t,'paper'),pad(head(s)+grow(`<div class="bht-sf"><p class="bht-sf-line">${html}</p>${ex}</div>`)+foot(s.footer)));
 }
 
+/* ── round 5 (2026-10-13): pictures inside the story ─────────────────────
+   Built for Topics 3.3 and 3.4, where every beat already has its shape (a
+   short sequence, or one job done two ways) and the uploaded scene belongs on
+   the same slide rather than on a picture slide of its own. */
+
+/* Story steps beside the scene they happen in. One or two pictures fill one
+   edge of the board top to bottom; the steps, in the story-steps look, take
+   the rest. `pictures` is up to two { visual, caption }, stacked; `visual`
+   and `caption` are the one-picture shorthand. `side: 'left'` puts the
+   pictures on the left. A tall slice of a wide picture is a heavy crop, so
+   give each visual a `position` that keeps its subject. */
+function storyScene(s){
+  const t=s.template||{},st=arr(t.steps).slice(0,5),n=Math.max(1,st.length);
+  const pics=(arr(t.pictures).length?arr(t.pictures):(t.visual?[{visual:t.visual,caption:t.caption}]:[])).slice(0,2);
+  // The label column leaves 165u for the longest word, at about .76em a letter.
+  const longest=Math.max(1,...st.map(x=>Math.max(1,...String(x.label||'').split(/\s+/).map(w=>w.length))));
+  const lab=Math.max(16,Math.min(24,Math.floor(165/(longest*.76))));
+  const txt=n>=5?20:n===4?22:25;
+  const rows=st.map(x=>`<li class="bht-ss-row${x.key?' key':''}"><span class="lb" style="font-size:calc(${lab}*var(--u))">${esc(x.label)}</span><p style="font-size:calc(${txt}*var(--u))">${rich(x.text)}</p></li>`).join('');
+  const panel=`<div class="bht-sn-pics">${pics.length?pics.map(p=>`<div class="bht-sn-pic">${frame(p.visual,'bht-sn-img',{tagPos:'tl'})}${p.caption?`<div class="cap">${esc(p.caption)}</div>`:''}</div>`).join(''):`<div class="bht-sn-pic">${frame(null,'bht-sn-img',{placeholder:'Add the scene this story happens in'})}</div>`}</div>`;
+  const copy=`<div class="bht-sn-copy">${head(s)}${grow(`<ol class="bht-ss">${rows}</ol>`)}${foot(s.footer)}</div>`;
+  const left=t.side==='left';
+  return board('story-scene',themeOf(t,'dark'),`<div class="bht-sn${left?' flip':''}">${left?panel+copy:copy+panel}</div>`);
+}
+
+/* One job, two tools, each one seen at work: a picture over each side's name
+   and up to three points, and what the two have in common along the bottom.
+   The comparison shape of Topic 3.4, "compare the job, not the empire": the
+   pictures make the two tools concrete, the bottom row keeps the category
+   constant. A cut-out figure or a portrait takes `fit: 'contain'`. */
+function splitScenes(s){
+  const t=s.template||{},L=t.left||{},R=t.right||{},both=arr(t.both).slice(0,3);
+  const col=(x,c)=>`<div class="bht-sx-col ${c}">${frame(x.visual,'bht-sx-img',{tagPos:'tl',placeholder:'Add a picture of this tool at work'})}<div class="bht-sx-name">${esc(x.name)}</div>${arr(x.items).length?`<ul>${arr(x.items).slice(0,3).map(i=>`<li>${rich(i)}</li>`).join('')}</ul>`:''}</div>`;
+  const bottom=both.length?`<div class="bht-sx-both"><div class="tg">${esc(t.bothLabel||'Same job')}</div><div class="chips">${both.map(b=>`<span>${rich(b)}</span>`).join('')}</div></div>`:'';
+  return board('split-scenes',themeOf(t,'dark'),pad(head(s)+`<div class="bht-sx">${col(L,'l')}${col(R,'r')}</div>`+bottom+foot(s.footer),'tight'));
+}
+
 const KINDS={
   'equation':equation,'equation-stack':equationStack,'equation-remove':equationRemove,
   'exchange':exchange,'exchange-flow':exchangeFlow,'exchange-hub':exchangeHub,
@@ -702,7 +739,9 @@ const KINDS={
   /* round 3 */
   'case-file':caseFile,'branch-tree':branchTree,'face-off':faceOff,'sentence-frame':sentenceFrame,
   /* round 4 */
-  'story-steps':storySteps,'frame-pair':fPair
+  'story-steps':storySteps,'frame-pair':fPair,
+  /* round 5 */
+  'story-scene':storyScene,'split-scenes':splitScenes
 };
 
 /* ── the Key Concept band ─────────────────────────────────────────────── */
@@ -1412,6 +1451,39 @@ const CSS=`
 .bht-sf-ex p{font-size:21u;line-height:1.45}
 .bht-sf-ex b{color:#c9a46a}
 .dark .bht-sf-ex b{color:#6b3e1f}
+
+/* round 5: story scene */
+.bht-sn{position:absolute;inset:0;display:grid;grid-template-columns:minmax(0,1fr) 540u}
+.bht-sn.flip{grid-template-columns:540u minmax(0,1fr)}
+.bht-sn-copy{display:flex;flex-direction:column;gap:16u;padding:56u 44u 52u 64u;min-width:0;min-height:0}
+.bht-sn.flip .bht-sn-copy{padding:56u 64u 52u 44u}
+.bht-sn-copy .bht-h{font-size:36u;max-width:none}
+.bht-sn .bht-ss{row-gap:16u}
+.bht-sn .bht-ss-row{grid-template-columns:190u minmax(0,1fr);column-gap:18u;padding-right:20u}
+.bht-sn .bht-ss-row .lb{padding-left:18u}
+.bht-sn .bht-ss-row:not(:last-child)::after{bottom:-14u;border-top-width:10u;border-left-width:8u;border-right-width:8u}
+.bht-sn-pics{display:flex;flex-direction:column;gap:6u;background:#050606;min-height:0}
+.bht-sn-pic{position:relative;flex:1 1 0;min-height:0}
+.bht-sn-img{position:absolute;inset:0}
+.bht-sn-pic .cap{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:28u 18u 12u;background:linear-gradient(180deg,rgba(5,6,6,0),rgba(5,6,6,.86) 55%);font:800 13u/1.3 'Montserrat',Helvetica,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#f5f0e7}
+
+/* round 5: split scenes */
+.bht-sx{flex:1 1 auto;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:28u}
+.bht-sx-col{display:flex;flex-direction:column;gap:8u;min-height:0;min-width:0}
+.bht-sx-img{flex:1 1 auto;min-height:0;border-radius:6u;border:1u solid var(--rulec);background:#1d2123}
+.paper .bht-sx-img{background:#e9e1d2}
+.bht-sx-col.l .bht-sx-img{border-bottom:5u solid #8c5a2b}
+.bht-sx-col.r .bht-sx-img{border-bottom:5u solid #c9a46a}
+.bht-sx-name{font:800 26u/1.15 'Cinzel',Georgia,serif;color:var(--head);margin-top:4u;overflow-wrap:break-word}
+.bht-sx-col ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:2u}
+.bht-sx-col li{position:relative;padding-left:20u;font-size:18u;line-height:1.35;color:var(--fg)}
+.bht-sx-col li::before{content:'';position:absolute;left:2u;top:9u;width:8u;height:8u;border-radius:50%;background:var(--acc)}
+.bht-sx-both{display:flex;align-items:center;gap:18u;border-top:2u solid var(--rulec);padding-top:12u}
+.bht-sx-both .tg{flex:none;font:800 13u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--acc)}
+.bht-sx-both .chips{display:flex;flex-wrap:wrap;gap:10u}
+.bht-sx-both .chips span{font:700 16u/1.2 'Montserrat',Helvetica,sans-serif;color:#101213;background:#c9a46a;border-radius:999u;padding:7u 14u}
+.paper .bht-sx-both .chips span{background:#1a1c1d;color:#f5f0e7}
+.bht-split-scenes .bht-h{font-size:36u;max-width:none}
 
 `.replace(/(-?)(\d+(?:\.\d+)?)u\b/g,'calc($1$2*var(--u))')
  /* The sign goes inside calc(): -7u used to become -calc(7*var(--u)), which

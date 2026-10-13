@@ -69,7 +69,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       ]
     },
     {
-      "kind": "story-steps",
+      "kind": "story-scene",
       "eyebrow": "Christianity · Break",
       "title": "A challenge becomes a Reformation.",
       "kc": "KC-4.1.VI.i",
@@ -92,11 +92,23 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "label": "Continuity",
             "text": "Christianity remains powerful."
           }
+        ],
+        "pictures": [
+          {
+            "caption": "A German print shop",
+            "visual": {
+              "url": "../assets/images/topics/3-3/3.3%20-%20German%20Printing%20Shop.jpg",
+              "alt": "Reconstruction of a German print shop: a pressman pulls the bar of a wooden screw press, a boy holds two leather ink balls, a compositor sets type from a slanted case, and printed sheets hang drying on lines overhead",
+              "ai": true,
+              "cropBottom": 0.11,
+              "position": "38% 50%"
+            }
+          }
         ]
       }
     },
     {
-      "kind": "story-steps",
+      "kind": "story-scene",
       "eyebrow": "Christianity · Reform",
       "title": "Catholicism changed too.",
       "kc": "KC-4.1.VI.i",
@@ -119,6 +131,29 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "key": true,
             "text": "Both reformations contribute to Christianity's growth."
           }
+        ],
+        "side": "left",
+        "pictures": [
+          {
+            "caption": "Council of Trent, 1545 to 1563",
+            "visual": {
+              "url": "../assets/images/topics/3-3/3.3%20-%20Catholic%20Reformation.jpg",
+              "alt": "Reconstruction of the Council of Trent: rows of bishops in white miters and cardinals in red facing each other across a church nave while clerks write at a table in the center",
+              "ai": true,
+              "cropBottom": 0.11,
+              "position": "50% 55%"
+            }
+          },
+          {
+            "caption": "A Jesuit in China: Matteo Ricci",
+            "visual": {
+              "url": "../assets/images/topics/3-3/3.3%20-%20Mateo%20Ricci.jpg",
+              "alt": "Reconstruction of Matteo Ricci, a bearded European in a black Chinese scholar's robe and hat, writing Chinese characters with a brush beside a Chinese scholar, with a world map and an astrolabe on the desk",
+              "ai": true,
+              "cropBottom": 0.11,
+              "position": "45% 45%"
+            }
+          }
         ]
       }
     },
@@ -130,7 +165,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kc": "KC-4.1.VI.ii"
     },
     {
-      "kind": "story-steps",
+      "kind": "story-scene",
       "eyebrow": "Islam · Rivalry",
       "title": "Political rivalry intensifies an older divide.",
       "kc": "KC-4.1.VI.ii",
@@ -152,6 +187,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "label": "Change",
             "key": true,
             "text": "Sectarian identity gains sharper imperial meaning."
+          }
+        ],
+        "pictures": [
+          {
+            "caption": "Chaldiran, 1514",
+            "visual": {
+              "url": "../assets/images/topics/3-3/3.3%20-%20Chaldiran.jpg",
+              "alt": "Reconstruction of the Battle of Chaldiran: Ottoman infantry in tall white felt hats fire muskets from behind cannons and carts chained together, while Safavid horsemen in red-topped caps charge across a dusty plain",
+              "ai": true,
+              "cropBottom": 0.11,
+              "position": "45% 50%"
+            }
           }
         ]
       }
@@ -193,7 +240,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       ]
     },
     {
-      "kind": "story-steps",
+      "kind": "story-scene",
       "eyebrow": "Sikhism · Emergence",
       "title": "A distinct tradition develops.",
       "kc": "KC-4.1.VI.iii",
@@ -215,6 +262,19 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "label": "Change",
             "key": true,
             "text": "A distinct Sikh tradition emerges."
+          }
+        ],
+        "side": "left",
+        "pictures": [
+          {
+            "caption": "The langar, a shared kitchen",
+            "visual": {
+              "url": "../assets/images/topics/3-3/3.3%20-%20Sikh.jpg",
+              "alt": "Reconstruction of a langar in a Punjab village: long rows of men and women in turbans and head scarves sit on the ground eating from brass plates while servers carry pots of food, with wheat fields and a river behind",
+              "ai": true,
+              "cropBottom": 0.11,
+              "position": "50% 55%"
+            }
           }
         ]
       }

@@ -29,11 +29,20 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "prompt",
+      "kind": "frame-subtitle",
       "eyebrow": "The Question",
       "title": "How did different empires increase their influence?",
       "subtitle": "And why did they use different methods?",
-      "kc": "Unit 3: Learning Objective D"
+      "kc": "Unit 3: Learning Objective D",
+      "template": {
+        "visual": {
+          "url": "../assets/images/topics/3-4/3.4%20-%20Isfahan.jpg",
+          "alt": "Reconstruction of Naqsh-e Jahan Square in Isfahan: a long open square with camels, riders and a polo game, a tiled dome on the left, a great mosque under scaffolding at the far end and a tall palace on the right, with shops under arcades on both sides",
+          "ai": true,
+          "cropBottom": 0.11,
+          "position": "50% 40%"
+        }
+      }
     },
     {
       "kind": "action",
@@ -107,43 +116,38 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "footer": "Historical image · First Battle of Panipat"
     },
     {
-      "kind": "grid",
+      "kind": "split-scenes",
       "eyebrow": "Job Two · Hold",
       "title": "Authority needs people to carry it.",
       "footer": "Same job: hold. Different systems; both make imperial orders travel.",
       "kc": "KC-4.3.II.B",
-      "cards": [
-        {
-          "title": "OTTOMAN",
-          "text": "Devshirme: recruited and trained service elite whose careers depended on the sultan."
-        },
-        {
-          "title": "MUGHAL",
-          "text": "Mansabdars: ranked imperial officials serving the emperor."
-        },
-        {
-          "title": "SAME JOB",
-          "text": "Extend central authority through servants who govern and fight."
-        },
-        {
-          "title": "COMPARE",
-          "text": "Different mechanisms, same political problem."
-        }
-      ],
       "template": {
         "left": {
           "name": "Devshirme",
           "items": [
             "Recruited and trained service elite",
             "Careers depended on sultan"
-          ]
+          ],
+          "visual": {
+            "url": "../assets/images/topics/3-2/3.2%20-%20Janissary.png",
+            "alt": "Reconstruction of a Janissary in a tall white felt hat with a brass plume holder, a red brocade coat, a green sash and red boots, holding a long musket and a curved sword",
+            "ai": true,
+            "fit": "contain"
+          }
         },
         "right": {
           "name": "Mansabdars",
           "items": [
             "Ranked imperial officials",
             "Service and revenue assignments"
-          ]
+          ],
+          "visual": {
+            "url": "../assets/images/topics/3-4/3.4%20-%20Mughal%20Mansabdar.jpg",
+            "alt": "Reconstruction of a Mughal muster in a red sandstone courtyard: a groom brands a horse while an officer and a line of armored troopers wait, and two scribes write in ledgers at a low table",
+            "ai": true,
+            "cropBottom": 0.11,
+            "position": "45% 50%"
+          }
         },
         "both": [
           "Serve central ruler",
@@ -152,42 +156,38 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "grid",
+      "kind": "split-scenes",
       "eyebrow": "Job Three · Pay",
       "title": "Influence costs money.",
       "footer": "Same job: pay. Do not rank the systems; explain the mechanism.",
-      "cards": [
-        {
-          "title": "OTTOMAN",
-          "text": "Tax farming turned collection rights into state revenue."
-        },
-        {
-          "title": "MUGHAL",
-          "text": "Land revenue and zamindars connected agricultural wealth to the state."
-        },
-        {
-          "title": "SAME JOB",
-          "text": "Fund armies, officials, courts, and government."
-        },
-        {
-          "title": "COMPARE",
-          "text": "Explain the mechanism; do not rank the systems."
-        }
-      ],
       "template": {
         "left": {
           "name": "Ottoman tax farming",
           "items": [
             "Collection rights granted for payment",
             "State gains revenue"
-          ]
+          ],
+          "visual": {
+            "url": "../assets/images/topics/3-4/3.4%20-%20Ottoman%20Tax%20Farm.jpg",
+            "alt": "Reconstruction of an Ottoman tax-farm auction: turbaned officials and bidders sit on carpets in a blue-tiled room, one pointing as he bids, with ledgers open and bags of coins on a cushion",
+            "ai": true,
+            "cropBottom": 0.11,
+            "position": "50% 45%"
+          }
         },
         "right": {
           "name": "Mughal land revenue",
           "items": [
             "Agricultural revenue central",
             "Zamindars among local intermediaries"
-          ]
+          ],
+          "visual": {
+            "url": "../assets/images/topics/3-4/3.4%20-%20Mughal%20Land%20Survey.jpg",
+            "alt": "Reconstruction of a Mughal revenue survey: two men stretch a jointed bamboo measuring rod across a wheat field while a scribe writes at a low desk and an official sits under a parasol",
+            "ai": true,
+            "cropBottom": 0.11,
+            "position": "40% 50%"
+          }
         },
         "both": [
           "Turn local resources into state revenue",
@@ -196,42 +196,35 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "grid",
+      "kind": "split-scenes",
       "eyebrow": "Job Four · Justify",
       "title": "Power also has to look legitimate.",
       "footer": "Same job: justify. Different media can do similar political work.",
-      "cards": [
-        {
-          "title": "MUGHAL",
-          "text": "Monumental architecture projected dynastic wealth, faith, and permanence."
-        },
-        {
-          "title": "QING",
-          "text": "Imperial portraiture presented authority through visual traditions of rulership."
-        },
-        {
-          "title": "SAME JOB",
-          "text": "Make authority visible and credible."
-        },
-        {
-          "title": "COMPARE",
-          "text": "Different media can do similar political work."
-        }
-      ],
       "template": {
         "left": {
           "name": "Mughal architecture",
           "items": [
             "Mosques and mausolea",
             "Dynastic wealth and permanence"
-          ]
+          ],
+          "visual": {
+            "url": "../assets/images/topics/3-2/taj-mahal.jpg",
+            "alt": "The Taj Mahal, a white marble tomb with a large central dome and four tall minarets, seen down a long reflecting pool lined with cypress trees",
+            "credit": "Taj Mahal · Modern photograph: Yann, edited by Jim Carter · CC BY-SA 4.0"
+          }
         },
         "right": {
           "name": "Qing portraiture",
           "items": [
             "Imperial visual language",
             "Authority presented to audiences"
-          ]
+          ],
+          "visual": {
+            "url": "../assets/images/topics/3-2/qianlong-court-dress-1736.jpg",
+            "alt": "Full-length portrait of the Qianlong Emperor seated on a carved dragon throne, in a yellow robe embroidered with dragons and a black fur-trimmed cape",
+            "credit": "Qianlong in court dress, 1736 · Public domain",
+            "fit": "contain"
+          }
         },
         "both": [
           "Make rule visible",
@@ -240,11 +233,20 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "prompt",
+      "kind": "frame-letterbox",
       "eyebrow": "Qualification · Topic 3.3 Returns",
       "title": "Belief was not only a ruler’s tool.",
       "subtitle": "Ottoman-Safavid rivalry intensified an older Sunni-Shia divide. Empire could shape belief too.",
-      "kc": "KC-4.3.III.i"
+      "kc": "KC-4.3.III.i",
+      "template": {
+        "visual": {
+          "url": "../assets/images/topics/3-3/3.3%20-%20Chaldiran.jpg",
+          "alt": "Reconstruction of the Battle of Chaldiran: Ottoman infantry in tall white felt hats fire muskets from behind chained cannons and carts at charging Safavid horsemen in red-topped caps",
+          "ai": true,
+          "cropBottom": 0.11,
+          "position": "50% 62%"
+        }
+      }
     },
     {
       "kind": "grid",
@@ -302,11 +304,20 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "prompt",
+      "kind": "frame-subtitle",
       "eyebrow": "Landing · 2 Minutes",
       "title": "Same jobs. Different tools.",
       "subtitle": "These empires grew over land. Next: states learn to project influence across oceans.",
-      "kc": "KC-4.1"
+      "kc": "KC-4.1",
+      "template": {
+        "visual": {
+          "url": "../assets/images/topics/3-4/3.4%20-%20Manchu%20enter%20China.jpg",
+          "alt": "Reconstruction of Manchu horsemen in yellow, white, red and blue armor riding through a gate in the Great Wall under a plaque reading First Pass Under Heaven, past Ming soldiers in red, with the wall running down the mountains to the sea",
+          "ai": true,
+          "cropBottom": 0.11,
+          "position": "50% 45%"
+        }
+      }
     }
   ]
 };
