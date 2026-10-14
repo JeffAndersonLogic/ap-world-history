@@ -112,16 +112,16 @@ window.BEHISTORICAL_LESSON = {
 
   lecture: {
     title: "What the Ships Carried: The Columbian Exchange, 1492 to 1750",
-    intro: "Use these cards after the First & 10. Each one answers the topic's question for one part of the story: what crossed the Atlantic, how it crossed, and what it did to the people at the other end.",
+    intro: "Use these cards after the First & 10. The reading told the story; these cards go underneath it: how to read the map, the pictures and the sources, why things happened the way they did, and the mistakes to avoid.",
     videos: [],
     segments: [
       {
-        title: "Why It Happened: Ships That Came Back",
+        title: "Why It Happened: Reading the Map",
         bullets: [
-          "Since the end of the last Ice Age, about eleven thousand years ago, ocean had kept the Americas apart from Africa, Asia, and Europe. Each side grew its own crops, kept its own animals, and lived with its own diseases. The Americas had **maize, potatoes, cassava, tomatoes, cacao, and tobacco**, but no horses, cattle, or pigs. Afro-Eurasia had **wheat, rice, sugarcane, horses, cattle, pigs, and sheep**, and diseases such as **smallpox and measles**.",
-          "The cause of the **Columbian Exchange** is a new connection: after 1492, ships crossed the Atlantic and came back, again and again, as Europeans built colonies. From the 1560s, Spanish ships also crossed the Pacific between Mexico and the Philippines. Everything that rode those ships crossed too. The historian Alfred Crosby named the exchange in 1972.",
-          "Things crossed in three ways. **On purpose:** Columbus's second voyage, in 1493, carried horses, cattle, pigs, wheat seed, and sugarcane. **By accident:** germs, rats in the cargo, and, most likely, the eggs of the mosquito that spreads yellow fever, hidden in water barrels. Animals that carry disease from person to person are **disease vectors**. **By force:** enslaved Africans were carried across the Atlantic, and African foods crossed on the same ships.",
-          "Keep the College Board's word in mind: the disease vectors and diseases moved **unintentionally**. The ships carried more than anyone meant them to."
+          "The First & 10 told the story; this card is about reading it on the map. Arrows 1 and 2 go west to the Americas, and arrows 3 and 4 go east to Europe and Africa. The cause is what every arrow shares: ships that crossed the ocean and **came back**, again and again, as Europeans built colonies. From the 1560s, Spanish ships also crossed the Pacific between Mexico and the Philippines, which is why one American crop, the sweet potato, reached China without an arrow on this map.",
+          "Why does coming back matter? One voyage carries a few animals, a few seeds and a few germs. A route sailed again and again carries them over and over, which is why the exchange went on for centuries instead of happening once.",
+          "Each way of crossing is a different kind of cause. **On purpose** is a choice: settlers wanted the foods and animals they knew, so Columbus's second voyage in 1493 carried horses, cattle, pigs, wheat seed and sugarcane. **By accident** is nobody's choice: germs, rats in the cargo and, most likely, the eggs of the mosquito that spreads yellow fever, hidden in water barrels. Animals that carry disease from person to person are **disease vectors**. **By force** is someone else's choice: enslaved Africans did not choose to cross, and African foods crossed on the same ships.",
+          "**Common mistake:** calling the Columbian Exchange a \"trade.\" A trade is something both sides choose. Much of what crossed was chosen by nobody, which is why the College Board calls the spread of disease vectors and diseases **unintentional**."
         ],
         image: {
           title: "What Crossed, and Which Way",
@@ -131,12 +131,12 @@ window.BEHISTORICAL_LESSON = {
         }
       },
       {
-        title: "Going West by Accident: Disease and Its Causes",
+        title: "Going West by Accident: Reading the Evidence on Disease",
         bullets: [
-          "**Smallpox** reached the Caribbean in 1518 and Mexico in 1520. Measles followed, and malaria, which mosquitoes spread, most likely came in the blood of infected Europeans and enslaved Africans. These diseases had circulated in Afro-Eurasia for a long time; in the Americas they were new.",
-          "In June 1520 the people of **Tenochtitlan** drove the Spaniards out of their city. That autumn smallpox swept through it. The Nahua account later written down for the friar Bernardino de Sahagún says the sickness lasted sixty days, that many \"just starved to death,\" and that \"the Mexica warriors were greatly weakened by it\" when the Spaniards returned to besiege the city in 1521.",
-          "Why so deadly? **First**, nobody in the Americas had had these diseases before, so no adult had survived them and become immune, and almost everyone fell sick at the same time, leaving nobody to farm, cook, or care for the sick. **Second**, the diseases came with war, forced labor, hunger, and people driven from their homes. The historian David S. Jones argues that conditions like these, created by colonization, shaped how many people died. It is a myth that Indigenous Americans were simply born weak.",
-          "Historians argue about the numbers. Most published estimates say central Mexico lost between about two-thirds and more than nine-tenths of its people between 1519 and 1595, and many regions lost most of their people. The College Board's words are \"catastrophic effects in many areas.\""
+          "Look closely at the picture. A Nahua healer, a **ticitl**, speaks with a sick person while others lie covered in sores. Nahua artists painted it for Book 12 of the **Florentine Codex**, completed about 1577, more than fifty years after **smallpox** swept **Tenochtitlan** in 1520. It shows how survivors remembered the epidemic, not a sketch made that autumn.",
+          "Read the account the way the Skill Builder teaches. Its claim: the sickness \"brought great desolation.\" Its evidence: people covered in sores, too weak to move, and many who \"just starved to death; starvation reigned, and no one took care of others any longer.\" Disease and hunger were working together, and the account says the Mexica warriors were \"greatly weakened\" when the Spaniards returned in 1521. **Measles** and **malaria** followed smallpox; malaria, which mosquitoes spread, most likely came in the blood of infected Europeans and enslaved Africans.",
+          "Why were these diseases so deadly? The historian **David S. Jones** argues that never having met the diseases before \"might have left them vulnerable,\" but that how many people died depended on \"contingent factors\" in their lives. War, forced labor, hunger and being driven from home are the other half of the answer. \"They had no immunity\" alone is half an explanation, and \"they were born weak\" is a myth.",
+          "How do historians count people nobody counted? They rebuild the numbers from Spanish tribute records, church records and archaeology, which is why they give a **range**. Most published estimates say central Mexico lost between about two-thirds and more than nine-tenths of its people between 1519 and 1595. When you use a number, say whose it is. The College Board's own words are \"catastrophic effects in many areas.\""
         ],
         image: {
           title: "A Nahua Healer and Smallpox Patients",
@@ -146,12 +146,13 @@ window.BEHISTORICAL_LESSON = {
         }
       },
       {
-        title: "Going West on Purpose and by Force: Animals, Sugar, Rice, and Okra",
+        title: "Going West on Purpose and by Force: How the Changes Worked",
         bullets: [
-          "**Pigs and cattle** multiplied fast. José de Acosta reported in 1590 that wild cattle on Santo Domingo roamed \"by thousands,\" and that one fleet in 1587 carried almost a hundred thousand cattle hides to Spain from the Caribbean and Mexico. One historian argues that in one valley of central Mexico, sheep grazed the hillsides bare.",
-          "**Horses** had died out in the Americas thousands of years earlier. Brought back by the Spanish, they spread north, and by the early 1700s Great Plains peoples such as the **Comanche** had built new ways of life on horseback. An effect of the exchange could be an opportunity as well as a disaster.",
-          "**Enslaved Africans** were carried across the Atlantic by force, and African foods such as **African rice and okra** crossed on the same ships, often as food for the voyage. Many enslaved Africans knew how to grow rice. Okra was growing in Brazil by the 1650s. Enslaved people grew these foods in small garden plots to feed themselves, and the foods became part of cooking across the Americas, from Brazil to the Caribbean.",
-          "**Sugarcane** came from Afro-Eurasia but grew better in the Caribbean and Brazil than almost anywhere. Europeans grew it as a **cash crop** on **plantations** worked by **coerced labor**, which during the 1600s became overwhelmingly enslaved Africans, and shipped most of the sugar to Europe. Before 1492, Europeans had already grown sugar with enslaved workers, including Canary Islanders and Africans, on Atlantic islands such as Madeira, so disease alone did not cause African slavery in the Americas. How that forced labor worked is Topic 4.4."
+          "**Pigs and cattle** are the clearest case of a choice with effects nobody planned. The Spanish writer José de Acosta claimed that cattle had multiplied enormously, and gave evidence: wild herds on Santo Domingo \"by thousands,\" and a 1587 fleet that carried 35,444 hides from Santo Domingo and 64,350 from Mexico, almost a hundred thousand. He counted hides, not cattle, but a fleet does not fill up with that many hides from a few animals.",
+          "Why did they spread so fast? The animals arrived in the Caribbean and Mexico, where no comparable grazing herds lived, and Indigenous fields were often grown without fences, because there had been no herds to fence out. Loose pigs and cattle ate and trampled the crops people depended on. One historian argues that in one valley of central Mexico, sheep grazed the hillsides bare.",
+          "Not every effect was done to people. **Horses** had died out in the Americas thousands of years earlier; brought back by the Spanish, they spread north, and Plains peoples chose to build new lives around them. By the early 1700s the **Comanche** hunted bison and traded across huge distances on horseback.",
+          "**African rice and okra** crossed on slave ships, often as food for the voyage, and many enslaved Africans knew how to grow rice. Enslaved people planted these foods in garden plots to feed themselves, and the foods became part of cooking across the Americas, from Brazil to the Caribbean.",
+          "Look at the painting: workers at the furnace house that boiled cane juice into sugar, an ox cart, and a large house on the hill. Frans Post painted it in the Netherlands in the 1660s for buyers in Europe, so ask what a painting made to sell might leave out. **Sugarcane** grew on **plantations** worked by **coerced labor**, and the system was not new: Europeans had grown sugar with enslaved workers, including Canary Islanders and Africans, on Madeira before 1492, and chose to carry it across the Atlantic. How that labor worked is Topic 4.4."
         ],
         image: {
           title: "A Sugar Plantation in Dutch Brazil",
@@ -161,12 +162,12 @@ window.BEHISTORICAL_LESSON = {
         }
       },
       {
-        title: "Going East: New Staple Crops and Better Nutrition",
+        title: "Going East: Why the New Crops Mattered",
         bullets: [
-          "American crops became **staple crops**, the main everyday foods, in parts of Europe, Asia, and Africa because they grew where the old crops struggled: **maize** on dry land, **potatoes** in cold, wet ground, **cassava** in poor soil and drought, **sweet potatoes** on hillsides too steep for rice.",
-          "Sweet potatoes reached China by the Pacific road: Chinese merchants brought them from the Spanish Philippines, and in southern China officials promoted them in 1594, a famine year. By the 1740s, an album made for a Qing official in Taiwan called it \"truly a help in years of bad harvest.\" Near the mouth of the Congo River, Portuguese traders brought cassava from Brazil, and farmers took it up; it survives drought and locusts, which made it a food to fall back on. In Ireland, the potato had become a main food by the 1700s.",
-          "**Nutrition** means how well food feeds the body. More food, more kinds of food, and a fallback when the old harvest failed meant better nutrition, and over two centuries these crops helped populations grow in China and Europe, and they fed many people in Africa even as the slave trade carried millions away.",
-          "Put both directions together: one connection, two very different results. In the Americas, catastrophic disease and land remade by new animals and plantations. In Afro-Eurasia, new staple crops and better nutrition."
+          "Look at the names. John Gerard's English herbal of 1597 pictures maize as \"Corne of Asia\" and \"Turkie Corne,\" and a Qing album of the 1740s labels the sweet potato \"foreign tuber.\" People far from the Americas were growing these plants without knowing where they first came from. Gerard even doubted maize, writing that it \"doth nourish far lesse than either Wheate, Rie, Barly or Otes.\"",
+          "Why did these crops matter so much? They produce more **calories per acre**, and they grow where the old staples could not: **maize** and **sweet potatoes** on dry hills, **potatoes** in cold, damp ground, **cassava** in poor soil and drought. That brought new land into farming instead of only replacing an old crop, and it gave families something to eat when the old harvest failed. That is what better **nutrition** means here: more food, more kinds of food, and a fallback.",
+          "Follow the routes. Sweet potatoes reached China across the Pacific from the Spanish Philippines, and officials in southern China promoted them in 1594, a famine year; a Qing album later called the plant \"truly a help in years of bad harvest.\" Portuguese traders carried cassava from Brazil to the mouth of the Congo River, and farmers took it up; it survives drought and locusts, which made it a food to fall back on. In Ireland, the potato had become a main food by the 1700s.",
+          "Put both directions together and the results were unequal. In the Americas, catastrophic disease and land remade by new animals and plantations. In Afro-Eurasia, new **staple crops** and better nutrition: over two centuries these crops helped populations grow in China and Europe and fed many people in parts of Africa, even as the slave trade carried millions away."
         ],
         image: {
           title: "\"Turkie Corne\" in an English Herbal, 1597",
