@@ -743,6 +743,35 @@ function ledger(s){
   return board('ledger',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-lg${pay?' has-pay':''}"><ol>${rows}</ol>${pay}</div>`)+foot(s.footer),'tight'));
 }
 
+/* A good comparison beside a bad one, each stamped with its verdict: the
+   pair named large, one line on why, and a stamp naming the job (or saying
+   the jobs differ). Under them, the questions every comparison then has to
+   answer. Built for the Topic 3.4 comparison rule, where four small cards
+   (Good, Bad, Ask, Land) made the room read a rule instead of seeing one.
+   The verdict is carried by a symbol and a word as well as the colour. */
+function verdict(s){
+  const t=s.template||{},C=arr(t.cases).slice(0,2),Q=arr(t.questions).slice(0,3);
+  const card=c=>{
+    const good=c.verdict!=='bad';
+    return `<div class="bht-vd-case ${good?'good':'bad'}"><div class="vh"><span class="sym" aria-hidden="true">${good?'&#10003;':'&#10007;'}</span><span class="vw">${esc(c.label||(good?'Good comparison':'Bad comparison'))}</span></div><div class="pair"><span>${esc(c.a)}</span><i>vs.</i><span>${esc(c.b)}</span></div>${c.text?`<p class="why">${rich(c.text)}</p>`:''}${c.stamp?`<div class="stamp">${esc(c.stamp)}</div>`:''}</div>`;
+  };
+  const qs=Q.length?`<div class="bht-vd-q">${t.questionsLabel?`<div class="bht-eb">${esc(t.questionsLabel)}</div>`:''}<div class="qs" style="grid-template-columns:repeat(${Q.length},minmax(0,1fr))">${Q.map(q=>`<div class="q">${q.tag?`<b>${esc(q.tag)}</b>`:''}<p>${rich(q.text)}</p></div>`).join('')}</div></div>`:'';
+  return board('verdict',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-vd" style="grid-template-columns:repeat(${Math.max(1,C.length)},minmax(0,1fr))">${C.map(card).join('')}</div>`)+qs+foot(s.footer),'tight'));
+}
+
+/* Two cases weighed on one beam: the job they share sits on the pivot, each
+   case rests on an end of the beam with its name, date and what it did, and
+   the claim the pair supports runs underneath. For "same job, different
+   tools" when there is no picture worth putting over each side (that is
+   split-scenes); built for Topic 3.4's Expand slide. */
+function balance(s){
+  const t=s.template||{},L=t.left||{},R=t.right||{};
+  const side=(x,c)=>`<div class="bht-bl-pan ${c}">${x.tag?`<div class="bht-eb">${esc(x.tag)}</div>`:''}<div class="nm">${esc(x.name)}</div>${x.when?`<div class="wh">${esc(x.when)}</div>`:''}${x.text?`<p>${rich(x.text)}</p>`:''}</div>`;
+  const pivot=`<div class="bht-bl-pivot"><div class="seal"><span>${esc(t.jobLabel||'Same job')}</span><b>${esc(t.job)}</b></div><div class="tri" aria-hidden="true"></div></div>`;
+  const claim=t.claim?`<div class="bht-bl-claim">${t.claimLabel?`<span class="tg">${esc(t.claimLabel)}</span>`:''}<p>${rich(t.claim)}</p></div>`:'';
+  return board('balance',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-bl"><div class="beam" aria-hidden="true"></div>${side(L,'l')}${pivot}${side(R,'r')}</div>`)+claim+foot(s.footer),'tight'));
+}
+
 const KINDS={
   'equation':equation,'equation-stack':equationStack,'equation-remove':equationRemove,
   'exchange':exchange,'exchange-flow':exchangeFlow,'exchange-hub':exchangeHub,
@@ -768,7 +797,7 @@ const KINDS={
   /* round 5 */
   'story-scene':storyScene,'split-scenes':splitScenes,
   /* round 6 */
-  'ledger':ledger
+  'ledger':ledger,'verdict':verdict,'balance':balance
 };
 
 /* ── the Key Concept band ─────────────────────────────────────────────── */
@@ -1512,6 +1541,51 @@ const CSS=`
 .paper .bht-sx-both .chips span{background:#1a1c1d;color:#f5f0e7}
 .bht-split-scenes .bht-h{font-size:36u;max-width:none}
 
+/* round 6: verdict */
+.bht-verdict .bht-h{font-size:40u;max-width:none}
+.bht-vd{display:grid;column-gap:28u;flex:1 1 auto;min-height:0}
+.bht-vd-case{position:relative;display:flex;flex-direction:column;justify-content:flex-start;gap:16u;padding:24u 30u 26u;border-radius:12u;background:#1a1d1f;border:1u solid #2a3134;border-top:8u solid var(--vc);min-height:0;--vc:#7fa879}
+.bht-vd-case.bad{--vc:#d38a80}
+.paper .bht-vd-case{background:#fffdf7;border-color:#ddd2be;border-top-color:var(--vc)}
+.paper .bht-vd-case.good{--vc:#3f6b39}
+.paper .bht-vd-case.bad{--vc:#9a3f35}
+.bht-vd-case .vh{display:flex;align-items:center;gap:14u}
+.bht-vd-case .sym{width:46u;height:46u;flex:none;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--vc);color:#101213;font:900 28u/1 'Montserrat',Helvetica,sans-serif}
+.paper .bht-vd-case .sym{color:#fffdf7}
+.bht-vd-case .vw{font:800 17u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--vc)}
+.bht-vd-case .pair{display:flex;flex-direction:column;gap:2u;font:800 34u/1.12 'Cinzel',Georgia,serif;color:var(--head)}
+.bht-vd-case .pair i{font:italic 400 22u/1.2 'Libre Baskerville',Georgia,serif;color:var(--soft)}
+.bht-vd-case .why{font-size:25u;line-height:1.35;color:var(--fg)}
+.dark .bht-vd-case .why{color:#ddd6ca}
+.bht-vd-case .stamp{align-self:flex-start;transform:rotate(-3deg);border:3u solid var(--vc);border-radius:6u;padding:6u 14u;font:900 18u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--vc)}
+.bht-vd-q{display:flex;flex-direction:column;gap:10u;border-top:2u solid var(--rulec);padding-top:14u}
+.bht-vd-q .qs{display:grid;column-gap:28u}
+.bht-vd-q .q{display:flex;align-items:baseline;gap:14u}
+.bht-vd-q .q b{flex:none;font:900 15u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#101213;background:#c9a46a;border-radius:4u;padding:5u 9u}
+.paper .bht-vd-q .q b{background:#1a1c1d;color:#f5f0e7}
+.bht-vd-q .q p{font-size:24u;line-height:1.3;color:var(--head)}
+/* round 6: balance */
+.bht-balance .bht-h{font-size:40u;max-width:none}
+.bht-bl{position:relative;flex:1 1 auto;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) 210u minmax(0,1fr);align-items:center}
+.bht-bl .beam{position:absolute;left:4%;right:4%;top:50%;height:6u;margin-top:-3u;background:#c9a46a;border-radius:3u}
+.paper .bht-bl .beam{background:#8c5a2b}
+.bht-bl-pan{position:relative;z-index:1;display:flex;flex-direction:column;gap:10u;padding:26u 30u;border-radius:12u;background:#1a1d1f;border:2u solid #c9a46a;min-width:0}
+.paper .bht-bl-pan{background:#fffdf7;border-color:#8c5a2b}
+.bht-bl-pan .nm{font:800 36u/1.1 'Cinzel',Georgia,serif;color:var(--head);overflow-wrap:break-word}
+.bht-bl-pan .wh{font:800 22u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.08em;color:var(--acc)}
+.bht-bl-pan p{font-size:26u;line-height:1.35;color:var(--fg)}
+.dark .bht-bl-pan p{color:#ddd6ca}
+.bht-bl-pivot{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center}
+.bht-bl-pivot .seal{width:178u;height:178u;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4u;background:#c9a46a;color:#101213;box-shadow:0 0 0 6u #101213,0 0 0 9u #c9a46a;text-align:center;padding:0 10u}
+.paper .bht-bl-pivot .seal{background:#6b3e1f;color:#fffdf7;box-shadow:0 0 0 6u #f5f0e7,0 0 0 9u #6b3e1f}
+.bht-bl-pivot .seal span{font:800 13u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.18em;text-transform:uppercase}
+.bht-bl-pivot .seal b{font:800 30u/1.05 'Cinzel',Georgia,serif;color:inherit;text-transform:uppercase;overflow-wrap:break-word}
+.bht-bl-pivot .tri{width:0;height:0;margin-top:14u;border-left:34u solid transparent;border-right:34u solid transparent;border-bottom:44u solid #c9a46a}
+.paper .bht-bl-pivot .tri{border-bottom-color:#6b3e1f}
+.bht-bl-claim{display:flex;align-items:baseline;gap:16u;border-left:6u solid #c9a46a;background:#1a1d1f;border-radius:0 10u 10u 0;padding:14u 22u}
+.paper .bht-bl-claim{background:#fffdf7;border-left-color:#8c5a2b}
+.bht-bl-claim .tg{flex:none;font:900 14u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--acc)}
+.bht-bl-claim p{font-size:25u;line-height:1.35;color:var(--head)}
 /* round 6: ledger */
 .bht-ledger .bht-h{font-size:40u;max-width:none}
 .bht-lg{flex:1 1 auto;display:grid;grid-template-columns:minmax(0,1fr);column-gap:26u;min-height:0}

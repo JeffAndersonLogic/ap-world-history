@@ -54,53 +54,62 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "grid",
+      "kind": "verdict",
       "eyebrow": "The Comparison Rule",
       "title": "Same category or no comparison.",
       "kc": "KC-4.3",
-      "cards": [
-        {
-          "title": "GOOD",
-          "text": "Devshirme vs. mansabdars: both extend authority through imperial servants."
-        },
-        {
-          "title": "BAD",
-          "text": "Ottoman cannon vs. Mughal mausoleum: both are important, but they do different jobs."
-        },
-        {
-          "title": "ASK",
-          "text": "Why were the methods similar or different?"
-        },
-        {
-          "title": "LAND",
-          "text": "How did each method increase influence?"
-        }
-      ]
+      "template": {
+        "cases": [
+          {
+            "verdict": "good",
+            "a": "Devshirme",
+            "b": "Mansabdars",
+            "text": "Both extend authority through imperial servants.",
+            "stamp": "Same job: hold"
+          },
+          {
+            "verdict": "bad",
+            "a": "Ottoman cannon",
+            "b": "Mughal mausoleum",
+            "text": "Both are important, but they do different jobs: one expands, one justifies.",
+            "stamp": "Different jobs"
+          }
+        ],
+        "questionsLabel": "Then every comparison answers",
+        "questions": [
+          {
+            "tag": "Ask",
+            "text": "Why were the methods similar or different?"
+          },
+          {
+            "tag": "Land",
+            "text": "How did each method increase influence?"
+          }
+        ]
+      }
     },
     {
-      "kind": "grid",
+      "kind": "balance",
       "eyebrow": "Job One · Expand",
       "title": "Gunpowder increases territorial reach.",
-      "footer": "Same job: expansion. Different campaigns; shared mechanism: military capacity increased influence.",
       "kc": "KC-4.3.II",
-      "cards": [
-        {
-          "title": "OTTOMAN",
-          "text": "Constantinople, 1453: cannon helped break fortified defenses."
+      "template": {
+        "job": "Expand",
+        "left": {
+          "tag": "Ottoman",
+          "name": "Constantinople",
+          "when": "1453",
+          "text": "Cannon helped break fortified defenses."
         },
-        {
-          "title": "MUGHAL",
-          "text": "Panipat, 1526: artillery and firearms contributed to victory."
+        "right": {
+          "tag": "Mughal",
+          "name": "Panipat",
+          "when": "1526",
+          "text": "Artillery and firearms contributed to victory."
         },
-        {
-          "title": "SAME JOB",
-          "text": "Defeat rivals and gain territory."
-        },
-        {
-          "title": "COMPARE",
-          "text": "Different campaigns; shared mechanism: military capacity increased influence."
-        }
-      ]
+        "claimLabel": "Compare",
+        "claim": "Different campaigns, **shared mechanism**: military capacity let both defeat rivals, gain territory and increase influence."
+      }
     },
     {
       "kind": "frame-question",
