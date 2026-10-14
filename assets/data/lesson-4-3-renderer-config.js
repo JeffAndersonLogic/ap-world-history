@@ -81,7 +81,7 @@
 
   lesson.classPresentation = {
     title: 'Class Slides: What the Ships Carried',
-    desc: 'Follow the story: what crossed the Atlantic after 1492, on purpose, by accident, and by force, and what it did on each side of the ocean.',
+    desc: 'Follow the story: what crossed between the hemispheres after 1492, on purpose, by accident, and by force, and what it did on each side of the ocean.',
     url: 'presentation-topic-4-3-student.html'
   };
 
@@ -123,7 +123,7 @@
     {
       title: 'Checkpoint 2: What Crossed, and What It Did',
       subtitle: 'Checks Learning Targets 1 and 3 and Success Criteria 1 and 3.',
-      cardDesc: 'The cause of the Columbian Exchange, and one effect on each side of the Atlantic.',
+      cardDesc: 'The cause of the Columbian Exchange, and one effect in each hemisphere.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[2].criteria],
       prompt: 'Explain what caused the Columbian Exchange, and name ONE thing that crossed on purpose and ONE that crossed by accident. Then explain TWO effects. ONE effect in the Americas, from an animal or crop Europeans brought (such as horses, pigs, cattle, or sugarcane) or a food enslaved Africans brought (such as African rice or okra). If you choose sugarcane, say who was forced to do the work. ONE effect in Afro-Eurasia, from an American crop (such as maize, potatoes, cassava, or sweet potatoes). For each effect, say which people it affected and how.',
