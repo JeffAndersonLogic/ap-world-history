@@ -130,6 +130,15 @@ const DECKS = [
     ],
     student: 'assets/data/presentations/topic-4-2-student.js',
     backUrl: 'lesson-4-2-exploration.html#lecture'
+  },
+  {
+    key: '4.3',
+    sources: [
+      'teacher/data/topic-4-3-teaching-base.js',
+      'teacher/data/topic-4-3-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-4-3-student.js',
+    backUrl: 'lesson-4-3-columbian-exchange.html#lecture'
   }
 ];
 
@@ -318,7 +327,8 @@ function buildDeck(deck) {
     '3.3': topic31Slides,
     '3.4': topic31Slides,
     '4.1': topic31Slides,
-    '4.2': topic31Slides
+    '4.2': topic31Slides,
+    '4.3': topic31Slides
   };
   return {
     meta: {

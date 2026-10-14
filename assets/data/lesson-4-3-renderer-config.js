@@ -79,6 +79,12 @@
     checkpoint2:     '../assets/images/instructional-maps/topic-4-3.svg'
   };
 
+  lesson.classPresentation = {
+    title: 'Class Slides: What the Ships Carried',
+    desc: 'Follow the story: what crossed the Atlantic after 1492, on purpose, by accident, and by force, and what it did on each side of the ocean.',
+    url: 'presentation-topic-4-3-student.html'
+  };
+
   lesson.beInTheRoom = {
     url: '../beintheroom/unit-4/the-replanting-council.html',
     desc: 'Sit on a town council in the Valley of Mexico in 1531, ten years after smallpox: decide what to plant, what to do about the settlers\' animals, and how to care for the sick when a new sickness arrives.'

@@ -273,10 +273,12 @@ one side and Afro-Eurasia on the other, with what crossed each way and what it d
 Result line: **The ships carried more than anyone meant them to, and it remade populations on
 both sides.**
 
-Why an exchange: the reasoning move is causation, and the CED asks for the causes and the
-effects *on both hemispheres*. The two columns are the two hemispheres; the top row is the cause
-(what crossed, and how), the bottom row is the effect. The template the authoring standard names
-for a two-way trade is the exchange.
+Why this shape: the reasoning move is causation, and the CED asks for the causes and the
+effects *on both hemispheres*. The two columns are the two hemispheres; the top rows are the
+cause (what crossed, and how), the bottom row is the effect. The authoring standard names the
+exchange template for a two-way trade, but its flows carry one short label each, and this slide
+needs the three ways of crossing in each direction, so the deck builds it as a two-column matrix
+(`split-matrix`, phase `exchange`), which keeps the two directions and has room for the rows.
 
 ## 8. Owns / bridge-only (from the unit story map)
 
