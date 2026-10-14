@@ -103,16 +103,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
       ]
     },
     {
-      "kind": "map",
+      "kind": "frame-question",
       "eyebrow": "Evidence · Panipat, 1526",
       "title": "Military technology becomes evidence.",
       "subtitle": "Use the image as evidence of Mughal battlefield organization, not as proof that gunpowder alone caused victory.",
-      "visual": {
-        "url": "../assets/images/topics/3-1/panipat-1526.jpg",
-        "alt": "Historical illustration representing the First Battle of Panipat in 1526",
-        "credit": "Panipat, 1526 · verified Unit 3 asset"
-      },
-      "footer": "Historical image · First Battle of Panipat"
+      "template": {
+        "visual": {
+          "url": "../assets/images/topics/3-1/panipat-1526.jpg",
+          "alt": "Mughal illustration of the Battle of Panipat, 1526, with bronze cannons on wheeled carriages at the left",
+          "credit": "Battle of Panipat, 1526 · Baburnama illustration, late 16th century · Public domain",
+          "fit": "contain"
+        }
+      }
     },
     {
       "kind": "split-scenes",
@@ -244,29 +246,37 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "grid",
+      "kind": "ledger",
       "eyebrow": "Retell the Topic",
       "title": "Compare the job, not the empire.",
       "footer": "Same job → different tools → why different? → how did influence grow?",
       "kc": "KC-4.1.VI",
-      "cards": [
-        {
-          "title": "EXPAND",
-          "text": "Military force → defeat rivals and take territory."
-        },
-        {
-          "title": "HOLD",
-          "text": "Servants and institutions → extend central authority."
-        },
-        {
-          "title": "PAY",
-          "text": "Revenue systems → fund armies and government."
-        },
-        {
-          "title": "JUSTIFY",
-          "text": "Religion, art, architecture → make authority credible."
-        }
-      ]
+      "template": {
+        "rows": [
+          {
+            "name": "Expand",
+            "tool": "Military force",
+            "result": "defeat rivals and take territory."
+          },
+          {
+            "name": "Hold",
+            "tool": "Servants and institutions",
+            "result": "extend central authority."
+          },
+          {
+            "name": "Pay",
+            "tool": "Revenue systems",
+            "result": "fund armies and government."
+          },
+          {
+            "name": "Justify",
+            "tool": "Religion, art, architecture",
+            "result": "make authority credible."
+          }
+        ],
+        "payoffLabel": "Every job builds",
+        "payoff": "Increased influence"
+      }
     },
     {
       "kind": "action",
@@ -309,7 +319,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "url": "../assets/images/topics/3-4/3.4%20-%20Manchu%20enter%20China.jpg",
           "alt": "Reconstruction of Manchu horsemen in yellow, white, red and blue armor riding through a gate in the Great Wall under a plaque reading First Pass Under Heaven, past Ming soldiers in red, with the wall running down the mountains to the sea",
           "ai": true,
-          "position": "50% 45%"
+          "position": "50% 0%",
+          "fit": "contain"
         }
       }
     }

@@ -718,6 +718,31 @@ function splitScenes(s){
   return board('split-scenes',themeOf(t,'dark'),pad(head(s)+`<div class="bht-sx">${col(L,'l')}${col(R,'r')}</div>`+bottom+foot(s.footer),'tight'));
 }
 
+/* A ledger of jobs that all pay into one outcome: up to five rows, each a
+   lettered seal, a name, and what did the job (`tool`) over what it achieved
+   (`result`), with a bracket down the right edge gathering every row into the
+   `payoff`. Built for the Topic 3.4 retelling slide, four jobs and one
+   increased influence, where the 2x2 grid of small cards was hard to read from
+   the back of the room: one row per job reads left to right in large type, the
+   way a student retells it. A row may carry `text` instead of tool and
+   result. The seal letter defaults to the name's first letter. */
+function ledger(s){
+  const t=s.template||{},R=arr(t.rows).slice(0,5),n=Math.max(1,R.length);
+  // The name column is 230u. Cinzel runs about .76em a letter, so the longest
+  // name sets one size for the whole slide, and never above the row's own size.
+  const longest=Math.max(1,...R.map(x=>String(x.name||'').length));
+  const nameMax=n>=5?30:n===4?36:40;
+  const nm=Math.max(20,Math.min(nameMax,Math.floor(214/(longest*.76))));
+  const tx=n>=5?25:n===4?29:32;
+  const body=x=>x.tool||x.result?`${x.tool?`<p class="tool">${rich(x.tool)}</p>`:''}${x.result?`<p class="res"><i aria-hidden="true">&rarr;</i> ${rich(x.result)}</p>`:''}`:`<p class="res">${rich(x.text)}</p>`;
+  const rows=R.map(x=>{
+    const mark=String(x.mark||String(x.name||'').trim().charAt(0)||'').slice(0,2);
+    return `<li class="bht-lg-row"><span class="seal" aria-hidden="true">${esc(mark)}</span><span class="nm" style="font-size:calc(${nm}*var(--u))">${esc(x.name)}</span><div class="tx" style="font-size:calc(${tx}*var(--u))">${body(x)}</div></li>`;
+  }).join('');
+  const pay=t.payoff?`<div class="bht-lg-pay"><div class="br" aria-hidden="true"></div><div class="pt">${t.payoffLabel?`<div class="bht-eb">${esc(t.payoffLabel)}</div>`:''}<p>${rich(t.payoff)}</p></div></div>`:'';
+  return board('ledger',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-lg${pay?' has-pay':''}"><ol>${rows}</ol>${pay}</div>`)+foot(s.footer),'tight'));
+}
+
 const KINDS={
   'equation':equation,'equation-stack':equationStack,'equation-remove':equationRemove,
   'exchange':exchange,'exchange-flow':exchangeFlow,'exchange-hub':exchangeHub,
@@ -741,7 +766,9 @@ const KINDS={
   /* round 4 */
   'story-steps':storySteps,'frame-pair':fPair,
   /* round 5 */
-  'story-scene':storyScene,'split-scenes':splitScenes
+  'story-scene':storyScene,'split-scenes':splitScenes,
+  /* round 6 */
+  'ledger':ledger
 };
 
 /* ── the Key Concept band ─────────────────────────────────────────────── */
@@ -1484,6 +1511,28 @@ const CSS=`
 .bht-sx-both .chips span{font:700 16u/1.2 'Montserrat',Helvetica,sans-serif;color:#101213;background:#c9a46a;border-radius:999u;padding:7u 14u}
 .paper .bht-sx-both .chips span{background:#1a1c1d;color:#f5f0e7}
 .bht-split-scenes .bht-h{font-size:36u;max-width:none}
+
+/* round 6: ledger */
+.bht-ledger .bht-h{font-size:40u;max-width:none}
+.bht-lg{flex:1 1 auto;display:grid;grid-template-columns:minmax(0,1fr);column-gap:26u;min-height:0}
+.bht-lg.has-pay{grid-template-columns:minmax(0,1fr) 190u}
+.bht-lg ol{display:grid;grid-auto-rows:minmax(0,1fr);row-gap:14u;list-style:none;margin:0;padding:0;min-height:0}
+.bht-lg-row{position:relative;display:grid;grid-template-columns:76u 230u minmax(0,1fr);column-gap:22u;align-items:center;min-height:0;padding:0 34u 0 16u;border-radius:12u;background:#1a1d1f;border:1u solid #2a3134}
+.paper .bht-lg-row{background:#fffdf7;border-color:#ddd2be}
+.bht-lg-row .seal{width:76u;height:76u;border-radius:50%;display:flex;align-items:center;justify-content:center;font:800 40u/1 'Cinzel',Georgia,serif;color:#101213;background:#c9a46a;box-shadow:0 0 0 4u #101213,0 0 0 6u #c9a46a}
+.paper .bht-lg-row .seal{color:#fffdf7;background:#6b3e1f;box-shadow:0 0 0 4u #fffdf7,0 0 0 6u #6b3e1f}
+.bht-lg-row .nm{font-weight:800;font-family:'Cinzel',Georgia,serif;line-height:1.05;letter-spacing:.04em;text-transform:uppercase;color:var(--acc);overflow-wrap:break-word}
+.bht-lg-row .tx{display:flex;flex-direction:column;gap:4u;min-width:0;line-height:1.22}
+.bht-lg-row .tool{font-weight:700;color:var(--head)}
+.bht-lg-row .res{color:var(--fg)}
+.dark .bht-lg-row .res{color:#ddd6ca}
+.bht-lg-row .res i{font-style:normal;color:var(--acc);font-weight:700}
+.bht-lg.has-pay .bht-lg-row::after{content:'';position:absolute;right:-27u;top:50%;transform:translateY(-50%);border-top:11u solid transparent;border-bottom:11u solid transparent;border-left:14u solid var(--acc)}
+.bht-lg-pay{position:relative;display:flex;align-items:center;min-height:0}
+.bht-lg-pay .br{position:absolute;left:0;top:4u;bottom:4u;width:22u;border:4u solid var(--acc);border-left:0;border-radius:0 14u 14u 0}
+.bht-lg-pay .pt{position:relative;margin-left:38u;display:flex;flex-direction:column;gap:10u}
+.bht-lg-pay .pt p{font:800 30u/1.12 'Cinzel',Georgia,serif;color:var(--head);overflow-wrap:break-word}
+.bht-lg-pay .pt p b{color:var(--acc)}
 
 `.replace(/(-?)(\d+(?:\.\d+)?)u\b/g,'calc($1$2*var(--u))')
  /* The sign goes inside calc(): -7u used to become -calc(7*var(--u)), which

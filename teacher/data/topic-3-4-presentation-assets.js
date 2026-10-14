@@ -1,7 +1,8 @@
 /* Topic 3.4 data-only visual assignments. Safe to evaluate in Node: no DOM.
  * Read by the teacher surface and by scripts/build-teaching-os-student-decks.js.
  *
- * - expand-proof: the Baburnama illustration of Panipat, 1526, a verified 3.1 asset.
+ * - expand-proof (frame-question): the Baburnama illustration of Panipat, 1526,
+ *   a verified 3.1 asset, shown whole beside the words because it is a tall page.
  *
  * Five pictures Jeff uploaded to assets/images/topics/3-4/ on 2026-10-13. All
  * five are AI-generated: each is Gemini's 1376x768, carries C2PA content
@@ -19,7 +20,9 @@
  * - pay (split-scenes): Ottoman Tax Farm (an auction of collection rights) beside
  *   Mughal Land Survey (fields measured with a jointed bamboo rod). The Ottoman
  *   room's calligraphy is invented script.
- * - close (frame-subtitle): Manchu enter China, Shanhai Pass, 1644.
+ * - close (frame-subtitle): Manchu enter China, Shanhai Pass, 1644. Shown whole
+ *   (fit:'contain') and pinned to the top, so the riders' feet sit above the
+ *   subtitle instead of under it.
  *
  * Reused from earlier topics, all already in the repo and already labeled:
  * - hold: the AI Janissary cut-out from Topic 3.2 on the devshirme side, shown
@@ -42,16 +45,17 @@ const by=id=>T.slides.find(s=>s.phase===id);
 const IMG='../assets/images/topics/';
 const AI=(folder,name,alt,extra)=>Object.assign({url:IMG+folder+'/'+encodeURIComponent(name),alt,ai:true},extra||{});
 
-const panipat=by('expand-proof');
-if(panipat)panipat.visual={
+// A tall page (800x1319), so it sits beside the words, shown whole, rather
+// than under them, where a landscape box showed only its top third.
+const PANIPAT={
   url:IMG+'3-1/panipat-1526.jpg',
-  alt:'Historical illustration representing the First Battle of Panipat in 1526',
-  credit:'Panipat, 1526 · verified Unit 3 asset',
+  alt:'Mughal illustration of the Battle of Panipat, 1526, with bronze cannons on wheeled carriages at the left',
+  credit:'Battle of Panipat, 1526 · Baburnama illustration, late 16th century · Public domain',
   fit:'contain'
 };
 
 const ISFAHAN=AI('3-4','3.4 - Isfahan.jpg','Reconstruction of Naqsh-e Jahan Square in Isfahan: a long open square with camels, riders and a polo game, a tiled dome on the left, a great mosque under scaffolding at the far end and a tall palace on the right, with shops under arcades on both sides',{position:'50% 40%'});
-const MANCHU=AI('3-4','3.4 - Manchu enter China.jpg','Reconstruction of Manchu horsemen in yellow, white, red and blue armor riding through a gate in the Great Wall under a plaque reading First Pass Under Heaven, past Ming soldiers in red, with the wall running down the mountains to the sea',{position:'50% 45%'});
+const MANCHU=AI('3-4','3.4 - Manchu enter China.jpg','Reconstruction of Manchu horsemen in yellow, white, red and blue armor riding through a gate in the Great Wall under a plaque reading First Pass Under Heaven, past Ming soldiers in red, with the wall running down the mountains to the sea',{position:'50% 0%',fit:'contain'});
 const CHALDIRAN=AI('3-3','3.3 - Chaldiran.jpg','Reconstruction of the Battle of Chaldiran: Ottoman infantry in tall white felt hats fire muskets from behind chained cannons and carts at charging Safavid horsemen in red-topped caps',{position:'50% 62%'});
 const JANISSARY={url:IMG+'3-2/'+encodeURIComponent('3.2 - Janissary.png'),alt:'Reconstruction of a Janissary in a tall white felt hat with a brass plume holder, a red brocade coat, a green sash and red boots, holding a long musket and a curved sword',ai:true,fit:'contain'};
 const MUSTER=AI('3-4','3.4 - Mughal Mansabdar.jpg','Reconstruction of a Mughal muster in a red sandstone courtyard: a groom brands a horse while an officer and a line of armored troopers wait, and two scribes write in ledgers at a low table',{position:'45% 50%'});
@@ -63,6 +67,7 @@ const QIANLONG={url:IMG+'3-2/qianlong-court-dress-1736.jpg',alt:'Full-length por
 const setTemplate=(phase,add)=>{const s=by(phase);if(s)s.template=Object.assign({},s.template||{},add);return s;};
 const side=(s,key,visual)=>{if(s&&s.template&&s.template[key])s.template[key]=Object.assign({},s.template[key],{visual});};
 
+setTemplate('expand-proof',{visual:PANIPAT});
 setTemplate('question',{visual:ISFAHAN});
 setTemplate('qualify',{visual:CHALDIRAN});
 setTemplate('close',{visual:MANCHU});
