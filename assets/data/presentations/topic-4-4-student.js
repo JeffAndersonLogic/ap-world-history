@@ -32,7 +32,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-subtitle",
       "eyebrow": "The Question",
       "title": "Europeans built empires from the sea. What changed, and what kept going?",
-      "subtitle": "A Japanese painter shows Portuguese traders arriving, about 1600: watched, and on Japan's ground.",
+      "subtitle": "A Japanese painter shows Portuguese traders arriving in Japan, about 1600, as people on the shore saw them.",
       "template": {
         "visual": {
           "url": "../assets/images/topics/4-4/nanban-screen-kano-naizen-c1600.jpg",
@@ -149,7 +149,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "url": "../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg",
           "alt": "Engraving of Nagasaki harbor below green hills, with the small fan-shaped island of Dejima near the shore, a Dutch company ship, Japanese boats and Chinese junks",
           "credit": "Nagasaki harbor and Dejima, engraving by J. C. Tetschner, 1735 to 1744 · Public domain",
-          "position": "50% 60%"
+          "position": "50% 88%"
         },
         "caption": "Nagasaki, about 1740: the Dutch island, Dutch and Japanese ships, Chinese junks",
         "steps": [
@@ -415,13 +415,13 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "text": "Sugar, and later tobacco, needed huge numbers of workers."
           },
           {
+            "label": "Demographic",
+            "text": "Africans and their descendants became most of the people in the Caribbean colonies."
+          },
+          {
             "label": "Social",
             "key": true,
             "text": "Slavery for life, inherited, and tied to race."
-          },
-          {
-            "label": "Demographic",
-            "text": "Africans and their descendants became most of the people in the Caribbean colonies."
           },
           {
             "label": "Cultural",
@@ -505,7 +505,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kc": "Unit 4: Learning Objective G",
       "template": {
         "weak": "After 1500, slavery got worse.",
-        "strong": "Slavery in Africa **continued** in older forms, in **households** and in captives sent across the **Sahara**, while the **sugar plantations** of the Americas **changed** it: by **1701 to 1750** about **2.5 million** Africans were shipped west, held for life, and their children too."
+        "strong": "Slavery in Africa **continued** in older forms, in **households** and in captives sent across the **Sahara**, while the **sugar plantations** of the Americas **changed** it: in **1701 to 1750** alone about **2.5 million** Africans were shipped west, to be held for life, and their children after them."
       }
     },
     {
@@ -558,7 +558,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "url": "../assets/images/topics/4-4/dejima-kawahara-keiga-c1836.jpg",
           "alt": "Japanese folding screen of Nagasaki harbor between green hills, with the small fan-shaped island of Dejima and its Dutch buildings in the foreground and ships at anchor in the bay",
           "credit": "Kawahara Keiga, View of Dejima in Nagasaki Bay, about 1836 · Museum Volkenkunde · Photo René Gerritsen, CC BY-SA 4.0",
-          "position": "35% 70%"
+          "position": "50% 0%",
+          "fit": "contain"
         }
       }
     }

@@ -134,7 +134,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'question', kind: 'frame-subtitle', eyebrow: 'The Question',
       title: 'Europeans built empires from the sea. What changed, and what kept going?',
-      subtitle: 'A Japanese painter shows Portuguese traders arriving, about 1600: watched, and on Japan\'s ground.',
+      subtitle: 'A Japanese painter shows Portuguese traders arriving in Japan, about 1600, as people on the shore saw them.',
       notes: {
         minutes: 1,
         land: [
@@ -235,7 +235,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'asia', kind: 'story-scene', eyebrow: 'Asia Sets the Terms',
       kc: 'KC-4.3.II.A.i', title: 'China and Japan decided how far Europeans could reach.',
       template: {
-        visual: { url: '../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg', alt: 'Engraving of Nagasaki harbor below green hills, with the small fan-shaped island of Dejima near the shore, a Dutch company ship, Japanese boats and Chinese junks', credit: 'Nagasaki harbor and Dejima, engraving by J. C. Tetschner, 1735 to 1744 · Public domain', position: '50% 60%' },
+        visual: { url: '../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg', alt: 'Engraving of Nagasaki harbor below green hills, with the small fan-shaped island of Dejima near the shore, a Dutch company ship, Japanese boats and Chinese junks', credit: 'Nagasaki harbor and Dejima, engraving by J. C. Tetschner, 1735 to 1744 · Public domain', position: '50% 88%' },
         caption: 'Nagasaki, about 1740: the Dutch island, Dutch and Japanese ships, Chinese junks',
         steps: [
           { label: 'China, 1557', text: 'Portuguese may settle at Macau, under Chinese officials and rules.' },
@@ -456,8 +456,8 @@ window.BEHISTORICAL_TEACHING = {
         caption: 'A sugar works in the French Caribbean, 1667',
         steps: [
           { label: 'Demand', text: 'Sugar, and later tobacco, needed huge numbers of workers.' },
-          { label: 'Social', key: true, text: 'Slavery for life, inherited, and tied to race.' },
           { label: 'Demographic', text: 'Africans and their descendants became most of the people in the Caribbean colonies.' },
+          { label: 'Social', key: true, text: 'Slavery for life, inherited, and tied to race.' },
           { label: 'Cultural', text: 'African languages, beliefs and foods crossed with them.' }
         ]
       },
@@ -465,8 +465,8 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 3,
         land: [
           'KC-4.2.II.C: the growth of the plantation economy increased the demand for enslaved labor in the Americas, "leading to significant demographic, social, and cultural changes." The three steps after Demand are those three words, in order.',
-          'Social: chattel slavery was for life and inherited; Virginia\'s 1662 law made the children of enslaved women enslaved; English colonial law tied slavery to race.',
           'Demographic: on Barbados, enslaved Africans outnumbered Europeans by the late 1600s, and the pattern spread across the Caribbean; in Brazil, Africans and their descendants were a large part of the population.',
+          'Social: chattel slavery was for life and inherited; Virginia\'s 1662 law made the children of enslaved women enslaved; English colonial law tied slavery to race.',
           'Cultural: name it in one sentence. How African, American and European cultures mixed is 4.5.',
           'The engraving is a French Antilles sugar works drawn for the missionary Du Tertre\'s history of the islands (1667): the mill (moulin), furnaces and kettles, the boiling house. It shows the work, not the workers\' lives; a European artist made it for European readers.'
         ],
@@ -526,7 +526,7 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'A change and a continuity, each with a named example and the reason it happened.',
       template: {
         weak: 'After 1500, slavery got worse.',
-        strong: 'Slavery in Africa **continued** in older forms, in **households** and in captives sent across the **Sahara**, while the **sugar plantations** of the Americas **changed** it: by **1701 to 1750** about **2.5 million** Africans were shipped west, held for life, and their children too.'
+        strong: 'Slavery in Africa **continued** in older forms, in **households** and in captives sent across the **Sahara**, while the **sugar plantations** of the Americas **changed** it: in **1701 to 1750** alone about **2.5 million** Africans were shipped west, to be held for life, and their children after them.'
       },
       notes: {
         minutes: 2,

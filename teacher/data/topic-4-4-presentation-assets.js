@@ -30,7 +30,8 @@
  * existed for every beat that needed one). The question and landing slides open
  * and close on real historical scenes, under Jeff's standard of 2026-10-14.
  * Most visuals are set in the teaching base beside the slide they belong to; the
- * two bookends are set here.
+ * two bookends are set here. The landing screen is shown whole (fit:'contain')
+ * and pinned to the top, so the words sit under Dejima instead of over it.
  */
 (function(){
 'use strict';
@@ -39,7 +40,7 @@ if(!T||!Array.isArray(T.slides))return;
 const by=id=>T.slides.find(s=>s.phase===id);
 const IMG='../assets/images/topics/4-4/';
 const NANBAN={url:IMG+'nanban-screen-kano-naizen-c1600.jpg',alt:'Japanese folding screen painted in gold and color: a large Portuguese ship at anchor on the left, and Portuguese merchants, officers and servants in wide trousers walking up the shore toward Jesuit priests in black and a Japanese house',credit:'Kano Naizen, Arrival of the Southern Barbarians, about 1600 · Kobe City Museum · Public domain',position:'40% 50%'};
-const DEJIMA={url:IMG+'dejima-kawahara-keiga-c1836.jpg',alt:'Japanese folding screen of Nagasaki harbor between green hills, with the small fan-shaped island of Dejima and its Dutch buildings in the foreground and ships at anchor in the bay',credit:'Kawahara Keiga, View of Dejima in Nagasaki Bay, about 1836 · Museum Volkenkunde · Photo René Gerritsen, CC BY-SA 4.0',position:'35% 70%'};
+const DEJIMA={url:IMG+'dejima-kawahara-keiga-c1836.jpg',alt:'Japanese folding screen of Nagasaki harbor between green hills, with the small fan-shaped island of Dejima and its Dutch buildings in the foreground and ships at anchor in the bay',credit:'Kawahara Keiga, View of Dejima in Nagasaki Bay, about 1836 · Museum Volkenkunde · Photo René Gerritsen, CC BY-SA 4.0',position:'50% 0%',fit:'contain'};
 const setTemplate=(phase,add)=>{const s=by(phase);if(s)s.template=Object.assign({},s.template||{},add);return s;};
 setTemplate('question',{visual:NANBAN});
 setTemplate('close',{visual:DEJIMA});
