@@ -5,6 +5,11 @@ Jeff started this build with "build 4.3" on 2026-10-14. The Phase 9 reviewers ch
 against the CED source file and the scholarship; the record of what they found is in
 `docs/TOPIC-4-3-CLAIM-LEDGER.md`, under "Review findings".
 
+**Resume here (2026-10-14):** Pass 1 fixes are committed (`93302634`). Pass 2 reviewers were
+cut off by a usage limit and were relaunched at 09:36 UTC. Next: judge Pass 2 findings, log them
+under "### Pass 2" in the ledger, then Pass 3 if needed, then the Unit 4 fingerprint, the topic
+audit record and the Phase 10 report.
+
 **Taught:** not yet scheduled. The schedule ends at 4.2 (Green Friday 2026-10-30, Silver Monday
 2026-11-02), and no later class day is named anywhere in `assets/data/announcements-schedule.js`.
 Dates are never invented, so 4.3 is built without schedule entries and its dates are the one
