@@ -98,7 +98,15 @@ const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
 // entry ("the first crossing of the Pacific"; Polynesian voyagers crossed it
 // centuries earlier); it now reads "the first European crossing". The fingerprint
 // moved from b98e3cd... and only that 4.2 sentence changed.
-const APPROVED_UNIT4_REWRITE_BLOB = '3c4abacfa819d5a8ba0d3d99be6c7625d24f8836';
+// Topic 4.3's story-first rewrite, "What the Ships Carried", was written from the
+// 4.3 story (docs/TOPIC-4-3-STORY-DRAFT.md) on 2026-10-14 and went through three
+// independent review passes (six reviewers, 112 findings; dispositions in
+// docs/TOPIC-4-3-CLAIM-LEDGER.md), approved under Jeff's standing rule of
+// 2026-10-12, which delegates story and reading approval to the reviewer loop.
+// The loop ended on its three-pass safety valve, every finding fixed or logged.
+// The fingerprint moved from 3c4abac... and only the 4.3 entry changed; 4.1, 4.2
+// and 4.4 to 4.8 are byte-for-byte unchanged.
+const APPROVED_UNIT4_REWRITE_BLOB = '85f1913b523586cc229a82cb00e448ab956e6cd3';
 const unit4SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-4.js');
 const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
   && gitBlobSha(fs.readFileSync(unit4SourcePath, 'utf8')) === APPROVED_UNIT4_REWRITE_BLOB;
