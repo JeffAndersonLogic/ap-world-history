@@ -677,109 +677,236 @@ module.exports = {
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
+    "showFooterNote": false,
     "headerSubtitle": "Topic 4.4, Maritime Empires Established &nbsp;|&nbsp; AP World History: Modern",
-    "titleHtml": "Building Empires at <em>Sea</em>",
-    "deck": "After 1500, expanding maritime trade changed state power and labor systems without erasing the older world it entered. European empires seized ports and territories, African states such as Kongo and Asante gained influence through new trading connections, Asian merchants kept Indian Ocean commerce moving, and colonial economies adapted old labor obligations while expanding new forms of coerced labor and slavery.",
+    "titleHtml": "Empires from the <em>Sea</em>",
+    "deck": "After 1500, European states built empires held together by ships: forts on the coasts of Africa and Asia, and colonies in the Americas. But much of the world kept its own rules. Some things changed fast, and some barely moved.",
     "skillTags": [
-      "Causation",
-      "Comparison",
-      "Argumentation"
+      "Continuity and Change",
+      "Sourcing and Situation"
     ],
     "supportCards": {
-      "beforeYouRead": "Track continuity and change in four places: state power, Indian Ocean trade, labor systems, and slavery. The key question is not simply which European empire used which model; it is what changed when maritime empires expanded and what older systems continued.",
-      "readingTarget": "By the end, you should be able to explain how maritime trade increased the influence of European and African states, identify continuity in Indian Ocean trade, compare older and newer colonial labor systems, and explain how older forms of enslavement continued while plantation demand expanded Atlantic chattel slavery."
+      "beforeYouRead": "<strong>Europeans built empires from the sea → much of the world kept its own rules → some things changed fast, and some barely moved.</strong> For every case in this reading, ask two things: what changed, and what kept going the way it already had?",
+      "readingTarget": "When Europeans built empires from the sea, what changed, and what kept going, in who ruled, in trade and work, and in slavery?"
     },
     "vocabulary": [
-      "Estado da India",
-      "Feitoria",
+      "Maritime Empire",
+      "Trading Post",
       "Cartaz",
-      "Afonso de Albuquerque",
-      "Encomienda",
-      "Viceroyalty",
-      "Las Casas",
-      "VOC",
-      "Joint-Stock Company",
-      "Batavia",
-      "British EIC",
-      "Spice Islands",
-      "Kingdom of Kongo",
-      "Asante",
       "Intra-Asian Trade",
-      "Mit’a / Mita",
+      "Mit’a",
+      "Encomienda",
       "Hacienda",
       "Indentured Servitude",
-      "Plantation Economy",
-      "Chattel Slavery"
+      "Chattel Slavery",
+      "Plantation Economy"
     ],
     "sections": [
       {
         "number": "1",
-        "label": "State Building",
-        "heading": "Maritime Trade Creates New Opportunities for State Power",
+        "label": "Who Ruled: Change",
+        "heading": "Rivals Build Empires from the Sea",
         "blocks": [
-          {"type":"p","html":"Portugal built the <span class=\"kt\">Estado da India</span> around fortified ports and sea lanes, while Spain conquered and governed large American territories. Dutch, French, and British maritime power also expanded. But expanding trade did not strengthen only European states."},
-          {"type":"p","html":"In Africa, participation in Atlantic commerce helped states such as the <span class=\"kt\">Kingdom of Kongo</span> and <span class=\"kt\">Asante</span> gain access to revenue, weapons, and new diplomatic relationships. The effects were uneven and could become destabilizing, but the important AP point is that maritime networks redistributed political opportunity."}
+          {
+            "type": "p",
+            "html": "Topic 4.3 ended with a question. Disease had emptied much of the Americas of its people, and the new sugar plantations needed more workers than ever. Who would do the work, and who would rule? The answer reaches beyond the Americas, because European ships were reaching Africa and Asia too."
+          },
+          {
+            "type": "p",
+            "html": "After 1500, five European states built empires held together by ships: Portugal, Spain, the Dutch Republic, France, and England (Britain after 1707). An empire like that is a <span class=\"kt\">maritime empire</span>. They built them because they were rivals. They competed for <strong>power</strong>, so each wanted what the others had. They competed over <strong>religion</strong>: Catholic Portugal and Spain saw their voyages as a war against Islam and a mission to spread Christianity, and after the Reformation, Protestant England and the Dutch fought Catholic Spain. And they competed for <strong>money</strong>: gold, spices, sugar, and the trade that carried them. When one state found a route or a rich coast, the others came after it."
+          },
+          {
+            "type": "p",
+            "html": "In Africa and Asia, an empire from the sea usually looked like a fort on a coast. Portugal built São Jorge da Mina, a fortress on the Gold Coast of West Africa, in 1482, to buy gold. It took Goa in India in 1510, Malacca, on the narrow strait between the Indian Ocean and the South China Sea, in 1511, and Hormuz, at the mouth of the Persian Gulf, in 1515. A <span class=\"kt\">trading post</span> is a small fortified base where a foreign state's merchants buy and sell. These posts made money for the kings who backed them and the merchants who traded through them. The Dutch, and later the English and French, built posts of their own, often by taking Portugal's."
+          },
+          {
+            "type": "p",
+            "html": "The Americas were different. There, disease and conquest had broken the great Indigenous states, and Spain and Portugal took whole territories and the people living on them."
+          }
         ],
-        "callout":{"label":"AP Thinking, Causation","raw":"<p>State growth followed a mechanism: <strong>access to trade -> access to revenue or strategic goods -> greater political influence</strong>. Apply that mechanism to both European and African cases.</p>"}
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Name the change, then its cause.</strong> \"Europeans built forts in Asia\" is a fact. \"Rival European states, competing for power, religion, and trade, built forts on the coasts of Africa and Asia\" is a change with its cause attached.</p>"
+        }
       },
       {
         "number": "2",
-        "label": "Continuity",
-        "heading": "Indian Ocean Trade Changes Without Being Replaced",
+        "label": "Who Ruled: Continuity",
+        "heading": "Asia Sets the Terms",
         "blocks": [
-          {"type":"p","html":"Portuguese and Dutch merchants disrupted parts of the Indian Ocean system by seizing ports, demanding passes, and attempting monopolies. Yet <span class=\"kt\">intra-Asian trade</span> continued to flourish."},
-          {"type":"p","html":"Gujarati, Omani, Swahili Arab, Javanese, Indian, Chinese, and other merchants kept moving goods through commercial networks that long predated European arrival. European armed commerce became an important new layer, but it did not erase the local knowledge, credit relationships, or regional demand that sustained Asian trade."}
+          {
+            "type": "p",
+            "html": "The strongest states in Asia did not let Europeans in on Europe's terms. Ming China let the Portuguese settle at Macau, a small port on China's south coast, from 1557, and kept them under Chinese officials and Chinese rules."
+          },
+          {
+            "type": "p",
+            "html": "Japan went further. Its rulers, the Tokugawa shoguns, feared that Christianity, which Portuguese and Spanish missionaries had spread in Japan, would divide the country. In 1635 the shogun's senior councilors sent orders to their officials at Nagasaki, the port where foreign ships traded. The first order reads: \"It is strictly prohibited for Japanese ships to leave for foreign countries.\" Another says that any Japanese who returns home after living abroad \"must be put to death.\" Other orders told the officials to search every arriving ship for Christians. In 1639 the councilors banned Portuguese ships from Japan altogether."
+          },
+          {
+            "type": "p",
+            "html": "From 1641, the only Europeans allowed to trade in Japan were the Dutch, and they were confined to Dejima, a small artificial island in Nagasaki harbor. Chinese merchants kept trading at Nagasaki too. Europe's empires grew, but China and Japan still decided how far into their countries Europeans could reach."
+          }
         ],
-        "callout":{"label":"AP Thinking, Continuity &amp; Change","raw":"<p><strong>Change:</strong> Europeans inserted armed trading-post empires and monopoly pressure. <strong>Continuity:</strong> Asian, African, and Middle Eastern merchants continued to dominate much regional exchange.</p>"}
+        "callout": {
+          "label": "AP Thinking, Sourcing and Situation",
+          "raw": "<p><strong>Ask who wrote it, for whom, and why.</strong> The 1635 orders were written by the shogun's councilors (the authors), for their officials at Nagasaki (the audience), to keep Christianity out and foreign trade under the government's control (the purpose), at a time when the shogunate saw Christian converts as a danger (the situation). Naming those four things is the skill this topic practices.</p>"
+        }
       },
       {
         "number": "3",
-        "label": "Labor",
-        "heading": "Colonial Economies Adapt Old Labor and Expand New Systems",
+        "label": "Trade: Change and Continuity",
+        "heading": "The Old Ocean Keeps Trading",
         "blocks": [
-          {"type":"p","html":"Colonial economies depended on agriculture and extraction, and rulers often adapted institutions that already existed. The Spanish colonial <span class=\"kt\">mita</span>, for example, drew on the Incan <span class=\"kt\">mit’a</span> labor obligation but redirected it toward colonial mining and imperial revenue."},
-          {"type":"p","html":"At the same time, colonial societies expanded or introduced systems such as <span class=\"kt\">encomienda</span>, hacienda labor, <span class=\"kt\">indentured servitude</span>, and chattel slavery. These systems differed legally, but all organized workers for agricultural or extractive production."}
+          {
+            "type": "p",
+            "html": "Long before the Portuguese came, the Indian Ocean was crowded with merchants from East Africa, Arabia, India, Southeast Asia, and China (Topic 2.3). The Portuguese tried to control it with guns. They made other ships buy a pass, called a <span class=\"kt\">cartaz</span>, and attacked ships that sailed without one. That was a real change: a European navy was now taxing and threatening Asian shipping."
+          },
+          {
+            "type": "p",
+            "html": "But the old ocean kept trading. Gujarati merchants from western India kept shipping cotton cloth across the ocean, often by buying a pass and sailing on. Swahili Arab traders on the East African coast kept trading. Omani Arabs drove the Portuguese out of Muscat in 1650, and in 1698 they took the Portuguese fortress at Mombasa, on the Swahili coast. Javanese merchants kept trading from the ports of Java."
+          },
+          {
+            "type": "p",
+            "html": "Much of the ocean's trade went on being trade between one Asian port and another, which historians call <span class=\"kt\">intra-Asian trade</span>, and European merchants often made their money by joining it, carrying Asian goods from one Asian port to the next. The College Board's words for this trade are that it \"continued to flourish.\""
+          }
         ],
-        "callout":{"label":"AP Thinking, Comparison","raw":"<p>Compare labor systems by the same variables: who owed labor, for how long, under what legal status, and who captured the output.</p>"}
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>One case can hold both.</strong> The cartaz was a change. The Gujarati, Swahili, Omani, and Javanese merchants who kept trading were a continuity. A strong answer names both and says which one lasted.</p>"
+        }
       },
       {
         "number": "4",
-        "label": "Slavery",
-        "heading": "Older Enslavement Continues as Atlantic Plantation Slavery Expands",
+        "label": "Who Ruled: African States",
+        "heading": "Kongo and Asante Grow Stronger",
         "blocks": [
-          {"type":"p","html":"Enslavement in Africa did not begin with the Atlantic system. Older forms continued, including incorporation of enslaved persons into households and export through Mediterranean and Indian Ocean routes."},
-          {"type":"p","html":"The major change was the scale and destination of forced migration. Expanding <span class=\"kt\">plantation economies</span> in the Americas created enormous demand for enslaved African labor and strengthened hereditary, racialized <span class=\"kt\">chattel slavery</span>."}
+          {
+            "type": "p",
+            "html": "The same trade made some African states stronger. The Kingdom of Kongo, near the mouth of the Congo River in Central Africa, welcomed the Portuguese in the 1480s, and its king was baptized a Christian in 1491. His son Afonso I, who became king in the early 1500s, made Christianity the religion of the royal court and traded with Portugal for goods, priests, teachers, and weapons that strengthened his rule. Kongo's influence grew."
+          },
+          {
+            "type": "p",
+            "html": "About two hundred years later, on the Gold Coast of West Africa, the Asante kingdom rose by controlling gold and by buying guns from Dutch and English traders on the coast. In 1701 Asante defeated the stronger kingdom of Denkyira at the battle of Feyiase and became the main power in the region."
+          },
+          {
+            "type": "p",
+            "html": "In 1526 Afonso wrote a letter to King João III of Portugal. He complained that Portuguese traders were carrying away \"our native-born countrymen and the children of our nobles and vassals as well as relatives of ours,\" and he asked the Portuguese king to send \"neither traders nor trading goods.\" Read alone, that sounds like a king against slavery. Read with its author and audience in mind, it says something more exact. Afonso himself sold captives taken in his wars outside Kongo to the Portuguese, and Kongo had enslaved people of its own. What he wanted stopped was traders he did not control kidnapping his own free-born subjects, which was taking the trade, and his people's loyalty, out of the king's hands. His audience was the one ruler who could order those traders to obey him."
+          }
         ],
-        "callout":{"label":"Common Mistake to Avoid","raw":"<p>Do not write that slavery was invented after 1500. Explain both continuity in older forms of enslavement and change in the scale, destination, and racialization of Atlantic plantation slavery.</p>"}
+        "callout": {
+          "label": "AP Thinking, Sourcing and Situation",
+          "raw": "<p><strong>Purpose changes meaning.</strong> Afonso's purpose was to get the king of Portugal to stop traders who were breaking Kongo's rules. Knowing that, the letter is evidence of a strong African king defending his control of trade, not evidence that he was against all slavery.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "Work: Old and New",
+        "heading": "Labor in the Colonial Americas",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "The colonies in the Americas made their money mostly from farming, growing sugar, tobacco, and wheat and raising cattle, and from mining. They needed workers, and they got them in two ways."
+          },
+          {
+            "type": "p",
+            "html": "Some labor systems already existed. The Inca had required each community to send people to work for the state in turns, a labor duty called the <span class=\"kt\">mit’a</span>. In the 1570s the Spanish viceroy of Peru, Francisco de Toledo, turned that duty into a draft that sent thousands of Andean men each year to the silver mine at Potosí. An old system kept its name and changed its master."
+          },
+          {
+            "type": "p",
+            "html": "Other systems were new. <span class=\"kt\">Encomienda</span> gave a Spanish colonist the labor and tribute of a group of Indigenous people. On a <span class=\"kt\">hacienda</span>, a large estate, Indigenous and mixed-race workers farmed and herded for the owner, often for wages and sometimes tied to the estate by debt. In the English colonies, many poor Europeans paid for their voyage with four to seven years of work under a contract, which is <span class=\"kt\">indentured servitude</span>. And on the plantations, enslaved Africans were held in <span class=\"kt\">chattel slavery</span>: owned as property for life, and their children too."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Compare by the same questions.</strong> For each labor system, ask who did the work, for how long, whether they were free, and who took what they produced. The mit’a is a continuity with a change: the same duty, a new master, a new mine.</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "Slavery: Old and New",
+        "heading": "Older Forms Continue, Plantations Change Everything Else",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Slavery was not new in Africa. In many African societies, enslaved people were taken into households, and over time they or their children could become part of the family. Captives were also carried north across the Sahara to the Mediterranean world, and east across the Indian Ocean to Arabia, Persia, and India. Those older forms went on through this whole period."
+          },
+          {
+            "type": "p",
+            "html": "What changed was the plantations. A <span class=\"kt\">plantation economy</span> is one built on huge farms growing one crop to sell, and sugar, and later tobacco, needed enormous numbers of workers. Historians estimate that in the whole 1500s, fewer than 300,000 Africans were forced onto ships bound for the Americas. In the fifty years from 1701 to 1750, about 2.5 million were."
+          },
+          {
+            "type": "p",
+            "html": "Slavery in the Americas was larger than anything before it. It was for life and inherited, and it came to be tied to race: laws in the English colonies made the children of enslaved women enslaved too. Africans and their descendants became most of the people in the Caribbean colonies and a large part of Brazil's population, and their languages, beliefs, and foods came with them. That is what the College Board calls \"significant demographic, social, and cultural changes.\""
+          }
+        ],
+        "callout": {
+          "label": "Common Mistake to Avoid",
+          "raw": "<p>Do not write that slavery began with the Atlantic trade. Older forms of slavery continued in Africa. What changed was the scale, the destination, and the kind of slavery: lifelong, inherited, and tied to race on American plantations.</p>"
+        }
+      },
+      {
+        "number": "7",
+        "label": "The Pattern",
+        "heading": "Some Things Changed Fast, and Some Barely Moved",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Put it together. Europeans built empires from the sea: new forts, new colonies, new labor systems, and a far larger slave trade. But much of the world kept its own rules. China and Japan set the terms of trade. Asian and African merchants kept the Indian Ocean busy. Kongo and Asante grew strong. An old Inca labor duty was reused, and older forms of slavery went on in Africa."
+          },
+          {
+            "type": "p",
+            "html": "Europeans built empires from the sea, but much of the world kept its own rules: some things changed fast, and some barely moved."
+          },
+          {
+            "type": "p",
+            "html": "It also leaves a question. The empires existed. How did their rulers make them pay, and what did the money do to the people inside them? That is Topic 4.5."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Answer all three.</strong> The College Board asks about three things in this topic: how states were built, how trade and labor changed and continued, and how slavery changed and continued. For each one, name one change and one continuity.</p>"
+        }
       }
     ],
-    "takeaway": "Topic 4.4 is a continuity-and-change story. Maritime expansion increased the influence of European empires and also created opportunities for African states such as Kongo and Asante. Portuguese and Dutch intrusion disrupted Indian Ocean commerce, but intra-Asian trade and merchants such as Gujaratis, Omanis, Swahili Arabs, and Javanese continued. Colonial economies adapted older labor systems such as the Incan mit’a while expanding encomienda, hacienda, indentured servitude, and chattel slavery. Older forms of enslavement continued in Africa and the Indian Ocean world, while plantation demand dramatically expanded Atlantic slavery.",
+    "takeaway": "Driven by political, religious, and economic rivalries, Portugal, Spain, the Dutch, France, and England built maritime empires: trading posts on the coasts of Africa and Asia, and colonies in the Americas. Ming China and Tokugawa Japan limited European trade on their own terms, and Gujarati, Swahili Arab, Omani, and Javanese merchants kept Indian Ocean trade flourishing. Kongo and Asante grew stronger through the new trade. Colonial economies in the Americas reused the Inca mit’a and added encomienda, hacienda labor, indentured servitude, and chattel slavery. Older forms of slavery continued in Africa, while the plantation economy made slavery in the Americas far larger, lifelong, inherited, and tied to race. Some things changed fast, and some barely moved.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
-      {"num":"1","skill":"Causation","text":"Explain how expanding maritime trade increased the influence of ONE European empire and ONE African state such as Kongo or Asante.","placeholder":"The European state gained influence because... The African state gained influence because..."},
-      {"num":"2","skill":"Continuity & Change","text":"Explain one change and one continuity in Indian Ocean trade after European arrival. Use a specific merchant group or trade pattern as evidence for the continuity.","placeholder":"One change was... One continuity was... It persisted because..."},
-      {"num":"3","skill":"Continuity & Change","text":"Explain one continuity and one change in labor or slavery after 1500. Use at least two specific systems such as mit’a/mita, encomienda, hacienda, indentured servitude, older African enslavement, or plantation chattel slavery.","placeholder":"A continuity was... A change was... Evidence: ..."}
-
+      {
+        "num": "01",
+        "skill": "Continuity and Change",
+        "text": "Explain ONE change in who held power after 1500 (a European trading post or empire, or an African state that grew stronger). Then explain ONE continuity: how China or Japan kept control of trade with Europeans.",
+        "placeholder": "One change was... This happened because... One continuity was... China or Japan kept control by..."
+      },
+      {
+        "num": "02",
+        "skill": "Sourcing and Situation",
+        "text": "In Section 4, Afonso I writes to the king of Portugal. Identify Afonso's audience and his purpose. Then explain how knowing them changes what the letter tells us about the slave trade.",
+        "placeholder": "Afonso's audience was... His purpose was... Knowing this, the letter shows..."
+      },
+      {
+        "num": "03",
+        "skill": "Continuity and Change",
+        "text": "Explain ONE continuity and ONE change in labor or slavery from 1450 to 1750. Use at least TWO of these: mit’a, encomienda, hacienda, indentured servitude, slavery in Africa, plantation slavery.",
+        "placeholder": "One continuity was... One change was... The evidence is..."
+      }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 4.4, Maritime Empires Established",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true,
   },
   "4.5": {
     "topicKey": "4.5",

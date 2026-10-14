@@ -224,9 +224,9 @@ window.BEHISTORICAL_LESSON = {
   },
 
   first10: {
-    title: 'First & 10: Building Empires at Sea',
+    title: 'First & 10: Empires from the Sea',
     embedUrl: 'first-and-10-topic-4-4-maritime-empires-established-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 4.4 lesson path.'
+    note: 'Read the First & 10, answer the three questions, then return to the 4.4 lesson path.'
   },
 
   evidenceLab: {

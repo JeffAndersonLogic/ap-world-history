@@ -190,9 +190,9 @@ trade between Asian ports, carried by Asian and African merchants, and the Europ
 their money by joining it. The CED's word for this trade is that it "continued to flourish."
 
 **African states grew too.** The same trade made some African states stronger. The Kingdom of
-Kongo, near the mouth of the Congo River, welcomed the Portuguese in the 1480s. Its king, Afonso
-I, became a Christian, made Christianity the royal religion, and traded with Portugal for goods,
-priests, teachers and weapons that strengthened his rule. Kongo's influence grew. Two hundred
+Kongo, near the mouth of the Congo River, welcomed the Portuguese in the 1480s, and its king was baptized in 1491. His son Afonso I,
+king from the early 1500s, made Christianity the royal religion and traded with Portugal for
+goods, priests, teachers and weapons that strengthened his rule. Kongo's influence grew. Two hundred
 years later, on the Gold Coast, the Asante kingdom rose by controlling gold and buying guns from
 Dutch and English traders on the coast. In 1701 Asante defeated the stronger kingdom of
 Denkyira at the battle of Feyiase and became the main power of the region.
