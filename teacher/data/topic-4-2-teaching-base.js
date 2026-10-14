@@ -320,7 +320,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 3,
         land: [
-          'KC-4.1.III.B: Spanish sponsorship of Columbus and later voyages across the Atlantic and Pacific dramatically increased European interest in ocean travel and trade. The stairs show that effect.',
+          'KC-4.1.III.B: Spanish sponsorship of Columbus and later voyages across the Atlantic and Pacific dramatically increased European interest in ocean travel and trade. The timeline shows that effect: three ships in 1492, at least seventeen in 1493, then the Pacific.',
           'Elcano brought one ship home in 1522; Magellan was killed in 1521 (myth slide). The 1492 fleet reached the Caribbean, not Asia.',
           'Columbus brought back little gold from the first voyage. It paid in news: his letter was printed at least six times in Latin in 1493 alone, plus Spanish and Italian editions. The second fleet was at least 17 ships and more than 1,200 people (Britannica: more than 1,300).',
           'Magellan, a Portuguese captain sailing for Spain, left in 1519 with five ships and about 270 men to reach the Spice Islands by sailing west. He was killed at Mactan in the Philippines in 1521. Elcano brought the Victoria home in 1522 with 18 men.',

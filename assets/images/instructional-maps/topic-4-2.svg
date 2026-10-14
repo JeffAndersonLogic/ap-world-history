@@ -85,13 +85,13 @@
     <path class="flow" d="M778.7,236.1 C756.3,238.9 691.3,253.7 644.4,252.8 C597.6,251.9 522.2,234.3 497.8,230.6" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="644.4" cy="252.8" r="17"/>
     <text class="badgenum" x="644.4" y="259.8" text-anchor="middle">4</text>
-    <path class="flow" d="M817.8,188.9 C817.0,184.3 810.4,169.0 813.3,161.1 C816.3,153.2 831.9,144.9 835.6,141.7" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="813.3" cy="161.1" r="17"/>
-    <text class="badgenum" x="813.3" y="168.1" text-anchor="middle">5</text>
+    <path class="flow" d="M817.8,188.9 C817.8,183.3 811.9,165.3 817.8,155.6 C823.7,145.8 838.5,135.6 853.3,130.6 C868.1,125.5 897.8,125.9 906.7,125.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <circle class="badge" cx="832.2" cy="165.3" r="17"/>
+    <text class="badgenum" x="832.2" y="172.3" text-anchor="middle">5</text>
   </g>
   <g id="region-labels">
     <text class="region halo" x="725.6" y="308.8" text-anchor="end" fill="#1A1C1D"><tspan x="725.6" dy="0">IBERIA</tspan></text>
-    <text class="region halo" x="849.1" y="212.6" text-anchor="start" fill="#1A1C1D"><tspan x="849.1" dy="0">NORTHERN STATES</tspan></text>
+    <text class="region halo" x="849.1" y="224.6" text-anchor="start" fill="#1A1C1D"><tspan x="849.1" dy="0">NORTHERN STATES</tspan></text>
     <text class="region halo" x="500.4" y="156.6" text-anchor="middle" fill="#1A1C1D"><tspan x="500.4" dy="0">NORTH ATLANTIC</tspan><tspan x="500.4" dy="25">COAST</tspan></text>
     <text class="region halo" x="471.1" y="431.6" text-anchor="middle" fill="#1A1C1D"><tspan x="471.1" dy="0">CARIBBEAN 1492</tspan></text>
   </g>

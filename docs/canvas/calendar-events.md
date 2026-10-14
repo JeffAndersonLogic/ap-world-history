@@ -2602,7 +2602,7 @@ deleted row in the schedule and every affected date moves with it.
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;">I can explain one economic reason rulers backed voyages (such as cutting out the middlemen in the spice trade) and name one thing a ruler gave an explorer (such as ships, permission to claim land, titles, or a share of the profits).</li>
                     <li style="margin: 0 0 6px 0;">For a Portuguese or Spanish voyage, I can name who backed it, what they wanted, and one economic effect, such as Portugal's trading-post empire or Spain's voyages making Europe more interested in ocean trade.</li>
-                    <li style="margin: 0 0 6px 0;">I can use one English, French, or Dutch voyage to explain the search for another route to Asia and one effect it had, such as cod fishing, the fur trade, or land claims, and explain how Portugal's and Spain's routes led it to look north.</li>
+                    <li style="margin: 0 0 6px 0;">I can use one English, French, or Dutch voyage to explain the search for another route to Asia and one effect it had, such as cod fishing, the fur trade, or land claims, and explain how Portugal's and Spain's hold on the southern routes led that state to look north.</li>
                 </ul>
             </td>
         </tr>

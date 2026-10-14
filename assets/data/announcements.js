@@ -1830,7 +1830,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       successCriteria: [
         { text: 'I can explain one economic reason rulers backed voyages (such as cutting out the middlemen in the spice trade) and name one thing a ruler gave an explorer (such as ships, permission to claim land, titles, or a share of the profits).', label: 'Governance' },
         { text: 'For a Portuguese or Spanish voyage, I can name who backed it, what they wanted, and one economic effect, such as Portugal\'s trading-post empire or Spain\'s voyages making Europe more interested in ocean trade.', label: 'Economic Systems' },
-        { text: 'I can use one English, French, or Dutch voyage to explain the search for another route to Asia and one effect it had, such as cod fishing, the fur trade, or land claims, and explain how Portugal\'s and Spain\'s routes led it to look north.', label: 'Economic Systems' }
+        { text: 'I can use one English, French, or Dutch voyage to explain the search for another route to Asia and one effect it had, such as cod fishing, the fur trade, or land claims, and explain how Portugal\'s and Spain\'s hold on the southern routes led that state to look north.', label: 'Economic Systems' }
       ],
       modules: [
         { number: '02', title: 'First & 10 Reading' },
@@ -1857,7 +1857,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       successCriteria: [
         { text: 'I can explain one economic reason rulers backed voyages (such as cutting out the middlemen in the spice trade) and name one thing a ruler gave an explorer (such as ships, permission to claim land, titles, or a share of the profits).', label: 'Governance' },
         { text: 'For a Portuguese or Spanish voyage, I can name who backed it, what they wanted, and one economic effect, such as Portugal\'s trading-post empire or Spain\'s voyages making Europe more interested in ocean trade.', label: 'Economic Systems' },
-        { text: 'I can use one English, French, or Dutch voyage to explain the search for another route to Asia and one effect it had, such as cod fishing, the fur trade, or land claims, and explain how Portugal\'s and Spain\'s routes led it to look north.', label: 'Economic Systems' }
+        { text: 'I can use one English, French, or Dutch voyage to explain the search for another route to Asia and one effect it had, such as cod fishing, the fur trade, or land claims, and explain how Portugal\'s and Spain\'s hold on the southern routes led that state to look north.', label: 'Economic Systems' }
       ],
       modules: [
         { number: '02', title: 'First & 10 Reading' },

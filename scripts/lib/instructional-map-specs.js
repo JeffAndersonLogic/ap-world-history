@@ -859,7 +859,7 @@ module.exports = [
       { from: [-7, 36], via: [[-18, 28], [-45, 24]], to: [-71, 22.5], label: 'Spain: west across the Atlantic, 1492' },
       { from: [-5, 51.5], via: [[-30, 55]], to: [-54, 50], label: 'England: Cabot, 1497' },
       { from: [-4.8, 47.5], via: [[-35, 44.5]], to: [-68, 48.5], label: 'France: Cartier, 1530s' },
-      { from: [4, 56], via: [[3, 61]], to: [8, 64.5], label: 'Dutch: Barentsz, 1590s, north toward the Arctic' }
+      { from: [4, 56], via: [[4, 62], [12, 66.5]], to: [24, 67.5], label: 'Dutch: Barentsz, 1590s, north toward the Arctic' }
     ],
     points: [
       { at: [-1.3, 5.1], label: 'Elmina', note: 'Portuguese fort, 1482', side: 'left' },

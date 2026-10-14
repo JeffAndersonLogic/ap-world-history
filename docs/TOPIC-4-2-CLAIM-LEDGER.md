@@ -187,3 +187,23 @@ Three full passes in a row found supported defects, so under the build skill's s
 ## Status totals (2026-10-12)
 
 Story claims and Phase 9 claims together: every row has a status. NEEDS JEFF: none.
+
+### Pass 4, reviewer 7 (history), 2026-10-13, after the build shipped at `213fce2`
+
+1. F10 section 6, "Spain got ... the first crossing of the Pacific," is an unqualified first: Austronesian and Polynesian voyagers crossed and settled the Pacific centuries earlier (Ioannidis et al., *Nature* 583, 2020: "conclusive evidence for prehistoric contact of Polynesian individuals with Native American individuals (around AD 1200)"). **Fixed:** "the first European crossing of the Pacific." The fingerprint moved for that sentence only.
+
+Everything else checked clean, with sources: Lybyer's wording, Cabot's patent, Pearson's prices, every date and figure, the Newfoundland fishery, the primary source and captions, cross-surface consistency, the deep reading's references to other chapters, CED alignment and story-map ownership.
+
+### Pass 4, reviewer 8 (page truth), 2026-10-13
+
+1. Checkpoint 2's second target read "For ONE of Portugal or Spain: I can explain why Portugal and Spain...", one state then both. **Fixed:** written out as its own line for one state.
+2. SC3 "led it to look north": "it" had no clear antecedent. **Fixed:** "led that state to look north."
+3. Map route 5 (Barentsz) was almost hidden by its badge and pointed north-northwest, while every text says northeast around Russia. **Fixed:** the route now runs northeast past Scandinavia; re-rendered and checked by eye.
+4. The Columbus picture was captioned "the 1800s, more than three centuries after 1492"; it is an 1893 color print (L. Prang & Co., Library of Congress). **Fixed** on both captions: "A color print published in 1893, four centuries after 1492."
+5. A teacher note on the Spain timeline still said "The stairs show that effect." **Fixed.**
+6. BeSurreal asked "if this island is not Asia" on the night before any island is seen. **Fixed:** "if the land you find tomorrow is not Asia."
+- Shared, not 4.2: en dashes in checkpoint subtitles (about 28 configs), the singular "Learning Target Checked" heading, timeline tick labels dropped near events, the raw phase id in Teacher Intelligence, and the landing-sentence subtitle offset in Present. Added to the adjacent findings.
+
+### After pass 4
+
+Pass 4 found 7 supported defects (1 history, 6 page truth), all small, down from 30, 29 and 11. Its fixes have not been through a fifth reviewer.
