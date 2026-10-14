@@ -80,7 +80,7 @@
     <path class="flow" d="M746.7,444.4 C734.8,451.9 694.1,472.2 675.6,488.9 C657.0,505.6 642.2,535.2 635.6,544.4" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="675.6" cy="488.9" r="17"/>
     <text class="badgenum" x="675.6" y="495.9" text-anchor="middle">2</text>
-    <path class="flow" d="M466.7,355.6 C492.6,340.7 573.3,285.2 622.2,266.7 C671.1,248.1 737.0,248.1 760.0,244.4" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <path class="flow" d="M400.0,372.2 C437.0,354.6 562.2,288.0 622.2,266.7 C682.2,245.4 737.0,248.1 760.0,244.4" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="622.2" cy="266.7" r="17"/>
     <text class="badgenum" x="622.2" y="273.7" text-anchor="middle">3</text>
     <path class="flow" d="M644.4,555.6 C661.5,559.3 712.6,581.0 746.7,577.8 C780.7,574.5 831.9,543.1 848.9,536.1" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
@@ -131,10 +131,10 @@
       <rect x="18" y="170" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="188">Brazil: cassava; sugar plantations</text>
       <circle class="badge" cx="533" cy="49" r="14"/><text class="badgenum" x="533" y="55" text-anchor="middle" font-size="16">1</text><line x1="551" x2="572" y1="49" y2="49" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,43 L584,49 L572,55 Z" fill="#8C5A2B"/><text class="small" x="594" y="56">West: animals, crops, germs</text>
       <circle class="badge" cx="533" cy="82" r="14"/><text class="badgenum" x="533" y="88" text-anchor="middle" font-size="16">2</text><line x1="551" x2="572" y1="82" y2="82" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,76 L584,82 L572,88 Z" fill="#8C5A2B"/><text class="small" x="594" y="89">West by force: enslaved Africans</text>
-      <circle class="badge" cx="533" cy="115" r="14"/><text class="badgenum" x="533" y="121" text-anchor="middle" font-size="16">3</text><line x1="551" x2="572" y1="115" y2="115" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,109 L584,115 L572,121 Z" fill="#8C5A2B"/><text class="small" x="594" y="122">East: maize, potatoes</text>
+      <circle class="badge" cx="533" cy="115" r="14"/><text class="badgenum" x="533" y="121" text-anchor="middle" font-size="16">3</text><line x1="551" x2="572" y1="115" y2="115" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,109 L584,115 L572,121 Z" fill="#8C5A2B"/><text class="small" x="594" y="122">East, on purpose: maize, potatoes</text>
       <circle class="badge" cx="533" cy="148" r="14"/><text class="badgenum" x="533" y="154" text-anchor="middle" font-size="16">4</text><line x1="551" x2="572" y1="148" y2="148" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,142 L584,148 L572,154 Z" fill="#8C5A2B"/><text class="small" x="594" y="155">Cassava to Central Africa</text>
   </g>
 
   <rect x="0" y="948" width="1600" height="52" fill="url(#paper)" opacity=".93"/>
-  <text class="tiny" x="46" y="980">BeHistorical instructional map. Arrows show the direction things moved, not single voyages; coastlines are simplified. Sweet potatoes reached southern China from the Philippines by the 1590s, outside this map&apos;s arrows.</text>
+  <text class="tiny" x="46" y="980">BeHistorical instructional map. Arrows show direction, not single voyages; coastlines are simplified. Sweet potatoes reached southern China from Southeast Asia (Fujian from the Philippines, 1590s), a route not drawn here.</text>
 </svg>

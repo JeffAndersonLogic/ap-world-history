@@ -132,7 +132,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'question', kind: 'question', eyebrow: 'The Question',
       kc: 'Unit 4: Learning Objective D',
-      title: 'What did the ships carry, and what did it do on each side of the ocean?',
+      title: 'What caused the Columbian Exchange, and what did it do on each side of the ocean?',
       subtitle: 'Hold that question. Some of what crossed was chosen. Some of it was not.',
       notes: {
         minutes: 1,
@@ -146,7 +146,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10 · 12 Minutes',
-      title: 'Read for two questions.',
+      title: 'Read with two questions in mind.',
       subtitle: 'For everything that crosses: how did it cross, and what did it do to the people at the other end?',
       big: '12',
       action: { label: 'Open First & 10', url: '../unit-4/first-and-10-topic-4-3-columbian-exchange-capture.html?v=response-id-fix-v1' },
@@ -234,7 +234,7 @@ window.BEHISTORICAL_TEACHING = {
           'Cuitláhuac ruled about eighty days and died late in 1520, most likely of smallpox; sources disagree on the month. The siege began in May 1521 and the city fell on 13 August 1521.',
           'The old 4.3 reading said the epidemic struck "as Cortés\'s army was besieging the city." It did not; the Spaniards had been driven out.'
         ],
-        ask: 'Look at the people on the right. What does the account say killed many of them besides the disease?',
+        ask: 'Look at the people lying under blankets. What does the account say killed many of them besides the disease?',
         listenFor: 'Hunger: nobody was well enough to cook or care for them.',
         ap: 'Claims and Evidence 3.B: the account claims great desolation and gives specific evidence (pustules, people unable to move, starvation).'
       }
@@ -294,7 +294,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'acosta', kind: 'source-quote', eyebrow: 'Going West on Purpose · A Source',
       kc: 'KC-4.1.V.C',
       template: {
-        quote: 'These wild cattle have so multiplied in Santo Domingo ... that they troop together ... by thousands. ... In the fleet, the year 1587, there came from Santo Domingo 35,444 hides, and from New Spain 64,350.',
+        quote: 'These wild cattle have so multiplied in Santo Domingo ... that they troop together ... by thousands. ... In the fleet, the year 1587, there came from Santo Domingo 35,444 hides, and from New Spain [Mexico] 64,350.',
         attribution: { author: 'José de Acosta', work: 'Natural and Moral History of the Indies', year: '1590' },
         notice: 'What does Acosta want you to believe, and what number does he give to prove it?'
       },
@@ -327,7 +327,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 1,
         land: [
           'Not every effect was a disaster. Plains peoples adopted the horse and built new ways of life with it: an Indigenous choice, not something done to them.',
-          'Spain founded its colony of New Mexico in 1598. Apaches and others built the first horse cultures of the Plains by the 1650s; the Comanche took up the horse in the late 1600s and dominated the southern Plains by the early 1700s (Hämäläinen, The Comanche Empire, 2008, as summarized by the NPS). A 2023 Science study dates Indigenous horse use in the West to the early 1600s, earlier than older accounts.',
+          'Spain founded its colony of New Mexico in 1598. Apaches and others built the first horse cultures of the Plains by the 1650s; the Comanche took up the horse in the late 1600s, moved onto the southern Plains in the early 1700s and dominated them by the mid-1700s (Hämäläinen, The Comanche Empire, 2008, as summarized by the NPS). A 2023 Science study dates Indigenous horse use in the West to the early 1600s, earlier than older accounts.',
           'Horses also had costs on the Plains: Hämäläinen notes damage to bison herds and grasslands and new inequalities. Keep that for a student who asks.'
         ],
         ask: 'Was the horse a cause of catastrophe or a new chance? For whom?',
@@ -341,9 +341,9 @@ window.BEHISTORICAL_TEACHING = {
         tag: 'By force', place: 'West Africa to Brazil and the Caribbean', date: '1500s to 1700s',
         rows: [
           { label: 'Who crossed', text: '**Enslaved Africans**, carried across the Atlantic against their will' },
-          { label: 'What they brought', text: '**Rice** and **okra**, and many knew how to grow rice' },
+          { label: 'What they brought', text: '**African rice** and **okra**, and many knew how to grow rice' },
           { label: 'Okra', text: 'Growing in **Brazil by the 1650s**' },
-          { label: 'Rice', text: 'African rice grown by enslaved Africans in the Americas' }
+          { label: 'Effect', text: 'Grown in garden plots to feed themselves; became part of cooking across the Americas' }
         ],
         proves: 'The exchange carried people\'s foods and knowledge, not only Europeans\' plants.'
       },
@@ -353,6 +353,7 @@ window.BEHISTORICAL_TEACHING = {
           'KC-4.1.V.C\'s second half: "other foods were brought by African enslaved persons." The CED\'s examples are okra and rice.',
           'Okra is recorded in Brazil by 1658 and in Suriname by 1686. African rice (Oryza glaberrima) was carried during the slave trade and grown by enslaved Africans; Saramaccan Maroons in Suriname still grow it (van Andel, Economic Botany, 2010).',
           'How much West African knowledge shaped rice growing in places like South Carolina is argued over by historians (Carney\'s "Black Rice" thesis and its critics). Say "many knew how to grow rice" and stop there.',
+          'Effect, for Checkpoint 2: enslaved people grew African food crops in their own garden plots and provision grounds to feed themselves, and those foods entered cooking across the Americas, from Brazil to the Caribbean (Carney and Rosomoff, In the Shadow of Slavery, 2009).',
           'A widely repeated story says women braided seeds into their hair before the crossing. It has no primary source behind it; do not teach it as fact.',
           'The Atlantic slave trade itself is Topic 4.4.'
         ],
@@ -364,54 +365,54 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'sugar', kind: 'story-scene', eyebrow: 'Cash Crops',
       kc: 'KC-4.1.V.B', title: 'Sugar: one plant that remade whole societies.',
       template: {
-        visual: { url: '../assets/images/topics/4-3/frans-post-sugar-mill-1660s.jpg', alt: 'Painting of a Brazilian landscape: on the right a large open sugar mill with workers, oxen and a cart; a planter\'s house on a hill; tropical trees and animals in the foreground', credit: 'Frans Post, Brazilian Landscape with Sugar Mill, 1660s · National Gallery of Ireland · Public domain', position: '97% 62%' },
+        visual: { url: '../assets/images/topics/4-3/frans-post-sugar-mill-1660s.jpg', alt: 'Painting of a Brazilian sugar plantation: on the right the furnace house, where workers feed the boilers, with oxen and a cart; the edge of a planter\'s house on a hill; tropical trees and animals in the foreground', credit: 'Frans Post, Brazilian Landscape, 1660s · National Gallery of Ireland · Public domain', position: '97% 62%' },
         caption: 'Frans Post, painted in the Netherlands, 1660s',
         steps: [
           { label: 'From Afro-Eurasia', text: 'Sugarcane crosses on Columbus\'s second voyage, 1493.' },
           { label: 'Grows best here', text: 'Brazil and the Caribbean grow it better than almost anywhere.' },
-          { label: 'Plantation', key: true, text: 'One cash crop, worked by coerced labor, overwhelmingly enslaved Africans.' },
-          { label: 'Shipped out', text: 'Most of it goes to Europe and the Middle East.' }
+          { label: 'Plantation', key: true, text: 'One cash crop, worked by coerced labor: by the 1600s, overwhelmingly enslaved Africans.' },
+          { label: 'Shipped out', text: 'Most of the sugar goes to Europe.' }
         ]
       },
       notes: {
         minutes: 3,
         land: [
           'KC-4.1.V.B\'s second sentence, which no surface of the old 4.3 lesson taught: "Cash crops were grown primarily on plantations with coerced labor and were exported mostly to Europe and the Middle East."',
-          'Frans Post went to Dutch-ruled northeastern Brazil in 1637 with its governor, Johan Maurits, and stayed several years (sources give 1642 to 1644 for his return). He painted Brazilian scenes like this one for European buyers for decades after he went home. It is a planter\'s-eye view: look for the mill, the workers, the oxen and cart carrying cane, and the house on the hill.',
+          'Frans Post went to Dutch-ruled northeastern Brazil in 1637 with its governor, Johan Maurits, and stayed several years (sources give 1642 to 1644 for his return). He painted Brazilian scenes like this one for European buyers for decades after he went home. The gallery titles it Brazilian Landscape and describes the building on the right as the furnace house, where enslaved workers feed the wood-fired boilers that turn cane juice into sugar. It is a planter\'s-eye view; only the edge of the planter\'s house shows at the right of the slide.',
           'Sugarcane came from the Canaries on Columbus\'s 1493 voyage and was first grown on Hispaniola; Brazil exported sugar to Lisbon by 1526, and by 1680 the Americas dominated world sugar production (Nunn and Qian 2010, citing Mintz and Galloway).',
           'Tobacco, an American plant, became a plantation cash crop the same way.',
           'How the plantation labor system worked is 4.4. Here, say what the CED says and move on.'
         ],
-        ask: 'Who in this painting does the work, and who owns the mill?',
-        listenFor: 'Enslaved workers do the work; the planter in the house on the hill owns it.',
+        ask: 'Who in this painting does the work at the furnace house? Who would have owned it?',
+        listenFor: 'Enslaved Black workers do the work; a planter owned it, and the edge of his house shows at the far right.',
         ap: 'Causation: a crop from one hemisphere, grown in another, with an effect on the people forced to grow it.'
       }
     },
     {
       phase: 'east', kind: 'split-scenes', eyebrow: 'Going East',
-      kc: 'KC-4.1.V.B', title: 'American crops became staple foods across Afro-Eurasia.',
+      kc: 'KC-4.1.V.B', title: 'American crops reached the far side of Afro-Eurasia.',
       template: {
         left: {
           name: 'England, 1597',
-          items: ['Named "Turkie Corne" and "Indian" wheat on one page', 'Gerard thought it came from Turkish lands and America'],
-          visual: { url: '../assets/images/topics/4-3/gerard-herball-turkie-corne-1597.jpg', alt: 'Hand-colored woodcut page from Gerard\'s Herball showing two maize plants and two ears of corn, labeled Turkie Corne and Turkie Wheate', credit: 'John Gerard, The Herball, London, 1597 · Public domain', position: '50% 25%' }
+          items: ['Named "Corne of Asia" and "Turkie Corne"', 'Gerard thought it came from Turkish lands and America'],
+          visual: { url: '../assets/images/topics/4-3/gerard-herball-turkie-corne-1597.jpg', alt: 'Hand-colored woodcut page from Gerard\'s Herball showing two maize plants and two ears of corn, labeled Turkie Corne and Turkie Wheate', credit: 'John Gerard, The Herball, London, 1597 · Public domain', position: '50% 5%' }
         },
         right: {
           name: 'Taiwan, 1740s',
           items: ['Sweet potatoes labeled "foreign tuber"', '"Truly a help in years of bad harvest"'],
           visual: { url: '../assets/images/topics/4-3/qing-taiwan-album-sweet-potato-1740s.jpg', alt: 'Chinese album painting of plants including three red and pale sweet potatoes with vines and a handwritten note beside them', credit: 'Album made for the Qing official Liushiqi, Taiwan, 1740s · Public domain', position: '70% 45%' }
         },
-        both: ['American plants, recorded far from the Americas', 'Grown where the old crops struggled']
+        both: ['American plants, recorded far from the Americas', 'Named as coming from somewhere else']
       },
       notes: {
         minutes: 3,
         land: [
           'KC-4.1.V.B\'s first sentence: "American foods became staple crops in various parts of Europe, Asia, and Africa."',
-          'Left: John Gerard\'s Herball (London, 1597), page 75, pictures maize as "Turkie Corne" and "Turkie Wheate." Gerard wrote that it was brought into Spain "out of Asia which is in the Turkes Dominions, as also out of America": he was not sure. Maize came from the Americas. He also wrote that it "doth nourish far lesse than either Wheate, Rie, Barly or Otes," a European doubt about the crop.',
+          'Left: John Gerard\'s Herball (London, 1597), page 75, pictures maize as "Corne of Asia," "Turkie Corne" and "Turkie Wheate." Gerard wrote that it was brought into Spain "out of Asia which is in the Turkes Dominions, as also out of America": he was not sure. Maize came from the Americas. He also wrote that it "doth nourish far lesse than either Wheate, Rie, Barly or Otes," a European doubt about the crop.',
           'Right: an album of Taiwan\'s plants and customs painted for 六十七 (Liushiqi), a Qing censor sent to inspect Taiwan in the 1740s. The note beside the sweet potatoes, 番薯 (fanshu, "foreign tuber"), says, in a translation made for this lesson: it can be eaten raw or cooked or ground into flour; it is planted very widely in Taiwan; settlers and Indigenous people rely on it for food; it is "truly a help in years of bad harvest." The note also says the plant came from "the country of Wenlai" (Brunei); sweet potatoes reached southern China from the Philippines and Southeast Asia.',
-          'In southern China, officials promoted the sweet potato in the famine year 1594. Near the mouth of the Congo River, Portuguese traders brought cassava from Brazil, and farmers took it up because it survived drought and locusts.'
+          'In southern China, officials promoted the sweet potato in the famine year 1594. Near the mouth of the Congo River, Portuguese traders brought cassava from Brazil, and farmers took it up. Cassava survives drought and locusts, which made it a food to fall back on.'
         ],
-        ask: 'What do the names "Turkie Corne" and "foreign tuber" tell you?',
+        ask: 'What do the names "Corne of Asia," "Turkie Corne" and "foreign tuber" tell you?',
         listenFor: 'Both plants were new, from somewhere else, and people were not sure where.',
         ap: 'Evidence: two sources from opposite ends of Afro-Eurasia showing the same development.'
       }
@@ -419,7 +420,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'nutrition', kind: 'cause-chain', eyebrow: 'Going East · The Effect',
       kc: 'KC-4.1.V.D', title: 'Why American crops meant better nutrition.',
-      footer: 'Over two centuries, these crops helped populations grow in China and Europe, and fed many in Africa.',
+      footer: 'Over two centuries, these crops helped populations grow in China and Europe, and fed many in parts of Africa.',
       template: {
         steps: [
           { label: 'Grow where old crops struggled', text: 'Maize on dry land, potatoes in cold ground, cassava in poor soil, sweet potatoes on hills' },
@@ -445,14 +446,14 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'map', kind: 'map', eyebrow: 'The Whole Exchange on One Map',
       kc: 'KC-4.1.V', title: 'What the ships carried, and which way.',
-      footer: '1 West: animals, crops, germs · 2 West by force · 3 East: maize, potatoes · 4 Cassava to Central Africa',
+      footer: '1 West: animals, crops, germs · 2 West by force · 3 East, on purpose: maize, potatoes · 4 Cassava to Central Africa',
       visual: { url: '../assets/images/instructional-maps/topic-4-3.svg', alt: 'Map with four arrows: animals, crops and germs west from Europe to the Caribbean; enslaved Africans west from West Africa to Brazil; maize and potatoes east to Europe; cassava from Brazil to Central Africa' },
       notes: {
         minutes: 1,
         land: [
           'Arrows show the direction things moved, not single voyages.',
           'Arrows 1 and 2 go west; 3 and 4 go east. The black dots are Tenochtitlan, Santo Domingo, Ireland, the mouth of the Congo and Fujian.',
-          'The map\'s own key is small when projected, so the four arrows are named in the footer. Not drawn as an arrow: sweet potatoes reaching China by sea from the Philippines; the map\'s note says so.'
+          'The map\'s own key is small when projected, so the four arrows are named in the footer. Not drawn as an arrow: sweet potatoes reaching southern China from Southeast Asia, including Fujian from the Philippines in the 1590s; the map\'s note says so.'
         ],
         ask: 'Which arrow carried the cargo nobody chose?',
         listenFor: 'Arrow 1: the germs went west with the animals and crops.'
@@ -487,7 +488,7 @@ window.BEHISTORICAL_TEACHING = {
         columns: [{ name: 'West, to the Americas' }, { name: 'East, to Afro-Eurasia' }],
         rows: [
           { label: 'By accident', cells: ['Smallpox, measles, malaria; rats, mosquitoes', 'Little that did comparable harm'] },
-          { label: 'On purpose or by force', cells: ['Horses, pigs, cattle, wheat, sugarcane; rice and okra with enslaved Africans', 'Maize, potatoes, cassava, sweet potatoes'] },
+          { label: 'On purpose or by force', cells: ['Horses, pigs, cattle, wheat, sugarcane; African rice and okra with enslaved Africans', 'Maize, potatoes, cassava, sweet potatoes'] },
           { label: 'What it did', cells: ['Catastrophic deaths in many areas; land remade by animals and plantations', 'New staple crops; better nutrition; more people'] }
         ],
         result: { label: 'So', text: 'The ships carried more than anyone meant them to, and what they carried remade populations on both sides.' }
@@ -505,17 +506,17 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'sharpen', kind: 'sharpen', eyebrow: 'Sharpen the Claim',
-      footer: 'A cause, then one effect in each hemisphere, each with a named example.',
+      footer: 'A cause, then one effect in each hemisphere, each with a named example and the people it affected.',
       template: {
         weak: 'The Columbian Exchange was a trade of plants and animals.',
-        strong: '**Ships crossing and coming back** carried living things, **some by accident**: smallpox was **catastrophic** in the Americas, while **maize and potatoes** improved nutrition in Afro-Eurasia.'
+        strong: '**Ships crossing and coming back** carried smallpox **by accident** and horses **on purpose**: **horses** let the **Comanche** build a new life on the Plains, while **sweet potatoes** fed **farmers in southern China** in famine years.'
       },
       notes: {
         minutes: 2,
         land: [
           'The weak claim calls it "a trade," as if both sides chose it, and gives no cause and no effect.',
-          'The strong claim names the cause, the CED\'s "unintentional" (by accident), and one effect in each hemisphere.',
-          'Have students write their own with a different pair, for example horses and the Comanche, and the sweet potato in China.'
+          'The strong claim names the cause, one thing that crossed by accident and one on purpose, and one effect in each hemisphere with the people it affected: the shape Checkpoint 2 asks for.',
+          'Have students write their own with a different pair, for example African rice or okra in Brazil, and cassava near the mouth of the Congo.'
         ],
         ask: 'Why is "trade" the wrong word for the Columbian Exchange?',
         listenFor: 'Because much of it was not chosen: the germs crossed by accident and enslaved people by force.'
@@ -560,7 +561,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 8,
         land: [
-          'Five real objects: the Codex smallpox page, Post\'s sugar mill, Guamán Poma\'s July harvest (1615), Gerard\'s "Turkie Corne" (1597) and the Qing sweet potato page (1740s).',
+          'Five real objects: the Codex smallpox page, Post\'s sugar plantation, Guamán Poma\'s July harvest (1615), Gerard\'s "Turkie Corne" (1597) and the Qing sweet potato page (1740s).',
           'Observation before inference: what the source shows, then what it suggests, then what it cannot tell you (a herbal shows a plant, not who ate it; Post painted for European buyers).',
           'Every picture in the Evidence Lab is a real historical object; none is AI-generated.'
         ],

@@ -149,3 +149,56 @@ the builder's reasoning.
 | 13 | Madeira's enslaved workers before 1492 "many of them African" is uncertain | Narrowed everywhere to "including Canary Islanders and Africans." |
 | 14 | Melville's sheep thesis stated as fact | Narrowed: "One historian argues ..." |
 | 15 | Deep reading "devastated in exactly the same way"; Middle East | Fixed both. |
+
+### Pass 2, reviewer 1 (page truth and readability), 23 findings
+
+Pass 2 was launched at 03:35 UTC, cut off by a usage limit before either reviewer reported, and
+relaunched with the same inputs at 09:36 UTC against the Pass 1 fixes (`93302634`).
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | Slide 18's model claim would fail Checkpoint 2: its Americas effect is a disease and it names no people | Fixed: the model now names smallpox by accident and horses on purpose, the Comanche on the Plains and farmers in southern China; the footer and notes say it is the Checkpoint 2 shape. |
+| 2 | Checkpoint 2 offers rice or okra as an effect, but no surface teaches an effect of either | Fixed: the First & 10, lecture card 3 and slide 11 now say enslaved people grew these foods in garden plots to feed themselves and that the foods became part of cooking across the Americas (Carney and Rosomoff, *In the Shadow of Slavery*, 2009). |
+| 3 | Slide 6 crop cuts off the heads of the three people on the right, whom the ask names | Confirmed against the full image. Fixed the ask ("the people lying under blankets"), since the narrow panel cannot hold all four figures. |
+| 4 | Slide 13 crop hides the page's top labels; "Indian" wheat is only in the Latin | Confirmed. Fixed: crop moved to the top of the page, bullet now "Named 'Corne of Asia' and 'Turkie Corne'", the Evidence Lab caption and teacher note add "Corne of Asia". |
+| 5 | Slide 13 title and chip claim more than its two sources show | Fixed: title "American crops reached the far side of Afro-Eurasia"; chip "Named as coming from somewhere else". Slide 14 still teaches where the crops grew. |
+| 6 | Evidence Lab task says the 1615 Andes drawing shows crops "before they traveled" | Fixed: "drawn in 1615, shows maize and potatoes in their homeland". The card's prompt also said the crops "would later travel"; fixed to "also traveled". The chickens suggestion was not taken: whether chickens reached South America before 1492 is debated. |
+| 7 | Slide 12 crop shows only a sliver of the house the answer points at | Confirmed. Fixed the ask and listen-for to the visible furnace house and workers; the note says only the edge of the house shows. |
+| 8 | Checkpoint 1 never asks how the diseases crossed, which its target names | Fixed: "and say how they crossed"; focus line added. |
+| 9 | Checkpoint 2 displays LT3's plantation clause without assessing it | Fixed: "If you choose sugarcane, say who was forced to do the work." |
+| 10 | Slide 2 question drops "caused" and differs from the First & 10 wording | Fixed: "What caused the Columbian Exchange, and what did it do on each side of the ocean?" |
+| 11 | First & 10 Section 4 "Most of it" has no antecedent | Fixed: "Most of the sugar". |
+| 12 | BeReady drops "and the Middle East" from the CED phrase | Fixed for the general cash-crop sentence. Sugar-specific sentences say Europe, per history finding 2 below. |
+| 13 | First & 10 callout gives away one of Q2's two answers, and Q2's quotes are only in the callout | Fixed: the account's claim and evidence are now quoted in the Section 2 narrative; the callout models the move on Acosta's hides in Section 3 instead. |
+| 14 | Malaria reads as if malaria mosquitoes crossed | Fixed on lecture card 2: malaria "came in the blood of infected Europeans and enslaved Africans". |
+| 15 | Deep reading closing card "in many by ninety percent or more" overstates its own range | Fixed with history finding 6. |
+| 16 | Deep reading Section 05 and the Chains card teach 4.4 and 4.7 material; register is high | Partly fixed: "permanent and passed to children" and "permanent and inherited" removed (4.4 material); the longest sentence in section 01 rewritten plainly. Section 05 itself kept: it is three paragraphs, it is the qualified bridge the story map allows, and it hands off to 4.4 in words. The register of an optional push-further reading is higher by design (CLAUDE.md, "Deep Readings"); "Orbis spike" is defined in its terms list. |
+| 17 | Map arrow 3 starts off Florida, not Mexico; labels small when projected; the Map Question asks how eastward crops crossed | Fixed: arrow 3 starts from the Gulf of Mexico and is labeled "East, on purpose"; the Map module key explains traders, sailors and farmers carried them. Projected label size is the known limit already handled by the slide footer. |
+| 18 | Slide 9 quote leaves "New Spain" unglossed | Fixed: "New Spain [Mexico]". |
+| 19 | Slide 3 "Read for two questions" conflicts with the reading's three questions | Fixed: "Read with two questions in mind." |
+| 20 | Slide 18 strike line crosses between the two lines of the weak claim | **Adjacent finding, not fixed here.** The sharpen template draws one line across the whole weak-claim block, so every deck with a two-line weak claim does this. A template change belongs in `assets/js/behistorical-slide-templates.js` for all decks. |
+| 21 | Sugar Evidence Lab caption does not say the painting was made in the Netherlands | Fixed: "He painted this one in the Netherlands in the 1660s, about twenty years after he left Brazil". |
+| 22 | Theme label "Humans and the Environment" differs from the CED source file's "Environments" | **Rejected, verified against the PDF.** The CED names the theme "THEME 1: HUMANS AND THE ENVIRONMENT (ENV)" and prints "Humans and the Environments ENV" in its topic sidebars. The transcription is faithful and the lesson uses the theme's own name. |
+| 23 | BeInTheRoom card shows an Andes picture for a Valley of Mexico scenario | Fixed: the card uses the Florentine Codex picture. |
+
+### Pass 2, reviewer 2 (history), 15 findings
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | The Frans Post painting is titled *Brazilian Landscape*, and the building on the right is the furnace house, not the mill; nothing says the cart carries cane | **Confirmed** on the National Gallery of Ireland record (object 11657). Fixed the slide credit, alt text, card titles ("A Sugar Plantation in Dutch Brazil"), captions, prompts and notes; "carrying cane" removed. |
+| 2 | Sugar "shipped mostly to Europe and the Middle East" overstates the Middle East for sugar | Fixed: sugar-specific sentences say Europe; the CED's phrase stays where the sentence is about cash crops in general (First & 10 Section 4 and BeReady, the Key Concept band). |
+| 3 | "Overwhelmingly enslaved Africans" erases the Indigenous labor of Brazil's early mills | Fixed: "by the 1600s" on the First & 10, lecture card 3 and slide 12 (Schwartz, *Sugar Plantations in the Formation of Brazilian Society*, 1985). |
+| 4 | Deep reading compresses maize and cassava's spread in Africa into the period before 1750 | Fixed: "took hold along the West and West-Central African coasts, especially in Kongo and Angola, by the 1600s, and spread inland over the next two centuries and more"; closing card "feeding many people in West and Central Africa". First & 10 and lecture now say "parts of Africa". |
+| 5 | Champa rice "doubled the harvest and roughly doubled China's population" is a single cause | Fixed: two crops a year in parts of southern China, "one of several causes of the Song population boom". |
+| 6 | Deep reading's range caps at ninety percent while a card says many exceeded it | Fixed: "from about half to ninety percent or more ... some Caribbean island populations almost entirely destroyed"; card "in some by ninety percent or more". |
+| 7 | The deep reading's model of a checkable claim cites no source | Fixed: Cook and Borah's tribute-based reconstruction, about 6.3 million in 1548 and about 1.1 million in 1605 (*Essays in Population History*; figures confirmed by search). |
+| 8 | Congo farmers' motive for cassava stated as fact | Fixed on the First & 10, lecture card 4 and slide 13 note: cassava "survives drought and locusts, which made it a food to fall back on", a property of the plant rather than a stated motive. |
+| 9 | Qing card's "but" sets Brunei against the Americas as a contradiction | Fixed: "The note says the seed came from Brunei. The plant first grew in the Americas. What does the note know ... and what does it not know?" |
+| 10 | Map footnote gives the Philippines as the only route to China | Fixed on the map, the Map module key and the slide note: from Southeast Asia, including Fujian from the Philippines in the 1590s. |
+| 11 | Comanche "dominated the southern Plains by the early 1700s" | Fixed in the teacher note: moved onto the southern Plains in the early 1700s and dominated them by the mid-1700s. Student surfaces say only that Plains peoples had built new lives on horseback by the early 1700s, which stands. |
+| 12 | Rice appears only as crossing by force, though Spaniards also brought Asian rice | Fixed: "African rice" on the First & 10, lecture card 3, slides 11 and 17, BeReady and Checkpoint 2. |
+| 13 | "Racial ideology developed to justify the practice afterward" states a debated sequence as settled | Fixed: "racial ideas grew up alongside the practice and were used to justify it". |
+| 14 | First & 10 joins two Nahuatl clauses with "because", which only the Spanish says | Fixed: the reading quotes the Lockhart sentence whole, with its semicolons. |
+| 15 | Chilies "within a couple of centuries" is too fast for Hungary and Sichuan | Fixed: "within two to three centuries". |
+
+Pass 2 found supported defects, so Pass 3 runs with fresh reviewers on the whole topic.

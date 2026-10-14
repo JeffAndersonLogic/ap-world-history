@@ -522,7 +522,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In June 1520 the people of Tenochtitlan, the Aztec capital, drove the Spaniards out of their city. That autumn, smallpox swept through it. An <span class=\"kt\">epidemic</span> is a disease that spreads to many people in one place at the same time. Years later, Nahua people from the city described the epidemic for a Spanish friar, Bernardino de Sahagún. People were covered in sores and could not move. Their account says that \"many just starved to death\" because \"no one took care of others any longer.\" Their new ruler, Cuitláhuac, died in the epidemic, most likely of smallpox. When the Spaniards came back to besiege the city in 1521, \"the Mexica warriors were greatly weakened by it.\""
+            "html": "In June 1520 the people of Tenochtitlan, the Aztec capital, drove the Spaniards out of their city. That autumn, smallpox swept through it. An <span class=\"kt\">epidemic</span> is a disease that spreads to many people in one place at the same time. Years later, Nahua people from the city described the epidemic for a Spanish friar, Bernardino de Sahagún. Their account says the sickness \"brought great desolation; a great many died of it.\" People were covered in sores, and the sick lay \"no longer able to move or stir.\" The account also says that \"many just starved to death; starvation reigned, and no one took care of others any longer.\" Their new ruler, Cuitláhuac, died in the epidemic, most likely of smallpox. When the Spaniards came back to besiege the city in 1521, \"the Mexica warriors were greatly weakened by it.\""
           },
           {
             "type": "p",
@@ -535,7 +535,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Claims and Evidence in Sources",
-          "raw": "<p><strong>Find the evidence a source uses.</strong> The Nahua account makes a claim: the sickness brought \"great desolation.\" Then it gives evidence you can point to, such as people who could no longer walk or even turn over. Naming the evidence a source uses to support its argument is the skill this topic practices.</p>"
+          "raw": "<p><strong>Find the evidence a source uses.</strong> A source makes a claim, then points to things that support it. In Section 3, José de Acosta claims that cattle multiplied in the Americas, and his evidence is a number: one fleet carried almost a hundred thousand hides. Read the Nahua account the same way: find its claim, then the evidence it points to. Naming the evidence a source uses to support its argument is the skill this topic practices.</p>"
         }
       },
       {
@@ -568,11 +568,11 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Some of what crossed came with people who were forced to cross. Enslaved Africans brought foods from home, including okra and rice, and many knew how to grow rice from farming it in West Africa. Okra was growing in Brazil by the 1650s."
+            "html": "Some of what crossed came with people who were forced to cross. Enslaved Africans brought foods from home, including okra and African rice, and many knew how to grow rice from farming it in West Africa. Okra was growing in Brazil by the 1650s. Enslaved people grew these foods in small garden plots to feed themselves, and the foods became part of cooking across the Americas, from Brazil to the Caribbean."
           },
           {
             "type": "p",
-            "html": "Sugarcane came from Afro-Eurasia, but the Caribbean and Brazil turned out to grow it better than almost anywhere. So Europeans built <span class=\"kt\">plantations</span>: huge farms growing one crop to sell. A crop grown to sell rather than to eat at home is a <span class=\"kt\">cash crop</span>. Plantations used <span class=\"kt\">coerced labor</span>, people forced to work, and on sugar plantations those people were overwhelmingly enslaved Africans. Most of it was shipped to Europe and the Middle East. Tobacco, an American plant, became a plantation crop the same way."
+            "html": "Sugarcane came from Afro-Eurasia, but the Caribbean and Brazil turned out to grow it better than almost anywhere. So Europeans built <span class=\"kt\">plantations</span>: huge farms growing one crop to sell. A crop grown to sell rather than to eat at home is a <span class=\"kt\">cash crop</span>. Plantations used <span class=\"kt\">coerced labor</span>, people forced to work, and on sugar plantations, by the 1600s, those people were overwhelmingly enslaved Africans. Most of the sugar was shipped to Europe. The College Board's summary for cash crops in this period is that they were exported mostly to Europe and the Middle East. Tobacco, an American plant, became a plantation crop the same way."
           },
           {
             "type": "p",
@@ -595,11 +595,11 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In southern China, officials promoted the sweet potato in 1594, a famine year. Near the mouth of the Congo River, in Central Africa, Portuguese traders brought cassava from Brazil, and farmers took it up because it survived drought and locusts. In Ireland, the potato had become a main food by the 1700s."
+            "html": "In southern China, officials promoted the sweet potato in 1594, a famine year. Near the mouth of the Congo River, in Central Africa, Portuguese traders brought cassava from Brazil, and farmers took it up. Cassava survives drought and locusts, which made it a food to fall back on. In Ireland, the potato had become a main food by the 1700s."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Nutrition</span> is how well food feeds the body. A family that planted these crops had more food, more kinds of food, and something to eat when the old harvest failed. Over the next two centuries, these crops helped populations grow in China and Europe, and they fed many people in Africa even as the slave trade carried millions away."
+            "html": "<span class=\"kt\">Nutrition</span> is how well food feeds the body. A family that planted these crops had more food, more kinds of food, and something to eat when the old harvest failed. Over the next two centuries, these crops helped populations grow in China and Europe, and they fed many people in parts of Africa even as the slave trade carried millions away."
           }
         ],
         "callout": {
@@ -631,7 +631,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "Once ships crossed the Atlantic and came back again and again, plants, animals, and germs crossed with them: some on purpose, some by accident, and some with enslaved Africans carried by force. Smallpox, measles, and malaria had catastrophic effects in many parts of the Americas, made worse by war, forced labor, and hunger, and the ships also carried disease vectors such as rats and mosquitoes. Horses, pigs, cattle, wheat, and sugarcane remade American land, enslaved Africans brought rice and okra, and cash crops such as sugar were grown on plantations with coerced labor and shipped mostly to Europe. Going east, maize, potatoes, cassava, and sweet potatoes became staple crops and improved nutrition in Afro-Eurasia. The ships carried more than anyone meant them to.",
+    "takeaway": "Once ships crossed the Atlantic and came back again and again, plants, animals, and germs crossed with them: some on purpose, some by accident, and some with enslaved Africans carried by force. Smallpox, measles, and malaria had catastrophic effects in many parts of the Americas, made worse by war, forced labor, and hunger, and the ships also carried disease vectors such as rats and mosquitoes. Horses, pigs, cattle, wheat, and sugarcane remade American land, enslaved Africans brought African rice and okra, and cash crops such as sugar were grown on plantations with coerced labor and exported mostly to Europe and the Middle East. Going east, maize, potatoes, cassava, and sweet potatoes became staple crops and improved nutrition in Afro-Eurasia. The ships carried more than anyone meant them to.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [

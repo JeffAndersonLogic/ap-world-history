@@ -889,7 +889,7 @@ module.exports = [
     flows: [
       { from: [-8, 38], via: [[-35, 30]], to: [-70, 20], label: 'West: animals, crops, germs' },
       { from: [-12, 10], via: [[-28, 2]], to: [-37, -8], label: 'West by force: enslaved Africans' },
-      { from: [-75, 26], via: [[-40, 42]], to: [-9, 46], label: 'East: maize, potatoes' },
+      { from: [-90, 23], via: [[-40, 42]], to: [-9, 46], label: 'East, on purpose: maize, potatoes' },
       { from: [-35, -10], via: [[-12, -14]], to: [11, -6.5], label: 'Cassava to Central Africa' }
     ],
     points: [
@@ -899,7 +899,7 @@ module.exports = [
       { at: [12.3, -6.0], label: 'Mouth of the Congo', note: 'cassava from Brazil' },
       { at: [118.6, 25.5], label: 'Fujian, China', note: 'sweet potato promoted, 1594' }
     ],
-    note: 'BeHistorical instructional map. Arrows show the direction things moved, not single voyages; coastlines are simplified. Sweet potatoes reached southern China from the Philippines by the 1590s, outside this map\'s arrows.'
+    note: 'BeHistorical instructional map. Arrows show direction, not single voyages; coastlines are simplified. Sweet potatoes reached southern China from Southeast Asia (Fujian from the Philippines, 1590s), a route not drawn here.'
   },
   {
     id: 'topic-4-4',

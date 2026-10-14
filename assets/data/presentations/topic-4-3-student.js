@@ -31,14 +31,14 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "prompt",
       "eyebrow": "The Question",
-      "title": "What did the ships carry, and what did it do on each side of the ocean?",
+      "title": "What caused the Columbian Exchange, and what did it do on each side of the ocean?",
       "subtitle": "Hold that question. Some of what crossed was chosen. Some of it was not.",
       "kc": "Unit 4: Learning Objective D"
     },
     {
       "kind": "action",
       "eyebrow": "Module 02 · First & 10 · 12 Minutes",
-      "title": "Read for two questions.",
+      "title": "Read with two questions in mind.",
       "subtitle": "For everything that crosses: how did it cross, and what did it do to the people at the other end?",
       "action": {
         "label": "Open First & 10",
@@ -224,7 +224,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "",
       "kc": "KC-4.1.V.C",
       "template": {
-        "quote": "These wild cattle have so multiplied in Santo Domingo ... that they troop together ... by thousands. ... In the fleet, the year 1587, there came from Santo Domingo 35,444 hides, and from New Spain 64,350.",
+        "quote": "These wild cattle have so multiplied in Santo Domingo ... that they troop together ... by thousands. ... In the fleet, the year 1587, there came from Santo Domingo 35,444 hides, and from New Spain [Mexico] 64,350.",
         "attribution": {
           "author": "José de Acosta",
           "work": "Natural and Moral History of the Indies",
@@ -279,15 +279,15 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "What they brought",
-            "text": "**Rice** and **okra**, and many knew how to grow rice"
+            "text": "**African rice** and **okra**, and many knew how to grow rice"
           },
           {
             "label": "Okra",
             "text": "Growing in **Brazil by the 1650s**"
           },
           {
-            "label": "Rice",
-            "text": "African rice grown by enslaved Africans in the Americas"
+            "label": "Effect",
+            "text": "Grown in garden plots to feed themselves; became part of cooking across the Americas"
           }
         ],
         "proves": "The exchange carried people's foods and knowledge, not only Europeans' plants."
@@ -301,8 +301,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "visual": {
           "url": "../assets/images/topics/4-3/frans-post-sugar-mill-1660s.jpg",
-          "alt": "Painting of a Brazilian landscape: on the right a large open sugar mill with workers, oxen and a cart; a planter's house on a hill; tropical trees and animals in the foreground",
-          "credit": "Frans Post, Brazilian Landscape with Sugar Mill, 1660s · National Gallery of Ireland · Public domain",
+          "alt": "Painting of a Brazilian sugar plantation: on the right the furnace house, where workers feed the boilers, with oxen and a cart; the edge of a planter's house on a hill; tropical trees and animals in the foreground",
+          "credit": "Frans Post, Brazilian Landscape, 1660s · National Gallery of Ireland · Public domain",
           "position": "97% 62%"
         },
         "caption": "Frans Post, painted in the Netherlands, 1660s",
@@ -318,11 +318,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "Plantation",
             "key": true,
-            "text": "One cash crop, worked by coerced labor, overwhelmingly enslaved Africans."
+            "text": "One cash crop, worked by coerced labor: by the 1600s, overwhelmingly enslaved Africans."
           },
           {
             "label": "Shipped out",
-            "text": "Most of it goes to Europe and the Middle East."
+            "text": "Most of the sugar goes to Europe."
           }
         ]
       }
@@ -330,20 +330,20 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "split-scenes",
       "eyebrow": "Going East",
-      "title": "American crops became staple foods across Afro-Eurasia.",
+      "title": "American crops reached the far side of Afro-Eurasia.",
       "kc": "KC-4.1.V.B",
       "template": {
         "left": {
           "name": "England, 1597",
           "items": [
-            "Named \"Turkie Corne\" and \"Indian\" wheat on one page",
+            "Named \"Corne of Asia\" and \"Turkie Corne\"",
             "Gerard thought it came from Turkish lands and America"
           ],
           "visual": {
             "url": "../assets/images/topics/4-3/gerard-herball-turkie-corne-1597.jpg",
             "alt": "Hand-colored woodcut page from Gerard's Herball showing two maize plants and two ears of corn, labeled Turkie Corne and Turkie Wheate",
             "credit": "John Gerard, The Herball, London, 1597 · Public domain",
-            "position": "50% 25%"
+            "position": "50% 5%"
           }
         },
         "right": {
@@ -361,7 +361,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         },
         "both": [
           "American plants, recorded far from the Americas",
-          "Grown where the old crops struggled"
+          "Named as coming from somewhere else"
         ]
       }
     },
@@ -369,7 +369,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "cause-chain",
       "eyebrow": "Going East · The Effect",
       "title": "Why American crops meant better nutrition.",
-      "footer": "Over two centuries, these crops helped populations grow in China and Europe, and fed many in Africa.",
+      "footer": "Over two centuries, these crops helped populations grow in China and Europe, and fed many in parts of Africa.",
       "kc": "KC-4.1.V.D",
       "template": {
         "steps": [
@@ -406,7 +406,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "url": "../assets/images/instructional-maps/topic-4-3.svg",
         "alt": "Map with four arrows: animals, crops and germs west from Europe to the Caribbean; enslaved Africans west from West Africa to Brazil; maize and potatoes east to Europe; cassava from Brazil to Central Africa"
       },
-      "footer": "1 West: animals, crops, germs · 2 West by force · 3 East: maize, potatoes · 4 Cassava to Central Africa",
+      "footer": "1 West: animals, crops, germs · 2 West by force · 3 East, on purpose: maize, potatoes · 4 Cassava to Central Africa",
       "kc": "KC-4.1.V"
     },
     {
@@ -458,7 +458,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "On purpose or by force",
             "cells": [
-              "Horses, pigs, cattle, wheat, sugarcane; rice and okra with enslaved Africans",
+              "Horses, pigs, cattle, wheat, sugarcane; African rice and okra with enslaved Africans",
               "Maize, potatoes, cassava, sweet potatoes"
             ]
           },
@@ -480,10 +480,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "sharpen",
       "eyebrow": "Sharpen the Claim",
       "title": "",
-      "footer": "A cause, then one effect in each hemisphere, each with a named example.",
+      "footer": "A cause, then one effect in each hemisphere, each with a named example and the people it affected.",
       "template": {
         "weak": "The Columbian Exchange was a trade of plants and animals.",
-        "strong": "**Ships crossing and coming back** carried living things, **some by accident**: smallpox was **catastrophic** in the Americas, while **maize and potatoes** improved nutrition in Afro-Eurasia."
+        "strong": "**Ships crossing and coming back** carried smallpox **by accident** and horses **on purpose**: **horses** let the **Comanche** build a new life on the Plains, while **sweet potatoes** fed **farmers in southern China** in famine years."
       }
     },
     {

@@ -133,7 +133,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Going West by Accident: Disease and Its Causes",
         bullets: [
-          "**Smallpox** reached the Caribbean in 1518 and Mexico in 1520. Measles followed, and malaria, carried by mosquitoes, came with Europeans and enslaved Africans. These diseases had circulated in Afro-Eurasia for a long time; in the Americas they were new.",
+          "**Smallpox** reached the Caribbean in 1518 and Mexico in 1520. Measles followed, and malaria, which mosquitoes spread, came in the blood of infected Europeans and enslaved Africans. These diseases had circulated in Afro-Eurasia for a long time; in the Americas they were new.",
           "In June 1520 the people of **Tenochtitlan** drove the Spaniards out of their city. That autumn smallpox swept through it. The Nahua account later written down for the friar Bernardino de Sahagún says the sickness lasted sixty days, that many \"just starved to death,\" and that \"the Mexica warriors were greatly weakened by it\" when the Spaniards returned to besiege the city in 1521.",
           "Why so deadly? **First**, nobody in the Americas had had these diseases before, so no adult had survived them and become immune, and almost everyone fell sick at the same time, leaving nobody to farm, cook, or care for the sick. **Second**, the diseases came with war, forced labor, hunger, and people driven from their homes. The historian David S. Jones argues that conditions like these, created by colonization, shaped how many people died. It is a myth that Indigenous Americans were simply born weak.",
           "Historians argue about the numbers. One careful estimate is that central Mexico fell from about 15 million people in 1519 to about 1.5 million a century later, and many regions lost most of their people. The College Board's words are \"catastrophic effects in many areas.\""
@@ -150,12 +150,12 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "**Pigs and cattle** multiplied fast. José de Acosta reported in 1590 that wild cattle on Santo Domingo roamed \"by thousands,\" and that one fleet in 1587 carried almost a hundred thousand cattle hides to Spain from the Caribbean and Mexico. One historian argues that in one valley of central Mexico, sheep grazed the hillsides bare.",
           "**Horses** had died out in the Americas thousands of years earlier. Brought back by the Spanish, they spread north, and by the early 1700s Great Plains peoples such as the **Comanche** had built new ways of life on horseback. An effect of the exchange could be an opportunity as well as a disaster.",
-          "**Enslaved Africans**, carried across the Atlantic by force, brought foods such as **rice and okra**, and many knew how to grow rice. Okra was growing in Brazil by the 1650s.",
-          "**Sugarcane** came from Afro-Eurasia but grew best in the Caribbean and Brazil. Europeans grew it as a **cash crop** on **plantations** worked by **coerced labor**, overwhelmingly enslaved Africans, and shipped most of it to Europe and the Middle East. Before 1492, Europeans had already grown sugar with enslaved workers, including Canary Islanders and Africans, on Atlantic islands such as Madeira, so disease alone did not cause African slavery in the Americas. How that forced labor worked is Topic 4.4."
+          "**Enslaved Africans**, carried across the Atlantic by force, brought foods such as **African rice and okra**, and many knew how to grow rice. Okra was growing in Brazil by the 1650s. Enslaved people grew these foods in small garden plots to feed themselves, and the foods became part of cooking across the Americas, from Brazil to the Caribbean.",
+          "**Sugarcane** came from Afro-Eurasia but grew best in the Caribbean and Brazil. Europeans grew it as a **cash crop** on **plantations** worked by **coerced labor**, by the 1600s overwhelmingly enslaved Africans, and shipped most of the sugar to Europe. Before 1492, Europeans had already grown sugar with enslaved workers, including Canary Islanders and Africans, on Atlantic islands such as Madeira, so disease alone did not cause African slavery in the Americas. How that forced labor worked is Topic 4.4."
         ],
         image: {
-          title: "A Sugar Mill in Dutch Brazil",
-          caption: "Oil painting by the Dutch artist Frans Post, 1660s, painted in the Netherlands for European buyers after his years in Brazil. National Gallery of Ireland.",
+          title: "A Sugar Plantation in Dutch Brazil",
+          caption: "Brazilian Landscape, an oil painting by the Dutch artist Frans Post, 1660s, painted in the Netherlands for European buyers after his years in Brazil. On the right, workers feed the furnaces that boil cane juice into sugar. National Gallery of Ireland.",
           url: "https://commons.wikimedia.org/wiki/Special:FilePath/Frans%20Post%20-%20Engenho%20de%20A%C3%A7%C3%BAcar%20%28Dublin%29.jpg?width=1200",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Frans_Post_-_Engenho_de_A%C3%A7%C3%BAcar_(Dublin).jpg"
         }
@@ -164,7 +164,7 @@ window.BEHISTORICAL_LESSON = {
         title: "Going East: New Staple Crops and Better Nutrition",
         bullets: [
           "American crops became **staple crops**, the main everyday foods, in parts of Europe, Asia, and Africa because they grew where the old crops struggled: **maize** on dry land, **potatoes** in cold, wet ground, **cassava** in poor soil and drought, **sweet potatoes** on hillsides too steep for rice.",
-          "In southern China, officials promoted the sweet potato in 1594, a famine year. By the 1740s, an album made for a Qing official in Taiwan called it \"truly a help in years of bad harvest.\" Near the mouth of the Congo River, Portuguese traders brought cassava from Brazil, and farmers took it up because it survived drought and locusts. In Ireland, the potato had become a main food by the 1700s.",
+          "In southern China, officials promoted the sweet potato in 1594, a famine year. By the 1740s, an album made for a Qing official in Taiwan called it \"truly a help in years of bad harvest.\" Near the mouth of the Congo River, Portuguese traders brought cassava from Brazil, and farmers took it up; it survives drought and locusts, which made it a food to fall back on. In Ireland, the potato had become a main food by the 1700s.",
           "**Nutrition** means how well food feeds the body. More food, more kinds of food, and a fallback when the old harvest failed meant better nutrition, and over two centuries these crops helped populations grow in China and Europe, and they fed many people in Africa even as the slave trade carried millions away.",
           "Put both directions together: one connection, two very different results. In the Americas, catastrophic disease and land remade by new animals and plantations. In Afro-Eurasia, new staple crops and better nutrition."
         ],
