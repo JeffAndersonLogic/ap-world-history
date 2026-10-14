@@ -238,6 +238,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "",
       "kc": "KC-4.1.II.A",
       "template": {
+        "place": "top",
         "line": "To get home, sail away from land. With no coast in sight, pilots trusted the compass, the wind and, more and more, their latitude readings.",
         "visual": {
           "url": "../assets/images/topics/4-1/4.1%20-%20Volta%20do%20Mar.jpg",

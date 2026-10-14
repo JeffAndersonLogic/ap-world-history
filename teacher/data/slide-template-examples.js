@@ -115,7 +115,7 @@ window.BH_SLIDE_TEMPLATE_EXAMPLES=[
     kind:'frame-stepin',template:{visual:market,lines:['You just stepped off a ship in Malacca. You speak none of the languages around you.'],question:'How do you trade?',note:'Imagine first. Then we check your ideas against real evidence.'}}},
   {group:'Image frames',name:'Scene beside evidence',note:'An AI scene next to a real source, labeled differently.',slide:{
     kind:'frame-evidence',eyebrow:'Topic 2.3 · Scene and Evidence',title:'The picture sets the scene. The map shows the pattern.',template:{scene:dhow,evidence:monsoonMap}}},
-  {group:'Image frames',name:'Movie subtitle',note:'Full image, one line of narration.',slide:{
+  {group:'Image frames',name:'Movie subtitle',note:'Full image, one line of narration. place: \'top\' sets the line in the sky when the subject sits low in the picture.',slide:{
     kind:'frame-subtitle',eyebrow:'Topic 2.2 · Mongol Expansion',template:{visual:siege,line:'Horsemen could not climb walls. So the Mongols brought in Chinese and Persian engineers who could.'}}},
   {group:'Image frames',name:'Storyboard',note:'Three to five scenes on a film strip.',slide:{
     kind:'frame-storyboard',eyebrow:'Topic 2.2 · Storyboard',title:'The Mongol story in four scenes.',template:{panels:[{visual:archers,title:'Conquer',text:'Mounted archers win in the open.'},{visual:siege,title:'Take cities',text:'Borrowed engineers break the walls.'},{visual:cityGate,title:'Govern',text:'Officials record, tax and rule.'},{visual:caravan,title:'Connect',text:'Protected roads carry trade.'}]}}},

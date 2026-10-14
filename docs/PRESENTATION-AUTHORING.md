@@ -284,6 +284,14 @@ Standing rule:
 
 > **Do not let an available image determine the lesson. Determine the lesson first, then find or create the visual the story deserves.**
 
+### Cinematic question and landing slides
+
+**Standing rule since 2026-10-14 (Jeff): every deck opens and closes on a cinematic picture.** The question slide (the first slide after BeReady, slide 3 in most decks) and the landing slide (the last) each carry a photorealistic cinematic historical reconstruction, or a real historical scene, under their words. Never words alone and never a map: the map belongs on a slide of its own. A multi-case topic may open on a triptych of pictures the deck already has, one per case.
+
+Draw them with `frame-subtitle`, as Topic 3.4 does. Compose each picture so its words do not cover its subject: the caption sits along the bottom, or in the sky with `place: 'top'` when the subject sits low (the Topic 4.1 caravel was hidden under its own caption until this option existed). Ask the generator for a calm band where the words will go, and keep the subject out of the bottom-right corner, which is trimmed off Gemini files to remove its mark.
+
+`scripts/test/teaching-os-architecture.test.js` enforces this. Slides that predate the rule are listed in its `OWED` set, a ratchet that only shrinks, and `docs/QUESTION-AND-LANDING-IMAGE-PROMPTS.md` has a prompt for each one.
+
 Projected slides should feel closer to museum exhibits than textbook pages: a clear argument, purposeful visual evidence, and only enough text to orient the room.
 
 Teacher Intelligence carries the depth.

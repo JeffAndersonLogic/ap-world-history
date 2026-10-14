@@ -335,6 +335,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'volta', kind: 'frame-subtitle', eyebrow: 'The Volta do Mar',
       kc: 'KC-4.1.II.A',
       template: {
+        place: 'top',
         line: 'To get home, sail away from land. With no coast in sight, pilots trusted the compass, the wind and, more and more, their latitude readings.'
       },
       notes: {

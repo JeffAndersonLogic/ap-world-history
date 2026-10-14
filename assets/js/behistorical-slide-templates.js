@@ -350,9 +350,12 @@ function fEvidence(s){
   const t=s.template||{},ev=t.evidence||{};
   return board('frame-evidence','paper',pad(head(s)+`<div class="bht-fe"><div class="c">${frame(t.scene,'bht-fe-img',{tagPos:'tl'})}<div class="k">${esc(t.sceneLabel||'Imagine it')}</div></div><div class="c">${frame(ev,'bht-fe-img ev',{fit:'contain',tagPos:'tl'})}<div class="k ev">${esc(t.evidenceLabel||'Reason from it')}</div></div></div>`,'tight'));
 }
+/* `place: 'top'` sets the line in the sky instead of along the bottom, for a
+   picture whose subject sits low in the frame (Topic 4.1's lone caravel was
+   covered by its own caption). The AI label then moves to the bottom corner. */
 function fSubtitle(s){
-  const t=s.template||{};
-  return board('frame-subtitle','dark',`${frame(t.visual,'bht-full')}<div class="bht-sub-veil"></div>${s.eyebrow?`<div class="bht-sub-top"></div><div class="bht-sub-eb">${eyebrow(s)}</div>`:''}<div class="bht-sub-line"><p>${rich(t.line||s.title)}</p>${s.subtitle?`<p class="s">${rich(s.subtitle)}</p>`:''}</div>`);
+  const t=s.template||{},top=t.place==='top';
+  return board('frame-subtitle','dark',`${frame(t.visual,'bht-full',top?{tagPos:'br'}:{})}<div class="bht-sub-veil${top?' up':''}"></div>${s.eyebrow?`<div class="bht-sub-top"></div><div class="bht-sub-eb">${eyebrow(s)}</div>`:''}<div class="bht-sub-line${top?' up':''}"><p>${rich(t.line||s.title)}</p>${s.subtitle?`<p class="s">${rich(s.subtitle)}</p>`:''}</div>`);
 }
 /* A strip of small pictures carries one label for the strip: a label per
    frame is cut off by frames this narrow. A strip that mixes AI images with
@@ -1175,6 +1178,8 @@ const CSS=`
 .bht-sub-top{position:absolute;left:0;right:0;top:0;height:150u;background:linear-gradient(180deg,rgba(5,6,6,.8),rgba(5,6,6,0))}
 .bht-sub-eb{position:absolute;left:76u;top:56u;text-shadow:0 2u 10u rgba(0,0,0,.9)}
 .bht-sub-line{position:absolute;left:140u;right:140u;bottom:64u;text-align:center}
+.bht-sub-veil.up{top:0;bottom:auto;height:330u;background:linear-gradient(0deg,rgba(5,6,6,0),rgba(5,6,6,.82) 55%)}
+.bht-sub-line.up{bottom:auto;top:104u}
 .bht-sub-line p{font-size:30u;line-height:1.45;color:#fffdf7;text-shadow:0 2u 14u rgba(0,0,0,.8)}
 .bht-sub-line p.s{margin-top:10u;font-size:21u;line-height:1.45;color:#e6d3b3}
 .bht-sbd-h{padding-left:20u;display:flex;flex-direction:column;gap:12u}

@@ -43,7 +43,7 @@ in this folder, the schedule, and git history.
 | 3.2 | 2026-10-20 | 2026-10-21 | Never | - | - |
 | 3.3 | 2026-10-22 | 2026-10-23 | Never | - | - |
 | 3.4 | 2026-10-26 | 2026-10-27 | Never | - | - |
-| 4.1 | 2026-10-28 | 2026-10-29 | Fresh | 2026-10-12 | `topic-4-1-2026-10-12.md` |
+| 4.1 | 2026-10-28 | 2026-10-29 | Stale | 2026-10-12 | `topic-4-1-2026-10-12.md` |
 | 4.2 | 2026-10-30 | 2026-11-02 | Fresh | 2026-10-13 | `topic-4-2-2026-10-13.md` |
 | 4.3 | 2026-11-03 | 2026-11-04 | Fresh | 2026-10-14 | `topic-4-3-2026-10-14.md` |
 | 4.4 | 2026-11-05 | 2026-11-06 | Never | - | - |
@@ -56,8 +56,8 @@ in this folder, the schedule, and git history.
 
 | State | Topics | Meaning |
 |---|---|---|
-| Fresh | 3 | audited, and nothing has changed since |
-| Stale | 4 | the topic changed after its audit |
+| Fresh | 2 | audited, and nothing has changed since |
+| Stale | 5 | the topic changed after its audit |
 | Review | 0 | a file shared across the unit changed after its audit |
 | Never | 25 | no audit record exists |
 
