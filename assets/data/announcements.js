@@ -1945,18 +1945,16 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain one labor system that continued in a new form and one that was new, and how each supplied workers for farms or mines.', label: 'Economic Systems' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
-        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.4 module you did not complete in class.', due: 'Monday, November 9' }
+      ],
+      homeworkDue: 'Monday, November 9',
+      dueDate: '2026-11-09'
     },
     /* 2026-11-06  <-  lesson-4-4-maritime-empires-established.js */
     {
@@ -1975,18 +1973,16 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain one labor system that continued in a new form and one that was new, and how each supplied workers for farms or mines.', label: 'Economic Systems' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
-        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.4 module you did not complete in class.', due: 'Tuesday, November 10' }
+      ],
+      homeworkDue: 'Tuesday, November 10',
+      dueDate: '2026-11-10'
     },
     /* 2026-11-09  <-  lesson-4-5-maritime-empires-maintained.js */
     {

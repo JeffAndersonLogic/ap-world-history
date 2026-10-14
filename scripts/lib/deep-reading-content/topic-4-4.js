@@ -3,29 +3,31 @@
 /**
  * Topic 4.4, Maritime Empires Established: the deep reading.
  *
- * Why this exists. The success criteria ask for three distinct models of empire,
- * the Portuguese trading post network, the Spanish territorial conquest, and the
- * chartered joint-stock company, and they ask for the comparison between them.
- * The First & 10 names all three. What it has no room for is the reason each one
- * took the shape it did, and that reason is the whole topic: none of these were
- * preferences. Each was the arrangement that matched what a state could actually
- * project across an ocean, against the particular thing it wanted and the
- * particular resistance it met.
+ * Why this exists. The success criteria ask for a change and a continuity in
+ * each of three places: who ruled, trade and labor, and slavery. The First & 10
+ * tells that story. What it has no room for is the mechanism behind each case:
+ * why a small kingdom could hold a coast and not a country, how China and Japan
+ * kept control of trade, how African kings used the trade to grow stronger, how
+ * an old labor duty became a colonial one, and what made plantation slavery
+ * different from the older slavery it grew beside.
+ *
+ * Rebuilt from the 4.4 story (docs/TOPIC-4-4-STORY-DRAFT.md) on 2026-10-14.
+ * The old chapter, "Three Ways to Hold an Ocean," was organized around three
+ * models of empire, two of which belong elsewhere: the chartered joint-stock
+ * company is Topic 4.5's, and the conquests of Tenochtitlan and Cajamarca are no
+ * Unit 4 topic's. Its strongest material, on the cartaz and the Estado da Índia
+ * and on encomienda, is kept in sections 01 and 04.
  *
  * Three things carried deliberately:
  *
- *   1. The Portuguese did not conquer Asia because they could not. Section 01
- *      makes that a mechanism, ships and guns beat harbor defenses and lost to
- *      field armies, rather than a judgment about ambition. A student who has
- *      that can explain Goa and Malacca without implying Asia was weak.
- *   2. Conquest in the Americas was overwhelmingly done by Indigenous armies
- *      with Indigenous motives, on a population that section 4.3 explains was
- *      collapsing. The lone-conquistador story is not a simplification, it is
- *      an error about who did the fighting.
- *   3. The joint-stock company is the genuinely new institution of the unit, and
- *      the point about it is not that it raised money. It is that it held
- *      sovereign powers, which is why the comparison card in section 05 is the
- *      most useful sentence in this chapter.
+ *   1. Asia set terms. Section 02 is the second sentence of KC-4.3.II.A.i, which
+ *      the old pages never taught: Ming China at Macau and Tokugawa Japan from
+ *      1635 to 1641.
+ *   2. African states had power in the trade, and some used it to sell captives.
+ *      Section 03 holds both halves together, because a student who learns only
+ *      one of them learns a myth.
+ *   3. Slavery did not begin in 1500. Section 05 sets the older forms beside the
+ *      plantation economy, as the CED pairs them.
  */
 
 module.exports = {
@@ -34,23 +36,23 @@ module.exports = {
   sourceFile: 'deep-reading-topic-4-4-maritime-empires-established.html',
   lessonFile: 'lesson-4-4-maritime-empires-established.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 4.4: Three Ways to Hold an Ocean',
+  docTitle: 'BeHistorical | Deep Reading | Topic 4.4: Who Set the Terms',
   eyebrow: 'Topic 4.4 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
-  titleHtml: 'Three Ways to Hold an <em>Ocean</em>',
-  deck: `Portugal took ports and taxed everyone else&rsquo;s shipping. Spain took land and the people on it. The Dutch and English chartered private companies and gave them the powers of a state. Three empires built in the same century out of the same voyages, and the differences are not national character. They are answers to what each state wanted, what it could reach, and who was standing in the way.`,
-  meta: ['Five sections', 'Ports, conquest, government, companies, comparison', 'Read alongside the First & 10'],
-  footerNote: 'Topic 4.4 &nbsp;·&nbsp; Three Ways to Hold an Ocean &nbsp;·&nbsp; Companion to the First &amp; 10',
+  titleHtml: 'Who Set the <em>Terms</em>',
+  deck: `Between 1450 and 1750 rival European states built empires held together by ships: forts on the coasts of Africa and Asia, and colonies in the Americas. But in much of the world someone else set the terms. This chapter explains how a trading post worked, how China and Japan kept control, how Kongo and Asante grew strong, how colonial labor reused old systems and invented new ones, and how plantation slavery differed from the older slavery it grew beside.`,
+  meta: ['Five sections', 'Posts, Asia, Africa, labor, slavery', 'Read alongside the First & 10'],
+  footerNote: 'Topic 4.4 &nbsp;·&nbsp; Who Set the Terms &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',
-    intro: `The success criteria ask you to explain three models and compare them. Sections 01, 02 and 04 are the three; section 03 is how the Spanish one was actually run once the fighting stopped, which is the part most answers skip; section 05 is the comparison, written out as sentences.`,
+    intro: `The College Board asks three things of this topic: how states were built, what changed and continued in trade and labor, and what changed and continued in slavery. Sections 01 to 03 answer the first, sections 03 and 04 the second, and section 05 the third. Every section ends with a change and a continuity you can use.`,
     steps: [
-      `<b>01 The trading post empire:</b> the cartaz, the chokepoints, and why Portugal never marched inland.`,
-      `<b>02 Conquest:</b> Tenochtitlan and Cajamarca, and who actually did the fighting.`,
-      `<b>03 Governing what was taken:</b> encomienda, viceroys, audiencias, and the limits of an order from Madrid.`,
-      `<b>04 The company as a state:</b> the VOC, the English East India Company, and the powers in a charter.`,
-      `<b>05 The three models side by side:</b> what each was for, and what each could not do.`,
-      `<b>Then the closing section</b>, which turns all of it into comparison sentences you can write.`
+      `<b>01 The empire of chokepoints:</b> the rivalries, the trading posts, and the cartaz.`,
+      `<b>02 Asia's terms:</b> Macau under Ming officials, and Japan from 1635 to 1641.`,
+      `<b>03 Kongo and Asante:</b> two African states that grew stronger through the trade.`,
+      `<b>04 Work in the colonial Americas:</b> the mit’a reused, and the new labor systems.`,
+      `<b>05 Slavery, old and new:</b> what continued in Africa, and what the plantations changed.`,
+      `<b>Then the closing section</b>, which turns all of it into continuity-and-change sentences you can write.`
     ]
   },
 
@@ -62,265 +64,262 @@ module.exports = {
       accent: 'gold',
       name: 'The Empire of Chokepoints',
       navLabel: 'Trading posts',
-      dates: 'c. 1500 to 1600 &nbsp;·&nbsp; Estado da India',
-      thesis: `Portugal had perhaps a million and a half people and no army capable of taking territory in Asia. What it had was ships that carried guns better than anyone else&rsquo;s, so it built an empire out of the only thing that advantage could hold: the narrow places every ship has to pass.`,
+      dates: 'c. 1480 to 1650 &nbsp;·&nbsp; Rivalry, forts, and the cartaz',
+      thesis: `Portugal had perhaps a million and a half people and no army capable of taking territory in Asia. What it had was ships that carried guns, so it built an empire out of the only thing that advantage could hold: the narrow places every ship has to pass.`,
       parts: [
+        {
+          heading: 'Why rivals built empires at all',
+          blocks: [
+            { p: `The College Board puts the cause in three words: the maritime empires were "driven largely by political, religious, and economic rivalries." Each word does work. <b>Political:</b> Portugal and Spain divided their claims in the Treaty of Tordesillas in <span class="num">1494</span>; the Dutch Republic fought Spain for its independence from <span class="num">1568</span>; England and France fought each other for colonies through the 1600s and 1700s. <b>Religious:</b> papal bulls of the 1450s framed Portuguese expansion as war on Muslim powers and a Christian mission, and after the Reformation, Protestant England and the Dutch fought Catholic Spain. <b>Economic:</b> West African gold, Asian spices and American sugar, and the profits of carrying them.` },
+            { p: `Rivalry also explains why the empires kept changing hands. When one state found a route or a rich coast, the others came after it. The Dutch took Elmina from Portugal in <span class="num">1637</span> and Malacca in <span class="num">1641</span>; the English and French built colonies of their own in North America and the Caribbean in the early 1600s.` }
+          ]
+        },
         {
           heading: 'What Portugal actually seized',
           blocks: [
-            { p: `Look at the map of the Portuguese <span class="kt">Estado da India</span> and the pattern is immediate. <b>Goa</b>, taken in <span class="num">1510</span> and made the administrative capital of the whole eastern enterprise. <b>Malacca</b>, taken in <span class="num">1511</span>, which controls the strait every ship between the Indian Ocean and the South China Sea must thread. <b>Hormuz</b>, taken in <span class="num">1515</span>, at the mouth of the Persian Gulf. Later <b>Macau</b>, leased from <span class="num">1557</span>, at the edge of the Chinese market. Add fortified factories down the East African coast and along the Indian shore.` },
-            { p: `Every one of them is a port, and most of them are at a strait. None of them is a province. The Portuguese held perhaps fifty fortified points and almost no hinterland, which is exactly what a network built to tax movement rather than to own land looks like.` },
-            { p: `The instrument was the <span class="kt">cartaz</span>, a pass that a merchant ship bought from the Portuguese, which committed the ship to calling at a Portuguese port and paying duties there. A ship sailing without one was liable to seizure by Portuguese patrols. The Estado da India therefore did not need to trade very much itself to make money; it needed to make Asian and Arab merchants who had been sailing these routes for centuries pay for the privilege of continuing.` }
+            { p: `Portugal's first great post was in Africa: the fortress of São Jorge da Mina, Elmina, built on the Gold Coast in <span class="num">1482</span> to buy gold. In Asia, Afonso de Albuquerque took <b>Goa</b> in <span class="num">1510</span> and made it the capital of the <span class="kt">Estado da Índia</span>, Portugal's network of eastern posts. <b>Malacca</b>, taken in <span class="num">1511</span>, controls the strait every ship between the Indian Ocean and the South China Sea must thread. <b>Hormuz</b>, taken in <span class="num">1515</span>, sits at the mouth of the Persian Gulf. Add fortified posts down the East African coast and along the Indian shore.` },
+            { p: `Every one of them is a port, and most sit at a strait. None of them is a province. The Portuguese held dozens of fortified points and almost no land behind them, which is exactly what a network built to tax movement, rather than to own land, looks like. A <span class="kt">trading post</span> made money for the king who backed it and the merchants who traded through it, the College Board's words, in two ways: by buying goods where they were produced, and by taxing other people's ships.` },
+            { p: `The tax was the <span class="kt">cartaz</span>, a pass that a merchant ship bought from the Portuguese, which committed it to calling at a Portuguese port, paying duties there and carrying none of the goods Portugal claimed for itself. A ship sailing without one could be seized by Portuguese patrols.` }
           ]
         },
         {
           heading: 'Why ports and not provinces',
           blocks: [
-            { p: `This is the mechanism the chapter turns on. Portuguese naval artillery, as the Topic 4.1 chapter sets out, could out-shoot the fleets it met in the Indian Ocean and could batter a harbor, which is why Diu in <span class="num">1509</span> broke the coalition assembled against them. But a broadside cannot occupy a river valley. Ashore, and out of range of the guns, the Portuguese faced Mughal, Safavid, Ottoman and Chinese states with field armies, revenues and populations many times their own.` },
-            { p: `So the Portuguese advantage was real and it was narrowly shaped: decisive at sea and at the water's edge, negligible fifty miles inland. Their empire took the shape of the advantage. That is the sentence to write, because it explains the map instead of describing it.` },
-            { p: `It also explains what Portugal could not do. The cartaz system leaked continuously; the Indian Ocean is enormous, Portuguese patrol capacity was small, and merchants evaded, bribed and rerouted. Gujarati, Arab, Malay and Chinese shipping never stopped, and the Topic 4.8 chapter is largely about how much of the old system carried on underneath the new one. The Estado da India skimmed a trade it never controlled.` },
+            { p: `This is the mechanism the section turns on. Portuguese naval artillery could out-shoot the fleets it met in the Indian Ocean and could batter a harbor, which is how the Portuguese won at Diu in <span class="num">1509</span>. But a ship's guns cannot occupy a river valley. Ashore, out of range of the guns, the Portuguese faced Mughal, Safavid, Ottoman and Chinese states with armies, revenues and populations many times their own. Their empire took the shape of their advantage: decisive at sea and at the water's edge, small fifty miles inland.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that Portugal "took over Indian Ocean trade." It taxed a share of it from a string of forts, and it did so at the sufferance of much larger states that found the arrangement tolerable or not worth the cost of ending. When a major Asian power did decide to end it, it usually could: Ottoman fleets contested the Red Sea, Aceh and Calicut fought the Portuguese for decades, and Oman took Muscat in <span class="num">1650</span> and then Portuguese ports down the Swahili coast. An empire that can be pushed out of a region by a regional power was never in control of it.`
+              html: `Do not write that Portugal "took over Indian Ocean trade." It taxed a share of it from a string of forts, and it did so alongside much larger states that found the arrangement tolerable or not worth the cost of ending. When a regional power did decide to push back, it often could: Ottoman fleets contested the Red Sea, Aceh and Calicut fought the Portuguese for decades, and Oman took Muscat in <span class="num">1650</span> and Mombasa in <span class="num">1698</span>.`
             } }
           ]
         }
       ],
       useThis: {
-        tool: `The cartaz. <em>The mechanism is that a naval force too small to occupy territory can still monetize a trade route by selling permission to use it, because a chokepoint concentrates all traffic into a stretch of water that a few armed ships can patrol, so the revenue comes from other people&rsquo;s cargo rather than from land or from goods the empire owns.</em>`,
-        limit: `Enforcement was patchy across an ocean that size, evasion was constant, and the system collapsed wherever a regional power decided to remove it, as Oman did at Muscat in 1650.`,
-        comparison: `Against the <em>Srivijaya</em> model in Topic 2.3: a state at the Malacca Strait taxing passing shipping is a much older idea than the Portuguese, who seized the same strait for the same reason. What was new was the artillery that let a distant, small power hold the chokepoint rather than a local one.`
+        tool: `The cartaz. <em>A naval force too small to occupy territory can still make money from a trade route by selling permission to use it, because a strait concentrates all traffic into a stretch of water that a few armed ships can patrol: the change was a European navy taxing Asian shipping; the continuity was that the shipping, and the merchants, went on.</em>`,
+        limit: `Enforcement was patchy across an ocean that size, merchants evaded and bribed, and the system collapsed wherever a regional power decided to remove it, as Oman did at Muscat in 1650.`,
+        comparison: `Against <em>Srivijaya</em> in Topic 2.3: a state at the Strait of Malacca taxing passing ships is a much older idea than the Portuguese, who seized the same strait for the same reason. What was new was a distant, small power holding the strait with guns rather than a local one.`
       },
       terms: [
-        ['Estado da India', 'The Portuguese network of fortified ports and factories from East Africa to Macau, governed from Goa.'],
-        ['Trading post empire', 'An empire of coastal strongpoints that taxes and directs trade rather than governing territory or population.'],
+        ['Maritime empire', 'An empire held together by ships and sea routes, as the Portuguese, Spanish, Dutch, French and British empires of this period were.'],
+        ['Trading post', 'A small fortified base where a foreign state\'s merchants buy and sell, such as Elmina, Goa or Malacca.'],
+        ['Estado da Índia', 'The Portuguese network of fortified ports in the Indian Ocean and beyond, governed from Goa.'],
         ['Cartaz', 'The pass Portugal sold to merchant ships, requiring them to call at a Portuguese port and pay duties there.'],
-        ['Chokepoint', 'A narrow passage all shipping on a route must use, which lets a small naval force tax a large trade.'],
-        ['Factory', 'A permanent overseas trading post staffed by company or crown agents; some were fortified or sat inside a fort and others were not.']
+        ['Chokepoint', 'A narrow passage all shipping on a route must use, which lets a small naval force tax a large trade.']
       ]
     },
 
     // ── 02 ────────────────────────────────────────────────────────────────────
     {
-      id: 'conquest',
+      id: 'asia',
       num: '02',
       accent: 'rust',
-      name: 'Who Actually Did the Fighting',
-      navLabel: 'Conquest',
-      dates: 'c. 1519 to 1572 &nbsp;·&nbsp; Mexico and Peru',
-      thesis: `Two of the largest states in the Americas fell to expeditions of a few hundred Spaniards, and the explanation is not that a few hundred Spaniards defeated them. It is that both empires had internal enemies willing to supply armies, and that the epidemic of Topic 4.3 arrived at the decisive moment.`,
+      name: 'Asia\'s Terms',
+      navLabel: 'China and Japan',
+      dates: '1557 to 1641 &nbsp;·&nbsp; Macau, Nagasaki, Dejima',
+      thesis: `The strongest states in Asia let Europeans trade on Asian terms. Ming China allowed a small Portuguese settlement under Chinese officials, and Tokugawa Japan, fearing Christianity, cut European trade down to one Dutch post on an island in Nagasaki harbor. Europe's empires grew; in China and Japan they did not decide how far.`,
       parts: [
         {
-          heading: 'Tenochtitlan',
+          heading: 'Macau under Ming officials',
           blocks: [
-            { p: `Hernan Cortes landed in <span class="num">1519</span> with roughly five hundred men. The Mexica capital of Tenochtitlan was among the largest cities in the world, and the Mexica state governed millions through a tribute system, described in the Topic 1.4 chapter, that extracted goods and captives from subject peoples who had been conquered within living memory.` },
-            { p: `That tribute system is the opening. The Tlaxcalans, never conquered and permanently at war with the Mexica, fought the Spanish first and then allied with them, and other tributary cities joined as the campaign advanced. The army that besieged Tenochtitlan in <span class="num">1521</span> was overwhelmingly Indigenous, with tens of thousands of allied warriors, and it was fighting a war that predated the Spanish arrival and had its own aims.` },
-            { p: `Smallpox reached the city in <span class="num">1520</span>, between the Spanish expulsion on the Noche Triste and the final siege. It killed a large part of the population and, critically, the ruler Cuitlahuac. A city under siege, cut off from its causeways and water supply, with an epidemic inside it, is not the same military problem as the same city a year earlier.` },
-            { p: `Spanish advantages were real and worth naming precisely: steel weapons and armor, horses, war dogs, a handful of firearms and cannon, ships built to control the lake, and interpreters, above all Malintzin, whose translation made the alliances possible at all. But every one of those is a force multiplier applied to an army that was mostly not Spanish.` }
+            { p: `Ming China had restricted private overseas trade for much of the dynasty and dealt with foreigners on its own terms. From <span class="num">1557</span>, Chinese provincial officials let Portuguese merchants settle permanently at <b>Macau</b>, a small peninsula on the south coast. It was not a conquest and not, in the Ming view, a transfer of land: Chinese officials kept authority over the port, and the Portuguese paid them a yearly ground rent. Historians date the formal arrangement variously from the 1550s to <span class="num">1573</span>, but on the central point they agree: Macau existed because China allowed it, on China's conditions.` },
+            { p: `Why allow it at all? Because the trade was useful. The Portuguese carried goods between China, Japan and Southeast Asia that Chinese and Japanese merchants were not then free to carry directly, and Macau let Chinese officials keep that trade in one place they could watch.` }
           ]
         },
         {
-          heading: 'Cajamarca',
+          heading: 'Japan, 1635 to 1641',
           blocks: [
-            { p: `Francisco Pizarro reached Peru in <span class="num">1532</span> with under two hundred men, and the pattern repeats with different particulars. Smallpox had already traveled overland ahead of any European, killing the Inca ruler Huayna Capac and his heir, and the succession war between Atahualpa and Huascar had just ended. Pizarro met a state that had finished a civil war weeks earlier, with a victorious claimant whose defeated brother's supporters had every reason to look for another patron.` },
-            { p: `At Cajamarca the Spanish seized Atahualpa in a single ambush. That the Inca system centralized so much authority in the ruler, as the Topic 1.4 chapter describes, made a decapitation strike unusually effective, though it did not end the war: Manco Inca's rising in <span class="num">1536</span> nearly destroyed the Spanish position, and a successor Inca state held out at Vilcabamba until <span class="num">1572</span>. Forty years is not a conquest in an afternoon.` },
+            { p: `Portuguese ships first reached Japan in the 1540s, and Jesuit missionaries followed. By 1600 they had made many Christian converts, and the Tokugawa shoguns, who had just unified Japan after a century of war, came to see Christianity as a loyalty outside their control. The shogunate banned Christianity in <span class="num">1614</span>. The Spanish were expelled in <span class="num">1624</span>; the English had already left.` },
+            { p: `Between <span class="num">1633</span> and <span class="num">1639</span>, the shogun's senior councilors sent five sets of orders to their two magistrates at Nagasaki, the port where foreign ships traded. The <span class="num">1635</span> set has seventeen articles. The first reads: "It is strictly prohibited for Japanese ships to leave for foreign countries." The third: "If any Japanese returns home after residing abroad, he must be put to death." Others order a search of every incoming ship for Christians, rewards for informers, and rules for buying and selling raw silk. In <span class="num">1637</span> and <span class="num">1638</span> a rebellion at Shimabara, near Nagasaki, drew in many Christian peasants, and in <span class="num">1639</span> the councilors banned Portuguese ships outright, because, the order says, the Portuguese "have secretly transported those who are going to propagate that religion."` },
+            { p: `The Dutch stayed. They came to trade, not to spread Christianity, and from <span class="num">1641</span> they lived and traded only on <b>Dejima</b>, a small artificial island in Nagasaki harbor, under Japanese supervision. Chinese merchants kept trading in Nagasaki, and Japan kept dealing with Korea and the Ryukyu kingdom through other ports. Historians later named the orders the "closed country" edicts, but the documents themselves carry no such title, and Japan was not closed: it chose who could come, and on what terms.` },
             { note: {
               kind: 'howknow',
-              label: 'How we know: the allies wrote it down too',
-              html: `The lone-conquistador story survives partly because Spanish accounts were written to justify claims on the crown, and a man petitioning for reward has no reason to emphasize how much of the fighting his allies did. But other sources exist. The <em>Lienzo de Tlaxcala</em>, a sixteenth-century pictorial record made by Tlaxcalans, shows their own warriors at the center of the campaign, because they were petitioning the crown too, for the privileges owed to allies rather than to the conquered. The Florentine Codex, compiled by Bernardino de Sahagun with Nahua informants and written in Nahuatl, gives a Mexica account of the epidemic and the siege. Reading Spanish claims against Indigenous ones is what turns this from a legend into a documented campaign.`
+              label: 'How we know',
+              html: `The orders survive in the shogunate's records and are translated in Constantine Vaporis, <em>Voices of Early Modern Japan</em> (2012). Their audience is the clue to reading them. They were working instructions to two officials, not announcements to foreigners, so they show what the government meant to enforce, not what it wanted the world to hear.`
             } }
-          ]
-        },
-        {
-          heading: 'Why the same expedition failed elsewhere',
-          blocks: [
-            { p: `The strongest evidence for this explanation is where conquest did not happen. Spanish expeditions into the North American interior found no centralized state to capture and no tributary population with a grievance to exploit, and achieved nothing lasting. In southern Chile the Mapuche fought Spain and then Chile to a standstill for three centuries. In the Amazon and across the Great Plains, European control remained nominal for generations.` },
-            { p: `So the variable is not Spanish technology, which was the same in every case. It is whether there was a centralized state to decapitate and a supply of allies with reasons of their own. Where both existed, a few hundred men could bring down an empire; where neither did, the same men accomplished almost nothing.` }
           ]
         }
       ],
       useThis: {
-        tool: `Conquest through existing fracture. <em>The mechanism is that a tribute empire generates subject peoples with recent grievances, so an outsider who arrives able to promise relief inherits an army he did not raise, and the technological advantage matters only as a multiplier on a force that is mostly local.</em>`,
-        limit: `It only works where a centralized state exists to be captured and a fractured tributary population exists to recruit from, which is why the same expeditions failed in the North American interior and against the Mapuche.`,
-        comparison: `Against the <em>Estado da India</em> in section 01: Portugal met large, cohesive states with field armies and settled for taxing their harbors, while Spain met a state whose subjects would fight for the invader and took the whole thing. Same century, same continent of origin, opposite outcome, and the difference is in what they met rather than in what they brought.`
+        tool: `Asian states set the terms. <em>China and Japan were strong enough to decide where, how and with whom Europeans could trade, so the continuity is Asian state power and the change is only the newcomers it chose to admit: the Portuguese at Macau from 1557, the Dutch alone on Dejima from 1641.</em>`,
+        limit: `Limiting European trade did not end foreign trade. Silk, silver and other goods kept moving through Nagasaki, Macau and Chinese ports, and the reasons were as much about control and Christianity as about trade.`,
+        comparison: `Against <em>the Indian Ocean ports</em> in section 01: where Portugal faced divided coastal rulers, it built forts; where it faced unified, strong states, it was let in on their terms or shut out.`
       },
       terms: [
-        ['Conquistador', 'A Spanish expedition leader operating under royal license, financed privately and paid in land, labor and a share of the loot.'],
-        ['Tlaxcalans', 'The unconquered Mexica rivals who supplied the largest part of the army that took Tenochtitlan, and who claimed the privileges of allies afterward.'],
-        ['Malintzin', 'The Nahua woman whose interpreting made Cortes able to negotiate the alliances the campaign depended on.'],
-        ['Cajamarca', 'The 1532 ambush at which Pizarro seized Atahualpa, effective because Inca authority was concentrated in the ruler.'],
-        ['Vilcabamba', 'The successor Inca state that resisted until 1572, evidence that conquest was a forty-year war rather than an event.']
+        ['Macau', 'The small port on China\'s south coast where Portuguese merchants settled from 1557, under Chinese officials and a yearly rent.'],
+        ['Tokugawa shogunate', 'The military government that ruled Japan from 1603 and limited European trade and Christianity in the 1630s.'],
+        ['Dejima', 'The small artificial island in Nagasaki harbor where the Dutch were confined from 1641.'],
+        ['Restrictive trade policy', 'A government\'s limits on who may trade, where and in what, as Ming China and Tokugawa Japan set on Europeans.']
       ]
     },
 
     // ── 03 ────────────────────────────────────────────────────────────────────
     {
-      id: 'governing',
+      id: 'africa',
       num: '03',
       accent: 'iron',
-      name: 'Governing What Was Taken',
-      navLabel: 'Colonial rule',
-      dates: 'c. 1500 to 1700 &nbsp;·&nbsp; Encomienda, viceroys, audiencias',
-      thesis: `Spain built the first large territorial empire ever governed across an ocean, and the whole design is shaped by one constraint: a message to Madrid and back took the better part of a year, so every institution has to answer the question of what a distant king does about a governor he cannot see.`,
+      name: 'Kongo and Asante',
+      navLabel: 'African states',
+      dates: 'c. 1480 to 1750 &nbsp;·&nbsp; Kings, guns, and the trade',
+      thesis: `The College Board's sentence is that maritime trade "fostered the growth of states in Africa, including the Asante and the Kingdom of the Kongo." Both grew stronger by using the trade, and both sold captives into it. Holding both halves together is the whole section.`,
       parts: [
         {
-          heading: 'Encomienda: paying an army with other people',
+          heading: 'Kongo: a Christian king and the trade',
           blocks: [
-            { p: `The crown had not paid for the conquests. Expeditions were private ventures under royal license, and the men who survived expected reward. The <span class="kt">encomienda</span> was the currency: a grant to a Spaniard of the right to demand labor and tribute from a named Indigenous community, in exchange for a formal obligation to protect them and see them instructed in Christianity.` },
-            { p: `The mechanism is worth stating exactly. It was not a grant of land, legally, and it did not make the people property. It was a grant of <em>the right to their work</em>, which let the crown pay its conquerors without money and without ceding sovereignty over territory. In practice, on a community collapsing from epidemic and with no realistic appeal, the distinction between a right to labor and outright ownership was thin.` },
-            { p: `Legal challenge came early and from inside the system. Antonio de Montesinos preached against it in <span class="num">1511</span>; Bartolome de las Casas, himself once an encomendero, spent decades campaigning; the Laws of Burgos of <span class="num">1512</span> and the New Laws of <span class="num">1542</span> restricted the institution and tried to end its inheritance. The New Laws provoked armed revolt in Peru and were partly withdrawn, which tells you where power actually sat.` },
-            { p: `Encomienda declined across the sixteenth century, less from the reformers than from the collapse in the population it drew on. What followed was not one successor but a portfolio, and keeping two of them apart is worth a mark. The <span class="kt">repartimiento</span> required Indigenous communities to supply rotating groups of workers for limited periods, in theory for wages. The Andean colonial <span class="kt">mita</span> is a related but separate institution, built by Viceroy Toledo in the 1570s out of a pre-conquest Andean labor obligation and aimed above all at Potosi. Debt peonage and wage labor on the great estates grew alongside both. These overlapped in time and place rather than replacing one another in tidy stages, and Indigenous slavery and encomienda tribute persisted in some regions while the others were running.` }
+            { p: `Kongo was the dominant power in west-central Africa when Portuguese ships reached the mouth of the Congo River in <span class="num">1483</span>. Its king was baptized in <span class="num">1491</span>, and his son <b>Afonso I</b>, king from about <span class="num">1509</span> until the early 1540s, made Christianity the religion of the court. Afonso asked Portugal for priests and teachers, sent young Kongo nobles to study in Portugal, and fought his wars with Portuguese allies. Kongo's artists made Christianity their own, in brass crucifixes cast in their own style.` },
+            { p: `The trade strengthened the king in a specific way: imports came through him. When Afonso controlled who traded and what they sold, foreign goods were his to give to loyal nobles. That is why his letter of <span class="num">1526</span> to King João III of Portugal complains first that Portuguese traders were selling directly to his vassals, who "have now renounced their obedience because they have a greater abundance of goods available to them than we do." Trade outside the king's hands was trade against him.` }
           ]
         },
         {
-          heading: 'Viceroys, audiencias, and deliberate friction',
+          heading: 'What Afonso\'s letter does and does not say',
           blocks: [
-            { p: `Above the encomenderos the crown built a hierarchy. Two <span class="kt">viceroyalties</span>, New Spain from <span class="num">1535</span> and Peru from <span class="num">1542</span>, each headed by a viceroy standing in the king's person. Beneath them, <b>audiencias</b>, high courts with administrative powers, which heard appeals and could report directly to Madrid over the viceroy's head. In Spain, the Council of the Indies drafted the legislation and the Casa de Contratacion in Seville licensed every ship and registered every cargo.` },
-            { p: `The overlapping jurisdictions were not administrative clumsiness. A viceroy ten thousand miles away, with an army and a treasury under his hand, is the most dangerous person in the empire, so the crown gave him a court that could tell on him, appointed him for limited terms, and subjected him at the end to a <b>residencia</b>, a judicial review of his conduct in office. Colonial-born Spaniards were largely excluded from the highest posts, which kept the top of the hierarchy dependent on Madrid and, as the Topic 4.7 chapter shows, laid a grievance that mattered enormously later.` },
-            { p: `The Church was the third pillar and in daily life often the closest one. Under the <em>patronato real</em> the crown appointed bishops and controlled Church revenues in the Americas, which made the ecclesiastical hierarchy an arm of royal government. Missionaries and parish clergy ran the schools, kept the registers of births, marriages and deaths that are now our best demographic sources, and reached villages no royal official ever visited.` },
-            { p: `The famous summary of how all this worked in practice is the phrase <em>obedezco pero no cumplo</em>, I obey but I do not comply: a local official could formally acknowledge a royal order and decline to execute it pending further representation. It sounds like a loophole and it functioned as a governing mechanism, the empire's way of absorbing instructions written by people who had never seen the place they were about.` }
+            { p: `The same letter complains that traders "carry away our native-born countrymen and the children of our nobles and vassals as well as relatives of ours," and asks the king of Portugal to send "neither traders nor trading goods." It is often quoted as a protest against the slave trade. The historian Linda Heywood shows why that reading is too simple. Kongo had slavery of its own, and most captives Kongo sold to the Portuguese in Afonso's reign were foreigners taken in Kongo's wars; Afonso ran a slave market in his capital. Kongo law protected free-born Kongo people from sale abroad. What threatened Afonso was traders he did not control kidnapping his own subjects, which "so threatened Afonso's legitimacy that he pleaded with the Portuguese king."` },
+            { p: `So the letter is strong evidence of a powerful king defending his control of trade and of the rule about who could be enslaved. It is weak evidence that he opposed slavery. Later, Heywood argues, Kongo's civil wars of the 1600s broke down the protection of free-born Kongo people, and far more of them were sold abroad.` }
+          ]
+        },
+        {
+          heading: 'Asante: gold, guns, and Feyiase',
+          blocks: [
+            { p: `On the Gold Coast, where Elmina stood, several Akan states were joined under one ruler, the Asantehene, around <span class="num">1700</span>. Asante tradition credits Osei Tutu and the priest Okomfo Anokye with the union and with the Golden Stool that symbolized it; the sources disagree on Osei Tutu's dates, so this chapter gives none. In <span class="num">1701</span> Asante defeated Denkyira, the region's leading power, at the battle of Feyiase, a date recorded in Dutch archives.` },
+            { p: `Asante's strength rested on gold, which it controlled, and on guns, which it bought from Dutch and English traders on the coast, paying in part with captives taken in its wars. Through the 1700s it expanded into the main power of the region. Like Kongo, it grew stronger through the trade and sold people into it.` }
           ]
         }
       ],
       useThis: {
-        tool: `Overlapping jurisdiction as a control on distance. <em>The mechanism is that a crown which cannot supervise a distant governor directly instead appoints a second authority in the same place with the right to report over his head, so the two watch each other and the king is informed by rivals rather than by the man he is checking on.</em>`,
-        limit: `It bought loyalty at the cost of speed and clarity, produced constant jurisdictional conflict, and did nothing to stop the routine non-enforcement summed up as obedezco pero no cumplo.`,
-        comparison: `Against <em>Ottoman devshirme</em> in Topic 3.2: both are answers to the problem of officials with local power bases, but the Ottomans solved it by recruiting servants with no local ties at all, while Spain solved it by setting locally posted officials against each other. The Ottoman version is cheaper to run and the Spanish version is what you use when your officials are half a year away.`
+        tool: `African states used the trade. <em>Kongo and Asante grew stronger because the trade brought weapons, allies and goods through their rulers' hands, so the change was African kings with new power, and the continuity was that they set rules for the traders who came to them.</em>`,
+        limit: `The same trade that strengthened these states carried captives out of Africa, and in Kongo the civil wars of the 1600s turned the trade against the kingdom's own people.`,
+        comparison: `Against <em>Ming China and Tokugawa Japan</em> in section 02: all four states set terms for European traders, but Kongo and Asante grew by joining the Atlantic trade, while China and Japan limited it.`
       },
       terms: [
-        ['Encomienda', 'A grant of the right to Indigenous labor and tribute from a named community, used to pay conquerors without money or land.'],
-        ['Repartimiento', 'The Spanish colonial requirement that Indigenous communities supply rotating groups of workers for limited periods, in theory for wages.'],
-        ['Colonial mita', 'The Andean labor draft Spanish authorities built out of a pre-conquest Inca obligation, most famously to supply Potosi; related to the repartimiento and not the same institution.'],
-        ['Viceroyalty', 'A vast administrative division, New Spain and Peru, headed by a viceroy standing in the king\'s person.'],
-        ['Audiencia', 'A high court with administrative powers, able to report to Madrid over the viceroy and check him from inside his own territory.'],
-        ['Casa de Contratacion', 'The Seville house of trade that licensed every ship and registered every cargo, the crown\'s point of control over Atlantic commerce.']
+        ['Kingdom of Kongo', 'The dominant state of west-central Africa in 1500, whose Christian kings traded with Portugal from the 1480s.'],
+        ['Afonso I', 'King of Kongo from about 1509 to the early 1540s, a Christian who used the Portuguese connection to strengthen his rule.'],
+        ['Asante', 'The Akan kingdom of the Gold Coast that rose around 1700 through gold and guns and became the region\'s main power.'],
+        ['Feyiase, 1701', 'Asante\'s victory over Denkyira, which made it the leading power of the Gold Coast interior.']
       ]
     },
 
     // ── 04 ────────────────────────────────────────────────────────────────────
     {
-      id: 'companies',
+      id: 'labor',
       num: '04',
       accent: 'oxide',
-      name: 'The Company That Was Also a State',
-      navLabel: 'Companies',
-      dates: 'c. 1600 to 1700 &nbsp;·&nbsp; VOC and English East India Company',
-      thesis: `The genuinely new institution of this unit is not a ship or a gun. It is a chartered company owned by shareholders, granted a monopoly by its government and, with it, the right to make war, sign treaties, coin money and govern territory. Empire became something a private corporation could do.`,
+      name: 'Work in the Colonial Americas',
+      navLabel: 'Labor systems',
+      dates: 'c. 1500 to 1750 &nbsp;·&nbsp; Mit’a, encomienda, hacienda, indenture, slavery',
+      thesis: `The College Board's sentence is that colonial economies in the Americas "largely depended on agriculture, utilized existing labor systems, including the Incan mit’a, and introduced new labor systems." The colonies needed workers for farms and mines, and they got them by reusing an old duty and inventing new forms of coerced work.`,
       parts: [
         {
-          heading: 'The problem the company solves',
+          heading: 'The mit’a: an old duty, a new master',
           blocks: [
-            { p: `A voyage to Asia took two years, cost more than most merchants had, and might return nothing. The Topic 4.2 chapter shows why that made the first two seaborne empires royal projects: only a crown could absorb a total loss. The joint-stock company is the arrangement that removes the crown from the financing without removing the risk-bearing.` },
-            { p: `Investors buy <b>shares</b>. Each puts in a fraction of the cost and takes a proportional fraction of the profit, and no single investor is ruined if a fleet sinks. Because a share can be sold to someone else, an investor's money is not locked up for the years the voyage takes, and Amsterdam's exchange gave them a place to sell it. Because the company is permanent rather than dissolved at the end of each voyage, it can hold forts, warehouses, ships and staff between expeditions and reinvest returns instead of distributing everything.` },
-            { p: `That last point is what turns a financing method into an empire. A permanent capital base means a company can build a fort in Java and still be there in twenty years to use it.` }
+            { p: `The Inca state had required each community to send people in turns to work for the state, building roads, farming state lands and serving in the army. That rotating duty was the <span class="kt">mit’a</span>. Between <span class="num">1572</span> and <span class="num">1575</span> the Spanish viceroy of Peru, Francisco de Toledo, reorganized it into a draft that required the communities of the highland districts to send one-seventh of their adult men each year to the silver mine at <b>Potosí</b>: about 9,000 men in 1573 and more than 14,000 by 1578, by one count.` },
+            { p: `It is the clearest continuity-with-change case in the unit. The name and the idea of a rotating duty to the state continued. The master, the work and the danger changed: the men now served a colonial state in deep mines and mercury refineries, and many did not come home. What the silver of Potosí did to the world economy is Topic 4.5.` }
           ]
         },
         {
-          heading: 'What was in a charter',
+          heading: 'Encomienda: paying conquerors with other people\'s work',
           blocks: [
-            { p: `The English <span class="kt">East India Company</span> was chartered in <span class="num">1600</span> and the Dutch <span class="kt">VOC</span> in <span class="num">1602</span>, the latter formed by merging competing Dutch ventures so that they would stop bidding each other up on the same spices. The VOC charter is the one to know, because it granted, in the territories east of the Cape of Good Hope: a monopoly on Dutch trade there, and the powers to build fortresses, maintain armies and fleets, wage war, conclude treaties with foreign rulers, appoint governors, administer justice and coin money.` },
-            { p: `Read that list and the definition follows. These are sovereign powers, delegated to a body accountable to its shareholders. The VOC founded Batavia in <span class="num">1619</span> as its capital, took Malacca from the Portuguese in <span class="num">1641</span>, held the Banda Islands after killing or enslaving most of their population to monopolize nutmeg, and ran a fortified network from the Cape to Japan. The English company's rise to territorial rule in Bengal comes later, in Unit 5, but the instrument is the same one issued in 1600.` },
-            { p: `The advantage over the Portuguese model was capital and persistence: the VOC could lose a fleet, absorb it and sail again next season, and it out-competed the Estado da India as much by outlasting it as by defeating it. The advantage over the Spanish model was that the state carried neither the cost nor, formally, the responsibility.` },
+            { p: `The crown had not paid for the conquests. Expeditions were private ventures under royal license, and the men who survived expected reward. The <span class="kt">encomienda</span> was the reward: a grant to a Spaniard of the right to demand labor and tribute from a named Indigenous community, in exchange for a formal duty to protect them and have them taught Christianity. Legally it was not a grant of land and it did not make the people property; in practice, on communities collapsing from epidemic disease, the difference was thin.` },
+            { p: `Challenge came early and from inside the system. The friar Antonio de Montesinos preached against it in <span class="num">1511</span>; Bartolomé de las Casas spent decades campaigning; the New Laws of <span class="num">1542</span> restricted it and provoked armed revolt in Peru. Indigenous communities fought it in Spanish courts too: in the 1550s the people of Tepetlaoztoc, in central Mexico, sent the crown a painted complaint, the Codex Kingsborough, recording what their encomenderos had taken and how they had been treated. Encomienda declined across the 1500s, as the population it drew on collapsed.` }
+          ]
+        },
+        {
+          heading: 'Haciendas, indentures, and chattel slavery',
+          blocks: [
+            { p: `What grew instead was a set of systems that overlapped rather than replacing each other in neat stages. On the <span class="kt">hacienda</span>, a large estate, Indigenous and mixed-race workers farmed and herded for the owner, usually for wages and sometimes tied to the estate by debt; historians argue about how many were bound that way. In the English colonies of the 1600s, most European newcomers to the Chesapeake came as <span class="kt">indentured servants</span>, working four to seven years under contract to pay for their voyage. And on the sugar and tobacco plantations, enslaved Africans were held in <span class="kt">chattel slavery</span>: owned as property, for life, with their children born enslaved.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that joint-stock companies were significant because they "raised money." Partnerships and state loans had funded long-distance trade for centuries, and the Topic 2.1 chapter has the Italian and Islamic instruments that did it. Two things are new here, and both belong in the sentence: <b>permanent transferable shares</b>, which let a company hold capital and infrastructure across decades rather than dissolving after each voyage, and <b>delegated sovereignty</b>, which let a private board declare war. A company that can raise money is a business. A company that can sign a treaty is an empire.`
+              html: `Do not treat these as the same thing with different names. Ask the same four questions of each: who did the work, for how long, whether they could leave, and who took what they produced. An indentured servant's term had an end date; an enslaved person's had none, unless an owner chose to free them, and their children were born enslaved. That difference is why chattel slavery is a change and not just more of the same.`
             } }
           ]
         }
       ],
       useThis: {
-        tool: `Delegated sovereignty. <em>The mechanism is that a state facing a venture too expensive and too distant to run itself charters a private company and grants it war-making, treaty-making and governing powers, so empire is financed by shareholders seeking dividends while the state keeps the trade monopoly and carries neither the cost nor the formal blame.</em>`,
-        limit: `A body answering to shareholders pursues profit over policy, which produced atrocities like the Banda massacre, chronic conflict with its own government, and eventually, for both companies, insolvency and a state takeover.`,
-        comparison: `Against <em>Spanish royal licensing</em> in section 03: both delegate empire to private hands, but Spain licensed individual expeditions and then built a royal bureaucracy over the result, while the Dutch chartered a permanent corporation and left it governing. One ends with a viceroy answering to a king, the other with a governor-general answering to a board.`
+        tool: `Old systems reused, new ones invented. <em>The continuity is the mit’a, an Inca labor duty that kept its name under a new master; the change is encomienda, hacienda labor, indentured servitude and chattel slavery, new ways of forcing or binding people to work on colonial farms and in mines.</em>`,
+        limit: `The systems overlapped in time and place, varied by region, and depended on Indigenous populations that disease and war were shrinking, which is part of why the plantations turned to enslaved Africans.`,
+        comparison: `Against <em>the encomienda</em>: the mit’a drafted men for limited turns of service to the state, while encomienda gave one colonist a standing claim on a community's labor and tribute.`
       },
       terms: [
-        ['Joint-stock company', 'A business owned by shareholders who divide risk and profit in proportion to their investment, with shares that can be sold.'],
-        ['VOC', 'The Dutch East India Company, chartered in 1602 with the power to wage war, make treaties, govern and coin money east of the Cape.'],
-        ['East India Company', 'The English company chartered in 1600, the instrument that later carried English rule into Bengal.'],
-        ['Charter', 'The grant from a government defining a company\'s monopoly and its delegated sovereign powers.'],
-        ['Batavia', 'The VOC capital founded in 1619 on Java, the administrative center of a company-run maritime empire.']
+        ['Mit’a', 'The Inca rotating labor duty, reorganized by Viceroy Toledo in the 1570s into a draft for the silver mine at Potosí.'],
+        ['Encomienda', 'A grant to a Spanish colonist of the right to the labor and tribute of a named Indigenous community.'],
+        ['Hacienda', 'A large colonial estate whose workers were paid wages and were sometimes bound by debt.'],
+        ['Indentured servitude', 'Work under contract for a fixed term, usually four to seven years, to pay for a voyage to the colonies.'],
+        ['Chattel slavery', 'Slavery in which people are owned as property for life and their children are born enslaved.']
       ]
     },
 
     // ── 05 ────────────────────────────────────────────────────────────────────
     {
-      id: 'comparison',
+      id: 'slavery',
       num: '05',
       accent: 'gold',
-      name: 'Three Models Side by Side',
-      navLabel: 'Comparison',
-      dates: 'c. 1500 to 1700 &nbsp;·&nbsp; What each was for',
-      thesis: `Put the three next to each other and the organizing question is not which was strongest. It is what each was built to extract, because that determines everything else: how much territory it needed, how many people it had to govern, and what it could not survive.`,
+      name: 'Slavery, Old and New',
+      navLabel: 'Slavery',
+      dates: '1450 to 1750 &nbsp;·&nbsp; Households, the Sahara, the plantations',
+      thesis: `The College Board pairs two sentences: enslavement in Africa "continued in its traditional forms," and the plantation economy "increased the demand for enslaved labor in the Americas, leading to significant demographic, social, and cultural changes." Slavery did not begin with the Atlantic trade. The plantations changed its size and its kind.`,
       parts: [
         {
-          heading: 'What each one was extracting',
+          heading: 'The older forms that continued',
           blocks: [
-            { p: `<b>Portugal wanted a margin on goods that already existed.</b> Pepper and spices were grown, harvested and traded by other people; Portugal wanted to buy at the source and to tax everyone else's carriage. That requires ports, guns and passes, and no territory at all. Small population, tiny administration, no settler colonies of consequence in Asia.` },
-            { p: `<b>Spain wanted things in the ground, and the ground was in the Americas.</b> Silver and sugar are not traded into your hands; they are dug and grown, which requires land and, above all, a labor force. That is why Spain took territory and governed people, why the encomienda and the repartimiento exist, why a viceregal bureaucracy and a Church hierarchy exist, and why the demographic catastrophe of Topic 4.3 was an imperial crisis and not only a human one.` },
-            { p: `<b>The Dutch and English wanted the Portuguese margin, at scale and without royal money.</b> The company model is what you build when the goal is commercial like Portugal's but the state is unwilling to fund it and the competition is now armed. It ends up territorial anyway, in Java in the seventeenth century and in Bengal in the eighteenth, because controlling supply turned out to require controlling the growers.` }
+            { p: `In many African societies, slavery was old and took forms unlike the plantations. Enslaved people, often captives from wars, were taken into <b>households</b>, where they worked, served or married, and over time they or their children could become part of the family. In Kongo, a king's letter of <span class="num">1550</span> speaks of a rival's relatives "even if they are slaves," and Heywood concludes that domestic slaves in elite households were counted as part of the extended family. That was not freedom: enslaved people could still be sold. But it was not slavery passed down forever.` },
+            { p: `Captives were also carried out of Africa by older routes than the Atlantic: north across the <b>Sahara</b> to North Africa and the Mediterranean world, and east across the Red Sea and the <b>Indian Ocean</b> to Arabia, Persia and India. Those trades were centuries old before 1500 and went on through this whole period alongside the Atlantic trade.` }
           ]
         },
         {
-          heading: 'What each one could not survive',
+          heading: 'What the plantations changed',
           blocks: [
-            { p: `A trading post empire is only as strong as its weakest fort and its patrol capacity. Portugal's fell to a rival with more capital and better ships, and to regional powers that simply took ports back, Oman at Muscat in <span class="num">1650</span> and the Dutch at Malacca in <span class="num">1641</span>.` },
-            { p: `A territorial empire is only as strong as the labor system underneath it. Spain's was rebuilt twice, from encomienda to repartimiento to peonage and enslaved African labor, because the first population it drew on collapsed, and it faced the revolts of Topic 4.6 wherever the pressure and the religious suppression ran together.` },
-            { p: `A company empire is only as strong as its dividend. The VOC and the English company both ran into the contradiction of an institution that must both govern and pay shareholders, and both ended in insolvency and nationalization, the VOC in <span class="num">1799</span>. Governing costs more than trading and returns less.` },
-            { p: `Say what varies and why. All three were built out of the same voyages and the same guns; the differences follow from what was being taken and who was standing in the way.` }
+            { p: `Sugar, and later tobacco, needed huge numbers of workers, and the plantations of Brazil and the Caribbean bought enslaved Africans to do the work. The estimates in the Trans-Atlantic Slave Trade Database show the change in one comparison: about 278,000 Africans were forced onto ships bound for the Americas in the whole 1500s, and about 2.5 million in the fifty years from <span class="num">1701</span> to <span class="num">1750</span>.` },
+            { p: `The CED names three kinds of change. <b>Demographic:</b> on Barbados enslaved Africans outnumbered Europeans by the late 1600s, and across the Caribbean colonies Africans and their descendants became most of the people. <b>Social:</b> plantation slavery was for life and inherited, and colonial law tied it to race; Virginia's law of <span class="num">1662</span> made the children of enslaved women enslaved. <b>Cultural:</b> African languages, beliefs and foods crossed with the people who carried them, and how they mixed with American and European cultures is Topic 4.5.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Do not write that slavery was invented after 1500, and do not write that African and plantation slavery were the same. The continuity is that slavery in its older forms went on in Africa; the change is the scale, the destination and the kind of slavery the plantations demanded: lifelong, inherited and tied to race.`
+            } }
           ]
         }
       ],
       useThis: {
-        tool: `Extraction shapes administration. <em>The mechanism is that what an empire wants determines how much it must govern: a margin on somebody else&rsquo;s cargo needs only harbors and patrols, while a commodity that must be dug or grown needs land, a labor force and therefore courts, churches and a bureaucracy to hold them, which is why two empires from the same decade look nothing alike.</em>`,
-        limit: `The categories blur over time. The companies became territorial in Java and Bengal, and Portugal governed real territory in Brazil, so treat these as models rather than as boxes each empire stayed inside.`,
-        comparison: `Against the <em>land-based empires</em> of Unit 3: Ottoman, Safavid, Mughal, Qing and Russian states expanded across contiguous ground and had to govern everyone they absorbed, while maritime empires could take a harbor and ignore the interior. That is the single most useful contrast available for a comparison prompt in this unit.`
+        tool: `Same word, different institution. <em>The continuity is slavery in Africa in its older forms, in households and through the Sahara and the Indian Ocean; the change is the plantation economy, which multiplied the Atlantic trade about ninefold between the 1500s and 1701 to 1750 and made slavery in the Americas lifelong, inherited and tied to race.</em>`,
+        limit: `The household and plantation pictures are general patterns; slavery varied across Africa's many societies, and some enslaved people in African households were treated harshly or sold on.`,
+        comparison: `Against <em>the mit’a</em> in section 04: both were forced labor, but the mit’a drafted men for turns of service and sent them home, while plantation slavery held people, and their children, for life.`
       },
       terms: [
-        ['Model of empire', 'The shape an empire takes, determined by what it extracts and by the resistance it meets rather than by national character.'],
-        ['Settler colony', 'A colony organized around transplanted population and landholding, distinct from a factory or fort.'],
-        ['Monopoly', 'An exclusive right to trade a good or a route, the core asset a charter granted and the thing rivals attacked.'],
-        ['Nationalization', 'A state takeover of a bankrupt company, the end of both the VOC and the English East India Company.'],
-        ['Contiguous empire', 'A land empire expanding across adjoining territory, obliged to govern every population it absorbs.']
+        ['Household slavery', 'Slavery in which enslaved people were taken into a household and could, over generations, become part of the family.'],
+        ['Trans-Saharan slave trade', 'The older trade carrying captives north across the Sahara to North Africa and the Mediterranean.'],
+        ['Plantation economy', 'An economy built on large farms growing one crop to sell, such as sugar, worked by coerced labor.'],
+        ['Hereditary slavery', 'Slavery passed from enslaved mothers to their children, made law in Virginia in 1662.']
       ]
     }
   ],
 
   closing: {
     heading: 'Building an Answer That Scores',
-    navLabel: 'Building a comparison',
-    intro: `Each card is a full comparison or explanation: the claim, the specific evidence, and the reason. The first two are the ones the success criteria ask for most directly.`,
+    navLabel: 'Continuity and change',
+    intro: `Each card is a full continuity-and-change explanation: the change, the continuity, the evidence and the reason. Together they answer all three learning objectives.`,
     pairs: [
       {
-        category: 'State power',
-        title: 'Atlantic trade also changed African state power',
-        body: `Maritime expansion did not strengthen only European states. The <span class="kt">Kingdom of Kongo</span> used Atlantic diplomacy and commerce to pursue royal goals, while <span class="kt">Asante</span> later expanded its regional influence through control of gold-producing areas and participation in Atlantic trade. The results were uneven and could become destabilizing, but the mechanism matters: access to revenue, imported goods and weapons, and new diplomatic relationships could strengthen African rulers just as maritime commerce strengthened European ones.`
+        category: 'State building',
+        title: 'Europe held coasts; Asia held the terms',
+        body: `Driven by political, religious and economic rivalry, Portugal built forts at Elmina, Goa, Malacca and Hormuz, and the Dutch took several of them in turn: a real change in who held power on the coasts of Africa and Asia. But the strongest Asian states set the terms. Ming officials let the Portuguese settle at Macau from 1557 and kept authority over the port, and Tokugawa Japan, after orders of 1635 and 1639 aimed above all at Christianity, allowed only the Dutch to trade, on Dejima, from 1641. The change was on the coasts; the continuity was Asian state power.`
       },
       {
-        category: 'Labor continuity and change',
-        title: 'Plantation growth changed the scale of slavery without inventing enslavement',
-        body: `Older forms of enslavement continued in Africa and around the Indian Ocean, including household incorporation and export through established regional routes. The major Atlantic change was the growth of the <span class="kt">plantation</span> economy in sugar and other export crops, which increased demand for permanent, hereditary chattel slavery in the Americas. At the same time, colonial economies adapted older labor obligations such as the Incan mit&rsquo;a and expanded encomienda, hacienda labor and indentured servitude. The period therefore combines continuity in coercion with a major change in scale, destination and legal racialization.`
+        category: 'State building',
+        title: 'African kings grew stronger through the trade',
+        body: `Kongo under Afonso I and Asante around 1700 both grew stronger through maritime trade, because weapons, allies and imported goods came through their rulers. Afonso's 1526 letter shows a king defending that control: he protested the kidnapping of free-born Kongo subjects by traders he did not command, while selling foreign war captives himself. Asante bought guns on the Gold Coast and defeated Denkyira at Feyiase in 1701. Both states grew by joining the trade, and both sold captives into it.`
       },
       {
-        category: 'Comparison',
-        title: 'Portugal took ports because it could not take provinces',
-        body: `Portuguese naval artillery could defeat fleets and batter harbors, which is how Goa fell in 1510, Malacca in 1511 and Hormuz in 1515, but ashore the Portuguese faced Mughal, Safavid, Ottoman and Chinese states with populations and armies many times their own. So the Estado da India took the shape of the advantage: about fifty fortified points, no hinterland, and revenue from the cartaz, a pass sold to other people&rsquo;s ships. Spain, meeting a tribute empire whose subjects would fight for an invader, took the whole thing. The difference is in what each met, not in what each brought.`
+        category: 'Economic systems',
+        title: 'The Indian Ocean was disrupted, not replaced',
+        body: `The cartaz, a pass the Portuguese sold and enforced with warships, was a real change: a European navy now taxed Asian shipping. But Gujarati merchants kept shipping cloth, often under a pass, Swahili Arab and Javanese traders kept trading, and Oman drove the Portuguese from Muscat in 1650 and Mombasa in 1698. Much of the trade stayed trade between Asian ports, and Europeans often made their money by joining it. That is what the College Board means by "continued to flourish."`
       },
       {
-        category: 'Causation',
-        title: 'The conquests were won by Indigenous armies with Indigenous aims',
-        body: `Cortes landed with about five hundred men and Pizarro with under two hundred, and neither number could have taken a state of millions. Tlaxcalan and other tributary forces made up the overwhelming majority of the army that besieged Tenochtitlan in 1521, fighting a war against the Mexica that predated the Spanish. In Peru, smallpox had already killed Huayna Capac and a succession war had just ended when Pizarro seized Atahualpa at Cajamarca in 1532. Steel, horses and interpreters were multipliers on a force that was mostly local, which is why the same expeditions accomplished nothing against the Mapuche or in the North American interior, where there was no centralized state to capture and no supply of allies.`
+        category: 'Labor systems',
+        title: 'An old duty under a new master',
+        body: `The Inca mit’a, a rotating labor duty to the state, continued in name and shape when Viceroy Toledo reorganized it in the 1570s, but it now sent thousands of Andean men each year to the silver mine at Potosí: continuity in the institution, change in its master and its work. Beside it the colonies introduced new systems: encomienda grants of Indigenous labor and tribute, hacienda wage and debt labor, indentured servitude for a fixed term, and chattel slavery for life.`
       },
       {
-        category: 'Institutions',
-        title: 'A charter that grants war-making turns a business into an empire',
-        body: `The VOC charter of 1602 granted a monopoly east of the Cape and with it the powers to build fortresses, maintain armies, wage war, sign treaties with foreign rulers, appoint governors and coin money. Those are sovereign powers held by a body answering to shareholders, and they are what distinguishes the company model from the partnerships that had financed long-distance trade for centuries. Permanent transferable shares supplied the second half: a company that does not dissolve after each voyage can hold Batavia from 1619 and take Malacca in 1641. Raising money was not the innovation. Delegated sovereignty was.`
-      },
-      {
-        category: 'Governance',
-        title: 'Spain governed distance by making its officials watch each other',
-        body: `A message from Madrid to Lima and back took most of a year, so the crown could not supervise the men it appointed. Its answer was overlapping jurisdiction: a viceroy standing in the king&rsquo;s person, an audiencia in the same territory that could report to Madrid over his head, limited terms, and a residencia reviewing his conduct when he left. The cost was constant jurisdictional conflict and the routine non-enforcement summed up as obedezco pero no cumplo. Compare it with Ottoman devshirme in Topic 3.2, which solved the same problem of untrustworthy officials by recruiting servants with no local ties at all, and the trade-off is visible: one design is cheaper, the other is what you use when your officials are six months away.`
+        category: 'Slavery',
+        title: 'Same word, different institution',
+        body: `Slavery in Africa continued in its older forms: enslaved people taken into households, whose children could become part of the family, and captives sent across the Sahara and the Indian Ocean. The plantation economy changed slavery in the Americas: about 278,000 Africans were shipped west in the 1500s and about 2.5 million in 1701 to 1750, held for life, their children born enslaved, and bound by laws that tied slavery to race. The continuity is the institution's existence; the change is its scale and its kind.`
       }
     ]
   }

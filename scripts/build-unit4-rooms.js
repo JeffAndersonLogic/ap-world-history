@@ -71,7 +71,7 @@ const scenarios = [
     id: '4.4', unit: '4', topicTitle: 'Maritime Empires Established', file: 'the-goa-fort-council.html',
     title: 'The *Goa Fort Council*', location: 'Goa, Estado da Índia', date: '1515',
     lessonUrl: '../../unit-4/lesson-4-4-maritime-empires-established.html',
-    alignment: { theme: 'Governance (GOV) and Economic Systems (ECN)', objective: 'Explain the process of state building and expansion among various empires and states from 1450 to 1750.', skill: 'Comparison and causation', keyConcepts: ['KC-4.3.II.A.i–iii', 'KC-4.3.II.C', 'Trading-post and territorial empires'] },
+    alignment: { theme: 'Governance (GOV) and Economic Systems (ECN)', objective: 'Explain the process of state building and expansion among various empires and states from 1450 to 1750.', skill: 'Continuity and change', keyConcepts: ['KC-4.3.II.A.i', 'KC-4.3.II.A.iii', 'KC-4.3.II.C'] },
     premise: [
       'Portugal has seized Goa in 1510, Malacca in 1511, and Hormuz in 1515. Afonso de Albuquerque’s victories give the Crown fortified positions from the western Indian Ocean toward Southeast Asia, but Portugal lacks the people and money to conquer the vast regions behind those ports.',
       'The Indian Ocean was already a dense commercial world. Gujarati, Arab, Persian, African, Malay, Chinese, and many other merchants continue to move textiles, spices, horses, metals, and food through regional networks. Portuguese cannon can threaten ships and ports; it cannot replace those traders or their knowledge.',
@@ -113,7 +113,7 @@ const scenarios = [
         O('merchantcity', 'Empower resident merchant households', 'Give Portuguese casados and approved local brokers broad commercial and civic privileges.', 'Permanent families invest in the city and mediate trade.', 'A new oligarchy may evade Crown control and exploit other residents.', 'Local durability creates an elite with interests distinct from Lisbon.')
       ])
     ],
-    reflectionPrompt: 'Compare the Portuguese trading-post model with a territorial colonial model. Explain how forts, cannon, passes, and state rivalry established maritime power, and why continued Asian trade and local intermediaries limited European control.',
+    reflectionPrompt: 'Explain ONE thing Portugal changed in the Indian Ocean (forts, cannon, or the cartaz) and ONE thing that kept going (Asian merchants, their trade networks, or local rulers). Then explain why what kept going limited how much Portugal could control.',
     sources: [
       { label: 'Metropolitan Museum of Art, Sultans of Deccan India, 1500–1700', url: 'https://resources.metmuseum.org/resources/metpublications/pdf/Sultans_of_Deccan_India_1500_1700.pdf' },
       { label: 'Encyclopaedia Britannica, Afonso de Albuquerque', url: 'https://www.britannica.com/biography/Afonso-de-Albuquerque' },
