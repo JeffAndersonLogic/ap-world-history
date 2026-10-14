@@ -907,39 +907,41 @@ window.BEHISTORICAL_SCHEDULE = {
     },
 
     /* ---- Topic 4.3, Columbian Exchange ------ */
-    // Green Wednesday 2026-11-04 and Silver Thursday 2026-11-05. Jeff's Canvas
-    // calendar for November 2026 (shared 2026-10-14) marks every Green day, one
-    // Unit 4 topic each: 4.2 Mon 11/2, 4.3 Wed 11/4, 4.4 Fri 11/6, 4.5 Tue 11/10,
-    // 4.6 Thu 11/12, 4.7 Mon 11/16, 4.8 Wed 11/18, Era review Fri 11/20, Era 3
-    // Exam Tue 11/24. Silver is the class day after each.
-    // OPEN QUESTION for Jeff: that calendar makes Monday 11/2 a Green day, but
-    // 4.2's entries above (Jeff, 2026-10-12) make it Silver, with Green on Friday
-    // 10/30. Both cannot be true under strict alternation, so 4.2 is left as it
-    // was until Jeff says which is right. 4.2's due dates are now derived from
-    // 4.3's days, which are the right next meetings under either reading.
+    // Green Tuesday 2026-11-03 and Silver Wednesday 2026-11-04 (Jeff,
+    // 2026-10-14). Jeff's corrected Unit 4 calendar, the Green days: 4.2 Fri
+    // 10/30, 4.3 Tue 11/3, 4.4 Thu 11/5, 4.5 Mon 11/9, 4.6 Wed 11/11, 4.7 Fri
+    // 11/13, 4.8 Mon 11/16, Study Guide Work Day Wed 11/18 (Silver's is Thu
+    // 11/19), and on his Canvas calendar the Era 3 Exam on Fri 11/20 and Mon
+    // 11/23. A first reading of that calendar on 2026-10-14 put every date one
+    // weekday late (4.3 on Wed 11/4); November 1, 2026 is a Sunday.
+    // Silver is the class day after each Green day through 4.6 (4.4 Fri 11/6,
+    // 4.5 Tue 11/10, 4.6 Thu 11/12). OPEN QUESTION for Jeff: Silver's 4.7 and
+    // 4.8. Green meets Fri 11/13 and Mon 11/16 back to back, so alternation
+    // breaks there, and between Thu 11/12 and Silver's study day on Thu 11/19
+    // Silver has only Tue 11/17 on the alternating pattern. Do not guess them.
     // Required subset (4.3 build, 2026-10-14, under Jeff's standing rule): 02
     // First & 10, 05 Skill Builder (3.B, the CED's suggested skill), 07 Evidence
     // Lab and 10 Checkpoint 2. Checkpoint 1 and BeInTheRoom stay optional.
     {
-      date: '2026-11-04',
+      date: '2026-11-03',
       cohort: 'green',
       topic: '4.3',
       modules: ['02', '05', '07', '10'],
       homework: 'Finish Checkpoint 2, and any other required 4.3 module you did not complete in class.',
-      // Green's next meeting is 4.4 on Friday 11/6 (same calendar). 4.4 is not
-      // built, so its days are not on this schedule and the due date is stated
-      // here. Delete this line when 4.4's days land.
-      homeworkDue: 'Friday, November 6'
+      // Green's next meeting is 4.4 on Thursday 11/5. 4.4 is not built, so
+      // its days are not on this schedule and the due date is stated here.
+      // Delete this line when 4.4's days land.
+      homeworkDue: 'Thursday, November 5'
     },
     {
-      date: '2026-11-05',
+      date: '2026-11-04',
       cohort: 'silver',
       topic: '4.3',
       modules: ['02', '05', '07', '10'],
       homework: 'Finish Checkpoint 2, and any other required 4.3 module you did not complete in class.',
-      // Silver's next meeting is 4.4 on Monday 11/9. Delete this line when
+      // Silver's next meeting is 4.4 on Friday 11/6. Delete this line when
       // 4.4's days land.
-      homeworkDue: 'Monday, November 9'
+      homeworkDue: 'Friday, November 6'
     }
   ],
 
