@@ -253,3 +253,40 @@ Three passes ran, which is the loop's limit. Pass 3 still found supported defect
 or logged, so the loop ended on its safety valve rather than on a clean pass. Two items need
 Jeff: the lecture cards retell the First & 10 (page-truth finding 4), and disease vectors are
 captured only in Checkpoint 1, which is not required (page-truth note).
+
+## Follow-up: lecture cards rebuilt (2026-10-14)
+
+Jeff approved every recommendation in the audit record ("honor all of your recommendations and
+ship it"). The four Content Delivery cards were rebuilt to deepen the First & 10 rather than
+retell it (Pass 3, page-truth finding 4), then reviewed by two fresh reviewers.
+
+### Card review, reviewer 1 (page truth and readability), 16 findings
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | Card 4 says people grew the crops "without knowing where they first came from", reviving the corrected Gerard claim | Fixed: Gerard "was not sure" (Turks' lands and America); the Qing note credits Brunei; "before anyone agreed where they came from". |
+| 2 | The cash-crop sentence (KC-4.1.V.B) and the term "cash crop" dropped out | Fixed on card 3: "Sugar was a cash crop ... Most sugar went to Europe; the College Board's summary is that cash crops like it were exported mostly to Europe and the Middle East." |
+| 3 | Card 2 answered Primary Source Q1 and Q2 and First & 10 Q2 | Fixed: card 2 now models reading the picture and sends students to the Primary Source module for the account's claim and evidence. |
+| 4 | Card 4 says "look at" a Qing label that is not on the card | Fixed: "which you will see in the Evidence Lab". |
+| 5 | Card 3 shows the whole Post landscape, so the workers are tiny | Fixed: card 3 uses the detail crop already on slide 12, captioned as a detail, with the whole painting in the Evidence Lab. |
+| 6 | Several bullets still retell the First & 10 | Fixed: card 1 drops the cargo lists; card 3 points back to Acosta in one line and spends the space on the unfenced-fields mechanism, adds how Plains peoples got horses, and gives rice and okra their evidence (Brazil by 1658; Saramaccan Maroons still grow African rice) and the seed-braiding misconception; card 4 traces the routes on the map and ends by building the topic's claim. |
+| 7 | Card 4 quoted the Qing passage the Skill Builder asks students to analyze | Fixed: quotation removed. |
+| 8 | Jones's "contingent" unglossed; "them" without antecedent | Fixed: "the conditions of their lives at the time, which he calls 'contingent factors'". |
+| 9 | "Not every effect was done to people" is ambiguous | Fixed: "Some effects were not forced on people; some were chances people chose to take." |
+| 10 | "Tribute" undefined | Fixed: "Spanish tax records (called tribute)". |
+| 11 | "Say whose it is" with no names given | Fixed: Cook and Borah's 1548 and 1605 figures named; Elinor Melville named for the Mezquital sheep. |
+| 12 | "Not a trade" conflicts with exported cash crops | Fixed: "calling the whole Columbian Exchange 'trade.' Some of it was trade, like sugar sold in Europe." |
+| 13 | "Across the Pacific from the Spanish Philippines" is wrong geography | Fixed with history finding 2. |
+| 14 | Gerard's doubt about nourishment never squared with "better nutrition" | Fixed: "He was comparing one grain with another. The gain came from ... calories per acre ... new land." |
+| 15 | Card 1 image title differs from the map's own title | Fixed: "What the Ships Carried, and Which Way". |
+| 16 | "Which is why" makes the Pacific route explain the missing arrow | Fixed: "That route was one way the sweet potato reached China; the map does not draw it." |
+| note | KC-4.1.V.D in the lesson data reads "benefited"; the CED reads "benefitted" | Fixed under the CED rule: the copy now matches the CED word for word. |
+
+### Card review, reviewer 2 (history), 3 findings
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | Gerard named America as a source; "without knowing" misstates him | Fixed with page-truth finding 1. |
+| 2 | The sweet potato reached China by more than one route (Ping-ti Ho: Yunnan in the 1560s and 1570s, probably overland; Fujian independently before 1594), and the Pacific crossing ran Mexico to the Philippines, not Philippines to China | **Confirmed.** Fixed on cards 1 and 4, in the First & 10 Section 5 (one sentence; the Unit 4 fingerprint moved with a dated comment, only that sentence changed) and in the slide notes. |
+| 3 | Card 1 defines a vector right after "rats" as carrying disease person to person | Fixed: "like a mosquito, or a rat and the fleas it carries". |
+| note | The painters were probably not survivors | Fixed: "how the epidemic was remembered", "working from what Nahua elders told them". |

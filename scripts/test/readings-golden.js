@@ -106,7 +106,12 @@ const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
 // The loop ended on its three-pass safety valve, every finding fixed or logged.
 // The fingerprint moved from 3c4abac... and only the 4.3 entry changed; 4.1, 4.2
 // and 4.4 to 4.8 are byte-for-byte unchanged.
-const APPROVED_UNIT4_REWRITE_BLOB = '85f1913b523586cc229a82cb00e448ab956e6cd3';
+// On 2026-10-14 the independent review of the rebuilt 4.3 lecture cards found the
+// sweet potato's route to China stated as one road ("by the Pacific road"); Ping-ti
+// Ho records it in Yunnan in the 1560s and 1570s, probably overland. The 4.3 entry
+// now says it came by more than one route, one through the Philippines to Fujian.
+// The fingerprint moved from 85f1913... and only that 4.3 sentence changed.
+const APPROVED_UNIT4_REWRITE_BLOB = '0394dcf1b56684dfc55d9f82085a67f1ac6705e8';
 const unit4SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-4.js');
 const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
   && gitBlobSha(fs.readFileSync(unit4SourcePath, 'utf8')) === APPROVED_UNIT4_REWRITE_BLOB;

@@ -595,7 +595,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Sweet potatoes reached China by the Pacific road: Chinese merchants brought them from the Spanish Philippines, and in southern China officials promoted them in 1594, a famine year. Near the mouth of the Congo River, in Central Africa, Portuguese traders brought cassava from Brazil, and farmers took it up. Cassava survives drought and locusts, which made it a food to fall back on. In Ireland, the potato had become a main food by the 1700s."
+            "html": "Sweet potatoes reached China by more than one route. On one, they crossed the Pacific to the Spanish Philippines, and Chinese merchants carried them on to Fujian, in southern China, where officials promoted them in 1594, a famine year. Near the mouth of the Congo River, in Central Africa, Portuguese traders brought cassava from Brazil, and farmers took it up. Cassava survives drought and locusts, which made it a food to fall back on. In Ireland, the potato had become a main food by the 1700s."
           },
           {
             "type": "p",
