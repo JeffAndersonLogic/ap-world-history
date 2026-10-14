@@ -1839,10 +1839,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
-        { text: 'Finish Checkpoint 2, and any other required 4.2 module you did not complete in class.', due: 'Wednesday, November 4' }
+        { text: 'Finish Checkpoint 2, and any other required 4.2 module you did not complete in class.', due: 'Tuesday, November 3' }
       ],
-      homeworkDue: 'Wednesday, November 4',
-      dueDate: '2026-11-04'
+      homeworkDue: 'Tuesday, November 3',
+      dueDate: '2026-11-03'
     },
     /* 2026-11-02  <-  lesson-4-2-exploration.js */
     {
@@ -1867,7 +1867,35 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
-        { text: 'Finish Checkpoint 2, and any other required 4.2 module you did not complete in class.', due: 'Thursday, November 5' }
+        { text: 'Finish Checkpoint 2, and any other required 4.2 module you did not complete in class.', due: 'Wednesday, November 4' }
+      ],
+      homeworkDue: 'Wednesday, November 4',
+      dueDate: '2026-11-04'
+    },
+    /* 2026-11-03  <-  lesson-4-3-columbian-exchange.js */
+    {
+      date: '2026-11-03',
+      cohort: 'green',
+      unit: 'Unit 4: Transoceanic Interconnections',
+      topic: 'Columbian Exchange',
+      learningTargets: [
+        { text: 'I can explain what caused the Columbian Exchange: ships crossing the Atlantic, and later the Pacific, and coming back, carrying plants, animals, and germs, some on purpose and some by accident.', label: 'Humans and the Environment' },
+        { text: 'I can explain how diseases from the Eastern Hemisphere, such as smallpox, measles, and malaria, and disease vectors, such as rats and mosquitoes, crossed to the Americas, and why these diseases had catastrophic effects on many Indigenous populations.', label: 'Humans and the Environment' },
+        { text: 'I can explain the effects of the exchange on both hemispheres. In the Americas: animals and crops Europeans brought, foods enslaved Africans brought, and cash crops grown on plantations with coerced labor. In Afro-Eurasia: American staple crops that improved nutrition.', label: 'Humans and the Environment' }
+      ],
+      successCriteria: [
+        { text: 'I can state the cause of the Columbian Exchange and give one thing that crossed on purpose and one that crossed by accident.', label: 'Humans and the Environment' },
+        { text: 'I can name a disease and a disease vector, and give two reasons these diseases were so deadly in the Americas, including one about the conditions people lived in, such as war, forced labor, or hunger.', label: 'Humans and the Environment' },
+        { text: 'I can explain one effect in the Americas and one in Afro-Eurasia, each with a specific animal, crop, or food and the people it affected.', label: 'Humans and the Environment' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.3 module you did not complete in class.', due: 'Thursday, November 5' }
       ],
       homeworkDue: 'Thursday, November 5',
       dueDate: '2026-11-05'
@@ -1875,7 +1903,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
     /* 2026-11-04  <-  lesson-4-3-columbian-exchange.js */
     {
       date: '2026-11-04',
-      cohort: 'green',
+      cohort: 'silver',
       unit: 'Unit 4: Transoceanic Interconnections',
       topic: 'Columbian Exchange',
       learningTargets: [
@@ -1897,34 +1925,346 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       homework: [
         { text: 'Finish Checkpoint 2, and any other required 4.3 module you did not complete in class.', due: 'Friday, November 6' }
       ],
-      homeworkDue: 'Friday, November 6'
+      homeworkDue: 'Friday, November 6',
+      dueDate: '2026-11-06'
     },
-    /* 2026-11-05  <-  lesson-4-3-columbian-exchange.js */
+    /* 2026-11-05  <-  lesson-4-4-maritime-empires-established.js */
     {
       date: '2026-11-05',
-      cohort: 'silver',
+      cohort: 'green',
       unit: 'Unit 4: Transoceanic Interconnections',
-      topic: 'Columbian Exchange',
+      topic: 'Maritime Empires Established',
       learningTargets: [
-        { text: 'I can explain what caused the Columbian Exchange: ships crossing the Atlantic, and later the Pacific, and coming back, carrying plants, animals, and germs, some on purpose and some by accident.', label: 'Humans and the Environment' },
-        { text: 'I can explain how diseases from the Eastern Hemisphere, such as smallpox, measles, and malaria, and disease vectors, such as rats and mosquitoes, crossed to the Americas, and why these diseases had catastrophic effects on many Indigenous populations.', label: 'Humans and the Environment' },
-        { text: 'I can explain the effects of the exchange on both hemispheres. In the Americas: animals and crops Europeans brought, foods enslaved Africans brought, and cash crops grown on plantations with coerced labor. In Afro-Eurasia: American staple crops that improved nutrition.', label: 'Humans and the Environment' }
+        { text: 'I can explain how European maritime empires expanded through trading posts and territorial conquest, and how participation in expanding maritime trade increased the influence of African states such as Kongo and Asante.', label: 'Governance' },
+        { text: 'I can explain how Indian Ocean trade changed after European arrival while intra-Asian trade and Asian, African, and Middle Eastern merchants continued to flourish.', label: 'Economic Systems' },
+        { text: 'I can explain continuity and change in colonial labor systems, including the adaptation of the Incan mit’a and the growth of encomienda, hacienda, indentured servitude, and chattel slavery.', label: 'Economic Systems' }
       ],
       successCriteria: [
-        { text: 'I can state the cause of the Columbian Exchange and give one thing that crossed on purpose and one that crossed by accident.', label: 'Humans and the Environment' },
-        { text: 'I can name a disease and a disease vector, and give two reasons these diseases were so deadly in the Americas, including one about the conditions people lived in, such as war, forced labor, or hunger.', label: 'Humans and the Environment' },
-        { text: 'I can explain one effect in the Americas and one in Afro-Eurasia, each with a specific animal, crop, or food and the people it affected.', label: 'Humans and the Environment' }
+        { text: 'I can use specific evidence from at least one European maritime empire and one African state to explain how expanding trade networks changed state power.', label: 'Governance' },
+        { text: 'I can identify one European disruption to Indian Ocean trade and one important continuity involving intra-Asian commerce or merchants such as Gujaratis, Omanis, Swahili Arabs, or Javanese.', label: 'Economic Systems' },
+        { text: 'I can compare one existing labor system with one new or expanded colonial labor system and explain how both served agricultural or extractive economies.', label: 'Economic Systems' }
       ],
       modules: [
+        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: [
-        { text: 'Finish Checkpoint 2, and any other required 4.3 module you did not complete in class.', due: 'Monday, November 9' }
+      homework: []
+    },
+    /* 2026-11-06  <-  lesson-4-4-maritime-empires-established.js */
+    {
+      date: '2026-11-06',
+      cohort: 'silver',
+      unit: 'Unit 4: Transoceanic Interconnections',
+      topic: 'Maritime Empires Established',
+      learningTargets: [
+        { text: 'I can explain how European maritime empires expanded through trading posts and territorial conquest, and how participation in expanding maritime trade increased the influence of African states such as Kongo and Asante.', label: 'Governance' },
+        { text: 'I can explain how Indian Ocean trade changed after European arrival while intra-Asian trade and Asian, African, and Middle Eastern merchants continued to flourish.', label: 'Economic Systems' },
+        { text: 'I can explain continuity and change in colonial labor systems, including the adaptation of the Incan mit’a and the growth of encomienda, hacienda, indentured servitude, and chattel slavery.', label: 'Economic Systems' }
       ],
-      homeworkDue: 'Monday, November 9'
+      successCriteria: [
+        { text: 'I can use specific evidence from at least one European maritime empire and one African state to explain how expanding trade networks changed state power.', label: 'Governance' },
+        { text: 'I can identify one European disruption to Indian Ocean trade and one important continuity involving intra-Asian commerce or merchants such as Gujaratis, Omanis, Swahili Arabs, or Javanese.', label: 'Economic Systems' },
+        { text: 'I can compare one existing labor system with one new or expanded colonial labor system and explain how both served agricultural or extractive economies.', label: 'Economic Systems' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: []
+    },
+    /* 2026-11-09  <-  lesson-4-5-maritime-empires-maintained.js */
+    {
+      date: '2026-11-09',
+      cohort: 'green',
+      unit: 'Unit 4: Transoceanic Interconnections',
+      topic: 'Maritime Empires Maintained and Developed',
+      learningTargets: [
+        { text: 'I can explain how rulers used mercantilism, chartered monopoly companies, and economic rivalry to maintain and develop maritime empires.', label: 'Governance' },
+        { text: 'I can explain continuity and change in exchange networks, including global silver flows, chartered companies, Atlantic trade, and the continued importance of regional Afro-Eurasian markets.', label: 'Economic Systems' },
+        { text: 'I can explain political, economic, and social effects of expanding exchange, including intensified peasant/artisan labor and changes to gender and family patterns in Africa associated with the trade of enslaved persons.', label: 'Social Interactions and Organization' }
+      ],
+      successCriteria: [
+        { text: 'I can explain how mercantilist rules and joint-stock companies such as the VOC or British EIC helped states mobilize capital, protect monopolies, and compete for overseas trade and territory.', label: 'Governance' },
+        { text: 'I can trace silver and Atlantic exchange across hemispheres while also explaining one important continuity in established Afro-Eurasian regional markets or commercial practices.', label: 'Economic Systems' },
+        { text: 'I can explain how growing demand intensified peasant or artisan labor in Europe, India, or China and how the Atlantic slave trade reshaped demographic, gender, family, and cultural patterns in parts of Africa and the Americas.', label: 'Social Interactions and Organization' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: []
+    },
+    /* 2026-11-10  <-  lesson-4-5-maritime-empires-maintained.js */
+    {
+      date: '2026-11-10',
+      cohort: 'silver',
+      unit: 'Unit 4: Transoceanic Interconnections',
+      topic: 'Maritime Empires Maintained and Developed',
+      learningTargets: [
+        { text: 'I can explain how rulers used mercantilism, chartered monopoly companies, and economic rivalry to maintain and develop maritime empires.', label: 'Governance' },
+        { text: 'I can explain continuity and change in exchange networks, including global silver flows, chartered companies, Atlantic trade, and the continued importance of regional Afro-Eurasian markets.', label: 'Economic Systems' },
+        { text: 'I can explain political, economic, and social effects of expanding exchange, including intensified peasant/artisan labor and changes to gender and family patterns in Africa associated with the trade of enslaved persons.', label: 'Social Interactions and Organization' }
+      ],
+      successCriteria: [
+        { text: 'I can explain how mercantilist rules and joint-stock companies such as the VOC or British EIC helped states mobilize capital, protect monopolies, and compete for overseas trade and territory.', label: 'Governance' },
+        { text: 'I can trace silver and Atlantic exchange across hemispheres while also explaining one important continuity in established Afro-Eurasian regional markets or commercial practices.', label: 'Economic Systems' },
+        { text: 'I can explain how growing demand intensified peasant or artisan labor in Europe, India, or China and how the Atlantic slave trade reshaped demographic, gender, family, and cultural patterns in parts of Africa and the Americas.', label: 'Social Interactions and Organization' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: []
+    },
+    /* 2026-11-11  <-  lesson-4-6-internal-external-challenges.js */
+    {
+      date: '2026-11-11',
+      cohort: 'green',
+      unit: 'Unit 4: Transoceanic Interconnections',
+      topic: 'Internal Challenges to State Power',
+      learningTargets: [
+        { text: 'I can explain how state expansion and centralization produced local resistance, including the causes, organization, and outcomes of the Pueblo Revolt of 1680.', label: 'Governance' },
+        { text: 'I can explain how enslaved Africans resisted colonial rule through escape, autonomous maroon communities, cultural preservation, and organized revolt.', label: 'Governance' }
+      ],
+      successCriteria: [
+        { text: 'I can explain the specific grievances behind the Pueblo Revolt, how Popé coordinated resistance, and what the revolt changed and failed to change about Spanish colonial rule.', label: 'Governance' },
+        { text: 'I can describe maroon communities as organized resistance, use Palmares as a specific example, and explain how geography, community organization, and colonial vulnerability made autonomous resistance possible.', label: 'Governance' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: []
+    },
+    /* 2026-11-12  <-  lesson-4-6-internal-external-challenges.js */
+    {
+      date: '2026-11-12',
+      cohort: 'silver',
+      unit: 'Unit 4: Transoceanic Interconnections',
+      topic: 'Internal Challenges to State Power',
+      learningTargets: [
+        { text: 'I can explain how state expansion and centralization produced local resistance, including the causes, organization, and outcomes of the Pueblo Revolt of 1680.', label: 'Governance' },
+        { text: 'I can explain how enslaved Africans resisted colonial rule through escape, autonomous maroon communities, cultural preservation, and organized revolt.', label: 'Governance' }
+      ],
+      successCriteria: [
+        { text: 'I can explain the specific grievances behind the Pueblo Revolt, how Popé coordinated resistance, and what the revolt changed and failed to change about Spanish colonial rule.', label: 'Governance' },
+        { text: 'I can describe maroon communities as organized resistance, use Palmares as a specific example, and explain how geography, community organization, and colonial vulnerability made autonomous resistance possible.', label: 'Governance' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: []
+    },
+    /* 2026-11-13  <-  lesson-4-7-changing-social-hierarchies.js */
+    {
+      date: '2026-11-13',
+      cohort: 'green',
+      unit: 'Unit 4: Transoceanic Interconnections',
+      topic: 'Changing Social Hierarchies',
+      learningTargets: [
+        { text: 'I can explain how states accommodated the ethnic and religious diversity of their subjects in some cases, and suppressed or restricted certain groups in others.', label: 'Social Interactions and Organization' },
+        { text: 'I can analyze how the casta system organized colonial society in Spanish America, including its major categories (peninsulares, creoles, mestizos, mulattos, indigenous, enslaved Africans) and their legal implications.', label: 'Social Interactions and Organization' },
+        { text: 'I can explain how the power of existing political and economic elites changed as they confronted increasingly powerful monarchs and imperial states.', label: 'Social Interactions and Organization' }
+      ],
+      successCriteria: [
+        { text: 'I can give examples of states accommodating diversity (e.g., the Ottoman millet system, acceptance of Jews expelled from Spain and Portugal) and of states suppressing it (e.g., restrictive policies against Han Chinese in Qing China).', label: 'Social Interactions and Organization' },
+        { text: 'I can name and describe the major casta categories in Spanish colonial America, explain how casta status was determined, and give one specific example of how casta affected a person\'s legal rights or opportunities.', label: 'Social Interactions and Organization' },
+        { text: 'I can use specific examples such as Ottoman timar holders, Russian boyars, or European nobility to explain how existing elites gained, lost, or renegotiated power as states centralized.', label: 'Social Interactions and Organization' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: []
+    },
+    /* 2026-11-16  <-  lesson-4-7-changing-social-hierarchies.js */
+    {
+      date: '2026-11-16',
+      cohort: 'silver',
+      unit: 'Unit 4: Transoceanic Interconnections',
+      topic: 'Changing Social Hierarchies',
+      learningTargets: [
+        { text: 'I can explain how states accommodated the ethnic and religious diversity of their subjects in some cases, and suppressed or restricted certain groups in others.', label: 'Social Interactions and Organization' },
+        { text: 'I can analyze how the casta system organized colonial society in Spanish America, including its major categories (peninsulares, creoles, mestizos, mulattos, indigenous, enslaved Africans) and their legal implications.', label: 'Social Interactions and Organization' },
+        { text: 'I can explain how the power of existing political and economic elites changed as they confronted increasingly powerful monarchs and imperial states.', label: 'Social Interactions and Organization' }
+      ],
+      successCriteria: [
+        { text: 'I can give examples of states accommodating diversity (e.g., the Ottoman millet system, acceptance of Jews expelled from Spain and Portugal) and of states suppressing it (e.g., restrictive policies against Han Chinese in Qing China).', label: 'Social Interactions and Organization' },
+        { text: 'I can name and describe the major casta categories in Spanish colonial America, explain how casta status was determined, and give one specific example of how casta affected a person\'s legal rights or opportunities.', label: 'Social Interactions and Organization' },
+        { text: 'I can use specific examples such as Ottoman timar holders, Russian boyars, or European nobility to explain how existing elites gained, lost, or renegotiated power as states centralized.', label: 'Social Interactions and Organization' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '09', title: 'BeInTheRoom' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: []
+    },
+    /* 2026-11-17  <-  lesson-4-8-continuity-and-change.js */
+    {
+      date: '2026-11-17',
+      cohort: 'green',
+      unit: 'Unit 4: Transoceanic Interconnections',
+      topic: 'Continuity and Change in the Period from c. 1450 to c. 1750',
+      learningTargets: [
+        { text: 'I can explain how economic developments from c. 1450 to c. 1750 — including global silver flows, mercantilism, plantation expansion, and intensified production — changed demand for labor and redistributed wealth and power.', label: 'Economic Systems' },
+        { text: 'I can explain how those economic developments affected social structures, including coerced labor and slavery, racial and casta hierarchies, new and changing elites, and gender and family patterns.', label: 'Social Interactions and Organization' },
+        { text: 'I can make a continuity-and-change argument about social structures from c. 1450 to c. 1750 using evidence from multiple Unit 4 topics and explaining why some structures changed while others persisted.', label: 'Argumentation' }
+      ],
+      successCriteria: [
+        { text: 'I can connect one specific economic development — such as plantation growth, silver extraction, mercantilism, or intensified textile production — to a specific change in labor demand, wealth, or political-economic power.', label: 'Economic Systems' },
+        { text: 'I can use at least two specific social consequences, such as expanded chattel slavery, encomienda/hacienda or mita labor, casta categories, changes to African gender/family patterns, or changing elite power, and explain the economic mechanism behind each.', label: 'Social Interactions and Organization' },
+        { text: 'I can identify one meaningful continuity and one meaningful change in social structure, support both with evidence from different Unit 4 topics, and explain why the balance of continuity and change occurred.', label: 'Argumentation' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: []
+    },
+    /* 2026-11-18  <-  lesson-4-8-continuity-and-change.js */
+    {
+      date: '2026-11-18',
+      cohort: 'silver',
+      unit: 'Unit 4: Transoceanic Interconnections',
+      topic: 'Continuity and Change in the Period from c. 1450 to c. 1750',
+      learningTargets: [
+        { text: 'I can explain how economic developments from c. 1450 to c. 1750 — including global silver flows, mercantilism, plantation expansion, and intensified production — changed demand for labor and redistributed wealth and power.', label: 'Economic Systems' },
+        { text: 'I can explain how those economic developments affected social structures, including coerced labor and slavery, racial and casta hierarchies, new and changing elites, and gender and family patterns.', label: 'Social Interactions and Organization' },
+        { text: 'I can make a continuity-and-change argument about social structures from c. 1450 to c. 1750 using evidence from multiple Unit 4 topics and explaining why some structures changed while others persisted.', label: 'Argumentation' }
+      ],
+      successCriteria: [
+        { text: 'I can connect one specific economic development — such as plantation growth, silver extraction, mercantilism, or intensified textile production — to a specific change in labor demand, wealth, or political-economic power.', label: 'Economic Systems' },
+        { text: 'I can use at least two specific social consequences, such as expanded chattel slavery, encomienda/hacienda or mita labor, casta categories, changes to African gender/family patterns, or changing elite power, and explain the economic mechanism behind each.', label: 'Social Interactions and Organization' },
+        { text: 'I can identify one meaningful continuity and one meaningful change in social structure, support both with evidence from different Unit 4 topics, and explain why the balance of continuity and change occurred.', label: 'Argumentation' }
+      ],
+      modules: [
+        { number: '01', title: 'Map & Geography Check' },
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '03', title: 'Content Delivery' },
+        { number: '04', title: 'BeSurreal' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '06', title: 'Checkpoint 1' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '08', title: 'Primary Source' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: []
+    },
+    /* 2026-11-19  <-  written by hand in the schedule */
+    {
+      date: '2026-11-19',
+      cohort: 'green',
+      unit: 'Units 3 and 4',
+      topic: 'Era 3 Study Guide Work Day',
+      learningTargets: [
+        { text: 'I can identify which Unit 3 and Unit 4 concepts I need to review before the Era 3 exam.' }
+      ],
+      successCriteria: [
+        { text: 'I can use my study guide to identify gaps and plan my review.' }
+      ],
+      homework: []
+    },
+    /* 2026-11-20  <-  written by hand in the schedule */
+    {
+      date: '2026-11-20',
+      cohort: 'silver',
+      unit: 'Units 3 and 4',
+      topic: 'Era 3 Study Guide Work Day',
+      learningTargets: [
+        { text: 'I can identify which Unit 3 and Unit 4 concepts I need to review before the Era 3 exam.' }
+      ],
+      successCriteria: [
+        { text: 'I can use my study guide to identify gaps and plan my review.' }
+      ],
+      homework: []
+    },
+    /* 2026-11-23  <-  written by hand in the schedule */
+    {
+      date: '2026-11-23',
+      cohort: 'green',
+      unit: 'Units 3 and 4',
+      topic: 'Era 3 Exam, c. 1450 to c. 1750',
+      homework: []
+    },
+    /* 2026-11-24  <-  written by hand in the schedule */
+    {
+      date: '2026-11-24',
+      cohort: 'silver',
+      unit: 'Units 3 and 4',
+      topic: 'Era 3 Exam, c. 1450 to c. 1750',
+      homework: []
     }
   ],
 
@@ -1932,7 +2272,8 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
     { date: '2026-08-25', title: 'Foundations Assessment', detail: 'Covers Foundations 0 to 5, in class Monday, August 24 for Green and Tuesday, August 25 for Silver', type: 'Test' },
     { date: '2026-09-17', title: 'Unit 1 Quiz', detail: 'Covers Topics 1.1 to 1.7, state building and societal organization across six Unit 1 regions, c. 1200 to c. 1450. Given at the start of the block on the same day Topic 2.1 begins, Wednesday, September 16 for Green and Thursday, September 17 for Silver, not on a separate day.', type: 'Quiz', greenDate: '2026-09-16', silverDate: '2026-09-17' },
     { date: '2026-10-08', title: 'Eras 2 Exam, c. 1200 to c. 1450', detail: 'Covers Units 1 and 2 in full: state building across six Unit 1 regions, plus the three Afro-Eurasian trade networks of Unit 2 and their cultural, environmental, and comparative consequences. PSAT scheduling shift: Tuesday, October 6 is not a Green or Silver day; Green takes the exam Wednesday, October 7, and Silver takes it Thursday, October 8.', type: 'Exam', greenDate: '2026-10-07', silverDate: '2026-10-08' },
-    { date: '2026-10-29', title: 'Unit 3 Quiz', detail: 'Covers Topics 3.1 to 3.4, land-based empires, c. 1450 to c. 1750: how empires expanded, how rulers administered and justified their rule, how belief systems shaped and divided them, and how to compare them. In class Wednesday, October 28 for Green and Thursday, October 29 for Silver.', type: 'Quiz', greenDate: '2026-10-28', silverDate: '2026-10-29' }
+    { date: '2026-10-29', title: 'Unit 3 Quiz', detail: 'Covers Topics 3.1 to 3.4, land-based empires, c. 1450 to c. 1750: how empires expanded, how rulers administered and justified their rule, how belief systems shaped and divided them, and how to compare them. In class Wednesday, October 28 for Green and Thursday, October 29 for Silver.', type: 'Quiz', greenDate: '2026-10-28', silverDate: '2026-10-29' },
+    { date: '2026-11-24', title: 'Era 3 Exam, c. 1450 to c. 1750', detail: 'Covers Units 3 and 4, c. 1450 to c. 1750. In class Monday, November 23 for Green and Tuesday, November 24 for Silver.', type: 'Exam', greenDate: '2026-11-23', silverDate: '2026-11-24' }
   ],
 
   reminders: [
