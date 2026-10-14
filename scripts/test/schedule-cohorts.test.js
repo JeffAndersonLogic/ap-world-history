@@ -290,6 +290,35 @@ for (const day of (board && board.days) || []) {
 if (boardListMismatch.length) fail(boardListMismatch.join('; '));
 else ok('the announcements board prints the same required modules the schedule names');
 
+// Jeff's corrected Unit 4 calendar (2026-10-14). Pin both cohorts so a
+// one-day shift cannot pass merely because the generators agree with it.
+const unit4Dates = [
+  ['4.1', '2026-10-28', '2026-10-29'],
+  ['4.2', '2026-10-30', '2026-11-02'],
+  ['4.3', '2026-11-03', '2026-11-04'],
+  ['4.4', '2026-11-05', '2026-11-06'],
+  ['4.5', '2026-11-09', '2026-11-10'],
+  ['4.6', '2026-11-11', '2026-11-12'],
+  ['4.7', '2026-11-13', '2026-11-16'],
+  ['4.8', '2026-11-17', '2026-11-18']
+];
+for (const [topic, green, silver] of unit4Dates) {
+  for (const [cohort, date] of [['green', green], ['silver', silver]]) {
+    const actual = days.filter((d) => d.topic === topic && d.cohort === cohort);
+    if (actual.length === 1 && actual[0].date === date) ok(`${topic} ${cohort}: ${date}`);
+    else fail(`${topic} ${cohort} must meet ${date}`);
+  }
+}
+for (const [cohort, date] of [['green', '2026-11-19'], ['silver', '2026-11-20']]) {
+  const actual = days.find((d) => d.date === date && d.cohort === cohort);
+  if (actual && actual.topicTitle === 'Era 3 Study Guide Work Day') ok(`${cohort} study guide work day: ${date}`);
+  else fail(`${cohort} study guide work day must be ${date}`);
+}
+
+const era3 = schedule.assessments.find((a) => a.title === 'Era 3 Exam, c. 1450 to c. 1750');
+if (era3 && era3.greenDate === '2026-11-23' && era3.silverDate === '2026-11-24') ok('Era 3 exam: Green November 23, Silver November 24');
+else fail('Era 3 exam must be November 23 for Green and November 24 for Silver');
+
 console.log('');
 if (failures) {
   console.log(`Alternating block: ${failures} of ${checks} checks failed.`);

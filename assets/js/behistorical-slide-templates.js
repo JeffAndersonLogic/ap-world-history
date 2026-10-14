@@ -718,6 +718,60 @@ function splitScenes(s){
   return board('split-scenes',themeOf(t,'dark'),pad(head(s)+`<div class="bht-sx">${col(L,'l')}${col(R,'r')}</div>`+bottom+foot(s.footer),'tight'));
 }
 
+/* A ledger of jobs that all pay into one outcome: up to five rows, each a
+   lettered seal, a name, and what did the job (`tool`) over what it achieved
+   (`result`), with a bracket down the right edge gathering every row into the
+   `payoff`. Built for the Topic 3.4 retelling slide, four jobs and one
+   increased influence, where the 2x2 grid of small cards was hard to read from
+   the back of the room: one row per job reads left to right in large type, the
+   way a student retells it. A row may carry `text` instead of tool and
+   result. The seal letter defaults to the name's first letter. */
+function ledger(s){
+  const t=s.template||{},R=arr(t.rows).slice(0,5),n=Math.max(1,R.length);
+  // The name column is 230u. Cinzel runs about .76em a letter, so the longest
+  // name sets one size for the whole slide, and never above the row's own size.
+  const longest=Math.max(1,...R.map(x=>String(x.name||'').length));
+  const nameMax=n>=5?30:n===4?36:40;
+  const nm=Math.max(20,Math.min(nameMax,Math.floor(214/(longest*.76))));
+  const tx=n>=5?25:n===4?29:32;
+  const body=x=>x.tool||x.result?`${x.tool?`<p class="tool">${rich(x.tool)}</p>`:''}${x.result?`<p class="res"><i aria-hidden="true">&rarr;</i> ${rich(x.result)}</p>`:''}`:`<p class="res">${rich(x.text)}</p>`;
+  const rows=R.map(x=>{
+    const mark=String(x.mark||String(x.name||'').trim().charAt(0)||'').slice(0,2);
+    return `<li class="bht-lg-row"><span class="seal" aria-hidden="true">${esc(mark)}</span><span class="nm" style="font-size:calc(${nm}*var(--u))">${esc(x.name)}</span><div class="tx" style="font-size:calc(${tx}*var(--u))">${body(x)}</div></li>`;
+  }).join('');
+  const pay=t.payoff?`<div class="bht-lg-pay"><div class="br" aria-hidden="true"></div><div class="pt">${t.payoffLabel?`<div class="bht-eb">${esc(t.payoffLabel)}</div>`:''}<p>${rich(t.payoff)}</p></div></div>`:'';
+  return board('ledger',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-lg${pay?' has-pay':''}"><ol>${rows}</ol>${pay}</div>`)+foot(s.footer),'tight'));
+}
+
+/* A good comparison beside a bad one, each stamped with its verdict: the
+   pair named large, one line on why, and a stamp naming the job (or saying
+   the jobs differ). Under them, the questions every comparison then has to
+   answer. Built for the Topic 3.4 comparison rule, where four small cards
+   (Good, Bad, Ask, Land) made the room read a rule instead of seeing one.
+   The verdict is carried by a symbol and a word as well as the colour. */
+function verdict(s){
+  const t=s.template||{},C=arr(t.cases).slice(0,2),Q=arr(t.questions).slice(0,3);
+  const card=c=>{
+    const good=c.verdict!=='bad';
+    return `<div class="bht-vd-case ${good?'good':'bad'}"><div class="vh"><span class="sym" aria-hidden="true">${good?'&#10003;':'&#10007;'}</span><span class="vw">${esc(c.label||(good?'Good comparison':'Bad comparison'))}</span></div><div class="pair"><span>${esc(c.a)}</span><i>vs.</i><span>${esc(c.b)}</span></div>${c.text?`<p class="why">${rich(c.text)}</p>`:''}${c.stamp?`<div class="stamp">${esc(c.stamp)}</div>`:''}</div>`;
+  };
+  const qs=Q.length?`<div class="bht-vd-q">${t.questionsLabel?`<div class="bht-eb">${esc(t.questionsLabel)}</div>`:''}<div class="qs" style="grid-template-columns:repeat(${Q.length},minmax(0,1fr))">${Q.map(q=>`<div class="q">${q.tag?`<b>${esc(q.tag)}</b>`:''}<p>${rich(q.text)}</p></div>`).join('')}</div></div>`:'';
+  return board('verdict',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-vd" style="grid-template-columns:repeat(${Math.max(1,C.length)},minmax(0,1fr))">${C.map(card).join('')}</div>`)+qs+foot(s.footer),'tight'));
+}
+
+/* Two cases weighed on one beam: the job they share sits on the pivot, each
+   case rests on an end of the beam with its name, date and what it did, and
+   the claim the pair supports runs underneath. For "same job, different
+   tools" when there is no picture worth putting over each side (that is
+   split-scenes); built for Topic 3.4's Expand slide. */
+function balance(s){
+  const t=s.template||{},L=t.left||{},R=t.right||{};
+  const side=(x,c)=>`<div class="bht-bl-pan ${c}">${x.tag?`<div class="bht-eb">${esc(x.tag)}</div>`:''}<div class="nm">${esc(x.name)}</div>${x.when?`<div class="wh">${esc(x.when)}</div>`:''}${x.text?`<p>${rich(x.text)}</p>`:''}</div>`;
+  const pivot=`<div class="bht-bl-pivot"><div class="seal"><span>${esc(t.jobLabel||'Same job')}</span><b>${esc(t.job)}</b></div><div class="tri" aria-hidden="true"></div></div>`;
+  const claim=t.claim?`<div class="bht-bl-claim">${t.claimLabel?`<span class="tg">${esc(t.claimLabel)}</span>`:''}<p>${rich(t.claim)}</p></div>`:'';
+  return board('balance',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-bl"><div class="beam" aria-hidden="true"></div>${side(L,'l')}${pivot}${side(R,'r')}</div>`)+claim+foot(s.footer),'tight'));
+}
+
 const KINDS={
   'equation':equation,'equation-stack':equationStack,'equation-remove':equationRemove,
   'exchange':exchange,'exchange-flow':exchangeFlow,'exchange-hub':exchangeHub,
@@ -741,7 +795,9 @@ const KINDS={
   /* round 4 */
   'story-steps':storySteps,'frame-pair':fPair,
   /* round 5 */
-  'story-scene':storyScene,'split-scenes':splitScenes
+  'story-scene':storyScene,'split-scenes':splitScenes,
+  /* round 6 */
+  'ledger':ledger,'verdict':verdict,'balance':balance
 };
 
 /* ── the Key Concept band ─────────────────────────────────────────────── */
@@ -1484,6 +1540,73 @@ const CSS=`
 .bht-sx-both .chips span{font:700 16u/1.2 'Montserrat',Helvetica,sans-serif;color:#101213;background:#c9a46a;border-radius:999u;padding:7u 14u}
 .paper .bht-sx-both .chips span{background:#1a1c1d;color:#f5f0e7}
 .bht-split-scenes .bht-h{font-size:36u;max-width:none}
+
+/* round 6: verdict */
+.bht-verdict .bht-h{font-size:40u;max-width:none}
+.bht-vd{display:grid;column-gap:28u;flex:1 1 auto;min-height:0}
+.bht-vd-case{position:relative;display:flex;flex-direction:column;justify-content:flex-start;gap:16u;padding:24u 30u 26u;border-radius:12u;background:#1a1d1f;border:1u solid #2a3134;border-top:8u solid var(--vc);min-height:0;--vc:#7fa879}
+.bht-vd-case.bad{--vc:#d38a80}
+.paper .bht-vd-case{background:#fffdf7;border-color:#ddd2be;border-top-color:var(--vc)}
+.paper .bht-vd-case.good{--vc:#3f6b39}
+.paper .bht-vd-case.bad{--vc:#9a3f35}
+.bht-vd-case .vh{display:flex;align-items:center;gap:14u}
+.bht-vd-case .sym{width:46u;height:46u;flex:none;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--vc);color:#101213;font:900 28u/1 'Montserrat',Helvetica,sans-serif}
+.paper .bht-vd-case .sym{color:#fffdf7}
+.bht-vd-case .vw{font:800 17u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--vc)}
+.bht-vd-case .pair{display:flex;flex-direction:column;gap:2u;font:800 34u/1.12 'Cinzel',Georgia,serif;color:var(--head)}
+.bht-vd-case .pair i{font:italic 400 22u/1.2 'Libre Baskerville',Georgia,serif;color:var(--soft)}
+.bht-vd-case .why{font-size:25u;line-height:1.35;color:var(--fg)}
+.dark .bht-vd-case .why{color:#ddd6ca}
+.bht-vd-case .stamp{align-self:flex-start;transform:rotate(-3deg);border:3u solid var(--vc);border-radius:6u;padding:6u 14u;font:900 18u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--vc)}
+.bht-vd-q{display:flex;flex-direction:column;gap:10u;border-top:2u solid var(--rulec);padding-top:14u}
+.bht-vd-q .qs{display:grid;column-gap:28u}
+.bht-vd-q .q{display:flex;align-items:baseline;gap:14u}
+.bht-vd-q .q b{flex:none;font:900 15u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#101213;background:#c9a46a;border-radius:4u;padding:5u 9u}
+.paper .bht-vd-q .q b{background:#1a1c1d;color:#f5f0e7}
+.bht-vd-q .q p{font-size:24u;line-height:1.3;color:var(--head)}
+/* round 6: balance */
+.bht-balance .bht-h{font-size:40u;max-width:none}
+.bht-bl{position:relative;flex:1 1 auto;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) 210u minmax(0,1fr);align-items:center}
+.bht-bl .beam{position:absolute;left:4%;right:4%;top:50%;height:6u;margin-top:-3u;background:#c9a46a;border-radius:3u}
+.paper .bht-bl .beam{background:#8c5a2b}
+.bht-bl-pan{position:relative;z-index:1;display:flex;flex-direction:column;gap:10u;padding:26u 30u;border-radius:12u;background:#1a1d1f;border:2u solid #c9a46a;min-width:0}
+.paper .bht-bl-pan{background:#fffdf7;border-color:#8c5a2b}
+.bht-bl-pan .nm{font:800 36u/1.1 'Cinzel',Georgia,serif;color:var(--head);overflow-wrap:break-word}
+.bht-bl-pan .wh{font:800 22u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.08em;color:var(--acc)}
+.bht-bl-pan p{font-size:26u;line-height:1.35;color:var(--fg)}
+.dark .bht-bl-pan p{color:#ddd6ca}
+.bht-bl-pivot{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center}
+.bht-bl-pivot .seal{width:178u;height:178u;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4u;background:#c9a46a;color:#101213;box-shadow:0 0 0 6u #101213,0 0 0 9u #c9a46a;text-align:center;padding:0 10u}
+.paper .bht-bl-pivot .seal{background:#6b3e1f;color:#fffdf7;box-shadow:0 0 0 6u #f5f0e7,0 0 0 9u #6b3e1f}
+.bht-bl-pivot .seal span{font:800 13u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.18em;text-transform:uppercase}
+.bht-bl-pivot .seal b{font:800 30u/1.05 'Cinzel',Georgia,serif;color:inherit;text-transform:uppercase;overflow-wrap:break-word}
+.bht-bl-pivot .tri{width:0;height:0;margin-top:14u;border-left:34u solid transparent;border-right:34u solid transparent;border-bottom:44u solid #c9a46a}
+.paper .bht-bl-pivot .tri{border-bottom-color:#6b3e1f}
+.bht-bl-claim{display:flex;align-items:baseline;gap:16u;border-left:6u solid #c9a46a;background:#1a1d1f;border-radius:0 10u 10u 0;padding:14u 22u}
+.paper .bht-bl-claim{background:#fffdf7;border-left-color:#8c5a2b}
+.bht-bl-claim .tg{flex:none;font:900 14u/1.2 'Montserrat',Helvetica,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--acc)}
+.bht-bl-claim p{font-size:25u;line-height:1.35;color:var(--head)}
+/* round 6: ledger */
+.bht-ledger .bht-h{font-size:40u;max-width:none}
+.bht-lg{flex:1 1 auto;display:grid;grid-template-columns:minmax(0,1fr);column-gap:26u;min-height:0}
+.bht-lg.has-pay{grid-template-columns:minmax(0,1fr) 190u}
+.bht-lg ol{display:grid;grid-auto-rows:minmax(0,1fr);row-gap:14u;list-style:none;margin:0;padding:0;min-height:0}
+.bht-lg-row{position:relative;display:grid;grid-template-columns:76u 230u minmax(0,1fr);column-gap:22u;align-items:center;min-height:0;padding:0 34u 0 16u;border-radius:12u;background:#1a1d1f;border:1u solid #2a3134}
+.paper .bht-lg-row{background:#fffdf7;border-color:#ddd2be}
+.bht-lg-row .seal{width:76u;height:76u;border-radius:50%;display:flex;align-items:center;justify-content:center;font:800 40u/1 'Cinzel',Georgia,serif;color:#101213;background:#c9a46a;box-shadow:0 0 0 4u #101213,0 0 0 6u #c9a46a}
+.paper .bht-lg-row .seal{color:#fffdf7;background:#6b3e1f;box-shadow:0 0 0 4u #fffdf7,0 0 0 6u #6b3e1f}
+.bht-lg-row .nm{font-weight:800;font-family:'Cinzel',Georgia,serif;line-height:1.05;letter-spacing:.04em;text-transform:uppercase;color:var(--acc);overflow-wrap:break-word}
+.bht-lg-row .tx{display:flex;flex-direction:column;gap:4u;min-width:0;line-height:1.22}
+.bht-lg-row .tool{font-weight:700;color:var(--head)}
+.bht-lg-row .res{color:var(--fg)}
+.dark .bht-lg-row .res{color:#ddd6ca}
+.bht-lg-row .res i{font-style:normal;color:var(--acc);font-weight:700}
+.bht-lg.has-pay .bht-lg-row::after{content:'';position:absolute;right:-27u;top:50%;transform:translateY(-50%);border-top:11u solid transparent;border-bottom:11u solid transparent;border-left:14u solid var(--acc)}
+.bht-lg-pay{position:relative;display:flex;align-items:center;min-height:0}
+.bht-lg-pay .br{position:absolute;left:0;top:4u;bottom:4u;width:22u;border:4u solid var(--acc);border-left:0;border-radius:0 14u 14u 0}
+.bht-lg-pay .pt{position:relative;margin-left:38u;display:flex;flex-direction:column;gap:10u}
+.bht-lg-pay .pt p{font:800 30u/1.12 'Cinzel',Georgia,serif;color:var(--head);overflow-wrap:break-word}
+.bht-lg-pay .pt p b{color:var(--acc)}
 
 `.replace(/(-?)(\d+(?:\.\d+)?)u\b/g,'calc($1$2*var(--u))')
  /* The sign goes inside calc(): -7u used to become -calc(7*var(--u)), which

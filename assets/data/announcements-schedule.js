@@ -907,18 +907,9 @@ window.BEHISTORICAL_SCHEDULE = {
     },
 
     /* ---- Topic 4.3, Columbian Exchange ------ */
-    // Green Tuesday 2026-11-03 and Silver Wednesday 2026-11-04, from Jeff's
-    // corrected November Canvas calendar (2026-10-14, second correction), which
-    // marks the Green day of each Unit 4 class: 4.3 Tue 11/3, 4.4 Thu 11/5, 4.5
-    // Mon 11/9, 4.6 Wed 11/11, 4.7 Fri 11/13, 4.8 Tue 11/17, Era review Thu 11/19,
-    // Era 3 Exam Mon 11/23 (Silver Tue 11/24). Jeff confirmed 4.2's Green day is
-    // Friday 10/30, and strict alternation holds all month: Silver is the next
-    // school day after each Green day.
-    // Check with Jeff when the review day is built: his note of 2026-10-14 put
-    // the Study Guide Work Day on Wed 11/18 (Green) and Thu 11/19 (Silver), while
-    // the corrected calendar puts it on Thu 11/19 (Green) and Fri 11/20 (Silver).
-    // (Shipped first as Green 11/4 and Silver 11/5 from a misreading of the
-    // first calendar image; corrected the same day.)
+    // Corrected by Jeff's calendar and clarification, 2026-10-14:
+    // 4.2 Green is October 30, Silver November 2; 4.3 follows on
+    // Green November 3 and Silver November 4.
     // Required subset (4.3 build, 2026-10-14, under Jeff's standing rule): 02
     // First & 10, 05 Skill Builder (3.B, the CED's suggested skill), 07 Evidence
     // Lab and 10 Checkpoint 2. Checkpoint 1 and BeInTheRoom stay optional.
@@ -927,21 +918,99 @@ window.BEHISTORICAL_SCHEDULE = {
       cohort: 'green',
       topic: '4.3',
       modules: ['02', '05', '07', '10'],
-      homework: 'Finish Checkpoint 2, and any other required 4.3 module you did not complete in class.',
-      // Green's next meeting is 4.4 on Thursday 11/5 (same calendar). 4.4 is not
-      // built, so its days are not on this schedule and the due date is stated
-      // here. Delete this line when 4.4's days land.
-      homeworkDue: 'Thursday, November 5'
+      homework: 'Finish Checkpoint 2, and any other required 4.3 module you did not complete in class.'
     },
     {
       date: '2026-11-04',
       cohort: 'silver',
       topic: '4.3',
       modules: ['02', '05', '07', '10'],
-      homework: 'Finish Checkpoint 2, and any other required 4.3 module you did not complete in class.',
-      // Silver's next meeting is 4.4 on Friday 11/6. Delete this line when
-      // 4.4's days land.
-      homeworkDue: 'Friday, November 6'
+      homework: 'Finish Checkpoint 2, and any other required 4.3 module you did not complete in class.'
+    },
+
+    /* ---- Remaining Unit 4 dates ----------------------------- */
+    // Jeff's corrected November calendar, 2026-10-14. Dates only:
+    // required module subsets and homework are set during each topic build.
+    {
+      date: '2026-11-05',
+      cohort: 'green',
+      topic: '4.4'
+    },
+    {
+      date: '2026-11-06',
+      cohort: 'silver',
+      topic: '4.4'
+    },
+    {
+      date: '2026-11-09',
+      cohort: 'green',
+      topic: '4.5'
+    },
+    {
+      date: '2026-11-10',
+      cohort: 'silver',
+      topic: '4.5'
+    },
+    {
+      date: '2026-11-11',
+      cohort: 'green',
+      topic: '4.6'
+    },
+    {
+      date: '2026-11-12',
+      cohort: 'silver',
+      topic: '4.6'
+    },
+    {
+      date: '2026-11-13',
+      cohort: 'green',
+      topic: '4.7'
+    },
+    {
+      date: '2026-11-16',
+      cohort: 'silver',
+      topic: '4.7'
+    },
+    {
+      date: '2026-11-17',
+      cohort: 'green',
+      topic: '4.8'
+    },
+    {
+      date: '2026-11-18',
+      cohort: 'silver',
+      topic: '4.8'
+    },
+
+    /* ---- Era 3 Study Guide Work Day ------------------------- */
+    // Jeff confirmed November 19/20 replace the earlier November 18/19 dates.
+    {
+      date: '2026-11-19',
+      cohort: 'green',
+      topicTitle: 'Era 3 Study Guide Work Day',
+      unit: 'Units 3 and 4',
+      learningTargets: ['I can identify which Unit 3 and Unit 4 concepts I need to review before the Era 3 exam.'],
+      successCriteria: ['I can use my study guide to identify gaps and plan my review.']
+    },
+    {
+      date: '2026-11-20',
+      cohort: 'silver',
+      topicTitle: 'Era 3 Study Guide Work Day',
+      unit: 'Units 3 and 4',
+      learningTargets: ['I can identify which Unit 3 and Unit 4 concepts I need to review before the Era 3 exam.'],
+      successCriteria: ['I can use my study guide to identify gaps and plan my review.']
+    },
+    {
+      date: '2026-11-23',
+      cohort: 'green',
+      topicTitle: 'Era 3 Exam, c. 1450 to c. 1750',
+      unit: 'Units 3 and 4'
+    },
+    {
+      date: '2026-11-24',
+      cohort: 'silver',
+      topicTitle: 'Era 3 Exam, c. 1450 to c. 1750',
+      unit: 'Units 3 and 4'
     }
   ],
 
@@ -996,6 +1065,14 @@ window.BEHISTORICAL_SCHEDULE = {
       type: 'Quiz',
       greenDate: '2026-10-28',
       silverDate: '2026-10-29'
+    },
+    {
+      date: '2026-11-24',
+      title: 'Era 3 Exam, c. 1450 to c. 1750',
+      detail: 'Covers Units 3 and 4, c. 1450 to c. 1750. In class Monday, November 23 for Green and Tuesday, November 24 for Silver.',
+      type: 'Exam',
+      greenDate: '2026-11-23',
+      silverDate: '2026-11-24'
     }
   ],
 

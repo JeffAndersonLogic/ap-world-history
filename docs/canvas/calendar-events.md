@@ -2731,6 +2731,577 @@ deleted row in the schedule and every affected date moves with it.
 </table>
 ```
 
+## Topic 4.4: Maritime Empires Established
+
+**Event title:** `APW - 4.4 - Maritime Empires Established`
+
+**Assign to, one row per section:**
+
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Thursday, November 5 | nothing assigned |
+| Silver Day | Friday, November 6 | nothing assigned |
+
+```html
+<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
+    <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
+    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 4: Transoceanic Interconnections</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 4.4: Maritime Empires Established</div>
+    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Thursday, November 5</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Friday, November 6</span></span>
+    </div>
+</div>
+<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
+    <tbody>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">How Portugal, Spain, and then the Dutch, British, and French built maritime empires using three distinct models: trading post empire, territorial colonialism, and joint-stock company</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can explain how European maritime empires expanded through trading posts and territorial conquest, and how participation in expanding maritime trade increased the influence of African states such as Kongo and Asante.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how Indian Ocean trade changed after European arrival while intra-Asian trade and Asian, African, and Middle Eastern merchants continued to flourish.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain continuity and change in colonial labor systems, including the adaptation of the Incan mit’a and the growth of encomienda, hacienda, indentured servitude, and chattel slavery.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain continuity and change in slavery, distinguishing older African and Indian Ocean forms of enslavement from the expanding plantation demand for enslaved labor in the Americas.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can use specific evidence from at least one European maritime empire and one African state to explain how expanding trade networks changed state power.</li>
+                    <li style="margin: 0 0 6px 0;">I can identify one European disruption to Indian Ocean trade and one important continuity involving intra-Asian commerce or merchants such as Gujaratis, Omanis, Swahili Arabs, or Javanese.</li>
+                    <li style="margin: 0 0 6px 0;">I can compare one existing labor system with one new or expanded colonial labor system and explain how both served agricultural or extractive economies.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how older forms of enslavement continued while plantation economies in the Americas increased the scale and demographic significance of Atlantic chattel slavery.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-4/lesson-4-4-maritime-empires-established.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 4.4 - Maritime Empires Established</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
+## Topic 4.5: Maritime Empires Maintained and Developed
+
+**Event title:** `APW - 4.5 - Maritime Empires Maintained and Developed`
+
+**Assign to, one row per section:**
+
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Monday, November 9 | nothing assigned |
+| Silver Day | Tuesday, November 10 | nothing assigned |
+
+```html
+<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
+    <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
+    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 4: Transoceanic Interconnections</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 4.5: Maritime Empires Maintained and Developed</div>
+    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Monday, November 9</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Tuesday, November 10</span></span>
+    </div>
+</div>
+<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
+    <tbody>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">How European maritime empires used forced labor, colonial administration, and silver extraction to sustain themselves — and how American silver transformed global trade networks</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can explain how rulers used mercantilism, chartered monopoly companies, and economic rivalry to maintain and develop maritime empires.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain continuity and change in exchange networks, including global silver flows, chartered companies, Atlantic trade, and the continued importance of regional Afro-Eurasian markets.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain political, economic, and social effects of expanding exchange, including intensified peasant/artisan labor and changes to gender and family patterns in Africa associated with the trade of enslaved persons.</li>
+                    <li style="margin: 0 0 6px 0;">I can compare how expanding global interactions affected belief systems, including the spread of existing religions, religious conflict, and the development of syncretic practices.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can explain how mercantilist rules and joint-stock companies such as the VOC or British EIC helped states mobilize capital, protect monopolies, and compete for overseas trade and territory.</li>
+                    <li style="margin: 0 0 6px 0;">I can trace silver and Atlantic exchange across hemispheres while also explaining one important continuity in established Afro-Eurasian regional markets or commercial practices.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how growing demand intensified peasant or artisan labor in Europe, India, or China and how the Atlantic slave trade reshaped demographic, gender, family, and cultural patterns in parts of Africa and the Americas.</li>
+                    <li style="margin: 0 0 6px 0;">I can use at least two specific examples to compare different religious effects of global interaction, including missionary expansion, conflict, or syncretic traditions such as Vodun or Santería.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-4/lesson-4-5-maritime-empires-maintained.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 4.5 - Maritime Empires Maintained and Developed</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
+## Topic 4.6: Internal Challenges to State Power
+
+**Event title:** `APW - 4.6 - Internal Challenges to State Power`
+
+**Assign to, one row per section:**
+
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Wednesday, November 11 | nothing assigned |
+| Silver Day | Thursday, November 12 | nothing assigned |
+
+```html
+<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
+    <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
+    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 4: Transoceanic Interconnections</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 4.6: Internal Challenges to State Power</div>
+    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Wednesday, November 11</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Thursday, November 12</span></span>
+    </div>
+</div>
+<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
+    <tbody>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">How colonized peoples, enslaved Africans, and rival European powers challenged maritime empires from within and without</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can explain how state expansion and centralization produced local resistance, including the causes, organization, and outcomes of the Pueblo Revolt of 1680.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how enslaved Africans resisted colonial rule through escape, autonomous maroon communities, cultural preservation, and organized revolt.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can explain the specific grievances behind the Pueblo Revolt, how Popé coordinated resistance, and what the revolt changed and failed to change about Spanish colonial rule.</li>
+                    <li style="margin: 0 0 6px 0;">I can describe maroon communities as organized resistance, use Palmares as a specific example, and explain how geography, community organization, and colonial vulnerability made autonomous resistance possible.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-4/lesson-4-6-internal-external-challenges.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 4.6 - Internal Challenges to State Power</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
+## Topic 4.7: Changing Social Hierarchies
+
+**Event title:** `APW - 4.7 - Changing Social Hierarchies`
+
+**Assign to, one row per section:**
+
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Friday, November 13 | nothing assigned |
+| Silver Day | Monday, November 16 | nothing assigned |
+
+```html
+<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
+    <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
+    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 4: Transoceanic Interconnections</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 4.7: Changing Social Hierarchies</div>
+    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Friday, November 13</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Monday, November 16</span></span>
+    </div>
+</div>
+<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
+    <tbody>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">How European colonialism reorganized social order — creating the casta system in Spanish America, racializing slavery in the Atlantic world, and producing new hierarchies wherever it reached</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can explain how states accommodated the ethnic and religious diversity of their subjects in some cases, and suppressed or restricted certain groups in others.</li>
+                    <li style="margin: 0 0 6px 0;">I can analyze how the casta system organized colonial society in Spanish America, including its major categories (peninsulares, creoles, mestizos, mulattos, indigenous, enslaved Africans) and their legal implications.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how the power of existing political and economic elites changed as they confronted increasingly powerful monarchs and imperial states.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can give examples of states accommodating diversity (e.g., the Ottoman millet system, acceptance of Jews expelled from Spain and Portugal) and of states suppressing it (e.g., restrictive policies against Han Chinese in Qing China).</li>
+                    <li style="margin: 0 0 6px 0;">I can name and describe the major casta categories in Spanish colonial America, explain how casta status was determined, and give one specific example of how casta affected a person's legal rights or opportunities.</li>
+                    <li style="margin: 0 0 6px 0;">I can use specific examples such as Ottoman timar holders, Russian boyars, or European nobility to explain how existing elites gained, lost, or renegotiated power as states centralized.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-4/lesson-4-7-changing-social-hierarchies.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 4.7 - Changing Social Hierarchies</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
+## Topic 4.8: Continuity and Change in the Period from c. 1450 to c. 1750
+
+**Event title:** `APW - 4.8 - Continuity and Change in the Period from c. 1450 to c. 1750`
+
+**Assign to, one row per section:**
+
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Tuesday, November 17 | nothing assigned |
+| Silver Day | Wednesday, November 18 | nothing assigned |
+
+```html
+<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
+    <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
+    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 4: Transoceanic Interconnections</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 4.8: Continuity and Change in the Period from c. 1450 to c. 1750</div>
+    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Tuesday, November 17</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Wednesday, November 18</span></span>
+    </div>
+</div>
+<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
+    <tbody>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">How economic developments from 1450 to 1750 changed social structures — and what persisted despite those changes</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can explain how economic developments from c. 1450 to c. 1750 — including global silver flows, mercantilism, plantation expansion, and intensified production — changed demand for labor and redistributed wealth and power.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how those economic developments affected social structures, including coerced labor and slavery, racial and casta hierarchies, new and changing elites, and gender and family patterns.</li>
+                    <li style="margin: 0 0 6px 0;">I can make a continuity-and-change argument about social structures from c. 1450 to c. 1750 using evidence from multiple Unit 4 topics and explaining why some structures changed while others persisted.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can connect one specific economic development — such as plantation growth, silver extraction, mercantilism, or intensified textile production — to a specific change in labor demand, wealth, or political-economic power.</li>
+                    <li style="margin: 0 0 6px 0;">I can use at least two specific social consequences, such as expanded chattel slavery, encomienda/hacienda or mita labor, casta categories, changes to African gender/family patterns, or changing elite power, and explain the economic mechanism behind each.</li>
+                    <li style="margin: 0 0 6px 0;">I can identify one meaningful continuity and one meaningful change in social structure, support both with evidence from different Unit 4 topics, and explain why the balance of continuity and change occurred.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-4/lesson-4-8-continuity-and-change.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 4.8 - Continuity and Change in the Period from c. 1450 to c. 1750</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
+## Era 3 Study Guide Work Day
+
+**Event title:** `APW - Era 3 Study Guide Work Day - Era 3 Study Guide Work Day`
+
+**Assign to, one row per section:**
+
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Thursday, November 19 | nothing assigned |
+| Silver Day | Friday, November 20 | nothing assigned |
+
+```html
+<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
+    <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
+    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Units 3 and 4</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Era 3 Study Guide Work Day</div>
+    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Thursday, November 19</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Friday, November 20</span></span>
+    </div>
+</div>
+<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
+    <tbody>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Use today's class to work on your Era 3 study guide for Units 3 and 4.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can identify which Unit 3 and Unit 4 concepts I need to review before the Era 3 exam.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can use my study guide to identify gaps and plan my review.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">BeHistorical</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
+## Era 3 Exam, c. 1450 to c. 1750
+
+**Event title:** `APW - Era 3 Exam, c. 1450 to c. 1750 - Era 3 Exam, c. 1450 to c. 1750`
+
+**Assign to, one row per section:**
+
+| Section | Taught | Work due |
+| --- | --- | --- |
+| Green Day | Monday, November 23 | nothing assigned |
+| Silver Day | Tuesday, November 24 | nothing assigned |
+
+```html
+<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
+    <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
+    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Units 3 and 4</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Era 3 Exam, c. 1450 to c. 1750</div>
+    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Monday, November 23</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Tuesday, November 24</span></span>
+    </div>
+</div>
+<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
+    <tbody>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;"></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">This day assesses the targets from the block it closes.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">See the targets for the topics this assessment covers.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">BeHistorical</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">ASSIGNMENT</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #57544c; margin: 0;">[INSERT ASSIGNMENT LINK]</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
 ## Quizzes and Exams
 
 Not a lesson topic, so a much smaller event: a masthead and one
@@ -2811,4 +3382,4 @@ Quizzes & Exams slide.
 
 ---
 
-29 events, built from 58 class days (29 green, 29 silver), plus 2 quiz/exam event(s).
+36 events, built from 72 class days (36 green, 36 silver), plus 2 quiz/exam event(s).

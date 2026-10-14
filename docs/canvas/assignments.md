@@ -2222,7 +2222,13 @@ in `announcements-schedule.js`, and rerun.
 | 1.2 | Developments in Dar al-Islam | 01, 02, 03, 04, 05, 06, 07, 08, 09, 10 |
 | 1.3 | Developments in South and Southeast Asia | 01, 02, 03, 04, 05, 06, 07, 08, 09, 10 |
 | 1.4 | State Building in the Americas | 01, 02, 03, 04, 05, 06, 07, 08, 09, 10 |
+| 4.4 | Maritime Empires Established | 01, 02, 03, 04, 05, 06, 07, 08, 09, 10 |
+| 4.5 | Maritime Empires Maintained and Developed | 01, 02, 03, 04, 05, 06, 07, 08, 09, 10 |
+| 4.6 | Internal Challenges to State Power | 01, 02, 03, 04, 05, 06, 07, 08, 09, 10 |
+| 4.7 | Changing Social Hierarchies | 01, 02, 03, 04, 05, 06, 07, 08, 09, 10 |
+| 4.8 | Continuity and Change in the Period from c. 1450 to c. 1750 | 01, 02, 03, 04, 05, 06, 07, 08, 10 |
+| Era 3 Study Guide Work Day | Era 3 Study Guide Work Day | none |
 
 ---
 
-17 assignments built, 11 pending, out of 28 topics in the schedule.
+17 assignments built, 17 pending, out of 34 topics in the schedule.

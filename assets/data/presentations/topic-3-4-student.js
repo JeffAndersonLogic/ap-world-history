@@ -54,65 +54,76 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "grid",
+      "kind": "verdict",
       "eyebrow": "The Comparison Rule",
       "title": "Same category or no comparison.",
       "kc": "KC-4.3",
-      "cards": [
-        {
-          "title": "GOOD",
-          "text": "Devshirme vs. mansabdars: both extend authority through imperial servants."
-        },
-        {
-          "title": "BAD",
-          "text": "Ottoman cannon vs. Mughal mausoleum: both are important, but they do different jobs."
-        },
-        {
-          "title": "ASK",
-          "text": "Why were the methods similar or different?"
-        },
-        {
-          "title": "LAND",
-          "text": "How did each method increase influence?"
-        }
-      ]
+      "template": {
+        "cases": [
+          {
+            "verdict": "good",
+            "a": "Devshirme",
+            "b": "Mansabdars",
+            "text": "Both extend authority through imperial servants.",
+            "stamp": "Same job: hold"
+          },
+          {
+            "verdict": "bad",
+            "a": "Ottoman cannon",
+            "b": "Mughal mausoleum",
+            "text": "Both are important, but they do different jobs: one expands, one justifies.",
+            "stamp": "Different jobs"
+          }
+        ],
+        "questionsLabel": "Then every comparison answers",
+        "questions": [
+          {
+            "tag": "Ask",
+            "text": "Why were the methods similar or different?"
+          },
+          {
+            "tag": "Land",
+            "text": "How did each method increase influence?"
+          }
+        ]
+      }
     },
     {
-      "kind": "grid",
+      "kind": "balance",
       "eyebrow": "Job One · Expand",
       "title": "Gunpowder increases territorial reach.",
-      "footer": "Same job: expansion. Different campaigns; shared mechanism: military capacity increased influence.",
       "kc": "KC-4.3.II",
-      "cards": [
-        {
-          "title": "OTTOMAN",
-          "text": "Constantinople, 1453: cannon helped break fortified defenses."
+      "template": {
+        "job": "Expand",
+        "left": {
+          "tag": "Ottoman",
+          "name": "Constantinople",
+          "when": "1453",
+          "text": "Cannon helped break fortified defenses."
         },
-        {
-          "title": "MUGHAL",
-          "text": "Panipat, 1526: artillery and firearms contributed to victory."
+        "right": {
+          "tag": "Mughal",
+          "name": "Panipat",
+          "when": "1526",
+          "text": "Artillery and firearms contributed to victory."
         },
-        {
-          "title": "SAME JOB",
-          "text": "Defeat rivals and gain territory."
-        },
-        {
-          "title": "COMPARE",
-          "text": "Different campaigns; shared mechanism: military capacity increased influence."
-        }
-      ]
+        "claimLabel": "Compare",
+        "claim": "Different campaigns, **shared mechanism**: military capacity let both defeat rivals, gain territory and increase influence."
+      }
     },
     {
-      "kind": "map",
+      "kind": "frame-question",
       "eyebrow": "Evidence · Panipat, 1526",
       "title": "Military technology becomes evidence.",
       "subtitle": "Use the image as evidence of Mughal battlefield organization, not as proof that gunpowder alone caused victory.",
-      "visual": {
-        "url": "../assets/images/topics/3-1/panipat-1526.jpg",
-        "alt": "Historical illustration representing the First Battle of Panipat in 1526",
-        "credit": "Panipat, 1526 · verified Unit 3 asset"
-      },
-      "footer": "Historical image · First Battle of Panipat"
+      "template": {
+        "visual": {
+          "url": "../assets/images/topics/3-1/panipat-1526.jpg",
+          "alt": "Mughal illustration of the Battle of Panipat, 1526, with bronze cannons on wheeled carriages at the left",
+          "credit": "Battle of Panipat, 1526 · Baburnama illustration, late 16th century · Public domain",
+          "fit": "contain"
+        }
+      }
     },
     {
       "kind": "split-scenes",
@@ -244,29 +255,37 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "grid",
+      "kind": "ledger",
       "eyebrow": "Retell the Topic",
       "title": "Compare the job, not the empire.",
       "footer": "Same job → different tools → why different? → how did influence grow?",
       "kc": "KC-4.1.VI",
-      "cards": [
-        {
-          "title": "EXPAND",
-          "text": "Military force → defeat rivals and take territory."
-        },
-        {
-          "title": "HOLD",
-          "text": "Servants and institutions → extend central authority."
-        },
-        {
-          "title": "PAY",
-          "text": "Revenue systems → fund armies and government."
-        },
-        {
-          "title": "JUSTIFY",
-          "text": "Religion, art, architecture → make authority credible."
-        }
-      ]
+      "template": {
+        "rows": [
+          {
+            "name": "Expand",
+            "tool": "Military force",
+            "result": "defeat rivals and take territory."
+          },
+          {
+            "name": "Hold",
+            "tool": "Servants and institutions",
+            "result": "extend central authority."
+          },
+          {
+            "name": "Pay",
+            "tool": "Revenue systems",
+            "result": "fund armies and government."
+          },
+          {
+            "name": "Justify",
+            "tool": "Religion, art, architecture",
+            "result": "make authority credible."
+          }
+        ],
+        "payoffLabel": "Every job builds",
+        "payoff": "Increased influence"
+      }
     },
     {
       "kind": "action",
@@ -309,7 +328,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "url": "../assets/images/topics/3-4/3.4%20-%20Manchu%20enter%20China.jpg",
           "alt": "Reconstruction of Manchu horsemen in yellow, white, red and blue armor riding through a gate in the Great Wall under a plaque reading First Pass Under Heaven, past Ming soldiers in red, with the wall running down the mountains to the sea",
           "ai": true,
-          "position": "50% 45%"
+          "position": "50% 0%",
+          "fit": "contain"
         }
       }
     }

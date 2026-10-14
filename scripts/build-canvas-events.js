@@ -124,6 +124,7 @@ const UI = "Montserrat, Arial, Helvetica, sans-serif";
    anything failing.
    --------------------------------------------------------- */
 const OVERVIEWS = {
+  'Era 3 Study Guide Work Day': 'Use today\'s class to work on your Era 3 study guide for Units 3 and 4.',
   F0: 'Day 0 is the frame for the whole year. Before you learn a single date, you need to know what this course is asking you to become: a historian, with six specific habits of mind. Today you meet the six AP historical thinking skills in plain language, walk through the 10-module rhythm you will see in every class, and write a baseline snapshot of yourself as a historian on Day 1. That baseline becomes the first entry in the Historian\'s Portfolio you receive in May.',
 
   F1: 'Geography is the first layer of the AP World operating system. Before you can explain any state, empire, or trade network, you need the event that made all of them possible: the Neolithic Agricultural Revolution, the shift from hunting and gathering to farming. Today you build one causal chain &mdash; geography made farming possible, farming produced surplus, surplus produced civilization &mdash; and you learn to treat geography as an argument, not a backdrop.',
