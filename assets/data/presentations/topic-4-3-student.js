@@ -144,7 +144,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "1521",
-            "text": "The Spaniards return to a city \"greatly weakened.\""
+            "text": "The Spaniards return; the Mexica warriors are \"greatly weakened.\""
           }
         ]
       }
@@ -215,17 +215,16 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "text": "\"**Catastrophic** effects in many areas\""
           }
         ],
-        "proves": "Many regions of the Americas lost most of their people."
+        "proves": "Central Mexico lost about nine in ten people within a century."
       }
     },
     {
       "kind": "source-quote",
       "eyebrow": "Going West on Purpose · A Source",
       "title": "",
-      "footer": "Claim: the cattle multiplied. Evidence: a count of hides from one fleet.",
       "kc": "KC-4.1.V.C",
       "template": {
-        "quote": "These wild cattle have so multiplied in Santo Domingo ... that they troop together in the fields and woods by thousands. ... In the fleet, the year 1587, there came from Santo Domingo 35,444 hides, and from New Spain 64,350.",
+        "quote": "These wild cattle have so multiplied in Santo Domingo ... that they troop together ... by thousands. ... In the fleet, the year 1587, there came from Santo Domingo 35,444 hides, and from New Spain 64,350.",
         "attribution": {
           "author": "José de Acosta",
           "work": "Natural and Moral History of the Indies",
@@ -252,9 +251,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "text": "Horses multiply on Spanish ranches"
           },
           {
-            "place": "Spanish settlements to the north",
+            "place": "New Mexico",
             "date": "1600s",
-            "text": "Indigenous peoples take, trade and ride them"
+            "text": "Apache and other peoples take, trade and ride them"
           },
           {
             "place": "Great Plains",
@@ -306,7 +305,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "credit": "Frans Post, Brazilian Landscape with Sugar Mill, 1660s · National Gallery of Ireland · Public domain",
           "position": "97% 62%"
         },
-        "caption": "Frans Post, Dutch Brazil, 1660s",
+        "caption": "Frans Post, painted in the Netherlands, 1660s",
         "steps": [
           {
             "label": "From Afro-Eurasia",
@@ -314,7 +313,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Grows best here",
-            "text": "Brazil and the Caribbean grow it better than anywhere."
+            "text": "Brazil and the Caribbean grow it better than almost anywhere."
           },
           {
             "label": "Plantation",
@@ -323,7 +322,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Shipped out",
-            "text": "Most of the sugar goes to Europe."
+            "text": "Most of it goes to Europe and the Middle East."
           }
         ]
       }
@@ -337,8 +336,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "left": {
           "name": "England, 1597",
           "items": [
-            "A herbal pictures maize as \"Turkie Corne\"",
-            "Readers did not know where it came from"
+            "Named \"Turkie Corne\" and \"Indian\" wheat on one page",
+            "Gerard thought it came from Turkish lands and America"
           ],
           "visual": {
             "url": "../assets/images/topics/4-3/gerard-herball-turkie-corne-1597.jpg",
@@ -370,7 +369,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "cause-chain",
       "eyebrow": "Going East · The Effect",
       "title": "Why American crops meant better nutrition.",
-      "footer": "Over two centuries, these crops helped populations grow in China, Africa and Europe.",
+      "footer": "Over two centuries, these crops helped populations grow in China and Europe, and fed many in Africa.",
       "kc": "KC-4.1.V.D",
       "template": {
         "steps": [
@@ -407,7 +406,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "url": "../assets/images/instructional-maps/topic-4-3.svg",
         "alt": "Map with four arrows: animals, crops and germs west from Europe to the Caribbean; enslaved Africans west from West Africa to Brazil; maize and potatoes east to Europe; cassava from Brazil to Central Africa"
       },
-      "footer": "Not drawn as an arrow: sweet potatoes reaching China by way of the Philippines.",
+      "footer": "1 West: animals, crops, germs · 2 West by force · 3 East: maize, potatoes · 4 Cassava to Central Africa",
       "kc": "KC-4.1.V"
     },
     {
@@ -418,14 +417,14 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "rows": [
           {
-            "myth": "Indigenous Americans had no immunity, so they were doomed.",
-            "evidence": "Nobody had had these diseases before, and war, forced labor and hunger made them far deadlier.",
+            "myth": "Indigenous Americans were born weak, so they were doomed no matter what.",
+            "evidence": "Nobody had had these diseases before, so nobody was immune, and war, forced labor and hunger made them far deadlier.",
             "source": "David S. Jones, 2003"
           },
           {
             "myth": "Disease caused African slavery in the Americas.",
             "evidence": "Europeans grew sugar with enslaved workers on Madeira before 1492, and chose to bring that system across.",
-            "source": "Topic 2.5; Topic 4.4"
+            "source": "Madeira's sugar, 1400s; Topic 4.4"
           },
           {
             "myth": "The exchange was equal, the same both ways.",

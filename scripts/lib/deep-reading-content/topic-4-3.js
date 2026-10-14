@@ -40,13 +40,13 @@ module.exports = {
   docTitle: 'BeHistorical | Deep Reading | Topic 4.3: The Exchange Nobody Negotiated',
   eyebrow: 'Topic 4.3 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'The Exchange Nobody <em>Negotiated</em>',
-  deck: `Two biological worlds that had been separate for thousands of years were joined in a generation, and the joining was not a trade agreement. This chapter does the biology of why the disaster fell where it did, the honest version of the numbers, what crossed in each direction, and why "disease caused slavery" is too simple.`,
+  deck: `Two biological worlds that had been separate for thousands of years were joined in a generation, and the joining was not a trade agreement. This chapter explains why the disaster fell where it did, the honest version of the numbers, what crossed in each direction, and why "disease caused slavery" is too simple.`,
   meta: ['Five sections', 'Biology, numbers, crops, consequences', 'Read alongside the First & 10'],
   footerNote: 'Topic 4.3 &nbsp;·&nbsp; The Exchange Nobody Negotiated &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',
-    intro: `Section 01 is the mechanism the success criteria most want and students most often assert without explaining. Sections 03 and 04 are the crops in each direction, and section 05 takes apart the most common wrong causal chain in this topic. Section 02 is about how to handle numbers you cannot verify, which is a skill worth more than this topic.`,
+    intro: `Section 01 explains the mechanism you are most often asked for and most often tempted to state without explaining. Sections 03 and 04 are the crops in each direction, and section 05 takes apart the most common wrong causal chain in this topic. Section 02 is about how to handle numbers you cannot verify, which is a skill worth more than this topic.`,
     steps: [
       `<b>01 Why the disaster fell where it did:</b> herd animals, isolation, and what immunity actually is.`,
       `<b>02 The numbers:</b> what is known, what is estimated, and how to write it.`,
@@ -66,7 +66,7 @@ module.exports = {
       name: 'Why the Disaster Fell Where It Did',
       navLabel: 'The biology',
       dates: 'c. 1492 to 1650 &nbsp;·&nbsp; Isolation, herds, and immunity',
-      thesis: `The catastrophe was not caused by anything about the people it fell on. The germs were new to the Americas because of which animals each hemisphere had domesticated and ten thousand years of separation, and they killed as many as they did because they arrived together with war, forced labor and hunger. Stating it that way is correct, and it survives scrutiny.`,
+      thesis: `The catastrophe was not caused by anything about the people it fell on. The germs were new to the Americas because of which animals each hemisphere had domesticated and more than ten thousand years of separation, and they killed as many as they did because they arrived together with war, forced labor and hunger. Stating it that way is correct, and it survives scrutiny.`,
       parts: [
         {
           heading: 'Where crowd diseases come from',
@@ -88,18 +88,18 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Never write that Indigenous Americans were biologically weaker or that Europeans were biologically stronger. Immunity to smallpox is acquired by surviving childhood infection, and the difference between the hemispheres is a fact about animal and population ecology and about thousands of years of separation, not about the worth or the constitution of the people. One qualification keeps this accurate rather than merely reassuring: populations can differ in inherited immune variants shaped by long exposure to particular diseases, which is exactly what section 05 describes for malaria in West and Central Africa. That is a different mechanism from surviving smallpox as a child, and neither one ranks anybody. Two checks confirm it: European populations were devastated in exactly the same way by a novel pathogen in the fourteenth century, which the Topic 2.6 chapter describes, and Europeans arriving in West Africa died in appalling numbers from malaria and yellow fever, diseases the local population had substantial resistance to. Novelty is the variable, and it cut in every direction.`
+              html: `Never write that Indigenous Americans were biologically weaker or that Europeans were biologically stronger. Immunity to smallpox is acquired by surviving childhood infection, and the difference between the hemispheres is a fact about animal and population ecology and about thousands of years of separation, not about the worth or the constitution of the people. One qualification keeps this accurate rather than merely reassuring: populations can differ in inherited immune variants shaped by long exposure to particular diseases, which is exactly what section 05 describes for malaria in West and Central Africa. That is a different mechanism from surviving smallpox as a child, and neither one ranks anybody. Two checks confirm it: European populations were devastated by the same mechanism by a novel pathogen in the fourteenth century, which the Topic 2.6 chapter describes, and Europeans arriving in West Africa died in appalling numbers from malaria and yellow fever, diseases the local population had substantial resistance to. Novelty is the variable, and it cut in every direction.`
             } }
           ]
         }
       ],
       useThis: {
-        tool: `The virgin soil mechanism. <em>The mechanism is that a pathogen entering a population with no prior exposure infects every age group at once, so the collapse is not only the death rate of the disease but the failure of everything simultaneously: nobody plants, harvests, hauls water, nurses or governs, and people die of hunger and neglect who would have survived the infection.</em>`,
+        tool: `No prior exposure, plus the conditions of conquest. <em>The mechanism is that a pathogen entering a population with no prior exposure infects every age group at once, so the collapse is not only the death rate of the disease but the failure of everything simultaneously: nobody plants, harvests, hauls water, nurses or governs, and people die of hunger and neglect who would have survived the infection; war, forced labor and hunger made it worse.</em>`,
         limit: `Disease was the largest factor and never the only one. Warfare, forced labor, relocation and the disruption of farming compounded it, and separating them cleanly is not possible in the sources.`,
-        comparison: `Against the <em>Black Death</em> in Topic 2.6: the same mechanism, a novel pathogen reaching an unexposed population along new trade routes, at a mortality Europe survived and rebuilt from within a century. The difference in outcome is not the biology, and it is not that Europe suffered a single wave, because plague returned to Europe repeatedly for three centuries after 1347. It is that Europe met a recurring epidemic while its own states, fields and families stayed in place, and the Americas met several unfamiliar pathogens arriving together with conquest, forced labor, relocation and the wrecking of the food system.`
+        comparison: `Against the <em>Black Death</em> in Topic 2.6: the same mechanism, a novel pathogen reaching an unexposed population along new trade routes, at a mortality Europe survived and recovered from over the next century and a half. The difference in outcome is not the biology, and it is not that Europe suffered a single wave, because plague returned to Europe repeatedly for three centuries after 1347. It is that Europe met a recurring epidemic while its own states, fields and families stayed in place, and the Americas met several unfamiliar pathogens arriving together with conquest, forced labor, relocation and the wrecking of the food system.`
       },
       terms: [
-        ['Virgin soil epidemic', 'An outbreak in a population with no prior exposure, infecting all ages at once and disabling the society as well as the individuals.'],
+        ['Virgin soil epidemic', 'An older historians\' term for an outbreak in a population with no prior exposure. David S. Jones criticized it in 2003 because it is often read as a genetic weakness, which it was not.'],
         ['Zoonotic disease', 'An infection that crossed from animals to humans, the origin of most Afro-Eurasian crowd diseases and of the difference between the hemispheres.'],
         ['Acquired immunity', 'Resistance gained by surviving an infection, which is what European adults had and Indigenous Americans could not have had.'],
         ['Endemic disease', 'An infection circulating permanently in a population large enough to sustain it, infecting each new generation of children.'],
@@ -173,8 +173,8 @@ module.exports = {
         {
           heading: 'Sugar, and the model that came with it',
           blocks: [
-            { p: `Sugarcane crossed on the second voyage too, and it is the plant with the most consequences in this chapter. The Topic 2.5 chapter establishes the crucial point: the plantation package, monoculture, a mill and boiling house that must process cane within hours of cutting, merchant capital, and coerced labor, was developed in the medieval Mediterranean and refined on the Atlantic islands: on Madeira, where sugar was worked by enslaved people, many of them African, before Columbus sailed, and then on São Tomé, settled by Portugal in the 1480s and 1490s.` },
-            { p: `So the Americas did not invent this system; they received it, at a scale the islands could never support. Brazil became the first great American sugar economy in the sixteenth century, and the Caribbean followed in the seventeenth. What the Americas supplied was land in quantities nobody in the Old World could imagine, and, after section 01, a labor market with a hole in it. Section 05 is what filled the hole.` }
+            { p: `Sugarcane crossed on the second voyage too, and it is the plant with the most consequences in this chapter. The crucial point is that the plantation package, monoculture, a mill and boiling house that must process cane within hours of cutting, merchant capital, and coerced labor, was developed in the medieval Mediterranean and refined on the Atlantic islands: on Madeira, where sugar was worked by enslaved people, including Canary Islanders and Africans, before Columbus sailed, and then on São Tomé, settled by Portugal in the 1480s and 1490s.` },
+            { p: `So the Americas did not invent this system; they received it, at a scale the islands could never support. Brazil became the first great American sugar economy in the sixteenth century, and the Caribbean followed in the seventeenth. What the Americas supplied was land in quantities nobody in the Old World could imagine, and, after section 01, land with too few workers on it. Section 05 explains why that shortage alone does not explain African slavery.` }
           ]
         },
         {
@@ -195,12 +195,12 @@ module.exports = {
       useThis: {
         tool: `Livestock as an ecological weapon, unintended. <em>The mechanism is that herd animals released into grasslands with few comparable grazers multiply explosively, and Indigenous fields grown without fences, because nothing needed fencing out, are destroyed by them, so the food supply of the colonized collapses alongside their population without anyone ordering it.</em>`,
         limit: `The same animals became the foundation of new Indigenous economies and cultures, from Plains horse nations to Diné sheep herding, which is why "ecological imperialism" describes the process and not the whole outcome.`,
-        comparison: `Against <em>Topic 2.5's</em> account of sugar reaching the Mediterranean: the plantation package was assembled in Cyprus, Sicily and Madeira before it crossed, and São Tomé took it up at the same moment as the Americas, so the Americas supplied land rather than the idea, which is the distinction section 05 depends on.`
+        comparison: `Against <em>the medieval Mediterranean and Madeira</em>: the plantation package was assembled in Cyprus, Sicily and Madeira before it crossed, and São Tomé took it up at the same moment as the Americas, so the Americas supplied land rather than the idea, which is the distinction section 05 depends on.`
       },
       terms: [
         ['Ecological imperialism', 'The transformation of an environment by introduced organisms in ways that favored the colonizers, alongside and often ahead of conquest.'],
         ['Feral livestock', 'Escaped cattle and pigs multiplying with few checks, which destroyed unfenced Indigenous fields and spread ahead of settlement.'],
-        ['Madeira', 'The Atlantic island where sugar was grown with enslaved workers, many of them African, before 1492, a model for Brazil and the Caribbean.'],
+        ['Madeira', 'The Atlantic island where sugar was grown with enslaved workers, including Canary Islanders and Africans, before 1492, a model for Brazil and the Caribbean.'],
         ['Plains horse cultures', 'The equestrian societies built by Indigenous nations after horses arrived, a post-contact creation rather than an ancient tradition.'],
         ['Monoculture', 'Committing land to a single export crop, which raises income and makes a region dependent on trade for its food.']
       ]
@@ -229,7 +229,7 @@ module.exports = {
         {
           heading: 'The asymmetry worth naming',
           blocks: [
-            { p: `Set the two directions beside each other and the asymmetry is stark. Eastward went crops that fed population growth across Europe, Asia and Africa. Westward went crops, livestock and diseases, and the diseases killed most of the population that received them.` },
+            { p: `Set the two directions beside each other and the asymmetry is stark. Eastward went crops that fed population growth across Europe, Asia and Africa. Westward went crops, livestock and diseases, and in many regions the diseases killed most of the people who received them.` },
             { p: `The exchange was not a trade between partners; it was a transfer between hemispheres in which one side's population grew on the other side's plants while the other side's population collapsed from the first side's pathogens. When a prompt asks you to assess the consequences of the Columbian Exchange, that sentence is the assessment, and everything else is evidence for it.` },
             { note: {
               kind: 'howknow',
@@ -267,7 +267,7 @@ module.exports = {
           heading: 'What the chain gets right, and what it leaves out',
           blocks: [
             { p: `It gets one link right. Disease emptied land of workers, in the Caribbean almost entirely within a few decades, and the new plantations of sugar, and later tobacco, needed a great many workers. That is a real connection between this topic and the next.` },
-            { p: `It leaves out the rest. The plantation worked by enslaved Africans was not invented in the Americas: on Madeira, sugar was grown with enslaved workers, many of them African, before 1492, and a Portuguese trade in enslaved Africans along the West African coast already existed, as the Topic 4.2 chapter describes. Europeans chose to bring that system across the Atlantic and to expand it. Disease created a shortage of workers; it did not decide who would be enslaved, or that enslavement would be permanent and passed to children. People decided those things.` },
+            { p: `It leaves out the rest. The plantation worked by enslaved Africans was not invented in the Americas: on Madeira, sugar was grown with enslaved workers, including Canary Islanders and Africans, before 1492, and a Portuguese trade in enslaved Africans along the West African coast already existed, as the Topic 4.2 chapter describes. Europeans chose to bring that system across the Atlantic and to expand it. Disease created a shortage of workers; it did not decide who would be enslaved, or that enslavement would be permanent and passed to children. People decided those things.` },
             { p: `How the labor systems worked, from the Spanish grants of Indigenous labor to chattel slavery on the plantations, is the subject of Topic 4.4. For this topic, the honest sentence is the qualified one.` },
             { note: {
               kind: 'misconception',
@@ -280,7 +280,7 @@ module.exports = {
       useThis: {
         tool: `The qualified chain. <em>Disease emptied land of workers in the Americas, and Europeans who already used enslaved Africans on Atlantic-island sugar plantations chose to bring that system across the ocean and expand it, so the shortage of workers was a condition and the plantation system was a decision.</em>`,
         limit: `This topic owns the exchange and its effects; the labor systems themselves, and the Atlantic slave trade's scale and organization, are Topic 4.4. Use this chain as a bridge, not as the whole answer.`,
-        comparison: `Against <em>Topic 2.5's</em> sugar chapter: the same plantation package moved from the Mediterranean to Madeira and then across the Atlantic, which is the continuity that makes the chain a series of choices rather than a natural process.`
+        comparison: `Against <em>Madeira</em>: the same plantation package moved from the Mediterranean to Madeira and then across the Atlantic, which is the continuity that makes the chain a series of choices rather than a natural process.`
       },
       terms: [
         ['Single cause', 'An explanation that names one cause for an outcome that had several, the most common weakness in causation writing.'],
@@ -295,17 +295,17 @@ module.exports = {
   closing: {
     heading: 'Building an Answer That Scores',
     navLabel: 'Building a comparison',
-    intro: `Each card is a full comparison or chain: the claim, the specific evidence, and the reason. The first one is the answer to the question this topic exists to ask.`,
+    intro: `Each card is a full comparison or chain: the claim, the specific evidence, and the reason. The first one answers the question students most often get wrong.`,
     pairs: [
       {
         category: 'Causation',
-        title: 'The catastrophe was about herd animals, not about people',
+        title: 'The catastrophe came from new germs and the conditions of conquest, not from the people',
         body: `Many Afro-Eurasian crowd diseases have animal reservoirs or close animal relatives, and they became endemic in dense, connected populations, so European adults carried immunity acquired by surviving them in childhood. The Americas had domesticated the llama, alpaca, guinea pig, turkey and dog, none living in the crowded proximity that generates such diseases, and had been separated from Afro-Eurasia for thousands of years. The difference lies in the animal and population ecology, the isolation, and the war, forced labor and hunger that came with the germs, rather than in the people, which is confirmed twice over: Europe suffered exactly this kind of collapse from a novel pathogen in the fourteenth century, and Europeans died in appalling numbers of malaria and yellow fever in West Africa. Novelty was the variable, and it cut in every direction.`
       },
       {
         category: 'Consequences',
         title: 'One hemisphere&rsquo;s population grew on the other&rsquo;s plants',
-        body: `Eastward went potatoes, maize, cassava and sweet potatoes, crops that yield more calories per acre and grow on dry hills, thin soils and short seasons, extending cultivation onto land that had not been farmed and underwriting population growth in Europe, Qing China and much of Africa. Westward went wheat, sugar, cattle, horses and the diseases of section 01, and in many regions the population that received them fell by more than half, in many by ninety percent or more. The exchange was not a trade between partners but a transfer in which one side grew on the other's plants while the other collapsed from the first side's pathogens.`
+        body: `Eastward went potatoes, maize, cassava and sweet potatoes, crops that yield more calories per acre and grow on dry hills, thin soils and short seasons, extending cultivation onto land that had not been farmed and underwriting population growth in Europe and Qing China and feeding much of Africa. Westward went wheat, sugar, cattle, horses and the diseases of section 01, and in many regions the population that received them fell by more than half, in many by ninety percent or more. The exchange was not a trade between partners but a transfer in which one side grew on the other's plants while the other collapsed from the first side's pathogens.`
       },
       {
         category: 'Chains',

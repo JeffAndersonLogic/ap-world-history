@@ -222,7 +222,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'June 1520', text: 'The people of Tenochtitlan drive the Spaniards out.' },
           { label: 'Autumn 1520', key: true, text: 'Smallpox sweeps the city for sixty days. Many starve: no one is well enough to cook.' },
           { label: 'Late 1520', text: 'The new ruler, Cuitláhuac, dies in the epidemic.' },
-          { label: '1521', text: 'The Spaniards return to a city "greatly weakened."' }
+          { label: '1521', text: 'The Spaniards return; the Mexica warriors are "greatly weakened."' }
         ]
       },
       notes: {
@@ -256,7 +256,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 3,
         land: [
           'Reason 1: immunity to smallpox or measles comes from surviving it, usually as a child. In Afro-Eurasia most adults had; in the Americas nobody had, so the disease struck every age at once and the society stopped working. That is what the Codex describes.',
-          'Reason 2: David S. Jones, "Virgin Soils Revisited" (William and Mary Quarterly, 2003): lack of prior exposure "might have left them vulnerable," but "the fates of individual populations depended on contingent factors," including "the malnutrition, exhaustion, and stress created by European colonization." Crosby himself (1976) named childhood exposure, malnutrition and "social chaos."',
+          'Reason 2: David S. Jones, "Virgin Soils Revisited" (William and Mary Quarterly, 2003): lack of prior exposure "might have left them vulnerable," but "the fates of individual populations depended on contingent factors of their physical, economic, social, and political environments," and the epidemics may have been driven by "the same forces of poverty, social stress, and environmental vulnerability that cause epidemics in all other times and places." Crosby himself (1976) named childhood exposure, malnutrition and "social chaos."',
           'Jones also warns that "no immunity" written as a genetic fact risks "supporting racial theories." Correct it whenever a student says Indigenous people were "weaker."',
           'Disease was the largest single factor in the deaths, and never the only one.'
         ],
@@ -276,7 +276,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'How we know', text: 'Rebuilt from tax records and other sources. **Historians argue** about the exact numbers.' },
           { label: 'The CED says', text: '"**Catastrophic** effects in many areas"' }
         ],
-        proves: 'Many regions of the Americas lost most of their people.'
+        proves: 'Central Mexico lost about nine in ten people within a century.'
       },
       notes: {
         minutes: 1,
@@ -293,9 +293,8 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'acosta', kind: 'source-quote', eyebrow: 'Going West on Purpose · A Source',
       kc: 'KC-4.1.V.C',
-      footer: 'Claim: the cattle multiplied. Evidence: a count of hides from one fleet.',
       template: {
-        quote: 'These wild cattle have so multiplied in Santo Domingo ... that they troop together in the fields and woods by thousands. ... In the fleet, the year 1587, there came from Santo Domingo 35,444 hides, and from New Spain 64,350.',
+        quote: 'These wild cattle have so multiplied in Santo Domingo ... that they troop together ... by thousands. ... In the fleet, the year 1587, there came from Santo Domingo 35,444 hides, and from New Spain 64,350.',
         attribution: { author: 'José de Acosta', work: 'Natural and Moral History of the Indies', year: '1590' },
         notice: 'What does Acosta want you to believe, and what number does he give to prove it?'
       },
@@ -320,7 +319,7 @@ window.BEHISTORICAL_TEACHING = {
         stops: [
           { place: 'Spain', date: '1493', text: 'Columbus\'s second fleet carries horses' },
           { place: 'Caribbean and Mexico', date: '1500s', text: 'Horses multiply on Spanish ranches' },
-          { place: 'Spanish settlements to the north', date: '1600s', text: 'Indigenous peoples take, trade and ride them' },
+          { place: 'New Mexico', date: '1600s', text: 'Apache and other peoples take, trade and ride them' },
           { place: 'Great Plains', date: 'Early 1700s', text: 'Comanche and others hunt bison and trade on horseback' }
         ]
       },
@@ -328,7 +327,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 1,
         land: [
           'Not every effect was a disaster. Plains peoples adopted the horse and built new ways of life with it: an Indigenous choice, not something done to them.',
-          'The Comanche took up the horse in the late 1600s and dominated the southern Plains by the early 1700s (Hämäläinen, The Comanche Empire, 2008, as summarized by the NPS). A 2023 Science study dates Indigenous horse use in the West to the early 1600s, earlier than older accounts.',
+          'Spain founded its colony of New Mexico in 1598. Apaches and others built the first horse cultures of the Plains by the 1650s; the Comanche took up the horse in the late 1600s and dominated the southern Plains by the early 1700s (Hämäläinen, The Comanche Empire, 2008, as summarized by the NPS). A 2023 Science study dates Indigenous horse use in the West to the early 1600s, earlier than older accounts.',
           'Horses also had costs on the Plains: Hämäläinen notes damage to bison herds and grasslands and new inequalities. Keep that for a student who asks.'
         ],
         ask: 'Was the horse a cause of catastrophe or a new chance? For whom?',
@@ -366,12 +365,12 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-4.1.V.B', title: 'Sugar: one plant that remade whole societies.',
       template: {
         visual: { url: '../assets/images/topics/4-3/frans-post-sugar-mill-1660s.jpg', alt: 'Painting of a Brazilian landscape: on the right a large open sugar mill with workers, oxen and a cart; a planter\'s house on a hill; tropical trees and animals in the foreground', credit: 'Frans Post, Brazilian Landscape with Sugar Mill, 1660s · National Gallery of Ireland · Public domain', position: '97% 62%' },
-        caption: 'Frans Post, Dutch Brazil, 1660s',
+        caption: 'Frans Post, painted in the Netherlands, 1660s',
         steps: [
           { label: 'From Afro-Eurasia', text: 'Sugarcane crosses on Columbus\'s second voyage, 1493.' },
-          { label: 'Grows best here', text: 'Brazil and the Caribbean grow it better than anywhere.' },
+          { label: 'Grows best here', text: 'Brazil and the Caribbean grow it better than almost anywhere.' },
           { label: 'Plantation', key: true, text: 'One cash crop, worked by coerced labor, overwhelmingly enslaved Africans.' },
-          { label: 'Shipped out', text: 'Most of the sugar goes to Europe.' }
+          { label: 'Shipped out', text: 'Most of it goes to Europe and the Middle East.' }
         ]
       },
       notes: {
@@ -394,7 +393,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         left: {
           name: 'England, 1597',
-          items: ['A herbal pictures maize as "Turkie Corne"', 'Readers did not know where it came from'],
+          items: ['Named "Turkie Corne" and "Indian" wheat on one page', 'Gerard thought it came from Turkish lands and America'],
           visual: { url: '../assets/images/topics/4-3/gerard-herball-turkie-corne-1597.jpg', alt: 'Hand-colored woodcut page from Gerard\'s Herball showing two maize plants and two ears of corn, labeled Turkie Corne and Turkie Wheate', credit: 'John Gerard, The Herball, London, 1597 · Public domain', position: '50% 25%' }
         },
         right: {
@@ -408,7 +407,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 3,
         land: [
           'KC-4.1.V.B\'s first sentence: "American foods became staple crops in various parts of Europe, Asia, and Africa."',
-          'Left: John Gerard\'s Herball (London, 1597), page 75, pictures maize as "Turkie Corne" and "Turkie Wheate." Many Europeans thought maize came from the Ottoman lands; it came from the Americas.',
+          'Left: John Gerard\'s Herball (London, 1597), page 75, pictures maize as "Turkie Corne" and "Turkie Wheate." Gerard wrote that it was brought into Spain "out of Asia which is in the Turkes Dominions, as also out of America": he was not sure. Maize came from the Americas. He also wrote that it "doth nourish far lesse than either Wheate, Rie, Barly or Otes," a European doubt about the crop.',
           'Right: an album of Taiwan\'s plants and customs painted for 六十七 (Liushiqi), a Qing censor sent to inspect Taiwan in the 1740s. The note beside the sweet potatoes, 番薯 (fanshu, "foreign tuber"), says, in a translation made for this lesson: it can be eaten raw or cooked or ground into flour; it is planted very widely in Taiwan; settlers and Indigenous people rely on it for food; it is "truly a help in years of bad harvest." The note also says the plant came from "the country of Wenlai" (Brunei); sweet potatoes reached southern China from the Philippines and Southeast Asia.',
           'In southern China, officials promoted the sweet potato in the famine year 1594. Near the mouth of the Congo River, Portuguese traders brought cassava from Brazil, and farmers took it up because it survived drought and locusts.'
         ],
@@ -420,7 +419,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'nutrition', kind: 'cause-chain', eyebrow: 'Going East · The Effect',
       kc: 'KC-4.1.V.D', title: 'Why American crops meant better nutrition.',
-      footer: 'Over two centuries, these crops helped populations grow in China, Africa and Europe.',
+      footer: 'Over two centuries, these crops helped populations grow in China and Europe, and fed many in Africa.',
       template: {
         steps: [
           { label: 'Grow where old crops struggled', text: 'Maize on dry land, potatoes in cold ground, cassava in poor soil, sweet potatoes on hills' },
@@ -435,7 +434,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'KC-4.1.V.D: "Populations in Afro-Eurasia benefitted nutritionally from the increased diversity of American food crops." Diversity is the CED\'s word: more kinds of food, not only more food.',
           'Crosby, quoted in Nunn and Qian 2010: American crops "make different demands of soils, weather and cultivation" and let farmers "produce food from soils that prior to 1492, were rated as useless."',
-          'Nunn and Qian estimate that the potato alone explains a real share of Old World population growth after 1700 (12 percent in their 2010 survey; 18 percent in their most conservative 2011 estimate). Say "helped," never "caused."',
+          'Nunn and Qian estimate that the potato alone explains a real share of Old World population growth after 1700 (12 percent in their 2010 survey; about one-quarter of Old World population and urbanization growth from 1700 to 1900 in their most conservative 2011 estimate). Say "helped," never "caused."',
           'Nutrition means how well food feeds the body.'
         ],
         ask: 'Which link in the chain is the CED\'s word "diversity"?',
@@ -446,14 +445,14 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'map', kind: 'map', eyebrow: 'The Whole Exchange on One Map',
       kc: 'KC-4.1.V', title: 'What the ships carried, and which way.',
-      footer: 'Not drawn as an arrow: sweet potatoes reaching China by way of the Philippines.',
+      footer: '1 West: animals, crops, germs · 2 West by force · 3 East: maize, potatoes · 4 Cassava to Central Africa',
       visual: { url: '../assets/images/instructional-maps/topic-4-3.svg', alt: 'Map with four arrows: animals, crops and germs west from Europe to the Caribbean; enslaved Africans west from West Africa to Brazil; maize and potatoes east to Europe; cassava from Brazil to Central Africa' },
       notes: {
         minutes: 1,
         land: [
           'Arrows show the direction things moved, not single voyages.',
           'Arrows 1 and 2 go west; 3 and 4 go east. The black dots are Tenochtitlan, Santo Domingo, Ireland, the mouth of the Congo and Fujian.',
-          'The map\'s own key is small when projected. Name the four arrows aloud, or open the map file full screen (assets/images/instructional-maps/topic-4-3.svg).'
+          'The map\'s own key is small when projected, so the four arrows are named in the footer. Not drawn as an arrow: sweet potatoes reaching China by sea from the Philippines; the map\'s note says so.'
         ],
         ask: 'Which arrow carried the cargo nobody chose?',
         listenFor: 'Arrow 1: the germs went west with the animals and crops.'
@@ -465,8 +464,8 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'The evidence tells a more useful story than the myths.',
       template: {
         rows: [
-          { myth: 'Indigenous Americans had no immunity, so they were doomed.', evidence: 'Nobody had had these diseases before, and war, forced labor and hunger made them far deadlier.', source: 'David S. Jones, 2003' },
-          { myth: 'Disease caused African slavery in the Americas.', evidence: 'Europeans grew sugar with enslaved workers on Madeira before 1492, and chose to bring that system across.', source: 'Topic 2.5; Topic 4.4' },
+          { myth: 'Indigenous Americans were born weak, so they were doomed no matter what.', evidence: 'Nobody had had these diseases before, so nobody was immune, and war, forced labor and hunger made them far deadlier.', source: 'David S. Jones, 2003' },
+          { myth: 'Disease caused African slavery in the Americas.', evidence: 'Europeans grew sugar with enslaved workers on Madeira before 1492, and chose to bring that system across.', source: 'Madeira\'s sugar, 1400s; Topic 4.4' },
           { myth: 'The exchange was equal, the same both ways.', evidence: 'Catastrophe in the Americas; new staple crops and better nutrition in Afro-Eurasia.', source: 'Topic 4.3' }
         ]
       },
@@ -531,7 +530,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 7,
         land: [
           'The Skill Builder practices the CED\'s suggested skill, 3.B: identify the evidence used in a source to support an argument.',
-          'It models Acosta (the slide students just saw), then gives the Qing album\'s note on sweet potatoes. Its claim: the sweet potato is a real help in bad harvest years. Its evidence: it can be eaten raw, cooked or as flour; it is planted very widely; settlers and Indigenous people rely on it.',
+          'It models Acosta (the slide students just saw), then gives the Qing album\'s note on sweet potatoes and asks for the claim, two pieces of evidence, and how one supports the claim. Its claim: the sweet potato is a real help in bad harvest years. Its evidence: it can be eaten raw, cooked or as flour; it is planted very widely; settlers and Indigenous people rely on it.',
           'Push students to name evidence the source itself gives, not facts they know from elsewhere.'
         ],
         ask: 'Is that evidence in the source, or something you knew already?',
@@ -578,7 +577,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 10,
         land: [
           'The revised answer in the box is what goes to Canvas.',
-          'Checkpoint 2 asks for the cause, one effect in the Americas (an Afro-Eurasian animal or crop, or rice or okra) and one in Afro-Eurasia (an American crop), each with the people affected. That is Learning Objective D, KC-4.1.V, and V.B, V.C or V.D depending on the examples a student picks. V.A is Checkpoint 1\'s and the First & 10\'s.',
+          'Checkpoint 2 asks for the cause, one thing that crossed on purpose and one by accident, one effect in the Americas (an Afro-Eurasian animal or crop, or rice or okra) and one in Afro-Eurasia (an American crop), each with the people affected. That is Learning Objective D, KC-4.1.V, and V.B, V.C or V.D depending on the examples a student picks. V.A is Checkpoint 1\'s and the First & 10\'s.',
           'Socrates is told the skill is Causation, so it will push for the cause before the effects.'
         ],
         ask: 'Does your answer have a cause, an effect in each hemisphere, and the people affected?',

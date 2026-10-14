@@ -80,8 +80,9 @@ deep audit, and the 4.2 audit records.
 2. **"Zero immunity" and "no evolved defenses."** The First & 10 (sections 1 and 3), lecture card
    2 and the Skill Builder explain the deaths as a genetic gap. The scholarship is more careful:
    David S. Jones ("Virgin Soils Revisited," 2003) argues that lack of prior exposure may have
-   left people vulnerable but that each population's fate "depended on contingent factors" such
-   as "the malnutrition, exhaustion, and stress created by European colonization." The story
+   left people vulnerable but that "the fates of individual populations depended on contingent
+   factors of their physical, economic, social, and political environments," the "forces of
+   poverty, social stress, and environmental vulnerability" that colonization created. The story
    says so, in ninth-grade words.
 3. **Chronology at Tenochtitlan.** The First & 10 says the epidemic struck "as Hernán Cortés's
    Spanish army was besieging the city" in 1520. The Spaniards had been driven out on 30 June
@@ -161,7 +162,7 @@ people. That is the "catastrophic effects in many areas" the College Board names
 
 What went west on purpose changed the land too. Pigs and cattle multiplied so fast that, by 1587,
 one Spanish fleet carried home almost a hundred thousand cattle hides from the Caribbean and
-Mexico. Sheep stripped hillsides in central Mexico. Horses spread north from Spanish settlements,
+Mexico. One historian argues that sheep stripped the hillsides of one valley in central Mexico. Horses spread north from Spanish settlements,
 and by the early 1700s peoples of the Great Plains, such as the Comanche, had built new ways of
 life on horseback. Wheat, fruit trees and sugarcane went in, and so did rice and okra, carried by
 enslaved Africans who knew how to grow them.
@@ -171,17 +172,17 @@ Caribbean and Brazil grew it better than anywhere. So Europeans built **plantati
 growing one **cash crop** to sell, worked by **coerced labor**, overwhelmingly enslaved Africans,
 and shipped the sugar mostly to Europe. Tobacco, an American plant, became a plantation crop the
 same way. Disease had emptied land of workers, but disease alone did not cause African slavery in
-the Americas: Europeans had already grown sugar with enslaved workers, many of them African, on
+the Americas: Europeans had already grown sugar with enslaved workers, including Canary Islanders and Africans, on
 Atlantic islands such as Madeira before 1492, and they chose to bring that system with them. Who did that work,
 and how, is the next topic.
 
-Going east, the exchange was mostly a gift. American crops grew where the old crops struggled:
+Going east, the exchange was mostly a benefit. American crops grew where the old crops struggled:
 maize on dry land, potatoes in cold, wet ground, cassava in poor soil and drought, sweet potatoes
 on hillsides too steep for rice. A family that planted them had more food, and more kinds of
 food, and something to eat when the old harvest failed. In southern China, officials promoted
 the sweet potato in a famine year, 1594. Near the mouth of the Congo River, Portuguese traders
 brought cassava from Brazil, and farmers took it up because it survived drought and locusts.
-Over the next two centuries, these crops helped populations grow in China, Africa and Europe.
+Over the next two centuries, these crops helped populations grow in China and Europe, and fed many people in Africa even as the slave trade carried millions away.
 
 Put it together. One connection, two very different results. In the Americas, the germs that
 nobody meant to carry killed millions, and the animals and crops that people did mean to carry

@@ -503,7 +503,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Things crossed in three ways. Some went <strong>on purpose</strong>. Columbus's second voyage, in 1493, carried horses, cattle, pigs, wheat seed, and sugarcane, because settlers wanted the foods and animals they knew. Some went <strong>by accident</strong>: germs in sailors' bodies, rats in the cargo, and, most likely, mosquito eggs in the water barrels. An animal that carries a disease from one person to another, like a rat or a mosquito, is a <span class=\"kt\">disease vector</span>. And some went <strong>by force</strong>. Enslaved Africans, carried across the Atlantic against their will, brought foods from home with them."
+            "html": "Things crossed in three ways. Some went <strong>on purpose</strong>. Columbus's second voyage, in 1493, carried horses, cattle, pigs, wheat seed, and sugarcane, because settlers wanted the foods and animals they knew. Some went <strong>by accident</strong>: germs in sailors' bodies, rats in the cargo, and, most likely, the eggs of the mosquito that spreads yellow fever, hidden in water barrels. An animal that carries a disease from one person to another, like a rat or a mosquito, is a <span class=\"kt\">disease vector</span>. And some went <strong>by force</strong>. Enslaved Africans, carried across the Atlantic against their will, brought foods from home with them."
           }
         ],
         "callout": {
@@ -522,7 +522,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In June 1520 the people of Tenochtitlan, the Aztec capital, drove the Spaniards out of their city. That autumn, smallpox swept through it. An <span class=\"kt\">epidemic</span> is a disease that spreads to many people in one place at the same time. Years later, Nahua people from the city described the epidemic for a Spanish friar, Bernardino de Sahagún. People were covered in sores and could not move. Their account says that \"many died of hunger, because there was no one who could prepare food.\" Their new ruler, Cuitláhuac, died in the epidemic, most likely of smallpox. When the Spaniards came back to besiege the city in 1521, \"the Mexica warriors were greatly weakened by it.\""
+            "html": "In June 1520 the people of Tenochtitlan, the Aztec capital, drove the Spaniards out of their city. That autumn, smallpox swept through it. An <span class=\"kt\">epidemic</span> is a disease that spreads to many people in one place at the same time. Years later, Nahua people from the city described the epidemic for a Spanish friar, Bernardino de Sahagún. People were covered in sores and could not move. Their account says that \"many just starved to death\" because \"no one took care of others any longer.\" Their new ruler, Cuitláhuac, died in the epidemic, most likely of smallpox. When the Spaniards came back to besiege the city in 1521, \"the Mexica warriors were greatly weakened by it.\""
           },
           {
             "type": "p",
@@ -535,7 +535,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Claims and Evidence in Sources",
-          "raw": "<p><strong>Find the evidence a source uses.</strong> The Nahua account makes a claim: the sickness destroyed their city. It backs that claim with specific evidence: people could not move, no one could prepare food, people starved, and the warriors were weakened. Naming the evidence a source uses to support its argument is the skill this topic practices.</p>"
+          "raw": "<p><strong>Find the evidence a source uses.</strong> The Nahua account makes a claim: the sickness brought \"great desolation.\" Then it gives evidence you can point to, such as people who could no longer walk or even turn over. Naming the evidence a source uses to support its argument is the skill this topic practices.</p>"
         }
       },
       {
@@ -545,7 +545,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "What Europeans carried on purpose changed the Americas too. Pigs and cattle multiplied fast. A Spanish writer, José de Acosta, reported that wild cattle on the island of Santo Domingo roamed \"by thousands,\" and that one Spanish fleet in 1587 carried almost a hundred thousand cattle hides home from the Caribbean and Mexico. In one valley of central Mexico, sheep grazed the hillsides bare."
+            "html": "What Europeans carried on purpose changed the Americas too. Pigs and cattle multiplied fast. A Spanish writer, José de Acosta, reported that wild cattle on the island of Santo Domingo roamed \"by thousands,\" and that one Spanish fleet in 1587 carried almost a hundred thousand cattle hides home from the Caribbean and Mexico. One historian argues that in one valley of central Mexico, sheep grazed the hillsides bare."
           },
           {
             "type": "p",
@@ -572,11 +572,11 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Sugarcane came from Afro-Eurasia, but the Caribbean and Brazil turned out to grow it better than almost anywhere. So Europeans built <span class=\"kt\">plantations</span>: huge farms growing one crop to sell. A crop grown to sell rather than to eat at home is a <span class=\"kt\">cash crop</span>. Plantations used <span class=\"kt\">coerced labor</span>, people forced to work, and on sugar plantations those people were overwhelmingly enslaved Africans. Most of the sugar was shipped to Europe. Tobacco, an American plant, became a plantation crop the same way."
+            "html": "Sugarcane came from Afro-Eurasia, but the Caribbean and Brazil turned out to grow it better than almost anywhere. So Europeans built <span class=\"kt\">plantations</span>: huge farms growing one crop to sell. A crop grown to sell rather than to eat at home is a <span class=\"kt\">cash crop</span>. Plantations used <span class=\"kt\">coerced labor</span>, people forced to work, and on sugar plantations those people were overwhelmingly enslaved Africans. Most of it was shipped to Europe and the Middle East. Tobacco, an American plant, became a plantation crop the same way."
           },
           {
             "type": "p",
-            "html": "You may read that disease \"caused\" African slavery in the Americas: disease killed the workers, so Europeans brought Africans. That is too simple. Disease did empty land of workers. But before 1492, Europeans were already growing sugar with enslaved workers, many of them African, on Atlantic islands such as Madeira, and they chose to bring that system to the Americas. How that forced labor worked is Topic 4.4."
+            "html": "You may read that disease \"caused\" African slavery in the Americas: disease killed the workers, so Europeans brought Africans. That is too simple. Disease did empty land of workers. But before 1492, Europeans were already growing sugar with enslaved workers, including Canary Islanders and Africans, on Atlantic islands such as Madeira, and they chose to bring that system to the Americas. How that forced labor worked is Topic 4.4."
           }
         ],
         "callout": {
@@ -591,7 +591,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Going east, the exchange was mostly a gift. American crops became <span class=\"kt\">staple crops</span>, the main foods people eat every day, in parts of Europe, Asia, and Africa, because they grew where the old crops struggled. Maize grew on dry land. Potatoes grew in cold, wet ground. Cassava grew in poor soil and survived drought. Sweet potatoes grew on hillsides too steep for rice."
+            "html": "Going east, the exchange was mostly a benefit. American crops became <span class=\"kt\">staple crops</span>, the main foods people eat every day, in parts of Europe, Asia, and Africa, because they grew where the old crops struggled. Maize grew on dry land. Potatoes grew in cold, wet ground. Cassava grew in poor soil and survived drought. Sweet potatoes grew on hillsides too steep for rice."
           },
           {
             "type": "p",
@@ -599,7 +599,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Nutrition</span> is how well food feeds the body. A family that planted these crops had more food, more kinds of food, and something to eat when the old harvest failed. Over the next two centuries, these crops helped populations grow in China, Africa, and Europe."
+            "html": "<span class=\"kt\">Nutrition</span> is how well food feeds the body. A family that planted these crops had more food, more kinds of food, and something to eat when the old harvest failed. Over the next two centuries, these crops helped populations grow in China and Europe, and they fed many people in Africa even as the slave trade carried millions away."
           }
         ],
         "callout": {
@@ -631,7 +631,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "Once ships crossed the Atlantic and came back again and again, plants, animals, and germs crossed with them: some on purpose, some by accident, and some with enslaved Africans carried by force. Smallpox, measles, and malaria, with rats and mosquitoes as carriers, had catastrophic effects in many parts of the Americas, made worse by war, forced labor, and hunger. Horses, pigs, cattle, wheat, and sugarcane remade American land, enslaved Africans brought rice and okra, and cash crops such as sugar were grown on plantations with coerced labor and shipped mostly to Europe. Going east, maize, potatoes, cassava, and sweet potatoes became staple crops and improved nutrition in Afro-Eurasia. The ships carried more than anyone meant them to.",
+    "takeaway": "Once ships crossed the Atlantic and came back again and again, plants, animals, and germs crossed with them: some on purpose, some by accident, and some with enslaved Africans carried by force. Smallpox, measles, and malaria had catastrophic effects in many parts of the Americas, made worse by war, forced labor, and hunger, and the ships also carried disease vectors such as rats and mosquitoes. Horses, pigs, cattle, wheat, and sugarcane remade American land, enslaved Africans brought rice and okra, and cash crops such as sugar were grown on plantations with coerced labor and shipped mostly to Europe. Going east, maize, potatoes, cassava, and sweet potatoes became staple crops and improved nutrition in Afro-Eurasia. The ships carried more than anyone meant them to.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
@@ -644,8 +644,8 @@ module.exports = {
       {
         "num": "02",
         "skill": "Claims and Evidence in Sources",
-        "text": "In Section 2, the Nahua account claims that smallpox destroyed their city. Identify TWO pieces of evidence the account uses to support that claim. Then explain ONE reason the disease was so deadly in the Americas.",
-        "placeholder": "One piece of evidence is... A second piece of evidence is... The disease was so deadly because..."
+        "text": "In Section 2, the Nahua account claims the sickness brought \"great desolation.\" Identify TWO pieces of evidence the account uses to support that claim. Then explain the TWO reasons the disease was so deadly in the Americas.",
+        "placeholder": "One piece of evidence is... A second piece of evidence is... The disease was so deadly because, first,... and second,..."
       },
       {
         "num": "03",

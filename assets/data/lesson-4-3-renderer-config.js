@@ -62,7 +62,7 @@
       { label: '3. East: maize, potatoes', detail: 'American crops reached Europe and became main foods in places where the old crops struggled.' },
       { label: '4. Cassava to Central Africa', detail: 'Portuguese traders carried cassava from Brazil to the mouth of the Congo River, where farmers took it up because it survived drought.' },
       { label: 'Black dots', detail: 'Tenochtitlan (smallpox, 1520), Santo Domingo (sugar and cattle), Ireland (potatoes), the mouth of the Congo (cassava), and Fujian in China (sweet potatoes, 1594).' },
-      { label: 'Not drawn as an arrow', detail: 'Sweet potatoes reached southern China by sea from the Philippines, a route this Atlantic-centered map does not draw. The note at the bottom of the map says so.' }
+      { label: 'Not drawn as an arrow', detail: 'Sweet potatoes reached southern China by sea from the Philippines, a route this Atlantic-centered map does not draw.' }
     ]
   };
 
@@ -87,7 +87,7 @@
 
   lesson.beInTheRoom = {
     url: '../beintheroom/unit-4/the-replanting-council.html',
-    desc: 'Sit on a town council in the Valley of Mexico in 1531, ten years after smallpox: decide what to plant, what to do about the settlers\' animals, and how to care for the sick when a new sickness arrives.'
+    desc: 'Sit on a town council in the Valley of Mexico in 1531, eleven years after smallpox: decide what to plant, what to do about the settlers\' animals, and how to care for the sick when a new sickness arrives.'
   };
 
   lesson.skillBuilder = {
@@ -100,7 +100,7 @@
       { label: 'Find the evidence', text: 'Acosta gives two kinds of evidence. First, what he describes: wild herds "by thousands" with no owner. Second, numbers from a real record: one fleet in 1587 carried 35,444 hides from Santo Domingo and 64,350 from New Spain, almost a hundred thousand in all.' },
       { label: 'Ask how strong it is', text: 'Acosta did not count the cattle. He counted hides that reached Spain. That still supports his claim, because a few cattle could never have filled one fleet with almost a hundred thousand hides. A number from a record is harder to argue with than a description.' }
     ],
-    prompt: 'Now do it yourself with a different source. In the 1740s, an album made for a Qing official in Taiwan said this about the sweet potato, a plant first grown in the Americas (translated for this lesson): "It can be eaten raw or cooked, and also ground into flour. It is planted very widely in Taiwan; settlers and Indigenous people rely on it for food. It is truly a help in years of bad harvest." In 2 to 3 sentences, state the claim this source makes, and identify TWO pieces of evidence it uses to support that claim.',
+    prompt: 'Now do it yourself with a different source. In the 1740s, an album made for a Qing official in Taiwan said this about the sweet potato, a plant first grown in the Americas (translated for this lesson): "It can be eaten raw or cooked, and also ground into flour. ... It is planted very widely in Taiwan; settlers and Indigenous people rely on it for food. It is truly a help in years of bad harvest." In 2 to 3 sentences, state the claim this source makes, identify TWO pieces of evidence it uses to support that claim, and explain how one of them supports it.',
     criteria: [
       'I stated the claim in my own words: what the writer wants me to believe.',
       'I named TWO pieces of evidence the source itself gives, not facts from somewhere else.',
@@ -118,7 +118,7 @@
       prompt: 'Name ONE disease and ONE disease vector (an animal that carries disease) that crossed the Atlantic from the Eastern Hemisphere. Then explain TWO reasons these diseases had catastrophic effects in many parts of the Americas: one about whether people had had the disease before, and one about the conditions people were living in.',
       responseType: 'Checkpoint 1',
       terms: ['smallpox', 'measles', 'malaria', 'disease vector', 'rats', 'mosquitoes', 'epidemic', 'immunity', 'Tenochtitlan', 'war', 'forced labor', 'hunger'],
-      focus: ['Name one disease and one disease vector.', 'Give one reason about exposure: nobody had had these diseases before, so nobody was immune.', 'Give one reason about conditions: war, forced labor, hunger, or everyone falling sick at once.']
+      focus: ['Name one disease and one disease vector.', 'Give one reason about exposure: nobody had had these diseases before, so nobody was immune.', 'Give one reason about conditions: war, forced labor, or hunger.']
     },
     {
       title: 'Checkpoint 2: What Crossed, and What It Did',
@@ -126,7 +126,7 @@
       cardDesc: 'The cause of the Columbian Exchange, and one effect on each side of the Atlantic.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Explain what caused the Columbian Exchange. Then explain TWO effects. ONE effect in the Americas, from an animal or crop Europeans brought (such as horses, pigs, cattle, or sugarcane) or a food enslaved Africans brought (such as rice or okra). ONE effect in Afro-Eurasia, from an American crop (such as maize, potatoes, cassava, or sweet potatoes). For each effect, say which people it affected and how.',
+      prompt: 'Explain what caused the Columbian Exchange, and name ONE thing that crossed on purpose and ONE that crossed by accident. Then explain TWO effects. ONE effect in the Americas, from an animal or crop Europeans brought (such as horses, pigs, cattle, or sugarcane) or a food enslaved Africans brought (such as rice or okra). ONE effect in Afro-Eurasia, from an American crop (such as maize, potatoes, cassava, or sweet potatoes). For each effect, say which people it affected and how.',
       responseType: 'Checkpoint 2',
       skill: 'Causation',
       terms: ['Columbian Exchange', 'on purpose', 'by accident', 'horses', 'pigs', 'cattle', 'sugarcane', 'cash crop', 'plantation', 'coerced labor', 'rice', 'okra', 'maize', 'potatoes', 'cassava', 'sweet potatoes', 'staple crop', 'nutrition'],
@@ -136,8 +136,8 @@
 
   lesson.evidenceLab = {
     title: 'Evidence Lab: What Crossed, and What It Did',
-    task: 'Choose TWO cards: one about something that crossed to the Americas, and one about the American crops (in the Americas, or after they traveled to Europe or Asia). For each, say what kind of source it is, who made it and when, and what it directly shows.',
-    prompt: 'Using your two cards, make one claim about the effects of the Columbian Exchange on the two hemispheres. For each card, give one detail you can see, explain how it supports your claim, and name one thing the source cannot tell you.'
+    task: 'Choose TWO cards: one about something that crossed to the Americas (the Florentine Codex or the sugar mill) and one about American crops in Afro-Eurasia (the English herbal or the Qing album). The Andes harvest shows those crops at home before they traveled; use it as background.',
+    prompt: 'Make one claim about the effects of the Columbian Exchange on the two hemispheres. Then, for EACH of your two cards: (1) say what kind of source it is and when it was made, (2) give one detail you can see and explain how it supports your claim, and (3) name one thing the source cannot tell you.'
   };
 
   lesson.images = [
@@ -167,14 +167,14 @@
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Frumentum%20turcicum%20Gerard%201597%2075.png?width=1200',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Frumentum_turcicum_Gerard_1597_75.png',
       caption: 'A page of John Gerard\'s The Herball or Generall Historie of Plantes, printed in London in 1597. It pictures maize, a plant first grown in the Americas, under the names "Turkie Corne" and "Turkie Wheate."',
-      prompt: 'NOTICE the names Gerard gives this plant. INFER what those names suggest about how much English readers knew about where maize came from. What does a book about plants show, and what can it not show about who was eating maize?'
+      prompt: 'NOTICE the different names printed on this page for the same plant. INFER what the mixed names suggest about how English readers understood a new plant and where it came from. What does a book about plants show, and what can it not show about who was eating maize?'
     },
     {
       title: 'Sweet Potatoes in a Qing Album of Taiwan, 1740s',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/%E7%95%AA%E8%96%AF%E3%80%81%E9%A6%99%E5%93%A1%E3%80%81%E7%95%AA%E6%9F%BF%E3%80%81%E8%91%AB%E8%98%86%E3%80%81%E7%81%A3%E8%B1%86.jpg?width=1200',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:%E7%95%AA%E8%96%AF%E3%80%81%E9%A6%99%E5%93%A1%E3%80%81%E7%95%AA%E6%9F%BF%E3%80%81%E8%91%AB%E8%98%86%E3%80%81%E7%81%A3%E8%B1%86.jpg',
-      caption: 'From an album of Taiwan\'s plants and customs painted for 六十七 (Liushiqi), a Qing official sent to inspect Taiwan in the 1740s. The note beside the red tubers labeled 番薯 (fanshu, "foreign tuber") says, in a translation made for this lesson: "It is planted very widely in Taiwan; settlers and Indigenous people rely on it for food. It is truly a help in years of bad harvest."',
-      prompt: 'NOTICE what the label calls this plant and what the note says people use it for. INFER what the name "foreign tuber" suggests about where the plant came from. How could this source support a claim about American crops and nutrition in Asia?'
+      caption: 'From an album of Taiwan\'s plants and customs painted for 六十七 (Liushiqi), a Qing official sent to inspect Taiwan in the 1740s. The note beside the red tubers labeled 番薯 (fanshu, "foreign tuber") says, in a translation made for this lesson: "Its seed came from the country of Wenlai [Brunei]. It is planted very widely in Taiwan; settlers and Indigenous people rely on it for food. It is truly a help in years of bad harvest."',
+      prompt: 'NOTICE what the label calls this plant and what the note says people use it for. INFER what the name "foreign tuber" suggests. The note says the plant came from Brunei, but sweet potatoes first grew in the Americas: what does that tell you about what this source could and could not know? How could it still support a claim about nutrition in Asia?'
     }
   ];
 })();

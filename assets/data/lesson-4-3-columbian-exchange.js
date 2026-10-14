@@ -42,12 +42,12 @@ window.BEHISTORICAL_LESSON = {
       theme: "Humans and the Environment"
     },
     {
-      target: "I can explain why diseases from the Eastern Hemisphere, carried with disease vectors such as rats and mosquitoes, had catastrophic effects on many Indigenous populations in the Americas.",
+      target: "I can explain how diseases from the Eastern Hemisphere, such as smallpox, measles, and malaria, and disease vectors, such as rats and mosquitoes, crossed to the Americas, and why these diseases had catastrophic effects on many Indigenous populations.",
       kc: 'KC-4.1.V.A',
       theme: "Humans and the Environment"
     },
     {
-      target: "I can explain the effects of the exchange on both hemispheres: Afro-Eurasian animals and crops and foods brought by enslaved Africans in the Americas, cash crops grown on plantations with coerced labor, and American staple crops that improved nutrition in Afro-Eurasia.",
+      target: "I can explain the effects of the exchange on both hemispheres. In the Americas: animals and crops Europeans brought, foods enslaved Africans brought, and cash crops grown on plantations with coerced labor. In Afro-Eurasia: American staple crops that improved nutrition.",
       kc: 'KC-4.1.V.B; KC-4.1.V.C; KC-4.1.V.D',
       theme: "Humans and the Environment"
     }
@@ -120,7 +120,7 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "Since the end of the last Ice Age, about eleven thousand years ago, ocean had kept the Americas apart from Africa, Asia, and Europe. Each side grew its own crops, kept its own animals, and lived with its own diseases. The Americas had **maize, potatoes, cassava, tomatoes, cacao, and tobacco**, but no horses, cattle, or pigs. Afro-Eurasia had **wheat, rice, sugarcane, horses, cattle, pigs, and sheep**, and diseases such as **smallpox and measles**.",
           "The cause of the **Columbian Exchange** is a new connection: after 1492, ships crossed the Atlantic and came back, again and again, as Europeans built colonies. Everything that rode those ships crossed too. The historian Alfred Crosby named the exchange in 1972.",
-          "Things crossed in three ways. **On purpose:** Columbus's second voyage, in 1493, carried horses, cattle, pigs, wheat seed, and sugarcane. **By accident:** germs, rats in the cargo, and, most likely, mosquito eggs in water barrels. Animals that carry disease from person to person are **disease vectors**. **By force:** enslaved Africans brought foods from home.",
+          "Things crossed in three ways. **On purpose:** Columbus's second voyage, in 1493, carried horses, cattle, pigs, wheat seed, and sugarcane. **By accident:** germs, rats in the cargo, and, most likely, the eggs of the mosquito that spreads yellow fever, hidden in water barrels. Animals that carry disease from person to person are **disease vectors**. **By force:** enslaved Africans brought foods from home.",
           "Keep the College Board's word in mind: the disease vectors and diseases moved **unintentionally**. The ships carried more than anyone meant them to."
         ],
         image: {
@@ -148,10 +148,10 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Going West on Purpose and by Force: Animals, Sugar, Rice, and Okra",
         bullets: [
-          "**Pigs and cattle** multiplied fast. José de Acosta reported in 1590 that wild cattle on Santo Domingo roamed \"by thousands,\" and that one fleet in 1587 carried almost a hundred thousand cattle hides to Spain from the Caribbean and Mexico. In one valley of central Mexico, sheep grazed the hillsides bare.",
+          "**Pigs and cattle** multiplied fast. José de Acosta reported in 1590 that wild cattle on Santo Domingo roamed \"by thousands,\" and that one fleet in 1587 carried almost a hundred thousand cattle hides to Spain from the Caribbean and Mexico. One historian argues that in one valley of central Mexico, sheep grazed the hillsides bare.",
           "**Horses** had died out in the Americas thousands of years earlier. Brought back by the Spanish, they spread north, and by the early 1700s Great Plains peoples such as the **Comanche** had built new ways of life on horseback. An effect of the exchange could be an opportunity as well as a disaster.",
           "**Enslaved Africans**, carried across the Atlantic by force, brought foods such as **rice and okra**, and many knew how to grow rice. Okra was growing in Brazil by the 1650s.",
-          "**Sugarcane** came from Afro-Eurasia but grew best in the Caribbean and Brazil. Europeans grew it as a **cash crop** on **plantations** worked by **coerced labor**, overwhelmingly enslaved Africans, and shipped most of it to Europe. Before 1492, Europeans had already grown sugar with enslaved workers on Atlantic islands such as Madeira, so disease alone did not cause African slavery in the Americas. How that forced labor worked is Topic 4.4."
+          "**Sugarcane** came from Afro-Eurasia but grew best in the Caribbean and Brazil. Europeans grew it as a **cash crop** on **plantations** worked by **coerced labor**, overwhelmingly enslaved Africans, and shipped most of it to Europe and the Middle East. Before 1492, Europeans had already grown sugar with enslaved workers, including Canary Islanders and Africans, on Atlantic islands such as Madeira, so disease alone did not cause African slavery in the Americas. How that forced labor worked is Topic 4.4."
         ],
         image: {
           title: "A Sugar Mill in Dutch Brazil",
@@ -165,7 +165,7 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "American crops became **staple crops**, the main everyday foods, in parts of Europe, Asia, and Africa because they grew where the old crops struggled: **maize** on dry land, **potatoes** in cold, wet ground, **cassava** in poor soil and drought, **sweet potatoes** on hillsides too steep for rice.",
           "In southern China, officials promoted the sweet potato in 1594, a famine year. By the 1740s, an album made for a Qing official in Taiwan called it \"truly a help in years of bad harvest.\" Near the mouth of the Congo River, Portuguese traders brought cassava from Brazil, and farmers took it up because it survived drought and locusts. In Ireland, the potato had become a main food by the 1700s.",
-          "**Nutrition** means how well food feeds the body. More food, more kinds of food, and a fallback when the old harvest failed meant better nutrition, and over two centuries these crops helped populations grow in China, Africa, and Europe.",
+          "**Nutrition** means how well food feeds the body. More food, more kinds of food, and a fallback when the old harvest failed meant better nutrition, and over two centuries these crops helped populations grow in China and Europe, and they fed many people in Africa even as the slave trade carried millions away.",
           "Put both directions together: one connection, two very different results. In the Americas, catastrophic disease and land remade by new animals and plantations. In Afro-Eurasia, new staple crops and better nutrition."
         ],
         image: {
@@ -207,7 +207,7 @@ window.BEHISTORICAL_LESSON = {
 
   primarySource: {
     title: "Primary Source: A Nahua Account of Smallpox in Tenochtitlan, 1520",
-    intro: "This account comes from Book 12 of the Florentine Codex, put together from the 1550s to the 1570s by the Spanish friar Bernardino de Sahagún with Nahua elders, who described the events in their own language, Nahuatl. Sahagún wrote his own Spanish version beside it. The document is James Lockhart's English translation of the Nahuatl, with one sentence from the Spanish version at the end. The Mexica were the people of Tenochtitlan. Tepeilhuitl was a month in the Nahua calendar; Sahagún says it fell at the end of September.",
+    intro: "This account comes from Book 12 of the Florentine Codex, put together from the 1550s to the 1570s by the Spanish friar Bernardino de Sahagún with Nahua elders, who described the events in their own language, Nahuatl. Sahagún wrote his own Spanish version beside it. The document is James Lockhart's English translation of the Nahuatl, with one sentence from the Spanish version at the end. The Mexica were the people of Tenochtitlan. Tepeilhuitl was a month in the Nahua calendar; Sahagún says it fell at the end of September. In the first line, \"before the Spaniards appeared to us\" means before the Spaniards came back to attack the city.",
     skill: "3.B Claims and Evidence in Sources: identify the evidence a source uses to support its claim",
     attribution: "Florentine Codex, Book 12, chapter 29, put together by Bernardino de Sahagún with Nahua elders, 1550s to 1570s; English translation by James Lockhart",
     text: "<p>Before the Spaniards appeared to us, first an epidemic broke out, a sickness of pustules. It began in Tepeilhuitl. Large bumps spread on people; some were entirely covered. They spread everywhere, on the face, the head, the chest, etc. [The disease] brought great desolation; a great many died of it. They could no longer walk about, but lay in their dwellings and sleeping places, no longer able to move or stir. They were unable to change position, to stretch out on their sides or face down, or raise their heads. And when they made a motion, they called out loudly. The pustules that covered people caused great desolation; very many people died of them, and many just starved to death; starvation reigned, and no one took care of others any longer. ... This disease of pustules lasted a full sixty days; after sixty days it abated and ended. ... The Mexica warriors were greatly weakened by it.</p><p>From Sahagún's Spanish version: \"Many died of hunger, because there was no one who could prepare food.\"</p>",
@@ -229,7 +229,7 @@ window.BEHISTORICAL_LESSON = {
 
   beInTheRoom: {
     url: '',
-    desc: "Sit on a town council in the Valley of Mexico in 1531, ten years after smallpox, and decide what to plant, what to do about the settlers' animals, and how to care for the sick."
+    desc: "Sit on a town council in the Valley of Mexico in 1531, eleven years after smallpox, and decide what to plant, what to do about the settlers' animals, and how to care for the sick."
   }
 
 };
