@@ -93,6 +93,35 @@ trade for the accuracy loop. So nothing may depend on conversation memory:
   ledger say which defect classes turned up. Read them in Phase 0 and search this topic for
   the same classes before its reviewers run.
 
+## Two Claude accounts, one build line
+
+Jeff runs builds from two Claude accounts and switches between them when one runs low on
+usage (2026-10-14). The other account has no memory of this conversation, so **a build
+must be resumable from GitHub alone, at any moment.** The porting prompt the other account
+starts from is `05_PROMPTS/BeHistorical-Build-Handoff-Prompt.md` in AndersonLogic-OS.
+
+- **Push after every phase, not only after each gate.** A phase that ends with work only
+  in the container is lost the moment Jeff switches accounts. Commit message titles start
+  with the topic and phase (`Topic 4.3: Phase 5, First & 10 from the story`), so the git
+  log alone says how far a build got.
+- **Name the working branch by topic**, `claude/topic-X-Y-build`, so the other account
+  finds it without being told. One working branch per topic, reused across sessions and
+  accounts; never start a second branch for a topic that already has one.
+- **The story draft's status line and the claim ledger are the resume point.** When a
+  session stops mid-build, it adds a dated `**Resume here:**` line under the story draft's
+  status line naming the last finished phase, the next step, and anything half done (for
+  example "review pass 2 findings 1 to 9 fixed, 10 to 14 not yet"). The next session
+  deletes the line when it picks the work up. Never leave the resume point only in chat.
+- **Starting a session, on either account:** `git fetch origin`, then list remote branches
+  with commits not on `main` (Phase 0 step 0). A `claude/topic-*` branch ahead of `main` is
+  either a finished build waiting for "ship it" or a build to resume; its last commit and
+  any `Resume here` line say which. Then read the Notion task "Finish BeHistorical Units 3
+  and 4 and update Canvas" (Master Tasks, Area AP World) for what Jeff has asked for since.
+- **Both accounts follow the same rules**, and nothing a session decides with Jeff is real
+  until it is in a committed file or Notion. A decision Jeff makes in chat goes into the
+  nearest `Decisions.md` in AndersonLogic-OS or the topic's story draft before the session
+  ends, or the other account will act without it.
+
 ## Rules that hold in every phase
 
 1. **One topic at a time within a unit.** Unit 3's First & 10 lives in one shared file
