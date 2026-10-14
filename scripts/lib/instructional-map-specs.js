@@ -889,7 +889,7 @@ module.exports = [
     flows: [
       { from: [-8, 38], via: [[-35, 30]], to: [-70, 20], label: 'West: animals, crops, germs' },
       { from: [-12, 10], via: [[-28, 2]], to: [-37, -8], label: 'West by force: enslaved Africans' },
-      { from: [-90, 23], via: [[-40, 42]], to: [-9, 46], label: 'East, on purpose: maize, potatoes' },
+      { from: [-82, 23], via: [[-40, 42]], to: [-9, 46], label: 'East, on purpose: maize, potatoes' },
       { from: [-35, -10], via: [[-12, -14]], to: [11, -6.5], label: 'Cassava to Central Africa' }
     ],
     points: [

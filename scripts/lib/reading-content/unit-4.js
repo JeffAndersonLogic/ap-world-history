@@ -499,16 +499,16 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Then ships began crossing the Atlantic and, just as important, coming back, again and again, as Europeans built colonies. That new connection is the cause of the <span class=\"kt\">Columbian Exchange</span>: the movement of plants, animals, and diseases between the two halves of the world. A historian named Alfred Crosby gave it that name in 1972."
+            "html": "Then ships began crossing the Atlantic and, just as important, coming back, again and again, as Europeans built colonies. That new connection is the cause of the <span class=\"kt\">Columbian Exchange</span>: the movement of plants, animals, and diseases between the two halves of the world. A historian named Alfred Crosby gave it that name in 1972. From the 1560s, Spanish ships also crossed the Pacific between Mexico and the Philippines, a second road between the two halves of the world."
           },
           {
             "type": "p",
-            "html": "Things crossed in three ways. Some went <strong>on purpose</strong>. Columbus's second voyage, in 1493, carried horses, cattle, pigs, wheat seed, and sugarcane, because settlers wanted the foods and animals they knew. Some went <strong>by accident</strong>: germs in sailors' bodies, rats in the cargo, and, most likely, the eggs of the mosquito that spreads yellow fever, hidden in water barrels. An animal that carries a disease from one person to another, like a rat or a mosquito, is a <span class=\"kt\">disease vector</span>. And some went <strong>by force</strong>. Enslaved Africans, carried across the Atlantic against their will, brought foods from home with them."
+            "html": "Things crossed in three ways. Some went <strong>on purpose</strong>. Columbus's second voyage, in 1493, carried horses, cattle, pigs, wheat seed, and sugarcane, because settlers wanted the foods and animals they knew. Some went <strong>by accident</strong>: germs in sailors' bodies, rats in the cargo, and, most likely, the eggs of the mosquito that spreads yellow fever, hidden in water barrels. An animal that carries a disease from one person to another, like a mosquito, or a rat and the fleas it carries, is a <span class=\"kt\">disease vector</span>. And some went <strong>by force</strong>. Enslaved Africans were carried across the Atlantic against their will, and African foods crossed on the same ships."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>Explain the cause, not just the list.</strong> \"Plants and animals were exchanged\" is a list. \"Ships began crossing the Atlantic and coming back, so everything they carried, on purpose or by accident, went across\" explains why the exchange happened.</p>"
+          "raw": "<p><strong>Explain the cause, not just the list.</strong> \"Plants and animals were exchanged\" is a list. \"Ships began crossing the ocean and coming back, so everything they carried, on purpose or by accident, went across\" explains why the exchange happened.</p>"
         }
       },
       {
@@ -530,12 +530,12 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Historians argue about the exact numbers. One careful estimate is that central Mexico's population fell from about 15 million in 1519 to about 1.5 million a century later, and many regions of the Americas lost most of their people. That is what the College Board means by \"catastrophic effects in many areas.\""
+            "html": "Historians argue about the exact numbers. Most published estimates say central Mexico lost between about two-thirds and more than nine-tenths of its people between 1519 and 1595, and many regions of the Americas lost most of their people. That is what the College Board means by \"catastrophic effects in many areas.\""
           }
         ],
         "callout": {
           "label": "AP Thinking, Claims and Evidence in Sources",
-          "raw": "<p><strong>Find the evidence a source uses.</strong> A source makes a claim, then points to things that support it. In Section 3, José de Acosta claims that cattle multiplied in the Americas, and his evidence is a number: one fleet carried almost a hundred thousand hides. Read the Nahua account the same way: find its claim, then the evidence it points to. Naming the evidence a source uses to support its argument is the skill this topic practices.</p>"
+          "raw": "<p><strong>Find the evidence a source uses.</strong> A source makes a claim, then points to things that support it. Later, in Section 3, you will meet José de Acosta, who claims that cattle multiplied in the Americas, and his evidence is a number: one fleet carried almost a hundred thousand hides. Read the Nahua account the same way: find its claim, then the evidence it points to. Naming the evidence a source uses to support its argument is the skill this topic practices.</p>"
         }
       },
       {
@@ -568,11 +568,11 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Some of what crossed came with people who were forced to cross. Enslaved Africans brought foods from home, including okra and African rice, and many knew how to grow rice from farming it in West Africa. Okra was growing in Brazil by the 1650s. Enslaved people grew these foods in small garden plots to feed themselves, and the foods became part of cooking across the Americas, from Brazil to the Caribbean."
+            "html": "Some of what crossed came with people who were forced to cross. African foods, including okra and African rice, crossed on slave ships, often as food for the voyage, and many enslaved Africans knew how to grow rice from farming it in West Africa. Okra was growing in Brazil by the 1650s. Enslaved people grew these foods in small garden plots to feed themselves, and the foods became part of cooking across the Americas, from Brazil to the Caribbean."
           },
           {
             "type": "p",
-            "html": "Sugarcane came from Afro-Eurasia, but the Caribbean and Brazil turned out to grow it better than almost anywhere. So Europeans built <span class=\"kt\">plantations</span>: huge farms growing one crop to sell. A crop grown to sell rather than to eat at home is a <span class=\"kt\">cash crop</span>. Plantations used <span class=\"kt\">coerced labor</span>, people forced to work, and on sugar plantations, by the 1600s, those people were overwhelmingly enslaved Africans. Most of the sugar was shipped to Europe. The College Board's summary for cash crops in this period is that they were exported mostly to Europe and the Middle East. Tobacco, an American plant, became a plantation crop the same way."
+            "html": "Sugarcane came from Afro-Eurasia, but the Caribbean and Brazil turned out to grow it better than almost anywhere. So Europeans built <span class=\"kt\">plantations</span>: huge farms growing one crop to sell. A crop grown to sell rather than to eat at home is a <span class=\"kt\">cash crop</span>. Plantations used <span class=\"kt\">coerced labor</span>, people forced to work, and on sugar plantations, during the 1600s, those workers became overwhelmingly enslaved Africans. Most of the sugar was shipped to Europe. The College Board's summary for cash crops in this period is that they were exported mostly to Europe and the Middle East. Tobacco, an American plant, became a plantation crop the same way."
           },
           {
             "type": "p",
@@ -595,7 +595,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In southern China, officials promoted the sweet potato in 1594, a famine year. Near the mouth of the Congo River, in Central Africa, Portuguese traders brought cassava from Brazil, and farmers took it up. Cassava survives drought and locusts, which made it a food to fall back on. In Ireland, the potato had become a main food by the 1700s."
+            "html": "Sweet potatoes reached China by the Pacific road: Chinese merchants brought them from the Spanish Philippines, and in southern China officials promoted them in 1594, a famine year. Near the mouth of the Congo River, in Central Africa, Portuguese traders brought cassava from Brazil, and farmers took it up. Cassava survives drought and locusts, which made it a food to fall back on. In Ireland, the potato had become a main food by the 1700s."
           },
           {
             "type": "p",
@@ -631,7 +631,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "Once ships crossed the Atlantic and came back again and again, plants, animals, and germs crossed with them: some on purpose, some by accident, and some with enslaved Africans carried by force. Smallpox, measles, and malaria had catastrophic effects in many parts of the Americas, made worse by war, forced labor, and hunger, and the ships also carried disease vectors such as rats and mosquitoes. Horses, pigs, cattle, wheat, and sugarcane remade American land, enslaved Africans brought African rice and okra, and cash crops such as sugar were grown on plantations with coerced labor and exported mostly to Europe and the Middle East. Going east, maize, potatoes, cassava, and sweet potatoes became staple crops and improved nutrition in Afro-Eurasia. The ships carried more than anyone meant them to.",
+    "takeaway": "Once ships crossed the Atlantic, and later the Pacific, and came back again and again, plants, animals, and germs crossed with them: some on purpose, some by accident, and some with enslaved Africans carried by force. Smallpox, measles, and malaria had catastrophic effects in many parts of the Americas, made worse by war, forced labor, and hunger, and the ships also carried disease vectors such as rats and mosquitoes. Horses, pigs, cattle, wheat, and sugarcane remade American land, enslaved Africans brought African rice and okra, and cash crops such as sugar were grown on plantations with coerced labor and exported mostly to Europe and the Middle East. Going east, maize, potatoes, cassava, and sweet potatoes became staple crops and improved nutrition in Afro-Eurasia. The ships carried more than anyone meant them to.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [

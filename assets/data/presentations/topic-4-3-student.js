@@ -106,9 +106,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "By force",
-            "note": "Enslaved Africans, and what they brought",
+            "note": "Enslaved Africans, and foods on their ships",
             "items": [
-              "Rice",
+              "African rice",
               "Okra"
             ]
           }
@@ -125,9 +125,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "url": "../assets/images/topics/4-3/florentine-codex-smallpox-healer.jpg",
           "alt": "Ink drawing from the Florentine Codex: on the left a Nahua healer speaks with a man covered in spots; on the right three people covered in spots lie wrapped on mats",
           "credit": "Florentine Codex, Book 12, about 1577 · Public domain",
-          "position": "30% 50%"
+          "position": "100% 50%"
         },
-        "caption": "Painted by Nahua artists, about 1577",
+        "caption": "Painted by Nahua artists about 1577, from elders' memories",
         "steps": [
           {
             "label": "June 1520",
@@ -196,26 +196,26 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "tag": "Estimate",
         "place": "Central Mexico",
-        "date": "1519 to about 1620",
+        "date": "1519 to 1595",
         "rows": [
           {
-            "label": "In 1519",
-            "text": "About **15 million** people"
+            "label": "Most estimates",
+            "text": "Lost from about **two-thirds** to more than **nine-tenths** of its people"
           },
           {
-            "label": "A century later",
-            "text": "About **1.5 million**"
+            "label": "One of them",
+            "text": "Cook and Borah: about **6.3 million** in 1548, **1.1 million** in 1605"
           },
           {
             "label": "How we know",
-            "text": "Rebuilt from tax records and other sources. **Historians argue** about the exact numbers."
+            "text": "Rebuilt from Spanish tribute records and other sources. **Historians argue** about the exact numbers."
           },
           {
             "label": "The CED says",
             "text": "\"**Catastrophic** effects in many areas\""
           }
         ],
-        "proves": "Central Mexico lost about nine in ten people within a century."
+        "proves": "Nearly every estimate shows a catastrophe. They disagree about how big."
       }
     },
     {
@@ -278,8 +278,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "text": "**Enslaved Africans**, carried across the Atlantic against their will"
           },
           {
-            "label": "What they brought",
-            "text": "**African rice** and **okra**, and many knew how to grow rice"
+            "label": "What crossed",
+            "text": "**African rice** and **okra**, on the same ships; many knew how to grow rice"
           },
           {
             "label": "Okra",
@@ -300,12 +300,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kc": "KC-4.1.V.B",
       "template": {
         "visual": {
-          "url": "../assets/images/topics/4-3/frans-post-sugar-mill-1660s.jpg",
-          "alt": "Painting of a Brazilian sugar plantation: on the right the furnace house, where workers feed the boilers, with oxen and a cart; the edge of a planter's house on a hill; tropical trees and animals in the foreground",
-          "credit": "Frans Post, Brazilian Landscape, 1660s · National Gallery of Ireland · Public domain",
-          "position": "97% 62%"
+          "url": "../assets/images/topics/4-3/frans-post-sugar-works-detail-1660s.jpg",
+          "alt": "Detail of a painting of a Brazilian sugar plantation: Black workers at an open drying platform and at the arches of the furnace house, a man leading oxen with a cart, and a large house with a lookout on the hill above",
+          "credit": "Frans Post, Brazilian Landscape (detail), 1660s · National Gallery of Ireland · Public domain"
         },
-        "caption": "Frans Post, painted in the Netherlands, 1660s",
+        "caption": "Painted in the Netherlands, 1660s, years after Post left Brazil",
         "steps": [
           {
             "label": "From Afro-Eurasia",
@@ -318,7 +317,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "Plantation",
             "key": true,
-            "text": "One cash crop, worked by coerced labor: by the 1600s, overwhelmingly enslaved Africans."
+            "text": "One cash crop, worked by coerced labor: during the 1600s, overwhelmingly enslaved Africans."
           },
           {
             "label": "Shipped out",
@@ -429,7 +428,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "myth": "The exchange was equal, the same both ways.",
             "evidence": "Catastrophe in the Americas; new staple crops and better nutrition in Afro-Eurasia.",
-            "source": "Topic 4.3"
+            "source": "Smallpox, 1520; sweet potatoes, Fujian, 1594"
           }
         ]
       }

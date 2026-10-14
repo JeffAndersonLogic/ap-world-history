@@ -5512,12 +5512,12 @@ window.BEHISTORICAL_SKILLS_MAP = {
             "nutrition"
           ],
           "criteria": [
-            "State the cause: ships crossing the Atlantic and coming back, carrying living things on purpose and by accident.",
+            "State the cause: ships crossing the Atlantic, and later the Pacific, and coming back, carrying living things on purpose and by accident.",
             "Give one effect in the Americas, with a specific animal, crop, or food and the people it affected.",
             "Give one effect in Afro-Eurasia, with a specific American crop and what it did for nutrition or population."
           ],
           "learningTargets": [
-            "I can explain what caused the Columbian Exchange: ships crossing the Atlantic and coming back, carrying plants, animals, and germs, some on purpose and some by accident.",
+            "I can explain what caused the Columbian Exchange: ships crossing the Atlantic, and later the Pacific, and coming back, carrying plants, animals, and germs, some on purpose and some by accident.",
             "I can explain the effects of the exchange on both hemispheres. In the Americas: animals and crops Europeans brought, foods enslaved Africans brought, and cash crops grown on plantations with coerced labor. In Afro-Eurasia: American staple crops that improved nutrition."
           ],
           "successCriteria": [
@@ -5591,7 +5591,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "01",
           "module": "Map & Geography Check",
           "label": "Module 01, Map & Geography Check",
-          "prompt": "Using the map, trace one arrow going west and one going east. For each, say what moved, how it crossed (on purpose, by accident, or by force), and what it did to the people at the other end. Which part of the exchange does the map not draw as an arrow, and where on the map does it tell you about it?",
+          "prompt": "Using the map, trace one arrow going west and one going east. For each, say what moved, how it crossed (on purpose, by accident, or by force), and what it did to the people at the other end. Which part of the exchange does the map not draw as an arrow? Look at the map key and the note under the map to find it.",
           "skill": "",
           "skills": [],
           "skillRaw": "",

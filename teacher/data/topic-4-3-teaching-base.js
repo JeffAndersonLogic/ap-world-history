@@ -23,7 +23,7 @@ window.BEHISTORICAL_TEACHING = {
     subtitle: 'The ships carried more than anyone meant them to.',
     essentialQuestion: 'What caused the Columbian Exchange, and what were its effects on the Eastern and Western Hemispheres?',
     apFocus: 'Causation, with Claims and Evidence in Sources 3.B',
-    endTarget: 'Students can explain the cause of the Columbian Exchange (ships crossing the Atlantic and coming back, carrying living things on purpose, by accident and by force); explain why Eastern Hemisphere diseases had catastrophic effects in many parts of the Americas, without the genetic myth; give one effect in each hemisphere with a named crop, animal or food; and identify the evidence a source uses to support its claim.'
+    endTarget: 'Students can explain the cause of the Columbian Exchange (ships crossing the Atlantic, and later the Pacific, and coming back, carrying living things on purpose, by accident and by force); explain why Eastern Hemisphere diseases had catastrophic effects in many parts of the Americas, without the genetic myth; give one effect in each hemisphere with a named crop, animal or food; and identify the evidence a source uses to support its claim.'
   },
 
   priorities: {
@@ -195,15 +195,15 @@ window.BEHISTORICAL_TEACHING = {
         branches: [
           { label: 'On purpose', note: 'What settlers wanted to eat and farm', items: ['Horses', 'Cattle and pigs', 'Wheat and sugarcane'] },
           { label: 'By accident', note: 'What nobody chose, and nobody understood', items: ['Smallpox', 'Measles and malaria', 'Rats and mosquitoes'] },
-          { label: 'By force', note: 'Enslaved Africans, and what they brought', items: ['Rice', 'Okra'] }
+          { label: 'By force', note: 'Enslaved Africans, and foods on their ships', items: ['African rice', 'Okra'] }
         ]
       },
       notes: {
         minutes: 2,
         land: [
           'This is the "causes" half of Learning Objective D, stated as a mechanism: a lasting connection, kept open by colonization, so everything aboard crossed too.',
-          'On purpose: Columbus\'s second voyage, 1493, carried horses, cattle, eight pigs bought in the Canary Islands, wheat seed, and sugarcane from the Canaries (Nunn and Qian 2010, citing Mintz; Las Casas on the pigs).',
-          'By accident: the CED\'s word is "unintentional." Rats came with ships\' cargo. The mosquito that carries yellow fever most likely crossed from West Africa as eggs in water casks; yellow fever\'s first clear American outbreak was in 1647. Malaria, carried by mosquitoes, most likely came with Europeans and enslaved Africans.',
+          'On purpose: Columbus\'s second voyage, 1493, carried horses, cattle, eight pigs bought in the Canary Islands, wheat seed, and sugarcane from the Canaries (Crosby, The Columbian Exchange, 1972, for the animals and wheat; Nunn and Qian 2010 for the sugarcane from the Canaries; Las Casas on the pigs). From the 1560s Spanish ships also crossed the Pacific between Mexico and Manila; that is the road the sweet potato took to China. Name the route only: what those ships carried west, silver, is Topic 4.5.',
+          'By accident: the CED\'s word is "unintentional." Rats came with ships\' cargo. The mosquito that carries yellow fever most likely crossed from West Africa as eggs in water casks; yellow fever\'s first clear American outbreak was in 1647. Malaria, which mosquitoes spread, most likely came in the blood of infected Europeans and enslaved Africans.',
           'A disease vector is an animal that carries a disease from one person to another.',
           'Alfred Crosby named the Columbian Exchange in his 1972 book.'
         ],
@@ -216,8 +216,8 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'tenochtitlan', kind: 'story-scene', eyebrow: 'Tenochtitlan · 1520',
       kc: 'KC-4.1.V.A', title: 'A sickness of pustules, told by those who lived through it.',
       template: {
-        visual: { url: '../assets/images/topics/4-3/florentine-codex-smallpox-healer.jpg', alt: 'Ink drawing from the Florentine Codex: on the left a Nahua healer speaks with a man covered in spots; on the right three people covered in spots lie wrapped on mats', credit: 'Florentine Codex, Book 12, about 1577 · Public domain', position: '30% 50%' },
-        caption: 'Painted by Nahua artists, about 1577',
+        visual: { url: '../assets/images/topics/4-3/florentine-codex-smallpox-healer.jpg', alt: 'Ink drawing from the Florentine Codex: on the left a Nahua healer speaks with a man covered in spots; on the right three people covered in spots lie wrapped on mats', credit: 'Florentine Codex, Book 12, about 1577 · Public domain', position: '100% 50%' },
+        caption: 'Painted by Nahua artists about 1577, from elders\' memories',
         steps: [
           { label: 'June 1520', text: 'The people of Tenochtitlan drive the Spaniards out.' },
           { label: 'Autumn 1520', key: true, text: 'Smallpox sweeps the city for sixty days. Many starve: no one is well enough to cook.' },
@@ -256,7 +256,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 3,
         land: [
           'Reason 1: immunity to smallpox or measles comes from surviving it, usually as a child. In Afro-Eurasia most adults had; in the Americas nobody had, so the disease struck every age at once and the society stopped working. That is what the Codex describes.',
-          'Reason 2: David S. Jones, "Virgin Soils Revisited" (William and Mary Quarterly, 2003): lack of prior exposure "might have left them vulnerable," but "the fates of individual populations depended on contingent factors of their physical, economic, social, and political environments," and the epidemics may have been driven by "the same forces of poverty, social stress, and environmental vulnerability that cause epidemics in all other times and places." Crosby himself (1976) named childhood exposure, malnutrition and "social chaos."',
+          'Reason 2: David S. Jones, "Virgin Soils Revisited" (William and Mary Quarterly, 2003): lack of prior exposure "might have left them vulnerable," but "the fates of individual populations depended on contingent factors of their physical, economic, social, and political environments," and the epidemics may have been driven by "the same forces of poverty, social stress, and environmental vulnerability that cause epidemics in all other times and places." Jones notes that Crosby himself stressed lack of childhood exposure, malnutrition, and "the social chaos generated by European colonization."',
           'Jones also warns that "no immunity" written as a genetic fact risks "supporting racial theories." Correct it whenever a student says Indigenous people were "weaker."',
           'Disease was the largest single factor in the deaths, and never the only one.'
         ],
@@ -269,19 +269,19 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'numbers', kind: 'case-file', eyebrow: 'How Many',
       kc: 'KC-4.1.V.A', title: 'One region, estimated honestly.',
       template: {
-        tag: 'Estimate', place: 'Central Mexico', date: '1519 to about 1620',
+        tag: 'Estimate', place: 'Central Mexico', date: '1519 to 1595',
         rows: [
-          { label: 'In 1519', text: 'About **15 million** people' },
-          { label: 'A century later', text: 'About **1.5 million**' },
-          { label: 'How we know', text: 'Rebuilt from tax records and other sources. **Historians argue** about the exact numbers.' },
+          { label: 'Most estimates', text: 'Lost from about **two-thirds** to more than **nine-tenths** of its people' },
+          { label: 'One of them', text: 'Cook and Borah: about **6.3 million** in 1548, **1.1 million** in 1605' },
+          { label: 'How we know', text: 'Rebuilt from Spanish tribute records and other sources. **Historians argue** about the exact numbers.' },
           { label: 'The CED says', text: '"**Catastrophic** effects in many areas"' }
         ],
-        proves: 'Central Mexico lost about nine in ten people within a century.'
+        proves: 'Nearly every estimate shows a catastrophe. They disagree about how big.'
       },
       notes: {
         minutes: 1,
         land: [
-          'Nunn and Qian, Journal of Economic Perspectives (2010): "Central Mexico\'s population fell from just under 15 million in 1519 to approximately 1.5 million a century later." Present it as an estimate.',
+          'Robert McCaa\'s table of published estimates for Mexico, 1519 to 1595, runs from Rosenblat\'s 22 percent decline to Cook and Borah\'s 78 to 95 percent; most estimates fall between about two-thirds and nine-tenths. Cook and Borah\'s tribute-based series gives about 6.3 million in 1548 and about 1.1 million in 1605. The deck once used Nunn and Qian\'s "15 million to 1.5 million", which carries no citation in their article and matches no published series; do not use it.',
           'For the whole Americas: Koch et al., Quaternary Science Reviews (2019), from 119 regional estimates, put the 1492 population at about 60 million and the loss over the next century at about 90 percent. Other historians give lower totals. Say "historians argue," and give a range if pressed.',
           'Do not say "the largest demographic catastrophe in human history." The old 4.3 pages did; the CED does not, and the comparison cannot be settled.',
           'The deaths came from all the causes on the last slide, not disease alone.'
@@ -341,7 +341,7 @@ window.BEHISTORICAL_TEACHING = {
         tag: 'By force', place: 'West Africa to Brazil and the Caribbean', date: '1500s to 1700s',
         rows: [
           { label: 'Who crossed', text: '**Enslaved Africans**, carried across the Atlantic against their will' },
-          { label: 'What they brought', text: '**African rice** and **okra**, and many knew how to grow rice' },
+          { label: 'What crossed', text: '**African rice** and **okra**, on the same ships; many knew how to grow rice' },
           { label: 'Okra', text: 'Growing in **Brazil by the 1650s**' },
           { label: 'Effect', text: 'Grown in garden plots to feed themselves; became part of cooking across the Americas' }
         ],
@@ -365,12 +365,12 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'sugar', kind: 'story-scene', eyebrow: 'Cash Crops',
       kc: 'KC-4.1.V.B', title: 'Sugar: one plant that remade whole societies.',
       template: {
-        visual: { url: '../assets/images/topics/4-3/frans-post-sugar-mill-1660s.jpg', alt: 'Painting of a Brazilian sugar plantation: on the right the furnace house, where workers feed the boilers, with oxen and a cart; the edge of a planter\'s house on a hill; tropical trees and animals in the foreground', credit: 'Frans Post, Brazilian Landscape, 1660s · National Gallery of Ireland · Public domain', position: '97% 62%' },
-        caption: 'Frans Post, painted in the Netherlands, 1660s',
+        visual: { url: '../assets/images/topics/4-3/frans-post-sugar-works-detail-1660s.jpg', alt: 'Detail of a painting of a Brazilian sugar plantation: Black workers at an open drying platform and at the arches of the furnace house, a man leading oxen with a cart, and a large house with a lookout on the hill above', credit: 'Frans Post, Brazilian Landscape (detail), 1660s · National Gallery of Ireland · Public domain' },
+        caption: 'Painted in the Netherlands, 1660s, years after Post left Brazil',
         steps: [
           { label: 'From Afro-Eurasia', text: 'Sugarcane crosses on Columbus\'s second voyage, 1493.' },
           { label: 'Grows best here', text: 'Brazil and the Caribbean grow it better than almost anywhere.' },
-          { label: 'Plantation', key: true, text: 'One cash crop, worked by coerced labor: by the 1600s, overwhelmingly enslaved Africans.' },
+          { label: 'Plantation', key: true, text: 'One cash crop, worked by coerced labor: during the 1600s, overwhelmingly enslaved Africans.' },
           { label: 'Shipped out', text: 'Most of the sugar goes to Europe.' }
         ]
       },
@@ -378,13 +378,13 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 3,
         land: [
           'KC-4.1.V.B\'s second sentence, which no surface of the old 4.3 lesson taught: "Cash crops were grown primarily on plantations with coerced labor and were exported mostly to Europe and the Middle East."',
-          'Frans Post went to Dutch-ruled northeastern Brazil in 1637 with its governor, Johan Maurits, and stayed several years (sources give 1642 to 1644 for his return). He painted Brazilian scenes like this one for European buyers for decades after he went home. The gallery titles it Brazilian Landscape and describes the building on the right as the furnace house, where enslaved workers feed the wood-fired boilers that turn cane juice into sugar. It is a planter\'s-eye view; only the edge of the planter\'s house shows at the right of the slide.',
+          'Frans Post went to Dutch-ruled northeastern Brazil in 1637 with its governor, Johan Maurits, and stayed several years (sources give 1642 to 1644 for his return). He painted Brazilian scenes like this one for European buyers for decades after he went home. The gallery titles it Brazilian Landscape and describes the building on the right as the furnace house, where enslaved workers feed the wood-fired boilers that turn cane juice into sugar. It is a planter\'s-eye view. The slide shows a detail cropped from the right side of the painting; the whole painting is in the Evidence Lab. The gallery calls the large building on the hill "an unidentified building": the owner\'s house is a likely reading, not a label.',
           'Sugarcane came from the Canaries on Columbus\'s 1493 voyage and was first grown on Hispaniola; Brazil exported sugar to Lisbon by 1526, and by 1680 the Americas dominated world sugar production (Nunn and Qian 2010, citing Mintz and Galloway).',
           'Tobacco, an American plant, became a plantation cash crop the same way.',
           'How the plantation labor system worked is 4.4. Here, say what the CED says and move on.'
         ],
         ask: 'Who in this painting does the work at the furnace house? Who would have owned it?',
-        listenFor: 'Enslaved Black workers do the work; a planter owned it, and the edge of his house shows at the far right.',
+        listenFor: 'Enslaved Black workers do the work; a planter owned it, and the big house on the hill was probably his.',
         ap: 'Causation: a crop from one hemisphere, grown in another, with an effect on the people forced to grow it.'
       }
     },
@@ -410,7 +410,7 @@ window.BEHISTORICAL_TEACHING = {
           'KC-4.1.V.B\'s first sentence: "American foods became staple crops in various parts of Europe, Asia, and Africa."',
           'Left: John Gerard\'s Herball (London, 1597), page 75, pictures maize as "Corne of Asia," "Turkie Corne" and "Turkie Wheate." Gerard wrote that it was brought into Spain "out of Asia which is in the Turkes Dominions, as also out of America": he was not sure. Maize came from the Americas. He also wrote that it "doth nourish far lesse than either Wheate, Rie, Barly or Otes," a European doubt about the crop.',
           'Right: an album of Taiwan\'s plants and customs painted for 六十七 (Liushiqi), a Qing censor sent to inspect Taiwan in the 1740s. The note beside the sweet potatoes, 番薯 (fanshu, "foreign tuber"), says, in a translation made for this lesson: it can be eaten raw or cooked or ground into flour; it is planted very widely in Taiwan; settlers and Indigenous people rely on it for food; it is "truly a help in years of bad harvest." The note also says the plant came from "the country of Wenlai" (Brunei); sweet potatoes reached southern China from the Philippines and Southeast Asia.',
-          'In southern China, officials promoted the sweet potato in the famine year 1594. Near the mouth of the Congo River, Portuguese traders brought cassava from Brazil, and farmers took it up. Cassava survives drought and locusts, which made it a food to fall back on.'
+          'Sweet potatoes reached China by the Pacific road, from the Spanish Philippines; in southern China officials promoted them in the famine year 1594. Near the mouth of the Congo River, Portuguese traders brought cassava from Brazil, and farmers took it up. Cassava survives drought and locusts, which made it a food to fall back on.'
         ],
         ask: 'What do the names "Corne of Asia," "Turkie Corne" and "foreign tuber" tell you?',
         listenFor: 'Both plants were new, from somewhere else, and people were not sure where.',
@@ -467,14 +467,14 @@ window.BEHISTORICAL_TEACHING = {
         rows: [
           { myth: 'Indigenous Americans were born weak, so they were doomed no matter what.', evidence: 'Nobody had had these diseases before, so nobody was immune, and war, forced labor and hunger made them far deadlier.', source: 'David S. Jones, 2003' },
           { myth: 'Disease caused African slavery in the Americas.', evidence: 'Europeans grew sugar with enslaved workers on Madeira before 1492, and chose to bring that system across.', source: 'Madeira\'s sugar, 1400s; Topic 4.4' },
-          { myth: 'The exchange was equal, the same both ways.', evidence: 'Catastrophe in the Americas; new staple crops and better nutrition in Afro-Eurasia.', source: 'Topic 4.3' }
+          { myth: 'The exchange was equal, the same both ways.', evidence: 'Catastrophe in the Americas; new staple crops and better nutrition in Afro-Eurasia.', source: 'Smallpox, 1520; sweet potatoes, Fujian, 1594' }
         ]
       },
       notes: {
         minutes: 3,
         land: [
           'Row 1: Jones (2003) argues that the genetic reading of "no immunity" is unsupported and risks "supporting racial theories." The old 4.3 pages said "zero immunity" and "no evolved defenses."',
-          'Row 2: Madeira grew sugar with enslaved workers, first Canary Islanders and then many Africans, from the mid-1400s; São Tomé, settled by Portugal from the 1480s, followed. Disease emptied land of workers; people decided who would be enslaved and that enslavement would be permanent. The unit story map allows this chain only in this qualified form, and 4.4 owns the labor systems.',
+          'Row 2: Madeira grew sugar with enslaved workers, including Canary Islanders and Africans, from the mid-1400s; São Tomé, settled by Portugal from the 1480s, followed. Disease emptied land of workers; people decided who would be enslaved. The unit story map allows this chain only in this qualified form, and 4.4 owns the labor systems.',
           'Row 3: the effects were unequal. The catastrophe fell on the Americas; the nutritional gains went mostly to Afro-Eurasia.'
         ],
         ask: 'If disease alone did not cause African slavery, what else did?',

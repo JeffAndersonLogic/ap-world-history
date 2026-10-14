@@ -37,7 +37,7 @@ window.BEHISTORICAL_LESSON = {
 
   learningTargets: [
     {
-      target: "I can explain what caused the Columbian Exchange: ships crossing the Atlantic and coming back, carrying plants, animals, and germs, some on purpose and some by accident.",
+      target: "I can explain what caused the Columbian Exchange: ships crossing the Atlantic, and later the Pacific, and coming back, carrying plants, animals, and germs, some on purpose and some by accident.",
       kc: 'KC-4.1.V',
       theme: "Humans and the Environment"
     },
@@ -119,8 +119,8 @@ window.BEHISTORICAL_LESSON = {
         title: "Why It Happened: Ships That Came Back",
         bullets: [
           "Since the end of the last Ice Age, about eleven thousand years ago, ocean had kept the Americas apart from Africa, Asia, and Europe. Each side grew its own crops, kept its own animals, and lived with its own diseases. The Americas had **maize, potatoes, cassava, tomatoes, cacao, and tobacco**, but no horses, cattle, or pigs. Afro-Eurasia had **wheat, rice, sugarcane, horses, cattle, pigs, and sheep**, and diseases such as **smallpox and measles**.",
-          "The cause of the **Columbian Exchange** is a new connection: after 1492, ships crossed the Atlantic and came back, again and again, as Europeans built colonies. Everything that rode those ships crossed too. The historian Alfred Crosby named the exchange in 1972.",
-          "Things crossed in three ways. **On purpose:** Columbus's second voyage, in 1493, carried horses, cattle, pigs, wheat seed, and sugarcane. **By accident:** germs, rats in the cargo, and, most likely, the eggs of the mosquito that spreads yellow fever, hidden in water barrels. Animals that carry disease from person to person are **disease vectors**. **By force:** enslaved Africans brought foods from home.",
+          "The cause of the **Columbian Exchange** is a new connection: after 1492, ships crossed the Atlantic and came back, again and again, as Europeans built colonies. From the 1560s, Spanish ships also crossed the Pacific between Mexico and the Philippines. Everything that rode those ships crossed too. The historian Alfred Crosby named the exchange in 1972.",
+          "Things crossed in three ways. **On purpose:** Columbus's second voyage, in 1493, carried horses, cattle, pigs, wheat seed, and sugarcane. **By accident:** germs, rats in the cargo, and, most likely, the eggs of the mosquito that spreads yellow fever, hidden in water barrels. Animals that carry disease from person to person are **disease vectors**. **By force:** enslaved Africans were carried across the Atlantic, and African foods crossed on the same ships.",
           "Keep the College Board's word in mind: the disease vectors and diseases moved **unintentionally**. The ships carried more than anyone meant them to."
         ],
         image: {
@@ -133,10 +133,10 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Going West by Accident: Disease and Its Causes",
         bullets: [
-          "**Smallpox** reached the Caribbean in 1518 and Mexico in 1520. Measles followed, and malaria, which mosquitoes spread, came in the blood of infected Europeans and enslaved Africans. These diseases had circulated in Afro-Eurasia for a long time; in the Americas they were new.",
+          "**Smallpox** reached the Caribbean in 1518 and Mexico in 1520. Measles followed, and malaria, which mosquitoes spread, most likely came in the blood of infected Europeans and enslaved Africans. These diseases had circulated in Afro-Eurasia for a long time; in the Americas they were new.",
           "In June 1520 the people of **Tenochtitlan** drove the Spaniards out of their city. That autumn smallpox swept through it. The Nahua account later written down for the friar Bernardino de Sahagún says the sickness lasted sixty days, that many \"just starved to death,\" and that \"the Mexica warriors were greatly weakened by it\" when the Spaniards returned to besiege the city in 1521.",
           "Why so deadly? **First**, nobody in the Americas had had these diseases before, so no adult had survived them and become immune, and almost everyone fell sick at the same time, leaving nobody to farm, cook, or care for the sick. **Second**, the diseases came with war, forced labor, hunger, and people driven from their homes. The historian David S. Jones argues that conditions like these, created by colonization, shaped how many people died. It is a myth that Indigenous Americans were simply born weak.",
-          "Historians argue about the numbers. One careful estimate is that central Mexico fell from about 15 million people in 1519 to about 1.5 million a century later, and many regions lost most of their people. The College Board's words are \"catastrophic effects in many areas.\""
+          "Historians argue about the numbers. Most published estimates say central Mexico lost between about two-thirds and more than nine-tenths of its people between 1519 and 1595, and many regions lost most of their people. The College Board's words are \"catastrophic effects in many areas.\""
         ],
         image: {
           title: "A Nahua Healer and Smallpox Patients",
@@ -150,8 +150,8 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "**Pigs and cattle** multiplied fast. José de Acosta reported in 1590 that wild cattle on Santo Domingo roamed \"by thousands,\" and that one fleet in 1587 carried almost a hundred thousand cattle hides to Spain from the Caribbean and Mexico. One historian argues that in one valley of central Mexico, sheep grazed the hillsides bare.",
           "**Horses** had died out in the Americas thousands of years earlier. Brought back by the Spanish, they spread north, and by the early 1700s Great Plains peoples such as the **Comanche** had built new ways of life on horseback. An effect of the exchange could be an opportunity as well as a disaster.",
-          "**Enslaved Africans**, carried across the Atlantic by force, brought foods such as **African rice and okra**, and many knew how to grow rice. Okra was growing in Brazil by the 1650s. Enslaved people grew these foods in small garden plots to feed themselves, and the foods became part of cooking across the Americas, from Brazil to the Caribbean.",
-          "**Sugarcane** came from Afro-Eurasia but grew best in the Caribbean and Brazil. Europeans grew it as a **cash crop** on **plantations** worked by **coerced labor**, by the 1600s overwhelmingly enslaved Africans, and shipped most of the sugar to Europe. Before 1492, Europeans had already grown sugar with enslaved workers, including Canary Islanders and Africans, on Atlantic islands such as Madeira, so disease alone did not cause African slavery in the Americas. How that forced labor worked is Topic 4.4."
+          "**Enslaved Africans** were carried across the Atlantic by force, and African foods such as **African rice and okra** crossed on the same ships, often as food for the voyage. Many enslaved Africans knew how to grow rice. Okra was growing in Brazil by the 1650s. Enslaved people grew these foods in small garden plots to feed themselves, and the foods became part of cooking across the Americas, from Brazil to the Caribbean.",
+          "**Sugarcane** came from Afro-Eurasia but grew better in the Caribbean and Brazil than almost anywhere. Europeans grew it as a **cash crop** on **plantations** worked by **coerced labor**, which during the 1600s became overwhelmingly enslaved Africans, and shipped most of the sugar to Europe. Before 1492, Europeans had already grown sugar with enslaved workers, including Canary Islanders and Africans, on Atlantic islands such as Madeira, so disease alone did not cause African slavery in the Americas. How that forced labor worked is Topic 4.4."
         ],
         image: {
           title: "A Sugar Plantation in Dutch Brazil",
@@ -164,7 +164,7 @@ window.BEHISTORICAL_LESSON = {
         title: "Going East: New Staple Crops and Better Nutrition",
         bullets: [
           "American crops became **staple crops**, the main everyday foods, in parts of Europe, Asia, and Africa because they grew where the old crops struggled: **maize** on dry land, **potatoes** in cold, wet ground, **cassava** in poor soil and drought, **sweet potatoes** on hillsides too steep for rice.",
-          "In southern China, officials promoted the sweet potato in 1594, a famine year. By the 1740s, an album made for a Qing official in Taiwan called it \"truly a help in years of bad harvest.\" Near the mouth of the Congo River, Portuguese traders brought cassava from Brazil, and farmers took it up; it survives drought and locusts, which made it a food to fall back on. In Ireland, the potato had become a main food by the 1700s.",
+          "Sweet potatoes reached China by the Pacific road: Chinese merchants brought them from the Spanish Philippines, and in southern China officials promoted them in 1594, a famine year. By the 1740s, an album made for a Qing official in Taiwan called it \"truly a help in years of bad harvest.\" Near the mouth of the Congo River, Portuguese traders brought cassava from Brazil, and farmers took it up; it survives drought and locusts, which made it a food to fall back on. In Ireland, the potato had become a main food by the 1700s.",
           "**Nutrition** means how well food feeds the body. More food, more kinds of food, and a fallback when the old harvest failed meant better nutrition, and over two centuries these crops helped populations grow in China and Europe, and they fed many people in Africa even as the slave trade carried millions away.",
           "Put both directions together: one connection, two very different results. In the Americas, catastrophic disease and land remade by new animals and plantations. In Afro-Eurasia, new staple crops and better nutrition."
         ],
@@ -184,7 +184,7 @@ window.BEHISTORICAL_LESSON = {
     sourceUrl: "../assets/images/instructional-maps/topic-4-3.svg",
     caption: "A modern BeHistorical map, not a source from the time. Arrows show the direction plants, animals, germs, and people moved, not single voyages.",
     intro: "Use the map to see the Columbian Exchange as movement in two directions across the Atlantic. Arrows 1 and 2 go west to the Americas; arrows 3 and 4 go east to Europe and Africa. The black dots mark five places where you can see the exchange at work.",
-    prompt: "Using the map, trace one arrow going west and one going east. For each, say what moved, how it crossed (on purpose, by accident, or by force), and what it did to the people at the other end. Which part of the exchange does the map not draw as an arrow, and where on the map does it tell you about it?"
+    prompt: "Using the map, trace one arrow going west and one going east. For each, say what moved, how it crossed (on purpose, by accident, or by force), and what it did to the people at the other end. Which part of the exchange does the map not draw as an arrow? Look at the map key and the note under the map to find it."
   },
 
   deepReading: {

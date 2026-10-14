@@ -57,10 +57,10 @@
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: '1. West: animals, crops, germs', detail: 'Europeans carried horses, cattle, pigs, wheat, fruit trees, and sugarcane on purpose. Smallpox, measles, and rats came with them by accident.' },
-      { label: '2. West by force: enslaved Africans', detail: 'Africans carried across the Atlantic against their will brought foods such as rice and okra.' },
-      { label: '3. East, on purpose: maize, potatoes', detail: 'Traders, sailors and farmers carried American crops to Europe, where they became main foods in places where the old crops struggled.' },
-      { label: '4. Cassava to Central Africa', detail: 'Portuguese traders carried cassava from Brazil to the mouth of the Congo River, where farmers took it up because it survived drought.' },
+      { label: '1. West: animals, crops, germs', detail: 'Europeans carried horses, cattle, pigs, wheat, fruit trees, and sugarcane on purpose. Smallpox, measles, and rats came with them by accident, and the diseases killed huge numbers of people (see the Tenochtitlan dot).' },
+      { label: '2. West by force: enslaved Africans', detail: 'Africans were carried across the Atlantic against their will. African foods such as rice and okra crossed on the same ships, and enslaved people grew them in garden plots to feed themselves.' },
+      { label: '3. East, on purpose: maize, potatoes', detail: 'Traders, sailors and farmers carried maize from Mexico and potatoes from the Andes to Europe, where they became main foods in places where the old crops struggled.' },
+      { label: '4. Cassava to Central Africa', detail: 'Portuguese traders carried cassava from Brazil to the mouth of the Congo River, where farmers took it up. Cassava survives drought, which made it a food to fall back on.' },
       { label: 'Black dots', detail: 'Tenochtitlan (smallpox, 1520), Santo Domingo (sugar and cattle), Ireland (potatoes), the mouth of the Congo (cassava), and Fujian in China (sweet potatoes, 1594).' },
       { label: 'Not drawn as an arrow', detail: 'Sweet potatoes reached southern China from Southeast Asia, including Fujian from the Philippines in the 1590s, routes this Atlantic-centered map does not draw.' }
     ]
@@ -97,7 +97,7 @@
     steps: [
       { label: 'Read the source', text: '<blockquote>"These wild cattle have so multiplied in Santo Domingo and thereabouts that they troop together in the fields and woods by thousands, having no master to whom they belong. They hunt these beasts only for their hides. ... The hides they bring into Spain are one of the best revenues of the islands and of New Spain. In the fleet, the year 1587, there came from Santo Domingo 35,444 hides, and from New Spain 64,350."</blockquote><small>José de Acosta, <em>Natural and Moral History of the Indies</em> (Seville, 1590), Book 4, chapter 33, in the English translation of 1604, spelling modernized. New Spain is Spanish Mexico.</small>' },
       { label: 'Find the claim', text: 'Acosta\'s claim: cattle brought from Spain have multiplied so much in the Caribbean and Mexico that they run wild, and their hides have become a source of wealth.' },
-      { label: 'Find the evidence', text: 'Acosta gives two kinds of evidence. First, what he describes: wild herds "by thousands" with no owner. Second, numbers from a real record: one fleet in 1587 carried 35,444 hides from Santo Domingo and 64,350 from New Spain, almost a hundred thousand in all.' },
+      { label: 'Find the evidence', text: 'Acosta gives two kinds of evidence. First, what he describes: wild herds "by thousands" with no owner. Second, numbers from the 1587 fleet: it carried 35,444 hides from Santo Domingo and 64,350 from New Spain, almost a hundred thousand in all.' },
       { label: 'Ask how strong it is', text: 'Acosta did not count the cattle. He counted hides that reached Spain. That still supports his claim, because a few cattle could never have filled one fleet with almost a hundred thousand hides. A number from a record is harder to argue with than a description.' }
     ],
     prompt: 'Now do it yourself with a different source. In the 1740s, an album made for a Qing official in Taiwan said this about the sweet potato, a plant first grown in the Americas (translated for this lesson): "It can be eaten raw or cooked, and also ground into flour. ... It is planted very widely in Taiwan; settlers and Indigenous people rely on it for food. It is truly a help in years of bad harvest." In 2 to 3 sentences, state the claim this source makes, identify TWO pieces of evidence it uses to support that claim, and explain how one of them supports it.',
@@ -130,13 +130,13 @@
       responseType: 'Checkpoint 2',
       skill: 'Causation',
       terms: ['Columbian Exchange', 'on purpose', 'by accident', 'horses', 'pigs', 'cattle', 'sugarcane', 'cash crop', 'plantation', 'coerced labor', 'rice', 'okra', 'maize', 'potatoes', 'cassava', 'sweet potatoes', 'staple crop', 'nutrition'],
-      focus: ['State the cause: ships crossing the Atlantic and coming back, carrying living things on purpose and by accident.', 'Give one effect in the Americas, with a specific animal, crop, or food and the people it affected.', 'Give one effect in Afro-Eurasia, with a specific American crop and what it did for nutrition or population.']
+      focus: ['State the cause: ships crossing the Atlantic, and later the Pacific, and coming back, carrying living things on purpose and by accident.', 'Give one effect in the Americas, with a specific animal, crop, or food and the people it affected.', 'Give one effect in Afro-Eurasia, with a specific American crop and what it did for nutrition or population.']
     }
   ];
 
   lesson.evidenceLab = {
     title: 'Evidence Lab: What Crossed, and What It Did',
-    task: 'Choose TWO cards: one about something that crossed to the Americas (the Florentine Codex or the sugar plantation) and one about American crops in Afro-Eurasia (the English herbal or the Qing album). The Andes harvest, drawn in 1615, shows maize and potatoes in their homeland; use it as background.',
+    task: 'Choose TWO cards: one about something that crossed to the Americas (the Florentine Codex or the sugar plantation) and one about American crops in Afro-Eurasia (the English herbal or the Qing album). The Andes harvest, drawn in 1615, shows maize and potatoes grown in the Americas, where both were farmed long before 1492; use it as background. The English herbal shows a crop arriving and being named, so pair it with a claim about the crops spreading; the Qing album shows people relying on one.',
     prompt: 'Make one claim about the effects of the Columbian Exchange on the two hemispheres. Then, for EACH of your two cards: (1) say what kind of source it is and when it was made, (2) give one detail you can see and explain how it supports your claim, and (3) name one thing the source cannot tell you.'
   };
 
@@ -159,7 +159,7 @@
       title: 'The July Harvest in the Andes, Guamán Poma, 1615',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Guam%C3%A1n%20Poma%201615%201150%20julio.png?width=1200',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Guam%C3%A1n_Poma_1615_1150_julio.png',
-      caption: 'Drawing by Felipe Guamán Poma de Ayala, an Andean nobleman, from the illustrated chronicle he addressed to the King of Spain about 1615. The Quechua heading names July as the month for carrying the harvested maize (sara) and potatoes (papa) to storage.',
+      caption: 'Drawing by Felipe Guamán Poma de Ayala, an Andean nobleman, from the illustrated chronicle he addressed to the King of Spain about 1615. The Quechua heading names July as the month for carrying the harvested maize (written ZARA, today sara) and potatoes (PAPA) to storage.',
       prompt: 'NOTICE what the people are carrying and where they are taking it. INFER how important these two crops were to the people who drew and lived this scene. Both of these crops also traveled to Afro-Eurasia. Choose one: why might it have been welcome there?'
     },
     {

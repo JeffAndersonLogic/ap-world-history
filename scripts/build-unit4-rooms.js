@@ -233,7 +233,7 @@ const scenarios = [
     lessonUrl: '../../unit-4/lesson-4-3-columbian-exchange.html',
     alignment: { theme: 'Humans and the Environment (ENV)', objective: 'Explain the causes of the Columbian Exchange and its effects on the Eastern and Western Hemispheres.', skill: 'Causation, and claims and evidence in sources', keyConcepts: ['KC-4.1.V', 'KC-4.1.V.A', 'KC-4.1.V.C'] },
     premise: [
-      'Eleven years ago, in 1520, smallpox swept through the Valley of Mexico. So many people fell sick at once that, as the account later written down says, many starved because no one was left to care for others. Since then the Spaniards have taken the valley, and now a new sickness that the Spaniards call measles is spreading.',
+      'Eleven years ago, in 1520, smallpox swept through the Valley of Mexico. So many people fell sick at once that, as survivors remember it, many starved because no one was left to care for others. Since then the Spaniards have taken the valley, and now a new sickness that the Spaniards call measles is spreading.',
       'Spanish settlers are bringing things this valley has never had: wheat, fruit trees, sugarcane, cattle, pigs, sheep, and horses. For centuries, maize, beans, and squash grown on chinampas, farm plots built up in the shallow lake, have fed the valley\'s towns and markets.',
       'This council is invented for the lesson, but each role is based on the kinds of people who really lived here, and they did not have equal power. Spanish officials and settlers have the laws and the weapons. Use only what people knew in 1531. Nobody here knows that germs exist.'
     ],
@@ -245,7 +245,7 @@ const scenarios = [
       R('african', 'African Herder', 'You were brought across the Atlantic by force and now tend a Spanish settler\'s cattle and horses.', 'The settler depends on your skill, but you are not free to leave.', 'Protect yourself and your family and make your skill impossible to do without.', 'The settler can sell you, punish you, or work you harder.', 'The ships carried people, and what people knew, as well as plants and animals.', 'Keep the herds away from the fields, so there is less trouble with the town.', 'Doing your job well also makes the settler richer.')
     ],
     evidence: [
-      E('smallpox', 'Smallpox, 1520', 'Smallpox swept through the valley in the autumn of 1520. The account later written down says many starved because no one took care of others any longer.', 'Shows disease and hunger working together.'),
+      E('smallpox', 'Smallpox, 1520', 'Smallpox swept through the valley in the autumn of 1520. Survivors remember that many starved because no one took care of others any longer.', 'Shows disease and hunger working together.'),
       E('measles', 'A New Sickness, 1531', 'A new epidemic, which the Spaniards call measles, is spreading through the towns.', 'Shows that the epidemics kept coming.'),
       E('rats', 'Rats From the Ships', 'Rats came ashore with Spanish cargo. Nobody knows yet that animals like rats can carry sickness.', 'Shows that some of what crossed came by accident.'),
       E('chinampas', 'Maize, Beans, and Chinampas', 'For centuries, maize, beans, and squash grown on chinampas fed the valley\'s towns and markets.', 'Shows what already worked.'),

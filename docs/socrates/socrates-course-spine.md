@@ -506,7 +506,7 @@ Strong answer checklist: Use one Iberian voyage and one northern voyage, each wi
 Strong answer checklist: Name one disease and one disease vector, and say how they crossed: by accident, on ships. Give one reason about exposure: nobody had had these diseases before, so nobody was immune. Give one reason about conditions: war, forced labor, or hunger.
 
 **Checkpoint 2 prompt.** Explain what caused the Columbian Exchange, and name ONE thing that crossed on purpose and ONE that crossed by accident. Then explain TWO effects. ONE effect in the Americas, from an animal or crop Europeans brought (such as horses, pigs, cattle, or sugarcane) or a food enslaved Africans brought (such as African rice or okra). If you choose sugarcane, say who was forced to do the work. ONE effect in Afro-Eurasia, from an American crop (such as maize, potatoes, cassava, or sweet potatoes). For each effect, say which people it affected and how.
-Strong answer checklist: State the cause: ships crossing the Atlantic and coming back, carrying living things on purpose and by accident. Give one effect in the Americas, with a specific animal, crop, or food and the people it affected. Give one effect in Afro-Eurasia, with a specific American crop and what it did for nutrition or population.
+Strong answer checklist: State the cause: ships crossing the Atlantic, and later the Pacific, and coming back, carrying living things on purpose and by accident. Give one effect in the Americas, with a specific animal, crop, or food and the people it affected. Give one effect in Afro-Eurasia, with a specific American crop and what it did for nutrition or population.
 
 ## 4.4 Maritime Empires Established
 
