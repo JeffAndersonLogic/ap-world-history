@@ -455,174 +455,205 @@ module.exports = {
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
     "showFooterNote": false,
     "headerSubtitle": "Topic 4.3, Columbian Exchange &nbsp;|&nbsp; AP World History: Modern",
-    "titleHtml": "The Great <em>Exchange</em>",
-    "deck": "After 1492, two hemispheres that had been biologically isolated for ten thousand years suddenly began trading plants, animals, diseases, and people. The results transformed every ecosystem and demographic pattern on earth, including the greatest single population collapse in human history.",
+    "titleHtml": "What the Ships <em>Carried</em>",
+    "deck": "After 1492, ships crossed the Atlantic and came back, again and again. They carried crops and animals on purpose, germs, rats, and mosquitoes by accident, and enslaved Africans by force. What they carried remade populations on both sides of the ocean.",
     "skillTags": [
       "Causation",
-      "Continuity & Change",
-      "Argumentation"
+      "Claims and Evidence in Sources"
     ],
     "supportCards": {
-      "beforeYouRead": "As you read, track the exchange in BOTH directions, from the New World to the Old and from the Old World to the New. The consequences were radically different depending on direction. Disease went one way with catastrophic results; crops went both ways with transformative effects. Keep a mental ledger of what went where and what changed as a result.",
-      "readingTarget": "By the end, you should be able to explain why Indigenous American populations were vulnerable to Eastern Hemisphere diseases, trace biological transfers in both directions, and explain demographic, nutritional, and environmental consequences including foods carried by enslaved Africans."
+      "beforeYouRead": "<strong>Ships crossed and came back → They carried plants, animals, and germs, some on purpose and some by accident → What crossed remade populations on both sides of the ocean.</strong> For everything that crosses in this reading, ask two things: how did it cross, and what did it do to the people at the other end?",
+      "readingTarget": "What caused the Columbian Exchange, and what did it do to the Americas and to Afro-Eurasia?"
     },
     "vocabulary": [
       "Columbian Exchange",
+      "Disease Vector",
       "Smallpox",
-      "Virgin Soil Epidemic",
-      "Demographic Collapse",
-      "Encomienda",
-      "Potatoes",
-      "Maize",
-      "Cassava",
-      "Disease Vectors",
-      "Okra",
-      "Rice",
-      "Nutrition",
-      "Ecological Imperialism",
-      "Tenochtitlan",
-      "Conquistador"
+      "Epidemic",
+      "Immunity",
+      "Plantation",
+      "Cash Crop",
+      "Coerced Labor",
+      "Staple Crop",
+      "Nutrition"
     ],
     "sections": [
       {
         "number": "1",
-        "label": "Contextualization",
-        "heading": "Two Worlds, Isolated for Ten Thousand Years",
+        "label": "The Cause",
+        "heading": "Two Worlds Apart, Then a Road Between Them",
         "blocks": [
           {
             "type": "p",
-            "html": "At the end of the last Ice Age, approximately 10,000 BCE, rising sea levels submerged the land bridge that had connected Siberia to Alaska. From that point forward, the Eastern and Western Hemispheres developed in biological isolation. The plants, animals, and diseases of Eurasia and Africa were completely separate from those of the Americas, and the immune systems of the human populations in each hemisphere reflected that separation. For ten thousand years, Afro-Eurasians developed immunity to diseases circulating in their hemisphere, and the peoples of the Americas had no exposure to, and no evolutionary defenses against, the major infectious diseases of the Old World."
+            "html": "In the last topic, Columbus sailed west looking for a route to Asia. He never found one. What he started instead was something nobody had planned, and that is this topic."
           },
           {
             "type": "p",
-            "html": "The biological inventories of the two hemispheres were strikingly different. The <span class=\"kt\">Americas</span> possessed plants that would transform world agriculture: <span class=\"kt\">maize</span> (corn), <span class=\"kt\">potatoes</span>, tomatoes, cacao, tobacco, peppers, squash, beans, and <span class=\"kt\">cassava</span>. Animal domestication in the Americas was limited, only llamas, alpacas, turkeys, guinea pigs, and dogs had been domesticated. There were no horses, cattle, pigs, sheep, or goats. There was also no wheat, rice, sugarcane, or barley, the staple crops that fed the majority of Afro-Eurasian populations."
+            "html": "Start with how the world looked before 1492. Since the end of the last Ice Age, about eleven thousand years ago, ocean had separated the Americas from Africa, Asia, and Europe. Each side grew its own plants, kept its own animals, and lived with its own diseases. The Americas had maize, potatoes, cassava, tomatoes, cacao, and tobacco, but almost no large farm animals: llamas and alpacas in the Andes, and no horses, cattle, or pigs anywhere. Afro-Eurasia had wheat, rice, sugarcane, horses, cattle, pigs, and sheep. Its people had also lived for thousands of years in crowded towns beside their animals, and they lived with diseases the Americas did not have, such as smallpox and measles."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Eurasia and Africa</span>, by contrast, had undergone millennia of intensive agriculture with dense human and animal populations living in close proximity. This proximity had a brutal consequence: it created ideal conditions for the evolution and spread of infectious diseases. Smallpox, measles, influenza, typhus, bubonic plague, and dozens of other diseases had circulated through Afro-Eurasian populations for centuries or millennia, repeatedly killing the most vulnerable and leaving behind populations with at least partial immunity. It was not that Afro-Eurasians were immune to these diseases, they killed enormous numbers of people. It was that they had been exposed long enough for populations to develop some degree of resistance through genetic selection and immune system priming."
+            "html": "Then ships began crossing the Atlantic and, just as important, coming back, again and again, as Europeans built colonies. That new connection is the cause of the <span class=\"kt\">Columbian Exchange</span>: the movement of plants, animals, and diseases between the two halves of the world. A historian named Alfred Crosby gave it that name in 1972."
           },
           {
             "type": "p",
-            "html": "When Columbus arrived in the Bahamas in 1492, he initiated contact between these isolated biological systems for the first time since the Ice Age. Within weeks, the first exchange was already underway. What happened next was not a meeting of equals, it was a biological collision with catastrophic consequences for one hemisphere and transformative consequences for the entire world."
+            "html": "Things crossed in three ways. Some went <strong>on purpose</strong>. Columbus's second voyage, in 1493, carried horses, cattle, pigs, wheat seed, and sugarcane, because settlers wanted the foods and animals they knew. Some went <strong>by accident</strong>: germs in sailors' bodies, rats in the cargo, and, most likely, mosquito eggs in the water barrels. An animal that carries a disease from one person to another, like a rat or a mosquito, is a <span class=\"kt\">disease vector</span>. And some went <strong>by force</strong>. Enslaved Africans, carried across the Atlantic against their will, brought foods from home with them."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>The Columbian Exchange was not primarily about Columbus, it was about what happened when two biological systems that had been isolated for 10,000 years suddenly came into contact. <strong>Understanding the LONG-RUN isolation of the hemispheres is essential for explaining why the exchange had such catastrophic consequences for the Americas and such transformative effects globally.</strong> This is contextualization: placing the 1492 contact in its deepest historical setting explains WHY the consequences were so extreme.</p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Explain the cause, not just the list.</strong> \"Plants and animals were exchanged\" is a list. \"Ships began crossing the Atlantic and coming back, so everything they carried, on purpose or by accident, went across\" explains why the exchange happened.</p>"
         }
       },
       {
         "number": "2",
-        "label": "Key Concept",
-        "heading": "Plants and Animals — A World Transformed",
+        "label": "Going West by Accident",
+        "heading": "The Cargo Nobody Chose",
         "blocks": [
           {
             "type": "p",
-            "html": "The transfer of crops between hemispheres was one of the most consequential agricultural revolutions in human history, perhaps the most consequential since the original development of agriculture itself. The effects played out over centuries, but their scale was enormous. American crops transformed diets, population sizes, and economic systems across every inhabited continent."
+            "html": "The accidents did the most harm. <span class=\"kt\">Smallpox</span> reached the Caribbean in 1518 and Mexico in 1520. Measles and malaria followed. The College Board calls the way these diseases crossed \"unintentional\": nobody planned it, and nobody at the time knew that germs existed."
           },
           {
             "type": "p",
-            "html": "Moving from the <span class=\"kt\">New World to the Old</span>: the <span class=\"kt\">potato</span> was introduced to Europe in the late 16th century and became, by the 18th century, one of the most important food sources on the continent. In Ireland, Germany, Russia, and northern Europe generally, regions where the climate was too cold and wet for reliable wheat harvests, the potato thrived. Calorie-dense, nutritious, and productive per acre, the potato contributed significantly to European population growth between 1700 and 1900. <span class=\"kt\">Maize</span> spread rapidly across Africa and China after 1500, providing a calorie-dense crop that could grow in conditions unsuitable for rice or wheat. <span class=\"kt\">Cassava</span> became a dietary staple across much of sub-Saharan Africa. Tomatoes, peppers, and cacao (chocolate) transformed cuisines across Eurasia and Africa, becoming so deeply embedded in local food traditions that most people today do not realize they were American in origin."
+            "html": "In June 1520 the people of Tenochtitlan, the Aztec capital, drove the Spaniards out of their city. That autumn, smallpox swept through it. An <span class=\"kt\">epidemic</span> is a disease that spreads to many people in one place at the same time. Years later, Nahua people from the city described the epidemic for a Spanish friar, Bernardino de Sahagún. People were covered in sores and could not move. Their account says that \"many died of hunger, because there was no one who could prepare food.\" Their new ruler, Cuitláhuac, died in the epidemic, most likely of smallpox. When the Spaniards came back to besiege the city in 1521, \"the Mexica warriors were greatly weakened by it.\""
           },
           {
             "type": "p",
-            "html": "Moving from the <span class=\"kt\">Old World to the New</span>: the effects were equally profound but took different forms. <span class=\"kt\">Horses</span>, cattle, pigs, wheat, sugar, and fruit trees transformed transportation, land use, diets, and colonial production. Enslaved Africans also carried foodways and crops across the Atlantic, including <span class=\"kt\">okra</span> and <span class=\"kt\">rice</span>, which became important parts of agricultural and culinary life in parts of the Americas. These transfers show that the Columbian Exchange was not only a European movement of species; forced African migration also moved ecological knowledge and food traditions."
+            "html": "Why were these diseases so deadly here? There are two reasons, and you need both. First, nobody in the Americas had had them before. In Afro-Eurasia, most adults had survived smallpox or measles as children and could not catch them again. That protection is <span class=\"kt\">immunity</span>. In the Americas, almost everyone fell sick at once, so nobody was left to farm, cook, or care for the sick. Second, the diseases did not arrive alone. They came with war, forced labor, hunger, and people driven from their homes, and sick, hungry, overworked people die more often."
           },
           {
             "type": "p",
-            "html": "The transfer of animals also had profound ecological consequences beyond human food systems. Introduced European livestock reproduced rapidly in American environments free of their natural predators and diseases, overgrazing native vegetation and displacing the animals indigenous communities depended on. Historian Alfred Crosby called this process <span class=\"kt\">ecological imperialism</span>, the idea that European conquest was as much biological as military, with European plants, animals, and diseases remaking American ecosystems in the image of European ones."
+            "html": "Historians argue about the exact numbers. One careful estimate is that central Mexico's population fell from about 15 million in 1519 to about 1.5 million a century later, and many regions of the Americas lost most of their people. That is what the College Board means by \"catastrophic effects in many areas.\""
           }
         ],
         "callout": {
-          "label": "AP Thinking, Causation",
-          "raw": "<p>The transfer of crops and animals caused different effects in different regions. <strong>A strong causal argument identifies WHICH transfer affected WHICH region and HOW, it does not just say \"crops were exchanged.\"</strong> Connect the specific cause (potato arriving in Ireland) to the specific effect (population growth, dependence on single crop, eventual famine vulnerability). The more specific the connection, the stronger the causal argument.</p>"
+          "label": "AP Thinking, Claims and Evidence in Sources",
+          "raw": "<p><strong>Find the evidence a source uses.</strong> The Nahua account makes a claim: the sickness destroyed their city. It backs that claim with specific evidence: people could not move, no one could prepare food, people starved, and the warriors were weakened. Naming the evidence a source uses to support its argument is the skill this topic practices.</p>"
         }
       },
       {
         "number": "3",
-        "label": "The Catastrophe",
-        "heading": "Disease and Demographic Collapse",
+        "label": "Going West on Purpose",
+        "heading": "Animals That Multiplied",
         "blocks": [
           {
             "type": "p",
-            "html": "The most devastating, and historically most significant, consequence of contact was disease. <span class=\"kt\">Smallpox</span>, measles, influenza, typhus, and other Old World diseases arrived in the Americas with European sailors and colonists, spreading into populations that had zero immunity to them. The results were catastrophic on a scale almost impossible to comprehend. Historians estimate that between 50 and 90 percent of the indigenous population of the Americas died within 100 years of European contact, from a pre-contact population that may have been as large as 50 to 70 million people. This is the largest demographic catastrophe in recorded human history."
+            "html": "What Europeans carried on purpose changed the Americas too. Pigs and cattle multiplied fast. A Spanish writer, José de Acosta, reported that wild cattle on the island of Santo Domingo roamed \"by thousands,\" and that one Spanish fleet in 1587 carried almost a hundred thousand cattle hides home from the Caribbean and Mexico. In one valley of central Mexico, sheep grazed the hillsides bare."
           },
           {
             "type": "p",
-            "html": "The mechanism was what historians call a <span class=\"kt\">virgin soil epidemic</span>: a disease entering a population with no prior exposure and therefore no immunity whatsoever. In experienced populations, infectious diseases typically kill the very young, the very old, and the immunocompromised, while leaving most working-age adults alive. In a virgin soil epidemic, the disease kills indiscriminately, young and old, men and women, the healthy and the sick, at rates far higher than in experienced populations. Smallpox, which killed roughly 30 percent of infected people in European populations with some prior exposure, is thought to have killed 50 percent or more in completely unexposed American populations."
+            "html": "Horses had died out in the Americas thousands of years earlier, and the Spanish brought them back. Horses spread north from Spanish settlements, and by the early 1700s peoples of the Great Plains, such as the Comanche, had built new ways of life on horseback, hunting bison and trading across huge distances."
           },
           {
             "type": "p",
-            "html": "The most dramatic single example is <span class=\"kt\">Tenochtitlan</span>, the capital of the Aztec Empire. In 1520, as Hernán Cortés's Spanish army was besieging the city, a smallpox epidemic swept through the Aztec population. The disease had arrived in Mexico with a soldier in Cortés's expedition, carried unknowingly, spread before anyone understood what was happening. The smallpox epidemic killed the ruling emperor <span class=\"kt\">Cuitláhuac</span> (who had ruled for only 80 days before dying of the disease) and devastated the population's military capacity. The Spanish conquest of the Aztec Empire was completed in 1521, not primarily because Spanish military technology was overwhelming, but because the population defending the city had been ravaged by disease."
-          },
-          {
-            "type": "p",
-            "html": "The pattern repeated across the Americas. As European explorers, missionaries, and settlers moved through the continent, disease spread ahead of them, often killing 70 to 90 percent of a regional population before the first European set foot in a village. When the first English settlers arrived at Plymouth in 1620, they found abandoned villages and cleared fields, the result of an epidemic that had swept through coastal New England five years earlier, killing an estimated 90 percent of the Wampanoag and neighboring peoples. The land that the Pilgrims thought was empty and available had been cleared and farmed by a population that disease had already largely destroyed."
+            "html": "Wheat, grapes, and fruit trees such as oranges went west as well, so that settlers could eat the foods they knew."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p>Disease was the leading cause of indigenous death, not primarily European military force. <strong>The Spanish conquest of the Aztec and Inca empires was made possible by disease killing populations faster than armies could.</strong> This is crucial for accurate historical explanation: the conquistadors did not defeat the Americas through military superiority alone, they were preceded and enabled by pathogens. When arguing about the causes of European colonialism's success, disease must be central to the explanation.</p>"
+          "raw": "<p><strong>Not every effect was a disaster.</strong> Some effects of the exchange were catastrophic, and some were new chances. The Comanche used the horse to build power on the Plains. A strong answer names the effect and the people it affected.</p>"
         }
       },
       {
         "number": "4",
-        "label": "Key Concept",
-        "heading": "Consequences: A Transformed World",
+        "label": "Going West by Force",
+        "heading": "Rice, Okra, and Sugar",
         "blocks": [
           {
             "type": "p",
-            "html": "The demographic collapse of indigenous American populations created immediate economic crises for European colonists. The <span class=\"kt\">encomienda system</span>, under which Spanish colonists were granted rights to the labor of specific indigenous communities, collapsed in many regions as those communities died. Sugar plantations in the Caribbean, which required intensive, year-round field labor under brutal tropical conditions, could not be sustained with indigenous workers who were dying faster than they could be exploited. European colonists found themselves with productive land, profitable crops, and no labor force to work them."
+            "html": "Some of what crossed came with people who were forced to cross. Enslaved Africans brought foods from home, including okra and rice, and many knew how to grow rice from farming it in West Africa. Okra was growing in Brazil by the 1650s."
           },
           {
             "type": "p",
-            "html": "The solution they chose was the <span class=\"kt\">Atlantic slave trade</span>. African enslaved people were not simply a convenient labor source, they had some degree of immunity to the tropical diseases (malaria, yellow fever) that killed European colonists in large numbers in the Caribbean and lowland South America, they had experience with intensive agricultural labor in African contexts, and they were available through existing African slave-trading networks that could be adapted to the Atlantic scale. Between 1500 and 1900, approximately 12 million Africans were forcibly transported across the Atlantic, one of the largest forced migrations in human history. The <span class=\"kt\">Columbian Exchange</span>, through the mechanism of demographic collapse, directly created the conditions that drove this catastrophic human trafficking."
+            "html": "Sugarcane came from Afro-Eurasia, but the Caribbean and Brazil turned out to grow it better than almost anywhere. So Europeans built <span class=\"kt\">plantations</span>: huge farms growing one crop to sell. A crop grown to sell rather than to eat at home is a <span class=\"kt\">cash crop</span>. Plantations used <span class=\"kt\">coerced labor</span>, people forced to work, and on sugar plantations those people were overwhelmingly enslaved Africans. Most of the sugar was shipped to Europe. Tobacco, an American plant, became a plantation crop the same way."
           },
           {
             "type": "p",
-            "html": "The Americas also contained enormous deposits of precious metals, particularly silver. The discovery of the silver mountain at <span class=\"kt\">Potosí</span> in present-day Bolivia in 1545 opened the most productive silver mine in world history. Spanish extraction of American silver was colossal: between 1500 and 1800, the Americas produced approximately 150,000 tons of silver, most of which was minted into coins and exported to Europe and Asia. The infusion of silver into the global economy drove significant price inflation in Europe (the \"Price Revolution\" of the 16th century), disrupted existing economic systems, and fueled the expansion of global trade. Much of the silver ultimately flowed to China, where the Ming and Qing dynasties required silver for tax payments, creating a global monetary circuit linking the silver mines of Bolivia to the markets of Canton."
-          },
-          {
-            "type": "p",
-            "html": "The environmental consequences were equally profound and equally permanent. <span class=\"kt\">Ecological imperialism</span> remade American landscapes: European grasses displaced native plants, European livestock overgrazed native vegetation, and the demographic collapse of indigenous populations, who had managed American landscapes through farming, burning, and hunting for thousands of years, allowed forests to regrow on millions of acres of previously cultivated land. Some researchers believe this reforestation was large enough to affect atmospheric carbon dioxide levels, contributing to the cooling episode known as the Little Ice Age. The Columbian Exchange was not just a human story, it was a planetary event."
+            "html": "You may read that disease \"caused\" African slavery in the Americas: disease killed the workers, so Europeans brought Africans. That is too simple. Disease did empty land of workers. But before 1492, Europeans were already growing sugar with enslaved workers, many of them African, on Atlantic islands such as Madeira, and they chose to bring that system to the Americas. How that forced labor worked is Topic 4.4."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Continuity &amp; Change",
-          "raw": "<p>The Columbian Exchange represents one of the most significant breaks in world history. <strong>The pre-contact world, in which two hemispheres had entirely separate biological systems, was gone permanently after 1492. The changes were irreversible.</strong> Once potatoes arrived in Europe, once horses arrived in the Americas, once smallpox killed 50–90% of the indigenous American population, none of that could be undone. This is a key example of how historical change can be abrupt, irreversible, and global in its consequences, the hallmarks of what historians call a genuine turning point.</p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Avoid a single cause.</strong> \"Disease caused slavery\" leaves out the choices people made. A stronger sentence: disease emptied land of workers, and Europeans who already used enslaved Africans on island plantations chose to bring that system to the Americas.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "Going East",
+        "heading": "New Foods for Afro-Eurasia",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Going east, the exchange was mostly a gift. American crops became <span class=\"kt\">staple crops</span>, the main foods people eat every day, in parts of Europe, Asia, and Africa, because they grew where the old crops struggled. Maize grew on dry land. Potatoes grew in cold, wet ground. Cassava grew in poor soil and survived drought. Sweet potatoes grew on hillsides too steep for rice."
+          },
+          {
+            "type": "p",
+            "html": "In southern China, officials promoted the sweet potato in 1594, a famine year. Near the mouth of the Congo River, in Central Africa, Portuguese traders brought cassava from Brazil, and farmers took it up because it survived drought and locusts. In Ireland, the potato had become a main food by the 1700s."
+          },
+          {
+            "type": "p",
+            "html": "<span class=\"kt\">Nutrition</span> is how well food feeds the body. A family that planted these crops had more food, more kinds of food, and something to eat when the old harvest failed. Over the next two centuries, these crops helped populations grow in China, Africa, and Europe."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Connect the crop to the people.</strong> Not \"maize spread to Africa,\" but \"maize grew on land where the old grains struggled, so families had more food and more people survived.\" Cause first, then the effect on people.</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "The Pattern",
+        "heading": "One Connection, Two Different Results",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Put it together. In the Americas, germs that nobody meant to carry killed millions of people, and the animals and crops that people did mean to carry remade the land. In Afro-Eurasia, American crops meant more food and better nutrition."
+          },
+          {
+            "type": "p",
+            "html": "The ships carried more than anyone meant them to, and what they carried remade populations on both sides of the ocean."
+          },
+          {
+            "type": "p",
+            "html": "It also left a question. The Americas had lost many of their people, and the new plantations needed more workers than ever. Who would do the work, and who would rule? That is Topic 4.4."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Answer both halves.</strong> The College Board asks for the causes of the Columbian Exchange and its effects on both hemispheres. Name the cause (ships crossing and coming back, carrying living things, some by accident), then one effect in the Americas and one in Afro-Eurasia.</p>"
         }
       }
     ],
-    "takeaway": "The Columbian Exchange was a two-way biological exchange of plants, animals, disease vectors, diseases, and people after 1492. Eastern Hemisphere diseases such as smallpox devastated many Indigenous American populations, while animals and crops such as horses, cattle, wheat, sugar, rice, and okra reshaped American environments and diets. American staple crops such as potatoes, maize, and cassava increased dietary diversity and calorie supplies in parts of Europe, Africa, and Asia, contributing to population growth. The strongest Topic 4.3 explanation follows transfer -> vulnerability or adaptation -> demographic, nutritional, economic, or environmental consequence.",
+    "takeaway": "Once ships crossed the Atlantic and came back again and again, plants, animals, and germs crossed with them: some on purpose, some by accident, and some with enslaved Africans carried by force. Smallpox, measles, and malaria, with rats and mosquitoes as carriers, had catastrophic effects in many parts of the Americas, made worse by war, forced labor, and hunger. Horses, pigs, cattle, wheat, and sugarcane remade American land, enslaved Africans brought rice and okra, and cash crops such as sugar were grown on plantations with coerced labor and shipped mostly to Europe. Going east, maize, potatoes, cassava, and sweet potatoes became staple crops and improved nutrition in Afro-Eurasia. The ships carried more than anyone meant them to.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
         "num": "01",
         "skill": "Causation",
-        "text": "Explain why Old World diseases were so devastating to indigenous American populations. What specific conditions made the Americas vulnerable to a \"virgin soil epidemic\"?",
-        "placeholder": "Old World diseases were devastating because... The specific conditions that created vulnerability were..."
+        "text": "Explain what caused the Columbian Exchange. Then name ONE thing that crossed the ocean on purpose and ONE thing that crossed by accident.",
+        "placeholder": "The exchange happened because... One thing that crossed on purpose was... One thing that crossed by accident was..."
       },
       {
         "num": "02",
-        "skill": "Continuity & Change",
-        "text": "Identify ONE American crop transferred to Afro-Eurasia and ONE crop, animal, or foodway transferred to the Americas, including an example such as rice or okra carried by enslaved Africans. Explain one long-term consequence of each transfer.",
-        "placeholder": "New World to Old World: [crop]. Long-term consequence: ... Old World to New World: [crop]. Long-term consequence: ..."
+        "skill": "Claims and Evidence in Sources",
+        "text": "In Section 2, the Nahua account claims that smallpox destroyed their city. Identify TWO pieces of evidence the account uses to support that claim. Then explain ONE reason the disease was so deadly in the Americas.",
+        "placeholder": "One piece of evidence is... A second piece of evidence is... The disease was so deadly because..."
       },
       {
         "num": "03",
-        "skill": "Argumentation",
-        "text": "Explain how the Columbian Exchange produced unequal demographic effects in the two hemispheres. Use disease evidence from the Americas and nutritional or population evidence from an American crop introduced to Afro-Eurasia.",
-        "placeholder": "The effects were unequal because... In the Americas... In Afro-Eurasia..."
+        "skill": "Causation",
+        "text": "Explain ONE effect of the exchange in the Americas (from an animal, a crop, or a food brought by enslaved Africans) and ONE effect in Afro-Eurasia (from an American crop). For each, say which people it affected.",
+        "placeholder": "In the Americas, ___ led to... This affected... In Afro-Eurasia, ___ led to... This affected..."
       }
     ],
-    "builderBody": "After answering the three questions, build a prompt for your AI Coach. The prompt will include your responses and ask the coach to give feedback on your historical thinking, pointing out gaps, suggesting stronger evidence, and asking a follow-up question.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
     "footerNote": "",
     "navPrev": {
