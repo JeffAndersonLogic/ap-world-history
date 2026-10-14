@@ -904,21 +904,34 @@ module.exports = [
   {
     id: 'topic-4-4',
     code: 'Topic 4.4',
-    title: 'Maritime Empire Routes and Trading Posts, c. 1550-1650',
-    subtitle: 'Topic 4.4 \u00b7 Maritime empires established',
+    title: 'Empires from the Sea, and a World with Its Own Rules',
+    subtitle: 'Topic 4.4 \u00b7 Maritime empires established, c. 1500 to 1750',
+    // Rebuilt 2026-10-14 from the 4.4 story: European forts on the coasts of
+    // Africa and Asia, colonies in the Americas, and the places that kept their
+    // own rules (Japan, the Swahili coast, Kongo, Asante). The chartered-company
+    // material it used to carry (VOC headquarters, Batavia, the spice monopoly)
+    // is Topic 4.5's and is gone, and so is "silver home".
     highlights: [
-      { zone: 'westernEurope', label: 'CHARTERED COMPANIES', tone: 'gold', legend: 'Lisbon, Seville, Amsterdam, London: company headquarters' },
-      { zone: 'westAfrica', label: 'COASTAL FORTS', tone: 'sand', legend: 'Elmina and other fortified trading posts' },
-      { zone: 'southAsia', label: 'FACTORIES', tone: 'bronze', legend: 'Goa, Surat, Madras: fortified trading factories' },
-      { zone: 'indonesia', label: 'SPICE MONOPOLY', tone: 'sage', legend: 'Batavia and the Dutch spice monopoly' },
-      { zone: 'mexico', label: 'VICEROYALTY', tone: 'plum', legend: 'Spanish American viceroyalties, not just trading posts' }
+      { zone: [-1.5, 7, 6, 3.5], label: 'GOLD COAST', tone: 'sand', legend: 'Gold Coast: Elmina fort (1482); Asante rises c. 1700' },
+      { zone: [15, -6, 5, 4], label: 'KONGO', tone: 'sage', legend: 'Kingdom of Kongo: Christian kings, trade with Portugal' },
+      { zone: 'swahiliCoast', label: 'SWAHILI COAST', tone: 'bronze', legend: 'Swahili coast: Swahili Arab and Omani traders' },
+      { zone: 'japan', label: 'JAPAN', tone: 'plum', legend: 'Tokugawa Japan: only the Dutch, on Dejima, from 1641' },
+      { zone: 'caribbean', label: 'CARIBBEAN', tone: 'gold', legend: 'Caribbean: sugar plantations worked by enslaved Africans' }
     ],
     flows: [
-      { from: 'westernEurope', to: 'southAsia', label: 'company fleets out', bow: 0.24 },
-      { from: 'indonesia', to: 'westernEurope', label: 'spices home', bow: -0.24 },
-      { from: 'mexico', to: 'westernEurope', label: 'silver home', bow: 0.16 }
+      { from: [-8, 38], via: [[-14, 20]], to: [-2, 5.5], label: 'Forts on the coast' },
+      { from: [-2, 3], via: [[-30, 8]], to: [-62, 15], label: 'Enslaved Africans west' },
+      { from: [12, -8], via: [[-15, -14]], to: [-38, -10], label: 'Enslaved Africans to Brazil' },
+      { from: [70, 19], via: [[88, 6]], to: [101, 3], label: 'Intra-Asian trade' }
     ],
-    note: 'BeHistorical instructional map. Portuguese and Dutch power rested on fortified posts and sea lanes rather than territory; Spain claimed land. Coastlines are simplified for classroom projection.'
+    points: [
+      { at: [73.8, 15.5], label: 'Goa', note: 'Portugal, 1510', side: 'left' },
+      { at: [102.25, 2.2], label: 'Malacca', note: 'Portugal 1511, Dutch 1641' },
+      { at: [113.55, 22.2], label: 'Macau', note: 'under Ming rules, from 1557' },
+      { at: [39.67, -4.05], label: 'Mombasa', note: 'taken by Oman, 1698' },
+      { at: [-65.75, -19.6], label: 'Potos\u00ed', note: 'the mit\u2019a sent workers here', side: 'left' }
+    ],
+    note: 'BeHistorical instructional map. Points and shaded regions are schematic, not borders, and coastlines are simplified for classroom projection. Arrows show patterns, not single voyages.'
   },
   {
     id: 'topic-4-5',

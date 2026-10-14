@@ -1935,14 +1935,14 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       unit: 'Unit 4: Transoceanic Interconnections',
       topic: 'Maritime Empires Established',
       learningTargets: [
-        { text: 'I can explain how European maritime empires expanded through trading posts and territorial conquest, and how participation in expanding maritime trade increased the influence of African states such as Kongo and Asante.', label: 'Governance' },
-        { text: 'I can explain how Indian Ocean trade changed after European arrival while intra-Asian trade and Asian, African, and Middle Eastern merchants continued to flourish.', label: 'Economic Systems' },
-        { text: 'I can explain continuity and change in colonial labor systems, including the adaptation of the Incan mit’a and the growth of encomienda, hacienda, indentured servitude, and chattel slavery.', label: 'Economic Systems' }
+        { text: 'I can explain why rival European states built maritime empires and trading posts, and how Kongo and Asante grew stronger through the new trade.', label: 'Governance' },
+        { text: 'I can explain how Ming China and Tokugawa Japan limited European trade, and what changed and what continued in Indian Ocean trade after the Europeans arrived.', label: 'Economic Systems' },
+        { text: 'I can explain what continued and what changed in labor systems in the colonial Americas, from the Inca mit’a to encomienda, hacienda, indentured servitude, and chattel slavery.', label: 'Economic Systems' }
       ],
       successCriteria: [
-        { text: 'I can use specific evidence from at least one European maritime empire and one African state to explain how expanding trade networks changed state power.', label: 'Governance' },
-        { text: 'I can identify one European disruption to Indian Ocean trade and one important continuity involving intra-Asian commerce or merchants such as Gujaratis, Omanis, Swahili Arabs, or Javanese.', label: 'Economic Systems' },
-        { text: 'I can compare one existing labor system with one new or expanded colonial labor system and explain how both served agricultural or extractive economies.', label: 'Economic Systems' }
+        { text: 'I can name a political, religious, or economic rivalry behind the empires, and use a trading post or Kongo or Asante to explain one change in who held power.', label: 'Governance' },
+        { text: 'I can explain one way China or Japan set the terms of trade with Europeans, and one change and one continuity in Indian Ocean trade using a merchant group such as Gujaratis, Swahili Arabs, Omanis, or Javanese.', label: 'Economic Systems' },
+        { text: 'I can explain one labor system that continued in a new form and one that was new, and how each supplied workers for farms or mines.', label: 'Economic Systems' }
       ],
       modules: [
         { number: '01', title: 'Map & Geography Check' },
@@ -1965,14 +1965,14 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       unit: 'Unit 4: Transoceanic Interconnections',
       topic: 'Maritime Empires Established',
       learningTargets: [
-        { text: 'I can explain how European maritime empires expanded through trading posts and territorial conquest, and how participation in expanding maritime trade increased the influence of African states such as Kongo and Asante.', label: 'Governance' },
-        { text: 'I can explain how Indian Ocean trade changed after European arrival while intra-Asian trade and Asian, African, and Middle Eastern merchants continued to flourish.', label: 'Economic Systems' },
-        { text: 'I can explain continuity and change in colonial labor systems, including the adaptation of the Incan mit’a and the growth of encomienda, hacienda, indentured servitude, and chattel slavery.', label: 'Economic Systems' }
+        { text: 'I can explain why rival European states built maritime empires and trading posts, and how Kongo and Asante grew stronger through the new trade.', label: 'Governance' },
+        { text: 'I can explain how Ming China and Tokugawa Japan limited European trade, and what changed and what continued in Indian Ocean trade after the Europeans arrived.', label: 'Economic Systems' },
+        { text: 'I can explain what continued and what changed in labor systems in the colonial Americas, from the Inca mit’a to encomienda, hacienda, indentured servitude, and chattel slavery.', label: 'Economic Systems' }
       ],
       successCriteria: [
-        { text: 'I can use specific evidence from at least one European maritime empire and one African state to explain how expanding trade networks changed state power.', label: 'Governance' },
-        { text: 'I can identify one European disruption to Indian Ocean trade and one important continuity involving intra-Asian commerce or merchants such as Gujaratis, Omanis, Swahili Arabs, or Javanese.', label: 'Economic Systems' },
-        { text: 'I can compare one existing labor system with one new or expanded colonial labor system and explain how both served agricultural or extractive economies.', label: 'Economic Systems' }
+        { text: 'I can name a political, religious, or economic rivalry behind the empires, and use a trading post or Kongo or Asante to explain one change in who held power.', label: 'Governance' },
+        { text: 'I can explain one way China or Japan set the terms of trade with Europeans, and one change and one continuity in Indian Ocean trade using a merchant group such as Gujaratis, Swahili Arabs, Omanis, or Javanese.', label: 'Economic Systems' },
+        { text: 'I can explain one labor system that continued in a new form and one that was new, and how each supplied workers for farms or mines.', label: 'Economic Systems' }
       ],
       modules: [
         { number: '01', title: 'Map & Geography Check' },

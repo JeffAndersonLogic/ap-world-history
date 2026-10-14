@@ -2759,7 +2759,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">How Portugal, Spain, and then the Dutch, British, and French built maritime empires using three distinct models: trading post empire, territorial colonialism, and joint-stock company</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Europeans built empires from the sea, but much of the world kept its own rules: some things changed fast, and some barely moved.</p>
             </td>
         </tr>
         <tr>
@@ -2768,10 +2768,10 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how European maritime empires expanded through trading posts and territorial conquest, and how participation in expanding maritime trade increased the influence of African states such as Kongo and Asante.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how Indian Ocean trade changed after European arrival while intra-Asian trade and Asian, African, and Middle Eastern merchants continued to flourish.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain continuity and change in colonial labor systems, including the adaptation of the Incan mit’a and the growth of encomienda, hacienda, indentured servitude, and chattel slavery.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain continuity and change in slavery, distinguishing older African and Indian Ocean forms of enslavement from the expanding plantation demand for enslaved labor in the Americas.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain why rival European states built maritime empires and trading posts, and how Kongo and Asante grew stronger through the new trade.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how Ming China and Tokugawa Japan limited European trade, and what changed and what continued in Indian Ocean trade after the Europeans arrived.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain what continued and what changed in labor systems in the colonial Americas, from the Inca mit’a to encomienda, hacienda, indentured servitude, and chattel slavery.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how older forms of slavery continued in Africa while the plantation economy made slavery in the Americas far larger and different.</li>
                 </ul>
             </td>
         </tr>
@@ -2781,10 +2781,10 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can use specific evidence from at least one European maritime empire and one African state to explain how expanding trade networks changed state power.</li>
-                    <li style="margin: 0 0 6px 0;">I can identify one European disruption to Indian Ocean trade and one important continuity involving intra-Asian commerce or merchants such as Gujaratis, Omanis, Swahili Arabs, or Javanese.</li>
-                    <li style="margin: 0 0 6px 0;">I can compare one existing labor system with one new or expanded colonial labor system and explain how both served agricultural or extractive economies.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how older forms of enslavement continued while plantation economies in the Americas increased the scale and demographic significance of Atlantic chattel slavery.</li>
+                    <li style="margin: 0 0 6px 0;">I can name a political, religious, or economic rivalry behind the empires, and use a trading post or Kongo or Asante to explain one change in who held power.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain one way China or Japan set the terms of trade with Europeans, and one change and one continuity in Indian Ocean trade using a merchant group such as Gujaratis, Swahili Arabs, Omanis, or Javanese.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain one labor system that continued in a new form and one that was new, and how each supplied workers for farms or mines.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain one older form of slavery in Africa that continued and one way plantations changed slavery in the Americas, and why it changed.</li>
                 </ul>
             </td>
         </tr>

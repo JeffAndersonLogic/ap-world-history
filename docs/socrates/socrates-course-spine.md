@@ -510,7 +510,7 @@ Strong answer checklist: State the cause: ships crossing the Atlantic, and later
 
 ## 4.4 Maritime Empires Established
 
-**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How Portugal, Spain, and then the Dutch, British, and French built maritime empires using three distinct models: trading post empire, territorial colonialism, and joint-stock company
+**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. Europeans built empires from the sea, but much of the world kept its own rules: some things changed fast, and some barely moved.
 
 **College Board key concepts.**
 - Unit 4: Learning Objective E (Learning Objective): Explain the process of state building and expansion among various empires and states in the period from 1450 to 1750.
@@ -524,15 +524,15 @@ Strong answer checklist: State the cause: ships crossing the Atlantic, and later
 - KC-4.2.II.B (Social Interactions and Organization): Enslavement in Africa continued in its traditional forms, including incorporation of enslaved persons into households and the export of enslaved persons to the Mediterranean and the Indian Ocean regions.
 - KC-4.2.II.C (Social Interactions and Organization): The growth of the plantation economy increased the demand for enslaved labor in the Americas, leading to significant demographic, social, and cultural changes.
 
-**Expected evidence terms.** Estado da Índia, Spanish Empire, Kongo, Asante, trading posts, Indian Ocean, intra-Asian trade, Gujaratis, Omanis, Swahili Arabs, Javanese, Incan mit’a, mita, encomienda, hacienda, indentured servitude, chattel slavery, plantation economy, African enslavement, Mediterranean, Atlantic slave trade.
+**Expected evidence terms.** rivalry, maritime empire, trading post, Elmina, Goa, Kongo, Asante, Ming China, Macau, Tokugawa Japan, Dejima, Indian Ocean, cartaz, intra-Asian trade, Gujaratis, Swahili Arabs, Omanis, Javanese, mit’a, mita, Potosí, encomienda, hacienda, indentured servitude, chattel slavery, plantation, plantation economy, sugar, households, Sahara, Mediterranean, enslaved Africans, inherited, race.
 
-**AP skill focus.** Continuity and change practice.
+**AP skill focus.** Sourcing and Situation practice.
 
-**Checkpoint 1 prompt.** Explain how expanding maritime trade increased the power of ONE European maritime empire and ONE African state such as Kongo or Asante. Then explain one important continuity in Indian Ocean trade despite Portuguese or Dutch disruption, using a specific merchant group or intra-Asian trade example.
-Strong answer checklist: Use one specific European state-building example. Use one specific African state-growth example. Explain one Indian Ocean continuity and why European arrival did not erase it.
+**Checkpoint 1 prompt.** Explain ONE reason European states built maritime empires (a political, religious, or economic rivalry). Then explain ONE change in who held power, using a European trading post or Kongo or Asante. Then explain ONE continuity: how Ming China or Tokugawa Japan limited European trade, OR how Asian merchants such as Gujaratis, Swahili Arabs, Omanis, or Javanese kept the Indian Ocean trading.
+Strong answer checklist: Name one rivalry (political, religious, or economic) as the reason for the empires. Give one change in who held power: a European trading post, or Kongo or Asante growing stronger. Give one continuity: China or Japan setting the terms of trade, or Asian merchants trading on in the Indian Ocean.
 
-**Checkpoint 2 prompt.** Explain one continuity and one change in labor systems in the Americas after 1500. Then explain one continuity and one change in slavery across Africa, the Indian Ocean, and the Atlantic world. Use at least THREE specific terms or examples and make clear what persisted versus what expanded or changed.
-Strong answer checklist: Compare an older/adapted labor system with a new or expanded colonial labor system. Explain that enslavement in Africa predated Atlantic expansion. Explain how plantation demand changed the scale, destination, and social effects of enslaved labor.
+**Checkpoint 2 prompt.** Explain ONE continuity and ONE change in labor systems in the colonial Americas (for example, the mit’a, encomienda, hacienda, indentured servitude, or chattel slavery). Then explain ONE continuity and ONE change in slavery from 1450 to 1750: one older form of slavery in Africa that continued, and one way the plantation economy changed slavery in the Americas. For each change, explain why it happened.
+Strong answer checklist: Give one labor continuity (such as the mit’a reused for Potosí) and one labor change (such as encomienda or indentured servitude). Give one older form of slavery in Africa that continued, such as enslaved people in households or captives sent across the Sahara or the Indian Ocean. Give one change the plantations made to slavery in the Americas (its size, being for life and inherited, or being tied to race), and say why it happened.
 
 ## 4.5 Maritime Empires Maintained and Developed
 
