@@ -290,3 +290,16 @@ retell it (Pass 3, page-truth finding 4), then reviewed by two fresh reviewers.
 | 2 | The sweet potato reached China by more than one route (Ping-ti Ho: Yunnan in the 1560s and 1570s, probably overland; Fujian independently before 1594), and the Pacific crossing ran Mexico to the Philippines, not Philippines to China | **Confirmed.** Fixed on cards 1 and 4, in the First & 10 Section 5 (one sentence; the Unit 4 fingerprint moved with a dated comment, only that sentence changed) and in the slide notes. |
 | 3 | Card 1 defines a vector right after "rats" as carrying disease person to person | Fixed: "like a mosquito, or a rat and the fleas it carries". |
 | note | The painters were probably not survivors | Fixed: "how the epidemic was remembered", "working from what Nahua elders told them". |
+
+### Card review, round 2 (one fresh reviewer, history and page truth), 5 findings
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | Cards 1 and 4 send students to map and herbal text that renders 4 to 6px on the card, which has no click-to-enlarge | Fixed: card 1 points to the Map module's key ("Not drawn as an arrow"); card 4 names the labels in the text, says to click Open image source for the full page, and sends the Fujian dot to the Map module. The missing lecture-image enlargement is an adjacent finding for every topic. |
+| 2 | Card 1 points to a note that does not mention the Pacific crossing | Fixed: "The Map module's key ... gives the last step, from the Philippines to Fujian." |
+| 3 | The hair-braiding story is a recorded Maroon oral tradition (Carney 2001, 2005; Pinas et al. 2024), not merely "popular" | Fixed: "a story told by some Maroon communities ... No record from the time of the slave trade confirms it, so use it as a story people remember, not as evidence of how rice crossed." |
+| 4 | Card 3 says students met Acosta in the Skill Builder, which comes after Content Delivery | Fixed: "in the First & 10 (Section 3)". |
+| 5 | Card 4 stated the inferences the Evidence Lab asks students to make | Fixed: the card keeps the facts on the page and ends on a question sent to the Evidence Lab. |
+
+The follow-up ran two review rounds. The second round's fixes use the reviewer's own suggested
+wording and were checked by the gate and the lecture-deck browser test, not by a third reviewer.
