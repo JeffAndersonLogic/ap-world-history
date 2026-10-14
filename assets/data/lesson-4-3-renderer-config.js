@@ -62,7 +62,7 @@
       { label: '3. East: maize, potatoes', detail: 'American crops reached Europe and became main foods in places where the old crops struggled.' },
       { label: '4. Cassava to Central Africa', detail: 'Portuguese traders carried cassava from Brazil to the mouth of the Congo River, where farmers took it up because it survived drought.' },
       { label: 'Black dots', detail: 'Tenochtitlan (smallpox, 1520), Santo Domingo (sugar and cattle), Ireland (potatoes), the mouth of the Congo (cassava), and Fujian in China (sweet potatoes, 1594).' },
-      { label: 'Not drawn as an arrow', detail: 'Sweet potatoes reached southern China from the Philippines, across the Pacific side of the world. The note at the bottom of the map says so.' }
+      { label: 'Not drawn as an arrow', detail: 'Sweet potatoes reached southern China by sea from the Philippines, a route this Atlantic-centered map does not draw. The note at the bottom of the map says so.' }
     ]
   };
 
@@ -152,7 +152,7 @@
       title: 'A Sugar Mill in Dutch Brazil, Frans Post, 1660s',
       url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Frans%20Post%20-%20Engenho%20de%20A%C3%A7%C3%BAcar%20%28Dublin%29.jpg?width=1200',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Frans_Post_-_Engenho_de_A%C3%A7%C3%BAcar_(Dublin).jpg',
-      caption: 'Oil painting by Frans Post, a Dutch artist who lived in Dutch-ruled northeastern Brazil from 1637 to 1644 and painted its sugar plantations for buyers in Europe for years after he went home. National Gallery of Ireland.',
+      caption: 'Oil painting by Frans Post, a Dutch artist who went to Dutch-ruled northeastern Brazil in 1637, stayed several years, and painted its sugar plantations for buyers in Europe for decades after he went home. National Gallery of Ireland.',
       prompt: 'NOTICE the mill on the right, the ox cart, and the people working beside them, then NOTICE the house on the hill. INFER who did the work on this plantation and who owned it. What might a painting made to sell in Europe leave out?'
     },
     {

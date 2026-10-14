@@ -378,7 +378,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 3,
         land: [
           'KC-4.1.V.B\'s second sentence, which no surface of the old 4.3 lesson taught: "Cash crops were grown primarily on plantations with coerced labor and were exported mostly to Europe and the Middle East."',
-          'Frans Post went to Dutch-ruled northeastern Brazil in 1637 with Johan Maurits and stayed until 1644. He painted Brazilian scenes like this one for European buyers for decades after he went home. It is a planter\'s-eye view: look for the mill, the workers, the oxen and cart carrying cane, and the house on the hill.',
+          'Frans Post went to Dutch-ruled northeastern Brazil in 1637 with its governor, Johan Maurits, and stayed several years (sources give 1642 to 1644 for his return). He painted Brazilian scenes like this one for European buyers for decades after he went home. It is a planter\'s-eye view: look for the mill, the workers, the oxen and cart carrying cane, and the house on the hill.',
           'Sugarcane came from the Canaries on Columbus\'s 1493 voyage and was first grown on Hispaniola; Brazil exported sugar to Lisbon by 1526, and by 1680 the Americas dominated world sugar production (Nunn and Qian 2010, citing Mintz and Galloway).',
           'Tobacco, an American plant, became a plantation cash crop the same way.',
           'How the plantation labor system worked is 4.4. Here, say what the CED says and move on.'

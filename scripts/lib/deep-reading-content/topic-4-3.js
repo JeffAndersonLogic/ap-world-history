@@ -66,7 +66,7 @@ module.exports = {
       name: 'Why the Disaster Fell Where It Did',
       navLabel: 'The biology',
       dates: 'c. 1492 to 1650 &nbsp;·&nbsp; Isolation, herds, and immunity',
-      thesis: `The catastrophe was not caused by anything about the people it fell on. It was caused by which animals each hemisphere had domesticated, and by ten thousand years of separation, and stating it that way is both correct and the only version that survives scrutiny.`,
+      thesis: `The catastrophe was not caused by anything about the people it fell on. The germs were new to the Americas because of which animals each hemisphere had domesticated and ten thousand years of separation, and they killed as many as they did because they arrived together with war, forced labor and hunger. Stating it that way is correct, and it survives scrutiny.`,
       parts: [
         {
           heading: 'Where crowd diseases come from',
@@ -261,7 +261,7 @@ module.exports = {
       name: 'A Chain That Is Too Simple',
       navLabel: 'Too simple',
       dates: 'c. 1500 to 1750 &nbsp;·&nbsp; Disease, plantations, and choices',
-      thesis: `"Disease killed the Indigenous population, so Europeans enslaved Africans" is the most common causal chain students write about this topic, and it is wrong in the way single causes are always wrong: it is not false that disease mattered, but it hides the decisions that made the outcome.`,
+      thesis: `"Disease killed the Indigenous population, so Europeans enslaved Africans" is the most common causal chain students write about this topic, and it is wrong in the way single causes usually are: it is not false that disease mattered, but it hides the decisions that made the outcome.`,
       parts: [
         {
           heading: 'What the chain gets right, and what it leaves out',
@@ -300,7 +300,7 @@ module.exports = {
       {
         category: 'Causation',
         title: 'The catastrophe was about herd animals, not about people',
-        body: `Many Afro-Eurasian crowd diseases have animal reservoirs or close animal relatives, and they became endemic in dense, connected populations, so European adults carried immunity acquired by surviving them in childhood. The Americas had domesticated the llama, alpaca, guinea pig, turkey and dog, none living in the crowded proximity that generates such diseases, and had been separated from Afro-Eurasia for thousands of years. The difference lies in the animal and population ecology and in the isolation rather than in the people, which is confirmed twice over: Europe suffered exactly this kind of collapse from a novel pathogen in the fourteenth century, and Europeans died in appalling numbers of malaria and yellow fever in West Africa. Novelty was the variable, and it cut in every direction.`
+        body: `Many Afro-Eurasian crowd diseases have animal reservoirs or close animal relatives, and they became endemic in dense, connected populations, so European adults carried immunity acquired by surviving them in childhood. The Americas had domesticated the llama, alpaca, guinea pig, turkey and dog, none living in the crowded proximity that generates such diseases, and had been separated from Afro-Eurasia for thousands of years. The difference lies in the animal and population ecology, the isolation, and the war, forced labor and hunger that came with the germs, rather than in the people, which is confirmed twice over: Europe suffered exactly this kind of collapse from a novel pathogen in the fourteenth century, and Europeans died in appalling numbers of malaria and yellow fever in West Africa. Novelty was the variable, and it cut in every direction.`
       },
       {
         category: 'Consequences',
