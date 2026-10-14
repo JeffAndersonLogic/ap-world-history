@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="map-title map-desc">
-  <title id="map-title">The Columbian Exchange: Flows Between Hemispheres</title>
-  <desc id="map-desc">Topic 4.3 instructional map for AP World History: The Columbian Exchange: Flows Between Hemispheres. Topic 4.3 · What moved, and which way</desc>
+  <title id="map-title">What the Ships Carried, and Which Way</title>
+  <desc id="map-desc">Topic 4.3 instructional map for AP World History: What the Ships Carried, and Which Way. Topic 4.3 · The Columbian Exchange</desc>
   <defs>
     <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#FFFDF7"/><stop offset="1" stop-color="#F1E7D5"/>
@@ -74,51 +74,67 @@
     <ellipse cx="568.9" cy="555.6" rx="62.2" ry="66.7" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
   </g>
   <g id="flows">
-    <path class="flow" d="M346.7,372.2 Q635.9,391.6 871.1,222.2" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="622.4" cy="344.4" r="17"/>
-    <text class="badgenum" x="622.4" y="351.4" text-anchor="middle">1</text>
-    <path class="flow" d="M871.1,222.2 Q650.9,444.1 346.7,372.2" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="629.9" cy="394.6" r="17"/>
-    <text class="badgenum" x="629.9" y="401.6" text-anchor="middle">2</text>
-    <path class="flow" d="M782.2,433.3 Q695.1,528.6 568.9,555.6" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="685.3" cy="511.5" r="17"/>
-    <text class="badgenum" x="685.3" y="518.5" text-anchor="middle">3</text>
-    <path class="flow" d="M480.0,577.8 Q260.0,439.1 0.0,444.4 M1600.0,444.4 Q1468.9,332.4 1297.8,311.1" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="250.0" cy="475.1" r="17"/>
-    <text class="badgenum" x="250.0" y="482.1" text-anchor="middle">4</text>
+    <path class="flow" d="M764.4,288.9 C744.4,296.3 690.4,316.7 644.4,333.3 C598.5,350.0 514.8,379.6 488.9,388.9" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <circle class="badge" cx="644.4" cy="333.3" r="17"/>
+    <text class="badgenum" x="644.4" y="340.3" text-anchor="middle">1</text>
+    <path class="flow" d="M746.7,444.4 C734.8,451.9 694.1,472.2 675.6,488.9 C657.0,505.6 642.2,535.2 635.6,544.4" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <circle class="badge" cx="675.6" cy="488.9" r="17"/>
+    <text class="badgenum" x="675.6" y="495.9" text-anchor="middle">2</text>
+    <path class="flow" d="M466.7,355.6 C492.6,340.7 573.3,285.2 622.2,266.7 C671.1,248.1 737.0,248.1 760.0,244.4" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <circle class="badge" cx="622.2" cy="266.7" r="17"/>
+    <text class="badgenum" x="622.2" y="273.7" text-anchor="middle">3</text>
+    <path class="flow" d="M644.4,555.6 C661.5,559.3 712.6,581.0 746.7,577.8 C780.7,574.5 831.9,543.1 848.9,536.1" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <circle class="badge" cx="746.7" cy="577.8" r="17"/>
+    <text class="badgenum" x="746.7" y="584.8" text-anchor="middle">4</text>
   </g>
   <g id="region-labels">
-    <text class="region halo" x="883.1" y="309.3" text-anchor="middle" fill="#1A1C1D"><tspan x="883.1" dy="0">EASTERN</tspan><tspan x="883.1" dy="25">HEMISPHERE</tspan></text>
-    <text class="region halo" x="818.2" y="522.2" text-anchor="middle" fill="#1A1C1D"><tspan x="818.2" dy="0">WEST AFRICA</tspan></text>
-    <text class="region halo" x="346.7" y="431.6" text-anchor="middle" fill="#1A1C1D"><tspan x="346.7" dy="0">MESOAMERICA</tspan></text>
+    <text class="region halo" x="871.1" y="309.3" text-anchor="middle" fill="#1A1C1D"><tspan x="871.1" dy="0">EUROPE</tspan></text>
+    <text class="region halo" x="782.2" y="426.2" text-anchor="middle" fill="#1A1C1D"><tspan x="782.2" dy="0">WEST AFRICA</tspan></text>
+    <text class="region halo" x="346.7" y="455.6" text-anchor="middle" fill="#1A1C1D"><tspan x="346.7" dy="0">MEXICO</tspan></text>
     <text class="region halo" x="480.0" y="703.8" text-anchor="middle" fill="#1A1C1D"><tspan x="480.0" dy="0">ANDES</tspan></text>
-    <text class="region halo" x="568.9" y="648.2" text-anchor="middle" fill="#1A1C1D"><tspan x="568.9" dy="0">AMAZONIA</tspan></text>
+    <text class="region halo" x="568.9" y="648.2" text-anchor="middle" fill="#1A1C1D"><tspan x="568.9" dy="0">BRAZIL</tspan></text>
   </g>
   <g id="places">
-    
+    <circle class="city" cx="359.6" cy="392.2" r="10"/>
+    <text class="place halo" x="339.6" y="388.2" text-anchor="end">Tenochtitlan</text>
+    <text class="placenote halo" x="339.6" y="410.2" text-anchor="end">smallpox, autumn 1520</text>
+    <line class="leader" x1="489.3" y1="397.2" x2="489.3" y2="425.2"/>
+    <circle class="city" cx="489.3" cy="397.2" r="10"/>
+    <text class="place halo" x="449.3" y="441.2" text-anchor="start">Santo Domingo</text>
+    <text class="placenote halo" x="449.3" y="463.2" text-anchor="start">sugar and cattle</text>
+    <circle class="city" cx="764.4" cy="205.6" r="10"/>
+    <text class="place halo" x="744.4" y="201.6" text-anchor="end">Ireland</text>
+    <text class="placenote halo" x="744.4" y="223.6" text-anchor="end">potato a main food by the 1700s</text>
+    <circle class="city" cx="854.7" cy="533.3" r="10"/>
+    <text class="place halo" x="874.7" y="529.3" text-anchor="start">Mouth of the Congo</text>
+    <text class="placenote halo" x="874.7" y="551.3" text-anchor="start">cassava from Brazil</text>
+    <line class="leader" x1="1327.1" y1="358.3" x2="1327.1" y2="332.3"/>
+    <circle class="city" cx="1327.1" cy="358.3" r="10"/>
+    <text class="place halo" x="1275.1" y="306.3" text-anchor="start">Fujian, China</text>
+    <text class="placenote halo" x="1275.1" y="328.3" text-anchor="start">sweet potato promoted, 1594</text>
   </g>
 
   <g id="titleband">
     <rect x="0" y="0" width="1600" height="118" fill="url(#paper)" opacity=".93"/>
     <rect x="0" y="118" width="1600" height="5" fill="#C9A46A"/>
-    <text class="title" x="46" y="62">The Columbian Exchange: Flows Between Hemispheres</text>
-    <text class="subtitle" x="48" y="97">Topic 4.3 · What moved, and which way</text>
+    <text class="title" x="46" y="62">What the Ships Carried, and Which Way</text>
+    <text class="subtitle" x="48" y="97">Topic 4.3 · The Columbian Exchange</text>
   </g>
 
   <g id="legend" transform="translate(46,721)">
     <rect x="0" y="0" width="1030" height="211" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
     <text class="small" x="18" y="28" font-weight="700">Map Key</text>
-      <rect x="18" y="38" width="40" height="23" rx="4" fill="#9FB0AE" fill-opacity=".6" stroke="#4E6260" stroke-width="3"/><text class="small" x="74" y="56">Old World: wheat, sugar, horses, cattle, smallpox, measles</text>
-      <rect x="18" y="71" width="40" height="23" rx="4" fill="#D2B48C" fill-opacity=".6" stroke="#8E7A55" stroke-width="3"/><text class="small" x="74" y="89">West Africa: rice, okra, and enslaved people forced west</text>
-      <rect x="18" y="104" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="122">Maize, beans, tomatoes, cacao, vanilla</text>
-      <rect x="18" y="137" width="40" height="23" rx="4" fill="#C08552" fill-opacity=".6" stroke="#8C5A2B" stroke-width="3"/><text class="small" x="74" y="155">Potatoes, quinoa, silver</text>
-      <rect x="18" y="170" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="188">Manioc, rubber, tobacco</text>
-      <circle class="badge" cx="533" cy="49" r="14"/><text class="badgenum" x="533" y="55" text-anchor="middle" font-size="16">1</text><line x1="551" x2="572" y1="49" y2="49" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,43 L584,49 L572,55 Z" fill="#8C5A2B"/><text class="small" x="594" y="56">American crops east</text>
-      <circle class="badge" cx="533" cy="82" r="14"/><text class="badgenum" x="533" y="88" text-anchor="middle" font-size="16">2</text><line x1="551" x2="572" y1="82" y2="82" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,76 L584,82 L572,88 Z" fill="#8C5A2B"/><text class="small" x="594" y="89">Eurasian animals, crops, and disease west</text>
-      <circle class="badge" cx="533" cy="115" r="14"/><text class="badgenum" x="533" y="121" text-anchor="middle" font-size="16">3</text><line x1="551" x2="572" y1="115" y2="115" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,109 L584,115 L572,121 Z" fill="#8C5A2B"/><text class="small" x="594" y="122">enslaved Africans forced west</text>
-      <circle class="badge" cx="533" cy="148" r="14"/><text class="badgenum" x="533" y="154" text-anchor="middle" font-size="16">4</text><line x1="551" x2="572" y1="148" y2="148" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,142 L584,148 L572,154 Z" fill="#8C5A2B"/><text class="small" x="594" y="155">silver across the Pacific</text>
+      <rect x="18" y="38" width="40" height="23" rx="4" fill="#9FB0AE" fill-opacity=".6" stroke="#4E6260" stroke-width="3"/><text class="small" x="74" y="56">Europe: horses, cattle, pigs, wheat</text>
+      <rect x="18" y="71" width="40" height="23" rx="4" fill="#D2B48C" fill-opacity=".6" stroke="#8E7A55" stroke-width="3"/><text class="small" x="74" y="89">West Africa: rice and okra</text>
+      <rect x="18" y="104" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="122">Mexico: maize, tomatoes, cacao</text>
+      <rect x="18" y="137" width="40" height="23" rx="4" fill="#C08552" fill-opacity=".6" stroke="#8C5A2B" stroke-width="3"/><text class="small" x="74" y="155">Andes: potatoes and maize</text>
+      <rect x="18" y="170" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="188">Brazil: cassava; sugar plantations</text>
+      <circle class="badge" cx="533" cy="49" r="14"/><text class="badgenum" x="533" y="55" text-anchor="middle" font-size="16">1</text><line x1="551" x2="572" y1="49" y2="49" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,43 L584,49 L572,55 Z" fill="#8C5A2B"/><text class="small" x="594" y="56">West: animals, crops, germs</text>
+      <circle class="badge" cx="533" cy="82" r="14"/><text class="badgenum" x="533" y="88" text-anchor="middle" font-size="16">2</text><line x1="551" x2="572" y1="82" y2="82" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,76 L584,82 L572,88 Z" fill="#8C5A2B"/><text class="small" x="594" y="89">West by force: enslaved Africans</text>
+      <circle class="badge" cx="533" cy="115" r="14"/><text class="badgenum" x="533" y="121" text-anchor="middle" font-size="16">3</text><line x1="551" x2="572" y1="115" y2="115" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,109 L584,115 L572,121 Z" fill="#8C5A2B"/><text class="small" x="594" y="122">East: maize, potatoes</text>
+      <circle class="badge" cx="533" cy="148" r="14"/><text class="badgenum" x="533" y="154" text-anchor="middle" font-size="16">4</text><line x1="551" x2="572" y1="148" y2="148" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,142 L584,148 L572,154 Z" fill="#8C5A2B"/><text class="small" x="594" y="155">Cassava to Central Africa</text>
   </g>
 
   <rect x="0" y="948" width="1600" height="52" fill="url(#paper)" opacity=".93"/>
-  <text class="tiny" x="46" y="980">BeHistorical instructional map. Arrows show direction of exchange, not specific voyages; coastlines are simplified for classroom projection.</text>
+  <text class="tiny" x="46" y="980">BeHistorical instructional map. Arrows show the direction things moved, not single voyages; coastlines are simplified. Sweet potatoes reached southern China from the Philippines by the 1590s, outside this map&apos;s arrows.</text>
 </svg>

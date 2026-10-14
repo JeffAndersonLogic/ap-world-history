@@ -95,4 +95,13 @@
 // applied through this workflow. Beware "Jiaozi.jpg" on Commons: it is a plate
 // of dumplings.
 
+// **2026-10-14, Topic 4.3's Evidence Lab** was rebuilt around the two directions
+// of the exchange: the Florentine Codex smallpox page (the 2000-pixel scan, not
+// the 640-pixel copy), Frans Post's Dublin sugar mill, Guamán Poma's July
+// harvest, Gerard's 1597 "Turkie Corne" and a 1740s Qing album page of sweet
+// potatoes from Taiwan. All five verified and applied through this workflow;
+// Potosí (4.5) and the casta painting (4.7) left. The Qing page's inscription
+// was read from the image and translated for the lesson; the translation is
+// recorded in docs/TOPIC-4-3-CLAIM-LEDGER.md.
+
 module.exports = [];

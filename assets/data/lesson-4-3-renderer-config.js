@@ -49,110 +49,126 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: The Great Exchange',
+    title: 'First & 10: What the Ships Carried',
     embedUrl: 'first-and-10-topic-4-3-columbian-exchange-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 4.3 lesson path.'
+    note: 'Read the First & 10 narrative, answer the three questions, then return to the 4.3 lesson path.'
   };
 
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'New World → Old World (crops)', detail: 'Potatoes, maize, tomatoes, cacao, tobacco, and cassava moved from the Americas to Europe, Africa, and Asia, transforming diets and, over generations, supporting population growth in receiving regions.' },
-      { label: 'Old World → New World (animals & plants)', detail: 'Horses, cattle, pigs, sheep, wheat, sugarcane, and rice moved from Eurasia and Africa to the Americas, transforming indigenous cultures (especially the horse) and driving new plantation economies (especially sugarcane).' },
-      { label: 'Old World → New World (disease)', detail: 'Smallpox, measles, influenza, and other pathogens moved from Afro-Eurasia to the Americas, where indigenous populations had no prior immunity. The result was the largest demographic catastrophe in human history, estimated 50–90% population loss.' },
-      { label: 'Geographic takeaway', detail: 'The Columbian Exchange was not symmetric: crops generally moved in both directions, but disease moved overwhelmingly from east to west, and enslaved people moved overwhelmingly from Africa to the Americas. The Atlantic Ocean became a highway for biological and human flows that transformed every ecosystem and society it touched.' }
+      { label: '1. West: animals, crops, germs', detail: 'Europeans carried horses, cattle, pigs, wheat, fruit trees, and sugarcane on purpose. Smallpox, measles, and rats came with them by accident.' },
+      { label: '2. West by force: enslaved Africans', detail: 'Africans carried across the Atlantic against their will brought foods such as rice and okra.' },
+      { label: '3. East: maize, potatoes', detail: 'American crops reached Europe and became main foods in places where the old crops struggled.' },
+      { label: '4. Cassava to Central Africa', detail: 'Portuguese traders carried cassava from Brazil to the mouth of the Congo River, where farmers took it up because it survived drought.' },
+      { label: 'Black dots', detail: 'Tenochtitlan (smallpox, 1520), Santo Domingo (sugar and cattle), Ireland (potatoes), the mouth of the Congo (cassava), and Fujian in China (sweet potatoes, 1594).' },
+      { label: 'Not drawn as an arrow', detail: 'Sweet potatoes reached southern China from the Philippines, across the Pacific side of the world. The note at the bottom of the map says so.' }
     ]
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg'
+    map:             '../assets/images/instructional-maps/topic-4-3.svg',
+    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Guam%C3%A1n%20Poma%201615%201150%20julio.png?width=1200',
+    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Frumentum%20turcicum%20Gerard%201597%2075.png?width=1200',
+    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Healer%20%28ticitl%29%20tending%20to%20people%20suffering%20from%20smallpox%20in%201520%20in%20Book%2012%20of%20the%20Florentine%20Codex%2C%201577.jpg?width=1200',
+    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Acosta2.jpg?width=1200',
+    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Healer%20%28ticitl%29%20tending%20to%20people%20suffering%20from%20smallpox%20in%201520%20in%20Book%2012%20of%20the%20Florentine%20Codex%2C%201577.jpg?width=1200',
+    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Frans%20Post%20-%20Engenho%20de%20A%C3%A7%C3%BAcar%20%28Dublin%29.jpg?width=1200',
+    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Healer%20%28ticitl%29%20tending%20to%20people%20suffering%20from%20smallpox%20in%201520%20in%20Book%2012%20of%20the%20Florentine%20Codex%2C%201577.jpg?width=1200',
+    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Guam%C3%A1n%20Poma%201615%201150%20julio.png?width=1200',
+    checkpoint2:     '../assets/images/instructional-maps/topic-4-3.svg'
   };
 
   lesson.beInTheRoom = {
     url: '../beintheroom/unit-4/the-replanting-council.html',
-    desc: 'Rebuild the Valley of Mexico after war and smallpox while weighing food security, introduced animals, land claims, labor coercion, and the unequal effects of biological exchange.'
+    desc: 'Sit on a town council in the Valley of Mexico in 1531, ten years after smallpox: decide what to plant, what to do about the settlers\' animals, and how to care for the sick when a new sickness arrives.'
   };
 
   lesson.skillBuilder = {
-    label: 'Causation practice',
-    title: 'Causation: How the Demographic Collapse Led to the Atlantic Slave Trade',
-    intro: 'Causation means explaining chains of causation, how one event caused another, which caused another. For Topic 4.3, one of the most important causal chains is: European contact → disease → demographic collapse → labor shortage → Atlantic slave trade. A strong causal argument traces this chain explicitly, explaining each link rather than just asserting the outcome.',
+    label: 'Claims and Evidence in Sources practice',
+    title: 'Claims and Evidence: What Did the Writer Use to Prove It?',
+    intro: 'Claims and Evidence in Sources means finding the argument a source makes and the evidence it uses to support that argument. The claim is what the writer wants you to believe. The evidence is what the writer gives you so that you will believe it. Practice first with José de Acosta, a Spanish priest who had lived in Peru and Mexico, writing in 1590 about the animals Spain had carried to the Americas.',
     steps: [
-      { label: 'Identify the first cause', text: 'European contact introduced Old World diseases, primarily smallpox, to populations that had no prior immunity. Virgin soil epidemics killed an estimated 50–90% of the indigenous American population within a century of contact. The demographic collapse was the primary cause: disease killed more people than military conquest.' },
-      { label: 'Explain the intermediate effect', text: 'The demographic collapse created a massive labor shortage. European colonists had come to the Americas to extract wealth, through mining, agriculture, and plantation work. The encomienda system, which had granted colonists rights to indigenous labor, became unworkable as indigenous populations collapsed. Colonists needed workers; the labor pool had been decimated.' },
-      { label: 'Connect to the final outcome', text: 'The labor shortage drove demand for enslaved African workers. African enslavement was not inevitable, it was the response to a specific labor crisis created by epidemic disease. Over three centuries, approximately 12 million Africans were forcibly transported to the Americas to supply the labor that demographic collapse had eliminated. This causal chain, contact → disease → collapse → slave trade, is one of the most consequential in world history.' }
+      { label: 'Read the source', text: '<blockquote>"These wild cattle have so multiplied in Santo Domingo and thereabouts that they troop together in the fields and woods by thousands, having no master to whom they belong. They hunt these beasts only for their hides. ... The hides they bring into Spain are one of the best revenues of the islands and of New Spain. In the fleet, the year 1587, there came from Santo Domingo 35,444 hides, and from New Spain 64,350."</blockquote><small>José de Acosta, <em>Natural and Moral History of the Indies</em> (Seville, 1590), Book 4, chapter 33, in the English translation of 1604, spelling modernized. New Spain is Spanish Mexico.</small>' },
+      { label: 'Find the claim', text: 'Acosta\'s claim: cattle brought from Spain have multiplied so much in the Caribbean and Mexico that they run wild, and their hides have become a source of wealth.' },
+      { label: 'Find the evidence', text: 'Acosta gives two kinds of evidence. First, what he describes: wild herds "by thousands" with no owner. Second, numbers from a real record: one fleet in 1587 carried 35,444 hides from Santo Domingo and 64,350 from New Spain, almost a hundred thousand in all.' },
+      { label: 'Ask how strong it is', text: 'Acosta did not count the cattle. He counted hides that reached Spain. That still supports his claim, because a few cattle could never have filled one fleet with almost a hundred thousand hides. A number from a record is harder to argue with than a description.' }
     ],
-    prompt: 'In 3–4 sentences, explain the causal chain connecting the Columbian Exchange to the Atlantic slave trade. Trace at least three steps in the chain, explain the mechanism at each step, and explain why the Atlantic slave trade was a consequence of the demographic collapse rather than an independent development.'
+    prompt: 'Now do it yourself with a different source. In the 1740s, an album made for a Qing official in Taiwan said this about the sweet potato, a plant first grown in the Americas (translated for this lesson): "It can be eaten raw or cooked, and also ground into flour. It is planted very widely in Taiwan; settlers and Indigenous people rely on it for food. It is truly a help in years of bad harvest." In 2 to 3 sentences, state the claim this source makes, and identify TWO pieces of evidence it uses to support that claim.',
+    criteria: [
+      'I stated the claim in my own words: what the writer wants me to believe.',
+      'I named TWO pieces of evidence the source itself gives, not facts from somewhere else.',
+      'I explained how one piece of evidence supports the claim.'
+    ]
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: Crops, Animals, and the Exchange',
-      subtitle: 'Checks Learning Target 1 and Success Criteria 1.',
-      cardDesc: 'Potatoes, maize, horses, sugarcane, the biological transfers that transformed diets and economies on both sides of the Atlantic.',
-      learningTargets: [lesson.learningTargets[0].target],
-      successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Identify at least TWO crops transferred from the New World to the Old World and ONE animal or crop transferred from the Old World to the New World. For each, explain the long-term consequence of the transfer, what changed in the receiving region, and why?',
+      title: 'Checkpoint 1: The Cargo Nobody Chose',
+      subtitle: 'Checks Learning Target 2 and Success Criteria 2.',
+      cardDesc: 'Why diseases from the Eastern Hemisphere were so deadly in the Americas.',
+      learningTargets: [lesson.learningTargets[1].target],
+      successCriteria: [lesson.successCriteria[1].criteria],
+      prompt: 'Name ONE disease and ONE disease vector (an animal that carries disease) that crossed the Atlantic from the Eastern Hemisphere. Then explain TWO reasons these diseases had catastrophic effects in many parts of the Americas: one about whether people had had the disease before, and one about the conditions people were living in.',
       responseType: 'Checkpoint 1',
-      terms: ['potato', 'maize', 'tomato', 'cacao', 'tobacco', 'horse', 'cattle', 'sugarcane', 'wheat', 'cassava'],
-      focus: ['Name at least two New World crops moving east and one Old World introduction moving west.', 'For each, explain the specific long-term consequence in the receiving region.', 'Explain WHY the transfer had that consequence, connect crop to demographic or economic outcome.']
+      terms: ['smallpox', 'measles', 'malaria', 'disease vector', 'rats', 'mosquitoes', 'epidemic', 'immunity', 'Tenochtitlan', 'war', 'forced labor', 'hunger'],
+      focus: ['Name one disease and one disease vector.', 'Give one reason about exposure: nobody had had these diseases before, so nobody was immune.', 'Give one reason about conditions: war, forced labor, hunger, or everyone falling sick at once.']
     },
     {
-      title: 'Checkpoint 2: Disease, Two-Way Transfer, and Demographic Effects',
-      subtitle: 'Checks Learning Targets 2–3 and Success Criteria 2–3.',
-      cardDesc: 'Disease vectors, epidemic vulnerability, Old World introductions, African foodways, and American staple crops.',
-      learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
-      successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: 'Explain why Eastern Hemisphere diseases were catastrophic for many Indigenous American populations, including the role of disease vectors or lack of prior exposure. Then explain TWO additional Columbian Exchange consequences: one Old World-to-Americas transfer, such as horses, cattle, sugar, rice, or okra, and one American crop moving to Afro-Eurasia. For each transfer, explain a demographic, nutritional, economic, or environmental effect.',
+      title: 'Checkpoint 2: What Crossed, and What It Did',
+      subtitle: 'Checks Learning Targets 1 and 3 and Success Criteria 1 and 3.',
+      cardDesc: 'The cause of the Columbian Exchange, and one effect on each side of the Atlantic.',
+      learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[2].target],
+      successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[2].criteria],
+      prompt: 'Explain what caused the Columbian Exchange. Then explain TWO effects. ONE effect in the Americas, from an animal or crop Europeans brought (such as horses, pigs, cattle, or sugarcane) or a food enslaved Africans brought (such as rice or okra). ONE effect in Afro-Eurasia, from an American crop (such as maize, potatoes, cassava, or sweet potatoes). For each effect, say which people it affected and how.',
       responseType: 'Checkpoint 2',
-      terms: ['smallpox', 'measles', 'malaria', 'mosquitoes', 'rats', 'demographic collapse', 'horses', 'cattle', 'sugar', 'rice', 'okra', 'maize', 'potato', 'cassava', 'nutrition'],
-      focus: ['Explain disease vulnerability and include a disease vector or specific pathogen.', 'Explain one Old World-to-Americas transfer and its consequence.', 'Explain one American crop moving east and its nutritional or demographic consequence.']
+      skill: 'Causation',
+      terms: ['Columbian Exchange', 'on purpose', 'by accident', 'horses', 'pigs', 'cattle', 'sugarcane', 'cash crop', 'plantation', 'coerced labor', 'rice', 'okra', 'maize', 'potatoes', 'cassava', 'sweet potatoes', 'staple crop', 'nutrition'],
+      focus: ['State the cause: ships crossing the Atlantic and coming back, carrying living things on purpose and by accident.', 'Give one effect in the Americas, with a specific animal, crop, or food and the people it affected.', 'Give one effect in Afro-Eurasia, with a specific American crop and what it did for nutrition or population.']
     }
   ];
 
   lesson.evidenceLab = {
-    title: 'Evidence Lab: Unequal Exchanges and Unequal Consequences',
-    task: 'Choose TWO cards that represent different dimensions of the Columbian Exchange: crop/animal movement, epidemic disease, or environmental and demographic change. First establish what each source directly shows, then build a causal or consequence claim about biological exchange.',
-    prompt: 'Using two evidence cards of different types, make one claim about how the Columbian Exchange transformed populations, environments, labor systems, or colonial society. Cite one concrete detail from each source and explain why the two pieces of evidence together support a stronger claim than either source alone.'
+    title: 'Evidence Lab: What Crossed, and What It Did',
+    task: 'Choose TWO cards: one about something that crossed to the Americas, and one about the American crops (in the Americas, or after they traveled to Europe or Asia). For each, say what kind of source it is, who made it and when, and what it directly shows.',
+    prompt: 'Using your two cards, make one claim about the effects of the Columbian Exchange on the two hemispheres. For each card, give one detail you can see, explain how it supports your claim, and name one thing the source cannot tell you.'
   };
 
   lesson.images = [
     {
-      title: 'Columbian Exchange Reference Map',
-      url: '../assets/images/instructional-maps/topic-4-3.svg',
-      sourceUrl: '../assets/images/instructional-maps/topic-4-3.svg',
-      caption: 'Secondary systems evidence. The BeHistorical reference map traces major movements of crops, animals, people, and disease between hemispheres.',
-      prompt: 'NOTICE which exchanges move in each direction and which do not. What broad pattern can you INFER about asymmetry in the Columbian Exchange? What can a systems map not reveal about individual experiences?'
+      title: 'A Nahua Healer and Smallpox Patients, Florentine Codex',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Healer%20%28ticitl%29%20tending%20to%20people%20suffering%20from%20smallpox%20in%201520%20in%20Book%2012%20of%20the%20Florentine%20Codex%2C%201577.jpg?width=1200',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Healer_(ticitl)_tending_to_people_suffering_from_smallpox_in_1520_in_Book_12_of_the_Florentine_Codex%2C_1577.jpg',
+      caption: 'Painted by Nahua artists for Book 12 of the Florentine Codex, completed about 1577, more than fifty years after the 1520 smallpox epidemic in Tenochtitlan. A Spanish friar, Bernardino de Sahagún, directed the project; Nahua elders supplied the account.',
+      prompt: 'NOTICE what covers the skin of the people on the right, and what the healer on the left is doing. INFER what this picture suggests about how the disease affected a whole household or city. What can a picture made fifty years later not tell you?'
     },
     {
-      title: 'Smallpox in the Florentine Codex, 16th Century',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:FlorentineCodex_BK12_F54_smallpox.jpg',
-      caption: 'Indigenous-centered epidemic evidence. A panel in the Florentine Codex, compiled in the 16th century with Nahua informants, depicts people suffering from smallpox in central Mexico.',
-      prompt: 'NOTICE the bodily and social effects shown. What can you INFER about the human impact of epidemic disease? What perspective makes this different from a European conquest narrative?'
+      title: 'A Sugar Mill in Dutch Brazil, Frans Post, 1660s',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Frans%20Post%20-%20Engenho%20de%20A%C3%A7%C3%BAcar%20%28Dublin%29.jpg?width=1200',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Frans_Post_-_Engenho_de_A%C3%A7%C3%BAcar_(Dublin).jpg',
+      caption: 'Oil painting by Frans Post, a Dutch artist who lived in Dutch-ruled northeastern Brazil from 1637 to 1644 and painted its sugar plantations for buyers in Europe for years after he went home. National Gallery of Ireland.',
+      prompt: 'NOTICE the mill on the right, the ox cart, and the people working beside them, then NOTICE the house on the hill. INFER who did the work on this plantation and who owned it. What might a painting made to sell in Europe leave out?'
     },
     {
-      title: 'Cerro Rico at Potosí, 1552',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cerro_de_Potos%C3%AD._Grabado_en_madera%2C_del_libro_Cr%C3%B3nica_del_Per%C3%BA%2C_1552%2C_de_Pedro_Cieza_de_Le%C3%B3n.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Cerro_de_Potos%C3%AD._Grabado_en_madera,_del_libro_Cr%C3%B3nica_del_Per%C3%BA,_1552,_de_Pedro_Cieza_de_Le%C3%B3n.jpg',
-      caption: 'Extractive-economy evidence. A 1552 woodcut from Pedro Cieza de León\'s Crónica del Perú represents Cerro Rico, the silver mountain around which colonial Potosí developed.',
-      prompt: 'NOTICE how the mountain and settlement are represented. What can you INFER about the scale of colonial interest in mineral extraction? What labor-system evidence would you need to connect the image specifically to mita coercion?'
+      title: 'The July Harvest in the Andes, Guamán Poma, 1615',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Guam%C3%A1n%20Poma%201615%201150%20julio.png?width=1200',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Guam%C3%A1n_Poma_1615_1150_julio.png',
+      caption: 'Drawing by Felipe Guamán Poma de Ayala, an Andean nobleman, from the illustrated chronicle he addressed to the King of Spain about 1615. The Quechua heading names July as the month for carrying the harvested maize (sara) and potatoes (papa) to storage.',
+      prompt: 'NOTICE what the people are carrying and where they are taking it. INFER how important these two crops were to the people who drew and lived this scene. Which of these crops would later travel to Afro-Eurasia, and why might it have been welcome there?'
     },
     {
-      title: 'Casta Painting Series',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Casta_painting_all.jpg',
-      caption: 'Later colonial social-order evidence. Casta paintings from Spanish America categorized families by ancestry and status, reflecting elite efforts to represent colonial hierarchy.',
-      prompt: 'NOTICE the systematic labeling and ordering of people. What can you INFER about how colonial society racialized ancestry after sustained Atlantic mixing? What does an elite genre of painting hide about everyday mobility and resistance?'
+      title: '"Turkie Corne" in an English Herbal, 1597',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Frumentum%20turcicum%20Gerard%201597%2075.png?width=1200',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Frumentum_turcicum_Gerard_1597_75.png',
+      caption: 'A page of John Gerard\'s The Herball or Generall Historie of Plantes, printed in London in 1597. It pictures maize, a plant first grown in the Americas, under the names "Turkie Corne" and "Turkie Wheate."',
+      prompt: 'NOTICE the names Gerard gives this plant. INFER what those names suggest about how much English readers knew about where maize came from. What does a book about plants show, and what can it not show about who was eating maize?'
+    },
+    {
+      title: 'Sweet Potatoes in a Qing Album of Taiwan, 1740s',
+      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/%E7%95%AA%E8%96%AF%E3%80%81%E9%A6%99%E5%93%A1%E3%80%81%E7%95%AA%E6%9F%BF%E3%80%81%E8%91%AB%E8%98%86%E3%80%81%E7%81%A3%E8%B1%86.jpg?width=1200',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:%E7%95%AA%E8%96%AF%E3%80%81%E9%A6%99%E5%93%A1%E3%80%81%E7%95%AA%E6%9F%BF%E3%80%81%E8%91%AB%E8%98%86%E3%80%81%E7%81%A3%E8%B1%86.jpg',
+      caption: 'From an album of Taiwan\'s plants and customs painted for 六十七 (Liushiqi), a Qing official sent to inspect Taiwan in the 1740s. The note beside the red tubers labeled 番薯 (fanshu, "foreign tuber") says, in a translation made for this lesson: "It is planted very widely in Taiwan; settlers and Indigenous people rely on it for food. It is truly a help in years of bad harvest."',
+      prompt: 'NOTICE what the label calls this plant and what the note says people use it for. INFER what the name "foreign tuber" suggests about where the plant came from. How could this source support a claim about American crops and nutrition in Asia?'
     }
   ];
 })();

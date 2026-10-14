@@ -871,22 +871,35 @@ module.exports = [
   {
     id: 'topic-4-3',
     code: 'Topic 4.3',
-    title: 'The Columbian Exchange: Flows Between Hemispheres',
-    subtitle: 'Topic 4.3 \u00b7 What moved, and which way',
+    title: 'What the Ships Carried, and Which Way',
+    subtitle: 'Topic 4.3 \u00b7 The Columbian Exchange',
+    // Rebuilt 2026-10-14 from the 4.3 story: arrows show the three ways things
+    // crossed (on purpose, by accident, by force) and American crops going east
+    // to Europe and Africa. Silver (4.5) and rubber (a later export crop) are
+    // gone. The route by which American crops reached China ran through the
+    // Philippines and Southeast Asia, off this map's arrows, so a point and the
+    // note carry it rather than an invented arrow.
     highlights: [
-      { zone: 'europe', label: 'EASTERN HEMISPHERE', tone: 'slate', legend: 'Old World: wheat, sugar, horses, cattle, smallpox, measles' },
-      { zone: 'westAfrica', label: 'WEST AFRICA', tone: 'sand', legend: 'West Africa: rice, okra, and enslaved people forced west' },
-      { zone: 'mexico', label: 'MESOAMERICA', tone: 'gold', legend: 'Maize, beans, tomatoes, cacao, vanilla' },
-      { zone: 'andes', label: 'ANDES', tone: 'bronze', legend: 'Potatoes, quinoa, silver' },
-      { zone: 'brazil', label: 'AMAZONIA', tone: 'sage', legend: 'Manioc, rubber, tobacco' }
+      { zone: 'europe', label: 'EUROPE', tone: 'slate', legend: 'Europe: horses, cattle, pigs, wheat' },
+      { zone: 'westAfrica', label: 'WEST AFRICA', tone: 'sand', legend: 'West Africa: rice and okra' },
+      { zone: 'mexico', label: 'MEXICO', tone: 'gold', legend: 'Mexico: maize, tomatoes, cacao' },
+      { zone: 'andes', label: 'ANDES', tone: 'bronze', legend: 'Andes: potatoes and maize' },
+      { zone: 'brazil', label: 'BRAZIL', tone: 'sage', legend: 'Brazil: cassava; sugar plantations' }
     ],
     flows: [
-      { from: 'mexico', to: 'europe', label: 'American crops east' },
-      { from: 'europe', to: 'mexico', label: 'Eurasian animals, crops, and disease west', bow: -0.28 },
-      { from: 'westAfrica', to: 'brazil', label: 'enslaved Africans forced west', bow: -0.16 },
-      { from: 'andes', to: 'eastAsia', label: 'silver across the Pacific', bow: 0.3 }
+      { from: [-8, 38], via: [[-35, 30]], to: [-70, 20], label: 'West: animals, crops, germs' },
+      { from: [-12, 10], via: [[-28, 2]], to: [-37, -8], label: 'West by force: enslaved Africans' },
+      { from: [-75, 26], via: [[-40, 42]], to: [-9, 46], label: 'East: maize, potatoes' },
+      { from: [-35, -10], via: [[-12, -14]], to: [11, -6.5], label: 'Cassava to Central Africa' }
     ],
-    note: 'BeHistorical instructional map. Arrows show direction of exchange, not specific voyages; coastlines are simplified for classroom projection.'
+    points: [
+      { at: [-99.1, 19.4], label: 'Tenochtitlan', note: 'smallpox, autumn 1520', side: 'left' },
+      { at: [-69.9, 18.5], label: 'Santo Domingo', note: 'sugar and cattle' },
+      { at: [-8, 53], label: 'Ireland', note: 'potato a main food by the 1700s', side: 'left' },
+      { at: [12.3, -6.0], label: 'Mouth of the Congo', note: 'cassava from Brazil' },
+      { at: [118.6, 25.5], label: 'Fujian, China', note: 'sweet potato promoted, 1594' }
+    ],
+    note: 'BeHistorical instructional map. Arrows show the direction things moved, not single voyages; coastlines are simplified. Sweet potatoes reached southern China from the Philippines by the 1590s, outside this map\'s arrows.'
   },
   {
     id: 'topic-4-4',

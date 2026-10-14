@@ -30,43 +30,43 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 4: Transoceanic Interconnections",
     topic: "Topic 4.3",
     title: "Columbian Exchange",
-    subtitle: "How contact between Eastern and Western Hemispheres after 1492 transferred plants, animals, diseases, and people — and produced the largest demographic catastrophe in human history",
+    subtitle: "What the ships carried across the Atlantic after 1492, on purpose, by accident, and by force, and how it remade populations on both sides of the ocean",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 
   learningTargets: [
     {
-      target: "I can explain how the Columbian Exchange transferred new crops and animals between hemispheres and assess how these transfers changed diets, economies, and population patterns.",
-      kc: 'KC-4.1.V.B; KC-4.1.V.C',
+      target: "I can explain what caused the Columbian Exchange: ships crossing the Atlantic and coming back, carrying plants, animals, and germs, some on purpose and some by accident.",
+      kc: 'KC-4.1.V',
       theme: "Humans and the Environment"
     },
     {
-      target: "I can describe the catastrophic impact of Old World diseases on indigenous American populations and explain why those populations were so vulnerable to European pathogens.",
+      target: "I can explain why diseases from the Eastern Hemisphere, carried with disease vectors such as rats and mosquitoes, had catastrophic effects on many Indigenous populations in the Americas.",
       kc: 'KC-4.1.V.A',
       theme: "Humans and the Environment"
     },
     {
-      target: "I can explain the two-way biological and environmental consequences of the Columbian Exchange, including disease vectors and diseases, Afro-Eurasian crops and animals introduced to the Americas, foods carried by enslaved Africans, and the nutritional effects of American crops in Afro-Eurasia.",
-      kc: 'KC-4.1.V; KC-4.1.V.C; KC-4.1.V.D',
+      target: "I can explain the effects of the exchange on both hemispheres: Afro-Eurasian animals and crops and foods brought by enslaved Africans in the Americas, cash crops grown on plantations with coerced labor, and American staple crops that improved nutrition in Afro-Eurasia.",
+      kc: 'KC-4.1.V.B; KC-4.1.V.C; KC-4.1.V.D',
       theme: "Humans and the Environment"
     }
   ],
 
   successCriteria: [
     {
-      criteria: "I can name at least two crops transferred from the New World to the Old World and two transferred from the Old World to the New, and explain the long-term consequences of each transfer.",
-      kc: 'KC-4.1.V.B; KC-4.1.V.C',
+      criteria: "I can state the cause of the Columbian Exchange and give one thing that crossed on purpose and one that crossed by accident.",
+      kc: 'KC-4.1.V',
       theme: "Humans and the Environment"
     },
     {
-      criteria: "I can explain the concept of a 'virgin soil epidemic' and explain why indigenous American populations lacked immunity to Old World diseases, and connect this to population collapse estimates.",
+      criteria: "I can name a disease and a disease vector, and give two reasons these diseases were so deadly in the Americas, including one about the conditions people lived in, such as war, forced labor, or hunger.",
       kc: 'KC-4.1.V.A',
       theme: "Humans and the Environment"
     },
     {
-      criteria: "I can identify disease vectors as well as diseases, explain at least two Old World-to-Americas transfers including a crop, animal, or food carried by enslaved Africans, and explain how American staple crops affected nutrition or population in Afro-Eurasia.",
-      kc: 'KC-4.1.V; KC-4.1.V.C; KC-4.1.V.D',
+      criteria: "I can explain one effect in the Americas and one in Afro-Eurasia, each with a specific animal, crop, or food and the people it affected.",
+      kc: 'KC-4.1.V.B; KC-4.1.V.C; KC-4.1.V.D',
       theme: "Humans and the Environment"
     }
   ],
@@ -111,112 +111,125 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: "The Great Exchange: Crops, Disease, and Global Transformation",
-    intro: "Use these cards to explain the Columbian Exchange as a two-way biological process: crops, animals, disease vectors, and diseases moved between hemispheres, producing unequal but far-reaching demographic, nutritional, and environmental consequences.",
+    title: "What the Ships Carried: The Columbian Exchange, 1492 to 1750",
+    intro: "Use these cards after the First & 10. Each one answers the topic's question for one part of the story: what crossed the Atlantic, how it crossed, and what it did to the people at the other end.",
     videos: [],
     segments: [
       {
-        title: "Crops and Animals: A World Transformed",
+        title: "Why It Happened: Ships That Came Back",
         bullets: [
-          "**New World crops moving east** transformed Afro-Eurasian agriculture and demographics. The **potato**, calorie-dense, easily grown in cool northern climates, became a dietary staple in Ireland, Germany, and Russia, supporting population growth in regions where wheat had struggled. **Maize** (corn) became a staple across sub-Saharan Africa and parts of China, providing calories in environments where other grains were unreliable. **Tomatoes** transformed Italian and Mediterranean cuisine. **Cacao** became chocolate. **Tobacco** became a global commodity.",
-          "**Old World introductions moving west** transformed the Americas with equal force. The **horse**, absent from the Americas since the Ice Age, arrived with the Spanish and within a century had been adopted by indigenous Plains peoples, transforming cultures like the Comanche, Lakota, and Cheyenne into highly mobile equestrian societies based on buffalo hunting. **Cattle, pigs, and sheep** provided new protein sources but also consumed native vegetation, beginning the transformation of American grasslands.",
-          "**Sugarcane**, originally from New Guinea, cultivated across the Islamic world, introduced to the Americas by Columbus, proved enormously profitable in Caribbean and Brazilian plantations. Sugar's profitability drove demand for intensive labor that indigenous populations could not supply (due to demographic collapse) and created the primary economic engine of the Atlantic slave trade.",
-          "The crop exchange was not symmetric in its effects: New World crops generally increased populations in regions where they spread, while Old World introductions (especially animals and pathogens) decimated populations in the Americas. The net demographic effect of the Columbian Exchange was to dramatically increase Afro-Eurasian populations over the long term while devastating the Americas in the short and medium term."
+          "Since the end of the last Ice Age, about eleven thousand years ago, ocean had kept the Americas apart from Africa, Asia, and Europe. Each side grew its own crops, kept its own animals, and lived with its own diseases. The Americas had **maize, potatoes, cassava, tomatoes, cacao, and tobacco**, but no horses, cattle, or pigs. Afro-Eurasia had **wheat, rice, sugarcane, horses, cattle, pigs, and sheep**, and diseases such as **smallpox and measles**.",
+          "The cause of the **Columbian Exchange** is a new connection: after 1492, ships crossed the Atlantic and came back, again and again, as Europeans built colonies. Everything that rode those ships crossed too. The historian Alfred Crosby named the exchange in 1972.",
+          "Things crossed in three ways. **On purpose:** Columbus's second voyage, in 1493, carried horses, cattle, pigs, wheat seed, and sugarcane. **By accident:** germs, rats in the cargo, and, most likely, mosquito eggs in water barrels. Animals that carry disease from person to person are **disease vectors**. **By force:** enslaved Africans brought foods from home.",
+          "Keep the College Board's word in mind: the disease vectors and diseases moved **unintentionally**. The ships carried more than anyone meant them to."
         ],
         image: {
-          title: "Waldseemüller Map — the world before and after contact",
-          caption: "The 1507 Waldseemüller map represents the moment just before the full consequences of transoceanic contact became apparent. Within decades of this map, the biological exchanges it set in motion would transform every ecosystem on earth.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg"
-        }
-      },
-      {
-        title: "The Catastrophe: Disease and Demographic Collapse",
-        bullets: [
-          "The most devastating consequence of hemispheric contact was disease. Afro-Eurasian populations had lived with **smallpox, measles, influenza, typhus, and bubonic plague** for millennia, and while these diseases were deadly, most populations had acquired some degree of immunity through generations of exposure. Indigenous American populations had no such exposure, no immunity, no evolved defenses, no prior encounter with any of these pathogens.",
-          "A **'virgin soil epidemic'** occurs when a disease enters a population with no prior exposure: the disease spreads explosively and kills at far higher rates than in populations with any immunity. Smallpox in an unexposed population could kill 30–50% of everyone it infected. When multiple diseases arrived simultaneously, as happened in the Americas after 1492, the cumulative death toll was catastrophic.",
-          "**Tenochtitlan, 1520**: a smallpox epidemic brought by soldiers in Hernán Cortés's army swept through the Aztec capital before the Spanish military conquest was complete. The disease killed Emperor Cuitláhuac (who died of smallpox eighty days after taking power) and devastated the city's population and its ability to organize resistance. The siege of Tenochtitlan in 1521 was in significant part completed against a population already weakened by epidemic disease.",
-          "The scale of the catastrophe defies easy comprehension: historians estimate that **50–90% of indigenous American populations died within the century following European contact**, from a pre-contact population that may have been 50–70 million people. This demographic collapse was not primarily caused by European military violence; it was caused by pathogens that traveled invisibly ahead of any army, killing populations that had no defense against them."
-        ],
-        image: {
-          title: "Florentine Codex — Smallpox in Tenochtitlan",
-          caption: "An illustration from the Florentine Codex (compiled c. 1550–1580), depicting the smallpox epidemic in Tenochtitlan. This indigenous Nahuatl source, compiled by Aztec informants under the direction of Friar Sahagún, provides one of the most direct accounts of the epidemic's devastation.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg"
-        }
-      },
-      {
-        title: "Two Hemispheres, Unequal Biological Consequences",
-        bullets: [
-          "Disease transfer included not only pathogens such as **smallpox, measles, and malaria** but also disease vectors such as **mosquitoes and rats**. Indigenous American populations suffered catastrophic losses because many communities had no previous exposure to these diseases.",
-          "Afro-Eurasian transfers to the Americas included **horses, cattle, pigs, wheat, sugar, rice, and fruit trees**. Enslaved Africans also carried foodways and crops such as **okra and rice**, helping reshape agriculture and cuisine in the Americas.",
-          "American foods moving east — including **maize, potatoes, cassava, and sweet potatoes** — increased dietary diversity and calorie availability in parts of Europe, Africa, and Asia, supporting population growth in some regions.",
-          "Keep the Topic 4.3 mechanism biological and environmental: **transfer -> adaptation or vulnerability -> demographic, nutritional, or ecological consequence**. Silver circulation and the detailed organization of Atlantic labor belong in later Unit 4 topics."
-        ],
-        image: {
-          title: "Columbian Exchange reference map",
-          caption: "The exchange moved crops, animals, people, disease vectors, and diseases in both directions, but the consequences were highly unequal.",
+          title: "What Crossed, and Which Way",
+          caption: "A modern BeHistorical map, not a source from the time. Arrows show the direction plants, animals, germs, and people moved, not single voyages.",
           url: "../assets/images/instructional-maps/topic-4-3.svg",
           sourceUrl: "../assets/images/instructional-maps/topic-4-3.svg"
+        }
+      },
+      {
+        title: "Going West by Accident: Disease and Its Causes",
+        bullets: [
+          "**Smallpox** reached the Caribbean in 1518 and Mexico in 1520. Measles followed, and malaria, carried by mosquitoes, came with Europeans and enslaved Africans. These diseases had circulated in Afro-Eurasia for a long time; in the Americas they were new.",
+          "In June 1520 the people of **Tenochtitlan** drove the Spaniards out of their city. That autumn smallpox swept through it. The Nahua account later written down for the friar Bernardino de Sahagún says the sickness lasted sixty days, that many \"just starved to death,\" and that \"the Mexica warriors were greatly weakened by it\" when the Spaniards returned to besiege the city in 1521.",
+          "Why so deadly? **First**, nobody in the Americas had had these diseases before, so no adult had survived them and become immune, and almost everyone fell sick at the same time, leaving nobody to farm, cook, or care for the sick. **Second**, the diseases came with war, forced labor, hunger, and people driven from their homes. The historian David S. Jones argues that conditions like these, created by colonization, shaped how many people died. It is a myth that Indigenous Americans were simply born weak.",
+          "Historians argue about the numbers. One careful estimate is that central Mexico fell from about 15 million people in 1519 to about 1.5 million a century later, and many regions lost most of their people. The College Board's words are \"catastrophic effects in many areas.\""
+        ],
+        image: {
+          title: "A Nahua Healer and Smallpox Patients",
+          caption: "From Book 12 of the Florentine Codex, painted by Nahua artists and completed about 1577, decades after the 1520 epidemic.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Healer%20%28ticitl%29%20tending%20to%20people%20suffering%20from%20smallpox%20in%201520%20in%20Book%2012%20of%20the%20Florentine%20Codex%2C%201577.jpg?width=1200",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Healer_(ticitl)_tending_to_people_suffering_from_smallpox_in_1520_in_Book_12_of_the_Florentine_Codex%2C_1577.jpg"
+        }
+      },
+      {
+        title: "Going West on Purpose and by Force: Animals, Sugar, Rice, and Okra",
+        bullets: [
+          "**Pigs and cattle** multiplied fast. José de Acosta reported in 1590 that wild cattle on Santo Domingo roamed \"by thousands,\" and that one fleet in 1587 carried almost a hundred thousand cattle hides to Spain from the Caribbean and Mexico. In one valley of central Mexico, sheep grazed the hillsides bare.",
+          "**Horses** had died out in the Americas thousands of years earlier. Brought back by the Spanish, they spread north, and by the early 1700s Great Plains peoples such as the **Comanche** had built new ways of life on horseback. An effect of the exchange could be an opportunity as well as a disaster.",
+          "**Enslaved Africans**, carried across the Atlantic by force, brought foods such as **rice and okra**, and many knew how to grow rice. Okra was growing in Brazil by the 1650s.",
+          "**Sugarcane** came from Afro-Eurasia but grew best in the Caribbean and Brazil. Europeans grew it as a **cash crop** on **plantations** worked by **coerced labor**, overwhelmingly enslaved Africans, and shipped most of it to Europe. Before 1492, Europeans had already grown sugar with enslaved workers on Atlantic islands such as Madeira, so disease alone did not cause African slavery in the Americas. How that forced labor worked is Topic 4.4."
+        ],
+        image: {
+          title: "A Sugar Mill in Dutch Brazil",
+          caption: "Oil painting by the Dutch artist Frans Post, 1660s, painted in the Netherlands for European buyers after his years in Brazil. National Gallery of Ireland.",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Frans%20Post%20-%20Engenho%20de%20A%C3%A7%C3%BAcar%20%28Dublin%29.jpg?width=1200",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Frans_Post_-_Engenho_de_A%C3%A7%C3%BAcar_(Dublin).jpg"
+        }
+      },
+      {
+        title: "Going East: New Staple Crops and Better Nutrition",
+        bullets: [
+          "American crops became **staple crops**, the main everyday foods, in parts of Europe, Asia, and Africa because they grew where the old crops struggled: **maize** on dry land, **potatoes** in cold, wet ground, **cassava** in poor soil and drought, **sweet potatoes** on hillsides too steep for rice.",
+          "In southern China, officials promoted the sweet potato in 1594, a famine year. By the 1740s, an album made for a Qing official in Taiwan called it \"truly a help in years of bad harvest.\" Near the mouth of the Congo River, Portuguese traders brought cassava from Brazil, and farmers took it up because it survived drought and locusts. In Ireland, the potato had become a main food by the 1700s.",
+          "**Nutrition** means how well food feeds the body. More food, more kinds of food, and a fallback when the old harvest failed meant better nutrition, and over two centuries these crops helped populations grow in China, Africa, and Europe.",
+          "Put both directions together: one connection, two very different results. In the Americas, catastrophic disease and land remade by new animals and plantations. In Afro-Eurasia, new staple crops and better nutrition."
+        ],
+        image: {
+          title: "\"Turkie Corne\" in an English Herbal, 1597",
+          caption: "A page of John Gerard's herbal, printed in London in 1597, picturing maize under the name \"Turkie Corne.\"",
+          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Frumentum%20turcicum%20Gerard%201597%2075.png?width=1200",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Frumentum_turcicum_Gerard_1597_75.png"
         }
       }
     ]
   },
 
   map: {
-    title: "The Columbian Exchange: Flows Between Hemispheres",
+    title: "What the Ships Carried, and Which Way",
     url: "../assets/images/instructional-maps/topic-4-3.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-4-3.svg",
-    caption: "A world map showing the major regions involved in the Columbian Exchange. Use this to trace the flows of crops (New World to Old), animals (Old World to New), diseases (Old World to New), and people (Africa to Americas via forced migration).",
-    intro: "Use the world map to visualize the geographic scope of the Columbian Exchange. Consider how the Atlantic Ocean, once a barrier that had separated the hemispheres for 10,000 years, became a highway for the transfer of plants, animals, diseases, and people after 1492. Notice that the flows were not symmetric: crops generally moved in both directions, but disease moved overwhelmingly from east to west, and enslaved people moved overwhelmingly from Africa to the Americas.",
-    prompt: "Using the map, trace the three most consequential transfers of the Columbian Exchange: New World crops moving east, Old World diseases moving west, and enslaved Africans moving west. For each, identify the source region, the destination region, and the major consequence."
+    caption: "A modern BeHistorical map, not a source from the time. Arrows show the direction plants, animals, germs, and people moved, not single voyages.",
+    intro: "Use the map to see the Columbian Exchange as movement in two directions across the Atlantic. Arrows 1 and 2 go west to the Americas; arrows 3 and 4 go east to Europe and Africa. The black dots mark five places where you can see the exchange at work.",
+    prompt: "Using the map, trace one arrow going west and one going east. For each, say what moved, how it crossed (on purpose, by accident, or by force), and what it did to the people at the other end. Which part of the exchange does the map not draw as an arrow, and where on the map does it tell you about it?"
   },
 
   deepReading: {
     title: "The Exchange Nobody Negotiated",
-    desc: "A textbook-depth companion on why the catastrophe fell where it did, with the biology of a virgin soil epidemic done properly, an honest account of contested numbers, what crossed in each direction, and the six decisions that run from a labor vacuum to the Middle Passage. Optional, and the place to go if you have ever written that a population had no immunity without being able to say why.",
+    desc: "An optional, deeper companion: where these diseases came from and why they were so deadly here, how historians argue about the numbers, what crossed in each direction, and what Indigenous peoples did with what arrived.",
     url: "deep-reading-topic-4-3-columbian-exchange.html"
   },
 
   first10: {
-    title: 'First & 10: The Great Exchange',
+    title: 'First & 10: What the Ships Carried',
     embedUrl: 'first-and-10-topic-4-3-columbian-exchange-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 4.3 lesson path.'
+    note: 'Read the First & 10 narrative, answer the three questions, then return to the 4.3 lesson path.'
   },
 
   evidenceLab: {
-    title: "Evidence Lab: Disease, Demographics, and the Logic of the Exchange",
-    intro: "Use the evidence below to analyze specific consequences of the Columbian Exchange. Strong historical analysis connects individual pieces of evidence to broader patterns, disease to demographic collapse, demographic collapse to labor shortage, labor shortage to the slave trade.",
-    prompt: "Choose one piece of evidence and explain how it illustrates a specific consequence of the Columbian Exchange. Connect your evidence to a broader historical argument about how the exchange transformed global demographics, economics, or social structures.",
-    items: [
-      { title: "Florentine Codex — indigenous account of smallpox in Tenochtitlan", detail: "Evidence of the disease catastrophe from an indigenous Nahuatl perspective, compiled by Aztec informants under Friar Sahagún. This source describes the physical symptoms and the social chaos of epidemic, bodies too numerous to bury, healers unable to treat what they had never seen before. Evaluate both what this source reveals and what it represents as an act of indigenous historical documentation." },
-      { title: "Potosí silver production records — 8 million enslaved and coerced workers", detail: "Evidence that the extraction of American silver required an enormous forced labor system, at Potosí, the mita system coerced indigenous workers into mining under conditions that killed tens of thousands. Connect this to the broader pattern: American resource extraction required labor; demographic collapse eliminated the original labor pool; that gap was filled by coerced labor." },
-      { title: "The Irish potato famine (1845–1852) — 1 million dead, 2 million emigrated", detail: "Evidence of the long-term consequences of the Columbian Exchange: the potato, a New World crop, had become so essential to Irish agricultural survival by the 19th century that a single pathogen (potato blight) caused the deaths of 1 million people and the emigration of 2 million more. This demonstrates how thoroughly the crop transfers of the Exchange had restructured the economies and food security of receiving regions." }
-    ]
+    title: "Evidence Lab: What Crossed, and What It Did",
+    intro: "Use the evidence cards to see the exchange in both directions, through sources made at the time.",
+    prompt: "Choose two cards and explain how each shows a cause or an effect of the Columbian Exchange."
   },
 
   primarySource: {
-    title: "Primary Source: Florentine Codex — The Smallpox Epidemic in Tenochtitlan, c. 1520",
-    intro: "The Florentine Codex was compiled by Friar Bernardino de Sahagún between c. 1550 and 1580, working with Aztec informants who described events from their own perspective in Nahuatl. Book 12 describes the Spanish conquest of Tenochtitlan, including the smallpox epidemic of 1520. This adapted passage reflects the Nahuatl account of the epidemic.",
-    text: "Before the Spanish appeared to us, first there came to be prevalent a great sickness, a plague. It was in Tepeilhuitl that it originated, that it spread over the people, and it greatly afflicted them. It covered many people; it spread over them everywhere. It caused great havoc among them; many people died of it. They could not walk; they only lay in their resting places and beds. They could not move; they could not stir; they could not change position, nor lie on one side, nor face down, nor on their backs. And if they stirred, much did they cry out. Great was its destruction. Covered, mantled with pustules, very many people died of them. And very many starved; there was death from hunger, for none could take care of the sick; nothing could be done for them. And on some the pustules were widely separated; they suffered not greatly, neither did many of them die. Yet many people's faces were spoiled; some lost an eye, others were blinded.",
+    title: "Primary Source: A Nahua Account of Smallpox in Tenochtitlan, 1520",
+    intro: "This account comes from Book 12 of the Florentine Codex, put together from the 1550s to the 1570s by the Spanish friar Bernardino de Sahagún with Nahua elders, who described the events in their own language, Nahuatl. Sahagún wrote his own Spanish version beside it. The document is James Lockhart's English translation of the Nahuatl, with one sentence from the Spanish version at the end. The Mexica were the people of Tenochtitlan. Tepeilhuitl was a month in the Nahua calendar; Sahagún says it fell at the end of September.",
+    skill: "3.B Claims and Evidence in Sources: identify the evidence a source uses to support its claim",
+    attribution: "Florentine Codex, Book 12, chapter 29, put together by Bernardino de Sahagún with Nahua elders, 1550s to 1570s; English translation by James Lockhart",
+    text: "<p>Before the Spaniards appeared to us, first an epidemic broke out, a sickness of pustules. It began in Tepeilhuitl. Large bumps spread on people; some were entirely covered. They spread everywhere, on the face, the head, the chest, etc. [The disease] brought great desolation; a great many died of it. They could no longer walk about, but lay in their dwellings and sleeping places, no longer able to move or stir. They were unable to change position, to stretch out on their sides or face down, or raise their heads. And when they made a motion, they called out loudly. The pustules that covered people caused great desolation; very many people died of them, and many just starved to death; starvation reigned, and no one took care of others any longer. ... This disease of pustules lasted a full sixty days; after sixty days it abated and ended. ... The Mexica warriors were greatly weakened by it.</p><p>From Sahagún's Spanish version: \"Many died of hunger, because there was no one who could prepare food.\"</p>",
+    sourceLinks: [{ label: 'Early Nahuatl Library: Florentine Codex, Book 12, chapter 29', url: 'https://enl.wired-humanities.org/FCBk12Ch29' }],
     questions: [
-      "What does this source reveal about the physical and social impact of the smallpox epidemic on the population of Tenochtitlan? What specific details indicate the scale of the catastrophe?",
-      "This account was compiled by indigenous informants speaking in Nahuatl, translated and recorded by a Spanish friar. How might this complex of perspectives, indigenous memory, Nahuatl language, Spanish transcription, later compilation, shape what the source preserves and what it might omit?",
-      "How does this source support the argument that disease, not primarily military force, was the primary cause of indigenous demographic collapse? What would be needed to make this a complete historical argument rather than a single piece of evidence?"
+      "What claim does this account make about the sickness? Identify TWO pieces of evidence the account gives to support that claim.",
+      "The account says many \"just starved to death\" and that \"no one took care of others any longer.\" Explain how this evidence shows that people died of more than the disease itself.",
+      "This account was told by Nahua elders decades after 1520 and written down under a Spanish friar's direction. How might that shape what it includes and what it leaves out?"
     ]
   },
 
   beSurreal: {
-    title: "BeSurreal: You Are an Aztec Healer in Tenochtitlan, 1520",
-    desc: "It is the summer of 1520. The Spanish army that invaded Tenochtitlan has been driven out, but something they left behind is killing more people than any army. A disease no one has ever seen before is spreading through the city's population. You are a trained healer, and nothing in your knowledge or your medicine has any effect on it.",
-    intro: "You trained for years in the calmecac to learn the healing arts, the properties of hundreds of plants, the signs and symptoms of every illness you have ever encountered, the prayers and rituals that accompany treatment, the careful observation of the body that distinguishes one sickness from another. You have treated wounds, fever, dysentery, broken bones. You have studied the codices that describe how the gods send illness and how healers respond.",
-    detail: "This is none of those things. The disease arrived in the city weeks ago, some say it came from a man in the Spanish army, others say from the goods left behind when the Spanish fled. It spreads not through wounds or contaminated water but through the air itself, through proximity, through touch. You cannot protect yourself by keeping away from the sick; the sick are everywhere. The pustules are unlike anything in any codex you have studied. People who were healthy yesterday are prostrate today, covered in sores, unable to move or eat or drink. Entire families are dying together. The healers who work hardest among the sick are dying fastest. You have tried every treatment you know. Nothing works. You have prayed to every healing deity. You cannot stop this. And somewhere in the city, the Spanish are regrouping.",
-    prompt: "Write a message to a healer in another district of Tenochtitlan, what you have observed, what you have tried, and what you believe about what is happening. What do you not understand about this disease? And what do you want the other healer to know in case you do not survive to tell them in person?"
+    title: "BeSurreal: You Are a Healer in Tenochtitlan, Autumn 1520",
+    desc: "It is the autumn of 1520. A few months ago, the people of Tenochtitlan drove the Spanish army out of the city. Now a sickness no one has ever seen is spreading from house to house. You are a ticitl, a healer, and nothing you know is stopping it.",
+    intro: "You learned your craft for years from older healers: which plants ease a fever, how to set a bone, how to treat a wound, which prayers go with each treatment. You have cared for the sick through fevers, injuries, and hungry seasons, and the people of your neighborhood come to you first.",
+    detail: "This is different. Sores spread over people's faces, heads, and chests until some are covered entirely. The sick cannot walk, cannot turn over, cannot lift their heads, and they cry out if anyone moves them. Whole households are sick at the same time, so there is no one to grind maize, cook, or carry water, and some people who might have lived are dying of hunger. Healers who go from house to house are falling sick too. Nothing in your training fits this. The Spaniards are gone from the city for now, but everyone knows they may come back.",
+    prompt: "Write a message to a healer in another part of the city. Describe what you have seen and what you have tried, and what you think is happening. What do you not understand about this sickness? And what should the other healer do for the families who have no one left to cook for them?"
   },
 
   beInTheRoom: {
     url: '',
-    desc: "Step into Tenochtitlan during the smallpox epidemic of 1520, navigate the economic logic of the Atlantic slave trade, or examine the transformation of European diets as New World crops spread across the globe."
+    desc: "Sit on a town council in the Valley of Mexico in 1531, ten years after smallpox, and decide what to plant, what to do about the settlers' animals, and how to care for the sick."
   }
 
 };

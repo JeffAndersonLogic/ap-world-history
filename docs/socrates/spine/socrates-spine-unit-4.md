@@ -57,7 +57,7 @@ Strong answer checklist: Use one Iberian voyage and one northern voyage, each wi
 
 ## 4.3 Columbian Exchange
 
-**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How contact between Eastern and Western Hemispheres after 1492 transferred plants, animals, diseases, and people — and produced the largest demographic catastrophe in human history
+**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. What the ships carried across the Atlantic after 1492, on purpose, by accident, and by force, and how it remade populations on both sides of the ocean
 
 **College Board key concepts.**
 - Unit 4: Learning Objective D (Learning Objective): Explain the causes of the Columbian Exchange and its effects on the Eastern and Western Hemispheres.
@@ -67,15 +67,15 @@ Strong answer checklist: Use one Iberian voyage and one northern voyage, each wi
 - KC-4.1.V.C (Humans and the Environment): Afro-Eurasian fruit trees, grains, sugar, and domesticated animals were brought by Europeans to the Americas, while other foods were brought by African enslaved persons. Illustrative examples: Horses, Pigs, Cattle, Okra, Rice.
 - KC-4.1.V.D (Humans and the Environment): Populations in Afro-Eurasia benefitted nutritionally from the increased diversity of American food crops.
 
-**Expected evidence terms.** potato, maize, tomato, cacao, tobacco, horse, cattle, sugarcane, wheat, cassava, smallpox, measles, malaria, mosquitoes, rats, demographic collapse, horses, sugar, rice, okra, nutrition.
+**Expected evidence terms.** smallpox, measles, malaria, disease vector, rats, mosquitoes, epidemic, immunity, Tenochtitlan, war, forced labor, hunger, Columbian Exchange, on purpose, by accident, horses, pigs, cattle, sugarcane, cash crop, plantation, coerced labor, rice, okra, maize, potatoes, cassava, sweet potatoes, staple crop, nutrition.
 
-**AP skill focus.** Causation practice.
+**AP skill focus.** Claims and Evidence in Sources practice.
 
-**Checkpoint 1 prompt.** Identify at least TWO crops transferred from the New World to the Old World and ONE animal or crop transferred from the Old World to the New World. For each, explain the long-term consequence of the transfer, what changed in the receiving region, and why?
-Strong answer checklist: Name at least two New World crops moving east and one Old World introduction moving west. For each, explain the specific long-term consequence in the receiving region. Explain WHY the transfer had that consequence, connect crop to demographic or economic outcome.
+**Checkpoint 1 prompt.** Name ONE disease and ONE disease vector (an animal that carries disease) that crossed the Atlantic from the Eastern Hemisphere. Then explain TWO reasons these diseases had catastrophic effects in many parts of the Americas: one about whether people had had the disease before, and one about the conditions people were living in.
+Strong answer checklist: Name one disease and one disease vector. Give one reason about exposure: nobody had had these diseases before, so nobody was immune. Give one reason about conditions: war, forced labor, hunger, or everyone falling sick at once.
 
-**Checkpoint 2 prompt.** Explain why Eastern Hemisphere diseases were catastrophic for many Indigenous American populations, including the role of disease vectors or lack of prior exposure. Then explain TWO additional Columbian Exchange consequences: one Old World-to-Americas transfer, such as horses, cattle, sugar, rice, or okra, and one American crop moving to Afro-Eurasia. For each transfer, explain a demographic, nutritional, economic, or environmental effect.
-Strong answer checklist: Explain disease vulnerability and include a disease vector or specific pathogen. Explain one Old World-to-Americas transfer and its consequence. Explain one American crop moving east and its nutritional or demographic consequence.
+**Checkpoint 2 prompt.** Explain what caused the Columbian Exchange. Then explain TWO effects. ONE effect in the Americas, from an animal or crop Europeans brought (such as horses, pigs, cattle, or sugarcane) or a food enslaved Africans brought (such as rice or okra). ONE effect in Afro-Eurasia, from an American crop (such as maize, potatoes, cassava, or sweet potatoes). For each effect, say which people it affected and how.
+Strong answer checklist: State the cause: ships crossing the Atlantic and coming back, carrying living things on purpose and by accident. Give one effect in the Americas, with a specific animal, crop, or food and the people it affected. Give one effect in Afro-Eurasia, with a specific American crop and what it did for nutrition or population.
 
 ## 4.4 Maritime Empires Established
 
