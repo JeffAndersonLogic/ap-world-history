@@ -10,8 +10,6 @@
  * - frans-post-sugar-mill-1660s.jpg: Frans Post, National Gallery of Ireland
  * - gerard-herball-turkie-corne-1597.jpg: Gerard's Herball, London, 1597, p. 75
  * - qing-taiwan-album-sweet-potato-1740s.jpg: album made for Liushiqi, 1740s
- * - guaman-poma-july-harvest-1615.png and acosta-historia-natural-1590.jpg are
- *   used on the lesson page, not on a slide.
  *
  * No AI-generated picture is used (no generator key was set, and a real object
  * existed for every beat that needed one). The visuals are set in the teaching

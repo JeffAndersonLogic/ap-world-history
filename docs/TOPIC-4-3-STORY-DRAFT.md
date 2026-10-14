@@ -354,3 +354,36 @@ final report.
    questions that practice 3.B.
 7. **Required modules** (Phase 8): 02 First & 10, 05 Skill Builder, 07 Evidence Lab, 10
    Checkpoint 2.
+
+## 12. Schedule, required modules and Canvas (Phase 8)
+
+**Class dates: open.** The schedule ends at 4.2 (Green Friday 2026-10-30, Silver Monday
+2026-11-02) and names no later school day, so 4.3 has no schedule entries. When Jeff gives the
+two dates, one commit does all of this:
+
+1. Add 4.3's Green and Silver days to `assets/data/announcements-schedule.js`, each with
+   `modules: ['02', '05', '07', '10']` and the usual homework line. 4.2's two
+   `homeworkDue: 'your next class'` lines and their comments then come out, because 4.2's due
+   dates are derived from 4.3's days.
+2. Uncomment the 4.3 line in `TOOLS` in `scripts/build-teacher-index.js`, so the teacher command
+   center lists the deck and the Today panel routes to it. It is commented out because
+   `scripts/test/teacher-today.test.js` requires every listed lesson to be scheduled.
+3. Run `npm run build:announcements && npm run build:canvas-events && node scripts/build-teacher-index.js`.
+   The Canvas overview for 4.3 is already written in `scripts/build-canvas-events.js`.
+
+**Required modules (the build's call, for Jeff to overrule):**
+
+| Module | Why it is required |
+|---|---|
+| 02 First & 10 | The common story every student reads; its question 02 is the first 3.B practice. |
+| 05 Skill Builder | The CED's suggested skill, 3.B, modeled on Acosta and practiced on the Qing source. |
+| 07 Evidence Lab | Five real objects, one claim from two sources, one from each direction of the exchange. |
+| 10 Checkpoint 2 | Answers the learning objective: the cause, and one effect in each hemisphere. |
+
+Checkpoint 1 (disease) stays optional, as on 4.1 and 4.2; its content is carried by the First &
+10, the deck's Tenochtitlan and mechanism slides, and Checkpoint 2's coaching. BeSurreal, Primary
+Source and BeInTheRoom stay optional extensions.
+
+**Time:** the deck's authored minutes total 80 against the 80-minute budget (plus a 5-minute
+reserve). **Teacher-launched activities:** 6 (BeReady, First & 10, the retelling, Skill Builder,
+Evidence Lab, Checkpoint 2), inside the 5 to 7 range from the 2026-09-15 decision.
