@@ -908,16 +908,15 @@ window.BEHISTORICAL_SCHEDULE = {
 
     /* ---- Topic 4.3, Columbian Exchange ------ */
     // Green Tuesday 2026-11-03 and Silver Wednesday 2026-11-04, from Jeff's
-    // corrected November Canvas calendar (2026-10-14), which marks the Green day
-    // of each Unit 4 class: 4.3 Tue 11/3, 4.4 Thu 11/5, 4.5 Mon 11/9, 4.6 Wed
-    // 11/11, 4.7 Fri 11/13, 4.8 Mon 11/16, the Study Guide Work Day Wed 11/18
-    // (Green) and Thu 11/19 (Silver), Era 3 Exam Fri 11/20 and Mon 11/23. Jeff
-    // confirmed 4.2's Green day is Friday 10/30, so Silver is the class day
-    // after each Green day through 4.6.
-    // OPEN for the 4.7 and 4.8 builds: strict alternation after Green Fri 11/13
-    // would make Mon 11/16 Silver, but the calendar marks 4.8 on 11/16 and Jeff
-    // gives Green 11/18. Ask Jeff for 4.7's and 4.8's Silver days before adding
-    // them; never infer them.
+    // corrected November Canvas calendar (2026-10-14, second correction), which
+    // marks the Green day of each Unit 4 class: 4.3 Tue 11/3, 4.4 Thu 11/5, 4.5
+    // Mon 11/9, 4.6 Wed 11/11, 4.7 Fri 11/13, 4.8 Tue 11/17, Era review Thu 11/19,
+    // Era 3 Exam Mon 11/23 (Silver Tue 11/24). Jeff confirmed 4.2's Green day is
+    // Friday 10/30, and strict alternation holds all month: Silver is the next
+    // school day after each Green day.
+    // Check with Jeff when the review day is built: his note of 2026-10-14 put
+    // the Study Guide Work Day on Wed 11/18 (Green) and Thu 11/19 (Silver), while
+    // the corrected calendar puts it on Thu 11/19 (Green) and Fri 11/20 (Silver).
     // (Shipped first as Green 11/4 and Silver 11/5 from a misreading of the
     // first calendar image; corrected the same day.)
     // Required subset (4.3 build, 2026-10-14, under Jeff's standing rule): 02
