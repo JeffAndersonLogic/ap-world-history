@@ -5,10 +5,10 @@ Jeff started this build with "build 4.3" on 2026-10-14. The Phase 9 reviewers ch
 against the CED source file and the scholarship; the record of what they found is in
 `docs/TOPIC-4-3-CLAIM-LEDGER.md`, under "Review findings".
 
-**Resume here (2026-10-14):** Pass 2 fixes are committed (`fb60bba1`), 38 findings judged and
-logged. Pass 3, the last pass the loop allows, was launched at about 10:00 UTC with fresh reviewers.
-Next: judge Pass 3 findings, log them under "### Pass 3" in the ledger, then the Unit 4
-fingerprint, the topic audit record and the Phase 10 report.
+**Build finished (2026-10-14):** three review passes ran (six reviewers, 112 findings, every one
+fixed or logged in the ledger); the loop ended on its safety valve. The Unit 4 fingerprint moved
+(`85f1913`), the audit record is `docs/topic-audits/topic-4-3-2026-10-14.md`, and the branch waits
+on Jeff for class dates and "ship it".
 
 **Taught:** not yet scheduled. The schedule ends at 4.2 (Green Friday 2026-10-30, Silver Monday
 2026-11-02), and no later class day is named anywhere in `assets/data/announcements-schedule.js`.
