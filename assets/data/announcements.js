@@ -1839,9 +1839,10 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
-        { text: 'Finish Checkpoint 2, and any other required 4.2 module you did not complete in class.', due: 'your next class' }
+        { text: 'Finish Checkpoint 2, and any other required 4.2 module you did not complete in class.', due: 'Wednesday, November 4' }
       ],
-      homeworkDue: 'your next class'
+      homeworkDue: 'Wednesday, November 4',
+      dueDate: '2026-11-04'
     },
     /* 2026-11-02  <-  lesson-4-2-exploration.js */
     {
@@ -1866,9 +1867,64 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
-        { text: 'Finish Checkpoint 2, and any other required 4.2 module you did not complete in class.', due: 'your next class' }
+        { text: 'Finish Checkpoint 2, and any other required 4.2 module you did not complete in class.', due: 'Thursday, November 5' }
       ],
-      homeworkDue: 'your next class'
+      homeworkDue: 'Thursday, November 5',
+      dueDate: '2026-11-05'
+    },
+    /* 2026-11-04  <-  lesson-4-3-columbian-exchange.js */
+    {
+      date: '2026-11-04',
+      cohort: 'green',
+      unit: 'Unit 4: Transoceanic Interconnections',
+      topic: 'Columbian Exchange',
+      learningTargets: [
+        { text: 'I can explain what caused the Columbian Exchange: ships crossing the Atlantic, and later the Pacific, and coming back, carrying plants, animals, and germs, some on purpose and some by accident.', label: 'Humans and the Environment' },
+        { text: 'I can explain how diseases from the Eastern Hemisphere, such as smallpox, measles, and malaria, and disease vectors, such as rats and mosquitoes, crossed to the Americas, and why these diseases had catastrophic effects on many Indigenous populations.', label: 'Humans and the Environment' },
+        { text: 'I can explain the effects of the exchange on both hemispheres. In the Americas: animals and crops Europeans brought, foods enslaved Africans brought, and cash crops grown on plantations with coerced labor. In Afro-Eurasia: American staple crops that improved nutrition.', label: 'Humans and the Environment' }
+      ],
+      successCriteria: [
+        { text: 'I can state the cause of the Columbian Exchange and give one thing that crossed on purpose and one that crossed by accident.', label: 'Humans and the Environment' },
+        { text: 'I can name a disease and a disease vector, and give two reasons these diseases were so deadly in the Americas, including one about the conditions people lived in, such as war, forced labor, or hunger.', label: 'Humans and the Environment' },
+        { text: 'I can explain one effect in the Americas and one in Afro-Eurasia, each with a specific animal, crop, or food and the people it affected.', label: 'Humans and the Environment' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.3 module you did not complete in class.', due: 'Friday, November 6' }
+      ],
+      homeworkDue: 'Friday, November 6'
+    },
+    /* 2026-11-05  <-  lesson-4-3-columbian-exchange.js */
+    {
+      date: '2026-11-05',
+      cohort: 'silver',
+      unit: 'Unit 4: Transoceanic Interconnections',
+      topic: 'Columbian Exchange',
+      learningTargets: [
+        { text: 'I can explain what caused the Columbian Exchange: ships crossing the Atlantic, and later the Pacific, and coming back, carrying plants, animals, and germs, some on purpose and some by accident.', label: 'Humans and the Environment' },
+        { text: 'I can explain how diseases from the Eastern Hemisphere, such as smallpox, measles, and malaria, and disease vectors, such as rats and mosquitoes, crossed to the Americas, and why these diseases had catastrophic effects on many Indigenous populations.', label: 'Humans and the Environment' },
+        { text: 'I can explain the effects of the exchange on both hemispheres. In the Americas: animals and crops Europeans brought, foods enslaved Africans brought, and cash crops grown on plantations with coerced labor. In Afro-Eurasia: American staple crops that improved nutrition.', label: 'Humans and the Environment' }
+      ],
+      successCriteria: [
+        { text: 'I can state the cause of the Columbian Exchange and give one thing that crossed on purpose and one that crossed by accident.', label: 'Humans and the Environment' },
+        { text: 'I can name a disease and a disease vector, and give two reasons these diseases were so deadly in the Americas, including one about the conditions people lived in, such as war, forced labor, or hunger.', label: 'Humans and the Environment' },
+        { text: 'I can explain one effect in the Americas and one in Afro-Eurasia, each with a specific animal, crop, or food and the people it affected.', label: 'Humans and the Environment' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.3 module you did not complete in class.', due: 'Monday, November 9' }
+      ],
+      homeworkDue: 'Monday, November 9'
     }
   ],
 

@@ -896,20 +896,50 @@ window.BEHISTORICAL_SCHEDULE = {
       cohort: 'green',
       topic: '4.2',
       modules: ['02', '05', '07', '10'],
-      homework: 'Finish Checkpoint 2, and any other required 4.2 module you did not complete in class.',
-      // No later class day is on the schedule yet, and dates are never
-      // invented. Replace with the real weekday once Jeff names the next day.
-      homeworkDue: 'your next class'
+      homework: 'Finish Checkpoint 2, and any other required 4.2 module you did not complete in class.'
     },
     {
       date: '2026-11-02',
       cohort: 'silver',
       topic: '4.2',
       modules: ['02', '05', '07', '10'],
-      homework: 'Finish Checkpoint 2, and any other required 4.2 module you did not complete in class.',
-      // No later class day is on the schedule yet, and dates are never
-      // invented. Replace with the real weekday once Jeff names the next day.
-      homeworkDue: 'your next class'
+      homework: 'Finish Checkpoint 2, and any other required 4.2 module you did not complete in class.'
+    },
+
+    /* ---- Topic 4.3, Columbian Exchange ------ */
+    // Green Wednesday 2026-11-04 and Silver Thursday 2026-11-05. Jeff's Canvas
+    // calendar for November 2026 (shared 2026-10-14) marks every Green day, one
+    // Unit 4 topic each: 4.2 Mon 11/2, 4.3 Wed 11/4, 4.4 Fri 11/6, 4.5 Tue 11/10,
+    // 4.6 Thu 11/12, 4.7 Mon 11/16, 4.8 Wed 11/18, Era review Fri 11/20, Era 3
+    // Exam Tue 11/24. Silver is the class day after each.
+    // OPEN QUESTION for Jeff: that calendar makes Monday 11/2 a Green day, but
+    // 4.2's entries above (Jeff, 2026-10-12) make it Silver, with Green on Friday
+    // 10/30. Both cannot be true under strict alternation, so 4.2 is left as it
+    // was until Jeff says which is right. 4.2's due dates are now derived from
+    // 4.3's days, which are the right next meetings under either reading.
+    // Required subset (4.3 build, 2026-10-14, under Jeff's standing rule): 02
+    // First & 10, 05 Skill Builder (3.B, the CED's suggested skill), 07 Evidence
+    // Lab and 10 Checkpoint 2. Checkpoint 1 and BeInTheRoom stay optional.
+    {
+      date: '2026-11-04',
+      cohort: 'green',
+      topic: '4.3',
+      modules: ['02', '05', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 4.3 module you did not complete in class.',
+      // Green's next meeting is 4.4 on Friday 11/6 (same calendar). 4.4 is not
+      // built, so its days are not on this schedule and the due date is stated
+      // here. Delete this line when 4.4's days land.
+      homeworkDue: 'Friday, November 6'
+    },
+    {
+      date: '2026-11-05',
+      cohort: 'silver',
+      topic: '4.3',
+      modules: ['02', '05', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 4.3 module you did not complete in class.',
+      // Silver's next meeting is 4.4 on Monday 11/9. Delete this line when
+      // 4.4's days land.
+      homeworkDue: 'Monday, November 9'
     }
   ],
 

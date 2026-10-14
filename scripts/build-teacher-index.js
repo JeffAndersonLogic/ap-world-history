@@ -40,12 +40,7 @@ const TOOLS = [
   { kind: 'lesson', unit: '3', key: '3.4', title: 'Comparison in Land-Based Empires', href: 'topic-3-4-os.html' },
   { kind: 'lesson', unit: '4', key: '4.1', title: 'Technological Innovations', href: 'topic-4-1-os.html' },
   { kind: 'lesson', unit: '4', key: '4.2', title: 'Exploration: Causes and Events', href: 'topic-4-2-os.html' },
-  // Topic 4.3's Teaching OS deck is built (teacher/topic-4-3-os.html, 2026-10-14)
-  // but has no class days yet, and scripts/test/teacher-today.test.js requires
-  // every lesson listed here to be on the schedule. When Jeff gives 4.3's Green
-  // and Silver dates, add them to assets/data/announcements-schedule.js and this
-  // line in the same commit:
-  // { kind: 'lesson', unit: '4', key: '4.3', title: 'Columbian Exchange', href: 'topic-4-3-os.html' },
+  { kind: 'lesson', unit: '4', key: '4.3', title: 'Columbian Exchange', href: 'topic-4-3-os.html' },
   { kind: 'primary', label: 'Skills Lens', desc: 'Analyze Canvas submissions for completion, response quality, and AP skill trends across the year.', href: 'skills-lens.html' },
   { kind: 'authoring', label: 'Slide Templates', desc: 'Reference every Teaching OS slide template with real Unit 2 examples and copy-ready slide data.', href: 'slide-templates.html' },
   { kind: 'legacy', label: 'Run of Show', desc: 'Standalone pacing pages for Topics 1.4–1.6, before those lessons move into the integrated Teaching OS.', href: ROS_INDEX_OUT },
