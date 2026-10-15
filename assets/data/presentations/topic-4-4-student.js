@@ -149,7 +149,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "url": "../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg",
           "alt": "Engraving of Nagasaki harbor below green hills, with the walled Dutch compound on Dejima at the shore, flying a flag, a Dutch company ship, Japanese boats and Chinese junks",
           "credit": "Nagasaki harbor and Dejima, engraving by Johann Wolfgang Heydt, published in Germany, 1744 · Public domain",
-          "position": "50% 88%"
+          "fit": "contain"
         },
         "caption": "Nagasaki, about 1740: the Dutch island, Dutch and Japanese ships, Chinese junks",
         "steps": [
@@ -163,12 +163,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Japan, 1639",
-            "text": "Portuguese ships are banned from Japan."
+            "text": "Portuguese ships are banned. The Dutch are the only Europeans left."
           },
           {
             "label": "Japan, 1641",
             "key": true,
-            "text": "Only the Dutch may trade, on the island of Dejima. Chinese merchants trade in the city."
+            "text": "The Dutch must trade only on the island of Dejima. Chinese merchants trade in the city."
           }
         ]
       }
@@ -406,7 +406,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "url": "../assets/images/topics/4-4/sugar-works-du-tertre-1667.jpg",
           "alt": "Engraving of a Caribbean sugar works: an animal-driven mill under a roof, a boiling house with kettles, a drying shed, palms and workers carrying cane",
           "credit": "Sugar works in the French Antilles, engraved by Sébastien Leclerc for Jean-Baptiste Du Tertre, Paris, 1667 · Public domain",
-          "position": "45% 50%"
+          "fit": "contain"
         },
         "caption": "A sugar works in the French Caribbean, 1667",
         "steps": [
@@ -505,7 +505,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kc": "KC-4.3.II.A.iii",
       "template": {
         "weak": "Indian Ocean trade changed.",
-        "strong": "The Portuguese **changed** Indian Ocean trade with forts and a pass ships had to buy, the **cartaz**, but **Gujarati**, **Swahili Arab** and **Javanese** merchants **kept** trading, often under a pass, because a few forts could tax the ocean's trade but not replace its merchants."
+        "strong": "**Change:** In ______, ______ changed when ______. **Continuity:** But ______ kept going, **because** ______."
       }
     },
     {

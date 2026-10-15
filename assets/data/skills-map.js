@@ -5820,7 +5820,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "08",
           "module": "Primary Source",
           "label": "Module 08, Primary Source",
-          "prompt": "Audience and purpose: Afonso wrote to the king of Portugal. What does he want the king to do, and why was the king of Portugal the right person to ask? Point of view: Afonso complains first that his vassals \"have now renounced their obedience\" because traders sell to them directly. What does this complaint show about what Afonso, as a king, cared about most? Situation: Afonso himself sold war captives taken outside Kongo to the Portuguese. Knowing that, how should a historian read his words \"we do not wish to carry out trade and export slaves\"? What is the letter strong evidence of, and what is it weak evidence of?",
+          "prompt": "Audience and purpose: Afonso wrote to the king of Portugal. What does he want the king to do, and why was the king of Portugal the right person to ask? Point of view: Afonso complains first that his vassals \"have now renounced their obedience\" because traders sell to them directly. What does this complaint show about what Afonso, as a king, cared about most? Situation: Afonso himself sold war captives taken outside Kongo to the Portuguese. Knowing that, how should a historian read his words \"we do not wish to carry out trade and export slaves\"? What does the letter prove well, and what can it not prove?",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -5834,7 +5834,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "05",
           "module": "AP Skill Builder",
           "label": "Module 05, AP Skill Builder",
-          "prompt": "Now do it yourself with a different source. In 1639, the shogun's senior councilors, the same top officials who wrote the 1635 orders, issued this order (translated in Lu, 1997; words in brackets are explanations): \"The matter relating to the proscription [ban] of Christianity is known [to the Portuguese]. However, heretofore [until now] they have secretly transported those who are going to propagate [spread] that religion. ... entry by the Portuguese galeota [ship] is forbidden.\" In 2 to 3 sentences, identify the order's point of view and its purpose, and explain how its situation helps explain why Japan limited trade with the Portuguese but not with everyone.",
+          "prompt": "Now do it yourself with a different source. In 1639, the shogun's senior councilors, the same office that issued the 1635 orders, issued this order (translated in Lu, 1997; words in brackets are explanations): \"The matter relating to the proscription [ban] of Christianity is known [to the Portuguese]. However, heretofore [until now] they have secretly transported those who are going to propagate [spread] that religion. ... entry by the Portuguese galeota [ship] is forbidden.\" In 2 to 3 sentences, identify the order's point of view and its purpose, and explain how its situation helps explain why Japan limited trade with the Portuguese but not with everyone.",
           "skill": "Sourcing",
           "skills": [
             "Sourcing"

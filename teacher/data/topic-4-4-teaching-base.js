@@ -100,7 +100,7 @@ window.BEHISTORICAL_TEACHING = {
           'Owns: trading posts and the rivalries behind them, Ming and Tokugawa limits, Kongo and Asante, Indian Ocean continuity, colonial labor systems old and new, slavery old and new.',
           'Bridge only: joint-stock companies and the VOC (4.5; the Dutch appear as a rival and as the traders on Dejima, not as a company); silver\'s global flow (4.5; Potosí appears only as where the mit’a sent workers); casta (4.7, not mentioned); cultural mixing and gender and family change (4.5); resistance and Maroons (4.6).',
           'Three myths: "Europe took over the world after 1500"; "slavery began with the Atlantic trade"; "African rulers had no power in the trade."',
-          'Every picture in this deck is a real historical object or scene. None is AI-generated.'
+          'Every picture in this deck is a real historical object or scene, except the course\'s own map on slide 6. None is AI-generated.'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
         listenFor: 'Europeans built empires from the sea, but much of the world kept its own rules: China and Japan set terms, Asian merchants kept trading, Kongo and Asante grew, the mit’a was reused and slavery in Africa went on, while plantations made slavery in the Americas larger and different.',
@@ -199,10 +199,10 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 1,
         land: [
           'The course\'s own instructional map, rebuilt for this story. Shaded regions are schematic, not borders.',
-          'Point out the pattern: most European places in Africa and Asia sit on a coast; Japan, Kongo and the Swahili coast are places that set their own terms; Potosí and the Caribbean are colonies.'
+          'Point out the pattern: most European places in Africa and Asia sit on a coast; Japan, Macau under Ming officials and Kongo are places that set their own terms; on the Swahili coast merchants kept trading and Oman pushed Portugal out of Mombasa in 1698; Potosí and the Caribbean are colonies.'
         ],
         ask: 'Find one European fort and one place that set its own terms.',
-        listenFor: 'Goa, Malacca or Elmina; Japan, Macau under Ming rules, Mombasa under Oman, Kongo.'
+        listenFor: 'Goa, Malacca or Elmina; Japan, Macau under Ming rules, or Kongo.'
       }
     },
     {
@@ -222,7 +222,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'São Jorge da Mina (Elmina) was built by Diogo de Azambuja in 1482 to control the gold trade of the Gold Coast. The Dutch West India Company took it in 1637. The engraving, from Olfert Dapper\'s description of Africa (Amsterdam, 1668), is titled "Casteel del Mina", and the book presents it as Elmina in the time of the Portuguese.',
+          'São Jorge da Mina (Elmina) was built by Diogo de Azambuja in 1482 to control the gold trade of the Gold Coast. The Dutch West India Company took it in 1637. The engraving, from Olfert Dapper\'s description of Africa (Amsterdam, 1668), is titled "Casteel del Mina" and shows the castle in Dutch hands, with the Dutch fort Coenraadsburg on the hill behind (Atlas of Mutual Heritage 6856). Dapper never saw Africa himself; he compiled his book from others\' reports.',
           'Afonso de Albuquerque took Goa (1510), Malacca (1511) and Hormuz (1515). The Portuguese crown held the pepper trade as a royal monopoly and drew customs from its ports: profit for rulers and merchants, the CED\'s words.',
           'Elmina later became a center of the Atlantic slave trade; that is the scale slide, later in the lesson.'
         ],
@@ -235,13 +235,13 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'asia', kind: 'story-scene', eyebrow: 'Asia Sets the Terms',
       kc: 'KC-4.3.II.A.i', title: 'China and Japan decided how far Europeans could reach.',
       template: {
-        visual: { url: '../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg', alt: 'Engraving of Nagasaki harbor below green hills, with the walled Dutch compound on Dejima at the shore, flying a flag, a Dutch company ship, Japanese boats and Chinese junks', credit: 'Nagasaki harbor and Dejima, engraving by Johann Wolfgang Heydt, published in Germany, 1744 · Public domain', position: '50% 88%' },
+        visual: { url: '../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg', alt: 'Engraving of Nagasaki harbor below green hills, with the walled Dutch compound on Dejima at the shore, flying a flag, a Dutch company ship, Japanese boats and Chinese junks', credit: 'Nagasaki harbor and Dejima, engraving by Johann Wolfgang Heydt, published in Germany, 1744 · Public domain', fit: 'contain' },
         caption: 'Nagasaki, about 1740: the Dutch island, Dutch and Japanese ships, Chinese junks',
         steps: [
           { label: 'China, 1557', text: 'Portuguese may settle at Macau, under Chinese officials and rules.' },
           { label: 'Japan, 1635', text: 'No Japanese ship may sail abroad. Search every ship for Christians.' },
-          { label: 'Japan, 1639', text: 'Portuguese ships are banned from Japan.' },
-          { label: 'Japan, 1641', key: true, text: 'Only the Dutch may trade, on the island of Dejima. Chinese merchants trade in the city.' }
+          { label: 'Japan, 1639', text: 'Portuguese ships are banned. The Dutch are the only Europeans left.' },
+          { label: 'Japan, 1641', key: true, text: 'The Dutch must trade only on the island of Dejima. Chinese merchants trade in the city.' }
         ]
       },
       notes: {
@@ -250,7 +250,7 @@ window.BEHISTORICAL_TEACHING = {
           'This is the second sentence of KC-4.3.II.A.i, which the old 4.4 pages never taught: some Asian states limited the disruptive economic and cultural effects of European trade with restrictive or isolationist policies. Ming China and Tokugawa Japan are the CED\'s examples.',
           'Macau: Portuguese merchants settled from 1557 with the permission of Chinese provincial officials; formal recognition and the annual ground rent are dated variously from 1554 to 1573. Chinese officials kept authority in and around the port.',
           'Japan: the shogun\'s senior councilors sent five sets of orders to the Nagasaki magistrates between 1633 and 1639; those of 1635 and 1639 are translated in David J. Lu, Japan: A Documentary History (1997). The Spanish had been expelled in 1624; the English left in 1623. The Dutch moved from Hirado to Dejima in 1641.',
-          'The engraving is German, signed by Johann Wolfgang Heydt ("I. W. Heydt del. et sculp.") and published in Germany in 1744 in a book printed by J. C. Tetschner: a European picture made for European readers. Heydt never went to Japan (his planned voyage there was dropped for lack of money), so he did not draw it from life. It has its own legend: the city of Nagasaki, the island where the Dutch live, a Chinese island, a company ship, Japanese ships and Chinese junks.'
+          'The engraving is German, signed by Johann Wolfgang Heydt ("I. W. Heydt del. et sculp.") and published in Germany in 1744 in a book printed by J. C. Tetschner: a European picture made for European readers. Heydt never went to Japan, so he did not draw it from life. It has its own legend: the city of Nagasaki, the island where the Dutch live, a Chinese island, a company ship, Japanese ships and Chinese junks.'
         ],
         ask: 'Who wrote the rules for trade in this harbor?',
         listenFor: 'Japan\'s government, not the Dutch.',
@@ -273,7 +273,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'Translated in David J. Lu, Japan: A Documentary History (1997), pp. 221 to 222, where the edict is headed "Addressed to the Joint Bugyō of Nagasaki." Articles 1 and 3; other articles order searches for Christians, rewards for informers and rules for selling silk. Ellipsis marks the cut.',
           'This is the topic\'s suggested skill, 2.A: identify a source\'s point of view, purpose, historical situation and audience. Model all four, out loud.',
-          'Audience matters: these were not announcements to foreigners or the public. They were working orders to the men at the one port where foreigners traded.',
+          'Audience matters: these were not announcements to foreigners or the public. They were working orders to the men at the main port where Portuguese and Chinese ships traded.',
           'Historians later named these the "closed country" (sakoku) edicts, a word first used in 1801; Japan kept trading with the Dutch, the Chinese, Korea and the Ryukyu kingdom.'
         ],
         ask: 'Why does it matter that these orders went to officials, not to the Portuguese?',
@@ -452,7 +452,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'plantation', kind: 'story-scene', eyebrow: 'Slavery: Change',
       kc: 'KC-4.2.II.C', title: 'What the plantations changed.',
       template: {
-        visual: { url: '../assets/images/topics/4-4/sugar-works-du-tertre-1667.jpg', alt: 'Engraving of a Caribbean sugar works: an animal-driven mill under a roof, a boiling house with kettles, a drying shed, palms and workers carrying cane', credit: 'Sugar works in the French Antilles, engraved by Sébastien Leclerc for Jean-Baptiste Du Tertre, Paris, 1667 · Public domain', position: '45% 50%' },
+        visual: { url: '../assets/images/topics/4-4/sugar-works-du-tertre-1667.jpg', alt: 'Engraving of a Caribbean sugar works: an animal-driven mill under a roof, a boiling house with kettles, a drying shed, palms and workers carrying cane', credit: 'Sugar works in the French Antilles, engraved by Sébastien Leclerc for Jean-Baptiste Du Tertre, Paris, 1667 · Public domain', fit: 'contain' },
         caption: 'A sugar works in the French Caribbean, 1667',
         steps: [
           { label: 'Demand', text: 'Sugar, and later tobacco, needed huge numbers of workers.' },
@@ -468,7 +468,7 @@ window.BEHISTORICAL_TEACHING = {
           'Demographic: on Barbados, enslaved Africans outnumbered Europeans by the late 1600s, and the pattern spread across the British, French and Dutch Caribbean (Spanish islands had smaller African shares); in Brazil, Africans and their descendants were a large part of the population.',
           'Social: chattel slavery was for life and inherited; Virginia\'s 1662 law made the children of enslaved women enslaved; English colonial law tied slavery to race.',
           'Cultural: name it in one sentence. How African, American and European cultures mixed is 4.5.',
-          'The engraving is a French Antilles sugar works drawn for the missionary Du Tertre\'s history of the islands (1667): the mill (moulin), furnaces and kettles, the boiling house, and its key also marks the \'cases à nègres\', the huts of the enslaved workers. It shows the work, not the workers\' lives; a European artist made it for European readers.'
+          'The engraving is a French Antilles sugar works drawn for the missionary Du Tertre\'s history of the islands (1667): its printed key names the mill (1. Moulin), the furnaces and kettles (2. Fourneaux et Chaudieres) and the huts of the enslaved workers (10. Cases de Negres). It shows the work, not the workers\' lives; a European artist made it for European readers.'
         ],
         ask: 'Which of the three changes would a person born on a plantation feel first?',
         listenFor: 'The social one: born enslaved, for life.',
@@ -526,14 +526,14 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'A change and a continuity, each with a named example and the reason.',
       template: {
         weak: 'Indian Ocean trade changed.',
-        strong: 'The Portuguese **changed** Indian Ocean trade with forts and a pass ships had to buy, the **cartaz**, but **Gujarati**, **Swahili Arab** and **Javanese** merchants **kept** trading, often under a pass, because a few forts could tax the ocean\'s trade but not replace its merchants.'
+        strong: '**Change:** In ______, ______ changed when ______. **Continuity:** But ______ kept going, **because** ______.'
       },
       notes: {
         minutes: 2,
         land: [
           'The weak claim names no continuity, no evidence and no reason.',
-          'The strong claim names a change and a continuity, each with a named example, and the reason the continuity held: the shape both checkpoints ask for.',
-          'It models an ungraded case on purpose. Students write their own for labor and for slavery in Checkpoint 2, so do not write a slavery model on the board.'
+          'The frame asks for a change and a continuity, each with a named example, and the reason: the shape both checkpoints ask for.',
+          'This is a sentence frame, not a model answer: every case in this topic is asked for somewhere (First & 10 Q1, Checkpoints 1 and 2), so the content is the students\' own. Have pairs fill it in aloud with a case they choose, then write their own in the checkpoints. Do not write a finished claim on the board.'
         ],
         ask: 'Why is "changed" not enough?',
         listenFor: 'It does not say what changed, what continued, or why.'
@@ -564,7 +564,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 0,
         land: [
           'Checkpoint 1 is not required for 4.4. Use it for early finishers or as a quick diagnostic if the room is ahead.',
-          'It asks for one cause of the empires, one change in who held power (a trading post, or Kongo or Asante) and one continuity (China or Japan). Give feedback in the room: on an alternating block nothing carries over.'
+          'It asks for one cause of the empires, one change in who held power (a trading post, or Kongo or Asante) and one continuity (China or Japan, or Asian merchants trading on in the Indian Ocean). Give feedback in the room: on an alternating block nothing carries over.'
         ],
         ask: 'Name a rivalry, a change in who held power and a continuity.',
         listenFor: 'Religion, Elmina or Asante, and Japan\'s rules.'
@@ -578,7 +578,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 7,
         land: [
-          'Five real objects: the Nanban screen (about 1600), Nagasaki and Dejima (1735 to 1744), the Kongo crucifix (1600s to 1700s), the Codex Kingsborough (1550s) and the Du Tertre sugar works (1667).',
+          'Five real objects: the Nanban screen (about 1600), Nagasaki and Dejima (1735 to 1744), Mombasa (Braun and Hogenberg, 1572), the Codex Kingsborough (1550s) and the Du Tertre sugar works (1667).',
           'Observation before inference: what the source shows, then what it suggests, then what it cannot tell you (a European engraving shows the work, not the workers\' view; a Japanese screen shows what its painter saw from the shore).',
           'Every picture in the Evidence Lab is a real historical object; none is AI-generated.'
         ],

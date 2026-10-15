@@ -47,7 +47,7 @@ module.exports = {
     heading: 'How to Use This',
     intro: `The College Board asks three things of this topic: how states were built, what changed and continued in trade and labor, and what changed and continued in slavery. Sections 01 to 03 answer the first, sections 01 and 04 the second, and section 05 the third. Every section ends with a change and a continuity you can use.`,
     steps: [
-      `<b>01 The empire of chokepoints:</b> the rivalries, the trading posts, and the cartaz.`,
+      `<b>01 The empire of chokepoints:</b> the rivalries, the trading posts, the cartaz, and the merchants who kept trading.`,
       `<b>02 Asia's terms:</b> Macau under Ming officials, and Japan from 1635 to 1641.`,
       `<b>03 Kongo and Asante:</b> two African states that grew stronger through the trade.`,
       `<b>04 Work in the colonial Americas:</b> the mit’a reused, and the new labor systems.`,
@@ -65,7 +65,7 @@ module.exports = {
       name: 'The Empire of Chokepoints',
       navLabel: 'Trading posts',
       dates: 'c. 1480 to 1650 &nbsp;·&nbsp; Rivalry, forts, and the cartaz',
-      thesis: `Portugal was a small kingdom with no army capable of taking territory in Asia. What it had was ships that carried guns, so it built an empire out of the only thing that advantage could hold: the narrow places every ship has to pass.`,
+      thesis: `Portugal was a small kingdom with no army that could conquer the large states of Asia. What it had was ships that carried guns, so it built an empire out of the only thing that advantage could hold: the narrow places every ship has to pass.`,
       parts: [
         {
           heading: 'Why rivals built empires at all',
@@ -80,6 +80,13 @@ module.exports = {
             { p: `Portugal's first great post was in Africa: the fortress of São Jorge da Mina, Elmina, built on the Gold Coast in <span class="num">1482</span> to buy gold. In Asia, Afonso de Albuquerque took <b>Goa</b> in <span class="num">1510</span>, and by <span class="num">1530</span> it was the capital of the <span class="kt">Estado da Índia</span>, Portugal's network of eastern posts. <b>Malacca</b>, taken in <span class="num">1511</span>, controls the main strait between the Indian Ocean and the South China Sea. <b>Hormuz</b>, taken in <span class="num">1515</span>, sits at the mouth of the Persian Gulf. Add fortified posts down the East African coast and along the Indian shore.` },
             { p: `Every one of them is a port, and several, Malacca and Hormuz above all, sit at chokepoints. None of them is a province. The Portuguese held dozens of fortified points and almost no land behind them, which is exactly what a network built to tax movement, rather than to own land, looks like. A <span class="kt">trading post</span> made money for the king who backed it and the merchants who traded through it, the College Board's words, in two ways: by buying goods where they were produced, and by taxing other people's ships.` },
             { p: `The tax was the <span class="kt">cartaz</span>, a pass that a merchant ship bought from the Portuguese, which committed it to calling at a Portuguese port, paying duties there and carrying none of the goods Portugal claimed for itself. A ship sailing without one could be seized by Portuguese patrols.` }
+          ]
+        },
+        {
+          heading: 'The merchants who kept trading',
+          blocks: [
+            { p: `The cartaz changed who taxed the ocean. It did not change who traded on it. <b>Gujarati</b> merchants from western India kept shipping cotton cloth across the ocean, often buying a pass and sailing on, and ships from Gujarat's ports kept carrying cargo and pilgrims to the Red Sea. <b>Swahili Arab</b> traders kept the ports of the East African coast trading. <b>Javanese</b> merchants kept carrying rice to Malacca, whoever held it. And the <b>Omanis</b> pushed Portugal back: they drove the Portuguese from Muscat in <span class="num">1650</span> and took Fort Jesus at Mombasa in <span class="num">1698</span>.` },
+            { p: `Much of the ocean's trade stayed <span class="kt">intra-Asian trade</span>: trade between one Asian port and another, in Asian goods. European merchants often made their money by joining it, carrying goods from one Asian port to the next, as the Portuguese did between China and Japan (section 02). That is why the College Board says the old networks "continued to flourish": the newcomers disrupted and taxed them, and the merchants who ran them kept them going.` }
           ]
         },
         {
@@ -129,7 +136,7 @@ module.exports = {
           heading: 'Japan, 1635 to 1641',
           blocks: [
             { p: `Portuguese ships first reached Japan in the 1540s, and Jesuit missionaries followed. By 1600 they had made many Christian converts, and the Tokugawa shoguns, who had just unified Japan after a century of war, came to see Christianity as a loyalty outside their control. The shogunate banned Christianity in <span class="num">1614</span>. The Spanish were expelled in <span class="num">1624</span>; the English had already left.` },
-            { p: `Between <span class="num">1633</span> and <span class="num">1639</span>, the shogun's senior councilors sent five sets of orders to their two magistrates at Nagasaki, the port where foreign ships traded. The <span class="num">1635</span> set has seventeen articles. The first reads: "Japanese ships are strictly forbidden to leave for foreign countries." The third: "If any Japanese returns from overseas after residing there, he must be put to death." Others order a search of every incoming ship for Christians, rewards for informers, and rules for buying and selling raw silk. In <span class="num">1637</span> and <span class="num">1638</span> a rebellion at Shimabara, near Nagasaki, drew in many Christian peasants, and in <span class="num">1639</span> the councilors banned Portuguese ships outright, because, the order says, the Portuguese "have secretly transported those who are going to propagate that religion."` },
+            { p: `Between <span class="num">1633</span> and <span class="num">1639</span>, the shogun's senior councilors sent five sets of orders to their two magistrates at Nagasaki, the main port where Portuguese and Chinese ships traded. The <span class="num">1635</span> set has seventeen articles. The first reads: "Japanese ships are strictly forbidden to leave for foreign countries." The third: "If any Japanese returns from overseas after residing there, he must be put to death." Others order a search of every incoming ship for Christians, rewards for informers, and rules for buying and selling raw silk. In <span class="num">1637</span> and <span class="num">1638</span> a rebellion at Shimabara, near Nagasaki, drew in many Christian peasants, and in <span class="num">1639</span> the councilors banned Portuguese ships outright, because, the order says, the Portuguese "have secretly transported those who are going to propagate that religion."` },
             { p: `The Dutch stayed. They came to trade, not to spread Christianity, and from <span class="num">1641</span> they lived and traded only on <b>Dejima</b>, a small artificial island in Nagasaki harbor, under Japanese supervision. Chinese merchants kept trading in Nagasaki, and Japan kept dealing with Korea and the Ryukyu kingdom through other ports. Historians later named the orders the "closed country" edicts, but the documents themselves carry no such title, and Japan was not closed: it chose who could come, and on what terms.` },
             { note: {
               kind: 'howknow',
@@ -294,12 +301,12 @@ module.exports = {
   closing: {
     heading: 'Building an Answer That Scores',
     navLabel: 'Continuity and change',
-    intro: `Each card is a full continuity-and-change explanation: the change, the continuity, the evidence and the reason. Together they answer all three learning objectives.`,
+    intro: `Each card gathers the evidence for one part of the topic. Writing the change, the continuity and the reason from it is your job; the checkpoints ask you to.`,
     pairs: [
       {
         category: 'State building',
         title: 'Europe held coasts; Asia held the terms',
-        body: `Portugal built forts at Elmina, Goa, Malacca and Hormuz, and the Dutch took several of them in turn: a real change in who held power on the coasts of Africa and Asia. But the strongest Asian states set the terms. Ming officials let the Portuguese settle at Macau from 1557 and kept authority over the port, and Tokugawa Japan, after orders of 1635 and 1639 aimed above all at Christianity, allowed only the Dutch to trade, on Dejima, from 1641. The change was on the coasts; the continuity was Asian state power.`
+        body: `Portugal built forts at Elmina, Goa, Malacca and Hormuz, and the Dutch took several of them in turn: a real change in who held power on the coasts of Africa and Asia. But the strongest Asian states set the terms. Ming officials let the Portuguese settle at Macau from 1557 and kept authority over the port, and Tokugawa Japan, after orders of 1635 and 1639 aimed above all at Christianity, allowed only the Dutch to trade, on Dejima, from 1641.`
       },
       {
         category: 'State building',
@@ -309,17 +316,17 @@ module.exports = {
       {
         category: 'Economic systems',
         title: 'The Indian Ocean was disrupted, not replaced',
-        body: `The cartaz, a pass the Portuguese sold and enforced with warships, was a real change: a European navy now taxed Asian shipping. But Gujarati merchants kept shipping cloth, often under a pass, Swahili Arab and Javanese traders kept trading, and Oman drove the Portuguese from Muscat in 1650 and Mombasa in 1698. Much of the trade stayed trade between Asian ports, and Europeans often made their money by joining it. That is what the College Board means by "continued to flourish."`
+        body: `The cartaz, a pass the Portuguese sold and enforced with warships, was a real change: a European navy now taxed Asian shipping. But Gujarati merchants kept shipping cloth, often under a pass, Swahili Arab and Javanese traders kept trading, and Oman drove the Portuguese from Muscat in 1650 and Mombasa in 1698. Much of the trade stayed trade between Asian ports.`
       },
       {
         category: 'Labor systems',
         title: 'An old duty under a new master',
-        body: `The Inca mit’a, a rotating labor duty to the state, continued in name and shape when Viceroy Toledo reorganized it in the 1570s, but it now sent thousands of Andean men each year to the silver mine at Potosí: continuity in the institution, change in its master and its work. Beside it the colonies introduced new systems: encomienda grants of Indigenous labor and tribute, hacienda wage and debt labor, indentured servitude for a fixed term, and chattel slavery for life.`
+        body: `The Inca mit’a, a rotating labor duty to the state, was reorganized by Viceroy Toledo in the 1570s to send thousands of Andean men each year to the silver mine at Potosí. The colonies also had encomienda grants of Indigenous labor and tribute, hacienda wage and debt labor, indentured servitude for a fixed term, and chattel slavery for life.`
       },
       {
         category: 'Slavery',
         title: 'Same word, different institution',
-        body: `Slavery in Africa continued in its older forms: enslaved people taken into households, whose children could become part of the family, and captives sent across the Sahara and the Indian Ocean. The plantation economy changed slavery in the Americas: about 278,000 Africans were shipped west in the 1500s and more than 2.5 million in 1701 to 1750, held for life, their children born enslaved, and bound by laws that tied slavery to race. The continuity is the institution's existence; the change is its scale and its kind.`
+        body: `In Africa: enslaved people taken into households, whose children could become part of the family, and captives sent across the Sahara and the Indian Ocean. In the Americas: about 278,000 Africans shipped west in the 1500s and more than 2.5 million in 1701 to 1750, for the sugar and tobacco plantations, held for life, their children born enslaved, under laws that tied slavery to race.`
       }
     ]
   }

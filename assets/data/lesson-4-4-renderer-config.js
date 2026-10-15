@@ -86,7 +86,7 @@
       { label: 'Gold Coast', detail: 'Portugal built the fort of São Jorge da Mina (Elmina) here in 1482 to buy gold; the Dutch took it in 1637. Around 1700 the Asante kingdom rose inland, buying guns from Dutch and English traders on this coast.' },
       { label: 'Kongo', detail: 'The Kingdom of Kongo, near the mouth of the Congo River, traded with Portugal from the 1480s. Its kings stayed independent rulers, became Christians, and grew stronger through the trade.' },
       { label: 'Swahili coast', detail: 'Swahili Arab traders kept trading on the East African coast after the Portuguese arrived. In 1698 Oman took the Portuguese fortress at Mombasa (see the black dot).' },
-      { label: 'Japan', detail: 'The Tokugawa shoguns limited European trade. From 1641 the only Europeans allowed to trade were the Dutch, on the small island of Dejima at Nagasaki.' },
+      { label: 'Japan', detail: 'The Tokugawa shoguns limited European trade. After 1639 the only Europeans allowed to trade were the Dutch, and from 1641 only on the small island of Dejima at Nagasaki.' },
       { label: 'Caribbean', detail: 'Sugar plantations here were worked by enslaved Africans, carried west across the Atlantic (arrows 2 and 3).' },
       { label: '1. Forts on the coast', detail: 'In Africa and Asia, European states mostly built trading posts on the coasts rather than conquering whole countries: the states inland had far more soldiers than Portugal could send. In the Americas, disease and conquest had broken many Indigenous states, so Europeans could take land.' },
       { label: '2 and 3. Enslaved Africans west', detail: 'Enslaved Africans were carried across the Atlantic to the Caribbean and to Brazil, in far larger numbers after 1700.' },
@@ -126,13 +126,13 @@
     steps: [
       { label: 'Read the source', text: '<blockquote>"1. Japanese ships are strictly forbidden to leave for foreign countries. ... 3. If any Japanese returns from overseas after residing there, he must be put to death. 4. If there is any place where the teachings of padres (Christianity) is practiced, the two of you must order a thorough investigation. ... 8. All incoming ships must be carefully searched for the followers of padres."</blockquote><small>Edict of 1635, addressed to the two magistrates (bugyō) of Nagasaki, articles 1, 3, 4 and 8, translated in David J. Lu, <em>Japan: A Documentary History</em> (1997). Padres were Catholic priests.</small>' },
       { label: 'Point of view', text: 'Written by the senior councilors of the shogun, the top officials of Japan\'s government. They saw foreign trade and Christianity as matters the government had to control.' },
-      { label: 'Audience and purpose', text: 'The audience was "the two of you," the government\'s two officials at Nagasaki, the port where foreign ships traded. The purpose was to tell them what to enforce: keep Japanese at home, keep Christianity out, and search every ship.' },
+      { label: 'Audience and purpose', text: 'The audience was "the two of you," the government\'s two officials at Nagasaki, the main port where Portuguese and Chinese ships traded. The purpose was to tell them what to enforce: keep Japanese at home, keep Christianity out, and search every ship.' },
       { label: 'Situation', text: 'Portuguese and Spanish missionaries had made many Christian converts in Japan, and the shogunate saw them as a danger to its power. Knowing that, the orders read as a government protecting its control.' }
     ],
-    prompt: 'Now do it yourself with a different source. In 1639, the shogun\'s senior councilors, the same top officials who wrote the 1635 orders, issued this order (translated in Lu, 1997; words in brackets are explanations): "The matter relating to the proscription [ban] of Christianity is known [to the Portuguese]. However, heretofore [until now] they have secretly transported those who are going to propagate [spread] that religion. ... entry by the Portuguese galeota [ship] is forbidden." In 2 to 3 sentences, identify the order\'s point of view and its purpose, and explain how its situation helps explain why Japan limited trade with the Portuguese but not with everyone.',
+    prompt: 'Now do it yourself with a different source. In 1639, the shogun\'s senior councilors, the same office that issued the 1635 orders, issued this order (translated in Lu, 1997; words in brackets are explanations): "The matter relating to the proscription [ban] of Christianity is known [to the Portuguese]. However, heretofore [until now] they have secretly transported those who are going to propagate [spread] that religion. ... entry by the Portuguese galeota [ship] is forbidden." In 2 to 3 sentences, identify the order\'s point of view and its purpose, and explain how its situation helps explain why Japan limited trade with the Portuguese but not with everyone.',
     criteria: [
       'I named the point of view: who issued the order, and how they saw Christianity.',
-      'I stated the purpose in my own words, using words from the source.',
+      'I stated the purpose in my own words and backed it with a word or phrase from the source.',
       'I explained how the situation (missionaries and Christian converts) shaped the order.'
     ]
   };
@@ -183,16 +183,16 @@
       alt: 'Black-and-white engraving of Nagasaki harbor: the city and hills on the left, a small walled compound flying a flag on an island just right of the middle, and Dutch ships, Japanese boats and Chinese junks in the water.',
       url: '../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:AMH-7112-KB_View_of_Nagasaki.jpg',
-      caption: 'A German engraving by Johann Wolfgang Heydt, published in Germany in 1744 in a book printed by J. C. Tetschner, for European readers. Heydt never went to Japan, so he did not draw this view from life. Its legend names the city of Nagasaki, the small island "where the Dutch live" (Dejima), a Chinese island, a Dutch company ship, Japanese ships, and Chinese junks. From 1641 Japan allowed only the Dutch, of all Europeans, to trade, and only on Dejima.',
+      caption: 'A German engraving by Johann Wolfgang Heydt, published in Germany in 1744 in a book printed by J. C. Tetschner, for European readers. Heydt never went to Japan, so he did not draw this view from life. Its legend names the city of Nagasaki, the small island "where the Dutch live" (Dejima), a Chinese island, a Dutch company ship, Japanese ships, and Chinese junks. The two large three-masted ships at the right are Dutch company ships; most of the smaller sailing ships are Chinese junks and Japanese boats. After 1639 the Dutch were the only Europeans allowed to trade in Japan, and from 1641 only on Dejima.',
       prompt: 'NOTICE the walled compound flying a flag just right of the middle: that is Dejima. Compare it with the city to its left, and notice which ships are in the harbor. INFER who controlled trade in this harbor. What does the picture show about Japan\'s rules that a list of Dutch trade goods would not?'
     },
     {
-      title: 'A Brass Crucifix from the Kingdom of Kongo',
-      alt: 'A brass cross with Christ in the middle wearing a patterned cloth around his waist. Two small figures with hands together kneel on top of the arms, one stands on the cross above Christ, and two sit on the cross below his feet.',
-      url: '../assets/images/topics/4-4/kongo-crucifix-met.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Crucifix_MET_hz1999_295_5.jpg',
-      caption: 'A brass crucifix made by Kongo artists in the 1600s or 1700s. Two small figures kneel on top of its arms, one stands on the cross above Christ, and two more sit on the cross below his feet. Kongo\'s king was baptized in 1491, and under his son Afonso I Christianity became the religion of the royal court. The Metropolitan Museum of Art.',
-      prompt: 'NOTICE how the figure of Christ and the small figures are made and dressed, and what metal the cross is made of. INFER what this object suggests about Christianity in Kongo, whose kings made it the religion of the royal court while they traded with Portugal. What can one religious object not tell you about Kongo\'s kings, its trade, or who in Kongo was Christian?'
+      title: 'Mombasa, a Swahili Port, 1572',
+      alt: 'Hand-colored engraving labeled MOMBAZA: a crowded town of tall stone houses and towers on a green island, palm trees behind it, small boats in front, and sailing ships at the right.',
+      url: '../assets/images/topics/4-4/mombasa-braun-hogenberg-1572.jpg',
+      sourceUrl: 'https://www.loc.gov/resource/g3200m.gct00128a/?sp=118',
+      caption: 'Mombasa, a Swahili trading port on the East African coast, from Georg Braun and Frans Hogenberg\'s book of the world\'s cities, first printed in Cologne in 1572. It was engraved in Europe from sketches by Portuguese visitors, so its towers may look more European than Mombasa did. Portugal attacked the town in the 1500s and later held a fort there; Oman took that fort in 1698. Library of Congress.',
+      prompt: 'NOTICE the size of the town, its buildings, and the ships and boats around it. INFER what kind of place Mombasa was for merchants on the Indian Ocean, and why first Portugal and then Oman wanted it. What can a picture made in Europe from Portuguese sketches not tell you about the Swahili merchants who lived and traded there?'
     },
     {
       title: 'A Nahua Complaint Against the Encomenderos, Codex Kingsborough, 1550s',

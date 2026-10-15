@@ -158,7 +158,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "The fort of Elmina, about 1668",
-          caption: "The castle of Elmina, from Olfert Dapper's description of Africa (Amsterdam, 1668); the book titles the view as Elmina in the time of the Portuguese. Portugal built it in 1482; the Dutch took it in 1637.",
+          caption: "The castle of Elmina in Dutch hands, from Olfert Dapper's description of Africa (Amsterdam, 1668); the fort on the hill behind is the Dutch Coenraadsburg. Portugal built the castle in 1482; the Dutch took it in 1637.",
           url: "../assets/images/topics/4-4/elmina-dapper-c1668.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:AMH-6856-KB_View_of_the_fort_of_El_Mina.jpg"
         }
@@ -212,7 +212,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Empires from the Sea, and a World with Its Own Rules",
     url: "../assets/images/instructional-maps/topic-4-4.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-4-4.svg",
-    caption: "European forts on the coasts of Africa and Asia, colonies and plantations in the Americas, and places that kept their own rules: Japan, Macau under Ming officials, Kongo, and the Swahili coast.",
+    caption: "European forts on the coasts of Africa and Asia, colonies and plantations in the Americas, and places that kept their own rules: Japan, Macau under Ming officials, and Kongo. On the Swahili coast, merchants kept trading, and Oman drove the Portuguese from Mombasa in 1698.",
     intro: "Use the map to see the pattern of the topic. In Africa and Asia, most European places were forts on a coast. In the Americas, Europeans held colonies and plantations. And several places on the map set their own terms for Europeans, or pushed them back.",
     prompt: "Find ONE European fort or trading post on the map and ONE place that kept its own rules. Using the map and its key, explain why Europeans held coasts in Africa and Asia but colonies in the Americas, and name one way the place you chose kept its own rules."
   },
@@ -231,18 +231,18 @@ window.BEHISTORICAL_LESSON = {
 
   evidenceLab: {
     title: "Evidence Lab: What Changed, and What Kept Going",
-    intro: "Use the cards to build one continuity-and-change claim from two real objects: a Japanese screen, a German engraving of Nagasaki, a Kongo crucifix, a Nahua complaint, and a French engraving of a sugar works.",
+    intro: "Use the cards to build one continuity-and-change claim from two real objects: a Japanese screen, a German engraving of Nagasaki, a European engraving of Mombasa, a Nahua complaint, and a French engraving of a sugar works.",
     prompt: "Choose one card that shows a change and one that shows a continuity, and explain what each shows, what it suggests, and what it cannot tell you."
   },
 
   primarySource: {
     title: "Primary Source: Afonso I of Kongo to João III of Portugal, 1526",
     intro: "Afonso I (Nzinga Mbemba) was king of Kongo from the early 1500s until the 1540s. Kongo was the strongest state in west-central Africa, and its kings had traded with Portugal since the 1480s. Afonso was a Christian, could read and write Portuguese, and wrote many letters to the kings of Portugal. He wrote this one on 6 July 1526 to King João III. Kongo already had enslaved people of its own, and Afonso sold war captives taken outside Kongo to Portuguese traders. This passage is translated by Luís Madureira in John K. Thornton's book on Afonso (2023). Words in brackets are explanations added for this lesson.",
-    text: "Sire, Your Highness knows that our kingdom is losing its way, and we must provide the solution that this situation calls for. The cause of our troubles is the excessive permissiveness [too much freedom] with which your trading agents and officials allow the men who come to this kingdom to establish shops and sell merchandise. These men engage in practices that we strictly forbid, and they scatter throughout our kingdom and dominions in such large numbers that many of our vassals, who had pledged obedience to us, have now renounced their obedience [stopped obeying us] because they have a greater abundance of goods available to them than we do. ... However, we do not consider this harm as terrible as what we suffer each day when these traders carry away our native-born countrymen and the children of our nobles and vassals as well as relatives of ours. This continues because thieves and unscrupulous [dishonest] men, driven by their greed for goods from your kingdom, snatch them and sell them to these traders. ... In order to avoid it, we need only priests and a few people to teach in our kingdoms' schools. ... Please instruct your trading agents to send neither traders nor trading goods here because we do not wish to carry out trade and export slaves.",
+    text: "Sire, Your Highness knows that our kingdom is losing its way, and we must provide the solution that this situation calls for. The cause of our troubles is the excessive permissiveness [too much freedom] with which your trading agents and officials allow the men who come to this kingdom to establish shops and sell merchandise. These men engage in practices that we strictly forbid, and they scatter throughout our kingdom and dominions [lands we rule] in such large numbers that many of our vassals [lords who owed us loyalty], who had pledged obedience to us, have now renounced their obedience [stopped obeying us] because they have a greater abundance of goods available to them than we do. ... However, we do not consider this harm as terrible as what we suffer each day when these traders carry away our native-born countrymen and the children of our nobles and vassals as well as relatives of ours. This continues because thieves and unscrupulous [dishonest] men, driven by their greed for goods from your kingdom, snatch them and sell them to these traders. ... In order to avoid it, we need only priests and a few people to teach in our kingdoms' schools. ... Please instruct your trading agents to send neither traders nor trading goods here because we do not wish to carry out trade and export slaves.",
     questions: [
       "Audience and purpose: Afonso wrote to the king of Portugal. What does he want the king to do, and why was the king of Portugal the right person to ask?",
       "Point of view: Afonso complains first that his vassals \"have now renounced their obedience\" because traders sell to them directly. What does this complaint show about what Afonso, as a king, cared about most?",
-      "Situation: Afonso himself sold war captives taken outside Kongo to the Portuguese. Knowing that, how should a historian read his words \"we do not wish to carry out trade and export slaves\"? What is the letter strong evidence of, and what is it weak evidence of?"
+      "Situation: Afonso himself sold war captives taken outside Kongo to the Portuguese. Knowing that, how should a historian read his words \"we do not wish to carry out trade and export slaves\"? What does the letter prove well, and what can it not prove?"
     ]
   },
 

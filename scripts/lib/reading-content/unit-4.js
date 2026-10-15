@@ -744,11 +744,11 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Japan went further. Its rulers, the Tokugawa shoguns, feared that Christianity, which Portuguese and Spanish missionaries had spread in Japan, would divide the country. In 1635 the shogun's senior councilors sent orders to their officials at Nagasaki, the port where foreign ships traded. The first order reads: \"Japanese ships are strictly forbidden to leave for foreign countries.\" Another says that any Japanese who returns from overseas after living there \"must be put to death.\" Other orders told the officials to search every arriving ship for Christians. In 1639 the councilors banned Portuguese ships from Japan altogether."
+            "html": "Japan went further. Its rulers, the Tokugawa shoguns, feared that Christianity, which Portuguese and Spanish missionaries had spread in Japan, would divide the country. In 1635 the shogun's senior councilors sent orders to their officials at Nagasaki, the main port where Portuguese and Chinese ships traded. The first order reads: \"Japanese ships are strictly forbidden to leave for foreign countries.\" Another says that any Japanese who returns from overseas after living there \"must be put to death.\" Other orders told the officials to search every arriving ship for Christians. In 1639 the councilors banned Portuguese ships from Japan altogether."
           },
           {
             "type": "p",
-            "html": "From 1641, the only Europeans allowed to trade in Japan were the Dutch, and they were confined to Dejima, a small artificial island in Nagasaki harbor. Chinese merchants kept trading at Nagasaki too. Europe's empires grew, but China and Japan still decided how far into their countries Europeans could reach."
+            "html": "After 1639, the only Europeans allowed to trade in Japan were the Dutch, and from 1641 they were confined to Dejima, a small artificial island in Nagasaki harbor. Chinese merchants kept trading at Nagasaki too. Europe's empires grew, but China and Japan still decided how far into their countries Europeans could reach."
           }
         ],
         "callout": {
@@ -880,7 +880,7 @@ module.exports = {
         "num": "01",
         "skill": "Continuity and Change",
         "text": "Explain ONE change in who held power from the late 1400s on: a European trading post and the rivalry behind it, or an African state that grew stronger. Then explain ONE continuity: how China or Japan kept control of trade with Europeans, or how Asian merchants kept the Indian Ocean trading.",
-        "placeholder": "One change was... This happened because... One continuity was... China or Japan kept control by..."
+        "placeholder": "One change was... This happened because... One continuity was... It kept going because..."
       },
       {
         "num": "02",

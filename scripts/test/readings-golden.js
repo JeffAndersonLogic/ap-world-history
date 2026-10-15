@@ -111,7 +111,16 @@ const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
 // Ho records it in Yunnan in the 1560s and 1570s, probably overland. The 4.3 entry
 // now says it came by more than one route, one through the Philippines to Fujian.
 // The fingerprint moved from 85f1913... and only that 4.3 sentence changed.
-const APPROVED_UNIT4_REWRITE_BLOB = '0394dcf1b56684dfc55d9f82085a67f1ac6705e8';
+// Topic 4.4's story-first rewrite, "Empires from the Sea", was written from the
+// 4.4 story (docs/TOPIC-4-4-STORY-DRAFT.md) on 2026-10-14 and went through three
+// independent review passes (six reviewers; findings and dispositions in
+// docs/TOPIC-4-4-CLAIM-LEDGER.md), approved under Jeff's standing rule of
+// 2026-10-12, which delegates story and reading approval to the reviewer loop.
+// The loop ended on its three-pass safety valve, every finding fixed or logged.
+// The build was taken over by a second session on 2026-10-15, which reran pass 2
+// and ran pass 3. The fingerprint moved from 0394dcf... and only the 4.4 entry
+// changed; 4.1 to 4.3 and 4.5 to 4.8 are byte-for-byte unchanged.
+const APPROVED_UNIT4_REWRITE_BLOB = '431fa88041a73038e2b919a04510ae2ebf25b160';
 const unit4SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-4.js');
 const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
   && gitBlobSha(fs.readFileSync(unit4SourcePath, 'utf8')) === APPROVED_UNIT4_REWRITE_BLOB;
