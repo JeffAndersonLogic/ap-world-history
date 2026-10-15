@@ -7,8 +7,9 @@ CED source file and the scholarship; the record of what they found is in
 `docs/TOPIC-4-4-CLAIM-LEDGER.md`, under "Review findings".
 
 **Resume here (2026-10-15):** Phases 1 to 8 are committed, and review pass 1 (37 findings) is
-fixed and logged in the claim ledger. Next: review passes 2 and 3 with fresh reviewers, then the
-Unit 4 fingerprint, the browser suite and the topic audit.
+fixed and logged in the claim ledger. Review pass 2 is running (two fresh reviewers, prompts as in
+pass 1). Next: fix and log pass 2, then pass 3 if needed, the Unit 4 fingerprint, the browser suite
+and the topic audit.
 
 **Taught:** Green Thursday 2026-11-05, Silver Friday 2026-11-06, from Jeff's corrected November
 Canvas calendar (2026-10-14), already in `assets/data/announcements-schedule.js` as date-only
