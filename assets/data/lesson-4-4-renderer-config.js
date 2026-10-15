@@ -183,7 +183,7 @@
       alt: 'Black-and-white engraving of Nagasaki harbor: the city and hills on the left, a small walled compound flying a flag on an island just right of the middle, and Dutch ships, Japanese boats and Chinese junks in the water.',
       url: '../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:AMH-7112-KB_View_of_Nagasaki.jpg',
-      caption: 'A German engraving by Johann Wolfgang Heydt, published in Germany in 1744 in a book printed by J. C. Tetschner, for European readers. Its legend names the city of Nagasaki, the small island "where the Dutch live" (Dejima), a Chinese island, a Dutch company ship, Japanese ships, and Chinese junks. From 1641 Japan allowed only the Dutch, of all Europeans, to trade, and only on Dejima.',
+      caption: 'A German engraving by Johann Wolfgang Heydt, published in Germany in 1744 in a book printed by J. C. Tetschner, for European readers. Heydt never went to Japan, so he did not draw this view from life. Its legend names the city of Nagasaki, the small island "where the Dutch live" (Dejima), a Chinese island, a Dutch company ship, Japanese ships, and Chinese junks. From 1641 Japan allowed only the Dutch, of all Europeans, to trade, and only on Dejima.',
       prompt: 'NOTICE the walled compound flying a flag just right of the middle: that is Dejima. Compare it with the city to its left, and notice which ships are in the harbor. INFER who controlled trade in this harbor. What does the picture show about Japan\'s rules that a list of Dutch trade goods would not?'
     },
     {

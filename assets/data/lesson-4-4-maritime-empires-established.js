@@ -158,7 +158,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "The fort of Elmina, about 1668",
-          caption: "Elmina in Dutch hands, from Olfert Dapper's description of Africa (Amsterdam, about 1668). Portugal built it in 1482; the Dutch took it in 1637.",
+          caption: "The castle of Elmina, from Olfert Dapper's description of Africa (Amsterdam, 1668); the book titles the view as Elmina in the time of the Portuguese. Portugal built it in 1482; the Dutch took it in 1637.",
           url: "../assets/images/topics/4-4/elmina-dapper-c1668.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:AMH-6856-KB_View_of_the_fort_of_El_Mina.jpg"
         }
@@ -172,7 +172,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Nagasaki harbor and Dejima, about 1740",
-          caption: "A German engraving by Johann Wolfgang Heydt, published in Germany in 1744 for European readers. Its legend marks the Dutch island (Dejima), a Dutch company ship, Japanese ships and Chinese junks.",
+          caption: "A German engraving by Johann Wolfgang Heydt, published in Germany in 1744 for European readers. Heydt never went to Japan. Its legend marks the Dutch island (Dejima), a Dutch company ship, Japanese ships and Chinese junks.",
           url: "../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:AMH-7112-KB_View_of_Nagasaki.jpg"
         }

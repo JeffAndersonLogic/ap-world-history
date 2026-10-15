@@ -840,7 +840,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "The Atlantic slave trade carried more people across an ocean than any slave trade before it. Slavery in the Americas was for life and inherited (laws in the English colonies made the children of enslaved women enslaved too), and it came to be tied to race. Africans and their descendants became most of the people in the Caribbean colonies and a large part of Brazil's population, and their languages, beliefs, and foods came with them. That is what the College Board calls \"significant demographic, social, and cultural changes.\""
+            "html": "The Atlantic slave trade carried more people across an ocean than any slave trade before it. Slavery in the Americas was for life and inherited (laws in the English colonies made the children of enslaved women enslaved too), and it came to be tied to race. Africans and their descendants became most of the people in the British, French, and Dutch Caribbean colonies and a large part of Brazil's population, and their languages, beliefs, and foods came with them. That is what the College Board calls \"significant demographic, social, and cultural changes.\""
           }
         ],
         "callout": {

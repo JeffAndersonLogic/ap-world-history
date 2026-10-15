@@ -87,7 +87,7 @@ const scenarios = [
     evidence: [
       E('goa', 'Goa Captured, 1510', 'Albuquerque took Goa, an island port with a good harbor, and made it a Portuguese base on India’s west coast.', 'Shows a captured port becoming a Portuguese base.'),
       E('malacca', 'Malacca Captured, 1511', 'Control of Malacca offered leverage near the route between the Indian Ocean and South China Sea.', 'Explains the choke-point strategy.'),
-      E('hormuz', 'Hormuz Taken, 1515', 'Albuquerque forced the ruler of Hormuz to accept a Portuguese fortress and pay tribute, at the mouth of the Persian Gulf.', 'Shows empire built from a few key ports, some kept by deals with local rulers.'),
+      E('hormuz', 'Hormuz Fortified, 1515', 'Hormuz, at the mouth of the Persian Gulf, had owed Portugal tribute since 1507; in 1515 Albuquerque returned and built a Portuguese fortress there.', 'Shows empire built from a few key ports, some kept by deals with local rulers.'),
       E('limited', 'Limited Portuguese Manpower', 'Portugal could garrison key positions but could not occupy the Indian Ocean’s enormous inland regions.', 'Sets the central strategic constraint.'),
       E('networks', 'Existing Asian Trade Networks', 'Merchants trading between Asian ports, and the regional markets they served, are still trading as they did before the Portuguese came.', 'Prevents an inaccurate replacement narrative.'),
       E('cartaz', 'Cartaz Sea Pass', 'Portuguese authorities required many vessels to buy passes, follow approved routes, and face inspection.', 'Shows coercive regulation of maritime trade.'),

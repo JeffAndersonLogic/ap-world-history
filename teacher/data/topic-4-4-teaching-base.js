@@ -222,7 +222,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'São Jorge da Mina (Elmina) was built by Diogo de Azambuja in 1482 to control the gold trade of the Gold Coast. The Dutch West India Company took it in 1637. The engraving, from Olfert Dapper\'s description of Africa (Amsterdam, about 1668), shows it in Dutch hands, with the smaller Fort Coenraadsburg on the hill behind.',
+          'São Jorge da Mina (Elmina) was built by Diogo de Azambuja in 1482 to control the gold trade of the Gold Coast. The Dutch West India Company took it in 1637. The engraving, from Olfert Dapper\'s description of Africa (Amsterdam, 1668), is titled "Casteel del Mina", and the book presents it as Elmina in the time of the Portuguese.',
           'Afonso de Albuquerque took Goa (1510), Malacca (1511) and Hormuz (1515). The Portuguese crown held the pepper trade as a royal monopoly and drew customs from its ports: profit for rulers and merchants, the CED\'s words.',
           'Elmina later became a center of the Atlantic slave trade; that is the scale slide, later in the lesson.'
         ],
@@ -250,7 +250,7 @@ window.BEHISTORICAL_TEACHING = {
           'This is the second sentence of KC-4.3.II.A.i, which the old 4.4 pages never taught: some Asian states limited the disruptive economic and cultural effects of European trade with restrictive or isolationist policies. Ming China and Tokugawa Japan are the CED\'s examples.',
           'Macau: Portuguese merchants settled from 1557 with the permission of Chinese provincial officials; formal recognition and the annual ground rent are dated variously from 1554 to 1573. Chinese officials kept authority in and around the port.',
           'Japan: the shogun\'s senior councilors sent five sets of orders to the Nagasaki magistrates between 1633 and 1639; those of 1635 and 1639 are translated in David J. Lu, Japan: A Documentary History (1997). The Spanish had been expelled in 1624; the English left in 1623. The Dutch moved from Hirado to Dejima in 1641.',
-          'The engraving is German, signed by Johann Wolfgang Heydt ("I. W. Heydt del. et sculp.") and published in Germany in 1744 in a book printed by J. C. Tetschner: a European picture made for European readers. It has its own legend: the city of Nagasaki, the island where the Dutch live, a Chinese island, a company ship, Japanese ships and Chinese junks.'
+          'The engraving is German, signed by Johann Wolfgang Heydt ("I. W. Heydt del. et sculp.") and published in Germany in 1744 in a book printed by J. C. Tetschner: a European picture made for European readers. Heydt never went to Japan (his planned voyage there was dropped for lack of money), so he did not draw it from life. It has its own legend: the city of Nagasaki, the island where the Dutch live, a Chinese island, a company ship, Japanese ships and Chinese junks.'
         ],
         ask: 'Who wrote the rules for trade in this harbor?',
         listenFor: 'Japan\'s government, not the Dutch.',
@@ -396,7 +396,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'Left: the first European picture of Potosí, in Pedro Cieza de León\'s Crónica del Perú (Seville, 1553). Show it as the place the mit’a served; what the silver did in the world is Topic 4.5.',
+          'Left: the woodcut of Potosí in Pedro Cieza de León\'s Crónica del Perú (Seville, 1553), which the historian Kris Lane calls the mountain\'s "first iconic image." Show it as the place the mit’a served; what the silver did in the world is Topic 4.5.',
           'Right: the Codex Kingsborough, or Codex of Tepetlaoztoc (British Museum), painted by Nahua artists about the 1550s for a lawsuit: the people of Tepetlaoztoc, near Texcoco, complained to the Spanish crown about the tribute and labor demanded by their encomenderos. This page shows a Spaniard named Espinosa, who had charge of the town, beating a Nahua man.',
           'Sourcing in one move: the codex was made by the people who owed the labor, for a Spanish court. The woodcut was made in Spain by a Spanish chronicler.'
         ],
@@ -456,7 +456,7 @@ window.BEHISTORICAL_TEACHING = {
         caption: 'A sugar works in the French Caribbean, 1667',
         steps: [
           { label: 'Demand', text: 'Sugar, and later tobacco, needed huge numbers of workers.' },
-          { label: 'Demographic', text: 'Africans and their descendants became most of the people in the Caribbean colonies.' },
+          { label: 'Demographic', text: 'Africans and their descendants became most of the people in the British, French and Dutch Caribbean colonies.' },
           { label: 'Social', key: true, text: 'Slavery for life, inherited, and tied to race.' },
           { label: 'Cultural', text: 'African languages, beliefs and foods crossed with them.' }
         ]
@@ -465,10 +465,10 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 3,
         land: [
           'KC-4.2.II.C: the growth of the plantation economy increased the demand for enslaved labor in the Americas, "leading to significant demographic, social, and cultural changes." The three steps after Demand are those three words, in order.',
-          'Demographic: on Barbados, enslaved Africans outnumbered Europeans by the late 1600s, and the pattern spread across the Caribbean; in Brazil, Africans and their descendants were a large part of the population.',
+          'Demographic: on Barbados, enslaved Africans outnumbered Europeans by the late 1600s, and the pattern spread across the British, French and Dutch Caribbean (Spanish islands had smaller African shares); in Brazil, Africans and their descendants were a large part of the population.',
           'Social: chattel slavery was for life and inherited; Virginia\'s 1662 law made the children of enslaved women enslaved; English colonial law tied slavery to race.',
           'Cultural: name it in one sentence. How African, American and European cultures mixed is 4.5.',
-          'The engraving is a French Antilles sugar works drawn for the missionary Du Tertre\'s history of the islands (1667): the mill (moulin), furnaces and kettles, the boiling house, and its key also marks the \'cases de nègres\', the huts of the enslaved workers. It shows the work, not the workers\' lives; a European artist made it for European readers.'
+          'The engraving is a French Antilles sugar works drawn for the missionary Du Tertre\'s history of the islands (1667): the mill (moulin), furnaces and kettles, the boiling house, and its key also marks the \'cases à nègres\', the huts of the enslaved workers. It shows the work, not the workers\' lives; a European artist made it for European readers.'
         ],
         ask: 'Which of the three changes would a person born on a plantation feel first?',
         listenFor: 'The social one: born enslaved, for life.',

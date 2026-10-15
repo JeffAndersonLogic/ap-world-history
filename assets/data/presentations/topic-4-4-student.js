@@ -416,7 +416,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Demographic",
-            "text": "Africans and their descendants became most of the people in the Caribbean colonies."
+            "text": "Africans and their descendants became most of the people in the British, French and Dutch Caribbean colonies."
           },
           {
             "label": "Social",

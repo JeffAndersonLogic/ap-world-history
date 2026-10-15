@@ -236,7 +236,7 @@ fewer than 300,000 Africans were forced onto ships to the Americas. In the fifty
 1750, more than 2.5 million were. The Atlantic trade carried more people across an ocean than any
 slave trade before it. Slavery in the Americas was for life and inherited (laws in the English
 colonies made the children of enslaved women enslaved too), and it came to be tied to race. Africans and their descendants became most of the people
-in the Caribbean colonies and much of Brazil, and their languages, faiths and foods came with
+in the British, French and Dutch Caribbean colonies and much of Brazil, and their languages, faiths and foods came with
 them. That is the "significant demographic, social, and cultural changes" the CED names.
 
 **Put it together.** Europeans built empires from the sea: new forts, new colonies, new labor
@@ -277,7 +277,7 @@ Shorter for the wall: **Empires from the sea. A world with its own rules.**
 | Encomienda, hacienda, indentured servitude, chattel slavery | KC-4.2.II.D ("introduced new labor systems") | New systems. **Change.** |
 | Enslaved people incorporated into households; export across the Sahara and the Indian Ocean | KC-4.2.II.B | Slavery in Africa continued in its older forms. **Continuity.** |
 | Fewer than 300,000 Africans carried to the Americas in the 1500s, more than 2.5 million in 1701 to 1750 (Slave Voyages estimates) | KC-4.2.II.C ("increased the demand") | The scale of the change, as estimates. |
-| Hereditary, race-based chattel slavery; African majorities in Caribbean colonies; African languages, faiths and foods | KC-4.2.II.C ("demographic, social, and cultural changes") | The three kinds of change the CED names. Cultural mixing itself is **bridge only** (4.5). |
+| Hereditary, race-based chattel slavery; African majorities in the British, French and Dutch Caribbean colonies; African languages, faiths and foods | KC-4.2.II.C ("demographic, social, and cultural changes") | The three kinds of change the CED names. Cultural mixing itself is **bridge only** (4.5). |
 
 Named examples are evidence inside a claim. None earns its own slide unless the story needs it.
 
