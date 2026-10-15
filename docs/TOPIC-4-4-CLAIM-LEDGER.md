@@ -15,17 +15,25 @@ Status is exactly one of VERIFIED, NARROWED, REMOVED, NEEDS JEFF.
 ## Sources leaned on, and in what role
 
 - **Heywood 2009:** Linda M. Heywood, "Slavery and Its Transformation in the Kingdom of Kongo:
-  1491–1800," *Journal of African History* 50 (2009), pp. 1 to 22. Read in full (author copy). The
-  specialist source on slavery in Kongo and on what Afonso's letters complain about.
-- **Thornton 2023:** John K. Thornton, *Afonso I Mvemba a Nzinga, King of Kongo: His Life and
-  Correspondence* (Hackett, 2023), p. 203, the translation of the letter of 6 July 1526, as
-  reprinted in Dunn and Willoughby, *Panorama: A World History*, vol. 2 (2026), Source 3.1. A
-  primary source in a specialist's translation.
-- **Vaporis 2012:** Constantine Nomikos Vaporis, *Voices of Early Modern Japan* (ABC-CLIO, 2012),
-  ch. 17, "Regulating Foreign Relations: The 'Closed Country Edicts' (1635, 1639)," translating the
-  1635 memorandum to the Nagasaki magistrates and the 1639 exclusion of the Portuguese from
-  *Tokugawa kinreikō*, vol. 2 (1959). A primary source in a specialist's translation, with an
-  introduction.
+  1491–1800," *Journal of African History* 50 (2009), pp. 1 to 22. Read in full (author copy, and again by the second session from the copy at
+  piketty.pse.ens.fr/files/Heywood2009JAH.pdf). The specialist source on slavery in Kongo and on what Afonso's letters complain about.
+- **Madureira in Thornton 2023:** John K. Thornton, *Afonso I Mvemba a Nzinga, King of Kongo: His
+  Life and Correspondence* (Hackett, 2023), p. 203, the letter of 6 July 1526 in the translation of
+  Luís Madureira (Hackett's credit line: "Translations by Luís Madureira"), as reprinted in Dunn and
+  Willoughby, *Panorama: A World History*, vol. 2 (2026), Source 3.1. A primary source in a
+  specialist's translation. Credited to Thornton alone until pass 2 found the translator.
+- **Lu 1997:** David J. Lu, *Japan: A Documentary History* (M. E. Sharpe, 1997), pp. 221 and 222:
+  the edict of 1635 "Addressed to the Joint Bugyō of Nagasaki" and the 1639 exclusion of the
+  Portuguese. Read in Columbia University's Asia for Educators reprint
+  (afe.easia.columbia.edu/ps/japan/tokugawa_edicts_foreigners.pdf) for articles 1 to 4; the 1639
+  text and article 8 as quoted in R. E. Scully, *International Symposia on Jesuit Studies* (2025),
+  n. 43, citing Lu p. 222. Every Japanese quotation in the topic is now Lu's, verbatim.
+- **Vaporis 2012 (no longer quoted):** Constantine Nomikos Vaporis, *Voices of Early Modern Japan*
+  (2012), ch. 17. The first session quoted the 1635 and 1639 orders from it; pass 2 found that two
+  articles matched Lu's translation and two did not, and its text could not be opened this session
+  to settle which wording was whose. Its introduction is still the source for the five sets of
+  orders sent to Nagasaki between 1633 and 1639, which other summaries of the sakoku edicts give
+  too.
 - **Slave Voyages:** the Trans-Atlantic Slave Trade Database estimates (legacy.slavevoyages.org,
   "Assessment: Estimates"), embarked captives by quarter century and flag. The standard dataset.
 - **Pearson 1976 and the debate on the cartaz:** M. N. Pearson, *Merchants and Rulers in Gujarat:
@@ -126,3 +134,57 @@ captures and slide screenshots; one for history, checked against primary texts a
 Two defects of the builder's own were found while fixing: two apostrophes typed inside single-quoted
 strings broke the renderer config (caught by the skills-map build and `node --check`), and a stray
 line of tool markup sat at the end of this ledger and the story draft. Both fixed.
+
+### Pass 2
+
+The first session launched pass 2 on 2026-10-15 and ran out of usage before it reported, so
+nothing from that run reached this ledger. A second session took the build over the same day and
+ran pass 2 from scratch: two fresh reviewers with pass 1's prompts, working from new captures
+(the lesson page and all ten module pop-ups as rendered in Chromium, the reading, the deep
+reading, the BeInTheRoom page plus its generator entry, all 25 slides with notes, and the Canvas
+text).
+
+### Pass 2, reviewer 1 (page truth and readability), 19 findings
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | The Skill Builder practice asks for the 1639 order's audience, which is nowhere on the page; the bracket "[to the Portuguese]" points at the wrong answer | Fixed: the practice asks for the order's point of view (named on the page: the same senior councilors who wrote the 1635 orders) and purpose; the checklist and slide 21 match. The bracket is the translator's and stays, now that the order is quoted from Lu verbatim (history 1, below). |
+| 2 | The lecture card and the deep reading publish the answer to First & 10 Q2 and the Primary Source questions about Afonso's letter | Fixed in part. The lecture card loses "because trade he did not control weakened his power". The deep reading loses "often quoted as a protest ... too simple" and the "so threatened Afonso's legitimacy" conclusion, and keeps Heywood's facts (Kongo's own slavery, the slave market, free-born Kongo protected by custom, the people the letter names were free-born). The closing card now states what Afonso protested and what he sold, without the verdict. Kept: the deep reading's mechanism (imports through the king made nobles loyal), because it is the Key Concept's "increase in their influence" and no longer quotes or interprets the letter. |
+| 3 | Slide 20 projects a model answer for half of Checkpoint 2, in both decks | Fixed: the sharpen slide now models an ungraded case, the Indian Ocean (the cartaz as change, Gujarati, Swahili Arab and Javanese merchants as continuity, and the reason), and its note says not to write a slavery model on the board. Its band moves to KC-4.3.II.A.iii; Learning Objective G's band moves to slide 16, so the Key Concept band check still covers every code. |
+| 4 | KC-4.3.II.C and KC-4.3.II.A.iii are asked for only in optional modules; Learning Target 2's Indian Ocean change has no criterion | Fixed: First & 10 Q1 (required) now asks for a trading post "and the rivalry behind it" and accepts Asian merchants in the Indian Ocean as the continuity; Success Criterion 2, Checkpoint 1 and its checklist now name the cartaz as what the merchants traded on despite; slide 20 practices KC-4.3.II.A.iii in class. |
+| 5 | The crucifix card asks how Kongo "made Christianity their own", which is religious blending (KC-4.1.VI, owned by 4.5) | Fixed: the prompt asks what the object suggests about Christianity in Kongo, whose kings made it the court religion while trading with Portugal, and what it cannot say about Kongo's kings or trade. Slide 11's note says the same and names blending as 4.5's. |
+| 6 | First & 10 section 6 supports "tied to race" with a law about inheritance | Fixed: the law on the children of enslaved women now sits beside "inherited", and "tied to race" stands on its own. |
+| 7 | "After 1500" frames a topic whose first examples are Elmina (1482) and Kongo (1480s) | Fixed: "from the late 1400s" in the First & 10 deck line, section 1 and Q1; the map's subtitle reads c. 1480 to 1750. The myth "After 1500, Europe took over the world" keeps its wording, because it is the myth. |
+| 8 | The deep reading's labor section asks four questions in one box and three in the next | Fixed: both ask the same four, as the lecture card and the First & 10 do. |
+| 9 | Checkpoint 2 asks "for each change, explain why", but its criteria ask why only for slavery | Fixed: "For the change in slavery, explain why it happened." |
+| 10 | The map's JAPAN label sits out at sea beside the Macau label; the ellipse covers the coarse mainland coast; GOLD COAST sits below its ellipse | Fixed in part: JAPAN now sits to the right of its ellipse (`labelSide: 'right'`), checked in a render. The ellipse is the shared `japan` zone and does cover the drawn Japanese islands; the mainland line through it is the map's coarse coastline. GOLD COAST kept: it is the nearest label to its zone, directly under it, and moving it collides with arrows 1 and 2. |
+| 11 | Slide 6's map is too small to read on the projector | Fixed in part: the title is cut to one line ("Forts, colonies, and their own rules."), which gives the map more of the board. The map's type size is set in `scripts/lib/map-render.js` for all 56 maps, already an adjacent finding from pass 1. Module 01 shows the map full size. |
+| 12 | Slide 7's Elmina picture is a thumbnail | Kept, as in pass 1 (finding 16): the case-file stamp's size is set by the shared template. The picture is shown large in the lecture card and the BeInTheRoom card. |
+| 13 | Slides 7, 8, 16 and 17 do not say on screen that their pictures were made in Europe | Fixed: the credits now read Amsterdam 1668, published in Germany 1744, printed in London 1732, Paris 1667. |
+| 14 | The small gold labels on slides 3 and 25 sit on the pictures at 2:1 to 3:1 | Fixed: both labels removed (they repeated what the slide says). The template's label contrast over a light picture is an adjacent finding. |
+| 15 | BeInTheRoom jargon: "Estado" untranslated, "durable ... indispensable", "hinterland", "Submission", abstract option texts | Fixed: "Estado da Índia, Portugal's government in Asia"; the central question, the captain's and representative's blind spots, three option results and two titles rewritten in plain words. |
+| 16 | BeInTheRoom names Learning Objective E only, while it carries KC-4.3.II.A.iii | Fixed: it names Learning Objectives E and F. |
+| 17 | Archaic words in the sources: "heretofore", "propagate", "excessive permissiveness", "unscrupulous", "renounced their obedience" | Fixed with bracketed glosses, and each source says brackets are explanations. |
+| 18 | The Codex task cannot be done without seeing the picture: the alt text is the title | Fixed: every Evidence Lab card carries a descriptive `alt`, written against the picture itself. The unit renderer now reads `img.alt` and falls back to the title, so no other topic changes. |
+| 19 | The crucifix caption says figures sit "below the cross" | Fixed: two kneel on top of the arms, one stands on the cross above Christ, two sit below his feet (checked on the image); slide 11's alt matches. |
+
+### Pass 2, reviewer 2 (history), 3 findings and 6 doubts
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | The Afonso translation is credited to Thornton; Hackett credits the translations to Luís Madureira | Fixed (Primary Source module, slide 12 note, story draft): "translated by Luís Madureira in John K. Thornton's book." Confirmed on Hackett's page: "Translations by Luís Madureira." |
+| 2 | The Goa scenario's "Ottoman and Regional Rivals" card is wrong for 1515: the Muslim power at sea was Mamluk Egypt until 1517 | Fixed: "Mamluk and Regional Rivals", naming Chaul 1508, Diu 1509, the 1515 Suez fleet and Calicut, with Ottoman timber and guns as supply. |
+| 3 | The crucifix caption | Fixed, as reviewer 1's 19. |
+| D1 | The 1635 and 1639 orders are credited to Vaporis, but articles 4 and 8 and the 1639 text match David J. Lu's translation, and articles 1 and 3 do not | Supported. Columbia's Asia for Educators reprint of Lu (1997, pp. 221 to 222) reads "Japanese ships are strictly forbidden to leave for foreign countries" and "If any Japanese returns from overseas after residing there, he must be put to death", and article 4 is the lesson's word for word. Vaporis's text could not be opened this session. Every quotation now uses Lu's wording verbatim and credits Lu (Skill Builder, First & 10, deep reading, slide 9); the 1639 text is Lu's ("The matter relating to the proscription of Christianity is known [to the Portuguese]. However, heretofore ..."), which the lesson had shortened without marking. The Vaporis quotation on slide 10's note is removed. |
+| D2 | "Armed with guns bought on the coast, Asante defeats Denkyira" overstates Asante's firearms at Feyiase | Narrowed on slide 11: "Asante defeats Denkyira at Feyiase and becomes the main power of the region." The general claim (Asante bought guns from Dutch and English traders as it rose) stays, on Britannica's statement. |
+| D3 | The Goa card calls Goa "the principal Portuguese base" in 1515 | Narrowed: "made it a Portuguese base on India's west coast". Goa was capital only by 1530. |
+| D4 | "About 9,000 men in 1573" does not match Bakewell's estimate (about 9,500) | Removed: slide 13 and the deep reading give only "more than 14,000 by 1578". |
+| D5 | Heydt was in Dutch service in Asia, so "made in Europe, not drawn in Nagasaki" is unverified | Narrowed everywhere to what is known: published in Germany in 1744, a European picture made for European readers. |
+| D6 | The Congo mouth is dated 1482 or 1483 | Narrowed: "the 1480s" on slide 11, "the early 1480s" in the deep reading, "1482 or 1483 (sources differ)" in the note. |
+
+The builder found four more while fixing: "Portugal had perhaps a million and a half people" (no
+source found this session; removed); the deep reading's "goods between China, Japan and Southeast
+Asia that Chinese and Japanese merchants were not then free to carry" (narrowed to the Ming ban
+on direct trade with Japan and the silk-for-silver run); slide 10's "an Asian and African power"
+for Oman (now "an Arabian power"); and slide 14's "the first European picture of Potosí" (see
+the surface rows).

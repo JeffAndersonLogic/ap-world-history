@@ -156,7 +156,7 @@ new sugar plantations needed more workers than ever. Who would do the work, and 
 Today is the answer, and it is bigger than the Americas, because the ships were reaching Africa
 and Asia too.
 
-**Why build empires at all.** After 1500, five European states built empires that were held
+**Why build empires at all.** From the late 1400s on, five European states built empires that were held
 together by ships: Portugal, Spain, the Dutch Republic, France and England (Britain after 1707).
 They did it because they were rivals. They competed for power, so each wanted what the others
 had. They competed over religion: Catholic Portugal and Spain saw their voyages as a war against
@@ -234,8 +234,8 @@ across the Indian Ocean. Those older forms went on through this whole period. Wh
 the plantations. Sugar, and later tobacco, needed huge numbers of workers. In the whole 1500s,
 fewer than 300,000 Africans were forced onto ships to the Americas. In the fifty years from 1701 to
 1750, more than 2.5 million were. The Atlantic trade carried more people across an ocean than any
-slave trade before it, and slavery in the Americas was inherited and for life, and it came to be tied to race: laws in the English colonies made the
-children of enslaved women enslaved too. Africans and their descendants became most of the people
+slave trade before it. Slavery in the Americas was for life and inherited (laws in the English
+colonies made the children of enslaved women enslaved too), and it came to be tied to race. Africans and their descendants became most of the people
 in the Caribbean colonies and much of Brazil, and their languages, faiths and foods came with
 them. That is the "significant demographic, social, and cultural changes" the CED names.
 
@@ -271,7 +271,7 @@ Shorter for the wall: **Empires from the sea. A world with its own rules.**
 | Macau from 1557 under Ming officials; the 1635 Tokugawa memorandum, the 1639 ban on Portuguese ships, the Dutch on Dejima from 1641 | KC-4.3.II.A.i (second sentence); examples Ming China, Tokugawa Japan | Asian states limited European trade for their own reasons. **Continuity** of Asian state power. Also the 2.A model source. |
 | The cartaz; Gujarati, Swahili Arab, Omani and Javanese merchants trading on; Oman takes Muscat (1650) and Mombasa (1698) | KC-4.3.II.A.iii; examples Gujaratis, Swahili Arabs, Omanis, Javanese | Disruption without replacement. **Change and continuity in one case.** |
 | Kongo under Afonso I; Asante's rise, Feyiase 1701 | KC-4.3.II.A.ii | African states growing through the new trade. **Change.** |
-| Afonso's letter of 6 July 1526 (John K. Thornton's translation) | KC-4.3.II.A.ii, KC-4.2.II.B; 2.A | Sourcing changes the meaning: a king defending his control of trade and of who could be enslaved, not a king against all slavery. |
+| Afonso's letter of 6 July 1526 (Luís Madureira's translation, in John K. Thornton's book) | KC-4.3.II.A.ii, KC-4.2.II.B; 2.A | Sourcing changes the meaning: a king defending his control of trade and of who could be enslaved, not a king against all slavery. |
 | Colonial economies built on farming and mining | KC-4.2.II.D ("largely depended on agriculture") | Why the colonies needed so many workers. |
 | The mit’a, reorganized by Toledo in the 1570s for Potosí | KC-4.2.II.D ("utilized existing labor systems") | An old system reused. **Continuity with change.** |
 | Encomienda, hacienda, indentured servitude, chattel slavery | KC-4.2.II.D ("introduced new labor systems") | New systems. **Change.** |
@@ -369,10 +369,10 @@ The claims that shaped the story, and how:
 | "The first large territorial empire ever governed across an ocean" (current deep reading) | **Removed** with the section it sits in (the deep reading is rebuilt around this story). |
 | Elmina 1482, Goa 1510, Malacca 1511, Hormuz 1515 | Ledger: standard dates. |
 | Macau from 1557, under Ming officials | Ledger: 1557 is the start of permanent settlement allowed by provincial officials; formal recognition and rent dates are argued (1554 to 1573). Stated as "from 1557." |
-| 1635 memorandum to the Nagasaki magistrates; Portuguese banned 1639; Dutch on Dejima from 1641 | Ledger: Vaporis, *Voices of Early Modern Japan* (2012), translating the memorandum and the 1639 exclusion; Dejima 1641. |
+| 1635 memorandum to the Nagasaki magistrates; Portuguese banned 1639; Dutch on Dejima from 1641 | Ledger: David J. Lu, *Japan: A Documentary History* (1997), translating the 1635 edict and the 1639 exclusion; Dejima 1641. |
 | Oman takes Muscat 1650 and Fort Jesus, Mombasa, 1698 | Ledger. |
 | Asante defeats Denkyira at Feyiase, 1701; guns from Dutch and English traders | Ledger: the battle's date rests on Dutch archives; Osei Tutu's reign dates disagree, so none is given. |
-| Toledo's mit’a for Potosí, 1570s, thousands of men a year | Ledger: one-seventh of adult men in the draft districts each year; counts run from about 9,000 (1573) to more than 14,000 (1578). Stated as "thousands." |
+| Toledo's mit’a for Potosí, 1570s, thousands of men a year | Ledger: one-seventh of adult men in the draft districts each year; more than 14,000 (1578). Stated as "thousands." |
 | Fewer than 300,000 embarked in the 1500s; more than 2.5 million in 1701 to 1750 | Ledger: Slave Voyages estimates, 277,505 for 1501 to 1600 and 2,560,634 for 1701 to 1750. |
 | Indentured servants served four to seven years | Ledger. |
 | Children of enslaved women were enslaved by law in the English colonies | Ledger: Virginia, 1662. |
@@ -406,7 +406,7 @@ final report.
 2. **Learning targets:** rewritten as three, one per learning objective (state building, trade
    and labor, slavery), each a continuity-and-change target. Checkpoint 1 assesses the first and
    Checkpoint 2 the second and third.
-3. **Primary Source:** Afonso's 1526 letter, in John K. Thornton's credited translation, replaces
+3. **Primary Source:** Afonso's 1526 letter, in Luís Madureira's credited translation (in John K. Thornton's book), replaces
    the uncredited Las Casas paraphrase.
 4. **Map module:** the map is rebuilt for c. 1450 to 1750: the forts of Africa and Asia, the
    American colonies, Macau and Dejima, Kongo and Asante, the Indian Ocean ports of the Gujarati,

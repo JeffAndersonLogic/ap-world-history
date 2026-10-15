@@ -525,8 +525,8 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-4.3.II.A.iii',
       footer: 'A change and a continuity, each with a named example and the reason.',
       template: {
-        weak: 'The Portuguese changed Indian Ocean trade.',
-        strong: 'The Portuguese **changed** Indian Ocean trade with forts at **Goa**, **Malacca** and **Hormuz** and a pass ships had to buy, the **cartaz**, but **Gujarati**, **Swahili Arab** and **Javanese** merchants **kept** trading, often buying a pass and sailing on, because a few forts could tax the ocean\'s trade but not replace its merchants.'
+        weak: 'Indian Ocean trade changed.',
+        strong: 'The Portuguese **changed** Indian Ocean trade with forts and a pass ships had to buy, the **cartaz**, but **Gujarati**, **Swahili Arab** and **Javanese** merchants **kept** trading, often under a pass, because a few forts could tax the ocean\'s trade but not replace its merchants.'
       },
       notes: {
         minutes: 2,
