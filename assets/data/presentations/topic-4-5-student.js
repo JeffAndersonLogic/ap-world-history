@@ -83,14 +83,14 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "source-quote",
       "eyebrow": "Claim It · Model",
       "title": "An English merchant states a rule.",
-      "footer": "A claim is what the author wants you to believe. Say it in one sentence, in your own words.",
+      "footer": "A claim is what the author wants you to believe. Say it in your own words.",
       "kc": "Unit 4: Learning Objective H",
       "template": {
         "quote": "The ordinary means therefore to encrease our wealth and treasure is by Forraign Trade, wherein wee must ever observe this rule; to sell more to strangers yearly than wee consume of theirs in value.",
         "attribution": {
           "author": "Thomas Mun, director of the English East India Company",
           "work": "England's Treasure by Forraign Trade, printed 1664",
-          "year": "written c. 1620s"
+          "year": "written 1620s or 1630s"
         },
         "notice": "What does Mun want his reader to believe? What would a ruler do if he believed it?"
       }
@@ -191,7 +191,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "url": "../assets/images/instructional-maps/topic-4-5.svg",
         "alt": "World map showing silver from Potosí to Seville and on around Africa to Asia, silver from New Spain by galleon to Manila and into China, enslaved Africans carried west across the Atlantic, and dots at Diu, Tondibi, Ambon and Manila"
       },
-      "footer": "The black dots are places where economic disputes became battles.",
+      "footer": "Diu, Tondibi and Ambon are places where economic disputes turned violent. Manila marks where silver met silk.",
       "kc": "Unit 4: Learning Objective I"
     },
     {
@@ -283,7 +283,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "footer": "The College Board's words: regional markets \"continued to flourish.\"",
       "kc": "KC-4.1.IV",
       "template": {
-        "date": "c. 1550 to 1750",
+        "date": "After 1550",
         "before": {
           "tag": "Before",
           "items": [
@@ -351,7 +351,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kc": "KC-4.2.III.C",
       "template": {
         "tag": "Demographic change",
-        "place": "West and West Central Africa",
+        "place": "Especially West Central Africa",
         "date": "1500s to 1700s",
         "rows": [
           {
@@ -371,7 +371,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "text": "**More women and girls** were enslaved within Africa itself"
           }
         ],
-        "proves": "The trade changed who lived in a village, and that changed how families worked."
+        "proves": "Cause, then effect: say who the trade took, then what changed at home."
       }
     },
     {
@@ -385,19 +385,19 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "name": "Africans",
             "mark": "A",
-            "tool": "Brought",
+            "tool": "Contributed",
             "result": "farming skills, music, beliefs, and languages."
           },
           {
             "name": "Indigenous Americans",
             "mark": "I",
-            "tool": "Brought",
+            "tool": "Contributed",
             "result": "foods, farming and local knowledge."
           },
           {
             "name": "Europeans",
             "mark": "E",
-            "tool": "Brought",
+            "tool": "Contributed",
             "result": "languages, Christianity, and goods."
           }
         ],
@@ -409,7 +409,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "branch-tree",
       "eyebrow": "Faith · Compare",
       "title": "Three things religions did.",
-      "footer": "Similar: old religions reached new people. Different: some were fought over, and some blended into something new.",
+      "footer": "To compare, ask the same questions of two branches: what do they share, and where do they part ways?",
       "kc": "Unit 4: Learning Objective K",
       "template": {
         "claimLabel": "Compare",
@@ -501,7 +501,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "split-matrix",
       "eyebrow": "The Whole Topic",
-      "title": "What was new, and what kept going.",
+      "title": "New, or kept going?",
       "template": {
         "columns": [
           {
@@ -515,35 +515,35 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "Rulers' tools",
             "cells": [
-              "Mercantilist laws; joint-stock companies that could go to war",
-              "States fighting over trade routes: the Indian Ocean, the Sahara"
+              "Mercantilist laws; companies that could go to war",
+              "States fighting over trade routes"
             ]
           },
           {
             "label": "Exchange",
             "cells": [
               "Silver pulled toward China; the Atlantic system",
-              "Regional markets; peasant and artisan work, now more of it"
+              "Regional markets; more peasant and artisan work"
             ]
           },
           {
             "label": "Society",
             "cells": [
-              "African families reshaped by who the trade took; mixed Atlantic cultures",
-              "African, Indigenous and European ways of life, carried into the mix"
+              "African families reshaped; mixed Atlantic cultures",
+              "Old ways of life, carried into the mix"
             ]
           },
           {
             "label": "Faith",
             "cells": [
-              "Religions in new places, conflict, and blending",
-              "Christianity, Islam and older faiths themselves"
+              "Religions in new places; conflict; blending",
+              "Christianity, Islam and older faiths"
             ]
           }
         ],
         "result": {
           "label": "So",
-          "text": "Rulers built tools to make their empires pay, and what those tools moved reshaped work, families and faith."
+          "text": "Rulers built tools to make empires pay; what they moved reshaped work, families and faith."
         }
       }
     },
@@ -582,7 +582,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "action",
       "eyebrow": "Module 07 · Evidence Lab",
       "title": "Build one claim from two sources.",
-      "subtitle": "Something new and something that kept going, from two real objects. Name one limit.",
+      "subtitle": "Something new and something that kept going, from two sources. Name one limit.",
       "action": {
         "label": "Open Student Lesson",
         "url": "lesson-4-5-maritime-empires-maintained.html#modules"
@@ -591,7 +591,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "action",
       "eyebrow": "Module 10 · Checkpoint 2",
-      "title": "Society and belief: what changed, what kept going.",
+      "title": "Families, cultures and faith: what changed, why, and how religions compared.",
       "subtitle": "Draft, work with Socrates, revise. If it is not finished in class, it is homework.",
       "action": {
         "label": "Open Student Lesson",

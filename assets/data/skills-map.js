@@ -5872,7 +5872,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "06",
           "module": "Checkpoint 1",
           "label": "Module 06, Checkpoint 1",
-          "prompt": "Explain ONE way a European ruler used mercantilism (for example, a law like the Navigation Act) or a chartered company (the VOC or the English East India Company) to make an empire pay or to compete with a rival. Then explain ONE change in networks of exchange from 1450 to 1750 (silver pulled toward China, or the Atlantic trading system) and ONE continuity (regional markets that kept their old merchants and ways, or peasant and artisan work that continued and grew).",
+          "prompt": "Explain ONE way a European ruler used mercantilism (for example, a law like the Navigation Act) or a chartered company (the VOC or the English East India Company) to make an empire pay or to compete with a rival, and name ONE rivalry that grew out of an economic dispute and the trade it was over. Then explain ONE change and ONE continuity in networks of exchange from 1450 to 1750. Choose from: silver and China, the Atlantic trading system, regional markets in Africa and Asia, and peasant and artisan work. Say which one is the change and which is the continuity, and why.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -5903,8 +5903,8 @@ window.BEHISTORICAL_SKILLS_MAP = {
           ],
           "criteria": [
             "Name one tool (a mercantilist law or a chartered company) and say how it helped a ruler make money or beat a rival.",
-            "Give one change in exchange: silver pulled toward China by its taxes, or the Atlantic system moving goods, wealth and enslaved people.",
-            "Give one continuity: regional markets with their old merchants and practices, or peasant and artisan work that continued and grew."
+            "Name one rivalry that grew out of an economic dispute, and the trade it was over.",
+            "Give one change and one continuity in networks of exchange, and say why each is a change or a continuity."
           ],
           "learningTargets": [
             "I can explain how European rulers used mercantilism and chartered joint-stock companies to make their empires pay and to compete with each other, and how economic disputes led to rivalries and wars.",
@@ -6032,7 +6032,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "01",
           "module": "Map & Geography Check",
           "label": "Module 01, Map & Geography Check",
-          "prompt": "Trace the TWO routes that carried silver from Spanish America toward China (arrows 1 and 4, and arrows 2 and 3). Using the map and its key, explain why so much silver ended up in China. Then choose ONE black dot and explain which trade the rivals there were fighting over.",
+          "prompt": "Trace the TWO routes that carried silver from Spanish America toward China (arrows 1 and 4, and arrows 2 and 3). Using the map and its key, explain why so much silver ended up in China. Then choose ONE of the three places where rivals fought (Diu, Tondibi or Ambon) and explain which trade they were fighting over.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -6060,7 +6060,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "05",
           "module": "AP Skill Builder",
           "label": "Module 05, AP Skill Builder",
-          "prompt": "Now do it yourself with a different source. In the 1570s, a Spanish friar named Bernardino de Sahagún wrote about Tepeyac, a hill near Mexico City where the Nahua had once honored a goddess called Tonantzin, \"our mother,\" and where a church of the Virgin Mary, Our Lady of Guadalupe, now stood (translated from his Spanish; words in brackets are explanations): \"[N]ow that the church of Our Lady of Guadalupe is built there, they also call her Tonantzin, taking the occasion from the preachers, who called Our Lady, the Mother of God, Tonantzin. ... It seems to be a satanic invention to cover up idolatry [worship of other gods] under the confusion of this name Tonantzin, and they now come to visit this Tonantzin from very far away, as much as before.\" In 2 to 3 sentences, state Sahagún's claim in your own words, name the evidence he gives for it, and explain whether that evidence is enough to prove his claim.",
+          "prompt": "Now do it yourself with a different source. In the 1570s, a Spanish friar named Bernardino de Sahagún wrote about Tepeyac, a hill near Mexico City where the Nahua had once honored a goddess called Tonantzin, \"our mother,\" and where a church of the Virgin Mary, Our Lady of Guadalupe, now stood (translated from his Spanish; words in brackets are explanations): \"[N]ow that the church of Our Lady of Guadalupe is built there, they also call her Tonantzin, taking the occasion from the preachers, who called Our Lady, the Mother of God, Tonantzin. ... It seems to be a satanic invention to cover up idolatry [worship of other gods] under the confusion of this name Tonantzin, and they now come to visit this Tonantzin from very far away, as far as they did before.\" In 2 to 3 sentences, state Sahagún's claim in your own words, name the evidence he gives for it, and explain whether that evidence is enough to prove his claim.",
           "skill": "Claims and Evidence",
           "skills": [
             "Claims and Evidence"

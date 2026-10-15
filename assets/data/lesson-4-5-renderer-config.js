@@ -99,7 +99,7 @@
       { label: '2 and 3. The western road', detail: 'From 1571, Spanish galleons carried silver from Acapulco across the Pacific to Manila (arrow 2), where Chinese merchants traded silk and porcelain for it, and the silver went on into China (arrow 3).' },
       { label: 'Ming China', detail: 'China collected its taxes in silver (the Single Whip reform) and mined little of its own, so silver bought more there than in Europe. That demand pulled silver from both roads.' },
       { label: 'Europe and West Africa', detail: 'Mercantilist states such as Spain, England and the Dutch Republic used laws and chartered companies to keep wealth at home. In West Africa, Indian cotton cloth and cowrie shells from the Maldives were traded for enslaved people (arrow 5).' },
-      { label: 'Black dots', detail: 'Places where economic disputes became battles: Diu (Portugal beat a fleet of Mamluk Egypt and Gujarat over the spice trade, 1509), Tondibi (Morocco beat Songhai, 1591, wanting West Africa\'s gold and salt), and Ambon (the Dutch company executed English company men, 1623). Manila marks where silver met Chinese silk.' }
+      { label: 'Black dots', detail: 'Diu, Tondibi and Ambon are places where economic disputes turned violent: Diu (Portugal beat a fleet of Mamluk Egypt and Gujarat over the spice trade, 1509), Tondibi (Morocco beat Songhai, 1591, wanting West Africa\'s gold and salt), and Ambon (the Dutch company executed English company men, 1623). The dot at Manila marks where silver met Chinese silk, not a fight.' }
     ]
   };
 
@@ -137,7 +137,7 @@
       { label: 'The reason he gives', text: 'Trade in Asia needs the protection of the company\'s own weapons, and the weapons are paid for by the trade\'s profits. Each one depends on the other.' },
       { label: 'Why he says it', text: 'Coen was writing to the men who paid for the company. Stating the claim this strongly helped him ask them for more ships and soldiers. Knowing that does not make the claim false; it tells you why he argued it so hard.' }
     ],
-    prompt: 'Now do it yourself with a different source. In the 1570s, a Spanish friar named Bernardino de Sahagún wrote about Tepeyac, a hill near Mexico City where the Nahua had once honored a goddess called Tonantzin, "our mother," and where a church of the Virgin Mary, Our Lady of Guadalupe, now stood (translated from his Spanish; words in brackets are explanations): "[N]ow that the church of Our Lady of Guadalupe is built there, they also call her Tonantzin, taking the occasion from the preachers, who called Our Lady, the Mother of God, Tonantzin. ... It seems to be a satanic invention to cover up idolatry [worship of other gods] under the confusion of this name Tonantzin, and they now come to visit this Tonantzin from very far away, as much as before." In 2 to 3 sentences, state Sahagún\'s claim in your own words, name the evidence he gives for it, and explain whether that evidence is enough to prove his claim.',
+    prompt: 'Now do it yourself with a different source. In the 1570s, a Spanish friar named Bernardino de Sahagún wrote about Tepeyac, a hill near Mexico City where the Nahua had once honored a goddess called Tonantzin, "our mother," and where a church of the Virgin Mary, Our Lady of Guadalupe, now stood (translated from his Spanish; words in brackets are explanations): "[N]ow that the church of Our Lady of Guadalupe is built there, they also call her Tonantzin, taking the occasion from the preachers, who called Our Lady, the Mother of God, Tonantzin. ... It seems to be a satanic invention to cover up idolatry [worship of other gods] under the confusion of this name Tonantzin, and they now come to visit this Tonantzin from very far away, as far as they did before." In 2 to 3 sentences, state Sahagún\'s claim in your own words, name the evidence he gives for it, and explain whether that evidence is enough to prove his claim.',
     criteria: [
       'I stated Sahagún\'s claim in one sentence, in my own words.',
       'I named the evidence he gives, with a word or phrase from the source.',
@@ -152,10 +152,10 @@
       cardDesc: 'How rulers used mercantilism and chartered companies, and what changed and kept going in networks of exchange.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
-      prompt: 'Explain ONE way a European ruler used mercantilism (for example, a law like the Navigation Act) or a chartered company (the VOC or the English East India Company) to make an empire pay or to compete with a rival. Then explain ONE change in networks of exchange from 1450 to 1750 (silver pulled toward China, or the Atlantic trading system) and ONE continuity (regional markets that kept their old merchants and ways, or peasant and artisan work that continued and grew).',
+      prompt: 'Explain ONE way a European ruler used mercantilism (for example, a law like the Navigation Act) or a chartered company (the VOC or the English East India Company) to make an empire pay or to compete with a rival, and name ONE rivalry that grew out of an economic dispute and the trade it was over. Then explain ONE change and ONE continuity in networks of exchange from 1450 to 1750. Choose from: silver and China, the Atlantic trading system, regional markets in Africa and Asia, and peasant and artisan work. Say which one is the change and which is the continuity, and why.',
       responseType: 'Checkpoint 1',
       terms: ['mercantilism', 'Navigation Act', 'Casa de Contratación', 'chartered company', 'joint-stock company', 'VOC', 'East India Company', 'monopoly', 'silver', 'Single Whip', 'Manila', 'China', 'Atlantic trading system', 'regional markets', 'Gujarati', 'Armenian', 'peasant', 'artisan', 'wool', 'linen', 'cotton', 'silk'],
-      focus: ['Name one tool (a mercantilist law or a chartered company) and say how it helped a ruler make money or beat a rival.', 'Give one change in exchange: silver pulled toward China by its taxes, or the Atlantic system moving goods, wealth and enslaved people.', 'Give one continuity: regional markets with their old merchants and practices, or peasant and artisan work that continued and grew.']
+      focus: ['Name one tool (a mercantilist law or a chartered company) and say how it helped a ruler make money or beat a rival.', 'Name one rivalry that grew out of an economic dispute, and the trade it was over.', 'Give one change and one continuity in networks of exchange, and say why each is a change or a continuity.']
     },
     {
       title: 'Checkpoint 2: Families, Cultures, and Faith',
@@ -165,7 +165,7 @@
       successCriteria: [lesson.successCriteria[2].criteria, lesson.successCriteria[3].criteria],
       prompt: 'Explain ONE way the trade in enslaved people changed families or communities in parts of Africa, and why it happened. Then explain ONE example of cultural mixing in the Atlantic world, and name the groups who contributed to it. Finally, compare TWO things religions did as contact grew (spread to new places, caused conflict, or blended into new beliefs): give an example of each, and say one way they were similar and one way they were different.',
       responseType: 'Checkpoint 2',
-      skill: 'Continuity and Change, and Comparison',
+      skill: 'Causation and Comparison',
       terms: ['gender', 'family', 'women', 'men', 'polygyny', 'demographic', 'Africa', 'cultural synthesis', 'creole', 'Africans', 'Indigenous Americans', 'Europeans', 'Christianity', 'Islam', 'missionaries', 'Jesuits', 'religious conflict', 'idolatry', 'Peru', 'syncretic', 'syncretism', 'Guadalupe', 'Tonantzin', 'Kongo', 'Vodou', 'Virgin of the Mountain'],
       focus: ['Give one change in families or communities in Africa, and the cause: the trade took more men than women.', 'Give one example of Atlantic cultural mixing, and name at least two groups who contributed.', 'Compare two things religions did (spread, conflict, or blending), with an example of each and one similarity and one difference.']
     }
@@ -220,14 +220,13 @@
     },
     {
       title: 'Who the Atlantic Slave Trade Took',
-      label: 'Shipping records · Trans-Atlantic Slave Trade Database',
+      label: 'Modern historians\' estimate · from the Trans-Atlantic Slave Trade Database',
       sourceText: [
         'Of every three captives carried across the Atlantic,',
         'about two were male and one was female.',
-        'The share of males changed by region and period.',
-        'In parts of West Central Africa, women came to outnumber men.'
+        'The share of males changed by region and period.'
       ],
-      caption: 'Historians estimate these figures from the records of thousands of slave-trading voyages, gathered in the Trans-Atlantic Slave Trade Database (slavevoyages.org). The counts in the last line come from later Portuguese censuses of Angola.',
+      caption: 'This card is not an object from the time. It is an estimate made by modern historians from the records of thousands of slave-trading voyages, gathered in the Trans-Atlantic Slave Trade Database (slavevoyages.org), which ship captains, merchants and officials wrote down between the 1500s and the 1800s.',
       prompt: 'NOTICE who the trade took most. INFER how removing more men than women could change families and farm work in the villages they came from. What can shipping records not tell you about how African families lived afterward?'
     }
   ];

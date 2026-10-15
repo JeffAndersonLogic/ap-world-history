@@ -93,7 +93,7 @@
   <g id="region-labels">
     <text class="region halo" x="480.0" y="703.8" text-anchor="middle" fill="#1A1C1D"><tspan x="480.0" dy="0">POTOSÍ</tspan></text>
     <text class="region halo" x="346.7" y="431.6" text-anchor="middle" fill="#1A1C1D"><tspan x="346.7" dy="0">NEW SPAIN</tspan></text>
-    <text class="region halo" x="1225.8" y="422.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1225.8" dy="0">MING CHINA</tspan></text>
+    <text class="region halo" x="1297.8" y="238.0" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">MING CHINA</tspan></text>
     <text class="region halo" x="805.8" y="243.8" text-anchor="middle" fill="#1A1C1D"><tspan x="805.8" dy="0">EUROPE</tspan></text>
     <text class="region halo" x="866.2" y="510.2" text-anchor="middle" fill="#1A1C1D"><tspan x="866.2" dy="0">WEST AFRICA</tspan></text>
   </g>
@@ -106,10 +106,10 @@
     <circle class="city" cx="800.0" cy="409.6" r="10"/>
     <text class="place halo" x="660.0" y="321.6" text-anchor="end">Tondibi</text>
     <text class="placenote halo" x="660.0" y="343.6" text-anchor="end">Morocco beats Songhai, 1591</text>
-    <line class="leader" x1="1369.7" y1="520.6" x2="1369.7" y2="572.6"/>
+    <line class="leader" x1="1369.7" y1="520.6" x2="1369.7" y2="632.6"/>
     <circle class="city" cx="1369.7" cy="520.6" r="10"/>
-    <text class="place halo" x="1409.7" y="588.6" text-anchor="end">Ambon</text>
-    <text class="placenote halo" x="1409.7" y="610.6" text-anchor="end">Dutch and English clash, 1623</text>
+    <text class="place halo" x="1457.7" y="648.6" text-anchor="end">Ambon</text>
+    <text class="placenote halo" x="1457.7" y="670.6" text-anchor="end">VOC executes English company men, 1623</text>
     <line class="leader" x1="1337.7" y1="418.9" x2="1269.7" y2="296.9"/>
     <circle class="city" cx="1337.7" cy="418.9" r="10"/>
     <text class="place halo" x="1269.7" y="270.9" text-anchor="end">Manila</text>

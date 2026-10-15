@@ -971,7 +971,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Claims and Evidence in Sources",
-          "raw": "<p><strong>Find the claim first.</strong> A claim is what an author wants you to believe. Mun's claim is in one sentence: a country grows rich by selling more to foreigners than it buys from them. Question 2 asks you to put it in your own words.</p>"
+          "raw": "<p><strong>Find the claim first.</strong> A claim is what an author wants you to believe. Read Mun's sentence again and ask: what does he want his reader to believe about how a country grows rich? Question 2 asks you to put it in your own words.</p>"
         }
       },
       {
@@ -1008,7 +1008,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In Africa, the sultan of Morocco, Ahmad al-Mansur, wanted the gold of West Africa and the salt mines of the Sahara. In 1591 his army crossed the desert and defeated the Songhai Empire at the battle of Tondibi. (Topic 3.1 told the battle. Here the question is why: it was a fight over trade.)"
+            "html": "In Africa, the sultan of Morocco, Ahmad al-Mansur, wanted the gold of West Africa and the salt mines of the Sahara. In 1591 his army crossed the desert and defeated the Songhai Empire at the battle of Tondibi. (Topic 3.1 told the battle. Here the question is why: gold and the salt trade were a large part of the reason.)"
           },
           {
             "type": "p",
@@ -1054,7 +1054,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "None of this replaced the trade that already ran across Africa and Asia. <span class=\"kt\">Regional markets</span> kept flourishing, with their own merchants and their own long-standing ways of doing business, such as credit, partnerships, and family firms. Gujarati, Chinese, and Armenian merchants kept trading. European ships became one more carrier inside these markets. Dutch ships carried Japanese silver and copper to China and India, and Indian cloth to Southeast Asia, earning money from trade between Asian ports."
+            "html": "None of this replaced the trade that already ran across Africa and Asia. <span class=\"kt\">Regional markets</span> kept flourishing, with their own merchants and their own long-standing ways of doing business, such as credit, partnerships, and family firms. Gujarati, Chinese, and Armenian merchants kept trading. European ships became one more carrier inside these markets. Dutch ships carried Japanese silver to Taiwan to buy Chinese silk, Japanese silver and copper to India, and Indian cloth to Southeast Asia, earning money from trade between Asian ports."
           }
         ],
         "callout": {
@@ -1088,11 +1088,11 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "About two of every three people carried away in the Atlantic slave trade were male. In some parts of West and West Central Africa, that left communities with more women than men. Historians argue that this changed family life there: women did more of the farming, more women and girls were enslaved inside Africa itself, and, some historians argue, more men took several wives. The trade changed who lived in a village, and that changed how families worked. These are the \"demographic changes in Africa\" that the College Board names."
+            "html": "About two of every three people carried away in the Atlantic slave trade were male. In parts of Africa, especially West Central Africa, that left communities with more women than men. Historians argue that this changed family life there: women did more of the farming, more women and girls were enslaved inside Africa itself, and, some historians argue, more men took several wives. The trade changed who lived in a village, and that changed how families worked. These are the \"demographic changes in Africa\" that the College Board names."
           },
           {
             "type": "p",
-            "html": "In the Americas, Africans, Indigenous Americans, and Europeans lived side by side, often by force, and each group shaped what came out of it. New dishes mixed African, American, and European foods. New languages formed, called creoles, with most of their words from a European language and much of their grammar shaped by African languages. Music and religion mixed too. Historians call this <span class=\"kt\">cultural synthesis</span>. No one group made it. The College Board's words are \"with all parties contributing.\""
+            "html": "In the Americas, Africans, Indigenous Americans, and Europeans lived side by side, often by force, and each group shaped what came out of it. New dishes mixed African, American, and European foods. New languages formed, called creoles, with most of their words from a European language and some of their grammar and sounds shaped by African languages. Music and religion mixed too. Historians call this <span class=\"kt\">cultural synthesis</span>. No one group made it. The College Board's words are \"with all parties contributing.\""
           }
         ],
         "callout": {
@@ -1115,12 +1115,12 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "And contact produced <span class=\"kt\">syncretism</span>, the blending of two or more religions into new beliefs and practices. At Tepeyac, a hill near Mexico City, Nahua Christians prayed to the Virgin of Guadalupe. In the 1570s a Spanish friar named Bernardino de Sahagún wrote that the Nahua had once honored a goddess at that hill whom they called Tonantzin, \"our mother,\" and he suspected that they still did. In Kongo, Christian crucifixes were made by Kongo artists in Kongo style. In the 1700s, a painter in Potosí showed the Virgin Mary as the silver mountain itself. And in the 1700s, enslaved Africans in the French colony of Saint-Domingue (today's Haiti) built a religion called Vodou from West and Central African beliefs and Catholic saints."
+            "html": "And contact produced <span class=\"kt\">syncretism</span>, the blending of two or more religions into new beliefs and practices. At Tepeyac, a hill near Mexico City, Nahua Christians prayed to the Virgin of Guadalupe. In the 1570s a Spanish friar named Bernardino de Sahagún wrote that the Nahua had once honored a goddess at that hill whom they called Tonantzin, \"our mother.\" (The Skill Builder asks what he claimed about the people praying there in his day.) In Kongo, Christian crucifixes were made by Kongo artists in Kongo style. In the 1700s, a painter in Potosí showed the Virgin Mary as the silver mountain itself. And in the 1700s, enslaved Africans in the French colony of Saint-Domingue (today's Haiti) built a religion called Vodou from West and Central African beliefs and Catholic saints."
           }
         ],
         "callout": {
           "label": "AP Thinking, Comparison",
-          "raw": "<p><strong>Similar and different.</strong> The College Board asks how belief systems affected societies in similar and different ways. Similar: everywhere, old religions reached new people. Different: in some places a religion was fought over, and in others it blended into something new.</p>"
+          "raw": "<p><strong>Similar and different.</strong> The College Board asks how belief systems affected societies in similar and different ways. To compare, put two cases side by side and ask the same questions of each: who carried the religion, who received it, and what happened next. Something the two share is a similarity; a place where they part ways is a difference.</p>"
         }
       },
       {

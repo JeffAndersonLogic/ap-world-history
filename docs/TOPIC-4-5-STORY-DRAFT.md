@@ -6,7 +6,7 @@ Jeff started this build with "Build 4,5" on 2026-10-15, read as "build 4.5": Top
 against the CED source file and the scholarship; the record of what they found is in
 `docs/TOPIC-4-5-CLAIM-LEDGER.md`, under "Review findings".
 
-**Resume here (2026-10-15, session 2):** Phases 1 to 8 built; own-pass slide fixes from screenshots done (`0cb7f2d`). Work moved to `claude/version-4-5-build-rmip8g` (this session's designated branch; `claude/build-4-5-bizrkq` is the same commits). Now running: browser suite, then Phase 9 review pass 1.
+**Resume here (2026-10-15, session 2):** Phase 9 review pass 1 fixed and logged in the claim ledger (23 + 12 findings). Browser suite green on 4.5 after the slide fixes. Next: review pass 2 (fresh reviewers, full pass). Fingerprint not yet moved.
 
 **Taught:** Green Monday 2026-11-09, Silver Tuesday 2026-11-10, from Jeff's corrected November
 Canvas calendar (2026-10-14), already in `assets/data/announcements-schedule.js` as date-only

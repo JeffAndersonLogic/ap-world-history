@@ -164,13 +164,13 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "How a Company Could Fight a War",
         bullets: [
-          "A **joint-stock company** raised money from many investors at once, so no single merchant had to risk his fortune on one voyage. The VOC's investors could sell their shares to others in Amsterdam, so money kept coming in even when voyages took years.",
+          "A **joint-stock company** raised money from many investors at once, so no single merchant had to risk his fortune on one voyage. Investors who wanted their money back could sell their shares to someone else in Amsterdam, so the company could keep its money working for years instead of paying it back after each voyage.",
           "The charter turned the company into a tool of its government. The VOC could build forts, keep soldiers, make treaties, and wage war. Because only one Dutch company could trade with Asia, the profits stayed in Dutch hands, which is what a **mercantilist** government wanted.",
           "Rivals used the same tools against each other. The Dutch and English companies fought over the spice islands, and in 1623 VOC officials on Ambon executed ten English company men. England and the Dutch Republic then fought three wars at sea between 1652 and 1674, largely over trade and shipping."
         ],
         image: {
           title: "A sea battle between England and the Dutch Republic",
-          caption: "The Dutch flagship Gouden Leeuw at the Battle of Texel in 1673, during the third Anglo-Dutch War, painted by Willem van de Velde the Younger in 1687. Het Scheepvaartmuseum, Amsterdam.",
+          caption: "The Dutch flagship Gouden Leeuw at the Battle of Texel in 1673, during the third Anglo-Dutch War. This version, in Het Scheepvaartmuseum, Amsterdam, is a copy of Willem van de Velde the Younger's 1687 painting, probably made in his studio; his signed original is in the National Maritime Museum, Greenwich.",
           url: "../assets/images/topics/4-5/battle-texel-van-de-velde-1687.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:De_Gouden_Leeuw_tijdens_de_Slag_bij_Kijkduin_(Battle_of_Texel)_1673_Willem_van_de_Velde.jpg"
         }
@@ -183,8 +183,8 @@ window.BEHISTORICAL_LESSON = {
           "The Spanish king worried that silver was flowing to China instead of Spain, and in 1593 he limited the galleons to two a year. Merchants carried more than the rules allowed, because the profits were so large."
         ],
         image: {
-          title: "A Chinese merchant and his wife at Manila, about 1590",
-          caption: "A \"Sangley,\" the Spanish word for the Chinese merchants and craftsmen of Manila, and his wife, from the Boxer Codex, a manuscript made in Manila about 1590. Lilly Library, Indiana University.",
+          title: "A Chinese man and woman at Manila, about 1590",
+          caption: "A Chinese man and woman, labeled \"Sangley,\" the Spanish word for the Chinese of Manila, from the Boxer Codex, a manuscript made in Manila about 1590. Lilly Library, Indiana University.",
           url: "../assets/images/topics/4-5/sangley-boxer-codex-c1590.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Sangley_in_Boxer_Codex.jpg"
         }
@@ -224,9 +224,9 @@ window.BEHISTORICAL_LESSON = {
     title: "Silver, Companies and Rivals, c. 1550 to 1750",
     url: "../assets/images/instructional-maps/topic-4-5.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-4-5.svg",
-    caption: "What the rulers' tools moved: silver from Spanish America to Seville and across the Pacific to Manila and China, silver carried around Africa to Asia, and the Atlantic trade in enslaved Africans. The black dots mark three places where economic disputes became battles.",
-    intro: "Use the map to follow the silver. Spanish America's silver went two ways, east across the Atlantic and west across the Pacific, and much of both streams ended up in Asia. Then look at the black dots: each is a place where rivals fought over a trade.",
-    prompt: "Trace the TWO routes that carried silver from Spanish America toward China (arrows 1 and 4, and arrows 2 and 3). Using the map and its key, explain why so much silver ended up in China. Then choose ONE black dot and explain which trade the rivals there were fighting over."
+    caption: "What the rulers' tools moved: silver from Spanish America to Seville and across the Pacific to Manila and China, silver carried around Africa to Asia, and the Atlantic trade in enslaved Africans. Three of the black dots, Diu, Tondibi and Ambon, mark places where economic disputes turned violent; the fourth, Manila, marks where silver met Chinese silk.",
+    intro: "Use the map to follow the silver. Spanish America's silver went two ways, east across the Atlantic and west across the Pacific, and much of both streams ended up in Asia. Then look at the black dots at Diu, Tondibi and Ambon: each is a place where rivals fought over a trade. (The dot at Manila marks a trading city, not a fight.)",
+    prompt: "Trace the TWO routes that carried silver from Spanish America toward China (arrows 1 and 4, and arrows 2 and 3). Using the map and its key, explain why so much silver ended up in China. Then choose ONE of the three places where rivals fought (Diu, Tondibi or Ambon) and explain which trade they were fighting over."
   },
 
   deepReading: {
@@ -249,8 +249,8 @@ window.BEHISTORICAL_LESSON = {
 
   primarySource: {
     title: "Primary Source: Antonio de Morga on the Chinese Trade at Manila, 1609",
-    intro: "Antonio de Morga was a Spanish lawyer and official who served in the government of the Philippines in the 1590s and early 1600s. In 1609, in Mexico, he published a history of the islands, Events in the Philippine Islands, for Spanish readers. In these passages he describes the Spanish king's worry about the silver trade, and the Chinese merchants who sailed to Manila each spring. The translation is Henry E. J. Stanley's (Hakluyt Society, London, 1868); words in brackets are explanations.",
-    text: "As this trade had so much increased, it had inflicted great loss and injury on the merchandise of Spain which was embarked for Peru and New Spain [Mexico], and upon the royal duties which used to be levied upon them ... and they used to send much silver to the Philippines for their purchases, which in that manner every year flowed out of the realms of His Majesty into the possession of the pagans [the Chinese, who were not Christians]. ... Usually there come from great China to Manila a large number of somas and junks, which are large ships, laden with merchandise; and each year thirty usually come, and sometimes forty ships ... The goods which they usually bring, and sell to the Spaniards, are raw silk ... much smooth velvet ... damasks, satins, taffetans [kinds of silk cloth] ... and white cotton tablecloths ... Usually the price of the raw silk, and silk stuffs ... is settled at leisure, and by persons who understand the business, both on the part of the Spaniards and of the Sangleys [the Chinese merchants], and what is given them for it, is silver and reals [Spanish silver coins], for they do not like gold, nor any other goods in exchange, nor do they carry any to China.",
+    intro: "Antonio de Morga was a Spanish lawyer and official who served in the government of the Philippines in the 1590s and early 1600s. In 1609, in Mexico, he published a history of the islands, Events in the Philippine Islands, for Spanish readers. In these passages he describes the Spanish king's worry about the silver trade, and the Chinese merchants who sailed to Manila each spring. Chinese junks had already traded at Luzon and other Southeast Asian ports for centuries before the Spanish came. The translation is Henry E. J. Stanley's (Hakluyt Society, London, 1868); words in brackets are explanations.",
+    text: "As this trade had so much increased, it had inflicted great loss and injury on the merchandise of Spain which was embarked [shipped] for Peru and New Spain [Mexico], and upon the royal duties [the king's taxes on trade] which used to be levied [collected] upon them ... and they used to send much silver to the Philippines for their purchases, which in that manner every year flowed out of the realms of His Majesty into the possession of the pagans [the Chinese, who were not Christians]. ... Usually there come from great China to Manila a large number of somas and junks, which are large ships, laden with merchandise; and each year thirty usually come, and sometimes forty ships ... The goods which they usually bring, and sell to the Spaniards, are raw silk ... much smooth velvet ... damasks, satins, taffetans [kinds of silk cloth] ... and white cotton tablecloths ... Usually the price of the raw silk, and silk stuffs ... is settled at leisure, and by persons who understand the business, both on the part of the Spaniards and of the Sangleys [the Chinese merchants], and what is given them for it, is silver and reals [Spanish silver coins], for they do not like gold, nor any other goods in exchange, nor do they carry any to China.",
     questions: [
       "What did the Chinese merchants bring to Manila, and what did they take back to China? Use Morga's words as evidence.",
       "Morga reports that silver \"every year flowed out of the realms of His Majesty into the possession of the pagans.\" Using what you know about mercantilism, explain why a Spanish king would see that as a problem.",

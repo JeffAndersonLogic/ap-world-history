@@ -128,7 +128,7 @@ const scenarios = [
     premise: [
       'Manila has been a Spanish city since 1571. Every year galleons sail in from Acapulco, in Mexico, loaded with American silver, and every year Chinese junks from Fujian sail in with silk, porcelain and other goods to trade for it. Silver from the mines of Spanish America is flowing to China, because China now collects its taxes in silver.',
       'The king of Spain is worried. In 1593 he ordered that only two galleons a year may sail between Manila and Acapulco, and that the goods they carry from Manila must not be worth more than a fixed amount. His advisers want American silver to reach Spain, not China, and Spanish silk makers complain that cheap Chinese silk is taking their buyers. But Manila\'s Spanish settlers live on this trade, and the Chinese merchants and craftsmen of the Parián, the Chinese quarter outside the city walls, far outnumber them.',
-      'Other powers want this trade too. In 1587 an English captain, Thomas Cavendish, captured the Manila galleon Santa Ana off the coast of Mexico. The Portuguese merchants of Macau, who sell Chinese silk to the Spanish themselves, resent Manila\'s direct trade with China. The governor\'s council must decide how to obey the king, how to deal with the Chinese merchants, and how to protect the silver.'
+      'Rivals want this trade too, even subjects of Spain\'s own king. In 1587 an English captain, Thomas Cavendish, captured the Manila galleon Santa Ana off the coast of Mexico. The Portuguese merchants of Macau, who since 1580 have shared Spain\'s king and who sell Chinese silk to the Spanish themselves, resent Manila\'s direct trade with China. The governor\'s council must decide how to obey the king, how to deal with the Chinese merchants, and how to protect the silver.'
     ],
     centralQuestion: 'How should Manila\'s council keep the silver-for-silk trade paying for the colony, when the king wants to limit it, Chinese merchants run it, and rivals want to take it?',
     roles: [
@@ -144,7 +144,7 @@ const scenarios = [
       E('decree', 'The King\'s Limits of 1593', 'A royal order allowed only two galleons a year between Manila and Acapulco and set a limit on the value of goods they could carry.', 'A mercantilist rule meant to keep silver from draining to China.'),
       E('spain', 'Spanish Silk Makers', 'Silk makers in Spain complained that cheap Chinese silk was taking their buyers in the Americas.', 'Shows a home industry the king wanted to protect.'),
       E('parian', 'The Parián', 'Chinese merchants and craftsmen lived in the Parián, a quarter outside Manila\'s walls, and greatly outnumbered the Spanish.', 'Shows how much the colony depended on the Chinese.'),
-      E('cavendish', 'The Santa Ana, 1587', 'The English captain Thomas Cavendish captured the Manila galleon Santa Ana off the coast of Mexico.', 'Shows rivals fighting over the silver trade.'),
+      E('cavendish', 'The Santa Ana, 1587', 'The English captain Thomas Cavendish captured the Manila galleon Santa Ana off the coast of Mexico.', 'Shows rivals attacking the galleon trade. The Santa Ana was sailing from Manila to Mexico, full of silk and other Asian goods.'),
       E('macau', 'Portuguese Macau', 'The Portuguese merchants of Macau sold Chinese silk to Spanish buyers and opposed Manila trading directly with China.', 'Shows an economic rivalry even between subjects of the same king.'),
       E('mission', 'Missions to the Chinese', 'Dominican friars preached to the Chinese of the Parián and baptized some of them.', 'Shows a religion spreading along a trade route.')
     ],
@@ -160,7 +160,7 @@ const scenarios = [
         O('convert', 'Favor the baptized', 'Give lower taxes and the right to stay to Chinese who become Christians.', 'Friars gain converts, and some merchants settle for good.', 'Merchants who keep their own beliefs feel pressured and treated unfairly.', 'Mixing trade and religion can win converts and resentment at the same time.')
       ]),
       D('defend', 'Protect the silver', 'How should Manila protect the galleons and the city from rivals?', [
-        O('escort', 'Arm and escort the galleons', 'Put more soldiers and guns on each galleon and guard it near Mexico.', 'The silver is safer from raiders like Cavendish.', 'Soldiers and guns take space and money from the cargo.', 'Safety at sea cuts into profit.'),
+        O('escort', 'Arm and escort the galleons', 'Put more soldiers and guns on each galleon and guard it near Mexico.', 'The galleons and their cargoes are safer from raiders like Cavendish.', 'Soldiers and guns take space and money from the cargo.', 'Safety at sea cuts into profit.'),
         O('fort', 'Build up Manila\'s walls and fort', 'Spend the colony\'s money on defending the city itself.', 'The colony is harder for any rival to take.', 'Less money is left for trade and for the settlers.', 'A strong city may still lose its ships at sea.'),
         O('ally', 'Trade with Macau instead of fighting it', 'Work out a share of the China trade with the Portuguese of Macau.', 'One rivalry is calmed, and both sides keep profiting.', 'Manila may lose its direct trade with China and pay more for silk.', 'Peace with a rival means sharing the profit.')
       ])

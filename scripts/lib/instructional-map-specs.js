@@ -947,7 +947,7 @@ module.exports = [
     highlights: [
       { zone: 'andes', label: 'POTOS\u00cd', tone: 'gold', legend: 'Potos\u00ed: Spanish silver from 1545' },
       { zone: 'mexico', label: 'NEW SPAIN', tone: 'bronze', legend: 'New Spain: Zacatecas silver from 1546' },
-      { zone: 'eastAsia', label: 'MING CHINA', tone: 'plum', legend: 'China: taxes paid in silver, so silver was in demand' },
+      { zone: 'eastAsia', label: 'MING CHINA', tone: 'plum', labelSide: 'above', legend: 'China: taxes paid in silver, so silver was in demand' },
       { zone: 'westernEurope', label: 'EUROPE', tone: 'slate', legend: 'Europe: mercantilist states and their trading companies' },
       { zone: 'westAfrica', label: 'WEST AFRICA', tone: 'sand', legend: 'West Africa: Indian cloth and cowries traded for captives' }
     ],
@@ -961,7 +961,7 @@ module.exports = [
     points: [
       { at: [70.98, 20.71], label: 'Diu', note: 'Portuguese victory at sea, 1509', side: 'left' },
       { at: [0.0, 16.27], label: 'Tondibi', note: 'Morocco beats Songhai, 1591', side: 'left' },
-      { at: [128.18, -3.7], label: 'Ambon', note: 'Dutch and English clash, 1623', side: 'left' },
+      { at: [128.18, -3.7], label: 'Ambon', note: 'VOC executes English company men, 1623', side: 'left' },
       { at: [120.98, 14.6], label: 'Manila', note: 'Chinese silk for silver, from 1571', side: 'left' }
     ],
     note: 'BeHistorical instructional map. Points and shaded regions are schematic, not borders, and coastlines are simplified for classroom projection. Arrows show patterns, not single voyages.'

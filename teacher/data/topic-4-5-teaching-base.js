@@ -195,16 +195,16 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'mun', kind: 'source-quote', eyebrow: 'Claim It · Model',
       kc: 'Unit 4: Learning Objective H', title: 'An English merchant states a rule.',
-      footer: 'A claim is what the author wants you to believe. Say it in one sentence, in your own words.',
+      footer: 'A claim is what the author wants you to believe. Say it in your own words.',
       template: {
         quote: 'The ordinary means therefore to encrease our wealth and treasure is by Forraign Trade, wherein wee must ever observe this rule; to sell more to strangers yearly than wee consume of theirs in value.',
-        attribution: { author: 'Thomas Mun, director of the English East India Company', work: 'England\'s Treasure by Forraign Trade, printed 1664', year: 'written c. 1620s' },
+        attribution: { author: 'Thomas Mun, director of the English East India Company', work: 'England\'s Treasure by Forraign Trade, printed 1664', year: 'written 1620s or 1630s' },
         notice: 'What does Mun want his reader to believe? What would a ruler do if he believed it?'
       },
       notes: {
         minutes: 2,
         land: [
-          'Thomas Mun (1571 to 1641), a London merchant and a director of the English East India Company. England\'s Treasure by Forraign Trade was published in 1664 by his son John, after his death; it was probably written in the late 1620s or 1630s. The quotation is from chapter 2, in its original spelling ("strangers" means foreigners).',
+          'Thomas Mun (1571 to 1641), a London merchant and a director of the English East India Company. England\'s Treasure by Forraign Trade was published in 1664 by his son John, after his death; it was probably written in the 1620s or 1630s. The quotation is from chapter 2, in its original spelling ("strangers" means foreigners).',
           'Model the suggested skill, 3.A: identify and describe a claim in a source. The claim: a country grows rich by selling more to foreigners each year than it buys from them. That is the mercantilist rule in one line.',
           'Then one more step: what would a ruler do with it? Tariffs on imports, support for exports, and laws keeping colonial trade at home.',
           'Mun also defended his company\'s practice of sending silver to Asia, arguing that what it bought there was resold in Europe for more. Keep that for the deep reading.'
@@ -292,7 +292,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'map', kind: 'map', eyebrow: 'Follow the Silver',
       kc: 'Unit 4: Learning Objective I', title: 'Two roads for silver, both toward Asia.',
-      footer: 'The black dots are places where economic disputes became battles.',
+      footer: 'Diu, Tondibi and Ambon are places where economic disputes turned violent. Manila marks where silver met silk.',
       visual: { url: '../assets/images/instructional-maps/topic-4-5.svg', alt: 'World map showing silver from Potosí to Seville and on around Africa to Asia, silver from New Spain by galleon to Manila and into China, enslaved Africans carried west across the Atlantic, and dots at Diu, Tondibi, Ambon and Manila' },
       notes: {
         minutes: 1,
@@ -339,7 +339,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 1,
         land: [
-          'The picture is a real historical object: a bird\'s-eye view of Manila by Johannes Vingboons, a Dutch mapmaker, painted about 1665 (Nationaal Archief, The Hague). Vingboons never went to Manila; he worked from the reports of Dutch sailors, whose company was Spain\'s rival in these seas. It shows the walled Spanish city, the bay and the ships. The lecture card shows a Chinese merchant and his wife from the Boxer Codex, painted in Manila about 1590 (Lilly Library, Indiana University); that picture is too small to project.',
+          'The picture is a real historical object: a bird\'s-eye view of Manila by Johannes Vingboons, a Dutch mapmaker, painted about 1665 (Nationaal Archief, The Hague). Vingboons never went to Manila; he worked from the reports of Dutch sailors, whose company was Spain\'s rival in these seas. It shows the walled Spanish city, the bay and the ships. The lecture card shows a Chinese man and woman labeled "Sangley" in the Boxer Codex, painted in Manila about 1590 (Lilly Library, Indiana University); that picture is too small to project.',
           'The point: the Spanish galleon brought silver, but Chinese merchants from Fujian brought the goods (Morga, 1609: thirty or forty junks a year, which took only silver in return), and Chinese craftsmen and traders filled the Parián, Manila\'s Chinese quarter, and far outnumbered the Spanish. The regional trade was older than the city.',
           'It is the hinge from silver (the change) to regional markets (the continuity).'
         ],
@@ -377,7 +377,7 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-4.1.IV', title: 'The new trade joined the old markets. It did not replace them.',
       footer: 'The College Board\'s words: regional markets "continued to flourish."',
       template: {
-        date: 'c. 1550 to 1750',
+        date: 'After 1550',
         before: { tag: 'Before', items: ['Regional markets across Africa and Asia', 'Their own merchants and ways of doing business'] },
         after: { tag: 'Changed', items: ['American silver arrives', 'European ships carry goods between Asian ports'] },
         continued: { tag: 'Continued', items: ['Gujarati, Chinese and Armenian merchants keep trading', 'Old practices: credit, partnerships, family firms'] }
@@ -387,7 +387,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'Second sentence of KC-4.1.IV: regional markets continued to flourish in Afro-Eurasia "by using established commercial practices and new transoceanic and regional shipping services developed by European merchants."',
           'Established practices: credit and bills of exchange, partnerships, merchant families with agents in distant ports. Armenian merchants of New Julfa (Isfahan) traded from the Indian Ocean to Europe through family firms; Gujarati and Chinese merchants kept trading too.',
-          'European shipping services: Dutch ships carried Japanese silver and copper to China and India, and Indian cloth to Southeast Asia, earning money from trade between Asian ports.',
+          'European shipping services: Dutch ships carried Japanese silver to Taiwan to buy Chinese silk, Japanese silver and copper to India, and Indian cloth to Southeast Asia, earning money from trade between Asian ports.',
           '4.4 taught the Indian Ocean merchants as continuity (KC-4.3.II.A.iii). Here the point is how the new silver and the old markets fit together.'
         ],
         ask: 'Which column is the change, and which the continuity?',
@@ -410,7 +410,7 @@ window.BEHISTORICAL_TEACHING = {
           'KC-4.2.II.A: peasant and artisan labor "continued and intensified in many regions as the demand for food and consumer goods increased." The three regions are the CED\'s own examples.',
           'Western Europe: merchants "put out" wool and flax to rural households, who spun and wove at home and were paid by the piece (the putting-out system, or cottage industry).',
           'India: weavers on the Coromandel coast, in Gujarat and in Bengal made cotton cloth for Asian, African and European buyers; the Dutch and English companies\' purchases grew greatly in the 1600s, often through advances of money to weavers.',
-          'China: peasant households in the Jiangnan region raised silkworms and wove silk; some of it reached Manila to be traded for American silver. The print is from Song Yingxing\'s Tiangong Kaiwu (1637), an illustrated book on Chinese crafts.',
+          'China: peasant households in the Jiangnan region raised silkworms and wove silk; some of it reached Manila to be traded for American silver. The print is from the Kangxi emperor\'s Pictures of Tilling and Weaving (Yuzhi Gengzhi tu), designed by the court painter Jiao Bingzhen and printed in 1696.',
           'Much of the spinning, silkworm raising and weaving was done by women and girls.'
         ],
         ask: 'Is this old work or new work?',
@@ -422,14 +422,14 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'families', kind: 'case-file', eyebrow: 'Society · Families in Africa',
       kc: 'KC-4.2.III.C', title: 'Who the trade took, and what it changed.',
       template: {
-        tag: 'Demographic change', place: 'West and West Central Africa', date: '1500s to 1700s',
+        tag: 'Demographic change', place: 'Especially West Central Africa', date: '1500s to 1700s',
         rows: [
           { label: 'Taken', text: 'About **two of every three** captives carried across the Atlantic were **male**' },
           { label: 'Left', text: 'In some regions, communities with **more women than men**' },
           { label: 'Families', text: 'Women did **more of the farming**; some historians add that more men took **several wives**' },
           { label: 'Inside Africa', text: '**More women and girls** were enslaved within Africa itself' }
         ],
-        proves: 'The trade changed who lived in a village, and that changed how families worked.'
+        proves: 'Cause, then effect: say who the trade took, then what changed at home.'
       },
       notes: {
         minutes: 2,
@@ -440,7 +440,7 @@ window.BEHISTORICAL_TEACHING = {
           'Demographic change also meant population loss or stagnation in some regions. The effects varied: not every region or society changed the same way.'
         ],
         ask: 'Why would taking more men than women change how a family worked?',
-        listenFor: 'With fewer men, women did more of the work, and more men had several wives.',
+        listenFor: 'With fewer men, women did more of the farming and more women were enslaved inside Africa; some historians argue more men had several wives.',
         ap: 'A cause and an effect: who the trade took explains the change in families.'
       }
     },
@@ -450,9 +450,9 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Often by force, never by plan: the College Board\'s words are "with all parties contributing."',
       template: {
         rows: [
-          { name: 'Africans', mark: 'A', tool: 'Brought', result: 'farming skills, music, beliefs, and languages.' },
-          { name: 'Indigenous Americans', mark: 'I', tool: 'Brought', result: 'foods, farming and local knowledge.' },
-          { name: 'Europeans', mark: 'E', tool: 'Brought', result: 'languages, Christianity, and goods.' }
+          { name: 'Africans', mark: 'A', tool: 'Contributed', result: 'farming skills, music, beliefs, and languages.' },
+          { name: 'Indigenous Americans', mark: 'I', tool: 'Contributed', result: 'foods, farming and local knowledge.' },
+          { name: 'Europeans', mark: 'E', tool: 'Contributed', result: 'languages, Christianity, and goods.' }
         ],
         payoffLabel: 'Together they made',
         payoff: 'New Atlantic cultures: foods, creole languages, music, faith'
@@ -472,7 +472,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'faith', kind: 'branch-tree', eyebrow: 'Faith · Compare',
       kc: 'Unit 4: Learning Objective K', title: 'Three things religions did.',
-      footer: 'Similar: old religions reached new people. Different: some were fought over, and some blended into something new.',
+      footer: 'To compare, ask the same questions of two branches: what do they share, and where do they part ways?',
       template: {
         claimLabel: 'Compare',
         claim: 'As contact grew, religions **spread**, **clashed**, and **blended**.',
@@ -502,7 +502,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 1,
         land: [
-          'The picture is a real historical painting: La Virgen del Cerro, by an unknown painter in Potosí, 1700s, in the Casa Nacional de Moneda, Potosí (photograph by Dan Lundberg, 2017, CC BY-SA 2.0; a second version, dated 1720, is in the Museo Nacional de Arte, La Paz). Mary\'s face and hands appear on the Cerro Rico, the silver mountain, whose slopes carry tiny figures of people and animals; the Father and the Son crown her, with the Holy Spirit above, and a pope, a cardinal and a bishop kneel at the left and a king at the right, around a globe.',
+          'The picture is a real historical painting: La Virgen del Cerro, by an unknown painter in Potosí, 1700s, in the Casa Nacional de Moneda, Potosí (photograph by Dan Lundberg, 2017, CC BY-SA 2.0; other versions survive, including one in La Paz). Mary\'s face and hands appear on the Cerro Rico, the silver mountain, whose slopes carry tiny figures of people and animals; the Father and the Son crown her, with the Holy Spirit above, and a pope, a cardinal and a bishop kneel at the left and a king at the right, around a globe.',
           'It blends Christian painting with the Andean idea of sacred mountains and of the earth as a mother (Pachamama). Art historians read it that way; some caution that the painter\'s own intention is not recorded. Say "art historians read it as."',
           'It also ties the day together: the silver mountain of Potosí, the source of the silver that went to China, shown as a Christian and Andean holy figure.'
         ],
@@ -556,16 +556,16 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       retelling: true, phase: 'ledger', kind: 'split-matrix', eyebrow: 'The Whole Topic',
-      title: 'What was new, and what kept going.',
+      title: 'New, or kept going?',
       template: {
         columns: [{ name: 'What was new' }, { name: 'What kept going' }],
         rows: [
-          { label: 'Rulers\' tools', cells: ['Mercantilist laws; joint-stock companies that could go to war', 'States fighting over trade routes: the Indian Ocean, the Sahara'] },
-          { label: 'Exchange', cells: ['Silver pulled toward China; the Atlantic system', 'Regional markets; peasant and artisan work, now more of it'] },
-          { label: 'Society', cells: ['African families reshaped by who the trade took; mixed Atlantic cultures', 'African, Indigenous and European ways of life, carried into the mix'] },
-          { label: 'Faith', cells: ['Religions in new places, conflict, and blending', 'Christianity, Islam and older faiths themselves'] }
+          { label: 'Rulers\' tools', cells: ['Mercantilist laws; companies that could go to war', 'States fighting over trade routes'] },
+          { label: 'Exchange', cells: ['Silver pulled toward China; the Atlantic system', 'Regional markets; more peasant and artisan work'] },
+          { label: 'Society', cells: ['African families reshaped; mixed Atlantic cultures', 'Old ways of life, carried into the mix'] },
+          { label: 'Faith', cells: ['Religions in new places; conflict; blending', 'Christianity, Islam and older faiths'] }
         ],
-        result: { label: 'So', text: 'Rulers built tools to make their empires pay, and what those tools moved reshaped work, families and faith.' }
+        result: { label: 'So', text: 'Rulers built tools to make empires pay; what they moved reshaped work, families and faith.' }
       },
       notes: {
         minutes: 4,
@@ -606,7 +606,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 6,
         land: [
           'The Skill Builder practices the CED\'s suggested skill, 3.A: identify and describe a claim or argument in a source.',
-          'It models Coen\'s 1614 letter (the slide students just saw), then gives Sahagún\'s passage on Tepeyac and asks for the claim, the evidence he gives for it, and whether that evidence proves it.',
+          'It models Coen\'s 1614 letter (slide 8), then gives Sahagún\'s passage on Tepeyac and asks for the claim, the evidence he gives for it, and whether that evidence proves it.',
           'Push students to state the claim in their own words, in one sentence, before they quote anything.'
         ],
         ask: 'Is Sahagún\'s evidence enough to prove his claim?',
@@ -631,14 +631,14 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'evidence', kind: 'action', eyebrow: 'Module 07 · Evidence Lab',
       title: 'Build one claim from two sources.',
-      subtitle: 'Something new and something that kept going, from two real objects. Name one limit.',
+      subtitle: 'Something new and something that kept going, from two sources. Name one limit.',
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-5-maritime-empires-maintained.html#modules' },
       notes: {
         minutes: 7,
         land: [
-          'Six real objects: a VOC share receipt (Enkhuizen, 1606), a Potosí silver coin (1651), women reeling silk in the 1696 Pictures of Tilling and Weaving, a painted Indian cotton made for sale abroad (early 1700s), Antonio and Manuel de Arellano\'s painted copy of the Virgin of Guadalupe (1691, LACMA), and a figures card from the Atlantic shipping records.',
+          'Five real objects and one figures card: a VOC share receipt (Enkhuizen, 1606), a Potosí silver coin (1651), women reeling silk in the 1696 Pictures of Tilling and Weaving, a painted Indian cotton made for sale abroad (early 1700s), Antonio and Manuel de Arellano\'s painted copy of the Virgin of Guadalupe (1691, LACMA), and a card of modern historians\' estimates from the Atlantic shipping records, which is a record, not an object, so students should source it as a modern estimate.',
           'Observation before inference: what the source shows, then what it suggests, then what it cannot tell you.',
-          'Every picture in the Evidence Lab is a real historical object; none is AI-generated.'
+          'Every picture in the Evidence Lab is a real historical object; none is AI-generated. The sixth card is text, not a picture.'
         ],
         ask: 'What does the source show before you tell me what it means?',
         listenFor: 'A concrete detail, then the inference, then a limit.'
@@ -646,7 +646,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'cp2', kind: 'action', eyebrow: 'Module 10 · Checkpoint 2',
-      title: 'Society and belief: what changed, what kept going.',
+      title: 'Families, cultures and faith: what changed, why, and how religions compared.',
       subtitle: 'Draft, work with Socrates, revise. If it is not finished in class, it is homework.',
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-5-maritime-empires-maintained.html#modules' },
       notes: {
@@ -654,7 +654,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'The revised answer in the box is what goes to Canvas.',
           'Checkpoint 2 asks for one way the slave trade changed families in parts of Africa and why, one example of Atlantic cultural mixing and who contributed, and a comparison of two things religions did as contact grew. That is Learning Objectives J and K: KC-4.2.III.C, KC-4.1.IV.D.ii and KC-4.1.VI. Objectives H and I are the First & 10\'s and Checkpoint 1\'s.',
-          'Socrates is told the skills are Continuity and Change and Comparison, so it will push for the cause of the change and for a similarity and a difference.'
+          'Socrates is told the skills are Causation and Comparison, so it will push for the cause of the family change and for a similarity and a difference.'
         ],
         ask: 'Does your answer have the cause of the family change, a contribution from more than one group, and a similarity and a difference?',
         listenFor: 'More men taken; music, food or language; spread and blending compared.'

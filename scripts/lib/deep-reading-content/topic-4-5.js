@@ -48,7 +48,7 @@ module.exports = {
 
   howTo: {
     heading: 'How to Use This',
-    intro: `The College Board asks four things of this topic: how rulers used economic strategies to hold power, what changed and continued in networks of exchange, how society was affected, and how belief systems affected societies in similar and different ways. Sections 01 and 02 answer the first, sections 03 and 04 the second, section 05 the third, and section 06 the fourth. Every section ends with something new and something that kept going.`,
+    intro: `The College Board asks four things of this topic: how rulers used economic strategies to hold power, what changed and continued in networks of exchange, how society was affected, and how belief systems affected societies in similar and different ways. Sections 01 and 02 answer the first, sections 03 and 04 the second, section 05 the third, and section 06 the fourth. Most sections end by naming something new and something that kept going.`,
     steps: [
       `<b>01 Two tools:</b> mercantilism, and the chartered joint-stock company.`,
       `<b>02 Rivals:</b> economic disputes that became wars, in the Indian Ocean, the Sahara and Europe.`,
@@ -75,7 +75,7 @@ module.exports = {
           heading: 'The idea, and what follows from it',
           blocks: [
             { p: `The idea starts from a belief: a kingdom's strength is the gold and silver it holds, and one kingdom's gain in trade is another's loss. If that is true, three policies follow. <b>Sell more than you buy</b>, because the difference arrives as gold and silver. <b>Protect your own makers</b> with taxes on foreign goods, because buying foreign goods sends money out. And <b>keep the colonies' trade for yourself</b>: colonies should send raw goods home and buy the home country's finished goods, and trade with no one else.` },
-            { p: `Later writers named this set of ideas <span class="kt">mercantilism</span>; the word was used by its critics, Adam Smith among them, in <span class="num">1776</span>, and the people who held these ideas did not call themselves mercantilists. One of them, Thomas Mun, a London merchant and a director of the English East India Company, put the first policy in a sentence: England "must ever observe this rule; to sell more to strangers yearly than wee consume of theirs in value." His book was printed in <span class="num">1664</span>, after his death.` },
+            { p: `Later writers named this set of ideas <span class="kt">mercantilism</span>; its critics, Adam Smith among them in <span class="num">1776</span>, called it the "mercantile system," the word mercantilism came later still, and the people who held these ideas did not call themselves mercantilists. One of them, Thomas Mun, a London merchant and a director of the English East India Company, put the first policy in a sentence: England "must ever observe this rule; to sell more to strangers yearly than wee consume of theirs in value." His book was printed in <span class="num">1664</span>, after his death.` },
             { p: `Rulers wrote the idea into law. Spain's <b>Casa de Contratación</b>, founded in Seville in <span class="num">1503</span>, licensed and registered the trade with Spain's American colonies, and silver crossed the Atlantic in fleets guarded by warships. England's <b>Navigation Act</b> of <span class="num">1651</span> said goods from Asia, Africa and the Americas could come into England only in English ships; it was aimed at Dutch shippers, who carried much of Europe's trade. Acts from <span class="num">1660</span> listed colonial goods, sugar and tobacco among them, that could be shipped only to England. In France, the minister Jean-Baptiste Colbert used tariffs, royal support for workshops and royal trading companies from the 1660s.` }
           ]
         },
@@ -126,7 +126,7 @@ module.exports = {
         {
           heading: 'The Sahara: gold and salt',
           blocks: [
-            { p: `In Africa, the sultan of Morocco, Ahmad al-Mansur, looked south. The Songhai Empire controlled the trade in West African gold and the salt mines of the Sahara, and the two states had quarreled over the salt mine at Taghaza in the 1580s. Al-Mansur sent an army with firearms across the desert, and in <span class="num">1591</span> it defeated the Songhai army at Tondibi (Topic 3.1 told the battle). The motive was trade: al-Mansur wanted the gold.` },
+            { p: `In Africa, the sultan of Morocco, Ahmad al-Mansur, looked south. The Songhai Empire controlled the trade in West African gold and the salt mines of the Sahara, and the two states had quarreled over the salt mine at Taghaza in the 1580s. Al-Mansur sent an army with firearms across the desert, and in <span class="num">1591</span> it defeated the Songhai army at Tondibi (Topic 3.1 told the battle). Gold and the salt trade were a large part of the reason: al-Mansur wanted the gold.` },
             { p: `He did not get as much as he hoped. Morocco held Timbuktu and Gao, but the old empire broke into smaller states, and gold kept flowing to other buyers, including European traders on the coast.` }
           ]
         },
@@ -228,7 +228,7 @@ module.exports = {
           heading: 'The markets that kept going',
           blocks: [
             { p: `None of this replaced the trade that already crossed Africa and Asia. The College Board's sentence is that <span class="kt">regional markets</span> "continued to flourish in Afro-Eurasia by using established commercial practices and new transoceanic and regional shipping services developed by European merchants." The first half is continuity: merchants kept their partnerships, their credit and their family firms with agents in distant ports. Armenian merchants based at New Julfa, outside the Persian capital of Isfahan, traded from India to the Mediterranean and Europe through family networks; Gujarati and Chinese merchants kept trading too.` },
-            { p: `The second half is the change. European ships became one more carrier inside these markets. The VOC carried Japanese silver and copper to China and India, and Indian cloth to Southeast Asia to buy spices, and earned much of its money from trade between Asian ports.` }
+            { p: `The second half is the change. European ships became one more carrier inside these markets. The VOC carried Japanese silver to its base on Taiwan to buy Chinese silk, Japanese silver and copper to India, and Indian cloth to Southeast Asia to buy spices, and earned much of its money from trade between Asian ports.` }
           ]
         },
         {
@@ -294,7 +294,7 @@ module.exports = {
         }
       ],
       useThis: {
-        tool: `Who the trade took. <em>When a trade removes more men than women from a region, the people left behind reorganize: more women farm, more men take several wives, and local buyers enslave more women. A change in who lived in a village became a change in how families worked.</em>`,
+        tool: `Who the trade took. <em>When a trade removes more men than women from a region, the people left behind reorganize: more women farm, local buyers enslave more women, and, some historians argue, more men take several wives. A change in who lived in a village became a change in how families worked.</em>`,
         limit: `The effects varied a great deal by region and period, and much of the evidence is indirect, so name a region and say "historians argue" rather than describing all of Africa.`,
         comparison: `Against the <em>Swahili coast</em> of Topic 2.3: there, too, a new culture and a language, Swahili, came out of long contact between Africans and Arab and Persian traders. The difference is force: Atlantic creole cultures were made largely by people who had been enslaved.`
       },
@@ -332,7 +332,7 @@ module.exports = {
         {
           heading: 'Blend',
           blocks: [
-            { p: `And contact produced <span class="kt">syncretism</span>, the blending of religions into new beliefs and practices. At <b>Tepeyac</b>, a hill near Mexico City, a shrine to the Virgin of Guadalupe drew Nahua and Spanish Christians by the 1550s. In the 1570s the Franciscan friar Bernardino de Sahagún wrote that the Nahua had worshipped a goddess at that hill whom they called Tonantzin, "our mother," that they now used that name for Mary, a name the Spanish preachers themselves had used, and that he suspected the devotion hid the old worship. Historians still argue over how much the two were linked; what is certain is that Nahua Christians made Mary their own. The story of Mary appearing to Juan Diego in <span class="num">1531</span> was first published in <span class="num">1648</span>.` },
+            { p: `And contact produced <span class="kt">syncretism</span>, the blending of religions into new beliefs and practices. At <b>Tepeyac</b>, a hill near Mexico City, a shrine to the Virgin of Guadalupe drew Nahua and Spanish Christians by the 1550s. In the 1570s the Franciscan friar Bernardino de Sahagún wrote about the hill and about Tonantzin, "our mother," the name of a goddess the Nahua had honored there; the lesson's Skill Builder asks you to read his own words and judge his claim. Historians still argue over how much Guadalupe and Tonantzin were linked; what is certain is that Nahua Christians made Mary their own. The story of Mary appearing to Juan Diego in <span class="num">1531</span> was first published in <span class="num">1648</span>.` },
             { p: `In <b>Kongo</b>, Christian crucifixes were made by Kongo artists in Kongo style and given Kongo meanings. In <b>Potosí</b>, in the 1700s, a painter showed the Virgin Mary as the silver mountain itself, which art historians read as joining Christian painting to Andean beliefs about sacred mountains. And in the French colony of <b>Saint-Domingue</b> (today's Haiti), enslaved Africans in the 1700s built <b>Vodou</b> from West and Central African religions and Catholic saints.` },
             { note: {
               kind: 'misconception',
@@ -343,14 +343,14 @@ module.exports = {
         }
       ],
       useThis: {
-        tool: `Spread, clash, blend. <em>When a religion reaches new people, it can win converts, provoke a fight, or mix with what they already believed, and often all three happen in one place: the similarity is the contact, the differences are what the people on each side did with it.</em>`,
+        tool: `Spread, clash, blend. <em>When a religion reaches new people, it can win converts, provoke a fight, or mix with what they already believed, and often all three happen in one place: to compare two cases, ask the same questions of each: who carried the religion, who received it, and what the people on each side did with it.</em>`,
         limit: `The three are not neat boxes. Tepeyac was a spread of Christianity and a blend at once, and the Lima campaigns attacked exactly the blending they found.`,
         comparison: `Against <em>Buddhism along the Silk Roads</em> in Unit 2: a religion carried by trade there also changed as it moved, taking on Chinese forms. In both cases a religion traveled with merchants and was remade by the people who received it.`
       },
       terms: [
         ['Syncretism', 'The blending of two or more religions into new beliefs and practices.'],
         ['Extirpation of idolatry', 'Campaigns in Peru from about 1610 to destroy Andean sacred objects and punish people who kept the old religion.'],
-        ['Tepeyac', 'The hill near Mexico City where the Virgin of Guadalupe was honored, and where a friar suspected older worship continued.'],
+        ['Tepeyac', 'The hill near Mexico City where the Virgin of Guadalupe was honored, and where a goddess called Tonantzin had once been honored.'],
         ['Jesuits', 'A Catholic religious order whose missionaries reached China and Japan in this period.'],
         ['Vodou', 'A religion built by enslaved Africans in Saint-Domingue in the 1700s from African religions and Catholic saints.']
       ]
@@ -385,7 +385,7 @@ module.exports = {
       {
         category: 'Belief',
         title: 'Spread, clash, blend',
-        body: `Christianity reached the Americas, the Philippines and Kongo, Jesuits reached Beijing, and Islam kept spreading in Southeast Asia. Priests in Peru attacked Andean religion from about 1610. At Tepeyac, Sahagún suspected an old goddess behind the Virgin of Guadalupe; Kongo artists made Kongo crucifixes; a Potosí painter of the 1700s made Mary the silver mountain; and enslaved Africans in Saint-Domingue built Vodou in the 1700s.`
+        body: `Christianity reached the Americas, the Philippines and Kongo, Jesuits reached Beijing, and Islam kept spreading in Southeast Asia. Priests in Peru attacked Andean religion from about 1610. At Tepeyac, Nahua Christians honored the Virgin of Guadalupe at a hill once sacred to Tonantzin; Kongo artists made Kongo crucifixes; a Potosí painter of the 1700s made Mary the silver mountain; and enslaved Africans in Saint-Domingue built Vodou in the 1700s.`
       }
     ]
   }

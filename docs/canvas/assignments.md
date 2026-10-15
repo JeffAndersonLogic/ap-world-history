@@ -2357,7 +2357,7 @@ block so the short name can be written from them, not guessed at here.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Last class, Europeans built empires from the sea. Today you find out how rulers made those empires pay. Follow the tools they built, mercantilist laws and companies that could go to war, then follow what those tools moved: silver pulled all the way to China, goods and enslaved people across the Atlantic, and more work for ordinary spinners and weavers. For each part, explain what was new and what kept going, in trade, in families, and in religion.</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Last class, Europeans built empires from the sea. Today you find out how rulers made those empires pay. Follow the tools they built, mercantilist laws and companies that could go to war, then follow what those tools moved: silver pulled all the way to China, goods and enslaved people across the Atlantic, and more work for ordinary spinners and weavers. For each part, explain what was new and what kept going, then explain what the trade did to families in Africa and compare how religions spread, clashed and blended.</p>
             </td>
         </tr>
         <tr>
