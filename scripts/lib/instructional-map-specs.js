@@ -936,7 +936,7 @@ module.exports = [
   {
     id: 'topic-4-5',
     code: 'Topic 4.5',
-    title: 'Silver, Companies and Rivals, c. 1550 to 1750',
+    title: 'Silver, Companies and Rivals, c. 1500 to 1750',
     subtitle: 'Topic 4.5 \u00b7 Maritime empires maintained and developed',
     // Rebuilt 2026-10-15 from the 4.5 story: what the rulers' tools moved
     // (silver toward China by both routes, the Atlantic system) and where
@@ -961,8 +961,8 @@ module.exports = [
     points: [
       { at: [70.98, 20.71], label: 'Diu', note: 'Portuguese victory at sea, 1509', side: 'left' },
       { at: [0.0, 16.27], label: 'Tondibi', note: 'Morocco beats Songhai, 1591', side: 'left' },
-      { at: [128.18, -3.7], label: 'Ambon', note: 'VOC executes English company men, 1623', side: 'left' },
-      { at: [120.98, 14.6], label: 'Manila', note: 'Chinese silk for silver, from 1571', side: 'left' }
+      { at: [128.18, -3.7], label: 'Ambon', note: 'VOC executes English traders, 1623', side: 'right' },
+      { at: [120.98, 14.6], label: 'Manila', note: 'Chinese silk for silver, from 1571', side: 'right' }
     ],
     note: 'BeHistorical instructional map. Points and shaded regions are schematic, not borders, and coastlines are simplified for classroom projection. Arrows show patterns, not single voyages.'
   },

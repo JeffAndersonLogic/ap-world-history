@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="map-title map-desc">
-  <title id="map-title">Silver, Companies and Rivals, c. 1550 to 1750</title>
-  <desc id="map-desc">Topic 4.5 instructional map for AP World History: Silver, Companies and Rivals, c. 1550 to 1750. Topic 4.5 · Maritime empires maintained and developed</desc>
+  <title id="map-title">Silver, Companies and Rivals, c. 1500 to 1750</title>
+  <desc id="map-desc">Topic 4.5 instructional map for AP World History: Silver, Companies and Rivals, c. 1500 to 1750. Topic 4.5 · Maritime empires maintained and developed</desc>
   <defs>
     <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#FFFDF7"/><stop offset="1" stop-color="#F1E7D5"/>
@@ -94,7 +94,7 @@
     <text class="region halo" x="480.0" y="703.8" text-anchor="middle" fill="#1A1C1D"><tspan x="480.0" dy="0">POTOSÍ</tspan></text>
     <text class="region halo" x="346.7" y="431.6" text-anchor="middle" fill="#1A1C1D"><tspan x="346.7" dy="0">NEW SPAIN</tspan></text>
     <text class="region halo" x="1297.8" y="238.0" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">MING CHINA</tspan></text>
-    <text class="region halo" x="805.8" y="243.8" text-anchor="middle" fill="#1A1C1D"><tspan x="805.8" dy="0">EUROPE</tspan></text>
+    <text class="region halo" x="853.8" y="291.8" text-anchor="middle" fill="#1A1C1D"><tspan x="853.8" dy="0">EUROPE</tspan></text>
     <text class="region halo" x="866.2" y="510.2" text-anchor="middle" fill="#1A1C1D"><tspan x="866.2" dy="0">WEST AFRICA</tspan></text>
   </g>
   <g id="places">
@@ -106,20 +106,20 @@
     <circle class="city" cx="800.0" cy="409.6" r="10"/>
     <text class="place halo" x="660.0" y="321.6" text-anchor="end">Tondibi</text>
     <text class="placenote halo" x="660.0" y="343.6" text-anchor="end">Morocco beats Songhai, 1591</text>
-    <line class="leader" x1="1369.7" y1="520.6" x2="1369.7" y2="632.6"/>
+    <line class="leader" x1="1369.7" y1="520.6" x2="1369.7" y2="548.6"/>
     <circle class="city" cx="1369.7" cy="520.6" r="10"/>
-    <text class="place halo" x="1457.7" y="648.6" text-anchor="end">Ambon</text>
-    <text class="placenote halo" x="1457.7" y="670.6" text-anchor="end">VOC executes English company men, 1623</text>
-    <line class="leader" x1="1337.7" y1="418.9" x2="1269.7" y2="296.9"/>
+    <text class="place halo" x="1197.7" y="564.6" text-anchor="start">Ambon</text>
+    <text class="placenote halo" x="1197.7" y="586.6" text-anchor="start">VOC executes English traders, 1623</text>
+    <line class="leader" x1="1337.7" y1="418.9" x2="1337.7" y2="458.9"/>
     <circle class="city" cx="1337.7" cy="418.9" r="10"/>
-    <text class="place halo" x="1269.7" y="270.9" text-anchor="end">Manila</text>
-    <text class="placenote halo" x="1269.7" y="292.9" text-anchor="end">Chinese silk for silver, from 1571</text>
+    <text class="place halo" x="1201.7" y="474.9" text-anchor="start">Manila</text>
+    <text class="placenote halo" x="1201.7" y="496.9" text-anchor="start">Chinese silk for silver, from 1571</text>
   </g>
 
   <g id="titleband">
     <rect x="0" y="0" width="1600" height="118" fill="url(#paper)" opacity=".93"/>
     <rect x="0" y="118" width="1600" height="5" fill="#C9A46A"/>
-    <text class="title" x="46" y="62">Silver, Companies and Rivals, c. 1550 to 1750</text>
+    <text class="title" x="46" y="62">Silver, Companies and Rivals, c. 1500 to 1750</text>
     <text class="subtitle" x="48" y="97">Topic 4.5 · Maritime empires maintained and developed</text>
   </g>
 

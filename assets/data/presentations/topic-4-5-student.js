@@ -151,7 +151,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "branch-tree",
       "eyebrow": "Rivals · Old Fights, New Tools",
       "title": "Economic disputes became wars.",
-      "footer": "States had always fought over trade routes. The new tools were the laws and the companies they fought with.",
+      "footer": "States had fought over trade routes for centuries. The new tools were the laws and the companies they fought with.",
       "kc": "KC-4.3.III.ii",
       "template": {
         "claimLabel": "The pattern",
@@ -335,7 +335,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "visual": {
               "url": "../assets/images/topics/4-5/gengzhitu-1696-drawloom.jpg",
-              "alt": "Black-and-white woodblock print of a tall Chinese silk draw loom inside a house, with one weaver seated at the front and a second worker high on the frame working the pattern cords, a poem in Chinese above",
+              "alt": "Black-and-white print of a tall Chinese silk draw loom inside a house, with one weaver seated at the front and a second worker high on the frame working the pattern cords, a poem in Chinese above",
               "credit": "Weaving on a draw loom, Pictures of Tilling and Weaving, China, printed 1696 · Metropolitan Museum of Art · Public domain",
               "position": "50% 62%"
             },
@@ -364,11 +364,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Families",
-            "text": "Women did **more of the farming**; some historians add that more men took **several wives**"
+            "text": "Historians argue women did **more of the farming**; some add that more men took **several wives**"
           },
           {
             "label": "Inside Africa",
-            "text": "**More women and girls** were enslaved within Africa itself"
+            "text": "Historians argue **more women and girls** were enslaved within Africa itself"
           }
         ],
         "proves": "Cause, then effect: say who the trade took, then what changed at home."
@@ -461,16 +461,16 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "source-quote",
       "eyebrow": "Claim It · Your Turn",
       "title": "A friar is suspicious, in the 1570s.",
-      "footer": "Find his claim. Then ask: does his own evidence prove it?",
+      "footer": "Find his claim. Does his own evidence prove it?",
       "kc": "KC-4.1.VI",
       "template": {
-        "quote": "[T]hey also call her Tonantzin, taking the occasion from the preachers ... It seems to be a satanic invention to cover up idolatry ... and they now come to visit this Tonantzin from very far away.",
+        "quote": "[T]hey also call her Tonantzin, taking the occasion from the preachers, who called Our Lady ... Tonantzin. ... It seems to be a satanic invention to cover up idolatry ... and they now come ... from very far away.",
         "attribution": {
           "author": "Bernardino de Sahagún, Franciscan friar in Mexico",
           "work": "General History of the Things of New Spain",
           "year": "1570s"
         },
-        "notice": "\"Her\" is the Virgin of Guadalupe, whose church stood at Tepeyac. What does Sahagún claim the people there are doing? What evidence does he give?"
+        "notice": "\"Her\" is the Virgin of Guadalupe at Tepeyac. What is his claim? What is his evidence?"
       }
     },
     {
@@ -555,7 +555,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kc": "Unit 4: Learning Objective J",
       "template": {
         "weak": "The new trade changed society.",
-        "strong": "**Change:** From ______, ______ changed because ______. **Continuity:** But ______ kept going, **because** ______."
+        "strong": "**Change:** ______ changed from ______ to ______ because ______. **Continuity:** But ______ kept going, **because** ______."
       }
     },
     {

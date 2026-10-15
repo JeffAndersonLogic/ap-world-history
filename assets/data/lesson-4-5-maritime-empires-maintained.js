@@ -254,7 +254,7 @@ window.BEHISTORICAL_LESSON = {
     questions: [
       "What did the Chinese merchants bring to Manila, and what did they take back to China? Use Morga's words as evidence.",
       "Morga reports that silver \"every year flowed out of the realms of His Majesty into the possession of the pagans.\" Using what you know about mercantilism, explain why a Spanish king would see that as a problem.",
-      "Continuity and change: what about this trade was new in the 1500s, and what kept going the way Chinese merchants had already traded in Southeast Asia? Use one detail from the source for each."
+      "Continuity and change: what about this trade was new in the 1500s, and what kept going the way Chinese merchants had already traded in Southeast Asia? Use one detail from the source for what was new, and the introduction for what kept going."
     ]
   },
 

@@ -958,7 +958,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "The rulers' first tool was an idea. Most European rulers and their advisers believed that a kingdom grew strong by collecting gold and silver and keeping it. To do that, a country had to sell more to other countries than it bought from them, and it had to keep its colonies' trade for itself. Later writers named this set of ideas <span class=\"kt\">mercantilism</span>."
+            "html": "The rulers' first tool was an idea. Most European rulers and their advisers believed that a kingdom grew strong by bringing in more gold and silver than flowed out. To do that, a country had to sell more to other countries than it bought from them, and it had to keep its colonies' trade for itself. Later writers named this set of ideas <span class=\"kt\">mercantilism</span>."
           },
           {
             "type": "p",
@@ -994,7 +994,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Continuity and Change",
-          "raw": "<p><strong>Name what was new.</strong> Merchants had always pooled money for voyages. What was new was a company with a government's monopoly, its own soldiers, and the right to make war, sent by one state to compete with another.</p>"
+          "raw": "<p><strong>Name what was new.</strong> Merchants had pooled money for voyages for centuries. What was new was a company with a government's monopoly, its own soldiers, and the right to make war, sent by one state to compete with another.</p>"
         }
       },
       {
@@ -1088,7 +1088,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "About two of every three people carried away in the Atlantic slave trade were male. In parts of Africa, especially West Central Africa, that left communities with more women than men. Historians argue that this changed family life there: women did more of the farming, more women and girls were enslaved inside Africa itself, and, some historians argue, more men took several wives. The trade changed who lived in a village, and that changed how families worked. These are the \"demographic changes in Africa\" that the College Board names."
+            "html": "About two of every three people carried away in the Atlantic slave trade were male. In parts of Africa, especially West Central Africa, that left communities with more women than men. Historians argue that this changed family life there: women did more of the farming, more women and girls were enslaved inside Africa itself, and, some historians argue, more men took several wives (polygyny). The trade changed who lived in a village, and that changed how families worked. These are the \"demographic changes in Africa\" that the College Board names."
           },
           {
             "type": "p",
@@ -1160,8 +1160,8 @@ module.exports = {
       {
         "num": "02",
         "skill": "Claims and Evidence in Sources",
-        "text": "In Section 1, Thomas Mun states a rule. Put his claim in your own words. Then name ONE law from Section 1 that a ruler made to follow that rule, and explain how it fits Mun's claim.",
-        "placeholder": "Mun's claim is that... One law that follows it is... It fits because..."
+        "text": "In Section 1, Thomas Mun states a rule. Put his claim in your own words. Then name ONE law or policy from Section 1 that put the same mercantilist idea into practice, and explain how it fits Mun's claim.",
+        "placeholder": "Mun's claim is that... One law or policy that put the idea into practice is... It fits because..."
       },
       {
         "num": "03",

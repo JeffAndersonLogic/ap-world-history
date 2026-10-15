@@ -266,7 +266,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'rivals', kind: 'branch-tree', eyebrow: 'Rivals · Old Fights, New Tools',
       kc: 'KC-4.3.III.ii', title: 'Economic disputes became wars.',
-      footer: 'States had always fought over trade routes. The new tools were the laws and the companies they fought with.',
+      footer: 'States had fought over trade routes for centuries. The new tools were the laws and the companies they fought with.',
       template: {
         claimLabel: 'The pattern',
         claim: 'Rival states fought over **who would control a trade**.',
@@ -323,7 +323,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'Potosí (1545) and Zacatecas (1546). Spanish America produced most of the world\'s silver in this period; Flynn and Giráldez, citing Barrett and Cross, put Spanish America\'s output at about 150,000 tons between 1500 and 1800, "perhaps exceeding 80%" of world production. Japan was the other great source, perhaps 30 percent of world output in the late 1500s and early 1600s. The old map key\'s "60%" was the viceroyalty of Peru\'s share in Cross (1983), not Potosí\'s alone; do not give Potosí alone a share of world output.',
           'The Single Whip (yitiao bianfa) combined land taxes and labor service into payments in silver. It spread through the 1500s and was applied across the empire under Zhang Juzheng around 1580. Tens of millions of Chinese households now needed silver, and China mined little.',
-          'Silver was worth more against gold in China than elsewhere: in the early 1500s an ounce of gold bought about six ounces of silver in China against about eleven or twelve in Europe, and in the late 1500s about five and a half to seven and a half at Canton (Von Glahn, 1996, as cited by Flynn and Giráldez). Merchants who moved silver to China profited on the metal itself.',
+          'Silver was worth more against gold in China than elsewhere: in the early 1500s an ounce of gold bought about six ounces of silver in China against about eleven or twelve in Europe, and in the 1590s about five and a half to seven at Canton against twelve and a half to fourteen in Spain (Von Glahn, 1996, and Flynn and Giráldez, 1995). Merchants who moved silver to China profited on the metal itself.',
           'Manila was founded in 1571; the galleon route across the Pacific had been opened in 1565. Chinese junks from Fujian brought silk and porcelain to trade for the silver. The cause runs from China\'s side as much as Spain\'s: KC-4.1.IV\'s "satisfy Chinese demand for silver."'
         ],
         ask: 'If China had not taxed in silver, what would have happened to the silver?',
@@ -365,7 +365,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'KC-4.1.IV.D.i: the Atlantic trading system moved goods, wealth and labor, including enslaved persons.',
           'Goods from outside the Atlantic were central: Indian cotton cloth was among the main goods traded for captives on the West African coast, and cowrie shells from the Maldives, shipped by Dutch and English traders, served as money there.',
-          'The "triangular trade" diagram is a simplification. Brazil traded directly with Angola (tobacco, sugar brandy, gold out; captives back), and many ships sailed two-way routes.',
+          'The "triangular trade" diagram is a simplification. Brazil traded directly with Africa: Rio de Janeiro sent sugar-cane brandy to Angola, Bahia sent tobacco, and later gold, to the Bight of Benin, and ships brought captives back on two-way routes.',
           'Enslaved Africans are part of this system; 4.4 taught the scale and the plantations. Here the point is the system\'s shape and its reach.'
         ],
         ask: 'Name one good in this trade that came from outside the Atlantic.',
@@ -401,7 +401,7 @@ window.BEHISTORICAL_TEACHING = {
         panels: [
           { visual: { url: '../assets/images/topics/4-5/spinner-maes-c1655.jpg', alt: 'Oil painting of an old woman in a Dutch house, seated at a spinning wheel beside a table with a red cloth, a reel hanging on the wall behind her', credit: 'Nicolaes Maes, The Spinner, about 1655 · Rijksmuseum · Public domain', position: '55% 50%' }, title: 'Western Europe: wool and linen' },
           { visual: { url: '../assets/images/topics/4-5/palampore-india-early-1700s.jpg', alt: 'A large painted cotton bed cover from India: a flowering tree rising from a small hill, with a patterned border of flowers', credit: 'Painted cotton bed cover (palampore), India, early 1700s · Metropolitan Museum of Art · Public domain', position: '50% 40%' }, title: 'India: cotton' },
-          { visual: { url: '../assets/images/topics/4-5/gengzhitu-1696-drawloom.jpg', alt: 'Black-and-white woodblock print of a tall Chinese silk draw loom inside a house, with one weaver seated at the front and a second worker high on the frame working the pattern cords, a poem in Chinese above', credit: 'Weaving on a draw loom, Pictures of Tilling and Weaving, China, printed 1696 · Metropolitan Museum of Art · Public domain', position: '50% 62%' }, title: 'China: silk' }
+          { visual: { url: '../assets/images/topics/4-5/gengzhitu-1696-drawloom.jpg', alt: 'Black-and-white print of a tall Chinese silk draw loom inside a house, with one weaver seated at the front and a second worker high on the frame working the pattern cords, a poem in Chinese above', credit: 'Weaving on a draw loom, Pictures of Tilling and Weaving, China, printed 1696 · Metropolitan Museum of Art · Public domain', position: '50% 62%' }, title: 'China: silk' }
         ]
       },
       notes: {
@@ -426,8 +426,8 @@ window.BEHISTORICAL_TEACHING = {
         rows: [
           { label: 'Taken', text: 'About **two of every three** captives carried across the Atlantic were **male**' },
           { label: 'Left', text: 'In some regions, communities with **more women than men**' },
-          { label: 'Families', text: 'Women did **more of the farming**; some historians add that more men took **several wives**' },
-          { label: 'Inside Africa', text: '**More women and girls** were enslaved within Africa itself' }
+          { label: 'Families', text: 'Historians argue women did **more of the farming**; some add that more men took **several wives**' },
+          { label: 'Inside Africa', text: 'Historians argue **more women and girls** were enslaved within Africa itself' }
         ],
         proves: 'Cause, then effect: say who the trade took, then what changed at home.'
       },
@@ -436,7 +436,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'KC-4.2.III.C: "some notable gender and family restructuring occurred, including demographic changes in Africa that resulted from the trade of enslaved persons."',
           'The sex ratio: roughly two of every three captives in the Atlantic trade were male; one summary of the shipping data averages about 179 males per 100 females, varying by region and century (Slave Voyages data; Eltis and Engerman).',
-          'The family changes are historians\' arguments from that ratio and from local evidence (Patrick Manning, Slavery and African Life, 1990; John Thornton): in regions hit hardest, such as parts of West Central Africa, women outnumbered men; women carried more of the farming; and African buyers kept more enslaved women, whom the Atlantic market wanted less. Manning argues the shortage of men strengthened polygyny; James Fenske (2013) finds the long-run evidence for that thin, so present it as an argument. Say "historians argue."',
+          'The family changes are historians\' arguments from that ratio and from local evidence (Patrick Manning, Slavery and African Life, 1990; John Thornton): in regions hit hardest, such as parts of West Central Africa, women outnumbered men; women carried more of the farming; and African buyers kept more enslaved women, whom the Atlantic market wanted less. Manning argues the shortage of men strengthened polygyny; James Fenske ("African Polygamy: Past and Present," 2015) finds the link rests mostly on the broad contrast between West Africa and the rest of the continent, so present it as an argument. Say "historians argue."',
           'Demographic change also meant population loss or stagnation in some regions. The effects varied: not every region or society changed the same way.'
         ],
         ask: 'Why would taking more men than women change how a family worked?',
@@ -461,7 +461,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-4.1.IV.D.ii: the Atlantic system involved the movement of labor, including enslaved persons, and "the mixing of African, American, and European cultures and peoples, with all parties contributing to this cultural synthesis."',
-          'Foods: dishes that combined African, American and European ingredients and ways of cooking. Rice farming skills of enslaved West Africans mattered in places such as the Carolina coast (4.3 met rice and okra crossing with enslaved Africans).',
+          'Foods: dishes that combined African, American and European ingredients and ways of cooking. Enslaved West Africans brought rice-farming knowledge; historians argue over how much it shaped rice growing on the Carolina coast (4.3 met rice and okra crossing with enslaved Africans).',
           'Language: creole languages, such as Haitian Creole and Papiamentu, took most of their words from a European language while much of their grammar and sound shows the influence of African languages. Linguists still argue over how they formed; keep it to "shaped by."',
           'Do not teach casta here; it is 4.7. This slide is about culture, not ranking.'
         ],
@@ -513,11 +513,11 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'sahagun', kind: 'source-quote', eyebrow: 'Claim It · Your Turn',
       kc: 'KC-4.1.VI', title: 'A friar is suspicious, in the 1570s.',
-      footer: 'Find his claim. Then ask: does his own evidence prove it?',
+      footer: 'Find his claim. Does his own evidence prove it?',
       template: {
-        quote: '[T]hey also call her Tonantzin, taking the occasion from the preachers ... It seems to be a satanic invention to cover up idolatry ... and they now come to visit this Tonantzin from very far away.',
+        quote: '[T]hey also call her Tonantzin, taking the occasion from the preachers, who called Our Lady ... Tonantzin. ... It seems to be a satanic invention to cover up idolatry ... and they now come ... from very far away.',
         attribution: { author: 'Bernardino de Sahagún, Franciscan friar in Mexico', work: 'General History of the Things of New Spain', year: '1570s' },
-        notice: '"Her" is the Virgin of Guadalupe, whose church stood at Tepeyac. What does Sahagún claim the people there are doing? What evidence does he give?'
+        notice: '"Her" is the Virgin of Guadalupe at Tepeyac. What is his claim? What is his evidence?'
       },
       notes: {
         minutes: 2,
@@ -584,7 +584,7 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'A change and a continuity, each with a named example and the reason.',
       template: {
         weak: 'The new trade changed society.',
-        strong: '**Change:** From ______, ______ changed because ______. **Continuity:** But ______ kept going, **because** ______.'
+        strong: '**Change:** ______ changed from ______ to ______ because ______. **Continuity:** But ______ kept going, **because** ______.'
       },
       notes: {
         minutes: 2,
@@ -667,7 +667,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 1,
         land: [
-          'The picture: Andries Beeckman, The Castle of Batavia, about 1662 (Rijksmuseum SK-A-19). Beeckman worked in Batavia, the VOC\'s Asian headquarters, which Coen took by force in 1619. A market of Javanese, Chinese and other Asian traders and townspeople fills the foreground, and the company\'s castle stands behind: a company built to make an empire pay, inside an Asian market that kept going. The spine in one picture.',
+          'The picture: Andries Beeckman, The Castle of Batavia, about 1662 (Rijksmuseum SK-A-19). Beeckman worked in Batavia, the VOC\'s Asian headquarters, which Coen took by force in 1619. Palms and the company\'s castle fill the slide; along the bottom edge, under the sentence, is a market of Javanese, Chinese and other Asian traders and townspeople: a company built to make an empire pay, inside an Asian market that kept going. The spine in one picture.',
           'This sentence answers all four learning objectives: the tools (H), what they moved (I), and what it changed in work (I), families and society (J), and faith (K).',
           'Hand off to 4.6 in the words of the unit story map.'
         ],

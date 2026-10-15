@@ -95,7 +95,7 @@ module.exports = {
       useThis: {
         tool: `The chartered monopoly company. <em>A government gives one company the only right to a trade and the power to fight for it, so the company's profit stays inside one country and the company's soldiers fight that country's rivals: a private business doing a ruler's work, paid for by the trade itself.</em>`,
         limit: `Monopolies invited smuggling, and the rules in law were often not the trade in practice; merchants and officials broke them whenever it paid.`,
-        comparison: `Against the <em>Ming tribute and trade system</em> of Unit 1: China's rulers also controlled foreign trade through licensed channels, but to keep order and display the emperor's authority, not to pile up silver. A similar tool, a controlled channel for trade, used for a different purpose.`
+        comparison: `Against the <em>Ming tribute system</em> of Topic 2.3: China's rulers also controlled foreign trade through licensed channels, but to keep order and display the emperor's authority, not to pile up silver. A similar tool, a controlled channel for trade, used for a different purpose.`
       },
       terms: [
         ['Mercantilism', 'A set of ideas that a state grows strong by collecting gold and silver, selling more than it buys, and keeping its colonies\' trade for itself.'],
@@ -146,7 +146,7 @@ module.exports = {
       useThis: {
         tool: `The economic dispute. <em>When two states want the same trade, and each believes the other's gain is its own loss, the dispute turns into war: Portugal and the Mamluks and Ottomans over spices, Morocco and Songhai over gold and salt, the Dutch and English over spices and shipping.</em>`,
         limit: `Economics was rarely the only cause. Religion (Christian against Muslim in the Indian Ocean) and politics were part of most of these wars, so name the economic dispute without claiming it was the whole story.`,
-        comparison: `Against the <em>Indian Ocean</em> of Topic 2.3: merchants had competed there for centuries, but no outside state had tried to take a whole trade by force. The fighting over trade was old; armed companies and ocean-wide rivalries were new.`
+        comparison: `Against the <em>Indian Ocean</em> of Topic 2.3: merchants had competed there for centuries, but the Portuguese attempt to control an ocean-wide trade with forts, warships and compulsory passes was new in its scale. The fighting over trade was old; armed companies and ocean-wide rivalries were new.`
       },
       terms: [
         ['Economic dispute', 'A conflict between states over who controls a trade, its routes or its profits.'],
@@ -177,7 +177,7 @@ module.exports = {
           heading: 'Why China set the price',
           blocks: [
             { p: `Ming China had tried paper money and abandoned it, and through the 1500s its government folded many taxes and labor duties into a single payment in silver. Historians call this the <span class="kt">Single Whip</span> reform; the minister Zhang Juzheng pushed it across the empire around <span class="num">1580</span>. Tens of millions of Chinese households now needed silver every year to pay their taxes, and China mined little of its own.` },
-            { p: `So silver was worth more in China than in Europe. In the 1500s, an ounce of gold bought about six or seven ounces of silver in China, and about eleven or twelve in Europe. A merchant who carried silver from Europe or the Americas to China made money on the silver itself, before he bought anything. That gap is the engine of the whole trade. In the College Board's words, the silver was used "to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver."` }
+            { p: `So silver was worth more in China than in Europe. In the early 1500s, an ounce of gold bought about six ounces of silver in China and about eleven or twelve in Europe; by the 1590s, about five and a half to seven at Canton and twelve and a half to fourteen in Spain. A merchant who carried silver from Europe or the Americas to China made money on the silver itself, before he bought anything. That gap is the engine of the whole trade. In the College Board's words, the silver was used "to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver."` }
           ]
         },
         {
@@ -221,7 +221,7 @@ module.exports = {
           heading: 'The Atlantic system',
           blocks: [
             { p: `The <span class="kt">Atlantic trading system</span>, in the College Board's words, "involved the movement of goods, wealth, and labor, including enslaved persons." Sugar and tobacco went to Europe. Guns, iron, alcohol and cloth went to Africa, and much of the cloth was Indian cotton. Cowrie shells from the Maldive Islands, shipped by Dutch and English traders, were used as money on the West African coast. Silver, and later Brazilian gold, flowed toward Europe. And enslaved Africans were forced across the ocean to the plantations (Topic 4.4 gives the numbers).` },
-            { p: `The neat triangle of textbook diagrams, Europe to Africa to the Americas and home, is a simplification. Brazil traded directly with Angola, sending tobacco, sugar brandy and gold and bringing captives back, and many ships sailed back and forth on two-way routes. The Atlantic system also reached far outside the Atlantic: the cloth from India and the shells from the Maldives were part of it.` }
+            { p: `The neat triangle of textbook diagrams, Europe to Africa to the Americas and home, is a simplification. Brazil traded directly with Africa: ships from Rio de Janeiro carried sugar-cane brandy to Angola, ships from Bahia carried tobacco, and later gold, to the Bight of Benin, and both brought captives back on two-way routes. The Atlantic system also reached far outside the Atlantic: the cloth from India and the shells from the Maldives were part of it.` }
           ]
         },
         {
@@ -284,7 +284,7 @@ module.exports = {
           heading: 'A mixed Atlantic world',
           blocks: [
             { p: `In the Americas, Africans, Indigenous Americans and Europeans lived side by side, usually because some of them were forced to, and each shaped what came out. The College Board's words are "the mixing of African, American, and European cultures and peoples, with all parties contributing to this cultural synthesis."` },
-            { p: `<b>Food:</b> dishes across the Atlantic world combined African, American and European ingredients and ways of cooking, and the rice-farming skill of enslaved West Africans mattered on coasts such as Carolina's. <b>Language:</b> new languages called creoles formed, such as Haitian Creole and Papiamentu. Most of their words come from a European language, and much of their grammar and sound shows the influence of African languages; linguists still debate exactly how they formed. <b>Music and faith</b> mixed too, as section 06 shows.` },
+            { p: `<b>Food:</b> dishes across the Atlantic world combined African, American and European ingredients and ways of cooking, and enslaved West Africans brought rice-farming knowledge, though historians still argue over how much it shaped rice growing on coasts such as Carolina's. <b>Language:</b> new languages called creoles formed, such as Haitian Creole and Papiamentu. Most of their words come from a European language, and much of their grammar and sound shows the influence of African languages; linguists still debate exactly how they formed. <b>Music and faith</b> mixed too, as section 06 shows.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -294,9 +294,9 @@ module.exports = {
         }
       ],
       useThis: {
-        tool: `Who the trade took. <em>When a trade removes more men than women from a region, the people left behind reorganize: more women farm, local buyers enslave more women, and, some historians argue, more men take several wives. A change in who lived in a village became a change in how families worked.</em>`,
+        tool: `Who the trade took. <em>Ask two questions of any region the trade hit hard: who did the trade take, and what did the people left behind have to do differently? Answer the second with what historians argue, and say that they argue it.</em>`,
         limit: `The effects varied a great deal by region and period, and much of the evidence is indirect, so name a region and say "historians argue" rather than describing all of Africa.`,
-        comparison: `Against the <em>Swahili coast</em> of Topic 2.3: there, too, a new culture and a language, Swahili, came out of long contact between Africans and Arab and Persian traders. The difference is force: Atlantic creole cultures were made largely by people who had been enslaved.`
+        comparison: `Against the <em>Swahili coast</em> of Topic 2.3: there, too, a new coastal culture came out of long contact, and an African Bantu language, Swahili, took in many Arabic words from Arab and Persian traders. The difference is force: Atlantic creole cultures were made largely by people who had been enslaved.`
       },
       terms: [
         ['Demographic change', 'A change in the size or makeup of a population, such as more women than men.'],
@@ -344,13 +344,13 @@ module.exports = {
       ],
       useThis: {
         tool: `Spread, clash, blend. <em>When a religion reaches new people, it can win converts, provoke a fight, or mix with what they already believed, and often all three happen in one place: to compare two cases, ask the same questions of each: who carried the religion, who received it, and what the people on each side did with it.</em>`,
-        limit: `The three are not neat boxes. Tepeyac was a spread of Christianity and a blend at once, and the Lima campaigns attacked exactly the blending they found.`,
-        comparison: `Against <em>Buddhism along the Silk Roads</em> in Unit 2: a religion carried by trade there also changed as it moved, taking on Chinese forms. In both cases a religion traveled with merchants and was remade by the people who received it.`
+        limit: `The three are not neat boxes. The three are not neat boxes: one place can show more than one of them.`,
+        comparison: `Against <em>Buddhism along the Silk Roads</em> in Unit 2: Buddhism traveled with merchants and monks and took on Chinese forms. In the Americas, Christianity arrived with conquerors and missionaries instead, yet it too was remade by the people who received it, as at Tepeyac.`
       },
       terms: [
         ['Syncretism', 'The blending of two or more religions into new beliefs and practices.'],
         ['Extirpation of idolatry', 'Campaigns in Peru from about 1610 to destroy Andean sacred objects and punish people who kept the old religion.'],
-        ['Tepeyac', 'The hill near Mexico City where the Virgin of Guadalupe was honored, and where a goddess called Tonantzin had once been honored.'],
+        ['Tepeyac', 'The hill near Mexico City where the Virgin of Guadalupe was honored, and where, Sahagún wrote, the Nahua had once honored a goddess they called Tonantzin.'],
         ['Jesuits', 'A Catholic religious order whose missionaries reached China and Japan in this period.'],
         ['Vodou', 'A religion built by enslaved Africans in Saint-Domingue in the 1700s from African religions and Catholic saints.']
       ]
@@ -385,7 +385,7 @@ module.exports = {
       {
         category: 'Belief',
         title: 'Spread, clash, blend',
-        body: `Christianity reached the Americas, the Philippines and Kongo, Jesuits reached Beijing, and Islam kept spreading in Southeast Asia. Priests in Peru attacked Andean religion from about 1610. At Tepeyac, Nahua Christians honored the Virgin of Guadalupe at a hill once sacred to Tonantzin; Kongo artists made Kongo crucifixes; a Potosí painter of the 1700s made Mary the silver mountain; and enslaved Africans in Saint-Domingue built Vodou in the 1700s.`
+        body: `Christianity reached the Americas, the Philippines and Kongo, Jesuits reached Beijing, and Islam kept spreading in Southeast Asia. Priests in Peru attacked Andean religion from about 1610. At Tepeyac, Nahua Christians honored the Virgin of Guadalupe at a hill that Sahagún said had once been sacred to Tonantzin; Kongo artists made Kongo crucifixes; a Potosí painter of the 1700s made Mary the silver mountain; and enslaved Africans in Saint-Domingue built Vodou in the 1700s.`
       }
     ]
   }

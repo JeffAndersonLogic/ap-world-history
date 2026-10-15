@@ -5919,7 +5919,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "10",
           "module": "Checkpoint 2",
           "label": "Module 10, Checkpoint 2",
-          "prompt": "Explain ONE way the trade in enslaved people changed families or communities in parts of Africa, and why it happened. Then explain ONE example of cultural mixing in the Atlantic world, and name the groups who contributed to it. Finally, compare TWO things religions did as contact grew (spread to new places, caused conflict, or blended into new beliefs): give an example of each, and say one way they were similar and one way they were different.",
+          "prompt": "Explain ONE way the trade in enslaved people changed families or communities in parts of Africa, and why it happened. Then explain ONE example of cultural mixing in the Atlantic world, and name the groups who contributed to it. Finally, compare how religions affected societies as contact grew: pick TWO examples that show different things religions did (for example, one that spread and one that blended), and say one way they were alike and one way they were different.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -5953,7 +5953,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
             "Virgin of the Mountain"
           ],
           "criteria": [
-            "Give one change in families or communities in Africa, and the cause: the trade took more men than women.",
+            "Give one change in families or communities in Africa, and name its cause.",
             "Give one example of Atlantic cultural mixing, and name at least two groups who contributed.",
             "Compare two things religions did (spread, conflict, or blending), with an example of each and one similarity and one difference."
           ],
@@ -5970,7 +5970,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "07",
           "module": "Evidence Lab",
           "label": "Module 07, Evidence Lab",
-          "prompt": "Make one continuity-and-change claim about how maritime empires were maintained from 1450 to 1750. Then, for EACH of your two cards: (1) say what kind of source it is, who made it, and when, (2) give one detail you can see and explain how it supports your claim, and (3) name one thing the source cannot tell you.",
+          "prompt": "Make one claim about what changed and what kept going as empires made money from trade, 1450 to 1750. Then, for EACH of your two cards: (1) say what kind of source it is, who made it, and when, (2) give one detail you can see and explain how it supports your claim, and (3) name one thing the source cannot tell you.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -6000,7 +6000,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "02",
           "module": "First & 10, Question 2",
           "label": "Module 02, First & 10, Question 2",
-          "prompt": "In Section 1, Thomas Mun states a rule. Put his claim in your own words. Then name ONE law from Section 1 that a ruler made to follow that rule, and explain how it fits Mun's claim.",
+          "prompt": "In Section 1, Thomas Mun states a rule. Put his claim in your own words. Then name ONE law or policy from Section 1 that put the same mercantilist idea into practice, and explain how it fits Mun's claim.",
           "skill": "Claims and Evidence",
           "skills": [
             "Claims and Evidence"
@@ -6046,7 +6046,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "08",
           "module": "Primary Source",
           "label": "Module 08, Primary Source",
-          "prompt": "What did the Chinese merchants bring to Manila, and what did they take back to China? Use Morga's words as evidence. Morga reports that silver \"every year flowed out of the realms of His Majesty into the possession of the pagans.\" Using what you know about mercantilism, explain why a Spanish king would see that as a problem. Continuity and change: what about this trade was new in the 1500s, and what kept going the way Chinese merchants had already traded in Southeast Asia? Use one detail from the source for each.",
+          "prompt": "What did the Chinese merchants bring to Manila, and what did they take back to China? Use Morga's words as evidence. Morga reports that silver \"every year flowed out of the realms of His Majesty into the possession of the pagans.\" Using what you know about mercantilism, explain why a Spanish king would see that as a problem. Continuity and change: what about this trade was new in the 1500s, and what kept going the way Chinese merchants had already traded in Southeast Asia? Use one detail from the source for what was new, and the introduction for what kept going.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -6060,7 +6060,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "05",
           "module": "AP Skill Builder",
           "label": "Module 05, AP Skill Builder",
-          "prompt": "Now do it yourself with a different source. In the 1570s, a Spanish friar named Bernardino de Sahagún wrote about Tepeyac, a hill near Mexico City where the Nahua had once honored a goddess called Tonantzin, \"our mother,\" and where a church of the Virgin Mary, Our Lady of Guadalupe, now stood (translated from his Spanish; words in brackets are explanations): \"[N]ow that the church of Our Lady of Guadalupe is built there, they also call her Tonantzin, taking the occasion from the preachers, who called Our Lady, the Mother of God, Tonantzin. ... It seems to be a satanic invention to cover up idolatry [worship of other gods] under the confusion of this name Tonantzin, and they now come to visit this Tonantzin from very far away, as far as they did before.\" In 2 to 3 sentences, state Sahagún's claim in your own words, name the evidence he gives for it, and explain whether that evidence is enough to prove his claim.",
+          "prompt": "Now do it yourself with a different source. In the 1570s, a Spanish friar named Bernardino de Sahagún wrote about Tepeyac, a hill near Mexico City where, he wrote, the Nahua had once honored a goddess they called Tonantzin, \"our mother,\" and where a church of the Virgin Mary, Our Lady of Guadalupe, now stood (translated from his Spanish; words in brackets are explanations): \"[N]ow that the church of Our Lady of Guadalupe is built there, they also call her Tonantzin, taking the occasion from the preachers, who called Our Lady, the Mother of God, Tonantzin. ... It seems to be a satanic invention to cover up idolatry [worship of other gods] under the confusion of this name Tonantzin, and they now come to visit this Tonantzin from very far away, as far as they did before.\" In 2 to 3 sentences, state Sahagún's claim in your own words, name the evidence he gives for it, and explain whether that evidence is enough to prove his claim.",
           "skill": "Claims and Evidence",
           "skills": [
             "Claims and Evidence"

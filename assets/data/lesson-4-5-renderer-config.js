@@ -99,7 +99,7 @@
       { label: '2 and 3. The western road', detail: 'From 1571, Spanish galleons carried silver from Acapulco across the Pacific to Manila (arrow 2), where Chinese merchants traded silk and porcelain for it, and the silver went on into China (arrow 3).' },
       { label: 'Ming China', detail: 'China collected its taxes in silver (the Single Whip reform) and mined little of its own, so silver bought more there than in Europe. That demand pulled silver from both roads.' },
       { label: 'Europe and West Africa', detail: 'Mercantilist states such as Spain, England and the Dutch Republic used laws and chartered companies to keep wealth at home. In West Africa, Indian cotton cloth and cowrie shells from the Maldives were traded for enslaved people (arrow 5).' },
-      { label: 'Black dots', detail: 'Diu, Tondibi and Ambon are places where economic disputes turned violent: Diu (Portugal beat a fleet of Mamluk Egypt and Gujarat over the spice trade, 1509), Tondibi (Morocco beat Songhai, 1591, wanting West Africa\'s gold and salt), and Ambon (the Dutch company executed English company men, 1623). The dot at Manila marks where silver met Chinese silk, not a fight.' }
+      { label: 'Black dots', detail: 'Diu, Tondibi and Ambon are places where economic disputes turned violent: Diu (Portugal beat a fleet of Mamluk Egypt and Gujarat over the spice trade, 1509), Tondibi (Morocco beat Songhai, 1591, wanting West Africa\'s gold and salt), and Ambon (a rivalry over the spice islands: the Dutch company executed English company men, 1623). The dot at Manila marks where silver met Chinese silk, not a fight.' }
     ]
   };
 
@@ -137,7 +137,7 @@
       { label: 'The reason he gives', text: 'Trade in Asia needs the protection of the company\'s own weapons, and the weapons are paid for by the trade\'s profits. Each one depends on the other.' },
       { label: 'Why he says it', text: 'Coen was writing to the men who paid for the company. Stating the claim this strongly helped him ask them for more ships and soldiers. Knowing that does not make the claim false; it tells you why he argued it so hard.' }
     ],
-    prompt: 'Now do it yourself with a different source. In the 1570s, a Spanish friar named Bernardino de Sahagún wrote about Tepeyac, a hill near Mexico City where the Nahua had once honored a goddess called Tonantzin, "our mother," and where a church of the Virgin Mary, Our Lady of Guadalupe, now stood (translated from his Spanish; words in brackets are explanations): "[N]ow that the church of Our Lady of Guadalupe is built there, they also call her Tonantzin, taking the occasion from the preachers, who called Our Lady, the Mother of God, Tonantzin. ... It seems to be a satanic invention to cover up idolatry [worship of other gods] under the confusion of this name Tonantzin, and they now come to visit this Tonantzin from very far away, as far as they did before." In 2 to 3 sentences, state Sahagún\'s claim in your own words, name the evidence he gives for it, and explain whether that evidence is enough to prove his claim.',
+    prompt: 'Now do it yourself with a different source. In the 1570s, a Spanish friar named Bernardino de Sahagún wrote about Tepeyac, a hill near Mexico City where, he wrote, the Nahua had once honored a goddess they called Tonantzin, "our mother," and where a church of the Virgin Mary, Our Lady of Guadalupe, now stood (translated from his Spanish; words in brackets are explanations): "[N]ow that the church of Our Lady of Guadalupe is built there, they also call her Tonantzin, taking the occasion from the preachers, who called Our Lady, the Mother of God, Tonantzin. ... It seems to be a satanic invention to cover up idolatry [worship of other gods] under the confusion of this name Tonantzin, and they now come to visit this Tonantzin from very far away, as far as they did before." In 2 to 3 sentences, state Sahagún\'s claim in your own words, name the evidence he gives for it, and explain whether that evidence is enough to prove his claim.',
     criteria: [
       'I stated Sahagún\'s claim in one sentence, in my own words.',
       'I named the evidence he gives, with a word or phrase from the source.',
@@ -163,18 +163,18 @@
       cardDesc: 'What the slave trade did to families in Africa, how Atlantic cultures mixed, and how religions spread, clashed, and blended.',
       learningTargets: [lesson.learningTargets[2].target, lesson.learningTargets[3].target],
       successCriteria: [lesson.successCriteria[2].criteria, lesson.successCriteria[3].criteria],
-      prompt: 'Explain ONE way the trade in enslaved people changed families or communities in parts of Africa, and why it happened. Then explain ONE example of cultural mixing in the Atlantic world, and name the groups who contributed to it. Finally, compare TWO things religions did as contact grew (spread to new places, caused conflict, or blended into new beliefs): give an example of each, and say one way they were similar and one way they were different.',
+      prompt: 'Explain ONE way the trade in enslaved people changed families or communities in parts of Africa, and why it happened. Then explain ONE example of cultural mixing in the Atlantic world, and name the groups who contributed to it. Finally, compare how religions affected societies as contact grew: pick TWO examples that show different things religions did (for example, one that spread and one that blended), and say one way they were alike and one way they were different.',
       responseType: 'Checkpoint 2',
       skill: 'Causation and Comparison',
       terms: ['gender', 'family', 'women', 'men', 'polygyny', 'demographic', 'Africa', 'cultural synthesis', 'creole', 'Africans', 'Indigenous Americans', 'Europeans', 'Christianity', 'Islam', 'missionaries', 'Jesuits', 'religious conflict', 'idolatry', 'Peru', 'syncretic', 'syncretism', 'Guadalupe', 'Tonantzin', 'Kongo', 'Vodou', 'Virgin of the Mountain'],
-      focus: ['Give one change in families or communities in Africa, and the cause: the trade took more men than women.', 'Give one example of Atlantic cultural mixing, and name at least two groups who contributed.', 'Compare two things religions did (spread, conflict, or blending), with an example of each and one similarity and one difference.']
+      focus: ['Give one change in families or communities in Africa, and name its cause.', 'Give one example of Atlantic cultural mixing, and name at least two groups who contributed.', 'Compare two things religions did (spread, conflict, or blending), with an example of each and one similarity and one difference.']
     }
   ];
 
   lesson.evidenceLab = {
     title: 'Evidence Lab: Tools, Flows, and What They Changed',
     task: 'Choose TWO cards: one you can use to show something NEW in this period, and one you can use to show something that KEPT GOING. Say why each card fits.',
-    prompt: 'Make one continuity-and-change claim about how maritime empires were maintained from 1450 to 1750. Then, for EACH of your two cards: (1) say what kind of source it is, who made it, and when, (2) give one detail you can see and explain how it supports your claim, and (3) name one thing the source cannot tell you.'
+    prompt: 'Make one claim about what changed and what kept going as empires made money from trade, 1450 to 1750. Then, for EACH of your two cards: (1) say what kind of source it is, who made it, and when, (2) give one detail you can see and explain how it supports your claim, and (3) name one thing the source cannot tell you.'
   };
 
   lesson.images = [
@@ -196,7 +196,7 @@
     },
     {
       title: 'Women Reeling Silk, China, Printed 1696',
-      alt: 'Black-and-white woodblock print: under a thatched shed, women tend a pot of boiling cocoons and turn a reel that winds the silk thread, with a poem in Chinese above.',
+      alt: 'Black-and-white print: under a thatched shed, women tend a pot of boiling cocoons and turn a reel that winds the silk thread, with a poem in Chinese above.',
       url: '../assets/images/topics/4-5/gengzhitu-1696-reeling.jpg',
       sourceUrl: 'https://www.metmuseum.org/art/collection/search/51081',
       caption: 'Reeling silk, from the Pictures of Tilling and Weaving (Yuzhi Gengzhi tu), designed by the court painter Jiao Bingzhen and printed in 1696 with poems by the Kangxi emperor of the Qing dynasty. Metropolitan Museum of Art.',
@@ -216,7 +216,7 @@
       url: '../assets/images/topics/4-5/guadalupe-arellano-1691.jpg',
       sourceUrl: 'https://collections.lacma.org/object/148372',
       caption: 'A painted copy, made in Mexico in 1691 by Antonio de Arellano and his son Manuel, of the image of the Virgin of Guadalupe honored at Tepeyac, near Mexico City. The corner scenes tell the story of her appearing to a Nahua man, Juan Diego, a story first published in 1648. Los Angeles County Museum of Art.',
-      prompt: 'NOTICE the details of the Virgin and the four corner scenes. INFER why this image became so important to Christians in Mexico, both Nahua and Spanish. What can a painting made 160 years after the story it tells not prove about what happened in 1531?'
+      prompt: 'NOTICE the details of the Virgin and the four corner scenes. INFER why this image became so important to Christians in Mexico, both Nahua and Spanish. This was painted in 1691, 160 years after 1531. What can it not tell you about what happened in 1531?'
     },
     {
       title: 'Who the Atlantic Slave Trade Took',
