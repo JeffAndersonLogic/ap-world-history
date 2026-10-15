@@ -6,6 +6,8 @@ Jeff started this build with "Build 4,5" on 2026-10-15, read as "build 4.5": Top
 against the CED source file and the scholarship; the record of what they found is in
 `docs/TOPIC-4-5-CLAIM-LEDGER.md`, under "Review findings".
 
+**Resume here (2026-10-15):** Phases 1 to 5 done; Phase 7 in progress. Written and committed as work in progress: deck (`teacher/data/topic-4-5-*`, pages, DECKS and TOOLS entries), deep reading, map, BeInTheRoom (The Manila Silver Council; the Potosí scenario archived), schedule, Canvas overview. Still placeholders (`__...__` strings) in `assets/data/lesson-4-5-maritime-empires-maintained.js`, `assets/data/lesson-4-5-renderer-config.js` and the teaching base: lecture segments, Primary Source (Morga), Skill Builder (Coen model, Sahagún practice), Evidence Lab images, `stableImages`, the Sahagún quote, deck pictures (`assets/images/topics/4-5/`, not yet saved). Next: fill those from the fact-check and picture reports, write the claim ledger, then Phase 9.
+
 **Taught:** Green Monday 2026-11-09, Silver Tuesday 2026-11-10, from Jeff's corrected November
 Canvas calendar (2026-10-14), already in `assets/data/announcements-schedule.js` as date-only
 entries.

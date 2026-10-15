@@ -1991,28 +1991,26 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       unit: 'Unit 4: Transoceanic Interconnections',
       topic: 'Maritime Empires Maintained and Developed',
       learningTargets: [
-        { text: 'I can explain how rulers used mercantilism, chartered monopoly companies, and economic rivalry to maintain and develop maritime empires.', label: 'Governance' },
-        { text: 'I can explain continuity and change in exchange networks, including global silver flows, chartered companies, Atlantic trade, and the continued importance of regional Afro-Eurasian markets.', label: 'Economic Systems' },
-        { text: 'I can explain political, economic, and social effects of expanding exchange, including intensified peasant/artisan labor and changes to gender and family patterns in Africa associated with the trade of enslaved persons.', label: 'Social Interactions and Organization' }
+        { text: 'I can explain how European rulers used mercantilism and chartered joint-stock companies to make their empires pay and to compete with each other, and how economic disputes led to rivalries and wars.', label: 'Governance' },
+        { text: 'I can explain what changed and what continued in networks of exchange from 1450 to 1750: silver pulled toward China, the Atlantic trading system, regional markets that kept flourishing, and peasant and artisan work that continued and grew.', label: 'Economic Systems' },
+        { text: 'I can explain how the trade in enslaved people changed families and communities in parts of Africa, and how Africans, Indigenous Americans, and Europeans all contributed to new mixed cultures in the Atlantic world.', label: 'Social Interactions and Organization' }
       ],
       successCriteria: [
-        { text: 'I can explain how mercantilist rules and joint-stock companies such as the VOC or British EIC helped states mobilize capital, protect monopolies, and compete for overseas trade and territory.', label: 'Governance' },
-        { text: 'I can trace silver and Atlantic exchange across hemispheres while also explaining one important continuity in established Afro-Eurasian regional markets or commercial practices.', label: 'Economic Systems' },
-        { text: 'I can explain how growing demand intensified peasant or artisan labor in Europe, India, or China and how the Atlantic slave trade reshaped demographic, gender, family, and cultural patterns in parts of Africa and the Americas.', label: 'Social Interactions and Organization' }
+        { text: 'I can explain how one mercantilist law or one joint-stock company, such as the VOC or the English East India Company, helped a ruler make an empire pay or compete with a rival, and name one rivalry that grew out of an economic dispute.', label: 'Governance' },
+        { text: 'I can explain one change in networks of exchange (silver pulled toward China, or the Atlantic trading system) and one continuity (regional markets with their old merchants and ways, or peasant and artisan work that continued and grew).', label: 'Economic Systems' },
+        { text: 'I can explain one way the trade in enslaved people changed families in parts of Africa, and one example of cultural mixing in the Atlantic world that Africans, Indigenous Americans, and Europeans all contributed to.', label: 'Social Interactions and Organization' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
-        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.5 module you did not complete in class.', due: 'Wednesday, November 11' }
+      ],
+      homeworkDue: 'Wednesday, November 11',
+      dueDate: '2026-11-11'
     },
     /* 2026-11-10  <-  lesson-4-5-maritime-empires-maintained.js */
     {
@@ -2021,28 +2019,26 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       unit: 'Unit 4: Transoceanic Interconnections',
       topic: 'Maritime Empires Maintained and Developed',
       learningTargets: [
-        { text: 'I can explain how rulers used mercantilism, chartered monopoly companies, and economic rivalry to maintain and develop maritime empires.', label: 'Governance' },
-        { text: 'I can explain continuity and change in exchange networks, including global silver flows, chartered companies, Atlantic trade, and the continued importance of regional Afro-Eurasian markets.', label: 'Economic Systems' },
-        { text: 'I can explain political, economic, and social effects of expanding exchange, including intensified peasant/artisan labor and changes to gender and family patterns in Africa associated with the trade of enslaved persons.', label: 'Social Interactions and Organization' }
+        { text: 'I can explain how European rulers used mercantilism and chartered joint-stock companies to make their empires pay and to compete with each other, and how economic disputes led to rivalries and wars.', label: 'Governance' },
+        { text: 'I can explain what changed and what continued in networks of exchange from 1450 to 1750: silver pulled toward China, the Atlantic trading system, regional markets that kept flourishing, and peasant and artisan work that continued and grew.', label: 'Economic Systems' },
+        { text: 'I can explain how the trade in enslaved people changed families and communities in parts of Africa, and how Africans, Indigenous Americans, and Europeans all contributed to new mixed cultures in the Atlantic world.', label: 'Social Interactions and Organization' }
       ],
       successCriteria: [
-        { text: 'I can explain how mercantilist rules and joint-stock companies such as the VOC or British EIC helped states mobilize capital, protect monopolies, and compete for overseas trade and territory.', label: 'Governance' },
-        { text: 'I can trace silver and Atlantic exchange across hemispheres while also explaining one important continuity in established Afro-Eurasian regional markets or commercial practices.', label: 'Economic Systems' },
-        { text: 'I can explain how growing demand intensified peasant or artisan labor in Europe, India, or China and how the Atlantic slave trade reshaped demographic, gender, family, and cultural patterns in parts of Africa and the Americas.', label: 'Social Interactions and Organization' }
+        { text: 'I can explain how one mercantilist law or one joint-stock company, such as the VOC or the English East India Company, helped a ruler make an empire pay or compete with a rival, and name one rivalry that grew out of an economic dispute.', label: 'Governance' },
+        { text: 'I can explain one change in networks of exchange (silver pulled toward China, or the Atlantic trading system) and one continuity (regional markets with their old merchants and ways, or peasant and artisan work that continued and grew).', label: 'Economic Systems' },
+        { text: 'I can explain one way the trade in enslaved people changed families in parts of Africa, and one example of cultural mixing in the Atlantic world that Africans, Indigenous Americans, and Europeans all contributed to.', label: 'Social Interactions and Organization' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
-        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.5 module you did not complete in class.', due: 'Thursday, November 12' }
+      ],
+      homeworkDue: 'Thursday, November 12',
+      dueDate: '2026-11-12'
     },
     /* 2026-11-11  <-  lesson-4-6-internal-external-challenges.js */
     {

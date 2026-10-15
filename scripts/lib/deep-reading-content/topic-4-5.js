@@ -1,33 +1,36 @@
 'use strict';
 
 /**
- * Topic 4.5, Maritime Empires Maintained: the deep reading.
+ * Topic 4.5, Maritime Empires Maintained and Developed: the deep reading.
  *
- * Why this exists. The success criteria ask for mercantilism and the chartered
- * company as instruments of state competition, for the silver flow that linked
- * three continents, for the Atlantic system, and for the cultural synthesis it
- * produced, with the explicit rider that regional Afro-Eurasian markets kept
- * flourishing throughout.
+ * Why this exists. The success criteria ask for something new and something
+ * that kept going in four places: the rulers' economic tools, networks of
+ * exchange, society, and belief. The First & 10 tells that story. What it has
+ * no room for is the mechanism behind each part: why a mercantilist thought a
+ * trade surplus was strength, how a joint-stock company could be sent to war,
+ * why China's taxes pulled silver around the world, how the old regional
+ * markets and the new European carriers fit together, why the slave trade
+ * reshaped families in parts of Africa, and how to compare what religions did
+ * when they traveled.
  *
- * That rider is the part a survey cannot carry and the part that decides whether
- * a student writes this unit correctly. Sections 01 to 04 are the European
- * system. Section 05 is the fact that the European system's entire position in
- * Asia rested on having found a mine, because there was nothing else Europe
- * made that Asia wanted. Without it, "European dominance" walks into Unit 5
- * unchallenged and about a century and a half too early.
+ * Rebuilt from the 4.5 story (docs/TOPIC-4-5-STORY-DRAFT.md) on 2026-10-15.
+ * The old chapter, "What Held It Together," kept much of its focus on Potosí's
+ * labor system (Topic 4.4's) and had no section on peasant and artisan labor or
+ * on family change in Africa, two Key Concepts of this topic. Its strongest
+ * material, on mercantilism's premise, the Single Whip and Europe's trade
+ * deficit with Asia, is kept in sections 01, 03 and 04, with its figures
+ * narrowed to what the sources say.
  *
  * Three things carried deliberately:
  *
- *   1. Mercantilism gets a mechanism, bullion plus the balance of trade plus
- *      captive markets, so a student can explain why a Navigation Act follows
- *      from a premise rather than listing it as a policy.
- *   2. The silver section keeps China at the center. The Ming tax shift is what
- *      set the price, and a chapter that has Spain discovering silver without
- *      the demand that made it worth mining has the causation backward.
- *   3. The triangular trade diagram is corrected rather than repeated, and the
- *      cultural synthesis section treats creolization as creation under
- *      constraint rather than as a blend, which is the version the criteria's
- *      word "synthesis" actually asks for.
+ *   1. China's demand is the cause, not a footnote. Section 03 puts the Single
+ *      Whip before the galleon.
+ *   2. Old and new side by side. Section 04 sets the regional markets and the
+ *      old work beside the Atlantic system, as the CED pairs them under one
+ *      objective.
+ *   3. Comparison, not a list. Section 06 sorts what religions did into
+ *      spreading, clashing and blending, because objective K asks for
+ *      similarities and differences.
  */
 
 module.exports = {
@@ -36,296 +39,353 @@ module.exports = {
   sourceFile: 'deep-reading-topic-4-5-maritime-empires-maintained.html',
   lessonFile: 'lesson-4-5-maritime-empires-maintained.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 4.5: What Held It Together',
+  docTitle: 'BeHistorical | Deep Reading | Topic 4.5: What Made Empires Pay',
   eyebrow: 'Topic 4.5 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
-  titleHtml: 'What Held It <em>Together</em>',
-  deck: `Taking a port is one problem and keeping an empire running for two centuries is another. This chapter is the economics: the theory that told governments what an empire was for, the mountain of silver that paid for everything, the Atlantic system that moved people as cargo, the cultures made in its holds and its cane fields, and the awkward fact underneath it all, which is that Europe had almost nothing Asia wanted to buy.`,
-  meta: ['Five sections', 'Mercantilism, silver, the Atlantic, synthesis, limits', 'Read alongside the First & 10'],
-  footerNote: 'Topic 4.5 &nbsp;·&nbsp; What Held It Together &nbsp;·&nbsp; Companion to the First &amp; 10',
+  titleHtml: 'What Made Empires <em>Pay</em>',
+  deck: `An empire held together by ships cost money every year. Between 1450 and 1750 European rulers built new tools to make their empires pay, and the silver, goods and people those tools moved changed work, families and faith around the world. This chapter explains how mercantilism and the chartered companies worked, why rivals fought over trade, why American silver went to China, how the Atlantic system and the old regional markets ran side by side, what the slave trade did to families in Africa, and how religions spread, clashed and blended.`,
+  meta: ['Six sections', 'Tools, rivals, silver, markets, society, faith', 'Read alongside the First & 10'],
+  footerNote: 'Topic 4.5 &nbsp;·&nbsp; What Made Empires Pay &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',
-    intro: `Section 01 is the theory and sections 02 and 03 are the two systems it produced. Section 04 is the human consequence the criteria name as synthesis. Section 05 is the corrective the rest of this unit needs, and it is the one most likely to lift an essay.`,
+    intro: `The College Board asks four things of this topic: how rulers used economic strategies to hold power, what changed and continued in networks of exchange, how society was affected, and how belief systems affected societies in similar and different ways. Sections 01 and 02 answer the first, sections 03 and 04 the second, section 05 the third, and section 06 the fourth. Every section ends with something new and something that kept going.`,
     steps: [
-      `<b>01 Mercantilism:</b> what governments believed wealth was, and what followed from believing it.`,
-      `<b>02 The silver chain:</b> Potosi, Manila, Canton, and why China set the price.`,
-      `<b>03 The Atlantic system:</b> the real shape of it, and why the triangle diagram misleads.`,
-      `<b>04 What was made in it:</b> creolization, and why that word means creation rather than blending.`,
-      `<b>05 What Europe could not buy:</b> Asian markets, and the balance of payments nobody mentions.`,
-      `<b>Then the closing section</b>, which turns all of it into comparison sentences you can write.`
+      `<b>01 Two tools:</b> mercantilism, and the chartered joint-stock company.`,
+      `<b>02 Rivals:</b> economic disputes that became wars, in the Indian Ocean, the Sahara and Europe.`,
+      `<b>03 Silver:</b> why American silver was pulled toward China.`,
+      `<b>04 Markets and work:</b> the Atlantic system, the regional markets that kept going, and the extra work.`,
+      `<b>05 Families and cultures:</b> what the slave trade did to families in Africa, and the mixed Atlantic world.`,
+      `<b>06 Faith:</b> religions that spread, clashed and blended, compared.`,
+      `<b>Then the closing section</b>, which gathers the evidence for each objective.`
     ]
   },
 
   empires: [
     // ── 01 ────────────────────────────────────────────────────────────────────
     {
-      id: 'mercantilism',
+      id: 'tools',
       num: '01',
       accent: 'gold',
-      name: 'The Theory That Told Governments What Colonies Were For',
-      navLabel: 'Mercantilism',
-      dates: 'c. 1550 to 1750 &nbsp;·&nbsp; Bullion, balance, monopoly',
-      thesis: `<span class="kt">Mercantilism</span> starts from a single premise, that the world holds a fixed quantity of wealth, and almost every colonial policy of two centuries follows from it. Get the premise right and the policies stop being a list to memorize.`,
+      name: 'Two Tools to Make an Empire Pay',
+      navLabel: 'Mercantilism and companies',
+      dates: 'c. 1500 to 1750 &nbsp;·&nbsp; Laws, charters, shares',
+      thesis: `European rulers did not just own their empires; they had to make them pay for ships, soldiers and forts every year. They used two tools: an idea about how a state grows rich, and a new kind of company built to carry it out.`,
       parts: [
         {
-          heading: 'The premise and what follows from it',
+          heading: 'The idea, and what follows from it',
           blocks: [
-            { p: `The premise: a nation's wealth is the gold and silver it holds, and the world's stock of both is fixed. If wealth is a fixed quantity, then trade is not a transaction where both sides gain. It is a contest, and every coin arriving in France is a coin that left England.` },
-            { p: `Three policies follow directly, and they are worth deriving rather than listing. First, <b>run a favorable balance of trade</b>: export more than you import, because the difference arrives as bullion. Second, <b>protect home manufacturing</b> with tariffs and prohibitions, because importing finished goods sends bullion out and employs someone else's workers. Third, and this is the colonial one, <b>make the colonies supply what you would otherwise buy from a rival, and buy from you what they would otherwise make</b>.` },
-            { p: `That third point defines a colony's economic job precisely. A colony ships raw materials to the mother country, sugar, tobacco, timber, furs, silver, and buys finished goods from it. It is prohibited from manufacturing what the mother country makes and from trading with anyone else. The English Navigation Acts, from <span class="num">1651</span>, required colonial trade to move in English ships with largely English crews and routed an enumerated list of colonial commodities, sugar and tobacco among them, through English ports before they could go on anywhere else; the Spanish system funneled all legal American trade through Seville and later Cadiz under the Casa de Contratacion, in escorted convoys; France under Colbert built the same structure with state-sponsored manufacture on top.` },
-            { p: `Chartered companies fit the theory exactly. A monopoly granted to one national company means the profits of a route are captured by one nation rather than competed away, which is precisely what a mercantilist government wants. The VOC and the English East India Company of the Topic 4.4 chapter are mercantilism given a legal body.` }
+            { p: `The idea starts from a belief: a kingdom's strength is the gold and silver it holds, and one kingdom's gain in trade is another's loss. If that is true, three policies follow. <b>Sell more than you buy</b>, because the difference arrives as gold and silver. <b>Protect your own makers</b> with taxes on foreign goods, because buying foreign goods sends money out. And <b>keep the colonies' trade for yourself</b>: colonies should send raw goods home and buy the home country's finished goods, and trade with no one else.` },
+            { p: `Later writers named this set of ideas <span class="kt">mercantilism</span>; the word was used by its critics, Adam Smith among them, in <span class="num">1776</span>, and the people who held these ideas did not call themselves mercantilists. One of them, Thomas Mun, a London merchant and a director of the English East India Company, put the first policy in a sentence: England "must ever observe this rule; to sell more to strangers yearly than wee consume of theirs in value." His book was printed in <span class="num">1664</span>, after his death.` },
+            { p: `Rulers wrote the idea into law. Spain's <b>Casa de Contratación</b>, founded in Seville in <span class="num">1503</span>, licensed and registered the trade with Spain's American colonies, and silver crossed the Atlantic in fleets guarded by warships. England's <b>Navigation Act</b> of <span class="num">1651</span> said goods from Asia, Africa and the Americas could come into England only in English ships; it was aimed at Dutch shippers, who carried much of Europe's trade. Acts from <span class="num">1660</span> listed colonial goods, sugar and tobacco among them, that could be shipped only to England. In France, the minister Jean-Baptiste Colbert used tariffs, royal support for workshops and royal trading companies from the 1660s.` }
           ]
         },
         {
-          heading: 'Where the theory failed on its own terms',
+          heading: 'A company that could go to war',
           blocks: [
-            { p: `Spain is the case that broke it, and the sequence is worth having. Spain acquired more bullion than any state in history and spent the seventeenth century going bankrupt repeatedly. The reason is that money is not wealth. Silver arriving in Seville chased goods Spain did not produce, so prices rose, Spanish manufactures became expensive relative to foreign ones, and Spaniards bought Dutch and English goods with the silver. It passed through Spain into the hands of the countries that made things, funding meanwhile the Habsburg wars that consumed it as fast as it landed.` },
-            { p: `Enforcement failed too. A monopoly that sets prices above the market creates a smuggling industry as a matter of arithmetic, and by the eighteenth century a very large share of trade in the Spanish Caribbean and the English colonies was illegal. Dutch and English smugglers supplied Spanish American ports the convoy system could not serve.` },
+            { p: `A voyage to Asia cost a fortune and ships were often lost. A <span class="kt">joint-stock company</span> spread that risk: it sold shares to many investors, who split the profits and the losses. The English East India Company was chartered by Elizabeth I in <span class="num">1600</span>. In <span class="num">1602</span> the States General of the Dutch Republic chartered the Verenigde Oostindische Compagnie, the <span class="kt">VOC</span>, and gave it, for twenty-one years, the only right of any Dutch merchant to trade east of the Cape of Good Hope. The VOC kept its capital in the company rather than paying it out after each voyage, and its shares were bought and sold in Amsterdam.` },
+            { p: `The charter is what made the company a tool of the state. It let the VOC build forts, keep soldiers, make treaties with Asian rulers and wage war. A monopoly meant that the profits of the Asia trade went to one national company rather than being competed away among Dutch merchants, which is exactly what a mercantilist government wanted, and the company's guns meant that rulers could fight rivals through it. The College Board's sentence names both uses: rulers and merchants used these companies "to finance exploration," and rulers used them "to compete against one another in global trade."` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not treat mercantilism as an early or crude version of capitalism. They rest on opposite premises. Mercantilism assumes a fixed stock of wealth, so one nation gains only as another loses, and the state must therefore direct trade. The argument Adam Smith made in <span class="num">1776</span> is that wealth is production rather than bullion, that the stock is not fixed, and that both parties to a voluntary exchange gain. That is not a refinement, it is a reversal, and Smith wrote it as an attack on exactly the system this section describes.`
+              html: `Do not treat mercantilism as an early version of free trade. It starts from the opposite belief. Mercantilists thought one country's gain was another's loss, so the state had to direct trade with laws, monopolies and force. Adam Smith wrote <em>The Wealth of Nations</em> in <span class="num">1776</span> as an attack on that system.`
             } }
           ]
         }
       ],
       useThis: {
-        tool: `The captive colonial market. <em>The mechanism is that if wealth is a fixed stock of bullion, then buying from a rival is a loss, so a state legislates its colonies into supplying the raw materials it would otherwise import and buying the finished goods it makes, which keeps the bullion inside one national circuit and gives colonial manufacturing no legal room to develop.</em>`,
-        limit: `Prices set above the market guarantee smuggling, and by the eighteenth century a large share of colonial trade was illegal, so the system described in law was never the system in operation.`,
-        comparison: `Against <em>Ming and Qing policy</em> in Topic 3.2: China restricted foreign trade to controlled ports and licensed intermediaries for reasons of order and security rather than bullion accumulation, and ran a huge trade surplus without a mercantilist theory. Same instrument, monopoly through a single licensed channel, entirely different reasoning.`
+        tool: `The chartered monopoly company. <em>A government gives one company the only right to a trade and the power to fight for it, so the company's profit stays inside one country and the company's soldiers fight that country's rivals: a private business doing a ruler's work, paid for by the trade itself.</em>`,
+        limit: `Monopolies invited smuggling, and the rules in law were often not the trade in practice; merchants and officials broke them whenever it paid.`,
+        comparison: `Against the <em>Ming tribute and trade system</em> of Unit 1: China's rulers also controlled foreign trade through licensed channels, but to keep order and display the emperor's authority, not to pile up silver. A similar tool, a controlled channel for trade, used for a different purpose.`
       },
       terms: [
-        ['Mercantilism', 'The doctrine that national wealth is a fixed stock of bullion, so trade is a contest the state must direct.'],
-        ['Balance of trade', 'The difference between exports and imports, which a mercantilist state kept favorable so bullion flowed inward.'],
-        ['Navigation Acts', 'English laws from 1651 requiring colonial trade in English ships and routing enumerated commodities through English ports.'],
-        ['Bullion', 'Gold and silver held as coin or metal, treated under mercantilism as wealth itself rather than as a claim on goods.'],
-        ['Smuggling', 'The predictable response to monopoly pricing, and by the eighteenth century a large fraction of actual colonial trade.']
+        ['Mercantilism', 'A set of ideas that a state grows strong by collecting gold and silver, selling more than it buys, and keeping its colonies\' trade for itself.'],
+        ['Navigation Act', 'The English law of 1651 that allowed goods from Asia, Africa and the Americas into England only in English ships.'],
+        ['Joint-stock company', 'A company that sells shares to many investors, who share its profits and its losses.'],
+        ['Chartered monopoly company', 'A company given by its government the only right to a trade, such as the VOC and the English East India Company.'],
+        ['VOC', 'The Dutch East India Company, chartered in 1602, with the right to build forts, keep soldiers, make treaties and wage war in Asia.']
       ]
     },
 
     // ── 02 ────────────────────────────────────────────────────────────────────
     {
-      id: 'silver',
+      id: 'rivals',
       num: '02',
-      accent: 'iron',
-      name: 'The Chain That Ran From a Mountain to Canton',
-      navLabel: 'Silver',
-      dates: 'c. 1545 to 1800 &nbsp;·&nbsp; Potosi, Manila, China',
-      thesis: `The single most consequential fact about the early modern world economy is that China decided to collect its taxes in silver at almost exactly the moment Spain found the largest silver deposit on earth. Everything global about this century runs through that coincidence.`,
+      accent: 'rust',
+      name: 'Old Fights over Trade, New Tools',
+      navLabel: 'Rivals',
+      dates: '1509 to 1674 &nbsp;·&nbsp; Diu, Tondibi, Ambon',
+      thesis: `States had fought over trade routes for centuries. What changed in this period was the reach of the fights, now stretching across oceans, and the tools rivals fought them with.`,
       parts: [
         {
-          heading: 'Where it came from and who dug it',
+          heading: 'The Indian Ocean: spices and who would carry them',
           blocks: [
-            { p: `The silver mountain at <span class="kt">Potosi</span>, in what is now Bolivia, was opened in <span class="num">1545</span>, and Zacatecas in New Spain followed shortly after. Potosi at its height was among the largest cities in the world, higher than most mountain peaks in Europe, and produced a large share of the world's silver for a century.` },
-            { p: `Two things made the output possible and both belong in an answer. The <b>mercury amalgamation process</b>, adopted from the <span class="num">1550</span>s, let refiners extract silver from low-grade ore, and the mercury came from Huancavelica, itself worked under lethal conditions. And the labor came from the <span class="kt">mita</span>, the Andean rotational draft described in the Topic 4.3 chapter, which the Spanish crown kept from the Inca system and stripped of its reciprocity: villages across a huge district were required to send a proportion of their men to Potosi, where they worked at altitude, in mercury vapor and rockfall, and where mortality was frightful.` },
-            { p: `Write the mine and the labor system together. Potosi is not a natural windfall; it is a natural deposit made productive by a coercive institution and a poisonous chemical process. Be exact about the labor, because the easy version is wrong. Mitayos were paid a wage. It did not cover what a man had to spend on the journey, on food and on coca at Potosi prices, so households subsidized the draft and many went into debt to meet it, and communities paid others to go in their place. Potosi also ran on a large body of workers outside the mita, some of them skilled and comparatively well paid. Cheap silver came from compulsion, from wages set below the real cost of the work, and from a mercury process that shortened lives, rather than from labor that was simply unpaid.` }
+            { p: `When the Portuguese reached the Indian Ocean they tried to take the spice trade for themselves, by force and by selling passes to other ships (Topic 4.4). That threatened the Muslim states whose ports and merchants carried spices through the Red Sea to Egypt and on to the Mediterranean. In <span class="num">1509</span> a fleet of Mamluk Egypt and the sultan of Gujarat fought the Portuguese off the port of Diu, in western India, and lost. After the Ottoman Empire conquered Egypt in <span class="num">1517</span>, Ottoman fleets fought the Portuguese in the Red Sea, the Persian Gulf and the western Indian Ocean through the 1500s, besieging Diu in <span class="num">1538</span>. The dispute was economic: which route, and whose ships, would carry the spices.` },
+            { p: `The Portuguese never closed the old route. By the middle of the 1500s spices were again reaching the Mediterranean through the Red Sea in large amounts, and Muslim merchants kept trading.` }
           ]
         },
         {
-          heading: 'Why China set the price',
+          heading: 'The Sahara: gold and salt',
           blocks: [
-            { p: `Silver was worth roughly twice as much in China as in Europe, and the reason is a policy decision. Ming China had tried paper currency and abandoned it after inflation, and across the sixteenth century consolidated its taxes into the <b>Single Whip</b> reform, which required tax to be paid in silver. A state of well over a hundred million people obliging its households to obtain silver, in a country with limited domestic production, creates the largest demand for a single commodity anywhere on earth.` },
-            { p: `That price gap is the engine. Silver flowed toward the highest price, which meant it flowed to China, and merchants who could move it there made a margin on the metal itself before touching the goods. Europeans did not create this demand and could not have; what they had was a mine, and access to a market that wanted what came out of it.` },
-            { p: `The route the criteria name is the <span class="kt">Manila galleon</span>, running from <span class="num">1571</span>. Silver from Acapulco crossed the Pacific to Manila, where Chinese merchants, mostly from Fujian, exchanged it for silk, porcelain and other manufactures, which then sailed back to Acapulco and overland and on to Spain. This is the link that closes the circuit: with it, silver from a Bolivian mountain reaches a Chinese treasury, and the Topic 4.8 chapter can say the world economy was global rather than merely large.` },
-            { p: `A second and larger stream went east: silver landed in Seville, moved through European trade and the Baltic and Levant routes, and reached Asia through the Indian Ocean, much of it in the hands of the Dutch and English companies. Estimates suggest that something like a third or more of all American silver ended in China. It funded Ming and then Qing fiscal operations, monetized the Chinese economy, and, when the flow was disrupted in the seventeenth century, contributed to the fiscal crisis in which the Ming fell.` },
+            { p: `In Africa, the sultan of Morocco, Ahmad al-Mansur, looked south. The Songhai Empire controlled the trade in West African gold and the salt mines of the Sahara, and the two states had quarreled over the salt mine at Taghaza in the 1580s. Al-Mansur sent an army with firearms across the desert, and in <span class="num">1591</span> it defeated the Songhai army at Tondibi (Topic 3.1 told the battle). The motive was trade: al-Mansur wanted the gold.` },
+            { p: `He did not get as much as he hoped. Morocco held Timbuktu and Gao, but the old empire broke into smaller states, and gold kept flowing to other buyers, including European traders on the coast.` }
+          ]
+        },
+        {
+          heading: 'Europe\'s rivals: spices and shipping',
+          blocks: [
+            { p: `The European companies fought each other too. The Dutch and English East India companies competed for the spice islands of Southeast Asia, and in <span class="num">1623</span> VOC officials on the island of Ambon arrested and executed ten English company men, along with Japanese soldiers in VOC service and a Portuguese man, accusing them of plotting to seize the Dutch fort. The English called it the Amboyna massacre, and it embittered relations for decades.` },
+            { p: `At home, England and the Dutch Republic fought three wars at sea, in <span class="num">1652</span> to <span class="num">1654</span>, <span class="num">1665</span> to <span class="num">1667</span> and <span class="num">1672</span> to <span class="num">1674</span>, largely over trade and shipping. The Navigation Act of <span class="num">1651</span>, which shut Dutch ships out of England's trade, was one cause of the first. Mercantilism and the rivalry were the same story: if one country's gain is another's loss, trade is a kind of war.` },
             { note: {
               kind: 'howknow',
-              label: 'How we know: the ships were counted',
-              html: `The silver figures are unusually good for a pre-modern economy, and the reason is mercantilism. Spain taxed American silver at the <em>quinto real</em>, the royal fifth, so every registered ingot passed a counting house, and the Casa de Contratacion in Seville registered ships and cargoes for two centuries. Manila kept its own customs records. Historians reconcile these against mint output in China and against shipwreck cargoes, and the estimates converge. What they systematically miss is contraband, which everyone agrees was substantial, so the registered totals are floors rather than measurements. That is the usual shape of good economic evidence: precise where a bureaucracy had a reason to count, and blind exactly where people had a reason to hide.`
+              label: 'How we know',
+              html: `The company leaders said so themselves. In <span class="num">1614</span> Jan Pieterszoon Coen, then the VOC's director-general of trade in Asia, wrote to the company's directors that "we cannot carry on trade without war nor war without trade" (C. R. Boxer's translation). Coen was asking for more ships and soldiers, so the sentence is an argument as well as a description, but it shows how the company's own leaders understood the business.`
             } }
-          ]
-        },
-        {
-          heading: 'The price revolution',
-          blocks: [
-            { p: `Prices in Europe rose roughly threefold to fivefold across the sixteenth century, a slow inflation by modern standards and a bewildering one to people who had no concept for it. The contemporary explanation, offered by the French jurist Jean Bodin in <span class="num">1568</span>, was that more money chasing the same goods raises prices, which is essentially the modern account of monetary inflation and, remarkably, was worked out while it was happening.` },
-            { p: `Historians now add population growth, which pushed food prices hardest, and debasement of coinage by governments. But silver is the factor that explains why it happened across the whole of Europe at once, including in countries with no American possessions.` },
-            { p: `The distributional effect is the part worth writing. Wages lagged behind prices for most of the century, so wage laborers were poorer in real terms. Landlords on fixed rents lost, landlords who could raise rents gained. Merchants and producers holding goods gained. Debtors gained, because they repaid in cheaper money. An inflation is never neutral, and this one moved wealth toward those who owned things and away from those who were paid.` }
           ]
         }
       ],
       useThis: {
-        tool: `A tax obligation as demand. <em>The mechanism is that when a state of a hundred million people requires its taxes in a specific metal it does not produce much of, every household must obtain that metal, which raises its price above the world level and pulls it in from wherever it is mined, so a fiscal reform in China determines what is worth digging out of a mountain in Bolivia.</em>`,
-        limit: `The flow was not steady and the dependence cut both ways: interruptions in the seventeenth century contributed to a Chinese fiscal crisis, and Spain, which held the mine, ended poorer than the countries that sold it goods.`,
-        comparison: `Against <em>the Song paper money</em> of Topic 1.1: both are states solving a currency problem at scale, and the Ming turn to silver is partly a retreat from the paper experiment after inflation. One state printed a currency and lost control of it; the other outsourced its currency to a metal it had to import, and lost control of that instead.`
+        tool: `The economic dispute. <em>When two states want the same trade, and each believes the other's gain is its own loss, the dispute turns into war: Portugal and the Mamluks and Ottomans over spices, Morocco and Songhai over gold and salt, the Dutch and English over spices and shipping.</em>`,
+        limit: `Economics was rarely the only cause. Religion (Christian against Muslim in the Indian Ocean) and politics were part of most of these wars, so name the economic dispute without claiming it was the whole story.`,
+        comparison: `Against the <em>Indian Ocean</em> of Topic 2.3: merchants had competed there for centuries, but no outside state had tried to take a whole trade by force. The fighting over trade was old; armed companies and ocean-wide rivalries were new.`
       },
       terms: [
-        ['Potosi', 'The Andean silver mountain opened in 1545, worked by mita labor and mercury amalgamation, and for a century the largest source on earth.'],
-        ['Mita', 'The Andean rotational labor draft, retained by Spain without its reciprocal obligations to supply the mines.'],
-        ['Single Whip', 'The Ming consolidation of taxes into a single silver payment, the demand that set the world silver price.'],
-        ['Manila galleon', 'The Acapulco to Manila route from 1571, exchanging American silver for Chinese manufactures across the Pacific.'],
-        ['Price revolution', 'The sustained inflation across sixteenth-century Europe, driven by silver and population, which cut real wages and favored those holding goods and land.']
+        ['Economic dispute', 'A conflict between states over who controls a trade, its routes or its profits.'],
+        ['Diu, 1509', 'The sea battle in which the Portuguese defeated a fleet of Mamluk Egypt and Gujarat.'],
+        ['Tondibi, 1591', 'The battle in which a Moroccan army with firearms defeated the Songhai Empire, after a dispute over gold and salt.'],
+        ['Amboyna, 1623', 'The execution of English East India Company men by VOC officials on Ambon, in the rivalry over the spice islands.'],
+        ['Anglo-Dutch Wars', 'Three wars at sea between England and the Dutch Republic, 1652 to 1674, fought largely over trade and shipping.']
       ]
     },
 
     // ── 03 ────────────────────────────────────────────────────────────────────
     {
-      id: 'atlantic',
+      id: 'silver',
       num: '03',
-      accent: 'rust',
-      name: 'The Atlantic System',
-      navLabel: 'The Atlantic',
-      dates: 'c. 1550 to 1800 &nbsp;·&nbsp; Sugar, ships, people as cargo',
-      thesis: `The Atlantic economy was built around a small number of crops that could not be grown in Europe and could be sold there at enormous margins, and around a labor supply that had to be bought because the previous one had died. The diagram of a neat triangle hides more than it shows.`,
+      accent: 'iron',
+      name: 'Silver Goes to China',
+      navLabel: 'Silver',
+      dates: '1545 to 1750 &nbsp;·&nbsp; Potosí, the Single Whip, Manila',
+      thesis: `Spain found the silver, but China decided where it went. China's government taxed in silver while China mined little of its own, and that demand pulled American silver across both oceans.`,
       parts: [
         {
-          heading: 'What actually moved',
+          heading: 'Where it came from',
           blocks: [
-            { p: `The textbook triangle runs manufactured goods from Europe to Africa, enslaved people from Africa to the Americas, and sugar and tobacco from the Americas to Europe. Each leg is real, and the diagram is still wrong in three ways worth knowing.` },
-            { p: `<b>Most ships did not sail a triangle.</b> Far more Atlantic voyages were direct round trips, Europe to the Caribbean and back, or the enormous Brazil trade with Africa that never touched Europe at all. <b>The largest destination was not North America.</b> Roughly forty percent of enslaved Africans landed in Brazil and most of the rest in the Caribbean; the mainland British colonies received a small share of the total, on the order of four percent, which sits awkwardly against how the trade is usually taught in the United States. <b>And a great deal of the trade was intra-American</b>: New England provisions and timber to the sugar islands, Caribbean molasses to New England distilleries, and the coastwise and inter-island traffic that kept the plantations fed.` },
-            { p: `The reason sugar dominates is agronomic and industrial at once. Cane must be crushed and boiled within hours of cutting or the sugar is lost, so a plantation is a factory as well as a farm, running a mill and boiling house on a schedule that does not stop during harvest. That combination, described in the Topic 2.5 and 4.3 chapters, is what made the labor demand so intense and the work so lethal.` }
+            { p: `In <span class="num">1545</span> Spanish colonists found an enormous silver mountain at <span class="kt">Potosí</span>, in the Andes, and in <span class="num">1546</span> a great silver strike came at Zacatecas in New Spain. From the 1570s, new ways of refining low-grade ore with mercury, and the mit'a draft of Andean workers (Topic 4.4), made Potosí produce far more. Historians estimate that Spanish America produced most of the world's silver between 1500 and 1800, roughly four-fifths of it by one standard estimate.` }
           ]
         },
         {
-          heading: 'The people, and the numbers',
+          heading: 'Why China set the price',
           blocks: [
-            { p: `Roughly twelve million Africans were embarked across nearly four centuries and roughly ten and a half million survived the <span class="kt">Middle Passage</span>. The trade's peak was the eighteenth century, not the sixteenth, which matters for chronology: this system was expanding, not winding down, through the period this unit covers.` },
-            { p: `The African side was not passive supply. African states and merchants controlled the coast and the interior routes, sold captives taken in war and through existing systems of servitude, set terms, levied duties and refused sales. Dahomey, Asante and the Kongo kingdom among others built power partly on the trade, and European traders operated mostly from coastal forts on terms Africans set, because they could not survive inland: as the Topic 4.3 chapter notes, malaria and yellow fever killed Europeans in West Africa at rates comparable to what smallpox did in the Americas.` },
-            { p: `The consequences on the African side were severe and uneven. Regions supplying captives lost people in their most productive years, warfare intensified where it fed the trade, and firearms imports raised its lethality, while states positioned as intermediaries grew richer and stronger. Do not flatten this into either a story of European agents acting alone or one of African rulers acting freely; it was a market in human beings in which Africans held real bargaining power over price and terms and no power at all over whether such a market should exist.` },
+            { p: `Ming China had tried paper money and abandoned it, and through the 1500s its government folded many taxes and labor duties into a single payment in silver. Historians call this the <span class="kt">Single Whip</span> reform; the minister Zhang Juzheng pushed it across the empire around <span class="num">1580</span>. Tens of millions of Chinese households now needed silver every year to pay their taxes, and China mined little of its own.` },
+            { p: `So silver was worth more in China than in Europe. Around <span class="num">1600</span>, an ounce of gold bought about six to eight ounces of silver in China, and about twelve or more in Europe. A merchant who carried silver from Europe or the Americas to China made money on the silver itself, before he bought anything. That gap is the engine of the whole trade. In the College Board's words, the silver was used "to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver."` }
+          ]
+        },
+        {
+          heading: 'Two roads to China',
+          blocks: [
+            { p: `<b>The western road</b> crossed the Pacific. A Spanish expedition found a way back across the Pacific in <span class="num">1565</span>, and in <span class="num">1571</span> the Spanish founded Manila in the Philippines. Galleons sailed from Acapulco in Mexico to Manila, usually one or two a year, loaded with silver. At Manila, Chinese merchants from Fujian sailed in with silk, porcelain and other goods and took the silver home. The galleons carried the silk back to Mexico, and some of it went on to Peru and Spain.` },
+            { p: `<b>The eastern road</b> crossed the Atlantic. Silver landed in Seville and moved through Europe's trade. Much of it then went to Asia around Africa, in Portuguese, Dutch and English ships, because Europeans had few goods that Asian buyers wanted. The European companies paid for Asian pepper, spices, cotton cloth, silk and porcelain largely in silver.` },
             { note: {
               kind: 'howknow',
-              label: 'How we know: the ledgers of the trade itself',
-              html: `The figures come from the Trans-Atlantic Slave Trade Database, which assembles records of roughly thirty-six thousand voyages from shipping registers, port records, insurance documents, company accounts and newspapers across several countries. It exists because the trade was legal, taxed and insured, so its participants kept careful records of embarkations, landings and deaths for commercial reasons. There is something worth sitting with in that: what allows historians to count these people now is the paperwork of the enterprise that made them cargo. The database also shows its own gaps and gives ranges rather than false certainty, which is why the standard figures are stated as approximations.`
+              label: 'How we know',
+              html: `Spain taxed the silver its colonies mined and registered the fleets and cargoes, and Manila kept customs records, so historians can count much of the registered silver. They compare those records with Chinese and European evidence. What the records miss is smuggling, which everyone agrees was large, so the registered totals are a floor, not a ceiling.`
             } }
           ]
         }
       ],
       useThis: {
-        tool: `The plantation as a factory. <em>The mechanism is that cane loses its sugar within hours of cutting, so the mill and boiling house must run continuously through harvest, which ties field labor to an industrial schedule, makes the operation viable only at scale with heavy capital, and produces a demand for coerced labor that no free market at colonial wages could have met.</em>`,
-        limit: `Sugar is the extreme case. Tobacco, rice and later cotton had different labor rhythms and different demographic outcomes, so do not generalize the Caribbean death rate to every American slave society.`,
-        comparison: `Against the <em>Indian Ocean</em> slave trade in Topic 2.4: enslavement in the Islamic world was large, long-running and often domestic, military or administrative, with paths to manumission and status, while the Atlantic system was overwhelmingly agricultural, racialized and heritable. Both are slavery; only one produced a permanent hereditary caste tied to ancestry.`
+        tool: `A tax as demand. <em>When China's government required taxes in silver, every household needed silver, so silver bought more in China than elsewhere, and merchants carried it there from both sides of the world: a tax law in China decided where a mountain's silver in the Andes would end up.</em>`,
+        limit: `The flow rose and fell. Historians argue over how much a drop in silver imports in the 1630s and 1640s hurt the late Ming, so do not claim it caused the dynasty's fall.`,
+        comparison: `Against <em>Song paper money</em> in Topic 1.1: both are Chinese governments solving the problem of money for a huge economy. The Song printed paper; the Ming, after paper failed, came to rely on silver, much of it from mines on the other side of the world.`
       },
       terms: [
-        ['Middle Passage', 'The Atlantic crossing, on which roughly one and a half million of about twelve million embarked Africans died.'],
-        ['Plantation complex', 'The linked system of monoculture, mill, capital and coerced labor developed in the Mediterranean and Atlantic islands before 1492.'],
-        ['Triangular trade', 'The three-legged diagram of Atlantic commerce, useful as a summary and misleading about routes, volumes and destinations.'],
-        ['Asiento', 'The contract granting a right to supply enslaved people to Spanish America, a prize fought over between European states.'],
-        ['Coastal fort', 'The European trading station on the African shore, the limit of European reach in a region whose diseases killed them inland.']
+        ['Potosí', 'The silver mountain in the Andes, found by Spanish colonists in 1545, one of the richest silver sources in the world.'],
+        ['Single Whip', 'The Ming reform that combined taxes and labor duties into one payment in silver, applied across China around 1580.'],
+        ['Manila galleon', 'The Spanish ships, usually one or two a year, that carried silver from Acapulco to Manila from 1571.'],
+        ['Silver flow', 'The movement of American silver around the world, pulled largely toward China.'],
+        ['Fujian merchants', 'The Chinese traders who sailed to Manila with silk and porcelain and took American silver home.']
       ]
     },
 
     // ── 04 ────────────────────────────────────────────────────────────────────
     {
-      id: 'synthesis',
+      id: 'markets',
       num: '04',
       accent: 'oxide',
-      name: 'What Was Made Inside It',
-      navLabel: 'Cultural synthesis',
-      dates: 'c. 1550 to 1800 &nbsp;·&nbsp; Creolization',
-      thesis: `The Atlantic system threw together people from West and Central Africa, Indigenous America and Europe under conditions nobody chose, and what came out was not a mixture of three things. It was new things, made deliberately, by people using what they were allowed to keep.`,
+      name: 'New Systems, Old Markets, More Work',
+      navLabel: 'Markets and work',
+      dates: 'c. 1500 to 1750 &nbsp;·&nbsp; The Atlantic, Asia, the household',
+      thesis: `The new trade did two things at once. It built an Atlantic system that tied three continents together, and it ran into old regional markets that kept their own merchants and their own ways. Underneath both, ordinary people did more of the same old work.`,
       parts: [
         {
-          heading: 'Creolization is a verb',
+          heading: 'The Atlantic system',
           blocks: [
-            { p: `<span class="kt">Creolization</span> names the process by which people from different origins, forced into contact, generate new languages, religions, musical forms and foodways that belong to none of the parent traditions. The word is worth using precisely, because "blending" suggests something passive and average, and what actually happens is invention under constraint.` },
-            { p: `Language is the clearest case because linguists can watch it happen. A <b>pidgin</b> is a simplified contact language with no native speakers, developed by adults who need to communicate and share no tongue. When children grow up hearing a pidgin, they do something remarkable: they systematize it, supplying a full grammar it did not have, and it becomes a <b>creole</b>, a complete natural language. Haitian Creole, Papiamento, Jamaican Patois and the Gullah of the Carolina and Georgia coast are real languages with regular grammar, not broken versions of European ones. The vocabulary is largely European; a great deal of the sound system and structure is African.` },
-            { p: `That pattern, European surface and African structure, recurs across the culture, and it is the sentence to write.` }
+            { p: `The <span class="kt">Atlantic trading system</span>, in the College Board's words, "involved the movement of goods, wealth, and labor, including enslaved persons." Sugar and tobacco went to Europe. Guns, iron, alcohol and cloth went to Africa, and much of the cloth was Indian cotton. Cowrie shells from the Maldive Islands, shipped by Dutch and English traders, were used as money on the West African coast. Silver, and later Brazilian gold, flowed toward Europe. And enslaved Africans were forced across the ocean to the plantations (Topic 4.4 gives the numbers).` },
+            { p: `The neat triangle of textbook diagrams, Europe to Africa to the Americas and home, is a simplification. Brazil traded directly with Angola, sending tobacco, sugar brandy and gold and bringing captives back, and many ships sailed back and forth on two-way routes. The Atlantic system also reached far outside the Atlantic: the cloth from India and the shells from the Maldives were part of it.` }
           ]
         },
         {
-          heading: 'Religion, and why the saints',
+          heading: 'The markets that kept going',
           blocks: [
-            { p: `Haitian <b>Vodou</b>, Cuban <b>Santeria</b> and Brazilian <b>Candomble</b> are the standard examples and they share a mechanism. Enslaved people, largely Yoruba, Fon and Kongolese in origin, were required to be baptized and to practice Catholicism, and were punished for African religious practice. The response was to identify African deities with Catholic saints who shared their attributes: to an overseer it looked like devotion to Saint Barbara, and to the practitioner it was Chango.` },
-            { p: `Two things must be said about this. The disguise was real and was a strategy of survival. But calling these religions merely a mask on African belief underrates them: they are coherent systems in their own right, with their own theology, ritual calendars and priesthoods, in which Catholic elements were genuinely incorporated rather than only borrowed as cover. And Kongolese arrivals in particular were often already Catholic, since the kingdom of Kongo had adopted Christianity in the late fifteenth century, so some of what looks like syncretism in the Americas was an African Christianity arriving intact.` },
-            { p: `The same process runs through music and food. Drum-based polyrhythm, call and response, and the banjo's African ancestry feed into everything from Brazilian samba to Cuban son to the blues. Rice cultivation in the Carolina Lowcountry drew directly on West African expertise, which is why planters paid a premium for captives from the rice-growing regions, and dishes across the Atlantic world combine African technique, American ingredients and European names.` },
+            { p: `None of this replaced the trade that already crossed Africa and Asia. The College Board's sentence is that <span class="kt">regional markets</span> "continued to flourish in Afro-Eurasia by using established commercial practices and new transoceanic and regional shipping services developed by European merchants." The first half is continuity: merchants kept their partnerships, their credit and their family firms with agents in distant ports. Armenian merchants based at New Julfa, outside the Persian capital of Isfahan, traded from India to the Mediterranean and Europe through family networks; Gujarati and Chinese merchants kept trading too.` },
+            { p: `The second half is the change. European ships became one more carrier inside these markets. The VOC carried Japanese silver and copper to China and India, and Indian cloth to Southeast Asia to buy spices, and earned much of its money from trade between Asian ports.` }
+          ]
+        },
+        {
+          heading: 'More of the same work',
+          blocks: [
+            { p: `More trade meant more demand for food and goods, and that meant more work for the people who made them: <span class="kt">peasant and artisan labor</span>. The College Board says this labor "continued and intensified," which is continuity and change in two words.` },
+            { p: `In <b>western Europe</b>, merchants put out wool and flax to families in the countryside, who spun and wove at home and were paid by the piece; historians call this the putting-out system. In <b>India</b>, weavers in Gujarat, on the Coromandel coast and in Bengal made cotton cloth for buyers in Asia, Africa and Europe, and the Dutch and English companies' purchases grew greatly in the 1600s, often through advances of money to weavers before the cloth was made. In <b>China</b>, peasant households in the Jiangnan region raised silkworms and wove silk; some of it went to Manila to be traded for American silver. Much of the spinning, silkworm raising and weaving was done by women and girls.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that enslaved Africans "lost their culture" and later "mixed" with Europeans. Both halves are wrong. Enslavers deliberately separated people who shared a language, suppressed religious practice and renamed individuals, so the loss was inflicted rather than incidental. And what people built afterward was not a passive average of what remained: languages with new grammars, religions with new theologies, and musical forms that shaped the entire hemisphere. Cultural creation under conditions designed to prevent it is a form of resistance, and it belongs in the same answer as the revolts in Topic 4.6.`
+              html: `Do not write that Europeans paid for Asian goods with better European products. For most of this period they had few goods Asian buyers wanted, and paid largely in American silver. In <span class="num">1700</span> and <span class="num">1721</span> English laws even restricted Indian cotton cloth to protect England's own weavers.`
             } }
           ]
         }
       ],
       useThis: {
-        tool: `Creolization. <em>The mechanism is that people forced together with no shared language or permitted religion build new ones out of the fragments available, and because the dominant group controls the public vocabulary while the subordinated group is far larger and holds the domestic and ritual space, the result carries European surface forms over African structure, which is why a creole language has European words and African grammar.</em>`,
-        limit: `The process was not symmetrical and was not chosen. It happened under prohibition, and treating it as cheerful multicultural blending erases the conditions that made it necessary.`,
-        comparison: `Against <em>Islamic conversion</em> along the Indian Ocean in Topic 2.4: there too a religion arrived and merged with local practice, but conversion there was largely voluntary and driven by commercial advantage and Sufi accommodation, and the resulting syntheses were public. In the Atlantic the synthesis was made under prohibition and had to be hidden, which is why one produced open regional traditions and the other produced a religion that looked from outside like something else.`
+        tool: `Continued and intensified. <em>When distant buyers want more of something made by hand, the same households and workshops make more of it: the work is old, the amount and the reach are new, so one case gives you a continuity and a change.</em>`,
+        limit: `Not every region or worker gained. Weavers who took a company's advance could be tied to its prices, and much of the extra work fell on women and children.`,
+        comparison: `Against the <em>Indian Ocean trade</em> of Topic 2.3: Indian cotton cloth had paid for spices in Southeast Asia for centuries. What changed after 1600 is that European companies carried some of it, and bought more of it for Europe and Africa.`
       },
       terms: [
-        ['Creolization', 'The creation of new languages, religions and cultural forms by people of different origins forced into sustained contact.'],
-        ['Pidgin', 'A simplified contact language with no native speakers, which becomes a full creole when children acquire it as a first language.'],
-        ['Syncretism', 'The incorporation of elements from one religious tradition into another, as when African deities were identified with Catholic saints.'],
-        ['Candomble', 'The Brazilian religion of largely Yoruba origin, a coherent system rather than a disguise on Catholicism.'],
-        ['Maroon', 'A person who escaped enslavement and lived in an independent community, the subject of Topic 4.6 and a further form of what people built.']
+        ['Atlantic trading system', 'The movement of goods, wealth and labor, including enslaved people, among Europe, Africa and the Americas.'],
+        ['Cowrie shells', 'Shells from the Maldive Islands used as money in West Africa, shipped there by European traders.'],
+        ['Regional markets', 'The older trading markets of Africa and Asia, with their own merchants and practices, which kept flourishing.'],
+        ['Putting-out system', 'Merchants supplying raw wool or flax to rural families who spun and wove at home for pay.'],
+        ['Peasant and artisan labor', 'Farm and handcraft work done in households and workshops, which grew as demand for goods rose.']
       ]
     },
 
     // ── 05 ────────────────────────────────────────────────────────────────────
     {
-      id: 'limits',
+      id: 'society',
       num: '05',
       accent: 'gold',
-      name: 'What Europe Could Not Buy Its Way Into',
-      navLabel: 'The limits',
-      dates: 'c. 1500 to 1750 &nbsp;·&nbsp; Asian markets',
-      thesis: `For the whole of this unit, Europe ran a trade deficit with Asia and paid it in silver, because there was almost nothing European workshops made that Asian buyers wanted. Hold onto that and the phrase "European dominance" acquires a date, and the date is not in Unit 4.`,
+      name: 'Families and Cultures',
+      navLabel: 'Society',
+      dates: 'c. 1500 to 1750 &nbsp;·&nbsp; Africa and the Atlantic world',
+      thesis: `The silver, goods and people the empires moved did not only change prices. They changed who lived in African villages, and they made new cultures in the Americas that no single people made alone.`,
       parts: [
         {
-          heading: 'The balance of payments nobody puts on the map',
+          heading: 'Who the trade took',
           blocks: [
-            { p: `Ask what a Dutch or English ship carried <em>to</em> Asia and the answer is uncomfortable for the standard narrative: some woolens, which nobody in the tropics needed, some metals, and silver. Overwhelmingly silver. The companies of Topic 4.4 were, in commercial terms, currency exporters buying Asian manufactures.` },
-            { p: `The reason is that Asia made better goods. Indian cotton textiles were finer, better dyed and cheaper than anything Europe could weave, so much so that English wool interests successfully lobbied for the Calico Acts to ban imports and protect domestic producers, which is what protectionism looks like when you are the less advanced manufacturer. Chinese porcelain and silk had no European equal; European potters spent a century trying to reverse-engineer porcelain and did not succeed until Meissen in the early eighteenth century.` },
-            { p: `So the position was this: Europeans could out-shoot Asian fleets at sea, and could not out-produce Asian workshops on land. The Topic 4.1 chapter explains the first half. This section is the second, and both are needed to describe the period accurately.` }
+            { p: `The Atlantic slave trade took about two males for every female. European buyers paid more for young men to work the plantations, and African sellers often kept women and children, whom African buyers valued. In some regions, especially parts of West Central Africa, that left communities with more women than men.` },
+            { p: `Historians argue that this changed family life where the trade hit hardest. More men had several wives, women did more of the farming, and more women and girls were enslaved within Africa itself, because local buyers wanted the people the Atlantic market wanted less. Some regions lost population, or grew more slowly than they would have, while states that sold captives grew richer. The College Board names these "demographic changes in Africa that resulted from the trade of enslaved persons."` },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know',
+              html: `The sex ratio comes from the shipping records gathered in the Trans-Atlantic Slave Trade Database, which count the men, women and children on many voyages. The family changes are harder to see: historians such as Patrick Manning and John Thornton build them from those numbers, from European observers' reports, and from later counts of the population, including Portuguese censuses of Angola from the late 1700s. That is why the effects are stated as arguments, and why they differ from region to region.`
+            } }
           ]
         },
         {
-          heading: 'The old system, still running',
+          heading: 'A mixed Atlantic world',
           blocks: [
-            { p: `The success criteria ask specifically that regional Afro-Eurasian markets kept flourishing, and the evidence is substantial. Gujarati, Tamil, Armenian, Arab, Malay and Chinese merchant networks continued to carry the majority of Indian Ocean trade, in shipping the Europeans never displaced. The Mughal economy was among the largest in the world and its textile exports grew across this period, with European companies as customers rather than as managers. The Qing presided over an enormous internal market and a huge trade surplus. Ottoman routes through the Red Sea and the Gulf revived after the Portuguese failed to close them, and the Hajj, the caravan trade and the Islamic commercial networks of Unit 2 continued more or less as before.` },
-            { p: `Where Europeans held territory in Asia before <span class="num">1750</span>, it was mostly islands and enclaves: Java and the spice islands, Manila, Goa, a handful of coastal factories. The great land empires of Unit 3 were not conquered and in most cases were not seriously threatened in this period.` },
-            { p: `The turn comes later, and knowing where the line is protects an essay. Plassey in <span class="num">1757</span> begins East India Company territorial rule in Bengal, and industrialization from the later eighteenth century is what finally lets European producers undersell Indian weavers. Both belong to Unit 5. In Unit 4 the correct description of Europeans in Asia is armed, well-organized, locally powerful and commercially dependent.` },
+            { p: `In the Americas, Africans, Indigenous Americans and Europeans lived side by side, usually because some of them were forced to, and each shaped what came out. The College Board's words are "the mixing of African, American, and European cultures and peoples, with all parties contributing to this cultural synthesis."` },
+            { p: `<b>Food:</b> dishes across the Atlantic world combined African, American and European ingredients and ways of cooking, and the rice-farming skill of enslaved West Africans mattered on coasts such as Carolina's. <b>Language:</b> new languages called creoles formed, such as Haitian Creole and Papiamentu. Most of their words come from a European language, and much of their grammar and sound shows the influence of African languages; linguists still debate exactly how they formed. <b>Music and faith</b> mixed too, as section 06 shows.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `The most common failure in this unit is writing 1500 to 1750 as the age of European dominance and then reusing the phrase for Unit 5, so that nothing appears to change. In this period Europeans dominated <b>ocean routes and the Americas</b>, which is a real and enormous thing, while remaining minor customers of Asian economies they could not match in production. Name the two spheres separately and the change in Unit 5 becomes visible: it is the moment the second sphere flips, and it is driven by territorial revenue in Bengal and by industrial production, not by ships.`
+              html: `Do not write that enslaved Africans and Indigenous Americans "lost their culture" and took European culture instead. They kept and remade their own ways under conditions designed to stop them, and the new cultures came from all of them. Do not swing to the opposite mistake either: the mixing happened under force and slavery, not as a meeting of equals.`
             } }
           ]
         }
       ],
       useThis: {
-        tool: `Silver as a substitute for competitiveness. <em>The mechanism is that a region which cannot make goods another region wants can still trade with it if it controls a money commodity that region needs, so American silver let Europe buy Asian textiles and porcelain for two centuries without ever developing a manufacture Asia would import, which means the flow of silver is a measure of European weakness in production rather than of strength.</em>`,
-        limit: `It was still a position of considerable power at sea and total power in the Americas, so do not overcorrect into treating Europeans in Asia as insignificant. They shaped routes, prices and politics without dominating production.`,
-        comparison: `Against <em>Rome and the Indian Ocean</em> in Topic 2.3: Roman writers complained about bullion draining east to pay for silk and spices in almost the same terms, and for the same reason. The structural relationship between a European economy and an Asian one had not changed in fifteen hundred years, which is the strongest continuity argument available in this unit.`
+        tool: `Who the trade took. <em>When a trade removes more men than women from a region, the people left behind reorganize: more women farm, more men take several wives, and local buyers enslave more women. A change in who lived in a village became a change in how families worked.</em>`,
+        limit: `The effects varied a great deal by region and period, and much of the evidence is indirect, so name a region and say "historians argue" rather than describing all of Africa.`,
+        comparison: `Against the <em>Swahili coast</em> of Topic 2.3: there, too, a new culture and a language, Swahili, came out of long contact between Africans and Arab and Persian traders. The difference is force: Atlantic creole cultures were made largely by people who had been enslaved.`
       },
       terms: [
-        ['Trade deficit', 'Importing more value than you export, settled in this period by shipping silver east.'],
-        ['Calico Acts', 'English laws restricting Indian cotton imports, protectionism by the less advanced manufacturer.'],
-        ['Merchant diaspora', 'The Gujarati, Armenian, Arab, Tamil and Chinese networks that continued to carry most Indian Ocean trade.'],
-        ['Enclave', 'A coastal holding without a hinterland, the usual form of European territory in Asia before 1750.'],
-        ['Plassey', 'The 1757 battle that began East India Company territorial rule in Bengal, and the beginning of the change this section says had not yet happened.']
+        ['Demographic change', 'A change in the size or makeup of a population, such as more women than men.'],
+        ['Polygyny', 'Marriage in which a man has more than one wife.'],
+        ['Cultural synthesis', 'The mixing of cultures into something new, to which, in the Atlantic world, all parties contributed.'],
+        ['Creole language', 'A new language formed among people of different origins, such as Haitian Creole or Papiamentu.'],
+        ['Sex ratio', 'The number of males compared with females in a group, about two to one among captives in the Atlantic trade.']
+      ]
+    },
+
+    // ── 06 ────────────────────────────────────────────────────────────────────
+    {
+      id: 'faith',
+      num: '06',
+      accent: 'rust',
+      name: 'Spread, Clash, Blend',
+      navLabel: 'Faith',
+      dates: 'c. 1500 to 1750 &nbsp;·&nbsp; Christianity, Islam, and new beliefs',
+      thesis: `Religions traveled with the ships, and they did three different things when they arrived. Comparing those three is what the College Board asks for: how belief systems affected societies in similar and different ways.`,
+      parts: [
+        {
+          heading: 'Spread',
+          blocks: [
+            { p: `Contact "expanded the reach" of existing religions, in the College Board's words. Christianity spread through Spanish and Portuguese America, to the Philippines after the Spanish arrived in <span class="num">1565</span>, and in Kongo, whose kings had become Christians (Topic 4.4). Jesuit missionaries reached Ming China; Matteo Ricci lived in Beijing from <span class="num">1601</span>. Islam kept spreading in Southeast Asia along older trade routes, carried by merchants and teachers rather than by European ships.` }
+          ]
+        },
+        {
+          heading: 'Clash',
+          blocks: [
+            { p: `Contact also "contributed to religious conflicts." In the archdiocese of Lima, in Peru, priests led by Francisco de Ávila began campaigns in about <span class="num">1609</span> and <span class="num">1610</span> to "extirpate idolatry," to root out the old religion. They searched villages, destroyed Andean sacred objects and the remains of ancestors that families honored, and punished Andean religious specialists. In Japan, as Topic 4.4 showed, the shoguns banned Christianity and drove out the missionaries.` }
+          ]
+        },
+        {
+          heading: 'Blend',
+          blocks: [
+            { p: `And contact produced <span class="kt">syncretism</span>, the blending of religions into new beliefs and practices. At <b>Tepeyac</b>, a hill near Mexico City, a shrine to the Virgin of Guadalupe drew Nahua and Spanish Christians by the 1550s. Around <span class="num">1576</span> the Franciscan friar Bernardino de Sahagún wrote that the Nahua had worshipped a goddess at that hill whom they called Tonantzin, "our mother," that they now used that name for Mary, and that he suspected the devotion hid the old worship. Historians still argue over how much the two were linked; what is certain is that Nahua Christians made Mary their own. The story of Mary appearing to Juan Diego in <span class="num">1531</span> was first published in <span class="num">1648</span>.` },
+            { p: `In <b>Kongo</b>, Christian crucifixes were made by Kongo artists in Kongo style and given Kongo meanings. In <b>Potosí</b>, around <span class="num">1720</span>, a painter showed the Virgin Mary as the silver mountain itself, which art historians read as joining Christian painting to Andean beliefs about sacred mountains. And in the French colony of <b>Saint-Domingue</b> (today's Haiti), enslaved Africans in the 1700s built <b>Vodou</b> from West and Central African religions and Catholic saints.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Do not call syncretism "faking it." Some people did hide old beliefs behind Christian names, but many were sincere Christians who understood their new faith through ideas they already had. And check your dates: Cuban Santería took its familiar form in the 1800s, after this period, so it is not an example for 1450 to 1750.`
+            } }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Spread, clash, blend. <em>When a religion reaches new people, it can win converts, provoke a fight, or mix with what they already believed, and often all three happen in one place: the similarity is the contact, the differences are what the people on each side did with it.</em>`,
+        limit: `The three are not neat boxes. Tepeyac was a spread of Christianity and a blend at once, and the Lima campaigns attacked exactly the blending they found.`,
+        comparison: `Against <em>Buddhism along the Silk Roads</em> in Unit 2: a religion carried by trade there also changed as it moved, taking on Chinese forms. In both cases a religion traveled with merchants and was remade by the people who received it.`
+      },
+      terms: [
+        ['Syncretism', 'The blending of two or more religions into new beliefs and practices.'],
+        ['Extirpation of idolatry', 'Campaigns in Peru from about 1610 to destroy Andean sacred objects and punish people who kept the old religion.'],
+        ['Tepeyac', 'The hill near Mexico City where the Virgin of Guadalupe was honored, and where a friar suspected older worship continued.'],
+        ['Jesuits', 'A Catholic religious order whose missionaries reached China and Japan in this period.'],
+        ['Vodou', 'A religion built by enslaved Africans in Saint-Domingue in the 1700s from African religions and Catholic saints.']
       ]
     }
   ],
 
   closing: {
     heading: 'Building an Answer That Scores',
-    navLabel: 'Building a comparison',
-    intro: `Each card is a full explanation or comparison: the claim, the specific evidence, and the reason. The last one is the correction that separates a good Unit 4 essay from an average one.`,
+    navLabel: 'Continuity and change',
+    intro: `Each card gathers the evidence for one part of the topic. Writing what was new, what kept going and why from it is your job; the checkpoints ask you to.`,
     pairs: [
       {
-        category: 'Social effects',
-        title: 'Global demand intensified ordinary labor as well as coerced labor',
-        body: `The expansion of oceanic exchange did not replace the older work that produced most goods. It intensified <span class="kt">peasant and artisan labor</span>: wool and linen production expanded in western Europe, Indian cotton weaving supplied enormous regional and overseas markets, and Chinese silk producers served both domestic and long-distance demand. That continuity matters because it shows that the new global economy grew by pulling more output from existing households and workshops as well as by creating plantations and mines.`
+        category: 'Rulers\' tools',
+        title: 'Laws, companies, and the wars they started',
+        body: `Spain's Casa de Contratación (1503) and England's Navigation Act (1651) put mercantilist ideas into law. The English East India Company (1600) and the VOC (1602) sold shares to investors and held monopoly charters, and the VOC could build forts, keep soldiers and wage war. Rivals fought over trade at Diu (1509), Tondibi (1591) and Ambon (1623), and England and the Dutch Republic fought three wars at sea between 1652 and 1674.`
       },
       {
-        category: 'Causation',
-        title: 'A Chinese tax reform decided what was worth mining in Bolivia',
-        body: `Ming China abandoned paper currency after inflation and consolidated its taxes into a single silver payment, obliging well over a hundred million people to obtain a metal China produced little of. That set the price of silver in China at roughly twice the European level. Spain opened Potosi in 1545 and worked it with mita labor and mercury amalgamation, and the Manila galleon from 1571 carried Acapulco silver across the Pacific to Fujianese merchants in exchange for silk and porcelain. Something like a third or more of all American silver ended in China. The demand came first and the supply followed it, which is the direction of causation most answers get backward.`
+        category: 'Exchange',
+        title: 'Silver pulled toward China',
+        body: `Potosí (1545) and Zacatecas (1546) made Spanish America the world's main source of silver. China's Single Whip reform made silver necessary to pay taxes. Galleons carried silver from Acapulco to Manila from 1571, where Fujian merchants traded silk and porcelain for it, and European companies carried silver around Africa to pay for Asian goods.`
       },
       {
-        category: 'Comparison',
-        title: 'Mercantilism and capitalism start from opposite premises',
-        body: `Mercantilism assumes a fixed world stock of bullion, so a gain for France is a loss for England and the state must direct trade: hence favorable balances, protective tariffs, chartered monopolies, and Navigation Acts requiring colonial trade in English ships and routing enumerated commodities through English ports. Adam Smith argued in 1776 that wealth is production rather than bullion, that the stock is not fixed, and that both parties to a voluntary exchange gain. That is a reversal of the premise, not a refinement of the policy, and Spain is the case that exposed it: more bullion than any state in history, repeated bankruptcies, and the silver passing through to the countries that actually made things.`
+        category: 'Exchange',
+        title: 'The Atlantic system and the markets beside it',
+        body: `Ships moved sugar, tobacco, guns, Indian cloth, Maldive cowries, silver and enslaved Africans, on routes more tangled than a triangle. Armenian, Gujarati and Chinese merchants kept trading with their old partnerships and credit, and Dutch ships carried goods between Asian ports. In western Europe, India and China, households spun and wove wool, linen, cotton and silk for more distant buyers.`
       },
       {
-        category: 'Agency',
-        title: 'Creole languages have European words and African grammar',
-        body: `Enslavers deliberately separated people who shared a language, suppressed religious practice and renamed individuals, so what people built afterward was built under prohibition. A pidgin with no native speakers became a full creole when children acquired it and supplied a grammar, and Haitian Creole, Papiamento and Gullah carry largely European vocabulary over sound systems and structures that are substantially African. The same asymmetry runs through Vodou, Santeria and Candomble, where African deities were identified with Catholic saints whose attributes matched. That is creation under constraint rather than blending, and it belongs in the same answer as the revolts of Topic 4.6.`
+        category: 'Society',
+        title: 'Families in Africa, cultures in the Americas',
+        body: `The Atlantic trade carried about two males for every female, and in parts of West Central Africa women came to outnumber men. Historians connect that to more polygyny, more farm work by women, and more enslaved women within Africa. In the Americas, foods, creole languages, music and faith were made by Africans, Indigenous Americans and Europeans together.`
       },
       {
-        category: 'Continuity',
-        title: 'Europe paid for Asian goods in silver because it could not make anything Asia wanted',
-        body: `Dutch and English ships sailed east carrying woolens nobody in the tropics needed, some metals, and overwhelmingly silver. Indian cotton was finer and cheaper than English weaving, so much so that England banned its import under the Calico Acts to protect domestic producers, and Europe could not reproduce Chinese porcelain until Meissen in the early eighteenth century. Meanwhile Gujarati, Arab, Armenian, Tamil and Chinese networks carried most Indian Ocean trade throughout. In 1500 to 1750 Europeans dominated ocean routes and the Americas while remaining minor customers of economies they could not match in production; Plassey in 1757 and industrialization are what change the second half, and both belong to Unit 5.`
+        category: 'Belief',
+        title: 'Spread, clash, blend',
+        body: `Christianity reached the Americas, the Philippines and Kongo, Jesuits reached Beijing, and Islam kept spreading in Southeast Asia. Priests in Peru attacked Andean religion from about 1610. At Tepeyac, Sahagún suspected an old goddess behind the Virgin of Guadalupe; Kongo artists made Kongo crucifixes; a Potosí painter made Mary the silver mountain; and enslaved Africans in Saint-Domingue built Vodou in the 1700s.`
       }
     ]
   }

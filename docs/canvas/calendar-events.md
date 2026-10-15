@@ -2831,8 +2831,8 @@ deleted row in the schedule and every affected date moves with it.
 
 | Section | Taught | Work due |
 | --- | --- | --- |
-| Green Day | Monday, November 9 | nothing assigned |
-| Silver Day | Tuesday, November 10 | nothing assigned |
+| Green Day | Monday, November 9 | Wednesday, November 11 |
+| Silver Day | Tuesday, November 10 | Thursday, November 12 |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
@@ -2851,7 +2851,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">How European maritime empires used forced labor, colonial administration, and silver extraction to sustain themselves — and how American silver transformed global trade networks</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Last class, Europeans built empires from the sea. Today you find out how rulers made those empires pay. Follow the tools they built, mercantilist laws and companies that could go to war, then follow what those tools moved: silver pulled all the way to China, goods and enslaved people across the Atlantic, and more work for ordinary spinners and weavers. For each part, explain what was new and what kept going, in trade, in families, and in religion.</p>
             </td>
         </tr>
         <tr>
@@ -2860,10 +2860,10 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how rulers used mercantilism, chartered monopoly companies, and economic rivalry to maintain and develop maritime empires.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain continuity and change in exchange networks, including global silver flows, chartered companies, Atlantic trade, and the continued importance of regional Afro-Eurasian markets.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain political, economic, and social effects of expanding exchange, including intensified peasant/artisan labor and changes to gender and family patterns in Africa associated with the trade of enslaved persons.</li>
-                    <li style="margin: 0 0 6px 0;">I can compare how expanding global interactions affected belief systems, including the spread of existing religions, religious conflict, and the development of syncretic practices.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how European rulers used mercantilism and chartered joint-stock companies to make their empires pay and to compete with each other, and how economic disputes led to rivalries and wars.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain what changed and what continued in networks of exchange from 1450 to 1750: silver pulled toward China, the Atlantic trading system, regional markets that kept flourishing, and peasant and artisan work that continued and grew.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how the trade in enslaved people changed families and communities in parts of Africa, and how Africans, Indigenous Americans, and Europeans all contributed to new mixed cultures in the Atlantic world.</li>
+                    <li style="margin: 0 0 6px 0;">I can compare how religions affected societies as contact grew: how existing religions spread, how contact caused religious conflict, and how new blended, or syncretic, beliefs and practices developed.</li>
                 </ul>
             </td>
         </tr>
@@ -2873,10 +2873,10 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how mercantilist rules and joint-stock companies such as the VOC or British EIC helped states mobilize capital, protect monopolies, and compete for overseas trade and territory.</li>
-                    <li style="margin: 0 0 6px 0;">I can trace silver and Atlantic exchange across hemispheres while also explaining one important continuity in established Afro-Eurasian regional markets or commercial practices.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how growing demand intensified peasant or artisan labor in Europe, India, or China and how the Atlantic slave trade reshaped demographic, gender, family, and cultural patterns in parts of Africa and the Americas.</li>
-                    <li style="margin: 0 0 6px 0;">I can use at least two specific examples to compare different religious effects of global interaction, including missionary expansion, conflict, or syncretic traditions such as Vodun or Santería.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how one mercantilist law or one joint-stock company, such as the VOC or the English East India Company, helped a ruler make an empire pay or compete with a rival, and name one rivalry that grew out of an economic dispute.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain one change in networks of exchange (silver pulled toward China, or the Atlantic trading system) and one continuity (regional markets with their old merchants and ways, or peasant and artisan work that continued and grew).</li>
+                    <li style="margin: 0 0 6px 0;">I can explain one way the trade in enslaved people changed families in parts of Africa, and one example of cultural mixing in the Atlantic world that Africans, Indigenous Americans, and Europeans all contributed to.</li>
+                    <li style="margin: 0 0 6px 0;">I can use two examples to compare how religions spread, clashed, or blended, and say one way they were similar and one way they were different.</li>
                 </ul>
             </td>
         </tr>
@@ -2885,7 +2885,14 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 8px 0;">Finish Checkpoint 2, and any other required 4.5 module you did not complete in class.
+                    </li>
+                </ul>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Wednesday, November 11</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Thursday, November 12</span></span>
+                </p>
             </td>
         </tr>
         <tr>

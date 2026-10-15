@@ -936,23 +936,35 @@ module.exports = [
   {
     id: 'topic-4-5',
     code: 'Topic 4.5',
-    title: 'Silver Routes and Colonial Administration, c. 1580-1700',
-    subtitle: 'Topic 4.5 \u00b7 Maritime empires maintained',
+    title: 'Silver, Companies and Rivals, c. 1550 to 1750',
+    subtitle: 'Topic 4.5 \u00b7 Maritime empires maintained and developed',
+    // Rebuilt 2026-10-15 from the 4.5 story: what the rulers' tools moved
+    // (silver toward China by both routes, the Atlantic system) and where
+    // economic disputes became wars (Diu, Tondibi, Ambon). "Colonial
+    // administration" and the mita legend are 4.4's and are gone, and so are
+    // the old key's unsourced "60% of the world's silver" and "first regularly
+    // scheduled transoceanic route".
     highlights: [
-      { zone: 'andes', label: 'POTOS\u00cd', tone: 'gold', legend: 'Potos\u00ed silver, mined under the mita labor draft' },
-      { zone: 'mexico', label: 'NEW SPAIN', tone: 'bronze', legend: 'Zacatecas silver and the Manila galleon' },
-      { zone: 'philippines', label: 'MANILA', tone: 'sand', legend: 'Manila: the Pacific transfer point' },
-      { zone: 'eastAsia', label: 'MING & QING CHINA', tone: 'plum', legend: 'China: the market that absorbed the silver' },
-      { zone: 'westernEurope', label: 'SEVILLE', tone: 'slate', legend: 'Seville and the Atlantic treasure fleets' }
+      { zone: 'andes', label: 'POTOS\u00cd', tone: 'gold', legend: 'Potos\u00ed: Spanish silver from 1545' },
+      { zone: 'mexico', label: 'NEW SPAIN', tone: 'bronze', legend: 'New Spain: Zacatecas silver from 1546' },
+      { zone: 'eastAsia', label: 'MING CHINA', tone: 'plum', legend: 'China: taxes paid in silver, so silver was in demand' },
+      { zone: 'westernEurope', label: 'EUROPE', tone: 'slate', legend: 'Europe: mercantilist states and their trading companies' },
+      { zone: 'westAfrica', label: 'WEST AFRICA', tone: 'sand', legend: 'West Africa: Indian cloth and cowries traded for captives' }
     ],
     flows: [
-      { from: 'andes', to: 'westernEurope', label: 'treasure fleets east' },
-      { from: 'mexico', to: 'philippines', label: 'Manila galleon west', bow: 0.2 },
-      { from: 'philippines', to: 'eastAsia', label: 'silver into China', bow: 0.16 }
+      { from: [-66, -17], via: [[-42, 6], [-24, 30]], to: [-6, 37.4], label: 'Silver to Seville' },
+      { from: 'mexico', to: 'philippines', label: 'Galleon to Manila', bow: 0.2 },
+      { from: 'philippines', to: 'eastAsia', label: 'Silver into China', bow: 0.16 },
+      { from: [-6, 42], via: [[-16, 2], [16, -36], [58, -12]], to: [72, 17], label: 'Silver around Africa to Asia' },
+      { from: [-2, 6], via: [[-30, 4]], to: [-58, 13], label: 'Enslaved Africans west' }
     ],
     points: [
-      { at: [-65.7, -19.6], label: 'Potos\u00ed', note: 'the silver mountain', side: 'left' }
-    ]
+      { at: [70.98, 20.71], label: 'Diu', note: 'Portuguese victory at sea, 1509', side: 'left' },
+      { at: [0.0, 16.27], label: 'Tondibi', note: 'Morocco beats Songhai, 1591', side: 'left' },
+      { at: [128.18, -3.7], label: 'Ambon', note: 'Dutch and English clash, 1623', side: 'left' },
+      { at: [120.98, 14.6], label: 'Manila', note: 'Chinese silk for silver, from 1571', side: 'left' }
+    ],
+    note: 'BeHistorical instructional map. Points and shaded regions are schematic, not borders, and coastlines are simplified for classroom projection. Arrows show patterns, not single voyages.'
   },
   {
     id: 'topic-4-6',

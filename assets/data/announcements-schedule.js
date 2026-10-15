@@ -950,19 +950,31 @@ window.BEHISTORICAL_SCHEDULE = {
       homework: 'Finish Checkpoint 2, and any other required 4.4 module you did not complete in class.'
     },
 
-    /* ---- Remaining Unit 4 dates ----------------------------- */
-    // Jeff's corrected November calendar, 2026-10-14. Dates only:
-    // required module subsets and homework are set during each topic build.
+    /* ---- Topic 4.5, Maritime Empires Maintained and Developed ------ */
+    // Green Monday 2026-11-09 and Silver Tuesday 2026-11-10, from Jeff's
+    // corrected November calendar (2026-10-14).
+    // Required subset (4.5 build, 2026-10-15, under Jeff's standing rule): 02
+    // First & 10, 05 Skill Builder (3.A Claims and Evidence in Sources, the
+    // CED's suggested skill), 07 Evidence Lab and 10 Checkpoint 2. Checkpoint 1
+    // and BeInTheRoom stay optional.
     {
       date: '2026-11-09',
       cohort: 'green',
-      topic: '4.5'
+      topic: '4.5',
+      modules: ['02', '05', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 4.5 module you did not complete in class.'
     },
     {
       date: '2026-11-10',
       cohort: 'silver',
-      topic: '4.5'
+      topic: '4.5',
+      modules: ['02', '05', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 4.5 module you did not complete in class.'
     },
+
+    /* ---- Remaining Unit 4 dates ----------------------------- */
+    // Jeff's corrected November calendar, 2026-10-14. Dates only:
+    // required module subsets and homework are set during each topic build.
     {
       date: '2026-11-11',
       cohort: 'green',
