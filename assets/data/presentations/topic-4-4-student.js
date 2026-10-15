@@ -115,7 +115,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "visual": {
           "url": "../assets/images/topics/4-4/elmina-dapper-c1668.jpg",
           "alt": "Engraving of a large fort on a low rocky point above the sea, a smaller fort on the hill behind it, and sailing ships firing a salute in the foreground",
-          "credit": "Fort of Elmina, in Olfert Dapper's description of Africa, about 1668 · Public domain",
+          "credit": "Elmina, Dapper, 1668 · Public domain",
           "position": "50% 60%"
         },
         "rows": [

@@ -210,7 +210,7 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-4.3.II.A.i', title: 'What a trading post was, and who it paid.',
       template: {
         tag: 'Trading post', place: 'Elmina, Gold Coast', date: '1482',
-        visual: { url: '../assets/images/topics/4-4/elmina-dapper-c1668.jpg', alt: 'Engraving of a large fort on a low rocky point above the sea, a smaller fort on the hill behind it, and sailing ships firing a salute in the foreground', credit: 'Fort of Elmina, in Olfert Dapper\'s description of Africa, about 1668 · Public domain', position: '50% 60%' },
+        visual: { url: '../assets/images/topics/4-4/elmina-dapper-c1668.jpg', alt: 'Engraving of a large fort on a low rocky point above the sea, a smaller fort on the hill behind it, and sailing ships firing a salute in the foreground', credit: 'Elmina, Dapper, 1668 · Public domain', position: '50% 60%' },
         rows: [
           { label: 'Built by', text: '**Portugal**, to buy gold on the coast of West Africa' },
           { label: 'Then', text: 'Goa **1510**, Malacca **1511**, Hormuz **1515**: forts on coasts, not whole countries' },
