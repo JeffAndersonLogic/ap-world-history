@@ -46,7 +46,7 @@ in this folder, the schedule, and git history.
 | 4.1 | 2026-10-28 | 2026-10-29 | Fresh | 2026-10-12 | `topic-4-1-2026-10-12.md` |
 | 4.2 | 2026-10-30 | 2026-11-02 | Fresh | 2026-10-13 | `topic-4-2-2026-10-13.md` |
 | 4.3 | 2026-11-03 | 2026-11-04 | Fresh | 2026-10-14 | `topic-4-3-2026-10-14.md` |
-| 4.4 | 2026-11-05 | 2026-11-06 | Never | - | - |
+| 4.4 | 2026-11-05 | 2026-11-06 | Fresh | 2026-10-15 | `topic-4-4-2026-10-15.md` |
 | 4.5 | 2026-11-09 | 2026-11-10 | Never | - | - |
 | 4.6 | 2026-11-11 | 2026-11-12 | Never | - | - |
 | 4.7 | 2026-11-13 | 2026-11-16 | Never | - | - |
@@ -56,10 +56,10 @@ in this folder, the schedule, and git history.
 
 | State | Topics | Meaning |
 |---|---|---|
-| Fresh | 3 | audited, and nothing has changed since |
+| Fresh | 4 | audited, and nothing has changed since |
 | Stale | 4 | the topic changed after its audit |
 | Review | 0 | a file shared across the unit changed after its audit |
-| Never | 25 | no audit record exists |
+| Never | 24 | no audit record exists |
 
 ## Is the weekly sweep alive?
 
