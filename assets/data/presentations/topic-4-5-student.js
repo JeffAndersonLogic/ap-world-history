@@ -105,7 +105,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "place": "The Dutch Republic",
         "date": "1602",
         "visual": {
-          "url": "../assets/images/topics/4-5/voc-share-1606.jpg",
+          "url": "../assets/images/topics/4-5/voc-share-enkhuizen-1606.jpg",
           "alt": "A handwritten Dutch document on paper, a receipt for a payment on a share of the Dutch East India Company, with signatures at the bottom",
           "credit": "Receipt for a VOC share, Enkhuizen, 1606 · Public domain",
           "position": "50% 30%"
@@ -138,7 +138,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "footer": "Find the claim, then the reason the author gives for it.",
       "kc": "KC-4.3.III.ii",
       "template": {
-        "quote": "The gentlemen [the directors] ought to know well by experience that in the Indies trade must be carried on and kept up under the protection and favor of your own weapons, and that the weapons must be paid for out of the profits the trade earns, so that trade cannot be kept up without war, nor war without trade.",
+        "quote": "[T]he weapons must be paid for out of the profits the trade earns, so that trade cannot be kept up without war, nor war without trade.",
         "attribution": {
           "author": "Jan Pieterszoon Coen, VOC official in Asia",
           "work": "Letter to the company's directors",
@@ -250,7 +250,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kc": "KC-4.1.IV.D.i",
       "template": {
         "center": {
-          "name": "Atlantic trade"
+          "name": "Atlantic"
         },
         "spokes": [
           {
@@ -408,7 +408,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "branch-tree",
       "eyebrow": "Faith · Compare",
-      "title": "Religions traveled with the ships, and did three different things.",
+      "title": "Three things religions did.",
       "footer": "Similar: old religions reached new people. Different: some were fought over, and some blended into something new.",
       "kc": "Unit 4: Learning Objective K",
       "template": {
@@ -419,26 +419,23 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "label": "Spread",
             "note": "Old religions, new places",
             "items": [
-              "Christianity: Americas, Philippines",
-              "Jesuits at the Ming court",
-              "Islam in Southeast Asia"
+              "Christianity",
+              "Islam"
             ]
           },
           {
             "label": "Clashed",
             "note": "Contact caused conflict",
             "items": [
-              "Peru, from c. 1610",
-              "Japan bans Christianity (4.4)"
+              "Peru, c. 1610"
             ]
           },
           {
             "label": "Blended",
             "note": "Syncretic beliefs",
             "items": [
-              "Guadalupe at Tepeyac",
-              "Kongo crucifixes",
-              "Vodou, 1700s"
+              "Guadalupe",
+              "Vodou"
             ]
           }
         ]
@@ -467,19 +464,19 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "footer": "Find his claim. Then ask: does his own evidence prove it?",
       "kc": "KC-4.1.VI",
       "template": {
-        "quote": "[N]ow that the church of Our Lady of Guadalupe is built there, they also call her Tonantzin, taking the occasion from the preachers, who called Our Lady, the Mother of God, Tonantzin. ... It seems to be a satanic invention to cover up idolatry under the confusion of this name Tonantzin, and they now come to visit this Tonantzin from very far away, as much as before.",
+        "quote": "[T]hey also call her Tonantzin, taking the occasion from the preachers ... It seems to be a satanic invention to cover up idolatry ... and they now come to visit this Tonantzin from very far away.",
         "attribution": {
           "author": "Bernardino de Sahagún, Franciscan friar in Mexico",
           "work": "General History of the Things of New Spain",
           "year": "1570s"
         },
-        "notice": "What does Sahagún claim the people at Tepeyac are doing? What evidence does he give?"
+        "notice": "\"Her\" is the Virgin of Guadalupe, whose church stood at Tepeyac. What does Sahagún claim the people there are doing? What evidence does he give?"
       }
     },
     {
       "kind": "myth-evidence",
       "eyebrow": "Myth and Evidence",
-      "title": "Four things people get wrong.",
+      "title": "Three things people get wrong.",
       "footer": "The evidence tells a more useful story than the myths.",
       "template": {
         "rows": [
@@ -487,11 +484,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "myth": "Europe bought Asian goods with better products.",
             "evidence": "Europeans had few goods Asians wanted, so they paid in American silver.",
             "source": "Silver around Africa; Manila"
-          },
-          {
-            "myth": "The Atlantic trade was a neat triangle.",
-            "evidence": "Many ships sailed straight between Brazil and Angola, and goods came from India and the Maldives.",
-            "source": "Indian cloth; cowrie shells"
           },
           {
             "myth": "Global trade replaced the old markets.",
@@ -616,7 +608,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "url": "../assets/images/topics/4-5/batavia-beeckman-c1662.jpg",
           "alt": "Oil painting of a crowded market under tall palm trees, with Javanese, Chinese and Dutch people, and the long white walls of a fortress behind",
           "credit": "Andries Beeckman, The Castle of Batavia, about 1662 · Rijksmuseum · Public domain",
-          "position": "50% 60%"
+          "position": "50% 88%"
         }
       }
     }

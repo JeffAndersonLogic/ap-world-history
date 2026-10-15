@@ -37,7 +37,7 @@ window.BEHISTORICAL_TEACHING = {
     ],
     should: [
       'Model 3.A on Mun and Coen, then let students find Sahagún\'s claim themselves.',
-      'Correct four myths: "Europe paid for Asian goods with better products," "the Atlantic trade was a neat triangle," "global trade replaced the old markets," and "European culture simply replaced the others in the Americas."',
+      'Correct four myths: "Europe paid for Asian goods with better products," "the Atlantic trade was a neat triangle" (on the Atlantic slide), "global trade replaced the old markets," and "European culture simply replaced the others in the Americas."',
       'Use both CED rivalry examples (the Indian Ocean; Morocco and Songhai) beside a European one.'
     ],
     could: [
@@ -219,7 +219,7 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-4.1.IV.C', title: 'A company that could go to war.',
       template: {
         tag: 'Joint-stock company', place: 'The Dutch Republic', date: '1602',
-        visual: { url: '../assets/images/topics/4-5/voc-share-1606.jpg', alt: 'A handwritten Dutch document on paper, a receipt for a payment on a share of the Dutch East India Company, with signatures at the bottom', credit: 'Receipt for a VOC share, Enkhuizen, 1606 · Public domain', position: '50% 30%' },
+        visual: { url: '../assets/images/topics/4-5/voc-share-enkhuizen-1606.jpg', alt: 'A handwritten Dutch document on paper, a receipt for a payment on a share of the Dutch East India Company, with signatures at the bottom', credit: 'Receipt for a VOC share, Enkhuizen, 1606 · Public domain', position: '50% 30%' },
         rows: [
           { label: 'Shares', text: '**Many investors** bought shares and split the profits and the losses' },
           { label: 'Charter', text: 'The Dutch government gave the VOC the **only right** to Dutch trade with Asia' },
@@ -246,7 +246,7 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-4.3.III.ii', title: 'A company leader writes home, 1614.',
       footer: 'Find the claim, then the reason the author gives for it.',
       template: {
-        quote: 'The gentlemen [the directors] ought to know well by experience that in the Indies trade must be carried on and kept up under the protection and favor of your own weapons, and that the weapons must be paid for out of the profits the trade earns, so that trade cannot be kept up without war, nor war without trade.',
+        quote: '[T]he weapons must be paid for out of the profits the trade earns, so that trade cannot be kept up without war, nor war without trade.',
         attribution: { author: 'Jan Pieterszoon Coen, VOC official in Asia', work: 'Letter to the company\'s directors', year: '1614' },
         notice: 'What does Coen claim about trade and war? What reason does he give?'
       },
@@ -254,7 +254,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Jan Pieterszoon Coen (1587 to 1629) was the VOC\'s director-general of trade in Asia in 1614 and became governor-general in 1618. He wrote this from Bantam to the company\'s directors, the Heeren XVII (Gentlemen Seventeen), on 27 December 1614. The Dutch is printed in H. T. Colenbrander, ed., Jan Pieterszoon Coen: Bescheiden omtrent zijn bedrijf in Indië, vol. 1 (1919), pp. 97 to 98; the English is translated for BeHistorical from it. C. R. Boxer\'s often-quoted English (The Dutch Seaborne Empire, 1965) words it slightly differently: "we cannot carry on trade without war nor war without trade."',
-          'Claim: trade and war cannot be separated. Reason: trade in Asia needs the protection of weapons, and the weapons are paid for by the trade.',
+          'Claim: trade and war cannot be separated. Reason: the weapons are paid for by the trade. The full sentence (in the Skill Builder) adds the other half: trade in the Indies "must be carried on and kept up under the protection and favor of your own weapons."',
           'This is the company as a weapon (KC-4.1.IV.C) and economic dispute turning into conflict (KC-4.3.III.ii) in one sentence. Coen later took Jakarta by force (1619) and renamed it Batavia; keep that for the deep reading.',
           'Sourcing note for later: Coen was arguing for more money and soldiers from his directors. That is his purpose, and it is why he states the claim so strongly.'
         ],
@@ -352,7 +352,7 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-4.1.IV.D.i', title: 'Goods, wealth, and people, from everywhere.',
       footer: 'Not a neat triangle: many ships sailed straight between Brazil and Angola, and the goods came from all over the world.',
       template: {
-        center: { name: 'Atlantic trade' },
+        center: { name: 'Atlantic' },
         spokes: [
           { name: 'Europe', note: 'guns, iron, alcohol', angle: -150 },
           { name: 'India and the Maldives', note: 'cotton cloth and cowrie shells', angle: -30 },
@@ -471,15 +471,15 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'faith', kind: 'branch-tree', eyebrow: 'Faith · Compare',
-      kc: 'Unit 4: Learning Objective K', title: 'Religions traveled with the ships, and did three different things.',
+      kc: 'Unit 4: Learning Objective K', title: 'Three things religions did.',
       footer: 'Similar: old religions reached new people. Different: some were fought over, and some blended into something new.',
       template: {
         claimLabel: 'Compare',
         claim: 'As contact grew, religions **spread**, **clashed**, and **blended**.',
         branches: [
-          { label: 'Spread', note: 'Old religions, new places', items: ['Christianity: Americas, Philippines', 'Jesuits at the Ming court', 'Islam in Southeast Asia'] },
-          { label: 'Clashed', note: 'Contact caused conflict', items: ['Peru, from c. 1610', 'Japan bans Christianity (4.4)'] },
-          { label: 'Blended', note: 'Syncretic beliefs', items: ['Guadalupe at Tepeyac', 'Kongo crucifixes', 'Vodou, 1700s'] }
+          { label: 'Spread', note: 'Old religions, new places', items: ['Christianity', 'Islam'] },
+          { label: 'Clashed', note: 'Contact caused conflict', items: ['Peru, c. 1610'] },
+          { label: 'Blended', note: 'Syncretic beliefs', items: ['Guadalupe', 'Vodou'] }
         ]
       },
       notes: {
@@ -515,9 +515,9 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-4.1.VI', title: 'A friar is suspicious, in the 1570s.',
       footer: 'Find his claim. Then ask: does his own evidence prove it?',
       template: {
-        quote: '[N]ow that the church of Our Lady of Guadalupe is built there, they also call her Tonantzin, taking the occasion from the preachers, who called Our Lady, the Mother of God, Tonantzin. ... It seems to be a satanic invention to cover up idolatry under the confusion of this name Tonantzin, and they now come to visit this Tonantzin from very far away, as much as before.',
+        quote: '[T]hey also call her Tonantzin, taking the occasion from the preachers ... It seems to be a satanic invention to cover up idolatry ... and they now come to visit this Tonantzin from very far away.',
         attribution: { author: 'Bernardino de Sahagún, Franciscan friar in Mexico', work: 'General History of the Things of New Spain', year: '1570s' },
-        notice: 'What does Sahagún claim the people at Tepeyac are doing? What evidence does he give?'
+        notice: '"Her" is the Virgin of Guadalupe, whose church stood at Tepeyac. What does Sahagún claim the people there are doing? What evidence does he give?'
       },
       notes: {
         minutes: 2,
@@ -534,12 +534,11 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'myths', kind: 'myth-evidence', eyebrow: 'Myth and Evidence',
-      title: 'Four things people get wrong.',
+      title: 'Three things people get wrong.',
       footer: 'The evidence tells a more useful story than the myths.',
       template: {
         rows: [
           { myth: 'Europe bought Asian goods with better products.', evidence: 'Europeans had few goods Asians wanted, so they paid in American silver.', source: 'Silver around Africa; Manila' },
-          { myth: 'The Atlantic trade was a neat triangle.', evidence: 'Many ships sailed straight between Brazil and Angola, and goods came from India and the Maldives.', source: 'Indian cloth; cowrie shells' },
           { myth: 'Global trade replaced the old markets.', evidence: 'Regional markets kept flourishing, and Europeans joined them as carriers.', source: 'Gujarati, Chinese, Armenian merchants' },
           { myth: 'European culture simply replaced the others.', evidence: 'Africans, Indigenous Americans, and Europeans all made the new Atlantic cultures.', source: 'Creole languages; Vodou; Guadalupe' }
         ]
@@ -548,12 +547,11 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Row 1 is KC-4.1.IV\'s silver sentence: silver bought Asian goods.',
-          'Row 2 is the deep audit\'s correction of the triangle diagram.',
-          'Row 3 is KC-4.1.IV\'s second sentence: regional markets "continued to flourish."',
-          'Row 4 is KC-4.1.IV.D.ii: "with all parties contributing." Do not swing to the opposite myth: the mixing often happened under force and slavery.'
+          'Row 2 is KC-4.1.IV\'s second sentence: regional markets "continued to flourish."',
+          'Row 3 is KC-4.1.IV.D.ii: "with all parties contributing." Do not swing to the opposite myth: the mixing often happened under force and slavery.'
         ],
         ask: 'Which myth is the hardest to correct without making a new mistake?',
-        listenFor: 'The fourth: all parties contributed, but not as equals.'
+        listenFor: 'The third: all parties contributed, but not as equals. (The fourth myth, the neat triangle, is corrected on the Atlantic slide.)'
       }
     },
     {
