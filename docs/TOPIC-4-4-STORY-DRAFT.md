@@ -6,10 +6,12 @@ Jeff started this build with "build 4.4" on 2026-10-14 (he asked for 4.5, and ch
 CED source file and the scholarship; the record of what they found is in
 `docs/TOPIC-4-4-CLAIM-LEDGER.md`, under "Review findings".
 
-**Resume here (2026-10-15):** Phases 1 to 8 are committed, and review pass 1 (37 findings) is
-fixed and logged in the claim ledger. Review pass 2 is running (two fresh reviewers, prompts as in
-pass 1). Next: fix and log pass 2, then pass 3 if needed, the Unit 4 fingerprint, the browser suite
-and the topic audit.
+**Resume here (2026-10-15, second session):** Phases 1 to 8 are committed, and review pass 1
+(37 findings) is fixed and logged in the claim ledger. The first session ran out of usage while
+pass 2 was running, and its pass 2 never reported. This session took the build over and relaunched
+pass 2 from scratch (two fresh reviewers, prompts as in pass 1, working from new captures). Next:
+fix and log pass 2, add the build-surface rows to the claim ledger, then pass 3 if needed, the
+Unit 4 fingerprint, the browser suite and the topic audit.
 
 **Taught:** Green Thursday 2026-11-05, Silver Friday 2026-11-06, from Jeff's corrected November
 Canvas calendar (2026-10-14), already in `assets/data/announcements-schedule.js` as date-only
