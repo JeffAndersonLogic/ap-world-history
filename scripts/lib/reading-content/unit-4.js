@@ -721,7 +721,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In Africa and Asia, an empire from the sea usually looked like a fort on a coast. Portugal built São Jorge da Mina, a fortress on the Gold Coast of West Africa, in 1482, to buy gold. It took Goa in India in 1510, Malacca, on the narrow strait between the Indian Ocean and the South China Sea, in 1511, and Hormuz, at the mouth of the Persian Gulf, in 1515. A <span class=\"kt\">trading post</span> is a small fortified base where a foreign state's merchants buy and sell. These posts made money for the kings who backed them and the merchants who traded through them. The Dutch, and later the English and French, built posts of their own, often by taking Portugal's."
+            "html": "In Africa and Asia, an empire from the sea usually looked like a fort on a coast. Portugal built São Jorge da Mina, a fortress on the Gold Coast of West Africa, in 1482, to buy gold. It took Goa in India in 1510, Malacca, on the narrow strait between the Indian Ocean and the South China Sea, in 1511, and Hormuz, at the mouth of the Persian Gulf, in 1515. A <span class=\"kt\">trading post</span> is a small fortified base where a foreign state's merchants buy and sell. These posts made money for the kings who backed them and the merchants who traded through them. The Dutch, and later the English and French, built posts of their own; the Dutch often did it by taking Portugal's."
           },
           {
             "type": "p",
@@ -794,12 +794,12 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In 1526 Afonso wrote a letter to King João III of Portugal. He complained that Portuguese traders were carrying away \"our native-born countrymen and the children of our nobles and vassals as well as relatives of ours,\" and he asked the Portuguese king to send \"neither traders nor trading goods.\" Read alone, that sounds like a king against slavery. Read with its author and audience in mind, it says something more exact. Afonso himself sold captives taken in his wars outside Kongo to the Portuguese, and Kongo had enslaved people of its own. What he wanted stopped was traders he did not control kidnapping his own free-born subjects, which was taking the trade, and his people's loyalty, out of the king's hands. His audience was the one ruler who could order those traders to obey him."
+            "html": "In 1526 Afonso wrote a letter to King João III of Portugal. He complained that Portuguese traders were carrying away \"our native-born countrymen and the children of our nobles and vassals as well as relatives of ours,\" because thieves were seizing free people of Kongo and selling them to those traders. He asked the Portuguese king to send \"neither traders nor trading goods.\" Two more facts matter when you read the letter: Afonso himself sold captives taken in his wars outside Kongo to the Portuguese, and Kongo had enslaved people of its own."
           }
         ],
         "callout": {
           "label": "AP Thinking, Sourcing and Situation",
-          "raw": "<p><strong>Purpose changes meaning.</strong> Afonso's purpose was to get the king of Portugal to stop traders who were breaking Kongo's rules. Knowing that, the letter is evidence of a strong African king defending his control of trade, not evidence that he was against all slavery.</p>"
+          "raw": "<p><strong>Purpose changes meaning.</strong> Read the letter twice. First read it alone. Then read it again knowing who wrote it, who he was writing to, and what he wanted that reader to do. Question 2 asks you what changes.</p>"
         }
       },
       {
@@ -836,11 +836,11 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "What changed was the plantations. A <span class=\"kt\">plantation economy</span> is one built on huge farms growing one crop to sell, and sugar, and later tobacco, needed enormous numbers of workers. Historians estimate that in the whole 1500s, fewer than 300,000 Africans were forced onto ships bound for the Americas. In the fifty years from 1701 to 1750, about 2.5 million were."
+            "html": "What changed was the plantations. A <span class=\"kt\">plantation economy</span> is one built on huge farms growing one crop to sell, and sugar, and later tobacco, needed enormous numbers of workers. Historians estimate that in the whole 1500s, fewer than 300,000 Africans were forced onto ships bound for the Americas. In the fifty years from 1701 to 1750, more than 2.5 million were."
           },
           {
             "type": "p",
-            "html": "Slavery in the Americas was larger than anything before it. It was for life and inherited, and it came to be tied to race: laws in the English colonies made the children of enslaved women enslaved too. Africans and their descendants became most of the people in the Caribbean colonies and a large part of Brazil's population, and their languages, beliefs, and foods came with them. That is what the College Board calls \"significant demographic, social, and cultural changes.\""
+            "html": "The Atlantic slave trade carried more people across an ocean than any slave trade before it. Slavery in the Americas was for life and inherited, and it came to be tied to race: laws in the English colonies made the children of enslaved women enslaved too. Africans and their descendants became most of the people in the Caribbean colonies and a large part of Brazil's population, and their languages, beliefs, and foods came with them. That is what the College Board calls \"significant demographic, social, and cultural changes.\""
           }
         ],
         "callout": {

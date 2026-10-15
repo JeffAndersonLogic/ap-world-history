@@ -134,7 +134,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'question', kind: 'frame-subtitle', eyebrow: 'The Question',
       title: 'Europeans built empires from the sea. What changed, and what kept going?',
-      subtitle: 'A Japanese painter shows Portuguese traders arriving in Japan, about 1600, as people on the shore saw them.',
+      subtitle: 'Portuguese traders arriving in Japan, about 1600, as a Japanese painter imagined them for Japanese buyers.',
       notes: {
         minutes: 1,
         land: [
@@ -193,13 +193,13 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'map', kind: 'map', eyebrow: 'Where the Empires Reached',
       kc: 'Unit 4: Learning Objective E', title: 'Forts on coasts, colonies in the Americas, and places with their own rules.',
-      footer: 'In Africa and Asia, Europeans held coasts. In the Americas, they took territory.',
+      footer: 'In Africa and Asia, Europeans mostly held coasts. In the Americas, they took territory.',
       visual: { url: '../assets/images/instructional-maps/topic-4-4.svg', alt: 'World map marking the Gold Coast and Elmina, Kongo, the Swahili coast and Mombasa, Goa, Malacca, Macau, Japan, the Caribbean and Potosí, with arrows for forts on the coast, enslaved Africans carried west and to Brazil, and intra-Asian trade' },
       notes: {
         minutes: 1,
         land: [
           'The course\'s own instructional map, rebuilt for this story. Shaded regions are schematic, not borders.',
-          'Point out the pattern: every European place in Africa and Asia sits on a coast; Japan, Kongo and the Swahili coast are places that set their own terms; Potosí and the Caribbean are colonies.'
+          'Point out the pattern: most European places in Africa and Asia sit on a coast; Japan, Kongo and the Swahili coast are places that set their own terms; Potosí and the Caribbean are colonies.'
         ],
         ask: 'Find one European fort and one place that set its own terms.',
         listenFor: 'Goa, Malacca or Elmina; Japan, Macau under Ming rules, Mombasa under Oman, Kongo.'
@@ -213,7 +213,7 @@ window.BEHISTORICAL_TEACHING = {
         visual: { url: '../assets/images/topics/4-4/elmina-dapper-c1668.jpg', alt: 'Engraving of a large fort on a low rocky point above the sea, a smaller fort on the hill behind it, and sailing ships firing a salute in the foreground', credit: 'Fort of Elmina, in Olfert Dapper\'s description of Africa, about 1668 · Public domain', position: '50% 60%' },
         rows: [
           { label: 'Built by', text: '**Portugal**, to buy gold on the coast of West Africa' },
-          { label: 'Then', text: 'Goa **1510**, Malacca **1511**, Hormuz **1515**: forts on coasts, not provinces' },
+          { label: 'Then', text: 'Goa **1510**, Malacca **1511**, Hormuz **1515**: forts on coasts, not whole countries' },
           { label: 'Paid', text: 'The **kings** who backed the posts and the **merchants** who traded through them' },
           { label: 'Taken', text: 'The Dutch captured Elmina in **1637**: rivals took each other\'s posts' }
         ],
@@ -235,7 +235,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'asia', kind: 'story-scene', eyebrow: 'Asia Sets the Terms',
       kc: 'KC-4.3.II.A.i', title: 'China and Japan decided how far Europeans could reach.',
       template: {
-        visual: { url: '../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg', alt: 'Engraving of Nagasaki harbor below green hills, with the small fan-shaped island of Dejima near the shore, a Dutch company ship, Japanese boats and Chinese junks', credit: 'Nagasaki harbor and Dejima, engraving by J. C. Tetschner, 1735 to 1744 · Public domain', position: '50% 88%' },
+        visual: { url: '../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg', alt: 'Engraving of Nagasaki harbor below green hills, with the walled Dutch compound on Dejima at the shore, flying a flag, a Dutch company ship, Japanese boats and Chinese junks', credit: 'Nagasaki harbor and Dejima, engraving by Johann Wolfgang Heydt, published 1744 · Public domain', position: '50% 88%' },
         caption: 'Nagasaki, about 1740: the Dutch island, Dutch and Japanese ships, Chinese junks',
         steps: [
           { label: 'China, 1557', text: 'Portuguese may settle at Macau, under Chinese officials and rules.' },
@@ -250,7 +250,7 @@ window.BEHISTORICAL_TEACHING = {
           'This is the second sentence of KC-4.3.II.A.i, which the old 4.4 pages never taught: some Asian states limited the disruptive economic and cultural effects of European trade with restrictive or isolationist policies. Ming China and Tokugawa Japan are the CED\'s examples.',
           'Macau: Portuguese merchants settled from 1557 with the permission of Chinese provincial officials; formal recognition and the annual ground rent are dated variously from 1554 to 1573. Chinese officials kept authority in and around the port.',
           'Japan: the shogun\'s senior councilors sent five sets of orders to the Nagasaki magistrates between 1633 and 1639 (Vaporis, Voices of Early Modern Japan, 2012). The Spanish had been expelled in 1624; the English left in 1623. The Dutch moved from Hirado to Dejima in 1641.',
-          'The engraving is German, by J. C. Tetschner, dated 1735 to 1744 by the Atlas of Mutual Heritage, and has its own legend: the city of Nagasaki, the island where the Dutch live, a Chinese island, a company ship, Japanese ships and Chinese junks.'
+          'The engraving is German, signed by Johann Wolfgang Heydt ("I. W. Heydt del. et sculp.") and published in 1744 in a book printed by J. C. Tetschner; it was made in Europe, not drawn in Nagasaki. It has its own legend: the city of Nagasaki, the island where the Dutch live, a Chinese island, a company ship, Japanese ships and Chinese junks.'
         ],
         ask: 'Who wrote the rules for trade in this harbor?',
         listenFor: 'Japan\'s government, not the Dutch.',
@@ -336,7 +336,7 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-4.3.II.A.ii', title: 'A king writes to a king, 1526.',
       footer: 'Afonso sold war captives from outside Kongo himself. Read his letter with that in mind.',
       template: {
-        quote: 'These traders carry away our native-born countrymen and the children of our nobles and vassals as well as relatives of ours. ... Please instruct your trading agents to send neither traders nor trading goods here.',
+        quote: '[T]hese traders carry away our native-born countrymen and the children of our nobles and vassals as well as relatives of ours. ... Please instruct your trading agents to send neither traders nor trading goods here.',
         attribution: { author: 'Afonso I, king of Kongo', work: 'Letter to King João III of Portugal', year: '1526' },
         notice: 'Who is his audience, and what does he want that audience to do? Then: was he against all slavery?'
       },
@@ -359,9 +359,9 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'The colonies made money mostly from farming, and from mining. Each system found the workers.',
       template: {
         rows: [
-          { name: 'Mit’a', mark: 'O', tool: 'Old: an Inca labor duty', result: 'reused to send Andean men to the mine at Potosí.' },
-          { name: 'Encomienda', mark: 'N', tool: 'New: a grant to a colonist', result: 'the labor and tribute of Indigenous people.' },
-          { name: 'Hacienda', mark: 'N', tool: 'New: a great estate', result: 'workers for wages, sometimes tied by debt.' },
+          { name: 'Mit’a', mark: 'O', tool: 'Old: an Inca labor duty', result: 'sent Andean men to Potosí\'s mine.' },
+          { name: 'Encomienda', mark: 'N', tool: 'New: a grant to a colonist', result: 'Indigenous labor and tribute.' },
+          { name: 'Hacienda', mark: 'N', tool: 'New: a great estate', result: 'wages, sometimes debt.' },
           { name: 'Indentured servitude', mark: 'N', tool: 'New: a contract', result: 'four to seven years\' work for the voyage.' },
           { name: 'Chattel slavery', mark: 'N', tool: 'New: people owned as property', result: 'for life, and their children too.' }
         ],
@@ -389,7 +389,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         panels: [
           { visual: { url: '../assets/images/topics/4-4/potosi-cieza-1553.jpg', alt: 'Woodcut of a tall mountain labeled Cero de Potosí, with tiny figures climbing paths to mine entrances and a town with churches at its foot', credit: 'Cerro de Potosí, woodcut in Pedro Cieza de León, Crónica del Perú, Seville, 1553 · Public domain', fit: 'contain' }, tag: 'Printed in Spain, 1553', text: 'The silver mountain where the mit’a later sent its workers.' },
-          { visual: { url: '../assets/images/topics/4-4/codex-kingsborough-1550s.jpg', alt: 'Painting from a Nahua codex: a Spaniard in a red cloak and black hat grabs an Indigenous man by the hair, and the man bleeds', credit: 'Codex Kingsborough (Tepetlaoztoc), about 1550s · British Museum · Public domain', fit: 'contain' }, tag: 'Painted by Nahua artists, 1550s', text: 'A complaint against an encomendero, made to be sent to Spain.' }
+          { visual: { url: '../assets/images/topics/4-4/codex-kingsborough-1550s.jpg', alt: 'Painting from a Nahua codex: a Spaniard in a red cloak and black hat grabs an Indigenous man by the hair, and the man bleeds', credit: 'Codex Kingsborough (Tepetlaoztoc), about 1550s · British Museum · Public domain', fit: 'contain' }, tag: 'Painted by Nahua artists, 1550s', text: 'A town\'s complaint against its encomenderos, made to be sent to Spain.' }
         ],
         question: 'Which page was made by the people who did the work? **What can each one tell you that the other cannot?**'
       },
@@ -397,7 +397,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Left: the first European picture of Potosí, in Pedro Cieza de León\'s Crónica del Perú (Seville, 1553). Show it as the place the mit’a served; what the silver did in the world is Topic 4.5.',
-          'Right: the Codex Kingsborough, or Codex of Tepetlaoztoc (British Museum), painted by Nahua artists about the 1550s for a lawsuit: the people of Tepetlaoztoc, near Texcoco, complained to the Spanish crown about the tribute and labor demanded by their encomenderos. This page shows an encomendero\'s violence.',
+          'Right: the Codex Kingsborough, or Codex of Tepetlaoztoc (British Museum), painted by Nahua artists about the 1550s for a lawsuit: the people of Tepetlaoztoc, near Texcoco, complained to the Spanish crown about the tribute and labor demanded by their encomenderos. This page shows a Spaniard named Espinosa, who had charge of the town, beating a Nahua man.',
           'Sourcing in one move: the codex was made by the people who owed the labor, for a Spanish court. The woodcut was made in Spain by a Spanish chronicler.'
         ],
         ask: 'What did the people of Tepetlaoztoc want the Spanish king to do?',
@@ -434,13 +434,13 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-4.2.II.C',
       template: {
         visual: { url: '../assets/images/topics/4-4/canoes-elmina-manfroe-1732.jpg', alt: 'Two engraved views of the Gold Coast: fishing canoes off Elmina, and canoes carrying enslaved people out to European ships at anchor', credit: 'Fishing canoes at Elmina, and canoes carrying enslaved people to ships at Manfroe, engraving, 1732 · Public domain', position: '50% 80%' },
-        number: '2.5', unit: 'million', range: '1701 to 1750',
+        number: '2.5+', unit: 'million', range: '1701 to 1750',
         text: 'Africans forced onto ships bound for the Americas, by historians\' estimates. In the whole 1500s: fewer than 300,000.'
       },
       notes: {
         minutes: 1,
         land: [
-          'Slave Voyages (the Trans-Atlantic Slave Trade Database) estimates of captives embarked: 277,505 in 1501 to 1600; 1,088,909 in 1701 to 1725 and 1,471,725 in 1726 to 1750, together 2,560,634. Say "about 2.5 million" and "estimates."',
+          'Slave Voyages (the Trans-Atlantic Slave Trade Database) estimates of captives embarked: 277,505 in 1501 to 1600; 1,088,909 in 1701 to 1725 and 1,471,725 in 1726 to 1750, together 2,560,634. Say "more than 2.5 million" and "estimates."',
           'About nine times as many in fifty years as in the whole sixteenth century: that is the change the CED means by "increased the demand for enslaved labor."',
           'The engraving, from a 1732 English collection of voyages (from Jean Barbot\'s account of the Guinea coast), shows the lower scene\'s canoes carrying enslaved people out to ships at Manfroe, on the Gold Coast. African canoemen and traders worked inside the trade; European ships carried it across the ocean.'
         ],
@@ -468,7 +468,7 @@ window.BEHISTORICAL_TEACHING = {
           'Demographic: on Barbados, enslaved Africans outnumbered Europeans by the late 1600s, and the pattern spread across the Caribbean; in Brazil, Africans and their descendants were a large part of the population.',
           'Social: chattel slavery was for life and inherited; Virginia\'s 1662 law made the children of enslaved women enslaved; English colonial law tied slavery to race.',
           'Cultural: name it in one sentence. How African, American and European cultures mixed is 4.5.',
-          'The engraving is a French Antilles sugar works drawn for the missionary Du Tertre\'s history of the islands (1667): the mill (moulin), furnaces and kettles, the boiling house. It shows the work, not the workers\' lives; a European artist made it for European readers.'
+          'The engraving is a French Antilles sugar works drawn for the missionary Du Tertre\'s history of the islands (1667): the mill (moulin), furnaces and kettles, the boiling house, and its key also marks the \'cases de nègres\', the huts of the enslaved workers. It shows the work, not the workers\' lives; a European artist made it for European readers.'
         ],
         ask: 'Which of the three changes would a person born on a plantation feel first?',
         listenFor: 'The social one: born enslaved, for life.',
@@ -503,7 +503,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         columns: [{ name: 'What changed' }, { name: 'What kept going' }],
         rows: [
-          { label: 'Who ruled', cells: ['Rival European empires built forts on coasts and colonies in the Americas; Kongo and Asante grew stronger', 'China and Japan set the terms; Europeans held coasts, not Asia'] },
+          { label: 'Who ruled', cells: ['Rival European empires built forts on coasts and colonies in the Americas; Kongo and Asante grew stronger', 'China and Japan set the terms; Europeans mostly held coasts, not Asia'] },
           { label: 'Trade and work', cells: ['The cartaz; encomienda, hacienda, indentured servitude, chattel slavery', 'Asian merchants kept the Indian Ocean trading; the Inca mit’a reused'] },
           { label: 'Slavery', cells: ['Plantations made it far larger, lifelong, inherited and tied to race', 'Older forms in Africa: households, the Sahara, the Indian Ocean'] }
         ],
@@ -526,7 +526,7 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'A change and a continuity, each with a named example and the reason it happened.',
       template: {
         weak: 'After 1500, slavery got worse.',
-        strong: 'Slavery in Africa **continued** in older forms, in **households** and in captives sent across the **Sahara**, while the **sugar plantations** of the Americas **changed** it: in **1701 to 1750** alone about **2.5 million** Africans were shipped west, to be held for life, and their children after them.'
+        strong: 'Slavery in Africa **continued** in older forms, in **households** and in captives sent across the **Sahara**, while the **sugar plantations** of the Americas **changed** it: in **1701 to 1750** alone more than **2.5 million** Africans were shipped west, to be held for life, and their children after them.'
       },
       notes: {
         minutes: 2,
@@ -542,13 +542,13 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'skill', kind: 'action', eyebrow: 'Module 05 · Skill Builder',
       title: 'Who wrote it, for whom, and why?',
-      subtitle: 'Name a source\'s author, audience, purpose and situation, and say how they change what it means.',
+      subtitle: 'Name a source\'s audience, purpose and situation, and say how they change what it means.',
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-4-maritime-empires-established.html#modules' },
       notes: {
         minutes: 6,
         land: [
           'The Skill Builder practices the CED\'s suggested skill, 2.A: identify a source\'s point of view, purpose, historical situation and audience.',
-          'It models the 1635 memorandum (the slide students just saw), then gives the 1639 order banning Portuguese ships and asks for its author, audience, purpose and situation, and what the order shows about why Japan limited European trade.',
+          'It models the 1635 memorandum (the slide students just saw), then gives the 1639 order banning Portuguese ships and asks for its audience, purpose and situation, and how the situation explains why Japan limited trade with the Portuguese.',
           'Push students to tie each answer to words in the source, not to facts from elsewhere.'
         ],
         ask: 'What words in the source show its purpose?',

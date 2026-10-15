@@ -66,7 +66,63 @@ Status is exactly one of VERIFIED, NARROWED, REMOVED, NEEDS JEFF.
 | Chattel slavery: owned as property for life, and the children too; laws in the English colonies made the children of enslaved women enslaved | Story §3 | Virginia's act of 1662 (*partus sequitur ventrem*), standard. | VERIFIED |
 | In many African societies enslaved people were taken into households and over time could become part of the family | Story §3 | KC-4.2.II.B ("incorporation of enslaved persons into households"). Heywood 2009 on Kongo: "domestic slaves in elite households were considered part of the extended family." | VERIFIED |
 | Captives went north across the Sahara to the Mediterranean world, and east to Arabia, Persia and India across the Indian Ocean | Story §3 | KC-4.2.II.B ("export of enslaved persons to the Mediterranean and the Indian Ocean regions"); standard. | VERIFIED |
-| Fewer than 300,000 Africans were forced onto ships to the Americas in the 1500s; about 2.5 million in 1701 to 1750 | Story §3 | Slave Voyages estimates of embarked captives: 1501 to 1600, 277,505; 1701 to 1725, 1,088,909; 1726 to 1750, 1,471,725 (total 2,560,634). Stated as estimates. | VERIFIED |
+| Fewer than 300,000 Africans were forced onto ships to the Americas in the 1500s; more than 2.5 million in 1701 to 1750 | Story §3 | Slave Voyages estimates of embarked captives: 1501 to 1600, 277,505; 1701 to 1725, 1,088,909; 1726 to 1750, 1,471,725 (total 2,560,634). Stated as estimates. | VERIFIED |
 | Africans and their descendants became most of the people in the Caribbean colonies and much of Brazil | Story §3 | Standard (Barbados and Jamaica had enslaved majorities by the late 1600s). To confirm a citation in Phase 9. | VERIFIED (to re-check in Phase 9) |
-</content>
-</invoke>
+
+## Review findings
+
+Each finding was judged on its own evidence. "Fixed" means the change is on every surface that
+carried the claim, searched after the fix. Two reviewers per pass, neither of whom saw the
+builder's reasoning: one for page truth, readability and CED alignment, working from rendered text
+captures and slide screenshots; one for history, checked against primary texts and the picture files.
+
+### Pass 1, reviewer 1 (page truth and readability), 22 findings
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | Checkpoint 1 does not ask for everything Success Criterion 2 names | Fixed: SC2 now names one continuity in who set the terms of trade (China or Japan keeping control, or a merchant group keeping Indian Ocean trade going), which is what Checkpoint 1 asks. |
+| 2 | The deep reading answers the Primary Source task (the strong/weak evidence verdict) | Fixed: the verdict is gone. The chapter keeps the facts (Kongo's own slavery, Afonso's slave market, the law protecting free-born people) and tells the student to keep both in view when reading the letter in Module 08. |
+| 3 | The First & 10 also answers it (audience and purpose stated, then the conclusion) | Fixed: section 4 gives the facts only, and the callout asks the student to read the letter twice, the second time knowing who wrote it, to whom and why. Question 2 asks what changes. |
+| 4 | The Evidence Lab sorts Kongo as "kept going", against every other surface | Fixed with 5: the pre-sorting sentence is gone. |
+| 5 | The Evidence Lab directions do the sorting for the student | Fixed: "Choose TWO cards: one you can use to show something that CHANGED ... and one you can use to show something that KEPT GOING. Say why each card fits." |
+| 6 | The Nagasaki engraving is credited to the wrong person and not flagged as made in Europe | Fixed on every surface (Evidence Lab card, lecture card 2, slide 8 credit and note, the assets header): Johann Wolfgang Heydt, signed "I. W. Heydt del. et sculp." on the plate itself, published 1744 in a book printed by J. C. Tetschner, made in Europe rather than drawn in Nagasaki. |
+| 7 | The Evidence Lab asks about Dejima's size, but the picture does not make Dejima findable | Fixed: the prompt points to the walled compound flying a flag, just right of the middle, which is Dejima on this plate. |
+| 8 | The map question asks for a cause the map and key do not show | Fixed: map key item 1 now gives the cause (inland states had far more soldiers; in the Americas disease and conquest broke Indigenous states), and the Kongo key item says how Kongo kept its own rules. |
+| 9 | Checkpoint 2 omits a demand from Success Criterion 3 (how each system supplied workers) | Fixed: the prompt and focus ask how each system supplied workers for farms or mines. |
+| 10 | Checkpoint 1's "continuity" (how China or Japan limited trade) points at a change | Fixed: "how Ming China or Tokugawa Japan kept control of who could trade with them and on what terms". First & 10 question 1 already read "kept control". |
+| 11 | The Skill Builder hands out its own answer ("not as fear of all foreigners: Dutch and Chinese ships kept trading") | Fixed: the sentence is gone; the practice prompt starts with the 1639 order. |
+| 12 | Slide 21 and the Skill Builder disagree on what is asked | Fixed: the slide subtitle and its note name audience, purpose and situation, as the Skill Builder does. |
+| 13 | Slide 12 rows spill out of their boxes | Fixed: the three long results are shortened ("sent Andean men to Potosí's mine", "Indigenous labor and tribute", "wages, sometimes debt"). Re-checked in the Pass 2 screenshots. |
+| 14 | Map type is small when projected; the equator runs through the Malacca note; the Japan key reads as "no one else traded" | Japan key fixed: "Japan: of Europeans, only the Dutch, on Dejima". A longer version overran the key's second column and was cut back. Malacca: the note carries a cream halo that is drawn over the equator, so the line shows only faintly between letters; kept. Type size: **adjacent finding**, the size is set in `scripts/lib/map-render.js` for all 56 maps. |
+| 15 | Slide 24 shows an 1836 picture with no caption | Fixed: the credit reads "painted about 1836, after this period". |
+| 16 | The Elmina picture on slide 6 is small and its credit covers part of it | Checked in the Pass 2 screenshots; see Pass 2. |
+| 17 | "How to Use This" maps sections to objectives wrongly | Fixed: sections 01 to 03, then 01 and 04, then 05. |
+| 18 | The deep reading's closing cards are near model answers to the checkpoints | `report-checkpoint-congruence.js t4-4` found two: the labor "Use this" box against Checkpoint 2 (56%) and the "Europe held coasts" card against Checkpoint 1 (47%). REWORD on both: the labor box now gives the student three questions to ask of each system instead of the continuity and the change; the card no longer opens with the reason Europeans built empires. The other cards are evidence summaries with no hit at 45% or above. |
+| 19 | Ninth-grade readability (lecture card 4, BeInTheRoom jargon, slide 6 "not provinces") | Fixed: "The mit'a was an old Inca work duty, now run by Spain"; in the Goa scenario, casados, Crown Factor, monopoly cargoes, "redistributing coercion", oligarchy and "shallow territorial authority" are glossed or replaced; slide 6 says "not whole countries". |
+| 20 | Slide 2's caption overclaims eyewitness status | Fixed: "as a Japanese painter imagined them for Japanese buyers". |
+| 21 | Slide 11 begins the quotation with a capital it does not have | Fixed: "[T]hese traders carry away". |
+| 22 | Small slips: encomendero singular and plural; race law not limited to the English colonies on lecture card 4; "ninefold"; 1515 hindsight in BeInTheRoom; the map's Kongo key | All fixed: "a town's complaint against its encomenderos" everywhere; "in the English colonies, laws tied it to race"; "about nine times as many people in the fifty years from 1701 to 1750 as in the whole 1500s"; the 1515 card says merchants are still trading as before; Kongo key as in 8. |
+
+### Pass 1, reviewer 2 (history), 15 findings
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | The Nagasaki engraving is credited to Tetschner | Fixed, as reviewer 1's 6. Confirmed on the image: lower left, "I. W. Heydt del. et sculp." |
+| 2 | "In Africa and Asia, every European place sits on a coast" is overstated | Fixed: "most" on the lesson map intro, the slide 6 note and footer, and the ledger slide ("Europeans mostly held coasts"). |
+| 3 | Afonso's letter is paraphrased as Portuguese traders doing the kidnapping | Fixed on every surface (First & 10, deep reading, lecture card 3, closing card, story draft): thieves seized free Kongo people and sold them to Portuguese traders. That is what the letter says (Thornton's translation). |
+| 4 | Goa as capital of the Estado da Índia is dated 1510 | Fixed: taken in 1510, capital by 1530. |
+| 5 | "Most sit at a strait" | Fixed: "several, Malacca and Hormuz above all, sit at chokepoints". Malacca now "controls the main strait". |
+| 6 | "About 2.5 million" rounds 2,560,634 down | Fixed: "more than 2.5 million" in the First & 10, the deep reading, slides 16 and 20, the closing card and the story draft; the slide 16 number reads "2.5+". |
+| 7 | "Ninefold" compares a century with fifty years | Fixed: "about nine times as many people in the fifty years from 1701 to 1750 as in the whole 1500s". |
+| 8 | A superlative about the size of American slavery | Fixed: "The Atlantic slave trade carried more people across an ocean than any slave trade before it." |
+| 9 | Mughals named as the land power Portugal faced in 1509 to 1515 | Fixed: "Gujarat, Vijayanagara, the Safavids, the Ottomans and Ming China (and, after 1526, the Mughals)". |
+| 10 | English and French did not often take Portuguese posts | Fixed: "the Dutch often did it by taking Portugal's". |
+| 11 | The Codex Kingsborough page may show a steward, not an encomendero | Fixed: slide 14's note names "a Spaniard named Espinosa, who had charge of the town"; captions say the codex complains against the town's encomenderos without calling the man on the page one. |
+| 12 | Nagasaki alt text describes a "fan-shaped island" the engraving does not show | Fixed: "the walled Dutch compound on Dejima at the shore, flying a flag". |
+| 13 | The sugar-works caption and note leave out what the key shows | Fixed: both now say the key marks the "cases de nègres", the huts of the enslaved workers. |
+| 14 | Slide 12 (the Afonso quote) changes a quotation without marking it | Fixed with reviewer 1's 21. |
+| 15 | Hacienda "usually" against the First & 10's "often"; the BeInTheRoom objective is not verbatim | Fixed: "often" in both; the scenario quotes the CED objective "in the period from 1450 to 1750". |
+
+Two defects of the builder's own were found while fixing: two apostrophes typed inside single-quoted
+strings broke the renderer config (caught by the skills-map build and `node --check`), and a stray
+line of tool markup sat at the end of this ledger and the story draft. Both fixed.

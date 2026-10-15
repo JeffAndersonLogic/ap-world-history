@@ -45,7 +45,7 @@ module.exports = {
 
   howTo: {
     heading: 'How to Use This',
-    intro: `The College Board asks three things of this topic: how states were built, what changed and continued in trade and labor, and what changed and continued in slavery. Sections 01 to 03 answer the first, sections 03 and 04 the second, and section 05 the third. Every section ends with a change and a continuity you can use.`,
+    intro: `The College Board asks three things of this topic: how states were built, what changed and continued in trade and labor, and what changed and continued in slavery. Sections 01 to 03 answer the first, sections 01 and 04 the second, and section 05 the third. Every section ends with a change and a continuity you can use.`,
     steps: [
       `<b>01 The empire of chokepoints:</b> the rivalries, the trading posts, and the cartaz.`,
       `<b>02 Asia's terms:</b> Macau under Ming officials, and Japan from 1635 to 1641.`,
@@ -77,15 +77,15 @@ module.exports = {
         {
           heading: 'What Portugal actually seized',
           blocks: [
-            { p: `Portugal's first great post was in Africa: the fortress of São Jorge da Mina, Elmina, built on the Gold Coast in <span class="num">1482</span> to buy gold. In Asia, Afonso de Albuquerque took <b>Goa</b> in <span class="num">1510</span> and made it the capital of the <span class="kt">Estado da Índia</span>, Portugal's network of eastern posts. <b>Malacca</b>, taken in <span class="num">1511</span>, controls the strait every ship between the Indian Ocean and the South China Sea must thread. <b>Hormuz</b>, taken in <span class="num">1515</span>, sits at the mouth of the Persian Gulf. Add fortified posts down the East African coast and along the Indian shore.` },
-            { p: `Every one of them is a port, and most sit at a strait. None of them is a province. The Portuguese held dozens of fortified points and almost no land behind them, which is exactly what a network built to tax movement, rather than to own land, looks like. A <span class="kt">trading post</span> made money for the king who backed it and the merchants who traded through it, the College Board's words, in two ways: by buying goods where they were produced, and by taxing other people's ships.` },
+            { p: `Portugal's first great post was in Africa: the fortress of São Jorge da Mina, Elmina, built on the Gold Coast in <span class="num">1482</span> to buy gold. In Asia, Afonso de Albuquerque took <b>Goa</b> in <span class="num">1510</span>, and by <span class="num">1530</span> it was the capital of the <span class="kt">Estado da Índia</span>, Portugal's network of eastern posts. <b>Malacca</b>, taken in <span class="num">1511</span>, controls the main strait between the Indian Ocean and the South China Sea. <b>Hormuz</b>, taken in <span class="num">1515</span>, sits at the mouth of the Persian Gulf. Add fortified posts down the East African coast and along the Indian shore.` },
+            { p: `Every one of them is a port, and several, Malacca and Hormuz above all, sit at chokepoints. None of them is a province. The Portuguese held dozens of fortified points and almost no land behind them, which is exactly what a network built to tax movement, rather than to own land, looks like. A <span class="kt">trading post</span> made money for the king who backed it and the merchants who traded through it, the College Board's words, in two ways: by buying goods where they were produced, and by taxing other people's ships.` },
             { p: `The tax was the <span class="kt">cartaz</span>, a pass that a merchant ship bought from the Portuguese, which committed it to calling at a Portuguese port, paying duties there and carrying none of the goods Portugal claimed for itself. A ship sailing without one could be seized by Portuguese patrols.` }
           ]
         },
         {
           heading: 'Why ports and not provinces',
           blocks: [
-            { p: `This is the mechanism the section turns on. Portuguese naval artillery could out-shoot the fleets it met in the Indian Ocean and could batter a harbor, which is how the Portuguese won at Diu in <span class="num">1509</span>. But a ship's guns cannot occupy a river valley. Ashore, out of range of the guns, the Portuguese faced Mughal, Safavid, Ottoman and Chinese states with armies, revenues and populations many times their own. Their empire took the shape of their advantage: decisive at sea and at the water's edge, small fifty miles inland.` },
+            { p: `This is the mechanism the section turns on. Portuguese naval artillery could out-shoot the fleets it met in the Indian Ocean and could batter a harbor, which is how the Portuguese won at Diu in <span class="num">1509</span>. But a ship's guns cannot occupy a river valley. Ashore, out of range of the guns, the Portuguese faced Gujarat, Vijayanagara, the Safavids, the Ottomans and Ming China (and, after <span class="num">1526</span>, the Mughals), states with armies, revenues and populations many times their own. Their empire took the shape of their advantage: decisive at sea and at the water's edge, small fifty miles inland.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -172,8 +172,8 @@ module.exports = {
         {
           heading: 'What Afonso\'s letter does and does not say',
           blocks: [
-            { p: `The same letter complains that traders "carry away our native-born countrymen and the children of our nobles and vassals as well as relatives of ours," and asks the king of Portugal to send "neither traders nor trading goods." It is often quoted as a protest against the slave trade. The historian Linda Heywood shows why that reading is too simple. Kongo had slavery of its own, and most captives Kongo sold to the Portuguese in Afonso's reign were foreigners taken in Kongo's wars; Afonso ran a slave market in his capital. Kongo law protected free-born Kongo people from sale abroad. What threatened Afonso was traders he did not control kidnapping his own subjects, which "so threatened Afonso's legitimacy that he pleaded with the Portuguese king."` },
-            { p: `So the letter is strong evidence of a powerful king defending his control of trade and of the rule about who could be enslaved. It is weak evidence that he opposed slavery. Later, Heywood argues, Kongo's civil wars of the 1600s broke down the protection of free-born Kongo people, and far more of them were sold abroad.` }
+            { p: `The same letter complains that traders "carry away our native-born countrymen and the children of our nobles and vassals as well as relatives of ours," and asks the king of Portugal to send "neither traders nor trading goods." It is often quoted as a protest against the slave trade. The historian Linda Heywood shows why that reading is too simple. Kongo had slavery of its own, and most captives Kongo sold to the Portuguese in Afonso's reign were foreigners taken in Kongo's wars; Afonso ran a slave market in his capital. Kongo law protected free-born Kongo people from sale abroad. What threatened Afonso was thieves seizing free Kongo people and selling them to Portuguese traders he did not control, which "so threatened Afonso's legitimacy that he pleaded with the Portuguese king."` },
+            { p: `Keep both facts in view when you read the letter yourself in Module 08. Later, Heywood argues, Kongo's civil wars of the 1600s broke down the protection of free-born Kongo people, and far more of them were sold abroad.` }
           ]
         },
         {
@@ -224,7 +224,7 @@ module.exports = {
         {
           heading: 'Haciendas, indentures, and chattel slavery',
           blocks: [
-            { p: `What grew instead was a set of systems that overlapped rather than replacing each other in neat stages. On the <span class="kt">hacienda</span>, a large estate, Indigenous and mixed-race workers farmed and herded for the owner, usually for wages and sometimes tied to the estate by debt; historians argue about how many were bound that way. In the English colonies of the 1600s, most European newcomers to the Chesapeake came as <span class="kt">indentured servants</span>, working four to seven years under contract to pay for their voyage. And on the sugar and tobacco plantations, enslaved Africans were held in <span class="kt">chattel slavery</span>: owned as property, for life, with their children born enslaved.` },
+            { p: `What grew instead was a set of systems that overlapped rather than replacing each other in neat stages. On the <span class="kt">hacienda</span>, a large estate, Indigenous and mixed-race workers farmed and herded for the owner, often for wages and sometimes tied to the estate by debt; historians argue about how many were bound that way. In the English colonies of the 1600s, most European newcomers to the Chesapeake came as <span class="kt">indentured servants</span>, working four to seven years under contract to pay for their voyage. And on the sugar and tobacco plantations, enslaved Africans were held in <span class="kt">chattel slavery</span>: owned as property, for life, with their children born enslaved.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -234,7 +234,7 @@ module.exports = {
         }
       ],
       useThis: {
-        tool: `Old systems reused, new ones invented. <em>The continuity is the mit’a, an Inca labor duty that kept its name under a new master; the change is encomienda, hacienda labor, indentured servitude and chattel slavery, new ways of forcing or binding people to work on colonial farms and in mines.</em>`,
+        tool: `Old systems reused, new ones invented. <em>For each labor system, ask three questions: who was made to work, for whom, and for how long. The answers show which systems carried an older idea forward and which were new.</em>`,
         limit: `The systems overlapped in time and place, varied by region, and depended on Indigenous populations that disease and war were shrinking, which is part of why the plantations turned to enslaved Africans.`,
         comparison: `Against <em>the encomienda</em>: the mit’a drafted men for limited turns of service to the state, while encomienda gave one colonist a standing claim on a community's labor and tribute.`
       },
@@ -267,7 +267,7 @@ module.exports = {
         {
           heading: 'What the plantations changed',
           blocks: [
-            { p: `Sugar, and later tobacco, needed huge numbers of workers, and the plantations of Brazil and the Caribbean bought enslaved Africans to do the work. The estimates in the Trans-Atlantic Slave Trade Database show the change in one comparison: about 278,000 Africans were forced onto ships bound for the Americas in the whole 1500s, and about 2.5 million in the fifty years from <span class="num">1701</span> to <span class="num">1750</span>.` },
+            { p: `Sugar, and later tobacco, needed huge numbers of workers, and the plantations of Brazil and the Caribbean bought enslaved Africans to do the work. The estimates in the Trans-Atlantic Slave Trade Database show the change in one comparison: about 278,000 Africans were forced onto ships bound for the Americas in the whole 1500s, and more than 2.5 million in the fifty years from <span class="num">1701</span> to <span class="num">1750</span>.` },
             { p: `The CED names three kinds of change. <b>Demographic:</b> on Barbados enslaved Africans outnumbered Europeans by the late 1600s, and across the Caribbean colonies Africans and their descendants became most of the people. <b>Social:</b> plantation slavery was for life and inherited, and colonial law tied it to race; Virginia's law of <span class="num">1662</span> made the children of enslaved women enslaved. <b>Cultural:</b> African languages, beliefs and foods crossed with the people who carried them, and how they mixed with American and European cultures is Topic 4.5.` },
             { note: {
               kind: 'misconception',
@@ -278,7 +278,7 @@ module.exports = {
         }
       ],
       useThis: {
-        tool: `Same word, different institution. <em>The continuity is slavery in Africa in its older forms, in households and through the Sahara and the Indian Ocean; the change is the plantation economy, which multiplied the Atlantic trade about ninefold between the 1500s and 1701 to 1750 and made slavery in the Americas lifelong, inherited and tied to race.</em>`,
+        tool: `Same word, different institution. <em>The continuity is slavery in Africa in its older forms, in households and through the Sahara and the Indian Ocean; the change is the plantation economy, which made the Atlantic trade carry about nine times as many people in the fifty years from 1701 to 1750 as in the whole 1500s, and made slavery in the Americas lifelong, inherited and tied to race.</em>`,
         limit: `The household and plantation pictures are general patterns; slavery varied across Africa's many societies, and some enslaved people in African households were treated harshly or sold on.`,
         comparison: `Against <em>the mit’a</em> in section 04: both were forced labor, but the mit’a drafted men for turns of service and sent them home, while plantation slavery held people, and their children, for life.`
       },
@@ -299,12 +299,12 @@ module.exports = {
       {
         category: 'State building',
         title: 'Europe held coasts; Asia held the terms',
-        body: `Driven by political, religious and economic rivalry, Portugal built forts at Elmina, Goa, Malacca and Hormuz, and the Dutch took several of them in turn: a real change in who held power on the coasts of Africa and Asia. But the strongest Asian states set the terms. Ming officials let the Portuguese settle at Macau from 1557 and kept authority over the port, and Tokugawa Japan, after orders of 1635 and 1639 aimed above all at Christianity, allowed only the Dutch to trade, on Dejima, from 1641. The change was on the coasts; the continuity was Asian state power.`
+        body: `Portugal built forts at Elmina, Goa, Malacca and Hormuz, and the Dutch took several of them in turn: a real change in who held power on the coasts of Africa and Asia. But the strongest Asian states set the terms. Ming officials let the Portuguese settle at Macau from 1557 and kept authority over the port, and Tokugawa Japan, after orders of 1635 and 1639 aimed above all at Christianity, allowed only the Dutch to trade, on Dejima, from 1641. The change was on the coasts; the continuity was Asian state power.`
       },
       {
         category: 'State building',
         title: 'African kings grew stronger through the trade',
-        body: `Kongo under Afonso I and Asante around 1700 both grew stronger through maritime trade, because weapons, allies and imported goods came through their rulers. Afonso's 1526 letter shows a king defending that control: he protested the kidnapping of free-born Kongo subjects by traders he did not command, while selling foreign war captives himself. Asante bought guns on the Gold Coast and defeated Denkyira at Feyiase in 1701. Both states grew by joining the trade, and both sold captives into it.`
+        body: `Kongo under Afonso I and Asante around 1700 both grew stronger through maritime trade, because weapons, allies and imported goods came through their rulers. Afonso's 1526 letter shows a king defending that control: he protested that thieves were seizing free-born Kongo subjects and selling them to traders he did not command, while selling foreign war captives himself. Asante bought guns on the Gold Coast and defeated Denkyira at Feyiase in 1701. Both states grew by joining the trade, and both sold captives into it.`
       },
       {
         category: 'Economic systems',
@@ -319,7 +319,7 @@ module.exports = {
       {
         category: 'Slavery',
         title: 'Same word, different institution',
-        body: `Slavery in Africa continued in its older forms: enslaved people taken into households, whose children could become part of the family, and captives sent across the Sahara and the Indian Ocean. The plantation economy changed slavery in the Americas: about 278,000 Africans were shipped west in the 1500s and about 2.5 million in 1701 to 1750, held for life, their children born enslaved, and bound by laws that tied slavery to race. The continuity is the institution's existence; the change is its scale and its kind.`
+        body: `Slavery in Africa continued in its older forms: enslaved people taken into households, whose children could become part of the family, and captives sent across the Sahara and the Indian Ocean. The plantation economy changed slavery in the Americas: about 278,000 Africans were shipped west in the 1500s and more than 2.5 million in 1701 to 1750, held for life, their children born enslaved, and bound by laws that tied slavery to race. The continuity is the institution's existence; the change is its scale and its kind.`
       }
     ]
   }

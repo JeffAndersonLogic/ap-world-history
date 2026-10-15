@@ -915,7 +915,7 @@ module.exports = [
       { zone: [-1.5, 7, 6, 3.5], label: 'GOLD COAST', tone: 'sand', legend: 'Gold Coast: Elmina fort (1482); Asante rises c. 1700' },
       { zone: [15, -6, 5, 4], label: 'KONGO', tone: 'sage', legend: 'Kingdom of Kongo: Christian kings, trade with Portugal' },
       { zone: 'swahiliCoast', label: 'SWAHILI COAST', tone: 'bronze', legend: 'Swahili coast: Swahili Arab and Omani traders' },
-      { zone: 'japan', label: 'JAPAN', tone: 'plum', legend: 'Tokugawa Japan: only the Dutch, on Dejima, from 1641' },
+      { zone: 'japan', label: 'JAPAN', tone: 'plum', legend: 'Japan: of Europeans, only the Dutch, on Dejima' },
       { zone: 'caribbean', label: 'CARIBBEAN', tone: 'gold', legend: 'Caribbean: sugar plantations worked by enslaved Africans' }
     ],
     flows: [

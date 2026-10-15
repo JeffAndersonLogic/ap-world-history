@@ -65,7 +65,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Governance"
     },
     {
-      criteria: "I can explain one way China or Japan set the terms of trade with Europeans, and one change and one continuity in Indian Ocean trade using a merchant group such as Gujaratis, Swahili Arabs, Omanis, or Javanese.",
+      criteria: "I can explain one continuity in who set the terms of trade: how China or Japan kept control of trade with Europeans, or how a merchant group such as Gujaratis, Swahili Arabs, Omanis, or Javanese kept Indian Ocean trade going.",
       kc: 'KC-4.3.II.A.i; KC-4.3.II.A.iii',
       theme: "Economic Systems"
     },
@@ -172,7 +172,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Nagasaki harbor and Dejima, about 1740",
-          caption: "A German engraving by J. C. Tetschner, 1735 to 1744. Its legend marks the Dutch island (Dejima), a Dutch company ship, Japanese ships and Chinese junks.",
+          caption: "A German engraving by Johann Wolfgang Heydt, published in 1744, made in Europe rather than drawn in Nagasaki. Its legend marks the Dutch island (Dejima), a Dutch company ship, Japanese ships and Chinese junks.",
           url: "../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:AMH-7112-KB_View_of_Nagasaki.jpg"
         }
@@ -181,7 +181,7 @@ window.BEHISTORICAL_LESSON = {
         title: "Kongo and Asante: Strength from the Trade",
         bullets: [
           "In Kongo, Afonso I used the Portuguese connection to make the king stronger. Portuguese allies fought beside his armies, and the captives taken in his wars were sold to Portuguese traders. Christianity, taught by priests he asked for, became the royal religion, and he sent young Kongo nobles to study in Portugal.",
-          "Afonso also tried to keep the trade in the king's hands. When Portuguese traders began dealing directly with his nobles and kidnapping free Kongo people, he complained to the king of Portugal, because trade he did not control weakened his power over his own nobles.",
+          "Afonso also tried to keep the trade in the king's hands. When Portuguese traders began dealing directly with his nobles, and thieves seized free Kongo people and sold them to Portuguese traders, he complained to the king of Portugal, because trade he did not control weakened his power over his own nobles.",
           "On the Gold Coast, **Asante** rose around 1700 by joining several Akan states under one ruler, controlling gold, and buying guns from Dutch and English traders on the coast, paying in part with captives. Its victory over Denkyira at Feyiase in 1701 made it the main power of the region."
         ],
         image: {
@@ -194,12 +194,12 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Telling Old from New in Labor and Slavery",
         bullets: [
-          "Compare labor systems by asking the same four questions of each: who did the work, for how long, whether they were free to leave, and who took what they produced. The **mit’a** answers like an Inca labor duty with a new master. **Encomienda**, **hacienda** labor and **indentured servitude** each answer differently: a colonist's grant of Indigenous labor, wage and debt work on an estate, and a few years' contract. **Chattel slavery** answers: enslaved Africans, for life, never free to leave, and their owners took everything.",
+          "Compare labor systems by asking the same four questions of each: who did the work, for how long, whether they were free to leave, and who took what they produced. The **mit’a** was an old Inca work duty, now run by Spain. **Encomienda**, **hacienda** labor and **indentured servitude** each answer differently: a colonist's grant of Indigenous labor, wage and debt work on an estate, and a few years' contract. **Chattel slavery** answers: enslaved Africans, for life, never free to leave, and their owners took everything.",
           "Indigenous people did not simply accept the new systems. In central Mexico in the 1550s, the people of Tepetlaoztoc had painters record what their encomenderos demanded of them and how they were treated, and sent it to the Spanish crown as a complaint.",
-          "The older forms of slavery in Africa and plantation slavery differed in more than size. In many African societies, the children of enslaved people could become part of the family over time. In the plantation colonies, laws made slavery last for life and pass to children, and tied it to race."
+          "The older forms of slavery in Africa and plantation slavery differed in more than size. In many African societies, the children of enslaved people could become part of the family over time. In the plantation colonies, laws made slavery last for life and pass to children, and in the English colonies, laws tied it to race."
         ],
         image: {
-          title: "A complaint against an encomendero",
+          title: "A town's complaint against its encomenderos",
           caption: "Codex Kingsborough, painted by Nahua artists about the 1550s for a complaint to the Spanish crown. British Museum.",
           url: "../assets/images/topics/4-4/codex-kingsborough-1550s.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Kingsborough.jpg"
@@ -213,7 +213,7 @@ window.BEHISTORICAL_LESSON = {
     url: "../assets/images/instructional-maps/topic-4-4.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-4-4.svg",
     caption: "European forts on the coasts of Africa and Asia, colonies and plantations in the Americas, and places that kept their own rules: Japan, Macau under Ming officials, Kongo, and the Swahili coast.",
-    intro: "Use the map to see the pattern of the topic. In Africa and Asia, every European place sits on a coast. In the Americas, Europeans held colonies and plantations. And several places on the map set their own terms for Europeans, or pushed them back.",
+    intro: "Use the map to see the pattern of the topic. In Africa and Asia, most European places were forts on a coast. In the Americas, Europeans held colonies and plantations. And several places on the map set their own terms for Europeans, or pushed them back.",
     prompt: "Find ONE European fort or trading post on the map and ONE place that kept its own rules. Using the map and its key, explain why Europeans held coasts in Africa and Asia but colonies in the Americas, and name one way the place you chose kept its own rules."
   },
 

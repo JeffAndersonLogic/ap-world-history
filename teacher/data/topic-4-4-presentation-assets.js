@@ -10,8 +10,8 @@
  *   Barbarians, right screen, about 1600, Kobe City Museum (public domain)
  * - elmina-dapper-c1668.jpg: View of the fort of El Mina, in Olfert Dapper's
  *   description of Africa, about 1668, Atlas of Mutual Heritage (public domain)
- * - nagasaki-dejima-1735-44.jpg: View of Nagasaki, J. C. Tetschner, 1735 to
- *   1744, Atlas of Mutual Heritage (public domain)
+ * - nagasaki-dejima-1735-44.jpg: View of Nagasaki, Johann Wolfgang Heydt, 1744 (dated 1735 to
+ *   1744 by the Atlas of Mutual Heritage), public domain
  * - kongo-crucifix-met.jpg: Crucifix, Kongo peoples, 17th to 18th century,
  *   Metropolitan Museum of Art 1999.295.5 (CC0)
  * - potosi-cieza-1553.jpg: Cerro de Potosí, woodcut in Cieza de León, Crónica
@@ -40,7 +40,7 @@ if(!T||!Array.isArray(T.slides))return;
 const by=id=>T.slides.find(s=>s.phase===id);
 const IMG='../assets/images/topics/4-4/';
 const NANBAN={url:IMG+'nanban-screen-kano-naizen-c1600.jpg',alt:'Japanese folding screen painted in gold and color: a large Portuguese ship at anchor on the left, and Portuguese merchants, officers and servants in wide trousers walking up the shore toward Jesuit priests in black and a Japanese house',credit:'Kano Naizen, Arrival of the Southern Barbarians, about 1600 · Kobe City Museum · Public domain',position:'40% 50%'};
-const DEJIMA={url:IMG+'dejima-kawahara-keiga-c1836.jpg',alt:'Japanese folding screen of Nagasaki harbor between green hills, with the small fan-shaped island of Dejima and its Dutch buildings in the foreground and ships at anchor in the bay',credit:'Kawahara Keiga, View of Dejima in Nagasaki Bay, about 1836 · Museum Volkenkunde · Photo René Gerritsen, CC BY-SA 4.0',position:'50% 0%',fit:'contain'};
+const DEJIMA={url:IMG+'dejima-kawahara-keiga-c1836.jpg',alt:'Japanese folding screen of Nagasaki harbor between green hills, with the small fan-shaped island of Dejima and its Dutch buildings in the foreground and ships at anchor in the bay',credit:'Kawahara Keiga, View of Dejima in Nagasaki Bay, painted about 1836, after this period · Museum Volkenkunde · Photo René Gerritsen, CC BY-SA 4.0',position:'50% 0%',fit:'contain'};
 const setTemplate=(phase,add)=>{const s=by(phase);if(s)s.template=Object.assign({},s.template||{},add);return s;};
 setTemplate('question',{visual:NANBAN});
 setTemplate('close',{visual:DEJIMA});

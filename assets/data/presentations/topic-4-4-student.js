@@ -32,7 +32,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-subtitle",
       "eyebrow": "The Question",
       "title": "Europeans built empires from the sea. What changed, and what kept going?",
-      "subtitle": "A Japanese painter shows Portuguese traders arriving in Japan, about 1600, as people on the shore saw them.",
+      "subtitle": "Portuguese traders arriving in Japan, about 1600, as a Japanese painter imagined them for Japanese buyers.",
       "template": {
         "visual": {
           "url": "../assets/images/topics/4-4/nanban-screen-kano-naizen-c1600.jpg",
@@ -100,7 +100,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "url": "../assets/images/instructional-maps/topic-4-4.svg",
         "alt": "World map marking the Gold Coast and Elmina, Kongo, the Swahili coast and Mombasa, Goa, Malacca, Macau, Japan, the Caribbean and Potosí, with arrows for forts on the coast, enslaved Africans carried west and to Brazil, and intra-Asian trade"
       },
-      "footer": "In Africa and Asia, Europeans held coasts. In the Americas, they took territory.",
+      "footer": "In Africa and Asia, Europeans mostly held coasts. In the Americas, they took territory.",
       "kc": "Unit 4: Learning Objective E"
     },
     {
@@ -125,7 +125,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Then",
-            "text": "Goa **1510**, Malacca **1511**, Hormuz **1515**: forts on coasts, not provinces"
+            "text": "Goa **1510**, Malacca **1511**, Hormuz **1515**: forts on coasts, not whole countries"
           },
           {
             "label": "Paid",
@@ -147,8 +147,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "visual": {
           "url": "../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg",
-          "alt": "Engraving of Nagasaki harbor below green hills, with the small fan-shaped island of Dejima near the shore, a Dutch company ship, Japanese boats and Chinese junks",
-          "credit": "Nagasaki harbor and Dejima, engraving by J. C. Tetschner, 1735 to 1744 · Public domain",
+          "alt": "Engraving of Nagasaki harbor below green hills, with the walled Dutch compound on Dejima at the shore, flying a flag, a Dutch company ship, Japanese boats and Chinese junks",
+          "credit": "Nagasaki harbor and Dejima, engraving by Johann Wolfgang Heydt, published 1744 · Public domain",
           "position": "50% 88%"
         },
         "caption": "Nagasaki, about 1740: the Dutch island, Dutch and Japanese ships, Chinese junks",
@@ -265,7 +265,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "footer": "Afonso sold war captives from outside Kongo himself. Read his letter with that in mind.",
       "kc": "KC-4.3.II.A.ii",
       "template": {
-        "quote": "These traders carry away our native-born countrymen and the children of our nobles and vassals as well as relatives of ours. ... Please instruct your trading agents to send neither traders nor trading goods here.",
+        "quote": "[T]hese traders carry away our native-born countrymen and the children of our nobles and vassals as well as relatives of ours. ... Please instruct your trading agents to send neither traders nor trading goods here.",
         "attribution": {
           "author": "Afonso I, king of Kongo",
           "work": "Letter to King João III of Portugal",
@@ -286,19 +286,19 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "name": "Mit’a",
             "mark": "O",
             "tool": "Old: an Inca labor duty",
-            "result": "reused to send Andean men to the mine at Potosí."
+            "result": "sent Andean men to Potosí's mine."
           },
           {
             "name": "Encomienda",
             "mark": "N",
             "tool": "New: a grant to a colonist",
-            "result": "the labor and tribute of Indigenous people."
+            "result": "Indigenous labor and tribute."
           },
           {
             "name": "Hacienda",
             "mark": "N",
             "tool": "New: a great estate",
-            "result": "workers for wages, sometimes tied by debt."
+            "result": "wages, sometimes debt."
           },
           {
             "name": "Indentured servitude",
@@ -342,7 +342,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
               "fit": "contain"
             },
             "tag": "Painted by Nahua artists, 1550s",
-            "text": "A complaint against an encomendero, made to be sent to Spain."
+            "text": "A town's complaint against its encomenderos, made to be sent to Spain."
           }
         ],
         "question": "Which page was made by the people who did the work? **What can each one tell you that the other cannot?**"
@@ -390,7 +390,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "credit": "Fishing canoes at Elmina, and canoes carrying enslaved people to ships at Manfroe, engraving, 1732 · Public domain",
           "position": "50% 80%"
         },
-        "number": "2.5",
+        "number": "2.5+",
         "unit": "million",
         "range": "1701 to 1750",
         "text": "Africans forced onto ships bound for the Americas, by historians' estimates. In the whole 1500s: fewer than 300,000."
@@ -473,7 +473,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "label": "Who ruled",
             "cells": [
               "Rival European empires built forts on coasts and colonies in the Americas; Kongo and Asante grew stronger",
-              "China and Japan set the terms; Europeans held coasts, not Asia"
+              "China and Japan set the terms; Europeans mostly held coasts, not Asia"
             ]
           },
           {
@@ -505,14 +505,14 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kc": "Unit 4: Learning Objective G",
       "template": {
         "weak": "After 1500, slavery got worse.",
-        "strong": "Slavery in Africa **continued** in older forms, in **households** and in captives sent across the **Sahara**, while the **sugar plantations** of the Americas **changed** it: in **1701 to 1750** alone about **2.5 million** Africans were shipped west, to be held for life, and their children after them."
+        "strong": "Slavery in Africa **continued** in older forms, in **households** and in captives sent across the **Sahara**, while the **sugar plantations** of the Americas **changed** it: in **1701 to 1750** alone more than **2.5 million** Africans were shipped west, to be held for life, and their children after them."
       }
     },
     {
       "kind": "action",
       "eyebrow": "Module 05 · Skill Builder",
       "title": "Who wrote it, for whom, and why?",
-      "subtitle": "Name a source's author, audience, purpose and situation, and say how they change what it means.",
+      "subtitle": "Name a source's audience, purpose and situation, and say how they change what it means.",
       "action": {
         "label": "Open Student Lesson",
         "url": "lesson-4-4-maritime-empires-established.html#modules"
@@ -557,7 +557,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "visual": {
           "url": "../assets/images/topics/4-4/dejima-kawahara-keiga-c1836.jpg",
           "alt": "Japanese folding screen of Nagasaki harbor between green hills, with the small fan-shaped island of Dejima and its Dutch buildings in the foreground and ships at anchor in the bay",
-          "credit": "Kawahara Keiga, View of Dejima in Nagasaki Bay, about 1836 · Museum Volkenkunde · Photo René Gerritsen, CC BY-SA 4.0",
+          "credit": "Kawahara Keiga, View of Dejima in Nagasaki Bay, painted about 1836, after this period · Museum Volkenkunde · Photo René Gerritsen, CC BY-SA 4.0",
           "position": "50% 0%",
           "fit": "contain"
         }

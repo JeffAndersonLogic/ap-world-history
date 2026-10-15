@@ -6,10 +6,9 @@ Jeff started this build with "build 4.4" on 2026-10-14 (he asked for 4.5, and ch
 CED source file and the scholarship; the record of what they found is in
 `docs/TOPIC-4-4-CLAIM-LEDGER.md`, under "Review findings".
 
-**Resume here (2026-10-15):** Phases 1 to 8 are committed. The first session stopped on a usage
-limit while review pass 1 was running; a second session merged `main` (`401b5bd3`, the finished
-4.3) and relaunched pass 1 with two fresh reviewers. Next: judge and fix their findings, log them in
-the claim ledger, then passes 2 and 3, the Unit 4 fingerprint, the browser suite and the topic audit.
+**Resume here (2026-10-15):** Phases 1 to 8 are committed, and review pass 1 (37 findings) is
+fixed and logged in the claim ledger. Next: review passes 2 and 3 with fresh reviewers, then the
+Unit 4 fingerprint, the browser suite and the topic audit.
 
 **Taught:** Green Thursday 2026-11-05, Silver Friday 2026-11-06, from Jeff's corrected November
 Canvas calendar (2026-10-14), already in `assets/data/announcements-schedule.js` as date-only
@@ -207,8 +206,8 @@ traders were carrying away "our native-born countrymen and the children of our n
 as well as relatives of ours," and asked him to send "neither traders nor trading goods." Read
 alone, that sounds like a king against slavery. Read with its author and audience in mind, it
 says something more precise. Afonso himself sold war captives from outside Kongo to the
-Portuguese, and Kongo had its own enslaved people. What he wanted stopped was the kidnapping of
-his own free-born subjects by traders he did not control, which was taking trade, and loyalty, out
+Portuguese, and Kongo had its own enslaved people. What he wanted stopped was thieves seizing
+his own free-born subjects and selling them to traders he did not control, which was taking trade, and loyalty, out
 of the king's hands. His audience was the one king who could order the Portuguese traders to obey
 him. That is sourcing: who wrote it, to whom, and why changes what it means.
 
@@ -231,8 +230,8 @@ went north across the Sahara to the Mediterranean world, and east to Arabia, Per
 across the Indian Ocean. Those older forms went on through this whole period. What changed was
 the plantations. Sugar, and later tobacco, needed huge numbers of workers. In the whole 1500s,
 fewer than 300,000 Africans were forced onto ships to the Americas. In the fifty years from 1701 to
-1750, about 2.5 million were. Slavery in the Americas was bigger than anything before it, it was
-inherited and for life, and it came to be tied to race: laws in the English colonies made the
+1750, more than 2.5 million were. The Atlantic trade carried more people across an ocean than any
+slave trade before it, and slavery in the Americas was inherited and for life, and it came to be tied to race: laws in the English colonies made the
 children of enslaved women enslaved too. Africans and their descendants became most of the people
 in the Caribbean colonies and much of Brazil, and their languages, faiths and foods came with
 them. That is the "significant demographic, social, and cultural changes" the CED names.
@@ -274,7 +273,7 @@ Shorter for the wall: **Empires from the sea. A world with its own rules.**
 | The mit’a, reorganized by Toledo in the 1570s for Potosí | KC-4.2.II.D ("utilized existing labor systems") | An old system reused. **Continuity with change.** |
 | Encomienda, hacienda, indentured servitude, chattel slavery | KC-4.2.II.D ("introduced new labor systems") | New systems. **Change.** |
 | Enslaved people incorporated into households; export across the Sahara and the Indian Ocean | KC-4.2.II.B | Slavery in Africa continued in its older forms. **Continuity.** |
-| Fewer than 300,000 Africans carried to the Americas in the 1500s, about 2.5 million in 1701 to 1750 (Slave Voyages estimates) | KC-4.2.II.C ("increased the demand") | The scale of the change, as estimates. |
+| Fewer than 300,000 Africans carried to the Americas in the 1500s, more than 2.5 million in 1701 to 1750 (Slave Voyages estimates) | KC-4.2.II.C ("increased the demand") | The scale of the change, as estimates. |
 | Hereditary, race-based chattel slavery; African majorities in Caribbean colonies; African languages, faiths and foods | KC-4.2.II.C ("demographic, social, and cultural changes") | The three kinds of change the CED names. Cultural mixing itself is **bridge only** (4.5). |
 
 Named examples are evidence inside a claim. None earns its own slide unless the story needs it.
@@ -371,7 +370,7 @@ The claims that shaped the story, and how:
 | Oman takes Muscat 1650 and Fort Jesus, Mombasa, 1698 | Ledger. |
 | Asante defeats Denkyira at Feyiase, 1701; guns from Dutch and English traders | Ledger: the battle's date rests on Dutch archives; Osei Tutu's reign dates disagree, so none is given. |
 | Toledo's mit’a for Potosí, 1570s, thousands of men a year | Ledger: one-seventh of adult men in the draft districts each year; counts run from about 9,000 (1573) to more than 14,000 (1578). Stated as "thousands." |
-| Fewer than 300,000 embarked in the 1500s; about 2.5 million in 1701 to 1750 | Ledger: Slave Voyages estimates, 277,505 for 1501 to 1600 and 2,560,634 for 1701 to 1750. |
+| Fewer than 300,000 embarked in the 1500s; more than 2.5 million in 1701 to 1750 | Ledger: Slave Voyages estimates, 277,505 for 1501 to 1600 and 2,560,634 for 1701 to 1750. |
 | Indentured servants served four to seven years | Ledger. |
 | Children of enslaved women were enslaved by law in the English colonies | Ledger: Virginia, 1662. |
 
@@ -416,5 +415,3 @@ final report.
    eBook chapter), keeping its strongest existing material on the cartaz and the Estado da Índia.
 8. **Required modules** (Phase 8): 02 First & 10, 05 Skill Builder, 07 Evidence Lab, 10
    Checkpoint 2.
-</content>
-</invoke>
