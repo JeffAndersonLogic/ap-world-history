@@ -30,7 +30,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-subtitle",
-      "eyebrow": "The Question",
+      "eyebrow": "",
       "title": "Europeans built empires from the sea. What changed, and what kept going?",
       "subtitle": "Portuguese traders arriving in Japan, about 1600, as a Japanese painter imagined them for Japanese buyers.",
       "template": {
@@ -95,7 +95,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "map",
       "eyebrow": "Where the Empires Reached",
-      "title": "Forts on coasts, colonies in the Americas, and places with their own rules.",
+      "title": "Forts, colonies, and their own rules.",
       "visual": {
         "url": "../assets/images/instructional-maps/topic-4-4.svg",
         "alt": "World map marking the Gold Coast and Elmina, Kongo, the Swahili coast and Mombasa, Goa, Malacca, Macau, Japan, the Caribbean and Potosí, with arrows for forts on the coast, enslaved Africans carried west and to Brazil, and intra-Asian trade"
@@ -115,7 +115,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "visual": {
           "url": "../assets/images/topics/4-4/elmina-dapper-c1668.jpg",
           "alt": "Engraving of a large fort on a low rocky point above the sea, a smaller fort on the hill behind it, and sailing ships firing a salute in the foreground",
-          "credit": "Elmina, Dapper, 1668 · Public domain",
+          "credit": "Elmina, Dapper, Amsterdam, 1668 · Public domain",
           "position": "50% 60%"
         },
         "rows": [
@@ -148,7 +148,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "visual": {
           "url": "../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg",
           "alt": "Engraving of Nagasaki harbor below green hills, with the walled Dutch compound on Dejima at the shore, flying a flag, a Dutch company ship, Japanese boats and Chinese junks",
-          "credit": "Nagasaki harbor and Dejima, engraving by Johann Wolfgang Heydt, published 1744 · Public domain",
+          "credit": "Nagasaki harbor and Dejima, engraving by Johann Wolfgang Heydt, published in Germany, 1744 · Public domain",
           "position": "50% 88%"
         },
         "caption": "Nagasaki, about 1740: the Dutch island, Dutch and Japanese ships, Chinese junks",
@@ -179,10 +179,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Orders to the officials at Nagasaki, 1635.",
       "kc": "KC-4.3.II.A.i",
       "template": {
-        "quote": "It is strictly prohibited for Japanese ships to leave for foreign countries. ... If any Japanese returns home after residing abroad, he must be put to death.",
+        "quote": "Japanese ships are strictly forbidden to leave for foreign countries. ... If any Japanese returns from overseas after residing there, he must be put to death.",
         "attribution": {
           "author": "Senior councilors of the shogun",
-          "work": "Memorandum to the Nagasaki magistrates",
+          "work": "Edict to the magistrates of Nagasaki",
           "year": "1635"
         },
         "pov": "The shogun's top officials, who held the government's power.",
@@ -231,14 +231,14 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "visual": {
           "url": "../assets/images/topics/4-4/kongo-crucifix-met.jpg",
-          "alt": "Brass crucifix from the Kingdom of Kongo, with a figure of Christ on the cross and small kneeling figures on the arms and below",
+          "alt": "Brass crucifix from the Kingdom of Kongo, with a figure of Christ on the cross, two small kneeling figures on top of its arms, one figure above Christ and two below his feet",
           "credit": "Crucifix, Kongo peoples, 17th to 18th century · The Metropolitan Museum of Art · Public domain (CC0)",
           "fit": "contain"
         },
         "caption": "Kongo brass crucifix, 1600s to 1700s",
         "steps": [
           {
-            "label": "Kongo, 1483",
+            "label": "Kongo, 1480s",
             "text": "Portuguese ships reach the mouth of the Congo River."
           },
           {
@@ -253,7 +253,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "Asante, 1701",
             "key": true,
-            "text": "Armed with guns bought on the coast, Asante defeats Denkyira at Feyiase."
+            "text": "Asante defeats Denkyira at Feyiase and becomes the main power of the region."
           }
         ]
       }
@@ -382,12 +382,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-number",
       "eyebrow": "Slavery: Change",
       "title": "",
-      "kc": "KC-4.2.II.C",
+      "kc": "Unit 4: Learning Objective G",
       "template": {
         "visual": {
           "url": "../assets/images/topics/4-4/canoes-elmina-manfroe-1732.jpg",
           "alt": "Two engraved views of the Gold Coast: fishing canoes off Elmina, and canoes carrying enslaved people out to European ships at anchor",
-          "credit": "Fishing canoes at Elmina, and canoes carrying enslaved people to ships at Manfroe, engraving, 1732 · Public domain",
+          "credit": "Fishing canoes at Elmina, and canoes carrying enslaved people to ships at Manfroe, engraving printed in London, 1732 · Public domain",
           "position": "50% 80%"
         },
         "number": "2.5+",
@@ -405,7 +405,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "visual": {
           "url": "../assets/images/topics/4-4/sugar-works-du-tertre-1667.jpg",
           "alt": "Engraving of a Caribbean sugar works: an animal-driven mill under a roof, a boiling house with kettles, a drying shed, palms and workers carrying cane",
-          "credit": "Sugar works in the French Antilles, engraved by Sébastien Leclerc for Jean-Baptiste Du Tertre, 1667 · Public domain",
+          "credit": "Sugar works in the French Antilles, engraved by Sébastien Leclerc for Jean-Baptiste Du Tertre, Paris, 1667 · Public domain",
           "position": "45% 50%"
         },
         "caption": "A sugar works in the French Caribbean, 1667",
@@ -501,18 +501,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "sharpen",
       "eyebrow": "Sharpen the Claim",
       "title": "",
-      "footer": "A change and a continuity, each with a named example and the reason it happened.",
-      "kc": "Unit 4: Learning Objective G",
+      "footer": "A change and a continuity, each with a named example and the reason.",
+      "kc": "KC-4.3.II.A.iii",
       "template": {
-        "weak": "After 1500, slavery got worse.",
-        "strong": "Slavery in Africa **continued** in older forms, in **households** and in captives sent across the **Sahara**, while the **sugar plantations** of the Americas **changed** it: in **1701 to 1750** alone more than **2.5 million** Africans were shipped west, to be held for life, and their children after them."
+        "weak": "The Portuguese changed Indian Ocean trade.",
+        "strong": "The Portuguese **changed** Indian Ocean trade with forts at **Goa**, **Malacca** and **Hormuz** and a pass ships had to buy, the **cartaz**, but **Gujarati**, **Swahili Arab** and **Javanese** merchants **kept** trading, often buying a pass and sailing on, because a few forts could tax the ocean's trade but not replace its merchants."
       }
     },
     {
       "kind": "action",
       "eyebrow": "Module 05 · Skill Builder",
       "title": "Who wrote it, for whom, and why?",
-      "subtitle": "Name a source's audience, purpose and situation, and say how they change what it means.",
+      "subtitle": "Name a source's point of view, purpose and situation, and say how they change what it means.",
       "action": {
         "label": "Open Student Lesson",
         "url": "lesson-4-4-maritime-empires-established.html#modules"
@@ -550,7 +550,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-subtitle",
-      "eyebrow": "Topic 4.4 · Landing Sentence",
+      "eyebrow": "",
       "title": "Europeans built empires from the sea, but much of the world kept its own rules.",
       "subtitle": "Next: the empires exist. How did rulers make them pay, and what did the money do to the people inside them?",
       "template": {

@@ -124,14 +124,14 @@
     title: 'Sourcing: Who Wrote It, for Whom, and Why?',
     intro: 'Sourcing and Situation means asking four questions about a source before you use it: who wrote it (their point of view), who it was written for (the audience), why it was written (the purpose), and what was happening at the time (the situation). The answers change what a source can tell you. Practice first with orders that Japan\'s government sent to its officials at Nagasaki in 1635.',
     steps: [
-      { label: 'Read the source', text: '<blockquote>"1. It is strictly prohibited for Japanese ships to leave for foreign countries. ... 3. If any Japanese returns home after residing abroad, he must be put to death. 4. If there is any place where the teachings of the padres (Christianity) is practiced, the two of you must order a thorough investigation. ... 8. All incoming ships must be carefully searched for the followers of padres."</blockquote><small>Memorandum addressed to the Nagasaki magistrates, 1635, articles 1, 3, 4 and 8 of 17, translated in Constantine Vaporis, <em>Voices of Early Modern Japan</em> (2012). Padres were Catholic priests.</small>' },
+      { label: 'Read the source', text: '<blockquote>"1. Japanese ships are strictly forbidden to leave for foreign countries. ... 3. If any Japanese returns from overseas after residing there, he must be put to death. 4. If there is any place where the teachings of padres (Christianity) is practiced, the two of you must order a thorough investigation. ... 8. All incoming ships must be carefully searched for the followers of padres."</blockquote><small>Edict of 1635, addressed to the two magistrates (bugyō) of Nagasaki, articles 1, 3, 4 and 8, translated in David J. Lu, <em>Japan: A Documentary History</em> (1997). Padres were Catholic priests.</small>' },
       { label: 'Point of view', text: 'Written by the senior councilors of the shogun, the top officials of Japan\'s government. They saw foreign trade and Christianity as matters the government had to control.' },
       { label: 'Audience and purpose', text: 'The audience was "the two of you," the government\'s two officials at Nagasaki, the port where foreign ships traded. The purpose was to tell them what to enforce: keep Japanese at home, keep Christianity out, and search every ship.' },
       { label: 'Situation', text: 'Portuguese and Spanish missionaries had made many Christian converts in Japan, and the shogunate saw them as a danger to its power. Knowing that, the orders read as a government protecting its control.' }
     ],
-    prompt: 'Now do it yourself with a different source. In 1639, the shogun\'s senior councilors issued this order (translated in Vaporis, 2012): "The proscription [ban] of Christianity is known [to the Portuguese], but heretofore they have secretly transported those who are going to propagate that religion. ... In view of the above, hereafter entry by the Portuguese galeota [ship] is forbidden." In 2 to 3 sentences, identify the order\'s audience and its purpose, and explain how its situation helps explain why Japan limited trade with the Portuguese but not with everyone.',
+    prompt: 'Now do it yourself with a different source. In 1639, the shogun\'s senior councilors, the same top officials who wrote the 1635 orders, issued this order (translated in Lu, 1997; words in brackets are explanations): "The matter relating to the proscription [ban] of Christianity is known [to the Portuguese]. However, heretofore [until now] they have secretly transported those who are going to propagate [spread] that religion. ... entry by the Portuguese galeota [ship] is forbidden." In 2 to 3 sentences, identify the order\'s point of view and its purpose, and explain how its situation helps explain why Japan limited trade with the Portuguese but not with everyone.',
     criteria: [
-      'I named the audience: who the order was written for.',
+      'I named the point of view: who issued the order, and how they saw Christianity.',
       'I stated the purpose in my own words, using words from the source.',
       'I explained how the situation (missionaries and Christian converts) shaped the order.'
     ]
@@ -144,10 +144,10 @@
       cardDesc: 'Why rival European states built maritime empires, and where Asian and African states and merchants kept their own power.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
-      prompt: 'Explain ONE reason European states built maritime empires (a political, religious, or economic rivalry). Then explain ONE change in who held power, using a European trading post or Kongo or Asante. Then explain ONE continuity: how Ming China or Tokugawa Japan kept control of who could trade with them and on what terms, OR how Asian merchants such as Gujaratis, Swahili Arabs, Omanis, or Javanese kept the Indian Ocean trading after the Portuguese arrived.',
+      prompt: 'Explain ONE reason European states built maritime empires (a political, religious, or economic rivalry). Then explain ONE change in who held power, using a European trading post or Kongo or Asante. Then explain ONE continuity: how Ming China or Tokugawa Japan kept control of who could trade with them and on what terms, OR how Asian merchants such as Gujaratis, Swahili Arabs, Omanis, or Javanese kept the Indian Ocean trading even after the Portuguese began forcing ships to buy a pass, the cartaz.',
       responseType: 'Checkpoint 1',
       terms: ['rivalry', 'maritime empire', 'trading post', 'Elmina', 'Goa', 'Kongo', 'Asante', 'Ming China', 'Macau', 'Tokugawa Japan', 'Dejima', 'Indian Ocean', 'cartaz', 'intra-Asian trade', 'Gujaratis', 'Swahili Arabs', 'Omanis', 'Javanese'],
-      focus: ['Name one rivalry (political, religious, or economic) as the reason for the empires.', 'Give one change in who held power: a European trading post, or Kongo or Asante growing stronger.', 'Give one continuity: China or Japan still setting the terms of trade, or Asian merchants trading on in the Indian Ocean.']
+      focus: ['Name one rivalry (political, religious, or economic) as the reason for the empires.', 'Give one change in who held power: a European trading post, or Kongo or Asante growing stronger.', 'Give one continuity: China or Japan still setting the terms of trade, or Asian merchants trading on in the Indian Ocean despite the cartaz.']
     },
     {
       title: 'Checkpoint 2: Labor and Slavery, What Changed and What Kept Going',
@@ -155,7 +155,7 @@
       cardDesc: 'Old and new labor systems in the colonial Americas, and slavery old and new.',
       learningTargets: [lesson.learningTargets[2].target, lesson.learningTargets[3].target],
       successCriteria: [lesson.successCriteria[2].criteria, lesson.successCriteria[3].criteria],
-      prompt: 'Explain ONE continuity and ONE change in labor systems in the colonial Americas (for example, the mit’a, encomienda, hacienda, indentured servitude, or chattel slavery), and say how each one supplied workers for farms or mines. Then explain ONE continuity and ONE change in slavery from 1450 to 1750: one older form of slavery in Africa that continued, and one way the plantation economy changed slavery in the Americas. For each change, explain why it happened.',
+      prompt: 'Explain ONE continuity and ONE change in labor systems in the colonial Americas (for example, the mit’a, encomienda, hacienda, indentured servitude, or chattel slavery), and say how each one supplied workers for farms or mines. Then explain ONE continuity and ONE change in slavery from 1450 to 1750: one older form of slavery in Africa that continued, and one way the plantation economy changed slavery in the Americas. For the change in slavery, explain why it happened.',
       responseType: 'Checkpoint 2',
       skill: 'Continuity and Change',
       terms: ['mit’a', 'mita', 'Potosí', 'encomienda', 'hacienda', 'indentured servitude', 'chattel slavery', 'plantation', 'plantation economy', 'sugar', 'households', 'Sahara', 'Indian Ocean', 'Mediterranean', 'enslaved Africans', 'inherited', 'race'],
@@ -172,6 +172,7 @@
   lesson.images = [
     {
       title: 'Portuguese Traders Arrive in Japan, Kano Naizen, about 1600',
+      alt: 'Gold folding screen panels: a large Portuguese ship at anchor, Portuguese men in wide trousers and hats walking up from the shore with servants carrying goods, and priests in black robes waiting at the right beside Japanese buildings.',
       url: '../assets/images/topics/4-4/nanban-screen-kano-naizen-c1600.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Nanban-Screens-by-Kano-Naizen-c1600.png',
       caption: 'Right-hand panels of a Japanese folding screen, "Arrival of the Southern Barbarians," painted in gold and color by Kano Naizen about 1600 for Japanese buyers. "Southern barbarians" was the Japanese name for the Portuguese and Spanish. Kobe City Museum.',
@@ -179,20 +180,23 @@
     },
     {
       title: 'Nagasaki Harbor and Dejima, about 1740',
+      alt: 'Black-and-white engraving of Nagasaki harbor: the city and hills on the left, a small walled compound flying a flag on an island just right of the middle, and Dutch ships, Japanese boats and Chinese junks in the water.',
       url: '../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:AMH-7112-KB_View_of_Nagasaki.jpg',
-      caption: 'A German engraving by Johann Wolfgang Heydt, published in 1744 in a book printed by J. C. Tetschner. It was made in Europe, not drawn in Nagasaki. Its legend names the city of Nagasaki, the small island "where the Dutch live" (Dejima), a Chinese island, a Dutch company ship, Japanese ships, and Chinese junks. From 1641 Japan allowed only the Dutch, of all Europeans, to trade, and only on Dejima.',
+      caption: 'A German engraving by Johann Wolfgang Heydt, published in Germany in 1744 in a book printed by J. C. Tetschner, for European readers. Its legend names the city of Nagasaki, the small island "where the Dutch live" (Dejima), a Chinese island, a Dutch company ship, Japanese ships, and Chinese junks. From 1641 Japan allowed only the Dutch, of all Europeans, to trade, and only on Dejima.',
       prompt: 'NOTICE the walled compound flying a flag just right of the middle: that is Dejima. Compare it with the city to its left, and notice which ships are in the harbor. INFER who controlled trade in this harbor. What does the picture show about Japan\'s rules that a list of Dutch trade goods would not?'
     },
     {
       title: 'A Brass Crucifix from the Kingdom of Kongo',
+      alt: 'A brass cross with Christ in the middle wearing a patterned cloth around his waist. Two small figures with hands together kneel on top of the arms, one stands on the cross above Christ, and two sit on the cross below his feet.',
       url: '../assets/images/topics/4-4/kongo-crucifix-met.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Crucifix_MET_hz1999_295_5.jpg',
-      caption: 'A brass crucifix made by Kongo artists in the 1600s or 1700s, with small kneeling figures on its arms and below the cross. Kongo\'s king was baptized in 1491, and under his son Afonso I Christianity became the religion of the royal court. The Metropolitan Museum of Art.',
-      prompt: 'NOTICE how the figure of Christ and the small figures are made and dressed. INFER what this object suggests about how the people of Kongo made Christianity their own. What can one religious object not tell you about who in Kongo was Christian, or about Kongo\'s trade?'
+      caption: 'A brass crucifix made by Kongo artists in the 1600s or 1700s. Two small figures kneel on top of its arms, one stands on the cross above Christ, and two more sit on the cross below his feet. Kongo\'s king was baptized in 1491, and under his son Afonso I Christianity became the religion of the royal court. The Metropolitan Museum of Art.',
+      prompt: 'NOTICE how the figure of Christ and the small figures are made and dressed, and what metal the cross is made of. INFER what this object suggests about Christianity in Kongo, whose kings made it the religion of the royal court while they traded with Portugal. What can one religious object not tell you about Kongo\'s kings, its trade, or who in Kongo was Christian?'
     },
     {
       title: 'A Nahua Complaint Against the Encomenderos, Codex Kingsborough, 1550s',
+      alt: 'A painted page: a bearded Spaniard in a hat, red cloak and sword, labeled Espinosa, grips an Indigenous man by the hair, and the man is bleeding from his nose and mouth. Spanish writing and a small painted sign are at the top.',
       url: '../assets/images/topics/4-4/codex-kingsborough-1550s.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Kingsborough.jpg',
       caption: 'A page from the Codex Kingsborough, painted by Nahua artists in central Mexico about the 1550s as part of a complaint to the Spanish crown against the town\'s encomenderos, Spanish colonists granted the labor and tribute of an Indigenous town. British Museum.',
@@ -200,6 +204,7 @@
     },
     {
       title: 'A Sugar Works in the French Caribbean, 1667',
+      alt: 'Engraving of a sugar works among palm trees: a mill turned by oxen under a wooden frame, a roofed boiling house where workers tend kettles over furnaces, workers carrying bundles of cane, a small hut, and numbers that match a key printed along the bottom.',
       url: '../assets/images/topics/4-4/sugar-works-du-tertre-1667.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Habitation_sucrerie_aux_Antilles,_1667.jpg',
       caption: 'An engraving by Sébastien Leclerc for Jean-Baptiste Du Tertre, a French missionary, in his history of the French Caribbean islands, printed in 1667. Its numbered key names the mill, the furnaces and kettles, the other buildings of a sugar works, and the huts of the enslaved workers. Bibliothèque nationale de France.',

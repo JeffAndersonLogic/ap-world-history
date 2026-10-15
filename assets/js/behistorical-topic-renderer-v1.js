@@ -2877,7 +2877,7 @@ function renderEvidence() {
     ${images.length ? `<div class="pop-grid">
       ${images.map((img, i) => `
         <article class="card image-card pop-half">
-          <img src="${evidenceImageUrl(i)}" alt="${img.title}" role="button" tabindex="0"
+          <img src="${evidenceImageUrl(i)}" alt="${img.alt || img.title}" role="button" tabindex="0"
                aria-label="Enlarge image: ${img.title}"
                onclick="openLightbox(${i})"
                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(${i})}" ${mediaFallbackAttrs(`evidence-${String(i + 1).padStart(2, '0')}`)}>

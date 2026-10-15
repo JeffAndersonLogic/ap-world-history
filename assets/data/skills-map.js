@@ -5659,7 +5659,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "06",
           "module": "Checkpoint 1",
           "label": "Module 06, Checkpoint 1",
-          "prompt": "Explain ONE reason European states built maritime empires (a political, religious, or economic rivalry). Then explain ONE change in who held power, using a European trading post or Kongo or Asante. Then explain ONE continuity: how Ming China or Tokugawa Japan kept control of who could trade with them and on what terms, OR how Asian merchants such as Gujaratis, Swahili Arabs, Omanis, or Javanese kept the Indian Ocean trading after the Portuguese arrived.",
+          "prompt": "Explain ONE reason European states built maritime empires (a political, religious, or economic rivalry). Then explain ONE change in who held power, using a European trading post or Kongo or Asante. Then explain ONE continuity: how Ming China or Tokugawa Japan kept control of who could trade with them and on what terms, OR how Asian merchants such as Gujaratis, Swahili Arabs, Omanis, or Javanese kept the Indian Ocean trading even after the Portuguese began forcing ships to buy a pass, the cartaz.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -5687,7 +5687,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "criteria": [
             "Name one rivalry (political, religious, or economic) as the reason for the empires.",
             "Give one change in who held power: a European trading post, or Kongo or Asante growing stronger.",
-            "Give one continuity: China or Japan still setting the terms of trade, or Asian merchants trading on in the Indian Ocean."
+            "Give one continuity: China or Japan still setting the terms of trade, or Asian merchants trading on in the Indian Ocean despite the cartaz."
           ],
           "learningTargets": [
             "I can explain why rival European states built maritime empires and trading posts, and how Kongo and Asante grew stronger through the new trade.",
@@ -5695,14 +5695,14 @@ window.BEHISTORICAL_SKILLS_MAP = {
           ],
           "successCriteria": [
             "I can name a political, religious, or economic rivalry behind the empires, and use a trading post or Kongo or Asante to explain one change in who held power.",
-            "I can explain one continuity in who set the terms of trade: how China or Japan kept control of trade with Europeans, or how a merchant group such as Gujaratis, Swahili Arabs, Omanis, or Javanese kept Indian Ocean trade going."
+            "I can explain one continuity in who set the terms of trade: how China or Japan kept control of trade with Europeans, or how a merchant group such as Gujaratis, Swahili Arabs, Omanis, or Javanese kept Indian Ocean trade going even after the Portuguese began forcing ships to buy the cartaz."
           ]
         },
         "checkpoint-two-response": {
           "ord": "10",
           "module": "Checkpoint 2",
           "label": "Module 10, Checkpoint 2",
-          "prompt": "Explain ONE continuity and ONE change in labor systems in the colonial Americas (for example, the mit’a, encomienda, hacienda, indentured servitude, or chattel slavery), and say how each one supplied workers for farms or mines. Then explain ONE continuity and ONE change in slavery from 1450 to 1750: one older form of slavery in Africa that continued, and one way the plantation economy changed slavery in the Americas. For each change, explain why it happened.",
+          "prompt": "Explain ONE continuity and ONE change in labor systems in the colonial Americas (for example, the mit’a, encomienda, hacienda, indentured servitude, or chattel slavery), and say how each one supplied workers for farms or mines. Then explain ONE continuity and ONE change in slavery from 1450 to 1750: one older form of slavery in Africa that continued, and one way the plantation economy changed slavery in the Americas. For the change in slavery, explain why it happened.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -5758,7 +5758,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "02",
           "module": "First & 10, Question 1",
           "label": "Module 02, First & 10, Question 1",
-          "prompt": "Explain ONE change in who held power after 1500 (a European trading post or empire, or an African state that grew stronger). Then explain ONE continuity: how China or Japan kept control of trade with Europeans.",
+          "prompt": "Explain ONE change in who held power from the late 1400s on: a European trading post and the rivalry behind it, or an African state that grew stronger. Then explain ONE continuity: how China or Japan kept control of trade with Europeans, or how Asian merchants kept the Indian Ocean trading.",
           "skill": "Continuity and Change",
           "skills": [
             "Continuity and Change"
@@ -5834,7 +5834,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "05",
           "module": "AP Skill Builder",
           "label": "Module 05, AP Skill Builder",
-          "prompt": "Now do it yourself with a different source. In 1639, the shogun's senior councilors issued this order (translated in Vaporis, 2012): \"The proscription [ban] of Christianity is known [to the Portuguese], but heretofore they have secretly transported those who are going to propagate that religion. ... In view of the above, hereafter entry by the Portuguese galeota [ship] is forbidden.\" In 2 to 3 sentences, identify the order's audience and its purpose, and explain how its situation helps explain why Japan limited trade with the Portuguese but not with everyone.",
+          "prompt": "Now do it yourself with a different source. In 1639, the shogun's senior councilors, the same top officials who wrote the 1635 orders, issued this order (translated in Lu, 1997; words in brackets are explanations): \"The matter relating to the proscription [ban] of Christianity is known [to the Portuguese]. However, heretofore [until now] they have secretly transported those who are going to propagate [spread] that religion. ... entry by the Portuguese galeota [ship] is forbidden.\" In 2 to 3 sentences, identify the order's point of view and its purpose, and explain how its situation helps explain why Japan limited trade with the Portuguese but not with everyone.",
           "skill": "Sourcing",
           "skills": [
             "Sourcing"

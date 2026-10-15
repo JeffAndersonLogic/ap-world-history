@@ -132,7 +132,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'question', kind: 'frame-subtitle', eyebrow: 'The Question',
+      phase: 'question', kind: 'frame-subtitle',
       title: 'Europeans built empires from the sea. What changed, and what kept going?',
       subtitle: 'Portuguese traders arriving in Japan, about 1600, as a Japanese painter imagined them for Japanese buyers.',
       notes: {
@@ -192,7 +192,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'map', kind: 'map', eyebrow: 'Where the Empires Reached',
-      kc: 'Unit 4: Learning Objective E', title: 'Forts on coasts, colonies in the Americas, and places with their own rules.',
+      kc: 'Unit 4: Learning Objective E', title: 'Forts, colonies, and their own rules.',
       footer: 'In Africa and Asia, Europeans mostly held coasts. In the Americas, they took territory.',
       visual: { url: '../assets/images/instructional-maps/topic-4-4.svg', alt: 'World map marking the Gold Coast and Elmina, Kongo, the Swahili coast and Mombasa, Goa, Malacca, Macau, Japan, the Caribbean and Potosí, with arrows for forts on the coast, enslaved Africans carried west and to Brazil, and intra-Asian trade' },
       notes: {
@@ -210,7 +210,7 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-4.3.II.A.i', title: 'What a trading post was, and who it paid.',
       template: {
         tag: 'Trading post', place: 'Elmina, Gold Coast', date: '1482',
-        visual: { url: '../assets/images/topics/4-4/elmina-dapper-c1668.jpg', alt: 'Engraving of a large fort on a low rocky point above the sea, a smaller fort on the hill behind it, and sailing ships firing a salute in the foreground', credit: 'Elmina, Dapper, 1668 · Public domain', position: '50% 60%' },
+        visual: { url: '../assets/images/topics/4-4/elmina-dapper-c1668.jpg', alt: 'Engraving of a large fort on a low rocky point above the sea, a smaller fort on the hill behind it, and sailing ships firing a salute in the foreground', credit: 'Elmina, Dapper, Amsterdam, 1668 · Public domain', position: '50% 60%' },
         rows: [
           { label: 'Built by', text: '**Portugal**, to buy gold on the coast of West Africa' },
           { label: 'Then', text: 'Goa **1510**, Malacca **1511**, Hormuz **1515**: forts on coasts, not whole countries' },
@@ -235,7 +235,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'asia', kind: 'story-scene', eyebrow: 'Asia Sets the Terms',
       kc: 'KC-4.3.II.A.i', title: 'China and Japan decided how far Europeans could reach.',
       template: {
-        visual: { url: '../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg', alt: 'Engraving of Nagasaki harbor below green hills, with the walled Dutch compound on Dejima at the shore, flying a flag, a Dutch company ship, Japanese boats and Chinese junks', credit: 'Nagasaki harbor and Dejima, engraving by Johann Wolfgang Heydt, published 1744 · Public domain', position: '50% 88%' },
+        visual: { url: '../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg', alt: 'Engraving of Nagasaki harbor below green hills, with the walled Dutch compound on Dejima at the shore, flying a flag, a Dutch company ship, Japanese boats and Chinese junks', credit: 'Nagasaki harbor and Dejima, engraving by Johann Wolfgang Heydt, published in Germany, 1744 · Public domain', position: '50% 88%' },
         caption: 'Nagasaki, about 1740: the Dutch island, Dutch and Japanese ships, Chinese junks',
         steps: [
           { label: 'China, 1557', text: 'Portuguese may settle at Macau, under Chinese officials and rules.' },
@@ -249,8 +249,8 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'This is the second sentence of KC-4.3.II.A.i, which the old 4.4 pages never taught: some Asian states limited the disruptive economic and cultural effects of European trade with restrictive or isolationist policies. Ming China and Tokugawa Japan are the CED\'s examples.',
           'Macau: Portuguese merchants settled from 1557 with the permission of Chinese provincial officials; formal recognition and the annual ground rent are dated variously from 1554 to 1573. Chinese officials kept authority in and around the port.',
-          'Japan: the shogun\'s senior councilors sent five sets of orders to the Nagasaki magistrates between 1633 and 1639 (Vaporis, Voices of Early Modern Japan, 2012). The Spanish had been expelled in 1624; the English left in 1623. The Dutch moved from Hirado to Dejima in 1641.',
-          'The engraving is German, signed by Johann Wolfgang Heydt ("I. W. Heydt del. et sculp.") and published in 1744 in a book printed by J. C. Tetschner; it was made in Europe, not drawn in Nagasaki. It has its own legend: the city of Nagasaki, the island where the Dutch live, a Chinese island, a company ship, Japanese ships and Chinese junks.'
+          'Japan: the shogun\'s senior councilors sent five sets of orders to the Nagasaki magistrates between 1633 and 1639; those of 1635 and 1639 are translated in David J. Lu, Japan: A Documentary History (1997). The Spanish had been expelled in 1624; the English left in 1623. The Dutch moved from Hirado to Dejima in 1641.',
+          'The engraving is German, signed by Johann Wolfgang Heydt ("I. W. Heydt del. et sculp.") and published in Germany in 1744 in a book printed by J. C. Tetschner: a European picture made for European readers. It has its own legend: the city of Nagasaki, the island where the Dutch live, a Chinese island, a company ship, Japanese ships and Chinese junks.'
         ],
         ask: 'Who wrote the rules for trade in this harbor?',
         listenFor: 'Japan\'s government, not the Dutch.',
@@ -261,8 +261,8 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'source1635', kind: 'source-hipp', eyebrow: 'Source It · Model',
       kc: 'KC-4.3.II.A.i', title: 'Orders to the officials at Nagasaki, 1635.',
       template: {
-        quote: 'It is strictly prohibited for Japanese ships to leave for foreign countries. ... If any Japanese returns home after residing abroad, he must be put to death.',
-        attribution: { author: 'Senior councilors of the shogun', work: 'Memorandum to the Nagasaki magistrates', year: '1635' },
+        quote: 'Japanese ships are strictly forbidden to leave for foreign countries. ... If any Japanese returns from overseas after residing there, he must be put to death.',
+        attribution: { author: 'Senior councilors of the shogun', work: 'Edict to the magistrates of Nagasaki', year: '1635' },
         pov: 'The shogun\'s top officials, who held the government\'s power.',
         audience: 'Their own officials at Nagasaki, who had to carry the orders out.',
         purpose: 'To keep Christianity out and foreign trade under government control.',
@@ -271,10 +271,10 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 3,
         land: [
-          'Translated in Constantine Vaporis, Voices of Early Modern Japan (2012), from the 1959 edition of Tokugawa laws. Articles 1 and 3 of seventeen; other articles order searches for Christians, rewards for informers and rules for selling silk. Ellipsis marks the cut.',
+          'Translated in David J. Lu, Japan: A Documentary History (1997), pp. 221 to 222, where the edict is headed "Addressed to the Joint Bugyō of Nagasaki." Articles 1 and 3; other articles order searches for Christians, rewards for informers and rules for selling silk. Ellipsis marks the cut.',
           'This is the topic\'s suggested skill, 2.A: identify a source\'s point of view, purpose, historical situation and audience. Model all four, out loud.',
           'Audience matters: these were not announcements to foreigners or the public. They were working orders to the men at the one port where foreigners traded.',
-          'Vaporis warns that historians later named these the "closed country" edicts; the documents were untitled, and Japan kept trading with the Dutch, the Chinese, Korea and the Ryukyu kingdom.'
+          'Historians later named these the "closed country" (sakoku) edicts, a word first used in 1801; Japan kept trading with the Dutch, the Chinese, Korea and the Ryukyu kingdom.'
         ],
         ask: 'Why does it matter that these orders went to officials, not to the Portuguese?',
         listenFor: 'They are instructions for enforcing control, so they show what the government meant to do.',
@@ -295,8 +295,8 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 3,
         land: [
           'The cartaz was a Portuguese pass: Asian ships were to buy one, call at Portuguese ports and avoid goods Portugal claimed for itself, or risk seizure. Pearson (Merchants and Rulers in Gujarat, 1976) shows Gujarati merchants buying passes and trading on.',
-          'Much of the ocean\'s trade stayed intra-Asian: between Asian ports, in Asian goods. Vaporis notes that even the Portuguese in Japan "traded primarily in Asian, not European, goods."',
-          'Oman\'s Ya\'rubid rulers drove the Portuguese from Muscat in 1650 and took Fort Jesus at Mombasa in 1698 after a siege begun in 1696. An Asian and African power pushing Portugal back is continuity with a twist.',
+          'Much of the ocean\'s trade stayed intra-Asian: between Asian ports, in Asian goods, and European merchants often made their money by carrying it.',
+          'Oman\'s Ya\'rubid rulers drove the Portuguese from Muscat in 1650 and took Fort Jesus at Mombasa in 1698 after a siege begun in 1696. An Arabian power pushing Portugal back is continuity with a twist.',
           'The CED\'s merchant examples are all here: Swahili Arabs, Omanis, Gujaratis, Javanese.'
         ],
         ask: 'Which lasted longer, the cartaz or the merchants?',
@@ -308,21 +308,21 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'africa', kind: 'story-scene', eyebrow: 'African States Grow',
       kc: 'KC-4.3.II.A.ii', title: 'Kongo and Asante grew stronger through the new trade.',
       template: {
-        visual: { url: '../assets/images/topics/4-4/kongo-crucifix-met.jpg', alt: 'Brass crucifix from the Kingdom of Kongo, with a figure of Christ on the cross and small kneeling figures on the arms and below', credit: 'Crucifix, Kongo peoples, 17th to 18th century · The Metropolitan Museum of Art · Public domain (CC0)', fit: 'contain' },
+        visual: { url: '../assets/images/topics/4-4/kongo-crucifix-met.jpg', alt: 'Brass crucifix from the Kingdom of Kongo, with a figure of Christ on the cross, two small kneeling figures on top of its arms, one figure above Christ and two below his feet', credit: 'Crucifix, Kongo peoples, 17th to 18th century · The Metropolitan Museum of Art · Public domain (CC0)', fit: 'contain' },
         caption: 'Kongo brass crucifix, 1600s to 1700s',
         steps: [
-          { label: 'Kongo, 1483', text: 'Portuguese ships reach the mouth of the Congo River.' },
+          { label: 'Kongo, 1480s', text: 'Portuguese ships reach the mouth of the Congo River.' },
           { label: 'Kongo, 1491', text: 'The king is baptized a Christian.' },
           { label: 'Kongo, early 1500s', key: true, text: 'Afonso I trades for goods, priests, teachers and weapons that strengthen his rule.' },
-          { label: 'Asante, 1701', key: true, text: 'Armed with guns bought on the coast, Asante defeats Denkyira at Feyiase.' }
+          { label: 'Asante, 1701', key: true, text: 'Asante defeats Denkyira at Feyiase and becomes the main power of the region.' }
         ]
       },
       notes: {
         minutes: 2,
         land: [
           'KC-4.3.II.A.ii: maritime trade fostered the growth of Asante and Kongo, whose participation "led to an increase in their influence."',
-          'Kongo: Diogo Cão reached the Congo mouth in 1483; envoys came back in 1491 with missionaries and trade goods, including firearms; King Nzinga a Nkuwu was baptized that year. His son Afonso I (king from about 1509 to 1542 or 1543) made Christianity the court religion and expanded the kingdom with Portuguese allies (Heywood, Journal of African History, 2009).',
-          'The crucifix is a Kongo object, made by Kongo artists in brass in the 1600s or 1700s (Met 1999.295.5). Christianity in Kongo was Kongo\'s own: kings used it as royal religion and artists made it in their own style.',
+          'Kongo: Diogo Cão reached the Congo mouth in 1482 or 1483 (sources differ); envoys came back in 1491 with missionaries and trade goods, including firearms; King Nzinga a Nkuwu was baptized that year. His son Afonso I (king from about 1509 to 1542 or 1543) made Christianity the court religion and expanded the kingdom with Portuguese allies (Heywood, Journal of African History, 2009).',
+          'The crucifix is a Kongo object, made by Kongo artists in brass in the 1600s or 1700s (Met 1999.295.5). In Kongo, Christianity was the kings\' religion: they made it the religion of the court, and Kongo artists cast its objects in their own style. How religions blended is 4.5.',
           'Asante: the battle of Feyiase in 1701, dated from Dutch archives, made Asante the main power of the region. Asante controlled gold and bought firearms from Dutch and English traders, paying in part with captives. Osei Tutu led it; sources disagree on his dates, so do not give them.',
           'Both grew stronger, and both sold captives into the Atlantic trade. That is not a contradiction; it is next.'
         ],
@@ -343,7 +343,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 3,
         land: [
-          'Letter of 6 July 1526, in John K. Thornton\'s translation (Afonso I Mvemba a Nzinga, King of Kongo: His Life and Correspondence, 2023, p. 203), as reprinted in Dunn and Willoughby, Panorama (2026). Ellipsis marks the cut.',
+          'Letter of 6 July 1526, translated by Luís Madureira in John K. Thornton, Afonso I Mvemba a Nzinga, King of Kongo: His Life and Correspondence (2023), p. 203, as reprinted in Dunn and Willoughby, Panorama (2026). Ellipsis marks the cut.',
           'Students source it themselves, the same four questions as the last model. Audience: the king of Portugal, the one ruler who could order Portuguese traders to obey. Purpose: to stop traders he did not control from kidnapping his free-born subjects. Situation: Portuguese traders were selling goods directly to Kongo nobles, who no longer needed the king, and some were enslaving Kongo subjects.',
           'Heywood (2009): most captives Kongo exported in Afonso\'s reign were foreigners taken in wars; Afonso ran a slave market in his capital; his complaint was the enslavement of Kongo subjects, which "so threatened Afonso\'s legitimacy." So the letter is evidence of a strong king defending his control of trade and of who could be enslaved, not of a king against all slavery.',
           'The full letter is the lesson\'s Primary Source module (Module 08).'
@@ -372,7 +372,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 3,
         land: [
           'KC-4.2.II.D: colonial economies "largely depended on agriculture, utilized existing labor systems, including the Incan mit’a, and introduced new labor systems." O is old, N is new.',
-          'Mit’a: the Inca rotating labor duty. Viceroy Francisco de Toledo reorganized it between 1572 and 1575 to send one-seventh of the adult men of the draft districts to Potosí each year: about 9,000 in 1573 and more than 14,000 by 1578, by one study. An old system kept its name and changed its master.',
+          'Mit’a: the Inca rotating labor duty. Viceroy Francisco de Toledo reorganized it between 1572 and 1575 to send one-seventh of the adult men of the draft districts to Potosí each year, more than 14,000 men by 1578. An old system kept its name and changed its master.',
           'Encomienda: the crown granted a colonist the labor and tribute of a group of Indigenous people, in return for protection and Christian instruction; the New Laws of 1542 tried to limit it, and it declined.',
           'Hacienda: large estates that grew as encomienda declined; workers were paid, and some were tied by debt (historians argue about how many).',
           'Indentured servitude: in the English colonies, mostly poor Europeans in the 1600s; at least three-quarters of the colonists of the Chesapeake arrived under contract.',
@@ -431,9 +431,9 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'scale', kind: 'frame-number', eyebrow: 'Slavery: Change',
-      kc: 'KC-4.2.II.C',
+      kc: 'Unit 4: Learning Objective G',
       template: {
-        visual: { url: '../assets/images/topics/4-4/canoes-elmina-manfroe-1732.jpg', alt: 'Two engraved views of the Gold Coast: fishing canoes off Elmina, and canoes carrying enslaved people out to European ships at anchor', credit: 'Fishing canoes at Elmina, and canoes carrying enslaved people to ships at Manfroe, engraving, 1732 · Public domain', position: '50% 80%' },
+        visual: { url: '../assets/images/topics/4-4/canoes-elmina-manfroe-1732.jpg', alt: 'Two engraved views of the Gold Coast: fishing canoes off Elmina, and canoes carrying enslaved people out to European ships at anchor', credit: 'Fishing canoes at Elmina, and canoes carrying enslaved people to ships at Manfroe, engraving printed in London, 1732 · Public domain', position: '50% 80%' },
         number: '2.5+', unit: 'million', range: '1701 to 1750',
         text: 'Africans forced onto ships bound for the Americas, by historians\' estimates. In the whole 1500s: fewer than 300,000.'
       },
@@ -452,7 +452,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'plantation', kind: 'story-scene', eyebrow: 'Slavery: Change',
       kc: 'KC-4.2.II.C', title: 'What the plantations changed.',
       template: {
-        visual: { url: '../assets/images/topics/4-4/sugar-works-du-tertre-1667.jpg', alt: 'Engraving of a Caribbean sugar works: an animal-driven mill under a roof, a boiling house with kettles, a drying shed, palms and workers carrying cane', credit: 'Sugar works in the French Antilles, engraved by Sébastien Leclerc for Jean-Baptiste Du Tertre, 1667 · Public domain', position: '45% 50%' },
+        visual: { url: '../assets/images/topics/4-4/sugar-works-du-tertre-1667.jpg', alt: 'Engraving of a Caribbean sugar works: an animal-driven mill under a roof, a boiling house with kettles, a drying shed, palms and workers carrying cane', credit: 'Sugar works in the French Antilles, engraved by Sébastien Leclerc for Jean-Baptiste Du Tertre, Paris, 1667 · Public domain', position: '45% 50%' },
         caption: 'A sugar works in the French Caribbean, 1667',
         steps: [
           { label: 'Demand', text: 'Sugar, and later tobacco, needed huge numbers of workers.' },
@@ -522,33 +522,33 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'sharpen', kind: 'sharpen', eyebrow: 'Sharpen the Claim',
-      kc: 'Unit 4: Learning Objective G',
-      footer: 'A change and a continuity, each with a named example and the reason it happened.',
+      kc: 'KC-4.3.II.A.iii',
+      footer: 'A change and a continuity, each with a named example and the reason.',
       template: {
-        weak: 'After 1500, slavery got worse.',
-        strong: 'Slavery in Africa **continued** in older forms, in **households** and in captives sent across the **Sahara**, while the **sugar plantations** of the Americas **changed** it: in **1701 to 1750** alone more than **2.5 million** Africans were shipped west, to be held for life, and their children after them.'
+        weak: 'The Portuguese changed Indian Ocean trade.',
+        strong: 'The Portuguese **changed** Indian Ocean trade with forts at **Goa**, **Malacca** and **Hormuz** and a pass ships had to buy, the **cartaz**, but **Gujarati**, **Swahili Arab** and **Javanese** merchants **kept** trading, often buying a pass and sailing on, because a few forts could tax the ocean\'s trade but not replace its merchants.'
       },
       notes: {
         minutes: 2,
         land: [
-          'The weak claim names no continuity, no evidence and no cause.',
-          'The strong claim names a continuity and a change, each with a named example, and the cause of the change (the plantations): the shape Checkpoint 2 asks for.',
-          'Have students write their own for labor, with the mit’a as the continuity and encomienda or indentured servitude as the change.'
+          'The weak claim names no continuity, no evidence and no reason.',
+          'The strong claim names a change and a continuity, each with a named example, and the reason the continuity held: the shape both checkpoints ask for.',
+          'It models an ungraded case on purpose. Students write their own for labor and for slavery in Checkpoint 2, so do not write a slavery model on the board.'
         ],
-        ask: 'Why is "got worse" not enough?',
+        ask: 'Why is "changed" not enough?',
         listenFor: 'It does not say what changed, what continued, or why.'
       }
     },
     {
       phase: 'skill', kind: 'action', eyebrow: 'Module 05 · Skill Builder',
       title: 'Who wrote it, for whom, and why?',
-      subtitle: 'Name a source\'s audience, purpose and situation, and say how they change what it means.',
+      subtitle: 'Name a source\'s point of view, purpose and situation, and say how they change what it means.',
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-4-maritime-empires-established.html#modules' },
       notes: {
         minutes: 6,
         land: [
           'The Skill Builder practices the CED\'s suggested skill, 2.A: identify a source\'s point of view, purpose, historical situation and audience.',
-          'It models the 1635 memorandum (the slide students just saw), then gives the 1639 order banning Portuguese ships and asks for its audience, purpose and situation, and how the situation explains why Japan limited trade with the Portuguese.',
+          'It models the 1635 memorandum (the slide students just saw), then gives the 1639 order banning Portuguese ships and asks for its point of view, purpose and situation, and how the situation explains why Japan limited trade with the Portuguese.',
           'Push students to tie each answer to words in the source, not to facts from elsewhere.'
         ],
         ask: 'What words in the source show its purpose?',
@@ -603,7 +603,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'close', kind: 'frame-subtitle', eyebrow: 'Topic 4.4 · Landing Sentence',
+      phase: 'close', kind: 'frame-subtitle',
       title: 'Europeans built empires from the sea, but much of the world kept its own rules.',
       subtitle: 'Next: the empires exist. How did rulers make them pay, and what did the money do to the people inside them?',
       notes: {

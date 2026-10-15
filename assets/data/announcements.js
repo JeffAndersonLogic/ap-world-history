@@ -1941,7 +1941,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       ],
       successCriteria: [
         { text: 'I can name a political, religious, or economic rivalry behind the empires, and use a trading post or Kongo or Asante to explain one change in who held power.', label: 'Governance' },
-        { text: 'I can explain one continuity in who set the terms of trade: how China or Japan kept control of trade with Europeans, or how a merchant group such as Gujaratis, Swahili Arabs, Omanis, or Javanese kept Indian Ocean trade going.', label: 'Economic Systems' },
+        { text: 'I can explain one continuity in who set the terms of trade: how China or Japan kept control of trade with Europeans, or how a merchant group such as Gujaratis, Swahili Arabs, Omanis, or Javanese kept Indian Ocean trade going even after the Portuguese began forcing ships to buy the cartaz.', label: 'Economic Systems' },
         { text: 'I can explain one labor system that continued in a new form and one that was new, and how each supplied workers for farms or mines.', label: 'Economic Systems' }
       ],
       modules: [
@@ -1969,7 +1969,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       ],
       successCriteria: [
         { text: 'I can name a political, religious, or economic rivalry behind the empires, and use a trading post or Kongo or Asante to explain one change in who held power.', label: 'Governance' },
-        { text: 'I can explain one continuity in who set the terms of trade: how China or Japan kept control of trade with Europeans, or how a merchant group such as Gujaratis, Swahili Arabs, Omanis, or Javanese kept Indian Ocean trade going.', label: 'Economic Systems' },
+        { text: 'I can explain one continuity in who set the terms of trade: how China or Japan kept control of trade with Europeans, or how a merchant group such as Gujaratis, Swahili Arabs, Omanis, or Javanese kept Indian Ocean trade going even after the Portuguese began forcing ships to buy the cartaz.', label: 'Economic Systems' },
         { text: 'I can explain one labor system that continued in a new form and one that was new, and how each supplied workers for farms or mines.', label: 'Economic Systems' }
       ],
       modules: [

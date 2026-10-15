@@ -905,7 +905,7 @@ module.exports = [
     id: 'topic-4-4',
     code: 'Topic 4.4',
     title: 'Empires from the Sea, and a World with Its Own Rules',
-    subtitle: 'Topic 4.4 \u00b7 Maritime empires established, c. 1500 to 1750',
+    subtitle: 'Topic 4.4 \u00b7 Maritime empires established, c. 1480 to 1750',
     // Rebuilt 2026-10-14 from the 4.4 story: European forts on the coasts of
     // Africa and Asia, colonies in the Americas, and the places that kept their
     // own rules (Japan, the Swahili coast, Kongo, Asante). The chartered-company
@@ -915,7 +915,7 @@ module.exports = [
       { zone: [-1.5, 7, 6, 3.5], label: 'GOLD COAST', tone: 'sand', legend: 'Gold Coast: Elmina fort (1482); Asante rises c. 1700' },
       { zone: [15, -6, 5, 4], label: 'KONGO', tone: 'sage', legend: 'Kingdom of Kongo: Christian kings, trade with Portugal' },
       { zone: 'swahiliCoast', label: 'SWAHILI COAST', tone: 'bronze', legend: 'Swahili coast: Swahili Arab and Omani traders' },
-      { zone: 'japan', label: 'JAPAN', tone: 'plum', legend: 'Japan: of Europeans, only the Dutch, on Dejima' },
+      { zone: 'japan', label: 'JAPAN', labelSide: 'right', tone: 'plum', legend: 'Japan: of Europeans, only the Dutch, on Dejima' },
       { zone: 'caribbean', label: 'CARIBBEAN', tone: 'gold', legend: 'Caribbean: sugar plantations worked by enslaved Africans' }
     ],
     flows: [

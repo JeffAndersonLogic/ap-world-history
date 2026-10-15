@@ -684,7 +684,7 @@ module.exports = {
     "showFooterNote": false,
     "headerSubtitle": "Topic 4.4, Maritime Empires Established &nbsp;|&nbsp; AP World History: Modern",
     "titleHtml": "Empires from the <em>Sea</em>",
-    "deck": "After 1500, European states built empires held together by ships: forts on the coasts of Africa and Asia, and colonies in the Americas. But much of the world kept its own rules. Some things changed fast, and some barely moved.",
+    "deck": "From the late 1400s, European states built empires held together by ships: forts on the coasts of Africa and Asia, and colonies in the Americas. But much of the world kept its own rules. Some things changed fast, and some barely moved.",
     "skillTags": [
       "Continuity and Change",
       "Sourcing and Situation"
@@ -717,7 +717,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "After 1500, five European states built empires held together by ships: Portugal, Spain, the Dutch Republic, France, and England (Britain after 1707). An empire like that is a <span class=\"kt\">maritime empire</span>. They built them because they were rivals. They competed for <strong>power</strong>, so each wanted what the others had. They competed over <strong>religion</strong>: Catholic Portugal and Spain saw their voyages as a war against Islam and a mission to spread Christianity, and after the Reformation, Protestant England and the Dutch fought Catholic Spain. And they competed for <strong>money</strong>: gold, spices, sugar, and the trade that carried them. When one state found a route or a rich coast, the others came after it."
+            "html": "From the late 1400s on, five European states built empires held together by ships: Portugal, Spain, the Dutch Republic, France, and England (Britain after 1707). An empire like that is a <span class=\"kt\">maritime empire</span>. They built them because they were rivals. They competed for <strong>power</strong>, so each wanted what the others had. They competed over <strong>religion</strong>: Catholic Portugal and Spain saw their voyages as a war against Islam and a mission to spread Christianity, and after the Reformation, Protestant England and the Dutch fought Catholic Spain. And they competed for <strong>money</strong>: gold, spices, sugar, and the trade that carried them. When one state found a route or a rich coast, the others came after it."
           },
           {
             "type": "p",
@@ -744,7 +744,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Japan went further. Its rulers, the Tokugawa shoguns, feared that Christianity, which Portuguese and Spanish missionaries had spread in Japan, would divide the country. In 1635 the shogun's senior councilors sent orders to their officials at Nagasaki, the port where foreign ships traded. The first order reads: \"It is strictly prohibited for Japanese ships to leave for foreign countries.\" Another says that any Japanese who returns home after living abroad \"must be put to death.\" Other orders told the officials to search every arriving ship for Christians. In 1639 the councilors banned Portuguese ships from Japan altogether."
+            "html": "Japan went further. Its rulers, the Tokugawa shoguns, feared that Christianity, which Portuguese and Spanish missionaries had spread in Japan, would divide the country. In 1635 the shogun's senior councilors sent orders to their officials at Nagasaki, the port where foreign ships traded. The first order reads: \"Japanese ships are strictly forbidden to leave for foreign countries.\" Another says that any Japanese who returns from overseas after living there \"must be put to death.\" Other orders told the officials to search every arriving ship for Christians. In 1639 the councilors banned Portuguese ships from Japan altogether."
           },
           {
             "type": "p",
@@ -840,7 +840,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "The Atlantic slave trade carried more people across an ocean than any slave trade before it. Slavery in the Americas was for life and inherited, and it came to be tied to race: laws in the English colonies made the children of enslaved women enslaved too. Africans and their descendants became most of the people in the Caribbean colonies and a large part of Brazil's population, and their languages, beliefs, and foods came with them. That is what the College Board calls \"significant demographic, social, and cultural changes.\""
+            "html": "The Atlantic slave trade carried more people across an ocean than any slave trade before it. Slavery in the Americas was for life and inherited (laws in the English colonies made the children of enslaved women enslaved too), and it came to be tied to race. Africans and their descendants became most of the people in the Caribbean colonies and a large part of Brazil's population, and their languages, beliefs, and foods came with them. That is what the College Board calls \"significant demographic, social, and cultural changes.\""
           }
         ],
         "callout": {
@@ -879,7 +879,7 @@ module.exports = {
       {
         "num": "01",
         "skill": "Continuity and Change",
-        "text": "Explain ONE change in who held power after 1500 (a European trading post or empire, or an African state that grew stronger). Then explain ONE continuity: how China or Japan kept control of trade with Europeans.",
+        "text": "Explain ONE change in who held power from the late 1400s on: a European trading post and the rivalry behind it, or an African state that grew stronger. Then explain ONE continuity: how China or Japan kept control of trade with Europeans, or how Asian merchants kept the Indian Ocean trading.",
         "placeholder": "One change was... This happened because... One continuity was... China or Japan kept control by..."
       },
       {

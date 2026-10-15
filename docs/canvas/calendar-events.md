@@ -2782,7 +2782,7 @@ deleted row in the schedule and every affected date moves with it.
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;">I can name a political, religious, or economic rivalry behind the empires, and use a trading post or Kongo or Asante to explain one change in who held power.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain one continuity in who set the terms of trade: how China or Japan kept control of trade with Europeans, or how a merchant group such as Gujaratis, Swahili Arabs, Omanis, or Javanese kept Indian Ocean trade going.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain one continuity in who set the terms of trade: how China or Japan kept control of trade with Europeans, or how a merchant group such as Gujaratis, Swahili Arabs, Omanis, or Javanese kept Indian Ocean trade going even after the Portuguese began forcing ships to buy the cartaz.</li>
                     <li style="margin: 0 0 6px 0;">I can explain one labor system that continued in a new form and one that was new, and how each supplied workers for farms or mines.</li>
                     <li style="margin: 0 0 6px 0;">I can explain one older form of slavery in Africa that continued and one way plantations changed slavery in the Americas, and why it changed.</li>
                 </ul>

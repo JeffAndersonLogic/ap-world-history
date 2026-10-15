@@ -65,7 +65,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Governance"
     },
     {
-      criteria: "I can explain one continuity in who set the terms of trade: how China or Japan kept control of trade with Europeans, or how a merchant group such as Gujaratis, Swahili Arabs, Omanis, or Javanese kept Indian Ocean trade going.",
+      criteria: "I can explain one continuity in who set the terms of trade: how China or Japan kept control of trade with Europeans, or how a merchant group such as Gujaratis, Swahili Arabs, Omanis, or Javanese kept Indian Ocean trade going even after the Portuguese began forcing ships to buy the cartaz.",
       kc: 'KC-4.3.II.A.i; KC-4.3.II.A.iii',
       theme: "Economic Systems"
     },
@@ -172,7 +172,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Nagasaki harbor and Dejima, about 1740",
-          caption: "A German engraving by Johann Wolfgang Heydt, published in 1744, made in Europe rather than drawn in Nagasaki. Its legend marks the Dutch island (Dejima), a Dutch company ship, Japanese ships and Chinese junks.",
+          caption: "A German engraving by Johann Wolfgang Heydt, published in Germany in 1744 for European readers. Its legend marks the Dutch island (Dejima), a Dutch company ship, Japanese ships and Chinese junks.",
           url: "../assets/images/topics/4-4/nagasaki-dejima-1735-44.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:AMH-7112-KB_View_of_Nagasaki.jpg"
         }
@@ -181,7 +181,7 @@ window.BEHISTORICAL_LESSON = {
         title: "Kongo and Asante: Strength from the Trade",
         bullets: [
           "In Kongo, Afonso I used the Portuguese connection to make the king stronger. Portuguese allies fought beside his armies, and the captives taken in his wars were sold to Portuguese traders. Christianity, taught by priests he asked for, became the royal religion, and he sent young Kongo nobles to study in Portugal.",
-          "Afonso also tried to keep the trade in the king's hands. When Portuguese traders began dealing directly with his nobles, and thieves seized free Kongo people and sold them to Portuguese traders, he complained to the king of Portugal, because trade he did not control weakened his power over his own nobles.",
+          "Afonso also tried to keep the trade in the king's hands. When Portuguese traders began dealing directly with his nobles, and thieves seized free Kongo people and sold them to Portuguese traders, he complained to the king of Portugal.",
           "On the Gold Coast, **Asante** rose around 1700 by joining several Akan states under one ruler, controlling gold, and buying guns from Dutch and English traders on the coast, paying in part with captives. Its victory over Denkyira at Feyiase in 1701 made it the main power of the region."
         ],
         image: {
@@ -237,8 +237,8 @@ window.BEHISTORICAL_LESSON = {
 
   primarySource: {
     title: "Primary Source: Afonso I of Kongo to João III of Portugal, 1526",
-    intro: "Afonso I (Nzinga Mbemba) was king of Kongo from the early 1500s until the 1540s. Kongo was the strongest state in west-central Africa, and its kings had traded with Portugal since the 1480s. Afonso was a Christian, could read and write Portuguese, and wrote many letters to the kings of Portugal. He wrote this one on 6 July 1526 to King João III. Kongo already had enslaved people of its own, and Afonso sold war captives taken outside Kongo to Portuguese traders. This passage is in the translation of the historian John K. Thornton (2023).",
-    text: "Sire, Your Highness knows that our kingdom is losing its way, and we must provide the solution that this situation calls for. The cause of our troubles is the excessive permissiveness with which your trading agents and officials allow the men who come to this kingdom to establish shops and sell merchandise. These men engage in practices that we strictly forbid, and they scatter throughout our kingdom and dominions in such large numbers that many of our vassals, who had pledged obedience to us, have now renounced their obedience because they have a greater abundance of goods available to them than we do. ... However, we do not consider this harm as terrible as what we suffer each day when these traders carry away our native-born countrymen and the children of our nobles and vassals as well as relatives of ours. This continues because thieves and unscrupulous men, driven by their greed for goods from your kingdom, snatch them and sell them to these traders. ... In order to avoid it, we need only priests and a few people to teach in our kingdoms' schools. ... Please instruct your trading agents to send neither traders nor trading goods here because we do not wish to carry out trade and export slaves.",
+    intro: "Afonso I (Nzinga Mbemba) was king of Kongo from the early 1500s until the 1540s. Kongo was the strongest state in west-central Africa, and its kings had traded with Portugal since the 1480s. Afonso was a Christian, could read and write Portuguese, and wrote many letters to the kings of Portugal. He wrote this one on 6 July 1526 to King João III. Kongo already had enslaved people of its own, and Afonso sold war captives taken outside Kongo to Portuguese traders. This passage is translated by Luís Madureira in John K. Thornton's book on Afonso (2023). Words in brackets are explanations added for this lesson.",
+    text: "Sire, Your Highness knows that our kingdom is losing its way, and we must provide the solution that this situation calls for. The cause of our troubles is the excessive permissiveness [too much freedom] with which your trading agents and officials allow the men who come to this kingdom to establish shops and sell merchandise. These men engage in practices that we strictly forbid, and they scatter throughout our kingdom and dominions in such large numbers that many of our vassals, who had pledged obedience to us, have now renounced their obedience [stopped obeying us] because they have a greater abundance of goods available to them than we do. ... However, we do not consider this harm as terrible as what we suffer each day when these traders carry away our native-born countrymen and the children of our nobles and vassals as well as relatives of ours. This continues because thieves and unscrupulous [dishonest] men, driven by their greed for goods from your kingdom, snatch them and sell them to these traders. ... In order to avoid it, we need only priests and a few people to teach in our kingdoms' schools. ... Please instruct your trading agents to send neither traders nor trading goods here because we do not wish to carry out trade and export slaves.",
     questions: [
       "Audience and purpose: Afonso wrote to the king of Portugal. What does he want the king to do, and why was the king of Portugal the right person to ask?",
       "Point of view: Afonso complains first that his vassals \"have now renounced their obedience\" because traders sell to them directly. What does this complaint show about what Afonso, as a king, cared about most?",
