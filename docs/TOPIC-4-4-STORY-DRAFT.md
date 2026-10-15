@@ -6,11 +6,11 @@ Jeff started this build with "build 4.4" on 2026-10-14 (he asked for 4.5, and ch
 CED source file and the scholarship; the record of what they found is in
 `docs/TOPIC-4-4-CLAIM-LEDGER.md`, under "Review findings".
 
-**Resume here (2026-10-15, second session):** Phases 1 to 8 are committed and the Phase 9
-review loop is finished: three full passes (pass 2 rerun by this session), stopped on the
-three-pass safety valve with every finding fixed or logged in the claim ledger, and the Unit 4
-First & 10 fingerprint moved. Next: the browser suite on the final version, the topic audit
-record, and the Phase 10 report. Not shipped.
+**Build finished (2026-10-15, second session):** Phases 1 to 10 are done on this branch: three
+review passes (stopped on the three-pass safety valve, every finding fixed or logged in the claim
+ledger), the Unit 4 First & 10 fingerprint moved, the offline suite and the strict browser suite
+(brand fonts) green, and the topic audit written (`docs/topic-audits/topic-4-4-2026-10-15.md`).
+Not shipped: waiting for Jeff's "ship it".
 
 **Taught:** Green Thursday 2026-11-05, Silver Friday 2026-11-06, from Jeff's corrected November
 Canvas calendar (2026-10-14), already in `assets/data/announcements-schedule.js` as date-only
