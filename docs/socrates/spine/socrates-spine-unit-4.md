@@ -105,7 +105,7 @@ Strong answer checklist: Give one labor continuity (such as the mit’a reused f
 
 ## 4.5 Maritime Empires Maintained and Developed
 
-**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How European maritime empires used forced labor, colonial administration, and silver extraction to sustain themselves — and how American silver transformed global trade networks
+**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. Rulers built economic tools to keep their empires paying, and the money, goods, and people those tools moved reshaped work, families, and faith.
 
 **College Board key concepts.**
 - Unit 4: Learning Objective H (Learning Objective): Explain how rulers employed economic strategies to consolidate and maintain power throughout the period from 1450 to 1750.
@@ -121,15 +121,15 @@ Strong answer checklist: Give one labor continuity (such as the mit’a reused f
 - KC-4.1.IV.D.ii (Social Interactions and Organization): The Atlantic trading system involved the movement of labor—including enslaved persons and the mixing of African, American, and European cultures and peoples, with all parties contributing to this cultural synthesis.
 - KC-4.1.VI (Cultural Developments and Interactions): In some cases, the increase and intensification of interactions between newly connected hemispheres expanded the reach and furthered development of existing religions, and contributed to religious conflicts and the development of syncretic belief systems and practices.
 
-**Expected evidence terms.** mercantilism, VOC, British EIC, chartered company, monopoly, silver, Potosí, Manila Galleon, Atlantic trade, regional markets, Indian Ocean, peasant labor, artisan labor, Indian cotton, Chinese silk, Atlantic slave trade, gender, family, cultural synthesis, missionaries, religious conflict, Vodun, Santería, syncretism.
+**Expected evidence terms.** mercantilism, Navigation Act, Casa de Contratación, chartered company, joint-stock company, VOC, East India Company, monopoly, silver, Single Whip, Manila, China, Atlantic trading system, regional markets, Gujarati, Armenian, peasant, artisan, wool, linen, cotton, silk, gender, family, women, men, polygyny, demographic, Africa, cultural synthesis, creole, Africans, Indigenous Americans, Europeans, Christianity, Islam, missionaries, Jesuits, religious conflict, idolatry, Peru, syncretic, syncretism, Guadalupe, Tonantzin, Kongo, Vodou, Virgin of the Mountain.
 
-**AP skill focus.** Causation and comparison practice.
+**AP skill focus.** Claims and Evidence in Sources practice.
 
-**Checkpoint 1 prompt.** Explain how ONE mercantilist policy or chartered company helped a European state compete for overseas wealth or territory. Then explain one major change in exchange networks, such as global silver or Atlantic trade, AND one important continuity in Afro-Eurasian regional markets or commercial practices.
-Strong answer checklist: Explain how a state economic strategy increased competitive power. Explain one change in global/transoceanic exchange with specific evidence. Explain one regional commercial continuity and why it persisted.
+**Checkpoint 1 prompt.** Explain ONE way a European ruler used mercantilism (for example, a law like the Navigation Act) or a chartered company (the VOC or the English East India Company) to make an empire pay or to compete with a rival. Then explain ONE change in networks of exchange from 1450 to 1750 (silver pulled toward China, or the Atlantic trading system) and ONE continuity (regional markets that kept their old merchants and ways, or peasant and artisan work that continued and grew).
+Strong answer checklist: Name one tool (a mercantilist law or a chartered company) and say how it helped a ruler make money or beat a rival. Give one change in exchange: silver pulled toward China by its taxes, or the Atlantic system moving goods, wealth and enslaved people. Give one continuity: regional markets with their old merchants and practices, or peasant and artisan work that continued and grew.
 
-**Checkpoint 2 prompt.** Explain TWO effects of expanding global exchange from 1450 to 1750: (1) one social effect involving intensified peasant/artisan labor OR demographic, gender, or family changes associated with the trade of enslaved people; and (2) one belief-system effect involving religious expansion, conflict, or syncretism. Use a specific example for each and explain the mechanism.
-Strong answer checklist: Use one specific social-effect example and explain how exchange produced it. Use one specific belief-system example and explain how interaction produced it. Keep economic/social and religious effects distinct before connecting them.
+**Checkpoint 2 prompt.** Explain ONE way the trade in enslaved people changed families or communities in parts of Africa, and why it happened. Then explain ONE example of cultural mixing in the Atlantic world, and name the groups who contributed to it. Finally, compare TWO things religions did as contact grew (spread to new places, caused conflict, or blended into new beliefs): give an example of each, and say one way they were similar and one way they were different.
+Strong answer checklist: Give one change in families or communities in Africa, and the cause: the trade took more men than women. Give one example of Atlantic cultural mixing, and name at least two groups who contributed. Compare two things religions did (spread, conflict, or blending), with an example of each and one similarity and one difference.
 
 ## 4.6 Internal Challenges to State Power
 

@@ -138,11 +138,11 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'question', kind: 'frame-subtitle',
       title: 'Rulers built tools to make their empires pay. What did those tools move, and what did it change?',
-      subtitle: 'The Dutch East India Company\'s shipyard in Amsterdam, painted by Ludolf Bakhuysen, 1696.',
+      subtitle: 'The Dutch East India Company\'s shipyard in Amsterdam, painted by Ludolf Bakhuysen in 1696.',
       notes: {
         minutes: 1,
         land: [
-          'The picture is a real historical painting: Ludolf Bakhuysen, The Shipyard of the Dutch East India Company at Amsterdam, 1696, Rijksmuseum. The VOC built its own ships in its own yard on the Oostenburg island.',
+          'The picture is a real historical painting: Ludolf Bakhuysen, The Shipyard of the Dutch East India Company at Amsterdam, 1696, Mauritshuis, The Hague (inv. 8). The VOC built its own ships in its own yard on the island of Oostenburg, with its great warehouse behind; East Indiamen and yachts fire a salute.',
           'It sets the question because it is one of the rulers\' tools at work: a company chartered by the Dutch state, building the ships that carried its trade and its soldiers.',
           'The question is all four objectives in a ninth grader\'s words: the tools (H), what they moved (I), and what it changed (J and K).'
         ],
@@ -194,7 +194,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'mun', kind: 'source-quote', eyebrow: 'Claim It · Model',
-      kc: 'KC-4.1.IV.C', title: 'An English merchant states a rule.',
+      kc: 'Unit 4: Learning Objective H', title: 'An English merchant states a rule.',
       footer: 'A claim is what the author wants you to believe. Say it in one sentence, in your own words.',
       template: {
         quote: 'The ordinary means therefore to encrease our wealth and treasure is by Forraign Trade, wherein wee must ever observe this rule; to sell more to strangers yearly than wee consume of theirs in value.',
@@ -246,14 +246,14 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-4.3.III.ii', title: 'A company leader writes home, 1614.',
       footer: 'Find the claim, then the reason the author gives for it.',
       template: {
-        quote: 'Your Honours should know by experience that trade in Asia must be driven and maintained under the protection and favour of Your Honours\' own weapons, and that the weapons must be paid for by the profits from the trade; so that we cannot carry on trade without war nor war without trade.',
+        quote: 'The gentlemen [the directors] ought to know well by experience that in the Indies trade must be carried on and kept up under the protection and favor of your own weapons, and that the weapons must be paid for out of the profits the trade earns, so that trade cannot be kept up without war, nor war without trade.',
         attribution: { author: 'Jan Pieterszoon Coen, VOC official in Asia', work: 'Letter to the company\'s directors', year: '1614' },
         notice: 'What does Coen claim about trade and war? What reason does he give?'
       },
       notes: {
         minutes: 2,
         land: [
-          'Jan Pieterszoon Coen (1587 to 1629) was the VOC\'s director-general of trade in Asia in 1614 and became governor-general in 1618. He wrote this to the company\'s directors, the Heeren XVII (Gentlemen Seventeen), on 27 December 1614. The English is C. R. Boxer\'s translation in The Dutch Seaborne Empire, 1600 to 1800 (1965).',
+          'Jan Pieterszoon Coen (1587 to 1629) was the VOC\'s director-general of trade in Asia in 1614 and became governor-general in 1618. He wrote this from Bantam to the company\'s directors, the Heeren XVII (Gentlemen Seventeen), on 27 December 1614. The Dutch is printed in H. T. Colenbrander, ed., Jan Pieterszoon Coen: Bescheiden omtrent zijn bedrijf in Indië, vol. 1 (1919), pp. 97 to 98; the English is translated for BeHistorical from it. C. R. Boxer\'s often-quoted English (The Dutch Seaborne Empire, 1965) words it slightly differently: "we cannot carry on trade without war nor war without trade."',
           'Claim: trade and war cannot be separated. Reason: trade in Asia needs the protection of weapons, and the weapons are paid for by the trade.',
           'This is the company as a weapon (KC-4.1.IV.C) and economic dispute turning into conflict (KC-4.3.III.ii) in one sentence. Coen later took Jakarta by force (1619) and renamed it Batavia; keep that for the deep reading.',
           'Sourcing note for later: Coen was arguing for more money and soldiers from his directors. That is his purpose, and it is why he states the claim so strongly.'
@@ -279,9 +279,9 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 3,
         land: [
-          'Indian Ocean (CED example: Muslim–European rivalry): in 1509 the Portuguese under Francisco de Almeida defeated a fleet of Mamluk Egypt and the sultan of Gujarat off Diu. After the Ottomans conquered Egypt in 1517, Ottoman fleets fought the Portuguese in the Red Sea, the Persian Gulf and the western Indian Ocean through the 1500s, including the siege of Diu in 1538. The dispute was over the spice trade and its routes: around Africa, or through the Red Sea to the Mediterranean.',
-          'Sahara (CED example: Moroccan conflict with Songhai): Sultan Ahmad al-Mansur sent an army with firearms across the desert, which defeated Songhai at Tondibi in 1591. His aims included West Africa\'s gold and the Saharan salt mines (Taghaza had been disputed in the 1580s). 3.1 taught the battle; here, the motive.',
-          'Europe: VOC officials on Ambon executed English East India Company men, with Japanese soldiers in VOC service and a Portuguese, in 1623, accusing them of a plot. England and the Dutch Republic fought three wars at sea, 1652 to 1654, 1665 to 1667 and 1672 to 1674, largely over trade and shipping; the 1651 Navigation Act was one cause of the first.',
+          'Indian Ocean (CED example: Muslim–European rivalry): in 1509 the Portuguese under Francisco de Almeida defeated a fleet of Mamluk Egypt, the sultan of Gujarat and the Zamorin of Calicut off Diu (3 February 1509). After the Ottomans conquered Egypt in 1517, Ottoman fleets fought the Portuguese in the Red Sea, the Persian Gulf and the western Indian Ocean through the 1500s, including the siege of Diu in 1538. The dispute was over the spice trade and its routes: around Africa, or through the Red Sea to the Mediterranean.',
+          'Sahara (CED example: Moroccan conflict with Songhai): Sultan Ahmad al-Mansur sent an army of about 4,000 with firearms, under Judar Pasha, across the desert, which defeated Songhai at Tondibi on 13 March 1591. His aims included West Africa\'s gold (he seems to have believed Songhai controlled the gold mines, which it did not) and the Saharan salt mines (he had demanded Taghaza\'s revenues in the 1580s). 3.1 taught the battle; here, the motive.',
+          'Europe: on 9 March 1623 VOC officials on Ambon executed ten English East India Company men, nine Japanese soldiers in VOC service and a Portuguese man, accusing them, on confessions taken under torture, of a plot to seize the fort; historians still argue over whether a plot existed (Alison Games, Inventing the English Massacre, 2020). England and the Dutch Republic fought three wars at sea, 1652 to 1654, 1665 to 1667 and 1672 to 1674, largely over trade and shipping; the 1651 Navigation Act was one cause of the first.',
           'Continuity and change in one slide: fighting over trade was old (Unit 2 is full of it); the tools were new.'
         ],
         ask: 'For each branch, which trade were the rivals fighting over?',
@@ -321,9 +321,9 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 3,
         land: [
-          'Potosí (1545) and Zacatecas (1546). Spanish America produced most of the world\'s silver in this period; historians\' estimates are around 80 percent between 1500 and 1800 (Flynn and Giráldez). Do not give Potosí alone a share of world output.',
+          'Potosí (1545) and Zacatecas (1546). Spanish America produced most of the world\'s silver in this period; Flynn and Giráldez, citing Barrett and Cross, put Spanish America\'s output at about 150,000 tons between 1500 and 1800, "perhaps exceeding 80%" of world production. Japan was the other great source, perhaps 30 percent of world output in the late 1500s and early 1600s. The old map key\'s "60%" was the viceroyalty of Peru\'s share in Cross (1983), not Potosí\'s alone; do not give Potosí alone a share of world output.',
           'The Single Whip (yitiao bianfa) combined land taxes and labor service into payments in silver. It spread through the 1500s and was applied across the empire under Zhang Juzheng around 1580. Tens of millions of Chinese households now needed silver, and China mined little.',
-          'Silver was worth more against gold in China than in Europe: around 1600 an ounce of gold bought about six to eight ounces of silver in China and about twelve or more in Europe (Flynn and Giráldez, 1995). Merchants who moved silver to China profited on the metal itself.',
+          'Silver was worth more against gold in China than elsewhere: in the early 1500s an ounce of gold bought about six ounces of silver in China against about eleven or twelve in Europe, and in the late 1500s about five and a half to seven and a half at Canton (Von Glahn, 1996, as cited by Flynn and Giráldez). Merchants who moved silver to China profited on the metal itself.',
           'Manila was founded in 1571; the galleon route across the Pacific had been opened in 1565. Chinese junks from Fujian brought silk and porcelain to trade for the silver. The cause runs from China\'s side as much as Spain\'s: KC-4.1.IV\'s "satisfy Chinese demand for silver."'
         ],
         ask: 'If China had not taxed in silver, what would have happened to the silver?',
@@ -335,12 +335,12 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'manila', kind: 'frame-subtitle',
       kc: 'KC-4.1.IV',
       title: 'Who ran the silk-for-silver trade at Manila?',
-      subtitle: 'A Chinese merchant and his wife, painted in Manila about 1590 for the Boxer Codex.',
+      subtitle: 'Manila and its bay, in a Dutch view painted about 1665. The Dutch were Spain\'s rivals here.',
       notes: {
         minutes: 1,
         land: [
-          'The picture is a real historical object: a page of the Boxer Codex, a manuscript made in Manila about 1590, probably for the governor, showing the peoples the Spanish met in Asia (Lilly Library, Indiana University). This page shows a "Sangley," the Spanish name for the Chinese merchants and craftsmen of Manila, and his wife.',
-          'The point: the Spanish galleon brought silver, but Chinese merchants from Fujian brought the goods, and Chinese craftsmen and traders filled the Parián, Manila\'s Chinese quarter, and far outnumbered the Spanish. The regional trade was older than the city.',
+          'The picture is a real historical object: a bird\'s-eye view of Manila by Johannes Vingboons, a Dutch mapmaker, painted about 1665 (Nationaal Archief, The Hague). Vingboons never went to Manila; he worked from the reports of Dutch sailors, whose company was Spain\'s rival in these seas. It shows the walled Spanish city, the bay and the ships. The lecture card shows a Chinese merchant and his wife from the Boxer Codex, painted in Manila about 1590 (Lilly Library, Indiana University); that picture is too small to project.',
+          'The point: the Spanish galleon brought silver, but Chinese merchants from Fujian brought the goods (Morga, 1609: thirty or forty junks a year, which took only silver in return), and Chinese craftsmen and traders filled the Parián, Manila\'s Chinese quarter, and far outnumbered the Spanish. The regional trade was older than the city.',
           'It is the hinge from silver (the change) to regional markets (the continuity).'
         ],
         ask: 'Who needed whom at Manila?',
@@ -399,9 +399,9 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-4.2.II.A', title: 'The same work, more of it, for buyers farther away.',
       template: {
         panels: [
-          { visual: { url: '../assets/images/topics/4-5/spinning-woman-dutch.jpg', alt: 'PLACEHOLDER' }, title: 'Western Europe: wool and linen' },
-          { visual: { url: '../assets/images/topics/4-5/chintz-coromandel.jpg', alt: 'PLACEHOLDER' }, title: 'India: cotton' },
-          { visual: { url: '../assets/images/topics/4-5/tiangong-kaiwu-drawloom-1637.jpg', alt: 'A woodblock print of a tall Chinese draw loom, with one weaver seated at the front and a second worker perched high on the frame pulling the pattern cords' }, title: 'China: silk' }
+          { visual: { url: '../assets/images/topics/4-5/spinner-maes-c1655.jpg', alt: 'Oil painting of an old woman in a Dutch house, seated at a spinning wheel beside a table with a red cloth, a reel hanging on the wall behind her', credit: 'Nicolaes Maes, The Spinner, about 1655 · Rijksmuseum · Public domain', position: '55% 50%' }, title: 'Western Europe: wool and linen' },
+          { visual: { url: '../assets/images/topics/4-5/palampore-india-early-1700s.jpg', alt: 'A large painted cotton bed cover from India: a flowering tree rising from a small hill, with a patterned border of flowers', credit: 'Painted cotton bed cover (palampore), India, early 1700s · Metropolitan Museum of Art · Public domain', position: '50% 40%' }, title: 'India: cotton' },
+          { visual: { url: '../assets/images/topics/4-5/gengzhitu-1696-drawloom.jpg', alt: 'Black-and-white woodblock print of a tall Chinese silk draw loom inside a house, with one weaver seated at the front and a second worker high on the frame working the pattern cords, a poem in Chinese above', credit: 'Weaving on a draw loom, Pictures of Tilling and Weaving, China, printed 1696 · Metropolitan Museum of Art · Public domain', position: '50% 62%' }, title: 'China: silk' }
         ]
       },
       notes: {
@@ -424,9 +424,9 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         tag: 'Demographic change', place: 'West and West Central Africa', date: '1500s to 1700s',
         rows: [
-          { label: 'Taken', text: 'About **two males** for every **female** carried across the Atlantic' },
+          { label: 'Taken', text: 'About **two of every three** captives carried across the Atlantic were **male**' },
           { label: 'Left', text: 'In some regions, communities with **more women than men**' },
-          { label: 'Families', text: 'More men took **several wives**; women did **more of the farming**' },
+          { label: 'Families', text: 'Women did **more of the farming**; some historians add that more men took **several wives**' },
           { label: 'Inside Africa', text: '**More women and girls** were enslaved within Africa itself' }
         ],
         proves: 'The trade changed who lived in a village, and that changed how families worked.'
@@ -435,8 +435,8 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-4.2.III.C: "some notable gender and family restructuring occurred, including demographic changes in Africa that resulted from the trade of enslaved persons."',
-          'The sex ratio: the Atlantic trade carried roughly two males for every female (Slave Voyages estimates; the male share varied by region and period).',
-          'The family changes are historians\' arguments from that ratio and from local evidence (Patrick Manning, Slavery and African Life, 1990; John Thornton): in regions hit hardest, such as parts of West Central Africa, women outnumbered men; polygyny spread; women carried more of the farming; and African buyers kept more enslaved women, whom the Atlantic market wanted less. Say "historians argue."',
+          'The sex ratio: roughly two of every three captives in the Atlantic trade were male; one summary of the shipping data averages about 179 males per 100 females, varying by region and century (Slave Voyages data; Eltis and Engerman).',
+          'The family changes are historians\' arguments from that ratio and from local evidence (Patrick Manning, Slavery and African Life, 1990; John Thornton): in regions hit hardest, such as parts of West Central Africa, women outnumbered men; women carried more of the farming; and African buyers kept more enslaved women, whom the Atlantic market wanted less. Manning argues the shortage of men strengthened polygyny; James Fenske (2013) finds the long-run evidence for that thin, so present it as an argument. Say "historians argue."',
           'Demographic change also meant population loss or stagnation in some regions. The effects varied: not every region or society changed the same way.'
         ],
         ask: 'Why would taking more men than women change how a family worked?',
@@ -471,7 +471,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'faith', kind: 'branch-tree', eyebrow: 'Faith · Compare',
-      kc: 'KC-4.1.VI', title: 'Religions traveled with the ships, and did three different things.',
+      kc: 'Unit 4: Learning Objective K', title: 'Religions traveled with the ships, and did three different things.',
       footer: 'Similar: old religions reached new people. Different: some were fought over, and some blended into something new.',
       template: {
         claimLabel: 'Compare',
@@ -498,11 +498,11 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'virgin', kind: 'frame-subtitle',
       kc: 'KC-4.1.VI',
       title: 'Two traditions in one painting.',
-      subtitle: 'The Virgin of the Mountain, painted in Potosí about 1720: Mary is the silver mountain itself.',
+      subtitle: 'The Virgin of the Mountain, painted in Potosí in the 1700s: Mary is the silver mountain itself.',
       notes: {
         minutes: 1,
         land: [
-          'The picture is a real historical painting: La Virgen del Cerro, by an unknown painter, Potosí, about 1720, Casa Nacional de Moneda, Potosí. The Virgin Mary\'s robe is the Cerro Rico, the silver mountain, with tiny figures of miners and animals on its slopes; the Trinity crowns her above, and a pope and a king kneel below.',
+          'The picture is a real historical painting: La Virgen del Cerro, by an unknown painter in Potosí, 1700s, in the Casa Nacional de Moneda, Potosí (photograph by Dan Lundberg, 2017, CC BY-SA 2.0; a second version, dated 1720, is in the Museo Nacional de Arte, La Paz). Mary\'s face and hands appear on the Cerro Rico, the silver mountain, whose slopes carry tiny figures of people and animals; the Father and the Son crown her, with the Holy Spirit above, and a pope, a cardinal and a bishop kneel at the left and a king at the right, around a globe.',
           'It blends Christian painting with the Andean idea of sacred mountains and of the earth as a mother (Pachamama). Art historians read it that way; some caution that the painter\'s own intention is not recorded. Say "art historians read it as."',
           'It also ties the day together: the silver mountain of Potosí, the source of the silver that went to China, shown as a Christian and Andean holy figure.'
         ],
@@ -512,17 +512,17 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'sahagun', kind: 'source-quote', eyebrow: 'Claim It · Your Turn',
-      kc: 'KC-4.1.VI', title: 'A friar is suspicious, about 1576.',
+      kc: 'KC-4.1.VI', title: 'A friar is suspicious, in the 1570s.',
       footer: 'Find his claim. Then ask: does his own evidence prove it?',
       template: {
-        quote: '__SAHAGUN_QUOTE__',
-        attribution: { author: 'Bernardino de Sahagún, Franciscan friar in Mexico', work: 'General History of the Things of New Spain', year: 'c. 1576' },
+        quote: '[N]ow that the church of Our Lady of Guadalupe is built there, they also call her Tonantzin, taking the occasion from the preachers, who called Our Lady, the Mother of God, Tonantzin. ... It seems to be a satanic invention to cover up idolatry under the confusion of this name Tonantzin, and they now come to visit this Tonantzin from very far away, as much as before.',
+        attribution: { author: 'Bernardino de Sahagún, Franciscan friar in Mexico', work: 'General History of the Things of New Spain', year: '1570s' },
         notice: 'What does Sahagún claim the people at Tepeyac are doing? What evidence does he give?'
       },
       notes: {
         minutes: 2,
         land: [
-          '__SAHAGUN_NOTE__',
+          'Bernardino de Sahagún (about 1499 to 1590), a Franciscan friar who worked with Nahua scholars for decades on a history of Nahua life and belief. The passage is from the appendix to Book 11 of his General History of the Things of New Spain, finished in the 1570s. The English is translated for BeHistorical from the Spanish text in Carlos María de Bustamante\'s edition (Mexico, 1830), vol. 3, pp. 321 to 322. Ellipsis marks the cut. Note what students usually miss: Sahagún says the Spanish preachers themselves had called Mary Tonantzin.',
           'Students find the claim themselves (3.A): Sahagún claims that the Nahua who come to Tepeyac may still be honoring their old goddess under a Christian name. His evidence is the name they use, Tonantzin, and that people come from far away, as they did before.',
           'Push one step further: a claim is not the same as proof. Sahagún was a missionary worried about hidden idolatry; Nahua Christians may simply have used an old word for "our mother" for Mary. That is why this is a source about syncretism, and about what a Spanish friar feared.',
           'The apparition story of Juan Diego (dated 1531) was first published in 1648 and 1649; the shrine was already a center of devotion by the 1550s. Do not teach the apparition as an event of 1531.'
@@ -582,16 +582,16 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'sharpen', kind: 'sharpen', eyebrow: 'Sharpen the Claim',
-      kc: 'KC-4.1.IV',
+      kc: 'Unit 4: Learning Objective J',
       footer: 'A change and a continuity, each with a named example and the reason.',
       template: {
-        weak: 'Trade changed after 1500.',
+        weak: 'The new trade changed society.',
         strong: '**Change:** From ______, ______ changed because ______. **Continuity:** But ______ kept going, **because** ______.'
       },
       notes: {
         minutes: 2,
         land: [
-          'The weak claim names no continuity, no evidence and no reason.',
+          'The weak claim names no continuity, no evidence and no reason. It is Learning Objective J in its laziest form: how did political, economic and cultural factors affect society?',
           'The frame asks for a change and a continuity, each with a named example, and the reason: the shape both checkpoints ask for.',
           'This is a sentence frame, not a model answer: every case in this topic is asked for somewhere (First & 10 Q1 and Q3, Checkpoints 1 and 2), so the content is the students\' own. Have pairs fill it in aloud with a case they choose. Do not write a finished claim on the board.'
         ],
@@ -638,7 +638,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 7,
         land: [
-          '__EVIDENCE_NOTE__',
+          'Six real objects: a VOC share receipt (Enkhuizen, 1606), a Potosí silver coin (1651), women reeling silk in the 1696 Pictures of Tilling and Weaving, a painted Indian cotton made for sale abroad (early 1700s), Antonio and Manuel de Arellano\'s painted copy of the Virgin of Guadalupe (1691, LACMA), and a figures card from the Atlantic shipping records.',
           'Observation before inference: what the source shows, then what it suggests, then what it cannot tell you.',
           'Every picture in the Evidence Lab is a real historical object; none is AI-generated.'
         ],
@@ -669,7 +669,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 1,
         land: [
-          '__CLOSE_NOTE__',
+          'The picture: Andries Beeckman, The Castle of Batavia, about 1662 (Rijksmuseum SK-A-19). Beeckman worked in Batavia, the VOC\'s Asian headquarters, which Coen took by force in 1619. A market of Javanese, Chinese and other Asian traders and townspeople fills the foreground, and the company\'s castle stands behind: a company built to make an empire pay, inside an Asian market that kept going. The spine in one picture.',
           'This sentence answers all four learning objectives: the tools (H), what they moved (I), and what it changed in work (I), families and society (J), and faith (K).',
           'Hand off to 4.6 in the words of the unit story map.'
         ],

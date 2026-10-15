@@ -160,7 +160,64 @@ window.BEHISTORICAL_LESSON = {
     title: "Making Empires Pay: How It Worked",
     intro: "The First & 10 tells the story. These cards take four parts of it apart: how a company could be sent to war, why silver went to China, who did the extra work and what the slave trade did to families in Africa, and how to compare what religions did when they traveled.",
     videos: [],
-    segments: "__SEGMENTS__"
+    segments: [
+      {
+        title: "How a Company Could Fight a War",
+        bullets: [
+          "A **joint-stock company** raised money from many investors at once, so no single merchant had to risk his fortune on one voyage. The VOC's investors could sell their shares to others in Amsterdam, so money kept coming in even when voyages took years.",
+          "The charter turned the company into a tool of its government. The VOC could build forts, keep soldiers, make treaties, and wage war. Because only one Dutch company could trade with Asia, the profits stayed in Dutch hands, which is what a **mercantilist** government wanted.",
+          "Rivals used the same tools against each other. The Dutch and English companies fought over the spice islands, and in 1623 VOC officials on Ambon executed ten English company men. England and the Dutch Republic then fought three wars at sea between 1652 and 1674, largely over trade and shipping."
+        ],
+        image: {
+          title: "A sea battle between England and the Dutch Republic",
+          caption: "The Dutch flagship Gouden Leeuw at the Battle of Texel in 1673, during the third Anglo-Dutch War, painted by Willem van de Velde the Younger in 1687. Het Scheepvaartmuseum, Amsterdam.",
+          url: "../assets/images/topics/4-5/battle-texel-van-de-velde-1687.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:De_Gouden_Leeuw_tijdens_de_Slag_bij_Kijkduin_(Battle_of_Texel)_1673_Willem_van_de_Velde.jpg"
+        }
+      },
+      {
+        title: "Why the Silver Went to China",
+        bullets: [
+          "Ming China's **Single Whip** reform asked families to pay their taxes in silver. China mined little silver of its own, so every household had to get silver from somewhere, and silver bought more in China than in Europe.",
+          "That gap pulled silver toward China from both sides of the world. At Manila, Chinese merchants from Fujian traded silk and porcelain for American silver. A Spanish official there, Antonio de Morga, wrote in 1609 that the Chinese took \"silver and reals [Spanish coins], for they do not like gold, nor any other goods in exchange.\"",
+          "The Spanish king worried that silver was flowing to China instead of Spain, and in 1593 he limited the galleons to two a year. Merchants carried more than the rules allowed, because the profits were so large."
+        ],
+        image: {
+          title: "A Chinese merchant and his wife at Manila, about 1590",
+          caption: "A \"Sangley,\" the Spanish word for the Chinese merchants and craftsmen of Manila, and his wife, from the Boxer Codex, a manuscript made in Manila about 1590. Lilly Library, Indiana University.",
+          url: "../assets/images/topics/4-5/sangley-boxer-codex-c1590.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Sangley_in_Boxer_Codex.jpg"
+        }
+      },
+      {
+        title: "Who Did the Extra Work, and What the Trade Took",
+        bullets: [
+          "**Peasant and artisan labor** grew in many regions. In the Netherlands and England, merchants paid rural families to spin and weave at home. In India, company agents paid weavers in advance for cloth. In China, families raised silkworms and wove silk. The work was old; there was more of it, for buyers far away.",
+          "Much of that work was done by women and girls, at home, between farm chores and child care.",
+          "About two of every three captives carried in the Atlantic slave trade were male, and in parts of West Central Africa women came to outnumber men. Historians argue that women then did more of the farming and that more women and girls were enslaved within Africa. In the Americas, meanwhile, Africans, Indigenous Americans, and Europeans together made new mixed cultures, which historians call **cultural synthesis**."
+        ],
+        image: {
+          title: "A weaver's workshop in the Netherlands, 1659",
+          caption: "Two weavers at a large loom, with a spinning wheel and a cradle in the same room, painted by Cornelis Decker in 1659. Rijksmuseum.",
+          url: "../assets/images/topics/4-5/weavers-decker-1659.jpg",
+          sourceUrl: "https://www.rijksmuseum.nl/en/collection/SK-A-2562"
+        }
+      },
+      {
+        title: "Comparing What Religions Did",
+        bullets: [
+          "Ask the same question of each case: when a religion reached new people, did it **spread**, did it cause a **conflict**, or did it **blend** with what they already believed?",
+          "Spread: **missionaries** carried Christianity to the Americas, the Philippines and Kongo, and Jesuits reached the Ming court. Conflict: **religious conflict** in Peru, where priests campaigned against Andean religion from about 1610. Blend: **syncretic** beliefs and practices at Tepeyac, in Kongo crucifixes, and in Vodou in Saint-Domingue in the 1700s.",
+          "Often all three happened in one place. In Potosí, the silver mountain itself was painted as the Virgin Mary, joining Christian painting to Andean beliefs about sacred mountains, while priests elsewhere in Peru tried to stamp those beliefs out."
+        ],
+        image: {
+          title: "The Virgin of the Mountain, Potosí, 1700s",
+          caption: "The Virgin Mary painted as the Cerro Rico, the silver mountain of Potosí, by an unknown painter in the 1700s. Casa Nacional de Moneda, Potosí; photograph by Dan Lundberg, 2017, CC BY-SA 2.0.",
+          url: "../assets/images/topics/4-5/virgen-del-cerro-potosi.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:20170808_Bolivia_1411_Potos%C3%AD_sRGB_(26204035019).jpg"
+        }
+      }
+    ]
   },
 
   map: {
@@ -186,11 +243,20 @@ window.BEHISTORICAL_LESSON = {
 
   evidenceLab: {
     title: "Evidence Lab: Tools, Flows, and What They Changed",
-    intro: "__EVIDENCE_INTRO__",
+    intro: "Use the cards to build one continuity-and-change claim from two real sources: a Dutch share receipt, a silver coin from Potosí, a Chinese print of women reeling silk, a painted Indian cotton, a Mexican painting of the Virgin of Guadalupe, and figures from the Atlantic shipping records.",
     prompt: "Choose one card that shows something new and one that shows something that kept going, and explain what each shows, what it suggests, and what it cannot tell you."
   },
 
-  primarySource: "__PRIMARY__",
+  primarySource: {
+    title: "Primary Source: Antonio de Morga on the Chinese Trade at Manila, 1609",
+    intro: "Antonio de Morga was a Spanish lawyer and official who served in the government of the Philippines in the 1590s and early 1600s. In 1609, in Mexico, he published a history of the islands, Events in the Philippine Islands, for Spanish readers. In these passages he describes the Spanish king's worry about the silver trade, and the Chinese merchants who sailed to Manila each spring. The translation is Henry E. J. Stanley's (Hakluyt Society, London, 1868); words in brackets are explanations.",
+    text: "As this trade had so much increased, it had inflicted great loss and injury on the merchandise of Spain which was embarked for Peru and New Spain [Mexico], and upon the royal duties which used to be levied upon them ... and they used to send much silver to the Philippines for their purchases, which in that manner every year flowed out of the realms of His Majesty into the possession of the pagans [the Chinese, who were not Christians]. ... Usually there come from great China to Manila a large number of somas and junks, which are large ships, laden with merchandise; and each year thirty usually come, and sometimes forty ships ... The goods which they usually bring, and sell to the Spaniards, are raw silk ... much smooth velvet ... damasks, satins, taffetans [kinds of silk cloth] ... and white cotton tablecloths ... Usually the price of the raw silk, and silk stuffs ... is settled at leisure, and by persons who understand the business, both on the part of the Spaniards and of the Sangleys [the Chinese merchants], and what is given them for it, is silver and reals [Spanish silver coins], for they do not like gold, nor any other goods in exchange, nor do they carry any to China.",
+    questions: [
+      "What did the Chinese merchants bring to Manila, and what did they take back to China? Use Morga's words as evidence.",
+      "Morga reports that silver \"every year flowed out of the realms of His Majesty into the possession of the pagans.\" Using what you know about mercantilism, explain why a Spanish king would see that as a problem.",
+      "Continuity and change: what about this trade was new in the 1500s, and what kept going the way Chinese merchants had already traded in Southeast Asia? Use one detail from the source for each."
+    ]
+  },
 
   beSurreal: {
     title: "BeSurreal: You Raise Silkworms near Suzhou, c. 1600",
@@ -202,7 +268,7 @@ window.BEHISTORICAL_LESSON = {
 
   beInTheRoom: {
     url: '',
-    desc: "__ROOM_DESC__"
+    desc: "Sit on Manila's council in 1594 and decide how to keep the silver-for-silk trade paying for the colony, when the king of Spain wants to limit it, Chinese merchants run it, and rivals want to take it."
   }
 
 };

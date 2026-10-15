@@ -6,7 +6,7 @@ Jeff started this build with "Build 4,5" on 2026-10-15, read as "build 4.5": Top
 against the CED source file and the scholarship; the record of what they found is in
 `docs/TOPIC-4-5-CLAIM-LEDGER.md`, under "Review findings".
 
-**Resume here (2026-10-15):** Phases 1 to 5 done; Phase 7 in progress. Written and committed as work in progress: deck (`teacher/data/topic-4-5-*`, pages, DECKS and TOOLS entries), deep reading, map, BeInTheRoom (The Manila Silver Council; the Potosí scenario archived), schedule, Canvas overview. Still placeholders (`__...__` strings) in `assets/data/lesson-4-5-maritime-empires-maintained.js`, `assets/data/lesson-4-5-renderer-config.js` and the teaching base: lecture segments, Primary Source (Morga), Skill Builder (Coen model, Sahagún practice), Evidence Lab images, `stableImages`, the Sahagún quote, deck pictures (`assets/images/topics/4-5/`, not yet saved). Next: fill those from the fact-check and picture reports, write the claim ledger, then Phase 9.
+**Resume here (2026-10-15):** Phases 1 to 8 built and committed; every placeholder filled; offline suite green except readings-golden.js (by design until the fingerprint moves). Next: screenshots and the browser suite, then the Phase 9 review loop (no pass run yet).
 
 **Taught:** Green Monday 2026-11-09, Silver Tuesday 2026-11-10, from Jeff's corrected November
 Canvas calendar (2026-10-14), already in `assets/data/announcements-schedule.js` as date-only
@@ -259,7 +259,7 @@ two or more religions. At Tepeyac, near Mexico City, Nahua Christians prayed to 
 Guadalupe at a hill where, a Spanish friar named Bernardino de Sahagún claimed around 1576, they
 had once honored a goddess they called Tonantzin, "our mother," and he suspected they still did.
 In Kongo, Christian crucifixes were carved in Kongo style and given Kongo meanings. In Potosí,
-around 1720, a painter showed the Virgin Mary as the silver mountain itself, which mixes Christian
+in the 1700s, a painter showed the Virgin Mary as the silver mountain itself, which mixes Christian
 art with the Andean idea of a sacred mountain. In the 1700s, enslaved Africans in the French
 colony of Saint-Domingue (Haiti) built **Vodou** from West and Central African religions and
 Catholic saints. Compare them: everywhere, old religions reached new people; in some places they

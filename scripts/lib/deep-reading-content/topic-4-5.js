@@ -119,7 +119,7 @@ module.exports = {
         {
           heading: 'The Indian Ocean: spices and who would carry them',
           blocks: [
-            { p: `When the Portuguese reached the Indian Ocean they tried to take the spice trade for themselves, by force and by selling passes to other ships (Topic 4.4). That threatened the Muslim states whose ports and merchants carried spices through the Red Sea to Egypt and on to the Mediterranean. In <span class="num">1509</span> a fleet of Mamluk Egypt and the sultan of Gujarat fought the Portuguese off the port of Diu, in western India, and lost. After the Ottoman Empire conquered Egypt in <span class="num">1517</span>, Ottoman fleets fought the Portuguese in the Red Sea, the Persian Gulf and the western Indian Ocean through the 1500s, besieging Diu in <span class="num">1538</span>. The dispute was economic: which route, and whose ships, would carry the spices.` },
+            { p: `When the Portuguese reached the Indian Ocean they tried to take the spice trade for themselves, by force and by selling passes to other ships (Topic 4.4). That threatened the Muslim states whose ports and merchants carried spices through the Red Sea to Egypt and on to the Mediterranean. In <span class="num">1509</span> a fleet of Mamluk Egypt, the sultan of Gujarat and the ruler of Calicut fought the Portuguese off the port of Diu, in western India, and lost. After the Ottoman Empire conquered Egypt in <span class="num">1517</span>, Ottoman fleets fought the Portuguese in the Red Sea, the Persian Gulf and the western Indian Ocean through the 1500s, besieging Diu in <span class="num">1538</span>. The dispute was economic: which route, and whose ships, would carry the spices.` },
             { p: `The Portuguese never closed the old route. By the middle of the 1500s spices were again reaching the Mediterranean through the Red Sea in large amounts, and Muslim merchants kept trading.` }
           ]
         },
@@ -133,12 +133,12 @@ module.exports = {
         {
           heading: 'Europe\'s rivals: spices and shipping',
           blocks: [
-            { p: `The European companies fought each other too. The Dutch and English East India companies competed for the spice islands of Southeast Asia, and in <span class="num">1623</span> VOC officials on the island of Ambon arrested and executed ten English company men, along with Japanese soldiers in VOC service and a Portuguese man, accusing them of plotting to seize the Dutch fort. The English called it the Amboyna massacre, and it embittered relations for decades.` },
+            { p: `The European companies fought each other too. The Dutch and English East India companies competed for the spice islands of Southeast Asia, and in <span class="num">1623</span> VOC officials on the island of Ambon arrested and executed ten English company men, along with nine Japanese soldiers in VOC service and a Portuguese man, accusing them, on confessions taken under torture, of plotting to seize the Dutch fort; historians still argue over whether any plot existed. The English called it the Amboyna massacre, and it embittered relations for decades.` },
             { p: `At home, England and the Dutch Republic fought three wars at sea, in <span class="num">1652</span> to <span class="num">1654</span>, <span class="num">1665</span> to <span class="num">1667</span> and <span class="num">1672</span> to <span class="num">1674</span>, largely over trade and shipping. The Navigation Act of <span class="num">1651</span>, which shut Dutch ships out of England's trade, was one cause of the first. Mercantilism and the rivalry were the same story: if one country's gain is another's loss, trade is a kind of war.` },
             { note: {
               kind: 'howknow',
               label: 'How we know',
-              html: `The company leaders said so themselves. In <span class="num">1614</span> Jan Pieterszoon Coen, then the VOC's director-general of trade in Asia, wrote to the company's directors that "we cannot carry on trade without war nor war without trade" (C. R. Boxer's translation). Coen was asking for more ships and soldiers, so the sentence is an argument as well as a description, but it shows how the company's own leaders understood the business.`
+              html: `The company leaders said so themselves. In <span class="num">1614</span> Jan Pieterszoon Coen, then the VOC's director-general of trade in Asia, wrote to the company's directors that trade in Asia "must be carried on and kept up under the protection and favor of your own weapons, and that the weapons must be paid for out of the profits the trade earns, so that trade cannot be kept up without war, nor war without trade" (translated from the Dutch of H. T. Colenbrander's edition of Coen's papers, 1919). Coen was asking for more ships and soldiers, so the sentence is an argument as well as a description, but it shows how the company's own leaders understood the business.`
             } }
           ]
         }
@@ -177,7 +177,7 @@ module.exports = {
           heading: 'Why China set the price',
           blocks: [
             { p: `Ming China had tried paper money and abandoned it, and through the 1500s its government folded many taxes and labor duties into a single payment in silver. Historians call this the <span class="kt">Single Whip</span> reform; the minister Zhang Juzheng pushed it across the empire around <span class="num">1580</span>. Tens of millions of Chinese households now needed silver every year to pay their taxes, and China mined little of its own.` },
-            { p: `So silver was worth more in China than in Europe. Around <span class="num">1600</span>, an ounce of gold bought about six to eight ounces of silver in China, and about twelve or more in Europe. A merchant who carried silver from Europe or the Americas to China made money on the silver itself, before he bought anything. That gap is the engine of the whole trade. In the College Board's words, the silver was used "to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver."` }
+            { p: `So silver was worth more in China than in Europe. In the 1500s, an ounce of gold bought about six or seven ounces of silver in China, and about eleven or twelve in Europe. A merchant who carried silver from Europe or the Americas to China made money on the silver itself, before he bought anything. That gap is the engine of the whole trade. In the College Board's words, the silver was used "to purchase Asian goods for the Atlantic markets and satisfy Chinese demand for silver."` }
           ]
         },
         {
@@ -271,8 +271,8 @@ module.exports = {
         {
           heading: 'Who the trade took',
           blocks: [
-            { p: `The Atlantic slave trade took about two males for every female. European buyers paid more for young men to work the plantations, and African sellers often kept women and children, whom African buyers valued. In some regions, especially parts of West Central Africa, that left communities with more women than men.` },
-            { p: `Historians argue that this changed family life where the trade hit hardest. More men had several wives, women did more of the farming, and more women and girls were enslaved within Africa itself, because local buyers wanted the people the Atlantic market wanted less. Some regions lost population, or grew more slowly than they would have, while states that sold captives grew richer. The College Board names these "demographic changes in Africa that resulted from the trade of enslaved persons."` },
+            { p: `About two of every three captives carried across the Atlantic were male. European buyers paid more for young men to work the plantations, and African sellers often kept women and children, whom African buyers valued. In some regions, especially parts of West Central Africa, that left communities with more women than men.` },
+            { p: `Historians argue that this changed family life where the trade hit hardest. Women did more of the farming, and more women and girls were enslaved within Africa itself, because local buyers wanted the people the Atlantic market wanted less. Some historians, Patrick Manning among them, argue that the shortage of men also made polygyny, men taking several wives, more common; others find the evidence for that thin. Some regions lost population, or grew more slowly than they would have, while states that sold captives grew richer. The College Board names these "demographic changes in Africa that resulted from the trade of enslaved persons."` },
             { note: {
               kind: 'howknow',
               label: 'How we know',
@@ -303,7 +303,7 @@ module.exports = {
         ['Polygyny', 'Marriage in which a man has more than one wife.'],
         ['Cultural synthesis', 'The mixing of cultures into something new, to which, in the Atlantic world, all parties contributed.'],
         ['Creole language', 'A new language formed among people of different origins, such as Haitian Creole or Papiamentu.'],
-        ['Sex ratio', 'The number of males compared with females in a group, about two to one among captives in the Atlantic trade.']
+        ['Sex ratio', 'The number of males compared with females in a group, about two males to every female among captives in the Atlantic trade, on average.']
       ]
     },
 
@@ -332,8 +332,8 @@ module.exports = {
         {
           heading: 'Blend',
           blocks: [
-            { p: `And contact produced <span class="kt">syncretism</span>, the blending of religions into new beliefs and practices. At <b>Tepeyac</b>, a hill near Mexico City, a shrine to the Virgin of Guadalupe drew Nahua and Spanish Christians by the 1550s. Around <span class="num">1576</span> the Franciscan friar Bernardino de Sahagún wrote that the Nahua had worshipped a goddess at that hill whom they called Tonantzin, "our mother," that they now used that name for Mary, and that he suspected the devotion hid the old worship. Historians still argue over how much the two were linked; what is certain is that Nahua Christians made Mary their own. The story of Mary appearing to Juan Diego in <span class="num">1531</span> was first published in <span class="num">1648</span>.` },
-            { p: `In <b>Kongo</b>, Christian crucifixes were made by Kongo artists in Kongo style and given Kongo meanings. In <b>Potosí</b>, around <span class="num">1720</span>, a painter showed the Virgin Mary as the silver mountain itself, which art historians read as joining Christian painting to Andean beliefs about sacred mountains. And in the French colony of <b>Saint-Domingue</b> (today's Haiti), enslaved Africans in the 1700s built <b>Vodou</b> from West and Central African religions and Catholic saints.` },
+            { p: `And contact produced <span class="kt">syncretism</span>, the blending of religions into new beliefs and practices. At <b>Tepeyac</b>, a hill near Mexico City, a shrine to the Virgin of Guadalupe drew Nahua and Spanish Christians by the 1550s. In the 1570s the Franciscan friar Bernardino de Sahagún wrote that the Nahua had worshipped a goddess at that hill whom they called Tonantzin, "our mother," that they now used that name for Mary, a name the Spanish preachers themselves had used, and that he suspected the devotion hid the old worship. Historians still argue over how much the two were linked; what is certain is that Nahua Christians made Mary their own. The story of Mary appearing to Juan Diego in <span class="num">1531</span> was first published in <span class="num">1648</span>.` },
+            { p: `In <b>Kongo</b>, Christian crucifixes were made by Kongo artists in Kongo style and given Kongo meanings. In <b>Potosí</b>, in the 1700s, a painter showed the Virgin Mary as the silver mountain itself, which art historians read as joining Christian painting to Andean beliefs about sacred mountains. And in the French colony of <b>Saint-Domingue</b> (today's Haiti), enslaved Africans in the 1700s built <b>Vodou</b> from West and Central African religions and Catholic saints.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -380,12 +380,12 @@ module.exports = {
       {
         category: 'Society',
         title: 'Families in Africa, cultures in the Americas',
-        body: `The Atlantic trade carried about two males for every female, and in parts of West Central Africa women came to outnumber men. Historians connect that to more polygyny, more farm work by women, and more enslaved women within Africa. In the Americas, foods, creole languages, music and faith were made by Africans, Indigenous Americans and Europeans together.`
+        body: `About two of every three captives in the Atlantic trade were male, and in parts of West Central Africa women came to outnumber men. Historians connect that to more farm work by women, more enslaved women within Africa, and, some argue, more polygyny. In the Americas, foods, creole languages, music and faith were made by Africans, Indigenous Americans and Europeans together.`
       },
       {
         category: 'Belief',
         title: 'Spread, clash, blend',
-        body: `Christianity reached the Americas, the Philippines and Kongo, Jesuits reached Beijing, and Islam kept spreading in Southeast Asia. Priests in Peru attacked Andean religion from about 1610. At Tepeyac, Sahagún suspected an old goddess behind the Virgin of Guadalupe; Kongo artists made Kongo crucifixes; a Potosí painter made Mary the silver mountain; and enslaved Africans in Saint-Domingue built Vodou in the 1700s.`
+        body: `Christianity reached the Americas, the Philippines and Kongo, Jesuits reached Beijing, and Islam kept spreading in Southeast Asia. Priests in Peru attacked Andean religion from about 1610. At Tepeyac, Sahagún suspected an old goddess behind the Virgin of Guadalupe; Kongo artists made Kongo crucifixes; a Potosí painter of the 1700s made Mary the silver mountain; and enslaved Africans in Saint-Domingue built Vodou in the 1700s.`
       }
     ]
   }

@@ -989,7 +989,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "That made a company into a weapon a ruler could aim at another ruler. In 1614 Jan Pieterszoon Coen, a leader of the VOC in Asia, wrote to the company's directors that \"we cannot carry on trade without war nor war without trade.\""
+            "html": "That made a company into a weapon a ruler could aim at another ruler. In 1614 Jan Pieterszoon Coen, a leader of the VOC in Asia, wrote to the company's directors that \"trade cannot be kept up without war, nor war without trade.\""
           }
         ],
         "callout": {
@@ -1088,7 +1088,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "The Atlantic slave trade took about two males for every female. In some parts of West and West Central Africa, that left communities with more women than men. Historians argue that this changed family life there: more men took several wives, women did more of the farming, and more women and girls were enslaved inside Africa itself. The trade changed who lived in a village, and that changed how families worked. These are the \"demographic changes in Africa\" that the College Board names."
+            "html": "About two of every three people carried away in the Atlantic slave trade were male. In some parts of West and West Central Africa, that left communities with more women than men. Historians argue that this changed family life there: women did more of the farming, more women and girls were enslaved inside Africa itself, and, some historians argue, more men took several wives. The trade changed who lived in a village, and that changed how families worked. These are the \"demographic changes in Africa\" that the College Board names."
           },
           {
             "type": "p",
@@ -1115,7 +1115,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "And contact produced <span class=\"kt\">syncretism</span>, the blending of two or more religions into new beliefs and practices. At Tepeyac, a hill near Mexico City, Nahua Christians prayed to the Virgin of Guadalupe. Around 1576 a Spanish friar named Bernardino de Sahagún wrote that the Nahua had once honored a goddess at that hill whom they called Tonantzin, \"our mother,\" and he suspected that they still did. In Kongo, Christian crucifixes were made by Kongo artists in Kongo style. Around 1720 a painter in Potosí showed the Virgin Mary as the silver mountain itself. And in the 1700s, enslaved Africans in the French colony of Saint-Domingue (today's Haiti) built a religion called Vodou from West and Central African beliefs and Catholic saints."
+            "html": "And contact produced <span class=\"kt\">syncretism</span>, the blending of two or more religions into new beliefs and practices. At Tepeyac, a hill near Mexico City, Nahua Christians prayed to the Virgin of Guadalupe. In the 1570s a Spanish friar named Bernardino de Sahagún wrote that the Nahua had once honored a goddess at that hill whom they called Tonantzin, \"our mother,\" and he suspected that they still did. In Kongo, Christian crucifixes were made by Kongo artists in Kongo style. In the 1700s, a painter in Potosí showed the Virgin Mary as the silver mountain itself. And in the 1700s, enslaved Africans in the French colony of Saint-Domingue (today's Haiti) built a religion called Vodou from West and Central African beliefs and Catholic saints."
           }
         ],
         "callout": {
