@@ -35,9 +35,9 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: The Resistance Within',
+    title: 'First & 10: Push and Pushback',
     embedUrl: 'first-and-10-topic-4-6-internal-external-challenges-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 4.6 lesson path.'
+    note: 'Read the First & 10, answer the three questions, then return to the 4.6 lesson path.'
   };
 
   lesson.map = {

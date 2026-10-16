@@ -1193,163 +1193,209 @@ module.exports = {
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
+    "showFooterNote": false,
     "headerSubtitle": "Topic 4.6, Internal and External Challenges &nbsp;|&nbsp; AP World History: Modern",
-    "titleHtml": "The <em>Resistance</em> Within",
-    "deck": "European maritime empires after c. 1500 faced resistance from both within and without. Colonized indigenous peoples revolted against forced labor and religious suppression. Enslaved Africans built maroon communities and organized rebellions. And the European powers themselves competed so fiercely for colonial territory that their empires faced constant external challenge. Understanding these challenges is essential for explaining why empires that looked all-powerful on paper were far more fragile in practice.",
+    "titleHtml": "Push and <em>Pushback</em>",
+    "deck": "Between 1450 and 1750, states pulled power into the hands of their rulers and pushed out to rule new lands and peoples. Every push cost somebody something, and all over the world, people pushed back: nobles and judges, peasants and Cossacks, kings and queens, Indigenous towns, and enslaved Africans.",
     "skillTags": [
       "Causation",
-      "Comparison",
-      "Argumentation"
+      "Contextualization"
     ],
     "supportCards": {
-      "beforeYouRead": "Track the different forms of resistance: indigenous (Pueblo Revolt), African (maroon communities), and European rivalry. The AP will ask you to explain causes and outcomes of resistance, so you need to move beyond \"they resisted oppression\" to specific grievances, specific actions, and specific consequences.",
-      "readingTarget": "By the end, you should be able to explain the causes and outcome of the Pueblo Revolt of 1680, describe maroon communities as a form of African resistance, and explain how European competition created external challenges to maritime empires."
+      "beforeYouRead": "<strong>States pushed to expand and centralize → the push landed on a local group → the group pushed back → the state answered.</strong> For every case in this reading, ask four things: what did the state push for, who pushed back, how, and what happened next?",
+      "readingTarget": "What did states do between 1450 and 1750 that made people resist, who resisted, and what did their resistance change?"
     },
     "vocabulary": [
+      "Centralization",
+      "Expansion",
+      "Fronde",
+      "Cossacks",
+      "Marathas",
       "Pueblo Revolt",
-      "Popé",
+      "Encomienda",
       "Maroon Communities",
-      "Palmares",
       "Quilombo",
-      "Piracy",
-      "Privateering",
-      "Tewa",
-      "Religious Suppression",
-      "Seven Years War",
-      "Indigenous Revolt",
-      "Runaway Enslaved"
+      "Organized Resistance"
     ],
     "sections": [
       {
         "number": "1",
-        "label": "Contextualization",
-        "heading": "The Limits of Colonial Control",
+        "label": "The Push",
+        "heading": "Two Ways to Grow a State",
         "blocks": [
           {
             "type": "p",
-            "html": "European maritime empires projected enormous power on paper, viceroyalties, joint-stock companies, naval fleets, and vast territorial claims spanning continents. But actual control on the ground was far more fragile. The Spanish <span class=\"kt\">Viceroyalty of New Spain</span> claimed territory from Panama to the Mississippi River, but Spanish soldiers and officials were spread thin across thousands of miles of terrain they had never fully mapped. The <span class=\"kt\">Catholic Church</span> provided ideological authority but could not replace the physical absence of the state in frontier regions. Indigenous communities continued to practice their own governance, religion, and economic life, sometimes in open resistance, sometimes in subtle accommodation, always negotiating the terms of their subordination."
+            "html": "Topic 4.5 ended with a problem. States got richer and reached further. Not everyone accepted it."
           },
           {
             "type": "p",
-            "html": "The conditions for resistance were structural: <span class=\"kt\">coerced labor</span> that drove workers to exhaustion and death; <span class=\"kt\">religious suppression</span> that attacked the foundations of cultural identity; <span class=\"kt\">epidemic disease</span> that killed family members and disrupted community life; and Spanish administrators who repeatedly broke promises, increased tribute demands, and punished communities that complained. These conditions did not guarantee resistance, most colonial subjects most of the time found ways to survive within the system. But they created the preconditions that made large-scale organized resistance rational when the right moment arrived."
+            "html": "Between 1450 and 1750, states grew stronger than they had ever been, in two ways. The first was <span class=\"kt\">centralization</span>: a king or emperor pulled power into his own hands and away from the people who used to share it, such as great nobles, judges, towns, and village leaders. Topic 3.2 showed some of the tools, like Louis XIV's court at Versailles and the Ottoman devshirme. The second was <span class=\"kt\">expansion</span>: states pushed out over land and sea to rule people who had never been theirs, as Topics 4.2 to 4.5 showed."
+          },
+          {
+            "type": "p",
+            "html": "Both pushes cost somebody something. Centralizing meant new taxes, new laws, and lost privileges. Expanding meant tribute, forced labor, lost land, attacks on a people's religion, and for millions of Africans, slavery. So people pushed back, and they came from every kind of group: rich and poor, nobles and peasants, kingdoms and villages, free and enslaved. The harder states pushed to expand and centralize, the harder people at the local level pushed back."
           }
         ],
         "callout": {
           "label": "AP Thinking, Contextualization",
-          "raw": "<p>The Pueblo Revolt of 1680 and the formation of maroon communities were not spontaneous reactions to momentary cruelty, they were responses to structural conditions that had been building for generations. <strong>Contextualization requires identifying those structural conditions: decades of encomienda labor, religious suppression, drought, and broken colonial promises. The specific moment (1680 for the Pueblo Revolt) required context, but context alone doesn't explain timing, also explain what made 1680 specifically the moment of organized revolt.</strong></p>"
+          "raw": "<p><strong>Every revolt sits inside something bigger.</strong> A revolt is not just a moment when people got angry. To put it in context, name the bigger development it grew out of: a state pulling power to the center, or a state pushing out over new people. As you read each case, ask which push it answers.</p>"
         }
       },
       {
         "number": "2",
-        "label": "Key Concept",
-        "heading": "Indigenous Resistance: The Pueblo Revolt of 1680",
+        "label": "Inside the State: Nobles and Peasants",
+        "heading": "France and Russia Push Their Own People",
         "blocks": [
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Pueblo Revolt of 1680</span> is one of the most significant acts of indigenous resistance in colonial North American history. The <span class=\"kt\">Pueblo peoples</span> of the Rio Grande valley in modern New Mexico had lived under Spanish colonial rule since 1598, nearly a century of <span class=\"kt\">encomienda</span> labor demands, Catholic missionary pressure to abandon traditional religious practices, and periodic violence by Spanish administrators against community leaders who resisted."
+            "html": "In France, the crown had been fighting Spain for years, and war cost money. In 1648, while Louis XIV was still a boy and his mother ruled for him with her chief minister, Cardinal Mazarin, the government demanded new taxes. The judges of the Parlement of Paris, a powerful court, refused to approve them. When the government arrested one of the judges, the people of Paris put up barricades in the streets, and in January 1649 the royal family fled the city. Then some of the greatest nobles in France rose up too. This string of revolts, from 1648 to 1653, is called the <span class=\"kt\">Fronde</span>. It failed. The rebels quarreled with each other, and the crown won. But Louis XIV never forgot it, and he grew up to be a king who kept power in his own hands."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Popé</span>, a <span class=\"kt\">Tewa</span> religious leader from Ohkay Owingeh (San Juan Pueblo), organized a coordinated revolt across dozens of Pueblo communities. When Spanish officials discovered the plot and arrested Popé along with other leaders, the revolt was launched early, on August 10, 1680, to prevent further arrests. Over several days, Pueblo warriors killed approximately 400 Spanish colonists and 21 of the 33 Franciscan missionaries in the region. The remaining Spanish settlers fled south to El Paso. For twelve years, the Pueblo peoples governed their own territory."
-          },
-          {
-            "type": "p",
-            "html": "The outcome was significant: the Spanish eventually reconquered the Pueblo region in 1692 under Governor Otermín's successor, but the terms of Spanish rule changed. The <span class=\"kt\">encomienda system</span> was not reimposed. The Spanish largely stopped trying to suppress Pueblo religious practices. The Pueblo Revolt demonstrated that indigenous resistance could force real concessions, not just symbolic ones, from colonial powers."
+            "html": "In Russia, the tsar's Law Code of 1649 finished turning peasants into serfs, people bound to their lord's land. A serf who ran away could now be hunted down and returned, no matter how many years had passed. Many ran anyway, south to the Don River, where communities of free frontier fighters called <span class=\"kt\">Cossacks</span> lived beyond the tsar's reach. In 1670 a Don Cossack named Stenka Razin led a huge revolt up the Volga River. Towns opened their gates to him, and tens of thousands of peasants and non-Russian peoples of the Volga rose up. The tsar's army beat the rebels at the town of Simbirsk. Other Cossacks handed Razin over, and in 1671 he was executed in Moscow. Serfdom stayed."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p>The causes of the Pueblo Revolt were multiple and interconnected: religious suppression (Spanish missionaries destroyed kivas and confiscated sacred objects), labor exploitation (encomienda demands exceeded what communities could sustain), drought (which worsened food insecurity and increased Spanish demands), and the organizational capacity of Popé, who built a multi-community coalition. <strong>A strong causation argument identifies which causes were most significant AND explains why they combined to produce revolt in 1680 specifically.</strong></p>"
+          "raw": "<p><strong>Follow the chain.</strong> In each case, a state's push landed on a group, and the group pushed back. Ask what the state wanted, what that cost the group, and how the group answered. Then ask what happened next, because resistance has effects too.</p>"
         }
       },
       {
         "number": "3",
-        "label": "Key Concept",
-        "heading": "African Resistance: Maroon Communities and Revolts",
+        "label": "At the Edges: Asia and Africa",
+        "heading": "A Warrior Kingdom and a Queen",
         "blocks": [
           {
             "type": "p",
-            "html": "Enslaved Africans resisted their condition in multiple ways: slowing their work, breaking tools, preserving African cultural and religious practices, poisoning enslavers, running away, and organizing revolts. The most sustained form of African resistance was the formation of <span class=\"kt\">maroon communities</span>, settlements of escaped enslaved people in remote or inaccessible terrain, where they could build autonomous communities outside colonial control."
+            "html": "Some pushback came from the edges of growing empires, from people the empire was trying to conquer. The Mughal emperor Aurangzeb pushed his empire south into the Deccan, the high plateau of central India. There the <span class=\"kt\">Marathas</span>, led by Shivaji, had built a kingdom of hill forts and fast horsemen, and in 1674 Shivaji was crowned king. In 1681 Aurangzeb moved his court south to finish them. He conquered two other kingdoms of the Deccan, but he never defeated the Marathas, who fought from their forts and raided instead of meeting his huge army head on. He spent the rest of his life fighting in the south and died there in 1707. After that, the Marathas grew stronger and the Mughal emperors grew weaker."
           },
           {
             "type": "p",
-            "html": "The most famous maroon community was <span class=\"kt\">Palmares</span>, in the interior of Portuguese Brazil, which existed for nearly a century (c. 1605–1694). At its height, Palmares had a population of up to 30,000 people organized into multiple settlements, governed by a king (Ganga Zumba and later <span class=\"kt\">Zumbi</span>), and capable of defending itself against multiple Portuguese military expeditions. Palmares was eventually destroyed by a Portuguese military campaign in 1694, and Zumbi was captured and executed in 1695, but it stands as extraordinary evidence of what enslaved Africans built under extreme conditions."
-          },
-          {
-            "type": "p",
-            "html": "Maroon communities existed throughout the Caribbean and Americas: the <span class=\"kt\">Saramaka</span> in Suriname (Dutch colony), the <span class=\"kt\">Maroons of Jamaica</span> (British colony), the <span class=\"kt\">Palenques</span> of Colombia (Spanish colony). Each represented a different negotiation between autonomy and colonial pressure, some won formal treaties recognizing their freedom; others were repeatedly attacked and forced to relocate."
+            "html": "In West Central Africa, the Portuguese colony at Luanda pushed inland into the kingdom of Ndongo, largely to take captives for the Atlantic slave trade. In 1622 Njinga, the king's sister, went to Luanda to bargain with the Portuguese governor, and she was baptized there with the name Ana de Sousa. In 1624 she became Ndongo's ruler. For almost forty years she fought the Portuguese and bargained with them. She conquered the kingdom of Matamba as a new base, joined forces with the Dutch after they captured Luanda in 1641, and made peace with Portugal in the 1650s. She died in 1663, still ruling Matamba. Resisting Portugal did not mean resisting the slave trade: her own wars took captives, and Matamba sold them."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Comparison",
-          "raw": "<p>Maroon communities and the Pueblo Revolt represent different forms of resistance with important similarities and differences. <strong>Similarity: both were responses to structural colonial conditions, coerced labor, cultural suppression, broken promises. Difference: the Pueblo Revolt was a coordinated military uprising that expelled colonizers from a territory; maroon communities were acts of exit rather than confrontation, building autonomous spaces outside colonial control rather than overthrowing it. The difference reveals different strategies available to different groups based on geography, numbers, and access to territory.</strong></p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Resistance has effects.</strong> The College Board asks for the effects of state power, and resistance is one of them. But resistance had its own effects on the state. The Mughals spent decades and a fortune in the Deccan and never won there. Portugal ended up making peace with a queen it had set out to conquer.</p>"
         }
       },
       {
         "number": "4",
-        "label": "Key Concept",
-        "heading": "European Rivalry: External Challenges to Maritime Empires",
+        "label": "At the Edges: The Americas",
+        "heading": "The Pueblo Revolt and Metacom's War",
         "blocks": [
           {
             "type": "p",
-            "html": "European maritime empires also faced challenges from each other. The Portuguese <span class=\"kt\">Estado da India</span> was systematically displaced by the <span class=\"kt\">Dutch VOC</span> across the Indian Ocean in the early 17th century, not through a single decisive battle but through superior capital, more efficient organization, and the willingness of Dutch merchants to undercut Portuguese toll rates. By c. 1650, the Dutch had seized most of the Portuguese spice trade network."
+            "html": "In 1598 Spain planted a colony in the Rio Grande valley of New Mexico, among the Pueblo peoples, who lived in towns of stone and adobe. Under the <span class=\"kt\">encomienda</span>, the Pueblos had to hand over part of their crops to Spanish settlers each year, and they were forced to work without pay. Spanish friars tried to stamp out the Pueblo religion. From the 1650s they banned the sacred dances and burned masks and prayer sticks, and in 1675 the governor arrested forty-seven Pueblo religious leaders, hanged three, and had the rest whipped. This religious suppression came on top of years of drought and famine, and raids by Apache neighbors that the Spanish did not stop."
           },
           {
             "type": "p",
-            "html": "In the Atlantic, British and French competition challenged the Spanish and Dutch empires. <span class=\"kt\">Piracy</span> and <span class=\"kt\">privateering</span>, state-sponsored or tolerated attacks on rival shipping, were a permanent feature of colonial competition. <span class=\"kt\">Sir Francis Drake</span> (English privateer, working for Queen Elizabeth I) raided Spanish Caribbean ports throughout the 1570s–1580s. The French established competing colonies in the Caribbean and North America that challenged both Spanish and British claims. The <span class=\"kt\">Seven Years War</span> (1756–1763) was the first truly global war, fought simultaneously in North America, the Caribbean, Europe, West Africa, and India, reflecting how deeply European rivalries had become entangled with colonial competition."
+            "html": "One of the whipped men was Popé (today often spelled Po'pay), a religious leader from the town of Ohkay Owingeh, who began to plan. Runners carried knotted cords from town to town, and each town untied one knot a day, counting down to the same morning. When the Spanish caught two of the runners, the Pueblos struck early, on August 10, 1680. In the <span class=\"kt\">Pueblo Revolt</span> they killed about 400 colonists, including 21 friars, surrounded the capital at Santa Fe, and cut off its water. The surviving colonists fled south to El Paso, and for twelve years the Pueblos ruled themselves. When the Spanish came back in the 1690s, they did not bring back the encomienda, and the friars pushed far less hard against the Pueblo religion than before."
           },
           {
             "type": "p",
-            "html": "The distinction between internal and external challenges matters for AP arguments: internal challenges (Pueblo Revolt, maroon communities) tested the legitimacy and reach of colonial authority; external challenges (Dutch vs. Portuguese, British vs. French) tested the military and commercial capacity of competing empires. Both types of challenge revealed that European maritime empires were far less stable than their formal claims suggested."
+            "html": "In the same years, in New England, English colonists were taking more and more Wampanoag land and putting the Wampanoag under colonial courts. In 1675, after Plymouth Colony executed three Wampanoag men, war broke out between the colonists and the Wampanoag, led by Metacom, whom the English called King Philip. Other Native nations joined in. Metacom's War destroyed more than a dozen English towns. But the colonists, with Native allies of their own, won. Metacom was killed in 1676, and many Native captives were sold into slavery in the Caribbean."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Was European rivalry more damaging to maritime empires than indigenous or African resistance? <strong>A strong argument requires evidence on both sides: European rivalry destroyed the Portuguese Estado da India and reshaped global trade networks; indigenous resistance (Pueblo Revolt) forced real administrative reform; African resistance (maroon communities) created permanent autonomous spaces outside colonial control. The strongest answer acknowledges that these challenges operated at different scales and in different ways, rather than ranking them in a simple hierarchy.</strong></p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Causes come in kinds.</strong> The Pueblo Revolt had religious causes, economic causes, and political causes, all at once. A strong answer names more than one kind and explains how they worked together. Question 2 asks you to go one step further and put the revolt in its bigger context.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "Enslaved People Organize",
+        "heading": "Towns in the Hills, a Treaty, and a March",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "The plantation colonies were built on slavery (Topic 4.4), and enslaved people pushed back in every way they could. The College Board's word for what this topic asks about is <span class=\"kt\">organized resistance</span>: not one person running away, but many people acting together in a way that challenged the authorities."
+          },
+          {
+            "type": "p",
+            "html": "In the hills behind Brazil's sugar coast, people who escaped slavery built Palmares, a cluster of fortified towns that held thousands of people and lasted for most of the 1600s. Communities like this, built by people who escaped slavery, are called <span class=\"kt\">maroon communities</span>, and in Brazil a <span class=\"kt\">quilombo</span>. Palmares farmed, traded with nearby settlers, and beat back one army after another. In 1678 its leader, Ganga Zumba, made a treaty with the colonial government, but many in Palmares rejected it, and the next leader, Zumbi, kept fighting. In 1694 a large colonial army captured Palmares's main town, and in 1695 Zumbi was killed."
+          },
+          {
+            "type": "p",
+            "html": "In Jamaica, maroon communities in the mountains fought the British for years. In 1739 the colony made treaties with them. The Maroons led by Cudjoe were promised freedom and 1,500 acres of land forever. But the same treaty required them to send back any enslaved person who ran away to them and to help put down other revolts. Freedom for one community came with a promise to guard slavery for everyone else."
+          },
+          {
+            "type": "p",
+            "html": "In North America, on September 9, 1739, about twenty enslaved people near the Stono River in South Carolina seized guns from a store and marched south toward Spanish Florida, which had promised freedom to people who escaped from the English colonies. As they marched, others joined, until there were as many as a hundred. The colony's militia caught them that afternoon. About forty white colonists and about as many Black rebels died in the fighting and the hunt that followed. South Carolina answered the Stono Rebellion with the Negro Act of 1740, a law that tightened control over every enslaved person in the colony."
+          }
+        ],
+        "callout": {
+          "label": "Common Mistake to Avoid",
+          "raw": "<p>Do not write that maroons were just runaways hiding in the woods. Palmares had leaders, farms, trade, and an army, and it made a treaty. The Jamaica Maroons forced a colony to sign one. That is what makes them organized resistance.</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "The Pattern",
+        "heading": "Push, Pushback, and What Came Next",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Put it together. States pushed, inward and outward. The push landed on someone: new taxes on judges and townspeople, serfdom on peasants, conquest on kingdoms, tribute and attacks on religion in the Pueblo towns, lost land for the Wampanoag, and slavery for Africans. Those groups pushed back by revolt, by war, by escape, and by bargaining."
+          },
+          {
+            "type": "p",
+            "html": "And the pushback had its own effects. Sometimes the state crushed it and came out stronger: the Fronde, Razin's revolt, Metacom's War, and Stono. Sometimes the state had to bargain: Njinga's peace, the Jamaica treaties, and the Spanish return to New Mexico on new terms. And sometimes the resistance wore the state down, as the Marathas did to the Mughals."
+          },
+          {
+            "type": "p",
+            "html": "The harder states pushed to expand and centralize, the harder people at the local level pushed back, and the pushback changed the states too."
+          },
+          {
+            "type": "p",
+            "html": "Some people resisted the new order. Everyone was sorted by it. Who ended up where? That is Topic 4.7."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Answer the whole question.</strong> The College Board asks you to explain the effects of the development of state power. A complete answer has three parts: what the state did, how people resisted, and what that resistance changed.</p>"
         }
       }
     ],
-    "takeaway": "European maritime empires faced challenges from three directions. <strong>Indigenous resistance</strong>, exemplified by the Pueblo Revolt of 1680, organized by Popé, forced the Spanish to reform the encomienda system and reduce religious suppression after twelve years of Pueblo self-governance. <strong>African resistance</strong>, exemplified by maroon communities like Palmares in Brazil, built autonomous settlements that colonial powers spent decades and enormous resources trying to destroy. <strong>European rivalry</strong>, Dutch displacement of the Portuguese in the Indian Ocean, British-French competition in the Americas, tested the military and commercial capacity of every colonial power. Together, these challenges reveal that European maritime empires were not the all-powerful systems they appeared on paper.",
+    "takeaway": "Between 1450 and 1750, states centralized and expanded, and the push cost local groups taxes, freedom, land, faith, and labor. People pushed back all over the world: judges, Parisians, and nobles in the Fronde; peasants and Cossacks under Stenka Razin; the Marathas against the Mughals; Njinga against Portugal; the Pueblos in 1680 and the Wampanoag in Metacom's War. Enslaved people organized too, in maroon communities like Palmares and the Jamaica Maroons, and in revolts like Stono in 1739. Some resistance was crushed, some forced a bargain, and some wore a state down.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
-        "num": "1",
+        "num": "01",
         "skill": "Causation",
-        "text": "Explain the causes of the Pueblo Revolt of 1680. Identify at least two specific grievances that motivated Pueblo communities to revolt, and explain how Popé organized resistance across multiple communities. What was the short-term outcome of the revolt?",
-        "placeholder": "Identify specific grievances, explain Popé's organization, and describe the short-term outcome..."
+        "text": "Choose the Fronde or Stenka Razin's revolt. Explain what the state was pushing for, which group pushed back and how, and what happened next.",
+        "placeholder": "The state was pushing for... The group that pushed back was... They pushed back by... What happened next was..."
       },
       {
-        "num": "2",
-        "skill": "Comparison",
-        "text": "Compare maroon communities as a form of resistance to the Pueblo Revolt. Identify one meaningful similarity and one meaningful difference. Then explain what the difference reveals about the strategies available to different groups of people resisting colonial rule.",
-        "placeholder": "Identify a similarity and a difference, then explain what the difference reveals about strategy..."
+        "num": "02",
+        "skill": "Contextualization",
+        "text": "Put the Pueblo Revolt of 1680 in its broader context. What bigger development of the years 1450 to 1750 was it part of, and how does that bigger development help explain why the revolt happened?",
+        "placeholder": "The Pueblo Revolt was part of a bigger development: ... This helps explain the revolt because..."
       },
       {
-        "num": "3",
-        "skill": "Argumentation",
-        "text": "Write a one-sentence claim answering this question: Were internal challenges (indigenous revolt, African resistance) or external challenges (European rivalry) more significant threats to European maritime empires in c. 1500–1750? Then provide one specific piece of evidence that supports your claim.",
-        "placeholder": "State your one-sentence claim, then provide one specific piece of supporting evidence..."
+        "num": "03",
+        "skill": "Causation",
+        "text": "Using Palmares or the Jamaica Maroons, explain what made their resistance organized resistance, and not just people running away one at a time.",
+        "placeholder": "The community I chose is... It was organized resistance because... One piece of evidence is..."
       }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 4.6, Internal and External Challenges",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true,
   },
   "4.7": {
     "topicKey": "4.7",
