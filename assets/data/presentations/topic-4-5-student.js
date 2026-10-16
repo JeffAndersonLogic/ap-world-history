@@ -378,7 +378,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "ledger",
       "eyebrow": "Society · A Mixed Atlantic World",
       "title": "Everyone contributed to the new culture.",
-      "footer": "Often by force, never by plan: the College Board's words are \"with all parties contributing.\"",
+      "footer": "No one group designed it, and much of it happened under force: \"with all parties contributing.\"",
       "kc": "KC-4.1.IV.D.ii",
       "template": {
         "rows": [
@@ -606,7 +606,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "visual": {
           "url": "../assets/images/topics/4-5/batavia-beeckman-c1662.jpg",
-          "alt": "Oil painting of a crowded market under tall palm trees, with Javanese, Chinese and Dutch people, and the long white walls of a fortress behind",
+          "alt": "Oil painting of tall palm trees in front of the long white walls of a fortress, with a crowd of Javanese, Chinese and Dutch people along the bottom edge",
           "credit": "Andries Beeckman, The Castle of Batavia, about 1662 · Rijksmuseum · Public domain",
           "position": "50% 88%"
         }

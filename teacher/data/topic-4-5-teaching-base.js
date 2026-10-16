@@ -447,7 +447,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'mixing', kind: 'ledger', eyebrow: 'Society · A Mixed Atlantic World',
       kc: 'KC-4.1.IV.D.ii', title: 'Everyone contributed to the new culture.',
-      footer: 'Often by force, never by plan: the College Board\'s words are "with all parties contributing."',
+      footer: 'No one group designed it, and much of it happened under force: "with all parties contributing."',
       template: {
         rows: [
           { name: 'Africans', mark: 'A', tool: 'Contributed', result: 'farming skills, music, beliefs, and languages.' },
@@ -523,12 +523,12 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Bernardino de Sahagún (about 1499 to 1590), a Franciscan friar who worked with Nahua scholars for decades on a history of Nahua life and belief. The passage is from the appendix to Book 11 of his General History of the Things of New Spain, finished in the 1570s. The English is translated for BeHistorical from the Spanish text in Carlos María de Bustamante\'s edition (Mexico, 1830), vol. 3, pp. 321 to 322. Ellipsis marks the cut. Note what students usually miss: Sahagún says the Spanish preachers themselves had called Mary Tonantzin.',
-          'Students find the claim themselves (3.A): Sahagún claims that the Nahua who come to Tepeyac may still be honoring their old goddess under a Christian name. His evidence is the name they use, Tonantzin, and that people come from far away, as they did before.',
+          'For you, not to say yet: the Skill Builder (Module 05, required) asks students to write this claim and judge it, so this slide is a first look and the class does not settle it here. Sahagún claims that the Nahua who come to Tepeyac may still be honoring their old goddess under a Christian name. His evidence is the name they use, Tonantzin, and that people come from far away, as they did before.',
           'Push one step further: a claim is not the same as proof. Sahagún was a missionary worried about hidden idolatry; Nahua Christians may simply have used an old word for "our mother" for Mary. That is why this is a source about syncretism, and about what a Spanish friar feared.',
           'The apparition story of Juan Diego (dated 1531) was first published in 1648 and 1649; the shrine was already a center of devotion by the 1550s. Do not teach the apparition as an event of 1531.'
         ],
-        ask: 'What is Sahagún\'s claim, and why might he make it?',
-        listenFor: 'That the people still worship Tonantzin under Mary\'s name; because he is a missionary looking for hidden idolatry.',
+        ask: 'What word does Sahagún keep coming back to? Hold your answer for Module 05.',
+        listenFor: 'First reactions only (the name Tonantzin). Do not give the claim or the verdict here; students write both in Module 05, and the debrief comes after.',
         ap: 'Claims and Evidence in Sources 3.A: identify the claim, and describe the evidence the source gives for it.'
       }
     },
@@ -609,8 +609,8 @@ window.BEHISTORICAL_TEACHING = {
           'It models Coen\'s 1614 letter (slide 8), then gives Sahagún\'s passage on Tepeyac and asks for the claim, the evidence he gives for it, and whether that evidence proves it.',
           'Push students to state the claim in their own words, in one sentence, before they quote anything.'
         ],
-        ask: 'Is Sahagún\'s evidence enough to prove his claim?',
-        listenFor: 'No: a name and a crowd do not prove what people believed. It shows what he suspected.'
+        ask: 'After students have written: is Sahagún\'s evidence enough to prove his claim?',
+        listenFor: 'Debrief only after the module: a name and a crowd do not prove what people believed; the source shows what he suspected.'
       }
     },
     {
@@ -667,7 +667,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 1,
         land: [
-          'The picture: Andries Beeckman, The Castle of Batavia, about 1662 (Rijksmuseum SK-A-19). Beeckman worked in Batavia, the VOC\'s Asian headquarters, which Coen took by force in 1619. Palms and the company\'s castle fill the slide; along the bottom edge, under the sentence, is a market of Javanese, Chinese and other Asian traders and townspeople: a company built to make an empire pay, inside an Asian market that kept going. The spine in one picture.',
+          'The picture: Andries Beeckman, The Castle of Batavia, about 1662 (Rijksmuseum SK-A-19). Beeckman worked in Batavia, the VOC\'s Asian headquarters, which Coen took by force in 1619. Palms and the company\'s castle in Java fill the slide (the painting\'s market crowd is along the bottom edge, mostly under the sentence): a company built to make an empire pay, planted in an Asian port.',
           'This sentence answers all four learning objectives: the tools (H), what they moved (I), and what it changed in work (I), families and society (J), and faith (K).',
           'Hand off to 4.6 in the words of the unit story map.'
         ],

@@ -215,7 +215,7 @@
       alt: 'Painting of the Virgin Mary standing on a crescent moon, hands together in prayer, in a starry blue cloak with golden rays around her, framed by flowers, with four small scenes in the corners.',
       url: '../assets/images/topics/4-5/guadalupe-arellano-1691.jpg',
       sourceUrl: 'https://collections.lacma.org/object/148372',
-      caption: 'A painted copy, made in Mexico in 1691 by Antonio de Arellano and his son Manuel, of the image of the Virgin of Guadalupe honored at Tepeyac, near Mexico City. The corner scenes tell the story of her appearing to a Nahua man, Juan Diego, a story first published in 1648. Los Angeles County Museum of Art.',
+      caption: 'A painted copy, made in Mexico in 1691 by Antonio de Arellano and his son Manuel, of the image of the Virgin of Guadalupe honored at Tepeyac, near Mexico City. The corner scenes tell the story of her appearing to a Nahua man, Juan Diego, in 1531 according to the story, which was first published in 1648. Los Angeles County Museum of Art.',
       prompt: 'NOTICE the details of the Virgin and the four corner scenes. INFER why this image became so important to Christians in Mexico, both Nahua and Spanish. This was painted in 1691, 160 years after 1531. What can it not tell you about what happened in 1531?'
     },
     {

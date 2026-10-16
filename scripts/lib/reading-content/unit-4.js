@@ -1166,7 +1166,7 @@ module.exports = {
       {
         "num": "03",
         "skill": "Continuity and Change",
-        "text": "Explain ONE change and ONE continuity caused by what the empires moved from 1450 to 1750. Use at least TWO of these: silver and China, regional markets, peasant and artisan work, families in Africa, the mixed Atlantic world, religion.",
+        "text": "Explain ONE thing that changed and ONE thing that kept going from 1450 to 1750 as silver, goods, and people moved around the world. Use at least TWO of these: silver and China, regional markets, peasant and artisan work, families in Africa, the mixed Atlantic world, religion.",
         "placeholder": "One change was... One continuity was... The evidence is..."
       }
     ],

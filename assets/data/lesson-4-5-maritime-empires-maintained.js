@@ -165,7 +165,7 @@ window.BEHISTORICAL_LESSON = {
         title: "How a Company Could Fight a War",
         bullets: [
           "A **joint-stock company** raised money from many investors at once, so no single merchant had to risk his fortune on one voyage. Investors who wanted their money back could sell their shares to someone else in Amsterdam, so the company could keep its money working for years instead of paying it back after each voyage.",
-          "The charter turned the company into a tool of its government. The VOC could build forts, keep soldiers, make treaties, and wage war. Because only one Dutch company could trade with Asia, the profits stayed in Dutch hands, which is what a **mercantilist** government wanted.",
+          "The charter turned the company into a tool of its government. The VOC could build forts, keep soldiers, make treaties, and wage war. Because only one Dutch company could trade with Asia, Dutch merchants stopped bidding against each other, and the company's money and guns could be turned on Portugal and England, which is what a **mercantilist** government wanted.",
           "Rivals used the same tools against each other. The Dutch and English companies fought over the spice islands, and in 1623 VOC officials on Ambon executed ten English company men. England and the Dutch Republic then fought three wars at sea between 1652 and 1674, largely over trade and shipping."
         ],
         image: {
@@ -208,7 +208,7 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "Ask the same question of each case: when a religion reached new people, did it **spread**, did it cause a **conflict**, or did it **blend** with what they already believed?",
           "Spread: **missionaries** carried Christianity to the Americas, the Philippines and Kongo, and Jesuits reached the Ming court. Conflict: **religious conflict** in Peru, where priests campaigned against Andean religion from about 1610. Blend: **syncretic** beliefs and practices at Tepeyac, in Kongo crucifixes, and in Vodou in Saint-Domingue in the 1700s.",
-          "Often all three happened in one place. In Potosí, the silver mountain itself was painted as the Virgin Mary, joining Christian painting to Andean beliefs about sacred mountains, while priests elsewhere in Peru tried to stamp those beliefs out."
+          "The same region could see more than one. In Peru, priests attacked Andean religion from about 1610. A century later, a painter in Potosí showed the Virgin Mary as the silver mountain itself, which art historians read as joining Christian painting to Andean beliefs about sacred mountains."
         ],
         image: {
           title: "The Virgin of the Mountain, Potosí, 1700s",
@@ -221,7 +221,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   map: {
-    title: "Silver, Companies and Rivals, c. 1550 to 1750",
+    title: "Silver, Companies and Rivals, c. 1500 to 1750",
     url: "../assets/images/instructional-maps/topic-4-5.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-4-5.svg",
     caption: "What the rulers' tools moved: silver from Spanish America to Seville and across the Pacific to Manila and China, silver carried around Africa to Asia, and the Atlantic trade in enslaved Africans. Three of the black dots, Diu, Tondibi and Ambon, mark places where economic disputes turned violent; the fourth, Manila, marks where silver met Chinese silk.",
