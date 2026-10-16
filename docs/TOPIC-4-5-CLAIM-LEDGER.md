@@ -114,11 +114,11 @@ PS (Primary Source), BS (BeSurreal), BR (BeInTheRoom), CV (Canvas text).
 
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
-| Potosí silver found in 1545; Zacatecas in 1546 | F10 §4, DR §03, Deck 11, map, BR | Standard dates (Britannica, "Potosí"; "Zacatecas"). | VERIFIED |
+| Potosí silver found in 1545 by an Andean miner, Diego Gualpa, by his own later account, and claimed and mined by Spanish colonists; Zacatecas in 1546 | F10 §4, DR §03 and its Potosí term, Deck 11, map key, BR | Standard dates (Britannica, "Potosí"; "Zacatecas"). Gualpa's account was taken by Viceroy Toledo in 1572 (Library of Congress, "A short story about Potosí," 2022). Until pass 3 every surface said "Spanish colonists found" the mountain, which drops the documented Andean discoverer. | NARROWED |
 | Spanish America became the world's largest source of silver | F10 §4, DR §03, Deck 11, map key | Flynn and Giráldez: Spanish America produced about 150,000 tons of silver between 1500 and 1800, "perhaps exceeding 80% of the entire world's production" (citing Barrett 1990 and Cross 1983). Japan was second, around 30 percent of world output in the late 1500s. "Largest" is true over the period. | VERIFIED |
 | Old map key: "Potosí produced roughly 60% of the world's silver in the 16th–17th centuries" | (old map key; removed) | Flynn and Giráldez quote Cross (1983): "the viceroyalty of Peru accounted for 60 percent of the world's silver production in the 16th and 17th centuries." The figure is the viceroyalty's, not Potosí's alone. | REMOVED |
 | Old map key: Potosí "the largest city in the Western Hemisphere"; the Manila galleon "the world's first regularly scheduled transoceanic route"; the Casa held "a monopoly on all colonial trade"; silver "triggered the global price revolution" | (old map key; removed) | Not repeated: the superlatives have no source this build could check, and "triggered" is a sole cause where historians add population growth and debasement. | REMOVED |
-| The Single Whip combined taxes and labor duties into payments in silver; it spread through the 1500s and was pushed across the empire under Zhang Juzheng around 1580 | F10 §4, DR §03, Deck 11, map key | Flynn and Giráldez: "myriad existing national levies were consolidated into a single tax; ... all tax payments were to be made in the form of silver"; "It took a long time to fully implement." Zhang Juzheng's empire-wide application in 1581 is standard (Britannica, "Zhang Juzheng"). | VERIFIED |
+| The Single Whip combined most taxes and labor duties into payments in silver (tribute grain from Jiangnan stayed in kind); it spread through the 1500s and was pushed across the empire under Zhang Juzheng around 1580 | F10 §4, DR §03, Deck 11, map key | Flynn and Giráldez: "myriad existing national levies were consolidated into a single tax; ... all tax payments were to be made in the form of silver"; "It took a long time to fully implement." Zhang Juzheng's empire-wide application in 1581 is standard (Britannica, "Zhang Juzheng"). Ray Huang, *Taxation and Governmental Finance in Sixteenth-Century Ming China* (1974), on the tribute grain (*caoliang*) still collected in rice. Pass 3 changed "its taxes in silver" to "most of its taxes" on the F10, DR, lecture card 2, BeSurreal (which now names the grain still owed), the map key and legend, slide 11 and BeInTheRoom. | NARROWED |
 | China mined little silver of its own | F10 §4, DR §03, BS | Flynn and Giráldez (China's "limited domestic production"; China as the world's "silver sink"). | VERIFIED |
 | Silver bought more in China than in Europe: in the early 1500s about six ounces of silver to one of gold in China against eleven or twelve in Europe; by the 1590s about five and a half to seven at Canton against twelve and a half to fourteen in Spain | F10 §4 (no figure), DR §03, Deck 11 notes | Flynn and Giráldez, quoting Von Glahn (1996, p. 127): "In the early sixteenth century, the gold/silver ratio in China stood at 1:6, while ... around 1:11-12 in Europe"; and Flynn and Giráldez (1995) for 1592: 1:5.5 to 1:7 at Canton against 1:12.5 to 1:14 in Spain. Pass 2 replaced the DR's "in the 1500s ... six or seven ... eleven or twelve", which understated the gap in the galleon decades. | NARROWED (twice: first draft, then pass 2) |
 | Ming China had tried paper money and abandoned it | DR §03 | Flynn and Giráldez on "China's metamorphosis from a paper-money system ... to a silver-based economy." | VERIFIED |
@@ -305,3 +305,46 @@ scholarship says woodblock. The alt texts were left as they are; recorded in the
 | 9 | The F10 makes Mun the voice of "keeping" gold and silver | Fixed: "bringing in more gold and silver than flowed out." |
 | 10 | Fenske cited as 2013 | Fixed: 2015, with what it finds. |
 | 11 | Alt text says "woodblock print" against the Met's catalogue | Fixed: "print". |
+
+### Pass 3, reviewer 1 (page truth and readability), 11 findings
+
+Pass 3 was interrupted by a usage limit on 2026-10-15 and both reviewers were resumed from their
+saved work on 2026-10-16, with no change to the brief or the captures.
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | Slide 20 runs the Skill Builder's Sahagún task aloud, and the notes of slides 20 and 24 give the claim and the verdict before students write Module 05 | Fixed: slide 20 is a first look ("What word does Sahagún keep coming back to? Hold your answer for Module 05"), its note tells the teacher not to settle the claim, and slide 24's verdict is marked as a debrief for after students have written. |
+| 2 | Lecture card 1: "only one Dutch company ... so the profits stayed in Dutch hands" (they were Dutch already) | Fixed: Dutch merchants stopped bidding against each other, and the company's money and guns could be turned on Portugal and England. Agrees with the DR. |
+| 3 | Lecture card 4: "all three in one place" but Peru's campaigns and the Potosí painting are a century apart; the reading of the painting unhedged | Fixed: "The same region could see more than one. In Peru, priests attacked Andean religion from about 1610. A century later, a painter in Potosí ... which art historians read as ..." |
+| 4 | The Guadalupe card's prompt uses 1531, which the card never explains | Fixed: the caption says the apparition is dated 1531 "according to the story, which was first published in 1648." |
+| 5 | F10 question 2's claim is paraphrased just above it, and question 1's old/new is in the §3 callout | Kept: the paragraph before Mun teaches the mercantilist idea, which KC-4.1.IV.C requires, and question 2 asks for Mun's own claim plus a law or policy and how it fits; the §3 callout is general and question 1 asks for one specific rivalry and what was old and new about it. Neither is a copyable answer to the question asked. |
+| 6 | Slide 17 footer "never by plan" contradicts the planned spread of Christianity on the same slide | Fixed: "No one group designed it, and much of it happened under force: 'with all parties contributing.'" |
+| 7 | Slide 28's market crowd is under the text | Fixed: the note no longer rests its point on the crowd ("a company built to make an empire pay, planted in an Asian port"), and the alt text now leads with what shows (palms and the fortress walls), with the crowd along the bottom edge. |
+| 8 | DR §06 repeats "The three are not neat boxes." | Fixed: a slip from pass 1's edit, which replaced only the second sentence. |
+| 9 | DR §01's mercantilism sentence garbled ("later writers named it ... the word came later still") | Fixed: "This set of ideas is now called mercantilism, but its critics named it. Adam Smith in 1776 called it the 'mercantile system,' and the word mercantilism came into use later still." |
+| 10 | Lesson data map title still c. 1550 | Fixed: c. 1500 to 1750, matching the map. |
+| 11 | F10 question 3 "caused by what the empires moved" hard to decode | Fixed: "Explain ONE thing that changed and ONE thing that kept going from 1450 to 1750 as silver, goods, and people moved around the world." |
+
+### Pass 3, reviewer 2 (history), 6 findings
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | "Spanish colonists found" Potosí drops the documented Andean discoverer, Diego Gualpa | Fixed on the F10, DR (text and term) and map key; see the Potosí row. |
+| 2 | Lecture card 4 unhedged | Fixed, as reviewer 1's 3. |
+| 3 | "Taxes in silver" is too absolute for a Jiangnan rice family (tribute grain stayed in kind) | Fixed: "most taxes" on every surface; see the Single Whip row. |
+| 4 | Map title disagrees across surfaces | Fixed, as reviewer 1's 10. |
+| 5 | The Guadalupe card's 1531 | Already fixed in the source (the capture predated it); confirmed in the rebuilt page. |
+| 6 | DR §06 repeated sentence | Fixed, as reviewer 1's 8. |
+
+Not counted: reviewer 2 noted that Checkpoint 2 declares Causation and Comparison while the CED's
+reasoning process for 4.5 is Continuity and Change. That was decided in pass 1 (reviewer 1's 4):
+the declared skill must match what the checkpoint asks, and the CED's reasoning process is
+practised in Checkpoint 1, the Evidence Lab and the retelling ledger. Listed for Jeff.
+
+### Where the loop ended
+
+Three full passes, each finding supported defects, so the loop stopped on its safety valve.
+Supported findings by pass: 35, then 26, then 13 (after removing pass 3's duplicates). The trend
+was down to small items: pass 3 found no new myths or wrong dates, one dropped person (Gualpa), one
+overgeneralization (the Single Whip), and the rest wording, page truth and one slide-note sequence
+problem. Every finding is fixed or logged above, and every claim row has a status.

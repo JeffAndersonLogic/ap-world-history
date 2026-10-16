@@ -126,7 +126,7 @@ const scenarios = [
     lessonUrl: '../../unit-4/lesson-4-5-maritime-empires-maintained.html',
     alignment: { theme: 'Governance (GOV) and Economic Systems (ECN)', objective: 'Explain how rulers employed economic strategies to consolidate and maintain power throughout the period from 1450 to 1750. Explain the continuities and changes in networks of exchange from 1450 to 1750.', skill: 'Continuity and change', keyConcepts: ['KC-4.1.IV.C', 'KC-4.1.IV', 'KC-4.3.III.ii'] },
     premise: [
-      'Manila has been a Spanish city since 1571. Every year galleons sail in from Acapulco, in Mexico, loaded with American silver, and every year Chinese junks from Fujian sail in with silk, porcelain and other goods to trade for it. Silver from the mines of Spanish America is flowing to China, because China now collects its taxes in silver.',
+      'Manila has been a Spanish city since 1571. Every year galleons sail in from Acapulco, in Mexico, loaded with American silver, and every year Chinese junks from Fujian sail in with silk, porcelain and other goods to trade for it. Silver from the mines of Spanish America is flowing to China, because China now collects most of its taxes in silver.',
       'The king of Spain is worried. In 1593 he ordered that only two galleons a year may sail between Manila and Acapulco, and that the goods they carry from Manila must not be worth more than a fixed amount. His advisers want American silver to reach Spain, not China, and Spanish silk makers complain that cheap Chinese silk is taking their buyers. But Manila\'s Spanish settlers live on this trade, and the Chinese merchants and craftsmen of the Parián, the Chinese quarter outside the city walls, far outnumber them.',
       'Rivals want this trade too, even subjects of Spain\'s own king. In 1587 an English captain, Thomas Cavendish, captured the Manila galleon Santa Ana off the coast of Mexico. The Portuguese merchants of Macau, who since 1580 have shared Spain\'s king and who sell Chinese silk to the Spanish themselves, resent Manila\'s direct trade with China. The governor\'s council must decide how to obey the king, how to deal with the Chinese merchants, and how to protect the silver.'
     ],
@@ -139,7 +139,7 @@ const scenarios = [
     ],
     evidence: [
       E('silver', 'American Silver', 'The galleons from Acapulco carried silver from the mines of Spanish America, including Potosí and Zacatecas.', 'Shows where the money came from.'),
-      E('china', 'Taxes in Silver in China', 'Ming China had begun collecting its taxes in silver, so Chinese buyers wanted silver more than any other good.', 'Explains why the silver went to China.'),
+      E('china', 'Taxes in Silver in China', 'Ming China had begun collecting most of its taxes in silver, so Chinese buyers wanted silver more than any other good.', 'Explains why the silver went to China.'),
       E('junks', 'Chinese Junks from Fujian', 'Chinese merchants sailed to Manila each spring with silk, porcelain, and other goods to trade.', 'Shows an older regional trade that the Spanish joined rather than replaced.'),
       E('decree', 'The King\'s Limits of 1593', 'A royal order allowed only two galleons a year between Manila and Acapulco and set a limit on the value of goods they could carry.', 'A mercantilist rule meant to keep silver from draining to China.'),
       E('spain', 'Spanish Silk Makers', 'Silk makers in Spain complained that cheap Chinese silk was taking their buyers in the Americas.', 'Shows a home industry the king wanted to protect.'),

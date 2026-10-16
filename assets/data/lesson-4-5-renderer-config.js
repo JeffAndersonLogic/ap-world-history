@@ -94,10 +94,10 @@
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'Potosí and New Spain', detail: 'Spanish colonists found the silver mountain at Potosí, in the Andes, in 1545, and silver at Zacatecas, in New Spain (Mexico), in 1546. Spanish America became the world\'s largest source of silver.' },
+      { label: 'Potosí and New Spain', detail: 'Spanish colonists began mining the silver mountain at Potosí, in the Andes, in 1545, after an Andean miner, Diego Gualpa, found silver there, and silver at Zacatecas, in New Spain (Mexico), in 1546. Spanish America became the world\'s largest source of silver.' },
       { label: '1 and 4. The eastern road', detail: 'Silver crossed the Atlantic to Seville in fleets guarded by warships (arrow 1). Much of it moved on: Europeans had few goods Asians wanted, so Portuguese, Dutch and English merchants carried silver around Africa to pay for Asian goods (arrow 4).' },
       { label: '2 and 3. The western road', detail: 'From 1571, Spanish galleons carried silver from Acapulco across the Pacific to Manila (arrow 2), where Chinese merchants traded silk and porcelain for it, and the silver went on into China (arrow 3).' },
-      { label: 'Ming China', detail: 'China collected its taxes in silver (the Single Whip reform) and mined little of its own, so silver bought more there than in Europe. That demand pulled silver from both roads.' },
+      { label: 'Ming China', detail: 'China collected most of its taxes in silver (the Single Whip reform) and mined little of its own, so silver bought more there than in Europe. That demand pulled silver from both roads.' },
       { label: 'Europe and West Africa', detail: 'Mercantilist states such as Spain, England and the Dutch Republic used laws and chartered companies to keep wealth at home. In West Africa, Indian cotton cloth and cowrie shells from the Maldives were traded for enslaved people (arrow 5).' },
       { label: 'Black dots', detail: 'Diu, Tondibi and Ambon are places where economic disputes turned violent: Diu (Portugal beat a fleet of Mamluk Egypt and Gujarat over the spice trade, 1509), Tondibi (Morocco beat Songhai, 1591, wanting West Africa\'s gold and salt), and Ambon (a rivalry over the spice islands: the Dutch company executed English company men, 1623). The dot at Manila marks where silver met Chinese silk, not a fight.' }
     ]

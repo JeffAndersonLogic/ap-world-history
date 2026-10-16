@@ -312,7 +312,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         steps: [
           { label: 'Mines, 1545 and 1546', text: 'Potosí and Zacatecas: Spanish America becomes the world\'s largest source of silver' },
-          { label: 'Single Whip, 1500s', text: 'Ming China collects its taxes in silver', key: true },
+          { label: 'Single Whip, 1500s', text: 'Ming China collects most taxes in silver', key: true },
           { label: 'Demand', text: 'Silver buys more in China than in Europe' },
           { label: 'Manila, 1571', text: 'Chinese merchants trade silk and porcelain for silver' }
         ],

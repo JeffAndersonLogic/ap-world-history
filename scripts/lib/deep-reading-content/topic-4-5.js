@@ -170,7 +170,7 @@ module.exports = {
         {
           heading: 'Where it came from',
           blocks: [
-            { p: `In <span class="num">1545</span> Spanish colonists found an enormous silver mountain at <span class="kt">Potosí</span>, in the Andes, and in <span class="num">1546</span> a great silver strike came at Zacatecas in New Spain. From the 1570s, new ways of refining low-grade ore with mercury, and the mit'a draft of Andean workers (Topic 4.4), made Potosí produce far more. Historians estimate that Spanish America produced most of the world's silver between 1500 and 1800, roughly four-fifths of it by one standard estimate.` }
+            { p: `In <span class="num">1545</span> an Andean miner, Diego Gualpa, by his own later account, found silver at <span class="kt">Potosí</span>, in the Andes, and Spanish colonists claimed the mountain and began mining it. In <span class="num">1546</span> a great silver strike came at Zacatecas in New Spain. From the 1570s, new ways of refining low-grade ore with mercury, and the mit'a draft of Andean workers (Topic 4.4), made Potosí produce far more. Historians estimate that Spanish America produced most of the world's silver between 1500 and 1800, roughly four-fifths of it by one standard estimate.` }
           ]
         },
         {
@@ -194,12 +194,12 @@ module.exports = {
         }
       ],
       useThis: {
-        tool: `A tax as demand. <em>When China's government required taxes in silver, every household needed silver, so silver bought more in China than elsewhere, and merchants carried it there from both sides of the world: a tax law in China decided where a mountain's silver in the Andes would end up.</em>`,
+        tool: `A tax as demand. <em>When China's government required most taxes in silver, every household needed silver, so silver bought more in China than elsewhere, and merchants carried it there from both sides of the world: a tax law in China decided where a mountain's silver in the Andes would end up.</em>`,
         limit: `The flow rose and fell. Historians argue over how much a drop in silver imports in the 1630s and 1640s hurt the late Ming, so do not claim it caused the dynasty's fall.`,
         comparison: `Against <em>Song paper money</em> in Topic 1.1: both are Chinese governments solving the problem of money for a huge economy. The Song printed paper; the Ming, after paper failed, came to rely on silver, much of it from mines on the other side of the world.`
       },
       terms: [
-        ['Potosí', 'The silver mountain in the Andes, found by Spanish colonists in 1545, one of the richest silver sources in the world.'],
+        ['Potosí', 'The silver mountain in the Andes, mined by the Spanish from 1545, one of the richest silver sources in the world.'],
         ['Single Whip', 'The Ming reform that combined taxes and labor duties into one payment in silver, applied across China around 1580.'],
         ['Manila galleon', 'The Spanish ships, usually one or two a year, that carried silver from Acapulco to Manila from 1571.'],
         ['Silver flow', 'The movement of American silver around the world, pulled largely toward China.'],

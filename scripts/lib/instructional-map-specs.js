@@ -947,7 +947,7 @@ module.exports = [
     highlights: [
       { zone: 'andes', label: 'POTOS\u00cd', tone: 'gold', legend: 'Potos\u00ed: Spanish silver from 1545' },
       { zone: 'mexico', label: 'NEW SPAIN', tone: 'bronze', legend: 'New Spain: Zacatecas silver from 1546' },
-      { zone: 'eastAsia', label: 'MING CHINA', tone: 'plum', labelSide: 'above', legend: 'China: taxes paid in silver, so silver was in demand' },
+      { zone: 'eastAsia', label: 'MING CHINA', tone: 'plum', labelSide: 'above', legend: 'China: most taxes paid in silver, so silver was in demand' },
       { zone: 'westernEurope', label: 'EUROPE', tone: 'slate', legend: 'Europe: mercantilist states and their trading companies' },
       { zone: 'westAfrica', label: 'WEST AFRICA', tone: 'sand', legend: 'West Africa: Indian cloth and cowries traded for captives' }
     ],

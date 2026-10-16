@@ -120,7 +120,16 @@ const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
 // The build was taken over by a second session on 2026-10-15, which reran pass 2
 // and ran pass 3. The fingerprint moved from 0394dcf... and only the 4.4 entry
 // changed; 4.1 to 4.3 and 4.5 to 4.8 are byte-for-byte unchanged.
-const APPROVED_UNIT4_REWRITE_BLOB = '431fa88041a73038e2b919a04510ae2ebf25b160';
+// Topic 4.5's story-first rewrite, "Making Empires Pay", was written from the
+// 4.5 story (docs/TOPIC-4-5-STORY-DRAFT.md) on 2026-10-15 and went through three
+// independent review passes (six reviewers; findings and dispositions in
+// docs/TOPIC-4-5-CLAIM-LEDGER.md), approved under Jeff's standing rule of
+// 2026-10-12, which delegates story and reading approval to the reviewer loop.
+// The loop ended on its three-pass safety valve, every finding fixed or logged;
+// pass 3 was interrupted by a usage limit and resumed on 2026-10-16. The
+// fingerprint moved from 431fa88... and only the 4.5 entry changed; 4.1 to 4.4
+// and 4.6 to 4.8 are byte-for-byte unchanged.
+const APPROVED_UNIT4_REWRITE_BLOB = 'c72ff388143dac0a45d808f88d5510b8a67bff94';
 const unit4SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-4.js');
 const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
   && gitBlobSha(fs.readFileSync(unit4SourcePath, 'utf8')) === APPROVED_UNIT4_REWRITE_BLOB;

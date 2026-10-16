@@ -178,7 +178,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Why the Silver Went to China",
         bullets: [
-          "Ming China's **Single Whip** reform asked families to pay their taxes in silver. China mined little silver of its own, so every household had to get silver from somewhere, and silver bought more in China than in Europe.",
+          "Ming China's **Single Whip** reform asked families to pay most of their taxes in silver. China mined little silver of its own, so every household had to get silver from somewhere, and silver bought more in China than in Europe.",
           "That gap pulled silver toward China from both sides of the world. At Manila, Chinese merchants from Fujian traded silk and porcelain for American silver. A Spanish official there, Antonio de Morga, wrote in 1609 that the Chinese took \"silver and reals [Spanish coins], for they do not like gold, nor any other goods in exchange.\"",
           "The Spanish king worried that silver was flowing to China instead of Spain, and in 1593 he limited the galleons to two a year. Merchants carried more than the rules allowed, because the profits were so large."
         ],
@@ -262,7 +262,7 @@ window.BEHISTORICAL_LESSON = {
     title: "BeSurreal: You Raise Silkworms near Suzhou, c. 1600",
     desc: "You are a young woman in a farming family in the Jiangnan region of Ming China, the rich river country near the city of Suzhou. Your family grows rice, but much of the money that pays its taxes comes from silk.",
     intro: "It is late spring, the busiest weeks of the year. The silkworms in the flat baskets in your house eat mulberry leaves day and night, and someone must pick and chop fresh leaves for them over and over. Your mother and grandmother know how warm the room must be and how to tell when the worms are ready to spin their cocoons.",
-    detail: "When the cocoons are finished, the family boils them and reels the fine thread, and you help at the loom. A merchant from the market town buys your silk and pays in silver, cut into small pieces and weighed on a scale, because the government now wants the family's taxes paid in silver. You have heard that some silk is carried south to the ports of Fujian and onto ships bound for Luzon, an island across the sea, where foreigners pay for it with silver coins from a land on the other side of the ocean.",
+    detail: "When the cocoons are finished, the family boils them and reels the fine thread, and you help at the loom. A merchant from the market town buys your silk and pays in silver, cut into small pieces and weighed on a scale, because the government now wants most of the family's taxes paid in silver (the rice owed to the emperor is still paid in grain). You have heard that some silk is carried south to the ports of Fujian and onto ships bound for Luzon, an island across the sea, where foreigners pay for it with silver coins from a land on the other side of the ocean.",
     prompt: "Write a short letter to a cousin in another province. Explain how your family earns the silver it needs, and why the government's demand for silver has changed your family's work. Then say what has stayed the same about that work for generations, and what is different now."
   },
 

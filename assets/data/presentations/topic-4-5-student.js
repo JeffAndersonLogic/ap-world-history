@@ -208,7 +208,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Single Whip, 1500s",
-            "text": "Ming China collects its taxes in silver",
+            "text": "Ming China collects most taxes in silver",
             "key": true
           },
           {

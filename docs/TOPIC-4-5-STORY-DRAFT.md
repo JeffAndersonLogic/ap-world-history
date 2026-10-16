@@ -6,7 +6,7 @@ Jeff started this build with "Build 4,5" on 2026-10-15, read as "build 4.5": Top
 against the CED source file and the scholarship; the record of what they found is in
 `docs/TOPIC-4-5-CLAIM-LEDGER.md`, under "Review findings".
 
-**Resume here (2026-10-16, session 2):** Phase 9 review passes 1 and 2 fixed and logged in the claim ledger. Review pass 3 was cut off by a usage limit on 2026-10-15 and restarted on 2026-10-16. Next: pass 3 fixes, move the Unit 4 First & 10 fingerprint (only the 4.5 entry has changed since blob 431fa88), topic audit record, audit index, final browser suite, report.
+**Build finished 2026-10-16, waiting for "ship it".** Phase 9 ran three independent review passes (findings and dispositions in `docs/TOPIC-4-5-CLAIM-LEDGER.md`); the Unit 4 First & 10 fingerprint moved; audit record `docs/topic-audits/topic-4-5-2026-10-16.md`. Working branch `claude/version-4-5-build-rmip8g`.
 
 **Taught:** Green Monday 2026-11-09, Silver Tuesday 2026-11-10, from Jeff's corrected November
 Canvas calendar (2026-10-14), already in `assets/data/announcements-schedule.js` as date-only

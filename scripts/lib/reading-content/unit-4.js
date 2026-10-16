@@ -1027,11 +1027,11 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "In 1545 Spanish colonists found an enormous silver mountain at Potosí in the Andes, and in 1546 another great silver strike came at Zacatecas in Mexico. (Topic 4.4 showed how the mit’a sent Andean men to work at Potosí.) Spanish America became the world's largest source of silver. Some of that silver crossed the Atlantic to Seville. A large share of it ended up in China."
+            "html": "In 1545 an Andean miner, Diego Gualpa, found silver on a mountain at Potosí in the Andes, and Spanish colonists claimed the mountain and began mining it. In 1546 another great silver strike came at Zacatecas in Mexico. (Topic 4.4 showed how the mit’a sent Andean men to work at Potosí.) Spanish America became the world's largest source of silver. Some of that silver crossed the Atlantic to Seville. A large share of it ended up in China."
           },
           {
             "type": "p",
-            "html": "Why China? In the 1500s the government of Ming China began collecting its taxes in silver, in a reform called the <span class=\"kt\">Single Whip</span>. Millions of Chinese families now needed silver to pay their taxes, and China mined little of its own, so silver bought more in China than it did in Europe."
+            "html": "Why China? In the 1500s the government of Ming China began collecting most of its taxes in silver, in a reform called the <span class=\"kt\">Single Whip</span>. Millions of Chinese families now needed silver to pay their taxes, and China mined little of its own, so silver bought more in China than it did in Europe."
           },
           {
             "type": "p",
@@ -1147,7 +1147,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "European rulers used mercantilism and chartered joint-stock companies such as the VOC to make their empires pay and to compete with each other, and economic disputes became wars, from the Indian Ocean to the Sahara to the spice islands. American silver flowed around the world toward China, whose taxes were paid in silver, and the Atlantic trading system moved goods, wealth, and enslaved people, while regional markets in Africa and Asia kept flourishing. Peasant and artisan work continued and grew. The slave trade reshaped families in parts of Africa, Africans, Indigenous Americans, and Europeans all made a mixed Atlantic culture, and religions spread, clashed, and blended.",
+    "takeaway": "European rulers used mercantilism and chartered joint-stock companies such as the VOC to make their empires pay and to compete with each other, and economic disputes became wars, from the Indian Ocean to the Sahara to the spice islands. American silver flowed around the world toward China, whose taxes were mostly paid in silver, and the Atlantic trading system moved goods, wealth, and enslaved people, while regional markets in Africa and Asia kept flourishing. Peasant and artisan work continued and grew. The slave trade reshaped families in parts of Africa, Africans, Indigenous Americans, and Europeans all made a mixed Atlantic culture, and religions spread, clashed, and blended.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
