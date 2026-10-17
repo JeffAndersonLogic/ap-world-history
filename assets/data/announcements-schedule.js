@@ -972,19 +972,31 @@ window.BEHISTORICAL_SCHEDULE = {
       homework: 'Finish Checkpoint 2, and any other required 4.5 module you did not complete in class.'
     },
 
-    /* ---- Remaining Unit 4 dates ----------------------------- */
-    // Jeff's corrected November calendar, 2026-10-14. Dates only:
-    // required module subsets and homework are set during each topic build.
+    /* ---- Topic 4.6, Internal and External Challenges to State Power ------ */
+    // Green Wednesday 2026-11-11 and Silver Thursday 2026-11-12, from Jeff's
+    // corrected November calendar (2026-10-14).
+    // Required subset (4.6 build, 2026-10-16, under Jeff's standing rule): 02
+    // First & 10, 05 Skill Builder (4.B Contextualization, the CED's suggested
+    // skill), 07 Evidence Lab and 10 Checkpoint 2. Checkpoint 1 and
+    // BeInTheRoom stay optional.
     {
       date: '2026-11-11',
       cohort: 'green',
-      topic: '4.6'
+      topic: '4.6',
+      modules: ['02', '05', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 4.6 module you did not complete in class.'
     },
     {
       date: '2026-11-12',
       cohort: 'silver',
-      topic: '4.6'
+      topic: '4.6',
+      modules: ['02', '05', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 4.6 module you did not complete in class.'
     },
+
+    /* ---- Remaining Unit 4 dates ----------------------------- */
+    // Jeff's corrected November calendar, 2026-10-14. Dates only:
+    // required module subsets and homework are set during each topic build.
     {
       date: '2026-11-13',
       cohort: 'green',

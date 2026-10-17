@@ -2045,56 +2045,52 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       date: '2026-11-11',
       cohort: 'green',
       unit: 'Unit 4: Transoceanic Interconnections',
-      topic: 'Internal Challenges to State Power',
+      topic: 'Internal and External Challenges to State Power',
       learningTargets: [
-        { text: 'I can explain how state expansion and centralization produced local resistance, including the causes, organization, and outcomes of the Pueblo Revolt of 1680.', label: 'Governance' },
-        { text: 'I can explain how enslaved Africans resisted colonial rule through escape, autonomous maroon communities, cultural preservation, and organized revolt.', label: 'Governance' }
+        { text: 'I can explain how states\' push to expand and to centralize led different local groups to resist, using one case from Africa, Asia, or Europe and one from the Americas, and what that resistance changed.', label: 'Governance' },
+        { text: 'I can explain how enslaved people in the Americas challenged the authorities over them through organized resistance, such as maroon communities and revolts, and how the authorities responded.', label: 'Governance' }
       ],
       successCriteria: [
-        { text: 'I can explain the specific grievances behind the Pueblo Revolt, how Popé coordinated resistance, and what the revolt changed and failed to change about Spanish colonial rule.', label: 'Governance' },
-        { text: 'I can describe maroon communities as organized resistance, use Palmares as a specific example, and explain how geography, community organization, and colonial vulnerability made autonomous resistance possible.', label: 'Governance' }
+        { text: 'I can explain, for one case from Africa, Asia, or Europe (the Fronde, Razin\'s revolt, the Marathas, or Njinga) and one from the Americas (the Pueblo Revolt or Metacom\'s War), what the state pushed for, which group pushed back and how, and what happened next.', label: 'Governance' },
+        { text: 'I can explain how one maroon community (Palmares or the Jamaica Maroons) and one revolt (the Stono Rebellion) were organized, and how the authorities responded to each.', label: 'Governance' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
-        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.6 module you did not complete in class.', due: 'Friday, November 13' }
+      ],
+      homeworkDue: 'Friday, November 13',
+      dueDate: '2026-11-13'
     },
     /* 2026-11-12  <-  lesson-4-6-internal-external-challenges.js */
     {
       date: '2026-11-12',
       cohort: 'silver',
       unit: 'Unit 4: Transoceanic Interconnections',
-      topic: 'Internal Challenges to State Power',
+      topic: 'Internal and External Challenges to State Power',
       learningTargets: [
-        { text: 'I can explain how state expansion and centralization produced local resistance, including the causes, organization, and outcomes of the Pueblo Revolt of 1680.', label: 'Governance' },
-        { text: 'I can explain how enslaved Africans resisted colonial rule through escape, autonomous maroon communities, cultural preservation, and organized revolt.', label: 'Governance' }
+        { text: 'I can explain how states\' push to expand and to centralize led different local groups to resist, using one case from Africa, Asia, or Europe and one from the Americas, and what that resistance changed.', label: 'Governance' },
+        { text: 'I can explain how enslaved people in the Americas challenged the authorities over them through organized resistance, such as maroon communities and revolts, and how the authorities responded.', label: 'Governance' }
       ],
       successCriteria: [
-        { text: 'I can explain the specific grievances behind the Pueblo Revolt, how Popé coordinated resistance, and what the revolt changed and failed to change about Spanish colonial rule.', label: 'Governance' },
-        { text: 'I can describe maroon communities as organized resistance, use Palmares as a specific example, and explain how geography, community organization, and colonial vulnerability made autonomous resistance possible.', label: 'Governance' }
+        { text: 'I can explain, for one case from Africa, Asia, or Europe (the Fronde, Razin\'s revolt, the Marathas, or Njinga) and one from the Americas (the Pueblo Revolt or Metacom\'s War), what the state pushed for, which group pushed back and how, and what happened next.', label: 'Governance' },
+        { text: 'I can explain how one maroon community (Palmares or the Jamaica Maroons) and one revolt (the Stono Rebellion) were organized, and how the authorities responded to each.', label: 'Governance' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
-        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.6 module you did not complete in class.', due: 'Monday, November 16' }
+      ],
+      homeworkDue: 'Monday, November 16',
+      dueDate: '2026-11-16'
     },
     /* 2026-11-13  <-  lesson-4-7-changing-social-hierarchies.js */
     {
