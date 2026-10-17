@@ -969,7 +969,7 @@ module.exports = [
   {
     id: 'topic-4-6',
     code: 'Topic 4.6',
-    title: 'Push and Pushback, 1648 to 1739',
+    title: 'Push and Pushback, 1620s to 1739',
     subtitle: 'Topic 4.6 \u00b7 Internal and external challenges to state power',
     // Rebuilt 2026-10-16 from the 4.6 story: nine cases of pushback against
     // expanding and centralizing states, colored by kind. The old map's

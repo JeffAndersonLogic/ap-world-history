@@ -1294,7 +1294,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "One of the whipped men was Popé (today often spelled Po'pay), a religious leader from the town of Ohkay Owingeh, who began to plan. Runners carried knotted cords from town to town, and each town untied one knot a day, counting down to the same morning. When the Spanish caught two of the runners, the Pueblos struck early, on August 10, 1680. In the <span class=\"kt\">Pueblo Revolt</span> they killed about 400 colonists, including 21 friars, surrounded the capital at Santa Fe, and cut off its water. The surviving colonists fled south to El Paso, and for twelve years the Pueblos ruled themselves. When the Spanish came back in the 1690s, they did not bring back the encomienda, and the friars pushed far less hard against the Pueblo religion than before."
+            "html": "One of the whipped men was Popé (today often spelled Po'pay), a religious leader from the town of Ohkay Owingeh, who began to plan. Runners carried knotted cords from town to town. A town that agreed to join untied one knot as its sign, and the knots that were left counted the days to the same morning. When the Spanish caught two of the runners, the Pueblos struck early, on August 10, 1680. In the <span class=\"kt\">Pueblo Revolt</span> they killed about 400 colonists, including 21 friars, surrounded the capital at Santa Fe, and cut off its water. The surviving colonists fled south to El Paso, and for twelve years the Pueblos ruled themselves. When the Spanish came back in the 1690s, they did not bring back the encomienda, and the friars pushed far less hard against the Pueblo religion than before."
           },
           {
             "type": "p",
@@ -1325,12 +1325,12 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In North America, on September 9, 1739, about twenty enslaved people near the Stono River in South Carolina seized guns from a store and marched south toward Spanish Florida, which had promised freedom to people who escaped from the English colonies. As they marched, others joined, until there were as many as a hundred. The colony's militia caught them that afternoon. About forty white colonists and about as many Black rebels died in the fighting and the hunt that followed. South Carolina answered the Stono Rebellion with the Negro Act of 1740, a law that tightened control over every enslaved person in the colony."
+            "html": "In North America, on September 9, 1739, about twenty enslaved people near the Stono River in South Carolina seized guns from a store and marched south toward Spanish Florida, which had promised freedom to people who escaped from the English colonies. As they marched, others joined, until there were as many as a hundred. The colony's militia broke up the march that afternoon and hunted down the survivors over the days that followed. Somewhere between twenty and forty white colonists died, along with dozens of rebels; accounts give different numbers. South Carolina answered the Stono Rebellion with the Negro Act of 1740, a law that tightened control over every enslaved person in the colony."
           }
         ],
         "callout": {
           "label": "Common Mistake to Avoid",
-          "raw": "<p>Do not write that maroons were just runaways hiding in the woods. Palmares had leaders, farms, trade, and an army, and it made a treaty. The Jamaica Maroons forced a colony to sign one. That is what makes them organized resistance.</p>"
+          "raw": "<p>Do not write that maroons were just runaways hiding in the woods. As you read about Palmares and the Jamaica Maroons, look for what they built together and what they forced a colony to do.</p>"
         }
       },
       {

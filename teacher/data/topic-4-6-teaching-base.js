@@ -104,7 +104,7 @@ window.BEHISTORICAL_TEACHING = {
           'Owns: local resistance to expanding and centralizing states, across Afro-Eurasia and the Americas; organized resistance by enslaved people in the Americas.',
           'Bridge only: rivalries between European states (KC-4.3.III.ii, Topic 4.5; the Unit 4 contract forbids it as a 4.6 target); Versailles (3.2, one clause); the labor systems and plantations (4.4, named as the push); casta and elites (4.7, the hand-off); the Haitian Revolution (Unit 5, after 1750, not mentioned).',
           'Three myths, on slide 21: "only colonized peoples resisted states"; "maroons were just runaways hiding in the woods"; "resisting a European empire meant opposing slavery." Slide 20 answers a fourth, "resistance always failed."',
-          'Every picture in this deck is a real object from the 1600s: two prints made in Paris and Amsterdam, two paintings made in the Deccan, and a Dutch print of Razin made about thirty years after his death. The map is the course\'s own. None is AI-generated.'
+          'Every picture in this deck is a real object from the 1600s: a print made in Paris and a Dutch print made for a book published in Leiden, two paintings made in the Deccan, and a Dutch print of Razin made about thirty years after his death. The map is the course\'s own. None is AI-generated.'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
         listenFor: 'The harder states pushed to expand and centralize, the harder people at the local level pushed back, and the pushback changed the states too.',
@@ -142,7 +142,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 1,
         land: [
-          'The picture is a real historical print: Jan Luyken, "Stenko Radzin is brought into Moscow on a cart with his brother," an etching made in Amsterdam for J. L. Gottfried\'s Historische kronyck (Leiden: Pieter van der Aa, 1700), Rijksmuseum RP-P-1896-A-19368-1482. Luyken never went to Russia; the city and the clothing are his imagining. It shows a captured rebel chained in a cart under a gallows-like frame, guards with pikes, and a crowd at the city gate.',
+          'The picture is a real historical print: Jan Luyken, "Stenko Radzin is brought into Moscow on a cart with his brother," an etching made for J. L. Gottfried\'s Historische kronyck (Leiden: Pieter van der Aa, 1700), Rijksmuseum RP-P-1896-A-19368-1482. Luyken never went to Russia; the city and the clothing are his imagining. It shows a captured rebel chained in a cart under a gallows-like frame, guards with pikes, and a crowd at the city gate.',
           'Razin\'s revolt is one case of many: peasants and Cossacks against a tsar who had just bound peasants to the land. Slide 8 tells it.',
           'The question is the learning objective in a ninth grader\'s words: the push (expansion and centralization), the pushback (resistance), and the effects.'
         ],
@@ -200,7 +200,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 1,
         land: [
           'The course\'s own instructional map, rebuilt for this story. Dots mark regions, not exact battlefields, and the colors sort the cases: inside a state (Paris, the Volga), at an expanding state\'s edge (the Deccan, Ndongo and Matamba, New Mexico, New England), and organized resistance by enslaved people (Palmares, Jamaica, Stono).',
-          'Point out the spread: pushback happened in Europe, Asia, Africa and the Americas within about one century, 1648 to 1739. That spread is the "array" in the Key Concept.'
+          'Point out the spread: pushback happened in Europe, Asia, Africa and the Americas in a little over a century, from the 1620s to 1739. That spread is the "array" in the Key Concept.'
         ],
         ask: 'Find one case in Afro-Eurasia and one in the Americas.',
         listenFor: 'Any pair across the Atlantic, for example the Fronde and the Pueblo Revolt.'
@@ -211,8 +211,8 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-4.3.III.iii', title: 'Judges, Paris and nobles against the crown.',
       template: {
         panels: [
-          { visual: { url: '../assets/images/topics/4-6/broussel-paris-1648.jpg', alt: 'An engraved portrait of an older man with long hair and a small beard, in a dark robe and white collar, inside an oval frame, with a coat of arms below and a printed caption naming him as a counselor of the king in the Parlement of Paris', credit: 'Portrait of Pierre Broussel, printed in Paris, 1648 · Rijksmuseum · Public domain', ratio: 0.84 }, tag: 'Printed in Paris, 1648', text: 'The judge **Pierre Broussel**, whose arrest set off the barricades.' },
-          { visual: { url: '../assets/images/topics/4-6/parlement-arrest-luyken-1699.jpg', alt: 'An etching of soldiers with a halberd at a doorway seizing a man in a long robe, with a city street, a cathedral and marching soldiers behind', credit: 'Caspar Luyken, arrest of a member of the Parlement of Paris, etched in Amsterdam, 1699 · Rijksmuseum · Public domain', ratio: 0.633 }, tag: 'Etched in Amsterdam, 1699', text: 'A Dutch artist pictures the **arrest**, fifty years later.' }
+          { visual: { url: '../assets/images/topics/4-6/broussel-paris-1648.jpg', alt: 'An engraved portrait of an older man with long hair and a small beard, in a dark robe and white collar, inside an oval frame, with a coat of arms below and a printed caption naming him as a counselor of the king in the Parlement of Paris', credit: 'Portrait of Pierre Broussel, printed in Paris, 1648 · Rijksmuseum · Public domain', ratio: 0.822 }, tag: 'Printed in Paris, 1648', text: 'The judge **Pierre Broussel**, whose arrest set off the barricades.' },
+          { visual: { url: '../assets/images/topics/4-6/parlement-arrest-luyken-1699.jpg', alt: 'An etching of soldiers with a halberd at a doorway seizing a man in a long robe, with a city street, a cathedral and marching soldiers behind', credit: 'Caspar Luyken, arrest of a member of the Parlement of Paris, for a book published in Leiden, 1699 · Rijksmuseum · Public domain', ratio: 0.633 }, tag: 'Dutch print, Leiden, 1699', text: 'A Dutch artist pictures the **arrest**, fifty years later.' }
         ],
         rows: [
           { label: 'Push', text: 'War with Spain: the crown demands **new taxes** (1648)' },
@@ -290,7 +290,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'njinga', kind: 'case-file', eyebrow: 'At the Edges · West Central Africa, 1622 to 1663',
       kc: 'KC-4.3.III.iii', title: 'A queen fights and bargains with Portugal.',
       template: {
-        tag: 'Ruler of Ndongo and Matamba', place: 'Inland from Luanda', date: '1622 to 1663',
+        tag: 'Ruler of Ndongo and Matamba', place: 'Inland from Luanda', date: '1624 to 1663',
         rows: [
           { label: 'Push', text: 'Portugal pushes inland from **Luanda**, largely for **captives**' },
           { label: 'Bargain', text: '**1622**: Njinga negotiates in Luanda and is baptized **Ana de Sousa**' },
@@ -316,14 +316,14 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'pueblo', kind: 'branch-tree', eyebrow: 'At the Edges · New Mexico, 1598 to 1680',
       kc: 'KC-4.3.III.iii', title: 'Why the Pueblos rose: causes come in kinds.',
-      footer: 'Strong answers name more than one kind of cause and say how they worked together.',
+      footer: 'On top of all three came drought and famine. Strong answers name more than one kind of cause.',
       template: {
         claimLabel: 'The Pueblo Revolt, 1680',
         claim: 'Spanish rule since **1598** pressed on Pueblo towns in three ways.',
         branches: [
           { label: 'Religious', note: 'Friars tried to stamp out Pueblo religion', items: ['Dances banned, masks burned', '1675: 47 leaders arrested'] },
           { label: 'Economic', note: 'Work and crops taken', items: ['Encomienda tribute', 'Forced labor'] },
-          { label: 'Political', note: 'Spanish rule, and its failures', items: ['Drought and famine', 'Raids not stopped'] }
+          { label: 'Political', note: 'Spanish rule by force, and its failures', items: ['Men hanged for plotting', 'Raids not stopped'] }
         ]
       },
       notes: {
@@ -331,7 +331,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'Spain\'s colony in New Mexico dates from Juan de Oñate\'s expedition in 1598 (Library of Congress, In Custodia Legis, 2013; NPS Pecos). Under the encomienda, Pueblos had to hand over a portion of their crops each year; under repartimiento they were forced to work for Spaniards without pay (LOC 2013).',
           'Religious suppression: from the 1650s Franciscan friars banned the kachina dances and burned masks and prayer sticks; in 1675 Governor Juan Francisco Treviño ordered kivas destroyed and arrested 47 religious leaders, whom the Spanish called sorcerers; four were sentenced to death, three hanged and one killed himself, and the rest were whipped and jailed. Pueblo men came to Santa Fe in force, and the prisoners were released. Popé of Ohkay Owingeh (San Juan Pueblo) was among them.',
-          'Drought and famine in the 1660s and 1670s, and Apache raids that Spanish soldiers did not stop, made the burdens heavier (LOC 2013).',
+          'Political: Spanish governors ruled by force (Naranjo says seven or eight men were hanged for plotting under Governor Ugarte y la Concha, around 1650), and Spanish soldiers did not stop Apache raids. Drought and famine in the 1660s and 1670s were not a kind of rule; they are the extra pressure in the footer that made every burden heavier (LOC 2013).',
           'Sorting causes this way is the CED\'s own sample activity: highlight the social, economic and political reasons in Naranjo\'s testimony. The Primary Source module does it. Do not settle "the most significant cause" here; that is the module\'s question.'
         ],
         ask: 'Which kind of cause would a Pueblo religious leader have named first? Which would a farmer?',
@@ -353,7 +353,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           '"Declaration of Pedro Naranjo of the Queres Nation," 19 December 1681, translated by Charmion Clair Shelby in Charles Wilson Hackett, ed., Revolt of the Pueblo Indians of New Mexico and Otermín\'s Attempted Reconquest, 1680-1682 (University of New Mexico Press, 1942), vol. 2. Naranjo, a Keres man from San Felipe Pueblo, was captured during Otermín\'s attempt to retake New Mexico and questioned by Spanish officials. The slide starts mid-sentence (the record reads "He said that the cord was passed ...", "he" being Naranjo as the Spanish clerk recorded him). The sentence before it says three spirit beings told Popé, in a kiva at Taos, to make a cord of maguey fiber and tie in it one knot for each day until the rising.',
           'This is the CED\'s own sample-activity source (p. 77). The slide uses only the knotted-cord passage; the Primary Source module gives students more of the testimony and asks for the reasons for the revolt and how to source a captive\'s statement. Do not run those questions here.',
-          'Sourcing in one line: a captive answering questions put to him by the officials his people had driven out, through an interpreter, recorded in Spanish. The cord detail is the kind of fact he had little reason to invent.'
+          'Sourcing in one line: a captive answering questions put to him by the officials his people had driven out, recorded in Spanish. The record says he spoke Spanish well, though interpreters were present for the oath. The cord detail is the kind of fact he had little reason to invent.'
         ],
         ask: 'What did the cord do?',
         listenFor: 'Each town that agreed untied a knot, and the knots left counted down the days, so every town would rise on the same day.',
@@ -441,7 +441,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'Defense', text: 'Beat back expedition after expedition' },
           { label: 'Leaders', text: '**Ganga Zumba**\'s treaty (1678) rejected; **Zumbi** fights on; main town falls 1694; Zumbi killed 1695' }
         ],
-        proves: 'Leaders, farms, trade, an army and a treaty: organized resistance.'
+        proves: 'What makes this organized resistance, and not just running away?'
       },
       notes: {
         minutes: 2,
@@ -460,9 +460,9 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'jamaica', kind: 'source-quote', eyebrow: 'Maroon Communities · Jamaica, 1739',
       kc: 'KC-5.3.III.C', title: 'Freedom on paper, and its price.',
-      footer: 'Freedom for one community came with a promise to guard slavery for everyone else.',
+      footer: 'Freedom for one community, and a promise to guard slavery for others.',
       template: {
-        quote: '[Captain Cudjoe and his men] shall for ever hereafter be in a perfect state of freedom and liberty ... [and] if any negroes shall hereafter run away from their masters or owners, and shall fall into Captain Cudjoe\'s hands, they shall immediately be sent back.',
+        quote: '[Cudjoe\'s people] shall for ever hereafter [be] in a perfect state of freedom and liberty ... [but] if any negroes shall hereafter run away ... and shall fall into Captain Cudjoe\'s hands, they shall immediately be sent back.',
         attribution: { author: 'Articles of the treaty with the Maroons of Trelawny Town', work: 'Second and ninth articles', year: '1 March 1739' },
         notice: 'What did the Maroons gain? What did they have to promise?'
       },
@@ -470,7 +470,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'After the English took Jamaica from Spain in 1655, people who escaped slavery formed communities in the mountains, the Maroons, joined over the decades by many more. The colony fought them for years (the First Maroon War of the 1720s and 1730s) without winning.',
-          'The Leeward Maroons under Cudjoe signed articles with the colony dated 1 March 1738 in the old calendar (1739 in ours), confirmed by the Assembly on 12 May 1739; the Windward Maroons signed a similar treaty later in 1739. The quotation joins the second and ninth articles; the brackets are BeHistorical\'s (the treaty\'s own words are "the said Captain Cudjoe, the rest of his captains, adherents, and men shall for ever hereafter in a perfect state of freedom and liberty").',
+          'The Leeward Maroons under Cudjoe signed articles with the colony dated 1 March 1738 in the old calendar (1739 in ours), confirmed by the Assembly on 12 May 1739; the Windward Maroons signed a similar treaty later in 1739. The quotation joins the second and ninth articles; the brackets and the cut "from their masters or owners" are BeHistorical\'s (the treaty\'s own words are "the said Captain Cudjoe, the rest of his captains, adherents, and men shall for ever hereafter in a perfect state of freedom and liberty").',
           'Third article: 1,500 acres of land "for themselves and posterity for ever." Sixth: Cudjoe and his successors to "take, kill, suppress, or destroy ... all rebels wheresoever they be, throughout this island." Ninth: runaways to be sent back, with a reward set by the Assembly. Seventh: to fight any foreign invader.',
           'The effect cuts both ways: organized resistance forced a colony to recognize Maroon freedom and land, and the colony turned the Maroons into a guard against other enslaved people.'
         ],
@@ -486,14 +486,14 @@ window.BEHISTORICAL_TEACHING = {
         steps: [
           { label: '9 September 1739', text: 'About twenty enslaved people seize guns from a store near the Stono River.' },
           { label: 'The march', text: 'They head south for Spanish Florida, which promised freedom; up to a hundred join.' },
-          { label: 'That afternoon', text: 'Militia catch them; about forty white colonists and as many Black rebels die.' },
+          { label: 'That afternoon', text: 'Militia break the march, hunt survivors for days; 20 to 40 colonists and dozens of rebels die.' },
           { label: '1740', key: true, text: 'The Negro Act tightens control over every enslaved person in the colony.' }
         ]
       },
       notes: {
         minutes: 2,
         land: [
-          'The revolt began on Sunday, 9 September 1739, on a branch of the Stono River near Charleston. The rebels broke into a store for guns and powder, killed the storekeepers, and marched south toward St. Augustine, "to reach St. Augustine and claim freedom in Spanish-controlled Florida"; their numbers grew "from sixty to as many as one hundred," and some accounts say they marched with drums and a banner, shouting "Liberty!" Around four o\'clock planters and militia caught them near the Edisto River. "About forty whites and probably as many blacks were killed"; fighting and hunting went on into the next week (Mark M. Smith, "Stono Rebellion," South Carolina Encyclopedia). The starting number of about twenty is the common estimate in other accounts.',
+          'The revolt began on Sunday, 9 September 1739, on a branch of the Stono River near Charleston. The rebels broke into a store for guns and powder, killed the storekeepers, and marched south toward St. Augustine, "to reach St. Augustine and claim freedom in Spanish-controlled Florida"; their numbers grew "from sixty to as many as one hundred," and some accounts say they marched with drums and a banner, shouting "Liberty!" Around four o\'clock planters and militia caught them near the Edisto River. "About forty whites and probably as many blacks were killed"; fighting and hunting went on into the next week (Mark M. Smith, "Stono Rebellion," South Carolina Encyclopedia). The account written in 1739 counts "about 40 Negroes and 20 whites" (Colonial Records of the State of Georgia, vol. 22, pt. 2); the slide gives the range. The starting number of about twenty is the common estimate in other accounts.',
           'Spain had promised freedom since 1693 to people who escaped the English colonies and became Catholic, and in 1738 founded Fort Mose near St. Augustine for them. Several Stono rebels came from Kongo, where Catholicism was widespread (Smith; John Thornton, 1991). Britain and Spain went to war weeks later.',
           'The answer: the Negro Act of 1740 made freeing an enslaved person depend on a special act of the assembly and required patrol service of every militiaman; in 1741 the colony put a heavy duty on importing more enslaved people (Smith).',
           'These context facts are the Skill Builder\'s practice. Name them here as part of the story; let students do the contextualizing in Module 05.'

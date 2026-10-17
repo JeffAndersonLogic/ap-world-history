@@ -133,7 +133,7 @@ module.exports = {
             { note: {
               kind: 'howknow',
               label: 'How we know',
-              html: `Much of what Western Europeans knew about Razin came from travelers, merchants and newspaper reports, and later accounts added invented details, such as the famous legend that he threw a Persian princess into the Volga. Historians rely on Russian government records and the letters of the rebels themselves. The Dutch print of Razin's capture in this lesson was made in Amsterdam about thirty years later by an artist who never went to Russia.`
+              html: `Much of what Western Europeans knew about Razin came from travelers, merchants and newspaper reports, and later accounts added invented details, such as the famous legend that he threw a Persian princess into the Volga. Historians rely on Russian government records and the letters of the rebels themselves. The Dutch print of Razin's capture in this lesson was made for a book published in Leiden about thirty years later by an artist who never went to Russia.`
             } }
           ]
         }
@@ -141,7 +141,7 @@ module.exports = {
       useThis: {
         tool: `Internal pushback. <em>When a ruler centralizes, the people who lose (judges, nobles, towns, peasants) may resist. Name who lost what, how they resisted, and what the ruler did next.</em>`,
         limit: `Both revolts were crushed, so it is easy to call them failures. But they showed rulers what their power cost, and rulers changed how they ruled because of them.`,
-        comparison: `The Fronde was led by judges and nobles; Razin's revolt by Cossacks and peasants. Different groups, different demands, the same push behind both: a ruler taking power that others had held.`
+        comparison: `The Fronde was led by judges and nobles; Razin's revolt by Cossacks and peasants. Different groups, different demands. What push from the crown sat behind both?`
       },
       terms: [
         ['Fronde', 'A series of revolts in France from 1648 to 1653 by judges, Parisians and great nobles against the crown.'],
@@ -273,11 +273,11 @@ module.exports = {
           heading: 'Stono: a march for freedom',
           blocks: [
             { p: `In North America, on Sunday, September 9, <span class="num">1739</span>, about twenty enslaved people gathered by the Stono River near Charleston, South Carolina, broke into a store for guns and powder, and marched south. They were heading for Spanish Florida, where the Spanish king had promised freedom to people who escaped the English colonies and became Catholic. Others joined until there were as many as a hundred. Several of the rebels came from Kongo, where Catholicism was widespread.` },
-            { p: `By that afternoon the colony's militia caught them. About forty white colonists and about as many Black rebels died in the fighting and the hunt that followed. South Carolina answered the <span class="kt">Stono Rebellion</span> with the Negro Act of <span class="num">1740</span>, which tightened control over every enslaved person in the colony: it made freeing an enslaved person depend on a special act of the assembly and put every militiaman on patrol duty.` },
+            { p: `By that afternoon the colony's militia broke up the march, and over the following days it hunted down the survivors. Somewhere between twenty and forty white colonists died, along with dozens of rebels. The accounts disagree: one written that year counted about twenty white and forty Black dead. South Carolina answered the <span class="kt">Stono Rebellion</span> with the Negro Act of <span class="num">1740</span>, which tightened control over every enslaved person in the colony: it made freeing an enslaved person depend on a special act of the assembly and put every militiaman on patrol duty.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that maroons were "just runaways hiding in the woods." Palmares had towns, leaders, farms, trade and an army, and it made a treaty. The Jamaica Maroons forced a colony to sign one. That is what the College Board means by organized resistance.`
+              html: `Do not write that maroons were "just runaways hiding in the woods." Palmares had towns, leaders, farms, trade and an army, and it made a treaty. The Jamaica Maroons forced a colony to sign one.`
             } }
           ]
         }
@@ -285,7 +285,7 @@ module.exports = {
       useThis: {
         tool: `Organized resistance. <em>Look for many people, leaders, a plan, a place, and a challenge to the authorities themselves. Then look at how the authorities answered: with destruction, a treaty, or a harsher law.</em>`,
         limit: `Organized resistance by enslaved people did not end slavery in this period. Its effects were freedom for some communities and, often, tighter control over everyone else.`,
-        comparison: `Palmares and the Jamaica Maroons built free communities in hard country and lasted for decades; the Stono rebels marched across open country and were caught in a day. Geography helps explain why the authorities answered them so differently.`
+        comparison: `Palmares and the Jamaica Maroons built free communities in hard country and lasted for decades; the Stono rebels marched across open country, and the militia broke their march the same afternoon. Why might the authorities have answered them so differently?`
       },
       terms: [
         ['Organized resistance', 'Many people acting together, with leaders and a plan, in a way that challenged the authorities.'],

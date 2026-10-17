@@ -6,7 +6,7 @@ the usage-cutting commit `6671a2f` on top) and 4.6 is the next topic in the unit
 reviewers check this story against the CED source file and the scholarship; the record of what
 they found is in `docs/TOPIC-4-6-CLAIM-LEDGER.md`, under "Review findings".
 
-**Resume here (2026-10-17):** Phases 1 to 8 built and pushed. Own pass done (slide 12 overflow, three-row myth slide, internal/external wording, Naranjo gloss). Review pass 1 launched on packet `capture-topic-for-review.js 4.6`. Next: fold pass 1 findings into the ledger, then pass 2; the Unit 4 fingerprint moves after the loop.
+**Resume here (2026-10-17):** Phases 1 to 8 built and pushed. Review pass 1 done: 18 findings (11 page truth, 7 history), 17 fixed and 1 logged as course-wide; all in the ledger under "Review findings". Next: review pass 2 on a fresh packet, then the fingerprint move, the audit record, the full test run and the Phase 10 report.
 
 **Taught:** Green Wednesday 2026-11-11, Silver Thursday 2026-11-12, from Jeff's corrected November
 Canvas calendar (2026-10-14), already in `assets/data/announcements-schedule.js` as date-only
@@ -207,10 +207,10 @@ New Mexico, among the Pueblo peoples, who lived in towns of stone and adobe. Spa
 tribute in corn and cloth (the **encomienda**) and forced labor. Franciscan friars tried to stamp out
 the Pueblo religion: from the 1650s they banned the sacred dances and burned masks and prayer sticks. In
 1675 the governor ordered the kivas, the rooms where ceremonies were held, destroyed, arrested
-forty-seven Pueblo religious leaders, hanged three, and had the rest whipped. Then came years of drought and famine, and raids by Apache neighbors
-that the Spanish did not stop. One of the whipped men, **Popé** (Po'pay), from Ohkay Owingeh, began
-to plan. Runners carried knotted cords from town to town; each town untied a knot a day, counting down
-to the same morning. When the Spanish caught two runners, the Pueblos struck early, on August 10,
+forty-seven Pueblo religious leaders, hanged three, and had the rest whipped. Spanish governors ruled by force and did not stop raids by Apache neighbors, and on top of it all
+came years of drought and famine. One of the whipped men, **Popé** (Po'pay), from Ohkay Owingeh, began
+to plan. Runners carried knotted cords from town to town; a town that agreed untied one knot as its sign,
+and the knots that were left counted the days to the same morning. When the Spanish caught two runners, the Pueblos struck early, on August 10,
 1680. In the **Pueblo Revolt** they killed about 400 colonists, including 21 friars, besieged Santa Fe
 and cut off its water, and the surviving colonists fled south to El Paso. For twelve years the Pueblos ruled
 themselves. When the Spanish came back in the 1690s, they did not restore the encomienda, and the
@@ -237,8 +237,8 @@ them to send back any enslaved person who ran away to them, and to help put down
 for some was bought with a promise to guard slavery for everyone else. And in North America, in 1739,
 about twenty enslaved people near the Stono River in South Carolina seized guns and marched south toward
 Spanish Florida, which had promised freedom to people who escaped from the English colonies. Others joined
-until there were as many as a hundred. Militia caught them the same day; about forty white colonists and
-about as many Black rebels died. South Carolina answered with the **Negro Act** of 1740, which tightened
+until there were as many as a hundred. Militia broke up the march that afternoon and hunted down survivors over the following days; between
+twenty and forty white colonists and dozens of rebels died, and the accounts disagree. South Carolina answered with the **Negro Act** of 1740, which tightened
 control over every enslaved person in the colony.
 
 **Put it together.** States pushed, inward and outward. The push landed on someone: taxes on judges and

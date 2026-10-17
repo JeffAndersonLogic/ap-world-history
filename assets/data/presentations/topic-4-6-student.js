@@ -37,7 +37,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "visual": {
           "url": "../assets/images/topics/4-6/razin-moscow-luyken-1700.jpg",
           "alt": "An etching of a crowd outside a walled city gate with towers: a man in chains sits in a wooden cart under a tall wooden frame, surrounded by guards with pikes and long guns, a rider on horseback and a dog",
-          "credit": "Jan Luyken, Razin brought into Moscow, 1671, etched in Amsterdam, 1700 · Rijksmuseum · Public domain",
+          "credit": "Jan Luyken, Razin brought into Moscow, 1671, for a book published in Leiden, 1700 · Rijksmuseum · Public domain",
           "position": "50% 55%"
         }
       }
@@ -106,7 +106,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
               "url": "../assets/images/topics/4-6/broussel-paris-1648.jpg",
               "alt": "An engraved portrait of an older man with long hair and a small beard, in a dark robe and white collar, inside an oval frame, with a coat of arms below and a printed caption naming him as a counselor of the king in the Parlement of Paris",
               "credit": "Portrait of Pierre Broussel, printed in Paris, 1648 · Rijksmuseum · Public domain",
-              "ratio": 0.84
+              "ratio": 0.822
             },
             "tag": "Printed in Paris, 1648",
             "text": "The judge **Pierre Broussel**, whose arrest set off the barricades."
@@ -115,10 +115,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "visual": {
               "url": "../assets/images/topics/4-6/parlement-arrest-luyken-1699.jpg",
               "alt": "An etching of soldiers with a halberd at a doorway seizing a man in a long robe, with a city street, a cathedral and marching soldiers behind",
-              "credit": "Caspar Luyken, arrest of a member of the Parlement of Paris, etched in Amsterdam, 1699 · Rijksmuseum · Public domain",
+              "credit": "Caspar Luyken, arrest of a member of the Parlement of Paris, for a book published in Leiden, 1699 · Rijksmuseum · Public domain",
               "ratio": 0.633
             },
-            "tag": "Etched in Amsterdam, 1699",
+            "tag": "Dutch print, Leiden, 1699",
             "text": "A Dutch artist pictures the **arrest**, fifty years later."
           }
         ],
@@ -215,7 +215,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "tag": "Ruler of Ndongo and Matamba",
         "place": "Inland from Luanda",
-        "date": "1622 to 1663",
+        "date": "1624 to 1663",
         "rows": [
           {
             "label": "Push",
@@ -241,7 +241,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "branch-tree",
       "eyebrow": "At the Edges · New Mexico, 1598 to 1680",
       "title": "Why the Pueblos rose: causes come in kinds.",
-      "footer": "Strong answers name more than one kind of cause and say how they worked together.",
+      "footer": "On top of all three came drought and famine. Strong answers name more than one kind of cause.",
       "kc": "KC-4.3.III.iii",
       "template": {
         "claimLabel": "The Pueblo Revolt, 1680",
@@ -265,9 +265,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Political",
-            "note": "Spanish rule, and its failures",
+            "note": "Spanish rule by force, and its failures",
             "items": [
-              "Drought and famine",
+              "Men hanged for plotting",
               "Raids not stopped"
             ]
           }
@@ -401,17 +401,17 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "text": "**Ganga Zumba**'s treaty (1678) rejected; **Zumbi** fights on; main town falls 1694; Zumbi killed 1695"
           }
         ],
-        "proves": "Leaders, farms, trade, an army and a treaty: organized resistance."
+        "proves": "What makes this organized resistance, and not just running away?"
       }
     },
     {
       "kind": "source-quote",
       "eyebrow": "Maroon Communities · Jamaica, 1739",
       "title": "Freedom on paper, and its price.",
-      "footer": "Freedom for one community came with a promise to guard slavery for everyone else.",
+      "footer": "Freedom for one community, and a promise to guard slavery for others.",
       "kc": "KC-5.3.III.C",
       "template": {
-        "quote": "[Captain Cudjoe and his men] shall for ever hereafter be in a perfect state of freedom and liberty ... [and] if any negroes shall hereafter run away from their masters or owners, and shall fall into Captain Cudjoe's hands, they shall immediately be sent back.",
+        "quote": "[Cudjoe's people] shall for ever hereafter [be] in a perfect state of freedom and liberty ... [but] if any negroes shall hereafter run away ... and shall fall into Captain Cudjoe's hands, they shall immediately be sent back.",
         "attribution": {
           "author": "Articles of the treaty with the Maroons of Trelawny Town",
           "work": "Second and ninth articles",
@@ -437,7 +437,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "That afternoon",
-            "text": "Militia catch them; about forty white colonists and as many Black rebels die."
+            "text": "Militia break the march, hunt survivors for days; 20 to 40 colonists and dozens of rebels die."
           },
           {
             "label": "1740",
@@ -605,7 +605,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "visual": {
           "url": "../assets/images/topics/4-6/parlement-arrest-luyken-1699.jpg",
           "alt": "An etching of soldiers, one holding a halberd, seizing a man in a long robe at his doorway, with a city street, a cathedral with two towers, and a line of marching soldiers behind",
-          "credit": "Caspar Luyken, the arrest of a judge of the Parlement of Paris, 1648, etched in Amsterdam, 1699 · Rijksmuseum · Public domain",
+          "credit": "Caspar Luyken, the arrest of a judge of the Parlement of Paris, 1648, for a book published in Leiden, 1699 · Rijksmuseum · Public domain",
           "position": "50% 52%"
         }
       }

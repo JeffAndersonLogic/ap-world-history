@@ -43,8 +43,8 @@
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'Inside a state', detail: 'Paris (the Fronde, 1648 to 1653: judges, Parisians, and nobles against the crown\'s war taxes) and the Volga (Stenka Razin\'s revolt, 1670 to 1671: peasants and Cossacks against the tsar who had bound peasants to the land in 1649). These groups pushed back against their own rulers.' },
-      { label: 'At the edge of an expanding state', detail: 'The Deccan (the Marathas against the Mughal emperor Aurangzeb, 1681 to 1707), Ndongo and Matamba (Njinga against Portugal, 1622 to 1663), New Mexico (the Pueblo Revolt against Spain, 1680), and New England (Metacom\'s War against the English colonies, 1675 to 1676). These peoples pushed back against a state trying to rule them.' },
+      { label: 'Inside a state', detail: 'Paris (the Fronde, 1648 to 1653: judges, Parisians, and nobles against the crown\'s war taxes) and the Volga (Stenka Razin\'s revolt, 1670 to 1671: peasants and Cossacks against the tsar who had bound peasants to the land in 1649).' },
+      { label: 'At the edge of an expanding state', detail: 'The Deccan (the Marathas against the Mughal emperor Aurangzeb, 1681 to 1707), Ndongo and Matamba (Njinga against Portugal, 1622 to 1663), New Mexico (the Pueblo Revolt against Spain, 1680), and New England (Metacom\'s War against the English colonies, 1675 to 1676).' },
       { label: 'Organized resistance by enslaved people', detail: 'Palmares in Brazil (maroon towns that lasted most of the 1600s), Jamaica (the Maroons, who forced the colony to sign treaties in 1739), and the Stono River in South Carolina (the Stono Rebellion, 1739).' },
       { label: 'What the map cannot show', detail: 'The shaded areas and dots mark regions, not borders or exact battlefields. They show where people pushed back, not how many took part or how each case ended.' }
     ]
@@ -138,7 +138,7 @@
       alt: 'An etching of a crowd outside a walled city gate with towers: a man in chains sits in a wooden cart under a tall wooden frame, surrounded by guards with pikes and long guns.',
       url: '../assets/images/topics/4-6/razin-moscow-luyken-1700.jpg',
       sourceUrl: 'https://id.rijksmuseum.nl/200224386',
-      caption: 'Jan Luyken\'s etching of the captured rebel Stenka Razin being brought into Moscow on a cart in 1671, made in Amsterdam for a Dutch history book printed in 1700, about thirty years later. Luyken never went to Russia. Rijksmuseum.',
+      caption: 'Jan Luyken\'s etching of the captured rebel Stenka Razin being brought into Moscow on a cart in 1671, made for a Dutch history book published in Leiden in 1700, about thirty years later. Luyken never went to Russia. Rijksmuseum.',
       prompt: 'NOTICE how the rebel is shown and who surrounds him. INFER what a state wanted people to learn from the way it treated a captured rebel. What can this picture not tell you about what happened in Moscow in 1671, and why?'
     },
     {
