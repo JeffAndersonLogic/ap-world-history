@@ -9,19 +9,18 @@ description: "Get a finished, tested BeHistorical change onto main, which GitHub
 requests here. The flow is: push the work to any branch, wait for both Validate jobs to
 go green on that exact commit, fast-forward `main` to it, then delete the branch.
 
-**Whether this matters depends on one fact you should check first**: has
-`.github/branch-ruleset.json` (name: "Protect main") actually been applied to the repo
-yet? If not, CLAUDE.md says committing straight to `main` still works and nothing stops
-an untested commit reaching students, so the safest habit is to follow this flow either
-way rather than relying on protection that may not be active.
+**The branch rule is active.** `.github/branch-ruleset.json` (name: "Protect main") has
+been applied since 2026-09-01, so committing straight to `main` is refused and this flow
+is the only route. Step 0 is for confirming that is still true, or for restoring the rule
+if it was ever removed.
 
-## Step 0: Check whether the ruleset is active
+## Step 0: Check the ruleset is still active (only if in doubt)
 
 ```bash
 gh api repos/JeffAndersonLogic/ap-world-history/rulesets --jq '.[].name'
 ```
 
-If `Protect main` is not listed, the ruleset has not been applied. Apply it (only if
+If `Protect main` is not listed, the ruleset has been removed. Re-apply it (only if
 Jeff asks you to, this changes how pushes to `main` behave for good):
 
 ```bash
@@ -74,7 +73,7 @@ The two required contexts (from `.github/branch-ruleset.json`) are:
 
 Both run in parallel from `.github/workflows/validate.yml` on every push and pull
 request. `structure` finishes in about 8 seconds; `browser` takes about two minutes (27s
-installing Chromium, 82s running the seven browser tests). `.github/workflows/nightly.yml`
+installing Chromium and the rest running the browser suite). `.github/workflows/nightly.yml`
 is separate and not a required check, it runs `check-image-urls.js` against
 commons.wikimedia.org on a schedule so a third-party outage never blocks a push.
 
