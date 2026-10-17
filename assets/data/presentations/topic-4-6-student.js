@@ -398,7 +398,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Leaders",
-            "text": "**Ganga Zumba**'s treaty (1678) rejected; **Zumbi** fights on; main town falls 1694; Zumbi killed 1695"
+            "text": "**Ganga Zumba** accepts a treaty (1678); **Zumbi** rejects it, fights on; main town falls 1694; Zumbi killed 1695"
           }
         ],
         "proves": "What makes this organized resistance, and not just running away?"
@@ -414,7 +414,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "quote": "[Cudjoe's people] shall for ever hereafter [be] in a perfect state of freedom and liberty ... [but] if any negroes shall hereafter run away ... and shall fall into Captain Cudjoe's hands, they shall immediately be sent back.",
         "attribution": {
           "author": "Articles of the treaty with the Maroons of Trelawny Town",
-          "work": "Second and ninth articles",
+          "work": "Second and ninth articles, as printed by R. C. Dallas (1803)",
           "year": "signed 1 March 1739"
         },
         "notice": "What did the Maroons gain? What did they have to promise?"
@@ -437,7 +437,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "That afternoon",
-            "text": "Militia break the march, hunt survivors for days; 20 to 40 colonists and dozens of rebels die."
+            "text": "Militia break the march and hunt survivors for months; 20 to 40 colonists and dozens of rebels die."
           },
           {
             "label": "1740",

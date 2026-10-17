@@ -129,7 +129,15 @@ const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
 // pass 3 was interrupted by a usage limit and resumed on 2026-10-16. The
 // fingerprint moved from 431fa88... and only the 4.5 entry changed; 4.1 to 4.4
 // and 4.6 to 4.8 are byte-for-byte unchanged.
-const APPROVED_UNIT4_REWRITE_BLOB = 'c72ff388143dac0a45d808f88d5510b8a67bff94';
+// Topic 4.6's story-first rewrite, "Push and Pushback", was written from the
+// 4.6 story (docs/TOPIC-4-6-STORY-DRAFT.md) on 2026-10-16 and went through three
+// independent review passes on 2026-10-17 (six reviewers; findings and
+// dispositions in docs/TOPIC-4-6-CLAIM-LEDGER.md), approved under Jeff's
+// standing rule of 2026-10-12, which delegates story and reading approval to
+// the reviewer loop. The loop ended on its three-pass safety valve, every
+// finding fixed or logged. The fingerprint moved from c72ff38... and only the
+// 4.6 entry changed; 4.1 to 4.5 and 4.7 to 4.8 are byte-for-byte unchanged.
+const APPROVED_UNIT4_REWRITE_BLOB = '2675b76c29e171069b783e1b0b437a9aab9fca05';
 const unit4SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-4.js');
 const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
   && gitBlobSha(fs.readFileSync(unit4SourcePath, 'utf8')) === APPROVED_UNIT4_REWRITE_BLOB;

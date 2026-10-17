@@ -273,7 +273,7 @@ module.exports = {
           heading: 'Stono: a march for freedom',
           blocks: [
             { p: `In North America, on Sunday, September 9, <span class="num">1739</span>, about twenty enslaved people gathered by the Stono River near Charleston, South Carolina, broke into a store for guns and powder, and marched south. They were heading for Spanish Florida, where the Spanish king had promised freedom to people who escaped the English colonies and became Catholic. Others joined until there were as many as a hundred. Several of the rebels came from Kongo, where Catholicism was widespread.` },
-            { p: `By that afternoon the colony's militia broke up the march, and over the following days it hunted down the survivors. Somewhere between twenty and forty white colonists died, along with dozens of rebels. The accounts disagree: one written that year counted about twenty white and forty Black dead. South Carolina answered the <span class="kt">Stono Rebellion</span> with the Negro Act of <span class="num">1740</span>, which tightened control over every enslaved person in the colony: it made freeing an enslaved person depend on a special act of the assembly and put every militiaman on patrol duty.` },
+            { p: `By that afternoon the colony's militia broke up the march, and over the following weeks and months it hunted down the survivors; one leader was not caught until 1742. Somewhere between twenty and forty white colonists died, along with dozens of rebels. The accounts disagree: one written that year counted about twenty white and forty Black dead. South Carolina answered the <span class="kt">Stono Rebellion</span> with the Negro Act of <span class="num">1740</span>, which tightened control over every enslaved person in the colony: it made freeing an enslaved person depend on a special act of the assembly and put every militiaman on patrol duty.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -320,7 +320,7 @@ module.exports = {
       {
         category: 'Enslaved people',
         title: 'Organized resistance in the Americas',
-        body: `Palmares lasted most of the 1600s, rejected a treaty in 1678, and fell in 1694 and 1695. The Jamaica Maroons won freedom and land by treaty in 1739, and promised to return runaways. The Stono rebels marched toward Spanish Florida in 1739 and were crushed; South Carolina passed the Negro Act of 1740.`
+        body: `Palmares lasted most of the 1600s; its leader Ganga Zumba accepted a treaty in 1678, but Zumbi and many others rejected it, and Palmares fell in 1694 and 1695. The Jamaica Maroons won freedom and land by treaty in 1739, and promised to return runaways. The Stono rebels marched toward Spanish Florida in 1739 and were crushed; South Carolina passed the Negro Act of 1740.`
       },
       {
         category: 'What came next',

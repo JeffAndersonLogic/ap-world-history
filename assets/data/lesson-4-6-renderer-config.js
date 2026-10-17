@@ -84,7 +84,7 @@
       { label: 'Move 2: Say how it helps explain the event', text: 'The judges, the city, and the nobles were the people who lost money and power when the crown centralized and taxed. So the Fronde was not just a quarrel in Paris: it was one result of a centralizing state pushing on the people who used to share its power.' },
       { label: 'Put it in one sentence', text: 'The Fronde happened as part of European rulers pulling power into their own hands and paying for wars with new taxes, which helps explain it because the judges, the city, and the nobles were the ones who lost money and power when the crown did that.' }
     ],
-    prompt: 'Now do it yourself with a different event. On September 9, 1739, about twenty enslaved people near the Stono River in South Carolina seized guns and marched south toward Spanish Florida. Others joined them, but the colony\'s militia caught them the same day. Here are three pieces of context: (1) South Carolina was a plantation colony growing rice, and enslaved Africans were the majority of its people. (2) Since 1693 the Spanish king had promised freedom in Spanish Florida to enslaved people who escaped from the English colonies and became Catholic, and in 1738 Florida built a fort near St. Augustine for them. (3) In 1739 Britain and Spain were about to go to war. In 2 to 3 sentences, put the Stono Rebellion in its broader context: name the bigger development it was part of, and explain how at least TWO of these pieces of context help explain why the rebels did what they did.',
+    prompt: 'Now do it yourself with a different event. On September 9, 1739, about twenty enslaved people near the Stono River in South Carolina seized guns and marched south toward Spanish Florida. Others joined them, but the colony\'s militia broke up their march that afternoon, though some rebels were not caught for months. Here are three pieces of context: (1) South Carolina was a plantation colony growing rice, and enslaved Africans were the majority of its people. (2) Since 1693 the Spanish king had promised freedom in Spanish Florida to enslaved people who escaped from the English colonies and became Catholic, and in 1738 Florida built a fort near St. Augustine for them. (3) In 1739 Britain and Spain were about to go to war. In 2 to 3 sentences, put the Stono Rebellion in its broader context: name the bigger development it was part of, and explain how at least TWO of these pieces of context help explain why the rebels did what they did.',
     criteria: [
       'I named a bigger development of the period that the Stono Rebellion was part of.',
       'I used at least two of the three pieces of context.',
@@ -146,7 +146,7 @@
       alt: 'A painted portrait of a bearded man in profile in a gold turban with a black plume and a patterned white robe, holding a sword, inside an oval frame, with a gold flower border and a handwritten caption below.',
       url: '../assets/images/topics/4-6/shivaji-golconda-c1680.jpg',
       sourceUrl: 'https://id.rijksmuseum.nl/200383520',
-      caption: 'A portrait of the Maratha king Shivaji by an unnamed painter, made at Golconda, in the Deccan, about 1680, around the time of his death. A Dutch owner later added a long Dutch caption below it. Rijksmuseum.',
+      caption: 'A portrait of the Maratha king Shivaji by an unnamed painter, made at Golconda, in the Deccan, about 1680, around the time of his death. Its decorated mount carries a long caption in Dutch. Rijksmuseum.',
       prompt: 'NOTICE how the painter presents Shivaji: his clothes, his pose, his sword. INFER how the painter chose to show a king who fought the Mughal Empire. What can a portrait not tell you about how the Marathas actually fought?'
     },
     {
@@ -176,7 +176,7 @@
         'if any negroes shall hereafter run away from their masters or owners,',
         'and shall fall into Captain Cudjoe\'s hands, they shall immediately be sent back."'
       ],
-      caption: 'From the second and ninth articles of the treaty between the British colony of Jamaica and the Maroons led by Cudjoe, signed March 1, 1739 (1738 in the calendar then in use), as printed in the records of Jamaica\'s Assembly. Words in brackets are added.',
+      caption: 'From the second and ninth articles of the treaty between the British colony of Jamaica and the Maroons led by Cudjoe, signed March 1, 1739 (1738 in the calendar then in use), as printed in R. C. Dallas\'s History of the Maroons (1803). Words in brackets are added.',
       prompt: 'NOTICE what the Maroons gained and what they had to promise. INFER why a colony that could not defeat the Maroons would make this deal. What can a treaty not tell you about how the Maroons themselves saw it?'
     }
   ];

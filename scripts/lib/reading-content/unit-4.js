@@ -1325,7 +1325,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In North America, on September 9, 1739, about twenty enslaved people near the Stono River in South Carolina seized guns from a store and marched south toward Spanish Florida, which had promised freedom to people who escaped from the English colonies. As they marched, others joined, until there were as many as a hundred. The colony's militia broke up the march that afternoon and hunted down the survivors over the days that followed. Somewhere between twenty and forty white colonists died, along with dozens of rebels; accounts give different numbers. South Carolina answered the Stono Rebellion with the Negro Act of 1740, a law that tightened control over every enslaved person in the colony."
+            "html": "In North America, on September 9, 1739, about twenty enslaved people near the Stono River in South Carolina seized guns from a store and marched south toward Spanish Florida, which had promised freedom to people who escaped from the English colonies. As they marched, others joined, until there were as many as a hundred. The colony's militia broke up the march that afternoon and hunted down the survivors over the weeks and months that followed. Somewhere between twenty and forty white colonists died, along with dozens of rebels; accounts give different numbers. South Carolina answered the Stono Rebellion with the Negro Act of 1740, a law that tightened control over every enslaved person in the colony."
           }
         ],
         "callout": {

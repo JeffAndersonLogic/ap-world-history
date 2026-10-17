@@ -439,7 +439,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'People', text: '**Thousands**, in a cluster of fortified towns' },
           { label: 'Life', text: 'Farms, and **trade** with nearby settlers' },
           { label: 'Defense', text: 'Beat back expedition after expedition' },
-          { label: 'Leaders', text: '**Ganga Zumba**\'s treaty (1678) rejected; **Zumbi** fights on; main town falls 1694; Zumbi killed 1695' }
+          { label: 'Leaders', text: '**Ganga Zumba** accepts a treaty (1678); **Zumbi** rejects it, fights on; main town falls 1694; Zumbi killed 1695' }
         ],
         proves: 'What makes this organized resistance, and not just running away?'
       },
@@ -463,14 +463,14 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Freedom for one community, and a promise to guard slavery for others.',
       template: {
         quote: '[Cudjoe\'s people] shall for ever hereafter [be] in a perfect state of freedom and liberty ... [but] if any negroes shall hereafter run away ... and shall fall into Captain Cudjoe\'s hands, they shall immediately be sent back.',
-        attribution: { author: 'Articles of the treaty with the Maroons of Trelawny Town', work: 'Second and ninth articles', year: 'signed 1 March 1739' },
+        attribution: { author: 'Articles of the treaty with the Maroons of Trelawny Town', work: 'Second and ninth articles, as printed by R. C. Dallas (1803)', year: 'signed 1 March 1739' },
         notice: 'What did the Maroons gain? What did they have to promise?'
       },
       notes: {
         minutes: 2,
         land: [
           'After the English took Jamaica from Spain in 1655, people who escaped slavery formed communities in the mountains, the Maroons, joined over the decades by many more. The colony fought them for years (the First Maroon War of the 1720s and 1730s) without winning.',
-          'The Leeward Maroons under Cudjoe signed articles with the colony dated 1 March 1738 in the old calendar (1739 in ours), confirmed by the Assembly on 12 May 1739; the Windward Maroons signed a similar treaty later in 1739. The quotation joins the second and ninth articles; the brackets and the cut "from their masters or owners" are BeHistorical\'s (the treaty\'s own words are "the said Captain Cudjoe, the rest of his captains, adherents, and men shall for ever hereafter in a perfect state of freedom and liberty").',
+          'The Leeward Maroons under Cudjoe signed articles with the colony dated 1 March 1738 in the old calendar (1739 in ours), confirmed by the Assembly on 12 May 1739; the Windward Maroons signed a similar treaty later in 1739. The quotation joins the second and ninth articles; the brackets and the cut "from their masters or owners" are BeHistorical\'s (Dallas\'s 1803 printing reads "the said Captain Cudjoe, the rest of his captains, adherents, and men shall for ever hereafter in a perfect state of freedom and liberty" and "and shall fall into"; the Laws of Jamaica printing reads "shall be for ever hereafter in" and "and fall into". The slide quotes Dallas and says so).',
           'Third article: 1,500 acres of land "for themselves and posterity for ever." Sixth: Cudjoe and his successors to "take, kill, suppress, or destroy ... all rebels wheresoever they be, throughout this island." Ninth: runaways to be sent back, with a reward set by the Assembly. Seventh: to fight any foreign invader.',
           'The effect cuts both ways: organized resistance forced a colony to recognize Maroon freedom and land, and the colony turned the Maroons into a guard against other enslaved people.'
         ],
@@ -486,7 +486,7 @@ window.BEHISTORICAL_TEACHING = {
         steps: [
           { label: '9 September 1739', text: 'About twenty enslaved people seize guns from a store near the Stono River.' },
           { label: 'The march', text: 'They head south for Spanish Florida, which promised freedom; the group grows to as many as a hundred.' },
-          { label: 'That afternoon', text: 'Militia break the march, hunt survivors for days; 20 to 40 colonists and dozens of rebels die.' },
+          { label: 'That afternoon', text: 'Militia break the march and hunt survivors for months; 20 to 40 colonists and dozens of rebels die.' },
           { label: '1740', key: true, text: 'The Negro Act tightens control over every enslaved person in the colony.' }
         ]
       },
@@ -541,7 +541,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'The learning objective asks for the effects of state power. Resistance is one effect; this slide is the next link, what resistance did in return.',
           'Crushed and stronger: Louis XIV ruled in person and kept the nobles close (3.2); serfdom stayed in Russia; Southern New England\'s Native nations lost their independence; South Carolina passed the Negro Act. Bargained: Njinga\'s peace in the 1650s; the 1739 treaties; Spain\'s return to New Mexico without the encomienda. Worn down: the Mughals in the Deccan.',
-          'Palmares fits "crushed" in the end, after nearly a century and a rejected treaty. Let students argue where it goes; there is no single right box.'
+          'Palmares fits "crushed" in the end, after nearly a century and a treaty that Ganga Zumba accepted and Zumbi rejected. Let students argue where it goes; there is no single right box.'
         ],
         ask: 'Where would you put Palmares, and why?',
         listenFor: 'Crushed in the end (1694 to 1695), but it lasted most of a century and forced a treaty offer in 1678: it fits more than one box.'

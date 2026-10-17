@@ -124,7 +124,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Shivaji, painted in the Deccan, about 1680",
-          caption: "A portrait of the Maratha king Shivaji, painted at Golconda in the Deccan about 1680. A Dutch owner later added a long Dutch caption below it. Rijksmuseum.",
+          caption: "A portrait of the Maratha king Shivaji, painted at Golconda in the Deccan about 1680. Its decorated mount carries a long caption in Dutch. Rijksmuseum.",
           url: "../assets/images/topics/4-6/shivaji-golconda-c1680.jpg",
           sourceUrl: "https://id.rijksmuseum.nl/200383520"
         }
@@ -134,7 +134,7 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "**Organized resistance** means many people acting together in a way that challenged the authorities. **Palmares** in Brazil had towns, leaders, farms, trade, and an army, and in 1678 its leader Ganga Zumba made a treaty with the colonial government. Many in Palmares rejected it, and **Zumbi** fought on until he was killed in 1695.",
           "In Jamaica, the **Maroons** forced the British colony to sign treaties in 1739. The colony promised them freedom and land forever, but the treaty also made them send back any runaway who came to them and help put down other revolts.",
-          "In South Carolina, the **Stono Rebellion** of 1739 was a march south toward Spanish Florida. The militia broke the march that afternoon, hunted down survivors over the following days, and the colony then passed the Negro Act of 1740 to tighten control over every enslaved person. How the authorities answered tells you how seriously they took organized resistance."
+          "In South Carolina, the **Stono Rebellion** of 1739 was a march south toward Spanish Florida. The militia broke the march that afternoon, hunted down survivors over the following weeks and months, and the colony then passed the Negro Act of 1740 to tighten control over every enslaved person. How the authorities answered tells you how seriously they took organized resistance."
         ],
         image: {
           title: "Organized resistance by enslaved people",
