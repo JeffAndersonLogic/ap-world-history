@@ -463,7 +463,7 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Freedom for one community, and a promise to guard slavery for others.',
       template: {
         quote: '[Cudjoe\'s people] shall for ever hereafter [be] in a perfect state of freedom and liberty ... [but] if any negroes shall hereafter run away ... and shall fall into Captain Cudjoe\'s hands, they shall immediately be sent back.',
-        attribution: { author: 'Articles of the treaty with the Maroons of Trelawny Town', work: 'Second and ninth articles, as printed by R. C. Dallas (1803)', year: 'signed 1 March 1739' },
+        attribution: { author: 'Treaty with Cudjoe\'s Maroons', work: 'Articles 2 and 9 (Dallas, 1803)', year: 'signed 1 March 1739' },
         notice: 'What did the Maroons gain? What did they have to promise?'
       },
       notes: {
