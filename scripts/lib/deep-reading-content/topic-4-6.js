@@ -77,14 +77,14 @@ module.exports = {
           heading: 'Pulling power inward',
           blocks: [
             { p: `<span class="kt">Centralization</span> means a ruler gathering power that others used to share. Topic 3.2 showed the tools: officials and soldiers who owed everything to the ruler, such as the Ottoman devshirme; tax systems that answered to the center; and a court, like Louis XIV's at Versailles, where great nobles spent their time under the king's eye instead of building power on their own lands.` },
-            { p: `Every one of those tools took something from someone. A king who wanted more taxes took money from towns, landowners and peasants. A king who wanted the final word took it from the judges, nobles and local assemblies who had shared it. A tsar who wanted his landholders to keep their workers took freedom of movement from the peasants. So the people who pushed back against centralization were usually the state's own subjects. The College Board calls these challenges internal.` }
+            { p: `Every one of those tools took something from someone. A king who wanted more taxes took money from towns, landowners and peasants. A king who wanted the final word took it from the judges, nobles and local assemblies who had shared it. A tsar who wanted his landholders to keep their workers took freedom of movement from the peasants. So the people who pushed back against centralization were usually the state's own subjects. These were internal challenges, from inside the state.` }
           ]
         },
         {
           heading: 'Pushing power outward',
           blocks: [
             { p: `<span class="kt">Expansion</span> means a state reaching over new lands and peoples. Topics 4.2 to 4.5 showed the maritime empires doing it: forts on the coasts of Africa and Asia, colonies in the Americas, tribute and forced labor, missionaries, and the plantation economy built on enslaved Africans. Land empires expanded too: the Mughal emperors pushed south into the Deccan, and Russia pushed east and south.` },
-            { p: `Expansion took land, harvests, labor and faith from people who had never agreed to be ruled. So the people who pushed back against expansion were usually at the edges of a growing state: kingdoms it wanted to conquer, and peoples it had only recently claimed. These are the challenges the College Board calls external. (External here does not mean European states fighting each other over trade. That is Topic 4.5.)` },
+            { p: `Expansion took land, harvests, labor and faith from people who had never agreed to be ruled. So the people who pushed back against expansion were usually at the edges of a growing state: kingdoms it wanted to conquer, and peoples it had only recently claimed. These were external challenges, from outside the state that was pushing. (External here does not mean European states fighting each other over trade. That is Topic 4.5.)` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',

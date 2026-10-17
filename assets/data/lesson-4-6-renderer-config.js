@@ -161,7 +161,7 @@
       title: 'A Pueblo Man Testifies, 1681',
       label: 'Written source · Spanish record of a Pueblo man\'s testimony',
       sourceText: [
-        '"[S]ince the government of Señor General Hernando Ugarte y la Concha',
+        '"[S]ince the government of Señor General Hernando Ugarte y la Concha [around 1650]',
         'they have planned to rebel on various occasions ... but they always kept in their hearts',
         'the desire to carry it out, so as to live as they are living today."'
       ],

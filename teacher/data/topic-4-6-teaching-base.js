@@ -36,7 +36,7 @@ window.BEHISTORICAL_TEACHING = {
     ],
     should: [
       'Model 4.B Contextualization on the Fronde, then let students practice on Stono in the Skill Builder.',
-      'Correct four myths: "only colonized peoples resisted," "resistance always failed," "maroons were just runaways hiding," and "resisting a European empire meant opposing slavery."',
+      'Correct three myths: "only colonized peoples resisted," "maroons were just runaways hiding," and "resisting a European empire meant opposing slavery." The outcomes slide answers a fourth, "resistance always failed."',
       'Set the Pueblo Revolt beside Metacom\'s War: same decade, opposite outcomes.'
     ],
     could: [
@@ -46,7 +46,7 @@ window.BEHISTORICAL_TEACHING = {
   },
 
   flow: [
-    { id: 'preflight', label: 'Teacher Preflight', range: 'Before class', minutes: 2, teacher: 'The spine, the chain, the owns and bridge-only split, the four myths.', students: 'Not projected.', slide: 1 },
+    { id: 'preflight', label: 'Teacher Preflight', range: 'Before class', minutes: 2, teacher: 'The spine, the chain, the owns and bridge-only split, the three myths.', students: 'Not projected.', slide: 1 },
     { id: 'beready', label: 'BeReady', range: '0-4', minutes: 4, teacher: 'Retrieve 4.5, 3.2 and 4.4. Bridge to who pushed back.', students: 'Answer from memory.', slide: 2 },
     { id: 'question', label: 'The Question', range: '4-5', minutes: 1, teacher: 'Pose the topic question over Razin\'s capture.', students: 'Predict who might push back against a state.', slide: 3 },
     { id: 'first10', label: 'First & 10', range: '5-17', minutes: 12, teacher: 'Module 02: students read "Push and Pushback" in class.', students: 'For every case: push, who, how, what next.', slide: 4 },
@@ -66,7 +66,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'stono', label: 'Stono, 1739', range: '41-43', minutes: 2, teacher: 'The march south and the colony\'s answer.', students: 'Say how the authorities responded.', slide: 18 },
     { id: 'context', label: 'Contextualize It', range: '43-45', minutes: 2, teacher: 'Model 4.B on the Fronde with a sentence frame.', students: 'Say the frame aloud for the Fronde.', slide: 19 },
     { id: 'outcomes', label: 'Three Outcomes', range: '45-47', minutes: 2, teacher: 'Crushed, bargained, worn down.', students: 'Sort each case.', slide: 20 },
-    { id: 'myths', label: 'Myth and Evidence', range: '47-49', minutes: 2, teacher: 'Four things people get wrong.', students: 'Correct each myth.', slide: 21 },
+    { id: 'myths', label: 'Myth and Evidence', range: '47-49', minutes: 2, teacher: 'Three things people get wrong.', students: 'Correct each myth.', slide: 21 },
     { id: 'chain', label: 'Push and Pushback', range: '49-53', minutes: 4, teacher: 'Students redraw the chain from memory.', students: 'Retell the whole topic.', slide: 22 },
     { id: 'sharpen', label: 'Sharpen the Claim', range: '53-55', minutes: 2, teacher: 'From "they were oppressed" to a cause chain.', students: 'Upgrade a weak claim.', slide: 23 },
     { id: 'skill', label: 'Skill Builder', range: '55-61', minutes: 6, teacher: 'Module 05: Contextualization.', students: 'Put Stono in its context.', slide: 24 },
@@ -103,7 +103,7 @@ window.BEHISTORICAL_TEACHING = {
           'The CED\'s sample activity (p. 77) is a close reading of the Declaration of Pedro Naranjo (1681). It is the Primary Source module; slide 12 is a first look.',
           'Owns: local resistance to expanding and centralizing states, across Afro-Eurasia and the Americas; organized resistance by enslaved people in the Americas.',
           'Bridge only: rivalries between European states (KC-4.3.III.ii, Topic 4.5; the Unit 4 contract forbids it as a 4.6 target); Versailles (3.2, one clause); the labor systems and plantations (4.4, named as the push); casta and elites (4.7, the hand-off); the Haitian Revolution (Unit 5, after 1750, not mentioned).',
-          'Four myths: "only colonized peoples resisted states"; "resistance always failed"; "maroons were just runaways hiding in the woods"; "resisting a European empire meant opposing slavery."',
+          'Three myths, on slide 21: "only colonized peoples resisted states"; "maroons were just runaways hiding in the woods"; "resisting a European empire meant opposing slavery." Slide 20 answers a fourth, "resistance always failed."',
           'Every picture in this deck is a real object from the 1600s: two prints made in Paris and Amsterdam, two paintings made in the Deccan, and a Dutch print of Razin made about thirty years after his death. The map is the course\'s own. None is AI-generated.'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
@@ -184,7 +184,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'KC-4.3.III.iii opens with the two pushes: "state expansion and centralization." They are different. Centralizing is a state pulling power inward over people it already rules (Unit 3: Versailles, the devshirme, tax collectors who answered to the center). Expanding is a state pushing outward over people it does not yet rule (Unit 4: the maritime empires, and land empires too, such as the Mughals moving into the Deccan).',
           'This is the context, in the 4.B sense, for every case today. A revolt explained only as "people were angry" has no context; a revolt explained as the result of one of these pushes does.',
-          'The CED\'s title says the same thing: internal challenges (from a state\'s own nobles, judges, peasants) and external ones (from peoples at the edges of an expanding state). Do not define "external" as European rivalry; that is 4.5.'
+          'The CED\'s title names internal and external challenges without defining them. This deck reads them as challenges from a state\'s own nobles, judges and peasants, and from peoples at the edges of an expanding state. Do not define "external" as European rivalry; that is 4.5.'
         ],
         ask: 'Sort one cost under each push: who pays when a state centralizes, and who pays when it expands?',
         listenFor: 'Centralize: nobles and judges lose power, taxpayers pay more. Expand: conquered peoples lose land and pay tribute; enslaved Africans are forced to work.',
@@ -344,14 +344,14 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-4.3.III.iii', title: 'How the towns kept the same day.',
       footer: 'A first look. The Primary Source module (08) reads more of his testimony.',
       template: {
-        quote: 'They told him to make a cord of maguey fiber and tie some knots in it which would signify the number of days that they must wait before the rebellion. He said that the cord was passed through all the pueblos of the kingdom so that the ones which agreed to it might untie one knot in sign of obedience, and by the other knots they would know the days which were lacking.',
+        quote: '[T]he cord was passed through all the pueblos of the kingdom so that the ones which agreed to it might untie one knot in sign of obedience, and by the other knots they would know the days which were lacking.',
         attribution: { author: 'Pedro Naranjo, of San Felipe Pueblo, questioned by Spanish officials', work: 'Declaration, translated by C. C. Shelby (1942)', year: '19 December 1681' },
         notice: 'What did the cord do? Why would a revolt across many towns need it?'
       },
       notes: {
         minutes: 1,
         land: [
-          '"Declaration of Pedro Naranjo of the Queres Nation," 19 December 1681, translated by Charmion Clair Shelby in Charles Wilson Hackett, ed., Revolt of the Pueblo Indians of New Mexico and Otermín\'s Attempted Reconquest, 1680-1682 (University of New Mexico Press, 1942), vol. 2. Naranjo, a Keres man from San Felipe Pueblo, was captured during Otermín\'s attempt to retake New Mexico and questioned by Spanish officials. "Him" is Popé; "they" are the three spirit beings Naranjo says appeared to Popé in a kiva at Taos.',
+          '"Declaration of Pedro Naranjo of the Queres Nation," 19 December 1681, translated by Charmion Clair Shelby in Charles Wilson Hackett, ed., Revolt of the Pueblo Indians of New Mexico and Otermín\'s Attempted Reconquest, 1680-1682 (University of New Mexico Press, 1942), vol. 2. Naranjo, a Keres man from San Felipe Pueblo, was captured during Otermín\'s attempt to retake New Mexico and questioned by Spanish officials. The slide starts mid-sentence (the record reads "He said that the cord was passed ...", "he" being Naranjo as the Spanish clerk recorded him). The sentence before it says three spirit beings told Popé, in a kiva at Taos, to make a cord of maguey fiber and tie in it one knot for each day until the rising.',
           'This is the CED\'s own sample-activity source (p. 77). The slide uses only the knotted-cord passage; the Primary Source module gives students more of the testimony and asks for the reasons for the revolt and how to source a captive\'s statement. Do not run those questions here.',
           'Sourcing in one line: a captive answering questions put to him by the officials his people had driven out, through an interpreter, recorded in Spanish. The cord detail is the kind of fact he had little reason to invent.'
         ],
@@ -549,12 +549,11 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'myths', kind: 'myth-evidence', eyebrow: 'Myth and Evidence',
-      title: 'Four things people get wrong.',
+      title: 'Three things people get wrong.',
       footer: 'The evidence tells a more interesting story than the myths.',
       template: {
         rows: [
           { myth: 'Only colonized peoples resisted states.', evidence: 'French judges and nobles and Russian peasants pushed back against their own rulers.', source: 'The Fronde; Razin' },
-          { myth: 'Resistance always failed.', evidence: 'Some forced bargains or wore an empire down.', source: 'Jamaica, 1739; the Marathas' },
           { myth: 'Maroons were just runaways hiding in the woods.', evidence: 'Palmares had towns, farms, trade, an army and a treaty.', source: 'Palmares, 1600s' },
           { myth: 'Resisting a European empire meant opposing slavery.', evidence: 'Njinga\'s wars took captives to sell; the Maroons agreed to return runaways.', source: 'Matamba; the 1739 treaty' }
         ]
@@ -563,12 +562,11 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Row 1 is the "array" in KC-4.3.III.iii: social, political and economic groups, not only colonized peoples.',
-          'Row 2: the Pueblo Revolt also forced new terms; Metacom\'s War and Stono were crushed. Resistance sometimes failed; not always.',
-          'Row 3 is the "organized" in KC-5.3.III.C.',
-          'Row 4 is the hardest. Do not swing to the opposite myth either: the Maroons\' freedom was real, and Njinga held off Portugal for decades. People resisted the push that landed on them, not every injustice of their age.'
+          'Row 2 is the "organized" in KC-5.3.III.C.',
+          'Row 3 is the hardest. Do not swing to the opposite myth either: the Maroons\' freedom was real, and Njinga held off Portugal for decades. People resisted the push that landed on them, not every injustice of their age.'
         ],
         ask: 'Which myth is the hardest to correct without making a new mistake?',
-        listenFor: 'The fourth: resisting one power was not opposing slavery itself, but that does not make the resistance less real.'
+        listenFor: 'The third: resisting one power was not opposing slavery itself, but that does not make the resistance less real.'
       }
     },
     {

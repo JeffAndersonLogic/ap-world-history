@@ -281,7 +281,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "footer": "A first look. The Primary Source module (08) reads more of his testimony.",
       "kc": "KC-4.3.III.iii",
       "template": {
-        "quote": "They told him to make a cord of maguey fiber and tie some knots in it which would signify the number of days that they must wait before the rebellion. He said that the cord was passed through all the pueblos of the kingdom so that the ones which agreed to it might untie one knot in sign of obedience, and by the other knots they would know the days which were lacking.",
+        "quote": "[T]he cord was passed through all the pueblos of the kingdom so that the ones which agreed to it might untie one knot in sign of obedience, and by the other knots they would know the days which were lacking.",
         "attribution": {
           "author": "Pedro Naranjo, of San Felipe Pueblo, questioned by Spanish officials",
           "work": "Declaration, translated by C. C. Shelby (1942)",
@@ -491,7 +491,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "myth-evidence",
       "eyebrow": "Myth and Evidence",
-      "title": "Four things people get wrong.",
+      "title": "Three things people get wrong.",
       "footer": "The evidence tells a more interesting story than the myths.",
       "template": {
         "rows": [
@@ -499,11 +499,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "myth": "Only colonized peoples resisted states.",
             "evidence": "French judges and nobles and Russian peasants pushed back against their own rulers.",
             "source": "The Fronde; Razin"
-          },
-          {
-            "myth": "Resistance always failed.",
-            "evidence": "Some forced bargains or wore an empire down.",
-            "source": "Jamaica, 1739; the Marathas"
           },
           {
             "myth": "Maroons were just runaways hiding in the woods.",
