@@ -272,7 +272,7 @@ Shorter for the wall: **Push, and pushback.**
 | The two pushes: centralizing (Unit 3) and expanding (Unit 4), and what each cost | KC-4.3.III.iii ("state expansion and centralization") | The cause. Without it, resistance has no context (4.B). |
 | The Fronde, 1648 to 1653: war taxes, the Parlement's refusal, the barricades, the nobles, the crown's win | KC-4.3.III.iii; example Fronde | **Centralization** pushed back by *political* and *social* elites: judges and nobles. Crushed; the crown came out stronger. |
 | Russia's Law Code of 1649; runaways to the Don; Razin's revolt, 1670 to 1671 | KC-4.3.III.iii; example Cossack revolts | **Centralization** pushed back by an *economic* group, peasants, with the Cossacks. Crushed; serfdom stayed. |
-| Aurangzeb in the Deccan, 1681 to 1707; Shivaji crowned 1674; hill forts and raids | KC-4.3.III.iii; example Maratha conflict with Mughals | **Expansion** pushed back by a regional *political* power. The state wore itself down. |
+| Shivaji against Mughal armies from the 1660s; crowned 1674; Aurangzeb in the Deccan himself, 1681 to 1707; hill forts and raids | KC-4.3.III.iii; example Maratha conflict with Mughals | **Expansion** pushed back by a regional *political* power. The state wore itself down. |
 | Njinga: Luanda 1622, ruler 1624, Matamba, the Dutch, peace in the 1650s, died 1663 | KC-4.3.III.iii; example Ana Nzinga | **Expansion** (Portugal's) pushed back by an African ruler with war and diplomacy. A bargain. Also: resisting Portugal was not opposing the slave trade. |
 | Pueblo Revolt: 1598 colony; encomienda, labor, raids on kivas; 1675 arrests; drought; knotted cords; 10 August 1680; twelve years; the 1690s return | KC-4.3.III.iii; example Pueblo Revolts; the CED's sample activity (Naranjo) | **Expansion** pushed back by Indigenous towns, with religious, economic and political causes together. A win, then a changed bargain. |
 | Metacom's War, 1675 to 1676 | KC-4.3.III.iii; example Metacom's War | **Expansion** pushed back, and crushed. Set beside the Pueblo Revolt: same decade, opposite outcome. |
@@ -407,7 +407,7 @@ report.
    in the Hackett and Shelby translation, with the CED's own questions (social, economic and political
    reasons; the most significant cause) and one sourcing question (a captive questioned by Spanish
    officials). It replaces the invented Otermín passage.
-5. **Map module:** rebuilt as one map of pushback, c. 1640 to 1740: the nine cases as points, with
+5. **Map module:** rebuilt as one map of pushback, c. 1600 to 1739 (dates corrected in review passes 1 and 2): the nine cases as points, with
    internal and external marked. Rivalry, privateers, the Ming and the Ottomans leave.
 6. **Evidence Lab:** the two 20th-century memorials and the course map leave; cards are chosen across
    Afro-Eurasia and the Americas and both Key Concepts, and verified as real objects of the period.
