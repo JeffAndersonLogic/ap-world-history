@@ -28,7 +28,7 @@ Working branch: `build/class-pulse-engine-20261017`. Base: current `main` at `dc
 | Offline gate | 39 suites passed |
 | Dedicated Class Pulse Chromium test | Passed, including server test double and negative control |
 | Firestore emulator | 3 suites passed, including cross-section authorization proof |
-| Whole-repository browser gate | See release verification notes below; unrelated existing deck overflow must not be described as a green run |
+| Whole-repository browser gate | See release verification notes below; existing deck/template layout failures must not be described as a green run |
 
 Replay and mocked-provider tests prove software behavior, not model interpretation quality. Development examples are not a held-out accuracy benchmark. The read adapter was tested synthetically; no real student work was read or sent to an AI provider.
 
@@ -50,7 +50,7 @@ Detailed architecture, commands and boundaries: [CLASS-PULSE-CONNECTION.md](../t
 
 ## Adjacent findings
 
-- The whole-repository Chromium sweep reports pre-existing Topic 4.5 student-deck overflow: 7 px at 1280×800 and 5 px at 1024×768 in this Chromium build. Class Pulse does not modify any deck, deck renderer, or deck data. A separate clean-main checkout at the pinned base commit reproduced both failures. This is outside the Class Pulse change and has not been silently fixed.
+- The whole-repository Chromium sweep reports existing student-deck overflow in Topics 4.4, 4.5 and 4.6, plus template overflow/collision in Topics 3.2 and 4.4–4.6. Separate clean-main runs at the pinned base commit reproduce the deck failures; the template failure is likewise present on unchanged main. Class Pulse does not modify any deck, deck renderer, or deck data. These are adjacent findings, not a green whole-repository browser result, and were not silently fixed.
 - The existing teacher-index template contains a duplicated opening `section` fragment. The Class Pulse entry follows the generator rather than hand-editing its output; this unrelated defect was not changed.
 - Known iOS Firebase popup issues and formal review of deployed student persistence are not proven resolved by Chromium emulation.
 
