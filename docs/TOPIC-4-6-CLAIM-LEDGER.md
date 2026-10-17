@@ -109,7 +109,7 @@ Source), BS (BeSurreal), BR (BeInTheRoom), CV (Canvas text). "Story" means the s
 |---|---|---|---|
 | Spain planted a colony in New Mexico in 1598 (Oñate) | F10 §4, DR §04, Deck 11 and notes | LOC 2013: "In 1598, Juan de Onate proceeded from Mexico to the land that would become New Mexico." NPS Pecos: "Don Juan de Oñate ... in 1598." | VERIFIED |
 | Under the encomienda Pueblos paid tribute from their crops; under repartimiento they were forced to work | F10 §4, DR §04, Deck 11, LD lecture card 2 | LOC 2013: "Under the system of encomienda, the Pueblos were forced to contribute a portion of their crops each year ... while under repartimiento, the Pueblo people were forced to work in Spanish households without pay." The story's "corn and cloth" is narrowed to "crops and cloth" in surfaces unless a source for cloth is recorded. | NARROWED |
-| From the 1650s friars banned the sacred dances and burned masks and prayer sticks | F10 §4, DR §04, Deck 11 and notes, LD lecture card 2 | NPS (search summary of the Kansas/Pecos histories): Fray Alonso de Posada, custodian 1656 to 1665, banned kachina dances and had masks and prayer sticks burned. To re-read in the NPS text before a student surface states it. | VERIFIED (dates as "from the 1650s") |
+| In 1661 the friars banned the sacred dances and burned masks and prayer sticks (corrected in review pass 2 from "from the 1650s") | F10 §4, DR §04, Deck 11 notes, LD lecture card 2 (undated) | Kessell, NPS history (kcc/chap5a): "On May 22, [1661] he [Posada] forbade kachina dances and ordered the missionaries to seize every mask, prayer stick, and effigy." NLM Native Voices: "AD 1661: Spain raids kivas; outlaws the pueblos' beliefs." Governor López de Mendizábal (1659 to 1661) had allowed the dances over the friars' objections. | VERIFIED |
 | In 1675 the governor (Treviño) ordered kivas destroyed, arrested 47 religious leaders, hanged three, and whipped the rest; Popé was among them; they were released when Pueblo men came to Santa Fe | F10 §4, DR §04, Deck 11 and 13 and notes, LD lecture card 2, BR evidence card | Teaching American History intro (Weaver): "In 1675 the authorities arrested forty-seven medicine men ... Four were sentenced to death; the remainder were publicly whipped and imprisoned. One of those imprisoned was ... Popé." Search summaries of other accounts: three hanged, the fourth killed himself; release after a Pueblo force came to Santa Fe. LOC 2013: "Several of those arrested were hanged and the others whipped." Hanged "three" follows the accounts that separate the suicide. | VERIFIED |
 | Drought and famine in the 1660s and 1670s, and Apache raids | F10 §4, DR §04, Deck 11 and notes, LD lecture card 2, BR premise | LOC 2013: "several years of drought and famine in the 1660s and 1670s." NPS Pecos: "disease, famine, and raids." | VERIFIED |
 | Runners carried knotted cords; a town that agreed untied one knot, and the knots left counted the days (corrected in review pass 1: the first wording, "a knot a day", contradicted this source) | F10 §4, DR §04, Deck 12 and 13, LD lecture card 2, PS, BR | Naranjo 1681: "a cord of maguey fiber and tie some knots in it which would signify the number of days that they must wait ... the ones which agreed to it might untie one knot in sign of obedience, and by the other knots they would know the days which were lacking." | VERIFIED |
@@ -178,7 +178,7 @@ Source), BS (BeSurreal), BR (BeInTheRoom), CV (Canvas text). "Story" means the s
 | Spain founded Fort Mose near St. Augustine in 1738; Britain and Spain went to war weeks after Stono | Deck 18 notes, RC Skill Builder | Fort Mose 1738 (standard; Florida Museum and NPS); war declared October 1739 (the War of Jenkins' Ear). | VERIFIED |
 | The 1693 edict required escapees to become Catholic | RC Skill Builder, DR §05, Deck 18 notes | Summaries of the 1693 royal edict (conversion and loyalty as conditions). | VERIFIED |
 | South Carolina had an enslaved majority and grew rice | RC Skill Builder | Smith: "the colony's black majority population"; rice as the Lowcountry's staple (standard). | VERIFIED |
-| Kachina dances banned and masks burned under Fray Alonso de Posada | DR §04 ("from the 1650s") | NPS history as summarized in search (Posada, custodian 1656 to 1665). | VERIFIED |
+| Kachina dances banned and masks burned under Fray Alonso de Posada | Deck 11 notes ("May 1661") | As the row above. | VERIFIED |
 
 ### Pictures: every caption and credit
 
@@ -245,3 +245,27 @@ readability, one for history against outside sources. Every finding is listed wi
 | 5 | The map title "1648 to 1739" contradicted its own labels (Njinga from 1622, Palmares in the 1600s) | FIXED: "Push and Pushback, 1620s to 1739" on the map, the Map module and the slide 6 notes; the intro now says "a little over a hundred years". |
 | 6 | The knotted cord was described two ways | Same as reviewer 1, finding 3. FIXED. |
 | 7 | "Questioned through an interpreter" misdescribes the record, which says Naranjo spoke Spanish well and interpreters served for the oath | FIXED on the Primary Source intro and the slide 12 notes. |
+
+### Pass 2, reviewer 1 (page truth and readability), 6 findings
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | The Map Key names the state and group for each case, so the Map Question's naming step can be read off the key | REJECTED. Reading a key to find who and where is the map skill the module practices; the question's real demand, explaining why one case is internal and the other external, is not printed anywhere. Pass 1's fix already cut the explanatory sentences from the key. |
+| 2 | Checkpoint 1's displayed target says "what that resistance changed", but the prompt and checklist ask only "what happened next" | FIXED. The prompt, checklist and Success Criterion 1 now ask what the resistance changed, or why it changed nothing. |
+| 3 | The Evidence Lab asks "who made it", but three captions name no maker; the Shivaji prompt assumed Shivaji shaped his portrait | FIXED. Broussel, Shivaji and Aurangzeb captions say "by an unnamed printmaker/painter"; the Shivaji prompt asks how the painter chose to show him. |
+| 4 | Slide 18 "up to a hundred join" reads as a hundred on top of the twenty | FIXED: "the group grows to as many as a hundred." |
+| 5 | "More than a dozen" English towns in Metacom's War overstates the usual twelve | REJECTED. The ledger's sources support it: Oxford Companion, "more than a dozen towns burned"; Dictionary of American History, sixteen Massachusetts and four Rhode Island towns destroyed. The pass 2 history reviewer independently found 12 to 25 depending on the source. |
+| 6 | BeInTheRoom said one strong ruler would be "again, the very thing they rose against", though the Pueblos had no single ruler | FIXED: "one strong ruler of their own, a lot like the Spanish rule they rose against." |
+
+### Pass 2, reviewer 2 (history against outside sources), 8 findings
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | The dance ban was 1661 (Posada's order), not "from the 1650s" | FIXED on F10, deep reading, slide 11 notes, story draft and ledger. |
+| 2 | Maratha war dated 1681 (map, key) and 1674 (slide 9) though Shivaji fought Mughal armies from the early 1660s | FIXED: "1660s to 1707" on map, key and slide 9; the slide notes name Shaista Khan's campaign, Surat 1664 and Purandar 1665. The F10's 1674 coronation and 1681 arrival of Aurangzeb are correct as written. |
+| 3 | "Printed in Paris" is not in the Broussel catalogue record | FIXED: "printed in 1648 with the French king's license" on the lecture card, Evidence Lab card, slide 7 tag and credit, and slide 1 and 26 notes. |
+| 4 | Slide 1 notes say every picture is from the 1600s; the Razin print is 1700 | FIXED: "from the 1600s or 1700". |
+| 5 | Slide 9 notes repeat Pritchett's "died in Aurangabad" | FIXED: died at his camp near Ahmednagar, buried at Khuldabad near Aurangabad. |
+| 6 | The Persian princess story is in Struys's book of 1676, not a "later" addition | FIXED in the deep reading: a traveler's tale historians doubt, Jan Struys's account printed in 1676. |
+| 7 | Map title "1620s to 1739" leaves out Palmares (1600s) | FIXED: "c. 1600 to 1739" on the map, Map module, and slide 6 notes. |
+| 8 | The Jamaica treaty is "dated" 1 March 1738 in the old calendar | FIXED: "signed March 1, 1739 (1738 in the calendar then in use)" on the Evidence Lab card; slide 17 "signed 1 March 1739", with the notes already giving the old-calendar date. |

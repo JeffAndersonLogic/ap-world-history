@@ -50,7 +50,7 @@ window.BEHISTORICAL_LESSON = {
 
   successCriteria: [
     {
-      criteria: "I can explain, for one case from Africa, Asia, or Europe (the Fronde, Razin's revolt, the Marathas, or Njinga) and one from the Americas (the Pueblo Revolt or Metacom's War), what the state pushed for, which group pushed back and how, what happened next, and one way the two cases were alike.",
+      criteria: "I can explain, for one case from Africa, Asia, or Europe (the Fronde, Razin's revolt, the Marathas, or Njinga) and one from the Americas (the Pueblo Revolt or Metacom's War), what the state pushed for, which group pushed back and how, what happened next and what the resistance changed, and one way the two cases were alike.",
       kc: 'KC-4.3.III.iii',
       theme: "Governance"
     },
@@ -96,7 +96,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "A judge of the Parlement of Paris, printed in 1648",
-          caption: "A portrait print of Pierre Broussel, a judge of the Parlement of Paris, printed in Paris in 1648, the year his arrest set off the barricades. The caption reads \"Pierre de Broussel, counselor of the King in his court of Parlement of Paris.\" Rijksmuseum.",
+          caption: "A portrait print of Pierre Broussel, a judge of the Parlement of Paris, printed by an unnamed printmaker in 1648 with the French king's license, the year his arrest set off the barricades. The caption reads \"Pierre de Broussel, counselor of the King in his court of Parlement of Paris.\" Rijksmuseum.",
           url: "../assets/images/topics/4-6/broussel-paris-1648.jpg",
           sourceUrl: "https://id.rijksmuseum.nl/200435769"
         }
@@ -147,11 +147,11 @@ window.BEHISTORICAL_LESSON = {
   },
 
   map: {
-    title: "Push and Pushback, 1620s to 1739",
+    title: "Push and Pushback, c. 1600 to 1739",
     url: "../assets/images/instructional-maps/topic-4-6.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-4-6.svg",
     caption: "Nine places where people pushed back against expanding and centralizing states, sorted into three kinds: pushback inside a state, pushback at the edge of an expanding state, and organized resistance by enslaved people.",
-    intro: "Use the map to see how far the pushback reached. In a little over a hundred years, people pushed back against states in Europe, Asia, Africa, and the Americas. The colors sort the cases into three kinds; the key says which is which.",
+    intro: "Use the map to see how far the pushback reached. In about a century and a half, people pushed back against states in Europe, Asia, Africa, and the Americas. The colors sort the cases into three kinds; the key says which is which.",
     prompt: "Find ONE place where people pushed back inside their own state and ONE place where they pushed back at the edge of an expanding state. For each, name the state that was pushing and the group that pushed back. Then explain why one is an internal challenge, from inside a state, and the other an external one, from the edge of a state that was expanding."
   },
 

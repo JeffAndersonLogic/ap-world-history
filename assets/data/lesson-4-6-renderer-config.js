@@ -44,7 +44,7 @@
     ...lesson.map,
     key: [
       { label: 'Inside a state', detail: 'Paris (the Fronde, 1648 to 1653: judges, Parisians, and nobles against the crown\'s war taxes) and the Volga (Stenka Razin\'s revolt, 1670 to 1671: peasants and Cossacks against the tsar who had bound peasants to the land in 1649).' },
-      { label: 'At the edge of an expanding state', detail: 'The Deccan (the Marathas against the Mughal emperor Aurangzeb, 1681 to 1707), Ndongo and Matamba (Njinga against Portugal, 1622 to 1663), New Mexico (the Pueblo Revolt against Spain, 1680), and New England (Metacom\'s War against the English colonies, 1675 to 1676).' },
+      { label: 'At the edge of an expanding state', detail: 'The Deccan (the Marathas against the Mughal emperor Aurangzeb, 1660s to 1707), Ndongo and Matamba (Njinga against Portugal, 1622 to 1663), New Mexico (the Pueblo Revolt against Spain, 1680), and New England (Metacom\'s War against the English colonies, 1675 to 1676).' },
       { label: 'Organized resistance by enslaved people', detail: 'Palmares in Brazil (maroon towns that lasted most of the 1600s), Jamaica (the Maroons, who forced the colony to sign treaties in 1739), and the Stono River in South Carolina (the Stono Rebellion, 1739).' },
       { label: 'What the map cannot show', detail: 'The shaded areas and dots mark regions, not borders or exact battlefields. They show where people pushed back, not how many took part or how each case ended.' }
     ]
@@ -99,10 +99,10 @@
       cardDesc: 'How expansion and centralization led different local groups to resist, in Afro-Eurasia and the Americas.',
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Choose TWO cases of local resistance: ONE from Africa, Asia, or Europe (the Fronde, Razin\'s revolt, the Marathas, or Njinga) and ONE from the Americas (the Pueblo Revolt or Metacom\'s War). For EACH case, explain what the state was pushing for (to expand, or to centralize), which group pushed back and how, and what happened next. Then explain one way the two cases were alike.',
+      prompt: 'Choose TWO cases of local resistance: ONE from Africa, Asia, or Europe (the Fronde, Razin\'s revolt, the Marathas, or Njinga) and ONE from the Americas (the Pueblo Revolt or Metacom\'s War). For EACH case, explain what the state was pushing for (to expand, or to centralize), which group pushed back and how, and what happened next, including one way the resistance changed the state, or why it changed nothing. Then explain one way the two cases were alike.',
       responseType: 'Checkpoint 1',
       terms: ['expansion', 'expand', 'centralization', 'centralize', 'Fronde', 'Parlement', 'nobles', 'Razin', 'Cossacks', 'serfs', 'Law Code', 'Marathas', 'Shivaji', 'Aurangzeb', 'Mughal', 'Deccan', 'Njinga', 'Ndongo', 'Matamba', 'Portugal', 'Pueblo Revolt', 'Popé', 'encomienda', 'religious suppression', 'Metacom', 'Wampanoag', 'resistance'],
-      focus: ['Name one case from Africa, Asia, or Europe and one from the Americas.', 'For each, say what the state pushed for, which group pushed back and how, and what happened next.', 'Say one way the two cases were alike.']
+      focus: ['Name one case from Africa, Asia, or Europe and one from the Americas.', 'For each, say what the state pushed for, which group pushed back and how, what happened next, and what the resistance changed (or why it changed nothing).', 'Say one way the two cases were alike.']
     },
     {
       title: 'Checkpoint 2: Organized Resistance by Enslaved People',
@@ -130,7 +130,7 @@
       alt: 'An engraved portrait of an older man with long hair and a small beard, in a dark robe and white collar, inside an oval frame, with a coat of arms below and a printed caption.',
       url: '../assets/images/topics/4-6/broussel-paris-1648.jpg',
       sourceUrl: 'https://id.rijksmuseum.nl/200435769',
-      caption: 'A portrait print of Pierre Broussel, published in Paris in 1648 with the king\'s license to print. The caption reads "Pierre de Broussel, counselor of the King in his court of Parlement of Paris." In August 1648 the government arrested him, and Paris put up barricades until he was freed. Rijksmuseum.',
+      caption: 'A portrait print of Pierre Broussel by an unnamed printmaker, published in 1648 with the French king\'s license to print. The caption reads "Pierre de Broussel, counselor of the King in his court of Parlement of Paris." In August 1648 the government arrested him, and Paris put up barricades until he was freed. Rijksmuseum.',
       prompt: 'NOTICE how the print presents Broussel and what the caption calls him. INFER why someone would print and sell a portrait of this judge in 1648, the year of his arrest. What can a portrait not tell you about what Broussel did or why the city backed him?'
     },
     {
@@ -146,15 +146,15 @@
       alt: 'A painted portrait of a bearded man in profile in a gold turban with a black plume and a patterned white robe, holding a sword, inside an oval frame, with a gold flower border and a handwritten caption below.',
       url: '../assets/images/topics/4-6/shivaji-golconda-c1680.jpg',
       sourceUrl: 'https://id.rijksmuseum.nl/200383520',
-      caption: 'A portrait of the Maratha king Shivaji, painted at Golconda, in the Deccan, about 1680, around the time of his death. A Dutch owner later added a long Dutch caption below it. Rijksmuseum.',
-      prompt: 'NOTICE how the painter presents Shivaji: his clothes, his pose, his sword. INFER how a ruler who fought the Mughal Empire wanted to be seen. What can a portrait not tell you about how the Marathas actually fought?'
+      caption: 'A portrait of the Maratha king Shivaji by an unnamed painter, made at Golconda, in the Deccan, about 1680, around the time of his death. A Dutch owner later added a long Dutch caption below it. Rijksmuseum.',
+      prompt: 'NOTICE how the painter presents Shivaji: his clothes, his pose, his sword. INFER how the painter chose to show a king who fought the Mughal Empire. What can a portrait not tell you about how the Marathas actually fought?'
     },
     {
       title: 'Aurangzeb, Painted in the Deccan, About 1686',
       alt: 'A painted portrait of an elderly man with a white beard in a white robe and turban, in profile, holding a flower and resting one hand on a sword, with a golden halo, against a green background.',
       url: '../assets/images/topics/4-6/aurangzeb-golconda-c1686.jpg',
       sourceUrl: 'https://id.rijksmuseum.nl/200495648',
-      caption: 'A portrait of the Mughal emperor Aurangzeb, painted at Golconda, in the Deccan, about 1686, while he was fighting to conquer the region. It comes from an album of portraits of Indian rulers collected by a Dutch owner. Rijksmuseum.',
+      caption: 'A portrait of the Mughal emperor Aurangzeb by an unnamed painter, made at Golconda, in the Deccan, about 1686, while he was fighting to conquer the region. It comes from an album of portraits of Indian rulers collected by a Dutch owner. Rijksmuseum.',
       prompt: 'NOTICE the halo, the sword, and the flower. INFER what the painter wanted viewers to think about this emperor\'s power. Aurangzeb spent his last twenty-six years fighting in the Deccan. What can this portrait not tell you about that war?'
     },
     {
@@ -176,7 +176,7 @@
         'if any negroes shall hereafter run away from their masters or owners,',
         'and shall fall into Captain Cudjoe\'s hands, they shall immediately be sent back."'
       ],
-      caption: 'From the second and ninth articles of the treaty between the British colony of Jamaica and the Maroons led by Cudjoe, dated March 1, 1739, as printed in the records of Jamaica\'s Assembly. Words in brackets are added.',
+      caption: 'From the second and ninth articles of the treaty between the British colony of Jamaica and the Maroons led by Cudjoe, signed March 1, 1739 (1738 in the calendar then in use), as printed in the records of Jamaica\'s Assembly. Words in brackets are added.',
       prompt: 'NOTICE what the Maroons gained and what they had to promise. INFER why a colony that could not defeat the Maroons would make this deal. What can a treaty not tell you about how the Maroons themselves saw it?'
     }
   ];

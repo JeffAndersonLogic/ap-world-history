@@ -2051,7 +2051,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain how enslaved people in the Americas challenged the authorities over them through organized resistance, such as maroon communities and revolts, and how the authorities responded.', label: 'Governance' }
       ],
       successCriteria: [
-        { text: 'I can explain, for one case from Africa, Asia, or Europe (the Fronde, Razin\'s revolt, the Marathas, or Njinga) and one from the Americas (the Pueblo Revolt or Metacom\'s War), what the state pushed for, which group pushed back and how, what happened next, and one way the two cases were alike.', label: 'Governance' },
+        { text: 'I can explain, for one case from Africa, Asia, or Europe (the Fronde, Razin\'s revolt, the Marathas, or Njinga) and one from the Americas (the Pueblo Revolt or Metacom\'s War), what the state pushed for, which group pushed back and how, what happened next and what the resistance changed, and one way the two cases were alike.', label: 'Governance' },
         { text: 'I can explain how one maroon community (Palmares or the Jamaica Maroons) and one revolt (the Stono Rebellion) were organized, how the authorities responded to each, and one reason the responses differed.', label: 'Governance' }
       ],
       modules: [
@@ -2077,7 +2077,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain how enslaved people in the Americas challenged the authorities over them through organized resistance, such as maroon communities and revolts, and how the authorities responded.', label: 'Governance' }
       ],
       successCriteria: [
-        { text: 'I can explain, for one case from Africa, Asia, or Europe (the Fronde, Razin\'s revolt, the Marathas, or Njinga) and one from the Americas (the Pueblo Revolt or Metacom\'s War), what the state pushed for, which group pushed back and how, what happened next, and one way the two cases were alike.', label: 'Governance' },
+        { text: 'I can explain, for one case from Africa, Asia, or Europe (the Fronde, Razin\'s revolt, the Marathas, or Njinga) and one from the Americas (the Pueblo Revolt or Metacom\'s War), what the state pushed for, which group pushed back and how, what happened next and what the resistance changed, and one way the two cases were alike.', label: 'Governance' },
         { text: 'I can explain how one maroon community (Palmares or the Jamaica Maroons) and one revolt (the Stono Rebellion) were organized, how the authorities responded to each, and one reason the responses differed.', label: 'Governance' }
       ],
       modules: [

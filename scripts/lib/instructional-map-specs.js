@@ -969,7 +969,7 @@ module.exports = [
   {
     id: 'topic-4-6',
     code: 'Topic 4.6',
-    title: 'Push and Pushback, 1620s to 1739',
+    title: 'Push and Pushback, c. 1600 to 1739',
     subtitle: 'Topic 4.6 \u00b7 Internal and external challenges to state power',
     // Rebuilt 2026-10-16 from the 4.6 story: nine cases of pushback against
     // expanding and centralizing states, colored by kind. The old map's
@@ -995,7 +995,7 @@ module.exports = [
     points: [
       { at: [2.35, 48.86], label: 'Paris', note: 'the Fronde, 1648 to 1653', side: 'left' },
       { at: [48.4, 54.32], label: 'Volga', note: 'Razin\u2019s revolt, 1670 to 1671', side: 'right' },
-      { at: [73.44, 18.23], label: 'Deccan', note: 'Marathas against the Mughals, 1681 to 1707', side: 'right' },
+      { at: [73.44, 18.23], label: 'Deccan', note: 'Marathas against the Mughals, 1660s to 1707', side: 'right' },
       { at: [15.8, -9.4], label: 'Ndongo and Matamba', note: 'Njinga, 1622 to 1663', side: 'right' },
       { at: [-105.94, 35.69], label: 'New Mexico', note: 'Pueblo Revolt, 1680', side: 'left' },
       { at: [-70.67, 41.95], label: 'New England', note: 'Metacom\u2019s War, 1675 to 1676', side: 'right' },

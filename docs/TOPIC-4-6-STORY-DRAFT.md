@@ -6,7 +6,7 @@ the usage-cutting commit `6671a2f` on top) and 4.6 is the next topic in the unit
 reviewers check this story against the CED source file and the scholarship; the record of what
 they found is in `docs/TOPIC-4-6-CLAIM-LEDGER.md`, under "Review findings".
 
-**Resume here (2026-10-17):** Phases 1 to 8 built and pushed. Review pass 1 done: 18 findings (11 page truth, 7 history), 17 fixed and 1 logged as course-wide; all in the ledger under "Review findings". Next: review pass 2 on a fresh packet, then the fingerprint move, the audit record, the full test run and the Phase 10 report.
+**Resume here (2026-10-17):** Phases 1 to 8 built and pushed. Review pass 1: 18 findings, 17 fixed, 1 course-wide. Review pass 2: 14 findings, 12 fixed, 2 rejected with reasons. All in the ledger under "Review findings". Next: review pass 3 (the last, under the safety valve), then the fingerprint move, the audit record, the full test run and the Phase 10 report.
 
 **Taught:** Green Wednesday 2026-11-11, Silver Thursday 2026-11-12, from Jeff's corrected November
 Canvas calendar (2026-10-14), already in `assets/data/announcements-schedule.js` as date-only
@@ -205,7 +205,7 @@ slave trade: her own wars took captives, and Matamba sold them.
 **Pushback at the edges: the Americas.** In 1598 Spain planted a colony in the Rio Grande valley of
 New Mexico, among the Pueblo peoples, who lived in towns of stone and adobe. Spanish settlers took
 tribute in corn and cloth (the **encomienda**) and forced labor. Franciscan friars tried to stamp out
-the Pueblo religion: from the 1650s they banned the sacred dances and burned masks and prayer sticks. In
+the Pueblo religion: in 1661 they banned the sacred dances and burned masks and prayer sticks. In
 1675 the governor ordered the kivas, the rooms where ceremonies were held, destroyed, arrested
 forty-seven Pueblo religious leaders, hanged three, and had the rest whipped. Spanish governors ruled by force and did not stop raids by Apache neighbors, and on top of it all
 came years of drought and famine. One of the whipped men, **Popé** (Po'pay), from Ohkay Owingeh, began

@@ -133,7 +133,7 @@ module.exports = {
             { note: {
               kind: 'howknow',
               label: 'How we know',
-              html: `Much of what Western Europeans knew about Razin came from travelers, merchants and newspaper reports, and later accounts added invented details, such as the famous legend that he threw a Persian princess into the Volga. Historians rely on Russian government records and the letters of the rebels themselves. The Dutch print of Razin's capture in this lesson was made for a book published in Leiden about thirty years later by an artist who never went to Russia.`
+              html: `Much of what Western Europeans knew about Razin came from travelers, merchants and newspaper reports, and travelers' tales spread stories that historians doubt, such as the Dutch sailor Jan Struys's account, printed in 1676, of Razin throwing a Persian princess into the Volga. Historians rely on Russian government records and the letters of the rebels themselves. The Dutch print of Razin's capture in this lesson was made for a book published in Leiden about thirty years later by an artist who never went to Russia.`
             } }
           ]
         }
@@ -207,7 +207,7 @@ module.exports = {
           heading: 'Why the Pueblos rose',
           blocks: [
             { p: `Spain planted its colony of New Mexico among the <b>Pueblo peoples</b> of the Rio Grande valley in <span class="num">1598</span>. The Pueblos lived in separate towns of stone and adobe and spoke several different languages. Under the <span class="kt">encomienda</span>, they had to hand over part of their harvest to Spanish settlers each year, and they were forced to work for Spaniards without pay.` },
-            { p: `The heaviest pressure fell on religion. Franciscan friars ran missions in the towns and tried to replace the Pueblo religion with Christianity. From the 1650s they banned the sacred kachina dances and burned masks and prayer sticks. In <span class="num">1675</span> the governor ordered kivas, the rooms where ceremonies were held, destroyed, and arrested forty-seven Pueblo religious leaders as sorcerers. Three were hanged, one killed himself, and the rest were whipped and jailed, until Pueblo men came to the capital in force and the governor let them go. This <b>religious suppression</b> came on top of drought and famine in the 1660s and 1670s, and raids by Apache neighbors that Spanish soldiers did not stop.` }
+            { p: `The heaviest pressure fell on religion. Franciscan friars ran missions in the towns and tried to replace the Pueblo religion with Christianity. In <span class="num">1661</span> they banned the sacred kachina dances and burned masks and prayer sticks. In <span class="num">1675</span> the governor ordered kivas, the rooms where ceremonies were held, destroyed, and arrested forty-seven Pueblo religious leaders as sorcerers. Three were hanged, one killed himself, and the rest were whipped and jailed, until Pueblo men came to the capital in force and the governor let them go. This <b>religious suppression</b> came on top of drought and famine in the 1660s and 1670s, and raids by Apache neighbors that Spanish soldiers did not stop.` }
           ]
         },
         {

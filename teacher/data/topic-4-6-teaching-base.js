@@ -104,7 +104,7 @@ window.BEHISTORICAL_TEACHING = {
           'Owns: local resistance to expanding and centralizing states, across Afro-Eurasia and the Americas; organized resistance by enslaved people in the Americas.',
           'Bridge only: rivalries between European states (KC-4.3.III.ii, Topic 4.5; the Unit 4 contract forbids it as a 4.6 target); Versailles (3.2, one clause); the labor systems and plantations (4.4, named as the push); casta and elites (4.7, the hand-off); the Haitian Revolution (Unit 5, after 1750, not mentioned).',
           'Three myths, on slide 21: "only colonized peoples resisted states"; "maroons were just runaways hiding in the woods"; "resisting a European empire meant opposing slavery." Slide 20 answers a fourth, "resistance always failed."',
-          'Every picture in this deck is a real object from the 1600s: a print made in Paris and a Dutch print made for a book published in Leiden, two paintings made in the Deccan, and a Dutch print of Razin made about thirty years after his death. The map is the course\'s own. None is AI-generated.'
+          'Every picture in this deck is a real object from the 1600s or 1700: a French print of 1648 and a Dutch print made for a book published in Leiden, two paintings made in the Deccan, and a Dutch print of Razin made about thirty years after his death. The map is the course\'s own. None is AI-generated.'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
         listenFor: 'The harder states pushed to expand and centralize, the harder people at the local level pushed back, and the pushback changed the states too.',
@@ -200,7 +200,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 1,
         land: [
           'The course\'s own instructional map, rebuilt for this story. Dots mark regions, not exact battlefields, and the colors sort the cases: inside a state (Paris, the Volga), at an expanding state\'s edge (the Deccan, Ndongo and Matamba, New Mexico, New England), and organized resistance by enslaved people (Palmares, Jamaica, Stono).',
-          'Point out the spread: pushback happened in Europe, Asia, Africa and the Americas in a little over a century, from the 1620s to 1739. That spread is the "array" in the Key Concept.'
+          'Point out the spread: pushback happened in Europe, Asia, Africa and the Americas in about a century and a half, from about 1600 to 1739. That spread is the "array" in the Key Concept.'
         ],
         ask: 'Find one case in Afro-Eurasia and one in the Americas.',
         listenFor: 'Any pair across the Atlantic, for example the Fronde and the Pueblo Revolt.'
@@ -211,7 +211,7 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-4.3.III.iii', title: 'Judges, Paris and nobles against the crown.',
       template: {
         panels: [
-          { visual: { url: '../assets/images/topics/4-6/broussel-paris-1648.jpg', alt: 'An engraved portrait of an older man with long hair and a small beard, in a dark robe and white collar, inside an oval frame, with a coat of arms below and a printed caption naming him as a counselor of the king in the Parlement of Paris', credit: 'Portrait of Pierre Broussel, printed in Paris, 1648 · Rijksmuseum · Public domain', ratio: 0.822 }, tag: 'Printed in Paris, 1648', text: 'The judge **Pierre Broussel**, whose arrest set off the barricades.' },
+          { visual: { url: '../assets/images/topics/4-6/broussel-paris-1648.jpg', alt: 'An engraved portrait of an older man with long hair and a small beard, in a dark robe and white collar, inside an oval frame, with a coat of arms below and a printed caption naming him as a counselor of the king in the Parlement of Paris', credit: 'Portrait of Pierre Broussel, printed in 1648 with the French king\'s license · Rijksmuseum · Public domain', ratio: 0.822 }, tag: 'Printed in 1648', text: 'The judge **Pierre Broussel**, whose arrest set off the barricades.' },
           { visual: { url: '../assets/images/topics/4-6/parlement-arrest-luyken-1699.jpg', alt: 'An etching of soldiers with a halberd at a doorway seizing a man in a long robe, with a city street, a cathedral and marching soldiers behind', credit: 'Caspar Luyken, arrest of a member of the Parlement of Paris, for a book published in Leiden, 1699 · Rijksmuseum · Public domain', ratio: 0.633 }, tag: 'Dutch print, Leiden, 1699', text: 'A Dutch artist pictures the **arrest**, fifty years later.' }
         ],
         rows: [
@@ -227,7 +227,7 @@ window.BEHISTORICAL_TEACHING = {
           'The Fronde ("sling"), 1648 to 1653, while Anne of Austria ruled as regent for the boy Louis XIV with Cardinal Mazarin as chief minister (Michel De Waele, "Fronde," Europe 1450 to 1789, 2004). France had been at war with Spain for years; war consumed about 70 percent of revenue.',
           'January 1648: the regency tried to force new fiscal edicts on the Parlement of Paris, the high court whose judges had to register royal laws; the judges refused them, including taxes aimed at themselves. In August, after the victory at Lens, the government arrested Pierre Broussel and other judges; Paris put up some 1,200 barricades on the night of 26 to 27 August, and the queen released him. On 5 January 1649 the royal family and Mazarin fled Paris.',
           'From January 1650 the "Fronde of the princes": great nobles led by the Prince of Condé. The rebels quarreled; by late 1652 the Fronde collapsed, Louis XIV entered Paris on 21 October 1652, and Mazarin returned in February 1653.',
-          'Left picture: a portrait print of Broussel published in Paris in 1648 "avec privilège" (with the king\'s license to print), Rijksmuseum RP-P-1908-4807. It names him "conseiller du Roy en sa cour de Parlement de Paris." A print like this in the year of his arrest shows a judge as a public figure. Right picture: Caspar Luyken\'s etching for a Dutch life of Mazarin (Leiden, 1699), Rijksmuseum RP-P-1896-A-19368-1694; a later imagining.',
+          'Left picture: a portrait print of Broussel published in 1648 "avec privilège" (the museum record names no place of printing) (with the king\'s license to print), Rijksmuseum RP-P-1908-4807. It names him "conseiller du Roy en sa cour de Parlement de Paris." A print like this in the year of his arrest shows a judge as a public figure. Right picture: Caspar Luyken\'s etching for a Dutch life of Mazarin (Leiden, 1699), Rijksmuseum RP-P-1896-A-19368-1694; a later imagining.',
           'The effect: De Waele writes that "Louis XIV\'s reign was deeply marked by the events that shook his youth." Say "marked"; do not say the Fronde caused absolutism.'
         ],
         ask: 'Run the chain: what did the crown push for, who pushed back, how, and what happened next?',
@@ -260,7 +260,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'deccan', kind: 'frame-pair', eyebrow: 'At the Edges · The Deccan, 1674 to 1707',
+      phase: 'deccan', kind: 'frame-pair', eyebrow: 'At the Edges · The Deccan, 1660s to 1707',
       kc: 'KC-4.3.III.iii', title: 'An emperor pushes south. A warrior kingdom pushes back.',
       template: {
         panels: [
@@ -277,7 +277,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Shivaji (about 1627 to 1680) built Maratha power from hill forts in the western Deccan; in 1674 he was crowned at his fort of Raigad (Frances Pritchett, Columbia; NCERT 2026). Forts and fast, mobile raiding were the Maratha way of war; Aurangzeb\'s artillery could take forts but could not pin down an enemy who would not stand and fight (Topic 3.1\'s chapter tells the guns side).',
-          'Aurangzeb came south in 1681 (some sources say 1682), conquered the Deccan sultanates of Bijapur (1686) and Golconda (1687), "but never could subdue the Marathas; he died in Aurangabad in 1707, without ever returning to North India" (Pritchett). After 1707 Maratha power expanded across much of the subcontinent while the Mughal center weakened. The decline had many causes; do not make the Marathas the only one.',
+          'Aurangzeb came south in 1681 (some sources say 1682), conquered the Deccan sultanates of Bijapur (1686) and Golconda (1687), "but never could subdue the Marathas" (Pritchett). He died at his camp near Ahmednagar in March 1707 and was buried at Khuldabad, near Aurangabad, without ever returning to North India. Shivaji had been fighting Mughal armies since the early 1660s (Shaista Khan\'s campaign, the sack of Surat in 1664, the Treaty of Purandar in 1665). After 1707 Maratha power expanded across much of the subcontinent while the Mughal center weakened. The decline had many causes; do not make the Marathas the only one.',
           'Both pictures are real paintings made in Golconda, in the Deccan, in the 1680s, and both reached the Netherlands: Shivaji, about 1680, with a long Dutch caption added on the mount (Rijksmuseum RP-T-1972-25); Aurangzeb, about 1686, from the Witsen Album of Indian rulers, with a Dutch note naming him "king of all Delhi or Deccan" (RP-T-00-3186-6). Dutch traders collected portraits of the rulers they dealt with.',
           'An extension, not on the slide: Ramchandrapant Amatya, a Maratha minister, wrote in his Ajnapatra ("The Royal Edict") that "it was due to forts that the [Maratha] state survived despite decades of onslaught" (quoted in NCERT 2026).'
         ],
@@ -330,7 +330,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Spain\'s colony in New Mexico dates from Juan de Oñate\'s expedition in 1598 (Library of Congress, In Custodia Legis, 2013; NPS Pecos). Under the encomienda, Pueblos had to hand over a portion of their crops each year; under repartimiento they were forced to work for Spaniards without pay (LOC 2013).',
-          'Religious suppression: from the 1650s Franciscan friars banned the kachina dances and burned masks and prayer sticks; in 1675 Governor Juan Francisco Treviño ordered kivas destroyed and arrested 47 religious leaders, whom the Spanish called sorcerers; four were sentenced to death, three hanged and one killed himself, and the rest were whipped and jailed. Pueblo men came to Santa Fe in force, and the prisoners were released. Popé of Ohkay Owingeh (San Juan Pueblo) was among them.',
+          'Religious suppression: in May 1661 Fray Alonso de Posada, head of the Franciscans, banned the kachina dances (Kessell, NPS); Franciscan friars and burned masks and prayer sticks; in 1675 Governor Juan Francisco Treviño ordered kivas destroyed and arrested 47 religious leaders, whom the Spanish called sorcerers; four were sentenced to death, three hanged and one killed himself, and the rest were whipped and jailed. Pueblo men came to Santa Fe in force, and the prisoners were released. Popé of Ohkay Owingeh (San Juan Pueblo) was among them.',
           'Political: Spanish governors ruled by force (Naranjo says seven or eight men were hanged for plotting under Governor Ugarte y la Concha, around 1650), and Spanish soldiers did not stop Apache raids. Drought and famine in the 1660s and 1670s were not a kind of rule; they are the extra pressure in the footer that made every burden heavier (LOC 2013).',
           'Sorting causes this way is the CED\'s own sample activity: highlight the social, economic and political reasons in Naranjo\'s testimony. The Primary Source module does it. Do not settle "the most significant cause" here; that is the module\'s question.'
         ],
@@ -463,7 +463,7 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Freedom for one community, and a promise to guard slavery for others.',
       template: {
         quote: '[Cudjoe\'s people] shall for ever hereafter [be] in a perfect state of freedom and liberty ... [but] if any negroes shall hereafter run away ... and shall fall into Captain Cudjoe\'s hands, they shall immediately be sent back.',
-        attribution: { author: 'Articles of the treaty with the Maroons of Trelawny Town', work: 'Second and ninth articles', year: '1 March 1739' },
+        attribution: { author: 'Articles of the treaty with the Maroons of Trelawny Town', work: 'Second and ninth articles', year: 'signed 1 March 1739' },
         notice: 'What did the Maroons gain? What did they have to promise?'
       },
       notes: {
@@ -485,7 +485,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         steps: [
           { label: '9 September 1739', text: 'About twenty enslaved people seize guns from a store near the Stono River.' },
-          { label: 'The march', text: 'They head south for Spanish Florida, which promised freedom; up to a hundred join.' },
+          { label: 'The march', text: 'They head south for Spanish Florida, which promised freedom; the group grows to as many as a hundred.' },
           { label: 'That afternoon', text: 'Militia break the march, hunt survivors for days; 20 to 40 colonists and dozens of rebels die.' },
           { label: '1740', key: true, text: 'The Negro Act tightens control over every enslaved person in the colony.' }
         ]
@@ -651,7 +651,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 7,
         land: [
-          'Four real objects and two written sources: the 1648 Paris print of Broussel, Luyken\'s 1700 print of Razin, the Shivaji portrait (about 1680), the Aurangzeb portrait (about 1686), and two text cards, from Naranjo\'s 1681 testimony and the 1739 Jamaica treaty.',
+          'Four real objects and two written sources: the 1648 French print of Broussel, Luyken\'s 1700 print of Razin, the Shivaji portrait (about 1680), the Aurangzeb portrait (about 1686), and two text cards, from Naranjo\'s 1681 testimony and the 1739 Jamaica treaty.',
           'Observation before inference: what the source shows, then what it suggests, then what it cannot tell you. The Luyken print is a Dutch imagining made decades later; that is its limit, and a good one to name.',
           'Every picture in the Evidence Lab is a real historical object; none is AI-generated. Two cards are words, not pictures.'
         ],

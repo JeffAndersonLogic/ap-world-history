@@ -1290,7 +1290,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "In 1598 Spain planted a colony in the Rio Grande valley of New Mexico, among the Pueblo peoples, who lived in towns of stone and adobe. Under the <span class=\"kt\">encomienda</span>, the Pueblos had to hand over part of their crops to Spanish settlers each year, and they were forced to work without pay. Spanish friars tried to stamp out the Pueblo religion. From the 1650s they banned the sacred dances and burned masks and prayer sticks, and in 1675 the governor arrested forty-seven Pueblo religious leaders, hanged three, and had the rest whipped. This religious suppression came on top of years of drought and famine, and raids by Apache neighbors that the Spanish did not stop."
+            "html": "In 1598 Spain planted a colony in the Rio Grande valley of New Mexico, among the Pueblo peoples, who lived in towns of stone and adobe. Under the <span class=\"kt\">encomienda</span>, the Pueblos had to hand over part of their crops to Spanish settlers each year, and they were forced to work without pay. Spanish friars tried to stamp out the Pueblo religion. In 1661 they banned the sacred dances and burned masks and prayer sticks, and in 1675 the governor arrested forty-seven Pueblo religious leaders, hanged three, and had the rest whipped. This religious suppression came on top of years of drought and famine, and raids by Apache neighbors that the Spanish did not stop."
           },
           {
             "type": "p",

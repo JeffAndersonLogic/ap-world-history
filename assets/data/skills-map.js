@@ -6098,7 +6098,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "06",
           "module": "Checkpoint 1",
           "label": "Module 06, Checkpoint 1",
-          "prompt": "Choose TWO cases of local resistance: ONE from Africa, Asia, or Europe (the Fronde, Razin's revolt, the Marathas, or Njinga) and ONE from the Americas (the Pueblo Revolt or Metacom's War). For EACH case, explain what the state was pushing for (to expand, or to centralize), which group pushed back and how, and what happened next. Then explain one way the two cases were alike.",
+          "prompt": "Choose TWO cases of local resistance: ONE from Africa, Asia, or Europe (the Fronde, Razin's revolt, the Marathas, or Njinga) and ONE from the Americas (the Pueblo Revolt or Metacom's War). For EACH case, explain what the state was pushing for (to expand, or to centralize), which group pushed back and how, and what happened next, including one way the resistance changed the state, or why it changed nothing. Then explain one way the two cases were alike.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -6134,14 +6134,14 @@ window.BEHISTORICAL_SKILLS_MAP = {
           ],
           "criteria": [
             "Name one case from Africa, Asia, or Europe and one from the Americas.",
-            "For each, say what the state pushed for, which group pushed back and how, and what happened next.",
+            "For each, say what the state pushed for, which group pushed back and how, what happened next, and what the resistance changed (or why it changed nothing).",
             "Say one way the two cases were alike."
           ],
           "learningTargets": [
             "I can explain how states' push to expand and to centralize led different local groups to resist, using one case from Africa, Asia, or Europe and one from the Americas, and what that resistance changed."
           ],
           "successCriteria": [
-            "I can explain, for one case from Africa, Asia, or Europe (the Fronde, Razin's revolt, the Marathas, or Njinga) and one from the Americas (the Pueblo Revolt or Metacom's War), what the state pushed for, which group pushed back and how, what happened next, and one way the two cases were alike."
+            "I can explain, for one case from Africa, Asia, or Europe (the Fronde, Razin's revolt, the Marathas, or Njinga) and one from the Americas (the Pueblo Revolt or Metacom's War), what the state pushed for, which group pushed back and how, what happened next and what the resistance changed, and one way the two cases were alike."
           ]
         },
         "checkpoint-two-response": {

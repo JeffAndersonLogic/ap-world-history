@@ -105,10 +105,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "visual": {
               "url": "../assets/images/topics/4-6/broussel-paris-1648.jpg",
               "alt": "An engraved portrait of an older man with long hair and a small beard, in a dark robe and white collar, inside an oval frame, with a coat of arms below and a printed caption naming him as a counselor of the king in the Parlement of Paris",
-              "credit": "Portrait of Pierre Broussel, printed in Paris, 1648 · Rijksmuseum · Public domain",
+              "credit": "Portrait of Pierre Broussel, printed in 1648 with the French king's license · Rijksmuseum · Public domain",
               "ratio": 0.822
             },
-            "tag": "Printed in Paris, 1648",
+            "tag": "Printed in 1648",
             "text": "The judge **Pierre Broussel**, whose arrest set off the barricades."
           },
           {
@@ -168,7 +168,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-pair",
-      "eyebrow": "At the Edges · The Deccan, 1674 to 1707",
+      "eyebrow": "At the Edges · The Deccan, 1660s to 1707",
       "title": "An emperor pushes south. A warrior kingdom pushes back.",
       "kc": "KC-4.3.III.iii",
       "template": {
@@ -415,7 +415,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "attribution": {
           "author": "Articles of the treaty with the Maroons of Trelawny Town",
           "work": "Second and ninth articles",
-          "year": "1 March 1739"
+          "year": "signed 1 March 1739"
         },
         "notice": "What did the Maroons gain? What did they have to promise?"
       }
@@ -433,7 +433,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "The march",
-            "text": "They head south for Spanish Florida, which promised freedom; up to a hundred join."
+            "text": "They head south for Spanish Florida, which promised freedom; the group grows to as many as a hundred."
           },
           {
             "label": "That afternoon",
