@@ -269,3 +269,13 @@ readability, one for history against outside sources. Every finding is listed wi
 | 6 | The Persian princess story is in Struys's book of 1676, not a "later" addition | FIXED in the deep reading: a traveler's tale historians doubt, Jan Struys's account printed in 1676. |
 | 7 | Map title "1620s to 1739" leaves out Palmares (1600s) | FIXED: "c. 1600 to 1739" on the map, Map module, and slide 6 notes. |
 | 8 | The Jamaica treaty is "dated" 1 March 1738 in the old calendar | FIXED: "signed March 1, 1739 (1738 in the calendar then in use)" on the Evidence Lab card; slide 17 "signed 1 March 1739", with the notes already giving the old-calendar date. |
+
+### Pass 3, reviewer 1 (page truth and readability), 5 findings
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | The Map Key named the state and the group for every case, so the Map Question could be copied from it | FIXED. Raised in pass 2 too and rejected then; a second independent reviewer making the same case tipped it. The key now lists places and dates under the three color categories; who pushed against whom is the student's to name. |
+| 2 | The deep reading said both revolts made "rulers change how they ruled", which the course does not support for Razin | FIXED: "The Fronde marked how Louis XIV later ruled ... Razin's revolt changed less: serfdom stayed and grew harsher." |
+| 3 | KC codes display as "KC-4.3.III.III" | NOT FIXED HERE, as in pass 1: a shared text-transform, logged as an adjacent finding for a course-wide fix. |
+| 4 | "More than a dozen" towns in Metacom's War | REJECTED, as in pass 2: the Oxford Companion ("more than a dozen towns burned") and the Dictionary of American History (twenty towns destroyed) support it; the reviewer checked only Wikipedia and notes that sources differ. |
+| 5 | Slide 11 notes had a garbled clause about the friars | FIXED: "... banned the kachina dances (Kessell, NPS), and the friars burned masks and prayer sticks". |

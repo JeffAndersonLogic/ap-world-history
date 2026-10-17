@@ -140,7 +140,7 @@ module.exports = {
       ],
       useThis: {
         tool: `Internal pushback. <em>When a ruler centralizes, the people who lose (judges, nobles, towns, peasants) may resist. Name who lost what, how they resisted, and what the ruler did next.</em>`,
-        limit: `Both revolts were crushed, so it is easy to call them failures. But they showed rulers what their power cost, and rulers changed how they ruled because of them.`,
+        limit: `Both revolts were crushed, so it is easy to call them failures. The Fronde marked how Louis XIV later ruled, keeping power in his own hands. Razin's revolt changed less: serfdom stayed and grew harsher.`,
         comparison: `The Fronde was led by judges and nobles; Razin's revolt by Cossacks and peasants. Different groups, different demands. What push from the crown sat behind both?`
       },
       terms: [
