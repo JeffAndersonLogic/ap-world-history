@@ -6,7 +6,7 @@ the usage-cutting commit `6671a2f` on top) and 4.6 is the next topic in the unit
 reviewers check this story against the CED source file and the scholarship; the record of what
 they found is in `docs/TOPIC-4-6-CLAIM-LEDGER.md`, under "Review findings".
 
-**Resume here (2026-10-17):** Phases 1 to 8 built and pushed. Review pass 1: 18 findings, 17 fixed, 1 course-wide. Review pass 2: 14 findings, 12 fixed, 2 rejected with reasons. All in the ledger under "Review findings". Next: review pass 3 (the last, under the safety valve), then the fingerprint move, the audit record, the full test run and the Phase 10 report.
+**Resume here (2026-10-17):** Build finished on `claude/build-4-6-a8qfom`, not shipped. Review loop closed on the three-pass safety valve (17, 12, 7 supported defects; every finding fixed or logged in the ledger). Reading fingerprint moved; audit record `docs/topic-audits/topic-4-6-2026-10-17.md`; offline suite 36/36 and browser suite 27/27 green locally. Waiting only on Jeff: "ship it" runs the ship-to-main skill.
 
 **Taught:** Green Wednesday 2026-11-11, Silver Thursday 2026-11-12, from Jeff's corrected November
 Canvas calendar (2026-10-14), already in `assets/data/announcements-schedule.js` as date-only
