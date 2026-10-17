@@ -34,6 +34,11 @@ const server=createServer({provider});
  await page.locator('#analyze').click();assert.equal((await received).status(),200);await page.waitForFunction(()=>document.querySelector('#analysisStatus').textContent.includes('Model analysis ready'));
  assert.ok(providerRequests.length>0);assert.ok(providerRequests.every(x=>!JSON.stringify(x).includes('studentId')));
  assert.match(await page.locator('#metrics').textContent(),/Model-proposed/);
+ // A class change during a slow request cannot strand the Analyze control or
+ // let a stale completion/error overwrite the new selection.
+ let release,arrive;const held=new Promise(r=>release=r),arrived=new Promise(r=>arrive=r);
+ await page.route('**/api/class-pulse/analyze',async route=>{arrive();await held;await route.fulfill({status:503,body:'Synthetic delayed failure'});});
+ await page.locator('#analyze').click();await arrived;await page.locator('#section').selectOption('Green');assert.ok(await page.locator('#analyze').isEnabled());const selectionStatus=await page.locator('#analysisStatus').textContent();const staleResponse=page.waitForResponse(x=>x.url().endsWith('/api/class-pulse/analyze'));release();await staleResponse;await page.waitForTimeout(50);assert.equal(await page.locator('#analysisStatus').textContent(),selectionStatus);await page.unroute('**/api/class-pulse/analyze');
  // API rejects writing, impersonated synthetic records, and inaccessible files.
  const post=async(body,headers={})=>fetch(base+'/api/class-pulse/analyze',{method:'POST',headers:{'Content-Type':'application/json',...headers},body:JSON.stringify(body)});
  assert.equal((await post({ids:['C01'],checkpoint:'cp1',text:'arbitrary writing'})).status,400);

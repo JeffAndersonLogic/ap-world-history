@@ -65,7 +65,7 @@ function currentCriteria(){
   criteria:contract.criteria.map((c,i)=>({id:c.id,short:c.text,must:c.text,examples:[c.guidance],gap:'Interpret the written evidence; an omitted explanation is not necessarily a misconception.',move:c.guidance})),
   exemplar:cp().exemplar,coverage:contract.coverageNote};
 }
-function scopeReset(){analysisRun++;STATE.criterion='overall';STATE.band='all';STATE.student='';render();if(STATE.mode==='demo'&&STATE.provider==='replay')analyzeSelection();}
+function scopeReset(){analysisRun++;$('analyze').disabled=false;if(STATE.provider==='model')$('analysisStatus').textContent='Selection changed. Analyze the selected synthetic checkpoints.';STATE.criterion='overall';STATE.band='all';STATE.student='';render();if(STATE.mode==='demo'&&STATE.provider==='replay')analyzeSelection();}
 function drawMetrics(){const live=STATE.mode==='live',xs=records(),n=xs.length,counts=classCounts(xs),defined=live?[['D','—','Semantic analysis off'],['P','—','Semantic analysis off'],['N','—','Semantic analysis off'],['U',n,'Backup records shown']]:Object.entries(counts).map(([b,v])=>[b,v,b==='U'?'Draft, missing, uncertain or not analyzed':STATE.provider==='replay'?'Synthetic contract replay':'Model-proposed · synthetic writing']);
  $('metrics').innerHTML=defined.map(([key,val,detail])=>`<article class="card metric" style="--stripe:${BANDS[key].color}"><div class="eyebrow">Checkpoint summary</div><strong>${val}</strong><b>${BANDS[key].label}</b><p>${detail}</p></article>`).join('');
  $('coverageLabel').textContent=live?'Live reader disabled':n+' synthetic records';
@@ -161,7 +161,7 @@ async function analyzeSelection(){
   let results;
   if(STATE.provider==='model'){
    const response=await fetch('/api/class-pulse/analyze',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({ids:selection.map(x=>x.id),checkpoint}),credentials:'omit',cache:'no-store'});
-   if(!response.ok)throw new Error('Configured server model unavailable. Start the local synthetic analysis server with server credentials.');
+   if(response.status===429)throw new Error('Previous synthetic analysis is still running. Retry shortly.');if(!response.ok)throw new Error('Configured server model unavailable. Start the local synthetic analysis server with server credentials.');
    const body=await response.json();results=body.results;
    if(!Array.isArray(results)||results.length!==selection.length)throw new Error('Incomplete analysis response');
    for(const row of selection){const matches=results.filter(x=>x.key===row.id);if(matches.length!==1||matches[0].contractVersion!==contract.version||!matches[0].provider?.id||!matches[0].provider?.version)throw new Error('Mismatched analysis response');const r=matches[0];if(r.status==='analyzed'&&r.source!=='model-proposed')throw new Error('This server is configured for replay. Start it with --model for semantic analysis.');ENGINE.validateOutput(r,contract,row.text);const revision=await ENGINE.revisionFor(row,contract,r.provider);if(revision!==r.revision)throw new Error('Stale analysis response');}

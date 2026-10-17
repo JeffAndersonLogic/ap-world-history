@@ -14,7 +14,7 @@ Working branch: `build/class-pulse-engine-20261017`. Base: current `main` at `dc
 - Optional server-only OpenAI Responses adapter with explicit model, structured output, no tools, `store:false`, timeout, redirect refusal and no response-text error logging. Other providers can implement the same engine interface.
 - A local synthetic API that accepts known catalog IDs, rejects arbitrary writing and unknown IDs, checks host/origin, exposes only an explicit public asset list, and bounds provider calls per process.
 - Firebase integration seam for verified teacher tokens, trusted teacher/class/student roster authorization, per-record scope checks and digest-bound completion receipts. Real-student external analysis is unconditionally disabled. Browser live reads are also locked.
-- A synthetic-pilot entry in the generated teacher command center. No student lesson links to this tool.
+- Selection changes during slow analysis re-enable the Analyze control and discard stale results/errors. A synthetic-pilot entry in the generated teacher command center. No student lesson links to this tool.
 
 ## Measured results
 
@@ -28,7 +28,7 @@ Working branch: `build/class-pulse-engine-20261017`. Base: current `main` at `dc
 | Offline gate | 39 suites passed |
 | Dedicated Class Pulse Chromium test | Passed, including server test double and negative control |
 | Firestore emulator | 3 suites passed, including cross-section authorization proof |
-| Whole-repository browser gate | See release verification notes below; existing deck/template layout failures must not be described as a green run |
+| Whole-repository browser gate | 26 suites passed; 2 existing deck/template layout suites failed and reproduced on clean main |
 
 Replay and mocked-provider tests prove software behavior, not model interpretation quality. Development examples are not a held-out accuracy benchmark. The read adapter was tested synthetically; no real student work was read or sent to an AI provider.
 
@@ -50,7 +50,7 @@ Detailed architecture, commands and boundaries: [CLASS-PULSE-CONNECTION.md](../t
 
 ## Adjacent findings
 
-- The whole-repository Chromium sweep reports existing student-deck overflow in Topics 4.4, 4.5 and 4.6, plus template overflow/collision in Topics 3.2 and 4.4–4.6. Separate clean-main runs at the pinned base commit reproduce the deck failures; the template failure is likewise present on unchanged main. Class Pulse does not modify any deck, deck renderer, or deck data. These are adjacent findings, not a green whole-repository browser result, and were not silently fixed.
+- The whole-repository Chromium sweep reports existing student-deck overflow in Topics 4.4, 4.5 and 4.6, plus template overflow/collision in Topics 3.2 and 4.4–4.6. Separate clean-main runs at the pinned base commit reproduce the deck failures; the template failure is likewise present on unchanged main. Class Pulse does not modify any deck, deck renderer, or deck data. The baseline template run also notes unavailable brand webfonts, so these measurements use fallback fonts in this Chromium environment. These are adjacent findings, not a green whole-repository browser result, and were not silently fixed.
 - The existing teacher-index template contains a duplicated opening `section` fragment. The Class Pulse entry follows the generator rather than hand-editing its output; this unrelated defect was not changed.
 - Known iOS Firebase popup issues and formal review of deployed student persistence are not proven resolved by Chromium emulation.
 

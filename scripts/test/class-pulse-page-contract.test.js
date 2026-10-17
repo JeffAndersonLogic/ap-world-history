@@ -12,6 +12,7 @@ function contract(s){
  assert.match(s,/<script src="\.\/class-pulse-reader\.js"><\/script>/);
  assert.match(s,/id="dataMode"/);
  assert.match(s,/const LIVE_READS_ENABLED=false/);
+ assert.match(s,/function scopeReset\(\)\{analysisRun\+\+;\$\('analyze'\)\.disabled=false/);
  assert.match(s,/<option value="live" disabled>/);
  assert.match(s,/<script src="\.\/class-pulse-engine\.js"><\/script>/);
  assert.match(s,/<script src="\.\/data\/class-pulse-calibration\.js"><\/script>/);
@@ -36,6 +37,7 @@ function connector(s){
 }
 contract(src);connector(client);
 for(const [name,mutation,check] of [
+ ['strand the analysis control on selection change',src.replace("function scopeReset(){analysisRun++;$('analyze').disabled=false;","function scopeReset(){analysisRun++;$('analyze').disabled=true;"),contract],
  ['enable unapproved live reads',src.replace('LIVE_READS_ENABLED=false','LIVE_READS_ENABLED=true'),contract],
  ['remove interpretation engine',src.replace('./class-pulse-engine.js','./missing.js'),contract],
  ['remove student details',src.replace('id="studentDetail"','id="wrong"'),contract],
@@ -46,4 +48,4 @@ for(const [name,mutation,check] of [
 ]){
  assert.throws(()=>check(mutation),name+' must be caught');
 }
-console.log('PASS Class Pulse offline contract: UI, transparency, read-only adapter, no-JS fallback, and seven negative controls');
+console.log('PASS Class Pulse offline contract: UI, transparency, read-only adapter, no-JS fallback, and eight negative controls');
