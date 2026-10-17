@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="map-title map-desc">
-  <title id="map-title">Resistance and Rivalry in the Colonial World, c. 1600-1700</title>
-  <desc id="map-desc">Topic 4.6 instructional map for AP World History: Resistance and Rivalry in the Colonial World, c. 1600-1700. Topic 4.6 · Internal and external challenges to state power</desc>
+  <title id="map-title">Push and Pushback, 1648 to 1739</title>
+  <desc id="map-desc">Topic 4.6 instructional map for AP World History: Push and Pushback, 1648 to 1739. Topic 4.6 · Internal and external challenges to state power</desc>
   <defs>
     <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#FFFDF7"/><stop offset="1" stop-color="#F1E7D5"/>
@@ -67,46 +67,70 @@
   </g>
 
   <g id="highlights">
-    <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <ellipse cx="568.9" cy="555.6" rx="62.2" ry="66.7" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <ellipse cx="471.1" cy="400.0" rx="48.9" ry="22.2" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <ellipse cx="946.7" cy="283.3" rx="48.9" ry="27.8" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
+    <ellipse cx="810.4" cy="228.6" rx="22.2" ry="20.0" fill="#C9A46A" fill-opacity="0.85" stroke="#6B3E1F" stroke-width="4"/>
+    <ellipse cx="1015.1" cy="202.8" rx="26.7" ry="25.6" fill="#C9A46A" fill-opacity="0.85" stroke="#6B3E1F" stroke-width="4"/>
+    <ellipse cx="1135.6" cy="397.2" rx="24.4" ry="27.8" fill="#B49AA8" fill-opacity="0.85" stroke="#6B4A5A" stroke-width="4"/>
+    <ellipse cx="872.4" cy="552.2" rx="24.4" ry="24.4" fill="#B49AA8" fill-opacity="0.85" stroke="#6B4A5A" stroke-width="4"/>
+    <ellipse cx="328.9" cy="302.2" rx="24.4" ry="24.4" fill="#B49AA8" fill-opacity="0.85" stroke="#6B4A5A" stroke-width="4"/>
+    <ellipse cx="484.4" cy="263.3" rx="19.6" ry="18.9" fill="#B49AA8" fill-opacity="0.85" stroke="#6B4A5A" stroke-width="4"/>
+    <ellipse cx="633.3" cy="551.1" rx="20.4" ry="22.2" fill="#B6C2A2" fill-opacity="0.85" stroke="#5E6B4C" stroke-width="4"/>
+    <ellipse cx="455.1" cy="398.3" rx="17.8" ry="15.6" fill="#B6C2A2" fill-opacity="0.85" stroke="#5E6B4C" stroke-width="4"/>
+    <ellipse cx="440.0" cy="318.9" rx="17.8" ry="16.7" fill="#B6C2A2" fill-opacity="0.85" stroke="#5E6B4C" stroke-width="4"/>
   </g>
   <g id="flows">
-    <path class="flow" d="M817.8,233.3 Q614.4,254.3 471.1,400.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="629.4" cy="285.5" r="17"/>
-    <text class="badgenum" x="629.4" y="292.5" text-anchor="middle">1</text>
+    
   </g>
   <g id="region-labels">
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">PUEBLO REVOLT</tspan><tspan x="364.4" dy="25">1680</tspan></text>
-    <text class="region halo" x="568.9" y="648.2" text-anchor="middle" fill="#1A1C1D"><tspan x="568.9" dy="0">MAROON</tspan><tspan x="568.9" dy="25">COMMUNITIES</tspan></text>
-    <text class="region halo" x="471.1" y="448.2" text-anchor="middle" fill="#1A1C1D"><tspan x="471.1" dy="0">PRIVATEERS</tspan></text>
-    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">MING COLLAPSE</tspan><tspan x="1297.8" dy="25">1644</tspan></text>
-    <text class="region halo" x="946.7" y="337.1" text-anchor="middle" fill="#1A1C1D"><tspan x="946.7" dy="0">OTTOMAN REVOLTS</tspan></text>
+    
   </g>
   <g id="places">
-    
+    <circle class="city" cx="810.4" cy="228.6" r="10"/>
+    <text class="place halo" x="790.4" y="224.6" text-anchor="end">Paris</text>
+    <text class="placenote halo" x="790.4" y="246.6" text-anchor="end">the Fronde, 1648 to 1653</text>
+    <circle class="city" cx="1015.1" cy="198.2" r="10"/>
+    <text class="place halo" x="1035.1" y="194.2" text-anchor="start">Volga</text>
+    <text class="placenote halo" x="1035.1" y="216.2" text-anchor="start">Razin’s revolt, 1670 to 1671</text>
+    <line class="leader" x1="1126.4" y1="398.7" x2="1126.4" y2="372.7"/>
+    <circle class="city" cx="1126.4" cy="398.7" r="10"/>
+    <text class="place halo" x="1110.4" y="346.7" text-anchor="start">Deccan</text>
+    <text class="placenote halo" x="1110.4" y="368.7" text-anchor="start">Marathas against the Mughals, 1681 to 1707</text>
+    <circle class="city" cx="870.2" cy="552.2" r="10"/>
+    <text class="place halo" x="890.2" y="548.2" text-anchor="start">Ndongo and Matamba</text>
+    <text class="placenote halo" x="890.2" y="570.2" text-anchor="start">Njinga, 1622 to 1663</text>
+    <circle class="city" cx="329.2" cy="301.7" r="10"/>
+    <text class="place halo" x="309.2" y="297.7" text-anchor="end">New Mexico</text>
+    <text class="placenote halo" x="309.2" y="319.7" text-anchor="end">Pueblo Revolt, 1680</text>
+    <circle class="city" cx="485.9" cy="266.9" r="10"/>
+    <text class="place halo" x="505.9" y="286.9" text-anchor="start">New England</text>
+    <text class="placenote halo" x="505.9" y="308.9" text-anchor="start">Metacom’s War, 1675 to 1676</text>
+    <line class="leader" x1="639.6" y1="551.1" x2="647.6" y2="525.1"/>
+    <circle class="city" cx="639.6" cy="551.1" r="10"/>
+    <text class="place halo" x="647.6" y="499.1" text-anchor="start">Palmares</text>
+    <text class="placenote halo" x="647.6" y="521.1" text-anchor="start">maroon towns, 1600s</text>
+    <circle class="city" cx="455.1" cy="398.3" r="10"/>
+    <text class="place halo" x="475.1" y="394.3" text-anchor="start">Jamaica</text>
+    <text class="placenote halo" x="475.1" y="416.3" text-anchor="start">Maroon treaties, 1739</text>
+    <line class="leader" x1="444.0" y1="318.1" x2="424.0" y2="346.1"/>
+    <circle class="city" cx="444.0" cy="318.1" r="10"/>
+    <text class="place halo" x="424.0" y="362.1" text-anchor="end">Stono River</text>
+    <text class="placenote halo" x="424.0" y="384.1" text-anchor="end">revolt, 1739</text>
   </g>
 
   <g id="titleband">
     <rect x="0" y="0" width="1600" height="118" fill="url(#paper)" opacity=".93"/>
     <rect x="0" y="118" width="1600" height="5" fill="#C9A46A"/>
-    <text class="title" x="46" y="62">Resistance and Rivalry in the Colonial World, c. 1600-1700</text>
+    <text class="title" x="46" y="62">Push and Pushback, 1648 to 1739</text>
     <text class="subtitle" x="48" y="97">Topic 4.6 · Internal and external challenges to state power</text>
   </g>
 
-  <g id="legend" transform="translate(46,688)">
-    <rect x="0" y="0" width="640" height="244" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
+  <g id="legend" transform="translate(46,787)">
+    <rect x="0" y="0" width="640" height="145" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
     <text class="small" x="18" y="28" font-weight="700">Map Key</text>
-      <rect x="18" y="38" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="56">Pueblo Revolt drives Spain from New Mexico, 1680</text>
-      <rect x="18" y="71" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="89">Palmares and other maroon communities</text>
-      <rect x="18" y="104" width="40" height="23" rx="4" fill="#D2B48C" fill-opacity=".6" stroke="#8E7A55" stroke-width="3"/><text class="small" x="74" y="122">Imperial rivalry and privateering in the Caribbean</text>
-      <rect x="18" y="137" width="40" height="23" rx="4" fill="#B49AA8" fill-opacity=".6" stroke="#6B4A5A" stroke-width="3"/><text class="small" x="74" y="155">Ming collapse and the Qing conquest, 1644</text>
-      <rect x="18" y="170" width="40" height="23" rx="4" fill="#C08552" fill-opacity=".6" stroke="#8C5A2B" stroke-width="3"/><text class="small" x="74" y="188">Janissary revolts and provincial unrest</text>
-      <circle class="badge" cx="33" cy="214" r="14"/><text class="badgenum" x="33" y="220" text-anchor="middle" font-size="16">1</text><line x1="51" x2="72" y1="214" y2="214" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,208 L84,214 L72,220 Z" fill="#8C5A2B"/><text class="small" x="94" y="221">rival European fleets</text>
+      <rect x="18" y="38" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="56">Pushback inside a state</text>
+      <rect x="18" y="71" width="40" height="23" rx="4" fill="#B49AA8" fill-opacity=".6" stroke="#6B4A5A" stroke-width="3"/><text class="small" x="74" y="89">Pushback at the edge of an expanding state</text>
+      <rect x="18" y="104" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="122">Organized resistance by enslaved people</text>
   </g>
 
   <rect x="0" y="948" width="1600" height="52" fill="url(#paper)" opacity=".93"/>
-  <text class="tiny" x="46" y="980">BeHistorical instructional map. Coastlines are simplified for classroom projection; regions and routes are drawn to the standard scholarly picture of this period.</text>
+  <text class="tiny" x="46" y="980">BeHistorical instructional map. Shaded areas and dots mark regions, not borders or exact battlefields, and coastlines are simplified for classroom projection.</text>
 </svg>

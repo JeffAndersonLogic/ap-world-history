@@ -969,18 +969,41 @@ module.exports = [
   {
     id: 'topic-4-6',
     code: 'Topic 4.6',
-    title: 'Resistance and Rivalry in the Colonial World, c. 1600-1700',
+    title: 'Push and Pushback, 1648 to 1739',
     subtitle: 'Topic 4.6 \u00b7 Internal and external challenges to state power',
+    // Rebuilt 2026-10-16 from the 4.6 story: nine cases of pushback against
+    // expanding and centralizing states, colored by kind. The old map's
+    // "Resistance and Rivalry" title, privateers zone and Ming and Ottoman
+    // zones are gone: European rivalry is 4.5's (KC-4.3.III.ii), and no 4.6
+    // surface teaches the Ming collapse or Ottoman revolts.
     highlights: [
-      { zone: 'unitedStates', label: 'PUEBLO REVOLT 1680', tone: 'gold', legend: 'Pueblo Revolt drives Spain from New Mexico, 1680' },
-      { zone: 'brazil', label: 'MAROON COMMUNITIES', tone: 'sage', legend: 'Palmares and other maroon communities' },
-      { zone: 'caribbean', label: 'PRIVATEERS', tone: 'sand', legend: 'Imperial rivalry and privateering in the Caribbean' },
-      { zone: 'eastAsia', label: 'MING COLLAPSE 1644', tone: 'plum', legend: 'Ming collapse and the Qing conquest, 1644' },
-      { zone: 'anatolia', label: 'OTTOMAN REVOLTS', tone: 'bronze', legend: 'Janissary revolts and provincial unrest' }
+      { zone: [2.35, 48.86, 5, 3.6], tone: 'gold', opacity: 0.85 },
+      { zone: [48.4, 53.5, 6, 4.6], tone: 'gold', opacity: 0.85 },
+      { zone: [75.5, 18.5, 5.5, 5], tone: 'plum', opacity: 0.85 },
+      { zone: [16.3, -9.4, 5.5, 4.4], tone: 'plum', opacity: 0.85 },
+      { zone: [-106, 35.6, 5.5, 4.4], tone: 'plum', opacity: 0.85 },
+      { zone: [-71, 42.6, 4.4, 3.4], tone: 'plum', opacity: 0.85 },
+      { zone: [-37.5, -9.2, 4.6, 4], tone: 'sage', opacity: 0.85 },
+      { zone: [-77.6, 18.3, 4, 2.8], tone: 'sage', opacity: 0.85 },
+      { zone: [-81, 32.6, 4, 3], tone: 'sage', opacity: 0.85 }
     ],
-    flows: [
-      { from: 'westernEurope', to: 'caribbean', label: 'rival European fleets' }
-    ]
+    legend: [
+      { kind: 'area', tone: 'gold', text: 'Pushback inside a state' },
+      { kind: 'area', tone: 'plum', text: 'Pushback at the edge of an expanding state' },
+      { kind: 'area', tone: 'sage', text: 'Organized resistance by enslaved people' }
+    ],
+    points: [
+      { at: [2.35, 48.86], label: 'Paris', note: 'the Fronde, 1648 to 1653', side: 'left' },
+      { at: [48.4, 54.32], label: 'Volga', note: 'Razin\u2019s revolt, 1670 to 1671', side: 'right' },
+      { at: [73.44, 18.23], label: 'Deccan', note: 'Marathas against the Mughals, 1681 to 1707', side: 'right' },
+      { at: [15.8, -9.4], label: 'Ndongo and Matamba', note: 'Njinga, 1622 to 1663', side: 'right' },
+      { at: [-105.94, 35.69], label: 'New Mexico', note: 'Pueblo Revolt, 1680', side: 'left' },
+      { at: [-70.67, 41.95], label: 'New England', note: 'Metacom\u2019s War, 1675 to 1676', side: 'right' },
+      { at: [-36.1, -9.2], label: 'Palmares', note: 'maroon towns, 1600s', side: 'right' },
+      { at: [-77.6, 18.3], label: 'Jamaica', note: 'Maroon treaties, 1739', side: 'right' },
+      { at: [-80.1, 32.75], label: 'Stono River', note: 'revolt, 1739', side: 'left' }
+    ],
+    note: 'BeHistorical instructional map. Shaded areas and dots mark regions, not borders or exact battlefields, and coastlines are simplified for classroom projection.'
   },
   {
     id: 'topic-4-8',

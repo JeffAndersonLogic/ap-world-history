@@ -281,7 +281,7 @@ const scenarios = [
     id: '4.6', unit: '4', topicTitle: 'Internal and External Challenges to State Power', file: 'the-knotted-cord.html',
     title: 'The *Knotted Cord*', location: 'Northern New Mexico Pueblo alliance', date: 'August 1680',
     lessonUrl: '../../unit-4/lesson-4-6-internal-external-challenges.html',
-    alignment: { theme: 'Governance (GOV)', objective: 'Explain the effects of the development of state power from 1450 to 1750.', skill: 'Causation and continuity/change', keyConcepts: ['KC-4.3.III.iii', 'Organized resistance', 'Pueblo Revolt of 1680'] },
+    alignment: { theme: 'Governance (GOV)', objective: 'Explain the effects of the development of state power from 1450 to 1750.', skill: 'Causation', keyConcepts: ['KC-4.3.III.iii'] },
     premise: [
       'For decades, Spanish colonial and Franciscan authorities have demanded tribute and labor while suppressing Pueblo ceremonies and religious leaders. Drought, famine, epidemic loss, and raids have intensified the crisis, and Spanish protection has often failed to match Spanish demands.',
       'Po’pay and allied organizers are coordinating communities separated by distance, language, and local rivalries. Runners carry knotted cords so villages can count down to a shared uprising, but arrests or betrayal could expose the plan before the Spanish are isolated.',

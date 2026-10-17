@@ -157,6 +157,15 @@ const DECKS = [
     ],
     student: 'assets/data/presentations/topic-4-5-student.js',
     backUrl: 'lesson-4-5-maritime-empires-maintained.html#lecture'
+  },
+  {
+    key: '4.6',
+    sources: [
+      'teacher/data/topic-4-6-teaching-base.js',
+      'teacher/data/topic-4-6-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-4-6-student.js',
+    backUrl: 'lesson-4-6-internal-external-challenges.html#lecture'
   }
 ];
 
@@ -348,7 +357,8 @@ function buildDeck(deck) {
     '4.2': topic31Slides,
     '4.3': topic31Slides,
     '4.4': topic31Slides,
-    '4.5': topic31Slides
+    '4.5': topic31Slides,
+    '4.6': topic31Slides
   };
   return {
     meta: {

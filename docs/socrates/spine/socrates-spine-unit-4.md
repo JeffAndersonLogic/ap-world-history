@@ -131,24 +131,24 @@ Strong answer checklist: Name one tool (a mercantilist law or a chartered compan
 **Checkpoint 2 prompt.** Explain ONE way the trade in enslaved people changed families or communities in parts of Africa, and why it happened. Then explain ONE example of cultural mixing in the Atlantic world, and name the groups who contributed to it. Finally, compare how religions affected societies as contact grew: pick TWO examples that show different things religions did (for example, one that spread and one that blended), and say one way they were alike and one way they were different.
 Strong answer checklist: Give one change in families or communities in Africa, and name its cause. Give one example of Atlantic cultural mixing, and name at least two groups who contributed. Compare two things religions did (spread, conflict, or blending), with an example of each and one similarity and one difference.
 
-## 4.6 Internal Challenges to State Power
+## 4.6 Internal and External Challenges to State Power
 
-**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How colonized peoples, enslaved Africans, and rival European powers challenged maritime empires from within and without
+**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. The harder states pushed to expand and centralize, the harder people at the local level pushed back.
 
 **College Board key concepts.**
 - Unit 4: Learning Objective L (Learning Objective): Explain the effects of the development of state power from 1450 to 1750.
 - KC-4.3.III.iii (Governance): State expansion and centralization led to resistance from an array of social, political, and economic groups on a local level. Illustrative examples: Pueblo Revolts, Fronde, Cossack revolts, Maratha conflict with Mughals, Ana Nzinga’s resistance (as ruler of Ndongo and Matamba), Metacom’s War (King Philip’s War).
 - KC-5.3.III.C (Governance): Enslaved persons challenged existing authorities in the Americas through organized resistance. Illustrative examples: The establishment of Maroon societies in the Caribbean and Brazil, Resistance of enslaved persons in North America.
 
-**Expected evidence terms.** Pueblo Revolt, Popé, Tewa, kiva, religious suppression, labor demands, drought, Spanish colonial rule, resistance, maroon communities, Palmares, Zumbi, quilombo, escape, autonomy, geography, organized resistance.
+**Expected evidence terms.** expansion, expand, centralization, centralize, Fronde, Parlement, nobles, Razin, Cossacks, serfs, Law Code, Marathas, Shivaji, Aurangzeb, Mughal, Deccan, Njinga, Ndongo, Matamba, Portugal, Pueblo Revolt, Popé, encomienda, religious suppression, Metacom, Wampanoag, resistance, organized resistance, maroon, maroon communities, quilombo, Palmares, Ganga Zumba, Zumbi, treaty, Jamaica, Maroons, Cudjoe, Stono, South Carolina, Spanish Florida, militia, Negro Act, enslaved, authorities.
 
-**AP skill focus.** Causation practice.
+**AP skill focus.** Contextualization practice.
 
-**Checkpoint 1 prompt.** Explain why the Pueblo Revolt of 1680 occurred, how Popé and Pueblo communities organized collective resistance, and what the revolt changed in the short term. Your answer must connect specific colonial policies or pressures to the decision to resist.
-Strong answer checklist: Identify at least two specific grievances caused by colonial expansion or centralization. Explain how Popé and Pueblo networks made coordinated resistance possible. Explain the short-term outcome and at least one limit of the revolt.
+**Checkpoint 1 prompt.** Choose TWO cases of local resistance: ONE from Africa, Asia, or Europe (the Fronde, Razin's revolt, the Marathas, or Njinga) and ONE from the Americas (the Pueblo Revolt or Metacom's War). For EACH case, explain what the state was pushing for (to expand, or to centralize), which group pushed back and how, and what happened next. Then explain one way the two cases were alike.
+Strong answer checklist: Name one case from Africa, Asia, or Europe and one from the Americas. For each, say what the state pushed for, which group pushed back and how, and what happened next. Say one way the two cases were alike.
 
-**Checkpoint 2 prompt.** Explain how maroon communities represented organized resistance by enslaved Africans. Use Palmares as a specific example and explain how geography, community organization, and the weaknesses of colonial control helped resistance survive. Then compare this strategy with the Pueblo Revolt in one sentence.
-Strong answer checklist: Define maroon resistance and use Palmares as specific evidence. Explain why geography and community organization mattered. Make one meaningful comparison between maroon autonomy and Pueblo collective revolt.
+**Checkpoint 2 prompt.** Explain how enslaved people in the Americas challenged the authorities through organized resistance. Use ONE maroon community (Palmares or the Jamaica Maroons) and the Stono Rebellion of 1739. For EACH, explain how the resistance was organized and how the authorities responded. Then explain one reason the authorities responded differently in the two cases.
+Strong answer checklist: Explain how the maroon community you chose was organized, and how the authorities responded. Explain how the Stono Rebellion was organized, and how the authorities responded. Give one reason the authorities responded differently in the two cases.
 
 ## 4.7 Changing Social Hierarchies
 

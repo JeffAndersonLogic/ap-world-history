@@ -6,6 +6,8 @@ the usage-cutting commit `6671a2f` on top) and 4.6 is the next topic in the unit
 reviewers check this story against the CED source file and the scholarship; the record of what
 they found is in `docs/TOPIC-4-6-CLAIM-LEDGER.md`, under "Review findings".
 
+**Resume here (2026-10-17):** Phases 1 to 7 built and pushed on `claude/build-4-6-a8qfom` (deck, lesson data, renderer config, map, deep reading, BeInTheRoom metadata). Next: Phase 8 (schedule modules for 11/11 and 11/12, Canvas text), then Phase 9 (claim-ledger rows for every surface, review passes, tests, fingerprint).
+
 **Taught:** Green Wednesday 2026-11-11, Silver Thursday 2026-11-12, from Jeff's corrected November
 Canvas calendar (2026-10-14), already in `assets/data/announcements-schedule.js` as date-only
 entries.
