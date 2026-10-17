@@ -78,13 +78,13 @@ function createEngine({provider,maxCache=250}={}){
   const work=(async()=>{
    const base={key,revision,contractVersion:contract.version,provider:{id:provider.id,version:provider.version},source:provider.kind==='replay'?'synthetic-replay':'model-proposed',analyzedAt:new Date().toISOString()};
    const reason=eligibility(row);let result;
-   if(reason)result={...base,status:'ineligible',eligibilityReason:reason,criteria:unknown(contract,reason)};
+   if(reason)result={...base,source:'eligibility-rule',status:'ineligible',eligibilityReason:reason,criteria:unknown(contract,reason)};
    else try{
     // Only the prompt, criteria and response text leave the engine. UIDs, class,
     // confidence, timestamps and response keys do not reach the provider.
     const value=await provider.interpret({instructions:INSTRUCTIONS,contract:JSON.parse(JSON.stringify(contract)),response:{text:row.text},schema:OUTPUT_SCHEMA});
     result={...base,status:'analyzed',...validateOutput(value,contract,row.text)};
-   }catch(_){result={...base,status:'error',criteria:unknown(contract,'Analysis unavailable; inspect the original response.')};}
+   }catch(_){result={...base,source:'analysis-unavailable',status:'error',criteria:unknown(contract,'Analysis unavailable; inspect the original response.')};}
    // Errors are retryable and are never cached as successful interpretations.
    if(result.status!=='error'&&startedEpoch===epoch){for(const k of cache.keys())if(k.startsWith(key+'|'))cache.delete(k);cache.set(cacheKey,result);while(cache.size>maxCache)cache.delete(cache.keys().next().value);}
    return result;

@@ -26,7 +26,7 @@ function output(){return C.replayOutput(row(),cp1);}
  await Promise.all([engine.analyze(row(),cp1),engine.analyze(row(),cp1)]);assert.equal(calls,1);
  const next=await engine.analyze({...row(),updatedAt:'changed'},cp1);assert.notEqual(next.revision,a.revision);assert.equal(calls,2);
  await engine.analyze({...row(),text:'Changed writing.'},cp1);assert.equal(calls,3); // quotes cannot be found in revised text: failure, not old result
- const absent=await engine.analyze(row('C18'),cp1);assert.equal(absent.status,'ineligible');assert.equal(calls,3);assert.ok(absent.criteria.every(c=>c.category==='U'));
+ const absent=await engine.analyze(row('C18'),cp1);assert.equal(absent.status,'ineligible');assert.equal(absent.source,'eligibility-rule');assert.equal(calls,3);assert.ok(absent.criteria.every(c=>c.category==='U'));
  const changedContract={...cp1,prompt:cp1.prompt+' Revised.'};await engine.analyze(row(),changedContract);assert.equal(calls,4);
  const override=E.correction(a,'criterion-1','P','Seasonal timing needs clarification.');const overrides=new Map([[a.key+'|criterion-1',override]]);
  assert.equal(E.aggregate([a],cp1,overrides).criteria[0].counts.P,1);assert.equal(E.aggregate([next],cp1,overrides).criteria[0].counts.D,1);assert.equal(a.criteria[0].category,'D');assert.throws(()=>E.correction(a,'criterion-1','D',''),/reason/);
@@ -59,6 +59,7 @@ function output(){return C.replayOutput(row(),cp1);}
  // external-processing lock and prove these assertions actually go red.
  const source=fs.readFileSync(path.join(__dirname,'../../teacher/class-pulse-engine.js'),'utf8');
  function load(text){const box={module:{exports:{}},TextEncoder,require};vm.runInNewContext(text,box);return box.module.exports;}
+ const provenanceMutation=source.replace("source:'eligibility-rule'","source:'model-proposed'");assert.notEqual(source,provenanceMutation);const misattributed=await load(provenanceMutation).createEngine({provider:C.replayProvider()}).analyze(row('C18'),cp1);assert.throws(()=>assert.equal(misattributed.source,'eligibility-rule'));
  const mutated=source.replace("if(r.evidence.some(q=>!text.includes(q)))throw new Error('Evidence quote absent from response');",'');assert.notEqual(source,mutated);const m=load(mutated),bad=output();bad.criteria[0].evidence=['Invented quote'];assert.throws(()=>assert.throws(()=>m.validateOutput(bad,cp1,row().text)));
  assert.throws(()=>assert.deepEqual({...cp1,criteria:[]}.criteria.map(x=>x.text),map.topics['2.3'].slots[cp1.slotId].criteria));
  const serviceSource=fs.readFileSync(path.join(__dirname,'../../server/class-pulse/service.js'),'utf8');const unsafe=serviceSource.replace("throw e;},","return [];},");assert.notEqual(serviceSource,unsafe);const box={module:{exports:{}},require:x=>x.includes('class-pulse-engine')?E:require(x)};vm.runInNewContext(unsafe,box);await assert.rejects(()=>assert.rejects(()=>box.module.exports.createService({provider,map,syntheticCatalog:C.rows}).analyzeLive()));
