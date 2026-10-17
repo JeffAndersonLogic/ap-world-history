@@ -59,7 +59,9 @@
     "check:rules": "node scripts/check-firestore-rules.js",
     "test:rules:emulator": "firebase emulators:exec --only firestore --project demo-behistorical-rules \"node scripts/run-tests.js rules --strict\"",
     "build:audit-index": "node scripts/build-topic-audit-index.js",
-    "check:audit-freshness": "node scripts/check-audit-freshness.js"
+    "check:audit-freshness": "node scripts/check-audit-freshness.js",
+    "serve:class-pulse": "node scripts/serve-class-pulse.js",
+    "eval:class-pulse": "node scripts/eval-class-pulse.js"
   },
   "devDependencies": {
     "playwright": "^1.49.0"

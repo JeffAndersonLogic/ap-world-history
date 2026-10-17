@@ -1,0 +1,19 @@
+{
+  "kind": "contract-replay",
+  "provider": "authored-synthetic-replay",
+  "providerVersion": "2026-10-17-v1",
+  "responses": 40,
+  "eligibleInterpreted": 34,
+  "ineligible": 6,
+  "errors": 0,
+  "teacherReviewed": 0,
+  "referenceStatus": "AI-authored synthetic responses and provisional reference labels. No teacher review or model accuracy claim.",
+  "semanticCriteriaCompared": null,
+  "confusion": null,
+  "perCriterion": null,
+  "disagreements": null,
+  "falseDemonstrating": null,
+  "missedDemonstrating": null,
+  "accuracy": null,
+  "note": "Fixture replay verifies software paths only; semantic calibration has not run."
+}
