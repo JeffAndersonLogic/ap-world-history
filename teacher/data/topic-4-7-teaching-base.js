@@ -281,16 +281,14 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'women', kind: 'annotated', eyebrow: 'Who Belongs · Ottoman Women, by Class',
+      phase: 'women', kind: 'frame-placard', eyebrow: 'Who Belongs · Ottoman Women, by Class',
       kc: 'KC-4.3.I.B', title: 'One room, three classes of women.',
-      footer: 'The CED\'s words: the varying status of different classes of women.',
       template: {
-        pins: [
-          { x: .76, y: .58, label: 'The mistress', text: 'A wealthy mother receiving visitors' },
-          { x: .24, y: .62, label: 'Visitors', text: 'Women of her class, bringing gifts' },
-          { x: .37, y: .78, label: 'Serving', text: 'Coffee and sherbet carried in' },
-          { x: .08, y: .80, label: 'Enslaved', text: 'The museum: an enslaved woman makes sherbet' }
-        ]
+        placard: {
+          tag: 'Istanbul · about 1720 to 1737',
+          name: 'One room, three classes',
+          text: 'A wealthy mother receives visitors after a birth, women of her own class. At the lower left, the museum says, **an enslaved woman** makes sherbet for the guests.'
+        }
       },
       notes: {
         minutes: 2,
@@ -373,16 +371,14 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'castapainting', kind: 'annotated', eyebrow: 'New Elites · A Casta Painting, about 1715',
+      phase: 'castapainting', kind: 'frame-placard', eyebrow: 'New Elites · A Casta Painting, about 1715',
       kc: 'KC-4.2.III.A', title: 'A chart on canvas, not a census.',
-      footer: 'Most of the paintings\' many labels never appear in official records.',
       template: {
-        pins: [
-          { x: .70, y: .07, label: 'The label', text: '"From a mestizo and an Indian woman comes a coyote"' },
-          { x: .72, y: .40, label: 'Father', text: 'Labeled mestizo' },
-          { x: .41, y: .40, label: 'Mother', text: 'Labeled Indian' },
-          { x: .17, y: .62, label: 'Child', text: 'Given a new category' }
-        ]
+        placard: {
+          tag: 'Mexico · about 1715',
+          name: 'A chart on canvas',
+          text: 'The label reads: **"From a mestizo and an Indian woman comes a coyote."** Most of the many labels in casta paintings never appear in official records.'
+        }
       },
       notes: {
         minutes: 2,

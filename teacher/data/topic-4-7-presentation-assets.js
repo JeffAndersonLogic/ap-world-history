@@ -57,9 +57,9 @@ const setTemplate=(phase,add)=>{const s=by(phase);if(s)s.template=Object.assign(
 setTemplate('question',{visual:AKBAR});
 setTemplate('room',{visual:WEDDING,caption:'An Armenian wedding in the Ottoman Empire, painted about 1720 to 1737'});
 setTemplate('mughal',{visual:AKBAR,caption:'Akbar greets Rajput rulers, Akbarnama'});
-setTemplate('women',{visual:LYINGIN});
+setTemplate('women',{visual:Object.assign({},LYINGIN,{fit:'contain'})});
 setTemplate('banners',{visual:BANNERS});
-setTemplate('castapainting',{visual:CASTA});
+setTemplate('castapainting',{visual:Object.assign({},CASTA,{fit:'contain',tagPos:'bl'})});
 setTemplate('boyars',{visual:PETER,caption:'Peter the Great, painted in Russia, 1700s'});
 setTemplate('close',{visual:CASTA});
 })();

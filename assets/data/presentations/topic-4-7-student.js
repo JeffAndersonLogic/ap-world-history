@@ -195,43 +195,22 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "annotated",
+      "kind": "frame-placard",
       "eyebrow": "Who Belongs · Ottoman Women, by Class",
       "title": "One room, three classes of women.",
-      "footer": "The CED's words: the varying status of different classes of women.",
       "kc": "KC-4.3.I.B",
       "template": {
-        "pins": [
-          {
-            "x": 0.76,
-            "y": 0.58,
-            "label": "The mistress",
-            "text": "A wealthy mother receiving visitors"
-          },
-          {
-            "x": 0.24,
-            "y": 0.62,
-            "label": "Visitors",
-            "text": "Women of her class, bringing gifts"
-          },
-          {
-            "x": 0.37,
-            "y": 0.78,
-            "label": "Serving",
-            "text": "Coffee and sherbet carried in"
-          },
-          {
-            "x": 0.08,
-            "y": 0.8,
-            "label": "Enslaved",
-            "text": "The museum: an enslaved woman makes sherbet"
-          }
-        ],
+        "placard": {
+          "tag": "Istanbul · about 1720 to 1737",
+          "name": "One room, three classes",
+          "text": "A wealthy mother receives visitors after a birth, women of her own class. At the lower left, the museum says, **an enslaved woman** makes sherbet for the guests."
+        },
         "visual": {
           "url": "../assets/images/topics/4-7/lying-in-room-vanmour-c1720.jpg",
           "alt": "A painting of a richly decorated room: a woman sits up in a red bed under green curtains on the right, women in colored robes sit and stand around her, one carries a tray, coffee brews on a brass brazier in the middle, and a woman at the lower left prepares drinks",
           "credit": "Jean Baptiste Vanmour, Lying-in Room of a Distinguished Turkish Woman, about 1720 to 1737 · Rijksmuseum · Public domain",
-          "ratio": 1.626
+          "ratio": 1.626,
+          "fit": "contain"
         }
       }
     },
@@ -326,43 +305,23 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "annotated",
+      "kind": "frame-placard",
       "eyebrow": "New Elites · A Casta Painting, about 1715",
       "title": "A chart on canvas, not a census.",
-      "footer": "Most of the paintings' many labels never appear in official records.",
       "kc": "KC-4.2.III.A",
       "template": {
-        "pins": [
-          {
-            "x": 0.7,
-            "y": 0.07,
-            "label": "The label",
-            "text": "\"From a mestizo and an Indian woman comes a coyote\""
-          },
-          {
-            "x": 0.72,
-            "y": 0.4,
-            "label": "Father",
-            "text": "Labeled mestizo"
-          },
-          {
-            "x": 0.41,
-            "y": 0.4,
-            "label": "Mother",
-            "text": "Labeled Indian"
-          },
-          {
-            "x": 0.17,
-            "y": 0.62,
-            "label": "Child",
-            "text": "Given a new category"
-          }
-        ],
+        "placard": {
+          "tag": "Mexico · about 1715",
+          "name": "A chart on canvas",
+          "text": "The label reads: **\"From a mestizo and an Indian woman comes a coyote.\"** Most of the many labels in casta paintings never appear in official records."
+        },
         "visual": {
           "url": "../assets/images/topics/4-7/casta-rodriguez-juarez-c1715.jpg",
           "alt": "A painting of a family of three: a man in a white shirt and brown cloak on the right, a woman in a white embroidered dress and head cloth in the middle, and a boy holding a basket on the left, with an inscription at the top right",
           "credit": "Juan Rodríguez Juárez, From a Mestizo and an Indian Woman, a Coyote, about 1715 · Hispanic Society of America · Public domain",
-          "ratio": 1.424
+          "ratio": 1.424,
+          "fit": "contain",
+          "tagPos": "bl"
         }
       }
     },
