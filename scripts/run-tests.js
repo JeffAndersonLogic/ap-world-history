@@ -79,6 +79,7 @@ const SUITES = {
     ['scripts/test/unit1-atlas.browser.test.js', 'Unit 1 atlas: regional map interaction and responsive embed'],
     ['scripts/test/unit2-atlas.browser.test.js', 'Unit 2 atlas: direct map clicks, keyboard, touch, and responsive hub embed'],
     ['scripts/test/modal-focus.unit.js', 'unit lesson modal focus contract'],
+    ['scripts/test/module-grid.unit.browser.test.js', 'unit lesson module grid: ten modules, Module 09 BeInTheRoom or coming soon'],
     ['scripts/test/modal-focus.foundations.js', 'foundations modal focus contract'],
     ['scripts/test/canvas-rich-clipboard.browser.js', 'Canvas rich clipboard end-to-end on Topic 1.1'],
     ['scripts/test/lecture-deck.test.js', 'lecture deck flow, scroll lock, video block'],
