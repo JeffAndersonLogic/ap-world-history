@@ -1047,7 +1047,7 @@ module.exports = [
       { zone: [121, 14.6, 3, 2.8], tone: 'sage', opacity: 0.85 }
     ],
     legend: [
-      { kind: 'area', tone: 'plum', text: 'Forced labor builds new societies' },
+      { kind: 'area', tone: 'plum', text: 'Forced labor and new rankings build new societies' },
       { kind: 'area', tone: 'gold', text: 'The trade changes families and states' },
       { kind: 'area', tone: 'sage', text: 'Old work grows, for buyers far away' }
     ],

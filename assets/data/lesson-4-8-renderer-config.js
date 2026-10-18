@@ -63,7 +63,7 @@
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'Forced labor builds new societies', detail: 'Barbados and the sugar coast of Brazil (plantations worked by enslaved Africans), Potosí (Andean men drafted to the silver mine through the mit’a), and Mexico City (the casta ranking by ancestry).' },
+      { label: 'Forced labor and new rankings build new societies', detail: 'Barbados and the sugar coast of Brazil (plantations worked by enslaved Africans), Potosí (Andean men drafted to the silver mine through the mit’a), and Mexico City (the casta ranking by ancestry, over a society built by conquest).' },
       { label: 'The trade changes families and states', detail: 'The Gold Coast, where Asante grew strong by controlling gold and buying guns, and West Central Africa, where more men than women were carried away.' },
       { label: 'Old work grows', detail: 'Western Europe (spinning and weaving at home), India (cotton weavers in Gujarat, Bengal, and on the Coromandel coast), Jiangnan in China (silk families who paid most of their taxes in silver), and Manila (Chinese merchants trading silk for American silver).' },
       { label: 'Reading the map', detail: 'The dots mark regions, not borders. Every place on the map sits at one end of the same trade.' }

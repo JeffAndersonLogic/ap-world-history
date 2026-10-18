@@ -176,9 +176,9 @@ window.BEHISTORICAL_LESSON = {
     title: "Where the Trade Reached People, 1450 to 1750",
     url: "../assets/images/instructional-maps/topic-4-8.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-4-8.svg",
-    caption: "Ten places where the new global trade changed people's lives, sorted into three kinds: forced labor that built new societies, a trade that changed families and states, and old work that grew.",
+    caption: "Ten places where the new global trade changed people's lives, sorted into three kinds: forced labor and new rankings that built new societies, a trade that changed families and states, and old work that grew.",
     intro: "Use the map to follow the trade to the people. Every place on it sits at one end of the same trade. The colors sort the places into three kinds; the key says which is which.",
-    prompt: "Find ONE place where forced labor built a new kind of society and ONE place where old work grew. For each, name the place, the goods it produced, and the people who did the work. Then say which of the two places changed more."
+    prompt: "Find ONE place where forced labor or a new ranking built a new kind of society and ONE place where old work grew. For each, name the place and the people whose lives changed, and say what changed for them. Then say which of the two places changed more."
   },
 
   deepReading: {
@@ -201,11 +201,11 @@ window.BEHISTORICAL_LESSON = {
 
   primarySource: {
     title: "Primary Source: Richard Ligon on Barbados, 1657",
-    intro: "Richard Ligon was an Englishman who sailed to Barbados, a small English island in the Caribbean, in 1647, when its planters had only just begun to make sugar. He bought into a sugar plantation with partners and stayed about three years. Back in England, he wrote a description of the island, published in London in 1657. These are two passages from it, with the spelling and some punctuation modernized. Words in brackets explain old words.",
+    intro: "Richard Ligon was an Englishman who sailed to Barbados, a small English island in the Caribbean, in 1647, when its planters had only just begun to make sugar. He lived on a sugar plantation that his traveling companion, Thomas Modyford, had bought a half share of, helped run it, and stayed about three years. Back in England, he wrote a description of the island, published in London in 1657. These are two passages from it, with the spelling and some punctuation modernized. Words in brackets explain old words.",
     text: "Some of them who began upon small fortunes are now risen to very great and vast estates. The Island is divided into three sorts of men, viz. [namely] Masters, Servants, and slaves. The slaves and their posterity [children and descendants], being subject to their Masters for ever, are kept and preserved with greater care than the servants, who are theirs but for five years, according to the law of the Island. So that for the time, the servants have the worse lives, for they are put to very hard labour, ill lodging, and their diet very slight. ... Now for our fortunes, they are not only preserved, but made by the powerful operation of this plant [sugarcane]. Colonel James Drax, whose beginning upon that Island was founded upon a stock not exceeding 300 l. [pounds] sterling, has raised his fortune to such a height, as I have heard him say, that he would not look towards England, with a purpose to remain there, the rest of his life, till he were able to purchase an estate of ten thousand pound land yearly [land that would bring him 10,000 pounds a year] ... and all by this plant of Sugar.",
     questions: [
       "How does Ligon say Barbados was divided? Explain the difference he describes between the servants and the slaves, and which difference lasted \"for ever.\"",
-      "Ligon says the slaves were \"kept and preserved with greater care than the servants.\" Ligon was part-owner of a sugar plantation. How might his position shape that claim, and what other evidence would you want before you believed it?",
+      "Ligon says the slaves were \"kept and preserved with greater care than the servants.\" Ligon lived on and helped run a sugar plantation. How might his position shape that claim, and what other evidence would you want before you believed it?",
       "Choose ONE other piece of Unit 4 evidence: the casta ranking in Spanish America, the mit’a at Potosí, or Indian weavers making more cloth for buyers overseas. Explain how it relates to Ligon's evidence: does one lead to the other, do they show the same pattern, or do they make a contrast?"
     ]
   },

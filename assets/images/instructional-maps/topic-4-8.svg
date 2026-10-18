@@ -130,7 +130,7 @@
   <g id="legend" transform="translate(46,787)">
     <rect x="0" y="0" width="640" height="145" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
     <text class="small" x="18" y="28" font-weight="700">Map Key</text>
-      <rect x="18" y="38" width="40" height="23" rx="4" fill="#B49AA8" fill-opacity=".6" stroke="#6B4A5A" stroke-width="3"/><text class="small" x="74" y="56">Forced labor builds new societies</text>
+      <rect x="18" y="38" width="40" height="23" rx="4" fill="#B49AA8" fill-opacity=".6" stroke="#6B4A5A" stroke-width="3"/><text class="small" x="74" y="56">Forced labor and new rankings build new societies</text>
       <rect x="18" y="71" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="89">The trade changes families and states</text>
       <rect x="18" y="104" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="122">Old work grows, for buyers far away</text>
   </g>

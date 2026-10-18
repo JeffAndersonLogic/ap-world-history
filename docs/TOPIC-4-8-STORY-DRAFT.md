@@ -199,7 +199,7 @@ more. The demand for labor intensified, and it was met in three ways.
 **Fourth, what it did to society: the changes.**
 - **A society built on slavery.** In September 1647 an Englishman named Richard Ligon landed on
   Barbados, a small English island in the Caribbean. He found that planters there had only just begun to
-  make sugar, with cane plants brought from Brazil. He bought into a sugar plantation and stayed three
+  make sugar, with cane plants brought from Brazil. He lived on a sugar plantation that his companion Thomas Modyford had bought a half share of, helped run it, and stayed three
   years. In the book he published in 1657 he wrote that "the Island is divided into three sorts of men,
   viz. Masters, Servants, and slaves." The servants were mostly poor people from Britain and Ireland who
   worked for a set number of years; "the slaves and their posterity," he wrote, were "subject to their
@@ -413,7 +413,7 @@ report.
 4. **Primary Source:** Richard Ligon, *A True and Exact History of the Island of Barbados* (London, 1657),
    two short passages, spelling modernized, with three questions: his claim, what Drax's story shows, and
    how his evidence relates to one other piece of Unit 4 evidence (6.C), with his point of view (a
-   part-owner of a sugar plantation). It replaces the unsourced Manila report.
+   man who lived on and helped run a sugar plantation). It replaces the unsourced Manila report.
 5. **Map module:** rebuilt as one map of the chain's social effects, c. 1450 to 1750: where forced labor
    built new societies, where the trade changed families and states, and where old work grew. The trade
    network map leaves.

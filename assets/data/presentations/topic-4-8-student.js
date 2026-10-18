@@ -272,7 +272,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "source-quote",
       "eyebrow": "A Witness · Barbados, 1647 to 1650",
       "title": "An Englishman describes the island.",
-      "footer": "Ligon was part-owner of a sugar plantation. Keep that in mind.",
+      "footer": "Ligon lived on and helped run a sugar plantation. Keep that in mind.",
       "kc": "KC-4.2",
       "template": {
         "quote": "The Island is divided into three sorts of men, viz. Masters, Servants, and slaves. The slaves and their posterity, being subject to their Masters for ever ... the servants, who are theirs but for five years.",

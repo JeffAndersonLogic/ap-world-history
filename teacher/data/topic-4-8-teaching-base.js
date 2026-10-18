@@ -206,7 +206,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 1,
         land: [
           'KC-4.1.II.A: new tools, new ship designs and better knowledge of wind and current patterns "made transoceanic travel and trade possible."',
-          'The caravel was small and light, the explorer; the carrack was large, with room for months of food, water, cargo and guns. The Dutch fluyt, designed around 1600, carried a large cargo with a small, cheap crew and made shipping goods much cheaper; it served mostly Europe\'s own bulk trades (verified for 4.1), so do not call it an ocean-crossing ship.',
+          'The caravel was small and light, the explorer; the carrack was large, with room for months of food, water, cargo and guns. The Dutch fluyt, designed around 1600, carried a large cargo with a small, cheap crew and made shipping goods much cheaper; it served mostly Europe\'s own bulk trades (verified for 4.1), though the VOC also sailed fluyts in Asian waters (Tasman\'s Zeehaen of 1642 was one); the ocean workhorses of the 1400s and 1500s were the caravel and the carrack.',
           'The volta do mar: to get home from West Africa, ships swung out west and north into the open ocean until they reached the westerlies.'
         ],
         ask: 'Why does coming back matter more than getting there?',
@@ -233,7 +233,7 @@ window.BEHISTORICAL_TEACHING = {
           'KC-4.1: the interconnection of the hemispheres, made possible by transoceanic voyaging, "transformed trade and had a significant social impact on the world." This slide is the trade half; the rest of the deck is the social half.',
           'New demand: sugar and tobacco from American plantations (4.3); Indian cotton cloth bought by Asian, African and European buyers, and Chinese silk (4.5).',
           'Silver: Potosí from 1545 and Zacatecas from 1546; from 1571 Spanish galleons carried silver from Acapulco to Manila. A large share ended up in China, where the Ming collected most taxes in silver under the Single Whip (4.5).',
-          'Rulers\' tools: mercantilist laws (Spain\'s Casa de Contratación, England\'s Navigation Act of 1651) and chartered companies, the English East India Company (1600) and the VOC (1602) (4.5).'
+          'Rulers\' tools: mercantilist laws and agencies (Spain\'s Casa de Contratación, founded 1503, a crown office that ran the Indies trade; England\'s Navigation Act of 1651) and chartered companies, the English East India Company (1600) and the VOC (1602) (4.5).'
         ],
         ask: 'Name one example of each.',
         listenFor: 'Sugar; Potosí; the VOC.',
@@ -296,7 +296,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 1,
         land: [
-          'The course\'s own instructional map, built for this story. Dots mark regions, not borders. Plum: forced labor builds new societies (Barbados, Brazil\'s sugar coast, Potosí, Mexico City\'s casta ranking). Gold: the trade changes families and states (the Gold Coast and Asante, West Central Africa). Green: old work grows (western Europe\'s spinners, India\'s weavers, Jiangnan\'s silk families, Manila\'s Chinese merchants).',
+          'The course\'s own instructional map, built for this story. Dots mark regions, not borders. Plum: forced labor and new rankings build new societies (Barbados, Brazil\'s sugar coast, Potosí, Mexico City\'s casta ranking). Gold: the trade changes families and states (the Gold Coast and Asante, West Central Africa). Green: old work grows (western Europe\'s spinners, India\'s weavers, Jiangnan\'s silk families, Manila\'s Chinese merchants).',
           'Point out that every color sits at one end of the same trade.'
         ],
         ask: 'Find one place of each color.',
@@ -321,7 +321,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'Richard Ligon, an English royalist, sailed in June 1647 and landed on Barbados in September 1647. He found that "the great work of Sugar-making, was but newly practised," with plants from "Fernamlock," Pernambuco in Brazil. He bought into a sugar plantation with partners and stayed about three years; he wrote his book in a London debtors\' prison (his dedication is dated 12 July 1653) and published it in 1657.',
+          'Richard Ligon, an English royalist, sailed in June 1647 and landed on Barbados in September 1647. He found that "the great work of Sugar-making, was but newly practised," with plants from "Fernamlock," Pernambuco in Brazil. He lived on, and helped run, a sugar plantation that his traveling companion Thomas Modyford had bought a half share of (Ligon\'s own account: "Colonel Modiford was to pay for the Moity of this plantation"), and stayed about three years; he wrote his book in a London debtors\' prison (his dedication is dated 12 July 1653) and published it in 1657.',
           'Servants: most were poor people from England, Scotland and Ireland bound to work for a set number of years, many to pay for their voyage. Historians (Russell Menard) show that servants and enslaved Africans arrived together through the 1640s and 1650s; the island did not switch overnight.',
           'Wealth: Ligon wrote that James Drax began with "a stock not exceeding 300 l. sterling" and raised a fortune, "all by this plant of Sugar." Drax is the planter Ligon saw living "like a Prince."',
           'The 1679 census, sent to London in 1680: about 37,700 enslaved Africans; about 20,000 white settlers (Economic History Society; Richard Dunn, Sugar and Slaves). The Council of Trade doubted parts of the count, so say "about."',
@@ -335,7 +335,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'ligon', kind: 'source-quote', eyebrow: 'A Witness · Barbados, 1647 to 1650',
       kc: 'KC-4.2', title: 'An Englishman describes the island.',
-      footer: 'Ligon was part-owner of a sugar plantation. Keep that in mind.',
+      footer: 'Ligon lived on and helped run a sugar plantation. Keep that in mind.',
       template: {
         quote: 'The Island is divided into three sorts of men, viz. Masters, Servants, and slaves. The slaves and their posterity, being subject to their Masters for ever ... the servants, who are theirs but for five years.',
         attribution: { author: 'Richard Ligon, who lived on Barbados from 1647 to 1650', work: 'A True and Exact History of the Island of Barbados, spelling modernized', year: 'printed in London, 1657' },
@@ -345,7 +345,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Richard Ligon, A True & Exact History of the Island of Barbados (London, 1657). The 1657 spelling: "The Iland is divided into three sorts of men, viz. Masters, Servants, and slaves. The slaves and their posterity, being subject to their Masters for ever, are kept and preserv\'d with greater care then the servants, who are theirs but for five yeers, according to the law of the Iland." The slide joins the sentence with the cut shown and modernizes the spelling. "Viz." means "namely"; "posterity" means children and grandchildren.',
-          'The cut part, "are kept and preserved with greater care than the servants," is a planter\'s claim. Ligon\'s point of view: a part-owner of a plantation, writing for English readers he hoped would invest in sugar. The Primary Source module gives students the whole sentence and asks how his position shapes it.',
+          'The cut part, "are kept and preserved with greater care than the servants," is a planter\'s claim. Ligon\'s point of view: an insider who lived on and helped run a plantation, writing for English readers he hoped would invest in sugar. The Primary Source module gives students the whole sentence and asks how his position shapes it.',
           '"Five years" is Ligon\'s statement of the island\'s law in his day; terms varied.',
           'This is a sourcing moment and an argument moment: the slaves\' condition is inherited ("their posterity ... for ever"), the servants\' is not. That is the line on which a society by race was built.'
         ],
@@ -386,7 +386,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Retrieval from 4.5: about two of every three captives in the Atlantic trade were male (Slave Voyages; Eltis and Engerman). In parts of Africa, especially West Central Africa, that left communities with more women than men. Historians argue that women did more of the farming and that more women and girls were enslaved inside Africa; some argue polygyny became more common, and others find that evidence thin (Manning 1990; Fenske 2015). Say "historians argue."',
-          'States, from 4.4: Asante rose around 1700 by controlling gold and buying guns from Dutch and English traders, and beat Denkyira at Feyiase in 1701. In 1526 Afonso I of Kongo complained that Portuguese traders were carrying off "the children of our nobles and vassals as well as relatives of ours"; Afonso himself sold war captives and Kongo had enslaved people of its own.',
+          'States, from 4.4: Asante rose around 1700 by controlling gold and buying guns from Dutch and English traders, and beat Denkyira at Feyiase in 1701. In 1526 Afonso I of Kongo complained that Portuguese traders were carrying off "the children of our nobles and vassals as well as relatives of ours" (Luís Madureira\'s translation, in John Thornton\'s 2023 book on Afonso, the text Topic 4.4\'s Primary Source uses); Afonso himself sold war captives and Kongo had enslaved people of its own.',
           'The picture: fishing canoes at Elmina, and canoes carrying enslaved people out to European ships at Manfroe on the Gold Coast, from an engraving printed in London in 1732 (Churchill\'s Collection of Voyages, vol. 5; verified for 4.4).'
         ],
         ask: 'Follow the numbers to the family: how did who was taken change who stayed?',
