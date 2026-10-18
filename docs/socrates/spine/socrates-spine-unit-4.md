@@ -170,9 +170,9 @@ Strong answer checklist: Name one state that made room for or used a group, and 
 **Checkpoint 2 prompt.** Explain how the top of society changed between 1450 and 1750, and what stayed the same. Use ONE new elite (the Qing banners, or the peninsulares and creoles at the top of the casta system) and explain how conquest or new trade made it. Use ONE old elite (Ottoman sipahis who held timars, Russian boyars, or French nobles) and explain how its power changed as rulers grew stronger, including one thing it lost and one thing it kept. Then explain one thing about the top of society that stayed the same.
 Strong answer checklist: Explain how one new elite was made by conquest or new trade. Explain how one old elite's power changed, with one thing it lost and one thing it kept. Explain one thing about the top of society that stayed the same.
 
-## 4.8 Continuity and Change in the Period from c. 1450 to c. 1750
+## 4.8 Continuity and Change from 1450 to 1750
 
-**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How economic developments from 1450 to 1750 changed social structures — and what persisted despite those changes
+**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. Economic change reached into everyday social life: who worked, who ruled, and how families and communities were organized. Argue how much changed, with evidence.
 
 **College Board key concepts.**
 - Unit 4: Learning Objective N (Learning Objective): Explain how economic developments from 1450 to 1750 affected social structures over time.
@@ -184,12 +184,12 @@ Strong answer checklist: Explain how one new elite was made by conquest or new t
 - KC-4.3 (Transoceanic Interconnections): Empires achieved increased scope and influence around the world, shaping and being shaped by the diverse populations they incorporated.
 - KC-4.3.III.ii (Transoceanic Interconnections): Economic disputes led to rivalries and conflict between states.
 
-**Expected evidence terms.** plantation economy, chattel slavery, mit’a, encomienda, hacienda, Potosí, mercantilism, artisan labor, casta, elites, gender, family, economic developments, social structures, continuity, change, plantation, slavery, peasant labor.
+**Expected evidence terms.** economic developments, social structure, sugar, plantation, chattel slavery, slavery, enslaved, indentured servants, planters, Barbados, silver, Potosí, mit’a, cloth, peasant, artisan, casta, elite, gender, family, West Central Africa, Unit 4, continuity, change, thesis, led to, same pattern, opposite.
 
-**AP skill focus.** CCOT and causation practice.
+**AP skill focus.** Argumentation practice.
 
-**Checkpoint 1 prompt.** Choose TWO economic developments from c. 1450–c. 1750, such as plantation growth, silver extraction, mercantilism, or intensified textile production. For each, explain one specific effect on social structure. Your two effects must come from different categories such as labor status, racial/casta hierarchy, elite power, or gender/family patterns.
-Strong answer checklist: Name two specific economic developments. Explain the mechanism connecting each economic development to a social consequence. Use social evidence from at least two different categories.
+**Checkpoint 1 prompt.** Answer in three steps. (1) Choose ONE economic development from Unit 4: plantation sugar, Potosí silver, or the demand for cloth. Say what was in demand and who wanted it. (2) Explain which workers it needed and how they were brought to the work. (3) Explain one change it made to a social structure: who was forced to work, who rose to the top, or how families lived.
+Strong answer checklist: Name one economic development and who wanted it. Explain which workers it needed. Explain one change it made to a social structure.
 
-**Checkpoint 2 prompt.** Explain how economic developments from 1450 to 1750 affected social structures over time. Write a short CCOT argument that includes one meaningful social change, one meaningful social continuity, specific evidence from at least THREE earlier Unit 4 topics, and an explanation of why the change and continuity occurred.
-Strong answer checklist: Answer the exact economic-developments -> social-structures question. Use at least three specific pieces of Unit 4 evidence. Explain why one social structure changed and why another persisted.
+**Checkpoint 2 prompt.** Explain how economic developments from 1450 to 1750 affected social structures, and how much stayed the same. (1) Write a thesis that names one change and one continuity in social structures. (2) Support it with evidence from at least THREE different Unit 4 topics, for example sugar and slavery on Barbados, the casta ranking, villages in West Central Africa, the mit’a at Potosí, or peasant and artisan work in Europe, India, or China. (3) In at least one sentence, explain how two pieces of your evidence relate: does one lead to the other, do they show the same pattern, or does one show the opposite?
+Strong answer checklist: Write a thesis with one change and one continuity. Use evidence from at least three Unit 4 topics. Explain how two pieces of your evidence relate.

@@ -2153,58 +2153,56 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       date: '2026-11-17',
       cohort: 'green',
       unit: 'Unit 4: Transoceanic Interconnections',
-      topic: 'Continuity and Change in the Period from c. 1450 to c. 1750',
+      topic: 'Continuity and Change from 1450 to 1750',
       learningTargets: [
-        { text: 'I can explain how economic developments from c. 1450 to c. 1750 — including global silver flows, mercantilism, plantation expansion, and intensified production — changed demand for labor and redistributed wealth and power.', label: 'Economic Systems' },
-        { text: 'I can explain how those economic developments affected social structures, including coerced labor and slavery, racial and casta hierarchies, new and changing elites, and gender and family patterns.', label: 'Social Interactions and Organization' },
-        { text: 'I can make a continuity-and-change argument about social structures from c. 1450 to c. 1750 using evidence from multiple Unit 4 topics and explaining why some structures changed while others persisted.', label: 'Argumentation' }
+        { text: 'I can explain how economic developments between 1450 and 1750, such as the new demand for sugar, silver, and cloth, increased the demand for workers and changed how work was done.', label: 'Economic Systems' },
+        { text: 'I can explain how those economic developments changed social structures: who was forced to work, who rose to the top, and how families lived, in places such as Barbados, Spanish America, and West Central Africa.', label: 'Social Interactions and Organization' },
+        { text: 'I can write a thesis and a short argument about how much social structures changed between 1450 and 1750, and what stayed the same, connecting evidence from different Unit 4 topics.', label: 'Argumentation' }
       ],
       successCriteria: [
-        { text: 'I can connect one specific economic development — such as plantation growth, silver extraction, mercantilism, or intensified textile production — to a specific change in labor demand, wealth, or political-economic power.', label: 'Economic Systems' },
-        { text: 'I can use at least two specific social consequences, such as expanded chattel slavery, encomienda/hacienda or mita labor, casta categories, changes to African gender/family patterns, or changing elite power, and explain the economic mechanism behind each.', label: 'Social Interactions and Organization' },
-        { text: 'I can identify one meaningful continuity and one meaningful change in social structure, support both with evidence from different Unit 4 topics, and explain why the balance of continuity and change occurred.', label: 'Argumentation' }
+        { text: 'I can follow one economic development (plantation sugar, Potosí silver, or the demand for cloth) to the workers it needed.', label: 'Economic Systems' },
+        { text: 'I can explain one change that development made to a social structure, such as slavery for life in Barbados, the casta ranking, or villages in West Central Africa with more women than men.', label: 'Social Interactions and Organization' },
+        { text: 'I can write a thesis that names one change and one continuity, support it with evidence from at least three Unit 4 topics, and explain how two pieces of my evidence relate.', label: 'Argumentation' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
-        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.8 module you did not complete in class.', due: 'Thursday, November 19' }
+      ],
+      homeworkDue: 'Thursday, November 19',
+      dueDate: '2026-11-19'
     },
     /* 2026-11-18  <-  lesson-4-8-continuity-and-change.js */
     {
       date: '2026-11-18',
       cohort: 'silver',
       unit: 'Unit 4: Transoceanic Interconnections',
-      topic: 'Continuity and Change in the Period from c. 1450 to c. 1750',
+      topic: 'Continuity and Change from 1450 to 1750',
       learningTargets: [
-        { text: 'I can explain how economic developments from c. 1450 to c. 1750 — including global silver flows, mercantilism, plantation expansion, and intensified production — changed demand for labor and redistributed wealth and power.', label: 'Economic Systems' },
-        { text: 'I can explain how those economic developments affected social structures, including coerced labor and slavery, racial and casta hierarchies, new and changing elites, and gender and family patterns.', label: 'Social Interactions and Organization' },
-        { text: 'I can make a continuity-and-change argument about social structures from c. 1450 to c. 1750 using evidence from multiple Unit 4 topics and explaining why some structures changed while others persisted.', label: 'Argumentation' }
+        { text: 'I can explain how economic developments between 1450 and 1750, such as the new demand for sugar, silver, and cloth, increased the demand for workers and changed how work was done.', label: 'Economic Systems' },
+        { text: 'I can explain how those economic developments changed social structures: who was forced to work, who rose to the top, and how families lived, in places such as Barbados, Spanish America, and West Central Africa.', label: 'Social Interactions and Organization' },
+        { text: 'I can write a thesis and a short argument about how much social structures changed between 1450 and 1750, and what stayed the same, connecting evidence from different Unit 4 topics.', label: 'Argumentation' }
       ],
       successCriteria: [
-        { text: 'I can connect one specific economic development — such as plantation growth, silver extraction, mercantilism, or intensified textile production — to a specific change in labor demand, wealth, or political-economic power.', label: 'Economic Systems' },
-        { text: 'I can use at least two specific social consequences, such as expanded chattel slavery, encomienda/hacienda or mita labor, casta categories, changes to African gender/family patterns, or changing elite power, and explain the economic mechanism behind each.', label: 'Social Interactions and Organization' },
-        { text: 'I can identify one meaningful continuity and one meaningful change in social structure, support both with evidence from different Unit 4 topics, and explain why the balance of continuity and change occurred.', label: 'Argumentation' }
+        { text: 'I can follow one economic development (plantation sugar, Potosí silver, or the demand for cloth) to the workers it needed.', label: 'Economic Systems' },
+        { text: 'I can explain one change that development made to a social structure, such as slavery for life in Barbados, the casta ranking, or villages in West Central Africa with more women than men.', label: 'Social Interactions and Organization' },
+        { text: 'I can write a thesis that names one change and one continuity, support it with evidence from at least three Unit 4 topics, and explain how two pieces of my evidence relate.', label: 'Argumentation' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
-        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.8 module you did not complete in class.', due: 'Friday, November 20' }
+      ],
+      homeworkDue: 'Friday, November 20',
+      dueDate: '2026-11-20'
     },
     /* 2026-11-19  <-  written by hand in the schedule */
     {

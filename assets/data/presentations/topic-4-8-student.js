@@ -232,7 +232,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Where the trade changed people's lives.",
       "visual": {
         "url": "../assets/images/instructional-maps/topic-4-8.svg",
-        "alt": "World map with labeled dots at Barbados and Brazil, Mexico City, Potosí, the Gold Coast, West Central Africa, western Europe, Gujarat and Bengal, Jiangnan in China, and Manila, each with a short note, shaded in three colors explained in the key"
+        "alt": "World map with labeled dots at Western Europe, Mexico City, Barbados, Brazil, Potosí, the Gold Coast, West Central Africa, India, Jiangnan in China, and Manila, each with a short note, shaded in three colors explained in the key"
       },
       "footer": "The key sorts every place by what changed for the people there.",
       "kc": "Unit 4: Learning Objective N"

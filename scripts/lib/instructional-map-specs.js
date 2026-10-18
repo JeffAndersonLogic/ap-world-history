@@ -1028,16 +1028,42 @@ module.exports = [
   {
     id: 'topic-4-8',
     code: 'Topic 4.8',
-    title: 'The World at c. 1700: Change and Continuity',
-    subtitle: 'Topic 4.8 \u00b7 Continuity and change, 1450-1750',
+    title: 'Where the Trade Reached People, 1450 to 1750',
+    subtitle: 'Topic 4.8 \u00b7 Continuity and change from 1450 to 1750',
+    // Rebuilt 2026-10-18 from the 4.8 story: the places where the new trade
+    // changed social structures, colored by what changed. The old map ("The
+    // World at c. 1700: Change and Continuity") sorted trade networks and
+    // empires, not social structures, which the learning objective asks about.
     highlights: [
-      { zone: 'westernEurope', label: 'NEW: ATLANTIC POWERS', tone: 'gold', legend: 'Changed: Atlantic Europe now sits at the centre of world trade' },
-      { zone: 'caribbean', label: 'NEW: PLANTATION ZONE', tone: 'plum', legend: 'Changed: plantation economies built on enslaved labor' },
-      { zone: 'andes', label: 'NEW: SILVER ECONOMY', tone: 'sand', legend: 'Changed: American silver ties every region together' },
-      { zone: 'eastAsia', label: 'SAME: QING CHINA', tone: 'bronze', legend: 'Continuity: China remains the largest economy' },
-      { zone: 'southAsia', label: 'SAME: MUGHAL INDIA', tone: 'slate', legend: 'Continuity: land empires still rule most people' },
-      { zone: 'swAsia', label: 'SAME: OTTOMAN POWER', tone: 'sage', legend: 'Continuity: the Ottomans still hold the eastern Mediterranean' }
-    ]
+      { zone: [-59.5, 13.1, 3.4, 2.8], tone: 'plum', opacity: 0.85 },
+      { zone: [-36, -8.5, 5, 4.4], tone: 'plum', opacity: 0.85 },
+      { zone: [-65.75, -19.6, 5, 4], tone: 'plum', opacity: 0.85 },
+      { zone: [-99.13, 19.43, 6, 4.4], tone: 'plum', opacity: 0.85 },
+      { zone: [-1.5, 6.5, 5, 3.6], tone: 'gold', opacity: 0.85 },
+      { zone: [15, -8, 7, 6], tone: 'gold', opacity: 0.85 },
+      { zone: [4.9, 52.2, 4.4, 3], tone: 'sage', opacity: 0.85 },
+      { zone: [78, 20, 8, 7], tone: 'sage', opacity: 0.85 },
+      { zone: [120.5, 31, 5, 3.6], tone: 'sage', opacity: 0.85 },
+      { zone: [121, 14.6, 3, 2.8], tone: 'sage', opacity: 0.85 }
+    ],
+    legend: [
+      { kind: 'area', tone: 'plum', text: 'Forced labor builds new societies' },
+      { kind: 'area', tone: 'gold', text: 'The trade changes families and states' },
+      { kind: 'area', tone: 'sage', text: 'Old work grows, for buyers far away' }
+    ],
+    points: [
+      { at: [4.9, 52.2], label: 'Western Europe', note: 'spinning and weaving at home', side: 'right' },
+      { at: [-99.13, 19.43], label: 'Mexico City', note: 'casta ranking', side: 'left' },
+      { at: [-59.5, 13.1], label: 'Barbados', note: 'sugar and slavery, from the 1640s', side: 'right' },
+      { at: [-36.0, -8.5], label: 'Brazil', note: 'sugar plantations', side: 'right' },
+      { at: [-65.75, -19.6], label: 'Potosí', note: 'mit\u2019a draft to the silver mine', side: 'left' },
+      { at: [-1.5, 6.5], label: 'Gold Coast', note: 'Asante rises, 1701', side: 'left' },
+      { at: [15.0, -8.0], label: 'West Central Africa', note: 'more women than men', side: 'right' },
+      { at: [78.0, 20.0], label: 'India', note: 'cotton weavers', side: 'left' },
+      { at: [120.5, 31.0], label: 'Jiangnan', note: 'silk families pay taxes in silver', side: 'right' },
+      { at: [121.0, 14.6], label: 'Manila', note: 'silk traded for silver', side: 'right' }
+    ],
+    note: 'BeHistorical instructional map. Shaded areas and dots mark regions, not borders, and coastlines are simplified for classroom projection.'
   },
 
   // ── Unit 6 ──────────────────────────────────────────────────────────────────

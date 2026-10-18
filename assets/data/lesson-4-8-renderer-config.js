@@ -55,124 +55,144 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: The Connected World',
+    title: 'First & 10: Follow the Trade to the People',
     embedUrl: 'first-and-10-topic-4-8-continuity-and-change-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 4.8 lesson path.'
+    note: 'Read the First & 10, answer the three questions, then return to the 4.8 lesson path.'
   };
 
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'Silver and state revenue', detail: 'American silver linked coerced mining labor to imperial finance and global exchange. Track how extraction concentrated wealth while increasing pressure on indigenous labor communities.' },
-      { label: 'Plantation zones', detail: 'Sugar and other plantation commodities tied Atlantic demand to expanding chattel slavery. The economic geography of plantations became a social geography of racialized status and forced migration.' },
-      { label: 'Manufacturing regions', detail: 'Indian cotton, Chinese silk, and European wool and linen show a major continuity: peasant and artisan labor often intensified rather than disappearing as global demand grew.' },
-      { label: 'Social-structure takeaway', detail: 'Economic integration did not produce one universal social outcome. It expanded some old labor systems, created or intensified others, shifted elite power, and altered demographic and family patterns differently by region.' }
+      { label: 'Forced labor builds new societies', detail: 'Barbados and the sugar coast of Brazil (plantations worked by enslaved Africans), Potosí (Andean men drafted to the silver mine through the mit’a), and Mexico City (the casta ranking by ancestry).' },
+      { label: 'The trade changes families and states', detail: 'The Gold Coast, where Asante grew strong by controlling gold and buying guns, and West Central Africa, where more men than women were carried away.' },
+      { label: 'Old work grows', detail: 'Western Europe (spinning and weaving at home), India (cotton weavers in Gujarat, Bengal, and on the Coromandel coast), Jiangnan in China (silk families who paid taxes in silver), and Manila (Chinese merchants trading silk for American silver).' },
+      { label: 'Reading the map', detail: 'The dots mark regions, not borders. Every place on the map sits at one end of the same trade.' }
     ]
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg'
+    map:             '../assets/images/instructional-maps/topic-4-8.svg',
+    first10:         '../assets/images/topics/4-4/sugar-works-du-tertre-1667.jpg',
+    contentDelivery: '../assets/images/topics/4-5/potosi-8-reales-1651.jpg',
+    beSurreal:       '',
+    skill:           '../assets/images/topics/4-3/frans-post-sugar-works-detail-1660s.jpg',
+    checkpoint1:     '../assets/images/topics/4-4/potosi-cieza-1553.jpg',
+    evidence:        '../assets/images/topics/4-4/canoes-elmina-manfroe-1732.jpg',
+    source:          '../assets/images/topics/4-4/sugar-works-du-tertre-1667.jpg',
+    beInTheRoom:     '',
+    checkpoint2:     '../assets/images/topics/4-5/weavers-decker-1659.jpg'
+  };
+
+  lesson.classPresentation = {
+    title: 'Class Slides: Follow the Trade to the People',
+    desc: 'Follow the story: how ships built from borrowed knowledge carried new trade in sugar, silver, and cloth, how that trade needed more workers, what it did to society where the work was forced, what stayed the same, and how to turn the evidence into an argument.',
+    url: 'presentation-topic-4-8-student.html'
   };
 
   lesson.beInTheRoom = {
     url: '',
-    desc: "Trade silk for silver as a Chinese Sangleys merchant in Manila, debate the global price revolution with a Spanish royal treasurer in Seville, or trace the long-term effects of the Columbian Exchange across three continents."
+    desc: ''
   };
 
   lesson.skillBuilder = {
-    label: 'CCOT and causation practice',
-    title: 'From Economic Change to Social Structure',
-    intro: 'Topic 4.8 asks a specific synthesis question: how did economic developments affect social structures over time? A strong answer connects an economic development to a social mechanism, then weighs that change against a meaningful continuity.',
+    label: 'Argumentation practice',
+    title: 'Connect the Evidence',
+    intro: 'A list of evidence is not an argument. An argument explains how the pieces of evidence relate to each other. Three relationships do most of the work: one piece of evidence can lead to another, two can show the same pattern in different places, or one can show the opposite. Watch the move on the evidence from Barbados, then try it yourself.',
     steps: [
-      { label: 'Start with the economic development', text: 'Choose a development such as plantation expansion, silver extraction, mercantilism, chartered companies, or intensified textile production. State what changed economically before describing the social effect.' },
-      { label: 'Explain the social mechanism', text: 'Show how the development changed labor demand, legal status, wealth, family patterns, or elite power. Example: plantation demand increased the scale of Atlantic chattel slavery, which made ancestry and enslaved status more tightly connected in colonial societies.' },
-      { label: 'Add a continuity', text: 'Identify something that persisted, such as peasant/artisan production, older forms of coerced labor, or existing elites who adapted to new states. Explain why the economic system still depended on that continuity.' },
-      { label: 'Make the degree claim', text: 'Finish with a defensible CCOT judgment about social structures: substantial change in some regions and categories, alongside persistent labor and elite structures elsewhere.' }
+      { label: 'Led to', text: 'Europe wanted sugar. That led planters on Barbados to build sugar plantations, which needed far more workers than the island had, which led them to buy enslaved Africans. Each piece of evidence is a cause of the next.' },
+      { label: 'The same pattern', text: 'On Barbados, Richard Ligon wrote that the slaves and their children were held "for ever." In Spanish America, the casta system ranked people by their ancestry. Two places, one pattern: a new hierarchy, built in the colonies, based on who your parents were.' },
+      { label: 'The opposite', text: 'A silk family in China also worked more for faraway buyers, but it stayed a peasant family in its village, under the same emperor\'s officials. That contrast shows where the new trade changed society, and where it did not.' },
+      { label: 'Put it in a sentence', text: 'Use this frame: "[Evidence A] and [Evidence B] are related because [one led to the other / they show the same pattern / one shows the opposite], since ..." Name both pieces of evidence, choose one relationship, and explain why.' }
     ],
-    prompt: 'Explain how one economic development from 1450 to 1750 affected a social structure. Then identify one meaningful continuity in social structure and explain why it persisted. Use specific Unit 4 evidence for both.'
+    prompt: 'Now connect a new set of evidence from Unit 4. (1) In the 1570s, Spain turned the Inca mit\'a into a draft that sent thousands of Andean men each year to the silver mine at Potosí. (2) Ming China collected most of its taxes in silver, so millions of families needed silver to pay them. (3) In China, peasant families raised silkworms and wove silk, and some of that silk was traded at Manila for American silver. (4) In Spanish America, colonial society ranked people by ancestry, in the casta system. Choose TWO of these pieces of evidence. Write 3 to 5 sentences that explain how they relate: does one lead to the other, do they show the same pattern, or does one show the opposite? Then say what the pair shows about how much the new trade changed people\'s lives.',
+    criteria: [
+      'I named two pieces of evidence.',
+      'I chose one relationship: led to, the same pattern, or the opposite.',
+      'I explained why, not just labeled it.',
+      'I said what the pair shows about how much changed.'
+    ]
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: Economic Development -> Social Consequence',
-      subtitle: 'Checks Learning Targets 1–2 and Success Criteria 1–2.',
-      cardDesc: 'Connect economic change to labor, hierarchy, elite power, or family structure.',
+      title: 'Checkpoint 1: From Trade to People',
+      subtitle: 'Checks Learning Targets 1 and 2 and Success Criteria 1 and 2.',
+      cardDesc: 'Follow one economic development to the workers it needed and to one change in a social structure.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
-      prompt: 'Choose TWO economic developments from c. 1450–c. 1750, such as plantation growth, silver extraction, mercantilism, or intensified textile production. For each, explain one specific effect on social structure. Your two effects must come from different categories such as labor status, racial/casta hierarchy, elite power, or gender/family patterns.',
+      prompt: 'Answer in three steps. (1) Choose ONE economic development from Unit 4: plantation sugar, Potosí silver, or the demand for cloth. Say what was in demand and who wanted it. (2) Explain which workers it needed and how they were brought to the work. (3) Explain one change it made to a social structure: who was forced to work, who rose to the top, or how families lived.',
       responseType: 'Checkpoint 1',
-      terms: ['plantation economy', 'chattel slavery', 'mit’a', 'encomienda', 'hacienda', 'Potosí', 'mercantilism', 'artisan labor', 'casta', 'elites', 'gender', 'family'],
-      focus: ['Name two specific economic developments.', 'Explain the mechanism connecting each economic development to a social consequence.', 'Use social evidence from at least two different categories.']
+      terms: ['economic developments', 'social structure', 'sugar', 'plantation', 'chattel slavery', 'slavery', 'enslaved', 'indentured servants', 'planters', 'Barbados', 'silver', 'Potosí', 'mit’a', 'cloth', 'peasant', 'artisan', 'casta', 'elite', 'gender', 'family', 'West Central Africa'],
+      focus: ['Name one economic development and who wanted it.', 'Explain which workers it needed.', 'Explain one change it made to a social structure.']
     },
     {
-      title: 'Checkpoint 2: Unit 4 CCOT — Social Structures Over Time',
-      subtitle: 'Checks Learning Target 3 and the governing Topic 4.8 learning objective.',
-      cardDesc: 'A supported continuity-and-change argument about economic effects on social structure.',
+      title: 'Checkpoint 2: Your Argument',
+      subtitle: 'Checks Learning Target 3, Success Criterion 3, and the Unit 4 learning objective for this topic.',
+      cardDesc: 'A thesis and a short argument: how economic developments changed social structures, and what stayed the same.',
       learningTargets: [lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[2].criteria],
-      prompt: 'Explain how economic developments from 1450 to 1750 affected social structures over time. Write a short CCOT argument that includes one meaningful social change, one meaningful social continuity, specific evidence from at least THREE earlier Unit 4 topics, and an explanation of why the change and continuity occurred.',
+      prompt: 'Explain how economic developments from 1450 to 1750 affected social structures, and how much stayed the same. (1) Write a thesis that names one change and one continuity in social structures. (2) Support it with evidence from at least THREE different Unit 4 topics, for example sugar and slavery on Barbados, the casta ranking, villages in West Central Africa, the mit’a at Potosí, or peasant and artisan work in Europe, India, or China. (3) In at least one sentence, explain how two pieces of your evidence relate: does one lead to the other, do they show the same pattern, or does one show the opposite?',
       responseType: 'Checkpoint 2',
-      skill: 'Continuity and Change Over Time',
-      terms: ['economic developments', 'social structures', 'continuity', 'change', 'plantation', 'slavery', 'casta', 'peasant labor', 'artisan labor', 'elites', 'gender', 'family'],
-      focus: ['Answer the exact economic-developments -> social-structures question.', 'Use at least three specific pieces of Unit 4 evidence.', 'Explain why one social structure changed and why another persisted.']
+      skill: 'Continuity and Change',
+      terms: ['economic developments', 'social structure', 'Unit 4', 'continuity', 'change', 'thesis', 'plantation', 'slavery', 'Barbados', 'casta', 'mit’a', 'peasant', 'artisan', 'elite', 'gender', 'family', 'led to', 'same pattern', 'opposite'],
+      focus: ['Write a thesis with one change and one continuity.', 'Use evidence from at least three Unit 4 topics.', 'Explain how two pieces of your evidence relate.']
     }
   ];
 
   lesson.evidenceLab = {
-    title: 'Evidence Lab: Prove Both Change and Continuity',
-    task: 'Choose evidence that connects an economic development to a social consequence, then pair it with evidence for a meaningful continuity. Your claim must be about social structure — labor, hierarchy, family, or elite power — rather than trade alone.',
-    prompt: 'Using one change card and one continuity card, write a CCOT claim about how economic developments affected social structures from c. 1450 to c. 1750. Cite concrete evidence, explain the economic-to-social mechanism, and explain why the continuity persisted.'
+    title: 'Evidence Lab: Follow the Trade to the People',
+    task: 'Choose TWO cards: one that shows a change in a social structure (who was forced to work, who rose, how families lived), and one that shows something that stayed the same.',
+    prompt: 'Make one claim about how much the new global trade changed people\'s lives between 1450 and 1750. Then, for EACH of your two cards: (1) say what kind of source it is, who made it, and when, (2) give one detail you can see and explain how it supports your claim, and (3) name one thing the source cannot tell you. Finish with one sentence that explains how your two cards relate.'
   };
 
   lesson.images = [
     {
-      title: 'CONTINUITY — Indian Ocean Monsoon Trade',
-      url: '../assets/images/maps/foundations-4/indian-ocean-monsoon-trade.jpg',
-      sourceUrl: '../assets/images/maps/foundations-4/indian-ocean-monsoon-trade.jpg',
-      caption: 'Secondary baseline evidence. The Indian Ocean trade system and monsoon knowledge predated European arrival and continued to structure Asian, African, and Middle Eastern commerce after c. 1450.',
-      prompt: 'NOTICE the seasonal routes and dense regional connections. What structural features could make this network persist despite Portuguese and Dutch intrusion? What additional merchant records would strengthen a continuity claim?'
+      title: 'The Silver Mountain at Potosí, 1553',
+      alt: 'Woodcut of a tall mountain labeled Cero de Potosí, with tiny figures climbing paths to mine entrances and a town with churches at its foot.',
+      url: '../assets/images/topics/4-4/potosi-cieza-1553.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Cerro_de_Potos%C3%AD._Grabado_en_madera,_del_libro_Cr%C3%B3nica_del_Per%C3%BA,_1552,_de_Pedro_Cieza_de_Le%C3%B3n.jpg',
+      caption: 'The Cerro de Potosí, a woodcut in Pedro Cieza de León\'s Crónica del Perú, printed in Seville in 1553, a few years after silver was found there in 1545. From the 1570s, Andean men were drafted to work these mines.',
+      prompt: 'NOTICE the tiny figures and where they are going. INFER what kind of work this mountain needed, and how many people. This woodcut was made in Spain for Spanish readers. What can it not tell you about the lives of the men who worked inside the mountain?'
     },
     {
-      title: 'CONTINUITY — Silk Roads and Established Afro-Eurasian Corridors',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg',
-      caption: 'Secondary baseline evidence. Long-distance Afro-Eurasian exchange corridors existed before Atlantic integration and remained part of a wider commercial world after 1450.',
-      prompt: 'NOTICE how overland corridors connect major production and consumption regions. What can persist even when the relative importance of routes changes? What does a route map not tell you about changing trade volume?'
+      title: 'A Sugar Works in the French Caribbean, 1667',
+      alt: 'Engraving of a sugar works among palm trees: a mill turned by oxen under a wooden frame, a roofed boiling house where workers tend kettles over furnaces, workers carrying bundles of cane, a small hut, and numbers that match a key printed alongside.',
+      url: '../assets/images/topics/4-4/sugar-works-du-tertre-1667.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Habitation_sucrerie_aux_Antilles,_1667.jpg',
+      caption: 'An engraving by Sébastien Leclerc for Jean-Baptiste Du Tertre, a French missionary, in his history of the French Caribbean islands, printed in 1667. Its numbered key names the mill, the furnaces and kettles, the other buildings of a sugar works, and the huts of the enslaved workers. Bibliothèque nationale de France.',
+      prompt: 'NOTICE how many jobs it took to make sugar. INFER what a sugar works like this did to who lived on an island and who ruled it. This picture was made for French readers. What does it leave out about the people who did the work?'
     },
     {
-      title: 'CHANGE — Waldseemüller World Map, 1507',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Waldseemuller_map_2.jpg',
-      caption: 'New-hemispheric-connection evidence. The printed map incorporated recent Atlantic voyages and represented lands unknown to most European mapmakers before 1492.',
-      prompt: 'NOTICE the addition of Atlantic lands to an older Afro-Eurasian geographic framework. What kind of change in knowledge and connectivity does this document? What does it not prove about economic integration by itself?'
+      title: 'Canoes on the Gold Coast, Printed 1732',
+      alt: 'Two engraved views of the Gold Coast: fishing canoes off Elmina, and canoes carrying enslaved people out to European ships at anchor.',
+      url: '../assets/images/topics/4-4/canoes-elmina-manfroe-1732.jpg',
+      sourceUrl: '../assets/images/topics/4-4/canoes-elmina-manfroe-1732.jpg',
+      caption: 'Fishing canoes at Elmina, and canoes carrying enslaved people out to European ships at Manfroe, on the Gold Coast of West Africa, from Jean Barbot\'s account of the Guinea coast, printed in an English collection of voyages in London in 1732.',
+      prompt: 'NOTICE who is in the canoes in each scene, and where they are going. INFER what the trade took from African communities, and who on the coast worked inside it. This engraving was made for European readers. What can it not tell you about the families left behind?'
     },
     {
-      title: 'CHANGE — Global Silver and Manila Galleon Routes',
-      url: '../assets/images/instructional-maps/topic-4-5.svg',
-      sourceUrl: '../assets/images/instructional-maps/topic-4-5.svg',
-      caption: 'Secondary systems evidence. The map traces new Atlantic and Pacific silver circuits that linked American mines, European markets, Manila, and Chinese demand.',
-      prompt: 'NOTICE the trans-Pacific and trans-Atlantic connections. What mechanism made this circuit genuinely new? How did it build on older Asian markets rather than replace them?'
+      title: 'A Casta Painting, About 1715 to 1720',
+      alt: 'A painting of a family of three: a man in a white shirt and brown cloak on the right, a woman in a white embroidered dress and head cloth in the middle, and a boy holding a basket on the left, with an inscription at the top right.',
+      url: '../assets/images/topics/4-7/casta-rodriguez-juarez-c1715.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Juan_Rodr%C3%ADguez_Ju%C3%A1rez_-_De_Mestizo,_y_de_India_Produce_Coyote_(Castas)_-_LA2122_-_Hispanic_Society_of_America.jpg',
+      caption: 'Juan Rodríguez Juárez, a painter in Mexico City, made one of the earliest known sets of casta paintings, about 1715 to 1720. The label at the top, in Spanish, reads "D Mestizo y d India produce Coyote": from a mestizo and an Indian woman comes a coyote. Hispanic Society of America.',
+      prompt: 'NOTICE the label and how each person is dressed. INFER what kind of social ranking this painting shows, and how it compares with Ligon\'s masters, servants, and slaves on Barbados. Most casta labels never appear in official records. What does that suggest about using this painting as evidence?'
     },
     {
-      title: 'CHANGE — Dutch East India Company charter, 1602',
-      label: 'Charter record · Dutch Republic, 20 March 1602',
-      sourceText: [
-        'The States General chartered the VOC with a 21-year monopoly',
-        'on Dutch trade east of the Cape of Good Hope.',
-        'The charter granted powers to build forts, keep troops,',
-        'and make treaties with local rulers.'
-      ],
-      caption: 'The chartered joint-stock company set out in a legal document: a genuinely new way to organize long-distance trade.',
-      prompt: 'NOTICE what is new here compared with a merchant family or a royal fleet. INFER what changed in how European long-distance trade was organized. Which older Asian commercial practices continued underneath this institution rather than being replaced by it?'
+      title: 'Women Reeling Silk, China, Printed 1696',
+      alt: 'Black-and-white print: under a thatched shed, women tend a pot of boiling cocoons and turn a reel that winds the silk thread, with a poem in Chinese above.',
+      url: '../assets/images/topics/4-5/gengzhitu-1696-reeling.jpg',
+      sourceUrl: 'https://www.metmuseum.org/art/collection/search/51081',
+      caption: 'Reeling silk, from the Pictures of Tilling and Weaving (Yuzhi Gengzhi tu), designed by the court painter Jiao Bingzhen and printed in 1696 with poems by the Kangxi emperor of the Qing dynasty. Metropolitan Museum of Art.',
+      prompt: 'NOTICE who is doing the work and where. INFER what stayed the same about this kind of work, even as Chinese silk sold to buyers on the other side of the world. This book was made for the emperor. What might it leave out about how hard the work was?'
+    },
+    {
+      title: 'A Painted Cotton Made in India for Sale Abroad, Early 1700s',
+      alt: 'A large painted cotton cloth: a flowering tree with curling branches rising from a small rocky hill, surrounded by a border of flowers.',
+      url: '../assets/images/topics/4-5/palampore-india-early-1700s.jpg',
+      sourceUrl: 'https://www.metmuseum.org/art/collection/search/446817',
+      caption: 'A bed cover (palampore) of cotton, painted and dyed by hand in the early 1700s in or near Madras (Chennai), on India\'s Coromandel coast, where cloths like this were made in quantity for buyers overseas. Metropolitan Museum of Art.',
+      prompt: 'NOTICE how much handwork the design took. INFER whether making cloths like this for buyers overseas was a change or a continuity for the weavers and painters who made them, or both. What can a finished cloth not tell you about the lives of the people who made it?'
     }
   ];
 })();

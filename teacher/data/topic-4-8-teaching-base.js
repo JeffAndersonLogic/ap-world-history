@@ -292,11 +292,11 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'map', kind: 'map', eyebrow: 'Where It Reached People',
       kc: 'Unit 4: Learning Objective N', title: 'Where the trade changed people\'s lives.',
       footer: 'The key sorts every place by what changed for the people there.',
-      visual: { url: '../assets/images/instructional-maps/topic-4-8.svg', alt: 'World map with labeled dots at Barbados and Brazil, Mexico City, Potosí, the Gold Coast, West Central Africa, western Europe, Gujarat and Bengal, Jiangnan in China, and Manila, each with a short note, shaded in three colors explained in the key' },
+      visual: { url: '../assets/images/instructional-maps/topic-4-8.svg', alt: 'World map with labeled dots at Western Europe, Mexico City, Barbados, Brazil, Potosí, the Gold Coast, West Central Africa, India, Jiangnan in China, and Manila, each with a short note, shaded in three colors explained in the key' },
       notes: {
         minutes: 1,
         land: [
-          'The course\'s own instructional map, built for this story. Dots mark regions, not borders. Red: forced labor builds new societies (Barbados and Brazil\'s sugar coast, Potosí, Mexico City\'s casta ranking). Gold: the trade changes families and states (the Gold Coast and Asante, West Central Africa). Green: old work grows (western Europe\'s spinners, Gujarat and Bengal\'s weavers, Jiangnan\'s silk families, Manila\'s Chinese merchants).',
+          'The course\'s own instructional map, built for this story. Dots mark regions, not borders. Plum: forced labor builds new societies (Barbados, Brazil\'s sugar coast, Potosí, Mexico City\'s casta ranking). Gold: the trade changes families and states (the Gold Coast and Asante, West Central Africa). Green: old work grows (western Europe\'s spinners, India\'s weavers, Jiangnan\'s silk families, Manila\'s Chinese merchants).',
           'Point out that every color sits at one end of the same trade.'
         ],
         ask: 'Find one place of each color.',

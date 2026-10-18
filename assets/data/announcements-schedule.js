@@ -1016,18 +1016,26 @@ window.BEHISTORICAL_SCHEDULE = {
       homework: 'Finish Checkpoint 2, and any other required 4.7 module you did not complete in class.'
     },
 
-    /* ---- Remaining Unit 4 dates ----------------------------- */
-    // Jeff's corrected November calendar, 2026-10-14. Dates only:
-    // required module subsets and homework are set during each topic build.
+    /* ---- Topic 4.8, Continuity and Change from 1450 to 1750 ------ */
+    // Green Tuesday 2026-11-17 and Silver Wednesday 2026-11-18, from Jeff's
+    // corrected November calendar (2026-10-14).
+    // Required subset (4.8 build, 2026-10-18, under Jeff's standing rule): 02
+    // First & 10, 05 Skill Builder (6.C Argumentation, the CED's suggested
+    // skill), 07 Evidence Lab and 10 Checkpoint 2, the argument the day builds
+    // to. Checkpoint 1 stays optional; 4.8 has no BeInTheRoom.
     {
       date: '2026-11-17',
       cohort: 'green',
-      topic: '4.8'
+      topic: '4.8',
+      modules: ['02', '05', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 4.8 module you did not complete in class.'
     },
     {
       date: '2026-11-18',
       cohort: 'silver',
-      topic: '4.8'
+      topic: '4.8',
+      modules: ['02', '05', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 4.8 module you did not complete in class.'
     },
 
     /* ---- Era 3 Study Guide Work Day ------------------------- */

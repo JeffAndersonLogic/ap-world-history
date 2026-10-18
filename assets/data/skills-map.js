@@ -6518,7 +6518,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
       "kind": "unit",
       "unit": 4,
       "unitTitle": "Transoceanic Interconnections",
-      "title": "Continuity and Change in the Period from c. 1450 to c. 1750",
+      "title": "Continuity and Change from 1450 to 1750",
       "reading": "unit-4/first-and-10-topic-4-8-continuity-and-change.html",
       "terms": [],
       "order": [
@@ -6537,79 +6537,95 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "06",
           "module": "Checkpoint 1",
           "label": "Module 06, Checkpoint 1",
-          "prompt": "Choose TWO economic developments from c. 1450–c. 1750, such as plantation growth, silver extraction, mercantilism, or intensified textile production. For each, explain one specific effect on social structure. Your two effects must come from different categories such as labor status, racial/casta hierarchy, elite power, or gender/family patterns.",
-          "skill": "",
-          "skills": [],
-          "skillRaw": "",
-          "skillFrom": "",
-          "terms": [
-            "plantation economy",
-            "chattel slavery",
-            "mit’a",
-            "encomienda",
-            "hacienda",
-            "Potosí",
-            "mercantilism",
-            "artisan labor",
-            "casta",
-            "elites",
-            "gender",
-            "family"
-          ],
-          "criteria": [
-            "Name two specific economic developments.",
-            "Explain the mechanism connecting each economic development to a social consequence.",
-            "Use social evidence from at least two different categories."
-          ],
-          "learningTargets": [
-            "I can explain how economic developments from c. 1450 to c. 1750 — including global silver flows, mercantilism, plantation expansion, and intensified production — changed demand for labor and redistributed wealth and power.",
-            "I can explain how those economic developments affected social structures, including coerced labor and slavery, racial and casta hierarchies, new and changing elites, and gender and family patterns."
-          ],
-          "successCriteria": [
-            "I can connect one specific economic development — such as plantation growth, silver extraction, mercantilism, or intensified textile production — to a specific change in labor demand, wealth, or political-economic power.",
-            "I can use at least two specific social consequences, such as expanded chattel slavery, encomienda/hacienda or mita labor, casta categories, changes to African gender/family patterns, or changing elite power, and explain the economic mechanism behind each."
-          ]
-        },
-        "checkpoint-two-response": {
-          "ord": "10",
-          "module": "Checkpoint 2",
-          "label": "Module 10, Checkpoint 2",
-          "prompt": "Explain how economic developments from 1450 to 1750 affected social structures over time. Write a short CCOT argument that includes one meaningful social change, one meaningful social continuity, specific evidence from at least THREE earlier Unit 4 topics, and an explanation of why the change and continuity occurred.",
+          "prompt": "Answer in three steps. (1) Choose ONE economic development from Unit 4: plantation sugar, Potosí silver, or the demand for cloth. Say what was in demand and who wanted it. (2) Explain which workers it needed and how they were brought to the work. (3) Explain one change it made to a social structure: who was forced to work, who rose to the top, or how families lived.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
           "skillFrom": "",
           "terms": [
             "economic developments",
-            "social structures",
-            "continuity",
-            "change",
+            "social structure",
+            "sugar",
             "plantation",
+            "chattel slavery",
             "slavery",
+            "enslaved",
+            "indentured servants",
+            "planters",
+            "Barbados",
+            "silver",
+            "Potosí",
+            "mit’a",
+            "cloth",
+            "peasant",
+            "artisan",
             "casta",
-            "peasant labor",
-            "artisan labor",
-            "elites",
+            "elite",
             "gender",
-            "family"
+            "family",
+            "West Central Africa"
           ],
           "criteria": [
-            "Answer the exact economic-developments -> social-structures question.",
-            "Use at least three specific pieces of Unit 4 evidence.",
-            "Explain why one social structure changed and why another persisted."
+            "Name one economic development and who wanted it.",
+            "Explain which workers it needed.",
+            "Explain one change it made to a social structure."
           ],
           "learningTargets": [
-            "I can make a continuity-and-change argument about social structures from c. 1450 to c. 1750 using evidence from multiple Unit 4 topics and explaining why some structures changed while others persisted."
+            "I can explain how economic developments between 1450 and 1750, such as the new demand for sugar, silver, and cloth, increased the demand for workers and changed how work was done.",
+            "I can explain how those economic developments changed social structures: who was forced to work, who rose to the top, and how families lived, in places such as Barbados, Spanish America, and West Central Africa."
           ],
           "successCriteria": [
-            "I can identify one meaningful continuity and one meaningful change in social structure, support both with evidence from different Unit 4 topics, and explain why the balance of continuity and change occurred."
+            "I can follow one economic development (plantation sugar, Potosí silver, or the demand for cloth) to the workers it needed.",
+            "I can explain one change that development made to a social structure, such as slavery for life in Barbados, the casta ranking, or villages in West Central Africa with more women than men."
+          ]
+        },
+        "checkpoint-two-response": {
+          "ord": "10",
+          "module": "Checkpoint 2",
+          "label": "Module 10, Checkpoint 2",
+          "prompt": "Explain how economic developments from 1450 to 1750 affected social structures, and how much stayed the same. (1) Write a thesis that names one change and one continuity in social structures. (2) Support it with evidence from at least THREE different Unit 4 topics, for example sugar and slavery on Barbados, the casta ranking, villages in West Central Africa, the mit’a at Potosí, or peasant and artisan work in Europe, India, or China. (3) In at least one sentence, explain how two pieces of your evidence relate: does one lead to the other, do they show the same pattern, or does one show the opposite?",
+          "skill": "",
+          "skills": [],
+          "skillRaw": "",
+          "skillFrom": "",
+          "terms": [
+            "economic developments",
+            "social structure",
+            "Unit 4",
+            "continuity",
+            "change",
+            "thesis",
+            "plantation",
+            "slavery",
+            "Barbados",
+            "casta",
+            "mit’a",
+            "peasant",
+            "artisan",
+            "elite",
+            "gender",
+            "family",
+            "led to",
+            "same pattern",
+            "opposite"
+          ],
+          "criteria": [
+            "Write a thesis with one change and one continuity.",
+            "Use evidence from at least three Unit 4 topics.",
+            "Explain how two pieces of your evidence relate."
+          ],
+          "learningTargets": [
+            "I can write a thesis and a short argument about how much social structures changed between 1450 and 1750, and what stayed the same, connecting evidence from different Unit 4 topics."
+          ],
+          "successCriteria": [
+            "I can write a thesis that names one change and one continuity, support it with evidence from at least three Unit 4 topics, and explain how two pieces of my evidence relate."
           ]
         },
         "evidence-response": {
           "ord": "07",
           "module": "Evidence Lab",
           "label": "Module 07, Evidence Lab",
-          "prompt": "Using one change card and one continuity card, write a CCOT claim about how economic developments affected social structures from c. 1450 to c. 1750. Cite concrete evidence, explain the economic-to-social mechanism, and explain why the continuity persisted.",
+          "prompt": "Make one claim about how much the new global trade changed people's lives between 1450 and 1750. Then, for EACH of your two cards: (1) say what kind of source it is, who made it, and when, (2) give one detail you can see and explain how it supports your claim, and (3) name one thing the source cannot tell you. Finish with one sentence that explains how your two cards relate.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -6623,12 +6639,12 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "02",
           "module": "First & 10, Question 1",
           "label": "Module 02, First & 10, Question 1",
-          "prompt": "Choose one economic development such as plantation growth, silver extraction, mercantilism, or intensified production. Explain one specific effect on social structure.",
-          "skill": "Causation",
+          "prompt": "Choose one economic development from this reading: plantation sugar, Potosí silver, or the demand for cloth. Follow it to the workers it needed, then explain one change it made to a social structure. Then name one thing that stayed the same.",
+          "skill": "Continuity and Change",
           "skills": [
-            "Causation"
+            "Continuity and Change"
           ],
-          "skillRaw": "Causation",
+          "skillRaw": "Continuity and Change",
           "skillFrom": "reading q-skill badge",
           "terms": [],
           "criteria": [],
@@ -6639,12 +6655,12 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "02",
           "module": "First & 10, Question 2",
           "label": "Module 02, First & 10, Question 2",
-          "prompt": "Identify one major social change and one major social continuity from c. 1450 to c. 1750. Use specific evidence from two different Unit 4 topics.",
-          "skill": "Continuity and Change",
+          "prompt": "Ligon wrote that Barbados was \"divided into three sorts of men, viz. Masters, Servants, and slaves.\" Choose one other piece of evidence from this reading and explain how it relates to Ligon's: does it continue a chain of causes, show the same pattern in another place, or show the opposite?",
+          "skill": "Argumentation",
           "skills": [
-            "Continuity and Change"
+            "Argumentation"
           ],
-          "skillRaw": "Continuity & Change",
+          "skillRaw": "Argumentation",
           "skillFrom": "reading q-skill badge",
           "terms": [],
           "criteria": [],
@@ -6655,7 +6671,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "02",
           "module": "First & 10, Question 3",
           "label": "Module 02, First & 10, Question 3",
-          "prompt": "Write a one-sentence claim answering the Topic 4.8 question: how did economic developments affect social structures over time? Include both change and continuity in your claim.",
+          "prompt": "Write your own thesis: how did economic developments from 1450 to 1750 affect social structures, and how much stayed the same? Your thesis must name at least one change and one continuity.",
           "skill": "Argumentation",
           "skills": [
             "Argumentation"
@@ -6671,7 +6687,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "01",
           "module": "Map & Geography Check",
           "label": "Module 01, Map & Geography Check",
-          "prompt": "Using the map, identify one specific change and one specific continuity in global trade networks from c. 1450 to c. 1700. For each, explain the mechanism: what drove the change, and what sustained the continuity? Your argument should be specific, name the trade network, the commodity, or the institution you are describing.",
+          "prompt": "Find ONE place where forced labor built a new kind of society and ONE place where old work grew. For each, name the place, the goods it produced, and the people who did the work. Then say which of the two places changed more.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -6685,7 +6701,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "08",
           "module": "Primary Source",
           "label": "Module 08, Primary Source",
-          "prompt": "What does this account reveal about the role of Chinese merchants (Sangleys) in the Manila Galleon trade? Who is described as the active agents of commerce, the Spanish or the Chinese? What does the statement that Chinese merchants 'will not take cloth, nor wine, nor manufactured goods of any kind' reveal about the relative economic strength of China vs. Spain in this period? What does this tell us about Asia's role in the global economy? How does this source support a CCOT argument? What specific change does it document, and what continuity does it imply (in terms of who controlled Asian trade and what gave merchants power in the Indian Ocean system)?",
+          "prompt": "How does Ligon say Barbados was divided? Explain the difference he describes between the servants and the slaves, and which difference lasted \"for ever.\" Ligon says the slaves were \"kept and preserved with greater care than the servants.\" Ligon was part-owner of a sugar plantation. How might his position shape that claim, and what other evidence would you want before you believed it? Choose ONE other piece of Unit 4 evidence: the casta ranking in Spanish America, the growth of the Atlantic slave trade, or villages in West Central Africa with more women than men. Explain how it relates to Ligon's evidence: does one lead to the other, do they show the same pattern, or does one show the opposite?",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -6699,13 +6715,12 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "05",
           "module": "AP Skill Builder",
           "label": "Module 05, AP Skill Builder",
-          "prompt": "Explain how one economic development from 1450 to 1750 affected a social structure. Then identify one meaningful continuity in social structure and explain why it persisted. Use specific Unit 4 evidence for both.",
-          "skill": "Continuity and Change",
+          "prompt": "Now connect a new set of evidence from Unit 4. (1) In the 1570s, Spain turned the Inca mit'a into a draft that sent thousands of Andean men each year to the silver mine at Potosí. (2) Ming China collected most of its taxes in silver, so millions of families needed silver to pay them. (3) In China, peasant families raised silkworms and wove silk, and some of that silk was traded at Manila for American silver. (4) In Spanish America, colonial society ranked people by ancestry, in the casta system. Choose TWO of these pieces of evidence. Write 3 to 5 sentences that explain how they relate: does one lead to the other, do they show the same pattern, or does one show the opposite? Then say what the pair shows about how much the new trade changed people's lives.",
+          "skill": "Argumentation",
           "skills": [
-            "Continuity and Change",
-            "Causation"
+            "Argumentation"
           ],
-          "skillRaw": "CCOT and causation practice",
+          "skillRaw": "Argumentation practice",
           "skillFrom": "skillBuilder.label",
           "terms": [],
           "criteria": [],
