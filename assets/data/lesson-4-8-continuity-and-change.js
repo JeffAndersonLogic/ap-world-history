@@ -130,7 +130,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "From Ships to Demand to Workers",
         bullets: [
-          "Ships built from borrowed knowledge, the compass from China and the astrolabe and tables of the sky from Greek, Islamic, and Jewish astronomers, could cross an ocean and come back. That joined the two halves of the world and transformed trade.",
+          "Ships built from borrowed knowledge, the compass (used at sea in China by about 1100) and the astrolabe and tables of the sky from Greek, Islamic, and Jewish astronomers, could cross an ocean and come back. That joined the two halves of the world and transformed trade.",
           "Three economic developments came down that road: new demand for sugar, tobacco, cotton cloth, and silk; **silver** from Potosí and Mexico, a large share of it pulled to China; and rulers' tools such as mercantilist laws and the VOC. Rivals fought over the money, from Diu in 1509 to the Anglo-Dutch Wars of 1652 to 1674.",
           "All that demand needed workers. Historians estimate that fewer than 300,000 Africans were forced onto ships for the Americas in the 1500s, and more than 2.5 million from 1701 to 1750. Spain drafted Andean men to Potosí through the old Inca **mit’a**. And **peasant and artisan labor**, old work done at home and in workshops, grew in Europe, India, and China."
         ],
@@ -164,7 +164,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "A weaver's workshop in the Netherlands, 1659",
-          caption: "Two weavers at a large loom, in a room that also holds a spinning wheel and a cradle, painted by Cornelis Decker in 1659: work done at home. Rijksmuseum.",
+          caption: "A weaver at his loom talking with another man, in a room that also holds a spinning wheel and a cradle, painted by Cornelis Decker in 1659: work done at home. Rijksmuseum.",
           url: "../assets/images/topics/4-5/weavers-decker-1659.jpg",
           sourceUrl: "https://www.rijksmuseum.nl/en/collection/SK-A-2562"
         }

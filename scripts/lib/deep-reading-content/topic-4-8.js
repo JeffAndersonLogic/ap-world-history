@@ -70,7 +70,7 @@ module.exports = {
         {
           heading: 'Borrowed tools, new ships, known winds',
           blocks: [
-            { p: `Europe built its ocean road from borrowed knowledge (Topic 4.1). The magnetic compass came from China, where sailors were steering by a magnetized needle by about 1100. The astrolabe began as a Greek idea that astronomers in the Islamic world made precise, and it reached Europe through Muslim Spain. Tables of the sky, which told a pilot where the sun should stand on each day of the year, were built by Muslim and Jewish astronomers in Toledo; the almanac of Abraham Zacuto, printed in Portugal in <span class="num">1496</span>, came from that line. And the triangular lateen sail, which lets a ship work forward against the wind, had been used on the Mediterranean since Roman times and was common across the seas of the Islamic world.` },
+            { p: `Europe built its ocean road from borrowed knowledge (Topic 4.1). Sailors in China were steering by a magnetized needle, the compass, by about 1100, and Europeans were writing about the compass by about 1190; historians still debate how it traveled west. The astrolabe began as a Greek idea that astronomers in the Islamic world made precise, and it reached Europe through Muslim Spain. Tables of the sky, which told a pilot where the sun should stand on each day of the year, were built by Muslim and Jewish astronomers in Toledo; the almanac of Abraham Zacuto, printed in Portugal in <span class="num">1496</span>, came from that line. And the triangular lateen sail, which lets a ship work forward against the wind, had been used on the Mediterranean since Roman times and was common across the seas of the Islamic world.` },
             { p: `Around those tools, Europeans built new ships: the small, light caravel to explore coasts, and the large carrack, with room for months of food, water, cargo and guns. Around <span class="num">1600</span> Dutch shipbuilders designed the fluyt, which carried a large cargo with a small, cheap crew and made shipping goods much cheaper. And sailors learned the Atlantic's winds. To get home from West Africa, a ship swung far out to sea, west and north, until it caught the westerlies. Once ships could go and come back, again and again, the two halves of the world were joined, and trade was transformed.` }
           ]
         },
@@ -225,7 +225,7 @@ module.exports = {
         {
           heading: 'Stronger states, and a king\'s complaint',
           blocks: [
-            { p: `The same trade made some African states stronger. On the Gold Coast, the Asante kingdom rose by controlling gold and buying guns from Dutch and English traders, and in <span class="num">1701</span> it defeated the kingdom of Denkyira at Feyiase and became the main power in the region (Topic 4.4). African rulers and merchants took part in the trade, and some grew rich and powerful from it.` },
+            { p: `The same trade made some African states stronger. Inland from the Gold Coast, the Asante kingdom rose by controlling gold and buying guns from Dutch and English traders, and in <span class="num">1701</span> it defeated the kingdom of Denkyira at Feyiase and became the main power in the region (Topic 4.4). African rulers and merchants took part in the trade, and some grew rich and powerful from it.` },
             { p: `It could also tear at a kingdom. In <span class="num">1526</span> Afonso I of Kongo wrote to the king of Portugal that Portuguese traders were carrying away, in Luís Madureira's translation, "our native-born countrymen and the children of our nobles and vassals as well as relatives of ours," because thieves were seizing free people of Kongo to sell to them. Afonso himself sold war captives to the Portuguese, and Kongo had enslaved people of its own. His complaint was about whom the trade took, and about his own power to control it.` },
             { note: {
               kind: 'misconception',
@@ -243,7 +243,7 @@ module.exports = {
       terms: [
         ['Sex ratio', 'The number of men compared with the number of women in a group.'],
         ['Polygyny', 'A marriage in which a man has more than one wife.'],
-        ['Asante', 'A kingdom on the Gold Coast of West Africa that grew strong around 1700 through gold and the guns it bought.'],
+        ['Asante', 'A forest kingdom inland from the Gold Coast of West Africa that grew strong around 1700 through gold and the guns it bought.'],
         ['Kongo', 'A kingdom near the mouth of the Congo River whose king, Afonso I, protested the slave trade in 1526.']
       ]
     },
@@ -262,7 +262,7 @@ module.exports = {
           heading: 'The continuities',
           blocks: [
             { p: `Most people still farmed. In <span class="num">1750</span>, as in <span class="num">1450</span>, most of the world's people grew food, and the College Board's own sentence about this period begins with that fact: the world's productive systems "continued to be heavily centered on agriculture."` },
-            { p: `Much of the work itself stayed the same. A spinner in Holland, a weaver in India and a silk family in China did work their grandparents would have known, at home and as a family, with women and girls doing much of the spinning and weaving. Global demand made them work more. It did not replace them.` },
+            { p: `Much of the work itself stayed the same. A spinner in Holland, a weaver in India and a silk family in China did work their grandparents would have known, at home and as a family, with women and girls doing much of the spinning, and in China much of the weaving. Global demand made them work more. It did not replace them.` },
             { p: `And the ladder stayed. Almost everywhere, a ruler who inherited the throne still sat at the top, and old nobles kept most of their privileges even when stronger kings squeezed them (Topic 4.7). Older forms of slavery went on inside Africa, and Gujarati, Swahili Arab, Omani and Javanese merchants kept the Indian Ocean trading, with Chinese and Armenian merchants in the markets around it; European merchants often made their money by joining that trade rather than replacing it (Topics 4.4 and 4.5).` },
             { note: {
               kind: 'misconception',
@@ -302,7 +302,7 @@ module.exports = {
       {
         category: 'The economic developments',
         title: 'Sugar, silver and cloth',
-        body: `Ships built from borrowed tools crossed oceans and came back. Europe wanted plantation sugar and tobacco; buyers on three continents wanted Indian cotton and Chinese silk; Potosí's silver flowed to China from 1545 on; mercantilist laws and the VOC pulled the wealth toward rulers; and rivals fought over it, from Diu in 1509 to the Anglo-Dutch Wars.`
+        body: `Ships built from borrowed tools crossed oceans and came back. Europe wanted plantation sugar and tobacco; buyers on three continents wanted Indian cotton and Chinese silk; Potosí's silver, mined from 1545, reached China in large amounts from the 1570s, much of it through Manila; mercantilist laws and the VOC pulled the wealth toward rulers; and rivals fought over it, from Diu in 1509 to the Anglo-Dutch Wars.`
       },
       {
         category: 'The workers',

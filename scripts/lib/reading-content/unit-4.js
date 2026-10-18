@@ -1677,7 +1677,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "None of it could happen until ships could cross an ocean and come back (Topic 4.1). Europe built those ships from borrowed knowledge: the compass from China; the astrolabe, a Greek idea that astronomers in the Islamic world made precise; tables of the sky built by Muslim and Jewish astronomers in Toledo; and the triangular lateen sail, common across the Mediterranean and the seas of the Islamic world. It built new ships around them, the caravel and the carrack, and around 1600 the Dutch fluyt, which carried a large cargo with a small, cheap crew and made shipping goods much cheaper. And its sailors learned the Atlantic's winds, swinging far out to sea to catch a wind that blew them home. Once ships went and came back again and again, the two halves of the world were joined, and trade was transformed."
+            "html": "None of it could happen until ships could cross an ocean and come back (Topic 4.1). Europe built those ships from borrowed knowledge: the compass, used at sea in China by about 1100; the astrolabe, a Greek idea that astronomers in the Islamic world made precise; tables of the sky built by Muslim and Jewish astronomers in Toledo; and the triangular lateen sail, common across the Mediterranean and the seas of the Islamic world. It built new ships around them, the caravel and the carrack, and around 1600 the Dutch fluyt, which carried a large cargo with a small, cheap crew and made shipping goods much cheaper. And its sailors learned the Atlantic's winds, swinging far out to sea to catch a wind that blew them home. Once ships went and came back again and again, the two halves of the world were joined, and trade was transformed."
           }
         ],
         "callout": {
@@ -1773,7 +1773,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Much of the work itself stayed the same. A spinner in Holland, a weaver in India, and a silk family in China did work their grandparents would have known, at home and as a family, with women and girls doing much of the spinning and weaving. Global demand made them work more. It did not replace them."
+            "html": "Much of the work itself stayed the same. A spinner in Holland, a weaver in India, and a silk family in China did work their grandparents would have known, at home and as a family, with women and girls doing much of the spinning, and in China much of the weaving. Global demand made them work more. It did not replace them."
           },
           {
             "type": "p",

@@ -166,7 +166,7 @@ same? Your job is to answer it with an argument, and the trick is to follow the 
 the people.
 
 **First, the road (4.1).** None of it could happen until ships could cross an ocean and come back.
-Europe built those ships from borrowed knowledge: the compass from China; the astrolabe, a Greek
+Europe built those ships from borrowed knowledge: the compass, used at sea in China by about 1100; the astrolabe, a Greek
 idea that astronomers in the Islamic world made precise; tables of the sky first built by Muslim and
 Jewish astronomers; and the triangular lateen sail, common across the Mediterranean and the seas of
 the Islamic world. It built new ships around them, the caravel and the carrack, and around 1600 the

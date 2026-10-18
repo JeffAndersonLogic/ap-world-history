@@ -103,7 +103,7 @@ window.BEHISTORICAL_TEACHING = {
           'Owns: the argument. Every case is evidence already taught in 4.1 to 4.7, used in a sentence or two. The one new source is Richard Ligon\'s account of Barbados (London, 1657), slides 11 and 12 and the Primary Source.',
           'Bridge only: everything else. Do not reteach the mit\'a (4.4), the VOC (4.5) or casta (4.7); name them as evidence. Not taught: Unit 5. The landing hands off in one line.',
           'Three myths, on slide 19: "everything changed after 1492"; "Europeans took over the world\'s trade"; "the slave trade changed only the Americas."',
-          'Every picture in this deck is a real object of the period, already verified for an earlier Unit 4 topic: the sugar works engraved for Du Tertre (1667), the Potosí woodcut (1553), the battle of Texel (1673, painted 1687), the casta painting (about 1715 to 1720), the canoes at Elmina and Manfroe (printed 1732), the Gengzhitu loom (1696), an Indian palampore (early 1700s) and Maes\'s spinner (about 1655). The map is the course\'s own. None is AI-generated.'
+          'Every picture in this deck is a real object of the period, already verified for an earlier Unit 4 topic: the sugar works engraved for Du Tertre (1667), the Potosí woodcut (1553), the battle of Texel (1673, painted 1687), the casta painting (about 1715 to 1720), the canoes at Elmina and Manfroe (printed 1732), the Gengzhitu loom and silk-reeling prints (1696), an Indian palampore (early 1700s) and Maes\'s spinner (about 1655). The map is the course\'s own. None is AI-generated.'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
         listenFor: 'Economic change reached into everyday social life: who worked, who ruled, and how families lived. It changed the most where it needed workers by force, and much of the old world kept working the old way, only harder.',
@@ -181,11 +181,11 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'Retrieval from 4.1, not a reteach. The compass came from China (a magnetized needle at sea by about 1100; Europeans writing about it by about 1190). The astrolabe began as a Greek idea that astronomers in the Islamic world made precise, and it reached Europe through Muslim Spain. Muslim and Jewish astronomers in Toledo built tables of the sky; Abraham Zacuto\'s almanac, printed in Portugal in 1496, descends from them. The lateen sail was used on the Mediterranean since Roman times and was common across the seas of the Islamic world.',
+          'Retrieval from 4.1, not a reteach. Sailors in China steered by a magnetized needle by about 1100, and Europeans were writing about the compass by about 1190; historians debate whether it traveled west or was found again in Europe, so say "used in China first", not "invented in China and carried west". The astrolabe began as a Greek idea that astronomers in the Islamic world made precise, and it reached Europe through Muslim Spain. Muslim and Jewish astronomers in Toledo built tables of the sky; Abraham Zacuto\'s almanac, printed in Portugal in 1496, descends from them. The lateen sail was used on the Mediterranean since Roman times and was common across the seas of the Islamic world.',
           'KC-4.1.II: knowledge from the Classical, Islamic and Asian worlds spread, facilitating European technological developments. This is where the economic chain starts.'
         ],
         ask: 'Name one tool and the world it came from.',
-        listenFor: 'The compass from China; the astrolabe from Greek and Islamic astronomers; the lateen sail from the Mediterranean and the Islamic world.',
+        listenFor: 'The compass, used at sea in China first; the astrolabe from Greek and Islamic astronomers; the lateen sail from the Mediterranean and the Islamic world.',
         ap: 'KC-4.1.II. Continuity and Change: the tools were old; putting them together on Atlantic ships was new.'
       }
     },
@@ -292,11 +292,11 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'map', kind: 'map', eyebrow: 'Where It Reached People',
       kc: 'Unit 4: Learning Objective N', title: 'Where the trade changed people\'s lives.',
       footer: 'The key sorts every place by what changed for the people there.',
-      visual: { url: '../assets/images/instructional-maps/topic-4-8.svg', alt: 'World map with labeled dots at Western Europe, Mexico City, Barbados, Brazil, Potosí, the Gold Coast, West Central Africa, India, Jiangnan in China, and Manila, each with a short note, shaded in three colors explained in the key' },
+      visual: { url: '../assets/images/instructional-maps/topic-4-8.svg', alt: 'World map with labeled dots at Western Europe, Mexico City, Barbados, Brazil, Potosí, Asante, West Central Africa, India, Jiangnan in China, and Manila, each with a short note, shaded in three colors explained in the key' },
       notes: {
         minutes: 1,
         land: [
-          'The course\'s own instructional map, built for this story. Dots mark regions, not borders. Plum: forced labor and new rankings build new societies (Barbados, Brazil\'s sugar coast, Potosí, Mexico City\'s casta ranking). Gold: the trade changes families and states (the Gold Coast and Asante, West Central Africa). Green: old work grows (western Europe\'s spinners, India\'s weavers, Jiangnan\'s silk families, Manila\'s Chinese merchants).',
+          'The course\'s own instructional map, built for this story. Dots mark regions, not borders. Plum: forced labor and new rankings build new societies (Barbados, Brazil\'s sugar coast, Potosí, Mexico City\'s casta ranking). Gold: the trade changes families and states (Asante, inland from the Gold Coast, and West Central Africa). Green: old work grows (western Europe\'s spinners, India\'s weavers, Jiangnan\'s silk families, Manila\'s Chinese merchants).',
           'Point out that every color sits at one end of the same trade.'
         ],
         ask: 'Find one place of each color.',
@@ -411,7 +411,7 @@ window.BEHISTORICAL_TEACHING = {
           'China: weaving on a draw loom, from the Pictures of Tilling and Weaving (Yuzhi Gengzhi tu), designed by the court painter Jiao Bingzhen and printed in 1696 with poems by the Kangxi emperor (Metropolitan Museum of Art). Peasant families raised silkworms and wove silk; some of it went to Manila for American silver.',
           'India: a painted cotton bed cover (palampore), early 1700s, made in or near Madras (Chennai) for buyers overseas (Met 15.101).',
           'Holland: Nicolaes Maes, The Spinner, about 1655 (Rijksmuseum SK-A-246). Merchants paid families in the countryside to spin and weave at home.',
-          'All three were verified for 4.5. Much of this spinning and weaving was done by women and girls, at home, as a family: a continuity in gender and family life inside a change in how much was made and who bought it.'
+          'All three were verified for 4.5. Much of the spinning was done by women and girls, and in China much of the weaving too; in India and the Dutch workshops the loom was mostly men\'s work (Parthasarathi 2001). All of it was done at home, as a family: a continuity in gender and family life inside a change in how much was made and who bought it.'
         ],
         ask: 'What would a weaver\'s grandparents have recognized in this work? What would have surprised them?',
         listenFor: 'Recognized: the same tools, at home, as a family. Surprised: buyers on the other side of the world, and silver from the Americas.',
@@ -591,7 +591,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 7,
         land: [
-          'Six real objects, all verified for earlier Unit 4 topics: the Potosí woodcut (1553); the sugar works engraved for Du Tertre (1667); the canoes at Elmina and Manfroe (printed 1732); the casta painting (about 1715 to 1720); the Gengzhitu loom (1696); and the Indian palampore (early 1700s).',
+          'Six real objects, all verified for earlier Unit 4 topics: the Potosí woodcut (1553); the sugar works engraved for Du Tertre (1667); the canoes at Elmina and Manfroe (printed 1732); the casta painting (about 1715 to 1720); the Gengzhitu silk-reeling scene (1696); and the Indian palampore (early 1700s).',
           'Observation before inference: what the object shows, then what it suggests about a social structure, then what it cannot tell you. European engravings of Africa and the Caribbean were made for European readers; the casta painting is an elite\'s ideal. Both are good limits to name.',
           'Every picture in the Evidence Lab is a real historical object; none is AI-generated.'
         ],

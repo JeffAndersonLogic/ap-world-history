@@ -101,9 +101,9 @@
     <circle class="city" cx="507.8" cy="608.9" r="10"/>
     <text class="place halo" x="487.8" y="604.9" text-anchor="end">Potosí</text>
     <text class="placenote halo" x="487.8" y="626.9" text-anchor="end">mit’a draft to the silver mine</text>
-    <circle class="city" cx="793.3" cy="463.9" r="10"/>
-    <text class="place halo" x="773.3" y="471.9" text-anchor="end">Gold Coast</text>
-    <text class="placenote halo" x="773.3" y="493.9" text-anchor="end">Asante rises, 1701</text>
+    <circle class="city" cx="792.9" cy="462.8" r="10"/>
+    <text class="place halo" x="772.9" y="470.8" text-anchor="end">Asante</text>
+    <text class="placenote halo" x="772.9" y="492.8" text-anchor="end">inland from the Gold Coast, 1701</text>
     <circle class="city" cx="866.7" cy="544.4" r="10"/>
     <text class="place halo" x="886.7" y="540.4" text-anchor="start">West Central Africa</text>
     <text class="placenote halo" x="886.7" y="562.4" text-anchor="start">more women than men</text>

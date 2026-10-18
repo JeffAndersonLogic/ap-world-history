@@ -46,7 +46,7 @@ N; **CV** Canvas text; **Story** the story draft.
 
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
-| The compass came from China; the astrolabe was a Greek idea made precise by astronomers in the Islamic world; the first tables of the sky behind the Portuguese almanacs were built by Muslim and Jewish astronomers in Toledo (never "first": Ptolemy's Handy Tables and Baghdad's zijes came earlier; review pass 1); the lateen sail was common across the Mediterranean and the seas of the Islamic world | Story §3 | 4.1 ledger, rows on the compass, astrolabe, astronomical tables and lateen sail; the 4.1 First & 10 wording, followed here. | VERIFIED |
+| The compass was used at sea in China by about 1100 (historians debate how it traveled west; review pass 3); the astrolabe was a Greek idea made precise by astronomers in the Islamic world; the first tables of the sky behind the Portuguese almanacs were built by Muslim and Jewish astronomers in Toledo (never "first": Ptolemy's Handy Tables and Baghdad's zijes came earlier; review pass 1); the lateen sail was common across the Mediterranean and the seas of the Islamic world | Story §3 | 4.1 ledger, rows on the compass, astrolabe, astronomical tables and lateen sail; the 4.1 First & 10 wording, followed here. | VERIFIED |
 | Caravel and carrack; the Dutch fluyt designed around 1600 to carry a large cargo with a small, cheap crew, making shipping goods much cheaper | Story §3 | 4.1 ledger, fluyt row (Britannica, "Fluyt"; Hoorn, usually 1595), "around 1600". The fluyt served mostly European bulk trades (4.1 review U6), so 4.8 never calls it an ocean-crossing ship. | VERIFIED |
 | Sailors learned to swing out to sea to catch the westerlies home (the volta do mar) | Story §3 | 4.1 ledger, volta do mar row. | VERIFIED |
 
@@ -83,7 +83,7 @@ N; **CV** Canvas text; **Story** the story draft.
 | Spanish colonial society ranked people by ancestry (casta); silver, land and trade made many creole families rich, a new economic elite | Story §3 | 4.7 ledger, casta and creole rows (casta as a ranking by ancestry; peninsular-creole as a birthplace distinction among Spaniards). | VERIFIED |
 | Spain had to invent new categories for the society that grew up in its colonies | Story §3 | A framing of the 4.7 casta rows (the categories named mixed ancestries that did not exist before conquest). To be checked against 4.7's wording in Phase 9; "invent" overstates a practice that grew over two centuries, so the surfaces say new categories grew up for the mixed society. | NARROWED |
 | About two of every three people carried away in the Atlantic trade were male; in parts of Africa, especially West Central Africa, more women than men; historians argue women did more farming and more women and girls were enslaved in Africa | Story §3 | 4.5 ledger, sex-ratio and polygyny rows (NARROWED there to "about two of every three"; arguments stated as arguments). | VERIFIED |
-| Asante rose on gold and guns bought from Dutch and English traders (1701, Feyiase) | Story §3 | 4.4 ledger, Asante row (narrowed: Asante bought guns as it rose; the guns did not win Feyiase alone). | VERIFIED |
+| Asante, a forest kingdom inland from the Gold Coast (capital Kumasi), rose on gold and guns bought from Dutch and English traders on the coast (1701, Feyiase); narrowed in review pass 3 from "on the Gold Coast" | Story §3 | 4.4 ledger, Asante row (narrowed: Asante bought guns as it rose; the guns did not win Feyiase alone). | VERIFIED |
 | In 1526 Afonso I of Kongo complained that Portuguese traders were carrying off "the children of our nobles and vassals" | Story §3 | 4.4 ledger, Afonso letter row and its Primary Source text. | VERIFIED |
 
 ### What stayed: the continuities
@@ -91,7 +91,7 @@ N; **CV** Canvas text; **Story** the story draft.
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
 | In 1750, as in 1450, most of the world's people grew food | Story §3 | The CED's own KC-4.2 ("continued to be heavily centered on agriculture"); standard (agrarian societies everywhere in the period). No number is given. | VERIFIED |
-| Peasant and artisan work stayed household and family work, with women and girls doing much of the spinning and weaving | Story §3 | 4.5 ledger, peasant and artisan row. | VERIFIED |
+| Peasant and artisan work stayed household and family work, with women and girls doing much of the spinning, and in China much of the weaving (narrowed in review pass 3: Indian and Dutch loom weaving was mostly men's work, Parthasarathi 2001) | Story §3 | 4.5 ledger, peasant and artisan row. | VERIFIED |
 | Hereditary rulers stayed on top almost everywhere, and old nobles kept most privileges even when squeezed | Story §3 | 4.7 ledger, frame row and old-elite rows. | VERIFIED |
 | Older forms of slavery went on in Africa; Asian merchants kept the Indian Ocean trading | Story §3 | 4.4 ledger. | VERIFIED |
 | In many West Central African villages, women had long done much of the farming | BS (planned) | Cavazzi's mid-1600s watercolor "Woman Hoeing" (the Araldi manuscript), read as evidence of women's farm work by the Jamestown-Yorktown Foundation; Baumann, "The Division of Work According to Sex in African Hoe Culture," *Africa* 1 (1928). Neither is a specialist study of Kongo in this period. Narrowed to "much of the farming"; Phase 9's history reviewer checks it. | NARROWED |
@@ -120,7 +120,7 @@ ledger row where it was checked against its holder's record, and the 4.8 wording
 | Nicolaes Maes, The Spinner, about 1655, Rijksmuseum SK-A-246 | Deck 15 and notes | 4.5 ledger (about 1650 to 1660). | VERIFIED |
 | Eight-reales coin, Potosí mint, 1651, Münzkabinett Berlin | LD lecture card 1; RC stableImages | 4.5 Evidence Lab card and ledger. | VERIFIED |
 | Frans Post, *Brazilian Landscape* (detail), 1660s, painted in the Netherlands, National Gallery of Ireland: Black workers at a sugar works below the owner's house | LD lecture card 2; RC stableImages | 4.3 ledger (title and the furnace-house correction from 4.3's review). "Below the owner's house" from the 4.3 alt text ("a large house with a lookout on the hill above"). | VERIFIED |
-| Cornelis Decker, two weavers at a loom in a room that also holds a spinning wheel and a cradle, 1659, Rijksmuseum SK-A-2562: "work done at home" | LD lecture card 3; RC stableImages | 4.5 lecture card and ledger. Narrowed in review pass 1: the picture shows two men at a loom, not a family at work. | NARROWED |
+| Cornelis Decker, a weaver at his loom talking with another man, in a room that also holds a spinning wheel and a cradle, 1659, Rijksmuseum SK-A-2562: "work done at home" | LD lecture card 3; RC stableImages | 4.5 lecture card and ledger. Narrowed in review pass 1 (not a family at work) and pass 3 (Rijksmuseum: two men bent over a loom in conversation, one at the loom). | NARROWED |
 | No AI-generated picture anywhere in 4.8 | Every surface | No generator key in this environment; every file above is a period object. | VERIFIED |
 
 ### Claims added on later surfaces (modules, deep reading, notes)
@@ -211,4 +211,19 @@ No CED alignment or checkpoint-target defect; both Ligon passages exact.
 5. **The Key Concept band uppercases "KC-4.3.III.ii".** Rejected for this topic: the band's capitals are the shared renderer's style, already logged as an adjacent finding from 4.5 to 4.7.
 6. **The projected Ligon quotation on slide 12 has no glosses.** Supported. Fixed: "viz. [namely]" and "posterity [children and descendants]."
 7. **The sugar chain is stated without the planters' choice.** Supported. Fixed: the First & 10 and the deep reading add "whose planters chose to buy enslaved Africans"; slide 18's arrow reads "whose owners bought" instead of "which needed."
+
+### Pass 3, reviewer 2 (history against outside sources), 6 findings
+
+Every Ligon and Afonso quotation, every sentence given as the College Board's words, the slave-trade estimates, the 1679 count of the enslaved and every picture credit checked out.
+
+1. **"Potosí's silver flowed to China from 1545 on."** Supported (1545 is the discovery; the large flow to China dates from the 1570s and Manila, 1571: Flynn and Giráldez 1995). Fixed in the deep reading's closing card: "mined from 1545, reached China in large amounts from the 1570s, much of it through Manila."
+2. **The slide 24 note names a loom card the Evidence Lab does not have.** Supported (the card is the reeling scene). Fixed in the slide 24 and slide 1 notes.
+3. **"Women and girls doing much of the spinning and weaving" overreaches for India and Holland.** Supported (Parthasarathi 2001: weavers' wives and children did the preparatory work; the loom was men's). Fixed in the First & 10, the deep reading and the slide 15 notes (row above).
+4. **The Decker caption calls both men weavers.** Supported (Rijksmuseum SK-A-2562). Fixed (row above).
+5. **"The compass came from China" states a debated transmission as settled.** Supported. Fixed in the First & 10, lecture card 1, the deep reading and the slide 5 notes (row above). The same wording in Topic 4.1's reading is logged as an adjacent finding.
+6. **Asante placed "on the Gold Coast."** Supported (an inland forest kingdom, capital Kumasi). Fixed in the deep reading, the map (label "Asante," note "inland from the Gold Coast, 1701"), the map key and the slide 10 notes and alt text (row above). The same wording in Topic 4.4's reading is logged as an adjacent finding.
+
+### Outcome
+
+The loop ended on the three-pass safety valve: every pass found supported defects. Supported defects per pass: 14 (of 16 findings), 8 (of 8; one duplicate) and 11 (of 13). Pass 3 was not trending to zero in count, but it was trending down in size: no CED alignment, ownership or checkpoint-target defect, no wrong date taught as a headline fact, no myth; its findings were near-model wording (the reading's opening and takeaway), one historians' estimate given as a count, one date in a closing card, two caption and alt-text descriptions, and four overstatements narrowed (Barbados's sugar start, the compass, women's weaving, Asante's location). Every finding is fixed or rejected with its reason above. Every ledger row has a status.
 

@@ -1057,7 +1057,7 @@ module.exports = [
       { at: [-59.5, 13.1], label: 'Barbados', note: 'sugar and slavery, from the 1640s', side: 'right' },
       { at: [-36.0, -8.5], label: 'Brazil', note: 'sugar plantations', side: 'right' },
       { at: [-65.75, -19.6], label: 'Potosí', note: 'mit\u2019a draft to the silver mine', side: 'left' },
-      { at: [-1.5, 6.5], label: 'Gold Coast', note: 'Asante rises, 1701', side: 'left' },
+      { at: [-1.6, 6.7], label: 'Asante', note: 'inland from the Gold Coast, 1701', side: 'left' },
       { at: [15.0, -8.0], label: 'West Central Africa', note: 'more women than men', side: 'right' },
       { at: [78.0, 20.0], label: 'India', note: 'cotton weavers', side: 'left' },
       { at: [120.5, 31.0], label: 'Jiangnan', note: 'silk families need silver for taxes', side: 'right' },
