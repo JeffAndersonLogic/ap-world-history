@@ -57,7 +57,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'expelled', label: 'Pushed Out, Taken In', range: '20-22', minutes: 2, teacher: 'Spain and Portugal; Bayezid II.', students: 'Say why each state did it.', slide: 7 },
     { id: 'room', label: 'Room, Not Equality', range: '22-24', minutes: 2, teacher: 'How the Ottomans governed Christians and Jews.', students: 'Name one right and one limit.', slide: 8 },
     { id: 'mughal', label: 'It Depends on the Ruler', range: '24-26', minutes: 2, teacher: 'Akbar and the Rajputs; Aurangzeb and the jizya.', students: 'Say what changed and what did not.', slide: 9 },
-    { id: 'women', label: 'Women, by Class', range: '26-28', minutes: 2, teacher: 'One painting, three classes of women.', students: 'Find the mistress and the enslaved woman.', slide: 10 },
+    { id: 'women', label: 'Women, by Class', range: '26-28', minutes: 2, teacher: 'One painting: a wealthy household and the enslaved woman in it.', students: 'Find the mistress and the enslaved woman.', slide: 10 },
     { id: 'qing', label: 'A New Elite in China', range: '28-31', minutes: 3, teacher: 'The banners, the queue, the exams kept.', students: 'Sort continuity and change.', slide: 11 },
     { id: 'banners', label: 'The Banners, 1662', range: '31-32', minutes: 1, teacher: 'A Manchu painter shows the new elite.', students: 'Find the banner and its label.', slide: 12 },
     { id: 'casta', label: 'A New Top in the Americas', range: '32-34', minutes: 2, teacher: 'The casta ranking, top to bottom.', students: 'Say what decided a person\'s rung.', slide: 13 },
@@ -211,7 +211,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'expelled', kind: 'balance', eyebrow: 'Who Belongs · 1492 to 1497',
       kc: 'KC-4.3.I.B', title: 'Pushed out, and taken in.',
       template: {
-        job: 'Decide who belongs',
+        job: 'Who belongs',
         left: { tag: 'Spain and Portugal', name: 'Pushed out', when: '1492 to 1497', text: 'Jews must convert or leave. Portugal forces most to be baptized.' },
         right: { tag: 'Ottoman Empire', name: 'Taken in', when: '1490s', text: 'Bayezid II lets the refugees settle in Istanbul, Salonica and other cities.' },
         claimLabel: 'Ask why',
@@ -282,11 +282,11 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'women', kind: 'frame-placard', eyebrow: 'Who Belongs · Ottoman Women, by Class',
-      kc: 'KC-4.3.I.B', title: 'One room, three classes of women.',
+      kc: 'KC-4.3.I.B', title: 'A wealthy household, and the enslaved woman in it.',
       template: {
         placard: {
           tag: 'Istanbul · about 1720 to 1737',
-          name: 'One room, three classes',
+          name: 'Who has a say?',
           text: 'A wealthy mother receives visitors after a birth, women of her own class. At the lower left, the museum says, **an enslaved woman** makes sherbet for the guests.'
         }
       },
@@ -298,8 +298,8 @@ window.BEHISTORICAL_TEACHING = {
           'Women in the towns: in early-1600s Kayseri, women sued and were sued in the Islamic court and took part in about 40 percent of recorded property transactions (Ronald Jennings, 1975). Inheritance law gave a daughter half a son\'s share, and a woman\'s testimony counted for less.',
           'Enslaved women: servants and concubines in wealthy households, with almost no say over their own lives.'
         ],
-        ask: 'Find the three classes of women in the painting. Which one had the least say over her own life?',
-        listenFor: 'The mistress, her visitors, and the enslaved woman making sherbet; the enslaved woman.',
+        ask: 'Find the woman in the painting with the most say over her own life, and the woman with the least.',
+        listenFor: 'The wealthy mother in the bed, with her visitors around her; the enslaved woman making sherbet at the lower left.',
         ap: 'KC-4.3.I.B. The CED\'s example: the varying status of different classes of women within the Ottoman Empire.'
       }
     },
@@ -349,7 +349,7 @@ window.BEHISTORICAL_TEACHING = {
         rows: [
           { name: 'Peninsulares', mark: 'P', tool: 'Born in Spain:', result: 'the highest offices, such as viceroy.' },
           { name: 'Creoles', mark: 'C', tool: 'Spanish ancestry, born in the Americas:', result: 'rich from silver, land and trade.' },
-          { name: 'Mixed ancestry', mark: 'M', tool: 'Mestizos, mulattos and others:', result: 'in between, depending on wealth and reputation.' },
+          { name: 'Mixed ancestry', mark: 'M', tool: 'Mestizos, mulattos, others:', result: 'in between, by wealth and reputation.' },
           { name: 'Indigenous', mark: 'I', tool: 'Their own town governments:', result: 'paid tribute to the crown.' },
           { name: 'African', mark: 'A', tool: 'Some free, many enslaved:', result: 'at the bottom of the ranking.' }
         ],
@@ -402,7 +402,7 @@ window.BEHISTORICAL_TEACHING = {
         cases: [
           { name: 'Ottoman sipahis', note: 'Cavalry who held timars', points: [{ year: 1450, level: 3.4 }, { year: 1550, level: 3.4 }, { year: 1650, level: 2 }, { year: 1750, level: 1 }], events: [{ year: 1600, label: 'c. 1600', text: 'guns and cash matter more' }] },
           { name: 'Tax farmers and local families', note: 'Ottoman provinces', points: [{ year: 1450, level: 0.8 }, { year: 1580, level: 1.2 }, { year: 1695, level: 2.4 }, { year: 1750, level: 3.4 }], events: [{ year: 1695, label: '1695', text: 'tax farms sold for life' }] },
-          { name: 'Russian boyars', note: 'Great noble families', points: [{ year: 1450, level: 3.2 }, { year: 1600, level: 2.8 }, { year: 1682, level: 2.2 }, { year: 1722, level: 1 }, { year: 1750, level: 0.8 }], events: [{ year: 1682, label: '1682', text: 'precedence by family ends' }, { year: 1722, label: '1722', text: 'Table of Ranks' }] }
+          { name: 'Russian boyars', note: 'Great noble families', points: [{ year: 1450, level: 3.2 }, { year: 1600, level: 2.8 }, { year: 1682, level: 2.2 }, { year: 1722, level: 1 }, { year: 1750, level: 0.8 }], events: [{ year: 1722, label: '1722', text: 'Table of Ranks' }] }
         ]
       },
       notes: {
@@ -448,7 +448,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'nobles', kind: 'balance', eyebrow: 'Old Elites · France and England',
       kc: 'KC-4.2.III.B', title: 'Squeezed in one kingdom, winning in another.',
       template: {
-        job: 'Nobles face a stronger ruler',
+        job: 'Face the king',
         left: { tag: 'France', name: 'Versailles', when: '1682', text: 'Nobles keep titles, land and tax freedom, and lose the power to defy the king.' },
         right: { tag: 'England', name: 'Parliament', when: '1688', text: 'Nobles invite William of Orange; James II flees; Parliament limits the monarchs after him.' },
         claimLabel: 'Fluctuated',
@@ -585,7 +585,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 7,
         land: [
           'The Skill Builder practices the CED\'s suggested skill, 3.D Claims and Evidence in Sources.',
-          'It models the move on the first half of Busbecq\'s argument (slide 19), then gives students the second half, that in Europe "birth is the standard for everything," with three pieces of evidence from this lesson: Louis XIV\'s nobles at Versailles, Peter\'s Table of Ranks, and England\'s nobles in 1688. Students decide whether each supports, modifies or refutes it.',
+          'It models the move on the first half of Busbecq\'s argument (slide 19), ends the model with a sentence frame rather than a finished sentence, then gives students the second half, that in Europe "birth is the standard for everything," with three pieces of evidence from this lesson: Louis XIV\'s nobles at Versailles, Peter\'s Table of Ranks, and England\'s nobles in 1688. Students decide whether each supports, modifies or refutes it.',
           'The Table of Ranks is the strongest modifier: a commoner could become a noble by rank. Russia is in Europe, so it tests Busbecq\'s "with us" directly.'
         ],
         ask: 'After students have written: which piece of evidence did the most damage to Busbecq\'s claim about Europe?',
@@ -610,7 +610,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'evidence', kind: 'action', eyebrow: 'Module 07 · Evidence Lab',
       title: 'Build one claim from two sources.',
-      subtitle: 'Who could belong, or who could rise? Two sources, one limit.',
+      subtitle: 'Who could belong, who could rise, or who was squeezed? Two sources, one limit.',
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-7-changing-social-hierarchies.html#modules' },
       notes: {
         minutes: 7,

@@ -1416,8 +1416,8 @@ module.exports = {
     "titleHtml": "Who Belongs, Who <em>Rises</em>",
     "deck": "Between 1450 and 1750, every society still ranked people from top to bottom. What changed was who stood where. Empires decided which groups could belong and which were pushed out, conquest and new trade put new groups at the top, and stronger rulers squeezed the old nobles who used to share their power.",
     "skillTags": [
-      "Continuity &amp; Change",
-      "Claims &amp; Evidence in Sources"
+      "Continuity and Change",
+      "Claims and Evidence in Sources"
     ],
     "supportCards": {
       "beforeYouRead": "<strong>The ladder stayed. The people on it moved.</strong> For every case in this reading, ask two things: what stayed the same about who held power and status, and what changed? Then ask which of three kinds of change it is: who could belong, a new elite at the top, or an old elite squeezed.",
@@ -1537,7 +1537,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "For centuries, the core of the Ottoman army was the sipahi, a cavalryman who held a <span class=\"kt\">timar</span>: the right to collect the taxes from a piece of land, in return for riding to war when the sultan called. A timar was not his to own, and it was not supposed to pass automatically to his son. By the late 1500s, wars were won by soldiers with guns who were paid in cash, and the sultan needed money more than horsemen. So the state turned more and more timar land into tax farms: the right to collect a district's taxes, sold for cash to whoever would pay. In 1695 it began selling them for life. The sipahis faded, and tax farmers and powerful local families rose in their place."
+            "html": "For centuries, the core of the Ottoman army was the sipahi, a cavalryman who held a <span class=\"kt\">timar</span>: the right to collect the taxes from a piece of land, in return for riding to war when the sultan called. A timar was not his to own, and it was not supposed to pass automatically to his son. By the late 1500s, wars were won by soldiers with guns who were paid in cash, and the sultan needed money more than horsemen. So the state turned more and more timar land into tax farms: the right to collect a district's taxes, sold for cash to whoever would pay. In 1695 it began selling them for life. The sipahis faded. Some families held on to their timars, and the system was not abolished until 1831, but the sipahis no longer led the army, and tax farmers and powerful local families rose in their place."
           },
           {
             "type": "p",
@@ -1597,13 +1597,13 @@ module.exports = {
       },
       {
         "num": "02",
-        "skill": "Continuity &amp; Change",
+        "skill": "Continuity and Change",
         "text": "The Manchu conquest of 1644 brought both continuity and change to the people who ran China. Explain one thing about how China was governed that stayed the same, and one way the top of society changed.",
         "placeholder": "One thing that stayed the same was... One way the top of society changed was..."
       },
       {
         "num": "03",
-        "skill": "Claims &amp; Evidence in Sources",
+        "skill": "Claims and Evidence in Sources",
         "text": "Busbecq argued that the Ottomans rose \"by merit,\" while in Europe \"birth is the standard for everything.\" Choose one piece of evidence from this reading and explain whether it supports, modifies, or refutes his argument.",
         "placeholder": "The evidence I chose is... It supports / modifies / refutes Busbecq's argument because..."
       }

@@ -55,7 +55,7 @@ window.BEHISTORICAL_LESSON = {
 
   successCriteria: [
     {
-      criteria: "I can explain, for one state that made room for or made use of a group (the Ottoman Empire or Akbar's Mughal Empire) and one state that pushed out or limited a group (Spain and Portugal, or Qing China), what the state did and what it gained, and one way the two cases were alike.",
+      criteria: "I can explain, for one state that made room for or made use of a group (the Ottoman Empire or Akbar's Mughal Empire) and one state that pushed out or limited a group (Spain and Portugal, or Qing China), what the state did and what it gained, and, for one of them, what changed for the group and what stayed the same.",
       kc: 'KC-4.3.I.B',
       theme: "Social Interactions and Organization"
     },
@@ -148,7 +148,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "How Stronger Rulers Squeezed Old Elites",
         bullets: [
-          "An Ottoman **sipahi** was a cavalryman who held a **timar**, the right to collect the taxes of a piece of land in return for riding to war. When wars came to need soldiers with guns paid in cash, the sultan needed money more than horsemen, so the state sold the right to collect taxes instead, and from 1695 it sold it for life. The sipahis faded; tax farmers and powerful local families rose.",
+          "An Ottoman **sipahi** was a cavalryman who held a **timar**, the right to collect the taxes of a piece of land in return for riding to war. When wars came to need soldiers with guns paid in cash, the sultan needed money more than horsemen, so the state sold the right to collect taxes instead, and from 1695 it sold it for life. The sipahis faded: some families held on to their timars, which were not abolished until 1831, but they no longer led the army, and tax farmers and powerful local families rose.",
           "In Russia, Peter the Great replaced the old council of **boyars** with a Senate he appointed and made noblemen serve the state for life. His **Table of Ranks** of 1722 made a man's place depend on the rank he earned. The nobles lost their independence but kept their estates and their serfs.",
           "In France, Louis XIV centralized power and kept the great nobles at his palace at Versailles, competing for his favor. The French **nobility** kept their titles and privileges and lost the power to defy the king. But in England in 1688, Parliament, a body of landowning nobles and gentry, limited the monarchs instead. The power of old elites could fall, or rise."
         ],
@@ -185,8 +185,8 @@ window.BEHISTORICAL_LESSON = {
 
   evidenceLab: {
     title: "Evidence Lab: Who Belongs, Who Rises",
-    intro: "Use the cards to build one claim about who could belong or who could rise between 1450 and 1750: a Mughal painting of Akbar and the Rajputs, two paintings of life in Istanbul by Jean Baptiste Vanmour, a Manchu painter's handscroll of the banners, a casta painting from Mexico, and a painting of Versailles in 1722.",
-    prompt: "Choose two cards and make one claim about who could belong or who could rise in an empire between 1450 and 1750."
+    intro: "Use the cards to build one claim about who could belong, who could rise, or who was squeezed between 1450 and 1750: a Mughal painting of Akbar and the Rajputs, two paintings of life in Istanbul by Jean Baptiste Vanmour, a Manchu painter's handscroll of the banners, a casta painting from Mexico, and a painting of Versailles in 1722.",
+    prompt: "Choose two cards and make one claim about who could belong, who could rise, or who was squeezed in an empire between 1450 and 1750."
   },
 
   primarySource: {

@@ -107,7 +107,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Pushed out, and taken in.",
       "kc": "KC-4.3.I.B",
       "template": {
-        "job": "Decide who belongs",
+        "job": "Who belongs",
         "left": {
           "tag": "Spain and Portugal",
           "name": "Pushed out",
@@ -197,12 +197,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "frame-placard",
       "eyebrow": "Who Belongs · Ottoman Women, by Class",
-      "title": "One room, three classes of women.",
+      "title": "A wealthy household, and the enslaved woman in it.",
       "kc": "KC-4.3.I.B",
       "template": {
         "placard": {
           "tag": "Istanbul · about 1720 to 1737",
-          "name": "One room, three classes",
+          "name": "Who has a say?",
           "text": "A wealthy mother receives visitors after a birth, women of her own class. At the lower left, the museum says, **an enslaved woman** makes sherbet for the guests."
         },
         "visual": {
@@ -210,7 +210,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "alt": "A painting of a richly decorated room: a woman sits up in a red bed under green curtains on the right, women in colored robes sit and stand around her, one carries a tray, coffee brews on a brass brazier in the middle, and a woman at the lower left prepares drinks",
           "credit": "Jean Baptiste Vanmour, Lying-in Room of a Distinguished Turkish Woman, about 1720 to 1737 · Rijksmuseum · Public domain",
           "ratio": 1.626,
-          "fit": "contain"
+          "fit": "contain",
+          "position": "0% 50%"
         }
       }
     },
@@ -284,8 +285,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "name": "Mixed ancestry",
             "mark": "M",
-            "tool": "Mestizos, mulattos and others:",
-            "result": "in between, depending on wealth and reputation."
+            "tool": "Mestizos, mulattos, others:",
+            "result": "in between, by wealth and reputation."
           },
           {
             "name": "Indigenous",
@@ -321,6 +322,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "credit": "Juan Rodríguez Juárez, From a Mestizo and an Indian Woman, a Coyote, about 1715 · Hispanic Society of America · Public domain",
           "ratio": 1.424,
           "fit": "contain",
+          "position": "0% 50%",
           "tagPos": "bl"
         }
       }
@@ -423,11 +425,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
             ],
             "events": [
               {
-                "year": 1682,
-                "label": "1682",
-                "text": "precedence by family ends"
-              },
-              {
                 "year": 1722,
                 "label": "1722",
                 "text": "Table of Ranks"
@@ -482,7 +479,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Squeezed in one kingdom, winning in another.",
       "kc": "KC-4.2.III.B",
       "template": {
-        "job": "Nobles face a stronger ruler",
+        "job": "Face the king",
         "left": {
           "tag": "France",
           "name": "Versailles",
@@ -630,7 +627,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "action",
       "eyebrow": "Module 07 · Evidence Lab",
       "title": "Build one claim from two sources.",
-      "subtitle": "Who could belong, or who could rise? Two sources, one limit.",
+      "subtitle": "Who could belong, who could rise, or who was squeezed? Two sources, one limit.",
       "action": {
         "label": "Open Student Lesson",
         "url": "lesson-4-7-changing-social-hierarchies.html#modules"

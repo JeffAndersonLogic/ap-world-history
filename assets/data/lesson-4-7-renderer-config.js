@@ -50,7 +50,7 @@
       { label: 'Who could belong', detail: 'Spain and Portugal (Jews pushed out or forced to convert, 1492 to 1497), Salonica in the Ottoman Empire (Jewish refugees settle, 1490s), and Mughal India (Akbar ends the jizya in 1564; Aurangzeb brings it back in 1679).' },
       { label: 'New elites made by conquest and trade', detail: 'Beijing (the Manchu conquest of 1644 and the banners) and Mexico City (the casta ranking, with Spanish-born officials and rich creoles at the top).' },
       { label: 'Old elites squeezed, or winning', detail: 'Anatolia (Ottoman timars turned into tax farms, sold for life from 1695), Russia (Peter the Great\'s Table of Ranks, 1722), Versailles (Louis XIV\'s court from 1682), and England (nobles and Parliament limit the crown, 1688).' },
-      { label: 'What the map cannot show', detail: 'The shaded areas and dots mark regions, not borders. They show where the ladder changed, not what stayed the same: in every one of these places, a ruler who inherited power still sat at the top.' }
+      { label: 'What the map cannot show', detail: 'The shaded areas and dots mark regions, not borders. The map shows where the ladder changed. It does not show what stayed the same.' }
     ]
   };
 
@@ -86,7 +86,7 @@
       { label: 'The source\'s argument', text: 'Busbecq wrote home that among the Ottomans "no distinction is attached to birth" and "it is by merit that men rise in the service." In other words: Ottoman officials got their jobs because of their ability, not their families.' },
       { label: 'Evidence that supports it', text: 'Boys taken from Christian villages by the devshirme were trained for the sultan\'s service, and some rose to be generals and grand viziers, the highest office below the sultan. That fits Busbecq\'s argument.' },
       { label: 'Evidence that modifies it', text: 'To reach those top jobs, a Christian had to become Muslim, and the sultan himself inherited his throne from his father. So merit opened the sultan\'s service, but not to everyone, and not the throne.' },
-      { label: 'Put it in one sentence', text: 'The devshirme supports Busbecq\'s argument that Ottoman officials rose by merit, but the rule that top officials had to be Muslim, and a throne that passed from father to son, modify it: merit decided who rose in the sultan\'s service, not who could rule.' }
+      { label: 'Put it in one sentence', text: 'Use this frame for your own answer: "[My evidence] supports / modifies / refutes Busbecq\'s argument because ..." Name the evidence, choose one of the three words, and explain why.' }
     ],
     prompt: 'Now test the second half of Busbecq\'s argument. He wrote that in Europe "birth is the standard for everything." Here are three pieces of evidence: (1) The great nobles who spent their days at Louis XIV\'s palace at Versailles were nobles because they were born into noble families. (2) Russia\'s Table of Ranks of 1722 let a commoner who rose high enough in the army or the government become a noble. (3) In France, families could buy certain high offices, such as a judge\'s seat in the Parlement of Paris, and some of those offices brought noble rank to the family. In 2 to 3 sentences, say whether each piece of evidence supports, modifies, or refutes Busbecq\'s argument about Europe. Then give your verdict: how true was his claim?',
     criteria: [
@@ -103,10 +103,10 @@
       cardDesc: 'How states made room for or used some religious and ethnic groups, and pushed out or limited others.',
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Choose ONE state that made room for or made use of a religious or ethnic group (the Ottoman Empire or Akbar\'s Mughal Empire) and ONE state that pushed out or limited a group (Spain and Portugal, or Qing China). For EACH, explain what the state did and what the state gained from it. Then explain one way the two cases were alike.',
+      prompt: 'Choose ONE state that made room for or made use of a religious or ethnic group (the Ottoman Empire or Akbar\'s Mughal Empire) and ONE state that pushed out or limited a group (Spain and Portugal, or Qing China). For EACH, explain what the state did and what the state gained from it. Then, for ONE of your cases, explain one thing about the group\'s place in society that changed and one thing that stayed the same.',
       responseType: 'Checkpoint 1',
       terms: ['accommodation', 'accommodate', 'Ottoman', 'Bayezid', 'Jews', 'Salonica', 'protected subjects', 'jizya', 'Mughal', 'Akbar', 'Rajputs', 'Aurangzeb', 'Spain', 'Portugal', 'expelled', 'pushed out', 'Qing', 'Han', 'queue', 'suppress', 'restrict', 'limit'],
-      focus: ['Name one state that made room for or used a group, and one that pushed out or limited a group.', 'For each, say what the state did and what it gained.', 'Say one way the two cases were alike.']
+      focus: ['Name one state that made room for or used a group, and one that pushed out or limited a group.', 'For each, say what the state did and what it gained.', 'For one case, say what changed for the group and what stayed the same.']
     },
     {
       title: 'Checkpoint 2: The Top of Society',
@@ -124,8 +124,8 @@
 
   lesson.evidenceLab = {
     title: 'Evidence Lab: Who Belongs, Who Rises',
-    task: 'Choose TWO cards. For each, decide what it shows about who could belong in an empire, or who could rise to the top.',
-    prompt: 'Make one claim about who could belong or who could rise in an empire between 1450 and 1750. Then, for EACH of your two cards: (1) say what kind of source it is, who made it, and when, (2) give one detail you can see and explain how it supports your claim, and (3) name one thing the source cannot tell you.'
+    task: 'Choose TWO cards. For each, decide what it shows about who could belong in an empire, who could rise to the top, or who was squeezed.',
+    prompt: 'Make one claim about who could belong, who could rise, or who was squeezed in an empire between 1450 and 1750. Then, for EACH of your two cards: (1) say what kind of source it is, who made it, and when, (2) give one detail you can see and explain how it supports your claim, and (3) name one thing the source cannot tell you.'
   };
 
   lesson.images = [

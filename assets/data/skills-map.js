@@ -6317,7 +6317,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "06",
           "module": "Checkpoint 1",
           "label": "Module 06, Checkpoint 1",
-          "prompt": "Choose ONE state that made room for or made use of a religious or ethnic group (the Ottoman Empire or Akbar's Mughal Empire) and ONE state that pushed out or limited a group (Spain and Portugal, or Qing China). For EACH, explain what the state did and what the state gained from it. Then explain one way the two cases were alike.",
+          "prompt": "Choose ONE state that made room for or made use of a religious or ethnic group (the Ottoman Empire or Akbar's Mughal Empire) and ONE state that pushed out or limited a group (Spain and Portugal, or Qing China). For EACH, explain what the state did and what the state gained from it. Then, for ONE of your cases, explain one thing about the group's place in society that changed and one thing that stayed the same.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -6349,13 +6349,13 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "criteria": [
             "Name one state that made room for or used a group, and one that pushed out or limited a group.",
             "For each, say what the state did and what it gained.",
-            "Say one way the two cases were alike."
+            "For one case, say what changed for the group and what stayed the same."
           ],
           "learningTargets": [
             "I can explain why some states welcomed or made use of different religious and ethnic groups, while others pushed groups out or limited them, using the Ottoman or Mughal Empire and one other case."
           ],
           "successCriteria": [
-            "I can explain, for one state that made room for or made use of a group (the Ottoman Empire or Akbar's Mughal Empire) and one state that pushed out or limited a group (Spain and Portugal, or Qing China), what the state did and what it gained, and one way the two cases were alike."
+            "I can explain, for one state that made room for or made use of a group (the Ottoman Empire or Akbar's Mughal Empire) and one state that pushed out or limited a group (Spain and Portugal, or Qing China), what the state did and what it gained, and, for one of them, what changed for the group and what stayed the same."
           ]
         },
         "checkpoint-two-response": {
@@ -6409,7 +6409,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "07",
           "module": "Evidence Lab",
           "label": "Module 07, Evidence Lab",
-          "prompt": "Make one claim about who could belong or who could rise in an empire between 1450 and 1750. Then, for EACH of your two cards: (1) say what kind of source it is, who made it, and when, (2) give one detail you can see and explain how it supports your claim, and (3) name one thing the source cannot tell you.",
+          "prompt": "Make one claim about who could belong, who could rise, or who was squeezed in an empire between 1450 and 1750. Then, for EACH of your two cards: (1) say what kind of source it is, who made it, and when, (2) give one detail you can see and explain how it supports your claim, and (3) name one thing the source cannot tell you.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -6444,7 +6444,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "skills": [
             "Continuity and Change"
           ],
-          "skillRaw": "Continuity & Change",
+          "skillRaw": "Continuity and Change",
           "skillFrom": "reading q-skill badge",
           "terms": [],
           "criteria": [],
@@ -6460,7 +6460,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "skills": [
             "Claims and Evidence"
           ],
-          "skillRaw": "Claims & Evidence in Sources",
+          "skillRaw": "Claims and Evidence in Sources",
           "skillFrom": "reading q-skill badge",
           "terms": [],
           "criteria": [],

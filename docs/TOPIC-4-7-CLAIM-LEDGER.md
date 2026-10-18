@@ -195,8 +195,24 @@ Commons; looked at; and read against the catalogue record. See the header of
 | In France, families could buy certain high offices, such as a judge's seat in the Parlement of Paris, and some of those offices brought noble rank to the family | RC Skill Builder | Britannica, "noblesse de robe": offices "became venal"; in the 1640s and 1650s the crown "granted detailed charters of nobility to judicial officials," the sovereign courts such as the Parlement of Paris at the summit. A 1664 survey: about 3,700 of 50,000 offices ennobled at the first degree, others after two generations (Futura-Sciences, citing it). "Some of those offices" is the narrow form. | NARROWED |
 | Montagu was an English noblewoman whose husband was Britain's ambassador to the Ottoman Empire; she wrote from Adrianople in 1717; letters published 1763 | LD Primary Source | Standard; Wikipedia, "Turkish Embassy Letters" (published 1763 after her death). | VERIFIED |
 | The women she described were most of them wealthy | LD Primary Source intro and question 3 | Her letters describe visits to the households of high officials (the grand vizier's wife; the kahya's wife, Fatima); her own text says "those ladies that are rich." She also describes a public bath with women of many ranks, so "most of them" is the narrow form. | NARROWED |
+| Some sipahi families held on to their timars; the timar system was not abolished until 1831 | F10 5; DR 05; LD lecture 4 | Standard (abolished by Mahmud II in 1831; İnalcık). Added in review pass 1. | VERIFIED |
 | Free Black militias served in New Spain | BR | Standard (milicias de pardos y morenos; Ben Vinson, *Bearing Arms for His Majesty*, 2001). | VERIFIED |
 
 ## Review findings
 
 Each finding from each independent reviewer, with its disposition: fixed, or rejected with a reason.
+
+### Pass 1, reviewer 1 (page truth, readability, CED, ownership), 9 findings
+
+No CED alignment or story-map ownership defect found.
+
+1. **Checkpoint 2 offers sipahis but nothing says what they kept.** Supported. Fixed: the First & 10, lecture card 4 and the deep reading now say some families held on to their timars and the system was not abolished until 1831, though the sipahis no longer led the army (row added below).
+2. **"&amp;" printed literally in the reading's skill tags and question badges.** Supported (double escape). Fixed: "Continuity and Change," "Claims and Evidence in Sources."
+3. **"Three classes of women" when the slide's own text shows two.** Supported. Fixed: slide 10 is "A wealthy household, and the enslaved woman in it," the placard asks "Who has a say?", the notes ask for the woman with the most and least say, and the deep reading says "a wealthy woman and an enslaved woman in one room."
+4. **The map key printed the answer to the map question's "stayed the same."** Supported. Fixed: "The map shows where the ladder changed. It does not show what stayed the same."
+5. **BeInTheRoom tradeoff reads backward ("makes the ranking by birth harder").** Supported. Fixed: "harder to challenge."
+6. **Checkpoint 1 asked for a comparison, not continuity and change.** Supported (the CED's reasoning process is Continuity and Change; the old lesson's drift to comparison was a known conflict). Fixed: the prompt, Success Criterion 1 and the focus list ask, for one case, what changed for the group and what stayed the same.
+7. **The Evidence Lab direction left out the Versailles card's category.** Supported. Fixed: "who could belong, who could rise, or who was squeezed" in the intro, task, prompt and slide 25.
+8. **The Skill Builder's worked sentence answers the Ottoman half of First & 10 question 3.** Partly supported: the finished sentence was copyable. Fixed: the last step is now a sentence frame; the labeled support and modify steps stay, as the skill is modeled on them.
+9. **Slide layout.** Supported. Fixed: the balance medallions read "Who belongs" and "Face the king"; slide 13's third row is shortened to two lines; slide 15 drops the 1682 marker that crossed the 1722 label (1682 stays in the notes and on slide 16); slides 10 and 14 set the painting to the left of its frame so the placard no longer covers the figures.
+

@@ -361,7 +361,7 @@ const scenarios = [
     ],
     decisions: [
       D('record', 'Classify the petitioner', 'Which evidence should count most in the official record?', [
-        O('lineage', 'Go by family records', 'Use church records of ancestry and birthplace as the deciding category.', 'Clerks and established elites get a simple rule that is easy to repeat.', 'Records are incomplete, and ancestry decides a person\'s future no matter how they live.', 'An orderly record makes the ranking by birth harder.'),
+        O('lineage', 'Go by family records', 'Use church records of ancestry and birthplace as the deciding category.', 'Clerks and established elites get a simple rule that is easy to repeat.', 'Records are incomplete, and ancestry decides a person\'s future no matter how they live.', 'An orderly record makes the ranking by birth harder to challenge.'),
         O('context', 'Weigh family, status and reputation together', 'Consider ancestry alongside freedom, property, work, witnesses and her standing in the parish.', 'The ruling better fits her real life and the evidence.', 'Judges\' choices will favor people with money and powerful friends.', 'Flexibility lets some people move up without treating people equally.'),
         O('legal', 'Record only freedom and residence', 'Leave casta labels out of this business ruling.', 'Free residents face fewer barriers because of ancestry.', 'Elite institutions may resist, and prejudice continues outside the court record.', 'Changing an official category is faster than changing society.')
       ]),
