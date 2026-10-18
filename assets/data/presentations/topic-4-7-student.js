@@ -197,8 +197,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "frame-letterbox",
       "eyebrow": "Who Belongs · Ottoman Women, by Class · Istanbul, about 1720 to 1737",
-      "title": "Who has a say? A wealthy household, and the enslaved woman in it.",
-      "subtitle": "A wealthy mother receives visitors of her own class after a birth. At the lower left, the museum says, an enslaved woman makes sherbet for the guests.",
+      "title": "Who has a say in this household?",
+      "subtitle": "A wealthy mother receives visitors after a birth. At the lower left, the museum says, an enslaved woman makes sherbet for the guests.",
       "kc": "KC-4.3.I.B",
       "template": {
         "visual": {
