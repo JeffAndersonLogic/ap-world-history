@@ -237,3 +237,7 @@ Both primary sources were checked letter for letter against the original texts a
 15. **Slide 1 notes list pictures not on any slide.** Supported. Fixed: Busbecq's portrait and Martin's Versailles are named as on the lesson page.
 16. **"Rulers decided who moved where" is a sole cause.** Supported (creoles rose through wealth; England's nobles limited the crown). Fixed: "conquest, new wealth and stronger rulers decided who moved where" (slides 21 and 27).
 
+
+### Pass 2 (interrupted and resumed)
+
+Both pass 2 reviewers stopped on a usage limit on 2026-10-18 (resets 9am UTC) and were resumed, not relaunched, after the reset, under the build-topic rule.
