@@ -78,8 +78,9 @@ new content, they are the unit's big statements, gathered for the argument:
    Most people in 1750, as in 1450, were farmers. A 4.8 answer that is all ships and silver forgets
    most of the world's people.
 3. **"Traditional peasant agriculture increased and changed in nature."** Old work did not vanish; it
-   grew and changed. Peasants and artisans did the same kind of work, more of it, for buyers farther
-   away. That is a change and a continuity in one sentence.
+   grew and changed. That clause is about farming; for cloth and silk the evidence is Topic 4.5's
+   KC-4.2.II.A, peasant and artisan labor that "continued and intensified" (review pass 2). Either
+   way it is a change and a continuity in one sentence.
 4. **"Shaping and being shaped."** Empires did not only change the peoples they ruled; the peoples
    changed the empires. Spain's colonies had to invent new categories for the mixed society that grew
    up in them, and the Chinese merchants of Manila were the reason the city worked.
@@ -198,8 +199,8 @@ more. The demand for labor intensified, and it was met in three ways.
 
 **Fourth, what it did to society: the changes.**
 - **A society built on slavery.** In September 1647 an Englishman named Richard Ligon landed on
-  Barbados, a small English island in the Caribbean. He found that planters there had only just begun to
-  make sugar, with cane plants brought from Brazil. He lived on a sugar plantation that his companion Thomas Modyford had bought a half share of, helped run it, and stayed three
+  Barbados, a small English island in the Caribbean. He found that sugar-making was still new there: planters had been making
+  sugar for only a few years, with cane plants brought from Brazil. He lived on a sugar plantation that his companion Thomas Modyford had bought a half share of, helped run it, and stayed three
   years. In the book he published in 1657 he wrote that "the Island is divided into three sorts of men,
   viz. Masters, Servants, and slaves." The servants were mostly poor people from Britain and Ireland who
   worked for a set number of years; "the slaves and their posterity," he wrote, were "subject to their

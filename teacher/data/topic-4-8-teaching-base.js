@@ -256,7 +256,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'KC-4.3.III.ii: economic disputes led to rivalries and conflict between states. Retrieval from 4.5.',
           'Diu, 1509: a fleet of Mamluk Egypt and the sultan of Gujarat fought the Portuguese off Diu and lost. Tondibi, 1591: Ahmad al-Mansur\'s army crossed the Sahara and defeated Songhai; gold and the salt trade were a large part of the reason (3.1 told the battle, 4.5 the motive). Ambon, 1623: VOC officials executed ten English company men, nine Japanese soldiers in VOC service and a Portuguese man, accusing them of a plot; it was an execution, not a battle. The Anglo-Dutch Wars: 1652 to 1654, 1665 to 1667 and 1672 to 1674, largely over trade and shipping.',
-          'The picture: the Dutch flagship Gouden Leeuw at the Battle of Texel in 1673, in the third Anglo-Dutch War. This version, in Het Scheepvaartmuseum, Amsterdam, is a copy of Willem van de Velde the Younger\'s painting of 1687, probably made in his studio (verified for 4.5).'
+          'The picture: the Gouden Leeuw, the flagship of Cornelis Tromp, commander of the Dutch third squadron (Royal Museums Greenwich), at the Battle of Texel in 1673, in the third Anglo-Dutch War. This version, in Het Scheepvaartmuseum, Amsterdam, is a copy of Willem van de Velde the Younger\'s painting of 1687, probably made in his studio (verified for 4.5).'
         ],
         ask: 'What was each fight over?',
         listenFor: 'Control of the spice trade and the Indian Ocean; West Africa\'s gold and salt; the spice islands; trade and shipping.',
@@ -311,7 +311,7 @@ window.BEHISTORICAL_TEACHING = {
         place: 'Barbados',
         date: '1647 to 1679',
         rows: [
-          { label: 'Sugar', text: 'Planters had **only just begun** to make it in 1647, with plants from Brazil.' },
+          { label: 'Sugar', text: 'Sugar-making was **still new** in 1647, with plants from Brazil.' },
           { label: 'Workers', text: 'Indentured servants from Britain and Ireland, and **enslaved Africans**.' },
           { label: 'Wealth', text: 'One planter grew rich from 300 pounds, "all by this plant of **Sugar**."' },
           { label: '1679', text: 'About **37,700** enslaved people and about **20,000** white settlers.' }
@@ -321,7 +321,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'Richard Ligon, an English royalist, sailed in June 1647 and landed on Barbados in September 1647. He found that "the great work of Sugar-making, was but newly practised," with plants from "Fernamlock," Pernambuco in Brazil. He lived on, and helped run, a sugar plantation that his traveling companion Thomas Modyford had bought a half share of (Ligon\'s own account: "Colonel Modiford was to pay for the Moity of this plantation"), and stayed about three years; he wrote his book in a London debtors\' prison (his dedication is dated 12 July 1653) and published it in 1657.',
+          'Richard Ligon, an English royalist, sailed in June 1647 and landed on Barbados in September 1647. He found that "the great work of Sugar-making, was but newly practised," though "many Sugar-works" were already "set up, and at work"; with plants from "Fernamlock," Pernambuco in Brazil. He lived on, and helped run, a sugar plantation that his traveling companion Thomas Modyford had bought a half share of (Ligon\'s own account: "Colonel Modiford was to pay for the Moity of this plantation"), and stayed about three years; he wrote his book in a London debtors\' prison (his dedication is dated 12 July 1653) and published it in 1657.',
           'Servants: most were poor people from England, Scotland and Ireland bound to work for a set number of years, many to pay for their voyage. Historians (Russell Menard) show that servants and enslaved Africans arrived together through the 1640s and 1650s; the island did not switch overnight.',
           'Wealth: Ligon wrote that James Drax began with "a stock not exceeding 300 l. sterling" and raised a fortune, "all by this plant of Sugar." Drax is the planter Ligon saw living "like a Prince."',
           'The 1679 census, sent to London in 1680: about 37,700 enslaved Africans; about 20,000 white settlers (Economic History Society; Richard Dunn, Sugar and Slaves). The Council of Trade doubted parts of the count, so say "about."',
@@ -407,7 +407,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'KC-4.2 begins with a continuity: "the world\'s productive systems continued to be heavily centered on agriculture." Most people in 1750, as in 1450, grew food. And KC-4.2.II says peasant agriculture "increased and changed in nature": old work, more of it.',
+          'KC-4.2 begins with a continuity: "the world\'s productive systems continued to be heavily centered on agriculture." Most people in 1750, as in 1450, grew food. For cloth and silk the CED\'s words are Topic 4.5\'s KC-4.2.II.A: peasant and artisan labor "continued and intensified in many regions as the demand for food and consumer goods increased": old work, more of it. (KC-4.2.II\'s "traditional peasant agriculture increased and changed in nature" is about farming; the silk families\' mulberry trees and silkworms are its closest case here.)',
           'China: weaving on a draw loom, from the Pictures of Tilling and Weaving (Yuzhi Gengzhi tu), designed by the court painter Jiao Bingzhen and printed in 1696 with poems by the Kangxi emperor (Metropolitan Museum of Art). Peasant families raised silkworms and wove silk; some of it went to Manila for American silver.',
           'India: a painted cotton bed cover (palampore), early 1700s, made in or near Madras (Chennai) for buyers overseas (Met 15.101).',
           'Holland: Nicolaes Maes, The Spinner, about 1655 (Rijksmuseum SK-A-246). Merchants paid families in the countryside to spin and weave at home.',

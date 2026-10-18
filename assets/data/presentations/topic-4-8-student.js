@@ -36,7 +36,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "visual": {
           "url": "../assets/images/topics/4-4/sugar-works-du-tertre-1667.jpg",
-          "alt": "Engraving of a Caribbean sugar works: an animal-driven mill under a roof, a boiling house with kettles, a drying shed, palms and workers carrying cane",
+          "alt": "Engraving of a Caribbean sugar works: a mill turned by animals under an open timber frame, a roofed boiling house where workers tend kettles over furnaces, workers carrying cane, domed huts of the enslaved workers, and palms",
           "credit": "Sugar works in the French Antilles, engraved by Sébastien Leclerc for Jean-Baptiste Du Tertre, Paris, 1667 · Public domain",
           "ratio": 1.588,
           "fit": "contain",
@@ -250,7 +250,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "rows": [
           {
             "label": "Sugar",
-            "text": "Planters had **only just begun** to make it in 1647, with plants from Brazil."
+            "text": "Sugar-making was **still new** in 1647, with plants from Brazil."
           },
           {
             "label": "Workers",
