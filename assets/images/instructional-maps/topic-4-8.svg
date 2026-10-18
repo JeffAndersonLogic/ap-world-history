@@ -112,8 +112,8 @@
     <text class="placenote halo" x="1126.7" y="406.9" text-anchor="end">cotton weavers</text>
     <line class="leader" x1="1335.6" y1="327.8" x2="1335.6" y2="301.8"/>
     <circle class="city" cx="1335.6" cy="327.8" r="10"/>
-    <text class="place halo" x="1211.6" y="275.8" text-anchor="start">Jiangnan</text>
-    <text class="placenote halo" x="1211.6" y="297.8" text-anchor="start">silk families pay taxes in silver</text>
+    <text class="place halo" x="1187.6" y="275.8" text-anchor="start">Jiangnan</text>
+    <text class="placenote halo" x="1187.6" y="297.8" text-anchor="start">silk families need silver for taxes</text>
     <line class="leader" x1="1337.8" y1="418.9" x2="1337.8" y2="392.9"/>
     <circle class="city" cx="1337.8" cy="418.9" r="10"/>
     <text class="place halo" x="1333.8" y="366.9" text-anchor="start">Manila</text>

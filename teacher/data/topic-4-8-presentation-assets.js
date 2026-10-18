@@ -48,7 +48,7 @@ const PALAMPORE={url:IMG+'4-5/palampore-india-early-1700s.jpg',alt:'A large pain
 const SPINNER={url:IMG+'4-5/spinner-maes-c1655.jpg',alt:'Oil painting of an old woman in a Dutch house, seated at a spinning wheel beside a table with a red cloth, a reel hanging on the wall behind her',credit:'Nicolaes Maes, The Spinner, about 1655 · Rijksmuseum · Public domain',ratio:0.883,position:'55% 50%'};
 const CASTA={url:IMG+'4-7/casta-rodriguez-juarez-c1715.jpg',alt:'A painting of a family of three: a man in a white shirt and brown cloak on the right, a woman in a white embroidered dress and head cloth in the middle, and a boy holding a basket on the left, with an inscription at the top right',credit:'Juan Rodríguez Juárez, From a Mestizo and an Indian Woman, a Coyote, about 1715 to 1720 · Hispanic Society of America · Public domain',ratio:1.424};
 const setTemplate=(phase,add)=>{const s=by(phase);if(s)s.template=Object.assign({},s.template||{},add);return s;};
-setTemplate('question',{visual:SUGAR});
+setTemplate('question',{visual:Object.assign({},SUGAR,{tagPos:'bl'})});
 setTemplate('rivals',{visual:TEXEL,caption:'The Battle of Texel, 1673, in the third Anglo-Dutch War'});
 setTemplate('casta',{visual:Object.assign({},CASTA,{fit:'contain',tagPos:'bl'})});
 setTemplate('africa',{visual:CANOES,caption:'Canoes at Elmina and Manfroe, Gold Coast, printed 1732'});
@@ -56,5 +56,5 @@ const same=by('samework');
 if(same&&same.template&&Array.isArray(same.template.panels)){
   [LOOM,PALAMPORE,SPINNER].forEach((v,i)=>{if(same.template.panels[i])same.template.panels[i].visual=v;});
 }
-setTemplate('close',{visual:POTOSI});
+setTemplate('close',{visual:Object.assign({},POTOSI,{tagPos:'bl'})});
 })();

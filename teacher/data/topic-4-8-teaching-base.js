@@ -135,9 +135,9 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'question', kind: 'frame-subtitle',
-      title: 'Between 1450 and 1750, how did the new global economy change who worked, who ruled, and how families lived, and how much stayed the same?',
-      subtitle: 'A sugar works in the French Caribbean, engraved for a French missionary\'s history of the islands, printed in 1667.',
+      phase: 'question', kind: 'frame-letterbox', eyebrow: 'The Question',
+      title: 'How did the new global economy change people\'s lives?',
+      subtitle: 'Who worked, who ruled, how families lived, and what stayed the same?',
       notes: {
         minutes: 1,
         land: [
@@ -617,9 +617,9 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'close', kind: 'frame-subtitle',
-      title: 'Follow the trade to the people. It changed the most where it needed workers by force.',
-      subtitle: 'Next: by 1750 the oceans were joined and states were stronger than ever. Who do those states belong to?',
+      phase: 'close', kind: 'frame-letterbox', eyebrow: 'The Answer',
+      title: 'Follow the trade to the people.',
+      subtitle: 'It changed the most where it needed workers by force. Next: by 1750 states were stronger than ever. Who do they belong to?',
       notes: {
         minutes: 2,
         land: [

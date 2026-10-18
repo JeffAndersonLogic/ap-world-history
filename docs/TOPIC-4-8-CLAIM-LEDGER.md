@@ -103,6 +103,47 @@ N; **CV** Canvas text; **Story** the story draft.
 | The thesis: the new global economy changed social structures most where it needed new workers by force, and least where old ways of working could produce more | Story §3, §4 | An argument, shown as one defensible thesis students may argue against, never as the answer. Consistent with the CED's KC-4.2 and KC-4.2.II and with the evidence above. China's commercialization (silver taxes) is named as a change inside Afro-Eurasia so the thesis does not read as "nothing changed in Asia". | VERIFIED |
 | By 1750 the oceans were joined and states were stronger than ever | Story §3 (hand-off) | The approved story map's hand-off line. "Stronger than ever" is a framing of KC-4.3 and Unit 4's centralizing states; to be read by the reviewer. | VERIFIED |
 
+### Pictures: every caption and credit
+
+Every picture is a real object already verified for an earlier Unit 4 topic; each row cites the
+ledger row where it was checked against its holder's record, and the 4.8 wording is held to it.
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| Sugar works in the French Antilles, engraved by Sébastien Leclerc for Jean-Baptiste Du Tertre (Paris, 1667); its numbered key names the mill, furnaces and kettles, buildings, and the huts of the enslaved workers | Deck 3 and notes; RC Evidence Lab card 2; RC stableImages; unit hub card | 4.4 ledger and the 4.4 Evidence Lab card (BnF; Commons "Habitation sucrerie aux Antilles, 1667"). | VERIFIED |
+| The Cerro de Potosí, woodcut in Cieza de León, *Crónica del Perú* (Seville, 1553) | Deck 26 and notes; RC Evidence Lab card 1 | 4.4 ledger (FC 23; "the first European picture" narrowed there; 4.8 makes no "first" claim). The Commons filename says 1552; the first edition is Seville, 1553. | VERIFIED |
+| Fishing canoes at Elmina, and canoes carrying enslaved people to ships at Manfroe, from Barbot's account, Churchill's *Collection of Voyages*, vol. 5 (London, 1732) | Deck 14 and notes; RC Evidence Lab card 3 | 4.4 ledger (FC 28, Slavery Images plate IX). | VERIFIED |
+| The Gouden Leeuw at the Battle of Texel, 1673; Het Scheepvaartmuseum's version is a copy of Willem van de Velde the Younger's 1687 painting, probably made in his studio | Deck 8 and notes | 4.5 lesson card and ledger. Alt text written from the picture itself. | VERIFIED |
+| Casta painting, Juan Rodríguez Juárez, about 1715 to 1720, Hispanic Society of America; label "D Mestizo y d India produce Coyote" | Deck 13 and notes; RC Evidence Lab card 4 | 4.7 ledger (dated "about 1715 to 1720" after review). | VERIFIED |
+| Weaving on a draw loom and reeling silk, Yuzhi Gengzhi tu, designs by Jiao Bingzhen, printed 1696 with the Kangxi emperor's poems, Met | Deck 15 and notes (loom); RC Evidence Lab card 5 (reeling, Met 51081) | 4.5 ledger. | VERIFIED |
+| Painted cotton bed cover (palampore), India (Chennai), early 1700s, Met 15.101 / collection 446817 | Deck 15 and notes; RC Evidence Lab card 6 | 4.5 ledger. | VERIFIED |
+| Nicolaes Maes, The Spinner, about 1655, Rijksmuseum SK-A-246 | Deck 15 and notes | 4.5 ledger (about 1650 to 1660). | VERIFIED |
+| Eight-reales coin, Potosí mint, 1651, Münzkabinett Berlin | LD lecture card 1; RC stableImages | 4.5 Evidence Lab card and ledger. | VERIFIED |
+| Frans Post, *Brazilian Landscape* (detail), 1660s, painted in the Netherlands, National Gallery of Ireland: Black workers at a sugar works below the owner's house | LD lecture card 2; RC stableImages | 4.3 ledger (title and the furnace-house correction from 4.3's review). "Below the owner's house" from the 4.3 alt text ("a large house with a lookout on the hill above"). | VERIFIED |
+| Cornelis Decker, weavers at a loom with a spinning wheel and a cradle in the same room, 1659, Rijksmuseum SK-A-2562 | LD lecture card 3; RC stableImages | 4.5 lecture card and ledger. | VERIFIED |
+| No AI-generated picture anywhere in 4.8 | Every surface | No generator key in this environment; every file above is a period object. | VERIFIED |
+
+### Claims added on later surfaces (modules, deep reading, notes)
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| The Ligon Primary Source text: "Some of them who began upon small fortunes are now risen to very great and vast estates. The Island is divided into three sorts of men ... their diet very slight. ... Now for our fortunes ... all by this plant of Sugar." | PS | Ligon 1657, checked word for word against the Gutenberg original-spelling text; spelling and some punctuation modernized (said so in the introduction); the cut inside the Drax sentence ("which he hop'd in few years to accomplish, with what he was then owner of;") shown by an ellipsis; bracketed glosses are the page's own. | VERIFIED |
+| Ligon was a part-owner of a sugar plantation and wrote partly to show English readers how much money sugar could make | PS question 2; DR §03 note; Deck 12 notes | NHC (bought half a plantation with colleagues). His closing pages urge men with capital to go: "they that have industry ... may make it the Ladder to clyme to a high degree, of Wealth and opulencie, in this sweet Negotiation of Sugar" (Ligon 1657). | VERIFIED |
+| Historians test Ligon's "greater care" claim against how many enslaved people the island had to keep buying to replace those who died | DR §03 note | Standard for the Caribbean sugar colonies (high mortality; populations kept up by imports: Dunn, *Sugar and Slaves*). To be read by the history reviewer. | VERIFIED |
+| The English had settled Barbados in the 1620s | DR §03 | NHC: "In 1627 the first Englishmen landed on the uninhabited Caribbean island of Barbados." | VERIFIED |
+| Barbados lies in the eastern Caribbean | DR §03 | Geography. | VERIFIED |
+| Sugar takes enormous numbers of workers: to plant and cut the cane, and to crush and boil it before it spoils | DR §02 | Standard (cut cane must be milled within a day or two); consistent with the 4.4 sugar-works card. | VERIFIED |
+| The slave trade is counted from voyage records gathered by the Slave Voyages project into estimates | DR §02 note | The project's own description (ships' papers, port records, company accounts). | VERIFIED |
+| Indian weavers in Gujarat, Bengal and on the Coromandel coast; the companies bought more cloth every decade | DR §02; RC map key | 4.5 ledger peasant and artisan row ("company purchases growing greatly in the 1600s"). "Every decade" overstated a trend with dips, so the page says "more and more." | NARROWED |
+| Chinese families sold what they made to get the silver they needed for most of their taxes | DR §02; F10 §5 callout | 4.5 ledger Single Whip row and the 4.5 BeSurreal row (a Jiangnan family selling silk for silver, taxes in silver). | VERIFIED |
+| Madeira sugar with enslaved workers before 1492 | DR §02, §03 note | 4.3 ledger. | VERIFIED |
+| Gujarati, Swahili Arab, Omani and Javanese merchants kept the Indian Ocean trading, with Chinese and Armenian merchants in the markets around it; European merchants often joined Asian trade | DR §05; Deck 16, 19 | 4.4 ledger (named merchants) and 4.5 ledger (Gujarati, Chinese and Armenian merchants; Dutch intra-Asian carrying). | VERIFIED |
+| BeSurreal: a farming village inland from the coast of West Central Africa about 1700; men carried off by raiders and taken in wars between kingdoms, captives marched to the coast and traded to European ships | BS | 4.4 and 4.6 ledgers (Ndongo and Matamba, captives from wars; the Atlantic trade from Luanda). A composite scene, not a named village. | VERIFIED |
+| BeSurreal: cassava came from Brazil on Portuguese ships and survives drought and locusts | BS | 4.3 ledger (cassava near the Congo mouth from Brazil; drought and locusts). | VERIFIED |
+| BeSurreal: Portuguese merchants brought Indian cotton cloth to the coast and traded it there for captives | BS | 4.5 ledger (much of the cloth sent to Africa was Indian cotton). For West Central Africa specifically, Asian textiles were a large share of goods imported at Luanda in the 1600s and 1700s (Joseph Miller, *Way of Death*, 1988, as summarized). To be read by the history reviewer. | VERIFIED |
+| Map: ten places and their notes (Barbados "sugar and slavery, from the 1640s"; Brazil "sugar plantations"; Potosí "mit'a draft to the silver mine"; Mexico City "casta ranking"; Gold Coast "Asante rises, 1701"; West Central Africa "more women than men"; Western Europe "spinning and weaving at home"; India "cotton weavers"; Jiangnan "silk families need silver for taxes"; Manila "silk traded for silver") | Map; RC map key; Deck 10 | Each note restates a row above. Narrowed from "pay taxes in silver" to "need silver for taxes" on the map, and to "paid most of their taxes in silver" in the key, to match the Single Whip row. | NARROWED |
+| Canvas overview: "the society of masters and slaves it built on Barbados" | CV | Rows above. | VERIFIED |
+
 ## Review findings
 
 (Filled in during Phase 9.)

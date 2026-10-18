@@ -1060,7 +1060,7 @@ module.exports = [
       { at: [-1.5, 6.5], label: 'Gold Coast', note: 'Asante rises, 1701', side: 'left' },
       { at: [15.0, -8.0], label: 'West Central Africa', note: 'more women than men', side: 'right' },
       { at: [78.0, 20.0], label: 'India', note: 'cotton weavers', side: 'left' },
-      { at: [120.5, 31.0], label: 'Jiangnan', note: 'silk families pay taxes in silver', side: 'right' },
+      { at: [120.5, 31.0], label: 'Jiangnan', note: 'silk families need silver for taxes', side: 'right' },
       { at: [121.0, 14.6], label: 'Manila', note: 'silk traded for silver', side: 'right' }
     ],
     note: 'BeHistorical instructional map. Shaded areas and dots mark regions, not borders, and coastlines are simplified for classroom projection.'

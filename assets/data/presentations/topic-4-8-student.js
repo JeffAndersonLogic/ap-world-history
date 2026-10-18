@@ -29,17 +29,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "frame-subtitle",
-      "eyebrow": "",
-      "title": "Between 1450 and 1750, how did the new global economy change who worked, who ruled, and how families lived, and how much stayed the same?",
-      "subtitle": "A sugar works in the French Caribbean, engraved for a French missionary's history of the islands, printed in 1667.",
+      "kind": "frame-letterbox",
+      "eyebrow": "The Question",
+      "title": "How did the new global economy change people's lives?",
+      "subtitle": "Who worked, who ruled, how families lived, and what stayed the same?",
       "template": {
         "visual": {
           "url": "../assets/images/topics/4-4/sugar-works-du-tertre-1667.jpg",
           "alt": "Engraving of a Caribbean sugar works: an animal-driven mill under a roof, a boiling house with kettles, a drying shed, palms and workers carrying cane",
           "credit": "Sugar works in the French Antilles, engraved by Sébastien Leclerc for Jean-Baptiste Du Tertre, Paris, 1667 · Public domain",
           "ratio": 1.588,
-          "fit": "contain"
+          "fit": "contain",
+          "tagPos": "bl"
         }
       }
     },
@@ -571,17 +572,18 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "frame-subtitle",
-      "eyebrow": "",
-      "title": "Follow the trade to the people. It changed the most where it needed workers by force.",
-      "subtitle": "Next: by 1750 the oceans were joined and states were stronger than ever. Who do those states belong to?",
+      "kind": "frame-letterbox",
+      "eyebrow": "The Answer",
+      "title": "Follow the trade to the people.",
+      "subtitle": "It changed the most where it needed workers by force. Next: by 1750 states were stronger than ever. Who do they belong to?",
       "template": {
         "visual": {
           "url": "../assets/images/topics/4-4/potosi-cieza-1553.jpg",
           "alt": "Woodcut of a tall mountain labeled Cero de Potosí, with tiny figures climbing paths to mine entrances and a town with churches at its foot",
           "credit": "Cerro de Potosí, woodcut in Pedro Cieza de León, Crónica del Perú, Seville, 1553 · Public domain",
           "ratio": 1.362,
-          "fit": "contain"
+          "fit": "contain",
+          "tagPos": "bl"
         }
       }
     }
