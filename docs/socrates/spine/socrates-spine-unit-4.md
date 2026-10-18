@@ -152,7 +152,7 @@ Strong answer checklist: Explain how the maroon community you chose was organize
 
 ## 4.7 Changing Social Hierarchies
 
-**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How European colonialism reorganized social order — creating the casta system in Spanish America, racializing slavery in the Atlantic world, and producing new hierarchies wherever it reached
+**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. Empires decided who could belong and who could rise: new elites appeared, old ones were squeezed, and some groups were welcomed while others were pushed out.
 
 **College Board key concepts.**
 - Unit 4: Learning Objective M (Learning Objective): Explain how social categories, roles, and practices have been maintained or have changed over time.
@@ -160,15 +160,15 @@ Strong answer checklist: Explain how the maroon community you chose was organize
 - KC-4.2.III.A (Social Interactions and Organization): Imperial conquests and widening global economic opportunities contributed to the formation of new political and economic elites, including in China with the transition to the Qing Dynasty and in the Americas with the rise of the Casta system.
 - KC-4.2.III.B (Social Interactions and Organization): The power of existing political and economic elites fluctuated as the elites confronted new challenges to their ability to affect the policies of the increasingly powerful monarchs and leaders. Illustrative examples: Ottoman timars, Russian boyars, European nobility.
 
-**Expected evidence terms.** Ottoman Empire, Jews, millet, Mughal, Qing, Han Chinese, accommodation, suppression, casta, peninsulares, creoles, new elites, timar, Ottoman elites, boyars, Peter the Great, European nobility, centralization, court, state service, elite power.
+**Expected evidence terms.** accommodation, accommodate, Ottoman, Bayezid, Jews, Salonica, protected subjects, jizya, Mughal, Akbar, Rajputs, Aurangzeb, Spain, Portugal, expelled, pushed out, Qing, Han, queue, suppress, restrict, limit, new elites, Manchu, banners, conquest, casta, peninsulares, creoles, silver, old elites, sipahi, timar, tax farm, boyars, Peter the Great, Table of Ranks, nobility, Versailles, Louis XIV, centralize, continuity, change.
 
-**AP skill focus.** Comparison practice.
+**AP skill focus.** Claims and evidence practice.
 
-**Checkpoint 1 prompt.** Give ONE example of a state accommodating an ethnic or religious group and ONE example of a state suppressing or restricting a group. Explain why each policy served the state. Then explain how imperial conquest or global economic opportunity produced a new elite or hierarchy, using the casta system or Qing transition as specific evidence.
-Strong answer checklist: Use one specific accommodation example and explain the state interest behind it. Use one specific suppression/restriction example and explain the state interest behind it. Explain how conquest or economic opportunity produced a new elite or hierarchy.
+**Checkpoint 1 prompt.** Choose ONE state that made room for or made use of a religious or ethnic group (the Ottoman Empire or Akbar's Mughal Empire) and ONE state that pushed out or limited a group (Spain and Portugal, or Qing China). For EACH, explain what the state did and what the state gained from it. Then explain one way the two cases were alike.
+Strong answer checklist: Name one state that made room for or used a group, and one that pushed out or limited a group. For each, say what the state did and what it gained. Say one way the two cases were alike.
 
-**Checkpoint 2 prompt.** Explain how the power of TWO existing elite groups changed as states centralized from c. 1450 to c. 1750. Use two examples such as Ottoman timar holders, Russian boyars, or European nobility. For each, explain what power the elite had before, what the ruler or state changed, and whether the elite lost influence, adapted through state service, or gained a new route to status.
-Strong answer checklist: Use two specific existing-elite examples from different states. Explain the mechanism by which centralization altered elite power. Distinguish loss of independent power from adaptation into court or state service.
+**Checkpoint 2 prompt.** Explain how the top of society changed between 1450 and 1750, and what stayed the same. Use ONE new elite (the Qing banners, or the peninsulares and creoles at the top of the casta system) and explain how conquest or new trade made it. Use ONE old elite (Ottoman sipahis who held timars, Russian boyars, or French nobles) and explain how its power changed as rulers grew stronger, including one thing it lost and one thing it kept. Then explain one thing about the top of society that stayed the same.
+Strong answer checklist: Explain how one new elite was made by conquest or new trade. Explain how one old elite's power changed, with one thing it lost and one thing it kept. Explain one thing about the top of society that stayed the same.
 
 ## 4.8 Continuity and Change in the Period from c. 1450 to c. 1750
 

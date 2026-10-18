@@ -39,122 +39,143 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: New Hierarchies',
+    title: 'First & 10: Who Belongs, Who Rises',
     embedUrl: 'first-and-10-topic-4-7-changing-social-hierarchies-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 4.7 lesson path.'
+    note: 'Read the First & 10, answer the three questions, then return to the 4.7 lesson path.'
   };
 
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'Spanish colonial Americas, casta hierarchy', detail: 'The casta system organized Spanish colonial society from peninsulares (highest, senior office, born in Spain) through creoles, mestizos, and mulattos to indigenous peoples (owed tribute) and enslaved Africans (no legal personhood). Legal status determined who could hold office, who owed tribute, and who could be enslaved. The hierarchy was maintained by colonial courts (audiencias) and the Catholic Church.' },
-      { label: 'Portuguese Brazil, more fluid hierarchy', detail: 'Portuguese Brazil developed a more fluid racial hierarchy than Spanish America, with higher manumission rates and a larger free Black and mixed-race population. This did not eliminate racial hierarchy, enslaved Africans remained at the bottom, but it created a more complex middle layer. The difference reflected different colonial economies: plantation sugar in Brazil created different social pressures than silver mining in Spanish America.' },
-      { label: 'Dutch and British colonial contexts', detail: 'Dutch commercial colonies in Asia (VOC territories) organized hierarchy around commercial function and ethnic origin rather than Spanish-style racial classification. British colonies in North America and the Caribbean hardened racial categories through the 17th century, with slave codes that made Blackness the legal basis for enslaved status, more binary than the casta, less fluid than Portuguese Brazil.' },
-      { label: 'Geographic takeaway', detail: 'Colonial social hierarchies varied by colonial power and regional economy, but all reflected the same underlying logic: race as the legal basis for labor extraction and social control. The Spanish casta was most elaborate; British slave codes were most binary; Portuguese practice was most fluid. Understanding these differences is essential for AP comparison questions about colonial social hierarchies.' }
+      { label: 'Who could belong', detail: 'Spain and Portugal (Jews pushed out or forced to convert, 1492 to 1497), Salonica in the Ottoman Empire (Jewish refugees settle, 1490s), and Mughal India (Akbar ends the jizya in 1564; Aurangzeb brings it back in 1679).' },
+      { label: 'New elites made by conquest and trade', detail: 'Beijing (the Manchu conquest of 1644 and the banners) and Mexico City (the casta ranking, with Spanish-born officials and rich creoles at the top).' },
+      { label: 'Old elites squeezed, or winning', detail: 'Anatolia (Ottoman timars turned into tax farms, sold for life from 1695), Russia (Peter the Great\'s Table of Ranks, 1722), Versailles (Louis XIV\'s court from 1682), and England (nobles and Parliament limit the crown, 1688).' },
+      { label: 'What the map cannot show', detail: 'The shaded areas and dots mark regions, not borders. They show where the ladder changed, not what stayed the same: in every one of these places, a ruler who inherited power still sat at the top.' }
     ]
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg'
+    map:             '../assets/images/instructional-maps/topic-4-7.svg',
+    first10:         '../assets/images/topics/3-2/qianlong-court-dress-1736.jpg',
+    contentDelivery: '../assets/images/topics/4-7/akbar-rajputs-akbarnama-c1590.jpg',
+    beSurreal:       '',
+    skill:           '../assets/images/topics/4-7/busbecq-lorck-1557.jpg',
+    checkpoint1:     '../assets/images/topics/4-7/armenian-wedding-vanmour-c1720.jpg',
+    evidence:        '../assets/images/topics/4-7/banner-horsemanship-1662.jpg',
+    source:          '../assets/images/topics/4-7/lying-in-room-vanmour-c1720.jpg',
+    beInTheRoom:     '../assets/images/topics/4-7/casta-rodriguez-juarez-c1715.jpg',
+    checkpoint2:     '../assets/images/topics/4-7/peter-the-great-russia-c1700.jpg'
+  };
+
+  lesson.classPresentation = {
+    title: 'Class Slides: Who Belongs, Who Rises',
+    desc: 'Follow the story: how empires welcomed some groups and pushed out others, how conquest and trade made new elites in China and Spanish America, how stronger rulers squeezed old nobles, and what stayed the same.',
+    url: 'presentation-topic-4-7-student.html'
   };
 
   lesson.beInTheRoom = {
     url: '../beintheroom/unit-4/the-identity-dossier.html',
-    desc: 'Hear a Mexico City status petition and distinguish elite casta representations from the fluid but unequal interaction of ancestry, wealth, gender, reputation, service, and corporate privilege.'
+    desc: 'Join a court hearing in Mexico City around 1715 and decide how much a widow\'s ancestry, wealth, family, and reputation should count when the colony sorts people into ranks.'
   };
 
   lesson.skillBuilder = {
-    label: 'Comparison practice',
-    title: 'Comparing Colonial Social Hierarchies',
-    intro: 'Comparison for Topic 4.7 requires identifying both similarities and differences between colonial social hierarchies in different regions, and explaining WHY those patterns exist. The casta system in Spanish America, the plantation hierarchy in Portuguese Brazil, the racial slave codes of British colonies, and the commercial hierarchies of Dutch colonial Asia all organized society differently, but all reflected the same underlying logic of race as the basis for labor coercion.',
+    label: 'Claims and evidence practice',
+    title: 'Test a Source\'s Argument',
+    intro: 'A source often makes an argument. Your job is to test it with evidence. A piece of evidence can support the argument (it fits), modify it (it is true, but only for some people, places, or times), or refute it (it shows the argument is wrong). Watch the move on an argument made in the 1550s by Ogier Ghiselin de Busbecq, a European ambassador to the Ottoman sultan.',
     steps: [
-      { label: 'Identify the similarity', text: 'All European colonial social hierarchies shared one fundamental feature: they organized who could be forced to work, who could own property, and who could hold power, based on racial or ethnic ancestry. Whether the Spanish casta, British slave codes, or Dutch commercial hierarchy, all were mechanisms for defining who was subject to coercion and who was not. This common logic is the similarity.' },
-      { label: 'Identify the meaningful difference', text: 'The methods of classification differed significantly. The Spanish casta was elaborately categorical, dozens of named racial combinations, each with specific legal status. British slave codes were binary, free or enslaved, with Blackness as the legal basis for enslaved status. Portuguese Brazil was more fluid, higher manumission rates and a larger free Black population. The difference reflects different colonial economies and legal traditions.' },
-      { label: 'Explain what the comparison reveals', text: 'The comparison reveals that colonial social hierarchy was not a single model but a range of strategies shaped by the specific goals, economies, and legal traditions of each colonial power. Understanding this diversity is essential for AP comparison, avoid treating all colonial hierarchies as identical. The most important insight: racial hierarchy was constructed for economic purposes, not economic inequality constructed from racial hierarchy.' }
+      { label: 'The source\'s argument', text: 'Busbecq wrote home that among the Ottomans "no distinction is attached to birth" and "it is by merit that men rise in the service." In other words: Ottoman officials got their jobs because of their ability, not their families.' },
+      { label: 'Evidence that supports it', text: 'Boys taken from Christian villages by the devshirme were trained for the sultan\'s service, and some rose to be generals and grand viziers, the highest office below the sultan. That fits Busbecq\'s argument.' },
+      { label: 'Evidence that modifies it', text: 'To reach those top jobs, a Christian had to become Muslim, and the sultan himself inherited his throne from his father. So merit opened the sultan\'s service, but not to everyone, and not the throne.' },
+      { label: 'Put it in one sentence', text: 'The devshirme supports Busbecq\'s argument that Ottoman officials rose by merit, but the rule that top officials had to be Muslim, and a throne that passed from father to son, modify it: merit decided who rose in the sultan\'s service, not who could rule.' }
     ],
-    prompt: 'In 3–4 sentences, write a comparison argument: compare the casta system in Spanish colonial America to the social hierarchy in ONE other European colonial context (Portuguese Brazil, British Caribbean, or Dutch colonial Asia). Identify one meaningful similarity, one meaningful difference, and explain what the comparison reveals about how European colonialism organized social order.'
+    prompt: 'Now test the second half of Busbecq\'s argument. He wrote that in Europe "birth is the standard for everything." Here are three pieces of evidence: (1) The great nobles who spent their days at Louis XIV\'s palace at Versailles were nobles because they were born into noble families. (2) Russia\'s Table of Ranks of 1722 let a commoner who rose high enough in the army or the government become a noble. (3) In France, families could buy certain high offices, such as a judge\'s seat in the Parlement of Paris, and some of those offices brought noble rank to the family. In 2 to 3 sentences, say whether each piece of evidence supports, modifies, or refutes Busbecq\'s argument about Europe. Then give your verdict: how true was his claim?',
+    criteria: [
+      'I said whether each piece of evidence supports, modifies, or refutes Busbecq\'s argument.',
+      'I explained why, not just labeled it.',
+      'I gave a verdict on how true his claim about Europe was.'
+    ]
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: Diversity Policy and New Elites',
-      subtitle: 'Checks Learning Targets 1–2 and Success Criteria 1–2.',
-      cardDesc: 'Accommodation/suppression of groups plus new political and economic elites such as the casta hierarchy.',
-      learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
-      successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
-      prompt: 'Give ONE example of a state accommodating an ethnic or religious group and ONE example of a state suppressing or restricting a group. Explain why each policy served the state. Then explain how imperial conquest or global economic opportunity produced a new elite or hierarchy, using the casta system or Qing transition as specific evidence.',
+      title: 'Checkpoint 1: Who Could Belong',
+      subtitle: 'Checks Learning Target 1 and Success Criterion 1.',
+      cardDesc: 'How states made room for or used some religious and ethnic groups, and pushed out or limited others.',
+      learningTargets: [lesson.learningTargets[0].target],
+      successCriteria: [lesson.successCriteria[0].criteria],
+      prompt: 'Choose ONE state that made room for or made use of a religious or ethnic group (the Ottoman Empire or Akbar\'s Mughal Empire) and ONE state that pushed out or limited a group (Spain and Portugal, or Qing China). For EACH, explain what the state did and what the state gained from it. Then explain one way the two cases were alike.',
       responseType: 'Checkpoint 1',
-      terms: ['Ottoman Empire', 'Jews', 'millet', 'Mughal', 'Qing', 'Han Chinese', 'accommodation', 'suppression', 'casta', 'peninsulares', 'creoles', 'new elites'],
-      focus: ['Use one specific accommodation example and explain the state interest behind it.', 'Use one specific suppression/restriction example and explain the state interest behind it.', 'Explain how conquest or economic opportunity produced a new elite or hierarchy.']
+      terms: ['accommodation', 'accommodate', 'Ottoman', 'Bayezid', 'Jews', 'Salonica', 'protected subjects', 'jizya', 'Mughal', 'Akbar', 'Rajputs', 'Aurangzeb', 'Spain', 'Portugal', 'expelled', 'pushed out', 'Qing', 'Han', 'queue', 'suppress', 'restrict', 'limit'],
+      focus: ['Name one state that made room for or used a group, and one that pushed out or limited a group.', 'For each, say what the state did and what it gained.', 'Say one way the two cases were alike.']
     },
     {
-      title: 'Checkpoint 2: Existing Elites Under Centralizing States',
-      subtitle: 'Checks Learning Target 3 and Success Criterion 3.',
-      cardDesc: 'Timar holders, Russian boyars, European nobility, and the changing power of older elites.',
-      learningTargets: [lesson.learningTargets[2].target],
-      successCriteria: [lesson.successCriteria[2].criteria],
-      prompt: 'Explain how the power of TWO existing elite groups changed as states centralized from c. 1450 to c. 1750. Use two examples such as Ottoman timar holders, Russian boyars, or European nobility. For each, explain what power the elite had before, what the ruler or state changed, and whether the elite lost influence, adapted through state service, or gained a new route to status.',
+      title: 'Checkpoint 2: The Top of Society',
+      subtitle: 'Checks Learning Targets 2 and 3 and Success Criteria 2 and 3.',
+      cardDesc: 'One new elite made by conquest or trade, one old elite squeezed by a stronger ruler, and what stayed the same.',
+      learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
+      successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
+      prompt: 'Explain how the top of society changed between 1450 and 1750, and what stayed the same. Use ONE new elite (the Qing banners, or the peninsulares and creoles at the top of the casta system) and explain how conquest or new trade made it. Use ONE old elite (Ottoman sipahis who held timars, Russian boyars, or French nobles) and explain how its power changed as rulers grew stronger, including one thing it lost and one thing it kept. Then explain one thing about the top of society that stayed the same.',
       responseType: 'Checkpoint 2',
-      terms: ['timar', 'Ottoman elites', 'boyars', 'Peter the Great', 'European nobility', 'centralization', 'court', 'state service', 'elite power'],
-      focus: ['Use two specific existing-elite examples from different states.', 'Explain the mechanism by which centralization altered elite power.', 'Distinguish loss of independent power from adaptation into court or state service.']
+      skill: 'Continuity and Change',
+      terms: ['new elites', 'Qing', 'Manchu', 'banners', 'conquest', 'casta', 'peninsulares', 'creoles', 'silver', 'old elites', 'sipahi', 'timar', 'tax farm', 'boyars', 'Peter the Great', 'Table of Ranks', 'nobility', 'Versailles', 'Louis XIV', 'centralize', 'continuity', 'change'],
+      focus: ['Explain how one new elite was made by conquest or new trade.', 'Explain how one old elite\'s power changed, with one thing it lost and one thing it kept.', 'Explain one thing about the top of society that stayed the same.']
     }
   ];
 
   lesson.evidenceLab = {
-    title: 'Evidence Lab: Hierarchy Is Represented, Enforced, and Contested',
-    task: 'Choose TWO cards from different settings and decide which Topic 4.7 process each best shows: accommodation/suppression of diversity, formation of new elites, or changing power of existing elites. Ask whose authority produced the hierarchy and who is missing.',
-    prompt: 'Using two evidence cards from different settings, make one comparison claim about how early modern empires organized social hierarchy. Cite one concrete detail from each source, explain one similarity OR difference, and evaluate one way the source creator or genre may distort the hierarchy it represents.'
+    title: 'Evidence Lab: Who Belongs, Who Rises',
+    task: 'Choose TWO cards. For each, decide what it shows about who could belong in an empire, or who could rise to the top.',
+    prompt: 'Make one claim about who could belong or who could rise in an empire between 1450 and 1750. Then, for EACH of your two cards: (1) say what kind of source it is, who made it, and when, (2) give one detail you can see and explain how it supports your claim, and (3) name one thing the source cannot tell you.'
   };
 
   lesson.images = [
     {
-      title: 'Casta Painting Series — Spanish America',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Casta_painting_all.jpg',
-      caption: 'Colonial classification evidence. Casta paintings systematically categorized family combinations by ancestry and status in Spanish America.',
-      prompt: 'NOTICE the labels, clothing, occupations, and ordering. What can you INFER about elite attempts to make ancestry legible as social rank? What does this genre hide about people who crossed or manipulated categories?'
+      title: 'Akbar Greets Rajput Rulers, About 1590',
+      alt: 'A Mughal painting of a palace courtyard: the emperor at the top left greets a bowing nobleman, while rows of nobles in colored robes and turbans stand along the wall, an elephant waits at the bottom right, and peacocks sit on the roof.',
+      url: '../assets/images/topics/4-7/akbar-rajputs-akbarnama-c1590.jpg',
+      sourceUrl: 'https://collections.vam.ac.uk/item/O9420/',
+      caption: 'A painting from the Akbarnama, the official history of the emperor Akbar\'s reign, which Akbar ordered made. Painted by Miskin, Sarwan, and Madhav about 1590 to 1595, it shows Akbar greeting Rajput rulers and other nobles at his court, probably in 1577. Victoria and Albert Museum.',
+      prompt: 'NOTICE who is being welcomed and how the court is arranged. INFER what Akbar wanted people to think about Hindu Rajput rulers in his empire. Akbar ordered this book made. What might a book made for the emperor leave out?'
     },
     {
-      title: 'Brazilian Sugar Mill and Casa Grande, 1661',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Frans_Post_-_Planta%C3%A7%C3%A3o_de_a%C3%A7%C3%BAcar%2C_1661.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Frans_Post_-_Planta%C3%A7%C3%A3o_de_a%C3%A7%C3%BAcar,_1661.jpg',
-      caption: 'Portuguese Brazil / plantation hierarchy. Frans Post depicts a sugar-producing estate where landownership, race, and coerced labor structured social power.',
-      prompt: 'NOTICE the spatial separation of elite residence, production, land, and workers. What can you INFER about hierarchy built around plantation wealth? How might the painting minimize violence or forced labor?'
+      title: 'An Armenian Wedding in the Ottoman Empire',
+      alt: 'A painting of a wedding procession outdoors by the water: musicians and men in long robes and fur hats lead the way, with a crowd of veiled women in colored robes on the right beside a domed building.',
+      url: '../assets/images/topics/4-7/armenian-wedding-vanmour-c1720.jpg',
+      sourceUrl: 'https://id.rijksmuseum.nl/200108069',
+      caption: 'Jean Baptiste Vanmour, a Flemish-born painter who lived in Istanbul, painted this Armenian Christian wedding procession on its way to church about 1720 to 1737. He painted the peoples of the Ottoman capital for European buyers. Rijksmuseum.',
+      prompt: 'NOTICE where the procession is and how many people take part. INFER what this suggests about how the Ottoman Empire treated Christian communities. What can a painting like this not tell you about the taxes or limits those communities lived with?'
     },
     {
-      title: 'Qianlong Emperor — Qing China',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Qianlong_Emperor.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Qianlong_Emperor.jpg',
-      caption: 'Imperial-elite evidence. A Manchu emperor is presented through Chinese imperial visual traditions while ruling a majority-Han population under Qing institutions.',
-      prompt: 'NOTICE clothing, pose, and symbols of office. What can you INFER about how a conquering minority presented legitimate hierarchy? What written evidence would you need to explain restrictions on Han elites or Banner privileges?'
+      title: 'A Wealthy Woman\'s Room, Istanbul',
+      alt: 'A painting of a richly decorated room: a woman sits up in a red bed under green curtains on the right, women in colored robes sit and stand around her, one carries a tray, coffee brews on a brass brazier in the middle, and a woman at the lower left prepares drinks.',
+      url: '../assets/images/topics/4-7/lying-in-room-vanmour-c1720.jpg',
+      sourceUrl: 'https://id.rijksmuseum.nl/200108034',
+      caption: 'Jean Baptiste Vanmour, "Lying-in Room of a Distinguished Turkish Woman," about 1720 to 1737: a wealthy mother receives visitors after giving birth. The museum describes the woman at the lower left, making sherbet for the guests, as enslaved. A European man could not have entered this room, so Vanmour painted it from what he was told and saw elsewhere. Rijksmuseum.',
+      prompt: 'NOTICE the different women in the room: what each is doing, and where. INFER what this shows about how a woman\'s class shaped her life in the Ottoman Empire. Vanmour could not enter this room. How might that limit what the painting can tell you?'
     },
     {
-      title: 'Suleiman the Magnificent — Ottoman Empire',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Suleiman_the_Magnificent_of_the_Ottoman_Empire.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Suleiman_the_Magnificent_of_the_Ottoman_Empire.jpg',
-      caption: 'Imperial-elite evidence. A portrait of Suleiman represents Ottoman dynastic authority over a multiethnic and multireligious empire that used differentiated legal and communal status.',
-      prompt: 'NOTICE symbols of rulership and elite dress. What can you INFER about dynastic hierarchy? What can a ruler portrait not reveal about the millet system, women of different classes, or the status of religious minorities?'
+      title: 'The Banners Celebrate the Conquest',
+      alt: 'A section of a painted handscroll: a man stands on a galloping horse playing a flute, while rows of men in blue and yellow carry triangular flame-edged banners and others ride horses; a yellow label on the right carries Chinese characters.',
+      url: '../assets/images/topics/4-7/banner-horsemanship-1662.jpg',
+      sourceUrl: 'https://www.metmuseum.org/art/collection/search/65013',
+      caption: 'Part of a handscroll by Nardunbu, a Manchu artist, dated 1662. It records one of the celebrations held when the Shunzhi emperor, the first Qing emperor to rule from Beijing, entered the city after the conquest of 1644: riders from the highest-ranking banners perform stunts on horseback. The yellow label names the commander of the Plain Yellow Banner. Metropolitan Museum of Art.',
+      prompt: 'NOTICE what skills the men are showing, and what they carry. INFER why a Manchu painter would record the banners showing off these skills to celebrate the conquest. What can this painting not tell you about how the banners treated the Han Chinese majority?'
     },
     {
-      title: 'Dutch East India Company charter, 1602 — Commercial Elite Power',
-      label: 'Charter record · Dutch Republic, 20 March 1602',
-      sourceText: [
-        'The States General chartered the VOC with a 21-year monopoly',
-        'on Dutch trade east of the Cape of Good Hope.',
-        'The charter granted powers to build forts, keep troops,',
-        'and make treaties with local rulers.'
-      ],
-      caption: 'A charter that made a new kind of elite possible: authority and wealth derived from a company rather than from birth or a crown.',
-      prompt: 'NOTICE that these powers are granted to directors and shareholders rather than to a noble house. INFER how long-distance trade created status outside older hierarchies. Compare that route to power with the dynastic hierarchy in another card.'
+      title: 'A Casta Painting, About 1715',
+      alt: 'A painting of a family of three: a man in a white shirt and brown cloak on the right, a woman in a white embroidered dress and head cloth in the middle, and a boy holding a basket on the left, with an inscription at the top right.',
+      url: '../assets/images/topics/4-7/casta-rodriguez-juarez-c1715.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Juan_Rodr%C3%ADguez_Ju%C3%A1rez_-_De_Mestizo,_y_de_India_Produce_Coyote_(Castas)_-_LA2122_-_Hispanic_Society_of_America.jpg',
+      caption: 'Juan Rodríguez Juárez, a painter in Mexico City, made one of the earliest known sets of casta paintings about 1715. The label at the top right reads "From a mestizo and an Indian woman comes a coyote." Hispanic Society of America.',
+      prompt: 'NOTICE the label and how each person is dressed and posed. INFER what the painting wants viewers to believe about colonial society. Most of the labels in casta paintings never appear in official records. What does that suggest about using this painting as evidence of how people actually lived?'
+    },
+    {
+      title: 'Versailles in 1722',
+      alt: 'A painting of a huge palace seen from above, with long wings around a courtyard, a town of stone buildings around it, and riders and carriages arriving in the foreground among blocks of stone.',
+      url: '../assets/images/topics/4-7/versailles-martin-1722.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Vue_du_ch%C3%A2teau_de_Versailles_du_c%C3%B4t%C3%A9_de_la_place_d%27armes,_1722.jpg',
+      caption: 'Pierre-Denis Martin, the palace of Versailles from the Place d\'Armes, 1722, the year the young Louis XV brought the court back. Louis XIV had moved his court and government here in 1682. Château de Versailles; photograph CC BY-SA 4.0.',
+      prompt: 'NOTICE the size of the palace and who is arriving. INFER what a palace like this did to the lives of France\'s great nobles. What can a painting of a building not tell you about how much power those nobles kept or lost?'
     }
   ];
 })();

@@ -2099,28 +2099,26 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       unit: 'Unit 4: Transoceanic Interconnections',
       topic: 'Changing Social Hierarchies',
       learningTargets: [
-        { text: 'I can explain how states accommodated the ethnic and religious diversity of their subjects in some cases, and suppressed or restricted certain groups in others.', label: 'Social Interactions and Organization' },
-        { text: 'I can analyze how the casta system organized colonial society in Spanish America, including its major categories (peninsulares, creoles, mestizos, mulattos, indigenous, enslaved Africans) and their legal implications.', label: 'Social Interactions and Organization' },
-        { text: 'I can explain how the power of existing political and economic elites changed as they confronted increasingly powerful monarchs and imperial states.', label: 'Social Interactions and Organization' }
+        { text: 'I can explain why some states welcomed or made use of different religious and ethnic groups, while others pushed groups out or limited them, using the Ottoman or Mughal Empire and one other case.', label: 'Social Interactions and Organization' },
+        { text: 'I can explain how conquest and new trade created new elites, such as the Manchu banners of Qing China and the Spanish-born and creole elites of the casta system in Spanish America.', label: 'Social Interactions and Organization' },
+        { text: 'I can explain how the power of old elites, such as Ottoman timar holders, Russian boyars, or European nobles, rose or fell as rulers grew stronger and centralized power, and what stayed the same.', label: 'Social Interactions and Organization' }
       ],
       successCriteria: [
-        { text: 'I can give examples of states accommodating diversity (e.g., the Ottoman millet system, acceptance of Jews expelled from Spain and Portugal) and of states suppressing it (e.g., restrictive policies against Han Chinese in Qing China).', label: 'Social Interactions and Organization' },
-        { text: 'I can name and describe the major casta categories in Spanish colonial America, explain how casta status was determined, and give one specific example of how casta affected a person\'s legal rights or opportunities.', label: 'Social Interactions and Organization' },
-        { text: 'I can use specific examples such as Ottoman timar holders, Russian boyars, or European nobility to explain how existing elites gained, lost, or renegotiated power as states centralized.', label: 'Social Interactions and Organization' }
+        { text: 'I can explain, for one state that made room for or made use of a group (the Ottoman Empire or Akbar\'s Mughal Empire) and one state that pushed out or limited a group (Spain and Portugal, or Qing China), what the state did and what it gained, and one way the two cases were alike.', label: 'Social Interactions and Organization' },
+        { text: 'I can explain how one of the new elites (the Qing banners, or the peninsulares and creoles at the top of the casta system) was made by conquest or new trade.', label: 'Social Interactions and Organization' },
+        { text: 'I can explain how the power of one old elite (Ottoman sipahis who held timars, Russian boyars, or French nobles) changed as rulers grew stronger, naming one thing it lost and one thing it kept, and one thing about the top of society that stayed the same.', label: 'Social Interactions and Organization' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
-        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.7 module you did not complete in class.', due: 'Tuesday, November 17' }
+      ],
+      homeworkDue: 'Tuesday, November 17',
+      dueDate: '2026-11-17'
     },
     /* 2026-11-16  <-  lesson-4-7-changing-social-hierarchies.js */
     {
@@ -2129,28 +2127,26 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       unit: 'Unit 4: Transoceanic Interconnections',
       topic: 'Changing Social Hierarchies',
       learningTargets: [
-        { text: 'I can explain how states accommodated the ethnic and religious diversity of their subjects in some cases, and suppressed or restricted certain groups in others.', label: 'Social Interactions and Organization' },
-        { text: 'I can analyze how the casta system organized colonial society in Spanish America, including its major categories (peninsulares, creoles, mestizos, mulattos, indigenous, enslaved Africans) and their legal implications.', label: 'Social Interactions and Organization' },
-        { text: 'I can explain how the power of existing political and economic elites changed as they confronted increasingly powerful monarchs and imperial states.', label: 'Social Interactions and Organization' }
+        { text: 'I can explain why some states welcomed or made use of different religious and ethnic groups, while others pushed groups out or limited them, using the Ottoman or Mughal Empire and one other case.', label: 'Social Interactions and Organization' },
+        { text: 'I can explain how conquest and new trade created new elites, such as the Manchu banners of Qing China and the Spanish-born and creole elites of the casta system in Spanish America.', label: 'Social Interactions and Organization' },
+        { text: 'I can explain how the power of old elites, such as Ottoman timar holders, Russian boyars, or European nobles, rose or fell as rulers grew stronger and centralized power, and what stayed the same.', label: 'Social Interactions and Organization' }
       ],
       successCriteria: [
-        { text: 'I can give examples of states accommodating diversity (e.g., the Ottoman millet system, acceptance of Jews expelled from Spain and Portugal) and of states suppressing it (e.g., restrictive policies against Han Chinese in Qing China).', label: 'Social Interactions and Organization' },
-        { text: 'I can name and describe the major casta categories in Spanish colonial America, explain how casta status was determined, and give one specific example of how casta affected a person\'s legal rights or opportunities.', label: 'Social Interactions and Organization' },
-        { text: 'I can use specific examples such as Ottoman timar holders, Russian boyars, or European nobility to explain how existing elites gained, lost, or renegotiated power as states centralized.', label: 'Social Interactions and Organization' }
+        { text: 'I can explain, for one state that made room for or made use of a group (the Ottoman Empire or Akbar\'s Mughal Empire) and one state that pushed out or limited a group (Spain and Portugal, or Qing China), what the state did and what it gained, and one way the two cases were alike.', label: 'Social Interactions and Organization' },
+        { text: 'I can explain how one of the new elites (the Qing banners, or the peninsulares and creoles at the top of the casta system) was made by conquest or new trade.', label: 'Social Interactions and Organization' },
+        { text: 'I can explain how the power of one old elite (Ottoman sipahis who held timars, Russian boyars, or French nobles) changed as rulers grew stronger, naming one thing it lost and one thing it kept, and one thing about the top of society that stayed the same.', label: 'Social Interactions and Organization' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
-        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.7 module you did not complete in class.', due: 'Wednesday, November 18' }
+      ],
+      homeworkDue: 'Wednesday, November 18',
+      dueDate: '2026-11-18'
     },
     /* 2026-11-17  <-  lesson-4-8-continuity-and-change.js */
     {

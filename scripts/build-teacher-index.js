@@ -44,6 +44,7 @@ const TOOLS = [
   { kind: 'lesson', unit: '4', key: '4.4', title: 'Maritime Empires Established', href: 'topic-4-4-os.html' },
   { kind: 'lesson', unit: '4', key: '4.5', title: 'Maritime Empires Maintained and Developed', href: 'topic-4-5-os.html' },
   { kind: 'lesson', unit: '4', key: '4.6', title: 'Internal and External Challenges to State Power', href: 'topic-4-6-os.html' },
+  { kind: 'lesson', unit: '4', key: '4.7', title: 'Changing Social Hierarchies', href: 'topic-4-7-os.html' },
   { kind: 'primary', label: 'Skills Lens', desc: 'Analyze Canvas submissions for completion, response quality, and AP skill trends across the year.', href: 'skills-lens.html' },
   { kind: 'authoring', label: 'Slide Templates', desc: 'Reference every Teaching OS slide template with real Unit 2 examples and copy-ready slide data.', href: 'slide-templates.html' },
   { kind: 'legacy', label: 'Run of Show', desc: 'Standalone pacing pages for Topics 1.4–1.6, before those lessons move into the integrated Teaching OS.', href: ROS_INDEX_OUT },

@@ -273,20 +273,40 @@ module.exports = [
   {
     id: 'topic-4-7',
     code: 'Topic 4.7',
-    title: 'Colonial Social Hierarchies and Coerced Labor, c. 1700',
-    subtitle: 'Topic 4.7 · Changing social hierarchies',
+    title: 'Who Belonged, Who Rose, Who Was Squeezed, 1492 to 1722',
+    subtitle: 'Topic 4.7 \u00b7 Changing social hierarchies',
+    // Rebuilt 2026-10-18 from the 4.7 story: the cases of the three Key
+    // Concepts, colored by kind. The old map ("Colonial Social Hierarchies and
+    // Coerced Labor") showed the mita, plantation slavery and the Middle
+    // Passage, which are 4.4's labor and slavery material, and no 4.7 case.
     highlights: [
-      { zone: 'mexico', label: 'NEW SPAIN', tone: 'gold', legend: 'Casta hierarchy and the mita in Spanish America' },
-      { zone: 'andes', label: 'ANDES', tone: 'bronze', legend: 'Potosí silver worked by mita labor' },
-      { zone: 'brazil', label: 'BRAZIL', tone: 'sand', legend: 'Plantation slavery in Brazil' },
-      { zone: 'caribbean', label: 'CARIBBEAN', tone: 'plum', legend: 'Sugar plantations worked by enslaved Africans' },
-      { zone: 'westAfrica', label: 'WEST AFRICA', tone: 'sage', legend: 'West Africa: societies drained by the slave trade' }
+      { zone: [-5.5, 40, 6.5, 5], tone: 'gold', opacity: 0.85 },
+      { zone: [22.94, 40.64, 3.6, 2.8], tone: 'gold', opacity: 0.85 },
+      { zone: [77.5, 27.5, 6, 5], tone: 'gold', opacity: 0.85 },
+      { zone: [116.4, 39.9, 6, 4.6], tone: 'plum', opacity: 0.85 },
+      { zone: [-99.13, 19.43, 6, 4.4], tone: 'plum', opacity: 0.85 },
+      { zone: [33, 39.5, 6, 3.6], tone: 'sage', opacity: 0.85 },
+      { zone: [37.6, 55.75, 7, 4.6], tone: 'sage', opacity: 0.85 },
+      { zone: [2.13, 48.8, 3.6, 2.8], tone: 'sage', opacity: 0.85 },
+      { zone: [-1.5, 52, 3.4, 3], tone: 'sage', opacity: 0.85 }
     ],
-    flows: [
-      { from: 'westAfrica', to: 'caribbean', label: 'Middle Passage' },
-      { from: 'westAfrica', to: 'brazil', label: 'enslaved Africans to Brazil', bow: -0.16 },
-      { from: 'andes', to: 'westernEurope', label: 'silver to Europe', bow: 0.26 }
-    ]
+    legend: [
+      { kind: 'area', tone: 'gold', text: 'Who could belong: pushed out, welcomed, or used' },
+      { kind: 'area', tone: 'plum', text: 'New elites made by conquest and trade' },
+      { kind: 'area', tone: 'sage', text: 'Old elites squeezed by stronger rulers, or winning' }
+    ],
+    points: [
+      { at: [2.13, 48.8], label: 'Versailles', note: 'court, 1682', side: 'right' },
+      { at: [-1.5, 52.0], label: 'England', note: 'Parliament limits the crown, 1688', side: 'left' },
+      { at: [-4.5, 40.0], label: 'Spain and Portugal', note: 'Jews pushed out, 1492 to 1497', side: 'left' },
+      { at: [37.6, 55.75], label: 'Russia', note: 'Table of Ranks, 1722', side: 'right' },
+      { at: [22.94, 40.64], label: 'Salonica', note: 'refugees settle, 1490s', side: 'left' },
+      { at: [33.0, 39.5], label: 'Anatolia', note: 'timars become tax farms', side: 'right' },
+      { at: [77.5, 27.2], label: 'Mughal India', note: 'jizya ended 1564, back 1679', side: 'right' },
+      { at: [116.4, 39.9], label: 'Beijing', note: 'Qing banners, from 1644', side: 'right' },
+      { at: [-99.13, 19.43], label: 'Mexico City', note: 'casta ranking, 1700s', side: 'left' }
+    ],
+    note: 'BeHistorical instructional map. Shaded areas and dots mark regions, not borders, and coastlines are simplified for classroom projection.'
   },
 
   // ── Unit 5 ──────────────────────────────────────────────────────────────────

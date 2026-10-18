@@ -166,6 +166,15 @@ const DECKS = [
     ],
     student: 'assets/data/presentations/topic-4-6-student.js',
     backUrl: 'lesson-4-6-internal-external-challenges.html#lecture'
+  },
+  {
+    key: '4.7',
+    sources: [
+      'teacher/data/topic-4-7-teaching-base.js',
+      'teacher/data/topic-4-7-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-4-7-student.js',
+    backUrl: 'lesson-4-7-changing-social-hierarchies.html#lecture'
   }
 ];
 
@@ -358,7 +367,8 @@ function buildDeck(deck) {
     '4.3': topic31Slides,
     '4.4': topic31Slides,
     '4.5': topic31Slides,
-    '4.6': topic31Slides
+    '4.6': topic31Slides,
+    '4.7': topic31Slides
   };
   return {
     meta: {
