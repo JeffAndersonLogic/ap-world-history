@@ -105,7 +105,7 @@ window.BEHISTORICAL_TEACHING = {
           'Owns: who could belong (KC-4.3.I.B), new elites (KC-4.2.III.A), old elites squeezed (KC-4.2.III.B).',
           'Bridge only: Atlantic slavery and the labor systems (4.4; enslaved Africans appear only as the bottom of the casta ranking); the devshirme and Versailles as tools of rule (3.2, one clause each, from the elite\'s side); the Janissaries\' guns (3.1); the Fronde and the 1649 Law Code (4.6); which change mattered most (4.8, the hand-off).',
           'Three myths, on slide 20: "the Ottomans gave everyone equal rights"; "casta was a fixed chart everyone was locked into"; "old elites simply disappeared."',
-          'Every picture in this deck is a real object of the period: an Akbarnama painting (about 1590 to 1595), two paintings by Jean Baptiste Vanmour of life in Istanbul (about 1720 to 1737), a Manchu painter\'s handscroll of 1662, a casta painting of about 1715, a portrait of Peter the Great, Busbecq\'s portrait engraved in Constantinople in 1557, and Pierre-Denis Martin\'s Versailles of 1722. The map is the course\'s own. None is AI-generated.'
+          'Every picture in this deck is a real object of the period: an Akbarnama painting (about 1590 to 1595), two paintings by Jean Baptiste Vanmour of life in Istanbul (about 1720 to 1737), a Manchu painter\'s handscroll of 1662, a casta painting of about 1715 to 1720, and a portrait of Peter the Great. Busbecq\'s portrait (engraved in Constantinople, 1557) and Pierre-Denis Martin\'s Versailles of 1722 are on the lesson page. The map is the course\'s own. None is AI-generated.'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
         listenFor: 'The ladder stayed, but empires decided who could belong and who could rise: new elites appeared, old ones were squeezed, and some groups were welcomed while others were pushed out.',
@@ -139,11 +139,11 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'question', kind: 'frame-subtitle',
       title: 'Between 1450 and 1750, who could belong, who could rise, and who got squeezed?',
-      subtitle: 'The emperor Akbar greets Rajput rulers and other nobles at his court, painted for his own history of his reign, about 1590 to 1595.',
+      subtitle: 'A Rajput ruler bows to the emperor Akbar in 1569, painted for Akbar\'s own history of his reign, about 1590 to 1595.',
       notes: {
         minutes: 1,
         land: [
-          'The picture is a real painting: "Akbar greeting Rajput rulers and other nobles at court, probably in 1577," from the Akbarnama, the official history of Akbar\'s reign, by Miskin, Sarwan and Madhav, about 1590 to 1595 (Victoria and Albert Museum, IS.2:114-1896). Akbar commissioned the book, so the painting shows his court as he wanted it seen: Hindu Rajput rulers welcomed among his nobles.',
+          'The picture is a real painting: "Rai Surjan Hada making submission to Akbar," from the Akbarnama, the official history of Akbar\'s reign, designed by Mukund and painted by Shankar, about 1590 to 1595 (Victoria and Albert Museum, IS.2:75-1896). It shows the Rajput ruler of the fortress of Ranthambhor bowing to Akbar in 1569, after a hard-fought siege; the fortress is on the hill behind. Akbar commissioned the book, so the painting shows the event as he wanted it seen. Rajput rulers came into the empire by force and by welcome together: conquered or pressured first, then honored, married into and given high ranks.',
           'The question is the learning objective in a ninth grader\'s words: who could belong (KC-4.3.I.B), who could rise (KC-4.2.III.A), and who got squeezed (KC-4.2.III.B).'
         ],
         ask: 'Predict: why would a Muslim emperor welcome Hindu rulers into his court?',
@@ -220,7 +220,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'On 31 March 1492 Ferdinand and Isabella ordered Jews who would not convert to leave their kingdoms by the end of July (the Alhambra Decree). Estimates of how many left run from about 40,000 to 200,000; more converted and stayed. Say "tens of thousands."',
+          'On 31 March 1492 Ferdinand and Isabella ordered Jews who would not convert to leave their kingdoms by the end of July (the Alhambra Decree). Estimates of how many left run from about 40,000 to 200,000, and estimates of converts vary too; historians disagree about which group was larger (Henry Kamen: about 40,000 left and 50,000 were baptized; Joseph Pérez: most chose to leave). Say "tens of thousands."',
           'Portugal: Manuel I\'s decree of December 1496 ordered Jews out; in 1497 most were baptized by force instead of being allowed to leave.',
           'Bayezid II let the refugees settle; Salonica became a city where Jews were the largest group from the 1500s (Mark Mazower, Salonica, City of Ghosts, 2004). Exiles from Spain set up Istanbul\'s first printing press, which printed books in Hebrew; its first book is dated 1493 in its colophon, a date some scholars question, so the slide gives no year.',
           'Many exiles went elsewhere: to Portugal (until 1497), North Africa and Italy. Do not let students write that "the Jews went to the Ottoman Empire."',
@@ -239,7 +239,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'Protected', text: 'Christians and Jews may practice their religion.' },
           { label: 'Self-run', text: 'Their own leaders run marriage, inheritance, schools and family courts.' },
           { label: 'The price', text: 'They pay a special tax, the jizya.' },
-          { label: 'The limits', key: true, text: 'Weaker word in court; top army and government jobs go to Muslims.' }
+          { label: 'The limits', key: true, text: 'No testimony against a Muslim in court; top army and government jobs go to Muslims.' }
         ]
       },
       notes: {
@@ -272,7 +272,7 @@ window.BEHISTORICAL_TEACHING = {
           'Akbar ruled 1556 to 1605. He abolished the jizya in 1564 (agrees with the 3.2 and 3.4 chapters). In 1562 he married a daughter of Raja Bharmal of Amber; the Rajput rulers of Amber became pillars of the empire. Man Singh of Amber reached a rank (mansab) of 7,000, the highest open to anyone but the emperor\'s sons (Wikipedia, "Man Singh I"; e-PG Pathshala module on the mansabdari system).',
           'Why: Akbar needed Rajput armies and the loyalty of the Hindu majority. This is the CED\'s "utilize the ... military contributions of different ... groups" as much as "accommodate."',
           'Aurangzeb, Akbar\'s great-grandson, reimposed the jizya in 1679 (3.4 chapter). M. Athar Ali\'s study of the Mughal nobility under Aurangzeb found that Hindus remained a large share of the high nobles, partly through Maratha recruits; the slide says only "many."',
-          'The picture is the Akbarnama painting from slide 3, of Akbar receiving Rajput rulers.',
+          'The picture is the Akbarnama painting from slide 3: Rai Surjan Hada of Ranthambhor bowing to Akbar in 1569. Conquest came first; the Rajput houses that submitted were then brought into the Mughal nobility.',
           'Akbar\'s religious ideas (the Ibadat Khana, sulh-i kul) are Topic 3.3\'s setting. Use only his policies toward Hindu groups here.'
         ],
         ask: 'What changed between 1564 and 1679? What stayed the same?',
@@ -294,7 +294,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'The picture: Jean Baptiste Vanmour, "Lying-in Room of a Distinguished Turkish Woman," about 1720 to 1737 (Rijksmuseum SK-A-2003). The museum describes visitors received in the house of a wealthy family after a birth: coffee brewing on the brazier in the middle, "an enslaved woman" on the left already making sherbet, rosewater and perfume for the guests, and cloths on the walls that were the visitors\' gifts. Vanmour painted for European buyers, and a European man would not have entered this room; it is his reconstruction from what he was told and saw elsewhere. Say so.',
-          'Women at the top: Hürrem began as an enslaved woman in the palace and became Suleiman\'s wife; she paid for the Haseki Sultan complex in Istanbul (mosque 1538 to 1539, school, soup kitchen, and a hospital by 1550 to 1551). Kösem was regent for her sons and grandson, 1623 to 1632, 1640 to 1648 and 1648 to 1651, when she was killed.',
+          'Women at the top: Hürrem began as an enslaved woman in the palace and became Suleiman\'s wife; she paid for the Haseki Sultan complex in Istanbul (mosque 1538 to 1539, school, soup kitchen, and a hospital by 1550 to 1551). Kösem was regent for her young son Murad IV (from 1623) and her grandson Mehmed IV (1648 to 1651), and a powerful adviser to her adult son Ibrahim (1640 to 1648); she was killed in 1651.',
           'Women in the towns: in early-1600s Kayseri, women sued and were sued in the Islamic court and took part in about 40 percent of recorded property transactions (Ronald Jennings, 1975). Inheritance law gave a daughter half a son\'s share, and a woman\'s testimony counted for less.',
           'Enslaved women: servants and concubines in wealthy households, with almost no say over their own lives.'
         ],
@@ -316,7 +316,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 3,
         land: [
-          'The Manchus took Beijing in 1644 and founded the Qing. They were a small minority ruling a Han majority; no population figure is given on the slide.',
+          'The Manchus, whose ruler Hong Taiji had named the dynasty Qing in 1636, took Beijing in 1644 and began to rule China. They were a small minority ruling a Han majority; no population figure is given on the slide.',
           'The banners: hereditary military units of Manchus, Mongols and Han who joined the Manchus before 1644. Bannermen received state stipends, grain and housing in garrison quarters, and had legal privileges ordinary Han did not (Wikipedia, "Eight Banners"). In 1648 Manchus were a minority inside the banners themselves.',
           'The queue order of July 1645: adult Han men had to shave the front of the head and wear the Manchu braid, on pain of death. Many top posts in the capital went to two officials, one Manchu and one Han (dual appointment). The Willow Palisade, begun about 1648, restricted Han civilian settlement in the northeast.',
           'Continuity: the Qing kept the Ming\'s civil service examinations, Confucian bureaucracy and law codes, and Han scholars filled most government jobs.',
@@ -359,7 +359,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'KC-4.2.III.A names "the rise of the Casta system" in the Americas. Conquest threw together Spaniards, Indigenous peoples and Africans, and their children; the crown ranked people by birthplace and ancestry.',
+          'KC-4.2.III.A names "the rise of the Casta system" in the Americas. Conquest threw together Spaniards, Indigenous peoples and Africans, and their children; colonial society ranked people by ancestry (the casta categories), and among those counted as Spanish, men born in Spain were favored for the highest offices. In law, Spaniards born in Spain and in the Americas were both "españoles" (Handbook of Texas, "Peninsular").',
           'Peninsulares: the viceroys of New Spain were almost always Spanish-born; Juan de Acuña (viceroy 1722 to 1734), born in Lima, is described as only the second creole to hold the post.',
           'Creoles: silver mines, great estates and trade made many creole families rich, a new economic elite (Topics 4.4 and 4.5 showed the silver and the haciendas). They resented Spanish-born officials who got the highest jobs.',
           'Mixed ancestry: mestizos (Spanish and Indigenous), mulattos (Spanish and African) and other categories. Indigenous people had their own town governments and paid tribute. People of African ancestry: some free, many enslaved. Do not say enslaved people had "no legal personhood": in Spanish law they could marry, go to court and buy their freedom.',
@@ -371,11 +371,11 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'castapainting', kind: 'frame-placard', eyebrow: 'New Elites · A Casta Painting, about 1715',
+      phase: 'castapainting', kind: 'frame-placard', eyebrow: 'New Elites · A Casta Painting, about 1715 to 1720',
       kc: 'KC-4.2.III.A', title: 'A chart on canvas, not a census.',
       template: {
         placard: {
-          tag: 'Mexico · about 1715',
+          tag: 'Mexico · about 1715 to 1720',
           name: 'A chart on canvas',
           text: 'The label reads: **"From a mestizo and an Indian woman comes a coyote."** Most of the many labels in casta paintings never appear in official records.'
         }
@@ -383,10 +383,10 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'The picture: Juan Rodríguez Juárez, "De Mestizo, y de India Produce Coyote," about 1715, oil on canvas (Hispanic Society of America, LA2122, as recorded on Wikimedia Commons). It is from one of the earliest known casta series; Rodríguez Juárez\'s sets of about 1715 are among the first (Ilona Katzew, Casta Painting, 2004). The inscription at top right reads "D MESTIZO Y D INDIA PRODUCE COYOTE": from a mestizo and an Indian woman comes a coyote.',
+          'The picture: Juan Rodríguez Juárez, "De Mestizo, y de India Produce Coyote," oil on canvas (Hispanic Society of America, LA2122), dated about 1715 on Wikimedia Commons and about 1720 by the Hispanic Society, which links it to the viceroy Duke of Linares\'s commission; say "about 1715 to 1720." It is from one of the earliest known casta series; Rodríguez Juárez\'s sets of about 1715 are among the first (Ilona Katzew, Casta Painting, 2004). The inscription at top right reads "D MESTIZO Y D INDIA PRODUCE COYOTE": from a mestizo and an Indian woman comes a coyote.',
           'Read it as a genre. Casta paintings showed colonial society as an orderly chart, sorted and labeled, for elite viewers, many of them in Spain. Most of the long lists of labels in the paintings never appear in official records; the census used only a few categories (Katzew). In daily life, how a person was recorded could change with wealth, occupation, clothing and reputation.',
           'But the chart was not meaningless: ancestry opened or closed doors to office, honor and some guilds and schools, and the top belonged to people whose families came from Spain.',
-          'Most casta series are from later in the 1700s; this one is from about 1715, inside the period.'
+          'Most casta series are from later in the 1700s; this one is from about 1715 to 1720, inside the period.'
         ],
         ask: 'What did the painter, or the buyer, want viewers to believe about colonial society?',
         listenFor: 'That it was orderly: everyone had a label and a place, and the categories could be predicted.',
@@ -437,7 +437,7 @@ window.BEHISTORICAL_TEACHING = {
           'Peter the Great (co-tsar from 1682, sole ruler from 1696, died 1725) replaced the council of boyars with a Senate he appointed in 1711; ordered officials and nobles to shave and wear Western clothing, with a beard tax for those who would not (sources date the decree 1698 or 1705, so no year is given); and required noblemen to serve the state for life. Compulsory noble service ended in 1762.',
           'The Table of Ranks, 1722: fourteen ranks in the army, the civil service and the court. Rank depended on service, and a commoner who reached a high enough rank gained hereditary nobility (the eighth civil grade). The title "boyar" fell out of use.',
           'What nobles kept: their estates and their power over serfs, which the Law Code of 1649 (4.6) had tightened and Peter\'s poll tax tightened further. They lost independence, not privilege.',
-          'The picture: an anonymous Russian portrait of Peter the Great in armor, oil on canvas, painted between 1700 and 1749 (Rijksmuseum SK-A-116).'
+          'The picture: a portrait of Peter the Great in armor, oil on canvas, first half of the 1700s, which the Rijksmuseum (SK-A-116) attributes to an anonymous painter, probably Russian.'
         ],
         ask: 'Name one thing Russian nobles lost and one thing they kept.',
         listenFor: 'Lost: their council, seats by family rank, the freedom not to serve. Kept: estates, serfs, noble status.',
@@ -473,14 +473,14 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Busbecq wanted reforms at home. Keep that in mind.',
       template: {
         quote: 'No distinction is attached to birth among the Turks ... It is by merit that men rise in the service ... with us there is no opening left for merit; birth is the standard for everything.',
-        attribution: { author: 'Ogier Ghiselin de Busbecq, ambassador of the Holy Roman Emperor to Suleiman', work: 'Turkish Letters, translated 1881', year: 'describing 1555' },
+        attribution: { author: 'Ogier Ghiselin de Busbecq, Habsburg ambassador to Suleiman', work: 'Turkish Letters, translated 1881', year: 'describing 1555' },
         notice: 'In your own words: what is Busbecq\'s argument?'
       },
       notes: {
         minutes: 1,
         land: [
           'Charles Thornton Forster and F. H. Blackburne Daniell, trans., The Life and Letters of Ogier Ghiselin de Busbecq (London, 1881), vol. I, pp. 154 to 155, the First Turkish Letter, describing his audience with Suleiman at Amasya in 1555. Public domain. The quotation joins three sentences from one passage, with the cuts shown.',
-          'Busbecq (1522 to 1592), a Flemish noble, was ambassador of the Holy Roman Emperor at the Ottoman court from 1555 to 1562. The Fordham Internet History Sourcebook\'s headnote: "Because Busbecq was trying to bring about reform at home, he did not dwell on the very real problems with Ottoman government."',
+          'Busbecq (1522 to 1592), a Flemish noble, was ambassador at the Ottoman court from 1555 to 1562 for the Habsburg ruler Ferdinand I, then King of the Romans and from 1558 Holy Roman Emperor. The Fordham Internet History Sourcebook\'s headnote: "Because Busbecq was trying to bring about reform at home, he did not dwell on the very real problems with Ottoman government."',
           'His argument has two halves: among the Ottomans men rise by merit, not birth; in Europe, birth decides everything. Slide 19 tests the first half; the Skill Builder tests the second.',
           'Busbecq\'s portrait, engraved by Melchior Lorck in Constantinople in 1557 (Rijksmuseum RP-P-OB-49.753), is on the Skill Builder card.'
         ],
@@ -497,7 +497,7 @@ window.BEHISTORICAL_TEACHING = {
         evidence: [
           { text: 'Boys taken by the devshirme rose to be generals and grand viziers.', source: 'Supports' },
           { text: 'A Christian had to become Muslim to reach the top jobs.', source: 'Modifies' },
-          { text: 'The sultan himself inherited his throne from his father.', source: 'Modifies' }
+          { text: 'The throne stayed in one family: Suleiman inherited it from his father.', source: 'Modifies' }
         ],
         reasoning: 'Merit opened the sultan\'s service, but only to Muslims, and **the throne itself passed by birth**, so the claim is true for officials and not for the whole empire.'
       },
@@ -520,7 +520,7 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'The evidence is more interesting than the myths.',
       template: {
         rows: [
-          { myth: 'The Ottomans gave everyone equal rights.', evidence: 'Christians and Jews were protected but paid the jizya and had a weaker word in court.', source: 'Ottoman law' },
+          { myth: 'The Ottomans gave everyone equal rights.', evidence: 'Christians and Jews were protected but paid the jizya and could not testify against a Muslim in an Islamic court.', source: 'Ottoman law' },
           { myth: 'Casta was a fixed chart everyone was locked into.', evidence: 'How a person was recorded could change with wealth, job and reputation.', source: 'Colonial records' },
           { myth: 'Old elites simply disappeared.', evidence: 'Russian and French nobles kept land and privilege; English nobles gained power.', source: 'Russia, France, England' }
         ]
@@ -539,7 +539,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       retelling: true, phase: 'retell', kind: 'continuity-change', eyebrow: 'The Whole Topic',
       title: 'The ladder stayed. The people on it moved.',
-      footer: 'Rulers decided who moved where.',
+      footer: 'Conquest, new wealth and stronger rulers decided who moved where.',
       template: {
         date: '1450 to 1750',
         before: { tag: 'Before', items: ['Older nobles share power with rulers', 'Older rules decide who belongs'] },
@@ -585,7 +585,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 7,
         land: [
           'The Skill Builder practices the CED\'s suggested skill, 3.D Claims and Evidence in Sources.',
-          'It models the move on the first half of Busbecq\'s argument (slide 19), ends the model with a sentence frame rather than a finished sentence, then gives students the second half, that in Europe "birth is the standard for everything," with three pieces of evidence from this lesson: Louis XIV\'s nobles at Versailles, Peter\'s Table of Ranks, and England\'s nobles in 1688. Students decide whether each supports, modifies or refutes it.',
+          'It models the move on the first half of Busbecq\'s argument (slide 19), ends the model with a sentence frame rather than a finished sentence, then gives students the second half, that in Europe "birth is the standard for everything," with three pieces of evidence: Louis XIV\'s nobles at Versailles, Peter\'s Table of Ranks, and French offices, such as judges\' seats in the Parlement of Paris, that families could buy and that could bring noble rank. Students decide whether each supports, modifies or refutes it.',
           'The Table of Ranks is the strongest modifier: a commoner could become a noble by rank. Russia is in Europe, so it tests Busbecq\'s "with us" directly.'
         ],
         ask: 'After students have written: which piece of evidence did the most damage to Busbecq\'s claim about Europe?',
@@ -615,7 +615,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 7,
         land: [
-          'Six real objects: the Akbarnama painting of Akbar and the Rajputs; Vanmour\'s Armenian wedding and his lying-in room; the banner handscroll dated 1662; the casta painting of about 1715; and Martin\'s Versailles of 1722.',
+          'Six real objects: the Akbarnama painting of Akbar and the Rajputs; Vanmour\'s Armenian wedding and his lying-in room; the banner handscroll dated 1662; the casta painting of about 1715 to 1720; and Martin\'s Versailles of 1722.',
           'Observation before inference: what the source shows, then what it suggests, then what it cannot tell you. Vanmour painted for European buyers and could not have entered a wealthy woman\'s rooms; the casta painting is an elite\'s ideal. Both are good limits to name.',
           'Every picture in the Evidence Lab is a real historical object; none is AI-generated.'
         ],
@@ -641,12 +641,12 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'close', kind: 'frame-subtitle',
-      title: 'The ladder stayed. The people on it moved, and rulers decided who moved where.',
+      title: 'The ladder stayed. The people on it moved, and conquest, new wealth and stronger rulers decided who moved where.',
       subtitle: 'Next: trade, work and the ladder itself all moved between 1450 and 1750. Which change mattered most, and what stayed the same?',
       notes: {
         minutes: 2,
         land: [
-          'The picture: the casta painting by Juan Rodríguez Juárez, about 1715 (Hispanic Society of America): a family sorted and labeled, the ladder painted as if it could never move.',
+          'The picture: the casta painting by Juan Rodríguez Juárez, about 1715 to 1720 (Hispanic Society of America): a family sorted and labeled, the ladder painted as if it could never move.',
           'This sentence answers the learning objective: categories maintained (the ladder) and changed (who stood where), with the cause (rulers who conquered, traded and centralized).',
           'Hand off to 4.8 in the words of the unit story map.'
         ],

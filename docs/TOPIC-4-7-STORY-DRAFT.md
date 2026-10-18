@@ -222,7 +222,7 @@ many women were enslaved, as servants and concubines, with almost no say in thei
 calls this the "varying status of different classes of women," and the key word is varying.
 
 **New elites, part 1: China gets new rulers.** In 1644 the Manchus, a people from north of the Great
-Wall, took Beijing and founded the **Qing dynasty**. They were a small minority ruling a huge Han
+Wall whose rulers had named their dynasty the **Qing** in 1636, took Beijing and began to rule China. They were a small minority ruling a huge Han
 Chinese majority. They kept the Chinese way of governing: the civil service exams, the Confucian
 officials, the old law codes, and Han Chinese scholars still filled most government jobs. But they
 also built a new elite at the top: the **banners**, hereditary military units of Manchus, Mongols and

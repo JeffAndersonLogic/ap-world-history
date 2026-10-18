@@ -1468,7 +1468,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "In 1492, King Ferdinand and Queen Isabella of Spain ordered every Jew in their kingdoms to become Christian or leave by the end of July. Tens of thousands left, and many more converted and stayed. Four years later, Portugal's king ordered the same, and in 1497, instead of letting most of them go, he had them baptized by force. Spain and Portugal wanted one religion in each kingdom, and they suppressed difference by pushing a whole group out or forcing it to convert."
+            "html": "In 1492, King Ferdinand and Queen Isabella of Spain ordered every Jew in their kingdoms to become Christian or leave by the end of July. Tens of thousands left, and many others converted and stayed; historians disagree about which group was larger. Four years later, Portugal's king ordered the same, and in 1497, instead of letting most of them go, he had them baptized by force. Spain and Portugal wanted one religion in each kingdom, and they suppressed difference by pushing a whole group out or forcing it to convert."
           },
           {
             "type": "p",
@@ -1476,7 +1476,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "The Ottoman Empire ruled Muslims, Orthodox and Armenian Christians, and Jews. Under Islamic law, Christians and Jews were protected subjects. They could practice their religion, and their own religious leaders ran their marriages, inheritances, schools, and family courts, and answered to the sultan for their community's taxes and good behavior. This is <span class=\"kt\">accommodation</span>: making room for a group's differences. But it was not equality. Christians and Jews paid a special tax, the <span class=\"kt\">jizya</span>. In an Islamic court, their word counted for less against a Muslim's. They could not freely build new churches or synagogues, and the top jobs in the army and government went to Muslims."
+            "html": "The Ottoman Empire ruled Muslims, Orthodox and Armenian Christians, and Jews. Under Islamic law, Christians and Jews were protected subjects. They could practice their religion, and their own religious leaders ran their marriages, inheritances, schools, and family courts, and answered to the sultan for their community's taxes and good behavior. This is <span class=\"kt\">accommodation</span>: making room for a group's differences. But it was not equality. Christians and Jews paid a special tax, the <span class=\"kt\">jizya</span>. In an Islamic court, they generally could not testify against a Muslim. They could not freely build new churches or synagogues, and the top jobs in the army and government went to Muslims."
           }
         ],
         "callout": {
@@ -1495,7 +1495,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Inside the Ottoman Empire, being a woman meant very different things depending on your class. At the very top, women of the sultan's family held real power. Hürrem began as an enslaved woman in the palace and became the wife of Sultan Suleiman. She paid for a mosque, a school, a soup kitchen, and a hospital in Istanbul. Later, Kösem ran the government as regent for her young sons and grandson, for years at a time between the 1620s and 1651. In the towns, ordinary women owned property and went to the Islamic court to claim their inheritances and debts, and court records show them winning. But the law still treated them unequally: a daughter inherited half what a son did, and a woman's word in court counted for less than a man's. Many other women were enslaved, as servants and concubines, with almost no say over their own lives."
+            "html": "Inside the Ottoman Empire, being a woman meant very different things depending on your class. At the very top, women of the sultan's family held real power. Hürrem began as an enslaved woman in the palace and became the wife of Sultan Suleiman. She paid for a mosque, a school, a soup kitchen, and a hospital in Istanbul. Later, Kösem ran the government as regent for her young son Murad IV and then for her grandson Mehmed IV, and was a powerful adviser to her grown son Ibrahim, between the 1620s and 1651. In the towns, ordinary women owned property and went to the Islamic court to claim their inheritances and debts, and court records show them winning. But the law still treated them unequally: a daughter inherited half what a son did, and a woman's word in court counted for less than a man's. Many other women were enslaved, as servants and concubines, with almost no say over their own lives."
           }
         ],
         "callout": {
@@ -1510,7 +1510,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "In 1644 the Manchus, a people from north of the Great Wall, took Beijing and founded the Qing dynasty. They were a small minority ruling a huge Han Chinese majority. They kept the Chinese way of governing: the civil service exams, the Confucian officials, and the old law codes, and Han Chinese scholars still filled most government jobs. But they also built a new elite at the top: the <span class=\"kt\">banners</span>, hereditary military units of Manchus, Mongols, and Han families who had joined the Manchus early. Bannermen lived in walled quarters inside major cities, were paid by the state, and had legal privileges that ordinary Han Chinese did not."
+            "html": "In 1644 the Manchus, a people from north of the Great Wall whose rulers had already named their dynasty the Qing, took Beijing and began to rule China. They were a small minority ruling a huge Han Chinese majority. They kept the Chinese way of governing: the civil service exams, the Confucian officials, and the old law codes, and Han Chinese scholars still filled most government jobs. But they also built a new elite at the top: the <span class=\"kt\">banners</span>, hereditary military units of Manchus, Mongols, and Han families who had joined the Manchus early. Bannermen lived in walled quarters inside major cities, were paid by the state, and had legal privileges that ordinary Han Chinese did not."
           },
           {
             "type": "p",
@@ -1518,7 +1518,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In Spanish America, conquest had brought together Spaniards, Indigenous peoples, and Africans, and their children. The Spanish ranked people by where they were born and by their ancestry, and this ranking is called the <span class=\"kt\">casta</span> system. At the top were <span class=\"kt\">peninsulares</span>, people born in Spain. The viceroys who ruled for the king were almost always Spanish-born. Next came <span class=\"kt\">creoles</span>, people of Spanish ancestry born in the Americas. Silver mines, huge estates, and trade made many creole families rich, a new economic elite, and they resented the newcomers from Spain who got the highest jobs. Below them were people of mixed ancestry, such as mestizos (Spanish and Indigenous) and mulattos (Spanish and African); Indigenous people, who paid tribute to the crown and had their own town governments; and people of African ancestry, some free and many enslaved."
+            "html": "In Spanish America, conquest had brought together Spaniards, Indigenous peoples, and Africans, and their children. Spanish colonial society ranked people by their ancestry, and this ranking is called the <span class=\"kt\">casta</span> system. Among people counted as Spanish, birthplace mattered too. At the top were <span class=\"kt\">peninsulares</span>, people born in Spain. The viceroys who ruled for the king were almost always Spanish-born. Next came <span class=\"kt\">creoles</span>, people of Spanish ancestry born in the Americas. Silver mines, huge estates, and trade made many creole families rich, a new economic elite, and they resented the newcomers from Spain who got the highest jobs. Below them were people of mixed ancestry, such as mestizos (Spanish and Indigenous) and mulattos (Spanish and African); Indigenous people, who paid tribute to the crown and had their own town governments; and people of African ancestry, some free and many enslaved."
           },
           {
             "type": "p",
@@ -1549,7 +1549,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "People argued about all this at the time. In the 1550s, Ogier Ghiselin de Busbecq, an ambassador sent to the Ottoman sultan by a European emperor, wrote home that among the Turks \"it is by merit that men rise in the service,\" while in Europe \"birth is the standard for everything.\" Was he right? That is a claim you can test with evidence."
+            "html": "People argued about all this at the time. In the 1550s, Ogier Ghiselin de Busbecq, an ambassador sent to the Ottoman sultan by the Habsburg ruler Ferdinand, who later became Holy Roman Emperor, wrote home that among the Turks \"it is by merit that men rise in the service,\" while in Europe \"birth is the standard for everything.\" Was he right? That is a claim you can test with evidence."
           }
         ],
         "callout": {

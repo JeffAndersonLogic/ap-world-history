@@ -32,14 +32,14 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-subtitle",
       "eyebrow": "",
       "title": "Between 1450 and 1750, who could belong, who could rise, and who got squeezed?",
-      "subtitle": "The emperor Akbar greets Rajput rulers and other nobles at his court, painted for his own history of his reign, about 1590 to 1595.",
+      "subtitle": "A Rajput ruler bows to the emperor Akbar in 1569, painted for Akbar's own history of his reign, about 1590 to 1595.",
       "template": {
         "visual": {
-          "url": "../assets/images/topics/4-7/akbar-rajputs-akbarnama-c1590.jpg",
-          "alt": "A Mughal painting of a palace courtyard: the emperor at the top left greets a bowing nobleman, while rows of nobles in colored robes and turbans stand along the wall, an elephant waits at the bottom right, and peacocks sit on the roof",
-          "credit": "Akbar greeting Rajput rulers and nobles, Akbarnama, about 1590 to 1595 · Victoria and Albert Museum · Public domain",
-          "ratio": 0.611,
-          "position": "50% 40%"
+          "url": "../assets/images/topics/4-7/surjan-hada-akbarnama-c1590.jpg",
+          "alt": "A Mughal painting: the emperor sits on a throne under a red and yellow canopy while a man bows low before him, nobles stand around the throne, a crowd with trays and weapons gathers below, and a fortress stands on the rocky hill behind",
+          "credit": "A Rajput ruler submits to Akbar, 1569, Akbarnama, about 1590 to 1595 · Victoria and Albert Museum · Public domain",
+          "ratio": 0.624,
+          "position": "50% 45%"
         }
       }
     },
@@ -146,7 +146,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "The limits",
             "key": true,
-            "text": "Weaker word in court; top army and government jobs go to Muslims."
+            "text": "No testimony against a Muslim in court; top army and government jobs go to Muslims."
           }
         ],
         "visual": {
@@ -185,13 +185,13 @@ window.BEHISTORICAL_STUDENT_DECK = {
           }
         ],
         "visual": {
-          "url": "../assets/images/topics/4-7/akbar-rajputs-akbarnama-c1590.jpg",
-          "alt": "A Mughal painting of a palace courtyard: the emperor at the top left greets a bowing nobleman, while rows of nobles in colored robes and turbans stand along the wall, an elephant waits at the bottom right, and peacocks sit on the roof",
-          "credit": "Akbar greeting Rajput rulers and nobles, Akbarnama, about 1590 to 1595 · Victoria and Albert Museum · Public domain",
-          "ratio": 0.611,
-          "position": "50% 40%"
+          "url": "../assets/images/topics/4-7/surjan-hada-akbarnama-c1590.jpg",
+          "alt": "A Mughal painting: the emperor sits on a throne under a red and yellow canopy while a man bows low before him, nobles stand around the throne, a crowd with trays and weapons gathers below, and a fortress stands on the rocky hill behind",
+          "credit": "A Rajput ruler submits to Akbar, 1569, Akbarnama, about 1590 to 1595 · Victoria and Albert Museum · Public domain",
+          "ratio": 0.624,
+          "position": "50% 45%"
         },
-        "caption": "Akbar greets Rajput rulers, Akbarnama"
+        "caption": "Rai Surjan Hada bows to Akbar, 1569"
       }
     },
     {
@@ -307,19 +307,19 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-placard",
-      "eyebrow": "New Elites · A Casta Painting, about 1715",
+      "eyebrow": "New Elites · A Casta Painting, about 1715 to 1720",
       "title": "A chart on canvas, not a census.",
       "kc": "KC-4.2.III.A",
       "template": {
         "placard": {
-          "tag": "Mexico · about 1715",
+          "tag": "Mexico · about 1715 to 1720",
           "name": "A chart on canvas",
           "text": "The label reads: **\"From a mestizo and an Indian woman comes a coyote.\"** Most of the many labels in casta paintings never appear in official records."
         },
         "visual": {
           "url": "../assets/images/topics/4-7/casta-rodriguez-juarez-c1715.jpg",
           "alt": "A painting of a family of three: a man in a white shirt and brown cloak on the right, a woman in a white embroidered dress and head cloth in the middle, and a boy holding a basket on the left, with an inscription at the top right",
-          "credit": "Juan Rodríguez Juárez, From a Mestizo and an Indian Woman, a Coyote, about 1715 · Hispanic Society of America · Public domain",
+          "credit": "Juan Rodríguez Juárez, From a Mestizo and an Indian Woman, a Coyote, about 1715 to 1720 · Hispanic Society of America · Public domain",
           "ratio": 1.424,
           "fit": "contain",
           "position": "0% 50%",
@@ -466,11 +466,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "visual": {
           "url": "../assets/images/topics/4-7/peter-the-great-russia-c1700.jpg",
           "alt": "A painted half-length portrait of a man with dark curly hair and a small mustache, in a steel breastplate over a yellow coat, with a blue sash, one hand on a staff and the other on his hip",
-          "credit": "Peter the Great, by an unknown Russian painter, 1700 to 1749 · Rijksmuseum · Public domain",
+          "credit": "Peter the Great, probably by a Russian painter, first half of the 1700s · Rijksmuseum · Public domain",
           "ratio": 0.822,
           "position": "50% 30%"
         },
-        "caption": "Peter the Great, painted in Russia, 1700s"
+        "caption": "Peter the Great, first half of the 1700s"
       }
     },
     {
@@ -504,7 +504,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "quote": "No distinction is attached to birth among the Turks ... It is by merit that men rise in the service ... with us there is no opening left for merit; birth is the standard for everything.",
         "attribution": {
-          "author": "Ogier Ghiselin de Busbecq, ambassador of the Holy Roman Emperor to Suleiman",
+          "author": "Ogier Ghiselin de Busbecq, Habsburg ambassador to Suleiman",
           "work": "Turkish Letters, translated 1881",
           "year": "describing 1555"
         },
@@ -528,7 +528,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "source": "Modifies"
           },
           {
-            "text": "The sultan himself inherited his throne from his father.",
+            "text": "The throne stayed in one family: Suleiman inherited it from his father.",
             "source": "Modifies"
           }
         ],
@@ -544,7 +544,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "rows": [
           {
             "myth": "The Ottomans gave everyone equal rights.",
-            "evidence": "Christians and Jews were protected but paid the jizya and had a weaker word in court.",
+            "evidence": "Christians and Jews were protected but paid the jizya and could not testify against a Muslim in an Islamic court.",
             "source": "Ottoman law"
           },
           {
@@ -564,7 +564,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "continuity-change",
       "eyebrow": "The Whole Topic",
       "title": "The ladder stayed. The people on it moved.",
-      "footer": "Rulers decided who moved where.",
+      "footer": "Conquest, new wealth and stronger rulers decided who moved where.",
       "template": {
         "date": "1450 to 1750",
         "before": {
@@ -646,13 +646,13 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "frame-subtitle",
       "eyebrow": "",
-      "title": "The ladder stayed. The people on it moved, and rulers decided who moved where.",
+      "title": "The ladder stayed. The people on it moved, and conquest, new wealth and stronger rulers decided who moved where.",
       "subtitle": "Next: trade, work and the ladder itself all moved between 1450 and 1750. Which change mattered most, and what stayed the same?",
       "template": {
         "visual": {
           "url": "../assets/images/topics/4-7/casta-rodriguez-juarez-c1715.jpg",
           "alt": "A painting of a family of three: a man in a white shirt and brown cloak on the right, a woman in a white embroidered dress and head cloth in the middle, and a boy holding a basket on the left, with an inscription at the top right",
-          "credit": "Juan Rodríguez Juárez, From a Mestizo and an Indian Woman, a Coyote, about 1715 · Hispanic Society of America · Public domain",
+          "credit": "Juan Rodríguez Juárez, From a Mestizo and an Indian Woman, a Coyote, about 1715 to 1720 · Hispanic Society of America · Public domain",
           "ratio": 1.424
         }
       }

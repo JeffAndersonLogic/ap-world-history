@@ -77,7 +77,7 @@ module.exports = {
         {
           heading: 'Spain and Portugal push a group out',
           blocks: [
-            { p: `In January <span class="num">1492</span> Ferdinand and Isabella took Granada, the last Muslim kingdom in Spain. On 31 March they ordered every Jew in their kingdoms who would not become Christian to leave by the end of July. Jews could take their goods, but not gold, silver or coins. Historians' estimates of how many left run from about forty thousand to two hundred thousand; more converted and stayed. Many of the exiles crossed into Portugal.` },
+            { p: `In January <span class="num">1492</span> Ferdinand and Isabella took Granada, the last Muslim kingdom in Spain. On 31 March they ordered every Jew in their kingdoms who would not become Christian to leave by the end of July. Jews could take their goods, but not gold, silver or coins. Historians' estimates of how many left run from about forty thousand to two hundred thousand. Many others converted and stayed, and historians disagree about which group was larger. Many of the exiles crossed into Portugal.` },
             { p: `Four years later, in December <span class="num">1496</span>, Portugal's king Manuel I ordered the Jews out of his kingdom too. In <span class="num">1497</span>, instead of letting most of them leave, he had them baptized by force. In both kingdoms, converts and their descendants were then watched for signs that they still practiced Judaism in secret, and Spanish "purity of blood" rules barred people with Jewish or Muslim ancestors from some offices, colleges and religious orders, even if they were Christians themselves.` },
             { p: `This is what the College Board means by a state that <span class="kt">suppressed</span> diversity. Spain and Portugal did not want different religions living side by side under the crown; they wanted one, and they were willing to lose thousands of skilled subjects to get it.` }
           ]
@@ -92,7 +92,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that the Ottomans gave everyone equal rights. Christians and Jews paid a special tax, the <b>jizya</b>; in an Islamic court their word counted for less against a Muslim's; they could not freely build new churches or synagogues; and the top jobs in the army and government went to Muslims. The devshirme of Topic 3.2 took Christian boys, converted them and trained them for the sultan's service, so a Christian family's son could rise to the top only by leaving his family's religion. The arrangement was room for difference, not equality.`
+              html: `Do not write that the Ottomans gave everyone equal rights. Christians and Jews paid a special tax, the <b>jizya</b>; in an Islamic court they generally could not testify against a Muslim; they could not freely build new churches or synagogues; and the top jobs in the army and government went to Muslims. The devshirme of Topic 3.2 took Christian boys, converted them and trained them for the sultan's service, so a Christian family's son could rise to the top only by leaving his family's religion. The arrangement was room for difference, not equality.`
             } }
           ]
         }
@@ -133,7 +133,7 @@ module.exports = {
           heading: 'Ottoman women, by class',
           blocks: [
             { p: `The College Board names "the varying status of different classes of women within the Ottoman Empire." The key word is varying.` },
-            { p: `At the very top, women of the sultan's family held real power. Hürrem began as an enslaved woman in the palace and became the wife of Sultan Suleiman. She paid for a mosque complex in Istanbul, designed by the architect Sinan, with a school, a soup kitchen for the poor and, by <span class="num">1551</span>, a hospital. In the next century Kösem ruled as regent for her young sons and then her grandson, for years at a time between <span class="num">1623</span> and <span class="num">1651</span>, when she was killed in a struggle at the palace.` },
+            { p: `At the very top, women of the sultan's family held real power. Hürrem began as an enslaved woman in the palace and became the wife of Sultan Suleiman. She paid for a mosque complex in Istanbul, designed by the architect Sinan, with a school, a soup kitchen for the poor and, by <span class="num">1551</span>, a hospital. In the next century Kösem ruled as regent for her young son Murad IV and later her grandson Mehmed IV, and was a powerful adviser to her grown son Ibrahim, at times between <span class="num">1623</span> and <span class="num">1651</span>, when she was killed in a struggle at the palace.` },
             { p: `In the towns, ordinary Muslim women owned property and went to the Islamic court to claim inheritances, debts and dowries, and to settle divorces. In one Anatolian city in the early 1600s, women took part in about four in ten of the property transactions recorded in its court. But the law still treated them unequally: a daughter inherited half what a son did, and a woman's word in court counted for less than a man's.` },
             { p: `And many women were enslaved, as servants and concubines in wealthy households, with almost no say over their own lives. In one painting in this lesson, a wealthy mother receives guests in her bedroom while an enslaved woman prepares drinks in the corner: a wealthy woman and an enslaved woman in one room.` }
           ]
@@ -148,7 +148,7 @@ module.exports = {
         ['Akbar', 'Mughal emperor, ruled 1556 to 1605; ended the jizya in 1564 and brought Hindu Rajput princes into his top ranks.'],
         ['Rajputs', 'Hindu warrior kings of northwestern India, many of whom became Mughal commanders and allies.'],
         ['Aurangzeb', 'Mughal emperor, ruled 1658 to 1707; brought back the jizya in 1679.'],
-        ['Regent', 'Someone who rules for a ruler who is too young or unable to rule, as Kösem did for her sons and grandson.']
+        ['Regent', 'Someone who rules for a ruler who is too young or unable to rule, as Kösem did for her son Murad IV and her grandson Mehmed IV.']
       ]
     },
 
@@ -165,7 +165,7 @@ module.exports = {
         {
           heading: 'What the Qing kept',
           blocks: [
-            { p: `The Manchus came from north of the Great Wall. In <span class="num">1644</span>, after rebels had captured Beijing and the last Ming emperor had killed himself, the Manchus took the city and founded the <span class="kt">Qing dynasty</span>.` },
+            { p: `The Manchus came from north of the Great Wall. In <span class="num">1644</span>, after rebels had captured Beijing and the last Ming emperor had killed himself, the Manchus, whose rulers had named their dynasty the <span class="kt">Qing</span> in 1636, took the city and began to rule China.` },
             { p: `They did not try to make China Manchu. They kept the Ming way of governing: the civil service examinations, the Confucian bureaucracy, and the law codes. Han Chinese scholars still passed the exams and filled most government jobs, because no small conquest group could run China any other way. Emperors such as Kangxi presented themselves as model Confucian rulers. That is the continuity.` }
           ]
         },
@@ -188,7 +188,7 @@ module.exports = {
         comparison: `Against <em>the Ottomans</em> in section 01: both empires ruled people unlike their rulers and did not try to make everyone the same. Who was the majority in each, and how did that shape the policy?`
       },
       terms: [
-        ['Qing dynasty', 'The Manchu dynasty that ruled China from 1644 to 1912.'],
+        ['Qing dynasty', 'The Manchu dynasty, named in 1636, that ruled China from 1644 to 1912.'],
         ['Banners', 'Hereditary military units of Manchus, Mongols and early Han allies, paid and privileged by the Qing state.'],
         ['Queue', 'The Manchu hairstyle, shaved forehead and long braid, that Han men had to wear from 1645.'],
         ['Dual appointment', 'The Qing practice of giving many top posts to one Manchu and one Han official together.']
@@ -203,7 +203,7 @@ module.exports = {
       name: 'A New Top in the Americas',
       navLabel: 'Casta',
       dates: '1500s to 1700s &nbsp;·&nbsp; Spanish America',
-      thesis: `Conquest in the Americas threw together Spaniards, Indigenous peoples and Africans, and their children. Spanish colonial society ranked them by birthplace and ancestry, and put a new elite on top. Historians call the ranking the <span class="kt">casta</span> system.`,
+      thesis: `Conquest in the Americas threw together Spaniards, Indigenous peoples and Africans, and their children. Spanish colonial society ranked them by ancestry, which historians call the <span class="kt">casta</span> system, and among people counted as Spanish it favored those born in Spain. Conquest put a new elite on top.`,
       parts: [
         {
           heading: 'The ranking',
@@ -232,7 +232,7 @@ module.exports = {
         comparison: `Against <em>the Qing banners</em> in section 03: both new elites were made by conquest. How was each kept apart from the people below it?`
       },
       terms: [
-        ['Casta', 'The ranking of people in Spanish America by birthplace and ancestry.'],
+        ['Casta', 'The ranking of people in Spanish America by ancestry.'],
         ['Peninsulares', 'People born in Spain, who held the highest offices in Spanish America.'],
         ['Creoles', 'People of Spanish ancestry born in the Americas; often rich, and kept from the very highest offices.'],
         ['Mestizos', 'People of mixed Spanish and Indigenous ancestry.'],

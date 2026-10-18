@@ -57,7 +57,7 @@
   lesson.stableImages = {
     map:             '../assets/images/instructional-maps/topic-4-7.svg',
     first10:         '../assets/images/topics/3-2/qianlong-court-dress-1736.jpg',
-    contentDelivery: '../assets/images/topics/4-7/akbar-rajputs-akbarnama-c1590.jpg',
+    contentDelivery: '../assets/images/topics/4-7/surjan-hada-akbarnama-c1590.jpg',
     beSurreal:       '',
     skill:           '../assets/images/topics/4-7/busbecq-lorck-1557.jpg',
     checkpoint1:     '../assets/images/topics/4-7/armenian-wedding-vanmour-c1720.jpg',
@@ -85,7 +85,7 @@
     steps: [
       { label: 'The source\'s argument', text: 'Busbecq wrote home that among the Ottomans "no distinction is attached to birth" and "it is by merit that men rise in the service." In other words: Ottoman officials got their jobs because of their ability, not their families.' },
       { label: 'Evidence that supports it', text: 'Boys taken from Christian villages by the devshirme were trained for the sultan\'s service, and some rose to be generals and grand viziers, the highest office below the sultan. That fits Busbecq\'s argument.' },
-      { label: 'Evidence that modifies it', text: 'To reach those top jobs, a Christian had to become Muslim, and the sultan himself inherited his throne from his father. So merit opened the sultan\'s service, but not to everyone, and not the throne.' },
+      { label: 'Evidence that modifies it', text: 'To reach those top jobs, a Christian had to become Muslim, and the throne itself stayed in one family: Suleiman had inherited it from his father. So merit opened the sultan\'s service, but not to everyone, and not the throne.' },
       { label: 'Put it in one sentence', text: 'Use this frame for your own answer: "[My evidence] supports / modifies / refutes Busbecq\'s argument because ..." Name the evidence, choose one of the three words, and explain why.' }
     ],
     prompt: 'Now test the second half of Busbecq\'s argument. He wrote that in Europe "birth is the standard for everything." Here are three pieces of evidence: (1) The great nobles who spent their days at Louis XIV\'s palace at Versailles were nobles because they were born into noble families. (2) Russia\'s Table of Ranks of 1722 let a commoner who rose high enough in the army or the government become a noble. (3) In France, families could buy certain high offices, such as a judge\'s seat in the Parlement of Paris, and some of those offices brought noble rank to the family. In 2 to 3 sentences, say whether each piece of evidence supports, modifies, or refutes Busbecq\'s argument about Europe. Then give your verdict: how true was his claim?',
@@ -130,12 +130,12 @@
 
   lesson.images = [
     {
-      title: 'Akbar Greets Rajput Rulers, About 1590',
-      alt: 'A Mughal painting of a palace courtyard: the emperor at the top left greets a bowing nobleman, while rows of nobles in colored robes and turbans stand along the wall, an elephant waits at the bottom right, and peacocks sit on the roof.',
-      url: '../assets/images/topics/4-7/akbar-rajputs-akbarnama-c1590.jpg',
-      sourceUrl: 'https://collections.vam.ac.uk/item/O9420/',
-      caption: 'A painting from the Akbarnama, the official history of the emperor Akbar\'s reign, which Akbar ordered made. Painted by Miskin, Sarwan, and Madhav about 1590 to 1595, it shows Akbar greeting Rajput rulers and other nobles at his court, probably in 1577. Victoria and Albert Museum.',
-      prompt: 'NOTICE who is being welcomed and how the court is arranged. INFER what Akbar wanted people to think about Hindu Rajput rulers in his empire. Akbar ordered this book made. What might a book made for the emperor leave out?'
+      title: 'A Rajput Ruler Submits to Akbar, 1569',
+      alt: 'A Mughal painting: the emperor sits on a throne under a red and yellow canopy while a man bows low before him, nobles stand around the throne, a crowd with trays and weapons gathers below, and a fortress stands on the rocky hill behind.',
+      url: '../assets/images/topics/4-7/surjan-hada-akbarnama-c1590.jpg',
+      sourceUrl: 'https://collections.vam.ac.uk/item/O9608/',
+      caption: 'A painting from the Akbarnama, the official history of the emperor Akbar\'s reign, which Akbar ordered made. Designed by Mukund and painted by Shankar about 1590 to 1595, it shows Rai Surjan Hada, the Rajput ruler of the fortress of Ranthambhor, bowing to Akbar in 1569 after a hard-fought siege. Victoria and Albert Museum.',
+      prompt: 'NOTICE where Akbar sits, what the Rajput ruler is doing, and what is on the hill behind them. INFER how Akbar brought Rajput rulers into his empire: by force, by welcome, or both. Akbar ordered this book made. What might a book made for the emperor leave out?'
     },
     {
       title: 'An Armenian Wedding in the Ottoman Empire',
@@ -166,7 +166,7 @@
       alt: 'A painting of a family of three: a man in a white shirt and brown cloak on the right, a woman in a white embroidered dress and head cloth in the middle, and a boy holding a basket on the left, with an inscription at the top right.',
       url: '../assets/images/topics/4-7/casta-rodriguez-juarez-c1715.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Juan_Rodr%C3%ADguez_Ju%C3%A1rez_-_De_Mestizo,_y_de_India_Produce_Coyote_(Castas)_-_LA2122_-_Hispanic_Society_of_America.jpg',
-      caption: 'Juan Rodríguez Juárez, a painter in Mexico City, made one of the earliest known sets of casta paintings about 1715. The label at the top right reads "From a mestizo and an Indian woman comes a coyote." Hispanic Society of America.',
+      caption: 'Juan Rodríguez Juárez, a painter in Mexico City, made one of the earliest known sets of casta paintings, about 1715 to 1720. The label at the top right reads "From a mestizo and an Indian woman comes a coyote." Hispanic Society of America.',
       prompt: 'NOTICE the label and how each person is dressed and posed. INFER what the painting wants viewers to believe about colonial society. Most of the labels in casta paintings never appear in official records. What does that suggest about using this painting as evidence of how people actually lived?'
     },
     {

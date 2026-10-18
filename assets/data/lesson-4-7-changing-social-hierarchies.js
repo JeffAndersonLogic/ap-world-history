@@ -134,13 +134,13 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "How the Casta Ranking Sorted People",
         bullets: [
-          "In Spanish America, the crown ranked people by where they were born and who their parents were. At the top were **peninsulares**, people born in Spain: the viceroys who ruled for the king were almost always Spanish-born. Next were **creoles**, people of Spanish ancestry born in the Americas, many of them rich from silver mines, huge estates, and trade.",
+          "In Spanish America, colonial society ranked people by their ancestry, the **casta** system, and among people counted as Spanish it favored those born in Spain. At the top were **peninsulares**, people born in Spain: the viceroys who ruled for the king were almost always Spanish-born. Next were **creoles**, people of Spanish ancestry born in the Americas, many of them rich from silver mines, huge estates, and trade.",
           "Below them came people of mixed ancestry, such as mestizos and mulattos; Indigenous people, who had their own town governments and paid tribute to the crown; and people of African ancestry, some free and many enslaved.",
           "In the 1700s, artists painted sets of **casta paintings** that showed every mix of parents as a labeled family, as if society were a neat chart. Most of their many labels never appeared in official records, and how a person was recorded could change with wealth, job, and reputation. But ancestry still opened or closed doors, and the top belonged to people whose families came from Spain."
         ],
         image: {
           title: "A casta painting, about 1715",
-          caption: "Juan Rodríguez Juárez painted one of the earliest known casta series in Mexico, about 1715. The label at the top right says that a mestizo father and an Indian mother produce a \"coyote\" child. Hispanic Society of America.",
+          caption: "Juan Rodríguez Juárez painted one of the earliest known casta series in Mexico, about 1715 to 1720. The label at the top right says that a mestizo father and an Indian mother produce a \"coyote\" child. Hispanic Society of America.",
           url: "../assets/images/topics/4-7/casta-rodriguez-juarez-c1715.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Juan_Rodr%C3%ADguez_Ju%C3%A1rez_-_De_Mestizo,_y_de_India_Produce_Coyote_(Castas)_-_LA2122_-_Hispanic_Society_of_America.jpg"
         }
@@ -154,7 +154,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Peter the Great",
-          caption: "Peter the Great in armor, painted by an unknown Russian artist between 1700 and 1749. Rijksmuseum.",
+          caption: "Peter the Great in armor, probably by a Russian painter, first half of the 1700s. Rijksmuseum.",
           url: "../assets/images/topics/4-7/peter-the-great-russia-c1700.jpg",
           sourceUrl: "https://id.rijksmuseum.nl/200107960"
         }
@@ -192,7 +192,7 @@ window.BEHISTORICAL_LESSON = {
   primarySource: {
     title: "Primary Source: Lady Mary Wortley Montagu on Ottoman Women, 1717",
     intro: "Lady Mary Wortley Montagu was an English noblewoman whose husband was Britain's ambassador to the Ottoman Empire. In 1717, living in Adrianople (today Edirne, in Turkey), she wrote letters home describing the Ottoman women she met, most of them wealthy. This is part of her letter to her sister of April 1, 1717. The letters were first published in 1763, after her death; this text is from the 1906 Everyman edition. Words in brackets are explanations, and \"...\" marks words left out.",
-    text: "'Tis very easy to see they have more liberty than we have. No woman, of what rank soever, being permitted to go into the streets without two muslins [veils]; one that covers her face all but her eyes, and another that hides the whole dress of her head ... there is no distinguishing the great lady from her slave. ... Neither have they much to apprehend [fear] from the resentment of their husbands; those ladies that are rich having all their money in their own hands, which they take with them upon a divorce, with an addition which he is obliged to give them. Upon the whole, I look upon the Turkish women as the only free people in the empire: the very Divan [the sultan's council] pays a respect to them ... They are queens of their slaves, whom the husband has no permission so much as to look upon ...",
+    text: "'Tis very easy to see they have more liberty than we have. No woman, of what rank soever, being permitted to go into the streets without two muslins [veils]; one that covers her face all but her eyes, and another that hides the whole dress of her head ... there is no distinguishing the great lady from her slave. ... This perpetual masquerade [constant disguise] gives them entire liberty of following their inclinations without danger of discovery. ... Neither have they much to apprehend [fear] from the resentment of their husbands; those ladies that are rich having all their money in their own hands, which they take with them upon a divorce, with an addition which he is obliged to give them. Upon the whole, I look upon the Turkish women as the only free people in the empire: the very Divan [the sultan's council] pays a respect to them ... They are queens of their slaves, whom the husband has no permission so much as to look upon ...",
     questions: [
       "What is Montagu's argument about Ottoman women? Quote the words where she states it most directly, then say it in your own words.",
       "Choose ONE piece of evidence from this lesson about Ottoman women (Hürrem or Kösem, women in the town courts, the rules on inheritance and testimony, or enslaved women). Explain whether it supports, modifies, or refutes Montagu's argument, and why.",
@@ -204,7 +204,7 @@ window.BEHISTORICAL_LESSON = {
     title: "BeSurreal: You Left Spain, Summer 1492",
     desc: "You are fifteen, from a Jewish family of cloth merchants in Spain. Since spring, the king and queen's order has been read aloud in the towns: every Jew must become Christian or leave the kingdom by the end of July. The order lets you take your goods, but not gold, silver, or coins.",
     intro: "Your cousin Isaac has decided to be baptized and stay. He keeps his house and his shop. Your family sold what it could, for whatever buyers would pay, and left. After a long and dangerous journey by sea, you have arrived in Salonica, a port city of the Ottoman Empire, where the sultan lets refugees like you settle.",
-    detail: "In Salonica, Jewish families from Spain are setting up their own congregations, speaking Spanish among themselves, and going back to trade. You can pray openly. Your community's leaders run your marriages and settle your disputes, and they answer to the sultan's officials for your community's taxes, including the jizya, a special tax that Christians and Jews pay. You are safe here. But you will never hold a high office in the sultan's government unless you become Muslim.",
+    detail: "In Salonica, Jewish families from Spain are setting up their own congregations, speaking Spanish among themselves, and going back to trade. You can pray openly. Your community's leaders run your marriages and settle your disputes, and they answer to the sultan's officials for your community's taxes, including the jizya, a special tax that Christians and Jews pay. You are safe here. But the highest offices in the sultan's army and government go almost always to Muslims.",
     prompt: "Write a letter to your cousin Isaac, who was baptized and stayed in Spain. Tell him about the journey and your new life in Salonica: what you are allowed to do, what you pay, and what you still cannot do. Then write two sentences you would not dare send: which of you made the better choice, and why?"
   },
 
