@@ -6,6 +6,8 @@ Jeff started this build with "Build 4.8" on 2026-10-18. Topic 4.7 is on `main` (
 this story against the CED source file and the scholarship; the record of what they found is in
 `docs/TOPIC-4-8-CLAIM-LEDGER.md`, under "Review findings".
 
+**Resume here (2026-10-18):** Phases 0 to 8 are built and pushed. Review pass 1 (two reviewers, packet from `capture-topic-for-review.js 4.8`) is running; next, fix and log its findings in the claim ledger, then pass 2. The reading fingerprint has not moved yet (`readings-golden.js` fails by design until it does).
+
 **Taught:** Green Tuesday 2026-11-17, Silver Wednesday 2026-11-18, from Jeff's corrected November
 Canvas calendar (2026-10-14), already in `assets/data/announcements-schedule.js` as date-only
 entries. The Era 3 Study Guide Work Day follows on 2026-11-19 and 2026-11-20, and the Era 3 Exam
