@@ -168,7 +168,7 @@ window.BEHISTORICAL_LESSON = {
     sourceUrl: "../assets/images/instructional-maps/topic-4-7.svg",
     caption: "Nine places where the social ladder changed, sorted into three kinds: who could belong, new elites made by conquest and trade, and old elites squeezed by stronger rulers, or winning.",
     intro: "Use the map to see how far these changes reached. Between 1492 and 1722, states in Europe, Southwest Asia, South Asia, East Asia, and the Americas changed who could belong and who could rise. The colors sort the cases into three kinds; the key says which is which.",
-    prompt: "Find ONE place where a state decided who could belong and ONE place where a new elite rose or an old elite was squeezed. For each, name the state or the group and say what changed. Then explain one thing about the social ladder that stayed the same in both places."
+    prompt: "Find ONE place where a state decided who could belong and ONE place where a new elite rose or an old elite was squeezed. For each, name the state or the group and say what changed."
   },
 
   deepReading: {

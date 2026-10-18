@@ -146,7 +146,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "The limits",
             "key": true,
-            "text": "No testimony against a Muslim in court; top army and government jobs go to Muslims."
+            "text": "Generally no testimony against a Muslim in court; top army and government jobs go to Muslims."
           }
         ],
         "visual": {
@@ -320,7 +320,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "timeline-fortunes",
       "eyebrow": "Old Elites · Rise and Fall",
-      "title": "Old elites' power fluctuated: some fell, and others rose.",
+      "title": "Sipahis and boyars fell; tax farmers and local families rose in their place.",
       "footer": "The lines show direction only, not measured power.",
       "kc": "KC-4.2.III.B",
       "template": {
@@ -534,7 +534,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "rows": [
           {
             "myth": "The Ottomans gave everyone equal rights.",
-            "evidence": "Christians and Jews were protected but paid the jizya and could not testify against a Muslim in an Islamic court.",
+            "evidence": "Christians and Jews were protected but paid the jizya and, under the law, generally could not testify against a Muslim.",
             "source": "Ottoman law"
           },
           {
@@ -561,7 +561,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "tag": "Before",
           "items": [
             "Older nobles share power with rulers",
-            "Older rules decide who belongs"
+            "Every society already ranks people from top to bottom"
           ]
         },
         "after": {

@@ -266,3 +266,13 @@ All seven picture records, the Busbecq quotation and the key dates were checked 
 5. **Slide 8 notes said non-Muslim testimony "counted for less," against the slide's "no testimony."** Supported. Fixed: "generally could not testify against a Muslim in an Islamic court, except in some commercial cases"; the listen-for matches.
 6. **"A group of nobles" invited William of Orange.** Supported (the Immortal Seven: four peers, a bishop and two commoners). Fixed: "seven leading Englishmen, most of them nobles" (First & 10, deep reading).
 7. **The Montagu introduction did not say she revised the letters.** Supported. Fixed: "She later revised her letters into a book, which was circulating in manuscript by 1724 ... so read it as a letter she polished for readers." The quoted wording was confirmed against the manuscript-based edition.
+
+### Pass 3, reviewer 1 (page truth, readability, CED, ownership), 5 findings
+
+No CED alignment or story-map ownership defect found. Both primary sources were checked against their texts and found faithful.
+
+1. **Slides 8 and 20 dropped "generally" from the testimony rule, against the reading, the deep reading and the slide 8 notes.** Supported (the course contradicting itself). Fixed: "Generally no testimony against a Muslim in court" (slide 8) and "under the law, generally could not testify against a Muslim" (slide 20).
+2. **The Skill Builder's date step could not be done as written.** Supported: every piece of evidence is after 1555, so "only shows what came after" left no answer, the step had no place on the checklist, and three labeled pieces and a verdict do not fit in 2 to 3 sentences. Fixed: "all three pieces of evidence come from later, so they test whether his claim stayed true after he wrote," and "4 to 6 sentences." The dates stay (pass 2, reviewer 1, finding 7).
+3. **The retelling slide's "Before" column said "Older rules decide who belongs," which nothing teaches.** Supported. Fixed: "Every society already ranks people from top to bottom," which the reading and the deep reading say.
+4. **The map question asked what stayed the same, which the map's own key says it cannot show, before students read the First & 10.** Supported. Fixed: the last sentence is cut; Continuity and Change is asked in the First & 10, both checkpoints and the slides.
+5. **Slide 15's title said old elites "rose," but the only rising line is tax farmers and local families, who replaced an old elite.** Supported. Fixed: "Sipahis and boyars fell; tax farmers and local families rose in their place." The notes say the slide teaches half of "fluctuated" and slide 17 adds England, where an old elite won.

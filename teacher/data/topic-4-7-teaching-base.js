@@ -239,7 +239,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'Protected', text: 'Christians and Jews may practice their religion.' },
           { label: 'Self-run', text: 'Their own leaders run marriage, inheritance, schools and family courts.' },
           { label: 'The price', text: 'They pay a special tax, the jizya.' },
-          { label: 'The limits', key: true, text: 'No testimony against a Muslim in court; top army and government jobs go to Muslims.' }
+          { label: 'The limits', key: true, text: 'Generally no testimony against a Muslim in court; top army and government jobs go to Muslims.' }
         ]
       },
       notes: {
@@ -383,7 +383,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'fortunes', kind: 'timeline-fortunes', eyebrow: 'Old Elites · Rise and Fall',
-      kc: 'KC-4.2.III.B', title: 'Old elites\' power fluctuated: some fell, and others rose.',
+      kc: 'KC-4.2.III.B', title: 'Sipahis and boyars fell; tax farmers and local families rose in their place.',
       footer: 'The lines show direction only, not measured power.',
       template: {
         range: [1450, 1750], tick: 50,
@@ -396,7 +396,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'The lines are a teaching sketch of direction, not a measurement; the footer says so. Their job is the word "fluctuated" in KC-4.2.III.B.',
+          'The lines are a teaching sketch of direction, not a measurement; the footer says so. They teach half of "fluctuated" in KC-4.2.III.B: old elites fell and other groups rose in their place. Slide 17 adds England, where an old elite won.',
           'Sipahis: a timar was the right to collect the taxes of a piece of land in return for service as a cavalryman; it was not the holder\'s property and was not supposed to pass automatically to his son (Halil İnalcık, The Ottoman Empire: The Classical Age). From the late 1500s, wars needed infantry with guns paid in cash, and the state turned more and more timar land into tax farms; from 1695 it sold them for life (malikane). The Topic 3.2 and 3.4 chapters tell the same move, "from timar-holding cavalry to tax farming and provincial notables."',
           'Tax farmers and powerful provincial families rose with the life-term tax farms (Wikipedia, "Ottoman Old Regime," on the 1695 malikane and provincial influence). Historians no longer call this simply "decline"; the Ottoman state changed shape.',
           'Boyars: the system of precedence by family rank (mestnichestvo) was abolished in 1682; Peter the Great\'s Table of Ranks of 1722 made rank depend on service. Slide 16 tells it.'
@@ -508,7 +508,7 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'The evidence is more interesting than the myths.',
       template: {
         rows: [
-          { myth: 'The Ottomans gave everyone equal rights.', evidence: 'Christians and Jews were protected but paid the jizya and could not testify against a Muslim in an Islamic court.', source: 'Ottoman law' },
+          { myth: 'The Ottomans gave everyone equal rights.', evidence: 'Christians and Jews were protected but paid the jizya and, under the law, generally could not testify against a Muslim.', source: 'Ottoman law' },
           { myth: 'Casta was a fixed chart everyone was locked into.', evidence: 'How a person was recorded could change with wealth, job and reputation.', source: 'Colonial records' },
           { myth: 'Old elites simply disappeared.', evidence: 'Russian and French nobles kept land and privilege; English nobles gained power.', source: 'Russia, France, England' }
         ]
@@ -530,7 +530,7 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Conquest, new wealth and stronger rulers decided who moved where.',
       template: {
         date: '1450 to 1750',
-        before: { tag: 'Before', items: ['Older nobles share power with rulers', 'Older rules decide who belongs'] },
+        before: { tag: 'Before', items: ['Older nobles share power with rulers', 'Every society already ranks people from top to bottom'] },
         after: { tag: 'Changed', items: ['**Who belongs**: welcomed or used, pushed out or limited', '**New elites**: the Qing banners; peninsulares and creoles', '**Old elites squeezed**: sipahis, boyars, French nobles'] },
         continued: { tag: 'Stayed the same', items: ['A ruler who inherits power, on top', 'Privileged nobles beneath', 'Most people at the bottom; a woman\'s place set by her class'] }
       },
@@ -539,7 +539,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'This is the slide the lesson drives toward. Show it, then hide it and have students redraw it from memory, with one case under each change.',
           'The three changes are the three Key Concepts in order, and the continuity is the "maintained" half of the learning objective. The slide carries no single Key Concept band because it spans all three.',
-          'Push for named cases: Ottomans and Jewish refugees, Akbar and the Rajputs, Spain and Portugal, the Qing and the Han; the banners, peninsulares and creoles; sipahis and timars, boyars and the Table of Ranks, Versailles; England, where the old elite won.'
+          'Push for named cases: Ottomans and Jewish refugees, Akbar and the Rajputs, Spain and the Jews it expelled, the Qing and the Han; the banners, peninsulares and creoles; sipahis and timars, boyars and the Table of Ranks, Versailles; England, where the old elite won.'
         ],
         ask: 'Redraw it without looking, with one case under each change.',
         listenFor: 'Stayed: hereditary rulers, privileged nobles, most people at the bottom. Changed: who belongs (Ottomans took in Jews; Spain pushed them out), new elites (the banners), old elites squeezed (the boyars).'
