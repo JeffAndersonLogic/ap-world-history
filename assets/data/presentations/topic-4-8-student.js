@@ -425,7 +425,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "A contrast",
             "key": true,
-            "text": "Andean men were drafted far from home; a Chinese silk family kept working at home."
+            "text": "Andean men were drafted far from home; a weaver in India kept working at home."
           }
         ]
       }
@@ -573,9 +573,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-letterbox",
-      "eyebrow": "The Answer",
-      "title": "Follow the trade to the people.",
-      "subtitle": "It changed the most where it needed workers by force. Next: by 1750 states were stronger than ever. Who do they belong to?",
+      "eyebrow": "The Hand-off",
+      "title": "Next: who do those states belong to?",
+      "subtitle": "By 1750 the oceans were joined and states were stronger than ever. That question is Unit 5.",
       "template": {
         "visual": {
           "url": "../assets/images/topics/4-4/potosi-cieza-1553.jpg",

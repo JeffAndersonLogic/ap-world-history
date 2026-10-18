@@ -159,7 +159,7 @@ window.BEHISTORICAL_LESSON = {
         title: "What Stayed, and How to Argue It",
         bullets: [
           "Most people still farmed. The College Board's own sentence about the period begins with that: production \"continued to be heavily centered on agriculture.\" Spinners, weavers, and silk families did work their grandparents knew, at home and as a family, only more of it, for buyers far away. Rulers who inherited their thrones and nobles with privileges stayed on top, and Asian merchants kept the Indian Ocean trading.",
-          "To argue, connect the evidence. One piece can **lead to** another (sugar demand, then plantations, then a huge slave trade). Two can show **the same pattern** in two places (spinners in Holland and weavers in India, both doing old work in larger amounts). And two can make **a contrast** (an Andean man drafted far from home to the mine, and a Chinese silk family still working at home).",
+          "To argue, connect the evidence. One piece can **lead to** another (sugar demand, then plantations, then a huge slave trade). Two can show **the same pattern** in two places (spinners in Holland and weavers in India, both doing old work in larger amounts). And two can make **a contrast** (an Andean man drafted far from home to the mine, and a weaver in India still working at home).",
           "A strong thesis names a change, a continuity, and the reason: where did the new trade change social structures most, where did it change them least, and why?"
         ],
         image: {

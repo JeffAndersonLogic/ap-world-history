@@ -1777,7 +1777,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "And the ladder stayed. Almost everywhere, a ruler who inherited the throne still sat at the top, and old nobles kept most of their privileges even when stronger kings squeezed them (Topic 4.7). Older forms of slavery went on inside Africa, and Asian merchants kept the Indian Ocean trading (Topic 4.4). So the <span class=\"kt\">continuity</span> is large: most people, most work, and most rulers looked much as they had in 1450. The <span class=\"kt\">change</span> was deepest in the places the new economy reached with force."
+            "html": "And the ladder stayed. Almost everywhere, a ruler who inherited the throne still sat at the top, and old nobles kept most of their privileges even when stronger kings squeezed them (Topic 4.7). Older forms of slavery went on inside Africa, and Asian merchants kept the Indian Ocean trading (Topic 4.4). So the <span class=\"kt\">continuity</span> is large: most people, most work, and most rulers looked much as they had in 1450. The <span class=\"kt\">change</span> was real too, but it was not the same everywhere. Where was it deepest, and why? That is the question your thesis answers."
           }
         ],
         "callout": {
@@ -1792,7 +1792,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "A list of evidence is not an argument. An argument explains how the pieces of evidence relate to each other. Three relationships do most of the work. The first is <strong>this led to that</strong>: Europe's demand for sugar led to plantations in Barbados and Brazil, which led to a huge slave trade, which left villages in West Central Africa with more women than men. One chain links three continents. The second is <strong>the same pattern, two places</strong>: a spinner in Holland and a weaver in India both did old work in larger amounts, for buyers far away. The third is <strong>a contrast</strong>: an Andean man drafted through the mit’a was taken far from his village to dig silver, while a Chinese silk family kept working at home as a peasant family, even though it now needed silver for most of its taxes. A contrast shows where the new trade changed people's lives most and where it changed them least, and that is what lets an answer say how much changed."
+            "html": "A list of evidence is not an argument. An argument explains how the pieces of evidence relate to each other. Three relationships do most of the work. The first is <strong>this led to that</strong>: Europe's demand for sugar led to plantations in Barbados and Brazil, which led to a huge slave trade, which left villages in West Central Africa with more women than men. One chain links three continents. The second is <strong>the same pattern, two places</strong>: a spinner in Holland and a weaver in India both did old work in larger amounts, for buyers far away. The third is <strong>a contrast</strong>: an Andean man drafted through the mit’a was taken far from his village to dig silver, while a weaver in India kept working at home, making more cloth than before for buyers overseas. A contrast shows where the new trade changed people's lives most and where it changed them least, and that is what lets an answer say how much changed."
           },
           {
             "type": "p",

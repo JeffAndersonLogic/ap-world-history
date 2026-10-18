@@ -267,7 +267,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that everything changed after 1492, or that nothing did. Both are wrong. The change was deepest in the places the new economy reached with force, and smallest where old ways of working could simply produce more.`
+              html: `Do not write that everything changed after 1492, or that nothing did. Both are wrong. The change was deep in some places and slight in others, and a strong answer says which, and why.`
             } }
           ]
         },
@@ -275,7 +275,7 @@ module.exports = {
           heading: 'Three ways evidence relates',
           blocks: [
             { p: `A list of evidence is not an argument. An argument explains how the pieces of evidence relate to each other, and three relationships do most of the work. The first is <b>this led to that</b>: Europe's demand for sugar led to plantations in Barbados and Brazil, which led to a huge slave trade, which left villages in West Central Africa with more women than men. One chain of causes links three continents.` },
-            { p: `The second is <b>the same pattern, two places</b>: a spinner in Holland and a weaver in India both did old work in larger amounts, for buyers far away. The third is <b>a contrast</b>: an Andean man drafted through the mit’a was taken far from his village to dig silver, while a Chinese silk family kept working at home as a peasant family, even though it now needed silver for most of its taxes. A contrast shows where the new trade changed people's lives most and where least, and that is what lets an answer say how much changed.` },
+            { p: `The second is <b>the same pattern, two places</b>: a spinner in Holland and a weaver in India both did old work in larger amounts, for buyers far away. The third is <b>a contrast</b>: an Andean man drafted through the mit’a was taken far from his village to dig silver, while a weaver in India kept working at home, making more cloth than before for buyers overseas. A contrast shows where the new trade changed people's lives most and where least, and that is what lets an answer say how much changed.` },
             { p: `Put the evidence together, and you can write a <span class="kt">thesis</span>, a claim that answers the question and that you can defend. A strong thesis names a change, a continuity, and the reason for the difference: where did the new trade change social structures most, where did it change them least, and why? You can argue more than one thesis from the same evidence. What you cannot do is leave out the evidence on the other side.` }
           ]
         }

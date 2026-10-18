@@ -447,14 +447,14 @@ window.BEHISTORICAL_TEACHING = {
         steps: [
           { label: 'Led to', text: 'Sugar demand led to plantations, which led to a huge slave trade.' },
           { label: 'Same pattern', text: 'Spinners in Holland and weavers in India both did old work in larger amounts.' },
-          { label: 'A contrast', key: true, text: 'Andean men were drafted far from home; a Chinese silk family kept working at home.' }
+          { label: 'A contrast', key: true, text: 'Andean men were drafted far from home; a weaver in India kept working at home.' }
         ]
       },
       notes: {
         minutes: 2,
         land: [
           'The suggested skill, 6.C: use historical reasoning to explain relationships among pieces of historical evidence. A list of evidence is not an argument; the relationships are.',
-          'Led to: a chain of causes, often across places (causation inside a continuity-and-change answer). Same pattern: two places showing one development (it corroborates). A contrast: a change beside a continuity, which is what lets an answer say how much changed. The slide\'s contrast (the mit\'a against the silk family) is the Skill Builder\'s model; the Skill Builder\'s practice set does not reuse it.',
+          'Led to: a chain of causes, often across places (causation inside a continuity-and-change answer). Same pattern: two places showing one development (it corroborates). A contrast: a change beside a continuity, which is what lets an answer say how much changed. The slide\'s contrast (the mit\'a against an Indian weaver) is the Skill Builder\'s model; the weaver is not in the Skill Builder\'s practice set, so no practice pair has a printed answer.',
           'Push students to say the relationship word aloud: "This led to that because ..."; "This shows the same pattern as that, because both ..."; "This changed, but that stayed, because ..."'
         ],
         ask: 'Which relationship is most useful for saying how much changed?',
@@ -546,7 +546,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'The CED\'s sample activity (p. 77) starts here: which reasoning process best organizes an answer to "how economic developments led to changes in social structures, 1450 to 1750"? The CED\'s own reasoning process for 4.8 is Continuity and Change, with causes inside it: the "because" is causation, and "changed ... while ... stayed the same" is continuity and change.',
           'The weak thesis names no development, no place, no continuity and no reason. It fits any three centuries in history, which is why it earns no credit.',
-          'This is a frame, not a model answer. Have pairs fill it in aloud with a case they choose, then trade with a partner and say what would make the partner\'s stronger (the CED\'s peer revision). The First & 10 shows one finished thesis; students may argue a different one.'
+          'This is a frame, not a model answer. Have pairs fill it in aloud with a case they choose, then trade with a partner and say what would make the partner\'s stronger (the CED\'s peer revision). The First & 10 gives the criteria for a strong thesis and prints no finished one; neither does any student page.'
         ],
         ask: 'Why is "changed society a lot" not a thesis?',
         listenFor: 'It does not say which economic development, which social structure, where, what stayed the same, or why.'
@@ -561,7 +561,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 8,
         land: [
           'The Skill Builder practices the CED\'s suggested skill, 6.C Argumentation: explain relationships among pieces of historical evidence.',
-          'It models the three relationships (the sugar chain, spinners in Holland and weavers in India, the mit\'a against the Chinese silk family), ends with a sentence frame rather than a finished sentence, then gives students a new set: Potosí and the mit\'a, China\'s silver taxes, the casta ranking, and West Central Africa\'s villages. Students explain how two of them relate, and name the relationship.',
+          'It models the three relationships (the sugar chain, spinners in Holland and weavers in India, the mit\'a against an Indian weaver), ends with a sentence frame rather than a finished sentence, then gives students a new set: Potosí and the mit\'a, China\'s silver taxes, the casta ranking, and West Central Africa\'s villages. Students explain how two of them relate, and name the relationship.',
           'Strong answers: Potosí\'s silver, dug by drafted Andean men, flowed to China because of its silver taxes ("led to"); the casta ranking and the slave trade\'s effect on African villages both show the trade reshaping who held what place ("same pattern", if the student says exactly what they share); the mit\'a took men far from home while West Central African women did more of the farming at home ("a contrast" or "same pattern", defended either way).'
         ],
         ask: 'After students have written: which relationship was hardest to explain, and why?',
@@ -617,17 +617,17 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'close', kind: 'frame-letterbox', eyebrow: 'The Answer',
-      title: 'Follow the trade to the people.',
-      subtitle: 'It changed the most where it needed workers by force. Next: by 1750 states were stronger than ever. Who do they belong to?',
+      phase: 'close', kind: 'frame-letterbox', eyebrow: 'The Hand-off',
+      title: 'Next: who do those states belong to?',
+      subtitle: 'By 1750 the oceans were joined and states were stronger than ever. That question is Unit 5.',
       notes: {
         minutes: 2,
         land: [
           'The picture: Potosí, the silver mountain, in a woodcut from Pedro Cieza de León\'s Crónica del Perú (Seville, 1553), with tiny figures climbing to the mine entrances (verified for 4.4). One mountain, a world economy, and the people sent to dig it.',
-          'This sentence answers the learning objective: economic developments affected social structures most where the new economy needed workers by force, and least where old ways of working could produce more.',
+          'The slide projects only the hand-off, on purpose: the answer to the learning objective is each student\'s own thesis (Checkpoint 2), so no finished thesis is projected. Ask for answers aloud; the listen-for line below is one defensible thesis for the teacher only.',
           'Hand off to Unit 5 in the words of the unit story map, and no further: Unit 5 is not taught here.'
         ],
-        ask: 'What is the one-sentence answer to Topic 4.8?',
+        ask: 'Before the hand-off: say your thesis for Topic 4.8 in one sentence.',
         listenFor: 'Economic change reached into everyday social life: who worked, who ruled, and how families lived. It changed the most where it needed workers by force, while most people still farmed and kings and nobles stayed on top.'
       }
     }

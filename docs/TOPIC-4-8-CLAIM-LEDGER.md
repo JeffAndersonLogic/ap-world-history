@@ -178,3 +178,11 @@ Both Ligon passages and every picture credit were checked against the 1657 text 
 
 16 findings; 14 supported and fixed, one rejected (the shared "verbatim" label, logged as adjacent), one rejected in part (the Afonso translation, now credited). Pass 2 runs on a fresh packet with fresh reviewers.
 
+### Pass 2, reviewer 1 (page truth, readability, CED, ownership), 3 findings
+
+No CED, chronology, source or caption defect found.
+
+1. **The Skill Builder's worked contrast answers practice items (1) and (2).** Supported (the mit'a against the Chinese silk family, who needed silver for taxes, is the Potosí and Ming silver-tax pair). Fixed: the contrast model is now the mit'a against a weaver in India working at home for buyers overseas, on the Skill Builder, the First & 10 section 6, lecture card 3, slide 17 and the deep reading; the weaver is in no practice item. The slide 17 and 22 notes now say so truthfully.
+2. **Slide 26 projected a finished thesis.** Supported (the student deck carries the slide, and Checkpoint 2 asks for the thesis). Fixed: slide 26 is the hand-off only ("Next: who do those states belong to?"); the thesis stays in the teacher's listen-for line. The First & 10 section 5 sentence that stated half the thesis ("the change was deepest in the places the new economy reached with force") and the matching deep-reading note now ask the question instead of answering it.
+3. **Two teacher notes were false.** Supported. Fixed: slide 17's note (see 1) and slide 21's, which now says the First & 10 gives the criteria for a thesis and prints none.
+
