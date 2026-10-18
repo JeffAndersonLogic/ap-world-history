@@ -335,11 +335,10 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'ligon', kind: 'source-quote', eyebrow: 'A Witness · Barbados, 1647 to 1650',
       kc: 'KC-4.2', title: 'An Englishman describes the island.',
-      footer: 'Ligon helped run a sugar plantation. Keep that in mind.',
       template: {
-        quote: 'The Island is divided into three sorts of men, viz. [namely] Masters, Servants, and slaves. The slaves and their posterity [children and descendants], being subject to their Masters for ever ... the servants, who are theirs but for five years.',
+        quote: 'The Island is divided into three sorts of men, viz. [namely] Masters, Servants, and slaves. The slaves and their posterity [descendants], being subject to their Masters for ever ... the servants, who are theirs but for five years.',
         attribution: { author: 'Richard Ligon, on Barbados 1647 to 1650', work: 'A True and Exact History of the Island of Barbados', year: 'London, 1657, spelling modernized' },
-        notice: 'Which difference lasted forever?'
+        notice: 'Ligon helped run a sugar plantation. Which difference lasted forever?'
       },
       notes: {
         minutes: 2,
