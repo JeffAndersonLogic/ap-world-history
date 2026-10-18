@@ -276,3 +276,17 @@ No CED alignment or story-map ownership defect found. Both primary sources were 
 3. **The retelling slide's "Before" column said "Older rules decide who belongs," which nothing teaches.** Supported. Fixed: "Every society already ranks people from top to bottom," which the reading and the deep reading say.
 4. **The map question asked what stayed the same, which the map's own key says it cannot show, before students read the First & 10.** Supported. Fixed: the last sentence is cut; Continuity and Change is asked in the First & 10, both checkpoints and the slides.
 5. **Slide 15's title said old elites "rose," but the only rising line is tax farmers and local families, who replaced an old elite.** Supported. Fixed: "Sipahis and boyars fell; tax farmers and local families rose in their place." The notes say the slide teaches half of "fluctuated" and slide 17 adds England, where an old elite won.
+
+### Pass 3, reviewer 2 (history against outside sources), 5 findings
+
+The Busbecq and Montagu texts, every picture record and the key dates were checked and found accurate. No near-model answer was found.
+
+1. **Lecture card 1: "Making room for a group was not about kindness. It paid."** Supported (a sole cause; the deep reading says "not only," and Ottoman protected status was a rule of Islamic law). Fixed: "not only about kindness. It also paid."
+2. **Deep reading section 01 said Spain and Portugal were both willing to lose their subjects for one religion.** Supported (Portugal forced baptism in 1497 rather than let most Jews leave; its 1496 decree met a Spanish condition for Manuel I's marriage; Soyer 2008 via the reviewer). Fixed: Spain was willing to lose them; Portugal, pressed by Spain as a condition of a royal marriage, forced most of its Jews to be baptized rather than let them go.
+3. **Slides 8 and 20 on testimony.** Supported; the same finding as pass 3, reviewer 1, finding 1, with one addition: "in court" needed "Islamic," since non-Muslim communities had their own courts. Fixed on both slides.
+4. **Busbecq "wrote home."** Supported (Turkish Letter I is signed Vienna, September 1, 1555, and addressed to his friend Nicolas Michault; Forster and Daniell 1881, opened by the reviewer). Fixed: the First & 10 ("came back to Vienna in 1555 and wrote to a friend"), the Skill Builder and the story draft.
+5. **Teacher notes.** Supported. Slide 8: the Rijksmuseum names the groom's father, not his parents; fixed. Slide 10: "would not have entered" now "probably would not have entered," to match the Evidence Lab.
+
+### Outcome
+
+The loop stopped on the three-pass safety valve: 25, 17 and 10 supported defects. They fell in size as well as number, and the third pass found no CED alignment or story-map ownership defect and no near-model answer. Every finding was fixed; none was rejected.

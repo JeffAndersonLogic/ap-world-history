@@ -278,7 +278,7 @@ of nobles invited William of Orange to bring an army, King James II fled, and Pa
 landowning nobles and gentry, set limits on the monarchs who came after him. There the old elite won.
 
 **Testing a claim (the skill).** People at the time argued about all this. In the 1550s a European
-ambassador to the Ottoman court, Ogier Ghiselin de Busbecq, wrote home that among the Turks "no
+ambassador to the Ottoman court, Ogier Ghiselin de Busbecq, wrote to a friend in 1555 that among the Turks "no
 distinction is attached to birth" and "it is by merit that men rise," while in Europe "birth is the
 standard for everything." Is he right? Evidence can **support** his argument (boys taken by the
 devshirme rose to be generals and grand viziers), **modify** it (true for the sultan's servants, but

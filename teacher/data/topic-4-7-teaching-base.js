@@ -239,7 +239,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'Protected', text: 'Christians and Jews may practice their religion.' },
           { label: 'Self-run', text: 'Their own leaders run marriage, inheritance, schools and family courts.' },
           { label: 'The price', text: 'They pay a special tax, the jizya.' },
-          { label: 'The limits', key: true, text: 'Generally no testimony against a Muslim in court; top army and government jobs go to Muslims.' }
+          { label: 'The limits', key: true, text: 'Generally no testimony against a Muslim in an Islamic court; top army and government jobs go to Muslims.' }
         ]
       },
       notes: {
@@ -248,7 +248,7 @@ window.BEHISTORICAL_TEACHING = {
           'Under Islamic law, Christians and Jews were protected subjects (dhimmis). In the Ottoman Empire their own religious authorities ran family law, worship, schooling and charity, and answered to the state for order and taxes. This agrees with Topic 3.2\'s chapter.',
           'Do not teach the "millet system" as one tidy empire-wide chart; that picture is largely a nineteenth-century formalization read backward (3.2 chapter). Arrangements were made community by community and city by city.',
           'The limits were real: the jizya; non-Muslims generally could not testify against a Muslim in an Islamic court, except in some commercial cases; restrictions on building new houses of worship; top military and government posts for Muslims. The devshirme (3.2) took Christian boys, converted them and trained them for service: a route to the top that required leaving one\'s family\'s religion.',
-          'The picture: Jean Baptiste Vanmour, "Armenian Wedding," about 1720 to 1737 (Rijksmuseum SK-A-2001). The museum describes an Armenian wedding procession on its way to church for the blessing, with musicians, the groom, his parents, the priest and the bride in red. Vanmour was a Flemish-born painter who lived in Istanbul and painted its peoples for European buyers. An Armenian Christian community celebrating in public in the Ottoman capital is accommodation at work.'
+          'The picture: Jean Baptiste Vanmour, "Armenian Wedding," about 1720 to 1737 (Rijksmuseum SK-A-2001). The museum describes an Armenian wedding procession on its way to church for the blessing, with musicians, the groom, his father, the priest, and the women of the party, including the bride in red. Vanmour was a Flemish-born painter who lived in Istanbul and painted its peoples for European buyers. An Armenian Christian community celebrating in public in the Ottoman capital is accommodation at work.'
         ],
         ask: 'Name one thing Christians and Jews could do, and one thing they could not.',
         listenFor: 'Could: practice their religion, run their own family law and schools. Could not: testify against a Muslim in court, freely build new churches, hold top posts without converting.',
@@ -287,7 +287,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'The picture: Jean Baptiste Vanmour, "Lying-in Room of a Distinguished Turkish Woman," about 1720 to 1737 (Rijksmuseum SK-A-2003). The museum describes visitors received in the house of a wealthy family after a birth: coffee brewing on the brazier in the middle, "an enslaved woman" on the left already making sherbet, rosewater and perfume for the guests, and cloths on the walls that were the visitors\' gifts. Vanmour painted for European buyers, and a European man would not have entered this room; it is his reconstruction from what he was told and saw elsewhere. Say so.',
+          'The picture: Jean Baptiste Vanmour, "Lying-in Room of a Distinguished Turkish Woman," about 1720 to 1737 (Rijksmuseum SK-A-2003). The museum describes visitors received in the house of a wealthy family after a birth: coffee brewing on the brazier in the middle, "an enslaved woman" on the left already making sherbet, rosewater and perfume for the guests, and cloths on the walls that were the visitors\' gifts. Vanmour painted for European buyers, and a European man probably would not have entered this room; it is likely his reconstruction from what he was told and saw elsewhere. Say so.',
           'Women at the top: Hürrem began as an enslaved woman in the palace and became Suleiman\'s wife; she paid for the Haseki Sultan complex in Istanbul (mosque 1538 to 1539, school, soup kitchen, and a hospital by 1550 to 1551). Kösem was regent for her young son Murad IV (from 1623) and her grandson Mehmed IV (1648 to 1651), and a powerful adviser to her adult son Ibrahim (1640 to 1648); she was killed in 1651.',
           'Women in the towns: in early-1600s Kayseri, women sued and were sued in the Islamic court and took part in about 40 percent of recorded property transactions (Ronald Jennings, 1975). Inheritance law gave a daughter half a son\'s share, and a woman\'s testimony counted for less.',
           'Enslaved women: servants and concubines in wealthy households, with almost no say over their own lives.'
@@ -508,7 +508,7 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'The evidence is more interesting than the myths.',
       template: {
         rows: [
-          { myth: 'The Ottomans gave everyone equal rights.', evidence: 'Christians and Jews were protected but paid the jizya and, under the law, generally could not testify against a Muslim.', source: 'Ottoman law' },
+          { myth: 'The Ottomans gave everyone equal rights.', evidence: 'Christians and Jews were protected but paid the jizya and generally could not testify against a Muslim in an Islamic court.', source: 'Ottoman law' },
           { myth: 'Casta was a fixed chart everyone was locked into.', evidence: 'How a person was recorded could change with wealth, job and reputation.', source: 'Colonial records' },
           { myth: 'Old elites simply disappeared.', evidence: 'Russian and French nobles kept land and privilege; English nobles gained power.', source: 'Russia, France, England' }
         ]

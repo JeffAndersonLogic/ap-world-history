@@ -146,7 +146,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "The limits",
             "key": true,
-            "text": "Generally no testimony against a Muslim in court; top army and government jobs go to Muslims."
+            "text": "Generally no testimony against a Muslim in an Islamic court; top army and government jobs go to Muslims."
           }
         ],
         "visual": {
@@ -534,7 +534,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "rows": [
           {
             "myth": "The Ottomans gave everyone equal rights.",
-            "evidence": "Christians and Jews were protected but paid the jizya and, under the law, generally could not testify against a Muslim.",
+            "evidence": "Christians and Jews were protected but paid the jizya and generally could not testify against a Muslim in an Islamic court.",
             "source": "Ottoman law"
           },
           {
