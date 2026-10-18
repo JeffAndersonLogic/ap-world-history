@@ -287,8 +287,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "frame-letterbox",
       "eyebrow": "What Changed · Spanish America · Topic 4.7",
-      "title": "The same pattern: ranked by ancestry.",
-      "subtitle": "A casta painting from Mexico, about 1715 to 1720. Like Barbados, a colonial society that ranked people by their ancestry, with Spaniards at the top.",
+      "title": "Ranked by ancestry in Spanish America.",
+      "subtitle": "A casta painting from Mexico, about 1715 to 1720: a colonial society that ranked people by their ancestry, with Spaniards at the top.",
       "kc": "KC-4.3",
       "template": {
         "visual": {
@@ -420,12 +420,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Same pattern",
-            "text": "Barbados and Spanish America both ranked people by ancestry."
+            "text": "Spinners in Holland and weavers in India both did old work in larger amounts."
           },
           {
-            "label": "But",
+            "label": "A contrast",
             "key": true,
-            "text": "A Chinese silk family worked more, but lived much as before."
+            "text": "Andean men were drafted far from home; a Chinese silk family kept working at home."
           }
         ]
       }
@@ -535,7 +535,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "action",
       "eyebrow": "Module 05 · Skill Builder",
       "title": "Connect the evidence.",
-      "subtitle": "Argumentation 6.C: led to, the same pattern, or but. Say how each piece relates, and why.",
+      "subtitle": "Argumentation 6.C: led to, the same pattern, or a contrast. Say how two pieces relate, and why.",
       "action": {
         "label": "Open Student Lesson",
         "url": "lesson-4-8-continuity-and-change.html#modules"

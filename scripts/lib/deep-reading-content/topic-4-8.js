@@ -40,7 +40,7 @@ module.exports = {
   eyebrow: 'Topic 4.8 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'Follow the Trade to the <em>People</em>',
   deck: `Between 1450 and 1750, ships joined the two halves of the world, and the new trade in sugar, silver and cloth needed more workers than ever. This chapter follows that trade, link by link, to the people at both ends: the enslaved and the drafted, the planters who grew rich, the families of West Central Africa, and the peasants and artisans who worked harder at old jobs. Then it shows how to turn that evidence into an argument about how much changed.`,
-  meta: ['Five sections', 'The road, the workers, the islands, Africa, what stayed', 'Read alongside the First & 10'],
+  meta: ['Five sections', 'The road, the workers, Barbados and Spanish America, Africa, what stayed', 'Read alongside the First & 10'],
   footerNote: 'Topic 4.8 &nbsp;·&nbsp; Follow the Trade to the People &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
@@ -70,7 +70,7 @@ module.exports = {
         {
           heading: 'Borrowed tools, new ships, known winds',
           blocks: [
-            { p: `Europe built its ocean road from borrowed knowledge (Topic 4.1). The magnetic compass came from China, where sailors were steering by a magnetized needle by about 1100. The astrolabe began as a Greek idea that astronomers in the Islamic world made precise, and it reached Europe through Muslim Spain. Tables of the sky, which told a pilot where the sun should stand on each day of the year, were first built by Muslim and Jewish astronomers in Toledo; the almanac of Abraham Zacuto, printed in Portugal in <span class="num">1496</span>, came from that line. And the triangular lateen sail, which lets a ship work forward against the wind, had been used on the Mediterranean since Roman times and was common across the seas of the Islamic world.` },
+            { p: `Europe built its ocean road from borrowed knowledge (Topic 4.1). The magnetic compass came from China, where sailors were steering by a magnetized needle by about 1100. The astrolabe began as a Greek idea that astronomers in the Islamic world made precise, and it reached Europe through Muslim Spain. Tables of the sky, which told a pilot where the sun should stand on each day of the year, were built by Muslim and Jewish astronomers in Toledo; the almanac of Abraham Zacuto, printed in Portugal in <span class="num">1496</span>, came from that line. And the triangular lateen sail, which lets a ship work forward against the wind, had been used on the Mediterranean since Roman times and was common across the seas of the Islamic world.` },
             { p: `Around those tools, Europeans built new ships: the small, light caravel to explore coasts, and the large carrack, with room for months of food, water, cargo and guns. Around <span class="num">1600</span> Dutch shipbuilders designed the fluyt, which carried a large cargo with a small, cheap crew and made shipping goods much cheaper. And sailors learned the Atlantic's winds. To get home from West Africa, a ship swung far out to sea, west and north, until it caught the westerlies. Once ships could go and come back, again and again, the two halves of the world were joined, and trade was transformed.` }
           ]
         },
@@ -83,7 +83,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not stop at the trade. Ships, silver and companies are the <b>economic developments</b>. The question asks what they did to <b>social structures</b>, so every answer has to go one step further: who did the work, who rose, and how families lived.`
+              html: `Do not stop at the trade. New demand, silver and rulers' tools are the <b>economic developments</b>, and ships were the road they came down. The question asks what they did to <b>social structures</b>, so every answer has to go one step further: who did the work, who rose, and how families lived.`
             } }
           ]
         },
@@ -180,10 +180,10 @@ module.exports = {
           ]
         },
         {
-          heading: 'The same pattern in Spanish America',
+          heading: 'Spanish America ranks by ancestry',
           blocks: [
             { p: `In Spanish America, the silver mines and the great estates sat on top of a mixed society of Spaniards, Indigenous peoples and Africans, and their children. Spanish colonial society ranked people by their ancestry, the <span class="kt">casta</span> system, and silver, land and trade made many creole families, people of Spanish ancestry born in the Americas, rich: a new economic elite (Topic 4.7). The empire shaped its peoples, and its peoples shaped the empire: new categories grew up for the mixed society in its colonies.` },
-            { p: `Barbados and Spanish America were different places, ruled by different kingdoms, with different laws. But they show the same pattern: a new hierarchy, built in the colonies, based on ancestry, with Europeans at the top. When two pieces of evidence show the same pattern in different places, the pattern is stronger evidence than either case alone.` },
+            { p: `Barbados and Spanish America were different places, ruled by different kingdoms, with different laws. Comparing them is a good way to test an argument: ask what each society put at the top and at the bottom, and what economic development built each ranking. If two places show the same pattern, the pattern is stronger evidence than either case alone.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -195,7 +195,7 @@ module.exports = {
       useThis: {
         tool: `Follow the crop to the hierarchy. <em>Name the crop or the mineral, the workers it needed, how they were held, and who grew rich. That is a complete chain from an economic development to a social structure.</em>`,
         limit: `Barbados is one island, and an extreme one. It is strong evidence for how much a plantation economy could change a society, not for how most of the world lived.`,
-        comparison: `Against <em>the casta ranking</em>: both Barbados and Spanish America ranked people by ancestry. What did each society put at the top, and what at the bottom?`
+        comparison: `Against <em>the casta ranking</em>: what did Barbados put at the top and the bottom, and what did Spanish America? Is that the same pattern, or a contrast?`
       },
       terms: [
         ['Planters', 'The owners of plantations, who became a rich new elite in the sugar colonies.'],
@@ -275,15 +275,15 @@ module.exports = {
           heading: 'Three ways evidence relates',
           blocks: [
             { p: `A list of evidence is not an argument. An argument explains how the pieces of evidence relate to each other, and three relationships do most of the work. The first is <b>this led to that</b>: Europe's demand for sugar led to plantations in Barbados and Brazil, which led to a huge slave trade, which left villages in West Central Africa with more women than men. One chain of causes links three continents.` },
-            { p: `The second is <b>the same pattern, two places</b>: Barbados's masters, servants and slaves and Spanish America's casta ranking both show a new hierarchy based on ancestry. The third is <b>but not everywhere</b>: a Chinese silk family worked more for faraway buyers, but it stayed a peasant family in its village under the same emperor's officials. That contrast is what lets an answer say how much changed.` },
-            { p: `Put the evidence together, and you can write a <span class="kt">thesis</span>, a claim that answers the question and that you can defend. Here is one: between 1450 and 1750, the new global economy changed social structures most where it needed new workers by force, in the plantation Americas and the parts of Africa the slave trade reached, while across most of Afro-Eurasia older ways of working and ruling continued and simply produced more. You can argue a different thesis. What you cannot do is leave out the evidence on the other side.` }
+            { p: `The second is <b>the same pattern, two places</b>: a spinner in Holland and a weaver in India both did old work in larger amounts, for buyers far away. The third is <b>a contrast</b>: an Andean man drafted through the mit’a was taken far from his village to dig silver, while a Chinese silk family kept working at home as a peasant family, even though it now needed silver for most of its taxes. A contrast shows where the new trade changed people's lives most and where least, and that is what lets an answer say how much changed.` },
+            { p: `Put the evidence together, and you can write a <span class="kt">thesis</span>, a claim that answers the question and that you can defend. A strong thesis names a change, a continuity, and the reason for the difference: where did the new trade change social structures most, where did it change them least, and why? You can argue more than one thesis from the same evidence. What you cannot do is leave out the evidence on the other side.` }
           ]
         }
       ],
       useThis: {
-        tool: `Name the relationship. <em>For any two pieces of evidence, say whether one led to the other, whether they show the same pattern, or whether one shows the opposite, and then explain why.</em>`,
+        tool: `Name the relationship. <em>For any two pieces of evidence, say whether one led to the other, whether they show the same pattern, or whether they make a contrast, and then explain why.</em>`,
         limit: `A thesis is an argument, not a fact. Another student can argue a different one with the same evidence, and a good answer can still be wrong about how much changed if it leaves out the other side.`,
-        comparison: `Against <em>Barbados</em>: which piece of evidence in this section is the strongest "but" against a claim that everything changed?`
+        comparison: `Against <em>Barbados</em>: which piece of evidence in this section makes the strongest contrast with a claim that everything changed?`
       },
       terms: [
         ['Continuity', 'Something that stayed the same over time.'],

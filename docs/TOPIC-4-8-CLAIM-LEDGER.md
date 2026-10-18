@@ -46,7 +46,7 @@ N; **CV** Canvas text; **Story** the story draft.
 
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
-| The compass came from China; the astrolabe was a Greek idea made precise by astronomers in the Islamic world; the first tables of the sky behind the Portuguese almanacs were built by Muslim and Jewish astronomers in Toledo; the lateen sail was common across the Mediterranean and the seas of the Islamic world | Story §3 | 4.1 ledger, rows on the compass, astrolabe, astronomical tables and lateen sail; the 4.1 First & 10 wording, followed here. | VERIFIED |
+| The compass came from China; the astrolabe was a Greek idea made precise by astronomers in the Islamic world; the first tables of the sky behind the Portuguese almanacs were built by Muslim and Jewish astronomers in Toledo (never "first": Ptolemy's Handy Tables and Baghdad's zijes came earlier; review pass 1); the lateen sail was common across the Mediterranean and the seas of the Islamic world | Story §3 | 4.1 ledger, rows on the compass, astrolabe, astronomical tables and lateen sail; the 4.1 First & 10 wording, followed here. | VERIFIED |
 | Caravel and carrack; the Dutch fluyt designed around 1600 to carry a large cargo with a small, cheap crew, making shipping goods much cheaper | Story §3 | 4.1 ledger, fluyt row (Britannica, "Fluyt"; Hoorn, usually 1595), "around 1600". The fluyt served mostly European bulk trades (4.1 review U6), so 4.8 never calls it an ocean-crossing ship. | VERIFIED |
 | Sailors learned to swing out to sea to catch the westerlies home (the volta do mar) | Story §3 | 4.1 ledger, volta do mar row. | VERIFIED |
 
@@ -100,7 +100,7 @@ N; **CV** Canvas text; **Story** the story draft.
 
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
-| The thesis: the new global economy changed social structures most where it needed new workers by force, and least where old ways of working could produce more | Story §3, §4 | An argument, shown as one defensible thesis students may argue against, never as the answer. Consistent with the CED's KC-4.2 and KC-4.2.II and with the evidence above. China's commercialization (silver taxes) is named as a change inside Afro-Eurasia so the thesis does not read as "nothing changed in Asia". | VERIFIED |
+| The thesis: the new global economy changed social structures most where it needed new workers by force, and least where old ways of working could produce more | Story §3, §4 | An argument. Since review pass 1 it is printed on no student page (First & 10, lecture cards, deep reading), because Checkpoint 2 and First & 10 question 03 ask students to write their own; it stays in the story draft and the teacher's notes. Consistent with the CED's KC-4.2 and KC-4.2.II and with the evidence above. China's commercialization (silver taxes) is named as a change inside Afro-Eurasia so the thesis does not read as "nothing changed in Asia". | VERIFIED |
 | By 1750 the oceans were joined and states were stronger than ever | Story §3 (hand-off) | The approved story map's hand-off line. "Stronger than ever" is a framing of KC-4.3 and Unit 4's centralizing states; to be read by the reviewer. | VERIFIED |
 
 ### Pictures: every caption and credit
@@ -120,7 +120,7 @@ ledger row where it was checked against its holder's record, and the 4.8 wording
 | Nicolaes Maes, The Spinner, about 1655, Rijksmuseum SK-A-246 | Deck 15 and notes | 4.5 ledger (about 1650 to 1660). | VERIFIED |
 | Eight-reales coin, Potosí mint, 1651, Münzkabinett Berlin | LD lecture card 1; RC stableImages | 4.5 Evidence Lab card and ledger. | VERIFIED |
 | Frans Post, *Brazilian Landscape* (detail), 1660s, painted in the Netherlands, National Gallery of Ireland: Black workers at a sugar works below the owner's house | LD lecture card 2; RC stableImages | 4.3 ledger (title and the furnace-house correction from 4.3's review). "Below the owner's house" from the 4.3 alt text ("a large house with a lookout on the hill above"). | VERIFIED |
-| Cornelis Decker, weavers at a loom with a spinning wheel and a cradle in the same room, 1659, Rijksmuseum SK-A-2562 | LD lecture card 3; RC stableImages | 4.5 lecture card and ledger. | VERIFIED |
+| Cornelis Decker, two weavers at a loom in a room that also holds a spinning wheel and a cradle, 1659, Rijksmuseum SK-A-2562: "work done at home" | LD lecture card 3; RC stableImages | 4.5 lecture card and ledger. Narrowed in review pass 1: the picture shows two men at a loom, not a family at work. | NARROWED |
 | No AI-generated picture anywhere in 4.8 | Every surface | No generator key in this environment; every file above is a period object. | VERIFIED |
 
 ### Claims added on later surfaces (modules, deep reading, notes)
@@ -146,4 +146,20 @@ ledger row where it was checked against its holder's record, and the 4.8 wording
 
 ## Review findings
 
-(Filled in during Phase 9.)
+Each finding from each independent reviewer, with its disposition: fixed, or rejected with a reason.
+
+### Pass 1, reviewer 1 (page truth, readability, CED, ownership), 10 findings
+
+No CED alignment defect found (all seven Key Concepts, Continuity and Change and 6.C present).
+
+1. **Near-model answers on the student's own page.** Supported. The First & 10 section 6 and lecture card 3 printed a finished thesis above First & 10 question 03 and on the page of Checkpoint 2, and the Barbados and casta pairing that First & 10 question 02 and Primary Source question 3 ask for was stated as a finished relationship in the section 4 callout, section 6, lecture card 2, the Skill Builder and slides 13 and 17. Fixed: the thesis is gone from every student page (the reading, the lecture card and the deep reading now give the criteria for a strong thesis instead); the "same pattern" model is now spinners in Holland and weavers in India, and the contrast model the mit'a against the Chinese silk family; question 02 now offers casta, the mit'a or the silk family, none of them modeled against Ligon; the Primary Source offers casta, the mit'a or Indian weavers; the Skill Builder's practice set (Potosí and the mit'a, China's silver taxes, casta, West Central Africa) reuses no modeled pair; slide 13 no longer says "the same pattern" or "Like Barbados."
+2. **"Under the same emperor's officials" is wrong across 1644.** Supported (the Ming fell to the Qing in 1644, inside the period). Fixed in the First & 10, the Skill Builder and the deep reading: "still a peasant family, working at home in its village."
+3. **The course contradicts itself on what the economic developments are.** Supported (one callout listed ships, silver and companies; everywhere else they are new demand, silver and rulers' tools, with ships as the road). Fixed in the First & 10 callout and the deep reading note; question 01 and Checkpoint 1 now name "the new demand for sugar, the silver of Potosí, or the new demand for cloth."
+4. **Barbados presented as earlier Unit 4 evidence.** Supported (it is taught here first; the slide 25 note called it 4.4). Fixed: Checkpoint 2's examples now carry their topic numbers, with Barbados as "today, Topic 4.8"; the slide 25 note corrected.
+5. **Three names for the third relationship, and "the opposite" is wrong.** Supported. Fixed: "a contrast" on every surface (reading, lecture card, Skill Builder, checkpoints, Primary Source, slides 17 and 22, the deep reading, the notes); the silk family is described consistently as still working at home while needing silver for most of its taxes.
+6. **The Decker caption says the picture shows a family at work.** Supported. Fixed (row above).
+7. **"Tables of the sky first built by Muslim and Jewish astronomers."** Supported. Fixed in the First & 10 and the deep reading (row above).
+8. **Checkpoint 1 displays a target it does not assess ("changed how work was done").** Supported. Fixed: Learning Target 1 now reads "increased the demand for workers, and how that demand was met," which Checkpoint 1's step 2 asks for.
+9. **The KC-4.1.II.A box says "verbatim" but replaces the CED's dash with a comma.** Rejected for this topic: every Unit 4 lesson file carries the Key Concepts with the house rule's comma in place of the CED's dash, and the "verbatim" label is the shared renderer's. Logged as an adjacent finding.
+10. **The deep reading's section label "the islands" does not match section 03.** Supported. Fixed: "Barbados and Spanish America."
+

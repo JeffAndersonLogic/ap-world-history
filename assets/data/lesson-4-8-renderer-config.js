@@ -97,17 +97,17 @@
   lesson.skillBuilder = {
     label: 'Argumentation practice',
     title: 'Connect the Evidence',
-    intro: 'A list of evidence is not an argument. An argument explains how the pieces of evidence relate to each other. Three relationships do most of the work: one piece of evidence can lead to another, two can show the same pattern in different places, or one can show the opposite. Watch the move on the evidence from Barbados, then try it yourself.',
+    intro: 'A list of evidence is not an argument. An argument explains how the pieces of evidence relate to each other. Three relationships do most of the work: one piece of evidence can lead to another, two can show the same pattern in different places, or two can make a contrast. Watch the move on evidence from this lesson, then try it yourself.',
     steps: [
       { label: 'Led to', text: 'Europe wanted sugar. That led planters on Barbados to build sugar plantations, which needed far more workers than the island had, which led them to buy enslaved Africans. Each piece of evidence is a cause of the next.' },
-      { label: 'The same pattern', text: 'On Barbados, Richard Ligon wrote that the slaves and their children were held "for ever." In Spanish America, the casta system ranked people by their ancestry. Two places, one pattern: a new hierarchy, built in the colonies, based on who your parents were.' },
-      { label: 'The opposite', text: 'A silk family in China also worked more for faraway buyers, but it stayed a peasant family in its village, under the same emperor\'s officials. That contrast shows where the new trade changed society, and where it did not.' },
-      { label: 'Put it in a sentence', text: 'Use this frame: "[Evidence A] and [Evidence B] are related because [one led to the other / they show the same pattern / one shows the opposite], since ..." Name both pieces of evidence, choose one relationship, and explain why.' }
+      { label: 'The same pattern', text: 'In Holland, merchants paid families to spin and weave at home. In India, weavers made more and more cotton cloth for the European companies. Two places, one pattern: old work, done the old way, in larger amounts, for buyers far away.' },
+      { label: 'A contrast', text: 'In the Andes, the mit\'a took men far from their villages for months to dig silver. In China, a silk family kept working at home as a peasant family, even though it now needed silver for most of its taxes. The contrast shows where the new trade changed people\'s lives most, and where it changed them least.' },
+      { label: 'Put it in a sentence', text: 'Use this frame: "[Evidence A] and [Evidence B] are related because [one led to the other / they show the same pattern / they make a contrast], since ..." Name both pieces of evidence, choose one relationship, and explain why.' }
     ],
-    prompt: 'Now connect a new set of evidence from Unit 4. (1) In the 1570s, Spain turned the Inca mit\'a into a draft that sent thousands of Andean men each year to the silver mine at Potosí. (2) Ming China collected most of its taxes in silver, so millions of families needed silver to pay them. (3) In China, peasant families raised silkworms and wove silk, and some of that silk was traded at Manila for American silver. (4) In Spanish America, colonial society ranked people by ancestry, in the casta system. Choose TWO of these pieces of evidence. Write 3 to 5 sentences that explain how they relate: does one lead to the other, do they show the same pattern, or does one show the opposite? Then say what the pair shows about how much the new trade changed people\'s lives.',
+    prompt: 'Now connect a new set of evidence from Unit 4. (1) At Potosí, Spanish colonists ran one of the richest silver mines in the world, worked by Andean men drafted through the mit\'a. (2) Ming China collected most of its taxes in silver, so millions of families needed silver to pay them. (3) In Spanish America, colonial society ranked people by ancestry, in the casta system. (4) About two of every three people carried away in the Atlantic slave trade were male, and parts of West Central Africa were left with more women than men. Choose TWO of these pieces of evidence. Write 3 to 5 sentences that explain how they relate: does one lead to the other, do they show the same pattern, or do they make a contrast? Then say what the pair shows about how much the new trade changed people\'s lives.',
     criteria: [
       'I named two pieces of evidence.',
-      'I chose one relationship: led to, the same pattern, or the opposite.',
+      'I chose one relationship: led to, the same pattern, or a contrast.',
       'I explained why, not just labeled it.',
       'I said what the pair shows about how much changed.'
     ]
@@ -120,7 +120,7 @@
       cardDesc: 'Follow one economic development to the workers it needed and to one change in a social structure.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
-      prompt: 'Answer in three steps. (1) Choose ONE economic development from Unit 4: plantation sugar, Potosí silver, or the demand for cloth. Say what was in demand and who wanted it. (2) Explain which workers it needed and how they were brought to the work. (3) Explain one change it made to a social structure: who was forced to work, who rose to the top, or how families lived.',
+      prompt: 'Answer in three steps. (1) Choose ONE economic development from Unit 4: the new demand for sugar, the silver of Potosí, or the new demand for cloth. Say what was in demand and who wanted it. (2) Explain which workers it needed and how they were brought to the work. (3) Explain one change it made to a social structure: who was forced to work, who rose to the top, or how families lived.',
       responseType: 'Checkpoint 1',
       terms: ['economic developments', 'social structure', 'sugar', 'plantation', 'chattel slavery', 'slavery', 'enslaved', 'indentured servants', 'planters', 'Barbados', 'silver', 'Potosí', 'mit’a', 'cloth', 'peasant', 'artisan', 'casta', 'elite', 'gender', 'family', 'West Central Africa'],
       focus: ['Name one economic development and who wanted it.', 'Explain which workers it needed.', 'Explain one change it made to a social structure.']
@@ -131,10 +131,10 @@
       cardDesc: 'A thesis and a short argument: how economic developments changed social structures, and what stayed the same.',
       learningTargets: [lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[2].criteria],
-      prompt: 'Explain how economic developments from 1450 to 1750 affected social structures, and how much stayed the same. (1) Write a thesis that names one change and one continuity in social structures. (2) Support it with evidence from at least THREE different Unit 4 topics, for example sugar and slavery on Barbados, the casta ranking, villages in West Central Africa, the mit’a at Potosí, or peasant and artisan work in Europe, India, or China. (3) In at least one sentence, explain how two pieces of your evidence relate: does one lead to the other, do they show the same pattern, or does one show the opposite?',
+      prompt: 'Explain how economic developments from 1450 to 1750 affected social structures, and how much stayed the same. (1) Write a thesis that names one change and one continuity in social structures. (2) Support it with evidence from at least THREE different Unit 4 topics, for example the mit’a at Potosí or the growth of the Atlantic slave trade (Topic 4.4), villages in West Central Africa or peasant and artisan work in Europe, India, or China (Topic 4.5), the casta ranking (Topic 4.7), or sugar and slavery on Barbados (today, Topic 4.8). (3) In at least one sentence, explain how two pieces of your evidence relate: does one lead to the other, do they show the same pattern, or do they make a contrast?',
       responseType: 'Checkpoint 2',
       skill: 'Continuity and Change',
-      terms: ['economic developments', 'social structure', 'Unit 4', 'continuity', 'change', 'thesis', 'plantation', 'slavery', 'Barbados', 'casta', 'mit’a', 'peasant', 'artisan', 'elite', 'gender', 'family', 'led to', 'same pattern', 'opposite'],
+      terms: ['economic developments', 'social structure', 'Unit 4', 'continuity', 'change', 'thesis', 'plantation', 'slavery', 'Barbados', 'casta', 'mit’a', 'peasant', 'artisan', 'elite', 'gender', 'family', 'led to', 'same pattern', 'contrast'],
       focus: ['Write a thesis with one change and one continuity.', 'Use evidence from at least three Unit 4 topics.', 'Explain how two pieces of your evidence relate.']
     }
   ];

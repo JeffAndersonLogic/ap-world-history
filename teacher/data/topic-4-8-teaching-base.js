@@ -27,7 +27,7 @@ window.BEHISTORICAL_TEACHING = {
     subtitle: 'Economic change reached into everyday social life: who worked, who ruled, and how families and communities were organized. Argue how much changed, with evidence.',
     essentialQuestion: 'From 1450 to 1750, how did economic developments change who worked, who ruled, and how families lived, and how much stayed the same?',
     apFocus: 'Continuity and Change, with Argumentation 6.C',
-    endTarget: 'Students can follow one economic development of the period (plantation sugar, American silver, the demand for cloth) to the workers it needed and to a change in a social structure (masters and slaves in Barbados, the casta ranking, families and states in Africa); name what stayed the same (most people farmed, the same kind of work done in larger amounts, hereditary rulers and nobles on top); explain how two pieces of evidence relate (one led to the other, the same pattern in two places, or the opposite); and write a thesis that answers the learning objective with both a change and a continuity.'
+    endTarget: 'Students can follow one economic development of the period (plantation sugar, American silver, the demand for cloth) to the workers it needed and to a change in a social structure (masters and slaves in Barbados, the casta ranking, families and states in Africa); name what stayed the same (most people farmed, the same kind of work done in larger amounts, hereditary rulers and nobles on top); explain how two pieces of evidence relate (one led to the other, the same pattern in two places, or a contrast); and write a thesis that answers the learning objective with both a change and a continuity.'
   },
 
   priorities: {
@@ -35,7 +35,7 @@ window.BEHISTORICAL_TEACHING = {
       'Answer the learning objective, not a trade question: every case ends at a social structure, who worked, who ruled and rose, and how families lived (LO N).',
       'Follow one chain all the way: ships, then demand, then the workers it needed, then what that did to society (KC-4.1, KC-4.2.II).',
       'Teach the continuity as hard as the change: most people still farmed (KC-4.2), peasant and artisan work grew without being replaced, and rulers and nobles stayed on top.',
-      'Model 6.C: three ways evidence relates (led to, the same pattern, but), then have students write a thesis with a change and a continuity.'
+      'Model 6.C: three ways evidence relates (led to, the same pattern, a contrast), then have students write a thesis with a change and a continuity.'
     ],
     should: [
       'Use Ligon\'s Barbados as the one new source: one crop remaking a whole society, in a witness\'s words.',
@@ -65,7 +65,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'africa', label: 'Families and States in Africa', range: '32-34', minutes: 2, teacher: 'What the trade did to villages and kingdoms.', students: 'Follow the numbers to the family.', slide: 14 },
     { id: 'samework', label: 'The Same Work, More of It', range: '34-36', minutes: 2, teacher: 'Three pictures of old work for new buyers.', students: 'Name what stayed the same.', slide: 15 },
     { id: 'ladder', label: 'What Stayed', range: '36-38', minutes: 2, teacher: 'The ladder and the old networks.', students: 'Sort continuity and change.', slide: 16 },
-    { id: 'relate', label: 'How Evidence Relates', range: '38-40', minutes: 2, teacher: 'Model 6.C: led to, same pattern, but.', students: 'Name the relationship.', slide: 17 },
+    { id: 'relate', label: 'How Evidence Relates', range: '38-40', minutes: 2, teacher: 'Model 6.C: led to, same pattern, a contrast.', students: 'Name the relationship.', slide: 17 },
     { id: 'chain', label: 'One Chain, Three Continents', range: '40-42', minutes: 2, teacher: 'A chain of evidence with the linking words.', students: 'Read the arrows aloud.', slide: 18 },
     { id: 'myths', label: 'Myth and Evidence', range: '42-44', minutes: 2, teacher: 'Three things people get wrong.', students: 'Correct each myth.', slide: 19 },
     { id: 'retell', label: 'Follow the Trade', range: '44-48', minutes: 4, teacher: 'Students redraw the chain from memory, with what stayed underneath.', students: 'Retell the whole topic.', slide: 20 },
@@ -356,19 +356,19 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'casta', kind: 'frame-letterbox', eyebrow: 'What Changed · Spanish America · Topic 4.7',
-      kc: 'KC-4.3', title: 'The same pattern: ranked by ancestry.',
-      subtitle: 'A casta painting from Mexico, about 1715 to 1720. Like Barbados, a colonial society that ranked people by their ancestry, with Spaniards at the top.',
+      kc: 'KC-4.3', title: 'Ranked by ancestry in Spanish America.',
+      subtitle: 'A casta painting from Mexico, about 1715 to 1720: a colonial society that ranked people by their ancestry, with Spaniards at the top.',
       notes: {
         minutes: 1,
         land: [
           'The picture: Juan Rodríguez Juárez, "De Mestizo, y de India Produce Coyote," about 1715 to 1720 (Hispanic Society of America, LA2122), verified for 4.7. The inscription reads: from a mestizo and an Indian woman comes a coyote.',
           'Read it as 4.7 taught it: an elite\'s ideal of an orderly society, not a census. But ancestry still opened and closed doors, and silver, land and trade made many creole families rich (KC-4.2.III.A, 4.7).',
           'KC-4.3: empires "shaping and being shaped by the diverse populations they incorporated." The mixed society of Spaniards, Indigenous peoples and Africans that grew up under Spanish rule produced new categories; the empire shaped its peoples, and they shaped it.',
-          'This is the "same pattern, two places" relationship slide 17 names: Barbados and Spanish America both built a hierarchy by ancestry.'
+          'Ask what the painting shares with Ligon\'s Barbados. That is close to First & 10 question 02, which students have already answered, so take answers aloud rather than writing a finished one on the board.'
         ],
         ask: 'What does this painting share with Ligon\'s Barbados?',
         listenFor: 'Both sort people by ancestry and race, with Europeans at the top.',
-        ap: 'KC-4.3. 6.C: two pieces of evidence showing the same pattern.'
+        ap: 'KC-4.3.'
       }
     },
     {
@@ -446,19 +446,19 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         steps: [
           { label: 'Led to', text: 'Sugar demand led to plantations, which led to a huge slave trade.' },
-          { label: 'Same pattern', text: 'Barbados and Spanish America both ranked people by ancestry.' },
-          { label: 'But', key: true, text: 'A Chinese silk family worked more, but lived much as before.' }
+          { label: 'Same pattern', text: 'Spinners in Holland and weavers in India both did old work in larger amounts.' },
+          { label: 'A contrast', key: true, text: 'Andean men were drafted far from home; a Chinese silk family kept working at home.' }
         ]
       },
       notes: {
         minutes: 2,
         land: [
           'The suggested skill, 6.C: use historical reasoning to explain relationships among pieces of historical evidence. A list of evidence is not an argument; the relationships are.',
-          'Led to: a chain of causes, often across places (causation inside a continuity-and-change answer). Same pattern: two places showing one development (it corroborates). But: a contrast, the continuity beside the change, which is what lets an answer say how much changed.',
+          'Led to: a chain of causes, often across places (causation inside a continuity-and-change answer). Same pattern: two places showing one development (it corroborates). A contrast: a change beside a continuity, which is what lets an answer say how much changed. The slide\'s contrast (the mit\'a against the silk family) is the Skill Builder\'s model; the Skill Builder\'s practice set does not reuse it.',
           'Push students to say the relationship word aloud: "This led to that because ..."; "This shows the same pattern as that, because both ..."; "This changed, but that stayed, because ..."'
         ],
         ask: 'Which relationship is most useful for saying how much changed?',
-        listenFor: '"But": the contrast between a change and a continuity.',
+        listenFor: 'A contrast: a change set beside a continuity.',
         ap: 'Argumentation 6.C, modeled.'
       }
     },
@@ -555,14 +555,14 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'skill', kind: 'action', eyebrow: 'Module 05 · Skill Builder',
       title: 'Connect the evidence.',
-      subtitle: 'Argumentation 6.C: led to, the same pattern, or but. Say how each piece relates, and why.',
+      subtitle: 'Argumentation 6.C: led to, the same pattern, or a contrast. Say how two pieces relate, and why.',
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-8-continuity-and-change.html#modules' },
       notes: {
         minutes: 8,
         land: [
           'The Skill Builder practices the CED\'s suggested skill, 6.C Argumentation: explain relationships among pieces of historical evidence.',
-          'It models the three relationships on the Barbados evidence, ends with a sentence frame rather than a finished sentence, then gives students a new set: the mit\'a at Potosí, the Single Whip and China\'s silver taxes, the Chinese silk family, and the casta ranking. Students explain how two of them relate, and name the relationship.',
-          'Strong answers: the Potosí mit\'a led to more silver, which flowed to China because of its silver taxes ("led to"); the mit\'a and Barbados both show forced labor feeding a world market ("same pattern"); the silk family worked for silver but stayed a peasant family ("but").'
+          'It models the three relationships (the sugar chain, spinners in Holland and weavers in India, the mit\'a against the Chinese silk family), ends with a sentence frame rather than a finished sentence, then gives students a new set: Potosí and the mit\'a, China\'s silver taxes, the casta ranking, and West Central Africa\'s villages. Students explain how two of them relate, and name the relationship.',
+          'Strong answers: Potosí\'s silver, dug by drafted Andean men, flowed to China because of its silver taxes ("led to"); the casta ranking and the slave trade\'s effect on African villages both show the trade reshaping who held what place ("same pattern", if the student says exactly what they share); the mit\'a took men far from home while West Central African women did more of the farming at home ("a contrast" or "same pattern", defended either way).'
         ],
         ask: 'After students have written: which relationship was hardest to explain, and why?',
         listenFor: 'Debrief only after the module: "same pattern," because you have to say what the two cases share.'
@@ -613,7 +613,7 @@ window.BEHISTORICAL_TEACHING = {
           'The Era 3 Study Guide Work Day follows on the next class day, and the Era 3 Exam after it. This argument is good exam practice: the long essay asks for the same moves.'
         ],
         ask: 'Does your answer have a thesis, three topics\' evidence, and one sentence that connects two pieces?',
-        listenFor: 'Sugar in Barbados (4.4), the casta ranking (4.7), the Chinese silk family (4.5), with "led to," "the same pattern" or "but."'
+        listenFor: 'Sugar on Barbados (today, 4.8), the casta ranking (4.7), the Chinese silk family (4.5), with "led to," "the same pattern" or "a contrast."'
       }
     },
     {

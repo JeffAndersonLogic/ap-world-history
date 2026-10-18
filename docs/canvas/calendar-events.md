@@ -3130,7 +3130,7 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how economic developments between 1450 and 1750, such as the new demand for sugar, silver, and cloth, increased the demand for workers and changed how work was done.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how economic developments between 1450 and 1750, such as the new demand for sugar, silver, and cloth, increased the demand for workers, and how that demand was met.</li>
                     <li style="margin: 0 0 6px 0;">I can explain how those economic developments changed social structures: who was forced to work, who rose to the top, and how families lived, in places such as Barbados, Spanish America, and West Central Africa.</li>
                     <li style="margin: 0 0 6px 0;">I can write a thesis and a short argument about how much social structures changed between 1450 and 1750, and what stayed the same, connecting evidence from different Unit 4 topics.</li>
                 </ul>

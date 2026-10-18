@@ -6537,7 +6537,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "06",
           "module": "Checkpoint 1",
           "label": "Module 06, Checkpoint 1",
-          "prompt": "Answer in three steps. (1) Choose ONE economic development from Unit 4: plantation sugar, Potosí silver, or the demand for cloth. Say what was in demand and who wanted it. (2) Explain which workers it needed and how they were brought to the work. (3) Explain one change it made to a social structure: who was forced to work, who rose to the top, or how families lived.",
+          "prompt": "Answer in three steps. (1) Choose ONE economic development from Unit 4: the new demand for sugar, the silver of Potosí, or the new demand for cloth. Say what was in demand and who wanted it. (2) Explain which workers it needed and how they were brought to the work. (3) Explain one change it made to a social structure: who was forced to work, who rose to the top, or how families lived.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -6571,7 +6571,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
             "Explain one change it made to a social structure."
           ],
           "learningTargets": [
-            "I can explain how economic developments between 1450 and 1750, such as the new demand for sugar, silver, and cloth, increased the demand for workers and changed how work was done.",
+            "I can explain how economic developments between 1450 and 1750, such as the new demand for sugar, silver, and cloth, increased the demand for workers, and how that demand was met.",
             "I can explain how those economic developments changed social structures: who was forced to work, who rose to the top, and how families lived, in places such as Barbados, Spanish America, and West Central Africa."
           ],
           "successCriteria": [
@@ -6583,7 +6583,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "10",
           "module": "Checkpoint 2",
           "label": "Module 10, Checkpoint 2",
-          "prompt": "Explain how economic developments from 1450 to 1750 affected social structures, and how much stayed the same. (1) Write a thesis that names one change and one continuity in social structures. (2) Support it with evidence from at least THREE different Unit 4 topics, for example sugar and slavery on Barbados, the casta ranking, villages in West Central Africa, the mit’a at Potosí, or peasant and artisan work in Europe, India, or China. (3) In at least one sentence, explain how two pieces of your evidence relate: does one lead to the other, do they show the same pattern, or does one show the opposite?",
+          "prompt": "Explain how economic developments from 1450 to 1750 affected social structures, and how much stayed the same. (1) Write a thesis that names one change and one continuity in social structures. (2) Support it with evidence from at least THREE different Unit 4 topics, for example the mit’a at Potosí or the growth of the Atlantic slave trade (Topic 4.4), villages in West Central Africa or peasant and artisan work in Europe, India, or China (Topic 4.5), the casta ranking (Topic 4.7), or sugar and slavery on Barbados (today, Topic 4.8). (3) In at least one sentence, explain how two pieces of your evidence relate: does one lead to the other, do they show the same pattern, or do they make a contrast?",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -6607,7 +6607,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
             "family",
             "led to",
             "same pattern",
-            "opposite"
+            "contrast"
           ],
           "criteria": [
             "Write a thesis with one change and one continuity.",
@@ -6639,7 +6639,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "02",
           "module": "First & 10, Question 1",
           "label": "Module 02, First & 10, Question 1",
-          "prompt": "Choose one economic development from this reading: plantation sugar, Potosí silver, or the demand for cloth. Follow it to the workers it needed, then explain one change it made to a social structure. Then name one thing that stayed the same.",
+          "prompt": "Choose one economic development from this reading: the new demand for sugar, the silver of Potosí, or the new demand for cloth. Follow it to the workers it needed, then explain one change it made to a social structure. Then name one thing that stayed the same.",
           "skill": "Continuity and Change",
           "skills": [
             "Continuity and Change"
@@ -6655,7 +6655,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "02",
           "module": "First & 10, Question 2",
           "label": "Module 02, First & 10, Question 2",
-          "prompt": "Ligon wrote that Barbados was \"divided into three sorts of men, viz. Masters, Servants, and slaves.\" Choose one other piece of evidence from this reading and explain how it relates to Ligon's: does it continue a chain of causes, show the same pattern in another place, or show the opposite?",
+          "prompt": "Ligon wrote that Barbados was \"divided into three sorts of men, viz. Masters, Servants, and slaves.\" Choose ONE of these pieces of evidence: the casta ranking in Spanish America, the mit’a at Potosí, or the Chinese silk family. Explain how it relates to Ligon's evidence: does one lead to the other, do they show the same pattern, or do they make a contrast?",
           "skill": "Argumentation",
           "skills": [
             "Argumentation"
@@ -6701,7 +6701,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "08",
           "module": "Primary Source",
           "label": "Module 08, Primary Source",
-          "prompt": "How does Ligon say Barbados was divided? Explain the difference he describes between the servants and the slaves, and which difference lasted \"for ever.\" Ligon says the slaves were \"kept and preserved with greater care than the servants.\" Ligon was part-owner of a sugar plantation. How might his position shape that claim, and what other evidence would you want before you believed it? Choose ONE other piece of Unit 4 evidence: the casta ranking in Spanish America, the growth of the Atlantic slave trade, or villages in West Central Africa with more women than men. Explain how it relates to Ligon's evidence: does one lead to the other, do they show the same pattern, or does one show the opposite?",
+          "prompt": "How does Ligon say Barbados was divided? Explain the difference he describes between the servants and the slaves, and which difference lasted \"for ever.\" Ligon says the slaves were \"kept and preserved with greater care than the servants.\" Ligon was part-owner of a sugar plantation. How might his position shape that claim, and what other evidence would you want before you believed it? Choose ONE other piece of Unit 4 evidence: the casta ranking in Spanish America, the mit’a at Potosí, or Indian weavers making more cloth for buyers overseas. Explain how it relates to Ligon's evidence: does one lead to the other, do they show the same pattern, or do they make a contrast?",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -6715,7 +6715,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "05",
           "module": "AP Skill Builder",
           "label": "Module 05, AP Skill Builder",
-          "prompt": "Now connect a new set of evidence from Unit 4. (1) In the 1570s, Spain turned the Inca mit'a into a draft that sent thousands of Andean men each year to the silver mine at Potosí. (2) Ming China collected most of its taxes in silver, so millions of families needed silver to pay them. (3) In China, peasant families raised silkworms and wove silk, and some of that silk was traded at Manila for American silver. (4) In Spanish America, colonial society ranked people by ancestry, in the casta system. Choose TWO of these pieces of evidence. Write 3 to 5 sentences that explain how they relate: does one lead to the other, do they show the same pattern, or does one show the opposite? Then say what the pair shows about how much the new trade changed people's lives.",
+          "prompt": "Now connect a new set of evidence from Unit 4. (1) At Potosí, Spanish colonists ran one of the richest silver mines in the world, worked by Andean men drafted through the mit'a. (2) Ming China collected most of its taxes in silver, so millions of families needed silver to pay them. (3) In Spanish America, colonial society ranked people by ancestry, in the casta system. (4) About two of every three people carried away in the Atlantic slave trade were male, and parts of West Central Africa were left with more women than men. Choose TWO of these pieces of evidence. Write 3 to 5 sentences that explain how they relate: does one lead to the other, do they show the same pattern, or do they make a contrast? Then say what the pair shows about how much the new trade changed people's lives.",
           "skill": "Argumentation",
           "skills": [
             "Argumentation"

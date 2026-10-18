@@ -37,7 +37,7 @@ window.BEHISTORICAL_LESSON = {
 
   learningTargets: [
     {
-      target: "I can explain how economic developments between 1450 and 1750, such as the new demand for sugar, silver, and cloth, increased the demand for workers and changed how work was done.",
+      target: "I can explain how economic developments between 1450 and 1750, such as the new demand for sugar, silver, and cloth, increased the demand for workers, and how that demand was met.",
       kc: 'Unit 4: Learning Objective N',
       theme: "Economic Systems"
     },
@@ -145,7 +145,7 @@ window.BEHISTORICAL_LESSON = {
         title: "Where the Work Was Forced, Society Was Remade",
         bullets: [
           "On Barbados, planters had only just begun to make sugar when Richard Ligon arrived in 1647. He wrote that the island was \"divided into three sorts of men, viz. Masters, Servants, and slaves.\" Indentured servants worked for a set number of years; the enslaved and their children were held \"for ever.\" By 1679 a count found about 37,700 enslaved people and about 20,000 white settlers. A small group of rich **planters**, a new elite, ruled an enslaved majority, and **chattel slavery** was tied to race.",
-          "In Spanish America, colonial society ranked people by ancestry, the **casta** system, and silver, land, and trade made many creole families rich, a new economic elite. Barbados and Spanish America show the same pattern: a new hierarchy, built in the colonies, based on ancestry.",
+          "In Spanish America, colonial society ranked people by ancestry, the **casta** system, and silver, land, and trade made many creole families rich, a new economic elite.",
           "In Africa, about two of every three people carried away in the Atlantic trade were male. Parts of West Central Africa were left with more women than men, and historians argue that women did more of the farming. The trade made some states, like Asante, stronger, while Afonso I of Kongo protested in 1526 that it was carrying off \"the children of our nobles and vassals.\""
         ],
         image: {
@@ -159,12 +159,12 @@ window.BEHISTORICAL_LESSON = {
         title: "What Stayed, and How to Argue It",
         bullets: [
           "Most people still farmed. The College Board's own sentence about the period begins with that: production \"continued to be heavily centered on agriculture.\" Spinners, weavers, and silk families did work their grandparents knew, at home and as a family, only more of it, for buyers far away. Rulers who inherited their thrones and nobles with privileges stayed on top, and Asian merchants kept the Indian Ocean trading.",
-          "To argue, connect the evidence. One piece can **lead to** another (sugar demand, then plantations, then a huge slave trade). Two can show **the same pattern** in two places (Barbados and the casta ranking). And one can show **the opposite** (a Chinese silk family that worked more but lived much as before).",
-          "A strong thesis names a change, a continuity, and the reason. One defensible thesis: the new global economy changed social structures most where it needed workers by force, and least where old ways of working could simply produce more."
+          "To argue, connect the evidence. One piece can **lead to** another (sugar demand, then plantations, then a huge slave trade). Two can show **the same pattern** in two places (spinners in Holland and weavers in India, both doing old work in larger amounts). And two can make **a contrast** (an Andean man drafted far from home to the mine, and a Chinese silk family still working at home).",
+          "A strong thesis names a change, a continuity, and the reason: where did the new trade change social structures most, where did it change them least, and why?"
         ],
         image: {
           title: "A weaver's workshop in the Netherlands, 1659",
-          caption: "Two weavers at a large loom, with a spinning wheel and a cradle in the same room, painted by Cornelis Decker in 1659: work done at home, by a family. Rijksmuseum.",
+          caption: "Two weavers at a large loom, in a room that also holds a spinning wheel and a cradle, painted by Cornelis Decker in 1659: work done at home. Rijksmuseum.",
           url: "../assets/images/topics/4-5/weavers-decker-1659.jpg",
           sourceUrl: "https://www.rijksmuseum.nl/en/collection/SK-A-2562"
         }
@@ -206,7 +206,7 @@ window.BEHISTORICAL_LESSON = {
     questions: [
       "How does Ligon say Barbados was divided? Explain the difference he describes between the servants and the slaves, and which difference lasted \"for ever.\"",
       "Ligon says the slaves were \"kept and preserved with greater care than the servants.\" Ligon was part-owner of a sugar plantation. How might his position shape that claim, and what other evidence would you want before you believed it?",
-      "Choose ONE other piece of Unit 4 evidence: the casta ranking in Spanish America, the growth of the Atlantic slave trade, or villages in West Central Africa with more women than men. Explain how it relates to Ligon's evidence: does one lead to the other, do they show the same pattern, or does one show the opposite?"
+      "Choose ONE other piece of Unit 4 evidence: the casta ranking in Spanish America, the mit’a at Potosí, or Indian weavers making more cloth for buyers overseas. Explain how it relates to Ligon's evidence: does one lead to the other, do they show the same pattern, or do they make a contrast?"
     ]
   },
 

@@ -2155,7 +2155,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       unit: 'Unit 4: Transoceanic Interconnections',
       topic: 'Continuity and Change from 1450 to 1750',
       learningTargets: [
-        { text: 'I can explain how economic developments between 1450 and 1750, such as the new demand for sugar, silver, and cloth, increased the demand for workers and changed how work was done.', label: 'Economic Systems' },
+        { text: 'I can explain how economic developments between 1450 and 1750, such as the new demand for sugar, silver, and cloth, increased the demand for workers, and how that demand was met.', label: 'Economic Systems' },
         { text: 'I can explain how those economic developments changed social structures: who was forced to work, who rose to the top, and how families lived, in places such as Barbados, Spanish America, and West Central Africa.', label: 'Social Interactions and Organization' },
         { text: 'I can write a thesis and a short argument about how much social structures changed between 1450 and 1750, and what stayed the same, connecting evidence from different Unit 4 topics.', label: 'Argumentation' }
       ],
@@ -2183,7 +2183,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       unit: 'Unit 4: Transoceanic Interconnections',
       topic: 'Continuity and Change from 1450 to 1750',
       learningTargets: [
-        { text: 'I can explain how economic developments between 1450 and 1750, such as the new demand for sugar, silver, and cloth, increased the demand for workers and changed how work was done.', label: 'Economic Systems' },
+        { text: 'I can explain how economic developments between 1450 and 1750, such as the new demand for sugar, silver, and cloth, increased the demand for workers, and how that demand was met.', label: 'Economic Systems' },
         { text: 'I can explain how those economic developments changed social structures: who was forced to work, who rose to the top, and how families lived, in places such as Barbados, Spanish America, and West Central Africa.', label: 'Social Interactions and Organization' },
         { text: 'I can write a thesis and a short argument about how much social structures changed between 1450 and 1750, and what stayed the same, connecting evidence from different Unit 4 topics.', label: 'Argumentation' }
       ],

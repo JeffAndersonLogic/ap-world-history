@@ -1677,7 +1677,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "None of it could happen until ships could cross an ocean and come back (Topic 4.1). Europe built those ships from borrowed knowledge: the compass from China; the astrolabe, a Greek idea that astronomers in the Islamic world made precise; tables of the sky first built by Muslim and Jewish astronomers; and the triangular lateen sail, common across the Mediterranean and the seas of the Islamic world. It built new ships around them, the caravel and the carrack, and around 1600 the Dutch fluyt, which carried a large cargo with a small, cheap crew and made shipping goods much cheaper. And its sailors learned the Atlantic's winds, swinging far out to sea to catch a wind that blew them home. Once ships went and came back again and again, the two halves of the world were joined, and trade was transformed."
+            "html": "None of it could happen until ships could cross an ocean and come back (Topic 4.1). Europe built those ships from borrowed knowledge: the compass from China; the astrolabe, a Greek idea that astronomers in the Islamic world made precise; tables of the sky built by Muslim and Jewish astronomers in Toledo; and the triangular lateen sail, common across the Mediterranean and the seas of the Islamic world. It built new ships around them, the caravel and the carrack, and around 1600 the Dutch fluyt, which carried a large cargo with a small, cheap crew and made shipping goods much cheaper. And its sailors learned the Atlantic's winds, swinging far out to sea to catch a wind that blew them home. Once ships went and came back again and again, the two halves of the world were joined, and trade was transformed."
           }
         ],
         "callout": {
@@ -1705,7 +1705,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Continuity and Change",
-          "raw": "<p><strong>Do not stop at the trade.</strong> Ships, silver, and companies are the economic developments. They are the start of the answer, not the end. The question is what they did to people, so the next step is always: who had to do the work?</p>"
+          "raw": "<p><strong>Do not stop at the trade.</strong> New demand, silver, and rulers' tools are the economic developments, and ships were the road they came down. They are the start of the answer, not the end. The question is what they did to people, so the next step is always: who had to do the work?</p>"
         }
       },
       {
@@ -1759,7 +1759,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Argumentation",
-          "raw": "<p><strong>Connect the evidence.</strong> Barbados and Spanish America are two places, but they show the same pattern: a new hierarchy, built in the colonies, that ranked people by ancestry and race. When two pieces of evidence show the same pattern in different places, say so. That connection is part of your argument.</p>"
+          "raw": "<p><strong>Connect the evidence.</strong> Ligon's Barbados is one place. When you find a new hierarchy in one place, look for the same pattern somewhere else you have studied, and ask what economic development built each one. A pattern found in two places is stronger evidence than one case alone.</p>"
         }
       },
       {
@@ -1782,7 +1782,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Continuity and Change",
-          "raw": "<p><strong>Change can sit inside a continuity.</strong> A Chinese silk family was still a peasant family under the same emperor's officials. But it now needed silver for its taxes and sold silk to buyers far away. Name the continuity, then the change inside it.</p>"
+          "raw": "<p><strong>Change can sit inside a continuity.</strong> A Chinese silk family was still a peasant family, working at home in its village. But it now needed silver for most of its taxes and sold silk to buyers far away. Name the continuity, then the change inside it.</p>"
         }
       },
       {
@@ -1792,11 +1792,11 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "A list of evidence is not an argument. An argument explains how the pieces of evidence relate to each other. Three relationships do most of the work. The first is <strong>this led to that</strong>: Europe's demand for sugar led to plantations in Barbados and Brazil, which led to a huge slave trade, which left villages in West Central Africa with more women than men. One chain links three continents. The second is <strong>the same pattern, two places</strong>: Barbados's masters, servants, and slaves and Spanish America's casta ranking both show a new hierarchy based on ancestry. The third is <strong>but not everywhere</strong>: the Chinese silk family worked more, but it lived much as before. That contrast is what lets an answer say how much changed."
+            "html": "A list of evidence is not an argument. An argument explains how the pieces of evidence relate to each other. Three relationships do most of the work. The first is <strong>this led to that</strong>: Europe's demand for sugar led to plantations in Barbados and Brazil, which led to a huge slave trade, which left villages in West Central Africa with more women than men. One chain links three continents. The second is <strong>the same pattern, two places</strong>: a spinner in Holland and a weaver in India both did old work in larger amounts, for buyers far away. The third is <strong>a contrast</strong>: an Andean man drafted through the mit’a was taken far from his village to dig silver, while a Chinese silk family kept working at home as a peasant family, even though it now needed silver for most of its taxes. A contrast shows where the new trade changed people's lives most and where it changed them least, and that is what lets an answer say how much changed."
           },
           {
             "type": "p",
-            "html": "Put the evidence together, and you can write a <span class=\"kt\">thesis</span>, a claim that answers the question and that you can defend with evidence. Here is one: between 1450 and 1750, the new global economy changed social structures most where it needed new workers by force, in the plantation Americas and the parts of Africa the slave trade reached, while across most of Afro-Eurasia older ways of working and ruling continued and simply produced more. You can argue a different thesis. What you cannot do is leave out the evidence on the other side."
+            "html": "Put the evidence together, and you can write a <span class=\"kt\">thesis</span>, a claim that answers the question and that you can defend with evidence. A strong thesis names a change, a continuity, and the reason for the difference: where did the new trade change social structures most, where did it change them least, and why? You can argue more than one thesis from the same evidence. What you cannot do is leave out the evidence on the other side."
           },
           {
             "type": "p",
@@ -1820,14 +1820,14 @@ module.exports = {
       {
         "num": "01",
         "skill": "Continuity and Change",
-        "text": "Choose one economic development from this reading: plantation sugar, Potosí silver, or the demand for cloth. Follow it to the workers it needed, then explain one change it made to a social structure. Then name one thing that stayed the same.",
+        "text": "Choose one economic development from this reading: the new demand for sugar, the silver of Potosí, or the new demand for cloth. Follow it to the workers it needed, then explain one change it made to a social structure. Then name one thing that stayed the same.",
         "placeholder": "The economic development I chose is... It needed workers because... It changed a social structure by... One thing that stayed the same was..."
       },
       {
         "num": "02",
         "skill": "Argumentation",
-        "text": "Ligon wrote that Barbados was \"divided into three sorts of men, viz. Masters, Servants, and slaves.\" Choose one other piece of evidence from this reading and explain how it relates to Ligon's: does it continue a chain of causes, show the same pattern in another place, or show the opposite?",
-        "placeholder": "The evidence I chose is... It relates to Ligon's evidence because it (continues the chain / shows the same pattern / shows the opposite)..."
+        "text": "Ligon wrote that Barbados was \"divided into three sorts of men, viz. Masters, Servants, and slaves.\" Choose ONE of these pieces of evidence: the casta ranking in Spanish America, the mit’a at Potosí, or the Chinese silk family. Explain how it relates to Ligon's evidence: does one lead to the other, do they show the same pattern, or do they make a contrast?",
+        "placeholder": "The evidence I chose is... It relates to Ligon's evidence because (one led to the other / they show the same pattern / they make a contrast)..."
       },
       {
         "num": "03",
