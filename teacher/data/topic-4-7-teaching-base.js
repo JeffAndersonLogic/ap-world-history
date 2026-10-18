@@ -239,7 +239,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'Protected', text: 'Christians and Jews may practice their religion.' },
           { label: 'Self-run', text: 'Their own leaders run marriage, inheritance, schools and family courts.' },
           { label: 'The price', text: 'They pay a special tax, the jizya.' },
-          { label: 'The limits', key: true, text: 'Generally no testimony against a Muslim in an Islamic court; top army and government jobs go to Muslims.' }
+          { label: 'The limits', key: true, text: 'In Islamic courts, generally no testimony against a Muslim; top jobs go to Muslims.' }
         ]
       },
       notes: {
@@ -383,7 +383,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'fortunes', kind: 'timeline-fortunes', eyebrow: 'Old Elites · Rise and Fall',
-      kc: 'KC-4.2.III.B', title: 'Sipahis and boyars fell; tax farmers and local families rose in their place.',
+      kc: 'KC-4.2.III.B', title: 'Sipahis and boyars fell. Others rose in their place.',
       footer: 'The lines show direction only, not measured power.',
       template: {
         range: [1450, 1750], tick: 50,
@@ -529,7 +529,7 @@ window.BEHISTORICAL_TEACHING = {
       title: 'The ladder stayed. The people on it moved.',
       footer: 'Conquest, new wealth and stronger rulers decided who moved where.',
       template: {
-        date: '1450 to 1750',
+        date: 'By 1750',
         before: { tag: 'Before', items: ['Older nobles share power with rulers', 'Every society already ranks people from top to bottom'] },
         after: { tag: 'Changed', items: ['**Who belongs**: welcomed or used, pushed out or limited', '**New elites**: the Qing banners; peninsulares and creoles', '**Old elites squeezed**: sipahis, boyars, French nobles'] },
         continued: { tag: 'Stayed the same', items: ['A ruler who inherits power, on top', 'Privileged nobles beneath', 'Most people at the bottom; a woman\'s place set by her class'] }

@@ -146,7 +146,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "The limits",
             "key": true,
-            "text": "Generally no testimony against a Muslim in an Islamic court; top army and government jobs go to Muslims."
+            "text": "In Islamic courts, generally no testimony against a Muslim; top jobs go to Muslims."
           }
         ],
         "visual": {
@@ -320,7 +320,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "timeline-fortunes",
       "eyebrow": "Old Elites · Rise and Fall",
-      "title": "Sipahis and boyars fell; tax farmers and local families rose in their place.",
+      "title": "Sipahis and boyars fell. Others rose in their place.",
       "footer": "The lines show direction only, not measured power.",
       "kc": "KC-4.2.III.B",
       "template": {
@@ -556,7 +556,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "The ladder stayed. The people on it moved.",
       "footer": "Conquest, new wealth and stronger rulers decided who moved where.",
       "template": {
-        "date": "1450 to 1750",
+        "date": "By 1750",
         "before": {
           "tag": "Before",
           "items": [
