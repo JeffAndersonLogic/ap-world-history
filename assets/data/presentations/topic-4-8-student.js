@@ -262,7 +262,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "1679",
-            "text": "About **37,700** enslaved people and about **20,000** white settlers."
+            "text": "About **37,700** enslaved people counted; about **20,000** white settlers, historians estimate."
           }
         ],
         "proves": "A new society: a few rich planters on top, an enslaved majority below."
@@ -275,7 +275,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "footer": "Ligon lived on and helped run a sugar plantation. Keep that in mind.",
       "kc": "KC-4.2",
       "template": {
-        "quote": "The Island is divided into three sorts of men, viz. Masters, Servants, and slaves. The slaves and their posterity, being subject to their Masters for ever ... the servants, who are theirs but for five years.",
+        "quote": "The Island is divided into three sorts of men, viz. [namely] Masters, Servants, and slaves. The slaves and their posterity [children and descendants], being subject to their Masters for ever ... the servants, who are theirs but for five years.",
         "attribution": {
           "author": "Richard Ligon, who lived on Barbados from 1647 to 1650",
           "work": "A True and Exact History of the Island of Barbados, spelling modernized",
@@ -458,7 +458,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         ],
         "links": [
           "so",
-          "which needed",
+          "whose owners bought",
           "which left"
         ]
       }

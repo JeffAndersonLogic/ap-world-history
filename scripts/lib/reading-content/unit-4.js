@@ -1638,7 +1638,7 @@ module.exports = {
     "showFooterNote": false,
     "headerSubtitle": "Topic 4.8, Continuity and Change from 1450 to 1750 &nbsp;|&nbsp; AP World History: Modern",
     "titleHtml": "Follow the Trade to the <em>People</em>",
-    "deck": "Between 1450 and 1750, ships joined the two halves of the world, and new trade in sugar, silver, and cloth needed more workers than ever. That changed who did the work, who rose to the top, and how families lived, most of all where the work was forced. But most people still farmed, and much of the old world kept working the old way, only harder.",
+    "deck": "Between 1450 and 1750, ships joined the two halves of the world, and new trade in sugar, silver, and cloth needed more workers than ever. How did that change who did the work, who rose to the top, and how families lived? And how much of the old world kept working the old way? This reading follows the trade to the people, and you make the argument.",
     "skillTags": [
       "Continuity and Change",
       "Argumentation"
@@ -1673,7 +1673,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "This topic gives you no new empire and no new war. It gives you a question, and you already have the evidence from Topics 4.1 to 4.7. The College Board asks how <span class=\"kt\">economic developments</span>, big changes in how people made, bought, and sold things, affected <span class=\"kt\">social structures</span> between 1450 and 1750. A social structure is the way a society is organized: who does the work, who rules and rises, and how families and communities live. Your job is to answer with an argument, and the trick is to follow the trade all the way to the people."
+            "html": "This topic gives you no new empire and no new war. It gives you a question, and you already have almost all of the evidence, from Topics 4.1 to 4.7. The one new case is Barbados, in Section 4. The College Board asks how <span class=\"kt\">economic developments</span>, big changes in how people made, bought, and sold things, affected <span class=\"kt\">social structures</span> between 1450 and 1750. A social structure is the way a society is organized: who does the work, who rules and rises, and how families and communities live. Your job is to answer with an argument, and the trick is to follow the trade all the way to the people."
           },
           {
             "type": "p",
@@ -1746,7 +1746,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Sugar made the masters rich. Ligon wrote that one planter, James Drax, had begun on the island with no more than 300 pounds and had raised a great fortune, \"all by this plant of Sugar.\" Over the next few decades, the planters bought more and more enslaved Africans, and in 1679 a count of the island found about 37,700 enslaved people and about 20,000 white settlers. Sugar had made a new kind of society: a small, rich group of planters at the top, and an enslaved majority at the bottom, held for life, by inheritance, and by race."
+            "html": "Sugar made the masters rich. Ligon wrote that one planter, James Drax, had begun on the island with no more than 300 pounds and had raised a great fortune, \"all by this plant of Sugar.\" Over the next few decades, the planters bought more and more enslaved Africans, and in 1679 a count of the island found about 37,700 enslaved people; historians estimate there were about 20,000 white settlers. Sugar had made a new kind of society: a small, rich group of planters at the top, and an enslaved majority at the bottom, held for life, by inheritance, and by race."
           },
           {
             "type": "p",
@@ -1792,7 +1792,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "A list of evidence is not an argument. An argument explains how the pieces of evidence relate to each other. Three relationships do most of the work. The first is <strong>this led to that</strong>: Europe's demand for sugar led to plantations in Barbados and Brazil, which led to a huge slave trade, which left villages in West Central Africa with more women than men. One chain links three continents. The second is <strong>the same pattern, two places</strong>: a spinner in Holland and a weaver in India both did old work in larger amounts, for buyers far away. The third is <strong>a contrast</strong>: an Andean man drafted through the mit’a was taken far from his village to dig silver, while a weaver in India kept working at home, making more cloth than before for buyers overseas. A contrast shows where the new trade changed people's lives most and where it changed them least, and that is what lets an answer say how much changed."
+            "html": "A list of evidence is not an argument. An argument explains how the pieces of evidence relate to each other. Three relationships do most of the work. The first is <strong>this led to that</strong>: Europe's demand for sugar led to plantations in Barbados and Brazil, whose planters chose to buy enslaved Africans, which led to a huge slave trade, which left villages in West Central Africa with more women than men. One chain links three continents. The second is <strong>the same pattern, two places</strong>: a spinner in Holland and a weaver in India both did old work in larger amounts, for buyers far away. The third is <strong>a contrast</strong>: an Andean man drafted through the mit’a was taken far from his village to dig silver, while a weaver in India kept working at home, making more cloth than before for buyers overseas. A contrast shows where the new trade changed people's lives most and where it changed them least, and that is what lets an answer say how much changed."
           },
           {
             "type": "p",
@@ -1813,7 +1813,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "Between 1450 and 1750, ships built from borrowed knowledge joined the two halves of the world, and new demand for sugar, silver, and cloth needed more workers than ever. Planters bought millions of enslaved Africans, Spain drafted Andean men for the silver mines, and peasants and artisans in Europe, India, and China worked more for faraway buyers. Where the work was forced, society was remade: Barbados became a society of masters, servants, and slaves, Spanish America ranked people by ancestry, and the slave trade changed families and states in Africa. But most people still farmed, much of the work stayed family work done the old way, and rulers and nobles stayed on top. Economic change reached into everyday social life, and how much it changed is the argument you make with evidence.",
+    "takeaway": "Between 1450 and 1750, ships built from borrowed knowledge joined the two halves of the world, and new demand for sugar, silver, and cloth needed more workers than ever. Planters bought millions of enslaved Africans, Spain drafted Andean men for the silver mines, and peasants and artisans in Europe, India, and China worked more for faraway buyers. Barbados became a society of masters, servants, and slaves, Spanish America ranked people by ancestry, and the slave trade changed families and states in Africa. Most people still farmed, much of the work stayed family work done at home, and rulers and nobles stayed on top. Economic change reached into everyday social life, and how much it changed is the argument you make with evidence.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [

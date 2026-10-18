@@ -314,7 +314,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'Sugar', text: 'Sugar-making was **still new** in 1647, with plants from Brazil.' },
           { label: 'Workers', text: 'Indentured servants from Britain and Ireland, and **enslaved Africans**.' },
           { label: 'Wealth', text: 'One planter grew rich from 300 pounds, "all by this plant of **Sugar**."' },
-          { label: '1679', text: 'About **37,700** enslaved people and about **20,000** white settlers.' }
+          { label: '1679', text: 'About **37,700** enslaved people counted; about **20,000** white settlers, historians estimate.' }
         ],
         proves: 'A new society: a few rich planters on top, an enslaved majority below.'
       },
@@ -324,7 +324,7 @@ window.BEHISTORICAL_TEACHING = {
           'Richard Ligon, an English royalist, sailed in June 1647 and landed on Barbados in September 1647. He found that "the great work of Sugar-making, was but newly practised," though "many Sugar-works" were already "set up, and at work"; with plants from "Fernamlock," Pernambuco in Brazil. He lived on, and helped run, a sugar plantation that his traveling companion Thomas Modyford had bought a half share of (Ligon\'s own account: "Colonel Modiford was to pay for the Moity of this plantation"), and stayed about three years; he wrote his book in a London debtors\' prison (his dedication is dated 12 July 1653) and published it in 1657.',
           'Servants: most were poor people from England, Scotland and Ireland bound to work for a set number of years, many to pay for their voyage. Historians (Russell Menard) show that servants and enslaved Africans arrived together through the 1640s and 1650s; the island did not switch overnight.',
           'Wealth: Ligon wrote that James Drax began with "a stock not exceeding 300 l. sterling" and raised a fortune, "all by this plant of Sugar." Drax is the planter Ligon saw living "like a Prince."',
-          'The 1679 census, sent to London in 1680: about 37,700 enslaved Africans; about 20,000 white settlers (Economic History Society; Richard Dunn, Sugar and Slaves). The Council of Trade doubted parts of the count, so say "about."',
+          'The 1679 census, sent to London in 1680: about 37,700 enslaved Africans (Economic History Society). The white population, about 20,000, is historians\' estimate (Richard Dunn, Sugar and Slaves, 1972), not a figure the EHS gives from the count, so say "historians estimate." The Council of Trade doubted parts of the count, so say "about."',
           'No picture of a Barbados sugar works from the 1600s is in the course, so this case has none. The sugar works on slide 3 is in the French Caribbean, 1667; do not call it Barbados.'
         ],
         ask: 'Follow sugar to the people: what did it do to who worked and who ruled?',
@@ -337,7 +337,7 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-4.2', title: 'An Englishman describes the island.',
       footer: 'Ligon lived on and helped run a sugar plantation. Keep that in mind.',
       template: {
-        quote: 'The Island is divided into three sorts of men, viz. Masters, Servants, and slaves. The slaves and their posterity, being subject to their Masters for ever ... the servants, who are theirs but for five years.',
+        quote: 'The Island is divided into three sorts of men, viz. [namely] Masters, Servants, and slaves. The slaves and their posterity [children and descendants], being subject to their Masters for ever ... the servants, who are theirs but for five years.',
         attribution: { author: 'Richard Ligon, who lived on Barbados from 1647 to 1650', work: 'A True and Exact History of the Island of Barbados, spelling modernized', year: 'printed in London, 1657' },
         notice: 'How did the three groups differ? Which difference lasted forever?'
       },
@@ -473,7 +473,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'The Atlantic', text: 'Millions of Africans are forced onto ships', key: true },
           { label: 'West Central Africa', text: 'Villages are left with more women than men' }
         ],
-        links: ['so', 'which needed', 'which left']
+        links: ['so', 'whose owners bought', 'which left']
       },
       notes: {
         minutes: 2,
@@ -483,7 +483,7 @@ window.BEHISTORICAL_TEACHING = {
           'Ask students to say the whole chain aloud with the arrow words, then to add one more link of their own (the planters became a rich elite; the enslaved became most of the island\'s people).'
         ],
         ask: 'Read the chain aloud with the arrow words. Then add one more link.',
-        listenFor: 'Europe wanted sugar, so planters built plantations, which needed millions of enslaved Africans, which left villages in West Central Africa with more women than men; and the planters became a rich elite.',
+        listenFor: 'Europe wanted sugar, so planters built plantations, whose owners bought millions of enslaved Africans, which left villages in West Central Africa with more women than men; and the planters became a rich elite.',
         ap: 'KC-4.2.II. Argumentation 6.C: one relationship, explained.'
       }
     },
@@ -546,7 +546,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'The CED\'s sample activity (p. 77) starts here: which reasoning process best organizes an answer to "how economic developments led to changes in social structures, 1450 to 1750"? The CED\'s own reasoning process for 4.8 is Continuity and Change, with causes inside it: the "because" is causation, and "changed ... while ... stayed the same" is continuity and change.',
           'The weak thesis names no development, no place, no continuity and no reason. It fits any three centuries in history, which is why it earns no credit.',
-          'This is a frame, not a model answer. Have pairs fill it in aloud with a case they choose, then trade with a partner and say what would make the partner\'s stronger (the CED\'s peer revision). The First & 10 gives the criteria for a strong thesis and prints no finished one; neither does any student page.'
+          'This is a frame, not a model answer. Have pairs fill it in aloud with a case they choose, then trade with a partner and say what would make the partner\'s stronger (the CED\'s peer revision). The First & 10 gives the criteria for a strong thesis and prints no finished one. The reading\'s opening and takeaway pose the question rather than answer it; the relationship models (slides 17 and 18, the Skill Builder) are taught content a student may use as evidence, not a finished thesis.'
         ],
         ask: 'Why is "changed society a lot" not a thesis?',
         listenFor: 'It does not say which economic development, which social structure, where, what stayed the same, or why.'
