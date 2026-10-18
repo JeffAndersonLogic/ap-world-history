@@ -50,16 +50,16 @@ in this folder, the schedule, and git history.
 | 4.5 | 2026-11-09 | 2026-11-10 | Fresh | 2026-10-16 | `topic-4-5-2026-10-16.md` |
 | 4.6 | 2026-11-11 | 2026-11-12 | Fresh | 2026-10-17 | `topic-4-6-2026-10-17.md` |
 | 4.7 | 2026-11-13 | 2026-11-16 | Fresh | 2026-10-18 | `topic-4-7-2026-10-18.md` |
-| 4.8 | 2026-11-17 | 2026-11-18 | Never | - | - |
+| 4.8 | 2026-11-17 | 2026-11-18 | Fresh | 2026-10-18 | `topic-4-8-2026-10-18.md` |
 
 ## Totals
 
 | State | Topics | Meaning |
 |---|---|---|
-| Fresh | 7 | audited, and nothing has changed since |
+| Fresh | 8 | audited, and nothing has changed since |
 | Stale | 4 | the topic changed after its audit |
 | Review | 0 | a file shared across the unit changed after its audit |
-| Never | 21 | no audit record exists |
+| Never | 20 | no audit record exists |
 
 ## Is the weekly sweep alive?
 

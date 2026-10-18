@@ -146,7 +146,15 @@ const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
 // was interrupted by a usage limit and resumed. The fingerprint moved from
 // 2675b76... and only the 4.7 entry changed; 4.1 to 4.6 and 4.8 are
 // byte-for-byte unchanged.
-const APPROVED_UNIT4_REWRITE_BLOB = '03b7f51d742794f6cd6b6c3750e58ceb67e3870a';
+// Topic 4.8's story-first rewrite, "Follow the Trade to the People", was written
+// from the 4.8 story (docs/TOPIC-4-8-STORY-DRAFT.md) and went through three
+// independent review passes on 2026-10-18 (six reviewers; findings and
+// dispositions in docs/TOPIC-4-8-CLAIM-LEDGER.md), approved under Jeff's
+// standing rule of 2026-10-12, which delegates story and reading approval to the
+// reviewer loop. The loop ended on its three-pass safety valve, every finding
+// fixed or answered. The fingerprint moved from 03b7f51... and only the 4.8 entry
+// changed; 4.1 to 4.7 are byte-for-byte unchanged.
+const APPROVED_UNIT4_REWRITE_BLOB = 'a6badc549120af821186199888140fec13addb09';
 const unit4SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-4.js');
 const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
   && gitBlobSha(fs.readFileSync(unit4SourcePath, 'utf8')) === APPROVED_UNIT4_REWRITE_BLOB;

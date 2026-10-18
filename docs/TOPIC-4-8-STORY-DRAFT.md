@@ -6,7 +6,7 @@ Jeff started this build with "Build 4.8" on 2026-10-18. Topic 4.7 is on `main` (
 this story against the CED source file and the scholarship; the record of what they found is in
 `docs/TOPIC-4-8-CLAIM-LEDGER.md`, under "Review findings".
 
-**Resume here (2026-10-18):** Phases 0 to 8 built and pushed. Review pass 1 done (16 findings: 14 fixed, 2 rejected with reasons, logged in the claim ledger). Pass 2 (two fresh reviewers, packet captured after the pass 1 fixes) is running; next, fix and log its findings, then pass 3 if needed. The reading fingerprint has not moved yet (`readings-golden.js` fails by design until it does).
+**Finished (2026-10-18):** Phases 0 to 9 are built and pushed on `claude/build-4-8-apfzzg`. The reviewer loop ran three passes (six reviewers; 14, 8 and 11 supported defects, every one fixed or answered with its reason) and stopped on the three-pass safety valve; findings and dispositions are in `docs/TOPIC-4-8-CLAIM-LEDGER.md`. The reading fingerprint moved, the audit record is `docs/topic-audits/topic-4-8-2026-10-18.md`, and nothing reaches students until Jeff says "ship it".
 
 **Taught:** Green Tuesday 2026-11-17, Silver Wednesday 2026-11-18, from Jeff's corrected November
 Canvas calendar (2026-10-14), already in `assets/data/announcements-schedule.js` as date-only
