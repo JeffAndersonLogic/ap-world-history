@@ -6,6 +6,8 @@ Jeff started this build with "Build 4.7" on 2026-10-18. Topic 4.6 is on `main` (
 this story against the CED source file and the scholarship; the record of what they found is in
 `docs/TOPIC-4-7-CLAIM-LEDGER.md`, under "Review findings".
 
+**Resume here (2026-10-18):** Phases 0 to 8 are built and pushed on `claude/build-4-7-qqz736`. Review pass 1 is running (page truth and readability on the cheaper model, history on the default model, from a packet made by `capture-topic-for-review.js 4.7`). Next: fix or reject each pass 1 finding in the ledger, recapture, run pass 2. The reading fingerprint (`APPROVED_UNIT4_REWRITE_BLOB`) moves only after the loop, so `readings-golden.js` fails until then by design.
+
 **Taught:** Green Friday 2026-11-13, Silver Monday 2026-11-16, from Jeff's corrected November
 Canvas calendar (2026-10-14), already in `assets/data/announcements-schedule.js` as date-only
 entries.
