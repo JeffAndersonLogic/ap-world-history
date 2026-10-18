@@ -1623,109 +1623,230 @@ module.exports = {
   },
   "4.8": {
     "topicKey": "4.8",
-    "topicLabel": "4.8 - Continuity and Change",
+    "topicLabel": "4.8 - Continuity and Change from 1450 to 1750",
     "sourceFile": "first-and-10-topic-4-8-continuity-and-change.html",
     "unitDir": "unit-4",
-    "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 4.8 Continuity and Change",
+    "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 4.8 Continuity and Change from 1450 to 1750",
     "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
-    "headerSubtitle": "Topic 4.8, Continuity and Change &nbsp;|&nbsp; AP World History: Modern",
-    "titleHtml": "Economic Change, <em>Social Consequence</em>",
-    "deck": "Topic 4.8 asks one synthesis question: how did economic developments from c. 1450 to c. 1750 affect social structures over time? Plantation growth, silver extraction, mercantilism, and intensified production changed demand for labor, created or reshaped hierarchies, altered elite power, and affected families — while older peasant, artisan, and elite structures also persisted.",
+    "showFooterNote": false,
+    "headerSubtitle": "Topic 4.8, Continuity and Change from 1450 to 1750 &nbsp;|&nbsp; AP World History: Modern",
+    "titleHtml": "Follow the Trade to the <em>People</em>",
+    "deck": "Between 1450 and 1750, ships joined the two halves of the world, and new trade in sugar, silver, and cloth needed more workers than ever. That changed who did the work, who rose to the top, and how families lived, most of all where the work was forced. But most people still farmed, and much of the old world kept working the old way, only harder.",
     "skillTags": [
-      "Continuity & Change",
-      "Causation",
+      "Continuity and Change",
       "Argumentation"
     ],
     "supportCards": {
-      "beforeYouRead": "For every economic development, ask what happened to people and hierarchy: who had to work, who gained wealth or status, whose family or community changed, and which older structures remained useful enough to survive.",
-      "readingTarget": "By the end, you should be able to connect specific economic developments to changes in labor, slavery, casta and elite power, or gender/family patterns, then write a continuity-and-change argument explaining why some social structures changed while others persisted."
+      "beforeYouRead": "<strong>Follow the trade to the people.</strong> For every case in this reading, ask three things: what economic development started it, which workers did it need, and what did that do to who worked, who ruled, and how families lived? Then ask the question historians always ask next: what stayed the same?",
+      "readingTarget": "How did economic developments between 1450 and 1750 change social structures, and how much stayed the same?"
     },
     "vocabulary": [
-      "Global Price Revolution",
-      "Columbian Exchange",
-      "Indian Ocean Trade",
-      "Silk Roads",
-      "Demographic Collapse",
-      "Asian Manufacturing",
-      "Manila Galleon",
-      "Silver Economy",
-      "Ecological Transformation",
-      "Islamic Commercial Networks",
-      "CCOT",
-      "Synthesis",
+      "Economic Development",
       "Social Structure",
-      "Plantation Economy",
+      "Plantation",
       "Chattel Slavery",
+      "Mit’a",
+      "Peasant and Artisan Labor",
+      "Indentured Servants",
+      "Planters",
       "Casta",
-      "Peasant Labor",
-      "Artisan Labor",
-      "Elite Power",
-      "Gender and Family"
+      "Continuity",
+      "Change",
+      "Thesis"
     ],
     "sections": [
       {
-        "number":"1","label":"Economic Development","heading":"A Larger Economy Creates New Demands",
-        "blocks":[
-          {"type":"p","html":"From c. 1450 to c. 1750, global <span class=\"kt\">silver</span> flows, mercantilist competition, chartered companies, plantation agriculture, and growing demand for textiles and other consumer goods expanded production and moved wealth through new channels."},
-          {"type":"p","html":"Those economic developments mattered socially because they changed who needed labor, who controlled revenue, and who could convert economic advantage into political or social privilege. Topic 4.8 is about that <strong>economic development -> social structure</strong> mechanism."}
+        "number": "1",
+        "label": "The Question",
+        "heading": "Today You Are the Historian",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Topic 4.7 ended with a question. Trade, work, and the ladder itself all moved between 1450 and 1750. Which change mattered most, and what stayed the same?"
+          },
+          {
+            "type": "p",
+            "html": "This topic gives you no new empire and no new war. It gives you a question, and you already have the evidence from Topics 4.1 to 4.7. The College Board asks how <span class=\"kt\">economic developments</span>, big changes in how people made, bought, and sold things, affected <span class=\"kt\">social structures</span> between 1450 and 1750. A social structure is the way a society is organized: who does the work, who rules and rises, and how families and communities live. Your job is to answer with an argument, and the trick is to follow the trade all the way to the people."
+          },
+          {
+            "type": "p",
+            "html": "None of it could happen until ships could cross an ocean and come back (Topic 4.1). Europe built those ships from borrowed knowledge: the compass from China; the astrolabe, a Greek idea that astronomers in the Islamic world made precise; tables of the sky first built by Muslim and Jewish astronomers; and the triangular lateen sail, common across the Mediterranean and the seas of the Islamic world. It built new ships around them, the caravel and the carrack, and around 1600 the Dutch fluyt, which carried a large cargo with a small, cheap crew and made shipping goods much cheaper. And its sailors learned the Atlantic's winds, swinging far out to sea to catch a wind that blew them home. Once ships went and came back again and again, the two halves of the world were joined, and trade was transformed."
+          }
         ],
-        "callout":{"label":"AP Thinking, Causation","raw":"<p>Do not list an economic change and a social change separately. Explain the connecting mechanism: <strong>new demand or revenue -> changed labor, status, family, or elite power</strong>.</p>"}
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Name both halves.</strong> The question asks how economic developments affected social structures over time. A strong answer says what changed, what stayed the same, and why. As you read, keep two lists: changes and continuities.</p>"
+        }
       },
       {
-        "number":"2","label":"Labor and Slavery","heading":"Plantations and Extraction Reshape Labor Status",
-        "blocks":[
-          {"type":"p","html":"Expanding <span class=\"kt\">plantation economies</span> increased demand for enslaved labor in the Americas, expanding hereditary racialized <span class=\"kt\">chattel slavery</span>. Silver mining and colonial agriculture also relied on systems such as the mita, encomienda, and hacienda."},
-          {"type":"p","html":"At the same time, older <span class=\"kt\">peasant</span> and <span class=\"kt\">artisan labor</span> continued and often intensified in Europe, India, and China as global demand for wool, linen, cotton, silk, food, and manufactured goods grew."}
+        "number": "2",
+        "label": "The Money",
+        "heading": "Sugar, Silver, and Cloth",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Three economic developments came down that ocean road. The first was new demand. Europeans wanted sugar and tobacco grown on <span class=\"kt\">plantations</span>, huge farms in the Americas growing one crop to sell (Topic 4.3). Buyers in Asia, Africa, and Europe wanted cotton cloth woven in India and silk woven in China."
+          },
+          {
+            "type": "p",
+            "html": "The second was silver. From 1545 the mountain at Potosí in the Andes, and from 1546 the mines at Zacatecas in Mexico, poured out silver, and a large share of it ended up in China, where the government collected most of its taxes in silver (Topic 4.5). The third was a set of tools that rulers used to pull that wealth toward themselves: mercantilist laws, and chartered companies such as the Dutch East India Company, the VOC."
+          },
+          {
+            "type": "p",
+            "html": "The money was worth fighting over, and rivals did. A Portuguese fleet defeated an Egyptian and Gujarati fleet off Diu, in India, in 1509. Morocco's army crossed the Sahara and defeated the Songhai Empire at Tondibi in 1591, partly to take control of West Africa's gold and salt trade. VOC officials on the spice island of Ambon executed English traders in 1623. And England and the Dutch Republic fought three wars at sea between 1652 and 1674, largely over trade and shipping."
+          }
         ],
-        "callout":{"label":"AP Thinking, Continuity &amp; Change","raw":"<p><strong>Change:</strong> Atlantic plantation slavery expanded dramatically. <strong>Continuity:</strong> most production still depended on peasant and artisan labor, often working harder for larger markets.</p>"}
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Do not stop at the trade.</strong> Ships, silver, and companies are the economic developments. They are the start of the answer, not the end. The question is what they did to people, so the next step is always: who had to do the work?</p>"
+        }
       },
       {
-        "number":"3","label":"Hierarchy","heading":"Economic Change Creates New Elites and Reworks Old Ones",
-        "blocks":[
-          {"type":"p","html":"Colonial conquest and extraction contributed to new hierarchies such as the Spanish American <span class=\"kt\">casta</span> system, where ancestry, legal status, wealth, and access to office became intertwined."},
-          {"type":"p","html":"Existing <span class=\"kt\">elites</span> also adapted. Local nobles, merchants, landowners, company directors, and state servants could gain or lose influence depending on how well they fit new imperial and commercial systems. Centralizing rulers sometimes weakened independent elites while creating new routes to status through service or court access."}
+        "number": "3",
+        "label": "The Workers",
+        "heading": "More Demand Meant More Work",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "All that demand meant someone had to grow more, mine more, and make more. The College Board's words are that \"the demand for labor intensified.\" It was met in three ways."
+          },
+          {
+            "type": "p",
+            "html": "Plantations and the slave trade. Sugar needed enormous numbers of workers, and planters chose enslaved Africans. Historians estimate that in the whole 1500s, fewer than 300,000 Africans were forced onto ships bound for the Americas. In the fifty years from 1701 to 1750, more than 2.5 million were (Topic 4.4). On the plantations they were held in <span class=\"kt\">chattel slavery</span>: owned as property for life, and their children too."
+          },
+          {
+            "type": "p",
+            "html": "Old forced labor, put to new work. The Inca had required communities to send people to work for the state in turns, a duty called the <span class=\"kt\">mit’a</span>. In the 1570s, Spain turned it into a draft that sent thousands of Andean men each year to the silver mine at Potosí (Topic 4.4)."
+          },
+          {
+            "type": "p",
+            "html": "Peasants and artisans, working more. In western Europe, merchants paid families in the countryside to spin and weave wool and linen at home. In India, weavers made more and more cotton cloth for the European companies. In China, peasant families raised silkworms and wove silk, some of which was traded for American silver, and they needed silver to pay most of their taxes (Topic 4.5). This is <span class=\"kt\">peasant and artisan labor</span>. The work was old. There was more of it, for buyers farther away."
+          }
         ],
-        "callout":{"label":"AP Thinking, Social Structure","raw":"<p>Economic opportunity creates hierarchy when wealth or access to revenue becomes a route to status — and when states write those differences into law or officeholding.</p>"}
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>One change can hold a continuity.</strong> The mit’a was an old Inca duty with a new master and a new job. Peasant and artisan work was old work done in larger amounts. When you find a case like this, say both halves: what was old, and what was new.</p>"
+        }
       },
       {
-        "number":"4","label":"Family and Synthesis","heading":"Demography Changes Families — but Not Everywhere in the Same Way",
-        "blocks":[
-          {"type":"p","html":"The Atlantic trade in enslaved people changed demographics in parts of Africa and could alter <span class=\"kt\">gender and family</span> responsibilities, household labor, and marriage patterns. Forced migration also created new communities and cultural synthesis in the Americas."},
-          {"type":"p","html":"But the period did not produce one universal social transformation. Older labor systems, patriarchal institutions, village structures, and elite groups persisted because expanding states and markets often still depended on them."},
-          {"type":"p","html":"A strong Unit 4 synthesis therefore argues for uneven change: economic developments transformed slavery, colonial hierarchy, and some family patterns while intensifying or adapting older peasant, artisan, and elite structures."}
+        "number": "4",
+        "label": "What Changed",
+        "heading": "Masters, Servants, and Slaves",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "In September 1647 an Englishman named Richard Ligon landed on Barbados, a small English island in the Caribbean. He found that the planters there had only just begun to make sugar, using cane plants brought from Brazil. He bought into a sugar plantation and stayed about three years. In the book he published in 1657, he wrote that \"the Island is divided into three sorts of men, viz. Masters, Servants, and slaves.\" (\"Viz.\" means \"namely.\") The masters were the <span class=\"kt\">planters</span>, the plantation owners. The servants were <span class=\"kt\">indentured servants</span>, most of them poor people from England, Scotland, and Ireland, bound to work for a set number of years, many of them to pay for their voyage. But \"the slaves and their posterity,\" meaning their children and grandchildren, were \"subject to their Masters for ever.\""
+          },
+          {
+            "type": "p",
+            "html": "Sugar made the masters rich. Ligon wrote that one planter, James Drax, had begun on the island with no more than 300 pounds and had raised a great fortune, \"all by this plant of Sugar.\" Over the next few decades, the planters bought more and more enslaved Africans, and in 1679 a count of the island found about 37,700 enslaved people and about 20,000 white settlers. Sugar had made a new kind of society: a small, rich group of planters at the top, and an enslaved majority at the bottom, held for life, by inheritance, and by race."
+          },
+          {
+            "type": "p",
+            "html": "In Spanish America, the silver mines and the great estates sat on top of a mixed society of Spaniards, Indigenous peoples, and Africans, and their children. Spanish colonial society ranked people by their ancestry, the <span class=\"kt\">casta</span> system, and silver, land, and trade made many creole families, people of Spanish ancestry born in the Americas, rich (Topic 4.7). The empire shaped its peoples, and its peoples shaped the empire: new categories grew up for the mixed society in its colonies."
+          },
+          {
+            "type": "p",
+            "html": "The same trade changed Africa. About two of every three people carried away in the Atlantic slave trade were male. In parts of Africa, especially West Central Africa, that left villages with more women than men, and historians argue that women did more of the farming and that more women and girls were enslaved inside Africa itself (Topic 4.5). The trade made some African states stronger: Asante rose by controlling gold and buying guns from Dutch and English traders (Topic 4.4). It could also tear at a kingdom. In 1526, Afonso I of Kongo complained that Portuguese traders were carrying off \"the children of our nobles and vassals.\""
+          }
         ],
-        "callout":{"label":"AP Thinking, CCOT","raw":"<p>The governing claim should answer degree: <strong>where did economic change produce major social restructuring, and where did older structures persist because the new economy still needed them?</strong></p>"}
+        "callout": {
+          "label": "AP Thinking, Argumentation",
+          "raw": "<p><strong>Connect the evidence.</strong> Barbados and Spanish America are two places, but they show the same pattern: a new hierarchy, built in the colonies, that ranked people by ancestry and race. When two pieces of evidence show the same pattern in different places, say so. That connection is part of your argument.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "What Stayed",
+        "heading": "The Old World Kept Working",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Now look at what did not change. Most people still farmed. In 1750, as in 1450, most of the world's people grew food, and the College Board's own sentence about this period begins with that fact: the world's work \"continued to be heavily centered on agriculture.\""
+          },
+          {
+            "type": "p",
+            "html": "Much of the work itself stayed the same. A spinner in Holland, a weaver in India, and a silk family in China did work their grandparents would have known, at home and as a family, with women and girls doing much of the spinning and weaving. Global demand made them work more. It did not replace them."
+          },
+          {
+            "type": "p",
+            "html": "And the ladder stayed. Almost everywhere, a ruler who inherited the throne still sat at the top, and old nobles kept most of their privileges even when stronger kings squeezed them (Topic 4.7). Older forms of slavery went on inside Africa, and Asian merchants kept the Indian Ocean trading (Topic 4.4). So the <span class=\"kt\">continuity</span> is large: most people, most work, and most rulers looked much as they had in 1450. The <span class=\"kt\">change</span> was deepest in the places the new economy reached with force."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Change can sit inside a continuity.</strong> A Chinese silk family was still a peasant family under the same emperor's officials. But it now needed silver for its taxes and sold silk to buyers far away. Name the continuity, then the change inside it.</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "The Argument",
+        "heading": "From Evidence to a Thesis",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "A list of evidence is not an argument. An argument explains how the pieces of evidence relate to each other. Three relationships do most of the work. The first is <strong>this led to that</strong>: Europe's demand for sugar led to plantations in Barbados and Brazil, which led to a huge slave trade, which left villages in West Central Africa with more women than men. One chain links three continents. The second is <strong>the same pattern, two places</strong>: Barbados's masters, servants, and slaves and Spanish America's casta ranking both show a new hierarchy based on ancestry. The third is <strong>but not everywhere</strong>: the Chinese silk family worked more, but it lived much as before. That contrast is what lets an answer say how much changed."
+          },
+          {
+            "type": "p",
+            "html": "Put the evidence together, and you can write a <span class=\"kt\">thesis</span>, a claim that answers the question and that you can defend with evidence. Here is one: between 1450 and 1750, the new global economy changed social structures most where it needed new workers by force, in the plantation Americas and the parts of Africa the slave trade reached, while across most of Afro-Eurasia older ways of working and ruling continued and simply produced more. You can argue a different thesis. What you cannot do is leave out the evidence on the other side."
+          },
+          {
+            "type": "p",
+            "html": "Economic change reached into everyday social life: who worked, who ruled, and how families and communities were organized. How much it changed is the argument you make, with evidence."
+          },
+          {
+            "type": "p",
+            "html": "By 1750 the oceans were joined and states were stronger than ever. Next: who do those states belong to? That is Unit 5."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Argumentation",
+          "raw": "<p><strong>Test your thesis.</strong> A strong thesis answers the whole question (how economic developments affected social structures, and how much stayed the same), takes a position someone could argue against, and points to the evidence you will use. If yours only lists changes, add the continuity.</p>"
+        }
       }
     ],
-    "takeaway": "Economic developments from 1450 to 1750 affected social structures unevenly. Plantation growth and extractive economies expanded coerced labor and Atlantic chattel slavery; colonial conquest and commerce helped create new casta and merchant elites; the slave trade altered gender and family patterns in parts of Africa. At the same time, peasant and artisan labor continued and intensified, and many existing elites adapted to centralizing states and expanding markets. The Unit 4 CCOT answer is therefore both change and continuity, explained through the economic mechanisms that made each possible.",
+    "takeaway": "Between 1450 and 1750, ships built from borrowed knowledge joined the two halves of the world, and new demand for sugar, silver, and cloth needed more workers than ever. Planters bought millions of enslaved Africans, Spain drafted Andean men for the silver mines, and peasants and artisans in Europe, India, and China worked more for faraway buyers. Where the work was forced, society was remade: Barbados became a society of masters, servants, and slaves, Spanish America ranked people by ancestry, and the slave trade changed families and states in Africa. But most people still farmed, much of the work stayed family work done the old way, and rulers and nobles stayed on top. Economic change reached into everyday social life, and how much it changed is the argument you make with evidence.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
-      {"num":"1","skill":"Causation","text":"Choose one economic development such as plantation growth, silver extraction, mercantilism, or intensified production. Explain one specific effect on social structure.","placeholder":"The economic development changed social structure because..."},
-      {"num":"2","skill":"Continuity & Change","text":"Identify one major social change and one major social continuity from c. 1450 to c. 1750. Use specific evidence from two different Unit 4 topics.","placeholder":"One change was... One continuity was..."},
-      {"num":"3","skill":"Argumentation","text":"Write a one-sentence claim answering the Topic 4.8 question: how did economic developments affect social structures over time? Include both change and continuity in your claim.","placeholder":"Economic developments substantially changed... while... continued because..."}
-
+      {
+        "num": "01",
+        "skill": "Continuity and Change",
+        "text": "Choose one economic development from this reading: plantation sugar, Potosí silver, or the demand for cloth. Follow it to the workers it needed, then explain one change it made to a social structure. Then name one thing that stayed the same.",
+        "placeholder": "The economic development I chose is... It needed workers because... It changed a social structure by... One thing that stayed the same was..."
+      },
+      {
+        "num": "02",
+        "skill": "Argumentation",
+        "text": "Ligon wrote that Barbados was \"divided into three sorts of men, viz. Masters, Servants, and slaves.\" Choose one other piece of evidence from this reading and explain how it relates to Ligon's: does it continue a chain of causes, show the same pattern in another place, or show the opposite?",
+        "placeholder": "The evidence I chose is... It relates to Ligon's evidence because it (continues the chain / shows the same pattern / shows the opposite)..."
+      },
+      {
+        "num": "03",
+        "skill": "Argumentation",
+        "text": "Write your own thesis: how did economic developments from 1450 to 1750 affect social structures, and how much stayed the same? Your thesis must name at least one change and one continuity.",
+        "placeholder": "Between 1450 and 1750, economic developments changed... while... stayed the same, because..."
+      }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 4.8, Continuity and Change",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true,
   }
 };
