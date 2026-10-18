@@ -304,7 +304,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-letterbox",
       "eyebrow": "New Elites · A Casta Painting · Mexico, about 1715 to 1720",
       "title": "A chart on canvas, not a census.",
-      "subtitle": "The label, in Spanish, reads \"D Mestizo y d India produce Coyote\": from a mestizo and an Indian woman comes a coyote. Most of the many labels in casta paintings never appear in official records.",
+      "subtitle": "In Spanish, the label says: from a mestizo and an Indian woman comes a coyote. Most casta labels never appear in official records.",
       "kc": "KC-4.2.III.A",
       "template": {
         "visual": {
