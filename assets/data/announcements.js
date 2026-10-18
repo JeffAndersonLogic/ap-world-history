@@ -2104,7 +2104,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain how the power of old elites, such as Ottoman timar holders, Russian boyars, or European nobles, rose or fell as rulers grew stronger and centralized power, and what stayed the same.', label: 'Social Interactions and Organization' }
       ],
       successCriteria: [
-        { text: 'I can explain, for one state that made room for or made use of a group (the Ottoman Empire or Akbar\'s Mughal Empire) and one state that pushed out or limited a group (Spain and Portugal, or Qing China), what the state did and what it gained, and one way the two cases were alike.', label: 'Social Interactions and Organization' },
+        { text: 'I can explain, for one state that made room for or made use of a group (the Ottoman Empire or Akbar\'s Mughal Empire) and one state that pushed out or limited a group (Spain or Qing China), what the state did and what it gained, and, for one of them, what changed for the group and what stayed the same.', label: 'Social Interactions and Organization' },
         { text: 'I can explain how one of the new elites (the Qing banners, or the peninsulares and creoles at the top of the casta system) was made by conquest or new trade.', label: 'Social Interactions and Organization' },
         { text: 'I can explain how the power of one old elite (Ottoman sipahis who held timars, Russian boyars, or French nobles) changed as rulers grew stronger, naming one thing it lost and one thing it kept, and one thing about the top of society that stayed the same.', label: 'Social Interactions and Organization' }
       ],
@@ -2132,7 +2132,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can explain how the power of old elites, such as Ottoman timar holders, Russian boyars, or European nobles, rose or fell as rulers grew stronger and centralized power, and what stayed the same.', label: 'Social Interactions and Organization' }
       ],
       successCriteria: [
-        { text: 'I can explain, for one state that made room for or made use of a group (the Ottoman Empire or Akbar\'s Mughal Empire) and one state that pushed out or limited a group (Spain and Portugal, or Qing China), what the state did and what it gained, and one way the two cases were alike.', label: 'Social Interactions and Organization' },
+        { text: 'I can explain, for one state that made room for or made use of a group (the Ottoman Empire or Akbar\'s Mughal Empire) and one state that pushed out or limited a group (Spain or Qing China), what the state did and what it gained, and, for one of them, what changed for the group and what stayed the same.', label: 'Social Interactions and Organization' },
         { text: 'I can explain how one of the new elites (the Qing banners, or the peninsulares and creoles at the top of the casta system) was made by conquest or new trade.', label: 'Social Interactions and Organization' },
         { text: 'I can explain how the power of one old elite (Ottoman sipahis who held timars, Russian boyars, or French nobles) changed as rulers grew stronger, naming one thing it lost and one thing it kept, and one thing about the top of society that stayed the same.', label: 'Social Interactions and Organization' }
       ],

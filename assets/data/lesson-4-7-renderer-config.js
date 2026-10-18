@@ -85,10 +85,10 @@
     steps: [
       { label: 'The source\'s argument', text: 'Busbecq wrote home that among the Ottomans "no distinction is attached to birth" and "it is by merit that men rise in the service." In other words: Ottoman officials got their jobs because of their ability, not their families.' },
       { label: 'Evidence that supports it', text: 'Boys taken from Christian villages by the devshirme were trained for the sultan\'s service, and some rose to be generals and grand viziers, the highest office below the sultan. That fits Busbecq\'s argument.' },
-      { label: 'Evidence that modifies it', text: 'To reach those top jobs, a Christian had to become Muslim, and the throne itself stayed in one family: Suleiman had inherited it from his father. So merit opened the sultan\'s service, but not to everyone, and not the throne.' },
+      { label: 'Evidence that modifies it', text: 'To reach those top jobs, a Christian had to become Muslim, and the throne itself stayed in one family: Suleiman had inherited it from his father.' },
       { label: 'Put it in one sentence', text: 'Use this frame for your own answer: "[My evidence] supports / modifies / refutes Busbecq\'s argument because ..." Name the evidence, choose one of the three words, and explain why.' }
     ],
-    prompt: 'Now test the second half of Busbecq\'s argument. He wrote that in Europe "birth is the standard for everything." Here are three pieces of evidence: (1) The great nobles who spent their days at Louis XIV\'s palace at Versailles were nobles because they were born into noble families. (2) Russia\'s Table of Ranks of 1722 let a commoner who rose high enough in the army or the government become a noble. (3) In France, families could buy certain high offices, such as a judge\'s seat in the Parlement of Paris, and some of those offices brought noble rank to the family. In 2 to 3 sentences, say whether each piece of evidence supports, modifies, or refutes Busbecq\'s argument about Europe. Then give your verdict: how true was his claim?',
+    prompt: 'Now test the second half of Busbecq\'s argument. He wrote that in Europe "birth is the standard for everything." Busbecq wrote in 1555, so first decide whether later evidence tests what he saw or only shows what came after. Here are three pieces of evidence: (1) From 1682, the great nobles who spent their days at Louis XIV\'s palace at Versailles were nobles because they were born into noble families. (2) Russia\'s Table of Ranks of 1722 let a commoner who rose high enough in the army or the government become a noble. (3) In France, by the 1600s, families could buy certain high offices, such as a judge\'s seat in the Parlement of Paris, and some of those offices brought noble rank to the family. In 2 to 3 sentences, say whether each piece of evidence supports, modifies, or refutes Busbecq\'s argument about Europe. Then give your verdict: how true was his claim?',
     criteria: [
       'I said whether each piece of evidence supports, modifies, or refutes Busbecq\'s argument.',
       'I explained why, not just labeled it.',
@@ -103,7 +103,7 @@
       cardDesc: 'How states made room for or used some religious and ethnic groups, and pushed out or limited others.',
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Choose ONE state that made room for or made use of a religious or ethnic group (the Ottoman Empire or Akbar\'s Mughal Empire) and ONE state that pushed out or limited a group (Spain and Portugal, or Qing China). For EACH, explain what the state did and what the state gained from it. Then, for ONE of your cases, explain one thing about the group\'s place in society that changed and one thing that stayed the same.',
+      prompt: 'Answer in three steps. (1) Choose ONE empire that made room for or made use of a religious or ethnic group: the Ottoman Empire or Akbar\'s Mughal Empire. Explain what it did and what it gained. (2) Choose ONE state that pushed out or limited a group: Spain or Qing China. Explain what it did and what it gained. (3) For ONE of your two cases, explain one thing about the group\'s place in society that changed and one thing that stayed the same.',
       responseType: 'Checkpoint 1',
       terms: ['accommodation', 'accommodate', 'Ottoman', 'Bayezid', 'Jews', 'Salonica', 'protected subjects', 'jizya', 'Mughal', 'Akbar', 'Rajputs', 'Aurangzeb', 'Spain', 'Portugal', 'expelled', 'pushed out', 'Qing', 'Han', 'queue', 'suppress', 'restrict', 'limit'],
       focus: ['Name one state that made room for or used a group, and one that pushed out or limited a group.', 'For each, say what the state did and what it gained.', 'For one case, say what changed for the group and what stayed the same.']
@@ -150,15 +150,15 @@
       alt: 'A painting of a richly decorated room: a woman sits up in a red bed under green curtains on the right, women in colored robes sit and stand around her, one carries a tray, coffee brews on a brass brazier in the middle, and a woman at the lower left prepares drinks.',
       url: '../assets/images/topics/4-7/lying-in-room-vanmour-c1720.jpg',
       sourceUrl: 'https://id.rijksmuseum.nl/200108034',
-      caption: 'Jean Baptiste Vanmour, "Lying-in Room of a Distinguished Turkish Woman," about 1720 to 1737: a wealthy mother receives visitors after giving birth. The museum describes the woman at the lower left, making sherbet for the guests, as enslaved. A European man could not have entered this room, so Vanmour painted it from what he was told and saw elsewhere. Rijksmuseum.',
-      prompt: 'NOTICE the different women in the room: what each is doing, and where. INFER what this shows about how a woman\'s class shaped her life in the Ottoman Empire. Vanmour could not enter this room. How might that limit what the painting can tell you?'
+      caption: 'Jean Baptiste Vanmour, "Lying-in Room of a Distinguished Turkish Woman," about 1720 to 1737: a wealthy mother receives visitors after giving birth. The museum describes the woman at the lower left, making sherbet for the guests, as enslaved. Vanmour was a European man, and a European man probably could not enter a room like this, so the scene may come from what he was told. Rijksmuseum.',
+      prompt: 'NOTICE the different women in the room: what each is doing, and where. INFER what this shows about how a woman\'s class shaped her life in the Ottoman Empire. Vanmour probably could not enter a room like this. How might that limit what the painting can tell you?'
     },
     {
       title: 'The Banners Celebrate the Conquest',
       alt: 'A section of a painted handscroll: a man stands on a galloping horse playing a flute, while rows of men in blue and yellow carry triangular flame-edged banners and others ride horses; a yellow label on the right carries Chinese characters.',
       url: '../assets/images/topics/4-7/banner-horsemanship-1662.jpg',
       sourceUrl: 'https://www.metmuseum.org/art/collection/search/65013',
-      caption: 'Part of a handscroll by Nardunbu, a Manchu artist, dated 1662. It records one of the celebrations held when the Shunzhi emperor, the first Qing emperor to rule from Beijing, entered the city after the conquest of 1644: riders from the highest-ranking banners perform stunts on horseback. The yellow label names the commander of the Plain Yellow Banner. Metropolitan Museum of Art.',
+      caption: 'Part of a handscroll by Nardunbu, a Manchu artist, painted in 1662, eighteen years after the Shunzhi emperor, the first Qing emperor to rule from Beijing, entered the city after the conquest of 1644. It shows one of the celebrations held for that entry: riders from the highest-ranking banners perform stunts on horseback. The yellow label names the commander of the Plain Yellow Banner. Metropolitan Museum of Art.',
       prompt: 'NOTICE what skills the men are showing, and what they carry. INFER why a Manchu painter would record the banners showing off these skills to celebrate the conquest. What can this painting not tell you about how the banners treated the Han Chinese majority?'
     },
     {
@@ -166,7 +166,7 @@
       alt: 'A painting of a family of three: a man in a white shirt and brown cloak on the right, a woman in a white embroidered dress and head cloth in the middle, and a boy holding a basket on the left, with an inscription at the top right.',
       url: '../assets/images/topics/4-7/casta-rodriguez-juarez-c1715.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Juan_Rodr%C3%ADguez_Ju%C3%A1rez_-_De_Mestizo,_y_de_India_Produce_Coyote_(Castas)_-_LA2122_-_Hispanic_Society_of_America.jpg',
-      caption: 'Juan Rodríguez Juárez, a painter in Mexico City, made one of the earliest known sets of casta paintings, about 1715 to 1720. The label at the top right reads "From a mestizo and an Indian woman comes a coyote." Hispanic Society of America.',
+      caption: 'Juan Rodríguez Juárez, a painter in Mexico City, made one of the earliest known sets of casta paintings, about 1715 to 1720. The label at the top, in Spanish, reads "D Mestizo y d India produce Coyote": from a mestizo and an Indian woman comes a coyote. Hispanic Society of America.',
       prompt: 'NOTICE the label and how each person is dressed and posed. INFER what the painting wants viewers to believe about colonial society. Most of the labels in casta paintings never appear in official records. What does that suggest about using this painting as evidence of how people actually lived?'
     },
     {

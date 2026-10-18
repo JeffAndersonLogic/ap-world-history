@@ -241,3 +241,28 @@ Both primary sources were checked letter for letter against the original texts a
 ### Pass 2 (interrupted and resumed)
 
 Both pass 2 reviewers stopped on a usage limit on 2026-10-18 (resets 9am UTC) and were resumed, not relaunched, after the reset, under the build-topic rule.
+
+### Pass 2, reviewer 1 (page truth, readability, CED, ownership), 10 findings
+
+1. **The Skill Builder's "modifies" step still ended on the verdict that answers First & 10 question 3.** Supported. Fixed: the verdict sentence is cut from the Skill Builder; question 3 now tests only the European half of Busbecq's claim ("birth is the standard for everything") with evidence about European nobles or rulers, and the section 5 callout says so. Slide 19 still models the Ottoman half, which no reading question asks.
+2. **The casta label's language was not named.** Supported. Fixed: "The label at the top, in Spanish, reads 'D Mestizo y d India produce Coyote': from a mestizo and an Indian woman comes a coyote" (Evidence Lab, slide 14, lecture card 3).
+3. **BeSurreal squeezed the exile and the arrival into one summer.** Supported. Fixed: "You Left Spain in 1492"; the arrival in Salonica is in 1493, "after months of waiting in ports along the way."
+4. **The banners scroll read as if painted at the 1644 entry.** Supported. Fixed: "painted in 1662, eighteen years after the Shunzhi emperor entered Beijing," showing one of the celebrations held for that entry (Evidence Lab, lecture card 2, slide 12).
+5. **Slide layout: the placard covered the paintings on slides 10 and 14, the slide 14 credit collided with the card, and the slide 12 eyebrow was hard to read on the cream scroll.** Supported. Fixed: slides 10 and 14 are now letterbox slides (eyebrow above, whole painting, title and text below, nothing laid over the picture); slide 12 drops its eyebrow.
+6. **Slide 15's title said only "fell, and new ones rose," which is narrower than KC-4.2.III.B.** Supported. Fixed: "Old elites' power fluctuated: some fell, and others rose."
+7. **The Skill Builder's European evidence came without dates, though Busbecq wrote in 1555.** Supported. Fixed: Versailles "from 1682," the Table of Ranks of 1722, French offices "by the 1600s," and a first step: decide whether later evidence tests what Busbecq saw or only shows what came after.
+8. **Checkpoint 1 packed three tasks into one sentence and said "Spain and Portugal" where the story teaches Spain.** Supported. Fixed: three numbered steps, and "Spain or Qing China" (renderer, lesson data, slide 22 notes).
+9. **First & 10 question 1 was labeled Causation, though the topic's move is Continuity and Change.** Supported. Fixed: labeled Continuity and Change, and the question adds one thing about the group's place that stayed the same (placeholder updated).
+10. **"A European man could not have entered this room" was stated as certain.** Supported. Fixed: "a European man probably could not enter a room like this, so the scene may come from what he was told" (Evidence Lab card and prompt, slide 25 notes).
+
+### Pass 2, reviewer 2 (history against outside sources), 7 findings
+
+All seven picture records, the Busbecq quotation and the key dates were checked and found accurate.
+
+1. **The Willow Palisade "kept Han farmers out."** Supported (it was never fully effective; Han migration continued). Fixed: "was built to keep Han farmers out of the Manchu homeland, though many crossed anyway" (First & 10, lecture card 2, deep reading section and closing card); the deep reading dates it "in stages from the late 1630s to about 1680"; slide 11 notes match.
+2. **BeInTheRoom's "Purity of Blood" card gave Spain's meaning, not New Spain's in 1715.** Supported (Martínez, Genealogical Fictions, 2008, cited by the reviewer from knowledge). Fixed: "In Spain, purity of blood meant having no Jewish or Muslim ancestors. In New Spain, officials also used it against people with African ancestry."
+3. **BeInTheRoom called the creoles an "old elite," while every other surface teaches them as a new one.** Supported. Fixed: "established guild members," "guild privilege," "Guild Privileges," and "established elites."
+4. **Louis XIV "had never forgotten the Fronde," and the taming of the nobles stated as settled.** Supported (Beik, Past & Present 188, 2005, read by the reviewer as an abstract). Fixed: "made sure there would be no second Fronde," and "he kept them loyal by giving them offices, pensions and army commands" (First & 10, lecture card 4); slide 17 notes name the collaboration view.
+5. **Slide 8 notes said non-Muslim testimony "counted for less," against the slide's "no testimony."** Supported. Fixed: "generally could not testify against a Muslim in an Islamic court, except in some commercial cases"; the listen-for matches.
+6. **"A group of nobles" invited William of Orange.** Supported (the Immortal Seven: four peers, a bishop and two commoners). Fixed: "seven leading Englishmen, most of them nobles" (First & 10, deep reading).
+7. **The Montagu introduction did not say she revised the letters.** Supported. Fixed: "She later revised her letters into a book, which was circulating in manuscript by 1724 ... so read it as a letter she polished for readers." The quoted wording was confirmed against the manuscript-based edition.

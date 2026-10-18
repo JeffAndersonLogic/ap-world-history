@@ -55,7 +55,7 @@ window.BEHISTORICAL_LESSON = {
 
   successCriteria: [
     {
-      criteria: "I can explain, for one state that made room for or made use of a group (the Ottoman Empire or Akbar's Mughal Empire) and one state that pushed out or limited a group (Spain and Portugal, or Qing China), what the state did and what it gained, and, for one of them, what changed for the group and what stayed the same.",
+      criteria: "I can explain, for one state that made room for or made use of a group (the Ottoman Empire or Akbar's Mughal Empire) and one state that pushed out or limited a group (Spain or Qing China), what the state did and what it gained, and, for one of them, what changed for the group and what stayed the same.",
       kc: 'KC-4.3.I.B',
       theme: "Social Interactions and Organization"
     },
@@ -122,11 +122,11 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "When the Manchus conquered China in 1644, they were a small minority ruling a huge Han Chinese majority. They could not run China by themselves, so they kept the Chinese system: the civil service exams, the Confucian officials, and the law codes. Han scholars still filled most government jobs. That is the **continuity**.",
           "They also built a new elite at the top, the **banners**: hereditary military units of Manchus, Mongols, and Han families who had joined the Manchus early. Bannermen lived in walled quarters in the cities, were paid by the state, and had legal privileges.",
-          "And they restricted the majority. In 1645 every Han man had to wear the Manchu braid, the **queue**, or be killed. Many top posts went to two officials, one Manchu and one Han, so the Manchu could watch the Han. A line of willow fences kept Han farmers out of the Manchu homeland in the northeast."
+          "And they restricted the majority. In 1645 every Han man had to wear the Manchu braid, the **queue**, or be killed. Many top posts went to two officials, one Manchu and one Han, so the Manchu could watch the Han. A line of willow fences was built to keep Han farmers out of the Manchu homeland in the northeast, though many crossed anyway."
         ],
         image: {
           title: "Banner horsemen celebrate the conquest",
-          caption: "Part of a painted handscroll by Nardunbu, a Manchu artist, dated 1662. It records the celebrations when the young Qing emperor entered Beijing after the conquest of 1644: a rider stands on a galloping horse playing a flute, while men carry the banners. The yellow label names the commander of the Plain Yellow Banner. Metropolitan Museum of Art.",
+          caption: "Part of a painted handscroll by Nardunbu, a Manchu artist, painted in 1662, eighteen years after the young Qing emperor entered Beijing, showing one of the celebrations held for that entry: a rider stands on a galloping horse playing a flute, while men carry the banners. The yellow label names the commander of the Plain Yellow Banner. Metropolitan Museum of Art.",
           url: "../assets/images/topics/4-7/banner-horsemanship-1662.jpg",
           sourceUrl: "https://www.metmuseum.org/art/collection/search/65013"
         }
@@ -140,7 +140,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "A casta painting, about 1715",
-          caption: "Juan Rodríguez Juárez painted one of the earliest known casta series in Mexico, about 1715 to 1720. The label at the top right says that a mestizo father and an Indian mother produce a \"coyote\" child. Hispanic Society of America.",
+          caption: "Juan Rodríguez Juárez painted one of the earliest known casta series in Mexico, about 1715 to 1720. The label at the top, in Spanish, says that a mestizo father and an Indian mother produce a \"coyote\" child. Hispanic Society of America.",
           url: "../assets/images/topics/4-7/casta-rodriguez-juarez-c1715.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Juan_Rodr%C3%ADguez_Ju%C3%A1rez_-_De_Mestizo,_y_de_India_Produce_Coyote_(Castas)_-_LA2122_-_Hispanic_Society_of_America.jpg"
         }
@@ -150,7 +150,7 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "An Ottoman **sipahi** was a cavalryman who held a **timar**, the right to collect the taxes of a piece of land in return for riding to war. When wars came to need soldiers with guns paid in cash, the sultan needed money more than horsemen, so the state sold the right to collect taxes instead, and from 1695 it sold it for life. The sipahis faded: some families held on to their timars, which were not abolished until 1831, but they no longer led the army, and tax farmers and powerful local families rose.",
           "In Russia, Peter the Great replaced the old council of **boyars** with a Senate he appointed and made noblemen serve the state for life. His **Table of Ranks** of 1722 made a man's place depend on the rank he earned. The nobles lost their independence but kept their estates and their serfs.",
-          "In France, Louis XIV centralized power and kept the great nobles at his palace at Versailles, competing for his favor. The French **nobility** kept their titles and privileges and lost the power to defy the king. But in England in 1688, Parliament, a body of landowning nobles and gentry, limited the monarchs instead. The power of old elites could fall, or rise."
+          "In France, Louis XIV centralized power and kept the great nobles at his palace at Versailles, competing for his favor, and kept them loyal with offices, pensions and army commands. The French **nobility** kept their titles and privileges and lost the power to defy the king. But in England in 1688, Parliament, a body of landowning nobles and gentry, limited the monarchs instead. The power of old elites could fall, or rise."
         ],
         image: {
           title: "Peter the Great",
@@ -185,13 +185,13 @@ window.BEHISTORICAL_LESSON = {
 
   evidenceLab: {
     title: "Evidence Lab: Who Belongs, Who Rises",
-    intro: "Use the cards to build one claim about who could belong, who could rise, or who was squeezed between 1450 and 1750: a Mughal painting of Akbar and the Rajputs, two paintings of life in Istanbul by Jean Baptiste Vanmour, a Manchu painter's handscroll of the banners, a casta painting from Mexico, and a painting of Versailles in 1722.",
+    intro: "Use the cards to build one claim about who could belong, who could rise, or who was squeezed between 1450 and 1750: a Mughal painting of a Rajput ruler submitting to Akbar, two paintings of life in Istanbul by Jean Baptiste Vanmour, a Manchu painter's handscroll of the banners, a casta painting from Mexico, and a painting of Versailles in 1722.",
     prompt: "Choose two cards and make one claim about who could belong, who could rise, or who was squeezed in an empire between 1450 and 1750."
   },
 
   primarySource: {
     title: "Primary Source: Lady Mary Wortley Montagu on Ottoman Women, 1717",
-    intro: "Lady Mary Wortley Montagu was an English noblewoman whose husband was Britain's ambassador to the Ottoman Empire. In 1717, living in Adrianople (today Edirne, in Turkey), she wrote letters home describing the Ottoman women she met, most of them wealthy. This is part of her letter to her sister of April 1, 1717. The letters were first published in 1763, after her death; this text is from the 1906 Everyman edition. Words in brackets are explanations, and \"...\" marks words left out.",
+    intro: "Lady Mary Wortley Montagu was an English noblewoman whose husband was Britain's ambassador to the Ottoman Empire. In 1717, living in Adrianople (today Edirne, in Turkey), she wrote letters home describing the Ottoman women she met, most of them wealthy. This is part of her letter to her sister of April 1, 1717. She later revised her letters into a book, which was circulating in manuscript by 1724; it was first published in 1763, after her death, so read it as a letter she polished for readers; this text is from the 1906 Everyman edition. Words in brackets are explanations, and \"...\" marks words left out.",
     text: "'Tis very easy to see they have more liberty than we have. No woman, of what rank soever, being permitted to go into the streets without two muslins [veils]; one that covers her face all but her eyes, and another that hides the whole dress of her head ... there is no distinguishing the great lady from her slave. ... This perpetual masquerade [constant disguise] gives them entire liberty of following their inclinations without danger of discovery. ... Neither have they much to apprehend [fear] from the resentment of their husbands; those ladies that are rich having all their money in their own hands, which they take with them upon a divorce, with an addition which he is obliged to give them. Upon the whole, I look upon the Turkish women as the only free people in the empire: the very Divan [the sultan's council] pays a respect to them ... They are queens of their slaves, whom the husband has no permission so much as to look upon ...",
     questions: [
       "What is Montagu's argument about Ottoman women? Quote the words where she states it most directly, then say it in your own words.",
@@ -201,9 +201,9 @@ window.BEHISTORICAL_LESSON = {
   },
 
   beSurreal: {
-    title: "BeSurreal: You Left Spain, Summer 1492",
+    title: "BeSurreal: You Left Spain in 1492",
     desc: "You are fifteen, from a Jewish family of cloth merchants in Spain. Since spring, the king and queen's order has been read aloud in the towns: every Jew must become Christian or leave the kingdom by the end of July. The order lets you take your goods, but not gold, silver, or coins.",
-    intro: "Your cousin Isaac has decided to be baptized and stay. He keeps his house and his shop. Your family sold what it could, for whatever buyers would pay, and left. After a long and dangerous journey by sea, you have arrived in Salonica, a port city of the Ottoman Empire, where the sultan lets refugees like you settle.",
+    intro: "Your cousin Isaac has decided to be baptized and stay. He keeps his house and his shop. Your family sold what it could, for whatever buyers would pay, and left. After a long and dangerous journey by sea, and months of waiting in ports along the way, it is now 1493, and you have reached Salonica, a port city of the Ottoman Empire, where the sultan lets refugees like you settle.",
     detail: "In Salonica, Jewish families from Spain are setting up their own congregations, speaking Spanish among themselves, and going back to trade. You can pray openly. Your community's leaders run your marriages and settle your disputes, and they answer to the sultan's officials for your community's taxes, including the jizya, a special tax that Christians and Jews pay. You are safe here. But the highest offices in the sultan's army and government go almost always to Muslims.",
     prompt: "Write a letter to your cousin Isaac, who was baptized and stayed in Spain. Tell him about the journey and your new life in Salonica: what you are allowed to do, what you pay, and what you still cannot do. Then write two sentences you would not dare send: which of you made the better choice, and why?"
   },

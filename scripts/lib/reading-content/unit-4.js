@@ -1514,7 +1514,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "The Qing also held the Han majority in place. In 1645 they ordered every Han man to shave the front of his head and wear his hair in a long braid, the Manchu <span class=\"kt\">queue</span>, or be killed. Many top posts in the capital went to two officials, one Manchu and one Han, so the Manchu could watch the Han. A long line of ditches and willow fences in the northeast kept Han farmers out of the Manchu homeland. These were restrictions on the majority, made by a new elite that wanted to stay on top."
+            "html": "The Qing also held the Han majority in place. In 1645 they ordered every Han man to shave the front of his head and wear his hair in a long braid, the Manchu <span class=\"kt\">queue</span>, or be killed. Many top posts in the capital went to two officials, one Manchu and one Han, so the Manchu could watch the Han. A long line of ditches and willow fences in the northeast was built to keep Han farmers out of the Manchu homeland, though many crossed anyway. These were restrictions on the majority, made by a new elite that wanted to stay on top."
           },
           {
             "type": "p",
@@ -1545,7 +1545,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In France, Louis XIV had never forgotten the Fronde (Topic 4.6). He sent royal officials called intendants to run the provinces, and in 1682 he moved his court and government to his palace at Versailles, where great nobles spent their days near the king, competing for his favor instead of raising armies at home. The French <span class=\"kt\">nobility</span> kept their titles, their land, and their freedom from the main tax. What they lost was the power to defy the king. But the power of old elites could rise as well as fall. In England in 1688, a group of nobles invited William of Orange to bring an army, King James II fled, and Parliament, a body of landowning nobles and gentry, set limits on the monarchs who came after him. There, the old elite won."
+            "html": "In France, Louis XIV made sure there would be no second Fronde (Topic 4.6). He sent royal officials called intendants to run the provinces, and in 1682 he moved his court and government to his palace at Versailles, where great nobles spent their days near the king, competing for his favor instead of raising armies at home, and he kept them loyal by giving them offices, pensions and army commands. The French <span class=\"kt\">nobility</span> kept their titles, their land, and their freedom from the main tax. What they lost was the power to defy the king. But the power of old elites could rise as well as fall. In England in 1688, seven leading Englishmen, most of them nobles, invited William of Orange to bring an army, King James II fled, and Parliament, a body of landowning nobles and gentry, set limits on the monarchs who came after him. There, the old elite won."
           },
           {
             "type": "p",
@@ -1554,7 +1554,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Claims and Evidence in Sources",
-          "raw": "<p><strong>Test a source's argument.</strong> A piece of evidence can <strong>support</strong> an argument (it fits), <strong>modify</strong> it (it is true, but only for some people or some places), or <strong>refute</strong> it (it shows the argument is wrong). Before you decide, look back through this reading for one piece of evidence about Ottoman officials and one about European nobles. Question 3 asks you to do this with Busbecq.</p>"
+          "raw": "<p><strong>Test a source's argument.</strong> A piece of evidence can <strong>support</strong> an argument (it fits), <strong>modify</strong> it (it is true, but only for some people or some places), or <strong>refute</strong> it (it shows the argument is wrong). Before you decide, look back through this reading for evidence about European nobles: who they were born as, and how some people rose. Question 3 asks you to test the European half of Busbecq's claim.</p>"
         }
       },
       {
@@ -1591,9 +1591,9 @@ module.exports = {
     "questions": [
       {
         "num": "01",
-        "skill": "Causation",
-        "text": "Choose the Ottoman Empire or the Mughal Empire. Explain one way it made room for or made use of a religious or ethnic group, and why the ruler did it. Then name one state in this reading that pushed out or held down a group instead.",
-        "placeholder": "The empire I chose is... It made room for... by... The ruler did this because... A state that pushed out or held down a group instead was..."
+        "skill": "Continuity and Change",
+        "text": "Choose the Ottoman Empire or the Mughal Empire. Explain one way it made room for or made use of a religious or ethnic group, why the ruler did it, and one thing about that group's place in society that stayed the same. Then name one state in this reading that pushed out or held down a group instead.",
+        "placeholder": "The empire I chose is... It made room for... by... The ruler did this because... One thing that stayed the same for the group was... A state that pushed out or held down a group instead was..."
       },
       {
         "num": "02",
@@ -1604,7 +1604,7 @@ module.exports = {
       {
         "num": "03",
         "skill": "Claims and Evidence in Sources",
-        "text": "Busbecq argued that the Ottomans rose \"by merit,\" while in Europe \"birth is the standard for everything.\" Choose one piece of evidence from this reading and explain whether it supports, modifies, or refutes his argument.",
+        "text": "Busbecq argued that in Europe \"birth is the standard for everything.\" Choose one piece of evidence from this reading about European nobles or rulers and explain whether it supports, modifies, or refutes his argument about Europe.",
         "placeholder": "The evidence I chose is... It supports / modifies / refutes Busbecq's argument because..."
       }
     ],

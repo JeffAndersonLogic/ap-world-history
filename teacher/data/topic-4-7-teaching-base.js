@@ -247,11 +247,11 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'Under Islamic law, Christians and Jews were protected subjects (dhimmis). In the Ottoman Empire their own religious authorities ran family law, worship, schooling and charity, and answered to the state for order and taxes. This agrees with Topic 3.2\'s chapter.',
           'Do not teach the "millet system" as one tidy empire-wide chart; that picture is largely a nineteenth-century formalization read backward (3.2 chapter). Arrangements were made community by community and city by city.',
-          'The limits were real: the jizya; testimony that counted for less against a Muslim\'s in an Islamic court; restrictions on building new houses of worship; top military and government posts for Muslims. The devshirme (3.2) took Christian boys, converted them and trained them for service: a route to the top that required leaving one\'s family\'s religion.',
+          'The limits were real: the jizya; non-Muslims generally could not testify against a Muslim in an Islamic court, except in some commercial cases; restrictions on building new houses of worship; top military and government posts for Muslims. The devshirme (3.2) took Christian boys, converted them and trained them for service: a route to the top that required leaving one\'s family\'s religion.',
           'The picture: Jean Baptiste Vanmour, "Armenian Wedding," about 1720 to 1737 (Rijksmuseum SK-A-2001). The museum describes an Armenian wedding procession on its way to church for the blessing, with musicians, the groom, his parents, the priest and the bride in red. Vanmour was a Flemish-born painter who lived in Istanbul and painted its peoples for European buyers. An Armenian Christian community celebrating in public in the Ottoman capital is accommodation at work.'
         ],
         ask: 'Name one thing Christians and Jews could do, and one thing they could not.',
-        listenFor: 'Could: practice their religion, run their own family law and schools. Could not: give testimony equal to a Muslim\'s, freely build new churches, hold top posts without converting.',
+        listenFor: 'Could: practice their religion, run their own family law and schools. Could not: testify against a Muslim in court, freely build new churches, hold top posts without converting.',
         ap: 'KC-4.3.I.B: accommodation, and its limits. Continuity: Muslims stayed on top.'
       }
     },
@@ -281,15 +281,9 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'women', kind: 'frame-placard', eyebrow: 'Who Belongs · Ottoman Women, by Class',
-      kc: 'KC-4.3.I.B', title: 'A wealthy household, and the enslaved woman in it.',
-      template: {
-        placard: {
-          tag: 'Istanbul · about 1720 to 1737',
-          name: 'Who has a say?',
-          text: 'A wealthy mother receives visitors after a birth, women of her own class. At the lower left, the museum says, **an enslaved woman** makes sherbet for the guests.'
-        }
-      },
+      phase: 'women', kind: 'frame-letterbox', eyebrow: 'Who Belongs · Ottoman Women, by Class · Istanbul, about 1720 to 1737',
+      kc: 'KC-4.3.I.B', title: 'Who has a say? A wealthy household, and the enslaved woman in it.',
+      subtitle: 'A wealthy mother receives visitors of her own class after a birth. At the lower left, the museum says, an enslaved woman makes sherbet for the guests.',
       notes: {
         minutes: 2,
         land: [
@@ -318,7 +312,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'The Manchus, whose ruler Hong Taiji had named the dynasty Qing in 1636, took Beijing in 1644 and began to rule China. They were a small minority ruling a Han majority; no population figure is given on the slide.',
           'The banners: hereditary military units of Manchus, Mongols and Han who joined the Manchus before 1644. Bannermen received state stipends, grain and housing in garrison quarters, and had legal privileges ordinary Han did not (Wikipedia, "Eight Banners"). In 1648 Manchus were a minority inside the banners themselves.',
-          'The queue order of July 1645: adult Han men had to shave the front of the head and wear the Manchu braid, on pain of death. Many top posts in the capital went to two officials, one Manchu and one Han (dual appointment). The Willow Palisade, begun about 1648, restricted Han civilian settlement in the northeast.',
+          'The queue order of July 1645: adult Han men had to shave the front of the head and wear the Manchu braid, on pain of death. Many top posts in the capital went to two officials, one Manchu and one Han (dual appointment). The Willow Palisade, built in stages from the late 1630s to about 1680, restricted Han civilian settlement in the northeast, though it never fully worked and many Han crossed.',
           'Continuity: the Qing kept the Ming\'s civil service examinations, Confucian bureaucracy and law codes, and Han scholars filled most government jobs.',
           'Do not say the Qing "banned marriage between Manchus and Han." The rules changed over time; a 1648 decree allowed some such marriages.'
         ],
@@ -328,9 +322,9 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'banners', kind: 'frame-subtitle', eyebrow: 'New Elites · The Banners',
+      phase: 'banners', kind: 'frame-subtitle',
       kc: 'KC-4.2.III.A',
-      title: 'A Manchu painter shows the new elite: banner horsemen celebrate the Qing emperor\'s entry into Beijing.',
+      title: 'Painted in 1662, eighteen years after the Qing emperor entered Beijing: banner horsemen at one of the celebrations held for him.',
       notes: {
         minutes: 1,
         land: [
@@ -371,15 +365,9 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'castapainting', kind: 'frame-placard', eyebrow: 'New Elites · A Casta Painting, about 1715 to 1720',
+      phase: 'castapainting', kind: 'frame-letterbox', eyebrow: 'New Elites · A Casta Painting · Mexico, about 1715 to 1720',
       kc: 'KC-4.2.III.A', title: 'A chart on canvas, not a census.',
-      template: {
-        placard: {
-          tag: 'Mexico · about 1715 to 1720',
-          name: 'A chart on canvas',
-          text: 'The label reads: **"From a mestizo and an Indian woman comes a coyote."** Most of the many labels in casta paintings never appear in official records.'
-        }
-      },
+      subtitle: 'The label, in Spanish, reads "D Mestizo y d India produce Coyote": from a mestizo and an Indian woman comes a coyote. Most of the many labels in casta paintings never appear in official records.',
       notes: {
         minutes: 2,
         land: [
@@ -395,7 +383,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'fortunes', kind: 'timeline-fortunes', eyebrow: 'Old Elites · Rise and Fall',
-      kc: 'KC-4.2.III.B', title: 'Old elites fell, and new ones rose.',
+      kc: 'KC-4.2.III.B', title: 'Old elites\' power fluctuated: some fell, and others rose.',
       footer: 'The lines show direction only, not measured power.',
       template: {
         range: [1450, 1750], tick: 50,
@@ -457,7 +445,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'France: after the Fronde (4.6), Louis XIV sent royal officials, the intendants, to run the provinces (they had been withdrawn during the Fronde and were restored after it), and on 6 May 1682 moved his court and government to Versailles, where great nobles competed for his favor instead of raising armies at home. Topic 3.2 shows Versailles as a tool of rule; this slide shows it from the nobles\' side.',
+          'France: after the Fronde (4.6), Louis XIV sent royal officials, the intendants, to run the provinces (they had been withdrawn during the Fronde and were restored after it), and on 6 May 1682 moved his court and government to Versailles, where great nobles competed for his favor instead of raising armies at home. Historians now describe this as collaboration more than taming: the king kept the great nobles loyal with offices, pensions and army commands (William Beik, Past & Present, 2005). Topic 3.2 shows Versailles as a tool of rule; this slide shows it from the nobles\' side.',
           'Nobles kept their titles, their land and their exemption from the main direct tax, the taille (the capitation of 1695 did tax them, which is why the slide says "tax freedom" without "all"). What they lost was the power to defy the king.',
           'England: in 1688 seven leading Englishmen, nobles and a bishop among them, invited William of Orange to bring an army; James II fled; Parliament, of landowning nobles and gentry, offered the crown to William and Mary and set limits on the monarchy in the Bill of Rights of 1689.',
           'Pierre-Denis Martin\'s painting of 1722 (Château de Versailles), in the Evidence Lab, shows the palace and town with carriages and riders arriving, the year the young Louis XV brought the court back.'
@@ -604,7 +592,7 @@ window.BEHISTORICAL_TEACHING = {
           'It asks for one state that welcomed or used a group and one that pushed out or limited a group, with what each state gained (KC-4.3.I.B). Give feedback in the room: on an alternating block nothing carries over.'
         ],
         ask: 'Name one state that made room for a group and one that pushed a group out.',
-        listenFor: 'The Ottomans and the Jewish refugees, or Akbar and the Rajputs; Spain and Portugal, or the Qing and the Han.'
+        listenFor: 'The Ottomans and the Jewish refugees, or Akbar and the Rajputs; Spain and the Jews it expelled, or the Qing and the Han.'
       }
     },
     {
@@ -615,8 +603,8 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 7,
         land: [
-          'Six real objects: the Akbarnama painting of Akbar and the Rajputs; Vanmour\'s Armenian wedding and his lying-in room; the banner handscroll dated 1662; the casta painting of about 1715 to 1720; and Martin\'s Versailles of 1722.',
-          'Observation before inference: what the source shows, then what it suggests, then what it cannot tell you. Vanmour painted for European buyers and could not have entered a wealthy woman\'s rooms; the casta painting is an elite\'s ideal. Both are good limits to name.',
+          'Six real objects: the Akbarnama painting of a Rajput ruler submitting to Akbar; Vanmour\'s Armenian wedding and his lying-in room; the banner handscroll dated 1662; the casta painting of about 1715 to 1720; and Martin\'s Versailles of 1722.',
+          'Observation before inference: what the source shows, then what it suggests, then what it cannot tell you. Vanmour painted for European buyers and probably could not enter a wealthy woman\'s rooms; the casta painting is an elite\'s ideal. Both are good limits to name.',
           'Every picture in the Evidence Lab is a real historical object; none is AI-generated.'
         ],
         ask: 'What does the source show before you tell me what it means?',
