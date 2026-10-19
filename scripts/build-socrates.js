@@ -56,7 +56,12 @@ const { buildTeachMePrompt } = require('../assets/js/behistorical-coach-prompt')
 
 const ROOT = path.join(__dirname, '..');
 const RENDERER = path.join(ROOT, 'assets', 'js', 'behistorical-topic-renderer-v1.js');
-const TEACH_ME_GUIDE = path.join(ROOT, 'study-guides', 'era-2-exam-study-guide.html');
+// Every era study guide that carries the Teach Me launcher. They share one
+// MagicSchool room, so their checker knowledge goes into one file.
+const TEACH_ME_GUIDES = [
+  { era: 'Era 2', file: path.join(ROOT, 'study-guides', 'era-2-exam-study-guide.html'), topics: 14, comparisons: 6, multiTopic: ['1.7', '2.7'] },
+  { era: 'Era 3', file: path.join(ROOT, 'study-guides', 'era-3-exam-study-guide.html'), topics: 12, comparisons: 6, multiTopic: ['3.4', '4.8'] }
+];
 const OUT = path.join(ROOT, 'docs', 'socrates');
 const CHECK = process.argv.includes('--check');
 
@@ -166,7 +171,8 @@ function teachMeInstructionsDoc() {
 }
 
 function teachMeKnowledgeDoc() {
-  return [GEN, '', buildTeachMeKnowledgeDocument(fs.readFileSync(TEACH_ME_GUIDE, 'utf8')).trim(), ''].join('\n');
+  const guides = TEACH_ME_GUIDES.map(guide => ({ ...guide, html: fs.readFileSync(guide.file, 'utf8') }));
+  return [GEN, '', buildTeachMeKnowledgeDocument(guides).trim(), ''].join('\n');
 }
 
 function spineEntry(t) {
@@ -266,7 +272,8 @@ function contractDoc(topics) {
     '   `scripts/lib/first10-page.js` emits into each page;',
     '4. `scripts/lib/socrates-course.js` calls it to produce this document and to',
     '   feed the graded eval.',
-    '5. `study-guides/era-2-exam-study-guide.html` calls it to prepare the',
+    '5. `study-guides/era-2-exam-study-guide.html` and',
+    '   `study-guides/era-3-exam-study-guide.html` call it to prepare the',
     '   separate Teach Me checker paste from the guide cards.',
     '',
     'Three checks hold that together: `build-coach-prompt.js --check` re-derives the',
@@ -346,11 +353,13 @@ function contractDoc(topics) {
     'The guide uses one launcher for all activities and copies this paste without',
     'displaying it. The same student action opens the configured Socrates room.',
     '',
-    'The generated `socrates-teach-me-knowledge.md` file carries the guide content',
-    'privately through MagicSchool Specific knowledge. The Teach Me persona forbids',
-    'quoting, paraphrasing, revealing, or hinting at it. Topic',
-    '1.7, Topic 2.7, and the six cross-topic comparisons include every guide card',
-    'named in their evidence scope so comparisons are not restricted to one topic.',
+    'The generated `socrates-teach-me-knowledge.md` file carries the content of',
+    'both era guides privately through MagicSchool Specific knowledge, each under',
+    'its own era heading, because both guides open the same Teach Me room. The',
+    'Teach Me persona forbids quoting, paraphrasing, revealing, or hinting at it.',
+    'Topics 1.7, 2.7, 3.4, and 4.8 and the twelve cross-topic comparisons include',
+    'every guide card named in their evidence scope so comparisons are not',
+    'restricted to one topic.',
     ''
   ].join('\n');
 }

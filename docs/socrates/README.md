@@ -65,8 +65,8 @@ Everything except the two personas is generated. Rebuild with
 - `socrates-teach-me-instructions.md`, paste into the separate Socrates: Teach
   Me chatbot.
 - `socrates-teach-me-knowledge.md`, paste into the Teach Me chatbot's Specific
-  knowledge field. It is generated from the live Era 2 study guide and is never
-  included in a student's paste.
+  knowledge field. It is generated from the live Era 2 and Era 3 study guides,
+  which share the one Teach Me room, and is never included in a student's paste.
 - `socrates-course-spine.md`, upload as the chatbot's attachment.
 - `spine/socrates-spine-<unit>.md`, the same content split ten ways. Use these
   instead if the single file hits an upload limit, or if retrieval is picking the
@@ -113,7 +113,7 @@ and does, is that the documents are reproducible from the lesson data.
    `scripts/lib/classroom-config.js`.
 5. Run `node scripts/build-classroom-config.js`, then run the offline and browser
    test suites.
-6. Open the Era 2 study guide, use the Teach Me launcher, choose a topic and
+6. Open the Era 2 or Era 3 study guide, use the Teach Me launcher, choose a topic and
    teaching focus, then select Copy Prompt and Open Socrates. Paste the copied
    prompt and verify the chatbot's first reply is the exact four-line opening
    before publishing the site change.

@@ -1040,13 +1040,22 @@ window.BEHISTORICAL_SCHEDULE = {
 
     /* ---- Era 3 Study Guide Work Day ------------------------- */
     // Jeff confirmed November 19/20 replace the earlier November 18/19 dates.
+    // The work day carries the Era 3 study guide link, as the 2.7 days carry
+    // the Eras 2 guide; the due date is typed, each cohort's own exam day.
+    // The exam days carry exam-aligned targets and criteria, as the Eras 2
+    // exam days do.
     {
       date: '2026-11-19',
       cohort: 'green',
       topicTitle: 'Era 3 Study Guide Work Day',
       unit: 'Units 3 and 4',
       learningTargets: ['I can identify which Unit 3 and Unit 4 concepts I need to review before the Era 3 exam.'],
-      successCriteria: ['I can use my study guide to identify gaps and plan my review.']
+      successCriteria: ['I can use my study guide to identify gaps and plan my review.'],
+      homework: 'Study with the Era 3 Exam Study Guide, linked in Canvas and on the Unit 3 and Unit 4 pages.',
+      homeworkDue: 'Monday, November 23',
+      resources: [
+        { text: 'Era 3 Exam Study Guide', href: 'study-guides/era-3-exam-study-guide.html', desc: 'Units 3 and 4, c. 1450 to c. 1750.' }
+      ]
     },
     {
       date: '2026-11-20',
@@ -1054,19 +1063,44 @@ window.BEHISTORICAL_SCHEDULE = {
       topicTitle: 'Era 3 Study Guide Work Day',
       unit: 'Units 3 and 4',
       learningTargets: ['I can identify which Unit 3 and Unit 4 concepts I need to review before the Era 3 exam.'],
-      successCriteria: ['I can use my study guide to identify gaps and plan my review.']
+      successCriteria: ['I can use my study guide to identify gaps and plan my review.'],
+      homework: 'Study with the Era 3 Exam Study Guide, linked in Canvas and on the Unit 3 and Unit 4 pages.',
+      homeworkDue: 'Tuesday, November 24',
+      resources: [
+        { text: 'Era 3 Exam Study Guide', href: 'study-guides/era-3-exam-study-guide.html', desc: 'Units 3 and 4, c. 1450 to c. 1750.' }
+      ]
     },
     {
       date: '2026-11-23',
       cohort: 'green',
       topicTitle: 'Era 3 Exam, c. 1450 to c. 1750',
-      unit: 'Units 3 and 4'
+      unit: 'Units 3 and 4',
+      learningTargets: [
+        'I can explain and compare how land-based empires expanded, held power, and justified their rule from c. 1450 to c. 1750.',
+        'I can explain the causes and effects of transoceanic exploration and the Columbian Exchange in both hemispheres.',
+        'I can analyze how maritime empires, global trade, and labor systems changed and continued social structures from c. 1450 to c. 1750.'
+      ],
+      successCriteria: [
+        'I can use specific historical evidence from several empires to explain similarities and differences in how rulers expanded and held power.',
+        'I can connect technology, state sponsorship, and economic motives to the growth of transoceanic trade and empire.',
+        'I can use historical reasoning, especially causation and continuity and change, to explain a source and connect it to the era.'
+      ]
     },
     {
       date: '2026-11-24',
       cohort: 'silver',
       topicTitle: 'Era 3 Exam, c. 1450 to c. 1750',
-      unit: 'Units 3 and 4'
+      unit: 'Units 3 and 4',
+      learningTargets: [
+        'I can explain and compare how land-based empires expanded, held power, and justified their rule from c. 1450 to c. 1750.',
+        'I can explain the causes and effects of transoceanic exploration and the Columbian Exchange in both hemispheres.',
+        'I can analyze how maritime empires, global trade, and labor systems changed and continued social structures from c. 1450 to c. 1750.'
+      ],
+      successCriteria: [
+        'I can use specific historical evidence from several empires to explain similarities and differences in how rulers expanded and held power.',
+        'I can connect technology, state sponsorship, and economic motives to the growth of transoceanic trade and empire.',
+        'I can use historical reasoning, especially causation and continuity and change, to explain a source and connect it to the era.'
+      ]
     }
   ],
 

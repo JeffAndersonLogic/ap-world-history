@@ -197,10 +197,12 @@ TEACH_REQUIRED.forEach(([re, what]) => {
 const teachKnowledge = fs.readFileSync(path.join(DOCS, 'socrates-teach-me-knowledge.md'), 'utf8');
 const teachKnowledgeTopics = [...teachKnowledge.matchAll(/^## Topic \d\.\d:/gm)].length;
 const teachKnowledgeComparisons = [...teachKnowledge.matchAll(/^## Comparison:/gm)].length;
-if (teachKnowledgeTopics === 14 && teachKnowledgeComparisons === 6) {
-  ok('Teach Me private knowledge covers 14 topics and 6 cross-topic comparisons');
+// Era 2 (14 topics, 6 comparisons) plus Era 3 (12 topics, 6 comparisons):
+// both guides open the same Teach Me room, so one file carries both.
+if (teachKnowledgeTopics === 26 && teachKnowledgeComparisons === 12) {
+  ok('Teach Me private knowledge covers 26 topics and 12 cross-topic comparisons across the Era 2 and Era 3 guides');
 } else {
-  fail(`Teach Me private knowledge covers ${teachKnowledgeTopics} topics and ${teachKnowledgeComparisons} comparisons, expected 14 and 6`);
+  fail(`Teach Me private knowledge covers ${teachKnowledgeTopics} topics and ${teachKnowledgeComparisons} comparisons, expected 26 and 12`);
 }
 if (/Never quote,\s+paraphrase, summarize, reveal, or hint/.test(teachKnowledge)) {
   ok('Teach Me private knowledge carries its non-disclosure boundary');
@@ -253,7 +255,8 @@ const contract = fs.readFileSync(path.join(DOCS, 'socrates-paste-contract.md'), 
   'scripts/lib/socrates-teach-me-persona.js',
   'assets/js/behistorical-topic-renderer-v1.js',
   'scripts/lib/first10-page.js',
-  'study-guides/era-2-exam-study-guide.html'
+  'study-guides/era-2-exam-study-guide.html',
+  'study-guides/era-3-exam-study-guide.html'
 ].forEach(f => {
   if (contract.includes(f)) ok(`contract names ${f}`);
   else fail(`contract does not name ${f}, so a change there has nothing pointing at it`);

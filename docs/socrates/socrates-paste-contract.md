@@ -16,7 +16,8 @@ There is exactly one implementation of it,
    `scripts/lib/first10-page.js` emits into each page;
 4. `scripts/lib/socrates-course.js` calls it to produce this document and to
    feed the graded eval.
-5. `study-guides/era-2-exam-study-guide.html` calls it to prepare the
+5. `study-guides/era-2-exam-study-guide.html` and
+   `study-guides/era-3-exam-study-guide.html` call it to prepare the
    separate Teach Me checker paste from the guide cards.
 
 Three checks hold that together: `build-coach-prompt.js --check` re-derives the
@@ -117,8 +118,10 @@ starting point without placing checker content in the student paste.
 The guide uses one launcher for all activities and copies this paste without
 displaying it. The same student action opens the configured Socrates room.
 
-The generated `socrates-teach-me-knowledge.md` file carries the guide content
-privately through MagicSchool Specific knowledge. The Teach Me persona forbids
-quoting, paraphrasing, revealing, or hinting at it. Topic
-1.7, Topic 2.7, and the six cross-topic comparisons include every guide card
-named in their evidence scope so comparisons are not restricted to one topic.
+The generated `socrates-teach-me-knowledge.md` file carries the content of
+both era guides privately through MagicSchool Specific knowledge, each under
+its own era heading, because both guides open the same Teach Me room. The
+Teach Me persona forbids quoting, paraphrasing, revealing, or hinting at it.
+Topics 1.7, 2.7, 3.4, and 4.8 and the twelve cross-topic comparisons include
+every guide card named in their evidence scope so comparisons are not
+restricted to one topic.
