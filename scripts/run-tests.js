@@ -89,6 +89,7 @@ const SUITES = {
     ['scripts/test/teaching-os-briefing.browser.test.js', 'Briefing opens, shares, and stays off the projector on every Teaching OS page'],
     ['scripts/test/teaching-os-projection.browser.test.js', 'projector follows the teacher, never shows Teacher Preflight, and the iPad Remote loads'],
     ['scripts/test/teaching-os-presenter.browser.test.js', 'native fullscreen, exit recovery, and readable teacher notes on every Teaching OS deck'],
+    ['scripts/test/teaching-os-remote.browser.test.js', 'two-device iPad handshake, slide sync, relay fallbacks, and bounded network recovery'],
     ['scripts/test/lightbox-sweep.js', 'enlargeable images operable on all 77'],
     ['scripts/test/confidence.test.js', 'confidence scale'],
     ['scripts/test/skills-lens.test.js', 'Skills Lens panels'],

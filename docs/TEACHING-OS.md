@@ -155,6 +155,26 @@ This exists because Topics 2.6, 2.7 and 3.1 to 3.4 shipped a teacher page that s
 
 **The iPad Remote frames `topic-X-X-os.html` for every topic but the 1.7 pilot**, in `teacher/remote-host.html` and `teacher/ipad-remote.html`. It used to name the topics that had that page and send everything else to `command-center-topic-X-X.html`, a list that fell behind: 3.1, 3.3 and 3.4 framed files that were never made.
 
+**The two-device connection uses `teacher/remote-relay.js`.** It tries ntfy's
+event stream, WebSocket, then finite JSON polling. Sends and polls time out after
+six seconds; an ambiguous send is retried with the same message ID so a slide
+command cannot run twice. Received IDs survive a tab reload. The iPad retries a
+lost hello, applies the saved laptop slide after its frame loads, and reconnects
+on return from sleep. The QR code opens immediately. Both devices offer Retry
+Connection; an unreachable relay or rate limit gets a visible explanation.
+An idle five-minute heartbeat avoids the previous pair of messages every twenty
+seconds. The relay carries slide numbers and controls, never teacher notes or
+student work. A network that cannot reach `ntfy.sh` still needs that host allowed
+or another network; changing transport does not bypass a blocked relay host.
+
+`scripts/test/teaching-os-remote.browser.test.js` runs the actual host and iPad
+pages in separate browser contexts against a controlled relay fixture. It checks
+lost hello recovery, a slow lesson frame, all three receive transports, duplicate
+commands, slide changes from either device, retry after a stalled network, and
+rate-limit backoff. Its negative control removes handshake retry and must fail
+to connect. These tests verify software recovery, not public relay availability
+or a physical iPad's school-network access.
+
 `scripts/test/teaching-os-projection.browser.test.js`, in the browser suite, opens every deck in `DECKS` with its projection window beside it and asserts that the projector opens without Teacher Preflight, follows the teacher, that a reload resumes, that Present never shows preflight and Escape returns, and that the iPad Remote loads the topic. Its negative controls deafen the projector, remove the hold screen and restore the remote's old topic list, and each must be caught. A new deck is covered by being in `DECKS`.
 
 ## Topic-specific visual composition
