@@ -283,6 +283,9 @@ const MODULE_NOTES = {
   },
   '3.3': {
     '09': 'Enter Shah Ismail’s council after Chaldiran and rebuild Safavid authority around Twelver Shiism while the Ottoman Sunni rivalry presses in. Your final <strong>Step out of the room</strong> reflection is the part that is collected.'
+  },
+  '3.4': {
+    '09': 'Act as a historical adviser to the Imperial Influence Council. Choose one job, expand, hold, pay or justify, and compare how two empires used it to increase their influence. Your <strong>Council memorandum</strong> is the part that is collected.'
   }
 };
 

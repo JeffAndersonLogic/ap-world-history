@@ -1704,7 +1704,7 @@ block so the short name can be written from them, not guessed at here.
 
 **Topic:** `3.4`  **Full title:** Comparison in Land-Based Empires
 
-**Required:** 4 of 10 modules, 02, 05, 07, 10
+**Required:** 5 of 10 modules, 02, 05, 07, 09, 10
 
 **Assign to, one row per section:**
 
@@ -1743,6 +1743,7 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: Same Jobs, Different Tools</em>, plus all three check questions inside the reading.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Comparing Methods of Increasing Imperial Influence.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose TWO cards from different empires that answer the SAME imperial job. Keep the category constant: expand, hold, pay, or justify. Use observation and source limits before writing the comparison; a true fact is not relevant evidence unless it supports the job you chose.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Act as a historical adviser to the Imperial Influence Council. Choose one job, expand, hold, pay or justify, and compare how two empires used it to increase their influence. Your <strong>Council memorandum</strong> is the part that is collected.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> A supported argument answering the College Board comparison objective.</li>
                 </ul>
             </td>
@@ -1758,7 +1759,6 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> You Are the Comparison Referee.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> Compare one method two empires used to expand or consolidate influence.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Two Visitors Compare Ottoman and Mughal Rule.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Act as a historical adviser. Compare one shared method across two land-based empires and explain how it increased imperial influence.</li>
                 </ul>
                 <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
             </td>
@@ -1793,7 +1793,7 @@ block so the short name can be written from them, not guessed at here.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ol style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Work the four modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
+                    <li style="margin: 0 0 8px 0;">Work the five modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
                     <li style="margin: 0 0 8px 0;">Scroll to the <strong>Save Your Work</strong> panel, below the module cards.</li>
                     <li style="margin: 0 0 8px 0;">Click <strong>Gather All My Work</strong>, then <strong>Copy to Clipboard</strong>.</li>
                     <li style="margin: 0 0 8px 0;">Come back here, paste into the text box, and submit.</li>
