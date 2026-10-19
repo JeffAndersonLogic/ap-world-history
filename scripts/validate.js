@@ -1911,6 +1911,41 @@ section('Era study guide Teach Me wiring');
 }
 
 //
+// No exam or answer key in this repository. It is public and GitHub Pages serves
+// it, so anything committed here can be downloaded by students. On 2026-10-18 the
+// Era 2 Exam's Canvas package, answer key included, sat in assessments/era-2/ for a
+// day before Jeff asked for it to be hidden (2026-10-19). Exams now live in the
+// private AndersonLogic-OS repository, 04_PRODUCTS/BeHistorical/Assessments/.
+// This check fails on an assessments/ folder, a QTI package, or any XML carrying
+// QTI scoring (<questestinterop>), wherever it is in the tree.
+//
+section('No exams or answer keys in the public repository');
+{
+  const found = [];
+  const SKIP = new Set(['.git', 'node_modules']);
+  (function walk(dir) {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      if (SKIP.has(entry.name)) continue;
+      const full = path.join(dir, entry.name);
+      const rel = path.relative(ROOT, full);
+      if (entry.isDirectory()) {
+        if (/^assessments$/i.test(entry.name)) found.push(`${rel}/ (an assessments folder)`);
+        walk(full);
+      } else if (/qti/i.test(entry.name) && /\.zip$/i.test(entry.name)) {
+        found.push(`${rel} (a QTI package)`);
+      } else if (/\.xml$/i.test(entry.name) && /<questestinterop/i.test(read(full) || '')) {
+        found.push(`${rel} (QTI questions with their scoring)`);
+      }
+    }
+  })(ROOT);
+  totalChecks++;
+  for (const f of found) {
+    err(f, 'exam material in the public repository; students can download it from GitHub. Keep exams in AndersonLogic-OS, 04_PRODUCTS/BeHistorical/Assessments/');
+  }
+  sectionDone('no assessments folder, QTI package or QTI answer key anywhere in the tree');
+}
+
+//
 // The README's current inventory, checked against what this run counted.
 //
 // README.md is the first thing anyone reads and it had drifted quietly: on
