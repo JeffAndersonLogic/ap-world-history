@@ -2739,8 +2739,8 @@ deleted row in the schedule and every affected date moves with it.
 
 | Section | Taught | Work due |
 | --- | --- | --- |
-| Green Day | Thursday, November 5 | nothing assigned |
-| Silver Day | Friday, November 6 | nothing assigned |
+| Green Day | Thursday, November 5 | Monday, November 9 |
+| Silver Day | Friday, November 6 | Tuesday, November 10 |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
@@ -2759,7 +2759,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">How Portugal, Spain, and then the Dutch, British, and French built maritime empires using three distinct models: trading post empire, territorial colonialism, and joint-stock company</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Last class ended with a question: who would do the work in the new colonies, and who would rule? Today you find out, and the answer reaches Africa and Asia too. Rival European states built forts on the coasts and colonies in the Americas, but China and Japan set their own terms, Asian merchants kept trading, and Kongo and Asante grew stronger. For each case, explain what changed and what kept going, in who ruled, in work, and in slavery.</p>
             </td>
         </tr>
         <tr>
@@ -2768,10 +2768,10 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how European maritime empires expanded through trading posts and territorial conquest, and how participation in expanding maritime trade increased the influence of African states such as Kongo and Asante.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how Indian Ocean trade changed after European arrival while intra-Asian trade and Asian, African, and Middle Eastern merchants continued to flourish.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain continuity and change in colonial labor systems, including the adaptation of the Incan mit’a and the growth of encomienda, hacienda, indentured servitude, and chattel slavery.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain continuity and change in slavery, distinguishing older African and Indian Ocean forms of enslavement from the expanding plantation demand for enslaved labor in the Americas.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain why rival European states built maritime empires and trading posts, and how Kongo and Asante grew stronger through the new trade.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how Ming China and Tokugawa Japan limited European trade, and what changed and what continued in Indian Ocean trade after the Europeans arrived.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain what continued and what changed in labor systems in the colonial Americas, from the Inca mit’a to encomienda, hacienda, indentured servitude, and chattel slavery.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how older forms of slavery continued in Africa while the plantation economy made slavery in the Americas far larger and different.</li>
                 </ul>
             </td>
         </tr>
@@ -2781,10 +2781,10 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can use specific evidence from at least one European maritime empire and one African state to explain how expanding trade networks changed state power.</li>
-                    <li style="margin: 0 0 6px 0;">I can identify one European disruption to Indian Ocean trade and one important continuity involving intra-Asian commerce or merchants such as Gujaratis, Omanis, Swahili Arabs, or Javanese.</li>
-                    <li style="margin: 0 0 6px 0;">I can compare one existing labor system with one new or expanded colonial labor system and explain how both served agricultural or extractive economies.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how older forms of enslavement continued while plantation economies in the Americas increased the scale and demographic significance of Atlantic chattel slavery.</li>
+                    <li style="margin: 0 0 6px 0;">I can name a political, religious, or economic rivalry behind the empires, and use a trading post or Kongo or Asante to explain one change in who held power.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain one continuity in who set the terms of trade: how China or Japan kept control of trade with Europeans, or how a merchant group such as Gujaratis, Swahili Arabs, Omanis, or Javanese kept Indian Ocean trade going even after the Portuguese began forcing ships to buy the cartaz.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain one labor system that continued in a new form and one that was new, and how each supplied workers for farms or mines.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain one older form of slavery in Africa that continued and one way plantations changed slavery in the Americas, and why it changed.</li>
                 </ul>
             </td>
         </tr>
@@ -2793,7 +2793,14 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 8px 0;">Finish Checkpoint 2, and any other required 4.4 module you did not complete in class.
+                    </li>
+                </ul>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Monday, November 9</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Tuesday, November 10</span></span>
+                </p>
             </td>
         </tr>
         <tr>
@@ -2824,8 +2831,8 @@ deleted row in the schedule and every affected date moves with it.
 
 | Section | Taught | Work due |
 | --- | --- | --- |
-| Green Day | Monday, November 9 | nothing assigned |
-| Silver Day | Tuesday, November 10 | nothing assigned |
+| Green Day | Monday, November 9 | Wednesday, November 11 |
+| Silver Day | Tuesday, November 10 | Thursday, November 12 |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
@@ -2844,7 +2851,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">How European maritime empires used forced labor, colonial administration, and silver extraction to sustain themselves — and how American silver transformed global trade networks</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Last class, Europeans built empires from the sea. Today you find out how rulers made those empires pay. Follow the tools they built, mercantilist laws and companies that could go to war, then follow what those tools moved: silver pulled all the way to China, goods and enslaved people across the Atlantic, and more work for ordinary spinners and weavers. For each part, explain what was new and what kept going, then explain what the trade did to families in Africa and compare how religions spread, clashed and blended.</p>
             </td>
         </tr>
         <tr>
@@ -2853,10 +2860,10 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how rulers used mercantilism, chartered monopoly companies, and economic rivalry to maintain and develop maritime empires.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain continuity and change in exchange networks, including global silver flows, chartered companies, Atlantic trade, and the continued importance of regional Afro-Eurasian markets.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain political, economic, and social effects of expanding exchange, including intensified peasant/artisan labor and changes to gender and family patterns in Africa associated with the trade of enslaved persons.</li>
-                    <li style="margin: 0 0 6px 0;">I can compare how expanding global interactions affected belief systems, including the spread of existing religions, religious conflict, and the development of syncretic practices.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how European rulers used mercantilism and chartered joint-stock companies to make their empires pay and to compete with each other, and how economic disputes led to rivalries and wars.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain what changed and what continued in networks of exchange from 1450 to 1750: silver pulled toward China, the Atlantic trading system, regional markets that kept flourishing, and peasant and artisan work that continued and grew.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how the trade in enslaved people changed families and communities in parts of Africa, and how Africans, Indigenous Americans, and Europeans all contributed to new mixed cultures in the Atlantic world.</li>
+                    <li style="margin: 0 0 6px 0;">I can compare how religions affected societies as contact grew: how existing religions spread, how contact caused religious conflict, and how new blended, or syncretic, beliefs and practices developed.</li>
                 </ul>
             </td>
         </tr>
@@ -2866,10 +2873,10 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how mercantilist rules and joint-stock companies such as the VOC or British EIC helped states mobilize capital, protect monopolies, and compete for overseas trade and territory.</li>
-                    <li style="margin: 0 0 6px 0;">I can trace silver and Atlantic exchange across hemispheres while also explaining one important continuity in established Afro-Eurasian regional markets or commercial practices.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how growing demand intensified peasant or artisan labor in Europe, India, or China and how the Atlantic slave trade reshaped demographic, gender, family, and cultural patterns in parts of Africa and the Americas.</li>
-                    <li style="margin: 0 0 6px 0;">I can use at least two specific examples to compare different religious effects of global interaction, including missionary expansion, conflict, or syncretic traditions such as Vodun or Santería.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how one mercantilist law or one joint-stock company, such as the VOC or the English East India Company, helped a ruler make an empire pay or compete with a rival, and name one rivalry that grew out of an economic dispute.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain one change in networks of exchange (silver pulled toward China, or the Atlantic trading system) and one continuity (regional markets with their old merchants and ways, or peasant and artisan work that continued and grew).</li>
+                    <li style="margin: 0 0 6px 0;">I can explain one way the trade in enslaved people changed families in parts of Africa, and one example of cultural mixing in the Atlantic world that Africans, Indigenous Americans, and Europeans all contributed to.</li>
+                    <li style="margin: 0 0 6px 0;">I can use two examples to compare how religions spread, clashed, or blended, and say one way they were similar and one way they were different.</li>
                 </ul>
             </td>
         </tr>
@@ -2878,7 +2885,14 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 8px 0;">Finish Checkpoint 2, and any other required 4.5 module you did not complete in class.
+                    </li>
+                </ul>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Wednesday, November 11</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Thursday, November 12</span></span>
+                </p>
             </td>
         </tr>
         <tr>
@@ -2901,22 +2915,22 @@ deleted row in the schedule and every affected date moves with it.
 </table>
 ```
 
-## Topic 4.6: Internal Challenges to State Power
+## Topic 4.6: Internal and External Challenges to State Power
 
-**Event title:** `APW - 4.6 - Internal Challenges to State Power`
+**Event title:** `APW - 4.6 - Internal and External Challenges to State Power`
 
 **Assign to, one row per section:**
 
 | Section | Taught | Work due |
 | --- | --- | --- |
-| Green Day | Wednesday, November 11 | nothing assigned |
-| Silver Day | Thursday, November 12 | nothing assigned |
+| Green Day | Wednesday, November 11 | Friday, November 13 |
+| Silver Day | Thursday, November 12 | Monday, November 16 |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 4: Transoceanic Interconnections</div>
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 4.6: Internal Challenges to State Power</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 4.6: Internal and External Challenges to State Power</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
         <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Wednesday, November 11</span></span>
         <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Thursday, November 12</span></span>
@@ -2929,7 +2943,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">How colonized peoples, enslaved Africans, and rival European powers challenged maritime empires from within and without</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Last class, rulers built tools to make their empires pay, and they reached further than ever. Today you find out who pushed back. Judges and nobles in France, peasants and Cossacks in Russia, a warrior kingdom in India, a queen in Africa, and Pueblo towns in New Mexico all resisted a state that was pushing on them, and enslaved people in Brazil, Jamaica and South Carolina organized to challenge the colonies that held them. For each case, explain what the state pushed for, who pushed back and how, and what happened next.</p>
             </td>
         </tr>
         <tr>
@@ -2938,8 +2952,8 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how state expansion and centralization produced local resistance, including the causes, organization, and outcomes of the Pueblo Revolt of 1680.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how enslaved Africans resisted colonial rule through escape, autonomous maroon communities, cultural preservation, and organized revolt.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how states' push to expand and to centralize led different local groups to resist, using one case from Africa, Asia, or Europe and one from the Americas, and what that resistance changed.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how enslaved people in the Americas challenged the authorities over them through organized resistance, such as maroon communities and revolts, and how the authorities responded.</li>
                 </ul>
             </td>
         </tr>
@@ -2949,8 +2963,8 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain the specific grievances behind the Pueblo Revolt, how Popé coordinated resistance, and what the revolt changed and failed to change about Spanish colonial rule.</li>
-                    <li style="margin: 0 0 6px 0;">I can describe maroon communities as organized resistance, use Palmares as a specific example, and explain how geography, community organization, and colonial vulnerability made autonomous resistance possible.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain, for one case from Africa, Asia, or Europe (the Fronde, Razin's revolt, the Marathas, or Njinga) and one from the Americas (the Pueblo Revolt or Metacom's War), what the state pushed for, which group pushed back and how, what happened next and what the resistance changed, and one way the two cases were alike.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how one maroon community (Palmares or the Jamaica Maroons) and one revolt (the Stono Rebellion) were organized, how the authorities responded to each, and one reason the responses differed.</li>
                 </ul>
             </td>
         </tr>
@@ -2959,7 +2973,14 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 8px 0;">Finish Checkpoint 2, and any other required 4.6 module you did not complete in class.
+                    </li>
+                </ul>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Friday, November 13</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Monday, November 16</span></span>
+                </p>
             </td>
         </tr>
         <tr>
@@ -2967,7 +2988,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-4/lesson-4-6-internal-external-challenges.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 4.6 - Internal Challenges to State Power</a></p>
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-4/lesson-4-6-internal-external-challenges.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 4.6 - Internal and External Challenges to State Power</a></p>
             </td>
         </tr>
         <tr>
@@ -2990,8 +3011,8 @@ deleted row in the schedule and every affected date moves with it.
 
 | Section | Taught | Work due |
 | --- | --- | --- |
-| Green Day | Friday, November 13 | nothing assigned |
-| Silver Day | Monday, November 16 | nothing assigned |
+| Green Day | Friday, November 13 | Tuesday, November 17 |
+| Silver Day | Monday, November 16 | Wednesday, November 18 |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
@@ -3010,7 +3031,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">How European colonialism reorganized social order — creating the casta system in Spanish America, racializing slavery in the Atlantic world, and producing new hierarchies wherever it reached</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Last class, you saw people push back against growing states. Today you find out who ended up where. Every society still ranked people from top to bottom, but empires changed who stood on which rung: the Ottomans took in Jewish refugees that Spain pushed out, the Mughal emperor Akbar welcomed Hindu princes into his army, the Manchus conquered China and built a new elite, the casta system put Spanish-born officials at the top in the Americas, and stronger rulers squeezed old nobles in the Ottoman Empire, Russia, and France. For each case, explain what stayed the same and what changed.</p>
             </td>
         </tr>
         <tr>
@@ -3019,9 +3040,9 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how states accommodated the ethnic and religious diversity of their subjects in some cases, and suppressed or restricted certain groups in others.</li>
-                    <li style="margin: 0 0 6px 0;">I can analyze how the casta system organized colonial society in Spanish America, including its major categories (peninsulares, creoles, mestizos, mulattos, indigenous, enslaved Africans) and their legal implications.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how the power of existing political and economic elites changed as they confronted increasingly powerful monarchs and imperial states.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain why some states welcomed or made use of different religious and ethnic groups, while others pushed groups out or limited them, using the Ottoman or Mughal Empire and one other case.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how conquest and new trade created new elites, such as the Manchu banners of Qing China and the Spanish-born and creole elites of the casta system in Spanish America.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how the power of old elites, such as Ottoman timar holders, Russian boyars, or European nobles, rose or fell as rulers grew stronger and centralized power, and what stayed the same.</li>
                 </ul>
             </td>
         </tr>
@@ -3031,9 +3052,9 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can give examples of states accommodating diversity (e.g., the Ottoman millet system, acceptance of Jews expelled from Spain and Portugal) and of states suppressing it (e.g., restrictive policies against Han Chinese in Qing China).</li>
-                    <li style="margin: 0 0 6px 0;">I can name and describe the major casta categories in Spanish colonial America, explain how casta status was determined, and give one specific example of how casta affected a person's legal rights or opportunities.</li>
-                    <li style="margin: 0 0 6px 0;">I can use specific examples such as Ottoman timar holders, Russian boyars, or European nobility to explain how existing elites gained, lost, or renegotiated power as states centralized.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain, for one state that made room for or made use of a group (the Ottoman Empire or Akbar's Mughal Empire) and one state that pushed out or limited a group (Spain or Qing China), what the state did and what it gained, and, for one of them, what changed for the group and what stayed the same.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how one of the new elites (the Qing banners, or the peninsulares and creoles at the top of the casta system) was made by conquest or new trade.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how the power of one old elite (Ottoman sipahis who held timars, Russian boyars, or French nobles) changed as rulers grew stronger, naming one thing it lost and one thing it kept, and one thing about the top of society that stayed the same.</li>
                 </ul>
             </td>
         </tr>
@@ -3042,7 +3063,14 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 8px 0;">Finish Checkpoint 2, and any other required 4.7 module you did not complete in class.
+                    </li>
+                </ul>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Tuesday, November 17</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Wednesday, November 18</span></span>
+                </p>
             </td>
         </tr>
         <tr>
@@ -3065,22 +3093,22 @@ deleted row in the schedule and every affected date moves with it.
 </table>
 ```
 
-## Topic 4.8: Continuity and Change in the Period from c. 1450 to c. 1750
+## Topic 4.8: Continuity and Change from 1450 to 1750
 
-**Event title:** `APW - 4.8 - Continuity and Change in the Period from c. 1450 to c. 1750`
+**Event title:** `APW - 4.8 - Continuity and Change from 1450 to 1750`
 
 **Assign to, one row per section:**
 
 | Section | Taught | Work due |
 | --- | --- | --- |
-| Green Day | Tuesday, November 17 | nothing assigned |
-| Silver Day | Wednesday, November 18 | nothing assigned |
+| Green Day | Tuesday, November 17 | Thursday, November 19 |
+| Silver Day | Wednesday, November 18 | Friday, November 20 |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
     <img src="https://jeffandersonlogic.github.io/ap-world-history/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
     <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 4: Transoceanic Interconnections</div>
-    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 4.8: Continuity and Change in the Period from c. 1450 to c. 1750</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 4.8: Continuity and Change from 1450 to 1750</div>
     <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
         <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Tuesday, November 17</span></span>
         <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Wednesday, November 18</span></span>
@@ -3093,7 +3121,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">How economic developments from 1450 to 1750 changed social structures — and what persisted despite those changes</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Last class ended with a question: trade, work, and the social ladder all moved between 1450 and 1750, so which change mattered most, and what stayed the same? Today you answer it with an argument. Follow the new trade in sugar, silver, and cloth all the way to the people: the workers it needed, the society of masters and slaves it built on Barbados, and the villages it changed in Africa. Then name what stayed the same, connect your evidence, and write a thesis.</p>
             </td>
         </tr>
         <tr>
@@ -3102,9 +3130,9 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can explain how economic developments from c. 1450 to c. 1750 — including global silver flows, mercantilism, plantation expansion, and intensified production — changed demand for labor and redistributed wealth and power.</li>
-                    <li style="margin: 0 0 6px 0;">I can explain how those economic developments affected social structures, including coerced labor and slavery, racial and casta hierarchies, new and changing elites, and gender and family patterns.</li>
-                    <li style="margin: 0 0 6px 0;">I can make a continuity-and-change argument about social structures from c. 1450 to c. 1750 using evidence from multiple Unit 4 topics and explaining why some structures changed while others persisted.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how economic developments between 1450 and 1750, such as the new demand for sugar, silver, and cloth, increased the demand for workers, and how that demand was met.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how those economic developments changed social structures: who was forced to work, who rose to the top, and how families lived, in places such as Barbados, Spanish America, and West Central Africa.</li>
+                    <li style="margin: 0 0 6px 0;">I can write a thesis and a short argument about how much social structures changed between 1450 and 1750, and what stayed the same, connecting evidence from different Unit 4 topics.</li>
                 </ul>
             </td>
         </tr>
@@ -3114,9 +3142,9 @@ deleted row in the schedule and every affected date moves with it.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 6px 0;">I can connect one specific economic development — such as plantation growth, silver extraction, mercantilism, or intensified textile production — to a specific change in labor demand, wealth, or political-economic power.</li>
-                    <li style="margin: 0 0 6px 0;">I can use at least two specific social consequences, such as expanded chattel slavery, encomienda/hacienda or mita labor, casta categories, changes to African gender/family patterns, or changing elite power, and explain the economic mechanism behind each.</li>
-                    <li style="margin: 0 0 6px 0;">I can identify one meaningful continuity and one meaningful change in social structure, support both with evidence from different Unit 4 topics, and explain why the balance of continuity and change occurred.</li>
+                    <li style="margin: 0 0 6px 0;">I can follow one economic development (plantation sugar, Potosí silver, or the demand for cloth) to the workers it needed.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain one change that development made to a social structure, such as slavery for life in Barbados, the casta ranking, or villages in West Central Africa with more women than men.</li>
+                    <li style="margin: 0 0 6px 0;">I can write a thesis that names one change and one continuity, support it with evidence from at least three Unit 4 topics, and explain how two pieces of my evidence relate.</li>
                 </ul>
             </td>
         </tr>
@@ -3125,7 +3153,14 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 8px 0;">Finish Checkpoint 2, and any other required 4.8 module you did not complete in class.
+                    </li>
+                </ul>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Thursday, November 19</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Friday, November 20</span></span>
+                </p>
             </td>
         </tr>
         <tr>
@@ -3133,7 +3168,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-4/lesson-4-8-continuity-and-change.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 4.8 - Continuity and Change in the Period from c. 1450 to c. 1750</a></p>
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/unit-4/lesson-4-8-continuity-and-change.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 4.8 - Continuity and Change from 1450 to 1750</a></p>
             </td>
         </tr>
         <tr>

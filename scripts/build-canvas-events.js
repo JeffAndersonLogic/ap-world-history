@@ -184,8 +184,12 @@ const OVERVIEWS = {
   '3.3': "Religions changed as much as empires did. Today you track three different kinds of religious change: Christianity split and reformed, Ottoman-Safavid political rivalry intensified an older Sunni-Shia divide, and Sikhism developed as a distinct tradition in a context of Hindu-Muslim interaction. For every case, ask what changed, what continued, and what shaped the change.",
   '3.4': "You already know the Unit 3 evidence. Today you use it to compare how empires increased their influence. Keep one job constant, expand, hold, pay, or justify, compare the different tools two empires used, explain why the methods were similar or different, and connect both examples back to increased influence.",
   '4.2': "Last class, ships learned to cross the ocean and come home. Today you find out who paid for those voyages and what they got for it. Follow three groups of states, Portugal around Africa, Spain to the west, and England, France, and the Dutch to the north, and for each one explain who paid, what they wanted, and what the voyages actually produced.",
-  // 4.3 has no class days yet (2026-10-14); this is ready for when they are added.
-  '4.3': "Last class, rulers paid for ships to cross the ocean. Today you find out what else those ships carried. Some things crossed on purpose, like horses, cattle, and wheat, some crossed by accident, like smallpox and the rats in the cargo, and some crossed with enslaved Africans carried by force. For each one, explain how it crossed and what it did to the people at the other end, in the Americas and in Africa, Asia, and Europe."
+  '4.3': "Last class, rulers paid for ships to cross the ocean. Today you find out what else those ships carried. Some things crossed on purpose, like horses, cattle, and wheat, some crossed by accident, like smallpox and the rats in the cargo, and some crossed with enslaved Africans carried by force. For each one, explain how it crossed and what it did to the people at the other end, in the Americas and in Africa, Asia, and Europe.",
+  '4.4': "Last class ended with a question: who would do the work in the new colonies, and who would rule? Today you find out, and the answer reaches Africa and Asia too. Rival European states built forts on the coasts and colonies in the Americas, but China and Japan set their own terms, Asian merchants kept trading, and Kongo and Asante grew stronger. For each case, explain what changed and what kept going, in who ruled, in work, and in slavery.",
+  '4.5': "Last class, Europeans built empires from the sea. Today you find out how rulers made those empires pay. Follow the tools they built, mercantilist laws and companies that could go to war, then follow what those tools moved: silver pulled all the way to China, goods and enslaved people across the Atlantic, and more work for ordinary spinners and weavers. For each part, explain what was new and what kept going, then explain what the trade did to families in Africa and compare how religions spread, clashed and blended.",
+  '4.6': "Last class, rulers built tools to make their empires pay, and they reached further than ever. Today you find out who pushed back. Judges and nobles in France, peasants and Cossacks in Russia, a warrior kingdom in India, a queen in Africa, and Pueblo towns in New Mexico all resisted a state that was pushing on them, and enslaved people in Brazil, Jamaica and South Carolina organized to challenge the colonies that held them. For each case, explain what the state pushed for, who pushed back and how, and what happened next.",
+  '4.7': "Last class, you saw people push back against growing states. Today you find out who ended up where. Every society still ranked people from top to bottom, but empires changed who stood on which rung: the Ottomans took in Jewish refugees that Spain pushed out, the Mughal emperor Akbar welcomed Hindu princes into his army, the Manchus conquered China and built a new elite, the casta system put Spanish-born officials at the top in the Americas, and stronger rulers squeezed old nobles in the Ottoman Empire, Russia, and France. For each case, explain what stayed the same and what changed.",
+  '4.8': "Last class ended with a question: trade, work, and the social ladder all moved between 1450 and 1750, so which change mattered most, and what stayed the same? Today you answer it with an argument. Follow the new trade in sugar, silver, and cloth all the way to the people: the workers it needed, the society of masters and slaves it built on Barbados, and the villages it changed in Africa. Then name what stayed the same, connect your evidence, and write a thesis."
 };
 
 /* ---------------------------------------------------------
@@ -273,6 +277,15 @@ const MODULE_NOTES = {
   },
   '2.6': {
     '01': 'Where the plague originated, and the trade routes that carried it from Central Asia into Europe and North Africa.'
+  },
+  '3.2': {
+    '09': 'Serve on Akbar’s administrative commission at Fatehpur Sikri and decide how to rank officers, assess revenue, and assign jagirs without creating independent provincial powers. Your final <strong>Step out of the room</strong> reflection is the part that is collected.'
+  },
+  '3.3': {
+    '09': 'Enter Shah Ismail’s council after Chaldiran and rebuild Safavid authority around Twelver Shiism while the Ottoman Sunni rivalry presses in. Your final <strong>Step out of the room</strong> reflection is the part that is collected.'
+  },
+  '3.4': {
+    '09': 'Act as a historical adviser to the Imperial Influence Council. Choose one job, expand, hold, pay or justify, and compare how two empires used it to increase their influence. Your <strong>Council memorandum</strong> is the part that is collected.'
   }
 };
 

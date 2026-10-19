@@ -677,109 +677,236 @@ module.exports = {
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
+    "showFooterNote": false,
     "headerSubtitle": "Topic 4.4, Maritime Empires Established &nbsp;|&nbsp; AP World History: Modern",
-    "titleHtml": "Building Empires at <em>Sea</em>",
-    "deck": "After 1500, expanding maritime trade changed state power and labor systems without erasing the older world it entered. European empires seized ports and territories, African states such as Kongo and Asante gained influence through new trading connections, Asian merchants kept Indian Ocean commerce moving, and colonial economies adapted old labor obligations while expanding new forms of coerced labor and slavery.",
+    "titleHtml": "Empires from the <em>Sea</em>",
+    "deck": "From the late 1400s, European states built empires held together by ships: forts on the coasts of Africa and Asia, and colonies in the Americas. But much of the world kept its own rules. Some things changed fast, and some barely moved.",
     "skillTags": [
-      "Causation",
-      "Comparison",
-      "Argumentation"
+      "Continuity and Change",
+      "Sourcing and Situation"
     ],
     "supportCards": {
-      "beforeYouRead": "Track continuity and change in four places: state power, Indian Ocean trade, labor systems, and slavery. The key question is not simply which European empire used which model; it is what changed when maritime empires expanded and what older systems continued.",
-      "readingTarget": "By the end, you should be able to explain how maritime trade increased the influence of European and African states, identify continuity in Indian Ocean trade, compare older and newer colonial labor systems, and explain how older forms of enslavement continued while plantation demand expanded Atlantic chattel slavery."
+      "beforeYouRead": "<strong>Europeans built empires from the sea → much of the world kept its own rules → some things changed fast, and some barely moved.</strong> For every case in this reading, ask two things: what changed, and what kept going the way it already had?",
+      "readingTarget": "When Europeans built empires from the sea, what changed, and what kept going, in who ruled, in trade and work, and in slavery?"
     },
     "vocabulary": [
-      "Estado da India",
-      "Feitoria",
+      "Maritime Empire",
+      "Trading Post",
       "Cartaz",
-      "Afonso de Albuquerque",
-      "Encomienda",
-      "Viceroyalty",
-      "Las Casas",
-      "VOC",
-      "Joint-Stock Company",
-      "Batavia",
-      "British EIC",
-      "Spice Islands",
-      "Kingdom of Kongo",
-      "Asante",
       "Intra-Asian Trade",
-      "Mit’a / Mita",
+      "Mit’a",
+      "Encomienda",
       "Hacienda",
       "Indentured Servitude",
-      "Plantation Economy",
-      "Chattel Slavery"
+      "Chattel Slavery",
+      "Plantation Economy"
     ],
     "sections": [
       {
         "number": "1",
-        "label": "State Building",
-        "heading": "Maritime Trade Creates New Opportunities for State Power",
+        "label": "Who Ruled: Change",
+        "heading": "Rivals Build Empires from the Sea",
         "blocks": [
-          {"type":"p","html":"Portugal built the <span class=\"kt\">Estado da India</span> around fortified ports and sea lanes, while Spain conquered and governed large American territories. Dutch, French, and British maritime power also expanded. But expanding trade did not strengthen only European states."},
-          {"type":"p","html":"In Africa, participation in Atlantic commerce helped states such as the <span class=\"kt\">Kingdom of Kongo</span> and <span class=\"kt\">Asante</span> gain access to revenue, weapons, and new diplomatic relationships. The effects were uneven and could become destabilizing, but the important AP point is that maritime networks redistributed political opportunity."}
+          {
+            "type": "p",
+            "html": "Topic 4.3 ended with a question. Disease had emptied much of the Americas of its people, and the new sugar plantations needed more workers than ever. Who would do the work, and who would rule? The answer reaches beyond the Americas, because European ships were reaching Africa and Asia too."
+          },
+          {
+            "type": "p",
+            "html": "From the late 1400s on, five European states built empires held together by ships: Portugal, Spain, the Dutch Republic, France, and England (Britain after 1707). An empire like that is a <span class=\"kt\">maritime empire</span>. They built them because they were rivals. They competed for <strong>power</strong>, so each wanted what the others had. They competed over <strong>religion</strong>: Catholic Portugal and Spain saw their voyages as a war against Islam and a mission to spread Christianity, and after the Reformation, Protestant England and the Dutch fought Catholic Spain. And they competed for <strong>money</strong>: gold, spices, sugar, and the trade that carried them. When one state found a route or a rich coast, the others came after it."
+          },
+          {
+            "type": "p",
+            "html": "In Africa and Asia, an empire from the sea usually looked like a fort on a coast. Portugal built São Jorge da Mina, a fortress on the Gold Coast of West Africa, in 1482, to buy gold. It took Goa in India in 1510, Malacca, on the narrow strait between the Indian Ocean and the South China Sea, in 1511, and Hormuz, at the mouth of the Persian Gulf, in 1515. A <span class=\"kt\">trading post</span> is a small fortified base where a foreign state's merchants buy and sell. These posts made money for the kings who backed them and the merchants who traded through them. The Dutch, and later the English and French, built posts of their own; the Dutch often did it by taking Portugal's."
+          },
+          {
+            "type": "p",
+            "html": "The Americas were different. There, disease and conquest had broken the great Indigenous states, and Spain and Portugal took whole territories and the people living on them."
+          }
         ],
-        "callout":{"label":"AP Thinking, Causation","raw":"<p>State growth followed a mechanism: <strong>access to trade -> access to revenue or strategic goods -> greater political influence</strong>. Apply that mechanism to both European and African cases.</p>"}
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Name the change, then its cause.</strong> \"Europeans built forts in Asia\" is a fact. \"Rival European states, competing for power, religion, and trade, built forts on the coasts of Africa and Asia\" is a change with its cause attached.</p>"
+        }
       },
       {
         "number": "2",
-        "label": "Continuity",
-        "heading": "Indian Ocean Trade Changes Without Being Replaced",
+        "label": "Who Ruled: Continuity",
+        "heading": "Asia Sets the Terms",
         "blocks": [
-          {"type":"p","html":"Portuguese and Dutch merchants disrupted parts of the Indian Ocean system by seizing ports, demanding passes, and attempting monopolies. Yet <span class=\"kt\">intra-Asian trade</span> continued to flourish."},
-          {"type":"p","html":"Gujarati, Omani, Swahili Arab, Javanese, Indian, Chinese, and other merchants kept moving goods through commercial networks that long predated European arrival. European armed commerce became an important new layer, but it did not erase the local knowledge, credit relationships, or regional demand that sustained Asian trade."}
+          {
+            "type": "p",
+            "html": "The strongest states in Asia did not let Europeans in on Europe's terms. Ming China let the Portuguese settle at Macau, a small port on China's south coast, from 1557, and kept them under Chinese officials and Chinese rules."
+          },
+          {
+            "type": "p",
+            "html": "Japan went further. Its rulers, the Tokugawa shoguns, feared that Christianity, which Portuguese and Spanish missionaries had spread in Japan, would divide the country. In 1635 the shogun's senior councilors sent orders to their officials at Nagasaki, the main port where Portuguese and Chinese ships traded. The first order reads: \"Japanese ships are strictly forbidden to leave for foreign countries.\" Another says that any Japanese who returns from overseas after living there \"must be put to death.\" Other orders told the officials to search every arriving ship for Christians. In 1639 the councilors banned Portuguese ships from Japan altogether."
+          },
+          {
+            "type": "p",
+            "html": "After 1639, the only Europeans allowed to trade in Japan were the Dutch, and from 1641 they were confined to Dejima, a small artificial island in Nagasaki harbor. Chinese merchants kept trading at Nagasaki too. Europe's empires grew, but China and Japan still decided how far into their countries Europeans could reach."
+          }
         ],
-        "callout":{"label":"AP Thinking, Continuity &amp; Change","raw":"<p><strong>Change:</strong> Europeans inserted armed trading-post empires and monopoly pressure. <strong>Continuity:</strong> Asian, African, and Middle Eastern merchants continued to dominate much regional exchange.</p>"}
+        "callout": {
+          "label": "AP Thinking, Sourcing and Situation",
+          "raw": "<p><strong>Ask who wrote it, for whom, and why.</strong> The 1635 orders were written by the shogun's councilors (the authors), for their officials at Nagasaki (the audience), to keep Christianity out and foreign trade under the government's control (the purpose), at a time when the shogunate saw Christian converts as a danger (the situation). Naming those four things is the skill this topic practices.</p>"
+        }
       },
       {
         "number": "3",
-        "label": "Labor",
-        "heading": "Colonial Economies Adapt Old Labor and Expand New Systems",
+        "label": "Trade: Change and Continuity",
+        "heading": "The Old Ocean Keeps Trading",
         "blocks": [
-          {"type":"p","html":"Colonial economies depended on agriculture and extraction, and rulers often adapted institutions that already existed. The Spanish colonial <span class=\"kt\">mita</span>, for example, drew on the Incan <span class=\"kt\">mit’a</span> labor obligation but redirected it toward colonial mining and imperial revenue."},
-          {"type":"p","html":"At the same time, colonial societies expanded or introduced systems such as <span class=\"kt\">encomienda</span>, hacienda labor, <span class=\"kt\">indentured servitude</span>, and chattel slavery. These systems differed legally, but all organized workers for agricultural or extractive production."}
+          {
+            "type": "p",
+            "html": "Long before the Portuguese came, the Indian Ocean was crowded with merchants from East Africa, Arabia, India, Southeast Asia, and China (Topic 2.3). The Portuguese tried to control it with guns. They made other ships buy a pass, called a <span class=\"kt\">cartaz</span>, and attacked ships that sailed without one. That was a real change: a European navy was now taxing and threatening Asian shipping."
+          },
+          {
+            "type": "p",
+            "html": "But the old ocean kept trading. Gujarati merchants from western India kept shipping cotton cloth across the ocean, often by buying a pass and sailing on. Swahili Arab traders on the East African coast kept trading. Omani Arabs drove the Portuguese out of Muscat in 1650, and in 1698 they took the Portuguese fortress at Mombasa, on the Swahili coast. Javanese merchants kept trading from the ports of Java."
+          },
+          {
+            "type": "p",
+            "html": "Much of the ocean's trade went on being trade between one Asian port and another, which historians call <span class=\"kt\">intra-Asian trade</span>, and European merchants often made their money by joining it, carrying Asian goods from one Asian port to the next. The College Board's words for this trade are that it \"continued to flourish.\""
+          }
         ],
-        "callout":{"label":"AP Thinking, Comparison","raw":"<p>Compare labor systems by the same variables: who owed labor, for how long, under what legal status, and who captured the output.</p>"}
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>One case can hold both.</strong> The cartaz was a change. The Gujarati, Swahili, Omani, and Javanese merchants who kept trading were a continuity. A strong answer names both and says which one lasted.</p>"
+        }
       },
       {
         "number": "4",
-        "label": "Slavery",
-        "heading": "Older Enslavement Continues as Atlantic Plantation Slavery Expands",
+        "label": "Who Ruled: African States",
+        "heading": "Kongo and Asante Grow Stronger",
         "blocks": [
-          {"type":"p","html":"Enslavement in Africa did not begin with the Atlantic system. Older forms continued, including incorporation of enslaved persons into households and export through Mediterranean and Indian Ocean routes."},
-          {"type":"p","html":"The major change was the scale and destination of forced migration. Expanding <span class=\"kt\">plantation economies</span> in the Americas created enormous demand for enslaved African labor and strengthened hereditary, racialized <span class=\"kt\">chattel slavery</span>."}
+          {
+            "type": "p",
+            "html": "The same trade made some African states stronger. The Kingdom of Kongo, near the mouth of the Congo River in Central Africa, welcomed the Portuguese in the 1480s, and its king was baptized a Christian in 1491. His son Afonso I, who became king in the early 1500s, made Christianity the religion of the royal court and traded with Portugal for goods, priests, teachers, and weapons that strengthened his rule. Kongo's influence grew."
+          },
+          {
+            "type": "p",
+            "html": "About two hundred years later, on the Gold Coast of West Africa, the Asante kingdom rose by controlling gold and by buying guns from Dutch and English traders on the coast. In 1701 Asante defeated the stronger kingdom of Denkyira at the battle of Feyiase and became the main power in the region."
+          },
+          {
+            "type": "p",
+            "html": "In 1526 Afonso wrote a letter to King João III of Portugal. He complained that Portuguese traders were carrying away \"our native-born countrymen and the children of our nobles and vassals as well as relatives of ours,\" because thieves were seizing free people of Kongo and selling them to those traders. He asked the Portuguese king to send \"neither traders nor trading goods.\" Two more facts matter when you read the letter: Afonso himself sold captives taken in his wars outside Kongo to the Portuguese, and Kongo had enslaved people of its own."
+          }
         ],
-        "callout":{"label":"Common Mistake to Avoid","raw":"<p>Do not write that slavery was invented after 1500. Explain both continuity in older forms of enslavement and change in the scale, destination, and racialization of Atlantic plantation slavery.</p>"}
+        "callout": {
+          "label": "AP Thinking, Sourcing and Situation",
+          "raw": "<p><strong>Purpose changes meaning.</strong> Read the letter twice. First read it alone. Then read it again knowing who wrote it, who he was writing to, and what he wanted that reader to do. Question 2 asks you what changes.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "Work: Old and New",
+        "heading": "Labor in the Colonial Americas",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "The colonies in the Americas made their money mostly from farming, growing sugar, tobacco, and wheat and raising cattle, and from mining. They needed workers, and they got them in two ways."
+          },
+          {
+            "type": "p",
+            "html": "Some labor systems already existed. The Inca had required each community to send people to work for the state in turns, a labor duty called the <span class=\"kt\">mit’a</span>. In the 1570s the Spanish viceroy of Peru, Francisco de Toledo, turned that duty into a draft that sent thousands of Andean men each year to the silver mine at Potosí. An old system kept its name and changed its master."
+          },
+          {
+            "type": "p",
+            "html": "Other systems were new. <span class=\"kt\">Encomienda</span> gave a Spanish colonist the labor and tribute of a group of Indigenous people. On a <span class=\"kt\">hacienda</span>, a large estate, Indigenous and mixed-race workers farmed and herded for the owner, often for wages and sometimes tied to the estate by debt. In the English colonies, many poor Europeans paid for their voyage with four to seven years of work under a contract, which is <span class=\"kt\">indentured servitude</span>. And on the plantations, enslaved Africans were held in <span class=\"kt\">chattel slavery</span>: owned as property for life, and their children too."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Compare by the same questions.</strong> For each labor system, ask who did the work, for how long, whether they were free, and who took what they produced. The mit’a is a continuity with a change: the same duty, a new master, a new mine.</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "Slavery: Old and New",
+        "heading": "Older Forms Continue, Plantations Change Everything Else",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Slavery was not new in Africa. In many African societies, enslaved people were taken into households, and over time they or their children could become part of the family. Captives were also carried north across the Sahara to the Mediterranean world, and east across the Indian Ocean to Arabia, Persia, and India. Those older forms went on through this whole period."
+          },
+          {
+            "type": "p",
+            "html": "What changed was the plantations. A <span class=\"kt\">plantation economy</span> is one built on huge farms growing one crop to sell, and sugar, and later tobacco, needed enormous numbers of workers. Historians estimate that in the whole 1500s, fewer than 300,000 Africans were forced onto ships bound for the Americas. In the fifty years from 1701 to 1750, more than 2.5 million were."
+          },
+          {
+            "type": "p",
+            "html": "The Atlantic slave trade carried more people across an ocean than any slave trade before it. Slavery in the Americas was for life and inherited (laws in the English colonies made the children of enslaved women enslaved too), and it came to be tied to race. Africans and their descendants became most of the people in the British, French, and Dutch Caribbean colonies and a large part of Brazil's population, and their languages, beliefs, and foods came with them. That is what the College Board calls \"significant demographic, social, and cultural changes.\""
+          }
+        ],
+        "callout": {
+          "label": "Common Mistake to Avoid",
+          "raw": "<p>Do not write that slavery began with the Atlantic trade. Older forms of slavery continued in Africa. What changed was the scale, the destination, and the kind of slavery: lifelong, inherited, and tied to race on American plantations.</p>"
+        }
+      },
+      {
+        "number": "7",
+        "label": "The Pattern",
+        "heading": "Some Things Changed Fast, and Some Barely Moved",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Put it together. Europeans built empires from the sea: new forts, new colonies, new labor systems, and a far larger slave trade. But much of the world kept its own rules. China and Japan set the terms of trade. Asian and African merchants kept the Indian Ocean busy. Kongo and Asante grew strong. An old Inca labor duty was reused, and older forms of slavery went on in Africa."
+          },
+          {
+            "type": "p",
+            "html": "Europeans built empires from the sea, but much of the world kept its own rules: some things changed fast, and some barely moved."
+          },
+          {
+            "type": "p",
+            "html": "It also leaves a question. The empires existed. How did their rulers make them pay, and what did the money do to the people inside them? That is Topic 4.5."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Answer all three.</strong> The College Board asks about three things in this topic: how states were built, how trade and labor changed and continued, and how slavery changed and continued. For each one, name one change and one continuity.</p>"
+        }
       }
     ],
-    "takeaway": "Topic 4.4 is a continuity-and-change story. Maritime expansion increased the influence of European empires and also created opportunities for African states such as Kongo and Asante. Portuguese and Dutch intrusion disrupted Indian Ocean commerce, but intra-Asian trade and merchants such as Gujaratis, Omanis, Swahili Arabs, and Javanese continued. Colonial economies adapted older labor systems such as the Incan mit’a while expanding encomienda, hacienda, indentured servitude, and chattel slavery. Older forms of enslavement continued in Africa and the Indian Ocean world, while plantation demand dramatically expanded Atlantic slavery.",
+    "takeaway": "Driven by political, religious, and economic rivalries, Portugal, Spain, the Dutch, France, and England built maritime empires: trading posts on the coasts of Africa and Asia, and colonies in the Americas. Ming China and Tokugawa Japan limited European trade on their own terms, and Gujarati, Swahili Arab, Omani, and Javanese merchants kept Indian Ocean trade flourishing. Kongo and Asante grew stronger through the new trade. Colonial economies in the Americas reused the Inca mit’a and added encomienda, hacienda labor, indentured servitude, and chattel slavery. Older forms of slavery continued in Africa, while the plantation economy made slavery in the Americas far larger, lifelong, inherited, and tied to race. Some things changed fast, and some barely moved.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
-      {"num":"1","skill":"Causation","text":"Explain how expanding maritime trade increased the influence of ONE European empire and ONE African state such as Kongo or Asante.","placeholder":"The European state gained influence because... The African state gained influence because..."},
-      {"num":"2","skill":"Continuity & Change","text":"Explain one change and one continuity in Indian Ocean trade after European arrival. Use a specific merchant group or trade pattern as evidence for the continuity.","placeholder":"One change was... One continuity was... It persisted because..."},
-      {"num":"3","skill":"Continuity & Change","text":"Explain one continuity and one change in labor or slavery after 1500. Use at least two specific systems such as mit’a/mita, encomienda, hacienda, indentured servitude, older African enslavement, or plantation chattel slavery.","placeholder":"A continuity was... A change was... Evidence: ..."}
-
+      {
+        "num": "01",
+        "skill": "Continuity and Change",
+        "text": "Explain ONE change in who held power from the late 1400s on: a European trading post and the rivalry behind it, or an African state that grew stronger. Then explain ONE continuity: how China or Japan kept control of trade with Europeans, or how Asian merchants kept the Indian Ocean trading.",
+        "placeholder": "One change was... This happened because... One continuity was... It kept going because..."
+      },
+      {
+        "num": "02",
+        "skill": "Sourcing and Situation",
+        "text": "In Section 4, Afonso I writes to the king of Portugal. Identify Afonso's audience and his purpose. Then explain how knowing them changes what the letter tells us about the slave trade.",
+        "placeholder": "Afonso's audience was... His purpose was... Knowing this, the letter shows..."
+      },
+      {
+        "num": "03",
+        "skill": "Continuity and Change",
+        "text": "Explain ONE continuity and ONE change in labor or slavery from 1450 to 1750. Use at least TWO of these: mit’a, encomienda, hacienda, indentured servitude, slavery in Africa, plantation slavery.",
+        "placeholder": "One continuity was... One change was... The evidence is..."
+      }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 4.4, Maritime Empires Established",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true,
   },
   "4.5": {
     "topicKey": "4.5",
@@ -791,104 +918,270 @@ module.exports = {
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
+    "showFooterNote": false,
     "headerSubtitle": "Topic 4.5, Maritime Empires Maintained &nbsp;|&nbsp; AP World History: Modern",
-    "titleHtml": "The <em>Labor</em> of Empire",
-    "deck": "Maintaining maritime empires required more than workers and silver. Rulers used mercantilism and chartered companies to compete for wealth; new transoceanic routes grew alongside older regional markets; expanding demand intensified peasant and artisan labor and altered families and communities; and global contact spread religions while producing conflict and syncretic practices.",
+    "titleHtml": "Making Empires <em>Pay</em>",
+    "deck": "An empire held together by ships cost money every year. European rulers built new tools to make their empires pay, and the silver, goods, and people those tools moved changed work, families, and faith around the world.",
     "skillTags": [
-      "Causation",
-      "Continuity & Change",
-      "Argumentation"
+      "Continuity and Change",
+      "Claims and Evidence in Sources"
     ],
     "supportCards": {
-      "beforeYouRead": "Track four moves: economic strategy, exchange networks, social effects, and belief-system effects. Keep them distinct enough to explain each one, then connect them into a larger story about how maritime empires were maintained.",
-      "readingTarget": "By the end, you should be able to explain mercantilism and chartered companies, identify change and continuity in exchange networks, explain social effects including intensified peasant/artisan labor and African gender/family change, and compare religious expansion, conflict, and syncretism."
+      "beforeYouRead": "<strong>Rulers built tools to make their empires pay → the tools moved silver, goods, and people → what they moved changed work, families, and faith.</strong> For every part of this reading, ask two things: what was new, and what kept going the way it already had?",
+      "readingTarget": "How did rulers make their maritime empires pay, and what did the silver, goods, and people they moved change, and leave the same?"
     },
     "vocabulary": [
-      "Encomienda",
-      "Mita",
-      "Potosí",
-      "Chattel Slavery",
-      "Viceroyalty",
-      "Audiencia",
-      "Catholic Church",
-      "Manila Galleon",
-      "Casa de Contratación",
-      "Global Price Revolution",
-      "Indentured Servitude",
-      "Las Casas",
       "Mercantilism",
+      "Joint-Stock Company",
+      "Chartered Monopoly Company",
       "VOC",
+      "Single Whip",
+      "Atlantic Trading System",
       "Regional Markets",
       "Peasant and Artisan Labor",
-      "Gender and Family Change",
       "Cultural Synthesis",
-      "Vodun",
-      "Santería",
       "Syncretism"
     ],
     "sections": [
       {
-        "number":"1","label":"Economic Strategy","heading":"Mercantilism and Chartered Companies",
-        "blocks":[
-          {"type":"p","html":"European rulers used <span class=\"kt\">mercantilism</span> to treat overseas commerce as a source of state power. Tariffs, navigation laws, colonial monopolies, and exclusive trading rights were designed to keep valuable trade inside imperial systems and weaken rival states."},
-          {"type":"p","html":"Chartered companies such as the Dutch <span class=\"kt\">VOC</span> and British EIC pooled private investment while receiving state-backed monopolies and, in some cases, authority to negotiate, build forts, and wage war. Commercial organizations became tools of interstate competition."}
+        "number": "1",
+        "label": "Rulers' Tools: An Idea",
+        "heading": "Sell More Than You Buy",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Topic 4.4 ended with a question. European states had built empires from the sea: forts on the coasts of Africa and Asia, and colonies in the Americas. An empire like that is expensive. Ships, soldiers, and forts cost money every year. So how did rulers make their empires pay, and what did the money do to the people inside them?"
+          },
+          {
+            "type": "p",
+            "html": "The rulers' first tool was an idea. Most European rulers and their advisers believed that a kingdom grew strong by bringing in more gold and silver than flowed out. To do that, a country had to sell more to other countries than it bought from them, and it had to keep its colonies' trade for itself. Later writers named this set of ideas <span class=\"kt\">mercantilism</span>."
+          },
+          {
+            "type": "p",
+            "html": "An English merchant named Thomas Mun, a director of the English East India Company, wrote the rule down in a book printed in 1664, after his death. To grow rich, he wrote, England \"must ever observe this rule; to sell more to strangers yearly than wee consume of theirs in value.\" (\"Strangers\" meant foreigners.)"
+          },
+          {
+            "type": "p",
+            "html": "Rulers turned the idea into laws. Spain sent its trade with its American colonies through one office in Seville, the Casa de Contratación, founded in 1503, and American silver crossed the Atlantic in fleets guarded by warships. England's Navigation Act of 1651 said that goods from Asia, Africa, and the Americas could come into England only on English ships. In this way of thinking, colonies existed to send raw goods home and to buy the home country's goods."
+          }
         ],
-        "callout":{"label":"AP Thinking, Causation","raw":"<p>Explain the mechanism: <strong>mercantilist rule or company charter -> concentrated capital and protected trade -> greater state or imperial power</strong>.</p>"}
+        "callout": {
+          "label": "AP Thinking, Claims and Evidence in Sources",
+          "raw": "<p><strong>Find the claim first.</strong> A claim is what an author wants you to believe. Read Mun's sentence again and ask: what does he want his reader to believe about how a country grows rich? Question 2 asks you to put it in your own words.</p>"
+        }
       },
       {
-        "number":"2","label":"Exchange Networks","heading":"New Global Circuits Layered onto Older Regional Markets",
-        "blocks":[
-          {"type":"p","html":"American <span class=\"kt\">silver</span> moved across the Atlantic and through Manila into Asian markets, while the Atlantic trading system moved goods, wealth, and enslaved labor among Africa, Europe, and the Americas."},
-          {"type":"p","html":"Yet <span class=\"kt\">regional markets</span> in Afro-Eurasia continued to flourish. Indian Ocean, Asian, African, and Middle Eastern merchants retained local knowledge and commercial relationships that European companies entered rather than simply replacing."}
+        "number": "2",
+        "label": "Rulers' Tools: A Company",
+        "heading": "Companies That Could Go to War",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "The rulers' second tool was a new kind of company. A voyage to Asia cost a fortune, and ships were often lost. A <span class=\"kt\">joint-stock company</span> spread that risk by selling shares to many investors, who split the profits and the losses."
+          },
+          {
+            "type": "p",
+            "html": "Queen Elizabeth I gave the English East India Company its charter in 1600. In 1602 the government of the Dutch Republic chartered the Dutch East India Company, known by its Dutch initials, the <span class=\"kt\">VOC</span>. Each was a <span class=\"kt\">chartered monopoly company</span>: its charter gave it the only right, in its own country, to trade with Asia. The VOC's charter also let it build forts, keep soldiers, make treaties with Asian rulers, and fight wars."
+          },
+          {
+            "type": "p",
+            "html": "That made a company into a weapon a ruler could aim at another ruler. In 1614 Jan Pieterszoon Coen, a leader of the VOC in Asia, wrote to the company's directors that \"trade cannot be kept up without war, nor war without trade.\""
+          }
         ],
-        "callout":{"label":"AP Thinking, Continuity &amp; Change","raw":"<p><strong>Change:</strong> new transoceanic routes linked hemispheres. <strong>Continuity:</strong> established regional markets and commercial practices remained essential.</p>"}
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Name what was new.</strong> Merchants had pooled money for voyages for centuries. What was new was a company with a government's monopoly, its own soldiers, and the right to make war, sent by one state to compete with another.</p>"
+        }
       },
       {
-        "number":"3","label":"Social Effects","heading":"More Demand Means More Work — and Social Change",
-        "blocks":[
-          {"type":"p","html":"Growing demand intensified existing <span class=\"kt\">peasant and artisan labor</span>. Wool and linen production expanded in western Europe, cotton textiles in India, and silk production in China. Globalization often increased older forms of work rather than replacing them."},
-          {"type":"p","html":"The Atlantic trade in enslaved people also reshaped demographics in parts of Africa. The removal of many young adults could alter sex ratios, household labor, marriage patterns, and <span class=\"kt\">gender and family</span> responsibilities."},
-          {"type":"p","html":"Forced migration and colonial contact also produced <span class=\"kt\">cultural synthesis</span> among African, American, and European peoples, showing that economic networks transformed social and cultural life as well as prices."}
+        "number": "3",
+        "label": "Rivals: Old Fights, New Tools",
+        "heading": "Economic Disputes Become Wars",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Rival states fought over who would control a trade. In the Indian Ocean, the Portuguese tried to take over the spice trade with guns, and Muslim states fought back. A fleet from Mamluk Egypt and the sultan of Gujarat, in India, fought the Portuguese off the port of Diu in 1509 and lost. After the Ottoman Empire conquered Egypt in 1517, Ottoman fleets fought the Portuguese in the Red Sea, the Persian Gulf, and the Indian Ocean through the 1500s."
+          },
+          {
+            "type": "p",
+            "html": "In Africa, the sultan of Morocco, Ahmad al-Mansur, wanted the gold of West Africa and the salt mines of the Sahara. In 1591 his army crossed the desert and defeated the Songhai Empire at the battle of Tondibi. (Topic 3.1 told the battle. Here the question is why: gold and the salt trade were a large part of the reason.)"
+          },
+          {
+            "type": "p",
+            "html": "Europeans fought each other too. The Dutch and English companies fought over the spice islands of Southeast Asia, and in 1623 VOC officials on the island of Ambon executed English company men they accused of plotting against them. England and the Dutch Republic then fought three wars at sea between 1652 and 1674, largely over trade and shipping."
+          }
         ],
-        "callout":{"label":"AP Thinking, Effects","raw":"<p>Do not stop at 'trade increased.' Ask who worked more, who moved, whose household changed, and which new cultural forms emerged because of those economic connections.</p>"}
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>One case can hold both.</strong> States fighting over trade routes was a continuity: rulers had done it for centuries. The tools they fought with were the change: laws written to keep wealth at home, and companies built to compete.</p>"
+        }
       },
       {
-        "number":"4","label":"Belief Systems","heading":"Religion Spreads, Conflicts, and Blends",
-        "blocks":[
-          {"type":"p","html":"Expanded interaction carried existing religions into new regions through migration, conquest, and missionary activity. Catholic Christianity, for example, spread widely in the Americas and established missions in parts of Asia."},
-          {"type":"p","html":"Interaction could also intensify <span class=\"kt\">religious conflict</span> when imperial authorities suppressed local beliefs or when political rivalry became tied to confessional identity."},
-          {"type":"p","html":"Under colonial conditions, communities also developed <span class=\"kt\">syncretic</span> practices. <span class=\"kt\">Vodun</span> in Haiti and <span class=\"kt\">Santería</span> in Cuba combined West and Central African traditions with elements of Christianity. Global contact could spread, contest, and blend belief systems."}
+        "number": "4",
+        "label": "Exchange: Silver",
+        "heading": "Silver Goes Around the World",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "In 1545 an Andean miner, Diego Gualpa, found silver on a mountain at Potosí in the Andes, and Spanish colonists claimed the mountain and began mining it. In 1546 another great silver strike came at Zacatecas in Mexico. (Topic 4.4 showed how the mit’a sent Andean men to work at Potosí.) Spanish America became the world's largest source of silver. Some of that silver crossed the Atlantic to Seville. A large share of it ended up in China."
+          },
+          {
+            "type": "p",
+            "html": "Why China? In the 1500s the government of Ming China began collecting most of its taxes in silver, in a reform called the <span class=\"kt\">Single Whip</span>. Millions of Chinese families now needed silver to pay their taxes, and China mined little of its own, so silver bought more in China than it did in Europe."
+          },
+          {
+            "type": "p",
+            "html": "From 1571, when the Spanish founded the city of Manila in the Philippines, Spanish galleons carried silver from Acapulco in Mexico across the Pacific Ocean to Manila. There Chinese merchants sailed in with silk and porcelain to trade for it. Silver that reached Europe kept moving too. Europeans had few goods that Asians wanted to buy, so Portuguese, Dutch, and English merchants carried silver around Africa to pay for Asian spices, cotton cloth, silk, and porcelain. Silver from the Americas now reached Europe, Asia, and Africa."
+          }
         ],
-        "callout":{"label":"AP Thinking, Comparison","raw":"<p>Compare religious effects by category: expansion of an existing religion, conflict over belief, or development of a syncretic practice.</p>"}
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Follow the pull, not just the push.</strong> Spain had the mines, but China's demand is what pulled the silver around the world. A strong answer names both ends: where the silver came from, and why it went where it went.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "Exchange: Change and Continuity",
+        "heading": "The Atlantic System, and Markets That Kept Going",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "In the Atlantic, ships moved goods, wealth, and people. This is the <span class=\"kt\">Atlantic trading system</span>. Sugar and tobacco went to Europe. Guns, iron, alcohol, and cloth went to Africa, and much of that cloth was cotton woven in India. Cowrie shells from the Maldive Islands in the Indian Ocean, carried by Dutch and English ships, were used as money on the coast of West Africa. And enslaved Africans were forced onto ships to the Americas to work on the plantations (Topic 4.4). People often draw this as a neat triangle. It was messier: many ships sailed straight from Brazil to Angola and back, and the goods came from all over the world."
+          },
+          {
+            "type": "p",
+            "html": "None of this replaced the trade that already ran across Africa and Asia. <span class=\"kt\">Regional markets</span> kept flourishing, with their own merchants and their own long-standing ways of doing business, such as credit, partnerships, and family firms. Gujarati, Chinese, and Armenian merchants kept trading. European ships became one more carrier inside these markets. Dutch ships carried Japanese silver to Taiwan to buy Chinese silk, Japanese silver and copper to India, and Indian cloth to Southeast Asia, earning money from trade between Asian ports."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Change and continuity side by side.</strong> The Atlantic system was new: it tied Africa, Europe, and the Americas into one system of trade across the ocean. The regional markets of Africa and Asia were a continuity: they kept their merchants and their old ways, and European ships joined them.</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "Work: Old and More of It",
+        "heading": "More Spinning, More Weaving",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "All this trade meant more demand for food and for goods, and that meant more work for peasants and artisans, the people who farmed or made things by hand at home and in workshops. This is <span class=\"kt\">peasant and artisan labor</span>. The work was old. There was more of it, for buyers farther away."
+          },
+          {
+            "type": "p",
+            "html": "In western Europe, merchants paid families in the countryside to spin and weave wool and linen in their own homes. In India, weavers made cotton cloth for buyers in Asia, Africa, and Europe, and the European companies bought more and more of it. In China, peasant families raised silkworms and wove silk, and some of that silk sailed to Manila to be traded for American silver. Much of this spinning and weaving was done by women and girls."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Two words, both halves.</strong> The College Board says this labor \"continued and intensified.\" Continued is the continuity: the same work, done the old way. Intensified is the change: more of it, for distant markets.</p>"
+        }
+      },
+      {
+        "number": "7",
+        "label": "Society: Families and Cultures",
+        "heading": "Who the Trade Took, and What Mixed",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "About two of every three people carried away in the Atlantic slave trade were male. In parts of Africa, especially West Central Africa, that left communities with more women than men. Historians argue that this changed family life there: women did more of the farming, more women and girls were enslaved inside Africa itself, and, some historians argue, more men took several wives (polygyny). The trade changed who lived in a village, and that changed how families worked. These are the \"demographic changes in Africa\" that the College Board names."
+          },
+          {
+            "type": "p",
+            "html": "In the Americas, Africans, Indigenous Americans, and Europeans lived side by side, often by force, and each group shaped what came out of it. New dishes mixed African, American, and European foods. New languages formed, called creoles, with most of their words from a European language and some of their grammar and sounds shaped by African languages. Music and religion mixed too. Historians call this <span class=\"kt\">cultural synthesis</span>. No one group made it. The College Board's words are \"with all parties contributing.\""
+          }
+        ],
+        "callout": {
+          "label": "Common Mistake to Avoid",
+          "raw": "<p>Do not write that European culture simply replaced African and Indigenous cultures in the Americas. Enslaved Africans and Indigenous Americans kept and remade their own ways of life, and the new Atlantic cultures came from all of them.</p>"
+        }
+      },
+      {
+        "number": "8",
+        "label": "Faith: Compare",
+        "heading": "Religions Spread, Clash, and Blend",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Religions traveled with the ships. Christianity spread to the Americas, the Philippines, and parts of Africa, and Jesuit missionaries reached the court of Ming China. Islam kept spreading in Southeast Asia along its older trade routes."
+          },
+          {
+            "type": "p",
+            "html": "Contact also caused religious conflict. In Peru, starting around 1610, Spanish priests ran campaigns against what they called idolatry. They destroyed Andean sacred objects and punished people who kept the old religion. (In Topic 4.4, Japan's rulers banned Christianity for their own reasons.)"
+          },
+          {
+            "type": "p",
+            "html": "And contact produced <span class=\"kt\">syncretism</span>, the blending of two or more religions into new beliefs and practices. At Tepeyac, a hill near Mexico City, Nahua Christians prayed to the Virgin of Guadalupe. In the 1570s a Spanish friar named Bernardino de Sahagún wrote that the Nahua had once honored a goddess at that hill whom they called Tonantzin, \"our mother.\" (The Skill Builder asks what he claimed about the people praying there in his day.) In Kongo, Christian crucifixes were made by Kongo artists in Kongo style. In the 1700s, a painter in Potosí showed the Virgin Mary as the silver mountain itself. And in the 1700s, enslaved Africans in the French colony of Saint-Domingue (today's Haiti) built a religion called Vodou from West and Central African beliefs and Catholic saints."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Comparison",
+          "raw": "<p><strong>Similar and different.</strong> The College Board asks how belief systems affected societies in similar and different ways. To compare, put two cases side by side and ask the same questions of each: who carried the religion, who received it, and what happened next. Something the two share is a similarity; a place where they part ways is a difference.</p>"
+        }
+      },
+      {
+        "number": "9",
+        "label": "The Pattern",
+        "heading": "Tools to Make Empires Pay, and What They Changed",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Put it together. Rulers built new tools to make their empires pay: mercantilist laws, and chartered companies that they aimed at each other. Those tools helped move silver around the world, goods and enslaved people across the Atlantic, and more work into the hands of peasants and artisans, while the old regional markets kept trading. And the silver, goods, and people they moved changed society: families in parts of Africa, a mixed Atlantic culture, and religions that spread, clashed, and blended."
+          },
+          {
+            "type": "p",
+            "html": "Rulers built economic tools to keep their empires paying, and the money, goods, and people those tools moved reshaped work, families, and faith."
+          },
+          {
+            "type": "p",
+            "html": "It also leaves a problem. States got richer and reached further. Not everyone accepted it. That is Topic 4.6."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Answer all four.</strong> The College Board asks four things in this topic: how rulers used economic tools to hold power, how networks of exchange changed and continued, how society changed, and how belief systems affected societies. For each one, name something new and something that kept going.</p>"
+        }
       }
     ],
-    "takeaway": "Maritime empires were maintained through four connected processes. Mercantilism and chartered companies such as the VOC linked commerce to state competition. Silver and Atlantic exchange created new transoceanic circuits while regional Afro-Eurasian markets continued. Global demand intensified peasant and artisan labor and the Atlantic slave trade altered demographic, gender, family, and cultural patterns. Increased interaction also affected belief systems through missionary expansion, religious conflict, and syncretic practices such as Vodun and Santería.",
+    "takeaway": "European rulers used mercantilism and chartered joint-stock companies such as the VOC to make their empires pay and to compete with each other, and economic disputes became wars, from the Indian Ocean to the Sahara to the spice islands. American silver flowed around the world toward China, whose taxes were mostly paid in silver, and the Atlantic trading system moved goods, wealth, and enslaved people, while regional markets in Africa and Asia kept flourishing. Peasant and artisan work continued and grew. The slave trade reshaped families in parts of Africa, Africans, Indigenous Americans, and Europeans all made a mixed Atlantic culture, and religions spread, clashed, and blended.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
-      {"num":"1","skill":"Causation","text":"Explain how mercantilism or a chartered company such as the VOC helped a state compete for overseas wealth or territory. Explain the mechanism, not just the definition.","placeholder":"The strategy strengthened the state because..."},
-      {"num":"2","skill":"Continuity & Change","text":"Identify one change in global exchange networks and one continuity in regional Afro-Eurasian markets. Use specific evidence for each.","placeholder":"One change was... One continuity was..."},
-      {"num":"3","skill":"Comparison","text":"Explain one social effect of expanding exchange and one belief-system effect. Use specific evidence such as intensified artisan labor, African gender/family change, missionary expansion, Vodun, or Santería.","placeholder":"One social effect was... One belief-system effect was..."}
-
+      {
+        "num": "01",
+        "skill": "Continuity and Change",
+        "text": "Explain ONE economic tool European rulers used to make their empires pay: a mercantilist law or a joint-stock company. Then explain ONE rivalry that grew out of an economic dispute, and say what was old about it and what was new.",
+        "placeholder": "One tool was... It helped the ruler by... One rivalry was... What was old was... What was new was..."
+      },
+      {
+        "num": "02",
+        "skill": "Claims and Evidence in Sources",
+        "text": "In Section 1, Thomas Mun states a rule. Put his claim in your own words. Then name ONE law or policy from Section 1 that put the same mercantilist idea into practice, and explain how it fits Mun's claim.",
+        "placeholder": "Mun's claim is that... One law or policy that put the idea into practice is... It fits because..."
+      },
+      {
+        "num": "03",
+        "skill": "Continuity and Change",
+        "text": "Explain ONE thing that changed and ONE thing that kept going from 1450 to 1750 as silver, goods, and people moved around the world. Use at least TWO of these: silver and China, regional markets, peasant and artisan work, families in Africa, the mixed Atlantic world, religion.",
+        "placeholder": "One change was... One continuity was... The evidence is..."
+      }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 4.5, Maritime Empires Maintained",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true,
   },
   "4.6": {
     "topicKey": "4.6",
@@ -900,163 +1193,209 @@ module.exports = {
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
+    "showFooterNote": false,
     "headerSubtitle": "Topic 4.6, Internal and External Challenges &nbsp;|&nbsp; AP World History: Modern",
-    "titleHtml": "The <em>Resistance</em> Within",
-    "deck": "European maritime empires after c. 1500 faced resistance from both within and without. Colonized indigenous peoples revolted against forced labor and religious suppression. Enslaved Africans built maroon communities and organized rebellions. And the European powers themselves competed so fiercely for colonial territory that their empires faced constant external challenge. Understanding these challenges is essential for explaining why empires that looked all-powerful on paper were far more fragile in practice.",
+    "titleHtml": "Push and <em>Pushback</em>",
+    "deck": "Between 1450 and 1750, states pulled power into the hands of their rulers and pushed out to rule new lands and peoples. Every push cost somebody something, and all over the world, people pushed back: nobles and judges, peasants and Cossacks, kings and queens, Indigenous towns, and enslaved Africans.",
     "skillTags": [
       "Causation",
-      "Comparison",
-      "Argumentation"
+      "Contextualization"
     ],
     "supportCards": {
-      "beforeYouRead": "Track the different forms of resistance: indigenous (Pueblo Revolt), African (maroon communities), and European rivalry. The AP will ask you to explain causes and outcomes of resistance, so you need to move beyond \"they resisted oppression\" to specific grievances, specific actions, and specific consequences.",
-      "readingTarget": "By the end, you should be able to explain the causes and outcome of the Pueblo Revolt of 1680, describe maroon communities as a form of African resistance, and explain how European competition created external challenges to maritime empires."
+      "beforeYouRead": "<strong>States pushed to expand and centralize → the push landed on a local group → the group pushed back → the state answered.</strong> For every case in this reading, ask four things: what did the state push for, who pushed back, how, and what happened next?",
+      "readingTarget": "What did states do between 1450 and 1750 that made people resist, who resisted, and what did their resistance change?"
     },
     "vocabulary": [
+      "Centralization",
+      "Expansion",
+      "Fronde",
+      "Cossacks",
+      "Marathas",
       "Pueblo Revolt",
-      "Popé",
+      "Encomienda",
       "Maroon Communities",
-      "Palmares",
       "Quilombo",
-      "Piracy",
-      "Privateering",
-      "Tewa",
-      "Religious Suppression",
-      "Seven Years War",
-      "Indigenous Revolt",
-      "Runaway Enslaved"
+      "Organized Resistance"
     ],
     "sections": [
       {
         "number": "1",
-        "label": "Contextualization",
-        "heading": "The Limits of Colonial Control",
+        "label": "The Push",
+        "heading": "Two Ways to Grow a State",
         "blocks": [
           {
             "type": "p",
-            "html": "European maritime empires projected enormous power on paper, viceroyalties, joint-stock companies, naval fleets, and vast territorial claims spanning continents. But actual control on the ground was far more fragile. The Spanish <span class=\"kt\">Viceroyalty of New Spain</span> claimed territory from Panama to the Mississippi River, but Spanish soldiers and officials were spread thin across thousands of miles of terrain they had never fully mapped. The <span class=\"kt\">Catholic Church</span> provided ideological authority but could not replace the physical absence of the state in frontier regions. Indigenous communities continued to practice their own governance, religion, and economic life, sometimes in open resistance, sometimes in subtle accommodation, always negotiating the terms of their subordination."
+            "html": "Topic 4.5 ended with a problem. States got richer and reached further. Not everyone accepted it."
           },
           {
             "type": "p",
-            "html": "The conditions for resistance were structural: <span class=\"kt\">coerced labor</span> that drove workers to exhaustion and death; <span class=\"kt\">religious suppression</span> that attacked the foundations of cultural identity; <span class=\"kt\">epidemic disease</span> that killed family members and disrupted community life; and Spanish administrators who repeatedly broke promises, increased tribute demands, and punished communities that complained. These conditions did not guarantee resistance, most colonial subjects most of the time found ways to survive within the system. But they created the preconditions that made large-scale organized resistance rational when the right moment arrived."
+            "html": "Between 1450 and 1750, states grew stronger than they had ever been, in two ways. The first was <span class=\"kt\">centralization</span>: a king or emperor pulled power into his own hands and away from the people who used to share it, such as great nobles, judges, towns, and village leaders. Topic 3.2 showed some of the tools, like Louis XIV's court at Versailles and the Ottoman devshirme. The second was <span class=\"kt\">expansion</span>: states pushed out over land and sea to rule people who had never been theirs, as Topics 4.2 to 4.5 showed."
+          },
+          {
+            "type": "p",
+            "html": "Both pushes cost somebody something. Centralizing meant new taxes, new laws, and lost privileges. Expanding meant tribute, forced labor, lost land, attacks on a people's religion, and for millions of Africans, slavery. So people pushed back, and they came from every kind of group: rich and poor, nobles and peasants, kingdoms and villages, free and enslaved. The harder states pushed to expand and centralize, the harder people at the local level pushed back."
           }
         ],
         "callout": {
           "label": "AP Thinking, Contextualization",
-          "raw": "<p>The Pueblo Revolt of 1680 and the formation of maroon communities were not spontaneous reactions to momentary cruelty, they were responses to structural conditions that had been building for generations. <strong>Contextualization requires identifying those structural conditions: decades of encomienda labor, religious suppression, drought, and broken colonial promises. The specific moment (1680 for the Pueblo Revolt) required context, but context alone doesn't explain timing, also explain what made 1680 specifically the moment of organized revolt.</strong></p>"
+          "raw": "<p><strong>Every revolt sits inside something bigger.</strong> A revolt is not just a moment when people got angry. To put it in context, name the bigger development it grew out of: a state pulling power to the center, or a state pushing out over new people. As you read each case, ask which push it answers.</p>"
         }
       },
       {
         "number": "2",
-        "label": "Key Concept",
-        "heading": "Indigenous Resistance: The Pueblo Revolt of 1680",
+        "label": "Inside the State: Nobles and Peasants",
+        "heading": "France and Russia Push Their Own People",
         "blocks": [
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Pueblo Revolt of 1680</span> is one of the most significant acts of indigenous resistance in colonial North American history. The <span class=\"kt\">Pueblo peoples</span> of the Rio Grande valley in modern New Mexico had lived under Spanish colonial rule since 1598, nearly a century of <span class=\"kt\">encomienda</span> labor demands, Catholic missionary pressure to abandon traditional religious practices, and periodic violence by Spanish administrators against community leaders who resisted."
+            "html": "In France, the crown had been fighting Spain for years, and war cost money. In 1648, while Louis XIV was still a boy and his mother ruled for him with her chief minister, Cardinal Mazarin, the government demanded new taxes. The judges of the Parlement of Paris, a powerful court, refused to approve them. When the government arrested one of the judges, the people of Paris put up barricades in the streets, and in January 1649 the royal family fled the city. Then some of the greatest nobles in France rose up too. This string of revolts, from 1648 to 1653, is called the <span class=\"kt\">Fronde</span>. It failed. The rebels quarreled with each other, and the crown won. But Louis XIV never forgot it, and he grew up to be a king who kept power in his own hands."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Popé</span>, a <span class=\"kt\">Tewa</span> religious leader from Ohkay Owingeh (San Juan Pueblo), organized a coordinated revolt across dozens of Pueblo communities. When Spanish officials discovered the plot and arrested Popé along with other leaders, the revolt was launched early, on August 10, 1680, to prevent further arrests. Over several days, Pueblo warriors killed approximately 400 Spanish colonists and 21 of the 33 Franciscan missionaries in the region. The remaining Spanish settlers fled south to El Paso. For twelve years, the Pueblo peoples governed their own territory."
-          },
-          {
-            "type": "p",
-            "html": "The outcome was significant: the Spanish eventually reconquered the Pueblo region in 1692 under Governor Otermín's successor, but the terms of Spanish rule changed. The <span class=\"kt\">encomienda system</span> was not reimposed. The Spanish largely stopped trying to suppress Pueblo religious practices. The Pueblo Revolt demonstrated that indigenous resistance could force real concessions, not just symbolic ones, from colonial powers."
+            "html": "In Russia, the tsar's Law Code of 1649 finished turning peasants into serfs, people bound to their lord's land. A serf who ran away could now be hunted down and returned, no matter how many years had passed. Many ran anyway, south to the Don River, where communities of free frontier fighters called <span class=\"kt\">Cossacks</span> lived beyond the tsar's reach. In 1670 a Don Cossack named Stenka Razin led a huge revolt up the Volga River. Towns opened their gates to him, and tens of thousands of peasants and non-Russian peoples of the Volga rose up. The tsar's army beat the rebels at the town of Simbirsk. Other Cossacks handed Razin over, and in 1671 he was executed in Moscow. Serfdom stayed."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p>The causes of the Pueblo Revolt were multiple and interconnected: religious suppression (Spanish missionaries destroyed kivas and confiscated sacred objects), labor exploitation (encomienda demands exceeded what communities could sustain), drought (which worsened food insecurity and increased Spanish demands), and the organizational capacity of Popé, who built a multi-community coalition. <strong>A strong causation argument identifies which causes were most significant AND explains why they combined to produce revolt in 1680 specifically.</strong></p>"
+          "raw": "<p><strong>Follow the chain.</strong> In each case, a state's push landed on a group, and the group pushed back. Ask what the state wanted, what that cost the group, and how the group answered. Then ask what happened next, because resistance has effects too.</p>"
         }
       },
       {
         "number": "3",
-        "label": "Key Concept",
-        "heading": "African Resistance: Maroon Communities and Revolts",
+        "label": "At the Edges: Asia and Africa",
+        "heading": "A Warrior Kingdom and a Queen",
         "blocks": [
           {
             "type": "p",
-            "html": "Enslaved Africans resisted their condition in multiple ways: slowing their work, breaking tools, preserving African cultural and religious practices, poisoning enslavers, running away, and organizing revolts. The most sustained form of African resistance was the formation of <span class=\"kt\">maroon communities</span>, settlements of escaped enslaved people in remote or inaccessible terrain, where they could build autonomous communities outside colonial control."
+            "html": "Some pushback came from the edges of growing empires, from people the empire was trying to conquer. The Mughal emperor Aurangzeb pushed his empire south into the Deccan, the high plateau of central India. There the <span class=\"kt\">Marathas</span>, led by Shivaji, had built a kingdom of hill forts and fast horsemen, and in 1674 Shivaji was crowned king. In 1681 Aurangzeb moved his court south to finish them. He conquered two other kingdoms of the Deccan, but he never defeated the Marathas, who fought from their forts and raided instead of meeting his huge army head on. He spent the rest of his life fighting in the south and died there in 1707. After that, the Marathas grew stronger and the Mughal emperors grew weaker."
           },
           {
             "type": "p",
-            "html": "The most famous maroon community was <span class=\"kt\">Palmares</span>, in the interior of Portuguese Brazil, which existed for nearly a century (c. 1605–1694). At its height, Palmares had a population of up to 30,000 people organized into multiple settlements, governed by a king (Ganga Zumba and later <span class=\"kt\">Zumbi</span>), and capable of defending itself against multiple Portuguese military expeditions. Palmares was eventually destroyed by a Portuguese military campaign in 1694, and Zumbi was captured and executed in 1695, but it stands as extraordinary evidence of what enslaved Africans built under extreme conditions."
-          },
-          {
-            "type": "p",
-            "html": "Maroon communities existed throughout the Caribbean and Americas: the <span class=\"kt\">Saramaka</span> in Suriname (Dutch colony), the <span class=\"kt\">Maroons of Jamaica</span> (British colony), the <span class=\"kt\">Palenques</span> of Colombia (Spanish colony). Each represented a different negotiation between autonomy and colonial pressure, some won formal treaties recognizing their freedom; others were repeatedly attacked and forced to relocate."
+            "html": "In West Central Africa, the Portuguese colony at Luanda pushed inland into the kingdom of Ndongo, largely to take captives for the Atlantic slave trade. In 1622 Njinga, the king's sister, went to Luanda to bargain with the Portuguese governor, and she was baptized there with the name Ana de Sousa. In 1624 she became Ndongo's ruler. For almost forty years she fought the Portuguese and bargained with them. She conquered the kingdom of Matamba as a new base, joined forces with the Dutch after they captured Luanda in 1641, and made peace with Portugal in the 1650s. She died in 1663, still ruling Matamba. Resisting Portugal did not mean resisting the slave trade: her own wars took captives, and Matamba sold them."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Comparison",
-          "raw": "<p>Maroon communities and the Pueblo Revolt represent different forms of resistance with important similarities and differences. <strong>Similarity: both were responses to structural colonial conditions, coerced labor, cultural suppression, broken promises. Difference: the Pueblo Revolt was a coordinated military uprising that expelled colonizers from a territory; maroon communities were acts of exit rather than confrontation, building autonomous spaces outside colonial control rather than overthrowing it. The difference reveals different strategies available to different groups based on geography, numbers, and access to territory.</strong></p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Resistance has effects.</strong> The College Board asks for the effects of state power, and resistance is one of them. But resistance had its own effects on the state. The Mughals spent decades and a fortune in the Deccan and never won there. Portugal ended up making peace with a queen it had set out to conquer.</p>"
         }
       },
       {
         "number": "4",
-        "label": "Key Concept",
-        "heading": "European Rivalry: External Challenges to Maritime Empires",
+        "label": "At the Edges: The Americas",
+        "heading": "The Pueblo Revolt and Metacom's War",
         "blocks": [
           {
             "type": "p",
-            "html": "European maritime empires also faced challenges from each other. The Portuguese <span class=\"kt\">Estado da India</span> was systematically displaced by the <span class=\"kt\">Dutch VOC</span> across the Indian Ocean in the early 17th century, not through a single decisive battle but through superior capital, more efficient organization, and the willingness of Dutch merchants to undercut Portuguese toll rates. By c. 1650, the Dutch had seized most of the Portuguese spice trade network."
+            "html": "In 1598 Spain planted a colony in the Rio Grande valley of New Mexico, among the Pueblo peoples, who lived in towns of stone and adobe. Under the <span class=\"kt\">encomienda</span>, the Pueblos had to hand over part of their crops to Spanish settlers each year, and they were forced to work without pay. Spanish friars tried to stamp out the Pueblo religion. In 1661 they banned the sacred dances and burned masks and prayer sticks, and in 1675 the governor arrested forty-seven Pueblo religious leaders, hanged three, and had the rest whipped. This religious suppression came on top of years of drought and famine, and raids by Apache neighbors that the Spanish did not stop."
           },
           {
             "type": "p",
-            "html": "In the Atlantic, British and French competition challenged the Spanish and Dutch empires. <span class=\"kt\">Piracy</span> and <span class=\"kt\">privateering</span>, state-sponsored or tolerated attacks on rival shipping, were a permanent feature of colonial competition. <span class=\"kt\">Sir Francis Drake</span> (English privateer, working for Queen Elizabeth I) raided Spanish Caribbean ports throughout the 1570s–1580s. The French established competing colonies in the Caribbean and North America that challenged both Spanish and British claims. The <span class=\"kt\">Seven Years War</span> (1756–1763) was the first truly global war, fought simultaneously in North America, the Caribbean, Europe, West Africa, and India, reflecting how deeply European rivalries had become entangled with colonial competition."
+            "html": "One of the whipped men was Popé (today often spelled Po'pay), a religious leader from the town of Ohkay Owingeh, who began to plan. Runners carried knotted cords from town to town. A town that agreed to join untied one knot as its sign, and the knots that were left counted the days to the same morning. When the Spanish caught two of the runners, the Pueblos struck early, on August 10, 1680. In the <span class=\"kt\">Pueblo Revolt</span> they killed about 400 colonists, including 21 friars, surrounded the capital at Santa Fe, and cut off its water. The surviving colonists fled south to El Paso, and for twelve years the Pueblos ruled themselves. When the Spanish came back in the 1690s, they did not bring back the encomienda, and the friars pushed far less hard against the Pueblo religion than before."
           },
           {
             "type": "p",
-            "html": "The distinction between internal and external challenges matters for AP arguments: internal challenges (Pueblo Revolt, maroon communities) tested the legitimacy and reach of colonial authority; external challenges (Dutch vs. Portuguese, British vs. French) tested the military and commercial capacity of competing empires. Both types of challenge revealed that European maritime empires were far less stable than their formal claims suggested."
+            "html": "In the same years, in New England, English colonists were taking more and more Wampanoag land and putting the Wampanoag under colonial courts. In 1675, after Plymouth Colony executed three Wampanoag men, war broke out between the colonists and the Wampanoag, led by Metacom, whom the English called King Philip. Other Native nations joined in. Metacom's War destroyed more than a dozen English towns. But the colonists, with Native allies of their own, won. Metacom was killed in 1676, and many Native captives were sold into slavery in the Caribbean."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Was European rivalry more damaging to maritime empires than indigenous or African resistance? <strong>A strong argument requires evidence on both sides: European rivalry destroyed the Portuguese Estado da India and reshaped global trade networks; indigenous resistance (Pueblo Revolt) forced real administrative reform; African resistance (maroon communities) created permanent autonomous spaces outside colonial control. The strongest answer acknowledges that these challenges operated at different scales and in different ways, rather than ranking them in a simple hierarchy.</strong></p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Causes come in kinds.</strong> The Pueblo Revolt had religious causes, economic causes, and political causes, all at once. A strong answer names more than one kind and explains how they worked together. Question 2 asks you to go one step further and put the revolt in its bigger context.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "Enslaved People Organize",
+        "heading": "Towns in the Hills, a Treaty, and a March",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "The plantation colonies were built on slavery (Topic 4.4), and enslaved people pushed back in every way they could. The College Board's word for what this topic asks about is <span class=\"kt\">organized resistance</span>: not one person running away, but many people acting together in a way that challenged the authorities."
+          },
+          {
+            "type": "p",
+            "html": "In the hills behind Brazil's sugar coast, people who escaped slavery built Palmares, a cluster of fortified towns that held thousands of people and lasted for most of the 1600s. Communities like this, built by people who escaped slavery, are called <span class=\"kt\">maroon communities</span>, and in Brazil a <span class=\"kt\">quilombo</span>. Palmares farmed, traded with nearby settlers, and beat back one army after another. In 1678 its leader, Ganga Zumba, made a treaty with the colonial government, but many in Palmares rejected it, and the next leader, Zumbi, kept fighting. In 1694 a large colonial army captured Palmares's main town, and in 1695 Zumbi was killed."
+          },
+          {
+            "type": "p",
+            "html": "In Jamaica, maroon communities in the mountains fought the British for years. In 1739 the colony made treaties with them. The Maroons led by Cudjoe were promised freedom and 1,500 acres of land forever. But the same treaty required them to send back any enslaved person who ran away to them and to help put down other revolts. Freedom for one community came with a promise to guard slavery for everyone else."
+          },
+          {
+            "type": "p",
+            "html": "In North America, on September 9, 1739, about twenty enslaved people near the Stono River in South Carolina seized guns from a store and marched south toward Spanish Florida, which had promised freedom to people who escaped from the English colonies. As they marched, others joined, until there were as many as a hundred. The colony's militia broke up the march that afternoon and hunted down the survivors over the weeks and months that followed. Somewhere between twenty and forty white colonists died, along with dozens of rebels; accounts give different numbers. South Carolina answered the Stono Rebellion with the Negro Act of 1740, a law that tightened control over every enslaved person in the colony."
+          }
+        ],
+        "callout": {
+          "label": "Common Mistake to Avoid",
+          "raw": "<p>Do not write that maroons were just runaways hiding in the woods. As you read about Palmares and the Jamaica Maroons, look for what they built together and what they forced a colony to do.</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "The Pattern",
+        "heading": "Push, Pushback, and What Came Next",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Put it together. States pushed, inward and outward. The push landed on someone: new taxes on judges and townspeople, serfdom on peasants, conquest on kingdoms, tribute and attacks on religion in the Pueblo towns, lost land for the Wampanoag, and slavery for Africans. Those groups pushed back by revolt, by war, by escape, and by bargaining."
+          },
+          {
+            "type": "p",
+            "html": "And the pushback had its own effects. Sometimes the state crushed it and came out stronger: the Fronde, Razin's revolt, Metacom's War, and Stono. Sometimes the state had to bargain: Njinga's peace, the Jamaica treaties, and the Spanish return to New Mexico on new terms. And sometimes the resistance wore the state down, as the Marathas did to the Mughals."
+          },
+          {
+            "type": "p",
+            "html": "The harder states pushed to expand and centralize, the harder people at the local level pushed back, and the pushback changed the states too."
+          },
+          {
+            "type": "p",
+            "html": "Some people resisted the new order. Everyone was sorted by it. Who ended up where? That is Topic 4.7."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Answer the whole question.</strong> The College Board asks you to explain the effects of the development of state power. A complete answer has three parts: what the state did, how people resisted, and what that resistance changed.</p>"
         }
       }
     ],
-    "takeaway": "European maritime empires faced challenges from three directions. <strong>Indigenous resistance</strong>, exemplified by the Pueblo Revolt of 1680, organized by Popé, forced the Spanish to reform the encomienda system and reduce religious suppression after twelve years of Pueblo self-governance. <strong>African resistance</strong>, exemplified by maroon communities like Palmares in Brazil, built autonomous settlements that colonial powers spent decades and enormous resources trying to destroy. <strong>European rivalry</strong>, Dutch displacement of the Portuguese in the Indian Ocean, British-French competition in the Americas, tested the military and commercial capacity of every colonial power. Together, these challenges reveal that European maritime empires were not the all-powerful systems they appeared on paper.",
+    "takeaway": "Between 1450 and 1750, states centralized and expanded, and the push cost local groups taxes, freedom, land, faith, and labor. People pushed back all over the world: judges, Parisians, and nobles in the Fronde; peasants and Cossacks under Stenka Razin; the Marathas against the Mughals; Njinga against Portugal; the Pueblos in 1680 and the Wampanoag in Metacom's War. Enslaved people organized too, in maroon communities like Palmares and the Jamaica Maroons, and in revolts like Stono in 1739. Some resistance was crushed, some forced a bargain, and some wore a state down.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
-        "num": "1",
+        "num": "01",
         "skill": "Causation",
-        "text": "Explain the causes of the Pueblo Revolt of 1680. Identify at least two specific grievances that motivated Pueblo communities to revolt, and explain how Popé organized resistance across multiple communities. What was the short-term outcome of the revolt?",
-        "placeholder": "Identify specific grievances, explain Popé's organization, and describe the short-term outcome..."
+        "text": "Choose the Fronde or Stenka Razin's revolt. Explain what the state was pushing for, which group pushed back and how, and what happened next.",
+        "placeholder": "The state was pushing for... The group that pushed back was... They pushed back by... What happened next was..."
       },
       {
-        "num": "2",
-        "skill": "Comparison",
-        "text": "Compare maroon communities as a form of resistance to the Pueblo Revolt. Identify one meaningful similarity and one meaningful difference. Then explain what the difference reveals about the strategies available to different groups of people resisting colonial rule.",
-        "placeholder": "Identify a similarity and a difference, then explain what the difference reveals about strategy..."
+        "num": "02",
+        "skill": "Contextualization",
+        "text": "Put the Pueblo Revolt of 1680 in its broader context. What bigger development of the years 1450 to 1750 was it part of, and how does that bigger development help explain why the revolt happened?",
+        "placeholder": "The Pueblo Revolt was part of a bigger development: ... This helps explain the revolt because..."
       },
       {
-        "num": "3",
-        "skill": "Argumentation",
-        "text": "Write a one-sentence claim answering this question: Were internal challenges (indigenous revolt, African resistance) or external challenges (European rivalry) more significant threats to European maritime empires in c. 1500–1750? Then provide one specific piece of evidence that supports your claim.",
-        "placeholder": "State your one-sentence claim, then provide one specific piece of supporting evidence..."
+        "num": "03",
+        "skill": "Causation",
+        "text": "Using Palmares or the Jamaica Maroons, explain what made their resistance organized resistance, and not just people running away one at a time.",
+        "placeholder": "The community I chose is... It was organized resistance because... One piece of evidence is..."
       }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 4.6, Internal and External Challenges",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true,
   },
   "4.7": {
     "topicKey": "4.7",
@@ -1068,198 +1407,446 @@ module.exports = {
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
+    "showFooterNote": false,
     "headerSubtitle": "Topic 4.7, Changing Social Hierarchies &nbsp;|&nbsp; AP World History: Modern",
-    "titleHtml": "New <em>Hierarchies</em>",
-    "deck": "Early modern empires changed hierarchy in three ways at once. States sometimes accommodated diverse groups and sometimes restricted them; conquest and global commerce created new political and economic elites such as the casta hierarchy; and centralizing rulers forced older elites such as Ottoman timar holders, Russian boyars, and European nobles to defend, lose, or renegotiate their power.",
+    "titleHtml": "Who Belongs, Who <em>Rises</em>",
+    "deck": "Between 1450 and 1750, every society still ranked people from top to bottom. What changed was who stood where. Empires decided which groups could belong and which were pushed out, conquest and new trade put new groups at the top, and stronger rulers squeezed the old nobles who used to share their power.",
     "skillTags": [
-      "Comparison",
-      "Continuity & Change",
-      "Argumentation"
+      "Continuity and Change",
+      "Claims and Evidence in Sources"
     ],
     "supportCards": {
-      "beforeYouRead": "Track three processes rather than one hierarchy: accommodation or suppression of diversity, formation of new elites, and changing power of existing elites under centralizing states. Ask what each policy or hierarchy did for the state.",
-      "readingTarget": "By the end, you should be able to explain one accommodation policy and one suppression policy, explain how conquest or commerce produced new elites such as the casta hierarchy, and explain how centralization changed the power of existing elites such as timar holders, boyars, or European nobility."
+      "beforeYouRead": "<strong>The ladder stayed. The people on it moved.</strong> For every case in this reading, ask two things: what stayed the same about who held power and status, and what changed? Then ask which of three kinds of change it is: who could belong, a new elite at the top, or an old elite squeezed.",
+      "readingTarget": "Between 1450 and 1750, how did empires decide who could belong and who could rise, and what stayed the same?"
     },
     "vocabulary": [
+      "Accommodation",
+      "Jizya",
+      "Rajputs",
+      "Banners",
+      "Queue",
       "Casta",
       "Peninsulares",
-      "Creoles (Criollos)",
-      "Mestizos",
-      "Mulattos",
-      "Limpieza de Sangre",
-      "Social Mobility",
-      "Racial Classification",
-      "Plantation Hierarchy",
-      "Gender Norms",
-      "Indigenous Nobility",
-      "Free Blacks",
-      "Accommodation",
-      "Suppression",
-      "Millet",
+      "Creoles",
       "Timar",
       "Boyars",
-      "Nobility",
-      "Centralization"
+      "Table of Ranks",
+      "Nobility"
     ],
     "sections": [
       {
-        "number":"1","label":"Diversity Policy","heading":"Accommodation and Suppression Are Both Tools of Rule",
-        "blocks":[
-          {"type":"p","html":"Empires governed populations divided by religion, ethnicity, language, and legal status. States sometimes <span class=\"kt\">accommodated</span> groups when their taxes, military service, trade connections, or local authority helped the state govern."},
-          {"type":"p","html":"The Ottoman Empire accepted many Jews expelled from Spain and Portugal and governed recognized religious communities through differentiated institutions. Mughal rulers at times incorporated Hindu elites into imperial service. In other cases, states <span class=\"kt\">suppressed</span> or restricted groups, including Qing limits on some Han Chinese roles and Iberian pressure on Jewish and Muslim communities."}
+        "number": "1",
+        "label": "The Ladder",
+        "heading": "The Ladder Stays, the People on It Move",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Topic 4.6 ended with a question. Some people resisted the new order. Everyone was sorted by it. Who ended up where?"
+          },
+          {
+            "type": "p",
+            "html": "Every society you have studied ranked people. There were rulers and nobles at the top, priests, scholars, and merchants in the middle, and farmers, laborers, and the enslaved at the bottom. Between 1450 and 1750, that did not change. Nobody in this period built a society of equals, and almost everywhere a king, sultan, tsar, or emperor who inherited his throne still sat on top. That is the <strong>continuity</strong>."
+          },
+          {
+            "type": "p",
+            "html": "What changed was who stood on which rung, and why. Empires that conquered new lands and grew rich from new trade made three kinds of change. They decided <strong>who could belong</strong>: which religious and ethnic groups they welcomed or made use of, and which they pushed out or held down. They created <strong>new elites</strong>, new groups at the top. And they <strong>squeezed old elites</strong>, the nobles and warriors who had shared power with earlier rulers."
+          }
         ],
-        "callout":{"label":"AP Thinking, Causation","raw":"<p>Ask the functional question: <strong>why did the state accommodate or restrict this group, and how did the policy affect access to power?</strong></p>"}
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Name both halves.</strong> The College Board asks how social categories, roles, and practices were maintained or changed. A strong answer says what stayed the same and what changed. As you read each case, sort it: what stayed, what changed, and why?</p>"
+        }
       },
       {
-        "number":"2","label":"New Elites","heading":"Conquest and Commerce Create New Routes to Status",
-        "blocks":[
-          {"type":"p","html":"Imperial conquest and widening economic opportunity created <span class=\"kt\">new elites</span>. In Spanish America, the <span class=\"kt\">casta</span> hierarchy classified ancestry and helped organize access to office, tribute obligations, labor status, and social prestige."},
-          {"type":"p","html":"Commercial expansion also created wealthy merchant and company elites whose influence came from long-distance trade and state charters rather than only hereditary landholding. New systems of power could therefore sit alongside older aristocracies."}
+        "number": "2",
+        "label": "Who Belongs: Pushed Out and Welcomed",
+        "heading": "Spain Pushes Out, the Ottomans Take In",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "In 1492, King Ferdinand and Queen Isabella of Spain ordered every Jew in their kingdoms to become Christian or leave by the end of July. Tens of thousands left, and many others converted and stayed; historians disagree about which group was larger. Four years later, Portugal's king ordered the same, and in 1497, instead of letting most of them go, he had them baptized by force. Spain and Portugal wanted one religion in each kingdom, and they suppressed difference by pushing a whole group out or forcing it to convert."
+          },
+          {
+            "type": "p",
+            "html": "At the other end of the Mediterranean, the Ottoman sultan Bayezid II let the refugees settle in his empire. Thousands did, in Istanbul, in Salonica (today Thessaloniki, in Greece), and in other cities. Salonica became a city where Jews were the largest group, and it stayed that way for centuries. Why would a Muslim sultan take them in? Because they were useful: merchants, doctors, craftsmen, and taxpayers. Jewish refugees soon set up Istanbul's first printing press. Not every exile went east, though. Many went to Portugal, North Africa, or Italy."
+          },
+          {
+            "type": "p",
+            "html": "The Ottoman Empire ruled Muslims, Orthodox and Armenian Christians, and Jews. Under Islamic law, Christians and Jews were protected subjects. They could practice their religion, and their own religious leaders ran their marriages, inheritances, schools, and family courts, and answered to the sultan for their community's taxes and good behavior. This is <span class=\"kt\">accommodation</span>: making room for a group's differences. But it was not equality. Christians and Jews paid a special tax, the <span class=\"kt\">jizya</span>. In an Islamic court, they generally could not testify against a Muslim. They could not freely build new churches or synagogues, and the top jobs in the army and government went to Muslims."
+          }
         ],
-        "callout":{"label":"AP Thinking, Social Structure","raw":"<p>New elites are evidence of change only when you explain the new source of status: conquest, ancestry classification, commerce, or service to an expanding state.</p>"}
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Room is not the same as equal.</strong> The College Board says states accommodated diversity or used what different groups could contribute. The Ottomans did both: they kept the peace among many faiths, and they gained skilled, taxpaying subjects. What stayed the same was that Muslims ranked above everyone else.</p>"
+        }
       },
       {
-        "number":"3","label":"Existing Elites","heading":"Centralizing States Reshape Older Elite Power",
-        "blocks":[
-          {"type":"p","html":"Older elites did not simply disappear. Their power <span class=\"kt\">fluctuated</span> as rulers centralized. Changes to Ottoman <span class=\"kt\">timar</span> arrangements altered the role of provincial military elites, while Russian rulers pushed <span class=\"kt\">boyars</span> toward state service and imperial rank."},
-          {"type":"p","html":"European <span class=\"kt\">nobility</span> also faced stronger monarchies. Aristocrats could lose independent military or provincial authority while gaining status through court access, offices, and state service. Centralization often changed the route to elite power rather than eliminating elites altogether."}
+        "number": "3",
+        "label": "Who Belongs: It Depends",
+        "heading": "Rulers Change Their Minds, and Class Changes Everything",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "In India, the Mughal emperors were Muslims ruling a mostly Hindu land. The emperor Akbar, who ruled from 1556 to 1605, did more than tolerate Hindus. He ended the jizya in 1564, married daughters of Hindu <span class=\"kt\">Rajputs</span>, the warrior kings of northwestern India, and made Rajput princes some of the highest-ranking commanders and officials in his empire. He needed their armies and their loyalty, and he got them. A century later, his great-grandson Aurangzeb brought the jizya back, in 1679, though he still employed many Hindu officers. Same empire, same groups, opposite policy. Making room for a group was a choice a ruler made, and the next ruler could unmake it."
+          },
+          {
+            "type": "p",
+            "html": "Inside the Ottoman Empire, being a woman meant very different things depending on your class. At the very top, women of the sultan's family held real power. Hürrem began as an enslaved woman in the palace and became the wife of Sultan Suleiman. She paid for a mosque, a school, a soup kitchen, and a hospital in Istanbul. Later, Kösem ran the government as regent for her young son Murad IV and then for her grandson Mehmed IV, and was a powerful adviser to her grown son Ibrahim, between the 1620s and 1651. In the towns, ordinary women owned property and went to the Islamic court to claim their inheritances and debts, and court records show them winning. But the law still treated them unequally: a daughter inherited half what a son did, and a woman's word in court counted for less than a man's. Many other women were enslaved, as servants and concubines, with almost no say over their own lives."
+          }
         ],
-        "callout":{"label":"AP Thinking, Continuity &amp; Change","raw":"<p><strong>Continuity:</strong> elites remained powerful. <strong>Change:</strong> rulers increasingly made elite status depend on court access or state service rather than independent local power.</p>"}
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Watch for change inside one empire.</strong> Akbar ended the jizya and Aurangzeb brought it back. A queen mother could run the empire while an enslaved woman in the same palace could not leave it. Before you say what an empire did to a group, ask: which ruler, and which members of the group?</p>"
+        }
+      },
+      {
+        "number": "4",
+        "label": "New Elites",
+        "heading": "Conquest and Trade Make a New Top",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "In 1644 the Manchus, a people from north of the Great Wall whose rulers had already named their dynasty the Qing, took Beijing and began to rule China. They were a small minority ruling a huge Han Chinese majority. They kept the Chinese way of governing: the civil service exams, the Confucian officials, and the old law codes, and Han Chinese scholars still filled most government jobs. But they also built a new elite at the top: the <span class=\"kt\">banners</span>, hereditary military units of Manchus, Mongols, and Han families who had joined the Manchus early. Bannermen lived in walled quarters inside major cities, were paid by the state, and had legal privileges that ordinary Han Chinese did not."
+          },
+          {
+            "type": "p",
+            "html": "The Qing also held the Han majority in place. In 1645 they ordered every Han man to shave the front of his head and wear his hair in a long braid, the Manchu <span class=\"kt\">queue</span>, or be killed. Many top posts in the capital went to two officials, one Manchu and one Han, so the Manchu could watch the Han. A long line of ditches and willow fences in the northeast was built to keep Han farmers out of the Manchu homeland, though many crossed anyway. These were restrictions on the majority, made by a new elite that wanted to stay on top."
+          },
+          {
+            "type": "p",
+            "html": "In Spanish America, conquest had brought together Spaniards, Indigenous peoples, and Africans, and their children. Spanish colonial society ranked people by their ancestry, and this ranking is called the <span class=\"kt\">casta</span> system. Among people counted as Spanish, birthplace mattered too. At the top were <span class=\"kt\">peninsulares</span>, people born in Spain. The viceroys who ruled for the king were almost always Spanish-born. Next came <span class=\"kt\">creoles</span>, people of Spanish ancestry born in the Americas. Silver mines, huge estates, and trade made many creole families rich, a new economic elite, and they resented the newcomers from Spain who got the highest jobs. Below them were people of mixed ancestry, such as mestizos (Spanish and Indigenous) and mulattos (Spanish and African); Indigenous people, who paid tribute to the crown and had their own town governments; and people of African ancestry, some free and many enslaved."
+          },
+          {
+            "type": "p",
+            "html": "In the 1700s, artists in Mexico painted sets of casta paintings. Each painting showed a mother, a father, and their child, with a label for each person's category, as if society were a neat chart. Real life was messier. Most of the many labels in the paintings did not appear in official records, and how a person was recorded could change with their wealth, job, clothes, and reputation. But ancestry still opened or closed doors, and the top of the ladder belonged to people whose families came from Spain."
+          }
+        ],
+        "callout": {
+          "label": "Common Mistake to Avoid",
+          "raw": "<p>Do not treat a casta painting as a census. The paintings show how elite viewers wanted to see colonial society: sorted, labeled, and in order. As you read about any ranking system, ask who made the picture of it, and whether real people fit the picture.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "Old Elites Squeezed",
+        "heading": "Cavalrymen, Boyars, and Nobles at Court",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "For centuries, the core of the Ottoman army was the sipahi, a cavalryman who held a <span class=\"kt\">timar</span>: the right to collect the taxes from a piece of land, in return for riding to war when the sultan called. A timar was not his to own, and it was not supposed to pass automatically to his son. By the late 1500s, wars were won by soldiers with guns who were paid in cash, and the sultan needed money more than horsemen. So the state turned more and more timar land into tax farms: the right to collect a district's taxes, sold for cash to whoever would pay. In 1695 it began selling them for life. The sipahis faded. Some families held on to their timars, and the system was not abolished until 1831, but the sipahis no longer led the army, and tax farmers and powerful local families rose in their place."
+          },
+          {
+            "type": "p",
+            "html": "In Russia, the <span class=\"kt\">boyars</span> were the great noble families. They sat on the tsar's council and fought over seats by family rank, until that system was ended in 1682. Then Peter the Great, who ruled from 1682 to 1725, went further. He replaced the old council of boyars with a Senate he appointed, ordered nobles to shave their beards and dress like western Europeans, and made noblemen serve the state, in the army or the government, for life. His <span class=\"kt\">Table of Ranks</span> of 1722 set out fourteen ranks of service. A man's place depended on the rank he earned, and a commoner who rose high enough became a noble. The word \"boyar\" faded away. The nobles did not: they kept their estates and their power over their serfs."
+          },
+          {
+            "type": "p",
+            "html": "In France, Louis XIV made sure there would be no second Fronde (Topic 4.6). He sent royal officials called intendants to run the provinces, and in 1682 he moved his court and government to his palace at Versailles, where great nobles spent their days near the king, competing for his favor instead of raising armies at home, and he kept them loyal by giving them offices, pensions and army commands. The French <span class=\"kt\">nobility</span> kept their titles, their land, and their freedom from the main tax. What they lost was the power to defy the king. But the power of old elites could rise as well as fall. In England in 1688, seven leading Englishmen, most of them nobles, invited William of Orange to bring an army, King James II fled, and Parliament, a body of landowning nobles and gentry, set limits on the monarchs who came after him. There, the old elite won."
+          },
+          {
+            "type": "p",
+            "html": "People argued about all this at the time. In the 1550s, Ogier Ghiselin de Busbecq, an ambassador sent to the Ottoman sultan by the Habsburg ruler Ferdinand, who later became Holy Roman Emperor, came back to Vienna in 1555 and wrote to a friend that among the Turks \"it is by merit that men rise in the service,\" while in Europe \"birth is the standard for everything.\" Was he right? That is a claim you can test with evidence."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Claims and Evidence in Sources",
+          "raw": "<p><strong>Test a source's argument.</strong> A piece of evidence can <strong>support</strong> an argument (it fits), <strong>modify</strong> it (it is true, but only for some people or some places), or <strong>refute</strong> it (it shows the argument is wrong). Before you decide, look back through this reading for evidence about European nobles: who they were born as, and how some people rose. Question 3 asks you to test the European half of Busbecq's claim.</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "The Pattern",
+        "heading": "What Stayed, What Changed",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Put it together. The ladder stayed: rulers who inherited their thrones at the top, privileged nobles beneath them, most people at the bottom, and a woman's place set largely by her family's class. Who stood where changed, in three ways."
+          },
+          {
+            "type": "p",
+            "html": "States decided who could belong. Some welcomed or made use of groups, like the Ottomans with Jewish refugees and Akbar with the Rajputs. Others pushed groups out or held them down, like Spain and Portugal with the Jews and the Qing with the Han. Conquest and new trade made new elites: the Qing banners, and the Spanish-born officials and rich creoles at the top of the casta ranking. And stronger rulers squeezed old elites: the sipahis, the boyars, and the French nobles, though old elites rarely disappeared, and in England they won."
+          },
+          {
+            "type": "p",
+            "html": "Empires decided who could belong and who could rise: new elites appeared, old ones were squeezed, and some groups were welcomed while others were pushed out."
+          },
+          {
+            "type": "p",
+            "html": "Trade, work, and the ladder itself all moved between 1450 and 1750. Which change mattered most, and what stayed the same? That is Topic 4.8."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Answer the whole question.</strong> The College Board asks how social categories, roles, and practices were maintained or changed. A complete answer names one thing that stayed the same, one thing that changed, and the reason it changed: a ruler's choice, a conquest, new wealth, or a state that needed something new.</p>"
+        }
       }
     ],
-    "takeaway": "Topic 4.7 has three jobs. States accommodated or suppressed diverse groups depending on what best served rule. Imperial conquest and global commerce created new elites and hierarchies, including the casta system in Spanish America. At the same time, the power of existing elites changed as centralizing rulers challenged or redirected older sources of authority: Ottoman timar holders, Russian boyars, and European nobility often retained status by adapting to state service and court politics.",
+    "takeaway": "Between 1450 and 1750, societies kept their ladders: rulers who inherited power, privileged nobles, and most people at the bottom. But empires changed who stood where. Spain and Portugal pushed out or forcibly converted their Jews, while the Ottomans took them in and gave Christians and Jews protection without equality. Akbar welcomed Hindu Rajputs into his elite, and Aurangzeb brought back the jizya. Ottoman women's lives depended on their class. The Qing conquest created a new elite, the banners, and held the Han majority in place with the queue. The casta system put Spanish-born officials and rich creoles at the top in Spanish America. And stronger rulers squeezed old elites: Ottoman timar holders, Russian boyars, and French nobles, though in England the nobles won.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
-      {"num":"1","skill":"Causation","text":"Give one example of a state accommodating a diverse group and one example of suppression or restriction. Explain why each policy served the state.","placeholder":"The state accommodated... because... It restricted... because..."},
-      {"num":"2","skill":"Continuity & Change","text":"Explain how conquest or global economic opportunity created a new elite or hierarchy. Use the casta system or another specific example.","placeholder":"A new elite formed because..."},
-      {"num":"3","skill":"Comparison","text":"Compare how centralization changed the power of TWO existing elite groups such as Ottoman timar holders, Russian boyars, or European nobility.","placeholder":"Both groups faced... They differed because..."}
-
+      {
+        "num": "01",
+        "skill": "Continuity and Change",
+        "text": "Choose the Ottoman Empire or the Mughal Empire. Explain one way it made room for or made use of a religious or ethnic group, why the ruler did it, and one thing about that group's place in society that stayed the same. Then name one state in this reading that pushed out or held down a group instead.",
+        "placeholder": "The empire I chose is... It made room for... by... The ruler did this because... One thing that stayed the same for the group was... A state that pushed out or held down a group instead was..."
+      },
+      {
+        "num": "02",
+        "skill": "Continuity and Change",
+        "text": "The Manchu conquest of 1644 brought both continuity and change to the people who ran China. Explain one thing about how China was governed that stayed the same, and one way the top of society changed.",
+        "placeholder": "One thing that stayed the same was... One way the top of society changed was..."
+      },
+      {
+        "num": "03",
+        "skill": "Claims and Evidence in Sources",
+        "text": "Busbecq argued that in Europe \"birth is the standard for everything.\" Choose one piece of evidence from this reading about European nobles or rulers and explain whether it supports, modifies, or refutes his argument about Europe.",
+        "placeholder": "The evidence I chose is... It supports / modifies / refutes Busbecq's argument because..."
+      }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 4.7, Changing Social Hierarchies",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true,
   },
   "4.8": {
     "topicKey": "4.8",
-    "topicLabel": "4.8 - Continuity and Change",
+    "topicLabel": "4.8 - Continuity and Change from 1450 to 1750",
     "sourceFile": "first-and-10-topic-4-8-continuity-and-change.html",
     "unitDir": "unit-4",
-    "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 4.8 Continuity and Change",
+    "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 4.8 Continuity and Change from 1450 to 1750",
     "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
-    "headerSubtitle": "Topic 4.8, Continuity and Change &nbsp;|&nbsp; AP World History: Modern",
-    "titleHtml": "Economic Change, <em>Social Consequence</em>",
-    "deck": "Topic 4.8 asks one synthesis question: how did economic developments from c. 1450 to c. 1750 affect social structures over time? Plantation growth, silver extraction, mercantilism, and intensified production changed demand for labor, created or reshaped hierarchies, altered elite power, and affected families — while older peasant, artisan, and elite structures also persisted.",
+    "showFooterNote": false,
+    "headerSubtitle": "Topic 4.8, Continuity and Change from 1450 to 1750 &nbsp;|&nbsp; AP World History: Modern",
+    "titleHtml": "Follow the Trade to the <em>People</em>",
+    "deck": "Between 1450 and 1750, ships joined the two halves of the world, and new trade in sugar, silver, and cloth needed more workers than ever. How did that change who did the work, who rose to the top, and how families lived? And how much of the old world kept working the old way? This reading follows the trade to the people, and you make the argument.",
     "skillTags": [
-      "Continuity & Change",
-      "Causation",
+      "Continuity and Change",
       "Argumentation"
     ],
     "supportCards": {
-      "beforeYouRead": "For every economic development, ask what happened to people and hierarchy: who had to work, who gained wealth or status, whose family or community changed, and which older structures remained useful enough to survive.",
-      "readingTarget": "By the end, you should be able to connect specific economic developments to changes in labor, slavery, casta and elite power, or gender/family patterns, then write a continuity-and-change argument explaining why some social structures changed while others persisted."
+      "beforeYouRead": "<strong>Follow the trade to the people.</strong> For every case in this reading, ask three things: what economic development started it, which workers did it need, and what did that do to who worked, who ruled, and how families lived? Then ask the question historians always ask next: what stayed the same?",
+      "readingTarget": "How did economic developments between 1450 and 1750 change social structures, and how much stayed the same?"
     },
     "vocabulary": [
-      "Global Price Revolution",
-      "Columbian Exchange",
-      "Indian Ocean Trade",
-      "Silk Roads",
-      "Demographic Collapse",
-      "Asian Manufacturing",
-      "Manila Galleon",
-      "Silver Economy",
-      "Ecological Transformation",
-      "Islamic Commercial Networks",
-      "CCOT",
-      "Synthesis",
+      "Economic Development",
       "Social Structure",
-      "Plantation Economy",
+      "Plantation",
       "Chattel Slavery",
+      "Mit’a",
+      "Peasant and Artisan Labor",
+      "Indentured Servants",
+      "Planters",
       "Casta",
-      "Peasant Labor",
-      "Artisan Labor",
-      "Elite Power",
-      "Gender and Family"
+      "Continuity",
+      "Change",
+      "Thesis"
     ],
     "sections": [
       {
-        "number":"1","label":"Economic Development","heading":"A Larger Economy Creates New Demands",
-        "blocks":[
-          {"type":"p","html":"From c. 1450 to c. 1750, global <span class=\"kt\">silver</span> flows, mercantilist competition, chartered companies, plantation agriculture, and growing demand for textiles and other consumer goods expanded production and moved wealth through new channels."},
-          {"type":"p","html":"Those economic developments mattered socially because they changed who needed labor, who controlled revenue, and who could convert economic advantage into political or social privilege. Topic 4.8 is about that <strong>economic development -> social structure</strong> mechanism."}
+        "number": "1",
+        "label": "The Question",
+        "heading": "Today You Are the Historian",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Topic 4.7 ended with a question. Trade, work, and the ladder itself all moved between 1450 and 1750. Which change mattered most, and what stayed the same?"
+          },
+          {
+            "type": "p",
+            "html": "This topic gives you no new empire and no new war. It gives you a question, and you already have almost all of the evidence, from Topics 4.1 to 4.7. The one new case is Barbados, in Section 4. The College Board asks how <span class=\"kt\">economic developments</span>, big changes in how people made, bought, and sold things, affected <span class=\"kt\">social structures</span> between 1450 and 1750. A social structure is the way a society is organized: who does the work, who rules and rises, and how families and communities live. Your job is to answer with an argument, and the trick is to follow the trade all the way to the people."
+          },
+          {
+            "type": "p",
+            "html": "None of it could happen until ships could cross an ocean and come back (Topic 4.1). Europe built those ships from borrowed knowledge: the compass, used at sea in China by about 1100; the astrolabe, a Greek idea that astronomers in the Islamic world made precise; tables of the sky built by Muslim and Jewish astronomers in Toledo; and the triangular lateen sail, common across the Mediterranean and the seas of the Islamic world. It built new ships around them, the caravel and the carrack, and around 1600 the Dutch fluyt, which carried a large cargo with a small, cheap crew and made shipping goods much cheaper. And its sailors learned the Atlantic's winds, swinging far out to sea to catch a wind that blew them home. Once ships went and came back again and again, the two halves of the world were joined, and trade was transformed."
+          }
         ],
-        "callout":{"label":"AP Thinking, Causation","raw":"<p>Do not list an economic change and a social change separately. Explain the connecting mechanism: <strong>new demand or revenue -> changed labor, status, family, or elite power</strong>.</p>"}
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Name both halves.</strong> The question asks how economic developments affected social structures over time. A strong answer says what changed, what stayed the same, and why. As you read, keep two lists: changes and continuities.</p>"
+        }
       },
       {
-        "number":"2","label":"Labor and Slavery","heading":"Plantations and Extraction Reshape Labor Status",
-        "blocks":[
-          {"type":"p","html":"Expanding <span class=\"kt\">plantation economies</span> increased demand for enslaved labor in the Americas, expanding hereditary racialized <span class=\"kt\">chattel slavery</span>. Silver mining and colonial agriculture also relied on systems such as the mita, encomienda, and hacienda."},
-          {"type":"p","html":"At the same time, older <span class=\"kt\">peasant</span> and <span class=\"kt\">artisan labor</span> continued and often intensified in Europe, India, and China as global demand for wool, linen, cotton, silk, food, and manufactured goods grew."}
+        "number": "2",
+        "label": "The Money",
+        "heading": "Sugar, Silver, and Cloth",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Three economic developments came down that ocean road. The first was new demand. Europeans wanted sugar and tobacco grown on <span class=\"kt\">plantations</span>, huge farms in the Americas growing one crop to sell (Topic 4.3). Buyers in Asia, Africa, and Europe wanted cotton cloth woven in India and silk woven in China."
+          },
+          {
+            "type": "p",
+            "html": "The second was silver. From 1545 the mountain at Potosí in the Andes, and from 1546 the mines at Zacatecas in Mexico, poured out silver, and a large share of it ended up in China, where the government collected most of its taxes in silver (Topic 4.5). The third was a set of tools that rulers used to pull that wealth toward themselves: mercantilist laws, and chartered companies such as the Dutch East India Company, the VOC."
+          },
+          {
+            "type": "p",
+            "html": "The money was worth fighting over, and rivals did. A Portuguese fleet defeated an Egyptian and Gujarati fleet off Diu, in India, in 1509. Morocco's army crossed the Sahara and defeated the Songhai Empire at Tondibi in 1591, partly to take control of West Africa's gold and salt trade. VOC officials on the spice island of Ambon executed English traders in 1623. And England and the Dutch Republic fought three wars at sea between 1652 and 1674, largely over trade and shipping."
+          }
         ],
-        "callout":{"label":"AP Thinking, Continuity &amp; Change","raw":"<p><strong>Change:</strong> Atlantic plantation slavery expanded dramatically. <strong>Continuity:</strong> most production still depended on peasant and artisan labor, often working harder for larger markets.</p>"}
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Do not stop at the trade.</strong> New demand, silver, and rulers' tools are the economic developments, and ships were the road they came down. They are the start of the answer, not the end. The question is what they did to people, so the next step is always: who had to do the work?</p>"
+        }
       },
       {
-        "number":"3","label":"Hierarchy","heading":"Economic Change Creates New Elites and Reworks Old Ones",
-        "blocks":[
-          {"type":"p","html":"Colonial conquest and extraction contributed to new hierarchies such as the Spanish American <span class=\"kt\">casta</span> system, where ancestry, legal status, wealth, and access to office became intertwined."},
-          {"type":"p","html":"Existing <span class=\"kt\">elites</span> also adapted. Local nobles, merchants, landowners, company directors, and state servants could gain or lose influence depending on how well they fit new imperial and commercial systems. Centralizing rulers sometimes weakened independent elites while creating new routes to status through service or court access."}
+        "number": "3",
+        "label": "The Workers",
+        "heading": "More Demand Meant More Work",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "All that demand meant someone had to grow more, mine more, and make more. The College Board's words are that \"the demand for labor intensified.\" It was met in three ways."
+          },
+          {
+            "type": "p",
+            "html": "Plantations and the slave trade. Sugar needed enormous numbers of workers, and planters chose enslaved Africans. Historians estimate that in the whole 1500s, fewer than 300,000 Africans were forced onto ships bound for the Americas. In the fifty years from 1701 to 1750, more than 2.5 million were (Topic 4.4). On the plantations they were held in <span class=\"kt\">chattel slavery</span>: owned as property for life, and their children too."
+          },
+          {
+            "type": "p",
+            "html": "Old forced labor, put to new work. The Inca had required communities to send people to work for the state in turns, a duty called the <span class=\"kt\">mit’a</span>. In the 1570s, Spain turned it into a draft that sent thousands of Andean men each year to the silver mine at Potosí (Topic 4.4)."
+          },
+          {
+            "type": "p",
+            "html": "Peasants and artisans, working more. In western Europe, merchants paid families in the countryside to spin and weave wool and linen at home. In India, weavers made more and more cotton cloth for the European companies. In China, peasant families raised silkworms and wove silk, some of which was traded for American silver, and they needed silver to pay most of their taxes (Topic 4.5). This is <span class=\"kt\">peasant and artisan labor</span>. The work was old. There was more of it, for buyers farther away."
+          }
         ],
-        "callout":{"label":"AP Thinking, Social Structure","raw":"<p>Economic opportunity creates hierarchy when wealth or access to revenue becomes a route to status — and when states write those differences into law or officeholding.</p>"}
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>One change can hold a continuity.</strong> The mit’a was an old Inca duty with a new master and a new job. Peasant and artisan work was old work done in larger amounts. When you find a case like this, say both halves: what was old, and what was new.</p>"
+        }
       },
       {
-        "number":"4","label":"Family and Synthesis","heading":"Demography Changes Families — but Not Everywhere in the Same Way",
-        "blocks":[
-          {"type":"p","html":"The Atlantic trade in enslaved people changed demographics in parts of Africa and could alter <span class=\"kt\">gender and family</span> responsibilities, household labor, and marriage patterns. Forced migration also created new communities and cultural synthesis in the Americas."},
-          {"type":"p","html":"But the period did not produce one universal social transformation. Older labor systems, patriarchal institutions, village structures, and elite groups persisted because expanding states and markets often still depended on them."},
-          {"type":"p","html":"A strong Unit 4 synthesis therefore argues for uneven change: economic developments transformed slavery, colonial hierarchy, and some family patterns while intensifying or adapting older peasant, artisan, and elite structures."}
+        "number": "4",
+        "label": "What Changed",
+        "heading": "Masters, Servants, and Slaves",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "In September 1647 an Englishman named Richard Ligon landed on Barbados, a small English island in the Caribbean. He found that sugar-making was still new there. Planters had been making sugar for only a few years, using cane plants brought from Brazil, and were still learning to make it well. He lived on a sugar plantation that his traveling companion, Thomas Modyford, had bought a half share of, helped run it, and stayed about three years. In the book he published in 1657, he wrote that \"the Island is divided into three sorts of men, viz. Masters, Servants, and slaves.\" (\"Viz.\" means \"namely.\") The masters were the <span class=\"kt\">planters</span>, the plantation owners. The servants were <span class=\"kt\">indentured servants</span>, most of them poor people from England, Scotland, and Ireland, bound to work for a set number of years, many of them to pay for their voyage. But \"the slaves and their posterity,\" meaning their children and grandchildren, were \"subject to their Masters for ever.\""
+          },
+          {
+            "type": "p",
+            "html": "Sugar made the masters rich. Ligon wrote that one planter, James Drax, had begun on the island with no more than 300 pounds and had raised a great fortune, \"all by this plant of Sugar.\" Over the next few decades, the planters bought more and more enslaved Africans, and in 1679 a count of the island found about 37,700 enslaved people; historians estimate there were about 20,000 white settlers. Sugar had made a new kind of society: a small, rich group of planters at the top, and an enslaved majority at the bottom, held for life, by inheritance, and by race."
+          },
+          {
+            "type": "p",
+            "html": "In Spanish America, the silver mines and the great estates sat on top of a mixed society of Spaniards, Indigenous peoples, and Africans, and their children. Spanish colonial society ranked people by their ancestry, the <span class=\"kt\">casta</span> system, and silver, land, and trade made many creole families, people of Spanish ancestry born in the Americas, rich (Topic 4.7). The empire shaped its peoples, and its peoples shaped the empire: new categories grew up for the mixed society in its colonies."
+          },
+          {
+            "type": "p",
+            "html": "The same trade changed Africa. About two of every three people carried away in the Atlantic slave trade were male. In parts of Africa, especially West Central Africa, that left villages with more women than men, and historians argue that women did more of the farming and that more women and girls were enslaved inside Africa itself (Topic 4.5). The trade made some African states stronger: Asante rose by controlling gold and buying guns from Dutch and English traders (Topic 4.4). It could also tear at a kingdom. In 1526, Afonso I of Kongo complained that Portuguese traders were carrying off \"the children of our nobles and vassals.\""
+          }
         ],
-        "callout":{"label":"AP Thinking, CCOT","raw":"<p>The governing claim should answer degree: <strong>where did economic change produce major social restructuring, and where did older structures persist because the new economy still needed them?</strong></p>"}
+        "callout": {
+          "label": "AP Thinking, Argumentation",
+          "raw": "<p><strong>Connect the evidence.</strong> Ligon's Barbados is one place. When you find a new hierarchy in one place, look for the same pattern somewhere else you have studied, and ask what economic development built each one. A pattern found in two places is stronger evidence than one case alone.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "What Stayed",
+        "heading": "The Old World Kept Working",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Now look at what did not change. Most people still farmed. In 1750, as in 1450, most of the world's people grew food, and the College Board's own sentence about this period begins with that fact: the world's work \"continued to be heavily centered on agriculture.\""
+          },
+          {
+            "type": "p",
+            "html": "Much of the work itself stayed the same. A spinner in Holland, a weaver in India, and a silk family in China did work their grandparents would have known, at home and as a family, with women and girls doing much of the spinning, and in China much of the weaving. Global demand made them work more. It did not replace them."
+          },
+          {
+            "type": "p",
+            "html": "And the ladder stayed. Almost everywhere, a ruler who inherited the throne still sat at the top, and old nobles kept most of their privileges even when stronger kings squeezed them (Topic 4.7). Older forms of slavery went on inside Africa, and Asian merchants kept the Indian Ocean trading (Topic 4.4). So the <span class=\"kt\">continuity</span> is large: most people, most work, and most rulers looked much as they had in 1450. The <span class=\"kt\">change</span> was real too, but it was not the same everywhere. Where was it deepest, and why? That is the question your thesis answers."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Change can sit inside a continuity.</strong> A Chinese silk family was still a peasant family, working at home in its village. But it now needed silver for most of its taxes and sold silk to buyers far away. Name the continuity, then the change inside it.</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "The Argument",
+        "heading": "From Evidence to a Thesis",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "A list of evidence is not an argument. An argument explains how the pieces of evidence relate to each other. Three relationships do most of the work. The first is <strong>this led to that</strong>: Europe's demand for sugar led to plantations in Barbados and Brazil, whose planters chose to buy enslaved Africans, which led to a huge slave trade, which left villages in West Central Africa with more women than men. One chain links three continents. The second is <strong>the same pattern, two places</strong>: a spinner in Holland and a weaver in India both did old work in larger amounts, for buyers far away. The third is <strong>a contrast</strong>: an Andean man drafted through the mit’a was taken far from his village to dig silver, while a weaver in India kept working at home, making more cloth than before for buyers overseas. A contrast shows where the new trade changed people's lives most and where it changed them least, and that is what lets an answer say how much changed."
+          },
+          {
+            "type": "p",
+            "html": "Put the evidence together, and you can write a <span class=\"kt\">thesis</span>, a claim that answers the question and that you can defend with evidence. A strong thesis names a change, a continuity, and the reason for the difference: where did the new trade change social structures most, where did it change them least, and why? You can argue more than one thesis from the same evidence. What you cannot do is leave out the evidence on the other side."
+          },
+          {
+            "type": "p",
+            "html": "Economic change reached into everyday social life: who worked, who ruled, and how families and communities were organized. How much it changed is the argument you make, with evidence."
+          },
+          {
+            "type": "p",
+            "html": "By 1750 the oceans were joined and states were stronger than ever. Next: who do those states belong to? That is Unit 5."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Argumentation",
+          "raw": "<p><strong>Test your thesis.</strong> A strong thesis answers the whole question (how economic developments affected social structures, and how much stayed the same), takes a position someone could argue against, and points to the evidence you will use. If yours only lists changes, add the continuity.</p>"
+        }
       }
     ],
-    "takeaway": "Economic developments from 1450 to 1750 affected social structures unevenly. Plantation growth and extractive economies expanded coerced labor and Atlantic chattel slavery; colonial conquest and commerce helped create new casta and merchant elites; the slave trade altered gender and family patterns in parts of Africa. At the same time, peasant and artisan labor continued and intensified, and many existing elites adapted to centralizing states and expanding markets. The Unit 4 CCOT answer is therefore both change and continuity, explained through the economic mechanisms that made each possible.",
+    "takeaway": "Between 1450 and 1750, ships built from borrowed knowledge joined the two halves of the world, and new demand for sugar, silver, and cloth needed more workers than ever. Planters bought millions of enslaved Africans, Spain drafted Andean men for the silver mines, and peasants and artisans in Europe, India, and China worked more for faraway buyers. Barbados became a society of masters, servants, and slaves, Spanish America ranked people by ancestry, and the slave trade changed families and states in Africa. Most people still farmed, much of the work stayed family work done at home, and rulers and nobles stayed on top. Economic change reached into everyday social life, and how much it changed is the argument you make with evidence.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
-      {"num":"1","skill":"Causation","text":"Choose one economic development such as plantation growth, silver extraction, mercantilism, or intensified production. Explain one specific effect on social structure.","placeholder":"The economic development changed social structure because..."},
-      {"num":"2","skill":"Continuity & Change","text":"Identify one major social change and one major social continuity from c. 1450 to c. 1750. Use specific evidence from two different Unit 4 topics.","placeholder":"One change was... One continuity was..."},
-      {"num":"3","skill":"Argumentation","text":"Write a one-sentence claim answering the Topic 4.8 question: how did economic developments affect social structures over time? Include both change and continuity in your claim.","placeholder":"Economic developments substantially changed... while... continued because..."}
-
+      {
+        "num": "01",
+        "skill": "Continuity and Change",
+        "text": "Choose one economic development from this reading: the new demand for sugar, the silver of Potosí, or the new demand for cloth. Follow it to the workers it needed, then explain one change it made to a social structure. Then name one thing that stayed the same.",
+        "placeholder": "The economic development I chose is... It needed workers because... It changed a social structure by... One thing that stayed the same was..."
+      },
+      {
+        "num": "02",
+        "skill": "Argumentation",
+        "text": "Ligon wrote that Barbados was \"divided into three sorts of men, viz. Masters, Servants, and slaves.\" Choose ONE of these pieces of evidence: the casta ranking in Spanish America, the mit’a at Potosí, or the Chinese silk family. Explain how it relates to Ligon's evidence: does one lead to the other, do they show the same pattern, or do they make a contrast?",
+        "placeholder": "The evidence I chose is... It relates to Ligon's evidence because (one led to the other / they show the same pattern / they make a contrast)..."
+      },
+      {
+        "num": "03",
+        "skill": "Argumentation",
+        "text": "Write your own thesis: how did economic developments from 1450 to 1750 affect social structures, and how much stayed the same? Your thesis must name at least one change and one continuity.",
+        "placeholder": "Between 1450 and 1750, economic developments changed... while... stayed the same, because..."
+      }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 4.8, Continuity and Change",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true,
   }
 };

@@ -273,20 +273,40 @@ module.exports = [
   {
     id: 'topic-4-7',
     code: 'Topic 4.7',
-    title: 'Colonial Social Hierarchies and Coerced Labor, c. 1700',
-    subtitle: 'Topic 4.7 · Changing social hierarchies',
+    title: 'Who Belonged, Who Rose, Who Was Squeezed, 1492 to 1722',
+    subtitle: 'Topic 4.7 \u00b7 Changing social hierarchies',
+    // Rebuilt 2026-10-18 from the 4.7 story: the cases of the three Key
+    // Concepts, colored by kind. The old map ("Colonial Social Hierarchies and
+    // Coerced Labor") showed the mita, plantation slavery and the Middle
+    // Passage, which are 4.4's labor and slavery material, and no 4.7 case.
     highlights: [
-      { zone: 'mexico', label: 'NEW SPAIN', tone: 'gold', legend: 'Casta hierarchy and the mita in Spanish America' },
-      { zone: 'andes', label: 'ANDES', tone: 'bronze', legend: 'Potosí silver worked by mita labor' },
-      { zone: 'brazil', label: 'BRAZIL', tone: 'sand', legend: 'Plantation slavery in Brazil' },
-      { zone: 'caribbean', label: 'CARIBBEAN', tone: 'plum', legend: 'Sugar plantations worked by enslaved Africans' },
-      { zone: 'westAfrica', label: 'WEST AFRICA', tone: 'sage', legend: 'West Africa: societies drained by the slave trade' }
+      { zone: [-5.5, 40, 6.5, 5], tone: 'gold', opacity: 0.85 },
+      { zone: [22.94, 40.64, 3.6, 2.8], tone: 'gold', opacity: 0.85 },
+      { zone: [77.5, 27.5, 6, 5], tone: 'gold', opacity: 0.85 },
+      { zone: [116.4, 39.9, 6, 4.6], tone: 'plum', opacity: 0.85 },
+      { zone: [-99.13, 19.43, 6, 4.4], tone: 'plum', opacity: 0.85 },
+      { zone: [33, 39.5, 6, 3.6], tone: 'sage', opacity: 0.85 },
+      { zone: [37.6, 55.75, 7, 4.6], tone: 'sage', opacity: 0.85 },
+      { zone: [2.13, 48.8, 3.6, 2.8], tone: 'sage', opacity: 0.85 },
+      { zone: [-1.5, 52, 3.4, 3], tone: 'sage', opacity: 0.85 }
     ],
-    flows: [
-      { from: 'westAfrica', to: 'caribbean', label: 'Middle Passage' },
-      { from: 'westAfrica', to: 'brazil', label: 'enslaved Africans to Brazil', bow: -0.16 },
-      { from: 'andes', to: 'westernEurope', label: 'silver to Europe', bow: 0.26 }
-    ]
+    legend: [
+      { kind: 'area', tone: 'gold', text: 'Who could belong: pushed out, welcomed, or used' },
+      { kind: 'area', tone: 'plum', text: 'New elites made by conquest and trade' },
+      { kind: 'area', tone: 'sage', text: 'Old elites squeezed by stronger rulers, or winning' }
+    ],
+    points: [
+      { at: [2.13, 48.8], label: 'Versailles', note: 'court, 1682', side: 'right' },
+      { at: [-1.5, 52.0], label: 'England', note: 'Parliament limits the crown, 1688', side: 'left' },
+      { at: [-4.5, 40.0], label: 'Spain and Portugal', note: 'Jews pushed out, 1492 to 1497', side: 'left' },
+      { at: [37.6, 55.75], label: 'Russia', note: 'Table of Ranks, 1722', side: 'right' },
+      { at: [22.94, 40.64], label: 'Salonica', note: 'refugees settle, 1490s', side: 'left' },
+      { at: [33.0, 39.5], label: 'Anatolia', note: 'timars become tax farms', side: 'right' },
+      { at: [77.5, 27.2], label: 'Mughal India', note: 'jizya ended 1564, back 1679', side: 'right' },
+      { at: [116.4, 39.9], label: 'Beijing', note: 'Qing banners, from 1644', side: 'right' },
+      { at: [-99.13, 19.43], label: 'Mexico City', note: 'casta ranking, 1700s', side: 'left' }
+    ],
+    note: 'BeHistorical instructional map. Shaded areas and dots mark regions, not borders, and coastlines are simplified for classroom projection.'
   },
 
   // ── Unit 5 ──────────────────────────────────────────────────────────────────
@@ -904,72 +924,146 @@ module.exports = [
   {
     id: 'topic-4-4',
     code: 'Topic 4.4',
-    title: 'Maritime Empire Routes and Trading Posts, c. 1550-1650',
-    subtitle: 'Topic 4.4 \u00b7 Maritime empires established',
+    title: 'Empires from the Sea, and a World with Its Own Rules',
+    subtitle: 'Topic 4.4 \u00b7 Maritime empires established, c. 1480 to 1750',
+    // Rebuilt 2026-10-14 from the 4.4 story: European forts on the coasts of
+    // Africa and Asia, colonies in the Americas, and the places that kept their
+    // own rules (Japan, the Swahili coast, Kongo, Asante). The chartered-company
+    // material it used to carry (VOC headquarters, Batavia, the spice monopoly)
+    // is Topic 4.5's and is gone, and so is "silver home".
     highlights: [
-      { zone: 'westernEurope', label: 'CHARTERED COMPANIES', tone: 'gold', legend: 'Lisbon, Seville, Amsterdam, London: company headquarters' },
-      { zone: 'westAfrica', label: 'COASTAL FORTS', tone: 'sand', legend: 'Elmina and other fortified trading posts' },
-      { zone: 'southAsia', label: 'FACTORIES', tone: 'bronze', legend: 'Goa, Surat, Madras: fortified trading factories' },
-      { zone: 'indonesia', label: 'SPICE MONOPOLY', tone: 'sage', legend: 'Batavia and the Dutch spice monopoly' },
-      { zone: 'mexico', label: 'VICEROYALTY', tone: 'plum', legend: 'Spanish American viceroyalties, not just trading posts' }
+      { zone: [-1.5, 7, 6, 3.5], label: 'GOLD COAST', tone: 'sand', legend: 'Gold Coast: Elmina fort (1482); Asante rises c. 1700' },
+      { zone: [15, -6, 5, 4], label: 'KONGO', tone: 'sage', legend: 'Kingdom of Kongo: Christian kings, trade with Portugal' },
+      { zone: 'swahiliCoast', label: 'SWAHILI COAST', tone: 'bronze', legend: 'Swahili coast: Swahili Arab and Omani traders' },
+      { zone: 'japan', label: 'JAPAN', labelSide: 'right', tone: 'plum', legend: 'Japan: of Europeans, only the Dutch, on Dejima' },
+      { zone: 'caribbean', label: 'CARIBBEAN', tone: 'gold', legend: 'Caribbean: sugar plantations worked by enslaved Africans' }
     ],
     flows: [
-      { from: 'westernEurope', to: 'southAsia', label: 'company fleets out', bow: 0.24 },
-      { from: 'indonesia', to: 'westernEurope', label: 'spices home', bow: -0.24 },
-      { from: 'mexico', to: 'westernEurope', label: 'silver home', bow: 0.16 }
+      { from: [-8, 38], via: [[-14, 20]], to: [-2, 5.5], label: 'Forts on the coast' },
+      { from: [-2, 3], via: [[-30, 8]], to: [-62, 15], label: 'Enslaved Africans west' },
+      { from: [12, -8], via: [[-15, -14]], to: [-38, -10], label: 'Enslaved Africans to Brazil' },
+      { from: [70, 19], via: [[88, 6]], to: [101, 3], label: 'Intra-Asian trade' }
     ],
-    note: 'BeHistorical instructional map. Portuguese and Dutch power rested on fortified posts and sea lanes rather than territory; Spain claimed land. Coastlines are simplified for classroom projection.'
+    points: [
+      { at: [73.8, 15.5], label: 'Goa', note: 'Portugal, 1510', side: 'left' },
+      { at: [102.25, 2.2], label: 'Malacca', note: 'Portugal 1511, Dutch 1641' },
+      { at: [113.55, 22.2], label: 'Macau', note: 'under Ming rules, from 1557' },
+      { at: [39.67, -4.05], label: 'Mombasa', note: 'taken by Oman, 1698' },
+      { at: [-65.75, -19.6], label: 'Potos\u00ed', note: 'the mit\u2019a sent workers here', side: 'left' }
+    ],
+    note: 'BeHistorical instructional map. Points and shaded regions are schematic, not borders, and coastlines are simplified for classroom projection. Arrows show patterns, not single voyages.'
   },
   {
     id: 'topic-4-5',
     code: 'Topic 4.5',
-    title: 'Silver Routes and Colonial Administration, c. 1580-1700',
-    subtitle: 'Topic 4.5 \u00b7 Maritime empires maintained',
+    title: 'Silver, Companies and Rivals, c. 1500 to 1750',
+    subtitle: 'Topic 4.5 \u00b7 Maritime empires maintained and developed',
+    // Rebuilt 2026-10-15 from the 4.5 story: what the rulers' tools moved
+    // (silver toward China by both routes, the Atlantic system) and where
+    // economic disputes became wars (Diu, Tondibi, Ambon). "Colonial
+    // administration" and the mita legend are 4.4's and are gone, and so are
+    // the old key's unsourced "60% of the world's silver" and "first regularly
+    // scheduled transoceanic route".
     highlights: [
-      { zone: 'andes', label: 'POTOS\u00cd', tone: 'gold', legend: 'Potos\u00ed silver, mined under the mita labor draft' },
-      { zone: 'mexico', label: 'NEW SPAIN', tone: 'bronze', legend: 'Zacatecas silver and the Manila galleon' },
-      { zone: 'philippines', label: 'MANILA', tone: 'sand', legend: 'Manila: the Pacific transfer point' },
-      { zone: 'eastAsia', label: 'MING & QING CHINA', tone: 'plum', legend: 'China: the market that absorbed the silver' },
-      { zone: 'westernEurope', label: 'SEVILLE', tone: 'slate', legend: 'Seville and the Atlantic treasure fleets' }
+      { zone: 'andes', label: 'POTOS\u00cd', tone: 'gold', legend: 'Potos\u00ed: Spanish silver from 1545' },
+      { zone: 'mexico', label: 'NEW SPAIN', tone: 'bronze', legend: 'New Spain: Zacatecas silver from 1546' },
+      { zone: 'eastAsia', label: 'MING CHINA', tone: 'plum', labelSide: 'above', legend: 'China: most taxes paid in silver, so silver was in demand' },
+      { zone: 'westernEurope', label: 'EUROPE', tone: 'slate', legend: 'Europe: mercantilist states and their trading companies' },
+      { zone: 'westAfrica', label: 'WEST AFRICA', tone: 'sand', legend: 'West Africa: Indian cloth and cowries traded for captives' }
     ],
     flows: [
-      { from: 'andes', to: 'westernEurope', label: 'treasure fleets east' },
-      { from: 'mexico', to: 'philippines', label: 'Manila galleon west', bow: 0.2 },
-      { from: 'philippines', to: 'eastAsia', label: 'silver into China', bow: 0.16 }
+      { from: [-66, -17], via: [[-42, 6], [-24, 30]], to: [-6, 37.4], label: 'Silver to Seville' },
+      { from: 'mexico', to: 'philippines', label: 'Galleon to Manila', bow: 0.2 },
+      { from: 'philippines', to: 'eastAsia', label: 'Silver into China', bow: 0.16 },
+      { from: [-6, 42], via: [[-16, 2], [16, -36], [58, -12]], to: [72, 17], label: 'Silver around Africa to Asia' },
+      { from: [-2, 6], via: [[-30, 4]], to: [-58, 13], label: 'Enslaved Africans west' }
     ],
     points: [
-      { at: [-65.7, -19.6], label: 'Potos\u00ed', note: 'the silver mountain', side: 'left' }
-    ]
+      { at: [70.98, 20.71], label: 'Diu', note: 'Portuguese victory at sea, 1509', side: 'left' },
+      { at: [0.0, 16.27], label: 'Tondibi', note: 'Morocco beats Songhai, 1591', side: 'left' },
+      { at: [128.18, -3.7], label: 'Ambon', note: 'VOC executes English traders, 1623', side: 'right' },
+      { at: [120.98, 14.6], label: 'Manila', note: 'Chinese silk for silver, from 1571', side: 'right' }
+    ],
+    note: 'BeHistorical instructional map. Points and shaded regions are schematic, not borders, and coastlines are simplified for classroom projection. Arrows show patterns, not single voyages.'
   },
   {
     id: 'topic-4-6',
     code: 'Topic 4.6',
-    title: 'Resistance and Rivalry in the Colonial World, c. 1600-1700',
+    title: 'Push and Pushback, c. 1600 to 1739',
     subtitle: 'Topic 4.6 \u00b7 Internal and external challenges to state power',
+    // Rebuilt 2026-10-16 from the 4.6 story: nine cases of pushback against
+    // expanding and centralizing states, colored by kind. The old map's
+    // "Resistance and Rivalry" title, privateers zone and Ming and Ottoman
+    // zones are gone: European rivalry is 4.5's (KC-4.3.III.ii), and no 4.6
+    // surface teaches the Ming collapse or Ottoman revolts.
     highlights: [
-      { zone: 'unitedStates', label: 'PUEBLO REVOLT 1680', tone: 'gold', legend: 'Pueblo Revolt drives Spain from New Mexico, 1680' },
-      { zone: 'brazil', label: 'MAROON COMMUNITIES', tone: 'sage', legend: 'Palmares and other maroon communities' },
-      { zone: 'caribbean', label: 'PRIVATEERS', tone: 'sand', legend: 'Imperial rivalry and privateering in the Caribbean' },
-      { zone: 'eastAsia', label: 'MING COLLAPSE 1644', tone: 'plum', legend: 'Ming collapse and the Qing conquest, 1644' },
-      { zone: 'anatolia', label: 'OTTOMAN REVOLTS', tone: 'bronze', legend: 'Janissary revolts and provincial unrest' }
+      { zone: [2.35, 48.86, 5, 3.6], tone: 'gold', opacity: 0.85 },
+      { zone: [48.4, 53.5, 6, 4.6], tone: 'gold', opacity: 0.85 },
+      { zone: [75.5, 18.5, 5.5, 5], tone: 'plum', opacity: 0.85 },
+      { zone: [16.3, -9.4, 5.5, 4.4], tone: 'plum', opacity: 0.85 },
+      { zone: [-106, 35.6, 5.5, 4.4], tone: 'plum', opacity: 0.85 },
+      { zone: [-71, 42.6, 4.4, 3.4], tone: 'plum', opacity: 0.85 },
+      { zone: [-37.5, -9.2, 4.6, 4], tone: 'sage', opacity: 0.85 },
+      { zone: [-77.6, 18.3, 4, 2.8], tone: 'sage', opacity: 0.85 },
+      { zone: [-81, 32.6, 4, 3], tone: 'sage', opacity: 0.85 }
     ],
-    flows: [
-      { from: 'westernEurope', to: 'caribbean', label: 'rival European fleets' }
-    ]
+    legend: [
+      { kind: 'area', tone: 'gold', text: 'Pushback inside a state' },
+      { kind: 'area', tone: 'plum', text: 'Pushback at the edge of an expanding state' },
+      { kind: 'area', tone: 'sage', text: 'Organized resistance by enslaved people' }
+    ],
+    points: [
+      { at: [2.35, 48.86], label: 'Paris', note: 'the Fronde, 1648 to 1653', side: 'left' },
+      { at: [48.4, 54.32], label: 'Volga', note: 'Razin\u2019s revolt, 1670 to 1671', side: 'right' },
+      { at: [73.44, 18.23], label: 'Deccan', note: 'Marathas against the Mughals, 1660s to 1707', side: 'right' },
+      { at: [15.8, -9.4], label: 'Ndongo and Matamba', note: 'Njinga, 1622 to 1663', side: 'right' },
+      { at: [-105.94, 35.69], label: 'New Mexico', note: 'Pueblo Revolt, 1680', side: 'left' },
+      { at: [-70.67, 41.95], label: 'New England', note: 'Metacom\u2019s War, 1675 to 1676', side: 'right' },
+      { at: [-36.1, -9.2], label: 'Palmares', note: 'maroon towns, 1600s', side: 'right' },
+      { at: [-77.6, 18.3], label: 'Jamaica', note: 'Maroon treaties, 1739', side: 'right' },
+      { at: [-80.1, 32.75], label: 'Stono River', note: 'revolt, 1739', side: 'left' }
+    ],
+    note: 'BeHistorical instructional map. Shaded areas and dots mark regions, not borders or exact battlefields, and coastlines are simplified for classroom projection.'
   },
   {
     id: 'topic-4-8',
     code: 'Topic 4.8',
-    title: 'The World at c. 1700: Change and Continuity',
-    subtitle: 'Topic 4.8 \u00b7 Continuity and change, 1450-1750',
+    title: 'Where the Trade Reached People, 1450 to 1750',
+    subtitle: 'Topic 4.8 \u00b7 Continuity and change from 1450 to 1750',
+    // Rebuilt 2026-10-18 from the 4.8 story: the places where the new trade
+    // changed social structures, colored by what changed. The old map ("The
+    // World at c. 1700: Change and Continuity") sorted trade networks and
+    // empires, not social structures, which the learning objective asks about.
     highlights: [
-      { zone: 'westernEurope', label: 'NEW: ATLANTIC POWERS', tone: 'gold', legend: 'Changed: Atlantic Europe now sits at the centre of world trade' },
-      { zone: 'caribbean', label: 'NEW: PLANTATION ZONE', tone: 'plum', legend: 'Changed: plantation economies built on enslaved labor' },
-      { zone: 'andes', label: 'NEW: SILVER ECONOMY', tone: 'sand', legend: 'Changed: American silver ties every region together' },
-      { zone: 'eastAsia', label: 'SAME: QING CHINA', tone: 'bronze', legend: 'Continuity: China remains the largest economy' },
-      { zone: 'southAsia', label: 'SAME: MUGHAL INDIA', tone: 'slate', legend: 'Continuity: land empires still rule most people' },
-      { zone: 'swAsia', label: 'SAME: OTTOMAN POWER', tone: 'sage', legend: 'Continuity: the Ottomans still hold the eastern Mediterranean' }
-    ]
+      { zone: [-59.5, 13.1, 3.4, 2.8], tone: 'plum', opacity: 0.85 },
+      { zone: [-36, -8.5, 5, 4.4], tone: 'plum', opacity: 0.85 },
+      { zone: [-65.75, -19.6, 5, 4], tone: 'plum', opacity: 0.85 },
+      { zone: [-99.13, 19.43, 6, 4.4], tone: 'plum', opacity: 0.85 },
+      { zone: [-1.5, 6.5, 5, 3.6], tone: 'gold', opacity: 0.85 },
+      { zone: [15, -8, 7, 6], tone: 'gold', opacity: 0.85 },
+      { zone: [4.9, 52.2, 4.4, 3], tone: 'sage', opacity: 0.85 },
+      { zone: [78, 20, 8, 7], tone: 'sage', opacity: 0.85 },
+      { zone: [120.5, 31, 5, 3.6], tone: 'sage', opacity: 0.85 },
+      { zone: [121, 14.6, 3, 2.8], tone: 'sage', opacity: 0.85 }
+    ],
+    legend: [
+      { kind: 'area', tone: 'plum', text: 'Forced labor and new rankings build new societies' },
+      { kind: 'area', tone: 'gold', text: 'The trade changes families and states' },
+      { kind: 'area', tone: 'sage', text: 'Old work grows, for buyers far away' }
+    ],
+    points: [
+      { at: [4.9, 52.2], label: 'Western Europe', note: 'spinning and weaving at home', side: 'right' },
+      { at: [-99.13, 19.43], label: 'Mexico City', note: 'casta ranking', side: 'left' },
+      { at: [-59.5, 13.1], label: 'Barbados', note: 'sugar and slavery, from the 1640s', side: 'right' },
+      { at: [-36.0, -8.5], label: 'Brazil', note: 'sugar plantations', side: 'right' },
+      { at: [-65.75, -19.6], label: 'Potosí', note: 'mit\u2019a draft to the silver mine', side: 'left' },
+      { at: [-1.6, 6.7], label: 'Asante', note: 'inland from the Gold Coast, 1701', side: 'left' },
+      { at: [15.0, -8.0], label: 'West Central Africa', note: 'more women than men', side: 'right' },
+      { at: [78.0, 20.0], label: 'India', note: 'cotton weavers', side: 'left' },
+      { at: [120.5, 31.0], label: 'Jiangnan', note: 'silk families need silver for taxes', side: 'right' },
+      { at: [121.0, 14.6], label: 'Manila', note: 'silk traded for silver', side: 'right' }
+    ],
+    note: 'BeHistorical instructional map. Shaded areas and dots mark regions, not borders, and coastlines are simplified for classroom projection.'
   },
 
   // ── Unit 6 ──────────────────────────────────────────────────────────────────

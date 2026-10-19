@@ -79,7 +79,7 @@ Strong answer checklist: State the cause: ships crossing the Atlantic, and later
 
 ## 4.4 Maritime Empires Established
 
-**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How Portugal, Spain, and then the Dutch, British, and French built maritime empires using three distinct models: trading post empire, territorial colonialism, and joint-stock company
+**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. Europeans built empires from the sea, but much of the world kept its own rules: some things changed fast, and some barely moved.
 
 **College Board key concepts.**
 - Unit 4: Learning Objective E (Learning Objective): Explain the process of state building and expansion among various empires and states in the period from 1450 to 1750.
@@ -93,19 +93,19 @@ Strong answer checklist: State the cause: ships crossing the Atlantic, and later
 - KC-4.2.II.B (Social Interactions and Organization): Enslavement in Africa continued in its traditional forms, including incorporation of enslaved persons into households and the export of enslaved persons to the Mediterranean and the Indian Ocean regions.
 - KC-4.2.II.C (Social Interactions and Organization): The growth of the plantation economy increased the demand for enslaved labor in the Americas, leading to significant demographic, social, and cultural changes.
 
-**Expected evidence terms.** Estado da Índia, Spanish Empire, Kongo, Asante, trading posts, Indian Ocean, intra-Asian trade, Gujaratis, Omanis, Swahili Arabs, Javanese, Incan mit’a, mita, encomienda, hacienda, indentured servitude, chattel slavery, plantation economy, African enslavement, Mediterranean, Atlantic slave trade.
+**Expected evidence terms.** rivalry, maritime empire, trading post, Elmina, Goa, Kongo, Asante, Ming China, Macau, Tokugawa Japan, Dejima, Indian Ocean, cartaz, intra-Asian trade, Gujaratis, Swahili Arabs, Omanis, Javanese, mit’a, mita, Potosí, encomienda, hacienda, indentured servitude, chattel slavery, plantation, plantation economy, sugar, households, Sahara, Mediterranean, enslaved Africans, inherited, race.
 
-**AP skill focus.** Continuity and change practice.
+**AP skill focus.** Sourcing and Situation practice.
 
-**Checkpoint 1 prompt.** Explain how expanding maritime trade increased the power of ONE European maritime empire and ONE African state such as Kongo or Asante. Then explain one important continuity in Indian Ocean trade despite Portuguese or Dutch disruption, using a specific merchant group or intra-Asian trade example.
-Strong answer checklist: Use one specific European state-building example. Use one specific African state-growth example. Explain one Indian Ocean continuity and why European arrival did not erase it.
+**Checkpoint 1 prompt.** Explain ONE reason European states built maritime empires (a political, religious, or economic rivalry). Then explain ONE change in who held power, using a European trading post or Kongo or Asante. Then explain ONE continuity: how Ming China or Tokugawa Japan kept control of who could trade with them and on what terms, OR how Asian merchants such as Gujaratis, Swahili Arabs, Omanis, or Javanese kept the Indian Ocean trading even after the Portuguese began forcing ships to buy a pass, the cartaz.
+Strong answer checklist: Name one rivalry (political, religious, or economic) as the reason for the empires. Give one change in who held power: a European trading post, or Kongo or Asante growing stronger. Give one continuity: China or Japan still setting the terms of trade, or Asian merchants trading on in the Indian Ocean despite the cartaz.
 
-**Checkpoint 2 prompt.** Explain one continuity and one change in labor systems in the Americas after 1500. Then explain one continuity and one change in slavery across Africa, the Indian Ocean, and the Atlantic world. Use at least THREE specific terms or examples and make clear what persisted versus what expanded or changed.
-Strong answer checklist: Compare an older/adapted labor system with a new or expanded colonial labor system. Explain that enslavement in Africa predated Atlantic expansion. Explain how plantation demand changed the scale, destination, and social effects of enslaved labor.
+**Checkpoint 2 prompt.** Explain ONE continuity and ONE change in labor systems in the colonial Americas (for example, the mit’a, encomienda, hacienda, indentured servitude, or chattel slavery), and say how each one supplied workers for farms or mines. Then explain ONE continuity and ONE change in slavery from 1450 to 1750: one older form of slavery in Africa that continued, and one way the plantation economy changed slavery in the Americas. For the change in slavery, explain why it happened.
+Strong answer checklist: Give one labor continuity (such as the mit’a reused for Potosí) and one labor change (such as encomienda or indentured servitude), and say how each supplied workers for farms or mines. Give one older form of slavery in Africa that continued, such as enslaved people in households or captives sent across the Sahara or the Indian Ocean. Give one change the plantations made to slavery in the Americas (its size, being for life and inherited, or being tied to race), and say why it happened.
 
 ## 4.5 Maritime Empires Maintained and Developed
 
-**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How European maritime empires used forced labor, colonial administration, and silver extraction to sustain themselves — and how American silver transformed global trade networks
+**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. Rulers built economic tools to keep their empires paying, and the money, goods, and people those tools moved reshaped work, families, and faith.
 
 **College Board key concepts.**
 - Unit 4: Learning Objective H (Learning Objective): Explain how rulers employed economic strategies to consolidate and maintain power throughout the period from 1450 to 1750.
@@ -121,38 +121,38 @@ Strong answer checklist: Compare an older/adapted labor system with a new or exp
 - KC-4.1.IV.D.ii (Social Interactions and Organization): The Atlantic trading system involved the movement of labor—including enslaved persons and the mixing of African, American, and European cultures and peoples, with all parties contributing to this cultural synthesis.
 - KC-4.1.VI (Cultural Developments and Interactions): In some cases, the increase and intensification of interactions between newly connected hemispheres expanded the reach and furthered development of existing religions, and contributed to religious conflicts and the development of syncretic belief systems and practices.
 
-**Expected evidence terms.** mercantilism, VOC, British EIC, chartered company, monopoly, silver, Potosí, Manila Galleon, Atlantic trade, regional markets, Indian Ocean, peasant labor, artisan labor, Indian cotton, Chinese silk, Atlantic slave trade, gender, family, cultural synthesis, missionaries, religious conflict, Vodun, Santería, syncretism.
+**Expected evidence terms.** mercantilism, Navigation Act, Casa de Contratación, chartered company, joint-stock company, VOC, East India Company, monopoly, silver, Single Whip, Manila, China, Atlantic trading system, regional markets, Gujarati, Armenian, peasant, artisan, wool, linen, cotton, silk, gender, family, women, men, polygyny, demographic, Africa, cultural synthesis, creole, Africans, Indigenous Americans, Europeans, Christianity, Islam, missionaries, Jesuits, religious conflict, idolatry, Peru, syncretic, syncretism, Guadalupe, Tonantzin, Kongo, Vodou, Virgin of the Mountain.
 
-**AP skill focus.** Causation and comparison practice.
+**AP skill focus.** Claims and Evidence in Sources practice.
 
-**Checkpoint 1 prompt.** Explain how ONE mercantilist policy or chartered company helped a European state compete for overseas wealth or territory. Then explain one major change in exchange networks, such as global silver or Atlantic trade, AND one important continuity in Afro-Eurasian regional markets or commercial practices.
-Strong answer checklist: Explain how a state economic strategy increased competitive power. Explain one change in global/transoceanic exchange with specific evidence. Explain one regional commercial continuity and why it persisted.
+**Checkpoint 1 prompt.** Explain ONE way a European ruler used mercantilism (for example, a law like the Navigation Act) or a chartered company (the VOC or the English East India Company) to make an empire pay or to compete with a rival, and name ONE rivalry that grew out of an economic dispute and the trade it was over. Then explain ONE change and ONE continuity in networks of exchange from 1450 to 1750. Choose from: silver and China, the Atlantic trading system, regional markets in Africa and Asia, and peasant and artisan work. Say which one is the change and which is the continuity, and why.
+Strong answer checklist: Name one tool (a mercantilist law or a chartered company) and say how it helped a ruler make money or beat a rival. Name one rivalry that grew out of an economic dispute, and the trade it was over. Give one change and one continuity in networks of exchange, and say why each is a change or a continuity.
 
-**Checkpoint 2 prompt.** Explain TWO effects of expanding global exchange from 1450 to 1750: (1) one social effect involving intensified peasant/artisan labor OR demographic, gender, or family changes associated with the trade of enslaved people; and (2) one belief-system effect involving religious expansion, conflict, or syncretism. Use a specific example for each and explain the mechanism.
-Strong answer checklist: Use one specific social-effect example and explain how exchange produced it. Use one specific belief-system example and explain how interaction produced it. Keep economic/social and religious effects distinct before connecting them.
+**Checkpoint 2 prompt.** Explain ONE way the trade in enslaved people changed families or communities in parts of Africa, and why it happened. Then explain ONE example of cultural mixing in the Atlantic world, and name the groups who contributed to it. Finally, compare how religions affected societies as contact grew: pick TWO examples that show different things religions did (for example, one that spread and one that blended), and say one way they were alike and one way they were different.
+Strong answer checklist: Give one change in families or communities in Africa, and name its cause. Give one example of Atlantic cultural mixing, and name at least two groups who contributed. Compare two things religions did (spread, conflict, or blending), with an example of each and one similarity and one difference.
 
-## 4.6 Internal Challenges to State Power
+## 4.6 Internal and External Challenges to State Power
 
-**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How colonized peoples, enslaved Africans, and rival European powers challenged maritime empires from within and without
+**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. The harder states pushed to expand and centralize, the harder people at the local level pushed back.
 
 **College Board key concepts.**
 - Unit 4: Learning Objective L (Learning Objective): Explain the effects of the development of state power from 1450 to 1750.
 - KC-4.3.III.iii (Governance): State expansion and centralization led to resistance from an array of social, political, and economic groups on a local level. Illustrative examples: Pueblo Revolts, Fronde, Cossack revolts, Maratha conflict with Mughals, Ana Nzinga’s resistance (as ruler of Ndongo and Matamba), Metacom’s War (King Philip’s War).
 - KC-5.3.III.C (Governance): Enslaved persons challenged existing authorities in the Americas through organized resistance. Illustrative examples: The establishment of Maroon societies in the Caribbean and Brazil, Resistance of enslaved persons in North America.
 
-**Expected evidence terms.** Pueblo Revolt, Popé, Tewa, kiva, religious suppression, labor demands, drought, Spanish colonial rule, resistance, maroon communities, Palmares, Zumbi, quilombo, escape, autonomy, geography, organized resistance.
+**Expected evidence terms.** expansion, expand, centralization, centralize, Fronde, Parlement, nobles, Razin, Cossacks, serfs, Law Code, Marathas, Shivaji, Aurangzeb, Mughal, Deccan, Njinga, Ndongo, Matamba, Portugal, Pueblo Revolt, Popé, encomienda, religious suppression, Metacom, Wampanoag, resistance, organized resistance, maroon, maroon communities, quilombo, Palmares, Ganga Zumba, Zumbi, treaty, Jamaica, Maroons, Cudjoe, Stono, South Carolina, Spanish Florida, militia, Negro Act, enslaved, authorities.
 
-**AP skill focus.** Causation practice.
+**AP skill focus.** Contextualization practice.
 
-**Checkpoint 1 prompt.** Explain why the Pueblo Revolt of 1680 occurred, how Popé and Pueblo communities organized collective resistance, and what the revolt changed in the short term. Your answer must connect specific colonial policies or pressures to the decision to resist.
-Strong answer checklist: Identify at least two specific grievances caused by colonial expansion or centralization. Explain how Popé and Pueblo networks made coordinated resistance possible. Explain the short-term outcome and at least one limit of the revolt.
+**Checkpoint 1 prompt.** Choose TWO cases of local resistance: ONE from Africa, Asia, or Europe (the Fronde, Razin's revolt, the Marathas, or Njinga) and ONE from the Americas (the Pueblo Revolt or Metacom's War). For EACH case, explain what the state was pushing for (to expand, or to centralize), which group pushed back and how, and what happened next, including one way the resistance changed the state, or why it changed nothing. Then explain one way the two cases were alike.
+Strong answer checklist: Name one case from Africa, Asia, or Europe and one from the Americas. For each, say what the state pushed for, which group pushed back and how, what happened next, and what the resistance changed (or why it changed nothing). Say one way the two cases were alike.
 
-**Checkpoint 2 prompt.** Explain how maroon communities represented organized resistance by enslaved Africans. Use Palmares as a specific example and explain how geography, community organization, and the weaknesses of colonial control helped resistance survive. Then compare this strategy with the Pueblo Revolt in one sentence.
-Strong answer checklist: Define maroon resistance and use Palmares as specific evidence. Explain why geography and community organization mattered. Make one meaningful comparison between maroon autonomy and Pueblo collective revolt.
+**Checkpoint 2 prompt.** Explain how enslaved people in the Americas challenged the authorities through organized resistance. Use ONE maroon community (Palmares or the Jamaica Maroons) and the Stono Rebellion of 1739. For EACH, explain how the resistance was organized and how the authorities responded. Then explain one reason the authorities responded differently in the two cases.
+Strong answer checklist: Explain how the maroon community you chose was organized, and how the authorities responded. Explain how the Stono Rebellion was organized, and how the authorities responded. Give one reason the authorities responded differently in the two cases.
 
 ## 4.7 Changing Social Hierarchies
 
-**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How European colonialism reorganized social order — creating the casta system in Spanish America, racializing slavery in the Atlantic world, and producing new hierarchies wherever it reached
+**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. Empires decided who could belong and who could rise: new elites appeared, old ones were squeezed, and some groups were welcomed while others were pushed out.
 
 **College Board key concepts.**
 - Unit 4: Learning Objective M (Learning Objective): Explain how social categories, roles, and practices have been maintained or have changed over time.
@@ -160,19 +160,19 @@ Strong answer checklist: Define maroon resistance and use Palmares as specific e
 - KC-4.2.III.A (Social Interactions and Organization): Imperial conquests and widening global economic opportunities contributed to the formation of new political and economic elites, including in China with the transition to the Qing Dynasty and in the Americas with the rise of the Casta system.
 - KC-4.2.III.B (Social Interactions and Organization): The power of existing political and economic elites fluctuated as the elites confronted new challenges to their ability to affect the policies of the increasingly powerful monarchs and leaders. Illustrative examples: Ottoman timars, Russian boyars, European nobility.
 
-**Expected evidence terms.** Ottoman Empire, Jews, millet, Mughal, Qing, Han Chinese, accommodation, suppression, casta, peninsulares, creoles, new elites, timar, Ottoman elites, boyars, Peter the Great, European nobility, centralization, court, state service, elite power.
+**Expected evidence terms.** accommodation, accommodate, Ottoman, Bayezid, Jews, Salonica, protected subjects, jizya, Mughal, Akbar, Rajputs, Aurangzeb, Spain, Portugal, expelled, pushed out, Qing, Han, queue, suppress, restrict, limit, new elites, Manchu, banners, conquest, casta, peninsulares, creoles, silver, old elites, sipahi, timar, tax farm, boyars, Peter the Great, Table of Ranks, nobility, Versailles, Louis XIV, centralize, continuity, change.
 
-**AP skill focus.** Comparison practice.
+**AP skill focus.** Claims and evidence practice.
 
-**Checkpoint 1 prompt.** Give ONE example of a state accommodating an ethnic or religious group and ONE example of a state suppressing or restricting a group. Explain why each policy served the state. Then explain how imperial conquest or global economic opportunity produced a new elite or hierarchy, using the casta system or Qing transition as specific evidence.
-Strong answer checklist: Use one specific accommodation example and explain the state interest behind it. Use one specific suppression/restriction example and explain the state interest behind it. Explain how conquest or economic opportunity produced a new elite or hierarchy.
+**Checkpoint 1 prompt.** Answer in three steps. (1) Choose ONE empire that made room for or made use of a religious or ethnic group: the Ottoman Empire or Akbar's Mughal Empire. Explain what it did and what it gained. (2) Choose ONE state that pushed out or limited a group: Spain or Qing China. Explain what it did and what it gained. (3) For ONE of your two cases, explain one thing about the group's place in society that changed and one thing that stayed the same.
+Strong answer checklist: Name one state that made room for or used a group, and one that pushed out or limited a group. For each, say what the state did and what it gained. For one case, say what changed for the group and what stayed the same.
 
-**Checkpoint 2 prompt.** Explain how the power of TWO existing elite groups changed as states centralized from c. 1450 to c. 1750. Use two examples such as Ottoman timar holders, Russian boyars, or European nobility. For each, explain what power the elite had before, what the ruler or state changed, and whether the elite lost influence, adapted through state service, or gained a new route to status.
-Strong answer checklist: Use two specific existing-elite examples from different states. Explain the mechanism by which centralization altered elite power. Distinguish loss of independent power from adaptation into court or state service.
+**Checkpoint 2 prompt.** Explain how the top of society changed between 1450 and 1750, and what stayed the same. Use ONE new elite (the Qing banners, or the peninsulares and creoles at the top of the casta system) and explain how conquest or new trade made it. Use ONE old elite (Ottoman sipahis who held timars, Russian boyars, or French nobles) and explain how its power changed as rulers grew stronger, including one thing it lost and one thing it kept. Then explain one thing about the top of society that stayed the same.
+Strong answer checklist: Explain how one new elite was made by conquest or new trade. Explain how one old elite's power changed, with one thing it lost and one thing it kept. Explain one thing about the top of society that stayed the same.
 
-## 4.8 Continuity and Change in the Period from c. 1450 to c. 1750
+## 4.8 Continuity and Change from 1450 to 1750
 
-**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. How economic developments from 1450 to 1750 changed social structures — and what persisted despite those changes
+**Where this sits.** Unit 4: Transoceanic Interconnections, c. 1450 to c. 1750. Economic change reached into everyday social life: who worked, who ruled, and how families and communities were organized. Argue how much changed, with evidence.
 
 **College Board key concepts.**
 - Unit 4: Learning Objective N (Learning Objective): Explain how economic developments from 1450 to 1750 affected social structures over time.
@@ -184,12 +184,12 @@ Strong answer checklist: Use two specific existing-elite examples from different
 - KC-4.3 (Transoceanic Interconnections): Empires achieved increased scope and influence around the world, shaping and being shaped by the diverse populations they incorporated.
 - KC-4.3.III.ii (Transoceanic Interconnections): Economic disputes led to rivalries and conflict between states.
 
-**Expected evidence terms.** plantation economy, chattel slavery, mit’a, encomienda, hacienda, Potosí, mercantilism, artisan labor, casta, elites, gender, family, economic developments, social structures, continuity, change, plantation, slavery, peasant labor.
+**Expected evidence terms.** economic developments, social structure, sugar, plantation, chattel slavery, slavery, enslaved, indentured servants, planters, Barbados, silver, Potosí, mit’a, cloth, peasant, artisan, casta, elite, gender, family, West Central Africa, Unit 4, continuity, change, thesis, led to, same pattern, contrast.
 
-**AP skill focus.** CCOT and causation practice.
+**AP skill focus.** Argumentation practice.
 
-**Checkpoint 1 prompt.** Choose TWO economic developments from c. 1450–c. 1750, such as plantation growth, silver extraction, mercantilism, or intensified textile production. For each, explain one specific effect on social structure. Your two effects must come from different categories such as labor status, racial/casta hierarchy, elite power, or gender/family patterns.
-Strong answer checklist: Name two specific economic developments. Explain the mechanism connecting each economic development to a social consequence. Use social evidence from at least two different categories.
+**Checkpoint 1 prompt.** Answer in three steps. (1) Choose ONE economic development from Unit 4: the new demand for sugar, the silver of Potosí, or the new demand for cloth. Say what was in demand and who wanted it. (2) Explain which workers it needed and how they were brought to the work. (3) Explain one change it made to a social structure: who was forced to work, who rose to the top, or how families lived.
+Strong answer checklist: Name one economic development and who wanted it. Explain which workers it needed. Explain one change it made to a social structure.
 
-**Checkpoint 2 prompt.** Explain how economic developments from 1450 to 1750 affected social structures over time. Write a short CCOT argument that includes one meaningful social change, one meaningful social continuity, specific evidence from at least THREE earlier Unit 4 topics, and an explanation of why the change and continuity occurred.
-Strong answer checklist: Answer the exact economic-developments -> social-structures question. Use at least three specific pieces of Unit 4 evidence. Explain why one social structure changed and why another persisted.
+**Checkpoint 2 prompt.** Explain how economic developments from 1450 to 1750 affected social structures, and how much stayed the same. (1) Write a thesis that names one change and one continuity in social structures. (2) Support it with evidence from at least THREE different Unit 4 topics, for example the mit’a at Potosí or the growth of the Atlantic slave trade (Topic 4.4), villages in West Central Africa or peasant and artisan work in Europe, India, or China (Topic 4.5), the casta ranking (Topic 4.7), or sugar and slavery on Barbados (Topic 4.8, in this lesson). (3) In at least one sentence, explain how two pieces of your evidence relate: does one lead to the other, do they show the same pattern, or do they make a contrast?
+Strong answer checklist: Write a thesis with one change and one continuity. Use evidence from at least three Unit 4 topics. Explain how two pieces of your evidence relate.

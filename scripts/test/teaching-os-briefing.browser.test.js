@@ -253,7 +253,7 @@ async function main() {
       const url = route.request().url();
       if (!url.startsWith(origin)) return route.abort();
       if (/teaching-os-shared\.js/.test(url)) {
-        const src = fs.readFileSync(path.join(ROOT, 'teacher/teaching-os-shared.js'), 'utf8').replace('installBriefing();}', '}');
+        const src = fs.readFileSync(path.join(ROOT, 'teacher/teaching-os-shared.js'), 'utf8').replace('installBriefing();', '');
         return route.fulfill({ status: 200, contentType: 'text/javascript', body: src });
       }
       return route.continue();

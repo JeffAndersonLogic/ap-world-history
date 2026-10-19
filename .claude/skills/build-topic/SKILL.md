@@ -13,7 +13,12 @@ right (the failure the whole repo is built to refuse):
 - `docs/PRESENTATION-AUTHORING.md`: the instructional-design process (story, spine, gate)
 - `docs/TEACHING-OS.md`: the implementation contract (files, generators, tests)
 
-Read both before Phase 1. Also read `CLAUDE.md` for the git rules and the module-role contract.
+Read both before Phase 1. Also read `CLAUDE.md` for the git rules and the module-role contract,
+and, from its reference table, the three files every topic build touches:
+`docs/claude/module-07-evidence-lab.md`, `docs/claude/socrates.md` and
+`docs/claude/schedule-board-and-canvas.md`. They were part of `CLAUDE.md` until 2026-10-16 and
+moved out so every session and every reviewer stops paying to load them (Jeff's decision on
+usage, recorded in AndersonLogic-OS `04_PRODUCTS/BeHistorical/Decisions.md`).
 
 ## The CED rule: iron-clad, above every other rule here
 
@@ -462,7 +467,11 @@ pre-1453 Hagia Sophia.
 
 ### 9B. Read the rendered page, not the data file
 
-Open the real lesson page and both decks in a browser and check, module by module:
+Open the real lesson page and the teacher deck in a browser and check, module by module. The
+student deck is the teacher deck minus Teacher Preflight and the notes, generated from it; the
+browser suite checks its layout, so open it only to look at a slide the suite flagged.
+`node scripts/capture-topic-for-review.js X.Y <dir>` captures all of it as text and slide
+screenshots, which is the same packet the reviewers read:
 
 1. **Page truth.** Every prompt, direction, question, caption and reference points at
    something the student can actually see or has explicitly been given. (Explanatory prose
@@ -487,6 +496,29 @@ The builder shares the build's blind spots, and a checker that shares a failure 
 thing it checks confirms the bug. So launch a **fresh subagent that has not seen your
 reasoning**. Give it only the rendered surfaces, the CED contract, the unit story map and the
 defect definition below, and tell it to find errors, not to confirm the work.
+
+**How to run a pass, at the least usage that keeps the review independent** (Jeff, 2026-10-16;
+4.5's six reviewers used about two million tokens between them, most of a build's usage):
+
+1. **One packet per pass.** `node scripts/capture-topic-for-review.js X.Y <scratch-dir>/reviewN`
+   (with `BHT_FONT_DIR` set, so slides render in the brand fonts) writes the captures, the teacher
+   slide screenshots and `REVIEW-BRIEF.md`, the brief from `docs/review-brief-template.md` with
+   the paths filled in. Recapture after each round of fixes; never hand a reviewer an old packet.
+   **Teacher slides only:** the student deck is generated from the teacher deck and adds nothing
+   a reviewer can find, and screenshots are the costliest thing a reviewer reads.
+2. **Two reviewers per pass, launched together in the background**, each told to read
+   `REVIEW-BRIEF.md` and nothing about the build:
+   - **Page truth, readability, CED alignment, ownership** on the cheaper model: launch it with
+     `model: "sonnet"`. This is reading the page against the brief, which the cheaper model does
+     well.
+   - **History** on the session's default (top) model, with no `model` override: source-to-claim
+     fit, quotations against the original texts, and captions against holders' catalogues are
+     where a weaker reviewer misses errors that reach students.
+   If Jeff ever wants the history reviewer on the cheaper model too, it is the same one-word
+   change; record it in the Decisions file first.
+3. **A reviewer cut off by a usage limit is resumed, not relaunched.** Its work is saved; send
+   it a message (SendMessage to its id) once the limit resets, and log the interruption in the
+   ledger. A fresh launch pays for everything the first one already read.
 
 **A defect is a demonstrable failure** of accuracy, chronology, sourcing or source to claim
 fit, CED alignment, story-map ownership, page truth, ninth-grade readability, accessibility, or

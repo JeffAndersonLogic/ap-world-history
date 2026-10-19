@@ -35,110 +35,149 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: The Resistance Within',
+    title: 'First & 10: Push and Pushback',
     embedUrl: 'first-and-10-topic-4-6-internal-external-challenges-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 4.6 lesson path.'
+    note: 'Read the First & 10, answer the three questions, then return to the 4.6 lesson path.'
   };
 
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'Pueblo Revolt zone (New Mexico, 1680)', detail: 'Forty-six Pueblo communities in the Rio Grande valley rose simultaneously under Popé\'s leadership, killing 400 colonists and 21 missionaries and expelling the Spanish for twelve years. The geographic key: Pueblo communities were concentrated in a frontier zone far from the centers of Spanish colonial power in Mexico City and Lima, giving them both the grievances and the relative isolation to organize.' },
-      { label: 'Palmares (Brazilian interior, c. 1605–1694)', detail: 'Palmares, the largest and most durable maroon community in the Americas, thrived in the remote interior of Portuguese Brazil for nearly a century, with a population of up to 30,000. Its survival demonstrates both the capacity of escaped enslaved people to build autonomous institutions and the difficulty colonial powers had projecting military force into interior terrain.' },
-      { label: 'Indian Ocean, Dutch displacement of Portuguese (c. 1600–1650)', detail: 'The Dutch VOC systematically displaced the Portuguese Estado da India from the Indian Ocean by offering lower toll rates, maintaining better-capitalized fleets, and seizing key ports (Batavia, 1619; Malacca, 1641). The geographic lesson: the chokepoint-based Estado da India model was vulnerable to a rival that could out-compete it at every chokepoint simultaneously.' },
-      { label: 'Geographic takeaway', detail: 'Resistance was most effective in frontier or interior regions, where colonial authority was weakest and terrain was most favorable to defenders. The Pueblo Revolt succeeded in a frontier zone; Palmares survived in the Brazilian interior. The Dutch challenge succeeded because it operated at the same geographic level as the Portuguese, controlling the same Indian Ocean chokepoints with superior resources.' }
+      { label: 'Inside a state', detail: 'Paris (the Fronde, 1648 to 1653) and the Volga River (Stenka Razin\'s revolt, 1670 to 1671).' },
+      { label: 'At the edge of an expanding state', detail: 'The Deccan in India (the Marathas, 1660s to 1707), Ndongo and Matamba in West Central Africa (Njinga, 1622 to 1663), New Mexico (the Pueblo Revolt, 1680), and New England (Metacom\'s War, 1675 to 1676).' },
+      { label: 'Organized resistance by enslaved people', detail: 'Palmares in Brazil (maroon towns that lasted most of the 1600s), Jamaica (the Maroons, who forced the colony to sign treaties in 1739), and the Stono River in South Carolina (the Stono Rebellion, 1739).' },
+      { label: 'What the map cannot show', detail: 'The shaded areas and dots mark regions, not borders or exact battlefields. They show where people pushed back, not how many took part or how each case ended.' }
     ]
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg'
+    map:             '../assets/images/instructional-maps/topic-4-6.svg',
+    first10:         '../assets/images/topics/4-6/razin-moscow-luyken-1700.jpg',
+    contentDelivery: '../assets/images/topics/4-6/parlement-arrest-luyken-1699.jpg',
+    beSurreal:       '',
+    skill:           '../assets/images/topics/4-6/broussel-paris-1648.jpg',
+    checkpoint1:     '../assets/images/topics/4-6/aurangzeb-golconda-c1686.jpg',
+    evidence:        '../assets/images/topics/4-6/shivaji-golconda-c1680.jpg',
+    source:          '',
+    beInTheRoom:     '',
+    checkpoint2:     ''
+  };
+
+  lesson.classPresentation = {
+    title: 'Class Slides: Push and Pushback',
+    desc: 'Follow the story: how states pushed to expand and centralize, who pushed back across Europe, Asia, Africa, and the Americas, how enslaved people organized, and what the pushback changed.',
+    url: 'presentation-topic-4-6-student.html'
   };
 
   lesson.beInTheRoom = {
     url: '../beintheroom/unit-4/the-knotted-cord.html',
-    desc: 'Coordinate the Pueblo Revolt of 1680: balance secrecy, alliance, military sequence, community survival, and the political order that should follow colonial expulsion.'
+    desc: 'Meet with the leaders of the Pueblo alliance in August 1680 and decide how to keep many towns, languages, and communities rising on the same day, and what should hold them together if the Spanish are driven out.'
   };
 
   lesson.skillBuilder = {
-    label: 'Causation practice',
-    title: 'Why Did Colonized Peoples Resist? Analyzing Root Causes',
-    intro: 'Causation practice for Topic 4.6 requires explaining why colonized and enslaved peoples resisted European rule at specific times and in specific ways. A strong causation argument moves beyond "they were oppressed" to identify specific grievances, specific organizational factors, and specific moments that triggered action. The Pueblo Revolt and maroon communities offer two different causal stories, both are worth understanding in detail.',
+    label: 'Contextualization practice',
+    title: 'Put a Revolt in Its Bigger Story',
+    intro: 'Contextualization means explaining how an event fits into a bigger development of its time, and how that bigger development helps explain it. It takes two moves: name the bigger development, then say how it helps explain the event. Naming the context without saying how it explains the event is only half the job. Watch the two moves on the Fronde first.',
     steps: [
-      { label: 'Identify specific grievances', text: 'The Pueblo Revolt was caused by a specific combination of factors: decades of religious suppression (Spanish missionaries destroyed kivas, confiscated sacred objects, publicly flogged religious leaders including Popé in 1675); increasing labor and tribute demands; a prolonged drought that worsened food insecurity; and broken colonial promises. Any one of these alone might not have triggered revolt, the combination, accumulated over nearly a century, did.' },
-      { label: 'Identify the organizational factor', text: 'Grievances alone do not cause revolts, organization does. Popé\'s achievement was building a coordinated multi-community network across peoples who spoke different languages and had different political traditions. The kiva system, which gave religious leaders a communication network across Pueblo communities, provided the organizational infrastructure. Understanding why 1680 specifically (not 1650 or 1700) requires explaining Popé\'s organizational success.' },
-      { label: 'Explain the outcome and its limits', text: 'The Pueblo Revolt succeeded in the short term (twelve years of self-governance) and forced genuine concessions (no reimposition of the encomienda, reduced religious suppression after reconquest). Its limits: the Spanish did eventually reconquer New Mexico in 1692. The revolt demonstrates both the capacity of indigenous resistance to force change AND the structural limits on how far that change could go.' }
+      { label: 'The event', text: 'The Fronde: from 1648 to 1653, judges of the Parlement of Paris, the people of Paris, and then great nobles rose against the French crown.' },
+      { label: 'Move 1: Name the bigger development', text: 'Across Europe in these years, rulers were pulling power into their own hands, and they paid for long wars with new taxes. France had been at war with Spain for years, and the crown kept demanding more money.' },
+      { label: 'Move 2: Say how it helps explain the event', text: 'The judges, the city, and the nobles were the people who lost money and power when the crown centralized and taxed. So the Fronde was not just a quarrel in Paris: it was one result of a centralizing state pushing on the people who used to share its power.' },
+      { label: 'Put it in one sentence', text: 'The Fronde happened as part of European rulers pulling power into their own hands and paying for wars with new taxes, which helps explain it because the judges, the city, and the nobles were the ones who lost money and power when the crown did that.' }
     ],
-    prompt: 'In 3–4 sentences, write a causation argument: explain what caused the Pueblo Revolt of 1680. Identify at least two specific grievances (religious suppression, labor demands, drought), explain how Popé built the organizational capacity for a coordinated revolt, and describe the short-term outcome. Use specific evidence: Popé, Tewa, kiva, 1675 flogging, August 10, 1680.'
+    prompt: 'Now do it yourself with a different event. On September 9, 1739, about twenty enslaved people near the Stono River in South Carolina seized guns and marched south toward Spanish Florida. Others joined them, but the colony\'s militia broke up their march that afternoon, though some rebels were not caught for months. Here are three pieces of context: (1) South Carolina was a plantation colony growing rice, and enslaved Africans were the majority of its people. (2) Since 1693 the Spanish king had promised freedom in Spanish Florida to enslaved people who escaped from the English colonies and became Catholic, and in 1738 Florida built a fort near St. Augustine for them. (3) In 1739 Britain and Spain were about to go to war. In 2 to 3 sentences, put the Stono Rebellion in its broader context: name the bigger development it was part of, and explain how at least TWO of these pieces of context help explain why the rebels did what they did.',
+    criteria: [
+      'I named a bigger development of the period that the Stono Rebellion was part of.',
+      'I used at least two of the three pieces of context.',
+      'I explained how the context helps explain what the rebels did, not just listed it.'
+    ]
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: Local Resistance — Pueblo Revolt',
+      title: 'Checkpoint 1: Pushback Against Growing States',
       subtitle: 'Checks Learning Target 1 and Success Criterion 1.',
-      cardDesc: 'State expansion, local grievances, Popé, coordination, and the limits of Spanish control.',
+      cardDesc: 'How expansion and centralization led different local groups to resist, in Afro-Eurasia and the Americas.',
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Explain why the Pueblo Revolt of 1680 occurred, how Popé and Pueblo communities organized collective resistance, and what the revolt changed in the short term. Your answer must connect specific colonial policies or pressures to the decision to resist.',
+      prompt: 'Choose TWO cases of local resistance: ONE from Africa, Asia, or Europe (the Fronde, Razin\'s revolt, the Marathas, or Njinga) and ONE from the Americas (the Pueblo Revolt or Metacom\'s War). For EACH case, explain what the state was pushing for (to expand, or to centralize), which group pushed back and how, and what happened next, including one way the resistance changed the state, or why it changed nothing. Then explain one way the two cases were alike.',
       responseType: 'Checkpoint 1',
-      terms: ['Pueblo Revolt', 'Popé', 'Tewa', 'kiva', 'religious suppression', 'labor demands', 'drought', 'Spanish colonial rule', 'resistance'],
-      focus: ['Identify at least two specific grievances caused by colonial expansion or centralization.', 'Explain how Popé and Pueblo networks made coordinated resistance possible.', 'Explain the short-term outcome and at least one limit of the revolt.']
+      terms: ['expansion', 'expand', 'centralization', 'centralize', 'Fronde', 'Parlement', 'nobles', 'Razin', 'Cossacks', 'serfs', 'Law Code', 'Marathas', 'Shivaji', 'Aurangzeb', 'Mughal', 'Deccan', 'Njinga', 'Ndongo', 'Matamba', 'Portugal', 'Pueblo Revolt', 'Popé', 'encomienda', 'religious suppression', 'Metacom', 'Wampanoag', 'resistance'],
+      focus: ['Name one case from Africa, Asia, or Europe and one from the Americas.', 'For each, say what the state pushed for, which group pushed back and how, what happened next, and what the resistance changed (or why it changed nothing).', 'Say one way the two cases were alike.']
     },
     {
       title: 'Checkpoint 2: Organized Resistance by Enslaved People',
       subtitle: 'Checks Learning Target 2 and Success Criterion 2.',
-      cardDesc: 'Maroon communities, Palmares, escape, autonomous organization, and colonial vulnerability.',
+      cardDesc: 'How enslaved people challenged the authorities through organized resistance, and how the authorities responded.',
       learningTargets: [lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[1].criteria],
-      prompt: 'Explain how maroon communities represented organized resistance by enslaved Africans. Use Palmares as a specific example and explain how geography, community organization, and the weaknesses of colonial control helped resistance survive. Then compare this strategy with the Pueblo Revolt in one sentence.',
+      prompt: 'Explain how enslaved people in the Americas challenged the authorities through organized resistance. Use ONE maroon community (Palmares or the Jamaica Maroons) and the Stono Rebellion of 1739. For EACH, explain how the resistance was organized and how the authorities responded. Then explain one reason the authorities responded differently in the two cases.',
       responseType: 'Checkpoint 2',
-      terms: ['maroon communities', 'Palmares', 'Zumbi', 'quilombo', 'escape', 'autonomy', 'geography', 'organized resistance', 'Pueblo Revolt'],
-      focus: ['Define maroon resistance and use Palmares as specific evidence.', 'Explain why geography and community organization mattered.', 'Make one meaningful comparison between maroon autonomy and Pueblo collective revolt.']
+      skill: 'Causation',
+      terms: ['organized resistance', 'maroon', 'maroon communities', 'quilombo', 'Palmares', 'Ganga Zumba', 'Zumbi', 'treaty', 'Jamaica', 'Maroons', 'Cudjoe', 'Stono', 'South Carolina', 'Spanish Florida', 'militia', 'Negro Act', 'enslaved', 'authorities'],
+      focus: ['Explain how the maroon community you chose was organized, and how the authorities responded.', 'Explain how the Stono Rebellion was organized, and how the authorities responded.', 'Give one reason the authorities responded differently in the two cases.']
     }
   ];
 
   lesson.evidenceLab = {
-    title: 'Evidence Lab: Resistance, Organization, and Imperial Limits',
-    task: 'Choose TWO cards that represent Indigenous or enslaved resistance. Decide whether each source is contemporary, later memory, or secondary reconstruction. Then infer what made organized resistance possible rather than treating resistance as an automatic response to oppression.',
-    prompt: 'Using two evidence cards, make one claim about the conditions that made local or enslaved resistance to expanding state power possible. Cite concrete details, compare resistance strategies, and identify one source limitation.'
+    title: 'Evidence Lab: Push and Pushback',
+    task: 'Choose TWO cards. For each, decide what it shows about why people pushed back against a growing state, or how they did it.',
+    prompt: 'Make one claim about what made people push back against a growing state, or how they did it, from 1450 to 1750. Then, for EACH of your two cards: (1) say what kind of source it is, who made it, and when, (2) give one detail you can see or read and explain how it supports your claim, and (3) name one thing the source cannot tell you.'
   };
 
   lesson.images = [
     {
-      title: 'Pueblo Revolt Mural, Installed 1936',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg',
-      caption: 'Later memory of Indigenous resistance. Loren Mozley\'s 1936 mural commemorates the 1680 Pueblo Revolt rather than documenting it directly.',
-      prompt: 'NOTICE which people and actions the mural emphasizes. What can you INFER about how the revolt was remembered in the 20th century? Why must you use other evidence to reconstruct the actual causes and events of 1680?'
+      title: 'A Paris Judge, Printed in 1648',
+      alt: 'An engraved portrait of an older man with long hair and a small beard, in a dark robe and white collar, inside an oval frame, with a coat of arms below and a printed caption.',
+      url: '../assets/images/topics/4-6/broussel-paris-1648.jpg',
+      sourceUrl: 'https://id.rijksmuseum.nl/200435769',
+      caption: 'A portrait print of Pierre Broussel by an unnamed printmaker, published in 1648 with the French king\'s license to print. The caption reads "Pierre de Broussel, counselor of the King in his court of Parlement of Paris." In August 1648 the government arrested him, and Paris put up barricades until he was freed. Rijksmuseum.',
+      prompt: 'NOTICE how the print presents Broussel and what the caption calls him. INFER why someone would print and sell a portrait of this judge in 1648, the year of his arrest. What can a portrait not tell you about what Broussel did or why the city backed him?'
     },
     {
-      title: 'Palmares on a Dutch Map of Pernambuco, 1647',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mapa_da_Capitania_de_Pernambuco%2C_com_representa%C3%A7%C3%A3o_do_Quilombo_dos_Palmares_%281647%29.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mapa_da_Capitania_de_Pernambuco,_com_representa%C3%A7%C3%A3o_do_Quilombo_dos_Palmares_(1647).jpg',
-      caption: 'Contemporary geographic evidence. A Dutch map of Pernambuco includes a representation of Palmares, the large maroon community that resisted colonial control in Brazil.',
-      prompt: 'NOTICE Palmares\'s location relative to colonial settlements and terrain. What can you INFER about how geography supported autonomy? What does a map made by colonial outsiders fail to reveal about life inside Palmares?'
+      title: 'Razin Brought into Moscow, as a Dutch Artist Imagined It',
+      alt: 'An etching of a crowd outside a walled city gate with towers: a man in chains sits in a wooden cart under a tall wooden frame, surrounded by guards with pikes and long guns.',
+      url: '../assets/images/topics/4-6/razin-moscow-luyken-1700.jpg',
+      sourceUrl: 'https://id.rijksmuseum.nl/200224386',
+      caption: 'Jan Luyken\'s etching of the captured rebel Stenka Razin being brought into Moscow on a cart in 1671, made for a Dutch history book published in Leiden in 1700, about thirty years later. Luyken never went to Russia. Rijksmuseum.',
+      prompt: 'NOTICE how the rebel is shown and who surrounds him. INFER what a state wanted people to learn from the way it treated a captured rebel. What can this picture not tell you about what happened in Moscow in 1671, and why?'
     },
     {
-      title: 'Zumbi dos Palmares Memorial Statue',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Zumbi_dos_palmares.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Zumbi_dos_palmares.jpg',
-      caption: 'Modern public memory. A bronze monument in Salvador commemorates Zumbi, the late-17th-century leader associated with resistance at Palmares.',
-      prompt: 'NOTICE how Zumbi is presented as a public hero. What can this tell you about the long-term memory of maroon resistance? Why is a modern monument not evidence for Zumbi\'s physical appearance or the exact organization of Palmares?'
+      title: 'Shivaji, Painted in the Deccan, About 1680',
+      alt: 'A painted portrait of a bearded man in profile in a gold turban with a black plume and a patterned white robe, holding a sword, inside an oval frame, with a gold flower border and a handwritten caption below.',
+      url: '../assets/images/topics/4-6/shivaji-golconda-c1680.jpg',
+      sourceUrl: 'https://id.rijksmuseum.nl/200383520',
+      caption: 'A portrait of the Maratha king Shivaji by an unnamed painter, made at Golconda, in the Deccan, about 1680, around the time of his death. Its decorated mount carries a long caption in Dutch. Rijksmuseum.',
+      prompt: 'NOTICE how the painter presents Shivaji: his clothes, his pose, his sword. INFER how the painter chose to show a king who fought the Mughal Empire. What can a portrait not tell you about how the Marathas actually fought?'
     },
     {
-      title: 'Resistance Geography — Pueblo Country and Colonial Frontiers',
-      url: '../assets/images/instructional-maps/topic-4-6.svg',
-      sourceUrl: '../assets/images/instructional-maps/topic-4-6.svg',
-      caption: 'Secondary geographic reconstruction. The Topic 4.6 map places resistance in frontier landscapes where distance, terrain, and dispersed colonial authority shaped what local communities could organize.',
-      prompt: 'NOTICE distance from colonial centers and the relationship between settlements and terrain. What can geography help explain about the possibilities for coordinated revolt or autonomous refuge? What cannot a map prove about motives or lived experience?'
+      title: 'Aurangzeb, Painted in the Deccan, About 1686',
+      alt: 'A painted portrait of an elderly man with a white beard in a white robe and turban, in profile, holding a flower and resting one hand on a sword, with a golden halo, against a green background.',
+      url: '../assets/images/topics/4-6/aurangzeb-golconda-c1686.jpg',
+      sourceUrl: 'https://id.rijksmuseum.nl/200495648',
+      caption: 'A portrait of the Mughal emperor Aurangzeb by an unnamed painter, made at Golconda, in the Deccan, about 1686, while he was fighting to conquer the region. It comes from an album of portraits of Indian rulers collected by a Dutch owner. Rijksmuseum.',
+      prompt: 'NOTICE the halo, the sword, and the flower. INFER what the painter wanted viewers to think about this emperor\'s power. Aurangzeb spent his last twenty-six years fighting in the Deccan. What can this portrait not tell you about that war?'
     },
+    {
+      title: 'A Pueblo Man Testifies, 1681',
+      label: 'Written source · Spanish record of a Pueblo man\'s testimony',
+      sourceText: [
+        '"[S]ince the government of Señor General Hernando Ugarte y la Concha [around 1650]',
+        'they have planned to rebel on various occasions ... but they always kept in their hearts',
+        'the desire to carry it out, so as to live as they are living today."'
+      ],
+      caption: 'From the declaration of Pedro Naranjo, a Keres man from San Felipe Pueblo, questioned by Spanish officials on December 19, 1681, and written down in Spanish. English translation by Charmion Clair Shelby, 1942. Words in brackets are added.',
+      prompt: 'NOTICE how long, according to Naranjo, the Pueblos had wanted to rebel. INFER what that suggests about the causes of the revolt of 1680. Naranjo was a prisoner answering Spanish questions. What might he have left out?'
+    },
+    {
+      title: 'The Treaty with Jamaica\'s Maroons, 1739',
+      label: 'Written source · Treaty between the colony of Jamaica and the Maroons of Trelawny Town',
+      sourceText: [
+        '"[They] shall for ever hereafter [be] in a perfect state of freedom and liberty ...',
+        'if any negroes shall hereafter run away from their masters or owners,',
+        'and shall fall into Captain Cudjoe\'s hands, they shall immediately be sent back."'
+      ],
+      caption: 'From the second and ninth articles of the treaty between the British colony of Jamaica and the Maroons led by Cudjoe, signed March 1, 1739 (1738 in the calendar then in use), as printed in R. C. Dallas\'s History of the Maroons (1803). Words in brackets are added.',
+      prompt: 'NOTICE what the Maroons gained and what they had to promise. INFER why a colony that could not defeat the Maroons would make this deal. What can a treaty not tell you about how the Maroons themselves saw it?'
+    }
   ];
 })();

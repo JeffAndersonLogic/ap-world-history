@@ -2290,8 +2290,15 @@ function defaultModules() {
     { id: 'checkpoint1', label: 'Module 06', title: 'Checkpoint 1', desc: (L.checkpoints && L.checkpoints[0] && L.checkpoints[0].cardDesc) || 'First checkpoint.', img: moduleCardImg('checkpoint1', L.map.url), render: () => renderCheckpoint(L.checkpoints[0], 'checkpoint-one-response') },
     { id: 'evidence', label: 'Module 07', title: 'Evidence Lab', desc: 'Analyze images and source evidence.', img: moduleCardImg('evidence', L.map.url), render: renderEvidence },
     { id: 'source', label: 'Module 08', title: 'Primary Source', desc: 'Read and interpret a source.', img: moduleCardImg('source', L.map.url), render: renderPrimarySource },
-    ...(L.beInTheRoom && L.beInTheRoom.url ? [{ id: 'beintheroom', label: 'Module 09', title: 'BeInTheRoom', desc: L.beInTheRoom.desc, img: moduleCardImg('beintheroom', L.map.url), link: L.beInTheRoom.url }] : []),
-    { id: 'checkpoint2', label: L.beInTheRoom ? 'Module 10' : 'Module 09', title: 'Checkpoint 2', desc: (L.checkpoints && L.checkpoints[1] && L.checkpoints[1].cardDesc) || 'Final checkpoint.', img: moduleCardImg('checkpoint2', L.map.url), render: () => renderCheckpoint(L.checkpoints[1], 'checkpoint-two-response') }
+    // Module 09 is always on the grid (the 10-module standard in CLAUDE.md). A
+    // topic with no scenario yet gets a "coming soon" card that opens in the
+    // module dialog, as the Foundations renderer does. Until 2026-10-18 the card
+    // was dropped entirely, so Topics 4.8 and 9.9 showed nine modules with
+    // Checkpoint 2 numbered "Module 10" after a gap.
+    (L.beInTheRoom && L.beInTheRoom.url)
+      ? { id: 'beintheroom', label: 'Module 09', title: 'BeInTheRoom', desc: L.beInTheRoom.desc, img: moduleCardImg('beintheroom', L.map.url), link: L.beInTheRoom.url }
+      : { id: 'beintheroom', label: 'Module 09', title: 'BeInTheRoom', desc: 'An immersive scenario, coming soon for this topic.', img: moduleCardImg('beintheroom', L.map.url), render: renderBeInTheRoomPlaceholder },
+    { id: 'checkpoint2', label: 'Module 10', title: 'Checkpoint 2', desc: (L.checkpoints && L.checkpoints[1] && L.checkpoints[1].cardDesc) || 'Final checkpoint.', img: moduleCardImg('checkpoint2', L.map.url), render: () => renderCheckpoint(L.checkpoints[1], 'checkpoint-two-response') }
   ];
 }
 
@@ -2644,6 +2651,14 @@ function renderFirst10() {
 // place of the whole scene on every topic written to the documented shape, so
 // `text` wins when present (those pages render unchanged) and the documented
 // fields are the fallback. scripts/test/besurreal-render.test.js is the check.
+function renderBeInTheRoomPlaceholder() {
+  return `
+    <article class="card">
+      <h3>BeInTheRoom</h3>
+      <p>The BeInTheRoom scenario for this topic is coming soon. Nothing is due here today.</p>
+    </article>`;
+}
+
 function renderBeSurreal() {
   const s = L.beSurreal || {};
   const body = s.text
@@ -2877,7 +2892,7 @@ function renderEvidence() {
     ${images.length ? `<div class="pop-grid">
       ${images.map((img, i) => `
         <article class="card image-card pop-half">
-          <img src="${evidenceImageUrl(i)}" alt="${img.title}" role="button" tabindex="0"
+          <img src="${evidenceImageUrl(i)}" alt="${img.alt || img.title}" role="button" tabindex="0"
                aria-label="Enlarge image: ${img.title}"
                onclick="openLightbox(${i})"
                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(${i})}" ${mediaFallbackAttrs(`evidence-${String(i + 1).padStart(2, '0')}`)}>

@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Manila Silver Council | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "4.5",
+  "unit": "4",
+  "topicTitle": "Maritime Empires Maintained and Developed",
+  "file": "the-manila-silver-council.html",
+  "title": "The *Manila Silver Council*",
+  "location": "Manila, Spanish Philippines",
+  "date": "1594",
+  "lessonUrl": "../../unit-4/lesson-4-5-maritime-empires-maintained.html",
+  "alignment": {
+    "theme": "Governance (GOV) and Economic Systems (ECN)",
+    "objective": "Explain how rulers employed economic strategies to consolidate and maintain power throughout the period from 1450 to 1750. Explain the continuities and changes in networks of exchange from 1450 to 1750.",
+    "skill": "Continuity and change",
+    "keyConcepts": [
+      "KC-4.1.IV.C",
+      "KC-4.1.IV",
+      "KC-4.3.III.ii"
+    ]
+  },
+  "premise": [
+    "Manila has been a Spanish city since 1571. Every year galleons sail in from Acapulco, in Mexico, loaded with American silver, and every year Chinese junks from Fujian sail in with silk, porcelain and other goods to trade for it. Silver from the mines of Spanish America is flowing to China, because China now collects most of its taxes in silver.",
+    "The king of Spain is worried. In 1593 he ordered that only two galleons a year may sail between Manila and Acapulco, and that the goods they carry from Manila must not be worth more than a fixed amount. His advisers want American silver to reach Spain, not China, and Spanish silk makers complain that cheap Chinese silk is taking their buyers. But Manila's Spanish settlers live on this trade, and the Chinese merchants and craftsmen of the Parián, the Chinese quarter outside the city walls, far outnumber them.",
+    "Rivals want this trade too, even subjects of Spain's own king. In 1587 an English captain, Thomas Cavendish, captured the Manila galleon Santa Ana off the coast of Mexico. The Portuguese merchants of Macau, who since 1580 have shared Spain's king and who sell Chinese silk to the Spanish themselves, resent Manila's direct trade with China. The governor's council must decide how to obey the king, how to deal with the Chinese merchants, and how to protect the silver."
+  ],
+  "centralQuestion": "How should Manila's council keep the silver-for-silk trade paying for the colony, when the king wants to limit it, Chinese merchants run it, and rivals want to take it?",
+  "roles": [
+    {
+      "id": "treasury",
+      "name": "Royal Treasury Official",
+      "position": "You collect the king's customs duties at Manila and report to Spain.",
+      "power": "You can inspect cargoes and enforce the 1593 rules, but the governor and the settlers depend on breaking them.",
+      "goals": "Keep the colony loyal to the king's rules and send more silver toward Spain.",
+      "fears": "If you enforce the limits strictly, the colony may go broke, and the king may blame you for that too.",
+      "lens": "In a mercantilist empire, a colony's trade should serve the mother country.",
+      "preference": "Enforce the two-ship limit and the value limit, and count every chest of silver.",
+      "blindSpot": "The rules on paper may not match how the trade really works."
+    },
+    {
+      "id": "settler",
+      "name": "Spanish Settler and Galleon Shipper",
+      "position": "You hold a share of the space on the galleon, and your family's income comes from shipping Chinese silk to Acapulco.",
+      "power": "The city council listens to you, but Mexico City and Madrid make the rules.",
+      "goals": "Keep as much silk on the galleon as possible, and keep the price of Chinese goods low.",
+      "fears": "The value limit may ruin you, and pirates may take the ship.",
+      "lens": "Manila exists because of this trade; without it, nobody would stay.",
+      "preference": "Ask the king to raise the limit, and quietly ship more than the rules allow.",
+      "blindSpot": "You depend on Chinese merchants you do not trust and often mistreat."
+    },
+    {
+      "id": "sangley",
+      "name": "Chinese Merchant from Fujian",
+      "position": "You sail to Manila each year with silk and porcelain and trade them for silver. Your family has traded in these waters for generations.",
+      "power": "The Spanish need your goods, but they tax you, confine you to the Parián, and can expel or punish you.",
+      "goals": "Sell your goods for silver at a fair price and return home safely.",
+      "fears": "New taxes, sudden rules, or violence could ruin your voyage, or worse.",
+      "lens": "Trade in these seas is older than the Spanish city and will go on with or without it.",
+      "preference": "Keep the trade open, with fair taxes and safety in the Parián.",
+      "blindSpot": "You may care more about this season's profit than about the craftsmen and families who live in Manila all year."
+    },
+    {
+      "id": "friar",
+      "name": "Dominican Friar",
+      "position": "You run a mission to the Chinese of the Parián, preaching and baptizing.",
+      "power": "The governor respects the Church, but you have no soldiers or money of your own.",
+      "goals": "Convert the Chinese merchants and protect them from abuse by Spanish officials.",
+      "fears": "Harsh treatment may turn the Chinese against Christianity, and against the colony.",
+      "lens": "Trade brought these people here, and the Church can bring them to Christianity.",
+      "preference": "Protect the Parián and give baptized Chinese better treatment.",
+      "blindSpot": "Linking fair treatment to conversion puts pressure on people who keep their own beliefs."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "silver",
+      "label": "American Silver",
+      "text": "The galleons from Acapulco carried silver from the mines of Spanish America, including Potosí and Zacatecas.",
+      "why": "Shows where the money came from."
+    },
+    {
+      "id": "china",
+      "label": "Taxes in Silver in China",
+      "text": "Ming China had begun collecting most of its taxes in silver, so Chinese buyers wanted silver more than any other good.",
+      "why": "Explains why the silver went to China."
+    },
+    {
+      "id": "junks",
+      "label": "Chinese Junks from Fujian",
+      "text": "Chinese merchants sailed to Manila each spring with silk, porcelain, and other goods to trade.",
+      "why": "Shows an older regional trade that the Spanish joined rather than replaced."
+    },
+    {
+      "id": "decree",
+      "label": "The King's Limits of 1593",
+      "text": "A royal order allowed only two galleons a year between Manila and Acapulco and set a limit on the value of goods they could carry.",
+      "why": "A mercantilist rule meant to keep silver from draining to China."
+    },
+    {
+      "id": "spain",
+      "label": "Spanish Silk Makers",
+      "text": "Silk makers in Spain complained that cheap Chinese silk was taking their buyers in the Americas.",
+      "why": "Shows a home industry the king wanted to protect."
+    },
+    {
+      "id": "parian",
+      "label": "The Parián",
+      "text": "Chinese merchants and craftsmen lived in the Parián, a quarter outside Manila's walls, and greatly outnumbered the Spanish.",
+      "why": "Shows how much the colony depended on the Chinese."
+    },
+    {
+      "id": "cavendish",
+      "label": "The Santa Ana, 1587",
+      "text": "The English captain Thomas Cavendish captured the Manila galleon Santa Ana off the coast of Mexico.",
+      "why": "Shows rivals attacking the galleon trade. The Santa Ana was sailing from Manila to Mexico, full of silk and other Asian goods."
+    },
+    {
+      "id": "macau",
+      "label": "Portuguese Macau",
+      "text": "The Portuguese merchants of Macau sold Chinese silk to Spanish buyers and opposed Manila trading directly with China.",
+      "why": "Shows an economic rivalry even between subjects of the same king."
+    },
+    {
+      "id": "mission",
+      "label": "Missions to the Chinese",
+      "text": "Dominican friars preached to the Chinese of the Parián and baptized some of them.",
+      "why": "Shows a religion spreading along a trade route."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "limits",
+      "title": "Answer the king's limits",
+      "prompt": "How should the council respond to the 1593 limits on the galleon trade?",
+      "options": [
+        {
+          "id": "obey",
+          "title": "Enforce the limits strictly",
+          "action": "Allow only two galleons and inspect every cargo against the value limit.",
+          "benefits": "The council shows loyalty to the king, and more silver stays in Spanish hands.",
+          "worries": "Settlers lose income, and some may leave the colony.",
+          "tradeoff": "Obeying the king may cost the colony the trade that keeps it alive."
+        },
+        {
+          "id": "petition",
+          "title": "Obey, and petition the king to raise the limit",
+          "action": "Follow the rules this year while sending letters to Madrid about the colony's needs.",
+          "benefits": "The council stays loyal and makes its case.",
+          "worries": "An answer from Spain takes years, and the settlers suffer meanwhile.",
+          "tradeoff": "Patience keeps the law but leaves the colony short."
+        },
+        {
+          "id": "quiet",
+          "title": "Look the other way",
+          "action": "Let shippers carry more than the limit as long as the duties are paid.",
+          "benefits": "The colony stays rich and the trade keeps flowing.",
+          "worries": "Officials who are caught can be punished, and the king's rules lose force.",
+          "tradeoff": "Profit now weakens the king's control later."
+        }
+      ]
+    },
+    {
+      "id": "sangleys",
+      "title": "Deal with the Chinese merchants",
+      "prompt": "How should the council treat the Chinese merchants and residents of the Parián?",
+      "options": [
+        {
+          "id": "license",
+          "title": "Tax and license them fairly",
+          "action": "Collect a set fee and a fixed duty, and protect the Parián from abuse.",
+          "benefits": "More junks come, and goods stay cheap.",
+          "worries": "Settlers fear that the Chinese grow too many and too strong.",
+          "tradeoff": "A fair deal keeps the trade but makes the colony depend on the Chinese."
+        },
+        {
+          "id": "restrict",
+          "title": "Limit their numbers and movements",
+          "action": "Cap how many may stay after the trading season and lock the Parián at night.",
+          "benefits": "Spanish officials feel safer and more in control.",
+          "worries": "Merchants may stop coming, and craftsmen and food sellers may leave.",
+          "tradeoff": "Control costs the colony the people it needs."
+        },
+        {
+          "id": "convert",
+          "title": "Favor the baptized",
+          "action": "Give lower taxes and the right to stay to Chinese who become Christians.",
+          "benefits": "Friars gain converts, and some merchants settle for good.",
+          "worries": "Merchants who keep their own beliefs feel pressured and treated unfairly.",
+          "tradeoff": "Mixing trade and religion can win converts and resentment at the same time."
+        }
+      ]
+    },
+    {
+      "id": "defend",
+      "title": "Protect the silver",
+      "prompt": "How should Manila protect the galleons and the city from rivals?",
+      "options": [
+        {
+          "id": "escort",
+          "title": "Arm and escort the galleons",
+          "action": "Put more soldiers and guns on each galleon and guard it near Mexico.",
+          "benefits": "The galleons and their cargoes are safer from raiders like Cavendish.",
+          "worries": "Soldiers and guns take space and money from the cargo.",
+          "tradeoff": "Safety at sea cuts into profit."
+        },
+        {
+          "id": "fort",
+          "title": "Build up Manila's walls and fort",
+          "action": "Spend the colony's money on defending the city itself.",
+          "benefits": "The colony is harder for any rival to take.",
+          "worries": "Less money is left for trade and for the settlers.",
+          "tradeoff": "A strong city may still lose its ships at sea."
+        },
+        {
+          "id": "ally",
+          "title": "Trade with Macau instead of fighting it",
+          "action": "Work out a share of the China trade with the Portuguese of Macau.",
+          "benefits": "One rivalry is calmed, and both sides keep profiting.",
+          "worries": "Manila may lose its direct trade with China and pay more for silk.",
+          "tradeoff": "Peace with a rival means sharing the profit."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Explain how the king's limits on the Manila galleon were a mercantilist economic strategy. Then explain ONE thing that changed and ONE thing that continued in the trade between Manila and China, and why the silver kept flowing toward China.",
+  "sources": [
+    {
+      "label": "Library of Congress, Negotiating Empire: Founding Manila",
+      "url": "https://blogs.loc.gov/international-collections/2021/10/negotiating-empire-part-i-from-magellan-to-the-founding-of-manila-16th-18th-centuries/"
+    },
+    {
+      "label": "Metropolitan Museum of Art, Interwoven Globe",
+      "url": "https://www.metmuseum.org/exhibitions/listings/2013/interwoven-globe"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-beintheroom-capture.js"></script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

@@ -44,22 +44,22 @@ in this folder, the schedule, and git history.
 | 3.3 | 2026-10-22 | 2026-10-23 | Never | - | - |
 | 3.4 | 2026-10-26 | 2026-10-27 | Never | - | - |
 | 4.1 | 2026-10-28 | 2026-10-29 | Stale | 2026-10-12 | `topic-4-1-2026-10-12.md` |
-| 4.2 | 2026-10-30 | 2026-11-02 | Fresh | 2026-10-13 | `topic-4-2-2026-10-13.md` |
-| 4.3 | 2026-11-03 | 2026-11-04 | Fresh | 2026-10-14 | `topic-4-3-2026-10-14.md` |
-| 4.4 | 2026-11-05 | 2026-11-06 | Never | - | - |
-| 4.5 | 2026-11-09 | 2026-11-10 | Never | - | - |
-| 4.6 | 2026-11-11 | 2026-11-12 | Never | - | - |
-| 4.7 | 2026-11-13 | 2026-11-16 | Never | - | - |
-| 4.8 | 2026-11-17 | 2026-11-18 | Never | - | - |
+| 4.2 | 2026-10-30 | 2026-11-02 | Stale | 2026-10-13 | `topic-4-2-2026-10-13.md` |
+| 4.3 | 2026-11-03 | 2026-11-04 | Stale | 2026-10-14 | `topic-4-3-2026-10-14.md` |
+| 4.4 | 2026-11-05 | 2026-11-06 | Stale | 2026-10-15 | `topic-4-4-2026-10-15.md` |
+| 4.5 | 2026-11-09 | 2026-11-10 | Stale | 2026-10-16 | `topic-4-5-2026-10-16.md` |
+| 4.6 | 2026-11-11 | 2026-11-12 | Stale | 2026-10-17 | `topic-4-6-2026-10-17.md` |
+| 4.7 | 2026-11-13 | 2026-11-16 | Stale | 2026-10-18 | `topic-4-7-2026-10-18.md` |
+| 4.8 | 2026-11-17 | 2026-11-18 | Stale | 2026-10-18 | `topic-4-8-2026-10-18.md` |
 
 ## Totals
 
 | State | Topics | Meaning |
 |---|---|---|
-| Fresh | 2 | audited, and nothing has changed since |
-| Stale | 5 | the topic changed after its audit |
+| Fresh | 0 | audited, and nothing has changed since |
+| Stale | 12 | the topic changed after its audit |
 | Review | 0 | a file shared across the unit changed after its audit |
-| Never | 25 | no audit record exists |
+| Never | 20 | no audit record exists |
 
 ## Is the weekly sweep alive?
 

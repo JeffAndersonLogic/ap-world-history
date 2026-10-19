@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="map-title map-desc">
-  <title id="map-title">Silver Routes and Colonial Administration, c. 1580-1700</title>
-  <desc id="map-desc">Topic 4.5 instructional map for AP World History: Silver Routes and Colonial Administration, c. 1580-1700. Topic 4.5 · Maritime empires maintained</desc>
+  <title id="map-title">Silver, Companies and Rivals, c. 1500 to 1750</title>
+  <desc id="map-desc">Topic 4.5 instructional map for AP World History: Silver, Companies and Rivals, c. 1500 to 1750. Topic 4.5 · Maritime empires maintained and developed</desc>
   <defs>
     <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#FFFDF7"/><stop offset="1" stop-color="#F1E7D5"/>
@@ -69,54 +69,75 @@
   <g id="highlights">
     <ellipse cx="480.0" cy="577.8" rx="26.7" ry="100.0" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
     <ellipse cx="346.7" cy="372.2" rx="44.4" ry="33.3" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <ellipse cx="1342.2" cy="433.3" rx="22.2" ry="33.3" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
     <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
     <ellipse cx="817.8" cy="233.3" rx="62.2" ry="44.4" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
+    <ellipse cx="782.2" cy="433.3" rx="66.7" ry="38.9" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
   </g>
   <g id="flows">
-    <path class="flow" d="M480.0,577.8 Q710.9,466.4 817.8,233.3" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="679.9" cy="436.0" r="17"/>
-    <text class="badgenum" x="679.9" y="443.0" text-anchor="middle">1</text>
+    <path class="flow" d="M506.7,594.4 C524.4,573.1 582.2,510.2 613.3,466.7 C644.4,423.1 666.7,362.4 693.3,333.3 C720.0,304.3 760.0,299.1 773.3,292.2" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <circle class="badge" cx="655.0" cy="394.6" r="17"/>
+    <text class="badgenum" x="655.0" y="401.6" text-anchor="middle">1</text>
     <path class="flow" d="M346.7,372.2 Q170.3,352.8 0.0,402.8 M1600.0,402.8 Q1468.1,392.3 1342.2,433.3" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="171.8" cy="370.2" r="17"/>
     <text class="badgenum" x="171.8" y="377.2" text-anchor="middle">2</text>
     <path class="flow" d="M1342.2,433.3 Q1339.6,365.1 1297.8,311.1" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="1329.8" cy="368.7" r="17"/>
     <text class="badgenum" x="1329.8" y="375.7" text-anchor="middle">3</text>
+    <path class="flow" d="M773.3,266.7 C765.9,303.7 712.6,416.7 728.9,488.9 C745.2,561.1 816.3,687.0 871.1,700.0 C925.9,713.0 1016.3,615.7 1057.8,566.7 C1099.3,517.6 1109.6,432.4 1120.0,405.6" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <circle class="badge" cx="871.1" cy="676.0" r="17"/>
+    <text class="badgenum" x="871.1" y="683.0" text-anchor="middle">4</text>
+    <path class="flow" d="M791.1,466.7 C770.4,468.5 708.1,484.3 666.7,477.8 C625.2,471.3 563.0,436.1 542.2,427.8" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <circle class="badge" cx="666.7" cy="477.8" r="17"/>
+    <text class="badgenum" x="666.7" y="484.8" text-anchor="middle">5</text>
   </g>
   <g id="region-labels">
     <text class="region halo" x="480.0" y="703.8" text-anchor="middle" fill="#1A1C1D"><tspan x="480.0" dy="0">POTOSÍ</tspan></text>
     <text class="region halo" x="346.7" y="431.6" text-anchor="middle" fill="#1A1C1D"><tspan x="346.7" dy="0">NEW SPAIN</tspan></text>
-    <text class="region halo" x="1342.2" y="492.7" text-anchor="middle" fill="#1A1C1D"><tspan x="1342.2" dy="0">MANILA</tspan></text>
-    <text class="region halo" x="1225.8" y="422.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1225.8" dy="0">MING &amp; QING</tspan><tspan x="1225.8" dy="25">CHINA</tspan></text>
-    <text class="region halo" x="853.8" y="315.8" text-anchor="middle" fill="#1A1C1D"><tspan x="853.8" dy="0">SEVILLE</tspan></text>
+    <text class="region halo" x="1297.8" y="238.0" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">MING CHINA</tspan></text>
+    <text class="region halo" x="853.8" y="291.8" text-anchor="middle" fill="#1A1C1D"><tspan x="853.8" dy="0">EUROPE</tspan></text>
+    <text class="region halo" x="866.2" y="510.2" text-anchor="middle" fill="#1A1C1D"><tspan x="866.2" dy="0">WEST AFRICA</tspan></text>
   </g>
   <g id="places">
-    <circle class="city" cx="508.0" cy="608.9" r="10"/>
-    <text class="place halo" x="488.0" y="616.9" text-anchor="end">Potosí</text>
-    <text class="placenote halo" x="488.0" y="638.9" text-anchor="end">the silver mountain</text>
+    <line class="leader" x1="1115.5" y1="384.9" x2="1115.5" y2="358.9"/>
+    <circle class="city" cx="1115.5" cy="384.9" r="10"/>
+    <text class="place halo" x="1143.5" y="332.9" text-anchor="end">Diu</text>
+    <text class="placenote halo" x="1143.5" y="354.9" text-anchor="end">Portuguese victory at sea, 1509</text>
+    <line class="leader" x1="800.0" y1="409.6" x2="660.0" y2="347.6"/>
+    <circle class="city" cx="800.0" cy="409.6" r="10"/>
+    <text class="place halo" x="660.0" y="321.6" text-anchor="end">Tondibi</text>
+    <text class="placenote halo" x="660.0" y="343.6" text-anchor="end">Morocco beats Songhai, 1591</text>
+    <line class="leader" x1="1369.7" y1="520.6" x2="1369.7" y2="548.6"/>
+    <circle class="city" cx="1369.7" cy="520.6" r="10"/>
+    <text class="place halo" x="1197.7" y="564.6" text-anchor="start">Ambon</text>
+    <text class="placenote halo" x="1197.7" y="586.6" text-anchor="start">VOC executes English traders, 1623</text>
+    <line class="leader" x1="1337.7" y1="418.9" x2="1337.7" y2="458.9"/>
+    <circle class="city" cx="1337.7" cy="418.9" r="10"/>
+    <text class="place halo" x="1201.7" y="474.9" text-anchor="start">Manila</text>
+    <text class="placenote halo" x="1201.7" y="496.9" text-anchor="start">Chinese silk for silver, from 1571</text>
   </g>
 
   <g id="titleband">
     <rect x="0" y="0" width="1600" height="118" fill="url(#paper)" opacity=".93"/>
     <rect x="0" y="118" width="1600" height="5" fill="#C9A46A"/>
-    <text class="title" x="46" y="62">Silver Routes and Colonial Administration, c. 1580-1700</text>
-    <text class="subtitle" x="48" y="97">Topic 4.5 · Maritime empires maintained</text>
+    <text class="title" x="46" y="62">Silver, Companies and Rivals, c. 1500 to 1750</text>
+    <text class="subtitle" x="48" y="97">Topic 4.5 · Maritime empires maintained and developed</text>
   </g>
 
-  <g id="legend" transform="translate(46,754)">
-    <rect x="0" y="0" width="1030" height="178" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
+  <g id="legend" transform="translate(46,721)">
+    <rect x="0" y="0" width="1030" height="211" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
     <text class="small" x="18" y="28" font-weight="700">Map Key</text>
-      <rect x="18" y="38" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="56">Potosí silver, mined under the mita labor draft</text>
-      <rect x="18" y="71" width="40" height="23" rx="4" fill="#C08552" fill-opacity=".6" stroke="#8C5A2B" stroke-width="3"/><text class="small" x="74" y="89">Zacatecas silver and the Manila galleon</text>
-      <rect x="18" y="104" width="40" height="23" rx="4" fill="#D2B48C" fill-opacity=".6" stroke="#8E7A55" stroke-width="3"/><text class="small" x="74" y="122">Manila: the Pacific transfer point</text>
-      <rect x="18" y="137" width="40" height="23" rx="4" fill="#B49AA8" fill-opacity=".6" stroke="#6B4A5A" stroke-width="3"/><text class="small" x="74" y="155">China: the market that absorbed the silver</text>
-      <rect x="518" y="38" width="40" height="23" rx="4" fill="#9FB0AE" fill-opacity=".6" stroke="#4E6260" stroke-width="3"/><text class="small" x="574" y="56">Seville and the Atlantic treasure fleets</text>
-      <circle class="badge" cx="533" cy="82" r="14"/><text class="badgenum" x="533" y="88" text-anchor="middle" font-size="16">1</text><line x1="551" x2="572" y1="82" y2="82" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,76 L584,82 L572,88 Z" fill="#8C5A2B"/><text class="small" x="594" y="89">treasure fleets east</text>
-      <circle class="badge" cx="533" cy="115" r="14"/><text class="badgenum" x="533" y="121" text-anchor="middle" font-size="16">2</text><line x1="551" x2="572" y1="115" y2="115" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,109 L584,115 L572,121 Z" fill="#8C5A2B"/><text class="small" x="594" y="122">Manila galleon west</text>
-      <circle class="badge" cx="533" cy="148" r="14"/><text class="badgenum" x="533" y="154" text-anchor="middle" font-size="16">3</text><line x1="551" x2="572" y1="148" y2="148" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,142 L584,148 L572,154 Z" fill="#8C5A2B"/><text class="small" x="594" y="155">silver into China</text>
+      <rect x="18" y="38" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="56">Potosí: Spanish silver from 1545</text>
+      <rect x="18" y="71" width="40" height="23" rx="4" fill="#C08552" fill-opacity=".6" stroke="#8C5A2B" stroke-width="3"/><text class="small" x="74" y="89">New Spain: Zacatecas silver from 1546</text>
+      <rect x="18" y="104" width="40" height="23" rx="4" fill="#B49AA8" fill-opacity=".6" stroke="#6B4A5A" stroke-width="3"/><text class="small" x="74" y="122">China: most taxes paid in silver, so silver was in demand</text>
+      <rect x="18" y="137" width="40" height="23" rx="4" fill="#9FB0AE" fill-opacity=".6" stroke="#4E6260" stroke-width="3"/><text class="small" x="74" y="155">Europe: mercantilist states and their trading companies</text>
+      <rect x="18" y="170" width="40" height="23" rx="4" fill="#D2B48C" fill-opacity=".6" stroke="#8E7A55" stroke-width="3"/><text class="small" x="74" y="188">West Africa: Indian cloth and cowries traded for captives</text>
+      <circle class="badge" cx="533" cy="49" r="14"/><text class="badgenum" x="533" y="55" text-anchor="middle" font-size="16">1</text><line x1="551" x2="572" y1="49" y2="49" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,43 L584,49 L572,55 Z" fill="#8C5A2B"/><text class="small" x="594" y="56">Silver to Seville</text>
+      <circle class="badge" cx="533" cy="82" r="14"/><text class="badgenum" x="533" y="88" text-anchor="middle" font-size="16">2</text><line x1="551" x2="572" y1="82" y2="82" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,76 L584,82 L572,88 Z" fill="#8C5A2B"/><text class="small" x="594" y="89">Galleon to Manila</text>
+      <circle class="badge" cx="533" cy="115" r="14"/><text class="badgenum" x="533" y="121" text-anchor="middle" font-size="16">3</text><line x1="551" x2="572" y1="115" y2="115" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,109 L584,115 L572,121 Z" fill="#8C5A2B"/><text class="small" x="594" y="122">Silver into China</text>
+      <circle class="badge" cx="533" cy="148" r="14"/><text class="badgenum" x="533" y="154" text-anchor="middle" font-size="16">4</text><line x1="551" x2="572" y1="148" y2="148" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,142 L584,148 L572,154 Z" fill="#8C5A2B"/><text class="small" x="594" y="155">Silver around Africa to Asia</text>
+      <circle class="badge" cx="533" cy="181" r="14"/><text class="badgenum" x="533" y="187" text-anchor="middle" font-size="16">5</text><line x1="551" x2="572" y1="181" y2="181" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,175 L584,181 L572,187 Z" fill="#8C5A2B"/><text class="small" x="594" y="188">Enslaved Africans west</text>
   </g>
 
   <rect x="0" y="948" width="1600" height="52" fill="url(#paper)" opacity=".93"/>
-  <text class="tiny" x="46" y="980">BeHistorical instructional map. Coastlines are simplified for classroom projection; regions and routes are drawn to the standard scholarly picture of this period.</text>
+  <text class="tiny" x="46" y="980">BeHistorical instructional map. Points and shaded regions are schematic, not borders, and coastlines are simplified for classroom projection. Arrows show patterns, not single voyages.</text>
 </svg>

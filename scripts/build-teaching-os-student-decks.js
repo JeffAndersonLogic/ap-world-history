@@ -139,6 +139,51 @@ const DECKS = [
     ],
     student: 'assets/data/presentations/topic-4-3-student.js',
     backUrl: 'lesson-4-3-columbian-exchange.html#lecture'
+  },
+  {
+    key: '4.4',
+    sources: [
+      'teacher/data/topic-4-4-teaching-base.js',
+      'teacher/data/topic-4-4-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-4-4-student.js',
+    backUrl: 'lesson-4-4-maritime-empires-established.html#lecture'
+  },
+  {
+    key: '4.5',
+    sources: [
+      'teacher/data/topic-4-5-teaching-base.js',
+      'teacher/data/topic-4-5-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-4-5-student.js',
+    backUrl: 'lesson-4-5-maritime-empires-maintained.html#lecture'
+  },
+  {
+    key: '4.6',
+    sources: [
+      'teacher/data/topic-4-6-teaching-base.js',
+      'teacher/data/topic-4-6-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-4-6-student.js',
+    backUrl: 'lesson-4-6-internal-external-challenges.html#lecture'
+  },
+  {
+    key: '4.7',
+    sources: [
+      'teacher/data/topic-4-7-teaching-base.js',
+      'teacher/data/topic-4-7-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-4-7-student.js',
+    backUrl: 'lesson-4-7-changing-social-hierarchies.html#lecture'
+  },
+  {
+    key: '4.8',
+    sources: [
+      'teacher/data/topic-4-8-teaching-base.js',
+      'teacher/data/topic-4-8-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-4-8-student.js',
+    backUrl: 'lesson-4-8-continuity-and-change.html#lecture'
   }
 ];
 
@@ -328,7 +373,12 @@ function buildDeck(deck) {
     '3.4': topic31Slides,
     '4.1': topic31Slides,
     '4.2': topic31Slides,
-    '4.3': topic31Slides
+    '4.3': topic31Slides,
+    '4.4': topic31Slides,
+    '4.5': topic31Slides,
+    '4.6': topic31Slides,
+    '4.7': topic31Slides,
+    '4.8': topic31Slides
   };
   return {
     meta: {

@@ -1,6 +1,6 @@
 ---
 name: audit-site
-description: Validate structural integrity of the BeHistorical site, form config, lesson wiring, hub links, module counts, and meta.topic consistency.
+description: Validate structural integrity of the BeHistorical site, the Google Form retirement, lesson wiring, hub links, module counts, and meta.topic consistency.
 ---
 
 # BeHistorical Site Audit

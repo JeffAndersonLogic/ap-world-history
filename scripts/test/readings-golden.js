@@ -111,7 +111,50 @@ const approvedUnit3Rewrite = !fromDisk && fs.existsSync(unit3SourcePath)
 // Ho records it in Yunnan in the 1560s and 1570s, probably overland. The 4.3 entry
 // now says it came by more than one route, one through the Philippines to Fujian.
 // The fingerprint moved from 85f1913... and only that 4.3 sentence changed.
-const APPROVED_UNIT4_REWRITE_BLOB = '0394dcf1b56684dfc55d9f82085a67f1ac6705e8';
+// Topic 4.4's story-first rewrite, "Empires from the Sea", was written from the
+// 4.4 story (docs/TOPIC-4-4-STORY-DRAFT.md) on 2026-10-14 and went through three
+// independent review passes (six reviewers; findings and dispositions in
+// docs/TOPIC-4-4-CLAIM-LEDGER.md), approved under Jeff's standing rule of
+// 2026-10-12, which delegates story and reading approval to the reviewer loop.
+// The loop ended on its three-pass safety valve, every finding fixed or logged.
+// The build was taken over by a second session on 2026-10-15, which reran pass 2
+// and ran pass 3. The fingerprint moved from 0394dcf... and only the 4.4 entry
+// changed; 4.1 to 4.3 and 4.5 to 4.8 are byte-for-byte unchanged.
+// Topic 4.5's story-first rewrite, "Making Empires Pay", was written from the
+// 4.5 story (docs/TOPIC-4-5-STORY-DRAFT.md) on 2026-10-15 and went through three
+// independent review passes (six reviewers; findings and dispositions in
+// docs/TOPIC-4-5-CLAIM-LEDGER.md), approved under Jeff's standing rule of
+// 2026-10-12, which delegates story and reading approval to the reviewer loop.
+// The loop ended on its three-pass safety valve, every finding fixed or logged;
+// pass 3 was interrupted by a usage limit and resumed on 2026-10-16. The
+// fingerprint moved from 431fa88... and only the 4.5 entry changed; 4.1 to 4.4
+// and 4.6 to 4.8 are byte-for-byte unchanged.
+// Topic 4.6's story-first rewrite, "Push and Pushback", was written from the
+// 4.6 story (docs/TOPIC-4-6-STORY-DRAFT.md) on 2026-10-16 and went through three
+// independent review passes on 2026-10-17 (six reviewers; findings and
+// dispositions in docs/TOPIC-4-6-CLAIM-LEDGER.md), approved under Jeff's
+// standing rule of 2026-10-12, which delegates story and reading approval to
+// the reviewer loop. The loop ended on its three-pass safety valve, every
+// finding fixed or logged. The fingerprint moved from c72ff38... and only the
+// 4.6 entry changed; 4.1 to 4.5 and 4.7 to 4.8 are byte-for-byte unchanged.
+// Topic 4.7's story-first rewrite, "Who Belongs, Who Rises", was written from the
+// 4.7 story (docs/TOPIC-4-7-STORY-DRAFT.md) and went through three independent
+// review passes on 2026-10-18 (six reviewers; findings and dispositions in
+// docs/TOPIC-4-7-CLAIM-LEDGER.md), approved under Jeff's standing rule of
+// 2026-10-12, which delegates story and reading approval to the reviewer loop.
+// The loop ended on its three-pass safety valve, every finding fixed; pass 2
+// was interrupted by a usage limit and resumed. The fingerprint moved from
+// 2675b76... and only the 4.7 entry changed; 4.1 to 4.6 and 4.8 are
+// byte-for-byte unchanged.
+// Topic 4.8's story-first rewrite, "Follow the Trade to the People", was written
+// from the 4.8 story (docs/TOPIC-4-8-STORY-DRAFT.md) and went through three
+// independent review passes on 2026-10-18 (six reviewers; findings and
+// dispositions in docs/TOPIC-4-8-CLAIM-LEDGER.md), approved under Jeff's
+// standing rule of 2026-10-12, which delegates story and reading approval to the
+// reviewer loop. The loop ended on its three-pass safety valve, every finding
+// fixed or answered. The fingerprint moved from 03b7f51... and only the 4.8 entry
+// changed; 4.1 to 4.7 are byte-for-byte unchanged.
+const APPROVED_UNIT4_REWRITE_BLOB = 'a6badc549120af821186199888140fec13addb09';
 const unit4SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-4.js');
 const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
   && gitBlobSha(fs.readFileSync(unit4SourcePath, 'utf8')) === APPROVED_UNIT4_REWRITE_BLOB;

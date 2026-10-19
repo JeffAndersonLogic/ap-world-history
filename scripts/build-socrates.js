@@ -78,7 +78,11 @@ function moduleTable() {
   const rows = [];
   const re = /\{\s*id:\s*'([a-z0-9]+)',\s*label:[^,]*?'(Module \d+)'[^,]*,\s*title:\s*'([^']+)'/g;
   let m;
-  while ((m = re.exec(src))) rows.push({ id: m[1], label: m[2], title: m[3].replace(/\\'/g, "'") });
+  // A module can appear more than once in the source when the renderer picks
+  // between two versions of its card (BeInTheRoom: a link when the topic has a
+  // scenario, a "coming soon" dialog when it does not). It is one module, so the
+  // first row per id is the one kept.
+  while ((m = re.exec(src))) if (!rows.some(r => r.id === m[1])) rows.push({ id: m[1], label: m[2], title: m[3].replace(/\\'/g, "'") });
   if (rows.length < 8) {
     problems.push(`only ${rows.length} modules parsed out of the renderer, the module table read is broken`);
   }

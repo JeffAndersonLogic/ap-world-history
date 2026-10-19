@@ -10,9 +10,10 @@ fixed or logged in the ledger); the loop ended on its safety valve. The Unit 4 f
 (`85f1913`), the audit record is `docs/topic-audits/topic-4-3-2026-10-14.md`, and the branch waits
 on Jeff for class dates and "ship it".
 
-**Taught:** Green Wednesday 2026-11-04, Silver Thursday 2026-11-05, from Jeff's November Canvas
-calendar (2026-10-14), which marks the Green days. The same calendar makes Monday 11/2 a Green
-day, which conflicts with 4.2's schedule entries (Silver on 11/2); that is open with Jeff.
+**Taught:** Green Tuesday 2026-11-03, Silver Wednesday 2026-11-04, from Jeff's corrected November
+Canvas calendar (2026-10-14), which marks the Green days; Jeff confirmed 4.2's Green day is Friday
+10/30. (First shipped as 11/4 and 11/5 from a misreading of an earlier image; corrected the same
+day.)
 
 **Branch baseline:** `claude/topic-4-3-build`, branched from `main` at `89870be5`, which carries
 Topic 4.2's review pass 4. No other branch touches 4.3 or the shared Unit 4 files.

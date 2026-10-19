@@ -1,6 +1,6 @@
 ---
 name: build-lesson
-description: Scaffold a complete BeHistorical lesson for a given AP World topic, HTML shell, data JS, renderer config, First & 10, capture wrapper, hub wiring, and form config registration.
+description: Scaffold a complete BeHistorical lesson for a given AP World topic, HTML shell, data JS, renderer config, First & 10, capture wrapper, and hub wiring.
 ---
 
 # BeHistorical Lesson Builder
@@ -35,7 +35,7 @@ description: Scaffold a complete BeHistorical lesson for a given AP World topic,
 >   "Deep Readings"), the Socrates paste plumbing (`docs/socrates/README.md`), and, if this
 >   topic has a BeInTheRoom simulation, the theme-alignment gate in
 >   `docs/beintheroom-scenario-blueprint.md` before it can be linked.
-> - **The "form config registration" in this skill's own description no longer exists.** The
+> - **There is no form config registration any more.** The
 >   Google Form was retired 2026-08-07; see `docs/FORM-CONTRACT.md`. Do not register anything
 >   with it.
 >

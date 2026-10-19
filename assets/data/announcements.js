@@ -1612,6 +1612,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '02', title: 'First & 10 Reading' },
         { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
+        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
@@ -1640,6 +1641,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '02', title: 'First & 10 Reading' },
         { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
+        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
@@ -1668,6 +1670,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '02', title: 'First & 10 Reading' },
         { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
+        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
@@ -1696,6 +1699,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '02', title: 'First & 10 Reading' },
         { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
+        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
@@ -1724,6 +1728,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '02', title: 'First & 10 Reading' },
         { number: '05', title: 'AP Skill Builder' },
         { number: '07', title: 'Evidence Lab' },
+        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
@@ -1752,6 +1757,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { number: '02', title: 'First & 10 Reading' },
         { number: '05', title: 'AP Skill Builder' },
         { number: '07', title: 'Evidence Lab' },
+        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
       homework: [
@@ -1935,28 +1941,26 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       unit: 'Unit 4: Transoceanic Interconnections',
       topic: 'Maritime Empires Established',
       learningTargets: [
-        { text: 'I can explain how European maritime empires expanded through trading posts and territorial conquest, and how participation in expanding maritime trade increased the influence of African states such as Kongo and Asante.', label: 'Governance' },
-        { text: 'I can explain how Indian Ocean trade changed after European arrival while intra-Asian trade and Asian, African, and Middle Eastern merchants continued to flourish.', label: 'Economic Systems' },
-        { text: 'I can explain continuity and change in colonial labor systems, including the adaptation of the Incan mit’a and the growth of encomienda, hacienda, indentured servitude, and chattel slavery.', label: 'Economic Systems' }
+        { text: 'I can explain why rival European states built maritime empires and trading posts, and how Kongo and Asante grew stronger through the new trade.', label: 'Governance' },
+        { text: 'I can explain how Ming China and Tokugawa Japan limited European trade, and what changed and what continued in Indian Ocean trade after the Europeans arrived.', label: 'Economic Systems' },
+        { text: 'I can explain what continued and what changed in labor systems in the colonial Americas, from the Inca mit’a to encomienda, hacienda, indentured servitude, and chattel slavery.', label: 'Economic Systems' }
       ],
       successCriteria: [
-        { text: 'I can use specific evidence from at least one European maritime empire and one African state to explain how expanding trade networks changed state power.', label: 'Governance' },
-        { text: 'I can identify one European disruption to Indian Ocean trade and one important continuity involving intra-Asian commerce or merchants such as Gujaratis, Omanis, Swahili Arabs, or Javanese.', label: 'Economic Systems' },
-        { text: 'I can compare one existing labor system with one new or expanded colonial labor system and explain how both served agricultural or extractive economies.', label: 'Economic Systems' }
+        { text: 'I can name a political, religious, or economic rivalry behind the empires, and use a trading post or Kongo or Asante to explain one change in who held power.', label: 'Governance' },
+        { text: 'I can explain one continuity in who set the terms of trade: how China or Japan kept control of trade with Europeans, or how a merchant group such as Gujaratis, Swahili Arabs, Omanis, or Javanese kept Indian Ocean trade going even after the Portuguese began forcing ships to buy the cartaz.', label: 'Economic Systems' },
+        { text: 'I can explain one labor system that continued in a new form and one that was new, and how each supplied workers for farms or mines.', label: 'Economic Systems' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
-        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.4 module you did not complete in class.', due: 'Monday, November 9' }
+      ],
+      homeworkDue: 'Monday, November 9',
+      dueDate: '2026-11-09'
     },
     /* 2026-11-06  <-  lesson-4-4-maritime-empires-established.js */
     {
@@ -1965,28 +1969,26 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       unit: 'Unit 4: Transoceanic Interconnections',
       topic: 'Maritime Empires Established',
       learningTargets: [
-        { text: 'I can explain how European maritime empires expanded through trading posts and territorial conquest, and how participation in expanding maritime trade increased the influence of African states such as Kongo and Asante.', label: 'Governance' },
-        { text: 'I can explain how Indian Ocean trade changed after European arrival while intra-Asian trade and Asian, African, and Middle Eastern merchants continued to flourish.', label: 'Economic Systems' },
-        { text: 'I can explain continuity and change in colonial labor systems, including the adaptation of the Incan mit’a and the growth of encomienda, hacienda, indentured servitude, and chattel slavery.', label: 'Economic Systems' }
+        { text: 'I can explain why rival European states built maritime empires and trading posts, and how Kongo and Asante grew stronger through the new trade.', label: 'Governance' },
+        { text: 'I can explain how Ming China and Tokugawa Japan limited European trade, and what changed and what continued in Indian Ocean trade after the Europeans arrived.', label: 'Economic Systems' },
+        { text: 'I can explain what continued and what changed in labor systems in the colonial Americas, from the Inca mit’a to encomienda, hacienda, indentured servitude, and chattel slavery.', label: 'Economic Systems' }
       ],
       successCriteria: [
-        { text: 'I can use specific evidence from at least one European maritime empire and one African state to explain how expanding trade networks changed state power.', label: 'Governance' },
-        { text: 'I can identify one European disruption to Indian Ocean trade and one important continuity involving intra-Asian commerce or merchants such as Gujaratis, Omanis, Swahili Arabs, or Javanese.', label: 'Economic Systems' },
-        { text: 'I can compare one existing labor system with one new or expanded colonial labor system and explain how both served agricultural or extractive economies.', label: 'Economic Systems' }
+        { text: 'I can name a political, religious, or economic rivalry behind the empires, and use a trading post or Kongo or Asante to explain one change in who held power.', label: 'Governance' },
+        { text: 'I can explain one continuity in who set the terms of trade: how China or Japan kept control of trade with Europeans, or how a merchant group such as Gujaratis, Swahili Arabs, Omanis, or Javanese kept Indian Ocean trade going even after the Portuguese began forcing ships to buy the cartaz.', label: 'Economic Systems' },
+        { text: 'I can explain one labor system that continued in a new form and one that was new, and how each supplied workers for farms or mines.', label: 'Economic Systems' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
-        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.4 module you did not complete in class.', due: 'Tuesday, November 10' }
+      ],
+      homeworkDue: 'Tuesday, November 10',
+      dueDate: '2026-11-10'
     },
     /* 2026-11-09  <-  lesson-4-5-maritime-empires-maintained.js */
     {
@@ -1995,28 +1997,26 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       unit: 'Unit 4: Transoceanic Interconnections',
       topic: 'Maritime Empires Maintained and Developed',
       learningTargets: [
-        { text: 'I can explain how rulers used mercantilism, chartered monopoly companies, and economic rivalry to maintain and develop maritime empires.', label: 'Governance' },
-        { text: 'I can explain continuity and change in exchange networks, including global silver flows, chartered companies, Atlantic trade, and the continued importance of regional Afro-Eurasian markets.', label: 'Economic Systems' },
-        { text: 'I can explain political, economic, and social effects of expanding exchange, including intensified peasant/artisan labor and changes to gender and family patterns in Africa associated with the trade of enslaved persons.', label: 'Social Interactions and Organization' }
+        { text: 'I can explain how European rulers used mercantilism and chartered joint-stock companies to make their empires pay and to compete with each other, and how economic disputes led to rivalries and wars.', label: 'Governance' },
+        { text: 'I can explain what changed and what continued in networks of exchange from 1450 to 1750: silver pulled toward China, the Atlantic trading system, regional markets that kept flourishing, and peasant and artisan work that continued and grew.', label: 'Economic Systems' },
+        { text: 'I can explain how the trade in enslaved people changed families and communities in parts of Africa, and how Africans, Indigenous Americans, and Europeans all contributed to new mixed cultures in the Atlantic world.', label: 'Social Interactions and Organization' }
       ],
       successCriteria: [
-        { text: 'I can explain how mercantilist rules and joint-stock companies such as the VOC or British EIC helped states mobilize capital, protect monopolies, and compete for overseas trade and territory.', label: 'Governance' },
-        { text: 'I can trace silver and Atlantic exchange across hemispheres while also explaining one important continuity in established Afro-Eurasian regional markets or commercial practices.', label: 'Economic Systems' },
-        { text: 'I can explain how growing demand intensified peasant or artisan labor in Europe, India, or China and how the Atlantic slave trade reshaped demographic, gender, family, and cultural patterns in parts of Africa and the Americas.', label: 'Social Interactions and Organization' }
+        { text: 'I can explain how one mercantilist law or one joint-stock company, such as the VOC or the English East India Company, helped a ruler make an empire pay or compete with a rival, and name one rivalry that grew out of an economic dispute.', label: 'Governance' },
+        { text: 'I can explain one change in networks of exchange (silver pulled toward China, or the Atlantic trading system) and one continuity (regional markets with their old merchants and ways, or peasant and artisan work that continued and grew).', label: 'Economic Systems' },
+        { text: 'I can explain one way the trade in enslaved people changed families in parts of Africa, and one example of cultural mixing in the Atlantic world that Africans, Indigenous Americans, and Europeans all contributed to.', label: 'Social Interactions and Organization' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
-        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.5 module you did not complete in class.', due: 'Wednesday, November 11' }
+      ],
+      homeworkDue: 'Wednesday, November 11',
+      dueDate: '2026-11-11'
     },
     /* 2026-11-10  <-  lesson-4-5-maritime-empires-maintained.js */
     {
@@ -2025,84 +2025,78 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       unit: 'Unit 4: Transoceanic Interconnections',
       topic: 'Maritime Empires Maintained and Developed',
       learningTargets: [
-        { text: 'I can explain how rulers used mercantilism, chartered monopoly companies, and economic rivalry to maintain and develop maritime empires.', label: 'Governance' },
-        { text: 'I can explain continuity and change in exchange networks, including global silver flows, chartered companies, Atlantic trade, and the continued importance of regional Afro-Eurasian markets.', label: 'Economic Systems' },
-        { text: 'I can explain political, economic, and social effects of expanding exchange, including intensified peasant/artisan labor and changes to gender and family patterns in Africa associated with the trade of enslaved persons.', label: 'Social Interactions and Organization' }
+        { text: 'I can explain how European rulers used mercantilism and chartered joint-stock companies to make their empires pay and to compete with each other, and how economic disputes led to rivalries and wars.', label: 'Governance' },
+        { text: 'I can explain what changed and what continued in networks of exchange from 1450 to 1750: silver pulled toward China, the Atlantic trading system, regional markets that kept flourishing, and peasant and artisan work that continued and grew.', label: 'Economic Systems' },
+        { text: 'I can explain how the trade in enslaved people changed families and communities in parts of Africa, and how Africans, Indigenous Americans, and Europeans all contributed to new mixed cultures in the Atlantic world.', label: 'Social Interactions and Organization' }
       ],
       successCriteria: [
-        { text: 'I can explain how mercantilist rules and joint-stock companies such as the VOC or British EIC helped states mobilize capital, protect monopolies, and compete for overseas trade and territory.', label: 'Governance' },
-        { text: 'I can trace silver and Atlantic exchange across hemispheres while also explaining one important continuity in established Afro-Eurasian regional markets or commercial practices.', label: 'Economic Systems' },
-        { text: 'I can explain how growing demand intensified peasant or artisan labor in Europe, India, or China and how the Atlantic slave trade reshaped demographic, gender, family, and cultural patterns in parts of Africa and the Americas.', label: 'Social Interactions and Organization' }
+        { text: 'I can explain how one mercantilist law or one joint-stock company, such as the VOC or the English East India Company, helped a ruler make an empire pay or compete with a rival, and name one rivalry that grew out of an economic dispute.', label: 'Governance' },
+        { text: 'I can explain one change in networks of exchange (silver pulled toward China, or the Atlantic trading system) and one continuity (regional markets with their old merchants and ways, or peasant and artisan work that continued and grew).', label: 'Economic Systems' },
+        { text: 'I can explain one way the trade in enslaved people changed families in parts of Africa, and one example of cultural mixing in the Atlantic world that Africans, Indigenous Americans, and Europeans all contributed to.', label: 'Social Interactions and Organization' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
-        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.5 module you did not complete in class.', due: 'Thursday, November 12' }
+      ],
+      homeworkDue: 'Thursday, November 12',
+      dueDate: '2026-11-12'
     },
     /* 2026-11-11  <-  lesson-4-6-internal-external-challenges.js */
     {
       date: '2026-11-11',
       cohort: 'green',
       unit: 'Unit 4: Transoceanic Interconnections',
-      topic: 'Internal Challenges to State Power',
+      topic: 'Internal and External Challenges to State Power',
       learningTargets: [
-        { text: 'I can explain how state expansion and centralization produced local resistance, including the causes, organization, and outcomes of the Pueblo Revolt of 1680.', label: 'Governance' },
-        { text: 'I can explain how enslaved Africans resisted colonial rule through escape, autonomous maroon communities, cultural preservation, and organized revolt.', label: 'Governance' }
+        { text: 'I can explain how states\' push to expand and to centralize led different local groups to resist, using one case from Africa, Asia, or Europe and one from the Americas, and what that resistance changed.', label: 'Governance' },
+        { text: 'I can explain how enslaved people in the Americas challenged the authorities over them through organized resistance, such as maroon communities and revolts, and how the authorities responded.', label: 'Governance' }
       ],
       successCriteria: [
-        { text: 'I can explain the specific grievances behind the Pueblo Revolt, how Popé coordinated resistance, and what the revolt changed and failed to change about Spanish colonial rule.', label: 'Governance' },
-        { text: 'I can describe maroon communities as organized resistance, use Palmares as a specific example, and explain how geography, community organization, and colonial vulnerability made autonomous resistance possible.', label: 'Governance' }
+        { text: 'I can explain, for one case from Africa, Asia, or Europe (the Fronde, Razin\'s revolt, the Marathas, or Njinga) and one from the Americas (the Pueblo Revolt or Metacom\'s War), what the state pushed for, which group pushed back and how, what happened next and what the resistance changed, and one way the two cases were alike.', label: 'Governance' },
+        { text: 'I can explain how one maroon community (Palmares or the Jamaica Maroons) and one revolt (the Stono Rebellion) were organized, how the authorities responded to each, and one reason the responses differed.', label: 'Governance' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
-        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.6 module you did not complete in class.', due: 'Friday, November 13' }
+      ],
+      homeworkDue: 'Friday, November 13',
+      dueDate: '2026-11-13'
     },
     /* 2026-11-12  <-  lesson-4-6-internal-external-challenges.js */
     {
       date: '2026-11-12',
       cohort: 'silver',
       unit: 'Unit 4: Transoceanic Interconnections',
-      topic: 'Internal Challenges to State Power',
+      topic: 'Internal and External Challenges to State Power',
       learningTargets: [
-        { text: 'I can explain how state expansion and centralization produced local resistance, including the causes, organization, and outcomes of the Pueblo Revolt of 1680.', label: 'Governance' },
-        { text: 'I can explain how enslaved Africans resisted colonial rule through escape, autonomous maroon communities, cultural preservation, and organized revolt.', label: 'Governance' }
+        { text: 'I can explain how states\' push to expand and to centralize led different local groups to resist, using one case from Africa, Asia, or Europe and one from the Americas, and what that resistance changed.', label: 'Governance' },
+        { text: 'I can explain how enslaved people in the Americas challenged the authorities over them through organized resistance, such as maroon communities and revolts, and how the authorities responded.', label: 'Governance' }
       ],
       successCriteria: [
-        { text: 'I can explain the specific grievances behind the Pueblo Revolt, how Popé coordinated resistance, and what the revolt changed and failed to change about Spanish colonial rule.', label: 'Governance' },
-        { text: 'I can describe maroon communities as organized resistance, use Palmares as a specific example, and explain how geography, community organization, and colonial vulnerability made autonomous resistance possible.', label: 'Governance' }
+        { text: 'I can explain, for one case from Africa, Asia, or Europe (the Fronde, Razin\'s revolt, the Marathas, or Njinga) and one from the Americas (the Pueblo Revolt or Metacom\'s War), what the state pushed for, which group pushed back and how, what happened next and what the resistance changed, and one way the two cases were alike.', label: 'Governance' },
+        { text: 'I can explain how one maroon community (Palmares or the Jamaica Maroons) and one revolt (the Stono Rebellion) were organized, how the authorities responded to each, and one reason the responses differed.', label: 'Governance' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
-        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.6 module you did not complete in class.', due: 'Monday, November 16' }
+      ],
+      homeworkDue: 'Monday, November 16',
+      dueDate: '2026-11-16'
     },
     /* 2026-11-13  <-  lesson-4-7-changing-social-hierarchies.js */
     {
@@ -2111,28 +2105,26 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       unit: 'Unit 4: Transoceanic Interconnections',
       topic: 'Changing Social Hierarchies',
       learningTargets: [
-        { text: 'I can explain how states accommodated the ethnic and religious diversity of their subjects in some cases, and suppressed or restricted certain groups in others.', label: 'Social Interactions and Organization' },
-        { text: 'I can analyze how the casta system organized colonial society in Spanish America, including its major categories (peninsulares, creoles, mestizos, mulattos, indigenous, enslaved Africans) and their legal implications.', label: 'Social Interactions and Organization' },
-        { text: 'I can explain how the power of existing political and economic elites changed as they confronted increasingly powerful monarchs and imperial states.', label: 'Social Interactions and Organization' }
+        { text: 'I can explain why some states welcomed or made use of different religious and ethnic groups, while others pushed groups out or limited them, using the Ottoman or Mughal Empire and one other case.', label: 'Social Interactions and Organization' },
+        { text: 'I can explain how conquest and new trade created new elites, such as the Manchu banners of Qing China and the Spanish-born and creole elites of the casta system in Spanish America.', label: 'Social Interactions and Organization' },
+        { text: 'I can explain how the power of old elites, such as Ottoman timar holders, Russian boyars, or European nobles, rose or fell as rulers grew stronger and centralized power, and what stayed the same.', label: 'Social Interactions and Organization' }
       ],
       successCriteria: [
-        { text: 'I can give examples of states accommodating diversity (e.g., the Ottoman millet system, acceptance of Jews expelled from Spain and Portugal) and of states suppressing it (e.g., restrictive policies against Han Chinese in Qing China).', label: 'Social Interactions and Organization' },
-        { text: 'I can name and describe the major casta categories in Spanish colonial America, explain how casta status was determined, and give one specific example of how casta affected a person\'s legal rights or opportunities.', label: 'Social Interactions and Organization' },
-        { text: 'I can use specific examples such as Ottoman timar holders, Russian boyars, or European nobility to explain how existing elites gained, lost, or renegotiated power as states centralized.', label: 'Social Interactions and Organization' }
+        { text: 'I can explain, for one state that made room for or made use of a group (the Ottoman Empire or Akbar\'s Mughal Empire) and one state that pushed out or limited a group (Spain or Qing China), what the state did and what it gained, and, for one of them, what changed for the group and what stayed the same.', label: 'Social Interactions and Organization' },
+        { text: 'I can explain how one of the new elites (the Qing banners, or the peninsulares and creoles at the top of the casta system) was made by conquest or new trade.', label: 'Social Interactions and Organization' },
+        { text: 'I can explain how the power of one old elite (Ottoman sipahis who held timars, Russian boyars, or French nobles) changed as rulers grew stronger, naming one thing it lost and one thing it kept, and one thing about the top of society that stayed the same.', label: 'Social Interactions and Organization' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
-        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.7 module you did not complete in class.', due: 'Tuesday, November 17' }
+      ],
+      homeworkDue: 'Tuesday, November 17',
+      dueDate: '2026-11-17'
     },
     /* 2026-11-16  <-  lesson-4-7-changing-social-hierarchies.js */
     {
@@ -2141,86 +2133,82 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       unit: 'Unit 4: Transoceanic Interconnections',
       topic: 'Changing Social Hierarchies',
       learningTargets: [
-        { text: 'I can explain how states accommodated the ethnic and religious diversity of their subjects in some cases, and suppressed or restricted certain groups in others.', label: 'Social Interactions and Organization' },
-        { text: 'I can analyze how the casta system organized colonial society in Spanish America, including its major categories (peninsulares, creoles, mestizos, mulattos, indigenous, enslaved Africans) and their legal implications.', label: 'Social Interactions and Organization' },
-        { text: 'I can explain how the power of existing political and economic elites changed as they confronted increasingly powerful monarchs and imperial states.', label: 'Social Interactions and Organization' }
+        { text: 'I can explain why some states welcomed or made use of different religious and ethnic groups, while others pushed groups out or limited them, using the Ottoman or Mughal Empire and one other case.', label: 'Social Interactions and Organization' },
+        { text: 'I can explain how conquest and new trade created new elites, such as the Manchu banners of Qing China and the Spanish-born and creole elites of the casta system in Spanish America.', label: 'Social Interactions and Organization' },
+        { text: 'I can explain how the power of old elites, such as Ottoman timar holders, Russian boyars, or European nobles, rose or fell as rulers grew stronger and centralized power, and what stayed the same.', label: 'Social Interactions and Organization' }
       ],
       successCriteria: [
-        { text: 'I can give examples of states accommodating diversity (e.g., the Ottoman millet system, acceptance of Jews expelled from Spain and Portugal) and of states suppressing it (e.g., restrictive policies against Han Chinese in Qing China).', label: 'Social Interactions and Organization' },
-        { text: 'I can name and describe the major casta categories in Spanish colonial America, explain how casta status was determined, and give one specific example of how casta affected a person\'s legal rights or opportunities.', label: 'Social Interactions and Organization' },
-        { text: 'I can use specific examples such as Ottoman timar holders, Russian boyars, or European nobility to explain how existing elites gained, lost, or renegotiated power as states centralized.', label: 'Social Interactions and Organization' }
+        { text: 'I can explain, for one state that made room for or made use of a group (the Ottoman Empire or Akbar\'s Mughal Empire) and one state that pushed out or limited a group (Spain or Qing China), what the state did and what it gained, and, for one of them, what changed for the group and what stayed the same.', label: 'Social Interactions and Organization' },
+        { text: 'I can explain how one of the new elites (the Qing banners, or the peninsulares and creoles at the top of the casta system) was made by conquest or new trade.', label: 'Social Interactions and Organization' },
+        { text: 'I can explain how the power of one old elite (Ottoman sipahis who held timars, Russian boyars, or French nobles) changed as rulers grew stronger, naming one thing it lost and one thing it kept, and one thing about the top of society that stayed the same.', label: 'Social Interactions and Organization' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
-        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
-        { number: '09', title: 'BeInTheRoom' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.7 module you did not complete in class.', due: 'Wednesday, November 18' }
+      ],
+      homeworkDue: 'Wednesday, November 18',
+      dueDate: '2026-11-18'
     },
     /* 2026-11-17  <-  lesson-4-8-continuity-and-change.js */
     {
       date: '2026-11-17',
       cohort: 'green',
       unit: 'Unit 4: Transoceanic Interconnections',
-      topic: 'Continuity and Change in the Period from c. 1450 to c. 1750',
+      topic: 'Continuity and Change from 1450 to 1750',
       learningTargets: [
-        { text: 'I can explain how economic developments from c. 1450 to c. 1750 — including global silver flows, mercantilism, plantation expansion, and intensified production — changed demand for labor and redistributed wealth and power.', label: 'Economic Systems' },
-        { text: 'I can explain how those economic developments affected social structures, including coerced labor and slavery, racial and casta hierarchies, new and changing elites, and gender and family patterns.', label: 'Social Interactions and Organization' },
-        { text: 'I can make a continuity-and-change argument about social structures from c. 1450 to c. 1750 using evidence from multiple Unit 4 topics and explaining why some structures changed while others persisted.', label: 'Argumentation' }
+        { text: 'I can explain how economic developments between 1450 and 1750, such as the new demand for sugar, silver, and cloth, increased the demand for workers, and how that demand was met.', label: 'Economic Systems' },
+        { text: 'I can explain how those economic developments changed social structures: who was forced to work, who rose to the top, and how families lived, in places such as Barbados, Spanish America, and West Central Africa.', label: 'Social Interactions and Organization' },
+        { text: 'I can write a thesis and a short argument about how much social structures changed between 1450 and 1750, and what stayed the same, connecting evidence from different Unit 4 topics.', label: 'Argumentation' }
       ],
       successCriteria: [
-        { text: 'I can connect one specific economic development — such as plantation growth, silver extraction, mercantilism, or intensified textile production — to a specific change in labor demand, wealth, or political-economic power.', label: 'Economic Systems' },
-        { text: 'I can use at least two specific social consequences, such as expanded chattel slavery, encomienda/hacienda or mita labor, casta categories, changes to African gender/family patterns, or changing elite power, and explain the economic mechanism behind each.', label: 'Social Interactions and Organization' },
-        { text: 'I can identify one meaningful continuity and one meaningful change in social structure, support both with evidence from different Unit 4 topics, and explain why the balance of continuity and change occurred.', label: 'Argumentation' }
+        { text: 'I can follow one economic development (plantation sugar, Potosí silver, or the demand for cloth) to the workers it needed.', label: 'Economic Systems' },
+        { text: 'I can explain one change that development made to a social structure, such as slavery for life in Barbados, the casta ranking, or villages in West Central Africa with more women than men.', label: 'Social Interactions and Organization' },
+        { text: 'I can write a thesis that names one change and one continuity, support it with evidence from at least three Unit 4 topics, and explain how two pieces of my evidence relate.', label: 'Argumentation' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
-        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.8 module you did not complete in class.', due: 'Thursday, November 19' }
+      ],
+      homeworkDue: 'Thursday, November 19',
+      dueDate: '2026-11-19'
     },
     /* 2026-11-18  <-  lesson-4-8-continuity-and-change.js */
     {
       date: '2026-11-18',
       cohort: 'silver',
       unit: 'Unit 4: Transoceanic Interconnections',
-      topic: 'Continuity and Change in the Period from c. 1450 to c. 1750',
+      topic: 'Continuity and Change from 1450 to 1750',
       learningTargets: [
-        { text: 'I can explain how economic developments from c. 1450 to c. 1750 — including global silver flows, mercantilism, plantation expansion, and intensified production — changed demand for labor and redistributed wealth and power.', label: 'Economic Systems' },
-        { text: 'I can explain how those economic developments affected social structures, including coerced labor and slavery, racial and casta hierarchies, new and changing elites, and gender and family patterns.', label: 'Social Interactions and Organization' },
-        { text: 'I can make a continuity-and-change argument about social structures from c. 1450 to c. 1750 using evidence from multiple Unit 4 topics and explaining why some structures changed while others persisted.', label: 'Argumentation' }
+        { text: 'I can explain how economic developments between 1450 and 1750, such as the new demand for sugar, silver, and cloth, increased the demand for workers, and how that demand was met.', label: 'Economic Systems' },
+        { text: 'I can explain how those economic developments changed social structures: who was forced to work, who rose to the top, and how families lived, in places such as Barbados, Spanish America, and West Central Africa.', label: 'Social Interactions and Organization' },
+        { text: 'I can write a thesis and a short argument about how much social structures changed between 1450 and 1750, and what stayed the same, connecting evidence from different Unit 4 topics.', label: 'Argumentation' }
       ],
       successCriteria: [
-        { text: 'I can connect one specific economic development — such as plantation growth, silver extraction, mercantilism, or intensified textile production — to a specific change in labor demand, wealth, or political-economic power.', label: 'Economic Systems' },
-        { text: 'I can use at least two specific social consequences, such as expanded chattel slavery, encomienda/hacienda or mita labor, casta categories, changes to African gender/family patterns, or changing elite power, and explain the economic mechanism behind each.', label: 'Social Interactions and Organization' },
-        { text: 'I can identify one meaningful continuity and one meaningful change in social structure, support both with evidence from different Unit 4 topics, and explain why the balance of continuity and change occurred.', label: 'Argumentation' }
+        { text: 'I can follow one economic development (plantation sugar, Potosí silver, or the demand for cloth) to the workers it needed.', label: 'Economic Systems' },
+        { text: 'I can explain one change that development made to a social structure, such as slavery for life in Barbados, the casta ranking, or villages in West Central Africa with more women than men.', label: 'Social Interactions and Organization' },
+        { text: 'I can write a thesis that names one change and one continuity, support it with evidence from at least three Unit 4 topics, and explain how two pieces of my evidence relate.', label: 'Argumentation' }
       ],
       modules: [
-        { number: '01', title: 'Map & Geography Check' },
         { number: '02', title: 'First & 10 Reading' },
-        { number: '03', title: 'Content Delivery' },
-        { number: '04', title: 'BeSurreal' },
         { number: '05', title: 'AP Skill Builder' },
-        { number: '06', title: 'Checkpoint 1' },
         { number: '07', title: 'Evidence Lab' },
-        { number: '08', title: 'Primary Source' },
         { number: '10', title: 'Checkpoint 2' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 4.8 module you did not complete in class.', due: 'Friday, November 20' }
+      ],
+      homeworkDue: 'Friday, November 20',
+      dueDate: '2026-11-20'
     },
     /* 2026-11-19  <-  written by hand in the schedule */
     {

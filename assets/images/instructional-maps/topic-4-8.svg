@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="map-title map-desc">
-  <title id="map-title">The World at c. 1700: Change and Continuity</title>
-  <desc id="map-desc">Topic 4.8 instructional map for AP World History: The World at c. 1700: Change and Continuity. Topic 4.8 · Continuity and change, 1450-1750</desc>
+  <title id="map-title">Where the Trade Reached People, 1450 to 1750</title>
+  <desc id="map-desc">Topic 4.8 instructional map for AP World History: Where the Trade Reached People, 1450 to 1750. Topic 4.8 · Continuity and change from 1450 to 1750</desc>
   <defs>
     <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#FFFDF7"/><stop offset="1" stop-color="#F1E7D5"/>
@@ -67,46 +67,74 @@
   </g>
 
   <g id="highlights">
-    <ellipse cx="817.8" cy="233.3" rx="62.2" ry="44.4" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <ellipse cx="471.1" cy="400.0" rx="48.9" ry="22.2" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
-    <ellipse cx="480.0" cy="577.8" rx="26.7" ry="100.0" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <ellipse cx="1146.7" cy="377.8" rx="53.3" ry="55.6" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
-    <ellipse cx="1000.0" cy="327.8" rx="75.6" ry="50.0" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
+    <ellipse cx="535.6" cy="427.2" rx="15.1" ry="15.6" fill="#B49AA8" fill-opacity="0.85" stroke="#6B4A5A" stroke-width="4"/>
+    <ellipse cx="640.0" cy="547.2" rx="22.2" ry="24.4" fill="#B49AA8" fill-opacity="0.85" stroke="#6B4A5A" stroke-width="4"/>
+    <ellipse cx="507.8" cy="608.9" rx="22.2" ry="22.2" fill="#B49AA8" fill-opacity="0.85" stroke="#6B4A5A" stroke-width="4"/>
+    <ellipse cx="359.4" cy="392.1" rx="26.7" ry="24.4" fill="#B49AA8" fill-opacity="0.85" stroke="#6B4A5A" stroke-width="4"/>
+    <ellipse cx="793.3" cy="463.9" rx="22.2" ry="20.0" fill="#C9A46A" fill-opacity="0.85" stroke="#6B3E1F" stroke-width="4"/>
+    <ellipse cx="866.7" cy="544.4" rx="31.1" ry="33.3" fill="#C9A46A" fill-opacity="0.85" stroke="#6B3E1F" stroke-width="4"/>
+    <ellipse cx="821.8" cy="210.0" rx="19.6" ry="16.7" fill="#B6C2A2" fill-opacity="0.85" stroke="#5E6B4C" stroke-width="4"/>
+    <ellipse cx="1146.7" cy="388.9" rx="35.6" ry="38.9" fill="#B6C2A2" fill-opacity="0.85" stroke="#5E6B4C" stroke-width="4"/>
+    <ellipse cx="1335.6" cy="327.8" rx="22.2" ry="20.0" fill="#B6C2A2" fill-opacity="0.85" stroke="#5E6B4C" stroke-width="4"/>
+    <ellipse cx="1337.8" cy="418.9" rx="13.3" ry="15.6" fill="#B6C2A2" fill-opacity="0.85" stroke="#5E6B4C" stroke-width="4"/>
   </g>
   <g id="flows">
     
   </g>
   <g id="region-labels">
-    <text class="region halo" x="817.8" y="303.8" text-anchor="middle" fill="#1A1C1D"><tspan x="817.8" dy="0">NEW: ATLANTIC</tspan><tspan x="817.8" dy="25">POWERS</tspan></text>
-    <text class="region halo" x="471.1" y="448.2" text-anchor="middle" fill="#1A1C1D"><tspan x="471.1" dy="0">NEW: PLANTATION</tspan><tspan x="471.1" dy="25">ZONE</tspan></text>
-    <text class="region halo" x="480.0" y="655.8" text-anchor="middle" fill="#1A1C1D"><tspan x="480.0" dy="0">NEW: SILVER</tspan><tspan x="480.0" dy="25">ECONOMY</tspan></text>
-    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">SAME: QING CHINA</tspan></text>
-    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">SAME: MUGHAL</tspan><tspan x="1146.7" dy="25">INDIA</tspan></text>
-    <text class="region halo" x="1000.0" y="391.8" text-anchor="middle" fill="#1A1C1D"><tspan x="1000.0" dy="0">SAME: OTTOMAN</tspan><tspan x="1000.0" dy="25">POWER</tspan></text>
+    
   </g>
   <g id="places">
-    
+    <circle class="city" cx="821.8" cy="210.0" r="10"/>
+    <text class="place halo" x="841.8" y="206.0" text-anchor="start">Western Europe</text>
+    <text class="placenote halo" x="841.8" y="228.0" text-anchor="start">spinning and weaving at home</text>
+    <circle class="city" cx="359.4" cy="392.1" r="10"/>
+    <text class="place halo" x="339.4" y="388.1" text-anchor="end">Mexico City</text>
+    <text class="placenote halo" x="339.4" y="410.1" text-anchor="end">casta ranking</text>
+    <circle class="city" cx="535.6" cy="427.2" r="10"/>
+    <text class="place halo" x="555.6" y="411.2" text-anchor="start">Barbados</text>
+    <text class="placenote halo" x="555.6" y="433.2" text-anchor="start">sugar and slavery, from the 1640s</text>
+    <line class="leader" x1="640.0" y1="547.2" x2="660.0" y2="575.2"/>
+    <circle class="city" cx="640.0" cy="547.2" r="10"/>
+    <text class="place halo" x="660.0" y="591.2" text-anchor="start">Brazil</text>
+    <text class="placenote halo" x="660.0" y="613.2" text-anchor="start">sugar plantations</text>
+    <circle class="city" cx="507.8" cy="608.9" r="10"/>
+    <text class="place halo" x="487.8" y="604.9" text-anchor="end">Potosí</text>
+    <text class="placenote halo" x="487.8" y="626.9" text-anchor="end">mit’a draft to the silver mine</text>
+    <circle class="city" cx="792.9" cy="462.8" r="10"/>
+    <text class="place halo" x="772.9" y="470.8" text-anchor="end">Asante</text>
+    <text class="placenote halo" x="772.9" y="492.8" text-anchor="end">inland from the Gold Coast, 1701</text>
+    <circle class="city" cx="866.7" cy="544.4" r="10"/>
+    <text class="place halo" x="886.7" y="540.4" text-anchor="start">West Central Africa</text>
+    <text class="placenote halo" x="886.7" y="562.4" text-anchor="start">more women than men</text>
+    <circle class="city" cx="1146.7" cy="388.9" r="10"/>
+    <text class="place halo" x="1126.7" y="384.9" text-anchor="end">India</text>
+    <text class="placenote halo" x="1126.7" y="406.9" text-anchor="end">cotton weavers</text>
+    <line class="leader" x1="1335.6" y1="327.8" x2="1335.6" y2="301.8"/>
+    <circle class="city" cx="1335.6" cy="327.8" r="10"/>
+    <text class="place halo" x="1187.6" y="275.8" text-anchor="start">Jiangnan</text>
+    <text class="placenote halo" x="1187.6" y="297.8" text-anchor="start">silk families need silver for taxes</text>
+    <line class="leader" x1="1337.8" y1="418.9" x2="1337.8" y2="392.9"/>
+    <circle class="city" cx="1337.8" cy="418.9" r="10"/>
+    <text class="place halo" x="1333.8" y="366.9" text-anchor="start">Manila</text>
+    <text class="placenote halo" x="1333.8" y="388.9" text-anchor="start">silk traded for silver</text>
   </g>
 
   <g id="titleband">
     <rect x="0" y="0" width="1600" height="118" fill="url(#paper)" opacity=".93"/>
     <rect x="0" y="118" width="1600" height="5" fill="#C9A46A"/>
-    <text class="title" x="46" y="62">The World at c. 1700: Change and Continuity</text>
-    <text class="subtitle" x="48" y="97">Topic 4.8 · Continuity and change, 1450-1750</text>
+    <text class="title" x="46" y="62">Where the Trade Reached People, 1450 to 1750</text>
+    <text class="subtitle" x="48" y="97">Topic 4.8 · Continuity and change from 1450 to 1750</text>
   </g>
 
-  <g id="legend" transform="translate(46,688)">
-    <rect x="0" y="0" width="640" height="244" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
+  <g id="legend" transform="translate(46,787)">
+    <rect x="0" y="0" width="640" height="145" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
     <text class="small" x="18" y="28" font-weight="700">Map Key</text>
-      <rect x="18" y="38" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="56">Changed: Atlantic Europe now sits at the centre of world trade</text>
-      <rect x="18" y="71" width="40" height="23" rx="4" fill="#B49AA8" fill-opacity=".6" stroke="#6B4A5A" stroke-width="3"/><text class="small" x="74" y="89">Changed: plantation economies built on enslaved labor</text>
-      <rect x="18" y="104" width="40" height="23" rx="4" fill="#D2B48C" fill-opacity=".6" stroke="#8E7A55" stroke-width="3"/><text class="small" x="74" y="122">Changed: American silver ties every region together</text>
-      <rect x="18" y="137" width="40" height="23" rx="4" fill="#C08552" fill-opacity=".6" stroke="#8C5A2B" stroke-width="3"/><text class="small" x="74" y="155">Continuity: China remains the largest economy</text>
-      <rect x="18" y="170" width="40" height="23" rx="4" fill="#9FB0AE" fill-opacity=".6" stroke="#4E6260" stroke-width="3"/><text class="small" x="74" y="188">Continuity: land empires still rule most people</text>
-      <rect x="18" y="203" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="221">Continuity: the Ottomans still hold the eastern Mediterranean</text>
+      <rect x="18" y="38" width="40" height="23" rx="4" fill="#B49AA8" fill-opacity=".6" stroke="#6B4A5A" stroke-width="3"/><text class="small" x="74" y="56">Forced labor and new rankings build new societies</text>
+      <rect x="18" y="71" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="89">The trade changes families and states</text>
+      <rect x="18" y="104" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="122">Old work grows, for buyers far away</text>
   </g>
 
   <rect x="0" y="948" width="1600" height="52" fill="url(#paper)" opacity=".93"/>
-  <text class="tiny" x="46" y="980">BeHistorical instructional map. Coastlines are simplified for classroom projection; regions and routes are drawn to the standard scholarly picture of this period.</text>
+  <text class="tiny" x="46" y="980">BeHistorical instructional map. Shaded areas and dots mark regions, not borders, and coastlines are simplified for classroom projection.</text>
 </svg>

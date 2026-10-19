@@ -40,7 +40,7 @@ module.exports = {
       first10Required: [['mercantilism'], ['VOC', 'joint-stock'], ['silver'], ['regional market', 'Indian Ocean'], ['peasant', 'artisan'], ['gender', 'family'], ['syncret', 'Vodun', 'Santería']],
       deepReadingRequired: [['mercantilism'], ['silver'], ['regional'], ['peasant', 'artisan'], ['gender', 'family'], ['religion', 'syncret']],
       assessmentRequired: [['mercantilism', 'chartered company'], ['silver', 'Atlantic trade'], ['regional'], ['peasant', 'artisan', 'gender', 'family'], ['religious', 'syncret']],
-      beInTheRoom: 'beintheroom/unit-4/the-potosi-production-order.html'
+      beInTheRoom: 'beintheroom/unit-4/the-manila-silver-council.html'
     },
     '4.6': {
       slug: 'internal-external-challenges',

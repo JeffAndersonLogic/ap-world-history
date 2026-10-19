@@ -86,116 +86,148 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: The Labor of Empire',
+    title: 'First & 10: Making Empires Pay',
     embedUrl: 'first-and-10-topic-4-5-maritime-empires-maintained-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 4.5 lesson path.'
+    note: 'Read the First & 10, answer the three questions, then return to the 4.5 lesson path.'
   };
 
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'Potosí and the mita zone', detail: 'Potosí (modern Bolivia) produced roughly 60% of the world\'s silver in the 16th–17th centuries. The mita system conscripted indigenous workers from a radius of hundreds of miles. By 1600, Potosí was the largest city in the Western Hemisphere, sustained entirely by silver extraction.' },
-      { label: 'Manila Galleon route (Acapulco → Manila)', detail: 'The Manila Galleon trade (1565–1815) was the world\'s first regularly scheduled transoceanic route. Mexican silver crossed the Pacific to Manila, where it was exchanged for Chinese silk, porcelain, and spices. Chinese demand for silver, driven by the Single Whip Tax Reform (1581), pulled the entire circuit.' },
-      { label: 'Atlantic silver route (Potosí → Seville)', detail: 'Silver traveled from Potosí overland to the Pacific coast, by ship to Portobelo or Veracruz, and then across the Atlantic to Seville\'s Casa de Contratación. The Casa held a monopoly on all colonial trade and channeled silver into European money markets, funding Spanish military campaigns and triggering the global price revolution.' },
-      { label: 'Geographic takeaway', detail: 'By c. 1580, a single commodity, silver, connected three continents into a global economy. The direction of flow reflects where demand was highest: China needed silver for its tax system, creating an enormous pull across the Pacific that drove the entire network. Understanding this geography is essential for AP arguments about global trade in c. 1450–1750.' }
+      { label: 'Potosí and New Spain', detail: 'Spanish colonists began mining the silver mountain at Potosí, in the Andes, in 1545, after an Andean miner, Diego Gualpa, found silver there, and silver at Zacatecas, in New Spain (Mexico), in 1546. Spanish America became the world\'s largest source of silver.' },
+      { label: '1 and 4. The eastern road', detail: 'Silver crossed the Atlantic to Seville in fleets guarded by warships (arrow 1). Much of it moved on: Europeans had few goods Asians wanted, so Portuguese, Dutch and English merchants carried silver around Africa to pay for Asian goods (arrow 4).' },
+      { label: '2 and 3. The western road', detail: 'From 1571, Spanish galleons carried silver from Acapulco across the Pacific to Manila (arrow 2), where Chinese merchants traded silk and porcelain for it, and the silver went on into China (arrow 3).' },
+      { label: 'Ming China', detail: 'China collected most of its taxes in silver (the Single Whip reform) and mined little of its own, so silver bought more there than in Europe. That demand pulled silver from both roads.' },
+      { label: 'Europe and West Africa', detail: 'Mercantilist states such as Spain, England and the Dutch Republic used laws and chartered companies to keep wealth at home. In West Africa, Indian cotton cloth and cowrie shells from the Maldives were traded for enslaved people (arrow 5).' },
+      { label: 'Black dots', detail: 'Diu, Tondibi and Ambon are places where economic disputes turned violent: Diu (Portugal beat a fleet of Mamluk Egypt and Gujarat over the spice trade, 1509), Tondibi (Morocco beat Songhai, 1591, wanting West Africa\'s gold and salt), and Ambon (a rivalry over the spice islands: the Dutch company executed English company men, 1623). The dot at Manila marks where silver met Chinese silk, not a fight.' }
     ]
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG'
+    map:             '../assets/images/instructional-maps/topic-4-5.svg',
+    first10:         '../assets/images/topics/4-5/voc-shipyard-bakhuysen-1696.jpg',
+    contentDelivery: '../assets/images/topics/4-5/batavia-beeckman-c1662.jpg',
+    beSurreal:       '../assets/images/topics/4-5/gengzhitu-1696-mulberry.jpg',
+    skill:           '../assets/images/topics/4-5/guadalupe-arellano-1691.jpg',
+    checkpoint1:     '../assets/images/topics/4-5/potosi-8-reales-1651.jpg',
+    evidence:        '../assets/images/topics/4-5/voc-share-enkhuizen-1606.jpg',
+    source:          '../assets/images/topics/4-5/manila-vingboons-c1665.jpg',
+    beInTheRoom:     '../assets/images/topics/4-5/sangley-boxer-codex-c1590.jpg',
+    checkpoint2:     '../assets/images/topics/4-5/virgen-del-cerro-potosi.jpg'
+  };
+
+  lesson.classPresentation = {
+    title: 'Class Slides: Making Empires Pay',
+    desc: 'Follow the story: the tools rulers built to make their empires pay, the silver, goods and people those tools moved, and what that changed, and left the same, in work, families and faith.',
+    url: 'presentation-topic-4-5-student.html'
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-4/the-potosi-production-order.html',
-    desc: 'Reorganize Potosí in 1573: connect labor, mercury, royal taxation, and Atlantic-Pacific silver flows while confronting the community and environmental costs of imperial extraction.'
+    url: '../beintheroom/unit-4/the-manila-silver-council.html',
+    desc: 'Sit on Manila\'s council in 1594 and decide how to keep the silver-for-silk trade paying for the colony, when the king of Spain wants to limit it, Chinese merchants run it, and rivals want to take it.'
   };
 
   lesson.skillBuilder = {
-    label: 'Causation and comparison practice',
-    title: 'Four Moves That Maintained Maritime Empires',
-    intro: 'Topic 4.5 is broader than silver or colonial administration. Build the argument in four moves: state economic strategy, exchange-network continuity/change, social effects, and belief-system effects.',
+    label: 'Claims and Evidence in Sources practice',
+    title: 'What Does the Author Want You to Believe?',
+    intro: 'Claims and Evidence in Sources starts with one move: find the source\'s claim, the main thing the author wants the reader to believe, and say it in one sentence in your own words. Then find the evidence or reason the author gives for it. Practice first with a letter written in 1614 by Jan Pieterszoon Coen, a leader of the Dutch East India Company (VOC) in Asia, to the company\'s directors in the Netherlands.',
     steps: [
-      { label: 'Economic strategy', text: 'Explain how mercantilism and chartered companies linked private capital to state competition. Use a specific company or policy and explain how it strengthened imperial trade or territorial claims.' },
-      { label: 'Exchange networks', text: 'Trace one new transoceanic connection such as silver or Atlantic trade, then identify one regional Afro-Eurasian market or commercial practice that continued.' },
-      { label: 'Social effects', text: 'Connect expanding demand to intensified peasant/artisan labor or to demographic, gender, and family changes associated with the Atlantic slave trade.' },
-      { label: 'Belief-system effects', text: 'Compare two different religious outcomes of increased interaction: expansion of an existing religion, religious conflict, or development of a syncretic practice.' }
+      { label: 'Read the source', text: '<blockquote>"The gentlemen [the directors] ought to know well by experience that in the Indies trade must be carried on and kept up under the protection and favor of your own weapons, and that the weapons must be paid for out of the profits the trade earns, so that trade cannot be kept up without war, nor war without trade."</blockquote><small>Jan Pieterszoon Coen to the directors of the VOC, Bantam, 27 December 1614. Translated from the Dutch in H. T. Colenbrander, ed., <em>Jan Pieterszoon Coen: Bescheiden</em>, vol. 1 (1919). "The Indies" meant Asia.</small>' },
+      { label: 'The claim', text: 'In one sentence: the company cannot trade in Asia without fighting, and it cannot pay for fighting without trading.' },
+      { label: 'The reason he gives', text: 'Trade in Asia needs the protection of the company\'s own weapons, and the weapons are paid for by the trade\'s profits. Each one depends on the other.' },
+      { label: 'Why he says it', text: 'Coen was writing to the men who paid for the company. Stating the claim this strongly helped him ask them for more ships and soldiers. Knowing that does not make the claim false; it tells you why he argued it so hard.' }
     ],
-    prompt: 'Choose TWO of the four Topic 4.5 moves and explain each with specific evidence. At least one explanation must show a mechanism — how the economic or cultural process produced the effect.'
+    prompt: 'Now do it yourself with a different source. In the 1570s, a Spanish friar named Bernardino de Sahagún wrote about Tepeyac, a hill near Mexico City where, he wrote, the Nahua had once honored a goddess they called Tonantzin, "our mother," and where a church of the Virgin Mary, Our Lady of Guadalupe, now stood (translated from his Spanish; words in brackets are explanations): "[N]ow that the church of Our Lady of Guadalupe is built there, they also call her Tonantzin, taking the occasion from the preachers, who called Our Lady, the Mother of God, Tonantzin. ... It seems to be a satanic invention to cover up idolatry [worship of other gods] under the confusion of this name Tonantzin, and they now come to visit this Tonantzin from very far away, as far as they did before." In 2 to 3 sentences, state Sahagún\'s claim in your own words, name the evidence he gives for it, and explain whether that evidence is enough to prove his claim.',
+    criteria: [
+      'I stated Sahagún\'s claim in one sentence, in my own words.',
+      'I named the evidence he gives, with a word or phrase from the source.',
+      'I explained whether that evidence proves the claim, and why or why not.'
+    ]
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: Economic Strategy and Exchange Networks',
-      subtitle: 'Checks Learning Targets 1–2 and Success Criteria 1–2.',
-      cardDesc: 'Mercantilism, chartered companies, silver, Atlantic exchange, and regional-market continuity.',
+      title: 'Checkpoint 1: Rulers\' Tools and Exchange',
+      subtitle: 'Checks Learning Targets 1 and 2 and Success Criteria 1 and 2.',
+      cardDesc: 'How rulers used mercantilism and chartered companies, and what changed and kept going in networks of exchange.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
-      prompt: 'Explain how ONE mercantilist policy or chartered company helped a European state compete for overseas wealth or territory. Then explain one major change in exchange networks, such as global silver or Atlantic trade, AND one important continuity in Afro-Eurasian regional markets or commercial practices.',
+      prompt: 'Explain ONE way a European ruler used mercantilism (for example, a law like the Navigation Act) or a chartered company (the VOC or the English East India Company) to make an empire pay or to compete with a rival, and name ONE rivalry that grew out of an economic dispute and the trade it was over. Then explain ONE change and ONE continuity in networks of exchange from 1450 to 1750. Choose from: silver and China, the Atlantic trading system, regional markets in Africa and Asia, and peasant and artisan work. Say which one is the change and which is the continuity, and why.',
       responseType: 'Checkpoint 1',
-      terms: ['mercantilism', 'VOC', 'British EIC', 'chartered company', 'monopoly', 'silver', 'Potosí', 'Manila Galleon', 'Atlantic trade', 'regional markets', 'Indian Ocean'],
-      focus: ['Explain how a state economic strategy increased competitive power.', 'Explain one change in global/transoceanic exchange with specific evidence.', 'Explain one regional commercial continuity and why it persisted.']
+      terms: ['mercantilism', 'Navigation Act', 'Casa de Contratación', 'chartered company', 'joint-stock company', 'VOC', 'East India Company', 'monopoly', 'silver', 'Single Whip', 'Manila', 'China', 'Atlantic trading system', 'regional markets', 'Gujarati', 'Armenian', 'peasant', 'artisan', 'wool', 'linen', 'cotton', 'silk'],
+      focus: ['Name one tool (a mercantilist law or a chartered company) and say how it helped a ruler make money or beat a rival.', 'Name one rivalry that grew out of an economic dispute, and the trade it was over.', 'Give one change and one continuity in networks of exchange, and say why each is a change or a continuity.']
     },
     {
-      title: 'Checkpoint 2: Social and Belief-System Effects',
-      subtitle: 'Checks Learning Targets 3–4 and Success Criteria 3–4.',
-      cardDesc: 'Labor intensification, African demographic/family change, cultural mixing, religious expansion, conflict, and syncretism.',
+      title: 'Checkpoint 2: Families, Cultures, and Faith',
+      subtitle: 'Checks Learning Targets 3 and 4 and Success Criteria 3 and 4.',
+      cardDesc: 'What the slave trade did to families in Africa, how Atlantic cultures mixed, and how religions spread, clashed, and blended.',
       learningTargets: [lesson.learningTargets[2].target, lesson.learningTargets[3].target],
       successCriteria: [lesson.successCriteria[2].criteria, lesson.successCriteria[3].criteria],
-      prompt: 'Explain TWO effects of expanding global exchange from 1450 to 1750: (1) one social effect involving intensified peasant/artisan labor OR demographic, gender, or family changes associated with the trade of enslaved people; and (2) one belief-system effect involving religious expansion, conflict, or syncretism. Use a specific example for each and explain the mechanism.',
+      prompt: 'Explain ONE way the trade in enslaved people changed families or communities in parts of Africa, and why it happened. Then explain ONE example of cultural mixing in the Atlantic world, and name the groups who contributed to it. Finally, compare how religions affected societies as contact grew: pick TWO examples that show different things religions did (for example, one that spread and one that blended), and say one way they were alike and one way they were different.',
       responseType: 'Checkpoint 2',
-      terms: ['peasant labor', 'artisan labor', 'Indian cotton', 'Chinese silk', 'Atlantic slave trade', 'gender', 'family', 'cultural synthesis', 'missionaries', 'religious conflict', 'Vodun', 'Santería', 'syncretism'],
-      focus: ['Use one specific social-effect example and explain how exchange produced it.', 'Use one specific belief-system example and explain how interaction produced it.', 'Keep economic/social and religious effects distinct before connecting them.']
+      skill: 'Causation and Comparison',
+      terms: ['gender', 'family', 'women', 'men', 'polygyny', 'demographic', 'Africa', 'cultural synthesis', 'creole', 'Africans', 'Indigenous Americans', 'Europeans', 'Christianity', 'Islam', 'missionaries', 'Jesuits', 'religious conflict', 'idolatry', 'Peru', 'syncretic', 'syncretism', 'Guadalupe', 'Tonantzin', 'Kongo', 'Vodou', 'Virgin of the Mountain'],
+      focus: ['Give one change in families or communities in Africa, and name its cause.', 'Give one example of Atlantic cultural mixing, and name at least two groups who contributed.', 'Compare two things religions did (spread, conflict, or blending), with an example of each and one similarity and one difference.']
     }
   ];
 
   lesson.evidenceLab = {
-    title: 'Evidence Lab: Strategy, Exchange, Society, and Belief',
-    task: 'Choose TWO cards that illuminate different Topic 4.5 moves: economic strategy, exchange networks, social effects, or belief-system effects. Explain what each source can show and connect it to the larger process rather than treating the image as self-explanatory.',
-    prompt: 'Using two evidence cards, make one claim about how expanding maritime exchange changed or sustained a state, market, social structure, or belief system. Cite concrete details, explain the mechanism, and identify one source limitation.'
+    title: 'Evidence Lab: Tools, Flows, and What They Changed',
+    task: 'Choose TWO cards: one you can use to show something NEW in this period, and one you can use to show something that KEPT GOING. Say why each card fits.',
+    prompt: 'Make one claim about what changed and what kept going as empires made money from trade, 1450 to 1750. Then, for EACH of your two cards: (1) say what kind of source it is, who made it, and when, (2) give one detail you can see and explain how it supports your claim, and (3) name one thing the source cannot tell you.'
   };
 
   lesson.images = [
     {
-      title: 'Cerro Rico at Potosí, 1552',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cerro_de_Potos%C3%AD._Grabado_en_madera%2C_del_libro_Cr%C3%B3nica_del_Per%C3%BA%2C_1552%2C_de_Pedro_Cieza_de_Le%C3%B3n.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Cerro_de_Potos%C3%AD._Grabado_en_madera,_del_libro_Cr%C3%B3nica_del_Per%C3%BA,_1552,_de_Pedro_Cieza_de_Le%C3%B3n.jpg',
-      caption: 'Silver-production evidence. A mid-16th-century woodcut represents Cerro Rico shortly after Potosí became a major Spanish mining center.',
-      prompt: 'NOTICE how the mountain and settlement are represented. What can you INFER about the concentration of colonial investment around silver? What written evidence would you need to establish the scale and coercion of mita labor?'
+      title: 'A Receipt for a Share in the Dutch East India Company, 1606',
+      alt: 'A handwritten Dutch document opened out like a book: on the left, a printed form filled in by hand with a name and an amount; on the right, a long column of handwritten dated entries and amounts.',
+      url: '../assets/images/topics/4-5/voc-share-enkhuizen-1606.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:VOC_aandeel_9_september_1606.jpg',
+      caption: 'A receipt issued on 9 September 1606 by the Enkhuizen office of the Dutch East India Company (VOC) to Pieter Harmensz, for money he had paid in for a share. The right-hand page records payments made to him from the company\'s profits over the next decades. Westfries Archief, Hoorn.',
+      prompt: 'NOTICE the printed form on the left and the long list of dates and amounts on the right. INFER what owning a share in the company meant for an ordinary investor, and why that helped the company raise money. What can this receipt not tell you about what the company did in Asia with the money?'
     },
     {
-      title: 'Brazilian Sugar Mill and Casa Grande, 1661',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Frans_Post_-_Planta%C3%A7%C3%A3o_de_a%C3%A7%C3%BAcar%2C_1661.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Frans_Post_-_Planta%C3%A7%C3%A3o_de_a%C3%A7%C3%BAcar,_1661.jpg',
-      caption: 'Plantation-economy evidence. Frans Post\'s 1661 painting depicts a sugar mill and elite residence in colonial Brazil, where sugar production depended heavily on enslaved African labor.',
-      prompt: 'NOTICE the relationship among production space, residence, land, and workers. What can you INFER about plantation organization and wealth? How might an elite European artist sanitize or omit coercion?'
+      title: 'A Silver Coin from Potosí, 1651',
+      alt: 'A worn, roughly round silver coin with a cross dividing castles and lions, the date 1651 in the lettering around the edge, and a small hole punched near the rim.',
+      url: '../assets/images/topics/4-5/potosi-8-reales-1651.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:8_reales_de_1651_(Potos%C3%AD)_-_reverso.jpg',
+      caption: 'An eight-reales silver coin, the "piece of eight," struck at the mint of Potosí in 1651. The castles and lions are the arms of Castile and León, Spain\'s kingdoms. Münzkabinett, Staatliche Museen zu Berlin.',
+      prompt: 'NOTICE the coin\'s symbols and its rough edge. INFER why a coin struck in the Andes for the king of Spain could be spent in Manila, India, or China. What can one coin not tell you about how much silver moved, or where this one went?'
     },
     {
-      title: 'Global Silver and Manila Galleon Routes',
-      url: '../assets/images/instructional-maps/topic-4-5.svg',
-      sourceUrl: '../assets/images/instructional-maps/topic-4-5.svg',
-      caption: 'Secondary systems evidence. The BeHistorical map traces silver from the Americas toward Europe and Asia, including the Manila Galleon connection to Chinese markets.',
-      prompt: 'NOTICE where American silver travels and where major demand centers sit. What can you INFER about why a mine in the Andes mattered to merchants in Manila and China? What can a route map not show about prices or individual transactions?'
+      title: 'Women Reeling Silk, China, Printed 1696',
+      alt: 'Black-and-white print: under a thatched shed, women tend a pot of boiling cocoons and turn a reel that winds the silk thread, with a poem in Chinese above.',
+      url: '../assets/images/topics/4-5/gengzhitu-1696-reeling.jpg',
+      sourceUrl: 'https://www.metmuseum.org/art/collection/search/51081',
+      caption: 'Reeling silk, from the Pictures of Tilling and Weaving (Yuzhi Gengzhi tu), designed by the court painter Jiao Bingzhen and printed in 1696 with poems by the Kangxi emperor of the Qing dynasty. Metropolitan Museum of Art.',
+      prompt: 'NOTICE who is doing the work and where it is done. INFER why more silk could be made without building factories. This book was made for the emperor. What might it leave out about how hard the work was?'
     },
     {
-      title: 'Dutch East India Company charter, 1602',
-      label: 'Charter record · Dutch Republic, 20 March 1602',
+      title: 'A Painted Cotton Made in India for Sale Abroad, Early 1700s',
+      alt: 'A large painted cotton cloth: a flowering tree with curling branches rising from a small rocky hill, surrounded by a border of flowers.',
+      url: '../assets/images/topics/4-5/palampore-india-early-1700s.jpg',
+      sourceUrl: 'https://www.metmuseum.org/art/collection/search/446817',
+      caption: 'A bed cover (palampore) of cotton, painted and dyed by hand in the early 1700s in or near Madras (Chennai), on India\'s Coromandel coast, where cloths like this were made in quantity for buyers overseas. Metropolitan Museum of Art.',
+      prompt: 'NOTICE how much work the design must have taken. INFER why European companies bought so much Indian cotton cloth, and what that meant for the weavers and painters who made it. What can a finished cloth not tell you about how the artisans were paid?'
+    },
+    {
+      title: 'The Virgin of Guadalupe, Painted by the Arellano Family, 1691',
+      alt: 'Painting of the Virgin Mary standing on a crescent moon, hands together in prayer, in a starry blue cloak with golden rays around her, framed by flowers, with four small scenes in the corners.',
+      url: '../assets/images/topics/4-5/guadalupe-arellano-1691.jpg',
+      sourceUrl: 'https://collections.lacma.org/object/148372',
+      caption: 'A painted copy, made in Mexico in 1691 by Antonio de Arellano and his son Manuel, of the image of the Virgin of Guadalupe honored at Tepeyac, near Mexico City. The corner scenes tell the story of her appearing to a Nahua man, Juan Diego, in 1531 according to the story, which was first published in 1648. Los Angeles County Museum of Art.',
+      prompt: 'NOTICE the details of the Virgin and the four corner scenes. INFER why this image became so important to Christians in Mexico, both Nahua and Spanish. This was painted in 1691, 160 years after 1531. What can it not tell you about what happened in 1531?'
+    },
+    {
+      title: 'Who the Atlantic Slave Trade Took',
+      label: 'Modern historians\' estimate · from the Trans-Atlantic Slave Trade Database',
       sourceText: [
-        'The States General chartered the VOC with a 21-year monopoly',
-        'on Dutch trade east of the Cape of Good Hope.',
-        'The charter granted powers to build forts, keep troops,',
-        'and make treaties with local rulers.'
+        'Of every three captives carried across the Atlantic,',
+        'about two were male and one was female.',
+        'The share of males changed by region and period.'
       ],
-      caption: 'The legal instrument behind Dutch commercial power in the Indian Ocean: a monopoly, plus the means to enforce it.',
-      prompt: 'NOTICE that the monopoly and the right to keep armed forces sit in the same document. INFER how enforcement and profit depended on one another. What shipping or accounting evidence would you need before claiming the model actually paid?'
+      caption: 'This card is not an object from the time. It is an estimate made by modern historians from the records of thousands of slave-trading voyages, gathered in the Trans-Atlantic Slave Trade Database (slavevoyages.org), which ship captains, merchants and officials wrote down between the 1500s and the 1800s.',
+      prompt: 'NOTICE who the trade took most. INFER how removing more men than women could change families and farm work in the villages they came from. What can shipping records not tell you about how African families lived afterward?'
     }
   ];
 })();
