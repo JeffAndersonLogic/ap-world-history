@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" identifier="behistorical_era2_v2_manifest">
+  <organizations />
+  <resources>
+    <resource identifier="behistorical_era2_v2" type="imsqti_xmlv1p2">
+      <file href="behistorical_era2_v2/behistorical_era2_v2.xml" />
+      <dependency identifierref="behistorical_era2_v2_meta" />
+    </resource>
+    <resource identifier="behistorical_era2_v2_meta" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="behistorical_era2_v2/assessment_meta.xml">
+      <file href="behistorical_era2_v2/assessment_meta.xml" />
+    </resource>
+  </resources>
+</manifest>
