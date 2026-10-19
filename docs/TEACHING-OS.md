@@ -128,6 +128,25 @@ This exists because Topics 2.6, 2.7 and 3.1 to 3.4 shipped the button, and a sho
 
 ### The projector
 
+**Fullscreen and presenter readability are shared behavior.** The teacher cockpit gives
+Teacher Intelligence three fifths of the content width, with 18px notes and a smaller
+16:9 slide preview. Below 760px the panels stack. The preview keeps a 1280x720 drawing
+surface and scales the whole slide, so shrinking it does not crop slide text.
+
+**Full screen** fills the browser while retaining teacher notes. **Present** or **F**
+enters native browser fullscreen with slides only. Esc or the browser's own exit
+restores the teacher cockpit. A projector opened with `?mode=project` has an
+**Enter full screen** button because fullscreen requires a user gesture; exiting
+fullscreen there keeps slides only. A refused request restores the teacher view and
+shows recovery instructions. `teacher/teaching-os-shared.js` owns these controls;
+each renderer listens for `bh-presentation-change` to redraw its current slide and
+preserve the preflight hold screen.
+
+`scripts/test/teaching-os-presenter.browser.test.js` checks native fullscreen, browser
+exit, notes sizing, Run of Show, laptop and narrow layouts on every registered deck,
+plus the projector and refused requests. Negative controls detect the old visual-only
+toggle and cramped notes.
+
 **The projection window is the teacher page with `?mode=project`, and it follows the teacher through the slide number in `T.projection.storageKey`.** Every time the teacher page draws a slide it saves the number there; a projector page listens for the browser's `storage` event and draws the same slide. A teacher page that reloads mid-class resumes on the saved slide rather than dragging the projector back to slide 1.
 
 **Teacher Preflight never reaches a projected screen.** Both the projection window and Present (F) on the teacher's own screen, which is often what is mirrored to the room, draw a neutral title screen in its place, and Escape brings the cockpit back with the preflight in view.
