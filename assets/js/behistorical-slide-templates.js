@@ -1203,8 +1203,8 @@ const CSS=`
 .bht-ph-copy{position:absolute;left:700u;top:0;bottom:0;width:500u;display:flex;flex-direction:column;justify-content:center;gap:20u}
 .bht-ph-copy .bht-h{max-width:13ch}
 .bht-ph-copy .bht-sub{font-size:22u;color:#f5f0e7}
-.bht-nb{position:absolute;inset:0;display:grid;grid-template-columns:700u minmax(0,1fr)}
-.bht-nb-img{height:100%}
+.bht-nb{position:absolute;inset:0;display:grid;grid-template-columns:700u minmax(0,1fr);grid-template-rows:minmax(0,1fr)}
+.bht-nb-img{height:100%;min-height:0}
 .bht-nb-copy{background:#f5f0e7;padding:64u 70u;display:flex;flex-direction:column;justify-content:center;gap:14u}
 .bht-nb-copy .big{font:900 220u/.9 'Cinzel',Georgia,serif;color:#6b3e1f;overflow-wrap:break-word}
 .bht-nb-copy .unit{font:800 34u/1.1 'Cinzel',Georgia,serif;color:#1a1c1d}
