@@ -277,6 +277,12 @@ const MODULE_NOTES = {
   },
   '2.6': {
     '01': 'Where the plague originated, and the trade routes that carried it from Central Asia into Europe and North Africa.'
+  },
+  '3.2': {
+    '09': 'Serve on Akbar’s administrative commission at Fatehpur Sikri and decide how to rank officers, assess revenue, and assign jagirs without creating independent provincial powers. Your final <strong>Step out of the room</strong> reflection is the part that is collected.'
+  },
+  '3.3': {
+    '09': 'Enter Shah Ismail’s council after Chaldiran and rebuild Safavid authority around Twelver Shiism while the Ottoman Sunni rivalry presses in. Your final <strong>Step out of the room</strong> reflection is the part that is collected.'
   }
 };
 
