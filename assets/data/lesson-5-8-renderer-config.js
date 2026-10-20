@@ -4,6 +4,12 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
+      "code": "Unit 5: Learning Objective I",
+      "theme": "Learning Objective",
+      "text": "Explain the causes and effects of calls for changes in industrial societies from 1750 to 1900.",
+      "illustrativeExamples": []
+    },
+    {
       "code": "KC-5.1.V.D",
       "theme": "Social Interactions and Organization",
       "text": "In response to the social and economic changes brought about by industrial capitalism, some governments, organizations, and individuals promoted various types of political, social, educational, and urban reforms.",

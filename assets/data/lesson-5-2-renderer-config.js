@@ -4,6 +4,12 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
+      "code": "Unit 5: Learning Objective C",
+      "theme": "Learning Objective",
+      "text": "Explain causes and effects of the various revolutions in the period from 1750 to 1900.",
+      "illustrativeExamples": []
+    },
+    {
       "code": "KC-5.3.II.ii",
       "theme": "Governance",
       "text": "People around the world developed a new sense of commonality based on language, religion, social customs, and territory. This was sometimes harnessed by governments to foster a sense of unity.",

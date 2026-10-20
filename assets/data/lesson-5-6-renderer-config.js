@@ -4,6 +4,12 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
+      "code": "Unit 5: Learning Objective G",
+      "theme": "Learning Objective",
+      "text": "Explain the causes and effects of economic strategies of different states and empires.",
+      "illustrativeExamples": []
+    },
+    {
       "code": "KC-5.1.V.C",
       "theme": "Governance",
       "text": "As the influence of the Industrial Revolution grew, a small number of states and governments promoted their own state-sponsored visions of industrialization.",
@@ -15,24 +21,6 @@
       "code": "KC-5.2.II.A",
       "theme": "Governance",
       "text": "The expansion of U.S. and European influence in Asia led to internal reform in Japan that supported industrialization and led to the growing regional power of Japan in the Meiji Era.",
-      "illustrativeExamples": []
-    },
-    {
-      "code": "KC-5.1.VI.A",
-      "theme": "Social Interactions and Organization",
-      "text": "New social classes, including the middle class and the industrial working class, developed.",
-      "illustrativeExamples": []
-    },
-    {
-      "code": "KC-5.1.VI.B",
-      "theme": "Social Interactions and Organization",
-      "text": "While women and often children in working class families typically held wage-earning jobs to supplement their families’ income, middle-class women who did not have the same economic demands to satisfy were increasingly limited to roles in the household or roles focused on child development.",
-      "illustrativeExamples": []
-    },
-    {
-      "code": "KC-5.1.VI.C",
-      "theme": "Social Interactions and Organization",
-      "text": "The rapid urbanization that accompanied global capitalism at times led to a variety of challenges, including pollution, poverty, increased crime, public health crises, housing shortages, and insufficient infrastructure to accommodate urban growth.",
       "illustrativeExamples": []
     }
   ];

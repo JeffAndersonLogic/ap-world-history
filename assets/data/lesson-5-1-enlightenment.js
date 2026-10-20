@@ -63,6 +63,18 @@ window.BEHISTORICAL_LESSON = {
 
   collegeBoardKeyConcepts: [
     {
+      code: 'Unit 5: Learning Objective A',
+      theme: 'Learning Objective',
+      text: 'Explain the intellectual and ideological context in which revolutions swept the Atlantic world from 1750 to 1900.',
+      illustrativeExamples: []
+    },
+    {
+      code: 'Unit 5: Learning Objective B',
+      theme: 'Learning Objective',
+      text: 'Explain how the Enlightenment affected societies over time.',
+      illustrativeExamples: []
+    },
+    {
       code: 'KC-5.3.I.A',
       theme: 'Cultural Developments and Interactions',
       text: 'Enlightenment philosophies applied new ways of understanding and empiricist approaches to both the natural world and human relationships; they also reexamined the role that religion played in public life and emphasized the importance of reason. Philosophers developed new political ideas about the individual, natural rights, and the social contract.',

@@ -63,6 +63,12 @@ window.BEHISTORICAL_LESSON = {
 
   collegeBoardKeyConcepts: [
     {
+      code: 'Unit 5: Learning Objective H',
+      theme: 'Learning Objective',
+      text: 'Explain the development of economic systems, ideologies, and institutions and how they contributed to change in the period from 1750 to 1900.',
+      illustrativeExamples: []
+    },
+    {
       code: 'KC-5.1.III.A',
       theme: 'Economic Systems',
       text: 'Western European countries began abandoning mercantilism and adopting free trade policies, partly in response to the growing acceptance of Adam Smith’s theories of laissez-faire capitalism and free markets.',

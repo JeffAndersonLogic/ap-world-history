@@ -63,6 +63,12 @@ window.BEHISTORICAL_LESSON = {
 
   collegeBoardKeyConcepts: [
     {
+      code: 'Unit 5: Learning Objective D',
+      theme: 'Learning Objective',
+      text: 'Explain how environmental factors contributed to industrialization from 1750 to 1900.',
+      illustrativeExamples: []
+    },
+    {
       code: 'KC-5.1.I.A',
       theme: 'Humans and the Environment',
       text: 'A variety of factors contributed to the growth of industrial production and eventually resulted in the Industrial Revolution, including: Proximity to waterways; access to rivers and canals; Geographical distribution of coal, iron, and timber; Urbanization; Improved agricultural productivity; Legal protection of private property; Access to foreign resources; Accumulation of capital',

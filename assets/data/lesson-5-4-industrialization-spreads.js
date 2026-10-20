@@ -63,6 +63,12 @@ window.BEHISTORICAL_LESSON = {
 
   collegeBoardKeyConcepts: [
     {
+      code: 'Unit 5: Learning Objective E',
+      theme: 'Learning Objective',
+      text: 'Explain how different modes and locations of production have developed and changed over time.',
+      illustrativeExamples: []
+    },
+    {
       code: 'KC-5.1.II.B',
       theme: 'Technology and Innovation',
       text: 'The rapid development of steam-powered industrial production in European countries and the United States contributed to the increase in these regions’ share of global manufacturing during the first Industrial Revolution. While Middle Eastern and Asian countries continued to produce manufactured goods, these regions’ share in global manufacturing declined.',

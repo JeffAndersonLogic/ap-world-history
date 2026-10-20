@@ -67,6 +67,12 @@ window.BEHISTORICAL_LESSON = {
 
   collegeBoardKeyConcepts: [
     {
+      code: 'Unit 5: Learning Objective K',
+      theme: 'Learning Objective',
+      text: 'Explain the extent to which industrialization brought change from 1750 to 1900.',
+      illustrativeExamples: []
+    },
+    {
       code: "KC-5.1",
       theme: "Economic Systems",
       text: "The development of industrial capitalism led to increased standards of living for some, and to continued improvement in manufacturing methods that increased the availability, affordability, and variety of consumer goods.",

@@ -630,6 +630,8 @@ Strong answer checklist: Write a thesis with one change and one continuity. Use 
 **Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. How Enlightenment thinkers used reason to challenge traditional authority — and why their universalism had profound limits that the next century would struggle to resolve
 
 **College Board key concepts.**
+- Unit 5: Learning Objective A (Learning Objective): Explain the intellectual and ideological context in which revolutions swept the Atlantic world from 1750 to 1900.
+- Unit 5: Learning Objective B (Learning Objective): Explain how the Enlightenment affected societies over time.
 - KC-5.3.I.A (Cultural Developments and Interactions): Enlightenment philosophies applied new ways of understanding and empiricist approaches to both the natural world and human relationships; they also reexamined the role that religion played in public life and emphasized the importance of reason. Philosophers developed new political ideas about the individual, natural rights, and the social contract.
 - KC-5.3.I (Cultural Developments and Interactions): The rise and diffusion of Enlightenment thought that questioned established traditions in all areas of life often preceded revolutions and rebellions against existing governments.
 - KC-5.3.II.i (Cultural Developments and Interactions): Nationalism also became a major force shaping the historical development of states and empires.
@@ -651,6 +653,7 @@ Strong answer checklist: Describe two specific mechanisms of spread, be concrete
 **Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. How Enlightenment ideas fueled the Atlantic Revolutions — and why the Haitian Revolution was the most radical test of whether universal rights were actually universal
 
 **College Board key concepts.**
+- Unit 5: Learning Objective C (Learning Objective): Explain causes and effects of the various revolutions in the period from 1750 to 1900.
 - KC-5.3.II.ii (Governance): People around the world developed a new sense of commonality based on language, religion, social customs, and territory. This was sometimes harnessed by governments to foster a sense of unity.
 - KC-5.3 (Governance): The 18th century marked the beginning of an intense period of revolution and rebellion against existing governments, leading to the establishment of new nation-states around the world.
 - KC-5.3.IV.A.i (Governance): Discontent with monarchist and imperial rule encouraged the development of systems of government and various ideologies, including democracy and 19th-century liberalism.
@@ -673,6 +676,7 @@ Strong answer checklist: Define nationalism clearly, how is it different from lo
 **Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. Why industrialization started in Britain — and how the steam engine, factory system, and urbanization transformed labor and society from c. 1750 to c. 1900
 
 **College Board key concepts.**
+- Unit 5: Learning Objective D (Learning Objective): Explain how environmental factors contributed to industrialization from 1750 to 1900.
 - KC-5.1.I.A (Humans and the Environment): A variety of factors contributed to the growth of industrial production and eventually resulted in the Industrial Revolution, including:<br>▪ Proximity to waterways; access to rivers and canals<br>▪ Geographical distribution of coal, iron, and timber<br>▪ Urbanization<br>▪ Improved agricultural productivity<br>▪ Legal protection of private property<br>▪ Access to foreign resources<br>▪ Accumulation of capital
 - KC-5.1.I.C (Humans and the Environment): The development of the factory system concentrated production in a single location and led to an increasing degree of specialization of labor.
 
@@ -691,6 +695,7 @@ Strong answer checklist: Describe two specific changes from domestic to factory 
 **Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. How industrialization spread to Europe, North America, and Japan — and why colonial relationships ensured it did NOT spread to most of Asia, Africa, and Latin America
 
 **College Board key concepts.**
+- Unit 5: Learning Objective E (Learning Objective): Explain how different modes and locations of production have developed and changed over time.
 - KC-5.1.II.B (Technology and Innovation): The rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions’ share of global manufacturing during the first Industrial Revolution. While Middle Eastern and Asian countries continued to produce manufactured goods, these regions’ share in global manufacturing declined. Illustrative examples: Shipbuilding in India and Southeast Asia, Iron works in India, Textile production in India and Egypt.
 - KC-5.1.I.D (Technology and Innovation): As new methods of industrial production became more common in parts of northwestern Europe, they spread to other parts of Europe and the United States, Russia, and Japan.
 
@@ -709,6 +714,7 @@ Strong answer checklist: Explain the specific colonial mechanism that blocked In
 **Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. How the railroad, telegraph, Bessemer process, and other technologies transformed economic life — and how industrial demand reshaped environments and extracted resources from colonized regions
 
 **College Board key concepts.**
+- Unit 5: Learning Objective F (Learning Objective): Explain how technology shaped economic production over time.
 - KC-5.1.I.B (Technology and Innovation): The development of machines, including steam engines and the internal combustion engine, made it possible to take advantage of both existing and vast newly discovered resources of energy stored in fossil fuels, specifically coal and oil. The fossil fuels revolution greatly increased the energy available to human societies.
 - KC-5.1.I.E (Technology and Innovation): The “second industrial revolution” led to new methods in the production of steel, chemicals, electricity, and precision machinery during the second half of the 19th century.
 - KC-5.1.IV (Technology and Innovation): Railroads, steamships, and the telegraph made exploration, development, and communication possible in interior regions globally, which led to increased trade and migration.
@@ -728,11 +734,9 @@ Strong answer checklist: Describe the specific labor system, who worked, under w
 **Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. How industrialization created new social classes and ideological conflicts — and how governments, workers, and women responded to the social transformations of the industrial age
 
 **College Board key concepts.**
+- Unit 5: Learning Objective G (Learning Objective): Explain the causes and effects of economic strategies of different states and empires.
 - KC-5.1.V.C (Governance): As the influence of the Industrial Revolution grew, a small number of states and governments promoted their own state-sponsored visions of industrialization. Illustrative examples: Muhammad Ali’s development of a cotton textile industry in Egypt.
 - KC-5.2.II.A (Governance): The expansion of U.S. and European influence in Asia led to internal reform in Japan that supported industrialization and led to the growing regional power of Japan in the Meiji Era.
-- KC-5.1.VI.A (Social Interactions and Organization): New social classes, including the middle class and the industrial working class, developed.
-- KC-5.1.VI.B (Social Interactions and Organization): While women and often children in working class families typically held wage-earning jobs to supplement their families’ income, middle-class women who did not have the same economic demands to satisfy were increasingly limited to roles in the household or roles focused on child development.
-- KC-5.1.VI.C (Social Interactions and Organization): The rapid urbanization that accompanied global capitalism at times led to a variety of challenges, including pollution, poverty, increased crime, public health crises, housing shortages, and insufficient infrastructure to accommodate urban growth.
 
 **Expected evidence terms.** bourgeoisie, proletariat, surplus value, means of production, class conflict, Communist Manifesto, Das Kapital, liberalism, utopian socialism, Chartism, Reform Acts, Factory Acts, Bismarck social insurance, health insurance, old-age pension, women's suffrage, Seneca Falls, Wollstonecraft, natural rights, domestic femininity.
 
@@ -749,6 +753,7 @@ Strong answer checklist: Compare British parliamentary reform and German social 
 **Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. How industrial capitalism invented new financial institutions — corporations, investment banking, stock markets — promoted free trade ideology, and extended economic power through debt and investment rather than armies
 
 **College Board key concepts.**
+- Unit 5: Learning Objective H (Learning Objective): Explain the development of economic systems, ideologies, and institutions and how they contributed to change in the period from 1750 to 1900.
 - KC-5.1.III.A (Economic Systems): Western European countries began abandoning mercantilism and adopting free trade policies, partly in response to the growing acceptance of Adam Smith’s theories of laissez-faire capitalism and free markets.
 - KC-5.1.III.B (Economic Systems): The global nature of trade and production contributed to the proliferation of large-scale transnational businesses that relied on new practices in banking and finance. Illustrative examples: Hong Kong and Shanghai Banking Corporation (HSBC), Unilever based in England and the Netherlands and operating in British West Africa and the Belgian Congo, Stock markets, Limited-liability corporations.
 - KC-5.1 (Economic Systems): The development of industrial capitalism led to increased standards of living for some, and to continued improvement in manufacturing methods that increased the availability, affordability, and variety of consumer goods.
@@ -768,6 +773,7 @@ Strong answer checklist: Explain why Britain advocated free trade and why other 
 **Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. How workers built collective power through trade unions and strikes, abolitionists challenged slavery's structural connection to industrial capitalism, and reformers transformed education, public health, and social life in response to industrialization's dislocations
 
 **College Board key concepts.**
+- Unit 5: Learning Objective I (Learning Objective): Explain the causes and effects of calls for changes in industrial societies from 1750 to 1900.
 - KC-5.1.V.D (Social Interactions and Organization): In response to the social and economic changes brought about by industrial capitalism, some governments, organizations, and individuals promoted various types of political, social, educational, and urban reforms.
 - KC-5.1.V.A (Social Interactions and Organization): In industrialized states, many workers organized themselves, often in labor unions, to improve working conditions, limit hours, and gain higher wages. Workers’ movements and political parties emerged in different areas, promoting alternative visions of society.
 - KC-5.3.IV.A.ii (Social Interactions and Organization): Discontent with established power structures encouraged the development of various ideologies, including those espoused by Karl Marx, and the ideas of socialism and communism.
@@ -788,6 +794,7 @@ Strong answer checklist: Explain the structural connection between industrial ca
 **Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. How industrialization created a new middle class and a new industrial working class, reshaped the household and economic roles of women and children differently across classes, and produced the challenges of rapid urbanization in the period c. 1750–1900
 
 **College Board key concepts.**
+- Unit 5: Learning Objective J (Learning Objective): Explain how industrialization caused change in existing social hierarchies and standards of living.
 - KC-5.1.VI.A (Social Interactions and Organization): New social classes, including the middle class and the industrial working class, developed.
 - KC-5.1.VI.B (Social Interactions and Organization): While women and often children in working class families typically held wage-earning jobs to supplement their families’ income, middle-class women who did not have the same economic demands to satisfy were increasingly limited to roles in the household or roles focused on child development.
 - KC-5.1.VI.C (Social Interactions and Organization): The rapid urbanization that accompanied global capitalism at times led to a variety of challenges, including pollution, poverty, increased crime, public health crises, housing shortages, and insufficient infrastructure to accommodate urban growth.
@@ -807,6 +814,7 @@ Strong answer checklist: Explain two challenges of rapid urbanization AND why ra
 **Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. Arguing the extent to which industrialization transformed economic, technological, and political life between 1750 and 1900 — and what stayed the same
 
 **College Board key concepts.**
+- Unit 5: Learning Objective K (Learning Objective): Explain the extent to which industrialization brought change from 1750 to 1900.
 - KC-5.1 (Economic Systems): The development of industrial capitalism led to increased standards of living for some, and to continued improvement in manufacturing methods that increased the availability, affordability, and variety of consumer goods.
 - KC-5.1.IV (Technology and Innovation): Railroads, steamships, and the telegraph made exploration, development, and communication possible in interior regions globally, which led to increased trade and migration.
 - KC-5.3 (Governance): The 18th century marked the beginning of an intense period of revolution and rebellion against existing governments, leading to the establishment of new nation-states around the world.

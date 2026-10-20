@@ -5,6 +5,12 @@
   // ── CED key concepts, VERBATIM (config wins over data file) ──
   lesson.collegeBoardKeyConcepts = [
     {
+      "code": "Unit 5: Learning Objective J",
+      "theme": "Learning Objective",
+      "text": "Explain how industrialization caused change in existing social hierarchies and standards of living.",
+      "illustrativeExamples": []
+    },
+    {
       "code": "KC-5.1.VI.A",
       "theme": "Social Interactions and Organization",
       "text": "New social classes, including the middle class and the industrial working class, developed.",

@@ -63,6 +63,12 @@ window.BEHISTORICAL_LESSON = {
 
   collegeBoardKeyConcepts: [
     {
+      code: 'Unit 5: Learning Objective F',
+      theme: 'Learning Objective',
+      text: 'Explain how technology shaped economic production over time.',
+      illustrativeExamples: []
+    },
+    {
       code: 'KC-5.1.I.B',
       theme: 'Technology and Innovation',
       text: 'The development of machines, including steam engines and the internal combustion engine, made it possible to take advantage of both existing and vast newly discovered resources of energy stored in fossil fuels, specifically coal and oil. The fossil fuels revolution greatly increased the energy available to human societies.',
