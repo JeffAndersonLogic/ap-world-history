@@ -728,7 +728,8 @@ function splitScenes(s){
    increased influence, where the 2x2 grid of small cards was hard to read from
    the back of the room: one row per job reads left to right in large type, the
    way a student retells it. A row may carry `text` instead of tool and
-   result. The seal letter defaults to the name's first letter. */
+   result. The seal letter defaults to the name's first letter. `open: true`
+   replaces the panels and seals with open rows and larger projection text. */
 function ledger(s){
   const t=s.template||{},R=arr(t.rows).slice(0,5),n=Math.max(1,R.length);
   // The name column is 230u. Cinzel runs about .76em a letter, so the longest
@@ -736,14 +737,14 @@ function ledger(s){
   const longest=Math.max(1,...R.map(x=>String(x.name||'').length));
   const nameMax=n>=5?30:n===4?36:40;
   const nm=Math.max(20,Math.min(nameMax,Math.floor(214/(longest*.76))));
-  const tx=n>=5?25:n===4?29:32;
+  const tx=t.open?(n>=5?30:n===4?34:40):(n>=5?25:n===4?29:32);
   const body=x=>x.tool||x.result?`${x.tool?`<p class="tool">${rich(x.tool)}</p>`:''}${x.result?`<p class="res"><i aria-hidden="true">&rarr;</i> ${rich(x.result)}</p>`:''}`:`<p class="res">${rich(x.text)}</p>`;
   const rows=R.map(x=>{
     const mark=String(x.mark||String(x.name||'').trim().charAt(0)||'').slice(0,2);
-    return `<li class="bht-lg-row"><span class="seal" aria-hidden="true">${esc(mark)}</span><span class="nm" style="font-size:calc(${nm}*var(--u))">${esc(x.name)}</span><div class="tx" style="font-size:calc(${tx}*var(--u))">${body(x)}</div></li>`;
+    return `<li class="bht-lg-row">${t.open?'':`<span class="seal" aria-hidden="true">${esc(mark)}</span>`}<span class="nm" style="font-size:calc(${nm}*var(--u))">${esc(x.name)}</span><div class="tx" style="font-size:calc(${tx}*var(--u))">${body(x)}</div></li>`;
   }).join('');
   const pay=t.payoff?`<div class="bht-lg-pay"><div class="br" aria-hidden="true"></div><div class="pt">${t.payoffLabel?`<div class="bht-eb">${esc(t.payoffLabel)}</div>`:''}<p>${rich(t.payoff)}</p></div></div>`:'';
-  return board('ledger',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-lg${pay?' has-pay':''}"><ol>${rows}</ol>${pay}</div>`)+foot(s.footer),'tight'));
+  return board('ledger',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-lg${pay?' has-pay':''}${t.open?' open':''}"><ol>${rows}</ol>${pay}</div>`)+foot(s.footer),`tight${t.open?' ledger-open':''}`));
 }
 
 /* A good comparison beside a bad one, each stamped with its verdict: the
@@ -1612,6 +1613,11 @@ const CSS=`
 .bht-lg-pay .pt{position:relative;margin-left:38u;display:flex;flex-direction:column;gap:10u}
 .bht-lg-pay .pt p{font:800 30u/1.12 'Cinzel',Georgia,serif;color:var(--head);overflow-wrap:break-word}
 .bht-lg-pay .pt p b{color:var(--acc)}
+.bht-lg.open ol{row-gap:0}
+.bht-lg.open .bht-lg-row{grid-template-columns:250u minmax(0,1fr);padding:12u 0;column-gap:30u;background:none;border:0;border-radius:0;border-bottom:2u solid var(--acc)}
+.bht-lg.open .bht-lg-row:last-child{border-bottom:0}
+.bht-lg.open .bht-lg-row .nm{letter-spacing:0}
+.bht-ledger .ledger-open .bht-foot p{font-size:28u;line-height:1.3}
 
 `.replace(/(-?)(\d+(?:\.\d+)?)u\b/g,'calc($1$2*var(--u))')
  /* The sign goes inside calc(): -7u used to become -calc(7*var(--u)), which
