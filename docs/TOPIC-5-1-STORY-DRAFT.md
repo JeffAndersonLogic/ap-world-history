@@ -333,7 +333,8 @@ Named examples are evidence inside a claim. None earns its own slide unless the 
     words they rewrote.
 17. **What changed, what stayed by 1900** (the reasoning move).
 18. **Myths.** "The Enlightenment caused the revolutions"; "The Enlightenment was against religion";
-    "Rights reached everyone in 1789"; "The philosophers all agreed."
+    "Rights reached everyone in 1789." (A fourth, "the philosophers all agreed," is answered on the
+    new-answers slide's notes, because the myth template holds three rows.)
 19. **Retelling slide** (section 7).
 20. **AP synthesis:** answer both learning objectives in a sentence each, then hand off to 5.2.
 21. **Landing, over a cinematic picture.**

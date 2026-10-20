@@ -96,34 +96,34 @@ Scholarly and institutional sources, for facts about people and events:
 
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
-| Louis XIV said he ruled by divine right (bridge to 3.2) | Story | Topic 3.2 ledger and lesson; standard | VERIFIED |
-| Newton, 1687: a few laws, worked out with mathematics and tested against observation, explained planetary motion and falling bodies | Story | *Principia*, 1687; standard | VERIFIED |
-| Locke: the mind at birth is like "white paper"; knowledge comes from experience | Story | *Essay*, Book II, ch. 1, Gutenberg #10615: "white paper, void of all characters" | VERIFIED |
-| "Empiricism" defined as learning from evidence and experience | Story | Standard definition | VERIFIED |
+| Louis XIV said he ruled by divine right (bridge to 3.2) | Story, F10 §1, DR 01, LD card 1, Deck 2, 5 | Topic 3.2 ledger and lesson; standard | VERIFIED |
+| Newton, 1687: a few laws, worked out with mathematics and tested against observation, explained planetary motion and falling bodies | Story, F10 §2, DR 01, LD card 1, Deck 6 | *Principia*, 1687; standard | VERIFIED |
+| Locke: the mind at birth is like "white paper"; knowledge comes from experience | Story, F10 §2, DR 01, LD card 1, Deck 6 | *Essay*, Book II, ch. 1, Gutenberg #10615: "white paper, void of all characters" | VERIFIED |
+| "Empiricism" defined as learning from evidence and experience | Story, F10 §2, DR 01, LD card 1, Deck 6 | Standard definition | VERIFIED |
 
 ### The new political ideas (KC-5.3.I.A)
 
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
-| Locke, 1689: rights to "lives, liberties and estates" that government exists to protect | Story | §123 and §222, Gutenberg #7370 | VERIFIED |
-| "No one" can be put under another's power "without his own consent" | Story | §95 | VERIFIED |
-| A government that breaks the deal may be resisted | Story | §222: the people "are thereupon absolved from any farther obedience" | VERIFIED |
-| Rousseau, 1762: "Man is born free; and everywhere he is in chains" | Story | Cole translation, Gutenberg #46333 | VERIFIED |
-| Montesquieu, 1748: liberty safest when lawmaking, carrying out and judging are in different hands | Story | *The Spirit of the Laws*, 1748, Book XI ch. 6; standard | VERIFIED |
-| Calas, a Protestant merchant of Toulouse, tortured and executed 1762 after being wrongly accused of killing his son to stop his conversion; Voltaire campaigned three years and wrote the *Treatise on Tolerance* (1763) | Story | Musée protestant; Universalis: executed 10 March 1762, rehabilitated 9 March 1765 | VERIFIED |
-| Voltaire "one of the most famous writers in Europe" | Story | Narrowed from "the most famous" | NARROWED |
-| Many Enlightenment writers still believed in God; some were deists | Story | Standard (Voltaire, many others were deists) | VERIFIED |
+| Locke, 1689: rights to "lives, liberties and estates" that government exists to protect | Story, F10 §3, DR 02, LD card 2, Deck 7 | §123 and §222, Gutenberg #7370 | VERIFIED |
+| "No one" can be put under another's power "without his own consent" | Story, F10 §3, DR 02, LD card 2, RC Skill Builder and Evidence Lab, Deck 7, 8 | §95 | VERIFIED |
+| A government that breaks the deal may be resisted | Story, F10 §3, DR 02, LD card 2, Deck 7 | §222: the people "are thereupon absolved from any farther obedience" | VERIFIED |
+| Rousseau, 1762: "Man is born free; and everywhere he is in chains" | Story, F10 §3, DR 02, LD card 2, RC Skill Builder, Deck 7, 12 | Cole translation, Gutenberg #46333 | VERIFIED |
+| Montesquieu, 1748: liberty safest when lawmaking, carrying out and judging are in different hands | Story, F10 §3, DR 02, LD card 2, Deck 7, 12 | *The Spirit of the Laws*, 1748, Book XI ch. 6; standard | VERIFIED |
+| Calas, a Protestant merchant of Toulouse, tortured and executed 1762 after being wrongly accused of killing his son to stop his conversion; Voltaire campaigned three years and wrote the *Treatise on Tolerance* (1763) | Story, F10 §2, DR 02, LD card 2, Deck 9 | Musée protestant; Universalis: executed 10 March 1762, rehabilitated 9 March 1765 | VERIFIED |
+| Voltaire "one of the most famous writers in Europe" | Story, F10 §2, DR 02 | Narrowed from "the most famous" | NARROWED |
+| Many Enlightenment writers still believed in God; some were deists | Story, F10 §2, DR 01, LD card 2, Deck 9, 23 | Standard (Voltaire, many others were deists) | VERIFIED |
 
 ### Diffusion, and before the revolutions (KC-5.3.I)
 
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
-| Salons in Paris often run by women; London coffeehouses; letters | Story | Standard (Goodman, *The Republic of Letters*, 1994) | VERIFIED |
-| *Encyclopédie*, 1751 to 1772, 17 volumes of text and 11 of plates, Diderot and partners | Story | Britannica, "Encyclopédie" | VERIFIED |
-| The French government banned it, and it kept coming out | Story | Privilege revoked 1759; text volumes 8 to 17 issued 1765 under a false imprint (Britannica) | VERIFIED |
-| Kant, 1784: *Sapere aude*, "Dare to know," courage to use your own understanding | Story | *Berlinische Monatsschrift*, December 1784 | VERIFIED |
-| Revolutions began 1775 (American), 1789 (French), 1791 (Haitian), 1810 (Spanish America) | Story | Standard (5.2 owns them) | VERIFIED |
-| Nariño printed a Spanish translation of the 1789 declaration in 1793 or 1794, arrested 1794, later an independence leader | Story | Sources split on 1793 and 1794 for the printing; arrest 29 August 1794 | VERIFIED (date given as "1793 or 1794") |
+| Salons in Paris often run by women; London coffeehouses; letters | Story, F10 §4, DR 03, LD card 3, Deck 11 | Standard (Goodman, *The Republic of Letters*, 1994) | VERIFIED |
+| *Encyclopédie*, 1751 to 1772, 17 volumes of text and 11 of plates, Diderot and partners | Story, F10 §4, DR 03, LD card 3, Deck 11 | Britannica, "Encyclopédie" | VERIFIED |
+| The French government banned it, and it kept coming out | Story, F10 §4, DR 03, LD card 3, Deck 11 | Privilege revoked 1759; text volumes 8 to 17 issued 1765 under a false imprint (Britannica) | VERIFIED |
+| Kant, 1784: *Sapere aude*, "Dare to know," courage to use your own understanding | Story, F10 §4, DR 03, LD card 3, RC Skill Builder | *Berlinische Monatsschrift*, December 1784 | VERIFIED |
+| Revolutions began 1775 (American), 1789 (French), 1791 (Haitian), 1810 (Spanish America) | Story, F10 §4, DR 03, LD card 3, RC Checkpoint 1, Deck 12 | Standard (5.2 owns them) | VERIFIED |
+| Nariño printed a Spanish translation of the 1789 declaration in 1793 or 1794, arrested 1794, later an independence leader | Story, F10 §4, DR 03, LD card 3, RC map key, Deck 12 notes, map | Sources split on 1793 and 1794 for the printing; arrest 29 August 1794 | VERIFIED (date given as "1793 or 1794") |
 | The old lesson: "25,000 copies circulated" / "25,000 subscribers" | (old LD, RC map key) | No source found for either as stated; Darnton's quarto alone had about 8,000 subscribers | REMOVED |
 | The old lesson: Locke's passage "quoted directly in both" declarations | (old LD Evidence Lab item) | Neither declaration quotes §95 | REMOVED |
 
@@ -131,50 +131,92 @@ Scholarly and institutional sources, for facts about people and events:
 
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
-| 1789: "the principle of all sovereignty resides essentially in the nation" | Story | Avalon translation, Article 3 | VERIFIED |
+| 1789: "the principle of all sovereignty resides essentially in the nation" | Story, F10 §4, DR 03, LD card 3, Deck 13 | Avalon translation, Article 3 | VERIFIED |
 
 ### The turn
 
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
-| Locke owned shares in the Royal African Company, an English company that traded enslaved Africans | Story | NPG: "owned shares in the Royal African Company"; held in the 1670s | VERIFIED |
-| Rousseau: "A woman's education must therefore be planned in relation to man" | Story | *Emile*, Book V, Foxley translation | VERIFIED |
-| Most writers and readers did not mean the ideas for women, the enslaved or peasants | Story | A generalization with known exceptions (Condorcet argued for women's rights in 1790); "most" kept | VERIFIED (as "most") |
+| Locke owned shares in the Royal African Company, an English company that traded enslaved Africans | Story, F10 §5, DR 04, LD card 4, Deck 14 | NPG: "owned shares in the Royal African Company"; held in the 1670s | VERIFIED |
+| Rousseau: "A woman's education must therefore be planned in relation to man" | Story, F10 §5, DR 04, LD card 4, Deck 14, 19, BR | *Emile*, Book V, Foxley translation | VERIFIED |
+| Most writers and readers did not mean the ideas for women, the enslaved or peasants | Story, F10 §5, DR 04, LD card 4, Deck 14 | A generalization with known exceptions (Condorcet argued for women's rights in 1790); "most" kept | VERIFIED (as "most") |
 
 ### Reform movements (KC-5.3.I.C)
 
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
-| 1787: twelve men in London, nine of them Quakers, founded a society to end the British slave trade | Story | Society history (Hochschild); 22 May 1787 | VERIFIED |
-| Its seal: a kneeling African man in chains, "Am I not a man and a brother?"; Wedgwood made it a medallion people wore | Story | Seal resolved July 1787; Wedgwood's medallion; worn on bracelets and hairpins (Clarkson) | VERIFIED |
-| Equiano, formerly enslaved, published his life story in 1789 and spoke across Britain | Story | *The Interesting Narrative*, London 1789; his book tours | VERIFIED |
-| Britain banned the slave trade in 1807, and slavery in its empire from 1834 | Story | Abolition of the Slave Trade Act 1807; Slavery Abolition Act 1833, in force 1 August 1834 | VERIFIED |
-| France abolished slavery in its colonies in 1848 | Story | Décret du 27 avril 1848 | VERIFIED |
-| Brazil, the last country in the Americas, 1888 | Story | Lei Áurea, 13 May 1888; "last country in the Americas" in two sources | VERIFIED |
-| 1848: the Austrian Empire freed its peasants from forced labor owed to lords | Story | Law of 7 September 1848 | VERIFIED |
-| 1861: Alexander II freed more than 20 million serfs, partly fearing that serfdom would be ended "from below" | Story | Yale: some 23 million serfs; his reported 1856 words | VERIFIED |
-| 1848: France gave the vote to all adult men | Story | Decree of March 1848 | VERIFIED |
-| Britain widened voting in 1832, 1867 and 1884 | Story | The three Reform Acts; standard | VERIFIED |
+| 1787: twelve men in London, nine of them Quakers, founded a society to end the British slave trade | Story, F10 §5, DR 04, LD card 4, RC Skill Builder, Deck 15 | Society history (Hochschild); 22 May 1787 | VERIFIED |
+| Its seal: a kneeling African man in chains, "Am I not a man and a brother?"; Wedgwood made it a medallion people wore | Story, F10 §5, DR 04, LD card 4, RC Skill Builder, Deck 15 | Seal resolved July 1787; Wedgwood's medallion; worn on bracelets and hairpins (Clarkson) | VERIFIED |
+| Equiano, formerly enslaved, published his life story in 1789 and spoke across Britain | Story, F10 §5, DR 04, LD card 4, Deck 15 | *The Interesting Narrative*, London 1789; his book tours | VERIFIED |
+| Britain banned the slave trade in 1807, and slavery in its empire from 1834 | Story, F10 §5, DR 04, LD card 4, Deck 15 | Abolition of the Slave Trade Act 1807; Slavery Abolition Act 1833, in force 1 August 1834 | VERIFIED |
+| France abolished slavery in its colonies in 1848 | Story, F10 §5, DR 04, LD card 4, Deck 15 | Décret du 27 avril 1848 | VERIFIED |
+| Brazil, the last country in the Americas, 1888 | Story, F10 §5, DR 04, LD card 4, RC map key, Deck 15, 23, map | Lei Áurea, 13 May 1888; "last country in the Americas" in two sources | VERIFIED |
+| 1848: the Austrian Empire freed its peasants from forced labor owed to lords | Story, F10 §5, DR 04, LD card 4, RC map key, Deck 16, map | Law of 7 September 1848 | VERIFIED |
+| 1861: Alexander II freed more than 20 million serfs, partly fearing that serfdom would be ended "from below" | Story, F10 §5, DR 04, LD card 4, Deck 16 | Yale: some 23 million serfs; his reported 1856 words | VERIFIED |
+| 1848: France gave the vote to all adult men | Story, F10 §5, DR 04, LD card 4, Deck 16 | Decree of March 1848 | VERIFIED |
+| Britain widened voting in 1832, 1867 and 1884 | Story, F10 §5, DR 04, LD card 4, Deck 16 | The three Reform Acts; standard | VERIFIED |
 
 ### Women's demands (KC-5.3.IV.B)
 
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
-| De Gouges, 1791, rewrote France's declaration; first article "Woman is born free and remains equal to man in rights" | Story | French text, article premier; translation literal | VERIFIED |
-| The revolutionary government executed her in 1793 | Story | 3 November 1793, Revolutionary Tribunal | VERIFIED |
-| Wollstonecraft, 1792: "I do not wish them to have power over men; but over themselves," answering Rousseau | Story | Ch. 4, Gutenberg #3420 | VERIFIED |
-| Stanton and Mott, 1840 London antislavery convention, refused seats as delegates because they were women | Story | NPS; the convention voted to exclude women delegates | VERIFIED |
-| Mott was a Quaker minister | Story | NPS; Battlefields biography | VERIFIED |
-| Seneca Falls, July 1848; the Declaration of Sentiments: "all men and women are created equal" | Story | NPS text | VERIFIED |
-| It demanded the vote; that was the only resolution not passed unanimously; 100 signed | Story | Britannica; NPS | VERIFIED |
+| De Gouges, 1791, rewrote France's declaration; first article "Woman is born free and remains equal to man in rights" | Story, F10 §6 and Q2, DR 05, LD card 4, Deck 17, 20 | French text, article premier; translation literal | VERIFIED |
+| The revolutionary government executed her in 1793 | Story, F10 §6, DR 05, LD card 4, Deck 17 | 3 November 1793, Revolutionary Tribunal | VERIFIED |
+| Wollstonecraft, 1792: "I do not wish them to have power over men; but over themselves," answering Rousseau | Story, F10 §6, DR 05, LD card 4, RC Evidence Lab, Deck 17, 19 | Ch. 4, Gutenberg #3420 | VERIFIED |
+| Stanton and Mott, 1840 London antislavery convention, refused seats as delegates because they were women | Story, F10 §6, DR 05, Deck 17 | NPS; the convention voted to exclude women delegates | VERIFIED |
+| Mott was a Quaker minister | Story, F10 §6, DR 05, LD card 4, PS, BS | NPS; Battlefields biography | VERIFIED |
+| Seneca Falls, July 1848; the Declaration of Sentiments: "all men and women are created equal" | Story, F10 §6, DR 05, LD card 4, PS, BS, RC Evidence Lab, Deck 18, map | NPS text | VERIFIED |
+| It demanded the vote; that was the only resolution not passed unanimously; 100 signed | Story, F10 §6, DR 05, PS, BS, Deck 18 | Britannica; NPS | VERIFIED |
 
 ### What stayed
 
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
-| By 1900 kings and emperors still ruled most of Europe | Story | Standard (France, Switzerland the main republics) | VERIFIED |
-| Other forms of forced labor went on in many places after slavery ended in the Americas | Story | Standard (indentured and colonial forced labor; Unit 6) | VERIFIED |
-| Women could vote in national elections almost nowhere by 1900; New Zealand 1893 the first self-governing country | Story | NZHistory | VERIFIED |
+| By 1900 kings and emperors still ruled most of Europe | Story, F10 §6, DR 05, LD card 4, Deck 22, 24 | Standard (France, Switzerland the main republics) | VERIFIED |
+| Other forms of forced labor went on in many places after slavery ended in the Americas | Story, F10 §6, DR 04, 05, LD card 4, Deck 22 | Standard (indentured and colonial forced labor; Unit 6) | VERIFIED |
+| Women could vote in national elections almost nowhere by 1900; New Zealand 1893 the first self-governing country | Story, F10 §6, DR 05, LD card 4, Deck 22, 23 | NZHistory | VERIFIED |
+
+### Claims added on later surfaces (deck notes, lesson modules, deep reading, BeInTheRoom)
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| Protestants in France lost their legal toleration in 1685 | Deck 5 notes | The revocation of the Edict of Nantes, 1685; standard | VERIFIED |
+| Valentine Green's mezzotint, London, 1769, after Joseph Wright of Derby's painting of 1768 (National Gallery, London) | Deck 3, LD card 1, RC Evidence Lab, DR 01 | Met 49.95.14 (Valentine Green, 1769, mezzotint); Princeton University Art Museum: the painting shown at the Society of Artists in 1768 and in the National Gallery, London, since 1863 | VERIFIED |
+| Science lectures and experiments were popular entertainment for paying audiences | Deck 3 notes, RC Evidence Lab, DR 01 | Standard for the traveling lecturers of the 1700s; kept general | VERIFIED |
+| Encyclopédie second edition printed at Lucca, Italy, 1758, with added notes by Ottaviano Diodati | Deck 11, LD card 3, RC Evidence Lab, DR 03 | Met record 716639 (Lucca, 1758 to 1771); the title page itself: "Seconde Edition enrichie de notes, & donnée au Public par M. Octavien Diodati" | VERIFIED |
+| A plate of a fan-maker's workshop, "Éventailliste, Monture des éventails," plate III, from the picture volumes, Paris, 1762 to 1772 | Deck 11, LD card 2 | Met record 707455 (Recueil de planches, Paris, 1762 to 72); the plate's own caption | VERIFIED |
+| Banned 1759; the Pope condemned it; the last ten text volumes appeared together in 1765 | Deck 11 notes, DR 03 | Britannica, "Encyclopédie": privilege revoked 1759, condemned by Clement XIII 1759, volumes 8 to 17 issued 1765 | VERIFIED |
+| Abolitionist jug, pearlware, about 1820, printed with a seated African man holding a chain, a ship, and "AM NOT I A MAN AND A BROTHER" | Deck 15, RC Evidence Lab | Met record 841224 (ca. 1820, pearlware, transfer-printed); the picture read by eye. No place of manufacture is given by the Met, so none is stated | VERIFIED |
+| Jennings's study for Liberty Displaying the Arts and Sciences, about 1791 to 1792; offered to the Library Company of Philadelphia, whose directors were mostly Quakers and abolitionists; the first known painting by an American-born artist about slavery and its abolition | Deck 28, LD card 4, RC module art | Met record 2016.50 and its catalogue text, as quoted in search results; the Library Company's 2022 description; Smith, Winterthur Portfolio (1965) | VERIFIED ("offered", not "commissioned") |
+| Slavery was still legal in most American states when Jennings painted it | Deck 28 notes | In 1792 slavery was legal in most US states; Vermont, Pennsylvania (gradual, 1780), Massachusetts and a few others had begun to end it | VERIFIED |
+| Calas's son had most likely taken his own life; Calas broken on the wheel, 10 March 1762 | Deck 9 notes, DR 02 | Musée protestant | VERIFIED |
+| Britain: even after 1884, roughly four in ten adult men could not vote | Deck 16 notes | Standard estimate, about 60 percent of adult men enfranchised after 1884 | VERIFIED |
+| Kudlich's motion of 26 July 1848 became law on 7 September 1848; landlords compensated for some dues | Deck 16 notes | Habsburger.net, "The peasant is free" | VERIFIED |
+| Freed Russian serfs had to pay for land over decades | Deck 16 notes, DR 04 | Redemption payments over 49 years (standard; Emancipation reform sources) | VERIFIED |
+| France abolished slavery in 1794, brought it back in 1802, ended it in 1848 | DR 04, Deck 23 notes | Law of 4 February 1794; law of 20 May 1802; decree of 27 April 1848 | VERIFIED |
+| Quakers had come to see slavery as a sin | DR 04, Deck 15 notes | Standard (Philadelphia Yearly Meeting, 1758 and 1776; London Yearly Meeting) | VERIFIED |
+| About 300 people attended Seneca Falls | PS intro | NPS: "an estimated three hundred women and men attended" | VERIFIED |
+| The declaration was drafted by Stanton with members of the M'Clintock family | PS intro, DR 05, Deck 18 notes | NPS: "drafted by Elizabeth Cady Stanton and the M'Clintock family" | NARROWED (from "drafted by Stanton") |
+| Frederick Douglass spoke for the vote resolution | BS, Deck 18 notes | NPS; Britannica | VERIFIED |
+| Mott and others worried the vote demand went too far | BS | Britannica: Mott and others feared it would weaken support | NARROWED (the popular "you will make us ridiculous" line is not used) |
+| A married woman was "civilly dead" in law | DR 05, Deck 17 notes | Declaration of Sentiments, NPS text: "He has made her, if married, in the eye of the law, civilly dead" | VERIFIED |
+| The women at Seneca Falls were mostly white and middle class | DR 05 | Standard (NPS lists of signers) | VERIFIED |
+| Condorcet argued for women's rights in 1790 | DR 04, Deck 14 notes | "On the Admission of Women to the Rights of Citizenship," 1790 | VERIFIED |
+| Holbach was an atheist; Wilberforce an evangelical | Deck 23 notes | Standard | VERIFIED |
+| The Society of the Friends of the Blacks was founded in Paris in February 1788 | BR premise | First session 19 February 1788 (Universalis; Europe 1) | VERIFIED |
+| Locke's shares were probably partly payment for his work for the Carolina proprietors | Deck 14 notes | Glausser (1990); the Nazarbayev University article on Locke's RAC stock | VERIFIED (as "probably partly") |
+| New Zealand's Electoral Act signed 19 September 1893; Britain fully 1928, the United States 1920 | Deck 22 notes | NZHistory | VERIFIED |
+| By 1900 France and Switzerland were the main republics in Europe | Deck 22 notes | Standard (also San Marino, a microstate) | VERIFIED |
+
+### Removed with the old surfaces
+
+| Claim | Where it was | Why | Status |
+|---|---|---|---|
+| "Virtually every Enlightenment thinker except Wollstonecraft assumed that women were naturally less rational" | old F10 §4 | A superlative; Condorcet and others argued otherwise | REMOVED |
+| Colonial subjects: "Most concluded ... that they were not yet ready for self-governance" | old F10 §4 | A sweeping claim about all Enlightenment thinkers, not supported as stated | REMOVED |
+| "Thirty-five-volume" Encyclopédie; Hume's, Kant's and Voltaire's passages on race; the Carolina constitutions | old DR | Not needed by the story; the 35 counts later supplements | REMOVED |
+| The old BeSurreal's 1762 visitor citing "the French Declaration" | old BS | The declaration was written in 1789 | REMOVED |
+| The Skill Builder's Seven Years' War causation of the revolutions; "the Estates-General ... the first time in 175 years" | old RC Skill Builder | 5.2's material; the skill is now 3.A | REMOVED |
 
 ## Review findings
 

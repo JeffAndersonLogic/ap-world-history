@@ -503,7 +503,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'Text from the National Park Service, Women\'s Rights National Historical Park. The 1776 sentence reads "that all men are created equal." Elizabeth Cady Stanton drafted the declaration, modeled on the Declaration of Independence.',
+          'Text from the National Park Service, Women\'s Rights National Historical Park. The 1776 sentence reads "that all men are created equal." Elizabeth Cady Stanton drafted the declaration with members of the M\'Clintock family (National Park Service), modeled on the Declaration of Independence.',
           'It demanded the vote: "He has never permitted her to exercise her inalienable right to the elective franchise." The resolution for the vote was the only one not passed unanimously (Britannica); Frederick Douglass spoke for it. One hundred people signed, 68 women and 32 men (NPS; Britannica).',
           'Notice "endowed by their Creator": the claim rests on faith as well as reason, like the reform movements on slide 15.'
         ],

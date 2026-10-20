@@ -215,7 +215,7 @@ window.BEHISTORICAL_LESSON = {
 
   primarySource: {
     title: "Primary Source: The Declaration of Sentiments, Seneca Falls, 1848",
-    intro: "In July 1848, about 300 people met in Seneca Falls, New York, for a women's rights convention organized by Elizabeth Cady Stanton and Lucretia Mott, a Quaker minister. Stanton drafted a Declaration of Sentiments that copied the form of the Declaration of Independence of 1776, and 100 women and men signed it. These are three short passages. (\"Self-evident\" means so clearly true it needs no proof; \"inalienable\" means it cannot be taken away; \"the elective franchise\" means the right to vote.)",
+    intro: "In July 1848, about 300 people met in Seneca Falls, New York, for a women's rights convention organized by Elizabeth Cady Stanton and Lucretia Mott, a Quaker minister. Stanton, with members of the M'Clintock family, drafted a Declaration of Sentiments that copied the form of the Declaration of Independence of 1776, and 100 women and men signed it. These are three short passages. (\"Self-evident\" means so clearly true it needs no proof; \"inalienable\" means it cannot be taken away; \"the elective franchise\" means the right to vote.)",
     text: [
       "We hold these truths to be self-evident; that all men and women are created equal; that they are endowed by their Creator with certain inalienable rights; that among these are life, liberty, and the pursuit of happiness.",
       "He has never permitted her to exercise her inalienable right to the elective franchise.",
