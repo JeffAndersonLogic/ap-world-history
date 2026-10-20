@@ -6790,7 +6790,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
             "Explain how \"the people\" came to mean the nation."
           ],
           "learningTargets": [
-            "I can explain the new ideas Enlightenment thinkers used to question where rulers got their power: reason and evidence, natural rights, the social contract, limits on power, and religious toleration.",
+            "I can explain the new way of thinking Enlightenment writers used to question where rulers got their power, and at least one of their new ideas: natural rights, the social contract, or religious toleration.",
             "I can explain how Enlightenment ideas spread and came before the revolutions in the Atlantic world, and how the idea that a state belongs to its people became loyalty to the nation."
           ],
           "successCriteria": [

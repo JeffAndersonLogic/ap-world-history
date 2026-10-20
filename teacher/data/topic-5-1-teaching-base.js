@@ -203,7 +203,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'The method', text: 'Test claims with reason and evidence', key: true },
           { label: 'The question', text: 'Can reason explain people, and how they should be governed?' }
         ],
-        links: ['then', 'so', 'until']
+        links: ['then', 'so', 'led to']
       },
       notes: {
         minutes: 2,
@@ -379,7 +379,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: '1789', text: '"The principle of all sovereignty resides essentially in the nation"', key: true },
           { label: 'The 1800s', text: 'Nationalism shapes states and empires' }
         ],
-        links: ['raises', 'answered by', 'and then']
+        links: ['raises', 'answer', 'and then']
       },
       notes: {
         minutes: 2,
@@ -402,7 +402,7 @@ window.BEHISTORICAL_TEACHING = {
         evidence: [
           { text: 'Locke owned shares in the Royal African Company, which traded enslaved Africans.', source: '1670s' },
           { text: '"A woman\'s education must therefore be planned in relation to man."', source: 'Rousseau, Emile, 1762' },
-          { text: 'Most writers and readers did not mean the ideas for women, the enslaved or peasants.', source: 'Topic 5.1' }
+          { text: 'France\'s 1789 declaration said "Men are born and remain free and equal in rights," and France did not give women the vote.', source: 'France, 1789' }
         ],
         reasoning: 'But the words were written down, so the people left out could use them.'
       },
@@ -531,7 +531,7 @@ window.BEHISTORICAL_TEACHING = {
         ],
         ask: 'Why is copying the quotation not enough?',
         listenFor: 'Describing a claim means saying what it means and what it argues against, in your own words.',
-        ap: '3.A, modeled. The Skill Builder practices it on three new sources.'
+        ap: '3.A, modeled. The Skill Builder practices it on two of three new sources.'
       }
     },
     {
@@ -565,7 +565,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 8,
         land: [
           'The Skill Builder practices the CED\'s suggested skill, 3.A.',
-          'It models the move on Montesquieu (Book XI, chapter 6), then gives students three new short sources: Rousseau\'s opening line, Kant\'s motto, and the abolitionists\' motto. For each they identify the claim, describe it in their own words, and say what it argues against.',
+          'It models the move on Montesquieu (Book XI, chapter 6), then gives students three new short sources: Rousseau\'s opening line, Kant\'s motto, and the abolitionists\' motto. Students choose two of the three; for each they identify the claim, describe it in their own words, and say what it argues against.',
           'Strong answers: Rousseau claims people are born free but held down by unjust governments and customs, against the idea that rulers\' power is natural; Kant claims people should think for themselves instead of obeying authorities, against relying on priests, books and rulers to think for you; the motto claims an enslaved African is a full human being and a brother, against treating people as property.'
         ],
         ask: 'After students have written: which claim was hardest to say in your own words, and why?',
@@ -626,7 +626,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'The new answer', text: 'Reason, natural rights, consent; the people become the nation' },
           { label: 'Over time', text: 'Abolition, the end of serfdom, wider voting, women\'s demands', key: true }
         ],
-        links: ['challenged by', 'answered with', 'pressed further by']
+        links: ['meets', 'answered', 'pressed']
       },
       notes: {
         minutes: 4,

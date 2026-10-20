@@ -105,7 +105,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "links": [
           "then",
           "so",
-          "until"
+          "led to"
         ]
       }
     },
@@ -339,7 +339,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         ],
         "links": [
           "raises",
-          "answered by",
+          "answer",
           "and then"
         ]
       }
@@ -361,8 +361,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "source": "Rousseau, Emile, 1762"
           },
           {
-            "text": "Most writers and readers did not mean the ideas for women, the enslaved or peasants.",
-            "source": "Topic 5.1"
+            "text": "France's 1789 declaration said \"Men are born and remain free and equal in rights,\" and France did not give women the vote.",
+            "source": "France, 1789"
           }
         ],
         "reasoning": "But the words were written down, so the people left out could use them."
@@ -609,9 +609,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
           }
         ],
         "links": [
-          "challenged by",
-          "answered with",
-          "pressed further by"
+          "meets",
+          "answered",
+          "pressed"
         ]
       }
     },

@@ -6,6 +6,8 @@ is on `main` (`85cf5f9`), and 5.1 is the first topic in Unit 5. The Phase 9 revi
 story against the CED source file and the scholarship; the record of what they found is in
 `docs/TOPIC-5-1-CLAIM-LEDGER.md`, under "Review findings".
 
+**Finished (2026-10-20):** Phases 0 to 9 are built and pushed on `claude/build-5-1-unit-4-methods-q7feeb`. The reviewer loop ran three passes (six reviewers; 21, 15 and 16 distinct supported defects, every one fixed or answered with its reason) and stopped on the three-pass safety valve; findings and dispositions are in `docs/TOPIC-5-1-CLAIM-LEDGER.md`. The Unit 5 reading fingerprint was added, the audit record is `docs/topic-audits/topic-5-1-2026-10-20.md`, and nothing reaches students until Jeff says "ship it".
+
 **Taught:** no dates yet. The schedule ends with the Era 3 Exam (Green Monday 2026-11-23, Silver
 Tuesday 2026-11-24), and neither the schedule nor the Notion task names a Unit 5 class day. The
 build adds no schedule entries; the dates are the one open item in the report.

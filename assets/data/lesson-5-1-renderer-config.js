@@ -95,7 +95,7 @@
   lesson.skillBuilder = {
     label: 'Claims and evidence practice',
     title: 'Find the Claim',
-    intro: 'A claim is what a writer wants you to believe. The Enlightenment was an age of arguments, so its sources are full of claims. To identify a claim, find the sentence that says what the writer wants you to believe. To describe it, say it in your own words, and say what older idea it argues against. Watch the move on one source, then try it on three new ones.',
+    intro: 'A claim is what a writer wants you to believe. The Enlightenment was an age of arguments, so its sources are full of claims. To identify a claim, find the sentence that says what the writer wants you to believe. To describe it, say it in your own words, and say what older idea it argues against. Watch the move on one source, then try it on two of three new ones.',
     steps: [
       { label: 'Read the source', text: 'Montesquieu, The Spirit of the Laws, 1748, in an English translation of 1750: "When the legislative and executive powers are united in the same person, or in the same body of magistrates, there can be no liberty." (The legislative power makes the laws; the executive power carries them out; magistrates are officials.)' },
       { label: 'Identify the claim', text: 'Find what Montesquieu wants you to believe. Here it is the end of the sentence: when one person or group both makes and carries out the laws, people are not free.' },
@@ -167,7 +167,7 @@
       url: '../assets/images/topics/5-1/abolitionist-jug-c1820.jpg',
       sourceUrl: 'https://www.metmuseum.org/art/collection/search/841224',
       caption: 'A pottery jug made about 1820, printed with a man of African descent holding a chain and a version of the motto ("Am I not a man and a brother?") first used in 1787 by the London society to end the British slave trade. By about 1820 the trade had been banned, and campaigners were working to end slavery itself. Abolitionists put the motto on everyday objects people used at home. Metropolitan Museum of Art.',
-      prompt: 'NOTICE the words and the picture. INFER what claim the jug makes, and why someone would put it on a jug instead of in a book. The people who made and bought objects like this were mostly white Britons. What can the jug not tell you about what enslaved people themselves thought or did?'
+      prompt: 'NOTICE the words and the picture. INFER what claim the jug makes, and why someone would put it on a jug instead of in a book. Objects like this were made and bought by free people, and no enslaved person chose this picture. What can the jug not tell you about what enslaved people themselves thought or did?'
     },
     {
       title: 'John Locke on Consent, 1689',

@@ -296,3 +296,42 @@ packet.
 misalignment or ownership finding; the history findings were narrowings (a "first" without "all", an
 organizer count, a sequence inside one day) and one source-to-claim error in a teaching example. Pass 3
 runs from a fresh packet.
+
+### Pass 3, reviewer 1 (page truth, readability, CED, ownership; cheaper model), 10 findings
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | Skill Builder intro says three new sources; the task says two of three | FIXED: "two of three" in the intro and the slide 19 and 21 notes |
+| 2 | Jug prompt says the makers and buyers were "mostly white Britons," which the Met record does not say | FIXED: "made and bought by free people, and no enslaved person chose this picture" |
+| 3 | BeInTheRoom wording still needing decoding ("political participation ... civic independence", "answerable to a testimony", "selective universalism", "coercive labor", "less rhetorical simplicity") | FIXED: rewritten in plain words |
+| 4 | Checkpoint 1 offers Montesquieu as a writer but not his idea; Target 1 lists five ideas and the checkpoint assesses one | FIXED: Montesquieu left the writer list (with reviewer 2, #2); Target 1 now asks for the new way of thinking and at least one new idea |
+| 5 | Targets 2 and 3 carry one Key Concept code each though they assess a second one | REJECTED with reason: the lesson data holds one code per target, and both second Key Concepts are assessed (KC-5.3.II.i by Checkpoint 1 step 4, KC-5.3.IV.B by Checkpoint 2's women's-rights option) and banded on the deck |
+| 6 | Retelling slide connector "CHALLENGED BY" clipped; slide 13 "ANSWERED BY" touches its box | FIXED: shorter connector words ("meets", "answered", "pressed"; "answer") |
+| 7 | Slide 6 connector "until" says the wrong thing | FIXED: "led to" |
+| 8 | Slide 14's third evidence box restates the claim and cites the topic | FIXED: the 1789 declaration's Article 1, and France not giving women the vote |
+| 9 | Deep reading defines the nation with KC-5.3.II.ii's wording (5.2's) | FIXED: the clause points to Topic 5.2 instead |
+| 10 | The reading says "through the 1800s" and opens with 1787 and 1789 | FIXED: "from the 1780s on" |
+
+### Pass 3, reviewer 2 (history; default model), 7 findings
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | The Evidence Lab caption and deep reading state the debated writing date of the Two Treatises as settled | FIXED: "most historians think Locke wrote most of it in the early 1680s" |
+| 2 | Criterion 1 offers Montesquieu without his idea | FIXED (with reviewer 1, #4) |
+| 3 | The jug carries "Am not I a man and a brother," a version of the 1787 motto | FIXED: the caption says "a version of the motto"; the preflight note quotes the jug |
+| 4 | The "Austria and Russia" map label sits over Anatolia | FIXED: the label sits beside its region |
+| 5 | "Explained by Reason" is a gloss, not the Encyclopédie's title | FIXED: "a Systematic Dictionary of the Sciences, Arts, and Crafts," with raisonné glossed |
+| 6 | Kant gave the Enlightenment its motto; it is not "the motto of his essay" | FIXED: Kant's own words, "der Wahlspruch der Aufklärung" |
+| 7 | A slide 14 note points to slide 19 for Wollstonecraft | FIXED: slide 17 and the Evidence Lab |
+
+### Outcome
+
+The loop ended on the **three-pass safety valve**: every pass found supported defects (21, 15 and 16
+distinct). All were fixed except one rejected with its reason and two logged as adjacent findings. The
+trend was down in kind as well as count: pass 1 found wrong dates and a mis-cast primary-source context
+(Locke's writing date, Stanton's role in 1840, Britain's 1834); pass 2 found narrowings (a "first"
+without "all", an organizer count, a sequence inside one day, Montesquieu's own example); pass 3 found no
+wrong date, no misattributed quotation and no CED or ownership defect, only wording, a translation gloss,
+a map label and connector words. Nothing systemic was found in the story, the CED reading or a source.
+One build-time catch outside the reviewers: a slide 14 box first quoted the 1789 article loosely and was
+corrected to its exact words before commit.

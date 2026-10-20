@@ -37,7 +37,7 @@ window.BEHISTORICAL_LESSON = {
 
   learningTargets: [
     {
-      target: "I can explain the new ideas Enlightenment thinkers used to question where rulers got their power: reason and evidence, natural rights, the social contract, limits on power, and religious toleration.",
+      target: "I can explain the new way of thinking Enlightenment writers used to question where rulers got their power, and at least one of their new ideas: natural rights, the social contract, or religious toleration.",
       kc: 'KC-5.3.I.A',
       theme: "Cultural Developments and Interactions"
     },
