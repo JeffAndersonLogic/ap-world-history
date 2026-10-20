@@ -15,12 +15,12 @@ const D = (id, title, prompt, options) => ({ id, title, prompt, options });
 const scenarios = [
   {
     id: '5.1', unit: '5', topicTitle: 'The Enlightenment', file: 'the-natural-rights-test.html',
-    title: 'The *Natural Rights Test*', location: 'Paris salon and printing office', date: '1788–1789',
+    title: 'The *Natural Rights Test*', location: 'Paris salon and printing office', date: '1788 to 1789',
     lessonUrl: '../../unit-5/lesson-5-1-enlightenment.html',
-    alignment: { theme: 'Culture and Developments (CDI)', objective: 'Explain how Enlightenment ideas challenged traditional authority and shaped political debate.', skill: 'Causation and argumentation', keyConcepts: ['KC-5.1.I', 'KC-5.1.I.A–C', 'Natural rights and the public sphere'] },
+    alignment: { theme: 'Cultural Developments and Interactions (CDI)', objective: 'Explain the intellectual and ideological context in which revolutions swept the Atlantic world from 1750 to 1900.', skill: 'Claims and Evidence in Sources (3.A), with Continuity and Change', keyConcepts: ['KC-5.3.I.A', 'KC-5.3.I'] },
     premise: [
       'A Paris publisher is preparing a short collection of arguments about reason, consent, religious toleration, and natural rights. Readers want a clear challenge to hereditary authority, but the commercial world that funds the press is tied to empire, slavery, and unequal access to education.',
-      'The salon includes people who use Enlightenment language differently: some seek constitutional reform, some demand abolition, and some want the language limited to property-holding men. Mary Wollstonecraft’s arguments about women’s education make the contradiction visible inside the movement itself.',
+      'The salon includes people who use Enlightenment language differently: some seek constitutional reform, some demand abolition, and some want the language limited to property-holding men. A new antislavery society, the Society of the Friends of the Blacks, was founded in Paris in February 1788, and arguments over whether girls should be educated to reason like boys make the contradiction visible inside the movement itself.',
       'You must decide what the pamphlet will claim, whose testimony it will print, and how directly it will expose the gap between universal principles and selective practice.'
     ],
     centralQuestion: 'How should an Enlightenment publisher use reason and natural-rights language when the movement’s own authors and sponsors exclude women, enslaved people, and the poor?',
@@ -35,7 +35,7 @@ const scenarios = [
       E('montesquieu', 'Separated Powers', 'Montesquieu linked liberty to institutional checks that prevent concentrated power.', 'Connects ideas to constitutional design rather than abstract freedom alone.'),
       E('salon', 'The Republic of Letters', 'Salons, correspondence, academies, and print networks spread arguments among educated readers.', 'Explains how ideas moved beyond one court or university.'),
       E('encyclopedie', 'Knowledge as Critique', 'The Encyclopédie organized practical and intellectual knowledge while questioning inherited authority.', 'Shows how information could challenge hierarchy.'),
-      E('wollstonecraft', 'Rights of Woman', 'Wollstonecraft applied reason and education arguments to women’s subordination.', 'Reveals an internal critique of selective universalism.'),
+      E('education', 'Educating Women', 'Writers argued over whether girls should be educated to reason like boys. Rousseau’s Emile (1762) said a woman’s education should be planned in relation to man.', 'Reveals an internal critique of selective universalism.'),
       E('slavery', 'Colonial Wealth', 'European commerce and plantation wealth depended on enslaved labor even as authors discussed liberty.', 'Prevents treating Enlightenment ideas as detached from empire.'),
       E('toleration', 'Religious Toleration', 'Arguments for toleration challenged confessional coercion and state-enforced orthodoxy.', 'Shows a concrete target of anti-authoritarian thought.'),
       E('public', 'Expanding Public Debate', 'Pamphlets and newspapers widened debate but remained shaped by literacy, price, censorship, and gender.', 'Keeps the public sphere both innovative and unequal.')
@@ -60,8 +60,8 @@ const scenarios = [
     reflectionPrompt: 'Explain how Enlightenment ideas challenged traditional authority and how their selective application limited that challenge. Use one example involving gender, slavery, or property.',
     sources: [
       { label: 'Stanford Encyclopedia of Philosophy, Enlightenment', url: 'https://plato.stanford.edu/entries/enlightenment/' },
-      { label: 'Library of Congress, Mary Wollstonecraft', url: 'https://www.loc.gov/exhibits/womens-suffrage/mary-wollstonecraft.html' },
-      { label: 'National Archives, The Enlightenment and the Atlantic world', url: 'https://www.archives.gov/research/african-americans/slavery-records' }
+      { label: 'Avalon Project (Yale Law School), Declaration of the Rights of Man, 1789', url: 'https://avalon.law.yale.edu/18th_century/rightsof.asp' },
+      { label: 'Musée protestant, The Calas affair', url: 'https://museeprotestant.org/en/notice/the-calas-affair/' }
     ]
   },
   {

@@ -3,34 +3,29 @@
 /**
  * Topic 5.1, The Enlightenment: the deep reading.
  *
- * Why this exists. The success criteria want three philosophes with their core
- * ideas and an explanation of how those ideas challenged divine right,
- * hereditary aristocracy and Church authority; two mechanisms by which the ideas
- * spread; and two excluded groups with the STRUCTURAL reasons for their
- * exclusion, naming Rousseau on women's sphere and Locke's investment in the
- * Royal African Company.
+ * Why this exists. The CED gives 5.1 two learning objectives: the
+ * intellectual and ideological context of the Atlantic revolutions (LO A),
+ * and how the Enlightenment affected societies over time (LO B). The First &
+ * 10 tells the story in one pass. What it has no room for is the mechanism
+ * at each step: why a new way of finding out what is true led to new
+ * political ideas, what each idea actually let people do, how the ideas
+ * traveled and why "the people" became the nation, and how reform movements
+ * pressed the words further, and how slowly, between 1787 and 1900.
  *
- * That last clause is unusual and it is the reason this chapter is shaped the
- * way it is. The criteria do not ask for a note that the Enlightenment was
- * imperfect; they ask why the exclusions were built in. So section 03 does it
- * properly, with the documents, and section 04 shows what the excluded did with
- * a universal claim once it existed in writing, which is the half that makes
- * Topic 5.2 legible.
+ * Rebuilt from the 5.1 story (docs/TOPIC-5-1-STORY-DRAFT.md) on 2026-10-20.
+ * The old chapter, "Where Authority Comes From," was a strong essay written
+ * well above a ninth-grade reading level, taught Adam Smith (5.7's) as one of
+ * the core arguments, and stopped in 1804, so it never reached LO B's reform
+ * movements, the end of serfdom, wider voting or Seneca Falls.
  *
  * Three things carried deliberately:
  *
- *   1. Each thinker gets a mechanism rather than a slogan. "Consent of the
- *      governed" is a phrase students write without being able to say what it
- *      licenses, and what it licenses is removal of a ruler, which is the whole
- *      point of it in 1776 and 1789.
- *   2. The spread section treats print, salons and coffeehouses as
- *      infrastructure with costs and censors, not as an atmosphere, because a
- *      student who can say how a banned book reached Paris can explain why the
- *      ideas outran the states that banned them.
- *   3. Section 04 avoids both available cliches: that the Enlightenment was
- *      secretly a fraud, and that its exclusions were merely the prejudices of
- *      the age. The accurate version is that a universal claim written down is
- *      a tool that its authors could not keep, and Haiti is the proof.
+ *   1. "Came before," not "caused." The CED says Enlightenment thought "often
+ *      preceded" revolutions, and 5.2 owns their causes.
+ *   2. Religion in both directions: questioned as a power of government, and
+ *      a driver of reform.
+ *   3. Continuity as hard as change. Section 05 ends on what had still not
+ *      changed by 1900.
  */
 
 module.exports = {
@@ -39,238 +34,291 @@ module.exports = {
   sourceFile: 'deep-reading-topic-5-1-enlightenment.html',
   lessonFile: 'lesson-5-1-enlightenment.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 5.1: Where Authority Comes From',
+  docTitle: 'BeHistorical | Deep Reading | Topic 5.1: By What Right?',
   eyebrow: 'Topic 5.1 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
-  titleHtml: 'Where Authority Comes <em>From</em>',
-  deck: `For most of this course, the answer was God, or ancestry, or the mandate of heaven. Then a set of writers argued that authority comes from the people who are governed by it, and that if it stops serving them they may take it back. This chapter is what each of them actually argued, how banned books reached readers anyway, why the word <em>universal</em> was written by men who excluded most of humanity, and what the excluded did with it once it existed in print.`,
-  meta: ['Four sections', 'Arguments, spread, exclusions, and the use of them', 'Read alongside the First & 10'],
-  footerNote: 'Topic 5.1 &nbsp;·&nbsp; Where Authority Comes From &nbsp;·&nbsp; Companion to the First &amp; 10',
+  titleHtml: 'By What <em>Right</em>?',
+  deck: `In 1750 most rulers said their power came from God. A group of writers began asking every old authority the same question, by what right?, and answered it with reason, natural rights and the consent of the people. This chapter follows that question from the new science of the late 1600s to the reformers of the 1800s, and asks how much it had changed by 1900.`,
+  meta: ['Five sections', 'The method, the ideas, the spread, the reformers, women\'s demands', 'Read alongside the First & 10'],
+  footerNote: 'Topic 5.1 &nbsp;·&nbsp; By What Right? &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',
-    intro: `Section 01 is the arguments, one mechanism each, which is what a checkpoint asking you to explain a thinker actually wants. Section 02 is how they traveled. Sections 03 and 04 are the pair the success criteria ask for: who was excluded and why structurally, and what happened when people outside the room read the same books.`,
+    intro: `The College Board asks two things of this topic. First, explain the ideas that formed the context of the revolutions that swept the Atlantic world. Second, explain how the Enlightenment affected societies over time. Sections 01 to 03 answer the first; sections 04 and 05 answer the second. Each section ends with a tool, a limit and a comparison you can use in an answer.`,
     steps: [
-      `<b>01 The arguments:</b> Locke, Rousseau, Montesquieu, Voltaire, Smith and Wollstonecraft, and what each one licenses.`,
-      `<b>02 How ideas moved:</b> print, salons, coffeehouses, and getting round a censor.`,
-      `<b>03 Who was excluded, and why:</b> the structural reasons, with the documents.`,
-      `<b>04 What the excluded did with it:</b> a universal claim is a tool its authors cannot keep.`,
-      `<b>Then the closing section</b>, which turns all of it into comparison sentences you can write.`
+      `<b>01 A new way of knowing:</b> the old answer, and the method that questioned it.`,
+      `<b>02 The new answers:</b> natural rights, the social contract, limits on power, and toleration.`,
+      `<b>03 The ideas travel:</b> how they spread, why they came before the revolutions, and how the people became a nation.`,
+      `<b>04 Pressing the words further:</b> abolition, the end of serfdom and the vote, 1787 to 1888.`,
+      `<b>05 Women's demands, and what stayed:</b> de Gouges, Wollstonecraft, Seneca Falls, and the world of 1900.`,
+      `<b>Then the closing section</b>, which gathers the evidence for an answer.`
     ]
   },
 
   empires: [
-    // ── 01 ────────────────────────────────────────────────────────────────────
+    // ── 01 ─────────────────────────────────────────────────────────────
     {
-      id: 'arguments',
+      id: 'method',
       num: '01',
       accent: 'gold',
-      name: 'Six Arguments, and What Each One Licenses',
-      navLabel: 'The arguments',
-      dates: 'c. 1690 to 1792 &nbsp;·&nbsp; The philosophes',
-      thesis: `The Enlightenment is not a mood about reason. It is a set of specific arguments, each of which authorizes a specific action, and the way to hold them is by what each one lets you do rather than by the phrase attached to it.`,
+      name: 'A New Way of Knowing',
+      navLabel: 'The method',
+      dates: '1680s to 1780s &nbsp;·&nbsp; Reason and evidence',
+      thesis: `The Enlightenment's political ideas began with a method. Thinkers learned to test claims about nature with reason and evidence, and then asked whether the same method could test the claims that kings, churches and nobles made about their own power.`,
       parts: [
         {
-          heading: 'The target: three claims under attack',
+          heading: 'The old answer',
           blocks: [
-            { p: `Before the arguments, the thing they were arguing against. European political order rested on three linked claims. <b>Divine right</b>: a monarch's authority comes from God, so resisting the king is a sin as well as a crime. <b>Hereditary aristocracy</b>: rank, land and office descend by birth, and the people who hold them are qualitatively suited to hold them. <b>Church authority</b>: a single institution defines truth, licenses what may be printed and taught, and holds jurisdiction over much of daily life.` },
-            { p: `Each of the arguments below removes the foundation of one or more of those, which is why they were dangerous enough to be banned, and it is the reason to learn them as attacks rather than as opinions.` }
+            { p: `In 1750 most of Europe's rulers gave the same answer to the question "who does a state belong to?" It belonged to the king, because God had put him there. This is <span class="kt">divine right</span>, the claim Louis XIV made at Versailles (Topic 3.2). In most countries one church was the law: Catholic in France and Spain, Anglican in England. Nobles were born into privileges, such as freedom from some taxes, and across much of central and eastern Europe peasants were <span class="kt">serfs</span>, bound to work their lord's land. Authority came from God, from tradition and from birth.` }
           ]
         },
         {
-          heading: 'The six',
+          heading: 'Reason and evidence, first for nature',
           blocks: [
-            { p: `<b>John Locke</b>, in the <em>Two Treatises of Government</em> of <span class="num">1689</span>: people possess <span class="kt">natural rights</span> to life, liberty and property simply by existing, before any government exists. Government is created by agreement to protect those rights, so its authority is conditional. What that licenses is the sentence that mattered: a government that violates those rights has broken the trust on which it stands, and the people may replace it. Divine right cannot survive a conditional contract, and the American Declaration of Independence borrows the structure almost directly.` },
-            { p: `<b>Jean-Jacques Rousseau</b>, in <em>The Social Contract</em> of <span class="num">1762</span>: sovereignty belongs to the people as a body and cannot be given away permanently. Locke made government a trustee; Rousseau made the people themselves the only legitimate sovereign, which is a harder claim, because it means no constitution, no dynasty and no treaty can bind a people against its own will. What it licenses is total refoundation rather than reform, which is one reason the French Revolution went further than the American.` },
-            { p: `<b>Montesquieu</b>, in <em>The Spirit of the Laws</em> of <span class="num">1748</span>: liberty is destroyed when the same hands make, execute and judge the law, so power must be divided so that power checks power. This one is a design specification rather than a principle, and it is the direct ancestor of the branches in the United States Constitution.` },
-            { p: `<b>Voltaire</b>: religious toleration and freedom of expression, argued mostly through satire and through campaigns on particular cases, above all the Calas affair, in which a Protestant merchant was tortured and executed in <span class="num">1762</span> on a charge Voltaire spent years demonstrating to be false. The argument is that the state has no business enforcing belief, and the method, publicity applied to a single injustice until the verdict is reversed, is as much the legacy as the principle.` },
-            { p: `<b>Adam Smith</b>, in <em>The Wealth of Nations</em> of <span class="num">1776</span>: wealth is what a country produces rather than the bullion it holds, both parties to a voluntary exchange gain, and the pursuit of self-interest under competition tends to allocate resources efficiently without direction. The Topic 4.5 chapter shows what this was written against; the point here is that it is an argument against a state directing the economy, and it becomes the intellectual basis of the free trade politics in Topic 5.7.` },
-            { p: `<b>Mary Wollstonecraft</b>, in <em>A Vindication of the Rights of Woman</em> of <span class="num">1792</span>: if reason is the ground of rights, and women are rational beings, then women hold the same rights, and the apparent inferiority of women is produced by an education designed to make them ornamental. The structure of the argument is the important part. She does not appeal to a new principle; she holds the philosophes to the one they had already published, which is exactly the move section 04 is about.` },
+            { p: `In <span class="num">1687</span> the English scientist Isaac Newton published a book showing that a few laws of motion and gravity, worked out with mathematics and tested against what astronomers observed, explained both the paths of the planets and the fall of an apple. The lesson many readers took from it was that the world runs by laws a human mind can discover, without being told by an old book or a priest.` },
+            { p: `In <span class="num">1689</span> the English philosopher John Locke argued that every idea in our minds comes from experience. At birth, he wrote, the mind is like "white paper." Learning from evidence and experience instead of accepting what authorities say is called <span class="kt">empiricism</span>. Scientific lectures and experiments became popular entertainment for people who could pay, like the family in Joseph Wright's painting of an air-pump experiment, made famous by a print of <span class="num">1769</span>.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that Enlightenment thinkers agreed with each other, and do not write that they were all democrats. They disagreed sharply: Locke wanted a limited monarchy with a propertied electorate, Rousseau distrusted representation altogether, Voltaire thought a strong reforming monarch preferable to a parliament, and Montesquieu admired an aristocratic check on the crown. Several of them were <b>enlightened absolutists</b> in practice, advising rulers such as Frederick II of Prussia and Catherine II of Russia, who took the administrative and legal reforms and kept the absolutism. Naming a disagreement is one of the fastest ways to show you have read them rather than a summary of them.`
+              html: `Do not write that the Enlightenment was against religion. Most of its writers believed in God, and some were <b>deists</b>, who believed God made the world and then let it run by natural laws. What they questioned was religion used as a power of government (section 02).`
             } }
+          ]
+        },
+        {
+          heading: 'Then for people',
+          blocks: [
+            { p: `The step that made the method political was simple to state. If reason and evidence can explain the planets, can they explain people: how we should live together, what a government is for, and what makes a ruler's power rightful? Enlightenment writers turned the method on government, religion, law and society, and that is where the new political ideas came from.` }
           ]
         }
       ],
       useThis: {
-        tool: `Conditional authority. <em>The mechanism is that if government exists in order to protect rights that people already hold, then its legitimacy depends on performance rather than on origin, so a ruler who fails the condition can be removed without the removal being a sin or a crime, which is the specific move that makes revolution arguable rather than merely possible.</em>`,
-        limit: `Every thinker here set a boundary on who counted as a rights-holding person, and the boundaries were not accidents, which is what section 03 is about.`,
-        comparison: `Against the <em>Mandate of Heaven</em> in Topic 1.1: China had a conditional theory of authority two thousand years earlier, in which a dynasty that misgoverned forfeited its mandate and rebellion against it was legitimate. The difference is where the condition is judged. The mandate is judged by heaven, read after the fact through floods, famine and defeat; the social contract is judged by the governed, in the present. Rights theory relocates the judge, which is why it authorizes action rather than explaining an outcome.`
+        tool: `Name the method before the ideas. <em>The Enlightenment applied reason and evidence first to nature, then to human relationships, and that is why its political ideas challenged authority instead of simply disagreeing with it.</em>`,
+        limit: `The method was shared by a small, mostly wealthy and literate group in 1750. Most people still learned what was true from their church and their community.`,
+        comparison: `Against <em>divine right</em> in Topic 3.2: Louis XIV's claim rested on God's choice and could not be tested. An empiricist asks for evidence.`
       },
       terms: [
-        ['Natural rights', 'Rights held by virtue of being human rather than granted by a ruler, which makes government conditional on protecting them.'],
-        ['Social contract', 'The agreement by which people create government, and therefore the basis on which they may dissolve it.'],
-        ['Popular sovereignty', 'Rousseau\'s claim that authority belongs permanently to the people as a body and cannot be alienated.'],
-        ['Separation of powers', 'Montesquieu\'s design in which legislative, executive and judicial authority are held apart so power checks power.'],
-        ['Enlightened absolutism', 'Rule by a monarch who adopts Enlightenment administrative and legal reforms while keeping undivided power.']
+        ['Divine right', 'The claim that a king\'s power comes from God, so no one may question or remove him.'],
+        ['Serf', 'A peasant bound to a lord\'s land, who owed the lord labor and could not leave freely.'],
+        ['Empiricism', 'Learning from evidence and experience instead of accepting what authorities say.'],
+        ['Deism', 'The belief that God created the world and then let it run by natural laws.']
       ]
     },
 
-    // ── 02 ────────────────────────────────────────────────────────────────────
+    // ── 02 ─────────────────────────────────────────────────────────────
     {
-      id: 'spread',
+      id: 'answers',
       num: '02',
       accent: 'iron',
-      name: 'How a Banned Book Reached Its Reader',
-      navLabel: 'How ideas moved',
-      dates: 'c. 1700 to 1789 &nbsp;·&nbsp; Print, salons, coffeehouses',
-      thesis: `Ideas do not travel by being true. They travel on physical infrastructure with costs, gatekeepers and evasions, and the reason these particular ideas spread fast is that eighteenth-century Europe had built the infrastructure and could not control it.`,
+      name: 'The New Answers',
+      navLabel: 'The new answers',
+      dates: '1689 to 1763 &nbsp;·&nbsp; Locke, Montesquieu, Rousseau, Voltaire',
+      thesis: `Enlightenment writers started with the individual person, not the king, and came up with new answers to the question of what makes power rightful. The change was not that kings disappeared; it was that a ruler now had to answer the question.`,
       parts: [
         {
-          heading: 'Print, and the trade in forbidden books',
+          heading: 'Natural rights and the social contract',
           blocks: [
-            { p: `Printing had existed for three centuries, and what changed in the eighteenth was volume, variety and cheapness. Newspapers, periodicals, cheap pamphlets and libels, and above all the <span class="kt">Encyclopedie</span>, edited by Diderot and d'Alembert across some thirty-five volumes from <span class="num">1751</span>, which set out to compile all human knowledge with entries by Voltaire, Rousseau, Montesquieu and others, and which smuggled arguments about religion and politics into entries on other subjects.` },
-            { p: `The Encyclopedie was suppressed, and it sold thousands of sets anyway. That is the mechanism worth having, and it is about geography rather than principle. Censorship in France ran through royal licensing and the Church, but publishing houses in Switzerland, the Dutch Republic and the Rhineland were outside French jurisdiction, printed what Paris banned, and moved it back across the border through a smuggling trade with its own routes, prices and bribes. A censorship regime with a land border and a profitable evasion is a tax on forbidden books rather than a barrier to them.` },
-            { p: `Suppression also advertised. A book condemned by the authorities acquired a market, which is why publishers sometimes sought a condemnation, and why the philosophes' habit of publishing anonymously or abroad was a commercial strategy as much as a precaution.` }
+            { p: `In his <em>Second Treatise of Government</em> (<span class="num">1689</span>), Locke argued that people are born free and equal, with <span class="kt">natural rights</span> to their "lives, liberties and estates" (an estate is what you own). No government gives these rights, and no government may take them. People form a government to protect them.` },
+            { p: `That makes government an agreement, a <span class="kt">social contract</span>. "No one," Locke wrote, can be "subjected to the political power of another, without his own consent." And if a government tries to destroy the people's rights or reduce them to slavery, it puts itself "into a state of war with the people," who no longer owe it obedience. Locke was writing in the years when the English Parliament removed King James II (<span class="num">1688</span> to <span class="num">1689</span>), and his argument defended the right to resist a king.` },
+            { p: `In <span class="num">1762</span> Jean-Jacques Rousseau, a writer from Geneva who lived in France, began <em>The Social Contract</em> with a famous line: "Man is born free; and everywhere he is in chains." Rousseau argued that rightful power comes from the "general will" of the people as a whole, a more collective idea than Locke's.` }
           ]
         },
         {
-          heading: 'Rooms where people argued',
+          heading: 'Limits on power',
           blocks: [
-            { p: `<b>Salons</b> were gatherings held in private homes, in Paris characteristically organized and hosted by women, at which writers, aristocrats, officials and visitors discussed ideas under a hostess's direction. The salonniere chose the guests, made the introductions and steered the conversation, which made her a genuine intellectual broker: a manuscript read at the right salon reached the people who could fund it, print it or protect it. Salons also mixed ranks, seating a titled nobleman next to an untitled writer on the basis that the writer was worth listening to, which is a small social fact with a large implication.` },
-            { p: `<b>Coffeehouses</b> did the same work further down the social scale and in public. London had hundreds by the early eighteenth century, and the price of entry was the price of a cup. They carried newspapers, hosted argument, and specialized: particular houses became the places for shipping news, for stock dealing, for scientific talk. Lloyd's of London began as a coffeehouse where marine insurance was arranged, which is a reminder that this infrastructure was commercial before it was political.` },
-            { p: `Add to those the <b>learned societies and academies</b>, which corresponded across borders in Latin and increasingly in French, and the <b>Republic of Letters</b>, the self-description of a transnational community of writers who read and answered each other across states at war with each other.` },
+            { p: `In <em>The Spirit of the Laws</em> (<span class="num">1748</span>), the French writer Montesquieu argued that liberty is safest when the power to make laws, the power to carry them out and the power to judge are held by different people, so that one power can check another. This is the <span class="kt">separation of powers</span>.` }
+          ]
+        },
+        {
+          heading: 'Religion and the state',
+          blocks: [
+            { p: `In <span class="num">1762</span> a court in Toulouse condemned Jean Calas, a Protestant cloth merchant, for killing his son to stop him from becoming a Catholic. His son had most likely taken his own life. Calas was tortured and executed. Voltaire, one of the most famous writers in Europe, took up the case, published a <em>Treatise on Tolerance</em> in <span class="num">1763</span>, and campaigned until Calas was declared innocent in <span class="num">1765</span>. The argument was <span class="kt">religious toleration</span>: no government should force a faith on anyone or punish people for what they believe.` },
             { note: {
               kind: 'howknow',
-              label: 'How we know: the smugglers kept accounts',
-              html: `A great deal of what is known about which forbidden books actually sold comes from the surviving records of a Swiss publisher, the Societe typographique de Neuchatel, whose order books, correspondence with booksellers and shipping accounts historians have reconstructed in detail. Because the firm was a business, it recorded what its customers ordered rather than what anyone thought they should be reading, and the result complicates the story: alongside Rousseau and the Encyclopedie, the trade in illegal books ran heavily on scandal, pornography and libels against public figures. The ideas traveled inside a commerce that was not primarily philosophical, and knowing that is better history than a picture of pure ideas moving on their merits.`
+              label: 'How we know: read the words',
+              html: `Every quotation in this section is from the writers' own books, which are still in print and free online. When you describe a claim, go back to the words: Locke's "without his own consent" is a claim about where a government's right to rule comes from, and it argues against divine right.`
             } }
           ]
         }
       ],
       useThis: {
-        tool: `Jurisdictional arbitrage. <em>The mechanism is that censorship operates inside a state&rsquo;s borders while printing can be done outside them, so a banned text is printed in Neuchatel or Amsterdam and smuggled back at a markup, which converts prohibition into a price rather than a prevention and hands the trade to whoever is willing to break the law.</em>`,
-        limit: `The infrastructure reached the literate and the urban. Most people in France in 1789 could not read fluently, and ideas reached them through preaching, rumor, sermons, cheap prints and talk, in versions the authors would not always have recognized.`,
-        comparison: `Against the <em>printing revolution</em> of Foundations 5: the technology was old by 1750, so what changed was not the press but the density of the network around it, the periodicals, the postal routes, the coffeehouses and the cross-border trade. Technology is rarely the variable; the institutions built on it usually are.`
+        tool: `Say what made a ruler legitimate, before and after. <em>The old answer was God and birth; the new answer was reason and the consent of the people.</em>`,
+        limit: `The writers disagreed. Locke protected individual rights; Rousseau stressed the people as a whole; few of them wanted to abolish kings, and most did not mean their words for everyone (section 04).`,
+        comparison: `Against the <em>Mandate of Heaven</em>: Chinese rulers could also lose the right to rule by governing badly, but the mandate still came from Heaven. Locke's consent comes from the people.`
       },
       terms: [
-        ['Encyclopedie', 'The thirty-five-volume compilation edited by Diderot and d\'Alembert, suppressed and widely sold, which carried argument inside reference.'],
-        ['Salon', 'A gathering in a private home, characteristically hosted by a woman, where writers and elites met and reputations were made.'],
-        ['Coffeehouse', 'A public room with newspapers and argument, cheap to enter, which spread the same debates further down the social scale.'],
-        ['Republic of Letters', 'The transnational community of correspondents who read and answered each other across hostile states.'],
-        ['Censorship', 'State and Church licensing of print, evaded by publishing abroad, which turned prohibition into a smuggling trade.']
+        ['Natural rights', 'Rights people are born with, such as life, liberty and property, which no government gives or may take away.'],
+        ['Social contract', 'The idea that government is an agreement: people accept a government so that it will protect their rights.'],
+        ['Separation of powers', 'Dividing the powers to make laws, carry them out and judge among different people, so no one holds them all.'],
+        ['Religious toleration', 'The idea that no government should force a faith on anyone or punish people for their beliefs.']
       ]
     },
 
-    // ── 03 ────────────────────────────────────────────────────────────────────
+    // ── 03 ─────────────────────────────────────────────────────────────
     {
-      id: 'exclusions',
+      id: 'spread',
       num: '03',
       accent: 'rust',
-      name: 'Who Was Excluded, and Why It Was Not an Oversight',
-      navLabel: 'The exclusions',
-      dates: 'c. 1690 to 1789 &nbsp;·&nbsp; The structural reasons',
-      thesis: `The word used was universal and the practice was not, and the gap is not explained by saying that people are products of their time. In each case there is an argument, or an interest, doing the work, and naming it is what the success criteria ask for.`,
+      name: 'The Ideas Travel, Before the Revolutions',
+      navLabel: 'The ideas travel',
+      dates: '1751 to 1810 &nbsp;·&nbsp; Print, salons, letters',
+      thesis: `The ideas spread through print and conversation across Europe and the Atlantic, questioned tradition in every part of life, and came before the revolutions that began in 1775, 1789, 1791 and 1810. They gave revolutionaries their words, and they turned "the people" into the nation.`,
       parts: [
         {
-          heading: 'Women',
+          heading: 'Print, salons and letters',
           blocks: [
-            { p: `Rousseau is the clearest case because he wrote the exclusion out explicitly. In <em>Emile</em>, published in <span class="num">1762</span>, the same year as <em>The Social Contract</em>, he sets out an education for a boy aimed at independence and reason, and an education for the girl who will marry him, Sophie, aimed at pleasing, serving and being useful to him. Women's sphere is domestic by nature; their virtue is modesty and their function is to raise citizens rather than to be citizens.` },
-            { p: `The structural reason is that the political theory was built on a household, and this is the part to understand rather than merely deplore. The contracting individual of eighteenth-century political thought was assumed to be a property-holding head of household, who represented his dependents, wife, children and servants, in public life. Under the coverture rules of English law, a married woman's legal personality was absorbed into her husband's, so she could not separately hold property or contract. Building rights on property and independence therefore excluded women by construction, and no separate act of exclusion was required.` },
-            { p: `That is why Wollstonecraft's argument attacks the education rather than the principle: if the apparent unfitness of women is manufactured by how they are raised, the premise that dependence is natural collapses, and the exclusion has nothing left to stand on.` }
+            { p: `From <span class="num">1751</span> to <span class="num">1772</span>, Denis Diderot and his partners published the <em>Encyclopédie</em> in Paris: seventeen volumes of articles and eleven of pictures that tried to explain everything by reason, from how to make glass or mount a fan to what a government owes its people. The French government banned it in <span class="num">1759</span>, and the Pope condemned it, but the last ten volumes of articles came out together in <span class="num">1765</span>, and printers in other countries copied it: a second edition was printed in Lucca, Italy, from <span class="num">1758</span>.` },
+            { p: `The ideas also traveled in newspapers and pamphlets, in London's coffeehouses, in letters between writers across Europe and the Americas, and in the conversation gatherings of Paris called <span class="kt">salons</span>, which were often run by women. In <span class="num">1784</span> the German philosopher Immanuel Kant summed up the attitude in a motto: "Dare to know," which he explained as having the courage to use your own understanding.` }
           ]
         },
         {
-          heading: 'Enslaved Africans and colonial subjects',
+          heading: 'Before the revolutions',
           blocks: [
-            { p: `Locke is the case the success criteria name, and the facts are uncomfortable and precise. He was a shareholder in the <b>Royal African Company</b>, which held the English monopoly on the Atlantic slave trade, and he served as secretary to the Lords Proprietors of Carolina, in connection with the <em>Fundamental Constitutions of Carolina</em>, a document providing that a freeman shall have absolute power and authority over his enslaved people. The man who wrote that all men are born free was financially and administratively involved in the trade that denied it.` },
-            { p: `How the theory absorbed that is worth tracing, because it is not simple hypocrisy. Locke's own account of legitimate slavery makes it the condition of a captive taken in a just war, who has forfeited his life and receives servitude in place of death, an argument that in principle covers almost nobody in the Atlantic trade and in practice was available to anyone who wanted a justification. Property theory supplied a second route: if rights are grounded in property, and law defines enslaved people as property, then a right to property becomes a defense of slaveholding rather than a threat to it.` },
-            { p: `And several philosophes wrote about human difference in ways that supplied the ground for racial exclusion directly. Hume appended a note asserting the inferiority of Africans; Kant and Voltaire wrote passages of similar character; and eighteenth-century natural history proposed hierarchies of human varieties in the language of scientific classification, which gave the exclusion a vocabulary that sounded like knowledge. This is the beginning of what the Topic 6.1 chapter calls scientific racism, and it belongs here as a cause rather than there as an appearance.` },
+            { p: `The College Board's words are that Enlightenment thought "often preceded" revolutions. The American Revolution began in <span class="num">1775</span>, the French Revolution in <span class="num">1789</span>, the Haitian Revolution in <span class="num">1791</span>, and the wars of independence in Spanish America in <span class="num">1810</span>. In Bogotá, Antonio Nariño secretly printed a Spanish translation of France's new declaration of rights (in <span class="num">1793</span> or <span class="num">1794</span>) and was arrested for it in <span class="num">1794</span>; he later led the independence movement in New Granada.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Two bad answers to avoid. The first is that Enlightenment thinkers "were men of their time," which explains nothing and is factually weak, since abolitionist arguments existed in their time and some of them, notably Montesquieu, Condorcet and Diderot, made them. The second is that the Enlightenment was therefore a fraud, which cannot account for the fact that its own vocabulary was the most effective weapon anyone found against those exclusions, as section 04 shows. The strong answer names the specific mechanism in each case: a political theory built on the propertied household excluded women by construction, and a political theory grounded in property could be turned to defend property in people.`
+              html: `Do not write that the Enlightenment caused the revolutions. The ideas came first and gave revolutionaries words to explain what they wanted, but taxes, debt, war, slavery and colonial grievances caused them too. Topic 5.2 is about those causes.`
             } }
-          ]
-        }
-      ],
-      useThis: {
-        tool: `Exclusion by construction. <em>The mechanism is that when a theory grounds rights in independence and property ownership, everyone legally defined as a dependent or as property falls outside it automatically, so no separate clause of exclusion is needed and the theory can be stated in universal words while operating on a small fraction of the population.</em>`,
-        limit: `It is a description of how the theory worked, not a verdict that its authors were merely trapped by it. Some of them argued against slavery and for women&rsquo;s education, which shows the alternatives were available and were not taken.`,
-        comparison: `Against the <em>casta system</em> in Topic 4.7: Spanish America excluded people openly by naming categories in law, while Enlightenment theory excluded people silently by defining the rights-holder in terms most people could not meet. The open version is easier to attack and the silent version is harder to see, which is why the arguments in section 04 had to begin by making it visible.`
-      },
-      terms: [
-        ['Coverture', 'The English rule absorbing a married woman\'s legal personality into her husband\'s, which barred her from separate property or contract.'],
-        ['Royal African Company', 'The English slave-trading monopoly in which Locke held shares, and the concrete link between rights theory and the trade.'],
-        ['Fundamental Constitutions of Carolina', 'The colonial document, connected to Locke as secretary to the Proprietors, granting absolute power over enslaved people.'],
-        ['Universalism', 'The claim that rights belong to all people as such, stated in this period by writers who applied it to few.'],
-        ['Scientific racism', 'The eighteenth-century classification of human varieties into a hierarchy, which gave exclusion the vocabulary of knowledge.']
-      ]
-    },
-
-    // ── 04 ────────────────────────────────────────────────────────────────────
-    {
-      id: 'seized',
-      num: '04',
-      accent: 'oxide',
-      name: 'A Universal Claim Is a Tool Its Authors Cannot Keep',
-      navLabel: 'What was done with it',
-      dates: 'c. 1770 to 1804 &nbsp;·&nbsp; The excluded read the same books',
-      thesis: `Once a general principle is in print, anyone can hold you to it, and the most consequential thing about Enlightenment universalism is that the people it excluded used its own sentences against it, in public, in the authors&rsquo; own language.`,
-      parts: [
-        {
-          heading: 'The move, and four people who made it',
-          blocks: [
-            { p: `The move is always the same. Take the principle as stated. Show that the exclusion is an inconsistency rather than an exception. Demand the principle be applied. It works because a general claim is difficult to defend selectively without abandoning it, and abandoning it costs its authors the argument they needed against kings.` },
-            { p: `<b>Wollstonecraft</b>, in <span class="num">1792</span>, argued that rights grounded in reason cannot exclude rational beings, and that the evidence of women's unfitness is the product of the education given them.` },
-            { p: `<b>Olympe de Gouges</b>, in <span class="num">1791</span>, took the French <em>Declaration of the Rights of Man and of the Citizen</em> and rewrote it article by article as the <em>Declaration of the Rights of Woman and of the Female Citizen</em>, a form that makes the argument by structure: every clause is theirs, with the exclusion removed. She was executed in <span class="num">1793</span>.` },
-            { p: `<b>Olaudah Equiano</b>, in <span class="num">1789</span>, published an autobiography of enslavement and freedom that became a bestseller in Britain and was written for a reading public that had absorbed the language of natural rights, precisely so that it could be held to it.` },
-            { p: `<b>Toussaint Louverture</b> and the revolutionaries of Saint-Domingue, from <span class="num">1791</span>, took the French declaration at its word, and their success is the reason the Topic 5.2 chapter treats Haiti as the most radical of the Atlantic revolutions rather than the smallest.` }
           ]
         },
         {
-          heading: 'Why this matters for the rest of the unit',
+          heading: 'The people become a nation',
           blocks: [
-            { p: `Carry two sentences forward. First, the Atlantic revolutions of Topic 5.2 are not simply Enlightenment ideas being implemented; they are arguments about how far the ideas extend, which is why each of them produced a revolution and then a fight over who was included in it.` },
-            { p: `Second, every reform movement in the rest of this unit runs the same move. Abolitionists, suffrage campaigners, trade unionists and nationalists all argue that a principle already accepted has not been applied to them, and the Topic 5.8 chapter shows what that looks like when the principle is rights and the excluded party is a factory worker. Learn the move once here and it explains most of the century.` },
+            { p: `If a state belongs to its people, a new question follows: which people? More and more, the answer was <em>the nation</em>, a people who saw themselves as one, often because they shared a language, a faith, customs or a homeland. In <span class="num">1789</span> the French revolutionaries wrote that "the principle of all sovereignty resides essentially in the nation." Over the next century, <span class="kt">nationalism</span>, loyalty to your nation above a king or an empire, became one of the strongest forces shaping states and empires: it helped build new countries and pulled at empires of many peoples. Topic 5.2 tells that story.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Context, not cause. <em>Enlightenment ideas spread and came before the revolutions, so they are the intellectual and ideological context the revolutions happened in.</em>`,
+        limit: `Most people in 1789 could not read the Encyclopédie. They met the ideas, if at all, through talk, sermons, pamphlets and rumor.`,
+        comparison: `Against the <em>printing press</em> of the 1400s: the technology was old by 1750. What was new was how much was printed, and the network of readers, salons and letters around it.`
+      },
+      terms: [
+        ['Encyclopédie', 'The French encyclopedia of 1751 to 1772, edited by Diderot, which explained everything by reason and was banned and printed anyway.'],
+        ['Salon', 'A conversation gathering in a private home, often run by a woman, where writers and readers discussed ideas.'],
+        ['Sovereignty', 'The highest power in a state.'],
+        ['Nationalism', 'Loyalty to your nation, a people who see themselves as one, above a king or an empire.']
+      ]
+    },
+
+    // ── 04 ─────────────────────────────────────────────────────────────
+    {
+      id: 'reform',
+      num: '04',
+      accent: 'oxide',
+      name: 'Pressing the Words Further',
+      navLabel: 'Pressing further',
+      dates: '1787 to 1888 &nbsp;·&nbsp; Abolition, serfs, voters',
+      thesis: `The words sounded like everyone, but the men who wrote them often did not mean everyone. Over the next century, reform movements driven by Enlightenment ideas and by religious faith pressed the same words until rights reached the enslaved, the serfs and many more voters, slowly and unevenly.`,
+      parts: [
+        {
+          heading: 'The words were bigger than their writers',
+          blocks: [
+            { p: `Locke owned shares in the Royal African Company, an English company that traded enslaved Africans, in the 1670s. Rousseau wrote in <em>Emile</em> (<span class="num">1762</span>) that "a woman's education must therefore be planned in relation to man." Most of the men who wrote and read the new ideas did not mean them for women, enslaved Africans or peasants, though a few did: the French philosopher Condorcet argued for women's rights in <span class="num">1790</span>. Yet the words were written down, and anyone could ask the philosophers' own question: by what right am I left out?` }
+          ]
+        },
+        {
+          heading: 'Abolition: ideas and faith together',
+          blocks: [
+            { p: `In <span class="num">1787</span> twelve men in London, nine of them Quakers, a Christian group whose members had come to see slavery as a sin, founded the Society for Effecting the Abolition of the Slave Trade. Its seal showed a kneeling African man in chains and the words "Am I not a man and a brother?", and the potter Josiah Wedgwood turned it into a medallion that supporters wore. Olaudah Equiano, who had been enslaved, published his life story in <span class="num">1789</span> and traveled across Britain speaking against the trade.` },
+            { p: `<span class="kt">Abolition</span> came country by country. Britain banned the slave trade in <span class="num">1807</span> and ended slavery in its empire from <span class="num">1834</span>. France abolished slavery in its colonies in <span class="num">1794</span>, brought it back in <span class="num">1802</span>, and ended it again in <span class="num">1848</span>. Brazil was the last country in the Americas, in <span class="num">1888</span>. The enslaved people of Saint-Domingue ended slavery there by revolution, which is Topic 5.2.` }
+          ]
+        },
+        {
+          heading: 'Serfs and voters',
+          blocks: [
+            { p: `<span class="kt">Serfdom</span> ended too. In <span class="num">1848</span> the Austrian Empire freed its peasants from the forced labor they owed their lords. In <span class="num">1861</span> Tsar Alexander II of Russia freed more than 20 million serfs. He had reportedly told Russian nobles in <span class="num">1856</span> that it was better to end serfdom "from above" than to wait for it to end "from below," and Russia's defeat in the Crimean War pushed him too. The freed serfs had to pay for their land over many years.` },
+            { p: `<span class="kt">Suffrage</span>, the right to vote, widened in steps. In <span class="num">1848</span> France gave the vote to all adult men. Britain widened voting among men in <span class="num">1832</span>, <span class="num">1867</span> and <span class="num">1884</span>, and even then many men could not vote.` },
             { note: {
-              kind: 'howknow',
-              label: 'How we know: the text is the argument',
-              html: `De Gouges&rsquo;s declaration is the clearest evidence anywhere in this unit that the appropriation was deliberate rather than coincidental, because it is a rewriting rather than a response. Set the two documents side by side and the French original&rsquo;s Article 1, that men are born and remain free and equal in rights, becomes hers, that woman is born free and remains equal to man in rights, with the rest following clause by clause. A historian reading two texts in that relationship does not need to speculate about influence, which is why this kind of source, one document deliberately built on the shape of another, is worth more than a dozen assertions of general impact.`
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Do not write that every expansion of rights came from reformers below. Some came from campaigns and revolutions; some came from rulers like Alexander II, who feared what would happen if they did not act. When you explain a change, say who made it happen and why.`
             } }
           ]
         }
       ],
       useThis: {
-        tool: `Holding a principle to its own terms. <em>The mechanism is that a general claim cannot be defended selectively without being given up, so an excluded group that adopts the vocabulary of the people excluding them forces a choice between admitting them and abandoning the principle, which is the argumentative move behind abolition, suffrage and anticolonial nationalism alike.</em>`,
-        limit: `It is a rhetorical opening rather than a guarantee. De Gouges was executed, Wollstonecraft&rsquo;s argument took a century to prevail, and Haiti won by fighting rather than by persuading.`,
-        comparison: `Against the <em>Protestant Reformation</em> in Foundations 5: printing a text in a language ordinary readers could check produced the same loss of control, because an authority that publishes its own standard cannot then be the only one permitted to read it. Universal principles and vernacular scripture fail in the same direction and for the same reason.`
+        tool: `Name both engines. <em>The reform movements were driven by Enlightenment ideas about natural rights and by religious faith, and they took decades.</em>`,
+        limit: `Ending slavery or serfdom in law did not end hard labor or poverty. Freed people and freed serfs often stayed poor, and other kinds of forced labor went on in many places.`,
+        comparison: `Against <em>Topic 4.4</em>: the plantation economy had made the Atlantic slave trade huge. By 1888 every country in the Americas had abolished slavery in law.`
       },
       terms: [
-        ['Declaration of the Rights of Man', 'The 1789 French statement of universal rights, and the text de Gouges rewrote to expose its exclusion.'],
-        ['Olympe de Gouges', 'The author of the 1791 Declaration of the Rights of Woman, executed in 1793.'],
-        ['Olaudah Equiano', 'The formerly enslaved author whose 1789 autobiography argued abolition to a public schooled in natural rights.'],
-        ['Abolitionism', 'The movement to end the slave trade and slavery, which used the rights vocabulary against the societies that produced it.'],
-        ['Appropriation of principle', 'The argumentative move of demanding that an accepted general claim be applied to the group it excluded.']
+        ['Abolition', 'Ending slavery, or ending the slave trade, by law.'],
+        ['Quakers', 'A Christian group whose members, by the late 1700s, led some of the first campaigns against slavery.'],
+        ['Serfdom', 'A system in which peasants were bound to the land and owed labor to a lord.'],
+        ['Suffrage', 'The right to vote.']
+      ]
+    },
+
+    // ── 05 ─────────────────────────────────────────────────────────────
+    {
+      id: 'women',
+      num: '05',
+      accent: 'gold',
+      name: 'Women\'s Demands, and What Stayed',
+      navLabel: 'Women\'s demands',
+      dates: '1791 to 1900 &nbsp;·&nbsp; De Gouges, Wollstonecraft, Seneca Falls',
+      thesis: `Women pressed the words hardest, because the men who wrote about the rights of man often meant only men. Their demands challenged both political and gender hierarchies. By 1900 much had changed, and much had not.`,
+      parts: [
+        {
+          heading: 'Three demands',
+          blocks: [
+            { p: `In September <span class="num">1791</span> the French writer Olympe de Gouges rewrote France's declaration of rights as the <em>Declaration of the Rights of Woman and of the Female Citizen</em>. Where the declaration of <span class="num">1789</span> said "men are born and remain free and equal in rights," her first article said: "Woman is born free and remains equal to man in rights." The revolutionary government executed her in November <span class="num">1793</span>.` },
+            { p: `In <span class="num">1792</span> the English writer Mary Wollstonecraft published <em>A Vindication of the Rights of Woman</em>. She quoted Rousseau, who had warned that if women were educated like men, "the less power will they have over us," and answered: "I do not wish them to have power over men; but over themselves." Her claim was that women can reason, so they must be educated to think and decide for themselves.` },
+            { p: `In <span class="num">1840</span> two American abolitionists, Elizabeth Cady Stanton and Lucretia Mott, a Quaker minister, went to an antislavery convention in London and were refused seats as delegates because they were women. In July <span class="num">1848</span> they organized a women's rights convention in Seneca Falls, New York. Its <em>Declaration of Sentiments</em>, drafted by Stanton, copied the Declaration of Independence and added two words: "all men and women are created equal." It complained that a woman had never been "permitted ... to exercise her inalienable right to the elective franchise," the vote. The resolution demanding the vote was the only one not passed unanimously; one hundred women and men signed the declaration.` },
+            { p: `This was <span class="kt">feminism</span> emerging: the claim that women and men should have equal rights. It challenged political hierarchy, who votes and who rules, and gender hierarchy, who is in charge at home and under the law. Under the law of the time, the Seneca Falls declaration complained, a married woman was "civilly dead."` }
+          ]
+        },
+        {
+          heading: 'What stayed by 1900',
+          blocks: [
+            { p: `By <span class="num">1900</span>, kings and emperors still ruled most of Europe and much of the world, many of them sharing power with elected parliaments. Slavery had been abolished across the Americas, but other kinds of forced labor went on in many places. Many countries let some or all men vote. Women could vote in national elections almost nowhere: New Zealand, in <span class="num">1893</span>, was the first self-governing country to let women vote in its national elections.` },
+            { p: `So the Enlightenment changed the answer to "who does a state belong to?": to its people, by reason and consent, not to a king by God's will. The question it taught people to ask kept working long after the philosophers were gone. That is the change. How slowly the rights reached, and how many people were still waiting in 1900, is the continuity.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Do not write that rights reached everyone in 1789. The declaration of 1789 left women out of citizenship, France brought back slavery in 1802, and women voted almost nowhere in 1900. But do not swing to "nothing changed": the claim that rights belong to people by birth was new, and people used it.`
+            } }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Compare a claim to the words it borrows. <em>De Gouges and the Seneca Falls declaration kept the old words and changed who they covered: that is a change and a continuity in one sentence.</em>`,
+        limit: `The women at Seneca Falls were mostly white and middle class, and their declaration spoke for some women more than others. Name whose voice a source carries.`,
+        comparison: `Against <em>the 1789 declaration</em>: same words, a wider claim. Describe what each one argues for and against.`
+      },
+      terms: [
+        ['Feminism', 'The claim that women and men should have equal rights.'],
+        ['Declaration of Sentiments', 'The 1848 Seneca Falls declaration that copied the Declaration of Independence and added "and women."'],
+        ['Elective franchise', 'The right to vote in elections.'],
+        ['Hierarchy', 'A ranking of people, with some above others in power or status.']
       ]
     }
   ],
 
   closing: {
     heading: 'Building an Answer That Scores',
-    navLabel: 'Building a comparison',
-    intro: `Each card is a full argument: the claim, the specific evidence, and the reason. The second and third are the pair the success criteria ask for, so learn them together.`,
+    navLabel: 'The answer',
+    intro: `Each card gathers the evidence for one part of the answer. The first two answer Learning Objective A, the ideas as the context of the revolutions; the last two answer Learning Objective B, what the Enlightenment did to societies over time.`,
     pairs: [
       {
-        category: 'Causation',
-        title: 'Conditional authority is what makes revolution arguable',
-        body: `Divine right made resistance a sin, because the ruler&rsquo;s authority came from God. Locke&rsquo;s Two Treatises of 1689 grounded government in an agreement to protect rights people already hold, which makes legitimacy depend on performance rather than origin, so a government that violates those rights may be replaced. Rousseau went further in 1762: sovereignty belongs to the people as a body and cannot be permanently given away, so no constitution or dynasty binds them. Montesquieu in 1748 supplied the design, dividing power so power checks power. The American Declaration borrows Locke&rsquo;s structure and the United States Constitution borrows Montesquieu&rsquo;s, which is why these are attacks rather than opinions.`
+        category: 'Continuity and Change',
+        title: 'The question changed before the kings did',
+        body: `Before the Enlightenment, rulers said their power came from God, tradition and birth. Locke argued in 1689 that people are born with natural rights and that no one may be put under a government's power without consent; Montesquieu (1748) argued for the separation of powers, and Voltaire (1763) for religious toleration. What changed was what made a ruler legitimate. What continued was that kings still ruled almost everywhere.`
       },
       {
-        category: 'Mechanism',
-        title: 'Censorship with a land border is a price, not a barrier',
-        body: `French censorship ran through royal licensing and the Church, but publishing houses in Switzerland, the Dutch Republic and the Rhineland lay outside French jurisdiction, printed what Paris banned and moved it back through an organized smuggling trade. The Encyclopedie was suppressed and sold thousands of sets. Condemnation also advertised, which is why publishing anonymously or abroad was commercial strategy as much as precaution. Salons, hosted in Paris characteristically by women who chose the guests and steered the talk, and coffeehouses charging the price of a cup, carried the same arguments through ranks that never bought a banned book.`
+        category: 'Context',
+        title: 'The ideas came before the revolutions',
+        body: `The ideas spread through the Encyclopédie (1751 to 1772, banned in France and reprinted in Italy), salons, coffeehouses and letters, and came before the revolutions of 1775, 1789, 1791 and 1810. Nariño's printed translation of the French declaration in Bogotá shows them crossing the Atlantic. If a state belongs to its people, the people could be the nation, and nationalism became a major force of the 1800s.`
       },
       {
-        category: 'Structure',
-        title: 'The exclusions were built into the theory, not appended to it',
-        body: `Rousseau&rsquo;s Emile, published the same year as The Social Contract, gives the boy an education for independence and Sophie one for pleasing and serving him, so women&rsquo;s sphere is domestic by nature. The structural reason is that the rights-holder of eighteenth-century theory was a property-holding head of household representing his dependents, and under coverture a married woman could not separately own property or contract, so building rights on property and independence excluded women by construction. The same grounding cut the other way in the Atlantic: Locke held shares in the Royal African Company and served the Carolina Proprietors, and a right to property defends slaveholding once law defines people as property.`
+        category: 'Continuity and Change',
+        title: 'Reformers pressed the words further, slowly',
+        body: `Driven by natural rights and by faith, reformers founded the London antislavery society of 1787 (nine of its twelve founders were Quakers). Britain ended slavery in its empire from 1834 and Brazil, last in the Americas, in 1888. Serfdom ended in Austria in 1848 and Russia in 1861; France gave all adult men the vote in 1848. Each change took decades.`
       },
       {
-        category: 'Consequences',
-        title: 'The excluded used the authors&rsquo; own sentences',
-        body: `Wollstonecraft argued in 1792 that rights grounded in reason cannot exclude rational beings and that women&rsquo;s apparent unfitness is manufactured by their education. Olympe de Gouges rewrote the Declaration of the Rights of Man article by article in 1791 as the Declaration of the Rights of Woman, so the argument is made by the structure itself, and was executed in 1793. Equiano&rsquo;s 1789 autobiography addressed a public schooled in natural rights. And the revolutionaries of Saint-Domingue took the French declaration at its word from 1791 and won. A general claim cannot be defended selectively without being abandoned, which is why the same move recurs in every reform movement in this unit.`
+        category: 'Claims and Evidence',
+        title: 'Women kept the words and changed who they covered',
+        body: `De Gouges (1791) wrote that "woman is born free and remains equal to man in rights"; Wollstonecraft (1792) wanted women to have power "over themselves"; the Seneca Falls declaration (1848) said "all men and women are created equal" and demanded the vote. Their claims challenged political and gender hierarchies, but by 1900 women could vote in national elections almost nowhere.`
       }
     ]
   }
