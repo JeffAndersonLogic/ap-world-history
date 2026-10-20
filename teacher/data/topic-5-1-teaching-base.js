@@ -223,7 +223,7 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'New political ideas about the individual, natural rights and the social contract.',
       template: {
         claimLabel: 'The new answer',
-        claim: 'Government rests on **reason and consent**.',
+        claim: 'Power must be **rightful and limited**.',
         branches: [
           { label: 'Natural rights', note: 'Born with rights no government gives', items: ['Locke, 1689', '"lives, liberties and estates"'] },
           { label: 'Social contract', note: 'Government is an agreement', items: ['Locke: consent', 'Rousseau, 1762'] },
@@ -257,7 +257,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'Second Treatise, §95, word for word from the 1690-dated text (Project Gutenberg #7370); the cut is "as has been said,". "This estate" means this condition, being free and equal, not land.',
           'The claim, in a student\'s words: government is rightful only when the people it rules have agreed to it. What it argues against: divine right and inherited power.',
-          'Point of view, briefly: Locke wrote most of the Two Treatises around 1679 to 1683, during the Exclusion Crisis, when some in Parliament tried to keep the Catholic James, Duke of York, from the throne (Peter Laslett\'s dating, accepted by most scholars), and published it in 1689, just after Parliament replaced James II in the Glorious Revolution. Either way it defended the right to resist a king.'
+          'Point of view, briefly: most scholars place most of the writing of the Two Treatises in the Exclusion Crisis, about 1679 to 1683, when some in Parliament tried to keep the Catholic James, Duke of York, from the throne; the exact dating is debated (Laslett argued for 1679 to 1681, Ashcroft for 1681 to 1683). Locke published it in 1689, just after Parliament replaced James II in the Glorious Revolution. Either way it defended the right to resist a king.'
         ],
         ask: 'Say Locke\'s claim in your own words. What older idea is he arguing against?',
         listenFor: 'Government needs the consent of the people it rules, against the idea that God gives kings power.',
@@ -376,7 +376,7 @@ window.BEHISTORICAL_TEACHING = {
         steps: [
           { label: 'The claim', text: 'Power comes from the people' },
           { label: 'The question', text: 'Which people?' },
-          { label: '1789', text: '"Sovereignty resides essentially in the nation"', key: true },
+          { label: '1789', text: '"The principle of all sovereignty resides essentially in the nation"', key: true },
           { label: 'The 1800s', text: 'Nationalism shapes states and empires' }
         ],
         links: ['raises', 'answered by', 'and then']
@@ -520,13 +520,13 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         frame: '{{The writer}} claims that {{the claim in your own words}}, arguing against {{the older idea}}.',
         exampleLabel: 'Montesquieu, 1748',
-        example: '**Montesquieu** claims that **people stay free only when no one person or group holds all the power**, arguing against **a king who makes the laws, carries them out and judges them all himself**.'
+        example: '**Montesquieu** claims that **people stay free only when no one person or group holds all the power**, arguing against **letting one ruler make the laws, carry them out and judge them all at once**.'
       },
       notes: {
         minutes: 2,
         land: [
           'The suggested skill, 3.A: identify and describe a claim and/or argument in a source. Identify: find it. Describe: put it in your own words, with what it is for and against.',
-          'The source sentence, The Spirit of the Laws, Book XI, chapter 6, in Thomas Nugent\'s English translation of 1750: "When the legislative and executive powers are united in the same person, or in the same body of magistrates, there can be no liberty." Read it aloud, then build the model line with the room. Montesquieu was chosen because no student task in this lesson asks about him, so the model gives away no answer.',
+          'The source sentence, The Spirit of the Laws, Book XI, chapter 6, in Thomas Nugent\'s English translation of 1750: "When the legislative and executive powers are united in the same person, or in the same body of magistrates, there can be no liberty." Read it aloud, then build the model line with the room. Montesquieu\'s own example of all the powers held together was the Ottoman sultan; he called Europe\'s monarchies, France included, moderate because their kings left judging to the courts. Montesquieu was chosen because the First & 10 question, the Skill Builder practice and both checkpoints ask about other writers, so the model gives away none of their answers.',
           'The common mistake is copying the quotation as the claim. A described claim is in the student\'s own words.'
         ],
         ask: 'Why is copying the quotation not enough?',
@@ -542,7 +542,7 @@ window.BEHISTORICAL_TEACHING = {
         left: { tag: 'France, 1789', name: 'Declaration of the Rights of Man', when: 'Article 1', text: '"Men are born and remain free and equal in rights."' },
         right: { tag: 'France, 1791', name: 'Olympe de Gouges', when: 'Article 1', text: '"Woman is born free and remains equal to man in rights."' },
         claimLabel: 'Your turn',
-        claim: 'Use the frame: **what does she keep, and what does she change?**'
+        claim: 'Use the frame: de Gouges claims that ..., arguing against ... **Which words does she keep, and what does she change?**'
       },
       notes: {
         minutes: 2,
@@ -585,7 +585,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'The reasoning move for LO B: the Enlightenment affected societies over time, but the change was slow and uneven.',
-          'Women\'s votes: New Zealand, on 19 September 1893, became the first self-governing country where women could vote in national elections (NZHistory). Britain followed fully in 1928, the United States in 1920.',
+          'Women\'s votes: New Zealand, on 19 September 1893, became the first self-governing country where all adult women could vote in national elections (the Isle of Man had let some property-owning women vote in 1881) (NZHistory). Britain followed fully in 1928, the United States in 1920.',
           'Other forced labor: indentured and colonial forced labor continued and grew in the 1800s (Unit 6). Kings: by 1900 France and Switzerland were the main republics in Europe; most of the rest had monarchs, many with parliaments.'
         ],
         ask: 'What is the biggest continuity on this slide, and why did it last?',
@@ -600,7 +600,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         rows: [
           { myth: 'The Enlightenment caused the revolutions.', evidence: 'It came first and gave revolutionaries words. Taxes, debt, war and slavery mattered too.', source: 'KC-5.3.I; Topic 5.2' },
-          { myth: 'The Enlightenment was against religion.', evidence: 'Most writers believed in God. They questioned faith forced by the state, and faith drove abolition.', source: 'KC-5.3.I.A, I.C' },
+          { myth: 'The Enlightenment was against religion.', evidence: 'Most writers believed in God. They questioned faith forced by the state, and faith, with natural rights, drove abolition.', source: 'KC-5.3.I.A, I.C' },
           { myth: 'Rights reached everyone in 1789.', evidence: 'Slavery lasted in Brazil to 1888; women voted almost nowhere in 1900.', source: 'Topic 5.1' }
         ]
       },
@@ -688,14 +688,14 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'close', kind: 'frame-subtitle', eyebrow: 'The Hand-off',
-      title: 'Next: the ideas become revolutions.',
-      subtitle: 'In America, France, Haiti and Spanish America, people turned the words into revolutions. What caused them, and what did they create? That is Topic 5.2.',
+      title: 'By what right? The answer kept growing.',
+      subtitle: 'Liberty and learning, as one painter imagined them about 1792, while slavery was still legal in most American states. Next, Topic 5.2: people turn the words into revolutions.',
       notes: {
         minutes: 2,
         land: [
           'The picture: Samuel Jennings, study for Liberty Displaying the Arts and Sciences, or The Genius of America Encouraging the Emancipation of the Blacks, about 1791 to 1792 (Metropolitan Museum of Art 2016.50, public domain). Jennings, a Philadelphia-born painter working in London, offered the finished painting to the Library Company of Philadelphia, whose directors were mostly Quakers and abolitionists. Liberty, surrounded by books, a globe, a lyre and an artist\'s palette, holds out a book toward kneeling Black men and women; a broken chain lies at her feet, and freed people celebrate in the distance. The Met calls it the first known painting by an American-born artist about slavery and its abolition.',
           'Read it as a source with a claim (3.A): learning and liberty will free the enslaved. And name its limit: a white artist shows freedom as a gift handed down to kneeling Black people, and when it was painted slavery was still legal in most American states.',
-          'The slide projects only the hand-off. Ask for the one-sentence answer aloud; the listen-for line is for the teacher.'
+          'The slide projects the spine and the hand-off over the picture, and its subtitle says what the picture is and when it was made, so students do not read it as a record of what happened. Ask for the one-sentence answer aloud; the listen-for line is for the teacher.'
         ],
         ask: 'Before the hand-off: say the topic in one sentence.',
         listenFor: 'Enlightenment thinkers changed the answer to "who does a state belong to?" from a king by God\'s will to the people, by reason and consent, and over the next century people pressed those words until rights reached further, though not to everyone by 1900.'

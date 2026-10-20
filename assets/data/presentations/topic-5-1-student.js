@@ -36,7 +36,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "visual": {
           "url": "../assets/images/topics/5-1/air-pump-experiment-green-1769.jpg",
-          "alt": "Black-and-white mezzotint of a candlelit room at night: a lecturer with long grey hair stands behind a glass globe with a bird inside, his hand on the pump; around the table a family and their friends watch, two young girls look upset, a boy by the window lowers a birdcage, and the moon shows through the window",
+          "alt": "Black-and-white mezzotint of a candlelit room at night: a lecturer with long grey hair stands behind a glass globe with a bird inside, his hand on the valve at the top of the glass globe; around the table a family and their friends watch, two young girls look upset, a boy by the window lowers a birdcage, and the moon shows through the window",
           "credit": "Valentine Green, after Joseph Wright of Derby, A Philosopher Shewing an Experiment on the Air Pump, mezzotint, London, 1769 · Metropolitan Museum of Art · Public domain",
           "ratio": 1.271,
           "position": "50% 40%",
@@ -117,7 +117,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kc": "KC-5.3.I.A",
       "template": {
         "claimLabel": "The new answer",
-        "claim": "Government rests on **reason and consent**.",
+        "claim": "Power must be **rightful and limited**.",
         "branches": [
           {
             "label": "Natural rights",
@@ -329,7 +329,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "1789",
-            "text": "\"Sovereignty resides essentially in the nation\"",
+            "text": "\"The principle of all sovereignty resides essentially in the nation\"",
             "key": true
           },
           {
@@ -489,7 +489,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "frame": "{{The writer}} claims that {{the claim in your own words}}, arguing against {{the older idea}}.",
         "exampleLabel": "Montesquieu, 1748",
-        "example": "**Montesquieu** claims that **people stay free only when no one person or group holds all the power**, arguing against **a king who makes the laws, carries them out and judges them all himself**."
+        "example": "**Montesquieu** claims that **people stay free only when no one person or group holds all the power**, arguing against **letting one ruler make the laws, carry them out and judge them all at once**."
       }
     },
     {
@@ -512,7 +512,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "text": "\"Woman is born free and remains equal to man in rights.\""
         },
         "claimLabel": "Your turn",
-        "claim": "Use the frame: **what does she keep, and what does she change?**"
+        "claim": "Use the frame: de Gouges claims that ..., arguing against ... **Which words does she keep, and what does she change?**"
       }
     },
     {
@@ -572,7 +572,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "myth": "The Enlightenment was against religion.",
-            "evidence": "Most writers believed in God. They questioned faith forced by the state, and faith drove abolition.",
+            "evidence": "Most writers believed in God. They questioned faith forced by the state, and faith, with natural rights, drove abolition.",
             "source": "KC-5.3.I.A, I.C"
           },
           {
@@ -648,8 +648,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "frame-subtitle",
       "eyebrow": "The Hand-off",
-      "title": "Next: the ideas become revolutions.",
-      "subtitle": "In America, France, Haiti and Spanish America, people turned the words into revolutions. What caused them, and what did they create? That is Topic 5.2.",
+      "title": "By what right? The answer kept growing.",
+      "subtitle": "Liberty and learning, as one painter imagined them about 1792, while slavery was still legal in most American states. Next, Topic 5.2: people turn the words into revolutions.",
       "template": {
         "visual": {
           "url": "../assets/images/topics/5-1/liberty-arts-sciences-jennings-c1792.jpg",

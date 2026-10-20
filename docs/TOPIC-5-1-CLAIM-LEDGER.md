@@ -262,3 +262,37 @@ capitals). No finding was rejected. The new Montesquieu quotation is checked: Nu
 1750, Book XI ch. 6, constitution.org text, "When the legislative and executive powers are united in the
 same person, or in the same body of magistrates, there can be no liberty." Pass 2 runs from a fresh
 packet.
+
+### Pass 2, reviewer 1 (page truth, readability, CED, ownership; cheaper model), 9 findings
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | Checkpoint 1 says "three steps" and lists four; step 4 is a riddle | FIXED: "four steps"; step 4 asks how the idea that a state belongs to its people turned into loyalty to the nation, nationalism |
+| 2 | Checkpoint 2, First & 10 Q3, Target 3 and Criterion 3 require ideas or faith as the cause, but the course gives the end of serfdom another cause (the tsar's fear of revolt) and gives the vote none | FIXED: all four now ask what pushed it forward, "Enlightenment ideas, religious faith, or another cause, such as a ruler's fear of revolt." The CED's "influenced" allows it |
+| 3 | Slide 28's picture (an emancipation allegory) sits under "the ideas become revolutions"; lecture card 2 captions the fan plate as a book the card never mentions | FIXED: slide 28 lands the spine and says what the picture is and when; the hand-off is its last line. Card 2 shows the local artwork |
+| 4 | Slide 13 shortens Article 3 inside quotation marks | FIXED: the full sentence |
+| 5 | Slide 8 notes state one dating of Locke as settled and misattribute it | FIXED: "most scholars place most of the writing in the Exclusion Crisis, about 1679 to 1683; the exact dating is debated (Laslett 1679 to 1681, Ashcroft 1681 to 1683)" |
+| 6 | The Montesquieu model says he argued against Louis XIV | FIXED (with reviewer 2, #1) |
+| 7 | Slide 20's prompt names a frame that does not fit the question | FIXED: the prompt now uses the frame and adds the keep and change question |
+| 8 | Slide 23 makes faith the single cause of abolition | FIXED: "faith, with natural rights, drove abolition" |
+| 9 | Five more BeInTheRoom strings above a ninth grader ("sedition", "transnational", "solidarity", "universality") | FIXED: rewritten in plain words |
+
+### Pass 2, reviewer 2 (history; default model), 8 findings
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | Montesquieu is made to argue against Louis XIV; in Book XI ch. 6 he calls Europe's monarchies moderate and his example is the Turkish sultan | FIXED: the Skill Builder, the reading's callout and slide 19 now say he argued against letting any one ruler or group hold all the powers at once; the Skill Builder names his own example, the Ottoman sultan. Nugent's text checked: "Most kingdoms in Europe enjoy a moderate government because the prince ... leaves the third to his subjects. In Turkey, where these three powers are united in the Sultan's person ..." |
+| 2 | New Zealand "first" needs "all": the Isle of Man let propertied women vote in 1881 | FIXED: "the first self-governing country where all adult women could vote in national elections" on the reading, deep reading, lecture card 4 and slide 22 notes (which name the Isle of Man) |
+| 3 | BeSurreal has the vote debate before the signing; the 1848 report has the declaration adopted and signed in the morning and the resolutions in the afternoon | FIXED: the scene is the morning of 20 July, signing now, the vote resolution to come that afternoon; the prompt asks about both |
+| 4 | "The two of them organized" Seneca Falls; the NPS names five organizers | FIXED: "with three other women" on the reading, deep reading, lecture card 4 and Primary Source; the CED's example line is unchanged |
+| 5 | Separation of powers is filed under consent and legitimacy, and Q01 makes students claim Montesquieu argued that | FIXED: section 3 says Locke and Rousseau's answer was consent and Montesquieu added that power must be divided; the branch claim on slide 7 reads "Power must be rightful and limited"; Q01, Checkpoint 1 and Criterion 1 no longer offer separation of powers as the idea that replaces divine right |
+| 6 | Air-pump alt text: the lecturer's hand is on the valve at the top of the globe, not the pump | FIXED in both alt texts |
+| 7 | Checkpoint 1 step count | FIXED (with reviewer 1, #1) |
+| 8 | Slide 19 note says no task asks about Montesquieu, which was false while Q01 and Checkpoint 1 offered separation of powers | FIXED: with #5, no task asks for Montesquieu; the note now says which tasks use other writers |
+
+### Pass 2 outcome
+
+17 findings, 15 distinct, all fixed; none rejected. Smaller than pass 1 (21 distinct), with no CED
+misalignment or ownership finding; the history findings were narrowings (a "first" without "all", an
+organizer count, a sequence inside one day) and one source-to-claim error in a teaching example. Pass 3
+runs from a fresh packet.

@@ -125,12 +125,12 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Notice what changed. These ideas did not get rid of kings. They changed what made a ruler <em>legitimate</em>, meaning rightful. The old answer was God and birth. The new answer was reason and the consent of the people."
+            "html": "Notice what changed. These ideas did not get rid of kings. They changed what made a ruler <em>legitimate</em>, meaning rightful. The old answer was God and birth. Locke's and Rousseau's new answer was reason and the consent of the people, and Montesquieu added that power must be divided so that no one could abuse it."
           }
         ],
         "callout": {
           "label": "AP Thinking, Claims and Evidence in Sources",
-          "raw": "<p><strong>Find the claim.</strong> A claim is what a writer wants you to believe. Montesquieu's claim is that people stay free only when no one person or group holds all the power. To describe a claim, say it in your own words, then say what it argues against: here, a king who makes the laws, carries them out, and judges them all by himself.</p>"
+          "raw": "<p><strong>Find the claim.</strong> A claim is what a writer wants you to believe. Montesquieu's claim is that people stay free only when no one person or group holds all the power. To describe a claim, say it in your own words, then say what it argues against: here, letting one ruler make the laws, carry them out, and judge them all at once.</p>"
         }
       },
       {
@@ -198,7 +198,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In 1840 the American abolitionist Lucretia Mott, a Quaker minister, went to an antislavery convention in London as a delegate and was refused a seat because she was a woman. Elizabeth Cady Stanton, who was there with her husband, a delegate, sat with Mott and the other women, apart from the men. In July 1848 the two of them organized a women's rights convention in Seneca Falls, New York. Its <em>Declaration of Sentiments</em> borrowed the words of the Declaration of Independence and changed them: \"We hold these truths to be self-evident; that all men and women are created equal.\" It demanded the right to vote. That demand was the only resolution at the convention that did not pass unanimously, and 100 women and men signed the declaration."
+            "html": "In 1840 the American abolitionist Lucretia Mott, a Quaker minister, went to an antislavery convention in London as a delegate and was refused a seat because she was a woman. Elizabeth Cady Stanton, who was there with her husband, a delegate, sat with Mott and the other women, apart from the men. In July 1848 the two of them, with three other women, organized a women's rights convention in Seneca Falls, New York. Its <em>Declaration of Sentiments</em> borrowed the words of the Declaration of Independence and changed them: \"We hold these truths to be self-evident; that all men and women are created equal.\" It demanded the right to vote. That demand was the only resolution at the convention that did not pass unanimously, and 100 women and men signed the declaration."
           },
           {
             "type": "p",
@@ -206,7 +206,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Now look at what stayed. By 1900, kings and emperors still ruled most of Europe and much of the world. Slavery had ended across the Americas, but other kinds of forced labor went on in many places. Many countries let some or all men vote, but women could vote in national elections almost nowhere; New Zealand, in 1893, was the first self-governing country to let women vote in its national elections."
+            "html": "Now look at what stayed. By 1900, kings and emperors still ruled most of Europe and much of the world. Slavery had ended across the Americas, but other kinds of forced labor went on in many places. Many countries let some or all men vote, but women could vote in national elections almost nowhere; New Zealand, in 1893, was the first self-governing country where all adult women could vote in national elections."
           },
           {
             "type": "p",
@@ -230,7 +230,7 @@ module.exports = {
       {
         "num": "01",
         "skill": "Continuity and Change",
-        "text": "Before the Enlightenment, most rulers said their power came from God, tradition, and birth. Choose ONE idea from Section 3 (natural rights, the social contract, or the separation of powers). Explain what it said made a government rightful instead, and how that was a change from divine right.",
+        "text": "Before the Enlightenment, most rulers said their power came from God, tradition, and birth. Choose ONE idea from Section 3: natural rights or the social contract. Explain what it said made a government rightful instead, and how that was a change from divine right.",
         "placeholder": "The idea I chose is... It said a government is rightful when... This changed the old answer because..."
       },
       {
@@ -242,8 +242,8 @@ module.exports = {
       {
         "num": "03",
         "skill": "Continuity and Change",
-        "text": "Choose ONE reform movement from Sections 5 and 6: abolition, the end of serfdom, the right to vote, or women's rights. Explain how Enlightenment ideas or religious faith pushed it forward, and name one thing that had still not changed by 1900.",
-        "placeholder": "The reform movement I chose is... Enlightenment ideas or faith pushed it forward because... By 1900, one thing that still had not changed was..."
+        "text": "Choose ONE reform movement from Sections 5 and 6: abolition, the end of serfdom, the right to vote, or women's rights. Explain what pushed it forward: Enlightenment ideas, religious faith, or another cause, such as a ruler's fear of revolt. Then name one thing that had still not changed by 1900.",
+        "placeholder": "The reform movement I chose is... It was pushed forward by... By 1900, one thing that still had not changed was..."
       }
     ],
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",

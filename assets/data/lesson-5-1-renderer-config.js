@@ -100,7 +100,7 @@
       { label: 'Read the source', text: 'Montesquieu, The Spirit of the Laws, 1748, in an English translation of 1750: "When the legislative and executive powers are united in the same person, or in the same body of magistrates, there can be no liberty." (The legislative power makes the laws; the executive power carries them out; magistrates are officials.)' },
       { label: 'Identify the claim', text: 'Find what Montesquieu wants you to believe. Here it is the end of the sentence: when one person or group both makes and carries out the laws, people are not free.' },
       { label: 'Describe it in your own words', text: 'Montesquieu claims that people stay free only when no one person or group holds all the power.' },
-      { label: 'Say what it argues against', text: 'Montesquieu is arguing against a king who makes the laws, carries them out, and judges them all himself, as Louis XIV did. Use this frame: "[The writer] claims that [the claim in your own words], arguing against [the older idea]."' }
+      { label: 'Say what it argues against', text: 'Montesquieu is arguing against letting any one ruler or group hold all these powers at once. His own example of that was the Ottoman sultan. Use this frame: "[The writer] claims that [the claim in your own words], arguing against [the older idea]."' }
     ],
     prompt: 'Now do it yourself. Choose TWO of these three sources. (1) Jean-Jacques Rousseau, 1762, the first line of his book on the social contract: "Man is born free; and everywhere he is in chains." (2) Immanuel Kant, 1784, the motto of his essay "What Is Enlightenment?": "Dare to know," which he explained as having the courage to use your own understanding. (3) The motto of a society founded in London in 1787 to end the British slave trade, under a picture of a kneeling African man in chains: "Am I not a man and a brother?" For EACH source you choose, write two sentences: identify and describe the claim in your own words, then say what older idea or practice it argues against.',
     criteria: [
@@ -118,7 +118,7 @@
       cardDesc: 'One new Enlightenment idea, the old answer it challenged, how the ideas spread before the Atlantic revolutions, and how the people became the nation.',
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
-      prompt: 'Answer in three steps. (1) Before the Enlightenment, most rulers said their power came from God, tradition, and birth. Choose ONE new Enlightenment idea: natural rights, the social contract, the separation of powers, or religious toleration. Explain what it said and name a writer who argued it. (2) Explain how that idea challenged the old answer. (3) Explain how Enlightenment ideas spread, using one example (books such as the Encyclopédie, salons, coffeehouses, or letters), and explain what it means that the ideas came before the revolutions that began in 1775, 1789, 1791, and 1810. (4) If a state belongs to its people, which people? Explain how "the people" came to mean the nation.',
+      prompt: 'Answer in four steps. (1) Before the Enlightenment, most rulers said their power came from God, tradition, and birth. Choose ONE new Enlightenment idea: natural rights, the social contract, or religious toleration. Explain what it said and name a writer who argued it. (2) Explain how that idea challenged the old answer. (3) Explain how Enlightenment ideas spread, using one example (books such as the Encyclopédie, salons, coffeehouses, or letters), and explain what it means that the ideas came before the revolutions that began in 1775, 1789, 1791, and 1810. (4) Explain how the idea that a state belongs to its people turned into loyalty to the nation, called nationalism.',
       responseType: 'Checkpoint 1',
       terms: ['divine right', 'reason', 'evidence', 'empiricism', 'natural rights', 'social contract', 'consent', 'separation of powers', 'religious toleration', 'deism', 'Locke', 'Rousseau', 'Montesquieu', 'Voltaire', 'Calas', 'Encyclopédie', 'salon', 'print', 'came before', 'preceded', 'revolution', 'nation', 'nationalism'],
       focus: ['Explain one new idea and name a writer who argued it.', 'Explain how it challenged the old answer: God, tradition, and birth.', 'Explain how the ideas spread, and that they came before the revolutions.', 'Explain how "the people" came to mean the nation.']
@@ -129,11 +129,11 @@
       cardDesc: 'One reform movement, what drove it, how far it got by 1900, and what had still not changed.',
       learningTargets: [lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[2].criteria],
-      prompt: 'Explain how the Enlightenment affected societies over time, between 1750 and 1900. (1) Choose ONE reform movement: abolishing slavery, ending serfdom, widening the right to vote, or women\'s rights. (2) Explain how Enlightenment ideas, religious faith, or both pushed it forward. Use at least one specific piece of evidence, for example the 1787 antislavery society in London, Olaudah Equiano, Russia in 1861, France in 1848, Olympe de Gouges, Mary Wollstonecraft, or the Seneca Falls convention. (3) Explain what the movement had changed by 1900, with a date. (4) Explain one thing that had still not changed by 1900.',
+      prompt: 'Explain how the Enlightenment affected societies over time, between 1750 and 1900. (1) Choose ONE reform movement: abolishing slavery, ending serfdom, widening the right to vote, or women\'s rights. (2) Explain what pushed it forward: Enlightenment ideas, religious faith, or another cause, such as a ruler\'s fear of revolt. Use at least one specific piece of evidence, for example the 1787 antislavery society in London, Olaudah Equiano, Russia in 1861, France in 1848, Olympe de Gouges, Mary Wollstonecraft, or the Seneca Falls convention. (3) Explain what the movement had changed by 1900, with a date. (4) Explain one thing that had still not changed by 1900.',
       responseType: 'Checkpoint 2',
       skill: 'Continuity and Change',
       terms: ['reform movement', 'abolition', 'slavery', 'Quakers', 'Equiano', 'serfdom', 'serfs', 'suffrage', 'vote', 'women\'s rights', 'feminism', 'de Gouges', 'Wollstonecraft', 'Seneca Falls', 'Stanton', 'Mott', 'natural rights', 'religious', 'faith', 'continuity', 'change', '1900'],
-      focus: ['Choose one reform movement and explain what drove it: ideas, faith, or both.', 'Explain what it had changed by 1900, with a date and a piece of evidence.', 'Explain one thing that had still not changed by 1900.']
+      focus: ['Choose one reform movement and explain what drove it: ideas, faith, or another cause.', 'Explain what it had changed by 1900, with a date and a piece of evidence.', 'Explain one thing that had still not changed by 1900.']
     }
   ];
 
@@ -147,7 +147,7 @@
   lesson.images = [
     {
       title: 'An Experiment at Home, 1769',
-      alt: 'Black-and-white print of a candlelit room at night: a lecturer with long grey hair stands behind a glass globe with a bird inside, his hand on the pump; around the table a family and their friends watch, two young girls look upset, and a boy by the window holds a birdcage.',
+      alt: 'Black-and-white print of a candlelit room at night: a lecturer with long grey hair stands behind a glass globe with a bird inside, his hand on the valve at the top of the glass globe; around the table a family and their friends watch, two young girls look upset, and a boy by the window holds a birdcage.',
       url: '../assets/images/topics/5-1/air-pump-experiment-green-1769.jpg',
       sourceUrl: 'https://www.metmuseum.org/art/collection/search/359795',
       caption: 'A mezzotint (a kind of print) made by Valentine Green in London in 1769, copying Joseph Wright of Derby\'s painting of 1768. A traveling lecturer pumps the air out of a glass globe with a bird inside, to show that living things need air. Metropolitan Museum of Art.',

@@ -248,7 +248,7 @@ once.
 - In 1840 the American abolitionist **Lucretia Mott**, a Quaker minister, went to an antislavery
   convention in London as a delegate and was refused a seat because she was a woman; **Elizabeth
   Cady Stanton**, there with her delegate husband, sat with the women, apart from the men. In July
-  1848 the two of them organized a women's rights convention at **Seneca
+  1848 the two of them, with three other women, organized a women's rights convention at **Seneca
   Falls**, New York. Its *Declaration of Sentiments* borrowed the words of the Declaration of
   Independence and changed one: "We hold these truths to be self-evident; that all men **and
   women** are created equal." It demanded the vote. That demand was the only resolution that did
@@ -260,8 +260,8 @@ at home and in law).
 **What stayed.** By 1900 kings and emperors still ruled most of Europe and much of the world.
 Slavery had ended across the Americas, but other forms of forced labor went on in many places.
 Most countries let some or all men vote, and women could vote in national elections almost
-nowhere; New Zealand, in 1893, was the first self-governing country to let women vote in
-national elections. The ideas changed fast; the world changed slowly.
+nowhere; New Zealand, in 1893, was the first self-governing country where all adult women
+could vote in national elections. The ideas changed fast; the world changed slowly.
 
 **So, who do states belong to?** The Enlightenment changed the answer: to their people, by reason
 and consent, not to a king by God's will. The question it taught people to ask, "by what right?",
@@ -431,8 +431,8 @@ final report.
 6. **Evidence Lab:** short verified excerpts (Locke, Wollstonecraft, de Gouges, Seneca Falls) and
    real objects where Commons can be reached (the Geoffrin salon painting, the Wedgwood medallion);
    the "quoted directly" Locke card leaves.
-7. **BeSurreal:** Seneca Falls, 20 July 1848: you are a woman deciding whether to sign a declaration
-   that demands the vote, knowing that many people, including some of its friends, think the demand
+7. **BeSurreal:** Seneca Falls, the morning of 20 July 1848: you are a woman deciding whether to sign
+   the declaration just adopted, and how to vote that afternoon on the resolution that demands the vote, knowing that many people, including some of its friends, think the demand
    goes too far. It replaces the 1762 salon scene, which cited a declaration that did not exist yet.
 8. **BeInTheRoom:** the existing scenario, "The Natural Rights Test" (Paris, 1788 to 1789), is kept,
    with its alignment corrected to the CED (LO A, KC-5.3.I.A and KC-5.3.I), its premise checked
