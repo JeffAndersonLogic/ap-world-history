@@ -102,7 +102,7 @@
       { label: 'Describe it in your own words', text: 'Montesquieu claims that people stay free only when no one person or group holds all the power.' },
       { label: 'Say what it argues against', text: 'Montesquieu is arguing against letting any one ruler or group hold all these powers at once. His own example of that was the Ottoman sultan. Use this frame: "[The writer] claims that [the claim in your own words], arguing against [the older idea]."' }
     ],
-    prompt: 'Now do it yourself. Choose TWO of these three sources. (1) Jean-Jacques Rousseau, 1762, the first line of his book on the social contract: "Man is born free; and everywhere he is in chains." (2) Immanuel Kant, 1784, the motto of his essay "What Is Enlightenment?": "Dare to know," which he explained as having the courage to use your own understanding. (3) The motto of a society founded in London in 1787 to end the British slave trade, under a picture of a kneeling African man in chains: "Am I not a man and a brother?" For EACH source you choose, write two sentences: identify and describe the claim in your own words, then say what older idea or practice it argues against.',
+    prompt: 'Now do it yourself. Choose TWO of these three sources. (1) Jean-Jacques Rousseau, 1762, the first line of his book on the social contract: "Man is born free; and everywhere he is in chains." (2) Immanuel Kant, 1784, in his essay "What Is Enlightenment?", giving the Enlightenment its motto: "Dare to know," which he explained as having the courage to use your own understanding. (3) The motto of a society founded in London in 1787 to end the British slave trade, under a picture of a kneeling African man in chains: "Am I not a man and a brother?" For EACH source you choose, write two sentences: identify and describe the claim in your own words, then say what older idea or practice it argues against.',
     criteria: [
       'I identified the claim in each source.',
       'I described it in my own words, not by copying the quotation.',
@@ -158,7 +158,7 @@
       alt: 'The title page of a large old printed book: ENCYCLOPÉDIE, OU DICTIONNAIRE RAISONNÉ DES SCIENCES, DES ARTS ET DES MÉTIERS, with the names Diderot and d\'Alembert, Tome Premier, a small engraving of classical figures, and A LUCQUES, M.DCC.LVIII at the bottom.',
       url: '../assets/images/topics/5-1/encyclopedie-title-lucca-1758.jpg',
       sourceUrl: 'https://www.metmuseum.org/art/collection/search/716639',
-      caption: 'The title page of volume 1 of the Encyclopédie\'s second edition, printed in Lucca, Italy, in 1758, while the first edition was still coming out in Paris. The title means "Encyclopedia, or a Dictionary of the Sciences, Arts, and Crafts, Explained by Reason." Metropolitan Museum of Art.',
+      caption: 'The title page of volume 1 of the Encyclopédie\'s second edition, printed in Lucca, Italy, in 1758, while the first edition was still coming out in Paris. The title means "Encyclopedia, or a Systematic Dictionary of the Sciences, Arts, and Crafts"; the French word raisonné, "reasoned," means organized and explained by reason. Metropolitan Museum of Art.',
       prompt: 'NOTICE the title and the place and date at the bottom (M.DCC.LVIII is 1758). INFER what it shows about how far Enlightenment ideas spread, and what the title claims about how knowledge should be organized. What can a title page not tell you about who read the book, or what they thought of it?'
     },
     {
@@ -166,7 +166,7 @@
       alt: 'A small cream-colored pottery jug with a copper-colored rim; printed on its side in black, a man of African descent sits on a rock by the sea holding a chain, a sailing ship behind him, and the words AM NOT I A MAN AND A BROTHER.',
       url: '../assets/images/topics/5-1/abolitionist-jug-c1820.jpg',
       sourceUrl: 'https://www.metmuseum.org/art/collection/search/841224',
-      caption: 'A pottery jug made about 1820, printed with a man of African descent holding a chain and the motto first used in 1787 by the London society to end the British slave trade. By about 1820 the trade had been banned, and campaigners were working to end slavery itself. Abolitionists put the motto on everyday objects people used at home. Metropolitan Museum of Art.',
+      caption: 'A pottery jug made about 1820, printed with a man of African descent holding a chain and a version of the motto ("Am I not a man and a brother?") first used in 1787 by the London society to end the British slave trade. By about 1820 the trade had been banned, and campaigners were working to end slavery itself. Abolitionists put the motto on everyday objects people used at home. Metropolitan Museum of Art.',
       prompt: 'NOTICE the words and the picture. INFER what claim the jug makes, and why someone would put it on a jug instead of in a book. The people who made and bought objects like this were mostly white Britons. What can the jug not tell you about what enslaved people themselves thought or did?'
     },
     {
@@ -176,7 +176,7 @@
         '“Men being ... by nature, all free, equal, and independent, no one can be put out of this estate, and subjected to the political power of another, without his own consent.”',
         '(“This estate” means this condition: being free and equal.)'
       ],
-      caption: 'Published in 1689, just after the English Parliament replaced King James II. Locke had written most of it about ten years earlier, when some members of Parliament were trying to keep James from becoming king.',
+      caption: 'Published in 1689, just after the English Parliament replaced King James II. Most historians think Locke wrote most of it in the early 1680s, when some members of Parliament were trying to keep the Catholic James from becoming king.',
       prompt: 'Identify Locke\'s claim and describe it in your own words. What older idea about where a ruler\'s power comes from is he arguing against? Who might Locke not have had in mind when he wrote "men"?'
     },
     {

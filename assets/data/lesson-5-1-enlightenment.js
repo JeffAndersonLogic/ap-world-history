@@ -55,7 +55,7 @@ window.BEHISTORICAL_LESSON = {
 
   successCriteria: [
     {
-      criteria: "I can explain one new Enlightenment idea (natural rights, the social contract, or religious toleration), name a writer who argued it (Locke, Rousseau, Montesquieu, or Voltaire), and explain how it challenged the old answer that rulers' power came from God, tradition, and birth.",
+      criteria: "I can explain one new Enlightenment idea (natural rights, the social contract, or religious toleration), name a writer who argued it (Locke, Rousseau, or Voltaire), and explain how it challenged the old answer that rulers' power came from God, tradition, and birth.",
       kc: 'KC-5.3.I.A',
       theme: "Cultural Developments and Interactions"
     },

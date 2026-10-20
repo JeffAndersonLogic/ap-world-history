@@ -318,7 +318,7 @@ module.exports = [
     highlights: [
       { zone: 'westernEurope', label: 'FRANCE', tone: 'bronze', legend: 'Salons and the Encyclopédie, 1751 to 1772' },
       { zone: 'britain', label: 'BRITAIN', tone: 'gold', legend: 'Locke, 1689; abolition society, 1787' },
-      { zone: 'easternEurope', label: 'AUSTRIA AND RUSSIA', tone: 'sand', legend: 'Serfdom ends: Austria 1848, Russia 1861' },
+      { zone: 'easternEurope', label: 'AUSTRIA AND RUSSIA', labelSide: 'right', tone: 'sand', legend: 'Serfdom ends: Austria 1848, Russia 1861' },
       { zone: 'unitedStates', label: 'UNITED STATES', tone: 'slate', legend: 'Women\'s rights convention, Seneca Falls, 1848' },
       { zone: 'brazil', label: 'BRAZIL', tone: 'plum', legend: 'Last in the Americas to end slavery, 1888' }
     ],

@@ -6794,7 +6794,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
             "I can explain how Enlightenment ideas spread and came before the revolutions in the Atlantic world, and how the idea that a state belongs to its people became loyalty to the nation."
           ],
           "successCriteria": [
-            "I can explain one new Enlightenment idea (natural rights, the social contract, or religious toleration), name a writer who argued it (Locke, Rousseau, Montesquieu, or Voltaire), and explain how it challenged the old answer that rulers' power came from God, tradition, and birth.",
+            "I can explain one new Enlightenment idea (natural rights, the social contract, or religious toleration), name a writer who argued it (Locke, Rousseau, or Voltaire), and explain how it challenged the old answer that rulers' power came from God, tradition, and birth.",
             "I can explain one way Enlightenment ideas spread (books such as the Encyclopédie, salons, coffeehouses, or letters), explain what it means that the ideas came before the revolutions that began in 1775, 1789, 1791, and 1810, and explain how \"the people\" came to mean the nation."
           ]
         },
@@ -6937,7 +6937,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "05",
           "module": "AP Skill Builder",
           "label": "Module 05, AP Skill Builder",
-          "prompt": "Now do it yourself. Choose TWO of these three sources. (1) Jean-Jacques Rousseau, 1762, the first line of his book on the social contract: \"Man is born free; and everywhere he is in chains.\" (2) Immanuel Kant, 1784, the motto of his essay \"What Is Enlightenment?\": \"Dare to know,\" which he explained as having the courage to use your own understanding. (3) The motto of a society founded in London in 1787 to end the British slave trade, under a picture of a kneeling African man in chains: \"Am I not a man and a brother?\" For EACH source you choose, write two sentences: identify and describe the claim in your own words, then say what older idea or practice it argues against.",
+          "prompt": "Now do it yourself. Choose TWO of these three sources. (1) Jean-Jacques Rousseau, 1762, the first line of his book on the social contract: \"Man is born free; and everywhere he is in chains.\" (2) Immanuel Kant, 1784, in his essay \"What Is Enlightenment?\", giving the Enlightenment its motto: \"Dare to know,\" which he explained as having the courage to use your own understanding. (3) The motto of a society founded in London in 1787 to end the British slave trade, under a picture of a kneeling African man in chains: \"Am I not a man and a brother?\" For EACH source you choose, write two sentences: identify and describe the claim in your own words, then say what older idea or practice it argues against.",
           "skill": "Claims and Evidence",
           "skills": [
             "Claims and Evidence"

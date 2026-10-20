@@ -84,7 +84,7 @@
   <g id="region-labels">
     <text class="region halo" x="817.8" y="303.8" text-anchor="middle" fill="#1A1C1D"><tspan x="817.8" dy="0">FRANCE</tspan></text>
     <text class="region halo" x="791.1" y="175.3" text-anchor="middle" fill="#1A1C1D"><tspan x="791.1" dy="0">BRITAIN</tspan></text>
-    <text class="region halo" x="915.6" y="347.1" text-anchor="middle" fill="#1A1C1D"><tspan x="915.6" dy="0">AUSTRIA AND</tspan><tspan x="915.6" dy="25">RUSSIA</tspan></text>
+    <text class="region halo" x="1012.2" y="223.7" text-anchor="start" fill="#1A1C1D"><tspan x="1012.2" dy="0">AUSTRIA AND</tspan><tspan x="1012.2" dy="25">RUSSIA</tspan></text>
     <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">UNITED STATES</tspan></text>
     <text class="region halo" x="568.9" y="648.2" text-anchor="middle" fill="#1A1C1D"><tspan x="568.9" dy="0">BRAZIL</tspan></text>
   </g>
