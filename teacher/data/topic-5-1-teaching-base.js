@@ -236,7 +236,8 @@ window.BEHISTORICAL_TEACHING = {
           'KC-5.3.I.A: "Philosophers developed new political ideas about the individual, natural rights, and the social contract."',
           'Natural rights: Locke, Second Treatise of Government (1689), §123, the "mutual preservation of their lives, liberties and estates, which I call by the general name, property"; government exists to protect them.',
           'Social contract: Locke §95, no one can be put under another\'s political power "without his own consent"; §222, a legislature that tries to destroy the people\'s property or enslave them puts itself "into a state of war with the people, who are thereupon absolved from any farther obedience." Rousseau, The Social Contract (1762), opens: "Man is born free; and everywhere he is in chains" (Cole translation). Rousseau grounds legitimate power in the general will of the people, a more collective idea than Locke\'s.',
-          'Limits on power: Montesquieu, The Spirit of the Laws (1748), Book XI, on separating legislative, executive and judicial power.'
+          'Limits on power: Montesquieu, The Spirit of the Laws (1748), Book XI, on separating legislative, executive and judicial power.',
+          'A myth to head off: the philosophers did not all agree. Locke protected individual rights against government; Rousseau put the people as a whole first; Montesquieu admired England\'s mixed monarchy; few of them wanted to abolish kings.'
         ],
         ask: 'Which idea is the most direct challenge to divine right?',
         listenFor: 'The social contract: if government rests on consent, it does not rest on God\'s choice of a king.',
