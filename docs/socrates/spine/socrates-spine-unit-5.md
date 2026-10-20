@@ -16,7 +16,7 @@ wins. The block came from the lesson they are actually sitting in.
 
 ## 5.1 The Enlightenment
 
-**Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. How Enlightenment thinkers used reason to challenge traditional authority — and why their universalism had profound limits that the next century would struggle to resolve
+**Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. Enlightenment thinkers asked every old authority a new question, by what right?, and answered it with reason, natural rights, and the consent of the people. Over the next century, the people the words left out pressed them until rights reached further.
 
 **College Board key concepts.**
 - Unit 5: Learning Objective A (Learning Objective): Explain the intellectual and ideological context in which revolutions swept the Atlantic world from 1750 to 1900.
@@ -27,15 +27,15 @@ wins. The block came from the lesson they are actually sitting in.
 - KC-5.3.I.C (Social Interactions and Organization): Enlightenment ideas and religious ideals influenced various reform movements. These reform movements contributed to the expansion of rights, as seen in expanded suffrage, the abolition of slavery, and the end of serfdom.
 - KC-5.3.IV.B (Social Interactions and Organization): Demands for women’s suffrage and an emergent feminism challenged political and gender hierarchies. Illustrative examples: Mary Wollstonecraft’s A Vindication of the Rights of Woman, Olympe de Gouges’s Declaration of the Rights of Woman and of the Female Citizen, Seneca Falls Conference (1848) organized by Elizabeth Cady Stanton and Lucretia Mott.
 
-**Expected evidence terms.** natural rights, social contract, popular sovereignty, separation of powers, Locke, Rousseau, Montesquieu, Voltaire, Wollstonecraft, divine right of kings, Encyclopédie, salons, print culture, Republic of Letters, Royal African Company, universalism, exclusion, contradiction.
+**Expected evidence terms.** divine right, reason, evidence, empiricism, natural rights, social contract, consent, separation of powers, religious toleration, deism, Locke, Rousseau, Montesquieu, Voltaire, Calas, Encyclopédie, salon, print, came before, preceded, revolution, nation, nationalism, reform movement, abolition, slavery, Quakers, Equiano, serfdom, serfs, suffrage, vote, women's rights, feminism, de Gouges, Wollstonecraft, Seneca Falls, Stanton, Mott, religious, faith, continuity, change, 1900.
 
-**AP skill focus.** Causation practice.
+**AP skill focus.** Claims and evidence practice.
 
-**Checkpoint 1 prompt.** Name three Enlightenment philosophes and explain the core idea each contributed to political thought. For each, explain how their idea challenged one of the traditional pillars of European authority (divine right of kings, hereditary aristocracy, or Church authority). Then explain why Locke's idea, that government derives authority from the consent of the governed, was the most directly influential for the Atlantic Revolutions.
-Strong answer checklist: Name three philosophes and their core ideas, be specific about each person's contribution. Explain how each idea challenged traditional authority, which pillar (divine right, aristocracy, Church) and how. Explain why Locke's consent of the governed was the most directly influential for the Atlantic Revolutions.
+**Checkpoint 1 prompt.** Answer in three steps. (1) Before the Enlightenment, most rulers said their power came from God, tradition, and birth. Choose ONE new Enlightenment idea: natural rights, the social contract, the separation of powers, or religious toleration. Explain what it said and name a writer who argued it. (2) Explain how that idea challenged the old answer. (3) Explain how Enlightenment ideas spread, using one example (books such as the Encyclopédie, salons, coffeehouses, or letters), and explain what it means that the ideas came before the revolutions that began in 1775, 1789, 1791, and 1810.
+Strong answer checklist: Explain one new idea and name a writer who argued it. Explain how it challenged the old answer: God, tradition, and birth. Explain how the ideas spread, and that they came before the revolutions.
 
-**Checkpoint 2 prompt.** Describe two mechanisms by which Enlightenment ideas spread (print culture, salons, coffeehouses, universities). Then identify two groups that Enlightenment universalism excluded, women, enslaved Africans, or colonized peoples, and explain the specific structural reasons for each exclusion. End with a synthesis: was Enlightenment universalism a genuine breakthrough for human rights, a hypocritical façade, or something more complex? Defend your position with specific evidence.
-Strong answer checklist: Describe two specific mechanisms of spread, be concrete (Encyclopédie, salons, coffeehouses). Identify two excluded groups and explain the structural reasons for each exclusion, be specific. Write a synthesis: was Enlightenment universalism genuine, hypocritical, or complex? Defend with evidence.
+**Checkpoint 2 prompt.** Explain how the Enlightenment affected societies over time, between 1750 and 1900. (1) Choose ONE reform movement: abolishing slavery, ending serfdom, widening the right to vote, or women's rights. (2) Explain how Enlightenment ideas, religious faith, or both pushed it forward. Use at least one specific piece of evidence, for example the 1787 antislavery society in London, Olaudah Equiano, Russia in 1861, France in 1848, Olympe de Gouges, Mary Wollstonecraft, or the Seneca Falls convention. (3) Explain what the movement had changed by 1900, with a date. (4) Explain one thing that had still not changed by 1900.
+Strong answer checklist: Choose one reform movement and explain what drove it: ideas, faith, or both. Explain what it had changed by 1900, with a date and a piece of evidence. Explain one thing that had still not changed by 1900.
 
 ## 5.2 Nationalism and Revolutions
 

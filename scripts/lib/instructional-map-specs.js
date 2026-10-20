@@ -313,20 +313,25 @@ module.exports = [
   {
     id: 'topic-5-1',
     code: 'Topic 5.1',
-    title: 'The Republic of Letters, c. 1750',
-    subtitle: 'Topic 5.1 · Enlightenment ideas across the Atlantic world',
+    title: 'Where the Ideas Traveled, and Where Rights Reached, 1750 to 1900',
+    subtitle: 'Topic 5.1 · The Enlightenment and its effects over time',
     highlights: [
-      { zone: 'britain', label: 'BRITAIN', tone: 'gold', legend: 'Locke, Smith, and the Scottish Enlightenment' },
-      { zone: 'westernEurope', label: 'FRANCE & LOW COUNTRIES', tone: 'bronze', legend: 'Paris salons, the Encyclopédie, Dutch presses' },
-      { zone: 'europe', label: 'CENTRAL EUROPE', tone: 'sand', legend: 'German and Habsburg reading publics' },
-      { zone: 'unitedStates', label: 'BRITISH AMERICA', tone: 'slate', legend: 'Colonial readers and revolutionaries' },
-      { zone: 'caribbean', label: 'SAINT-DOMINGUE', tone: 'plum', legend: 'Enlightenment claims read against slavery' }
+      { zone: 'westernEurope', label: 'FRANCE', tone: 'bronze', legend: 'Salons and the Encyclopédie, 1751 to 1772' },
+      { zone: 'britain', label: 'BRITAIN', tone: 'gold', legend: 'Locke, 1689; abolition society, 1787' },
+      { zone: 'easternEurope', label: 'AUSTRIA AND RUSSIA', tone: 'sand', legend: 'Serfdom ends: Austria 1848, Russia 1861' },
+      { zone: 'unitedStates', label: 'UNITED STATES', tone: 'slate', legend: 'Women\'s rights convention, Seneca Falls, 1848' },
+      { zone: 'brazil', label: 'BRAZIL', tone: 'plum', legend: 'Last in the Americas to end slavery, 1888' }
     ],
     flows: [
-      { from: 'westernEurope', to: 'unitedStates', label: 'pamphlets and books west' },
-      { from: 'britain', to: 'westernEurope', label: 'ideas circulate', bow: 0.3, style: 'solid' },
-      { from: 'westernEurope', to: 'caribbean', label: 'natural rights carried to the colonies', bow: -0.18 }
-    ]
+      { from: 'westernEurope', to: 'andes', label: 'ideas cross the Atlantic', bow: 0.22 },
+      { from: 'britain', to: 'unitedStates', label: 'antislavery and rights networks', bow: -0.16 }
+    ],
+    points: [
+      { at: [2.35, 48.86], label: 'Paris', note: 'salons, 1700s' },
+      { at: [-74.07, 4.71], label: 'Bogotá', note: 'rights printed, 1793 or 1794', side: 'left' },
+      { at: [-76.8, 42.9], label: 'Seneca Falls', note: '1848', side: 'left' }
+    ],
+    note: 'Regions are approximate. Dates mark when an idea was published or a right was won there.'
   },
   {
     id: 'topic-5-2',

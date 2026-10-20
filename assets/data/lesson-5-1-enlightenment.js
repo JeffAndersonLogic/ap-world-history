@@ -30,34 +30,44 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 5: Revolutions",
     topic: "Topic 5.1",
     title: "The Enlightenment",
-    subtitle: "How Enlightenment thinkers used reason to challenge traditional authority — and why their universalism had profound limits that the next century would struggle to resolve",
+    subtitle: "Enlightenment thinkers asked every old authority a new question, by what right?, and answered it with reason, natural rights, and the consent of the people. Over the next century, the people the words left out pressed them until rights reached further.",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 
   learningTargets: [
     {
-      target: "I can explain how Enlightenment thinkers used reason to challenge traditional authority and articulate new ideas about natural rights, the social contract, and popular sovereignty.",
-      kc: "KC-5.3.I.A",
+      target: "I can explain the new ideas Enlightenment thinkers used to question where rulers got their power: reason and evidence, natural rights, the social contract, limits on power, and religious toleration.",
+      kc: 'KC-5.3.I.A',
       theme: "Cultural Developments and Interactions"
     },
     {
-      target: "I can analyze how Enlightenment ideas spread through print culture and institutions, and evaluate the significant limits of Enlightenment universalism, particularly regarding women, enslaved people, and colonized peoples.",
-      kc: "KC-5.3.I",
+      target: "I can explain how Enlightenment ideas spread and came before the revolutions in the Atlantic world, and how the idea that a state belongs to its people became loyalty to the nation.",
+      kc: 'KC-5.3.I',
       theme: "Cultural Developments and Interactions"
+    },
+    {
+      target: "I can explain how Enlightenment ideas and religious faith pushed reform movements that ended slavery and serfdom, widened the vote, and demanded women's rights between 1750 and 1900, and what had still not changed by 1900.",
+      kc: 'KC-5.3.I.C',
+      theme: "Social Interactions and Organization"
     }
   ],
 
   successCriteria: [
     {
-      criteria: "I can identify at least three Enlightenment philosophes and explain their core ideas (Locke: natural rights and consent of the governed; Rousseau: social contract and popular sovereignty; Montesquieu: separation of powers; Voltaire: religious tolerance; Wollstonecraft: rights of women; Smith: free market). I can explain how these ideas challenged the divine right of kings, hereditary aristocracy, and Church authority.",
-      kc: "KC-5.3.I.A",
+      criteria: "I can explain one new Enlightenment idea (natural rights, the social contract, the separation of powers, or religious toleration), name a writer who argued it (Locke, Rousseau, Montesquieu, or Voltaire), and explain how it challenged the old answer that rulers' power came from God, tradition, and birth.",
+      kc: 'KC-5.3.I.A',
       theme: "Cultural Developments and Interactions"
     },
     {
-      criteria: "I can describe two mechanisms by which Enlightenment ideas spread (print culture, newspapers, encyclopédies, pamphlets; Parisian salons; coffeehouses). I can identify at least two groups excluded from Enlightenment universalism and explain the structural reasons for their exclusion: women (Rousseau's claim that women's sphere was domestic); enslaved Africans and colonial subjects (Locke's investment in the Royal African Company; the philosophes' racist writings).",
-      kc: "KC-5.3.I",
+      criteria: "I can explain one way Enlightenment ideas spread (books such as the Encyclopédie, salons, coffeehouses, or letters), explain what it means that the ideas came before the revolutions that began in 1775, 1789, 1791, and 1810, and explain how \"the people\" came to mean the nation.",
+      kc: 'KC-5.3.I',
       theme: "Cultural Developments and Interactions"
+    },
+    {
+      criteria: "I can choose one reform movement (abolition, the end of serfdom, the right to vote, or women's rights), explain how Enlightenment ideas or religious faith pushed it forward with one piece of evidence (such as the 1787 antislavery society, Russia in 1861, Olympe de Gouges, Mary Wollstonecraft, or Seneca Falls), and name what it had changed by 1900 and one thing that had not.",
+      kc: 'KC-5.3.I.C',
+      theme: "Social Interactions and Organization"
     }
   ],
 
@@ -107,72 +117,86 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: "Reason, Rights, and Authority: The Enlightenment",
-    intro: "The Enlightenment (c. 1680–c. 1800) was an intellectual revolution before the political ones. By applying the methods of the Scientific Revolution to human society, Enlightenment thinkers created a vocabulary, natural rights, social contract, popular sovereignty, separation of powers, that revolutionaries in France, America, Haiti, and Latin America would use to justify overthrowing the established order. Understanding the Enlightenment means understanding both its radical promise and its profound limitations.",
+    title: "By What Right?",
+    intro: "Use these cards to see how a new way of finding out what is true led writers to question every old authority, the new answers they gave, how the ideas spread before the revolutions, and how reformers pressed the same words further between 1750 and 1900.",
     videos: [],
     segments: [
       {
-        title: "What Was the Enlightenment? Origins and Context",
+        title: "The Old Answer and a New Way of Knowing",
         bullets: [
-          "The **Enlightenment** (c. 1680–c. 1800) was an intellectual movement centered in Western Europe, especially France, Britain, and Scotland, that argued reason, not tradition, scripture, or inherited authority, should be the basis for understanding the world and organizing society. Its intellectual ancestors were the Scientific Revolution (Newton's discovery of natural laws governing the physical world) and Renaissance humanism (the rediscovery of classical learning about human potential).",
-          "The Enlightenment challenged three traditional pillars of European authority: the **divine right of kings** (monarchs derive their authority directly from God, not from the consent of the governed); **hereditary aristocracy** (birth determines social and political status permanently); and **Church authority** (the Church interprets God's will for both spiritual and political life, and is immune from rational criticism).",
-          "For AP purposes, the Enlightenment is most important as a **cause of the Atlantic Revolutions** (Topic 5.2). Revolutionaries in America, France, Haiti, and Latin America used Enlightenment vocabulary, natural rights, popular sovereignty, social contract, to justify their actions. Understanding which philosophe said what allows you to trace the causal chain from 18th-century salon debate to 19th-century revolution.",
-          "The Enlightenment also produced **economic ideas** (Adam Smith's free market theory) and **scientific advances** (systematic botany, chemistry, physics), but for the AP exam, the political and social ideas are the most heavily tested. The primary skill being assessed is causation: how did Enlightenment ideas cause the Atlantic Revolutions?"
+          "In 1750 most rulers said their power came from **God**: kings ruled by **divine right** (Topic 3.2). In most countries one church was the law, nobles were born into their privileges, and many peasants were **serfs** bound to their lord's land. Authority came from God, tradition, and birth.",
+          "A new way of finding out what is true spread among educated Europeans. In 1687 Isaac Newton showed that a few laws, worked out with mathematics and tested against what astronomers could see, explained the movement of the planets and why things fall. In 1689 John Locke argued that everything we know comes from experience; at birth the mind is like \"white paper.\" Learning from evidence and experience instead of from authority is **empiricism**.",
+          "Thinkers then asked whether reason and evidence could explain people, and how people should live together and be governed. That question is the start of the Enlightenment's political ideas."
         ],
         image: {
-          title: "Reason applied to human society",
-          caption: "BeHistorical topic artwork for this card. The Enlightenment took the method of the Scientific Revolution and turned it on government, religion, and law.",
-          url: "",
-          sourceUrl: ""
+          title: "An experiment at home",
+          caption: "Valentine Green's mezzotint of 1769, after Joseph Wright of Derby: a traveling lecturer shows a family that living things need air. Metropolitan Museum of Art.",
+          url: "../assets/images/topics/5-1/air-pump-experiment-green-1769.jpg",
+          sourceUrl: "https://www.metmuseum.org/art/collection/search/359795"
         }
       },
       {
-        title: "The Philosophes and Their Core Ideas",
+        title: "The New Answers: Rights, Consent, Limits, and Toleration",
         bullets: [
-          "**John Locke** (1632–1704): The most influential Enlightenment thinker for the Atlantic Revolutions. In *Two Treatises of Government* (1689), Locke argued that all humans possess **natural rights**, life, liberty, and property, that exist prior to and independent of any government. Government derives its legitimacy from the **consent of the governed**; a government that violates natural rights forfeits its authority and the people have the right to overthrow it. This argument directly inspired the American Declaration of Independence (1776) and the French Declaration of the Rights of Man (1789).",
-          "**Montesquieu** (1689–1755): In *The Spirit of the Laws* (1748), argued for the **separation of powers**, that executive, legislative, and judicial functions should be divided among separate institutions to prevent any single person or body from accumulating tyrannical power. His analysis of the British constitutional system (which he somewhat idealized) directly influenced the architects of the U.S. Constitution, particularly the tripartite structure of Congress, the President, and the Supreme Court.",
-          "**Rousseau** (1712–1778): In *The Social Contract* (1762), argued that government is legitimate only if it reflects the **general will** of the people, **popular sovereignty**. Unlike Locke (who focused on protecting individual rights from government), Rousseau focused on collective self-governance. His ideas influenced the more radical phase of the French Revolution, which prioritized the collective good over individual rights. Importantly, Rousseau explicitly argued that women's natural sphere was the household, not politics, a contradiction that Mary Wollstonecraft directly challenged.",
-          "**Voltaire** (1694–1778): The most famous and widely read philosophe, known for his wit and his attacks on religious intolerance, Church corruption, and the arbitrary cruelty of traditional authority. *Candide* (1759) mocked the optimism of those who justified suffering as part of God's plan. Voltaire believed in freedom of conscience and the separation of Church and state, but his writing also contained racist descriptions of non-European peoples that contradicted his universal claims.",
-          "**Mary Wollstonecraft** (1759–1797): In *A Vindication of the Rights of Woman* (1792), applied the logic of natural rights to argue that women should have the same political and educational rights as men. If natural rights belong to all rational beings, they must include women. This was a direct challenge to Rousseau and to most male philosophes who assumed women's subordination. Wollstonecraft is the clearest example of how the Enlightenment's internal logic could be turned against its own limits.",
-          "**Adam Smith** (1723–1790): In *The Wealth of Nations* (1776), argued that the **free market**, the 'invisible hand' of supply and demand, allocates resources more efficiently than government intervention or mercantilist monopolies. Smith challenged the mercantilist assumptions of European colonial empires (that trade should be tightly controlled for national advantage) and provided intellectual foundations for industrial capitalism. For the AP exam, Smith is primarily important as background to the economic transformations of Topics 5.3–5.7."
+          "**Natural rights**: Locke (1689) argued that people are born with rights to their \"lives, liberties and estates\" that no government gives and no government may take. Government exists to protect them.",
+          "**The social contract**: government is an agreement. \"No one,\" Locke wrote, can be put under another's power \"without his own consent,\" and a government that attacks the people's rights may be resisted. Jean-Jacques Rousseau (1762) began his book on the social contract: \"Man is born free; and everywhere he is in chains.\"",
+          "**Limits on power**: Montesquieu (1748) argued that liberty is safest when the powers to make laws, carry them out, and judge are held by different people, the **separation of powers**.",
+          "**Religious toleration**: after Jean Calas, a Protestant merchant in Toulouse, was wrongly convicted and executed in 1762, Voltaire campaigned to clear his name and wrote a *Treatise on Tolerance* (1763): no government should force a faith on anyone. Most of these writers still believed in God; some were **deists**. What they questioned was religion used as a power of government.",
+          "What changed was what made a ruler **legitimate**, meaning rightful: not God and birth, but reason and the consent of the people. Kings still ruled almost everywhere."
         ],
         image: {
-          title: "The philosophes and their core claims",
-          caption: "BeHistorical topic artwork for this card. Natural rights, the social contract, separation of powers, and religious toleration: ideas with obvious political consequences.",
-          url: "",
-          sourceUrl: ""
+          title: "A book that tried to explain everything",
+          caption: "A plate from the Encyclopédie's picture volumes (Paris, 1762 to 1772): two women in a fan-maker's workshop, and the steps of mounting a fan. Metropolitan Museum of Art.",
+          url: "../assets/images/topics/5-1/encyclopedie-plate-fan-maker.jpg",
+          sourceUrl: "https://www.metmuseum.org/art/collection/search/707455"
         }
       },
       {
-        title: "How the Enlightenment Spread — and Its Limits",
+        title: "The Ideas Spread, Before the Revolutions",
         bullets: [
-          "**Print culture**: By the 18th century, expanded literacy and cheap printing made it possible for ideas to circulate rapidly across Europe and the Atlantic world. The **Encyclopédie** (1751–1772), edited by Denis Diderot and Jean le Rond d'Alembert, was the Enlightenment's most ambitious project, a systematic account of all human knowledge organized by reason rather than theology. It was banned by the French Crown and the Catholic Church (its existence proving the very point it was making about censorship), but 25,000 copies circulated across Europe.",
-          "**Salons**: Intellectual gatherings hosted primarily by women in Paris provided spaces for philosophes to debate, refine, and publicize their ideas. Women like **Marie-Thérèse Rodet Geoffrin**, **Julie de Lespinasse**, and **Suzanne Necker** were central organizers and patrons of the Enlightenment network, they were, in effect, the institutional infrastructure of the movement. The deep irony: the same philosophes they hosted and financed generally excluded women from the political rights they were arguing for.",
-          "**Coffeehouses** (especially in Britain) and **universities** (especially in Scotland, Edinburgh, Glasgow, and the Netherlands) were additional nodes of Enlightenment circulation. The **Republic of Letters**, an informal network of correspondence among scholars across Europe, enabled ideas to travel faster than political censorship could suppress them.",
-          "**The limits of universalism**: Enlightenment universalism was deeply contradictory in practice. **Rousseau** explicitly argued that women's natural sphere was domestic, not political, his *Emile* (1762) described the ideal education for girls as preparation for obedience and charm, not citizenship. **Locke** invested in the Royal African Company, which transported enslaved Africans across the Atlantic, his natural rights theory had no mechanism to explain why enslaved people were excluded. **Voltaire** wrote explicitly racist descriptions of Africans and Asians. These limits are not peripheral to the Enlightenment, they reveal that 'universal' rights were conceived primarily by European men for European men, and that the struggle to actually universalize them would define the next two centuries of Atlantic history."
+          "The ideas traveled in books, newspapers, and pamphlets; in London's coffeehouses; in letters across Europe and the Atlantic; and in the conversation gatherings of Paris called **salons**, which were often run by women. From 1751 to 1772 Denis Diderot and his partners published the **Encyclopédie**, 17 volumes of articles and 11 of pictures that explained everything from crafts to government by reason. The French government banned it in 1759, and more volumes kept coming out anyway; a second edition was printed in Lucca, Italy, from 1758.",
+          "In 1784 the German philosopher Immanuel Kant summed it up: \"Dare to know,\" the courage to use your own understanding.",
+          "The College Board says Enlightenment thought \"often preceded\" revolutions. The American Revolution began in 1775, the French in 1789, the Haitian in 1791, and Spanish America's wars of independence in 1810. In Bogotá, Antonio Nariño secretly printed a Spanish translation of France's declaration of rights in 1793 or 1794 and was arrested in 1794. The ideas came first and gave revolutionaries their words; Topic 5.2 explains the other causes.",
+          "If a state belongs to its people, which people? More and more, the answer was **the nation**. In 1789 the French revolutionaries wrote that \"the principle of all sovereignty resides essentially in the nation.\" Over the next century **nationalism** became one of the strongest forces shaping states and empires (Topic 5.2)."
         ],
         image: {
-          title: "How far the ideas travelled, and how far they did not",
-          caption: "BeHistorical topic artwork for this card. Print culture and salons spread these claims quickly, while the same writers often exempted women, the enslaved, and the colonized.",
-          url: "",
-          sourceUrl: ""
+          title: "Printed outside France",
+          caption: "The title page of the Encyclopédie's second edition, printed in Lucca, Italy, in 1758. Metropolitan Museum of Art.",
+          url: "../assets/images/topics/5-1/encyclopedie-title-lucca-1758.jpg",
+          sourceUrl: "https://www.metmuseum.org/art/collection/search/716639"
+        }
+      },
+      {
+        title: "Over Time: Pressing the Words Further, 1787 to 1900",
+        bullets: [
+          "The words sounded like everyone, but the men who wrote them often did not mean everyone. Locke owned shares in the Royal African Company, which traded enslaved Africans; Rousseau wrote that \"a woman's education must therefore be planned in relation to man.\" Yet anyone who read the words could ask: by what right am I left out?",
+          "**Abolition**, driven by Enlightenment ideas and religious faith: in 1787 twelve men in London, nine of them Quakers, founded a society to end the British slave trade, under the motto \"Am I not a man and a brother?\" Olaudah Equiano, once enslaved, published his life story in 1789. Britain banned the slave trade in 1807 and ended slavery in its empire in 1834; France ended slavery in its colonies in 1848; Brazil, the last country in the Americas, in 1888.",
+          "**The end of serfdom and a wider vote**: the Austrian Empire freed its peasants from forced labor for their lords in 1848; in 1861 Russia's tsar freed more than 20 million serfs, partly fearing they would free themselves \"from below.\" France gave the vote to all adult men in 1848, and Britain widened voting in 1832, 1867, and 1884.",
+          "**Women's demands** and an emerging **feminism**: Olympe de Gouges, 1791: \"Woman is born free and remains equal to man in rights\" (she was executed in 1793). Mary Wollstonecraft, 1792: women should be educated to have power \"over themselves.\" At Seneca Falls in 1848, Elizabeth Cady Stanton and Lucretia Mott, a Quaker minister, organized a convention whose declaration said \"all men and women are created equal\" and demanded the vote.",
+          "What stayed: by 1900 kings and emperors still ruled most of Europe, other kinds of forced labor went on, and women could vote in national elections almost nowhere (New Zealand, in 1893, was the first self-governing country to allow it). The ideas changed fast; the world changed slowly."
+        ],
+        image: {
+          title: "Liberty and learning, as one painter imagined them",
+          caption: "Samuel Jennings's study for Liberty Displaying the Arts and Sciences, about 1791 to 1792: Liberty, among books and instruments, holds out a book to kneeling Black men and women, a broken chain at her feet. Metropolitan Museum of Art.",
+          url: "../assets/images/topics/5-1/liberty-arts-sciences-jennings-c1792.jpg",
+          sourceUrl: "https://www.metmuseum.org/art/collection/search/708024"
         }
       }
     ]
   },
 
   map: {
-    title: "The Republic of Letters: Enlightenment Ideas Across the Atlantic World, c. 1750",
+    title: "Where the Ideas Traveled, and Where Rights Reached, 1750 to 1900",
     url: "../assets/images/instructional-maps/topic-5-1.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-5-1.svg",
-    caption: "By c. 1750, Enlightenment ideas circulated across Europe and the Atlantic world through print culture, correspondence networks, salons, and universities. The same trade routes that carried silver and enslaved people also carried books, pamphlets, and letters among philosophes.",
-    intro: "Examine the Atlantic world in c. 1750. Notice the concentration of Enlightenment intellectual centers in Western Europe (Paris, London, Edinburgh, Amsterdam) and the Atlantic trade routes that connected them to the Americas. Consider: how did the same infrastructure that sustained the plantation economy also spread the Enlightenment ideas that would eventually be used to challenge that economy?",
-    prompt: "Using the map, explain how geography shaped both the spread of Enlightenment ideas and their limits. Why were Enlightenment ideas most accessible to educated Europeans, and hardest to access for enslaved Africans in the Americas? What does this geographic pattern reveal about the relationship between Enlightenment universalism and Enlightenment practice?"
+    caption: "A BeHistorical map of where Enlightenment ideas came from, how they crossed the Atlantic, and where and when some of the rights they promised were won between 1750 and 1900.",
+    intro: "Find France and Britain, where many of the ideas were published. Follow the two arrows across the Atlantic. Then read the dates in the key, from earliest to latest.",
+    prompt: "Using the map, explain one way the dates show that the Enlightenment's effects took a long time to reach different places. Use two places and their dates in your answer."
   },
 
   deepReading: {
     title: "Where Authority Comes From",
-    desc: "A textbook-depth companion on six Enlightenment arguments and what each one licenses, how banned books reached readers through a cross-border smuggling trade, why the exclusions of women and enslaved people were built into the theory rather than appended to it, and what Wollstonecraft, de Gouges, Equiano and Haiti did with a universal claim once it existed in print. Optional, and useful when a checkpoint asks you to explain a thinker rather than name one.",
+    desc: "A longer, optional chapter on the same story: the old answer and the new way of knowing, the new political ideas and the writers who argued them, how the ideas spread and came before the revolutions, and how reformers and the people left out pressed the words further, from the 1787 antislavery society to Seneca Falls, by 1900.",
     url: "deep-reading-topic-5-1-enlightenment.html"
   },
 
@@ -183,44 +207,38 @@ window.BEHISTORICAL_LESSON = {
   },
 
   evidenceLab: {
-    title: "Evidence Lab: The Enlightenment and Its Limits",
-    intro: "Use the evidence below to analyze how Enlightenment ideas challenged traditional authority and simultaneously revealed their own contradictions. Strong AP causation and comparison arguments require specific evidence and a clear explanation of mechanisms.",
-    prompt: "Choose one piece of evidence. Explain what it reveals about either the Enlightenment's challenge to traditional authority OR the limits of Enlightenment universalism. Be specific about which thinker, which idea, and which contradiction.",
-    items: [
-      { title: "Locke, Two Treatises of Government (1689)", detail: "Locke argued that 'men being by nature all free, equal, and independent, no one can be put out of this estate and subjected to the political power of another without his own consent.' This passage was quoted directly in both the American Declaration of Independence and the French Declaration of the Rights of Man. Locke was simultaneously a major investor in the Royal African Company, which transported enslaved Africans. Analyze: how could the same person write both the theory of natural rights AND invest in the slave trade? What does this reveal about the Enlightenment's limits?" },
-      { title: "Wollstonecraft, Vindication of the Rights of Woman (1792)", detail: "Mary Wollstonecraft argued: 'I wish to persuade women to endeavour to acquire strength, both of mind and body... Let it not be concluded that I wish to invert the order of things; I have already granted, that, from the constitution of their bodies, men seem to be designed by Providence to attain a greater degree of virtue. I speak collectively of the whole sex; but I see not the shadow of a reason to conclude that their virtues should differ in respect to their nature.' How does Wollstonecraft use Enlightenment logic against the Enlightenment's own exclusions? What does her argument reveal about the internal tensions within Enlightenment universalism?" },
-      { title: "Encyclopédie, article on 'Natural Rights' (Diderot, c. 1755)", detail: "Diderot wrote in the Encyclopédie: 'Natural liberty is the right which nature gives to all mankind, of disposing of their persons and property, after the manner they judge most convenient to their happiness, on condition of their acting within the limits of the law of nature.' The Encyclopédie was banned by the French Crown in 1759 and again in 1762. Analyze what the banning of the Encyclopédie reveals about the relationship between Enlightenment ideas and political power. Why did the French Crown fear a dictionary?" }
-    ]
+    title: "Evidence Lab: By What Right?",
+    intro: "Use the cards to identify the claims Enlightenment sources make, and what they show about how the ideas changed societies over time.",
+    prompt: "Choose two cards. For each, identify and describe its claim in your own words, and name one thing it cannot tell you.",
+    items: []
   },
 
   primarySource: {
-    title: "Primary Source: John Locke, Second Treatise of Government (1689)",
-    intro: "John Locke's Second Treatise of Government (1689) was the foundational text of Enlightenment political thought. Written in the context of the Glorious Revolution (1688), it argued that political authority derives from the consent of the governed, not from divine right. This passage became one of the most-cited texts in the American and French Revolutions. Locke was simultaneously a major investor in the Royal African Company, which transported enslaved Africans across the Atlantic. The contradiction between his theory and his practice is one of the defining tensions of the Enlightenment.",
+    title: "Primary Source: The Declaration of Sentiments, Seneca Falls, 1848",
+    intro: "In July 1848, about 300 people met in Seneca Falls, New York, for a women's rights convention organized by Elizabeth Cady Stanton and Lucretia Mott, a Quaker minister. Stanton drafted a Declaration of Sentiments that copied the form of the Declaration of Independence of 1776, and 100 women and men signed it. These are three short passages. (\"Self-evident\" means so clearly true it needs no proof; \"inalienable\" means it cannot be taken away; \"the elective franchise\" means the right to vote.)",
     text: [
-      "Men being by nature all free, equal, and independent, no one can be put out of this estate and subjected to the political power of another without his own consent.",
-      "The natural liberty of man is to be free from any superior power on earth, and not to be under the will or legislative authority of man, but to have only the law of nature for his rule.",
-      "Whensoever any number of men are so united into one society as to quit every one his executive power of the law of nature and to resign it to the public, there and there only is a political or civil society.",
-      "The great and chief end, therefore, of men's uniting into commonwealths and putting themselves under government is the preservation of their property, by which I mean their lives, liberties, and estates.",
-      "Whenever the legislators endeavour to take away and destroy the property of the people, or to reduce them to slavery under arbitrary power, they put themselves into a state of war with the people, who are thereupon absolved from any further obedience."
+      "We hold these truths to be self-evident; that all men and women are created equal; that they are endowed by their Creator with certain inalienable rights; that among these are life, liberty, and the pursuit of happiness.",
+      "He has never permitted her to exercise her inalienable right to the elective franchise.",
+      "He has compelled her to submit to laws, in the formation of which she had no voice."
     ],
     questions: [
-      "What is Locke's basis for natural rights? Why does he say 'no one can be put out of this estate... without his own consent'? What authority is he invoking if not God or tradition?",
-      "How were these words used by American colonists in 1776? How might enslaved Africans in Saint-Domingue (Haiti) have used the same words in 1791? What do these two different applications reveal about how Enlightenment ideas could be used to justify very different political projects?",
-      "Locke was a major investor in the Royal African Company, which transported enslaved Africans across the Atlantic. He also wrote the Fundamental Constitutions of Carolina, which included provisions protecting slaveholders' property rights. How does knowing this context change your reading of the passage above? Can a person hold these ideas and these investments simultaneously without contradiction, or does the contradiction reveal something important about the limits of Enlightenment universalism?"
+      "Identify the claim in the first passage and describe it in your own words. Which two words did the writers add to the Declaration of Independence's \"all men are created equal\"?",
+      "Who is \"he\" in the second and third passages, and what are the writers arguing against?",
+      "The declaration borrowed the words of 1776 to make a new demand. Use it to explain one way the Enlightenment's ideas affected society over time, and one thing it shows had not yet changed by 1848."
     ]
   },
 
   beSurreal: {
-    title: "BeSurreal: You Are a Philosophe at a Parisian Salon, 1762",
-    desc: "You are a writer and philosophe at a Parisian salon hosted by Madame Geoffrin, c. 1762. Your work on natural rights has circulated widely. Tonight, a visitor from Saint-Domingue, a free man of color and a property owner, challenges you directly.",
-    intro: "The visitor has read your work. He says: 'I read your argument that all men possess natural rights by birth. I showed your words to my neighbor in Saint-Domingue, a man who was born enslaved. He asked me: do your natural rights apply to him? He has a name. He has a family. He was born, just as you were. The French Declaration promises liberty to all. But the plantation owners in Saint-Domingue, men who also read your work, say your words do not apply to him. I need you to tell me: do they apply? And if they do not, what exactly do you mean by natural?'",
-    detail: "The room has gone quiet. You are aware of several things simultaneously: the logic of your own argument (if rights are natural, they must apply to all rational beings, regardless of birth); the economic reality (the wealth of France depends heavily on Saint-Domingue's sugar plantations, which depend on enslaved labor); the social reality (several investors in the plantation trade are in this room right now); and the intellectual reality (you have not, in fact, ever directly addressed whether your natural rights theory applies to enslaved Africans, you have always written about it in abstraction).",
-    prompt: "Write your internal monologue as you formulate your response to the visitor's question. Do you acknowledge the contradiction, that your own theory of natural rights implies that slavery is illegitimate? Do you rationalize the exclusion somehow? Do you try to change the subject? Or do you, for the first time, genuinely reckon with what you have written? Your response should reveal the full intellectual and moral complexity of a thinker confronted with the limits of his own universalism, not a simple villain, but not a simple hero either."
+    title: "BeSurreal: Seneca Falls, New York, July 20, 1848",
+    desc: "You are a woman at the women's rights convention in Seneca Falls. The Declaration of Sentiments is ready to sign. It demands the vote, and many people, even some who agree with the rest of it, say that demand goes too far.",
+    intro: "It is the second day of the convention in the Wesleyan Chapel. Yesterday you heard Elizabeth Cady Stanton read the declaration aloud: \"We hold these truths to be self-evident; that all men and women are created equal.\" You know those words. They are the words of 1776, with two added. Most of the resolutions passed without trouble. The one demanding the right to vote did not pass unanimously. Lucretia Mott and others worried it went too far and would weaken support for everything else. Frederick Douglass stood up and spoke for it, and it passed. Now the declaration is on the table, and people are lining up to sign.",
+    detail: "You are thinking about several things at once. The words are the country's own: if all people are created equal, why can only men vote, and why does a married woman's property, even the wages she earns, belong to her husband? Your faith, like Mott's, teaches that every soul is equal before God. But your name on this paper will be printed in the newspapers, and people you know may laugh at you or worse. Your husband, your church and your neighbors may all have opinions. And you know that Olympe de Gouges, who demanded equal rights for women in France in 1791, did not win them.",
+    prompt: "Write your thoughts as you decide whether to sign. Do you sign? What words in the declaration persuade you, or worry you? What do you expect to change because of it, and how soon? Be honest about what you hope and what you fear, the way a real person in 1848 would be."
   },
 
   beInTheRoom: {
     url: '',
-    desc: "Debate whether Rousseau or Locke better explains the relationship between the individual and the state, advise Diderot on which articles to include in the Encyclopédie despite royal censorship, or challenge a salon philosophe on why his natural rights theory does not extend to enslaved Africans."
+    desc: "Paris, 1789. A publisher must decide what a pamphlet on natural rights will claim, whose voices it will print, and who will get to read it."
   }
 
 };

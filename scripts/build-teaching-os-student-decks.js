@@ -184,6 +184,15 @@ const DECKS = [
     ],
     student: 'assets/data/presentations/topic-4-8-student.js',
     backUrl: 'lesson-4-8-continuity-and-change.html#lecture'
+  },
+  {
+    key: '5.1',
+    sources: [
+      'teacher/data/topic-5-1-teaching-base.js',
+      'teacher/data/topic-5-1-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-5-1-student.js',
+    backUrl: 'lesson-5-1-enlightenment.html#lecture'
   }
 ];
 
@@ -378,7 +387,8 @@ function buildDeck(deck) {
     '4.5': topic31Slides,
     '4.6': topic31Slides,
     '4.7': topic31Slides,
-    '4.8': topic31Slides
+    '4.8': topic31Slides,
+    '5.1': topic31Slides
   };
   return {
     meta: {
