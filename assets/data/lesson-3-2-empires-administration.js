@@ -101,7 +101,14 @@ window.BEHISTORICAL_LESSON = {
   lecture: {
     title: "Holding What You Won: People, Symbols and Money",
     intro: "Use these cards to deepen the First & 10. Each card is one of the three jobs every ruler had to do, and each one compares two rulers who did the same job in different ways. Ask of every example: what situation was this ruler in, and how did this tool help him keep control?",
-    videos: [],
+    videos: [
+      {
+        title: "Land-Based Empires: ADMINISTRATION [AP World History Review - Unit 3 Topic 2]",
+        url: "https://youtu.be/_0X43Prm8Sc",
+        youtubeId: "_0X43Prm8Sc",
+        prompt: "How did rulers use officials, religious ideas, monumental architecture, and tax collection to consolidate power? Compare one method used by two land-based empires."
+      }
+    ],
     segments: [
       {
         title: "The Problem: Three Jobs After the Conquest",
