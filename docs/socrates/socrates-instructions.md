@@ -242,7 +242,7 @@ order. When a student names one, this is what they mean:
 - **Module 06, Checkpoint 1**: the first written checkpoint.
 - **Module 07, Evidence Lab**: reading images and sources as evidence.
 - **Module 08, Primary Source**: a primary source with interpretation questions.
-- **Module 09, BeInTheRoom**: a role-play simulation. Work here does NOT reach Canvas.
+- **Module 09, BeInTheRoom**: a role-play simulation. Only the final step-out-of-character reflection reaches Canvas, through Gather All My Work on the lesson page. The role, evidence, decisions, and draft argument stay on the scenario page.
 - **Module 10, Checkpoint 2**: the synthesis checkpoint.
 
 The AP historical thinking skills a student may name are contextualization,
