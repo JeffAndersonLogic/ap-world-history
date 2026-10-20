@@ -105,7 +105,7 @@ window.BEHISTORICAL_TEACHING = {
           'CED pp. 98 to 99. Two learning objectives. A (Cultural Developments and Interactions): explain the intellectual and ideological context in which revolutions swept the Atlantic world from 1750 to 1900. B (Social Interactions and Organization): explain how the Enlightenment affected societies over time. The reasoning process is Continuity and Change (p. 95); the suggested skill is 3.A, identify and describe a claim and/or argument in a text-based or non-text-based source.',
           'Key Concepts. LO A: KC-5.3.I.A (new ways of understanding and empiricist approaches to the natural world and human relationships; religion\'s role in public life reexamined; reason; new political ideas about the individual, natural rights and the social contract); KC-5.3.I (the rise and diffusion of Enlightenment thought that questioned established traditions in all areas of life often preceded revolutions); KC-5.3.II.i (nationalism became a major force shaping states and empires). LO B: KC-5.3.I.C (Enlightenment ideas and religious ideals influenced reform movements that expanded rights: suffrage, the abolition of slavery, the end of serfdom); KC-5.3.IV.B (demands for women\'s suffrage and an emergent feminism challenged political and gender hierarchies).',
           'The CED\'s illustrative examples, printed beside LO B under "Demands": Wollstonecraft\'s Vindication; de Gouges\'s Declaration of the Rights of Woman and of the Female Citizen; the Seneca Falls Conference (1848) organized by Stanton and Mott. All three are used, slides 17 to 20, as sources with claims in them. The CED gives 5.1 no sample activity.',
-          'Owns: the ideas, their spread, nationalism introduced, the reform movements and women\'s demands. Bridge only: the revolutions and their documents (5.2): the dates, one line from the 1789 declaration, Nariño. Not taught: Adam Smith and free trade (5.7), reforms that answered industry (5.8).',
+          'Owns: the ideas, their spread, nationalism introduced, the reform movements and women\'s demands. Bridge only: the revolutions and their documents (5.2): the dates, two lines from the 1789 declaration (Article 3 on the nation, slide 13, and Article 1, the line de Gouges rewrote, slide 20), Nariño. Not taught: Adam Smith and free trade (5.7), reforms that answered industry (5.8).',
           'Three myths, on slide 23: "the Enlightenment caused the revolutions"; "the Enlightenment was against religion"; "rights reached everyone in 1789."',
           'Every picture is a real object of the period from the Metropolitan Museum of Art\'s open-access collection, public domain: Valentine Green\'s mezzotint of Joseph Wright\'s air-pump experiment (1769); the title page of the Encyclopédie\'s second edition, printed at Lucca, Italy (1758); a plate of a fan-maker\'s workshop from its picture volumes (Paris, 1762 to 1772); a pottery jug printed with "Am I not a man and a brother" (about 1820); and Samuel Jennings\'s study for Liberty Displaying the Arts and Sciences (about 1791 to 1792). None is AI-generated.'
         ],
@@ -257,7 +257,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'Second Treatise, §95, word for word from the 1690-dated text (Project Gutenberg #7370); the cut is "as has been said,". "This estate" means this condition, being free and equal, not land.',
           'The claim, in a student\'s words: government is rightful only when the people it rules have agreed to it. What it argues against: divine right and inherited power.',
-          'Point of view, briefly: Locke was writing in the years of England\'s Glorious Revolution (1688 to 1689), when Parliament replaced James II; his argument defended the right to resist a king.'
+          'Point of view, briefly: Locke wrote most of the Two Treatises around 1679 to 1683, during the Exclusion Crisis, when some in Parliament tried to keep the Catholic James, Duke of York, from the throne (Peter Laslett\'s dating, accepted by most scholars), and published it in 1689, just after Parliament replaced James II in the Glorious Revolution. Either way it defended the right to resist a king.'
         ],
         ask: 'Say Locke\'s claim in your own words. What older idea is he arguing against?',
         listenFor: 'Government needs the consent of the people it rules, against the idea that God gives kings power.',
@@ -360,7 +360,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 1,
         land: [
           'KC-5.3.I: Enlightenment thought "often preceded revolutions and rebellions against existing governments." Preceded, not caused.',
-          'Nariño, from the reading: Antonio Nariño printed a Spanish translation of the French Declaration of the Rights of Man in Bogotá (dated 1793 by most accounts, 1794 by some), was arrested on 29 August 1794, and later led independence in New Granada. It shows the ideas moving across the Atlantic before Spanish America\'s wars.',
+          'Nariño, from the reading: Antonio Nariño printed a Spanish translation of the French Declaration of the Rights of Man in Bogotá (dated 1793 by most accounts, 1794 by some), was arrested on 29 August 1794, and later became one of the leaders of New Granada\'s independence (he led the state of Cundinamarca from 1811 and was a prisoner from 1814 to 1820). It shows the ideas moving across the Atlantic before Spanish America\'s wars.',
           'Do not teach the causes of the revolutions here (taxes, debt, war, slavery and colonial grievances); that is 5.2.'
         ],
         ask: 'Why does the order on this line matter for an argument?',
@@ -427,7 +427,7 @@ window.BEHISTORICAL_TEACHING = {
         steps: [
           { label: '1787', text: 'Twelve men in London, nine of them Quakers, found a society to end the British slave trade.' },
           { label: '1789', text: 'Olaudah Equiano, once enslaved, publishes his life story.' },
-          { label: '1807, 1834', text: 'Britain bans the slave trade, then slavery in its empire.' },
+          { label: '1807, 1834', text: 'Britain bans the slave trade, then begins ending slavery in its empire.' },
           { label: '1848, 1888', key: true, text: 'France ends slavery in its colonies; Brazil, last in the Americas.' }
         ]
       },
@@ -472,12 +472,12 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'women', kind: 'story-steps', eyebrow: 'Over Time · Women\'s Demands',
-      kc: 'KC-5.3.IV.B', title: 'Women pressed the words hardest.',
+      kc: 'KC-5.3.IV.B', title: 'Women pressed the words too.',
       template: {
         steps: [
           { label: '1791', text: 'Olympe de Gouges rewrites France\'s declaration for women. She is executed in 1793.' },
           { label: '1792', text: 'Mary Wollstonecraft: women can reason, so educate them to govern themselves.' },
-          { label: '1840', text: 'Stanton and Mott are refused seats at a London antislavery convention.' },
+          { label: '1840', text: 'Mott is refused a seat at a London antislavery convention because she is a woman.' },
           { label: '1848', key: true, text: 'Seneca Falls: "all men and women are created equal." They demand the vote.' }
         ]
       },
@@ -485,7 +485,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.3.IV.B: "Demands for women\'s suffrage and an emergent feminism challenged political and gender hierarchies." The CED\'s three examples are all here.',
-          'De Gouges: the Declaration of the Rights of Woman and of the Female Citizen, September 1791; guillotined on 3 November 1793 by order of the Revolutionary Tribunal. Wollstonecraft: A Vindication of the Rights of Woman, London, 1792. Stanton and Mott met at the World Anti-Slavery Convention in London, June 1840, where the convention refused to seat women delegates; Mott was a delegate of the Philadelphia Female Anti-Slavery Society and a Quaker minister (National Park Service). Seneca Falls: 19 and 20 July 1848, the Wesleyan Chapel.',
+          'De Gouges: the Declaration of the Rights of Woman and of the Female Citizen, September 1791; guillotined on 3 November 1793 by order of the Revolutionary Tribunal. Wollstonecraft: A Vindication of the Rights of Woman, London, 1792. Stanton and Mott met at the World Anti-Slavery Convention in London, June 1840, where the convention refused to seat women delegates. Mott was a delegate of the Philadelphia Female Anti-Slavery Society and a Quaker minister; Stanton was not a delegate but attended with her husband, Henry B. Stanton, who was; the women sat apart, behind a curtain (National Park Service). Seneca Falls: 19 and 20 July 1848, the Wesleyan Chapel.',
           'Feminism: the claim that women and men should have equal rights. Political hierarchy: who votes, who rules. Gender hierarchy: who is in charge at home and under the law; the Declaration of Sentiments complains that a married woman was "civilly dead" in law.'
         ],
         ask: 'What did each woman demand?',
@@ -499,7 +499,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         quote: 'We hold these truths to be self-evident; that all men and women are created equal; that they are endowed by their Creator with certain inalienable rights.',
         attribution: { author: 'The Declaration of Sentiments', work: 'Women\'s Rights Convention', year: 'Seneca Falls, 1848' },
-        notice: 'Which two words did they add to the Declaration of Independence, and why does it matter?'
+        notice: 'In 1776 it read: "all men are created equal." Which two words did they add, and why does it matter?'
       },
       notes: {
         minutes: 2,
@@ -519,14 +519,14 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'A claim is what the writer wants you to believe.',
       template: {
         frame: '{{The writer}} claims that {{the claim in your own words}}, arguing against {{the older idea}}.',
-        exampleLabel: 'Wollstonecraft, 1792',
-        example: '**Mary Wollstonecraft** claims that **women can reason, so they should be educated to govern themselves**, arguing against **Rousseau\'s idea that a woman\'s education should be planned around men**.'
+        exampleLabel: 'Montesquieu, 1748',
+        example: '**Montesquieu** claims that **people stay free only when no one person or group holds all the power**, arguing against **a king who makes the laws, carries them out and judges them all himself**.'
       },
       notes: {
         minutes: 2,
         land: [
           'The suggested skill, 3.A: identify and describe a claim and/or argument in a source. Identify: find it. Describe: put it in your own words, with what it is for and against.',
-          'The source sentence, Vindication, chapter 4: "\'Educate women like men,\' says Rousseau, \'and the more they resemble our sex the less power will they have over us.\' This is the very point I aim at. I do not wish them to have power over men; but over themselves."',
+          'The source sentence, The Spirit of the Laws, Book XI, chapter 6, in Thomas Nugent\'s English translation of 1750: "When the legislative and executive powers are united in the same person, or in the same body of magistrates, there can be no liberty." Read it aloud, then build the model line with the room. Montesquieu was chosen because no student task in this lesson asks about him, so the model gives away no answer.',
           'The common mistake is copying the quotation as the claim. A described claim is in the student\'s own words.'
         ],
         ask: 'Why is copying the quotation not enough?',
@@ -541,14 +541,14 @@ window.BEHISTORICAL_TEACHING = {
         job: 'Born free and equal',
         left: { tag: 'France, 1789', name: 'Declaration of the Rights of Man', when: 'Article 1', text: '"Men are born and remain free and equal in rights."' },
         right: { tag: 'France, 1791', name: 'Olympe de Gouges', when: 'Article 1', text: '"Woman is born free and remains equal to man in rights."' },
-        claimLabel: 'Describe her claim',
-        claim: 'She keeps the old words and **changes who they cover**.'
+        claimLabel: 'Your turn',
+        claim: 'Use the frame: **what does she keep, and what does she change?**'
       },
       notes: {
         minutes: 2,
         land: [
           '1789, Article 1, Avalon Project translation. De Gouges, article premier: "La Femme naît libre et demeure égale à l\'homme en droits," translated literally; the published translation by Levy, Applewhite and Johnson (1979) reads "Woman is born free and lives equal to man in her rights."',
-          'Have students describe her claim with the frame from slide 19 before you read the line under the beam: de Gouges claims that women have the same rights as men, arguing against a declaration that gave rights only to men.',
+          'Have students describe her claim aloud with the frame from slide 19. One strong answer, for the teacher: de Gouges claims that women have the same rights as men, arguing against a declaration that gave rights only to men. She keeps the old words and changes who they cover.',
           'This is First & 10 question 02, which students have already answered, so take answers aloud.'
         ],
         ask: 'Use the frame: describe de Gouges\'s claim.',
@@ -565,7 +565,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 8,
         land: [
           'The Skill Builder practices the CED\'s suggested skill, 3.A.',
-          'It models the move on Locke (§95), then gives students three new short sources: Rousseau\'s opening line, Kant\'s motto, and the abolitionists\' motto. For each they identify the claim, describe it in their own words, and say what it argues against.',
+          'It models the move on Montesquieu (Book XI, chapter 6), then gives students three new short sources: Rousseau\'s opening line, Kant\'s motto, and the abolitionists\' motto. For each they identify the claim, describe it in their own words, and say what it argues against.',
           'Strong answers: Rousseau claims people are born free but held down by unjust governments and customs, against the idea that rulers\' power is natural; Kant claims people should think for themselves instead of obeying authorities, against relying on priests, books and rulers to think for you; the motto claims an enslaved African is a full human being and a brother, against treating people as property.'
         ],
         ask: 'After students have written: which claim was hardest to say in your own words, and why?',

@@ -223,8 +223,9 @@ by religious ideals**.
 - **Abolishing slavery.** In 1787 twelve men in London, nine of them Quakers, founded a society to
   end the British slave trade. Its seal showed a kneeling African man in chains and the words
   "Am I not a man and a brother?", and the potter Josiah Wedgwood made it into a medallion people
-  wore. Olaudah Equiano, a formerly enslaved African, published his life story in 1789 and spoke
-  across Britain. Britain banned the slave trade in 1807 and slavery in its empire from 1834.
+  wore. Olaudah Equiano, who had been enslaved and wrote that he was born in Africa, published his life
+  story in 1789 and spoke across Britain. Britain banned the slave trade in 1807 and in 1834 began
+  ending slavery in most of its empire, with an unpaid "apprenticeship" until 1838.
   France abolished slavery in its colonies in 1848; Brazil, the last country in the Americas, in
   1888.
 - **Ending serfdom.** In 1848 the Austrian Empire freed its peasants from the forced labor they
@@ -235,7 +236,7 @@ by religious ideals**.
 Each change took decades of campaigning and met resistance, and none of it reached everyone at
 once.
 
-**Women demand their rights.** Women pressed the words hardest of all, because the men who wrote
+**Women demand their rights.** Women pressed the same words too, because the men who wrote
 "rights of man" often meant it literally.
 - In 1791 the French writer **Olympe de Gouges** rewrote France's declaration as the *Declaration
   of the Rights of Woman and of the Female Citizen*. Its first article: "Woman is born free and
@@ -244,9 +245,10 @@ once.
   Woman*. Rousseau had warned that educating women like men would give them less power over men.
   Her answer: "I do not wish them to have power over men; but over themselves." Her claim:
   women can reason, so they must be educated to govern themselves.
-- In 1840 two American abolitionists, **Elizabeth Cady Stanton** and **Lucretia Mott**, a Quaker
-  minister, went to an antislavery convention in London and were refused seats as delegates
-  because they were women. In July 1848 they organized a women's rights convention at **Seneca
+- In 1840 the American abolitionist **Lucretia Mott**, a Quaker minister, went to an antislavery
+  convention in London as a delegate and was refused a seat because she was a woman; **Elizabeth
+  Cady Stanton**, there with her delegate husband, sat with the women, apart from the men. In July
+  1848 the two of them organized a women's rights convention at **Seneca
   Falls**, New York. Its *Declaration of Sentiments* borrowed the words of the Declaration of
   Independence and changed one: "We hold these truths to be self-evident; that all men **and
   women** are created equal." It demanded the vote. That demand was the only resolution that did

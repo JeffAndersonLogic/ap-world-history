@@ -170,8 +170,8 @@ window.BEHISTORICAL_LESSON = {
         title: "Over Time: Pressing the Words Further, 1787 to 1900",
         bullets: [
           "The words sounded like everyone, but the men who wrote them often did not mean everyone. Locke owned shares in the Royal African Company, which traded enslaved Africans; Rousseau wrote that \"a woman's education must therefore be planned in relation to man.\" Yet anyone who read the words could ask: by what right am I left out?",
-          "**Abolition**, driven by Enlightenment ideas and religious faith: in 1787 twelve men in London, nine of them Quakers, founded a society to end the British slave trade, under the motto \"Am I not a man and a brother?\" Olaudah Equiano, once enslaved, published his life story in 1789. Britain banned the slave trade in 1807 and ended slavery in its empire in 1834; France ended slavery in its colonies in 1848; Brazil, the last country in the Americas, in 1888.",
-          "**The end of serfdom and a wider vote**: the Austrian Empire freed its peasants from forced labor for their lords in 1848; in 1861 Russia's tsar freed more than 20 million serfs, partly fearing they would free themselves \"from below.\" France gave the vote to all adult men in 1848, and Britain widened voting in 1832, 1867, and 1884.",
+          "**Abolition**, driven by Enlightenment ideas and religious faith: in 1787 twelve men in London, nine of them Quakers, founded a society to end the British slave trade, under the motto \"Am I not a man and a brother?\" Olaudah Equiano, once enslaved, published his life story in 1789. Britain banned the slave trade in 1807 and in 1834 began ending slavery in most of its empire, though freed people had to keep working for their former owners as unpaid \"apprentices\" until 1838; France ended slavery in its colonies in 1848; Brazil, the last country in the Americas, in 1888.",
+          "**The end of serfdom and a wider vote**: the Austrian Empire freed its peasants from forced labor for their lords in 1848; in 1861 Russia's tsar freed more than 20 million serfs, partly, he reportedly told nobles in 1856, because it was better to end serfdom \"from above\" than to wait for it to end \"from below.\" France gave the vote to all adult men in 1848, and Britain widened voting in 1832, 1867, and 1884.",
           "**Women's demands** and an emerging **feminism**: Olympe de Gouges, 1791: \"Woman is born free and remains equal to man in rights\" (she was executed in 1793). Mary Wollstonecraft, 1792: women should be educated to have power \"over themselves.\" At Seneca Falls in 1848, Elizabeth Cady Stanton and Lucretia Mott, a Quaker minister, organized a convention whose declaration said \"all men and women are created equal\" and demanded the vote.",
           "What stayed: by 1900 kings and emperors still ruled most of Europe, other kinds of forced labor went on, and women could vote in national elections almost nowhere (New Zealand, in 1893, was the first self-governing country to allow it). The ideas changed fast; the world changed slowly."
         ],
@@ -189,7 +189,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Where the Ideas Traveled, and Where Rights Reached, 1750 to 1900",
     url: "../assets/images/instructional-maps/topic-5-1.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-5-1.svg",
-    caption: "A BeHistorical map of where Enlightenment ideas came from, how they crossed the Atlantic, and where and when some of the rights they promised were won between 1750 and 1900.",
+    caption: "A BeHistorical map of where Enlightenment ideas came from, how they crossed the Atlantic, and where and when some of the rights they promised were demanded or won between 1750 and 1900.",
     intro: "Find France and Britain, where many of the ideas were published. Follow the two arrows across the Atlantic. Then read the dates in the key, from earliest to latest.",
     prompt: "Using the map, explain one way the dates show that the Enlightenment's effects took a long time to reach different places. Use two places and their dates in your answer."
   },
@@ -216,11 +216,8 @@ window.BEHISTORICAL_LESSON = {
   primarySource: {
     title: "Primary Source: The Declaration of Sentiments, Seneca Falls, 1848",
     intro: "In July 1848, about 300 people met in Seneca Falls, New York, for a women's rights convention organized by Elizabeth Cady Stanton and Lucretia Mott, a Quaker minister. Stanton, with members of the M'Clintock family, drafted a Declaration of Sentiments that copied the form of the Declaration of Independence of 1776, and 100 women and men signed it. These are three short passages. (\"Self-evident\" means so clearly true it needs no proof; \"inalienable\" means it cannot be taken away; \"the elective franchise\" means the right to vote.)",
-    text: [
-      "We hold these truths to be self-evident; that all men and women are created equal; that they are endowed by their Creator with certain inalienable rights; that among these are life, liberty, and the pursuit of happiness.",
-      "He has never permitted her to exercise her inalienable right to the elective franchise.",
-      "He has compelled her to submit to laws, in the formation of which she had no voice."
-    ],
+    attribution: "Declaration of Sentiments, Women's Rights Convention, Seneca Falls, New York, July 1848 (text from the National Park Service)",
+    text: "<strong>Passage 1.</strong> We hold these truths to be self-evident; that all men and women are created equal; that they are endowed by their Creator with certain inalienable rights; that among these are life, liberty, and the pursuit of happiness.<br><br><strong>Passage 2.</strong> He has never permitted her to exercise her inalienable right to the elective franchise.<br><br><strong>Passage 3.</strong> He has compelled her to submit to laws, in the formation of which she had no voice.",
     questions: [
       "Identify the claim in the first passage and describe it in your own words. Which two words did the writers add to the Declaration of Independence's \"all men are created equal\"?",
       "Who is \"he\" in the second and third passages, and what are the writers arguing against?",
@@ -232,13 +229,13 @@ window.BEHISTORICAL_LESSON = {
     title: "BeSurreal: Seneca Falls, New York, July 20, 1848",
     desc: "You are a woman at the women's rights convention in Seneca Falls. The Declaration of Sentiments is ready to sign. It demands the vote, and many people, even some who agree with the rest of it, say that demand goes too far.",
     intro: "It is the second day of the convention in the Wesleyan Chapel. Yesterday you heard Elizabeth Cady Stanton read the declaration aloud: \"We hold these truths to be self-evident; that all men and women are created equal.\" You know those words. They are the words of 1776, with two added. Most of the resolutions passed without trouble. The one demanding the right to vote did not pass unanimously. Lucretia Mott and others worried it went too far and would weaken support for everything else. Frederick Douglass stood up and spoke for it, and it passed. Now the declaration is on the table, and people are lining up to sign.",
-    detail: "You are thinking about several things at once. The words are the country's own: if all people are created equal, why can only men vote, and why does a married woman's property, even the wages she earns, belong to her husband? Your faith, like Mott's, teaches that every soul is equal before God. But your name on this paper will be printed in the newspapers, and people you know may laugh at you or worse. Your husband, your church and your neighbors may all have opinions. And you know that Olympe de Gouges, who demanded equal rights for women in France in 1791, did not win them.",
+    detail: "You are thinking about several things at once. The words are the country's own: if all people are created equal, why can only men vote, and why can a husband take even the wages his wife earns? Your faith, like Mott's, teaches that every soul is equal before God. But your name on this paper will be printed in the newspapers, and people you know may laugh at you or worse. Your husband, your church and your neighbors may all have opinions. And you know that Olympe de Gouges, who demanded equal rights for women in France in 1791, did not win them.",
     prompt: "Write your thoughts as you decide whether to sign. Do you sign? What words in the declaration persuade you, or worry you? What do you expect to change because of it, and how soon? Be honest about what you hope and what you fear, the way a real person in 1848 would be."
   },
 
   beInTheRoom: {
     url: '',
-    desc: "Paris, 1789. A publisher must decide what a pamphlet on natural rights will claim, whose voices it will print, and who will get to read it."
+    desc: "Paris, 1788 to 1789. A publisher must decide what a pamphlet on natural rights will claim, whose voices it will print, and who will get to read it."
   }
 
 };

@@ -323,7 +323,7 @@ module.exports = [
       { zone: 'brazil', label: 'BRAZIL', tone: 'plum', legend: 'Last in the Americas to end slavery, 1888' }
     ],
     flows: [
-      { from: 'westernEurope', to: 'andes', label: 'ideas cross the Atlantic', bow: 0.22 },
+      { from: 'westernEurope', to: [-74.07, 4.71], label: 'ideas cross the Atlantic', bow: 0.22 },
       { from: 'britain', to: 'unitedStates', label: 'antislavery and rights networks', bow: -0.16 }
     ],
     points: [
@@ -331,7 +331,7 @@ module.exports = [
       { at: [-74.07, 4.71], label: 'Bogotá', note: 'rights printed, 1793 or 1794', side: 'left' },
       { at: [-76.8, 42.9], label: 'Seneca Falls', note: '1848', side: 'left' }
     ],
-    note: 'Regions are approximate. Dates mark when an idea was published or a right was won there.'
+    note: 'Regions are approximate. Dates mark when an idea was published, a right was demanded, or a right was won there.'
   },
   {
     id: 'topic-5-2',

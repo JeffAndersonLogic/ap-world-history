@@ -386,7 +386,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "1807, 1834",
-            "text": "Britain bans the slave trade, then slavery in its empire."
+            "text": "Britain bans the slave trade, then begins ending slavery in its empire."
           },
           {
             "label": "1848, 1888",
@@ -442,7 +442,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "story-steps",
       "eyebrow": "Over Time · Women's Demands",
-      "title": "Women pressed the words hardest.",
+      "title": "Women pressed the words too.",
       "kc": "KC-5.3.IV.B",
       "template": {
         "steps": [
@@ -456,7 +456,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "1840",
-            "text": "Stanton and Mott are refused seats at a London antislavery convention."
+            "text": "Mott is refused a seat at a London antislavery convention because she is a woman."
           },
           {
             "label": "1848",
@@ -478,7 +478,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "work": "Women's Rights Convention",
           "year": "Seneca Falls, 1848"
         },
-        "notice": "Which two words did they add to the Declaration of Independence, and why does it matter?"
+        "notice": "In 1776 it read: \"all men are created equal.\" Which two words did they add, and why does it matter?"
       }
     },
     {
@@ -488,8 +488,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "footer": "A claim is what the writer wants you to believe.",
       "template": {
         "frame": "{{The writer}} claims that {{the claim in your own words}}, arguing against {{the older idea}}.",
-        "exampleLabel": "Wollstonecraft, 1792",
-        "example": "**Mary Wollstonecraft** claims that **women can reason, so they should be educated to govern themselves**, arguing against **Rousseau's idea that a woman's education should be planned around men**."
+        "exampleLabel": "Montesquieu, 1748",
+        "example": "**Montesquieu** claims that **people stay free only when no one person or group holds all the power**, arguing against **a king who makes the laws, carries them out and judges them all himself**."
       }
     },
     {
@@ -511,8 +511,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "when": "Article 1",
           "text": "\"Woman is born free and remains equal to man in rights.\""
         },
-        "claimLabel": "Describe her claim",
-        "claim": "She keeps the old words and **changes who they cover**."
+        "claimLabel": "Your turn",
+        "claim": "Use the frame: **what does she keep, and what does she change?**"
       }
     },
     {

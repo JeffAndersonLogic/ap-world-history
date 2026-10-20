@@ -106,7 +106,7 @@ Scholarly and institutional sources, for facts about people and events:
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
 | Locke, 1689: rights to "lives, liberties and estates" that government exists to protect | Story, F10 §3, DR 02, LD card 2, Deck 7 | §123 and §222, Gutenberg #7370 | VERIFIED |
-| "No one" can be put under another's power "without his own consent" | Story, F10 §3, DR 02, LD card 2, RC Skill Builder and Evidence Lab, Deck 7, 8 | §95 | VERIFIED |
+| "No one" can be put under another's power "without his own consent"; written mostly about 1679 to 1683 and published 1689 (Laslett; Britannica) | Story, F10 §3, DR 02, LD card 2, RC Skill Builder and Evidence Lab, Deck 7, 8 | §95 | VERIFIED |
 | A government that breaks the deal may be resisted | Story, F10 §3, DR 02, LD card 2, Deck 7 | §222: the people "are thereupon absolved from any farther obedience" | VERIFIED |
 | Rousseau, 1762: "Man is born free; and everywhere he is in chains" | Story, F10 §3, DR 02, LD card 2, RC Skill Builder, Deck 7, 12 | Cole translation, Gutenberg #46333 | VERIFIED |
 | Montesquieu, 1748: liberty safest when lawmaking, carrying out and judging are in different hands | Story, F10 §3, DR 02, LD card 2, Deck 7, 12 | *The Spirit of the Laws*, 1748, Book XI ch. 6; standard | VERIFIED |
@@ -220,4 +220,45 @@ Scholarly and institutional sources, for facts about people and events:
 
 ## Review findings
 
-(Filled in during Phase 9.)
+### Pass 1, reviewer 1 (page truth, readability, CED, ownership; cheaper model), 12 findings
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | Primary Source passages render as one block joined by commas (the renderer prints an array with commas) | FIXED: the text is one string with the three passages labeled and separated; an attribution line added. The same array shape in 5.2 to 5.9 is an adjacent finding |
+| 2 | Checkpoint 1 displays Target 2's nation clause and does not assess it; KC-5.3.II.i assessed nowhere | FIXED: step (4) asks how "the people" came to mean the nation; focus and card description updated. Target 3 keeps one kc code (the data model holds one); IV.B is assessed through Checkpoint 2's women's-rights option |
+| 3 | Evidence Lab text cards are drawn as images whose alt text is only the title, so a screen-reader user cannot read the excerpt | ADJACENT: the shared module `assets/js/behistorical-evidence-text-card.js` serves Units 5 to 9; reported with a proposed fix, not changed in this topic |
+| 4 | Locke's date of writing misstated (Evidence Lab caption, deep reading, slide 8 notes) | FIXED (same as reviewer 2, #1) |
+| 5 | Slide 19 projects a finished answer to the Evidence Lab Wollstonecraft card; slide 20 projects a near-answer to First & 10 Q2 | FIXED: slide 19, the Skill Builder model and the First & 10 callout now model on Montesquieu (Book XI ch. 6, Nugent 1750), which no task asks about; slide 20's line is now a prompt, the strong answer moved to the notes |
+| 6 | The map says rights were "won" where they were demanded; arrow 1 does not reach Bogotá | FIXED: footer and key label now say demanded or won; arrow 1 ends at Bogotá |
+| 7 | BeInTheRoom wording above a ninth grader ("confessional coercion", "canonical theorists", "abstraction", "normalizing postponement") and one line about exclusions "the pamphlet says are natural" | FIXED: ten strings rewritten in plain words in the 5.1 scenario only |
+| 8 | "Women pressed the words hardest" is a superlative | FIXED (same as reviewer 2, #4) |
+| 9 | "Ended slavery in its empire in 1834" ignores the apprenticeship to 1838 | FIXED (same as reviewer 2, #5) |
+| 10 | The Seneca Falls card and slide 18 ask which two words were added but do not show the 1776 sentence | FIXED: both now quote "all men are created equal" |
+| 11 | The 1789 declaration is used twice though the notes say "one line" | FIXED by recording it: the preflight notes and the story map now say 5.1 quotes two lines (Article 3 on the nation, Article 1 the line de Gouges rewrote). Kept, because de Gouges's claim (a CED example) cannot be described without the line she rewrote |
+| 12 | The Key Concept band prints "KC-5.3.II.I" in capitals | ADJACENT: course-wide band CSS uppercases the code; reported, not changed in this topic |
+
+### Pass 1, reviewer 2 (history; default model), 13 findings
+
+| # | Finding | Disposition |
+|---|---|---|
+| 1 | Locke wrote most of the Two Treatises about 1679 to 1683 (Laslett), not in 1688 to 1689 | FIXED: Evidence Lab caption, deep reading section 02 and slide 8 notes now say published 1689, written mostly about ten years earlier during the Exclusion Crisis |
+| 2 | Stanton was not a delegate in 1840 | FIXED: First & 10, deep reading, slide 17 and its notes, story draft: Mott, a delegate, was refused a seat; Stanton attended with her delegate husband and sat with the women |
+| 3 | The jug caption says the movement began in 1787 and was against the slave trade in 1820 | FIXED: "the motto first used in 1787 by the London society ... by about 1820 the trade had been banned, and campaigners were working to end slavery itself" |
+| 4 | "Women pressed the words hardest" | FIXED: "pressed the same words too" on the First & 10, deep reading, slide 17 and the story |
+| 5 | Britain "ended slavery in its empire in 1834" | FIXED: "began ending slavery in most of its empire," with the apprenticeship to 1838, on the First & 10, lecture card 4, deep reading (twice), slide 15 and the story |
+| 6 | Nariño "led the independence movement in New Granada" | FIXED: "became one of the leaders of New Granada's independence" (deep reading, slide 12 notes) |
+| 7 | Equiano's African birth stated as settled (Carretta 2005) | FIXED: "who had been enslaved and wrote that he was born in Africa" (First & 10, story) |
+| 8 | BeSurreal: New York's Married Women's Property Act (April 1848) already protected some property | FIXED: "why can a husband take even the wages his wife earns?", the Declaration's own grievance |
+| 9 | Lecture card 4 states Alexander II's motive as fact | FIXED: "he reportedly told nobles in 1856" |
+| 10 | Evidence Lab calls Rousseau "the French writer" | FIXED: "the Geneva-born writer Rousseau" |
+| 11 | Map labels (won versus demanded; arrow 1) | FIXED (same as reviewer 1, #6) |
+| 12 | Near-model answers (Skill Builder Locke model answers the Evidence Lab Locke card; slide 19) | FIXED (same as reviewer 1, #5) |
+| 13 | BeInTheRoom card says "Paris, 1789", the room "1788 to 1789" | FIXED: both lesson files say "Paris, 1788 to 1789" |
+
+### Pass 1 outcome
+
+25 findings, 21 distinct; 19 fixed, 2 logged as adjacent findings (shared renderer accessibility, band
+capitals). No finding was rejected. The new Montesquieu quotation is checked: Nugent's translation of
+1750, Book XI ch. 6, constitution.org text, "When the legislative and executive powers are united in the
+same person, or in the same body of magistrates, there can be no liberty." Pass 2 runs from a fresh
+packet.

@@ -130,7 +130,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Claims and Evidence in Sources",
-          "raw": "<p><strong>Find the claim.</strong> A claim is what a writer wants you to believe. Locke's claim is that government is legitimate only when it has the consent of the people and protects their rights. To describe a claim, say it in your own words, then say what it argues against: here, divine right.</p>"
+          "raw": "<p><strong>Find the claim.</strong> A claim is what a writer wants you to believe. Montesquieu's claim is that people stay free only when no one person or group holds all the power. To describe a claim, say it in your own words, then say what it argues against: here, a king who makes the laws, carries them out, and judges them all by himself.</p>"
         }
       },
       {
@@ -167,7 +167,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Through the 1800s, people formed reform movements to make the rights real for more people. They were driven by Enlightenment ideas and also by religious faith. The movement for <span class=\"kt\">abolition</span>, ending slavery, is the clearest case. In 1787 twelve men in London, nine of them Quakers, a Christian group that opposed slavery, founded a society to end the British slave trade. Its seal showed a kneeling African man in chains and the words \"Am I not a man and a brother?\", and the potter Josiah Wedgwood turned it into a medallion that supporters wore. Olaudah Equiano, a formerly enslaved African, published the story of his life in 1789 and spoke across Britain. Britain banned the slave trade in 1807 and ended slavery in its empire in 1834. France ended slavery in its colonies in 1848. Brazil, the last country in the Americas, ended it in 1888."
+            "html": "Through the 1800s, people formed reform movements to make the rights real for more people. They were driven by Enlightenment ideas and also by religious faith. The movement for <span class=\"kt\">abolition</span>, ending slavery, is the clearest case. In 1787 twelve men in London, nine of them Quakers, a Christian group that opposed slavery, founded a society to end the British slave trade. Its seal showed a kneeling African man in chains and the words \"Am I not a man and a brother?\", and the potter Josiah Wedgwood turned it into a medallion that supporters wore. Olaudah Equiano, who had been enslaved and wrote that he was born in Africa, published the story of his life in 1789 and spoke across Britain. Britain banned the slave trade in 1807. In 1834 it began ending slavery in most of its empire, though freed people had to keep working for their former owners as unpaid \"apprentices\" until 1838. France ended slavery in its colonies in 1848. Brazil, the last country in the Americas, ended it in 1888."
           },
           {
             "type": "p",
@@ -190,7 +190,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Women pressed the words hardest of all, because the men who wrote about the \"rights of man\" often meant only men. In 1791 the French writer Olympe de Gouges rewrote France's declaration of rights as the <em>Declaration of the Rights of Woman and of the Female Citizen</em>. Its first article, translated from the French, reads: \"Woman is born free and remains equal to man in rights.\" The revolutionary government executed her in 1793."
+            "html": "Women pressed the same words too, because the men who wrote about the \"rights of man\" often meant only men. In 1791 the French writer Olympe de Gouges rewrote France's declaration of rights as the <em>Declaration of the Rights of Woman and of the Female Citizen</em>. Its first article, translated from the French, reads: \"Woman is born free and remains equal to man in rights.\" The revolutionary government executed her in 1793."
           },
           {
             "type": "p",
@@ -198,7 +198,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In 1840 two American abolitionists, Elizabeth Cady Stanton and Lucretia Mott, a Quaker minister, went to an antislavery convention in London and were refused seats as delegates because they were women. In July 1848 they organized a women's rights convention in Seneca Falls, New York. Its <em>Declaration of Sentiments</em> borrowed the words of the Declaration of Independence and changed them: \"We hold these truths to be self-evident; that all men and women are created equal.\" It demanded the right to vote. That demand was the only resolution at the convention that did not pass unanimously, and 100 women and men signed the declaration."
+            "html": "In 1840 the American abolitionist Lucretia Mott, a Quaker minister, went to an antislavery convention in London as a delegate and was refused a seat because she was a woman. Elizabeth Cady Stanton, who was there with her husband, a delegate, sat with Mott and the other women, apart from the men. In July 1848 the two of them organized a women's rights convention in Seneca Falls, New York. Its <em>Declaration of Sentiments</em> borrowed the words of the Declaration of Independence and changed them: \"We hold these truths to be self-evident; that all men and women are created equal.\" It demanded the right to vote. That demand was the only resolution at the convention that did not pass unanimously, and 100 women and men signed the declaration."
           },
           {
             "type": "p",

@@ -104,7 +104,8 @@ Continuity and Change.
   over time) has no target, criterion or checkpoint (the deep audit's finding).
 - **Mention only as a bridge:** the revolutions themselves and their documents, the Declaration
   of Independence, the Declaration of the Rights of Man and Bolívar's "Letter from Jamaica"
-  (KC-5.3.I.B, 5.2); the Haitian Revolution as an event (5.2); the new sense of national
+  (KC-5.3.I.B, 5.2), of which 5.1 quotes only two lines of the 1789 declaration, Article 3 on the
+  nation and Article 1, the line de Gouges rewrote; the Haitian Revolution as an event (5.2); the new sense of national
   commonality and unification movements (KC-5.3.II.ii and II.iii, 5.2); Adam Smith and free
   trade (KC-5.1.III.A, 5.7); reforms that answered industrial capitalism (KC-5.1.V.D, 5.8).
 - **Hands to 5.2:** "By 1789 the ideas were everywhere educated people read. In America, France,
