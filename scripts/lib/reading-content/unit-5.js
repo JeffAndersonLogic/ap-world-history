@@ -543,7 +543,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>The words.</strong> Saint-Domingue's <span class=\"kt\">free people of color</span>, free people of African or mixed descent, asked the Assembly in Paris for the equal rights its declaration promised. At first they were refused, and in 1790 a free man of color, Vincent Ogé, was executed for leading a revolt for those rights. The Assembly granted them equal rights only in April 1792, after the revolution in the colony had begun."
+            "html": "<strong>The words.</strong> Saint-Domingue's <span class=\"kt\">free people of color</span>, free people of African or mixed descent, asked the Assembly in Paris for the equal rights its declaration promised. At first they were refused. In 1790 a free man of color, Vincent Ogé, led a revolt for those rights, and early in 1791 he was executed. The Assembly granted them equal rights only in April 1792, after the revolution in the colony had begun."
           },
           {
             "type": "p",
@@ -597,7 +597,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Behind all four revolutions was anger at kings and empires. The revolutions left behind new answers to an old question: how should a country be run? One answer was the republic, with a written constitution. Another was <span class=\"kt\">liberalism</span>: the belief that a constitution and an elected parliament should limit the government and protect each person's rights, such as free speech, a free press, and property. Many liberals in the 1800s still wanted only men with property to vote. A third was <span class=\"kt\">democracy</span>, rule by the people, which pushed for the vote to reach all men. These ideas set off new revolutions across Europe in 1830 and 1848. Most of the uprisings of 1848 were crushed within two years."
+            "html": "Behind all four revolutions was anger at kings and empires. The revolutions left behind new answers to an old question: how should a country be run? One answer was the republic, with a written constitution. Another was <span class=\"kt\">liberalism</span>: the belief that a constitution and an elected parliament should limit the government and protect each person's rights, such as free speech, a free press, and property. Many liberals in the 1800s still wanted only men with property to vote. A third was <span class=\"kt\">democracy</span>, rule by the people, which pushed for the vote to reach all men. These ideas helped set off new revolutions across Europe in 1830 and 1848. Most of the uprisings of 1848 were crushed within two years."
           },
           {
             "type": "p",
@@ -645,7 +645,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>One cause, two effects.</strong> Nationalism joined Italy and Germany together and pulled Greece and Serbia away from the Ottoman Empire. A cause can push in opposite directions. Saying both makes a stronger explanation.</p>"
+          "raw": "<p><strong>One cause, two effects.</strong> A single cause can push in opposite directions: the same loyalty that joins one people into a country can pull another people away from an empire. When you explain a cause, look for both kinds of effect. Saying both makes a stronger explanation.</p>"
         }
       }
     ],

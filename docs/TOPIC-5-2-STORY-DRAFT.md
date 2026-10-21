@@ -3,8 +3,8 @@
 **Status: Delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12).**
 
 **Resume here (2026-10-21):** Phases 0 to 8 finished and review pass 1 fixed (`145f10bd`, carried to
-`claude/5-2-behistorical-build-1ejzka`). Review pass 2 is running on a fresh packet. Still to do: pass 2
-fixes, pass 3 if pass 2 is not clean, the Unit 5 reading fingerprint, Phase 9D checks, the audit record,
+`claude/5-2-behistorical-build-1ejzka`). Review pass 2 found 16 supported defects, all fixed and logged. Still to do: review pass 3 on a fresh
+packet, the Unit 5 reading fingerprint, Phase 9D checks, the audit record,
 the Phase 10 report.
 Jeff started this build with "Build 5.2" on 2026-10-21. Topic 5.1 is on `main` (`97156bd`), so this
 build branches from `main`. The Phase 9 reviewers check this story against the CED source file and

@@ -324,7 +324,7 @@ window.BEHISTORICAL_TEACHING = {
           'Haiti was the second independent state in the Americas and the first founded by people who had freed themselves from slavery. Avoid ranking it "the most radical": it is a historians\' argument, not today\'s objective.'
         ],
         ask: 'Who acted first: France, or the enslaved people of Saint-Domingue?',
-        listenFor: 'The enslaved people, in 1791. France\'s 1794 law came after three years of fighting.',
+        listenFor: 'The enslaved people, in 1791. France\'s 1794 law came after two and a half years of fighting.',
         ap: 'KC-5.3.III.B.'
       }
     },
@@ -480,7 +480,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 8,
         land: [
-          'Module 05 is required. It models the comparison on the 1776 and 1789 declarations and asks students to compare the Letter from Jamaica with the Declaration of Independence.',
+          'Module 05 is required. It models the comparison on the 1789 declaration and Toussaint\'s 1793 proclamation and asks students to compare the Letter from Jamaica with the Declaration of Independence.',
           'Circulate for the "because": the difference explained by what caused each document.'
         ],
         ask: 'What caused the difference you found?',
@@ -490,12 +490,12 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'ideas', kind: 'branch-tree', eyebrow: 'What the Revolutions Created · Ideas',
       kc: 'KC-5.3.IV.A.i', title: 'New answers to "how should a country be run?"',
-      footer: 'These ideas set off new revolutions in Europe in 1830 and 1848. Most of the uprisings of 1848 were crushed within two years.',
+      footer: 'These ideas helped set off new revolutions in Europe in 1830 and 1848. Most of the uprisings of 1848 were crushed within two years.',
       template: {
         claimLabel: 'Discontent with kings and empires made',
         claim: '**New systems and ideas**',
         branches: [
-          { label: 'Republic', note: 'No king; leaders elected under a written constitution', items: ['United States, 1776', 'France, 1792'] },
+          { label: 'Republic', note: 'No king; leaders elected under a written constitution', items: ['United States, constitution of 1787', 'France, 1792'] },
           { label: 'Liberalism', note: 'A constitution and parliament limit the government and protect rights', items: ['free speech', 'free press', 'property'] },
           { label: 'Democracy', note: 'Rule by the people: the vote for all men', items: ['France, 1848'] }
         ]
@@ -525,7 +525,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'The nation', text: 'People who share a language, a religion, customs and a homeland', key: true },
           { label: 'Governments use it', text: 'The whole nation called to war' }
         ],
-        links: ['raise', 'answered by', 'harnessed']
+        links: ['raise', 'answer', 'used']
       },
       notes: {
         minutes: 1,
@@ -610,7 +610,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.3.II.iii: "in some cases, nationalists challenged boundaries." The CED names "Balkan nationalisms" and "Ottomanism."',
-          'Greece (Britannica): the war began in 1821; the London protocol of 3 February 1830 declared Greece "an independent monarchical state" under the powers\' protection; the sultan recognized it in 1832. Serbia: risings of 1804 and 1815, self-rule recognized by 1830, before Greece, so avoid "Greece was the first." 1878: the Treaty of Berlin recognized Serbia, Montenegro and Romania; Bulgaria became a self-governing principality still under the sultan.',
+          'Greece (Britannica): the war began in 1821; the London protocol of 3 February 1830 declared Greece "an independent monarchical state" under the powers\' protection; the sultan recognized it in 1832. Serbia: risings of 1804 and 1815 and self-rule recognized by 1830, but full independence only in 1878; Greece was the first to be declared fully independent (1830). If a student says "first," ask whether they mean self-rule or independence. 1878: the Treaty of Berlin recognized Serbia, Montenegro and Romania; Bulgaria became a self-governing principality still under the sultan.',
           'Ottomanism is the government harnessing a shared loyalty (KC-5.3.II.ii) against nationalism: the Reform Edict of 1856 promised equality in education, appointments and justice regardless of religion; the nationality law of 1869 made "Ottoman" every subject\'s legal status. The empire\'s wider reforms, the Tanzimat, belong to Topic 5.8; here it is only the idea of one loyalty.',
           'It did not stop the Balkan states from leaving, which is the effect to land.'
         ],
@@ -676,7 +676,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 1,
         land: [
           'Learning objective C: "Explain causes and effects of the various revolutions in the period from 1750 to 1900." The sentence is the whole answer; the examples make it an AP answer.',
-          'A strong version: Revolutions came when a grievance (British taxes, privilege and bread, slavery, exclusion from office), the words to name it (the 1776 and 1789 declarations, the Letter from Jamaica) and a chance (French help, a bankrupt king, a France in revolution, Napoleon\'s invasion of Spain) came together; each one helped another start or win; and they created new states and the nation, which joined Italy and Germany and pulled Greece and Serbia away from the Ottoman Empire.'
+          'A strong version: Revolutions came when a grievance (British taxes, privilege and bread, slavery, exclusion from office), the words to name it (the 1776 and 1789 declarations, the Letter from Jamaica) and a chance (distance and the end of the French threat, a bankrupt king, a France in revolution, Napoleon\'s invasion of Spain) came together; each one helped another start or win; and they created new states and the nation, which joined Italy and Germany and pulled Greece and Serbia away from the Ottoman Empire.'
         ],
         ask: 'Which blank is hardest to fill with an example?',
         listenFor: 'Students who can name one example per blank have the objective.'

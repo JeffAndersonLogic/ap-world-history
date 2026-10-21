@@ -409,7 +409,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "branch-tree",
       "eyebrow": "What the Revolutions Created · Ideas",
       "title": "New answers to \"how should a country be run?\"",
-      "footer": "These ideas set off new revolutions in Europe in 1830 and 1848. Most of the uprisings of 1848 were crushed within two years.",
+      "footer": "These ideas helped set off new revolutions in Europe in 1830 and 1848. Most of the uprisings of 1848 were crushed within two years.",
       "kc": "KC-5.3.IV.A.i",
       "template": {
         "claimLabel": "Discontent with kings and empires made",
@@ -419,7 +419,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "label": "Republic",
             "note": "No king; leaders elected under a written constitution",
             "items": [
-              "United States, 1776",
+              "United States, constitution of 1787",
               "France, 1792"
             ]
           },
@@ -470,8 +470,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         ],
         "links": [
           "raise",
-          "answered by",
-          "harnessed"
+          "answer",
+          "used"
         ]
       }
     },

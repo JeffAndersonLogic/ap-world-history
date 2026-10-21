@@ -65,7 +65,7 @@
     ...lesson.map,
     key: [
       { label: "The four revolutions", detail: "The United States (1775 to 1783), France (1789 to 1799), Haiti (1791 to 1804), and Spanish America (1810 to 1826). In each, a grievance, the words of a document, and a chance to act came together." },
-      { label: "The numbered arrows", detail: "Arrow 1: helping the Americans win left France nearly bankrupt, which forced the king to call the assembly where the French Revolution began. Arrow 2: free people of color in Saint-Domingue claimed the rights of France's 1789 declaration. Arrow 3: in 1816 Haiti gave Simón Bolívar guns, supplies, and men for his war against Spain. One link is not drawn: Napoleon's invasion of Spain in 1808 left Spanish America with no king to obey." },
+      { label: "The numbered arrows", detail: "Each arrow runs from one revolution to another, and its label names what traveled between them. Arrow 1 runs from the United States to France, arrow 2 from France to Haiti, and arrow 3 from Haiti to Spanish America. One link is not drawn: Napoleon's invasion of Spain in 1808 left Spanish America with no king to obey." },
       { label: "New nations in Europe", detail: "Nationalism joined Italy (1861, with Rome added in 1870) and Germany (1871) together, and pulled the Balkans away from the Ottoman Empire: Greece was declared independent in 1830, and Serbia, Montenegro, and Romania in 1878." },
       { label: "Reading the map", detail: "The shaded areas mark regions, not exact borders. Read the dates from earliest to latest to see the chain of revolutions, then the new nations that followed." }
     ]
@@ -92,7 +92,7 @@
 
   lesson.beInTheRoom = {
     url: '../beintheroom/unit-5/the-saint-domingue-constitution.html',
-    desc: "Le Cap, Saint-Domingue, 1801. The revolution has ended slavery in the colony, and France still claims it. A council must write a constitution that protects that freedom, keeps people fed and the colony defended, and decides how far to stand against France."
+    desc: "Port-Républicain (Port-au-Prince), Saint-Domingue, spring 1801. The revolution has ended slavery in the colony, and France still claims it. A council must write a constitution that protects that freedom, keeps people fed and the colony defended, and decides how far to stand against France."
   };
 
   lesson.skillBuilder = {
@@ -103,7 +103,7 @@
       { label: "Read the two sources", text: "Source A, the Declaration of the Rights of Man and of the Citizen, France, August 1789, Article 1: \"Men are born and remain free and equal in rights.\" Source B, Toussaint Louverture's proclamation to the people of Saint-Domingue, August 1793: \"I want Liberty and Equality to reign in Saint Domingue.\"" },
       { label: "Say each argument", text: "Source A argues that every man is born free and equal in rights. Source B argues that liberty and equality must rule in Saint-Domingue, a colony where most people were enslaved." },
       { label: "Say how they agree and differ", text: "They agree that liberty and equality belong to people by right. They differ in who claims them: the French Assembly wrote the words for France, while Toussaint claimed them for enslaved people in a French colony, and called them to fight for them." },
-      { label: "Explain the difference", text: "The difference comes from each grievance. The Assembly was answering privilege in France. Toussaint was answering slavery in Saint-Domingue, where the Assembly had refused to give even free people of color equal rights. Use this frame: \"Both [Source A] and [Source B] argue that [what they share], but [how they differ], because [what caused each one].\"" }
+      { label: "Explain the difference", text: "The difference comes from each grievance. The Assembly was answering privilege in France. Toussaint was answering slavery in Saint-Domingue, which the Assembly's declaration had left in place. Use this frame: \"Both [Source A] and [Source B] argue that [what they share], but [how they differ], because [what caused each one].\"" }
     ],
     prompt: "Now do it yourself. Choose ONE pair. Pair 1: the Declaration of Independence (1776), governments get \"their just powers from the consent of the governed,\" and Simón Bolívar's Letter from Jamaica (1815), \"institutions which are wholly representative are not suited to our character, customs, and present knowledge.\" Pair 2: the Declaration of Independence (1776), governments get \"their just powers from the consent of the governed,\" and the Declaration of the Rights of Man and of the Citizen (1789), \"The principle of all sovereignty resides essentially in the nation.\" (Sovereignty means the highest power in a state.) Write three sentences: say each source's argument in your own words, say one way they agree and one way they differ, and explain what caused the difference.",
     criteria: [
@@ -132,7 +132,7 @@
       cardDesc: "What a nation is, how governments used shared loyalty, one country nationalism joined together, and one people it pulled away from an empire.",
       learningTargets: [lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[2].criteria],
-      prompt: "Explain how nationalism caused changes to states between 1789 and 1900. (1) Explain what a nation is: what do the people in it share? (2) Explain one way a government used shared loyalty: revolutionary France calling the whole nation to war in 1793, or the Ottoman Empire's Ottomanism, which tried to build one loyalty to the empire to hold back nationalism. (3) Choose ONE country that nationalism joined together, Italy or Germany, and explain how and when it was united. (4) Choose ONE people that nationalism pulled away from the Ottoman Empire, Greece in 1830, or Serbia, Montenegro, or Romania in 1878, and explain how and when it became independent. (5) Explain why the same cause, nationalism, could have both effects.",
+      prompt: "Explain how nationalism caused changes to states between 1789 and 1900. (1) Explain what a nation is: what do the people in it share? (2) Choose one government that used shared loyalty, revolutionary France in 1793 or the Ottoman Empire, and explain what it did and why. (3) Choose ONE country that nationalism joined together, Italy or Germany, and explain how and when it was united. (4) Choose ONE people that nationalism pulled away from the Ottoman Empire, Greece in 1830, or Serbia, Montenegro, or Romania in 1878, and explain how and when it became independent. (5) Explain why the same cause, nationalism, could have both effects.",
       responseType: "Checkpoint 2",
       skill: "Causation",
       terms: ["nation", "nationalism", "language", "religion", "customs", "homeland", "unity", "government", "Ottomanism", "Ottoman Empire", "citizen", "unification", "Italy", "Cavour", "Garibaldi", "1861", "Germany", "Bismarck", "Prussia", "1871", "Balkans", "Greece", "1830", "Serbia", "1878", "independent", "cause", "effect"],

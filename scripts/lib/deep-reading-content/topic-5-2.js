@@ -85,13 +85,13 @@ module.exports = {
         {
           heading: 'The chance, and what it created',
           blocks: [
-            { p: `Britain was an ocean away, and in <span class="num">1778</span> France, Britain's old rival, joined the war on the American side with money, soldiers and a navy. By <span class="num">1783</span> Britain had recognized the independence of the United States. In <span class="num">1787</span> the new country wrote a constitution for a <span class="kt">republic</span>: a country with no king, whose leaders are elected.` },
+            { p: `Britain was an ocean away, and its victory in <span class="num">1763</span> had pushed France out of North America, so the colonists no longer needed British soldiers to protect them. Once the fighting began in <span class="num">1775</span>, France, Britain's old rival, joined the war on the American side in <span class="num">1778</span> with money, soldiers and a navy, which helped the colonists win. By <span class="num">1783</span> Britain had recognized the independence of the United States. In <span class="num">1787</span> the new country wrote a constitution for a <span class="kt">republic</span>: a country with no king, whose leaders are elected.` },
             { p: `The College Board calls the American Revolution and its republic "a model and inspiration for a number of the revolutions that followed." It was also limited. The republic kept slavery, and most states let only men who owned property vote.` }
           ]
         }
       ],
       useThis: {
-        tool: `Name all three ingredients. <em>British taxes were the grievance, the Declaration of Independence gave it words, and distance and French help gave the colonists their chance.</em>`,
+        tool: `Name all three ingredients, with a detail for each. <em>Ask what the colonists were angry about, which document named it, and why they could act when they did.</em>`,
         limit: `The revolution's "all men are created equal" did not end slavery, and the new states limited voting to some men.`,
         comparison: `Against France (section 02): the American revolutionaries broke away from a ruler across an ocean; the French remade their own kingdom.`
       },
@@ -144,7 +144,7 @@ module.exports = {
         }
       ],
       useThis: {
-        tool: `Show the link. <em>France's spending on the American war left it nearly bankrupt, which forced the king to call the Estates-General, where the French Revolution began.</em>`,
+        tool: `Show the link. <em>Trace how the American war reached Paris: what did it cost France, and what did that force the king to do?</em>`,
         limit: `The revolution that began against a king ended with an emperor, and the Terror killed thousands in the name of the people.`,
         comparison: `Against Haiti (section 03): the same declaration that France wrote for itself was claimed by people France held in slavery.`
       },
@@ -175,12 +175,12 @@ module.exports = {
         {
           heading: 'The words, and the chance',
           blocks: [
-            { p: `When the 1789 declaration reached the colony, free people of color asked the Assembly in Paris for the equal rights it promised. The Assembly left the question to the colonists, and the white planters refused. In <span class="num">1790</span> a free man of color, Vincent Ogé, led a small revolt for those rights and was executed. Paris granted free people of color equal rights only in April <span class="num">1792</span>, after the revolution in the colony had begun.` },
+            { p: `When the 1789 declaration reached the colony, free people of color asked the Assembly in Paris for the equal rights it promised. The Assembly left the question to the colonists, and the white planters refused. In <span class="num">1790</span> a free man of color, Vincent Ogé, led a small revolt for those rights, and early in <span class="num">1791</span> he was executed. Paris granted free people of color equal rights only in April <span class="num">1792</span>, after the revolution in the colony had begun.` },
             { p: `With France in revolution and the colony's white planters divided, enslaved people in the northern plain rose up in August <span class="num">1791</span>. They burned plantations across the northern plain. Toussaint Louverture, who had been born enslaved and had won his freedom before the revolution, became the revolution's most famous leader. In <span class="num">1793</span>, fighting on Spain's side against France, he announced: "I want Liberty and Equality to reign in Saint Domingue."` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that France gave Haiti its freedom. Enslaved people rose up in 1791. French officials in the colony began freeing enslaved people in 1793 to keep their side's soldiers, and in February 1794 the government in Paris abolished slavery in all French colonies, after three years of fighting. Toussaint changed sides to France a few months later. Haitians then won their independence by defeating Napoleon's army.`
+              html: `Do not write that France gave Haiti its freedom. Enslaved people rose up in 1791. French officials in the colony began freeing enslaved people in 1793 to keep their side's soldiers, and in February 1794 the government in Paris abolished slavery in all French colonies, after two and a half years of fighting. Toussaint changed sides to France a few months later. Haitians then won their independence by defeating Napoleon's army.`
             } }
           ]
         },
@@ -193,7 +193,7 @@ module.exports = {
         }
       ],
       useThis: {
-        tool: `Say who acted. <em>Enslaved people in Saint-Domingue claimed the rights of France's own declaration, rose up in 1791, and won Haiti's independence in 1804 by defeating Napoleon's army.</em>`,
+        tool: `Say who acted. <em>Ask who rose up in 1791, who led them, and whose army they defeated, before you mention any law passed in Paris.</em>`,
         limit: `Haiti paid for its independence: in money to France, and in years of isolation by countries that allowed slavery.`,
         comparison: `Against the United States (section 01): both broke from a European empire, but only Haiti's revolution ended slavery.`
       },
@@ -242,7 +242,7 @@ module.exports = {
         }
       ],
       useThis: {
-        tool: `Use the chain. <em>The French Revolution's effects, through Napoleon's invasion of Spain in 1808, gave Spanish America its chance, and Haiti's help in 1816 kept Bolívar's war going.</em>`,
+        tool: `Use the chain. <em>Connect two revolutions: what did events in Spain in 1808 do to Spanish America, and what did Haiti give Bolívar in 1816?</em>`,
         limit: `Independence changed who ruled more than how society was ordered: creoles replaced peninsulares at the top.`,
         comparison: `Against the Declaration of Independence: read the two side by side and ask what each says about who should govern, and why the answers might differ.`
       },
@@ -268,7 +268,7 @@ module.exports = {
           heading: 'New ways to govern',
           blocks: [
             { p: `Behind all four revolutions was anger at kings and empires, and the revolutions left behind new answers to an old question: how should a country be run? One was the republic, with a written <span class="kt">constitution</span>, a set of basic laws that even the government must follow. Another was <span class="kt">liberalism</span>: the belief that a constitution and an elected parliament should limit the government and protect each person's rights, such as free speech, a free press and property. Many liberals in the 1800s still wanted only men with property to vote. A third was <span class="kt">democracy</span>, rule by the people, which pushed for the vote to reach all men.` },
-            { p: `These ideas did not stay on paper. They set off new revolutions across Europe in <span class="num">1830</span> and <span class="num">1848</span>, when crowds demanded constitutions, parliaments and wider voting. Most of the uprisings of 1848 were crushed within two years, but the demands did not go away.` }
+            { p: `These ideas did not stay on paper. They helped set off new revolutions across Europe in <span class="num">1830</span> and <span class="num">1848</span>, when crowds demanded constitutions, parliaments and wider voting. Most of the uprisings of 1848 were crushed within two years, but the demands did not go away.` }
           ]
         },
         {
@@ -299,7 +299,7 @@ module.exports = {
         }
       ],
       useThis: {
-        tool: `Follow an effect forward. <em>The revolutions created the idea that a state belongs to its nation; nationalists then united Italy (1861) and Germany (1871) and pulled Greece (1830) away from the Ottoman Empire.</em>`,
+        tool: `Follow an effect forward. <em>Start from the idea that a state belongs to its nation, then find one state it joined together and one people it pulled away from an empire, each with a date.</em>`,
         limit: `A nation is imagined: people come to believe they belong to it. Many Italians in 1861 did not speak the same Italian, and Ottomanism's promise of equality was often not kept in practice.`,
         comparison: `Against revolutionary France in 1793: France called on loyalty to the nation; the Ottoman government tried to build loyalty to the empire instead, to hold back nationalism.`
       },
@@ -320,17 +320,17 @@ module.exports = {
       {
         category: 'Causation',
         title: 'A grievance, the words and a chance',
-        body: `British taxes such as the Stamp Act (1765), French privilege and bread prices (1788 to 1789), slavery in Saint-Domingue, and creoles kept out of high office were the grievances. The Declaration of Independence (1776), the Declaration of the Rights of Man (1789) and Bolívar's Letter from Jamaica (1815) were the words. French help (1778), a bankrupt king (1788), a France in revolution (1791) and Napoleon's invasion of Spain (1808) were the chances.`
+        body: `Evidence to sort: the Stamp Act (1765); the end of the French threat in North America (1763); the Declaration of Independence (1776); noble privilege and bread prices in France (1788 to 1789); a bankrupt French government (1788); the Declaration of the Rights of Man (1789); slavery in Saint-Domingue; the rising of 1791; Toussaint's proclamation (1793); creoles kept out of high office; Napoleon's invasion of Spain (1808); Bolívar's Letter from Jamaica (1815). For the revolution you choose, decide which is its grievance, which gave it words, and which was its chance.`
       },
       {
         category: 'Causation',
-        title: 'Each revolution helped cause the next',
-        body: `France's spending on the American war left it nearly bankrupt by 1788; free people of color in Saint-Domingue claimed France's 1789 declaration; Napoleon's invasion of Spain in 1808 left Spanish America with no king; Haiti armed Bolívar in 1816. The College Board calls the American Revolution "a model and inspiration" for the revolutions that followed.`
+        title: 'Each revolution helped another start or win',
+        body: `Evidence to sort: France's spending on the American war; free people of color in Saint-Domingue and France's 1789 declaration; Napoleon's invasion of Spain (1808); Haiti's guns, supplies and men for Bolívar (1816). For each, name the two revolutions it links and decide whether it helped the second one start or helped it win. The College Board calls the American Revolution "a model and inspiration" for the revolutions that followed.`
       },
       {
         category: 'Effects',
         title: 'New states and new ideas about government',
-        body: `The United States (1783, a republic under the 1787 constitution), Haiti (1804) and the independent countries of Spanish America (by 1826) were new states. Republics, written constitutions, liberalism and democracy were new ideas, which set off new revolutions in Europe in 1830 and 1848. Many things stayed: slavery in the United States and much of Latin America, and creole elites at the top.`
+        body: `The United States (1783, a republic under the 1787 constitution), Haiti (1804) and the independent countries of Spanish America (by 1826) were new states. Republics, written constitutions, liberalism and democracy were new ideas, which helped set off new revolutions in Europe in 1830 and 1848. Many things stayed: slavery in the United States and much of Latin America, and creole elites at the top.`
       },
       {
         category: 'Effects',

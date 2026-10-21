@@ -52,7 +52,7 @@ window.BEHISTORICAL_LESSON = {
   ],
   successCriteria: [
     {
-      criteria: "I can choose one revolution (American, French, Haitian, or Spanish American) and name its grievance (such as British taxes, noble privilege and bread prices, slavery, or creoles shut out of high office), its words (the Declaration of Independence, the Declaration of the Rights of Man and of the Citizen as claimed in Saint-Domingue, Toussaint Louverture's proclamation of 1793, or Bolívar's Letter from Jamaica, written five years into the fighting), and its chance (such as Britain's distance, a bankrupt king, a France in revolution, or Napoleon's invasion of Spain).",
+      criteria: "I can choose one revolution (American, French, Haitian, or Spanish American) and name its grievance (such as British taxes, noble privilege and bread prices, slavery, or creoles shut out of high office), its words (America: the Declaration of Independence; France: the Declaration of the Rights of Man and of the Citizen; Haiti: that French declaration as free people of color claimed it, or Toussaint Louverture's proclamation of 1793; Spanish America: Bolívar's Letter from Jamaica, written five years into the fighting), and its chance (such as Britain's distance, a bankrupt king, a France in revolution, or Napoleon's invasion of Spain).",
       kc: 'KC-5.3.I.B',
       theme: "Governance"
     },
@@ -151,7 +151,7 @@ window.BEHISTORICAL_LESSON = {
         title: "Haiti and Spanish America: The Words Claimed",
         bullets: [
           "**Haiti's grievance:** Saint-Domingue was France's most valuable colony, its sugar and coffee grown by more than 400,000 enslaved people, more than five for every free person. **The words:** free people of color claimed the rights of the 1789 declaration and were refused until 1792. **The chance:** with France in revolution, the enslaved rose up in August 1791. **Toussaint Louverture**, born enslaved and freed before the revolution, became its most famous leader.",
-          "French officials began freeing the enslaved in 1793, and in February 1794 France abolished slavery in all its colonies, after three years of fighting. In 1802 Napoleon restored slavery in Guadeloupe and sent an army to retake Saint-Domingue; Toussaint died in a French prison in 1803. **Jean-Jacques Dessalines** fought on, and on 1 January 1804 declared the independence of **Haiti**, the second independent country in the Americas and the first founded by people who had freed themselves from slavery.",
+          "French officials began freeing the enslaved in 1793, and in February 1794 France abolished slavery in all its colonies, after two and a half years of fighting. In 1802 Napoleon restored slavery in Guadeloupe and sent an army to retake Saint-Domingue; Toussaint died in a French prison in 1803. **Jean-Jacques Dessalines** fought on, and on 1 January 1804 declared the independence of **Haiti**, the second independent country in the Americas and the first founded by people who had freed themselves from slavery.",
           "**Spanish America's grievance:** **creoles**, people of Spanish descent born in the Americas, were kept out of the highest offices, which went to **peninsulares**, men born in Spain. **The chance:** in 1808 Napoleon invaded Spain and forced its king from the throne, and in 1810 creole leaders set up governments of their own. **The words:** Simón Bolívar's **Letter from Jamaica** (1815): \"The hatred that the Peninsula has inspired in us is greater than the ocean between us.\"",
           "**One revolution helps another win:** in 1816 Haiti's president, Alexandre Pétion, gave Bolívar guns, supplies, and men, and asked him to end slavery in the lands he freed. **What it created:** by 1826 Spain held only Cuba and Puerto Rico in the Americas. Creole elites took the top places, and slavery lasted in several new countries for decades."
         ],
@@ -165,7 +165,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "New Ideas, and the Nation Redraws the Map",
         bullets: [
-          "**New ideas about government:** anger at kings and empires produced the **republic** with a written constitution; **liberalism**, the belief that a constitution and an elected parliament should limit the government and protect rights such as free speech, a free press, and property (many liberals still wanted only men with property to vote); and **democracy**, rule by the people, with the vote for all men. These ideas set off new revolutions in Europe in 1830 and 1848.",
+          "**New ideas about government:** anger at kings and empires produced the **republic** with a written constitution; **liberalism**, the belief that a constitution and an elected parliament should limit the government and protect rights such as free speech, a free press, and property (many liberals still wanted only men with property to vote); and **democracy**, rule by the people, with the vote for all men. These ideas helped set off new revolutions in Europe in 1830 and 1848.",
           "**The nation:** if a state belongs to its people, which people? More and more, the answer was everyone who shared a language, a religion, customs, and a homeland. Governments used that loyalty: in 1793 revolutionary France called the whole nation to war.",
           "**Joining states:** Italian nationalists, among them Cavour and Garibaldi, united most of Italy in 1861 and added Rome in 1870. In Germany, liberals at Frankfurt failed in 1848; then Prussia's Otto von Bismarck said great questions are decided \"by iron and blood,\" and after three wars the **German Empire** was proclaimed on 18 January 1871 in the Hall of Mirrors at Versailles.",
           "**Breaking an empire:** Serbs and Greeks rebelled against the Ottoman Empire; Greece was declared an independent state, to be ruled by a king, in 1830, and Serbia, Montenegro, and Romania were recognized as independent in 1878. The Ottoman government answered with **Ottomanism**, promising equal treatment to all subjects (1856) and making every subject an Ottoman citizen (1869), one loyalty for everyone, but it did not stop the Balkan nations from leaving."
@@ -191,7 +191,7 @@ window.BEHISTORICAL_LESSON = {
 
   deepReading: {
     title: "How Revolutions Made Nations",
-    desc: "A longer, optional chapter on the same story: the recipe of grievance, words, and chance; the American, French, Haitian, and Spanish American revolutions and how each helped cause the next; the new ideas about government they created; and how the nation joined Italy and Germany together and broke the Balkans away from the Ottoman Empire.",
+    desc: "A longer, optional chapter on the same story: the recipe of grievance, words, and chance; the American, French, Haitian, and Spanish American revolutions and how each helped another start or win; the new ideas about government they created; and how the nation joined Italy and Germany together and broke the Balkans away from the Ottoman Empire.",
     url: "deep-reading-topic-5-2-nationalism-and-revolutions.html"
   },
 
@@ -230,7 +230,7 @@ window.BEHISTORICAL_LESSON = {
 
   beInTheRoom: {
     url: '',
-    desc: "Le Cap, Saint-Domingue, 1801. A council must write a constitution that defends freedom from slavery, keeps the colony fed and defended, and decides how far to stand against France."
+    desc: "Port-Républicain (Port-au-Prince), Saint-Domingue, spring 1801. A council must write a constitution that defends freedom from slavery, keeps the colony fed and defended, and decides how far to stand against France."
   }
 
 };

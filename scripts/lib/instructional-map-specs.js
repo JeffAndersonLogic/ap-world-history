@@ -345,12 +345,12 @@ module.exports = [
       { zone: 'andes', label: 'SPANISH AMERICA', tone: 'sand', legend: 'Spanish American independence, 1810 to 1826' },
       { zone: [12.5, 43, 2.6, 3], label: 'ITALY', labelSide: 'left', tone: 'sage', legend: 'Italy united, 1861; Rome added, 1870' },
       { zone: [11, 51.5, 3.6, 2.6], label: 'GERMANY', tone: 'slate', legend: 'German Empire proclaimed, 1871' },
-      { zone: [22, 42, 3.6, 3], label: 'BALKANS', labelSide: 'right', tone: 'plum', legend: 'Greece 1830; Serbia, Romania, Montenegro 1878' }
+      { zone: [22, 42, 3.6, 3], label: 'BALKANS', labelSide: 'right', tone: 'sky', legend: 'Greece 1830; Serbia, Romania, Montenegro 1878' }
     ],
     flows: [
       { from: 'unitedStates', to: [2.5, 46.5], label: 'war debt', bow: -0.18 },
       { from: [2.5, 46.5], to: [-72.5, 19], label: 'the declaration claimed', bow: 0.2 },
-      { from: [-72.5, 19], to: [-66.9, 10.5], label: 'Haiti arms Bolívar, 1816', bow: -0.3 }
+      { from: [-72.5, 19], to: [-71, 4], label: 'Haiti arms Bolívar, 1816', bow: -0.3 }
     ],
     note: 'Regions are approximate. The numbered arrows are links in the chain of revolutions; Italy, Germany and the Balkans mark new states that nationalism made.'
   },
