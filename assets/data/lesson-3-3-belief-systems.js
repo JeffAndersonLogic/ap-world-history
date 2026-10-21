@@ -101,7 +101,14 @@ window.BEHISTORICAL_LESSON = {
   lecture: {
     title: "Belief Systems in Motion: Reformation, Rivalry, and New Traditions",
     intro: "Use these cards to explain continuity and change within belief systems from c. 1450 to c. 1750: Christianity changed through Protestant and Catholic reform, Ottoman-Safavid rivalry intensified the Sunni-Shia divide, and Sikhism developed in South Asia amid sustained interaction between Hinduism and Islam.",
-    videos: [],
+    videos: [
+      {
+        title: "History 101: The Protestant Reformation | National Geographic",
+        url: "https://youtu.be/IATyzSAjC1w",
+        youtubeId: "IATyzSAjC1w",
+        prompt: "Use this clip to review why Martin Luther challenged the Catholic Church in 1517 and how his protest split western Christianity. As you watch, write down one thing that changed and one thing that stayed the same."
+      }
+    ],
     segments: [
       {
         title: "Christianity Changes: Protestant and Catholic Reformations",

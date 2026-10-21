@@ -94,15 +94,15 @@ always point at the generated `-student.html` file, never at the teacher deck.
 ## Video Clips
 
 Videos are an **optional resource**, not part of the ten-module path and not part
-of the lecture deck. Only 27 of the 71 unit topics have a clip at all (units 1, 2,
-8 and 9, plus 3.1 and 3.4); most Foundations topics have two, and Foundations 2
+of the lecture deck. Only 29 of the 71 unit topics have a clip at all (units 1, 2,
+8 and 9, plus 3.1 to 3.4; counted 2026-10-21); most Foundations topics have two, and Foundations 2
 has seven, one per belief system it teaches. That coverage is why they are not
-folded into the concept cards: it would leave 44 topics' cards with an empty
+folded into the concept cards: it would leave 42 topics' cards with an empty
 slot, and nothing in the data maps a clip to a particular card.
 
 - The block **introduces itself** when clips exist and **hides entirely** when
   they do not. An empty `#content-video-clips` used to leave a gap under the
-  concept cards on 44 topics, which reads as something failing to load.
+  concept cards on the topics without one, which reads as something failing to load.
 - Keep the container in the shell either way. `validate.js` requires the
   `content-video-clips` id; the renderer sets `hidden` on it.
 - A clip card is headed by **its title**. It used to be headed "Video Clip" with

@@ -70,6 +70,58 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
+      "eyebrow": "Christianity · The Story",
+      "title": "Why a German monk defied the Pope.",
+      "kc": "KC-4.1.VI.i",
+      "template": {
+        "steps": [
+          {
+            "label": "Rome",
+            "text": "Pope Leo X raises money to rebuild St. Peter's Basilica."
+          },
+          {
+            "label": "Indulgences",
+            "text": "Preachers sell indulgences, promises of less punishment for sins already forgiven."
+          },
+          {
+            "label": "1517",
+            "text": "Martin Luther, a German monk, attacks the sale in his 95 Theses."
+          },
+          {
+            "label": "Faith alone",
+            "text": "Luther teaches that God saves people through faith, which no one can buy or earn."
+          },
+          {
+            "label": "1521",
+            "key": true,
+            "text": "Leo X excommunicates Luther, and Luther becomes the symbol of reform."
+          }
+        ],
+        "side": "left",
+        "pictures": [
+          {
+            "caption": "St. Peter's Basilica, Rome",
+            "visual": {
+              "url": "../assets/images/topics/3-3/3.3%20-%20St%20Peters%20Basilica.jpg",
+              "alt": "Modern photograph of the front of St. Peter's Basilica in Rome at sunrise: a wide stone front with columns and statues along the roof, a great blue-gray dome behind it, and an Egyptian obelisk in the square in front",
+              "credit": "Modern photograph",
+              "position": "58% 50%"
+            }
+          },
+          {
+            "caption": "Inside St. Peter's",
+            "visual": {
+              "url": "../assets/images/topics/3-3/3.3%20-%20St%20Peters%20Basilica%20interior.jpg",
+              "alt": "Modern photograph of the inside of St. Peter's Basilica: a long nave with a gold coffered ceiling, marble pillars decorated with carved figures, and a tall bronze canopy over the altar at the far end",
+              "credit": "Modern photograph",
+              "position": "55% 50%"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "story-scene",
       "eyebrow": "Christianity · Break",
       "title": "A challenge becomes a Reformation.",
       "kc": "KC-4.1.VI.i",
@@ -136,10 +188,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "caption": "Council of Trent, 1545 to 1563",
             "visual": {
-              "url": "../assets/images/topics/3-3/3.3%20-%20Catholic%20Reformation.jpg",
-              "alt": "Reconstruction of the Council of Trent: rows of bishops in white miters and cardinals in red facing each other across a church nave while clerks write at a table in the center",
-              "ai": true,
-              "position": "50% 55%"
+              "url": "../assets/images/topics/3-3/3.3%20-%20Council%20of%20Trent%20painting.jpg",
+              "alt": "Painting of the Council of Trent in session inside a church: cardinals in red robes sit on a raised bench at the left, rows of bishops fill curved tiers of seats, and two clerks sit at a table in the open center",
+              "credit": "Painting",
+              "position": "50% 50%"
             }
           },
           {
@@ -150,6 +202,48 @@ window.BEHISTORICAL_STUDENT_DECK = {
               "ai": true,
               "position": "45% 45%"
             }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "split-mirror",
+      "eyebrow": "Christianity · Two Answers",
+      "title": "One faith, two answers.",
+      "footer": "Both stayed Christian, and both grew. What split was who decides what is true.",
+      "kc": "KC-4.1.VI.i",
+      "template": {
+        "left": {
+          "name": "Lutheran"
+        },
+        "right": {
+          "name": "Catholic, after Trent"
+        },
+        "rows": [
+          {
+            "label": "Saved by",
+            "left": "Grace, through faith alone",
+            "right": "Grace, through faith and good works"
+          },
+          {
+            "label": "Truth",
+            "left": "The Bible alone",
+            "right": "The Church interprets the Bible"
+          },
+          {
+            "label": "Worship",
+            "left": "In local languages, like German",
+            "right": "In Latin"
+          },
+          {
+            "label": "Clergy",
+            "left": "Pastors may marry",
+            "right": "Unmarried priests, trained in seminaries"
+          },
+          {
+            "label": "Indulgences",
+            "left": "Rejected",
+            "right": "Kept, but the selling ends"
           }
         ]
       }
