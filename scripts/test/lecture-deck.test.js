@@ -91,8 +91,8 @@ const PAGES = [
     url: '/foundations/foundations-1-geography.html', clips: true },
   { label: 'Topic 1.1, shared renderer, 2 clips',
     url: '/unit-1/lesson-1-1-song-china.html', clips: true },
-  { label: 'Topic 4.1, shared renderer, no clips',
-    url: '/unit-4/lesson-4-1-technological-innovations.html', clips: false }
+  { label: 'Topic 5.1, shared renderer, no clips',
+    url: '/unit-5/lesson-5-1-enlightenment.html', clips: false }
 ];
 
 (async () => {
