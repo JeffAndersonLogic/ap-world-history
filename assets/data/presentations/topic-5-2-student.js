@@ -48,7 +48,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "action",
       "eyebrow": "Module 02 · First & 10 · 12 Minutes",
       "title": "Read for three ingredients.",
-      "subtitle": "In each revolution, find the grievance, the words and the chance. Then watch how one revolution helped cause the next.",
+      "subtitle": "In each revolution, find the grievance, the words and the chance. Then watch how each revolution helped another one start or win.",
       "action": {
         "label": "Open First & 10",
         "url": "first-and-10-topic-5-2-nationalism-and-revolutions-capture.html?v=response-id-fix-v1"
@@ -116,12 +116,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Chance",
-            "text": "Britain is an ocean away; France joins the war, 1778."
+            "text": "Britain is an ocean away, and since 1763 no French army next door to fear."
           },
           {
             "label": "Created",
             "key": true,
-            "text": "The United States: independent by 1783, a republic under a constitution written in 1787."
+            "text": "With French help from 1778, independence by 1783; a republic under a constitution written in 1787."
           }
         ],
         "visual": {
@@ -162,7 +162,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "May 1789",
-            "text": "He calls the Estates-General, first since 1614"
+            "text": "The Estates-General meets, first since 1614"
           },
           {
             "label": "June to August 1789",
@@ -172,7 +172,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         ],
         "links": [
           "costs a fortune",
-          "so",
+          "so he calls",
           "and then"
         ]
       }
@@ -221,7 +221,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "story-scene",
       "eyebrow": "Haiti · 1791 to 1804",
-      "title": "The words, claimed by the enslaved.",
+      "title": "The words, claimed by people left out.",
       "kc": "KC-5.3.III.B",
       "template": {
         "caption": "Toussaint Louverture, a French print of 1802",
@@ -232,16 +232,16 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Words",
-            "text": "Free people of color claim the 1789 declaration's rights, and are refused."
+            "text": "Free people of color claim the 1789 declaration's rights; Toussaint, 1793: \"Liberty and Equality.\""
           },
           {
             "label": "Chance",
-            "text": "With France in revolution, the enslaved rise up, August 1791. France ends slavery, 1794."
+            "text": "With France in revolution and the planters divided, the enslaved rise up, August 1791."
           },
           {
             "label": "Created",
             "key": true,
-            "text": "Napoleon's army defeated: Haiti independent, 1 January 1804."
+            "text": "France ends slavery, 1794; Napoleon's army defeated; Haiti independent, 1 January 1804."
           }
         ],
         "visual": {
@@ -264,7 +264,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "name": "The United States, 1803",
             "mark": "L",
             "tool": "Louisiana:",
-            "result": "Napoleon, having lost Saint-Domingue, sells it."
+            "result": "sold by Napoleon as his army in Saint-Domingue dies."
           },
           {
             "name": "The United States, 1862",
@@ -309,7 +309,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Words",
-            "text": "Bolívar in exile writes the Letter from Jamaica, **1815**."
+            "text": "Five years in, Bolívar in exile writes the Letter from Jamaica, **1815**."
           },
           {
             "label": "Created",
@@ -327,13 +327,13 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "quote": "The hatred that the Peninsula has inspired in us is greater than the ocean between us.",
         "attribution": "Simón Bolívar, the Letter from Jamaica, Kingston, 6 September 1815 (translated by Lewis Bertrand)",
-        "notice": "Spain has lost Spanish America for good. But Bolívar also doubted that a government **\"wholly representative\"** suited it yet."
+        "notice": "Bolívar argues that Spain has lost Spanish America for good. But he also doubted that a government **\"wholly representative\"** suited it yet."
       }
     },
     {
       "kind": "diffusion-path",
       "eyebrow": "The Chain",
-      "title": "Each revolution helped set off the next.",
+      "title": "Each revolution helped another start or win.",
       "footer": "The College Board calls the American Revolution \"a model and inspiration\" for the revolutions that followed.",
       "kc": "KC-5.3.III.B",
       "template": {
@@ -341,7 +341,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "place": "America",
             "date": "1775",
-            "text": "A republic is won, and France goes broke helping"
+            "text": "A republic is won, and helping costs France a fortune"
           },
           {
             "place": "France",
@@ -351,12 +351,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "place": "Saint-Domingue",
             "date": "1791",
-            "text": "The declaration claimed; Haiti arms Bolívar"
+            "text": "The declaration claimed by people left out"
           },
           {
             "place": "Spanish America",
             "date": "1810",
-            "text": "Napoleon takes Spain's king; Haiti's help"
+            "text": "Napoleon takes Spain's king; in 1816 Haiti's guns help Bolívar"
           }
         ]
       }
@@ -368,14 +368,14 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "footer": "Explain the difference by what caused each document.",
       "template": {
         "frame": "Both {{source A}} and {{source B}} argue that {{what they share}}, but {{how they differ}}, because {{what caused each one}}.",
-        "exampleLabel": "1776 and 1789",
-        "example": "Both **the Declaration of Independence** and **the Declaration of the Rights of Man** argue that **power comes from the people**, but **the American one uses that idea to break away from a king, while the French one uses it to remake a kingdom from inside**, because **the colonists were ruled from across an ocean and the French were ruled by their own king**."
+        "exampleLabel": "1789 and 1793",
+        "example": "Both **the Declaration of the Rights of Man** and **Toussaint Louverture** argue that **liberty and equality belong to people by right**, but **the Assembly wrote the words for France, while Toussaint claimed them for enslaved people in a French colony**, because **the Assembly was answering privilege in France and Toussaint was answering slavery in Saint-Domingue**."
       }
     },
     {
       "kind": "balance",
       "eyebrow": "Claims and Evidence in Sources 3.C · Practice",
-      "title": "Same break from a king, different trust in the people.",
+      "title": "Two documents from the Americas.",
       "kc": "KC-5.3.I.B",
       "template": {
         "job": "Who should govern?",
@@ -419,7 +419,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "label": "Republic",
             "note": "No king; leaders elected under a written constitution",
             "items": [
-              "United States, 1787",
+              "United States, 1776",
               "France, 1792"
             ]
           },
@@ -570,7 +570,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "disputes": [
           {
             "tag": "Greece",
-            "text": "Rises in 1821; declared an independent kingdom by Britain, France and Russia in 1830."
+            "text": "Rises in 1821; declared an independent state, to have a king, by Britain, France and Russia in 1830."
           },
           {
             "tag": "Serbia and others",
@@ -602,7 +602,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "myth": "Nationalism only built countries.",
-            "evidence": "It joined Italy and Germany together and broke the Balkans away from the Ottoman Empire.",
+            "evidence": "It joined Italy and Germany together and pulled the Balkans away from the Ottoman Empire.",
             "source": "KC-5.3.II.iii"
           }
         ]
@@ -621,7 +621,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Revolution",
-            "text": "America, France, Haiti, Spanish America, each helping set off the next"
+            "text": "America, France, Haiti, Spanish America, each helping another start or win"
           },
           {
             "label": "What it created",
@@ -629,7 +629,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "The nation",
-            "text": "Joins states (Italy, Germany) or breaks them (the Balkans)",
+            "text": "Joins states (Italy, Germany) or pulls peoples from empires (the Balkans)",
             "key": true
           }
         ],
@@ -645,12 +645,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "AP Synthesis",
       "title": "Answer the objective in one sentence.",
       "template": {
-        "frame": "Revolutions came when a ___, the ___ to name it, and a ___ came together; each one helped cause the ___; and they created new ___ and the nation, which ___ some states and broke others apart.",
+        "frame": "Revolutions came when a ___, the ___ to name it, and a ___ came together; each one helped another start or ___; and they created new ___ and the nation, which ___ some states and pulled peoples away from empires.",
         "words": [
           "grievance",
           "words",
           "chance",
-          "next",
+          "win",
           "states",
           "joined"
         ],
@@ -680,8 +680,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "action",
       "eyebrow": "Module 10 · Checkpoint 2",
-      "title": "How did nationalism join some states and break others apart?",
-      "subtitle": "Explain what the nation meant, one state it joined together, one it broke apart, and how. If it is not finished in class, it is homework.",
+      "title": "How did nationalism join some states and pull peoples away from an empire?",
+      "subtitle": "Explain what a nation shares, how governments used shared loyalty, one country nationalism joined, one people it pulled from the Ottoman Empire, and why one cause had both effects. If it is not finished in class, it is homework.",
       "action": {
         "label": "Open Student Lesson",
         "url": "lesson-5-2-nationalism-and-revolutions.html#modules"
@@ -691,7 +691,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-subtitle",
       "eyebrow": "The Hand-off",
       "title": "Grievance + words + a chance = revolution. Then the nation redrew the map.",
-      "subtitle": "The signing of 1776 as an engraver pictured it in 1823. Next, Topic 5.3: while Paris argued about rights, a different revolution was starting in British workshops.",
+      "subtitle": "The committee presenting its draft of the Declaration to Congress, 28 June 1776, as an engraver copied a painting of it in 1823. Next, Topic 5.3: even before Paris argued about rights, a different revolution had begun in British workshops.",
       "template": {
         "visual": {
           "url": "../assets/images/topics/5-2/declaration-of-independence-durand-1823.jpg",

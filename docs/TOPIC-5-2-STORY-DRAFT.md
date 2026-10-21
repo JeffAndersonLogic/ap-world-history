@@ -226,8 +226,8 @@ sent an army to retake Saint-Domingue. Toussaint was captured and died in a Fren
 His officer Jean-Jacques Dessalines fought on, and yellow fever and the war destroyed the French
 army. *What it created.* On 1 January 1804 Dessalines declared independence and gave the country
 its old Taíno name, **Haiti**. It was the second independent state in the Americas, and the first
-founded by people who had freed themselves from slavery. Its effects reached far: having lost
-Saint-Domingue, Napoleon sold Louisiana to the United States in 1803; slaveholding countries feared
+founded by people who had freed themselves from slavery. Its effects reached far: in April 1803, with his army in
+Saint-Domingue dying of yellow fever, Napoleon sold Louisiana to the United States; slaveholding countries feared
 Haiti, and the United States did not recognize it until 1862; in 1825 France demanded 150 million
 francs (later cut to 90 million) as the price of recognizing Haitian independence.
 
@@ -294,15 +294,19 @@ constitutions, and new ideas, liberalism and democracy. And they created the nat
 state was supposed to belong to, an idea that kept joining some states together and pulling others
 apart long after 1826.
 
-**And it hands on a question.** While Paris argued about rights, a different revolution was starting
-in British workshops. That is Topic 5.3.
+**And it hands on a question.** Even before Paris argued about rights, a different revolution had
+begun in British workshops. That is Topic 5.3.
 
 ## 4. The spine
 
 **A grievance, the words to name it, and a chance to act: in America, France, Haiti and Spanish
-America that mix became revolution, and each revolution helped set off the next. The revolutions
-built new states and left behind a new loyalty, to the nation, which went on joining some states
-together and breaking others apart.**
+America that mix became revolution, and each revolution helped another one start or win. The
+revolutions built new states and left behind a new loyalty, to the nation, which went on joining
+some states together and pulling peoples away from empires.**
+
+(Revised after review pass 1, 2026-10-21: "helped set off the next" overclaimed Haiti's 1816 aid,
+which came six years after Spanish America's revolution began; "breaking others apart" overclaimed
+the Ottoman Empire, which lasted to 1922.)
 
 The story map's spine ("Colonists, citizens and enslaved people turned the new ideas into
 revolutions, and a new loyalty to the nation made new states and broke or remade old ones") is kept
@@ -411,8 +415,8 @@ becomes the next cause, which is the move a student needs on the exam.
   here only as Ottomanism's promise of equal citizenship, never as modernization); imperialism and
   resistance to it (Unit 6: Rizal is one sentence, the Māori and Puerto Rican cases are teacher notes).
 - **Story map change:** none to ownership. The spine adds the recipe (section 4).
-- **Hands to 5.3:** "While Paris argued about rights, a different revolution was starting in British
-  workshops."
+- **Hands to 5.3:** "Even before Paris argued about rights, a different revolution had begun in
+  British workshops." (Corrected from the story map's wording after review pass 1.)
 
 ## 9. Fact-check list (the full claim ledger is `docs/TOPIC-5-2-CLAIM-LEDGER.md`)
 
@@ -433,7 +437,7 @@ The new claims, and the ones most likely to be wrong by the defect classes Units
   radical revolution"; "the first Black republic" (narrowed to "the first founded by people who had
   freed themselves from slavery"); "the only successful slave revolt"; "Greece the first nationalist
   challenge"; "France's richest colony" (needs a source: Britannica's "most prosperous").
-- Motives and causal links stated as arguments: Napoleon's sale of Louisiana after losing
+- Motives and causal links stated as arguments: Napoleon's sale of Louisiana (April 1803) while losing
   Saint-Domingue (historians weigh it with the coming war with Britain); Pétion's condition.
 
 ## 10. Visual requirements per beat

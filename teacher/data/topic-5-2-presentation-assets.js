@@ -10,7 +10,7 @@
  * - storming-of-the-bastille-thevenin-1790.jpg: Charles Thévenin, The Storming
  *   of the Bastille, July 14, 1789, etching, 1790. Cleveland Museum of Art
  *   2015.21.
- * - no-stamp-act-teapot-1766-75.jpg: creamware teapot painted "No Stamp Act,"
+ * - no-stamp-act-teapot-1766-75.jpg: earthenware teapot painted "No Stamp Act,"
  *   made in England for the American market, 1766 to 1775. Metropolitan Museum
  *   of Art 27.232a, b.
  * - toussaint-louverture-on-horseback-1802.jpg: anonymous French hand-colored

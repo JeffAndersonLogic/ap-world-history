@@ -84,7 +84,7 @@ Scholarly and institutional sources, for facts about people and events:
   independence declared at Gonaïves on 1 January 1804 and the country named Haiti from the Indigenous
   name; the failure of the expedition contributed to the sale of Louisiana (1803). Historians weigh
   it with France's coming war with Britain (*International History Review* 39:2, 2016), so the page
-  says "having lost Saint-Domingue, Napoleon sold Louisiana," a sequence, not a sole cause.
+  first said "having lost Saint-Domingue, Napoleon sold Louisiana"; review pass 1 showed the sale (30 April 1803) came before the final defeat, so it now says the army was dying of yellow fever.
 - **Office of the Historian, US Department of State, "The United States and the Haitian
   Revolution"**: the United States recognized Haiti in 1862.
 - **BnF, "Haiti's independence debt"; Wikipedia, "Haitian independence debt"**: the 1825 ordinance
@@ -136,7 +136,7 @@ Scholarly and institutional sources, for facts about people and events:
 
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
-| Helping the Americans cost France a fortune; by 1788 the government was nearly bankrupt | Story, F10 §3, DR §02, LD lecture 2, Deck 8 | Britannica: participation in the American Revolution drove the government "to the brink of bankruptcy"; by 1788 "on the verge of bankruptcy." | VERIFIED |
+| Helping the Americans cost France a fortune, on top of older war debts; by 1788 the government was nearly bankrupt; France's help was crucial to the American victory (not "won the war") | Story, F10 §3, DR §02, LD lecture 2, Deck 8 | Britannica: participation in the American Revolution drove the government "to the brink of bankruptcy"; by 1788 "on the verge of bankruptcy." | VERIFIED |
 | Louis XVI called the Estates-General, which had not met since 1614 | Story, F10 §3, DR §02, LD lecture 2, Deck 8 | Britannica, "Estates-General": summoned August 1788 for May 1789; last met 1614. | VERIFIED |
 | Clergy and nobles paid little in taxes; the Third Estate paid most; a bad harvest in 1788 sent bread prices up | Story, F10 §3, DR §02, LD lecture 2, Deck 8 | Britannica, "French Revolution": the privileged orders' tax exemptions; the poor harvest of 1788 and the price of bread in 1789. "Paid little" rather than "none," because both paid some taxes. | VERIFIED |
 | June 1789 the Third Estate declared itself the National Assembly; 14 July the Bastille, a royal fortress and prison | Story, F10 §3, DR §02, LD lecture 2, RC Evidence Lab (Bastille), Deck 3 notes, 8 | Britannica: 17 June 1789; 14 July 1789. | VERIFIED |
@@ -151,7 +151,7 @@ Scholarly and institutional sources, for facts about people and events:
 |---|---|---|---|
 | Saint-Domingue was France's most valuable colony; sugar and coffee grown by enslaved Africans | Story, F10 §4, DR §03, LD lecture 3, Deck 10 | Britannica: "France's most prosperous New World possession." The page avoids the 40 percent and 60 percent shares, which vary by source. | NARROWED |
 | More than 400,000 enslaved and fewer than 80,000 free people c. 1789; more than five enslaved for every free person | Story, F10 §4, DR §03, LD lecture 3, Deck 10 | All estimates (406,000 to 465,000 enslaved; 68,000 to 77,000 free in compilations; 55,679 free in the 1789 census) meet it. A floor, not a count. | NARROWED |
-| Free people of color asked the Assembly in Paris for the declaration's equal rights and were refused | Story, F10 §4, DR §03, LD lecture 3, Deck 10 | Britannica, "Haitian Revolution"; Julien Raimond and Vincent Ogé petitioned in 1789 to 1790; the Assembly left colonial status to the colonists, and Ogé's revolt (1790) was crushed. | VERIFIED |
+| Free people of color asked the Assembly in Paris for the declaration's equal rights and were refused at first; the Assembly granted them equal rights in April 1792 | Story, F10 §4, DR §03, LD lecture 3, Deck 10 | Britannica, "Haitian Revolution"; Julien Raimond and Vincent Ogé petitioned in 1789 to 1790; the Assembly left colonial status to the colonists, and Ogé's revolt (1790) was crushed. The decree of 4 April 1792 granted free people of color equal political rights (Britannica; added after review pass 1, which noted the page left the claim permanently refused). | NARROWED |
 | Enslaved people in the northern plain rose in August 1791, with France in revolution and the white planters divided | Story, F10 §4, DR §03, LD lecture 3, Deck 10, 14, 23 | Britannica: the uprising of 22 August 1791 in the Northern Province. | VERIFIED |
 | Toussaint was born enslaved and freed before the revolution; became its greatest general | Story, F10 §4, DR §03, LD lecture 3, Deck 10 notes | Britannica, "Toussaint Louverture": freed by the mid-1770s. "Its greatest general" is a judgment; narrowed in the reading to "its most famous leader." | NARROWED |
 | Toussaint, 1793: "I want Liberty and Equality to reign in Saint Domingue" | Story, F10 §4, DR §03, RC Skill Builder, RC Evidence Lab, Deck 10 notes | Bell's translation of the Camp Turel proclamation, 29 August 1793. | VERIFIED |
@@ -161,7 +161,7 @@ Scholarly and institutional sources, for facts about people and events:
 | Dessalines fought on; yellow fever and the war destroyed the French army | Story, F10 §4, DR §03, LD lecture 3, Deck 10 notes | BnF; Wikipedia, "Saint-Domingue expedition": Leclerc died of yellow fever in November 1802; Vertières, November 1803. | VERIFIED |
 | Independence 1 January 1804, the country named Haiti from its old Taíno name | Story, F10 §4, DR §03, LD lecture 3, Deck 10, BS | Proclaimed at Gonaïves; "Ayiti," the Taíno name for the island. | VERIFIED |
 | The second independent state in the Americas, and the first founded by people who had freed themselves from slavery | Story, F10 §4, DR §03, LD lecture 3, Deck 10 notes | After the United States. "First founded by formerly enslaved people" is the narrow form of "first Black republic," which needs a definition the page does not have room for. | NARROWED |
-| Having lost Saint-Domingue, Napoleon sold Louisiana to the United States in 1803 | Story, F10 §4, DR §03, Deck 11 | BnF and *IHR* (2016): a contributing cause, with the coming war with Britain; stated as a sequence. | VERIFIED |
+| In April 1803, with his army in Saint-Domingue dying of yellow fever and war with Britain coming, Napoleon sold Louisiana to the United States | Story, F10 §4, DR §03, Deck 11 | Office of the Historian, "Louisiana Purchase, 1803": the treaty was signed 30 April 1803, when the army in Saint-Domingue "was being decimated by yellow fever"; Vertières came on 18 November 1803. BnF and *IHR* (2016): a contributing cause, with the coming war with Britain. Review pass 1 caught the first wording ("having lost Saint-Domingue"), which put the loss before the sale. | NARROWED |
 | The United States did not recognize Haiti until 1862 | Story, F10 §4, DR §03, Deck 11 | Office of the Historian. | VERIFIED |
 | 1825: France demanded 150 million francs as the price of recognition, later cut to 90 million | Story, F10 §4, DR §03, Deck 11 | BnF; Wikipedia, "Haitian independence debt": 1825 ordinance; 1838 treaty. | VERIFIED |
 
@@ -198,7 +198,7 @@ Scholarly and institutional sources, for facts about people and events:
 | Frankfurt 1848: liberals tried to unite Germany with an elected parliament and a constitution, and failed | Story, F10 §7, DR §05, LD lecture 4, Deck 21 | Britannica, "Frankfurt National Assembly": 1848 to 1849; Frederick William IV refused the crown in April 1849. | VERIFIED |
 | Bismarck, chief minister of Prussia, 1862, the "iron and blood" passage | Story, F10 §7, DR §05, LD lecture 4, RC Evidence Lab, Deck 21 | GHDI, quoted exactly from the secretary's record; "said" is what the record reports. | VERIFIED |
 | After three wars, the German Empire proclaimed 18 January 1871 in the Hall of Mirrors at Versailles, Louis XIV's palace | Story, F10 §7, DR §05, LD lecture 4, RC map key, Deck 20, 21 | Château de Versailles; the wars of 1864, 1866 and 1870 to 1871. | VERIFIED |
-| Serbs rebelled and won self-rule; Greeks rose in 1821; in 1830 Britain, France and Russia declared Greece an independent kingdom | Story, F10 §7, DR §05, LD lecture 4, RC map key, Deck 22 | Britannica: Serbian risings of 1804 and 1815, autonomy recognized 1830; the London protocol of 3 February 1830 ("an independent monarchical state"). | VERIFIED |
+| Serbs rebelled and won self-rule; Greeks rose in 1821; in 1830 Britain, France and Russia declared Greece an independent state, to be ruled by a king (a kingdom under Otto from 1832) | Story, F10 §7, DR §05, LD lecture 4, RC map key, Deck 22 | Britannica: Serbian risings of 1804 and 1815, autonomy recognized 1830; the London protocol of 3 February 1830 ("an independent monarchical state"); the Kingdom under Otto came with the Treaty of London of 1832. Narrowed from "an independent kingdom" after review pass 1. | NARROWED |
 | In 1878 Serbia, Montenegro and Romania were recognized as independent | Story, F10 §7, DR §05, LD lecture 4, RC map key, Deck 22 | Treaty of Berlin, 1878. | VERIFIED |
 | Ottomanism: 1856 equal treatment promised to all subjects, Muslim or not; 1869 every subject an Ottoman citizen; one loyalty, to the empire; it did not stop the Balkan nations leaving | Story, F10 §7, DR §05, LD lecture 4, Deck 22 | World History Commons; the 1869 law made "Ottoman" every subject's legal status ("citizen" is the plain word; the law's word is *tebaa*, subject). | VERIFIED |
 | The Propaganda Movement in the 1880s and 1890s, Rizal among them, demanded equal rights with Spaniards; Spain executed Rizal in 1896 during a revolution | Story, F10 §7, DR §05, Deck 23 notes | Britannica, "Propaganda Movement"; Rizal shot 30 December 1896; the revolution began August 1896. | VERIFIED |
@@ -207,19 +207,24 @@ Scholarly and institutional sources, for facts about people and events:
 
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
-| "While Paris argued about rights, a different revolution was starting in British workshops" | Story, F10 §7, Deck 29 | The story map's hand-off. Watt's improved engine (1769) and Arkwright's mill (1771) are in the same years. | VERIFIED |
+| "Even before Paris argued about rights, a different revolution had begun in British workshops" | Story, F10 §7, Deck 29 | Watt's patent (1769), Arkwright's water frame (1769) and Cromford mill (1771) all come before 1789. The story map's wording, "was starting," put the industrial revolution after 1789; corrected in the map and here after review pass 1. | NARROWED |
 
 ### Claims added on later surfaces (deck notes, lesson modules, deep reading, BeSurreal, BeInTheRoom)
 
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
+| The American "chance": Britain an ocean away, and the 1763 peace pushed France out of North America, so colonists no longer needed British protection; France's 1778 alliance helped them win, three years into the war | F10 §2, LD lecture 1, DR §01, Deck 6 | Britannica, "American Revolution": the removal of the French threat in 1763 lessened colonial dependence on Britain; the fighting began at Lexington and Concord, 19 April 1775; the French alliance, February 1778. Review pass 1 caught the first wording, which named the 1778 alliance as the chance that set off a war begun in 1775. | NARROWED |
+| The United States governed without a king from 1776; a federal republic under the 1787 Constitution | LD criterion 2, Deck 18 | State constitutions from 1776; the Articles of Confederation ratified 1781; the Constitution signed 1787 (National Archives). Narrowed from "a republic in 1787" after review pass 1. | NARROWED |
+| Trumbull's Declaration of Independence shows the committee presenting its draft on 28 June 1776, not the signing | Deck 29 | Architect of the Capitol: it "depicts the moment on June 28, 1776, when the first draft of the Declaration of Independence was presented to the Second Continental Congress." The slide first said "the signing of 1776"; both reviewers caught it. | NARROWED |
+| The Letter from Jamaica (1815) came five years into Spanish America's fighting, before the campaigns that won independence (1819 to 1824) | F10 §5, LD criterion 1, Deck 12, 13 notes | The juntas of 1810 (Britannica); Boyacá 1819, Carabobo 1821, Ayacucho 1824. Added after review pass 1, which noted that a student naming the 1815 letter as a cause of the 1810 revolution writes a chronology error. | NARROWED |
+| The 1801 constitution was drafted at Port-Républicain by a Central Assembly of ten men Toussaint called | BR premise, location | The constitution's text (marxists.org): "Done at Port-Républicain, 19 Floréal year 9"; the editors' note: the Assembly was "three mulattoes and seven whites." The scenario first set the council at Le Cap. | NARROWED |
 | Teapot painted "No Stamp Act," made in England for the American market, 1766 to 1775; the Stamp Act repealed 1766 | LD lecture 1, RC Evidence Lab, Deck 6, Deck 1 notes | Met 27.232a, b: "Teapot, 1766–75 ... British (American market) ... Made in England," earthenware; image read: the words "No Stamp Act" in a wreath. Repeal: March 1766 (Britannica). The page says "creamware," the ware the Met's American Wing describes for these pots; the record's medium line says "earthenware" (creamware is a kind of earthenware). | VERIFIED |
 | Charles Thévenin, The Storming of the Bastille, July 14, 1789, etching, 1790 | LD lecture 2, RC Evidence Lab, Deck 3 | Cleveland Museum of Art 2015.21: "The Storming of the Bastille, July 14, 1789, 1790. Charles Thévenin (French, 1764–1838). Etching." Image read: a fight at the gate, a cannon, wounded men, a flag. | VERIFIED |
 | The Bastille held seven prisoners on 14 July 1789; the crowd wanted its gunpowder | Deck 3 notes, F10 §3 (gunpowder in DR §02) | Britannica, "Bastille": seven prisoners; the crowd sought arms and powder. | VERIFIED |
 | Anonymous French hand-colored etching, Toussaint Louverture on Horseback, 1802, captioned "Chef des Noirs Insurgés de Saint Domingue" | LD lecture 3, RC Evidence Lab, Deck 10 | Met 83.2.934: "Toussaint Louverture on Horseback, 1802, Anonymous, French, 19th century, hand-colored etching." Caption text read on the image. "Not a portrait from life": nothing in the record says it was drawn from life. | VERIFIED |
 | Sébastien Leclerc I, Galerie des Glaces at Versailles, etching, 1684, the year the hall was finished | LD lecture 4, RC stableImages, Deck 21 | Met 53.600.2784: "Galerie des Glaces at Versailles, 1684, Sébastien Leclerc I, etching; fourth state." The hall was completed in 1684 (Château de Versailles). | VERIFIED |
 | Asher B. Durand's engraving (1820 to 1823) of Trumbull's Declaration of Independence (1818, US Capitol); posed, painted forty-two years after | Deck 29 | Met 2022.29: "Declaration of Independence, 1820–23, Asher Brown Durand, etching and engraving; fifth state of six." Trumbull's painting was commissioned in 1817 and installed in the Capitol Rotunda in 1826; the scene shows the draft presented on 28 June 1776 (Architect of the Capitol). | VERIFIED |
-| The 1790 to 1798 British invasion of Saint-Domingue: invaded 1793, left 1798 after yellow fever, the mountains and Toussaint's soldiers wore it down | BR evidence card | Britannica, "Haitian Revolution": British forces landed in 1793 and withdrew in 1798, having lost heavily to disease, after negotiating with Toussaint. | VERIFIED |
+| The British invasion of Saint-Domingue: invaded 1793, left 1798 after yellow fever, the mountains and Toussaint's soldiers wore it down | BR evidence card | Britannica, "Haitian Revolution": British forces landed in 1793 and withdrew in 1798, having lost heavily to disease, after negotiating with Toussaint. | VERIFIED |
 | In 1801 France and Britain were moving toward peace, which would free French ships for the Caribbean | BR evidence card | The preliminaries of the Peace of Amiens were signed in London on 1 October 1801 (Britannica, "Treaty of Amiens"). | VERIFIED |
 | Toussaint convened a council to write the 1801 constitution, which made him governor for life and kept cultivators on the plantations | BR premise and evidence | The 1801 constitution in English (marxists.org, from the Louverture Project): Art. 3, "there cannot exist slaves on this territory"; Arts. 14 to 16, the colony "cannot allow the least interruption in its labor and cultivation," every plantation "demands a gathering together of cultivators and workers"; Art. 28, the reins confided to Toussaint "for the rest of his glorious life"; drafted by a Central Assembly Toussaint called. (The Avalon Project link the scenario cited returns 404; replaced.) | VERIFIED |
 | Bolívar was a rich creole who had owned enslaved people on his family's estates | BS intro | Britannica, "Simón Bolívar": born to a wealthy Caracas family; the family's estates were worked by enslaved people, some of whom he later freed. | VERIFIED |
@@ -254,4 +259,44 @@ Scholarly and institutional sources, for facts about people and events:
 
 ## Review findings
 
-(Filled in by Phase 9.)
+### Pass 1, reviewer 1 (page truth, readability, CED, ownership; cheaper model), 19 findings
+
+1. Slide 29 called Trumbull's scene "the signing." **Fixed** (it shows the draft presented, 28 June 1776).
+2. The Skill Builder model and slide 15 printed a finished answer to First & 10 question 02 (the 1776 and 1789 declarations). **Fixed:** the model now compares Article 1 of 1789 with Toussaint's 1793 proclamation; the 1776 and 1789 pair stays a practice choice with no model; the deep reading's 3.C note keeps the method only.
+3. The F10 Spanish America callout, the deep reading's comparison hook and slide 16's headline printed both halves of Skill Builder Pair 1 and Primary Source question 3. **Fixed:** method only; slide 16 retitled "Two documents from the Americas."
+4. America's "chance" was the 1778 French alliance, three years into a war begun in 1775; the F10's short-term cause example repeated it; slide 10's Chance cell held the 1794 law. **Fixed:** the chance is distance and the end of the French threat in 1763; the alliance "helped the colonists win"; the short-term example is Lexington and Concord; 1794 moved to Created.
+5. "Each revolution helped cause the next" overclaimed Haiti's 1816 aid, which came after Spanish America's revolution began; slide 14 put the aid on the 1791 row. **Fixed** everywhere as "helped another one start or win"; slide 14 rows corrected; the spine revised in the story draft.
+6. The "words" choices for Haiti did not include a Haitian document, and the Letter from Jamaica (1815) came after 1810. **Fixed:** Success Criterion 1 lists Toussaint's 1793 proclamation and dates the letter "five years into the fighting"; Checkpoint 1 step 2 asks for a document that "named the grievance or rallied people to the cause"; slide 10's Words cell names Toussaint; the F10 heading is "Claimed by People Left Out."
+7. Checkpoint 1 displayed liberalism and democracy without asking for them. **Fixed:** step 4 and the checklist now ask.
+8. "Broke a state apart" overclaimed the Ottoman Empire, which lasted to 1922; Checkpoint 2 step 4 nested two choices. **Fixed:** "pulled peoples away from an empire" on every surface; step 4 rewritten.
+9. Ottomanism was called "national loyalty." **Fixed:** "building a shared loyalty to hold back nationalism."
+10. Slide 13's notice stated Bolívar's argument as fact. **Fixed:** "Bolívar argues that ..."
+11. The Bismarck card's prompt asked what he "argues will unite Germany," which the excerpt does not say. **Fixed.**
+12. BeInTheRoom: "Haiti" in 1801, an expedition that had not sailed, and the constitution's result given to the council writing it. **Fixed:** "Saint-Domingue"; "any army it sends"; the card is now "Toussaint's Plans."
+13. BeInTheRoom wording above a ninth-grade level (fiscal capacity, protectorate, elite capture, federation). **Fixed:** every role, option and tradeoff line rewritten in plain words. The shared step heading "Your historically defensible recommendation" comes from `scripts/lib/room-v2-page.js` and is an adjacent finding.
+14. "The biggest thing they left behind," "the two biggest effects," "the first revolution to win." **Fixed.**
+15. Greece "an independent kingdom" in 1830. **Fixed:** an independent state to be ruled by a king; a kingdom from 1832.
+16. Slide 28 left out two of Checkpoint 2's five steps. **Fixed.**
+17. Primary Source question 3 pointed at Passage 3 alone for an agreement only Passage 1 supplies. **Fixed:** Passages 1 and 3.
+18. Key Concept codes display in capitals. **Rejected for this topic:** a shared renderer style, logged course-wide since 4.5 (5.1 adjacent finding 3).
+19. Text evidence cards have no readable text for a screen reader. **Rejected for this topic:** the shared `behistorical-evidence-text-card.js`, logged as 5.1 adjacent finding 1.
+
+### Pass 1, reviewer 2 (history; default model), 11 findings
+
+1. "The signing" on slide 29. **Fixed** (same as reviewer 1, no. 1).
+2. "Having lost Saint-Domingue, Napoleon sold Louisiana": the sale (30 April 1803) came before the French defeat (November 1803). **Fixed** on the F10, the deep reading, slide 11 and its notes.
+3. "France's help won the American war"; "the American war bankrupted France." **Fixed:** "crucial to the American victory"; "on top of older war debts"; "to the edge of bankruptcy."
+4. BeInTheRoom: "Haiti" in 1801; the expedition; the council set at Le Cap, where the constitution was written at Port-Républicain; a French commissioner on the council. **Fixed:** Port-Républicain; "a council like it"; the envoy is "not on the council, but it must answer you."
+5. Two of BeInTheRoom's three references did not resolve (Avalon, a Library of Congress guide). **Fixed:** the Library of Congress "Ayiti Reimagined" guide and the 1801 constitution's English text.
+6. The hand-off dated the industrial revolution after 1789. **Fixed** in the F10, the deck and the unit story map: "Even before Paris argued about rights, a different revolution had begun."
+7. Slide 8 said the king "calls" the Estates-General in May 1789; the deep reading's glossary said "called in 1789." **Fixed:** called in 1788, met in May 1789.
+8. The F10 said the 1789 declaration "began" with Article 1 (it begins with a preamble). **Fixed.**
+9. Greece a kingdom in 1830. **Fixed** (same as reviewer 1, no. 15).
+10. Free people of color left permanently "refused"; BeInTheRoom's merchant still "seeking equal citizenship" in 1801. **Fixed:** the April 1792 decree is on the F10, the lecture card, the deep reading and slide 10's notes; the merchant "defends the equal rights ... won from France in 1792."
+11. The United States "a republic in 1787." **Fixed:** slide 18 says 1776; Success Criterion 2 says "a republic under its 1787 Constitution."
+
+Also fixed in this round, from the builder's own check: the deep reading's closing card on the nation shared 47 percent of its words with Checkpoint 2 (`report-checkpoint-congruence.js`), so it now lists evidence to sort rather than a finished answer; "creamware" became "pottery" (the Met's record says earthenware).
+
+### Pass 1 outcome
+
+30 findings, 26 distinct, 24 supported and fixed, 2 rejected as already-logged course-wide defects. Pass 2 runs on a fresh packet.

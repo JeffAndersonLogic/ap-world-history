@@ -431,13 +431,13 @@ module.exports = {
     "showFooterNote": false,
     "headerSubtitle": "Topic 5.2, Nationalism and Revolutions, 1750 to 1900 &nbsp;|&nbsp; AP World History: Modern",
     "titleHtml": "How Revolutions Made <em>Nations</em>",
-    "deck": "By 1789 the new ideas about rights were everywhere educated people read. But ideas alone never overthrew a king. This reading follows four revolutions, in America, France, Haiti, and Spanish America, and asks what caused each one and what it created. Then it follows the biggest thing they left behind: the nation, a new loyalty that joined some countries together and broke others apart.",
+    "deck": "By 1789 the new ideas about rights were everywhere educated people read. But ideas alone never overthrew a king. This reading follows four revolutions, in America, France, Haiti, and Spanish America, and asks what caused each one and what it created. Then it follows one lasting thing they left behind: the nation, a new loyalty that joined some countries together and broke others apart.",
     "skillTags": [
       "Causation",
       "Claims and Evidence in Sources"
     ],
     "supportCards": {
-      "beforeYouRead": "<strong>Grievance + words + a chance = revolution. Then the nation redrew the map.</strong> As you read each revolution, find three things: the grievance (what people were angry about), the words (the document that named it), and the chance (the moment the old ruler was weak). Then watch how one revolution helped cause the next.",
+      "beforeYouRead": "<strong>Grievance + words + a chance = revolution. Then the nation redrew the map.</strong> As you read each revolution, find three things: the grievance (what people were angry about), the words (the document that named it), and the chance (the moment the old ruler was weak). Then watch how each revolution helped another one start or win.",
       "readingTarget": "What caused the revolutions between 1750 and 1900, and what did they create?"
     },
     "vocabulary": [
@@ -470,7 +470,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Look for all three in each revolution below. And watch for one more thing: each revolution helped cause the next one."
+            "html": "Look for all three in each revolution below. And watch for one more thing: each revolution helped another one start or win."
           }
         ],
         "callout": {
@@ -493,7 +493,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>The chance.</strong> Britain was an ocean away, and in 1778 France joined the war on the American side."
+            "html": "<strong>The chance.</strong> Britain was an ocean away, and its victory in 1763 had pushed France out of North America, so the colonists no longer needed British soldiers to protect them from a French army next door. Once the fighting began in 1775, France joined the war on the American side in 1778, which helped the colonists win."
           },
           {
             "type": "p",
@@ -502,7 +502,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>Sort your causes.</strong> A long-term cause builds up over years, like Britain's war debt and the taxes that followed. A short-term cause sets things off, like the moment France joined the war. Naming both makes your explanation stronger.</p>"
+          "raw": "<p><strong>Sort your causes.</strong> A long-term cause builds up over years, like Britain's war debt and the taxes that followed. A short-term cause sets things off, like the first fighting, at Lexington and Concord in April 1775. Naming both makes your explanation stronger.</p>"
         }
       },
       {
@@ -520,7 +520,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>The words.</strong> In August 1789 the Assembly ended the nobles' special privileges and adopted the Declaration of the Rights of Man and of the Citizen. \"Men are born and remain free and equal in rights,\" it began, and \"the principle of all sovereignty resides essentially in the nation.\" <span class=\"kt\">Sovereignty</span> means the highest power in a state."
+            "html": "<strong>The words.</strong> In August 1789 the Assembly ended the nobles' special privileges and adopted the Declaration of the Rights of Man and of the Citizen. Its first article said, \"Men are born and remain free and equal in rights,\" and its third said \"the principle of all sovereignty resides essentially in the nation.\" <span class=\"kt\">Sovereignty</span> means the highest power in a state."
           },
           {
             "type": "p",
@@ -529,13 +529,13 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>An effect can become a cause.</strong> France's help won the American war. That help left France nearly bankrupt, and the bankruptcy forced the king to call the assembly where the French Revolution began. One revolution's effect became the next one's cause.</p>"
+          "raw": "<p><strong>An effect can become a cause.</strong> France's help was crucial to the American victory. Paying for it, on top of debts from older wars, left France nearly bankrupt, and the bankruptcy forced the king to call the assembly where the French Revolution began. One revolution's effect became the next one's cause.</p>"
         }
       },
       {
         "number": "4",
         "label": "Haiti",
-        "heading": "The Words, Claimed by the Enslaved, 1791 to 1804",
+        "heading": "The Words, Claimed by People Left Out, 1791 to 1804",
         "blocks": [
           {
             "type": "p",
@@ -543,7 +543,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>The words.</strong> Saint-Domingue's <span class=\"kt\">free people of color</span>, free people of African or mixed descent, asked the Assembly in Paris for the equal rights its declaration promised. They were refused."
+            "html": "<strong>The words.</strong> Saint-Domingue's <span class=\"kt\">free people of color</span>, free people of African or mixed descent, asked the Assembly in Paris for the equal rights its declaration promised. At first they were refused, and in 1790 a free man of color, Vincent Ogé, was executed for leading a revolt for those rights. The Assembly granted them equal rights only in April 1792, after the revolution in the colony had begun."
           },
           {
             "type": "p",
@@ -555,7 +555,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>What it created.</strong> On 1 January 1804 Dessalines declared independence and gave the country its old Taíno name, Haiti. It was the second independent country in the Americas, and the first founded by people who had freed themselves from slavery. Its effects reached far. Having lost Saint-Domingue, Napoleon sold Louisiana to the United States in 1803. Countries that allowed slavery feared Haiti; the United States did not recognize it until 1862, and in 1825 France demanded 150 million francs, later cut to 90 million, as the price of recognizing Haiti's independence."
+            "html": "<strong>What it created.</strong> On 1 January 1804 Dessalines declared independence and gave the country its old Taíno name, Haiti. It was the second independent country in the Americas, and the first founded by people who had freed themselves from slavery. Its effects reached far. In April 1803, with his army in Saint-Domingue dying of yellow fever and a new war with Britain coming, Napoleon sold Louisiana to the United States. Countries that allowed slavery feared Haiti; the United States did not recognize it until 1862, and in 1825 France demanded 150 million francs, later cut to 90 million, as the price of recognizing Haiti's independence."
           }
         ],
         "callout": {
@@ -578,7 +578,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>The words.</strong> In 1815, beaten and in exile on the British island of Jamaica, Bolívar wrote the Letter from Jamaica. \"The hatred that the Peninsula has inspired in us,\" he wrote, \"is greater than the ocean between us.\" The tie that bound Spanish America to Spain, he argued, \"has been severed.\" Then Haiti, the last revolution's creation, helped the next one. In 1816 Haiti's president, Alexandre Pétion, gave Bolívar guns, supplies, and soldiers for a new expedition, and asked him in return to end slavery in the lands he freed."
+            "html": "<strong>The words.</strong> Five years into the fighting, in 1815, beaten and in exile on the British island of Jamaica, Bolívar wrote the Letter from Jamaica. \"The hatred that the Peninsula has inspired in us,\" he wrote, \"is greater than the ocean between us.\" The tie that bound Spanish America to Spain, he argued, \"has been severed.\" Then Haiti, the last revolution's creation, helped the next one. In 1816 Haiti's president, Alexandre Pétion, gave Bolívar guns, supplies, and soldiers for a new expedition, and asked him in return to end slavery in the lands he freed."
           },
           {
             "type": "p",
@@ -587,7 +587,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Claims and Evidence in Sources",
-          "raw": "<p><strong>Compare two arguments.</strong> The Declaration of Independence and the Letter from Jamaica both argue that a far-off ruler has lost the right to rule. But the 1776 declaration rests on the people's consent, and Bolívar doubted his people were ready to govern themselves fully. To compare sources, say how their arguments are alike, how they differ, and why.</p>"
+          "raw": "<p><strong>Compare two arguments.</strong> To compare two sources, say each one's argument in your own words, then say one way the arguments are alike, one way they differ, and why: what grievance or moment was each writer answering?</p>"
         }
       },
       {
@@ -624,7 +624,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Sometimes nationalism broke a state apart. The Ottoman Empire ruled many peoples in the Balkans, in southeastern Europe. Serbs rebelled and won the right to rule themselves. Greeks rose up in 1821, and in 1830 Britain, France, and Russia declared Greece an independent kingdom. Other Balkan peoples followed, and in 1878 Serbia, Montenegro, and Romania were recognized as independent."
+            "html": "Sometimes nationalism pulled peoples away from an empire. The Ottoman Empire ruled many peoples in the Balkans, in southeastern Europe. Serbs rebelled and won the right to rule themselves. Greeks rose up in 1821, and in 1830 Britain, France, and Russia declared Greece an independent state, to be ruled by a king. Other Balkan peoples followed, and in 1878 Serbia, Montenegro, and Romania were recognized as independent."
           },
           {
             "type": "p",
@@ -636,20 +636,20 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "So, what caused the revolutions, and what did they create? A grievance, the words to name it, and a chance to act, in America, France, Haiti, and Spanish America, and each revolution's effects helped cause the next. They created new independent countries in the Americas, republics and constitutions, and new ideas about government, liberalism and democracy. And they created the nation as the thing a state was supposed to belong to, an idea that kept joining some states together and pulling others apart long after the last Spanish colony on the mainland broke free."
+            "html": "So, what caused the revolutions, and what did they create? A grievance, the words to name it, and a chance to act, in America, France, Haiti, and Spanish America, and each revolution helped another one start or win. They created new independent countries in the Americas, republics and constitutions, and new ideas about government, liberalism and democracy. And they created the nation as the thing a state was supposed to belong to, an idea that kept joining some states together and pulling peoples away from empires long after the last Spanish colony on the mainland broke free."
           },
           {
             "type": "p",
-            "html": "While Paris argued about rights, a different revolution was starting in British workshops. That is Topic 5.3."
+            "html": "Even before Paris argued about rights, a different revolution had begun in British workshops. That is Topic 5.3."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>One cause, two effects.</strong> Nationalism joined Italy and Germany together and broke Greece and Serbia away from the Ottoman Empire. A cause can push in opposite directions. Saying both makes a stronger explanation.</p>"
+          "raw": "<p><strong>One cause, two effects.</strong> Nationalism joined Italy and Germany together and pulled Greece and Serbia away from the Ottoman Empire. A cause can push in opposite directions. Saying both makes a stronger explanation.</p>"
         }
       }
     ],
-    "takeaway": "Ideas alone did not make a revolution. In America, France, Haiti, and Spanish America, revolution came when people had a grievance, the words to name it in a document such as the Declaration of Independence, the Declaration of the Rights of Man and of the Citizen, or Bolívar's Letter from Jamaica, and a chance to act. Each revolution helped cause the next: the American war bankrupted France, France's declaration was claimed in Saint-Domingue, Napoleon's invasion of Spain opened the way in Spanish America, and Haiti armed Bolívar. The revolutions created new independent countries in the Americas, republics and constitutions, and new ideas, liberalism and democracy. They also created nationalism, a loyalty to the nation that governments used and that joined Italy and Germany together while it broke the Balkans away from the Ottoman Empire. Grievance + words + a chance = revolution. Then the nation redrew the map.",
+    "takeaway": "Ideas alone did not make a revolution. In America, France, Haiti, and Spanish America, revolution came when people had a grievance, the words to name it in a document such as the Declaration of Independence, the Declaration of the Rights of Man and of the Citizen, or Bolívar's Letter from Jamaica, and a chance to act. Each revolution helped another one start or win: the American war pushed France to the edge of bankruptcy, France's declaration was claimed in Saint-Domingue, Napoleon's invasion of Spain opened the way in Spanish America, and Haiti's guns helped Bolívar win. The revolutions created new independent countries in the Americas, republics and constitutions, and new ideas, liberalism and democracy. They also created nationalism, a loyalty to the nation that governments used and that joined Italy and Germany together while it broke the Balkans away from the Ottoman Empire. Grievance + words + a chance = revolution. Then the nation redrew the map.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
@@ -668,8 +668,8 @@ module.exports = {
       {
         "num": "03",
         "skill": "Causation",
-        "text": "Using Section 7, explain how nationalism could join states together AND break a state apart. Give one example of each.",
-        "placeholder": "Nationalism joined states together when... It broke a state apart when..."
+        "text": "Using Section 7, explain how nationalism could join states together AND pull peoples away from an empire. Give one example of each.",
+        "placeholder": "Nationalism joined states together when... It pulled a people away from an empire when..."
       }
     ],
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",

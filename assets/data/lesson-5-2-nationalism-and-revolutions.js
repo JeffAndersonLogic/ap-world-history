@@ -29,7 +29,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 5: Revolutions",
     topic: "Topic 5.2",
     title: "Nationalism and Revolutions",
-    subtitle: "1750 to 1900. A grievance, the words to name it, and a chance to act turned the new ideas into revolutions in America, France, Haiti, and Spanish America, and each revolution helped set off the next. They left behind new countries, new ideas about government, and a new loyalty, to the nation, that joined some states together and broke others apart.",
+    subtitle: "1750 to 1900. A grievance, the words to name it, and a chance to act turned the new ideas into revolutions in America, France, Haiti, and Spanish America, and each revolution helped another one start or win. They left behind new countries, new ideas about government, and a new loyalty, to the nation, that joined some states together and pulled peoples away from empires.",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -40,29 +40,29 @@ window.BEHISTORICAL_LESSON = {
       theme: "Governance"
     },
     {
-      target: "I can explain what the American, French, Haitian, and Spanish American revolutions created, including independent states in the Americas and new ideas about government such as liberalism and democracy, and how each revolution helped cause the next.",
+      target: "I can explain what the American, French, Haitian, and Spanish American revolutions created, including independent states in the Americas and new ideas about government such as liberalism and democracy, and how each revolution helped another one start or win.",
       kc: 'KC-5.3.III.B',
       theme: "Governance"
     },
     {
-      target: "I can explain how a new loyalty to the nation, built on a shared language, religion, customs, and homeland, was used by governments and by nationalists to join some states together and break others apart.",
+      target: "I can explain how a new loyalty to the nation, built on a shared language, religion, customs, and homeland, was used by governments and by nationalists to join some states together and to pull peoples away from empires.",
       kc: 'KC-5.3.II.iii',
       theme: "Governance"
     }
   ],
   successCriteria: [
     {
-      criteria: "I can choose one revolution (American, French, Haitian, or Spanish American) and name its grievance (such as British taxes, noble privilege and bread prices, slavery, or creoles shut out of high office), its words (the Declaration of Independence, the Declaration of the Rights of Man and of the Citizen, or Bolívar's Letter from Jamaica), and its chance (such as French help, a bankrupt king, a France in revolution, or Napoleon's invasion of Spain).",
+      criteria: "I can choose one revolution (American, French, Haitian, or Spanish American) and name its grievance (such as British taxes, noble privilege and bread prices, slavery, or creoles shut out of high office), its words (the Declaration of Independence, the Declaration of the Rights of Man and of the Citizen as claimed in Saint-Domingue, Toussaint Louverture's proclamation of 1793, or Bolívar's Letter from Jamaica, written five years into the fighting), and its chance (such as Britain's distance, a bankrupt king, a France in revolution, or Napoleon's invasion of Spain).",
       kc: 'KC-5.3.I.B',
       theme: "Governance"
     },
     {
-      criteria: "I can name what one revolution created (such as the United States as a republic in 1787, Haiti in 1804, or the independent countries of Spanish America by 1826), explain one link in the chain (such as France's debt from the American war, or Haiti's help to Bolívar in 1816), and explain liberalism or democracy as a new idea about government.",
+      criteria: "I can name what one revolution created (such as the United States, a republic under its 1787 Constitution, Haiti in 1804, or the independent countries of Spanish America by 1826), explain one link in the chain (such as France's debt from the American war, or Haiti's help to Bolívar in 1816), and explain liberalism or democracy as a new idea about government.",
       kc: 'KC-5.3.III.B',
       theme: "Governance"
     },
     {
-      criteria: "I can explain what a nation is (people who share a language, a religion, customs, and a homeland), give one example of a government using national loyalty (such as revolutionary France in 1793 or Ottomanism), and give one example of nationalism joining states (Italy in 1861 or Germany in 1871) and one of it breaking a state apart (Greece in 1830, or the Balkan states in 1878).",
+      criteria: "I can explain what a nation is (people who share a language, a religion, customs, and a homeland), give one example of a government using national loyalty (revolutionary France in 1793) or building a shared loyalty to hold back nationalism (Ottomanism), and give one example of nationalism joining states (Italy in 1861 or Germany in 1871) and one of it pulling a people away from an empire (Greece in 1830, or Serbia, Montenegro, or Romania in 1878).",
       kc: 'KC-5.3.II.iii',
       theme: "Governance"
     }
@@ -114,7 +114,7 @@ window.BEHISTORICAL_LESSON = {
 
   lecture: {
     title: "How Revolutions Made Nations",
-    intro: "Use these cards to see what caused each revolution, how each one helped set off the next, what the revolutions created, and how the nation became the new loyalty that joined some states together and broke others apart.",
+    intro: "Use these cards to see what caused each revolution, how each one helped another start or win, what the revolutions created, and how the nation became the new loyalty that joined some states together and pulled peoples away from empires.",
     videos: [],
     segments: [
       {
@@ -122,7 +122,7 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "Ideas alone did not make revolutions. A revolution needed a **grievance**, a wrong many people felt; **the words** to name it, in a document people could rally around; and **a chance**, a moment when the old ruler was broke, far away, or gone.",
           "**America's grievance:** the Seven Years' War (1756 to 1763) left Britain deep in debt, and Parliament taxed its American colonies with laws such as the **Stamp Act** of 1765. The colonies had no members in Parliament: \"no taxation without representation.\" Colonists bought goods that carried the protest, such as a teapot painted \"No Stamp Act.\"",
-          "**The words:** the **Declaration of Independence** (4 July 1776) said governments get \"their just powers from the consent of the governed,\" and that the people may \"alter or to abolish\" a government that destroys their rights. **The chance:** Britain was an ocean away, and France joined the war in 1778.",
+          "**The words:** the **Declaration of Independence** (4 July 1776) said governments get \"their just powers from the consent of the governed,\" and that the people may \"alter or to abolish\" a government that destroys their rights. **The chance:** Britain was an ocean away, and its 1763 victory had pushed France out of North America, so colonists no longer needed British soldiers to protect them. Once the fighting began in 1775, France joined the war in 1778 and helped the colonists win.",
           "**What it created:** the United States, independent by 1783, and in 1787 a constitution for a **republic**, a country with no king whose leaders are elected. The College Board calls it \"a model and inspiration\" for the revolutions that followed. It kept slavery, and most states let only men who owned property vote."
         ],
         image: {
@@ -150,10 +150,10 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Haiti and Spanish America: The Words Claimed",
         bullets: [
-          "**Haiti's grievance:** Saint-Domingue was France's most valuable colony, its sugar and coffee grown by more than 400,000 enslaved people, more than five for every free person. **The words:** free people of color claimed the rights of the 1789 declaration and were refused. **The chance:** with France in revolution, the enslaved rose up in August 1791. **Toussaint Louverture**, born enslaved and freed before the revolution, became its most famous leader.",
+          "**Haiti's grievance:** Saint-Domingue was France's most valuable colony, its sugar and coffee grown by more than 400,000 enslaved people, more than five for every free person. **The words:** free people of color claimed the rights of the 1789 declaration and were refused until 1792. **The chance:** with France in revolution, the enslaved rose up in August 1791. **Toussaint Louverture**, born enslaved and freed before the revolution, became its most famous leader.",
           "French officials began freeing the enslaved in 1793, and in February 1794 France abolished slavery in all its colonies, after three years of fighting. In 1802 Napoleon restored slavery in Guadeloupe and sent an army to retake Saint-Domingue; Toussaint died in a French prison in 1803. **Jean-Jacques Dessalines** fought on, and on 1 January 1804 declared the independence of **Haiti**, the second independent country in the Americas and the first founded by people who had freed themselves from slavery.",
           "**Spanish America's grievance:** **creoles**, people of Spanish descent born in the Americas, were kept out of the highest offices, which went to **peninsulares**, men born in Spain. **The chance:** in 1808 Napoleon invaded Spain and forced its king from the throne, and in 1810 creole leaders set up governments of their own. **The words:** Simón Bolívar's **Letter from Jamaica** (1815): \"The hatred that the Peninsula has inspired in us is greater than the ocean between us.\"",
-          "**One revolution helps the next:** in 1816 Haiti's president, Alexandre Pétion, gave Bolívar guns, supplies, and men, and asked him to end slavery in the lands he freed. **What it created:** by 1826 Spain held only Cuba and Puerto Rico in the Americas. Creole elites took the top places, and slavery lasted in several new countries for decades."
+          "**One revolution helps another win:** in 1816 Haiti's president, Alexandre Pétion, gave Bolívar guns, supplies, and men, and asked him to end slavery in the lands he freed. **What it created:** by 1826 Spain held only Cuba and Puerto Rico in the Americas. Creole elites took the top places, and slavery lasted in several new countries for decades."
         ],
         image: {
           title: "Toussaint Louverture, as Paris saw him",
@@ -168,7 +168,7 @@ window.BEHISTORICAL_LESSON = {
           "**New ideas about government:** anger at kings and empires produced the **republic** with a written constitution; **liberalism**, the belief that a constitution and an elected parliament should limit the government and protect rights such as free speech, a free press, and property (many liberals still wanted only men with property to vote); and **democracy**, rule by the people, with the vote for all men. These ideas set off new revolutions in Europe in 1830 and 1848.",
           "**The nation:** if a state belongs to its people, which people? More and more, the answer was everyone who shared a language, a religion, customs, and a homeland. Governments used that loyalty: in 1793 revolutionary France called the whole nation to war.",
           "**Joining states:** Italian nationalists, among them Cavour and Garibaldi, united most of Italy in 1861 and added Rome in 1870. In Germany, liberals at Frankfurt failed in 1848; then Prussia's Otto von Bismarck said great questions are decided \"by iron and blood,\" and after three wars the **German Empire** was proclaimed on 18 January 1871 in the Hall of Mirrors at Versailles.",
-          "**Breaking an empire:** Serbs and Greeks rebelled against the Ottoman Empire; Greece became an independent kingdom in 1830, and Serbia, Montenegro, and Romania were recognized as independent in 1878. The Ottoman government answered with **Ottomanism**, promising equal treatment to all subjects (1856) and making every subject an Ottoman citizen (1869), one loyalty for everyone, but it did not stop the Balkan nations from leaving."
+          "**Breaking an empire:** Serbs and Greeks rebelled against the Ottoman Empire; Greece was declared an independent state, to be ruled by a king, in 1830, and Serbia, Montenegro, and Romania were recognized as independent in 1878. The Ottoman government answered with **Ottomanism**, promising equal treatment to all subjects (1856) and making every subject an Ottoman citizen (1869), one loyalty for everyone, but it did not stop the Balkan nations from leaving."
         ],
         image: {
           title: "The Hall of Mirrors at Versailles",
@@ -186,7 +186,7 @@ window.BEHISTORICAL_LESSON = {
     sourceUrl: "../assets/images/instructional-maps/topic-5-2.svg",
     caption: "A BeHistorical map of the four revolutions of 1775 to 1826 in the Atlantic world, and of the new nation-states nationalism made in Europe between 1830 and 1878.",
     intro: "Start at the United States and follow the three numbered arrows: from the United States to France, from France to Haiti, and from Haiti to Spanish America. Then look at Europe, where Italy and Germany were joined together and new Balkan states broke away from the Ottoman Empire.",
-    prompt: "Using the map, explain how one revolution helped cause another. Name the two places, their dates, and what traveled between them: money, words, an army, or help."
+    prompt: "Using the map, explain how one revolution helped another start or win. Name the two places, their dates, and what traveled between them: money, words, an army, or help."
   },
 
   deepReading: {
@@ -216,7 +216,7 @@ window.BEHISTORICAL_LESSON = {
     questions: [
       "Identify Bolívar's argument in Passages 1 and 2 in your own words. What grievance against Spain does Passage 2 name?",
       "In Passage 3, what kind of government does Bolívar doubt Spanish America is ready for? What does that tell you about the kind of government he wanted instead?",
-      "The Declaration of Independence says governments get \"their just powers from the consent of the governed.\" Compare that argument with Passage 3: explain one way the two documents agree and one way they differ, and what caused the difference."
+      "The Declaration of Independence says governments get \"their just powers from the consent of the governed.\" Compare that argument with Passages 1 and 3: explain one way the two documents agree and one way they differ, and what caused the difference."
     ]
   },
 

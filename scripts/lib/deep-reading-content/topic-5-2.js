@@ -42,13 +42,13 @@ module.exports = {
 
   howTo: {
     heading: 'How to Use This',
-    intro: `The College Board asks you to explain the causes and effects of the revolutions between 1750 and 1900. Sections 01 to 04 take the four revolutions of the Atlantic world one at a time, each with its grievance, its words, its chance and what it created. Section 05 follows the two biggest effects, new ideas about government and the nation, to 1878. Each section ends with a tool, a limit and a comparison you can use in an answer.`,
+    intro: `The College Board asks you to explain the causes and effects of the revolutions between 1750 and 1900. Sections 01 to 04 take the four revolutions of the Atlantic world one at a time, each with its grievance, its words, its chance and what it created. Section 05 follows two lasting effects, new ideas about government and the nation, to 1878. Each section ends with a tool, a limit and a comparison you can use in an answer.`,
     steps: [
-      `<b>01 The recipe, and America:</b> why ideas were not enough, and the first revolution to win.`,
+      `<b>01 The recipe, and America:</b> why ideas were not enough, and the first of the four revolutions to win.`,
       `<b>02 France:</b> how America's war became France's chance, and what France made of it.`,
       `<b>03 Haiti:</b> the words of 1789, claimed by the people they were not written for.`,
       `<b>04 Spanish America:</b> an empire with no king, and Haiti's help.`,
-      `<b>05 New ideas, and the nation:</b> liberalism, democracy, and the loyalty that joined Italy and Germany and broke the Balkans away.`,
+      `<b>05 New ideas, and the nation:</b> liberalism, democracy, and the loyalty that joined Italy and Germany and pulled the Balkans away from the Ottoman Empire.`,
       `<b>Then the closing section</b>, which gathers the evidence for an answer.`
     ]
   },
@@ -111,7 +111,7 @@ module.exports = {
       name: 'France: The Bill Comes Due',
       navLabel: 'France',
       dates: '1788 to 1804 &nbsp;·&nbsp; A kingdom remade',
-      thesis: `France's help won the American war, and paying for it nearly bankrupted the French king. One revolution's effect became the next one's chance.`,
+      thesis: `France's help was crucial to the American victory, and paying for it, on top of older war debts, pushed the French king to the edge of bankruptcy. One revolution's effect became the next one's chance.`,
       parts: [
         {
           heading: 'The chance came from America',
@@ -132,7 +132,7 @@ module.exports = {
             { note: {
               kind: 'howknow',
               label: 'How we know: compare the documents',
-              html: `Put the 1776 and 1789 declarations side by side. Both say power comes from the people. But the American one uses that idea to break away from a king, and the French one uses it to change who rules inside France. That difference comes from each grievance, which is the move the College Board's skill 3.C asks for: compare two arguments, then explain why they differ.`
+              html: `Put two revolutionary documents side by side and read them closely. Say each one's argument in your own words, then find one way the arguments are alike and one way they differ, and explain the difference by the grievance each document answered. That is the move the College Board's skill 3.C asks for.`
             } }
           ]
         },
@@ -149,7 +149,7 @@ module.exports = {
         comparison: `Against Haiti (section 03): the same declaration that France wrote for itself was claimed by people France held in slavery.`
       },
       terms: [
-        ['Estates-General', 'France\'s old assembly of clergy, nobles and commoners, called in 1789 for the first time since 1614.'],
+        ['Estates-General', 'France\'s old assembly of clergy, nobles and commoners, called in 1788 to meet in May 1789, for the first time since 1614.'],
         ['Third Estate', 'Everyone in France who was not clergy or noble: most of the people.'],
         ['Sovereignty', 'The highest power in a state.'],
         ['The Terror', 'The years 1793 to 1794, when France\'s revolutionary government executed thousands of people it called enemies.']
@@ -175,7 +175,7 @@ module.exports = {
         {
           heading: 'The words, and the chance',
           blocks: [
-            { p: `When the 1789 declaration reached the colony, free people of color asked the Assembly in Paris for the equal rights it promised. The Assembly left the question to the colonists, and the white planters refused. In <span class="num">1790</span> a free man of color, Vincent Ogé, led a small revolt for those rights and was executed.` },
+            { p: `When the 1789 declaration reached the colony, free people of color asked the Assembly in Paris for the equal rights it promised. The Assembly left the question to the colonists, and the white planters refused. In <span class="num">1790</span> a free man of color, Vincent Ogé, led a small revolt for those rights and was executed. Paris granted free people of color equal rights only in April <span class="num">1792</span>, after the revolution in the colony had begun.` },
             { p: `With France in revolution and the colony's white planters divided, enslaved people in the northern plain rose up in August <span class="num">1791</span>. They burned plantations across the northern plain. Toussaint Louverture, who had been born enslaved and had won his freedom before the revolution, became the revolution's most famous leader. In <span class="num">1793</span>, fighting on Spain's side against France, he announced: "I want Liberty and Equality to reign in Saint Domingue."` },
             { note: {
               kind: 'misconception',
@@ -188,7 +188,7 @@ module.exports = {
           heading: 'What it created',
           blocks: [
             { p: `In <span class="num">1802</span> Napoleon brought slavery back in other French colonies, such as Guadeloupe, and sent an army to retake Saint-Domingue. Toussaint was arrested and died in a French prison in the mountains in <span class="num">1803</span>. His officer Jean-Jacques Dessalines fought on, and yellow fever and the war destroyed the French army. On <span class="num">1 January 1804</span> Dessalines declared independence and gave the country its old Taíno name, Haiti.` },
-            { p: `Haiti was the second independent country in the Americas, after the United States, and the first founded by people who had freed themselves from slavery. Its effects reached other countries. Having lost Saint-Domingue, Napoleon sold Louisiana to the United States in <span class="num">1803</span>. Countries that allowed slavery feared Haiti's example: the United States did not recognize Haiti until <span class="num">1862</span>, and in <span class="num">1825</span> France demanded 150 million francs, later cut to 90 million, as the price of recognizing Haiti's independence. And in <span class="num">1816</span> Haiti helped the next revolution (section 04).` }
+            { p: `Haiti was the second independent country in the Americas, after the United States, and the first founded by people who had freed themselves from slavery. Its effects reached other countries. In April <span class="num">1803</span>, with his army in Saint-Domingue dying of yellow fever and a new war with Britain coming, Napoleon sold Louisiana to the United States. Countries that allowed slavery feared Haiti's example: the United States did not recognize Haiti until <span class="num">1862</span>, and in <span class="num">1825</span> France demanded 150 million francs, later cut to 90 million, as the price of recognizing Haiti's independence. And in <span class="num">1816</span> Haiti helped the next revolution (section 04).` }
           ]
         }
       ],
@@ -244,7 +244,7 @@ module.exports = {
       useThis: {
         tool: `Use the chain. <em>The French Revolution's effects, through Napoleon's invasion of Spain in 1808, gave Spanish America its chance, and Haiti's help in 1816 kept Bolívar's war going.</em>`,
         limit: `Independence changed who ruled more than how society was ordered: creoles replaced peninsulares at the top.`,
-        comparison: `Against the Declaration of Independence: both argue that a far-off ruler has lost the right to rule, but Bolívar doubted his people were ready to govern themselves fully.`
+        comparison: `Against the Declaration of Independence: read the two side by side and ask what each says about who should govern, and why the answers might differ.`
       },
       terms: [
         ['Creoles', 'People of Spanish descent born in the Americas.'],
@@ -262,7 +262,7 @@ module.exports = {
       name: 'New Ideas, and the Nation',
       navLabel: 'The nation',
       dates: '1789 to 1878 &nbsp;·&nbsp; Liberalism, democracy, nationalism',
-      thesis: `The revolutions' biggest effects were ideas: new answers to how a country should be run, and a new loyalty, to the nation, that joined some states together and broke others apart.`,
+      thesis: `Some of the revolutions' longest-lasting effects were ideas: new answers to how a country should be run, and a new loyalty, to the nation, that joined some states together and pulled peoples away from empires.`,
       parts: [
         {
           heading: 'New ways to govern',
@@ -288,20 +288,20 @@ module.exports = {
         {
           heading: 'Nationalism breaks an empire',
           blocks: [
-            { p: `The Ottoman Empire ruled many peoples in the Balkans, in southeastern Europe, Muslim and Christian. Serbs rebelled and won the right to rule themselves. Greeks rose up in <span class="num">1821</span>, and in <span class="num">1830</span> Britain, France and Russia declared Greece an independent kingdom. Other Balkan peoples followed, and in <span class="num">1878</span> Serbia, Montenegro and Romania were recognized as independent.` },
+            { p: `The Ottoman Empire ruled many peoples in the Balkans, in southeastern Europe, Muslim and Christian. Serbs rebelled and won the right to rule themselves. Greeks rose up in <span class="num">1821</span>, and in <span class="num">1830</span> Britain, France and Russia declared Greece an independent state; it became a kingdom under a Bavarian prince in <span class="num">1832</span>. Other Balkan peoples followed, and in <span class="num">1878</span> Serbia, Montenegro and Romania were recognized as independent.` },
             { p: `The Ottoman government answered with a loyalty of its own, <span class="kt">Ottomanism</span>. In <span class="num">1856</span> it promised equal treatment to all its subjects, Muslim or not, and in <span class="num">1869</span> a law made every subject an Ottoman citizen. The idea was one loyalty for everyone, to the empire, instead of to a nation. It did not stop the Balkan nations from leaving. The idea reached beyond Europe, too: in the Spanish-ruled Philippines, Filipino writers in the Propaganda Movement of the 1880s and 1890s, José Rizal among them, demanded equal rights with Spaniards, and Spain executed Rizal in <span class="num">1896</span>, during a revolution against its rule.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that nationalism only built countries. The same loyalty joined Italy and Germany together and broke Greece and Serbia away from the Ottoman Empire. A cause can push in opposite directions.`
+              html: `Do not write that nationalism only built countries. The same loyalty joined Italy and Germany together and pulled Greece and Serbia away from the Ottoman Empire. A cause can push in opposite directions.`
             } }
           ]
         }
       ],
       useThis: {
-        tool: `Follow an effect forward. <em>The revolutions created the idea that a state belongs to its nation; nationalists then united Italy (1861) and Germany (1871) and broke Greece (1830) away from the Ottoman Empire.</em>`,
+        tool: `Follow an effect forward. <em>The revolutions created the idea that a state belongs to its nation; nationalists then united Italy (1861) and Germany (1871) and pulled Greece (1830) away from the Ottoman Empire.</em>`,
         limit: `A nation is imagined: people come to believe they belong to it. Many Italians in 1861 did not speak the same Italian, and Ottomanism's promise of equality was often not kept in practice.`,
-        comparison: `Against Ottomanism: the Ottoman government tried to make loyalty to the empire stronger than loyalty to a nation, and failed in the Balkans.`
+        comparison: `Against revolutionary France in 1793: France called on loyalty to the nation; the Ottoman government tried to build loyalty to the empire instead, to hold back nationalism.`
       },
       terms: [
         ['Liberalism', 'In the 1800s, the belief that a constitution and an elected parliament should limit the government and protect individual rights.'],
@@ -334,8 +334,8 @@ module.exports = {
       },
       {
         category: 'Effects',
-        title: 'The nation joined some states and broke others',
-        body: `A shared language, religion, customs and homeland became the nation. Governments used it, as France did in 1793 and the Ottoman Empire tried to with Ottomanism (1856, 1869). Nationalists united Italy (1861, Rome 1870) and Germany (1871), and broke Greece (1830) and Serbia, Montenegro and Romania (1878) away from the Ottoman Empire.`
+        title: 'The nation, an effect that became a cause',
+        body: `Evidence to sort: the levée en masse (1793); the Frankfurt Parliament (1848 to 1849); Bismarck's "iron and blood" (1862); the Kingdom of Italy (1861) and Rome (1870); the German Empire (1871); the London protocol on Greece (1830); the Treaty of Berlin (1878); the Ottoman edict of 1856 and the citizenship law of 1869. Decide which show nationalism joining states, which show it pulling peoples from an empire, and which show a government using or answering it.`
       }
     ]
   }

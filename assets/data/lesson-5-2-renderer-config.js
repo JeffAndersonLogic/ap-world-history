@@ -66,7 +66,7 @@
     key: [
       { label: "The four revolutions", detail: "The United States (1775 to 1783), France (1789 to 1799), Haiti (1791 to 1804), and Spanish America (1810 to 1826). In each, a grievance, the words of a document, and a chance to act came together." },
       { label: "The numbered arrows", detail: "Arrow 1: helping the Americans win left France nearly bankrupt, which forced the king to call the assembly where the French Revolution began. Arrow 2: free people of color in Saint-Domingue claimed the rights of France's 1789 declaration. Arrow 3: in 1816 Haiti gave Simón Bolívar guns, supplies, and men for his war against Spain. One link is not drawn: Napoleon's invasion of Spain in 1808 left Spanish America with no king to obey." },
-      { label: "New nations in Europe", detail: "Nationalism joined Italy (1861, with Rome added in 1870) and Germany (1871) together, and broke the Balkans away from the Ottoman Empire: Greece became independent in 1830, and Serbia, Montenegro, and Romania in 1878." },
+      { label: "New nations in Europe", detail: "Nationalism joined Italy (1861, with Rome added in 1870) and Germany (1871) together, and pulled the Balkans away from the Ottoman Empire: Greece was declared independent in 1830, and Serbia, Montenegro, and Romania in 1878." },
       { label: "Reading the map", detail: "The shaded areas mark regions, not exact borders. Read the dates from earliest to latest to see the chain of revolutions, then the new nations that followed." }
     ]
   };
@@ -86,7 +86,7 @@
 
   lesson.classPresentation = {
     title: 'Class Slides: How Revolutions Made Nations',
-    desc: "Follow the story: the grievance, the words, and the chance behind the American, French, Haitian, and Spanish American revolutions, how each one helped set off the next, what they created, and how the nation joined Italy and Germany together and broke the Balkans away from the Ottoman Empire.",
+    desc: "Follow the story: the grievance, the words, and the chance behind the American, French, Haitian, and Spanish American revolutions, how each one helped another start or win, what they created, and how the nation joined Italy and Germany together and broke the Balkans away from the Ottoman Empire.",
     url: 'presentation-topic-5-2-student.html'
   };
 
@@ -100,12 +100,12 @@
     title: "Compare Two Sources",
     intro: "The revolutions of 1750 to 1900 produced famous documents, and each one makes an argument. To compare two sources, say each one's argument in your own words, say one way they agree and one way they differ, and then explain the difference: what was each document answering? Watch the move on two declarations, then try it yourself.",
     steps: [
-      { label: "Read the two sources", text: "Source A, the Declaration of Independence, 1776: governments get \"their just powers from the consent of the governed.\" Source B, the Declaration of the Rights of Man and of the Citizen, France, 1789: \"The principle of all sovereignty resides essentially in the nation.\" (Sovereignty means the highest power in a state.)" },
-      { label: "Say each argument", text: "Source A argues that a government's power comes from the people's consent, so the people may get rid of a government that breaks the deal. Source B argues that the highest power in France belongs to the nation, the people as a whole, not to the king." },
-      { label: "Say how they agree and differ", text: "They agree that power comes from the people. They differ in what they use that idea for: the American declaration uses it to break away from a king across an ocean, while the French declaration uses it to remake a kingdom from inside." },
-      { label: "Explain the difference", text: "The difference comes from each grievance. The colonists were ruled by a Parliament an ocean away where they had no members, so they wanted independence. The French were ruled by their own king, so they wanted to change who held power at home. Use this frame: \"Both [Source A] and [Source B] argue that [what they share], but [how they differ], because [what caused each one].\"" }
+      { label: "Read the two sources", text: "Source A, the Declaration of the Rights of Man and of the Citizen, France, August 1789, Article 1: \"Men are born and remain free and equal in rights.\" Source B, Toussaint Louverture's proclamation to the people of Saint-Domingue, August 1793: \"I want Liberty and Equality to reign in Saint Domingue.\"" },
+      { label: "Say each argument", text: "Source A argues that every man is born free and equal in rights. Source B argues that liberty and equality must rule in Saint-Domingue, a colony where most people were enslaved." },
+      { label: "Say how they agree and differ", text: "They agree that liberty and equality belong to people by right. They differ in who claims them: the French Assembly wrote the words for France, while Toussaint claimed them for enslaved people in a French colony, and called them to fight for them." },
+      { label: "Explain the difference", text: "The difference comes from each grievance. The Assembly was answering privilege in France. Toussaint was answering slavery in Saint-Domingue, where the Assembly had refused to give even free people of color equal rights. Use this frame: \"Both [Source A] and [Source B] argue that [what they share], but [how they differ], because [what caused each one].\"" }
     ],
-    prompt: "Now do it yourself. Choose ONE pair. Pair 1: the Declaration of Independence (1776), governments get \"their just powers from the consent of the governed,\" and Simón Bolívar's Letter from Jamaica (1815), \"institutions which are wholly representative are not suited to our character, customs, and present knowledge.\" Pair 2: the Declaration of the Rights of Man and of the Citizen (1789), \"Men are born and remain free and equal in rights,\" and Toussaint Louverture's proclamation in Saint-Domingue (1793), \"I want Liberty and Equality to reign in Saint Domingue.\" Write three sentences: say each source's argument in your own words, say one way they agree and one way they differ, and explain what caused the difference.",
+    prompt: "Now do it yourself. Choose ONE pair. Pair 1: the Declaration of Independence (1776), governments get \"their just powers from the consent of the governed,\" and Simón Bolívar's Letter from Jamaica (1815), \"institutions which are wholly representative are not suited to our character, customs, and present knowledge.\" Pair 2: the Declaration of Independence (1776), governments get \"their just powers from the consent of the governed,\" and the Declaration of the Rights of Man and of the Citizen (1789), \"The principle of all sovereignty resides essentially in the nation.\" (Sovereignty means the highest power in a state.) Write three sentences: say each source's argument in your own words, say one way they agree and one way they differ, and explain what caused the difference.",
     criteria: [
       "I said each source's argument in my own words.",
       "I named one way the two sources agree.",
@@ -121,22 +121,22 @@
       cardDesc: "One revolution's grievance, words, and chance, what it created, and how it was linked to another revolution.",
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
-      prompt: "Answer in four steps. (1) Choose ONE revolution: the American, the French, the Haitian, or the Spanish American. Name its grievance: what were people angry about? (2) Name its words: the document that named the grievance, and one idea in it. (3) Name its chance: what made the moment possible? (4) Explain what the revolution created, and one way it helped cause another revolution or was helped by one.",
+      prompt: "Answer in four steps. (1) Choose ONE revolution: the American, the French, the Haitian, or the Spanish American. Name its grievance: what were people angry about? (2) Name its words: a document that named the grievance or rallied people to the cause, and one idea in it. (3) Name its chance: what made the moment possible? (4) Explain what the revolution created, and one way it helped another revolution start or win, or was helped by one. Then name one new idea about government that came out of the revolutions, liberalism or democracy, and say what it means.",
       responseType: "Checkpoint 1",
       terms: ["grievance", "words", "chance", "revolution", "Stamp Act", "taxation", "representation", "Declaration of Independence", "consent", "Estates-General", "bankrupt", "Bastille", "Rights of Man", "sovereignty", "nation", "Saint-Domingue", "free people of color", "Toussaint Louverture", "Haiti", "creoles", "peninsulares", "Napoleon", "Bolívar", "Letter from Jamaica", "Pétion", "republic", "independent"],
-      focus: ["Name the grievance, the words, and the chance, with a detail for each.", "Explain what the revolution created.", "Explain one link to another revolution."]
+      focus: ["Name the grievance, the words, and the chance, with a detail for each.", "Explain what the revolution created.", "Explain one link to another revolution.", "Explain liberalism or democracy as a new idea about government."]
     },
     {
       title: "Checkpoint 2: How Nationalism Joined and Broke States",
       subtitle: "Checks Learning Target 3, Success Criterion 3, and Unit 5 Learning Objective C.",
-      cardDesc: "What a nation is, how a government used national loyalty, and one state nationalism joined together and one it broke apart.",
+      cardDesc: "What a nation is, how governments used shared loyalty, one country nationalism joined together, and one people it pulled away from an empire.",
       learningTargets: [lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[2].criteria],
-      prompt: "Explain how nationalism caused changes to states between 1789 and 1900. (1) Explain what a nation is: what do the people in it share? (2) Explain one way a government used national loyalty, for example revolutionary France in 1793 or Ottomanism in the Ottoman Empire. (3) Choose ONE state that nationalism joined together, Italy or Germany, and explain how and when it was united. (4) Choose ONE state that nationalism broke apart, the Ottoman Empire, and explain how and when Greece or the other Balkan states became independent. (5) Explain why the same cause, nationalism, could have both effects.",
+      prompt: "Explain how nationalism caused changes to states between 1789 and 1900. (1) Explain what a nation is: what do the people in it share? (2) Explain one way a government used shared loyalty: revolutionary France calling the whole nation to war in 1793, or the Ottoman Empire's Ottomanism, which tried to build one loyalty to the empire to hold back nationalism. (3) Choose ONE country that nationalism joined together, Italy or Germany, and explain how and when it was united. (4) Choose ONE people that nationalism pulled away from the Ottoman Empire, Greece in 1830, or Serbia, Montenegro, or Romania in 1878, and explain how and when it became independent. (5) Explain why the same cause, nationalism, could have both effects.",
       responseType: "Checkpoint 2",
       skill: "Causation",
       terms: ["nation", "nationalism", "language", "religion", "customs", "homeland", "unity", "government", "Ottomanism", "Ottoman Empire", "citizen", "unification", "Italy", "Cavour", "Garibaldi", "1861", "Germany", "Bismarck", "Prussia", "1871", "Balkans", "Greece", "1830", "Serbia", "1878", "independent", "cause", "effect"],
-      focus: ["Explain what a nation shares, and one way a government used national loyalty.", "Explain one state nationalism joined together, with a date.", "Explain one state nationalism broke apart, with a date.", "Explain why one cause had both effects."]
+      focus: ["Explain what a nation shares, and one way a government used shared loyalty.", "Explain one state nationalism joined together, with a date.", "Explain one people nationalism pulled away from an empire, with a date.", "Explain why one cause had both effects."]
     }
   ];
 
@@ -153,7 +153,7 @@
       alt: "A cream-colored pottery teapot with a twisted handle and spout; on its side, inside a wreath of red and black painted leaves, the words No Stamp Act",
       url: "../assets/images/topics/5-2/no-stamp-act-teapot-1766-75.jpg",
       sourceUrl: "https://www.metmuseum.org/art/collection/search/8332",
-      caption: "A creamware teapot made in England between 1766 and 1775 for sale in the American colonies, painted \"No Stamp Act.\" Parliament passed the Stamp Act in 1765 to tax the colonies and repealed it in 1766. Metropolitan Museum of Art.",
+      caption: "A pottery teapot made in England between 1766 and 1775 for sale in the American colonies, painted \"No Stamp Act.\" Parliament passed the Stamp Act in 1765 to tax the colonies and repealed it in 1766. Metropolitan Museum of Art.",
       prompt: "NOTICE the words and where they are painted. INFER what the teapot shows about how ordinary colonists felt about British taxes, and why English potters would make it. What can a teapot not tell you about why the colonists went to war ten years later?"
     },
     {
@@ -191,7 +191,7 @@
       label: "Primary-source excerpt · Otto von Bismarck to the Prussian parliament's budget committee, 30 September 1862, as recorded by the committee's secretary",
       sourceText: ["“it is not by speeches and majority resolutions that the great questions of the time are decided”", "“—that was the big mistake of 1848 and 1849—but by iron and blood.”"],
       caption: "Bismarck had just become Prussia's chief minister. Nine years later Prussia's wars had united Germany. Translation from German History in Documents and Images.",
-      prompt: "What does Bismarck argue will unite Germany? What was \"the big mistake of 1848 and 1849\"? What can this record, written by a secretary, not tell you for certain?"
+      prompt: "What does Bismarck say will decide the great questions of the time? What was \"the big mistake of 1848 and 1849\"? Use the caption to connect his words to Germany. What can this record, written by a secretary, not tell you for certain?"
     }
   ];
 
