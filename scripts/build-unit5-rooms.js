@@ -68,7 +68,7 @@ const scenarios = [
     id: '5.2', unit: '5', topicTitle: 'Nationalism and Revolutions', file: 'the-saint-domingue-constitution.html',
     title: 'The *Saint-Domingue Constitution*', location: 'Le Cap, Saint-Domingue', date: '1801',
     lessonUrl: '../../unit-5/lesson-5-2-nationalism-and-revolutions.html',
-    alignment: { theme: 'Governance (GOV) and Social Interactions (SIO)', objective: 'Explain how Enlightenment ideas and nationalism contributed to political revolutions and the creation of new states.', skill: 'Comparison and causation', keyConcepts: ['KC-5.2.I–II', 'KC-5.2.II.A–C', 'Atlantic Revolutions and nationalism'] },
+    alignment: { theme: 'Governance (GOV)', objective: 'Explain causes and effects of the various revolutions in the period from 1750 to 1900.', skill: 'Causation, with Claims and Evidence in Sources (3.C)', keyConcepts: ['KC-5.3.III.B', 'KC-5.3.I.B'] },
     premise: [
       'The formerly enslaved population of Saint-Domingue has defeated armies, ended slavery locally, and forced France to confront the meaning of citizenship. Toussaint Louverture’s administration must keep plantations producing, defend the colony, and turn emancipation into a durable political order.',
       'The choices are constrained by war, racial hierarchy, foreign invasion, and the memory of plantation violence. A constitution can protect emancipation, but forced labor policies may reproduce coercion and invite resistance.',
@@ -86,10 +86,10 @@ const scenarios = [
       E('revolt', '1791 Revolution', 'The uprising beginning in 1791 destroyed the old plantation order and made enslaved people political actors.', 'Shows revolution as collective action, not only elite constitutional debate.'),
       E('abolition', 'French Emancipation', 'France abolished slavery in its colonies in 1794 amid revolutionary war and pressure from the revolt.', 'Demonstrates the interaction of ideas, war, and insurgency.'),
       E('louverture', 'Constitution of 1801', 'Louverture’s constitution declared autonomy and lifelong governance while preserving regulated plantation labor.', 'Shows the tension between emancipation, production, and executive authority.'),
-      E('napoleon', 'Napoleonic Expedition', 'Napoleon sent a large expedition in 1802 to reassert French authority and reverse the revolution’s direction.', 'Makes foreign pressure central to the constitutional dilemma.'),
-      E('yellowfever', 'Disease and War', 'Disease, terrain, and resistance weakened French forces in the Caribbean.', 'Explains why military capacity did not translate into stable control.'),
+      E('napoleon', 'News From France, 1801', 'Napoleon Bonaparte has ruled France since 1799, and France and Britain are moving toward peace, which would free French ships and soldiers to sail to the Caribbean.', 'Makes foreign pressure central to the constitutional dilemma.'),
+      E('yellowfever', 'Disease and War', 'A British army invaded the colony in 1793 and left in 1798, after yellow fever, the mountains, and Toussaint’s soldiers had worn it down.', 'Explains why a large army does not guarantee control of the colony.'),
       E('citizenship', 'Universal Citizenship Claim', 'Revolutionary language of citizenship and rights became a resource for Black and mixed-race political claims.', 'Connects Saint-Domingue to the wider Atlantic Revolutions.'),
-      E('independence', 'Haitian Independence', 'The 1804 declaration created the first independent state born from a successful large-scale slave revolt.', 'Shows the revolution’s global significance and limits of imperial restoration.')
+      E('declaration', 'The Declaration of 1789', 'France’s Declaration of the Rights of Man and of the Citizen says that “men are born and remain free and equal in rights.”', 'Shows the words the revolution in Saint-Domingue claimed, and France’s own promise.')
     ],
     decisions: [
       D('labor', 'Organize labor', 'What labor system should the constitution authorize?', [
@@ -108,7 +108,7 @@ const scenarios = [
         O('property', 'Property-based citizenship', 'Limit voting and office to property holders while promising gradual expansion.', 'Commercial elites and foreign creditors may trust the government.', 'The formerly enslaved majority may see independence as elite capture.', 'Administrative stability reproduces social hierarchy.')
       ])
     ],
-    reflectionPrompt: 'Compare the Haitian Revolution with one other Atlantic Revolution. Explain one shared cause and one major difference in how each addressed slavery, citizenship, or national sovereignty.',
+    reflectionPrompt: 'Step out of the council. Explain one cause of the Haitian Revolution (a grievance, the words people claimed, or a chance to act) and one effect it had, in Saint-Domingue or beyond it. Then explain how your council’s choice about labor, France, or citizenship could have changed what happened next.',
     sources: [
       { label: 'Encyclopaedia Britannica, Haitian Revolution', url: 'https://www.britannica.com/event/Haitian-Revolution' },
       { label: 'Library of Congress, Haiti and the Haitian Revolution', url: 'https://guides.loc.gov/haitian-revolution' },
