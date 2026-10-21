@@ -46,27 +46,30 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "grid",
+      "kind": "split-mirror",
       "eyebrow": "The Turn",
       "title": "Religion is not only something rulers use.",
-      "cards": [
-        {
-          "title": "3.2",
-          "text": "How rulers used religious ideas to justify power."
+      "footer": "Today's move: what continued, what changed, and what conflict or interaction shaped the change?",
+      "template": {
+        "left": {
+          "name": "3.2 · Rulers"
         },
-        {
-          "title": "3.3",
-          "text": "How belief systems themselves changed."
+        "right": {
+          "name": "3.3 · Belief systems"
         },
-        {
-          "title": "THE MOVE",
-          "text": "What continued? What changed?"
-        },
-        {
-          "title": "THE WHY",
-          "text": "What conflict or interaction shaped the change?"
-        }
-      ]
+        "rows": [
+          {
+            "label": "Asks",
+            "left": "How did rulers use religious ideas to justify power?",
+            "right": "How did belief systems themselves change?"
+          },
+          {
+            "label": "Cases",
+            "left": "Divine right, Mughal mausolea",
+            "right": "Reformation, Sunni-Shia split, Sikhism"
+          }
+        ]
+      }
     },
     {
       "kind": "story-scene",
@@ -306,28 +309,38 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "footer": "BeHistorical instructional map · Unit 3"
     },
     {
-      "kind": "grid",
+      "kind": "exchange-hub",
       "eyebrow": "Sikhism · Context",
       "title": "Punjab was a place of sustained interaction.",
+      "footer": "**Careful:** a context of interaction does not mean a simple blend.",
       "kc": "KC-4.1.VI.iii",
-      "cards": [
-        {
-          "title": "HINDU TRADITIONS",
-          "text": "Long-established communities and devotional practices."
+      "template": {
+        "center": {
+          "name": "Punjab"
         },
-        {
-          "title": "ISLAMIC TRADITIONS",
-          "text": "Muslim communities, rulers, Sufi traditions."
-        },
-        {
-          "title": "INTERACTION",
-          "text": "Trade, migration, political rule, devotion, everyday contact."
-        },
-        {
-          "title": "CAREFUL",
-          "text": "Context of interaction does not mean “simple blend.”"
-        }
-      ]
+        "spokes": [
+          {
+            "name": "Hindu traditions",
+            "note": "long-established communities and devotion",
+            "angle": -150
+          },
+          {
+            "name": "Islamic traditions",
+            "note": "Muslim communities, rulers, Sufis",
+            "angle": -30
+          },
+          {
+            "name": "Trade and migration",
+            "note": "people and goods passing through",
+            "angle": 150
+          },
+          {
+            "name": "Everyday contact",
+            "note": "political rule, devotion, daily life",
+            "angle": 30
+          }
+        ]
+      }
     },
     {
       "kind": "story-scene",
@@ -369,50 +382,71 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "grid",
+      "kind": "ledger",
       "eyebrow": "Retell the Topic",
       "title": "Three ways belief systems changed.",
-      "cards": [
-        {
-          "title": "CHRISTIANITY",
-          "text": "BREAK + REFORM · Protestant division and Catholic reform; Christianity continues and grows."
-        },
-        {
-          "title": "ISLAM",
-          "text": "OLD DIVIDE + NEW POLITICAL WEIGHT · Ottoman-Safavid rivalry intensifies Sunni-Shia division."
-        },
-        {
-          "title": "SIKHISM",
-          "text": "INTERACTION + EMERGENCE · a distinct tradition develops in Punjab."
-        },
-        {
-          "title": "THE AP MOVE",
-          "text": "What changed? What continued? What shaped the change?"
-        }
-      ]
+      "footer": "The AP move: what changed, what continued, and what shaped the change?",
+      "template": {
+        "rows": [
+          {
+            "name": "Christianity",
+            "tool": "Break and reform",
+            "result": "Protestant split, Catholic reform; the faith grows."
+          },
+          {
+            "name": "Islam",
+            "tool": "Old divide, new political weight",
+            "result": "rivalry intensifies the Sunni-Shia split."
+          },
+          {
+            "name": "Sikhism",
+            "tool": "Interaction and emergence",
+            "result": "a distinct tradition develops in Punjab."
+          }
+        ],
+        "payoffLabel": "All three",
+        "payoff": "Religions changed too"
+      }
     },
     {
-      "kind": "grid",
+      "kind": "split-matrix",
       "eyebrow": "Skill 2.B · Sourcing and Situation",
       "title": "A source can only prove what its situation allows.",
-      "cards": [
-        {
-          "title": "REFORM TEXT",
-          "text": "Can show a reformer's argument and purpose; cannot prove why everyone converted."
-        },
-        {
-          "title": "COURT MANUSCRIPT",
-          "text": "Can show official memory of rivalry; cannot serve as neutral evidence about the enemy."
-        },
-        {
-          "title": "LATER DEVOTIONAL PORTRAIT",
-          "text": "Can show memory and reverence; cannot show exactly what Nanak looked like."
-        },
-        {
-          "title": "RULE",
+      "template": {
+        "columns": [
+          {
+            "name": "Reform text"
+          },
+          {
+            "name": "Court manuscript"
+          },
+          {
+            "name": "Later devotional portrait"
+          }
+        ],
+        "rows": [
+          {
+            "label": "Can show",
+            "cells": [
+              "A reformer's argument and purpose",
+              "Official memory of the rivalry",
+              "Memory and reverence"
+            ]
+          },
+          {
+            "label": "Cannot prove",
+            "cells": [
+              "Why everyone converted",
+              "Neutral facts about the enemy",
+              "What Nanak really looked like"
+            ]
+          }
+        ],
+        "result": {
+          "label": "Rule",
           "text": "Source the object before you use it as evidence."
         }
-      ]
+      }
     },
     {
       "kind": "source-hipp",
