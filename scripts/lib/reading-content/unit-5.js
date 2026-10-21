@@ -424,181 +424,266 @@ module.exports = {
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
-    "headerSubtitle": "Topic 5.2, Nationalism and Revolutions &nbsp;|&nbsp; AP World History: Modern",
-    "titleHtml": "The <em>Revolutionary</em> Atlantic",
-    "deck": "Between 1776 and 1825, a series of connected revolutions transformed the Atlantic world, beginning in British North America, spreading to France, exploding in Haiti, and sweeping through Spanish and Portuguese America. All of these revolutions drew on Enlightenment ideas about natural rights and popular sovereignty. But they applied those ideas to very different societies with very different results, and the Haitian Revolution, in which enslaved people claimed those rights for themselves, revealed the deepest contradiction at the heart of the revolutionary Atlantic.",
+    "showFooterNote": false,
+    "headerSubtitle": "Topic 5.2, Nationalism and Revolutions, 1750 to 1900 &nbsp;|&nbsp; AP World History: Modern",
+    "titleHtml": "How Revolutions Made <em>Nations</em>",
+    "deck": "By 1789 the new ideas about rights were everywhere educated people read. But ideas alone never overthrew a king. This reading follows four revolutions, in America, France, Haiti, and Spanish America, and asks what caused each one and what it created. Then it follows the biggest thing they left behind: the nation, a new loyalty that joined some countries together and broke others apart.",
     "skillTags": [
       "Causation",
-      "Comparison",
-      "Argumentation"
+      "Claims and Evidence in Sources"
     ],
     "supportCards": {
-      "beforeYouRead": "Track the connections AND the differences among the four major Atlantic Revolutions. The AP will ask you to compare, so you need specific evidence from each, not just a general description of \"revolutionary ideals.\" Pay special attention to what each revolution did and did not accomplish for different groups.",
-      "readingTarget": "By the end, you should be able to explain how Enlightenment ideas shaped each Atlantic Revolution, describe the Haitian Revolution as the most radical of the four and explain why, and define nationalism as an ideology and connect it to Atlantic Revolutionary outcomes."
+      "beforeYouRead": "<strong>Grievance + words + a chance = revolution. Then the nation redrew the map.</strong> As you read each revolution, find three things: the grievance (what people were angry about), the words (the document that named it), and the chance (the moment the old ruler was weak). Then watch how one revolution helped cause the next.",
+      "readingTarget": "What caused the revolutions between 1750 and 1900, and what did they create?"
     },
     "vocabulary": [
-      "Atlantic Revolutions",
-      "Natural Rights",
-      "Popular Sovereignty",
-      "Declaration of Independence",
-      "Declaration of the Rights of Man",
-      "Haitian Revolution",
-      "Toussaint Louverture",
-      "Nationalism",
+      "Grievance",
+      "Republic",
+      "Estates-General",
+      "Sovereignty",
+      "Free People of Color",
       "Creoles",
-      "Simón Bolívar",
-      "Miguel Hidalgo",
-      "Olympe de Gouges",
-      "Social Contract",
-      "Self-Determination"
+      "Peninsulares",
+      "Liberalism",
+      "Democracy",
+      "Nationalism",
+      "Unification",
+      "Ottomanism"
     ],
     "sections": [
       {
         "number": "1",
-        "label": "Contextualization",
-        "heading": "What Made Atlantic Revolutions Possible",
+        "label": "The Question",
+        "heading": "What Does It Take to Start a Revolution?",
         "blocks": [
           {
             "type": "p",
-            "html": "Atlantic Revolutions did not emerge from ideas alone, they emerged from specific structural conditions that made revolution both possible and necessary for particular groups."
+            "html": "Topic 5.1 ended with a question. By 1789 the new ideas about rights were everywhere educated people read. In America, France, Haiti, and Spanish America, people turned them into revolutions. What caused those revolutions, and what did they create?"
           },
           {
             "type": "p",
-            "html": "In <span class=\"kt\">British North America</span>, the <span class=\"kt\">Seven Years War</span> (1756–1763) had both demonstrated the colonists' military capacity and created a debt crisis that led Britain to tax its American colonies for the first time. \"No taxation without representation\" was not just a slogan, it was a constitutional argument that drew directly on Enlightenment ideas about government by consent. When the British Parliament refused to treat American colonists as full subjects with parliamentary representation, it handed American revolutionaries both a grievance and a principle."
+            "html": "Start with this: ideas are not enough. Many people read John Locke and went on obeying their kings. A revolution needed three things at the same time. First, a <span class=\"kt\">grievance</span>: a wrong that many people felt, such as an unfair tax or a law that shut them out. Second, the words to name it, written down in a document people could read aloud and rally around. Third, a chance: a moment when the old ruler was broke, far away, or gone."
           },
           {
             "type": "p",
-            "html": "In <span class=\"kt\">France</span>, structural conditions were even more acute: a nearly bankrupt state, a rigid aristocratic tax exemption, food shortages, and a king (<span class=\"kt\">Louis XVI</span>) who had bankrupted France partly by funding the American Revolution. The fiscal crisis forced Louis to convene the <span class=\"kt\">Estates-General</span> in 1789, an institution that had not met since 1614, and the unresolved tensions between the <span class=\"kt\">Third Estate</span> (everyone who was not noble or clergy) and the privileged orders exploded into revolution."
-          },
-          {
-            "type": "p",
-            "html": "In <span class=\"kt\">Saint-Domingue</span> (Haiti), the context was the most extreme: the most profitable colony in the world, built entirely on the labor of 500,000 enslaved people, governed by a small class of white planters who wanted the benefits of French revolutionary liberty, for themselves, while maintaining slavery for everyone else."
-          }
-        ],
-        "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>Atlantic Revolutions were shaped by specific structural conditions, fiscal crisis, war, colonial taxation, and the social contradictions of slave-owning revolutionary societies. <strong>Enlightenment ideas provided the language of revolution; structural conditions provided the trigger. Understanding both is essential for causation arguments about why revolutions happened when they did.</strong></p>"
-        }
-      },
-      {
-        "number": "2",
-        "label": "Key Concept",
-        "heading": "American and French Revolutions — Enlightenment in Practice",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">American Revolution</span> (1776) was the first successful Atlantic Revolution, the first time Enlightenment ideas about natural rights and popular sovereignty were translated into a working political state. The <span class=\"kt\">Declaration of Independence</span> (1776) explicitly invoked Lockean natural rights (\"life, liberty, and the pursuit of happiness\") and the social contract (\"governments are instituted among men, deriving their just powers from the consent of the governed\"). The Constitution (1787) applied Montesquieu's separation of powers. The Bill of Rights protected individual liberties against state power."
-          },
-          {
-            "type": "p",
-            "html": "But the American Revolution also had profound limits: it preserved slavery, restricted voting to property-owning white men, and dispossessed indigenous peoples from their lands. <span class=\"kt\">Thomas Jefferson</span>, the primary author of the Declaration's assertion that \"all men are created equal\", enslaved over 600 people during his lifetime. The Revolution was radical within its intended scope (independence from Britain, republican government) and conservative in its exclusions (slavery, gender, indigenous rights)."
-          },
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">French Revolution</span> (1789) was more radical in its initial promises and more violent in its execution. The <span class=\"kt\">Declaration of the Rights of Man and Citizen</span> (1789) declared universal natural rights and popular sovereignty. The Revolution abolished feudalism, the aristocratic tax exemption, and (temporarily) the monarchy. The radical phase, the <span class=\"kt\">Terror</span> (1793–1794), executed thousands, including Louis XVI and Marie Antoinette, in the name of the general will. The Revolution also abolished slavery in French colonies in 1794, briefly making France the most radical Atlantic revolutionary power."
+            "html": "Look for all three in each revolution below. And watch for one more thing: each revolution helped cause the next one."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p>Both revolutions were caused by a combination of Enlightenment ideas AND specific structural conditions. <strong>The American Revolution required both Locke's natural rights theory AND British taxation policy after the Seven Years War. The French Revolution required both Rousseau's popular sovereignty AND the near-bankruptcy of the French state. Neither ideas alone nor structural conditions alone explain why revolutions happened when they did, the AP causation skill requires identifying both.</strong></p>"
+          "raw": "<p><strong>Ideas are one cause, not the cause.</strong> The College Board says Enlightenment ideas \"influenced resistance\" to kings and empires. People rebelled when they also had a grievance and a chance. A strong causation answer names more than one cause.</p>"
+        }
+      },
+      {
+        "number": "2",
+        "label": "America",
+        "heading": "A Republic With No King, 1775 to 1783",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "<strong>The grievance.</strong> Britain won the Seven Years' War in 1763, but it came out of the war deep in debt. To help pay, Parliament taxed its thirteen American colonies, with laws such as the Stamp Act of 1765. The colonists had no members in Parliament, so they protested: \"no taxation without representation.\""
+          },
+          {
+            "type": "p",
+            "html": "<strong>The words.</strong> On 4 July 1776 the colonies' Continental Congress adopted the Declaration of Independence. It said \"that all men are created equal,\" that governments get \"their just powers from the consent of the governed,\" and that when a government destroys people's rights, \"it is the Right of the People to alter or to abolish it.\""
+          },
+          {
+            "type": "p",
+            "html": "<strong>The chance.</strong> Britain was an ocean away, and in 1778 France joined the war on the American side."
+          },
+          {
+            "type": "p",
+            "html": "<strong>What it created.</strong> By 1783 the colonies had won their independence as the United States. In 1787 they wrote a constitution for a <span class=\"kt\">republic</span>: a country with no king, whose leaders are elected. The new republic became a model that later revolutionaries pointed to. But it kept slavery, and most states let only men who owned property vote."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Sort your causes.</strong> A long-term cause builds up over years, like Britain's war debt and the taxes that followed. A short-term cause sets things off, like the moment France joined the war. Naming both makes your explanation stronger.</p>"
         }
       },
       {
         "number": "3",
-        "label": "Key Concept",
-        "heading": "The Haitian Revolution — The Most Radical Atlantic Revolution",
+        "label": "France",
+        "heading": "The Bill Comes Due, 1789 to 1799",
         "blocks": [
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Haitian Revolution</span> (1791–1804) was the most radical of the Atlantic Revolutions, the only one that was simultaneously a revolution against colonialism, a revolution against slavery, and a revolution for the legal equality of all people regardless of race. It was led by enslaved and formerly enslaved people who explicitly claimed the rights that French and American revolutionaries said belonged to all humans, but refused to extend to them."
+            "html": "Here is the first link in the chain. <strong>The chance.</strong> Helping the Americans win had cost France a fortune, and by 1788 King Louis XVI's government was nearly bankrupt. To raise taxes, he called the <span class=\"kt\">Estates-General</span>, an assembly of the clergy, the nobles, and everyone else. It had not met since 1614."
           },
           {
             "type": "p",
-            "html": "The revolution began in August 1791 with a slave uprising led partly by the Vodou ceremony at <span class=\"kt\">Bois Caïman</span>, where enslaved people made a covenant to fight for freedom. <span class=\"kt\">Toussaint Louverture</span>, a formerly enslaved man of exceptional military and political genius, emerged as the dominant leader. He built a disciplined army that defeated the Spanish, the British (who invaded hoping to take the colony for themselves), and eventually the French army sent by <span class=\"kt\">Napoleon Bonaparte</span> to reimpose slavery in 1802."
+            "html": "<strong>The grievance.</strong> The clergy and the nobles paid little in taxes. Everyone else, the Third Estate, paid most of them, and after a bad harvest in 1788 the price of bread soared. In June 1789 the Third Estate declared itself the National Assembly, and on 14 July a Paris crowd stormed the Bastille, a royal fortress and prison."
           },
           {
             "type": "p",
-            "html": "The context of hypocrisy: when the French Revolution abolished slavery in 1794, it was partly because Toussaint had allied with France after Spain offered him freedom in exchange for military service. When Napoleon sent 50,000 soldiers to reimpose slavery in 1802, the Haitian revolutionary forces defeated them (partly through yellow fever, which decimated the French army). <span class=\"kt\">Haiti</span> declared independence on January 1, 1804, the first Black republic in the Western Hemisphere and only the second independent state in the Americas."
+            "html": "<strong>The words.</strong> In August 1789 the Assembly ended the nobles' special privileges and adopted the Declaration of the Rights of Man and of the Citizen. \"Men are born and remain free and equal in rights,\" it began, and \"the principle of all sovereignty resides essentially in the nation.\" <span class=\"kt\">Sovereignty</span> means the highest power in a state."
           },
           {
             "type": "p",
-            "html": "The significance: Haiti's independence was a direct application of Enlightenment principles that European and American revolutionaries refused to apply. France demanded enormous reparations (150 million francs) from Haiti as the price of diplomatic recognition, money that Haiti did not finish paying until 1947, structurally impoverishing the country. The Haitian Revolution terrified slaveholders throughout the Atlantic world, leading to tighter restrictions on enslaved people and the suppression of information about Haiti in slave-holding societies."
+            "html": "<strong>What it created.</strong> France was not trying to break away from anyone; it was remaking a kingdom. In 1792 it abolished the monarchy and became a republic, and in 1793 it executed the king. During the Terror (1793 to 1794) the government killed thousands of people it called enemies of the revolution. In 1799 a general, Napoleon Bonaparte, took power, and in 1804 he crowned himself emperor. His armies carried the revolution's laws across Europe, and they also made many Europeans hate French rule."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Comparison",
-          "raw": "<p>Comparing the Haitian Revolution to the American Revolution reveals the most important pattern in Atlantic Revolutions: every revolution claimed universal rights while simultaneously defining some group as outside those rights. <strong>The American Revolution excluded the enslaved; the French Revolution excluded women (briefly) and eventually tried to exclude the enslaved; the Haitian Revolution explicitly included everyone, and was treated as a threat by every other Atlantic revolutionary state as a result. The comparison reveals that universalism was, in practice, always partial.</strong></p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>An effect can become a cause.</strong> France's help won the American war. That help left France nearly bankrupt, and the bankruptcy forced the king to call the assembly where the French Revolution began. One revolution's effect became the next one's cause.</p>"
         }
       },
       {
         "number": "4",
-        "label": "Key Concept",
-        "heading": "Latin American Independence and Nationalism",
+        "label": "Haiti",
+        "heading": "The Words, Claimed by the Enslaved, 1791 to 1804",
         "blocks": [
           {
             "type": "p",
-            "html": "Latin American independence movements (1810–1825) completed the Atlantic Revolutionary wave. They were largely led by <span class=\"kt\">creoles</span>, people of European descent born in the Americas, who resented Spanish-born <span class=\"kt\">peninsulares</span> monopolizing senior colonial offices, resented Enlightenment-inspired regulations on colonial trade, and were inspired by the American and French examples."
+            "html": "<strong>The grievance.</strong> Saint-Domingue, on the Caribbean island of Hispaniola, was France's most valuable colony. Its sugar and coffee were grown by enslaved Africans. Around 1789 it held more than 400,000 enslaved people and fewer than 80,000 free people: more than five enslaved people for every free person."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Miguel Hidalgo</span> launched Mexico's independence movement in 1810 with his \"Grito de Dolores\", a call to revolt that drew heavily on indigenous and mestizo populations, making it more socially radical than most other Latin American independence movements. <span class=\"kt\">Simón Bolívar</span>, the \"Liberator,\" led independence movements across Venezuela, Colombia, Ecuador, Peru, and Bolivia, explicitly invoking Enlightenment ideas about natural rights and republican government."
+            "html": "<strong>The words.</strong> Saint-Domingue's <span class=\"kt\">free people of color</span>, free people of African or mixed descent, asked the Assembly in Paris for the equal rights its declaration promised. They were refused."
           },
           {
             "type": "p",
-            "html": "But Latin American independence produced conservative outcomes in most cases: creole elites replaced peninsulares at the top of the social hierarchy, but the casta system, the Catholic Church's power, and the plantation economy all continued. Indigenous peoples and enslaved Africans gained formal legal equality in most new constitutions, but formal equality and social reality diverged sharply."
+            "html": "<strong>The chance.</strong> With France in revolution and the colony's white planters divided, enslaved people in the northern plain rose up in August 1791. Toussaint Louverture, who had been born enslaved and had won his freedom before the revolution, became its most famous leader. In 1793 he announced: \"I want Liberty and Equality to reign in Saint Domingue.\" Fighting to keep the colony, French officials there began freeing enslaved people in 1793, and in February 1794 the government in Paris abolished slavery in all French colonies."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Nationalism</span>, the ideology that emerged from Atlantic Revolutionary movements, held that people sharing a common culture, language, history, or ethnicity should have their own self-governing state. Nationalism was initially linked to liberal and democratic ideals (the \"right of peoples to self-determination\"); by the late 19th century, it had become deeply intertwined with ethnic exclusion, imperialism, and militarism. For AP World History, nationalism is important primarily as a destabilizing force in multiethnic empires (Ottoman, Habsburg, Russian) throughout the 19th century."
+            "html": "Then Napoleon tried to turn back the clock. In 1802 he brought slavery back in other French colonies, such as Guadeloupe, and sent an army to retake Saint-Domingue. Toussaint was captured and died in a French prison in 1803. His officer Jean-Jacques Dessalines fought on, and yellow fever and the war destroyed the French army."
+          },
+          {
+            "type": "p",
+            "html": "<strong>What it created.</strong> On 1 January 1804 Dessalines declared independence and gave the country its old Taíno name, Haiti. It was the second independent country in the Americas, and the first founded by people who had freed themselves from slavery. Its effects reached far. Having lost Saint-Domingue, Napoleon sold Louisiana to the United States in 1803. Countries that allowed slavery feared Haiti; the United States did not recognize it until 1862, and in 1825 France demanded 150 million francs, later cut to 90 million, as the price of recognizing Haiti's independence."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Did Atlantic Revolutions live up to their Enlightenment ideals? A strong argument requires specifics: <strong>the American Revolution created a functioning republic (lived up to one ideal) while preserving slavery (failed catastrophically on another). The Haitian Revolution fully applied natural rights, and paid an enormous economic price for it. Latin American independence transferred power from one elite to another without fundamentally challenging social hierarchy. The strongest answer acknowledges that \"living up to ideals\" is not binary, all revolutions partially succeeded and partially failed, in ways that reflect whose interests they were designed to serve.</strong></p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Who caused it?</strong> France's 1794 law did not hand Haiti its freedom. Enslaved people rose up first, in 1791, and the law followed the fighting. Then Haitians won their independence by defeating Napoleon's army. When you explain a cause, say who acted.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "Spanish America",
+        "heading": "An Empire With No King, 1810 to 1826",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "<strong>The grievance.</strong> In Spain's American empire, <span class=\"kt\">creoles</span>, people of Spanish descent born in the Americas, owned land and businesses but were kept out of the highest offices. Those went to <span class=\"kt\">peninsulares</span>, men born in Spain. Spain also controlled what the colonies could grow, make, and trade. Simón Bolívar, a creole from Caracas, wrote that Spain \"has kept us in a sort of permanent infancy with regard to public affairs\": treated like children, never allowed to govern."
+          },
+          {
+            "type": "p",
+            "html": "<strong>The chance.</strong> Here is another link in the chain. In 1808 Napoleon invaded Spain and forced its king from the throne. Spanish America suddenly had no king to obey. In 1810 creole leaders formed governments of their own in Caracas and Buenos Aires, and in Mexico a priest, Miguel Hidalgo, called on Native and mestizo villagers to rise up."
+          },
+          {
+            "type": "p",
+            "html": "<strong>The words.</strong> In 1815, beaten and in exile on the British island of Jamaica, Bolívar wrote the Letter from Jamaica. \"The hatred that the Peninsula has inspired in us,\" he wrote, \"is greater than the ocean between us.\" The tie that bound Spanish America to Spain, he argued, \"has been severed.\" Then Haiti, the last revolution's creation, helped the next one. In 1816 Haiti's president, Alexandre Pétion, gave Bolívar guns, supplies, and soldiers for a new expedition, and asked him in return to end slavery in the lands he freed."
+          },
+          {
+            "type": "p",
+            "html": "<strong>What it created.</strong> By 1826 Spain had lost every colony in the Americas except Cuba and Puerto Rico. Mexico, Gran Colombia, Peru, Chile, and others became independent countries, and Brazil broke away from Portugal in 1822 with an emperor of its own. Creole elites took the top places. Most of the new countries kept a sharp social hierarchy, and slavery lasted in several of them for decades. Bolívar himself doubted that a government chosen entirely by the people, \"wholly representative,\" suited Spanish America yet."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Claims and Evidence in Sources",
+          "raw": "<p><strong>Compare two arguments.</strong> The Declaration of Independence and the Letter from Jamaica both argue that a far-off ruler has lost the right to rule. But the 1776 declaration rests on the people's consent, and Bolívar doubted his people were ready to govern themselves fully. To compare sources, say how their arguments are alike, how they differ, and why.</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "New Ideas",
+        "heading": "New Ways to Govern, and a New Loyalty",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Behind all four revolutions was anger at kings and empires. The revolutions left behind new answers to an old question: how should a country be run? One answer was the republic, with a written constitution. Another was <span class=\"kt\">liberalism</span>: the belief that a constitution and an elected parliament should limit the government and protect each person's rights, such as free speech, a free press, and property. Many liberals in the 1800s still wanted only men with property to vote. A third was <span class=\"kt\">democracy</span>, rule by the people, which pushed for the vote to reach all men. These ideas set off new revolutions across Europe in 1830 and 1848. Most of the uprisings of 1848 were crushed within two years."
+          },
+          {
+            "type": "p",
+            "html": "The revolutions also said that a state belongs to its people. That raised a new question: which people? More and more, people answered with <em>the nation</em>, everyone who shared a language, a religion, customs, and a homeland. That feeling, <span class=\"kt\">nationalism</span>, put loyalty to the nation above loyalty to a king or an empire."
+          },
+          {
+            "type": "p",
+            "html": "Governments learned to use it. In 1793, at war with much of Europe, revolutionary France ordered that \"all Frenchmen are in permanent requisition for the service of the armies.\" Young men would fight, married men would make weapons, women would make tents and serve in hospitals, and old people would go to public squares to preach \"the unity of the Republic.\" The whole nation was called to war, not just a king's soldiers. But nationalism could also be turned against governments, by people who felt they were a nation without a country of their own."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Effects keep going.</strong> The revolutions caused new ideas, liberalism, democracy, and nationalism, and those ideas then caused new revolutions. When you explain effects, follow them forward: what did this effect go on to cause?</p>"
+        }
+      },
+      {
+        "number": "7",
+        "label": "Nations",
+        "heading": "Nationalism Redraws the Map",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Through the 1800s, people who saw themselves as one nation wanted one state, with borders to match. Sometimes that meant <span class=\"kt\">unification</span>: joining many small states into one. Italy was split into several states. Italian nationalists, among them the statesman Count Cavour and the soldier Giuseppe Garibaldi, joined most of it into one kingdom in 1861, and added Rome in 1870. Germany was split into more than thirty states. In 1848, German liberals met in Frankfurt to unite Germany with an elected parliament and a constitution, and failed. Then Otto von Bismarck, the chief minister of Prussia, told Prussia's lawmakers in 1862 that the great questions of the time are not decided \"by speeches and majority resolutions,\" which had been \"the big mistake of 1848 and 1849,\" but \"by iron and blood.\" After three wars, the German Empire was proclaimed on 18 January 1871, in the Hall of Mirrors at Versailles, the palace Louis XIV built."
+          },
+          {
+            "type": "p",
+            "html": "Sometimes nationalism broke a state apart. The Ottoman Empire ruled many peoples in the Balkans, in southeastern Europe. Serbs rebelled and won the right to rule themselves. Greeks rose up in 1821, and in 1830 Britain, France, and Russia declared Greece an independent kingdom. Other Balkan peoples followed, and in 1878 Serbia, Montenegro, and Romania were recognized as independent."
+          },
+          {
+            "type": "p",
+            "html": "The Ottoman government answered with a loyalty of its own, <span class=\"kt\">Ottomanism</span>. In 1856 it promised equal treatment to all its subjects, Muslim or not, and in 1869 a law made every subject an Ottoman citizen. The idea was one loyalty for everyone, to the empire, instead of to a nation. It did not stop the Balkan nations from leaving."
+          },
+          {
+            "type": "p",
+            "html": "The idea reached beyond Europe, too. In the Spanish-ruled Philippines in the 1880s and 1890s, Filipino writers in the Propaganda Movement, among them José Rizal, demanded equal rights with Spaniards. Spain executed Rizal in 1896, during a revolution against its rule."
+          },
+          {
+            "type": "p",
+            "html": "So, what caused the revolutions, and what did they create? A grievance, the words to name it, and a chance to act, in America, France, Haiti, and Spanish America, and each revolution's effects helped cause the next. They created new independent countries in the Americas, republics and constitutions, and new ideas about government, liberalism and democracy. And they created the nation as the thing a state was supposed to belong to, an idea that kept joining some states together and pulling others apart long after the last Spanish colony on the mainland broke free."
+          },
+          {
+            "type": "p",
+            "html": "While Paris argued about rights, a different revolution was starting in British workshops. That is Topic 5.3."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>One cause, two effects.</strong> Nationalism joined Italy and Germany together and broke Greece and Serbia away from the Ottoman Empire. A cause can push in opposite directions. Saying both makes a stronger explanation.</p>"
         }
       }
     ],
-    "takeaway": "The Atlantic Revolutions (1776–1825) applied Enlightenment ideas to create new political systems, but applied them very differently depending on who was doing the applying. The <strong>American Revolution</strong> (1776) created the first Enlightenment-based republic, drew on Locke and Montesquieu, but preserved slavery and restricted rights to white property-owning men. The <strong>French Revolution</strong> (1789) was more radical, abolishing feudalism, declaring universal rights, briefly abolishing slavery, but descended into the Terror and Napoleon's authoritarian rule. The <strong>Haitian Revolution</strong> (1791–1804) was the most radical: enslaved people claiming universal rights that white revolutionaries refused to extend to them, creating the first Black republic in the Western Hemisphere. <strong>Latin American independence</strong> (1810–1825) followed, led by creoles who replaced Spanish-born elites without fundamentally transforming social hierarchies. From these revolutions emerged <strong>nationalism</strong>, the idea that shared culture or history should form the basis for political self-determination, a powerful new ideology that would destabilize multiethnic empires for the next century.",
+    "takeaway": "Ideas alone did not make a revolution. In America, France, Haiti, and Spanish America, revolution came when people had a grievance, the words to name it in a document such as the Declaration of Independence, the Declaration of the Rights of Man and of the Citizen, or Bolívar's Letter from Jamaica, and a chance to act. Each revolution helped cause the next: the American war bankrupted France, France's declaration was claimed in Saint-Domingue, Napoleon's invasion of Spain opened the way in Spanish America, and Haiti armed Bolívar. The revolutions created new independent countries in the Americas, republics and constitutions, and new ideas, liberalism and democracy. They also created nationalism, a loyalty to the nation that governments used and that joined Italy and Germany together while it broke the Balkans away from the Ottoman Empire. Grievance + words + a chance = revolution. Then the nation redrew the map.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
-        "num": "1",
+        "num": "01",
         "skill": "Causation",
-        "text": "Explain why the Haitian Revolution happened in 1791, specifically in Saint-Domingue rather than somewhere else in the Atlantic world. Identify at least two specific causes, and explain why the French Revolution's declaration of universal rights made the Haitian situation uniquely explosive.",
-        "placeholder": "Identify at least two specific causes and explain the unique explosive context in Saint-Domingue..."
+        "text": "Choose ONE revolution from Sections 2 to 5: America, France, Haiti, or Spanish America. Name its grievance, its words, and its chance, using a detail from the reading for each.",
+        "placeholder": "The revolution I chose is... Its grievance was... Its words were... Its chance came when..."
       },
       {
-        "num": "2",
-        "skill": "Comparison",
-        "text": "Compare the American Revolution and the Haitian Revolution as applications of Enlightenment ideas. Identify one meaningful similarity and one meaningful difference. Then explain what the difference reveals about the limits of Enlightenment universalism as practiced by white revolutionaries.",
-        "placeholder": "Identify a similarity and a difference, then explain what that difference reveals..."
+        "num": "02",
+        "skill": "Claims and Evidence in Sources",
+        "text": "The Declaration of Independence says governments get \"their just powers from the consent of the governed.\" The French declaration says \"the principle of all sovereignty resides essentially in the nation.\" Explain one way the two arguments are alike and one way they are different.",
+        "placeholder": "The two arguments are alike because... They are different because..."
       },
       {
-        "num": "3",
-        "skill": "Argumentation",
-        "text": "Write a one-sentence claim answering this question: Was the Haitian Revolution the most radical Atlantic Revolution, or was the French Revolution more radical? Then provide one specific piece of evidence that supports your argument.",
-        "placeholder": "State your one-sentence claim, then provide one specific piece of evidence..."
+        "num": "03",
+        "skill": "Causation",
+        "text": "Using Section 7, explain how nationalism could join states together AND break a state apart. Give one example of each.",
+        "placeholder": "Nationalism joined states together when... It broke a state apart when..."
       }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 5.2, Nationalism and Revolutions",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true,
   },
   "5.3": {
     "topicKey": "5.3",
