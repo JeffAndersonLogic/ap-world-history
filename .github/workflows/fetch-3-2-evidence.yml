@@ -1,0 +1,50 @@
+name: Fetch Topic 3.2 evidence pictures (temporary)
+
+# One-off. The six 3.2 Evidence Lab cards hotlinked Commons and showed fallback
+# art in class. The authoring sandbox cannot reach Commons (HTTP 429), a GitHub
+# runner can, so this job saves repo-local copies of exactly the six files the
+# cards already name and commits them to this working branch. It is deleted in
+# the commit that rewires the cards, and never reaches main as a live workflow.
+
+on:
+  push:
+    branches: [claude/hopeful-allen-hkh9sd]
+    paths: ['.github/workflows/fetch-3-2-evidence.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download the six pictures at projector width
+        run: |
+          set -euo pipefail
+          UA="BeHistorical/1.0 (https://jeffandersonlogic.github.io/ap-world-history/; classroom site)"
+          d=assets/images/topics/3-2
+          fetch() {
+            for i in 1 2 3 4 5; do
+              if curl -fsSL -A "$UA" -o "$d/$2" "https://commons.wikimedia.org/wiki/Special:FilePath/$1?width=1280"; then
+                if file -b --mime-type "$d/$2" | grep -q '^image/'; then return 0; fi
+              fi
+              rm -f "$d/$2"; sleep $((i * 15))
+            done
+            echo "::error::$1 did not download"; return 1
+          }
+          fetch Court_of_Akbar_from_Akbarnama.jpg akbar-court-akbarnama.jpg; sleep 3
+          fetch Qianlong_Emperor.jpg qianlong-and-consorts-castiglione.jpg; sleep 3
+          fetch Taj_Mahal_in_March_2004.jpg taj-mahal-2004.jpg; sleep 3
+          fetch Topkapi_Palace_Bosphorus.JPG topkapi-palace-bosphorus.jpg; sleep 3
+          fetch 'Mughal_Empire_%281700%29.png' mughal-empire-1700-map.png; sleep 3
+          fetch Bodl_Arch.Selden.A.1_roll113D_frame27.jpg codex-mendoza-huaxtepec.jpg
+          file "$d"/akbar-* "$d"/qianlong-and-* "$d"/taj-mahal-2004.jpg "$d"/topkapi-* "$d"/mughal-* "$d"/codex-mendoza-huaxtepec.jpg
+      - name: Commit them to this branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898799+github-actions[bot]@users.noreply.github.com"
+          git add assets/images/topics/3-2
+          git commit -m "Topic 3.2: repo-local copies of the six Evidence Lab pictures (fetched from Commons by a runner)"
+          git push
