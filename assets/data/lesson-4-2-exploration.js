@@ -113,7 +113,14 @@ window.BEHISTORICAL_LESSON = {
   lecture: {
     title: "Who Paid, and What For: European Exploration, c. 1415 to 1610",
     intro: "Use these cards after the First & 10. Each one answers the topic's three questions for one part of the story: who paid, what they wanted, and what they got.",
-    videos: [],
+    videos: [
+      {
+        title: "CAUSES of EUROPEAN EXPLORATION [AP World History Review—Unit 4 Topic 2]",
+        url: "https://youtu.be/h3m5yT8DaZ8",
+        youtubeId: "h3m5yT8DaZ8",
+        prompt: "Use this clip to review why European states paid for ocean voyages. As you watch, sort the reasons into what rulers wanted (wealth, power, religion) and what the voyages actually got them."
+      }
+    ],
     segments: [
       {
         title: "The Cause: Spices, Middlemen, and Why Rulers Backed the Voyages",
