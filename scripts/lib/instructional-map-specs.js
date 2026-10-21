@@ -336,20 +336,23 @@ module.exports = [
   {
     id: 'topic-5-2',
     code: 'Topic 5.2',
-    title: 'The Atlantic Revolutionary World, c. 1776-1825',
-    subtitle: 'Topic 5.2 · Nationalism and revolutions',
+    title: 'Revolutions and New Nations, 1775 to 1878',
+    subtitle: 'Topic 5.2 · Nationalism and revolutions, 1750 to 1900',
     highlights: [
-      { zone: 'unitedStates', label: 'UNITED STATES 1776', tone: 'gold', legend: 'American Revolution, 1776-1783' },
-      { zone: 'westernEurope', label: 'FRANCE 1789', tone: 'bronze', legend: 'French Revolution, 1789' },
-      { zone: 'caribbean', label: 'HAITI 1791', tone: 'plum', legend: 'Haitian Revolution, 1791-1804' },
-      { zone: 'andes', label: 'SPANISH AMERICA', tone: 'sand', legend: 'Latin American independence, 1810-1825' },
-      { zone: 'brazil', label: 'BRAZIL 1822', tone: 'sage', legend: 'Brazilian independence, 1822' }
+      { zone: 'unitedStates', label: 'UNITED STATES', tone: 'gold', legend: 'American Revolution, 1775 to 1783' },
+      { zone: [2.5, 46.5, 3.5, 3], label: 'FRANCE', labelSide: 'left', tone: 'bronze', legend: 'French Revolution, 1789 to 1799' },
+      { zone: [-72.5, 19, 2.6, 1.6], label: 'HAITI', labelSide: 'right', tone: 'plum', legend: 'Haitian Revolution, 1791 to 1804' },
+      { zone: 'andes', label: 'SPANISH AMERICA', tone: 'sand', legend: 'Spanish American independence, 1810 to 1826' },
+      { zone: [12.5, 43, 2.6, 3], label: 'ITALY', labelSide: 'left', tone: 'sage', legend: 'Italy united, 1861; Rome added, 1870' },
+      { zone: [11, 51.5, 3.6, 2.6], label: 'GERMANY', tone: 'slate', legend: 'German Empire proclaimed, 1871' },
+      { zone: [22, 42, 3.6, 3], label: 'BALKANS', labelSide: 'right', tone: 'plum', legend: 'Greece 1830; Serbia, Romania, Montenegro 1878' }
     ],
     flows: [
-      { from: 'unitedStates', to: 'westernEurope', label: 'revolutionary example east' },
-      { from: 'westernEurope', to: 'caribbean', label: 'rights claimed by the enslaved', bow: -0.2 },
-      { from: 'caribbean', to: 'andes', label: 'independence movements spread', bow: 0.24 }
-    ]
+      { from: 'unitedStates', to: [2.5, 46.5], label: 'war debt', bow: -0.18 },
+      { from: [2.5, 46.5], to: [-72.5, 19], label: 'the declaration claimed', bow: 0.2 },
+      { from: [-72.5, 19], to: [-66.9, 10.5], label: 'Haiti arms Bolívar, 1816', bow: -0.3 }
+    ],
+    note: 'Regions are approximate. The numbered arrows are links in the chain of revolutions; Italy, Germany and the Balkans mark new states that nationalism made.'
   },
   {
     id: 'topic-5-3',

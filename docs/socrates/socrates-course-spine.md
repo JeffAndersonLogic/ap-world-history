@@ -650,7 +650,7 @@ Strong answer checklist: Choose one reform movement and explain what drove it: i
 
 ## 5.2 Nationalism and Revolutions
 
-**Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. How Enlightenment ideas fueled the Atlantic Revolutions — and why the Haitian Revolution was the most radical test of whether universal rights were actually universal
+**Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. 1750 to 1900. A grievance, the words to name it, and a chance to act turned the new ideas into revolutions in America, France, Haiti, and Spanish America, and each revolution helped set off the next. They left behind new countries, new ideas about government, and a new loyalty, to the nation, that joined some states together and broke others apart.
 
 **College Board key concepts.**
 - Unit 5: Learning Objective C (Learning Objective): Explain causes and effects of the various revolutions in the period from 1750 to 1900.
@@ -661,15 +661,15 @@ Strong answer checklist: Choose one reform movement and explain what drove it: i
 - KC-5.3.I.B (Governance): The ideas of Enlightenment philosophers, as reflected in revolutionary documents—including the American Declaration of Independence during the American Revolution, the French “Declaration of the Rights of Man and of the Citizen” during the French Revolution, and Bolívar’s “Letter from Jamaica” on the eve of the Latin American revolutions—influenced resistance to existing political authority, often in pursuit of independence and democratic ideals.
 - KC-5.3.II.iii (Governance): Newly imagined national communities often linked this new national identity with borders of the state, and in some cases, nationalists challenged boundaries or sought unification of fragmented regions. Illustrative examples: Propaganda Movement in the Philippines, Maori nationalism and the New Zealand wars in New Zealand, Puerto Rico—writings of Lola Rodríguez de Tió, German and Italian unifications, Balkan nationalisms, Ottomanism.
 
-**Expected evidence terms.** natural rights, popular sovereignty, Toussaint Louverture, Bois Caïman, Haitian Revolution, Declaration of Independence, Declaration of Rights of Man, Seven Years War, Saint-Domingue, Napoleon, nationalism, self-determination, multiethnic empire, Ottoman Empire, Habsburg Empire, Greek independence, Italian unification, German unification, Bolívar, creole.
+**Expected evidence terms.** grievance, words, chance, revolution, Stamp Act, taxation, representation, Declaration of Independence, consent, Estates-General, bankrupt, Bastille, Rights of Man, sovereignty, nation, Saint-Domingue, free people of color, Toussaint Louverture, Haiti, creoles, peninsulares, Napoleon, Bolívar, Letter from Jamaica, Pétion, republic, independent, nationalism, language, religion, customs, homeland, unity, government, Ottomanism, Ottoman Empire, citizen, unification, Italy, Cavour, Garibaldi, 1861, Germany, Bismarck, Prussia, 1871, Balkans, Greece, 1830, Serbia, 1878, cause, effect.
 
-**AP skill focus.** Comparison practice.
+**AP skill focus.** Claims and evidence practice.
 
-**Checkpoint 1 prompt.** Choose two Atlantic Revolutions (American, French, Haitian, or Latin American). For each, identify one specific Enlightenment idea it drew on AND one structural condition that also contributed to its outbreak. Then compare the two: in what way was the Haitian Revolution more radical than the other? Be specific about what "most radical" means, what did the Haitian Revolution challenge that the other revolutions did not?
-Strong answer checklist: Identify one Enlightenment idea AND one structural condition for each revolution you choose. Compare: explain specifically what made the Haitian Revolution more radical than your other example. Be specific about what 'most radical' means, what did Haiti challenge that others didn't?
+**Checkpoint 1 prompt.** Answer in four steps. (1) Choose ONE revolution: the American, the French, the Haitian, or the Spanish American. Name its grievance: what were people angry about? (2) Name its words: the document that named the grievance, and one idea in it. (3) Name its chance: what made the moment possible? (4) Explain what the revolution created, and one way it helped cause another revolution or was helped by one.
+Strong answer checklist: Name the grievance, the words, and the chance, with a detail for each. Explain what the revolution created. Explain one link to another revolution.
 
-**Checkpoint 2 prompt.** Define nationalism in your own words, what does it mean, and how does it differ from patriotism or loyalty to a monarch? Explain how nationalism emerged from the Atlantic Revolutionary movements. Then give one specific example of a nationalist movement challenging a multiethnic empire in the 19th century. Explain: what specific group wanted self-determination, which empire did it challenge, and what was the outcome?
-Strong answer checklist: Define nationalism clearly, how is it different from loyalty to a dynasty or a religion? Explain the causal chain: how did Atlantic Revolutions produce nationalism as an ideology? Give one specific nationalist movement, the empire it challenged, and the outcome, be concrete.
+**Checkpoint 2 prompt.** Explain how nationalism caused changes to states between 1789 and 1900. (1) Explain what a nation is: what do the people in it share? (2) Explain one way a government used national loyalty, for example revolutionary France in 1793 or Ottomanism in the Ottoman Empire. (3) Choose ONE state that nationalism joined together, Italy or Germany, and explain how and when it was united. (4) Choose ONE state that nationalism broke apart, the Ottoman Empire, and explain how and when Greece or the other Balkan states became independent. (5) Explain why the same cause, nationalism, could have both effects.
+Strong answer checklist: Explain what a nation shares, and one way a government used national loyalty. Explain one state nationalism joined together, with a date. Explain one state nationalism broke apart, with a date. Explain why one cause had both effects.
 
 ## 5.3 The Industrial Revolution Begins
 

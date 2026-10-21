@@ -193,6 +193,15 @@ const DECKS = [
     ],
     student: 'assets/data/presentations/topic-5-1-student.js',
     backUrl: 'lesson-5-1-enlightenment.html#lecture'
+  },
+  {
+    key: '5.2',
+    sources: [
+      'teacher/data/topic-5-2-teaching-base.js',
+      'teacher/data/topic-5-2-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-5-2-student.js',
+    backUrl: 'lesson-5-2-nationalism-and-revolutions.html#lecture'
   }
 ];
 
@@ -388,7 +397,8 @@ function buildDeck(deck) {
     '4.6': topic31Slides,
     '4.7': topic31Slides,
     '4.8': topic31Slides,
-    '5.1': topic31Slides
+    '5.1': topic31Slides,
+    '5.2': topic31Slides
   };
   return {
     meta: {
