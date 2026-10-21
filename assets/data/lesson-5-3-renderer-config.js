@@ -41,16 +41,16 @@
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg'
+    map:             '../assets/images/commons/casta-painting-all-bdc286.jpg',
+    first10:         '../assets/images/commons/waldseemuller-map-2-f5c64b.jpg',
+    contentDelivery: '../assets/images/commons/florentinecodex-bk12-f54-smallpox-6163e9.jpg',
+    beSurreal:       '../assets/images/commons/voc-faaae0.jpg',
+    skill:           '../assets/images/commons/1700-ce-world-map-1696ff.png',
+    checkpoint1:     '../assets/images/commons/astrolabe-persian-18c-8ebe5d.jpg',
+    evidence:        '../assets/images/commons/columbus-taking-possession-d0d171.jpg',
+    source:          '../assets/images/commons/loren-mozley-pueblo-revolt-1680-installed-1936-abq-nm-73e5bf.jpg',
+    beInTheRoom:     '../assets/images/commons/ferdinand-magellan-9de032.jpg',
+    checkpoint2:     '../assets/images/commons/pillar-of-vasco-da-gama-1533aa.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -105,7 +105,7 @@
   lesson.images = [
     {
       title: 'Powerloom weaving, 1835',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg',
+      url: '../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Powerloom_weaving_in_1835.jpg',
       caption: 'Engraving of a powerloom weaving shed, published in 1835. An idealized illustration made for a book about the factory system, not a photograph.',
       prompt: 'NOTICE how the room is arranged and who is working in it. INFER what the arrangement requires of the workers\' day. The image was made to present the system favourably: what would that have left out?'
@@ -139,7 +139,7 @@
     },
     {
       title: 'Coalbrookdale by Night, 1801',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Philipp_Jakob_Loutherbourg_d._J._002.jpg?width=1200',
+      url: '../assets/images/commons/philipp-jakob-loutherbourg-d-j-002-23c595.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Philipp_Jakob_Loutherbourg_d._J._002.jpg',
       caption: 'Philip James de Loutherbourg, 1801, showing the Bedlam Furnaces in the Severn Gorge. Painted while the works were running.',
       prompt: 'NOTICE what is producing the light in this picture, and what time of day it is. INFER what changed about when and how long work could happen. What would this painter have gained by making the scene more dramatic than it was?'

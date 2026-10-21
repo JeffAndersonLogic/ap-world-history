@@ -96,7 +96,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Heimler's History — AP World Topic 7.6",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+7.6+Causes+of+World+War+II",
-        previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG",
+        previewImage: "../assets/images/commons/infobox-collage-for-wwii-33f084.png",
         prompt: "Watch for the four causes the CED names, the unsustainable peace after WWI, the Great Depression, continued imperialist aspirations, and especially the rise of fascist and totalitarian regimes, and how aggressive militarism, above all Nazi Germany under Hitler, turned those tensions into war."
       }
     ],
@@ -112,7 +112,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "World War II — montage of the global conflict",
           caption: "The war the interwar tensions produced, the CED asks you to explain its causes, and names four of them in a single sentence.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG",
+          url: "../assets/images/commons/infobox-collage-for-wwii-33f084.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.PNG"
         }
       },
@@ -127,7 +127,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Treaty of Versailles, English version (1919)",
           caption: "The peace that humiliated Germany, reparations, territorial losses, and a war-guilt clause that bred the resentment radical movements would exploit.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Treaty_of_Versailles,_English_version.jpg",
+          url: "../assets/images/commons/treaty-of-versailles-english-version-21ea91.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Treaty_of_Versailles,_English_version.jpg"
         }
       },
@@ -142,7 +142,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Migrant Mother, 1936",
           caption: "The human face of the Depression, economic desperation that discredited democracies and made extremist promises of revival attractive worldwide.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Lange-MigrantMother02.jpg",
+          url: "../assets/images/commons/lange-migrantmother02-99276b.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Lange-MigrantMother02.jpg"
         }
       },
@@ -157,7 +157,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Adolf Hitler",
           caption: "Hitler, whose Nazi regime turned the resentment of Versailles and the desperation of the Depression into aggressive militarism, the cause the CED weights above the rest.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg",
+          url: "../assets/images/commons/bundesarchiv-bild-183-s33882-adolf-hitler-retouched-8a4d19.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg"
         }
       },
@@ -172,7 +172,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Flag of Manchukuo",
           caption: "Manchukuo, the Japanese puppet state from Topic 7.5, the leading edge of the continued imperialist aspirations that drove aggressive militarism in Asia.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Manchukuo.svg",
+          url: "../assets/images/commons/flag-of-manchukuo-808278.svg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Flag_of_Manchukuo.svg"
         }
       },
@@ -187,7 +187,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Neville Chamberlain",
           caption: "Chamberlain, face of appeasement, the policy that, with a powerless League, taught expansionist powers that aggression carried no consequences.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Neville-Chamberlain.jpg",
+          url: "../assets/images/commons/neville-chamberlain-15c5c4.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Neville-Chamberlain.jpg"
         }
       },
@@ -202,7 +202,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Adolf Hitler",
           caption: "The CED's 'especially' made visible, weigh the rise of the Nazi regime against the failed peace, the Depression, and imperial ambition, and decide which cause carried the most weight.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg",
+          url: "../assets/images/commons/bundesarchiv-bild-183-s33882-adolf-hitler-retouched-8a4d19.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg"
         }
       }
@@ -238,28 +238,28 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "World War II — montage of the global conflict",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG",
+      url: "../assets/images/commons/infobox-collage-for-wwii-33f084.png",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.PNG",
       caption: "The second total war, the conflict the CED asks you to explain the causes of.",
       prompt: "The CED names four causes of this war in one sentence. Which of them do you think mattered most, and why does the framework single out 'the rise of fascist and totalitarian regimes'?"
     },
     {
       title: "Treaty of Versailles, English version (1919)",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Treaty_of_Versailles,_English_version.jpg",
+      url: "../assets/images/commons/treaty-of-versailles-english-version-21ea91.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Treaty_of_Versailles,_English_version.jpg",
       caption: "The unsustainable peace, reparations, territorial losses, and a war-guilt clause that bred lasting German resentment.",
       prompt: "How does this document help explain the FIRST cause the CED names? Trace the line from the treaty's terms to 'fertile ground for radical political movements.'"
     },
     {
       title: "Adolf Hitler",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg",
+      url: "../assets/images/commons/bundesarchiv-bild-183-s33882-adolf-hitler-retouched-8a4d19.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg",
       caption: "Hitler, the CED's 'especially': the rise of the Nazi regime and its aggressive militarism.",
       prompt: "The other three causes set the stage; the CED says this one was 'especially' decisive. What did the Nazi regime add that the failed peace and the Depression could not produce on their own?"
     },
     {
       title: "Neville Chamberlain",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Neville-Chamberlain.jpg",
+      url: "../assets/images/commons/neville-chamberlain-15c5c4.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Neville-Chamberlain.jpg",
       caption: "Chamberlain and appeasement, the powerless League and the policy that emboldened aggression.",
       prompt: "The League's failure is not in the Key Concept's list of causes, but it multiplied them. How did unpunished aggression and appeasement turn the four causes into an actual war?"

@@ -162,8 +162,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Rights-Based Challenges',
           caption: 'Evidence anchor 1 for Topic 9.5.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wangari_Maathai.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wangari_Maathai.jpg'
+          url: '../assets/images/commons/wangari-maathai-6c555d.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Wangari_Maathai.jpg'
         }
       },
       {
@@ -297,8 +297,8 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: 'Rights-Based Challenges',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wangari_Maathai.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wangari_Maathai.jpg',
+      url: '../assets/images/commons/wangari-maathai-6c555d.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Wangari_Maathai.jpg',
       caption: 'The UDHR named rights that activists could use against state discrimination and social exclusion.',
       prompt: 'How does this evidence support or qualify a claim about calls for reform and responses after 1900?'
     },

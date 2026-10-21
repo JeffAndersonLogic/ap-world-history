@@ -252,7 +252,7 @@ function rewrite() {
       const local = `${prefixFor(file)}${DIR}/${name}`;
       const page = `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(titleOf(url))}`;
       src = src.split(url).map((part, i, all) => (i === all.length - 1 ? part
-        : part + (/\b(?:sourceUrl|source|href)\s*[:=]\s*\\?['"]?$/.test(part.slice(-40)) ? page : local))).join('');
+        : part + (/\b(?:sourceUrl|href)\s*[:=]\s*\\?['"]?$/.test(part.slice(-40)) ? page : local))).join('');
     }
     if (src !== before) { fs.writeFileSync(full, src); changed += 1; }
   }

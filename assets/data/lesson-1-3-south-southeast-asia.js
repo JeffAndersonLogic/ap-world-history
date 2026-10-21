@@ -51,23 +51,23 @@ window.BEHISTORICAL_LESSON = {
     }
   ],
   stableImages: {
-    map:             'https://upload.wikimedia.org/wikipedia/commons/2/22/Map-of-southeast-asia_1400_CE-es.svg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Angkor%20Wat.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Hampi%20virupaksha%20temple.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Borobudur%20ship.JPG',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Qutb_Minar_2022.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Majapahit_Empire.svg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Angkor_Wat_001.JPG',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Srivijaya_Empire.svg'
+    map:             '../assets/images/commons/map-of-southeast-asia-1400-ce-es-47cbf8.svg',
+    first10:         '../assets/images/commons/angkor-wat-a59ab1.jpg',
+    contentDelivery: '../assets/images/commons/indian-ocean-cia-wfb-map-1f1fa9.png',
+    beSurreal:       '../assets/images/commons/hampi-virupaksha-temple-a5eab4.jpg',
+    skill:           '../assets/images/commons/borobudur-ship-49cab9.jpg',
+    checkpoint1:     '../assets/images/commons/qutb-minar-2022-9d5b50.jpg',
+    evidence:        '../assets/images/commons/majapahit-empire-a236b3.svg',
+    source:          '../assets/images/commons/tabularogeriana-637cf9.jpg',
+    beInTheRoom:     '../assets/images/commons/angkor-wat-001-33362d.jpg',
+    checkpoint2:     '../assets/images/commons/srivijaya-empire-4adb14.svg'
   },
   map: {
     title: 'Map & Geography Check: Mainland and Maritime Southeast Asia',
     embedUrl: 'map-module-01-topic-1-3-south-southeast-asia.html',
     note: 'This Map & Geography Check uses the embedded two-map pop-out window. Use the maps below, then close this pop-out to return to the 1.3 lesson path.',
     intro: 'Topic 1.3 spans three connected geographic zones: South Asia, mainland Southeast Asia, and maritime Southeast Asia. Geography shaped which states thrived, and which belief systems spread.',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Khmer_Empire_1203_Map_%28cropped%29.png',
+    url: '../assets/images/commons/khmer-empire-1203-map-cropped-56f6a0.png',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:Khmer_Empire_1203_Map_%28cropped%29.png',
     caption: 'The Khmer Empire at Angkor was one of the most powerful land-based states in mainland Southeast Asia.',
     notes: [
@@ -115,7 +115,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: 'Indian Ocean Trade Network',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
+          url: '../assets/images/commons/indian-ocean-cia-wfb-map-1f1fa9.png',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png',
           caption: 'The Indian Ocean world connected South and Southeast Asia to Afro-Eurasian belief systems, states, and trade networks.'
         }
@@ -129,7 +129,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: 'Hampi Virupaksha Temple',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Hampi%20virupaksha%20temple.jpg',
+          url: '../assets/images/commons/hampi-virupaksha-temple-a5eab4.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Hampi_virupaksha_temple.jpg',
           caption: 'The Vijayanagara Empire was a major center of Hindu devotional culture and temple patronage in southern India.'
         }
@@ -143,7 +143,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: 'Qutb Minar, Delhi',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Qutb_Minar_2022.jpg',
+          url: '../assets/images/commons/qutb-minar-2022-9d5b50.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Qutb_Minar_2022.jpg',
           caption: 'The Qutb Minar in Delhi is a symbol of Islamic political authority and architectural power in the early Delhi Sultanate.'
         }
@@ -157,7 +157,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: 'Angkor Wat',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Angkor%20Wat.jpg',
+          url: '../assets/images/commons/angkor-wat-a59ab1.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Angkor_Wat.jpg',
           caption: 'Angkor Wat displayed religious devotion and the political power of the Khmer state through monumental scale and sacred symbolism.'
         }
@@ -171,7 +171,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: 'Borobudur Ship Relief',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Borobudur%20ship.JPG',
+          url: '../assets/images/commons/borobudur-ship-49cab9.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Borobudur_ship.JPG',
           caption: 'A ship relief from Borobudur captures the maritime power and Buddhist cultural reach of Southeast Asian states.'
         }
@@ -182,7 +182,7 @@ window.BEHISTORICAL_LESSON = {
         title: 'State Building in SOUTH Asia & SOUTHEAST Asia [AP World Review, Unit 1 Topic 3]',
         url: 'https://youtu.be/AMGPVDvo2VE',
         youtubeId: 'AMGPVDvo2VE',
-        previewImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
+        previewImage: '../assets/images/commons/indian-ocean-cia-wfb-map-1f1fa9.png',
         prompt: 'Watch for states, religions, and Indian Ocean trade connections. Pause and note examples of the Bhakti movement, Sufism, and Buddhist monasticism.'
       }
     ]
@@ -239,42 +239,42 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: 'Angkor Wat',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Angkor%20Wat.jpg',
+      url: '../assets/images/commons/angkor-wat-a59ab1.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Angkor_Wat.jpg',
       caption: 'Monumental architecture displayed religious devotion and Khmer state power.',
       prompt: 'How does this structure connect religion to political authority? What does its scale suggest about state power and labor mobilization?'
     },
     {
       title: 'Borobudur Ship Relief',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Borobudur%20ship.JPG',
+      url: '../assets/images/commons/borobudur-ship-49cab9.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Borobudur_ship.JPG',
       caption: 'Maritime trade was central to Buddhist states like Srivijaya and Majapahit in Southeast Asia.',
       prompt: 'What does this image suggest about the relationship between maritime trade and Buddhist culture in Southeast Asia?'
     },
     {
       title: 'Qutb Minar, Delhi',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Qutb_Minar_2022.jpg',
+      url: '../assets/images/commons/qutb-minar-2022-9d5b50.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Qutb_Minar_2022.jpg',
       caption: 'The Qutb Minar was built under the Delhi Sultanate as a symbol of Islamic political and religious authority in South Asia.',
       prompt: 'How does this structure use architectural display to communicate political power? What does it suggest about how the Delhi Sultanate used Islam to legitimize authority?'
     },
     {
       title: 'Hampi Virupaksha Temple',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Hampi%20virupaksha%20temple.jpg',
+      url: '../assets/images/commons/hampi-virupaksha-temple-a5eab4.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Hampi_virupaksha_temple.jpg',
       caption: 'Hampi was the capital of the Vijayanagara Empire, a major Hindu kingdom in southern India.',
       prompt: 'How does this image show the relationship between Hinduism and state power in the Vijayanagara Empire?'
     },
     {
       title: 'Majapahit Empire Territory',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Majapahit_Empire.svg',
+      url: '../assets/images/commons/majapahit-empire-a236b3.svg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Majapahit_Empire.svg',
       caption: 'The Majapahit Empire controlled a vast maritime territory across the Indonesian archipelago.',
       prompt: 'What does the geographic spread of Majapahit suggest about how maritime states built and projected power across island Southeast Asia?'
     },
     {
       title: 'Srivijaya Empire Territory',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Srivijaya_Empire.svg',
+      url: '../assets/images/commons/srivijaya-empire-4adb14.svg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Srivijaya_Empire.svg',
       caption: 'The Srivijaya Empire was a Buddhist maritime state controlling the Strait of Malacca trade network.',
       prompt: 'How did Srivijaya use control of trade routes to build political power? What does this suggest about the connection between Buddhism and commerce in Southeast Asia?'

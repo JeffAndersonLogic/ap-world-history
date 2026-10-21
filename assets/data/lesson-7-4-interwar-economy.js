@@ -110,7 +110,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Heimler's History — AP World Topic 7.4",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+7.4+Economy+in+the+Interwar+Period",
-        previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/Crowd_outside_nyse.jpg",
+        previewImage: "../assets/images/commons/crowd-outside-nyse-dd023c.jpg",
         prompt: "Watch for why governments took a more active economic role after WWI and the Depression, the Soviet Five-Year Plans and their human cost, and the New Deal, fascist corporatist, and Brazilian/Mexican responses."
       }
     ],
@@ -125,7 +125,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Crowd outside the New York Stock Exchange, October 1929",
           caption: "The crash that went global, solemn crowds gather on Wall Street as the market collapses in October 1929.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Crowd_outside_nyse.jpg",
+          url: "../assets/images/commons/crowd-outside-nyse-dd023c.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Crowd_outside_nyse.jpg"
         }
       },
@@ -139,7 +139,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Signing of the Social Security Act, 1935",
           caption: "President Roosevelt signs the Social Security Act, the democratic state taking permanent responsibility for economic security.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Signing_Of_The_Social_Security_Act.jpg",
+          url: "../assets/images/commons/signing-of-the-social-security-act-7d6214.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Signing_Of_The_Social_Security_Act.jpg"
         }
       },
@@ -154,7 +154,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Benito Mussolini",
           caption: "Mussolini, architect of the fascist corporatist economy, state-organized industry in service of nationalist goals.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mussolini_biografia.jpg",
+          url: "../assets/images/commons/mussolini-biografia-5affd8.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Mussolini_biografia.jpg"
         }
       },
@@ -169,7 +169,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Joseph Stalin",
           caption: "Stalin, who placed the Soviet economy under total state control through the Five-Year Plans, industrialization purchased with repression and famine.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/JStalin_Secretary_general_CCCP_1942.jpg",
+          url: "../assets/images/commons/jstalin-secretary-general-cccp-1942-4a754d.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:JStalin_Secretary_general_CCCP_1942.jpg"
         }
       },
@@ -199,7 +199,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Migrant Mother, 1936",
           caption: "Dorothea Lange's 'Migrant Mother', the human face of the crisis that forced every kind of government to answer the same question.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Lange-MigrantMother02.jpg",
+          url: "../assets/images/commons/lange-migrantmother02-99276b.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Lange-MigrantMother02.jpg"
         }
       }
@@ -208,7 +208,7 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Map: The Interwar World, c. 1936",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png",
+    url: "../assets/images/commons/world-1936-empires-colonies-territory-6d7758.png",
     sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.png",
     caption: "The world of the mid-1930s, empires, new states, and rival economic systems, all working through the same global depression.",
     intro: "Use the map to see why the Depression was global and the answers were national: a worldwide trading system collapsed together, but each state, the United States, Italy, the Soviet Union, Brazil, Mexico, answered inside its own borders and ideology.",
@@ -235,28 +235,28 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "Crowd outside the New York Stock Exchange, October 1929",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Crowd_outside_nyse.jpg",
+      url: "../assets/images/commons/crowd-outside-nyse-dd023c.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Crowd_outside_nyse.jpg",
       caption: "Wall Street, October 1929, the crash that triggered the global Depression.",
       prompt: "What does this photograph capture about the onset of the crisis, and why did a crash in New York become a worldwide depression?"
     },
     {
       title: "Migrant Mother, 1936",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Lange-MigrantMother02.jpg",
+      url: "../assets/images/commons/lange-migrantmother02-99276b.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Lange-MigrantMother02.jpg",
       caption: "Dorothea Lange's photograph of Florence Owens Thompson, commissioned by a New Deal agency to document the Depression.",
       prompt: "This image was made FOR the government (a New Deal documentary project). How does that sourcing shape what it shows, and what does it reveal about why governments felt compelled to act?"
     },
     {
       title: "Signing of the Social Security Act, 1935",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Signing_Of_The_Social_Security_Act.jpg",
+      url: "../assets/images/commons/signing-of-the-social-security-act-7d6214.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Signing_Of_The_Social_Security_Act.jpg",
       caption: "FDR signs Social Security into law, democratic government taking a permanent role in economic life.",
       prompt: "How does this image document KC-6.3.I.B, governments taking 'a more active role in economic life', within a democracy rather than a dictatorship?"
     },
     {
       title: "Joseph Stalin",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/JStalin_Secretary_general_CCCP_1942.jpg",
+      url: "../assets/images/commons/jstalin-secretary-general-cccp-1942-4a754d.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:JStalin_Secretary_general_CCCP_1942.jpg",
       caption: "Stalin, the Five-Year Plans put the whole Soviet economy under state command.",
       prompt: "Pair this portrait with what you know of collectivization and the Holodomor: what did total state control of an economy cost the population it claimed to serve?"

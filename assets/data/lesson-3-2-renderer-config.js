@@ -69,16 +69,16 @@
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Istanbul_asv2020-02_img19_Topkap%C4%B1_Palace.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Suleiman_the_Magnificent_of_the_Ottoman_Empire.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Safavid_Empire%2C_circa_1630.png',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_Bosphorus.JPG',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Shah_Abbas_I.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Qianlong_Emperor.jpg'
+    map:             '../assets/images/commons/mughal-empire-1700-29dcf3.png',
+    first10:         '../assets/images/commons/court-of-akbar-from-akbarnama-8879e4.jpg',
+    contentDelivery: '../assets/images/commons/istanbul-asv2020-02-img19-topkap-palace-ff3642.jpg',
+    beSurreal:       '../assets/images/commons/suleiman-the-magnificent-of-the-ottoman-empire-fb65d7.jpg',
+    skill:           '../assets/images/commons/rise-and-fall-of-the-ottoman-empire-1300-1923-0cf219.gif',
+    checkpoint1:     '../assets/images/commons/map-of-the-safavid-empire-circa-1630-5b6cf1.png',
+    evidence:        '../assets/images/commons/topkapi-palace-bosphorus-ef2576.jpg',
+    source:          '../assets/images/commons/shah-abbas-i-f097b8.jpg',
+    beInTheRoom:     '../assets/images/commons/1700-ce-world-map-1696ff.png',
+    checkpoint2:     '../assets/images/commons/qianlong-emperor-1e7a96.jpg'
   };
 
   lesson.beInTheRoom = {

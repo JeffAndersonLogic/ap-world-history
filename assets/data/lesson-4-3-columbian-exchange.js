@@ -141,7 +141,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "A Nahua Healer and Smallpox Patients",
           caption: "From Book 12 of the Florentine Codex, painted by Nahua artists and completed about 1577, decades after the 1520 epidemic.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Healer%20%28ticitl%29%20tending%20to%20people%20suffering%20from%20smallpox%20in%201520%20in%20Book%2012%20of%20the%20Florentine%20Codex%2C%201577.jpg?width=1200",
+          url: "../assets/images/commons/healer-ticitl-tending-to-people-suffering-from-smallpox-in-1520-in-boo-fccef7.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Healer_(ticitl)_tending_to_people_suffering_from_smallpox_in_1520_in_Book_12_of_the_Florentine_Codex%2C_1577.jpg"
         }
       },
@@ -172,7 +172,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "\"Turkie Corne\" in an English Herbal, 1597",
           caption: "A page of John Gerard's herbal, printed in London in 1597, picturing maize under the name \"Turkie Corne.\"",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Frumentum%20turcicum%20Gerard%201597%2075.png?width=1200",
+          url: "../assets/images/commons/frumentum-turcicum-gerard-1597-75-42395d.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Frumentum_turcicum_Gerard_1597_75.png"
         }
       }

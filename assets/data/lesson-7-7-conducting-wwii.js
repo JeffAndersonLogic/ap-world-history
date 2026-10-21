@@ -112,7 +112,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Heimler's History — AP World Topic 7.7",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+7.7+Conducting+World+War+II",
-        previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG",
+        previewImage: "../assets/images/commons/infobox-collage-for-wwii-33f084.png",
         prompt: "Watch for how Britain, the United States, Germany, and the USSR each used propaganda, media, and nationalism to mobilize populations and resources, the difference between democratic and totalitarian mobilization, and how the atomic bomb and fire-bombing increased wartime casualties."
       }
     ],
@@ -128,7 +128,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "World War II — montage of the global conflict",
           caption: "The second total war, every major power mobilized propaganda, media, nationalism, and its whole economy, but democracies and dictatorships mobilized differently.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG",
+          url: "../assets/images/commons/infobox-collage-for-wwii-33f084.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.PNG"
         }
       },
@@ -143,7 +143,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Winston Churchill, 1941",
           caption: "Churchill, whose wartime speeches mobilized British resilience, a democracy waging total war through persuasion, film, and radio.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sir_Winston_Churchill_-_19086236948.jpg",
+          url: "../assets/images/commons/sir-winston-churchill-19086236948-3e1dab.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Sir_Winston_Churchill_-_19086236948.jpg"
         }
       },
@@ -173,7 +173,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Adolf Hitler",
           caption: "Hitler's Germany, Goebbels's Ministry of Propaganda controlled all media, while forced labor and conscription mobilized society at the cost of individual freedom.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg",
+          url: "../assets/images/commons/bundesarchiv-bild-183-s33882-adolf-hitler-retouched-8a4d19.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg"
         }
       },
@@ -188,7 +188,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Joseph Stalin",
           caption: "Stalin's USSR, the Great Patriotic War narrative, propaganda, political repression, and a command economy bent entirely to military production.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/JStalin_Secretary_general_CCCP_1942.jpg",
+          url: "../assets/images/commons/jstalin-secretary-general-cccp-1942-4a754d.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:JStalin_Secretary_general_CCCP_1942.jpg"
         }
       },
@@ -203,7 +203,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Atomic bombing of Nagasaki, 1945",
           caption: "The mushroom cloud over Nagasaki, the atomic bomb, fire-bombing, and total war put civilians inside the target zone and drove casualties beyond even WWI.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Nagasakibomb.jpg",
+          url: "../assets/images/commons/nagasakibomb-3298c4.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Nagasakibomb.jpg"
         }
       },
@@ -218,7 +218,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "World War II — montage of the global conflict",
           caption: "Same toolkit, different limits, all four powers mobilized propaganda, media, and nationalism, but only the totalitarian states repressed basic freedoms to do it.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG",
+          url: "../assets/images/commons/infobox-collage-for-wwii-33f084.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.PNG"
         }
       }
@@ -254,28 +254,28 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "World War II — montage of the global conflict",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG",
+      url: "../assets/images/commons/infobox-collage-for-wwii-33f084.png",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.PNG",
       caption: "The second total war, fought by societies fully mobilized for the front.",
       prompt: "The CED says 'World War II was a total war.' What does it mean for a war to be 'total,' and how is that visible in the scale of this conflict?"
     },
     {
       title: "Winston Churchill, 1941",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sir_Winston_Churchill_-_19086236948.jpg",
+      url: "../assets/images/commons/sir-winston-churchill-19086236948-3e1dab.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Sir_Winston_Churchill_-_19086236948.jpg",
       caption: "Churchill, a democracy mobilizing through speeches, film, and radio rather than coercion.",
       prompt: "Churchill and Roosevelt mobilized free publics; Hitler and Stalin controlled theirs. What can a democracy do to mobilize that a dictatorship cannot, and vice versa?"
     },
     {
       title: "Adolf Hitler",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg",
+      url: "../assets/images/commons/bundesarchiv-bild-183-s33882-adolf-hitler-retouched-8a4d19.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg",
       caption: "Hitler's Germany, Goebbels's Ministry of Propaganda and the repression that defines totalitarian mobilization.",
       prompt: "The CED says totalitarian states used ideology 'to repress basic freedoms and dominate many aspects of daily life.' How does that distinguish German and Soviet mobilization from British and American?"
     },
     {
       title: "Atomic bombing of Nagasaki, 1945",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Nagasakibomb.jpg",
+      url: "../assets/images/commons/nagasakibomb-3298c4.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Nagasakibomb.jpg",
       caption: "The atomic bomb, new military technology that drove wartime casualties to unprecedented levels.",
       prompt: "How do the atomic bomb and fire-bombing illustrate the second Key Concept, that new technology and tactics 'led to increased levels of wartime casualties' by putting civilians inside the target zone?"

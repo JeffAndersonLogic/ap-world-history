@@ -99,7 +99,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Heimler's History — AP World Topic 7.2",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+7.2+Causes+of+World+War+I",
-        previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/Map_Europe_alliances_1914-en.svg",
+        previewImage: "../assets/images/commons/map-europe-alliances-1914-en-45b938.svg",
         prompt: "Watch for how imperialist competition, regional conflicts, the alliance system, and nationalism combined to escalate a regional crisis into global war."
       }
     ],
@@ -114,7 +114,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "European alliances, 1914",
           caption: "The European alliance blocs on the eve of war, a continent wired to explode.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Map_Europe_alliances_1914-en.svg",
+          url: "../assets/images/commons/map-europe-alliances-1914-en-45b938.svg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Map_Europe_alliances_1914-en.svg"
         }
       },
@@ -128,7 +128,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "The Rhodes Colossus",
           caption: "Punch's 1892 cartoon of Cecil Rhodes astride Africa, imperial ambition as the great powers' shared obsession.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png",
+          url: "../assets/images/commons/punch-rhodes-colossus-8330fa.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Punch_Rhodes_Colossus.png"
         }
       },
@@ -142,7 +142,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "European alliances, 1914",
           caption: "Southeastern Europe on the alliance map, small Balkan states wedged between Austria-Hungary, Russia, and the retreating Ottomans.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Map_Europe_alliances_1914-en.svg",
+          url: "../assets/images/commons/map-europe-alliances-1914-en-45b938.svg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Map_Europe_alliances_1914-en.svg"
         }
       },
@@ -156,7 +156,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "The assassination at Sarajevo",
           caption: "Achille Beltrame's contemporary illustration of the assassination of Archduke Franz Ferdinand, 28 June 1914, the spark in the powder keg.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/DC-1914-27-d-Sarajevo.jpg",
+          url: "../assets/images/commons/dc-1914-27-d-sarajevo-ba0790.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:DC-1914-27-d-Sarajevo.jpg"
         }
       },
@@ -170,7 +170,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "European alliances, 1914",
           caption: "Triple Alliance vs. Triple Entente, the chain of commitments that turned a Balkan quarrel into a general European war.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Map_Europe_alliances_1914-en.svg",
+          url: "../assets/images/commons/map-europe-alliances-1914-en-45b938.svg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Map_Europe_alliances_1914-en.svg"
         }
       },
@@ -185,7 +185,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "The Rhodes Colossus",
           caption: "Imperial swagger in cartoon form, the same national pride that drove the Scramble for Africa drove the arms race of 1914.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png",
+          url: "../assets/images/commons/punch-rhodes-colossus-8330fa.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Punch_Rhodes_Colossus.png"
         }
       },
@@ -200,7 +200,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "The assassination at Sarajevo",
           caption: "The spark, read against the powder: two deaths in Sarajevo, and a continent already primed to turn them into millions.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/DC-1914-27-d-Sarajevo.jpg",
+          url: "../assets/images/commons/dc-1914-27-d-sarajevo-ba0790.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:DC-1914-27-d-Sarajevo.jpg"
         }
       }
@@ -209,7 +209,7 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Map: The European Alliance System, 1914",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Map_Europe_alliances_1914-en.svg",
+    url: "../assets/images/commons/map-europe-alliances-1914-en-45b938.svg",
     sourceUrl: "https://commons.wikimedia.org/wiki/File:Map_Europe_alliances_1914-en.svg",
     caption: "Europe's rival alliance blocs on the eve of World War I, the Triple Alliance and the Triple Entente, with the Balkans wedged between empires.",
     intro: "Use the map to see why a regional crisis could not stay regional: two armed blocs faced each other across the continent, and the Balkan states sat in the most contested space in Europe.",
@@ -236,28 +236,28 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "European alliances, 1914",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Map_Europe_alliances_1914-en.svg",
+      url: "../assets/images/commons/map-europe-alliances-1914-en-45b938.svg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Map_Europe_alliances_1914-en.svg",
       caption: "The Triple Alliance and Triple Entente blocs on the eve of war.",
       prompt: "What does this map reveal about why a conflict between Austria-Hungary and Serbia could not stay a regional conflict?"
     },
     {
       title: "The Rhodes Colossus",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png",
+      url: "../assets/images/commons/punch-rhodes-colossus-8330fa.png",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Punch_Rhodes_Colossus.png",
       caption: "Punch cartoon (1892) of Cecil Rhodes spanning Africa, imperial ambition made visible.",
       prompt: "How does this cartoon serve as evidence that imperialist expansion and competition for resources raised tensions among European powers?"
     },
     {
       title: "The assassination at Sarajevo",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/DC-1914-27-d-Sarajevo.jpg",
+      url: "../assets/images/commons/dc-1914-27-d-sarajevo-ba0790.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:DC-1914-27-d-Sarajevo.jpg",
       caption: "Contemporary illustration of Gavrilo Princip's assassination of Archduke Franz Ferdinand, 28 June 1914.",
       prompt: "Why is this event best described as the spark rather than the cause of World War I? What evidence would you pair with this image to make that argument?"
     },
     {
       title: "Empires and colonies of the world, 1898",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png",
+      url: "../assets/images/commons/world-1898-empires-colonies-territory-8ea39f.png",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1898_empires_colonies_territory.png",
       caption: "The colonial world the great powers were competing over at the turn of the century.",
       prompt: "Using this map, explain what European powers were actually competing FOR, and why that competition followed them home to Europe."

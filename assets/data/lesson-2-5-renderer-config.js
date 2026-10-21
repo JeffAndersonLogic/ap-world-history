@@ -21,13 +21,13 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg',
+    map: '../assets/images/commons/silk-road-trade-c-1200-ce-f26179.jpg',
     first10: '../assets/images/module-art/unit-2/topic-2-5/first10.svg',
     contentDelivery: '../assets/images/module-art/unit-2/topic-2-5/contentdelivery.svg',
     beSurreal: '../assets/images/module-art/unit-2/topic-2-5/besurreal.svg',
     skill: '../assets/images/module-art/unit-2/topic-2-5/skill.svg',
     checkpoint1: '../assets/images/module-art/unit-2/topic-2-5/checkpoint1.svg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
+    evidence: '../assets/images/commons/tabularogeriana-637cf9.jpg',
     source: '../assets/images/module-art/unit-2/topic-2-5/source.svg',
     beInTheRoom: '../assets/images/module-art/unit-2/topic-2-5/beintheroom.svg',
     checkpoint2: '../assets/images/module-art/unit-2/topic-2-5/checkpoint2.svg'
@@ -100,19 +100,19 @@
   lesson.images = [
     {
       title: 'The Diamond Sutra, Printed 868, Found at Dunhuang',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Diamond%20Sutra%20of%20868%20AD%20-%20The%20Diamond%20Sutra%20%28868%29%2C%20frontispiece%20and%20text%20-%20BL%20Or.%208210-P.2.jpg?width=1200',
+      url: '../assets/images/commons/diamond-sutra-of-868-ad-the-diamond-sutra-868-frontispiece-and-text-bl-d86033.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Diamond_Sutra_of_868_AD_-_The_Diamond_Sutra_%28868%29%2C_frontispiece_and_text_-_BL_Or._8210-P.2.jpg',
       caption: 'A Buddhist scripture first written in India, here in the Chinese translation made around 400 by Kumarajiva, a monk from the Silk Road oasis of Kucha. This copy was printed from carved wooden blocks in 868 and found sealed in a cave at the Mogao Caves, Dunhuang, in 1900. It is the earliest dated printed book known, made more than three centuries before this period.',
       prompt: 'NOTICE the writing, the picture, and how the page was made. What can you INFER about how Buddhism, a religion that began in India, took root in China? Because this book is older than 1200, what can it show about the period 1200 to 1450, and what can it not?'
     },
     {
       title: 'Yuan Paper Money and Its Printing Plate, 1287',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yuan%20dynasty%20banknote%20with%20its%20printing%20plate%201287.jpg?width=1200',
+      url: '../assets/images/commons/yuan-dynasty-banknote-with-its-printing-plate-1287-63bd2b.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Yuan_dynasty_banknote_with_its_printing_plate_1287.jpg',
       caption: 'A paper banknote issued in 1287 by the Yuan dynasty, the Mongol rulers of China, shown with its wooden printing plate. Its text, in Chinese and in the Mongols\' new \'Phags-pa script, sets its value at two strings of coins and threatens counterfeiters with death. Paper money had first come into use in China under the Song dynasty in the 1000s.',
       prompt: 'NOTICE the plate, the two kinds of writing, and the warning to counterfeiters. What can you INFER about how the Mongols used a Chinese technology to run their empire? When the Mongol ruler of Persia tried paper money in 1294, merchants refused it within months: what does that suggest about moving a technology to a new place?'
     },
-  { title: 'The Mongol Siege of Baghdad, 1258', url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bagdad1258.jpg', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bagdad1258.jpg', caption: 'Painting from a Persian history manuscript made about 1430 to 1434, nearly two centuries after the event, showing Mongol forces besieging Baghdad. Baghdad had been the capital of the Abbasid Caliphate and one of the great centers of learning in the Islamic world.', prompt: 'NOTICE the walls, the river, and the siege weapons. What can you INFER about how a rich, connected city could be exposed to conquest? Because the artist worked long after 1258, what can this picture prove, and what can it not?' },
-  { title: 'A Caravan on the Catalan Atlas, 1375', url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Caravane_Marco_Polo.jpg', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Caravane_Marco_Polo.jpg', caption: 'Detail of the Catalan Atlas, a world map made in Majorca in 1375 and attributed to the mapmaker Abraham Cresques. It shows a caravan of riders and camels crossing Asia, a scene often connected with the Polo family\'s journey.', prompt: 'NOTICE who is traveling and how they are moving. What can you INFER about how European mapmakers learned about Asia by 1375? What does a map made in Majorca suggest about how far travel accounts had spread?' }
+  { title: 'The Mongol Siege of Baghdad, 1258', url: '../assets/images/commons/bagdad1258-6f93c7.jpg', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bagdad1258.jpg', caption: 'Painting from a Persian history manuscript made about 1430 to 1434, nearly two centuries after the event, showing Mongol forces besieging Baghdad. Baghdad had been the capital of the Abbasid Caliphate and one of the great centers of learning in the Islamic world.', prompt: 'NOTICE the walls, the river, and the siege weapons. What can you INFER about how a rich, connected city could be exposed to conquest? Because the artist worked long after 1258, what can this picture prove, and what can it not?' },
+  { title: 'A Caravan on the Catalan Atlas, 1375', url: '../assets/images/commons/caravane-marco-polo-f0cc15.jpg', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Caravane_Marco_Polo.jpg', caption: 'Detail of the Catalan Atlas, a world map made in Majorca in 1375 and attributed to the mapmaker Abraham Cresques. It shows a caravan of riders and camels crossing Asia, a scene often connected with the Polo family\'s journey.', prompt: 'NOTICE who is traveling and how they are moving. What can you INFER about how European mapmakers learned about Asia by 1375? What does a map made in Majorca suggest about how far travel accounts had spread?' }
 ];
 })();

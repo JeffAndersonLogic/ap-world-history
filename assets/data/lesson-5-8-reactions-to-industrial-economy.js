@@ -111,7 +111,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Power-loom weaving, 1835",
           caption: "The factory floor is where the labor movement began: shared hours, shared grievances, and enough workers in one room to organize.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg",
+          url: "../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Powerloom_weaving_in_1835.jpg"
         }
       },
@@ -141,7 +141,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "A Court for King Cholera, Punch, 1852",
           caption: "Public-health reform grew directly out of scenes like this one: reformers argued that epidemics were a policy failure, not fate.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png",
+          url: "../assets/images/commons/punch-a-court-for-king-cholera-24597e.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Punch-A_Court_for_King_Cholera.png"
         }
       }

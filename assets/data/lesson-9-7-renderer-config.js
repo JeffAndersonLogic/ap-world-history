@@ -40,7 +40,7 @@
   lesson.images = [
     {
       "title": "Marchers at the WTO ministerial, Seattle, 1999",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/WTO_Protests-Seattle-Marchers-29Nov1999.jpg",
+      "url": "../assets/images/commons/wto-protests-seattle-marchers-29nov1999-5a3fe3.jpg",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:WTO_Protests-Seattle-Marchers-29Nov1999.jpg",
       "caption": "Photograph of the Seattle protests, November 1999. Labor unions, environmental groups and human-rights organizations marched together.",
       "prompt": "NOTICE what the banners and the marchers indicate about who turned out. INFER what such different groups thought they shared. What does a photograph of a march not tell you about whether it achieved anything?"

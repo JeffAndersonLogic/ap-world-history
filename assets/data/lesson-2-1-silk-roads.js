@@ -114,7 +114,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Silk Road routes across Afro-Eurasia',
           caption: 'The Silk Roads were a network of routes, nodes, markets, and stopping points, not one continuous road.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+          url: '../assets/images/commons/silk-route-6f0173.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg'
         }
       },
@@ -128,7 +128,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Chinese porcelain for export',
           caption: 'A blue-and-white plate made at the Jingdezhen kilns in the mid-1300s, under the Yuan. Porcelain like this shows both demand and expanded production for long-distance trade.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jingdezhen%20blue%20and%20white%20plate%20Yuan%20period%20mid%2014th%20century.jpg',
+          url: '../assets/images/commons/jingdezhen-blue-and-white-plate-yuan-period-mid-14th-century-85e35a.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Jingdezhen_blue_and_white_plate_Yuan_period_mid_14th_century.jpg'
         }
       },
@@ -143,7 +143,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Caravanserai courtyard',
           caption: 'The Sa\'d al-Saltaneh caravanserai in Qazvin, Iran. This building dates from the 1800s, but it keeps the plan caravanserai had used along trade routes for centuries: they turned long journeys into manageable stages.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Caravanserai%20of%20Sa%27d%20al-Saltaneh%20in%20Qazvin.jpg',
+          url: '../assets/images/commons/caravanserai-of-sa-d-al-saltaneh-in-qazvin-87dee6.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Caravanserai_of_Sa%27d_al-Saltaneh_in_Qazvin.jpg'
         }
       },
@@ -157,7 +157,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Samarkand as a Silk Roads hub',
           caption: 'Samarkand matters because it is evidence that trade networks create powerful urban nodes.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Registan%20square%20Samarkand.jpg',
+          url: '../assets/images/commons/registan-square-samarkand-29049e.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Registan_square_Samarkand.jpg'
         }
       }
@@ -166,7 +166,7 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: 'Silk Road Routes Across Afro-Eurasia',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+    url: '../assets/images/commons/silk-route-6f0173.jpg',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg',
     caption: 'The overland Silk Roads connected East Asia, Central Asia, Southwest Asia, and the Mediterranean through a network of routes and cities.',
     intro: 'Use the map to show why Central Asian nodes mattered. Do not teach the map as a line to memorize. Teach it as a system of routes, stopping points, cities, commercial practices, and political jurisdictions.',

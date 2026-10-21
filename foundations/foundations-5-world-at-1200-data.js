@@ -4,7 +4,7 @@ window.FOUNDATION_TOPIC = {
   code: 'FOUNDATIONS 5',
   title: 'The World at c.1200 / Thinking Like a Historian',
   subtitle: 'What does the world look like at c.1200, and how do historians explain it?',
-  heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/China_-_Song_Dynasty-en.svg',
+  heroImage: '../assets/images/commons/china-song-dynasty-en-b0bd31.svg',
 
   commandCopy: 'Day 5 serves two purposes simultaneously: it builds the baseline snapshot of the world at c.1200 CE that students need as a reference point for all of AP World, and it introduces the AP historical thinking skills explicitly, not as vocabulary to memorize but as moves that have been embedded in everything students did on Days 1 through 4 without being named. The goal is for students to leave Foundations understanding both the historical content (what the world looked like at c.1200) and the analytical toolkit (how historians explain it). Everything from here forward is application of these foundations.',
 
@@ -112,14 +112,14 @@ window.FOUNDATION_TOPIC = {
     items: [
       {
         title: 'Along the River During the Qingming Festival (Song China, c.1085–1145 CE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Song_Imperial_Examination.JPG',
+        url: '../assets/images/commons/song-imperial-examination-c3124e.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Song_Imperial_Examination.JPG',
         caption: 'Candidates sitting the imperial examinations. Song China recruited officials by tested merit, an unusual answer to the problem of staffing a state.',
         prompt: 'Using this image as visual evidence and at least one specific fact from Foundations Days 1–4, write a claim about what made Song China commercially distinctive at c.1200. Explain the reasoning that connects your evidence to your claim.'
       },
       {
         title: 'The Song imperial examinations',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Kairouan,_prayer_hall.jpg',
+        url: '../assets/images/commons/great-mosque-of-kairouan-prayer-hall-71521a.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Kairouan,_prayer_hall.jpg',
         caption: 'The prayer hall at Kairouan, founded 670 CE, anchors North Africa inside the wider Islamic world by c.1200.',
         prompt: 'Using this image as visual evidence and at least one specific fact from Foundations Day 2 (Belief Systems), write a claim about how Islam functioned as a social institution in Dar al-Islam at c.1200. Explain the reasoning that connects your evidence to your claim.'
@@ -184,7 +184,7 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'Song Dynasty Map',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/China_-_Song_Dynasty-en.svg',
+        url: '../assets/images/commons/china-song-dynasty-en-b0bd31.svg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:China_-_Song_Dynasty-en.svg',
         caption: 'Song China at c.1200 is the AP World starting point, and the clearest example of how geography, belief systems, state power, and trade networks combined to produce the most commercially sophisticated economy on earth at this moment in history.'
       }
@@ -201,7 +201,7 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'Jiaozi paper money, Song China',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jiao_zi.jpg',
+        url: '../assets/images/commons/jiao-zi-535f72.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Jiao_zi.jpg',
         caption: 'Song China issued the world\'s first government paper money. It is the fastest evidence that this was a commercialized economy, not just a large one.'
       }
@@ -219,7 +219,7 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'Kilwa Kisiwani, Swahili coast',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_Kilwa_Kisiwani_Tanzania.jpg',
+        url: '../assets/images/commons/great-mosque-kilwa-kisiwani-tanzania-fc1f42.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Great_Mosque_Kilwa_Kisiwani_Tanzania.jpg',
         caption: 'The coral-stone mosque at Kilwa shows an African port city grown wealthy on Indian Ocean trade by c.1200.'
       }
@@ -238,7 +238,7 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'Angkor Wat, Khmer Empire',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Angkor_Wat.jpg',
+        url: '../assets/images/commons/angkor-wat-a59ab1.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Angkor_Wat.jpg',
         caption: 'Angkor Wat, completed c.1150, shows a Southeast Asian state organizing enormous labor around water control and religious authority.'
       }

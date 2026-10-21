@@ -49,16 +49,16 @@
 
   // ── Module-card images. INDUSTRIAL-THEMED CANDIDATES; verified/falled-back in Step 8. ──
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png'
+    map:             '../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg',
+    first10:         '../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg',
+    contentDelivery: '../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg',
+    beSurreal:       '../assets/images/commons/punch-a-court-for-king-cholera-24597e.png',
+    skill:           '../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg',
+    checkpoint1:     '../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg',
+    evidence:        '../assets/images/commons/punch-a-court-for-king-cholera-24597e.png',
+    source:          '../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg',
+    beInTheRoom:     '../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg',
+    checkpoint2:     '../assets/images/commons/punch-a-court-for-king-cholera-24597e.png'
   };
 
   lesson.beInTheRoom = {
@@ -113,14 +113,14 @@
   lesson.images = [
     {
       title: 'Manchester from Kersal Moor',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg',
+      url: '../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg',
       caption: 'Painting by William Wyld, 1852, commissioned view of Manchester from the moor: goats and shepherds in the foreground, the city\'s chimneys behind.',
       prompt: 'NOTICE what the painter has put in the foreground and what he has put on the horizon. INFER what a patron in 1852 wanted this city to look like. What does a commissioned landscape not show about living in it?'
     },
     {
       title: '“A Court for King Cholera”',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png',
+      url: '../assets/images/commons/punch-a-court-for-king-cholera-24597e.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Punch-A_Court_for_King_Cholera.png',
       caption: 'Cartoon published in Punch, 1852, depicting a slum courtyard during a cholera epidemic. Satire aimed at a middle-class readership.',
       prompt: 'NOTICE what the cartoonist chooses to show about the courtyard. INFER what its readers were being asked to feel, and to do. Set it beside the Wyld painting: same decade, same country, opposite argument. Which is evidence of what?'

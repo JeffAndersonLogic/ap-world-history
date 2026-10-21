@@ -72,16 +72,16 @@
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg'
+    map:             '../assets/images/commons/loren-mozley-pueblo-revolt-1680-installed-1936-abq-nm-73e5bf.jpg',
+    first10:         '../assets/images/commons/casta-painting-all-bdc286.jpg',
+    contentDelivery: '../assets/images/commons/1700-ce-world-map-1696ff.png',
+    beSurreal:       '../assets/images/commons/waldseemuller-map-2-f5c64b.jpg',
+    skill:           '../assets/images/commons/columbus-taking-possession-d0d171.jpg',
+    checkpoint1:     '../assets/images/commons/florentinecodex-bk12-f54-smallpox-6163e9.jpg',
+    evidence:        '../assets/images/commons/pillar-of-vasco-da-gama-1533aa.jpg',
+    source:          '../assets/images/commons/ferdinand-magellan-9de032.jpg',
+    beInTheRoom:     '../assets/images/commons/voc-faaae0.jpg',
+    checkpoint2:     '../assets/images/commons/astrolabe-persian-18c-8ebe5d.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -153,7 +153,7 @@
     },
     {
       title: 'The Bastille falls, 14 July 1789',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Prise_de_la_Bastille.jpg',
+      url: '../assets/images/commons/prise-de-la-bastille-a02dc7.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Prise_de_la_Bastille.jpg',
       caption: 'Watercolour by Jean-Pierre Houël, made in 1789, the year of the event. The Bastille was a royal prison and armoury holding seven prisoners that day.',
       prompt: 'NOTICE who is shown doing the fighting, and what kind of building is under attack. INFER what the attackers wanted from this particular target rather than from the monarchy in general. What can a picture made in the same year show you that a painting produced fifty years later could not?'

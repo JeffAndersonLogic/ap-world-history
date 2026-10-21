@@ -3,16 +3,16 @@
   if (!lesson) return;
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Maqama_06_the_Governor_of_Maraghah.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Qadi_Abbasid_-_Maqamat_Harir_1237.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/A_Library_in_Golden_Islamic_Age.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Maqama_43_Abu_Zayd_and_al-Harith_travelling.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Sultan_Ahmed_Mosque_Istanbul_Turkey_retouched.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Maqamat_al-Hariri%2C_folio_86r_(detail).jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Al-Aqsa_mosque_%288682155875%29.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Ruler_in_Turkic_dress_(long_braids%2C_fur_hat%2C_boots%2C_fitting_coat)%2C_in_the_Maqamat_of_al-Hariri%2C_1237_CE%2C_probably_Baghdad.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Possible_depiction_of_al-Hariri%2C_in_the_Maqamat_of_al-Hariri%2C_1237_CE%2C_probably_Baghdad.jpg'
+    map:             '../assets/images/commons/tabularogeriana-637cf9.jpg',
+    first10:         '../assets/images/commons/maqama-06-the-governor-of-maraghah-d42fe5.jpg',
+    contentDelivery: '../assets/images/commons/qadi-abbasid-maqamat-harir-1237-d931a1.jpg',
+    beSurreal:       '../assets/images/commons/a-library-in-golden-islamic-age-18e804.jpg',
+    skill:           '../assets/images/commons/maqama-43-abu-zayd-and-al-harith-travelling-7392f0.jpg',
+    checkpoint1:     '../assets/images/commons/sultan-ahmed-mosque-istanbul-turkey-retouched-97dd83.jpg',
+    evidence:        '../assets/images/commons/maqamat-al-hariri-folio-86r-detail-ed5e27.jpg',
+    source:          '../assets/images/commons/al-aqsa-mosque-8682155875-d008c6.jpg',
+    beInTheRoom:     '../assets/images/commons/ruler-in-turkic-dress-long-braids-fur-hat-boots-fitting-coat-in-the-ma-f6ce4e.jpg',
+    checkpoint2:     '../assets/images/commons/possible-depiction-of-al-hariri-in-the-maqamat-of-al-hariri-1237-ce-pr-880649.jpg'
   };
   lesson.collegeBoardKeyConcepts = [
     {
@@ -57,7 +57,7 @@
       title: 'Sufism and the Spread of Islam',
       url: 'https://youtu.be/yD4vvlPMQrw',
       youtubeId: 'yD4vvlPMQrw',
-      previewImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Maqama_43_Abu_Zayd_and_al-Harith_travelling.jpg',
+      previewImage: '../assets/images/commons/maqama-43-abu-zayd-and-al-harith-travelling-7392f0.jpg',
       prompt: 'Watch for how Sufi beliefs, practices, and personal religious networks helped Islam spread across diverse societies.'
     });
   }
@@ -85,28 +85,28 @@
   lesson.images = [
     {
       title: "Al-Idrisi's Tabula Rogeriana, 1154",
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
+      url: '../assets/images/commons/tabularogeriana-637cf9.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:TabulaRogeriana.jpg',
       caption: 'Intellectual-network evidence. Al-Idrisi, a Muslim geographer, produced this world map in Sicily in 1154 for the Norman king Roger II, shortly before the period studied in Topic 1.2.',
       prompt: 'NOTICE one feature showing the geographic range of knowledge represented here. What can you INFER about scholarly exchange across political and religious boundaries? How could this establish continuity into c. 1200–1450?'
     },
     {
       title: 'Governor of Maragha, Maqamat Manuscript',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Maqama_06_the_Governor_of_Maraghah.jpg',
+      url: '../assets/images/commons/maqama-06-the-governor-of-maraghah-d42fe5.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Maqama_06_the_Governor_of_Maraghah.jpg',
       caption: 'Political and social evidence. An illustration from a 13th-century Maqamat manuscript depicting a governor and courtly setting in the Islamic world.',
       prompt: 'NOTICE a detail about the ruler, attendants, or court setting. What can you INFER about regional political authority after Abbasid fragmentation? What claim would require additional evidence about the Seljuks, Mamluks, or Delhi Sultanate?'
     },
     {
       title: 'Maqamat of al-Hariri, Baghdad, 1237',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Maqamat_al-Hariri%2C_folio_86r_%28detail%29.jpg',
+      url: '../assets/images/commons/maqamat-al-hariri-folio-86r-detail-ed5e27.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Maqamat_al-Hariri%2C_folio_86r_%28detail%29.jpg',
       caption: 'Literary and urban evidence. A manuscript illustration produced in Baghdad in 1237, during a period of political fragmentation in the wider Islamic world.',
       prompt: 'NOTICE one detail that suggests literacy, artistic production, travel, or urban life. What does that allow you to INFER about cultural vitality despite political fragmentation?'
     },
     {
       title: 'Mansa Musa in the Catalan Atlas, 1375',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',
+      url: '../assets/images/commons/catalan-atlas-bnf-sheet-6-mansa-musa-ec09cc.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',
       caption: 'Network evidence. A European-produced map from 1375 depicts the Muslim ruler Mansa Musa of Mali holding gold, showing how information about Islamic West Africa circulated far beyond Mali.',
       prompt: 'NOTICE how Mansa Musa is represented. What can you INFER about the reach of trade, Islam, and reputation networks? What does the European origin of the map mean you should be cautious about claiming?'

@@ -95,7 +95,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Grain silos at Puerto Madero, Buenos Aires, c. 1900',
           caption: "British capital financed Argentina's docks and railways. Economic imperialism could direct an economy without formal colonial rule.",
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Puerto_madero_silos_1900.jpg',
+          url: '../assets/images/commons/puerto-madero-silos-1900-fec157.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Puerto_madero_silos_1900.jpg'
         }
       },
@@ -292,7 +292,7 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: 'British investment in the port of Buenos Aires',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Puerto_madero_silos_1900.jpg',
+      url: '../assets/images/commons/puerto-madero-silos-1900-fec157.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Puerto_madero_silos_1900.jpg',
       caption: 'British investment in the port of Buenos Aires helps explain how institutions and local choices shaped this global pattern. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does British investment in the port of Buenos Aires support or complicate a claim about economic imperialism?'

@@ -296,7 +296,7 @@
       label: 'Module 02',
       title: 'Content Delivery',
       desc: 'Jump to the concept cards: four effect categories, Eastern Hemisphere patterns, Western Hemisphere patterns, and how to write the extent thesis.',
-      img: 'https://commons.wikimedia.org/wiki/Special:FilePath/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg',
+      img: '../assets/images/commons/west-and-east-germans-at-the-brandenburg-gate-in-1989-97f976.jpg',
       jump: '#lecture'
     },
     {
@@ -312,7 +312,7 @@
       label: 'Module 04',
       title: 'Hemispheric Effects Matrix',
       desc: 'Complete the four-row matrix (economic, political, social, cultural effects × Eastern/Western hemispheres), rate each row, then draft your extent thesis.',
-      img: 'https://commons.wikimedia.org/wiki/Special:FilePath/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg',
+      img: '../assets/images/commons/west-and-east-germans-at-the-brandenburg-gate-in-1989-97f976.jpg',
       render: function () { return renderMatrix89(); }
     },
     {
@@ -320,7 +320,7 @@
       label: 'Module 05',
       title: 'AP Skill Builder',
       desc: 'LEQ construction: plan contextualization, thesis degree claim, two evidence paragraphs (one per hemisphere), and the complexity move.',
-      img: 'https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_%281985%29.jpg',
+      img: '../assets/images/commons/reagan-and-gorbachev-1985-c49072.jpg',
       render: function () { return renderSkill(); }
     },
     {
@@ -353,14 +353,14 @@
     },
     {
       title: 'Reagan and Gorbachev, Geneva, 1985',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_%281985%29.jpg',
+      url: '../assets/images/commons/reagan-and-gorbachev-1985-c49072.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Reagan_and_Gorbachev_%281985%29.jpg',
       caption: 'Photograph of the first meeting between the two leaders, November 1985.',
       prompt: 'NOTICE how the two men are positioned and what the setting is doing. INFER what the photograph was meant to communicate to each domestic audience. How can a bilateral meeting be evidence about effects felt in countries not in the room?'
     },
     {
       title: 'Berliners at the Brandenburg Gate, 1989',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg',
+      url: '../assets/images/commons/west-and-east-germans-at-the-brandenburg-gate-in-1989-97f976.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg',
       caption: 'Photograph of East and West Germans at the Brandenburg Gate after the border opened, November 1989.',
       prompt: 'NOTICE who is in the crowd and what they are doing. INFER which effects of the Cold War\'s end this image can carry: political, social, or cultural. Which of the three does it evidence least well?'

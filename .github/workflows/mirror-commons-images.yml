@@ -9,9 +9,6 @@ name: Mirror Commons images
 
 on:
   workflow_dispatch:
-  push:
-    branches: [claude/hopeful-allen-hkh9sd]
-    paths: ['.github/workflows/mirror-commons-images.yml']
 
 permissions:
   contents: write

@@ -106,7 +106,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Heimler's History — AP World Topic 7.5",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+7.5+Unresolved+Tensions+After+World+War+I",
-        previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/Big_four.jpg",
+        previewImage: "../assets/images/commons/big-four-f2dee7.jpg",
         prompt: "Watch for how the League of Nations mandate system transferred former German and Ottoman territories to Britain and France, how Japan expanded through Manchukuo and the Greater East Asia Co-Prosperity Sphere, and how the Indian National Congress and West African resistance challenged imperial rule."
       }
     ],
@@ -122,7 +122,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "The Council of Four at the Paris Peace Conference, 1919",
           caption: "The victors redraw the map, Lloyd George, Orlando, Clemenceau, and Wilson at the Paris Peace Conference that distributed the defeated empires' territories.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Big_four.jpg",
+          url: "../assets/images/commons/big-four-f2dee7.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Big_four.jpg"
         }
       },
@@ -137,7 +137,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Imperial holdings of the interwar world, c. 1936",
           caption: "After 1919 the defeated empires' colonies did not become independent, they were redistributed among the victors as League of Nations mandates.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png",
+          url: "../assets/images/commons/world-1936-empires-colonies-territory-6d7758.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.png"
         }
       },
@@ -152,7 +152,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Sykes-Picot Agreement map, signed 8 May 1916",
           caption: "The secret Anglo-French map that carved up the Ottoman Middle East into spheres of control, borders drawn without regard to the peoples who lived inside them.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg",
+          url: "../assets/images/commons/mpk1-426-sykes-picot-agreement-map-signed-8-may-1916-530830.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg"
         }
       },
@@ -167,7 +167,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Flag of Manchukuo",
           caption: "The flag of Manchukuo, the puppet state Japan carved from Manchuria in 1932, expanding empire by conquest under the banner of a 'Co-Prosperity Sphere.'",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Manchukuo.svg",
+          url: "../assets/images/commons/flag-of-manchukuo-808278.svg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Flag_of_Manchukuo.svg"
         }
       },
@@ -182,7 +182,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Mohandas K. Gandhi, 1931",
           caption: "Gandhi, whose mass campaigns turned the Indian National Congress into a movement capable of challenging British imperial control across a subcontinent.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mahatma-Gandhi,_studio,_1931.jpg",
+          url: "../assets/images/commons/mahatma-gandhi-studio-1931-84dac4.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Mahatma-Gandhi,_studio,_1931.jpg"
         }
       },
@@ -197,7 +197,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Blaise Diagne",
           caption: "Blaise Diagne of Senegal, emblem of the educated West African elite whose strikes, congresses, and political organizing challenged French colonial rule between the wars.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Blaise_Diagne-1921.jpg",
+          url: "../assets/images/commons/blaise-diagne-1921-776e22.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Blaise_Diagne-1921.jpg"
         }
       },
@@ -212,7 +212,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Imperial holdings of the interwar world, c. 1936",
           caption: "One map, two truths: imperial control predominantly maintained (continuity) even as mandates redrew borders and resistance movements built pressure (change).",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png",
+          url: "../assets/images/commons/world-1936-empires-colonies-territory-6d7758.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.png"
         }
       }
@@ -221,7 +221,7 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Map: Empires and Mandates, c. 1936",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png",
+    url: "../assets/images/commons/world-1936-empires-colonies-territory-6d7758.png",
     sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.png",
     caption: "The interwar world, defeated empires' colonies redistributed to the victors as mandates, Japanese expansion in East Asia, and colonized peoples organizing for self-determination.",
     intro: "Use the map to test the Learning Objective: where did territorial holdings change between the wars, and where did imperial control simply continue under a new name? Trace the former German and Ottoman territories to their new mandate holders, and watch Japan expand in the northeast.",
@@ -248,28 +248,28 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "The Council of Four at the Paris Peace Conference, 1919",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Big_four.jpg",
+      url: "../assets/images/commons/big-four-f2dee7.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Big_four.jpg",
       caption: "Lloyd George, Orlando, Clemenceau, and Wilson, the victors who redistributed the defeated empires' territories.",
       prompt: "These four men redrew the world's map. What does it reveal that the future of colonized peoples in Africa, the Middle East, and Asia was decided in this room, and not by those peoples themselves?"
     },
     {
       title: "Imperial holdings of the interwar world, c. 1936",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png",
+      url: "../assets/images/commons/world-1936-empires-colonies-territory-6d7758.png",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.png",
       caption: "The interwar world, empires maintained, mandates redistributed, and Japanese expansion in East Asia.",
       prompt: "Compare this map to the empires that collapsed in Topic 7.1. What CHANGED in territorial holdings by 1936, and what was simply MAINTAINED under a new name?"
     },
     {
       title: "Sykes-Picot Agreement map, signed 8 May 1916",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg",
+      url: "../assets/images/commons/mpk1-426-sykes-picot-agreement-map-signed-8-may-1916-530830.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg",
       caption: "The secret Anglo-French agreement carving the Ottoman Middle East into British and French spheres of control.",
       prompt: "Borders here were drawn without regard to ethnic and sectarian boundaries. How does this map help explain why mandate-era decisions 'sowed future conflict'?"
     },
     {
       title: "Mohandas K. Gandhi, 1931",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mahatma-Gandhi,_studio,_1931.jpg",
+      url: "../assets/images/commons/mahatma-gandhi-studio-1931-84dac4.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Mahatma-Gandhi,_studio,_1931.jpg",
       caption: "Gandhi, the Indian National Congress turned mass anti-imperial resistance into a force the British Empire could not ignore.",
       prompt: "If imperial control was 'predominantly maintained' between the wars, what does the rise of the Indian National Congress reveal about the change building beneath that continuity?"

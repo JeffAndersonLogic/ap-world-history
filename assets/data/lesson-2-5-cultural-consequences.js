@@ -114,7 +114,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Afro-Eurasian exchange routes',
           caption: 'Trade routes carried cultural traditions as well as commodities.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg',
+          url: '../assets/images/commons/silk-road-trade-c-1200-ce-f26179.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_Road_Trade_%28c.1200_CE%29.jpg'
         }
       },
@@ -128,7 +128,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Mongol-era Eurasian connectivity',
           caption: 'Political and commercial connections across Eurasia accelerated technological transfer.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg',
+          url: '../assets/images/commons/yuanemperoralbumgenghisportrait-a39370.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg'
         }
       },
@@ -142,7 +142,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'The Mongol siege of Baghdad, 1258',
           caption: 'A Persian manuscript painting made about 1430, long after the event. Baghdad had grown rich and famous at the center of connected networks, and in 1258 it fell to Mongol armies: connected cities could rise and could also fall.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bagdad1258.jpg',
+          url: '../assets/images/commons/bagdad1258-6f93c7.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bagdad1258.jpg'
         }
       },
@@ -156,7 +156,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'A caravan on the Catalan Atlas, 1375',
           caption: 'Detail of a world map made in Majorca in 1375, showing a caravan crossing Asia. The mapmaker drew on travelers\' reports: travel accounts turned movement through networks into knowledge for people who never made the trip.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Caravane_Marco_Polo.jpg',
+          url: '../assets/images/commons/caravane-marco-polo-f0cc15.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Caravane_Marco_Polo.jpg'
         }
       }
@@ -165,7 +165,7 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: 'Map: Networks of Cultural Diffusion, c. 1200–1450',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_Trade_%28c.1200_CE%29.jpg',
+    url: '../assets/images/commons/silk-road-trade-c-1200-ce-f26179.jpg',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_Road_Trade_%28c.1200_CE%29.jpg',
     caption: 'Overland and maritime exchange networks created corridors for cultural traditions, technologies, and travelers to move across Afro-Eurasia.',
     intro: 'Use the map as a network map rather than a route-memorization exercise. Trace how a belief, a technology, or a traveler could move through connected cities and regions.',

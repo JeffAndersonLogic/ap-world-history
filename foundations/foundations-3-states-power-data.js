@@ -4,7 +4,7 @@ window.FOUNDATION_TOPIC = {
   code: 'FOUNDATIONS 3',
   title: 'States, Power & Social Organization',
   subtitle: 'How did classical states — Persia, Han China, Greece, and Rome — organize power, hierarchy, and legitimacy in different ways?',
-  heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Persepolis_stairs_of_the_Apadana_relief.jpg',
+  heroImage: '../assets/images/commons/persepolis-stairs-of-the-apadana-relief-5e30ff.jpg',
 
   commandCopy: 'The intellectual core of Day 3 is this claim: states are not natural, they are constructed solutions to specific problems. Every state must extract resources, defend territory, administer distant populations, and make its rule feel legitimate rather than coercive. Four classical civilizations answered these problems in strikingly different ways: Persia through tolerance and delegated satrapies, Han China through centralized bureaucracy and the Mandate of Heaven, Greece through citizen self-rule in the polis, and Rome through law and expanding citizenship. Students who can compare these four solutions can analyze any state they meet in AP World Units 1 through 9.',
 
@@ -152,14 +152,14 @@ window.FOUNDATION_TOPIC = {
     items: [
       {
         title: 'The Apadana at Persepolis (Achaemenid Persia, begun c.515 BCE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Apadana_Persepolis_Iran.JPG',
+        url: '../assets/images/commons/apadana-persepolis-iran-efb56d.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Apadana_Persepolis_Iran.JPG',
         caption: 'The Apadana was the great audience hall of the Persian kings at Persepolis, its columns rising over 19 meters. Carved along its staircases are delegations from every corner of the empire, Medes, Lydians, Sogdians, Nubians, bringing tribute to the King of Kings. The monument turned the empire\'s diversity into a display of the ruler\'s reach.',
         prompt: 'How did monumental architecture like the Apadana, and the tribute processions carved on it, help the Persian king solve the legitimacy problem across a vast, multiethnic empire?'
       },
       {
         title: 'The Code of Hammurabi (Babylon, c.1754 BCE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Code_of_Hammurabi_IMG_1936.JPG',
+        url: '../assets/images/commons/code-of-hammurabi-img-1936-4ea14e.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Code_of_Hammurabi_IMG_1936.JPG',
         caption: 'The Code of Hammurabi, carved on a 2.25-meter basalt stele and displayed publicly, contains 282 laws and shows Hammurabi receiving authority from the sun god Shamash. Its punishments varied by the social status of victim and offender, embedding hierarchy directly into law. Written law became a model that later states, including Rome, would develop far further.',
         prompt: 'How does a public written law code solve the legitimacy problem for a ruler? What does the variation in punishments by social status reveal about how hierarchy was built into the legal system itself?'
@@ -220,7 +220,7 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'Apadana Staircase Relief, Persepolis (Achaemenid Persia)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Persepolis_stairs_of_the_Apadana_relief.jpg',
+        url: '../assets/images/commons/persepolis-stairs-of-the-apadana-relief-5e30ff.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Persepolis_stairs_of_the_Apadana_relief.jpg',
         caption: 'Carved on the Apadana staircase at Persepolis, delegations from across the empire bring tribute to the Persian king. The relief turned imperial diversity into a monument of the King of Kings\' reach.'
       }
@@ -239,7 +239,7 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'Flying Horse of Gansu (Han Dynasty bronze, c.2nd century CE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Flying_Horse_of_Gansu.jpg',
+        url: '../assets/images/commons/flying-horse-of-gansu-30e29f.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Flying_Horse_of_Gansu.jpg',
         caption: 'The Flying Horse of Gansu, a Han bronze from a general\'s tomb, captures the cavalry power that let the Han project force along the Silk Roads. Han China answered the problem of scale with bureaucracy, roads, and armies.'
       }
@@ -258,7 +258,7 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'The Parthenon, Acropolis of Athens (completed c.432 BCE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Parthenon.jpg',
+        url: '../assets/images/commons/parthenon-e35a92.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Parthenon.jpg',
         caption: 'The Parthenon crowned the Acropolis of democratic Athens, a civic and religious monument built at the height of Athenian power. Greek city-states answered the problem of power by sharing it among citizens, though most residents were excluded.'
       }
@@ -277,7 +277,7 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'The Colosseum, Rome (completed c.80 CE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Colosseum_in_rome.jpg',
+        url: '../assets/images/commons/colosseum-in-rome-c3ad1d.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Colosseum_in_rome.jpg',
         caption: 'The Colosseum staged spectacles for tens of thousands of Roman citizens, entertainment as a tool of imperial legitimacy ("bread and circuses"). Rome answered the problem of power through law, citizenship, and the theater of empire.'
       }
@@ -297,7 +297,7 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'The Eastern Hemisphere in 200 CE (modern reference map)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/East-Hem_200ad.jpg',
+        url: '../assets/images/commons/east-hem-200ad-6e7140.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:East-Hem_200ad.jpg',
         caption: 'A modern reconstruction of the Eastern Hemisphere at 200 CE, drawn by Thomas Lessman. Read it left to right: the Roman Empire around the Mediterranean, the Parthian Empire on the Iranian plateau, the Kushan Empire across the northwest of South Asia, and the Han Dynasty in the east. Four classical experiments in organizing power, and a template for every state AP World will study.'
       }

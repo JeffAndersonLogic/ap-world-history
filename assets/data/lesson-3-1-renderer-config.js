@@ -56,16 +56,16 @@
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Suleiman_the_Magnificent_of_the_Ottoman_Empire.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Istanbul_asv2020-02_img19_Topkap%C4%B1_Palace.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Safavid_Empire%2C_circa_1630.png',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Shah_Abbas_I.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_Bosphorus.JPG',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Qianlong_Emperor.jpg'
+    map:             '../assets/images/commons/rise-and-fall-of-the-ottoman-empire-1300-1923-0cf219.gif',
+    first10:         '../assets/images/commons/suleiman-the-magnificent-of-the-ottoman-empire-fb65d7.jpg',
+    contentDelivery: '../assets/images/commons/1700-ce-world-map-1696ff.png',
+    beSurreal:       '../assets/images/commons/istanbul-asv2020-02-img19-topkap-palace-ff3642.jpg',
+    skill:           '../assets/images/commons/mughal-empire-1700-29dcf3.png',
+    checkpoint1:     '../assets/images/commons/court-of-akbar-from-akbarnama-8879e4.jpg',
+    evidence:        '../assets/images/commons/map-of-the-safavid-empire-circa-1630-5b6cf1.png',
+    source:          '../assets/images/commons/shah-abbas-i-f097b8.jpg',
+    beInTheRoom:     '../assets/images/commons/topkapi-palace-bosphorus-ef2576.jpg',
+    checkpoint2:     '../assets/images/commons/qianlong-emperor-1e7a96.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -127,14 +127,14 @@
   lesson.images = [
     {
       title: 'Dardanelles Gun, Ottoman Empire, 1464',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Turkish_Bombard_at_Fort_Nelson.JPG',
+      url: '../assets/images/commons/great-turkish-bombard-at-fort-nelson-d22476.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Great_Turkish_Bombard_at_Fort_Nelson.JPG',
       caption: 'Material military evidence. This surviving Ottoman bronze bombard was cast in 1464, shortly after the conquest of Constantinople, and represents the heavy siege-artillery tradition used by Ottoman rulers.',
       prompt: 'NOTICE the gun\'s physical scale and construction. What can you INFER about the resources, specialists, and logistics required to deploy artillery like this? What can the surviving weapon not prove about the exact siege of 1453?'
     },
     {
       title: 'First Battle of Panipat, 1526, Baburnama Illustration',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/1526-First_Battle_of_Panipat-Ibrahim_Lodhi_and_Babur.jpg',
+      url: '../assets/images/commons/1526-first-battle-of-panipat-ibrahim-lodhi-and-babur-1c47e6.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:1526-First_Battle_of_Panipat-Ibrahim_Lodhi_and_Babur.jpg',
       caption: 'Later Mughal visual evidence. A late-16th-century Baburnama illustration commemorates Babur\'s 1526 victory at Panipat, where field artillery and firearms helped establish Mughal rule in northern India.',
       prompt: 'NOTICE how troops, commanders, or weapons are represented. What can you INFER about how the Mughal court remembered military conquest? Why is a later court painting not a photograph of the 1526 battle?'
@@ -153,14 +153,14 @@
     },
     {
       title: 'Mughal Empire, c. 1700',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png',
+      url: '../assets/images/commons/mughal-empire-1700-29dcf3.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mughal_Empire_(1700).png',
       caption: 'Secondary geographic evidence. A reference map shows the territorial scale of the Mughal Empire near its greatest extent.',
       prompt: 'NOTICE the geographic reach of Mughal rule. What can you INFER about the challenge of conquering and governing such a large territory? What additional evidence would you need to connect this scale specifically to gunpowder weapons?'
     },
     {
       title: 'Safavid Empire, c. 1630',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Safavid_Empire%2C_circa_1630.png',
+      url: '../assets/images/commons/map-of-the-safavid-empire-circa-1630-5b6cf1.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Map_of_the_Safavid_Empire,_circa_1630.png',
       caption: 'Secondary geographic evidence. A reference map locates the Safavid Empire between major Ottoman, Mughal, and Central Asian powers.',
       prompt: 'NOTICE the Safavid state\'s position between rival empires. What can you INFER about why military technology and frontier defense mattered? What evidence would be needed to prove how religion affected those rivalries?'

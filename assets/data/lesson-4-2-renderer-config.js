@@ -68,14 +68,14 @@
 
   lesson.stableImages = {
     map:             '../assets/images/instructional-maps/topic-4-2.svg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg?width=1200',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg?width=1200',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg?width=1200',
+    first10:         '../assets/images/commons/vasco-da-gama-2ab6b1.jpg',
+    contentDelivery: '../assets/images/commons/pillar-of-vasco-da-gama-1533aa.jpg',
+    beSurreal:       '../assets/images/commons/columbus-taking-possession-d0d171.jpg',
     skill:           '../assets/images/instructional-maps/topic-4-2.svg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg?width=1200',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg?width=1200',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg?width=1200',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg?width=1200',
+    checkpoint1:     '../assets/images/commons/vasco-da-gama-2ab6b1.jpg',
+    evidence:        '../assets/images/commons/waldseemuller-map-2-f5c64b.jpg',
+    source:          '../assets/images/commons/columbus-taking-possession-d0d171.jpg',
+    beInTheRoom:     '../assets/images/commons/columbus-taking-possession-d0d171.jpg',
     checkpoint2:     '../assets/images/instructional-maps/topic-4-2.svg'
   };
 
@@ -131,21 +131,21 @@
   lesson.images = [
     {
       title: 'Vasco da Gama Pillar, Malindi',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg?width=1200',
+      url: '../assets/images/commons/pillar-of-vasco-da-gama-1533aa.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Pillar_of_Vasco_da_Gama.jpg',
       caption: 'A monument, in a modern photograph. Da Gama\'s fleet set up a stone marker at Malindi, on the coast of Kenya, in 1498 or 1499; the pillar has been moved, rebuilt and repaired since. Portuguese captains carried markers like this to claim routes for their king.',
       prompt: 'Open the picture full size. NOTICE the cross on top. What can you INFER about who the voyage was working for, and what it was claiming? What can this monument not tell you about how the ruler of Malindi saw the Portuguese?'
     },
     {
       title: 'Columbus Taking Possession, a Later Picture',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg?width=1200',
+      url: '../assets/images/commons/columbus-taking-possession-d0d171.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Columbus_Taking_Possession.jpg',
       caption: 'A color print published in 1893, four centuries after 1492, imagining Columbus claiming land in the Caribbean for the Spanish crown. It is a later memory of the event, not an eyewitness record.',
       prompt: 'NOTICE the flags and who stands at the center. Whose authority is the artist showing? What can you INFER about who the voyage was for? Why can a picture made centuries later not tell you what really happened that morning?'
     },
     {
       title: 'Waldseemüller World Map, 1507',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg?width=1200',
+      url: '../assets/images/commons/waldseemuller-map-2-f5c64b.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Waldseemuller_map_2.jpg',
       caption: 'A world map printed at Saint-Dié (today in France) in 1507, fifteen years after Columbus\'s first voyage. It used reports of the Spanish and Portuguese voyages and was the first map to name America.',
       prompt: 'NOTICE the new lands on the far left. What can you INFER about how quickly news of the voyages spread, and how it increased European interest in ocean travel? What can a map printed in Europe not tell you about the people who lived in those lands?'

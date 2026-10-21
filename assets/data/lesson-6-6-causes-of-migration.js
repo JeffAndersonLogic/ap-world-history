@@ -106,7 +106,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Register of indentured laborers aboard the Fatel Razack, 1845',
           caption: 'After abolition, plantations recruited indentured workers from India and China under contracts that limited pay, movement, and return.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Futtle_Rozack.jpg',
+          url: '../assets/images/commons/futtle-rozack-29ccff.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Futtle_Rozack.jpg'
         }
       },
@@ -303,7 +303,7 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: 'Chinese and Indian indentured labor',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Futtle_Rozack.jpg',
+      url: '../assets/images/commons/futtle-rozack-29ccff.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Futtle_Rozack.jpg',
       caption: 'Chinese and Indian indentured labor helps explain how institutions and local choices shaped this global pattern. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Chinese and Indian indentured labor support or complicate a claim about causes of migration?'

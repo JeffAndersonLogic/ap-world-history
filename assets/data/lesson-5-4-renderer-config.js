@@ -45,16 +45,16 @@
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg'
+    map:             '../assets/images/commons/ferdinand-magellan-9de032.jpg',
+    first10:         '../assets/images/commons/pillar-of-vasco-da-gama-1533aa.jpg',
+    contentDelivery: '../assets/images/commons/astrolabe-persian-18c-8ebe5d.jpg',
+    beSurreal:       '../assets/images/commons/columbus-taking-possession-d0d171.jpg',
+    skill:           '../assets/images/commons/loren-mozley-pueblo-revolt-1680-installed-1936-abq-nm-73e5bf.jpg',
+    checkpoint1:     '../assets/images/commons/waldseemuller-map-2-f5c64b.jpg',
+    evidence:        '../assets/images/commons/1700-ce-world-map-1696ff.png',
+    source:          '../assets/images/commons/florentinecodex-bk12-f54-smallpox-6163e9.jpg',
+    beInTheRoom:     '../assets/images/commons/casta-painting-all-bdc286.jpg',
+    checkpoint2:     '../assets/images/commons/voc-faaae0.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -147,7 +147,7 @@
     },
     {
       title: 'Tomioka Silk Mill',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Tomioka_Silk_Mill.JPG?width=1200',
+      url: '../assets/images/commons/tomioka-silk-mill-673d6a.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Tomioka_Silk_Mill.JPG',
       caption: 'The Japanese government’s model silk filature, opened in 1872 with French machinery, a French engineer and a largely female workforce. Photographed during the Meiji era by the Imperial Household Ministry.',
       prompt: 'NOTICE the construction: the brick, the window rhythm, the length of the range. INFER what the Meiji state was importing besides machinery, and what it wanted the mill to demonstrate beyond producing silk. The government commissioned this photograph of its own model factory: what would it not tell you about the ordinary ones?'

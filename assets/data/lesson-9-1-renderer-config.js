@@ -70,16 +70,16 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Atwater_Kent_Radios_-1927A.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Norman_Borlaug.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Anacortes_Refinery_31911.JPG',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Norman_Borlaug.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Norman_Borlaug.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Norman_Borlaug.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chernobyl_Nuclear_Power_Plant%2C_April_1997.jpg'
+    map: '../assets/images/commons/container-ship-hanjin-taipei-508dd2.jpg',
+    first10: '../assets/images/commons/atwater-kent-radios-1927a-e5d06e.jpg',
+    contentDelivery: '../assets/images/commons/container-ship-hanjin-taipei-508dd2.jpg',
+    beSurreal: '../assets/images/commons/container-ship-hanjin-taipei-508dd2.jpg',
+    skill: '../assets/images/commons/norman-borlaug-de735e.jpg',
+    checkpoint1: '../assets/images/commons/anacortes-refinery-31911-65b28a.jpg',
+    evidence: '../assets/images/commons/norman-borlaug-de735e.jpg',
+    source: '../assets/images/commons/norman-borlaug-de735e.jpg',
+    beInTheRoom: '../assets/images/commons/norman-borlaug-de735e.jpg',
+    checkpoint2: '../assets/images/commons/chernobyl-nuclear-power-plant-april-1997-147851.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -143,21 +143,21 @@
   lesson.images = [
     {
       title: 'Early Radio Broadcast, 1920s',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Atwater_Kent_Radios_-1927A.jpg',
+      url: '../assets/images/commons/atwater-kent-radios-1927a-e5d06e.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Atwater_Kent_Radios_-1927A.jpg',
       caption: 'Radio brought news, entertainment, and government messages into millions of homes for the first time, collapsing the distance between states and citizens.',
       prompt: 'How did radio change the relationship between governments and the people they governed? What new possibilities, and risks, did instant mass communication create?'
     },
     {
       title: 'Green Revolution Wheat Field, India',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Norman_Borlaug.jpg',
+      url: '../assets/images/commons/norman-borlaug-de735e.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Norman_Borlaug.jpg',
       caption: 'Norman Borlaug\'s high-yield wheat varieties transformed Indian agriculture, but at the cost of chemical dependence and the displacement of smallholder farmers.',
       prompt: 'What is the strongest evidence that the Green Revolution succeeded? What is the strongest evidence that it created problems it did not intend to create?'
     },
     {
       title: 'Chernobyl Nuclear Power Plant',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chernobyl_Nuclear_Power_Plant%2C_April_1997.jpg',
+      url: '../assets/images/commons/chernobyl-nuclear-power-plant-april-1997-147851.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Chernobyl_Nuclear_Power_Plant%2C_April_1997.jpg',
       caption: 'The Chernobyl disaster (1986) exposed the catastrophic risks of nuclear power, an energy technology that had promised abundant, clean electricity.',
       prompt: 'How does Chernobyl illustrate the TEC thematic focus, that technological advances shape human development with both intended and unintended consequences?'

@@ -116,7 +116,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Power-loom weaving, 1835",
           caption: "Steam-driven looms moved textile work out of homes and into factories, and put the pace of work under the machine's control.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg",
+          url: "../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Powerloom_weaving_in_1835.jpg"
         }
       },
@@ -132,7 +132,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "A Court for King Cholera, Punch, 1852",
           caption: "Industrial cities grew faster than sanitation. Overcrowding and contaminated water made epidemics a predictable feature of factory towns.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png",
+          url: "../assets/images/commons/punch-a-court-for-king-cholera-24597e.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Punch-A_Court_for_King_Cholera.png"
         }
       }

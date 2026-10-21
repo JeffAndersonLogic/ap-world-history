@@ -114,7 +114,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Africa after the partition, 1910',
           caption: 'Twenty-five years after the Berlin Conference, almost the whole continent is drawn into European colonies. Compare the pace of this with expansion elsewhere.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_Colonial_Africa_in_1913.png',
+          url: '../assets/images/commons/map-of-colonial-africa-in-1913-c75bfc.png',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Map_of_Colonial_Africa_in_1913.png'
         }
       },

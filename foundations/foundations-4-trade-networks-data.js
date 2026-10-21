@@ -4,7 +4,7 @@ window.FOUNDATION_TOPIC = {
   code: 'FOUNDATIONS 4',
   title: 'Trade Networks & Innovation',
   subtitle: 'How do trade networks transform societies?',
-  heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+  heroImage: '../assets/images/commons/silk-route-6f0173.jpg',
 
   commandCopy: 'The single most important intellectual move in Day 4 is getting students past the idea that trade routes move goods. Trade routes are systems of human interaction that transform everything they touch. A Sogdian merchant carrying silk from Chang\'an to Samarkand is also carrying Tang court aesthetics, Buddhist monastery patronage networks, zoonotic diseases from densely populated Chinese cities, and, depending on who they are, Zoroastrian ritual practices. The goods are the most visible layer. The invisible layers are often historically more consequential. Students who understand this can analyze any trade network in AP World with real depth.',
 
@@ -41,7 +41,7 @@ window.FOUNDATION_TOPIC = {
 
   map: {
     title: 'Map: Silk Roads and Afro-Eurasian Trade Networks',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+    url: '../assets/images/commons/silk-route-6f0173.jpg',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg',
     caption: 'The Silk Road network was not one road, it was a branching system of overland and maritime routes connecting China, Central Asia, Persia, the Mediterranean, and India. The map shows the geographic logic: routes follow the path of least resistance through mountain passes, oasis towns, and navigable seas.',
     desc: 'Use this map as a trade network analyst: identify the chokepoints (where routes narrow and whoever controls them collects tolls), the relay stations (oasis cities where goods changed hands), and the junction points (where overland and maritime systems connected).',
@@ -117,14 +117,14 @@ window.FOUNDATION_TOPIC = {
     items: [
       {
         title: 'Song Dynasty Celadon Found at Kilwa, East Africa',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Song_dynasty_bowl,_stoneware_with_celadon_glaze,_Honolulu_Museum_of_Art_3752.1.JPG',
+        url: '../assets/images/commons/song-dynasty-bowl-stoneware-with-celadon-glaze-honolulu-museum-of-art-cb213f.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Song_dynasty_bowl,_stoneware_with_celadon_glaze,_Honolulu_Museum_of_Art_3752.1.JPG',
         caption: 'Chinese celadon pottery from the Song Dynasty (960–1279 CE) has been excavated at Kilwa on the East African coast, more than 7,000 km from its origin. Chinese porcelain sherds are among the most reliable markers of Indian Ocean trade connections: they are durable, identifiable by kiln and period, and found at virtually every Indian Ocean port city that participated in the network. Their presence at Kilwa proves not just that goods traveled but that the Song Dynasty\'s merchant fleet was actively participating in Indian Ocean commerce.',
         prompt: 'What does the presence of Song Dynasty celadon at Kilwa prove about the Indian Ocean trade system? What else, beyond porcelain, was likely moving along the same routes that carried this pottery from China to East Africa?'
       },
       {
         title: 'Dunhuang Mogao Cave Buddhist Art (Silk Road, c.4th–14th centuries CE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mural_of_Buddha_in_Mogao_Caves,_Dunhuang.jpg',
+        url: '../assets/images/commons/mural-of-buddha-in-mogao-caves-dunhuang-c422da.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mural_of_Buddha_in_Mogao_Caves,_Dunhuang.jpg',
         caption: 'The Mogao Caves at Dunhuang, an oasis city on the Silk Road in northwestern China, contain 492 temple caves decorated with Buddhist murals and sculptures commissioned by Silk Road merchants between the 4th and 14th centuries CE. Merchants funded the caves as acts of religious patronage, seeking divine protection for their dangerous journeys. The caves document 1,000 years of Silk Road cultural exchange: artistic styles from India, Central Asia, Persia, and China blend in a single location. The caves were sealed around 1000 CE and rediscovered in 1900, preserving the world\'s largest repository of early printed books and manuscripts.',
         prompt: 'The Dunhuang caves were funded by merchants, not monks or emperors. What does this reveal about the relationship between trade and the spread of Buddhism? How does this evidence challenge the assumption that religious diffusion and commercial exchange were separate processes?'
@@ -184,7 +184,7 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'Silk Road Map',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+        url: '../assets/images/commons/silk-route-6f0173.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg',
         caption: 'The Silk Road network shows the geographic logic of relay trade: oasis cities at regular intervals across the Tarim Basin served as nodes where goods changed hands, merchants rested, and cultural exchange happened. Notice how the overland branches meet the maritime lanes, the two systems in this map are one system in practice.'
       }
@@ -201,7 +201,7 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'Mansa Musa on the Catalan Atlas (1375 CE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',
+        url: '../assets/images/commons/catalan-atlas-bnf-sheet-6-mansa-musa-ec09cc.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',
         caption: 'The 1375 Catalan Atlas shows Mali\'s Mansa Musa enthroned with a gold nugget while a camel-mounted Saharan trader approaches, the trans-Saharan gold trade as medieval Europe pictured it. The map is later than this unit, which is the point: by the time Europe drew West Africa, it drew it as the place the gold came from.'
       }
@@ -239,7 +239,7 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'Ship carved on the Borobudur temple, Java (c. 8th to 9th centuries CE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Borobudur%20ship.JPG',
+        url: '../assets/images/commons/borobudur-ship-49cab9.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Borobudur_ship.JPG',
         caption: 'A relief carved on Borobudur in central Java shows an ocean-going outrigger of the kind Austronesian sailors used across the Indian Ocean, complete with rigging, steering oars, and outrigger booms. It is a reminder that maritime technology in this network was not one invention from one place: Arab sewn dhows, Javanese outriggers, Chinese junks, and the lateen sail all worked the same water.'
       }
@@ -270,7 +270,7 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'Travelers on the Road, Mogao Cave 103, Dunhuang (712 to 765)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Xuanzang_returned_from_India._Dunhuang_mural%2C_Cave_103._High_Tang_period_%28712-765%29..jpg',
+        url: '../assets/images/commons/xuanzang-returned-from-india-dunhuang-mural-cave-103-high-tang-period-0b6552.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Xuanzang_returned_from_India._Dunhuang_mural,_Cave_103._High_Tang_period_%28712-765%29..jpg',
         caption: 'Travelers lead a loaded elephant through the mountains in this Tang dynasty painting from Mogao Cave 103, made between 712 and 765, often identified as the monk Xuanzang returning from India with Buddhist scriptures. The Mogao Caves at Dunhuang, funded by Silk Road merchants seeking protection on the road, are the clearest visual proof that trade networks moved religion. A merchant who paid for a cave painting was buying spiritual insurance, buying into a Buddhist community that spanned the route, and leaving evidence that would survive 1,600 years for historians to read.'
       }

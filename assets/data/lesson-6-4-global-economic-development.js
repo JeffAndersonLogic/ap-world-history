@@ -88,7 +88,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Tapping rubber',
           caption: 'Industrial demand for rubber reorganized whole regions around a single export crop, in the Amazon and in the Congo.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
+          url: '../assets/images/commons/rubber-tapping-98c7aa.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Rubber_tapping.jpg'
         }
       },
@@ -285,7 +285,7 @@ window.BEHISTORICAL_LESSON = {
     },
     {
       title: 'Rubber extraction in the Amazon and Congo',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg',
+      url: '../assets/images/commons/rubber-tapping-98c7aa.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Rubber_tapping.jpg',
       caption: 'Rubber extraction in the Amazon and Congo helps explain how institutions and local choices shaped this global pattern. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Rubber extraction in the Amazon and Congo support or complicate a claim about global economic development?'

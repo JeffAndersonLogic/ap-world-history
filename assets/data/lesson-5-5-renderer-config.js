@@ -47,16 +47,16 @@
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg'
+    map:             '../assets/images/commons/waldseemuller-map-2-f5c64b.jpg',
+    first10:         '../assets/images/commons/casta-painting-all-bdc286.jpg',
+    contentDelivery: '../assets/images/commons/loren-mozley-pueblo-revolt-1680-installed-1936-abq-nm-73e5bf.jpg',
+    beSurreal:       '../assets/images/commons/astrolabe-persian-18c-8ebe5d.jpg',
+    skill:           '../assets/images/commons/pillar-of-vasco-da-gama-1533aa.jpg',
+    checkpoint1:     '../assets/images/commons/columbus-taking-possession-d0d171.jpg',
+    evidence:        '../assets/images/commons/ferdinand-magellan-9de032.jpg',
+    source:          '../assets/images/commons/florentinecodex-bk12-f54-smallpox-6163e9.jpg',
+    beInTheRoom:     '../assets/images/commons/1700-ce-world-map-1696ff.png',
+    checkpoint2:     '../assets/images/commons/voc-faaae0.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -118,7 +118,7 @@
     },
     {
       title: 'A Bessemer converter in operation',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bessemer_converter.jpg?width=1200',
+      url: '../assets/images/commons/bessemer-converter-440883.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bessemer_converter.jpg',
       caption: 'The vessel that made bulk steel cheap by blowing air through molten iron. Steel fell from a specialty metal to a structural one within a generation.',
       prompt: 'NOTICE the scale of the vessel against the people working near it. INFER what changed about what could now be built, and about what the work was like. What does the photograph not show you about who owned it?'
@@ -135,7 +135,7 @@
     },
     {
       title: 'A medal struck for the opening of the Suez Canal',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Inauguration_et_ouverture_%C3%A0_la_navigation_du_Canal_de_Suez%2C_17_novembre_1869%2C_ND314.jpg?width=1200',
+      url: '../assets/images/commons/inauguration-et-ouverture-a-la-navigation-du-canal-de-suez-17-novembre-adac37.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Inauguration_et_ouverture_%C3%A0_la_navigation_du_Canal_de_Suez%2C_17_novembre_1869%2C_ND314.jpg',
       caption: 'A commemorative medal by the French medallist Charles Trotin, about 1869, 7.3 cm across. Struck to mark the inauguration of 17 November 1869.',
       prompt: 'NOTICE what is shown on the medal, and what language it is inscribed in. INFER who had it struck, for whom, and whose achievement it says the canal was. The canal was cut through Egyptian territory by Egyptian labour: what does an object like this leave out, and why would it?'

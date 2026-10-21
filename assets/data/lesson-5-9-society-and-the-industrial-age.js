@@ -113,8 +113,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Manchester from Kersal Moor (William Wyld)",
           caption: "A nineteenth-century view of Manchester, the archetypal industrial city, its skyline crowded with factory chimneys. The new class structure of the industrial age was most visible in cities like this, where factory owners and the workers they employed lived very different lives within the same smoke-filled landscape.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg"
+          url: "../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg"
         }
       },
       {
@@ -127,8 +127,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Power-loom weaving, 1835",
           caption: "Women operating power looms in a textile mill, c. 1835. Working-class women's wage labor was central to the family economy of the industrial age, and a sharp contrast to the household-confined ideal expected of middle-class women.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg"
+          url: "../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Powerloom_weaving_in_1835.jpg"
         }
       },
       {
@@ -141,8 +141,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "A Court for King Cholera (Punch, 1852)",
           caption: "A satirical illustration of an overcrowded, filthy urban court, the kind of densely packed, poorly drained neighborhood where cholera and typhoid spread. Images like this dramatized the public health crises that accompanied rapid industrial urbanization.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png"
+          url: "../assets/images/commons/punch-a-court-for-king-cholera-24597e.png",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Punch-A_Court_for_King_Cholera.png"
         }
       }
     ]

@@ -111,16 +111,16 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   stableImages: {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png'
+    map:             '../assets/images/commons/blankmap-world-83e1ca.svg',
+    first10:         '../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg',
+    contentDelivery: '../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg',
+    beSurreal:       '../assets/images/commons/punch-a-court-for-king-cholera-24597e.png',
+    skill:           '../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg',
+    checkpoint1:     '../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg',
+    evidence:        '../assets/images/commons/punch-a-court-for-king-cholera-24597e.png',
+    source:          '../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg',
+    beInTheRoom:     '../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg',
+    checkpoint2:     '../assets/images/commons/punch-a-court-for-king-cholera-24597e.png'
   },
 
   map: {
@@ -170,8 +170,8 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Power-loom weaving, 1835",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg",
+          url: "../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Powerloom_weaving_in_1835.jpg",
           caption: "Mechanized textile production is core evidence for economic change (KC-5.1)."
         }
       },
@@ -184,8 +184,8 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Manchester from Kersal Moor (William Wyld)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg",
+          url: "../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg",
           caption: "Industrial cities and networks remade where and how people lived and connected (KC-5.1.IV)."
         }
       },
@@ -198,8 +198,8 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "A Court for King Cholera (Punch, 1852)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png",
+          url: "../assets/images/commons/punch-a-court-for-king-cholera-24597e.png",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Punch-A_Court_for_King_Cholera.png",
           caption: "Sharp inequality between classes was a continuity industrialization intensified rather than erased."
         }
       },
@@ -212,8 +212,8 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Manchester from Kersal Moor (William Wyld)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg",
+          url: "../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg",
           caption: "Political and ideological currents from the 1700s continued to drive change long into the industrial age."
         }
       },
@@ -311,15 +311,15 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "Mechanized textile mill, 1835",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg",
+      url: "../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Powerloom_weaving_in_1835.jpg",
       caption: "Evidence of economic and technological change (KC-5.1).",
       prompt: "Is this stronger evidence for change or continuity? Defend your choice."
     },
     {
       title: "Industrial Manchester (William Wyld)",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg",
-      sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg",
+      url: "../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg",
       caption: "The reshaped industrial landscape (KC-5.1.IV).",
       prompt: "What part of your extent argument could this image support?"
     }

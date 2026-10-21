@@ -135,7 +135,7 @@ window.BEHISTORICAL_LESSON = {
   },
   map: {
     title: 'Mapping Causation in the Imperial Age',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
+    url: '../assets/images/commons/world-1898-empires-colonies-territory-8ea39f.png',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_1898_empires_colonies_territory.png',
     caption: 'Locate the regions connected to Economic extraction and infrastructure, State expansion and resistance, Migration and diaspora, Cultural justification and racial hierarchy.',
     intro: 'Geography shaped access to resources, markets, transport routes, and state power. Use the map to connect location to historical process.',

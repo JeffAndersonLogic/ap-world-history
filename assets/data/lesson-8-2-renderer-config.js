@@ -54,16 +54,16 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Berlinermauer.jpg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Berlinermauer.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Marshall_Plan.png',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Berlinermauer.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yalta_Conference_%28Churchill%2C_Roosevelt%2C_Stalin%29_%28B%26W%29.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yalta_Conference_%28Churchill%2C_Roosevelt%2C_Stalin%29_%28B%26W%29.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Marshall_Plan.png',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Atlantic_charter.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kwame_Nkrumah.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Berlinermauer.jpg'
+    map: '../assets/images/commons/berlinermauer-159a22.jpg',
+    first10: '../assets/images/commons/berlinermauer-159a22.jpg',
+    contentDelivery: '../assets/images/commons/marshall-plan-d5371c.png',
+    beSurreal: '../assets/images/commons/berlinermauer-159a22.jpg',
+    skill: '../assets/images/commons/yalta-conference-churchill-roosevelt-stalin-b-w-ac0276.jpg',
+    checkpoint1: '../assets/images/commons/yalta-conference-churchill-roosevelt-stalin-b-w-ac0276.jpg',
+    evidence: '../assets/images/commons/marshall-plan-d5371c.png',
+    source: '../assets/images/commons/atlantic-charter-fceaef.jpg',
+    beInTheRoom: '../assets/images/commons/kwame-nkrumah-abea09.jpg',
+    checkpoint2: '../assets/images/commons/berlinermauer-159a22.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -107,21 +107,21 @@
   lesson.images = [
     {
       title: 'The Marshall Plan, 1948',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Marshall_Plan.png',
+      url: '../assets/images/commons/marshall-plan-d5371c.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Marshall_Plan.png',
       caption: 'The Marshall Plan (1948) committed $13 billion in U.S. aid to rebuild Western Europe, and to anchor it within the American sphere of influence.',
       prompt: 'Is the Marshall Plan best understood as American generosity, American strategy, or both? What does this source reveal about how the U.S. used economic power as an instrument of Cold War competition?'
     },
     {
       title: 'The Berlin Wall, 1961',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Berlinermauer.jpg',
+      url: '../assets/images/commons/berlinermauer-159a22.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Berlinermauer.jpg',
       caption: 'The Berlin Wall, built in 1961, became the most visible symbol of the Iron Curtain, dividing communist East Germany from capitalist West Berlin.',
       prompt: 'What does the Berlin Wall reveal about the nature of the Cold War divide? How does a physical wall embody the ideological conflict between capitalism and communism?'
     },
     {
       title: 'Kwame Nkrumah, Ghana, 1957',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kwame_Nkrumah.jpg',
+      url: '../assets/images/commons/kwame-nkrumah-abea09.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Kwame_Nkrumah.jpg',
       caption: 'Kwame Nkrumah led Ghana to independence in 1957 and became one of the founding voices of the Non-Aligned Movement.',
       prompt: 'How does Nkrumah\'s background, colonial subject, pan-Africanist, leader of the first sub-Saharan African independent state, shape his position on Cold War superpower rivalry?'
