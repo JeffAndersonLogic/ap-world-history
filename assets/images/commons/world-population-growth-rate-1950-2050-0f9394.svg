@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/), then trimmed down -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:version="0.32"
+   inkscape:version="0.47 r22583"
+   width="1900"
+   height="900"
+   version="1.0"
+   id="svg2"
+   sodipodi:docname="World_population_increase_history.svg">
+  <metadata
+     id="metadata94">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs92">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 450 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1200 : 450 : 1"
+       inkscape:persp3d-origin="600 : 300 : 1"
+       id="perspective96" />
+    <inkscape:perspective
+       id="perspective2949"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1150"
+     id="namedview90"
+     showgrid="false"
+     inkscape:zoom="0.95789474"
+     inkscape:cx="950"
+     inkscape:cy="450"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1"
+     d="m 134.68529,32.950676 1700.36511,0 0,758.038754 -1700.36511,0 0,-758.038754 z"
+     id="rect4"
+     sodipodi:nodetypes="ccccc" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line8"
+     y2="65.782379"
+     x2="134.68701"
+     y1="65.782379"
+     x1="143.10493" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line10"
+     y2="131.72289"
+     x2="134.68701"
+     y1="131.72289"
+     x1="143.10493" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line12"
+     y2="197.66339"
+     x2="134.68701"
+     y1="197.66339"
+     x1="143.10493" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line14"
+     y2="263.60388"
+     x2="134.68701"
+     y1="263.60388"
+     x1="143.10493" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line16"
+     y2="329.54443"
+     x2="134.68701"
+     y1="329.54443"
+     x1="143.10493" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line18"
+     y2="395.48492"
+     x2="134.68701"
+     y1="395.48492"
+     x1="143.10493" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line20"
+     y2="461.42545"
+     x2="134.68701"
+     y1="461.42545"
+     x1="143.10493" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line22"
+     y2="65.782379"
+     x2="1826.6326"
+     y1="65.782379"
+     x1="1835.0504" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line24"
+     y2="131.72289"
+     x2="1826.6326"
+     y1="131.72289"
+     x1="1835.0504" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line26"
+     y2="197.66339"
+     x2="1826.6326"
+     y1="197.66339"
+     x1="1835.0504" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line28"
+     y2="263.60388"
+     x2="1826.6326"
+     y1="263.60388"
+     x1="1835.0504" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line30"
+     y2="329.54443"
+     x2="1826.6326"
+     y1="329.54443"
+     x1="1835.0504" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line32"
+     y2="395.48492"
+     x2="1826.6326"
+     y1="395.48492"
+     x1="1835.0504" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line34"
+     y2="461.42545"
+     x2="1826.6326"
+     y1="461.42545"
+     x1="1835.0504" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line36"
+     y2="33.34642"
+     x2="303.47931"
+     y1="41.764351"
+     x1="303.47931" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line38"
+     y2="33.34642"
+     x2="472.75012"
+     y1="41.764351"
+     x1="472.75012" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line40"
+     y2="33.34642"
+     x2="642.02094"
+     y1="41.764351"
+     x1="642.02094" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line42"
+     y2="33.34642"
+     x2="811.29181"
+     y1="41.764351"
+     x1="811.29181" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line44"
+     y2="33.34642"
+     x2="980.56262"
+     y1="41.764351"
+     x1="980.56262" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line46"
+     y2="782.34741"
+     x2="303.47931"
+     y1="790.76532"
+     x1="303.47931" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line48"
+     y2="782.34741"
+     x2="472.70587"
+     y1="790.76532"
+     x1="472.70587" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line50"
+     y2="782.34741"
+     x2="641.93243"
+     y1="790.76532"
+     x1="641.93243" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line52"
+     y2="782.34741"
+     x2="811.159"
+     y1="790.76532"
+     x1="811.159" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line54"
+     y2="782.34741"
+     x2="980.38556"
+     y1="790.76532"
+     x1="980.38556" />
+  <path
+     style="fill:none;stroke:#ff0000;stroke-width:5.75400019;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     d="m 1163.7205,425.33195 -35.5469,-5.15991 -15.2344,-12.89977 -18.5255,-6.61523 -40.0096,0.35342 -26.3589,-7.49519 -35.51282,-16.6947 -18.45431,-2.36246 -35.90717,-17.1972 -26.75334,-22.29615 -23.09838,-19.12515 -15.52131,-0.29859 -35.2521,-41.46865 -14.27855,3.63931 -18.66839,-38.33184 -17.63274,-0.64498 -19.31652,-13.2729 -14.87318,-7.84157 -29.08528,14.84129 -22.55726,0.12891 -12.62796,-15.26925 -17.42562,-3.95104 -18.08713,-30.34821 -19.06927,66.22287 -15.39401,-28.54213 -19.09602,12.52266 -15.10706,-10.22116 -17.32206,-1.14044 -20.06824,-28.77278 -15.64406,-25.89901 -49.09375,-62.59147 -19.20422,5.57905 -14.98549,-6.41794 -18.7219,14.19334 -17.39885,5.89303 -14.8598,-18.745 -15.12043,-2.74962 -16.77748,-39.452138 -19.52366,2.804012 -31.223,282.457736 -19.52367,-17.21735 -15.94896,-118.70231 -16.75071,-66.43243 -16.79084,-0.56343 -18.25414,19.77012 -17.21849,3.08901 -16.3632,35.65016 -15.10706,18.48014 -17.02474,33.99363 -15.88206,50.30116"
+     id="path3886" />
+  <path
+     style="fill:none;stroke:#0000ff;stroke-width:5.75400019;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     d="m 1821.9722,640.75805 -15.2344,-4.51492 -17.7733,-1.28998 -38.7208,-9.67483 -39.9901,-14.18974 -20.9473,-4.51492 -66.0157,-16.1247 -22.8515,-9.02984 -48.877,-14.18974 -59.6679,-18.05967 -23.4863,-10.31982 -12.0606,-2.57996 -43.164,-16.1247 -33.0078,-16.7697 -53.9551,-20.63962 -27.2949,-10.31982 -17.7735,-9.02983 -35.5469,-12.25477 -33.6425,-12.89978 -19.043,-0.64498 -29.1991,-12.25478"
+     id="path56" />
+  <text
+     style="font-size:32px;fill:#000000;font-family:sans-serif"
+     id="text60"
+     y="891.87225"
+     x="1031.39">Year</text>
+  <text
+     style="font-size:32px;fill:#000000;font-family:sans-serif"
+     id="text62"
+     y="837.85669"
+     x="272.88864">1960</text>
+  <text
+     style="font-size:32px;fill:#000000;font-family:sans-serif"
+     id="text64"
+     y="837.85669"
+     x="440.323">1970</text>
+  <text
+     style="font-size:32px;fill:#000000;font-family:sans-serif"
+     id="text66"
+     y="837.85669"
+     x="607.75732">1980</text>
+  <text
+     style="font-size:32px;fill:#000000;font-family:sans-serif"
+     id="text68"
+     y="837.85669"
+     x="775.19165">1990</text>
+  <text
+     style="font-size:32px;fill:#000000;font-family:sans-serif"
+     id="text72"
+     y="472.94342"
+     x="72.537094">1.0</text>
+  <text
+     style="font-size:32px;fill:#000000;font-family:sans-serif"
+     id="text74"
+     x="72.537094"
+     y="406.86261">1.2</text>
+  <text
+     style="font-size:32px;fill:#000000;font-family:sans-serif"
+     id="text76"
+     y="340.7818"
+     x="72.537094">1.4</text>
+  <text
+     style="font-size:32px;fill:#000000;font-family:sans-serif"
+     id="text78"
+     y="274.70099"
+     x="72.537094">1.6</text>
+  <text
+     style="font-size:32px;fill:#000000;font-family:sans-serif"
+     id="text80"
+     y="208.62016"
+     x="72.537094">1.8</text>
+  <text
+     style="font-size:32px;fill:#000000;font-family:sans-serif"
+     id="text82"
+     y="142.53935"
+     x="72.537094">2.0</text>
+  <text
+     style="font-size:32px;fill:#000000;font-family:sans-serif"
+     id="text84"
+     y="76.458542"
+     x="72.537094">2.2</text>
+  <text
+     style="font-size:32px;fill:#000000;font-family:sans-serif"
+     id="text86"
+     y="802.08478"
+     x="100.79333">0</text>
+  <text
+     style="font-size:32px;fill:#000000;font-family:sans-serif"
+     id="text88"
+     transform="matrix(0,-1,1,0,0,0)"
+     y="45.851124"
+     x="-620.88531">Yearly Growth Rate (percent)</text>
+  <line
+     x1="1149.6121"
+     y1="790.76532"
+     x2="1149.6121"
+     y2="782.34741"
+     id="line3754"
+     style="stroke:#000000;stroke-width:1" />
+  <line
+     x1="1318.8386"
+     y1="790.76532"
+     x2="1318.8386"
+     y2="782.34741"
+     id="line3756"
+     style="stroke:#000000;stroke-width:1" />
+  <line
+     x1="1488.0652"
+     y1="790.76532"
+     x2="1488.0652"
+     y2="782.34741"
+     id="line3758"
+     style="stroke:#000000;stroke-width:1" />
+  <line
+     x1="1657.2917"
+     y1="790.76532"
+     x2="1657.2917"
+     y2="782.34741"
+     id="line3760"
+     style="stroke:#000000;stroke-width:1" />
+  <text
+     style="font-size:32px;fill:#000000;font-family:sans-serif"
+     id="text70"
+     y="837.85669"
+     x="945.17285">2000</text>
+  <text
+     x="1115.1541"
+     y="837.85669"
+     id="text3766"
+     style="font-size:32px;fill:#0000ff;font-family:sans-serif">2010</text>
+  <text
+     x="1285.1353"
+     y="837.85669"
+     id="text3768"
+     style="font-size:32px;fill:#0000ff;font-family:sans-serif">2020</text>
+  <text
+     x="1455.1165"
+     y="837.85669"
+     id="text3770"
+     style="font-size:32px;fill:#0000ff;font-family:sans-serif">2030</text>
+  <text
+     x="1625.0977"
+     y="837.85669"
+     id="text3772"
+     style="font-size:32px;fill:#0000ff;font-family:sans-serif">2040</text>
+  <line
+     x1="143.10493"
+     y1="528.06744"
+     x2="134.68701"
+     y2="528.06744"
+     id="line3788"
+     style="stroke:#000000;stroke-width:1" />
+  <line
+     x1="143.10493"
+     y1="594.00793"
+     x2="134.68701"
+     y2="594.00793"
+     id="line3790"
+     style="stroke:#000000;stroke-width:1" />
+  <line
+     x1="143.10493"
+     y1="659.94849"
+     x2="134.68701"
+     y2="659.94849"
+     id="line3792"
+     style="stroke:#000000;stroke-width:1" />
+  <line
+     x1="143.10493"
+     y1="725.88898"
+     x2="134.68701"
+     y2="725.88898"
+     id="line3794"
+     style="stroke:#000000;stroke-width:1" />
+  <text
+     y="737.26666"
+     x="72.537094"
+     id="text3800"
+     style="font-size:32px;fill:#000000;font-family:sans-serif">0.2</text>
+  <text
+     x="72.537094"
+     y="671.18585"
+     id="text3802"
+     style="font-size:32px;fill:#000000;font-family:sans-serif">0.4</text>
+  <text
+     x="72.537094"
+     y="605.10504"
+     id="text3804"
+     style="font-size:32px;fill:#000000;font-family:sans-serif">0.6</text>
+  <text
+     x="72.537094"
+     y="539.02423"
+     id="text3806"
+     style="font-size:32px;fill:#000000;font-family:sans-serif">0.8</text>
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line3867"
+     y2="528.06744"
+     x2="1826.6324"
+     y1="528.06744"
+     x1="1835.0504" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line3869"
+     y2="594.00793"
+     x2="1826.6324"
+     y1="594.00793"
+     x1="1835.0504" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line3871"
+     y2="659.94849"
+     x2="1826.6324"
+     y1="659.94849"
+     x1="1835.0504" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line3873"
+     y2="725.88898"
+     x2="1826.6324"
+     y1="725.88898"
+     x1="1835.0504" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line3875"
+     y2="32.950676"
+     x2="1149.6121"
+     y1="41.368584"
+     x1="1149.6121" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line3877"
+     y2="32.950676"
+     x2="1318.8386"
+     y1="41.368584"
+     x1="1318.8386" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line3879"
+     y2="32.950676"
+     x2="1488.0652"
+     y1="41.368584"
+     x1="1488.0652" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     id="line3881"
+     y2="32.950676"
+     x2="1657.2917"
+     y1="41.368584"
+     x1="1657.2917" />
+</svg>
