@@ -395,7 +395,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 1,
         land: [
-          'KC-5.3.I.B names Bolívar\'s "Letter from Jamaica" "on the eve of the Latin American revolutions." Be exact about the date: the first juntas formed in 1810, so the letter came five years into the fighting, written in exile after the patriots\' defeats, to a British reader, to win support. It came before the campaigns that won independence (1819 to 1824), which is the sense in which it is on the eve.',
+          'KC-5.3.I.B names Bolívar\'s "Letter from Jamaica" "on the eve of the Latin American revolutions." Be exact about the date: juntas formed from 1809 (La Paz, Quito), and in Caracas and Buenos Aires in 1810, so the letter came about five years into the struggle, written in exile after the patriots\' defeats, to a British reader, to win support. It came before the campaigns that won independence (1819 to 1824), which is the sense in which it is on the eve.',
           'Bertrand\'s translation (Selected Writings of Bolívar, 1951): "the tie that bound her to Spain has been severed"; "The hatred that the Peninsula has inspired in us is greater than the ocean between us"; "we are, moreover, neither Indian nor European, but a species midway between the legitimate proprietors of this country and the Spanish usurpers"; "Events in Costa Firme have proved that institutions which are wholly representative are not suited to our character, customs, and present knowledge."',
           'A misquotation to avoid: "As it has a single origin, a single language ... it ought to have a single government" is Bolívar describing an idea, a single nation for all Spanish America, which he then rejects: "But this is not possible."',
           'The notice line is the hinge for slide 16: Bolívar argues for independence, but not for full self-government yet.'
@@ -408,7 +408,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'chain', kind: 'diffusion-path', eyebrow: 'The Chain',
       kc: 'KC-5.3.III.B', title: 'Each revolution helped another start or win.',
-      footer: 'The College Board calls the American Revolution "a model and inspiration" for the revolutions that followed.',
+      footer: 'The College Board calls the American Revolution "a model and inspiration for a number of the revolutions that followed."',
       template: {
         stops: [
           { place: 'America', date: '1775', text: 'A republic is won, and helping costs France a fortune' },
@@ -574,7 +574,7 @@ window.BEHISTORICAL_TEACHING = {
         caption: 'The Hall of Mirrors at Versailles, etched in 1684',
         steps: [
           { label: '1848', text: 'Liberals at Frankfurt try to unite Germany with a parliament and a constitution, and fail.' },
-          { label: '1862', text: 'Bismarck: great questions are decided not "by speeches and majority resolutions" but "by iron and blood."' },
+          { label: '1862', text: 'Bismarck: great questions are decided "by iron and blood," not "by speeches and majority resolutions."' },
           { label: '1864 to 1871', text: 'Three wars, against Denmark, Austria and France.' },
           { label: '18 January 1871', key: true, text: 'The German Empire is proclaimed in Louis XIV\'s Hall of Mirrors.' }
         ]
@@ -584,7 +584,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'The picture is a real print: Sébastien Leclerc I, Galerie des Glaces at Versailles, etching, 1684, the hall as Louis XIV\'s court knew it, the year it was finished. Metropolitan Museum of Art 53.600.2784, public domain. It is not a picture of 1871. The callback is Topic 3.2: the palace of the divine-right king is where a nation-state was proclaimed, after Prussia\'s army defeated France.',
           'Frankfurt: the National Assembly of 1848 to 1849 wrote a constitution and offered the crown to Frederick William IV of Prussia, who refused it in April 1849.',
-          'Bismarck to the Prussian budget committee, 30 September 1862 (German History in Documents and Images, trans. Jeremiah Riemer): "it is not by speeches and majority resolutions that the great questions of the time are decided—that was the big mistake of 1848 and 1849—but by iron and blood." It is the committee secretary\'s record in reported speech, close to his words.',
+          'Bismarck to the Prussian budget committee, 30 September 1862 (German History in Documents and Images, trans. Jeremiah Riemer): "it is not by speeches and majority resolutions that the great questions of the time are decided—that was the big mistake of 1848 and 1849—but by iron and blood." It is a summary in reported speech, not his exact words; GHDI\'s note says it "does not always reproduce Bismarck\'s speech word for word, although on occasion it comes close to a verbatim transcript."',
           'Château de Versailles: the empire was proclaimed in the Hall of Mirrors on 18 January 1871.'
         ],
         ask: 'Bismarck says the liberals of 1848 made a mistake. What does he think works instead?',
@@ -666,9 +666,9 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'synthesis', kind: 'close-retell', eyebrow: 'AP Synthesis',
-      title: 'Answer the objective in one sentence.',
+      title: 'Say it in one sentence.',
       template: {
-        frame: 'Revolutions came when a ___, the ___ to name it, and a ___ came together; each one helped another start or ___; and they created new ___ and the nation, which ___ some states and pulled peoples away from empires.',
+        frame: 'A revolution needed a ___, the ___ to name it, and a ___. Each helped another start or ___. They made new ___ and the nation, which ___ some states and pulled peoples from empires.',
         words: ['grievance', 'words', 'chance', 'win', 'states', 'joined'],
         prompt: 'Fill it in from memory. Then say it with one example in each blank.'
       },
@@ -705,7 +705,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 7,
         land: [
           'Module 07 is required. The six cards are three real objects (the "No Stamp Act" teapot, Thévenin\'s 1790 Bastille etching, the 1802 French print of Toussaint) and three verified excerpts (the Declaration of Independence, Toussaint\'s 1793 proclamation, and Bismarck\'s 1862 "iron and blood" remarks).',
-          'Listen for students who name what kind of source each card is: a teapot made in England for American buyers, an etching made to celebrate the Bastille a year later, a French print of a Haitian general, a secretary\'s record of a speech.'
+          'Listen for students who name what kind of source each card is: a teapot made in England for American buyers, an etching made to celebrate the Bastille a year later, a French print of a Haitian general, a summary of a speech in reported speech.'
         ],
         ask: 'What can your object not tell you?',
         listenFor: 'Who made it and for whom: the Toussaint print is a French printmaker\'s view, not a Haitian one.'
@@ -734,7 +734,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'The picture is a real print: Asher B. Durand\'s engraving (1820 to 1823) of John Trumbull\'s painting The Declaration of Independence (1818, now in the United States Capitol). Metropolitan Museum of Art 2022.29, public domain. It does not show the signing: the Architect of the Capitol says the painting "depicts the moment on June 28, 1776, when the first draft of the Declaration of Independence was presented to the Second Continental Congress" by the committee of five. Trumbull painted it more than forty years later, and the men are posed.',
-          'Land the spine, then the hand-off to 5.3, the industrial revolution. It began before 1789: Watt\'s improved steam engine was patented in 1769 and Arkwright\'s water-powered mill opened in 1771, while the American colonists were protesting the Stamp Act and the Townshend taxes.'
+          'Land the spine, then the hand-off to 5.3, the industrial revolution. It began before 1789: Watt\'s improved steam engine was patented in 1769 and Arkwright\'s water-powered mill opened in 1771, while the American colonists were protesting the Townshend taxes (1767 to 1770); the Stamp Act had been repealed in 1766.'
         ],
         ask: 'Say the topic in one sentence, with one example.',
         listenFor: 'The spine with a real case: Spanish creoles\' grievance, Bolívar\'s words, Napoleon\'s invasion as the chance; or nationalism uniting Germany in 1871.'

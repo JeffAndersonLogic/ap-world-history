@@ -339,18 +339,31 @@ module.exports = [
     title: 'Revolutions and New Nations, 1775 to 1878',
     subtitle: 'Topic 5.2 · Nationalism and revolutions, 1750 to 1900',
     highlights: [
-      { zone: 'unitedStates', label: 'UNITED STATES', tone: 'gold', legend: 'American Revolution, 1775 to 1783' },
-      { zone: [2.5, 46.5, 3.5, 3], label: 'FRANCE', labelSide: 'left', tone: 'bronze', legend: 'French Revolution, 1789 to 1799' },
+      { zone: [-76, 38.5, 7, 6.5], label: 'UNITED STATES', tone: 'gold', legend: 'American Revolution, 1775 to 1783' },
+      { zone: [2.5, 46.5, 3.5, 3], label: 'FRANCE', tone: 'bronze', legend: 'French Revolution, 1789 to 1799' },
       { zone: [-72.5, 19, 2.6, 1.6], label: 'HAITI', labelSide: 'right', tone: 'plum', legend: 'Haitian Revolution, 1791 to 1804' },
-      { zone: 'andes', label: 'SPANISH AMERICA', tone: 'sand', legend: 'Spanish American independence, 1810 to 1826' },
-      { zone: [12.5, 43, 2.6, 3], label: 'ITALY', labelSide: 'left', tone: 'sage', legend: 'Italy united, 1861; Rome added, 1870' },
-      { zone: [11, 51.5, 3.6, 2.6], label: 'GERMANY', tone: 'slate', legend: 'German Empire proclaimed, 1871' },
+      { zone: [-101, 21, 8, 6], label: 'MEXICO', labelSide: 'left', tone: 'sand' },
+      { zone: [-67, -10, 12, 21], label: 'SPANISH AMERICA', labelSide: 'left', tone: 'sand', legend: 'Spanish American independence, 1810 to 1826' },
+      { zone: [12.5, 43, 2.6, 3], label: 'ITALY', tone: 'sage', legend: 'Italy united, 1861; Rome added, 1870' },
+      { zone: [11, 51.5, 3.6, 2.6], label: 'GERMANY', labelSide: 'above', tone: 'slate', legend: 'German Empire proclaimed, 1871' },
       { zone: [22, 42, 3.6, 3], label: 'BALKANS', labelSide: 'right', tone: 'sky', legend: 'Greece 1830; Serbia, Romania, Montenegro 1878' }
     ],
     flows: [
-      { from: 'unitedStates', to: [2.5, 46.5], label: 'war debt', bow: -0.18 },
+      { from: [-76, 38.5], to: [2.5, 46.5], label: 'war debt', bow: -0.18 },
       { from: [2.5, 46.5], to: [-72.5, 19], label: 'the declaration claimed', bow: 0.2 },
-      { from: [-72.5, 19], to: [-71, 4], label: 'Haiti arms Bolívar, 1816', bow: -0.3 }
+      { from: [-72.5, 19], to: [-66.9, 9], label: 'Haiti arms Bolívar, 1816', bow: -0.3 }
+    ],
+    legend: [
+      { kind: 'area', tone: 'gold', text: 'American Revolution, 1775 to 1783' },
+      { kind: 'area', tone: 'bronze', text: 'French Revolution, 1789 to 1799' },
+      { kind: 'area', tone: 'plum', text: 'Haitian Revolution, 1791 to 1804' },
+      { kind: 'area', tone: 'sand', text: 'Spanish American independence, 1810 to 1826' },
+      { kind: 'area', tone: 'sage', text: 'Italy united, 1861; Rome added, 1870' },
+      { kind: 'area', tone: 'slate', text: 'German Empire proclaimed, 1871' },
+      { kind: 'area', tone: 'sky', text: 'Greece 1830; Serbia, Romania, Montenegro 1878' },
+      { kind: 'flow', step: 1, text: 'war debt' },
+      { kind: 'flow', step: 2, text: 'the declaration claimed' },
+      { kind: 'flow', step: 3, text: 'Haiti arms Bolívar, 1816' }
     ],
     note: 'Regions are approximate. The numbered arrows are links in the chain of revolutions; Italy, Germany and the Balkans mark new states that nationalism made.'
   },

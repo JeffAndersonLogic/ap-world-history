@@ -7142,7 +7142,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "01",
           "module": "Map & Geography Check",
           "label": "Module 01, Map & Geography Check",
-          "prompt": "Using the map, explain how one revolution helped another start or win. Name the two places, their dates, and what traveled between them: money, words, an army, or help.",
+          "prompt": "Using the map, explain how one revolution helped another start or win. Name the two places, their dates, and what passed from one to the other: a debt, words, or help.",
           "skill": "",
           "skills": [],
           "skillRaw": "",

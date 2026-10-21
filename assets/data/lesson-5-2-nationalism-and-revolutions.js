@@ -123,7 +123,7 @@ window.BEHISTORICAL_LESSON = {
           "Ideas alone did not make revolutions. A revolution needed a **grievance**, a wrong many people felt; **the words** to name it, in a document people could rally around; and **a chance**, a moment when the old ruler was broke, far away, or gone.",
           "**America's grievance:** the Seven Years' War (1756 to 1763) left Britain deep in debt, and Parliament taxed its American colonies with laws such as the **Stamp Act** of 1765. The colonies had no members in Parliament: \"no taxation without representation.\" Colonists bought goods that carried the protest, such as a teapot painted \"No Stamp Act.\"",
           "**The words:** the **Declaration of Independence** (4 July 1776) said governments get \"their just powers from the consent of the governed,\" and that the people may \"alter or to abolish\" a government that destroys their rights. **The chance:** Britain was an ocean away, and its 1763 victory had pushed France out of North America, so colonists no longer needed British soldiers to protect them. Once the fighting began in 1775, France joined the war in 1778 and helped the colonists win.",
-          "**What it created:** the United States, independent by 1783, and in 1787 a constitution for a **republic**, a country with no king whose leaders are elected. The College Board calls it \"a model and inspiration\" for the revolutions that followed. It kept slavery, and most states let only men who owned property vote."
+          "**What it created:** the United States, independent by 1783, and in 1787 a constitution for a **republic**, a country with no king whose leaders are elected. The College Board calls it \"a model and inspiration for a number of the revolutions that followed.\" It kept slavery, and most states let only men who owned property vote."
         ],
         image: {
           title: "Protest you could pour",
@@ -186,7 +186,7 @@ window.BEHISTORICAL_LESSON = {
     sourceUrl: "../assets/images/instructional-maps/topic-5-2.svg",
     caption: "A BeHistorical map of the four revolutions of 1775 to 1826 in the Atlantic world, and of the new nation-states nationalism made in Europe between 1830 and 1878.",
     intro: "Start at the United States and follow the three numbered arrows: from the United States to France, from France to Haiti, and from Haiti to Spanish America. Then look at Europe, where Italy and Germany were joined together and new Balkan states broke away from the Ottoman Empire.",
-    prompt: "Using the map, explain how one revolution helped another start or win. Name the two places, their dates, and what traveled between them: money, words, an army, or help."
+    prompt: "Using the map, explain how one revolution helped another start or win. Name the two places, their dates, and what passed from one to the other: a debt, words, or help."
   },
 
   deepReading: {

@@ -188,10 +188,10 @@
     },
     {
       title: "Bismarck on \"Iron and Blood,\" 1862",
-      label: "Primary-source excerpt · Otto von Bismarck to the Prussian parliament's budget committee, 30 September 1862, as recorded by the committee's secretary",
+      label: "Primary-source excerpt · Otto von Bismarck to the Prussian parliament's budget committee, 30 September 1862, as summarized in reported speech, not his exact words",
       sourceText: ["“it is not by speeches and majority resolutions that the great questions of the time are decided”", "“—that was the big mistake of 1848 and 1849—but by iron and blood.”"],
       caption: "Bismarck had just become Prussia's chief minister. Nine years later Prussia's wars had united Germany. Translation from German History in Documents and Images.",
-      prompt: "What does Bismarck say will decide the great questions of the time? What was \"the big mistake of 1848 and 1849\"? Use the caption to connect his words to Germany. What can this record, written by a secretary, not tell you for certain?"
+      prompt: "What does Bismarck say will decide the great questions of the time? What was \"the big mistake of 1848 and 1849\"? Use the caption to connect his words to Germany. This is a summary of what he said, not his exact words. What can it not tell you for certain?"
     }
   ];
 

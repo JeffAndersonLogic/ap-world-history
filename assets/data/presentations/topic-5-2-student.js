@@ -334,7 +334,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "diffusion-path",
       "eyebrow": "The Chain",
       "title": "Each revolution helped another start or win.",
-      "footer": "The College Board calls the American Revolution \"a model and inspiration\" for the revolutions that followed.",
+      "footer": "The College Board calls the American Revolution \"a model and inspiration for a number of the revolutions that followed.\"",
       "kc": "KC-5.3.III.B",
       "template": {
         "stops": [
@@ -526,7 +526,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "1862",
-            "text": "Bismarck: great questions are decided not \"by speeches and majority resolutions\" but \"by iron and blood.\""
+            "text": "Bismarck: great questions are decided \"by iron and blood,\" not \"by speeches and majority resolutions.\""
           },
           {
             "label": "1864 to 1871",
@@ -643,9 +643,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "close-retell",
       "eyebrow": "AP Synthesis",
-      "title": "Answer the objective in one sentence.",
+      "title": "Say it in one sentence.",
       "template": {
-        "frame": "Revolutions came when a ___, the ___ to name it, and a ___ came together; each one helped another start or ___; and they created new ___ and the nation, which ___ some states and pulled peoples away from empires.",
+        "frame": "A revolution needed a ___, the ___ to name it, and a ___. Each helped another start or ___. They made new ___ and the nation, which ___ some states and pulled peoples from empires.",
         "words": [
           "grievance",
           "words",

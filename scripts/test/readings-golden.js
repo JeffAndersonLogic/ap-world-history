@@ -167,9 +167,16 @@ const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
 // docs/TOPIC-5-1-CLAIM-LEDGER.md), approved under Jeff's standing rule of
 // 2026-10-12, which delegates story and reading approval to the reviewer
 // loop. The loop ended on its three-pass safety valve, every finding fixed
-// or answered. Against main at 85cf5f9 only the 5.1 entry changed; 5.2 to
-// 5.10 are byte-for-byte the readings in the committed fixture.
-const APPROVED_UNIT5_REWRITE_BLOB = 'fa6d292a5ec489fd386bcb55962d64ae9099fec3';
+// or answered. Against main at 85cf5f9 only the 5.1 entry changed.
+// 2026-10-21: Topic 5.2's rewrite, "How Revolutions Made Nations", written from
+// the 5.2 story (docs/TOPIC-5-2-STORY-DRAFT.md) and the same CED source file,
+// went through three independent review passes on 2026-10-21 (six reviewers;
+// findings and dispositions in docs/TOPIC-5-2-CLAIM-LEDGER.md), approved under
+// Jeff's standing rule of 2026-10-12. The loop again ended on its three-pass
+// safety valve, every finding fixed or answered. Against main at 97156bd
+// (whose unit-5.js is the 5.1 blob fa6d292a) only the 5.2 entry changed;
+// 5.3 to 5.10 are byte-for-byte the readings in the committed fixture.
+const APPROVED_UNIT5_REWRITE_BLOB = 'a7e7c1793f60cb6b1cfe14a9dcf97911e9c7108f';
 const unit5SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-5.js');
 const approvedUnit5Rewrite = !fromDisk && fs.existsSync(unit5SourcePath)
   && gitBlobSha(fs.readFileSync(unit5SourcePath, 'utf8')) === APPROVED_UNIT5_REWRITE_BLOB;
@@ -387,8 +394,8 @@ for (const topic of allTopics()) {
     if (all.length) accepted.add('Unit 4 First & 10 Fall 2026 CED realignment approved 2026-09-17; guarded by the exact authored source Git blob hash.');
     continue;
   }
-  if (approvedUnit5Rewrite && topic.topicKey === '5.1') {
-    if (all.length) accepted.add('Topic 5.1 First & 10 story-first rewrite approved 2026-10-20 under the standing rule; guarded by the exact authored Unit 5 source Git blob hash.');
+  if (approvedUnit5Rewrite && /^5\.[12]$/.test(topic.topicKey)) {
+    if (all.length) accepted.add('Topics 5.1 (2026-10-20) and 5.2 (2026-10-21) First & 10 story-first rewrites approved under the standing rule; guarded by the exact authored Unit 5 source Git blob hash.');
     continue;
   }
   const diffs = [];

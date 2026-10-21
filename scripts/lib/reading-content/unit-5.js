@@ -570,7 +570,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "<strong>The grievance.</strong> In Spain's American empire, <span class=\"kt\">creoles</span>, people of Spanish descent born in the Americas, owned land and businesses but were kept out of the highest offices. Those went to <span class=\"kt\">peninsulares</span>, men born in Spain. Spain also controlled what the colonies could grow, make, and trade. Simón Bolívar, a creole from Caracas, wrote that Spain \"has kept us in a sort of permanent infancy with regard to public affairs\": treated like children, never allowed to govern."
+            "html": "<strong>The grievance.</strong> In Spain's American empire, <span class=\"kt\">creoles</span>, people of Spanish descent born in the Americas, owned land and businesses but were kept out of the highest offices. Those went to <span class=\"kt\">peninsulares</span>, men born in Spain. Spain also controlled what the colonies could grow, make, and trade. Simón Bolívar, a creole from Caracas, wrote that Spain \"has kept us in a sort of permanent infancy with regard to public affairs\": treated like children, kept out of running their own affairs."
           },
           {
             "type": "p",
