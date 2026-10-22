@@ -86,12 +86,9 @@
   </g>
   <g id="region-labels">
     <text class="region halo" x="733.1" y="171.0" text-anchor="end" fill="#1A1C1D"><tspan x="733.1" dy="0">BRITAIN</tspan></text>
-    <text class="region halo" x="415.3" y="207.2" text-anchor="end" fill="#1A1C1D"><tspan x="415.3" dy="0">PENNSYLVANIA</tspan></text>
+    <text class="region halo" x="486.9" y="315.2" text-anchor="start" fill="#1A1C1D"><tspan x="486.9" dy="0">PENNSYLVANIA</tspan></text>
   </g>
   <g id="places">
-    <circle class="city" cx="300.0" cy="268.9" r="10"/>
-    <text class="place halo" x="320.0" y="240.9" text-anchor="start">Promontory Summit</text>
-    
     <circle class="city" cx="445.8" cy="268.9" r="10"/>
     <text class="place halo" x="465.8" y="276.9" text-anchor="start">Titusville</text>
     

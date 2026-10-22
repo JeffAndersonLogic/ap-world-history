@@ -22,8 +22,8 @@
  *   steam-engine. Engraving, 174-." Wellcome Collection 45364i (V0024483),
  *   public domain mark.
  * - oil-rig-titusville-c1900.jpg: "Oil rig at Titusville, Pa.," photographic
- *   print, ca. 1900, "Photo by Mather," hand-colored. Library of Congress
- *   2012647896.
+ *   print, ca. 1900, "Photo by Mather," labeled hand-colored; the copy
+ *   served is black and white. Library of Congress 2012647896.
  * - Also on the lesson page only: Across the Continent (1868), the Great
  *   Eastern with the Atlantic cable (Illustrated London News, 14 July 1866),
  *   and the Promontory Summit ceremony photograph (10 May 1869), all Library
@@ -38,7 +38,7 @@ const IMG='../assets/images/topics/5-5/';
 const LIGHTNING={url:IMG+'currier-ives-lightning-express-1874.jpg',alt:'A color print of two black steam locomotives with red cowcatchers pulling out side by side from a busy station, smoke pouring from their stacks; behind them red and yellow freight and mail cars marked From Ocean to Ocean, Through to the Pacific and U.S. Mail, and a river and bridge in the distance',credit:'Currier & Ives, American Railroad Scene: Lightning Express Trains Leaving the Junction, color lithograph, 1874 · Library of Congress · Public domain',ratio:1.678,position:'50% 55%'};
 const NIGHT={url:IMG+'currier-ives-night-railway-junction-1876.jpg',alt:'A color print of a railway junction at night under a full moon: locomotives with bright headlamps pull red and yellow passenger cars, workers carry lanterns and baggage, steamboats sit in the harbor behind, and telegraph wires run on tall poles at the upper right',credit:'Currier & Ives, Night Scene at an American Railway Junction, chromolithograph, 1876 · Library of Congress · Public domain',ratio:1.646,position:'50% 50%'};
 const NEWCOMEN={url:IMG+'newcomen-engine-engraving-1740s.jpg',alt:'An engraving of a Newcomen steam engine in a brick engine house: a fire under a round boiler at the bottom, a tall cylinder above it, a great wooden beam rocking on the wall, and chains and pump rods hanging down on the left into the mine',credit:'Engineering: a Newcomen steam-engine, engraving, 1740s · Wellcome Collection · Public domain',ratio:0.633,fit:'contain'};
-const RIG={url:IMG+'oil-rig-titusville-c1900.jpg',alt:'An old hand-colored photograph of a tall wooden oil derrick on a hillside, with a group of workmen standing beside a steam boiler and a tall smokestack on the right',credit:'Oil rig at Titusville, Pennsylvania, photograph by Mather, about 1900 · Library of Congress · Public domain',ratio:1.466,fit:'cover',position:'40% 50%'};
+const RIG={url:IMG+'oil-rig-titusville-c1900.jpg',alt:'An old black-and-white photograph of a tall wooden oil derrick on a hillside, with a group of workmen standing beside a steam boiler and a tall smokestack on the right',credit:'Oil rig at Titusville, Pennsylvania, photograph by Mather, about 1900 · Library of Congress · Public domain',ratio:1.466,fit:'cover',position:'40% 50%'};
 const ACROSS={url:IMG+'currier-ives-across-the-continent-1868.jpg',alt:'A black-and-white print looking down on a new log-cabin town beside a railroad; a train puffs west past the town and a line of telegraph poles, covered wagons move along a road, and two Native American riders watch from the right',credit:'Currier & Ives, Across the Continent, lithograph drawn by Fanny Palmer, 1868 · Library of Congress · Public domain',ratio:1.27,fit:'cover',position:'55% 60%'};
 const setTemplate=(phase,add)=>{const s=by(phase);if(s)s.template=Object.assign({},s.template||{},add);return s;};
 setTemplate('question',{place:'top',visual:Object.assign({},LIGHTNING,{tagPos:'bl'})});

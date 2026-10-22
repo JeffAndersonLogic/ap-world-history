@@ -436,7 +436,7 @@ module.exports = [
     subtitle: 'Topic 5.5 · Technology of the Industrial Age',
     highlights: [
       { zone: 'britain', label: 'BRITAIN', labelSide: 'left', tone: 'gold', legend: 'Coal: about 225 million tons mined in 1900' },
-      { zone: [-78.5, 41, 4, 2.4], label: 'PENNSYLVANIA', labelSide: 'left', tone: 'bronze', legend: 'Coal, and oil from 1859' }
+      { zone: [-78.5, 41, 4, 2.4], label: 'PENNSYLVANIA', labelSide: 'right', tone: 'bronze', legend: 'Coal, and oil from 1859' }
     ],
     flows: [
       { from: [-95.9, 41.3], to: [-121.5, 38.6], label: 'Across the US, 1869', bow: -0.25 },
@@ -445,7 +445,6 @@ module.exports = [
       { from: [-1, 50.8], to: [72.8, 19], label: 'By steamship through Suez, from 1869', bow: 0.22 }
     ],
     points: [
-      { at: [-112.5, 41.6], label: 'Promontory Summit' },
       { at: [-79.7, 41.6], label: 'Titusville' },
       { at: [72.8, 19], label: 'Bombay', note: 'first train, 1853' }
     ],

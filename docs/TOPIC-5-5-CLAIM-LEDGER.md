@@ -174,4 +174,28 @@ Primary Source:
 
 ## Review findings
 
-(None yet.)
+### Pass 1, 2026-10-22
+
+Two fresh reviewers, each from the packet `capture-topic-for-review.js 5.5` (text captures of every
+module, the reading, the chapter, the room and the Canvas text, and all 24 teacher slides in the
+brand fonts): page truth and readability on the cheaper model; history on the default model.
+
+**Page truth, readability, CED, ownership (17 findings; 16 fixed, 1 logged as adjacent).** The
+reviewer found no CED or ownership defect.
+1. Checkpoint 2 step 4 ("show where its power came from") could not be done for the telegraph, and was not in the displayed criterion. **Fixed:** step 4 now asks students to connect railroads or steamships back to coal, steam or steel, and Success Criterion 2 says so; the card and slide 23 match.
+2. Slide 12's Bessemer practice was a near-model answer for the Skill Builder's Bessemer option. **Fixed differently:** the practice slide stays (it is the KC-5.1.I.E practice); the Skill Builder's first choice is now Watt's steam engine, the internal combustion engine or electric power.
+3. Two Evidence Lab captions stated what the prompt asks students to infer (the Newcomen engine's job; what came through the converter's holes). **Fixed:** both captions now identify the source only. The lecture cards keep their explanations, which are taught content.
+4. Slide 8 asked what Jevons wanted readers to worry about, with nothing on the slide to say. **Fixed:** the footer reads "Jevons, a British economist, feared that Britain's cheap coal would run out."
+5. The oil-rig caption and alt text said "colored by hand"; the copy is black and white. **Fixed:** the caption says the print is labeled hand-colored and the copy shown is black and white.
+6. BeInTheRoom: the Steamship Writer could not choose its own technology as number one. **Fixed:** a steamship option added.
+7. The Great Eastern card called the left ship a "sailing warship" and asked why "only" such a ship could lay a cable (the 1858 cable was laid by two warships). **Fixed:** the alt text says "a smaller ship with three masts"; the prompt asks what drives the Great Eastern and why the cable needed a ship this large.
+8. Slide 2 (and the Canvas overview) said coal "could only keep you warm," against 5.3's coke iron and 5.5's own mine pumps. **Fixed:** "most coal was still burned for heat."
+9. Primary Source question 2 put "commands" on steam and iron; Jevons says "coal alone can command in sufficient abundance either the iron or the steam." **Fixed:** quoted exactly.
+10. The BeSurreal scene narrated the whole answer to its prompt. **Fixed:** the scene keeps the telegraph boy and the far-off farms and no longer names the train and steamship.
+11. BeInTheRoom said Indians and Chinese moved "within Asia," against the lesson's "to Southeast Asia and the lands around the Indian Ocean." **Fixed:** the lesson's wording and figures.
+12. Checkpoint 1's focus term "separate condenser" appears only in the optional chapter. **Fixed:** "separate chamber."
+13. Slide 17's numerals 1 to 5 could read as a ranking. **Fixed:** the list is in the CED's order and the footer says "Listed in the College Board's order, not ranked."
+14. The map's PENNSYLVANIA label sat over the Promontory Summit label. **Fixed:** the label sits beside its shape; the Promontory point is dropped (arrow 1's key names it).
+15. Slide 14 and the chapter gave Germany's railway figures without years. **Fixed:** 1840 and 1900.
+16. BeInTheRoom's Step 3 says "what your policy cannot solve," wrong for a ranking. **Logged as an adjacent finding:** the line is in the shared `assets/js/behistorical-room-v2.js`, used by every v2 scenario.
+17. Slide 18's myth rows were tagged with one Key Concept where they span two. **Fixed:** "KC-5.1.I.E, KC-5.1.IV" and "KC-5.1.I.B, KC-5.1.I.E."

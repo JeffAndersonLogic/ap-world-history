@@ -244,7 +244,7 @@ const scenarios = [
       E('ships', 'Days, Not Weeks', 'Under sail, a crossing from Norway to America took about 53 days on average. The fastest steamships now cross the Atlantic in about 7 or 8 days, and the Suez Canal, opened in 1869, can be used only by steamships.', 'Shows steamships joining the oceans.'),
       E('wire', 'News by Wire', 'Morse sent his first message from Washington to Baltimore in 1844. A cable under the Atlantic has worked since 1866, and one reached Bombay in 1870. A message now crosses the ocean in minutes.', 'Shows the telegraph joining markets with news.'),
       E('trade', 'Prices Come Together', 'Historians later measured that wheat cost 57.6 percent more in Liverpool than in Chicago in 1870, and only 15.6 percent more by 1913, as rail, steamships, and news joined the two markets.', 'Shows how the reach led to more trade.'),
-      E('people', 'People on the Move', 'Historians later counted about 55 million Europeans who moved to the Americas and Australia between 1850 and 1914, and tens of millions of Indians and Chinese who moved within Asia, many by steamship and rail.', 'Shows how the reach led to more migration.'),
+      E('people', 'People on the Move', 'Historians later counted about 55 million Europeans who moved to the Americas and Australia between 1850 and 1914, and more than 29 million Indians and 19 million Chinese who moved to Southeast Asia and the lands around the Indian Ocean between 1846 and 1940, many by steamship and rail.', 'Shows how the reach led to more migration.'),
       E('cars', 'A Machine Just Starting', 'In 1900 there are only about 8,000 cars in the whole United States. Most oil is still made into kerosene for lamps.', 'Shows that the internal combustion engine’s big effects have not come yet.')
     ],
     decisions: [
@@ -256,6 +256,7 @@ const scenarios = [
       D('first', 'Choose number one', 'Which technology should lead the article?', [
         O('steam', 'The steam engine', 'Lead with the machine that turned coal into motion.', 'It is the cause behind the railroad and the steamship.', 'Readers may find an eighteenth-century engine less striking than a train.', 'The deepest cause is not always the most visible one.'),
         O('rail', 'The railroad', 'Lead with the technology that reached the middle of continents.', 'Its effects on farms, mines, and towns are easy to see.', 'It depended on the steam engine, coal, and steel.', 'A visible effect can hide the causes underneath it.'),
+        O('ship', 'The steamship', 'Lead with the technology that crossed oceans in days, not weeks.', 'It joined the continents and carried wheat and migrants across the sea.', 'It could not go far inland without rails or rivers.', 'Oceans joined the world, but the interiors needed more than ships.'),
         O('wire', 'The telegraph', 'Lead with the technology that made news faster than any ship.', 'It shows that information shaped markets.', 'It carried no goods and no people.', 'Communication joins markets, but goods still need to move.')
       ]),
       D('newest', 'Place the newest machine', 'What should the article do with the internal combustion engine?', [

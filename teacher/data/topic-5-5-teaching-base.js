@@ -128,7 +128,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'Topic 5.3', text: 'In 1700, what did people in England mostly use coal for?' },
           { label: 'Topic 5.4', text: 'Name two places the factory methods spread to.' }
         ],
-        turn: 'Factories needed **power**, and coal could only keep you warm. What happened when machines learned to turn coal into **motion**? **How far could the world reach then?**'
+        turn: 'Factories needed **power**, and most coal was still burned for heat. What happened when machines learned to turn coal into **motion**? **How far could the world reach then?**'
       },
       notes: {
         minutes: 4,
@@ -252,7 +252,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'jevons', kind: 'source-quote', eyebrow: 'A Voice from 1865',
       kc: 'KC-5.1.I.B', title: 'What did coal mean to the people who used it?',
-      footer: 'Who wrote this, and what did he want his readers to worry about?',
+      footer: 'Jevons, a British economist, feared that Britain\'s cheap coal would run out.',
       template: {
         quote: 'With coal almost any feat is possible or easy; without it we are thrown back into the laborious poverty of early times.',
         attribution: { author: 'W. Stanley Jevons', work: 'The Coal Question', year: '1865' },
@@ -289,7 +289,7 @@ window.BEHISTORICAL_TEACHING = {
           'Drake: the American Oil and Gas Historical Society dates the strike at Titusville to August 1859 (sources give the 27th or 28th); refiners turned the oil into kerosene, "the popular lamp fuel." Oil was a lamp fuel for the rest of the century.',
           'The engine: Nikolaus Otto\'s four-stroke engine, Deutz, 1876, patented 1877 (Deutz AG history); Carl Benz\'s patent application of 29 January 1886, DRP 37435, a "vehicle powered by a gas engine" (Mercedes-Benz), running on a light petroleum spirit. Internal combustion means the fuel burns inside the cylinder; a steam engine burns its fuel outside, under a boiler.',
           '8,000: the Federal Highway Administration and Historical Statistics of the United States both give 8,000 registered automobiles in 1900. So the internal combustion engine is in this topic because of where it led, not because it had changed production by 1900.',
-          'The picture is a real photograph: an oil rig at Titusville, about 1900, by the oil-region photographer Mather, hand-colored (Library of Congress, no known restrictions). The boiler and smokestack on the right drove the drilling: a steam engine, burning fuel, helping to get oil.'
+          'The picture is a real photograph: an oil rig at Titusville, about 1900, by the oil-region photographer Mather (Library of Congress, no known restrictions). The Library\'s print is labeled hand-colored; the copy shown is black and white. The boiler and smokestack on the right drove the drilling: a steam engine, burning fuel, helping to get oil.'
         ],
         ask: 'If there were only 8,000 cars in 1900, why does the College Board put this engine in a topic that ends in 1900?',
         listenFor: 'Because it was developed then, and the fuel, oil, was being drilled: the cause came before 1900, the big effects after. Causes and effects do not always happen at once.',
@@ -385,7 +385,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'rail', kind: 'timeline', eyebrow: 'Longer Reach · Railroads',
       kc: 'KC-5.1.IV', title: 'Railroads reached the middle of continents.',
-      footer: 'Russia: 27 km of railway in 1840, over 53,000 km in 1900. Germany: 469 km to over 51,000.',
+      footer: 'Russia: 27 km of railway in 1840, over 53,000 km in 1900. Germany: 469 km in 1840, over 51,000 km in 1900.',
       template: {
         range: [1825, 1905],
         tick: 20,
@@ -469,20 +469,21 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'rank', kind: 'cause-rank', eyebrow: 'Rank the Five',
       title: 'Which technology changed the world most by 1900?',
+      footer: 'Listed in the College Board\'s order, not ranked. The ranking is yours.',
       template: {
         causes: [
           { label: 'The steam engine', note: 'Turned coal into motion' },
           { label: 'The railroad', note: 'Reached the middle of continents' },
+          { label: 'The internal combustion engine', note: 'Burned oil inside the engine' },
           { label: 'The steamship', note: 'Crossed oceans in days, not weeks' },
-          { label: 'The telegraph', note: 'Sent news in minutes' },
-          { label: 'The internal combustion engine', note: 'Burned oil inside the engine' }
+          { label: 'The telegraph', note: 'Sent news in minutes' }
         ],
         prompt: 'Rank them 1 to 5. **Defend your number one** in one sentence, with one piece of evidence.'
       },
       notes: {
         minutes: 3,
         land: [
-          'This is the CED\'s own sample activity for 5.5 (p. 97), quick version: the same five technologies the CED lists. The full debate, as the writers of a New York science magazine in 1900, is the BeInTheRoom scenario.',
+          'This is the CED\'s own sample activity for 5.5 (p. 97), quick version: the same five technologies, in the CED\'s order, not ranked. The full debate, as the writers of a New York science magazine in 1900, is the BeInTheRoom scenario.',
           'There is no single right answer; the evidence is what is graded. Strong number ones: the steam engine, because the railroad and the steamship are steam engines on wheels and hulls; the railroad, because it reached interiors that ships could not.',
           'Watch for students who put the internal combustion engine first. Ask: by 1900? (8,000 US cars.) It belongs on the list because of what came after; the question says "by 1900."',
           'Check the question-slide predictions.'
@@ -499,8 +500,8 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         rows: [
           { myth: 'Watt invented the steam engine.', evidence: 'Newcomen\'s engine pumped mines from 1712. Watt made it use far less coal, and turn wheels.', source: 'KC-5.1.I.B' },
-          { myth: 'One invention changed everything.', evidence: 'Each needed the others: railroads needed steam, coal, then steel; many telegraph lines ran beside the tracks.', source: 'KC-5.1.I.E' },
-          { myth: 'By 1900 the world ran on electricity and cars.', evidence: 'Motors gave under 5 percent of US factory power in 1899; the US had about 8,000 cars in 1900.', source: 'KC-5.1.I.B' }
+          { myth: 'One invention changed everything.', evidence: 'Each needed the others: railroads needed steam, coal, then steel; many telegraph lines ran beside the tracks.', source: 'KC-5.1.I.E, KC-5.1.IV' },
+          { myth: 'By 1900 the world ran on electricity and cars.', evidence: 'Motors gave under 5 percent of US factory power in 1899; the US had about 8,000 cars in 1900.', source: 'KC-5.1.I.B, KC-5.1.I.E' }
         ]
       },
       notes: {
@@ -590,7 +591,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'cp2', kind: 'action', eyebrow: 'Module 10 · Checkpoint 2',
       title: 'How did railroads, steamships and the telegraph change trade and migration?',
-      subtitle: 'Explain what each did that older ways could not, how one of them reached an interior region, and how that led to more trade or more migration, with a number. Then show where its power came from. If it is not finished in class, it is homework.',
+      subtitle: 'Explain what each did that older ways could not, how one of them reached an interior region, and how that led to more trade or more migration, with a number. Then connect railroads or steamships back to coal, steam or steel. If it is not finished in class, it is homework.',
       action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-5-technology-of-industrialization.html#modules' },
       notes: {
         minutes: 12,

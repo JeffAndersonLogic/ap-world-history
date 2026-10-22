@@ -81,7 +81,7 @@
       { label: "What it made possible", text: "Say what people could now do that they could not do before. Example: \"This made it possible to find any address without knowing the city.\"" },
       { label: "What followed", text: "Say the result. Example: \"As a result, a delivery driver can work in a city she has never seen.\" Use this frame: \"Before, [the problem]. Then [the new technology] [what it did], which made it possible to [what it made possible]. As a result, [what followed].\"" }
     ],
-    prompt: "Now do it yourself, twice. First, choose ONE technology that gave more power or made new materials: Watt's steam engine, the Bessemer process, or electric power. Explain it with the frame, using one detail from the lesson. Second, choose ONE technology that gave longer reach: the railroad, the steamship, or the telegraph. Explain it with the frame, and make your \"what followed\" step about trade or migration.",
+    prompt: "Now do it yourself, twice. First, choose ONE technology that gave more power or made new materials: Watt's steam engine, the internal combustion engine, or electric power. Explain it with the frame, using one detail from the lesson. Second, choose ONE technology that gave longer reach: the railroad, the steamship, or the telegraph. Explain it with the frame, and make your \"what followed\" step about trade or migration.",
     criteria: [
       "I explained two technologies, one for power or materials and one for reach.",
       "For each, I said what the problem was before it.",
@@ -99,20 +99,20 @@
       successCriteria: [lesson.successCriteria[0].criteria],
       prompt: "Answer in three steps. (1) Choose ONE machine: Newcomen's steam engine, Watt's steam engine, or the internal combustion engine. Explain step by step how it let people use the energy stored in coal or oil. (2) Give ONE piece of evidence from the lesson that the energy people had grew greatly. (3) Choose ONE new method of the second industrial revolution (steel, chemicals, electricity, or precision machinery) and explain what it let people make or do.",
       responseType: "Checkpoint 1",
-      terms: ["energy", "fossil fuel", "coal", "oil", "steam engine", "Newcomen", "Watt", "separate condenser", "pump", "mine", "wheels", "rivers", "internal combustion", "Otto", "Benz", "Drake", "kerosene", "65 million", "225 million", "half", "steel", "Bessemer", "chemicals", "dye", "Perkin", "BASF", "electricity", "Edison", "Pearl Street", "motor", "interchangeable parts", "machine tools", "made it possible"],
+      terms: ["energy", "fossil fuel", "coal", "oil", "steam engine", "Newcomen", "Watt", "separate chamber", "pump", "mine", "wheels", "rivers", "internal combustion", "Otto", "Benz", "Drake", "kerosene", "65 million", "225 million", "half", "steel", "Bessemer", "chemicals", "dye", "Perkin", "BASF", "electricity", "Edison", "Pearl Street", "motor", "interchangeable parts", "machine tools", "made it possible"],
       focus: ["Explain one machine step by step.", "Give evidence that energy grew.", "Explain one new method and what it made."]
     },
     {
       title: "Checkpoint 2: Longer Reach, More Trade and Migration",
       subtitle: "Checks Learning Target 2 and Success Criterion 2, and Unit 5 Learning Objective F: how technology shaped economic production over time.",
-      cardDesc: "What railroads, steamships, and the telegraph made possible in the interiors of continents, how that led to more trade or migration, and where their power came from.",
+      cardDesc: "What railroads, steamships, and the telegraph made possible in the interiors of continents, how that led to more trade or migration, and what drove railroads and steamships.",
       learningTargets: [lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[1].criteria],
-      prompt: "Explain how railroads, steamships, and the telegraph changed trade or migration between 1830 and 1900, as a chain of causes. (1) Explain what goods and news moved like before these technologies. (2) Choose ONE of the three, and explain what it could do that older ways could not, with one example of a place it reached. (3) Explain how that led to more trade OR more migration, using one number from the lesson. (4) Show where its power or its materials came from: connect it back to coal, steam, or steel.",
+      prompt: "Explain how railroads, steamships, and the telegraph changed trade or migration between 1830 and 1900, as a chain of causes. (1) Explain what goods and news moved like before these technologies. (2) Choose ONE of the three, and explain what it could do that older ways could not, with one example of a place it reached. (3) Explain how that led to more trade OR more migration, using one number from the lesson. (4) Connect the reach back to power: say what drove railroads and steamships, or what their rails and hulls were made of (coal, steam, or steel).",
       responseType: "Checkpoint 2",
       skill: "Causation",
       terms: ["railroad", "railway", "steamship", "telegraph", "interior", "continent", "Promontory", "1869", "Trans-Siberian", "Bombay", "Suez", "Atlantic cable", "1866", "Morse", "53 days", "7 or 8 days", "minutes", "wheat", "Chicago", "Liverpool", "57.6", "15.6", "price", "trade", "migration", "55 million", "29 million", "19 million", "coal", "steam", "steel", "led to", "made it possible"],
-      focus: ["Describe how goods and news moved before.", "Explain what one technology made possible, with a place.", "Explain how it led to more trade or migration, with a number.", "Connect it back to coal, steam, or steel."]
+      focus: ["Describe how goods and news moved before.", "Explain what one technology made possible, with a place.", "Explain how it led to more trade or migration, with a number.", "Connect railroads or steamships back to coal, steam, or steel."]
     }
   ];
 
@@ -129,7 +129,7 @@
       alt: "An engraving of a Newcomen steam engine in a brick engine house: a fire under a round boiler at the bottom, a tall cylinder above it, a great wooden beam rocking on the wall, and chains and pump rods hanging down on the left into the mine",
       url: "../assets/images/topics/5-5/newcomen-engine-engraving-1740s.jpg",
       sourceUrl: "https://wellcomecollection.org/works/gwv62367",
-      caption: "An engraving from the 1740s showing how a Newcomen steam engine worked, with the parts numbered for a reader. Engines like this pumped water out of mines. Wellcome Collection.",
+      caption: "An engraving from the 1740s of a Newcomen steam engine, with the parts numbered for a reader. Wellcome Collection.",
       prompt: "NOTICE where the fire is, and what hangs from the left end of the beam. INFER what job this engine did, and what it burned to do it. An engraving made to explain a machine: what can it not tell you about how many engines like this there were?"
     },
     {
@@ -137,24 +137,24 @@
       alt: "An engraved diagram of two egg-shaped iron vessels: on the left the outside of a Bessemer converter, mounted on a pivot with a gear wheel; on the right the same vessel cut open to show a thick lining and holes in the bottom",
       url: "../assets/images/commons/bessemer-converter-440883.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Bessemer_converter.jpg",
-      caption: "An engraved diagram of a Bessemer converter, drawn twice: A, the outside, on a pivot so it could tip to pour; B, cut open to show its lining and the holes where air was blown up through the melted iron. A diagram, not a picture of a real works.",
+      caption: "An engraved diagram of a Bessemer converter, drawn twice: A, the outside, on a pivot so it could tip to pour; B, cut open to show its lining and the holes at the bottom. A diagram, not a picture of a real works.",
       prompt: "NOTICE the holes at the bottom of drawing B. INFER what came in through them, and what that did to the melted iron inside. A diagram shows how something works: what can it not tell you about how big a real converter was, or how much steel it made?"
     },
     {
       title: "An Oil Rig at Titusville, about 1900",
-      alt: "An old hand-colored photograph of a tall wooden oil derrick on a hillside, with a group of workmen standing beside a steam boiler and a tall smokestack on the right",
+      alt: "An old black-and-white photograph of a tall wooden oil derrick on a hillside, with a group of workmen standing beside a steam boiler and a tall smokestack on the right",
       url: "../assets/images/topics/5-5/oil-rig-titusville-c1900.jpg",
       sourceUrl: "https://www.loc.gov/pictures/item/2012647896/",
-      caption: "A photograph of an oil rig at Titusville, Pennsylvania, where Edwin Drake struck oil in 1859, taken about 1900 by a photographer named Mather and colored by hand. Library of Congress.",
+      caption: "A photograph of an oil rig at Titusville, Pennsylvania, where Edwin Drake struck oil in 1859, taken about 1900 by a photographer named Mather. The print is labeled \"hand-colored,\" but the copy shown here is black and white. Library of Congress.",
       prompt: "NOTICE the machine on the right, with its smokestack. INFER what powered the drilling, and what that tells you about how one fossil fuel helped people get another. One rig is one place: what can it not tell you about how oil was used in 1900?"
     },
     {
       title: "The Great Eastern Carries the Atlantic Cable, 1866",
-      alt: "An engraving of a huge iron steamship with six masts, smokestacks and American and British flags, beside a smaller wooden sailing warship at the left, while men in rowing boats wave in the foreground",
+      alt: "An engraving of a huge iron steamship with six masts, smokestacks and American and British flags, beside a smaller ship with three masts at the left, while men in rowing boats wave in the foreground",
       url: "../assets/images/topics/5-5/great-eastern-atlantic-cable-1866.jpg",
       sourceUrl: "https://www.loc.gov/pictures/item/2022637951/",
       caption: "An engraving from the Illustrated London News of 14 July 1866: the steamship Great Eastern leaving Sheerness, England, with the Atlantic telegraph cable on board. Later that month it laid the first cable across the Atlantic that kept working. Library of Congress.",
-      prompt: "NOTICE the two ships: what drives each one? INFER why only a ship like the Great Eastern could carry a cable across an ocean. A newspaper picture made to celebrate: what can it not tell you about how the cable changed trade?"
+      prompt: "NOTICE the Great Eastern's smokestacks, its paddle box, and its six masts. INFER what drives it, and why the cable needed a ship this large. A newspaper picture made to celebrate: what can it not tell you about how the cable changed trade?"
     },
     {
       title: "Across the Continent, 1868",

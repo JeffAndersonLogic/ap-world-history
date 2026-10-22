@@ -25,7 +25,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "text": "Name two places the factory methods spread to."
           }
         ],
-        "turn": "Factories needed **power**, and coal could only keep you warm. What happened when machines learned to turn coal into **motion**? **How far could the world reach then?**"
+        "turn": "Factories needed **power**, and most coal was still burned for heat. What happened when machines learned to turn coal into **motion**? **How far could the world reach then?**"
       }
     },
     {
@@ -145,7 +145,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "source-quote",
       "eyebrow": "A Voice from 1865",
       "title": "What did coal mean to the people who used it?",
-      "footer": "Who wrote this, and what did he want his readers to worry about?",
+      "footer": "Jevons, a British economist, feared that Britain's cheap coal would run out.",
       "kc": "KC-5.1.I.B",
       "template": {
         "quote": "With coal almost any feat is possible or easy; without it we are thrown back into the laborious poverty of early times.",
@@ -185,7 +185,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         ],
         "visual": {
           "url": "../assets/images/topics/5-5/oil-rig-titusville-c1900.jpg",
-          "alt": "An old hand-colored photograph of a tall wooden oil derrick on a hillside, with a group of workmen standing beside a steam boiler and a tall smokestack on the right",
+          "alt": "An old black-and-white photograph of a tall wooden oil derrick on a hillside, with a group of workmen standing beside a steam boiler and a tall smokestack on the right",
           "credit": "Oil rig at Titusville, Pennsylvania, photograph by Mather, about 1900 · Library of Congress · Public domain",
           "ratio": 1.466,
           "fit": "cover",
@@ -299,7 +299,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "timeline",
       "eyebrow": "Longer Reach · Railroads",
       "title": "Railroads reached the middle of continents.",
-      "footer": "Russia: 27 km of railway in 1840, over 53,000 km in 1900. Germany: 469 km to over 51,000.",
+      "footer": "Russia: 27 km of railway in 1840, over 53,000 km in 1900. Germany: 469 km in 1840, over 51,000 km in 1900.",
       "kc": "KC-5.1.IV",
       "template": {
         "range": [
@@ -409,6 +409,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "cause-rank",
       "eyebrow": "Rank the Five",
       "title": "Which technology changed the world most by 1900?",
+      "footer": "Listed in the College Board's order, not ranked. The ranking is yours.",
       "template": {
         "causes": [
           {
@@ -420,16 +421,16 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "note": "Reached the middle of continents"
           },
           {
+            "label": "The internal combustion engine",
+            "note": "Burned oil inside the engine"
+          },
+          {
             "label": "The steamship",
             "note": "Crossed oceans in days, not weeks"
           },
           {
             "label": "The telegraph",
             "note": "Sent news in minutes"
-          },
-          {
-            "label": "The internal combustion engine",
-            "note": "Burned oil inside the engine"
           }
         ],
         "prompt": "Rank them 1 to 5. **Defend your number one** in one sentence, with one piece of evidence."
@@ -450,12 +451,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "myth": "One invention changed everything.",
             "evidence": "Each needed the others: railroads needed steam, coal, then steel; many telegraph lines ran beside the tracks.",
-            "source": "KC-5.1.I.E"
+            "source": "KC-5.1.I.E, KC-5.1.IV"
           },
           {
             "myth": "By 1900 the world ran on electricity and cars.",
             "evidence": "Motors gave under 5 percent of US factory power in 1899; the US had about 8,000 cars in 1900.",
-            "source": "KC-5.1.I.B"
+            "source": "KC-5.1.I.B, KC-5.1.I.E"
           }
         ]
       }
@@ -539,7 +540,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "action",
       "eyebrow": "Module 10 · Checkpoint 2",
       "title": "How did railroads, steamships and the telegraph change trade and migration?",
-      "subtitle": "Explain what each did that older ways could not, how one of them reached an interior region, and how that led to more trade or more migration, with a number. Then show where its power came from. If it is not finished in class, it is homework.",
+      "subtitle": "Explain what each did that older ways could not, how one of them reached an interior region, and how that led to more trade or more migration, with a number. Then connect railroads or steamships back to coal, steam or steel. If it is not finished in class, it is homework.",
       "action": {
         "label": "Open Student Lesson",
         "url": "lesson-5-5-technology-of-industrialization.html#modules"
