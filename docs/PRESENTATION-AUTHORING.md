@@ -292,6 +292,8 @@ Draw them with `frame-subtitle`, as Topic 3.4 does. Compose each picture so its 
 
 `scripts/test/teaching-os-architecture.test.js` enforces this. Slides that predate the rule are listed in its `OWED` set, a ratchet that only shrinks, and `docs/QUESTION-AND-LANDING-IMAGE-PROMPTS.md` has a prompt for each one.
 
+**Since 2026-10-22 (Jeff): the landing slide's picture is an AI historical cinematic reconstruction**, labeled through `ai: true`, not a real painting or print. Historical accuracy is a requirement written into the prompt itself: the period details spelled out, the usual mistakes for that scene named, and a three-item check before the picture is used. `docs/LANDING-SLIDE-CINEMATIC-PROMPTS.md` holds the master prompt and one prompt per deck from Topic 3.3 on. The same test's `AI_LANDING_OWED` set lists the decks that predate this rule; a new deck must comply, and a deck comes off the list when its picture is wired in. A real painting that loses its place on a landing slide is not dropped silently: it moves to a slide of its own or its notes say where it went.
+
 Projected slides should feel closer to museum exhibits than textbook pages: a clear argument, purposeful visual evidence, and only enough text to orient the room.
 
 Teacher Intelligence carries the depth.

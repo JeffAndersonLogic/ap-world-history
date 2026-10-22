@@ -19,6 +19,8 @@ The rules these pictures live under (`docs/PRESENTATION-AUTHORING.md`, "AI-gener
 - **Never in the Evidence Lab**, and never called evidence anywhere, slide notes included.
 - A picture that fails a "check before use" item is regenerated or dropped, not captioned around.
 
+**Landing prompts from Topic 3.3 on moved on 2026-10-22** to `docs/LANDING-SLIDE-CINEMATIC-PROMPTS.md`, rewritten with historical accuracy as a requirement inside each prompt. Use that file for the 3.3, 4.1, 4.2 and 4.3 landing pictures; prompts 7, 9, 11 and 13 below are kept for the record.
+
 No generator can promise accuracy. The prompts name the period details and list the common
 errors to exclude; the check after generation is what makes a picture usable.
 

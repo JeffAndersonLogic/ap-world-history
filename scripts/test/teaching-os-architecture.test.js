@@ -235,6 +235,34 @@ for (const deck of DECKS) {
   }
 }
 
+// Jeff, 2026-10-22: the landing slide goes further. Its picture is an AI
+// historical cinematic reconstruction (`ai: true`, so the slide prints the
+// Historical Reconstruction - AI Generated label), not a real painting. The
+// same ratchet: AI_LANDING_OWED lists the decks that predate the rule, and
+// docs/LANDING-SLIDE-CINEMATIC-PROMPTS.md has the prompt for each from 3.3 on.
+console.log('\n  AI reconstruction on the landing slide\n');
+const AI_LANDING_OWED = new Set([
+  '2.1', '2.2', '2.3', '2.7', '3.1', '3.2', '3.3', '4.1', '4.2', '4.3',
+  '4.4', '4.5', '4.6', '4.7', '4.8', '5.1', '5.2', '5.3'
+]);
+function aiLanding(s) {
+  const t = s && s.template || {};
+  const vis = [t.visual, s && s.visual, ...(Array.isArray(t.panels) ? t.panels.map(p => p && p.visual) : [])].filter(v => v && v.url);
+  return cinematic(s) && vis.some(v => v.ai === true);
+}
+check('control: a real painting is not an AI landing', !aiLanding({ kind: 'frame-subtitle', template: { visual: pic } }));
+check('control: words alone are not an AI landing', !aiLanding({ kind: 'question', title: 'Q' }));
+check('control: an AI map is not an AI landing', !aiLanding({ kind: 'frame-subtitle', template: { visual: { url: 'x/topic-9-9.svg', ai: true } } }));
+check('control: an AI scene is an AI landing', aiLanding({ kind: 'frame-subtitle', template: { visual: { ...pic, ai: true } } }));
+for (const deck of DECKS) {
+  const sandbox = { window: {}, console, encodeURIComponent, decodeURIComponent };
+  vm.createContext(sandbox);
+  for (const rel of deck.sources) vm.runInContext(read(rel), sandbox, { filename: rel });
+  const ok = aiLanding(bookends(sandbox.window.BEHISTORICAL_TEACHING.slides).landing);
+  if (AI_LANDING_OWED.has(deck.key)) check(`${deck.key} landing is still owed an AI reconstruction (take it off AI_LANDING_OWED once fixed)`, !ok, ok ? 'fixed: take it off AI_LANDING_OWED' : 'owed');
+  else check(`${deck.key} landing closes on an AI historical reconstruction`, ok);
+}
+
 // Jeff, 2026-10-21: no more box slides. The `grid` kind, a 2x2 grid of small
 // cards, is overused and hard to read from the back of the room; on 2026-10-14
 // it was replaced on 3.4, and on 2026-10-21 on 3.3. A ratchet of the same
