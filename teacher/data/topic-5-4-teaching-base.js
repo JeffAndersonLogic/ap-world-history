@@ -255,14 +255,14 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'carriers', kind: 'equation', eyebrow: 'How It Spread · What Carried It',
       kc: 'KC-5.1.I.D', title: 'Three things traveled together.',
-      footer: 'Most took root near coal, or by rivers that could turn wheels.',
+      footer: 'Ask of every case: what carried the methods there, and what was waiting when they arrived?',
       template: {
         terms: [
           { word: 'People', note: 'who knew the machines: Slater, Cockerill, Hughes' },
           { word: 'Machines', note: 'from Britain: the Nuremberg engine, Osaka\'s spindles' },
           { word: 'Money', note: 'to pay first: Boston merchants at Lowell' }
         ],
-        result: { word: 'A factory in a new place', note: 'near coal or a river' }
+        result: { word: 'A factory in a new place', note: 'and what was waiting there?' }
       },
       notes: {
         minutes: 2,
@@ -458,7 +458,7 @@ window.BEHISTORICAL_TEACHING = {
         rows: [
           { myth: 'Asia stopped making things.', evidence: 'It kept making them: India\'s hand weavers, China\'s farm weavers, Bombay\'s teak warships. Its share fell.', source: 'KC-5.1.II.B' },
           { myth: 'Industry spread everywhere.', evidence: 'It spread to a few regions, mostly near coal or strong rivers: other parts of Europe, the United States, Russia and Japan.', source: 'KC-5.1.I.D' },
-          { myth: 'India fell behind only because British machines were better.', evidence: 'The machines were cheaper, but the rules of those in power mattered too, and historians argue how much.', source: 'KC-5.1.II.B' }
+          { myth: 'India fell behind only because British machines were better.', evidence: 'Machine-made cloth was cheaper, but the rules of those in power mattered too, and historians argue how much.', source: 'KC-5.1.II.B' }
         ]
       },
       notes: {

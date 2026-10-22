@@ -1043,7 +1043,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In Russia and Japan, the big growth came later, mostly after 1870. A Welsh engineer named John Hughes built ironworks in the coal country of southern Russia in the early 1870s; the town that grew up around them was named Yuzovka, after him. In Japan, the Osaka Spinning Company opened in 1883 with cotton-spinning machines made in Britain, driven by <span class=\"kt\">steam power</span>, and it ran day and night. The Japanese government also pushed industry on purpose; that is Topic 5.6."
+            "html": "In Russia and Japan, the big growth came later, mostly after 1870. A Welsh engineer named John Hughes built ironworks in the coal country of the southern Russian Empire, in what is today eastern Ukraine, in the early 1870s; the town that grew up around them was named Yuzovka, after him (today it is the city of Donetsk). In Japan, the Osaka Spinning Company opened in 1883 with cotton-spinning machines made in Britain, driven by <span class=\"kt\">steam power</span>, and it ran day and night. The Japanese government also pushed industry on purpose; that is Topic 5.6."
           },
           {
             "type": "p",

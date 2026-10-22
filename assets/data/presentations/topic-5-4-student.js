@@ -165,7 +165,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "equation",
       "eyebrow": "How It Spread · What Carried It",
       "title": "Three things traveled together.",
-      "footer": "Most took root near coal, or by rivers that could turn wheels.",
+      "footer": "Ask of every case: what carried the methods there, and what was waiting when they arrived?",
       "kc": "KC-5.1.I.D",
       "template": {
         "terms": [
@@ -184,7 +184,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         ],
         "result": {
           "word": "A factory in a new place",
-          "note": "near coal or a river"
+          "note": "and what was waiting there?"
         }
       }
     },
@@ -463,12 +463,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "visual": {
               "url": "../assets/images/topics/5-4/weaver-at-his-loom-tanjore-c1840.jpg",
               "alt": "An Indian painting of a man in a white turban and white cloth sitting at a hand loom, weaving a long red patterned cloth, with his feet on the treadles and cords hanging from above",
-              "credit": "Weaver at his loom, gouache, Tanjore, about 1840 · Wellcome Collection · Public domain",
+              "credit": "Weaver at his loom, gouache, attributed to a Tanjore painter, about 1840 · Wellcome Collection · Public domain",
               "ratio": 0.735,
               "fit": "cover",
               "position": "50% 45%"
             },
-            "caption": "A weaver, Tanjore, about 1840"
+            "caption": "A weaver, painted in Tanjore style, about 1840"
           },
           {
             "visual": {
@@ -536,7 +536,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "myth": "India fell behind only because British machines were better.",
-            "evidence": "The machines were cheaper, but the rules of those in power mattered too, and historians argue how much.",
+            "evidence": "Machine-made cloth was cheaper, but the rules of those in power mattered too, and historians argue how much.",
             "source": "KC-5.1.II.B"
           }
         ]

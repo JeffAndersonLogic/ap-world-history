@@ -49,14 +49,14 @@ const OPENING={url:COMMONS+'the-opening-of-the-great-exhibition-by-queen-victori
 const PALAMPORE={url:IMG+'palampore-coromandel-coast-early-1700s.jpg',alt:'A hand-painted Indian cotton hanging: a flowering tree with large red, blue and purple blossoms grows from stylized rocks on a cream ground, inside a wide red floral border',credit:'Palampore, painted and dyed cotton, Coromandel Coast, India, early 1700s · The Metropolitan Museum of Art · Public domain',ratio:0.699,fit:'contain'};
 // Slater Mill (c. 1869) is on the lecture card; it is too small to read inside the case file.
 const SLATER_UNUSED={url:IMG+'slater-mill-pawtucket-c1869.jpg',alt:'An old photograph of a wooden mill with a bell tower and a sign on its gable, standing beside a dam where water pours over into the river',credit:'Slater Mill, Pawtucket, about 1869, stereo photograph · Library of Congress, HAER copy · Public domain',ratio:0.947,position:'50% 45%'};
-const WEAVER={url:IMG+'weaver-at-his-loom-tanjore-c1840.jpg',alt:'An Indian painting of a man in a white turban and white cloth sitting at a hand loom, weaving a long red patterned cloth, with his feet on the treadles and cords hanging from above',credit:'Weaver at his loom, gouache, Tanjore, about 1840 · Wellcome Collection · Public domain',ratio:0.735,fit:'cover',position:'50% 45%'};
+const WEAVER={url:IMG+'weaver-at-his-loom-tanjore-c1840.jpg',alt:'An Indian painting of a man in a white turban and white cloth sitting at a hand loom, weaving a long red patterned cloth, with his feet on the treadles and cords hanging from above',credit:'Weaver at his loom, gouache, attributed to a Tanjore painter, about 1840 · Wellcome Collection · Public domain',ratio:0.735,fit:'cover',position:'50% 45%'};
 const SHIPS={url:IMG+'great-exhibition-1851-india-ship-models.jpg',alt:'A faded photograph inside the Crystal Palace: a hanging sign reads INDIA above model sailing ships with triangular sails and ceremonial parasols, under an iron and glass roof',credit:'Hugh Owen, Naval Models, India, Great Exhibition, photograph, 1851 · Rijksmuseum · Public domain',ratio:1.323,fit:'cover',position:'45% 60%'};
 const LOWELL={url:IMG+'lowell-mills-merrimack-river-1900s.jpg',alt:'A photograph looking down a calm river at a long row of brick mill buildings along the left bank, with several tall smokestacks, some smoking, stretching into the distance',credit:'Mills on the Merrimack River, Lowell, Massachusetts, photograph, 1900 to 1910 · Library of Congress · Public domain',ratio:1.255,position:'50% 50%'};
 const setTemplate=(phase,add)=>{const s=by(phase);if(s)s.template=Object.assign({},s.template||{},add);return s;};
 setTemplate('question',{visual:Object.assign({},OPENING,{tagPos:'bl'})});
 setTemplate('before',{visual:PALAMPORE,caption:'Painted cotton from India, early 1700s'});
 setTemplate('continued',{pictures:[
-  {visual:WEAVER,caption:'A weaver, Tanjore, about 1840'},
+  {visual:WEAVER,caption:'A weaver, painted in Tanjore style, about 1840'},
   {visual:SHIPS,caption:'Model Indian sailing craft, London, 1851, not the dockyard'}
 ]});
 setTemplate('close',{visual:Object.assign({},LOWELL,{tagPos:'bl'})});

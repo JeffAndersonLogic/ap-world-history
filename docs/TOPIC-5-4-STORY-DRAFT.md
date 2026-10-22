@@ -1,8 +1,7 @@
 # Topic 5.4 Story Draft: Industrialization Spreads in the Period from 1750 to 1900
 
-**Status: Delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12).**
+**Status: Approved 2026-10-22 by the independent reviewer loop (Jeff's standing rule of 2026-10-12), after three review passes; the loop closed on the three-pass safety valve. Every finding is fixed or logged in `docs/TOPIC-5-4-CLAIM-LEDGER.md`.**
 
-**Resume here (2026-10-22):** Phases 0 to 8 done (pictures from the Met, the Wellcome Collection, the Rijksmuseum and the Library of Congress; Primary Source is Montgomery Martin, 1840, via Dutt). Next: Phase 9, review pass 1. The Unit 5 fingerprint has not moved yet.
 
 **Taught:** no dates yet. The schedule ends with the Era 3 Exam (Green Monday 2026-11-23, Silver
 Tuesday 2026-11-24), and neither the schedule nor the Notion task names a Unit 5 class day (5.1 to

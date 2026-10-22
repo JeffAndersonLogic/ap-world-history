@@ -1,7 +1,6 @@
 # Topic 5.4 Claim Ledger: Industrialization Spreads in the Period from 1750 to 1900
 
-**Status: open. Started with the story draft (2026-10-22); every claim was checked against sources
-before the surfaces were finished, and the review findings are at the end.**
+**Status: closed 2026-10-22 after three review passes (the safety valve). Started with the story draft; every claim was checked against sources before the surfaces were finished. Review findings and their dispositions are at the end.**
 
 **The CED decides scope; scholarship decides truth.** The CED (`scripts/lib/ced-source/unit-5.js`,
 p. 103) gives 5.4 one learning objective (E), two Key Concepts (KC-5.1.II.B and KC-5.1.I.D) and three
@@ -201,3 +200,16 @@ Two fresh reviewers, from a fresh packet after the pass 2 fixes.
 10. The CHINA label sat nearer Japan. **Fixed:** below its region.
 11. BeInTheRoom's 1860 figure inside an 1851 scene; the Moscow role had no evidence on the page; Lowell "worked mostly by young women" in 1851. **Fixed:** the card says the estimate was made long after; the Moscow merchant is replaced by a Rhineland mill owner, whom the coal and laws cards support; Lowell was "first worked mostly by" them.
 12. No Canvas text. **Rejected:** as in pass 2; the overview is written and the event and assignment wait for dates.
+
+**History (5 findings; all fixed).**
+1. Slide 8 and BeInTheRoom's reflection printed the finished pattern (the fourth reviewer to raise the carriers or the pattern). **Fixed:** slide 8 keeps the three carriers, its result reads "and what was waiting there?" and its footer asks the two questions; the reflection asks whether the student's choice fits "the pattern you found."
+2. The deep reading said "Meanwhile Britain taxed Indian cloth heavily: around 1813," putting it in the same years as the 2½ percent rate. **Fixed:** "Earlier, Britain had taxed," matching the reading and slide 15.
+3. Slide 16 said "The machines were cheaper"; it was the cloth. **Fixed:** "Machine-made cloth was cheaper."
+4. Yuzovka placed in "southern Russia," and the lecture card's "in a town named after him." **Fixed:** "the southern Russian Empire (today eastern Ukraine)," "the town that grew up around them was named Yuzovka, after him (today Donetsk)," on the reading, the lecture card and the deep reading.
+5. Slide 14's credit and caption dropped the Wellcome's "attributed to." **Fixed:** "attributed to a Tanjore painter"; caption "A weaver, painted in Tanjore style."
+
+### Close of the loop
+
+Three full passes, six reviewers: 29, 20 (10 and 10) and 17 (12 and 5) supported findings, every one fixed, answered or logged as an adjacent finding. The loop ended on the three-pass safety valve. Pass 3 was trending down to wording and teaching-device points: no wrong date, number or quotation survived to it; its history reviewer found five narrow fixes and checked Martin's passages, every picture record and every Bairoch figure as sound. The repeated finding across passes was the pattern answer printed on practice surfaces (passes 1, 2 and 3), fixed at its root in pass 3 by taking the carriers and the pattern off every practice surface. Story and reading approval were delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12).
+
+The Unit 5 fingerprint (`APPROVED_UNIT5_REWRITE_BLOB` in `scripts/test/readings-golden.js`) moved to the reviewed 5.4 text after the loop; against `main` at `1161bb82` only the 5.4 entry of `unit-5.js` changed, and a one-character mutation was shown to fail the check before the green was trusted.
