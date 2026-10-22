@@ -297,6 +297,11 @@ Pass 3 totals: 20 findings, 16 fixed, 2 already fixed, 2 rejected. No wrong date
 the history defects were one disputed number stated as settled, one overstated law, one glossary
 contradiction and three credit or caption details.
 
+After the loop, the strict browser suite in the brand fonts caught slide 17's restored quotation
+painting 44px below its board (and 58 to 73px in the student deck). **Fixed:** the clause "and without
+any of them having been educated to this peculiar business" is cut with an ellipsis on the slide
+only (the Primary Source module keeps it); both suites then passed.
+
 **The loop ends here on the three-pass safety valve** (build-topic Phase 9: fresh reviewers each
 round until a clean round or three rounds). Pass 3 was not clean, but every finding is fixed or
 logged above, the defects shrank in each pass (pass 1: 22 fixed; pass 2: 19; pass 3: 16) and moved

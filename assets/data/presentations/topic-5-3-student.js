@@ -416,7 +416,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Ten men, eighteen steps, forty-eight thousand pins.",
       "kc": "KC-5.1.I.C",
       "template": {
-        "quote": "Those ten persons, therefore, could make among them upwards of forty-eight thousand pins in a day. ... But if they had all wrought separately and independently, and without any of them having been educated to this peculiar business, they certainly could not each of them have made twenty, perhaps not one pin in a day",
+        "quote": "Those ten persons, therefore, could make among them upwards of forty-eight thousand pins in a day. ... But if they had all wrought separately and independently ... they certainly could not each of them have made twenty, perhaps not one pin in a day",
         "attribution": "Adam Smith, The Wealth of Nations, Book I, chapter 1, 1776",
         "notice": "Smith says he saw this: ten men shared about **eighteen steps**, so each did only one, two or three of them."
       }
