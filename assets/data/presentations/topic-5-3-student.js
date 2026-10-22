@@ -95,7 +95,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "label": "What nature gave",
             "note": "In Britain's ground and water",
             "items": [
-              "Rivers, coast, canals",
+              "Rivers and coast",
               "Coal, iron, too little timber"
             ]
           },
@@ -103,7 +103,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "label": "What people built",
             "note": "On top of what nature gave",
             "items": [
-              "Towns and better farming",
+              "Canals, towns, better farming",
               "Property laws",
               "Foreign resources and capital"
             ]
@@ -389,12 +389,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "visual": {
               "url": "../assets/images/topics/5-3/carding-drawing-roving-allom-engraving.jpg",
               "alt": "An engraving of a long mill room: on the left a row of big drum-shaped carding machines driven by belts from wheels on the ceiling; a girl crouches by tall cans of cotton and a young woman lifts another can; on the right, rows of upright drawing frames; more women work down the aisle",
-              "credit": "Carding, Drawing, and Roving, engraving after a design credited to Thomas Allom, 1830s · Wellcome Collection · Public domain",
+              "credit": "Carding, Drawing, and Roving, engraving, 19th century · Wellcome Collection · Public domain",
               "ratio": 1.329,
               "fit": "cover",
               "position": "30% 60%"
             },
-            "caption": "Carding, drawing and roving, 1830s"
+            "caption": "Carding, drawing and roving"
           },
           {
             "visual": {
@@ -418,7 +418,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "quote": "Those ten persons, therefore, could make among them upwards of forty-eight thousand pins in a day. ... But if they had all wrought separately and independently ... they certainly could not each of them have made twenty, perhaps not one pin in a day",
         "attribution": "Adam Smith, The Wealth of Nations, Book I, chapter 1, 1776",
-        "notice": "Smith saw a small **workshop**, not a powered factory. Ten men shared about **eighteen steps**, so each did only one, two or three of them."
+        "notice": "Count the men and the steps: ten men shared about **eighteen steps**, so each did only one, two or three of them."
       }
     },
     {
@@ -442,7 +442,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Power",
-            "left": "Hands, a wheel and a loom",
+            "left": "Human muscle, at a spinning wheel and loom",
             "right": "A water wheel turning every machine"
           },
           {
@@ -496,7 +496,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "word": "Water",
-            "note": "rivers, coast, canals"
+            "note": "rivers, coast, streams"
           },
           {
             "word": "Food and towns",

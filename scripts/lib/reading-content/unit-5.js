@@ -743,7 +743,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>Two kinds of causes.</strong> The College Board lists seven factors behind the Industrial Revolution. Two come from nature: waterways, and where coal, iron, and timber were found. Five were built by people: towns, better farming, laws that protected property, resources from abroad, and saved-up money. The College Board lists all seven under its question about environmental factors; sorting them into two groups is this course's way to think about them. As you read, sort each factor.</p>"
+          "raw": "<p><strong>Two kinds of causes.</strong> The College Board lists seven factors behind the Industrial Revolution. Two come from nature: waterways, and where coal, iron, and timber were found. Five were built by people: towns, better farming, laws that protected property, resources from abroad, and saved-up money. Canals sit in between: nature's water, dug into new places by people. The College Board lists all seven under its question about environmental factors; sorting them into two groups is this course's way to think about them. As you read, sort each factor.</p>"
         }
       },
       {

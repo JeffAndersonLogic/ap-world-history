@@ -210,7 +210,7 @@ module.exports = {
           heading: 'Laws that protected property',
           blocks: [
             { p: `In Britain, Parliament, where landowners and merchants sat, passed the laws that enclosed fields and allowed canals to be dug. Since <span class="num">1624</span>, English law had also let an inventor take out a <span class="kt">patent</span>: the sole right to use a new invention for up to fourteen years. In <span class="num">1769</span> Richard Arkwright patented a new spinning machine. A person who invested could expect the law to protect what he built.` },
-            { p: `The protection had limits. Arkwright's 1769 spinning patent ran out in <span class="num">1783</span>, and in <span class="num">1785</span> a court canceled his <span class="num">1775</span> patent on his carding and preparing machines, partly because the jury found the ideas were other men's.` }
+            { p: `The protection had limits. Arkwright's 1769 spinning patent ran out in <span class="num">1783</span>, and in <span class="num">1785</span> a court canceled his <span class="num">1775</span> patent on his carding and preparing machines, finding his written description of them unclear; the court also heard claims that other men had invented them.` }
           ]
         },
         {
@@ -315,7 +315,7 @@ module.exports = {
       {
         category: 'Causation',
         title: 'How the factors combined',
-        body: `The Bridgewater Canal needed coal, water, an act of Parliament, the duke's money and a growing town. Pick another pair of factors and show how one made the other pay off: for example, cotton from abroad and water power at Cromford, or towns and canals in Manchester.`
+        body: `The Bridgewater Canal needed coal, water, an act of Parliament, the duke's money and a growing town. Pick another pair of factors and show how one made the other pay off.`
       },
       {
         category: 'Change',

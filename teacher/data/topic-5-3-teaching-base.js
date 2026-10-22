@@ -107,7 +107,7 @@ window.BEHISTORICAL_TEACHING = {
           'The CED prints no illustrative examples and no sample activity for 5.3. Every case in this deck is the build\'s choice: Coalbrookdale (coal, iron, timber), the Bridgewater Canal (water, and the factors combined), Manchester (towns), Arkwright\'s mill at Cromford (the factory), Adam Smith\'s pin workshop (specialization).',
           'Owns: the seven factors and the factory system. Bridge only: the steam engine and fossil fuels (5.5), the spread of industry beyond Britain (5.4, the hand-off), Adam Smith\'s free-trade argument (5.7; his pins are used here only for specialization), workers\' lives and the new classes (5.9), Luddites, unions and the Factory Acts (5.8).',
           'Three myths, on slide 19: "Britain had coal, so it industrialized"; "Cromford was the first factory"; "the steam engine started it."',
-          'Every picture is a real object of the period, public domain: Philip James de Loutherbourg\'s Coalbrookdale by Night (1801, Science Museum, London); two engravings of cotton-mill rooms from the 1830s, after Thomas Allom (Wellcome Collection); a cotton plant etched by J. Pass after Maria Sibylla Merian (London, 1807, Wellcome Collection); William Wyld\'s Manchester from Kersal Moor (1852, Royal Collection). None is AI-generated. No period picture of Cromford Mill could be sourced in this build; slide 15 carries it in words.'
+          'Every picture is a real object of the period, public domain: Philip James de Loutherbourg\'s Coalbrookdale by Night (1801, Science Museum, London); two 19th-century engravings of cotton-mill rooms, one drawn by Thomas Allom in 1834 (Wellcome Collection); a cotton plant etched by J. Pass after Maria Sibylla Merian (London, 1807, Wellcome Collection); William Wyld\'s Manchester from Kersal Moor (1852, Royal Collection). None is AI-generated. No period picture of Cromford Mill could be sourced in this build; slide 15 carries it in words.'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
         listenFor: 'Britain\'s coal, iron and water made fuel, metal and transport cheap in the same places, and its shortage of wood pushed it to coal; better farming, growing towns, property laws, foreign cotton and capital made it worth building factories; and the factory put the work in one place and split it into small, specialized jobs.',
@@ -202,8 +202,8 @@ window.BEHISTORICAL_TEACHING = {
         claimLabel: 'The College Board lists',
         claim: '**Seven factors** behind industrial production',
         branches: [
-          { label: 'What nature gave', note: 'In Britain\'s ground and water', items: ['Rivers, coast, canals', 'Coal, iron, too little timber'] },
-          { label: 'What people built', note: 'On top of what nature gave', items: ['Towns and better farming', 'Property laws', 'Foreign resources and capital'] }
+          { label: 'What nature gave', note: 'In Britain\'s ground and water', items: ['Rivers and coast', 'Coal, iron, too little timber'] },
+          { label: 'What people built', note: 'On top of what nature gave', items: ['Canals, towns, better farming', 'Property laws', 'Foreign resources and capital'] }
         ]
       },
       notes: {
@@ -314,7 +314,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'KC-5.1.I.A: "Legal protection of private property," "Access to foreign resources," "Accumulation of capital."',
           'The picture is a real print: a hand-colored etching of a cotton plant by J. Pass after a drawing by Maria Sibylla Merian, published by J. Wilkes in London on 20 June 1807, Wellcome Collection, public domain. The Wellcome identifies the plant as tree cotton (Gossypium arboreum), an Old World species, so it shows what cotton is, not where Britain\'s came from. Merian drew the plants and insects of Suriname, a Dutch plantation colony in South America, where she worked from 1699 to 1701; her 1705 book has a cotton plant with a caterpillar like this one. It shows the raw material, not a plantation.',
-          'Laws: the Statute of Monopolies (1624), section 6, allowed patents for "new manufactures" to "the true and first inventor" for "the term of fourteen years or under." Parliament, where landowners and merchants sat, passed the enclosure and canal acts. Arkwright patented his water frame in 1769 (Clark). A twist for the myths slide: his 1769 spinning patent ran out in 1783, and in 1785 a court (R v Arkwright) canceled his 1775 patent on carding and preparing machines, partly because the jury found the ideas were others\'.',
+          'Laws: the Statute of Monopolies (1624), section 6, allowed patents for "new manufactures" to "the true and first inventor" for "the term of fourteen years or under." Parliament, where landowners and merchants sat, passed the enclosure and canal acts. Arkwright patented his water frame in 1769 (Clark). A twist for the myths slide: his 1769 spinning patent ran out in 1783, and in 1785 a court (R v Arkwright) canceled his 1775 patent on carding and preparing machines: the specification was found unclear, and the court heard claims that others (Highs, Kay, Hargreaves) had invented them.',
           'Foreign resources: Science and Industry Museum, Manchester: "By the 1780s, most of the cotton spun and woven in Manchester was grown by enslaved people on plantations in the Caribbean and South America"; "By 1860, plantations in the United States supplied almost 90 percent of the cotton spun and woven in Lancashire\'s mills." The United States sent Britain almost no cotton before the 1790s. Clark: raw cotton used in Britain rose from 2.6 million pounds in 1760 to 51.6 million in 1800.',
           'Capital: Arkwright\'s partners Samuel Need, "a wealthy Nottingham hosier," and Jedediah Strutt, co-inventor of the Derby rib stocking frame, joined him by 1770 (Belper Research; Derwent Valley Mills). Clark: the partnership spent about £12,000 before it made a profit in 1774, when a carpenter earned no more than £36 a year; other accounts attach the £12,000 to Arkwright\'s carding machine, so the slide says only that money was risked before profit. How much British capital came from slavery and the slave trade is still argued (Eric Williams, Capitalism and Slavery, 1944, and his critics): say "including" and "some," never "paid for it all."'
         ],
@@ -460,7 +460,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.1.I.C: the factory system "led to an increasing degree of specialization of labor."',
-          'The pictures are real prints, public domain in the Wellcome Collection: "Mule Spinning," drawn by Thomas Allom, engraved by J. W. Lowry, published by Fisher, Son and Co., London, 1834; and "Carding, Drawing, and Roving," the preparing room, from an unsigned plate headed "Economic Botany: The Cotton Manufacture," after a design credited to Allom. The Wellcome record names no maker or date for that plate. Both show mills sixty years after Cromford, with steam-era iron frames and belts; say so. They are views made for a book about the cotton trade, and they show the rooms clean and calm.',
+          'The pictures are real prints, public domain in the Wellcome Collection: "Mule Spinning," drawn by Thomas Allom, engraved by J. W. Lowry, published by Fisher, Son and Co., London, 1834; and "Carding, Drawing, and Roving," the preparing room, from an unsigned 19th-century book plate headed "Economic Botany: The Cotton Manufacture"; the Wellcome record names no maker or date for it. Both show mature mills, decades after Cromford, with iron frames and belts; say so. Both were made to show mills to the public, and they show the rooms clean and calm.',
           'Andrew Ure, The Philosophy of Manufactures (1835), names these steps: "the carding, drawing, roving, and spinning processes of a cotton-mill." His definition of a factory: "the combined operation of many orders of work-people, adult and young, in tending with assiduous skill a system of productive machines continuously impelled by a central power." The overhead shafts and belts are the "central power" made visible.',
           'Why it mattered for workers: a small, simple job could be learned quickly, so mills could hire workers with no training, many of them children (Clark: "a constant search for means by which to reduce the skill content of labor"). How workers lived is Topic 5.9; leave it at one line.'
         ],
@@ -475,7 +475,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         quote: 'Those ten persons, therefore, could make among them upwards of forty-eight thousand pins in a day. ... But if they had all wrought separately and independently ... they certainly could not each of them have made twenty, perhaps not one pin in a day',
         attribution: 'Adam Smith, The Wealth of Nations, Book I, chapter 1, 1776',
-        notice: 'Smith saw a small **workshop**, not a powered factory. Ten men shared about **eighteen steps**, so each did only one, two or three of them.'
+        notice: 'Count the men and the steps: ten men shared about **eighteen steps**, so each did only one, two or three of them.'
       },
       notes: {
         minutes: 2,
@@ -498,7 +498,7 @@ window.BEHISTORICAL_TEACHING = {
         right: { name: 'The factory' },
         rows: [
           { label: 'Where', left: 'Spread across many cottages', right: 'One building' },
-          { label: 'Power', left: 'Hands, a wheel and a loom', right: 'A water wheel turning every machine' },
+          { label: 'Power', left: 'Human muscle, at a spinning wheel and loom', right: 'A water wheel turning every machine' },
           { label: 'Hours', left: 'Set by the family', right: 'Set by the mill' },
           { label: 'The work', left: 'A family spins and weaves', right: 'Each worker tends one step' }
         ]
@@ -530,7 +530,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Myth 1 is slides 6 to 11. China: Kenneth Pomeranz, The Great Divergence (2000), argues that China\'s main coal lay in the north and northwest, far from its richest region, the Yangzi delta, and that Britain also had the Americas\' land and resources. Teach it as his argument, for a class that is ahead.',
-          'Myth 2: Andrew Ure (1835) gave Thomas Lombe\'s Derby silk mill (Lombe\'s patent, 1718; the mill working in the early 1720s) "certain elements of a factory"; Clark lists cotton mills of the 1740s. And Arkwright\'s patents were struck down by the courts in 1785, partly because the ideas were others\'.',
+          'Myth 2: Andrew Ure (1835) gave Thomas Lombe\'s Derby silk mill (Lombe\'s patent, 1718; the mill working in the early 1720s) "certain elements of a factory"; Clark lists cotton mills of the 1740s. And in 1785 a court canceled Arkwright\'s 1775 patent, finding its description unclear and hearing claims that others had invented the machines.',
           'Myth 3: Cromford and the early Derwent mills were water-powered (UNESCO). The steam engine began as a pump for flooded mines (Newcomen\'s, 1712, near Dudley); its use to drive machines, and the fossil-fuel revolution, are KC-5.1.I.B, Topic 5.5.'
         ],
         ask: 'Which myth would most hurt an essay answer, and why?',
@@ -545,7 +545,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         terms: [
           { word: 'Coal and iron', note: 'close together; too little wood' },
-          { word: 'Water', note: 'rivers, coast, canals' },
+          { word: 'Water', note: 'rivers, coast, streams' },
           { word: 'Food and towns', note: 'more people, fewer farming' },
           { word: 'Laws, cotton, money', note: 'worth the risk' }
         ],

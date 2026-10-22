@@ -38,8 +38,8 @@
     prompt: "Using the map, explain how one resource from abroad helped industry grow in Britain. Name where it came from, what it was, and why Britain needed it from abroad.",
     key: [
       { label: "Britain", detail: "The gold circle. Inside it, at a scale too small to draw here, are Britain's coal and iron, often close together and close to rivers and the sea, and the canals that linked them to towns such as Manchester." },
-      { label: "Arrows 1 and 2: cotton", detail: "Cotton does not grow in Britain's climate. By the 1780s most of the cotton spun in Manchester was grown by enslaved people on plantations in the Caribbean and South America (arrow 1). After the 1790s, more and more came from plantations in the US South (arrow 2)." },
-      { label: "Arrow 3: iron and timber", detail: "Britain had cut down most of its old forests by the 1600s, so wood was expensive, and much of the iron it used was bought from Sweden, and later from Russia, where forests were still large." },
+      { label: "Arrows 1 and 2: cotton", detail: "Arrow 1: cotton from the Caribbean and South America, by the 1780s. Arrow 2: cotton from the US South, after the 1790s. Both were grown on plantations by enslaved people." },
+      { label: "Arrow 3: iron and timber", detail: "Iron and timber from Sweden, and later from Russia." },
       { label: "Reading the map", detail: "The shaded areas mark regions, not exact borders. The map shows only the resources this topic names; Britain traded with many more places." }
     ]
   };
@@ -94,10 +94,10 @@
       cardDesc: "Two things nature gave Britain and two things people built, what each made cheaper or possible, and how two of them worked together.",
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: "Answer in three steps. (1) Choose TWO things nature gave Britain: its coal and iron, its shortage of wood, or its rivers, coast, and canals. For each one, explain what it made cheaper or possible, and what that led to. (2) Choose TWO things people built: better farming, growing towns, laws that protected property, cotton from abroad, or saved-up capital. For each one, explain how it helped make a mill worth building. (3) Explain one way two of your four factors worked together. Use a pair of your own, not the Bridgewater Canal.",
+      prompt: "Answer in three steps. (1) Choose TWO things nature gave Britain: its coal and iron, its shortage of wood, or its rivers and coast. For each one, explain what it made cheaper or possible, and what that led to. (2) Choose TWO things people built: canals, better farming, growing towns, laws that protected property, cotton from abroad, or saved-up capital. For each one, explain what it made cheaper or possible, and how that helped make a mill worth building. (3) Explain one way two of your four factors worked together. Use a pair of your own, not the Bridgewater Canal.",
       responseType: "Checkpoint 1",
       terms: ["coal", "iron", "timber", "wood", "charcoal", "coke", "Coalbrookdale", "Darby", "water", "rivers", "canal", "Bridgewater Canal", "Manchester", "price", "farming", "turnips", "clover", "enclosure", "population", "towns", "urbanization", "law", "patent", "Parliament", "property", "cotton", "enslaved", "plantations", "Caribbean", "capital", "investment", "profit", "Arkwright"],
-      focus: ["Explain two things nature gave Britain, each with what it made cheaper or possible.", "Explain two things people built, each with how it made a mill worth building.", "Explain how two factors worked together."]
+      focus: ["Explain two things nature gave Britain, each with what it made cheaper or possible.", "Explain two things people built, each with what it made cheaper or possible.", "Explain how two factors worked together."]
     },
     {
       title: "Checkpoint 2: What the Factory System Changed",
@@ -142,8 +142,8 @@
       alt: "An engraving of a long spinning room under an iron roof with skylights: two long spinning machines run down each side with hundreds of spindles; a man leans on one machine, a woman reaches across the threads of another, and a boy crawls underneath sweeping",
       url: "../assets/images/topics/5-3/mule-spinning-allom-1834.jpg",
       sourceUrl: "https://wellcomecollection.org/works/h7dsvghc",
-      caption: "An engraving drawn by Thomas Allom and published in London in 1834 for a book about the cotton industry. It shows one room of a cotton mill where thread was spun, sixty years after Cromford. Wellcome Collection.",
-      prompt: "NOTICE how many machines there are and what each person is doing. INFER how the work in this room is divided, and what turns the machines. The picture was made for a book that praised the cotton industry: what might it leave out?"
+      caption: "An engraving drawn by Thomas Allom, engraved by J. W. Lowry, and published by Fisher, Son and Co. in London in 1834. It shows one room of a cotton mill where thread was spun, about sixty years after Cromford opened. Wellcome Collection.",
+      prompt: "NOTICE how many machines there are and what each person is doing. INFER how the work in this room is divided, and what turns the machines. What might a picture made to show a mill to the public leave out?"
     },
     {
       title: "Power-Loom Weaving, 1835",
@@ -163,7 +163,7 @@
     {
       title: "The Patent Law of 1624",
       label: "Law · Statute of Monopolies, section 6, passed by Parliament in 1624",
-      sourceText: ["“… Letters Patents and Grant of Privilege for the term of fourteen years or under, hereafter to be made of the sole working or making of any manner of new Manufactures within this Realm,”", "“to the true and first Inventor and Inventors of such Manufactures, which others at the time of making such Letters Patents and Grants shall not use …”"],
+      sourceText: ["“… Letters Patents and Grant of Privilege for the term of fourteen years or under, hereafter to be made of the sole working or making of any manner of new Manufactures within this Realm,”", "“to the true and first Inventor and Inventors of such Manufactures …”"],
       caption: "Spelling modernized from the text on legislation.gov.uk. \"Letters patent\" were the king's written grant; \"the sole working or making\" means the only right to make and use it. \"For the term of fourteen years or under\" means for up to fourteen years. Richard Arkwright patented his spinning machine under this law in 1769.",
       prompt: "What does this law give to \"the true and first Inventor,\" and for how long? INFER why a law like this would make someone more willing to spend money on a new machine. What can a law not tell you about whether it was enforced?"
     }
