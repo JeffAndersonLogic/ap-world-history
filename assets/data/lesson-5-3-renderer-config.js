@@ -39,7 +39,7 @@
     key: [
       { label: "Britain", detail: "The gold circle. Inside it, at a scale too small to draw here, are Britain's coal and iron, often close together and close to rivers and the sea, and the canals that linked them to towns such as Manchester." },
       { label: "Arrows 1 and 2: cotton", detail: "Cotton does not grow in Britain's climate. By the 1780s most of the cotton spun in Manchester was grown by enslaved people on plantations in the Caribbean and South America (arrow 1). After the 1790s, more and more came from plantations in the US South (arrow 2)." },
-      { label: "Arrow 3: iron and timber", detail: "Britain had cut down most of its old forests by the 1600s, so wood was expensive, and much of the iron it used was bought from Sweden and Russia, where forests were still large." },
+      { label: "Arrow 3: iron and timber", detail: "Britain had cut down most of its old forests by the 1600s, so wood was expensive, and much of the iron it used was bought from Sweden, and later from Russia, where forests were still large." },
       { label: "Reading the map", detail: "The shaded areas mark regions, not exact borders. The map shows only the resources this topic names; Britain traded with many more places." }
     ]
   };
@@ -134,7 +134,7 @@
       alt: "A hand-colored botanical print of a cotton plant with broad green leaves, two large yellow flowers, green seed pods, and one brown pod split open to show white cotton fiber; a spiny caterpillar climbs the stem",
       url: "../assets/images/topics/5-3/cotton-plant-pass-after-merian-1807.jpg",
       sourceUrl: "https://wellcomecollection.org/works/r986rsr9",
-      caption: "A hand-colored engraving by J. Pass after a drawing by Maria Sibylla Merian, published in London in 1807. Merian drew the plants and insects of Suriname, a Dutch plantation colony in South America. Wellcome Collection.",
+      caption: "A hand-colored etching of a cotton plant by J. Pass after a drawing by Maria Sibylla Merian, published in London in 1807. Wellcome Collection.",
       prompt: "NOTICE which part of the plant becomes cotton thread. INFER why a British cotton mill depended on places far from Britain. What does a picture of a plant not tell you about the people who were forced to grow and pick it?"
     },
     {
@@ -163,7 +163,7 @@
     {
       title: "The Patent Law of 1624",
       label: "Law · Statute of Monopolies, section 6, passed by Parliament in 1624",
-      sourceText: ["“… Letters Patents and Grants of Privilege for the term of fourteen years or under, hereafter to be made of the sole working or making of any manner of new Manufactures within this Realm,”", "“to the true and first Inventor and Inventors of such Manufactures, which others at the time of making such Letters Patents and Grants shall not use …”"],
+      sourceText: ["“… Letters Patents and Grant of Privilege for the term of fourteen years or under, hereafter to be made of the sole working or making of any manner of new Manufactures within this Realm,”", "“to the true and first Inventor and Inventors of such Manufactures, which others at the time of making such Letters Patents and Grants shall not use …”"],
       caption: "Spelling modernized from the text on legislation.gov.uk. \"Letters patent\" were the king's written grant; \"the sole working or making\" means the only right to make and use it. \"For the term of fourteen years or under\" means for up to fourteen years. Richard Arkwright patented his spinning machine under this law in 1769.",
       prompt: "What does this law give to \"the true and first Inventor,\" and for how long? INFER why a law like this would make someone more willing to spend money on a new machine. What can a law not tell you about whether it was enforced?"
     }

@@ -2,7 +2,7 @@
 
 **Status: Delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12).**
 
-**Resume here (2026-10-22):** Phases 0 to 8 are built and pushed. Phase 9: own-pass slide fixes done; review pass 1 (two fresh reviewers, packet from `capture-topic-for-review.js 5.3`) is running. Next: fix and log pass 1's findings in the claim ledger, recapture, pass 2; then move `APPROVED_UNIT5_REWRITE_BLOB`, the strict browser suite in the brand fonts, the topic-audit record.
+**Resume here (2026-10-22):** Phases 0 to 8 built and pushed. Review pass 1 done: 22 distinct supported defects fixed, 1 rejected, all logged in the claim ledger. Review pass 2 (fresh reviewers, packet `review2`) is running. Next: fix and log pass 2; then move `APPROVED_UNIT5_REWRITE_BLOB`, the strict browser suite in the brand fonts, the topic-audit record.
 
 **Taught:** no dates yet. The schedule ends with the Era 3 Exam (Green Monday 2026-11-23, Silver
 Tuesday 2026-11-24), and neither the schedule nor the Notion task names a Unit 5 class day (5.1 and
@@ -183,8 +183,8 @@ instead of scarce wood, and it got better over the next decades. A shortage of w
 **What nature gave: water.** Coal is heavy, and before railways, the cheapest way to move something
 heavy was by water. Britain had a long coast, rivers that boats could use, and fast streams that could
 turn water wheels. Then people improved on nature with **canals**. In 1761 the Duke of Bridgewater's
-canal began carrying coal from his mines at Worsley to Manchester, and the price of coal in Manchester
-fell by about half. Within decades, canals linked the coalfields, the industrial towns and the ports.
+canal opened from his mines at Worsley to Stretford, on Manchester's edge, and the price of coal in
+Manchester soon fell by about half; by 1765 it reached the town (corrected after review pass 1). Within decades, canals linked the coalfields, the industrial towns and the ports.
 
 **What people built: food and towns.** Nature is not the whole story. China also had coal, and it did
 not have Britain's industrial revolution. Britain's farmers were growing more food on the same land:

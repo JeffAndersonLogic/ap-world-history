@@ -7390,7 +7390,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "08",
           "module": "Primary Source",
           "label": "Module 08, Primary Source",
-          "prompt": "In your own words, explain what Smith describes in Passages 1 and 2. How many pins could ten men make in a day by splitting the work, and how many could one man make alone? In Passage 3, Ure defines a factory. His definition names \"a system of productive machines\" and \"a central power.\" Does Smith describe either of these in Passages 1 and 2? What does that tell you about how a factory differs from Smith's workshop? Using both writers, explain the factory system as a process: how did gathering workers in one place and splitting the work into steps let a mill make more goods?",
+          "prompt": "In your own words, explain what Smith describes in Passages 1 and 2. How many pins could ten men make in a day by splitting the work, and how many does Smith think each could make working separately, without having learned the trade? In Passage 3, Ure defines a factory. His definition names \"a system of productive machines\" and \"a central power.\" Does Smith describe either of these in Passages 1 and 2? What does that tell you about how a factory differs from Smith's workshop? Using both writers, explain the factory system as a process: how did gathering workers in one place and splitting the work into steps let a mill make more goods?",
           "skill": "",
           "skills": [],
           "skillRaw": "",

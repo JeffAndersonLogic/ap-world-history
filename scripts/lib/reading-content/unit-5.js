@@ -757,11 +757,11 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "What Britain did not have was much timber. By the 1600s most of its old forests had been cut down, so wood was expensive. Iron had always been made by heating iron ore with charcoal, a fuel made from wood, and much of the iron Britain used was bought from Sweden and Russia, where forests were still large. So Britons turned to coal. By 1700 coal gave England about half of all its energy, much of it burned in fireplaces for heating and cooking."
+            "html": "What Britain did not have was much timber. By the 1600s most of its old forests had been cut down, so wood was expensive. Iron had always been made by heating iron ore with charcoal, a fuel made from wood, and much of the iron Britain used was bought from Sweden, and later from Russia, where forests were still large. So Britons turned to coal. By 1700 coal gave England about half of all its energy, much of it burned in fireplaces for heating and cooking."
           },
           {
             "type": "p",
-            "html": "In 1709, at Coalbrookdale beside the River Severn, Abraham Darby made iron using <span class=\"kt\">coke</span>, a fuel made by baking coal. From then on iron could be made with British coal instead of scarce wood, and over the next decades ironmakers learned to make it better. A shortage of wood helped push Britain toward coal, which it had in plenty."
+            "html": "In 1709, at Coalbrookdale beside the River Severn, Abraham Darby made iron using <span class=\"kt\">coke</span>, a fuel made by baking coal. Iron could now be made with British coal instead of scarce wood. At first it was used mostly for cast-iron pots, and coke iron spread slowly, mainly after the 1750s, as charcoal and imported iron grew dearer. A shortage of wood helped push Britain toward coal, which it had in plenty."
           }
         ],
         "callout": {
@@ -784,7 +784,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Then people improved on nature with <span class=\"kt\">canals</span>, waterways dug by hand. The Duke of Bridgewater owned coal mines at Worsley, a few miles from Manchester. In 1761 his canal began carrying their coal into Manchester, and the price of coal in the town fell by about half. Other canal builders followed, and within a few decades canals linked coalfields, industrial towns, and ports."
+            "html": "Then people improved on nature with <span class=\"kt\">canals</span>, waterways dug by hand. The Duke of Bridgewater owned coal mines at Worsley, a few miles from Manchester. In 1761 his canal opened from Worsley to Stretford, on the edge of Manchester, and the price of coal in Manchester soon fell by about half. By 1765 the canal reached the town itself. Other canal builders followed, and within a few decades canals linked coalfields, industrial towns, and ports."
           }
         ],
         "callout": {
@@ -857,7 +857,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "The Bridgewater Canal needed coal under the ground at Worsley (nature). It needed water to float the coal on (nature, improved by people). It needed an act of Parliament, passed in 1759, to allow it to be built (law). It needed the Duke's money, and he borrowed more to pay his workers (capital). And it needed a growing town to buy the coal (urbanization). Cheap coal then made Manchester an even better place to build mills, and the new mills made the town grow faster still."
+            "html": "The Bridgewater Canal needed coal under the ground at Worsley (nature). It needed water to float the coal on (nature, improved by people). It needed acts of Parliament, passed in 1759 and 1760, to allow it to be built (law). It needed the Duke's money, and he borrowed more to pay his workers (capital). And it needed a growing town to buy the coal (urbanization). Cheap coal then made Manchester an even better place to build mills, and the new mills made the town grow faster still."
           },
           {
             "type": "p",
@@ -888,7 +888,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Adam Smith, a Scottish thinker, showed why it mattered in 1776, using a pin workshop. Ten men shared about eighteen steps, each doing only one, two, or three of them, and together they \"could make among them upwards of forty-eight thousand pins in a day.\" One man working alone, he wrote, \"could scarce ... make one pin in a day, and certainly could not make twenty.\" Because each job was small and simple, it could be learned quickly, so a mill could hire workers with no training, many of them children."
+            "html": "Adam Smith, a Scottish thinker, showed why it mattered in 1776, using a pin workshop. Ten men shared about eighteen steps, each doing only one, two, or three of them, and together they \"could make among them upwards of forty-eight thousand pins in a day.\" A worker who had not learned the trade, working alone, he wrote, \"could scarce ... make one pin in a day, and certainly could not make twenty.\" Because each job was small and simple, it could be learned quickly, so a mill could hire workers with no training, many of them children."
           },
           {
             "type": "p",
@@ -905,7 +905,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "Britain's industrial revolution began with what nature gave it: coal and iron close together, close to rivers and the sea, and a shortage of wood that pushed Britons to burn coal and, from 1709, to make iron with coke. Water made heavy coal cheap to move, and canals such as the Bridgewater Canal of 1761 cut the price of coal in Manchester by about half. But nature alone did not do it. People built the rest: better farming that fed a growing population, towns such as Manchester that gathered workers and buyers, laws that protected property and inventions, cotton from abroad grown by enslaved people, and saved-up capital ready to risk on mills. Together these made factories pay. The factory, like Arkwright's water-powered mill at Cromford in 1771, gathered production in one place and split the work into small, specialized jobs. Nature gave the fuel and the water. People built the rest. The factory put the work under one roof.",
+    "takeaway": "Britain's industrial revolution began with what nature gave it: coal and iron close together, close to rivers and the sea, and a shortage of wood that pushed Britons to burn coal and, from 1709, to make iron with coke. Water made heavy coal cheap to move, and canals such as the Bridgewater Canal, opened in 1761, cut the price of coal in Manchester by about half. But nature alone did not do it. People built the rest: better farming that fed a growing population, towns such as Manchester that gathered workers and buyers, laws that protected property and inventions, cotton from abroad grown by enslaved people, and saved-up capital ready to risk on mills. Together these made factories pay. The factory, like Arkwright's water-powered mill at Cromford in 1771, gathered production in one place and split the work into small, specialized jobs. Nature gave the fuel and the water. People built the rest. The factory put the work under one roof.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [

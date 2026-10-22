@@ -139,7 +139,7 @@ const scenarios = [
       E('patent', 'The Patent of 1769', 'Under a law of 1624, Arkwright’s patent gives him the sole right to his spinning machine for up to fourteen years, if a court will defend it.', 'Shows how the law protected private property, and its limits.'),
       E('cotton', 'Cotton From Abroad', 'Cotton does not grow in Britain. It comes by ship, much of it from plantations in the Caribbean worked by enslaved people.', 'Shows that the mill depends on resources, and on forced labor, far from Britain.'),
       E('capital', 'Money at Risk', 'A mill and its machines cost thousands of pounds before they earn anything, at a time when a carpenter earns no more than about £36 a year.', 'Shows why saved-up capital mattered.'),
-      E('canal', 'The Bridgewater Canal', 'Since 1761 a canal has carried coal from the Duke of Bridgewater’s mines into Manchester, and the price of coal there has fallen by about half.', 'Shows how waterways made heavy goods cheap, and why some towns were growing fast.'),
+      E('canal', 'The Bridgewater Canal', 'Since the 1760s a canal has carried coal from the Duke of Bridgewater’s mines to Manchester, and the price of coal there has fallen by about half.', 'Shows how waterways made heavy goods cheap, and why some towns were growing fast.'),
       E('silkmill', 'The Derby Silk Mill', 'In Derby, a silk mill has run water-powered machines in one building since the 1720s, with workers tending them.', 'Shows that gathering machines and workers in one place had been tried before.')
     ],
     decisions: [

@@ -125,7 +125,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Wood is dear",
-            "text": "Charcoal for iron is costly; iron is bought from Sweden and Russia"
+            "text": "Charcoal for iron is costly; iron is bought from Sweden, later Russia"
           },
           {
             "label": "By 1700",
@@ -167,7 +167,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "1761",
             "key": true,
-            "text": "The Bridgewater Canal reaches Manchester, and coal there costs about half."
+            "text": "The Bridgewater Canal opens toward Manchester, and coal there soon costs about half."
           }
         ]
       }
@@ -223,7 +223,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "visual": {
           "url": "../assets/images/topics/5-3/cotton-plant-pass-after-merian-1807.jpg",
           "alt": "A hand-colored botanical print of a cotton plant: broad green leaves, two large yellow flowers, green seed pods, one brown pod split open to show white cotton fiber, and a spiny caterpillar climbing the stem; the title above reads Gossypium",
-          "credit": "J. Pass after Maria Sibylla Merian, Cotton Tree, engraving, London, 1807 · Wellcome Collection · Public domain",
+          "credit": "J. Pass after Maria Sibylla Merian, Cotton Tree, hand-colored etching, London, 1807 · Wellcome Collection · Public domain",
           "ratio": 0.759,
           "fit": "contain"
         }
@@ -247,7 +247,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "word": "A law",
-            "note": "an act of Parliament, 1759"
+            "note": "acts of Parliament, 1759 and 1760"
           },
           {
             "word": "Capital",
@@ -260,7 +260,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         ],
         "result": {
           "word": "Bridgewater Canal",
-          "note": "1761: coal at about half the price"
+          "note": "opened 1761: coal at about half the price"
         },
         "groups": [
           {
@@ -389,7 +389,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "visual": {
               "url": "../assets/images/topics/5-3/carding-drawing-roving-allom-engraving.jpg",
               "alt": "An engraving of a long mill room: on the left a row of big drum-shaped carding machines driven by belts from wheels on the ceiling; a girl crouches by tall cans of cotton and a young woman lifts another can; on the right, rows of upright drawing frames; more women work down the aisle",
-              "credit": "Thomas Allom, Carding, Drawing, and Roving, engraving, 1830s, in a later reprint · Wellcome Collection · Public domain",
+              "credit": "Carding, Drawing, and Roving, engraving after a design credited to Thomas Allom, 1830s · Wellcome Collection · Public domain",
               "ratio": 1.329,
               "fit": "cover",
               "position": "30% 60%"

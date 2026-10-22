@@ -107,7 +107,7 @@ window.BEHISTORICAL_TEACHING = {
           'The CED prints no illustrative examples and no sample activity for 5.3. Every case in this deck is the build\'s choice: Coalbrookdale (coal, iron, timber), the Bridgewater Canal (water, and the factors combined), Manchester (towns), Arkwright\'s mill at Cromford (the factory), Adam Smith\'s pin workshop (specialization).',
           'Owns: the seven factors and the factory system. Bridge only: the steam engine and fossil fuels (5.5), the spread of industry beyond Britain (5.4, the hand-off), Adam Smith\'s free-trade argument (5.7; his pins are used here only for specialization), workers\' lives and the new classes (5.9), Luddites, unions and the Factory Acts (5.8).',
           'Three myths, on slide 19: "Britain had coal, so it industrialized"; "Cromford was the first factory"; "the steam engine started it."',
-          'Every picture is a real object of the period, public domain: Philip James de Loutherbourg\'s Coalbrookdale by Night (1801, Science Museum, London); two engravings of cotton-mill rooms drawn by Thomas Allom in the 1830s (Wellcome Collection); a cotton plant engraved by J. Pass after Maria Sibylla Merian (London, 1807, Wellcome Collection); William Wyld\'s Manchester from Kersal Moor (1852, Royal Collection). None is AI-generated. No period picture of Cromford Mill could be sourced in this build; slide 15 carries it in words.'
+          'Every picture is a real object of the period, public domain: Philip James de Loutherbourg\'s Coalbrookdale by Night (1801, Science Museum, London); two engravings of cotton-mill rooms from the 1830s, after Thomas Allom (Wellcome Collection); a cotton plant etched by J. Pass after Maria Sibylla Merian (London, 1807, Wellcome Collection); William Wyld\'s Manchester from Kersal Moor (1852, Royal Collection). None is AI-generated. No period picture of Cromford Mill could be sourced in this build; slide 15 carries it in words.'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
         listenFor: 'Britain\'s coal, iron and water made fuel, metal and transport cheap in the same places, and its shortage of wood pushed it to coal; better farming, growing towns, property laws, foreign cotton and capital made it worth building factories; and the factory put the work in one place and split it into small, specialized jobs.',
@@ -225,7 +225,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         steps: [
           { label: 'By the 1600s', text: 'Most of Britain\'s old forests are cut down' },
-          { label: 'Wood is dear', text: 'Charcoal for iron is costly; iron is bought from Sweden and Russia' },
+          { label: 'Wood is dear', text: 'Charcoal for iron is costly; iron is bought from Sweden, later Russia' },
           { label: 'By 1700', text: 'Coal gives England about half its energy' },
           { label: '1709', text: 'Darby makes iron with coke, baked from coal', key: true }
         ],
@@ -235,9 +235,9 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.1.I.A: "Geographical distribution of coal, iron, and timber." Timber is on the list for its shortage.',
-          'Clark (UC Davis): "Britain in the seventeenth century was very poorly endowed with woodland. Population pressure on the land had led to the destruction of most of the original forest. Thus wood was relatively expensive ... much of the iron used in Britain was imported from Sweden and Russia." Iron had been smelted with charcoal, made from wood.',
+          'Clark (UC Davis): "Britain in the seventeenth century was very poorly endowed with woodland. Population pressure on the land had led to the destruction of most of the original forest. Thus wood was relatively expensive ... much of the iron used in Britain was imported from Sweden and Russia." Sweden came first; large Russian bar-iron imports came from the 1730s (Peter King, Economic History Review, 2011). Iron had been smelted with charcoal, made from wood.',
           'E. A. Wrigley, Energy and the English Industrial Revolution (2010): "By 1700 about half of the total energy consumption of England came from coal." Much of it was burned at home for heating and cooking.',
-          'Coalbrookdale, on the Severn in Shropshire: Historic England and English Heritage date Abraham Darby\'s coke smelting at the Old Furnace to 1709, "using coke made from local coal ... rather than charcoal." Coke is coal baked to drive off its impurities. Clark adds that iron good enough for forges came from coke furnaces later, from the 1730s on; say "made iron with coke," not "solved iron."',
+          'Coalbrookdale, on the Severn in Shropshire: Historic England and English Heritage date Abraham Darby\'s coke smelting at the Old Furnace to 1709, "using coke made from local coal ... rather than charcoal." Coke is coal baked to drive off its impurities. At first Darby\'s coke iron went into cast pots; King (2011, the Coalbrookdale accounts) finds new Shropshire furnaces making coke pig iron for forges only from 1754, after Swedish iron prices rose in 1747. Say "made iron with coke," not "solved iron."',
           'Coal and iron ore lay close together in places like Coalbrookdale and the Black Country, and much coal lay near rivers or the sea. Robert Allen (2009) argues that cheap British coal made energy-using machines pay in Britain, as high wages made labor dear: an argument for the class that wants one.',
           'A caution: some historians argue the old forests were cut partly because of growing demand, and that coal use grew mainly with demand. The slide says the order of events, not that the shortage alone caused the switch.'
         ],
@@ -255,7 +255,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'Coast', text: 'Coal from the mines near Newcastle goes by ship to London.' },
           { label: 'Streams', text: 'Fast water turns water wheels, and wheels turn machines.' },
           { label: 'Canals', text: 'People improve on nature: waterways dug by hand.' },
-          { label: '1761', key: true, text: 'The Bridgewater Canal reaches Manchester, and coal there costs about half.' }
+          { label: '1761', key: true, text: 'The Bridgewater Canal opens toward Manchester, and coal there soon costs about half.' }
         ]
       },
       notes: {
@@ -264,7 +264,7 @@ window.BEHISTORICAL_TEACHING = {
           'KC-5.1.I.A: "Proximity to waterways; access to rivers and canals."',
           'Coast: Clark notes the Newcastle mines used horse tramlines from the pits "down to the wharves where the coal was loaded onto ships for carriage to London and other markets."',
           'Water power: the first factories, Cromford among them, were built beside fast streams to turn their wheels (slide 15).',
-          'The Bridgewater Canal: authorized by act of Parliament in 1759 (Royal Assent 23 March 1759), it reached Manchester from the duke\'s mines at Worsley in 1761. Britannica: it cut the cost of coal in Manchester in half. Local accounts give about 7d a hundredweight before and under 4d after, within a year; Graces Guide credits the greater supply as well as the cheaper carriage. Canal building took off after its success.',
+          'The Bridgewater Canal (Bridgewater Canal Company history): an act of 23 March 1759, and a second act of March 1760 for the changed route over the Barton aqueduct; opened 17 July 1761 from the duke\'s mines at Worsley to Stretford, on Manchester\'s edge; "completed through to Stretford and to Castlefield Wharf, Manchester by 1765." Britannica: it cut the cost of coal in Manchester in half. Local accounts give about 7d a hundredweight before and under 4d after, within a year; Graces Guide credits the greater supply as well as the cheaper carriage. Canal building took off after its success.',
           'Make the causal step explicit: "Britain had rivers" is a fact; "water made heavy coal cheap to move, so mills near a canal paid less for fuel" is an explanation.'
         ],
         ask: 'Water did two different jobs. What were they?',
@@ -289,7 +289,7 @@ window.BEHISTORICAL_TEACHING = {
           'KC-5.1.I.A: "Improved agricultural productivity" and "Urbanization."',
           'Farming: Britannica, "Norfolk four-course system": wheat, turnips, barley, then clover and ryegrass, in place of a fallow year. Turnips fed animals through the winter; clover enriched the soil; more animals meant more manure and more grain. The rotation was older in Flanders; British farmers spread it.',
           'Enclosure (the First & 10, section 4): UK Parliament counts 5,265 enclosure acts from 1604 to 1914, 3,828 of them from 1750 to 1819, turning shared fields into private farms. Historians dispute how far enclosure pushed people off the land; say only that enclosed farms could be run the new way.',
-          'Productivity: Clark reports estimates that agricultural productivity "more than doubled between 1700 and 1850," built indirectly, from population, incomes and towns.',
+          'Productivity is disputed. Clark\'s textbook chapter reports estimates that agricultural productivity "more than doubled between 1700 and 1850," built indirectly; his own research ("The Agricultural Revolution and the Industrial Revolution," 2002) finds only about 50 percent growth from 1500 to 1860, with imports and a shift toward food feeding the larger population. The slide says only "more food from the same land."',
           'People: Clark estimates Britain at 7.8 million in 1761; the 1801 census counted 10,472,048 in England, Wales and Scotland (Hansard, 1812). Fewer farming: by 1801 only about a third of English working men worked on the land (CAMPOP: Clark\'s census-based 36 percent of adult men in farming in 1801, and Allen\'s 35 percent by 1800).',
           'Manchester: about 23,000 in a local count of 1773, 70,409 in the census of 1801 (Manchester City Council). Urbanization is a cause here (workers and buyers close together) and an effect in 5.9.'
         ],
@@ -313,9 +313,9 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.1.I.A: "Legal protection of private property," "Access to foreign resources," "Accumulation of capital."',
-          'The picture is a real print: a hand-colored engraving of a cotton plant by J. Pass after a drawing by Maria Sibylla Merian, published in London on 20 June 1807, Wellcome Collection, public domain. Merian drew the plants and insects of Suriname, a Dutch plantation colony in South America, where she worked from 1699 to 1701; her 1705 book has a cotton plant with a caterpillar like this one. It shows the raw material, not a plantation.',
-          'Laws: the Statute of Monopolies (1624), section 6, allowed patents for "new manufactures" to "the true and first inventor" for "the term of fourteen years or under." Parliament, where landowners and merchants sat, passed the enclosure and canal acts. Arkwright patented his water frame in 1769 (Clark). A twist for the myths slide: in 1785 the courts struck down his spinning and carding patents, partly because the ideas were others\' (Clark).',
-          'Foreign resources: Science and Industry Museum, Manchester: "By the 1780s, most of the cotton spun and woven in Manchester was grown by enslaved people on plantations in the Caribbean and South America"; "By 1860, plantations in the United States supplied almost 90 percent of the cotton spun and woven in Lancashire\'s mills." The United States sent Britain no cotton before about 1790. Clark: raw cotton used in Britain rose from 2.6 million pounds in 1760 to 51.6 million in 1800.',
+          'The picture is a real print: a hand-colored etching of a cotton plant by J. Pass after a drawing by Maria Sibylla Merian, published by J. Wilkes in London on 20 June 1807, Wellcome Collection, public domain. The Wellcome identifies the plant as tree cotton (Gossypium arboreum), an Old World species, so it shows what cotton is, not where Britain\'s came from. Merian drew the plants and insects of Suriname, a Dutch plantation colony in South America, where she worked from 1699 to 1701; her 1705 book has a cotton plant with a caterpillar like this one. It shows the raw material, not a plantation.',
+          'Laws: the Statute of Monopolies (1624), section 6, allowed patents for "new manufactures" to "the true and first inventor" for "the term of fourteen years or under." Parliament, where landowners and merchants sat, passed the enclosure and canal acts. Arkwright patented his water frame in 1769 (Clark). A twist for the myths slide: his 1769 spinning patent ran out in 1783, and in 1785 a court (R v Arkwright) canceled his 1775 patent on carding and preparing machines, partly because the jury found the ideas were others\'.',
+          'Foreign resources: Science and Industry Museum, Manchester: "By the 1780s, most of the cotton spun and woven in Manchester was grown by enslaved people on plantations in the Caribbean and South America"; "By 1860, plantations in the United States supplied almost 90 percent of the cotton spun and woven in Lancashire\'s mills." The United States sent Britain almost no cotton before the 1790s. Clark: raw cotton used in Britain rose from 2.6 million pounds in 1760 to 51.6 million in 1800.',
           'Capital: Arkwright\'s partners Samuel Need, "a wealthy Nottingham hosier," and Jedediah Strutt, co-inventor of the Derby rib stocking frame, joined him by 1770 (Belper Research; Derwent Valley Mills). Clark: the partnership spent about £12,000 before it made a profit in 1774, when a carpenter earned no more than £36 a year; other accounts attach the £12,000 to Arkwright\'s carding machine, so the slide says only that money was risked before profit. How much British capital came from slavery and the slave trade is still argued (Eric Williams, Capitalism and Slavery, 1944, and his critics): say "including" and "some," never "paid for it all."'
         ],
         ask: 'Pick one of the three. How does it make an investor more willing to risk money?',
@@ -331,11 +331,11 @@ window.BEHISTORICAL_TEACHING = {
         terms: [
           { word: 'Coal', note: 'under the ground at Worsley' },
           { word: 'Water', note: 'to fill the canal and float the coal' },
-          { word: 'A law', note: 'an act of Parliament, 1759' },
+          { word: 'A law', note: 'acts of Parliament, 1759 and 1760' },
           { word: 'Capital', note: 'the duke\'s money, and loans' },
           { word: 'A town', note: 'Manchester, to buy the coal' }
         ],
-        result: { word: 'Bridgewater Canal', note: '1761: coal at about half the price' },
+        result: { word: 'Bridgewater Canal', note: 'opened 1761: coal at about half the price' },
         groups: [
           { from: 0, to: 1, label: 'What nature gave' },
           { from: 2, to: 4, label: 'What people built' }
@@ -345,7 +345,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.1.I.A says the factors "contributed" together. This slide shows five of the seven in one project. It is the deck\'s answer to "coal caused it."',
-          'Coal: the duke\'s mines at Worsley. Water: the canal itself, and drainage water from the mines. Law: the act of 1759 (Bridgewater Canal Company; Archives Hub). Capital: the duke paid for it himself; the Bridgewater Canal Company says the costs were "a great strain on the Duke\'s finances and he had to borrow money to pay his workmen." Town: Manchester, a growing market for coal. Result: Britannica, the cost of coal in Manchester cut in half.',
+          'Coal: the duke\'s mines at Worsley. Water: the canal itself, and drainage water from the mines. Law: the acts of 1759 and 1760 (Bridgewater Canal Company; Archives Hub). Capital: the duke paid for it himself; the Bridgewater Canal Company says the costs were "a great strain on the Duke\'s finances and he had to borrow money to pay his workmen." Town: Manchester, a growing market for coal. Result: Britannica, the cost of coal in Manchester cut in half.',
           'Point back to the question slide\'s predictions: how many did the class have?'
         ],
         ask: 'Take one term away. Is there still a canal?',
@@ -460,7 +460,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.1.I.C: the factory system "led to an increasing degree of specialization of labor."',
-          'The pictures are real prints, both drawn by Thomas Allom in the 1830s and both public domain in the Wellcome Collection: "Mule Spinning" (engraved by J. W. Lowry, published by Fisher, Son and Co., London, 1834); "Carding, Drawing, and Roving," the same artist\'s view of the preparing room, here from a later reprint titled "Economic Botany: The Cotton Manufacture." Both show mills sixty years after Cromford, with steam-era iron frames and belts; say so. They are views made for a book about the cotton trade, and they show the rooms clean and calm.',
+          'The pictures are real prints, public domain in the Wellcome Collection: "Mule Spinning," drawn by Thomas Allom, engraved by J. W. Lowry, published by Fisher, Son and Co., London, 1834; and "Carding, Drawing, and Roving," the preparing room, from an unsigned plate headed "Economic Botany: The Cotton Manufacture," after a design credited to Allom. The Wellcome record names no maker or date for that plate. Both show mills sixty years after Cromford, with steam-era iron frames and belts; say so. They are views made for a book about the cotton trade, and they show the rooms clean and calm.',
           'Andrew Ure, The Philosophy of Manufactures (1835), names these steps: "the carding, drawing, roving, and spinning processes of a cotton-mill." His definition of a factory: "the combined operation of many orders of work-people, adult and young, in tending with assiduous skill a system of productive machines continuously impelled by a central power." The overhead shafts and belts are the "central power" made visible.',
           'Why it mattered for workers: a small, simple job could be learned quickly, so mills could hire workers with no training, many of them children (Clark: "a constant search for means by which to reduce the skill content of labor"). How workers lived is Topic 5.9; leave it at one line.'
         ],
@@ -621,7 +621,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 12,
         land: [
           'Module 10 is required: draft, Socrates, revise. It assesses Target 2 (KC-5.1.I.C) and declares Causation.',
-          'A strong answer: before, under putting-out, work was spread across many homes; Cromford (1771) brought workers to water-powered machines in one building, at the mill\'s hours; inside, the work was split into steps (carding, drawing, roving, spinning), each with its own machine and workers; Smith\'s ten men made about forty-eight thousand pins a day by splitting the work, where one man alone might not make twenty; so the factory made more goods with less skilled, cheaper labor.'
+          'A strong answer: before, under putting-out, work was spread across many homes; Cromford (1771) brought workers to water-powered machines in one building, at the mill\'s hours; inside, the work was split into steps (carding, drawing, roving, spinning), each with its own machine and workers; Smith\'s ten men made about forty-eight thousand pins a day by splitting the work, where Smith thought ten men working separately, without training, might not make twenty each; so the factory made more goods with less skilled, cheaper labor.'
         ],
         ask: 'What is the cause in your answer, and what is the effect?',
         listenFor: 'The factory system (one place, one job each) as the cause; more goods, made faster by workers with less training, as the effect.'

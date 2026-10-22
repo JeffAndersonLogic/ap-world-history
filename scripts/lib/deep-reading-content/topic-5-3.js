@@ -73,7 +73,7 @@ module.exports = {
         {
           heading: 'Too little wood',
           blocks: [
-            { p: `By the <span class="num">1600s</span> most of Britain's old forests had been cut down, as a growing population cleared land for farms. Wood became expensive. That mattered, because wood was the fuel of the old economy. It heated homes, and it made <span class="kt">charcoal</span>, the fuel used to heat iron ore until the iron could be separated out. Much of the iron Britain used was bought from Sweden and Russia, where forests were still large.` },
+            { p: `By the <span class="num">1600s</span> most of Britain's old forests had been cut down, as a growing population cleared land for farms. Wood became expensive. That mattered, because wood was the fuel of the old economy. It heated homes, and it made <span class="kt">charcoal</span>, the fuel used to heat iron ore until the iron could be separated out. Much of the iron Britain used was bought from Sweden, and later from Russia, where forests were still large.` },
             { p: `Britain did have coal, in huge beds, much of it close to the surface and close to rivers or the sea. So Britons burned coal instead of wood. By <span class="num">1700</span> coal gave England about half of all its energy, much of it burned in fireplaces for heating and cooking.` },
             { note: {
               kind: 'misconception',
@@ -85,7 +85,7 @@ module.exports = {
         {
           heading: 'Iron made with coal',
           blocks: [
-            { p: `Coal could not simply replace charcoal in an iron furnace: its impurities spoiled the iron. In <span class="num">1709</span>, at Coalbrookdale, a valley beside the River Severn in Shropshire, Abraham Darby made iron using <span class="kt">coke</span>, a fuel made by baking coal to drive the impurities off. Coalbrookdale had coal and iron ore close by and a river to carry what it made. Over the following decades, ironmakers learned to make better and better iron with coal, and Britain could make its own iron from its own fuel.` },
+            { p: `Coal could not simply replace charcoal in an iron furnace: its impurities spoiled the iron. In <span class="num">1709</span>, at Coalbrookdale, a valley beside the River Severn in Shropshire, Abraham Darby made iron using <span class="kt">coke</span>, a fuel made by baking coal to drive the impurities off. Coalbrookdale had coal and iron ore close by and a river to carry what it made. At first coke iron was used mostly for cast-iron pots. It spread slowly, mainly after the <span class="num">1750s</span>, as charcoal iron and imported iron grew dearer, and over the following decades ironmakers learned to make better iron with coal.` },
             { note: {
               kind: 'howknow',
               label: 'How we know: the furnace is still there',
@@ -127,7 +127,7 @@ module.exports = {
         {
           heading: 'Canals: water improved by people',
           blocks: [
-            { p: `Where nature had put no river, people dug one. A <span class="kt">canal</span> is a waterway dug by hand. The Duke of Bridgewater owned coal mines at Worsley, a few miles from Manchester. In <span class="num">1759</span> Parliament passed an act allowing him to build a canal, and in <span class="num">1761</span> it began carrying his coal into Manchester. The price of coal in the town fell by about half.` },
+            { p: `Where nature had put no river, people dug one. A <span class="kt">canal</span> is a waterway dug by hand. The Duke of Bridgewater owned coal mines at Worsley, a few miles from Manchester. In <span class="num">1759</span> and <span class="num">1760</span> Parliament passed acts allowing him to build a canal. In <span class="num">1761</span> it opened from Worsley to Stretford, on the edge of Manchester, and the price of coal in Manchester soon fell by about half. By <span class="num">1765</span> it reached the town itself.` },
             { p: `Other canal builders followed. Within a few decades canals linked coalfields, industrial towns and ports across England. Cheap fuel and cheap carriage drew mills to the places the water reached.` },
             { note: {
               kind: 'misconception',
@@ -173,7 +173,7 @@ module.exports = {
             { note: {
               kind: 'howknow',
               label: 'How we know: counting backward',
-              html: `No full count of farm output exists before the 1860s. Historians work it out backward: Britain's population grew, people ate at least as well, and most of the food was still grown at home, so farms must have produced much more. The estimates differ, but they agree that farm productivity more than doubled between 1700 and 1850.`
+              html: `No full count of farm output exists before the 1860s. Historians work it out backward: Britain's population grew, people ate at least as well, and most of the food was still grown at home, so farms must have produced much more. The estimates differ widely. Some find that farm productivity more than doubled between 1700 and 1850; others, such as the economic historian Gregory Clark, find much slower growth, with imported food feeding part of the larger population.`
             } }
           ]
         },
@@ -210,7 +210,7 @@ module.exports = {
           heading: 'Laws that protected property',
           blocks: [
             { p: `In Britain, Parliament, where landowners and merchants sat, passed the laws that enclosed fields and allowed canals to be dug. Since <span class="num">1624</span>, English law had also let an inventor take out a <span class="kt">patent</span>: the sole right to use a new invention for up to fourteen years. In <span class="num">1769</span> Richard Arkwright patented a new spinning machine. A person who invested could expect the law to protect what he built.` },
-            { p: `The protection had limits. In <span class="num">1785</span> the courts struck down Arkwright's patents, partly on the grounds that the ideas were other men's.` }
+            { p: `The protection had limits. Arkwright's 1769 spinning patent ran out in <span class="num">1783</span>, and in <span class="num">1785</span> a court canceled his <span class="num">1775</span> patent on his carding and preparing machines, partly because the jury found the ideas were other men's.` }
           ]
         },
         {
@@ -233,13 +233,13 @@ module.exports = {
         {
           heading: 'How the factors combined',
           blocks: [
-            { p: `None of these factors made an industrial revolution by itself. Watch five of them meet in one project. The Bridgewater Canal needed coal under the ground at Worsley (nature). It needed water to float the coal on (nature, improved by people). It needed an act of Parliament, passed in <span class="num">1759</span>, to allow it to be built (law). It needed the duke's money, and he had to borrow more to pay his workmen (capital). And it needed a growing town to buy the coal (urbanization). Cheap coal then made Manchester an even better place to build mills, and the new mills made the town grow faster still.` }
+            { p: `None of these factors made an industrial revolution by itself. Watch five of them meet in one project. The Bridgewater Canal needed coal under the ground at Worsley (nature). It needed water to float the coal on (nature, improved by people). It needed acts of Parliament, passed in <span class="num">1759</span> and <span class="num">1760</span>, to allow it to be built (law). It needed the duke's money, and he had to borrow more to pay his workmen (capital). And it needed a growing town to buy the coal (urbanization). Cheap coal then made Manchester an even better place to build mills, and the new mills made the town grow faster still.` }
           ]
         }
       ],
       useThis: {
         tool: `Explain it as a process. <em>Name the factor, add "which meant" and what it made cheaper or possible, then "so" and what it led to.</em>`,
-        limit: `A patent protected an invention only if the courts upheld it, and Arkwright's were struck down in 1785.`,
+        limit: `A patent protected an invention only if the courts upheld it: a court canceled Arkwright's 1775 patent in 1785.`,
         comparison: `Against coal and water (sections 01 and 02): nature's factors made things cheap in certain places; these factors decided whether people would build there.`
       },
       terms: [
@@ -275,7 +275,7 @@ module.exports = {
           heading: 'One job each',
           blocks: [
             { p: `Inside a cotton mill, the work was split into steps. Raw cotton was cleaned, then carded (combed so its fibers lay straight), drawn out, twisted into a loose rope called roving, and spun into thread. Cromford began with machines for spinning, and in <span class="num">1775</span> Arkwright patented machines for the earlier steps too. From then on each step after cleaning had its own machine, tended by workers who did that job and no other. This is <span class="kt">specialization of labor</span>.` },
-            { p: `Adam Smith, a Scottish thinker, showed why it mattered in <span class="num">1776</span>, using a small hand workshop that made pins. Ten men shared about eighteen steps, each doing only one, two, or three of them, and together they "could make among them upwards of forty-eight thousand pins in a day." One man working alone, he wrote, "could scarce ... make one pin in a day, and certainly could not make twenty." Because each job was small and simple, it could be learned quickly, so a mill could hire workers with no training, many of them children.` },
+            { p: `Adam Smith, a Scottish thinker, showed why it mattered in <span class="num">1776</span>, using a small hand workshop that made pins. Ten men shared about eighteen steps, each doing only one, two, or three of them, and together they "could make among them upwards of forty-eight thousand pins in a day." A worker who had not learned the trade, working alone, he wrote, "could scarce ... make one pin in a day, and certainly could not make twenty." Because each job was small and simple, it could be learned quickly, so a mill could hire workers with no training, many of them children.` },
             { note: {
               kind: 'howknow',
               label: 'How we know: writers of the time',
@@ -305,7 +305,7 @@ module.exports = {
       {
         category: 'Causation',
         title: 'What nature gave',
-        body: `Evidence to sort: coal and iron close together and close to water; a shortage of wood by the 1600s; iron bought from Sweden and Russia; coal giving England about half its energy by 1700; Darby's iron made with coke (1709); coast and rivers; fast streams and water wheels; the Bridgewater Canal (1761) and the price of coal in Manchester. For each, say what it made cheaper or possible.`
+        body: `Evidence to sort: coal and iron close together and close to water; a shortage of wood by the 1600s; iron bought from Sweden and later Russia; coal giving England about half its energy by 1700; Darby's iron made with coke (1709); coast and rivers; fast streams and water wheels; the Bridgewater Canal (opened 1761) and the price of coal in Manchester. For each, say what it made cheaper or possible.`
       },
       {
         category: 'Causation',
