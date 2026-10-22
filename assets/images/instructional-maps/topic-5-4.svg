@@ -86,15 +86,15 @@
     <path class="flow" d="M791.1,200.0 Q886.9,177.8 968.0,233.3" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
     <circle class="badge" cx="883.2" cy="197.2" r="17"/>
     <text class="badgenum" x="883.2" y="204.2" text-anchor="middle">3</text>
-    <path class="flow" d="M791.1,200.0 Q1113.8,155.8 1402.2,307.2" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="1105.2" cy="204.7" r="17"/>
-    <text class="badgenum" x="1105.2" y="211.7" text-anchor="middle">4</text>
+    <path class="flow" d="M791.1,200.0 Q1128.8,70.3 1402.2,307.2" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <circle class="badge" cx="1112.8" cy="161.9" r="17"/>
+    <text class="badgenum" x="1112.8" y="168.9" text-anchor="middle">4</text>
   </g>
   <g id="region-labels">
     <text class="region halo" x="733.1" y="171.0" text-anchor="end" fill="#1A1C1D"><tspan x="733.1" dy="0">BRITAIN</tspan></text>
     <text class="region halo" x="435.3" y="273.7" text-anchor="end" fill="#1A1C1D"><tspan x="435.3" dy="0">US NORTHEAST</tspan></text>
     <text class="region halo" x="831.1" y="271.3" text-anchor="middle" fill="#1A1C1D"><tspan x="831.1" dy="0">BELGIUM AND</tspan><tspan x="831.1" dy="25">GERMAN STATES</tspan></text>
-    <text class="region halo" x="1009.1" y="264.3" text-anchor="start" fill="#1A1C1D"><tspan x="1009.1" dy="0">RUSSIA</tspan></text>
+    <text class="region halo" x="1009.1" y="240.3" text-anchor="start" fill="#1A1C1D"><tspan x="1009.1" dy="0">RUSSIA</tspan></text>
     <text class="region halo" x="1444.7" y="312.6" text-anchor="start" fill="#1A1C1D"><tspan x="1444.7" dy="0">JAPAN</tspan></text>
     <text class="region halo" x="1075.3" y="384.8" text-anchor="end" fill="#1A1C1D"><tspan x="1075.3" dy="0">INDIA</tspan></text>
     <text class="region halo" x="1382.4" y="354.1" text-anchor="start" fill="#1A1C1D"><tspan x="1382.4" dy="0">CHINA</tspan></text>
@@ -124,5 +124,5 @@
   </g>
 
   <rect x="0" y="948" width="1600" height="52" fill="url(#paper)" opacity=".93"/>
-  <text class="tiny" x="46" y="980">Regions are approximate. Each arrow shows when factory methods arrived, not one route. France, also in other parts of Europe, is not drawn separately.</text>
+  <text class="tiny" x="46" y="980">Regions are approximate. Each date is the decade of the case this topic uses, not the first factory there; an arrow is not a route. France is not drawn separately.</text>
 </svg>

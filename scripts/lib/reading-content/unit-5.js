@@ -964,7 +964,7 @@ module.exports = {
       "Making Connections"
     ],
     "supportCards": {
-      "beforeYouRead": "<strong>The factory traveled. The share moved. The old makers kept making.</strong> As you read, keep two lists. Changes: where goods were made, and how. Continuities: who kept making goods, and how.",
+      "beforeYouRead": "<strong>The factory traveled. The share moved. The old makers kept making.</strong> As you read, keep two lists. Changes: where goods were made, and how. Continuity: who kept making goods, and how.",
       "readingTarget": "How did the ways goods were made, and the places they were made, change between 1750 and 1900, and what stayed the same?"
     },
     "vocabulary": [
@@ -993,7 +993,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "India's cotton cloth was sold across Asia, Africa, the Middle East, and Europe, from fine, thin muslins to cheap printed calicoes. Indian shipbuilders built ocean-going ships out of teak, a hard wood that lasts for decades at sea."
+            "html": "India's cotton cloth was sold across Asia, Africa, the Middle East, and Europe, from fine, thin muslins to cheap printed calicoes, cotton cloths painted or printed with colored patterns. Indian shipbuilders built ocean-going ships out of teak, a hard wood that lasts for decades at sea."
           },
           {
             "type": "p",
@@ -1025,7 +1025,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Making Connections",
-          "raw": "<p><strong>Look for the pattern.</strong> A pattern is something that happens again and again across different cases. Slater and Cockerill were different men in different countries. What did they have in common? Both carried British know-how in their heads, and both set up where the right resources were.</p>"
+          "raw": "<p><strong>Look for the pattern.</strong> A pattern is something that happens again and again across different cases. Slater and Cockerill were different men in different countries. As you read on, ask what they had in common, and what the later cases share with them. You will name that pattern in Question 01.</p>"
         }
       },
       {
@@ -1043,7 +1043,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Russia and Japan came later, mostly after 1870. A Welsh engineer named John Hughes built ironworks in the coal country of southern Russia in the early 1870s; the town that grew up around them was named Yuzovka, after him. In Japan, the Osaka Spinning Company opened in 1883 with cotton-spinning machines made in Britain, driven by <span class=\"kt\">steam power</span>, and it ran day and night. The governments of Russia and Japan also pushed industry on purpose; that is Topic 5.6."
+            "html": "In Russia and Japan, the big growth came later, mostly after 1870. A Welsh engineer named John Hughes built ironworks in the coal country of southern Russia in the early 1870s; the town that grew up around them was named Yuzovka, after him. In Japan, the Osaka Spinning Company opened in 1883 with cotton-spinning machines made in Britain, driven by <span class=\"kt\">steam power</span>, and it ran day and night. The governments of Russia and Japan also pushed industry on purpose; that is Topic 5.6."
           },
           {
             "type": "p",
@@ -1052,7 +1052,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Making Connections",
-          "raw": "<p><strong>Three things traveled together.</strong> Wherever the factory went, it needed British machines (or the memory of them), skilled people to build and run them, and money to pay for them before they paid back. And it took root where there was coal, iron, and water, the same factors that started it in Britain.</p>"
+          "raw": "<p><strong>What did a factory need to start somewhere new?</strong> Think back to Topic 5.3: Britain's factories needed coal, iron, water, and money. As you read each case here, ask two questions: what carried the new methods to this place, and what was waiting for them when they arrived?</p>"
         }
       },
       {
@@ -1112,7 +1112,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Cloth from Lancashire's machines was cheaper than cloth woven by hand, even in India itself. In 1815 India sold about £1.3 million worth of cotton cloth abroad and bought only about £26,000 worth from England. By 1832 it sold less than £100,000 worth and bought more than £400,000 worth. From about 1830, India bought more cotton cloth than it sold. India, which had sold cloth to the world, now bought British cloth, and it sold <span class=\"kt\">raw cotton</span>, cotton not yet spun or woven, to British mills."
+            "html": "Cloth from the machines of Lancashire, the cotton-mill region of northwest England, was cheaper than cloth woven by hand, even in India itself. In 1815 India sold about £1.3 million worth of cotton cloth abroad and bought only about £26,000 worth from England. By 1832 it sold less than £100,000 worth and bought more than £400,000 worth. From about 1830, India bought more cotton cloth than it sold. India, which had sold cloth to the world, now bought British cloth, and it sold <span class=\"kt\">raw cotton</span>, cotton not yet spun or woven, to British mills."
           },
           {
             "type": "p",

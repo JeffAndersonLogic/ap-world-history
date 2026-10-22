@@ -416,7 +416,7 @@ module.exports = [
       { from: [-2, 54], to: [-71.4, 41.9], label: '1790s', bow: 0.18 },
       { from: [-2, 54], to: [5.6, 50.6], label: '1810s to 1830s', bow: -0.3 },
       { from: [-2, 54], to: [37.8, 48], label: '1870s', bow: -0.22 },
-      { from: [-2, 54], to: [135.5, 34.7], label: '1880s', bow: -0.16 }
+      { from: [-2, 54], to: [135.5, 34.7], label: '1880s', bow: -0.3 }
     ],
     legend: [
       { kind: 'area', tone: 'gold', text: 'Britain: where the factory began, 1770s' },
@@ -427,7 +427,7 @@ module.exports = [
       { kind: 'flow', step: 3, text: 'Russia, 1870s' },
       { kind: 'flow', step: 4, text: 'Japan, 1880s' }
     ],
-    note: 'Regions are approximate. Each arrow shows when factory methods arrived, not one route. France, also in other parts of Europe, is not drawn separately.'
+    note: 'Regions are approximate. Each date is the decade of the case this topic uses, not the first factory there; an arrow is not a route. France is not drawn separately.'
   },
   {
     id: 'topic-5-5',

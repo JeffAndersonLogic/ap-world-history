@@ -38,7 +38,7 @@
     ...lesson.map,
     key: [
       { label: "Britain", detail: "Where the factory began, in the 1770s. The arrows start here." },
-      { label: "Arrows 1 to 4: where the methods went", detail: "Arrow 1: the United States, 1790s. Arrow 2: Belgium and the German states, 1810s to 1830s. Arrow 3: Russia, 1870s. Arrow 4: Japan, 1880s. Each arrow shows when factory methods arrived, not one exact route." },
+      { label: "Arrows 1 to 4: where the methods went", detail: "Arrow 1: the United States, 1790s. Arrow 2: Belgium and the German states, 1810s to 1830s. Arrow 3: Russia, 1870s. Arrow 4: Japan, 1880s. Each date is the decade of the case this lesson uses, not the first factory there, and an arrow is not a route." },
       { label: "Shaded regions in Asia and the Middle East", detail: "India, China, and Egypt. People there kept making cloth, ships, and other goods, mostly by hand, while their share of the world's manufacturing fell." },
       { label: "Reading the map", detail: "The shaded areas mark regions, not exact borders. The map shows only the places this topic names." }
     ]
@@ -94,7 +94,7 @@
       cardDesc: "The four places the new methods spread to, what carried them there, and the pattern.",
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: "Answer in three steps. (1) Name the four places the College Board says the new factory methods spread to from northwestern Europe. (2) Choose TWO of them. For each, give one case from the lesson and explain what carried the methods there: skilled people, machines, or money. (3) State one pattern in how the methods spread, using \"so the pattern is.\"",
+      prompt: "Answer in three steps. (1) Name the four places the College Board says the new factory methods spread to from northwestern Europe. (2) Choose TWO of them. For each, give one case from the lesson and explain what carried the methods there: skilled people, machines, or money. (3) State one pattern in how the methods spread, using \"so the pattern is.\" Your pattern can be about what carried them, or about what was waiting where they took root.",
       responseType: "Checkpoint 1",
       terms: ["Europe", "Belgium", "German states", "Germany", "France", "United States", "Russia", "Japan", "Slater", "Pawtucket", "Strutt", "Cockerill", "Seraing", "Liège", "Nuremberg", "railway", "locomotive", "Lowell", "Boston", "Hughes", "Yuzovka", "Osaka", "spinning", "machines", "skilled workers", "money", "coal", "pattern"],
       focus: ["Name all four places the methods spread to.", "Give a case for two of them, with what carried the methods.", "State the pattern in one sentence."]
@@ -105,7 +105,7 @@
       cardDesc: "How the shares of world manufacturing changed from 1750 to 1900, one cause of the change, and what India, China, or the Middle East kept making.",
       learningTargets: [lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[1].criteria],
-      prompt: "Explain what changed and what continued in who made the world's goods between 1750 and 1900. (1) Describe how most goods were made in 1750, and where. (2) Using two of Bairoch's estimates, explain how the share of world manufacturing changed for the regions with steam-powered factories and for India or China. (3) Explain what a share is, and why a share can fall while a region keeps making goods. (4) Explain one cause of the change, using India's cloth trade. (5) Give one piece of evidence that India, China, or the Middle East kept making goods.",
+      prompt: "Explain what changed and what continued in who made the world's goods between 1750 and 1900. (1) Describe how most goods were made in 1750, and where. (2) Using two of Bairoch's estimates, explain how the share of world manufacturing changed for the regions with steam-powered factories and for India or China. (3) Explain what a share is, and why a share can fall while a region keeps making goods. (4) Explain one cause of the change, such as how cloth from steam-powered mills undersold hand-made cloth, using India's cloth trade. (5) Give one piece of evidence that India, China, or the Middle East kept making goods.",
       responseType: "Checkpoint 2",
       skill: "Continuity and Change",
       terms: ["1750", "1900", "hand", "by hand", "handloom", "weavers", "Asia", "China", "India", "Egypt", "Europe", "United States", "share", "Bairoch", "estimate", "a third", "a quarter", "four-fifths", "steam", "factory", "machine-made", "cheaper", "Lancashire", "East India Company", "taxes", "raw cotton", "Bombay", "ships", "Trincomalee", "Aleppo", "Damascus", "Ottoman", "continued", "changed"],
@@ -127,7 +127,7 @@
       url: "../assets/images/topics/5-4/palampore-coromandel-coast-early-1700s.jpg",
       sourceUrl: "https://www.metmuseum.org/art/collection/search/75909",
       caption: "A palampore, a hanging of cotton painted and dyed by hand, made on the Coromandel Coast of southeast India in the early 1700s for buyers in Sri Lanka. The Metropolitan Museum of Art.",
-      prompt: "NOTICE how the design was made: by machine, or by hand? INFER what this object tells you about where some of the world's finest cloth was made before 1750. One beautiful hanging is one object: what can it not tell you about how much cloth India made?"
+      prompt: "NOTICE the detail in one flower and in the border. INFER what skill and time this took, and what that tells you about where some of the world's finest cloth was made before 1750. One beautiful hanging is one object: what can it not tell you about how much cloth India made?"
     },
     {
       title: "A Weaver at His Loom, about 1840",
@@ -164,7 +164,7 @@
     {
       title: "Who Made the World's Goods, 1750 and 1900",
       label: "Economic historian's estimates · Paul Bairoch, 1982",
-      sourceText: ["Share of world manufacturing, 1750: China about 33 percent, India about 25, Britain about 2, the United States under 1.", "1900: China about 6 percent, India about 2, Britain about 19, the United States about 24."],
+      sourceText: ["Share of world manufacturing, 1750: China about 33 percent, India about 25, Britain under 2, the United States under 1.", "1900: China about 6 percent, India under 2, Britain about 19, the United States about 24."],
       caption: "Estimates by the economic historian Paul Bairoch, published in 1982, rounded to whole numbers. They are careful estimates built from population and output, not counts made at the time.",
       prompt: "Compare the two years. INFER which regions' shares changed most, and in which direction. These are shares, not amounts: what can they not tell you about whether India and China made more or less cloth than before?"
     }

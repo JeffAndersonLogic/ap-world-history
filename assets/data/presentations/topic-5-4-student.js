@@ -48,7 +48,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "action",
       "eyebrow": "Module 02 · First & 10 · 12 Minutes",
       "title": "Read, and keep two lists.",
-      "subtitle": "Changes: where goods were made, and how. Continuities: who kept making goods, and how.",
+      "subtitle": "Changes: where goods were made, and how. Continuity: who kept making goods, and how.",
       "action": {
         "label": "Open First & 10",
         "url": "first-and-10-topic-5-4-industrialization-spreads-capture.html?v=response-id-fix-v1"
@@ -124,7 +124,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "diffusion-path",
       "eyebrow": "How It Spread · Where It Went",
       "title": "Where the new methods went.",
-      "footer": "Each stop got the methods later, and each added its own coal, water and money.",
+      "footer": "One case at each stop, not the first arrival. Each added its own coal, water and money.",
       "kc": "KC-5.1.I.D",
       "template": {
         "stops": [
@@ -175,7 +175,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "word": "Machines",
-            "note": "from Britain: the Adler, Osaka's spindles"
+            "note": "from Britain: the Nuremberg engine, Osaka's spindles"
           },
           {
             "word": "Money",
@@ -218,9 +218,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "right": "British machines, driven by steam"
           },
           {
-            "label": "Built on",
-            "left": "The Donets coal and iron",
-            "right": "Cotton spinning, with a night shift"
+            "label": "Started with",
+            "left": "Ironworks, on the Donets coal",
+            "right": "Cotton spinning, by steam"
           }
         ]
       }
@@ -240,7 +240,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "ledger",
       "eyebrow": "Making Connections 5.A · Practice",
       "title": "Five cases. What do they share?",
-      "footer": "Say the pattern in one sentence, then check it against the bracket.",
+      "footer": "What carried the methods to each place? What do all five share?",
       "kc": "KC-5.1.I.D",
       "template": {
         "rows": [
@@ -270,8 +270,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "result": "run by steam, 1883."
           }
         ],
-        "payoffLabel": "The pattern",
-        "payoff": "People, machines, money"
+        "payoffLabel": "Your turn",
+        "payoff": "Say the pattern in one sentence"
       }
     },
     {
@@ -288,7 +288,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "timeline-fortunes",
       "eyebrow": "What Changed · The Shares",
       "title": "The world's share of manufacturing moved.",
-      "footer": "A share is a part of the whole. The whole grew enormously.",
+      "footer": "Britain alone: under 2 percent in 1750, about a fifth by 1860. A share is a part of a whole, and the whole grew enormously.",
       "kc": "KC-5.1.II.B",
       "template": {
         "range": [
@@ -300,7 +300,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "cases": [
           {
             "name": "Europe and the US",
-            "note": "Steam-powered factories",
+            "note": "Where factories spread",
             "points": [
               {
                 "year": 1750,
@@ -336,7 +336,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
               {
                 "year": 1860,
                 "label": "1860",
-                "text": "Britain alone: about a fifth"
+                "text": "about three-fifths"
               },
               {
                 "year": 1900,
@@ -579,7 +579,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Say it in one sentence.",
       "kc": "Unit 5: Learning Objective E",
       "template": {
-        "frame": "Factory methods spread from Britain to Europe, the US, ___ and ___, carried by people, ___ and money. Their ___ of the world's goods rose. Asia kept ___ goods, but its share ___.",
+        "frame": "Factory methods spread from Britain to the rest of Europe, the US, ___ and ___, carried by people, ___ and money. Their ___ of the world's goods rose. Asia kept ___ goods, but its share ___.",
         "words": [
           "Russia",
           "Japan",

@@ -196,7 +196,7 @@ const scenarios = [
     decisions: [
       D('change', 'Name the biggest change', 'Which part of the hall shows the biggest change in how the world’s goods are made?', [
         O('machines', 'The British spinning machines and power looms', 'Point your report at the machines that make cloth faster than any hands.', 'It names the new mode of production, the steam-powered factory.', 'It may make the hand-made goods in the hall look as if they no longer matter.', 'The machines are the change, but they are not the whole story.'),
-        O('india', 'India’s hand-made cloth', 'Point your report at the cloth from India, made by hand as it was a century ago.', 'It shows what continued: skilled hand production, still at work.', 'It may hide how fast the share made by hand is shrinking.', 'The cloth is the continuity, and it is still being made.'),
+        O('india', 'India’s hand-made cloth', 'Point your report at the cloth from India, still woven by hand, though many weavers now use machine-spun thread.', 'It shows what continued: skilled hand production, still at work.', 'It may hide how fast the share made by hand is shrinking.', 'The cloth is the continuity, and it is still being made.'),
         O('visitors', 'The visitors themselves', 'Point your report at the crowd of foreign makers studying British machines to take home.', 'It shows the methods spreading, carried by people.', 'It may make the spread sound easy, when it needed coal, money, and skill.', 'The spread is a change, but it reached only some places.')
       ]),
       D('carry', 'Choose what to take home', 'For a region that wants the new methods, what should it take home first?', [

@@ -114,3 +114,25 @@ What continued, and why the share fell:
 ## Review findings
 
 (None yet.)
+
+### Pass 1, 2026-10-22
+
+Two fresh reviewers, each from the packet `capture-topic-for-review.js 5.4` (text captures of every
+module, the reading, the chapter, the room and the Canvas text, and all 22 teacher slides in the
+brand fonts): page truth and readability on the cheaper model; history on the default model.
+
+**Page truth, readability, CED, ownership (14 findings; 12 fixed, 2 rejected).**
+1. A copyable answer to First & 10 question 01, Checkpoint 1 and the Skill Builder (the pattern) was printed in the section 2 callout, the lecture card's "The pattern" line and the slide 11 bracket. **Fixed:** the callouts now ask the question instead of answering it; the lecture card names the three carriers as content with a question; slide 11's bracket reads "Your turn: say the pattern in one sentence."
+2. Checkpoint 1 displayed a target ("the pattern in where they took root") that step 3 did not assess; slide 9's Japan row named no resource. **Fixed:** the target reads "the pattern in how they spread," step 3 allows a pattern about carriers or about what was waiting; slide 9's row is "Started with" for both.
+3. Slide 13's 1860 label "Britain alone: about a fifth" sat on the Europe-and-US line. **Fixed:** the point reads "about three-fifths" (Europe 53.2 and the US 7.2, Bairoch); Britain's figures moved to the footer; the row note reads "Where factories spread."
+4. The map key and slide 7 presented the cases' dates as arrival dates (earlier mills existed: Ratingen's Cromford, 1783 to 1784; Kreenholm at Narva, 1857). **Fixed:** "Each date is the decade of the case this lesson uses, not the first factory there"; slide 7's footer says "One case at each stop, not the first arrival"; the reading says Russia's and Japan's "big growth" came mostly after 1870.
+5. "Why the share fell" is taught and graded though the story map gives 5.4 only the two Key Concepts. **Rejected, with one change:** KC-5.1.II.B itself names a cause, that steam-powered production "contributed to the increase in these regions' share," so a cause of the change is inside the Key Concept; the trade rules are taught as one cause historians weigh, not as the answer. Checkpoint 2 step 4 now points at that cause ("how cloth from steam-powered mills undersold hand-made cloth").
+6. BeInTheRoom's option said India's cloth was "made by hand as it was a century ago," against the course. **Fixed:** "still woven by hand, though many weavers now use machine-spun thread."
+7. Slide 8 named "the Adler," which no student surface names. **Fixed:** "the Nuremberg engine."
+8. Map badges 2 and 3 sit near Britain; arrow 4 crossed China; the image's alt text is only its title. **Partly fixed:** arrow 4 now bows north of China; badge 2 stays near Britain because Belgium is next door. The alt text comes from the shared renderer, which uses every map's title (adjacent finding).
+9. The palampore's prompt asked what the caption already answers. **Fixed:** "NOTICE the detail in one flower and in the border."
+10. "Two things changed. One thing did not" against "Continuities" on the support card and slide 4. **Fixed:** "Continuity" in both.
+11. Readability: "Lancashire" and "calicoes" unglossed; "the CED" in a criterion; Martin's "compelled" and "scale of civilisation" unglossed; slide 18 read "from Britain to Europe." **Fixed:** all glossed; "College Board"; "to the rest of Europe."
+12. BeSurreal asked for "raw cotton," which the scene no longer contains; Dacca's fine muslin thread was spun by hand on a spindle, not a wheel. **Fixed:** the words are handloom, machine-made and continuity; the mother "spins the thread by hand."
+13. Evidence card 6 rounded Britain (1750) and India (1900) to "about 2" against "under 2" elsewhere. **Fixed:** "under 2."
+14. The text evidence card's figures are not in its alt text. **Rejected for this topic:** the shared `behistorical-evidence-text-card.js` module, already an adjacent finding from 5.1 to 5.3.

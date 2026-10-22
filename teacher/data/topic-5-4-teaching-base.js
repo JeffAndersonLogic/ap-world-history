@@ -155,7 +155,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'first10', kind: 'action', eyebrow: 'Module 02 · First & 10 · 12 Minutes',
       title: 'Read, and keep two lists.',
-      subtitle: 'Changes: where goods were made, and how. Continuities: who kept making goods, and how.',
+      subtitle: 'Changes: where goods were made, and how. Continuity: who kept making goods, and how.',
       big: '12',
       action: { label: 'Open First & 10', url: '../unit-5/first-and-10-topic-5-4-industrialization-spreads-capture.html?v=response-id-fix-v1' },
       notes: {
@@ -226,7 +226,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'spread', kind: 'diffusion-path', eyebrow: 'How It Spread · Where It Went',
       kc: 'KC-5.1.I.D', title: 'Where the new methods went.',
-      footer: 'Each stop got the methods later, and each added its own coal, water and money.',
+      footer: 'One case at each stop, not the first arrival. Each added its own coal, water and money.',
       template: {
         stops: [
           { place: 'Britain', date: '1771', text: 'Cromford: spinning under one roof' },
@@ -259,7 +259,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         terms: [
           { word: 'People', note: 'who knew the machines: Slater, Cockerill, Hughes' },
-          { word: 'Machines', note: 'from Britain: the Adler, Osaka\'s spindles' },
+          { word: 'Machines', note: 'from Britain: the Nuremberg engine, Osaka\'s spindles' },
           { word: 'Money', note: 'to pay first: Boston merchants at Lowell' }
         ],
         result: { word: 'A factory in a new place', note: 'on coal and water' }
@@ -287,7 +287,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'When', left: 'Mostly after 1870; fastest in the 1890s', right: 'Mostly after 1870' },
           { label: 'A case', left: 'Hughes\'s ironworks at Yuzovka, 1870s', right: 'The Osaka Spinning Company, 1883' },
           { label: 'Carried by', left: 'A Welsh engineer and his British team', right: 'British machines, driven by steam' },
-          { label: 'Built on', left: 'The Donets coal and iron', right: 'Cotton spinning, with a night shift' }
+          { label: 'Started with', left: 'Ironworks, on the Donets coal', right: 'Cotton spinning, by steam' }
         ]
       },
       notes: {
@@ -327,7 +327,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'practice', kind: 'ledger', eyebrow: 'Making Connections 5.A · Practice',
       kc: 'KC-5.1.I.D', title: 'Five cases. What do they share?',
-      footer: 'Say the pattern in one sentence, then check it against the bracket.',
+      footer: 'What carried the methods to each place? What do all five share?',
       template: {
         rows: [
           { name: 'Pawtucket', tool: 'Slater\'s memory', result: 'Arkwright\'s machines rebuilt, 1790s.' },
@@ -336,13 +336,13 @@ window.BEHISTORICAL_TEACHING = {
           { name: 'Lowell', tool: 'Boston merchants\' money', result: 'cotton mills on a river, 1820s.' },
           { name: 'Osaka', tool: 'British spinning machines', result: 'run by steam, 1883.' }
         ],
-        payoffLabel: 'The pattern',
-        payoff: 'People, machines, money'
+        payoffLabel: 'Your turn',
+        payoff: 'Say the pattern in one sentence'
       },
       notes: {
         minutes: 2,
         land: [
-          'Practice on KC-5.1.I.D. Ask for the pattern before pointing at the bracket.',
+          'Practice on KC-5.1.I.D. The slide does not print the pattern: students say it. Take three answers before giving yours.',
           'A strong answer: "In Pawtucket, Seraing and Osaka, the factory started with British know-how or British machines, set up where there was water or coal, so the pattern is that the methods spread when people, machines and money carried them to places with the right resources."',
           'If a student says "they all copied Britain," push for the carrier: copied how? With whom? With what money?'
         ],
@@ -369,13 +369,13 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'shares', kind: 'timeline-fortunes', eyebrow: 'What Changed · The Shares',
       kc: 'KC-5.1.II.B', title: 'The world\'s share of manufacturing moved.',
-      footer: 'A share is a part of the whole. The whole grew enormously.',
+      footer: 'Britain alone: under 2 percent in 1750, about a fifth by 1860. A share is a part of a whole, and the whole grew enormously.',
       template: {
         range: [1750, 1900],
         tick: 50,
         note: 'Bairoch\'s estimates; one scale for all three rows',
         cases: [
-          { name: 'Europe and the US', note: 'Steam-powered factories', points: [{ year: 1750, level: 1.07 }, { year: 1800, level: 1.31 }, { year: 1830, level: 1.66 }, { year: 1860, level: 2.75 }, { year: 1880, level: 3.46 }, { year: 1900, level: 3.89 }], events: [{ year: 1750, label: '1750', text: 'about a quarter' }, { year: 1860, label: '1860', text: 'Britain alone: about a fifth' }, { year: 1900, label: '1900', text: 'over four-fifths' }] },
+          { name: 'Europe and the US', note: 'Where factories spread', points: [{ year: 1750, level: 1.07 }, { year: 1800, level: 1.31 }, { year: 1830, level: 1.66 }, { year: 1860, level: 2.75 }, { year: 1880, level: 3.46 }, { year: 1900, level: 3.89 }], events: [{ year: 1750, label: '1750', text: 'about a quarter' }, { year: 1860, label: '1860', text: 'about three-fifths' }, { year: 1900, label: '1900', text: 'over four-fifths' }] },
           { name: 'China', note: 'Mostly by hand', points: [{ year: 1750, level: 1.49 }, { year: 1800, level: 1.51 }, { year: 1830, level: 1.35 }, { year: 1860, level: 0.9 }, { year: 1880, level: 0.57 }, { year: 1900, level: 0.28 }], events: [{ year: 1750, label: '1750', text: 'about a third' }, { year: 1900, label: '1900', text: 'about 6 percent' }] },
           { name: 'India', note: 'Mostly by hand', points: [{ year: 1750, level: 1.11 }, { year: 1800, level: 0.9 }, { year: 1830, level: 0.8 }, { year: 1860, level: 0.39 }, { year: 1880, level: 0.13 }, { year: 1900, level: 0.08 }], events: [{ year: 1750, label: '1750', text: 'about a quarter' }, { year: 1900, label: '1900', text: 'under 2 percent' }] }
         ]
@@ -496,7 +496,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'synthesis', kind: 'close-retell', eyebrow: 'AP Synthesis',
       kc: 'Unit 5: Learning Objective E', title: 'Say it in one sentence.',
       template: {
-        frame: 'Factory methods spread from Britain to Europe, the US, ___ and ___, carried by people, ___ and money. Their ___ of the world\'s goods rose. Asia kept ___ goods, but its share ___.',
+        frame: 'Factory methods spread from Britain to the rest of Europe, the US, ___ and ___, carried by people, ___ and money. Their ___ of the world\'s goods rose. Asia kept ___ goods, but its share ___.',
         words: ['Russia', 'Japan', 'machines', 'share', 'making', 'fell'],
         prompt: 'Fill it in from memory. Then say it again with one example for the change and one for the continuity.'
       },
