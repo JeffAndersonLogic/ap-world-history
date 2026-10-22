@@ -376,21 +376,21 @@ module.exports = [
       { zone: 'britain', label: 'BRITAIN', labelSide: 'left', tone: 'gold', legend: 'Britain: coal, iron and waterways at home' },
       { zone: [-66, 13, 9, 5], label: 'CARIBBEAN AND SOUTH AMERICA', labelSide: 'left', tone: 'bronze', legend: 'Cotton grown by enslaved people, by the 1780s' },
       { zone: [-87, 33, 8, 4], label: 'US SOUTH', labelSide: 'left', tone: 'sand', legend: 'Cotton grown by enslaved people, more and more after the 1790s' },
-      { zone: [22, 60, 9, 4], label: 'SWEDEN AND RUSSIA', labelSide: 'right', tone: 'slate', legend: 'Iron, and the timber Britain lacked' }
+      { zone: [22, 60, 9, 4], label: 'SWEDEN AND RUSSIA', labelSide: 'right', tone: 'slate', legend: 'Iron from Sweden, later Russia' }
     ],
     flows: [
       { from: [-66, 13], to: [-3, 53], label: 'cotton, 1780s', bow: 0.18 },
       { from: [-87, 33], to: [-3, 53], label: 'cotton, after 1790s', bow: -0.2 },
-      { from: [22, 60], to: [-1, 54], label: 'iron and timber', bow: -0.25 }
+      { from: [22, 60], to: [-1, 54], label: 'iron', bow: -0.25 }
     ],
     legend: [
       { kind: 'area', tone: 'gold', text: 'Britain: coal, iron and waterways at home' },
       { kind: 'area', tone: 'bronze', text: 'Cotton grown by enslaved people, by the 1780s' },
       { kind: 'area', tone: 'sand', text: 'Cotton grown by enslaved people, after the 1790s' },
-      { kind: 'area', tone: 'slate', text: 'Iron, and the timber Britain lacked' },
+      { kind: 'area', tone: 'slate', text: 'Iron from Sweden, later Russia' },
       { kind: 'flow', step: 1, text: 'cotton, 1780s' },
       { kind: 'flow', step: 2, text: 'cotton, after 1790s' },
-      { kind: 'flow', step: 3, text: 'iron and timber' }
+      { kind: 'flow', step: 3, text: 'iron' }
     ],
     points: [
       { at: [-2.24, 53.48], label: 'Manchester', note: 'cotton mills', side: 'right' }

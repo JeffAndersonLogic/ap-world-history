@@ -132,7 +132,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `"Britain had rivers" is a fact, not an explanation. Add what the water did: "water made heavy coal cheap to move, so mills near a canal paid less for fuel."`
+              html: `"Britain had rivers" is a fact, not an explanation. Add what the water did and what that made cheaper, with a "so."`
             } }
           ]
         }
@@ -185,7 +185,7 @@ module.exports = {
         }
       ],
       useThis: {
-        tool: `Follow the chain. <em>Start from a turnip and end at a town: more fodder, more animals, more grain, more people, fewer farming, more in towns.</em>`,
+        tool: `Follow the chain. <em>Start from a turnip and end at a town. Name each link in the chain, and the word that joins it to the next.</em>`,
         limit: `Urbanization is a cause here, but it is also an effect of industry, and Topic 5.9 treats it that way. Be clear which one you mean.`,
         comparison: `Against laws and capital (section 04): food and towns supplied workers and buyers; laws and money decided whether anyone would risk building a mill.`
       },
@@ -320,7 +320,7 @@ module.exports = {
       {
         category: 'Change',
         title: 'What the factory system changed',
-        body: `Evidence to sort: the putting-out system; Cromford (1771), its water wheel, its houses and its workers; the steps of cotton spinning, each with its own machine; Smith's pin workshop (1776); Ure's definition (1835). Explain the two changes, one place and one job each, and what they led to: more goods, made by workers with less training.`
+        body: `Evidence to sort: the putting-out system; Cromford (1771), its water wheel, its houses and its workers; the steps of cotton spinning, each with its own machine; Smith's pin workshop (1776); Ure's definition (1835). Name the two changes and what they led to.`
       }
     ]
   }

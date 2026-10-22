@@ -95,7 +95,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "label": "What nature gave",
             "note": "In Britain's ground and water",
             "items": [
-              "Rivers and coast",
+              "Rivers, coast, canals",
               "Coal, iron, too little timber"
             ]
           },
@@ -103,7 +103,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "label": "What people built",
             "note": "On top of what nature gave",
             "items": [
-              "Canals, towns, better farming",
+              "Towns and better farming",
               "Property laws",
               "Foreign resources and capital"
             ]
@@ -279,7 +279,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "sentence-frame",
       "eyebrow": "Developments and Processes 1.B · Model",
-      "title": "Explain a process: the factor, the \"which meant,\" the \"so.\"",
+      "title": "Explain a process: the factor, the “which meant,” the “so.”",
       "footer": "Every arrow in a process needs words: which meant, so, and then.",
       "template": {
         "frame": "{{The factor}}, which meant {{what it made cheaper or possible}}, so {{what that led to}}.",
@@ -376,7 +376,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Spin",
-            "text": "The rope is spun into thread, in a room of its own."
+            "text": "The rope is spun into thread."
           },
           {
             "label": "Each worker",
@@ -416,9 +416,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Ten men, eighteen steps, forty-eight thousand pins.",
       "kc": "KC-5.1.I.C",
       "template": {
-        "quote": "Those ten persons, therefore, could make among them upwards of forty-eight thousand pins in a day. But if they had all wrought separately and independently, and without any of them having been educated to this peculiar business, they certainly could not each of them have made twenty",
+        "quote": "Those ten persons, therefore, could make among them upwards of forty-eight thousand pins in a day. ... But if they had all wrought separately and independently, and without any of them having been educated to this peculiar business, they certainly could not each of them have made twenty, perhaps not one pin in a day",
         "attribution": "Adam Smith, The Wealth of Nations, Book I, chapter 1, 1776",
-        "notice": "Smith says he saw this. Count the men and the steps: ten men shared about **eighteen steps**, so each did only one, two or three of them."
+        "notice": "Smith says he saw this: ten men shared about **eighteen steps**, so each did only one, two or three of them."
       }
     },
     {
@@ -452,8 +452,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "The work",
-            "left": "A family spins and weaves",
-            "right": "Each worker tends one step"
+            "left": "A family spins thread and weaves cloth",
+            "right": "Each worker tends one step of spinning"
           }
         ]
       }
@@ -496,7 +496,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "word": "Water",
-            "note": "rivers, coast, streams"
+            "note": "rivers, coast, canals"
           },
           {
             "word": "Food and towns",

@@ -261,3 +261,26 @@ History:
 Trend: pass 1, 22 distinct defects (including wrong dates on the canal and misquotations of Smith);
 pass 2, 19, none a wrong date, number or quotation on a student page, mostly sorting consistency,
 answer leaks and credit wording.
+
+### Pass 3, 2026-10-22
+
+Two fresh reviewers on a fresh packet (`review3`). The page-truth reviewer finished: 13 findings, 11
+supported and fixed, 2 rejected; it found no historical-accuracy or CED defect. The history
+reviewer was cut off by a usage limit partway through its pass; it is resumed, not relaunched, and
+its findings are logged below when it finishes.
+
+Page truth and readability:
+1. Slide 17's Smith quotation joined two non-adjacent sentences without an ellipsis and stopped mid-sentence at "twenty." **Fixed:** "... But if" and the full ending, "perhaps not one pin in a day"; the notice no longer asks students to count what is not on the slide.
+2. Thread and cloth conflated: Cromford spun thread; weaving stayed at home for decades. **Fixed:** Checkpoint 2 asks how the factory changed the way cotton thread was made; slide 18 reads "A family spins thread and weaves cloth" against "Each worker tends one step of spinning."
+3. Canals, and the count of seven: moving canals to "people built" in pass 2 split the CED's single factor ("Proximity to waterways; access to rivers and canals") and gave slide 6 eight items under "seven," while the reading's "Nature, Part 2: Water" section carries canals. **Fixed** the other way, consistently: canals sit with the waterways, under what nature gave, with the note "nature's water, dug by people," on the targets, the success criterion, Checkpoint 1 (step 1 lists them, step 2 no longer does), slides 6 and 20, and the reading's callout. This reverses pass 2's finding 1 in favor of the CED's own grouping; pass 2's underlying defect (surfaces disagreeing) is fixed either way.
+4. The deep reading printed finished answers to First & 10 questions 01 to 03 and Checkpoint 1 (the section 02 mistake box, the section 03 tool, the closing card). **Fixed:** each now names the move, not the answer.
+5. BeInTheRoom's reflection assumed every choice shows a factory; the module card called every role a partner. **Fixed:** "does or does not show"; "At Richard Arkwright's partners' table."
+6. Checkpoint 2 step 5 suggested coal powered the factory, which the course teaches as a myth. **Fixed:** "the fast water that turned Cromford's wheel."
+7. Slide 21's sentence frame with a word bank is a finished answer. **Rejected:** it is the deck's required synthesis, the objective in one sentence; Checkpoint 1 and 2 ask for explanations with mechanisms and evidence, which the frame does not supply.
+8. Slide 16's "in a room of its own" appears on no student surface; lecture card 3 paired a later plate with the 1771 story unflagged. **Fixed:** removed; the caption says "It shows a mill decades after Cromford."
+9. "When cotton mills ran on steam" (1835): water still drove many. **Fixed:** "when steam engines drove many cotton mills."
+10. The text card's SVG `aria-label` is only the title. **Rejected for this topic:** the shared renderer, `assets/js/behistorical-evidence-text-card.js`, an adjacent finding (logged since 5.1).
+11. The map's "gold circle" is not visibly gold; arrow 3's timber is taught nowhere. **Fixed:** "the circle on Britain"; arrow 3, its legend and key now say iron only.
+12. Slide 12's title printed straight quotes as closing marks. **Fixed:** typographic quotes.
+13. A builder note left in slide 15's teacher notes ("see the report"). **Fixed.**
+

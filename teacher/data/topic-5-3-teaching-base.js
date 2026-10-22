@@ -202,8 +202,8 @@ window.BEHISTORICAL_TEACHING = {
         claimLabel: 'The College Board lists',
         claim: '**Seven factors** behind industrial production',
         branches: [
-          { label: 'What nature gave', note: 'In Britain\'s ground and water', items: ['Rivers and coast', 'Coal, iron, too little timber'] },
-          { label: 'What people built', note: 'On top of what nature gave', items: ['Canals, towns, better farming', 'Property laws', 'Foreign resources and capital'] }
+          { label: 'What nature gave', note: 'In Britain\'s ground and water', items: ['Rivers, coast, canals', 'Coal, iron, too little timber'] },
+          { label: 'What people built', note: 'On top of what nature gave', items: ['Towns and better farming', 'Property laws', 'Foreign resources and capital'] }
         ]
       },
       notes: {
@@ -355,7 +355,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'model', kind: 'sentence-frame', eyebrow: 'Developments and Processes 1.B · Model',
-      title: 'Explain a process: the factor, the "which meant," the "so."',
+      title: 'Explain a process: the factor, the “which meant,” the “so.”',
       footer: 'Every arrow in a process needs words: which meant, so, and then.',
       template: {
         frame: '{{The factor}}, which meant {{what it made cheaper or possible}}, so {{what that led to}}.',
@@ -436,7 +436,7 @@ window.BEHISTORICAL_TEACHING = {
           'Cromford Mill, built 1771 by Richard Arkwright with his partners Need and Strutt, in Derbyshire\'s Derwent valley. UNESCO, inscribing the Derwent Valley Mills in 2001: "The Derwent Valley saw the birth of the factory system, when new types of building were erected to house the new technology for spinning cotton developed by Richard Arkwright in the late 18th century."',
           'Power: the Derwent Valley Mills partnership and Cromford Mill histories: the first mill drew water from Bonsall Brook and the Cromford Sough, a tunnel draining the lead mines, whose underground water was warm and said never to freeze.',
           'Workers and houses: Cromford Mills (the Arkwright Society): Arkwright needed more workers than the village had and built houses for them, North Street among them; most early workers were women and children, the youngest about seven. Andrew Ure (1835) praised Arkwright\'s "code of factory discipline" and wrote of "overlookers."',
-          'No period picture of Cromford could be sourced in this build (Wikimedia Commons was rate-limited). A period painting or print of the mill is the picture to add if Jeff uploads one (Joseph Wright of Derby painted Arkwright\'s mills by night); see the report.',
+          'This slide has no picture of Cromford itself. Joseph Wright of Derby painted Arkwright\'s mills by night, if a copy is added later.',
           'Do not call Cromford "the first factory": Lombe\'s silk mill at Derby (patent 1718) and Lewis Paul\'s cotton mills of the 1740s had factory features (Ure; Clark). The UNESCO wording, "the birth of the factory system," is safe.'
         ],
         ask: 'Under putting-out, the cotton went to the workers. What moved at Cromford?',
@@ -452,7 +452,7 @@ window.BEHISTORICAL_TEACHING = {
         steps: [
           { label: 'Card', text: 'Raw cotton, cleaned, is combed so its fibers lie straight.' },
           { label: 'Draw and rove', text: 'It is drawn out and twisted into a loose rope.' },
-          { label: 'Spin', text: 'The rope is spun into thread, in a room of its own.' },
+          { label: 'Spin', text: 'The rope is spun into thread.' },
           { label: 'Each worker', key: true, text: 'Tends one step, all day: specialization of labor.' }
         ]
       },
@@ -473,9 +473,9 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'pins', kind: 'source-quote', eyebrow: 'The Factory · Why One Job Each',
       kc: 'KC-5.1.I.C', title: 'Ten men, eighteen steps, forty-eight thousand pins.',
       template: {
-        quote: 'Those ten persons, therefore, could make among them upwards of forty-eight thousand pins in a day. But if they had all wrought separately and independently, and without any of them having been educated to this peculiar business, they certainly could not each of them have made twenty',
+        quote: 'Those ten persons, therefore, could make among them upwards of forty-eight thousand pins in a day. ... But if they had all wrought separately and independently, and without any of them having been educated to this peculiar business, they certainly could not each of them have made twenty, perhaps not one pin in a day',
         attribution: 'Adam Smith, The Wealth of Nations, Book I, chapter 1, 1776',
-        notice: 'Smith says he saw this. Count the men and the steps: ten men shared about **eighteen steps**, so each did only one, two or three of them.'
+        notice: 'Smith says he saw this: ten men shared about **eighteen steps**, so each did only one, two or three of them.'
       },
       notes: {
         minutes: 2,
@@ -500,7 +500,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'Where', left: 'Spread across many cottages', right: 'One building' },
           { label: 'Power', left: 'Human muscle, at a spinning wheel and loom', right: 'A water wheel turning every machine' },
           { label: 'Hours', left: 'Set by the family', right: 'Set by the mill' },
-          { label: 'The work', left: 'A family spins and weaves', right: 'Each worker tends one step' }
+          { label: 'The work', left: 'A family spins thread and weaves cloth', right: 'Each worker tends one step of spinning' }
         ]
       },
       notes: {
@@ -545,7 +545,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         terms: [
           { word: 'Coal and iron', note: 'close together; too little wood' },
-          { word: 'Water', note: 'rivers, coast, streams' },
+          { word: 'Water', note: 'rivers, coast, canals' },
           { word: 'Food and towns', note: 'more people, fewer farming' },
           { word: 'Laws, cotton, money', note: 'worth the risk' }
         ],

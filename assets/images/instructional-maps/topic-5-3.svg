@@ -109,10 +109,10 @@
       <rect x="18" y="38" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="56">Britain: coal, iron and waterways at home</text>
       <rect x="18" y="71" width="40" height="23" rx="4" fill="#C08552" fill-opacity=".6" stroke="#8C5A2B" stroke-width="3"/><text class="small" x="74" y="89">Cotton grown by enslaved people, by the 1780s</text>
       <rect x="18" y="104" width="40" height="23" rx="4" fill="#D2B48C" fill-opacity=".6" stroke="#8E7A55" stroke-width="3"/><text class="small" x="74" y="122">Cotton grown by enslaved people, after the 1790s</text>
-      <rect x="18" y="137" width="40" height="23" rx="4" fill="#9FB0AE" fill-opacity=".6" stroke="#4E6260" stroke-width="3"/><text class="small" x="74" y="155">Iron, and the timber Britain lacked</text>
+      <rect x="18" y="137" width="40" height="23" rx="4" fill="#9FB0AE" fill-opacity=".6" stroke="#4E6260" stroke-width="3"/><text class="small" x="74" y="155">Iron from Sweden, later Russia</text>
       <circle class="badge" cx="33" cy="181" r="14"/><text class="badgenum" x="33" y="187" text-anchor="middle" font-size="16">1</text><line x1="51" x2="72" y1="181" y2="181" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,175 L84,181 L72,187 Z" fill="#8C5A2B"/><text class="small" x="94" y="188">cotton, 1780s</text>
       <circle class="badge" cx="33" cy="214" r="14"/><text class="badgenum" x="33" y="220" text-anchor="middle" font-size="16">2</text><line x1="51" x2="72" y1="214" y2="214" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,208 L84,214 L72,220 Z" fill="#8C5A2B"/><text class="small" x="94" y="221">cotton, after 1790s</text>
-      <circle class="badge" cx="33" cy="247" r="14"/><text class="badgenum" x="33" y="253" text-anchor="middle" font-size="16">3</text><line x1="51" x2="72" y1="247" y2="247" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,241 L84,247 L72,253 Z" fill="#8C5A2B"/><text class="small" x="94" y="254">iron and timber</text>
+      <circle class="badge" cx="33" cy="247" r="14"/><text class="badgenum" x="33" y="253" text-anchor="middle" font-size="16">3</text><line x1="51" x2="72" y1="247" y2="247" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,241 L84,247 L72,253 Z" fill="#8C5A2B"/><text class="small" x="94" y="254">iron</text>
   </g>
 
   <rect x="0" y="948" width="1600" height="52" fill="url(#paper)" opacity=".93"/>

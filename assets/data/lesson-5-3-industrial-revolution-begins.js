@@ -37,7 +37,7 @@ window.BEHISTORICAL_LESSON = {
 
   learningTargets: [
     {
-      target: "I can explain how Britain's environment (its coal, iron, and timber, and its rivers and coast) and the things people built (canals, better farming, growing towns, laws that protected property, resources from abroad, and saved-up capital) worked together to cause industrial production to grow, starting in Britain.",
+      target: "I can explain how Britain's environment (its coal, iron, and timber, and its rivers, coast, and canals) and the things people built (better farming, growing towns, laws that protected property, resources from abroad, and saved-up capital) worked together to cause industrial production to grow, starting in Britain.",
       kc: "KC-5.1.I.A",
       theme: "Humans and the Environment"
     },
@@ -50,7 +50,7 @@ window.BEHISTORICAL_LESSON = {
 
   successCriteria: [
     {
-      criteria: "I can explain two things nature gave Britain (such as coal and iron, the shortage of wood, or rivers and the coast) and two things people built (such as canals, better farming, towns, patents, cotton from abroad, or saved-up money). For each one, I can say what it made cheaper or possible. I can show one way two of them worked together.",
+      criteria: "I can explain two things nature gave Britain (such as coal and iron, the shortage of wood, or rivers, the coast, and canals) and two things people built (such as better farming, towns, patents, cotton from abroad, or saved-up money). For each one, I can say what it made cheaper or possible. I can show one way two of them worked together.",
       kc: "KC-5.1.I.A",
       theme: "Humans and the Environment"
     },
@@ -130,7 +130,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Carding, Drawing, and Roving",
-          caption: "An engraving of the room in a cotton mill where cotton was combed, drawn out, and twisted, from a 19th-century book plate headed \"Economic Botany: The Cotton Manufacture.\" The Wellcome Collection's record gives no maker or date. Each row of machines does one step; belts from the ceiling turn them all. Wellcome Collection.",
+          caption: "An engraving of the room in a cotton mill where cotton was combed, drawn out, and twisted, from a 19th-century book plate headed \"Economic Botany: The Cotton Manufacture.\" It shows a mill decades after Cromford. The Wellcome Collection's record gives no maker or date. Each row of machines does one step; belts from the ceiling turn them all. Wellcome Collection.",
           url: "../assets/images/topics/5-3/carding-drawing-roving-allom-engraving.jpg",
           sourceUrl: "https://wellcomecollection.org/works/azdqm7t7"
         }
@@ -168,7 +168,7 @@ window.BEHISTORICAL_LESSON = {
 
   primarySource: {
     title: "Primary Source: Adam Smith and Andrew Ure on Dividing the Work",
-    intro: "Two writers of the time described how splitting work into steps changed how things were made. Adam Smith, a Scottish thinker, wrote The Wealth of Nations in 1776, five years after Arkwright's mill opened at Cromford. He described how a pin workshop divided its work. Andrew Ure, a Scottish scientist who admired factories, wrote The Philosophy of Manufactures in 1835, when cotton mills ran on steam. He defined what a factory is.",
+    intro: "Two writers of the time described how splitting work into steps changed how things were made. Adam Smith, a Scottish thinker, wrote The Wealth of Nations in 1776, five years after Arkwright's mill opened at Cromford. He described how a pin workshop divided its work. Andrew Ure, a Scottish scientist who admired factories, wrote The Philosophy of Manufactures in 1835, when steam engines drove many cotton mills. He defined what a factory is.",
     attribution: "Passages 1 and 2: Adam Smith, An Inquiry into the Nature and Causes of the Wealth of Nations, 1776, Book I, chapter 1. Passage 3: Andrew Ure, The Philosophy of Manufactures, London, 1835, p. 13",
     text: "<strong>Passage 1, Smith (1776).</strong> One man draws out the wire; another straights it; a third cuts it; a fourth points it; a fifth grinds it at the top for receiving the head ... and the important business of making a pin is, in this manner, divided into about eighteen distinct operations.<br><br><strong>Passage 2, Smith (1776).</strong> I have seen a small manufactory of this kind, where ten men only were employed ... Those ten persons, therefore, could make among them upwards of forty-eight thousand pins in a day. ... But if they had all wrought separately and independently, and without any of them having been educated to this peculiar business, they certainly could not each of them have made twenty, perhaps not one pin in a day.<br><br><strong>Passage 3, Ure (1835).</strong> The term Factory, in technology, designates the combined operation of many orders of work-people, adult and young, in tending with assiduous skill a system of productive machines continuously impelled by a central power.<br><br><em>Words to know: a manufactory is a workshop; wrought means worked; straights means straightens; assiduous means careful and hard-working; impelled means driven; a central power is one engine or water wheel driving every machine.</em>",
     questions: [
@@ -188,7 +188,7 @@ window.BEHISTORICAL_LESSON = {
 
   beInTheRoom: {
     url: '',
-    desc: "Nottingham, early 1771. As one of Richard Arkwright's partners, decide where to build the new spinning mill, how to divide the work inside it, and how to pay for it and protect it."
+    desc: "Nottingham, early 1771. At Richard Arkwright's partners' table, decide where to build the new spinning mill, how to divide the work inside it, and how to pay for it and protect it."
   }
 
 };

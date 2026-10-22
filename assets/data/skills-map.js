@@ -7208,7 +7208,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "06",
           "module": "Checkpoint 1",
           "label": "Module 06, Checkpoint 1",
-          "prompt": "Answer in three steps. (1) Choose TWO things nature gave Britain: its coal and iron, its shortage of wood, or its rivers and coast. For each one, explain what it made cheaper or possible, and what that led to. (2) Choose TWO things people built: canals, better farming, growing towns, laws that protected property, cotton from abroad, or saved-up capital. For each one, explain what it made cheaper or possible, and how that helped make a mill worth building. (3) Explain one way two of your four factors worked together. Use a pair of your own, not the Bridgewater Canal.",
+          "prompt": "Answer in three steps. (1) Choose TWO things nature gave Britain: its coal and iron, its shortage of wood, or its rivers, coast, and canals (canals are nature's water, dug by people). For each one, explain what it made cheaper or possible, and what that led to. (2) Choose TWO things people built: better farming, growing towns, laws that protected property, cotton from abroad, or saved-up capital. For each one, explain what it made cheaper or possible, and how that helped make a mill worth building. (3) Explain one way two of your four factors worked together. Use a pair of your own, not the Bridgewater Canal.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -7254,17 +7254,17 @@ window.BEHISTORICAL_SKILLS_MAP = {
             "Explain how two factors worked together."
           ],
           "learningTargets": [
-            "I can explain how Britain's environment (its coal, iron, and timber, and its rivers and coast) and the things people built (canals, better farming, growing towns, laws that protected property, resources from abroad, and saved-up capital) worked together to cause industrial production to grow, starting in Britain."
+            "I can explain how Britain's environment (its coal, iron, and timber, and its rivers, coast, and canals) and the things people built (better farming, growing towns, laws that protected property, resources from abroad, and saved-up capital) worked together to cause industrial production to grow, starting in Britain."
           ],
           "successCriteria": [
-            "I can explain two things nature gave Britain (such as coal and iron, the shortage of wood, or rivers and the coast) and two things people built (such as canals, better farming, towns, patents, cotton from abroad, or saved-up money). For each one, I can say what it made cheaper or possible. I can show one way two of them worked together."
+            "I can explain two things nature gave Britain (such as coal and iron, the shortage of wood, or rivers, the coast, and canals) and two things people built (such as better farming, towns, patents, cotton from abroad, or saved-up money). For each one, I can say what it made cheaper or possible. I can show one way two of them worked together."
           ]
         },
         "checkpoint-two-response": {
           "ord": "10",
           "module": "Checkpoint 2",
           "label": "Module 10, Checkpoint 2",
-          "prompt": "Explain how the factory system changed the way cloth was made. (1) Describe how thread and cloth were made under the putting-out system: where the work happened and who did each step. (2) Explain how a mill like Arkwright's at Cromford (1771) gathered production in one place: what moved, what powered the machines, and who set the hours. (3) Explain how the work inside a cotton mill was split into steps, with each worker tending one. (4) Use Adam Smith's pin workshop to explain why splitting the work made more goods. (5) Explain one way an environmental factor, such as the water that turned Cromford's wheel or Britain's coal, made the factory possible.",
+          "prompt": "Explain how the factory system changed the way cotton thread was made. (1) Describe how thread and cloth were made under the putting-out system: where the work happened and who did each step. (2) Explain how a mill like Arkwright's at Cromford (1771) gathered production in one place: what moved, what powered the machines, and who set the hours. (3) Explain how the work inside a cotton mill was split into steps, with each worker tending one. (4) Use Adam Smith's pin workshop to explain why splitting the work made more goods. (5) Explain one way an environmental factor, such as the fast water that turned Cromford's wheel, made the factory possible.",
           "skill": "",
           "skills": [],
           "skillRaw": "",

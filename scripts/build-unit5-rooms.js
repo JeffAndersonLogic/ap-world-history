@@ -159,7 +159,7 @@ const scenarios = [
         O('license', 'Sell the right to copy', 'Let other mill owners use the machine for a fee.', 'Money comes in quickly to pay for the new mill.', 'Rivals grow with the partners’ invention.', 'Fast money now may mean more competition later.')
       ])
     ],
-    reflectionPrompt: 'Step out of the room. Explain how one thing nature gave Britain (water, coal and iron, or the shortage of wood) and one thing people built (a law, capital, towns, better farming, or cotton from abroad) helped cause industrial production to grow. Then explain how your choice about where to build or how to organize the work shows the factory system gathering production in one place and specializing labor.',
+    reflectionPrompt: 'Step out of the room. Explain how one thing nature gave Britain (water, coal and iron, or the shortage of wood) and one thing people built (a law, capital, towns, better farming, or cotton from abroad) helped cause industrial production to grow. Then explain whether your choice about where to build or how to organize the work does or does not show the factory system gathering production in one place and specializing labor.',
     sources: [
       { label: 'UNESCO World Heritage Centre, Derwent Valley Mills', url: 'https://whc.unesco.org/en/list/1030/' },
       { label: 'legislation.gov.uk, Statute of Monopolies, section 6 (1624)', url: 'https://www.legislation.gov.uk/aep/Ja1/21/3/section/VI' },

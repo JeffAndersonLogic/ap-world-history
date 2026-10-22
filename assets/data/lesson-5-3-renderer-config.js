@@ -34,12 +34,12 @@
     ...lesson.map,
     title: "Britain and the Resources It Reached, c. 1700 to 1800",
     caption: "A BeHistorical map of Britain and three places it reached for resources it did not have enough of at home: cotton from the Caribbean and South America, and later from the US South, and iron and timber from Sweden and Russia.",
-    intro: "Find Britain, then follow the three numbered arrows into it. Each arrow carries a resource Britain brought in from abroad. Britain's own coal, iron, rivers, and canals are inside the gold circle: they are too small to draw at this scale, and the First & 10 tells their story.",
+    intro: "Find Britain, then follow the three numbered arrows into it. Each arrow carries a resource Britain brought in from abroad: cotton or iron. Britain's own coal, iron, rivers, and canals are inside the circle on Britain: they are too small to draw at this scale, and the First & 10 tells their story.",
     prompt: "Using the map, explain how one resource from abroad helped industry grow in Britain. Name where it came from, what it was, and why Britain needed it from abroad.",
     key: [
-      { label: "Britain", detail: "The gold circle. Inside it, at a scale too small to draw here, are Britain's coal and iron, often close together and close to rivers and the sea, and the canals that linked them to towns such as Manchester." },
+      { label: "Britain", detail: "The circle on Britain. Inside it, at a scale too small to draw here, are Britain's coal and iron, often close together and close to rivers and the sea, and the canals that linked them to towns such as Manchester." },
       { label: "Arrows 1 and 2: cotton", detail: "Arrow 1: cotton from the Caribbean and South America, by the 1780s. Arrow 2: cotton from the US South, after the 1790s. Both were grown on plantations by enslaved people." },
-      { label: "Arrow 3: iron and timber", detail: "Iron and timber from Sweden, and later from Russia." },
+      { label: "Arrow 3: iron", detail: "Iron from Sweden, and later from Russia." },
       { label: "Reading the map", detail: "The shaded areas mark regions, not exact borders. The map shows only the resources this topic names; Britain traded with many more places." }
     ]
   };
@@ -65,7 +65,7 @@
 
   lesson.beInTheRoom = {
     url: '../beintheroom/unit-5/the-mill-partners.html',
-    desc: "Nottingham, early 1771. As one of Richard Arkwright's partners, decide where to build the new spinning mill, how to divide the work inside it, and how to pay for it and protect it."
+    desc: "Nottingham, early 1771. At Richard Arkwright's partners' table, decide where to build the new spinning mill, how to divide the work inside it, and how to pay for it and protect it."
   };
 
   lesson.skillBuilder = {
@@ -94,7 +94,7 @@
       cardDesc: "Two things nature gave Britain and two things people built, what each made cheaper or possible, and how two of them worked together.",
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: "Answer in three steps. (1) Choose TWO things nature gave Britain: its coal and iron, its shortage of wood, or its rivers and coast. For each one, explain what it made cheaper or possible, and what that led to. (2) Choose TWO things people built: canals, better farming, growing towns, laws that protected property, cotton from abroad, or saved-up capital. For each one, explain what it made cheaper or possible, and how that helped make a mill worth building. (3) Explain one way two of your four factors worked together. Use a pair of your own, not the Bridgewater Canal.",
+      prompt: "Answer in three steps. (1) Choose TWO things nature gave Britain: its coal and iron, its shortage of wood, or its rivers, coast, and canals (canals are nature's water, dug by people). For each one, explain what it made cheaper or possible, and what that led to. (2) Choose TWO things people built: better farming, growing towns, laws that protected property, cotton from abroad, or saved-up capital. For each one, explain what it made cheaper or possible, and how that helped make a mill worth building. (3) Explain one way two of your four factors worked together. Use a pair of your own, not the Bridgewater Canal.",
       responseType: "Checkpoint 1",
       terms: ["coal", "iron", "timber", "wood", "charcoal", "coke", "Coalbrookdale", "Darby", "water", "rivers", "canal", "Bridgewater Canal", "Manchester", "price", "farming", "turnips", "clover", "enclosure", "population", "towns", "urbanization", "law", "patent", "Parliament", "property", "cotton", "enslaved", "plantations", "Caribbean", "capital", "investment", "profit", "Arkwright"],
       focus: ["Explain two things nature gave Britain, each with what it made cheaper or possible.", "Explain two things people built, each with what it made cheaper or possible.", "Explain how two factors worked together."]
@@ -105,7 +105,7 @@
       cardDesc: "How the factory gathered production in one place, how it split the work into specialized jobs, and why that made more goods.",
       learningTargets: [lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[1].criteria],
-      prompt: "Explain how the factory system changed the way cloth was made. (1) Describe how thread and cloth were made under the putting-out system: where the work happened and who did each step. (2) Explain how a mill like Arkwright's at Cromford (1771) gathered production in one place: what moved, what powered the machines, and who set the hours. (3) Explain how the work inside a cotton mill was split into steps, with each worker tending one. (4) Use Adam Smith's pin workshop to explain why splitting the work made more goods. (5) Explain one way an environmental factor, such as the water that turned Cromford's wheel or Britain's coal, made the factory possible.",
+      prompt: "Explain how the factory system changed the way cotton thread was made. (1) Describe how thread and cloth were made under the putting-out system: where the work happened and who did each step. (2) Explain how a mill like Arkwright's at Cromford (1771) gathered production in one place: what moved, what powered the machines, and who set the hours. (3) Explain how the work inside a cotton mill was split into steps, with each worker tending one. (4) Use Adam Smith's pin workshop to explain why splitting the work made more goods. (5) Explain one way an environmental factor, such as the fast water that turned Cromford's wheel, made the factory possible.",
       responseType: "Checkpoint 2",
       skill: "Causation",
       terms: ["putting-out system", "merchant", "home", "factory system", "factory", "mill", "Cromford", "Arkwright", "1771", "water wheel", "one building", "hours", "overseer", "specialization", "specialization of labor", "step", "carding", "spinning", "machine", "Adam Smith", "pins", "forty-eight thousand", "more goods", "cause", "effect"],
