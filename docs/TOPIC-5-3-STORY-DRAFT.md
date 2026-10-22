@@ -1,8 +1,6 @@
 # Topic 5.3 Story Draft: Industrial Revolution Begins
 
-**Status: Delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12).**
-
-**Resume here (2026-10-22):** Review passes 1 and 2 done (22 and 19 distinct supported defects, all fixed and logged in the claim ledger). Review pass 3 (fresh reviewers, packet `review3`) is running. Next: fix and log pass 3 (the three-pass safety valve applies), then move `APPROVED_UNIT5_REWRITE_BLOB`, `npm test`, the strict browser suite in the brand fonts, the topic-audit record.
+**Status: Approved 2026-10-22 by the independent reviewer loop (Jeff's standing rule of 2026-10-12), after three review passes; the loop closed on the three-pass safety valve. Every finding is fixed or logged in `docs/TOPIC-5-3-CLAIM-LEDGER.md`.**
 
 **Taught:** no dates yet. The schedule ends with the Era 3 Exam (Green Monday 2026-11-23, Silver
 Tuesday 2026-11-24), and neither the schedule nor the Notion task names a Unit 5 class day (5.1 and
@@ -192,14 +190,14 @@ they planted turnips and clover instead of leaving fields empty every few years,
 animals, and more animals meant more manure and more grain. Landowners **enclosed** the old shared
 village fields into private farms, often by act of Parliament, and could farm them the new way. More
 food fed more people: Britain's population grew from about 8 million in 1761 to about 10.5 million in
-1801, and a smaller share of them farmed: by 1801 only about a third of English working men worked on the land. Many of the rest lived in towns. **Urbanization** gathered workers in
+1801, and a smaller share of them farmed: in 1700 almost half of English working men worked on the land, and by about 1800 estimates range from about a third to about two in five. Many of the rest lived in towns. **Urbanization** gathered workers in
 one place, and gave them neighbors to sell to. Manchester, a town of about 23,000 people in 1773, had
 70,409 in the census of 1801.
 
 **What people built: laws, foreign resources and money.** Three more things made it worth the risk to
 build something new. **Laws protected private property.** Parliament, where landowners and
-merchants sat, passed the laws that enclosed fields and built canals, and since 1624 English law had let
-an inventor take out a **patent**, the sole right to use a new invention for up to fourteen years. Arkwright
+merchants sat, passed the laws that enclosed fields and built canals, and a law of 1624 banned most monopolies but kept the **patent**: the crown could grant the true and first
+inventor the sole right to use a new invention for up to fourteen years. Arkwright
 patented his spinning machine in 1769. **Britain reached resources from abroad.** Cotton does not grow
 in Britain's climate. By the 1780s most of the cotton spun in Manchester was grown by enslaved people
 on plantations in the Caribbean and South America, and after the 1790s more and more of it came from
@@ -285,7 +283,7 @@ work under one roof.**
 | Turnips and clover; enclosure | KC-5.1.I.A (agricultural productivity) | More **food** from the same land. |
 | Britain about 8 million (1761) to about 10.5 million (1801) | KC-5.1.I.A (agricultural productivity, urbanization) | More food fed **more people**, fewer of them farming. |
 | Manchester about 23,000 (1773) to 70,409 (1801) | KC-5.1.I.A (urbanization) | **Towns** gathered workers and buyers. |
-| Patents since 1624; Arkwright's 1769 patent; enclosure and canal acts | KC-5.1.I.A (legal protection of private property) | The **law** let investors keep what they built. |
+| The patent law of 1624; Arkwright's 1769 patent; enclosure and canal acts | KC-5.1.I.A (legal protection of private property) | The **law** let investors keep what they built. |
 | Cotton from slave plantations in the Caribbean and South America by the 1780s, then the United States | KC-5.1.I.A (access to foreign resources) | The factory's raw material came **from abroad**, grown by enslaved people. |
 | Atlantic trade profits; Need and Strutt, hosiers; thousands of pounds spent before profit, against a carpenter's £36 a year | KC-5.1.I.A (accumulation of capital) | Saved-up **money** paid for mills before they paid back. |
 | The Bridgewater Canal as one case of five factors | KC-5.1.I.A | The factors **worked together**. |

@@ -105,9 +105,9 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "What People Built: Food, Towns, Laws, Cotton, and Money",
         bullets: [
-          "**Better farming:** British farmers planted turnips and clover instead of leaving fields empty to rest. Turnips fed animals through the winter, clover enriched the soil, and more animals meant more manure and more grain. Landowners **enclosed** shared village fields into private farms, often by act of Parliament. More food fed more people: Britain grew from about 8 million people in 1761 to about 10.5 million in 1801, and by 1801 only about a third of English working men farmed.",
+          "**Better farming:** British farmers planted turnips and clover instead of leaving fields empty to rest. Turnips fed animals through the winter, clover enriched the soil, and more animals meant more manure and more grain. Landowners **enclosed** shared village fields into private farms, often by act of Parliament. More food fed more people: Britain grew from about 8 million people in 1761 to about 10.5 million in 1801, and a smaller share of English working men farmed: almost half in 1700, and by about 1800 somewhere between a third and two in five.",
           "**Towns:** urbanization put workers close together and gave them neighbors to sell to. Manchester had about 23,000 people in 1773 and 70,409 in the census of 1801.",
-          "**Laws that protected property:** Parliament, where landowners and merchants sat, passed the laws that enclosed fields and allowed canals. Since 1624 an inventor could take out a **patent**, the sole right to use a new invention for up to fourteen years; Richard Arkwright patented his spinning machine in 1769.",
+          "**Laws that protected property:** Parliament, where landowners and merchants sat, passed the laws that enclosed fields and allowed canals. A law of 1624 banned most monopolies but kept the **patent**, the sole right the crown could grant the true and first inventor to use a new invention for up to fourteen years; Richard Arkwright patented his spinning machine in 1769.",
           "**Resources from abroad:** cotton does not grow in Britain. By the 1780s most of the cotton spun in Manchester was grown by enslaved people on plantations in the Caribbean and South America, and after the 1790s more and more came from plantations in the United States.",
           "**Capital:** merchants, bankers, and landowners had grown rich from trade, including the Atlantic slave trade, and some risked their savings on mills. Historians still argue about how much came from slavery. Arkwright's partners, Samuel Need and Jedediah Strutt, had grown rich making stockings, and they spent thousands of pounds before the business made a profit.",
           "**Working together:** the Bridgewater Canal needed coal at Worsley, water to float it on, acts of Parliament (1759 and 1760), the duke's money and loans, and a growing town to buy the coal. No single factor did it alone."
@@ -130,7 +130,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Carding, Drawing, and Roving",
-          caption: "An engraving of the room in a cotton mill where cotton was combed, drawn out, and twisted, from a 19th-century book plate headed \"Economic Botany: The Cotton Manufacture.\" It shows a mill decades after Cromford. The Wellcome Collection's record gives no maker or date. Each row of machines does one step; belts from the ceiling turn them all. Wellcome Collection.",
+          caption: "An engraving of the room in a cotton mill where cotton was combed, drawn out, and twisted, a later printing of the plate made from Thomas Allom's drawing (c. 1834) of the carding room at Swainson, Birley & Co.'s mill near Preston, first engraved for Edward Baines's History of the Cotton Manufacture (1835). It shows a mill decades after Cromford. Each row of machines does one step; belts from the ceiling turn them all. Wellcome Collection.",
           url: "../assets/images/topics/5-3/carding-drawing-roving-allom-engraving.jpg",
           sourceUrl: "https://wellcomecollection.org/works/azdqm7t7"
         }

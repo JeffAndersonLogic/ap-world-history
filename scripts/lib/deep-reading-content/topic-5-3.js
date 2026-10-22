@@ -145,7 +145,7 @@ module.exports = {
       terms: [
         ['Canal', 'A waterway dug by hand, so boats can carry goods where there is no river.'],
         ['Water wheel', 'A wheel turned by flowing water, used to power machines.'],
-        ['Bridgewater Canal', 'The canal that, from 1761, carried coal from the Duke of Bridgewater\'s mines at Worsley into Manchester.']
+        ['Bridgewater Canal', 'The canal that, from 1761, carried coal from the Duke of Bridgewater\'s mines at Worsley toward Manchester, reaching the town by 1765.']
       ]
     },
 
@@ -169,7 +169,7 @@ module.exports = {
         {
           heading: 'More people, fewer of them farming',
           blocks: [
-            { p: `More food fed more people. Britain's population grew from about <span class="num">8 million</span> in <span class="num">1761</span> to about <span class="num">10.5 million</span> in <span class="num">1801</span>, the year of the first census. And a smaller share of those people farmed: by <span class="num">1801</span> only about a third of English working men worked on the land.` },
+            { p: `More food fed more people. Britain's population grew from about <span class="num">8 million</span> in <span class="num">1761</span> to about <span class="num">10.5 million</span> in <span class="num">1801</span>, the year of the first census. And a smaller share of those people farmed: in <span class="num">1700</span> almost half of English working men worked on the land, and by about <span class="num">1800</span> estimates range from about a third to about two in five.` },
             { note: {
               kind: 'howknow',
               label: 'How we know: counting backward',
@@ -209,7 +209,7 @@ module.exports = {
         {
           heading: 'Laws that protected property',
           blocks: [
-            { p: `In Britain, Parliament, where landowners and merchants sat, passed the laws that enclosed fields and allowed canals to be dug. Since <span class="num">1624</span>, English law had also let an inventor take out a <span class="kt">patent</span>: the sole right to use a new invention for up to fourteen years. In <span class="num">1769</span> Richard Arkwright patented a new spinning machine. A person who invested could expect the law to protect what he built.` },
+            { p: `In Britain, Parliament, where landowners and merchants sat, passed the laws that enclosed fields and allowed canals to be dug. A law of <span class="num">1624</span> banned most monopolies but kept the <span class="kt">patent</span>: the crown could grant the true and first inventor the sole right to use a new invention for up to fourteen years. In <span class="num">1769</span> Richard Arkwright patented a new spinning machine. A person who invested could expect the law to protect what he built.` },
             { p: `The protection had limits. Arkwright's 1769 spinning patent ran out in <span class="num">1783</span>, and in <span class="num">1785</span> a court canceled his <span class="num">1775</span> patent on his carding and preparing machines, finding his written description of them unclear; the court also heard claims that other men had invented them.` }
           ]
         },
@@ -310,7 +310,7 @@ module.exports = {
       {
         category: 'Causation',
         title: 'What people built',
-        body: `Evidence to sort: turnips and clover; enclosure acts; Britain's population (about 8 million in 1761, about 10.5 million in 1801); a third of English men farming in 1801; Manchester (about 23,000 in 1773, 70,409 in 1801); patents since 1624 and Arkwright's of 1769; cotton grown by enslaved people in the Caribbean, South America and the United States; capital from trade; Need and Strutt. For each, say how it made a mill worth building.`
+        body: `Evidence to sort: turnips and clover; enclosure acts; Britain's population (about 8 million in 1761, about 10.5 million in 1801); a falling share of English men farming (almost half in 1700, a third to two in five by about 1800); Manchester (about 23,000 in 1773, 70,409 in 1801); the patent law of 1624 and Arkwright's patent of 1769; cotton grown by enslaved people in the Caribbean, South America and the United States; capital from trade; Need and Strutt. For each, say how it made a mill worth building.`
       },
       {
         category: 'Causation',

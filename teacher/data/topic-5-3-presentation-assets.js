@@ -16,9 +16,12 @@
  *   Roving," engraving of the same series, here from a later reprint headed
  *   "Economic Botany: The Cotton Manufacture, Plate II." Wellcome Collection
  *   V0039844 (catalogue title "Textiles: women and children working at large
- *   cotton manufacturing machines"), public domain mark.
+ *   cotton manufacturing machines"), public domain mark. The Science Museum
+ *   Group holds Allom's original drawing (co8003673: "Carding, drawing and
+ *   roving [Swainson, Birley & Co cotton mill] / Thomas Allom, nd. [c1834]",
+ *   "Original for a plate from Baines' History of cotton manufacture").
  * - cotton-plant-pass-after-merian-1807.jpg: "Gossypium religiosum; or Cotton
- *   Tree," hand-colored engraving by J. Pass after Maria Sibylla Merian,
+ *   Tree" (an old name now filed under the New World upland cotton, G. hirsutum), hand-colored engraving by J. Pass after Maria Sibylla Merian,
  *   published in London by J. Wilkes, 20 June 1807. Wellcome Collection
  *   V0044339, public domain mark.
  *
@@ -41,7 +44,7 @@ const IMG='../assets/images/topics/5-3/';
 const COMMONS='../assets/images/commons/';
 const NIGHT={url:COMMONS+'philipp-jakob-loutherbourg-d-j-002-23c595.jpg',alt:'A painting of an ironworks at night in a river valley: furnaces send up great clouds of orange fire and smoke behind dark buildings with tall chimneys, while in the foreground a horse pulls a cart along a road strewn with iron cylinders and a few people walk by',credit:'Philip James de Loutherbourg, Coalbrookdale by Night, oil, 1801 · Science Museum, London · Public domain',ratio:1.565,position:'50% 45%'};
 const COTTON={url:IMG+'cotton-plant-pass-after-merian-1807.jpg',alt:'A hand-colored botanical print of a cotton plant: broad green leaves, two large yellow flowers, green seed pods, one brown pod split open to show white cotton fiber, and a spiny caterpillar climbing the stem; the title above reads Gossypium',credit:'J. Pass after Maria Sibylla Merian, Cotton Tree, hand-colored etching, London, 1807 · Wellcome Collection · Public domain',ratio:0.759,fit:'contain'};
-const CARDING={url:IMG+'carding-drawing-roving-allom-engraving.jpg',alt:'An engraving of a long mill room: on the left a row of big drum-shaped carding machines driven by belts from wheels on the ceiling; a girl crouches by tall cans of cotton and a young woman lifts another can; on the right, rows of upright drawing frames; more women work down the aisle',credit:'Carding, Drawing, and Roving, engraving, 19th century · Wellcome Collection · Public domain',ratio:1.329,fit:'contain'};
+const CARDING={url:IMG+'carding-drawing-roving-allom-engraving.jpg',alt:'An engraving of a long mill room: on the left a row of big drum-shaped carding machines driven by belts from wheels on the ceiling; a girl crouches by tall cans of cotton and a young woman lifts another can; on the right, rows of upright drawing frames; more women work down the aisle',credit:'After Thomas Allom, Carding, Drawing, and Roving, drawn c. 1834, later printing · Wellcome Collection · Public domain',ratio:1.329,fit:'contain'};
 const MULE={url:IMG+'mule-spinning-allom-1834.jpg',alt:'An engraving of a long spinning room under an iron roof with skylights: two long spinning machines run down each side, with hundreds of spindles; a man leans on one machine, a woman reaches across the threads of another, and a boy crawls underneath it sweeping',credit:'Thomas Allom, engraved by J. W. Lowry, Mule Spinning, London, 1834 · Wellcome Collection · Public domain',ratio:1.291,fit:'contain'};
 const MANCHESTER={url:COMMONS+'wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg',alt:'A watercolor view across green fields and a winding river to a distant city on the horizon, its many tall factory chimneys and church spires sending up smoke into a pale golden sky; two women sit under trees on a hill in the foreground with two goats',credit:'William Wyld, Manchester from Kersal Moor, watercolor, 1852 · Royal Collection · Public domain',ratio:1.561,position:'50% 55%'};
 const setTemplate=(phase,add)=>{const s=by(phase);if(s)s.template=Object.assign({},s.template||{},add);return s;};

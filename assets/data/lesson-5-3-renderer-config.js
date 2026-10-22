@@ -33,7 +33,7 @@
   lesson.map = {
     ...lesson.map,
     title: "Britain and the Resources It Reached, c. 1700 to 1800",
-    caption: "A BeHistorical map of Britain and three places it reached for resources it did not have enough of at home: cotton from the Caribbean and South America, and later from the US South, and iron and timber from Sweden and Russia.",
+    caption: "A BeHistorical map of Britain and three places it reached for resources it did not have enough of at home: cotton from the Caribbean and South America, and later from the US South, and iron from Sweden and, later, Russia.",
     intro: "Find Britain, then follow the three numbered arrows into it. Each arrow carries a resource Britain brought in from abroad: cotton or iron. Britain's own coal, iron, rivers, and canals are inside the circle on Britain: they are too small to draw at this scale, and the First & 10 tells their story.",
     prompt: "Using the map, explain how one resource from abroad helped industry grow in Britain. Name where it came from, what it was, and why Britain needed it from abroad.",
     key: [

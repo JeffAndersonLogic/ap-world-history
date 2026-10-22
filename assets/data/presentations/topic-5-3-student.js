@@ -208,7 +208,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "steps": [
           {
             "label": "Laws",
-            "text": "Since 1624, a patent: an inventor's sole right for up to fourteen years. Arkwright's came in 1769."
+            "text": "A 1624 law kept patents: an inventor's sole right for up to fourteen years. Arkwright's came in 1769."
           },
           {
             "label": "Cotton",
@@ -389,7 +389,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "visual": {
               "url": "../assets/images/topics/5-3/carding-drawing-roving-allom-engraving.jpg",
               "alt": "An engraving of a long mill room: on the left a row of big drum-shaped carding machines driven by belts from wheels on the ceiling; a girl crouches by tall cans of cotton and a young woman lifts another can; on the right, rows of upright drawing frames; more women work down the aisle",
-              "credit": "Carding, Drawing, and Roving, engraving, 19th century · Wellcome Collection · Public domain",
+              "credit": "After Thomas Allom, Carding, Drawing, and Roving, drawn c. 1834, later printing · Wellcome Collection · Public domain",
               "ratio": 1.329,
               "fit": "cover",
               "position": "30% 60%"

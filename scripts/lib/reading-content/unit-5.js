@@ -807,7 +807,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Better farming meant more food from each field and each farmworker. More food fed more people. Britain's population grew from about 8 million in 1761 to about 10.5 million in 1801, and a smaller share of them farmed. By 1801 only about a third of English working men worked on the land."
+            "html": "Better farming meant more food from each field and each farmworker. More food fed more people. Britain's population grew from about 8 million in 1761 to about 10.5 million in 1801, and a smaller share of them farmed. In 1700 almost half of English working men worked on the land; by about 1800, estimates range from about a third to about two in five."
           },
           {
             "type": "p",
@@ -830,7 +830,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>Laws protected private property.</strong> In Britain, Parliament, where landowners and merchants sat, passed the laws that enclosed fields and allowed canals to be dug. Since 1624, English law had also let an inventor take out a <span class=\"kt\">patent</span>: the sole right to use a new invention for up to fourteen years. In 1769 Richard Arkwright patented a new spinning machine. A person who invested could expect the law to protect what he built and earned."
+            "html": "<strong>Laws protected private property.</strong> In Britain, Parliament, where landowners and merchants sat, passed the laws that enclosed fields and allowed canals to be dug. A law of 1624 banned most monopolies but kept the <span class=\"kt\">patent</span>: the crown could grant the true and first inventor the sole right to use a new invention for up to fourteen years. In 1769 Richard Arkwright patented a new spinning machine. A person who invested could expect the law to protect what he built and earned."
           },
           {
             "type": "p",
