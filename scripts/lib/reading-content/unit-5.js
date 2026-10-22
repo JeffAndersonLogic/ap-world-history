@@ -843,7 +843,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>Say only what you can support.</strong> Historians still argue about how much of Britain's capital came from the slave trade and slavery, so a strong answer says \"some\" or \"part,\" not \"all.\" What no one disputes is where the cotton came from: plantations worked by enslaved people.</p>"
+          "raw": "<p><strong>Say only what you can support.</strong> Historians still argue about how much of Britain's capital came from the slave trade and slavery, so a strong answer says \"some\" or \"part,\" not \"all.\" What historians agree on is where the cotton came from: plantations worked by enslaved people.</p>"
         }
       },
       {

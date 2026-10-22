@@ -173,7 +173,7 @@ module.exports = {
             { note: {
               kind: 'howknow',
               label: 'How we know: counting backward',
-              html: `No one measured farm output before the 1860s. Historians work it out backward: Britain's population grew, people ate at least as well, and most of the food was still grown at home, so farms must have produced much more. The estimates differ, but they agree that farm productivity more than doubled between 1700 and 1850.`
+              html: `No full count of farm output exists before the 1860s. Historians work it out backward: Britain's population grew, people ate at least as well, and most of the food was still grown at home, so farms must have produced much more. The estimates differ, but they agree that farm productivity more than doubled between 1700 and 1850.`
             } }
           ]
         },
@@ -226,7 +226,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that the slave trade paid for the Industrial Revolution. Historians still argue about how much of Britain's capital came from slavery and the slave trade, so say "some" or "part." What no one disputes is that the cotton itself was grown by enslaved people.`
+              html: `Do not write that the slave trade paid for the Industrial Revolution. Historians still argue about how much of Britain's capital came from slavery and the slave trade, so say "some" or "part." What historians agree on is that the cotton itself was grown by enslaved people.`
             } }
           ]
         },
@@ -286,7 +286,7 @@ module.exports = {
       ],
       useThis: {
         tool: `Name both changes. <em>Where was the work done before and after? How was it divided before and after? What did that lead to?</em>`,
-        limit: `Smith described a hand workshop, not a powered mill; the factory added one building and one source of power to the old idea of splitting work.`,
+        limit: `Smith described a small hand workshop, not a powered mill. Ask what a mill adds to his idea of splitting the work.`,
         comparison: `Against the putting-out system (section 01): there, the work went to the workers' homes; here, the workers went to the work.`
       },
       terms: [

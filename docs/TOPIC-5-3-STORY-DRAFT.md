@@ -2,6 +2,8 @@
 
 **Status: Delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12).**
 
+**Resume here (2026-10-22):** Phases 0 to 8 are built and pushed. Phase 9: own-pass slide fixes done; review pass 1 (two fresh reviewers, packet from `capture-topic-for-review.js 5.3`) is running. Next: fix and log pass 1's findings in the claim ledger, recapture, pass 2; then move `APPROVED_UNIT5_REWRITE_BLOB`, the strict browser suite in the brand fonts, the topic-audit record.
+
 **Taught:** no dates yet. The schedule ends with the Era 3 Exam (Green Monday 2026-11-23, Silver
 Tuesday 2026-11-24), and neither the schedule nor the Notion task names a Unit 5 class day (5.1 and
 5.2 are not scheduled either). The build adds no schedule entries; the dates are the one open item in
