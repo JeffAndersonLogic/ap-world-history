@@ -55,7 +55,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Humans and the Environment"
     },
     {
-      criteria: "I can describe the putting-out system, explain how a mill like Arkwright's at Cromford (1771) brought workers to water-powered machines in one building, explain how the work inside was split into steps (cleaning, carding, drawing, roving, and spinning) with each worker tending one, and use Adam Smith's pin workshop (1776) to explain why splitting the work made more goods.",
+      criteria: "I can describe the putting-out system, explain how a mill like Arkwright's at Cromford (1771) brought workers to water-powered machines in one building, explain how the work in a cotton mill was split into steps (carding, drawing, roving, and spinning) with each worker tending one, use Adam Smith's pin workshop (1776) to explain why splitting the work made more goods, and connect the factory to one environmental factor, such as the water that turned its wheel.",
       kc: "KC-5.1.I.C",
       theme: "Humans and the Environment"
     }
@@ -97,7 +97,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Coalbrookdale by Night, 1801",
-          caption: "Philip James de Loutherbourg's painting of the Madeley Wood furnaces near Coalbrookdale, beside the River Severn, lit up at night. A painter of stage scenery, he made the fire as dramatic as he could. Science Museum, London.",
+          caption: "Philip James de Loutherbourg's painting of the Madeley Wood furnaces near Coalbrookdale, beside the River Severn, lit up at night. Loutherbourg also painted scenery for the theater. Science Museum, London.",
           url: "../assets/images/commons/philipp-jakob-loutherbourg-d-j-002-23c595.jpg",
           sourceUrl: "https://collection.sciencemuseumgroup.org.uk/objects/co65204/coalbrookdale-by-night-by-philippe-jacques-de-loutherbourg"
         }
@@ -107,7 +107,7 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "**Better farming:** British farmers planted turnips and clover instead of leaving fields empty to rest. Turnips fed animals through the winter, clover enriched the soil, and more animals meant more manure and more grain. Landowners **enclosed** shared village fields into private farms, often by act of Parliament. More food fed more people: Britain grew from about 8 million people in 1761 to about 10.5 million in 1801, and by 1801 only about a third of English working men farmed.",
           "**Towns:** urbanization put workers close together and gave them neighbors to sell to. Manchester had about 23,000 people in 1773 and 70,409 in the census of 1801.",
-          "**Laws that protected property:** Parliament, where landowners and merchants sat, passed the laws that enclosed fields and allowed canals. Since 1624 an inventor could take out a **patent**, the sole right to use a new invention for fourteen years; Richard Arkwright patented his spinning machine in 1769.",
+          "**Laws that protected property:** Parliament, where landowners and merchants sat, passed the laws that enclosed fields and allowed canals. Since 1624 an inventor could take out a **patent**, the sole right to use a new invention for up to fourteen years; Richard Arkwright patented his spinning machine in 1769.",
           "**Resources from abroad:** cotton does not grow in Britain. By the 1780s most of the cotton spun in Manchester was grown by enslaved people on plantations in the Caribbean and South America, and after the 1790s more and more came from plantations in the United States.",
           "**Capital:** merchants, bankers, and landowners had grown rich from trade, including the Atlantic slave trade, and some risked their savings on mills. Historians still argue about how much came from slavery. Arkwright's partners, Samuel Need and Jedediah Strutt, had grown rich making stockings, and they spent thousands of pounds before the business made a profit.",
           "**Working together:** the Bridgewater Canal needed coal at Worsley, water to float it on, an act of Parliament (1759), the duke's money and loans, and a growing town to buy the coal. No single factor did it alone."
@@ -123,8 +123,8 @@ window.BEHISTORICAL_LESSON = {
         title: "The Factory: One Place, One Job Each",
         bullets: [
           "**One place:** in 1771 Arkwright and his partners built a cotton-spinning mill at **Cromford**, in Derbyshire. A water wheel, fed by a brook and by a tunnel that drained the nearby lead mines, turned the machines. The workers came to the machines, in one building, at the hours the mill set, under an overseer. The village was too small, so Arkwright built houses for them; most were women and children, some as young as seven. UNESCO says the valley \"saw the birth of the factory system.\"",
-          "**One job each:** inside, cotton was cleaned, carded (combed straight), drawn out, twisted into a loose rope called roving, and spun into thread, each step on its own machine, tended by workers who did that job and no other. This is **specialization of labor**.",
-          "**Why it made more:** Adam Smith described a pin workshop in 1776 where ten men, each doing one or two of about eighteen steps, \"could make among them upwards of forty-eight thousand pins in a day,\" while one man alone \"could scarce ... make one pin in a day.\" Simple jobs could be learned quickly, so mills could hire workers with no training, many of them children.",
+          "**One job each:** in a cotton mill, raw cotton was cleaned, carded (combed straight), drawn out, twisted into a loose rope called roving, and spun into thread. Cromford began with machines for spinning; in 1775 Arkwright patented machines for the earlier steps too. From then on each step after cleaning had its own machine, tended by workers who did that job and no other. This is **specialization of labor**.",
+          "**Why it made more:** Adam Smith described a pin workshop in 1776 where ten men who shared about eighteen steps, each doing only one, two, or three of them, \"could make among them upwards of forty-eight thousand pins in a day,\" while one man alone \"could scarce ... make one pin in a day.\" Simple jobs could be learned quickly, so mills could hire workers with no training, many of them children.",
           "**A writer of the time:** in 1835 Andrew Ure, who admired factories, defined one as many kinds of workers \"tending with assiduous skill a system of productive machines continuously impelled by a central power\": one power source, many machines, each with its own workers.",
           "**Not the first, not steam:** earlier mills, such as a silk mill at Derby in the 1720s, had some factory features, and Cromford ran on water. Steam power is Topic 5.5."
         ],
@@ -169,11 +169,11 @@ window.BEHISTORICAL_LESSON = {
   primarySource: {
     title: "Primary Source: Adam Smith and Andrew Ure on Dividing the Work",
     intro: "Two writers of the time described how splitting work into steps changed how things were made. Adam Smith, a Scottish thinker, wrote The Wealth of Nations in 1776, five years after Arkwright's mill opened at Cromford. He described a small hand workshop that made pins. Andrew Ure, a Scottish scientist who admired factories, wrote The Philosophy of Manufactures in 1835, when cotton mills ran on steam. He defined what a factory is.",
-    attribution: "Passages 1 and 2: Adam Smith, An Inquiry into the Nature and Causes of the Wealth of Nations, 1776, Book I, chapter 1. Passage 3: Andrew Ure, The Philosophy of Manufactures, London, 1835, p. 13.",
+    attribution: "Passages 1 and 2: Adam Smith, An Inquiry into the Nature and Causes of the Wealth of Nations, 1776, Book I, chapter 1. Passage 3: Andrew Ure, The Philosophy of Manufactures, London, 1835, p. 13",
     text: "<strong>Passage 1, Smith (1776).</strong> One man draws out the wire; another straights it; a third cuts it; a fourth points it; a fifth grinds it at the top for receiving the head ... and the important business of making a pin is, in this manner, divided into about eighteen distinct operations.<br><br><strong>Passage 2, Smith (1776).</strong> I have seen a small manufactory of this kind, where ten men only were employed ... Those ten persons, therefore, could make among them upwards of forty-eight thousand pins in a day. ... But if they had all wrought separately and independently ... they certainly could not each of them have made twenty, perhaps not one pin in a day.<br><br><strong>Passage 3, Ure (1835).</strong> The term Factory, in technology, designates the combined operation of many orders of work-people, adult and young, in tending with assiduous skill a system of productive machines continuously impelled by a central power.",
     questions: [
       "In your own words, explain what Smith describes in Passages 1 and 2. How many pins could ten men make in a day by splitting the work, and how many could one man make alone?",
-      "In Passage 3, Ure defines a factory. Name two things a factory has, in his definition, that Smith's pin workshop does not. (Hint: \"orders of work-people\" means kinds of workers, and \"continuously impelled by a central power\" means kept running all the time by one power source.)",
+      "In Passage 3, Ure defines a factory. His definition names \"a system of productive machines\" and \"a central power.\" Does Smith describe either of these in Passages 1 and 2? What does that tell you about how a factory differs from Smith's workshop?",
       "Using both writers, explain the factory system as a process: how did gathering workers in one place and splitting the work into steps let a mill make more goods?"
     ]
   },

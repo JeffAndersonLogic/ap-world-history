@@ -176,8 +176,9 @@ much **timber**. By the 1600s most of Britain's old forests were gone, so wood w
 of the iron Britain used came from Sweden and Russia, where forests were still large. Iron had always
 been smelted with charcoal, which is made from wood. So Britons turned to coal: by 1700 coal gave
 England about half its energy. In 1709, at Coalbrookdale, beside the River Severn, Abraham Darby
-smelted iron with **coke**, a fuel made by baking coal. Now iron could be made from British coal
-instead of scarce wood. The shortage of one resource pushed Britain toward another it had in plenty.
+smelted iron with **coke**, a fuel made by baking coal. From then on iron could be made from British coal
+instead of scarce wood, and it got better over the next decades. A shortage of wood helped push Britain toward coal.
+(Narrowed after review pass 1.)
 
 **What nature gave: water.** Coal is heavy, and before railways, the cheapest way to move something
 heavy was by water. Britain had a long coast, rivers that boats could use, and fast streams that could
@@ -198,7 +199,7 @@ one place, and gave them neighbors to sell to. Manchester, a town of about 23,00
 **What people built: laws, foreign resources and money.** Three more things made it worth the risk to
 build something new. **Laws protected private property.** Parliament, where landowners and
 merchants sat, passed the laws that enclosed fields and built canals, and since 1624 English law had let
-an inventor take out a **patent**, the sole right to use a new invention for fourteen years. Arkwright
+an inventor take out a **patent**, the sole right to use a new invention for up to fourteen years. Arkwright
 patented his spinning machine in 1769. **Britain reached resources from abroad.** Cotton does not grow
 in Britain's climate. By the 1780s most of the cotton spun in Manchester was grown by enslaved people
 on plantations in the Caribbean and South America, and after the 1790s more and more of it came from
@@ -225,11 +226,11 @@ workers were women and children, some as young as seven. This was the **factory 
 concentrated in a single location, around one source of power. UNESCO calls the valley where it grew
 the place that "saw the birth of the factory system."
 
-**The factory: one small job each.** Inside, the work was split into steps. Cotton was cleaned, then
+**The factory: one small job each.** Inside a cotton mill, the work was split into steps (Cromford began with spinning machines; Arkwright patented machines for the earlier steps in 1775). Cotton was cleaned, then
 **carded** (combed so the fibers lay straight), drawn out, twisted into a loose rope called roving, and
 spun into thread, each step on its own machine, each tended by workers who did that job and no other.
 This is **specialization of labor**. Adam Smith described its power in 1776 with a pin workshop: ten
-men, each doing one or two of about eighteen steps, "could make among them upwards of forty-eight
+men, sharing about eighteen steps (so each did one, two or three), "could make among them upwards of forty-eight
 thousand pins in a day," where one man working alone "could scarce ... make one pin in a day, and
 certainly could not make twenty." In 1835 Andrew Ure, a writer who admired factories, defined one as
 many kinds of workers "tending with assiduous skill a system of productive machines continuously

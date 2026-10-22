@@ -43,7 +43,7 @@ module.exports = {
     heading: 'How to Use This',
     intro: `The College Board asks you to explain how environmental factors contributed to industrialization. Its list has seven factors. Sections 01 and 02 take the two that nature gave Britain; sections 03 and 04 take the five that people built, and show them working together; section 05 follows the new workplace they produced. Each section ends with a tool, a limit and a comparison you can use in an answer.`,
     steps: [
-      `<b>01 Coal, iron, and not enough wood:</b> how a shortage of one resource pushed Britain toward another.`,
+      `<b>01 Coal, iron, and not enough wood:</b> how a shortage of wood helped push Britain toward coal.`,
       `<b>02 Water:</b> moving heavy things cheaply, and turning wheels.`,
       `<b>03 Food, people and towns:</b> better farming, a growing population, and the towns it filled.`,
       `<b>04 Laws, cotton and capital:</b> three things that made the risk worth taking, and how the factors combined.`,
@@ -209,7 +209,7 @@ module.exports = {
         {
           heading: 'Laws that protected property',
           blocks: [
-            { p: `In Britain, Parliament, where landowners and merchants sat, passed the laws that enclosed fields and allowed canals to be dug. Since <span class="num">1624</span>, English law had also let an inventor take out a <span class="kt">patent</span>: the sole right to use a new invention for fourteen years. In <span class="num">1769</span> Richard Arkwright patented a new spinning machine. A person who invested could expect the law to protect what he built.` },
+            { p: `In Britain, Parliament, where landowners and merchants sat, passed the laws that enclosed fields and allowed canals to be dug. Since <span class="num">1624</span>, English law had also let an inventor take out a <span class="kt">patent</span>: the sole right to use a new invention for up to fourteen years. In <span class="num">1769</span> Richard Arkwright patented a new spinning machine. A person who invested could expect the law to protect what he built.` },
             { p: `The protection had limits. In <span class="num">1785</span> the courts struck down Arkwright's patents, partly on the grounds that the ideas were other men's.` }
           ]
         },
@@ -274,8 +274,8 @@ module.exports = {
         {
           heading: 'One job each',
           blocks: [
-            { p: `Inside, the work was split into steps. Raw cotton was cleaned, then carded (combed so its fibers lay straight), drawn out, twisted into a loose rope called roving, and spun into thread. Each step had its own machine, tended by workers who did that job and no other. This is <span class="kt">specialization of labor</span>.` },
-            { p: `Adam Smith, a Scottish thinker, showed why it mattered in <span class="num">1776</span>, using a small hand workshop that made pins. Ten men, each doing one or two of about eighteen steps, "could make among them upwards of forty-eight thousand pins in a day." One man working alone, he wrote, "could scarce ... make one pin in a day, and certainly could not make twenty." Because each job was small and simple, it could be learned quickly, so a mill could hire workers with no training, many of them children.` },
+            { p: `Inside a cotton mill, the work was split into steps. Raw cotton was cleaned, then carded (combed so its fibers lay straight), drawn out, twisted into a loose rope called roving, and spun into thread. Cromford began with machines for spinning, and in <span class="num">1775</span> Arkwright patented machines for the earlier steps too. From then on each step after cleaning had its own machine, tended by workers who did that job and no other. This is <span class="kt">specialization of labor</span>.` },
+            { p: `Adam Smith, a Scottish thinker, showed why it mattered in <span class="num">1776</span>, using a small hand workshop that made pins. Ten men shared about eighteen steps, each doing only one, two, or three of them, and together they "could make among them upwards of forty-eight thousand pins in a day." One man working alone, he wrote, "could scarce ... make one pin in a day, and certainly could not make twenty." Because each job was small and simple, it could be learned quickly, so a mill could hire workers with no training, many of them children.` },
             { note: {
               kind: 'howknow',
               label: 'How we know: writers of the time',

@@ -115,7 +115,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "cause-chain",
       "eyebrow": "What Nature Gave · Coal, Iron, Timber",
       "title": "Not enough wood. Plenty of coal.",
-      "footer": "A shortage of one resource pushed Britain toward another it had in plenty.",
+      "footer": "A shortage of wood helped push Britain toward coal, which it had in plenty.",
       "kc": "KC-5.1.I.A",
       "template": {
         "steps": [
@@ -139,7 +139,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         ],
         "links": [
           "so",
-          "so Britons burn",
+          "so Britons burn more",
           "and then"
         ]
       }
@@ -185,7 +185,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "More food",
-            "text": "From the same land, with fewer farmworkers"
+            "text": "From the same land, with a smaller share of people farming"
           },
           {
             "label": "More people",
@@ -208,7 +208,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "steps": [
           {
             "label": "Laws",
-            "text": "Since 1624, a patent: an inventor's sole right for fourteen years. Arkwright's came in 1769."
+            "text": "Since 1624, a patent: an inventor's sole right for up to fourteen years. Arkwright's came in 1769."
           },
           {
             "label": "Cotton",
@@ -243,7 +243,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "word": "Water",
-            "note": "to float it on, dug by hand"
+            "note": "to fill the canal and float the coal"
           },
           {
             "word": "A law",
@@ -283,8 +283,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "footer": "Every arrow in a process needs words: which meant, so, and then.",
       "template": {
         "frame": "{{The factor}}, which meant {{what it made cheaper or possible}}, so {{what that led to}}.",
-        "exampleLabel": "Coal near water",
-        "example": "**Coal lay close to rivers and canals**, which meant **it could be floated to towns cheaply**, so **mills in Manchester paid less for fuel, and building a mill there was worth the risk**."
+        "exampleLabel": "From everyday life",
+        "example": "**A new bus line opened near the school**, which meant **students who lived farther away could get there easily**, so **more students signed up for the after-school club**."
       }
     },
     {
@@ -297,23 +297,23 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "terms": [
           {
             "word": "Farms",
-            "without": "Without better farming: less food, fewer people free to leave the land."
+            "without": "Without better farming: who feeds the people in the towns?"
           },
           {
             "word": "Towns",
-            "without": "Without them: no crowd of workers or buyers close by."
+            "without": "Without them: where do the workers and buyers come from?"
           },
           {
             "word": "Laws",
-            "without": "Without patents: a copier could take the invention."
+            "without": "Without patents: what stops a copier?"
           },
           {
             "word": "Cotton",
-            "without": "Without cotton from abroad: nothing for a cotton mill to spin."
+            "without": "Without cotton from abroad: what does a cotton mill spin?"
           },
           {
             "word": "Capital",
-            "without": "Without it: no one pays for the mill before it earns."
+            "without": "Without it: who pays before the mill earns?"
           }
         ]
       }
@@ -418,7 +418,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "quote": "Those ten persons, therefore, could make among them upwards of forty-eight thousand pins in a day. ... But if they had all wrought separately and independently ... they certainly could not each of them have made twenty, perhaps not one pin in a day",
         "attribution": "Adam Smith, The Wealth of Nations, Book I, chapter 1, 1776",
-        "notice": "Smith saw a small **workshop**, not a powered factory. Splitting the work into about **eighteen steps** let each man do one or two of them."
+        "notice": "Smith saw a small **workshop**, not a powered factory. Ten men shared about **eighteen steps**, so each did only one, two or three of them."
       }
     },
     {
@@ -566,7 +566,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "action",
       "eyebrow": "Module 10 · Checkpoint 2",
       "title": "What did the factory system change about how work was done?",
-      "subtitle": "Explain how the factory concentrated production in one place and how it specialized labor, with evidence from Cromford, a cotton mill or Smith's pin workshop, and say why the change made more goods. If it is not finished in class, it is homework.",
+      "subtitle": "Describe the putting-out system; explain how Cromford gathered production in one place, how a mill split the work into steps, and why Smith's pin workshop shows that splitting work made more goods; and connect the factory to one environmental factor. If it is not finished in class, it is homework.",
       "action": {
         "label": "Open Student Lesson",
         "url": "lesson-5-3-industrial-revolution-begins.html#modules"

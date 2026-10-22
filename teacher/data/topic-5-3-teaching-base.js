@@ -146,7 +146,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'The picture is a real painting: Philip James de Loutherbourg, Coalbrookdale by Night, oil, 1801, Science Museum, London, public domain. It shows the Madeley Wood (Bedlam) furnaces in the Severn gorge, near Coalbrookdale, lit up at night, with carts hauling iron in the foreground. The Science Museum calls the furnaces coke-fired; they belonged to the Coalbrookdale Company from 1776 to 1796.',
           'Why open here: the picture shows what the deck explains: coal turned into fire, iron, and work that went on after dark, beside a river. It is not Darby\'s 1709 furnace, which stood in Coalbrookdale itself, a side valley of the gorge.',
-          'Loutherbourg was a painter of dramatic scenes for the stage; he made the fire as dramatic as he could. That makes it a good Evidence Lab question too: what would the painter gain by making it dramatic?'
+          'Loutherbourg also designed scenery for the theater. That makes a good Evidence Lab question: how literally should we take the fire and smoke?'
         ],
         ask: 'Predict: what did Britain have that made this possible?',
         listenFor: 'Coal, iron, a river, people to work, someone to pay for it. Write the guesses down and check them by slide 11.'
@@ -221,7 +221,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'wood', kind: 'cause-chain', eyebrow: 'What Nature Gave · Coal, Iron, Timber',
       kc: 'KC-5.1.I.A', title: 'Not enough wood. Plenty of coal.',
-      footer: 'A shortage of one resource pushed Britain toward another it had in plenty.',
+      footer: 'A shortage of wood helped push Britain toward coal, which it had in plenty.',
       template: {
         steps: [
           { label: 'By the 1600s', text: 'Most of Britain\'s old forests are cut down' },
@@ -229,7 +229,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'By 1700', text: 'Coal gives England about half its energy' },
           { label: '1709', text: 'Darby makes iron with coke, baked from coal', key: true }
         ],
-        links: ['so', 'so Britons burn', 'and then']
+        links: ['so', 'so Britons burn more', 'and then']
       },
       notes: {
         minutes: 2,
@@ -278,7 +278,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         steps: [
           { label: 'Turnips and clover', text: 'Planted instead of leaving fields empty' },
-          { label: 'More food', text: 'From the same land, with fewer farmworkers' },
+          { label: 'More food', text: 'From the same land, with a smaller share of people farming' },
           { label: 'More people', text: 'About 8 million in 1761, about 10.5 million in 1801' },
           { label: 'Bigger towns', text: 'Manchester: about 23,000 in 1773, 70,409 in 1801' }
         ]
@@ -304,7 +304,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         caption: 'Cotton, engraved after Maria Sibylla Merian, London, 1807',
         steps: [
-          { label: 'Laws', text: 'Since 1624, a patent: an inventor\'s sole right for fourteen years. Arkwright\'s came in 1769.' },
+          { label: 'Laws', text: 'Since 1624, a patent: an inventor\'s sole right for up to fourteen years. Arkwright\'s came in 1769.' },
           { label: 'Cotton', text: 'It will not grow in Britain. By the 1780s most was grown by enslaved people in the Caribbean and South America.' },
           { label: 'Capital', key: true, text: 'Money saved from trade, including the slave trade, risked on mills before they paid.' }
         ]
@@ -330,7 +330,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         terms: [
           { word: 'Coal', note: 'under the ground at Worsley' },
-          { word: 'Water', note: 'to float it on, dug by hand' },
+          { word: 'Water', note: 'to fill the canal and float the coal' },
           { word: 'A law', note: 'an act of Parliament, 1759' },
           { word: 'Capital', note: 'the duke\'s money, and loans' },
           { word: 'A town', note: 'Manchester, to buy the coal' }
@@ -359,14 +359,14 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Every arrow in a process needs words: which meant, so, and then.',
       template: {
         frame: '{{The factor}}, which meant {{what it made cheaper or possible}}, so {{what that led to}}.',
-        exampleLabel: 'Coal near water',
-        example: '**Coal lay close to rivers and canals**, which meant **it could be floated to towns cheaply**, so **mills in Manchester paid less for fuel, and building a mill there was worth the risk**.'
+        exampleLabel: 'From everyday life',
+        example: '**A new bus line opened near the school**, which meant **students who lived farther away could get there easily**, so **more students signed up for the after-school club**.'
       },
       notes: {
         minutes: 2,
         land: [
           'The CED\'s suggested skill, 1.B: "Explain a historical concept, development, or process." A process is a set of steps, and the explanation is in the connecting words.',
-          'The model uses an environmental factor, coal near water, which is the First & 10\'s callout in section 6. Question 01 asks for a different environmental factor or the same one in a student\'s own words; the Skill Builder asks for a factor people built, so the model is not their answer.',
+          'The model is from everyday life, on purpose: First & 10 question 01, Checkpoint 1 and the Skill Builder all ask for a factor from this topic, so a modeled history answer would be an answer to copy. The reading\'s section 6 callout uses the same bus-line example.',
           'A weaker version stops at the factor ("Britain had coal and canals"). The "which meant" is the mechanism; the "so" is the effect.'
         ],
         ask: 'What would a weaker answer leave out?',
@@ -380,17 +380,17 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Pick one. Say it as a process: the factor, which meant, so.',
       template: {
         terms: [
-          { word: 'Farms', without: 'Without better farming: less food, fewer people free to leave the land.' },
-          { word: 'Towns', without: 'Without them: no crowd of workers or buyers close by.' },
-          { word: 'Laws', without: 'Without patents: a copier could take the invention.' },
-          { word: 'Cotton', without: 'Without cotton from abroad: nothing for a cotton mill to spin.' },
-          { word: 'Capital', without: 'Without it: no one pays for the mill before it earns.' }
+          { word: 'Farms', without: 'Without better farming: who feeds the people in the towns?' },
+          { word: 'Towns', without: 'Without them: where do the workers and buyers come from?' },
+          { word: 'Laws', without: 'Without patents: what stops a copier?' },
+          { word: 'Cotton', without: 'Without cotton from abroad: what does a cotton mill spin?' },
+          { word: 'Capital', without: 'Without it: who pays before the mill earns?' }
         ]
       },
       notes: {
         minutes: 2,
         land: [
-          'Practice on the five factors people built (KC-5.1.I.A). Each "without" is a hint, not a finished answer: students turn one into the frame from slide 12.',
+          'Practice on the five factors people built (KC-5.1.I.A). Each "without" is a question, not an answer: students answer one and turn it into the frame from slide 12.',
           'A strong answer, on capital: "Merchants and hosiers had saved money from trade, which meant they could pay for machines and a building before any thread was sold, so Arkwright\'s partners could build at Cromford and wait for the profits."',
           'If a student argues that one factor mattered most, take it: that is a defensible argument, as long as they say what it did and do not drop the others.'
         ],
@@ -475,7 +475,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         quote: 'Those ten persons, therefore, could make among them upwards of forty-eight thousand pins in a day. ... But if they had all wrought separately and independently ... they certainly could not each of them have made twenty, perhaps not one pin in a day',
         attribution: 'Adam Smith, The Wealth of Nations, Book I, chapter 1, 1776',
-        notice: 'Smith saw a small **workshop**, not a powered factory. Splitting the work into about **eighteen steps** let each man do one or two of them.'
+        notice: 'Smith saw a small **workshop**, not a powered factory. Ten men shared about **eighteen steps**, so each did only one, two or three of them.'
       },
       notes: {
         minutes: 2,
@@ -485,7 +485,7 @@ window.BEHISTORICAL_TEACHING = {
           'Smith is also the author of the free-trade argument that is Topic 5.7. Here he is used only for specialization.'
         ],
         ask: 'Ten men alone: maybe ten pins a day. Ten men in Smith\'s workshop: forty-eight thousand. What changed?',
-        listenFor: 'Not the men: the way the work was divided, each doing one or two steps over and over.',
+        listenFor: 'Not the men: the way the work was divided, each doing one, two or three steps over and over.',
         ap: 'KC-5.1.I.C; a primary source for the process.'
       }
     },
@@ -615,7 +615,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'cp2', kind: 'action', eyebrow: 'Module 10 · Checkpoint 2',
       title: 'What did the factory system change about how work was done?',
-      subtitle: 'Explain how the factory concentrated production in one place and how it specialized labor, with evidence from Cromford, a cotton mill or Smith\'s pin workshop, and say why the change made more goods. If it is not finished in class, it is homework.',
+      subtitle: 'Describe the putting-out system; explain how Cromford gathered production in one place, how a mill split the work into steps, and why Smith\'s pin workshop shows that splitting work made more goods; and connect the factory to one environmental factor. If it is not finished in class, it is homework.',
       action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-3-industrial-revolution-begins.html#modules' },
       notes: {
         minutes: 12,

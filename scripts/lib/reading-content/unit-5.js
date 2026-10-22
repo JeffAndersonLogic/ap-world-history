@@ -709,7 +709,7 @@ module.exports = {
     ],
     "supportCards": {
       "beforeYouRead": "<strong>Nature gave the fuel and the water. People built the rest. The factory put the work under one roof.</strong> As you read, sort each cause into one of two groups: what nature gave Britain, and what people built. Then watch for the two things the factory changed: where work was done, and how it was divided.",
-      "readingTarget": "How did environmental factors and the things people built cause industrialization to begin in Britain, and what did the factory system change?"
+      "readingTarget": "How did Britain's land and water, and the things people built on them, cause industrialization to begin there, and what did the factory system change?"
     },
     "vocabulary": [
       "Putting-Out System",
@@ -743,7 +743,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>Two kinds of causes.</strong> The College Board lists seven factors behind the Industrial Revolution. Two come from nature: waterways, and where coal, iron, and timber were found. Five were built by people: towns, better farming, laws that protected property, resources from abroad, and saved-up money. As you read, sort each factor into one of the two groups.</p>"
+          "raw": "<p><strong>Two kinds of causes.</strong> The College Board lists seven factors behind the Industrial Revolution. Two come from nature: waterways, and where coal, iron, and timber were found. Five were built by people: towns, better farming, laws that protected property, resources from abroad, and saved-up money. The College Board lists all seven under its question about environmental factors; sorting them into two groups is this course's way to think about them. As you read, sort each factor.</p>"
         }
       },
       {
@@ -761,7 +761,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In 1709, at Coalbrookdale beside the River Severn, Abraham Darby made iron using <span class=\"kt\">coke</span>, a fuel made by baking coal. Now iron could be made with British coal instead of scarce wood. A shortage of one resource pushed Britain toward another that it had in plenty."
+            "html": "In 1709, at Coalbrookdale beside the River Severn, Abraham Darby made iron using <span class=\"kt\">coke</span>, a fuel made by baking coal. From then on iron could be made with British coal instead of scarce wood, and over the next decades ironmakers learned to make it better. A shortage of wood helped push Britain toward coal, which it had in plenty."
           }
         ],
         "callout": {
@@ -789,7 +789,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>Say what the factor did.</strong> \"Britain had rivers\" is a fact, not an explanation. \"Water made heavy coal cheap to move, so mills near a canal paid less for fuel\" explains how a factor contributed. Always add the \"so.\"</p>"
+          "raw": "<p><strong>Say what the factor did.</strong> \"Britain had rivers\" is a fact, not an explanation. An explanation says what the factor did and what that led to. Always add the \"so.\"</p>"
         }
       },
       {
@@ -830,7 +830,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>Laws protected private property.</strong> In Britain, Parliament, where landowners and merchants sat, passed the laws that enclosed fields and allowed canals to be dug. Since 1624, English law had also let an inventor take out a <span class=\"kt\">patent</span>: the sole right to use a new invention for fourteen years. In 1769 Richard Arkwright patented a new spinning machine. A person who invested could expect the law to protect what he built and earned."
+            "html": "<strong>Laws protected private property.</strong> In Britain, Parliament, where landowners and merchants sat, passed the laws that enclosed fields and allowed canals to be dug. Since 1624, English law had also let an inventor take out a <span class=\"kt\">patent</span>: the sole right to use a new invention for up to fourteen years. In 1769 Richard Arkwright patented a new spinning machine. A person who invested could expect the law to protect what he built and earned."
           },
           {
             "type": "p",
@@ -866,7 +866,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Developments and Processes",
-          "raw": "<p><strong>Explain a process step by step.</strong> To explain how something developed, name where it starts, then each step, joined by words like \"which meant\" and \"so.\" Coal lay near water, which meant it could be shipped cheaply, so fuel in Manchester cost less, so building a mill there paid.</p>"
+          "raw": "<p><strong>Explain a process step by step.</strong> To explain how something developed, name where it starts, then each step, joined by words like \"which meant\" and \"so.\" For example: a new bus line opened near the school, which meant students who lived farther away could get there easily, so more students signed up for the after-school club.</p>"
         }
       },
       {
@@ -884,11 +884,11 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Inside, the work was split into steps. Raw cotton was cleaned, then carded (combed so its fibers lay straight), drawn out, twisted into a loose rope, and spun into thread. Each step had its own machine, tended by workers who did that job and no other. This is <span class=\"kt\">specialization of labor</span>."
+            "html": "Inside a cotton mill, the work was split into steps. Raw cotton was cleaned, then carded (combed so its fibers lay straight), drawn out, twisted into a loose rope, and spun into thread. Cromford began with machines for spinning, and in 1775 Arkwright patented machines for the earlier steps too. From then on each step after cleaning had its own machine, tended by workers who did that job and no other. This is <span class=\"kt\">specialization of labor</span>."
           },
           {
             "type": "p",
-            "html": "Adam Smith, a Scottish thinker, showed why it mattered in 1776, using a pin workshop. Ten men, each doing one or two of about eighteen steps, \"could make among them upwards of forty-eight thousand pins in a day.\" One man working alone, he wrote, \"could scarce ... make one pin in a day, and certainly could not make twenty.\" Because each job was small and simple, it could be learned quickly, so a mill could hire workers with no training, many of them children."
+            "html": "Adam Smith, a Scottish thinker, showed why it mattered in 1776, using a pin workshop. Ten men shared about eighteen steps, each doing only one, two, or three of them, and together they \"could make among them upwards of forty-eight thousand pins in a day.\" One man working alone, he wrote, \"could scarce ... make one pin in a day, and certainly could not make twenty.\" Because each job was small and simple, it could be learned quickly, so a mill could hire workers with no training, many of them children."
           },
           {
             "type": "p",

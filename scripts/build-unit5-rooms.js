@@ -136,7 +136,7 @@ const scenarios = [
       E('horses', 'Horse Power', 'Arkwright’s first spinning machines, in Nottingham, were turned by horses.', 'Shows why the partners need a stronger, steadier source of power.'),
       E('water', 'Water at Cromford', 'At Cromford, in Derbyshire’s Derwent valley, a brook and a tunnel draining the nearby lead mines give a steady flow of water, and the water from underground is said never to freeze.', 'Shows how the environment could power a mill all year.'),
       E('village', 'A Small Valley Village', 'Cromford is a small village in hilly country, away from the big towns. Men there work the lead mines, and their wives and children could take mill work, but there are not enough people for a big mill.', 'Shows that a good place for power may be a hard place to find workers.'),
-      E('patent', 'The Patent of 1769', 'Under a law of 1624, Arkwright’s patent gives him the sole right to his spinning machine for fourteen years, if a court will defend it.', 'Shows how the law protected private property, and its limits.'),
+      E('patent', 'The Patent of 1769', 'Under a law of 1624, Arkwright’s patent gives him the sole right to his spinning machine for up to fourteen years, if a court will defend it.', 'Shows how the law protected private property, and its limits.'),
       E('cotton', 'Cotton From Abroad', 'Cotton does not grow in Britain. It comes by ship, much of it from plantations in the Caribbean worked by enslaved people.', 'Shows that the mill depends on resources, and on forced labor, far from Britain.'),
       E('capital', 'Money at Risk', 'A mill and its machines cost thousands of pounds before they earn anything, at a time when a carpenter earns no more than about £36 a year.', 'Shows why saved-up capital mattered.'),
       E('canal', 'The Bridgewater Canal', 'Since 1761 a canal has carried coal from the Duke of Bridgewater’s mines into Manchester, and the price of coal there has fallen by about half.', 'Shows how waterways made heavy goods cheap, and why some towns were growing fast.'),
@@ -159,7 +159,7 @@ const scenarios = [
         O('license', 'Sell the right to copy', 'Let other mill owners use the machine for a fee.', 'Money comes in quickly to pay for the new mill.', 'Rivals grow with the partners’ invention.', 'Fast money now may mean more competition later.')
       ])
     ],
-    reflectionPrompt: 'Step out of the room. Explain how one thing nature gave Britain (water, coal, or the land where cotton grew abroad) and one thing people built (a law, capital, towns, or better farming) helped cause industrial production to grow. Then explain how your choice about where to build or how to organize the work shows the factory system gathering production in one place and specializing labor.',
+    reflectionPrompt: 'Step out of the room. Explain how one thing nature gave Britain (water, coal and iron, or the shortage of wood) and one thing people built (a law, capital, towns, better farming, or cotton from abroad) helped cause industrial production to grow. Then explain how your choice about where to build or how to organize the work shows the factory system gathering production in one place and specializing labor.',
     sources: [
       { label: 'UNESCO World Heritage Centre, Derwent Valley Mills', url: 'https://whc.unesco.org/en/list/1030/' },
       { label: 'legislation.gov.uk, Statute of Monopolies, section 6 (1624)', url: 'https://www.legislation.gov.uk/aep/Ja1/21/3/section/VI' },

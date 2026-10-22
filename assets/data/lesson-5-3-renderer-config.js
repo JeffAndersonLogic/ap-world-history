@@ -71,12 +71,12 @@
   lesson.skillBuilder = {
     label: "Developments and processes practice",
     title: "Explain a Process, Step by Step",
-    intro: "Topic 5.3 asks you to explain how something caused something else. A cause is not explained until you say how it worked. To explain a process, name the starting point, then each step, joined by connecting words like \"which meant\" and \"so.\" Watch the move on one thing nature gave Britain, then try it on something people built.",
+    intro: "Topic 5.3 asks you to explain how something caused something else. A cause is not explained until you say how it worked. To explain a process, name the starting point, then each step, joined by connecting words like \"which meant\" and \"so.\" Watch the move on an example from everyday life, then use it on the history.",
     steps: [
-      { label: "Name the factor", text: "Start with one factor, stated as a fact. Example: \"Coal lay close to rivers and canals.\"" },
-      { label: "Say what it made cheaper or possible", text: "Add \"which meant\" and the mechanism, how the factor worked. Example: \"which meant coal could be floated to towns cheaply.\" When the Bridgewater Canal reached Manchester in 1761, the price of coal there fell by about half." },
-      { label: "Say what that led to", text: "Add \"so\" and the result. Example: \"so mills in Manchester paid less for fuel, and building a mill there was worth the risk.\"" },
-      { label: "Put it together", text: "Coal lay close to rivers and canals, which meant it could be floated to towns cheaply, so mills in Manchester paid less for fuel, and building a mill there was worth the risk. Use this frame: \"[The factor], which meant [what it made cheaper or possible], so [what that led to].\"" }
+      { label: "Name the factor", text: "Start with one factor, stated as a fact. Example: \"A new bus line opened near the school.\"" },
+      { label: "Say what it made cheaper or possible", text: "Add \"which meant\" and the mechanism, how the factor worked. Example: \"which meant students who lived farther away could get there easily.\"" },
+      { label: "Say what that led to", text: "Add \"so\" and the result. Example: \"so more students signed up for the after-school club.\"" },
+      { label: "Put it together", text: "A new bus line opened near the school, which meant students who lived farther away could get there easily, so more students signed up for the after-school club. Use this frame: \"[The factor], which meant [what it made cheaper or possible], so [what that led to].\"" }
     ],
     prompt: "Now do it yourself, twice. First, choose ONE thing people built: better farming, growing towns, laws that protected property, cotton from abroad, or saved-up capital. Explain it as a process with the frame: \"[The factor], which meant [what it made cheaper or possible], so [what that led to].\" Second, explain the factory system as a process in two or three sentences: what changed about where the work was done, what changed about how it was divided, and what that led to.",
     criteria: [
@@ -94,18 +94,18 @@
       cardDesc: "Two things nature gave Britain and two things people built, what each made cheaper or possible, and how two of them worked together.",
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: "Answer in three steps. (1) Choose TWO things nature gave Britain: its coal and iron, its shortage of wood, or its rivers, coast, and canals. For each one, explain what it made cheaper or possible, and what that led to. (2) Choose TWO things people built: better farming, growing towns, laws that protected property, cotton from abroad, or saved-up capital. For each one, explain how it helped make a mill worth building. (3) Explain one way two of your four factors worked together, as the Bridgewater Canal shows.",
+      prompt: "Answer in three steps. (1) Choose TWO things nature gave Britain: its coal and iron, its shortage of wood, or its rivers, coast, and canals. For each one, explain what it made cheaper or possible, and what that led to. (2) Choose TWO things people built: better farming, growing towns, laws that protected property, cotton from abroad, or saved-up capital. For each one, explain how it helped make a mill worth building. (3) Explain one way two of your four factors worked together. Use a pair of your own, not the Bridgewater Canal.",
       responseType: "Checkpoint 1",
       terms: ["coal", "iron", "timber", "wood", "charcoal", "coke", "Coalbrookdale", "Darby", "water", "rivers", "canal", "Bridgewater Canal", "Manchester", "price", "farming", "turnips", "clover", "enclosure", "population", "towns", "urbanization", "law", "patent", "Parliament", "property", "cotton", "enslaved", "plantations", "Caribbean", "capital", "investment", "profit", "Arkwright"],
       focus: ["Explain two things nature gave Britain, each with what it made cheaper or possible.", "Explain two things people built, each with how it made a mill worth building.", "Explain how two factors worked together."]
     },
     {
       title: "Checkpoint 2: What the Factory System Changed",
-      subtitle: "Checks Learning Target 2, Success Criterion 2, and Unit 5 Learning Objective D.",
+      subtitle: "Checks Learning Target 2 and Success Criterion 2, and Unit 5 Learning Objective D: how environmental factors contributed to industrialization.",
       cardDesc: "How the factory gathered production in one place, how it split the work into specialized jobs, and why that made more goods.",
       learningTargets: [lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[1].criteria],
-      prompt: "Explain how the factory system changed the way cloth was made. (1) Describe how thread and cloth were made under the putting-out system: where the work happened and who did each step. (2) Explain how a mill like Arkwright's at Cromford (1771) gathered production in one place: what moved, what powered the machines, and who set the hours. (3) Explain how the work inside a cotton mill was split into steps, with each worker tending one. (4) Use Adam Smith's pin workshop to explain why splitting the work made more goods. (5) Explain one way an environmental factor, such as the water that turned Cromford's wheel or the cotton grown abroad, made the factory possible.",
+      prompt: "Explain how the factory system changed the way cloth was made. (1) Describe how thread and cloth were made under the putting-out system: where the work happened and who did each step. (2) Explain how a mill like Arkwright's at Cromford (1771) gathered production in one place: what moved, what powered the machines, and who set the hours. (3) Explain how the work inside a cotton mill was split into steps, with each worker tending one. (4) Use Adam Smith's pin workshop to explain why splitting the work made more goods. (5) Explain one way an environmental factor, such as the water that turned Cromford's wheel or Britain's coal, made the factory possible.",
       responseType: "Checkpoint 2",
       skill: "Causation",
       terms: ["putting-out system", "merchant", "home", "factory system", "factory", "mill", "Cromford", "Arkwright", "1771", "water wheel", "one building", "hours", "overseer", "specialization", "specialization of labor", "step", "carding", "spinning", "machine", "Adam Smith", "pins", "forty-eight thousand", "more goods", "cause", "effect"],
@@ -127,7 +127,7 @@
       url: "../assets/images/commons/philipp-jakob-loutherbourg-d-j-002-23c595.jpg",
       sourceUrl: "https://collection.sciencemuseumgroup.org.uk/objects/co65204/coalbrookdale-by-night-by-philippe-jacques-de-loutherbourg",
       caption: "An oil painting by Philip James de Loutherbourg, shown in London in 1801, of the Madeley Wood furnaces near Coalbrookdale, beside the River Severn, where iron was made with coke. Loutherbourg also painted scenery for the theater. Science Museum, London.",
-      prompt: "NOTICE what is making the light, and what the carts in front are carrying. INFER what this place had close together that made iron here. What would a painter who also painted stage scenery gain by making the scene more dramatic than it was?"
+      prompt: "NOTICE what is making the light, and what lies along the road in front. INFER what this place had close together that made iron here. Loutherbourg also painted theater scenery: how literally would you take the fire and smoke?"
     },
     {
       title: "A Cotton Plant, 1807",
@@ -150,8 +150,8 @@
       alt: "An engraving of a weaving shed with two long rows of power looms driven by belts from shafts near the ceiling; young women tend the looms while a man in a cap stands in the aisle",
       url: "../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Powerloom_weaving_in_1835.jpg",
-      caption: "An engraving drawn by Thomas Allom and engraved by J. Tingle, published in Edward Baines's History of the Cotton Manufacture in Great Britain (1835). By then weaving, too, had moved into mills.",
-      prompt: "NOTICE where the looms get their power, and how many looms each worker tends. INFER how weaving in this shed differs from weaving at home under the putting-out system. What can an engraving made for a history of the cotton trade not tell you?"
+      caption: "An engraving drawn by Thomas Allom and engraved by J. Tingle, published in Edward Baines's History of the Cotton Manufacture in Great Britain (1835). By the 1830s power looms had spread, though many weavers still worked by hand at home.",
+      prompt: "NOTICE where the looms get their power, and how many people you can see for each row of looms. INFER how weaving in this shed differs from weaving at home under the putting-out system. What can an engraving made for a history of the cotton trade not tell you?"
     },
     {
       title: "Adam Smith's Pin Workshop, 1776",
@@ -164,7 +164,7 @@
       title: "The Patent Law of 1624",
       label: "Law · Statute of Monopolies, section 6, passed by Parliament in 1624",
       sourceText: ["“… Letters Patents and Grants of Privilege for the term of fourteen years or under, hereafter to be made of the sole working or making of any manner of new Manufactures within this Realm,”", "“to the true and first Inventor and Inventors of such Manufactures, which others at the time of making such Letters Patents and Grants shall not use …”"],
-      caption: "Spelling modernized from the text on legislation.gov.uk. \"Letters patent\" were the king's written grant; \"the sole working or making\" means the only right to make and use it. Richard Arkwright patented his spinning machine under this law in 1769.",
+      caption: "Spelling modernized from the text on legislation.gov.uk. \"Letters patent\" were the king's written grant; \"the sole working or making\" means the only right to make and use it. \"For the term of fourteen years or under\" means for up to fourteen years. Richard Arkwright patented his spinning machine under this law in 1769.",
       prompt: "What does this law give to \"the true and first Inventor,\" and for how long? INFER why a law like this would make someone more willing to spend money on a new machine. What can a law not tell you about whether it was enforced?"
     }
   ];
