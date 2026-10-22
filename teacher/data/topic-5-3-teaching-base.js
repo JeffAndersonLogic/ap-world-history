@@ -144,7 +144,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 1,
         land: [
-          'The picture is a real painting: Philip James de Loutherbourg, Coalbrookdale by Night, oil, 1801, Science Museum, London, public domain. It shows the Madeley Wood (Bedlam) furnaces in the Severn gorge, near Coalbrookdale, lit up at night, with carts hauling iron in the foreground. The Science Museum calls the furnaces coke-fired; they belonged to the Coalbrookdale Company from 1776 to 1796.',
+          'The picture is a real painting: Philip James de Loutherbourg, Coalbrookdale by Night, oil, 1801, Science Museum, London, public domain. It shows the Madeley Wood (Bedlam) furnaces in the Severn gorge, near Coalbrookdale, lit up at night, with carts hauling iron in the foreground. The Science Museum\'s blog ("Art at the Coalface") calls them open coke hearths for smelting iron; they belonged to the Coalbrookdale Company from 1776 to 1796.',
           'Why open here: the picture shows what the deck explains: coal turned into fire, iron, and work that went on after dark, beside a river. It is not Darby\'s 1709 furnace, which stood in Coalbrookdale itself, a side valley of the gorge.',
           'Loutherbourg also designed scenery for the theater. That makes a good Evidence Lab question: how literally should we take the fire and smoke?'
         ],
@@ -407,7 +407,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 8,
         land: [
-          'Module 05 is required. It models the frame on coal near water and asks students to explain one factor people built as a process, then to explain the factory system the same way.',
+          'Module 05 is required. It models the frame on an everyday example, a new bus line, and asks students to explain one factor people built as a process, then to explain the factory system the same way.',
           'Circulate for the connecting words: "which meant" and "so."'
         ],
         ask: 'Read me your "which meant."',
@@ -473,9 +473,9 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'pins', kind: 'source-quote', eyebrow: 'The Factory · Why One Job Each',
       kc: 'KC-5.1.I.C', title: 'Ten men, eighteen steps, forty-eight thousand pins.',
       template: {
-        quote: 'Those ten persons, therefore, could make among them upwards of forty-eight thousand pins in a day. ... But if they had all wrought separately and independently ... they certainly could not each of them have made twenty, perhaps not one pin in a day',
+        quote: 'Those ten persons, therefore, could make among them upwards of forty-eight thousand pins in a day. But if they had all wrought separately and independently, and without any of them having been educated to this peculiar business, they certainly could not each of them have made twenty',
         attribution: 'Adam Smith, The Wealth of Nations, Book I, chapter 1, 1776',
-        notice: 'Count the men and the steps: ten men shared about **eighteen steps**, so each did only one, two or three of them.'
+        notice: 'Smith says he saw this. Count the men and the steps: ten men shared about **eighteen steps**, so each did only one, two or three of them.'
       },
       notes: {
         minutes: 2,
@@ -523,7 +523,7 @@ window.BEHISTORICAL_TEACHING = {
         rows: [
           { myth: 'Britain had coal, so it industrialized.', evidence: 'Coal was one of seven causes. China had coal too. Farms, towns, laws, cotton and capital mattered as well.', source: 'KC-5.1.I.A' },
           { myth: 'Cromford was the first factory.', evidence: 'Earlier mills, such as a Derby silk mill of the 1720s, had some of its features. UNESCO calls the valley the birth of the factory system.', source: 'KC-5.1.I.C' },
-          { myth: 'The steam engine started it.', evidence: 'Cromford ran on water. Steam power came later, and it is Topic 5.5.', source: 'KC-5.1.I.C' }
+          { myth: 'The steam engine started it.', evidence: 'Cromford ran on water. Steam engines that drove factory machines came later, in Topic 5.5.', source: 'KC-5.1.I.C' }
         ]
       },
       notes: {

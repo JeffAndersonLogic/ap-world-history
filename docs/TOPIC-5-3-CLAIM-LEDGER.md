@@ -226,3 +226,38 @@ History:
 11. The cotton print is an etching, of an Old World species. **Fixed.**
 12. "No cotton before about 1790" (teacher note). **Fixed.**
 Checked and confirmed by the history reviewer: Ure's definition word for word against the 1835 first edition; UNESCO's wording; the Science Museum, Royal Collection and Wellcome records for Coalbrookdale by Night, Manchester from Kersal Moor and Mule Spinning; the Science and Industry Museum's statement on cotton; Manchester's 1773 and 1801 figures; the 1801 census total; Cromford's water and workforce.
+
+### Pass 2, 2026-10-22
+
+Two fresh reviewers, a fresh packet (`review2`), the same split of focus. Page truth: 11 findings, 10
+supported; history: 9 findings, all supported, of which 2 (the slide 19 patent note, the carding
+plate's "1830s") had already been fixed by the page-truth list. **19 distinct supported defects, all
+fixed; 1 rejected.** No wrong date or number on a student page; no misquotation.
+
+Page truth and readability:
+1. Canals filed as "what nature gave" on the targets, Checkpoint 1 and slides 6 and 20, while the reading says people dug them. **Fixed:** canals are sorted with what people built on every surface, and the reading's section 1 callout says canals sit in between, nature's water dug into new places by people.
+2. Picture credits beyond the holder's record: the carding plate "credited to Thomas Allom, 1830s"; the mule plate "for a book about the cotton industry." **Fixed:** each credit says only what the record and the plate's own lettering say.
+3. The 1785 ruling overstated. **Fixed:** the court found the specification unclear and heard claims that others had invented the machines (Wikipedia, Richard Arkwright, patents; Clark), on the deep reading, the notes and BeInTheRoom.
+4. The patent plate's second quotation ran past the text card's six lines and was cut with no ellipsis. **Fixed:** the quotation ends at "such Manufactures …". The text card's `aria-label` carrying only the title is a shared renderer (adjacent finding, logged since 5.1).
+5. Primary Source task 2 answered in its own intro and on slide 17; hard words unglossed. **Fixed:** the intro and the slide no longer state the answer; Passage 3 carries a "Words to know" line.
+6. The deep reading's closing card printed two finished pairs for Checkpoint 1 step 3. **Fixed:** removed.
+7. Success Criterion 1 too dense. **Fixed:** three short sentences, examples cut to names. Success Criterion 2 kept (one sentence naming the checkpoint's parts, the course's norm).
+8. The map key answered the map question. **Fixed:** the arrow entries are labels only.
+9. Slide 18's "Hands, a wheel and a loom" could be read as a water wheel. **Fixed:** "Human muscle, at a spinning wheel and loom." The request to drop rows so the slide is not Checkpoint 2 in table form is rejected for the reason given in pass 1.
+10. No Canvas text. **Rejected:** the overview is written in `scripts/build-canvas-events.js`; the event and assignment are generated only when 5.3 has class dates, which no source names yet.
+11. Checkpoint 1's people-built step asked something different from Success Criterion 1. **Fixed:** both ask what each factor made cheaper or possible.
+
+History:
+1. Cotton said to be entirely slave-grown in the reading and the deep reading. **Fixed:** "most." Hansard, 6 May 1847 (the cotton supply of 1786: about 5 million of 19.9 million pounds from Smyrna and Turkey); the deep reading adds that a quarter or more came from the Ottoman Empire in the 1780s. Second source: Pereira (USP working paper), Table 6, from Board of Trade records BT 6/140: Smyrna about 6.0 of 19.8 million pounds in 1786 to 1787, so the share is given as "a quarter or more."
+2. "Steam power came later" (slide 19), though Newcomen's engine pumped mines from 1712. **Fixed:** "Steam engines that drove factory machines came later."
+3. Smith's visit stated as fact; scholars note his eighteen operations follow the Encyclopédie's "Épingle" article (Peaucelle 2006). **Fixed:** "a workshop he says he had seen"; "Smith describes."
+4. "Britain's cotton mills used about 2.6 million pounds in 1760," before mill spinning. **Fixed:** "Britain used ... almost all of it spun by hand."
+5. The slide 19 patent note. Already fixed (page truth 3).
+6. "The Science Museum calls the furnaces coke-fired": the collection record does not. **Fixed:** attributed to the Science Museum's blog, which does.
+7. "Darby's furnace survives": Historic England list entry 1054135, rebuilt and enlarged by Abraham Darby III in 1777. **Fixed.**
+8. The carding plate's "1830s" on slide 16. Already fixed (page truth 2).
+9. The slide 14 note still said the model was coal near water. **Fixed.**
+
+Trend: pass 1, 22 distinct defects (including wrong dates on the canal and misquotations of Smith);
+pass 2, 19, none a wrong date, number or quotation on a student page, mostly sorting consistency,
+answer leaks and credit wording.

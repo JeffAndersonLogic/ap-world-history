@@ -2,7 +2,7 @@
 
 **Status: Delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12).**
 
-**Resume here (2026-10-22):** Phases 0 to 8 built and pushed. Review pass 1 done: 22 distinct supported defects fixed, 1 rejected, all logged in the claim ledger. Review pass 2 (fresh reviewers, packet `review2`) is running. Next: fix and log pass 2; then move `APPROVED_UNIT5_REWRITE_BLOB`, the strict browser suite in the brand fonts, the topic-audit record.
+**Resume here (2026-10-22):** Review passes 1 and 2 done (22 and 19 distinct supported defects, all fixed and logged in the claim ledger). Review pass 3 (fresh reviewers, packet `review3`) is running. Next: fix and log pass 3 (the three-pass safety valve applies), then move `APPROVED_UNIT5_REWRITE_BLOB`, `npm test`, the strict browser suite in the brand fonts, the topic-audit record.
 
 **Taught:** no dates yet. The schedule ends with the Era 3 Exam (Green Monday 2026-11-23, Silver
 Tuesday 2026-11-24), and neither the schedule nor the Notion task names a Unit 5 class day (5.1 and

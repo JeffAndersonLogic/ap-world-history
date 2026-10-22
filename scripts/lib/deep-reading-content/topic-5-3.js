@@ -89,7 +89,7 @@ module.exports = {
             { note: {
               kind: 'howknow',
               label: 'How we know: the furnace is still there',
-              html: `Darby's furnace survives at Coalbrookdale, part of the Ironbridge Gorge World Heritage Site. Historic England, which lists the site, dates Darby's first iron made with coke there to 1709. Historians argue about how much the wood shortage caused the switch to coal and how much growing demand for fuel did; both were at work.`
+              html: `The furnace where Darby first made iron with coke survives at Coalbrookdale, rebuilt and enlarged in 1777, part of the Ironbridge Gorge World Heritage Site. Historic England, which lists the site, dates Darby's first iron made with coke there to 1709. Historians argue about how much the wood shortage caused the switch to coal and how much growing demand for fuel did; both were at work.`
             } }
           ]
         }
@@ -216,7 +216,7 @@ module.exports = {
         {
           heading: 'Cotton from abroad',
           blocks: [
-            { p: `Cotton does not grow in Britain's climate. By the <span class="num">1780s</span> most of the cotton spun in Manchester was grown by enslaved people on plantations in the Caribbean and South America. After the <span class="num">1790s</span> more and more of it came from plantations in the United States. Britain's cotton mills used about <span class="num">2.6 million</span> pounds of raw cotton in <span class="num">1760</span> and about <span class="num">51.6 million</span> pounds in <span class="num">1800</span>. The factory's raw material came from far away, and it was grown by people who were not free.` }
+            { p: `Cotton does not grow in Britain's climate. By the <span class="num">1780s</span> most of the cotton spun in Manchester was grown by enslaved people on plantations in the Caribbean and South America. After the <span class="num">1790s</span> more and more of it came from plantations in the United States. Britain used about <span class="num">2.6 million</span> pounds of raw cotton in <span class="num">1760</span>, almost all of it spun by hand, and about <span class="num">51.6 million</span> pounds in <span class="num">1800</span>. The factory's raw material came from far away, and most of it was grown by people who were not free. (In the 1780s a quarter or more came from the Ottoman Empire, through the port of Smyrna.)` }
           ]
         },
         {
@@ -226,7 +226,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that the slave trade paid for the Industrial Revolution. Historians still argue about how much of Britain's capital came from slavery and the slave trade, so say "some" or "part." What historians agree on is that the cotton itself was grown by enslaved people.`
+              html: `Do not write that the slave trade paid for the Industrial Revolution. Historians still argue about how much of Britain's capital came from slavery and the slave trade, so say "some" or "part." What historians agree on is that most of the cotton itself was grown by enslaved people.`
             } }
           ]
         },

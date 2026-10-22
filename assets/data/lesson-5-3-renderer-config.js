@@ -157,8 +157,8 @@
       title: "Adam Smith's Pin Workshop, 1776",
       label: "Primary-source excerpt · Adam Smith, The Wealth of Nations, 1776, Book I, chapter 1",
       sourceText: ["“One man draws out the wire; another straights it; a third cuts it; a fourth points it; a fifth grinds it at the top for receiving the head … divided into about eighteen distinct operations”", "“Those ten persons, therefore, could make among them upwards of forty-eight thousand pins in a day.”"],
-      caption: "Smith, a Scottish thinker, describes a small hand workshop he had seen, not a powered factory. Text from the Project Gutenberg edition.",
-      prompt: "What does each man do? INFER why splitting the work let ten men make so many pins. Smith saw a workshop, not a mill: what does a factory add that his workshop does not have?"
+      caption: "Smith, a Scottish thinker, describes a small hand workshop he says he had seen, not a powered factory. Text from the Project Gutenberg edition.",
+      prompt: "What does each man do? INFER why splitting the work let ten men make so many pins. Smith describes a workshop, not a mill: what does a factory add that his workshop does not have?"
     },
     {
       title: "The Patent Law of 1624",
