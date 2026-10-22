@@ -4,6 +4,8 @@
 2026-10-22 from the CED source file; the Phase 9 reviewers check it against that file and the
 scholarship before anything ships.
 
+**Resume here (2026-10-22):** Phases 0 to 8 done (pictures from the Library of Congress and the Wellcome Collection; Primary Source is Jevons, 1865; BeInTheRoom "The Five Technologies"; Canvas text staged, no dates). Next: Phase 9, slide screenshots, then review pass 1. The Unit 5 fingerprint has not moved yet.
+
 **Taught:** no dates yet. The schedule ends with the Era 3 Exam (Green Monday 2026-11-23, Silver
 Tuesday 2026-11-24), and neither the schedule nor the Notion task names a Unit 5 class day (5.1 to
 5.4 are not scheduled either). The build adds no schedule entries; the dates are the one open item in

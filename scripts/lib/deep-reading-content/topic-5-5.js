@@ -1,34 +1,34 @@
 'use strict';
 
 /**
- * Topic 5.5, Technology of Industrialization: the deep reading.
+ * Topic 5.5, Technology of the Industrial Age: the deep reading.
  *
- * Why this exists. The success criteria ask for railroads creating national
- * markets, the Bessemer process of 1856, the telegraph, and specifically for at
- * least two examples of INTERDEPENDENCE, one technology enabling another. Then
- * the second criterion is environmental and it is unusually detailed: coal
- * pollution, deforestation, rubber in the Congo and Amazon with coercive labor,
- * and Peruvian guano, with an explicit instruction to connect European
- * industrial technology to environmental and labor transformation in colonized
- * regions.
+ * Why this exists. The CED gives 5.5 one learning objective, how technology
+ * shaped economic production over time, three Key Concepts (KC-5.1.I.B,
+ * machines such as the steam engine and the internal combustion engine let
+ * people use the energy stored in coal and oil, and the fossil fuels
+ * revolution greatly increased the energy available; KC-5.1.I.E, the second
+ * industrial revolution's new methods in steel, chemicals, electricity and
+ * precision machinery; KC-5.1.IV, railroads, steamships and the telegraph in
+ * interior regions, leading to more trade and migration) and a reasoning
+ * process of Causation. The First & 10 tells the story in one pass. What it
+ * has no room for is how each machine worked, how much more energy there was,
+ * and how slowly some of the effects came.
  *
- * The interdependence requirement is the spine of section 01 and 02, because it
- * is what turns a list of inventions into a system. And the guano and rubber
- * material is the part no survey has room for and the part that makes the second
- * criterion answerable: an industrial economy has an ecological footprint
- * located somewhere other than where the factories are.
+ * Rebuilt from the 5.5 story (docs/TOPIC-5-5-STORY-DRAFT.md) on 2026-10-22.
+ * The old chapter, "The Machines That Needed Each Other," gave half its length
+ * to rubber, guano and coerced labor in colonized regions, which is Unit 6's
+ * story, and left out oil and the internal combustion engine, which the CED
+ * names.
  *
  * Three things carried deliberately:
  *
- *   1. Every technology here is written as solving a bottleneck created by the
- *      previous one, so the chain is causal rather than chronological.
- *   2. The Congo rubber terror is stated plainly, with the mechanism, because a
- *      chapter that mentions coercive labor without saying what it was is worse
- *      than one that omits it.
- *   3. Guano is the best teaching case in the chapter and gets the space:
- *      seabird excrement, indentured Chinese labor, a fertilizer boom, a debt
- *      crisis, a war, and a synthetic replacement. It is the whole century in
- *      one commodity.
+ *   1. The chain: each section's technology is a link that made the next one
+ *      possible, so the chapter is causal rather than a list of inventions.
+ *   2. Both machines and both fuels of KC-5.1.I.B, and all four methods of
+ *      KC-5.1.I.E.
+ *   3. Timing: when each effect came, including the ones that came after
+ *      1900.
  */
 
 module.exports = {
@@ -37,232 +37,282 @@ module.exports = {
   sourceFile: 'deep-reading-topic-5-5-technology-of-industrialization.html',
   lessonFile: 'lesson-5-5-technology-of-industrialization.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 5.5: The Machines That Needed Each Other',
+  docTitle: 'BeHistorical | Deep Reading | Topic 5.5: More Power, Longer Reach',
   eyebrow: 'Topic 5.5 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
-  titleHtml: 'The Machines That Needed Each <em>Other</em>',
-  deck: `No nineteenth-century technology worked alone. The steam engine needed coal, and coal needed a railway to move it, and the railway needed steel, and cheap steel needed a process nobody had until 1856, and the whole system needed a telegraph to run on time. This chapter is that chain, and then the part that is usually left off it: an industrial economy has an ecological footprint, and most of it was somewhere else.`,
-  meta: ['Four sections', 'The chain, steel and wire, the smoke, the extraction', 'Read alongside the First & 10'],
-  footerNote: 'Topic 5.5 &nbsp;·&nbsp; The Machines That Needed Each Other &nbsp;·&nbsp; Companion to the First &amp; 10',
+  titleHtml: 'More Power, <em>Longer Reach</em>',
+  deck: `In 1750 almost all the energy people used came from muscles, wood, wind and water. By 1900 about half of it came from coal. This chapter follows how machines unlocked that buried energy, what new things it let people make, and how railroads, steamships and the telegraph carried goods, people and news into the interiors of continents.`,
+  meta: ['Five sections', 'Energy before 1750, the steam engine, coal and oil, new materials, longer reach', 'Read alongside the First & 10'],
+  footerNote: 'Topic 5.5 &nbsp;·&nbsp; More Power, Longer Reach &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',
-    intro: `Sections 01 and 02 are the interdependence the success criteria ask you to demonstrate, written as a chain of bottlenecks rather than a list of inventions. Sections 03 and 04 are the environmental half, first where the factories were and then where the raw materials came from, which is the connection the criteria explicitly want made.`,
+    intro: `The College Board asks you to explain how technology shaped economic production between 1750 and 1900. That is a causation question, and the answer is a chain: each technology made the next one possible. Section 01 sets the starting point; sections 02 and 03 are the power; section 04 is the new materials; section 05 is the reach, and its two effects, trade and migration. Each section ends with a tool, a limit and a comparison you can use in an answer.`,
     steps: [
-      `<b>01 The railway:</b> what falling freight costs do to a country, and what the railway needed in return.`,
-      `<b>02 Steel and wire:</b> Bessemer in 1856, the telegraph, and information moving faster than goods.`,
-      `<b>03 The smoke:</b> coal, cities, rivers and forests where the industry was.`,
-      `<b>04 The footprint elsewhere:</b> guano, rubber, and the labor that produced them.`,
-      `<b>Then the closing section</b>, which turns all of it into comparison sentences you can write.`
+      `<b>01 Energy before 1750:</b> muscles, wood, wind and water, and their limits.`,
+      `<b>02 The steam engine:</b> from a mine pump to the power of factories.`,
+      `<b>03 More coal, then oil:</b> how much more energy, and a second engine.`,
+      `<b>04 The second industrial revolution:</b> steel, chemicals, electricity and precision machinery.`,
+      `<b>05 Longer reach:</b> railroads, steamships and the telegraph, and more trade and migration.`,
+      `<b>Then the closing section</b>, which gathers the evidence for an answer.`
     ]
   },
 
   empires: [
-    // ── 01 ────────────────────────────────────────────────────────────────────
+    // ── 01 ─────────────────────────────────────────────────────────────
     {
-      id: 'railway',
+      id: 'energy',
       num: '01',
       accent: 'gold',
-      name: 'What Happens When Freight Gets Cheap',
-      navLabel: 'The railway',
-      dates: '1825 to 1900 &nbsp;·&nbsp; Rails and national markets',
-      thesis: `The railway&rsquo;s importance is not speed. It is the collapse in the cost of moving heavy things overland, which had been the binding constraint on economic life for the whole of this course, and everything else follows from removing it.`,
+      name: 'Energy Before 1750',
+      navLabel: 'Energy in 1750',
+      dates: 'About 1750 &nbsp;·&nbsp; The starting point',
+      thesis: `In 1750 almost all the energy people used came from things that grow, and from wind and water. Each had a limit.`,
       parts: [
         {
-          heading: 'The constraint it removed',
+          heading: 'Things that grow, blow and flow',
           blocks: [
-            { p: `Before railways, moving bulk goods overland was so expensive that grain or coal became worthless within a modest distance of where it was produced. That is why every earlier chapter in this course puts trade on water: the Topic 2.3 chapter's point that a ship carries rice when a camel cannot is the same point. Canals helped enormously and could only go where the terrain allowed and froze in winter.` },
-            { p: `The Stockton and Darlington opened in <span class="num">1825</span> and the Liverpool and Manchester in <span class="num">1830</span>, and the second is the one that mattered, because it connected a manufacturing city to a port and proved the commercial case. Britain then built a network within a generation, and every industrializing state followed, often with the state financing it, as the Topic 5.4 chapter describes.` },
-            { p: `Four consequences, and each is a mechanism worth writing. <b>A national market</b>: when it costs little to move goods from an interior town to a port, a producer sells to the whole country rather than to the county, which rewards large-scale production and destroys local producers who had been protected by distance. <b>Interior settlement</b>: land far from navigable water becomes worth farming, which is what fills the American Midwest, the Argentine pampas and the Ukrainian grain belt, and what floods European markets with cheap grain in the <span class="num">1870</span>s. <b>Standard time</b>: railways cannot run safely on local solar time, so Britain adopted railway time and the world eventually adopted time zones, which means the clock everyone lives by is a railway artifact. <b>Cities that need not be ports</b>: a factory can sit at a rail junction, and Chicago is the pure case.` }
+            { p: `In <span class="num">1750</span> a farmer plowed with a horse or an ox, a family cooked and kept warm with wood, a ship crossed the ocean by sail, and a mill turned beside a river. Food gave energy to the muscles of people and animals. Wood gave fire. Wind and water turned some machines. All of these came, in the end, from the sun and the land: crops and forests had to grow, every year, to be used.` },
+            { p: `Each had a limit you could see. A horse gets tired and must be fed from land that could grow food for people. A forest takes decades to grow back. A sailing ship waits for the wind. A <span class="kt">water wheel</span> works only beside a fast river, and turns slowly when the river runs low. Topic 5.3's first factory, Arkwright's mill at Cromford, ran on a water wheel.` },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know: the world\'s energy, measured',
+              html: `Historians of energy, such as Vaclav Smil, have estimated how much energy the world used and where it came from. Their figures show that until the middle of the 1800s, wood, crop waste and other things that grow were the world's main source of energy, and that by about 1900 coal gave about half (Our World in Data).`
+            } }
           ]
         },
         {
-          heading: 'What the railway needed back',
+          heading: 'Energy buried underground',
           blocks: [
-            { p: `The interdependence runs in both directions, and this is the half that makes the argument. A railway required <b>coal</b>, in enormous quantities, so it expanded the coal industry that had produced the engine that made it possible. It required <b>iron and then steel</b> for rails, locomotives, bridges and wheels, on a scale that transformed metallurgy and created the demand Bessemer answered. It required <b>civil engineering</b>: cuttings, embankments, tunnels and bridges, which built a profession. And it required <b>capital on a new scale</b>, since a railway is expensive before it earns anything, which is exactly why the joint-stock company and the stock exchange of Topic 5.7 matter when they do.` },
-            { p: `And it broke its own rails, constantly. Wrought iron rails under heavy locomotives wore out in a few years, and the resulting demand for something better is a direct commercial pressure on the steel problem, which is where section 02 begins.` },
+            { p: `There was another store of energy, underground. Coal and oil are each a <span class="kt">fossil fuel</span>: the remains of plants and tiny sea creatures, buried for millions of years, with energy stored inside them. Coal did not need land to grow this year. Britain already burned a great deal of it for heat (Topic 5.3). The trick was to turn its heat into motion.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Set the starting point. <em>Before you say how technology changed production, say what powered it before.</em>`,
+        limit: `Water wheels and windmills were good machines; the limit was the energy itself, not the skill of the people who used them.`,
+        comparison: `Against 1900 (section 03): in 1750 energy came mostly from things that grow; by about 1900 coal gave about half of the world's energy.`
+      },
+      terms: [
+        ['Fossil fuel', 'A fuel such as coal or oil, formed from plants and sea creatures buried for millions of years.'],
+        ['Water wheel', 'A wheel turned by flowing water, used to drive machines in a mill.'],
+        ['Biomass', 'Fuel from things that grow, such as wood, straw and dung.']
+      ]
+    },
+
+    // ── 02 ─────────────────────────────────────────────────────────────
+    {
+      id: 'steam',
+      num: '02',
+      accent: 'iron',
+      name: 'The Steam Engine',
+      navLabel: 'The steam engine',
+      dates: '1712 to the 1780s &nbsp;·&nbsp; From a pump to a power',
+      thesis: `The steam engine began as a pump for flooded coal mines. Watt made it use far less coal and turn wheels, so factories could run on coal instead of rivers.`,
+      parts: [
+        {
+          heading: 'A pump for mines',
+          blocks: [
+            { p: `As British miners dug deeper for coal, water flooded the mines. In <span class="num">1712</span> Thomas Newcomen set up a <span class="kt">steam engine</span> near Dudley Castle, in the English Midlands, to pump it out. A fire boiled water into steam. The steam filled a cylinder under a piston; a spray of cold water turned the steam back into water, the air pressed the piston down, and a great wooden beam rocked to work the pump. It worked, but it burned a great deal of coal, because the cylinder was cooled and heated again on every stroke.` }
+          ]
+        },
+        {
+          heading: 'Watt\'s improvement',
+          blocks: [
+            { p: `James Watt, an instrument maker at the University of Glasgow, was repairing a model Newcomen engine when he saw the waste. In <span class="num">1765</span> he found the fix: cool the steam in a separate chamber, the <span class="kt">separate condenser</span>, so the cylinder could stay hot. He patented the idea in <span class="num">1769</span>. Watt's engines used less than a third of the coal of a Newcomen engine.` },
+            { p: `Then came the change that mattered most for factories. Watt's business partner, Matthew Boulton, wanted engines that could drive mill machinery. In the <span class="num">1780s</span> Boulton and Watt built engines that turned a wheel. A wheel can drive spinning machines, looms and hammers. A mill no longer had to sit beside a fast river: it could run on coal, wherever coal could be brought, and cotton mills crowded into towns such as Manchester.` },
             { note: {
-              kind: 'howknow',
-              label: 'How we know: prices converged',
-              html: `The claim that railways created national markets is testable, and economic historians test it with price series. If a market is integrated, the price of a bulk commodity in two distant places should converge, because a large gap invites someone to buy in the cheap place and sell in the dear one until the gap is only the cost of carriage. Grain and coal price series across the nineteenth century show exactly that: wide regional divergence before the railway and close tracking after it, and the same convergence appears between continents once steamships and the Suez Canal cut ocean freight. It is a good example of a claim about structure being demonstrated by ordinary commercial records rather than by anyone&rsquo;s testimony.`
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Watt did not invent the steam engine. Newcomen's engines had pumped mines for half a century before Watt's patent. Watt made the steam engine use far less coal, and made it turn wheels. And steam did not start the Industrial Revolution: Cromford ran on water, and many mills used water power for decades after Watt.`
             } }
           ]
         }
       ],
       useThis: {
-        tool: `Falling freight cost as a market-maker. <em>The mechanism is that when the cost of moving a ton overland collapses, distance stops protecting local producers, so a manufacturer can sell into a whole country and is rewarded for producing at scale, while farmers on interior land that was previously too far from water find their crops worth growing, which integrates a national market and destroys the local one.</em>`,
-        limit: `Integration was not uniformly good for everyone in it. Local producers protected by distance were wiped out, and cheap New World grain from the 1870s pushed European agriculture into a long depression.`,
-        comparison: `Against the <em>Grand Canal</em> in Topic 1.1: a state-built artery that moved southern rice to a northern capital and integrated an economy centuries earlier, with the same effect and one difference. A canal follows water and a railway goes where you put it, which is why the railway also becomes an instrument of strategic and colonial control in Unit 6.`
+        tool: `Explain a process step by step. <em>The problem, what the machine did, what it made possible, what followed.</em>`,
+        limit: `A patent is not the same as a change in production: Watt's engines spread over decades, and water wheels stayed common.`,
+        comparison: `Against section 01: the water wheel tied a mill to a river; the rotary steam engine tied it to coal, which could be carried.`
       },
       terms: [
-        ['Liverpool and Manchester', 'The 1830 line connecting a manufacturing city to a port, which proved the commercial case for railways.'],
-        ['National market', 'A single integrated market created when freight becomes cheap enough that distance no longer protects local producers.'],
-        ['Standard time', 'Uniform railway time and eventually time zones, adopted because trains cannot run safely on local solar time.'],
-        ['Price convergence', 'The narrowing of commodity price gaps between regions, the measurable evidence of market integration.'],
-        ['Civil engineering', 'The profession built by railway cuttings, tunnels and bridges, and one of the century\'s new skilled occupations.']
+        ['Steam engine', 'A machine that uses steam from boiling water, heated by burning fuel, to make motion.'],
+        ['Separate condenser', 'Watt\'s chamber for cooling steam outside the cylinder, so the cylinder stays hot and less coal is burned.'],
+        ['Rotary motion', 'Turning in a circle, like a wheel, so an engine can drive machines.']
       ]
     },
 
-    // ── 02 ────────────────────────────────────────────────────────────────────
+    // ── 03 ─────────────────────────────────────────────────────────────
     {
-      id: 'steel',
-      num: '02',
-      accent: 'iron',
-      name: 'Cheap Steel and Instant News',
-      navLabel: 'Steel and wire',
-      dates: '1844 to 1880s &nbsp;·&nbsp; Bessemer and the telegraph',
-      thesis: `Two changes in the middle of the century removed the remaining ceilings. One made the strongest available structural material cheap enough to use by the mile, and the other made a message independent of anything carrying it, over any distance, in any weather, at a price ordinary commerce could pay.`,
+      id: 'fuels',
+      num: '03',
+      accent: 'sage',
+      name: 'More Coal, Then Oil',
+      navLabel: 'Coal and oil',
+      dates: '1854 to 1900 &nbsp;·&nbsp; The fossil fuels revolution',
+      thesis: `Machines let people use far more energy than ever before: coal gave about half the world's energy by 1900. Oil and the internal combustion engine came next, but their big effects came later.`,
       parts: [
         {
-          heading: 'The Bessemer process',
+          heading: 'How much more energy',
           blocks: [
-            { p: `Understand the problem first. <b>Wrought iron</b> is soft and bends; <b>cast iron</b> is hard and brittle and shatters under shock; <b>steel</b>, iron with a controlled small proportion of carbon, is both strong and tough, and before <span class="num">1856</span> it was made in small batches by slow processes and cost so much that it was used for tools, springs and blades rather than for structures.` },
-            { p: `Henry Bessemer's converter, announced in <span class="num">1856</span>, blew air through molten pig iron. The oxygen burned out the excess carbon and other impurities, and the burning generated the heat, so the process needed little additional fuel and took minutes rather than days. Cost per ton fell dramatically, and steel output rose by orders of magnitude across the following decades. Later improvements matter and can be named briefly: the open-hearth process allowed better control and the use of scrap, and the Gilchrist Thomas basic lining of <span class="num">1879</span> allowed the use of the phosphoric ores that most of continental Europe actually had, which is a large part of why German steel output overtook Britain's.` },
-            { p: `Then the consequences, which are the interdependence the criteria want. <b>Rails</b> that lasted many times longer than iron ones, which is what let railways carry heavier loads at higher speeds. <b>Bridges</b> and, with elevators, the steel-framed buildings that make a tall city possible. <b>Ships</b> of steel rather than iron, larger and lighter. <b>Machinery</b> and machine tools able to take higher stresses. And <b>armaments</b>, which is the Unit 6 connection: cheap steel is also artillery, and the industrial gap of Topic 5.4 becomes a military gap.` }
+            { p: `Steam engines needed coal, and coal mines needed steam engines to pump them dry, so each made the other grow. Britain mined about 65 million tons of coal in <span class="num">1854</span> and about 225 million tons in <span class="num">1900</span>. By about <span class="num">1900</span>, coal supplied about half of all the energy used in the whole world; things that grow, such as wood, gave about the other half. The College Board calls this the <span class="kt">fossil fuels revolution</span>: it "greatly increased the energy available to human societies."` },
+            { p: `A person who lived through it said so. In <span class="num">1865</span> the British economist William Stanley Jevons wrote that "with coal almost any feat is possible or easy; without it we are thrown back into the laborious poverty of early times." He was worried that Britain's cheap coal would not last forever. (His words are this lesson's Primary Source.)` }
+          ]
+        },
+        {
+          heading: 'Oil, and an engine that burns fuel inside itself',
+          blocks: [
+            { p: `In <span class="num">1859</span> Edwin Drake drilled a well at Titusville, Pennsylvania, and struck oil. For the rest of the 1800s, most oil was refined into kerosene, a fuel for lamps.` },
+            { p: `A steam engine burns its fuel under a boiler, outside the engine. An <span class="kt">internal combustion engine</span> burns its fuel inside the engine itself, in the cylinder. In <span class="num">1876</span> Nikolaus Otto built a four-stroke gas engine in Germany, and in <span class="num">1886</span> Carl Benz patented a car driven by a small engine that burned a fuel made from oil.` },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know: counting cars',
+              html: `Government tables of registered cars in the United States begin with the year 1900, when there were about 8,000 in the whole country. The internal combustion engine's big changes, to cars, trucks, tractors and airplanes, came after 1900.`
+            } }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Say how much. <em>Use one number to show that the energy available grew greatly.</em>`,
+        limit: `Coal passed wood and other things that grow only in the 1890s; say "about half" by 1900, not that coal had replaced wood.`,
+        comparison: `Against the steam engine (section 02): the internal combustion engine was developed before 1900, but most of its effects came after.`
+      },
+      terms: [
+        ['Fossil fuels revolution', 'The great increase in energy that came when machines let people use coal and oil.'],
+        ['Kerosene', 'A fuel made from oil, burned in lamps.'],
+        ['Internal combustion engine', 'An engine that burns its fuel inside the cylinder, like a car engine.']
+      ]
+    },
+
+    // ── 04 ─────────────────────────────────────────────────────────────
+    {
+      id: 'methods',
+      num: '04',
+      accent: 'gold',
+      name: 'The Second Industrial Revolution',
+      navLabel: 'New materials',
+      dates: '1850 to 1900 &nbsp;·&nbsp; Four new methods',
+      thesis: `After 1850, with so much energy to use, new methods made steel cheap, made chemicals in factories, sold electric power, and cut machine parts precisely enough to swap.`,
+      parts: [
+        {
+          heading: 'Steel',
+          blocks: [
+            { p: `<span class="kt">Steel</span> is iron with a small, carefully measured amount of carbon. It is stronger and tougher than ordinary iron, but before the 1850s it was slow and costly to make in large amounts. In <span class="num">1856</span> Henry Bessemer showed that blowing air through melted iron burned out the carbon and other impurities, and the burning kept the metal hot. The United States made about 69,000 tons of steel in <span class="num">1870</span> and about 10 million tons in <span class="num">1900</span>; Britain went from about 215,000 tons to about 4.9 million. Steel became rails, bridges, ships and machines.` }
+          ]
+        },
+        {
+          heading: 'Chemicals',
+          blocks: [
+            { p: `In <span class="num">1856</span> an eighteen-year-old London chemistry student, William Perkin, made a purple dye, mauve, from chemicals that came from coal tar, a sticky leftover of coal. It was the first synthetic dye to sell well. German chemical companies such as BASF, founded in <span class="num">1865</span>, built laboratories whose job was to invent new dyes, and in <span class="num">1897</span> BASF began selling indigo blue made in a factory instead of from a plant. By <span class="num">1914</span> Germany made most of the world's dyes.` }
+          ]
+        },
+        {
+          heading: 'Electricity',
+          blocks: [
+            { p: `In <span class="num">1882</span> Thomas Edison's Pearl Street Station in New York began selling electric power, lighting about 400 lamps on its first day. Electric motors could let each machine run on its own motor, instead of on belts from one big steam engine. But the change was slow: in <span class="num">1899</span>, electric motors gave less than 5 percent of the power in American factories, and it took about two more decades for them to give half. Factories had to be rebuilt to use them well.` }
+          ]
+        },
+        {
+          heading: 'Precision machinery',
+          blocks: [
+            { p: `Machine tools, such as lathes and milling machines, could now cut metal parts to exact sizes, so that one part fit any copy of the same machine. These are <span class="kt">interchangeable parts</span>. Standard screw threads, set by Joseph Whitworth in Britain in <span class="num">1841</span> and by William Sellers in the United States in <span class="num">1864</span>, helped machines with interchangeable parts, "from typewriters to locomotives," spread.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Do not say "by 1900 factories ran on electricity." Electric power was new and growing, but in 1899 it gave under 5 percent of American factory power. Steam, burning coal, still drove most machines.`
+            } }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Name the method and what it made. <em>Steel made rails and ships; dyes came from coal tar; motors could drive single machines; precise tools made parts that fit.</em>`,
+        limit: `A new method is not the same as a change everywhere: electricity, especially, spread slowly.`,
+        comparison: `Against section 03: the second industrial revolution ran on the energy of the first; coal ran the furnaces that made steel and gave the tar that made dyes.`
+      },
+      terms: [
+        ['Second industrial revolution', 'The new methods in steel, chemicals, electricity and precision machinery after about 1850.'],
+        ['Steel', 'Iron with a small, measured amount of carbon, stronger and tougher than ordinary iron.'],
+        ['Interchangeable parts', 'Machine parts made so exactly that any one fits any copy of the same machine.']
+      ]
+    },
+
+    // ── 05 ─────────────────────────────────────────────────────────────
+    {
+      id: 'reach',
+      num: '05',
+      accent: 'iron',
+      name: 'Longer Reach',
+      navLabel: 'Longer reach',
+      dates: '1830 to 1904 &nbsp;·&nbsp; Railroads, steamships and the telegraph',
+      thesis: `Railroads, steamships and the telegraph reached the interiors of continents and joined distant markets, which led to more trade and more migration.`,
+      parts: [
+        {
+          heading: 'Railroads',
+          blocks: [
+            { p: `Before railroads, heavy goods moved cheaply only by water, so the middle of a continent, far from rivers and the sea, was hard to reach. The Liverpool and Manchester Railway, opened in England in <span class="num">1830</span>, was the world's first railway between two cities, with trains pulled by steam locomotives. Railways spread fast: Russia had 27 kilometers of railway in <span class="num">1840</span> and more than 53,000 in <span class="num">1900</span>; Germany went from 469 kilometers to more than 51,000.` },
+            { p: `India's first passenger train ran from Bombay to Thane in <span class="num">1853</span>. The first railroad across the United States was finished at Promontory Summit, Utah, in <span class="num">1869</span>. Russia began the Trans-Siberian Railway in <span class="num">1891</span>, and by <span class="num">1904</span> trains could cross to the Pacific Ocean. A railroad could reach farms, mines and towns where no river or canal went.` }
+          ]
+        },
+        {
+          heading: 'Steamships',
+          blocks: [
+            { p: `A sailing ship from Norway to America took about 53 days on average. By the 1870s the fastest steamships crossed the Atlantic in about 7 or 8 days. The Suez Canal, opened in Egypt in <span class="num">1869</span>, could be used only by steamships, and it cut the voyage from Europe to Asia. Steamboats also pushed up rivers into the interior of continents: in <span class="num">1854</span> the steamer Pleiad went far up the Niger and Benue rivers in West Africa, and none of its crew died, because they took quinine, a medicine against malaria. What European empires did with this reach is Unit 6.` }
           ]
         },
         {
           heading: 'The telegraph',
           blocks: [
-            { p: `Get the claim right, because the obvious version of it is false. The telegraph was not the first way of sending a message faster than a horse. Beacon chains are ancient, and from <span class="num">1794</span> Claude Chappe's optical telegraph relayed coded signals between hilltop towers across France, carrying a message from Paris to Lille in minutes. What the optical system could not do was work at night, work in fog, cross an ocean, or carry the traffic of ordinary business, because every message passed through a chain of operators who could read it and it belonged to the state.` },
-            { p: `So the break of <span class="num">1844</span> is about scale and reliability, not about speed alone. Before it, a message that had to cross an ocean or arrive in bad weather still traveled at the speed of the fastest ship, which meant London to Calcutta took months. Samuel Morse's line between Washington and Baltimore in <span class="num">1844</span> changed that, and the network spread along the railways, which is not a coincidence: railways needed telegraphs to signal whether a single-track section was clear, and telegraphs needed the railway's cleared, patrolled right of way to run wire along.` },
-            { p: `Submarine cable came next, across the Channel in <span class="num">1851</span>, a durable transatlantic cable in <span class="num">1866</span> after earlier failures, and lines to India, Australia and around the world within the following decade. By the <span class="num">1870</span>s a merchant in London could know a price in Bombay the same day.` },
-            { p: `What that changed, stated as mechanisms. <b>Commerce</b>: goods could be bought and sold against known prices in distant markets rather than against a guess two months old, which reduced risk, and it also let commodity prices converge worldwide and made futures markets possible. <b>Empire</b>: an order from London could reach a colonial governor in hours, which centralized decisions that distance had previously delegated, and the Topic 4.4 chapter's account of overlapping jurisdictions as a solution to slow communication becomes obsolete. <b>News</b>: wire services and mass newspapers, which is part of how the national publics of Topic 5.2 were made. <b>War</b>: mobilization by timetable, which the railways enabled and the telegraph coordinated.` },
-            { note: {
-              kind: 'misconception',
-              label: 'Common mistake to avoid',
-              html: `Do not present these as separate inventions in a list, which is the form the criteria explicitly ask you to avoid. Write the chain: coal mines flooded, so an engine was built to pump them; the engine needed coal, so more mines opened; moving coal needed railways; railways wore out iron rails, which made cheap steel commercially urgent; Bessemer steel in <span class="num">1856</span> made rails, bridges and ships possible at scale; railways needed telegraphs to signal, and telegraphs used railway rights of way. Each link is a bottleneck created by the previous solution. Two links written that way demonstrate the interdependence better than eight inventions listed.`
-            } }
-          ]
-        }
-      ],
-      useThis: {
-        tool: `Separating information from transport. <em>The mechanism is that earlier signaling systems beat a rider only over short fixed routes in clear weather, so every ocean-going commerce and every distant administration still ran on stale information and had to delegate authority to compensate, and an electrical signal on a wire that can be laid under the sea removes that constraint everywhere at once, allowing prices, orders and news to arrive in advance of any ship and centralizing decisions that distance had previously devolved.</em>`,
-        limit: `Access was unequal by design. Cables were laid, owned and routed by a few firms and states, mostly British, so knowing first was a commercial and imperial asset rather than a public good.`,
-        comparison: `Against the <em>Mongol yam</em> in Topic 2.2: a relay of horses and stations was the fastest information system of its era and still moved at the speed of a rider, so the yam and the Roman post differ from each other in degree and from the telegraph in kind. Chappe's optical towers sit between the two and show where the line falls: faster than a rider, and still stopped by nightfall, fog and the sea.`
-      },
-      terms: [
-        ['Bessemer process', 'The 1856 converter blowing air through molten pig iron, which made steel cheap enough to use structurally.'],
-        ['Open hearth', 'The later steelmaking process allowing better control and the use of scrap, alongside Bessemer converters.'],
-        ['Gilchrist Thomas process', 'The 1879 basic lining that allowed phosphoric ores to be used, opening continental European steelmaking.'],
-        ['Telegraph', 'Electrical signaling from 1844, which moved information faster than any ship, in any weather, over any distance a wire could reach.'],
-        ['Submarine cable', 'Undersea telegraph line, transatlantic from 1866, which put distant markets and colonies within hours of London.']
-      ]
-    },
-
-    // ── 03 ────────────────────────────────────────────────────────────────────
-    {
-      id: 'smoke',
-      num: '03',
-      accent: 'rust',
-      name: 'The Environment Where the Factories Were',
-      navLabel: 'The smoke',
-      dates: 'c. 1800 to 1900 &nbsp;·&nbsp; Coal, rivers, forests',
-      thesis: `An economy that burns fossil carbon at scale rewrites its own landscape, and Britain did it first and most completely. This is the visible half of industrialization&rsquo;s environmental cost, and it fell on the people who lived in the industrial cities.`,
-      parts: [
-        {
-          heading: 'Coal smoke',
-          blocks: [
-            { p: `Industrial cities burned coal for power, for heating and for domestic cooking simultaneously, in valleys that often trapped the smoke. The result was continuous and severe air pollution: soot that blackened buildings, sulfurous smogs that reduced visibility to a few yards, and respiratory disease as an ordinary condition of urban life. Contemporaries did not need instruments to detect it, and their descriptions of Manchester, Sheffield and the Black Country are consistent and vivid.` },
-            { p: `It was understood as a cost and treated as an acceptable one. Britain legislated on smoke abatement from the mid-century and enforcement was weak, because smoke was read as the visible sign of employment, and a factory owner prosecuted for smoke could point at the wages he paid. That trade-off, jobs against air, is a nineteenth-century argument that has not gone away.` },
-            { p: `And the natural world recorded it. The peppered moth's dark form spread through industrial regions because soot-darkened trees made the pale form conspicuous to birds, which is one of the most cited cases of observed natural selection and is, for this chapter, evidence that the change in the atmosphere was large enough to reshape a species within decades.` }
+            { p: `A <span class="kt">telegraph</span> sends messages as pulses of electricity along a wire. In <span class="num">1844</span> Samuel Morse sent "What hath God wrought?" from Washington to Baltimore. A cable under the Atlantic worked only a few weeks in 1858; another worked lastingly from <span class="num">1866</span>, and one reached Bombay in <span class="num">1870</span>. A message that once traveled as fast as a ship could now travel in minutes, so merchants could know prices in distant markets the same day.` }
           ]
         },
         {
-          heading: 'Water, forests and the carbon nobody was counting',
+          heading: 'More trade, more migration',
           blocks: [
-            { p: `<b>Rivers</b> became industrial sewers, receiving dye works, tanneries, bleach and gasworks waste along with untreated human sewage from cities with no system to handle it. The Thames in the mid-century was effectively anaerobic through London, and the Topic 5.9 chapter takes up what that did to public health and Topic 5.8 what was eventually built about it.` },
-            { p: `<b>Forests</b> fell, and here the geography matters. Britain had largely deforested earlier and shifted to coal, which is one reason it could industrialize on the scale it did. Where industrialization came later or where wood remained the fuel, the clearance was contemporaneous: eastern North America, central Europe, and, for railway sleepers, mine props and steamship fuel, enormous quantities of timber worldwide. A railway consumes forest in the form of sleepers as continuously as it consumes coal.` },
-            { p: `And the change no one was measuring: the systematic burning of fossil carbon began here. Svante Arrhenius calculated in <span class="num">1896</span> that changing atmospheric carbon dioxide would change global surface temperature, and he expected any effect to be slow and thought it might be beneficial. It is worth knowing that the physical relationship was identified by a nineteenth-century scientist working on the ice ages, because it dates the knowledge, and the modern consequences of this period's energy choice belong to Unit 9 rather than here.` }
-          ]
-        }
-      ],
-      useThis: {
-        tool: `Externalized cost. <em>The mechanism is that a factory owner pays for coal, labor and machinery and does not pay for the smoke, the river or the disease, so those costs are real and are borne by whoever breathes and drinks nearby, which makes pollution profitable to produce and expensive for anyone else to stop.</em>`,
-        limit: `It was not accepted silently. Sanitary reformers, local campaigns and eventually legislation attacked it, as Topic 5.8 sets out, and the obstacle was less ignorance than the political weight of the interests being regulated.`,
-        comparison: `Against <em>Song China</em> in Topic 1.1: large-scale coal and iron production caused documented deforestation and pollution around Kaifeng centuries earlier, so industrial environmental damage is not unique to Europe. The difference is scale and duration, and specifically that the nineteenth-century version ran on a self-reinforcing system of coal, steel and rail rather than on a single industry.`
-      },
-      terms: [
-        ['Smog', 'The dense mixture of coal smoke and fog in industrial cities, a routine condition rather than an occasional event.'],
-        ['Smoke abatement', 'Legislation against industrial smoke, weakly enforced because smoke was read as evidence of employment.'],
-        ['Peppered moth', 'The species whose dark form spread through sooted industrial regions, observed evidence of an atmospheric change.'],
-        ['Externality', 'A cost of production borne by people other than the producer, which is why pollution was profitable to create.'],
-        ['Fossil carbon', 'Coal and later oil burned at scale from this period, the beginning of the change Arrhenius calculated in 1896.']
-      ]
-    },
-
-    // ── 04 ────────────────────────────────────────────────────────────────────
-    {
-      id: 'elsewhere',
-      num: '04',
-      accent: 'oxide',
-      name: 'The Footprint Was Somewhere Else',
-      navLabel: 'Extraction',
-      dates: 'c. 1840 to 1910 &nbsp;·&nbsp; Guano, rubber, and who dug them',
-      thesis: `An industrial economy consumes raw materials it does not produce, so its environmental and human cost is exported to wherever those materials are. Two commodities carry this argument better than any others, because both were worthless before industry needed them and catastrophic afterward.`,
-      parts: [
-        {
-          heading: 'Guano: fertilizer, indenture, debt and war',
-          blocks: [
-            { p: `<span class="kt">Guano</span> is accumulated seabird excrement, and on the rainless islands off Peru's Pacific coast it had built up in deposits tens of meters deep over millennia. It is extraordinarily rich in nitrogen and phosphorus, which is to say it is concentrated fertilizer, and industrializing Europe needed exactly that: cities full of factory workers had to be fed from soils that were being cropped harder than ever, and European agriculture was running short of nitrogen.` },
-            { p: `From the <span class="num">1840</span>s Peru exported guano on an enormous scale, mostly to Britain and the United States, and the state took the revenue through contracts with foreign merchant houses. Digging it was appalling work, in choking ammoniac dust, in heat, on cliffs, and it was done substantially by <b>indentured Chinese laborers</b>, perhaps ninety thousand or more brought to Peru under contracts obtained by deception or coercion, alongside convicts and enslaved and formerly enslaved people. Mortality and suicide were high enough to generate diplomatic complaint and eventually an end to the traffic.` },
-            { p: `Then the whole arc, which is why this is the best case in the chapter. The revenue was borrowed against, so Peru built railways and public works on guano-backed debt; the accessible deposits were depleted within a few decades; the attention moved to nitrates in the Atacama, which Peru and Bolivia and Chile disputed and which produced the War of the Pacific from <span class="num">1879</span>, in which Chile took the nitrate territory; Peru defaulted; and then, in <span class="num">1909</span> to <span class="num">1913</span>, the Haber-Bosch process for fixing atmospheric nitrogen made industrial fertilizer without any deposit at all, and the commodity that had built and broken an economy stopped mattering.` },
-            { p: `Write that sequence and you have demonstrated, in one commodity, resource booms, coerced migrant labor, debt dependency, a war over raw materials, and technological obsolescence. It is the whole century.` }
-          ]
-        },
-        {
-          heading: 'Rubber: the Congo and the Amazon',
-          blocks: [
-            { p: `Rubber was a curiosity until Goodyear's vulcanization in the <span class="num">1840</span>s made it stable across temperatures, and then industry could not get enough of it: it insulated telegraph and electrical cable, sealed steam machinery, and made the drive belts that transmitted power from engine to machine in every factory. Bicycle and then automobile tires multiplied demand again from the <span class="num">1890</span>s. Rubber came from wild trees in tropical forests, which meant tapping had to be done by people spread across enormous areas, and that is the problem the systems below were built to solve.` },
-            { p: `In the <b>Congo Free State</b>, held from <span class="num">1885</span> as the personal possession of Leopold II of Belgium, the answer was terror. Villages were assigned rubber quotas; a state force, the Force Publique, and concession-company militias enforced them by taking women and children hostage against delivery, by flogging, and by mutilation, with severed hands collected as proof that ammunition had been used on people. Villages that could not meet a quota, as wild vines were exhausted and tappers had to go further, were burned. Estimates of the population decline over the period run into the millions, from killing, starvation, flight and disease in a population under sustained duress, and while the numbers are contested the mechanism is not.` },
-            { p: `In the <b>Amazon</b>, during the boom centered on Manaus and Iquitos, the pattern was debt bondage: a tapper was advanced supplies at prices he could not repay from what he produced, and was held by the debt. On the Putumayo, the Peruvian Amazon Company's operations against Indigenous peoples involved documented killing, torture and enslavement on a scale that produced a British parliamentary investigation.` },
-            { p: `The boom ended for a technological reason worth knowing. Seeds taken from Brazil to Kew and then to Southeast Asia established plantation rubber in Malaya and the Dutch East Indies, which was far cheaper to produce than wild tapping, and the Amazon economy collapsed. Plantation rubber had its own coercive labor systems, so this is a relocation rather than a resolution.` },
+            { p: `Cheaper, faster transport and fast news joined markets. In <span class="num">1870</span> wheat cost 57.6 percent more in Liverpool, England, than in Chicago. By <span class="num">1913</span> the gap was only 15.6 percent. Wheat grown in the middle of North America, carried by train to the coast and by steamship across the ocean, fed workers in Britain.` },
+            { p: `Trains and ships carried people, too. <span class="kt">Migration</span> means people moving to live in a new place. About 55 million Europeans moved to the Americas and Australia between 1850 and 1914. Between 1846 and 1940, more than 29 million Indians and more than 19 million Chinese moved to Southeast Asia and the lands around the Indian Ocean, and tens of millions of Chinese and Russians moved into Manchuria, Siberia and Central Asia. Steamships and railways made these journeys faster and cheaper. Why people moved, and what they found, is Unit 6.` },
             { note: {
               kind: 'howknow',
-              label: 'How we know: the reformers used the company&rsquo;s own numbers',
-              html: `The Congo case was exposed largely by people using the state&rsquo;s own paperwork against it. E. D. Morel, working as a shipping clerk in Liverpool, noticed that ships arriving from the Congo carried rubber and ivory of enormous value while ships going out carried mainly guns, ammunition and chains rather than trade goods, and concluded that nothing was being purchased, since no commerce was taking place. Missionary testimony and photographs followed, and Roger Casement&rsquo;s official British consular report of 1904 investigated on the ground; Casement later reported on the Putumayo in the same way. It is a good model of historical argument: a discrepancy in ordinary commercial records, which the company had no motive to falsify because it did not expect anyone to read them that way, supported by direct testimony gathered afterward.`
+              label: 'How we know: prices and passengers',
+              html: `Economic historians compare the price of the same good in two markets: when the gap shrinks, the markets have joined. The wheat figures are from Kevin O'Rourke and Jeffrey Williamson. The migration counts come from passenger lists and port records, gathered by Timothy Hatton and Jeffrey Williamson for Europe and by Adam McKeown for Asia.`
             } }
           ]
         }
       ],
       useThis: {
-        tool: `Displaced ecological cost. <em>The mechanism is that an industrial economy consumes inputs its own territory does not supply, so the mining, clearance, depletion and coerced labor that produce them occur wherever the deposit or the forest is, which means the environmental and human cost of a factory in Manchester is measurable in Peru and the Congo rather than in Lancashire.</em>`,
-        limit: `The extracting regions were not merely passive. Peruvian governments took the guano revenue and borrowed against it as a matter of policy, and Amazonian and Congolese intermediaries participated in the systems, so name the decisions as well as the structure.`,
-        comparison: `Against <em>sugar</em> in Topic 4.5: a European demand for a tropical product, met by a coercive labor system, generating enormous profits in the metropole and destruction at the source. The nineteenth-century version is faster and more technologically driven, and the structure is the same one, which is why this belongs in a continuity argument as much as in a change one.`
+        tool: `Trace the cause to the effect. <em>Say what the technology made possible, then name the trade or the migration it led to, with a number.</em>`,
+        limit: `Technology made journeys cheaper and faster; it does not explain on its own why people chose to move, which is Unit 6's question.`,
+        comparison: `Against section 01: in 1750 heavy goods moved cheaply only by water, and news only as fast as a horse or a ship.`
       },
       terms: [
-        ['Guano', 'Accumulated seabird excrement from Peru\'s coastal islands, the concentrated fertilizer that fed industrial Europe.'],
-        ['Indentured labor', 'Bound contract labor, in Peru substantially Chinese, recruited by deception and worked at high mortality.'],
-        ['War of the Pacific', 'The 1879 conflict over Atacama nitrate territory, a war fought over an industrial raw material.'],
-        ['Congo Free State', 'Leopold II\'s personal possession from 1885, where rubber quotas were enforced by hostage-taking, flogging and mutilation.'],
-        ['Vulcanization', 'Goodyear\'s process making rubber stable across temperatures, which turned a curiosity into an industrial necessity.']
+        ['Interior', 'The middle of a continent, far from the sea.'],
+        ['Telegraph', 'A way of sending messages as pulses of electricity along a wire.'],
+        ['Migration', 'People moving to live in a new place.']
       ]
     }
   ],
 
   closing: {
     heading: 'Building an Answer That Scores',
-    navLabel: 'Building a comparison',
-    intro: `Each card is a full argument: the claim, the specific evidence, and the reason. The first demonstrates the interdependence the success criteria ask for; the last two are the environmental half.`,
+    navLabel: 'The answer',
+    intro: `Each card gathers the evidence for one link of the chain. The College Board asks how technology shaped economic production over time, so the cards follow the causes in order: power, new materials, reach, and its effects.`,
     pairs: [
       {
-        category: 'Interdependence',
-        title: 'Each technology solved a bottleneck the last one created',
-        body: `Deep coal seams flooded, so Newcomen&rsquo;s engine was built to pump them; the engine ran on coal, so more mines opened; moving coal cheaply overland required railways, which the Liverpool and Manchester proved commercially in 1830; heavy locomotives destroyed wrought-iron rails within a few years, which made cheap steel commercially urgent; Bessemer&rsquo;s converter in 1856 burned the carbon out of molten pig iron in minutes using the heat of the burning itself, and the resulting steel made rails, bridges, ships and machinery possible at scale; and railways needed telegraphs to signal whether a single-track section was clear, while telegraph lines used the railway&rsquo;s cleared right of way. That is a chain of causes, not a list of inventions.`
+        category: 'Causation',
+        title: 'Machines unlock fossil fuels',
+        body: `Evidence to sort: energy from muscles, wood, wind and water before 1750; Newcomen's mine pump (1712); Watt's separate condenser (1765, patented 1769), using under a third of the coal; rotary engines (1780s) and mills in towns; Drake's oil well (1859); Otto (1876) and Benz (1886).`
       },
       {
-        category: 'Change',
-        title: '1844 is when information stopped depending on the weather and the sea',
-        body: `Optical signaling was older than this, since Chappe&rsquo;s tower relays crossed France from 1794 in minutes, but they failed at night, in fog and at the coast, so any message crossing water still moved at the speed of a ship and every distant administration delegated authority to compensate for stale information. That is why the Mongol yam and the Roman post differ from each other in degree and from an electrical cable in kind. Morse&rsquo;s Washington to Baltimore line in 1844, the Channel cable in 1851 and the durable transatlantic cable of 1866 broke it. By the 1870s a London merchant knew a Bombay price the same day, which let commodity prices converge worldwide, made futures markets workable, and let an order from London reach a colonial governor in hours, centralizing decisions that distance had previously devolved.`
+        category: 'Developments and Processes',
+        title: 'How much more energy',
+        body: `Evidence to sort: Britain's coal, about 65 million tons (1854) and about 225 million (1900); coal about half the world's energy by about 1900; Jevons (1865): "with coal almost any feat is possible or easy"; 8,000 cars in the United States in 1900.`
       },
       {
-        category: 'Environment',
-        title: 'Smoke was profitable because nobody paid for it',
-        body: `Industrial cities burned coal for power, heat and cooking at once, producing soot, sulfurous smogs and routine respiratory disease, while dye works, tanneries and gasworks turned rivers into industrial sewers. Britain legislated on smoke abatement from mid-century and enforced it weakly, because a factory owner prosecuted for smoke could point at the wages he paid, and the trade-off of jobs against air was resolved in favor of jobs. The producer paid for coal, labor and machinery and not for the atmosphere, so the cost was real and fell on whoever breathed it, which is what an externality is. The peppered moth&rsquo;s dark form spreading through sooted regions is the change registering in a species within decades.`
+        category: 'Developments and Processes',
+        title: 'New methods after 1850',
+        body: `Evidence to sort: the Bessemer process (1856) and US steel (about 69,000 tons in 1870, about 10 million in 1900); Perkin's mauve (1856), BASF (1865) and factory indigo (1897); Pearl Street (1882) and motors under 5 percent of US factory power (1899); interchangeable parts and standard screw threads (1841, 1864).`
       },
       {
-        category: 'Connection',
-        title: 'Guano carries the whole century in one commodity',
-        body: `Industrial cities had to be fed from soils cropped harder than ever, and Europe was short of nitrogen, so from the 1840s Peru exported seabird excrement from rainless Pacific islands on an enormous scale. It was dug in choking ammoniac dust substantially by indentured Chinese laborers, perhaps ninety thousand or more, recruited by deception and worked at a mortality that produced diplomatic complaint. Peru borrowed against the revenue and built railways on guano-backed debt; the deposits ran out; attention shifted to Atacama nitrates, which produced the War of the Pacific in 1879 and Chilean control of the territory; Peru defaulted; and Haber-Bosch nitrogen fixation, demonstrated in 1909 and in industrial production from 1913, made the commodity irrelevant. Resource boom, coerced migrant labor, debt dependency, a war over raw materials, and obsolescence.`
+        category: 'Causation',
+        title: 'Longer reach, more trade and migration',
+        body: `Evidence to sort: the Liverpool and Manchester Railway (1830); Russia's railways (27 km in 1840, over 53,000 in 1900); Promontory Summit (1869); the Trans-Siberian (1891 to 1904); sail 53 days, steam 7 or 8; Suez (1869); the Pleiad (1854); Morse (1844), the Atlantic cable (1866), Bombay (1870); the wheat price gap (57.6 percent in 1870, 15.6 in 1913); 55 million Europeans (1850 to 1914); over 29 million Indians and 19 million Chinese (1846 to 1940). For one, explain the link from the technology to the effect.`
       }
     ]
   }

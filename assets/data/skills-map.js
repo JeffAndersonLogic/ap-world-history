@@ -7656,7 +7656,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
       "kind": "unit",
       "unit": 5,
       "unitTitle": "Revolutions",
-      "title": "Technology of Industrialization",
+      "title": "Technology of the Industrial Age",
       "reading": "unit-5/first-and-10-topic-5-5-technology-of-industrialization.html",
       "terms": [],
       "order": [
@@ -7675,73 +7675,120 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "06",
           "module": "Checkpoint 1",
           "label": "Module 06, Checkpoint 1",
-          "prompt": "Choose two of the following technologies: railroad, telegraph, Bessemer process, electricity. For each, explain one specific mechanism by which it transformed industrial economies, not just \"it was important\" but exactly how it changed production, markets, or coordination. Then explain the interdependence between your two chosen technologies: how did each one require or enable the other? End with a synthesis: what does the interdependence of industrial technologies reveal about how technological change works?",
+          "prompt": "Answer in three steps. (1) Choose ONE machine: Newcomen's steam engine, Watt's steam engine, or the internal combustion engine. Explain step by step how it let people use the energy stored in coal or oil. (2) Give ONE piece of evidence from the lesson that the energy people had grew greatly. (3) Choose ONE new method of the second industrial revolution (steel, chemicals, electricity, or precision machinery) and explain what it let people make or do.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
           "skillFrom": "",
           "terms": [
-            "Stephenson's Rocket",
-            "transcontinental railroad",
-            "Trans-Siberian Railroad",
-            "Morse telegraph",
-            "transatlantic cable",
-            "Bessemer process",
-            "surplus value",
-            "technological interdependence",
-            "national market integration",
-            "steam power"
+            "energy",
+            "fossil fuel",
+            "coal",
+            "oil",
+            "steam engine",
+            "Newcomen",
+            "Watt",
+            "separate condenser",
+            "pump",
+            "mine",
+            "wheels",
+            "rivers",
+            "internal combustion",
+            "Otto",
+            "Benz",
+            "Drake",
+            "kerosene",
+            "65 million",
+            "225 million",
+            "half",
+            "steel",
+            "Bessemer",
+            "chemicals",
+            "dye",
+            "Perkin",
+            "BASF",
+            "electricity",
+            "Edison",
+            "Pearl Street",
+            "motor",
+            "interchangeable parts",
+            "machine tools",
+            "made it possible"
           ],
           "criteria": [
-            "Explain the specific mechanism for each technology, how exactly did it change economic life?",
-            "Explain the interdependence between your two chosen technologies.",
-            "Synthesize: what does technological interdependence reveal about how industrial change worked?"
+            "Explain one machine step by step.",
+            "Give evidence that energy grew.",
+            "Explain one new method and what it made."
           ],
           "learningTargets": [
-            "I can explain how railroads, the telegraph, the Bessemer process, and electricity transformed industrial economies in the 19th century, and analyze the specific mechanisms by which these technologies accelerated industrial production and market integration."
+            "I can explain how machines such as the steam engine and the internal combustion engine let people use the energy stored in coal and oil, and how new methods of making steel, chemicals, electricity, and precision machinery after 1850 changed what factories could make."
           ],
           "successCriteria": [
-            "I can explain how railroads created national markets by lowering transportation costs and connecting interior regions to ports. I can describe the Bessemer process (1856) as a technology that made mass production of steel possible, and explain how cheap steel enabled railroads, bridges, and industrial machinery at scale. I can explain how the telegraph (1844–1860s) enabled real-time commercial coordination across continents. I can give at least two specific examples of how 19th-century technologies were interdependent, one technology enabling another (e.g., steam engines enabling railroads, Bessemer steel enabling railroad track production at scale, railroads enabling the coal industry by transporting coal cheaply)."
+            "I can explain step by step how one machine (Newcomen's or Watt's steam engine, or the internal combustion engine) let people use energy stored in a fossil fuel, give one piece of evidence that the energy available grew (such as Britain's coal output, or coal's share of the world's energy by 1900), and explain what one new method of the second industrial revolution (steel, chemicals, electricity, or precision machinery) let people make."
           ]
         },
         "checkpoint-two-response": {
           "ord": "10",
           "module": "Checkpoint 2",
           "label": "Module 10, Checkpoint 2",
-          "prompt": "Choose one specific example of industrial resource extraction from colonized or semi-colonized regions (options: rubber extraction in the Congo or Amazon; guano extraction in Peru; cotton production in India or the American South; deforestation for railroad construction). Describe the specific labor system used in your chosen example, who did the work, under what conditions, and who benefited from the proceeds. Then explain the connection between this extraction system and industrial technology in Europe or North America: what specific industrial demand drove this extraction? End with a broader claim: what does this example reveal about who bore the environmental and labor costs of industrialization, and who captured its economic benefits?",
+          "prompt": "Explain how railroads, steamships, and the telegraph changed trade or migration between 1830 and 1900, as a chain of causes. (1) Explain what goods and news moved like before these technologies. (2) Choose ONE of the three, and explain what it could do that older ways could not, with one example of a place it reached. (3) Explain how that led to more trade OR more migration, using one number from the lesson. (4) Show where its power or its materials came from: connect it back to coal, steam, or steel.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
           "skillFrom": "",
           "terms": [
-            "Congo rubber extraction",
-            "Force Publique",
-            "guano",
-            "Chincha Islands",
-            "debt peonage",
-            "coercive labor",
-            "deindustrialization",
-            "resource periphery",
-            "industrial core",
-            "environmental transformation"
+            "railroad",
+            "railway",
+            "steamship",
+            "telegraph",
+            "interior",
+            "continent",
+            "Promontory",
+            "1869",
+            "Trans-Siberian",
+            "Bombay",
+            "Suez",
+            "Atlantic cable",
+            "1866",
+            "Morse",
+            "53 days",
+            "7 or 8 days",
+            "minutes",
+            "wheat",
+            "Chicago",
+            "Liverpool",
+            "57.6",
+            "15.6",
+            "price",
+            "trade",
+            "migration",
+            "55 million",
+            "29 million",
+            "19 million",
+            "coal",
+            "steam",
+            "steel",
+            "led to",
+            "made it possible"
           ],
           "criteria": [
-            "Describe the specific labor system, who worked, under what conditions, who benefited.",
-            "Connect the extraction system to specific industrial demand in Europe or North America.",
-            "Make a supported claim: who bore the costs of industrialization, and who captured its benefits?"
+            "Describe how goods and news moved before.",
+            "Explain what one technology made possible, with a place.",
+            "Explain how it led to more trade or migration, with a number.",
+            "Connect it back to coal, steam, or steel."
           ],
           "learningTargets": [
-            "I can explain the environmental and social consequences of industrial technology, including coal pollution and resource extraction, particularly the extraction of rubber, guano, and timber from colonized regions, and analyze how industrial demand reshaped global environments and labor systems."
+            "I can explain how railroads, steamships, and the telegraph reached the interiors of continents, and how that led to more trade and more migration."
           ],
           "successCriteria": [
-            "I can describe the environmental consequences of industrialization, including coal pollution in British industrial cities and large-scale deforestation. I can explain how industrial demand for rubber (for machine belts, tires, insulation) drove resource extraction in the Congo (Belgian) and Amazon (Brazilian/Peruvian), using coercive labor systems. I can explain how guano (seabird excrement used as fertilizer) became an industrial-scale resource extracted from Peru's Pacific coast, sustaining European agriculture that fed industrial workers. I can make the connection between industrial technology in Europe and environmental and labor transformation in colonized or semi-colonized regions."
+            "I can explain what railroads, steamships, or the telegraph could do that older ways could not, give one example of an interior region they reached (such as the railroad across the United States in 1869 or the Trans-Siberian Railway), and explain how that led to more trade or more migration, using one number from the lesson."
           ]
         },
         "evidence-response": {
           "ord": "07",
           "module": "Evidence Lab",
           "label": "Module 07, Evidence Lab",
-          "prompt": "Make a claim about how new technologies changed production, transportation, or communication in the Industrial Age. Use evidence from at least two sectors and explain the mechanism of change.",
+          "prompt": "Make a claim about how one technology changed what the world could make or how far its goods and people could go between 1750 and 1900. Support it with evidence from at least two cards.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -7755,7 +7802,39 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "02",
           "module": "First & 10, Question 1",
           "label": "Module 02, First & 10, Question 1",
-          "prompt": "Explain how railroads accelerated industrialization. Identify two specific mechanisms, two ways that railroads caused other aspects of industrialization to grow faster. For each, explain the chain of cause and effect: what exactly did railroads do, and how did that specific thing cause what industrial change?",
+          "prompt": "Using Section 2, explain step by step how Watt's steam engine changed where factories could be built. Say what the problem was, what the engine did, and what that made possible.",
+          "skill": "Developments and Processes",
+          "skills": [
+            "Developments and Processes"
+          ],
+          "skillRaw": "Developments and Processes",
+          "skillFrom": "reading q-skill badge",
+          "terms": [],
+          "criteria": [],
+          "learningTargets": [],
+          "successCriteria": []
+        },
+        "first10-q2": {
+          "ord": "02",
+          "module": "First & 10, Question 2",
+          "label": "Module 02, First & 10, Question 2",
+          "prompt": "Using Section 4, choose ONE of the four new methods of the second industrial revolution: steel, chemicals, electricity, or precision machinery. Explain what was new about it and what it let people make or do. Use one detail from the reading.",
+          "skill": "Developments and Processes",
+          "skills": [
+            "Developments and Processes"
+          ],
+          "skillRaw": "Developments and Processes",
+          "skillFrom": "reading q-skill badge",
+          "terms": [],
+          "criteria": [],
+          "learningTargets": [],
+          "successCriteria": []
+        },
+        "first10-q3": {
+          "ord": "02",
+          "module": "First & 10, Question 3",
+          "label": "Module 02, First & 10, Question 3",
+          "prompt": "Using Sections 5 and 6, explain how ONE of these, railroads, steamships, or the telegraph, led to more trade OR more migration. Give a detail from the reading.",
           "skill": "Causation",
           "skills": [
             "Causation"
@@ -7767,43 +7846,11 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "learningTargets": [],
           "successCriteria": []
         },
-        "first10-q2": {
-          "ord": "02",
-          "module": "First & 10, Question 2",
-          "label": "Module 02, First & 10, Question 2",
-          "prompt": "Compare the railroad and the telegraph as industrial technologies. Identify one meaningful similarity in their effects and one meaningful difference. Then explain: what does comparing these two technologies reveal about how industrial technology changed the relationship between people and distance?",
-          "skill": "Comparison",
-          "skills": [
-            "Comparison"
-          ],
-          "skillRaw": "Comparison",
-          "skillFrom": "reading q-skill badge",
-          "terms": [],
-          "criteria": [],
-          "learningTargets": [],
-          "successCriteria": []
-        },
-        "first10-q3": {
-          "ord": "02",
-          "module": "First & 10, Question 3",
-          "label": "Module 02, First & 10, Question 3",
-          "prompt": "Write a one-sentence claim answering this question: Was industrial technology in the 19th century primarily a liberating force (expanding human capabilities and connections) or a destructive force (exploiting labor and environments)? Then provide two specific pieces of evidence that support your claim, and acknowledge one piece of counterevidence.",
-          "skill": "Argumentation",
-          "skills": [
-            "Argumentation"
-          ],
-          "skillRaw": "Argumentation",
-          "skillFrom": "reading q-skill badge",
-          "terms": [],
-          "criteria": [],
-          "learningTargets": [],
-          "successCriteria": []
-        },
         "map-check-response": {
           "ord": "01",
           "module": "Map & Geography Check",
           "label": "Module 01, Map & Geography Check",
-          "prompt": "Using the map and your knowledge, explain the relationship between industrial technology in Europe and North America and resource extraction in Asia, Africa, and Latin America. What specific technologies drove demand for specific resources? What labor systems were used to extract these resources? What does this pattern reveal about who benefited from industrialization and who bore its costs?",
+          "prompt": "Using the map, choose ONE of the four numbered arrows. Explain what it carried (goods, people, or news) and how it helped reach a place that was hard to reach before.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -7817,7 +7864,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "08",
           "module": "Primary Source",
           "label": "Module 08, Primary Source",
-          "prompt": "What specific labor conditions does this source describe for Chinese workers on the transcontinental railroad? How does the source use the comparison between Chinese and white workers' wages to make its argument? The source describes the 1867 strike and the company's response, cutting off the food supply. What does this reveal about the power relationship between the Central Pacific and its Chinese workforce? How does this compare to other coercive labor systems you have studied? The source notes that Chinese workers 'built half of the railroad' but do not appear in the commemorative photograph. What does this detail reveal about how 19th-century industrialization recognized (or failed to recognize) the contributions of non-white labor? How does this connect to the broader pattern of industrial benefits and burdens being distributed unequally?",
+          "prompt": "In the first paragraph, Jevons says coal is \"the source at once of mechanical motion and of chemical change.\" Using the lesson, give one example of each: a machine that coal moved, and a new product made from coal. In the second paragraph, Jevons says coal \"commands\" both steam and iron. Explain what he means, and use the lesson to say what steam and iron (and later steel) made possible. Jevons wrote this to warn readers that Britain's coal would not last forever. How might that purpose shape the way he describes coal? Then use the last paragraph to explain what he thinks life was like before coal.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -7831,12 +7878,12 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "05",
           "module": "AP Skill Builder",
           "label": "Module 05, AP Skill Builder",
-          "prompt": "In 3–4 sentences, write a causation argument about how one industrial technology (railroad, telegraph, or Bessemer process) caused changes in at least two other aspects of industrial society or the global economy. Be specific about the mechanism, explain exactly how the cause produced the effect, not just that it did. End with a synthesis statement about what this causal chain reveals about the nature of technological change during industrialization.",
-          "skill": "Causation",
+          "prompt": "Now do it yourself, twice. First, choose ONE technology that gave more power or made new materials: Watt's steam engine, the Bessemer process, or electric power. Explain it with the frame, using one detail from the lesson. Second, choose ONE technology that gave longer reach: the railroad, the steamship, or the telegraph. Explain it with the frame, and make your \"what followed\" step about trade or migration.",
+          "skill": "Developments and Processes",
           "skills": [
-            "Causation"
+            "Developments and Processes"
           ],
-          "skillRaw": "Causation practice",
+          "skillRaw": "Developments and processes practice",
           "skillFrom": "skillBuilder.label",
           "terms": [],
           "criteria": [],

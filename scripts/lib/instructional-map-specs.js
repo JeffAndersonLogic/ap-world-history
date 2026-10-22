@@ -432,23 +432,32 @@ module.exports = [
   {
     id: 'topic-5-5',
     code: 'Topic 5.5',
-    title: 'The Industrial Resource Network, c. 1850-1900',
-    subtitle: 'Topic 5.5 · Technology of industrialization',
+    title: 'Power and Reach, 1830 to 1904',
+    subtitle: 'Topic 5.5 · Technology of the Industrial Age',
     highlights: [
-      { zone: 'britain', label: 'FACTORY CORE', tone: 'gold', legend: 'Industrial core: coal, steel, and steam' },
-      { zone: 'westernEurope', label: 'WESTERN EUROPE', tone: 'bronze', legend: 'Steel, chemicals, and rail networks' },
-      { zone: 'southAsia', label: 'RAW MATERIALS', tone: 'sand', legend: 'Cotton, jute, and indigo' },
-      { zone: 'centralAfrica', label: 'RAW MATERIALS', tone: 'sage', legend: 'Rubber, palm oil, and copper' },
-      { zone: 'southAmerica', label: 'RAW MATERIALS', tone: 'plum', legend: 'Guano, nitrates, rubber, and beef' }
+      { zone: 'britain', label: 'BRITAIN', labelSide: 'left', tone: 'gold', legend: 'Coal: about 225 million tons mined in 1900' },
+      { zone: [-78.5, 41, 4, 2.4], label: 'PENNSYLVANIA', labelSide: 'left', tone: 'bronze', legend: 'Coal, and oil from 1859' }
     ],
     flows: [
-      { from: 'southAsia', to: 'britain', label: 'raw materials in', bow: 0.2 },
-      { from: 'centralAfrica', to: 'westernEurope', label: 'rubber and oils in', bow: -0.18 },
-      { from: 'britain', to: 'southAmerica', label: 'manufactures and rail out', bow: 0.26 }
+      { from: [-95.9, 41.3], to: [-121.5, 38.6], label: 'Across the US, 1869', bow: -0.25 },
+      { from: [37.6, 55.8], to: [131.9, 43.1], label: 'Trans-Siberian, 1891 to 1904', bow: -0.12 },
+      { from: [-10.3, 51.9], to: [-53.4, 47.9], label: 'Atlantic cable, 1866', bow: 0.18 },
+      { from: [-1, 50.8], to: [72.8, 19], label: 'By steamship through Suez, from 1869', bow: 0.22 }
     ],
     points: [
-      { at: [32, 30], label: 'Suez Canal, 1869', note: 'steamship shortcut' }
-    ]
+      { at: [-112.5, 41.6], label: 'Promontory Summit' },
+      { at: [-79.7, 41.6], label: 'Titusville' },
+      { at: [72.8, 19], label: 'Bombay', note: 'first train, 1853' }
+    ],
+    legend: [
+      { kind: 'area', tone: 'gold', text: 'Britain: about 225 million tons of coal in 1900' },
+      { kind: 'area', tone: 'bronze', text: 'Pennsylvania: coal, and oil from 1859' },
+      { kind: 'flow', step: 1, text: 'Railroad across the United States, 1869' },
+      { kind: 'flow', step: 2, text: 'Trans-Siberian Railway, 1891 to 1904' },
+      { kind: 'flow', step: 3, text: 'Telegraph cable across the Atlantic, 1866' },
+      { kind: 'flow', step: 4, text: 'Steamships through the Suez Canal, from 1869' }
+    ],
+    note: 'Each arrow joins the two ends of a line, cable or voyage; it is not the exact path. Regions are approximate.'
   },
   {
     id: 'topic-5-6',

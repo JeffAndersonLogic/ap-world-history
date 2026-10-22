@@ -29,34 +29,34 @@ window.BEHISTORICAL_LESSON = {
     course: "AP WORLD HISTORY",
     unit: "Unit 5: Revolutions",
     topic: "Topic 5.5",
-    title: "Technology of Industrialization",
-    subtitle: "How the railroad, telegraph, Bessemer process, and other technologies transformed economic life — and how industrial demand reshaped environments and extracted resources from colonized regions",
+    title: "Technology of the Industrial Age",
+    subtitle: "Machines unlocked the energy stored in coal and then oil. That energy, with new ways of making steel, chemicals, electricity, and precise machines, let the world make far more than ever before. Railroads, steamships, and the telegraph carried goods, people, and news into the interiors of continents, and trade and migration grew.",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 
   learningTargets: [
     {
-      target: "I can explain how railroads, the telegraph, the Bessemer process, and electricity transformed industrial economies in the 19th century, and analyze the specific mechanisms by which these technologies accelerated industrial production and market integration.",
-      kc: "KC-5.1.I.E; KC-5.1.IV",
+      target: "I can explain how machines such as the steam engine and the internal combustion engine let people use the energy stored in coal and oil, and how new methods of making steel, chemicals, electricity, and precision machinery after 1850 changed what factories could make.",
+      kc: "KC-5.1.I.B; KC-5.1.I.E",
       theme: "Technology and Innovation"
     },
     {
-      target: "I can explain the environmental and social consequences of industrial technology, including coal pollution and resource extraction, particularly the extraction of rubber, guano, and timber from colonized regions, and analyze how industrial demand reshaped global environments and labor systems.",
-      kc: "KC-5.1.I.B",
+      target: "I can explain how railroads, steamships, and the telegraph reached the interiors of continents, and how that led to more trade and more migration.",
+      kc: "KC-5.1.IV",
       theme: "Technology and Innovation"
     }
   ],
 
   successCriteria: [
     {
-      criteria: "I can explain how railroads created national markets by lowering transportation costs and connecting interior regions to ports. I can describe the Bessemer process (1856) as a technology that made mass production of steel possible, and explain how cheap steel enabled railroads, bridges, and industrial machinery at scale. I can explain how the telegraph (1844–1860s) enabled real-time commercial coordination across continents. I can give at least two specific examples of how 19th-century technologies were interdependent, one technology enabling another (e.g., steam engines enabling railroads, Bessemer steel enabling railroad track production at scale, railroads enabling the coal industry by transporting coal cheaply).",
-      kc: "KC-5.1.I.E; KC-5.1.IV",
+      criteria: "I can explain step by step how one machine (Newcomen's or Watt's steam engine, or the internal combustion engine) let people use energy stored in a fossil fuel, give one piece of evidence that the energy available grew (such as Britain's coal output, or coal's share of the world's energy by 1900), and explain what one new method of the second industrial revolution (steel, chemicals, electricity, or precision machinery) let people make.",
+      kc: "KC-5.1.I.B; KC-5.1.I.E",
       theme: "Technology and Innovation"
     },
     {
-      criteria: "I can describe the environmental consequences of industrialization, including coal pollution in British industrial cities and large-scale deforestation. I can explain how industrial demand for rubber (for machine belts, tires, insulation) drove resource extraction in the Congo (Belgian) and Amazon (Brazilian/Peruvian), using coercive labor systems. I can explain how guano (seabird excrement used as fertilizer) became an industrial-scale resource extracted from Peru's Pacific coast, sustaining European agriculture that fed industrial workers. I can make the connection between industrial technology in Europe and environmental and labor transformation in colonized or semi-colonized regions.",
-      kc: "KC-5.1.I.B",
+      criteria: "I can explain what railroads, steamships, or the telegraph could do that older ways could not, give one example of an interior region they reached (such as the railroad across the United States in 1869 or the Trans-Siberian Railway), and explain how that led to more trade or more migration, using one number from the lesson.",
+      kc: "KC-5.1.IV",
       theme: "Technology and Innovation"
     }
   ],
@@ -89,120 +89,113 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: "Iron Roads and Global Resources: The Technologies of Industrialization",
-    intro: "The Industrial Revolution was not driven by one technology but by a cascade of interdependent innovations. Understanding how these technologies worked together, and how they transformed both producing and resource-supplying regions of the world, is the analytical core of Topic 5.5. The railroad was the era's signature technology, but it depended on steam power, coal, iron and then steel, the Bessemer process, and the railroad workers (many of them migrants or the colonized) who built it. And the industrial system as a whole depended on raw materials, rubber, guano, timber, cotton, extracted from regions that experienced industrialization's consequences without its benefits.",
+    title: "More Power, Longer Reach",
+    intro: "Use these cards to follow the chain: how machines unlocked the energy stored in coal and oil, what new methods that energy made possible, and how railroads, steamships, and the telegraph reached the interiors of continents.",
     videos: [],
     segments: [
       {
-        title: "The Railroad: Market Integration and Industrial Acceleration",
+        title: "More Power: Machines Unlock Fossil Fuels",
         bullets: [
-          "**The railroad is the central technology of the Industrial Revolution**, not because it was the first steam-powered innovation (Watt's steam engine preceded it by 50 years) but because it integrated markets at continental scale. Before railroads, moving goods overland was expensive, slow, and limited by road quality and animal power. A horse-drawn wagon moved perhaps two tons at 4 mph; a railroad locomotive moved several hundred tons at 30–40 mph. This was not a marginal improvement, it was a transformation in the economics of distance.",
-          "**Stephenson's Rocket** (1829): The first successful steam locomotive, which reached 36 mph in the Rainhill Trials, faster than any land vehicle in human history to that point. The Liverpool and Manchester Railway (1830) was the first intercity passenger railroad. By the 1840s, railroad mania had gripped Britain: Parliament authorized 8,000 miles of railroad in 1844–1846 alone. By 1850, Britain had 6,000 miles of track; by 1870, the British railroad network was essentially complete.",
-          "**Railroads created national markets.** Before railroads, prices varied dramatically by region, coal was cheap near coal mines and expensive 50 miles away; grain was cheap in agricultural regions and expensive in cities. Railroads eliminated these price gaps by making long-distance transport economical. A factory in Manchester could now sell its cloth in Birmingham, London, and Glasgow at competitive prices. A farm in the American Midwest could now send wheat to New York in days. National markets replaced regional ones, and national markets meant industrial-scale production became profitable.",
-          "**The transcontinental railroad** (United States, 1869): The Union Pacific (building west from Omaha) and Central Pacific (building east from Sacramento) met at Promontory Summit, Utah, in May 1869. The Central Pacific was built largely by approximately 10,000 Chinese immigrant laborers, who were paid less than white workers, given the most dangerous work (blasting through the Sierra Nevada with nitroglycerin), and excluded from the commemorative photograph at the golden spike ceremony. The transcontinental railroad integrated the American continental market and enabled the agricultural settlement of the Great Plains, which itself displaced Native American nations and their bison-based economies.",
-          "**The Trans-Siberian Railroad** (Russia, 1891–1916): Stretching 5,772 miles from Moscow to Vladivostok, this was the longest railroad in the world when completed. Built by Russian state investment, using Chinese and Korean labor in addition to Russian, the Trans-Siberian Railroad allowed Russia to project military power to the Pacific (including to fight Japan in 1904–1905), opened Siberian land to agricultural settlement, and integrated the Russian empire's vast interior into the market economy. Like the American transcontinental, it was simultaneously a feat of engineering, a national integration project, and a colonial project that displaced indigenous Siberian peoples.",
-          "**Railroads drove industrial demand.** The railroad industry itself was the largest consumer of iron and steel in the 19th century. In the 1840s–1860s, building 10,000 miles of railroad required millions of tons of iron rails, which required more iron foundries, more coal mines, more blast furnaces. The railroad was the flywheel of the industrial economy: it required iron, coal, and engineering on a scale that pushed every related industry to expand. Then cheap transportation made it economical to ship those industrial products to distant markets, which justified further investment in production capacity."
+          "**Before:** in 1750 almost all the energy people used came from muscles, wood, wind, and water. Each had a limit: a water wheel works only beside a fast river, and a forest takes decades to grow back. Until the middle of the 1800s, wood and other things that grow were the world's main source of energy.",
+          "**Fossil fuels:** coal and oil are the remains of plants and tiny sea creatures, buried for millions of years, with energy stored inside them.",
+          "**A pump:** in 1712 Thomas Newcomen set up a steam engine near Dudley Castle, in the English Midlands, to pump water out of a coal mine. It burned a great deal of coal.",
+          "**Watt:** in 1765 James Watt, an instrument maker at the University of Glasgow, found that cooling the steam in a separate chamber kept the cylinder hot; he patented it in 1769. His engines used less than a third of the coal of a Newcomen engine. In the 1780s Watt and Matthew Boulton built engines that turned wheels, so mills could run on coal instead of rivers.",
+          "**How much more:** Britain mined about 65 million tons of coal in 1854 and about 225 million tons in 1900. By about 1900, coal supplied about half of all the energy used in the world.",
+          "**Oil and a new engine:** in 1859 Edwin Drake struck oil at Titusville, Pennsylvania; for the rest of the century most oil became kerosene, a lamp fuel. The internal combustion engine burns its fuel inside the engine: Nikolaus Otto built a four-stroke engine in 1876, and Carl Benz patented a car in 1886. But the United States had only about 8,000 cars in 1900. The big changes came later."
         ],
         image: {
-          title: "Railroads and market integration",
-          caption: "BeHistorical topic artwork for this card. Rail collapsed the cost of moving heavy goods overland, which changed what was worth producing and where.",
-          url: "",
-          sourceUrl: ""
+          title: "A Newcomen Engine, 1740s",
+          caption: "An engraving from the 1740s of a Newcomen steam engine: a fire under the boiler at the bottom, a cylinder above it, a rocking beam, and pump rods going down into the mine at the left. Wellcome Collection.",
+          url: "../assets/images/topics/5-5/newcomen-engine-engraving-1740s.jpg",
+          sourceUrl: "https://wellcomecollection.org/works/gwv62367"
         }
       },
       {
-        title: "Beyond Railroads: Telegraph, Steel, and Electricity",
+        title: "New Materials: The Second Industrial Revolution",
         bullets: [
-          "**The telegraph** was the first technology to separate communication from transportation. Before the telegraph, information traveled at the speed of the fastest horse or ship. A telegraph message traveled at the speed of electricity, effectively instantaneous over continental distances. Samuel Morse demonstrated the electromagnetic telegraph in 1844; within a decade, telegraph lines stretched across the United States, Europe, and India. The transatlantic telegraph cable (1866) connected Europe and North America in real time for the first time in history. The commercial applications were immediate: commodity prices, shipping schedules, currency exchange rates, and news could now be coordinated in real time across continents. The New York Stock Exchange and the Chicago Board of Trade both depended on the telegraph to function at scale.",
-          "**The Bessemer process** (1856) was the single most important metallurgical innovation of the 19th century. Before Bessemer, making steel, the stronger, more flexible alloy of iron, was slow and expensive. The Bessemer converter blasted cold air through molten iron, burning out impurities in 15–20 minutes and producing steel that previously would have taken hours or days to produce. This reduced the cost of steel by 80% between 1860 and 1880. Cheap steel meant: railroad rails that lasted longer than iron; bridges strong enough to span wide rivers (Brooklyn Bridge, 1883); steel-frame skyscrapers (Chicago, 1880s); high-pressure steam boilers for more powerful engines; armor plate for naval warships. The Bessemer process transformed steel from a specialty material into the structural material of the industrial age.",
-          "**Electricity** arrived as an industrial force in the 1870s–1880s. Thomas Edison's electric light bulb (1879) and his Pearl Street Station (1882), the first commercial electric power station, in New York City, began replacing gas lighting. But electric light was less important than **electric motors**: factories no longer needed a central steam engine powering all machinery through elaborate belt-and-shaft systems. Electric motors allowed machines to be placed wherever needed and powered independently. The AC/DC conflict between Nikola Tesla (alternating current, backing Westinghouse) and Thomas Edison (direct current) was resolved in favor of AC by the early 1890s because AC power could be transmitted over longer distances without loss. By 1900, electric streetcars were transforming city transportation; electric power was transforming factory production; the telephone (1876) was transforming business communication.",
-          "**Technological interdependence** is the key analytical concept for Topic 5.5. These technologies did not develop independently, they required each other. Steam engines enabled railroads; railroads required iron and then steel; cheap steel (Bessemer) enabled railroad expansion at continental scale; railroads moved coal cheaply, making coal power economical; coal powered the factories producing steel and the locomotives running on steel rails. Electricity depended on copper wire (extracted from mines, many in colonized regions), steam turbines to generate it, and steel infrastructure to transmit it. The industrial system was a web of interdependent technologies, each enabling others, and all of them depending on raw materials extracted from mines and fields across the globe."
+          "**After 1850:** with so much energy to use, people found new ways to make things. Historians call this the second industrial revolution. It brought new methods in four areas.",
+          "**Steel:** in 1856 Henry Bessemer showed that blowing air through melted iron burned out the impurities and made steel quickly. The United States made about 69,000 tons of steel in 1870 and about 10 million tons in 1900. Steel became rails, bridges, ships, and machines.",
+          "**Chemicals:** in 1856 William Perkin, an eighteen-year-old chemistry student in London, made a purple dye, mauve, from chemicals that came from coal tar. German companies such as BASF, founded in 1865, built laboratories to invent new dyes, and in 1897 BASF began selling indigo made in a factory. By 1914 Germany made most of the world's dyes.",
+          "**Electricity:** in 1882 Thomas Edison's Pearl Street Station in New York began selling electric power, lighting about 400 lamps. Electric motors let each machine run on its own motor. But in 1899, electric motors gave less than 5 percent of the power in American factories.",
+          "**Precision machinery:** machine tools cut metal parts so exactly that one part fit any copy of the same machine: interchangeable parts. Standard screw threads, set by Joseph Whitworth in Britain in 1841 and William Sellers in the United States in 1864, helped them spread."
         ],
         image: {
-          title: "Telegraph, steel, and electricity",
-          caption: "BeHistorical topic artwork for this card. The second industrial revolution ran on cheap steel, instant communication, and electrical power.",
-          url: "",
-          sourceUrl: ""
+          title: "A Bessemer Converter",
+          caption: "An engraved diagram of a Bessemer converter: A, the outside, an egg-shaped iron vessel that tipped on a pivot to pour; B, the vessel cut open to show its thick lining and the holes in the bottom where air was blown in. A diagram, not a picture of a real works.",
+          url: "../assets/images/commons/bessemer-converter-440883.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Bessemer_converter.jpg"
         }
       },
       {
-        title: "Environmental and Social Costs: Rubber, Guano, Coal, and the Global Reach of Industry",
+        title: "Longer Reach: Railroads, Steamships, and the Telegraph",
         bullets: [
-          "**Coal pollution** was the most immediate environmental consequence of industrialization. Industrial cities in Britain, Manchester, Birmingham, Sheffield, Leeds, burned enormous quantities of coal for factory steam engines, home heating, and gas lighting. The resulting air pollution was unprecedented in human history. Thick coal smoke ('London Particular,' 'pea soup fog') reduced visibility, coated buildings in black soot, and contributed to chronic respiratory disease. Life expectancy in Manchester in the 1840s was 28–29 years, lower than in many pre-industrial societies. The pollution was understood at the time; it was largely accepted as the cost of industrial production.",
-          "**The rubber boom** is one of the starkest cases of industrial demand driving colonial violence. Natural rubber, from the sap of Hevea brasiliensis trees, was essential for industrial machinery: machine belts, gaskets, waterproofing, and (after Charles Goodyear's vulcanization process, 1844) pneumatic tires. Demand for rubber drove two simultaneous booms. In the **Amazon basin**, rubber tappers (often debt-bonded Brazilian and indigenous workers) collected rubber in dangerous jungle conditions; Manaus, Brazil, became briefly one of the wealthiest cities in the world. In the **Congo Free State** (King Leopold II of Belgium's personal colony, not a Belgian government colony), a forced labor system required every man in rubber-producing territories to deliver a quota of raw rubber, enforced by the Force Publique militia, which mutilated or killed those who failed to meet their quotas. The Congo rubber regime killed an estimated 1–10 million people. When synthetic rubber was developed in the early 20th century, the Congo rubber system collapsed, but not before producing one of the most documented cases of colonial violence in history.",
-          "**Guano** (seabird and bat excrement, rich in nitrogen and phosphorus) was the primary fertilizer of the 19th century before synthetic fertilizers. The Chincha Islands off Peru's Pacific coast were covered with deposits up to 150 feet deep, the accumulated excrement of millennia of seabird nesting. Beginning in the 1840s, Peru began exporting guano to Britain and the United States in enormous quantities. The work of extracting guano was done largely by **Chinese contract laborers** (enganchados) and Peruvian workers under conditions resembling slavery: workers were often illiterate, could not speak Spanish, were locked into debt, and faced brutal treatment for failure to meet quotas. The guano trade made Peru briefly wealthy (the Guano Era), funded a Peruvian government debt binge, and collapsed in the 1870s when the deposits ran low, leaving Peru with a debt crisis and a War of the Pacific (1879–1884) over nitrate deposits in neighboring Bolivia and Chile.",
-          "**Deforestation and land transformation** followed industrial demand globally. Railroads required enormous quantities of timber for railroad ties (sleepers), a single mile of track required approximately 2,500–3,000 wooden ties, replaced every 5–10 years. American and European forests were stripped for railroad construction. In colonial regions, deforestation served agricultural conversion: forests cleared for cotton in India, sugar in the Caribbean and Brazil, coffee in Latin America and Southeast Asia, rubber plantations in Southeast Asia (replacing natural rubber extraction). The scale of environmental transformation in colonized regions was often far greater than in industrializing countries.",
-          "**The key analytical argument for Topic 5.5**: Industrial technologies transformed both producing regions (by reorganizing factory labor, creating pollution, building cities) and resource-supplying regions (by driving extraction of rubber, guano, cotton, coal, and copper through labor systems ranging from wage labor to debt peonage to forced labor). Understanding industrialization requires understanding both halves of this system: the industrial core and the resource periphery are one system, not two separate stories."
+          "**Railroads:** the Liverpool and Manchester Railway, opened in England in 1830, was the world's first railway between two cities, with trains pulled by steam locomotives. Russia had 27 kilometers of railway in 1840 and more than 53,000 in 1900. India's first passenger train ran from Bombay to Thane in 1853. The first railroad across the United States was finished at Promontory Summit, Utah, in 1869. Russia began the Trans-Siberian Railway in 1891, and by 1904 trains could cross to the Pacific.",
+          "**Steamships:** a sailing ship from Norway to America took about 53 days on average; by the 1870s the fastest steamships crossed the Atlantic in about 7 or 8 days. The Suez Canal, opened in 1869, could be used only by steamships. In 1854 the steamer Pleiad went far up the Niger and Benue rivers in West Africa, and none of its crew died, because they took quinine against malaria.",
+          "**The telegraph:** in 1844 Samuel Morse sent \"What hath God wrought?\" by wire from Washington to Baltimore. A cable under the Atlantic worked lastingly from 1866, and one reached Bombay in 1870. News that once moved as fast as a ship now moved in minutes.",
+          "**More trade:** in 1870 wheat cost 57.6 percent more in Liverpool, England, than in Chicago; by 1913 the gap was 15.6 percent. Wheat from the middle of North America, carried by train and steamship, fed workers in Britain.",
+          "**More migration:** about 55 million Europeans moved to the Americas and Australia between 1850 and 1914. Between 1846 and 1940, more than 29 million Indians and more than 19 million Chinese moved to Southeast Asia and the lands around the Indian Ocean. Steamships and railways made these journeys faster and cheaper. Why people moved is Unit 6."
         ],
         image: {
-          title: "Rubber tapping",
-          caption: "Industrial demand reached deep into tropical forests. Rubber, guano, and coal show the environmental and human costs of industrial supply chains.",
-          url: "../assets/images/commons/rubber-tapping-98c7aa.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Rubber_tapping.jpg"
+          title: "Promontory Summit, Utah, 10 May 1869",
+          caption: "A photograph taken from the top of a locomotive at Promontory Summit, Utah, on 10 May 1869, the day the two halves of the first railroad across the United States met. Crowds line the track, with tents behind them and telegraph poles in the distance. Library of Congress.",
+          url: "../assets/images/topics/5-5/promontory-summit-1869.jpg",
+          sourceUrl: "https://www.loc.gov/pictures/item/2004679791/"
         }
       }
     ]
   },
 
   map: {
-    title: "The Industrial World's Resource Network, c. 1850–1900",
+    title: "Power and Reach, 1830 to 1904",
     url: "../assets/images/instructional-maps/topic-5-5.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-5-5.svg",
-    caption: "By c. 1850–1900, global trade networks were reorganized around industrial demand. Steam-powered ocean liners and submarine telegraph cables connected industrial centers in Britain, Europe, and North America to resource-extraction zones in Asia, Africa, and Latin America. Raw materials flowed toward industrial centers; manufactured goods and capital flowed outward.",
-    intro: "Examine the global geography of industrial-era resource extraction. Identify the locations of major industrial resource flows: cotton from India, the American South, and Egypt; rubber from the Congo and Amazon; guano from Peru; coal from British, German, and American mines; copper from Chile and American Southwest. Notice how these flows connect colonized or semi-colonized peripheries to industrial cores.",
-    prompt: "Using the map and your knowledge, explain the relationship between industrial technology in Europe and North America and resource extraction in Asia, Africa, and Latin America. What specific technologies drove demand for specific resources? What labor systems were used to extract these resources? What does this pattern reveal about who benefited from industrialization and who bore its costs?"
+    caption: "A BeHistorical map of two places this lesson names for coal and oil, and of four lines that reached across continents and oceans: a railroad, a railway, a telegraph cable, and a steamship voyage.",
+    intro: "Find Britain and Pennsylvania first: where coal, and later oil, came from. Then follow the four numbered arrows. Each one joins the two ends of a railroad, a cable, or a voyage.",
+    prompt: "Using the map, choose ONE of the four numbered arrows. Explain what it carried (goods, people, or news) and how it helped reach a place that was hard to reach before."
   },
 
   deepReading: {
-    title: "The Machines That Needed Each Other",
-    desc: "A textbook-depth companion writing the technologies as a chain of bottlenecks rather than a list, from flooded mines to Bessemer steel to the telegraph, and then the environmental half: the smoke where the factories were, and the guano, rubber and coerced labor that produced the raw materials somewhere else. Optional, and useful when a checkpoint asks how one technology enabled another.",
+    title: "More Power, Longer Reach",
+    desc: "A longer, optional chapter on the same story: how the steam engine went from a mine pump to the power of factories, how much more energy coal and then oil gave, what the second industrial revolution made, and how railroads, steamships, and the telegraph reached the interiors of continents and set off more trade and migration.",
     url: "deep-reading-topic-5-5-technology-of-industrialization.html"
   },
 
   first10: {
-    title: 'First & 10: The Iron Road',
+    title: "First & 10: More Power, Longer Reach",
     embedUrl: 'first-and-10-topic-5-5-technology-of-industrialization-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 5.5 lesson path.'
+    note: 'Read the First & 10 story, answer the three questions, then return to the 5.5 lesson path.'
   },
 
   evidenceLab: {
-    title: "Evidence Lab: Industrial Technology and Its Consequences",
-    intro: "Use the evidence below to analyze the technologies of industrialization and their global consequences. Strong AP causation arguments explain the mechanism, not just 'the railroad caused X' but specifically how and why the railroad caused X.",
-    prompt: "Choose one piece of evidence. Explain what it reveals about how industrial technology transformed either industrial economies or resource-supplying regions. Then connect your evidence to the broader argument: how did industrial demand create a global system connecting technological innovation in some regions to environmental and labor transformation in others?",
-    items: [
-      { title: "Andrew Carnegie on the Bessemer Process (c. 1870s)", detail: "American steel magnate Andrew Carnegie described visiting a Bessemer converter for the first time: 'The sight was one never to be forgotten. The steel shot forth in a shower of sparks and fell in a stream of liquid fire. We had found the answer to our question, not wrought iron, not cast iron, but steel. Steel was to be the material of the age.' Carnegie immediately invested in Bessemer steel production and by 1900 controlled one-quarter of American steel output. Analyze: what specific properties of Bessemer steel made it transformative for industrial production? Why did Carnegie understand immediately that 'steel was to be the material of the age'? How did the Bessemer process lower the cost barrier that had previously limited steel to specialized uses?" },
-      { title: "Report of the Peruvian Guano Commission (c. 1854)", detail: "A Peruvian government commission reported on labor conditions in the Chincha Islands guano works: 'The Chinese workers are transported from Canton under contracts they cannot read, to work they did not understand would require them to remain on the islands without possibility of departure. They work in conditions of extreme heat, surrounded by dust that destroys the lungs, and are disciplined by supervisors who treat disobedience as grounds for physical punishment. Many have attempted to escape by swimming; many have not returned. The islands produce enormous wealth; the workers who extract it receive almost none of it.' Analyze: how does this report illustrate the relationship between industrial demand (for fertilizer to feed European agricultural workers) and labor exploitation in resource-supplying regions? What does the phrase 'the islands produce enormous wealth; the workers who extract it receive almost none' reveal about the distribution of industrial-era profits?" },
-      { title: "Samuel Morse on the Telegraph (1844)", detail: "On May 24, 1844, Samuel Morse sent the first long-distance telegraph message from Washington to Baltimore: 'What hath God wrought.' Morse later wrote: 'It is not visionary to say that this invention will annihilate space and time. The merchant in New York will know the price of cotton in New Orleans before the ship carrying it has left port. Governments will know of battles fought before the wounded have reached hospital.' Analyze: how does Morse's description of the telegraph's potential reveal its specific economic applications? What does 'annihilate space and time' mean in the context of 19th-century commercial coordination? How did real-time price information change the economics of industrial commodity markets?" }
-    ]
+    title: "Evidence Lab: One Link in the Chain",
+    intro: "Use the cards to find evidence for one link in the chain: machines and fossil fuels, new methods, or the reach of railroads, steamships, and the telegraph. Ask what each source can and cannot show.",
+    prompt: "Choose two cards. For each, say what kind of source it is, which link in the chain it shows, and one thing it cannot tell you.",
+    items: []
   },
 
   primarySource: {
-    title: "Primary Source: The Human Cost of Railroad Construction — Chinese Labor on the Transcontinental Railroad, 1865–1869",
-    intro: "The Central Pacific Railroad was built eastward from Sacramento through the Sierra Nevada by approximately 10,000 Chinese immigrant laborers, the largest single workforce on the project. They were paid $26–35 per month compared to $35 for white workers doing the same work, were given the most dangerous assignments (blasting tunnels through granite using nitroglycerin), and were excluded from the commemorative 'golden spike' photograph when the two railroads met in 1869. This adapted account draws on testimony from surviving workers, railroad company records, and contemporary newspaper accounts.",
-    text: [
-      "The Chinamen, as they were called by the press, came to the Sierra Nevada in the winter of 1865–1866 to do what others had refused: blast a path through solid granite at elevation. The Central Pacific's chief engineer, Charles Crocker, had resisted hiring Chinese workers, 'they didn't built the Great Wall of China,' he was told; 'who built it?' the reply came. Crocker hired Chinese workers in large numbers and was satisfied: they were reliable, cost less, and complained less than white workers.",
-      "The work of blasting the Summit Tunnel required drilling holes in solid granite, packing them with black powder or nitroglycerin, lighting the fuse, and retreating before the explosion. Workers who retreated too slowly, or whose fuses burned faster than expected, were killed or maimed. In the winter of 1866–1867, Chinese workers lived in tunnels dug through 40 feet of snowpack while continuing to excavate the railroad tunnel below. Dozens died in avalanches; their bodies were found in spring thaw, still holding their tools.",
-      "In the summer of 1867, Chinese workers struck for equal pay and shorter working hours, eight hours per day instead of ten to twelve. The Central Pacific broke the strike by cutting off their food supply. The workers, isolated in the Sierra Nevada, could not survive without the company's supply line. After a week, they returned to work without concessions. Their wages were eventually raised slightly, but never to equal white workers.",
-      "When the golden spike was driven at Promontory Summit on May 10, 1869, the official photograph showed the two locomotive crews and company executives meeting between the engines. No Chinese workers appear. They had built half of the railroad. The official history of the transcontinental railroad did not prominently acknowledge their role for more than a century."
-    ],
+    title: "Primary Source: Jevons on Coal, 1865",
+    intro: "William Stanley Jevons was a British economist. In 1865 he published a book called The Coal Question. He worried that Britain was using up its coal, and that its wealth would not last once the cheap coal ran out. To make that case, he first had to show his readers how much depended on coal. This passage is the opening of his introduction.",
+    attribution: "W. Stanley Jevons, The Coal Question (first published 1865), from the opening of the introduction, quoted from the second edition (London: Macmillan, 1866), as reprinted by the Library of Economics and Liberty",
+    text: "Day by day it becomes more evident that the Coal we happily possess in excellent quality and abundance is the mainspring of modern material civilization. As the source of fire, it is the source at once of mechanical motion and of chemical change. Accordingly it is the chief agent in almost every improvement or discovery in the arts which the present age brings forth. It is to us indispensable for domestic purposes, and it has of late years been found to yield a series of organic substances, which puzzle us by their complexity, please us by their beautiful colours, and serve us by their various utility.<br><br>And as the source especially of steam and iron, coal is all powerful. This age has been called the Iron Age, and it is true that iron is the material of most great novelties. By its strength, endurance, and wide range of qualities, this metal is fitted to be the fulcrum and lever of great works, while steam is the motive power. But coal alone can command in sufficient abundance either the iron or the steam; and coal, therefore, commands this age—the Age of Coal.<br><br>Coal in truth stands not beside but entirely above all other commodities. It is the material energy of the country—the universal aid—the factor in everything we do. With coal almost any feat is possible or easy; without it we are thrown back into the laborious poverty of early times.<br><br><em>Words to know: evident means clear; mainspring means the main source of power; material civilization means the things people make and use; mechanical motion means movement that drives machines; chemical change means making new substances; the arts here means useful skills and industries; indispensable means necessary; domestic purposes means uses at home, such as heating and cooking; organic substances here means chemicals made from coal, such as dyes; novelties means new inventions; fulcrum and lever means the parts that let a small force move a heavy load; motive power means the power that moves things; commodities means goods that are bought and sold; laborious means full of hard work.</em>",
     questions: [
-      "What specific labor conditions does this source describe for Chinese workers on the transcontinental railroad? How does the source use the comparison between Chinese and white workers' wages to make its argument?",
-      "The source describes the 1867 strike and the company's response, cutting off the food supply. What does this reveal about the power relationship between the Central Pacific and its Chinese workforce? How does this compare to other coercive labor systems you have studied?",
-      "The source notes that Chinese workers 'built half of the railroad' but do not appear in the commemorative photograph. What does this detail reveal about how 19th-century industrialization recognized (or failed to recognize) the contributions of non-white labor? How does this connect to the broader pattern of industrial benefits and burdens being distributed unequally?"
+      "In the first paragraph, Jevons says coal is \"the source at once of mechanical motion and of chemical change.\" Using the lesson, give one example of each: a machine that coal moved, and a new product made from coal.",
+      "In the second paragraph, Jevons says coal \"commands\" both steam and iron. Explain what he means, and use the lesson to say what steam and iron (and later steel) made possible.",
+      "Jevons wrote this to warn readers that Britain's coal would not last forever. How might that purpose shape the way he describes coal? Then use the last paragraph to explain what he thinks life was like before coal."
     ]
   },
 
   beSurreal: {
-    title: "BeSurreal: You Are a Chinese Railroad Worker in the Sierra Nevada, 1867",
-    desc: "You are a Chinese immigrant laborer working for the Central Pacific Railroad in the Sierra Nevada mountains in the summer of 1867. You came to California during the Gold Rush era, stayed when the gold ran out, and took railroad work when it was offered, because the alternative was starvation wages in San Francisco's Chinatown.",
-    intro: "Your team is drilling a tunnel through solid granite at 7,000 feet elevation. The work is: drill a hole with a hand drill and hammer, pack it with black powder, light the fuse, run. The nitroglycerin is worse, it has no predictable burn time. Three men in your work crew were killed last month. You are earning $26 a month. White workers doing the same work earn $35.",
-    detail: "Yesterday, the workers in your camp decided to strike. The demand is simple: equal pay, $35 a month, same as white workers, and eight-hour days instead of twelve. The company's response was to cut off your food supply. The camp is at 7,000 feet in the Sierra Nevada; you cannot leave without walking through mountain wilderness for days. You have been without food from the company for three days. Some men want to continue; some want to give up. You are writing a letter to your brother in Guangzhou Province, a letter that may take months to reach him, if it arrives at all. You want to tell him the truth about what this country is, and what this work is.",
-    prompt: "Write the letter to your brother. Describe the work: what it looks, sounds, and smells like; what happens to the men who make mistakes. Describe the strike and the company's response, and what you understand it reveals about your situation. Be honest about whether you regret coming, whether you think the railroad will be worth it, and whether you would advise your brother to come to America. This is a private letter, write with the full weight of your experience, not with the optimism you might show to the railroad bosses."
+    title: "BeSurreal: A Grain Merchant's Office, Liverpool, 1880",
+    desc: "You are fifteen and work as a clerk in a grain merchant's office in Liverpool, the English port where ships from America unload their wheat. Your job is to copy out the messages and keep the books.",
+    intro: "Every morning a boy runs in from the telegraph office with the price of wheat in Chicago, sent across the Atlantic by cable. Your employer reads it, does a quick sum, and decides whether to buy. Wheat grown on farms in the middle of North America comes by train to the coast, and then across the ocean by steamship.",
+    detail: "Your grandfather remembers when most of the bread in England was made from English wheat, and when news from America came by sailing ship, weeks old. Now your employer knows the Chicago price the same day, and the wheat itself crosses the ocean by steamship. The office is busy, and wheat is cheaper than your grandfather remembers.",
+    prompt: "Write a letter to your grandfather explaining how a sack of wheat gets from a farm in the middle of North America to a bakery in Liverpool, and how your employer knows what to pay for it. Name each technology that helps, and say what it made possible. Use the words railroad, steamship, and telegraph."
   },
 
   beInTheRoom: {
     url: '',
-    desc: "Testify before a Parliamentary committee investigating child labor in coal mines, negotiate as a rubber baron with a Force Publique officer in the Congo, or advise the Central Pacific Railroad on whether to break the Chinese workers' strike, or meet their demands."
+    desc: "New York, December 1900. As a writer for a science magazine, argue for the technology you think changed the world most, and help your team rank five of them from most important to least."
   }
 
 };

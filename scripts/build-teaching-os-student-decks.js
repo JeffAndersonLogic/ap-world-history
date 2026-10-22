@@ -220,6 +220,15 @@ const DECKS = [
     ],
     student: 'assets/data/presentations/topic-5-4-student.js',
     backUrl: 'lesson-5-4-industrialization-spreads.html#lecture'
+  },
+  {
+    key: '5.5',
+    sources: [
+      'teacher/data/topic-5-5-teaching-base.js',
+      'teacher/data/topic-5-5-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-5-5-student.js',
+    backUrl: 'lesson-5-5-technology-of-industrialization.html#lecture'
   }
 ];
 
@@ -418,7 +427,8 @@ function buildDeck(deck) {
     '5.1': topic31Slides,
     '5.2': topic31Slides,
     '5.3': topic31Slides,
-    '5.4': topic31Slides
+    '5.4': topic31Slides,
+    '5.5': topic31Slides
   };
   return {
     meta: {
