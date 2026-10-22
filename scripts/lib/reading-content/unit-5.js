@@ -693,204 +693,253 @@ module.exports = {
     "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 5.3 The Industrial Revolution Begins",
     "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
-    "readingEyebrow": "AP World History · Unit 5: Revolutions · Topic 5.3",
+    "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
-    "headerSubtitle": "Topic 5.3, The Industrial Revolution Begins &nbsp;|&nbsp; AP World History",
-    "titleHtml": "The Age of <em>Steam</em>",
-    "deck": "How Britain's coal, capital, and geography sparked a revolution in production, and what it cost the people who lived through it",
+    "showFooterNote": false,
+    "headerSubtitle": "Topic 5.3, The Industrial Revolution Begins, 1750 to 1900 &nbsp;|&nbsp; AP World History: Modern",
+    "titleHtml": "Coal, Water, and <em>One Roof</em>",
+    "deck": "Even before Paris argued about rights, a different revolution had begun in Britain: a change in how things were made. This reading asks why it began there. Part of the answer was in Britain's ground and water. The rest was built by people. Then it follows the new workplace those causes produced, the factory, and the two things it changed about work.",
     "skillTags": [
       "Causation",
-      "Comparison",
-      "Argumentation"
+      "Developments and Processes"
     ],
     "supportCards": {
-      "beforeYouRead": "The Industrial Revolution started in Britain in the late 18th century. By 1900 it had transformed production, labor, and daily life for millions of people around the world. As you read, track both the causes of industrialization AND its human consequences, the AP will ask you about both.",
-      "readingTarget": "By the end, you should be able to explain why industrialization began in Britain rather than elsewhere; describe how the factory system worked and how it differed from earlier forms of production; and identify the major social effects, urbanization, child labor, worker resistance, of the first industrial generation."
+      "beforeYouRead": "<strong>Nature gave the fuel and the water. People built the rest. The factory put the work under one roof.</strong> As you read, sort each cause into one of two groups: what nature gave Britain, and what people built. Then watch for the two things the factory changed: where work was done, and how it was divided.",
+      "readingTarget": "How did environmental factors and the things people built cause industrialization to begin in Britain, and what did the factory system change?"
     },
     "vocabulary": [
-      "Steam Engine",
-      "Factory System",
-      "Cottage Industry",
-      "Enclosure Acts",
+      "Putting-Out System",
+      "Coke",
+      "Canals",
+      "Enclosure",
       "Urbanization",
-      "Luddites",
-      "James Watt",
-      "Richard Arkwright",
-      "Manchester",
-      "Coal",
-      "Child Labor",
-      "Industrialization",
+      "Patent",
       "Capital",
-      "Chartism",
-      "Proletariat"
+      "Factory System",
+      "Specialization of Labor"
     ],
     "sections": [
       {
         "number": "1",
-        "label": "Contextualization",
-        "heading": "The World Before Factories",
+        "label": "The Question",
+        "heading": "A Revolution in How Things Were Made",
         "blocks": [
           {
             "type": "p",
-            "html": "To understand what the Industrial Revolution destroyed, you need to understand what existed before it. Across Europe in the 17th and early 18th centuries, most manufactured goods were produced through the <span class=\"kt\">domestic system</span>, also called the <span class=\"kt\">putting-out system</span> or <span class=\"kt\">cottage industry</span>. Merchants distributed raw materials (wool, cotton, flax) to rural households; families spun yarn and wove cloth in their own homes, on their own schedule, using their own tools; the merchant collected the finished product and paid by the piece."
+            "html": "Topic 5.2 ended with a turn. The revolutions in America, France, Haiti, and Spanish America changed who had the right to rule. But even before Paris argued about rights, a different revolution had begun in British workshops. It changed how things were made."
           },
           {
             "type": "p",
-            "html": "This system had real advantages for workers. A family could set its own pace. A skilled artisan, a weaver, a dyer, a cobbler, controlled their tools, their time, and the full process of production. The <span class=\"kt\">guild system</span> structured skilled trades in towns, regulating quality, limiting competition, and protecting the status of master craftsmen who had spent years learning their trade."
+            "html": "In 1750 almost everything people owned was made by hand. Most thread and cloth were made in people's homes. Under the <span class=\"kt\">putting-out system</span>, a merchant brought raw wool or cotton to families in the countryside. They spun it into thread and wove it into cloth on their own spinning wheels and looms, and the merchant came back to collect the work and pay for each piece. Power came from human muscles, horses, wind, and water wheels on streams. Much of the world's cotton cloth came from India."
           },
           {
             "type": "p",
-            "html": "This world was not idyllic, rural poverty was grinding, guild membership was often hereditary and exclusionary, and piece-rate pay left workers vulnerable to merchants' pricing decisions. But it was a world in which the worker retained a degree of autonomy and craft identity. Within a generation, the factory system would erase most of it."
+            "html": "Over the next hundred years, Britain built a new way of making things. Why did it begin there? The answer has two parts: what nature gave Britain, and what people built on top of it. Then there is the new workplace those causes produced: the factory."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>The domestic/putting-out system is the essential context for understanding why the factory system was experienced as a social revolution, not merely a technological one. <strong>When AP prompts ask you to contextualize the Industrial Revolution, the most effective contextualization describes the pre-industrial world of craft production, the putting-out system, and guild organization, and explains what the factory system replaced and disrupted.</strong> Industrialization was not simply \"making things faster\"; it was a transformation in the relationship between workers and their work.</p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Two kinds of causes.</strong> The College Board lists seven factors behind the Industrial Revolution. Two come from nature: waterways, and where coal, iron, and timber were found. Five were built by people: towns, better farming, laws that protected property, resources from abroad, and saved-up money. As you read, sort each factor into one of the two groups.</p>"
         }
       },
       {
         "number": "2",
-        "label": "Key Concept",
-        "heading": "Why Britain? The Causes of Industrialization",
+        "label": "Nature, Part 1",
+        "heading": "Coal, Iron, and Not Enough Wood",
         "blocks": [
           {
             "type": "p",
-            "html": "The Industrial Revolution began in Britain, not in France, China, or the Ottoman Empire, and historians have spent two centuries debating why. No single factor explains it; what made Britain unique was a combination of conditions that existed nowhere else in the same configuration at the same time."
+            "html": "Britain sat on huge beds of coal. Much of it lay close to the surface, and much of it lay close to rivers or the sea. Iron ore was often found nearby."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Coal and iron deposits</span>: Britain had enormous, accessible coal reserves in Yorkshire, the Midlands, and South Wales, and iron ore nearby. Coal powered the steam engine; iron made the machines. Without both, the industrial takeoff was impossible."
+            "html": "What Britain did not have was much timber. By the 1600s most of its old forests had been cut down, so wood was expensive. Iron had always been made by heating iron ore with charcoal, a fuel made from wood, and much of the iron Britain used was bought from Sweden and Russia, where forests were still large. So Britons turned to coal. By 1700 coal gave England about half of all its energy, much of it burned in fireplaces for heating and cooking."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Geographic advantages</span>: Britain's geography was almost purpose-built for industrial commerce. No part of the island is more than 70 miles from the sea. Rivers and canals connected interior coalfields and manufacturing towns to ports. Cheap water transport dramatically reduced the cost of moving heavy raw materials and finished goods."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Enclosure Acts</span>: Beginning in the 17th century and accelerating in the 18th, Parliament passed hundreds of Enclosure Acts that converted common agricultural land into privately owned fields. Peasant families who had farmed common land for generations were displaced. Many had no choice but to move to growing towns and cities in search of work, providing the <span class=\"kt\">labor supply</span> that factories required."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Capital from colonial and Atlantic trade</span>: Britain's Atlantic empire generated enormous wealth, including profits from the <span class=\"kt\">slave trade</span> and slave-produced sugar, tobacco, and cotton. This capital was available for investment in industrial ventures. The connection between colonial exploitation and industrial financing is historically documented and morally significant."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Political stability and property rights</span>: The <span class=\"kt\">Glorious Revolution</span> (1688) established parliamentary supremacy, limited royal power, and secured property rights for the commercial classes. Investors were more willing to risk capital in long-term industrial ventures when they trusted that Parliament, not an arbitrary monarch, would protect their property."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Scientific and practical culture</span>: The <span class=\"kt\">Royal Society</span> (founded 1660) and the <span class=\"kt\">Lunar Society</span> of Birmingham created networks connecting scientists, engineers, and industrialists. Britain's <span class=\"kt\">patent system</span> incentivized invention. The culture of practical experimentation, tinkering, improving, applying, was more developed in Britain than in more academically oriented Continental scientific traditions."
+            "html": "In 1709, at Coalbrookdale beside the River Severn, Abraham Darby made iron using <span class=\"kt\">coke</span>, a fuel made by baking coal. Now iron could be made with British coal instead of scarce wood. A shortage of one resource pushed Britain toward another that it had in plenty."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p>No single factor explains British industrialization, the combination was unique and specifically British. <strong>A strong causation argument does not just list causes; it explains why the combination of factors was necessary. What would have happened if Britain had had coal deposits but no navigable rivers, or capital but no displaced agricultural workers? The AP rewards arguments that explain HOW causes worked together, not just what they were.</strong> Britain had coal, capital, labor, geographic infrastructure, legal security for investment, and a culture of practical innovation, simultaneously. That convergence was what no other society had matched by 1760.</p>"
+          "raw": "<p><strong>A shortage can be a cause.</strong> Timber is on the College Board's list, and Britain's timber mattered because there was so little of it. When a resource runs short, people look for a substitute. Britain's substitute, coal, was lying under its fields.</p>"
         }
       },
       {
         "number": "3",
-        "label": "Key Concept",
-        "heading": "Steam Power and the Factory System",
+        "label": "Nature, Part 2",
+        "heading": "Water: Moving Heavy Things and Turning Wheels",
         "blocks": [
           {
             "type": "p",
-            "html": "Two inventions transformed British production in the 1760s–1780s, and they worked together to create an entirely new system of manufacturing."
+            "html": "Coal is heavy. Before railways, the cheapest way to move something heavy was to float it. Britain had a long coastline and rivers that boats could travel. Coal from the mines near Newcastle went by ship down the coast to London."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">James Watt</span>'s improved <span class=\"kt\">steam engine</span> (patented 1769, with critical improvement via the separate condenser) dramatically increased the efficiency of steam power. Earlier steam engines wasted enormous energy reheating a cylinder with each stroke; Watt's separate condenser kept the cylinder hot, reducing fuel consumption by roughly 75%. This made steam power economically viable at industrial scale, and it was not dependent on rivers, unlike water power, so factories could be built anywhere coal could be delivered."
+            "html": "Fast streams mattered too. A stream could turn a water wheel, and a water wheel could turn machines."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Richard Arkwright</span>'s <span class=\"kt\">water frame</span> (1769) mechanized cotton spinning, producing thread strong enough to serve as warp. Arkwright opened his first true factory at Cromford, Derbyshire in 1771, a building housing dozens of machines, powered by water, staffed by workers hired to tend them on fixed shifts. This was the birth of the <span class=\"kt\">factory system</span>."
-          },
-          {
-            "type": "p",
-            "html": "The factory system's defining features set it apart from anything that had come before. Workers were concentrated under one roof rather than dispersed in households. Production was powered by machines, not by human or animal muscle. Hours were set by the factory owner and the rhythm of the machine, not by the seasons, the weather, or craft tradition. Workers did not own their tools; the factory owner owned everything. Workers sold their labor by the hour or the day; they had no stake in the product they made."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Child labor</span> was integral to the early factory system, not incidental to it. Children as young as 5 or 7 were employed, their small hands could reach into machinery to fix broken threads or clear jams that adult hands could not. They were paid a fraction of adult wages. The <span class=\"kt\">Factory Acts</span> of 1833, the first significant regulation, prohibited children under 9 from working in textile factories and limited children aged 9–13 to nine hours per day. The fact that this was considered a reform reveals the baseline."
+            "html": "Then people improved on nature with <span class=\"kt\">canals</span>, waterways dug by hand. The Duke of Bridgewater owned coal mines at Worsley, a few miles from Manchester. In 1761 his canal began carrying their coal into Manchester, and the price of coal in the town fell by about half. Other canal builders followed, and within a few decades canals linked coalfields, industrial towns, and ports."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p>The factory system was not merely a technological change, it was a social revolution in the organization of labor. <strong>The key causal claim is this: the steam engine and mechanical spinning frame did not just speed up production; they transferred control over the production process from the worker to the factory owner. This shift in power was the fundamental social consequence of industrialization's first generation, and it is what makes the factory system historically significant beyond its economic output.</strong></p>"
+          "raw": "<p><strong>Say what the factor did.</strong> \"Britain had rivers\" is a fact, not an explanation. \"Water made heavy coal cheap to move, so mills near a canal paid less for fuel\" explains how a factor contributed. Always add the \"so.\"</p>"
         }
       },
       {
         "number": "4",
-        "label": "Key Concept",
-        "heading": "Urbanization and Its Human Cost",
+        "label": "People, Part 1",
+        "heading": "More Food, More People, Bigger Towns",
         "blocks": [
           {
             "type": "p",
-            "html": "The factory system transformed not only how goods were made but where people lived. <span class=\"kt\">Manchester</span>, the center of the British cotton industry, grew from approximately 25,000 inhabitants in 1772 to 300,000 by 1850. That rate of urban growth, twelve-fold in less than eighty years, was unprecedented in recorded history. Manchester earned the nickname \"<span class=\"kt\">Cottonopolis</span>\"; visitors from across Europe came to observe it with a mixture of awe and horror."
+            "html": "Nature is not the whole story. China also had coal, and it did not have Britain's industrial revolution. The rest of the story is what people built."
           },
           {
             "type": "p",
-            "html": "Working conditions in early industrial Manchester were brutal. Factory workers typically worked 14 to 16 hours per day, six days a week. Factories were loud, hot, and dangerous, machinery had no guards, accidents were frequent, and textile dust caused chronic lung disease. There was no minimum wage, no sick pay, no compensation for injury. Workers who complained could be replaced immediately from the reserve of rural migrants crowding the city's slums."
+            "html": "First, farms. British farmers were growing more food on the same land. Instead of leaving a field empty every few years to rest, they planted turnips and clover. Turnips fed cattle and sheep through the winter, and clover made the soil richer. More animals meant more manure for the fields, and that meant more grain. Landowners also fenced off the old shared village fields into private farms, often with permission from Parliament. This <span class=\"kt\">enclosure</span> let them farm their land the new way."
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Luddites</span> (1811–1816) were skilled textile workers, framework knitters and hand-loom weavers in the English Midlands, who responded to mechanization by breaking into factories and smashing the machines that were being used to deskill and displace them. They are often mischaracterized as simply \"anti-technology.\" They were not. They were skilled craftsmen defending their trades against machinery being deployed specifically to replace skilled workers with cheap, unskilled (often child) labor. The government responded with military force; <span class=\"kt\">frame-breaking</span> was made a capital offense. At least three Luddites were executed."
+            "html": "Better farming meant more food from each field and each farmworker. More food fed more people. Britain's population grew from about 8 million in 1761 to about 10.5 million in 1801, and a smaller share of them farmed. By 1801 only about a third of English working men worked on the land."
           },
           {
             "type": "p",
-            "html": "Political organizing followed. The <span class=\"kt\">Chartist movement</span> (1838–1857) was the first mass working-class political movement in British history, demanding the <span class=\"kt\">People's Charter</span>: universal male suffrage, secret ballot, annual parliaments, equal electoral districts, payment of MPs, and removal of property qualifications for candidates. Chartism failed to achieve immediate reform, but it established the tradition of organized working-class political pressure that would eventually produce the Labour Party."
-          },
-          {
-            "type": "p",
-            "html": "Historians debate the \"standard of living question\": did the first generation of factory workers live better or worse than the workers they replaced? The evidence suggests that the first generation, roughly 1780 to 1840, generally experienced worse material conditions than the artisans and domestic workers they replaced. Real wages stagnated or declined; urban mortality rates were higher than rural rates; housing conditions in industrial slums were worse than rural cottages. The economic benefits of industrialization were real, but they accrued first to factory owners and merchants, not to workers."
+            "html": "Many of the rest lived in towns. <span class=\"kt\">Urbanization</span>, the growth of towns and cities, put many workers close together and gave them neighbors to sell to. Manchester, a town of about 23,000 people in 1773, counted 70,409 in the census of 1801."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Continuity and Change",
-          "raw": "<p>What changed about labor in this period, and what stayed the same? <strong>Change: workers lost ownership of their tools, lost control over their schedules, lost craft identity, and were subjected to machine-imposed discipline in concentrated factory settings. Continuity: workers remained dependent on those who owned the means of production; poverty, dangerous conditions, and child labor all predated the factory system. A strong CCOT argument distinguishes between the genuinely new features of industrial labor and the continuities with pre-industrial exploitation, and explains WHY the changes occurred when they did.</strong></p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>An effect can become a cause.</strong> Better farming helped cause more people, and more people, crowded into towns, became a cause of industry. The College Board lists urbanization as a cause of the Industrial Revolution. You will meet it again in Topic 5.9, as an effect.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "People, Part 2",
+        "heading": "Laws, Cotton from Abroad, and Money",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Building a mill was a big risk. Three more things made the risk worth taking."
+          },
+          {
+            "type": "p",
+            "html": "<strong>Laws protected private property.</strong> In Britain, Parliament, where landowners and merchants sat, passed the laws that enclosed fields and allowed canals to be dug. Since 1624, English law had also let an inventor take out a <span class=\"kt\">patent</span>: the sole right to use a new invention for fourteen years. In 1769 Richard Arkwright patented a new spinning machine. A person who invested could expect the law to protect what he built and earned."
+          },
+          {
+            "type": "p",
+            "html": "<strong>Britain reached resources from abroad.</strong> Cotton does not grow in Britain's climate. By the 1780s, most of the cotton spun in Manchester was grown by enslaved people on plantations in the Caribbean and South America. After the 1790s, more and more of it came from plantations in the United States. The factory's raw material came from far away, and it was grown by people who were not free."
+          },
+          {
+            "type": "p",
+            "html": "<strong>Money had been saved up to invest.</strong> The College Board calls this the accumulation of <span class=\"kt\">capital</span>: money used to build something that makes more money. Merchants, bankers, and landowners had grown rich from trade, including the Atlantic trade in enslaved people and the sugar they grew, and some were ready to risk their savings on mills and machines. Arkwright's partners, Samuel Need and Jedediah Strutt, were stocking makers who had grown rich in the hosiery trade. The partners spent thousands of pounds on machines and mills before the business made a profit, at a time when a carpenter earned no more than about £36 a year."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Say only what you can support.</strong> Historians still argue about how much of Britain's capital came from the slave trade and slavery, so a strong answer says \"some\" or \"part,\" not \"all.\" What no one disputes is where the cotton came from: plantations worked by enslaved people.</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "Working Together",
+        "heading": "How the Factors Combined",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "None of these factors made an industrial revolution by itself. Watch five of them meet in one canal."
+          },
+          {
+            "type": "p",
+            "html": "The Bridgewater Canal needed coal under the ground at Worsley (nature). It needed water to float the coal on (nature, improved by people). It needed an act of Parliament, passed in 1759, to allow it to be built (law). It needed the Duke's money, and he borrowed more to pay his workers (capital). And it needed a growing town to buy the coal (urbanization). Cheap coal then made Manchester an even better place to build mills, and the new mills made the town grow faster still."
+          },
+          {
+            "type": "p",
+            "html": "That is how the factors worked. Each one made the others pay off."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Developments and Processes",
+          "raw": "<p><strong>Explain a process step by step.</strong> To explain how something developed, name where it starts, then each step, joined by words like \"which meant\" and \"so.\" Coal lay near water, which meant it could be shipped cheaply, so fuel in Manchester cost less, so building a mill there paid.</p>"
+        }
+      },
+      {
+        "number": "7",
+        "label": "The Factory",
+        "heading": "One Place, One Job Each",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "In 1771, Arkwright and his partners built a cotton-spinning mill at Cromford, in Derbyshire. A water wheel turned the machines. It was fed by a brook and by a tunnel that drained the nearby lead mines. Because that water came from underground, it was said never to freeze."
+          },
+          {
+            "type": "p",
+            "html": "The mill did not send cotton out to spinners' homes. It brought the workers to the machines. Everyone came to one building, at the hours the mill set, under the eye of an overseer. The village was too small to supply enough workers, so Arkwright built houses for them. Most of his workers were women and children, some as young as seven. This was the <span class=\"kt\">factory system</span>: production gathered in a single place, around one source of power. UNESCO, which protects the valley as a World Heritage Site, says it \"saw the birth of the factory system.\""
+          },
+          {
+            "type": "p",
+            "html": "Inside, the work was split into steps. Raw cotton was cleaned, then carded (combed so its fibers lay straight), drawn out, twisted into a loose rope, and spun into thread. Each step had its own machine, tended by workers who did that job and no other. This is <span class=\"kt\">specialization of labor</span>."
+          },
+          {
+            "type": "p",
+            "html": "Adam Smith, a Scottish thinker, showed why it mattered in 1776, using a pin workshop. Ten men, each doing one or two of about eighteen steps, \"could make among them upwards of forty-eight thousand pins in a day.\" One man working alone, he wrote, \"could scarce ... make one pin in a day, and certainly could not make twenty.\" Because each job was small and simple, it could be learned quickly, so a mill could hire workers with no training, many of them children."
+          },
+          {
+            "type": "p",
+            "html": "So, how did environmental factors contribute to industrialization? Britain's coal, iron, and waterways made fuel, metal, power, and transport cheap in the same places, and its shortage of wood pushed it toward coal. Better farming, growing towns, laws that protected property, cotton from abroad, and saved-up money made it worth building something new on top of them. Together they made factories pay. And the factory changed work itself: it gathered production in one place and split it into small, specialized jobs."
+          },
+          {
+            "type": "p",
+            "html": "The new way of making things did not stay in Britain. That is Topic 5.4."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Three myths to drop.</strong> \"Britain had coal, so it industrialized\": coal was one cause of seven, and China had coal too. \"Cromford was the first factory\": earlier mills had some of its features. \"Steam started it\": Cromford ran on water. Steam power is Topic 5.5.</p>"
         }
       }
     ],
-    "takeaway": "The Industrial Revolution began in Britain in the late 18th century due to a unique combination of <strong>coal and iron deposits</strong>, <strong>geographic advantages</strong> (no point more than 70 miles from the sea), <strong>capital from colonial and Atlantic trade</strong> (including slave trade profits), <strong>agricultural enclosure</strong> driving rural labor to cities, <strong>political stability</strong> after the Glorious Revolution (1688), and a <strong>culture of practical science</strong>. The steam engine (<strong>James Watt</strong>, 1769) and factory system (<strong>Richard Arkwright</strong>, Cromford 1771) transformed production, concentrating workers and machines under one roof, replacing the domestic putting-out system, and imposing new forms of industrial discipline set by the machine rather than craft tradition. Manchester grew from 25,000 to 300,000 in 80 years. Workers, including children as young as five, faced dangerous conditions, 14–16 hour days, and the loss of craft autonomy. The <strong>Luddites</strong> smashed frames in resistance (1811–1816); <strong>Chartists</strong> demanded political rights (1838–1857). By the early 19th century, Britain was the \"workshop of the world\", and the social question of who would benefit from industrialization had become the central political question of the century.",
+    "takeaway": "Britain's industrial revolution began with what nature gave it: coal and iron close together, close to rivers and the sea, and a shortage of wood that pushed Britons to burn coal and, from 1709, to make iron with coke. Water made heavy coal cheap to move, and canals such as the Bridgewater Canal of 1761 cut the price of coal in Manchester by about half. But nature alone did not do it. People built the rest: better farming that fed a growing population, towns such as Manchester that gathered workers and buyers, laws that protected property and inventions, cotton from abroad grown by enslaved people, and saved-up capital ready to risk on mills. Together these made factories pay. The factory, like Arkwright's water-powered mill at Cromford in 1771, gathered production in one place and split the work into small, specialized jobs. Nature gave the fuel and the water. People built the rest. The factory put the work under one roof.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
-        "num": "1",
+        "num": "01",
         "skill": "Causation",
-        "text": "Explain why the Industrial Revolution began in Britain rather than somewhere else in the world. Identify at least two specific factors and explain how each created the conditions necessary for industrialization. What would have happened if Britain had had coal deposits but no navigable rivers, or capital but no coal?",
-        "placeholder": "Identify at least two specific factors and explain how each contributed to industrialization beginning in Britain..."
+        "text": "Choose ONE thing nature gave Britain from Sections 2 and 3: coal and iron, the shortage of wood, or water. Explain how it helped cause industrialization: what did it make cheaper or possible, and what did that lead to?",
+        "placeholder": "The factor I chose is... It made... cheaper or possible, so..."
       },
       {
-        "num": "2",
-        "skill": "Comparison",
-        "text": "Compare working conditions in the domestic/putting-out system with working conditions in the early factory system. Identify at least one way factory work was similar to domestic work and at least two ways it was significantly different. Then explain: from the perspective of a worker, which system was preferable, and why?",
-        "placeholder": "Identify similarities and differences, then explain which system was preferable from a worker's perspective..."
+        "num": "02",
+        "skill": "Causation",
+        "text": "Choose ONE thing people built from Sections 4 and 5: better farming, growing towns, laws that protected property, cotton from abroad, or saved-up money. Explain how it helped make a mill worth building, using a detail from the reading.",
+        "placeholder": "The factor I chose is... It helped make a mill worth building because..."
       },
       {
-        "num": "3",
-        "skill": "Argumentation",
-        "text": "Write a one-sentence claim answering this question: Was the Industrial Revolution primarily a benefit or primarily a harm for the working class in its first generation (c. 1780–1840)? Then provide two pieces of specific evidence that support your claim.",
-        "placeholder": "State your one-sentence claim, then provide two pieces of specific evidence..."
+        "num": "03",
+        "skill": "Developments and Processes",
+        "text": "Using Section 7, explain the two things the factory system changed about how work was done. Give one detail from Cromford or from Adam Smith's pin workshop for each.",
+        "placeholder": "First, the factory changed where work was done... Second, it changed how the work was divided..."
       }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 5.3, The Industrial Revolution Begins",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true
   },
   "5.4": {
     "topicKey": "5.4",
