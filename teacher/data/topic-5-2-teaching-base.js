@@ -408,7 +408,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'chain', kind: 'diffusion-path', eyebrow: 'The Chain',
       kc: 'KC-5.3.III.B', title: 'Each revolution helped another start or win.',
-      footer: 'The College Board calls the American Revolution "a model and inspiration for a number of the revolutions that followed."',
+      footer: 'The American Revolution: "a model and inspiration for a number of the revolutions that followed" (College Board).',
       template: {
         stops: [
           { place: 'America', date: '1775', text: 'A republic is won, and helping costs France a fortune' },

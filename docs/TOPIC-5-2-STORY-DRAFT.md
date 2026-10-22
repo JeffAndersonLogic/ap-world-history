@@ -2,8 +2,10 @@
 
 **Status: Delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12).**
 
-**Resume here (2026-10-21):** review loop closed after three passes; Unit 5 reading fingerprint moved. Still to do:
-the full browser suite, slide screenshots, the audit record, the Phase 10 report.
+**Build finished 2026-10-22, waiting for "ship it":** on `claude/5-2-behistorical-build-1ejzka`. Three independent
+review passes (24, 16 and 11 supported defects, all fixed; the loop stopped on its three-pass safety valve); the
+Unit 5 reading fingerprint moved; `npm test` and the strict browser suite in the brand fonts pass. Audit record:
+`docs/topic-audits/topic-5-2-2026-10-21.md`.
 
 **Taught:** no dates yet. The schedule ends with the Era 3 Exam (Green Monday 2026-11-23, Silver
 Tuesday 2026-11-24), and neither the schedule nor the Notion task names a Unit 5 class day (5.1 is

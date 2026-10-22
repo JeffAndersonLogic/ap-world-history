@@ -334,7 +334,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "diffusion-path",
       "eyebrow": "The Chain",
       "title": "Each revolution helped another start or win.",
-      "footer": "The College Board calls the American Revolution \"a model and inspiration for a number of the revolutions that followed.\"",
+      "footer": "The American Revolution: \"a model and inspiration for a number of the revolutions that followed\" (College Board).",
       "kc": "KC-5.3.III.B",
       "template": {
         "stops": [

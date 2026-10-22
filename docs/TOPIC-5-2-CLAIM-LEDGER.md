@@ -359,7 +359,7 @@ Fresh packet, 2026-10-21, with the Canvas overview added by hand (the topic has 
 4. Slide 29's note had the colonists protesting the Stamp Act in 1769 to 1771. **Fixed:** the Townshend taxes.
 5. The Canvas overview's unqualified "everywhere." **Fixed:** "everywhere educated people read," as on the other surfaces.
 
-Also fixed in this round, from the builder's own checks: the browser suite (`slide-templates.browser.test.js`, fallback-font pass) found the retelling slide's fill-in sentence spilling 33px past its region, a side effect of pass 1's longer wording; the title is now "Say it in one sentence." and the frame begins "A revolution needed a ___," the First & 10's own words. `report-absolutes.js` flagged "never allowed to govern" (see the Bolívar row).
+Also fixed in this round, from the builder's own checks: the browser suite (`slide-templates.browser.test.js`, fallback-font pass) found the retelling slide's fill-in sentence spilling 33px past its region, a side effect of pass 1's longer wording; the title is now "Say it in one sentence." and the frame begins "A revolution needed a ___," the First & 10's own words. `report-absolutes.js` flagged "never allowed to govern" (see the Bolívar row). After the loop, the full browser suite in the brand fonts found slide 14's chain spilling 17px once its footer carried the whole CED quotation (fix 7 above); the footer now reads "The American Revolution: 'a model and inspiration for a number of the revolutions that followed' (College Board)," and the suite passes.
 
 ### Pass 3 outcome, and the end of the loop
 
