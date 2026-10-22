@@ -202,6 +202,15 @@ const DECKS = [
     ],
     student: 'assets/data/presentations/topic-5-2-student.js',
     backUrl: 'lesson-5-2-nationalism-and-revolutions.html#lecture'
+  },
+  {
+    key: '5.3',
+    sources: [
+      'teacher/data/topic-5-3-teaching-base.js',
+      'teacher/data/topic-5-3-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-5-3-student.js',
+    backUrl: 'lesson-5-3-industrial-revolution-begins.html#lecture'
   }
 ];
 
@@ -398,7 +407,8 @@ function buildDeck(deck) {
     '4.7': topic31Slides,
     '4.8': topic31Slides,
     '5.1': topic31Slides,
-    '5.2': topic31Slides
+    '5.2': topic31Slides,
+    '5.3': topic31Slides
   };
   return {
     meta: {

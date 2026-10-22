@@ -673,22 +673,22 @@ Strong answer checklist: Explain what a nation shares, and one way a government 
 
 ## 5.3 The Industrial Revolution Begins
 
-**Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. Why industrialization started in Britain — and how the steam engine, factory system, and urbanization transformed labor and society from c. 1750 to c. 1900
+**Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. 1750 to 1900. Nature put coal, iron, and water close together in Britain, and its shortage of wood pushed it to coal. People built the rest: better farms, growing towns, laws that protected property, cotton from abroad, and money to invest. Together they made factories pay, and the factory put the work in one place and split it into small jobs.
 
 **College Board key concepts.**
 - Unit 5: Learning Objective D (Learning Objective): Explain how environmental factors contributed to industrialization from 1750 to 1900.
 - KC-5.1.I.A (Humans and the Environment): A variety of factors contributed to the growth of industrial production and eventually resulted in the Industrial Revolution, including:<br>▪ Proximity to waterways; access to rivers and canals<br>▪ Geographical distribution of coal, iron, and timber<br>▪ Urbanization<br>▪ Improved agricultural productivity<br>▪ Legal protection of private property<br>▪ Access to foreign resources<br>▪ Accumulation of capital
 - KC-5.1.I.C (Humans and the Environment): The development of the factory system concentrated production in a single location and led to an increasing degree of specialization of labor.
 
-**Expected evidence terms.** coal, enclosure acts, capital, Glorious Revolution, patent system, canals, Royal Society, putting-out system, steam engine, geographic advantages, factory system, Manchester, Luddites, Chartism, child labor, Factory Acts, urbanization, working conditions, standard of living.
+**Expected evidence terms.** coal, iron, timber, wood, charcoal, coke, Coalbrookdale, Darby, water, rivers, canal, Bridgewater Canal, Manchester, price, farming, turnips, clover, enclosure, population, towns, urbanization, law, patent, Parliament, property, cotton, enslaved, plantations, Caribbean, capital, investment, profit, Arkwright, putting-out system, merchant, home, factory system, factory, mill, Cromford, 1771, water wheel, one building, hours, overseer, specialization, specialization of labor, step, carding, spinning, machine, Adam Smith, pins, forty-eight thousand, more goods, cause, effect.
 
-**AP skill focus.** Causation practice.
+**AP skill focus.** Developments and processes practice.
 
-**Checkpoint 1 prompt.** Identify four factors that explain why the Industrial Revolution began in Britain. For each factor, explain: (1) what it was, and (2) what specific role it played in enabling industrialization. Then explain how two of your four factors interacted, how did one condition enable or amplify another? End with a comparison: which one factor do you think was most important, and why?
-Strong answer checklist: Name four factors, be specific about what each one was and how it worked. Explain how two factors interacted, mechanism, not just correlation. Name the most important factor and defend your choice with evidence.
+**Checkpoint 1 prompt.** Answer in three steps. (1) Choose TWO things nature gave Britain: its coal and iron, its shortage of wood, or its rivers, coast, and canals. For each one, explain what it made cheaper or possible, and what that led to. (2) Choose TWO things people built: better farming, growing towns, laws that protected property, cotton from abroad, or saved-up capital. For each one, explain how it helped make a mill worth building. (3) Explain one way two of your four factors worked together, as the Bridgewater Canal shows.
+Strong answer checklist: Explain two things nature gave Britain, each with what it made cheaper or possible. Explain two things people built, each with how it made a mill worth building. Explain how two factors worked together.
 
-**Checkpoint 2 prompt.** Describe two ways the factory system changed the experience of work compared to the domestic/putting-out system. Be specific about what was lost and what (if anything) was gained. Then explain the Luddite response: what exactly were they protesting, and why does calling them "anti-technology" mischaracterize their position? End with an argumentation statement: overall, did the first generation of factory workers experience industrialization as a benefit or a harm?
-Strong answer checklist: Describe two specific changes from domestic to factory work, what exactly was different? Explain the Luddite position accurately, not anti-technology, but what specifically? Make a supported argumentation claim: benefit or harm for the first generation of workers?
+**Checkpoint 2 prompt.** Explain how the factory system changed the way cloth was made. (1) Describe how thread and cloth were made under the putting-out system: where the work happened and who did each step. (2) Explain how a mill like Arkwright's at Cromford (1771) gathered production in one place: what moved, what powered the machines, and who set the hours. (3) Explain how the work inside a cotton mill was split into steps, with each worker tending one. (4) Use Adam Smith's pin workshop to explain why splitting the work made more goods. (5) Explain one way an environmental factor, such as the water that turned Cromford's wheel or the cotton grown abroad, made the factory possible.
+Strong answer checklist: Describe the putting-out system. Explain how the factory gathered production in one place. Explain how the work was split into specialized steps. Explain why splitting the work made more goods. Connect the factory to one environmental factor.
 
 ## 5.4 Industrialization Spreads
 

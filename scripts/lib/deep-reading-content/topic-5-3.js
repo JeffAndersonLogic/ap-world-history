@@ -3,30 +3,27 @@
 /**
  * Topic 5.3, Industrial Revolution Begins: the deep reading.
  *
- * Why this exists. The success criteria want four factors explaining why Britain
- * first, with an explicit statement that no single factor is sufficient; then
- * Watt in 1769, Arkwright at Cromford in 1771, and Manchester from 25,000 to
- * 300,000; then two effects on labor, with the Luddites named.
+ * Why this exists. The CED gives 5.3 one learning objective, how environmental
+ * factors contributed to industrialization from 1750 to 1900, two Key Concepts
+ * (the seven factors of KC-5.1.I.A and the factory system of KC-5.1.I.C) and a
+ * reasoning process of Causation. The First & 10 tells the story in one pass.
+ * What it has no room for is the mechanism at each step: what each factor made
+ * cheaper or possible, how the factors depended on each other, and what exactly
+ * changed when the work moved into a mill.
  *
- * The "no single factor is sufficient" clause is the whole chapter. Every
- * textbook gives a list of causes, and a list invites a student to pick one and
- * write it as the answer. So section 01 is built as a set of eliminations,
- * asking of each candidate factor which other place also had it and did not
- * industrialize, which turns the list into an argument about combination.
+ * Rebuilt from the 5.3 story (docs/TOPIC-5-3-STORY-DRAFT.md) on 2026-10-22.
+ * The old chapter, "Why It Started There," was a strong essay written well
+ * above a ninth-grade reading level. It taught the steam engine (Topic 5.5's)
+ * and the Luddites (5.8's) as this topic's own, and organized the causes around
+ * a list the CED does not give (political stability, scientific culture).
  *
  * Three things carried deliberately:
  *
- *   1. Coal is not a resource, it is a resource plus a drainage problem plus an
- *      engine that solves it at the pithead where fuel is free. Written that
- *      way, the steam engine stops being an invention that appeared and becomes
- *      a solution to a specific bottleneck, which is what "why here" means.
- *   2. The factory's innovation is discipline and power transmission, not
- *      machinery. Arkwright's real invention is the working day, and a student
- *      who has that can explain the Luddites, the Factory Acts and the whole of
- *      Topic 5.9 as consequences of one change.
- *   3. The Luddites were not opposed to machines. They were opposed to machines
- *      used to break the customary terms of a trade, and the distinction is
- *      exactly the kind a checkpoint rewards.
+ *   1. The CED's seven factors, sorted into what nature gave and what people
+ *      built, because the objective asks how environmental factors contributed.
+ *   2. Every factor ends on what it made cheaper or possible, and the factors
+ *      are shown working together in one case, the Bridgewater Canal.
+ *   3. Both halves of the factory system: one place, and one job each.
  */
 
 module.exports = {
@@ -35,233 +32,295 @@ module.exports = {
   sourceFile: 'deep-reading-topic-5-3-industrial-revolution-begins.html',
   lessonFile: 'lesson-5-3-industrial-revolution-begins.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 5.3: Why It Started There',
+  docTitle: 'BeHistorical | Deep Reading | Topic 5.3: Coal, Water, and One Roof',
   eyebrow: 'Topic 5.3 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
-  titleHtml: 'Why It Started <em>There</em>',
-  deck: `Every ingredient of the Industrial Revolution existed somewhere else first. China had coal, gunpowder and the world&rsquo;s largest iron industry; the Dutch had capital and the best financial system in Europe; India made the finest cotton cloth on earth. The question is not what Britain had but what Britain had <em>together</em>, and this chapter answers it by asking of every candidate factor which other place also had it and did not industrialize.`,
-  meta: ['Four sections', 'Causes, the engine, the factory, the workers', 'Read alongside the First & 10'],
-  footerNote: 'Topic 5.3 &nbsp;·&nbsp; Why It Started There &nbsp;·&nbsp; Companion to the First &amp; 10',
+  titleHtml: 'Coal, Water, and <em>One Roof</em>',
+  deck: `Even before Paris argued about rights, a different revolution had begun in Britain: a change in how things were made. This chapter asks why it began there. Part of the answer was in Britain's ground and water, and the rest was built by people. Then it follows the new workplace those causes produced, the factory, and the two things it changed about work.`,
+  meta: ['Five sections', 'Coal and wood, water, food and towns, laws and money, the factory', 'Read alongside the First & 10'],
+  footerNote: 'Topic 5.3 &nbsp;·&nbsp; Coal, Water, and One Roof &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',
-    intro: `Section 01 is the causal argument and it is built to defeat the single-factor answer, which is what the success criteria explicitly ask for. Sections 02 and 03 are the engine and the factory, the two things a checkpoint will ask you to explain. Section 04 is what it did to the people doing the work.`,
+    intro: `The College Board asks you to explain how environmental factors contributed to industrialization. Its list has seven factors. Sections 01 and 02 take the two that nature gave Britain; sections 03 and 04 take the five that people built, and show them working together; section 05 follows the new workplace they produced. Each section ends with a tool, a limit and a comparison you can use in an answer.`,
     steps: [
-      `<b>01 Why Britain:</b> six candidate factors, each tested against a place that had it and did not industrialize.`,
-      `<b>02 The engine:</b> why coal needed a pump, and why the pump was built at the pithead.`,
-      `<b>03 The factory:</b> Arkwright at Cromford, and the invention of the working day.`,
-      `<b>04 The workers:</b> deskilling, child labor, and what the Luddites were actually objecting to.`,
-      `<b>Then the closing section</b>, which turns all of it into comparison sentences you can write.`
+      `<b>01 Coal, iron, and not enough wood:</b> how a shortage of one resource pushed Britain toward another.`,
+      `<b>02 Water:</b> moving heavy things cheaply, and turning wheels.`,
+      `<b>03 Food, people and towns:</b> better farming, a growing population, and the towns it filled.`,
+      `<b>04 Laws, cotton and capital:</b> three things that made the risk worth taking, and how the factors combined.`,
+      `<b>05 The factory:</b> one place, and one job each.`,
+      `<b>Then the closing section</b>, which gathers the evidence for an answer.`
     ]
   },
 
   empires: [
-    // ── 01 ────────────────────────────────────────────────────────────────────
+    // ── 01 ─────────────────────────────────────────────────────────────
     {
-      id: 'whybritain',
+      id: 'coal',
       num: '01',
       accent: 'gold',
-      name: 'Six Factors, and Why None of Them Is the Answer',
-      navLabel: 'Why Britain',
-      dates: 'c. 1700 to 1780 &nbsp;·&nbsp; The combination',
-      thesis: `The right form of this answer is a combination rather than a cause, and the way to prove that to a grader is to take each factor and name somewhere else that had it and did not industrialize. Six factors, six eliminations, one conclusion.`,
+      name: 'Coal, Iron, and Not Enough Wood',
+      navLabel: 'Coal and wood',
+      dates: '1600s to 1709 &nbsp;·&nbsp; What nature gave',
+      thesis: `Britain had plenty of coal and iron, often close together and close to water, and too little wood. The shortage of wood pushed Britons to burn coal, and then to make iron with it.`,
       parts: [
         {
-          heading: 'The six, each tested',
+          heading: 'How things were made in 1750',
           blocks: [
-            { p: `<b>Coal and iron.</b> Britain had large coal deposits, many of them close to iron ore and to navigable water. <em>But</em> China's Song dynasty, as the Topic 1.1 chapter describes, had a coal and iron industry of extraordinary scale seven centuries earlier and did not industrialize. Resources are necessary and prove nothing on their own.` },
-            { p: `<b>Geography.</b> Britain is an island with no point far from the sea, with navigable rivers and, from the <span class="num">1760</span>s, a canal network, so bulk goods moved cheaply. <em>But</em> the Dutch Republic had the best inland water transport in Europe and a merchant fleet larger than anyone's, and its industrial takeoff came later and was smaller.` },
-            { p: `<b>Labor supply.</b> The <span class="kt">Enclosure Acts</span>, consolidating common land into private holdings, ended the customary rights, grazing, gleaning, gathering fuel, on which many rural households depended, and pushed people toward wage work and toward towns. <em>But</em> enclosure of one kind or another happened across Europe, and displaced peasants elsewhere became landless laborers rather than factory workers, because there were no factories to go to.` },
-            { p: `<b>Capital.</b> Britain had accumulated wealth from Atlantic trade, from the sugar and slave economies of Topic 4.5, and from Indian revenue after the Bengal diwani of <span class="num">1765</span>, and it had a banking system and low interest rates to move it. <em>But</em> Spain took more bullion out of the Americas than anyone and did not industrialize, for the reasons the Topic 4.5 chapter gives. Capital matters when there is somewhere profitable to put it.` },
-            { p: `<b>Political and legal stability.</b> After <span class="num">1688</span> Britain had a monarchy limited by Parliament, secure property rights, enforceable contracts, a funded national debt and no arbitrary confiscation, which makes a twenty-year investment in fixed plant a rational thing to make. <em>But</em> several European states had reasonably secure property law without industrializing.` },
-            { p: `<b>Scientific and technical culture.</b> The Royal Society, provincial societies such as the Lunar Society of Birmingham, a patent system from <span class="num">1624</span> that let an inventor capture some of the value of an invention, and a large body of skilled millwrights, instrument-makers and ironworkers able to build a design once someone drew it. <em>But</em> France had the more distinguished scientific establishment for much of this period and industrialized later.` }
+            { p: `In <span class="num">1750</span> almost everything people owned was made by hand. Most thread and cloth were made in homes. Under the <span class="kt">putting-out system</span>, a merchant brought raw wool or cotton to families in the countryside, who spun and wove it on their own wheels and looms, and he came back to collect the work and pay for each piece. Power came from human muscles, horses, wind and water wheels. Much of the world's cotton cloth came from India, and Britain's cotton makers grew up copying it.` },
+            { p: `Over the next century Britain built a new way of making things. The College Board lists seven factors that led to it. Two come from nature: waterways, and where coal, iron and timber were found. Five were built by people: towns, better farming, laws that protected property, resources from abroad, and saved-up money. This chapter takes them in that order.` }
           ]
         },
         {
-          heading: 'What the combination actually did',
+          heading: 'Too little wood',
           blocks: [
-            { p: `So the conclusion is not that Britain had a magic ingredient. It is that Britain had all six at once, and that they reinforced each other in a specific way: high wages relative to the price of coal made it worth replacing labor with fuel-burning machinery, and the capital, the law and the skills existed to do it.` },
-            { p: `That wage-to-fuel ratio is the sharpest single formulation available for this topic and it is worth writing carefully. In Britain, labor was comparatively expensive and coal was comparatively cheap, so a machine that burned coal to do what a person had done paid for itself. In regions where labor was cheap, as in much of Asia, the same machine was not worth building even if the design was known, because a person cost less than the fuel. That reframes the question from what Britain invented to what it was worth inventing in Britain, and it explains the absence of industrialization elsewhere without any claim about capability.` },
+            { p: `By the <span class="num">1600s</span> most of Britain's old forests had been cut down, as a growing population cleared land for farms. Wood became expensive. That mattered, because wood was the fuel of the old economy. It heated homes, and it made <span class="kt">charcoal</span>, the fuel used to heat iron ore until the iron could be separated out. Much of the iron Britain used was bought from Sweden and Russia, where forests were still large.` },
+            { p: `Britain did have coal, in huge beds, much of it close to the surface and close to rivers or the sea. So Britons burned coal instead of wood. By <span class="num">1700</span> coal gave England about half of all its energy, much of it burned in fireplaces for heating and cooking.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not answer this question with British inventiveness, or with any explanation that locates the cause in the character of a people. It fails on the evidence, since Song China, Mughal India and the Dutch Republic each held technical and commercial capacities Britain lacked in the periods when they led, and it fails as history, because it explains a change that happened at one moment with a trait that would have been present for centuries. Every factor above is a <b>condition</b>, dated and specific. Name four, note that each existed elsewhere without this result, and conclude on the combination. That is the answer the success criteria describe.`
+              html: `Do not write that Britain industrialized because it had coal. Coal was one of seven factors, and China had coal too. A strong answer says what coal made cheaper or possible, and names other factors that made it worth using.`
+            } }
+          ]
+        },
+        {
+          heading: 'Iron made with coal',
+          blocks: [
+            { p: `Coal could not simply replace charcoal in an iron furnace: its impurities spoiled the iron. In <span class="num">1709</span>, at Coalbrookdale, a valley beside the River Severn in Shropshire, Abraham Darby made iron using <span class="kt">coke</span>, a fuel made by baking coal to drive the impurities off. Coalbrookdale had coal and iron ore close by and a river to carry what it made. Over the following decades, ironmakers learned to make better and better iron with coal, and Britain could make its own iron from its own fuel.` },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know: the furnace is still there',
+              html: `Darby's furnace survives at Coalbrookdale, part of the Ironbridge Gorge World Heritage Site. Historic England, which lists the site, dates Darby's first iron made with coke there to 1709. Historians argue about how much the wood shortage caused the switch to coal and how much growing demand for fuel did; both were at work.`
             } }
           ]
         }
       ],
       useThis: {
-        tool: `The relative price of labor and fuel. <em>The mechanism is that a machine replacing human effort with burned coal is worth building only where wages are high relative to fuel, so the same invention is profitable in Lancashire and pointless in a region with cheap labor and expensive fuel, which explains where industrialization began without any claim about who was capable of it.</em>`,
-        limit: `The wage argument is contested among economic historians and cannot carry the whole explanation on its own; institutions, capital and coal geography are doing work alongside it.`,
-        comparison: `Against <em>Song China</em> in Topic 1.1: coal, iron, water transport, a huge internal market and mechanized textile machinery all existed there, and the outcome was an enormous commercial expansion rather than an industrial one. Holding those two cases together is the fastest way to show that resources and technique are conditions rather than causes.`
+        tool: `Name the shortage and the substitute. <em>Say what Britain lacked, what it used instead, and what that made possible.</em>`,
+        limit: `Coal alone did not cause industry: other countries had coal, and coal had to be moved and used by people who could make it pay.`,
+        comparison: `Against water (section 02): coal gave heat and fuel; water gave cheap transport and power to turn wheels.`
       },
       terms: [
-        ['Enclosure Acts', 'Legislation consolidating common land into private holdings, ending customary rights and pushing rural households into wage work.'],
-        ['Patent system', 'The legal grant letting an inventor capture value from an invention, which made development worth financing.'],
-        ['Fixed capital', 'Money sunk into buildings and machinery, which only a stable legal order makes a rational investment.'],
-        ['Wage-to-fuel ratio', 'The relative price of labor and coal, which decided where a fuel-burning machine was worth building.'],
-        ['Combination argument', 'The claim that no single factor explains British industrialization, since each existed elsewhere without it.']
+        ['Putting-out system', 'A way of making goods in which a merchant gives raw materials to families who work at home and pays them for each piece.'],
+        ['Charcoal', 'A fuel made by slowly burning wood, used to make iron before coke.'],
+        ['Coke', 'A fuel made by baking coal to drive off its impurities, used to make iron from 1709.'],
+        ['Timber', 'Wood from trees, used for fuel and building.']
       ]
     },
 
-    // ── 02 ────────────────────────────────────────────────────────────────────
+    // ── 02 ─────────────────────────────────────────────────────────────
     {
-      id: 'engine',
+      id: 'water',
       num: '02',
       accent: 'iron',
-      name: 'The Engine Was Built to Empty a Mine',
-      navLabel: 'The engine',
-      dates: '1712 to 1781 &nbsp;·&nbsp; Newcomen, Watt, Boulton',
-      thesis: `The steam engine was not invented to power factories. It was invented to pump water out of coal mines, which is why it was first built in the one place where its enormous fuel consumption did not matter, and everything else follows from getting good enough to leave that place.`,
+      name: 'Water: Moving Heavy Things and Turning Wheels',
+      navLabel: 'Water',
+      dates: '1700s to 1761 &nbsp;·&nbsp; What nature gave, improved',
+      thesis: `Before railways, the cheapest way to move something heavy was to float it, and the fastest way to power a machine was a water wheel. Britain had coast, rivers and fast streams, and people added canals.`,
       parts: [
         {
-          heading: 'The bottleneck',
+          heading: 'Coast, rivers and streams',
           blocks: [
-            { p: `Britain had been burning coal domestically for centuries, and by the early eighteenth century the shallow seams were worked out. Going deeper meant hitting groundwater, and a flooded mine is a closed mine. Horse-driven pumps existed and could not keep up below a certain depth.` },
-            { p: `Thomas Newcomen's atmospheric engine, working from <span class="num">1712</span>, solved it. Steam filled a cylinder, cold water condensed it, atmospheric pressure drove the piston down, and the beam worked a pump. It was extraordinarily inefficient, wasting most of its heat by cooling and reheating the cylinder on every stroke, and that did not matter at all, because it stood at a coal mine and burned coal that was otherwise unsellable. Dozens were at work within decades.` },
-            { p: `That is the mechanism to keep. A technology too wasteful to be viable anywhere else can be viable at the source of its own fuel, and the practical experience gained there is what makes the next version efficient enough to travel.` }
+            { p: `Coal is heavy, and so is iron. Carrying them by cart on the roads of the 1700s was slow and expensive. Carrying them by water was cheap. Britain had a long coastline and rivers that boats could travel, and coal from the mines near Newcastle went by ship down the coast to London.` },
+            { p: `Fast streams mattered too. A stream could turn a water wheel, and a water wheel could turn machines all day. The first factories were built beside fast water, as section 05 shows.` }
           ]
         },
         {
-          heading: 'Watt, and what a good idea still needs',
+          heading: 'Canals: water improved by people',
           blocks: [
-            { p: `James Watt, repairing a Newcomen model at Glasgow, identified the waste precisely and patented the fix in <span class="num">1769</span>: a <b>separate condenser</b>, so the cylinder stays hot while condensation happens elsewhere. The efficiency gain was roughly threefold to fourfold in fuel, which is what let a steam engine be worth running away from a colliery.` },
-            { p: `Then the part that is usually cut and should not be. The idea took more than a decade to become a business, because building a cylinder accurate enough to hold the vacuum was beyond ordinary workshops until John Wilkinson's cannon-boring machine of <span class="num">1774</span> could do it. Watt needed capital, which came from the Birmingham manufacturer Matthew Boulton, and a market, which came from Cornish tin mines with no local coal, where fuel savings were worth the most. And the engines were sold on a premium equal to a share of the fuel saved, a pricing model that only works because the improvement is measurable.` },
-            { p: `The step that leaves the mine is <span class="num">1781</span>, when Watt patented rotary motion, converting the beam engine's up-and-down stroke into a turning shaft. A pump moves water; a rotating shaft can drive a spinning mule, a loom, a rolling mill, a lathe or, later, a wheel on a rail. That patent is the moment steam becomes general-purpose power, and the Topic 5.5 chapter is largely a list of what people then attached to it.` },
+            { p: `Where nature had put no river, people dug one. A <span class="kt">canal</span> is a waterway dug by hand. The Duke of Bridgewater owned coal mines at Worsley, a few miles from Manchester. In <span class="num">1759</span> Parliament passed an act allowing him to build a canal, and in <span class="num">1761</span> it began carrying his coal into Manchester. The price of coal in the town fell by about half.` },
+            { p: `Other canal builders followed. Within a few decades canals linked coalfields, industrial towns and ports across England. Cheap fuel and cheap carriage drew mills to the places the water reached.` },
             { note: {
-              kind: 'howknow',
-              label: 'How we know: the patents record the sequence',
-              html: `British patent records give an unusually exact chronology for this story, because a patent is a dated public claim describing a mechanism, filed by someone with a financial motive to file as early as possible. From them we can see the separate condenser in <span class="num">1769</span> and rotary motion in <span class="num">1781</span>, and we can see how many engines Boulton and Watt sold and where. Two cautions come with the source. Patents record what was claimed, not what worked or what was used, and a great deal of practical improvement was made by workmen who never filed anything. And Watt used his patent aggressively to litigate against rivals, which some historians argue slowed the development of high-pressure engines by a decade or more, so the same institution that made the invention worth financing also delayed the next one.`
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `"Britain had rivers" is a fact, not an explanation. Add what the water did: "water made heavy coal cheap to move, so mills near a canal paid less for fuel."`
             } }
           ]
         }
       ],
       useThis: {
-        tool: `Deploying an inefficient technology at its fuel source. <em>The mechanism is that a machine whose running cost is prohibitive everywhere else is viable where its fuel is free or unsellable, so it gets built, used and improved in that one niche, and the accumulated practical experience is what eventually makes a version efficient enough to be worth using anywhere.</em>`,
-        limit: `It required a separate set of enabling conditions to escape the niche: precision boring, a financier, a market that valued fuel savings, and a patent regime that made the development worth funding.`,
-        comparison: `Against <em>gunpowder</em> in Topic 3.1: there too the decisive change was not the discovery but the engineering that made it usable at scale, and in both cases the limiting factor was metalworking precision. A technology becomes historically significant at the moment a workshop can build it repeatably, not at the moment someone thinks of it.`
+        tool: `Say the job water did. <em>Did it move goods, or turn machines? Then say what that made cheaper.</em>`,
+        limit: `Canals are both nature and people: the water is nature's, but the canal had to be paid for, allowed by law and dug by workers.`,
+        comparison: `Against coal (section 01): coal was in the ground; a canal had to be built, which is why canals lead into the factors people built (sections 03 and 04).`
       },
       terms: [
-        ['Newcomen engine', 'The 1712 atmospheric pumping engine, hugely inefficient and viable because it stood on free coal at the pithead.'],
-        ['Separate condenser', 'Watt\'s 1769 patent keeping the cylinder hot, which cut fuel use several times over and let steam leave the colliery.'],
-        ['Rotary motion', 'Watt\'s 1781 patent turning reciprocating stroke into a rotating shaft, which made steam general-purpose power.'],
-        ['Boulton and Watt', 'The partnership of a Birmingham manufacturer\'s capital with an engineer\'s design, without which the patent stayed a drawing.'],
-        ['Boring machine', 'Wilkinson\'s 1774 cannon-boring tool, the precision engineering that made an accurate cylinder possible.']
+        ['Canal', 'A waterway dug by hand, so boats can carry goods where there is no river.'],
+        ['Water wheel', 'A wheel turned by flowing water, used to power machines.'],
+        ['Bridgewater Canal', 'The canal that, from 1761, carried coal from the Duke of Bridgewater\'s mines at Worsley into Manchester.']
       ]
     },
 
-    // ── 03 ────────────────────────────────────────────────────────────────────
+    // ── 03 ─────────────────────────────────────────────────────────────
+    {
+      id: 'food',
+      num: '03',
+      accent: 'oxide',
+      name: 'Food, People and Towns',
+      navLabel: 'Food and towns',
+      dates: '1700s to 1801 &nbsp;·&nbsp; What people built',
+      thesis: `British farmers grew more food on the same land. More food fed more people, a smaller share of them farmed, and towns filled with workers and buyers.`,
+      parts: [
+        {
+          heading: 'Better farming',
+          blocks: [
+            { p: `Farmers had long left fields empty every few years to let the soil rest. British farmers learned to plant turnips and clover instead. Turnips fed cattle and sheep through the winter, and clover made the soil richer. More animals meant more manure for the fields, and more manure meant more grain. These crops had been grown this way in Flanders first; British farmers spread them.` },
+            { p: `Landowners also fenced off the old shared village fields into private farms, often with an act of Parliament. Between <span class="num">1750</span> and <span class="num">1819</span> Parliament passed more than three thousand of these acts. This <span class="kt">enclosure</span> let a landowner farm his land the new way. It also took away the shared land that poorer villagers had used, and historians still argue about how many people it pushed off the land.` }
+          ]
+        },
+        {
+          heading: 'More people, fewer of them farming',
+          blocks: [
+            { p: `More food fed more people. Britain's population grew from about <span class="num">8 million</span> in <span class="num">1761</span> to about <span class="num">10.5 million</span> in <span class="num">1801</span>, the year of the first census. And a smaller share of those people farmed: by <span class="num">1801</span> only about a third of English working men worked on the land.` },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know: counting backward',
+              html: `No one measured farm output before the 1860s. Historians work it out backward: Britain's population grew, people ate at least as well, and most of the food was still grown at home, so farms must have produced much more. The estimates differ, but they agree that farm productivity more than doubled between 1700 and 1850.`
+            } }
+          ]
+        },
+        {
+          heading: 'Towns',
+          blocks: [
+            { p: `Many of the people who did not farm lived in towns. <span class="kt">Urbanization</span>, the growth of towns and cities, put many workers close together, and gave them neighbors to sell to. Manchester, a town of about <span class="num">23,000</span> people in <span class="num">1773</span>, counted <span class="num">70,409</span> in the census of <span class="num">1801</span>.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Follow the chain. <em>Start from a turnip and end at a town: more fodder, more animals, more grain, more people, fewer farming, more in towns.</em>`,
+        limit: `Urbanization is a cause here, but it is also an effect of industry, and Topic 5.9 treats it that way. Be clear which one you mean.`,
+        comparison: `Against laws and capital (section 04): food and towns supplied workers and buyers; laws and money decided whether anyone would risk building a mill.`
+      },
+      terms: [
+        ['Agricultural productivity', 'How much food a farm grows for each field and each worker.'],
+        ['Enclosure', 'Fencing off shared village fields into private farms, often by act of Parliament.'],
+        ['Urbanization', 'The growth of towns and cities, as more people live in them.']
+      ]
+    },
+
+    // ── 04 ─────────────────────────────────────────────────────────────
+    {
+      id: 'risk',
+      num: '04',
+      accent: 'rust',
+      name: 'Laws, Cotton and Capital',
+      navLabel: 'Laws and money',
+      dates: '1624 to 1774 &nbsp;·&nbsp; What people built',
+      thesis: `Building a mill was a big risk. Laws that protected property, cotton from abroad and saved-up money made the risk worth taking, and the factors worked together.`,
+      parts: [
+        {
+          heading: 'Laws that protected property',
+          blocks: [
+            { p: `In Britain, Parliament, where landowners and merchants sat, passed the laws that enclosed fields and allowed canals to be dug. Since <span class="num">1624</span>, English law had also let an inventor take out a <span class="kt">patent</span>: the sole right to use a new invention for fourteen years. In <span class="num">1769</span> Richard Arkwright patented a new spinning machine. A person who invested could expect the law to protect what he built.` },
+            { p: `The protection had limits. In <span class="num">1785</span> the courts struck down Arkwright's patents, partly on the grounds that the ideas were other men's.` }
+          ]
+        },
+        {
+          heading: 'Cotton from abroad',
+          blocks: [
+            { p: `Cotton does not grow in Britain's climate. By the <span class="num">1780s</span> most of the cotton spun in Manchester was grown by enslaved people on plantations in the Caribbean and South America. After the <span class="num">1790s</span> more and more of it came from plantations in the United States. Britain's cotton mills used about <span class="num">2.6 million</span> pounds of raw cotton in <span class="num">1760</span> and about <span class="num">51.6 million</span> pounds in <span class="num">1800</span>. The factory's raw material came from far away, and it was grown by people who were not free.` }
+          ]
+        },
+        {
+          heading: 'Capital',
+          blocks: [
+            { p: `<span class="kt">Capital</span> is money used to build something that makes more money. Merchants, bankers and landowners had grown rich from trade, including the Atlantic trade in enslaved people and the sugar they grew, and some were ready to risk their savings on mills and machines. Arkwright's partners, Samuel Need and Jedediah Strutt, were stocking makers who had grown rich in the hosiery trade. The partners spent thousands of pounds on machines and mills before the business made a profit, at a time when a carpenter earned no more than about <span class="num">£36</span> a year.` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Do not write that the slave trade paid for the Industrial Revolution. Historians still argue about how much of Britain's capital came from slavery and the slave trade, so say "some" or "part." What no one disputes is that the cotton itself was grown by enslaved people.`
+            } }
+          ]
+        },
+        {
+          heading: 'How the factors combined',
+          blocks: [
+            { p: `None of these factors made an industrial revolution by itself. Watch five of them meet in one project. The Bridgewater Canal needed coal under the ground at Worsley (nature). It needed water to float the coal on (nature, improved by people). It needed an act of Parliament, passed in <span class="num">1759</span>, to allow it to be built (law). It needed the duke's money, and he had to borrow more to pay his workmen (capital). And it needed a growing town to buy the coal (urbanization). Cheap coal then made Manchester an even better place to build mills, and the new mills made the town grow faster still.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Explain it as a process. <em>Name the factor, add "which meant" and what it made cheaper or possible, then "so" and what it led to.</em>`,
+        limit: `A patent protected an invention only if the courts upheld it, and Arkwright's were struck down in 1785.`,
+        comparison: `Against coal and water (sections 01 and 02): nature's factors made things cheap in certain places; these factors decided whether people would build there.`
+      },
+      terms: [
+        ['Patent', 'The sole right, given by law, to use a new invention for a fixed number of years.'],
+        ['Capital', 'Money used to build something that makes more money, such as a mill and its machines.'],
+        ['Raw material', 'What a factory makes things from, such as raw cotton for thread.']
+      ]
+    },
+
+    // ── 05 ─────────────────────────────────────────────────────────────
     {
       id: 'factory',
-      num: '03',
-      accent: 'rust',
-      name: 'Arkwright Invented the Working Day',
+      num: '05',
+      accent: 'gold',
+      name: 'The Factory: One Place, One Job Each',
       navLabel: 'The factory',
-      dates: '1771 to 1850 &nbsp;·&nbsp; Cromford and Manchester',
-      thesis: `The factory&rsquo;s decisive innovation was not machinery. It was bringing workers to the machines, under one roof, on somebody else&rsquo;s clock, and that single organizational change is the origin of nearly every social conflict in the rest of this unit.`,
+      dates: '1771 to 1835 &nbsp;·&nbsp; The factory system',
+      thesis: `The factors made it pay to build mills. The factory then changed work itself in two ways: it gathered production in one place, and it split the work into small, specialized jobs.`,
       parts: [
         {
-          heading: 'What came before, and what changed',
+          heading: 'One place',
           blocks: [
-            { p: `The system it replaced was the <span class="kt">putting-out system</span>, also called cottage industry. A merchant supplied raw wool or cotton to households, which spun and wove it in their own homes on their own equipment, and he collected and sold the cloth. The household set its own hours, worked around the harvest and around family needs, and its members controlled the pace and often the technique. Payment was by the piece.` },
-            { p: `Richard Arkwright's mill at <b>Cromford</b>, in <span class="num">1771</span>, is the standard marker for the change. His water frame was too large and needed too much power for a cottage, so it had to sit beside a river, and the workers had to come to it. That single physical fact reorganizes everything: the mill runs when the water runs, so it runs continuously, in shifts, day and night, and the workers keep the machine's hours rather than their own.` },
-            { p: `So the factory is a <b>power problem solved by concentration</b>, first with water and then, once Watt's rotary engine existed, with steam, which freed mills from riversides and let them cluster in towns near coal. And what concentration then permits is supervision: a manager can see everyone, set the pace by the speed of the shafting, enforce timekeeping with fines and locked gates, and divide the work into tasks that need less skill than the trade they replaced.` },
-            { p: `The clock is the emblem of it. Under putting-out, work was task-oriented: you worked until the job was done. In the factory, work became time-oriented: you were paid for hours and the employer owned them. That change in what is being sold, hours rather than output, is the foundation of the class relationship the Topic 5.6 chapter describes.` }
+            { p: `In <span class="num">1771</span>, Arkwright and his partners built a cotton-spinning mill at Cromford, in Derbyshire's Derwent valley. A water wheel turned the machines. It was fed by a brook and by the Cromford Sough, a tunnel that drained the nearby lead mines; because its water came from underground, it was said never to freeze.` },
+            { p: `The mill did not send cotton out to spinners' homes. It brought the workers to the machines. Everyone came to one building, at the hours the mill set, under the eye of an overseer. The village was too small to supply enough workers, so Arkwright built houses for them. Most of his workers were women and children, some as young as seven. This was the <span class="kt">factory system</span>: production concentrated in a single place, around one source of power. UNESCO, which protects the valley as a World Heritage Site, says it "saw the birth of the factory system."` },
+            { note: {
+              kind: 'misconception',
+              label: 'Common mistake to avoid',
+              html: `Do not call Cromford the first factory, or say the steam engine started the factory system. A silk mill at Derby had some of the same features in the 1720s, and Cromford ran on water. Steam power is Topic 5.5.`
+            } }
           ]
         },
         {
-          heading: 'Manchester',
+          heading: 'One job each',
           blocks: [
-            { p: `The success criteria name the numbers and they are worth holding: Manchester grew from roughly <span class="num">25,000</span> people in <span class="num">1772</span> to about <span class="num">300,000</span> by <span class="num">1850</span>. That is not growth, it is a new kind of settlement appearing in a lifetime.` },
-            { p: `Manchester had the combination: damp air that suited cotton spinning, Lancashire coal, water power in the surrounding valleys, and Liverpool as a port for imported raw cotton, which after the <span class="num">1790</span>s came increasingly from the slave plantations of the American South, the connection the Topic 5.8 chapter follows.` },
-            { p: `What it did not have was any of the apparatus a city needs. No sewers, no clean water supply, no building regulation, no police force to speak of, and a municipal government designed for a market town. The Topic 5.9 chapter is what happened as a consequence, and the reason it belongs there rather than here is that the crisis was a result of speed rather than of factories as such: a city cannot grow twelvefold in two generations and have infrastructure, whatever its industry.` }
-          ]
-        }
-      ],
-      useThis: {
-        tool: `Concentration as control. <em>The mechanism is that a machine too large and too power-hungry for a cottage forces workers to come to it, and once they are all under one roof the employer can set the pace mechanically through the shafting, enforce hours by the clock, supervise continuously and subdivide the work, so the factory buys discipline as much as it buys output.</em>`,
-        limit: `The transition was slow and uneven. Handloom weaving expanded before it collapsed, many trades stayed in workshops for decades, and in 1850 most British workers still did not work in a factory.`,
-        comparison: `Against the <em>putting-out system</em> it replaced: the same merchant capital, the same raw material and often the same families, with the location of the machine as the only structural difference. That is why the location is the thing to write about, and why the Luddites in section 04 were arguing about terms rather than about technology.`
-      },
-      terms: [
-        ['Putting-out system', 'Household production on household equipment at household hours, paid by the piece, which the factory replaced.'],
-        ['Water frame', 'Arkwright\'s spinning machine, too large and power-hungry for a cottage, which is why the workers had to come to it.'],
-        ['Cromford', 'Arkwright\'s 1771 mill, the standard marker for the concentration of workers and machines under one roof.'],
-        ['Time discipline', 'The shift from working until a task is done to selling hours an employer owns, enforced by clocks, fines and gates.'],
-        ['Manchester', 'The cotton city that grew from about 25,000 in 1772 to about 300,000 by 1850, with no infrastructure built to match.']
-      ]
-    },
-
-    // ── 04 ────────────────────────────────────────────────────────────────────
-    {
-      id: 'workers',
-      num: '04',
-      accent: 'oxide',
-      name: 'What It Did to the People Doing the Work',
-      navLabel: 'The workers',
-      dates: 'c. 1780 to 1840 &nbsp;·&nbsp; Deskilling, children, Luddites',
-      thesis: `The core grievance of early industrial labor was not poverty, which was old, and not machinery, which people had used for centuries. It was the loss of control: over the pace, over the skill that made you worth hiring, and over whether your children worked.`,
-      parts: [
-        {
-          heading: 'Two effects, stated precisely',
-          blocks: [
-            { p: `<b>Deskilling and the loss of craft autonomy.</b> A skilled handloom weaver or a hand spinner had bargaining power, because the skill took years to learn and could not be replaced by the next person off the street. A machine that performs the skilled part of the operation converts that job into machine-tending, which can be learned in days. Wages fall, because the labor is now replaceable, and the worker's independence goes with them: a weaver who owned a loom sold cloth, and a machine-tender sells hours. The handloom weavers are the tragedy of the period, since their numbers rose while power looms were still poor and then their trade collapsed under them across the <span class="num">1820</span>s and <span class="num">1830</span>s into destitution.` },
-            { p: `<b>Hours, danger and children.</b> Twelve to sixteen hour days were common; the machines set the pace and did not tire; unguarded shafting, belts and gears took fingers, hands and lives; cotton dust and, in mines, coal dust destroyed lungs. Children worked from very young ages, in mills because small hands could piece broken threads and small bodies could get under running machinery to clean it, and in mines because a small child could work a ventilation door or pull a corve along a low seam. Children were also cheap, obedient and, decisively, could not organize.` },
-            { p: `Two clarifications keep this accurate. Child labor was not invented by the factory; children had always worked on farms and in workshops. What changed was the setting: work away from the family, for a stranger, on machine hours, for twelve hours or more, in conditions that maimed. And the standard-of-living debate among historians remains genuinely open, since real wages rose over the long run while heights fell, mortality in industrial towns was appalling and the improvement did not arrive for the first generations. The honest formulation is that the long-run gain was real and the people who paid for it were not the people who received it.` }
-          ]
-        },
-        {
-          heading: 'What the Luddites were objecting to',
-          blocks: [
-            { p: `Between <span class="num">1811</span> and <span class="num">1816</span>, textile workers in Nottinghamshire, Yorkshire and Lancashire broke machinery, in organized night raids, under letters signed by a fictitious General Ned Ludd. The state responded with troops, in numbers comparable to an army sent abroad, and made machine-breaking a capital offense in <span class="num">1812</span>; men were hanged and transported.` },
-            { p: `The word <span class="kt">Luddite</span> now means someone irrationally hostile to technology, and that is a defeated movement being described by the people who defeated it. The evidence says something narrower. They attacked particular machines, in particular shops, operated in particular ways: wide frames producing cheap cut-up stockings that undercut the trade's standards, and shearing frames replacing skilled croppers. They frequently left other machinery in the same building untouched. Their demands were about the terms on which machinery was used: minimum prices, apprenticeship rules, quality standards, and the customary regulations that older law had provided and Parliament was in the process of repealing.` },
-            { p: `So the accurate sentence is that the Luddites were defending a regulated trade rather than opposing machines, and that machine-breaking was a bargaining tactic available to workers whose combinations were illegal. That last clause is the bridge to Topic 5.8: when the law forbids you to organize and offers no arbitration, sabotage is what is left.` },
+            { p: `Inside, the work was split into steps. Raw cotton was cleaned, then carded (combed so its fibers lay straight), drawn out, twisted into a loose rope called roving, and spun into thread. Each step had its own machine, tended by workers who did that job and no other. This is <span class="kt">specialization of labor</span>.` },
+            { p: `Adam Smith, a Scottish thinker, showed why it mattered in <span class="num">1776</span>, using a small hand workshop that made pins. Ten men, each doing one or two of about eighteen steps, "could make among them upwards of forty-eight thousand pins in a day." One man working alone, he wrote, "could scarce ... make one pin in a day, and certainly could not make twenty." Because each job was small and simple, it could be learned quickly, so a mill could hire workers with no training, many of them children.` },
             { note: {
               kind: 'howknow',
-              label: 'How we know: the state wrote everything down',
-              html: `The archive for Luddism is unusually rich and unusually one-sided, and both facts are useful. Because the government treated it as insurrection during a war with France, it generated Home Office files full of spies&rsquo; reports, magistrates&rsquo; correspondence, troop deployments and trial records. That gives historians names, dates, targets and the movement&rsquo;s own threatening letters, which survive because they were filed as evidence. It also means the record was compiled by people trying to suppress it, and paid informers had an incentive to report conspiracies whether or not they existed. Read that way, the selectivity of the attacks is strong evidence precisely because it is inconvenient for the prosecution: the state was arguing these men were general enemies of order, and its own files show them choosing their targets.`
+              label: 'How we know: writers of the time',
+              html: `In 1835 Andrew Ure, a writer who admired factories, defined one as "the combined operation of many orders of work-people, adult and young, in tending with assiduous skill a system of productive machines continuously impelled by a central power": many kinds of workers, many machines, one power source. He was praising the system, so read him for what a factory was, not for how it felt to work there.`
             } }
           ]
         }
       ],
       useThis: {
-        tool: `Deskilling as a transfer of bargaining power. <em>The mechanism is that a skill taking years to acquire cannot be replaced quickly, which gives its holder leverage over wages and pace, so a machine that performs the skilled operation does not merely raise output, it moves that leverage to the employer by making the worker replaceable within days.</em>`,
-        limit: `Industrialization also created new skilled trades, engineers, mechanics, mule spinners, some of which became the best-paid and best-organized workers of the century, so deskilling describes a direction rather than a universal outcome.`,
-        comparison: `Against the <em>guild</em> system of Foundations 5 and Topic 1.6: guilds controlled entry, training, quality and price, which is exactly the regulated trade the Luddites were trying to defend. Their machine-breaking is better understood as the last defense of the guild principle than as the first attack on technology.`
+        tool: `Name both changes. <em>Where was the work done before and after? How was it divided before and after? What did that lead to?</em>`,
+        limit: `Smith described a hand workshop, not a powered mill; the factory added one building and one source of power to the old idea of splitting work.`,
+        comparison: `Against the putting-out system (section 01): there, the work went to the workers' homes; here, the workers went to the work.`
       },
       terms: [
-        ['Deskilling', 'The conversion of a skilled trade into machine-tending, which lowers wages by making the worker replaceable.'],
-        ['Handloom weavers', 'The trade whose numbers grew and then collapsed as power looms improved, the clearest casualty of the transition.'],
-        ['Luddites', 'Textile workers who broke selected machinery from 1811 to 1816 to defend customary terms, not machinery as such.'],
-        ['Frame Breaking Act', 'The 1812 law making machine-breaking a capital offense, met with troop deployments, hangings and transportation.'],
-        ['Standard-of-living debate', 'The open historical argument over whether early industrialization raised or lowered workers\' conditions, and for whom.']
+        ['Factory system', 'Making goods by bringing workers and machines together in one building, around one source of power.'],
+        ['Specialization of labor', 'Splitting work into steps, with each worker doing one step over and over.'],
+        ['Carding', 'Combing raw cotton so its fibers lie straight, before it is spun.']
       ]
     }
   ],
 
   closing: {
     heading: 'Building an Answer That Scores',
-    navLabel: 'Building a comparison',
-    intro: `Each card is a full argument: the claim, the specific evidence, and the reason. The first is the answer the success criteria are built around, so learn its structure rather than its list.`,
+    navLabel: 'The answer',
+    intro: `Each card gathers the evidence for one part of the answer. The College Board asks how environmental factors contributed to industrialization, so the first card is the environment, the next two are what people built and how the factors combined, and the last is the factory system.`,
     pairs: [
       {
         category: 'Causation',
-        title: 'Every single factor fails, which is why the answer is the combination',
-        body: `Britain had coal and iron, but Song China had a coal and iron industry of extraordinary scale seven centuries earlier. It had cheap water transport, but the Dutch Republic had better. Enclosure pushed rural households into wage work, but displaced peasants across Europe became landless laborers because there were no factories to enter. It had Atlantic and Indian capital, but Spain took more bullion from the Americas than anyone and did not industrialize. It had secure property law after 1688 and a patent system from 1624, and France had the more distinguished scientific establishment and industrialized later. Name four, show each existed elsewhere without this result, and conclude on the combination, sharpened by the fact that British wages were high relative to cheap coal, so a fuel-burning machine paid for itself there and nowhere else.`
+        title: 'What nature gave',
+        body: `Evidence to sort: coal and iron close together and close to water; a shortage of wood by the 1600s; iron bought from Sweden and Russia; coal giving England about half its energy by 1700; Darby's iron made with coke (1709); coast and rivers; fast streams and water wheels; the Bridgewater Canal (1761) and the price of coal in Manchester. For each, say what it made cheaper or possible.`
       },
       {
-        category: 'Mechanism',
-        title: 'The engine was built where its own waste was free',
-        body: `Newcomen&rsquo;s 1712 atmospheric engine wasted most of its heat cooling and reheating the cylinder every stroke, which did not matter because it stood at a coal mine burning coal that was otherwise unsellable, pumping out the groundwater that was closing deep seams. Decades of practical use in that niche preceded Watt&rsquo;s separate condenser of 1769, which cut fuel use several times over and let steam pay its way away from a colliery. Even then it needed Wilkinson&rsquo;s 1774 boring machine for an accurate cylinder, Boulton&rsquo;s capital, and Cornish mines with no local coal as a first market. Rotary motion in 1781 is the moment it becomes general-purpose power.`
+        category: 'Causation',
+        title: 'What people built',
+        body: `Evidence to sort: turnips and clover; enclosure acts; Britain's population (about 8 million in 1761, about 10.5 million in 1801); a third of English men farming in 1801; Manchester (about 23,000 in 1773, 70,409 in 1801); patents since 1624 and Arkwright's of 1769; cotton grown by enslaved people in the Caribbean, South America and the United States; capital from trade; Need and Strutt. For each, say how it made a mill worth building.`
       },
       {
-        category: 'Structure',
-        title: 'The factory&rsquo;s innovation was the clock, not the machine',
-        body: `Under the putting-out system a household spun and wove on its own equipment at its own hours and was paid by the piece. Arkwright&rsquo;s water frame at Cromford in 1771 was too large and needed too much power for a cottage, so it sat beside a river and the workers came to it, keeping the machine&rsquo;s hours rather than their own. Concentration then permitted what mattered: pace set mechanically through the shafting, timekeeping enforced by fines and locked gates, continuous supervision, and work subdivided into tasks needing less skill. What is sold changes from output to hours, which is the foundation of the class relationship in Topic 5.6 and of everything workers organized about afterward.`
+        category: 'Causation',
+        title: 'How the factors combined',
+        body: `The Bridgewater Canal needed coal, water, an act of Parliament, the duke's money and a growing town. Pick another pair of factors and show how one made the other pay off: for example, cotton from abroad and water power at Cromford, or towns and canals in Manchester.`
       },
       {
-        category: 'Evidence',
-        title: 'The Luddites chose their targets, and the state&rsquo;s own files prove it',
-        body: `Between 1811 and 1816 textile workers broke machinery in organized night raids, and Parliament made machine-breaking a capital offense in 1812 and deployed troops in numbers comparable to an overseas army. But they attacked wide frames making cheap cut-up stockings that undercut trade standards, and shearing frames replacing skilled croppers, frequently leaving other machinery in the same building untouched, and their demands were for minimum prices, apprenticeship rules and quality regulation. The selectivity is strong evidence because it is inconvenient for the prosecution that recorded it. With combinations illegal and no arbitration available, breaking a specific machine was the bargaining tactic left, which is where Topic 5.8 begins.`
+        category: 'Change',
+        title: 'What the factory system changed',
+        body: `Evidence to sort: the putting-out system; Cromford (1771), its water wheel, its houses and its workers; the steps of cotton spinning, each with its own machine; Smith's pin workshop (1776); Ure's definition (1835). Explain the two changes, one place and one job each, and what they led to: more goods, made by workers with less training.`
       }
     ]
   }

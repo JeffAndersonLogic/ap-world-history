@@ -32,117 +32,140 @@
 
   lesson.map = {
     ...lesson.map,
+    title: "Britain and the Resources It Reached, c. 1700 to 1800",
+    caption: "A BeHistorical map of Britain and three places it reached for resources it did not have enough of at home: cotton from the Caribbean and South America, and later from the US South, and iron and timber from Sweden and Russia.",
+    intro: "Find Britain, then follow the three numbered arrows into it. Each arrow carries a resource Britain brought in from abroad. Britain's own coal, iron, rivers, and canals are inside the gold circle: they are too small to draw at this scale, and the First & 10 tells their story.",
+    prompt: "Using the map, explain how one resource from abroad helped industry grow in Britain. Name where it came from, what it was, and why Britain needed it from abroad.",
     key: [
-      { label: 'Coal fields and industrial cities', detail: 'Britain\'s industrial cities cluster precisely where coal and iron ore are found: Manchester (cotton, using Midlands coal), Birmingham (metal goods, using South Staffordshire coal and iron), Sheffield (steel, using Yorkshire coal and iron), Newcastle (coal export and shipbuilding). This geographic clustering is not coincidental, coal was too heavy and cheap to transport long distances before railroads, so factories had to be near the coal. This explains why Manchester was in Lancashire rather than London: London had markets and capital, but no coal. Industrial geography was coal geography.' },
-      { label: 'Canals and rivers as transportation infrastructure', detail: 'Before railroads, canals were the critical transportation infrastructure. The British canal network (built rapidly 1760s–1800s) connected coal fields to cities, cities to ports, and ports to markets. The Bridgewater Canal (1761, Manchester to the Worsley coal mines) halved the price of coal in Manchester virtually overnight, demonstrating the economic power of cheap bulk transportation. Canals also connected to rivers: the Trent and Mersey Canal joined the rivers of the Midlands to the port of Liverpool. Understanding canals helps explain WHY industrialization concentrated where it did geographically.' },
-      { label: 'Manchester: case study in industrial urbanization', detail: 'Manchester is the archetypal industrial city, the first place in the world where the full consequences of industrialization were visible at scale. In 1772 it was a modest market town; by 1850 it was the second city of England. Its growth was powered entirely by cotton spinning mills powered first by water and then by steam. Friedrich Engels visited in 1842 and described what he found in The Condition of the Working Class in England (1845): workers packed into back-to-back housing without light, ventilation, or clean water; children working before dawn; rivers running with industrial effluent. Manchester was both the triumph of industrialization and its most devastating indictment.' },
-      { label: 'Geographic takeaway: geography as necessary but not sufficient', detail: 'Britain\'s geographic advantages, coal deposits, rivers, coastline, were necessary but not sufficient causes of industrialization. France also had coal; Germany had coal and iron; China had both. What Britain had that these others did not was the specific combination: coal AND rivers AND capital AND political stability AND enclosure AND scientific culture AND legal infrastructure, all present at the same moment. This is the critical lesson for AP causation: multi-factor causation requires identifying not just each factor but how they interacted. The factors were not independent; each enabled and amplified the others.' }
+      { label: "Britain", detail: "The gold circle. Inside it, at a scale too small to draw here, are Britain's coal and iron, often close together and close to rivers and the sea, and the canals that linked them to towns such as Manchester." },
+      { label: "Arrows 1 and 2: cotton", detail: "Cotton does not grow in Britain's climate. By the 1780s most of the cotton spun in Manchester was grown by enslaved people on plantations in the Caribbean and South America (arrow 1). After the 1790s, more and more came from plantations in the US South (arrow 2)." },
+      { label: "Arrow 3: iron and timber", detail: "Britain had cut down most of its old forests by the 1600s, so wood was expensive, and much of the iron it used was bought from Sweden and Russia, where forests were still large." },
+      { label: "Reading the map", detail: "The shaded areas mark regions, not exact borders. The map shows only the resources this topic names; Britain traded with many more places." }
     ]
   };
 
   lesson.stableImages = {
-    map:             '../assets/images/commons/casta-painting-all-bdc286.jpg',
-    first10:         '../assets/images/commons/waldseemuller-map-2-f5c64b.jpg',
-    contentDelivery: '../assets/images/commons/florentinecodex-bk12-f54-smallpox-6163e9.jpg',
-    beSurreal:       '../assets/images/commons/voc-faaae0.jpg',
-    skill:           '../assets/images/commons/1700-ce-world-map-1696ff.png',
-    checkpoint1:     '../assets/images/commons/astrolabe-persian-18c-8ebe5d.jpg',
-    evidence:        '../assets/images/commons/columbus-taking-possession-d0d171.jpg',
-    source:          '../assets/images/commons/loren-mozley-pueblo-revolt-1680-installed-1936-abq-nm-73e5bf.jpg',
-    beInTheRoom:     '../assets/images/commons/ferdinand-magellan-9de032.jpg',
-    checkpoint2:     '../assets/images/commons/pillar-of-vasco-da-gama-1533aa.jpg'
+    map:             '../assets/images/instructional-maps/topic-5-3.svg',
+    first10:         '../assets/images/commons/philipp-jakob-loutherbourg-d-j-002-23c595.jpg',
+    contentDelivery: '../assets/images/topics/5-3/carding-drawing-roving-allom-engraving.jpg',
+    beSurreal:       '',
+    skill:           '../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg',
+    checkpoint1:     '../assets/images/topics/5-3/cotton-plant-pass-after-merian-1807.jpg',
+    evidence:        '../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg',
+    source:          '',
+    beInTheRoom:     '',
+    checkpoint2:     '../assets/images/topics/5-3/mule-spinning-allom-1834.jpg'
+  };
+
+  lesson.classPresentation = {
+    title: 'Class Slides: Coal, Water, and One Roof',
+    desc: "Follow the story: what nature gave Britain (coal, iron, too little wood, and water), what people built on top of it (better farming, towns, laws, cotton from abroad, and capital), how the factors worked together in the Bridgewater Canal, and how the factory put the work in one place and gave each worker one job.",
+    url: 'presentation-topic-5-3-student.html'
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-5/the-factory-commission.html',
-    desc: "Testify at Manchester’s 1833 Factory Commission and decide how Britain can regulate child labor without ignoring wages, industrial competition, or enforcement."
+    url: '../beintheroom/unit-5/the-mill-partners.html',
+    desc: "Nottingham, early 1771. As one of Richard Arkwright's partners, decide where to build the new spinning mill, how to divide the work inside it, and how to pay for it and protect it."
   };
 
   lesson.skillBuilder = {
-    label: 'Causation practice',
-    title: 'Multi-Factor Causation: Why Did the Industrial Revolution Begin in Britain?',
-    intro: 'Causation for Topic 5.3 requires identifying multiple factors and explaining how they interacted, not just listing causes but explaining the mechanism connecting each cause to its effect. The most common AP error is treating industrialization as having a single cause ("Britain had coal") or listing causes without explaining why each mattered. A strong causation argument demonstrates that the factors were interdependent: each enabled and amplified the others.',
+    label: "Developments and processes practice",
+    title: "Explain a Process, Step by Step",
+    intro: "Topic 5.3 asks you to explain how something caused something else. A cause is not explained until you say how it worked. To explain a process, name the starting point, then each step, joined by connecting words like \"which meant\" and \"so.\" Watch the move on one thing nature gave Britain, then try it on something people built.",
     steps: [
-      { label: 'Distinguish necessary from sufficient conditions', text: 'A necessary condition is one without which the outcome could not have occurred. A sufficient condition is one that, by itself, would produce the outcome. For the Industrial Revolution: coal was necessary (without coal, no steam power at this scale) but not sufficient (France and Germany had coal but industrialized later). Capital was necessary but not sufficient (the Netherlands had capital but did not industrialize first). Political stability was necessary but not sufficient (China had political stability). The combination was sufficient, any single factor removed would have changed the timing and form of industrialization. A strong AP causation argument identifies which factors were necessary and explains why the combination was sufficient.' },
-      { label: 'Explain how factors interacted (the mechanism)', text: 'The best causation arguments explain mechanisms, not just what happened but how one condition produced another. Example: Enclosure Acts → displaced rural workers → urban labor supply → factory wages possible → factory owners could hire workers → factory system expanded. Or: capital from Atlantic trade → investment in machinery → Watt steam engine commercially viable → steam power freed factories from rivers → factories could locate in cities near coal → Manchester urbanized. Notice that each arrow (→) represents a mechanism. Strong AP causation arguments trace at least two or three steps in this chain rather than jumping from cause directly to "industrialization happened."' },
-      { label: 'Write a multi-factor causation thesis', text: 'A strong causation thesis for Topic 5.3 identifies multiple interacting causes and explains their relationship: "The Industrial Revolution began in Britain rather than France or Germany because Britain possessed a unique combination of mutually reinforcing conditions: coal deposits located near navigable water (enabling cheap transportation), capital from Atlantic trade (enabling investment in machinery), Enclosure Acts that created an urban labor supply, and political stability that protected inventors\' profits through the patent system. No single factor was sufficient, but their combination in Britain at this moment created conditions that existed nowhere else in the 18th century." Notice how this thesis: names specific factors, explains their interaction, and addresses the comparison (why Britain rather than France or Germany).' }
+      { label: "Name the factor", text: "Start with one factor, stated as a fact. Example: \"Coal lay close to rivers and canals.\"" },
+      { label: "Say what it made cheaper or possible", text: "Add \"which meant\" and the mechanism, how the factor worked. Example: \"which meant coal could be floated to towns cheaply.\" When the Bridgewater Canal reached Manchester in 1761, the price of coal there fell by about half." },
+      { label: "Say what that led to", text: "Add \"so\" and the result. Example: \"so mills in Manchester paid less for fuel, and building a mill there was worth the risk.\"" },
+      { label: "Put it together", text: "Coal lay close to rivers and canals, which meant it could be floated to towns cheaply, so mills in Manchester paid less for fuel, and building a mill there was worth the risk. Use this frame: \"[The factor], which meant [what it made cheaper or possible], so [what that led to].\"" }
     ],
-    prompt: 'In 3–4 sentences, write a causation argument explaining why the Industrial Revolution began in Britain. Identify at least three specific factors and explain how two of them interacted, how did one condition enable or amplify another? End with a statement that addresses the implicit comparison: why Britain rather than France, Germany, or China?'
+    prompt: "Now do it yourself, twice. First, choose ONE thing people built: better farming, growing towns, laws that protected property, cotton from abroad, or saved-up capital. Explain it as a process with the frame: \"[The factor], which meant [what it made cheaper or possible], so [what that led to].\" Second, explain the factory system as a process in two or three sentences: what changed about where the work was done, what changed about how it was divided, and what that led to.",
+    criteria: [
+      "I named one factor people built, with a detail from the lesson.",
+      "I used \"which meant\" to say what it made cheaper or possible.",
+      "I used \"so\" to say what it led to.",
+      "I explained the factory system as a process: where the work was done, how it was divided, and what that led to."
+    ]
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: Why Britain? The Causes of Industrialization',
-      subtitle: 'Checks Learning Target 1 — multi-factor causation for why industrialization began in Britain.',
-      cardDesc: 'Coal, geography, capital, enclosure, political stability, and scientific culture as interacting causes of British industrialization.',
+      title: "Checkpoint 1: How Nature and People Caused Industry to Grow",
+      subtitle: "Checks Learning Target 1 and Success Criterion 1.",
+      cardDesc: "Two things nature gave Britain and two things people built, what each made cheaper or possible, and how two of them worked together.",
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Identify four factors that explain why the Industrial Revolution began in Britain. For each factor, explain: (1) what it was, and (2) what specific role it played in enabling industrialization. Then explain how two of your four factors interacted, how did one condition enable or amplify another? End with a comparison: which one factor do you think was most important, and why?',
-      responseType: 'Checkpoint 1',
-      terms: ['coal', 'enclosure acts', 'capital', 'Glorious Revolution', 'patent system', 'canals', 'Royal Society', 'putting-out system', 'steam engine', 'geographic advantages'],
-      focus: ['Name four factors, be specific about what each one was and how it worked.', 'Explain how two factors interacted, mechanism, not just correlation.', 'Name the most important factor and defend your choice with evidence.']
+      prompt: "Answer in three steps. (1) Choose TWO things nature gave Britain: its coal and iron, its shortage of wood, or its rivers, coast, and canals. For each one, explain what it made cheaper or possible, and what that led to. (2) Choose TWO things people built: better farming, growing towns, laws that protected property, cotton from abroad, or saved-up capital. For each one, explain how it helped make a mill worth building. (3) Explain one way two of your four factors worked together, as the Bridgewater Canal shows.",
+      responseType: "Checkpoint 1",
+      terms: ["coal", "iron", "timber", "wood", "charcoal", "coke", "Coalbrookdale", "Darby", "water", "rivers", "canal", "Bridgewater Canal", "Manchester", "price", "farming", "turnips", "clover", "enclosure", "population", "towns", "urbanization", "law", "patent", "Parliament", "property", "cotton", "enslaved", "plantations", "Caribbean", "capital", "investment", "profit", "Arkwright"],
+      focus: ["Explain two things nature gave Britain, each with what it made cheaper or possible.", "Explain two things people built, each with how it made a mill worth building.", "Explain how two factors worked together."]
     },
     {
-      title: 'Checkpoint 2: The Human Cost of Industrialization',
-      subtitle: 'Checks Learning Target 2 — social effects of industrialization on workers.',
-      cardDesc: 'Factory system, urbanization, child labor, Luddites, and working-class resistance.',
+      title: "Checkpoint 2: What the Factory System Changed",
+      subtitle: "Checks Learning Target 2, Success Criterion 2, and Unit 5 Learning Objective D.",
+      cardDesc: "How the factory gathered production in one place, how it split the work into specialized jobs, and why that made more goods.",
       learningTargets: [lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[1].criteria],
-      prompt: 'Describe two ways the factory system changed the experience of work compared to the domestic/putting-out system. Be specific about what was lost and what (if anything) was gained. Then explain the Luddite response: what exactly were they protesting, and why does calling them "anti-technology" mischaracterize their position? End with an argumentation statement: overall, did the first generation of factory workers experience industrialization as a benefit or a harm?',
-      responseType: 'Checkpoint 2',
-      terms: ['factory system', 'putting-out system', 'Manchester', 'Luddites', 'Chartism', 'child labor', 'Factory Acts', 'urbanization', 'working conditions', 'standard of living'],
-      focus: ['Describe two specific changes from domestic to factory work, what exactly was different?', 'Explain the Luddite position accurately, not anti-technology, but what specifically?', 'Make a supported argumentation claim: benefit or harm for the first generation of workers?']
+      prompt: "Explain how the factory system changed the way cloth was made. (1) Describe how thread and cloth were made under the putting-out system: where the work happened and who did each step. (2) Explain how a mill like Arkwright's at Cromford (1771) gathered production in one place: what moved, what powered the machines, and who set the hours. (3) Explain how the work inside a cotton mill was split into steps, with each worker tending one. (4) Use Adam Smith's pin workshop to explain why splitting the work made more goods. (5) Explain one way an environmental factor, such as the water that turned Cromford's wheel or the cotton grown abroad, made the factory possible.",
+      responseType: "Checkpoint 2",
+      skill: "Causation",
+      terms: ["putting-out system", "merchant", "home", "factory system", "factory", "mill", "Cromford", "Arkwright", "1771", "water wheel", "one building", "hours", "overseer", "specialization", "specialization of labor", "step", "carding", "spinning", "machine", "Adam Smith", "pins", "forty-eight thousand", "more goods", "cause", "effect"],
+      focus: ["Describe the putting-out system.", "Explain how the factory gathered production in one place.", "Explain how the work was split into specialized steps.", "Explain why splitting the work made more goods.", "Connect the factory to one environmental factor."]
     }
   ];
 
   // ── Module 07, Evidence Lab ───────────────────────────────────────────────
   lesson.evidenceLab = {
-    title: 'Evidence Lab: Build and Test a Claim',
-    task: 'Choose at least two evidence cards. Decide which historical claim each card is most useful for, name one precise detail from each rather than summarizing it, explain the inference that carries the detail to the claim, and identify one limitation or missing piece of evidence. The caption identifies the object; it does not supply your conclusion.',
-    prompt: 'Explain why industrialization began in Britain. Use evidence from at least two different causal categories—resources, technology, labor, capital, markets, or institutions—and explain how the causes worked together.'
+    title: 'Evidence Lab: Causes of Industry, and the Factory System',
+    task: "Choose at least two evidence cards. For each, say what kind of source it is and who made it, name one precise detail rather than summarizing it, explain what that detail shows about a cause of industrialization or about the factory system, and name one thing the source cannot tell you. The caption identifies the source; it does not supply your conclusion.",
+    prompt: "Make a claim about one cause of industrialization in Britain, or about one change the factory system made. Support it with evidence from at least two cards."
   };
 
   lesson.images = [
     {
-      title: 'Powerloom weaving, 1835',
-      url: '../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Powerloom_weaving_in_1835.jpg',
-      caption: 'Engraving of a powerloom weaving shed, published in 1835. An idealized illustration made for a book about the factory system, not a photograph.',
-      prompt: 'NOTICE how the room is arranged and who is working in it. INFER what the arrangement requires of the workers\' day. The image was made to present the system favourably: what would that have left out?'
+      title: "Coalbrookdale by Night, 1801",
+      alt: "A painting of an ironworks at night in a river valley: furnaces send up great clouds of orange fire and smoke behind dark buildings with tall chimneys, while in the foreground a horse pulls a cart along a road strewn with iron cylinders",
+      url: "../assets/images/commons/philipp-jakob-loutherbourg-d-j-002-23c595.jpg",
+      sourceUrl: "https://collection.sciencemuseumgroup.org.uk/objects/co65204/coalbrookdale-by-night-by-philippe-jacques-de-loutherbourg",
+      caption: "An oil painting by Philip James de Loutherbourg, shown in London in 1801, of the Madeley Wood furnaces near Coalbrookdale, beside the River Severn, where iron was made with coke. Loutherbourg also painted scenery for the theater. Science Museum, London.",
+      prompt: "NOTICE what is making the light, and what the carts in front are carrying. INFER what this place had close together that made iron here. What would a painter who also painted stage scenery gain by making the scene more dramatic than it was?"
     },
     {
-      title: 'Why industrialization began in Britain',
-      url: '../assets/images/instructional-maps/topic-5-3.svg',
-      sourceUrl: '../assets/images/instructional-maps/topic-5-3.svg',
-      caption: 'BeHistorical reference map. Secondary geographic reconstruction of coalfields, industrial districts, canals and ports.',
-      prompt: 'NOTICE what sits close to what. INFER how proximity of fuel, factory and port lowers a cost. What non-geographic cause must you pair with this to avoid arguing that geography alone decided it?'
+      title: "A Cotton Plant, 1807",
+      alt: "A hand-colored botanical print of a cotton plant with broad green leaves, two large yellow flowers, green seed pods, and one brown pod split open to show white cotton fiber; a spiny caterpillar climbs the stem",
+      url: "../assets/images/topics/5-3/cotton-plant-pass-after-merian-1807.jpg",
+      sourceUrl: "https://wellcomecollection.org/works/r986rsr9",
+      caption: "A hand-colored engraving by J. Pass after a drawing by Maria Sibylla Merian, published in London in 1807. Merian drew the plants and insects of Suriname, a Dutch plantation colony in South America. Wellcome Collection.",
+      prompt: "NOTICE which part of the plant becomes cotton thread. INFER why a British cotton mill depended on places far from Britain. What does a picture of a plant not tell you about the people who were forced to grow and pick it?"
     },
     {
-      title: 'Steam power becomes commercially useful',
-      label: 'Technology record · James Watt patent, 1769',
-      sourceText: [
-        'Watt patented a separate condenser.',
-        'Steam engines used fuel more efficiently than earlier designs.'
-      ],
-      caption: 'A patent record: the improvement that made steam efficient enough to be worth installing.',
-      prompt: 'What production or location constraint did improved steam power reduce? Why is an invention alone insufficient to explain industrialization?'
+      title: "Mule Spinning, 1834",
+      alt: "An engraving of a long spinning room under an iron roof with skylights: two long spinning machines run down each side with hundreds of spindles; a man leans on one machine, a woman reaches across the threads of another, and a boy crawls underneath sweeping",
+      url: "../assets/images/topics/5-3/mule-spinning-allom-1834.jpg",
+      sourceUrl: "https://wellcomecollection.org/works/h7dsvghc",
+      caption: "An engraving drawn by Thomas Allom and published in London in 1834 for a book about the cotton industry. It shows one room of a cotton mill where thread was spun, sixty years after Cromford. Wellcome Collection.",
+      prompt: "NOTICE how many machines there are and what each person is doing. INFER how the work in this room is divided, and what turns the machines. The picture was made for a book that praised the cotton industry: what might it leave out?"
     },
     {
-      title: 'Cromford factory system',
-      label: 'Industrial site record · Richard Arkwright, Cromford Mill, 1771',
-      sourceText: [
-        'Water-powered spinning machinery',
-        'Workers and machines concentrated under one roof'
-      ],
-      caption: 'A single mill of 1771, and the arrangement of people and machines that made it a new kind of workplace.',
-      prompt: 'Which observable features distinguish factory production from household production? What claim can this card support about organization of labor?'
+      title: "Power-Loom Weaving, 1835",
+      alt: "An engraving of a weaving shed with two long rows of power looms driven by belts from shafts near the ceiling; young women tend the looms while a man in a cap stands in the aisle",
+      url: "../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Powerloom_weaving_in_1835.jpg",
+      caption: "An engraving drawn by Thomas Allom and engraved by J. Tingle, published in Edward Baines's History of the Cotton Manufacture in Great Britain (1835). By then weaving, too, had moved into mills.",
+      prompt: "NOTICE where the looms get their power, and how many looms each worker tends. INFER how weaving in this shed differs from weaving at home under the putting-out system. What can an engraving made for a history of the cotton trade not tell you?"
     },
     {
-      title: 'Coalbrookdale by Night, 1801',
-      url: '../assets/images/commons/philipp-jakob-loutherbourg-d-j-002-23c595.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Philipp_Jakob_Loutherbourg_d._J._002.jpg',
-      caption: 'Philip James de Loutherbourg, 1801, showing the Bedlam Furnaces in the Severn Gorge. Painted while the works were running.',
-      prompt: 'NOTICE what is producing the light in this picture, and what time of day it is. INFER what changed about when and how long work could happen. What would this painter have gained by making the scene more dramatic than it was?'
+      title: "Adam Smith's Pin Workshop, 1776",
+      label: "Primary-source excerpt · Adam Smith, The Wealth of Nations, 1776, Book I, chapter 1",
+      sourceText: ["“One man draws out the wire; another straights it; a third cuts it; a fourth points it; a fifth grinds it at the top for receiving the head … divided into about eighteen distinct operations”", "“Those ten persons, therefore, could make among them upwards of forty-eight thousand pins in a day.”"],
+      caption: "Smith, a Scottish thinker, describes a small hand workshop he had seen, not a powered factory. Text from the Project Gutenberg edition.",
+      prompt: "What does each man do? INFER why splitting the work let ten men make so many pins. Smith saw a workshop, not a mill: what does a factory add that his workshop does not have?"
+    },
+    {
+      title: "The Patent Law of 1624",
+      label: "Law · Statute of Monopolies, section 6, passed by Parliament in 1624",
+      sourceText: ["“… Letters Patents and Grants of Privilege for the term of fourteen years or under, hereafter to be made of the sole working or making of any manner of new Manufactures within this Realm,”", "“to the true and first Inventor and Inventors of such Manufactures, which others at the time of making such Letters Patents and Grants shall not use …”"],
+      caption: "Spelling modernized from the text on legislation.gov.uk. \"Letters patent\" were the king's written grant; \"the sole working or making\" means the only right to make and use it. Richard Arkwright patented his spinning machine under this law in 1769.",
+      prompt: "What does this law give to \"the true and first Inventor,\" and for how long? INFER why a law like this would make someone more willing to spend money on a new machine. What can a law not tell you about whether it was enforced?"
     }
   ];
 

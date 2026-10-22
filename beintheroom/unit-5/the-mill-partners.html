@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Mill Partners | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "5.3",
+  "unit": "5",
+  "topicTitle": "The Industrial Revolution Begins",
+  "file": "the-mill-partners.html",
+  "title": "The *Mill Partners*",
+  "location": "Nottingham, England",
+  "date": "1771",
+  "lessonUrl": "../../unit-5/lesson-5-3-industrial-revolution-begins.html",
+  "alignment": {
+    "theme": "Humans and the Environments (ENV)",
+    "objective": "Explain how environmental factors contributed to industrialization from 1750 to 1900.",
+    "skill": "Causation, with Developments and Processes (1.B)",
+    "keyConcepts": [
+      "KC-5.1.I.A",
+      "KC-5.1.I.C"
+    ]
+  },
+  "premise": [
+    "Richard Arkwright has a new machine that spins strong cotton thread, and a patent on it since 1769. In Nottingham his first machines are turned by horses. Horses cost money to feed and tire out, and a business that wants to spin far more thread needs a stronger, steadier power.",
+    "His partners are stocking makers who grew rich in the hosiery trade, and they want thread for their stocking frames. They have put money in, and they will have to spend thousands of pounds more before the business earns anything back. The raw cotton comes by ship from abroad, much of it grown by enslaved people on plantations in the Caribbean.",
+    "You sit at the partners’ table. You must decide where to build a new mill, how to organize the work inside it, and how to protect the invention the whole business depends on. Every choice depends on what the land and the water can give you, and on what people can build on top of it."
+  ],
+  "centralQuestion": "Where should the partners build a new spinning mill, and how should they organize and protect it, when water, workers, buyers, money, and the law all pull in different directions?",
+  "roles": [
+    {
+      "id": "inventor",
+      "name": "Inventor and Mill Manager",
+      "position": "You built the spinning machine and you run the mill. Your name is on the patent.",
+      "power": "You know the machines better than anyone, but the money is mostly your partners’, and a court could take your patent away.",
+      "goals": "Build a mill big enough to prove the machine, and keep control of how it is run.",
+      "fears": "Copiers may build your machine and undersell you before your patent runs out.",
+      "lens": "A machine is only as good as the power that turns it and the people who tend it.",
+      "preference": "Build beside fast water, run the mill on fixed hours, and give each worker one step.",
+      "blindSpot": "You may care more about the machines than about the people who must work them."
+    },
+    {
+      "id": "hosier",
+      "name": "Stocking-Maker Partner",
+      "position": "You grew rich making stockings, and you have put your savings into the spinning business.",
+      "power": "You can pay for buildings and machines, but you cannot run them, and your money is at risk until the mill makes a profit.",
+      "goals": "Get strong, cheap cotton thread for your stocking frames, and get your money back.",
+      "fears": "The partners may spend everything before the mill works, or build it somewhere you cannot reach.",
+      "lens": "A business must sell what it makes, so it should stay close to its buyers.",
+      "preference": "Build where the work can be watched and the thread can reach your frames quickly.",
+      "blindSpot": "You may judge every choice by your own trade and miss what the machines need."
+    },
+    {
+      "id": "banker",
+      "name": "Nottingham Banker",
+      "position": "You lend money to merchants and makers in Nottingham, and you introduced the partners to each other.",
+      "power": "You can lend or refuse, but you do not own the business or the patent.",
+      "goals": "Lend to a business that will last and repay you.",
+      "fears": "A new kind of mill, far from any town, may fail and take your loan with it.",
+      "lens": "Money goes where the law protects what it builds and where the risk can be judged.",
+      "preference": "Lend only if the patent is defended and the partners put in their own money first.",
+      "blindSpot": "You may trust the law to protect the partners more than it really will."
+    },
+    {
+      "id": "spinner",
+      "name": "Village Spinner",
+      "position": "You have spun thread at home all your life, from cotton and wool a merchant brings to your door, and he pays you for each piece.",
+      "power": "You know how to spin, but you own only your wheel, and you cannot set the price of thread.",
+      "goals": "Earn enough for your family, at home, at a pace you choose.",
+      "fears": "A mill that spins cheaper thread may leave the merchant no reason to come to your door.",
+      "lens": "Work is not only wages: it is where you work, who sets the hours, and how much of the job is yours.",
+      "preference": "Keep some spinning in homes, or bring whole families into the mill together.",
+      "blindSpot": "You may not see how much cheaper the mill’s thread will be, or how fast it will come."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "horses",
+      "label": "Horse Power",
+      "text": "Arkwright’s first spinning machines, in Nottingham, were turned by horses.",
+      "why": "Shows why the partners need a stronger, steadier source of power."
+    },
+    {
+      "id": "water",
+      "label": "Water at Cromford",
+      "text": "At Cromford, in Derbyshire’s Derwent valley, a brook and a tunnel draining the nearby lead mines give a steady flow of water, and the water from underground is said never to freeze.",
+      "why": "Shows how the environment could power a mill all year."
+    },
+    {
+      "id": "village",
+      "label": "A Small Valley Village",
+      "text": "Cromford is a small village in hilly country, away from the big towns. Men there work the lead mines, and their wives and children could take mill work, but there are not enough people for a big mill.",
+      "why": "Shows that a good place for power may be a hard place to find workers."
+    },
+    {
+      "id": "patent",
+      "label": "The Patent of 1769",
+      "text": "Under a law of 1624, Arkwright’s patent gives him the sole right to his spinning machine for fourteen years, if a court will defend it.",
+      "why": "Shows how the law protected private property, and its limits."
+    },
+    {
+      "id": "cotton",
+      "label": "Cotton From Abroad",
+      "text": "Cotton does not grow in Britain. It comes by ship, much of it from plantations in the Caribbean worked by enslaved people.",
+      "why": "Shows that the mill depends on resources, and on forced labor, far from Britain."
+    },
+    {
+      "id": "capital",
+      "label": "Money at Risk",
+      "text": "A mill and its machines cost thousands of pounds before they earn anything, at a time when a carpenter earns no more than about £36 a year.",
+      "why": "Shows why saved-up capital mattered."
+    },
+    {
+      "id": "canal",
+      "label": "The Bridgewater Canal",
+      "text": "Since 1761 a canal has carried coal from the Duke of Bridgewater’s mines into Manchester, and the price of coal there has fallen by about half.",
+      "why": "Shows how waterways made heavy goods cheap, and why some towns were growing fast."
+    },
+    {
+      "id": "silkmill",
+      "label": "The Derby Silk Mill",
+      "text": "In Derby, a silk mill has run water-powered machines in one building since the 1720s, with workers tending them.",
+      "why": "Shows that gathering machines and workers in one place had been tried before."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "site",
+      "title": "Choose where to build",
+      "prompt": "Where should the partners build the new mill?",
+      "options": [
+        {
+          "id": "cromford",
+          "title": "Build beside the water at Cromford",
+          "action": "Lease land in the Derwent valley and turn the machines with a water wheel fed by the brook and the mine drain.",
+          "benefits": "Steady water power all year, and land and labor that cost less than in a town.",
+          "worries": "The village is too small, so the partners must bring in workers and may have to build houses for them.",
+          "tradeoff": "Power from nature is cheap, but the people must be found or brought."
+        },
+        {
+          "id": "nottingham",
+          "title": "Stay in Nottingham with horses",
+          "action": "Keep the mill in town, close to the stocking makers, and add more horses.",
+          "benefits": "Workers, buyers, and the partners are all close at hand.",
+          "worries": "Horses are costly and weak, so the mill cannot grow much.",
+          "tradeoff": "Staying near buyers keeps the business small."
+        },
+        {
+          "id": "manchester",
+          "title": "Move near Manchester",
+          "action": "Build near the cotton trade of Lancashire, where coal is cheaper since the canal and spinners are many.",
+          "benefits": "Raw cotton, buyers, and many workers who already know cotton.",
+          "worries": "It is far from the partners, and rivals there could copy the machines more easily.",
+          "tradeoff": "A bigger market brings bigger risks to the patent."
+        }
+      ]
+    },
+    {
+      "id": "work",
+      "title": "Organize the work",
+      "prompt": "How should the work be organized?",
+      "options": [
+        {
+          "id": "steps",
+          "title": "One step for each worker",
+          "action": "Bring everyone into one building at fixed hours, and give each worker one step: feeding the machine, mending threads, carrying the cans.",
+          "benefits": "Each job can be learned in days, so the mill can hire workers with no training and make far more thread.",
+          "worries": "Workers lose the whole craft and must work to the mill’s clock.",
+          "tradeoff": "More thread, faster, but each worker knows only one step."
+        },
+        {
+          "id": "families",
+          "title": "Hire whole families",
+          "action": "Bring families into the mill together and let parents oversee their own children at the machines.",
+          "benefits": "Families stay together, and the mill gets a steady supply of workers.",
+          "worries": "Children work long hours, and the mill still sets the pace.",
+          "tradeoff": "A familiar way of working inside a new kind of workplace."
+        },
+        {
+          "id": "homes",
+          "title": "Keep spinning in homes",
+          "action": "Spin only the hardest thread in the mill, and put out the rest to spinners in their homes as before.",
+          "benefits": "Village spinners keep their work, and the partners need a smaller building.",
+          "worries": "The merchant cannot watch the work or set the hours, and home spinning is slower.",
+          "tradeoff": "Less change for spinners, and less thread for the partners."
+        }
+      ]
+    },
+    {
+      "id": "protect",
+      "title": "Protect and pay for it",
+      "prompt": "How should the partners protect the invention and pay for the mill?",
+      "options": [
+        {
+          "id": "patent",
+          "title": "Defend the patent in court",
+          "action": "Use the patent to stop anyone copying the machine, and sue anyone who does.",
+          "benefits": "The law protects what the partners built, and investors feel safe.",
+          "worries": "Court cases cost money, and a judge may decide the ideas were not Arkwright’s own.",
+          "tradeoff": "Legal protection is strong only if the courts uphold it."
+        },
+        {
+          "id": "secret",
+          "title": "Keep the mill a secret",
+          "action": "Keep visitors out, and let workers see only their own step.",
+          "benefits": "Copiers cannot learn the whole process easily.",
+          "worries": "Secrets leak when workers leave, and the patent is not used.",
+          "tradeoff": "Splitting the work helps keep the secret, but trust is low."
+        },
+        {
+          "id": "license",
+          "title": "Sell the right to copy",
+          "action": "Let other mill owners use the machine for a fee.",
+          "benefits": "Money comes in quickly to pay for the new mill.",
+          "worries": "Rivals grow with the partners’ invention.",
+          "tradeoff": "Fast money now may mean more competition later."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Step out of the room. Explain how one thing nature gave Britain (water, coal, or the land where cotton grew abroad) and one thing people built (a law, capital, towns, or better farming) helped cause industrial production to grow. Then explain how your choice about where to build or how to organize the work shows the factory system gathering production in one place and specializing labor.",
+  "sources": [
+    {
+      "label": "UNESCO World Heritage Centre, Derwent Valley Mills",
+      "url": "https://whc.unesco.org/en/list/1030/"
+    },
+    {
+      "label": "legislation.gov.uk, Statute of Monopolies, section 6 (1624)",
+      "url": "https://www.legislation.gov.uk/aep/Ja1/21/3/section/VI"
+    },
+    {
+      "label": "Science and Industry Museum, Manchester, cotton and slavery",
+      "url": "https://www.scienceandindustrymuseum.org.uk/objects-and-stories/manchester-cotton-and-slavery"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-beintheroom-capture.js"></script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>
