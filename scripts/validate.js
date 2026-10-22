@@ -775,6 +775,33 @@ section('eBook volumes are generated and linked');
   sectionDone(`${VOLUMES.length} eBook volume${VOLUMES.length === 1 ? '' : 's'} in a library the front door links`);
 }
 
+// 7d-ii. The privacy page exists, the front door links it, and it is finished.
+//
+// ZCS files the link to privacy.html as the course's student data privacy and
+// acceptable use policy (requested by Dan Layton on 2026-10-22). Losing the
+// front door's link leaves a filed URL that families cannot find from the
+// site, and a bracketed placeholder left in it would be a draft published as
+// a district record. Both are silent: every other page still renders.
+{
+  section('Student data privacy page');
+  const policy = path.join(ROOT, 'privacy.html');
+  totalChecks++;
+  if (!exists(policy)) {
+    err(policy, 'privacy.html is missing, and ZCS holds its link as the course privacy policy');
+  } else {
+    const home = read(path.join(ROOT, 'index.html')) || '';
+    if (!/href="privacy\.html"/.test(home)) {
+      err(path.join(ROOT, 'index.html'), 'the front door does not link privacy.html, so the privacy policy is reachable only by typing the URL');
+    }
+    const text = (read(policy) || '').replace(/<style[\s\S]*?<\/style>/g, '').replace(/<[^>]+>/g, ' ');
+    const placeholder = text.match(/\[[^\]]{1,80}\]/);
+    if (placeholder) {
+      err(policy, `privacy.html still carries a draft placeholder: ${placeholder[0]}`);
+    }
+  }
+  sectionDone('privacy page present, finished and linked from the front door');
+}
+
 // 7e. "Listen to this section" is generated, shared, and reaches every section.
 //
 // The feature is an instructional listening layer over the eBook, described in
