@@ -155,7 +155,7 @@ First & 10 (what students were last taught).
 
 Last topic ended with a turn: the new way of making things did not stay in Britain. In 1771 Arkwright's
 mill at Cromford put spinning under one roof, beside one water wheel. Over the next 130 years that way of
-making things travelled. Where did it go, and what happened to the places that had made most of the
+making things traveled. Where did it go, and what happened to the places that had made most of the
 world's goods before?
 
 **Who made the world's goods in 1750.** Almost everything was made by hand, in homes and workshops.
@@ -170,7 +170,7 @@ uses them says so; they show the size of the change, not exact amounts.)
 to work abroad, and banned the export of textile machinery. Machines can be hidden. People cannot be
 stopped from remembering.
 
-**The methods travelled with people.** Samuel Slater had trained at Jedediah Strutt's mill in
+**The methods traveled with people.** Samuel Slater had trained at Jedediah Strutt's mill in
 Derbyshire (Strutt was Arkwright's partner). In 1789 he sailed for the United States without telling
 anyone what he knew, and in Pawtucket, Rhode Island, he built water-powered spinning machines from
 memory; the Slater Mill building went up in 1793. In Belgium, John Cockerill, the son of an English
@@ -188,7 +188,7 @@ him, Yuzovka. In Japan, the Osaka Spinning Company opened in 1883 with British-m
 driven by steam, and ran day and night. (How the Russian and Japanese governments pushed industry on
 purpose is Topic 5.6.)
 
-**The pattern.** Wherever the new methods went, three things travelled together: British machines, or
+**The pattern.** Wherever the new methods went, three things traveled together: British machines, or
 the memory of them; skilled people who knew how to build and run them; and money to pay for them
 before they paid back. And they took root where the 5.3 factors were waiting: coal, iron, water and
 growing towns.
@@ -249,7 +249,7 @@ and a list of countries is not a development.
 "a fast-growing share" and "kept making goods ... a shrinking share" are KC-5.1.II.B's two halves;
 "mostly by hand" against "factory" is the objective's *modes*.
 
-Shorter for the wall: **The factory travelled. The share moved. The old makers kept making.**
+Shorter for the wall: **The factory traveled. The share moved. The old makers kept making.**
 
 ## 5. Must-have evidence and what each one proves
 
@@ -258,7 +258,7 @@ Shorter for the wall: **The factory travelled. The share moved. The old makers k
 | Bairoch's estimates, 1750: China about a third, India about a quarter, Europe about a quarter, Britain under 2 percent | KC-5.1.II.B (the starting shares) | The **before**: most manufactured goods were made by hand in Asia. |
 | India's cloth sold across Europe, Africa, the Middle East and Southeast Asia | KC-5.1.II.B (textiles in India) | India was a great **manufacturing** region. |
 | British laws against emigration of skilled workers and export of machinery (to 1824 and 1843) | KC-5.1.I.D | Britain tried to **stop** the spread, and failed. |
-| Slater: trained at Strutt's mill, to the US in 1789, Pawtucket mill 1793 | KC-5.1.I.D (the United States) | The methods travelled with **people**. |
+| Slater: trained at Strutt's mill, to the US in 1789, Pawtucket mill 1793 | KC-5.1.I.D (the United States) | The methods traveled with **people**. |
 | Cockerill at Seraing, 1817, on the Liège coalfield | KC-5.1.I.D (other parts of Europe) | Same pattern on the continent, **on coal**. |
 | Nuremberg to Fürth railway, 1835, with an English locomotive | KC-5.1.I.D (other parts of Europe) | Then with **machines**. |
 | Lowell mills from the 1820s | KC-5.1.I.D (the United States) | Then with **money**: merchants' capital. |
@@ -288,7 +288,7 @@ Named examples are evidence inside a claim. None earns its own slide unless the 
 4. **First & 10.**
 5. **Before: who made the world's goods in 1750** (KC-5.1.II.B, the starting shares).
 6. **Britain tried to keep the secret** (KC-5.1.I.D).
-7. **The methods travelled: people, then machines and money** (Slater, Cockerill, the 1835 railway,
+7. **The methods traveled: people, then machines and money** (Slater, Cockerill, the 1835 railway,
    Lowell; KC-5.1.I.D).
 8. **Russia and Japan, later** (Hughes, Osaka; KC-5.1.I.D). One line on the governments: 5.6.
 9. **The skill (5.A): find the pattern**, modeled on a neutral everyday case.
@@ -311,7 +311,7 @@ machines) and *where* (Britain, then other parts of Europe, the United States, R
 the factory regions' share of the world's goods rose. **What continued:** people in India, China, Egypt
 and the Ottoman lands kept making cloth, iron and ships, mostly by hand, but their share fell.
 
-Result line: **The factory travelled. The share moved. The old makers kept making.**
+Result line: **The factory traveled. The share moved. The old makers kept making.**
 
 Why this shape: the reasoning move is Continuity and Change, and the objective asks how modes and
 locations "developed and changed over time." The CED's own sentence holds a change and a continuity
