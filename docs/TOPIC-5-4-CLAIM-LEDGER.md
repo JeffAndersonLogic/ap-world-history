@@ -183,3 +183,21 @@ Two fresh reviewers, from a fresh packet after the pass 1 fixes.
 8. Slide 9 implied Russia "started with" ironworks (Knoop's cotton mills from the 1840s). **Fixed:** the rows read "This case" and "What it made."
 9. Slide 14's notes quoted the museum as "Britain's oldest warship still afloat"; its ship page says "Britain's oldest floating warship." **Fixed** in the notes; the student surfaces paraphrase without quotation marks.
 10. The Primary Source cited "questions 3877 to 3879"; Dutt's footnote is "3877 and 3879." **Fixed.**
+
+### Pass 3, 2026-10-22
+
+Two fresh reviewers, from a fresh packet after the pass 2 fixes.
+
+**Page truth, readability, CED, ownership (12 items; 9 fixed, 1 partly, 2 rejected).**
+1. Slide 11 printed each case's carrier beside it, so the practice was copying (the third reviewer to raise the slides; slide 8 also lists carriers). **Fixed on slide 11:** each row gives place, date and what was built, and students recall the carrier from the reading. **Slide 8 kept:** it is the teaching slide for KC-5.1.I.D, the content the reading teaches, not a finished answer to a student's own two places.
+2. Checkpoint 2 step 4 printed a candidate cause. **Fixed:** "Explain one cause of the change, using India's cloth trade."
+3. The Skill Builder's second task (the pattern in the shares) had no frame that fits rising and falling cases. **Fixed:** its own frame, "Where [what happened], the share [rose or fell]; where ..., so the pattern is ...".
+4. The reading, lecture card and slide 9 promised a Russian state case in 5.6, which the story map gives only Egypt and Meiji Japan. **Fixed:** "The Japanese government also pushed industry on purpose; that is Topic 5.6."
+5. The Bairoch text card's figures are only in the drawn plate. **Fixed on this page:** the figures are in the caption's text; the shared module's alt text remains the adjacent finding.
+6. "Other parts of Europe" illustrated by Belgium and northern France, which sit in the northwestern core. **Fixed:** the reading and lecture card say Belgium and northern France joined the industrial northwest, and the methods went on to the German states (the Ruhr).
+7. BeInTheRoom decision 1 asked for "the change" and offered a continuity; option 3 pointed at a crowd no card describes. **Fixed:** "Which part of the hall should your report point at first, to explain what has changed and what has stayed the same?"; option 3 points at the British machines visitors came to study.
+8. Slide 14's ship-model picture sat beside "Ships" with nothing on the slide saying it is not the dockyard. **Fixed:** its caption reads "Model Indian sailing craft, London, 1851, not the dockyard"; the Evidence Lab asks what India "chose to show visitors."
+9. "Raw cotton" taught though the story map reserves raw-material extraction for Unit 6. **Rejected, with the map made explicit:** selling raw cotton is part of the cloth trade's turn, which the 5.4 line in `docs/UNIT-5-STORY-MAP.md` now names.
+10. The CHINA label sat nearer Japan. **Fixed:** below its region.
+11. BeInTheRoom's 1860 figure inside an 1851 scene; the Moscow role had no evidence on the page; Lowell "worked mostly by young women" in 1851. **Fixed:** the card says the estimate was made long after; the Moscow merchant is replaced by a Rhineland mill owner, whom the coal and laws cards support; Lowell was "first worked mostly by" them.
+12. No Canvas text. **Rejected:** as in pass 2; the overview is written and the event and assignment wait for dates.

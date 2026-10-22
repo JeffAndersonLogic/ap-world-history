@@ -1039,11 +1039,11 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "On the continent, factories grew where coal lay, as they had in Britain: around Liège in Belgium, in the Ruhr valley of the German states, and in northern France. In the United States, wealthy Boston merchants paid for big cotton mills at Lowell, Massachusetts, from the 1820s. Most of the workers were young women from New England farms."
+            "html": "On the continent, factories grew where coal lay, as they had in Britain. Belgium and northern France, close to Britain, became part of the industrial northwest of Europe. From there the methods went on to other parts of Europe, such as the Ruhr valley of the German states. In the United States, wealthy Boston merchants paid for big cotton mills at Lowell, Massachusetts, from the 1820s. Most of the workers were young women from New England farms."
           },
           {
             "type": "p",
-            "html": "In Russia and Japan, the big growth came later, mostly after 1870. A Welsh engineer named John Hughes built ironworks in the coal country of southern Russia in the early 1870s; the town that grew up around them was named Yuzovka, after him. In Japan, the Osaka Spinning Company opened in 1883 with cotton-spinning machines made in Britain, driven by <span class=\"kt\">steam power</span>, and it ran day and night. The governments of Russia and Japan also pushed industry on purpose; that is Topic 5.6."
+            "html": "In Russia and Japan, the big growth came later, mostly after 1870. A Welsh engineer named John Hughes built ironworks in the coal country of southern Russia in the early 1870s; the town that grew up around them was named Yuzovka, after him. In Japan, the Osaka Spinning Company opened in 1883 with cotton-spinning machines made in Britain, driven by <span class=\"kt\">steam power</span>, and it ran day and night. The Japanese government also pushed industry on purpose; that is Topic 5.6."
           },
           {
             "type": "p",

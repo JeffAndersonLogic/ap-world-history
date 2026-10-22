@@ -78,12 +78,12 @@
       { label: "Name what they share", text: "Ask: what is true in every case? Example: \"the busiest days were always the hottest.\"" },
       { label: "Say the pattern", text: "Put it together with \"so the pattern is\": \"In June, July, and August, the town pool was busiest on the hottest afternoons, so the pattern is that heat brings swimmers.\" Use this frame: \"In [case one], [case two], and [case three], [what happened in each], so the pattern is [what they all share].\"" }
     ],
-    prompt: "Now do it yourself, twice. First, choose THREE places the factory methods reached (from the United States, Belgium, the German states, Russia, and Japan). For each, say what carried the methods there, and then state the pattern with the frame. Second, find the pattern in the shares: using two of Bairoch's estimates, say what happened to the share of world manufacturing in the regions with steam-powered factories, and in India and China, and state that pattern in one sentence.",
+    prompt: "Now do it yourself, twice. First, choose THREE places the factory methods reached (from the United States, Belgium, the German states, Russia, and Japan). For each, say what carried the methods there, and then state the pattern with the frame. Second, find the pattern in the shares: using two of Bairoch's estimates, say what happened to the share of world manufacturing in Europe and the United States, and in India and China. Use this frame: \"Where [what happened], the share [rose or fell]; where [what happened], the share [rose or fell]; so the pattern is [what explains the difference].\"",
     criteria: [
       "I listed three places the factory methods reached, with a detail from the lesson for each.",
       "I said what carried the methods to each place: people, machines, or money.",
       "I stated a pattern with \"so the pattern is,\" naming what all three share.",
-      "I stated the pattern in the shares, using two of Bairoch's estimates."
+      "I stated the pattern in the shares with the second frame, using two of Bairoch's estimates."
     ]
   };
 
@@ -105,7 +105,7 @@
       cardDesc: "How the shares of world manufacturing changed from 1750 to 1900, one cause of the change, and what India, China, or the Middle East kept making.",
       learningTargets: [lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[1].criteria],
-      prompt: "Explain what changed and what continued in who made the world's goods between 1750 and 1900. (1) Describe how most goods were made in 1750, and where. (2) Using two of Bairoch's estimates, explain how the share of world manufacturing changed for the regions with steam-powered factories and for India or China. (3) Explain what a share is, and why a share can fall while a region keeps making goods. (4) Explain one cause of the change, such as how cloth from steam-powered mills undersold hand-made cloth, using India's cloth trade. (5) Give one piece of evidence that India, China, or the Middle East kept making goods.",
+      prompt: "Explain what changed and what continued in who made the world's goods between 1750 and 1900. (1) Describe how most goods were made in 1750, and where. (2) Using two of Bairoch's estimates, explain how the share of world manufacturing changed for the regions with steam-powered factories and for India or China. (3) Explain what a share is, and why a share can fall while a region keeps making goods. (4) Explain one cause of the change, using India's cloth trade. (5) Give one piece of evidence that India, China, or the Middle East kept making goods.",
       responseType: "Checkpoint 2",
       skill: "Continuity and Change",
       terms: ["1750", "1900", "hand", "by hand", "handloom", "weavers", "Asia", "China", "India", "Europe", "United States", "share", "Bairoch", "estimate", "a third", "a quarter", "four-fifths", "steam", "factory", "machine-made", "cheaper", "Lancashire", "East India Company", "taxes", "raw cotton", "Bombay", "ships", "Trincomalee", "Aleppo", "Damascus", "Ottoman", "continued", "changed"],
@@ -151,7 +151,7 @@
       url: "../assets/images/topics/5-4/great-exhibition-1851-india-ship-models.jpg",
       sourceUrl: "https://id.rijksmuseum.nl/200345924",
       caption: "A photograph by Hugh Owen of model ships shown in the India section of the Great Exhibition, London, 1851. These are models, not a real shipyard. Rijksmuseum.",
-      prompt: "NOTICE the kind of ships the models show: sail or steam? INFER what these models show about what India still made in 1851. Models in an exhibition are chosen to impress: what can they not tell you about India's real shipyards?"
+      prompt: "NOTICE the kind of ships the models show: sail or steam? INFER what these models tell you about what India chose to show visitors in London in 1851. Models in an exhibition are chosen to impress: what can they not tell you about India's real shipyards?"
     },
     {
       title: "Slater Mill, Pawtucket, about 1870",
@@ -165,7 +165,7 @@
       title: "Who Made the World's Goods, 1750 and 1900",
       label: "Economic historian's estimates · Paul Bairoch, 1982",
       sourceText: ["Share of world manufacturing, 1750: China about 33 percent, India about 25, Britain under 2, the United States under 1.", "1900: China about 6 percent, India under 2, Britain about 19, the United States about 24."],
-      caption: "Estimates by the economic historian Paul Bairoch, published in 1982, rounded to whole numbers. They are careful estimates built from population and output, not counts made at the time.",
+      caption: "Share of world manufacturing, 1750: China about 33 percent, India about 25, Britain under 2, the United States under 1. 1900: China about 6, India under 2, Britain about 19, the United States about 24. Estimates by the economic historian Paul Bairoch, published in 1982, rounded to whole numbers. They are careful estimates built from population and output, not counts made at the time.",
       prompt: "Compare the two years. INFER which regions' shares changed most, and in which direction. These are shares, not amounts: what can they not tell you about whether India and China made more or less cloth than before?"
     }
   ];

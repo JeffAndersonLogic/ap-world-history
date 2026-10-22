@@ -57,7 +57,7 @@ setTemplate('question',{visual:Object.assign({},OPENING,{tagPos:'bl'})});
 setTemplate('before',{visual:PALAMPORE,caption:'Painted cotton from India, early 1700s'});
 setTemplate('continued',{pictures:[
   {visual:WEAVER,caption:'A weaver, Tanjore, about 1840'},
-  {visual:SHIPS,caption:'Indian ship models, London, 1851'}
+  {visual:SHIPS,caption:'Model Indian sailing craft, London, 1851, not the dockyard'}
 ]});
 setTemplate('close',{visual:Object.assign({},LOWELL,{tagPos:'bl'})});
 })();

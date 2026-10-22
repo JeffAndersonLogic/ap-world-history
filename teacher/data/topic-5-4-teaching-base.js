@@ -279,7 +279,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'latecomers', kind: 'split-mirror', eyebrow: 'How It Spread · Russia and Japan',
       kc: 'KC-5.1.I.D', title: 'The last two came later, with British machines and know-how.',
-      footer: 'How the two governments pushed industry on purpose is Topic 5.6.',
+      footer: 'How Japan\'s government pushed industry on purpose is Topic 5.6.',
       template: {
         left: { name: 'Russia' },
         right: { name: 'Japan' },
@@ -293,7 +293,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'KC-5.1.I.D\'s last two destinations. Both came late, both borrowed British machines and experts, and both governments pushed industry hard: that last part is 5.6 (KC-5.1.V.C and KC-5.2.II.A). Name it, and stop.',
+          'KC-5.1.I.D\'s last two destinations. Both came late and both borrowed British machines and experts. Japan\'s government also pushed industry on purpose, which is 5.6 (KC-5.2.II.A, Meiji Japan); the story map gives 5.6 no Russian case, so do not promise one. Name Japan\'s, and stop.',
           'Russia: John Hughes, a Welsh engineer, ironworks at Hughesovka (Yuzovka) in the Donets basin, company registered in London 1869, first furnace 1871, with a team of British workers (Glamorgan Archives). Russia\'s industrial output grew 8 to 9 percent a year in the 1890s, with railway building and foreign loans.',
           'Japan: the Osaka Spinning Company (spinning from 1883), a private company, 10,500 English mule spindles, steam power and a night shift; its profits made it the model for Japan\'s cotton-spinning boom. Japan\'s first railway, Shinbashi (Tokyo) to Yokohama, opened on 14 October 1872, built under the British engineer Edmund Morel with British locomotives (Nippon.com).',
           'Do not teach Perry, the Meiji Restoration, the Iwakura Mission or the zaibatsu here. They are 5.6\'s.'
@@ -330,11 +330,11 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'What carried the methods to each place? What do all five share?',
       template: {
         rows: [
-          { name: 'Pawtucket', tool: 'Slater\'s memory', result: 'Arkwright\'s machines rebuilt, 1790s.' },
-          { name: 'Seraing', tool: 'Cockerill\'s know-how', result: 'works on the Liège coal, 1817.' },
-          { name: 'Nuremberg', tool: 'An English engine', result: 'the first German steam railway, 1835.' },
-          { name: 'Lowell', tool: 'Boston merchants\' money', result: 'cotton mills on a river, 1820s.' },
-          { name: 'Osaka', tool: 'British spinning machines', result: 'run by steam, 1883.' }
+          { name: 'Pawtucket', tool: 'Rhode Island, 1790s', result: 'water-powered spinning mill.' },
+          { name: 'Seraing', tool: 'Belgium, 1817', result: 'machine works on a coalfield.' },
+          { name: 'Nuremberg', tool: 'German states, 1835', result: 'first steam railway there.' },
+          { name: 'Lowell', tool: 'Massachusetts, 1820s', result: 'cotton mills on a river.' },
+          { name: 'Osaka', tool: 'Japan, 1883', result: 'steam-powered spinning mill.' }
         ],
         payoffLabel: 'Your turn',
         payoff: 'Say the pattern in one sentence'
@@ -342,7 +342,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'Practice on KC-5.1.I.D. The slide does not print the pattern: students say it. Take three answers before giving yours.',
+          'Practice on KC-5.1.I.D. The slide gives place, date and what was built, not who or what carried it: students recall the carrier for each case from the reading, then say the pattern. Take three answers before giving yours.',
           'A strong answer: "In Pawtucket, Seraing and Osaka, the factory started with British know-how or British machines, set up where there was water or coal, so the pattern is that the methods spread when people, machines and money carried them to places with the right resources."',
           'If a student says "they all copied Britain," push for the carrier: copied how? With whom? With what money?'
         ],

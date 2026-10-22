@@ -148,7 +148,8 @@ Continuity and Change.
 - **Reasoning move:** Continuity and Change (CED p. 95). Suggested skill 5.A.
 - **This topic owns:** KC-5.1.II.B and KC-5.1.I.D, with the CED's examples (shipbuilding in India
   and Southeast Asia, iron works in India, textiles in India and Egypt). Added by the 5.4 build,
-  2026-10-22: **why the old makers' share fell, in one case, India's cloth**: machine-made cloth
+  2026-10-22: **why the old makers' share fell, in one case, India's cloth** (its cloth trade turning
+  around by about 1830: India buying British cloth and selling raw cotton to British mills): machine-made cloth
   from steam-powered mills undersold hand-made cloth (KC-5.1.II.B's own "contributed"), and the
   trade rules of Britain and the East India Company, taught as causes historians weigh, never as the
   single cause. Two pass-1 and pass-2 reviewers asked for the map and the page to agree; this line

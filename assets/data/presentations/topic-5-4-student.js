@@ -192,7 +192,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "split-mirror",
       "eyebrow": "How It Spread · Russia and Japan",
       "title": "The last two came later, with British machines and know-how.",
-      "footer": "How the two governments pushed industry on purpose is Topic 5.6.",
+      "footer": "How Japan's government pushed industry on purpose is Topic 5.6.",
       "kc": "KC-5.1.I.D",
       "template": {
         "left": {
@@ -246,28 +246,28 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "rows": [
           {
             "name": "Pawtucket",
-            "tool": "Slater's memory",
-            "result": "Arkwright's machines rebuilt, 1790s."
+            "tool": "Rhode Island, 1790s",
+            "result": "water-powered spinning mill."
           },
           {
             "name": "Seraing",
-            "tool": "Cockerill's know-how",
-            "result": "works on the Liège coal, 1817."
+            "tool": "Belgium, 1817",
+            "result": "machine works on a coalfield."
           },
           {
             "name": "Nuremberg",
-            "tool": "An English engine",
-            "result": "the first German steam railway, 1835."
+            "tool": "German states, 1835",
+            "result": "first steam railway there."
           },
           {
             "name": "Lowell",
-            "tool": "Boston merchants' money",
-            "result": "cotton mills on a river, 1820s."
+            "tool": "Massachusetts, 1820s",
+            "result": "cotton mills on a river."
           },
           {
             "name": "Osaka",
-            "tool": "British spinning machines",
-            "result": "run by steam, 1883."
+            "tool": "Japan, 1883",
+            "result": "steam-powered spinning mill."
           }
         ],
         "payoffLabel": "Your turn",
@@ -479,7 +479,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
               "fit": "cover",
               "position": "45% 60%"
             },
-            "caption": "Indian ship models, London, 1851"
+            "caption": "Model Indian sailing craft, London, 1851, not the dockyard"
           }
         ]
       }

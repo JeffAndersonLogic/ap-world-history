@@ -48,7 +48,7 @@
     {
       "id": "lowell",
       "name": "Lowell Mill Agent",
-      "position": "You manage a cotton mill at Lowell, Massachusetts, built with Boston merchants’ money and worked mostly by young women from New England farms.",
+      "position": "You manage a cotton mill at Lowell, Massachusetts, built with Boston merchants’ money and first worked mostly by young women from New England farms.",
       "power": "Your mill is already running, but British mills are bigger and their cloth is often cheaper.",
       "goals": "Find machines and ideas that will make your mill faster and its cloth cheaper.",
       "fears": "British mills may undersell you in your own country.",
@@ -68,28 +68,20 @@
       "blindSpot": "You may think every region has the coal and iron that Liège has."
     },
     {
-      "id": "moscow",
-      "name": "Moscow Cotton Merchant",
-      "position": "You trade cotton cloth in Russia, and you have come to London to see what British machines can do.",
-      "power": "You have money to invest, but Russia has few engineers who can build or mend the machines.",
-      "goals": "Start a spinning mill that can make thread cheaply in Russia.",
-      "fears": "Without skilled people, machines bought abroad may stand broken.",
-      "lens": "Machines alone are not enough: someone must know how to run them.",
-      "preference": "Buy British machines and hire British or German engineers to set them up.",
-      "blindSpot": "You may expect the factory to arrive in Russia as fast as it spread in Britain."
-    }
-  ],
-  "evidence": [
-    {
-      "id": "hall",
-      "label": "One Roof",
-      "text": "The Great Exhibition shows British spinning machines and power looms in one part of the hall and hand-made goods from India and many other countries in others.",
-      "why": "Shows two modes of production, machines and hands, side by side."
+      "id": "rhineland",
+      "name": "Rhineland Mill Owner",
+      "position": "You own a cotton-spinning mill in the German states, on a river near the Ruhr coalfields, and you have come to London to see the newest British machines.",
+      "power": "You have money and coal close by, but your machines are older than Britain’s, and you still hire British-trained mechanics.",
+      "goals": "Buy the best British machines, now that they can be exported, and spin cloth cheaply at home.",
+      "fears": "British mills may undersell you in your own market before your new machines are running.",
+      "lens": "The methods spread fastest where coal, rivers, money, and skilled people meet.",
+      "preference": "Buy British machines and hire mechanics who can set them up and mend them.",
+      "blindSpot": "You may think machines alone are enough, without the skilled people to run them."
     },
     {
       "id": "shares",
       "label": "Who Makes the Goods",
-      "text": "In the estimates of the economic historian Paul Bairoch, China and India made over half of the world’s manufactured goods around 1750, and Britain under 2 percent. By 1860 Britain made about a fifth.",
+      "text": "In the estimates of the economic historian Paul Bairoch, made long after this exhibition, China and India made over half of the world’s manufactured goods around 1750, and Britain under 2 percent. By 1860, he estimated, Britain made about a fifth.",
       "why": "Shows the change in where the world’s goods were being made."
     },
     {
@@ -132,8 +124,8 @@
   "decisions": [
     {
       "id": "change",
-      "title": "Name the biggest change",
-      "prompt": "Which part of the hall best shows the change in how and where the world’s goods are made?",
+      "title": "Choose where your report begins",
+      "prompt": "Which part of the hall should your report point at first, to explain what has changed and what has stayed the same?",
       "options": [
         {
           "id": "machines",
@@ -153,8 +145,8 @@
         },
         {
           "id": "visitors",
-          "title": "The machines the visitors are studying",
-          "action": "Point your report at the crowd of foreign makers around the British machines, planning what to take home.",
+          "title": "The machines visitors have come to see",
+          "action": "Point your report at the British machines that visitors from many countries have come to London to study.",
           "benefits": "It shows the methods spreading, carried by people.",
           "worries": "It may make the spread sound easy, when it needed coal, money, and skill.",
           "tradeoff": "The spread is a change, but it reached only some places."

@@ -409,7 +409,7 @@ module.exports = [
       { zone: [38, 48, 5, 3], label: 'RUSSIA', labelSide: 'right', tone: 'bronze', legend: 'Factory methods arrive' },
       { zone: [136, 35, 5, 3], label: 'JAPAN', labelSide: 'right', tone: 'bronze', legend: 'Factory methods arrive' },
       { zone: 'southAsia', label: 'INDIA', labelSide: 'left', tone: 'slate', legend: 'Kept making goods, much of it by hand; share fell' },
-      { zone: 'eastAsia', label: 'CHINA', labelSide: 'right', tone: 'slate', legend: 'Kept making goods, much of it by hand; share fell' },
+      { zone: 'eastAsia', label: 'CHINA', tone: 'slate', legend: 'Kept making goods, much of it by hand; share fell' },
       { zone: [37, 35, 3, 2.5], label: 'SYRIA (OTTOMAN)', labelSide: 'left', tone: 'slate', legend: 'Kept making goods, much of it by hand; share fell' }
     ],
     flows: [
