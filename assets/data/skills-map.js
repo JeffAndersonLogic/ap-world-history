@@ -7508,7 +7508,6 @@ window.BEHISTORICAL_SKILLS_MAP = {
             "Asia",
             "China",
             "India",
-            "Egypt",
             "Europe",
             "United States",
             "share",

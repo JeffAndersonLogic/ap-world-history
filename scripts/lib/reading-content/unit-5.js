@@ -1035,7 +1035,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Britain dropped the ban on skilled workers leaving in 1824 and lifted the ban on sending machinery abroad in 1843. After that the methods spread faster, carried by machines and money as well as people. The first railway in the German states, from Nuremberg to Fürth in 1835, ran with a locomotive built in England."
+            "html": "Britain dropped the ban on skilled workers leaving in 1824 and lifted the ban on sending textile machines abroad in 1843. Machines and money carried the methods too. The first railway in the German states, from Nuremberg to Fürth in 1835, ran with a locomotive built in England, a machine the textile ban did not cover."
           },
           {
             "type": "p",
@@ -1085,7 +1085,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "The falling shares do not mean that Asia and the Middle East stopped working. They kept making goods, mostly by hand."
+            "html": "The falling shares do not mean that Asia and the Middle East stopped working. They kept making goods, much of it by hand. India even built its own steam-powered cotton mills: the first in Bombay was founded in 1854 and began spinning in 1856."
           },
           {
             "type": "p",
@@ -1116,7 +1116,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Power mattered too. Much of India was ruled by the British East India Company, and British cotton cloth entered India at a tax of only 2½ percent. Meanwhile Britain taxed Indian cloth heavily: around 1813, Indian calicoes paid taxes of about 70 to 85 percent of their value to be sold in Britain. Historians still argue about how much each cause mattered: cheaper machine-made goods, the trade rules of the people in power, and, in India, troubles that had begun before the factories did, such as the breakup of the Mughal Empire and years of drought."
+            "html": "Power mattered too. Much of India was ruled by the British East India Company, and British cotton cloth entered India at a tax of only 2½ percent. Earlier, Britain had taxed Indian cloth heavily: around 1813, Indian calicoes paid taxes of about 70 to 85 percent of their value to be sold in Britain. Historians still argue about how much each cause mattered: cheaper machine-made goods, the trade rules of the people in power, and, in India, troubles that had begun before the factories did, such as the breakup of the Mughal Empire and years of drought."
           },
           {
             "type": "p",
@@ -1124,7 +1124,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "So, how did the ways and places goods were made change between 1750 and 1900? The way goods were made changed from hand work to steam-powered factories, and the places changed with it: factory methods spread from Britain to other parts of Europe, the United States, Russia, and Japan, carried by people, machines, and money, and those regions' share of the world's goods rose. What continued was hand production in India, China, Egypt, and the Middle East, which kept making goods, but a shrinking share of them."
+            "html": "So, how did the ways and places goods were made change between 1750 and 1900? The way goods were made changed from hand work to steam-powered factories, and the places changed with it: factory methods spread from Britain to other parts of Europe, the United States, Russia, and Japan, carried by people, machines, and money, and those regions' share of the world's goods rose. What continued was production in India, China, and the Middle East, much of it by hand, which kept making goods, but a shrinking share of them."
           },
           {
             "type": "p",

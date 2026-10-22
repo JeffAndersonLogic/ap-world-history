@@ -16,7 +16,7 @@
  * Spine: factory methods spread from Britain to other parts of Europe, the
  * United States, Russia and Japan, carried by people, machines and money. The
  * factory regions made a fast-growing share of the world's goods. India, China
- * and the Middle East kept making goods, mostly by hand, but a shrinking share.
+ * and the Middle East kept making goods, much of it by hand, but a shrinking share.
  * Wall version: The factory traveled. The share moved. The old makers kept
  * making.
  * Retelling slide: continuity and change (phase 'retell').
@@ -31,10 +31,10 @@ window.BEHISTORICAL_TEACHING = {
     topic: '5.4',
     minutes: 90,
     title: 'Industrialization Spreads in the Period from 1750 to 1900',
-    subtitle: 'Factory methods spread from Britain to other parts of Europe, the United States, Russia and Japan, carried by people, machines and money. The factory regions made a fast-growing share of the world\'s goods. India, China and the Middle East kept making goods, mostly by hand, but a shrinking share.',
+    subtitle: 'Factory methods spread from Britain to other parts of Europe, the United States, Russia and Japan, carried by people, machines and money. The factory regions made a fast-growing share of the world\'s goods. India, China and the Middle East kept making goods, much of it by hand, but a shrinking share.',
     essentialQuestion: 'Where did the new way of making things go, and what happened to the places that made the world\'s goods before?',
     apFocus: 'Continuity and Change, with Making Connections 5.A',
-    endTarget: 'Students can explain how the modes and locations of production changed from 1750 to 1900: hand production gave way to steam-powered factories, and factory methods spread from Britain to other parts of Europe, the United States, Russia and Japan, carried by skilled people, machines and money, where coal and water were waiting; the factory regions\' share of the world\'s manufacturing rose; and producers in India, China, Egypt and the Middle East kept making cloth, ships and other goods, mostly by hand, while their share fell, with Indian textiles and the Bombay Dockyard as the cases.'
+    endTarget: 'Students can explain how the modes and locations of production changed from 1750 to 1900: hand production gave way to steam-powered factories, and factory methods spread from Britain to other parts of Europe, the United States, Russia and Japan, carried by skilled people, machines and money, where coal and water were waiting; the factory regions\' share of the world\'s manufacturing rose; and producers in India, China, Egypt and the Middle East kept making cloth, ships and other goods, much of it by hand, while their share fell, with Indian textiles and the Bombay Dockyard as the cases.'
   },
 
   priorities: {
@@ -104,7 +104,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'CED p. 103. One learning objective, E (Technology and Innovation): explain how different modes and locations of production have developed and changed over time. The reasoning process is Continuity and Change (p. 95); the suggested skill is 5.A, identify patterns among or connections between historical developments and processes.',
           'Key Concepts: KC-5.1.II.B (the rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions\' share of global manufacturing during the first Industrial Revolution; while Middle Eastern and Asian countries continued to produce manufactured goods, these regions\' share in global manufacturing declined); KC-5.1.I.D (as new methods of industrial production became more common in parts of northwestern Europe, they spread to other parts of Europe and the United States, Russia, and Japan).',
-          'Illustrative examples (optional, p. 103): shipbuilding in India and Southeast Asia; iron works in India; textile production in India and Egypt. This deck uses Indian textiles and the Bombay Dockyard, with Egypt\'s weavers in one line. The page also lists a PD module, "Comparison in Period 5," on Russia and Japan; not used, because comparison is not 5.4\'s reasoning process and how those states built industry is 5.6\'s.',
+          'Illustrative examples (optional, p. 103): shipbuilding in India and Southeast Asia; iron works in India; textile production in India and Egypt. This deck uses Indian textiles and the Bombay Dockyard; Egypt appears only in the slide 14 notes, because its new mills of the 1830s were Muhammad Ali\'s, Topic 5.6\'s example. The page also lists a PD module, "Comparison in Period 5," on Russia and Japan; not used, because comparison is not 5.4\'s reasoning process and how those states built industry is 5.6\'s.',
           'Owns: the spread (KC-5.1.I.D) and the shares (KC-5.1.II.B). Bridge only: how governments sponsored industry, Meiji reform and Muhammad Ali\'s state mills (5.6); steam engines and fossil fuels (5.5; steam is named here as what made factory goods cheap); free trade (5.7); colonial economies (Unit 6); workers\' lives (5.9).',
           'Modes and locations: the objective has two halves. "Locations" is where goods were made; "modes" is how, by hand or by steam-powered machines. Every slide carries both.',
           'Three myths, on slide 16: "Asia stopped making things"; "industry spread everywhere"; "India fell behind only because British machines were better."'
@@ -268,7 +268,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.1.I.D says the methods spread. This slide is how: three carriers, and the resources that let them take root.',
-          'People first, while the British laws held (to 1824 and 1843); then machines and money. Lowell: Francis Cabot Lowell studied British power looms in 1810 to 1812 and had them rebuilt "from his memory and drawings"; with Boston merchants (the "Boston Associates") he founded the Boston Manufacturing Company at Waltham in 1814. In 1821 the Associates chose the falls of the Merrimack for the mill town of Lowell, and recruited "the daughters of New England Yankee farmers" (National Park Service).',
+          'People first, while the British laws held (to 1824 and 1843); machines and money carried the methods too (the Nuremberg locomotive was never covered by the textile ban). Lowell: Francis Cabot Lowell studied British power looms in 1810 to 1812 and had them rebuilt "from his memory and drawings"; with Boston merchants (the "Boston Associates") he founded the Boston Manufacturing Company at Waltham in 1814. In 1821 the Associates chose the falls of the Merrimack for the mill town of Lowell, and recruited "the daughters of New England Yankee farmers" (National Park Service).',
           'This is the deck\'s answer to "it just spread": something has to carry it.'
         ],
         ask: 'Take one away. Could a factory start in a new place without it?',
@@ -376,8 +376,8 @@ window.BEHISTORICAL_TEACHING = {
         note: 'Bairoch\'s estimates; one scale for all three rows',
         cases: [
           { name: 'Europe, US', note: 'Factory regions', points: [{ year: 1750, level: 1.07 }, { year: 1800, level: 1.31 }, { year: 1830, level: 1.66 }, { year: 1860, level: 2.75 }, { year: 1880, level: 3.46 }, { year: 1900, level: 3.89 }], events: [{ year: 1750, label: '1750', text: 'about a quarter' }, { year: 1860, label: '1860', text: 'about three-fifths' }, { year: 1900, label: '1900', text: 'over four-fifths' }] },
-          { name: 'China', note: 'Mostly by hand', points: [{ year: 1750, level: 1.49 }, { year: 1800, level: 1.51 }, { year: 1830, level: 1.35 }, { year: 1860, level: 0.9 }, { year: 1880, level: 0.57 }, { year: 1900, level: 0.28 }], events: [{ year: 1750, label: '1750', text: 'about a third' }, { year: 1900, label: '1900', text: 'about 6 percent' }] },
-          { name: 'India', note: 'Mostly by hand', points: [{ year: 1750, level: 1.11 }, { year: 1800, level: 0.9 }, { year: 1830, level: 0.8 }, { year: 1860, level: 0.39 }, { year: 1880, level: 0.13 }, { year: 1900, level: 0.08 }], events: [{ year: 1750, label: '1750', text: 'about a quarter' }, { year: 1900, label: '1900', text: 'under 2 percent' }] }
+          { name: 'China', note: 'Much by hand', points: [{ year: 1750, level: 1.49 }, { year: 1800, level: 1.51 }, { year: 1830, level: 1.35 }, { year: 1860, level: 0.9 }, { year: 1880, level: 0.57 }, { year: 1900, level: 0.28 }], events: [{ year: 1750, label: '1750', text: 'about a third' }, { year: 1900, label: '1900', text: 'about 6 percent' }] },
+          { name: 'India', note: 'Much by hand', points: [{ year: 1750, level: 1.11 }, { year: 1800, level: 0.9 }, { year: 1830, level: 0.8 }, { year: 1860, level: 0.39 }, { year: 1880, level: 0.13 }, { year: 1900, level: 0.08 }], events: [{ year: 1750, label: '1750', text: 'about a quarter' }, { year: 1900, label: '1900', text: 'under 2 percent' }] }
         ]
       },
       notes: {
@@ -409,6 +409,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.1.II.B, second half: "While Middle Eastern and Asian countries continued to produce manufactured goods, these regions\' share in global manufacturing declined." This slide is the continuity.',
+          'India also built steam-powered cotton mills of its own: the Bombay Spinning and Weaving Company, founded by Cowasji Nanabhoy Davar on 7 July 1854, began production on 7 February 1856, the first mill in Bombay. Much of India\'s cloth was still woven by hand.',
           'Handloom weavers: the economic historian Tirthankar Roy finds that handloom weaving in India "did not succumb": handloom cloth\'s share of India\'s market was roughly stable from the 1890s to the 1930s (Traditional Industry in the Economy of Colonial India). In the United Provinces alone, a 1908 report said "quite a million" people depended on handloom weaving (Rai, International Review of Social History, 2022). There is no reliable all-India headcount for 1900, so do not say "millions." Many weavers used cheaper mill-spun yarn. Hand weaving still shrank: Indrajit Ray (Economic History Review, 2009) estimates Bengal\'s industry lost about 28 percent by the mid-1800s.',
           'The pictures: a gouache of a weaver at his loom, attributed to a painter from Tanjore (Thanjavur), south India, about 1840 (Wellcome Collection, public domain), in the "types and trades" style Indian artists often made for European buyers, so probably a type, not a portrait; and Hugh Owen\'s 1851 photograph of Indian ship models under the INDIA sign at the Great Exhibition (Rijksmuseum, public domain). The models are not the Bombay Dockyard: no period picture of the dockyard could be sourced.',
           'Ships: the CED\'s example, shipbuilding in India. The Wadia family of Parsi master builders ran the Bombay Dockyard for generations; Jamsetjee Bomanjee Wadia supervised HMS Trincomalee, "one of 14 ships he would build for the Royal navy" (Royal Museums Greenwich). Built of Malabar teak and launched 12 October 1817, it is at Hartlepool, where the National Museum of the Royal Navy calls it "Britain\'s oldest warship still afloat" (not the oldest warship afloat: USS Constitution is older). Rajesh Kochhar (Current Science) counts 334 Wadia vessels from 1736 to 1884, 39 of them for the Royal Navy, and dates the end of teak warship building to iron and steam.',
@@ -429,7 +430,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         steps: [
           { label: 'Machines', text: 'Lancashire\'s steam mills make cloth cheaper than hands can' },
-          { label: 'Rules', text: 'British cloth enters India at a 2½ percent tax; Britain taxes Indian cloth heavily' },
+          { label: 'Rules', text: 'British cloth enters India at a 2½ percent tax; around 1813 Britain had taxed Indian calicoes at 70 to 85 percent' },
           { label: 'By about 1830', text: 'India buys more cotton cloth than it sells' },
           { label: 'Then', text: 'India sells raw cotton to British mills and buys British cloth', key: true }
         ],
@@ -496,7 +497,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'synthesis', kind: 'close-retell', eyebrow: 'AP Synthesis',
       kc: 'Unit 5: Learning Objective E', title: 'Say it in one sentence.',
       template: {
-        frame: 'Factory methods spread from Britain to the rest of Europe, the US, ___ and ___, carried by people, ___ and money. Their ___ of the world\'s goods rose. Asia kept ___ goods, but its share ___.',
+        frame: 'Factory methods spread from Britain to other parts of Europe, the US, ___ and ___, carried by people, ___ and money. Their ___ of the world\'s goods rose. India and China kept ___ goods, but their share ___.',
         words: ['Russia', 'Japan', 'machines', 'share', 'making', 'fell'],
         prompt: 'Fill it in from memory. Then say it again with one example for the change and one for the continuity.'
       },
@@ -527,7 +528,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'evidence', kind: 'action', eyebrow: 'Module 07 · Evidence Lab',
       title: 'Two sources: a change, or a continuity.',
-      subtitle: 'Choose two cards. For each: what kind of source it is, what it shows about a change or a continuity in how or where goods were made, and what it cannot tell you.',
+      subtitle: 'Choose at least two cards. For each: what kind of source it is, what it shows about a change or a continuity in how or where goods were made, and what it cannot tell you.',
       action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-4-industrialization-spreads.html#modules' },
       notes: {
         minutes: 8,
@@ -548,7 +549,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 12,
         land: [
           'Module 10 is required: draft, Socrates, revise. It assesses Target 2 (KC-5.1.II.B) and declares Continuity and Change.',
-          'A strong answer: in 1750 China made about a third of the world\'s manufactured goods and India about a quarter, mostly by hand, while Britain made under 2 percent; steam-powered factories made goods faster and cheaper, so by 1900 Europe and the United States made over four-fifths, and India\'s share fell under 2 percent; one cause was that Lancashire\'s machine-made cloth undersold hand-made cloth, even in India, where it paid a tax of only 2½ percent, so that by about 1830 India bought more cotton cloth than it sold; but India kept making goods, with hand weavers still at work (about a million in one province in 1908) and Bombay\'s shipyards building teak warships; so the share changed, while production continued.'
+          'A strong answer: in 1750 China made about a third of the world\'s manufactured goods and India about a quarter, almost all by hand, while Britain made under 2 percent; steam-powered factories made goods faster and cheaper, so by 1900 Europe and the United States made over four-fifths, and India\'s share fell under 2 percent; one cause was that Lancashire\'s machine-made cloth undersold hand-made cloth, even in India, where it paid a tax of only 2½ percent, so that by about 1830 India bought more cotton cloth than it sold; but India kept making goods, with hand weavers still at work (about a million in one province in 1908) and Bombay\'s shipyards building teak warships; so the share changed, while production continued.'
         ],
         ask: 'Where in your answer is the change, and where is the continuity?',
         listenFor: 'The change in shares and in how goods were made; the continuity in who kept making them.'

@@ -39,7 +39,7 @@
     key: [
       { label: "Britain", detail: "Where the factory began, in the 1770s. The arrows start here." },
       { label: "Arrows 1 to 4: where the methods went", detail: "Arrow 1: the United States, 1790s. Arrow 2: Belgium and the German states, 1810s to 1830s. Arrow 3: Russia, 1870s. Arrow 4: Japan, 1880s. Each date is the decade of the case this lesson uses, not the first factory there, and an arrow is not a route." },
-      { label: "Shaded regions in Asia and the Middle East", detail: "India, China, and Egypt. People there kept making cloth, ships, and other goods, mostly by hand, while their share of the world's manufacturing fell." },
+      { label: "Shaded regions in Asia and the Middle East", detail: "India, China, and the Syrian cities of the Ottoman Empire, such as Aleppo and Damascus. People there kept making cloth, ships, and other goods, much of it by hand, while their share of the world's manufacturing fell." },
       { label: "Reading the map", detail: "The shaded areas mark regions, not exact borders. The map shows only the places this topic names." }
     ]
   };
@@ -108,7 +108,7 @@
       prompt: "Explain what changed and what continued in who made the world's goods between 1750 and 1900. (1) Describe how most goods were made in 1750, and where. (2) Using two of Bairoch's estimates, explain how the share of world manufacturing changed for the regions with steam-powered factories and for India or China. (3) Explain what a share is, and why a share can fall while a region keeps making goods. (4) Explain one cause of the change, such as how cloth from steam-powered mills undersold hand-made cloth, using India's cloth trade. (5) Give one piece of evidence that India, China, or the Middle East kept making goods.",
       responseType: "Checkpoint 2",
       skill: "Continuity and Change",
-      terms: ["1750", "1900", "hand", "by hand", "handloom", "weavers", "Asia", "China", "India", "Egypt", "Europe", "United States", "share", "Bairoch", "estimate", "a third", "a quarter", "four-fifths", "steam", "factory", "machine-made", "cheaper", "Lancashire", "East India Company", "taxes", "raw cotton", "Bombay", "ships", "Trincomalee", "Aleppo", "Damascus", "Ottoman", "continued", "changed"],
+      terms: ["1750", "1900", "hand", "by hand", "handloom", "weavers", "Asia", "China", "India", "Europe", "United States", "share", "Bairoch", "estimate", "a third", "a quarter", "four-fifths", "steam", "factory", "machine-made", "cheaper", "Lancashire", "East India Company", "taxes", "raw cotton", "Bombay", "ships", "Trincomalee", "Aleppo", "Damascus", "Ottoman", "continued", "changed"],
       focus: ["Describe how and where goods were made in 1750.", "Explain the change in shares with two numbers.", "Explain what a share is.", "Explain one cause of the change.", "Give evidence of what continued."]
     }
   ];
@@ -116,7 +116,7 @@
   // ── Module 07, Evidence Lab ───────────────────────────────────────────────
   lesson.evidenceLab = {
     title: "Evidence Lab: A Change, or a Continuity",
-    task: "Choose at least two evidence cards. For each, say what kind of source it is and who made it, name one precise detail rather than summarizing it, explain what that detail shows about a change or a continuity in how or where goods were made, and name one thing the source cannot tell you. The caption identifies the source; it does not supply your conclusion.",
+    task: "Choose at least two evidence cards. For each, say what kind of source it is and who made it (if the caption says), name one precise detail rather than summarizing it, explain what that detail shows about a change or a continuity in how or where goods were made, and name one thing the source cannot tell you. The caption identifies the source; it does not supply your conclusion.",
     prompt: "Make a claim about one change or one continuity in how or where the world's goods were made between 1750 and 1900. Support it with evidence from at least two cards."
   };
 
@@ -126,7 +126,7 @@
       alt: "A hand-painted Indian cotton hanging: a flowering tree with large red, blue, and purple blossoms grows from stylized rocks on a cream ground, inside a wide red floral border",
       url: "../assets/images/topics/5-4/palampore-coromandel-coast-early-1700s.jpg",
       sourceUrl: "https://www.metmuseum.org/art/collection/search/75909",
-      caption: "A palampore, a hanging of cotton painted and dyed by hand, made on the Coromandel Coast of southeast India in the early 1700s for buyers in Sri Lanka. The Metropolitan Museum of Art.",
+      caption: "A palampore, a hanging of cotton painted and dyed by hand by Indian artisans whose names are not known, made on the Coromandel Coast of southeast India in the early 1700s for buyers in Sri Lanka. The Metropolitan Museum of Art.",
       prompt: "NOTICE the detail in one flower and in the border. INFER what skill and time this took, and what that tells you about where some of the world's finest cloth was made before 1750. One beautiful hanging is one object: what can it not tell you about how much cloth India made?"
     },
     {
@@ -142,7 +142,7 @@
       alt: "An old photograph of a long iron machine on a wooden floor, with rows of upright spindles and bobbins and a rail of large bobbins above",
       url: "../assets/images/topics/5-4/great-exhibition-1851-hibbert-platt-spinning-machine.jpg",
       sourceUrl: "https://id.rijksmuseum.nl/200345908",
-      caption: "A photograph, published in 1852, of cotton machinery made by Hibbert, Platt and Sons of Oldham, England, on show at the Great Exhibition in London in 1851. Rijksmuseum.",
+      caption: "A photograph, published in 1852 and attributed to the French photographer Claude-Marie Ferrier, of cotton machinery made by Hibbert, Platt and Sons of Oldham, England, on show at the Great Exhibition in London in 1851. Rijksmuseum.",
       prompt: "NOTICE how many spindles one machine holds. INFER how a machine like this could change the world's share of cloth-making. This machine was shown to visitors from many countries: what might some of them have wanted to do after seeing it?"
     },
     {
@@ -158,7 +158,7 @@
       alt: "An old photograph of several wooden mill buildings crowded along a river bank, with a bell tower in the center and a dam at the right",
       url: "../assets/images/topics/5-4/slater-mill-pawtucket-c1870.jpg",
       sourceUrl: "https://www.loc.gov/item/ri0102/",
-      caption: "A photograph of about 1870 of the old Slater Mill, begun in 1793 and enlarged several times, and the mills around it on the river at Pawtucket, Rhode Island. Library of Congress (a copy made by the Historic American Engineering Record).",
+      caption: "A photograph of about 1870 of the old Slater Mill, begun in 1793 and enlarged several times, and the mills around it on the river at Pawtucket, Rhode Island, by an unknown photographer. Library of Congress (a copy made by the Historic American Engineering Record).",
       prompt: "NOTICE where the mills stand, and what the river could do for them. INFER why Samuel Slater built here. A photograph taken about eighty years later, of a mill enlarged since: what can it not tell you about how the mill looked in the 1790s?"
     },
     {

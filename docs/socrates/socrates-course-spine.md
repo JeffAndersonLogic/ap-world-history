@@ -692,14 +692,14 @@ Strong answer checklist: Describe the putting-out system. Explain how the factor
 
 ## 5.4 Industrialization Spreads in the Period from 1750 to 1900
 
-**Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. Factory methods spread from Britain to other parts of Europe, the United States, Russia, and Japan, carried by people, machines, and money. The factory regions made a fast-growing share of the world's goods. India, China, and the Middle East kept making goods, mostly by hand, but a shrinking share.
+**Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. Factory methods spread from Britain to other parts of Europe, the United States, Russia, and Japan, carried by people, machines, and money. The factory regions made a fast-growing share of the world's goods. India, China, and the Middle East kept making goods, much of it by hand, but a shrinking share.
 
 **College Board key concepts.**
 - Unit 5: Learning Objective E (Learning Objective): Explain how different modes and locations of production have developed and changed over time.
 - KC-5.1.II.B (Technology and Innovation): The rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions’ share of global manufacturing during the first Industrial Revolution. While Middle Eastern and Asian countries continued to produce manufactured goods, these regions’ share in global manufacturing declined. Illustrative examples: Shipbuilding in India and Southeast Asia, Iron works in India, Textile production in India and Egypt.
 - KC-5.1.I.D (Technology and Innovation): As new methods of industrial production became more common in parts of northwestern Europe, they spread to other parts of Europe and the United States, Russia, and Japan.
 
-**Expected evidence terms.** Europe, Belgium, German states, Germany, France, United States, Russia, Japan, Slater, Pawtucket, Strutt, Cockerill, Seraing, Liège, Nuremberg, railway, locomotive, Lowell, Boston, Hughes, Yuzovka, Osaka, spinning, machines, skilled workers, money, coal, pattern, 1750, 1900, hand, by hand, handloom, weavers, Asia, China, India, Egypt, share, Bairoch, estimate, a third, a quarter, four-fifths, steam, factory, machine-made, cheaper, Lancashire, East India Company, taxes, raw cotton, Bombay, ships, Trincomalee, Aleppo, Damascus, Ottoman, continued, changed.
+**Expected evidence terms.** Europe, Belgium, German states, Germany, France, United States, Russia, Japan, Slater, Pawtucket, Strutt, Cockerill, Seraing, Liège, Nuremberg, railway, locomotive, Lowell, Boston, Hughes, Yuzovka, Osaka, spinning, machines, skilled workers, money, coal, pattern, 1750, 1900, hand, by hand, handloom, weavers, Asia, China, India, share, Bairoch, estimate, a third, a quarter, four-fifths, steam, factory, machine-made, cheaper, Lancashire, East India Company, taxes, raw cotton, Bombay, ships, Trincomalee, Aleppo, Damascus, Ottoman, continued, changed.
 
 **AP skill focus.** Making connections practice.
 

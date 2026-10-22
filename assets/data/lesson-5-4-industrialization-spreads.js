@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 5: Revolutions",
     topic: "Topic 5.4",
     title: "Industrialization Spreads in the Period from 1750 to 1900",
-    subtitle: "Factory methods spread from Britain to other parts of Europe, the United States, Russia, and Japan, carried by people, machines, and money. The factory regions made a fast-growing share of the world's goods. India, China, and the Middle East kept making goods, mostly by hand, but a shrinking share.",
+    subtitle: "Factory methods spread from Britain to other parts of Europe, the United States, Russia, and Japan, carried by people, machines, and money. The factory regions made a fast-growing share of the world's goods. India, China, and the Middle East kept making goods, much of it by hand, but a shrinking share.",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -123,7 +123,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "What Continued, and Why the Share Fell",
         bullets: [
-          "**Cloth:** in India, hand weaving shrank but did not die. Many weavers switched to cheaper machine-spun thread and kept weaving, and in 1908, in one province of northern India alone, about a million people still lived from handloom weaving. Chinese farm families kept weaving cloth at home, more and more from machine-made thread. In the Syrian cities of Aleppo and Damascus, in the Ottoman Empire, the number of handlooms held steady from 1860 to 1914.",
+          "**Cloth:** India built some steam-powered cotton mills of its own (Bombay's first was founded in 1854), but much of its cloth was still woven by hand. Hand weaving shrank but did not die. Many weavers switched to cheaper machine-spun thread and kept weaving, and in 1908, in one province of northern India alone, about a million people still lived from handloom weaving. Chinese farm families kept weaving cloth at home, more and more from machine-made thread. In the Syrian cities of Aleppo and Damascus, in the Ottoman Empire, the number of handlooms held steady from 1860 to 1914.",
           "**Ships:** at the Bombay Dockyard the Wadia family of master shipbuilders built teak warships for Britain's Royal Navy. HMS Trincomalee, launched in 1817, is still afloat at Hartlepool, England, where its museum calls it Britain's oldest warship still afloat.",
           "**Why the share fell:** the rest of the world made far more goods, and the old makers lost buyers. Machine-made cloth from Lancashire, the cotton-mill region of northwest England, was cheaper than hand-made cloth, even in India. In 1815 India sold about £1.3 million worth of cotton cloth abroad and bought about £26,000 worth from England; by 1832 it sold under £100,000 worth and bought over £400,000 worth. From about 1830 India bought more cotton cloth than it sold, and it sold raw cotton to British mills.",
           "**The rules of those in power:** under the East India Company, which ruled much of India, British cotton cloth entered India at a tax of 2½ percent, while around 1813 Indian calicoes paid about 70 to 85 percent to be sold in Britain. Historians still argue how much each cause mattered: cheaper machine-made cloth, the trade rules of those in power, and troubles in India that began before the factories, such as the breakup of the Mughal Empire and drought.",
@@ -143,7 +143,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Where the Factory Went, and Who Kept Making Goods, 1750 to 1900",
     url: "../assets/images/instructional-maps/topic-5-4.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-5-4.svg",
-    caption: "A BeHistorical map of the places factory methods reached from Britain, with the decade they arrived, and of regions that kept making goods mostly by hand while their share of the world's manufacturing fell.",
+    caption: "A BeHistorical map of the places factory methods reached from Britain, with the decade of the case this lesson uses for each, and of regions that kept making goods, much of it by hand, while their share of the world's manufacturing fell.",
     intro: "Find Britain first. Then follow the numbered arrows to the places the new methods reached, in order. Then find the shaded regions in Asia and the Middle East that kept making goods.",
     prompt: "Using the map, explain one change and one continuity in where the world's goods were made between 1750 and 1900. Name a place for each."
   },

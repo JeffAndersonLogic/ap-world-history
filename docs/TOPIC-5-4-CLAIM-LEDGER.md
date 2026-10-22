@@ -155,3 +155,19 @@ brand fonts): page truth and readability on the cheaper model; history on the de
 13. Slide 22's notes pointed at a picture no longer on slide 6. **Fixed.**
 14. "The yards that could build those were in Britain." **Fixed:** "mostly from British shipyards and engine works."
 15. "Every historian who uses them" (deep reading). **Fixed:** "historians who use them say they are rough."
+
+### Pass 2, 2026-10-22
+
+Two fresh reviewers, from a fresh packet after the pass 1 fixes.
+
+**Page truth, readability, CED, ownership (10 items; 7 fixed, 1 partly, 2 rejected).**
+1. Egypt was shaded on the map, named in the reading's conclusion and in Checkpoint 2's terms, but taught nowhere, and the deep reading's Egypt line is about new state mills. **Fixed:** the map shades the Syrian cities of the Ottoman Empire (Aleppo and Damascus, the lesson's own Middle East evidence); Egypt is out of the conclusion and the terms; slide 1's note says Egypt's mills are 5.6's.
+2. Slide 18 said "to the rest of Europe" (the myth slide 16 corrects) and "Asia kept making goods" beside Japan. **Fixed:** "other parts of Europe"; "India and China kept ___ goods."
+3. "After that the methods spread faster" was attached to 1824 and 1843, with an 1835 locomotive the textile ban never covered. **Fixed** in the reading, the deep reading and slide 8's notes: "Machines and money carried the methods too," with the locomotive named as outside the ban.
+4. Slide 15 stated the heavy British duty in the present tense beside the 1815 to 1830 turn. **Fixed:** "around 1813 Britain had taxed Indian calicoes at 70 to 85 percent"; the reading says "Earlier."
+5. The cause of the falling share (tariffs, the East India Company) is taught and assessed though the story map gave 5.4 only the two Key Concepts; the second reviewer to say so. **Fixed by recording the call:** `docs/UNIT-5-STORY-MAP.md` now gives 5.4 "why the old makers' share fell, in one case, India's cloth," as causes historians weigh, with free trade (5.7) and colonial economies (Unit 6) as bridges. Reported to Jeff to overrule.
+6. Slides 11 and 18 print the carriers and a fill-in sentence. **Rejected:** slide 11's carriers are the topic's content (the reading teaches them), and the pattern sentence is no longer printed (pass 1); slide 18 is the deck's required synthesis, which a word bank supports, the same call as 5.3's pass 3.
+7. The Evidence Lab asked who made each source when three captions name no maker; slide 20 said "two" against the page's "at least two." **Fixed:** "(if the caption says)"; the palampore, the Hibbert and Platt photograph (attributed to Claude-Marie Ferrier, Rijksmuseum) and the Slater Mill photograph now say who made them or that the maker is unknown; slide 20 says "at least two." The text card's alt text is the shared module's (adjacent finding, as in pass 1).
+8. BeInTheRoom offered "The visitors themselves" as a part of the hall that shows a change in how goods are made. **Fixed:** the question asks what best shows the change "in how and where"; the option is "The machines the visitors are studying."
+9. "Mostly by hand" for India and China through 1900, though India built steam mills from the 1850s. **Fixed:** "much of it by hand"; the reading, lecture card 3 and slide 14's notes name Bombay's first mill (founded 1854, spinning from 1856).
+10. No Canvas text. **Rejected:** the `OVERVIEWS` entry is written; the event and assignment are generated only when the topic has class dates, as for 5.1 to 5.3.

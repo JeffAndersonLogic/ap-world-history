@@ -41,7 +41,7 @@ Key Concepts, in the CED's order:
   methods spread from Britain to other parts of Europe, the United States, Russia and Japan, and the
   places with steam-powered factories made a fast-growing share of the world's manufactured goods.
   One thing continued: people in India, China, Egypt and the Ottoman lands kept making cloth, iron and
-  ships, mostly by hand, but they made a shrinking share of the world's goods.**
+  ships, much of it by hand, but they made a shrinking share of the world's goods.**
 - **Suggested skill:** 5.A Making Connections, "Identify patterns among or connections between
   historical developments and processes." Students find the pattern in how the methods spread (each
   new industrial region borrowed British machines and skilled people and added its own coal, water and
@@ -244,7 +244,7 @@ scale nobody had seen. How did the machines themselves change the world? That is
 
 **Factory methods spread from Britain to other parts of Europe, the United States, Russia and Japan,
 carried by people, machines and money. The factory regions made a fast-growing share of the world's
-goods. India, China and the Middle East kept making goods, mostly by hand, but a shrinking share.**
+goods. India, China and the Middle East kept making goods, much of it by hand, but a shrinking share.**
 
 The story map's spine ("Industry spread from northwestern Europe to other parts of Europe, the United
 States, Russia and Japan, and the world's share of manufacturing shifted: Middle Eastern and Asian
@@ -254,7 +254,7 @@ and a list of countries is not a development.
 
 "Spread from Britain to other parts of Europe, the United States, Russia and Japan" is KC-5.1.I.D;
 "a fast-growing share" and "kept making goods ... a shrinking share" are KC-5.1.II.B's two halves;
-"mostly by hand" against "factory" is the objective's *modes*.
+"much of it by hand" against "factory" is the objective's *modes*.
 
 Shorter for the wall: **The factory traveled. The share moved. The old makers kept making.**
 
@@ -316,7 +316,7 @@ A continuity-and-change picture a student can redraw from memory:
 **The turning point:** steam-powered factories. **What changed:** *how* goods were made (from hands to
 machines) and *where* (Britain, then other parts of Europe, the United States, Russia and Japan), and
 the factory regions' share of the world's goods rose. **What continued:** people in India, China, Egypt
-and the Ottoman lands kept making cloth, iron and ships, mostly by hand, but their share fell.
+and the Ottoman lands kept making cloth, iron and ships, much of it by hand, but their share fell.
 
 Result line: **The factory traveled. The share moved. The old makers kept making.**
 

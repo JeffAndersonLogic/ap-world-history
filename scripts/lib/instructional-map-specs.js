@@ -408,9 +408,9 @@ module.exports = [
       { zone: [7, 51, 5, 3], label: 'BELGIUM AND GERMAN STATES', tone: 'bronze', legend: 'Factory methods arrive' },
       { zone: [38, 48, 5, 3], label: 'RUSSIA', labelSide: 'right', tone: 'bronze', legend: 'Factory methods arrive' },
       { zone: [136, 35, 5, 3], label: 'JAPAN', labelSide: 'right', tone: 'bronze', legend: 'Factory methods arrive' },
-      { zone: 'southAsia', label: 'INDIA', labelSide: 'left', tone: 'slate', legend: 'Kept making goods, mostly by hand; share fell' },
-      { zone: 'eastAsia', label: 'CHINA', labelSide: 'right', tone: 'slate', legend: 'Kept making goods, mostly by hand; share fell' },
-      { zone: 'egypt', label: 'EGYPT', labelSide: 'left', tone: 'slate', legend: 'Kept making goods, mostly by hand; share fell' }
+      { zone: 'southAsia', label: 'INDIA', labelSide: 'left', tone: 'slate', legend: 'Kept making goods, much of it by hand; share fell' },
+      { zone: 'eastAsia', label: 'CHINA', labelSide: 'right', tone: 'slate', legend: 'Kept making goods, much of it by hand; share fell' },
+      { zone: [37, 35, 3, 2.5], label: 'SYRIA (OTTOMAN)', labelSide: 'left', tone: 'slate', legend: 'Kept making goods, much of it by hand; share fell' }
     ],
     flows: [
       { from: [-2, 54], to: [-71.4, 41.9], label: '1790s', bow: 0.18 },
@@ -421,7 +421,7 @@ module.exports = [
     legend: [
       { kind: 'area', tone: 'gold', text: 'Britain: where the factory began, 1770s' },
       { kind: 'area', tone: 'bronze', text: 'Factory methods arrive' },
-      { kind: 'area', tone: 'slate', text: 'Kept making goods, mostly by hand; share fell' },
+      { kind: 'area', tone: 'slate', text: 'Kept making goods, much of it by hand; share fell' },
       { kind: 'flow', step: 1, text: 'United States, 1790s' },
       { kind: 'flow', step: 2, text: 'Belgium and German states, 1810s to 1830s' },
       { kind: 'flow', step: 3, text: 'Russia, 1870s' },

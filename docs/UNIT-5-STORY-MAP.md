@@ -147,8 +147,14 @@ Continuity and Change.
   Asian producers kept making goods, but a falling share of them.
 - **Reasoning move:** Continuity and Change (CED p. 95). Suggested skill 5.A.
 - **This topic owns:** KC-5.1.II.B and KC-5.1.I.D, with the CED's examples (shipbuilding in India
-  and Southeast Asia, iron works in India, textiles in India and Egypt).
-- **Mention only as a bridge:** how states sponsored it (5.6).
+  and Southeast Asia, iron works in India, textiles in India and Egypt). Added by the 5.4 build,
+  2026-10-22: **why the old makers' share fell, in one case, India's cloth**: machine-made cloth
+  from steam-powered mills undersold hand-made cloth (KC-5.1.II.B's own "contributed"), and the
+  trade rules of Britain and the East India Company, taught as causes historians weigh, never as the
+  single cause. Two pass-1 and pass-2 reviewers asked for the map and the page to agree; this line
+  is the agreement, for Jeff to overrule.
+- **Mention only as a bridge:** how states sponsored it (5.6), Egypt's state mills among it; free
+  trade and mercantilism as policy (5.7); colonial economies and raw-material extraction (Unit 6).
 
 ### 5.5 Technology of the Industrial Age
 

@@ -153,7 +153,7 @@ module.exports = {
       name: 'Machines, Money and Coal',
       navLabel: 'Where it went',
       dates: '1820s to 1900 &nbsp;·&nbsp; Other parts of Europe, the US, Russia, Japan',
-      thesis: `Once machines and money could travel too, the methods spread faster, and most took root near coal, or by rivers that could turn wheels: in other parts of Europe, in the United States, and later in Russia and Japan.`,
+      thesis: `Machines and money carried the methods too, and most took root near coal, or by rivers that could turn wheels: in other parts of Europe, in the United States, and later in Russia and Japan.`,
       parts: [
         {
           heading: 'Other parts of Europe',
@@ -238,7 +238,7 @@ module.exports = {
       name: 'The Old Makers Kept Making',
       navLabel: 'What continued',
       dates: '1750 to 1900 &nbsp;·&nbsp; What continued, and why the share fell',
-      thesis: `India, China and the Middle East kept making cloth, ships and other goods, mostly by hand. Their share shrank because the rest of the world made far more, because machine-made goods were cheaper, and because of the trade rules of the people in power, among other causes historians still argue about.`,
+      thesis: `India, China and the Middle East kept making cloth, ships and other goods, much of it by hand. Their share shrank because the rest of the world made far more, because machine-made goods were cheaper, and because of the trade rules of the people in power, among other causes historians still argue about.`,
       parts: [
         {
           heading: 'What continued',

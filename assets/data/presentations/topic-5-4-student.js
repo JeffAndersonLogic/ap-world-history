@@ -347,7 +347,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "name": "China",
-            "note": "Mostly by hand",
+            "note": "Much by hand",
             "points": [
               {
                 "year": 1750,
@@ -389,7 +389,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "name": "India",
-            "note": "Mostly by hand",
+            "note": "Much by hand",
             "points": [
               {
                 "year": 1750,
@@ -498,7 +498,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Rules",
-            "text": "British cloth enters India at a 2½ percent tax; Britain taxes Indian cloth heavily"
+            "text": "British cloth enters India at a 2½ percent tax; around 1813 Britain had taxed Indian calicoes at 70 to 85 percent"
           },
           {
             "label": "By about 1830",
@@ -579,7 +579,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Say it in one sentence.",
       "kc": "Unit 5: Learning Objective E",
       "template": {
-        "frame": "Factory methods spread from Britain to the rest of Europe, the US, ___ and ___, carried by people, ___ and money. Their ___ of the world's goods rose. Asia kept ___ goods, but its share ___.",
+        "frame": "Factory methods spread from Britain to other parts of Europe, the US, ___ and ___, carried by people, ___ and money. Their ___ of the world's goods rose. India and China kept ___ goods, but their share ___.",
         "words": [
           "Russia",
           "Japan",
@@ -605,7 +605,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "action",
       "eyebrow": "Module 07 · Evidence Lab",
       "title": "Two sources: a change, or a continuity.",
-      "subtitle": "Choose two cards. For each: what kind of source it is, what it shows about a change or a continuity in how or where goods were made, and what it cannot tell you.",
+      "subtitle": "Choose at least two cards. For each: what kind of source it is, what it shows about a change or a continuity in how or where goods were made, and what it cannot tell you.",
       "action": {
         "label": "Open Student Lesson",
         "url": "lesson-5-4-industrialization-spreads.html#modules"
