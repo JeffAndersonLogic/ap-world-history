@@ -62,16 +62,16 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "steps": [
           {
-            "label": "The merchant",
-            "text": "Brings raw wool or cotton to families in the countryside."
+            "label": "Brings",
+            "text": "A merchant brings raw wool or cotton to families in the countryside."
           },
           {
-            "label": "The family",
-            "text": "Spins it and weaves it at home, on its own wheel and loom."
+            "label": "At home",
+            "text": "The family spins it and weaves it, on its own wheel and loom."
           },
           {
-            "label": "The merchant again",
-            "text": "Collects the cloth and pays for each piece."
+            "label": "Collects",
+            "text": "The merchant collects the cloth and pays for each piece."
           },
           {
             "label": "The result",
@@ -103,11 +103,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "label": "What people built",
             "note": "On top of what nature gave",
             "items": [
-              "Towns",
-              "Better farming",
+              "Towns and better farming",
               "Property laws",
-              "Foreign resources",
-              "Capital"
+              "Foreign resources and capital"
             ]
           }
         ]
@@ -178,7 +176,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "compounding-stairs",
       "eyebrow": "What People Built · Food and Towns",
       "title": "More food, more people, bigger towns.",
-      "footer": "By 1801 only about a third of English working men worked on the land.",
       "kc": "KC-5.1.I.A",
       "template": {
         "steps": [
@@ -210,17 +207,17 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "caption": "Cotton, engraved after Maria Sibylla Merian, London, 1807",
         "steps": [
           {
-            "label": "Property laws",
-            "text": "Since 1624, a patent: the sole right to a new invention for fourteen years. Arkwright patents his spinning machine, 1769."
+            "label": "Laws",
+            "text": "Since 1624, a patent: an inventor's sole right for fourteen years. Arkwright's came in 1769."
           },
           {
-            "label": "Foreign resources",
-            "text": "Cotton will not grow in Britain. By the 1780s most Manchester cotton was grown by enslaved people in the Caribbean and South America."
+            "label": "Cotton",
+            "text": "It will not grow in Britain. By the 1780s most was grown by enslaved people in the Caribbean and South America."
           },
           {
             "label": "Capital",
             "key": true,
-            "text": "Money saved up from trade, including the slave trade, risked on mills before they made a profit."
+            "text": "Money saved from trade, including the slave trade, risked on mills before they paid."
           }
         ],
         "visual": {
@@ -299,20 +296,20 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "terms": [
           {
-            "word": "Better farming",
-            "without": "Without it: less food, fewer people free to leave the land."
+            "word": "Farms",
+            "without": "Without better farming: less food, fewer people free to leave the land."
           },
           {
             "word": "Towns",
             "without": "Without them: no crowd of workers or buyers close by."
           },
           {
-            "word": "Property laws",
-            "without": "Without them: a copier could take the invention."
+            "word": "Laws",
+            "without": "Without patents: a copier could take the invention."
           },
           {
-            "word": "Foreign cotton",
-            "without": "Without it: nothing for a cotton mill to spin."
+            "word": "Cotton",
+            "without": "Without cotton from abroad: nothing for a cotton mill to spin."
           },
           {
             "word": "Capital",
@@ -362,46 +359,55 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "frame-pair",
+      "kind": "story-scene",
       "eyebrow": "The Factory · One Job Each",
       "title": "Each step had its own machine and its own workers.",
+      "footer": "One power source turns every machine, through shafts and belts overhead.",
       "kc": "KC-5.1.I.C",
       "template": {
-        "panels": [
+        "steps": [
           {
-            "tag": "Carding, drawing and roving",
-            "text": "Cotton combed straight, drawn out and twisted into a loose rope.",
+            "label": "Card",
+            "text": "Raw cotton, cleaned, is combed so its fibers lie straight."
+          },
+          {
+            "label": "Draw and rove",
+            "text": "It is drawn out and twisted into a loose rope."
+          },
+          {
+            "label": "Spin",
+            "text": "The rope is spun into thread, in a room of its own."
+          },
+          {
+            "label": "Each worker",
+            "key": true,
+            "text": "Tends one step, all day: specialization of labor."
+          }
+        ],
+        "pictures": [
+          {
             "visual": {
               "url": "../assets/images/topics/5-3/carding-drawing-roving-allom-engraving.jpg",
               "alt": "An engraving of a long mill room: on the left a row of big drum-shaped carding machines driven by belts from wheels on the ceiling; a girl crouches by tall cans of cotton and a young woman lifts another can; on the right, rows of upright drawing frames; more women work down the aisle",
               "credit": "Thomas Allom, Carding, Drawing, and Roving, engraving, 1830s, in a later reprint · Wellcome Collection · Public domain",
               "ratio": 1.329,
-              "fit": "contain"
-            }
+              "fit": "cover",
+              "position": "30% 60%"
+            },
+            "caption": "Carding, drawing and roving, 1830s"
           },
           {
-            "tag": "Mule spinning",
-            "text": "The rope spun into thread, in a room of its own.",
             "visual": {
               "url": "../assets/images/topics/5-3/mule-spinning-allom-1834.jpg",
               "alt": "An engraving of a long spinning room under an iron roof with skylights: two long spinning machines run down each side, with hundreds of spindles; a man leans on one machine, a woman reaches across the threads of another, and a boy crawls underneath it sweeping",
               "credit": "Thomas Allom, engraved by J. W. Lowry, Mule Spinning, London, 1834 · Wellcome Collection · Public domain",
               "ratio": 1.291,
-              "fit": "contain"
-            }
+              "fit": "cover",
+              "position": "55% 62%"
+            },
+            "caption": "Mule spinning, 1834"
           }
-        ],
-        "rows": [
-          {
-            "label": "The work",
-            "text": "Split into steps: clean, card, draw, rove, spin. Each worker tends one step."
-          },
-          {
-            "label": "The power",
-            "text": "Overhead shafts and belts turn every machine from one source."
-          }
-        ],
-        "proves": "The factory led to specialization of labor."
+        ]
       }
     },
     {

@@ -175,9 +175,9 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Power came from muscles, horses, wind and water wheels.',
       template: {
         steps: [
-          { label: 'The merchant', text: 'Brings raw wool or cotton to families in the countryside.' },
-          { label: 'The family', text: 'Spins it and weaves it at home, on its own wheel and loom.' },
-          { label: 'The merchant again', text: 'Collects the cloth and pays for each piece.' },
+          { label: 'Brings', text: 'A merchant brings raw wool or cotton to families in the countryside.' },
+          { label: 'At home', text: 'The family spins it and weaves it, on its own wheel and loom.' },
+          { label: 'Collects', text: 'The merchant collects the cloth and pays for each piece.' },
           { label: 'The result', key: true, text: 'Making cloth is spread across many homes.' }
         ]
       },
@@ -203,7 +203,7 @@ window.BEHISTORICAL_TEACHING = {
         claim: '**Seven factors** behind industrial production',
         branches: [
           { label: 'What nature gave', note: 'In Britain\'s ground and water', items: ['Rivers, coast, canals', 'Coal, iron, too little timber'] },
-          { label: 'What people built', note: 'On top of what nature gave', items: ['Towns', 'Better farming', 'Property laws', 'Foreign resources', 'Capital'] }
+          { label: 'What people built', note: 'On top of what nature gave', items: ['Towns and better farming', 'Property laws', 'Foreign resources and capital'] }
         ]
       },
       notes: {
@@ -275,7 +275,6 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'food', kind: 'compounding-stairs', eyebrow: 'What People Built · Food and Towns',
       kc: 'KC-5.1.I.A', title: 'More food, more people, bigger towns.',
-      footer: 'By 1801 only about a third of English working men worked on the land.',
       template: {
         steps: [
           { label: 'Turnips and clover', text: 'Planted instead of leaving fields empty' },
@@ -291,7 +290,7 @@ window.BEHISTORICAL_TEACHING = {
           'Farming: Britannica, "Norfolk four-course system": wheat, turnips, barley, then clover and ryegrass, in place of a fallow year. Turnips fed animals through the winter; clover enriched the soil; more animals meant more manure and more grain. The rotation was older in Flanders; British farmers spread it.',
           'Enclosure (the First & 10, section 4): UK Parliament counts 5,265 enclosure acts from 1604 to 1914, 3,828 of them from 1750 to 1819, turning shared fields into private farms. Historians dispute how far enclosure pushed people off the land; say only that enclosed farms could be run the new way.',
           'Productivity: Clark reports estimates that agricultural productivity "more than doubled between 1700 and 1850," built indirectly, from population, incomes and towns.',
-          'People: Clark estimates Britain at 7.8 million in 1761; the 1801 census counted 10,472,048 in England, Wales and Scotland (Hansard, 1812). The footer: CAMPOP, Clark\'s census-based 36 percent of adult men in farming in 1801, and Allen\'s 35 percent by 1800.',
+          'People: Clark estimates Britain at 7.8 million in 1761; the 1801 census counted 10,472,048 in England, Wales and Scotland (Hansard, 1812). Fewer farming: by 1801 only about a third of English working men worked on the land (CAMPOP: Clark\'s census-based 36 percent of adult men in farming in 1801, and Allen\'s 35 percent by 1800).',
           'Manchester: about 23,000 in a local count of 1773, 70,409 in the census of 1801 (Manchester City Council). Urbanization is a cause here (workers and buyers close together) and an effect in 5.9.'
         ],
         ask: 'How does a turnip help build a factory?',
@@ -305,9 +304,9 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         caption: 'Cotton, engraved after Maria Sibylla Merian, London, 1807',
         steps: [
-          { label: 'Property laws', text: 'Since 1624, a patent: the sole right to a new invention for fourteen years. Arkwright patents his spinning machine, 1769.' },
-          { label: 'Foreign resources', text: 'Cotton will not grow in Britain. By the 1780s most Manchester cotton was grown by enslaved people in the Caribbean and South America.' },
-          { label: 'Capital', key: true, text: 'Money saved up from trade, including the slave trade, risked on mills before they made a profit.' }
+          { label: 'Laws', text: 'Since 1624, a patent: an inventor\'s sole right for fourteen years. Arkwright\'s came in 1769.' },
+          { label: 'Cotton', text: 'It will not grow in Britain. By the 1780s most was grown by enslaved people in the Caribbean and South America.' },
+          { label: 'Capital', key: true, text: 'Money saved from trade, including the slave trade, risked on mills before they paid.' }
         ]
       },
       notes: {
@@ -381,10 +380,10 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Pick one. Say it as a process: the factor, which meant, so.',
       template: {
         terms: [
-          { word: 'Better farming', without: 'Without it: less food, fewer people free to leave the land.' },
+          { word: 'Farms', without: 'Without better farming: less food, fewer people free to leave the land.' },
           { word: 'Towns', without: 'Without them: no crowd of workers or buyers close by.' },
-          { word: 'Property laws', without: 'Without them: a copier could take the invention.' },
-          { word: 'Foreign cotton', without: 'Without it: nothing for a cotton mill to spin.' },
+          { word: 'Laws', without: 'Without patents: a copier could take the invention.' },
+          { word: 'Cotton', without: 'Without cotton from abroad: nothing for a cotton mill to spin.' },
           { word: 'Capital', without: 'Without it: no one pays for the mill before it earns.' }
         ]
       },
@@ -446,18 +445,16 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'steps', kind: 'frame-pair', eyebrow: 'The Factory · One Job Each',
+      phase: 'steps', kind: 'story-scene', eyebrow: 'The Factory · One Job Each',
       kc: 'KC-5.1.I.C', title: 'Each step had its own machine and its own workers.',
+      footer: 'One power source turns every machine, through shafts and belts overhead.',
       template: {
-        panels: [
-          { tag: 'Carding, drawing and roving', text: 'Cotton combed straight, drawn out and twisted into a loose rope.' },
-          { tag: 'Mule spinning', text: 'The rope spun into thread, in a room of its own.' }
-        ],
-        rows: [
-          { label: 'The work', text: 'Split into steps: clean, card, draw, rove, spin. Each worker tends one step.' },
-          { label: 'The power', text: 'Overhead shafts and belts turn every machine from one source.' }
-        ],
-        proves: 'The factory led to specialization of labor.'
+        steps: [
+          { label: 'Card', text: 'Raw cotton, cleaned, is combed so its fibers lie straight.' },
+          { label: 'Draw and rove', text: 'It is drawn out and twisted into a loose rope.' },
+          { label: 'Spin', text: 'The rope is spun into thread, in a room of its own.' },
+          { label: 'Each worker', key: true, text: 'Tends one step, all day: specialization of labor.' }
+        ]
       },
       notes: {
         minutes: 2,

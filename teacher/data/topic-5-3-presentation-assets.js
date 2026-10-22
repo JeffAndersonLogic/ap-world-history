@@ -47,10 +47,9 @@ const MANCHESTER={url:COMMONS+'wyld-william-manchester-from-kersal-moor-with-rus
 const setTemplate=(phase,add)=>{const s=by(phase);if(s)s.template=Object.assign({},s.template||{},add);return s;};
 setTemplate('question',{visual:Object.assign({},NIGHT,{tagPos:'bl'})});
 setTemplate('risk',{visual:COTTON});
-const steps=by('steps');
-if(steps&&steps.template&&Array.isArray(steps.template.panels)){
-  steps.template.panels[0].visual=CARDING;
-  steps.template.panels[1].visual=MULE;
-}
+setTemplate('steps',{pictures:[
+  {visual:Object.assign({},CARDING,{fit:'cover',position:'30% 60%'}),caption:'Carding, drawing and roving, 1830s'},
+  {visual:Object.assign({},MULE,{fit:'cover',position:'55% 62%'}),caption:'Mule spinning, 1834'}
+]});
 setTemplate('close',{visual:Object.assign({},MANCHESTER,{tagPos:'bl'})});
 })();
