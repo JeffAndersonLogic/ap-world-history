@@ -334,14 +334,14 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "diffusion-path",
       "eyebrow": "The Chain",
       "title": "Each revolution helped another start or win.",
-      "footer": "The American Revolution: \"a model and inspiration for a number of the revolutions that followed\" (College Board).",
+      "footer": "Follow the links: a debt, words, an invasion, and guns.",
       "kc": "KC-5.3.III.B",
       "template": {
         "stops": [
           {
             "place": "America",
             "date": "1775",
-            "text": "A republic is won, and helping costs France a fortune"
+            "text": "A republic won, with costly French help"
           },
           {
             "place": "France",
@@ -356,7 +356,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "place": "Spanish America",
             "date": "1810",
-            "text": "Napoleon takes Spain's king; in 1816 Haiti's guns help Bolívar"
+            "text": "Napoleon takes Spain's king; Haiti arms Bolívar, 1816"
           }
         ]
       }

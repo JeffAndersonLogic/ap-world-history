@@ -408,13 +408,13 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'chain', kind: 'diffusion-path', eyebrow: 'The Chain',
       kc: 'KC-5.3.III.B', title: 'Each revolution helped another start or win.',
-      footer: 'The American Revolution: "a model and inspiration for a number of the revolutions that followed" (College Board).',
+      footer: 'Follow the links: a debt, words, an invasion, and guns.',
       template: {
         stops: [
-          { place: 'America', date: '1775', text: 'A republic is won, and helping costs France a fortune' },
+          { place: 'America', date: '1775', text: 'A republic won, with costly French help' },
           { place: 'France', date: '1789', text: 'A declaration of rights, and Napoleon\'s armies' },
           { place: 'Saint-Domingue', date: '1791', text: 'The declaration claimed by people left out' },
-          { place: 'Spanish America', date: '1810', text: 'Napoleon takes Spain\'s king; in 1816 Haiti\'s guns help Bolívar' }
+          { place: 'Spanish America', date: '1810', text: 'Napoleon takes Spain\'s king; Haiti arms Bolívar, 1816' }
         ]
       },
       notes: {
