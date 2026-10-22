@@ -175,13 +175,13 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "compounding-stairs",
       "eyebrow": "What People Built · Food and Towns",
-      "title": "More food, more people, bigger towns.",
+      "title": "Food, then people, then towns.",
       "kc": "KC-5.1.I.A",
       "template": {
         "steps": [
           {
-            "label": "Turnips and clover",
-            "text": "Planted instead of leaving fields empty"
+            "label": "New crops",
+            "text": "Turnips and clover"
           },
           {
             "label": "More food",
@@ -193,7 +193,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Bigger towns",
-            "text": "Manchester: about 23,000 in 1773, 70,409 in 1801"
+            "text": "Manchester: about 23,000 (1773), 70,409 (1801)"
           }
         ]
       }
@@ -530,7 +530,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "eyebrow": "AP Synthesis",
       "title": "Say it in one sentence.",
       "template": {
-        "frame": "Britain's ___ and ___ made fuel and transport cheap, and its shortage of ___ pushed it to coal. Farms, towns, laws, ___ and money made mills pay. The factory put work in one ___ and gave each worker one ___.",
+        "frame": "Britain's ___ and ___ made fuel and transport cheap; a shortage of ___ pushed it to coal. Farms, towns, laws, ___ and money made mills pay. The factory put work in one ___, one ___ each.",
         "words": [
           "coal",
           "water",

@@ -274,13 +274,13 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'food', kind: 'compounding-stairs', eyebrow: 'What People Built · Food and Towns',
-      kc: 'KC-5.1.I.A', title: 'More food, more people, bigger towns.',
+      kc: 'KC-5.1.I.A', title: 'Food, then people, then towns.',
       template: {
         steps: [
-          { label: 'Turnips and clover', text: 'Planted instead of leaving fields empty' },
+          { label: 'New crops', text: 'Turnips and clover' },
           { label: 'More food', text: 'From the same land, with a smaller share of people farming' },
           { label: 'More people', text: 'About 8 million in 1761, about 10.5 million in 1801' },
-          { label: 'Bigger towns', text: 'Manchester: about 23,000 in 1773, 70,409 in 1801' }
+          { label: 'Bigger towns', text: 'Manchester: about 23,000 (1773), 70,409 (1801)' }
         ]
       },
       notes: {
@@ -569,7 +569,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'synthesis', kind: 'close-retell', eyebrow: 'AP Synthesis',
       title: 'Say it in one sentence.',
       template: {
-        frame: 'Britain\'s ___ and ___ made fuel and transport cheap, and its shortage of ___ pushed it to coal. Farms, towns, laws, ___ and money made mills pay. The factory put work in one ___ and gave each worker one ___.',
+        frame: 'Britain\'s ___ and ___ made fuel and transport cheap; a shortage of ___ pushed it to coal. Farms, towns, laws, ___ and money made mills pay. The factory put work in one ___, one ___ each.',
         words: ['coal', 'water', 'wood', 'cotton', 'place', 'job'],
         prompt: 'Fill it in from memory. Then say it with one example for each blank.'
       },
