@@ -83,7 +83,7 @@ module.exports = {
             { note: {
               kind: 'howknow',
               label: 'How we know: estimates, not counts',
-              html: `Bairoch's figures were published in 1982 and reprinted in Paul Kennedy's The Rise and Fall of the Great Powers (1987). They are built from guesses about population and output, and every historian who uses them calls them rough. Use them to show the size of the change, never as exact amounts.`
+              html: `Bairoch's figures were published in 1982 and reprinted in Paul Kennedy's The Rise and Fall of the Great Powers (1987). They are built from guesses about population and output, and historians who use them say they are rough. Use them to show the size of the change, never as exact amounts.`
             } }
           ]
         }
@@ -119,18 +119,18 @@ module.exports = {
         {
           heading: 'Samuel Slater',
           blocks: [
-            { p: `Samuel Slater learned the cotton trade as an apprentice at Jedediah Strutt's mill at Belper, in Derbyshire. Strutt was Arkwright's partner, so Slater learned Arkwright's machines from the inside. In <span class="num">1789</span> he sailed for the United States without telling anyone what he knew. At Pawtucket, Rhode Island, working with American merchants, he built water-powered spinning machines from memory. The mill building that still stands there went up in <span class="num">1793</span>.` },
+            { p: `Samuel Slater learned the cotton trade as an apprentice at Jedediah Strutt's mill at Belper, in Derbyshire. Strutt was Arkwright's partner, so Slater learned Arkwright's machines from the inside. In <span class="num">1789</span> he sailed for the United States without telling anyone what he knew. At Pawtucket, Rhode Island, working with American merchants, he built water-powered spinning machines from memory. The mill that still stands there was begun in <span class="num">1793</span> and enlarged several times afterward.` },
             { note: {
               kind: 'howknow',
               label: 'How we know: the mill is still there',
-              html: `The Slater Mill still stands at Pawtucket, part of the Blackstone River Valley National Historical Park, run by the National Park Service. It is a building of the 1790s; a photograph of it is a modern view of an old mill.`
+              html: `The Slater Mill still stands at Pawtucket, part of the Blackstone River Valley National Historical Park, run by the National Park Service. It was begun in 1793 and enlarged several times by the 1830s, so a photograph of it today shows the enlarged mill, not the first one.`
             } }
           ]
         },
         {
           heading: 'John Cockerill',
           blocks: [
-            { p: `In Belgium, John Cockerill, the son of an English machine maker, opened ironworks and machine works at Seraing, near Liège, in <span class="num">1817</span>. Liège sat on one of the richest coalfields on the continent of Europe, with rivers to carry goods. The pattern from Topic 5.3, coal near water, was waiting there.` }
+            { p: `In Belgium, John Cockerill, the son of an English machine maker, began building machines at Seraing, near Liège, in <span class="num">1817</span>, and added ironworks there in the 1820s. Liège sat on one of the richest coalfields on the continent of Europe, with rivers to carry goods. The pattern from Topic 5.3, coal near water, was waiting there.` }
           ]
         }
       ],
@@ -153,7 +153,7 @@ module.exports = {
       name: 'Machines, Money and Coal',
       navLabel: 'Where it went',
       dates: '1820s to 1900 &nbsp;·&nbsp; Other parts of Europe, the US, Russia, Japan',
-      thesis: `Once machines and money could travel too, the methods spread faster, and they took root where coal, iron and water were waiting: in other parts of Europe, in the United States, and later in Russia and Japan.`,
+      thesis: `Once machines and money could travel too, the methods spread faster, and most took root near coal, or by rivers that could turn wheels: in other parts of Europe, in the United States, and later in Russia and Japan.`,
       parts: [
         {
           heading: 'Other parts of Europe',
@@ -210,7 +210,7 @@ module.exports = {
         {
           heading: 'A share is not an amount',
           blocks: [
-            { p: `Imagine a pizza that grows much bigger. Your slice can stay the same size while your share of the pizza shrinks. The world was making far more goods in <span class="num">1900</span> than in <span class="num">1750</span>. So a region's share can fall even while it keeps making goods, because the total grows faster.` },
+            { p: `Imagine a pizza that grows much bigger. Your slice can stay the same size while your share of the pizza shrinks. The world was making far more goods in <span class="num">1900</span> than in <span class="num">1750</span>. So a region's share can fall even while it keeps making goods, because the total grows faster. For India, though, Bairoch's estimates suggest it also made less per person over time: it lost ground, not only share.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -253,7 +253,7 @@ module.exports = {
             { p: `One reason the share fell is that the rest of the world made far more goods. Another is that the old makers lost buyers. Cloth from Lancashire's machines was cheaper than cloth woven by hand, even in India itself. In <span class="num">1815</span> India sold about £1.3 million worth of cotton cloth abroad and bought only about £26,000 worth from England. By <span class="num">1832</span> it sold less than £100,000 worth and bought more than £400,000 worth. From about <span class="num">1830</span>, India bought more cotton cloth than it sold. India, which had sold cloth to the world, now bought British cloth, and it sold <span class="kt">raw cotton</span> to British mills.` },
             { p: `Power mattered too. Much of India was ruled by the British East India Company, and British cotton cloth entered India at a tax of only 2½ percent. Meanwhile Britain taxed Indian cloth heavily: around <span class="num">1813</span>, Indian calicoes paid taxes of about 70 to 85 percent of their value to be sold in Britain. Historians still argue about how much each cause mattered: cheaper machine-made goods, the trade rules of the people in power, and, in India, troubles that had begun before the factories did, such as the breakup of the Mughal Empire and years of drought.` },
             { p: `The Middle East felt the same pressure. In <span class="num">1838</span> English cotton cloth sold in Egypt for less than cloth from Egypt's own new mills. (Who built those mills, and why, is Topic 5.6.)` },
-            { p: `Shipbuilding followed the same path. Bombay's teak ships were among the best wooden ships of their day. But by the middle of the 1800s navies were turning to ships of iron, driven by steam, and the yards that could build those were in Britain. Bombay's age of teak warships came to an end.` },
+            { p: `Shipbuilding followed the same path. Bombay's teak ships were among the best wooden ships of their day. But by the middle of the 1800s navies were turning to ships of iron, driven by steam, and they came mostly from British shipyards and engine works. Bombay's age of teak warships came to an end.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -265,7 +265,7 @@ module.exports = {
       useThis: {
         tool: `Name the continuity with the change. <em>Say what kept being made, and say what happened to its share.</em>`,
         limit: `Weavers who kept weaving are evidence of continuity, not of comfort: many were poorer than before, and Bairoch estimated that India's output per person fell.`,
-        comparison: `Against Britain in 1750 (section 01): then Britain bought India's cloth; by the 1820s India bought Britain's.`
+        comparison: `Against Britain in 1750 (section 01): then Britain bought India's cloth; by about 1830 India bought more of Britain's cloth than it sold.`
       },
       terms: [
         ['Handloom', 'A loom worked by hand and foot, with no engine.'],

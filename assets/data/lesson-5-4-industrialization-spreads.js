@@ -55,7 +55,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Technology and Innovation"
     },
     {
-      criteria: "I can use two of Paul Bairoch's estimates to explain how shares of world manufacturing changed from 1750 to 1900, explain what a share means, explain one cause of the change (such as cheaper machine-made cloth, or the trade rules of the East India Company), and give evidence that India, China, or the Middle East kept making goods, such as India's handloom weavers or the Bombay Dockyard's ships.",
+      criteria: "I can use two of Paul Bairoch's estimates to explain how shares of world manufacturing changed from 1750 to 1900, explain what a share means, explain one cause of the change (such as cheaper machine-made cloth, or the trade rules of Britain and the East India Company), and give evidence that India, China, or the Middle East kept making goods, such as India's handloom weavers or the Bombay Dockyard's ships.",
       kc: "KC-5.1.II.B",
       theme: "Technology and Innovation"
     }
@@ -92,14 +92,14 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "**Before:** in 1750 almost everything was made by hand, at home or in workshops, and most of it in Asia. The economic historian Paul Bairoch estimated that China made about a third of the world's manufactured goods, India about a quarter, all of Europe about a quarter, and Britain under 2 percent. His figures are estimates.",
           "**Keeping the secret:** British law banned skilled textile workers from leaving to work abroad (until 1824) and banned the export of textile machines (until 1843).",
-          "**People:** Samuel Slater learned the cotton trade at Jedediah Strutt's mill in Derbyshire (Strutt was Arkwright's partner). In 1789 he sailed for the United States, and at Pawtucket, Rhode Island, he built water-powered spinning machines from memory and had them running by the end of 1790; the Slater Mill building dates from 1793. In 1817 John Cockerill, son of an English machine maker, opened works at Seraing, near Liège in Belgium, on a rich coalfield.",
+          "**People:** Samuel Slater learned the cotton trade at Jedediah Strutt's mill in Derbyshire (Strutt was Arkwright's partner). In 1789 he sailed for the United States, and at Pawtucket, Rhode Island, he built water-powered spinning machines from memory and had them running by the end of 1790; the Slater Mill was begun in 1793 and enlarged several times afterward. In 1817 John Cockerill, son of an English machine maker, began building machines at Seraing, near Liège in Belgium, on a rich coalfield.",
           "**Machines and money:** the first railway in the German states, Nuremberg to Fürth (1835), ran with a locomotive built in England. Boston merchants paid for big cotton mills at Lowell, Massachusetts, from the 1820s. On the continent, industry grew where coal lay: around Liège, in the Ruhr valley, and in northern France.",
           "**Russia and Japan, later:** their big growth came mostly after 1870. A Welsh engineer, John Hughes, built ironworks in the Donets coal basin of southern Russia in the early 1870s, in a town named after him, Yuzovka. In Japan the Osaka Spinning Company opened in 1883 with British-made spinning machines driven by steam. Both governments also pushed industry on purpose: that is Topic 5.6.",
           "**Three carriers:** people, machines, and money. Ask of each case: what carried the methods there, and what was waiting when they arrived?"
         ],
         image: {
           title: "Slater Mill, Pawtucket, about 1869",
-          caption: "One frame of a stereo photograph of about 1869 showing Slater Mill, built in 1793, beside its dam on the Blackstone River in Pawtucket, Rhode Island. By then another company rented it; its sign is on the gable. Library of Congress (a copy made by the Historic American Engineering Record).",
+          caption: "One frame of a stereo photograph of about 1869 showing Slater Mill, begun in 1793 and enlarged several times, beside its dam on the Blackstone River in Pawtucket, Rhode Island. By then another company rented it; its sign is on the gable. Library of Congress (a copy made by the Historic American Engineering Record).",
           url: "../assets/images/topics/5-4/slater-mill-pawtucket-c1869.jpg",
           sourceUrl: "https://www.loc.gov/item/ri0102/"
         }
@@ -111,7 +111,7 @@ window.BEHISTORICAL_LESSON = {
           "**Location:** as factories spread, the regions that had them made more of the world's goods. In Bairoch's estimates, Britain's share of world manufacturing went from under 2 percent in 1750 to about a fifth by 1860.",
           "**By 1900:** Europe and the United States together made more than four-fifths of the world's manufactured goods, and the United States had passed Britain as the largest maker.",
           "**The fall:** China's share fell from about a third (1750) to about 6 percent (1900); India's from about a quarter to under 2 percent.",
-          "**A share is not an amount:** the world was making far more goods in 1900 than in 1750. A region's share can fall even while it keeps making as much as before, because the total grows faster."
+          "**A share is not an amount:** the world was making far more goods in 1900 than in 1750. A region's share can fall even while it keeps making as much as before, because the total grows faster. For India, though, Bairoch's estimates suggest it also made less per person over time: it lost ground, not only share."
         ],
         image: {
           title: "British Cotton Machinery, 1851",
@@ -127,11 +127,11 @@ window.BEHISTORICAL_LESSON = {
           "**Ships:** at the Bombay Dockyard the Wadia family of master shipbuilders built teak warships for Britain's Royal Navy. HMS Trincomalee, launched in 1817, is still afloat at Hartlepool, England, where its museum calls it Britain's oldest warship still afloat.",
           "**Why the share fell:** the rest of the world made far more goods, and the old makers lost buyers. Machine-made cloth from Lancashire, the cotton-mill region of northwest England, was cheaper than hand-made cloth, even in India. In 1815 India sold about £1.3 million worth of cotton cloth abroad and bought about £26,000 worth from England; by 1832 it sold under £100,000 worth and bought over £400,000 worth. From about 1830 India bought more cotton cloth than it sold, and it sold raw cotton to British mills.",
           "**The rules of those in power:** under the East India Company, which ruled much of India, British cotton cloth entered India at a tax of 2½ percent, while around 1813 Indian calicoes paid about 70 to 85 percent to be sold in Britain. Historians still argue how much each cause mattered: cheaper machine-made cloth, the trade rules of those in power, and troubles in India that began before the factories, such as the breakup of the Mughal Empire and drought.",
-          "**New ships:** by the middle of the 1800s navies were turning to iron ships driven by steam, built in British yards, and Bombay's age of teak warships came to an end."
+          "**New ships:** by the middle of the 1800s navies were turning to iron ships driven by steam, built mostly in British yards, and Bombay's age of teak warships came to an end."
         ],
         image: {
           title: "A Weaver at His Loom, about 1840",
-          caption: "A painting by an artist from Tanjore (Thanjavur), in south India, of a weaver working a hand loom, made about 1840 for European buyers who collected pictures of Indian trades. Wellcome Collection.",
+          caption: "A painting of a weaver working a hand loom, about 1840, attributed to a painter from Tanjore (Thanjavur), in south India, in a style Indian artists often made for European buyers who collected pictures of Indian trades. Wellcome Collection.",
           url: "../assets/images/topics/5-4/weaver-at-his-loom-tanjore-c1840.jpg",
           sourceUrl: "https://wellcomecollection.org/works/pjnujb7j"
         }
@@ -169,12 +169,12 @@ window.BEHISTORICAL_LESSON = {
 
   primarySource: {
     title: "Primary Source: Montgomery Martin on India's Cloth, 1840",
-    intro: "In 1840 a committee of Britain's House of Commons asked witnesses about the taxes on goods from India. One witness was Robert Montgomery Martin, a British writer who had lived in India and spent years studying the trade of the British Empire. He argued that India's goods were being treated unfairly. A member of the committee, who spoke for British silk makers, had said that India was \"an agricultural rather than a manufacturing country.\" Martin answered him. The Indian historian Romesh Dutt reprinted Martin's evidence in 1904.",
+    intro: "In 1840 a committee of Britain's House of Commons asked witnesses about the taxes on goods from India. One witness was Robert Montgomery Martin, a British writer who had lived in India and spent years studying the trade of the British Empire. He argued that India's goods were being treated unfairly. A member of the committee, who spoke for British silk makers, had said the committee had evidence that India was \"an agricultural rather than a manufacturing country.\" Martin answered him. The Indian historian Romesh Dutt reprinted Martin's evidence in 1904.",
     attribution: "Robert Montgomery Martin, evidence to the House of Commons Select Committee on East India Produce, 1840, questions 3877 to 3879 and 3918 to 3920, as printed in Romesh Dutt, India in the Victorian Age (London, 1904), pp. 112 and 114",
     text: "<strong>Passage 1.</strong> We have during the period of a quarter of a century compelled the Indian territories to receive our manufactures; our woollens, duty free, our cottons at 2½ per cent., and other articles in proportion ... The decay and destruction of Surat, of Dacca, of Murshedabad, and other places where native manufactures have been carried on, is too painful a fact to dwell upon. I do not consider that it has been in the fair course of trade; I think it has been the power of the stronger exercised over the weaker.<br><br><strong>Passage 2.</strong> I do not agree that India is an agricultural country; India is as much a manufacturing country as an agricultural; and he who would seek to reduce her to the position of an agricultural country seeks to lower her in the scale of civilisation. I do not suppose that India is to become the agricultural farm of England; she is a manufacturing country, her manufactures of various descriptions have existed for ages, and have never been able to be competed with by any nation wherever fair play has been given to them.<br><br><em>Words to know: compelled means forced; manufactures means manufactured goods; duty means a tax on goods brought in; 2½ per cent. means a tax of 2½ percent of the goods' value; Surat, Dacca (now Dhaka), and Murshedabad were Indian cloth-making cities; native means made by Indians; decay and destruction means decline and ruin; competed with means matched by a rival; to lower her in the scale of civilisation means to treat her as less advanced.</em>",
     questions: [
       "In Passage 1, what does Martin say Britain \"compelled\" India to do, and at what tax did British cottons enter India? What does he say happened to Indian cloth-making cities such as Dacca?",
-      "In Passage 1, Martin says the decline was \"not in the fair course of trade\" but \"the power of the stronger exercised over the weaker.\" What is he claiming caused the change? Name one other cause from this lesson that historians also weigh.",
+      "In Passage 1, Martin says: \"I do not consider that it has been in the fair course of trade; I think it has been the power of the stronger exercised over the weaker.\" What is he claiming caused the change? Name one other cause from this lesson that historians also weigh.",
       "Using Passage 2, explain what Martin thought India should be: a country that only grows crops, or one that also makes goods? Then use the lesson to say whether India kept making goods after 1840, and what happened to its share of the world's goods."
     ]
   },

@@ -1012,15 +1012,15 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Britain's leaders knew the new machines were valuable. British law banned <span class=\"kt\">skilled workers</span>, people trained to build or run the machines, from leaving to work abroad, and it banned sending textile machines out of the country. Machines can be stopped at a port. Memories cannot."
+            "html": "Britain's leaders knew the new machines were valuable. British law banned <span class=\"kt\">skilled workers</span>, people trained to build or run the machines, from leaving to work abroad, and it banned sending textile machines out of the country. A port could search a crate, but not a memory."
           },
           {
             "type": "p",
-            "html": "Samuel Slater learned the cotton trade as an apprentice at Jedediah Strutt's mill in Derbyshire. Strutt was Arkwright's partner, so Slater knew Arkwright's machines from the inside. In 1789 he sailed for the United States without telling anyone what he knew. In Pawtucket, Rhode Island, working with American merchants, he built water-powered spinning machines from memory. The mill building that still stands there went up in 1793."
+            "html": "Samuel Slater learned the cotton trade as an apprentice at Jedediah Strutt's mill in Derbyshire. Strutt was Arkwright's partner, so Slater knew Arkwright's machines from the inside. In 1789 he sailed for the United States without telling anyone what he knew. In Pawtucket, Rhode Island, working with American merchants, he built water-powered spinning machines from memory. The mill that still stands there was begun in 1793 and enlarged several times afterward."
           },
           {
             "type": "p",
-            "html": "In Belgium, John Cockerill, the son of an English machine maker, opened ironworks and machine works at Seraing, near Liège, in 1817. Liège sat on one of the richest coalfields on the continent of Europe, and it had rivers to carry goods. The pattern from Topic 5.3, coal near water, was waiting there."
+            "html": "In Belgium, John Cockerill, the son of an English machine maker, began building machines at Seraing, near Liège, in 1817, and added ironworks there in the 1820s. Liège sat on one of the richest coalfields on the continent of Europe, and it had rivers to carry goods. The pattern from Topic 5.3, coal near water, was waiting there."
           }
         ],
         "callout": {
@@ -1075,7 +1075,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Continuity and Change",
-          "raw": "<p><strong>A share is not the same as an amount.</strong> Imagine a pizza that gets much bigger. Your slice can stay the same size while your share of the pizza shrinks. The world was making far more goods in 1900 than in 1750. So a falling share does not, by itself, mean a region made less.</p>"
+          "raw": "<p><strong>A share is not the same as an amount.</strong> Imagine a pizza that gets much bigger. Your slice can stay the same size while your share of the pizza shrinks. The world was making far more goods in 1900 than in 1750. So a falling share does not, by itself, mean a region made less. For India, though, Bairoch's estimates suggest it also made less per person over time: it lost ground, not only share.</p>"
         }
       },
       {
@@ -1120,7 +1120,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Shipbuilding followed the same path. Bombay's teak ships were among the best wooden ships of their day. But by the middle of the 1800s navies were turning to ships of iron, driven by steam, and the yards that could build those were in Britain. Bombay's age of teak warships came to an end."
+            "html": "Shipbuilding followed the same path. Bombay's teak ships were among the best wooden ships of their day. But by the middle of the 1800s navies were turning to ships of iron, driven by steam, and they came mostly from British shipyards and engine works. Bombay's age of teak warships came to an end."
           },
           {
             "type": "p",

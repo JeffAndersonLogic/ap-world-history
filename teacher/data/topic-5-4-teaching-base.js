@@ -208,7 +208,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: '1789', text: 'Samuel Slater, trained at **Strutt\'s mill**, sails for America, telling no one' },
           { label: 'Pawtucket', text: 'He builds water-powered spinning machines **from memory**' }
         ],
-        proves: 'Machines can be stopped at a port. Memories cannot.'
+        proves: 'A port could search a crate, but not a memory.'
       },
       notes: {
         minutes: 2,
@@ -241,7 +241,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 3,
         land: [
           'KC-5.1.I.D names the destinations: "other parts of Europe and the United States, Russia, and Japan." All four are on this slide, in the order the methods arrived.',
-          'Belgium: John Cockerill (1790 to 1840), son of the English machine builder William Cockerill; the Seraing works began production on 25 January 1817 and by the mid-1820s were called "the industrial wonder of Europe" (Encyclopedia of Europe, 1789-1914). Belgium was the first country on the European mainland to industrialize, on the coal of the Sambre-Meuse valley. The mainland\'s first steam passenger railway ran from Brussels to Mechelen on 5 May 1835 (Canon of Flanders).',
+          'Belgium: John Cockerill (1790 to 1840), son of the English machine builder William Cockerill; the Seraing works began production on 25 January 1817 and by the mid-1820s were called "the industrial wonder of Europe" (Encyclopedia of Europe, 1789-1914). Machine building came first; the works\' coke blast furnace was begun in 1823 and producing by 1826. Belgium was the first country on the European mainland to industrialize, on the coal of the Sambre-Meuse valley. The mainland\'s first steam passenger railway ran from Brussels to Mechelen on 5 May 1835 (Canon of Flanders).',
           'German states: the Nuremberg to Fürth line opened on 7 December 1835 with the locomotive Adler, built by Robert Stephenson and Company in Newcastle. The Ruhr\'s coal and iron industry grew later in the century. Northern France industrialized around Lille and its coalfields.',
           'Russia: John Hughes, a Welsh engineer; his New Russia Company was registered in London in 1869, he brought a team out in 1870, and the first blast furnace was lit in 1871 (Glamorgan Archives). The settlement became Hughesovka, or Yuzovka, now Donetsk. Russia\'s industrial output grew 8 to 9 percent a year in the 1890s (Journal of Economic History, 2025).',
           'Japan: the Osaka Spinning Company, a private company promoted by Shibusawa Eiichi, founded 1882, began spinning in 1883 with 10,500 English mule spindles driven by steam, and ran a night shift from 1883; electric light came in 1886 (Takeshi Abe; Osaka City). Its profits set off Japan\'s spinning boom; in 1897 Japan\'s cotton yarn exports passed its imports (IDE-JETRO).',
@@ -255,14 +255,14 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'carriers', kind: 'equation', eyebrow: 'How It Spread · What Carried It',
       kc: 'KC-5.1.I.D', title: 'Three things traveled together.',
-      footer: 'And they took root where coal, iron and water were waiting.',
+      footer: 'Most took root near coal, or by rivers that could turn wheels.',
       template: {
         terms: [
           { word: 'People', note: 'who knew the machines: Slater, Cockerill, Hughes' },
           { word: 'Machines', note: 'from Britain: the Nuremberg engine, Osaka\'s spindles' },
           { word: 'Money', note: 'to pay first: Boston merchants at Lowell' }
         ],
-        result: { word: 'A factory in a new place', note: 'on coal and water' }
+        result: { word: 'A factory in a new place', note: 'near coal or a river' }
       },
       notes: {
         minutes: 2,
@@ -410,7 +410,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'KC-5.1.II.B, second half: "While Middle Eastern and Asian countries continued to produce manufactured goods, these regions\' share in global manufacturing declined." This slide is the continuity.',
           'Handloom weavers: the economic historian Tirthankar Roy finds that handloom weaving in India "did not succumb": handloom cloth\'s share of India\'s market was roughly stable from the 1890s to the 1930s (Traditional Industry in the Economy of Colonial India). In the United Provinces alone, a 1908 report said "quite a million" people depended on handloom weaving (Rai, International Review of Social History, 2022). There is no reliable all-India headcount for 1900, so do not say "millions." Many weavers used cheaper mill-spun yarn. Hand weaving still shrank: Indrajit Ray (Economic History Review, 2009) estimates Bengal\'s industry lost about 28 percent by the mid-1800s.',
-          'The pictures: a gouache of a weaver at his loom, painted by an artist from Tanjore (Thanjavur), south India, about 1840 (Wellcome Collection, public domain), one of the "types and trades" pictures Indian artists made for European buyers, so a staged type, not a portrait; and Hugh Owen\'s 1851 photograph of Indian ship models under the INDIA sign at the Great Exhibition (Rijksmuseum, public domain). The models are not the Bombay Dockyard: no period picture of the dockyard could be sourced.',
+          'The pictures: a gouache of a weaver at his loom, attributed to a painter from Tanjore (Thanjavur), south India, about 1840 (Wellcome Collection, public domain), in the "types and trades" style Indian artists often made for European buyers, so probably a type, not a portrait; and Hugh Owen\'s 1851 photograph of Indian ship models under the INDIA sign at the Great Exhibition (Rijksmuseum, public domain). The models are not the Bombay Dockyard: no period picture of the dockyard could be sourced.',
           'Ships: the CED\'s example, shipbuilding in India. The Wadia family of Parsi master builders ran the Bombay Dockyard for generations; Jamsetjee Bomanjee Wadia supervised HMS Trincomalee, "one of 14 ships he would build for the Royal navy" (Royal Museums Greenwich). Built of Malabar teak and launched 12 October 1817, it is at Hartlepool, where the National Museum of the Royal Navy calls it "Britain\'s oldest warship still afloat" (not the oldest warship afloat: USS Constitution is older). Rajesh Kochhar (Current Science) counts 334 Wadia vessels from 1736 to 1884, 39 of them for the Royal Navy, and dates the end of teak warship building to iron and steam.',
           'China: Jacob Eyferth (University of Chicago): "rural hand spinning and hand weaving held out remarkably well in the face of mechanized competition"; imported yarn spread in the late 1800s, so that by about 1900 half the yarn used in China was machine-made, and weavers combined it with homespun. The Treaty of Nanjing (1842) held import taxes to about 5 percent.',
           'The Middle East: Pamuk and Williamson (Economic History Review, 2011): Ottoman producers\' share of their own cloth market fell from about 97 percent in the 1820s to 25 to 35 percent by the 1870s, yet handloom numbers in Aleppo and Damascus "show no trend at all between 1860 and World War I," and crafts such as carpet making thrived.',
@@ -429,7 +429,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         steps: [
           { label: 'Machines', text: 'Lancashire\'s steam mills make cloth cheaper than hands can' },
-          { label: 'Rules', text: 'British cloth enters India at a 2½ percent tax' },
+          { label: 'Rules', text: 'British cloth enters India at a 2½ percent tax; Britain taxes Indian cloth heavily' },
           { label: 'By about 1830', text: 'India buys more cotton cloth than it sells' },
           { label: 'Then', text: 'India sells raw cotton to British mills and buys British cloth', key: true }
         ],
@@ -445,7 +445,7 @@ window.BEHISTORICAL_TEACHING = {
           'The ships followed the same path: by the middle of the 1800s navies were turning to iron, steam-driven warships, and Bombay\'s teak warship building came to an end (Kochhar).'
         ],
         ask: 'Which link is a choice someone made?',
-        listenFor: 'The rules: the East India Company chose the taxes. The machines were cheaper, but the rules decided who could sell where.',
+        listenFor: 'The rules: Britain set the high taxes on Indian cloth, and the East India Company\'s government let British cloth into India at 2½ percent. The machines were cheaper, but the rules decided who could sell where.',
         ap: 'KC-5.1.II.B (the mechanism of the change).'
       }
     },
@@ -562,7 +562,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Land the spine, then the hand-off to 5.5: the machines themselves, steam and the fossil-fuel revolution, the second industrial revolution, and railways, steamships and the telegraph.',
-          'The picture is a real photograph: mills on the Merrimack River at Lowell, Massachusetts, by the Detroit Publishing Company, between 1900 and 1910 (Library of Congress, public domain), at the very end of this topic\'s dates. The water-powered mill town of the 1820s had become a city of brick mills and smokestacks, a long way from Slater\'s wooden mill (slide 6).'
+          'The picture is a real photograph: mills on the Merrimack River at Lowell, Massachusetts, by the Detroit Publishing Company, between 1900 and 1910 (Library of Congress, public domain), at the very end of this topic\'s dates. The water-powered mill town of the 1820s had become a city of brick mills and smokestacks, a long way from Slater\'s wooden mill on the lecture card and in the Evidence Lab.'
         ],
         ask: 'Say the topic in one sentence, with one example.',
         listenFor: 'The spine with a real case: Slater building machines from memory; India\'s share falling while its weavers kept weaving.'

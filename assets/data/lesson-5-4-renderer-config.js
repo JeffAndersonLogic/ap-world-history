@@ -134,7 +134,7 @@
       alt: "An Indian painting of a man in a white turban and white cloth sitting at a hand loom, weaving a long red patterned cloth, with his feet on the treadles and cords hanging from above",
       url: "../assets/images/topics/5-4/weaver-at-his-loom-tanjore-c1840.jpg",
       sourceUrl: "https://wellcomecollection.org/works/pjnujb7j",
-      caption: "A painting by an artist from Tanjore (Thanjavur), in south India, about 1840. Indian artists painted pictures of workers at their trades for European buyers, so this shows a typical weaver, not one real person's workshop. Wellcome Collection.",
+      caption: "A painting attributed to a painter from Tanjore (Thanjavur), in south India, about 1840. Indian artists often painted pictures of workers at their trades for European buyers, so this probably shows a typical weaver, not one real person's workshop. Wellcome Collection.",
       prompt: "NOTICE what powers this loom. INFER whether this picture shows a change or a continuity in how cloth was made in India in the 1840s. Who was this painting made for, and how might that shape what it shows?"
     },
     {
@@ -158,8 +158,8 @@
       alt: "An old photograph of several wooden mill buildings crowded along a river bank, with a bell tower in the center and a dam at the right",
       url: "../assets/images/topics/5-4/slater-mill-pawtucket-c1870.jpg",
       sourceUrl: "https://www.loc.gov/item/ri0102/",
-      caption: "A photograph of about 1870 of the old Slater Mill, built in 1793, and the mills around it on the river at Pawtucket, Rhode Island. Library of Congress (a copy made by the Historic American Engineering Record).",
-      prompt: "NOTICE where the mills stand, and what the river could do for them. INFER why Samuel Slater built here. A photograph taken eighty years later: what can it not tell you about how the mill looked in the 1790s?"
+      caption: "A photograph of about 1870 of the old Slater Mill, begun in 1793 and enlarged several times, and the mills around it on the river at Pawtucket, Rhode Island. Library of Congress (a copy made by the Historic American Engineering Record).",
+      prompt: "NOTICE where the mills stand, and what the river could do for them. INFER why Samuel Slater built here. A photograph taken about eighty years later, of a mill enlarged since: what can it not tell you about how the mill looked in the 1790s?"
     },
     {
       title: "Who Made the World's Goods, 1750 and 1900",

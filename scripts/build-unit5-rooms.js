@@ -210,7 +210,7 @@ const scenarios = [
         O('raw', 'Grow and sell raw cotton', 'Stop weaving and grow cotton to sell to the mills.', 'The mills always need cotton, so it sells.', 'The region becomes a supplier of raw materials, not of finished goods.', 'Selling raw cotton keeps a region in trade, but at the start of the chain.')
       ])
     ],
-    reflectionPrompt: 'Step out of the hall. Explain one change in how or where the world’s goods were made between 1750 and 1900, and one thing that continued. Then explain whether your choice of what to take home does or does not fit the pattern of how the factory methods spread: with people, machines, and money, to places with coal and water.',
+    reflectionPrompt: 'Step out of the hall. Explain one change in how or where the world’s goods were made between 1750 and 1900, and one thing that continued. Then explain whether your choice of what to take home does or does not fit the pattern of how the factory methods spread: with people, machines, and money, mostly to places near coal or fast rivers.',
     sources: [
       { label: 'Victoria and Albert Museum, The Opening of the Great Exhibition (Selous)', url: 'https://collections.vam.ac.uk/item/O8820/the-opening-of-the-great-oil-painting-selous-henry-courtney/' },
       { label: 'Reports by the Juries, Great Exhibition, 1852 (Internet Archive)', url: 'https://archive.org/details/reportsbyjurieso00grea' },

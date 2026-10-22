@@ -117,7 +117,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "text": "He builds water-powered spinning machines **from memory**"
           }
         ],
-        "proves": "Machines can be stopped at a port. Memories cannot."
+        "proves": "A port could search a crate, but not a memory."
       }
     },
     {
@@ -165,7 +165,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "equation",
       "eyebrow": "How It Spread · What Carried It",
       "title": "Three things traveled together.",
-      "footer": "And they took root where coal, iron and water were waiting.",
+      "footer": "Most took root near coal, or by rivers that could turn wheels.",
       "kc": "KC-5.1.I.D",
       "template": {
         "terms": [
@@ -184,7 +184,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         ],
         "result": {
           "word": "A factory in a new place",
-          "note": "on coal and water"
+          "note": "near coal or a river"
         }
       }
     },
@@ -498,7 +498,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Rules",
-            "text": "British cloth enters India at a 2½ percent tax"
+            "text": "British cloth enters India at a 2½ percent tax; Britain taxes Indian cloth heavily"
           },
           {
             "label": "By about 1830",
