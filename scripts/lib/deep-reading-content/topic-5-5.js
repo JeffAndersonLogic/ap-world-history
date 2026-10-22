@@ -76,7 +76,7 @@ module.exports = {
             { note: {
               kind: 'howknow',
               label: 'How we know: the world\'s energy, measured',
-              html: `Historians of energy, such as Vaclav Smil, have estimated how much energy the world used and where it came from. Their figures show that until the middle of the 1800s, wood, crop waste and other things that grow were the world's main source of energy, and that by about 1900 coal gave about half (Our World in Data).`
+              html: `Historians of energy, such as Vaclav Smil, have estimated how much energy the world used and where it came from. Their figures show that in 1850 wood, crop waste and other things that grow gave more than 90 percent of the world's energy, and that they were still the largest source in 1900, when coal gave nearly half (Our World in Data).`
             } }
           ]
         },
@@ -165,14 +165,14 @@ module.exports = {
             { note: {
               kind: 'howknow',
               label: 'How we know: counting cars',
-              html: `Government tables of registered cars in the United States begin with the year 1900, when there were about 8,000 in the whole country. The internal combustion engine's big changes, to cars, trucks, tractors and airplanes, came after 1900.`
+              html: `Government tables of the number of cars in the United States begin with the year 1900, when there were about 8,000 in the whole country. (No state yet required cars to be registered: New York was the first, in 1901.) The internal combustion engine's big changes, to cars, trucks, tractors and airplanes, came after 1900.`
             } }
           ]
         }
       ],
       useThis: {
         tool: `Say how much. <em>Use one number to show that the energy available grew greatly.</em>`,
-        limit: `Coal passed wood and other things that grow only in the 1890s; say "about half" by 1900, not that coal had replaced wood.`,
+        limit: `Coal caught up with wood and other things that grow only around 1900, and passed them after; say "about half" by 1900, not that coal had replaced wood.`,
         comparison: `Against the steam engine (section 02): the internal combustion engine was developed before 1900, but most of its effects came after.`
       },
       terms: [
@@ -254,7 +254,7 @@ module.exports = {
         {
           heading: 'Steamships',
           blocks: [
-            { p: `A sailing ship from Norway to America took about 53 days on average. By the 1870s the fastest steamships crossed the Atlantic in about 7 or 8 days. The Suez Canal, opened in Egypt in <span class="num">1869</span>, could be used only by steamships, and it cut the voyage from Europe to Asia. Steamboats also pushed up rivers into the interior of continents: in <span class="num">1854</span> the steamer Pleiad went far up the Niger and Benue rivers in West Africa, and none of its crew died, because they took quinine, a medicine against malaria. What European empires did with this reach is Unit 6.` }
+            { p: `Under sail, emigrants from Norway took about 53 days on average to reach America. By steamship, the Atlantic crossing from England took about 12 days in the 1860s, and the fastest ships of the 1870s crossed in about 7 or 8 days. The Suez Canal, opened in Egypt in <span class="num">1869</span>, cut the voyage from Europe to Asia; it was of little use to sailing ships, because the winds of the Red Sea were hard to sail against, so it mostly served steamships. Steamboats also pushed up rivers into the interior of continents: in <span class="num">1854</span> the steamer Pleiad went far up the Niger and Benue rivers in West Africa, and none of its crew died, because they took quinine, a medicine against malaria. What European empires did with this reach is Unit 6.` }
           ]
         },
         {
@@ -312,7 +312,7 @@ module.exports = {
       {
         category: 'Causation',
         title: 'Longer reach, more trade and migration',
-        body: `Evidence to sort: the Liverpool and Manchester Railway (1830); Russia's railways (27 km in 1840, over 53,000 in 1900); Promontory Summit (1869); the Trans-Siberian (1891 to 1904); sail 53 days, steam 7 or 8; Suez (1869); the Pleiad (1854); Morse (1844), the Atlantic cable (1866), Bombay (1870); the wheat price gap (57.6 percent in 1870, 15.6 in 1913); 55 million Europeans (1850 to 1914); over 29 million Indians and 19 million Chinese (1846 to 1940). For one, explain the link from the technology to the effect.`
+        body: `Evidence to sort: the Liverpool and Manchester Railway (1830); Russia's railways (27 km in 1840, over 53,000 in 1900); Promontory Summit (1869); the Trans-Siberian (1891 to 1904); sail from Norway about 53 days, steam from England about 12 (1860s), the fastest 7 or 8 (1870s); Suez (1869); the Pleiad (1854); Morse (1844), the Atlantic cable (1866), Bombay (1870); the wheat price gap (57.6 percent in 1870, 15.6 in 1913); 55 million Europeans (1850 to 1914); over 29 million Indians and 19 million Chinese (1846 to 1940). For one, explain the link from the technology to the effect.`
       }
     ]
   }

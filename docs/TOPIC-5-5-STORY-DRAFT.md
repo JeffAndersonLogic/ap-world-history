@@ -155,8 +155,8 @@ before. How did the machines themselves change the world?
 **Where the world's energy came from in 1750.** Almost all the energy people used came from things
 that grow: food for the muscles of people and animals, and wood for fire. Wind and water turned
 some mills and moved ships. All of these had limits. A water wheel works only beside a fast river.
-A forest takes decades to grow back. A horse gets tired. Until the middle of the 1800s, wood, crop
-waste and other things that grow were still the world's main source of energy.
+A forest takes decades to grow back. A horse gets tired. Until about 1900, wood, crop
+waste and other things that grow were still the world's largest source of energy.
 
 **Energy buried underground.** Coal and oil are fossil fuels: the remains of plants and tiny sea
 creatures, buried for millions of years, with energy stored inside them. Britain already burned coal
@@ -213,9 +213,10 @@ that moved things.
   States was finished at Promontory Summit, Utah. Russia began the Trans-Siberian Railway in 1891,
   and trains could cross to the Pacific by 1904. A railroad could reach places no river or canal
   reached: farms, mines and towns in the middle of continents.
-- **Steamships.** A sailing ship from Norway to America took about 53 days on average; by the 1870s the
-  fastest steamships crossed the Atlantic in about 7 or 8 days. The Suez Canal (1869) could be used
-  only by steamships. Steamboats also went up rivers into the interior of continents: in 1854 the
+- **Steamships.** Under sail, emigrants from Norway took about 53 days on average to reach America; by
+  steamship the Atlantic crossing from England took about 12 days in the 1860s, and the fastest ships
+  of the 1870s crossed in about 7 or 8. The Suez Canal (1869) was of little use to sailing ships, so
+  it mostly served steamships. Steamboats also went up rivers into the interior of continents: in 1854 the
   steamer Pleiad went far up the Niger and Benue rivers in West Africa, with no deaths among its crew,
   who took quinine against malaria. (What European empires did with that reach is Unit 6.)
 - **The telegraph.** In 1844 Samuel Morse sent "What hath God wrought?" by electric telegraph from
@@ -275,7 +276,7 @@ Shorter for the wall: **More power. New materials. Longer reach.**
 
 | Evidence | CED anchor | What it proves |
 |---|---|---|
-| Energy in 1750: muscles, wood, wind, water; biomass the world's main energy until the mid-1800s | KC-5.1.I.B (the before) | The **limit** that fossil fuels broke. |
+| Energy in 1750: muscles, wood, wind, water; biomass the world's largest source until about 1900 | KC-5.1.I.B (the before) | The **limit** that fossil fuels broke. |
 | Newcomen, 1712, a pump at a coal mine; Watt's separate condenser (1765, patent 1769), under a third of the coal; rotary engines in the 1780s; mills move into towns | KC-5.1.I.B (steam engines) | **Machines** turned coal's heat into motion, and freed factories from rivers. |
 | Britain's coal output, about 65 million tons (1854) to about 225 million (1900); coal about half the world's energy by about 1900 | KC-5.1.I.B ("greatly increased the energy available") | The **amount**: the fossil fuels revolution. |
 | Drake's well, 1859; kerosene; Otto, 1876; Benz, 1886; 8,000 US cars in 1900 | KC-5.1.I.B (oil; internal combustion engine) | The second fossil fuel and the second engine, and **when** their effects came. |
@@ -284,7 +285,7 @@ Shorter for the wall: **More power. New materials. Longer reach.**
 | Pearl Street, 1882; motors under 5 percent of US factory power in 1899 | KC-5.1.I.E (electricity) | A new power source, and a **slow** change. |
 | Interchangeable parts; Whitworth 1841, Sellers 1864 | KC-5.1.I.E (precision machinery) | **Precise machines** made parts that fit any copy. |
 | Liverpool and Manchester, 1830; Russia 27 km to 53,234 km; India 1853; Promontory Summit 1869; Trans-Siberian 1891 to 1904 | KC-5.1.IV (railroads; interior regions) | Rail **reached the middle of continents**. |
-| Sail 53 days, steam 7 to 8 days; Suez 1869 for steamships; the Pleiad, 1854 | KC-5.1.IV (steamships; exploration) | Ships became **faster and went inland**. |
+| Sail from Norway 53 days; steam from England 12 days (1860s), 7 or 8 (1870s); Suez 1869, mostly steamships; the Pleiad, 1854 | KC-5.1.IV (steamships; exploration) | Ships became **faster and went inland**. |
 | Morse, 1844; Atlantic cable, 1866; Bombay, 1870 | KC-5.1.IV (telegraph; communication) | **News** outran ships and horses. |
 | Liverpool and Chicago wheat price gap, 57.6 percent (1870) to 15.6 percent (1913) | KC-5.1.IV (trade) | **Trade**: distant markets joined. |
 | 55 million Europeans (1850 to 1914); over 29 million Indians and 19 million Chinese (1846 to 1940) | KC-5.1.IV (migration) | **Migration**: people moved by the tens of millions. |

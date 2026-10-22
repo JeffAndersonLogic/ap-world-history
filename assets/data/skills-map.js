@@ -7752,6 +7752,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
             "1866",
             "Morse",
             "53 days",
+            "12 days",
             "7 or 8 days",
             "minutes",
             "wheat",

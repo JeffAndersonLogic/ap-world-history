@@ -1221,7 +1221,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In 1750 almost all the energy people used came from things that grow. Food gave energy to the muscles of people and animals. Wood gave fire for heat and cooking. Wind moved ships and turned some mills, and rivers turned water wheels. Every one of these had a limit. A water wheel works only beside a fast river. A forest takes decades to grow back. A horse gets tired. Until the middle of the 1800s, wood and other things that grow were still the world's main source of energy."
+            "html": "In 1750 almost all the energy people used came from things that grow. Food gave energy to the muscles of people and animals. Wood gave fire for heat and cooking. Wind moved ships and turned some mills, and rivers turned water wheels. Every one of these had a limit. A water wheel works only beside a fast river. A forest takes decades to grow back. A horse gets tired. Until about 1900, wood and other things that grow were still the world's largest source of energy."
           },
           {
             "type": "p",
@@ -1307,7 +1307,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>Name the link.</strong> How does the second industrial revolution connect to Section 3? Coal ran the furnaces that made steel, and coal tar gave the first factory-made dyes. As you read on, ask what the railroads in Section 5 were made of.</p>"
+          "raw": "<p><strong>Name the link.</strong> How does the second industrial revolution connect to Section 3? Coal ran the furnaces that made steel, and coal tar gave the first synthetic dyes to sell well. As you read on, ask what the railroads in Section 5 were made of.</p>"
         }
       },
       {
@@ -1325,7 +1325,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>Steamships.</strong> A sailing ship from Norway to America took about 53 days on average. By the 1870s, the fastest steamships crossed the Atlantic in about 7 or 8 days. The Suez Canal, opened in Egypt in 1869, could be used only by steamships. Steamboats also pushed up rivers into the interior of continents. In 1854 the steamer Pleiad went far up the Niger and Benue rivers in West Africa, and none of its crew died, because they took quinine, a medicine against malaria. What European empires did with this reach is Unit 6."
+            "html": "<strong>Steamships.</strong> Under sail, emigrants from Norway took about 53 days on average to reach America. By steamship, the Atlantic crossing from England took about 12 days in the 1860s, and the fastest ships of the 1870s crossed in about 7 or 8 days. The Suez Canal, opened in Egypt in 1869, was of little use to sailing ships, because the winds of the Red Sea were hard to sail against, so it mostly served steamships. Steamboats also pushed up rivers into the interior of continents. In 1854 the steamer Pleiad went far up the Niger and Benue rivers in West Africa, and none of its crew died, because they took quinine, a medicine against malaria. What European empires did with this reach is Unit 6."
           },
           {
             "type": "p",

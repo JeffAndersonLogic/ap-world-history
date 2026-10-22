@@ -59,7 +59,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "story-steps",
       "eyebrow": "Before · About 1750",
       "title": "Energy came from things that grow, blow and flow.",
-      "footer": "Until the middle of the 1800s, wood and other things that grow were still the world's main energy.",
+      "footer": "Until about 1900, wood and other things that grow were still the world's largest source of energy.",
       "kc": "KC-5.1.I.B",
       "template": {
         "steps": [
@@ -209,7 +209,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "split-matrix",
       "eyebrow": "New Materials · After 1850",
       "title": "The second industrial revolution: four new methods.",
-      "footer": "Coal ran the furnaces that made steel, and coal tar gave the first factory-made dyes.",
+      "footer": "Coal ran the furnaces that made steel, and coal tar gave the first synthetic dyes to sell well.",
       "kc": "KC-5.1.I.E",
       "template": {
         "columns": [
@@ -357,12 +357,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "After",
-            "left": "Fastest steamers, 1870s: about 7 or 8 days",
+            "left": "Steam, England to America: about 12 days (1860s); fastest, 7 or 8 (1870s)",
             "right": "A message along a wire: minutes"
           },
           {
             "label": "Reach",
-            "left": "Suez Canal, 1869: steamships only; steamboats up rivers",
+            "left": "Suez Canal, 1869: mostly steamships; steamboats up rivers",
             "right": "Morse, 1844; across the Atlantic, 1866; to Bombay, 1870"
           }
         ]
@@ -391,13 +391,13 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "Asia",
             "key": true,
-            "text": "Over **29 million** Indians and **19 million** Chinese moved to Southeast Asia, 1846 to 1940."
+            "text": "Over **29 million** Indians and **19 million** Chinese moved to Southeast Asia and lands around the Indian Ocean, 1846 to 1940."
           }
         ],
         "visual": {
           "url": "../assets/images/topics/5-5/currier-ives-across-the-continent-1868.jpg",
           "alt": "A black-and-white print looking down on a new log-cabin town beside a railroad; a train puffs west past the town and a line of telegraph poles, covered wagons move along a road, and two Native American riders watch from the right",
-          "credit": "Currier & Ives, Across the Continent, lithograph drawn by Fanny Palmer, 1868 · Library of Congress · Public domain",
+          "credit": "Currier & Ives, Across the Continent, lithograph drawn by Fanny Palmer from a design by J. M. Ives, 1868 · Library of Congress · Public domain",
           "ratio": 1.27,
           "fit": "cover",
           "position": "55% 60%"

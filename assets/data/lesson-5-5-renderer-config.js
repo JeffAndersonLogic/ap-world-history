@@ -111,7 +111,7 @@
       prompt: "Explain how railroads, steamships, and the telegraph changed trade or migration between 1830 and 1900, as a chain of causes. (1) Explain what goods and news moved like before these technologies. (2) Choose ONE of the three, and explain what it could do that older ways could not, with one example of a place it reached. (3) Explain how that led to more trade OR more migration, using one number from the lesson. (4) Connect the reach back to power: say what drove railroads and steamships, or what their rails and hulls were made of (coal, steam, or steel).",
       responseType: "Checkpoint 2",
       skill: "Causation",
-      terms: ["railroad", "railway", "steamship", "telegraph", "interior", "continent", "Promontory", "1869", "Trans-Siberian", "Bombay", "Suez", "Atlantic cable", "1866", "Morse", "53 days", "7 or 8 days", "minutes", "wheat", "Chicago", "Liverpool", "57.6", "15.6", "price", "trade", "migration", "55 million", "29 million", "19 million", "coal", "steam", "steel", "led to", "made it possible"],
+      terms: ["railroad", "railway", "steamship", "telegraph", "interior", "continent", "Promontory", "1869", "Trans-Siberian", "Bombay", "Suez", "Atlantic cable", "1866", "Morse", "53 days", "12 days", "7 or 8 days", "minutes", "wheat", "Chicago", "Liverpool", "57.6", "15.6", "price", "trade", "migration", "55 million", "29 million", "19 million", "coal", "steam", "steel", "led to", "made it possible"],
       focus: ["Describe how goods and news moved before.", "Explain what one technology made possible, with a place.", "Explain how it led to more trade or migration, with a number.", "Connect railroads or steamships back to coal, steam, or steel."]
     }
   ];
@@ -161,7 +161,7 @@
       alt: "A black-and-white print looking down on a new log-cabin town beside a railroad; a train puffs west past the town and a line of telegraph poles, covered wagons move along a road, and two Native American riders watch from the right",
       url: "../assets/images/topics/5-5/currier-ives-across-the-continent-1868.jpg",
       sourceUrl: "https://www.loc.gov/pictures/item/90708413/",
-      caption: "A print published by Currier and Ives of New York in 1868, drawn by Fanny Palmer, called Across the Continent: \"Westward the Course of Empire Takes Its Way.\" It was made to sell, a year before the first railroad across the United States was finished. Library of Congress.",
+      caption: "A print published by Currier and Ives of New York in 1868, drawn by Fanny Palmer from a design by James M. Ives, called Across the Continent: \"Westward the Course of Empire Takes Its Way.\" It was made to sell, a year before the first railroad across the United States was finished. Library of Congress.",
       prompt: "NOTICE what runs beside the railroad, and what the settlers are building. INFER what the printmaker thought the railroad and the telegraph would bring to the interior of the continent. Look at the two riders on the right: whose view of the railroad does this print leave out?"
     },
     {

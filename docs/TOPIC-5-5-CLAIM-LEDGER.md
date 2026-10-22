@@ -39,7 +39,8 @@ Energy and engines:
 - World energy: **Our World in Data, "Global energy 200 years"**: "By the turn of the 20th century,
   around half of the world's energy came from coal and half still came from biomass"; "Until the
   mid-19th century, traditional biomass" was the dominant source. **Vaclav Smil (2002)**: coals
-  surpassed biomass fuels during the 1890s.
+  surpassed biomass fuels during the 1890s (solid fuels; not used, because OWID's own series,
+  global-energy-substitution, puts coal at 5,728 TWh against biomass at 6,111 in 1900).
 - Oil: **American Oil and Gas Historical Society**: Drake's well, Titusville, August 1859; the industry
   met demand for kerosene, lamp fuel.
 - Internal combustion: **Deutz AG history** (via EBSCO and Encyclopedia.com): Otto's four-stroke engine
@@ -105,21 +106,21 @@ Primary Source:
 
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
-| Before the mid-1800s, most of the world's energy came from things that grow (food for muscles, wood); wind and water turned some mills | Story; F10; DR; Deck | OWID: "Until the mid-19th century, traditional biomass" was "the dominant source of energy used across the world" | VERIFIED |
+| Until about 1900, most of the world's energy came from things that grow (food for muscles, wood); wind and water turned some mills | Story; F10; LD card 1; DR; Deck 5 | OWID data (global-energy-substitution, from Smil), world, TWh: 1850 biomass 7,222, coal 569 (about 93 percent biomass); 1900 biomass 6,111, coal 5,728; 1910 coal 8,656, biomass 6,389. The first draft's "until the middle of the 1800s" understated it (review pass 1) | NARROWED |
 | Coal and oil are fossil fuels: the remains of ancient plants and sea creatures, with stored energy | Story; F10; DR | Standard geology (coal from plants; oil mostly from marine plankton). The CED: "energy stored in fossil fuels" | VERIFIED |
 | Newcomen's steam engine of 1712, near Dudley Castle, pumped water out of a coal mine | Story; F10; DR; Deck | BCLM: invented 1712, "used ... to pump water out of ever deeper coal mines"; at Coneygree, "within view of Dudley Castle." The museum calls it the first successful steam engine; the course does not say "first" | VERIFIED |
 | Newcomen's engine burned a lot of coal, because the cylinder was cooled and reheated every stroke | Story; F10; DR | Science Museum Group (co50948): the separate condenser kept the cylinder hot; the 1911 Britannica | VERIFIED |
 | Watt, an instrument maker at Glasgow, found the separate condenser in 1765 and patented it in 1769 | Story; F10; DR; Deck | Britannica (summary): May 1765; patent 1769; 1911 Britannica: "January 1769" | VERIFIED |
 | Watt's engines used less than a third of the coal of a Newcomen engine | Story; F10; DR; Deck | Science Museum Group: "less than one third that of a Newcomen type engine." A popular "one quarter" is not used | VERIFIED |
-| In the 1780s Boulton and Watt made engines that turned wheels, so engines could drive machines | Story; F10; DR; Deck | Science Museum Group: Boulton "wished to apply the steam engine to driving mill machinery"; Watt's patent of February 1782 (sun and planet gear); Papplewick, 1785 | VERIFIED |
+| In the 1780s Boulton and Watt made engines that turned wheels, so engines could drive machines | Story; F10; DR; Deck | Science Museum Group: Boulton "wished to apply the steam engine to driving mill machinery"; The National Archives: Watt's letters patent of 25 October 1781 for methods of rotative motion, including the sun and planet gear (the build's notes first said February 1782; corrected in review pass 1); Papplewick, 1785 | VERIFIED |
 | A mill no longer had to sit by a river; cotton mills crowded into towns such as Manchester | Story; F10; DR; Deck | Edward Baines (1835) on steam's "universal application"; Manchester's Piccadilly Mill driven by a Boulton and Watt engine from 1790 (Grace's Guide). "Crowded" is the course's word for the growth of town mills; no count is claimed | VERIFIED |
 | Britain mined about 65 million tons of coal in 1854 and about 225 million in 1900 | Story; F10; DR; Deck | NBER (FRED A01211GBA418NNBR): 64.7 and 225.2 million long tons. The unit is long tons; the course says "tons" | VERIFIED |
-| By about 1900 coal supplied about half of the world's energy | Story; F10; DR; Deck | OWID: "around half of the world's energy came from coal; and half still came from biomass"; Smil: coal passed biomass in the 1890s | VERIFIED |
+| By about 1900 coal supplied about half of the world's energy (nearly half: about 47 percent; it passed biomass between 1900 and 1910) | Story; F10; DR; Deck | OWID: "around half of the world's energy came from coal; and half still came from biomass"; OWID data as above. Smil's "1890s" (solid fuels) is not used, because OWID's own series puts the crossing after 1900 | NARROWED |
 | Drake struck oil at Titusville, Pennsylvania, in 1859; most oil was refined into kerosene for lamps for the rest of the century | Story; F10; DR; Deck | AOGHS: August 1859; the industry met demand for kerosene, "the popular lamp fuel." "For the rest of the century" is the course's summary; gasoline's demand grew after 1900 | VERIFIED |
 | The internal combustion engine burns fuel inside the engine | Story; F10; DR | Definition | VERIFIED |
 | Otto built a four-stroke gas engine in Germany in 1876 | Story; F10; DR; Deck | Deutz AG history: breakthrough 1876, patent 1877 | VERIFIED |
 | Benz patented a car driven by a small engine that burned a fuel made from oil, in 1886 | Story; F10; DR; Deck | Mercedes-Benz: applied 29 January 1886, DRP 37435, "Fahrzeug mit Gasmotorenbetrieb" (a vehicle powered by a gas engine; it ran on a light petroleum spirit) | VERIFIED |
-| The United States had about 8,000 cars in 1900 | Story; F10; DR; Deck | FHWA MV-201 and HSUS: 8,000 registered automobiles, 1900 | VERIFIED |
+| The United States had about 8,000 cars in 1900 | Story; F10; DR; Deck | FHWA MV-201 and HSUS: 8,000 for 1900, the first year of the tables; New York first required registration in 1901, so it is an estimate, not a count of registrations (review pass 1) | VERIFIED |
 | The internal combustion engine's large effects came after 1900 | Story; F10; DR; Deck | Follows from the 8,000 cars and from oil's use as lamp fuel; a judgment, stated as "big changes ... came after 1900" | VERIFIED |
 | Bessemer, 1856, showed that blowing air through melted iron burned out impurities and made steel quickly | Story; F10; DR; Deck | Bishop (Smithsonian): the Cheltenham address, August 1856; "oxygen in air blown through molten pig iron to burn off the impurities" | VERIFIED |
 | US steel: about 69,000 tons (1870) to about 10 million (1900); Britain: about 215,000 to about 4.9 million | Story; F10; DR; Deck | NBER: US 69 and 10,188 thousand long tons; GB 215 and 4,901 thousand | VERIFIED |
@@ -134,8 +135,8 @@ Primary Source:
 | India's first passenger train, Bombay to Thane, 1853 | Story; F10; DR; Deck | Bori Bunder to Thane, 16 April 1853, 34 km (several sources; "first commercial passenger train" in some) | VERIFIED |
 | The first railroad across the United States was finished at Promontory Summit, Utah, in 1869 | Story; F10; DR; Deck | NPS: 10 May 1869, "completing the nation's first transcontinental railroad" | VERIFIED |
 | Russia began the Trans-Siberian in 1891; trains could cross to the Pacific by 1904 | Story; F10; DR; Deck | History Today: completed 21 July 1904 (the through route ran across Manchuria); all-Russian Amur line 1916 | VERIFIED |
-| Sail from Norway to America took about 53 days on average; by the 1870s the fastest steamships crossed the Atlantic in about 7 or 8 days | Story; F10; DR; Deck | Norway Heritage: 53 days average by sail; White Star "7 to 8 days"; the 1870s Blue Riband records about 7 to 8 days | VERIFIED |
-| The Suez Canal (1869) could be used only by steamships | Story; F10; DR; Deck | Daudin, Morys and O'Rourke: "(which could only be used by steamships)" | VERIFIED |
+| Under sail, emigrants from Norway took about 53 days on average to reach America; by steam, the crossing from England took about 12 days in the 1860s and the fastest ships of the 1870s about 7 or 8; by 1900 the record was under six days | Story; F10; DR; LD card 3; Deck 15, 23; BR | Norway Heritage: 53 days average by sail; Allan Line, Liverpool to Quebec, about 12 days (1865); White Star "7 to 8 days"; Blue Riband: Deutschland, 1900, about 5 days 15 hours. The first draft set the Norway average beside a record crossing as if like for like (review pass 1) | NARROWED |
+| The Suez Canal (1869) was of little use to sailing ships, because of the Red Sea's winds, so it mostly served steamships | Story; F10; DR; LD card 3; Deck 15; BR | Max Fletcher, "The Suez Canal and World Shipping, 1869-1914," Journal of Economic History 18 (1958), abstract: the canal hastened the decline of sail; period references: sailing vessels "rarely use the canal." Daudin, Morys and O'Rourke's "could only be used by steamships" was too absolute (review pass 1) | NARROWED |
 | In 1854 the steamer Pleiad went far up the Niger and Benue with no deaths among its crew, who took quinine against malaria | Story; F10; DR; Deck | Baikie sources: no deaths; daily quinine; about 250 miles beyond earlier explorers on the Benue | VERIFIED |
 | Morse, 1844, "What hath God wrought?", Washington to Baltimore | Story; F10; DR; Deck | Library of Congress: 24 May 1844, the Capitol to Baltimore | VERIFIED |
 | A telegraph message traveled along a wire in minutes | Story; F10; DR; Deck | The 1870 Bombay link: replies in minutes (Porthcurno sources); the 1858 Atlantic cable was far slower (16 hours for Queen Victoria's message), so the course does not say "seconds" or "instantly" | NARROWED |
@@ -162,7 +163,7 @@ Primary Source:
 | The oil rig photograph shows a steam boiler driving the drilling | RC (Evidence Lab); Deck 9 notes | Looked at: a boiler and smokestack at right, belted to the derrick's works. Library of Congress 2012647896, "Photo by Mather," ca. 1900 | VERIFIED |
 | The Newcomen engraving, 1740s | LD card 1; RC; Deck 6 | Wellcome Collection 45364i: "Engineering: a Newcomen steam-engine. Engraving, 174-." | VERIFIED |
 | The two Currier and Ives prints, 1874 and 1876 | Deck 3, 24 | Library of Congress 90708612 and 97507615; looked at: the freight cars read "From Ocean to Ocean" and "Through to the Pacific"; the 1876 print shows steamboats in the harbor and telegraph wires on poles | VERIFIED |
-| Government tables of registered US cars begin with 1900 (about 8,000) | DR 03 | FHWA MV-201 begins with 1900; New York first required registration in April 1901, so the 1900 figure is a count compiled later. The first draft's "began counting in 1900" was narrowed | NARROWED |
+| Government tables of the number of US cars begin with 1900 (about 8,000); no state required registration until New York in 1901 | DR 03 | FHWA Highway Statistics Summary to 1995: "New York, in 1901, was the first State to require registration." Narrowed twice: "began counting" (build) and "registered" (review pass 1) | NARROWED |
 | Old lesson: "Stephenson's Rocket ... the first successful steam locomotive" | none | Trevithick's locomotive ran in 1804; the Stockton and Darlington used steam locomotives from 1825 | REMOVED |
 | Old lesson: Morse's "annihilate space and time ... the merchant in New York will know the price of cotton in New Orleans" | none | Not found in Morse; the phrase "annihilation of space and time" was a commonplace of the period | REMOVED |
 | Old lesson: Carnegie, "Steel was to be the material of the age" | none | No source found | REMOVED |
@@ -199,3 +200,20 @@ reviewer found no CED or ownership defect.
 15. Slide 14 and the chapter gave Germany's railway figures without years. **Fixed:** 1840 and 1900.
 16. BeInTheRoom's Step 3 says "what your policy cannot solve," wrong for a ranking. **Logged as an adjacent finding:** the line is in the shared `assets/js/behistorical-room-v2.js`, used by every v2 scenario.
 17. Slide 18's myth rows were tagged with one Key Concept where they span two. **Fixed:** "KC-5.1.I.E, KC-5.1.IV" and "KC-5.1.I.B, KC-5.1.I.E."
+
+**History (13 findings; 10 fixed here, 3 already fixed by the page-truth pass).** The reviewer confirmed the
+Jevons passage word for word, the wheat gap, the 55 million, Britain's coal and steel, the Norway
+Heritage figures, the Newcomen record, and that each picture shows what its caption says.
+1. "Until the middle of the 1800s" biomass was the world's main energy, against OWID's own figures (biomass about 93 percent in 1850, still about half in 1900; coal passed it between 1900 and 1910), and the chapter's "1890s." **Fixed** on every surface: "until about 1900 ... the largest source"; the chapter's limit box says coal caught up only around 1900. Verified against OWID's CSV.
+2. BeInTheRoom (December 1900) said the fastest steamships "now" cross in 7 or 8 days; by 1900 the record was under six (Deutschland). **Fixed:** "under six days"; the Steamship Writer's liners cross "in less than a week."
+3. Sail's 53 days (Norway, whole voyage, average) was set beside a record steam crossing. **Fixed:** the reading, chapter, card, slide 15 and the model answer name the routes and add the 1860s figure (Liverpool to Quebec, about 12 days, Norway Heritage).
+4. Slide 16 said Indians and Chinese moved "to Southeast Asia." **Fixed:** "and lands around the Indian Ocean."
+5. "The Suez Canal could be used only by steamships" was too absolute. **Fixed:** "of little use to sailing ships, because of the Red Sea's winds, so it mostly served steamships" (Fletcher, 1958).
+6. The Great Eastern prompt's "only a ship like" (the 1858 cable was laid by two ships). **Already fixed** in the page-truth pass.
+7. The map's PENNSYLVANIA label. **Already fixed.**
+8. "Coal tar gave the first factory-made dyes" (Prussian blue, 1706, was factory-made). **Fixed:** "the first synthetic dyes to sell well," on the reading and slide 11.
+9. Slide 6's note dated the sun and planet gear to February 1782. **Fixed:** the patent of 25 October 1781 (The National Archives).
+10. "Hand-colored" on a black-and-white copy. **Already fixed.**
+11. The Across the Continent credit named only Fanny Palmer; the print reads "J. M. Ives, del." and "Drawn by F. F. Palmer." **Fixed:** "drawn by Fanny Palmer from a design by James M. Ives."
+12. BeInTheRoom called "What hath God wrought?" Morse's "first message" (he had sent messages since 1838). **Fixed:** "opened his telegraph line ... with the message."
+13. The 8,000 cars of 1900 were called "registered," though no state required registration until 1901. **Fixed** in the chapter and the slide 9 note; the ledger row is narrowed.

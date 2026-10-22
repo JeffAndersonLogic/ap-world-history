@@ -177,7 +177,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'before', kind: 'story-steps', eyebrow: 'Before · About 1750',
       kc: 'KC-5.1.I.B', title: 'Energy came from things that grow, blow and flow.',
-      footer: 'Until the middle of the 1800s, wood and other things that grow were still the world\'s main energy.',
+      footer: 'Until about 1900, wood and other things that grow were still the world\'s largest source of energy.',
       template: {
         steps: [
           { label: 'Muscles', text: 'People and animals, fed by crops. **A horse gets tired.**' },
@@ -190,7 +190,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.1.I.B begins here: the fossil fuels revolution "greatly increased the energy available," so students need the before. Every source of energy in 1750 had a limit you could see.',
-          'Our World in Data: "Until the mid-19th century, traditional biomass" (wood, crop waste, dung) was "the dominant source of energy used across the world"; by about 1900, coal and biomass each gave about half (slide 7). Britain was the exception: it already burned a lot of coal for heat (5.3: about half of England\'s energy by 1700).',
+          'Our World in Data\'s figures (from Vaclav Smil): in 1850, wood, crop waste and other traditional biomass gave about 93 percent of the world\'s energy; in 1900 still about half (6,111 terawatt-hours against coal\'s 5,728); coal passed it only between 1900 and 1910. Britain was the exception: it already burned a lot of coal for heat (5.3: about half of England\'s energy by 1700).',
           'The point is not that people were poor at engineering. Water wheels and windmills were advanced machines. The limit was the energy itself.'
         ],
         ask: 'Which of these four limits would a factory owner hate most?',
@@ -216,7 +216,7 @@ window.BEHISTORICAL_TEACHING = {
           'KC-5.1.I.B: "the development of machines, including steam engines." This slide is the first machine, and the key step is the last one: rotary motion.',
           'Newcomen: the Black Country Living Museum dates his engine to 1712, near Dudley Castle (at Coneygree, Tipton), "used in the Black Country to pump water out of ever deeper coal mines." Its cylinder was cooled with a spray of water on every stroke and heated again with steam, which wasted fuel. Do not say Newcomen\'s was the first steam device of any kind: Savery\'s pump of 1698 came before it; say "the first useful steam engines were pumps."',
           'Watt: an instrument maker at the University of Glasgow, repairing a model Newcomen engine, found the separate condenser in May 1765 and patented it in January 1769 (Britannica; the 1911 Britannica). The Science Museum Group: "Specific fuel consumption was reduced to less than one third that of a Newcomen type engine." (A popular "one quarter" is not used.)',
-          'Rotary motion: Matthew Boulton "wished to apply the steam engine to driving mill machinery" (Science Museum Group); Watt\'s patent of February 1782 included the sun and planet gear. An early cotton mill driven directly by a Boulton and Watt engine was at Papplewick, near Nottingham, in 1785 (sources differ on which was first, so say "early"). In Manchester, Peter Drinkwater\'s Piccadilly Mill ran a Boulton and Watt engine from 1790.',
+          'Rotary motion: Matthew Boulton "wished to apply the steam engine to driving mill machinery" (Science Museum Group); Watt\'s patent of 25 October 1781 included the sun and planet gear (The National Archives). An early cotton mill driven directly by a Boulton and Watt engine was at Papplewick, near Nottingham, in 1785 (sources differ on which was first, so say "early"). In Manchester, Peter Drinkwater\'s Piccadilly Mill ran a Boulton and Watt engine from 1790.',
           'The picture is a real engraving: "Engineering: a Newcomen steam-engine," engraving, 1740s (Wellcome Collection, public domain mark). Find the fire under the boiler (bottom), the cylinder above it, the rocking beam, and the pump rods going down into the mine on the left.'
         ],
         ask: 'Why did turning a wheel matter more than pumping water?',
@@ -241,7 +241,7 @@ window.BEHISTORICAL_TEACHING = {
           'KC-5.1.I.B: "The fossil fuels revolution greatly increased the energy available to human societies." This slide is the "greatly increased."',
           'The loop: steam engines drained coal mines, so miners could dig deeper; more coal fed more engines. Each made the other grow.',
           'Britain\'s coal: NBER Macrohistory Database, in millions of long tons: 64.7 (1854, the first year of the series), 84.0 (1860), 110.4 (1870), 147.0 (1880), 181.6 (1890), 225.2 (1900). Say "tons"; the unit is the long ton, 2,240 pounds.',
-          'The world: Our World in Data, "By the turn of the 20th century, around half of the world\'s energy came from coal; and half still came from biomass." Vaclav Smil (2002) dates the point where coal passed wood and other biomass fuels to the 1890s. So do not say coal "replaced" wood by 1900: they were about equal.',
+          'The world: Our World in Data, "By the turn of the 20th century, around half of the world\'s energy came from coal; and half still came from biomass." Its figures for 1900 give coal about 47 percent and biomass about 50 percent; coal passed biomass between 1900 and 1910. So do not say coal "replaced" wood by 1900: they were about equal.',
           'Why it matters for production: a horse or a worker eats food grown on land; coal is energy that took no land to grow this year. E. A. Wrigley calls this the escape from the "organic economy."'
         ],
         ask: 'Coal and oil were stored underground for millions of years. Why does that matter for how much energy people could use?',
@@ -288,7 +288,7 @@ window.BEHISTORICAL_TEACHING = {
           'KC-5.1.I.B names the second machine and the second fuel: "the internal combustion engine" and "oil." This slide is both, and when their effects came.',
           'Drake: the American Oil and Gas Historical Society dates the strike at Titusville to August 1859 (sources give the 27th or 28th); refiners turned the oil into kerosene, "the popular lamp fuel." Oil was a lamp fuel for the rest of the century.',
           'The engine: Nikolaus Otto\'s four-stroke engine, Deutz, 1876, patented 1877 (Deutz AG history); Carl Benz\'s patent application of 29 January 1886, DRP 37435, a "vehicle powered by a gas engine" (Mercedes-Benz), running on a light petroleum spirit. Internal combustion means the fuel burns inside the cylinder; a steam engine burns its fuel outside, under a boiler.',
-          '8,000: the Federal Highway Administration and Historical Statistics of the United States both give 8,000 registered automobiles in 1900. So the internal combustion engine is in this topic because of where it led, not because it had changed production by 1900.',
+          '8,000: the Federal Highway Administration and Historical Statistics of the United States both give about 8,000 automobiles for 1900, the first year of their tables (no state required registration until New York in 1901, so the figure is an estimate). So the internal combustion engine is in this topic because of where it led, not because it had changed production by 1900.',
           'The picture is a real photograph: an oil rig at Titusville, about 1900, by the oil-region photographer Mather (Library of Congress, no known restrictions). The Library\'s print is labeled hand-colored; the copy shown is black and white. The boiler and smokestack on the right drove the drilling: a steam engine, burning fuel, helping to get oil.'
         ],
         ask: 'If there were only 8,000 cars in 1900, why does the College Board put this engine in a topic that ends in 1900?',
@@ -320,7 +320,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'methods', kind: 'split-matrix', eyebrow: 'New Materials · After 1850',
       kc: 'KC-5.1.I.E', title: 'The second industrial revolution: four new methods.',
-      footer: 'Coal ran the furnaces that made steel, and coal tar gave the first factory-made dyes.',
+      footer: 'Coal ran the furnaces that made steel, and coal tar gave the first synthetic dyes to sell well.',
       template: {
         columns: [{ name: 'Steel' }, { name: 'Chemicals' }, { name: 'Electricity' }, { name: 'Precision machinery' }],
         rows: [
@@ -421,16 +421,16 @@ window.BEHISTORICAL_TEACHING = {
         right: { name: 'The telegraph' },
         rows: [
           { label: 'Before', left: 'Sail, Norway to America: about 53 days on average', right: 'A letter: as fast as the ship carrying it' },
-          { label: 'After', left: 'Fastest steamers, 1870s: about 7 or 8 days', right: 'A message along a wire: minutes' },
-          { label: 'Reach', left: 'Suez Canal, 1869: steamships only; steamboats up rivers', right: 'Morse, 1844; across the Atlantic, 1866; to Bombay, 1870' }
+          { label: 'After', left: 'Steam, England to America: about 12 days (1860s); fastest, 7 or 8 (1870s)', right: 'A message along a wire: minutes' },
+          { label: 'Reach', left: 'Suez Canal, 1869: mostly steamships; steamboats up rivers', right: 'Morse, 1844; across the Atlantic, 1866; to Bombay, 1870' }
         ]
       },
       notes: {
         minutes: 2,
         land: [
           'KC-5.1.IV: steamships and the telegraph made "exploration, development, and communication possible in interior regions globally." The left side is exploration and development; the right side is communication.',
-          'Crossings: Norway Heritage, "The average crossing time on a sailing ship from Norway to America was 53 days"; White Star Line steamships could cross "in 7 to 8 days"; the 1870s Blue Riband records were about 7 to 8 days. In 1867 a steamship ticket cost about three times a sailing passage, but by 1874 the last sailing ships carried Norwegian emigrants to Quebec.',
-          'Suez: opened 17 November 1869; Daudin, Morys and O\'Rourke (2008): the canal "could only be used by steamships." Sailing ships could not rely on the winds of the Red Sea.',
+          'Crossings: Norway Heritage, "The average crossing time on a sailing ship from Norway to America was 53 days"; on the Allan Line, Liverpool to Quebec took about 12 days in 1865; White Star Line steamships could cross "in 7 to 8 days" in the 1870s; by 1900 the record holder, the Deutschland, crossed in under six days. The comparison is not exact: the 53 days is the whole voyage from Norway, and Norwegians who went by steam first crossed to England. In 1867 a steamship ticket cost about three times a sailing passage, but by 1874 the last sailing ships carried Norwegian emigrants to Quebec.',
+          'Suez: opened 17 November 1869. Sailing ships rarely used it, because the Red Sea\'s winds were hard to sail against, so it mostly served steamships and hastened the decline of sail (Max Fletcher, Journal of Economic History, 1958); Daudin, Morys and O\'Rourke (2008) put it more absolutely, "could only be used by steamships," which the slide narrows to "mostly."',
           'Up rivers, into the interior: in 1854 the steamer Pleiad went up the Niger and far up the Benue, about 250 miles beyond earlier explorers, with no deaths among its crew, who took quinine every day against malaria (William Balfour Baikie\'s expedition; British Society for the History of Medicine). What European empires did with that reach is Unit 6.',
           'Telegraph: Samuel Morse sent "What hath God wrought?" from the Capitol in Washington to Baltimore on 24 May 1844 (Library of Congress). The 1858 Atlantic cable worked only a few weeks; the Great Eastern landed a lasting cable at Heart\'s Content, Newfoundland, on 27 July 1866 (IET Archives). The Red Sea cable reached Bombay in 1870. "Minutes," not "seconds": early cables were slow (Queen Victoria\'s 1858 message took about 16 hours to send).'
         ],
@@ -448,7 +448,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'Trade', text: 'Wheat cost **57.6 percent** more in Liverpool than in Chicago in 1870; **15.6 percent** more in 1913.' },
           { label: 'So', text: 'Wheat from the middle of North America, by **rail and steamship**, fed workers in Britain.' },
           { label: 'Europe', text: 'About **55 million** Europeans moved to the Americas and Australia, 1850 to 1914.' },
-          { label: 'Asia', key: true, text: 'Over **29 million** Indians and **19 million** Chinese moved to Southeast Asia, 1846 to 1940.' }
+          { label: 'Asia', key: true, text: 'Over **29 million** Indians and **19 million** Chinese moved to Southeast Asia and lands around the Indian Ocean, 1846 to 1940.' }
         ]
       },
       notes: {
@@ -459,7 +459,7 @@ window.BEHISTORICAL_TEACHING = {
           'Europe: Hatton and Williamson, The Age of Mass Migration (1998): about 55 million Europeans to the Americas and Australia, 1850 to 1914. More than a million a year left Europe for the Americas after 1900.',
           'Asia: Adam McKeown, "Global Migration, 1846-1940" (Journal of World History, 2004): Southeast Asia and the Indian Ocean rim received "over 29 million Indians and over 19 million Chinese"; "between 28 and 33 million Chinese migrated into Manchuria and Siberia"; "at least 13 million Russians moved into central Asia and Siberia." McKeown\'s point is that Asian migration was as large as the Atlantic one. His dates run to 1940, past this topic; the slide gives them.',
           'Steam "lowered the cost of travel" (Daudin, Morys and O\'Rourke). That is the technology\'s part. Why people chose to go, wages and land at home and abroad, contracts and debt, and what they met when they arrived, is Unit 6 (6.6 and 6.7). Do not teach it here.',
-          'The picture is a real print: Currier and Ives, Across the Continent: "Westward the Course of Empire Takes Its Way," lithograph drawn by Fanny Palmer, 1868 (Library of Congress, no known restrictions). It shows a train and telegraph poles running west past a new settlement, while two Native American riders watch from the right: a print that celebrates the reach, and says nothing about whose land it was.'
+          'The picture is a real print: Currier and Ives, Across the Continent: "Westward the Course of Empire Takes Its Way," lithograph drawn by Fanny Palmer from a design by James M. Ives ("J. M. Ives, del." on the print), 1868 (Library of Congress, no known restrictions). It shows a train and telegraph poles running west past a new settlement, while two Native American riders watch from the right: a print that celebrates the reach, and says nothing about whose land it was.'
         ],
         ask: 'Pick one link: how did a railroad or a steamship lead to more trade, or to more migration?',
         listenFor: 'Rail and steam made moving wheat, or people, cheaper and faster, so more of it moved: prices came closer together, and tens of millions of people made long journeys.',
@@ -597,7 +597,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 12,
         land: [
           'Module 10 is required: draft, Socrates, revise. It assesses Target 2 (KC-5.1.IV) and the learning objective, as a chain of causes, and declares Causation.',
-          'A strong answer: before steam, heavy goods moved cheaply only by water, and news moved as fast as a ship; railroads, built of iron and later steel and pulled by coal-burning steam engines, reached the interiors of continents, like the line across the United States finished in 1869; steamships cut the Atlantic crossing from about 53 days under sail to about a week; the telegraph sent news in minutes; so farmers in the middle of North America could sell wheat in Britain, and the price gap between Chicago and Liverpool fell from 57.6 percent in 1870 to 15.6 percent in 1913; cheaper, faster journeys also helped about 55 million Europeans move to the Americas and Australia between 1850 and 1914.'
+          'A strong answer: before steam, heavy goods moved cheaply only by water, and news moved as fast as a ship; railroads, built of iron and later steel and pulled by coal-burning steam engines, reached the interiors of continents, like the line across the United States finished in 1869; steamships crossed the Atlantic in under two weeks, where emigrants from Norway had taken about 53 days under sail; the telegraph sent news in minutes; so farmers in the middle of North America could sell wheat in Britain, and the price gap between Chicago and Liverpool fell from 57.6 percent in 1870 to 15.6 percent in 1913; cheaper, faster journeys also helped about 55 million Europeans move to the Americas and Australia between 1850 and 1914.'
         ],
         ask: 'Where in your answer is the cause, and where is the effect?',
         listenFor: 'The technology and its power as the cause; trade or migration as the effect, with the link between them explained.'
