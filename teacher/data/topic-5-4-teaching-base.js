@@ -185,6 +185,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.1.II.B begins from here: the share Europe and the United States gained is the share Asia lost. The baseline is about 1750.',
+          'The picture is a real object: a palampore, a hanging of cotton painted and dyed by hand on the Coromandel Coast of southeast India in the early 1700s, made for buyers in Sri Lanka (The Metropolitan Museum of Art, 2010.337, public domain). It is what India\'s hand production looked like at its best: the kind of cloth Lancashire first copied.',
           'The figures: Paul Bairoch, "International Industrialization Levels from 1750 to 1980," Journal of European Economic History 11 (1982), reprinted in Paul Kennedy, The Rise and Fall of the Great Powers (1987), Table 6. 1750: China 32.8 percent, India 24.5 (the whole subcontinent), Europe 23.2, Britain 1.9 (Clingingsmith and Williamson, NBER 10586, Table 3; University of Houston Digital History). They are reconstructions: Baldwin and Martin explain that the early Asian shares come largely from Asia\'s large population times a per-person output much like Europe\'s. Use them for the size of the change.',
           'India\'s cloth: Indian cottons, from fine muslins to cheap printed calicoes, were traded across the Indian Ocean, into the Middle East, to West Africa (where they were exchanged for enslaved people) and to Europe. Lancashire\'s cotton industry grew up copying them (5.3).',
           'The mode: almost all of it by hand, at home or in workshops. This is the "mode of production" half of the objective.'
@@ -409,6 +410,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'KC-5.1.II.B, second half: "While Middle Eastern and Asian countries continued to produce manufactured goods, these regions\' share in global manufacturing declined." This slide is the continuity.',
           'Handloom weavers: the economic historian Tirthankar Roy finds that handloom weaving in India "did not succumb": handloom cloth\'s share of India\'s market was roughly stable from the 1890s to the 1930s (Traditional Industry in the Economy of Colonial India). In the United Provinces alone, a 1908 report said "quite a million" people depended on handloom weaving (Rai, International Review of Social History, 2022). There is no reliable all-India headcount for 1900, so do not say "millions." Many weavers used cheaper mill-spun yarn. Hand weaving still shrank: Indrajit Ray (Economic History Review, 2009) estimates Bengal\'s industry lost about 28 percent by the mid-1800s.',
+          'The pictures: a gouache of a weaver at his loom, painted by an artist from Tanjore (Thanjavur), south India, about 1840 (Wellcome Collection, public domain), one of the "types and trades" pictures Indian artists made for European buyers, so a staged type, not a portrait; and Hugh Owen\'s 1851 photograph of Indian ship models under the INDIA sign at the Great Exhibition (Rijksmuseum, public domain). The models are not the Bombay Dockyard: no period picture of the dockyard could be sourced.',
           'Ships: the CED\'s example, shipbuilding in India. The Wadia family of Parsi master builders ran the Bombay Dockyard for generations; Jamsetjee Bomanjee Wadia supervised HMS Trincomalee, "one of 14 ships he would build for the Royal navy" (Royal Museums Greenwich). Built of Malabar teak and launched 12 October 1817, it is at Hartlepool, where the National Museum of the Royal Navy calls it "Britain\'s oldest warship still afloat" (not the oldest warship afloat: USS Constitution is older). Rajesh Kochhar (Current Science) counts 334 Wadia vessels from 1736 to 1884, 39 of them for the Royal Navy, and dates the end of teak warship building to iron and steam.',
           'China: Jacob Eyferth (University of Chicago): "rural hand spinning and hand weaving held out remarkably well in the face of mechanized competition"; imported yarn spread in the late 1800s, so that by about 1900 half the yarn used in China was machine-made, and weavers combined it with homespun. The Treaty of Nanjing (1842) held import taxes to about 5 percent.',
           'The Middle East: Pamuk and Williamson (Economic History Review, 2011): Ottoman producers\' share of their own cloth market fell from about 97 percent in the 1820s to 25 to 35 percent by the 1870s, yet handloom numbers in Aleppo and Damascus "show no trend at all between 1860 and World War I," and crafts such as carpet making thrived.',
@@ -555,12 +557,12 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'close', kind: 'frame-subtitle', eyebrow: 'The Hand-off',
       title: 'The factory traveled. The share moved. The old makers kept making.',
-      subtitle: 'Next, Topic 5.5: factories needed coal, and steam engines turned it into power on a scale nobody had seen. How did the machines themselves change the world?',
+      subtitle: 'Mills at Lowell, Massachusetts, photographed between 1900 and 1910. Next, Topic 5.5: factories needed coal, and steam engines turned it into power on a scale nobody had seen. How did the machines themselves change the world?',
       notes: {
         minutes: 2,
         land: [
           'Land the spine, then the hand-off to 5.5: the machines themselves, steam and the fossil-fuel revolution, the second industrial revolution, and railways, steamships and the telegraph.',
-          'The picture is credited on the slide.'
+          'The picture is a real photograph: mills on the Merrimack River at Lowell, Massachusetts, by the Detroit Publishing Company, between 1900 and 1910 (Library of Congress, public domain), at the very end of this topic\'s dates. The water-powered mill town of the 1820s had become a city of brick mills and smokestacks, a long way from Slater\'s wooden mill (slide 6).'
         ],
         ask: 'Say the topic in one sentence, with one example.',
         listenFor: 'The spine with a real case: Slater building machines from memory; India\'s share falling while its weavers kept weaving.'

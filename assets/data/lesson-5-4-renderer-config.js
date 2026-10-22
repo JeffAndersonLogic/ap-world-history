@@ -46,15 +46,15 @@
 
   lesson.stableImages = {
     map:             '../assets/images/instructional-maps/topic-5-4.svg',
-    first10:         '../assets/images/commons/the-opening-of-the-great-exhibition-by-queen-victoria-on-1-may-1851-5fa547.jpg',
-    contentDelivery: '',
-    beSurreal:       '',
-    skill:           '',
-    checkpoint1:     '',
-    evidence:        '',
+    first10:         '../assets/images/topics/5-4/palampore-coromandel-coast-early-1700s.jpg',
+    contentDelivery: '../assets/images/topics/5-4/great-exhibition-1851-hibbert-platt-spinning-machine.jpg',
+    beSurreal:       '../assets/images/topics/5-4/man-weaving-cloth-indian-watercolour-1800s.jpg',
+    skill:           '../assets/images/topics/5-4/augsburg-cotton-mill-c1885.jpg',
+    checkpoint1:     '../assets/images/topics/5-4/slater-mill-pawtucket-c1870.jpg',
+    evidence:        '../assets/images/topics/5-4/great-exhibition-1851-india-ship-models.jpg',
     source:          '',
-    beInTheRoom:     '',
-    checkpoint2:     ''
+    beInTheRoom:     '../assets/images/commons/the-opening-of-the-great-exhibition-by-queen-victoria-on-1-may-1851-5fa547.jpg',
+    checkpoint2:     '../assets/images/topics/5-4/lowell-mills-merrimack-river-1900s.jpg'
   };
 
   lesson.classPresentation = {
@@ -120,6 +120,54 @@
     prompt: "Make a claim about one change or one continuity in how or where the world's goods were made between 1750 and 1900. Support it with evidence from at least two cards."
   };
 
-  lesson.images = [];
+  lesson.images = [
+    {
+      title: "Painted Cotton from India, Early 1700s",
+      alt: "A hand-painted Indian cotton hanging: a flowering tree with large red, blue, and purple blossoms grows from stylized rocks on a cream ground, inside a wide red floral border",
+      url: "../assets/images/topics/5-4/palampore-coromandel-coast-early-1700s.jpg",
+      sourceUrl: "https://www.metmuseum.org/art/collection/search/75909",
+      caption: "A palampore, a hanging of cotton painted and dyed by hand, made on the Coromandel Coast of southeast India in the early 1700s for buyers in Sri Lanka. The Metropolitan Museum of Art.",
+      prompt: "NOTICE how the design was made: by machine, or by hand? INFER what this object tells you about where some of the world's finest cloth was made before 1750. One beautiful hanging is one object: what can it not tell you about how much cloth India made?"
+    },
+    {
+      title: "A Weaver at His Loom, about 1840",
+      alt: "An Indian painting of a man in a white turban and white cloth sitting at a hand loom, weaving a long red patterned cloth, with his feet on the treadles and cords hanging from above",
+      url: "../assets/images/topics/5-4/weaver-at-his-loom-tanjore-c1840.jpg",
+      sourceUrl: "https://wellcomecollection.org/works/pjnujb7j",
+      caption: "A painting by an artist from Tanjore (Thanjavur), in south India, about 1840. Indian artists painted pictures of workers at their trades for European buyers, so this shows a typical weaver, not one real person's workshop. Wellcome Collection.",
+      prompt: "NOTICE what powers this loom. INFER whether this picture shows a change or a continuity in how cloth was made in India in the 1840s. Who was this painting made for, and how might that shape what it shows?"
+    },
+    {
+      title: "British Cotton Machinery, 1851",
+      alt: "An old photograph of a long iron machine on a wooden floor, with rows of upright spindles and bobbins and a rail of large bobbins above",
+      url: "../assets/images/topics/5-4/great-exhibition-1851-hibbert-platt-spinning-machine.jpg",
+      sourceUrl: "https://id.rijksmuseum.nl/200345908",
+      caption: "A photograph, published in 1852, of cotton machinery made by Hibbert, Platt and Sons of Oldham, England, on show at the Great Exhibition in London in 1851. Rijksmuseum.",
+      prompt: "NOTICE how many spindles one machine holds. INFER how a machine like this could change the world's share of cloth-making. This machine was shown to visitors from many countries: what might some of them have wanted to do after seeing it?"
+    },
+    {
+      title: "India's Ship Models, London, 1851",
+      alt: "A faded photograph inside the Crystal Palace: a hanging sign reads INDIA above model sailing ships with triangular sails and ceremonial parasols, under an iron and glass roof",
+      url: "../assets/images/topics/5-4/great-exhibition-1851-india-ship-models.jpg",
+      sourceUrl: "https://id.rijksmuseum.nl/200345924",
+      caption: "A photograph by Hugh Owen of model ships shown in the India section of the Great Exhibition, London, 1851. These are models, not a real shipyard. Rijksmuseum.",
+      prompt: "NOTICE the kind of ships the models show: sail or steam? INFER what these models show about what India still made in 1851. Models in an exhibition are chosen to impress: what can they not tell you about India's real shipyards?"
+    },
+    {
+      title: "Slater Mill, Pawtucket, about 1870",
+      alt: "An old photograph of several wooden mill buildings crowded along a river bank, with a bell tower in the center and a dam at the right",
+      url: "../assets/images/topics/5-4/slater-mill-pawtucket-c1870.jpg",
+      sourceUrl: "https://www.loc.gov/item/ri0102/",
+      caption: "A photograph of about 1870 of the old Slater Mill, built in 1793, and the mills around it on the river at Pawtucket, Rhode Island. Library of Congress (a copy made by the Historic American Engineering Record).",
+      prompt: "NOTICE where the mills stand, and what the river could do for them. INFER why Samuel Slater built here. A photograph taken eighty years later: what can it not tell you about how the mill looked in the 1790s?"
+    },
+    {
+      title: "Who Made the World's Goods, 1750 and 1900",
+      label: "Economic historian's estimates · Paul Bairoch, 1982",
+      sourceText: ["Share of world manufacturing, 1750: China about 33 percent, India about 25, Britain about 2, the United States under 1.", "1900: China about 6 percent, India about 2, Britain about 19, the United States about 24."],
+      caption: "Estimates by the economic historian Paul Bairoch, published in 1982, rounded to whole numbers. They are careful estimates built from population and output, not counts made at the time.",
+      prompt: "Compare the two years. INFER which regions' shares changed most, and in which direction. These are shares, not amounts: what can they not tell you about whether India and China made more or less cloth than before?"
+    }
+  ];
 
 })();

@@ -98,10 +98,10 @@ window.BEHISTORICAL_LESSON = {
           "**The pattern:** the methods were carried by people, machines, and money, and they took root where coal, iron, and water were waiting."
         ],
         image: {
-          title: "Where the factory went",
-          caption: "BeHistorical topic artwork for this card.",
-          url: "",
-          sourceUrl: ""
+          title: "Slater Mill, Pawtucket, about 1869",
+          caption: "One frame of a stereo photograph of about 1869 showing Slater Mill, built in 1793, beside its dam on the Blackstone River in Pawtucket, Rhode Island. By then another company rented it; its sign is on the gable. Library of Congress (a copy made by the Historic American Engineering Record).",
+          url: "../assets/images/topics/5-4/slater-mill-pawtucket-c1869.jpg",
+          sourceUrl: "https://www.loc.gov/item/ri0102/"
         }
       },
       {
@@ -114,10 +114,10 @@ window.BEHISTORICAL_LESSON = {
           "**A share is not an amount:** the world was making far more goods in 1900 than in 1750. A region's share can fall even while it keeps making as much as before, because the total grows faster."
         ],
         image: {
-          title: "The shares move",
-          caption: "BeHistorical topic artwork for this card.",
-          url: "",
-          sourceUrl: ""
+          title: "British Cotton Machinery, 1851",
+          caption: "A photograph of cotton machinery made by Hibbert, Platt and Sons of Oldham, England, on show at the Great Exhibition in London in 1851: a long iron frame with rows of spindles and bobbins. In a mill, machines like this were driven by a steam engine. Rijksmuseum.",
+          url: "../assets/images/topics/5-4/great-exhibition-1851-hibbert-platt-spinning-machine.jpg",
+          sourceUrl: "https://id.rijksmuseum.nl/200345908"
         }
       },
       {
@@ -130,10 +130,10 @@ window.BEHISTORICAL_LESSON = {
           "**New ships:** by the middle of the 1800s navies were turning to iron ships driven by steam, built in British yards, and Bombay's age of teak warships came to an end."
         ],
         image: {
-          title: "The old makers kept making",
-          caption: "BeHistorical topic artwork for this card.",
-          url: "",
-          sourceUrl: ""
+          title: "A Weaver at His Loom, about 1840",
+          caption: "A painting by an artist from Tanjore (Thanjavur), in south India, of a weaver working a hand loom, made about 1840 for European buyers who collected pictures of Indian trades. Wellcome Collection.",
+          url: "../assets/images/topics/5-4/weaver-at-his-loom-tanjore-c1840.jpg",
+          sourceUrl: "https://wellcomecollection.org/works/pjnujb7j"
         }
       }
     ]

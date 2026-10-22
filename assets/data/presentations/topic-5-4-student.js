@@ -37,7 +37,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "visual": {
           "url": "../assets/images/commons/the-opening-of-the-great-exhibition-by-queen-victoria-on-1-may-1851-5fa547.jpg",
           "alt": "A painting of a vast hall of iron and glass with a tall tree growing inside it; Queen Victoria, Prince Albert and their children stand on a carpeted platform in the center, while crowds of officials in uniforms and dark coats, and men in Chinese and Ottoman dress, stand on either side and spectators fill the galleries above",
-          "credit": "Henry Courtney Selous, The Opening of the Great Exhibition by Queen Victoria on 1 May 1851, oil · Victoria and Albert Museum · Public domain",
+          "credit": "Henry Courtney Selous, The Opening of the Great Exhibition by Queen Victoria on 1 May 1851, oil, 1851 to 1852 · Victoria and Albert Museum · Public domain",
           "ratio": 1.43,
           "position": "50% 40%",
           "tagPos": "bl"
@@ -79,7 +79,15 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "key": true,
             "text": "**Under 2 percent.**"
           }
-        ]
+        ],
+        "visual": {
+          "url": "../assets/images/topics/5-4/palampore-coromandel-coast-early-1700s.jpg",
+          "alt": "A hand-painted Indian cotton hanging: a flowering tree with large red, blue and purple blossoms grows from stylized rocks on a cream ground, inside a wide red floral border",
+          "credit": "Palampore, painted and dyed cotton, Coromandel Coast, India, early 1700s · The Metropolitan Museum of Art · Public domain",
+          "ratio": 0.699,
+          "fit": "contain"
+        },
+        "caption": "Painted cotton from India, early 1700s"
       }
     },
     {
@@ -449,6 +457,30 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "key": true,
             "text": "Chinese farm families kept weaving; handlooms held steady in Aleppo and Damascus."
           }
+        ],
+        "pictures": [
+          {
+            "visual": {
+              "url": "../assets/images/topics/5-4/weaver-at-his-loom-tanjore-c1840.jpg",
+              "alt": "An Indian painting of a man in a white turban and white cloth sitting at a hand loom, weaving a long red patterned cloth, with his feet on the treadles and cords hanging from above",
+              "credit": "Weaver at his loom, gouache, Tanjore, about 1840 · Wellcome Collection · Public domain",
+              "ratio": 0.735,
+              "fit": "cover",
+              "position": "50% 45%"
+            },
+            "caption": "A weaver, Tanjore, about 1840"
+          },
+          {
+            "visual": {
+              "url": "../assets/images/topics/5-4/great-exhibition-1851-india-ship-models.jpg",
+              "alt": "A faded photograph inside the Crystal Palace: a hanging sign reads INDIA above model sailing ships with triangular sails and ceremonial parasols, under an iron and glass roof",
+              "credit": "Hugh Owen, Naval Models, India, Great Exhibition, photograph, 1851 · Rijksmuseum · Public domain",
+              "ratio": 1.323,
+              "fit": "cover",
+              "position": "45% 60%"
+            },
+            "caption": "Indian ship models, London, 1851"
+          }
         ]
       }
     },
@@ -593,7 +625,17 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-subtitle",
       "eyebrow": "The Hand-off",
       "title": "The factory traveled. The share moved. The old makers kept making.",
-      "subtitle": "Next, Topic 5.5: factories needed coal, and steam engines turned it into power on a scale nobody had seen. How did the machines themselves change the world?"
+      "subtitle": "Mills at Lowell, Massachusetts, photographed between 1900 and 1910. Next, Topic 5.5: factories needed coal, and steam engines turned it into power on a scale nobody had seen. How did the machines themselves change the world?",
+      "template": {
+        "visual": {
+          "url": "../assets/images/topics/5-4/lowell-mills-merrimack-river-1900s.jpg",
+          "alt": "A photograph looking down a calm river at a long row of brick mill buildings along the left bank, with several tall smokestacks, some smoking, stretching into the distance",
+          "credit": "Mills on the Merrimack River, Lowell, Massachusetts, photograph, 1900 to 1910 · Library of Congress · Public domain",
+          "ratio": 1.255,
+          "position": "50% 50%",
+          "tagPos": "bl"
+        }
+      }
     }
   ]
 };
