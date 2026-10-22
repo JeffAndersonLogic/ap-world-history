@@ -115,7 +115,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "diffusion-path",
       "eyebrow": "How It Spread · Where It Went",
-      "title": "From Britain to other parts of Europe, the United States, Russia and Japan.",
+      "title": "Where the new methods went.",
       "footer": "Each stop got the methods later, and each added its own coal, water and money.",
       "kc": "KC-5.1.I.D",
       "template": {
@@ -232,34 +232,34 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "ledger",
       "eyebrow": "Making Connections 5.A · Practice",
       "title": "Five cases. What do they share?",
-      "footer": "Say the pattern in one sentence before you look at the right-hand side.",
+      "footer": "Say the pattern in one sentence, then check it against the bracket.",
       "kc": "KC-5.1.I.D",
       "template": {
         "rows": [
           {
             "name": "Pawtucket",
-            "tool": "Slater, trained in Derbyshire",
-            "result": "builds spinning machines from memory."
+            "tool": "Slater's memory",
+            "result": "Arkwright's machines rebuilt, 1790s."
           },
           {
             "name": "Seraing",
-            "tool": "Cockerill, son of an English machine maker",
-            "result": "opens works on the Liège coalfield."
+            "tool": "Cockerill's know-how",
+            "result": "works on the Liège coal, 1817."
           },
           {
             "name": "Nuremberg",
-            "tool": "An engine built in England",
-            "result": "pulls the first German railway train."
+            "tool": "An English engine",
+            "result": "the first German railway, 1835."
           },
           {
             "name": "Lowell",
             "tool": "Boston merchants' money",
-            "result": "builds cotton mills on a river."
+            "result": "cotton mills on a river, 1820s."
           },
           {
             "name": "Osaka",
-            "tool": "Spinning machines made in Britain",
-            "result": "run by steam, day and night."
+            "tool": "British spinning machines",
+            "result": "run by steam, 1883."
           }
         ],
         "payoffLabel": "The pattern",
@@ -324,6 +324,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
                 "year": 1750,
                 "label": "1750",
                 "text": "about a quarter"
+              },
+              {
+                "year": 1860,
+                "label": "1860",
+                "text": "Britain alone: about a fifth"
               },
               {
                 "year": 1900,
@@ -511,7 +516,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Who made the world's goods?",
       "footer": "The factory traveled. The share moved. The old makers kept making.",
       "template": {
-        "date": "Steam-powered factories",
+        "date": "The factory",
         "before": {
           "tag": "About 1750",
           "items": [

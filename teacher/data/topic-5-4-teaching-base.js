@@ -224,7 +224,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'spread', kind: 'diffusion-path', eyebrow: 'How It Spread · Where It Went',
-      kc: 'KC-5.1.I.D', title: 'From Britain to other parts of Europe, the United States, Russia and Japan.',
+      kc: 'KC-5.1.I.D', title: 'Where the new methods went.',
       footer: 'Each stop got the methods later, and each added its own coal, water and money.',
       template: {
         stops: [
@@ -326,14 +326,14 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'practice', kind: 'ledger', eyebrow: 'Making Connections 5.A · Practice',
       kc: 'KC-5.1.I.D', title: 'Five cases. What do they share?',
-      footer: 'Say the pattern in one sentence before you look at the right-hand side.',
+      footer: 'Say the pattern in one sentence, then check it against the bracket.',
       template: {
         rows: [
-          { name: 'Pawtucket', tool: 'Slater, trained in Derbyshire', result: 'builds spinning machines from memory.' },
-          { name: 'Seraing', tool: 'Cockerill, son of an English machine maker', result: 'opens works on the Liège coalfield.' },
-          { name: 'Nuremberg', tool: 'An engine built in England', result: 'pulls the first German railway train.' },
-          { name: 'Lowell', tool: 'Boston merchants\' money', result: 'builds cotton mills on a river.' },
-          { name: 'Osaka', tool: 'Spinning machines made in Britain', result: 'run by steam, day and night.' }
+          { name: 'Pawtucket', tool: 'Slater\'s memory', result: 'Arkwright\'s machines rebuilt, 1790s.' },
+          { name: 'Seraing', tool: 'Cockerill\'s know-how', result: 'works on the Liège coal, 1817.' },
+          { name: 'Nuremberg', tool: 'An English engine', result: 'the first German railway, 1835.' },
+          { name: 'Lowell', tool: 'Boston merchants\' money', result: 'cotton mills on a river, 1820s.' },
+          { name: 'Osaka', tool: 'British spinning machines', result: 'run by steam, 1883.' }
         ],
         payoffLabel: 'The pattern',
         payoff: 'People, machines, money'
@@ -374,7 +374,7 @@ window.BEHISTORICAL_TEACHING = {
         tick: 50,
         note: 'Bairoch\'s estimates; one scale for all three rows',
         cases: [
-          { name: 'Europe and the US', note: 'Steam-powered factories', points: [{ year: 1750, level: 1.07 }, { year: 1800, level: 1.31 }, { year: 1830, level: 1.66 }, { year: 1860, level: 2.75 }, { year: 1880, level: 3.46 }, { year: 1900, level: 3.89 }], events: [{ year: 1750, label: '1750', text: 'about a quarter' }, { year: 1900, label: '1900', text: 'over four-fifths' }] },
+          { name: 'Europe and the US', note: 'Steam-powered factories', points: [{ year: 1750, level: 1.07 }, { year: 1800, level: 1.31 }, { year: 1830, level: 1.66 }, { year: 1860, level: 2.75 }, { year: 1880, level: 3.46 }, { year: 1900, level: 3.89 }], events: [{ year: 1750, label: '1750', text: 'about a quarter' }, { year: 1860, label: '1860', text: 'Britain alone: about a fifth' }, { year: 1900, label: '1900', text: 'over four-fifths' }] },
           { name: 'China', note: 'Mostly by hand', points: [{ year: 1750, level: 1.49 }, { year: 1800, level: 1.51 }, { year: 1830, level: 1.35 }, { year: 1860, level: 0.9 }, { year: 1880, level: 0.57 }, { year: 1900, level: 0.28 }], events: [{ year: 1750, label: '1750', text: 'about a third' }, { year: 1900, label: '1900', text: 'about 6 percent' }] },
           { name: 'India', note: 'Mostly by hand', points: [{ year: 1750, level: 1.11 }, { year: 1800, level: 0.9 }, { year: 1830, level: 0.8 }, { year: 1860, level: 0.39 }, { year: 1880, level: 0.13 }, { year: 1900, level: 0.08 }], events: [{ year: 1750, label: '1750', text: 'about a quarter' }, { year: 1900, label: '1900', text: 'under 2 percent' }] }
         ]
@@ -474,7 +474,7 @@ window.BEHISTORICAL_TEACHING = {
       title: 'Who made the world\'s goods?',
       footer: 'The factory traveled. The share moved. The old makers kept making.',
       template: {
-        date: 'Steam-powered factories',
+        date: 'The factory',
         before: { tag: 'About 1750', items: ['Goods made **by hand**, at home and in workshops', 'Most made in **Asia**: China and India'] },
         after: { tag: 'By 1900', items: ['Factory methods in **Europe, the US, Russia, Japan**', 'Europe and the US make **over four-fifths**'] },
         continued: { tag: 'Continued', items: ['Indian and Chinese weavers keep weaving', 'Bombay builds ships; Egypt weaves', 'But their **share** shrinks'] }
