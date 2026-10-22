@@ -400,20 +400,34 @@ module.exports = [
   {
     id: 'topic-5-4',
     code: 'Topic 5.4',
-    title: 'The Uneven Spread of Industrialization, c. 1850-1900',
+    title: 'Where the Factory Went, and Who Kept Making Goods, 1750 to 1900',
     subtitle: 'Topic 5.4 · Industrialization spreads',
     highlights: [
-      { zone: 'britain', label: 'BRITAIN', tone: 'gold', legend: 'First industrial economy' },
-      { zone: 'westernEurope', label: 'FRANCE, BELGIUM, GERMANY', tone: 'bronze', legend: 'Continental industrialization after 1830' },
-      { zone: 'unitedStates', label: 'UNITED STATES', tone: 'sand', legend: 'Rapid US industrial growth after 1860' },
-      { zone: 'japan', label: 'JAPAN', tone: 'sage', legend: 'Meiji state-led industrialization after 1868' },
-      { zone: 'russia', label: 'RUSSIA', tone: 'slate', legend: 'State railways and late Russian industry' },
-      { zone: 'southAsia', label: 'DEINDUSTRIALIZED', tone: 'plum', legend: 'South Asia and Egypt: deindustrialized by imports' }
+      { zone: 'britain', label: 'BRITAIN', labelSide: 'left', tone: 'gold', legend: 'Britain: where the factory began, 1770s' },
+      { zone: [-73, 42, 5, 3], label: 'US NORTHEAST', labelSide: 'left', tone: 'bronze', legend: 'Factory methods arrive' },
+      { zone: [7, 51, 5, 3], label: 'BELGIUM AND GERMAN STATES', tone: 'bronze', legend: 'Factory methods arrive' },
+      { zone: [38, 48, 5, 3], label: 'RUSSIA', labelSide: 'right', tone: 'bronze', legend: 'Factory methods arrive' },
+      { zone: [136, 35, 5, 3], label: 'JAPAN', labelSide: 'right', tone: 'bronze', legend: 'Factory methods arrive' },
+      { zone: 'southAsia', label: 'INDIA', labelSide: 'left', tone: 'slate', legend: 'Kept making goods, mostly by hand; share fell' },
+      { zone: 'eastAsia', label: 'CHINA', labelSide: 'right', tone: 'slate', legend: 'Kept making goods, mostly by hand; share fell' },
+      { zone: 'egypt', label: 'EGYPT', labelSide: 'left', tone: 'slate', legend: 'Kept making goods, mostly by hand; share fell' }
     ],
     flows: [
-      { from: 'britain', to: 'westernEurope', label: 'technology crosses the Channel' },
-      { from: 'britain', to: 'japan', label: 'machinery and engineers', bow: 0.16 }
-    ]
+      { from: [-2, 54], to: [-71.4, 41.9], label: '1790s', bow: 0.18 },
+      { from: [-2, 54], to: [5.6, 50.6], label: '1810s to 1830s', bow: -0.3 },
+      { from: [-2, 54], to: [37.8, 48], label: '1870s', bow: -0.22 },
+      { from: [-2, 54], to: [135.5, 34.7], label: '1880s', bow: -0.16 }
+    ],
+    legend: [
+      { kind: 'area', tone: 'gold', text: 'Britain: where the factory began, 1770s' },
+      { kind: 'area', tone: 'bronze', text: 'Factory methods arrive' },
+      { kind: 'area', tone: 'slate', text: 'Kept making goods, mostly by hand; share fell' },
+      { kind: 'flow', step: 1, text: 'United States, 1790s' },
+      { kind: 'flow', step: 2, text: 'Belgium and German states, 1810s to 1830s' },
+      { kind: 'flow', step: 3, text: 'Russia, 1870s' },
+      { kind: 'flow', step: 4, text: 'Japan, 1880s' }
+    ],
+    note: 'Regions are approximate. Each arrow shows when factory methods arrived, not one route. France, also in other parts of Europe, is not drawn separately.'
   },
   {
     id: 'topic-5-5',

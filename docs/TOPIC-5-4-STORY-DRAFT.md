@@ -2,6 +2,8 @@
 
 **Status: Delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12).**
 
+**Resume here (2026-10-22):** Phases 6 to 8 half done. Deck, lesson data, renderer config, map, deep reading, BeInTheRoom ("The Great Exhibition") and Canvas text are drafted. Still to do: the fact-check results into the ledger and every surface; pictures (question slide has Selous; the landing slide, Evidence Lab cards, module pictures and lecture-card pictures are empty); the Primary Source (placeholder, to be Montgomery Martin's 1840 evidence if verified); the room's sources. Then Phase 9.
+
 **Taught:** no dates yet. The schedule ends with the Era 3 Exam (Green Monday 2026-11-23, Silver
 Tuesday 2026-11-24), and neither the schedule nor the Notion task names a Unit 5 class day (5.1 to
 5.3 are not scheduled either). The build adds no schedule entries; the dates are the one open item in
