@@ -104,7 +104,7 @@ HISTORICAL ACCURACY IS A REQUIREMENT, NOT A STYLE CHOICE. Every person, object a
 4. No famous landmarks, flags, symbols or events from other dates, even ones people associate with this place.
 5. If a detail is uncertain, leave it out or keep it plain. An empty corner is better than a wrong object.
 6. Show every people with dignity: no caricature, no exaggerated features, no costume stereotypes.
-Accuracy notes for this scene: Lutheran churches in Saxony kept their altarpieces, crucifixes and candles, so the old images are whole and in place, not smashed or painted over. The preacher wears a plain black gown, not the embroidered vestments of a Catholic priest. Men wear their own hair, short or shoulder length, and full beards are common. The church has no fixed rows of pews.
+Accuracy notes for this scene: Lutheran churches in Saxony kept their altarpieces, crucifixes and candles, so the old images are whole and in place, not smashed or painted over. For the sermon the preacher wears a plain black gown. Men wear short-cropped hair, and full beards are common. The church has no fixed rows of pews.
 Must NOT appear: a priest in ornate vestments raising the host, a white clerical collar, a neck ruff, powdered wigs, tricorn hats, rows of fixed pews, smashed or whitewashed statues, Martin Luther nailing a paper to a door, electric lights. Also no modern objects, and no text, letters, numbers, signs, logos or watermark anywhere in the picture.
 
 COMPOSITION: 16:9 landscape. The pulpit and congregation sit in the middle of the frame, with the altarpiece visible behind. The bottom quarter is a calm, plain stone floor in shadow, where a sentence will be placed over the picture. Keep the bottom-right corner empty.
@@ -112,7 +112,7 @@ COMPOSITION: 16:9 landscape. The pulpit and congregation sit in the middle of th
 STYLE: Photorealistic, like a still from a carefully researched historical documentary film. Light comes only from the windows and candles. Rich but believable color. Not a painting, not fantasy, not a video game.
 ```
 
-**Check before use:** the preacher is in a plain black gown (no vestments, no collar or ruff);
+**Check before use:** the preacher is in a plain black gown (no white collar, no ruff);
 the old altarpiece is still there and whole; no rows of pews.
 
 ## 2. Topic 4.1: Home from India, 1499
@@ -124,7 +124,7 @@ the old altarpiece is still there and whole; no rows of pews.
 ```text
 Create one photorealistic, cinematic image: a historical reconstruction for the closing slide of a high school world history lesson.
 
-SCENE: The mouth of the Tagus river at Lisbon, Portugal, in July 1499. A single small, weather-beaten Portuguese caravel sails home from India, the first ship of Vasco da Gama's fleet to return. It has two or three masts carrying triangular lateen sails of plain, patched and stained canvas, a low hull of dark tarred wood streaked with salt and weed, and a long wooden tiller at the stern. A thin, exhausted crew lines the rail, staring at the shore. Small rowing boats come out to meet it. On the hills behind, the city of Lisbon climbs toward an old stone castle with square towers on the hilltop: pale plastered houses with red tile roofs, church towers, city walls along the water. Golden evening light on calm water.
+SCENE: The Tagus river approaching Lisbon, Portugal, in July 1499. A single small, weather-beaten Portuguese caravel sails home from India, the first ship of Vasco da Gama's fleet to return. It has two or three masts carrying triangular lateen sails of plain, patched and stained canvas, a low hull of dark tarred wood streaked with salt and weed, and a long wooden tiller at the stern. A thin, exhausted crew lines the rail, staring at the shore. Small rowing boats come out to meet it. On the hills behind, the city of Lisbon climbs toward an old stone castle with square towers on the hilltop: pale plastered houses with red tile roofs, church towers, city walls along the water. Golden evening light on calm water.
 
 THE IDEA IT MUST SHOW: Borrowed tools, new ships and knowledge of the winds meant a ship could go to India and come back. Now the ocean goes both ways.
 
@@ -135,8 +135,8 @@ HISTORICAL ACCURACY IS A REQUIREMENT, NOT A STYLE CHOICE. Every person, object a
 4. No famous landmarks, flags, symbols or events from other dates, even ones people associate with this place.
 5. If a detail is uncertain, leave it out or keep it plain. An empty corner is better than a wrong object.
 6. Show every people with dignity: no caricature, no exaggerated features, no costume stereotypes.
-Accuracy notes for this scene: Only about a third of the men who sailed came home, so the crew is small and worn. The ship is steered by a tiller, not a wheel. Sailors wear coarse wool and linen tunics, loose breeches and knitted caps, often barefoot. The famous riverside monuments of Lisbon were built after 1500 and do not exist yet.
-Must NOT appear: Belém Tower, the Jerónimos Monastery, the Monument to the Discoveries, any bridge over the river, a ship's steering wheel, rows of cannon, a large square-rigged galleon, crosses or flags painted on the sails, fireworks, cheering crowds or banners, tricorn hats, pirate costumes. Also no modern objects, and no text, letters, numbers, signs, logos or watermark anywhere in the picture.
+Accuracy notes for this scene: Only about a third of the men who sailed came home, so the crew is small and worn. The ship is steered by a tiller, not a wheel. If the sails carry anything, it is a plain red cross of the Order of Christ. Sailors wear coarse wool and linen tunics, loose breeches and knitted caps, often barefoot. The famous riverside monuments of Lisbon were built after 1500 and do not exist yet.
+Must NOT appear: Belém Tower, the Jerónimos Monastery, the Monument to the Discoveries, any bridge over the river, a ship's steering wheel, rows of cannon, a large square-rigged galleon, flags with modern designs, fireworks, cheering crowds or banners, tricorn hats, pirate costumes. Also no modern objects, and no text, letters, numbers, signs, logos or watermark anywhere in the picture.
 
 COMPOSITION: 16:9 landscape. The ship sits in the middle of the frame with Lisbon behind it. The top third is calm, open evening sky, where a sentence will be placed over the picture. Keep the bottom-right corner empty.
 
@@ -165,7 +165,7 @@ HISTORICAL ACCURACY IS A REQUIREMENT, NOT A STYLE CHOICE. Every person, object a
 4. No famous landmarks, flags, symbols or events from other dates, even ones people associate with this place.
 5. If a detail is uncertain, leave it out or keep it plain. An empty corner is better than a wrong object.
 6. Show every people with dignity: no caricature, no exaggerated features, no costume stereotypes.
-Accuracy notes for this scene: The crown controlled the pepper trade, so the people weighing and recording are royal officials. Lisbon's dock workers included many Africans as well as Portuguese. The ships are wooden sailing ships with tillers. Men wear their own hair, with flat caps or soft hats.
+Accuracy notes for this scene: The crown controlled the pepper trade, so the people weighing and recording are royal officials. Lisbon's dock workers included many Africans as well as Portuguese. The ships are wooden sailing ships. Men wear their own hair, with flat caps or soft hats.
 Must NOT appear: Belém Tower (not finished until 1519), any bridge over the river, steamships, ships' steering wheels, tomatoes, potatoes, chili peppers, coins or sacks with readable lettering, powdered wigs, tricorn hats, pirate costumes, modern flags. Also no modern objects, and no text, letters, numbers, signs, logos or watermark anywhere in the picture.
 
 COMPOSITION: 16:9 landscape. The scales, pepper and people sit in the middle of the frame, with the ships behind. The bottom quarter is a calm, plain stone quayside in shade, where a sentence will be placed over the picture. Keep the bottom-right corner empty.
@@ -196,8 +196,8 @@ HISTORICAL ACCURACY IS A REQUIREMENT, NOT A STYLE CHOICE. Every person, object a
 4. No famous landmarks, flags, symbols or events from other dates, even ones people associate with this place.
 5. If a detail is uncertain, leave it out or keep it plain. An empty corner is better than a wrong object.
 6. Show every people with dignity: no caricature, no exaggerated features, no costume stereotypes.
-Accuracy notes for this scene: Nahua men wear white cotton cloaks knotted at one shoulder, or loose white cotton shirts and trousers, and sandals; Nahua women wear embroidered huipil blouses and wrapped skirts. Oxen, sheep and wheat came from Europe; maize, beans and squash are native. The church is a sixteenth-century friars' church: thick plain walls, few decorations, not a tall ornate baroque cathedral. The funeral is small and in the distance.
-Must NOT appear: sombreros, cowboy hats, ponchos or serapes, a mounted charro, a tall ornate baroque church with twin towers, tractors, fences of wire, the Mexican flag, a desert of cactus, a festive or picturesque tone. Also no modern objects, and no text, letters, numbers, signs, logos or watermark anywhere in the picture.
+Accuracy notes for this scene: Nahua men wear white cotton cloaks knotted at one shoulder, or loose white cotton shirts and trousers, and sandals; Nahua women wear embroidered huipil blouses and wrapped skirts. Oxen, sheep and wheat came from Europe; maize, beans and squash are native. Maguey (agave) plants along the field edges are correct. The church is a sixteenth-century friars' church: thick plain walls, few decorations, not a tall ornate baroque cathedral. The funeral is small and in the distance.
+Must NOT appear: sombreros, cowboy hats, ponchos or serapes, a mounted charro, a tall ornate baroque church with twin towers, tractors, fences of wire, the Mexican flag, a desert full of cactus, a festive or picturesque tone. Also no modern objects, and no text, letters, numbers, signs, logos or watermark anywhere in the picture.
 
 COMPOSITION: 16:9 landscape. The fields, oxen and village sit in the middle of the frame. The top third is calm, open sky above the volcanoes, where a sentence will be placed over the picture. Keep the bottom-right corner empty.
 
@@ -216,7 +216,7 @@ rules.
 ```text
 Create one photorealistic, cinematic image: a historical reconstruction for the closing slide of a high school world history lesson.
 
-SCENE: Nagasaki harbor, Japan, around 1690. In the middle of the frame, the small fan-shaped artificial island of Dejima, joined to the city by one short stone bridge with a guarded gate. On the island, rows of two-story Japanese-built wooden warehouses and houses with gray tile roofs, and one tall flagpole flying a plain flag of red, white and blue horizontal stripes. At the island's water gate, Japanese officials in formal dress (wide stiff-shouldered vests over kimono, hair in topknots, two swords at the hip) inspect and count bales and crates and write in a register, while two Dutch merchants in long dark coats and broad hats stand aside and wait. Japanese guards stand at the bridge gate. Out in the bay, one large three-masted Dutch trading ship and several Chinese junks ride at anchor, with small Japanese boats carrying cargo. Behind, the dense dark-tiled rooftops of Nagasaki and its temples climb steep green hills. Clear morning light.
+SCENE: Nagasaki harbor, Japan, around 1690. In the middle of the frame, the small fan-shaped artificial island of Dejima, joined to the city by one short stone bridge with a guarded gate. On the island, rows of two-story Japanese-built wooden warehouses and houses with gray tile roofs. At the island's water gate, Japanese officials in formal dress (wide stiff-shouldered vests over kimono, hair in topknots, two swords at the hip) inspect and count bales and crates and write in a register, while two Dutch merchants in knee-length dark coats, long curled wigs and black broad or cocked hats stand aside and wait. Japanese guards stand at the bridge gate. Out in the bay, one large three-masted Dutch trading ship and several Chinese junks ride at anchor, with small Japanese boats carrying cargo. Behind, the dense dark-tiled rooftops of Nagasaki and its temples climb steep green hills. Clear morning light.
 
 THE IDEA IT MUST SHOW: Europeans built trading empires from the sea, but much of the world kept its own rules. Here, a European company is allowed one tiny island, under Japanese guards and Japanese inspectors.
 
@@ -228,7 +228,7 @@ HISTORICAL ACCURACY IS A REQUIREMENT, NOT A STYLE CHOICE. Every person, object a
 5. If a detail is uncertain, leave it out or keep it plain. An empty corner is better than a wrong object.
 6. Show every people with dignity: no caricature, no exaggerated features, no costume stereotypes.
 Accuracy notes for this scene: The Dutch were confined to Dejima and could not walk into the city without permission, so they stay on the island. The Japanese officials are in charge and the Dutch wait on them. Dejima's buildings were Japanese wooden buildings, not European stone ones. Mount Fuji cannot be seen from Nagasaki, which is hundreds of miles away.
-Must NOT appear: Mount Fuji, cherry blossoms, geisha, ninjas, samurai in battle armor, a five-story pagoda, Dutch people walking in the city streets, European stone buildings on the island, steamships, Western suits or uniforms on Japanese people, the modern Japanese flag. Also no modern objects, and no text, letters, numbers, signs, logos or watermark anywhere in the picture.
+Must NOT appear: Mount Fuji, cherry blossoms, geisha, ninjas, samurai in battle armor, a five-story pagoda, Dutch people walking in the city streets, European stone buildings on the island, steamships, Western suits or uniforms on Japanese people, the modern Japanese flag, any flags. Also no modern objects, and no text, letters, numbers, signs, logos or watermark anywhere in the picture.
 
 COMPOSITION: 16:9 landscape. Dejima, its bridge and the people at the water gate sit in the middle of the frame. The bottom quarter is calm, plain harbor water, where a sentence will be placed over the picture. Keep the bottom-right corner empty.
 
@@ -247,7 +247,7 @@ reshaped work, families and faith.
 ```text
 Create one photorealistic, cinematic image: a historical reconstruction for the closing slide of a high school world history lesson.
 
-SCENE: The waterfront of Batavia (today's Jakarta) on the island of Java, around 1665, beside the castle of the Dutch East India Company: low, thick white walls with pointed bastions, tall coconut palms beyond. Along a canal mouth, laborers load sacks of pepper and bales of Indian cotton cloth into small boats that carry them out to big three-masted Dutch company ships anchored far out in the bay. A Dutch company clerk in a dark coat and broad hat records the cargo at a small table. A busy crowd fills the quay: Javanese men in batik cloth wrapped as sarongs and head cloths, Chinese merchants in long robes beside stacks of blue-and-white porcelain, Dutch soldiers with muskets. Near the front, a Dutch company official walks with his Asian-born wife and their children, a servant holding a parasol over them. Hot, hazy tropical light.
+SCENE: The waterfront of Batavia (today's Jakarta) on the island of Java, around 1665, beside the castle of the Dutch East India Company: low, thick white walls with pointed bastions, tall coconut palms beyond. Along a canal mouth, laborers, many of them enslaved, load sacks of pepper and bales of Indian cotton cloth into small boats that carry them out to big three-masted Dutch company ships anchored far out in the bay. A Dutch company clerk in a dark coat and broad hat records the cargo at a small table. A busy crowd fills the quay: enslaved and free workers from India, Bali and Sulawesi in wrapped cotton cloths and head cloths, Portuguese-speaking Asian Christians, Chinese merchants in long robes beside stacks of blue-and-white porcelain, Dutch soldiers with muskets. Near the front, a Dutch company official walks with his Asian-born wife and their children, a servant holding a parasol over them. Hot, hazy tropical light.
 
 THE IDEA IT MUST SHOW: Rulers built tools, like this trading company and its fort, to make their empires pay, and what those tools moved changed work, families and faith.
 
@@ -258,7 +258,7 @@ HISTORICAL ACCURACY IS A REQUIREMENT, NOT A STYLE CHOICE. Every person, object a
 4. No famous landmarks, flags, symbols or events from other dates, even ones people associate with this place.
 5. If a detail is uncertain, leave it out or keep it plain. An empty corner is better than a wrong object.
 6. Show every people with dignity: no caricature, no exaggerated features, no costume stereotypes.
-Accuracy notes for this scene: Batavia's harbor was shallow, so big ships anchored offshore and small boats carried the cargo. The crowd is mostly Asian: Javanese, Chinese and others, with fewer Europeans. Many Dutch company men married Asian women, so a mixed family is normal here. Dutch men of the 1660s wear their own long hair, broad hats, coats and wide plain collars or neck cloths.
+Accuracy notes for this scene: Batavia's harbor was shallow, so big ships anchored offshore and small boats carried the cargo. Javanese people were not allowed to live inside the city after 1656. The crowd is mostly Asian: enslaved and free people from India, Bali and Sulawesi, Asian Christians and Chinese, with fewer Europeans. Many of the laborers are enslaved. Many Dutch company men married Asian women, so a mixed family is normal here. Dutch men of the 1660s wear their own long hair, broad hats, coats and wide plain collars or neck cloths.
 Must NOT appear: coffee plants or coffee sacks (coffee came to Java later), steamships, powdered wigs, tricorn hats, onion domes or tall minarets, British or modern Indonesian flags, readable lettering on flags, crates or ledgers. Also no modern objects, and no text, letters, numbers, signs, logos or watermark anywhere in the picture.
 
 COMPOSITION: 16:9 landscape. The quay, the crowd and the family sit in the middle of the frame, the castle walls and ships behind. The bottom quarter is calm, plain canal water in shade, where a sentence will be placed over the picture. Keep the bottom-right corner empty.
@@ -266,7 +266,7 @@ COMPOSITION: 16:9 landscape. The quay, the crowd and the family sit in the middl
 STYLE: Photorealistic, like a still from a carefully researched historical documentary film. Light comes only from the sun. Rich but believable color. Not a painting, not fantasy, not a video game.
 ```
 
-**Check before use:** a mostly Asian crowd with a few Dutch; ships anchored far out with small
+**Check before use:** a mostly Asian crowd (not Javanese) with a few Dutch; ships anchored far out with small
 boats carrying cargo; no coffee and no wigs.
 
 ## 7. Topic 4.6: The Barricades of Paris, 1648
@@ -290,7 +290,7 @@ HISTORICAL ACCURACY IS A REQUIREMENT, NOT A STYLE CHOICE. Every person, object a
 5. If a detail is uncertain, leave it out or keep it plain. An empty corner is better than a wrong object.
 6. Show every people with dignity: no caricature, no exaggerated features, no costume stereotypes.
 Accuracy notes for this scene: This is 1648, more than a century before the French Revolution. Men wear their own long hair, wide-brimmed felt hats, doublets with plain falling collars, cloaks and boots; women wear linen caps, bodices and aprons. Firearms are matchlocks. The streets are narrow and medieval.
-Must NOT appear: the red, white and blue French flag, red liberty caps, the Bastille, a guillotine, anything from 1789, 1830 or 1848, the Eiffel Tower, wide boulevards, powdered wigs, tricorn hats, soldiers in blue-and-white uniforms. Also no modern objects, and no text, letters, numbers, signs, logos or watermark anywhere in the picture.
+Must NOT appear: the red, white and blue French flag, red liberty caps, the storming of the Bastille, a guillotine, anything from 1789, 1830 or 1848, the Eiffel Tower, wide boulevards, powdered wigs, tricorn hats, soldiers in blue-and-white uniforms. Also no modern objects, and no text, letters, numbers, signs, logos or watermark anywhere in the picture.
 
 COMPOSITION: 16:9 landscape. The barricade and the people behind it sit in the middle of the frame, the guards small at the far end. The bottom quarter is calm, plain cobblestone street in shadow, where a sentence will be placed over the picture. Keep the bottom-right corner empty.
 
@@ -309,7 +309,7 @@ stronger rulers decided who moved where.
 ```text
 Create one photorealistic, cinematic image: a historical reconstruction for the closing slide of a high school world history lesson.
 
-SCENE: The main square of Mexico City around 1720, the capital of New Spain. Through the middle of the square, a high official born in Spain rides in a closed black carriage pulled by mules, wearing a long curled wig, a dark velvet coat and a three-cornered hat. Around him, the whole social ladder of the colony: wealthy merchants of Spanish descent in silk coats; craftsmen of mixed Spanish and Indigenous descent in plain coats; Indigenous Nahua women in white embroidered huipil blouses, sitting on the ground under reed-mat awnings, selling vegetables, flowers and turkeys; free Black and mixed-race women in fine skirts and shawls; Spanish soldiers. Behind them stand the long stone front of the viceroy's palace and the great cathedral, its front still unfinished, with only low, incomplete bell towers. Bright high-altitude sun.
+SCENE: The main square of Mexico City around 1720, the capital of New Spain. Through the middle of the square, a high official born in Spain rides in a closed black carriage pulled by mules, wearing a long curled wig, a dark velvet coat and a three-cornered hat. Around him, the whole social ladder of the colony: wealthy merchants of Spanish descent in silk coats; craftsmen of mixed Spanish and Indigenous descent in plain coats; Indigenous Nahua women in white embroidered huipil blouses, sitting on the ground under reed-mat awnings, selling vegetables, flowers and turkeys; free Black and mixed-race women in fine skirts and shawls; Spanish soldiers. In the square stands the Parián, a large stone market building full of shops. Behind them stand the long stone front of the viceroy's palace and the great cathedral, its front still unfinished, with only low, incomplete bell towers. Bright high-altitude sun.
 
 THE IDEA IT MUST SHOW: The social ladder stayed. The people on it moved, and conquest, new wealth and stronger rulers decided who stood where.
 
@@ -320,7 +320,7 @@ HISTORICAL ACCURACY IS A REQUIREMENT, NOT A STYLE CHOICE. Every person, object a
 4. No famous landmarks, flags, symbols or events from other dates, even ones people associate with this place.
 5. If a detail is uncertain, leave it out or keep it plain. An empty corner is better than a wrong object.
 6. Show every people with dignity: no caricature, no exaggerated features, no costume stereotypes.
-Accuracy notes for this scene: The cathedral's tall twin bell towers were not finished until the 1790s, so in 1720 they are low and incomplete. Most people in the square are Indigenous or of mixed descent; Spaniards are few but on top. Clothing is early 1700s.
+Accuracy notes for this scene: The cathedral's tall twin bell towers were not finished until the 1790s, so in 1720 they are low and incomplete. Spanish-born officials are few; American-born Spaniards, Indigenous people, people of mixed descent and people of African descent fill the square, and the Spanish-born stand at the top. Clothing is early 1700s.
 Must NOT appear: the cathedral with its finished tall twin towers, the Mexican flag or any giant flagpole, sombreros, charro suits, mariachi, cowboy hats, ponchos, cars or streetcars, a festive fiesta tone. Also no modern objects, and no text, letters, numbers, signs, logos or watermark anywhere in the picture.
 
 COMPOSITION: 16:9 landscape. The carriage and the crowd around it sit in the middle of the frame, the palace and cathedral behind. The bottom quarter is calm, plain paving stones in shade, where a sentence will be placed over the picture. Keep the bottom-right corner empty.
@@ -328,8 +328,8 @@ COMPOSITION: 16:9 landscape. The carriage and the crowd around it sit in the mid
 STYLE: Photorealistic, like a still from a carefully researched historical documentary film. Light comes only from the sun. Rich but believable color. Not a painting, not fantasy, not a video game.
 ```
 
-**Check before use:** the cathedral's towers are low and unfinished; a crowd that is mostly
-Indigenous and mixed, with a few Spaniards on top; no sombreros or Mexican flag.
+**Check before use:** the cathedral's towers are low and unfinished; a mixed crowd, with the
+Spanish-born official at the top of it; no sombreros or Mexican flag.
 
 ## 9. Topic 4.8: The Silver Mountain
 
@@ -341,7 +341,7 @@ workers by force.
 ```text
 Create one photorealistic, cinematic image: a historical reconstruction for the closing slide of a high school world history lesson.
 
-SCENE: The Cerro Rico, the reddish, cone-shaped silver mountain above the town of Potosí in the high Andes of South America, around 1600, about 4,000 meters up, cold and treeless. Long lines of Andean men, drafted from their home villages for forced labor in the mines, climb steep zigzag paths to the dark mine entrances; others come down bent under heavy loads of ore in hide bags on their backs. Long trains of llamas carry ore down the slopes. Below, the Spanish town spreads out with stone churches and bell towers, and along a stream stand water-powered mills with big wooden waterwheels that crush the ore, with thin smoke rising. A Spanish overseer in a dark doublet, cape and broad hat watches from a rock. Andean women in wrapped dresses and shoulder cloths fastened with large metal pins bring food. Thin, bright mountain light.
+SCENE: The Cerro Rico, the reddish, cone-shaped silver mountain above the town of Potosí in the high Andes of South America, around 1600, about 4,000 meters up, cold and treeless. Long lines of Andean men, many drafted from their home villages for forced labor in the mines, climb steep zigzag paths to the dark mine entrances; others come down bent under heavy loads of ore in hide bags on their backs. Long trains of llamas carry ore down the slopes. Below, the Spanish town spreads out with adobe churches and plain bell towers, and along a stream stand water-powered mills with big wooden waterwheels that crush the ore, with thin smoke rising. A Spanish overseer in a dark doublet, cape and broad hat watches from a rock. Andean women in wrapped dresses and shoulder cloths fastened with large metal pins bring food. Thin, bright mountain light.
 
 THE IDEA IT MUST SHOW: The new world economy reached into everyday life, and it changed lives most where it needed workers by force: one mountain fed silver to the world.
 
@@ -368,15 +368,17 @@ Machu Picchu and no jungle.
 **Save as** `assets/images/topics/5-1/5.1 - Burying Slavery Falmouth 1838.jpg`
 **Landing sentence:** By what right? The answer kept growing.
 **Why this scene:** the spine says the Enlightenment's words "reached further than the men who
-wrote them," pressed by the people left out. In Falmouth, Jamaica, at midnight as 1 August 1838
-began, the night apprenticeship ended and full freedom came in the British Caribbean, freed
-people at the Baptist chapel buried a coffin holding a chain, an iron collar and a whip. The
-slide notes should say that the 1834 law ended slavery in name and 1838 ended apprenticeship.
+wrote them," pressed by the people left out. The law that took effect on 1 August 1834 ended
+slavery in the British Caribbean in name but bound freed people to "apprenticeship"; full freedom
+came on 1 August 1838. At Falmouth, Jamaica, William Knibb proclaimed it at the Baptist chapel at
+midnight, and freed people buried a coffin holding a chain, an iron collar and a whip. Accounts
+differ on whether the burial was that midnight or in the celebration the next day; the prompt
+uses the daytime celebration of 1 August, and the slide notes should say the accounts differ.
 
 ```text
 Create one photorealistic, cinematic image: a historical reconstruction for the closing slide of a high school world history lesson.
 
-SCENE: Falmouth, Jamaica, at midnight as 1 August 1838 begins, the night full freedom came for formerly enslaved people in the British Caribbean. In the yard of the Baptist chapel, a plain building of whitewashed stone with tall arched windows, a large crowd of Black Jamaican men, women and children in their best clothes (white cotton dresses and head wraps, white shirts and dark jackets, straw hats) gather by torchlight and lantern light around a freshly dug grave. In the center, a few men lower a plain wooden coffin into the grave. Inside the open coffin, before the lid goes on, lie a broken iron chain, an iron collar and a whip. People raise their hands, embrace, sing; a father lifts a child onto his shoulders to see. A white missionary in a black coat stands among them, at the side, not the center. Palm trees dark against the night sky.
+SCENE: Falmouth, Jamaica, on the morning of 1 August 1838, the first day of full freedom for formerly enslaved people in the British Caribbean. In the yard of the Baptist chapel, a plain building of whitewashed stone with tall arched windows, a large crowd of Black Jamaican men, women and children in their best clothes (white cotton dresses and head wraps, white shirts and dark jackets, straw hats) gather around a freshly dug grave. In the center, a few men lower a plain wooden coffin into the grave. Inside the open coffin, before the lid goes on, lie a broken iron chain, an iron collar and a whip. People raise their hands, embrace, sing; a father lifts a child onto his shoulders to see. The white Baptist missionary who led the service, in a black coat, stands with them; the freed Jamaicans fill the scene. Palm trees and bright morning sky.
 
 THE IDEA IT MUST SHOW: By what right? The answer kept growing. The words of liberty reached further than the men who wrote them, because the people left out claimed them.
 
@@ -387,12 +389,12 @@ HISTORICAL ACCURACY IS A REQUIREMENT, NOT A STYLE CHOICE. Every person, object a
 4. No famous landmarks, flags, symbols or events from other dates, even ones people associate with this place.
 5. If a detail is uncertain, leave it out or keep it plain. An empty corner is better than a wrong object.
 6. Show every people with dignity: no caricature, no exaggerated features, no costume stereotypes.
-Accuracy notes for this scene: The freed Jamaicans are the center of the scene and are celebrating standing up, not kneeling or begging. Clothing is 1830s Caribbean. Light comes from torches and lanterns. This is a church yard in a small port town, not a plantation field.
-Must NOT appear: anyone kneeling in chains, a white person unlocking chains as the hero, the kneeling figure from the old antislavery medallion, the Jamaican flag, red, gold and green colors, dreadlocks, modern clothing, fireworks, electric light, readable lettering on the coffin or anywhere else. Also no modern objects, and no text, letters, numbers, signs, logos or watermark anywhere in the picture.
+Accuracy notes for this scene: The freed Jamaicans are the center of the scene and are celebrating standing up, not kneeling or begging. Clothing is 1830s Caribbean. This is a church yard in a small port town, not a plantation field.
+Must NOT appear: anyone kneeling in chains, a white person unlocking chains as the hero, the kneeling figure from the old antislavery medallion, the Jamaican flag, red, gold and green colors, dreadlocks, modern clothing, fireworks, readable lettering on the coffin or anywhere else. Also no modern objects, and no text, letters, numbers, signs, logos or watermark anywhere in the picture.
 
-COMPOSITION: 16:9 landscape. The coffin and the people around it sit in the middle of the frame, lit by torches, with the chapel behind. The bottom quarter is calm, plain dark ground in shadow, where a sentence will be placed over the picture. Keep the bottom-right corner empty.
+COMPOSITION: 16:9 landscape. The coffin and the people around it sit in the middle of the frame, with the chapel behind. The bottom quarter is calm, plain ground in shade, where a sentence will be placed over the picture. Keep the bottom-right corner empty.
 
-STYLE: Photorealistic, like a still from a carefully researched historical documentary film. Light comes only from torches and lanterns. Rich but believable color. Not a painting, not fantasy, not a video game.
+STYLE: Photorealistic, like a still from a carefully researched historical documentary film. Light comes only from the morning sun. Rich but believable color. Not a painting, not fantasy, not a video game.
 ```
 
 **Check before use:** the freed people are standing and at the center, not kneeling; no lettering
@@ -406,7 +408,7 @@ on the coffin; no modern Jamaican flag or colors.
 ```text
 Create one photorealistic, cinematic image: a historical reconstruction for the closing slide of a high school world history lesson.
 
-SCENE: The main square of Gonaïves, on the island that the French had called Saint-Domingue, on 1 January 1804, the day Haiti declared its independence. Ranks of soldiers of the new Haitian army, men who had been enslaved, stand at attention with muskets and bayonets, some in French-style blue uniform coats with white trousers and two-cornered hats, many in plainer clothes. On a raised wooden platform, the commanding general in a dark general's uniform with gold epaulettes and a plumed two-cornered hat stands with his officers while one of them reads the declaration of independence aloud from a handwritten paper. Behind them flies a flag of two vertical stripes, dark blue at the pole and red, the French flag with its white stripe torn out. A large crowd of men, women and children watch. Low dry hills, palms and cactus, bright Caribbean sun.
+SCENE: The main square of Gonaïves, in the former French colony of Saint-Domingue, on 1 January 1804, the day Haiti declared its independence. Ranks of soldiers of the new Haitian army, men who had been enslaved, stand at attention with muskets and bayonets, some in French-style blue uniform coats with white trousers and two-cornered hats, many in plainer clothes. On a raised wooden platform, the commanding general in a dark general's uniform with gold epaulettes and a plumed two-cornered hat stands with his officers while one of them reads the declaration of independence aloud from a handwritten paper. Behind them flies a flag of two vertical stripes, dark blue at the pole and red, the French flag with its white stripe torn out. A large crowd of men, women and children watch. Low dry hills, palms and cactus, bright Caribbean sun.
 
 THE IDEA IT MUST SHOW: A grievance, the words to name it, and a chance to act made a revolution, and the revolution made a new nation on the map.
 
@@ -482,8 +484,8 @@ HISTORICAL ACCURACY IS A REQUIREMENT, NOT A STYLE CHOICE. Every person, object a
 4. No famous landmarks, flags, symbols or events from other dates, even ones people associate with this place.
 5. If a detail is uncertain, leave it out or keep it plain. An empty corner is better than a wrong object.
 6. Show every people with dignity: no caricature, no exaggerated features, no costume stereotypes.
-Accuracy notes for this scene: Men wear a plain white cotton dhoti and a cotton shawl; women wear a plain cotton sari in the Bengali style of the time. Bengal weavers worked at pit looms on the ground, by hand. Everything in the village is hand-made; only the bales come from a factory. There are no railways in India yet.
-Must NOT appear: railways or trains, factory machines in the village, sewing machines, the Taj Mahal or Mughal palaces, elephants, red-coated British soldiers, Hindu holy men as a cliché, the flag of Bangladesh or India, printed brand marks on the bales. Also no modern objects, and no text, letters, numbers, signs, logos or watermark anywhere in the picture.
+Accuracy notes for this scene: Men wear a plain white cotton dhoti and a cotton shawl; women wear a plain cotton sari wrapped over the shoulder and head, with no fitted blouse. Bengal weavers worked at pit looms on the ground, by hand. Everything in the village is hand-made; only the bales come from a factory. There are no railways in India yet.
+Must NOT appear: railways or trains, factory machines in the village, sewing machines, the Taj Mahal or Mughal palaces, elephants, red-coated British soldiers, Hindu holy men as a cliché, modern tailored blouses, the flag of Bangladesh or India, printed brand marks on the bales. Also no modern objects, and no text, letters, numbers, signs, logos or watermark anywhere in the picture.
 
 COMPOSITION: 16:9 landscape. The weaver at his loom and the bales at the landing sit in the middle of the frame. The bottom quarter is calm, plain, packed earth in shade, where a sentence will be placed over the picture. Keep the bottom-right corner empty.
 
