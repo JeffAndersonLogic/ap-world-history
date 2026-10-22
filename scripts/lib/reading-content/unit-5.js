@@ -1016,7 +1016,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Samuel Slater learned the cotton trade as an apprentice at Jedediah Strutt's mill in Derbyshire. Strutt was Arkwright's partner, so Slater knew Arkwright's machines from the inside. In 1789 he sailed for the United States without telling anyone what he knew. In Pawtucket, Rhode Island, working with American merchants, he built water-powered spinning machines from memory. The mill that still stands there was begun in 1793 and enlarged several times afterward."
+            "html": "Samuel Slater learned the cotton trade as an apprentice at Jedediah Strutt's mill in Derbyshire. Strutt had been Arkwright's partner, and his mills ran Arkwright's machines, so Slater knew them from the inside. In 1789 he sailed for the United States without telling anyone what he knew. In Pawtucket, Rhode Island, working with American merchants, he built water-powered spinning machines from memory. The mill that still stands there was begun in 1793 and enlarged several times afterward."
           },
           {
             "type": "p",
@@ -1035,7 +1035,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Britain dropped the ban on skilled workers leaving in 1824 and lifted the ban on sending textile machines abroad in 1843. Machines and money carried the methods too. The first railway in the German states, from Nuremberg to Fürth in 1835, ran with a locomotive built in England, a machine the textile ban did not cover."
+            "html": "Britain dropped the ban on skilled workers leaving in 1824 and lifted the ban on sending textile machines abroad in 1843. Machines and money carried the methods too. The first steam railway in the German states, from Nuremberg to Fürth in 1835, ran with a locomotive built in England, a machine the textile ban did not cover."
           },
           {
             "type": "p",
@@ -1124,7 +1124,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "So, how did the ways and places goods were made change between 1750 and 1900? The way goods were made changed from hand work to steam-powered factories, and the places changed with it: factory methods spread from Britain to other parts of Europe, the United States, Russia, and Japan, carried by people, machines, and money, and those regions' share of the world's goods rose. What continued was production in India, China, and the Middle East, much of it by hand, which kept making goods, but a shrinking share of them."
+            "html": "So, how did the ways and places goods were made change between 1750 and 1900? The way goods were made changed from hand work to steam-powered factories, and the places changed with it: factory methods spread from Britain to other parts of Europe, the United States, Russia, and Japan, carried by people, machines, and money, and the share of the world's goods made in Europe and the United States rose. What continued was production in India, China, and the Middle East, much of it by hand, which kept making goods, but a shrinking share of them."
           },
           {
             "type": "p",
@@ -1133,7 +1133,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Continuity and Change",
-          "raw": "<p><strong>Three myths to drop.</strong> \"Asia stopped making things\": it kept making them, but its share fell. \"Industry spread everywhere\": it spread to a few regions, mostly ones with coal. \"India fell behind only because British machines were better\": the machines mattered, but so did the trade rules made by the people in power, and historians still argue how much.</p>"
+          "raw": "<p><strong>Three myths to drop.</strong> \"Asia stopped making things\": it kept making them, but its share fell. \"Industry spread everywhere\": it spread to a few regions, mostly ones with coal or rivers strong enough to turn water wheels. \"India fell behind only because British machines were better\": the machines mattered, but so did the trade rules made by the people in power, and historians still argue how much.</p>"
         }
       }
     ],

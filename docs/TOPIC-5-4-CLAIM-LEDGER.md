@@ -171,3 +171,15 @@ Two fresh reviewers, from a fresh packet after the pass 1 fixes.
 8. BeInTheRoom offered "The visitors themselves" as a part of the hall that shows a change in how goods are made. **Fixed:** the question asks what best shows the change "in how and where"; the option is "The machines the visitors are studying."
 9. "Mostly by hand" for India and China through 1900, though India built steam mills from the 1850s. **Fixed:** "much of it by hand"; the reading, lecture card 3 and slide 14's notes name Bombay's first mill (founded 1854, spinning from 1856).
 10. No Canvas text. **Rejected:** the `OVERVIEWS` entry is written; the event and assignment are generated only when the topic has class dates, as for 5.1 to 5.3.
+
+**History (10 findings; all fixed; two had already been fixed from the page-truth pass, since this reviewer read the packet from before those fixes).**
+1. "Those regions' share of the world's goods rose" (the reading's closing answer, slide 18) included Japan, whose share in Bairoch's table fell from 3.8 percent (1750) to 2.4 (1900). **Fixed:** the share that rose is "made in Europe and the United States," in the reading, slide 18, the spine on the lesson and the deck, the end target, and the story draft. (Japan's figures are the reviewer's reading of Kennedy, Table 6; the course prints no Japanese share.)
+2. "After 1843 the methods spread faster, by machines and money" against 1820s Lowell and the 1835 locomotive. **Fixed** (page-truth finding 3); the deep reading's comparison line and slide 8's notes now say money and some machines carried the methods even while the bans held.
+3. The map's "in order" and slide 7's notes ("the order the methods arrived") against Brügelmann's Cromford mill at Ratingen (1783 to 1784). **Fixed:** "the cases this lesson uses, in date order"; slide 7's notes name Ratingen as earlier.
+4. Egypt shaded with no continuity evidence. **Fixed** (page-truth finding 1).
+5. "The first railway in the German states" (horse lines ran earlier). **Fixed:** "the first steam railway."
+6. "Strutt was Arkwright's partner" (until 1781; Slater began in 1782). **Fixed:** "had been Arkwright's partner, and his mills ran Arkwright's machines."
+7. "Mostly ones with coal" against the water-powered US cases. **Fixed:** "near coal or strong rivers" on the myth slide, the reading and the deep reading.
+8. Slide 9 implied Russia "started with" ironworks (Knoop's cotton mills from the 1840s). **Fixed:** the rows read "This case" and "What it made."
+9. Slide 14's notes quoted the museum as "Britain's oldest warship still afloat"; its ship page says "Britain's oldest floating warship." **Fixed** in the notes; the student surfaces paraphrase without quotation marks.
+10. The Primary Source cited "questions 3877 to 3879"; Dutt's footnote is "3877 and 3879." **Fixed.**

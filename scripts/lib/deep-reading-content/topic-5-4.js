@@ -7,7 +7,7 @@
  * Why this exists. The CED gives 5.4 one learning objective, how different
  * modes and locations of production developed and changed over time, two Key
  * Concepts (KC-5.1.I.D, the spread of the new methods to other parts of Europe,
- * the United States, Russia and Japan; KC-5.1.II.B, the factory regions' share
+ * the United States, Russia and Japan; KC-5.1.II.B, Europe's and the United States' share
  * of world manufacturing rising while the Middle East's and Asia's fell as they
  * continued to produce) and a reasoning process of Continuity and Change. The
  * First & 10 tells the story in one pass. What it has no room for is how the
@@ -119,7 +119,7 @@ module.exports = {
         {
           heading: 'Samuel Slater',
           blocks: [
-            { p: `Samuel Slater learned the cotton trade as an apprentice at Jedediah Strutt's mill at Belper, in Derbyshire. Strutt was Arkwright's partner, so Slater learned Arkwright's machines from the inside. In <span class="num">1789</span> he sailed for the United States without telling anyone what he knew. At Pawtucket, Rhode Island, working with American merchants, he built water-powered spinning machines from memory. The mill that still stands there was begun in <span class="num">1793</span> and enlarged several times afterward.` },
+            { p: `Samuel Slater learned the cotton trade as an apprentice at Jedediah Strutt's mill at Belper, in Derbyshire. Strutt had been Arkwright's partner, and his mills ran Arkwright's machines, so Slater learned them from the inside. In <span class="num">1789</span> he sailed for the United States without telling anyone what he knew. At Pawtucket, Rhode Island, working with American merchants, he built water-powered spinning machines from memory. The mill that still stands there was begun in <span class="num">1793</span> and enlarged several times afterward.` },
             { note: {
               kind: 'howknow',
               label: 'How we know: the mill is still there',
@@ -137,7 +137,7 @@ module.exports = {
       useThis: {
         tool: `Name the carrier. <em>Say who or what carried the methods to a new place.</em>`,
         limit: `One person is a case, not the whole spread: Slater shows how the methods could travel, not how fast they spread everywhere.`,
-        comparison: `Against section 03: first the methods traveled in people's heads; later machines and money carried them too.`
+        comparison: `Against section 03: here the methods traveled in people's heads, past the bans; machines and money carried them too, more and more after the bans ended.`
       },
       terms: [
         ['Skilled workers', 'People trained to build, run or mend machines or to do a craft well.'],
@@ -158,7 +158,7 @@ module.exports = {
         {
           heading: 'Other parts of Europe',
           blocks: [
-            { p: `The first railway in the German states, from Nuremberg to Fürth, opened in <span class="num">1835</span> with a locomotive built in England. On the continent, factories grew where coal lay, as they had in Britain: around Liège in Belgium, in the Ruhr valley of the German states, and in northern France.` }
+            { p: `The first steam railway in the German states, from Nuremberg to Fürth, opened in <span class="num">1835</span> with a locomotive built in England. On the continent, factories grew where coal lay, as they had in Britain: around Liège in Belgium, in the Ruhr valley of the German states, and in northern France.` }
           ]
         },
         {
@@ -174,7 +174,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `Do not write that industry "spread everywhere." The College Board names four places it spread to: other parts of Europe, the United States, Russia and Japan. Within them, it clustered where coal and iron were found. How the Russian and Japanese governments pushed industry on purpose is Topic 5.6.`
+              html: `Do not write that industry "spread everywhere." The College Board names four places it spread to: other parts of Europe, the United States, Russia and Japan. Within them, it clustered near coal, or by rivers strong enough to turn water wheels. How the Russian and Japanese governments pushed industry on purpose is Topic 5.6.`
             } }
           ]
         }

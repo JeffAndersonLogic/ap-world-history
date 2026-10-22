@@ -208,7 +208,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "right": "Mostly after 1870"
           },
           {
-            "label": "A case",
+            "label": "This case",
             "left": "Hughes's ironworks at Yuzovka, 1870s",
             "right": "The Osaka Spinning Company, 1883"
           },
@@ -218,9 +218,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "right": "British machines, driven by steam"
           },
           {
-            "label": "Started with",
-            "left": "Ironworks, on the Donets coal",
-            "right": "Cotton spinning, by steam"
+            "label": "What it made",
+            "left": "Iron, on the Donets coal",
+            "right": "Cotton thread, by steam"
           }
         ]
       }
@@ -257,7 +257,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "name": "Nuremberg",
             "tool": "An English engine",
-            "result": "the first German railway, 1835."
+            "result": "the first German steam railway, 1835."
           },
           {
             "name": "Lowell",
@@ -300,7 +300,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "cases": [
           {
             "name": "Europe, US",
-            "note": "Factory regions",
+            "note": "Steam mills",
             "points": [
               {
                 "year": 1750,
@@ -531,7 +531,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "myth": "Industry spread everywhere.",
-            "evidence": "It spread to a few regions, mostly ones with coal: other parts of Europe, the United States, Russia and Japan.",
+            "evidence": "It spread to a few regions, mostly near coal or strong rivers: other parts of Europe, the United States, Russia and Japan.",
             "source": "KC-5.1.I.D"
           },
           {
@@ -579,7 +579,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Say it in one sentence.",
       "kc": "Unit 5: Learning Objective E",
       "template": {
-        "frame": "Factory methods spread from Britain to other parts of Europe, the US, ___ and ___, carried by people, ___ and money. Their ___ of the world's goods rose. India and China kept ___ goods, but their share ___.",
+        "frame": "Factory methods spread from Britain to other parts of Europe, the US, ___ and ___, carried by people, ___ and money. Europe's and the US's ___ of the world's goods rose. India and China kept ___ goods, but their share ___.",
         "words": [
           "Russia",
           "Japan",

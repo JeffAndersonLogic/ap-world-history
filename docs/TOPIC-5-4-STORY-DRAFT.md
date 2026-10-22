@@ -45,7 +45,7 @@ Key Concepts, in the CED's order:
 - **Suggested skill:** 5.A Making Connections, "Identify patterns among or connections between
   historical developments and processes." Students find the pattern in how the methods spread (each
   new industrial region borrowed British machines and skilled people and added its own coal, water and
-  money) and the pattern in the shares (up for the factory regions, down for the hand-making regions).
+  money) and the pattern in the shares (up for Europe and the United States, down for the hand-making regions).
 - **Thematic focus:** Technology and Innovation (TEC).
 - **Illustrative examples** (p. 103, beside KC-5.1.II.B, under "Decline of Middle Eastern and Asian
   share in global manufacturing"), **optional**: shipbuilding in India and Southeast Asia; iron works
@@ -96,7 +96,7 @@ First & 10 (what students were last taught).
    First & 10 sections 1 and 4, Checkpoint 2, the Skill Builder and the map key all answer "why
    colonialism blocked industrialization": "deliberate policy choices, not natural disadvantages";
    "Sovereignty explains industrialization; its absence explains deindustrialization." The CED's
-   KC-5.1.II.B says something narrower and different: the factory regions' share rose and Asia's and
+   KC-5.1.II.B says something narrower and different: Europe's and the United States' share rose and Asia's and
    the Middle East's share fell *while they continued to produce*. The deep audit already warned
    against "reducing every non-industrialization outcome to a single deliberate-policy cause." A
    single cause stated as fact is the defect class every Unit 5 build has removed. Colonial trade
@@ -243,7 +243,7 @@ scale nobody had seen. How did the machines themselves change the world? That is
 ## 4. The spine
 
 **Factory methods spread from Britain to other parts of Europe, the United States, Russia and Japan,
-carried by people, machines and money. The factory regions made a fast-growing share of the world's
+carried by people, machines and money. Europe and the United States made a fast-growing share of the world's
 goods. India, China and the Middle East kept making goods, much of it by hand, but a shrinking share.**
 
 The story map's spine ("Industry spread from northwestern Europe to other parts of Europe, the United
@@ -270,7 +270,7 @@ Shorter for the wall: **The factory traveled. The share moved. The old makers ke
 | Nuremberg to Fürth railway, 1835, with an English locomotive | KC-5.1.I.D (other parts of Europe) | Then with **machines**. |
 | Lowell mills from the 1820s | KC-5.1.I.D (the United States) | Then with **money**: merchants' capital. |
 | Hughes at Yuzovka, 1870s; Osaka Spinning Company, 1883 | KC-5.1.I.D (Russia, Japan) | The last two destinations, later, with **British machines and engineers**. |
-| Bairoch's estimates, 1860 and 1900: Britain about a fifth by 1860; Europe and the US over four-fifths by 1900; China about 6 percent, India under 2 | KC-5.1.II.B (shares up, shares down) | The **change**: the share moved to the factory regions. |
+| Bairoch's estimates, 1860 and 1900: Britain about a fifth by 1860; Europe and the US over four-fifths by 1900; China about 6 percent, India under 2 | KC-5.1.II.B (shares up, shares down) | The **change**: the share moved to Europe and the United States. |
 | Indian hand weaving shrank but survived (about a million people in one province, 1908); handlooms steady in Aleppo and Damascus, 1860 to 1914 | KC-5.1.II.B (continued to produce) | The **continuity**: people kept making cloth. |
 | The Bombay Dockyard; HMS Trincomalee, 1817 | KC-5.1.II.B (shipbuilding in India) | Asian makers built **some of the best** ships of their kind. |
 | India's cotton cloth trade turns around, 1815 to 1832 (net importer from about 1830); raw cotton out | KC-5.1.II.B (textiles in India) | **How** the share fell: cheaper machine-made goods, sold in India itself. |
@@ -315,7 +315,7 @@ A continuity-and-change picture a student can redraw from memory:
 
 **The turning point:** steam-powered factories. **What changed:** *how* goods were made (from hands to
 machines) and *where* (Britain, then other parts of Europe, the United States, Russia and Japan), and
-the factory regions' share of the world's goods rose. **What continued:** people in India, China, Egypt
+Europe's and the United States' share of the world's goods rose. **What continued:** people in India, China, Egypt
 and the Ottoman lands kept making cloth, iron and ships, much of it by hand, but their share fell.
 
 Result line: **The factory traveled. The share moved. The old makers kept making.**
@@ -328,7 +328,7 @@ declined"), so the retelling holds both, around one turning point.
 ## 8. Owns / bridge-only (from the unit story map)
 
 - **5.4 owns:** the spread of industrial methods from northwestern Europe to other parts of Europe,
-  the United States, Russia and Japan (KC-5.1.I.D); the rise in the factory regions' share of the
+  the United States, Russia and Japan (KC-5.1.I.D); the rise in Europe's and the United States' share of the
   world's manufacturing and the fall in the Middle East's and Asia's while they kept producing
   (KC-5.1.II.B), with the CED's examples.
 - **Bridge only:** how states sponsored industry (5.6, KC-5.1.V.C, KC-5.2.II.A): Russia's and Japan's
@@ -392,7 +392,7 @@ report.
    spread of the factory. Replaces the comparison of state-led and market-led paths (5.6's).
 3. **Learning targets:** two, one per Key Concept. Target 1, how factory methods spread from
    northwestern Europe to other parts of Europe, the United States, Russia and Japan, and what
-   carried them (KC-5.1.I.D); Target 2, how the factory regions' share of the world's manufacturing
+   carried them (KC-5.1.I.D); Target 2, how Europe's and the United States' share of the world's manufacturing
    rose while the Middle East's and Asia's fell as they kept producing (KC-5.1.II.B). Checkpoint 1
    assesses Target 1; Checkpoint 2 assesses Target 2 and declares Continuity and Change.
 4. **Primary Source:** one real, verified source on India's cloth trade, quoted exactly, with three

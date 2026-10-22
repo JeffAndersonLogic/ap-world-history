@@ -5,7 +5,7 @@
  * patterns among or connections between historical developments and
  * processes). Learning objective E: explain how different modes and locations
  * of production have developed and changed over time. Key Concepts:
- * KC-5.1.II.B (the factory regions' share rose; the Middle East's and Asia's
+ * KC-5.1.II.B (Europe's and the United States' share rose; the Middle East's and Asia's
  * fell while they continued to produce), KC-5.1.I.D (the methods spread to
  * other parts of Europe, the United States, Russia and Japan). Illustrative
  * examples (optional): shipbuilding in India and Southeast Asia, iron works in
@@ -14,8 +14,8 @@
  * reviewer loop (Jeff's standing rule of 2026-10-12). First & 10 "Who Made the
  * World's Goods?" is written from the same story, and this deck retells it.
  * Spine: factory methods spread from Britain to other parts of Europe, the
- * United States, Russia and Japan, carried by people, machines and money. The
- * factory regions made a fast-growing share of the world's goods. India, China
+ * United States, Russia and Japan, carried by people, machines and money.
+ * Europe and the United States made a fast-growing share of the world's goods. India, China
  * and the Middle East kept making goods, much of it by hand, but a shrinking share.
  * Wall version: The factory traveled. The share moved. The old makers kept
  * making.
@@ -31,17 +31,17 @@ window.BEHISTORICAL_TEACHING = {
     topic: '5.4',
     minutes: 90,
     title: 'Industrialization Spreads in the Period from 1750 to 1900',
-    subtitle: 'Factory methods spread from Britain to other parts of Europe, the United States, Russia and Japan, carried by people, machines and money. The factory regions made a fast-growing share of the world\'s goods. India, China and the Middle East kept making goods, much of it by hand, but a shrinking share.',
+    subtitle: 'Factory methods spread from Britain to other parts of Europe, the United States, Russia and Japan, carried by people, machines and money. Europe and the United States made a fast-growing share of the world\'s goods. India, China and the Middle East kept making goods, much of it by hand, but a shrinking share.',
     essentialQuestion: 'Where did the new way of making things go, and what happened to the places that made the world\'s goods before?',
     apFocus: 'Continuity and Change, with Making Connections 5.A',
-    endTarget: 'Students can explain how the modes and locations of production changed from 1750 to 1900: hand production gave way to steam-powered factories, and factory methods spread from Britain to other parts of Europe, the United States, Russia and Japan, carried by skilled people, machines and money, where coal and water were waiting; the factory regions\' share of the world\'s manufacturing rose; and producers in India, China, Egypt and the Middle East kept making cloth, ships and other goods, much of it by hand, while their share fell, with Indian textiles and the Bombay Dockyard as the cases.'
+    endTarget: 'Students can explain how the modes and locations of production changed from 1750 to 1900: hand production gave way to steam-powered factories, and factory methods spread from Britain to other parts of Europe, the United States, Russia and Japan, carried by skilled people, machines and money, where coal and water were waiting; Europe\'s and the United States\' share of the world\'s manufacturing rose; and producers in India, China, Egypt and the Middle East kept making cloth, ships and other goods, much of it by hand, while their share fell, with Indian textiles and the Bombay Dockyard as the cases.'
   },
 
   priorities: {
     must: [
       'Answer the objective as written: modes AND locations. Every "where" slide also says "how": by hand, or by steam-powered machines.',
       'Teach all four destinations of KC-5.1.I.D: other parts of Europe, the United States, Russia and Japan (slide 7), and what carried the methods (slide 8).',
-      'Teach both halves of KC-5.1.II.B: the factory regions\' share rose (slide 13), and the Middle East and Asia kept producing while their share fell (slide 14).',
+      'Teach both halves of KC-5.1.II.B: Europe\'s and the United States\' share rose (slide 13), and the Middle East and Asia kept producing while their share fell (slide 14).',
       'Say "share," and teach what it means: a share can fall while output holds (the pizza, slide 13 notes).',
       'Model 5.A: find the pattern across cases (slides 10 and 11).'
     ],
@@ -64,7 +64,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'first10', label: 'First & 10', range: '5-17', minutes: 12, teacher: 'Module 02: students read "Who Made the World\'s Goods?" in class.', students: 'List the changes and the continuity.', slide: 4 },
     { id: 'before', label: 'The World in 1750', range: '17-19', minutes: 2, teacher: 'Who made the world\'s goods.', students: 'Say where most goods were made.', slide: 5 },
     { id: 'secret', label: 'Keeping the Secret', range: '19-21', minutes: 2, teacher: 'The laws, and Slater.', students: 'Say why the laws failed.', slide: 6 },
-    { id: 'spread', label: 'Where It Went', range: '21-24', minutes: 3, teacher: 'The four destinations, in order.', students: 'Name the stops.', slide: 7 },
+    { id: 'spread', label: 'Where It Went', range: '21-24', minutes: 3, teacher: 'The four destinations, one case each, in date order.', students: 'Name the stops.', slide: 7 },
     { id: 'carriers', label: 'What Carried It', range: '24-26', minutes: 2, teacher: 'People, machines, money, on coal.', students: 'Match each to a case.', slide: 8 },
     { id: 'latecomers', label: 'Russia and Japan', range: '26-28', minutes: 2, teacher: 'The latecomers, with British machines.', students: 'Say what the two share.', slide: 9 },
     { id: 'model', label: 'Find the Pattern', range: '28-30', minutes: 2, teacher: 'Model 5.A on an everyday case.', students: 'Say the pattern aloud.', slide: 10 },
@@ -215,7 +215,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'KC-5.1.I.D: the methods "spread." This slide is how the first spread happened: in people\'s heads.',
           'The laws: the Artificers Going Abroad Act of 21 June 1824 repealed the ban on skilled workers leaving; Gladstone\'s bill of August 1843 removed the restrictions on exporting machinery (Hansard). Some textbooks give 1825 and 1842. David Jeremy (Business History Review) calls the policy "incapable of enforcement": machines and workers both got out.',
-          'Slater: apprenticed to Jedediah Strutt, Arkwright\'s partner at Cromford (5.3), at Belper, Derbyshire (Belper Research). He sailed in September 1789, carrying "the memorized details of everything he had learned" (EBSCO); the story that he went disguised as a farm laborer is legend. Hired by Moses Brown, working with Brown\'s kinsmen Almy and Brown, he had water-powered spinning machines running at Pawtucket, Rhode Island, in December 1790; the Slater Mill building followed in 1793 (National Park Service, Blackstone River Valley).',
+          'Slater: apprenticed to Jedediah Strutt, Arkwright\'s partner at Cromford (5.3) until 1781, at Belper, Derbyshire (Belper Research). He sailed in September 1789, carrying "the memorized details of everything he had learned" (EBSCO); the story that he went disguised as a farm laborer is legend. Hired by Moses Brown, working with Brown\'s kinsmen Almy and Brown, he had water-powered spinning machines running at Pawtucket, Rhode Island, in December 1790; the Slater Mill building followed in 1793 (National Park Service, Blackstone River Valley).',
           'This is the 5.3 factory, Cromford\'s machines, moving to a new country with one man.'
         ],
         ask: 'Why could a law stop a machine but not Slater?',
@@ -240,7 +240,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 3,
         land: [
-          'KC-5.1.I.D names the destinations: "other parts of Europe and the United States, Russia, and Japan." All four are on this slide, in the order the methods arrived.',
+          'KC-5.1.I.D names the destinations: "other parts of Europe and the United States, Russia, and Japan." All four are on this slide, one case each, in date order (not the first arrival: Brügelmann\'s water-powered Cromford mill at Ratingen, in the Rhineland, dates from 1783 to 1784, before Slater\'s).',
           'Belgium: John Cockerill (1790 to 1840), son of the English machine builder William Cockerill; the Seraing works began production on 25 January 1817 and by the mid-1820s were called "the industrial wonder of Europe" (Encyclopedia of Europe, 1789-1914). Machine building came first; the works\' coke blast furnace was begun in 1823 and producing by 1826. Belgium was the first country on the European mainland to industrialize, on the coal of the Sambre-Meuse valley. The mainland\'s first steam passenger railway ran from Brussels to Mechelen on 5 May 1835 (Canon of Flanders).',
           'German states: the Nuremberg to Fürth line opened on 7 December 1835 with the locomotive Adler, built by Robert Stephenson and Company in Newcastle. The Ruhr\'s coal and iron industry grew later in the century. Northern France industrialized around Lille and its coalfields.',
           'Russia: John Hughes, a Welsh engineer; his New Russia Company was registered in London in 1869, he brought a team out in 1870, and the first blast furnace was lit in 1871 (Glamorgan Archives). The settlement became Hughesovka, or Yuzovka, now Donetsk. Russia\'s industrial output grew 8 to 9 percent a year in the 1890s (Journal of Economic History, 2025).',
@@ -268,7 +268,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.1.I.D says the methods spread. This slide is how: three carriers, and the resources that let them take root.',
-          'People first, while the British laws held (to 1824 and 1843); machines and money carried the methods too (the Nuremberg locomotive was never covered by the textile ban). Lowell: Francis Cabot Lowell studied British power looms in 1810 to 1812 and had them rebuilt "from his memory and drawings"; with Boston merchants (the "Boston Associates") he founded the Boston Manufacturing Company at Waltham in 1814. In 1821 the Associates chose the falls of the Merrimack for the mill town of Lowell, and recruited "the daughters of New England Yankee farmers" (National Park Service).',
+          'People carried the methods while the British laws held (to 1824 and 1843); money and some machines carried them too, even then (the Nuremberg locomotive was never covered by the textile ban). Lowell: Francis Cabot Lowell studied British power looms in 1810 to 1812 and had them rebuilt "from his memory and drawings"; with Boston merchants (the "Boston Associates") he founded the Boston Manufacturing Company at Waltham in 1814. In 1821 the Associates chose the falls of the Merrimack for the mill town of Lowell, and recruited "the daughters of New England Yankee farmers" (National Park Service).',
           'This is the deck\'s answer to "it just spread": something has to carry it.'
         ],
         ask: 'Take one away. Could a factory start in a new place without it?',
@@ -285,9 +285,9 @@ window.BEHISTORICAL_TEACHING = {
         right: { name: 'Japan' },
         rows: [
           { label: 'When', left: 'Mostly after 1870; fastest in the 1890s', right: 'Mostly after 1870' },
-          { label: 'A case', left: 'Hughes\'s ironworks at Yuzovka, 1870s', right: 'The Osaka Spinning Company, 1883' },
+          { label: 'This case', left: 'Hughes\'s ironworks at Yuzovka, 1870s', right: 'The Osaka Spinning Company, 1883' },
           { label: 'Carried by', left: 'A Welsh engineer and his British team', right: 'British machines, driven by steam' },
-          { label: 'Started with', left: 'Ironworks, on the Donets coal', right: 'Cotton spinning, by steam' }
+          { label: 'What it made', left: 'Iron, on the Donets coal', right: 'Cotton thread, by steam' }
         ]
       },
       notes: {
@@ -332,7 +332,7 @@ window.BEHISTORICAL_TEACHING = {
         rows: [
           { name: 'Pawtucket', tool: 'Slater\'s memory', result: 'Arkwright\'s machines rebuilt, 1790s.' },
           { name: 'Seraing', tool: 'Cockerill\'s know-how', result: 'works on the Liège coal, 1817.' },
-          { name: 'Nuremberg', tool: 'An English engine', result: 'the first German railway, 1835.' },
+          { name: 'Nuremberg', tool: 'An English engine', result: 'the first German steam railway, 1835.' },
           { name: 'Lowell', tool: 'Boston merchants\' money', result: 'cotton mills on a river, 1820s.' },
           { name: 'Osaka', tool: 'British spinning machines', result: 'run by steam, 1883.' }
         ],
@@ -375,7 +375,7 @@ window.BEHISTORICAL_TEACHING = {
         tick: 50,
         note: 'Bairoch\'s estimates; one scale for all three rows',
         cases: [
-          { name: 'Europe, US', note: 'Factory regions', points: [{ year: 1750, level: 1.07 }, { year: 1800, level: 1.31 }, { year: 1830, level: 1.66 }, { year: 1860, level: 2.75 }, { year: 1880, level: 3.46 }, { year: 1900, level: 3.89 }], events: [{ year: 1750, label: '1750', text: 'about a quarter' }, { year: 1860, label: '1860', text: 'about three-fifths' }, { year: 1900, label: '1900', text: 'over four-fifths' }] },
+          { name: 'Europe, US', note: 'Steam mills', points: [{ year: 1750, level: 1.07 }, { year: 1800, level: 1.31 }, { year: 1830, level: 1.66 }, { year: 1860, level: 2.75 }, { year: 1880, level: 3.46 }, { year: 1900, level: 3.89 }], events: [{ year: 1750, label: '1750', text: 'about a quarter' }, { year: 1860, label: '1860', text: 'about three-fifths' }, { year: 1900, label: '1900', text: 'over four-fifths' }] },
           { name: 'China', note: 'Much by hand', points: [{ year: 1750, level: 1.49 }, { year: 1800, level: 1.51 }, { year: 1830, level: 1.35 }, { year: 1860, level: 0.9 }, { year: 1880, level: 0.57 }, { year: 1900, level: 0.28 }], events: [{ year: 1750, label: '1750', text: 'about a third' }, { year: 1900, label: '1900', text: 'about 6 percent' }] },
           { name: 'India', note: 'Much by hand', points: [{ year: 1750, level: 1.11 }, { year: 1800, level: 0.9 }, { year: 1830, level: 0.8 }, { year: 1860, level: 0.39 }, { year: 1880, level: 0.13 }, { year: 1900, level: 0.08 }], events: [{ year: 1750, label: '1750', text: 'about a quarter' }, { year: 1900, label: '1900', text: 'under 2 percent' }] }
         ]
@@ -412,7 +412,7 @@ window.BEHISTORICAL_TEACHING = {
           'India also built steam-powered cotton mills of its own: the Bombay Spinning and Weaving Company, founded by Cowasji Nanabhoy Davar on 7 July 1854, began production on 7 February 1856, the first mill in Bombay. Much of India\'s cloth was still woven by hand.',
           'Handloom weavers: the economic historian Tirthankar Roy finds that handloom weaving in India "did not succumb": handloom cloth\'s share of India\'s market was roughly stable from the 1890s to the 1930s (Traditional Industry in the Economy of Colonial India). In the United Provinces alone, a 1908 report said "quite a million" people depended on handloom weaving (Rai, International Review of Social History, 2022). There is no reliable all-India headcount for 1900, so do not say "millions." Many weavers used cheaper mill-spun yarn. Hand weaving still shrank: Indrajit Ray (Economic History Review, 2009) estimates Bengal\'s industry lost about 28 percent by the mid-1800s.',
           'The pictures: a gouache of a weaver at his loom, attributed to a painter from Tanjore (Thanjavur), south India, about 1840 (Wellcome Collection, public domain), in the "types and trades" style Indian artists often made for European buyers, so probably a type, not a portrait; and Hugh Owen\'s 1851 photograph of Indian ship models under the INDIA sign at the Great Exhibition (Rijksmuseum, public domain). The models are not the Bombay Dockyard: no period picture of the dockyard could be sourced.',
-          'Ships: the CED\'s example, shipbuilding in India. The Wadia family of Parsi master builders ran the Bombay Dockyard for generations; Jamsetjee Bomanjee Wadia supervised HMS Trincomalee, "one of 14 ships he would build for the Royal navy" (Royal Museums Greenwich). Built of Malabar teak and launched 12 October 1817, it is at Hartlepool, where the National Museum of the Royal Navy calls it "Britain\'s oldest warship still afloat" (not the oldest warship afloat: USS Constitution is older). Rajesh Kochhar (Current Science) counts 334 Wadia vessels from 1736 to 1884, 39 of them for the Royal Navy, and dates the end of teak warship building to iron and steam.',
+          'Ships: the CED\'s example, shipbuilding in India. The Wadia family of Parsi master builders ran the Bombay Dockyard for generations; Jamsetjee Bomanjee Wadia supervised HMS Trincomalee, "one of 14 ships he would build for the Royal navy" (Royal Museums Greenwich). Built of Malabar teak and launched 12 October 1817, it is at Hartlepool, where the National Museum of the Royal Navy calls it "Britain\'s oldest floating warship" (not the oldest warship afloat: USS Constitution is older). Rajesh Kochhar (Current Science) counts 334 Wadia vessels from 1736 to 1884, 39 of them for the Royal Navy, and dates the end of teak warship building to iron and steam.',
           'China: Jacob Eyferth (University of Chicago): "rural hand spinning and hand weaving held out remarkably well in the face of mechanized competition"; imported yarn spread in the late 1800s, so that by about 1900 half the yarn used in China was machine-made, and weavers combined it with homespun. The Treaty of Nanjing (1842) held import taxes to about 5 percent.',
           'The Middle East: Pamuk and Williamson (Economic History Review, 2011): Ottoman producers\' share of their own cloth market fell from about 97 percent in the 1820s to 25 to 35 percent by the 1870s, yet handloom numbers in Aleppo and Damascus "show no trend at all between 1860 and World War I," and crafts such as carpet making thrived.',
           'Egypt: the CED\'s example, textile production in Egypt. By the 1830s Egypt had about 30 state textile factories, most losing money; in 1838 English cotton cloth sold in Egypt for 7.5 piastres a yard against 8.7 for Egypt\'s own (Ahmeti and Rizaj, Journal of European Economic History, 2024). Who built those mills, and why, is Topic 5.6; name it only if asked.',
@@ -457,7 +457,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         rows: [
           { myth: 'Asia stopped making things.', evidence: 'It kept making them: India\'s hand weavers, China\'s farm weavers, Bombay\'s teak warships. Its share fell.', source: 'KC-5.1.II.B' },
-          { myth: 'Industry spread everywhere.', evidence: 'It spread to a few regions, mostly ones with coal: other parts of Europe, the United States, Russia and Japan.', source: 'KC-5.1.I.D' },
+          { myth: 'Industry spread everywhere.', evidence: 'It spread to a few regions, mostly near coal or strong rivers: other parts of Europe, the United States, Russia and Japan.', source: 'KC-5.1.I.D' },
           { myth: 'India fell behind only because British machines were better.', evidence: 'The machines were cheaper, but the rules of those in power mattered too, and historians argue how much.', source: 'KC-5.1.II.B' }
         ]
       },
@@ -497,7 +497,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'synthesis', kind: 'close-retell', eyebrow: 'AP Synthesis',
       kc: 'Unit 5: Learning Objective E', title: 'Say it in one sentence.',
       template: {
-        frame: 'Factory methods spread from Britain to other parts of Europe, the US, ___ and ___, carried by people, ___ and money. Their ___ of the world\'s goods rose. India and China kept ___ goods, but their share ___.',
+        frame: 'Factory methods spread from Britain to other parts of Europe, the US, ___ and ___, carried by people, ___ and money. Europe\'s and the US\'s ___ of the world\'s goods rose. India and China kept ___ goods, but their share ___.',
         words: ['Russia', 'Japan', 'machines', 'share', 'making', 'fell'],
         prompt: 'Fill it in from memory. Then say it again with one example for the change and one for the continuity.'
       },
