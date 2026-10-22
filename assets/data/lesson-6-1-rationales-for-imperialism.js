@@ -75,16 +75,16 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   stableImages: {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kongokonferenz.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Kongokonferenz.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Herbert_Spencer.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Kongokonferenz.jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Kongokonferenz.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World.svg'
+    map:             '../assets/images/commons/blankmap-world-83e1ca.svg',
+    first10:         '../assets/images/commons/punch-rhodes-colossus-8330fa.png',
+    contentDelivery: '../assets/images/commons/kongokonferenz-e96b3e.jpg',
+    beSurreal:       '../assets/images/commons/kongokonferenz-e96b3e.jpg',
+    skill:           '../assets/images/commons/punch-rhodes-colossus-8330fa.png',
+    checkpoint1:     '../assets/images/commons/herbert-spencer-ceac20.jpg',
+    evidence:        '../assets/images/commons/kongokonferenz-e96b3e.jpg',
+    source:          '../assets/images/commons/punch-rhodes-colossus-8330fa.png',
+    beInTheRoom:     '../assets/images/commons/kongokonferenz-e96b3e.jpg',
+    checkpoint2:     '../assets/images/commons/blankmap-world-83e1ca.svg'
   },
 
   map: {
@@ -134,7 +134,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Herbert Spencer",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Herbert_Spencer.jpg",
+          url: "../assets/images/commons/herbert-spencer-ceac20.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Herbert_Spencer.jpg",
           caption: "Herbert Spencer applied evolutionary logic to human societies, arguing stronger civilizations were right to dominate weaker ones (KC-5.2.III)."
         }
@@ -148,7 +148,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "The Rhodes Colossus (Punch, 1892)",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png",
+          url: "../assets/images/commons/punch-rhodes-colossus-8330fa.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Punch_Rhodes_Colossus.png",
           caption: "Cecil Rhodes striding across Africa, national prestige and imperial ambition fused into a single image."
         }
@@ -162,7 +162,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "The Berlin Conference, 1884",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kongokonferenz.jpg",
+          url: "../assets/images/commons/kongokonferenz-e96b3e.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Kongokonferenz.jpg",
           caption: "European powers met in Berlin to partition Africa, the political machinery that missionary and civilizing rhetoric helped justify."
         }
@@ -244,14 +244,14 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "The Rhodes Colossus (Punch, 1892)",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png",
+      url: "../assets/images/commons/punch-rhodes-colossus-8330fa.png",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Punch_Rhodes_Colossus.png",
       caption: "Cecil Rhodes bestrides Africa, imperial ambition rendered as heroic national achievement.",
       prompt: "Which ideology does this image promote most directly, nationalism, the civilizing mission, or racial hierarchy? Defend your reading."
     },
     {
       title: "The Berlin Conference, 1884",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kongokonferenz.jpg",
+      url: "../assets/images/commons/kongokonferenz-e96b3e.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Kongokonferenz.jpg",
       caption: "European powers partition Africa around a conference table, no African representatives present.",
       prompt: "How might the civilizing mission and religious conversion have been used to justify what this image actually shows?"

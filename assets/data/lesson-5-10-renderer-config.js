@@ -60,14 +60,14 @@
   lesson.images = [
     {
       title: 'Powerloom weaving, 1835',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg',
+      url: '../assets/images/commons/powerloom-weaving-in-1835-f81451.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Powerloom_weaving_in_1835.jpg',
       caption: 'Engraving of mechanized weaving under one roof, published in 1835. The change side of this topic, drawn at the time.',
       prompt: 'NOTICE the machinery and the scale. INFER what has changed about where cloth is made and by whom. What had NOT changed for most people in the world in 1835?'
     },
     {
       title: '“A Court for King Cholera”',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png',
+      url: '../assets/images/commons/punch-a-court-for-king-cholera-24597e.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Punch-A_Court_for_King_Cholera.png',
       caption: 'Punch cartoon, 1852, on sanitation and slum housing in an industrial city.',
       prompt: 'NOTICE what the industrial city has and has not built for the people living in it. INFER whether this is evidence of change, of continuity in how the poor were housed, or of both.'

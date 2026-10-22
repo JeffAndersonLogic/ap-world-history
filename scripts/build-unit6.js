@@ -68,7 +68,10 @@ const SUBMIT_NOTE = 'Organize your thinking here, submit your final work in Canv
 // filename breaks it; validate.js fails the push over exactly this. Every
 // other Commons filename in this file has none, so this is a no-op for them.
 const escapeParens = name => name.replace(/\(/g, '%28').replace(/\)/g, '%29');
-const COMMONS = name => `https://commons.wikimedia.org/wiki/Special:FilePath/${escapeParens(name)}`;
+// Pictures are served from repo-local copies (scripts/mirror-commons-images.js);
+// the Commons file page stays the credit link.
+const { commonsCopy } = require('./mirror-commons-images');
+const COMMONS = name => commonsCopy(name);
 const COMMONS_PAGE = name => `https://commons.wikimedia.org/wiki/File:${escapeParens(name)}`;
 const picture = (name, title, caption, prompt) => ({ title, url: COMMONS(name), sourceUrl: COMMONS_PAGE(name), caption, prompt });
 const localMap = (file, title, caption, prompt) => ({ title, url: `../assets/images/instructional-maps/${file}`, sourceUrl: `../assets/images/instructional-maps/${file}`, caption, prompt });
@@ -644,7 +647,7 @@ function jsonAssignmentValue(value) {
 //   onEvidence  which Evidence Lab item the photograph actually depicts (0 = none)
 // Any slot the photograph does not belong in renders the generated per-slot
 // artwork for that topic, which is always on-topic and can never 404.
-const commons = (file) => `https://commons.wikimedia.org/wiki/Special:FilePath/${escapeParens(file)}`;
+const commons = (file) => commonsCopy(file);
 const commonsSource = (file) => `https://commons.wikimedia.org/wiki/File:${escapeParens(file)}`;
 const instructionalMap = (id) => `../assets/images/instructional-maps/topic-${id.replace('.', '-')}.svg`;
 const moduleArt = (id, slot) => `../assets/images/module-art/unit-6/topic-${id.replace('.', '-')}/${slot}.svg`;

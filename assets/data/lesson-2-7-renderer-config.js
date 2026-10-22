@@ -27,14 +27,14 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+    map: '../assets/images/commons/silk-route-6f0173.jpg',
     first10: '../assets/images/module-art/unit-2/topic-2-7/first10.svg',
     contentDelivery: '../assets/images/module-art/unit-2/topic-2-7/contentdelivery.svg',
     beSurreal: '../assets/images/module-art/unit-2/topic-2-7/besurreal.svg',
     skill: '../assets/images/module-art/unit-2/topic-2-7/skill.svg',
     checkpoint1: '../assets/images/module-art/unit-2/topic-2-7/checkpoint1.svg',
     evidence: '../assets/images/module-art/unit-2/topic-2-7/evidence.svg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
+    source: '../assets/images/commons/tabularogeriana-637cf9.jpg',
     beInTheRoom: '../assets/images/module-art/unit-2/topic-2-7/beintheroom.svg',
     checkpoint2: '../assets/images/module-art/unit-2/topic-2-7/checkpoint2.svg'
   };
@@ -99,9 +99,9 @@
   };
 
   lesson.images=[
-    {title:'Silk Roads — Overland Route Map',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Silk_route.jpg',caption:'Silk Roads / geography. A modern map on a satellite image. The red lines are the overland Silk Roads. The blue lines are sea routes.',prompt:'NOTICE where the red overland routes split, bend, and squeeze together. What deserts, mountains, or long distances are they going around or across? What does that suggest about how geography shaped travel on the Silk Roads?'},
+    {title:'Silk Roads — Overland Route Map',url:'../assets/images/commons/silk-route-6f0173.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Silk_route.jpg',caption:'Silk Roads / geography. A modern map on a satellite image. The red lines are the overland Silk Roads. The blue lines are sea routes.',prompt:'NOTICE where the red overland routes split, bend, and squeeze together. What deserts, mountains, or long distances are they going around or across? What does that suggest about how geography shaped travel on the Silk Roads?'},
     {title:'Indian Ocean — Monsoon Trade Map',url:'../assets/images/maps/foundations-4/indian-ocean-monsoon-trade.jpg',sourceUrl:'../assets/images/maps/foundations-4/indian-ocean-monsoon-trade.jpg',caption:'Indian Ocean / geography. A modern map shows sea trade routes and the monsoon winds, which blow one way from April to September and the other way from November to February.',prompt:'NOTICE the two sets of wind arrows and the months on the key. How would winds that switch direction by season shape when and where ships could sail? Compare with the geography of another network.'},
     {title:'Trans-Saharan — Desert Route Map',url:'../assets/images/instructional-maps/topic-2-4.svg',sourceUrl:'../assets/images/instructional-maps/topic-2-4.svg',caption:'Trans-Saharan / geography. A modern map shows the Sahara crossing by camel caravan, gold-producing Mali in the savanna to the south, and salt sources in North Africa.',prompt:'NOTICE where the gold is, where the salt is, and what lies between them. What does that suggest about why the routes existed and what made them hard? Compare with the geography of another network.'},
-    {title:'Trans-Saharan — Mansa Musa, Catalan Atlas',url:'https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',caption:'Trans-Saharan / beyond geography. The 1375 atlas depicts Mali\'s ruler with gold and a camel-mounted traveler.',prompt:'Use this card only if the trans-Saharan network is your third network. NOTICE the ruler and the gold. What does it suggest mattered besides geography, and how could that limit or change your claim?'}
+    {title:'Trans-Saharan — Mansa Musa, Catalan Atlas',url:'../assets/images/commons/catalan-atlas-bnf-sheet-6-mansa-musa-ec09cc.jpg',sourceUrl:'https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',caption:'Trans-Saharan / beyond geography. The 1375 atlas depicts Mali\'s ruler with gold and a camel-mounted traveler.',prompt:'Use this card only if the trans-Saharan network is your third network. NOTICE the ruler and the gold. What does it suggest mattered besides geography, and how could that limit or change your claim?'}
   ];
 })();

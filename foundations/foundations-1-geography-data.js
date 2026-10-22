@@ -4,7 +4,7 @@ window.FOUNDATION_TOPIC = {
   code: 'FOUNDATIONS 1',
   title: 'Geography Shapes Civilization',
   subtitle: 'How did geography drive the shift from hunter-gatherer bands to the first civilizations?',
-  heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_Map_Blank_-_with_blue_sea.svg',
+  heroImage: '../assets/images/commons/world-map-blank-with-blue-sea-b28437.svg',
 
   commandCopy: 'Geography is the first layer of the AP World operating system. Before students can explain any state, empire, or trade network, they need to understand the single event that made all of them possible: the Neolithic Agricultural Revolution, the shift from hunting and gathering to farming. This lesson builds the habit of treating geography as the cause of that shift. Where geography offered fertile soil, water, and domesticable species, foraging gave way to farming; farming produced surplus; and surplus produced civilization. Day 1 is about seeing that chain and treating geography as a causal argument, not a backdrop.',
 
@@ -115,14 +115,14 @@ window.FOUNDATION_TOPIC = {
     items: [
       {
         title: 'The Nile River from Orbit',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nile_River_and_delta_from_orbit.jpg',
+        url: '../assets/images/commons/nile-river-and-delta-from-orbit-593f82.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Nile_River_and_delta_from_orbit.jpg',
         caption: 'The Nile cuts through the Sahara Desert as a narrow ribbon of green. Its predictable annual flood laid down fertile soil and watered the fields, making it one of the first places on earth where foragers became farmers, and farmers became a civilization.',
         prompt: 'What does this image reveal about why agriculture and civilization began along the Nile rather than in the surrounding desert?'
       },
       {
         title: 'The Eurasian Steppe',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mongolian_steppe.jpg',
+        url: '../assets/images/commons/mongolian-steppe-592f88.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mongolian_steppe.jpg',
         caption: 'The Mongolian steppe, part of the 8,000-kilometer grassland corridor connecting Eastern Europe to Manchuria. Too dry and open for reliable farming, this terrain pushed the people who lived here toward pastoralism: herding domesticated animals across seasonal ranges rather than settling into fields.',
         prompt: 'How does this landscape help explain why the people of the steppe became mobile herders instead of settled farmers, the road not taken toward river-valley civilization?'
@@ -220,7 +220,7 @@ skill: 'Causation and contextualization',
       ],
       image: {
         title: 'Machu Picchu, Peru',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Machu_Picchu%2C_Peru.jpg',
+        url: '../assets/images/commons/machu-picchu-peru-49f35d.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Machu_Picchu,_Peru.jpg',
         caption: 'Whether in the river valleys of Afro-Eurasia or the Andes, a food surplus is what freed people from farming to build cities, temples, and states, like Inca Machu Picchu.'
       }
@@ -238,7 +238,7 @@ skill: 'Causation and contextualization',
       ],
       image: {
         title: 'The Eurasian Steppe',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mongolian_steppe.jpg',
+        url: '../assets/images/commons/mongolian-steppe-592f88.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mongolian_steppe.jpg',
         caption: 'Grassland too dry to farm pushed its people toward herding rather than settled agriculture, a different response to the same Neolithic Revolution.'
       }

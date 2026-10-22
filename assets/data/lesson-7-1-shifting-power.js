@@ -111,7 +111,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Heimler's History — AP World Topic 7.1",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+7.1+Shifting+Power+After+1900",
-        previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png",
+        previewImage: "../assets/images/commons/world-1898-empires-colonies-territory-8ea39f.png",
         prompt: "Watch for the internal and external factors behind the Ottoman, Russian, and Qing collapses, and for how the Mexican Revolution challenged the existing order."
       }
     ],
@@ -126,7 +126,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Empires and colonies of the world, 1898",
           caption: "A world map of empires and colonies on the eve of the 20th century, Western dominance of the global political order at its height.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png",
+          url: "../assets/images/commons/world-1898-empires-colonies-territory-8ea39f.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1898_empires_colonies_territory.png"
         }
       },
@@ -141,7 +141,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Mustafa Kemal Atatürk",
           caption: "Atatürk, founder and first president of the Republic of Turkey (1923), the new state that replaced the Ottoman Empire.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kemal_Atat%C3%BCrk_portrait.jpg",
+          url: "../assets/images/commons/kemal-ataturk-portrait-d0bfe1.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Kemal_Atat%C3%BCrk_portrait.jpg"
         }
       },
@@ -156,7 +156,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Demonstrators on Nevsky Prospekt, Petrograd, 1917",
           caption: "Street demonstrations in revolutionary Petrograd, 1917, the year political crisis brought down the Romanovs and brought the Bolsheviks to power.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/19170704_Riot_on_Nevsky_prosp_Petrograd.jpg",
+          url: "../assets/images/commons/19170704-riot-on-nevsky-prosp-petrograd-12addc.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:19170704_Riot_on_Nevsky_prosp_Petrograd.jpg"
         }
       },
@@ -171,7 +171,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "The Boxer Rebellion",
           caption: "The Boxer Rebellion (1899–1901), internal upheaval and external intervention combining to weaken the Qing state in its final decade.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Boxer_Rebellion.jpg",
+          url: "../assets/images/commons/boxer-rebellion-3e23f3.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Boxer_Rebellion.jpg"
         }
       },
@@ -186,7 +186,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Emiliano Zapata, 1914",
           caption: "Emiliano Zapata, leader of the agrarian revolution in southern Mexico, 'the land belongs to those who work it.'",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Emiliano_Zapata,_1914.jpg",
+          url: "../assets/images/commons/emiliano-zapata-1914-1e927e.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Emiliano_Zapata,_1914.jpg"
         }
       },
@@ -200,7 +200,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "The imperial world order, 1898",
           caption: "The same map, read differently: by 1923 the Ottoman, Russian, and Qing empires on it were gone, replaced by new states.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png",
+          url: "../assets/images/commons/world-1898-empires-colonies-territory-8ea39f.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1898_empires_colonies_territory.png"
         }
       }
@@ -209,7 +209,7 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Map: The Imperial World Order, c. 1900",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png",
+    url: "../assets/images/commons/world-1898-empires-colonies-territory-8ea39f.png",
     sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1898_empires_colonies_territory.png",
     caption: "Empires and colonies of the world at the close of the 19th century, the Western-dominated order that began to crack after 1900.",
     intro: "Use the map to see the world the 20th century inherited: Western maritime empires dominating the globe, with the older land-based Ottoman, Russian, and Qing empires stretched across Eurasia between them.",
@@ -236,28 +236,28 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "Empires and colonies of the world, 1898",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png",
+      url: "../assets/images/commons/world-1898-empires-colonies-territory-8ea39f.png",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1898_empires_colonies_territory.png",
       caption: "The Western-dominated imperial order at the start of the 20th century.",
       prompt: "What does this map reveal about who held power in the global political order of 1900, and which empires were most exposed to pressure?"
     },
     {
       title: "The Boxer Rebellion",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Boxer_Rebellion.jpg",
+      url: "../assets/images/commons/boxer-rebellion-3e23f3.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Boxer_Rebellion.jpg",
       caption: "The Boxer Rebellion (1899–1901), an anti-foreign uprising whose defeat deepened foreign control over Qing China.",
       prompt: "Is this image better evidence of internal weakness or external pressure on the Qing empire? Can it be both?"
     },
     {
       title: "Demonstrators on Nevsky Prospekt, Petrograd, 1917",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/19170704_Riot_on_Nevsky_prosp_Petrograd.jpg",
+      url: "../assets/images/commons/19170704-riot-on-nevsky-prosp-petrograd-12addc.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:19170704_Riot_on_Nevsky_prosp_Petrograd.jpg",
       caption: "Crowds scatter under fire on Nevsky Prospekt, Petrograd, 1917, revolutionary Russia between the February and October revolutions.",
       prompt: "What does this street-level photograph reveal about the collapse of state authority in Russia during 1917?"
     },
     {
       title: "Emiliano Zapata, 1914",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Emiliano_Zapata,_1914.jpg",
+      url: "../assets/images/commons/emiliano-zapata-1914-1e927e.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Emiliano_Zapata,_1914.jpg",
       caption: "Emiliano Zapata, agrarian revolutionary, the demand for land reform at the heart of the Mexican Revolution.",
       prompt: "How does this image help explain what 'challenging the existing political and social order' meant in revolutionary Mexico?"

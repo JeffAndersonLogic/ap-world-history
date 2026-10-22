@@ -235,6 +235,34 @@ for (const deck of DECKS) {
   }
 }
 
+// Jeff, 2026-10-21: no more box slides. The `grid` kind, a 2x2 grid of small
+// cards, is overused and hard to read from the back of the room; on 2026-10-14
+// it was replaced on 3.4, and on 2026-10-21 on 3.3. A ratchet of the same
+// shape: GRID_OWED lists the box slides that predate the rule, any other is a
+// failure, and a slide that has been rebuilt must come off the list. Pick the
+// template whose shape matches the idea (docs/PRESENTATION-AUTHORING.md, step 11).
+console.log('\n  No box (grid) slides\n');
+const GRID_OWED = new Set([
+  '2.1 targets', '2.1 systems', '2.1 debrief', '2.2 open', '2.2 conquest', '2.2 transfer', '2.6 spine',
+  '2.7 tools', '2.7 nodes', '2.7 diffusion', '2.7 review', '3.1 pays', '3.1 proofs', '3.1 kandahar',
+  '4.1 borrowed', '4.1 ships', '4.1 payoff', '4.2 posts'
+]);
+check('control: a grid slide not on the list is refused', ![{ kind: 'grid', phase: 'new' }].every(s => s.kind !== 'grid' || GRID_OWED.has(`9.9 ${s.phase}`)));
+for (const deck of DECKS) {
+  const sandbox = { window: {}, console, encodeURIComponent, decodeURIComponent };
+  vm.createContext(sandbox);
+  for (const rel of deck.sources) vm.runInContext(read(rel), sandbox, { filename: rel });
+  const slides = sandbox.window.BEHISTORICAL_TEACHING.slides;
+  for (const s of slides.filter(x => x.kind === 'grid')) {
+    check(`${deck.key} ${s.phase} is a box slide on the owed list`, GRID_OWED.has(`${deck.key} ${s.phase}`), 'new grid slide: use a template that fits the idea');
+  }
+  for (const key of GRID_OWED) {
+    if (!key.startsWith(`${deck.key} `)) continue;
+    const phase = key.slice(deck.key.length + 1);
+    check(`${key} is still a box slide (take it off GRID_OWED once rebuilt)`, slides.some(x => x.phase === phase && x.kind === 'grid'), 'fixed: take it off GRID_OWED');
+  }
+}
+
 console.log('\n  Authoring process discovery\n');
 const authoringPath = 'docs/PRESENTATION-AUTHORING.md';
 const architecturePath = 'docs/TEACHING-OS.md';

@@ -26,7 +26,7 @@
   lesson.images = [
     {
       "title": "Rubber tapping",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg",
+      "url": "../assets/images/commons/rubber-tapping-98c7aa.jpg",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rubber_tapping.jpg",
       "caption": "Photograph of latex being tapped from a rubber tree. The technique is simple; the demand behind it was industrial.",
       "prompt": "NOTICE what the work itself involves. INFER what determines how much a tapper can produce in a day, and what a quota would therefore require. What does the photograph not show about who set the quota?"

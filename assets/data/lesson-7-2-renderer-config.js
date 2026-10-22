@@ -45,16 +45,16 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map_Europe_alliances_1914-en.svg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/DC-1914-27-d-Sarajevo.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map_Europe_alliances_1914-en.svg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/DC-1914-27-d-Sarajevo.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map_Europe_alliances_1914-en.svg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/DC-1914-27-d-Sarajevo.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map_Europe_alliances_1914-en.svg'
+    map: '../assets/images/commons/map-europe-alliances-1914-en-45b938.svg',
+    first10: '../assets/images/commons/dc-1914-27-d-sarajevo-ba0790.jpg',
+    contentDelivery: '../assets/images/commons/map-europe-alliances-1914-en-45b938.svg',
+    beSurreal: '../assets/images/commons/dc-1914-27-d-sarajevo-ba0790.jpg',
+    skill: '../assets/images/commons/world-1898-empires-colonies-territory-8ea39f.png',
+    checkpoint1: '../assets/images/commons/punch-rhodes-colossus-8330fa.png',
+    evidence: '../assets/images/commons/punch-rhodes-colossus-8330fa.png',
+    source: '../assets/images/commons/map-europe-alliances-1914-en-45b938.svg',
+    beInTheRoom: '../assets/images/commons/dc-1914-27-d-sarajevo-ba0790.jpg',
+    checkpoint2: '../assets/images/commons/map-europe-alliances-1914-en-45b938.svg'
   };
 
   lesson.beInTheRoom = {
@@ -116,28 +116,28 @@
   lesson.images = [
     {
       title: 'European alliances, 1914',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map_Europe_alliances_1914-en.svg',
+      url: '../assets/images/commons/map-europe-alliances-1914-en-45b938.svg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Map_Europe_alliances_1914-en.svg',
       caption: 'Reference map of the Triple Alliance and Triple Entente blocs on the eve of war.',
       prompt: 'NOTICE which states sit between the two blocs geographically. INFER what that position does to a local crisis in the Balkans. Does this map explain why a crisis spread, why a crisis began, or both? Be precise.'
     },
     {
       title: 'The Rhodes Colossus',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png',
+      url: '../assets/images/commons/punch-rhodes-colossus-8330fa.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Punch_Rhodes_Colossus.png',
       caption: 'Cartoon published in the British magazine Punch, 1892, showing Cecil Rhodes astride Africa. A commentary made for a British readership, not a neutral record.',
       prompt: 'NOTICE what the cartoonist has exaggerated and what he leaves out of the frame. INFER what British readers were expected to find plausible about imperial ambition. What does a cartoon evidence well, and what can it not measure?'
     },
     {
       title: 'The assassination at Sarajevo',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/DC-1914-27-d-Sarajevo.jpg',
+      url: '../assets/images/commons/dc-1914-27-d-sarajevo-ba0790.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:DC-1914-27-d-Sarajevo.jpg',
       caption: 'Contemporary illustration of the assassination of Archduke Franz Ferdinand, 28 June 1914. An artist\'s reconstruction published for a mass audience, not a photograph of the event.',
       prompt: 'NOTICE how the illustrator has staged the moment. INFER why this event was worth depicting across Europe within days. What can this card explain that the alliance map cannot, and what can it not explain by itself?'
     },
     {
       title: 'Empires and colonies of the world, 1898',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
+      url: '../assets/images/commons/world-1898-empires-colonies-territory-8ea39f.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_1898_empires_colonies_territory.png',
       caption: 'Reference map of the colonial holdings the great powers were competing over at the turn of the century.',
       prompt: 'NOTICE where the unclaimed and contested territory sits by 1898. INFER what happens to imperial competition when little is left to claim. How would you use this to argue that a European war had causes outside Europe?'

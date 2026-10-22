@@ -52,16 +52,16 @@
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG'
+    map:             '../assets/images/commons/voc-faaae0.jpg',
+    first10:         '../assets/images/commons/waldseemuller-map-2-f5c64b.jpg',
+    contentDelivery: '../assets/images/commons/casta-painting-all-bdc286.jpg',
+    beSurreal:       '../assets/images/commons/columbus-taking-possession-d0d171.jpg',
+    skill:           '../assets/images/commons/loren-mozley-pueblo-revolt-1680-installed-1936-abq-nm-73e5bf.jpg',
+    checkpoint1:     '../assets/images/commons/florentinecodex-bk12-f54-smallpox-6163e9.jpg',
+    evidence:        '../assets/images/commons/astrolabe-persian-18c-8ebe5d.jpg',
+    source:          '../assets/images/commons/pillar-of-vasco-da-gama-1533aa.jpg',
+    beInTheRoom:     '../assets/images/commons/ferdinand-magellan-9de032.jpg',
+    checkpoint2:     '../assets/images/commons/1700-ce-world-map-1696ff.png'
   };
 
   lesson.beInTheRoom = {
@@ -134,7 +134,7 @@
     },
     {
       title: 'Standard Oil as an octopus',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Standard_oil_octopus_loc_color.jpg?width=1200',
+      url: '../assets/images/commons/standard-oil-octopus-loc-color-ca6f12.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Standard_oil_octopus_loc_color.jpg',
       caption: 'Udo Keppler in Puck, 1904, published two years before the federal antitrust suit against Standard Oil.',
       prompt: 'NOTICE what the tentacles are holding and what one of them is reaching towards. INFER what the cartoonist believed vertical integration had reached beyond the oil business. This was drawn after 1900: how does that change what it can be evidence for in this unit?'
@@ -151,7 +151,7 @@
     },
     {
       title: '“The Bosses of the Senate”, 1889',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/The_Bosses_of_the_Senate_by_Joseph_Keppler.jpg?width=1200',
+      url: '../assets/images/commons/the-bosses-of-the-senate-by-joseph-keppler-6f7c55.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:The_Bosses_of_the_Senate_by_Joseph_Keppler.jpg',
       caption: 'Joseph Keppler in Puck, 1889. The trusts are drawn as figures in the Senate chamber; the public entrance is marked closed.',
       prompt: 'NOTICE the relative size of the figures and what the two doors are labelled. INFER what claim the cartoonist is making about corporate scale and government. A cartoon is an accusation: what evidence would you need to test it?'

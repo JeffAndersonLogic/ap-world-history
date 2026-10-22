@@ -197,16 +197,16 @@ window.renderCausationMatrix = function () {
 
   // ── Stable images ─────────────────────────────────────────────────────────────
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nagasakibomb.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Treaty_of_Versailles,_English_version.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Lange-MigrantMother02.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Treaty_of_Versailles,_English_version.jpg',
-    causationMatrix: 'https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg'
+    map: '../assets/images/commons/world-1936-empires-colonies-territory-6d7758.png',
+    first10: '../assets/images/commons/infobox-collage-for-wwii-33f084.png',
+    contentDelivery: '../assets/images/commons/infobox-collage-for-wwii-33f084.png',
+    beSurreal: '../assets/images/commons/nagasakibomb-3298c4.jpg',
+    skill: '../assets/images/commons/treaty-of-versailles-english-version-21ea91.jpg',
+    checkpoint1: '../assets/images/commons/infobox-collage-for-wwii-33f084.png',
+    evidence: '../assets/images/commons/lange-migrantmother02-99276b.jpg',
+    source: '../assets/images/commons/treaty-of-versailles-english-version-21ea91.jpg',
+    causationMatrix: '../assets/images/commons/infobox-collage-for-wwii-33f084.png',
+    checkpoint2: '../assets/images/commons/bundesarchiv-bild-183-s33882-adolf-hitler-retouched-8a4d19.jpg'
   };
 
   // ── BeSurreal ─────────────────────────────────────────────────────────────────
@@ -352,28 +352,28 @@ window.renderCausationMatrix = function () {
   lesson.images = [
     {
       title: 'Empires and colonies of the world, 1898',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
+      url: '../assets/images/commons/world-1898-empires-colonies-territory-8ea39f.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_1898_empires_colonies_territory.png',
       caption: 'Reference map of imperial holdings before the First World War.',
       prompt: 'NOTICE which empires hold the most territory. Hold this card beside the 1936 map. INFER what changed and what did not between them. Which of those two facts, the change or the continuity, better explains renewed conflict?'
     },
     {
       title: 'World empires and territories, c. 1936',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png',
+      url: '../assets/images/commons/world-1936-empires-colonies-territory-6d7758.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.png',
       caption: 'Reference map of imperial holdings between the wars. The Ottoman, Russian, Austro-Hungarian and Qing empires have gone; the maritime empires have not.',
       prompt: 'NOTICE which empires survived the first war intact. INFER what that survival implies about whether the 1919 settlement resolved imperial competition. What does a map of borders not show about the pressures inside them?'
     },
     {
       title: 'Migrant Mother, 1936',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Lange-MigrantMother02.jpg',
+      url: '../assets/images/commons/lange-migrantmother02-99276b.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Lange-MigrantMother02.jpg',
       caption: 'Dorothea Lange, 1936, made for a US federal relief agency. Evidence of the Depression in one country, by a photographer sent to document it.',
       prompt: 'NOTICE that this is American and commissioned. INFER how far you may generalize from it to a global economic crisis. Why is this stronger evidence for the causes of the second war than of the first?'
     },
     {
       title: 'Atomic bombing of Nagasaki, 1945',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nagasakibomb.jpg',
+      url: '../assets/images/commons/nagasakibomb-3298c4.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Nagasakibomb.jpg',
       caption: 'Photograph of the Nagasaki cloud, 9 August 1945, the end point of four decades of industrialized warfare.',
       prompt: 'NOTICE the scale relative to the aircraft\'s vantage point. INFER what had changed in the relationship between technology and civilian populations since 1914. Is this evidence of a cause, or of a consequence? Defend the placement.'

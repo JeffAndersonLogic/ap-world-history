@@ -126,8 +126,9 @@ Continuity and Change.
   or unifying fragmented regions, with the CED's examples (KC-5.3.II.iii).
 - **Mention only as a bridge:** the ideas themselves (5.1); abolition and the end of serfdom as
   long reform movements (5.1).
-- **Hands to 5.3:** "While Paris argued about rights, a different revolution was starting in
-  British workshops."
+- **Hands to 5.3:** "Even before Paris argued about rights, a different revolution had begun in
+  British workshops." (Corrected by the 5.2 build, 2026-10-21: the earlier wording, "was starting,"
+  dated the industrial revolution after 1789, against 5.3's own dates of the 1760s to 1780s.)
 
 ### 5.3 Industrial Revolution Begins
 

@@ -137,7 +137,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Rubber tapping",
           caption: "Industrial demand reached deep into tropical forests. Rubber, guano, and coal show the environmental and human costs of industrial supply chains.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg",
+          url: "../assets/images/commons/rubber-tapping-98c7aa.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Rubber_tapping.jpg"
         }
       }

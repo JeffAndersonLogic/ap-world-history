@@ -102,7 +102,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Afro-Eurasian exchange networks',
           caption: 'A modern map of Silk Road routes. The same networks that moved goods also carried crops and pathogens.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+          url: '../assets/images/commons/silk-route-6f0173.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg'
         }
       },
@@ -116,7 +116,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Indian Ocean connections',
           caption: 'A modern map of the Indian Ocean basin. Maritime exchange linked crop-producing regions across it.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
+          url: '../assets/images/commons/indian-ocean-cia-wfb-map-1f1fa9.png',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_Ocean-CIA_WFB_Map.png'
         }
       },

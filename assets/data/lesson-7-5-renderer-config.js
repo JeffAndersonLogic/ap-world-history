@@ -56,16 +56,16 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Big_four.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Manchukuo.svg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Big_four.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Big_four.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mahatma-Gandhi,_studio,_1931.jpg'
+    map: '../assets/images/commons/world-1936-empires-colonies-territory-6d7758.png',
+    first10: '../assets/images/commons/big-four-f2dee7.jpg',
+    contentDelivery: '../assets/images/commons/world-1936-empires-colonies-territory-6d7758.png',
+    beSurreal: '../assets/images/commons/flag-of-manchukuo-808278.svg',
+    skill: '../assets/images/commons/mpk1-426-sykes-picot-agreement-map-signed-8-may-1916-530830.jpg',
+    checkpoint1: '../assets/images/commons/world-1936-empires-colonies-territory-6d7758.png',
+    evidence: '../assets/images/commons/big-four-f2dee7.jpg',
+    source: '../assets/images/commons/mpk1-426-sykes-picot-agreement-map-signed-8-may-1916-530830.jpg',
+    beInTheRoom: '../assets/images/commons/big-four-f2dee7.jpg',
+    checkpoint2: '../assets/images/commons/mahatma-gandhi-studio-1931-84dac4.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -127,21 +127,21 @@
   lesson.images = [
     {
       title: 'The Council of Four, Paris Peace Conference, 1919',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Big_four.jpg',
+      url: '../assets/images/commons/big-four-f2dee7.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Big_four.jpg',
       caption: 'Photograph of Lloyd George, Orlando, Clemenceau and Wilson at Versailles, the four leaders who settled the terms.',
       prompt: 'NOTICE who is present in this photograph. Now INFER, from who is absent, whose interests the settlement was most likely to serve. What claim about self-determination does the composition of this room complicate?'
     },
     {
       title: 'Sykes-Picot Agreement map, signed 8 May 1916',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg',
+      url: '../assets/images/commons/mpk1-426-sykes-picot-agreement-map-signed-8-may-1916-530830.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:MPK1-426_Sykes_Picot_Agreement_Map_signed_8_May_1916.jpg',
       caption: 'The signed Anglo-French map dividing Ottoman territory into zones of influence, agreed secretly in 1916, two years before the war ended.',
       prompt: 'NOTICE how the lines are drawn and what they ignore. INFER what the signatories assumed about the people living there. Given the 1916 date, what does this prove about the sincerity of the self-determination language used in 1919?'
     },
     {
       title: 'League of Nations mandates',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_league_of_nations_mandate.png',
+      url: '../assets/images/commons/map-of-league-of-nations-mandate-002e87.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Map_of_league_of_nations_mandate.png',
       caption: 'Reference map of the mandate territories assigned after 1919, drawn from the League\'s own assignments.',
       prompt: 'NOTICE which powers administer the mandates. INFER how far the mandate system differed in practice from the empire it replaced. What would you need beyond a map to decide whether it was administration or annexation?'

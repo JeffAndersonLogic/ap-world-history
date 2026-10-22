@@ -34,10 +34,10 @@ const SATELLITE={fit:'contain',url:local('2.4 - Africa Satellite.jpg'),alt:'Sate
 const EMPIRES_MAP={url:local('2.4 - Ghana Mali Songhay Map.jpg'),alt:'Map of Africa showing the kingdom of Ghana and the Mali and Songhay empires, with trans-Saharan and Indian Ocean routes',credit:'Map · Ghana, Mali and Songhay, with trans-Saharan and maritime routes'};
 const SALT={url:local('2.4 - Salt Slabs.jpg'),alt:'Rows of large rock-salt slabs stacked at a market',credit:'Modern photograph · Saharan rock salt'};
 const HAJJ={url:local('2.4 - Mansa Musa Hajj.jpg'),alt:'A modern painting of Mansa Musa holding a gold scepter, with his caravan crossing the desert toward Cairo and Mecca',credit:'Modern painting · Higgins Bond',position:'30% 40%'};
-const ATLAS={url:'https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',alt:'Mansa Musa holding gold on the Catalan Atlas',sourceUrl:'https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',credit:'Catalan Atlas, 1375 · Bibliothèque nationale de France · public domain'};
+const ATLAS={url:'../assets/images/commons/catalan-atlas-bnf-sheet-6-mansa-musa-ec09cc.jpg',alt:'Mansa Musa holding gold on the Catalan Atlas',sourceUrl:'https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',credit:'Catalan Atlas, 1375 · Bibliothèque nationale de France · public domain'};
 const VISUALS={
   'hook':DESERT,
-  'trade-cities':{url:'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Djenn%C3%A9_2.jpg',alt:'The Great Mosque of Djenné, a 1907 building on the site of earlier mosques',sourceUrl:'https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Djenn%C3%A9_2.jpg',credit:'Great Mosque of Djenné · present building 1907, on the site of earlier mosques · Wikimedia Commons'}
+  'trade-cities':{url:'../assets/images/commons/great-mosque-of-djenne-2-679fb3.jpg',alt:'The Great Mosque of Djenné, a 1907 building on the site of earlier mosques',sourceUrl:'https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Djenn%C3%A9_2.jpg',credit:'Great Mosque of Djenné · present building 1907, on the site of earlier mosques · Wikimedia Commons'}
 };
 const TEMPLATE_VISUALS={
   'basin':{visual:SATELLITE},

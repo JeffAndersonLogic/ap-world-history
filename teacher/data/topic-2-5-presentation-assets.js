@@ -39,18 +39,18 @@
 'use strict';
 const T=window.BEHISTORICAL_TEACHING;
 if(!T||!Array.isArray(T.slides))return;
-const FP='https://commons.wikimedia.org/wiki/Special:FilePath/';
+// Pictures are repo-local copies (scripts/mirror-commons-images.js); FILE is the credit page.
 const FILE='https://commons.wikimedia.org/wiki/File:';
 const LOCAL='../assets/images/topics/2-5/';
 const local=name=>LOCAL+encodeURIComponent(name);
 const MARKET_AI={ai:true,url:local('2.5 - Cultural Highway.jpg'),alt:'An imagined Silk Road market below blue-domed buildings: a turbaned scholar reads from a book in Arabic script, a Buddhist monk in red robes talks with a merchant, and books, maps and pottery cover the tables while camels pass behind',position:'62% 50%'};
 const WORKSHOP_AI={ai:true,url:local('2.5 - Technology Moves.jpg'),alt:'An imagined city market under brick arches: scribes write on stacks of paper, workers pack crates of paper and blue-and-white porcelain, and three men inspect a long gun',position:'50% 62%'};
 const TRAVELER_AI={ai:true,url:local('2.5 - Travelers see connected world.jpg'),alt:'An imagined traveler with a staff and satchel stands on a hill above a walled trading city full of caravans, writing in a book while a local man points and explains',position:'72% 50%'};
-const KAMAKURA={url:FP+'Great_Buddha_at_K%C5%8Dtoku-in,_Close-up_20190421_1.jpg?width=1600',sourceUrl:FILE+'Great_Buddha_at_K%C5%8Dtoku-in,_Close-up_20190421_1.jpg',alt:'The Great Buddha of Kamakura, a giant seated bronze Buddha, green with age, against a blue sky',credit:'Kamakura Buddha · cast from 1252 · DXR, CC BY-SA 4.0',position:'50% 30%'};
-const ANGKOR={url:FP+'Angkor%20Wat.jpg',sourceUrl:FILE+'Angkor_Wat.jpg',alt:'The towers of Angkor Wat in Cambodia',credit:'Angkor Wat · built early 1100s'};
-const DJENNE={url:FP+'Great_Mosque_of_Djenn%C3%A9_2.jpg',sourceUrl:FILE+'Great_Mosque_of_Djenn%C3%A9_2.jpg',alt:'The mud-brick Great Mosque of Djenné in Mali',credit:'Great Mosque of Djenné · rebuilt 1907'};
-const BAGHDAD={fit:'contain',url:FP+'Bagdad1258.jpg',sourceUrl:FILE+'Bagdad1258.jpg',alt:'A Persian manuscript painting of Mongol forces besieging Baghdad, with walls, a river and siege engines',credit:'Persian manuscript painting, c. 1430 · public domain'};
-const ATLAS={fit:'contain',url:FP+'Caravane_Marco_Polo.jpg',sourceUrl:FILE+'Caravane_Marco_Polo.jpg',alt:'Detail of the Catalan Atlas showing a caravan of riders and camels crossing Asia',credit:'Catalan Atlas, 1375 · public domain'};
+const KAMAKURA={url:'../assets/images/commons/great-buddha-at-kotoku-in-close-up-20190421-1-3968f2.jpg',sourceUrl:FILE+'Great_Buddha_at_K%C5%8Dtoku-in,_Close-up_20190421_1.jpg',alt:'The Great Buddha of Kamakura, a giant seated bronze Buddha, green with age, against a blue sky',credit:'Kamakura Buddha · cast from 1252 · DXR, CC BY-SA 4.0',position:'50% 30%'};
+const ANGKOR={url:'../assets/images/commons/angkor-wat-a59ab1.jpg',sourceUrl:FILE+'Angkor_Wat.jpg',alt:'The towers of Angkor Wat in Cambodia',credit:'Angkor Wat · built early 1100s'};
+const DJENNE={url:'../assets/images/commons/great-mosque-of-djenne-2-679fb3.jpg',sourceUrl:FILE+'Great_Mosque_of_Djenn%C3%A9_2.jpg',alt:'The mud-brick Great Mosque of Djenné in Mali',credit:'Great Mosque of Djenné · rebuilt 1907'};
+const BAGHDAD={fit:'contain',url:'../assets/images/commons/bagdad1258-6f93c7.jpg',sourceUrl:FILE+'Bagdad1258.jpg',alt:'A Persian manuscript painting of Mongol forces besieging Baghdad, with walls, a river and siege engines',credit:'Persian manuscript painting, c. 1430 · public domain'};
+const ATLAS={fit:'contain',url:'../assets/images/commons/caravane-marco-polo-f0cc15.jpg',sourceUrl:FILE+'Caravane_Marco_Polo.jpg',alt:'Detail of the Catalan Atlas showing a caravan of riders and camels crossing Asia',credit:'Catalan Atlas, 1375 · public domain'};
 const TEMPLATE_VISUALS={
   'hook':{visual:MARKET_AI},
   'city-growth':{visual:WORKSHOP_AI},

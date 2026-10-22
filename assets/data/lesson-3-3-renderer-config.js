@@ -53,16 +53,16 @@
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Safavid_Empire%2C_circa_1630.png',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Shah_Abbas_I.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Suleiman_the_Magnificent_of_the_Ottoman_Empire.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Istanbul_asv2020-02_img19_Topkap%C4%B1_Palace.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_Bosphorus.JPG',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Qianlong_Emperor.jpg'
+    map:             '../assets/images/commons/map-of-the-safavid-empire-circa-1630-5b6cf1.png',
+    first10:         '../assets/images/commons/shah-abbas-i-f097b8.jpg',
+    contentDelivery: '../assets/images/commons/rise-and-fall-of-the-ottoman-empire-1300-1923-0cf219.gif',
+    beSurreal:       '../assets/images/commons/court-of-akbar-from-akbarnama-8879e4.jpg',
+    skill:           '../assets/images/commons/suleiman-the-magnificent-of-the-ottoman-empire-fb65d7.jpg',
+    checkpoint1:     '../assets/images/commons/istanbul-asv2020-02-img19-topkap-palace-ff3642.jpg',
+    evidence:        '../assets/images/commons/mughal-empire-1700-29dcf3.png',
+    source:          '../assets/images/commons/topkapi-palace-bosphorus-ef2576.jpg',
+    beInTheRoom:     '../assets/images/commons/1700-ce-world-map-1696ff.png',
+    checkpoint2:     '../assets/images/commons/qianlong-emperor-1e7a96.jpg'
   };
 
   lesson.skillBuilder = {
@@ -112,7 +112,7 @@
   lesson.images = [
     {
       title: 'Martin Luther, c. 1530',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Lucas_Cranach_-_Portrait_of_Martin_Luther%2C_circa_1530.jpg',
+      url: '../assets/images/commons/lucas-cranach-portrait-of-martin-luther-circa-1530-45d549.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Lucas_Cranach_-_Portrait_of_Martin_Luther,_circa_1530.jpg',
       caption: 'Reformation evidence. A portrait produced in the circle of Lucas Cranach the Elder represents Martin Luther during the early decades of the Protestant Reformation.',
       prompt: 'NOTICE how Luther is represented as an individual religious authority. What can you INFER about the visibility of reform leaders in an age of print and confessional conflict? What can a portrait not prove about why ordinary people adopted Protestant ideas?'
@@ -129,14 +129,14 @@
     },
     {
       title: 'Battle of Chaldiran, Selim-nama, 1524',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Chaldiran_miniature._Sel%C4%ABm-n%C4%81ma%2C_by_%C5%9E%C5%ABkr%C4%AB-i_Bitlis%C4%AB%2C_1524_%28National_Library_of_Israel%2C_Ms._Yah._Ar._1116%29.jpg',
+      url: '../assets/images/commons/battle-of-chaldiran-miniature-selim-nama-by-sukri-i-bitlisi-1524-natio-6489e1.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Battle_of_Chaldiran_miniature._Sel%C4%ABm-n%C4%81ma,_by_%C5%9E%C5%ABkr%C4%AB-i_Bitlis%C4%AB,_1524_(National_Library_of_Israel,_Ms._Yah._Ar._1116).jpg',
       caption: 'Ottoman-Safavid rivalry evidence. An Ottoman manuscript miniature made about a decade after the 1514 battle depicts the conflict between the Sunni Ottoman and Shia Safavid empires.',
       prompt: 'NOTICE how the battle and opposing forces are represented. What can you INFER about the importance of the conflict in Ottoman political memory? Why should a historian be cautious about using an Ottoman victory narrative as neutral evidence about the Safavids?'
     },
     {
       title: 'Guru Nanak, 19th-Century Devotional Portrait',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Guru_Nanak.png',
+      url: '../assets/images/commons/portrait-of-guru-nanak-f94757.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Portrait_of_Guru_Nanak.png',
       caption: 'Later Sikh memory. This 19th-century portrait depicts Guru Nanak, the first Sikh Guru, whose teachings emerged in 15th- and 16th-century Punjab amid sustained Hindu-Muslim interaction.',
       prompt: 'NOTICE the devotional presentation of Guru Nanak. What can you INFER about his long-term importance to Sikh identity? Why is this later portrait evidence of memory and devotion rather than direct evidence of what Nanak looked like or how Sikhism first developed?'

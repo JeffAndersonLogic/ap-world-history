@@ -58,13 +58,13 @@
     map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
     first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_%281985%29.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/RIAN_archive_58833_Withdrawal_of_Soviet_troops_from_Afghanistan.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_%281985%29.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Photograph_of_President_Reagan_Addressing_the_Nation_on_National_Security_%28SDI_Speech%29_-_NARA_-_198536.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/RIAN_archive_850809_General_Secretary_of_the_CPSU_CC_M._Gorbachev_%28cropped%29.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg'
+    beSurreal: '../assets/images/commons/west-and-east-germans-at-the-brandenburg-gate-in-1989-97f976.jpg',
+    skill: '../assets/images/commons/reagan-and-gorbachev-1985-c49072.jpg',
+    checkpoint1: '../assets/images/commons/rian-archive-58833-withdrawal-of-soviet-troops-from-afghanistan-0ae142.jpg',
+    evidence: '../assets/images/commons/reagan-and-gorbachev-1985-c49072.jpg',
+    source: '../assets/images/commons/photograph-of-president-reagan-addressing-the-nation-on-national-secur-ada061.jpg',
+    beInTheRoom: '../assets/images/commons/rian-archive-850809-general-secretary-of-the-cpsu-cc-m-gorbachev-cropp-2e0709.jpg',
+    checkpoint2: '../assets/images/commons/west-and-east-germans-at-the-brandenburg-gate-in-1989-97f976.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -108,21 +108,21 @@
   lesson.images = [
     {
       title: 'Reagan and Gorbachev at the Geneva Summit, 1985',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Reagan_and_Gorbachev_%281985%29.jpg',
+      url: '../assets/images/commons/reagan-and-gorbachev-1985-c49072.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Reagan_and_Gorbachev_%281985%29.jpg',
       caption: 'President Reagan and Soviet General Secretary Gorbachev at the Geneva Summit, November 1985, their first meeting. The two leaders met four times between 1985 and 1988. Their negotiations eventually produced the Intermediate-Range Nuclear Forces (INF) Treaty (1987), the first Cold War agreement to actually eliminate a class of nuclear weapons.',
       prompt: 'What does the fact that Reagan and Gorbachev met four times and ultimately signed the INF Treaty reveal about the relationship between U.S. military pressure (LT1) and Soviet domestic reform (LT3)? How does a summit between two leaders illustrate the intersection of external pressure and internal change?'
     },
     {
       title: 'Mujahideen fighters, Afghanistan, 1980s',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Afghan_mujahideen.jpg',
+      url: '../assets/images/commons/afghan-mujahideen-063541.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Afghan_mujahideen.jpg',
       caption: 'Afghan Mujahideen fighters in the 1980s. The decentralized, regionally organized Mujahideen resistance proved impossible for Soviet conventional forces to defeat. CIA support through Operation Cyclone, including Stinger anti-aircraft missiles from 1986, provided the insurgency with capabilities that negated Soviet tactical air advantage.',
       prompt: 'Why did the Soviet military, which had modernized extensively since World War II, find it impossible to defeat the Mujahideen? What does the Afghan experience reveal about the limits of conventional military power against irregular resistance, and how does this connect to LT2\'s causal claim?'
     },
     {
       title: 'Gorbachev at the Central Committee, announcing perestroika',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/RIAN_archive_850809_General_Secretary_of_the_CPSU_CC_M._Gorbachev_%28cropped%29.jpg',
+      url: '../assets/images/commons/rian-archive-850809-general-secretary-of-the-cpsu-cc-m-gorbachev-cropp-2e0709.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:RIAN_archive_850809_General_Secretary_of_the_CPSU_CC_M._Gorbachev_%28cropped%29.jpg',
       caption: 'Mikhail Gorbachev addressing the Central Committee of the Communist Party. Gorbachev\'s programs of glasnost (openness) and perestroika (restructuring) were designed to modernize the Soviet system, but they released forces of criticism and nationalism that the party could not control once permitted.',
       prompt: 'Gorbachev did not intend to end the Soviet Union, he intended to save it. How does the unintended outcome of his reforms illustrate KC-6.2.IV.E\'s causal claim about \'public discontent and economic weakness in communist countries\'? What does glasnost reveal about why open criticism, once permitted, is difficult to stop?'

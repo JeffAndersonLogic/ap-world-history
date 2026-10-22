@@ -132,9 +132,9 @@ const CASES = [
     module: null,
     checkpoint: null,
     budget: 4,
-    draft: 'Workers had a hard time during industrialization. Factory conditions '
-      + 'were bad and people worked long hours for low pay. Some workers protested '
-      + 'about it because they were angry about how things were changing.'
+    draft: 'The factory changed how work was done. People worked in a big building '
+      + 'with machines instead of at home. It made more stuff because there were '
+      + 'machines and it was faster than before.'
   },
   {
     id: 'checkpoint2-synthesis',

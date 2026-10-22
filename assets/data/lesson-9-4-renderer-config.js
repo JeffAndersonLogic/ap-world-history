@@ -69,7 +69,7 @@
   lesson.images = [
     {
       "title": "Container ship under way",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg",
+      "url": "../assets/images/commons/container-ship-hanjin-taipei-508dd2.jpg",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Container_ship_Hanjin_Taipei.jpg",
       "caption": "Photograph of a loaded container ship. Standardized boxes are the physical form the late twentieth-century trading system took.",
       "prompt": "NOTICE how the cargo is packed and what that implies about handling it. INFER what changes for a port, and for the people who used to unload ships. What does a photograph of a ship not tell you about who owns the cargo or where the profit lands?"

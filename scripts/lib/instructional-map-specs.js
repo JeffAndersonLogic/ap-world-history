@@ -336,40 +336,66 @@ module.exports = [
   {
     id: 'topic-5-2',
     code: 'Topic 5.2',
-    title: 'The Atlantic Revolutionary World, c. 1776-1825',
-    subtitle: 'Topic 5.2 · Nationalism and revolutions',
+    title: 'Revolutions and New Nations, 1775 to 1878',
+    subtitle: 'Topic 5.2 · Nationalism and revolutions, 1750 to 1900',
     highlights: [
-      { zone: 'unitedStates', label: 'UNITED STATES 1776', tone: 'gold', legend: 'American Revolution, 1776-1783' },
-      { zone: 'westernEurope', label: 'FRANCE 1789', tone: 'bronze', legend: 'French Revolution, 1789' },
-      { zone: 'caribbean', label: 'HAITI 1791', tone: 'plum', legend: 'Haitian Revolution, 1791-1804' },
-      { zone: 'andes', label: 'SPANISH AMERICA', tone: 'sand', legend: 'Latin American independence, 1810-1825' },
-      { zone: 'brazil', label: 'BRAZIL 1822', tone: 'sage', legend: 'Brazilian independence, 1822' }
+      { zone: [-76, 38.5, 7, 6.5], label: 'UNITED STATES', tone: 'gold', legend: 'American Revolution, 1775 to 1783' },
+      { zone: [2.5, 46.5, 3.5, 3], label: 'FRANCE', tone: 'bronze', legend: 'French Revolution, 1789 to 1799' },
+      { zone: [-72.5, 19, 2.6, 1.6], label: 'HAITI', labelSide: 'right', tone: 'plum', legend: 'Haitian Revolution, 1791 to 1804' },
+      { zone: [-101, 21, 8, 6], label: 'MEXICO', labelSide: 'left', tone: 'sand' },
+      { zone: [-67, -10, 12, 21], label: 'SPANISH AMERICA', labelSide: 'left', tone: 'sand', legend: 'Spanish American independence, 1810 to 1826' },
+      { zone: [12.5, 43, 2.6, 3], label: 'ITALY', tone: 'sage', legend: 'Italy united, 1861; Rome added, 1870' },
+      { zone: [11, 51.5, 3.6, 2.6], label: 'GERMANY', labelSide: 'above', tone: 'slate', legend: 'German Empire proclaimed, 1871' },
+      { zone: [22, 42, 3.6, 3], label: 'BALKANS', labelSide: 'right', tone: 'sky', legend: 'Greece 1830; Serbia, Romania, Montenegro 1878' }
     ],
     flows: [
-      { from: 'unitedStates', to: 'westernEurope', label: 'revolutionary example east' },
-      { from: 'westernEurope', to: 'caribbean', label: 'rights claimed by the enslaved', bow: -0.2 },
-      { from: 'caribbean', to: 'andes', label: 'independence movements spread', bow: 0.24 }
-    ]
+      { from: [-76, 38.5], to: [2.5, 46.5], label: 'war debt', bow: -0.18 },
+      { from: [2.5, 46.5], to: [-72.5, 19], label: 'the declaration claimed', bow: 0.2 },
+      { from: [-72.5, 19], to: [-66.9, 9], label: 'Haiti arms Bolívar, 1816', bow: -0.3 }
+    ],
+    legend: [
+      { kind: 'area', tone: 'gold', text: 'American Revolution, 1775 to 1783' },
+      { kind: 'area', tone: 'bronze', text: 'French Revolution, 1789 to 1799' },
+      { kind: 'area', tone: 'plum', text: 'Haitian Revolution, 1791 to 1804' },
+      { kind: 'area', tone: 'sand', text: 'Spanish American independence, 1810 to 1826' },
+      { kind: 'area', tone: 'sage', text: 'Italy united, 1861; Rome added, 1870' },
+      { kind: 'area', tone: 'slate', text: 'German Empire proclaimed, 1871' },
+      { kind: 'area', tone: 'sky', text: 'Greece 1830; Serbia, Romania, Montenegro 1878' },
+      { kind: 'flow', step: 1, text: 'war debt' },
+      { kind: 'flow', step: 2, text: 'the declaration claimed' },
+      { kind: 'flow', step: 3, text: 'Haiti arms Bolívar, 1816' }
+    ],
+    note: 'Regions are approximate. The numbered arrows are links in the chain of revolutions; Italy, Germany and the Balkans mark new states that nationalism made.'
   },
   {
     id: 'topic-5-3',
     code: 'Topic 5.3',
-    title: 'Where Industrialization Began, c. 1800',
-    subtitle: 'Topic 5.3 · Britain\'s coal, cotton, and colonial advantages',
+    title: 'Britain and the Resources It Reached, c. 1700 to 1800',
+    subtitle: 'Topic 5.3 · Industrial Revolution begins',
     highlights: [
-      { zone: 'britain', label: 'BRITAIN', tone: 'gold', legend: 'Coal, iron, waterways, and factory towns' },
-      { zone: 'southAsia', label: 'SOUTH ASIA', tone: 'bronze', legend: 'South Asian cotton markets and handloom competition' },
-      { zone: 'unitedStates', label: 'US SOUTH', tone: 'sand', legend: 'Raw cotton grown by enslaved labor' },
-      { zone: 'westAfrica', label: 'WEST AFRICA', tone: 'sage', legend: 'Atlantic economy that funded British capital' }
+      { zone: 'britain', label: 'BRITAIN', labelSide: 'left', tone: 'gold', legend: 'Britain: coal, iron and waterways at home' },
+      { zone: [-66, 13, 9, 5], label: 'CARIBBEAN AND SOUTH AMERICA', labelSide: 'left', tone: 'bronze', legend: 'Cotton grown by enslaved people, by the 1780s' },
+      { zone: [-87, 33, 8, 4], label: 'US SOUTH', labelSide: 'left', tone: 'sand', legend: 'Cotton grown by enslaved people, more and more after the 1790s' },
+      { zone: [22, 60, 9, 4], label: 'SWEDEN AND RUSSIA', labelSide: 'right', tone: 'slate', legend: 'Iron from Sweden, later Russia' }
     ],
     flows: [
-      { from: 'unitedStates', to: 'britain', label: 'raw cotton to Lancashire' },
-      { from: 'britain', to: 'southAsia', label: 'machine-made cloth out', bow: 0.2 }
+      { from: [-66, 13], to: [-3, 53], label: 'cotton, 1780s', bow: 0.18 },
+      { from: [-87, 33], to: [-3, 53], label: 'cotton, after 1790s', bow: -0.2 },
+      { from: [22, 60], to: [-1, 54], label: 'iron', bow: -0.25 }
+    ],
+    legend: [
+      { kind: 'area', tone: 'gold', text: 'Britain: coal, iron and waterways at home' },
+      { kind: 'area', tone: 'bronze', text: 'Cotton grown by enslaved people, by the 1780s' },
+      { kind: 'area', tone: 'sand', text: 'Cotton grown by enslaved people, after the 1790s' },
+      { kind: 'area', tone: 'slate', text: 'Iron from Sweden, later Russia' },
+      { kind: 'flow', step: 1, text: 'cotton, 1780s' },
+      { kind: 'flow', step: 2, text: 'cotton, after 1790s' },
+      { kind: 'flow', step: 3, text: 'iron' }
     ],
     points: [
-      { at: [-2, 53], label: 'Manchester', note: 'cotton mills' },
-      { at: [-91, 33], label: 'Mississippi valley', note: 'cotton plantations', side: 'left' }
-    ]
+      { at: [-2.24, 53.48], label: 'Manchester', note: 'cotton mills', side: 'right' }
+    ],
+    note: 'Regions are approximate. The arrows show resources Britain brought in from abroad; Britain\'s own coalfields, rivers and canals are too small to draw at this scale.'
   },
   {
     id: 'topic-5-4',

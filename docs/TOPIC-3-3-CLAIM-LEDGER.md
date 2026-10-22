@@ -48,3 +48,29 @@ None yet. Independent review begins after implementation, as required by the bui
 6. **SUPPORTED — No Topic 3.3 class presentation existed.** Added canonical Teaching OS data, teacher shell, projection shell, student-deck registry, generated student data, student presentation shell, teacher index registration, and lesson link.
 7. **OPEN TECHNICAL — Generated deep-reading/eBook and teacher-index artifacts must be refreshed by their generators.** CI is the current verification route because this session's execution container cannot resolve GitHub to clone the branch.
 8. **OPEN SCHEDULE — Topic 3.3 has no Green/Silver dates in the repository.** Per the build-topic rule, schedule and Canvas work are not guessed.
+
+## Reformation story slides added 2026-10-21
+
+Jeff asked for one or two slides that tell the story of the Protestant and Catholic
+Reformations, built from his old presentation notes and pictures. Two slides were added to the
+Teaching OS deck (`reformation-story`, `two-answers`); the Break and Reform slides were shortened
+so the Christianity block keeps its 14 minutes; the AI Council of Trent scene was replaced with a
+real painting. All of it serves KC-4.1.VI.i and adds no new required content.
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| Pope Leo X raised money to rebuild St. Peter's Basilica, in part through the indulgence preached in 1517. | Teaching OS `reformation-story` | Standard Reformation chronology (Leo X renewed the St. Peter's indulgence in 1515; Johann Tetzel preached it near Saxony in 1517). | VERIFIED |
+| Catholic teaching held that an indulgence reduced punishment owed for sins already forgiven; it did not buy forgiveness. | `reformation-story` slide and notes | Catholic doctrine of indulgences as remission of temporal punishment; stated in the notes so the slide's "less punishment for sin" is not read as "forgiveness for sale". | VERIFIED |
+| Luther's 95 Theses (1517) attacked the sale of indulgences. | `reformation-story` | Standard chronology; Luther sent the theses to Archbishop Albrecht on 31 October 1517. The disputed door-nailing scene is deliberately not shown (Jeff, 2026-10-21). | VERIFIED |
+| Leo X excommunicated Luther in January 1521. | `reformation-story` | Papal bull Decet Romanum Pontificem, 3 January 1521. | VERIFIED |
+| St. Peter's rebuilding ran 1506 to 1626; dome completed 1590, facade 1612 (inscription names Paul V), Bernini's baldachin 1634. | `reformation-story` notes | Standard architectural chronology of the basilica; the facade inscription is legible in Jeff's photograph. | VERIFIED |
+| Lutheran and post-Trent Catholic positions on salvation, authority, language, clergy and indulgences, as set out row by row. | `two-answers` | Council of Trent decrees on justification (1547), Scripture and tradition (1546), seminaries (1563), indulgences (1563); Pius V ended indulgence sales in 1567. Lutheran positions: sola fide, sola scriptura, vernacular Bible and worship, married clergy. | VERIFIED |
+| The Roman Inquisition was set up in 1542. | `catholic` notes | Paul III, Licet ab initio, 1542. | VERIFIED |
+| The Council of Trent picture is a real painting, not an AI image. | `catholic` picture credit | Jeff's file, no C2PA, period painting style. Artist and date not verified (Wikimedia rate-limited the lookup), so the credit says only "Painting". | NARROWED |
+
+Independent review, 2026-10-21 (one fresh reviewer, all dates above confirmed). Five should-fix
+wording findings, all fixed: both "Saved by" answers now open with "Grace" and the notes
+say Trent did not teach that people earn heaven, the indulgence step now says "sins already
+forgiven", the Language row is now Worship, the door-nailing note says "disputed" rather than
+"myth", and the Trent picture's notes no longer claim more than its unverified provenance allows.
+Kept as Jeff wrote it: "German monk" (Luther was an Augustinian friar; textbooks commonly say monk).

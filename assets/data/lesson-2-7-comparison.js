@@ -168,7 +168,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Demand changes production',
           caption: 'Expanding exchange networks stimulated production as well as movement.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+          url: '../assets/images/commons/silk-route-6f0173.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg'
         }
       }

@@ -53,16 +53,16 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map_Europe_alliances_1914-en.svg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cheshire_Regiment_trench_Somme_1916.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/British_Mark_I_male_tank_Somme_25_September_1916.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kitchener-Britons.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/J._M._Flagg%2C_I_Want_You_for_U.S._Army_poster_%281917%29.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kitchener-Britons.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_bicycle_troops_Somme_1916_IWM_Q_3983.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sargent%2C_John_Singer_%28RA%29_-_Gassed_-_Google_Art_Project.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/J._M._Flagg%2C_I_Want_You_for_U.S._Army_poster_%281917%29.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/British_Mark_I_male_tank_Somme_25_September_1916.jpg'
+    map: '../assets/images/commons/map-europe-alliances-1914-en-45b938.svg',
+    first10: '../assets/images/commons/cheshire-regiment-trench-somme-1916-a90b72.jpg',
+    contentDelivery: '../assets/images/commons/british-mark-i-male-tank-somme-25-september-1916-81ff6c.jpg',
+    beSurreal: '../assets/images/commons/kitchener-britons-1b6165.jpg',
+    skill: '../assets/images/commons/j-m-flagg-i-want-you-for-u-s-army-poster-1917-f105b7.jpg',
+    checkpoint1: '../assets/images/commons/kitchener-britons-1b6165.jpg',
+    evidence: '../assets/images/commons/indian-bicycle-troops-somme-1916-iwm-q-3983-e6155c.jpg',
+    source: '../assets/images/commons/sargent-john-singer-ra-gassed-google-art-project-b9d67a.jpg',
+    beInTheRoom: '../assets/images/commons/j-m-flagg-i-want-you-for-u-s-army-poster-1917-f105b7.jpg',
+    checkpoint2: '../assets/images/commons/british-mark-i-male-tank-somme-25-september-1916-81ff6c.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -125,28 +125,28 @@
   lesson.images = [
     {
       title: 'Lord Kitchener recruitment poster',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kitchener-Britons.jpg',
+      url: '../assets/images/commons/kitchener-britons-1b6165.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Kitchener-Britons.jpg',
       caption: '\'Britons: Lord Kitchener Wants You\' (1914), a British recruitment poster produced before conscription began.',
       prompt: 'NOTICE the direction of the gaze and the wording of the demand. INFER what the state assumed would move a volunteer. Which mobilization strategy from KC-6.2.IV.A.i does this document, and what does a poster not prove about how many enlisted?'
     },
     {
       title: 'British trench on the Somme, 1916',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cheshire_Regiment_trench_Somme_1916.jpg',
+      url: '../assets/images/commons/cheshire-regiment-trench-somme-1916-a90b72.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Cheshire_Regiment_trench_Somme_1916.jpg',
       caption: 'Photograph of men of the Cheshire Regiment in a trench on the Somme, 1916. Official photography, taken with army permission.',
       prompt: 'NOTICE the construction of the position and the posture of the men. INFER what this tells you about how the front had settled. What did official permission make more likely to be photographed, and less likely?'
     },
     {
       title: 'Indian bicycle troops on the Somme, 1916',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_bicycle_troops_Somme_1916_IWM_Q_3983.jpg',
+      url: '../assets/images/commons/indian-bicycle-troops-somme-1916-iwm-q-3983-e6155c.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Indian_bicycle_troops_Somme_1916_IWM_Q_3983.jpg',
       caption: 'Indian troops at a crossroads on the Somme, 1916. More than a million soldiers from British India served overseas during the war.',
       prompt: 'NOTICE who is in the frame and where they are. INFER what colonial manpower did for European belligerents. How does this support the claim that governments mobilized populations in the home countries and the colonies, and what would you need to argue about consequences for the colonies?'
     },
     {
       title: 'Gassed, by John Singer Sargent',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sargent%2C_John_Singer_%28RA%29_-_Gassed_-_Google_Art_Project.jpg',
+      url: '../assets/images/commons/sargent-john-singer-ra-gassed-google-art-project-b9d67a.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Sargent%2C_John_Singer_%28RA%29_-_Gassed_-_Google_Art_Project.jpg',
       caption: 'Painted in 1919 on a British government commission, after the war ended. Later memory of the conflict rather than a record made during it.',
       prompt: 'NOTICE how the figures move and what the background shows. INFER what the commissioning government was willing to have represented. This is both state-commissioned art and a record of chemical weapons: which claim does each of those facts support?'

@@ -42,6 +42,7 @@ const SUITES = {
     ['scripts/validate.js', 'structure, capture wiring, image integrity'],
     ['scripts/test/besurreal-render.test.js', 'Module 04 BeSurreal renders a full scene on every unit lesson, no "undefined"'],
     ['scripts/check-module07-authored.js', 'Units converted to one authored Module 07 evidence pool'],
+    ['scripts/test/no-hotlinked-commons.test.js', 'No student-facing picture is hotlinked from Wikimedia Commons'],
     ['scripts/check-firestore-rules.js', 'Firestore rules not loosened into the shape that leaks everything'],
     ['scripts/test/canvas-paragraphs.test.js', 'Canvas blank-line round trip'],
     ['scripts/test/canvas-rich-clipboard.test.js', 'Canvas rich hierarchy + HTML/plain clipboard contract'],

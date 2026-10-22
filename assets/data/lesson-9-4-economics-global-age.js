@@ -167,8 +167,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Economic Liberalization',
           caption: 'Evidence anchor 1 for Topic 9.4.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg'
+          url: '../assets/images/commons/container-ship-hanjin-taipei-508dd2.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Container_ship_Hanjin_Taipei.jpg'
         }
       },
       {
@@ -302,8 +302,8 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: 'Economic Liberalization',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg',
+      url: '../assets/images/commons/container-ship-hanjin-taipei-508dd2.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Container_ship_Hanjin_Taipei.jpg',
       caption: 'Reagan and Thatcher reduced regulation, taxes, and state ownership while weakening some organized-labor protections.',
       prompt: 'How does this evidence support or qualify a claim about economics in the global age?'
     },

@@ -226,7 +226,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "title": "Wolgemut · 1493",
             "visual": {
               "fit": "contain",
-              "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Danse_macabre_by_Michael_Wolgemut.png",
+              "url": "../assets/images/commons/danse-macabre-by-michael-wolgemut-0f5c43.png",
               "sourceUrl": "https://commons.wikimedia.org/wiki/File:Danse_macabre_by_Michael_Wolgemut.png",
               "alt": "Woodcut of skeletons dancing, from the Dance of Death tradition",
               "credit": "Michael Wolgemut, 1493 · public domain"

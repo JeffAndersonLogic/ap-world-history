@@ -69,16 +69,16 @@
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Istanbul_asv2020-02_img19_Topkap%C4%B1_Palace.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Suleiman_the_Magnificent_of_the_Ottoman_Empire.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Safavid_Empire%2C_circa_1630.png',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_Bosphorus.JPG',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Shah_Abbas_I.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Qianlong_Emperor.jpg'
+    map:             '../assets/images/commons/mughal-empire-1700-29dcf3.png',
+    first10:         '../assets/images/commons/court-of-akbar-from-akbarnama-8879e4.jpg',
+    contentDelivery: '../assets/images/commons/istanbul-asv2020-02-img19-topkap-palace-ff3642.jpg',
+    beSurreal:       '../assets/images/commons/suleiman-the-magnificent-of-the-ottoman-empire-fb65d7.jpg',
+    skill:           '../assets/images/commons/rise-and-fall-of-the-ottoman-empire-1300-1923-0cf219.gif',
+    checkpoint1:     '../assets/images/commons/map-of-the-safavid-empire-circa-1630-5b6cf1.png',
+    evidence:        '../assets/images/commons/topkapi-palace-bosphorus-ef2576.jpg',
+    source:          '../assets/images/commons/shah-abbas-i-f097b8.jpg',
+    beInTheRoom:     '../assets/images/commons/1700-ce-world-map-1696ff.png',
+    checkpoint2:     '../assets/images/commons/qianlong-emperor-1e7a96.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -141,45 +141,49 @@
     prompt: 'Using two cards from different empires, make one claim about how rulers kept control of large empires. Cite one concrete detail from each source, explain how each detail supports your claim, and name one thing either source cannot show.'
   };
 
+  // Repo-local copies of the Commons files each sourceUrl names (saved
+  // 2026-10-21 at up to 1280px). Hotlinked, all six showed fallback art in class.
+  // Taj Mahal photo CC BY-SA 3.0, Mughal map CC BY 3.0, Codex Mendoza scan
+  // CC BY 4.0 (Bodleian); the rest public domain. sourceUrl carries attribution.
   lesson.images = [
     {
       title: 'The court of Akbar, from the Akbarnama',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg',
+      url: '../assets/images/topics/3-2/akbar-court-akbarnama.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Court_of_Akbar_from_Akbarnama.jpg',
       caption: 'A Mughal court painting by the artist Basawan, made about 1585 to 1595 for the Akbarnama, the official history of Akbar\'s reign. It shows the young emperor surrounded by officials and nobles.',
       prompt: 'NOTICE where Akbar is placed and how the people around him are arranged. What can you INFER about who served the emperor and how close each could get to him? This was made for Akbar\'s own official history: what might it show in its best light?'
     },
     {
       title: 'The Qianlong Emperor, by Giuseppe Castiglione',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Qianlong_Emperor.jpg',
+      url: '../assets/images/topics/3-2/qianlong-and-consorts-castiglione.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Qianlong_Emperor.jpg',
       caption: 'Part of a Qing court painting of the Qianlong Emperor and his consorts, painted by the Italian court artist Giuseppe Castiglione. The Qing emperors were Manchus ruling an empire where most people were Han Chinese.',
       prompt: 'NOTICE the emperor\'s clothing, pose and expression. What can you INFER about how a Manchu ruler wanted his Chinese subjects to see him? What can a portrait not tell you about how the empire was actually governed?'
     },
     {
       title: 'The Taj Mahal, Agra (modern photograph)',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Taj_Mahal_in_March_2004.jpg',
+      url: '../assets/images/topics/3-2/taj-mahal-2004.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Taj_Mahal_in_March_2004.jpg',
       caption: 'A photograph taken in 2004 of the Taj Mahal, the mausoleum the Mughal emperor Shah Jahan built for his wife in the 1600s.',
       prompt: 'NOTICE the size, the symmetry and the materials. What can you INFER about the message this tomb sent about the Mughal dynasty? What does a building like this not tell you about the people who paid for it?'
     },
     {
       title: 'Topkapı Palace from the water (modern photograph)',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_Bosphorus.JPG',
+      url: '../assets/images/topics/3-2/topkapi-palace-bosphorus.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Topkapi_Palace_Bosphorus.JPG',
       caption: 'A photograph taken in 2007 of Topkapı Palace in Istanbul, the Ottoman sultans\' palace after the conquest of Constantinople. Its palace school trained the most promising devshirme recruits for high office.',
       prompt: 'NOTICE where the palace sits and how it looks from the sea. What can you INFER about why a sultan would keep his top servants and trainees inside his own palace? What would you need written records to learn about the devshirme?'
     },
     {
       title: 'The Mughal Empire, c. 1700 (a modern map)',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png',
+      url: '../assets/images/topics/3-2/mughal-empire-1700-map.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mughal_Empire_(1700).png',
       caption: 'A modern map showing the Mughal Empire near its greatest size, around 1700.',
       prompt: 'NOTICE how large the empire is and how far its edges are from the capital. What can you INFER about why the emperor needed officials who depended on him? What does the map not show about whether those officials stayed loyal?'
     },
     {
       title: 'Codex Mendoza Tribute List — Huaxtepec Province',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bodl_Arch.Selden.A.1_roll113D_frame27.jpg',
+      url: '../assets/images/topics/3-2/codex-mendoza-huaxtepec.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bodl_Arch.Selden.A.1_roll113D_frame27.jpg',
       caption: 'Revenue evidence. This page from the Codex Mendoza, compiled in the early colonial period from Indigenous knowledge, records tribute goods and quantities associated with the Mexica province of Huaxtepec.',
       prompt: 'NOTICE the repeated goods and quantities recorded on the page. What can you INFER about how tribute turned conquest into recurring state revenue? Because the manuscript was compiled after the Spanish conquest, what can it not prove by itself about how consistently tribute was collected before 1521?'

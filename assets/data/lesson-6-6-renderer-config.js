@@ -44,7 +44,7 @@
   lesson.images = [
     {
       "title": "Register of the Fatel Razack, 1845",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Futtle_Rozack.jpg",
+      "url": "../assets/images/commons/futtle-rozack-29ccff.jpg",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Futtle_Rozack.jpg",
       "caption": "A page from the general register of indentured laborers aboard the Fatel Razack, the first ship to bring Indian indentured workers to Trinidad, 1845. The contract and the passage were parts of the same system.",
       "prompt": "NOTICE what the register records about each person. INFER what the colonial state needed to know in order to manage contract labor. What does a register not tell you about why each person signed, or what awaited them?"

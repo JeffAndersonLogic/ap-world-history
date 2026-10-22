@@ -24,53 +24,49 @@
 })();
 
 window.BEHISTORICAL_LESSON = {
-
   meta: {
     course: "AP WORLD HISTORY",
     unit: "Unit 5: Revolutions",
     topic: "Topic 5.2",
     title: "Nationalism and Revolutions",
-    subtitle: "How Enlightenment ideas fueled the Atlantic Revolutions — and why the Haitian Revolution was the most radical test of whether universal rights were actually universal",
+    subtitle: "1750 to 1900. A grievance, the words to name it, and a chance to act turned the new ideas into revolutions in America, France, Haiti, and Spanish America, and each revolution helped another one start or win. They left behind new countries, new ideas about government, and a new loyalty, to the nation, that joined some states together and pulled peoples away from empires.",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
-
   learningTargets: [
     {
-      target: "I can explain how Enlightenment ideas drove the Atlantic Revolutions and shaped new political systems in the Americas and Europe.",
-      kc: "KC-5.3.I.B",
+      target: "I can explain how a grievance, the words of a revolutionary document, and a chance to act came together to cause revolutions against kings and empires between 1750 and 1900.",
+      kc: 'KC-5.3.I.B',
       theme: "Governance"
     },
     {
-      target: "I can explain the causes and significance of the Haitian Revolution as the most radical Atlantic Revolution, the only one that simultaneously challenged colonialism, slavery, and racial hierarchy.",
-      kc: "KC-5.3.III.B",
+      target: "I can explain what the American, French, Haitian, and Spanish American revolutions created, including independent states in the Americas and new ideas about government such as liberalism and democracy, and how each revolution helped another one start or win.",
+      kc: 'KC-5.3.III.B',
       theme: "Governance"
     },
     {
-      target: "I can explain how nationalism emerged from revolutionary movements and became a destabilizing force in multiethnic empires during the 19th century.",
-      kc: "KC-5.3.II.iii",
+      target: "I can explain how a new loyalty to the nation, built on a shared language, religion, customs, and homeland, was used by governments and by nationalists to join some states together and to pull peoples away from empires.",
+      kc: 'KC-5.3.II.iii',
       theme: "Governance"
     }
   ],
-
   successCriteria: [
     {
-      criteria: "I can describe the American, French, Haitian, and Latin American revolutions; explain one way each drew on Enlightenment ideas; and explain one way each failed to live up to those ideas. I can explain the role of structural conditions (financial crisis, taxation, war debt) alongside Enlightenment ideas in causing each revolution.",
-      kc: "KC-5.3.I.B",
+      criteria: "I can choose one revolution (American, French, Haitian, or Spanish American) and name its grievance (such as British taxes, noble privilege and bread prices, slavery, or creoles shut out of high office), its words (America: the Declaration of Independence; France: the Declaration of the Rights of Man and of the Citizen; Haiti: that French declaration as free people of color claimed it, or Toussaint Louverture's proclamation of 1793; Spanish America: Bolívar's Letter from Jamaica, written five years into the fighting), and its chance (such as Britain's distance, a bankrupt king, a France in revolution, or Napoleon's invasion of Spain).",
+      kc: 'KC-5.3.I.B',
       theme: "Governance"
     },
     {
-      criteria: "I can explain why the Haitian Revolution was uniquely radical, because it was simultaneously a revolution against colonialism, slavery, and racial hierarchy. I can identify at least two specific causes of the Haitian Revolution and explain how Haiti's independence on January 1, 1804 challenged the assumptions of every other Atlantic revolutionary state.",
-      kc: "KC-5.3.III.B",
+      criteria: "I can name what one revolution created (such as the United States, a republic under its 1787 Constitution, Haiti in 1804, or the independent countries of Spanish America by 1826), explain one link in the chain (such as France's debt from the American war, or Haiti's help to Bolívar in 1816), and explain liberalism or democracy as a new idea about government.",
+      kc: 'KC-5.3.III.B',
       theme: "Governance"
     },
     {
-      criteria: "I can define nationalism and explain how it emerged from Atlantic revolutionary movements. I can give at least one specific example of nationalism challenging a multiethnic empire (Greek independence, Italian unification, German unification, Ottoman decline) and explain the mechanism by which nationalist movements destabilized imperial authority.",
-      kc: "KC-5.3.II.iii",
+      criteria: "I can explain what a nation is (people who share a language, a religion, customs, and a homeland), give one example of a government using national loyalty (revolutionary France in 1793) or building a shared loyalty to hold back nationalism (Ottomanism), and give one example of nationalism joining states (Italy in 1861 or Germany in 1871) and one of it pulling a people away from an empire (Greece in 1830, or Serbia, Montenegro, or Romania in 1878).",
+      kc: 'KC-5.3.II.iii',
       theme: "Governance"
     }
   ],
-
   collegeBoardKeyConcepts: [
     {
       code: 'Unit 5: Learning Objective C',
@@ -117,117 +113,124 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: "The Atlantic Revolutions and the Rise of Nationalism",
-    intro: "Between 1776 and 1825, a wave of revolutions swept the Atlantic world, each drawing on the vocabulary of the Enlightenment, each claiming to establish a new political order based on natural rights and popular sovereignty, and each defining those rights very differently depending on who was doing the defining. Understanding the Atlantic Revolutions means understanding both their common Enlightenment foundations and their radically different outcomes.",
+    title: "How Revolutions Made Nations",
+    intro: "Use these cards to see what caused each revolution, how each one helped another start or win, what the revolutions created, and how the nation became the new loyalty that joined some states together and pulled peoples away from empires.",
     videos: [],
     segments: [
       {
-        title: "The American and French Revolutions: Enlightenment in Action",
+        title: "The Recipe, and America's Revolution",
         bullets: [
-          "The **American Revolution** (1776–1783) drew directly on Locke's natural rights theory and Montesquieu's separation of powers. The **Declaration of Independence** (1776) invoked Locke almost word for word: 'all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.' But structural conditions mattered too: the Seven Years War (1756–1763) had left Britain with enormous debt, leading to new taxes on the colonies ('taxation without representation'). Both Enlightenment ideas AND fiscal crisis caused the Revolution, AP causation requires identifying both.",
-          "The American Revolution's limits: it created a functioning republic based on Enlightenment principles, but it preserved slavery (approximately 20% of the colonial population was enslaved), restricted political participation to white male property owners, and dispossessed Indigenous peoples from their land. The Declaration's 'all men' explicitly did not include enslaved Africans or women in the political rights it claimed.",
-          "The **French Revolution** (1789–1799) was more radical in its initial promises and more violent in its execution. The **Declaration of the Rights of Man and Citizen** (1789) declared universal natural rights and popular sovereignty, and abolished feudalism and aristocratic privileges. The radical phase, the **Terror** (1793–1794), led by Robespierre, executed tens of thousands, including Louis XVI, in the name of the general will. In 1794, France became the first European power to abolish slavery in its colonies, partly because Toussaint Louverture had allied with France. Napoleon reversed this in 1802.",
-          "Structural causes of the French Revolution: France was nearly bankrupt after supporting the American Revolution. The tax system exempted the aristocracy and the Church, placing the burden entirely on commoners. Food shortages in 1788–1789 pushed ordinary people to desperation. The financial crisis created the conditions; Enlightenment ideas provided the vocabulary for what came next."
+          "Ideas alone did not make revolutions. A revolution needed a **grievance**, a wrong many people felt; **the words** to name it, in a document people could rally around; and **a chance**, a moment when the old ruler was broke, far away, or gone.",
+          "**America's grievance:** the Seven Years' War (1756 to 1763) left Britain deep in debt, and Parliament taxed its American colonies with laws such as the **Stamp Act** of 1765. The colonies had no members in Parliament: \"no taxation without representation.\" Colonists bought goods that carried the protest, such as a teapot painted \"No Stamp Act.\"",
+          "**The words:** the **Declaration of Independence** (4 July 1776) said governments get \"their just powers from the consent of the governed,\" and that the people may \"alter or to abolish\" a government that destroys their rights. **The chance:** Britain was an ocean away, and its 1763 victory had pushed France out of North America, so colonists no longer needed British soldiers to protect them. Once the fighting began in 1775, France joined the war in 1778 and helped the colonists win.",
+          "**What it created:** the United States, independent by 1783, and in 1787 a constitution for a **republic**, a country with no king whose leaders are elected. The College Board calls it \"a model and inspiration for a number of the revolutions that followed.\" It kept slavery, and most states let only men who owned property vote."
         ],
         image: {
-          title: "Enlightenment claims become revolutions",
-          caption: "BeHistorical topic artwork for this card. In America and France, arguments about consent and representation turned into constitutions and wars.",
-          url: "",
-          sourceUrl: ""
+          title: "Protest you could pour",
+          caption: "A teapot painted \"No Stamp Act,\" made in England between 1766 and 1775 for sale in the American colonies. Parliament repealed the Stamp Act in 1766. Metropolitan Museum of Art.",
+          url: "../assets/images/topics/5-2/no-stamp-act-teapot-1766-75.jpg",
+          sourceUrl: "https://www.metmuseum.org/art/collection/search/8332"
         }
       },
       {
-        title: "The Haitian Revolution: The Most Radical Atlantic Revolution",
+        title: "France: One Revolution's Bill Starts the Next",
         bullets: [
-          "The **Haitian Revolution** (1791–1804) was the most radical of the Atlantic Revolutions, the only one that was simultaneously a revolution against colonialism, against slavery, and against racial hierarchy. It was led by enslaved and formerly enslaved people who explicitly claimed the universal rights that French and American revolutionaries had declared for all humanity but refused to extend to them. Saint-Domingue (Haiti) was France's most profitable colony, producing 40% of Europe's sugar and 60% of its coffee, all on the labor of approximately 500,000 enslaved people.",
-          "The revolution began in August 1791 partly at the **Bois Caïman** ceremony, where enslaved people made a covenant to fight for freedom. **Toussaint Louverture**, a formerly enslaved man of exceptional military and political genius, emerged as the dominant leader. He built a disciplined army that successively defeated the Spanish (who had invaded), the British (who invaded in 1793 hoping to take the colony), and eventually the French army sent by **Napoleon Bonaparte** in 1802 to reimpose slavery.",
-          "The context of hypocrisy was explicit: when the French Revolution declared universal rights in 1789, free people of color in Saint-Domingue immediately demanded legal equality, and were denied. When France briefly abolished slavery in 1794, it was partly because Toussaint had allied with France against Spain. When Napoleon sent 50,000 soldiers to reimpose slavery in 1802, the Haitian revolutionary forces defeated them (partly through yellow fever, which killed tens of thousands of French troops). **Haiti declared independence on January 1, 1804**, the first Black republic in the Western Hemisphere and only the second independent state in the Americas.",
-          "The aftermath: Haiti's independence terrified slaveholders across the Atlantic world. France demanded **150 million francs** (later reduced to 90 million) as the price of diplomatic recognition, an enormous debt that Haiti did not finish paying until 1947. This 'independence debt' structurally impoverished Haiti for a century and a half. The United States refused to recognize Haiti until 1862, during the Civil War, because Southern slaveholders feared the implications. The Haitian Revolution is the clearest test of whether Enlightenment universalism was real: it was real enough to inspire a revolution, but the existing Atlantic world punished Haiti for taking it seriously."
+          "**The chance came from America.** Helping the Americans win cost France a fortune, and by 1788 Louis XVI's government was nearly bankrupt. To raise taxes he called the **Estates-General**, which had not met since 1614.",
+          "**The grievance:** the clergy and nobles paid little in taxes, the Third Estate (everyone else) paid most, and bread prices soared after the bad harvest of 1788. In June 1789 the Third Estate declared itself the National Assembly; on 14 July a Paris crowd stormed the Bastille, a royal fortress and prison.",
+          "**The words:** in August 1789 the Assembly ended the nobles' privileges and adopted the **Declaration of the Rights of Man and of the Citizen**: \"Men are born and remain free and equal in rights,\" and \"the principle of all sovereignty resides essentially in the nation.\"",
+          "**What it created:** France was remaking a kingdom, not breaking away from one. It became a republic in 1792 and executed the king in 1793; during the Terror (1793 to 1794) the government killed thousands of people it called enemies. In 1799 Napoleon Bonaparte took power, and in 1804 he crowned himself emperor. His armies spread the revolution's laws across Europe and stirred resentment of French rule."
         ],
         image: {
-          title: "Haiti: the most radical Atlantic revolution",
-          caption: "BeHistorical topic artwork for this card. Enslaved people took the language of universal rights literally and destroyed the richest slave colony in the Americas.",
-          url: "",
-          sourceUrl: ""
+          title: "The Bastille, 14 July 1789",
+          caption: "Charles Thévenin's etching of the storming of the Bastille, made in 1790, the year after the event. Cleveland Museum of Art.",
+          url: "../assets/images/topics/5-2/storming-of-the-bastille-thevenin-1790.jpg",
+          sourceUrl: "https://www.clevelandart.org/art/2015.21"
         }
       },
       {
-        title: "Latin American Independence and the Rise of Nationalism",
+        title: "Haiti and Spanish America: The Words Claimed",
         bullets: [
-          "**Latin American independence movements** (1810–1825) completed the Atlantic Revolutionary wave. They were largely led by **creoles**, people of European descent born in the Americas, who resented Spanish-born **peninsulares** monopolizing senior colonial offices, resented Enlightenment-inspired trade restrictions, and were inspired by the American and French examples. **Simón Bolívar** (Venezuela, Colombia, Ecuador, Peru, Bolivia) and **José de San Martín** (Argentina, Chile) led military campaigns across South America, explicitly invoking Enlightenment ideas about natural rights and republican government.",
-          "**Miguel Hidalgo** launched Mexico's independence movement in September 1810 with his '**Grito de Dolores**', a call to revolt that drew on indigenous and mestizo populations and was more socially radical than most other Latin American independence movements. Mexico's independence in 1821 resulted in a conservative constitutional monarchy before a republic was established.",
-          "The limits: Latin American independence produced conservative outcomes in most cases. Creole elites replaced peninsulares at the top of the social hierarchy, but the **casta system**, the Catholic Church's power, and the plantation economy all continued. Indigenous peoples and enslaved Africans gained formal legal equality in most new constitutions, but formal equality and social reality diverged sharply. Bolívar himself became increasingly authoritarian, lamenting that 'America is ungovernable.'",
-          "**Nationalism**, the ideology that emerged from Atlantic Revolutionary movements, held that people sharing a common culture, language, history, or ethnicity should have their own self-governing state. Initially linked to liberal and democratic ideals ('the right of peoples to self-determination'), nationalism became the most powerful destabilizing force in 19th-century politics. The **Ottoman Empire** faced Greek independence (1821–1829), Serbian autonomy, and Bulgarian nationalism. The **Habsburg Empire** faced Hungarian, Czech, Italian, and German nationalist movements. The **Russian Empire** faced Polish nationalist uprisings. For the AP exam, nationalism matters primarily as a **cause** of the instability and eventual collapse of multiethnic empires in the 19th and early 20th centuries."
+          "**Haiti's grievance:** Saint-Domingue was France's most valuable colony, its sugar and coffee grown by more than 400,000 enslaved people, more than five for every free person. **The words:** free people of color claimed the rights of the 1789 declaration and were refused until 1792. **The chance:** with France in revolution, the enslaved rose up in August 1791. **Toussaint Louverture**, born enslaved and freed before the revolution, became its most famous leader.",
+          "French officials began freeing the enslaved in 1793, and in February 1794 France abolished slavery in all its colonies, after two and a half years of fighting. In 1802 Napoleon restored slavery in Guadeloupe and sent an army to retake Saint-Domingue; Toussaint died in a French prison in 1803. **Jean-Jacques Dessalines** fought on, and on 1 January 1804 declared the independence of **Haiti**, the second independent country in the Americas and the first founded by people who had freed themselves from slavery.",
+          "**Spanish America's grievance:** **creoles**, people of Spanish descent born in the Americas, were kept out of the highest offices, which went to **peninsulares**, men born in Spain. **The chance:** in 1808 Napoleon invaded Spain and forced its king from the throne, and in 1810 creole leaders set up governments of their own. **The words:** Simón Bolívar's **Letter from Jamaica** (1815): \"The hatred that the Peninsula has inspired in us is greater than the ocean between us.\"",
+          "**One revolution helps another win:** in 1816 Haiti's president, Alexandre Pétion, gave Bolívar guns, supplies, and men, and asked him to end slavery in the lands he freed. **What it created:** by 1826 Spain held only Cuba and Puerto Rico in the Americas. Creole elites took the top places, and slavery lasted in several new countries for decades."
         ],
         image: {
-          title: "Latin American independence and new nationalisms",
-          caption: "BeHistorical topic artwork for this card. Creole elites led independence movements that changed who governed far more than they changed the social order.",
-          url: "",
-          sourceUrl: ""
+          title: "Toussaint Louverture, as Paris saw him",
+          caption: "A hand-colored print made in France in 1802, the year Napoleon's army landed in Saint-Domingue. A French printmaker's idea of the general, not a portrait from life. Metropolitan Museum of Art.",
+          url: "../assets/images/topics/5-2/toussaint-louverture-on-horseback-1802.jpg",
+          sourceUrl: "https://www.metmuseum.org/art/collection/search/852913"
+        }
+      },
+      {
+        title: "New Ideas, and the Nation Redraws the Map",
+        bullets: [
+          "**New ideas about government:** anger at kings and empires produced the **republic** with a written constitution; **liberalism**, the belief that a constitution and an elected parliament should limit the government and protect rights such as free speech, a free press, and property (many liberals still wanted only men with property to vote); and **democracy**, rule by the people, with the vote for all men. These ideas helped set off new revolutions in Europe in 1830 and 1848.",
+          "**The nation:** if a state belongs to its people, which people? More and more, the answer was everyone who shared a language, a religion, customs, and a homeland. Governments used that loyalty: in 1793 revolutionary France called the whole nation to war.",
+          "**Joining states:** Italian nationalists, among them Cavour and Garibaldi, united most of Italy in 1861 and added Rome in 1870. In Germany, liberals at Frankfurt failed in 1848; then Prussia's Otto von Bismarck said great questions are decided \"by iron and blood,\" and after three wars the **German Empire** was proclaimed on 18 January 1871 in the Hall of Mirrors at Versailles.",
+          "**Breaking an empire:** Serbs and Greeks rebelled against the Ottoman Empire; Greece was declared an independent state, to be ruled by a king, in 1830, and Serbia, Montenegro, and Romania were recognized as independent in 1878. The Ottoman government answered with **Ottomanism**, promising equal treatment to all subjects (1856) and making every subject an Ottoman citizen (1869), one loyalty for everyone, but it did not stop the Balkan nations from leaving."
+        ],
+        image: {
+          title: "The Hall of Mirrors at Versailles",
+          caption: "Sébastien Leclerc's etching of 1684 shows the hall as Louis XIV's court knew it. In 1871 the German Empire was proclaimed in this room. Metropolitan Museum of Art.",
+          url: "../assets/images/topics/5-2/hall-of-mirrors-leclerc-1684.jpg",
+          sourceUrl: "https://www.metmuseum.org/art/collection/search/387871"
         }
       }
     ]
   },
 
   map: {
-    title: "The Atlantic Revolutionary World, c. 1776–1825",
+    title: "Revolutions and New Nations, 1775 to 1878",
     url: "../assets/images/instructional-maps/topic-5-2.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-5-2.svg",
-    caption: "Between 1776 and 1825, a wave of revolutions swept the Atlantic world, from the thirteen British colonies in North America to the Caribbean to the Spanish and Portuguese colonies of Latin America. Each revolution drew on Enlightenment ideas while producing very different outcomes.",
-    intro: "Trace the Atlantic Revolutionary wave from north to south: American Revolution (1776), French Revolution (1789), Haitian Revolution (1791–1804), Latin American independence (1810–1825). Notice how these revolutions spread across the Atlantic world and how each was shaped by its local context, who held power, who was enslaved, who was colonized.",
-    prompt: "Using the map, explain why the Haitian Revolution happened in Saint-Domingue rather than somewhere else. What specific features of Saint-Domingue's situation, its population, its wealth, its relationship to the French Revolution, made it uniquely explosive? What does this geographic and demographic specificity reveal about the causes of the Haitian Revolution?"
+    caption: "A BeHistorical map of the four revolutions of 1775 to 1826 in the Atlantic world, and of the new nation-states nationalism made in Europe between 1830 and 1878.",
+    intro: "Start at the United States and follow the three numbered arrows: from the United States to France, from France to Haiti, and from Haiti to Spanish America. Then look at Europe, where Italy and Germany were joined together and new Balkan states broke away from the Ottoman Empire.",
+    prompt: "Using the map, explain how one revolution helped another start or win. Name the two places, their dates, and what passed from one to the other: a debt, words, or help."
   },
 
   deepReading: {
-    title: "Who Counted as the People",
-    desc: "A textbook-depth companion on why all four Atlantic revolutions began in a treasury, what each borrowed from the Enlightenment and whom each left out, Haiti as three revolutions at once and the indemnity France charged for it, and the mechanism by which nationalism leaves a multiethnic empire no good answer. Optional, and the place to go before writing about any revolution in this unit.",
+    title: "How Revolutions Made Nations",
+    desc: "A longer, optional chapter on the same story: the recipe of grievance, words, and chance; the American, French, Haitian, and Spanish American revolutions and how each helped another start or win; the new ideas about government they created; and how the nation joined Italy and Germany together and broke the Balkans away from the Ottoman Empire.",
     url: "deep-reading-topic-5-2-nationalism-and-revolutions.html"
   },
 
   first10: {
-    title: 'First & 10: The Revolutionary Atlantic',
+    title: 'First & 10: How Revolutions Made Nations',
     embedUrl: 'first-and-10-topic-5-2-nationalism-and-revolutions-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 5.2 lesson path.'
+    note: 'Read the First & 10 story, answer the three questions, then return to the 5.2 lesson path.'
   },
 
   evidenceLab: {
-    title: "Evidence Lab: The Atlantic Revolutions Compared",
-    intro: "Use the evidence below to analyze how different Atlantic Revolutions applied Enlightenment ideas, and how each defined the limits of those applications differently. Strong AP comparison arguments require specific evidence and a clear explanation of both similarities and differences.",
-    prompt: "Choose one piece of evidence. Explain what it reveals about either the similarities or the differences among the Atlantic Revolutions. Then explain what that comparison reveals about the relationship between Enlightenment ideals and political reality.",
-    items: [
-      { title: "American Declaration of Independence (1776)", detail: "Thomas Jefferson wrote: 'We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness. That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed, That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it.' Jefferson was the owner of over 600 enslaved people over his lifetime. Analyze: how does this tension between Jefferson's words and his practice define the limits of the American Revolution's Enlightenment principles?" },
-      { title: "Toussaint Louverture's Address to His Soldiers, c. 1797", detail: "Toussaint Louverture addressed his army: 'I was born a slave, but nature gave me the soul of a free man. Friends and brothers, God who created the sun which gives us light, who rouses the waves and rules the storm, though hidden in the clouds, he watches us. He sees all that the white man does. The god of the white man inspires him with crime, but our god calls upon us to do good works. Our god, who is good to us, orders us to revenge our wrongs. He will direct our arms and aid us. Throw away the image of the god of the whites who has so often caused us to weep, and listen to the voice of liberty, that speaks in the heart of all of us.' How does Toussaint use and transform Enlightenment language? How does his invocation of God differ from the philosophes' invocation of reason?" },
-      { title: "Simón Bolívar, Jamaica Letter (1815)", detail: "Bolívar wrote: 'It is a grandiose idea to think of consolidating the New World into a single nation, united by pacts into a single bond. As it has a single origin, a single language, the same customs, and one religion, it ought to have a single government to confederate the different states as they are formed... I do not desire to see America fashioned into the greatest nation in the world so much for its extent and wealth as for its freedom and glory. Although I seek perfection for the government of my country, I cannot persuade myself that the New World can, at the moment, be organized as a great republic.' Analyze: how does Bolívar's vision of Latin American unity differ from the American and French revolutionary visions? What does his skepticism about immediate democracy reveal about the limits of Enlightenment universalism in the Latin American context?" }
-    ]
+    title: "Evidence Lab: Causes and Effects of the Revolutions",
+    intro: "Use the cards to find causes and effects of the revolutions, and what each source can and cannot show.",
+    prompt: "Choose two cards. For each, say what kind of source it is, what it shows about a cause or an effect of the revolutions, and one thing it cannot tell you.",
+    items: []
   },
 
   primarySource: {
-    title: "Primary Source: Toussaint Louverture, Address to His Army, c. 1797–1798",
-    intro: "Toussaint Louverture (c. 1743–1803) was born enslaved on the French colony of Saint-Domingue (present-day Haiti). He became the dominant military and political leader of the Haitian Revolution, defeating Spanish, British, and eventually French armies before being captured through treachery in 1802. He died in a French prison in 1803, months before Haiti's independence. This adapted passage is drawn from his speeches and correspondence to his army during the revolutionary period. Toussaint was extraordinarily literate for a formerly enslaved person, he had unusual access to books and learning as a coachman before the revolution, and his writing demonstrates a sophisticated engagement with Enlightenment ideas.",
-    text: [
-      "Brothers and friends: I am Toussaint Louverture. My name is perhaps known to you. I have undertaken vengeance. I want Liberty and Equality to reign in Saint-Domingue. I am working to make that happen. Unite yourselves to us, brothers, and fight with us for the same cause.",
-      "I was born a slave, but nature gave me the soul of a free man. I have made use of the arms that Providence placed in my hands to avenge the outrages committed against my race. To all Frenchmen who have believed, even for a single moment, that slavery could be reconciled with the rights of man, I say this: the laws of France and the laws of nature are not the same.",
-      "We have dared to be free, when tyranny has made us tremble. We have shed our blood. Let us shed it until our last drop. The French say that men are free and equal. We have taken them at their word. If freedom belongs to all men by the right of nature, then it belongs to us as much as it belongs to any man who has ever set foot on French soil.",
-      "To those who send armies against us to reimpose chains, I say only this: we preferred death to slavery, and we have proven it. We will prove it again."
-    ],
+    title: "Primary Source: Simón Bolívar, the Letter from Jamaica, 1815",
+    intro: "In 1815 the fight for independence in Spanish America was going badly. Simón Bolívar, a creole from Caracas who had led the patriots of Venezuela, was beaten and in exile on the British island of Jamaica. In September he wrote a long letter in answer to a British resident of the island, arguing that Spanish America would win its independence and asking what kind of government it should have. These are three short passages. (\"The Peninsula\" means Spain; \"Costa Firme\" means the northern coast of South America, where Venezuela is; \"wholly representative\" means a government chosen entirely by the people's votes.)",
+    attribution: "Simón Bolívar, \"Reply of a South American to a Gentleman of This Island [Jamaica],\" Kingston, 6 September 1815, translated by Lewis Bertrand, Selected Writings of Bolívar (1951)",
+    text: "<strong>Passage 1.</strong> The hatred that the Peninsula has inspired in us is greater than the ocean between us.<br><br><strong>Passage 2.</strong> We have been harassed by a conduct which has not only deprived us of our rights but has kept us in a sort of permanent infancy with regard to public affairs.<br><br><strong>Passage 3.</strong> Events in Costa Firme have proved that institutions which are wholly representative are not suited to our character, customs, and present knowledge.",
     questions: [
-      "How does Toussaint invoke Enlightenment ideas about natural rights and liberty? What specific phrases show that he is using the same vocabulary as the French and American revolutionaries?",
-      "Toussaint says 'the laws of France and the laws of nature are not the same.' What does he mean by this? How does this distinction reveal the central tension of the Haitian Revolution, between Enlightenment principles and French colonial practice?",
-      "How does Toussaint's position as a formerly enslaved person change the meaning of these Enlightenment arguments? Is his invocation of natural rights the same as Jefferson's invocation of the same concept, or is it different? Explain your reasoning with specific evidence from both texts."
+      "Identify Bolívar's argument in Passages 1 and 2 in your own words. What grievance against Spain does Passage 2 name?",
+      "In Passage 3, what kind of government does Bolívar doubt Spanish America is ready for? What does that tell you about the kind of government he wanted instead?",
+      "The Declaration of Independence says governments get \"their just powers from the consent of the governed.\" Compare that argument with Passages 1 and 3: explain one way the two documents agree and one way they differ, and what caused the difference."
     ]
   },
 
   beSurreal: {
-    title: "BeSurreal: You Are a Soldier in Toussaint's Army, c. 1798",
-    desc: "You are a formerly enslaved man in Toussaint Louverture's army, Saint-Domingue, c. 1798. You carry in your pack, tucked inside a cloth wrapping so it won't be damaged in the rain, a copy of the French Declaration of the Rights of Man and Citizen from 1789. You took it from a French officer you captured last year.",
-    intro: "You cannot read French fluently, but you can read some of it. The word 'liberté' you know. 'Droits', rights. 'Homme', man. You have been told by a literate soldier in your unit what the document says: that all men are created equal, that they possess natural rights, that the source of all sovereignty is the nation, that the law is the expression of the general will. You have fought three years. You have watched men die, your brother among them, at the crossing of the Artibonite River. You have also watched French ships arrive with soldiers sent specifically to reimpose slavery.",
-    detail: "The irony is not abstract to you. The same country that wrote this document sent those soldiers. You do not know if Napoleon has read this document, surely he has. You do not know how to explain why a man can write that all men possess natural rights and then send an army to enslave them. You think about this at night. You carry this document because you believe the words are true, even if the people who wrote them do not. You believe the revolution you are fighting is more consistent with the document's logic than the people who wrote it. You have tried to explain this to younger soldiers who ask you why you fight.",
-    prompt: "Write a letter to a fellow soldier in your unit, a man who joined the army last month and is struggling to understand why he is fighting. Explain to him what the French Declaration of Rights says, what it means to you, and why you are fighting even though the people who wrote it are now fighting against you. Explain the contradiction honestly, don't pretend it isn't there, but explain why the contradiction makes the revolution more necessary, not less. Your letter should be honest, specific, and grounded in the situation you are living through."
+    title: "BeSurreal: Les Cayes, Haiti, March 1816",
+    desc: "You are a Haitian veteran of the revolution, born enslaved, now a free man in the southern port of Les Cayes. Ships in the harbor are loading guns and gunpowder for Simón Bolívar, a creole general from Caracas who lost his war against Spain and came to Haiti for help. You have been asked to sail with him.",
+    intro: "Twelve years ago you were at the end of the war that made Haiti free. You remember Napoleon's soldiers, the fever that killed so many of them, and the day in January 1804 when Dessalines declared independence. Now Haiti's president, Alexandre Pétion, has given this stranger guns, supplies, and men. People on the docks say Pétion asked for one thing in return: that Bolívar end slavery in every land he frees. Bolívar is a rich man who owned enslaved people on his family's estates. He talks about liberty. So did the French.",
+    detail: "You have three things to weigh. First, the people of Spanish America have a real grievance: the men born in Spain rule them, and Spain decides what they may grow and trade. Second, the words are familiar: liberty, rights, the people. You have heard those words before, from men who did not mean them for you. Third, there may be a chance: Napoleon pushed Spain's king off his throne in 1808, and although the king has it back now, his armies have to fight an ocean away from home. If Bolívar wins and keeps his promise, enslaved people from Venezuela to Peru could be free. If he wins and forgets it, you will have helped build another country where slavery lasts.",
+    prompt: "Write a letter to your sister in Port-au-Prince explaining whether you will sail with Bolívar. Explain what grievance the people of Spanish America have, why Haiti is helping, and what you will demand from Bolívar in return. Use the words grievance, chance, and slavery. Be honest about the risk that he will not keep his promise."
   },
 
   beInTheRoom: {
     url: '',
-    desc: "Advise Toussaint Louverture on whether to negotiate with Napoleon or fight to the end, join Simón Bolívar's planning session before the battle that will determine the fate of South American independence, or debate a French revolutionary in 1794 about whether the abolition of slavery in the colonies is a genuine application of the Declaration of Rights or a tactical maneuver."
+    desc: "Port-Républicain (Port-au-Prince), Saint-Domingue, spring 1801. A council must write a constitution that defends freedom from slavery, keeps the colony fed and defended, and decides how far to stand against France."
   }
 
 };

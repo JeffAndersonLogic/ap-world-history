@@ -99,11 +99,11 @@
     first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Decolonization_of_the_Americas.png',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Decolonization_of_the_Americas.png',
     beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sirimavo_Bandaranaike.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Aswan_High_Dam.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Millions_fled_across_the_border_to_the_other_country.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Lord_Mountbatten_swears_in_Jawaharlal_Nehru_as_the_first_Prime_Minister_of_free_India_on_Aug_15%2C_1947.jpg',
+    skill: '../assets/images/commons/aswan-high-dam-1c45b5.jpg',
+    checkpoint1: '../assets/images/commons/millions-fled-across-the-border-to-the-other-country-e20147.jpg',
+    evidence: '../assets/images/commons/lord-mountbatten-swears-in-jawaharlal-nehru-as-the-first-prime-ministe-2938fb.jpg',
     source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jawaharlal_Nehru_1947.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Millions_fled_across_the_border_to_the_other_country.jpg',
+    beInTheRoom: '../assets/images/commons/millions-fled-across-the-border-to-the-other-country-e20147.jpg',
     checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Decolonization_of_the_Americas.png'
   };
 
@@ -148,21 +148,21 @@
   lesson.images = [
     {
       title: 'Jawaharlal Nehru and Lord Mountbatten, August 1947',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Lord_Mountbatten_swears_in_Jawaharlal_Nehru_as_the_first_Prime_Minister_of_free_India_on_Aug_15%2C_1947.jpg',
+      url: '../assets/images/commons/lord-mountbatten-swears-in-jawaharlal-nehru-as-the-first-prime-ministe-2938fb.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Lord_Mountbatten_swears_in_Jawaharlal_Nehru_as_the_first_Prime_Minister_of_free_India_on_Aug_15%2C_1947.jpg',
       caption: 'India\'s first Prime Minister Jawaharlal Nehru with Lord Mountbatten, the last British Viceroy of India, at independence. The handoff of power was negotiated, but the Partition it accompanied produced one of the largest humanitarian crises of the 20th century.',
       prompt: 'What does this image reveal about the relationship between negotiated independence and the human costs of boundary redrawing? How does Nehru\'s presence here connect to his role in managing the Partition crisis as head of a weeks-old government?'
     },
     {
       title: 'Julius Nyerere signs the Arusha Declaration, 1967',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Julius_Nyerere.jpg',
+      url: '../assets/images/commons/julius-nyerere-180669.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Julius_Nyerere.jpg',
       caption: 'Julius Nyerere, President of Tanzania, at the time of the 1967 Arusha Declaration, which committed Tanzania to African socialism (ujamaa) and nationalization of banks and major industries as the path to postcolonial development.',
       prompt: 'What does Nyerere\'s African socialist development model reveal about the economic choices newly independent states faced? How does ujamaa compare to Nasser\'s model in Egypt or Indira Gandhi\'s in India, what do they share as an approach to postcolonial development?'
     },
     {
       title: 'South Asian immigrants arriving in Britain, 1960s',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Passenger_list_header_M.V._%22Empire_Windrush%22%2C_Tilbury_June_1948.jpg',
+      url: '../assets/images/commons/passenger-list-header-m-v-empire-windrush-tilbury-june-1948-b2137d.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Passenger_list_header_M.V._%22Empire_Windrush%22%2C_Tilbury_June_1948.jpg',
       caption: 'South Asian Commonwealth citizens arriving in Britain during the 1960s, one of the three CED migration examples illustrating how former colonial subjects moved to imperial metropoles, maintaining cultural and economic ties after independence.',
       prompt: 'How does the migration of South Asians to Britain illustrate KC-6.2.III.B? What does it reveal about the economic relationship between former colonies and former colonizers that persisted after formal independence? What \'continuities\' does this migration represent?'

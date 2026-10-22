@@ -349,7 +349,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "position": "30% 40%"
         },
         "evidence": {
-          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg",
+          "url": "../assets/images/commons/catalan-atlas-bnf-sheet-6-mansa-musa-ec09cc.jpg",
           "alt": "Mansa Musa holding gold on the Catalan Atlas",
           "credit": "Catalan Atlas, 1375 · BnF · public domain"
         }
@@ -373,7 +373,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "subtitle": "Markets · scholarship · Islam · administration",
       "position": "upper-left",
       "visual": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Djenn%C3%A9_2.jpg",
+        "url": "../assets/images/commons/great-mosque-of-djenne-2-679fb3.jpg",
         "alt": "The Great Mosque of Djenné, a 1907 building on the site of earlier mosques",
         "credit": "Great Mosque of Djenné · present building 1907, on the site of earlier mosques · Wikimedia Commons"
       },

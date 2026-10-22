@@ -67,15 +67,15 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/China_-_Song_Dynasty-en.svg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Along_the_River_During_the_Qingming_Festival_%28detail_of_original%29.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Huizong.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jiao%20zi.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Song%20Imperial%20Examination.JPG',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Palastexamen-SongDynastie.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Zhu%20xi.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Confucius_Tang_Dynasty.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emperor_Huizong.jpg',
+    map: '../assets/images/commons/china-song-dynasty-en-b0bd31.svg',
+    first10: '../assets/images/commons/along-the-river-during-the-qingming-festival-detail-of-original-18fe20.jpg',
+    contentDelivery: '../assets/images/commons/huizong-264f7f.jpg',
+    beSurreal: '../assets/images/commons/jiao-zi-535f72.jpg',
+    skill: '../assets/images/commons/song-imperial-examination-c3124e.jpg',
+    checkpoint1: '../assets/images/commons/palastexamen-songdynastie-d17b56.jpg',
+    evidence: '../assets/images/commons/zhu-xi-de5172.jpg',
+    source: '../assets/images/commons/confucius-tang-dynasty-763266.jpg',
+    beInTheRoom: '../assets/images/commons/emperor-huizong-0b0c93.jpg',
     checkpoint2: '../assets/images/module-art/unit-1/topic-1-1/checkpoint2.svg'
   };
 
@@ -139,28 +139,28 @@
   lesson.images = [
     {
       title: 'Song Imperial Examination',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Song%20Imperial%20Examination.JPG',
+      url: '../assets/images/commons/song-imperial-examination-c3124e.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Song_Imperial_Examination.JPG',
       caption: 'Governance evidence. A depiction of candidates participating in the imperial examination system associated with scholar-official government.',
       prompt: 'NOTICE one detail about the examination setting or participants. INFER what that detail suggests about how officials were selected. What claim about Song government could this evidence support?'
     },
     {
       title: 'Confucius Portrait, Tang Dynasty',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Confucius_Tang_Dynasty.jpg',
+      url: '../assets/images/commons/confucius-tang-dynasty-763266.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Confucius_Tang_Dynasty.jpg',
       caption: 'Cultural continuity evidence. This portrait predates the Song and represents the long-standing prestige of Confucius and Confucian learning in China.',
       prompt: 'NOTICE that this evidence comes from before the Song period. What can its continued relevance help you INFER about cultural continuity? What would you need other evidence to prove about change under the Song?'
     },
     {
       title: 'Jiaozi Paper Money',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jiao%20zi.jpg',
+      url: '../assets/images/commons/jiao-zi-535f72.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Jiao_zi.jpg',
       caption: 'Economic evidence. Jiaozi was an early form of paper currency used in Song China as commercial exchange expanded.',
       prompt: 'NOTICE what kind of economic tool this is. INFER what problem paper money could solve in a large commercial economy. What claim about commercialization could this support?'
     },
     {
       title: 'Grand Canal Route',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Modern_Course_of_Grand_Canal_of_China.png',
+      url: '../assets/images/commons/modern-course-of-grand-canal-of-china-d99d0e.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Modern_Course_of_Grand_Canal_of_China.png',
       caption: 'Infrastructure evidence. A reference map of the Grand Canal system linking major regions of eastern China; parts of the system were expanded and heavily used under the Song.',
       prompt: 'NOTICE which regions the canal links. INFER how moving grain, taxes, and goods through this corridor could strengthen both government and commerce. What claim could the map support, and what can it not prove by itself?'

@@ -53,7 +53,7 @@
 'use strict';
 const T=window.BEHISTORICAL_TEACHING;
 if(!T||!Array.isArray(T.slides))return;
-const FP='https://commons.wikimedia.org/wiki/Special:FilePath/';
+// Pictures are repo-local copies (scripts/mirror-commons-images.js); FILE is the credit page.
 const FILE='https://commons.wikimedia.org/wiki/File:';
 const MAPS='../assets/images/instructional-maps/';
 const LOCAL='../assets/images/topics/2-6/';
@@ -62,7 +62,7 @@ const local=name=>LOCAL+encodeURIComponent(name);
 const TRIUMPH={url:local('2.6 - The-Triumph-of-Death-1024x730.webp'),alt:'Pieter Bruegel the Elder\'s painting The Triumph of Death: an army of skeletons sweeps across a burning, barren landscape, driving crowds of people of every rank into a trap, with a cart of skulls on the left',credit:'Pieter Bruegel the Elder, c. 1562 · Museo del Prado · public domain'};
 const CROPS={fit:'contain',url:MAPS+'topic-2-6-crops.svg',alt:'Instructional map tracing bananas into Africa, new rice varieties into East Asia and citrus around the Mediterranean',credit:'BeHistorical instructional map · secondary reconstruction'};
 const PLAGUE_MAP={fit:'contain',url:local('2.6 - Map of the Bubonic Plague - web.jpg'),alt:'Map titled The Spread of the Plague in Europe, 1346 to 1353. Shading from dark red for 1346 to pale lilac for 1352 and 1353 shows the plague arriving from the east at the Black Sea, crossing the Mediterranean to Italy, Egypt and the Levant, and spreading north across Europe to Scandinavia and Russia, with arrows along sea lanes and roads and dots marking cities with known death rates',credit:'Map · Simeon Netchev · World History Encyclopedia',tagPos:'tl'};
-const DANCE={fit:'contain',url:FP+'Danse_macabre_by_Michael_Wolgemut.png',sourceUrl:FILE+'Danse_macabre_by_Michael_Wolgemut.png',alt:'Woodcut of skeletons dancing, from the Dance of Death tradition',credit:'Michael Wolgemut, 1493 · public domain'};
+const DANCE={fit:'contain',url:'../assets/images/commons/danse-macabre-by-michael-wolgemut-0f5c43.png',sourceUrl:FILE+'Danse_macabre_by_Michael_Wolgemut.png',alt:'Woodcut of skeletons dancing, from the Dance of Death tradition',credit:'Michael Wolgemut, 1493 · public domain'};
 const CARGO_HOLD_AI={ai:true,url:local('2.6 - Cargo hold - cover.jpg'),alt:'An illustrated dim ship\'s cargo hold lit by a shaft of light from a hatch: crates of citrus fruit, bundles of plants and stacked grain sacks, with several rats crawling over the sacks'};
 const RICE_AI={ai:true,url:local('2.6 - Rice in East Asia.jpg'),alt:'An illustrated scene of farmers in straw hats planting rice seedlings in flooded terraced paddies below a hillside village',position:'50% 60%'};
 

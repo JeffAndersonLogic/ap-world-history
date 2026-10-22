@@ -119,7 +119,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Chinggis Khan',
           caption: 'A later Yuan dynasty portrait of the founder of the Mongol Empire.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg',
+          url: '../assets/images/commons/yuanemperoralbumgenghisportrait-a39370.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg'
         }
       },
@@ -133,7 +133,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Mongol successor khanates',
           caption: 'Fragmentation demonstrates both continuity of Mongol rule and decline of unified imperial control.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/MongolEmpireDivisions1300.png',
+          url: '../assets/images/commons/mongolempiredivisions1300-21e0f5.png',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:MongolEmpireDivisions1300.png'
         }
       },
@@ -147,7 +147,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Silk Road routes across Eurasia',
           caption: 'Mongol rule altered the political conditions along established overland exchange networks.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+          url: '../assets/images/commons/silk-route-6f0173.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg'
         }
       },
@@ -161,7 +161,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Transfer across a connected Eurasia',
           caption: 'The Mongol Empire mattered not only for movement of goods but for the transfer and adaptation of knowledge.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
+          url: '../assets/images/commons/silk-route-6f0173.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_route.jpg'
         }
       }
@@ -170,7 +170,7 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: 'Map of the Mongol Empire and Successor Khanates',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/MongolEmpireDivisions1300.png',
+    url: '../assets/images/commons/mongolempiredivisions1300-21e0f5.png',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:MongolEmpireDivisions1300.png',
     caption: 'By c. 1300, Mongol political control had fragmented into regional khanates even as long-distance connections across Eurasia remained powerful.',
     intro: 'Use the map twice: first to explain why governing continental scale was difficult, and then to explain why the same geographic reach could facilitate trade, communication, and knowledge transfer.',

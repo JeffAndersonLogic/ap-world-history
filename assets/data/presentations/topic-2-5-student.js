@@ -84,7 +84,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "title": "Buddhism · East Asia",
             "visual": {
-              "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Buddha_at_K%C5%8Dtoku-in,_Close-up_20190421_1.jpg?width=1600",
+              "url": "../assets/images/commons/great-buddha-at-kotoku-in-close-up-20190421-1-3968f2.jpg",
               "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Buddha_at_K%C5%8Dtoku-in,_Close-up_20190421_1.jpg",
               "alt": "The Great Buddha of Kamakura, a giant seated bronze Buddha, green with age, against a blue sky",
               "credit": "Kamakura Buddha · cast from 1252 · DXR, CC BY-SA 4.0",
@@ -94,7 +94,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "title": "Hinduism + Buddhism · Southeast Asia",
             "visual": {
-              "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Angkor%20Wat.jpg",
+              "url": "../assets/images/commons/angkor-wat-a59ab1.jpg",
               "sourceUrl": "https://commons.wikimedia.org/wiki/File:Angkor_Wat.jpg",
               "alt": "The towers of Angkor Wat in Cambodia",
               "credit": "Angkor Wat · built early 1100s"
@@ -103,7 +103,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "title": "Islam · West Africa",
             "visual": {
-              "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Djenn%C3%A9_2.jpg",
+              "url": "../assets/images/commons/great-mosque-of-djenne-2-679fb3.jpg",
               "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Djenn%C3%A9_2.jpg",
               "alt": "The mud-brick Great Mosque of Djenné in Mali",
               "credit": "Great Mosque of Djenné · rebuilt 1907"
@@ -210,7 +210,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         },
         "visual": {
           "fit": "contain",
-          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bagdad1258.jpg",
+          "url": "../assets/images/commons/bagdad1258-6f93c7.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bagdad1258.jpg",
           "alt": "A Persian manuscript painting of Mongol forces besieging Baghdad, with walls, a river and siege engines",
           "credit": "Persian manuscript painting, c. 1430 · public domain"
@@ -305,7 +305,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         },
         "visual": {
           "fit": "contain",
-          "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Caravane_Marco_Polo.jpg",
+          "url": "../assets/images/commons/caravane-marco-polo-f0cc15.jpg",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File:Caravane_Marco_Polo.jpg",
           "alt": "Detail of the Catalan Atlas showing a caravan of riders and camels crossing Asia",
           "credit": "Catalan Atlas, 1375 · public domain"

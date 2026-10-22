@@ -132,6 +132,9 @@ are in `docs/claude/first10-readings.md`.
 Every picture a student can see must be on-topic and impossible to break. Full text and the
 incidents behind each rule: `docs/claude/image-contract.md`.
 
+- **Never hotlink a Commons picture.** Copies live in `assets/images/commons/` (credits in its
+  `manifest.json`); a school network is one address, and Commons refuses it. Add a picture with the
+  Mirror Commons images workflow and `scripts/mirror-commons-images.js --rewrite`.
 - **Local artwork is the floor.** `assets/images/module-art/` holds artwork for every module card
   and every lecture, evidence and map slot, and both renderers fall back to it through `onerror`.
 - **An empty `url` is a valid choice.** Leave `url` and `sourceUrl` empty rather than use a

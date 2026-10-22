@@ -82,13 +82,13 @@
     map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
     first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_map_blank_without_borders.png',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Niall_Andrews_and_Nelson_Mandela%2C_June_1990_%28cropped%29.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_Salt_March.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Firemen_spraying_protestors_in_Downtown_Birmingham_01.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_Salt_March.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Martin_Luther_King_Jr_NYWTS.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sharpeville_massacre.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Golpe_de_Estado_1973.jpg'
+    beSurreal: '../assets/images/commons/niall-andrews-and-nelson-mandela-june-1990-cropped-b6915f.jpg',
+    skill: '../assets/images/commons/gandhi-salt-march-c406ad.jpg',
+    checkpoint1: '../assets/images/commons/firemen-spraying-protestors-in-downtown-birmingham-01-365b0c.jpg',
+    evidence: '../assets/images/commons/gandhi-salt-march-c406ad.jpg',
+    source: '../assets/images/commons/martin-luther-king-jr-nywts-f12c16.jpg',
+    beInTheRoom: '../assets/images/commons/sharpeville-massacre-0af599.jpg',
+    checkpoint2: '../assets/images/commons/golpe-de-estado-1973-65c37f.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -133,21 +133,21 @@
   lesson.images = [
     {
       title: 'Gandhi leading the Salt March, 1930',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_Salt_March.jpg',
+      url: '../assets/images/commons/gandhi-salt-march-c406ad.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Gandhi_Salt_March.jpg',
       caption: 'Mohandas Gandhi leading the Salt March, March 1930, a 240-mile walk to the sea to make salt illegally in defiance of British colonial tax law. Gandhi\'s strategic nonviolence was designed to make the cost of colonial authority higher than the cost of political concessions.',
       prompt: 'What does Gandhi\'s choice to march to make salt reveal about how nonviolence works as a political strategy? How does this image illustrate the difference between nonviolence as moral stance and nonviolence as deliberate method for producing political change?'
     },
     {
       title: 'Nelson Mandela released from Victor Verster Prison, 1990',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Niall_Andrews_and_Nelson_Mandela%2C_June_1990_%28cropped%29.jpg',
+      url: '../assets/images/commons/niall-andrews-and-nelson-mandela-june-1990-cropped-b6915f.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Niall_Andrews_and_Nelson_Mandela%2C_June_1990_%28cropped%29.jpg',
       caption: 'Nelson Mandela leaving Victor Verster Prison on February 11, 1990, after 27 years of imprisonment. Mandela\'s release marked the beginning of negotiations that ended apartheid and led to South Africa\'s first democratic elections in 1994.',
       prompt: 'How does Mandela\'s release after 27 years of imprisonment illustrate the long-term logic of resistance, that political change can be achieved through sustained pressure over decades rather than immediate victory? What does this suggest about nonviolence as a strategy for change against a deeply entrenched power structure?'
     },
     {
       title: 'Eisenhower\'s farewell address, January 1961',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Eisenhower_farewell.jpg',
+      url: '../assets/images/commons/eisenhower-farewell-212421.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Eisenhower_farewell.jpg',
       caption: 'President Dwight D. Eisenhower delivering his farewell address on January 17, 1961, in which he coined the phrase \'military-industrial complex\' and warned of the dangers of an arms economy that gave institutional interests an incentive to perpetuate conflict.',
       prompt: 'Why is it significant that the warning about the military-industrial complex came from a five-star general and former Supreme Allied Commander? What does Eisenhower\'s perspective reveal about how structural forces can intensify conflict even when individual leaders seek peace?'

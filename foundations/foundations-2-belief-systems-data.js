@@ -4,7 +4,7 @@ window.FOUNDATION_TOPIC = {
   code: 'FOUNDATIONS 2',
   title: 'Belief Systems & Cultural Exchange',
   subtitle: 'How did six major belief systems — Confucianism, Daoism, Hinduism, Buddhism, Christianity, and Islam — shape societies and spread across the world?',
-  heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Stupa_Borobudur.jpg',
+  heroImage: '../assets/images/commons/stupa-borobudur-42e111.jpg',
 
   commandCopy: 'The central move of Day 2 is getting students to understand the six major belief systems, Confucianism, Daoism, Hinduism, Buddhism, Christianity, and Islam, not as private spiritual matters but as public institutional systems that organize labor, legitimate authority, structure family life, fund education, and connect communities across enormous distances. Students learn the core idea of each system, how each spread, and how each adapted through syncretism. When students see these belief systems as institutions rather than just theologies, they can analyze them on AP exams with real historical depth.',
 
@@ -121,14 +121,14 @@ window.FOUNDATION_TOPIC = {
     items: [
       {
         title: 'Angkor Wat, Khmer Empire (completed c.1150 CE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Angkor_Wat.jpg',
+        url: '../assets/images/commons/angkor-wat-a59ab1.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Angkor_Wat.jpg',
         caption: 'Angkor Wat was built by Suryavarman II as a Hindu temple identifying the Khmer king with the god Vishnu. At 402 acres it is the largest religious structure ever built, and its construction mobilized hundreds of thousands of workers, Hinduism functioning as a political institution far from India.',
         prompt: 'What does Angkor Wat reveal about how Hindu kingship ideology functioned as a political institution in the Khmer Empire? Why would a Southeast Asian ruler adopt Hindu cosmology?'
       },
       {
         title: 'The Great Mosque of Córdoba (begun 784 CE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mosque_Cordoba.jpg',
+        url: '../assets/images/commons/mosque-cordoba-0f442b.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mosque_Cordoba.jpg',
         caption: 'The Great Mosque of Córdoba in Umayyad Spain was simultaneously a place of prayer, a center of legal adjudication, a school, and an architectural statement of Islamic political authority, one Islamic institution performing several civic functions at once.',
         prompt: 'What does this mosque reveal about Islam as an institution rather than just a personal religion? What multiple functions did it serve in Córdoba\'s Islamic society?'
@@ -190,7 +190,7 @@ skill: 'Argumentation',
       ],
       image: {
         title: 'Tang Dynasty Portrait of Confucius',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Confucius_Tang_Dynasty.jpg',
+        url: '../assets/images/commons/confucius-tang-dynasty-763266.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Confucius_Tang_Dynasty.jpg',
         caption: 'Confucius (551–479 BCE), shown in a Tang-era portrait. His teachings were not institutionalized into state governance until centuries after his death, philosophy becoming political infrastructure over time.'
       }
@@ -208,7 +208,7 @@ skill: 'Argumentation',
       ],
       image: {
         title: 'The Examination Compound, from The Official Career of Xu Xianqing (1590)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Xu_Xianqing_part11.jpg',
+        url: '../assets/images/commons/xu-xianqing-part11-6370a4.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Xu_Xianqing_part11.jpg',
         caption: 'A Ming album leaf of 1590, painted for the official Xu Xianqing, showing an examination compound at work: candidates writing in long rows of individual cells while the presiding officials watch from the halls above. Candidates sat for days at a time on the Confucian classics. The exam turned an ethical philosophy into the recruitment system of the world\'s largest bureaucracy, which is how a set of teachings about relationships became a form of state power.'
       }
@@ -226,7 +226,7 @@ skill: 'Argumentation',
       ],
       image: {
         title: 'The Taijitu (Yin-Yang), Symbol of Daoism',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yin_yang.svg',
+        url: '../assets/images/commons/yin-yang-c8b054.svg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Yin_yang.svg',
         caption: 'The taijitu (yin-yang) expresses the Daoist idea that opposite forces are complementary and balanced within the Dao, light and dark, active and still, each containing a seed of the other.'
       }
@@ -246,7 +246,7 @@ skill: 'Argumentation',
       ],
       image: {
         title: 'Brihadisvara Temple, Thanjavur, India (completed c.1010 CE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Brihadeeswara_Temple_-_Thanjavur.jpg',
+        url: '../assets/images/commons/brihadeeswara-temple-thanjavur-8707d1.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Brihadeeswara_Temple_-_Thanjavur.jpg',
         caption: 'The Brihadisvara Temple at Thanjavur, built by the Chola dynasty and dedicated to Shiva, is one of the great temples of South Asia. Major Hindu temples like it owned land, employed hundreds, and anchored the local economy, Hinduism as an economic and political institution in its South Asian heartland.'
       }
@@ -264,7 +264,7 @@ skill: 'Argumentation',
       ],
       image: {
         title: 'Borobudur, Java (c.9th century CE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Stupa_Borobudur.jpg',
+        url: '../assets/images/commons/stupa-borobudur-42e111.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Stupa_Borobudur.jpg',
         caption: 'Borobudur in Java, the largest Buddhist monument in the world, built by the Sailendra dynasty, is ringed by bell-shaped stupas, each once sheltering a Buddha. Its location far from India shows how Buddhism spread by sea and was adopted by rulers seeking legitimacy.'
       }
@@ -282,7 +282,7 @@ skill: 'Argumentation',
       ],
       image: {
         title: 'Ben Ezra Synagogue, Fustat (Old Cairo), rebuilt in the eleventh century',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Interior_of_the_Ben_Ezra_Synagogue,_Cairo.jpg',
+        url: '../assets/images/commons/interior-of-the-ben-ezra-synagogue-cairo-460b92.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Interior_of_the_Ben_Ezra_Synagogue,_Cairo.jpg',
         caption: 'The Ben Ezra Synagogue in Fustat, Old Cairo, rebuilt in the eleventh century and restored more than once since. After 70 CE the center of Jewish life moved from one temple to thousands of synagogues and study houses like this one. A community needed a Torah scroll, a teacher, and a quorum, which is why the tradition outlasted a dispersal that ended other ancient religions. A storeroom in this building held the Cairo Geniza, hundreds of thousands of discarded documents, among them the letters and contracts of Jewish merchants trading across the Islamic and Christian worlds.'
       }
@@ -300,7 +300,7 @@ skill: 'Argumentation',
       ],
       image: {
         title: 'Rock-Hewn Church of Bete Giyorgis, Lalibela, Ethiopia (c.1200 CE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bete_Giyorgis_01.jpg',
+        url: '../assets/images/commons/bete-giyorgis-01-5aa88f.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bete_Giyorgis_01.jpg',
         caption: 'Bete Giyorgis (Church of Saint George) at Lalibela is a cross-shaped church carved downward into volcanic rock, Ethiopian Christianity expressed as an African, not Roman, tradition. Syncretism made visible in stone.'
       }
@@ -320,7 +320,7 @@ skill: 'Argumentation',
       ],
       image: {
         title: 'Great Mosque of Kairouan (Tunisia, founded 670 CE)',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Kairouan,_prayer_hall.jpg',
+        url: '../assets/images/commons/great-mosque-of-kairouan-prayer-hall-71521a.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Great_Mosque_of_Kairouan,_prayer_hall.jpg',
         caption: 'The prayer hall of the Great Mosque of Kairouan, one of the oldest mosques in the world, rests on rows of ancient columns. Mosques served as prayer hall, court, school, and community center: a single institution performing many civic functions.'
       }

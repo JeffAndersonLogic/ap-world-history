@@ -136,7 +136,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "The port of Buenos Aires",
           caption: "British capital built Argentina's railways and docks. Economic imperialism could control an economy without ever raising a flag.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Port_of_Buenos_Aires.jpg",
+          url: "../assets/images/commons/port-of-buenos-aires-851c55.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Port_of_Buenos_Aires.jpg"
         }
       }

@@ -122,7 +122,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Amazon deforestation",
           caption: "Large-scale clearing of the Amazon rainforest for agriculture and ranching illustrates how human activity contributed to deforestation after 1900.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg",
+          url: "../assets/images/commons/fires-and-deforestation-on-the-amazon-frontier-rondonia-brazil-august-948a73.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg"
         }
       },
@@ -138,7 +138,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Aral Sea decline",
           caption: "The dramatic shrinkage of the Aral Sea, caused by Soviet-era irrigation diversions, illustrates how human freshwater consumption reshaped environments and intensified resource competition.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/AralSea1989_2014.jpg",
+          url: "../assets/images/commons/aralsea1989-2014-4c61ae.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:AralSea1989_2014.jpg"
         }
       },
@@ -154,7 +154,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Industrial emissions and climate change",
           caption: "The release of greenhouse gases from industrial sources contributed to debates about the nature and causes of climate change in the late 20th and early 21st centuries.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Greenhouse_Gas_by_Sector.png",
+          url: "../assets/images/commons/greenhouse-gas-by-sector-b6f866.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Greenhouse_Gas_by_Sector.png"
         }
       }
@@ -190,21 +190,21 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "Deforestation in Rondônia, Brazil",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg",
+      url: "../assets/images/commons/fires-and-deforestation-on-the-amazon-frontier-rondonia-brazil-august-948a73.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg",
       caption: "Satellite image of deforestation in the Brazilian state of Rondônia, large-scale clearing for cattle ranching and agriculture transformed the landscape.",
       prompt: "What human activities caused this deforestation, and what environmental effects would follow from clearing this much forest?"
     },
     {
       title: "The Aral Sea, 1989 vs. 2014",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/AralSea1989_2014.jpg",
+      url: "../assets/images/commons/aralsea1989-2014-4c61ae.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:AralSea1989_2014.jpg",
       caption: "The Aral Sea shrank dramatically after Soviet-era irrigation projects diverted its feeder rivers, an extreme example of freshwater consumption reshaping the environment.",
       prompt: "What human activity caused the Aral Sea to shrink, and what were the environmental and social effects on the communities that depended on it?"
     },
     {
       title: "Global Greenhouse Gas Emissions by Sector",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Greenhouse_Gas_by_Sector.png",
+      url: "../assets/images/commons/greenhouse-gas-by-sector-b6f866.png",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Greenhouse_Gas_by_Sector.png",
       caption: "Greenhouse gas emissions from energy, industry, agriculture, and transportation contributed to debates about the causes of climate change.",
       prompt: "How does this data help explain why the climate debate was so contentious, and why different nations had different views on who should bear the cost of reducing emissions?"

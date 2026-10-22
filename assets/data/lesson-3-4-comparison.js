@@ -139,7 +139,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'World Map 1700 CE',
           caption: 'By c. 1700, the major land-based empires of Eurasia, Ottoman, Safavid, Mughal, Qing, and Russian, had carved the known world into overlapping spheres of imperial authority, each built through a combination of gunpowder military power and administrative innovation.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
+          url: '../assets/images/commons/1700-ce-world-map-1696ff.png',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:1700_CE_world_map.PNG'
         }
       },
@@ -153,7 +153,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Ottoman expansion, 1359-1839',
           caption: 'Ottoman growth over five centuries. Compare its pace and direction with the Mughal and Safavid cases.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif',
+          url: '../assets/images/commons/rise-and-fall-of-the-ottoman-empire-1300-1923-0cf219.gif',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif'
         }
       },
@@ -167,7 +167,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'The Mughal Empire, c. 1700',
           caption: 'A land-based empire built on tax revenue from agriculture, the shared foundation of every empire in this unit.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png',
+          url: '../assets/images/commons/mughal-empire-1700-29dcf3.png',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Mughal_Empire_%281700%29.png'
         }
       }
@@ -176,7 +176,7 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: 'Map: Major Land-Based Empires, c. 1700',
-    url: 'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
+    url: '../assets/images/commons/1700-ce-world-map-1696ff.png',
     sourceUrl: 'https://commons.wikimedia.org/wiki/File:1700_CE_world_map.PNG',
     caption: 'A world map showing the major land-based empires of Eurasia and their approximate territorial extents c. 1700, Ottoman, Safavid, Mughal, Qing, and Russian, each built through a combination of gunpowder military power, administrative innovation, and religious legitimation.',
     intro: 'This topic asks you to compare five empires that existed simultaneously across Eurasia. A world map of c. 1700 reveals something striking: these empires together covered most of the landmass of Afro-Eurasia. Each was geographically vast, multi-ethnic, and religiously diverse. Looking at them side by side asks the question that drives Topic 3.4: given such different geographic, religious, and ethnic starting points, why did these empires develop so many similar strategies, and what explains their important differences?',

@@ -57,16 +57,16 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/19170704_Riot_on_Nevsky_prosp_Petrograd.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Boxer_Rebellion.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/19170704_Riot_on_Nevsky_prosp_Petrograd.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kemal_Atat%C3%BCrk_portrait.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Boxer_Rebellion.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/19170704_Riot_on_Nevsky_prosp_Petrograd.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/19170704_Riot_on_Nevsky_prosp_Petrograd.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emiliano_Zapata,_1914.jpg'
+    map: '../assets/images/commons/world-1898-empires-colonies-territory-8ea39f.png',
+    first10: '../assets/images/commons/19170704-riot-on-nevsky-prosp-petrograd-12addc.jpg',
+    contentDelivery: '../assets/images/commons/boxer-rebellion-3e23f3.jpg',
+    beSurreal: '../assets/images/commons/19170704-riot-on-nevsky-prosp-petrograd-12addc.jpg',
+    skill: '../assets/images/commons/world-1898-empires-colonies-territory-8ea39f.png',
+    checkpoint1: '../assets/images/commons/kemal-ataturk-portrait-d0bfe1.jpg',
+    evidence: '../assets/images/commons/boxer-rebellion-3e23f3.jpg',
+    source: '../assets/images/commons/19170704-riot-on-nevsky-prosp-petrograd-12addc.jpg',
+    beInTheRoom: '../assets/images/commons/19170704-riot-on-nevsky-prosp-petrograd-12addc.jpg',
+    checkpoint2: '../assets/images/commons/emiliano-zapata-1914-1e927e.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -130,28 +130,28 @@
   lesson.images = [
     {
       title: 'Empires and colonies of the world, 1898',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1898_empires_colonies_territory.png',
+      url: '../assets/images/commons/world-1898-empires-colonies-territory-8ea39f.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:World_1898_empires_colonies_territory.png',
       caption: 'Reference map of imperial holdings at the turn of the twentieth century. A modern reconstruction from historical borders, not a map drawn in 1898.',
       prompt: 'NOTICE which powers hold territory on more than one continent. INFER what that distribution implies about where power sat in 1900. What claim can this map anchor, and what can a snapshot of one year not show about direction of change?'
     },
     {
       title: 'The Boxer Rebellion',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Boxer_Rebellion.jpg',
+      url: '../assets/images/commons/boxer-rebellion-3e23f3.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Boxer_Rebellion.jpg',
       caption: 'Contemporary image of the Boxer Uprising, 1899 to 1901, an anti-foreign movement in Qing China that an eight-nation force put down.',
       prompt: 'NOTICE who is depicted acting and who is depicted as the target. INFER what the uprising and its defeat each suggest about Qing authority. Which of the two, the uprising or the defeat, better supports a claim about imperial decline?'
     },
     {
       title: 'Demonstrators on Nevsky Prospekt, Petrograd, 1917',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/19170704_Riot_on_Nevsky_prosp_Petrograd.jpg',
+      url: '../assets/images/commons/19170704-riot-on-nevsky-prosp-petrograd-12addc.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:19170704_Riot_on_Nevsky_prosp_Petrograd.jpg',
       caption: 'Photograph taken on Nevsky Prospekt in Petrograd, July 1917, as crowds scatter under fire between the February and October revolutions.',
       prompt: 'NOTICE what the crowd is doing and what the street looks like. INFER what this suggests about who controlled public order in mid-1917. What does a single street photograph not tell you about why the Provisional Government fell?'
     },
     {
       title: 'Emiliano Zapata, 1914',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emiliano_Zapata,_1914.jpg',
+      url: '../assets/images/commons/emiliano-zapata-1914-1e927e.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Emiliano_Zapata,_1914.jpg',
       caption: 'Studio photograph of Emiliano Zapata during the Mexican Revolution. A posed self-presentation, chosen by its subject, rather than a candid record.',
       prompt: 'NOTICE how Zapata has chosen to be dressed and equipped. INFER what audience that self-presentation is aimed at and what claim to authority it makes. Why does a posed portrait carry weaker evidence about land reform than about leadership?'

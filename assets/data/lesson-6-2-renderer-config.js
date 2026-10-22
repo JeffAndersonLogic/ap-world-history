@@ -52,7 +52,7 @@
   lesson.images = [
     {
       "title": "The Berlin Conference, 1884 to 1885",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kongokonferenz.jpg",
+      "url": "../assets/images/commons/kongokonferenz-e96b3e.jpg",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kongokonferenz.jpg",
       "caption": "Contemporary depiction of the conference at which European powers agreed rules for claiming African territory.",
       "prompt": "NOTICE that this is a negotiation between claimants. INFER what kind of expansion begins in a conference room rather than on a battlefield. What does the image not show about how the claims were enforced?"

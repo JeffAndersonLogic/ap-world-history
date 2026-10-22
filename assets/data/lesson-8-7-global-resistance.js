@@ -142,7 +142,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Martin Luther King Jr., Birmingham Campaign, 1963",
           caption: "Birmingham, Alabama, 1963: Bull Connor's police use fire hoses against peaceful civil rights marchers. The images, broadcast nationally and internationally, accelerated the passage of the Civil Rights Act of 1964, illustrating how nonviolent resistance works by making the cost of repression visible.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Firemen_spraying_protestors_in_Downtown_Birmingham_01.jpg",
+          url: "../assets/images/commons/firemen-spraying-protestors-in-downtown-birmingham-01-365b0c.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Firemen_spraying_protestors_in_Downtown_Birmingham_01.jpg"
         }
       },
@@ -158,7 +158,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Chilean military coup, September 11, 1973",
           caption: "La Moneda presidential palace under military bombardment during the September 11, 1973 coup that brought Pinochet to power in Chile. The democratically elected socialist government of Salvador Allende was overthrown; Allende died during the coup. The regime that followed detained and tortured tens of thousands.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Golpe_de_Estado_1973.jpg",
+          url: "../assets/images/commons/golpe-de-estado-1973-65c37f.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Golpe_de_Estado_1973.jpg"
         }
       },
@@ -173,7 +173,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Shining Path mural, Peru",
           caption: "A Shining Path propaganda mural in Peru. The Maoist insurgency, active from 1980 through the 1990s, combined attacks on the state with violence against civilians it deemed insufficiently revolutionary. The conflict killed an estimated 70,000 people; both Shining Path and the Peruvian security forces committed atrocities.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Zones_registering_Sendero_Luminoso_%28Shining_Path%29_activity.svg",
+          url: "../assets/images/commons/zones-registering-sendero-luminoso-shining-path-activity-81cc79.svg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Zones_registering_Sendero_Luminoso_%28Shining_Path%29_activity.svg"
         }
       }
@@ -213,21 +213,21 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "Gandhi leading the Salt March, 1930",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_Salt_March.jpg",
+      url: "../assets/images/commons/gandhi-salt-march-c406ad.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Gandhi_Salt_March.jpg",
       caption: "Mohandas Gandhi leading the Salt March, March 1930, a 240-mile walk to the sea to make salt illegally in defiance of British colonial tax law. Gandhi's strategic nonviolence was designed to make the cost of colonial authority higher than the cost of political concessions.",
       prompt: "What does Gandhi's choice to march to make salt reveal about how nonviolence works as a political strategy? How does this image illustrate the difference between nonviolence as moral stance and nonviolence as deliberate method for producing political change?"
     },
     {
       title: "Nelson Mandela released from Victor Verster Prison, 1990",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Niall_Andrews_and_Nelson_Mandela%2C_June_1990_%28cropped%29.jpg",
+      url: "../assets/images/commons/niall-andrews-and-nelson-mandela-june-1990-cropped-b6915f.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Niall_Andrews_and_Nelson_Mandela%2C_June_1990_%28cropped%29.jpg",
       caption: "Nelson Mandela leaving Victor Verster Prison on February 11, 1990, after 27 years of imprisonment. Mandela's release marked the beginning of negotiations that ended apartheid and led to South Africa's first democratic elections in 1994.",
       prompt: "How does Mandela's release after 27 years of imprisonment illustrate the long-term logic of resistance, that political change can be achieved through sustained pressure over decades rather than immediate victory? What does this suggest about nonviolence as a strategy for change against a deeply entrenched power structure?"
     },
     {
       title: "Eisenhower's farewell address, January 1961",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Eisenhower_farewell.jpg",
+      url: "../assets/images/commons/eisenhower-farewell-212421.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Eisenhower_farewell.jpg",
       caption: "President Dwight D. Eisenhower delivering his farewell address on January 17, 1961, in which he coined the phrase 'military-industrial complex' and warned of the dangers of an arms economy that gave institutional interests an incentive to perpetuate conflict.",
       prompt: "Why is it significant that the warning about the military-industrial complex came from a five-star general and former Supreme Allied Commander? What does Eisenhower's perspective reveal about how structural forces can intensify conflict even when individual leaders seek peace?"

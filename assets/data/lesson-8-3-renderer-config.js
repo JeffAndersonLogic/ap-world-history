@@ -49,16 +49,16 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cold_war_europe_military_alliances_map_en.png',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cold_war_europe_military_alliances_map_en.png',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cold_war_europe_military_alliances_map_en.png',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Berlinermauer.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yalta_Conference_%28Churchill%2C_Roosevelt%2C_Stalin%29_%28B%26W%29.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yalta_Conference_%28Churchill%2C_Roosevelt%2C_Stalin%29_%28B%26W%29.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Truman_signing_North_Atlantic_Treaty.jpg',
+    map: '../assets/images/commons/cold-war-europe-military-alliances-map-en-9963d6.png',
+    first10: '../assets/images/commons/cold-war-europe-military-alliances-map-en-9963d6.png',
+    contentDelivery: '../assets/images/commons/cold-war-europe-military-alliances-map-en-9963d6.png',
+    beSurreal: '../assets/images/commons/berlinermauer-159a22.jpg',
+    skill: '../assets/images/commons/yalta-conference-churchill-roosevelt-stalin-b-w-ac0276.jpg',
+    checkpoint1: '../assets/images/commons/yalta-conference-churchill-roosevelt-stalin-b-w-ac0276.jpg',
+    evidence: '../assets/images/commons/truman-signing-north-atlantic-treaty-a89d2a.jpg',
     source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Truman_signing_bills.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Agostinho_Neto.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cold_war_europe_military_alliances_map_en.png'
+    beInTheRoom: '../assets/images/commons/agostinho-neto-1d3167.jpg',
+    checkpoint2: '../assets/images/commons/cold-war-europe-military-alliances-map-en-9963d6.png'
   };
 
   lesson.beInTheRoom = {
@@ -102,21 +102,21 @@
   lesson.images = [
     {
       title: 'NATO founding ceremony, 1949',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Truman_signing_North_Atlantic_Treaty.jpg',
+      url: '../assets/images/commons/truman-signing-north-atlantic-treaty-a89d2a.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Truman_signing_North_Atlantic_Treaty.jpg',
       caption: 'The signing of the North Atlantic Treaty, April 4, 1949, formalizing the Western military alliance under American leadership as the primary U.S. instrument for maintaining influence in Europe.',
       prompt: 'Who signed NATO, and who did not? What does the treaty\'s membership reveal about how the United States used the alliance system to extend its influence beyond its own borders?'
     },
     {
       title: 'Cuban troops in Angola, 1975',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cuito_Cuanavale_Montage.jpg',
+      url: '../assets/images/commons/cuito-cuanavale-montage-e41d23.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Cuito_Cuanavale_Montage.jpg',
       caption: 'Cuban combat troops deployed to Angola in 1975 at the request of the Soviet-backed MPLA, one of the most direct forms of proxy war intervention in Cold War Africa.',
       prompt: 'What does Cuba\'s military deployment to Angola reveal about how the Soviet bloc used local clients and third-party forces to pursue Cold War objectives? How is this similar to or different from U.S. methods in Nicaragua?'
     },
     {
       title: 'Sandinista soldiers, Nicaragua, 1980s',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Revoluci%C3%B3n_sandinista.png',
+      url: '../assets/images/commons/revolucion-sandinista-947ab6.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Revoluci%C3%B3n_sandinista.png',
       caption: 'Sandinista fighters in Nicaragua during the 1980s Contra conflict, a proxy war in which the U.S. funded insurgents to destabilize a Soviet-aligned government.',
       prompt: 'How does the Nicaraguan conflict illustrate the comparison the learning objective demands, comparing the ways the United States and the Soviet Union each sought to maintain influence? What methods did the U.S. use to maintain influence, and how did those compare to Soviet methods in Angola or Korea?'

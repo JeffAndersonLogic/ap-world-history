@@ -99,7 +99,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Manchester from Kersal Moor, William Wyld",
           caption: "A pastoral foreground and a forest of factory chimneys behind it. The industrial city created both the bourgeoisie and the proletariat.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg",
+          url: "../assets/images/commons/wyld-william-manchester-from-kersal-moor-with-rustic-figures-and-goats-98dd3c.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Wyld%2C_William_-_Manchester_from_Kersal_Moor%2C_with_rustic_figures_and_goats_-_Google_Art_Project.jpg"
         }
       },

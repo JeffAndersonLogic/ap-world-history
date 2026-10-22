@@ -133,8 +133,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Vasco da Gama",
           caption: "An engraving of Vasco da Gama, the Portuguese commander who reached India by sea in 1498, made long after his lifetime. It shows how he was remembered, not what he looked like.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg?width=1200",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg"
+          url: "../assets/images/commons/vasco-da-gama-2ab6b1.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Vasco_da_Gama.jpg"
         }
       },
       {
@@ -148,8 +148,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "The Vasco da Gama Pillar, Malindi",
           caption: "A modern photograph of the pillar at Malindi, Kenya. Da Gama's fleet set up a stone marker at Malindi in 1498 or 1499; the pillar has been moved, rebuilt and repaired since. Portuguese captains set up markers like it to claim the routes they sailed for their king.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg?width=1200",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg"
+          url: "../assets/images/commons/pillar-of-vasco-da-gama-1533aa.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Pillar_of_Vasco_da_Gama.jpg"
         }
       },
       {
@@ -163,8 +163,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Columbus Taking Possession",
           caption: "A color print published in 1893, four centuries after 1492, imagining Columbus claiming land for the Spanish crown. It shows how Europeans later remembered the voyage, not what happened on the beach.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg?width=1200",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg"
+          url: "../assets/images/commons/columbus-taking-possession-d0d171.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Columbus_Taking_Possession.jpg"
         }
       },
       {

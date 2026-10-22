@@ -37,7 +37,7 @@
   lesson.images = [
     {
       "title": "The United Nations General Assembly hall",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/UN_General_Assembly_hall.jpg",
+      "url": "../assets/images/commons/un-general-assembly-hall-5ecdb6.jpg",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:UN_General_Assembly_hall.jpg",
       "caption": "Photograph of the Assembly chamber, where every member state holds one vote regardless of size.",
       "prompt": "NOTICE how the room is arranged and what that arrangement asserts about the members. INFER what kind of authority a body organized this way can claim. What does the room not show about which decisions are binding?"

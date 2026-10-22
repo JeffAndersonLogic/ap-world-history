@@ -105,7 +105,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Heimler's History — AP World Topic 7.3",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+7.3+Conducting+World+War+I",
-        previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/Cheshire_Regiment_trench_Somme_1916.jpg",
+        previewImage: "../assets/images/commons/cheshire-regiment-trench-somme-1916-a90b72.jpg",
         prompt: "Watch for the meaning of total war, the strategies governments used to mobilize home and colonial populations, and how new technology raised casualty levels."
       }
     ],
@@ -120,7 +120,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "British trench on the Somme, 1916",
           caption: "Men of the Cheshire Regiment in a trench on the Somme, the industrial battlefield that whole societies were mobilized to supply.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Cheshire_Regiment_trench_Somme_1916.jpg",
+          url: "../assets/images/commons/cheshire-regiment-trench-somme-1916-a90b72.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Cheshire_Regiment_trench_Somme_1916.jpg"
         }
       },
@@ -134,7 +134,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Lord Kitchener recruitment poster",
           caption: "'Britons: Lord Kitchener Wants You' (1914), the pointing finger that made enlistment a personal, patriotic demand.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kitchener-Britons.jpg",
+          url: "../assets/images/commons/kitchener-britons-1b6165.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Kitchener-Britons.jpg"
         }
       },
@@ -148,7 +148,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Gassed, by John Singer Sargent",
           caption: "Sargent's 'Gassed' (1919), commissioned by the British government as official war art, and a record of what the war actually did.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sargent%2C_John_Singer_%28RA%29_-_Gassed_-_Google_Art_Project.jpg",
+          url: "../assets/images/commons/sargent-john-singer-ra-gassed-google-art-project-b9d67a.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Sargent%2C_John_Singer_%28RA%29_-_Gassed_-_Google_Art_Project.jpg"
         }
       },
@@ -162,7 +162,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Uncle Sam — 'I Want You'",
           caption: "James Montgomery Flagg's Uncle Sam (1917), the nation personified, recruiting its citizens for a war of national destiny.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/J._M._Flagg%2C_I_Want_You_for_U.S._Army_poster_%281917%29.jpg",
+          url: "../assets/images/commons/j-m-flagg-i-want-you-for-u-s-army-poster-1917-f105b7.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:J._M._Flagg%2C_I_Want_You_for_U.S._Army_poster_%281917%29.jpg"
         }
       },
@@ -177,7 +177,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Indian bicycle troops on the Somme, 1916",
           caption: "Indian cyclist troops at the Battle of the Somme, colonial soldiers mobilized into a European war on a global scale.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Indian_bicycle_troops_Somme_1916_IWM_Q_3983.jpg",
+          url: "../assets/images/commons/indian-bicycle-troops-somme-1916-iwm-q-3983-e6155c.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Indian_bicycle_troops_Somme_1916_IWM_Q_3983.jpg"
         }
       },
@@ -192,7 +192,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "British Mark I tank, Somme, 1916",
           caption: "A British Mark I tank in September 1916, industrial innovation built to break the trench deadlock that machine guns had created.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/British_Mark_I_male_tank_Somme_25_September_1916.jpg",
+          url: "../assets/images/commons/british-mark-i-male-tank-somme-25-september-1916-81ff6c.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:British_Mark_I_male_tank_Somme_25_September_1916.jpg"
         }
       },
@@ -207,7 +207,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Gassed, by John Singer Sargent",
           caption: "The cost rendered as official art: blinded soldiers led in file past a field of casualties, total war's answer to the question 'what did it cost?'",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sargent%2C_John_Singer_%28RA%29_-_Gassed_-_Google_Art_Project.jpg",
+          url: "../assets/images/commons/sargent-john-singer-ra-gassed-google-art-project-b9d67a.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Sargent%2C_John_Singer_%28RA%29_-_Gassed_-_Google_Art_Project.jpg"
         }
       }
@@ -243,28 +243,28 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "Lord Kitchener recruitment poster",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kitchener-Britons.jpg",
+      url: "../assets/images/commons/kitchener-britons-1b6165.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Kitchener-Britons.jpg",
       caption: "'Britons: Lord Kitchener Wants You' (1914), state persuasion at industrial scale.",
       prompt: "Read this poster as evidence: what mobilization strategy from KC-6.2.IV.A.i does it document, and how does it work on its audience?"
     },
     {
       title: "British trench on the Somme, 1916",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Cheshire_Regiment_trench_Somme_1916.jpg",
+      url: "../assets/images/commons/cheshire-regiment-trench-somme-1916-a90b72.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Cheshire_Regiment_trench_Somme_1916.jpg",
       caption: "Trench warfare on the Somme, the stalemate that machine guns built.",
       prompt: "What does this photograph reveal about how new military technology changed the experience and the casualty levels of warfare?"
     },
     {
       title: "Indian bicycle troops on the Somme, 1916",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Indian_bicycle_troops_Somme_1916_IWM_Q_3983.jpg",
+      url: "../assets/images/commons/indian-bicycle-troops-somme-1916-iwm-q-3983-e6155c.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Indian_bicycle_troops_Somme_1916_IWM_Q_3983.jpg",
       caption: "Colonial troops on the Western Front, the empire mobilized.",
       prompt: "How does this image support the claim that governments mobilized populations 'both in the home countries and the colonies'?"
     },
     {
       title: "Gassed, by John Singer Sargent",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Sargent%2C_John_Singer_%28RA%29_-_Gassed_-_Google_Art_Project.jpg",
+      url: "../assets/images/commons/sargent-john-singer-ra-gassed-google-art-project-b9d67a.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Sargent%2C_John_Singer_%28RA%29_-_Gassed_-_Google_Art_Project.jpg",
       caption: "Sargent's 'Gassed' (1919), government-commissioned art recording the human cost of chemical weapons.",
       prompt: "This painting is both government-commissioned art AND a record of technological horror. How can one source serve as evidence for both Key Concepts in this topic?"

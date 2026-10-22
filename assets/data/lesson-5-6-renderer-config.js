@@ -43,16 +43,16 @@
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg'
+    map:             '../assets/images/commons/vasco-da-gama-2ab6b1.jpg',
+    first10:         '../assets/images/commons/florentinecodex-bk12-f54-smallpox-6163e9.jpg',
+    contentDelivery: '../assets/images/commons/columbus-taking-possession-d0d171.jpg',
+    beSurreal:       '../assets/images/commons/waldseemuller-map-2-f5c64b.jpg',
+    skill:           '../assets/images/commons/casta-painting-all-bdc286.jpg',
+    checkpoint1:     '../assets/images/commons/pillar-of-vasco-da-gama-1533aa.jpg',
+    evidence:        '../assets/images/commons/loren-mozley-pueblo-revolt-1680-installed-1936-abq-nm-73e5bf.jpg',
+    source:          '../assets/images/commons/1700-ce-world-map-1696ff.png',
+    beInTheRoom:     '../assets/images/commons/astrolabe-persian-18c-8ebe5d.jpg',
+    checkpoint2:     '../assets/images/commons/ferdinand-magellan-9de032.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -124,7 +124,7 @@
     },
     {
       title: 'The Iwakura Mission, 1872',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Iwakura_mission.jpg?width=1200',
+      url: '../assets/images/commons/iwakura-mission-1f7f61.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Iwakura_mission.jpg',
       caption: 'Five leaders of the Meiji government photographed abroad during a two-year study tour of the United States and Europe. Iwakura Tomomi is in Japanese dress; the others are not.',
       prompt: 'NOTICE what each man is wearing and where he is standing. INFER what decision about Japan’s future the photograph is making visible. A posed photograph is an argument: what is this one arguing?'
@@ -141,7 +141,7 @@
     },
     {
       title: 'Muhammad Ali of Egypt',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/ModernEgypt%2C_Muhammad_Ali_by_Auguste_Couder%2C_BAP_17996.jpg?width=1200',
+      url: '../assets/images/commons/modernegypt-muhammad-ali-by-auguste-couder-bap-17996-d37493.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:ModernEgypt%2C_Muhammad_Ali_by_Auguste_Couder%2C_BAP_17996.jpg',
       caption: 'A commissioned portrait of the Ottoman governor who built state arms factories, textile mills and a conscript army in Egypt from the 1810s.',
       prompt: 'NOTICE how the sitter is dressed, seated and lit, and what he is holding. INFER what claim about his authority the portrait is composed to make. A ruler chooses how a commissioned portrait shows him: how does that make it evidence rather than decoration?'

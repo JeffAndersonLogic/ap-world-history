@@ -68,6 +68,10 @@ topic's evidence looks good in the data file and thin on the page, this is why.
 
 **An AI-generated picture is never Evidence Lab evidence.** It can set a scene on a slide or a concept card when it is labeled `Historical Reconstruction - AI Generated`, but asking a student to "notice the ship design" on an image a generator drew teaches them to treat an invention as a source. Topic 2.3 shipped that on 2026-09-21, replacing a Borobudur ship relief and a Song celadon bowl; both are back. See "AI-generated images" in `docs/PRESENTATION-AUTHORING.md`.
 
+**A Commons picture that lands is then mirrored, never left hotlinked (2026-10-21).** Run the Mirror
+Commons images workflow on the branch and `node scripts/mirror-commons-images.js --rewrite`; the
+no-hotlink test fails the push until you do. See "Image Contract" in `docs/claude/image-contract.md`.
+
 **Never write a Commons filename straight into a lesson.** A filename from memory
 is indistinguishable from a correct one until something fetches it: the name is
 well formed, `validate.js` passes, the page renders, and the student gets local

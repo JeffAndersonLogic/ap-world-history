@@ -123,7 +123,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "The Marshall Plan, 1948",
           caption: "The Marshall Plan committed $13 billion in U.S. economic aid to rebuild Western Europe, and to anchor it within the American sphere of influence against communist expansion.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Marshall_Plan.png",
+          url: "../assets/images/commons/marshall-plan-d5371c.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Marshall_Plan.png"
         }
       },
@@ -139,7 +139,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "The Berlin Wall, built 1961",
           caption: "The Berlin Wall became the most visible symbol of the Iron Curtain, a physical barrier between communist East Germany and capitalist West Berlin.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Berlinermauer.jpg",
+          url: "../assets/images/commons/berlinermauer-159a22.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Berlinermauer.jpg"
         }
       },
@@ -155,7 +155,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Kwame Nkrumah, Ghana, 1957",
           caption: "Kwame Nkrumah of Ghana argued that true independence meant refusing economic and military dependency on either Cold War bloc, a core principle of the Non-Aligned Movement.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kwame_Nkrumah.jpg",
+          url: "../assets/images/commons/kwame-nkrumah-abea09.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Kwame_Nkrumah.jpg"
         }
       }
@@ -164,7 +164,7 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Cold War Military Alliances, 1955",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Cold_war_europe_military_alliances_map_en.png",
+    url: "../assets/images/commons/cold-war-europe-military-alliances-map-en-9963d6.png",
     sourceUrl: "https://commons.wikimedia.org/wiki/File:Cold_war_europe_military_alliances_map_en.png",
     caption: "NATO and Warsaw Pact members, 1955, the Cold War division of Europe and its military alliance systems.",
     intro: "Use the map to identify the extent of U.S. and Soviet military alliance systems by 1955. The map shows a world divided into rival blocs, but notice what is absent: most of Asia, Africa, and Latin America are not formally on either side.",
@@ -191,21 +191,21 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "The Marshall Plan, 1948",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Marshall_Plan.png",
+      url: "../assets/images/commons/marshall-plan-d5371c.png",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Marshall_Plan.png",
       caption: "The Marshall Plan (1948) committed $13 billion in U.S. aid to rebuild Western Europe, and to anchor it within the American sphere of influence.",
       prompt: "Is the Marshall Plan best understood as American generosity, American strategy, or both? What does this source reveal about how the U.S. used economic power as an instrument of Cold War competition?"
     },
     {
       title: "The Berlin Wall, 1961",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Berlinermauer.jpg",
+      url: "../assets/images/commons/berlinermauer-159a22.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Berlinermauer.jpg",
       caption: "The Berlin Wall, built in 1961, became the most visible symbol of the Iron Curtain, dividing communist East Germany from capitalist West Berlin.",
       prompt: "What does the Berlin Wall reveal about the nature of the Cold War divide? How does a physical wall embody the ideological conflict between capitalism and communism?"
     },
     {
       title: "Kwame Nkrumah, Ghana, 1957",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Kwame_Nkrumah.jpg",
+      url: "../assets/images/commons/kwame-nkrumah-abea09.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Kwame_Nkrumah.jpg",
       caption: "Kwame Nkrumah led Ghana to independence in 1957 and became one of the founding voices of the Non-Aligned Movement.",
       prompt: "How does Nkrumah's background, colonial subject, pan-Africanist, leader of the first sub-Saharan African independent state, shape his position on Cold War superpower rivalry?"

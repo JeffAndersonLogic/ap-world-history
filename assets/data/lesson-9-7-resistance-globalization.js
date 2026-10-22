@@ -138,8 +138,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Economic Critiques',
           caption: 'Evidence anchor 1 for Topic 9.7.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/WTO_Protests-Seattle-Marchers-29Nov1999.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/WTO_Protests-Seattle-Marchers-29Nov1999.jpg'
+          url: '../assets/images/commons/wto-protests-seattle-marchers-29nov1999-5a3fe3.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:WTO_Protests-Seattle-Marchers-29Nov1999.jpg'
         }
       },
       {
@@ -273,8 +273,8 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: 'Economic Critiques',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/WTO_Protests-Seattle-Marchers-29Nov1999.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/WTO_Protests-Seattle-Marchers-29Nov1999.jpg',
+      url: '../assets/images/commons/wto-protests-seattle-marchers-29nov1999-5a3fe3.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:WTO_Protests-Seattle-Marchers-29Nov1999.jpg',
       caption: 'Anti-IMF and anti-World Bank activists argued that loan conditions shifted costs toward poor households and weakened public services.',
       prompt: 'How does this evidence support or qualify a claim about resistance to globalization after 1900?'
     },

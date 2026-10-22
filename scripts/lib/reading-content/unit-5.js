@@ -424,181 +424,266 @@ module.exports = {
     "moduleName": "First &amp; 10 Reading",
     "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
-    "headerSubtitle": "Topic 5.2, Nationalism and Revolutions &nbsp;|&nbsp; AP World History: Modern",
-    "titleHtml": "The <em>Revolutionary</em> Atlantic",
-    "deck": "Between 1776 and 1825, a series of connected revolutions transformed the Atlantic world, beginning in British North America, spreading to France, exploding in Haiti, and sweeping through Spanish and Portuguese America. All of these revolutions drew on Enlightenment ideas about natural rights and popular sovereignty. But they applied those ideas to very different societies with very different results, and the Haitian Revolution, in which enslaved people claimed those rights for themselves, revealed the deepest contradiction at the heart of the revolutionary Atlantic.",
+    "showFooterNote": false,
+    "headerSubtitle": "Topic 5.2, Nationalism and Revolutions, 1750 to 1900 &nbsp;|&nbsp; AP World History: Modern",
+    "titleHtml": "How Revolutions Made <em>Nations</em>",
+    "deck": "By 1789 the new ideas about rights were everywhere educated people read. But ideas alone never overthrew a king. This reading follows four revolutions, in America, France, Haiti, and Spanish America, and asks what caused each one and what it created. Then it follows one lasting thing they left behind: the nation, a new loyalty that joined some countries together and broke others apart.",
     "skillTags": [
       "Causation",
-      "Comparison",
-      "Argumentation"
+      "Claims and Evidence in Sources"
     ],
     "supportCards": {
-      "beforeYouRead": "Track the connections AND the differences among the four major Atlantic Revolutions. The AP will ask you to compare, so you need specific evidence from each, not just a general description of \"revolutionary ideals.\" Pay special attention to what each revolution did and did not accomplish for different groups.",
-      "readingTarget": "By the end, you should be able to explain how Enlightenment ideas shaped each Atlantic Revolution, describe the Haitian Revolution as the most radical of the four and explain why, and define nationalism as an ideology and connect it to Atlantic Revolutionary outcomes."
+      "beforeYouRead": "<strong>Grievance + words + a chance = revolution. Then the nation redrew the map.</strong> As you read each revolution, find three things: the grievance (what people were angry about), the words (the document that named it), and the chance (the moment the old ruler was weak). Then watch how each revolution helped another one start or win.",
+      "readingTarget": "What caused the revolutions between 1750 and 1900, and what did they create?"
     },
     "vocabulary": [
-      "Atlantic Revolutions",
-      "Natural Rights",
-      "Popular Sovereignty",
-      "Declaration of Independence",
-      "Declaration of the Rights of Man",
-      "Haitian Revolution",
-      "Toussaint Louverture",
-      "Nationalism",
+      "Grievance",
+      "Republic",
+      "Estates-General",
+      "Sovereignty",
+      "Free People of Color",
       "Creoles",
-      "Simón Bolívar",
-      "Miguel Hidalgo",
-      "Olympe de Gouges",
-      "Social Contract",
-      "Self-Determination"
+      "Peninsulares",
+      "Liberalism",
+      "Democracy",
+      "Nationalism",
+      "Unification",
+      "Ottomanism"
     ],
     "sections": [
       {
         "number": "1",
-        "label": "Contextualization",
-        "heading": "What Made Atlantic Revolutions Possible",
+        "label": "The Question",
+        "heading": "What Does It Take to Start a Revolution?",
         "blocks": [
           {
             "type": "p",
-            "html": "Atlantic Revolutions did not emerge from ideas alone, they emerged from specific structural conditions that made revolution both possible and necessary for particular groups."
+            "html": "Topic 5.1 ended with a question. By 1789 the new ideas about rights were everywhere educated people read. In America, France, Haiti, and Spanish America, people turned them into revolutions. What caused those revolutions, and what did they create?"
           },
           {
             "type": "p",
-            "html": "In <span class=\"kt\">British North America</span>, the <span class=\"kt\">Seven Years War</span> (1756–1763) had both demonstrated the colonists' military capacity and created a debt crisis that led Britain to tax its American colonies for the first time. \"No taxation without representation\" was not just a slogan, it was a constitutional argument that drew directly on Enlightenment ideas about government by consent. When the British Parliament refused to treat American colonists as full subjects with parliamentary representation, it handed American revolutionaries both a grievance and a principle."
+            "html": "Start with this: ideas are not enough. Many people read John Locke and went on obeying their kings. A revolution needed three things at the same time. First, a <span class=\"kt\">grievance</span>: a wrong that many people felt, such as an unfair tax or a law that shut them out. Second, the words to name it, written down in a document people could read aloud and rally around. Third, a chance: a moment when the old ruler was broke, far away, or gone."
           },
           {
             "type": "p",
-            "html": "In <span class=\"kt\">France</span>, structural conditions were even more acute: a nearly bankrupt state, a rigid aristocratic tax exemption, food shortages, and a king (<span class=\"kt\">Louis XVI</span>) who had bankrupted France partly by funding the American Revolution. The fiscal crisis forced Louis to convene the <span class=\"kt\">Estates-General</span> in 1789, an institution that had not met since 1614, and the unresolved tensions between the <span class=\"kt\">Third Estate</span> (everyone who was not noble or clergy) and the privileged orders exploded into revolution."
-          },
-          {
-            "type": "p",
-            "html": "In <span class=\"kt\">Saint-Domingue</span> (Haiti), the context was the most extreme: the most profitable colony in the world, built entirely on the labor of 500,000 enslaved people, governed by a small class of white planters who wanted the benefits of French revolutionary liberty, for themselves, while maintaining slavery for everyone else."
-          }
-        ],
-        "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>Atlantic Revolutions were shaped by specific structural conditions, fiscal crisis, war, colonial taxation, and the social contradictions of slave-owning revolutionary societies. <strong>Enlightenment ideas provided the language of revolution; structural conditions provided the trigger. Understanding both is essential for causation arguments about why revolutions happened when they did.</strong></p>"
-        }
-      },
-      {
-        "number": "2",
-        "label": "Key Concept",
-        "heading": "American and French Revolutions — Enlightenment in Practice",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">American Revolution</span> (1776) was the first successful Atlantic Revolution, the first time Enlightenment ideas about natural rights and popular sovereignty were translated into a working political state. The <span class=\"kt\">Declaration of Independence</span> (1776) explicitly invoked Lockean natural rights (\"life, liberty, and the pursuit of happiness\") and the social contract (\"governments are instituted among men, deriving their just powers from the consent of the governed\"). The Constitution (1787) applied Montesquieu's separation of powers. The Bill of Rights protected individual liberties against state power."
-          },
-          {
-            "type": "p",
-            "html": "But the American Revolution also had profound limits: it preserved slavery, restricted voting to property-owning white men, and dispossessed indigenous peoples from their lands. <span class=\"kt\">Thomas Jefferson</span>, the primary author of the Declaration's assertion that \"all men are created equal\", enslaved over 600 people during his lifetime. The Revolution was radical within its intended scope (independence from Britain, republican government) and conservative in its exclusions (slavery, gender, indigenous rights)."
-          },
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">French Revolution</span> (1789) was more radical in its initial promises and more violent in its execution. The <span class=\"kt\">Declaration of the Rights of Man and Citizen</span> (1789) declared universal natural rights and popular sovereignty. The Revolution abolished feudalism, the aristocratic tax exemption, and (temporarily) the monarchy. The radical phase, the <span class=\"kt\">Terror</span> (1793–1794), executed thousands, including Louis XVI and Marie Antoinette, in the name of the general will. The Revolution also abolished slavery in French colonies in 1794, briefly making France the most radical Atlantic revolutionary power."
+            "html": "Look for all three in each revolution below. And watch for one more thing: each revolution helped another one start or win."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p>Both revolutions were caused by a combination of Enlightenment ideas AND specific structural conditions. <strong>The American Revolution required both Locke's natural rights theory AND British taxation policy after the Seven Years War. The French Revolution required both Rousseau's popular sovereignty AND the near-bankruptcy of the French state. Neither ideas alone nor structural conditions alone explain why revolutions happened when they did, the AP causation skill requires identifying both.</strong></p>"
+          "raw": "<p><strong>Ideas are one cause, not the cause.</strong> The College Board says Enlightenment ideas \"influenced resistance\" to kings and empires. People rebelled when they also had a grievance and a chance. A strong causation answer names more than one cause.</p>"
+        }
+      },
+      {
+        "number": "2",
+        "label": "America",
+        "heading": "A Republic With No King, 1775 to 1783",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "<strong>The grievance.</strong> Britain won the Seven Years' War in 1763, but it came out of the war deep in debt. To help pay, Parliament taxed its thirteen American colonies, with laws such as the Stamp Act of 1765. The colonists had no members in Parliament, so they protested: \"no taxation without representation.\""
+          },
+          {
+            "type": "p",
+            "html": "<strong>The words.</strong> On 4 July 1776 the colonies' Continental Congress adopted the Declaration of Independence. It said \"that all men are created equal,\" that governments get \"their just powers from the consent of the governed,\" and that when a government destroys people's rights, \"it is the Right of the People to alter or to abolish it.\""
+          },
+          {
+            "type": "p",
+            "html": "<strong>The chance.</strong> Britain was an ocean away, and its victory in 1763 had pushed France out of North America, so the colonists no longer needed British soldiers to protect them from a French army next door. Once the fighting began in 1775, France joined the war on the American side in 1778, which helped the colonists win."
+          },
+          {
+            "type": "p",
+            "html": "<strong>What it created.</strong> By 1783 the colonies had won their independence as the United States. In 1787 they wrote a constitution for a <span class=\"kt\">republic</span>: a country with no king, whose leaders are elected. The new republic became a model that later revolutionaries pointed to. But it kept slavery, and most states let only men who owned property vote."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Sort your causes.</strong> A long-term cause builds up over years, like Britain's war debt and the taxes that followed. A short-term cause sets things off, like the first fighting, at Lexington and Concord in April 1775. Naming both makes your explanation stronger.</p>"
         }
       },
       {
         "number": "3",
-        "label": "Key Concept",
-        "heading": "The Haitian Revolution — The Most Radical Atlantic Revolution",
+        "label": "France",
+        "heading": "The Bill Comes Due, 1789 to 1799",
         "blocks": [
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Haitian Revolution</span> (1791–1804) was the most radical of the Atlantic Revolutions, the only one that was simultaneously a revolution against colonialism, a revolution against slavery, and a revolution for the legal equality of all people regardless of race. It was led by enslaved and formerly enslaved people who explicitly claimed the rights that French and American revolutionaries said belonged to all humans, but refused to extend to them."
+            "html": "Here is the first link in the chain. <strong>The chance.</strong> Helping the Americans win had cost France a fortune, and by 1788 King Louis XVI's government was nearly bankrupt. To raise taxes, he called the <span class=\"kt\">Estates-General</span>, an assembly of the clergy, the nobles, and everyone else. It had not met since 1614."
           },
           {
             "type": "p",
-            "html": "The revolution began in August 1791 with a slave uprising led partly by the Vodou ceremony at <span class=\"kt\">Bois Caïman</span>, where enslaved people made a covenant to fight for freedom. <span class=\"kt\">Toussaint Louverture</span>, a formerly enslaved man of exceptional military and political genius, emerged as the dominant leader. He built a disciplined army that defeated the Spanish, the British (who invaded hoping to take the colony for themselves), and eventually the French army sent by <span class=\"kt\">Napoleon Bonaparte</span> to reimpose slavery in 1802."
+            "html": "<strong>The grievance.</strong> The clergy and the nobles paid little in taxes. Everyone else, the Third Estate, paid most of them, and after a bad harvest in 1788 the price of bread soared. In June 1789 the Third Estate declared itself the National Assembly, and on 14 July a Paris crowd stormed the Bastille, a royal fortress and prison."
           },
           {
             "type": "p",
-            "html": "The context of hypocrisy: when the French Revolution abolished slavery in 1794, it was partly because Toussaint had allied with France after Spain offered him freedom in exchange for military service. When Napoleon sent 50,000 soldiers to reimpose slavery in 1802, the Haitian revolutionary forces defeated them (partly through yellow fever, which decimated the French army). <span class=\"kt\">Haiti</span> declared independence on January 1, 1804, the first Black republic in the Western Hemisphere and only the second independent state in the Americas."
+            "html": "<strong>The words.</strong> In August 1789 the Assembly ended the nobles' special privileges and adopted the Declaration of the Rights of Man and of the Citizen. Its first article said, \"Men are born and remain free and equal in rights,\" and its third said \"the principle of all sovereignty resides essentially in the nation.\" <span class=\"kt\">Sovereignty</span> means the highest power in a state."
           },
           {
             "type": "p",
-            "html": "The significance: Haiti's independence was a direct application of Enlightenment principles that European and American revolutionaries refused to apply. France demanded enormous reparations (150 million francs) from Haiti as the price of diplomatic recognition, money that Haiti did not finish paying until 1947, structurally impoverishing the country. The Haitian Revolution terrified slaveholders throughout the Atlantic world, leading to tighter restrictions on enslaved people and the suppression of information about Haiti in slave-holding societies."
+            "html": "<strong>What it created.</strong> France was not trying to break away from anyone; it was remaking a kingdom. In 1792 it abolished the monarchy and became a republic, and in 1793 it executed the king. During the Terror (1793 to 1794) the government killed thousands of people it called enemies of the revolution. In 1799 a general, Napoleon Bonaparte, took power, and in 1804 he crowned himself emperor. His armies carried the revolution's laws across Europe, and they also made many Europeans hate French rule."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Comparison",
-          "raw": "<p>Comparing the Haitian Revolution to the American Revolution reveals the most important pattern in Atlantic Revolutions: every revolution claimed universal rights while simultaneously defining some group as outside those rights. <strong>The American Revolution excluded the enslaved; the French Revolution excluded women (briefly) and eventually tried to exclude the enslaved; the Haitian Revolution explicitly included everyone, and was treated as a threat by every other Atlantic revolutionary state as a result. The comparison reveals that universalism was, in practice, always partial.</strong></p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>An effect can become a cause.</strong> France's help was crucial to the American victory. Paying for it, on top of debts from older wars, left France nearly bankrupt, and the bankruptcy forced the king to call the assembly where the French Revolution began. One revolution's effect became the next one's cause.</p>"
         }
       },
       {
         "number": "4",
-        "label": "Key Concept",
-        "heading": "Latin American Independence and Nationalism",
+        "label": "Haiti",
+        "heading": "The Words, Claimed by People Left Out, 1791 to 1804",
         "blocks": [
           {
             "type": "p",
-            "html": "Latin American independence movements (1810–1825) completed the Atlantic Revolutionary wave. They were largely led by <span class=\"kt\">creoles</span>, people of European descent born in the Americas, who resented Spanish-born <span class=\"kt\">peninsulares</span> monopolizing senior colonial offices, resented Enlightenment-inspired regulations on colonial trade, and were inspired by the American and French examples."
+            "html": "<strong>The grievance.</strong> Saint-Domingue, on the Caribbean island of Hispaniola, was France's most valuable colony. Its sugar and coffee were grown by enslaved Africans. Around 1789 it held more than 400,000 enslaved people and fewer than 80,000 free people: more than five enslaved people for every free person."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Miguel Hidalgo</span> launched Mexico's independence movement in 1810 with his \"Grito de Dolores\", a call to revolt that drew heavily on indigenous and mestizo populations, making it more socially radical than most other Latin American independence movements. <span class=\"kt\">Simón Bolívar</span>, the \"Liberator,\" led independence movements across Venezuela, Colombia, Ecuador, Peru, and Bolivia, explicitly invoking Enlightenment ideas about natural rights and republican government."
+            "html": "<strong>The words.</strong> Saint-Domingue's <span class=\"kt\">free people of color</span>, free people of African or mixed descent, asked the Assembly in Paris for the equal rights its declaration promised. At first they were refused. In 1790 a free man of color, Vincent Ogé, led a revolt for those rights, and early in 1791 he was executed. The Assembly granted them equal rights only in April 1792, after the revolution in the colony had begun."
           },
           {
             "type": "p",
-            "html": "But Latin American independence produced conservative outcomes in most cases: creole elites replaced peninsulares at the top of the social hierarchy, but the casta system, the Catholic Church's power, and the plantation economy all continued. Indigenous peoples and enslaved Africans gained formal legal equality in most new constitutions, but formal equality and social reality diverged sharply."
+            "html": "<strong>The chance.</strong> With France in revolution and the colony's white planters divided, enslaved people in the northern plain rose up in August 1791. Toussaint Louverture, who had been born enslaved and had won his freedom before the revolution, became its most famous leader. In 1793 he announced: \"I want Liberty and Equality to reign in Saint Domingue.\" Fighting to keep the colony, French officials there began freeing enslaved people in 1793, and in February 1794 the government in Paris abolished slavery in all French colonies."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Nationalism</span>, the ideology that emerged from Atlantic Revolutionary movements, held that people sharing a common culture, language, history, or ethnicity should have their own self-governing state. Nationalism was initially linked to liberal and democratic ideals (the \"right of peoples to self-determination\"); by the late 19th century, it had become deeply intertwined with ethnic exclusion, imperialism, and militarism. For AP World History, nationalism is important primarily as a destabilizing force in multiethnic empires (Ottoman, Habsburg, Russian) throughout the 19th century."
+            "html": "Then Napoleon tried to turn back the clock. In 1802 he brought slavery back in other French colonies, such as Guadeloupe, and sent an army to retake Saint-Domingue. Toussaint was captured and died in a French prison in 1803. His officer Jean-Jacques Dessalines fought on, and yellow fever and the war destroyed the French army."
+          },
+          {
+            "type": "p",
+            "html": "<strong>What it created.</strong> On 1 January 1804 Dessalines declared independence and gave the country its old Taíno name, Haiti. It was the second independent country in the Americas, and the first founded by people who had freed themselves from slavery. Its effects reached far. In April 1803, with his army in Saint-Domingue dying of yellow fever and a new war with Britain coming, Napoleon sold Louisiana to the United States. Countries that allowed slavery feared Haiti; the United States did not recognize it until 1862, and in 1825 France demanded 150 million francs, later cut to 90 million, as the price of recognizing Haiti's independence."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Did Atlantic Revolutions live up to their Enlightenment ideals? A strong argument requires specifics: <strong>the American Revolution created a functioning republic (lived up to one ideal) while preserving slavery (failed catastrophically on another). The Haitian Revolution fully applied natural rights, and paid an enormous economic price for it. Latin American independence transferred power from one elite to another without fundamentally challenging social hierarchy. The strongest answer acknowledges that \"living up to ideals\" is not binary, all revolutions partially succeeded and partially failed, in ways that reflect whose interests they were designed to serve.</strong></p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Who caused it?</strong> France's 1794 law did not hand Haiti its freedom. Enslaved people rose up first, in 1791, and the law followed the fighting. Then Haitians won their independence by defeating Napoleon's army. When you explain a cause, say who acted.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "Spanish America",
+        "heading": "An Empire With No King, 1810 to 1826",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "<strong>The grievance.</strong> In Spain's American empire, <span class=\"kt\">creoles</span>, people of Spanish descent born in the Americas, owned land and businesses but were kept out of the highest offices. Those went to <span class=\"kt\">peninsulares</span>, men born in Spain. Spain also controlled what the colonies could grow, make, and trade. Simón Bolívar, a creole from Caracas, wrote that Spain \"has kept us in a sort of permanent infancy with regard to public affairs\": treated like children, kept out of running their own affairs."
+          },
+          {
+            "type": "p",
+            "html": "<strong>The chance.</strong> Here is another link in the chain. In 1808 Napoleon invaded Spain and forced its king from the throne. Spanish America suddenly had no king to obey. In 1810 creole leaders formed governments of their own in Caracas and Buenos Aires, and in Mexico a priest, Miguel Hidalgo, called on Native and mestizo villagers to rise up."
+          },
+          {
+            "type": "p",
+            "html": "<strong>The words.</strong> Five years into the fighting, in 1815, beaten and in exile on the British island of Jamaica, Bolívar wrote the Letter from Jamaica. \"The hatred that the Peninsula has inspired in us,\" he wrote, \"is greater than the ocean between us.\" The tie that bound Spanish America to Spain, he argued, \"has been severed.\" Then Haiti, the last revolution's creation, helped the next one. In 1816 Haiti's president, Alexandre Pétion, gave Bolívar guns, supplies, and soldiers for a new expedition, and asked him in return to end slavery in the lands he freed."
+          },
+          {
+            "type": "p",
+            "html": "<strong>What it created.</strong> By 1826 Spain had lost every colony in the Americas except Cuba and Puerto Rico. Mexico, Gran Colombia, Peru, Chile, and others became independent countries, and Brazil broke away from Portugal in 1822 with an emperor of its own. Creole elites took the top places. Most of the new countries kept a sharp social hierarchy, and slavery lasted in several of them for decades. Bolívar himself doubted that a government chosen entirely by the people, \"wholly representative,\" suited Spanish America yet."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Claims and Evidence in Sources",
+          "raw": "<p><strong>Compare two arguments.</strong> To compare two sources, say each one's argument in your own words, then say one way the arguments are alike, one way they differ, and why: what grievance or moment was each writer answering?</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "New Ideas",
+        "heading": "New Ways to Govern, and a New Loyalty",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Behind all four revolutions was anger at kings and empires. The revolutions left behind new answers to an old question: how should a country be run? One answer was the republic, with a written constitution. Another was <span class=\"kt\">liberalism</span>: the belief that a constitution and an elected parliament should limit the government and protect each person's rights, such as free speech, a free press, and property. Many liberals in the 1800s still wanted only men with property to vote. A third was <span class=\"kt\">democracy</span>, rule by the people, which pushed for the vote to reach all men. These ideas helped set off new revolutions across Europe in 1830 and 1848. Most of the uprisings of 1848 were crushed within two years."
+          },
+          {
+            "type": "p",
+            "html": "The revolutions also said that a state belongs to its people. That raised a new question: which people? More and more, people answered with <em>the nation</em>, everyone who shared a language, a religion, customs, and a homeland. That feeling, <span class=\"kt\">nationalism</span>, put loyalty to the nation above loyalty to a king or an empire."
+          },
+          {
+            "type": "p",
+            "html": "Governments learned to use it. In 1793, at war with much of Europe, revolutionary France ordered that \"all Frenchmen are in permanent requisition for the service of the armies.\" Young men would fight, married men would make weapons, women would make tents and serve in hospitals, and old people would go to public squares to preach \"the unity of the Republic.\" The whole nation was called to war, not just a king's soldiers. But nationalism could also be turned against governments, by people who felt they were a nation without a country of their own."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Effects keep going.</strong> The revolutions caused new ideas, liberalism, democracy, and nationalism, and those ideas then caused new revolutions. When you explain effects, follow them forward: what did this effect go on to cause?</p>"
+        }
+      },
+      {
+        "number": "7",
+        "label": "Nations",
+        "heading": "Nationalism Redraws the Map",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Through the 1800s, people who saw themselves as one nation wanted one state, with borders to match. Sometimes that meant <span class=\"kt\">unification</span>: joining many small states into one. Italy was split into several states. Italian nationalists, among them the statesman Count Cavour and the soldier Giuseppe Garibaldi, joined most of it into one kingdom in 1861, and added Rome in 1870. Germany was split into more than thirty states. In 1848, German liberals met in Frankfurt to unite Germany with an elected parliament and a constitution, and failed. Then Otto von Bismarck, the chief minister of Prussia, told Prussia's lawmakers in 1862 that the great questions of the time are not decided \"by speeches and majority resolutions,\" which had been \"the big mistake of 1848 and 1849,\" but \"by iron and blood.\" After three wars, the German Empire was proclaimed on 18 January 1871, in the Hall of Mirrors at Versailles, the palace Louis XIV built."
+          },
+          {
+            "type": "p",
+            "html": "Sometimes nationalism pulled peoples away from an empire. The Ottoman Empire ruled many peoples in the Balkans, in southeastern Europe. Serbs rebelled and won the right to rule themselves. Greeks rose up in 1821, and in 1830 Britain, France, and Russia declared Greece an independent state, to be ruled by a king. Other Balkan peoples followed, and in 1878 Serbia, Montenegro, and Romania were recognized as independent."
+          },
+          {
+            "type": "p",
+            "html": "The Ottoman government answered with a loyalty of its own, <span class=\"kt\">Ottomanism</span>. In 1856 it promised equal treatment to all its subjects, Muslim or not, and in 1869 a law made every subject an Ottoman citizen. The idea was one loyalty for everyone, to the empire, instead of to a nation. It did not stop the Balkan nations from leaving."
+          },
+          {
+            "type": "p",
+            "html": "The idea reached beyond Europe, too. In the Spanish-ruled Philippines in the 1880s and 1890s, Filipino writers in the Propaganda Movement, among them José Rizal, demanded equal rights with Spaniards. Spain executed Rizal in 1896, during a revolution against its rule."
+          },
+          {
+            "type": "p",
+            "html": "So, what caused the revolutions, and what did they create? A grievance, the words to name it, and a chance to act, in America, France, Haiti, and Spanish America, and each revolution helped another one start or win. They created new independent countries in the Americas, republics and constitutions, and new ideas about government, liberalism and democracy. And they created the nation as the thing a state was supposed to belong to, an idea that kept joining some states together and pulling peoples away from empires long after the last Spanish colony on the mainland broke free."
+          },
+          {
+            "type": "p",
+            "html": "Even before Paris argued about rights, a different revolution had begun in British workshops. That is Topic 5.3."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>One cause, two effects.</strong> A single cause can push in opposite directions: the same loyalty that joins one people into a country can pull another people away from an empire. When you explain a cause, look for both kinds of effect. Saying both makes a stronger explanation.</p>"
         }
       }
     ],
-    "takeaway": "The Atlantic Revolutions (1776–1825) applied Enlightenment ideas to create new political systems, but applied them very differently depending on who was doing the applying. The <strong>American Revolution</strong> (1776) created the first Enlightenment-based republic, drew on Locke and Montesquieu, but preserved slavery and restricted rights to white property-owning men. The <strong>French Revolution</strong> (1789) was more radical, abolishing feudalism, declaring universal rights, briefly abolishing slavery, but descended into the Terror and Napoleon's authoritarian rule. The <strong>Haitian Revolution</strong> (1791–1804) was the most radical: enslaved people claiming universal rights that white revolutionaries refused to extend to them, creating the first Black republic in the Western Hemisphere. <strong>Latin American independence</strong> (1810–1825) followed, led by creoles who replaced Spanish-born elites without fundamentally transforming social hierarchies. From these revolutions emerged <strong>nationalism</strong>, the idea that shared culture or history should form the basis for political self-determination, a powerful new ideology that would destabilize multiethnic empires for the next century.",
+    "takeaway": "Ideas alone did not make a revolution. In America, France, Haiti, and Spanish America, revolution came when people had a grievance, the words to name it in a document such as the Declaration of Independence, the Declaration of the Rights of Man and of the Citizen, or Bolívar's Letter from Jamaica, and a chance to act. Each revolution helped another one start or win: the American war pushed France to the edge of bankruptcy, France's declaration was claimed in Saint-Domingue, Napoleon's invasion of Spain opened the way in Spanish America, and Haiti's guns helped Bolívar win. The revolutions created new independent countries in the Americas, republics and constitutions, and new ideas, liberalism and democracy. They also created nationalism, a loyalty to the nation that governments used and that joined Italy and Germany together while it broke the Balkans away from the Ottoman Empire. Grievance + words + a chance = revolution. Then the nation redrew the map.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
-        "num": "1",
+        "num": "01",
         "skill": "Causation",
-        "text": "Explain why the Haitian Revolution happened in 1791, specifically in Saint-Domingue rather than somewhere else in the Atlantic world. Identify at least two specific causes, and explain why the French Revolution's declaration of universal rights made the Haitian situation uniquely explosive.",
-        "placeholder": "Identify at least two specific causes and explain the unique explosive context in Saint-Domingue..."
+        "text": "Choose ONE revolution from Sections 2 to 5: America, France, Haiti, or Spanish America. Name its grievance, its words, and its chance, using a detail from the reading for each.",
+        "placeholder": "The revolution I chose is... Its grievance was... Its words were... Its chance came when..."
       },
       {
-        "num": "2",
-        "skill": "Comparison",
-        "text": "Compare the American Revolution and the Haitian Revolution as applications of Enlightenment ideas. Identify one meaningful similarity and one meaningful difference. Then explain what the difference reveals about the limits of Enlightenment universalism as practiced by white revolutionaries.",
-        "placeholder": "Identify a similarity and a difference, then explain what that difference reveals..."
+        "num": "02",
+        "skill": "Claims and Evidence in Sources",
+        "text": "The Declaration of Independence says governments get \"their just powers from the consent of the governed.\" The French declaration says \"the principle of all sovereignty resides essentially in the nation.\" Explain one way the two arguments are alike and one way they are different.",
+        "placeholder": "The two arguments are alike because... They are different because..."
       },
       {
-        "num": "3",
-        "skill": "Argumentation",
-        "text": "Write a one-sentence claim answering this question: Was the Haitian Revolution the most radical Atlantic Revolution, or was the French Revolution more radical? Then provide one specific piece of evidence that supports your argument.",
-        "placeholder": "State your one-sentence claim, then provide one specific piece of evidence..."
+        "num": "03",
+        "skill": "Causation",
+        "text": "Using Section 7, explain how nationalism could join states together AND pull peoples away from an empire. Give one example of each.",
+        "placeholder": "Nationalism joined states together when... It pulled a people away from an empire when..."
       }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 5.2, Nationalism and Revolutions",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true,
   },
   "5.3": {
     "topicKey": "5.3",
@@ -608,204 +693,253 @@ module.exports = {
     "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 5.3 The Industrial Revolution Begins",
     "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
-    "readingEyebrow": "AP World History · Unit 5: Revolutions · Topic 5.3",
+    "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
-    "headerSubtitle": "Topic 5.3, The Industrial Revolution Begins &nbsp;|&nbsp; AP World History",
-    "titleHtml": "The Age of <em>Steam</em>",
-    "deck": "How Britain's coal, capital, and geography sparked a revolution in production, and what it cost the people who lived through it",
+    "showFooterNote": false,
+    "headerSubtitle": "Topic 5.3, The Industrial Revolution Begins, 1750 to 1900 &nbsp;|&nbsp; AP World History: Modern",
+    "titleHtml": "Coal, Water, and <em>One Roof</em>",
+    "deck": "Even before Paris argued about rights, a different revolution had begun in Britain: a change in how things were made. This reading asks why it began there. Part of the answer was in Britain's ground and water. The rest was built by people. Then it follows the new workplace those causes produced, the factory, and the two things it changed about work.",
     "skillTags": [
       "Causation",
-      "Comparison",
-      "Argumentation"
+      "Developments and Processes"
     ],
     "supportCards": {
-      "beforeYouRead": "The Industrial Revolution started in Britain in the late 18th century. By 1900 it had transformed production, labor, and daily life for millions of people around the world. As you read, track both the causes of industrialization AND its human consequences, the AP will ask you about both.",
-      "readingTarget": "By the end, you should be able to explain why industrialization began in Britain rather than elsewhere; describe how the factory system worked and how it differed from earlier forms of production; and identify the major social effects, urbanization, child labor, worker resistance, of the first industrial generation."
+      "beforeYouRead": "<strong>Nature gave the fuel and the water. People built the rest. The factory put the work under one roof.</strong> As you read, sort each cause into one of two groups: what nature gave Britain, and what people built. Then watch for the two things the factory changed: where work was done, and how it was divided.",
+      "readingTarget": "How did Britain's land and water, and the things people built on them, cause industrialization to begin there, and what did the factory system change?"
     },
     "vocabulary": [
-      "Steam Engine",
-      "Factory System",
-      "Cottage Industry",
-      "Enclosure Acts",
+      "Putting-Out System",
+      "Coke",
+      "Canals",
+      "Enclosure",
       "Urbanization",
-      "Luddites",
-      "James Watt",
-      "Richard Arkwright",
-      "Manchester",
-      "Coal",
-      "Child Labor",
-      "Industrialization",
+      "Patent",
       "Capital",
-      "Chartism",
-      "Proletariat"
+      "Factory System",
+      "Specialization of Labor"
     ],
     "sections": [
       {
         "number": "1",
-        "label": "Contextualization",
-        "heading": "The World Before Factories",
+        "label": "The Question",
+        "heading": "A Revolution in How Things Were Made",
         "blocks": [
           {
             "type": "p",
-            "html": "To understand what the Industrial Revolution destroyed, you need to understand what existed before it. Across Europe in the 17th and early 18th centuries, most manufactured goods were produced through the <span class=\"kt\">domestic system</span>, also called the <span class=\"kt\">putting-out system</span> or <span class=\"kt\">cottage industry</span>. Merchants distributed raw materials (wool, cotton, flax) to rural households; families spun yarn and wove cloth in their own homes, on their own schedule, using their own tools; the merchant collected the finished product and paid by the piece."
+            "html": "Topic 5.2 ended with a turn. The revolutions in America, France, Haiti, and Spanish America changed who had the right to rule. But even before Paris argued about rights, a different revolution had begun in British workshops. It changed how things were made."
           },
           {
             "type": "p",
-            "html": "This system had real advantages for workers. A family could set its own pace. A skilled artisan, a weaver, a dyer, a cobbler, controlled their tools, their time, and the full process of production. The <span class=\"kt\">guild system</span> structured skilled trades in towns, regulating quality, limiting competition, and protecting the status of master craftsmen who had spent years learning their trade."
+            "html": "In 1750 almost everything people owned was made by hand. Most thread and cloth were made in people's homes. Under the <span class=\"kt\">putting-out system</span>, a merchant brought raw wool or cotton to families in the countryside. They spun it into thread and wove it into cloth on their own spinning wheels and looms, and the merchant came back to collect the work and pay for each piece. Power came from human muscles, horses, wind, and water wheels on streams. Much of the world's cotton cloth came from India."
           },
           {
             "type": "p",
-            "html": "This world was not idyllic, rural poverty was grinding, guild membership was often hereditary and exclusionary, and piece-rate pay left workers vulnerable to merchants' pricing decisions. But it was a world in which the worker retained a degree of autonomy and craft identity. Within a generation, the factory system would erase most of it."
+            "html": "Over the next hundred years, Britain built a new way of making things. Why did it begin there? The answer has two parts: what nature gave Britain, and what people built on top of it. Then there is the new workplace those causes produced: the factory."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>The domestic/putting-out system is the essential context for understanding why the factory system was experienced as a social revolution, not merely a technological one. <strong>When AP prompts ask you to contextualize the Industrial Revolution, the most effective contextualization describes the pre-industrial world of craft production, the putting-out system, and guild organization, and explains what the factory system replaced and disrupted.</strong> Industrialization was not simply \"making things faster\"; it was a transformation in the relationship between workers and their work.</p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Two kinds of causes.</strong> The College Board lists seven factors behind the Industrial Revolution. Two come from nature: waterways, and where coal, iron, and timber were found. Five were built by people: towns, better farming, laws that protected property, resources from abroad, and saved-up money. Canals belong with the waterways: nature's water, dug into new places by people. The College Board lists all seven under its question about environmental factors; sorting them into two groups is this course's way to think about them. As you read, sort each factor.</p>"
         }
       },
       {
         "number": "2",
-        "label": "Key Concept",
-        "heading": "Why Britain? The Causes of Industrialization",
+        "label": "Nature, Part 1",
+        "heading": "Coal, Iron, and Not Enough Wood",
         "blocks": [
           {
             "type": "p",
-            "html": "The Industrial Revolution began in Britain, not in France, China, or the Ottoman Empire, and historians have spent two centuries debating why. No single factor explains it; what made Britain unique was a combination of conditions that existed nowhere else in the same configuration at the same time."
+            "html": "Britain sat on huge beds of coal. Much of it lay close to the surface, and much of it lay close to rivers or the sea. Iron ore was often found nearby."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Coal and iron deposits</span>: Britain had enormous, accessible coal reserves in Yorkshire, the Midlands, and South Wales, and iron ore nearby. Coal powered the steam engine; iron made the machines. Without both, the industrial takeoff was impossible."
+            "html": "What Britain did not have was much timber. By the 1600s most of its old forests had been cut down, so wood was expensive. Iron had always been made by heating iron ore with charcoal, a fuel made from wood, and much of the iron Britain used was bought from Sweden, and later from Russia, where forests were still large. So Britons turned to coal. By 1700 coal gave England about half of all its energy, much of it burned in fireplaces for heating and cooking."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Geographic advantages</span>: Britain's geography was almost purpose-built for industrial commerce. No part of the island is more than 70 miles from the sea. Rivers and canals connected interior coalfields and manufacturing towns to ports. Cheap water transport dramatically reduced the cost of moving heavy raw materials and finished goods."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Enclosure Acts</span>: Beginning in the 17th century and accelerating in the 18th, Parliament passed hundreds of Enclosure Acts that converted common agricultural land into privately owned fields. Peasant families who had farmed common land for generations were displaced. Many had no choice but to move to growing towns and cities in search of work, providing the <span class=\"kt\">labor supply</span> that factories required."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Capital from colonial and Atlantic trade</span>: Britain's Atlantic empire generated enormous wealth, including profits from the <span class=\"kt\">slave trade</span> and slave-produced sugar, tobacco, and cotton. This capital was available for investment in industrial ventures. The connection between colonial exploitation and industrial financing is historically documented and morally significant."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Political stability and property rights</span>: The <span class=\"kt\">Glorious Revolution</span> (1688) established parliamentary supremacy, limited royal power, and secured property rights for the commercial classes. Investors were more willing to risk capital in long-term industrial ventures when they trusted that Parliament, not an arbitrary monarch, would protect their property."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Scientific and practical culture</span>: The <span class=\"kt\">Royal Society</span> (founded 1660) and the <span class=\"kt\">Lunar Society</span> of Birmingham created networks connecting scientists, engineers, and industrialists. Britain's <span class=\"kt\">patent system</span> incentivized invention. The culture of practical experimentation, tinkering, improving, applying, was more developed in Britain than in more academically oriented Continental scientific traditions."
+            "html": "In 1709, at Coalbrookdale beside the River Severn, Abraham Darby made iron using <span class=\"kt\">coke</span>, a fuel made by baking coal. Iron could now be made with British coal instead of scarce wood. At first it was used mostly for cast-iron pots, and coke iron spread slowly, mainly after the 1750s, as charcoal and imported iron grew dearer. A shortage of wood helped push Britain toward coal, which it had in plenty."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p>No single factor explains British industrialization, the combination was unique and specifically British. <strong>A strong causation argument does not just list causes; it explains why the combination of factors was necessary. What would have happened if Britain had had coal deposits but no navigable rivers, or capital but no displaced agricultural workers? The AP rewards arguments that explain HOW causes worked together, not just what they were.</strong> Britain had coal, capital, labor, geographic infrastructure, legal security for investment, and a culture of practical innovation, simultaneously. That convergence was what no other society had matched by 1760.</p>"
+          "raw": "<p><strong>A shortage can be a cause.</strong> Timber is on the College Board's list, and Britain's timber mattered because there was so little of it. When a resource runs short, people look for a substitute. Britain's substitute, coal, was lying under its fields.</p>"
         }
       },
       {
         "number": "3",
-        "label": "Key Concept",
-        "heading": "Steam Power and the Factory System",
+        "label": "Nature, Part 2",
+        "heading": "Water: Moving Heavy Things and Turning Wheels",
         "blocks": [
           {
             "type": "p",
-            "html": "Two inventions transformed British production in the 1760s–1780s, and they worked together to create an entirely new system of manufacturing."
+            "html": "Coal is heavy. Before railways, the cheapest way to move something heavy was to float it. Britain had a long coastline and rivers that boats could travel. Coal from the mines near Newcastle went by ship down the coast to London."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">James Watt</span>'s improved <span class=\"kt\">steam engine</span> (patented 1769, with critical improvement via the separate condenser) dramatically increased the efficiency of steam power. Earlier steam engines wasted enormous energy reheating a cylinder with each stroke; Watt's separate condenser kept the cylinder hot, reducing fuel consumption by roughly 75%. This made steam power economically viable at industrial scale, and it was not dependent on rivers, unlike water power, so factories could be built anywhere coal could be delivered."
+            "html": "Fast streams mattered too. A stream could turn a water wheel, and a water wheel could turn machines."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Richard Arkwright</span>'s <span class=\"kt\">water frame</span> (1769) mechanized cotton spinning, producing thread strong enough to serve as warp. Arkwright opened his first true factory at Cromford, Derbyshire in 1771, a building housing dozens of machines, powered by water, staffed by workers hired to tend them on fixed shifts. This was the birth of the <span class=\"kt\">factory system</span>."
-          },
-          {
-            "type": "p",
-            "html": "The factory system's defining features set it apart from anything that had come before. Workers were concentrated under one roof rather than dispersed in households. Production was powered by machines, not by human or animal muscle. Hours were set by the factory owner and the rhythm of the machine, not by the seasons, the weather, or craft tradition. Workers did not own their tools; the factory owner owned everything. Workers sold their labor by the hour or the day; they had no stake in the product they made."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Child labor</span> was integral to the early factory system, not incidental to it. Children as young as 5 or 7 were employed, their small hands could reach into machinery to fix broken threads or clear jams that adult hands could not. They were paid a fraction of adult wages. The <span class=\"kt\">Factory Acts</span> of 1833, the first significant regulation, prohibited children under 9 from working in textile factories and limited children aged 9–13 to nine hours per day. The fact that this was considered a reform reveals the baseline."
+            "html": "Then people improved on nature with <span class=\"kt\">canals</span>, waterways dug by hand. The Duke of Bridgewater owned coal mines at Worsley, a few miles from Manchester. In 1761 his canal opened from Worsley to Stretford, on the edge of Manchester, and the price of coal in Manchester soon fell by about half. By 1765 the canal reached the town itself. Other canal builders followed, and within a few decades canals linked coalfields, industrial towns, and ports."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p>The factory system was not merely a technological change, it was a social revolution in the organization of labor. <strong>The key causal claim is this: the steam engine and mechanical spinning frame did not just speed up production; they transferred control over the production process from the worker to the factory owner. This shift in power was the fundamental social consequence of industrialization's first generation, and it is what makes the factory system historically significant beyond its economic output.</strong></p>"
+          "raw": "<p><strong>Say what the factor did.</strong> \"Britain had rivers\" is a fact, not an explanation. An explanation says what the factor did and what that led to. Always add the \"so.\"</p>"
         }
       },
       {
         "number": "4",
-        "label": "Key Concept",
-        "heading": "Urbanization and Its Human Cost",
+        "label": "People, Part 1",
+        "heading": "More Food, More People, Bigger Towns",
         "blocks": [
           {
             "type": "p",
-            "html": "The factory system transformed not only how goods were made but where people lived. <span class=\"kt\">Manchester</span>, the center of the British cotton industry, grew from approximately 25,000 inhabitants in 1772 to 300,000 by 1850. That rate of urban growth, twelve-fold in less than eighty years, was unprecedented in recorded history. Manchester earned the nickname \"<span class=\"kt\">Cottonopolis</span>\"; visitors from across Europe came to observe it with a mixture of awe and horror."
+            "html": "Nature is not the whole story. China also had coal, and it did not have Britain's industrial revolution. The rest of the story is what people built."
           },
           {
             "type": "p",
-            "html": "Working conditions in early industrial Manchester were brutal. Factory workers typically worked 14 to 16 hours per day, six days a week. Factories were loud, hot, and dangerous, machinery had no guards, accidents were frequent, and textile dust caused chronic lung disease. There was no minimum wage, no sick pay, no compensation for injury. Workers who complained could be replaced immediately from the reserve of rural migrants crowding the city's slums."
+            "html": "First, farms. British farmers were growing more food on the same land. Instead of leaving a field empty every few years to rest, they planted turnips and clover. Turnips fed cattle and sheep through the winter, and clover made the soil richer. More animals meant more manure for the fields, and that meant more grain. Landowners also fenced off the old shared village fields into private farms, often with permission from Parliament. This <span class=\"kt\">enclosure</span> let them farm their land the new way."
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Luddites</span> (1811–1816) were skilled textile workers, framework knitters and hand-loom weavers in the English Midlands, who responded to mechanization by breaking into factories and smashing the machines that were being used to deskill and displace them. They are often mischaracterized as simply \"anti-technology.\" They were not. They were skilled craftsmen defending their trades against machinery being deployed specifically to replace skilled workers with cheap, unskilled (often child) labor. The government responded with military force; <span class=\"kt\">frame-breaking</span> was made a capital offense. At least three Luddites were executed."
+            "html": "Better farming meant more food from each field and each farmworker. More food fed more people. Britain's population grew from about 8 million in 1761 to about 10.5 million in 1801, and a smaller share of them farmed. In 1700 almost half of English working men worked on the land; by about 1800, estimates range from about a third to about two in five."
           },
           {
             "type": "p",
-            "html": "Political organizing followed. The <span class=\"kt\">Chartist movement</span> (1838–1857) was the first mass working-class political movement in British history, demanding the <span class=\"kt\">People's Charter</span>: universal male suffrage, secret ballot, annual parliaments, equal electoral districts, payment of MPs, and removal of property qualifications for candidates. Chartism failed to achieve immediate reform, but it established the tradition of organized working-class political pressure that would eventually produce the Labour Party."
-          },
-          {
-            "type": "p",
-            "html": "Historians debate the \"standard of living question\": did the first generation of factory workers live better or worse than the workers they replaced? The evidence suggests that the first generation, roughly 1780 to 1840, generally experienced worse material conditions than the artisans and domestic workers they replaced. Real wages stagnated or declined; urban mortality rates were higher than rural rates; housing conditions in industrial slums were worse than rural cottages. The economic benefits of industrialization were real, but they accrued first to factory owners and merchants, not to workers."
+            "html": "Many of the rest lived in towns. <span class=\"kt\">Urbanization</span>, the growth of towns and cities, put many workers close together and gave them neighbors to sell to. Manchester, a town of about 23,000 people in 1773, counted 70,409 in the census of 1801."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Continuity and Change",
-          "raw": "<p>What changed about labor in this period, and what stayed the same? <strong>Change: workers lost ownership of their tools, lost control over their schedules, lost craft identity, and were subjected to machine-imposed discipline in concentrated factory settings. Continuity: workers remained dependent on those who owned the means of production; poverty, dangerous conditions, and child labor all predated the factory system. A strong CCOT argument distinguishes between the genuinely new features of industrial labor and the continuities with pre-industrial exploitation, and explains WHY the changes occurred when they did.</strong></p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>An effect can become a cause.</strong> Better farming helped cause more people, and more people, crowded into towns, became a cause of industry. The College Board lists urbanization as a cause of the Industrial Revolution. You will meet it again in Topic 5.9, as an effect.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "People, Part 2",
+        "heading": "Laws, Cotton from Abroad, and Money",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Building a mill was a big risk. Three more things made the risk worth taking."
+          },
+          {
+            "type": "p",
+            "html": "<strong>Laws protected private property.</strong> In Britain, Parliament, where landowners and merchants sat, passed the laws that enclosed fields and allowed canals to be dug. A law of 1624 banned most monopolies but kept the <span class=\"kt\">patent</span>: the crown could grant the true and first inventor the sole right to use a new invention for up to fourteen years. In 1769 Richard Arkwright patented a new spinning machine. A person who invested could expect the law to protect what he built and earned."
+          },
+          {
+            "type": "p",
+            "html": "<strong>Britain reached resources from abroad.</strong> Cotton does not grow in Britain's climate. By the 1780s, most of the cotton spun in Manchester was grown by enslaved people on plantations in the Caribbean and South America. After the 1790s, more and more of it came from plantations in the United States. The factory's raw material came from far away, and most of it was grown by people who were not free."
+          },
+          {
+            "type": "p",
+            "html": "<strong>Money had been saved up to invest.</strong> The College Board calls this the accumulation of <span class=\"kt\">capital</span>: money used to build something that makes more money. Merchants, bankers, and landowners had grown rich from trade, including the Atlantic trade in enslaved people and the sugar they grew, and some were ready to risk their savings on mills and machines. Arkwright's partners, Samuel Need and Jedediah Strutt, were stocking makers who had grown rich in the hosiery trade. The partners spent thousands of pounds on machines and mills before the business made a profit, at a time when a carpenter earned no more than about £36 a year."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Say only what you can support.</strong> Historians still argue about how much of Britain's capital came from the slave trade and slavery, so a strong answer says \"some\" or \"part,\" not \"all.\" What historians agree on is where most of the cotton came from: plantations worked by enslaved people.</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "Working Together",
+        "heading": "How the Factors Combined",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "None of these factors made an industrial revolution by itself. Watch five of them meet in one canal."
+          },
+          {
+            "type": "p",
+            "html": "The Bridgewater Canal needed coal under the ground at Worsley (nature). It needed water to float the coal on (nature, improved by people). It needed acts of Parliament, passed in 1759 and 1760, to allow it to be built (law). It needed the Duke's money, and he borrowed more to pay his workers (capital). And it needed a growing town to buy the coal (urbanization). Cheap coal then made Manchester an even better place to build mills, and the new mills made the town grow faster still."
+          },
+          {
+            "type": "p",
+            "html": "That is how the factors worked. Each one made the others pay off."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Developments and Processes",
+          "raw": "<p><strong>Explain a process step by step.</strong> To explain how something developed, name where it starts, then each step, joined by words like \"which meant\" and \"so.\" For example: a new bus line opened near the school, which meant students who lived farther away could get there easily, so more students signed up for the after-school club.</p>"
+        }
+      },
+      {
+        "number": "7",
+        "label": "The Factory",
+        "heading": "One Place, One Job Each",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "In 1771, Arkwright and his partners built a cotton-spinning mill at Cromford, in Derbyshire. A water wheel turned the machines. It was fed by a brook and by a tunnel that drained the nearby lead mines. Because that water came from underground, it was said never to freeze."
+          },
+          {
+            "type": "p",
+            "html": "The mill did not send cotton out to spinners' homes. It brought the workers to the machines. Everyone came to one building, at the hours the mill set, under the eye of an overseer. The village was too small to supply enough workers, so Arkwright built houses for them. Most of his workers were women and children, some as young as seven. This was the <span class=\"kt\">factory system</span>: production gathered in a single place, around one source of power. UNESCO, which protects the valley as a World Heritage Site, says it \"saw the birth of the factory system.\""
+          },
+          {
+            "type": "p",
+            "html": "Inside a cotton mill, the work was split into steps. Raw cotton was cleaned, then carded (combed so its fibers lay straight), drawn out, twisted into a loose rope, and spun into thread. Cromford began with machines for spinning, and in 1775 Arkwright patented machines for the earlier steps too. From then on each step after cleaning had its own machine, tended by workers who did that job and no other. This is <span class=\"kt\">specialization of labor</span>."
+          },
+          {
+            "type": "p",
+            "html": "Adam Smith, a Scottish thinker, showed why it mattered in 1776, using a pin workshop. Ten men shared about eighteen steps, each doing only one, two, or three of them, and together they \"could make among them upwards of forty-eight thousand pins in a day.\" A worker who had not learned the trade, working alone, he wrote, \"could scarce ... make one pin in a day, and certainly could not make twenty.\" Because each job was small and simple, it could be learned quickly, so a mill could hire workers with no training, many of them children."
+          },
+          {
+            "type": "p",
+            "html": "So, how did environmental factors contribute to industrialization? Britain's coal, iron, and waterways made fuel, metal, power, and transport cheap in the same places, and its shortage of wood pushed it toward coal. Better farming, growing towns, laws that protected property, cotton from abroad, and saved-up money made it worth building something new on top of them. Together they made factories pay. And the factory changed work itself: it gathered production in one place and split it into small, specialized jobs."
+          },
+          {
+            "type": "p",
+            "html": "The new way of making things did not stay in Britain. That is Topic 5.4."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Three myths to drop.</strong> \"Britain had coal, so it industrialized\": coal was one cause of seven, and China had coal too. \"Cromford was the first factory\": earlier mills had some of its features. \"Steam started it\": Cromford ran on water. Steam power is Topic 5.5.</p>"
         }
       }
     ],
-    "takeaway": "The Industrial Revolution began in Britain in the late 18th century due to a unique combination of <strong>coal and iron deposits</strong>, <strong>geographic advantages</strong> (no point more than 70 miles from the sea), <strong>capital from colonial and Atlantic trade</strong> (including slave trade profits), <strong>agricultural enclosure</strong> driving rural labor to cities, <strong>political stability</strong> after the Glorious Revolution (1688), and a <strong>culture of practical science</strong>. The steam engine (<strong>James Watt</strong>, 1769) and factory system (<strong>Richard Arkwright</strong>, Cromford 1771) transformed production, concentrating workers and machines under one roof, replacing the domestic putting-out system, and imposing new forms of industrial discipline set by the machine rather than craft tradition. Manchester grew from 25,000 to 300,000 in 80 years. Workers, including children as young as five, faced dangerous conditions, 14–16 hour days, and the loss of craft autonomy. The <strong>Luddites</strong> smashed frames in resistance (1811–1816); <strong>Chartists</strong> demanded political rights (1838–1857). By the early 19th century, Britain was the \"workshop of the world\", and the social question of who would benefit from industrialization had become the central political question of the century.",
+    "takeaway": "Britain's industrial revolution began with what nature gave it: coal and iron close together, close to rivers and the sea, and a shortage of wood that pushed Britons to burn coal and, from 1709, to make iron with coke. Water made heavy coal cheap to move, and canals such as the Bridgewater Canal, opened in 1761, cut the price of coal in Manchester by about half. But nature alone did not do it. People built the rest: better farming that fed a growing population, towns such as Manchester that gathered workers and buyers, laws that protected property and inventions, cotton from abroad grown by enslaved people, and saved-up capital ready to risk on mills. Together these made factories pay. The factory, like Arkwright's water-powered mill at Cromford in 1771, gathered production in one place and split the work into small, specialized jobs. Nature gave the fuel and the water. People built the rest. The factory put the work under one roof.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
-        "num": "1",
+        "num": "01",
         "skill": "Causation",
-        "text": "Explain why the Industrial Revolution began in Britain rather than somewhere else in the world. Identify at least two specific factors and explain how each created the conditions necessary for industrialization. What would have happened if Britain had had coal deposits but no navigable rivers, or capital but no coal?",
-        "placeholder": "Identify at least two specific factors and explain how each contributed to industrialization beginning in Britain..."
+        "text": "Choose ONE thing nature gave Britain from Sections 2 and 3: coal and iron, the shortage of wood, or water. Explain how it helped cause industrialization: what did it make cheaper or possible, and what did that lead to?",
+        "placeholder": "The factor I chose is... It made... cheaper or possible, so..."
       },
       {
-        "num": "2",
-        "skill": "Comparison",
-        "text": "Compare working conditions in the domestic/putting-out system with working conditions in the early factory system. Identify at least one way factory work was similar to domestic work and at least two ways it was significantly different. Then explain: from the perspective of a worker, which system was preferable, and why?",
-        "placeholder": "Identify similarities and differences, then explain which system was preferable from a worker's perspective..."
+        "num": "02",
+        "skill": "Causation",
+        "text": "Choose ONE thing people built from Sections 4 and 5: better farming, growing towns, laws that protected property, cotton from abroad, or saved-up money. Explain how it helped make a mill worth building, using a detail from the reading.",
+        "placeholder": "The factor I chose is... It helped make a mill worth building because..."
       },
       {
-        "num": "3",
-        "skill": "Argumentation",
-        "text": "Write a one-sentence claim answering this question: Was the Industrial Revolution primarily a benefit or primarily a harm for the working class in its first generation (c. 1780–1840)? Then provide two pieces of specific evidence that support your claim.",
-        "placeholder": "State your one-sentence claim, then provide two pieces of specific evidence..."
+        "num": "03",
+        "skill": "Developments and Processes",
+        "text": "Using Section 7, explain the two things the factory system changed about how work was done. Give one detail from Cromford or from Adam Smith's pin workshop for each.",
+        "placeholder": "First, the factory changed where work was done... Second, it changed how the work was divided..."
       }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 5.3, The Industrial Revolution Begins",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true
   },
   "5.4": {
     "topicKey": "5.4",

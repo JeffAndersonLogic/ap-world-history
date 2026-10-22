@@ -49,6 +49,10 @@ const TOOLS = [
   // Topic 5.1's deck (topic-5-1-os.html) is built and in DECKS, but it joins
   // this list only with its class dates: teacher-today.test.js requires every
   // lesson here to be on the schedule, and Unit 5 has no dates yet (2026-10-20).
+  // Topic 5.2's deck (topic-5-2-os.html) waits for its dates the same way
+  // (2026-10-21).
+  // Topic 5.3's deck (topic-5-3-os.html) waits for its dates the same way
+  // (2026-10-22).
   { kind: 'primary', label: 'Skills Lens', desc: 'Analyze Canvas submissions for completion, response quality, and AP skill trends across the year.', href: 'skills-lens.html' },
   { kind: 'authoring', label: 'Slide Templates', desc: 'Reference every Teaching OS slide template with real Unit 2 examples and copy-ready slide data.', href: 'slide-templates.html' },
   { kind: 'legacy', label: 'Run of Show', desc: 'Standalone pacing pages for Topics 1.4–1.6, before those lessons move into the integrated Teaching OS.', href: ROS_INDEX_OUT },

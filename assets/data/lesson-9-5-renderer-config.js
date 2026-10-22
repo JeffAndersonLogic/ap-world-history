@@ -64,7 +64,7 @@
   lesson.images = [
     {
       "title": "Wangari Maathai",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Wangari_Maathai.jpg",
+      "url": "../assets/images/commons/wangari-maathai-6c555d.jpg",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wangari_Maathai.jpg",
       "caption": "Photograph of the founder of Kenya's Green Belt Movement, which organized women to plant trees and to defend community access to land.",
       "prompt": "NOTICE that this is a portrait of an organizer rather than of an official. INFER where the pressure for reform in this case originated. What can a portrait not show about whether the movement changed anything?"

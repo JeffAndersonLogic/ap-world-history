@@ -298,6 +298,8 @@ Teacher Intelligence carries the depth.
 
 The slide templates in `teacher/slide-templates.html` are the visual vocabulary for this step. Match the template to the shape of the idea: parts that add up are an equation, a two-way trade is an exchange, one-against-many is a split, gains that build are compounding, and only a true sequence is a timeline. Round two added more shapes: a cause that sets off the next is a cause chain, one thing changing as it travels is a diffusion path, places whose fortunes differ are rise and fall, two things with overlap are a Venn, a turning point with things that carried on is continuity and change, a journey is a route on a map, and a source to question is HIPP. Four numbered boxes were the default for all of these in Unit 2, and most of them were not sequences. The implementation contract is "Slide templates" in `docs/TEACHING-OS.md`.
 
+**No box slides (Jeff, 2026-10-21).** The `grid` kind, a 2x2 grid of small cards, is retired: it was the default for ideas that had a shape of their own, and it is hard to read from the back of the room. Topic 3.4 lost its three on 2026-10-14 (ledger, verdict, balance) and Topic 3.3 its four on 2026-10-21 (split mirror, hub, ledger, matrix). `scripts/test/teaching-os-architecture.test.js` fails any new `grid` slide; `GRID_OWED` lists the older ones, which come off as each deck is revised.
+
 ## 12. Build the canonical teacher presentation
 
 Implementation begins only after the story, evidence, beats, gate, retelling slide, and visual plan are settled. **The First & 10 is written first, from the approved story, and the teacher presentation is built from that same story** (Jeff, 2026-10-06). The deck deepens the story the reading has already told; it never tells a different one.
