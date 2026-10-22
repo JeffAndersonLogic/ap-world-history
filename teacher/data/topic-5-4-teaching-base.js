@@ -375,7 +375,7 @@ window.BEHISTORICAL_TEACHING = {
         tick: 50,
         note: 'Bairoch\'s estimates; one scale for all three rows',
         cases: [
-          { name: 'Europe and the US', note: 'Where factories spread', points: [{ year: 1750, level: 1.07 }, { year: 1800, level: 1.31 }, { year: 1830, level: 1.66 }, { year: 1860, level: 2.75 }, { year: 1880, level: 3.46 }, { year: 1900, level: 3.89 }], events: [{ year: 1750, label: '1750', text: 'about a quarter' }, { year: 1860, label: '1860', text: 'about three-fifths' }, { year: 1900, label: '1900', text: 'over four-fifths' }] },
+          { name: 'Europe, US', note: 'Factory regions', points: [{ year: 1750, level: 1.07 }, { year: 1800, level: 1.31 }, { year: 1830, level: 1.66 }, { year: 1860, level: 2.75 }, { year: 1880, level: 3.46 }, { year: 1900, level: 3.89 }], events: [{ year: 1750, label: '1750', text: 'about a quarter' }, { year: 1860, label: '1860', text: 'about three-fifths' }, { year: 1900, label: '1900', text: 'over four-fifths' }] },
           { name: 'China', note: 'Mostly by hand', points: [{ year: 1750, level: 1.49 }, { year: 1800, level: 1.51 }, { year: 1830, level: 1.35 }, { year: 1860, level: 0.9 }, { year: 1880, level: 0.57 }, { year: 1900, level: 0.28 }], events: [{ year: 1750, label: '1750', text: 'about a third' }, { year: 1900, label: '1900', text: 'about 6 percent' }] },
           { name: 'India', note: 'Mostly by hand', points: [{ year: 1750, level: 1.11 }, { year: 1800, level: 0.9 }, { year: 1830, level: 0.8 }, { year: 1860, level: 0.39 }, { year: 1880, level: 0.13 }, { year: 1900, level: 0.08 }], events: [{ year: 1750, label: '1750', text: 'about a quarter' }, { year: 1900, label: '1900', text: 'under 2 percent' }] }
         ]

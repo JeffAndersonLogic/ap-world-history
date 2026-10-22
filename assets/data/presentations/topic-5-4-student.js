@@ -299,8 +299,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "note": "Bairoch's estimates; one scale for all three rows",
         "cases": [
           {
-            "name": "Europe and the US",
-            "note": "Where factories spread",
+            "name": "Europe, US",
+            "note": "Factory regions",
             "points": [
               {
                 "year": 1750,
