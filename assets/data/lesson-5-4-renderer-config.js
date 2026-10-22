@@ -142,7 +142,7 @@
       alt: "An old photograph of a long iron machine on a wooden floor, with rows of upright spindles and bobbins and a rail of large bobbins above",
       url: "../assets/images/topics/5-4/great-exhibition-1851-hibbert-platt-spinning-machine.jpg",
       sourceUrl: "https://id.rijksmuseum.nl/200345908",
-      caption: "A photograph, published in 1852 and attributed to the French photographer Claude-Marie Ferrier, of cotton machinery made by Hibbert, Platt and Sons of Oldham, England, on show at the Great Exhibition in London in 1851. Rijksmuseum.",
+      caption: "A photograph, published in 1852 and attributed to the photographers C. M. Ferrier and F. von Martens, of cotton machinery made by Hibbert, Platt and Sons of Oldham, England, on show at the Great Exhibition in London in 1851. Rijksmuseum.",
       prompt: "NOTICE how many spindles one machine holds. INFER how a machine like this could change the world's share of cloth-making. This machine was shown to visitors from many countries: what might some of them have wanted to do after seeing it?"
     },
     {
