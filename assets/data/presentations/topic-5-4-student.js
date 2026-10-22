@@ -488,7 +488,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "cause-chain",
       "eyebrow": "Why the Share Fell · India's Cloth",
       "title": "India's cloth trade turned around.",
-      "footer": "Historians still argue how much each cause mattered: cheaper machines, the rules of those in power, and older troubles.",
+      "footer": "Historians still argue how much each cause mattered: cheaper machine-made cloth, the rules of those in power, and older troubles.",
       "kc": "KC-5.1.II.B",
       "template": {
         "steps": [

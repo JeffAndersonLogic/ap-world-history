@@ -426,7 +426,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'why', kind: 'cause-chain', eyebrow: 'Why the Share Fell · India\'s Cloth',
       kc: 'KC-5.1.II.B', title: 'India\'s cloth trade turned around.',
-      footer: 'Historians still argue how much each cause mattered: cheaper machines, the rules of those in power, and older troubles.',
+      footer: 'Historians still argue how much each cause mattered: cheaper machine-made cloth, the rules of those in power, and older troubles.',
       template: {
         steps: [
           { label: 'Machines', text: 'Lancashire\'s steam mills make cloth cheaper than hands can' },
