@@ -287,8 +287,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "timeline-fortunes",
       "eyebrow": "What Changed · The Shares",
-      "title": "The world's share of manufacturing moved.",
-      "footer": "Britain alone: under 2 percent in 1750, about a fifth by 1860. A share is a part of a whole, and the whole grew enormously.",
+      "title": "The world's shares moved.",
+      "footer": "Britain alone: under 2 percent in 1750, about a fifth by 1860.",
       "kc": "KC-5.1.II.B",
       "template": {
         "range": [
@@ -579,7 +579,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Say it in one sentence.",
       "kc": "Unit 5: Learning Objective E",
       "template": {
-        "frame": "Factory methods spread from Britain to other parts of Europe, the US, ___ and ___, carried by people, ___ and money. Europe's and the US's ___ of the world's goods rose. India and China kept ___ goods, but their share ___.",
+        "frame": "Factory methods spread to other parts of Europe, the US, ___ and ___, carried by people, ___ and money. Europe's and the US's ___ rose; India and China kept ___ goods, but their share ___.",
         "words": [
           "Russia",
           "Japan",
@@ -588,7 +588,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "making",
           "fell"
         ],
-        "prompt": "Fill it in from memory. Then say it again with one example for the change and one for the continuity."
+        "prompt": "Fill it in from memory, then add one example of the change and one of the continuity."
       }
     },
     {
