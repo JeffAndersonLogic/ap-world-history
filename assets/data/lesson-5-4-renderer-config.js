@@ -102,13 +102,13 @@
     {
       title: "Checkpoint 2: What Changed, and What Continued, in Who Made the World's Goods",
       subtitle: "Checks Learning Target 2 and Success Criterion 2, and Unit 5 Learning Objective E: how modes and locations of production changed over time.",
-      cardDesc: "How the shares of world manufacturing changed from 1750 to 1900, one cause of the change, and what India, China, or Egypt kept making.",
+      cardDesc: "How the shares of world manufacturing changed from 1750 to 1900, one cause of the change, and what India, China, or the Middle East kept making.",
       learningTargets: [lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[1].criteria],
-      prompt: "Explain what changed and what continued in who made the world's goods between 1750 and 1900. (1) Describe how most goods were made in 1750, and where. (2) Using two of Bairoch's estimates, explain how the share of world manufacturing changed for the regions with steam-powered factories and for India or China. (3) Explain what a share is, and why a share can fall while a region keeps making goods. (4) Explain one cause of the change, using India's cloth trade. (5) Give one piece of evidence that India, China, or Egypt kept making goods.",
+      prompt: "Explain what changed and what continued in who made the world's goods between 1750 and 1900. (1) Describe how most goods were made in 1750, and where. (2) Using two of Bairoch's estimates, explain how the share of world manufacturing changed for the regions with steam-powered factories and for India or China. (3) Explain what a share is, and why a share can fall while a region keeps making goods. (4) Explain one cause of the change, using India's cloth trade. (5) Give one piece of evidence that India, China, or the Middle East kept making goods.",
       responseType: "Checkpoint 2",
       skill: "Continuity and Change",
-      terms: ["1750", "1900", "hand", "by hand", "handloom", "weavers", "Asia", "China", "India", "Egypt", "Europe", "United States", "share", "Bairoch", "estimate", "a third", "a quarter", "four-fifths", "steam", "factory", "machine-made", "cheaper", "Lancashire", "East India Company", "taxes", "raw cotton", "Bombay", "ships", "Trincomalee", "continued", "changed"],
+      terms: ["1750", "1900", "hand", "by hand", "handloom", "weavers", "Asia", "China", "India", "Egypt", "Europe", "United States", "share", "Bairoch", "estimate", "a third", "a quarter", "four-fifths", "steam", "factory", "machine-made", "cheaper", "Lancashire", "East India Company", "taxes", "raw cotton", "Bombay", "ships", "Trincomalee", "Aleppo", "Damascus", "Ottoman", "continued", "changed"],
       focus: ["Describe how and where goods were made in 1750.", "Explain the change in shares with two numbers.", "Explain what a share is.", "Explain one cause of the change.", "Give evidence of what continued."]
     }
   ];

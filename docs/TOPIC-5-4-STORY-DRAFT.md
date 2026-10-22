@@ -203,22 +203,27 @@ Britain. China's share fell from about a third to about 6 percent, and India's f
 to under 2 percent.
 
 **What continued: people kept making things.** Those falling shares do not mean that Asia stopped
-working. In India, millions of handloom weavers were still weaving in 1900; many switched to cheaper
-machine-made yarn and kept weaving. At the Bombay Dockyard, the Wadia family of master shipbuilders
-built teak warships for Britain's own Royal Navy; one of them, HMS Trincomalee, launched in 1817, is
-still afloat. China's farm families kept spinning and weaving cotton at home. Egypt's workshops kept
-weaving. What changed was that the rest of the world's output grew so much faster that the old makers'
-share shrank.
+working. In India, hand weaving shrank but did not die: many weavers switched to cheaper machine-spun
+yarn and kept weaving, and in 1908, in one province alone, about a million people still lived from
+handloom weaving. At the Bombay Dockyard, the Wadia family of master shipbuilders built teak warships
+for Britain's own Royal Navy; one of them, HMS Trincomalee, launched in 1817, is still afloat. China's
+farm families kept weaving cloth at home, more and more from machine-made thread. In the Ottoman
+cities of Aleppo and Damascus the number of handlooms held steady from 1860 to 1914. The old makers'
+share shrank because the rest of the world's output grew so much faster, and because they lost buyers.
+(Narrowed after the fact-check: no source gives an all-India count of "millions" of weavers in 1900.)
 
 **Why their share fell.** Machine-made cloth from Lancashire undersold hand-made cloth, even in India
-itself. By the 1820s more cotton cloth was going from Britain to India than from India to Britain:
-India, which had sold cloth to the world, now bought British cloth and sold raw cotton to British
-mills. India was ruled by the British East India Company, which let British goods in at low duties,
-while Britain had long kept Indian cloth out of its own market with high duties and bans. Historians
-argue over how much each cause mattered: cheaper machine-made goods, the policies of the rulers, and,
-in India, older troubles that began before the factories did. The ships followed the same path.
-Bombay's teak warships were among the best of their kind, but after the 1850s navies wanted iron and
-steam, and the yards that could build those were in Britain.
+itself. In 1815 India sold about £1.3 million of cotton cloth abroad and bought about £26,000 from
+England; by 1832 it sold under £100,000 and bought over £400,000; from about 1830 India bought more
+cotton cloth than it sold, and it sold raw cotton to British mills. Under the British East India
+Company British cottons entered India at 2½ percent, while around 1813 Indian calicoes paid about 70
+to 85 percent to be sold in Britain. Historians argue over how much each cause mattered: cheaper
+machine-made goods, the policies of the rulers, and, in India, older troubles that began before the
+factories did (the Mughal Empire's breakup, drought). Egypt felt the same pressure: in 1838 English
+cotton cloth sold in Egypt for less than Egypt's own. The ships followed the same path. Bombay's teak
+warships were among the best of their kind, but by the middle of the 1800s navies were turning to
+iron and steam, and the yards that could build those were in Britain. (The reversal was dated "by the
+1820s" in the first draft; the fact-check dates it to about 1830.)
 
 **Myths to drop.** "Asia stopped making things": it kept making them; its share fell. "Industry spread
 everywhere": it spread to a few regions, mostly ones with coal, and to the four places the CED names.
@@ -266,12 +271,12 @@ Shorter for the wall: **The factory traveled. The share moved. The old makers ke
 | Lowell mills from the 1820s | KC-5.1.I.D (the United States) | Then with **money**: merchants' capital. |
 | Hughes at Yuzovka, 1870s; Osaka Spinning Company, 1883 | KC-5.1.I.D (Russia, Japan) | The last two destinations, later, with **British machines and engineers**. |
 | Bairoch's estimates, 1860 and 1900: Britain about a fifth by 1860; Europe and the US over four-fifths by 1900; China about 6 percent, India under 2 | KC-5.1.II.B (shares up, shares down) | The **change**: the share moved to the factory regions. |
-| Millions of Indian handloom weavers still at work about 1900 | KC-5.1.II.B (continued to produce) | The **continuity**: people kept making cloth. |
+| Indian hand weaving shrank but survived (about a million people in one province, 1908); handlooms steady in Aleppo and Damascus, 1860 to 1914 | KC-5.1.II.B (continued to produce) | The **continuity**: people kept making cloth. |
 | The Bombay Dockyard; HMS Trincomalee, 1817 | KC-5.1.II.B (shipbuilding in India) | Asian makers built **some of the best** ships of their kind. |
-| British cloth to India greater than Indian cloth to Britain by the 1820s; raw cotton out | KC-5.1.II.B (textiles in India) | **How** the share fell: cheaper machine-made goods, sold in India itself. |
+| India's cotton cloth trade turns around, 1815 to 1832 (net importer from about 1830); raw cotton out | KC-5.1.II.B (textiles in India) | **How** the share fell: cheaper machine-made goods, sold in India itself. |
 | East India Company rule; duties; the historians' argument | KC-5.1.II.B | The causes are **argued**, not one. |
 | Iron and steam warships after the 1850s | KC-5.1.II.B (shipbuilding in India) | A new mode of production left an old one behind. |
-| Egypt's weavers; India's village iron smelting (one line each) | KC-5.1.II.B (textiles in Egypt; iron works in India) | The same continuity in other trades and places. |
+| English cloth undersells Egypt's own, 1838; the Porto Novo ironworks fails (notes only) | KC-5.1.II.B (textiles in Egypt; iron works in India) | The same pressure in other trades and places. |
 
 Named examples are evidence inside a claim. None earns its own slide unless the story needs it.
 
@@ -344,10 +349,9 @@ declined"), so the retelling holds both, around one turning point.
 The new claims, and the ones most likely to be wrong by the defect classes Units 2 to 5 kept finding:
 
 - Numbers: every Bairoch share (1750, 1860, 1900), checked against Bairoch (1982) as reprinted in
-  Kennedy (1987), Table 6, and stated as estimates every time; "millions" of Indian handloom weavers
-  about 1900 (Roy).
+  Kennedy (1987), Table 6, and stated as estimates every time; Indian handloom weaving after 1900 (Roy; Rai).
 - Dates: 1789 and 1793 (Slater), 1817 (Cockerill; Trincomalee), 1824 and 1843 (the British laws),
-  1835 (Nuremberg to Fürth), 1820s (Lowell; the reversal of the cloth trade), 1870s (Hughes), 1883
+  1835 (Nuremberg to Fürth), 1820s (Lowell), about 1830 (the reversal of the cloth trade), 1870s (Hughes), 1883
   (Osaka Spinning Company).
 - Superlatives and single causes to keep out: "the first country after Britain" unless sourced;
   "the finest cloth in the world"; "the only non-Western country to industrialize"; "colonialism

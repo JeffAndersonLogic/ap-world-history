@@ -7493,7 +7493,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "10",
           "module": "Checkpoint 2",
           "label": "Module 10, Checkpoint 2",
-          "prompt": "Explain what changed and what continued in who made the world's goods between 1750 and 1900. (1) Describe how most goods were made in 1750, and where. (2) Using two of Bairoch's estimates, explain how the share of world manufacturing changed for the regions with steam-powered factories and for India or China. (3) Explain what a share is, and why a share can fall while a region keeps making goods. (4) Explain one cause of the change, using India's cloth trade. (5) Give one piece of evidence that India, China, or Egypt kept making goods.",
+          "prompt": "Explain what changed and what continued in who made the world's goods between 1750 and 1900. (1) Describe how most goods were made in 1750, and where. (2) Using two of Bairoch's estimates, explain how the share of world manufacturing changed for the regions with steam-powered factories and for India or China. (3) Explain what a share is, and why a share can fall while a region keeps making goods. (4) Explain one cause of the change, using India's cloth trade. (5) Give one piece of evidence that India, China, or the Middle East kept making goods.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -7528,6 +7528,9 @@ window.BEHISTORICAL_SKILLS_MAP = {
             "Bombay",
             "ships",
             "Trincomalee",
+            "Aleppo",
+            "Damascus",
+            "Ottoman",
             "continued",
             "changed"
           ],
@@ -7542,7 +7545,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
             "I can explain how the share of the world's manufactured goods made in Europe and the United States rose between 1750 and 1900 while the share made in Asia and the Middle East fell, and what those regions kept making."
           ],
           "successCriteria": [
-            "I can use two of Paul Bairoch's estimates to explain how shares of world manufacturing changed from 1750 to 1900, explain what a share means, explain one cause of the change (such as cheaper machine-made cloth, or the trade rules of the East India Company), and give evidence that India, China, or Egypt kept making goods, such as India's handloom weavers or the Bombay Dockyard's ships."
+            "I can use two of Paul Bairoch's estimates to explain how shares of world manufacturing changed from 1750 to 1900, explain what a share means, explain one cause of the change (such as cheaper machine-made cloth, or the trade rules of the East India Company), and give evidence that India, China, or the Middle East kept making goods, such as India's handloom weavers or the Bombay Dockyard's ships."
           ]
         },
         "evidence-response": {
@@ -7623,7 +7626,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "08",
           "module": "Primary Source",
           "label": "Module 08, Primary Source",
-          "prompt": "PENDING PENDING PENDING",
+          "prompt": "In Passage 1, what does Martin say Britain \"compelled\" India to do, and at what tax did British cottons enter India? What does he say happened to Indian cloth-making cities such as Dacca? In Passage 1, Martin says the decline was \"not in the fair course of trade\" but \"the power of the stronger exercised over the weaker.\" What is he claiming caused the change? Name one other cause from this lesson that historians also weigh. Using Passage 2, explain what Martin thought India should be: a country that only grows crops, or one that also makes goods? Then use the lesson to say whether India kept making goods after 1840, and what happened to its share of the world's goods.",
           "skill": "",
           "skills": [],
           "skillRaw": "",

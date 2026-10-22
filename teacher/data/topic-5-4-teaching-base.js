@@ -166,7 +166,7 @@ window.BEHISTORICAL_TEACHING = {
           'Question 01 is the pattern in how the methods spread; question 02 is the change in shares, with numbers; question 03 is one continuity and one change in India. The three answers reach Canvas through Gather All My Work.'
         ],
         ask: 'What surprised you more: where the factory went, or who kept making things?',
-        listenFor: 'That India and China made most of the world\'s goods in 1750; that Slater carried the machines in his head; that India built warships for Britain.'
+        listenFor: 'That India and China made more than half of the world\'s goods in 1750; that Slater carried the machines in his head; that India built warships for Britain.'
       }
     },
     {
@@ -185,7 +185,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.1.II.B begins from here: the share Europe and the United States gained is the share Asia lost. The baseline is about 1750.',
-          'The figures: Paul Bairoch, "International Industrialization Levels from 1750 to 1980," Journal of European Economic History 11 (1982), reprinted in Paul Kennedy, The Rise and Fall of the Great Powers (1987), Table 6. They are estimates built backward from population and output guesses, and every serious user calls them rough. Use them for the size of the change.',
+          'The figures: Paul Bairoch, "International Industrialization Levels from 1750 to 1980," Journal of European Economic History 11 (1982), reprinted in Paul Kennedy, The Rise and Fall of the Great Powers (1987), Table 6. 1750: China 32.8 percent, India 24.5 (the whole subcontinent), Europe 23.2, Britain 1.9 (Clingingsmith and Williamson, NBER 10586, Table 3; University of Houston Digital History). They are reconstructions: Baldwin and Martin explain that the early Asian shares come largely from Asia\'s large population times a per-person output much like Europe\'s. Use them for the size of the change.',
           'India\'s cloth: Indian cottons, from fine muslins to cheap printed calicoes, were traded across the Indian Ocean, into the Middle East, to West Africa (where they were exchanged for enslaved people) and to Europe. Lancashire\'s cotton industry grew up copying them (5.3).',
           'The mode: almost all of it by hand, at home or in workshops. This is the "mode of production" half of the objective.'
         ],
@@ -213,8 +213,8 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.1.I.D: the methods "spread." This slide is how the first spread happened: in people\'s heads.',
-          'The laws: Britain banned the emigration of skilled artisans (repealed 1824) and the export of textile machinery (the last bans lifted in 1843). How well they worked is argued: machines and workers both got out.',
-          'Slater: apprenticed at Jedediah Strutt\'s mill at Belper, Derbyshire; Strutt was Arkwright\'s partner (5.3). He left in 1789 and, with the merchant Moses Brown\'s partners, built Arkwright-style water-powered spinning machinery at Pawtucket, Rhode Island, from 1790; the Slater Mill building dates from 1793 (National Park Service, Blackstone River Valley).',
+          'The laws: the Artificers Going Abroad Act of 21 June 1824 repealed the ban on skilled workers leaving; Gladstone\'s bill of August 1843 removed the restrictions on exporting machinery (Hansard). Some textbooks give 1825 and 1842. David Jeremy (Business History Review) calls the policy "incapable of enforcement": machines and workers both got out.',
+          'Slater: apprenticed to Jedediah Strutt, Arkwright\'s partner at Cromford (5.3), at Belper, Derbyshire (Belper Research). He sailed in September 1789, carrying "the memorized details of everything he had learned" (EBSCO); the story that he went disguised as a farm laborer is legend. Hired by Moses Brown, working with Brown\'s kinsmen Almy and Brown, he had water-powered spinning machines running at Pawtucket, Rhode Island, in December 1790; the Slater Mill building followed in 1793 (National Park Service, Blackstone River Valley).',
           'This is the 5.3 factory, Cromford\'s machines, moving to a new country with one man.'
         ],
         ask: 'Why could a law stop a machine but not Slater?',
@@ -240,10 +240,10 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 3,
         land: [
           'KC-5.1.I.D names the destinations: "other parts of Europe and the United States, Russia, and Japan." All four are on this slide, in the order the methods arrived.',
-          'Belgium: John Cockerill, son of the English machine builder William Cockerill, set up iron and machine works at Seraing near Liège from 1817, on the Sambre-Meuse coalfield.',
-          'German states: the Nuremberg to Fürth line opened in December 1835 with the locomotive Adler, built by Robert Stephenson and Company in Newcastle. The Ruhr\'s coal and iron industry grew from the 1840s and 1850s. Northern France industrialized around Lille and its coalfields.',
-          'Russia: John Hughes, a Welsh engineer, founded the New Russia Company\'s ironworks in the Donets basin from 1869 to 1870; the settlement became Yuzovka (now Donetsk). Russian industry grew fastest in the 1890s.',
-          'Japan: the Osaka Spinning Company, a private company promoted by Shibusawa Eiichi, began spinning in 1883 with British mule-spinning machines driven by steam, and worked day and night shifts.',
+          'Belgium: John Cockerill (1790 to 1840), son of the English machine builder William Cockerill; the Seraing works began production on 25 January 1817 and by the mid-1820s were called "the industrial wonder of Europe" (Encyclopedia of Europe, 1789-1914). Belgium was the first country on the European mainland to industrialize, on the coal of the Sambre-Meuse valley. The mainland\'s first steam passenger railway ran from Brussels to Mechelen on 5 May 1835 (Canon of Flanders).',
+          'German states: the Nuremberg to Fürth line opened on 7 December 1835 with the locomotive Adler, built by Robert Stephenson and Company in Newcastle. The Ruhr\'s coal and iron industry grew later in the century. Northern France industrialized around Lille and its coalfields.',
+          'Russia: John Hughes, a Welsh engineer; his New Russia Company was registered in London in 1869, he brought a team out in 1870, and the first blast furnace was lit in 1871 (Glamorgan Archives). The settlement became Hughesovka, or Yuzovka, now Donetsk. Russia\'s industrial output grew 8 to 9 percent a year in the 1890s (Journal of Economic History, 2025).',
+          'Japan: the Osaka Spinning Company, a private company promoted by Shibusawa Eiichi, founded 1882, began spinning in 1883 with 10,500 English mule spindles driven by steam, and ran a night shift from 1883; electric light came in 1886 (Takeshi Abe; Osaka City). Its profits set off Japan\'s spinning boom; in 1897 Japan\'s cotton yarn exports passed its imports (IDE-JETRO).',
           'Check the question-slide predictions: which places did the class guess?'
         ],
         ask: 'What do the first three stops have in common with Britain?',
@@ -267,7 +267,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.1.I.D says the methods spread. This slide is how: three carriers, and the resources that let them take root.',
-          'People first, while the British laws held (to 1824 and 1843); then machines and money. Lowell: the Boston Manufacturing Company\'s merchants (the "Boston Associates") built cotton mills at Lowell, Massachusetts, from the 1820s, and hired young women from New England farms.',
+          'People first, while the British laws held (to 1824 and 1843); then machines and money. Lowell: Francis Cabot Lowell studied British power looms in 1810 to 1812 and had them rebuilt "from his memory and drawings"; with Boston merchants (the "Boston Associates") he founded the Boston Manufacturing Company at Waltham in 1814. In 1821 the Associates chose the falls of the Merrimack for the mill town of Lowell, and recruited "the daughters of New England Yankee farmers" (National Park Service).',
           'This is the deck\'s answer to "it just spread": something has to carry it.'
         ],
         ask: 'Take one away. Could a factory start in a new place without it?',
@@ -285,16 +285,16 @@ window.BEHISTORICAL_TEACHING = {
         rows: [
           { label: 'When', left: 'Mostly after 1870; fastest in the 1890s', right: 'Mostly after 1870' },
           { label: 'A case', left: 'Hughes\'s ironworks at Yuzovka, 1870s', right: 'The Osaka Spinning Company, 1883' },
-          { label: 'Carried by', left: 'A Welsh engineer and foreign money', right: 'British machines, driven by steam' },
-          { label: 'Built on', left: 'The Donets coal and iron', right: 'Cotton spinning, day and night' }
+          { label: 'Carried by', left: 'A Welsh engineer and his British team', right: 'British machines, driven by steam' },
+          { label: 'Built on', left: 'The Donets coal and iron', right: 'Cotton spinning, with a night shift' }
         ]
       },
       notes: {
         minutes: 2,
         land: [
           'KC-5.1.I.D\'s last two destinations. Both came late, both borrowed British machines and experts, and both governments pushed industry hard: that last part is 5.6 (KC-5.1.V.C and KC-5.2.II.A). Name it, and stop.',
-          'Russia: John Hughes, a Welsh engineer, ironworks at Yuzovka in the Donets basin from 1869 to 1870, with British capital and workers. Russia\'s industry grew fastest in the 1890s, with heavy foreign investment and railway building.',
-          'Japan: the Osaka Spinning Company (1883), a private company, British Platt mule spinning machines, steam power and day and night shifts; it became the model for Japan\'s cotton-spinning boom. Japan\'s first railway, Shinbashi (Tokyo) to Yokohama, opened in 1872 with British engineers.',
+          'Russia: John Hughes, a Welsh engineer, ironworks at Hughesovka (Yuzovka) in the Donets basin, company registered in London 1869, first furnace 1871, with a team of British workers (Glamorgan Archives). Russia\'s industrial output grew 8 to 9 percent a year in the 1890s, with railway building and foreign loans.',
+          'Japan: the Osaka Spinning Company (spinning from 1883), a private company, 10,500 English mule spindles, steam power and a night shift; its profits made it the model for Japan\'s cotton-spinning boom. Japan\'s first railway, Shinbashi (Tokyo) to Yokohama, opened on 14 October 1872, built under the British engineer Edmund Morel with British locomotives (Nippon.com).',
           'Do not teach Perry, the Meiji Restoration, the Iwakura Mission or the zaibatsu here. They are 5.6\'s.'
         ],
         ask: 'Same pattern as the first stops, or different?',
@@ -383,8 +383,8 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 3,
         land: [
           'KC-5.1.II.B, first half: steam-powered production in Europe and the U.S. "contributed to the increase in these regions\' share of global manufacturing."',
-          'The lines are drawn from Bairoch\'s estimates (1982; Kennedy, 1987, Table 6), one scale for all three rows: Europe and the United States together, about 23 percent in 1750 to about 86 percent in 1900; China about 33 to about 6; India about 25 to under 2. Britain alone: under 2 percent in 1750, about a fifth by 1860. By 1900 the United States (about 24 percent) had passed Britain (about 19). Say "estimates," every time.',
-          'The pizza: the world made far more goods in 1900 than in 1750. A falling share is not, by itself, a falling amount. That is the bridge to slide 14.',
+          'The lines are drawn from Bairoch\'s estimates (1982; Kennedy, 1987, Table 6), one scale for all three rows: Europe (including Russia) and the United States together, about 23 percent in 1750 to about 86 percent in 1900; China 32.8 to 6.2; India 24.5 to 1.7. Britain alone: 1.9 percent in 1750, 19.9 by 1860. By 1900 the United States (23.6) had passed Britain (18.5); the year it did so is not settled, so say "by 1900." Say "estimates," every time. (One online copy of the table prints the US at 26.6 for 1900; that is a typo.)',
+          'The pizza: the world made far more goods in 1900 than in 1750. A falling share is not, by itself, a falling amount. But be honest with the class: Bairoch also estimated that output per person fell, in India from an index of 7 in 1750 to 2 in 1880 (Clingingsmith and Williamson), so the old makers did lose ground, not only share. That is the bridge to slides 14 and 15.',
           'Why the share rose: a steam-powered mill could make cloth far faster and cheaper than hand spinners and weavers. How steam did it is 5.5.'
         ],
         ask: 'India\'s line falls almost to the floor. Did India stop making things?',
@@ -395,27 +395,28 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'continued', kind: 'story-scene', eyebrow: 'What Continued · The Old Makers',
       kc: 'KC-5.1.II.B', title: 'The old makers kept making.',
-      footer: 'What changed was the share, because the rest of the world\'s production grew faster.',
+      footer: 'The share shrank: the rest of the world made far more, and the old makers lost buyers.',
       template: {
         steps: [
-          { label: 'Cloth', text: 'Millions of Indian **handloom** weavers were still at work in 1900.' },
-          { label: 'Thread', text: 'Many wove with cheaper **machine-spun** thread, and kept weaving.' },
+          { label: 'Cloth', text: 'India\'s **handloom** weaving shrank but survived: a million people in one province lived by it in 1908.' },
+          { label: 'Thread', text: 'Many weavers used cheaper **machine-spun** thread, and kept weaving.' },
           { label: 'Ships', text: 'Bombay\'s Wadia shipbuilders built **teak warships** for Britain\'s navy.' },
-          { label: 'Homes', key: true, text: 'Chinese farm families kept spinning and weaving; Egypt\'s weavers kept weaving.' }
+          { label: 'Elsewhere', key: true, text: 'Chinese farm families kept weaving; handlooms held steady in Aleppo and Damascus.' }
         ]
       },
       notes: {
         minutes: 2,
         land: [
           'KC-5.1.II.B, second half: "While Middle Eastern and Asian countries continued to produce manufactured goods, these regions\' share in global manufacturing declined." This slide is the continuity.',
-          'Handloom weavers: the economic historian Tirthankar Roy argues that handloom weaving in India survived and adapted, with millions of weavers still at work around 1900, many using cheaper mill-spun yarn.',
-          'Ships: the CED\'s example, shipbuilding in India. The Wadia family of master builders ran the Bombay Dockyard for generations and built teak ships for the East India Company and the Royal Navy. HMS Trincomalee, launched at Bombay in 1817, survives at Hartlepool, England.',
-          'China: farm households kept spinning and weaving cotton by hand through the 1800s, even as foreign machine-made yarn and cloth came in after the treaties of the 1840s.',
-          'Egypt: the CED\'s example, textile production in Egypt. Egypt\'s hand weavers kept working. Muhammad Ali\'s state cotton mills of the 1820s and 1830s are 5.6\'s example; name them only if asked.',
-          'Iron works in India (the CED\'s third example): village smelters kept making iron in small furnaces, though cheap imported iron cut into their trade.'
+          'Handloom weavers: the economic historian Tirthankar Roy finds that handloom weaving in India "did not succumb": handloom cloth\'s share of India\'s market was roughly stable from the 1890s to the 1930s (Traditional Industry in the Economy of Colonial India). In the United Provinces alone, a 1908 report said "quite a million" people depended on handloom weaving (Rai, International Review of Social History, 2022). There is no reliable all-India headcount for 1900, so do not say "millions." Many weavers used cheaper mill-spun yarn. Hand weaving still shrank: Indrajit Ray (Economic History Review, 2009) estimates Bengal\'s industry lost about 28 percent by the mid-1800s.',
+          'Ships: the CED\'s example, shipbuilding in India. The Wadia family of Parsi master builders ran the Bombay Dockyard for generations; Jamsetjee Bomanjee Wadia supervised HMS Trincomalee, "one of 14 ships he would build for the Royal navy" (Royal Museums Greenwich). Built of Malabar teak and launched 12 October 1817, it is at Hartlepool, where the National Museum of the Royal Navy calls it "Britain\'s oldest warship still afloat" (not the oldest warship afloat: USS Constitution is older). Rajesh Kochhar (Current Science) counts 334 Wadia vessels from 1736 to 1884, 39 of them for the Royal Navy, and dates the end of teak warship building to iron and steam.',
+          'China: Jacob Eyferth (University of Chicago): "rural hand spinning and hand weaving held out remarkably well in the face of mechanized competition"; imported yarn spread in the late 1800s, so that by about 1900 half the yarn used in China was machine-made, and weavers combined it with homespun. The Treaty of Nanjing (1842) held import taxes to about 5 percent.',
+          'The Middle East: Pamuk and Williamson (Economic History Review, 2011): Ottoman producers\' share of their own cloth market fell from about 97 percent in the 1820s to 25 to 35 percent by the 1870s, yet handloom numbers in Aleppo and Damascus "show no trend at all between 1860 and World War I," and crafts such as carpet making thrived.',
+          'Egypt: the CED\'s example, textile production in Egypt. By the 1830s Egypt had about 30 state textile factories, most losing money; in 1838 English cotton cloth sold in Egypt for 7.5 piastres a yard against 8.7 for Egypt\'s own (Ahmeti and Rizaj, Journal of European Economic History, 2024). Who built those mills, and why, is Topic 5.6; name it only if asked.',
+          'Iron works in India (the CED\'s third example): Baldwin and Martin call it "a matching, but less dramatic, story" to textiles. Josiah Heath\'s modern ironworks at Porto Novo in south India (blast furnaces 1833) was "a commercial failure" (Grace\'s Guide).'
         ],
         ask: 'If the weavers kept weaving, why does the share fall?',
-        listenFor: 'Because everyone else\'s production, made by machines, grew much faster.',
+        listenFor: 'Because everyone else\'s production, made by machines, grew much faster, and because the old makers lost buyers to cheaper machine-made goods (slide 15).',
         ap: 'KC-5.1.II.B (the continuity).'
       }
     },
@@ -426,8 +427,8 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         steps: [
           { label: 'Machines', text: 'Lancashire\'s steam mills make cloth cheaper than hands can' },
-          { label: 'Rules', text: 'The East India Company lets British goods into India at low taxes' },
-          { label: 'By the 1820s', text: 'More cloth goes from Britain to India than from India to Britain' },
+          { label: 'Rules', text: 'British cloth enters India at a 2½ percent tax' },
+          { label: 'By about 1830', text: 'India buys more cotton cloth than it sells' },
           { label: 'Then', text: 'India sells raw cotton to British mills and buys British cloth', key: true }
         ],
         links: ['and', 'so', 'and']
@@ -436,10 +437,10 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.1.II.B: why the share fell, in one case. This is a chain of causes, and one link is a choice made by people in power.',
-          'The reversal: by the 1820s Britain was sending more cotton cloth to India than India sent to Britain; by the 1830s and 1840s India was a large market for Lancashire cloth and a supplier of raw cotton.',
-          'The rules: the East India Company ruled much of India; its monopoly of trade with India ended in 1813, opening India to British private traders, and British goods entered at low duties. Britain had kept many Indian cottons out of its own market for more than a century, with the Calico Acts of 1700 and 1721 and high duties afterward.',
-          'The argument: historians weigh three things. British machine-made cloth was cheaper. The rules were made by the people in power, not by India. And David Clingingsmith and Jeffrey Williamson (2008) argue that India\'s troubles began earlier, with the Mughal empire\'s decline and with droughts that raised the price of food and so of labor. Teach it as an argument, and never as a single cause.',
-          'The ships followed the same path: by the 1850s and 1860s navies wanted iron, steam-driven warships, built in British yards.'
+          'The reversal: Montgomery Martin told a Commons committee in 1840 that India\'s cotton goods exports fell from £1.3 million (1815) to under £100,000 (1832), while cotton goods imported from England rose from £26,300 to over £400,000 (quoted in R. C. Dutt, India in the Victorian Age, 1904, p. 112). Twomey (1983) and Broadberry and Gupta: India became a net importer of cotton cloth "from about 1830." Say "by about 1830," not "by 1820."',
+          'The rules: the East India Company\'s monopoly of trade with India ended in 1813, opening India to British private traders. British cottons entered India at 2½ percent (Martin, 1840; Dutt). Going the other way, around 1813 Indian calicoes paid British duties of about 71 to 85 percent of their value (Indrajit Ray, 2009); muslins paid less, and the duties fell to 10 percent by 1832. Do not say "70 to 80 percent on all Indian cloth."',
+          'The argument: historians weigh three things. British machine-made cloth was cheaper; Ray (2009) concludes that Bengal\'s decline "is better explained by technological innovations in Great Britain" than by discriminatory policy, which "undoubtedly depressed the industry\'s export outlet." The rules were made by the people in power, not by India (R. C. Dutt\'s nationalist case). And David Clingingsmith and Jeffrey Williamson (Explorations in Economic History, 2008) find "local supply side forces were important from as early as 1700": the Mughal empire\'s breakup and more frequent droughts. Teach it as an argument, and never as a single cause.',
+          'The ships followed the same path: by the middle of the 1800s navies were turning to iron, steam-driven warships, and Bombay\'s teak warship building came to an end (Kochhar).'
         ],
         ask: 'Which link is a choice someone made?',
         listenFor: 'The rules: the East India Company chose the taxes. The machines were cheaper, but the rules decided who could sell where.',
@@ -452,7 +453,7 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'The evidence is more interesting than the myths.',
       template: {
         rows: [
-          { myth: 'Asia stopped making things.', evidence: 'It kept making them: millions of Indian weavers in 1900, and teak warships from Bombay. Its share fell.', source: 'KC-5.1.II.B' },
+          { myth: 'Asia stopped making things.', evidence: 'It kept making them: India\'s hand weavers, China\'s farm weavers, Bombay\'s teak warships. Its share fell.', source: 'KC-5.1.II.B' },
           { myth: 'Industry spread everywhere.', evidence: 'It spread to a few regions, mostly ones with coal: other parts of Europe, the United States, Russia and Japan.', source: 'KC-5.1.I.D' },
           { myth: 'India fell behind only because British machines were better.', evidence: 'The machines were cheaper, but the rules of those in power mattered too, and historians argue how much.', source: 'KC-5.1.II.B' }
         ]
@@ -477,7 +478,7 @@ window.BEHISTORICAL_TEACHING = {
         date: 'The factory',
         before: { tag: 'About 1750', items: ['Goods made **by hand**, at home and in workshops', 'Most made in **Asia**: China and India'] },
         after: { tag: 'By 1900', items: ['Factory methods in **Europe, the US, Russia, Japan**', 'Europe and the US make **over four-fifths**'] },
-        continued: { tag: 'Continued', items: ['Indian and Chinese weavers keep weaving', 'Bombay builds ships; Egypt weaves', 'But their **share** shrinks'] }
+        continued: { tag: 'Continued', items: ['Indian and Chinese weavers keep weaving', 'Bombay builds teak warships', 'But their **share** shrinks'] }
       },
       notes: {
         minutes: 3,
@@ -501,7 +502,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 1,
         land: [
           'Learning objective E: "Explain how different modes and locations of production have developed and changed over time." The sentence is the whole answer; the examples make it an AP answer.',
-          'A strong version: between 1750 and 1900 production moved from hand work to steam-powered factories, and factory methods spread from Britain to other parts of Europe, the United States, Russia and Japan, carried by skilled people like Samuel Slater, by British machines and by investors\' money; Europe and the United States\' share of world manufacturing rose from about a quarter to over four-fifths, while India and China kept making goods, with millions of Indian handloom weavers still at work in 1900, but their shares fell to a few percent.'
+          'A strong version: between 1750 and 1900 production moved from hand work to steam-powered factories, and factory methods spread from Britain to other parts of Europe, the United States, Russia and Japan, carried by skilled people like Samuel Slater, by British machines and by investors\' money; Europe and the United States\' share of world manufacturing rose from about a quarter to over four-fifths, while India and China kept making goods, with Indian hand weaving shrinking but surviving and Chinese farm families still weaving at home, but their shares fell to a few percent.'
         ],
         ask: 'Which blank is hardest to fill with an example?',
         listenFor: 'Students who can give one example for the change and one for the continuity have the objective.'
@@ -545,7 +546,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 12,
         land: [
           'Module 10 is required: draft, Socrates, revise. It assesses Target 2 (KC-5.1.II.B) and declares Continuity and Change.',
-          'A strong answer: in 1750 China made about a third of the world\'s manufactured goods and India about a quarter, mostly by hand, while Britain made under 2 percent; steam-powered factories made goods faster and cheaper, so by 1900 Europe and the United States made over four-fifths, and India\'s share fell under 2 percent; one cause was that Lancashire\'s machine-made cloth undersold hand-made cloth, even in India, where the East India Company let it in at low taxes; but India kept making goods, with millions of handloom weavers still at work in 1900 and Bombay\'s shipyards building teak warships; so the share changed, while production continued.'
+          'A strong answer: in 1750 China made about a third of the world\'s manufactured goods and India about a quarter, mostly by hand, while Britain made under 2 percent; steam-powered factories made goods faster and cheaper, so by 1900 Europe and the United States made over four-fifths, and India\'s share fell under 2 percent; one cause was that Lancashire\'s machine-made cloth undersold hand-made cloth, even in India, where it paid a tax of only 2½ percent, so that by about 1830 India bought more cotton cloth than it sold; but India kept making goods, with hand weavers still at work (about a million in one province in 1908) and Bombay\'s shipyards building teak warships; so the share changed, while production continued.'
         ],
         ask: 'Where in your answer is the change, and where is the continuity?',
         listenFor: 'The change in shares and in how goods were made; the continuity in who kept making them.'

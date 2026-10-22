@@ -1089,15 +1089,15 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In India, millions of <span class=\"kt\">handloom</span> weavers were still weaving cloth on hand-worked looms in 1900. Many switched to cheaper machine-spun thread and kept weaving. In China, farm families kept spinning and weaving cotton at home. In Egypt, weavers kept working their looms."
+            "html": "In India, hand weaving shrank, but it did not die. Weavers kept working cloth on <span class=\"kt\">handloom</span>s, looms worked by hand and foot, and many switched to cheaper machine-spun thread so they could keep weaving. In 1908, in just one province of northern India, about a million people still lived from handloom weaving. In China, farm families kept weaving cloth at home, more and more of it from cheaper machine-made thread. In the Ottoman Empire, the number of handlooms in the Syrian cities of Aleppo and Damascus held steady from 1860 to 1914."
           },
           {
             "type": "p",
-            "html": "Indian shipbuilders kept building, too. At the Bombay <span class=\"kt\">dockyard</span>, the shipyard of the city now called Mumbai, the Wadia family of master shipbuilders built teak warships for Britain's own Royal Navy. One of them, HMS Trincomalee, launched in 1817, is still afloat today, in Hartlepool, England."
+            "html": "Indian shipbuilders kept building, too. At the Bombay <span class=\"kt\">dockyard</span>, the shipyard of the city now called Mumbai, the Wadia family of master shipbuilders built teak warships for Britain's own Royal Navy. One of them, HMS Trincomalee, launched in 1817, is still afloat today in Hartlepool, England, where its museum calls it Britain's oldest warship still afloat."
           },
           {
             "type": "p",
-            "html": "What changed was that the rest of the world's production grew much faster. The old makers kept making, but their share of the world's goods shrank."
+            "html": "The old makers kept making, but their share of the world's goods shrank. One reason is that the rest of the world's production grew much faster. Another is that the old makers lost buyers, even at home, as the next section shows."
           }
         ],
         "callout": {
@@ -1112,15 +1112,15 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Cloth from Lancashire's machines was cheaper than cloth woven by hand, even in India itself. By the 1820s more cotton cloth was going from Britain to India than from India to Britain. India, which had sold cloth to the world, now bought British cloth, and it sold <span class=\"kt\">raw cotton</span>, cotton not yet spun or woven, to British mills."
+            "html": "Cloth from Lancashire's machines was cheaper than cloth woven by hand, even in India itself. In 1815 India sold about £1.3 million worth of cotton cloth abroad and bought only about £26,000 worth from England. By 1832 it sold less than £100,000 worth and bought more than £400,000 worth. From about 1830, India bought more cotton cloth than it sold. India, which had sold cloth to the world, now bought British cloth, and it sold <span class=\"kt\">raw cotton</span>, cotton not yet spun or woven, to British mills."
           },
           {
             "type": "p",
-            "html": "Power mattered too. Much of India was ruled by the British East India Company, which let British goods in at low taxes. Britain, for its part, had kept many kinds of Indian cloth out of its own market for over a century with bans and high taxes. Historians still argue about how much each cause mattered: cheaper machine-made goods, the trade rules of the people in power, and, in India, troubles that had begun before the factories did."
+            "html": "Power mattered too. Much of India was ruled by the British East India Company, and British cotton cloth entered India at a tax of only 2½ percent. Meanwhile Britain taxed Indian cloth heavily: around 1813, Indian calicoes paid taxes of about 70 to 85 percent of their value to be sold in Britain. Historians still argue about how much each cause mattered: cheaper machine-made goods, the trade rules of the people in power, and, in India, troubles that had begun before the factories did, such as the breakup of the Mughal Empire and years of drought."
           },
           {
             "type": "p",
-            "html": "Shipbuilding followed the same path. Bombay's teak ships were among the best wooden ships of their day. But by the 1850s and 1860s navies wanted ships of iron, driven by steam, and the yards that could build those were in Britain."
+            "html": "Shipbuilding followed the same path. Bombay's teak ships were among the best wooden ships of their day. But by the middle of the 1800s navies were turning to ships of iron, driven by steam, and the yards that could build those were in Britain. Bombay's age of teak warships came to an end."
           },
           {
             "type": "p",
@@ -1137,7 +1137,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "In 1750 most of the world's goods were made by hand, and most of them in Asia: Paul Bairoch estimated that China made about a third of the world's manufactured goods and India about a quarter, while Britain made under 2 percent. Then factory methods spread from Britain, first carried by skilled people such as Samuel Slater, who built spinning machines from memory in Rhode Island, and John Cockerill, who opened works at Seraing in Belgium in 1817, and later by machines and money. By 1900 they had reached other parts of Europe, the United States, Russia, and Japan, and Europe and the United States made more than four-fifths of the world's manufactured goods. India's and China's shares fell to a few percent. But the old makers kept making: millions of Indian handloom weavers were still at work in 1900, and Bombay's shipbuilders built teak warships for the Royal Navy. Cheaper machine-made goods and the trade rules of the people in power, among other causes, shrank their share. The factory traveled. The share moved. The old makers kept making.",
+    "takeaway": "In 1750 most of the world's goods were made by hand, and most of them in Asia: Paul Bairoch estimated that China made about a third of the world's manufactured goods and India about a quarter, while Britain made under 2 percent. Then factory methods spread from Britain, first carried by skilled people such as Samuel Slater, who built spinning machines from memory in Rhode Island, and John Cockerill, who opened works at Seraing in Belgium in 1817, and later by machines and money. By 1900 they had reached other parts of Europe, the United States, Russia, and Japan, and Europe and the United States made more than four-fifths of the world's manufactured goods. India's and China's shares fell to a few percent. But the old makers kept making: Indian hand weaving shrank but survived, with about a million people living from it in one province alone in 1908, and Bombay's shipbuilders built teak warships for the Royal Navy. Cheaper machine-made goods and the trade rules of the people in power, among other causes, shrank their share. The factory traveled. The share moved. The old makers kept making.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [

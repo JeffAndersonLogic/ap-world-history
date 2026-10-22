@@ -1,7 +1,7 @@
 # Topic 5.4 Claim Ledger: Industrialization Spreads in the Period from 1750 to 1900
 
-**Status: open. Started with the story draft (2026-10-22); the "Where it appears" column is filled in
-as each surface is written.** Review findings and their dispositions are at the end.
+**Status: open. Started with the story draft (2026-10-22); every claim was checked against sources
+before the surfaces were finished, and the review findings are at the end.**
 
 **The CED decides scope; scholarship decides truth.** The CED (`scripts/lib/ced-source/unit-5.js`,
 p. 103) gives 5.4 one learning objective (E), two Key Concepts (KC-5.1.II.B and KC-5.1.I.D) and three
@@ -9,43 +9,107 @@ optional illustrative examples (shipbuilding in India and Southeast Asia; iron w
 textile production in India and Egypt). Whether a claim is true is checked against original texts and
 scholarly and institutional sources, never against the CED's silence or the old lesson.
 
-Status is exactly one of VERIFIED, NARROWED, REMOVED, NEEDS JEFF. A row still being checked reads
-CHECKING; none may remain at the close.
+Status is exactly one of VERIFIED, NARROWED, REMOVED, NEEDS JEFF.
 
 Surface codes used in "Where it appears": **F10** First & 10; **DR** deep reading and eBook chapter;
 **LD** lesson data (targets, criteria, lecture cards, map text); **RC** renderer config (Skill Builder,
 checkpoints, Evidence Lab, map key); **PS** Primary Source; **BS** BeSurreal; **BR** BeInTheRoom;
-**Deck** teacher deck; **CV** Canvas text; **Story** the story draft.
+**Deck** teacher deck; **CV** Canvas text; **Map** the instructional map; **Story** the story draft.
 
 ## Sources leaned on, and in what role
 
-(Filled in from the fact-check, below each claim.)
+The fact-check (2026-10-22) read every source below and quoted it; a source that could not be opened
+is not counted. Britannica returned HTTP 403 all session and is not cited.
+
+Numbers and the shape of the change:
+- **Paul Bairoch, "International Industrialization Levels from 1750 to 1980," *Journal of European
+  Economic History* 11 (1982)**, as reproduced in **David Clingingsmith and Jeffrey Williamson,
+  NBER Working Paper 10586 (2004), Table 3** (India and China, 1750 to 1880), the **University of
+  Houston's Digital History** table (Britain, the US, Germany, Russia: 1750, 1800, 1860, 1900) and
+  the LibreTexts *Modern World History* table (all regions; it misprints the US for 1900 as 26.6, and
+  is not relied on where it stands alone for a figure the course prints). Kennedy's reprint (1987,
+  Table 6) could not be opened. **Baldwin and Martin, NBER 6904**, on how the 1750 shares were built
+  and the "Third World" 73 percent in 1750.
+- Per-person decline: Clingingsmith and Williamson (Bairoch's index for India: 7 in 1750, 6 in 1830,
+  2 in 1880); Gregory Clark, *The Spread of the Industrial Revolution* (UC Davis), Table 8.3.
+
+The spread:
+- Slater: **National Park Service, Blackstone River Valley NHP, "Slater Mill"**; Belper Research;
+  EBSCO Research Starters.
+- The British laws: the **Artificers Going Abroad Act, 5 Geo. 4 c. 97 (21 June 1824)**; **Hansard,
+  10 August 1843, "Exportation of Machinery"**; David Jeremy, *Business History Review* (abstract).
+- Cockerill and Belgium: *Encyclopedia of Europe, 1789-1914* (Scribner); the Canon of Flanders.
+- The Adler and Nuremberg to Fürth: the Adler locomotive record (builder Robert Stephenson and Co.).
+- Lowell: **NPS, "Lowell, Story of an Industrial City"** and the Boott Cotton Mills lesson;
+  Encyclopedia.com (Gale) on Francis Cabot Lowell.
+- Russia: **Glamorgan Archives, "Founding the New Russia Company"**; *Journal of Economic History*
+  (2025), on 1890s growth.
+- Japan: **Takeshi Abe (LSE GEHN paper)**; Osaka City historic-site note; IDE-JETRO archive;
+  Nippon.com on the 1872 railway.
+
+What continued, and why the share fell:
+- India's cloth: **R. C. Dutt, *India in the Victorian Age* (1904), pp. 111 to 114**, reprinting
+  Montgomery Martin's evidence of 1840 (word for word, the Primary Source); Dutt, *The Economic
+  History of India under Early British Rule* (1916 printing), pp. 262 and 293; **Indrajit Ray,
+  *Economic History Review* 62 (2009)** (abstract, and duties as reported by Pseudoerasmus);
+  **Clingingsmith and Williamson, *Explorations in Economic History* 45 (2008)**; Broadberry and
+  Gupta (LSE), citing Twomey (1983), on the net-import date; Parthasarathi, *Science Museum Group
+  Journal*.
+- Handlooms: **Tirthankar Roy, *Traditional Industry in the Economy of Colonial India*, ch. 3**
+  (Cambridge abstract); Santosh Kumar Rai, *International Review of Social History* 67 (2022).
+- Ships: **Royal Museums Greenwich** (objects 140746 and 150859); **National Museum of the Royal
+  Navy**, Hartlepool; National Historic Ships UK; Rajesh Kochhar, "Shipbuilding at Bombay," *Current
+  Science*.
+- The Middle East: **Şevket Pamuk and Jeffrey Williamson, NBER 14763 (2009) / *Economic History
+  Review* (2011)**; **Ahmeti and Rizaj, *Journal of European Economic History* (2/2024)** on Egypt.
+- China: **Jacob Eyferth (University of Chicago)**; Feuerwerker (1970); the Treaty of Nanjing (Darwin).
+- The Great Exhibition: ***Reports by the Juries* (London, 1852)**; the V&A's record of Selous's
+  painting; the National Diet Library on Japan's first exposition (Paris, 1867).
 
 ## The claims
 
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
-| Bairoch's estimates, about 1750: China about a third of world manufacturing, India about a quarter, Europe about a quarter, Britain under 2 percent | Story | | CHECKING |
-| Bairoch: Britain about a fifth by 1860; Europe and the US over four-fifths by 1900; US ahead of Britain by 1900; China about 6 percent and India under 2 by 1900 | Story | | CHECKING |
-| The figures are estimates | Story | | CHECKING |
-| India's cotton cloth sold in Europe, Africa, the Middle East and Southeast Asia | Story | | CHECKING |
-| British law forbade skilled artisans to emigrate (repealed 1824) and banned export of textile machinery (lifted by 1843) | Story | | CHECKING |
-| Slater trained at Strutt's mill in Derbyshire; sailed 1789; built water-powered spinning machines from memory at Pawtucket; Slater Mill 1793 | Story | | CHECKING |
-| Cockerill, son of an English machine maker, ironworks and machine works at Seraing near Liège from 1817, on a coalfield | Story | | CHECKING |
-| Nuremberg to Fürth railway, 1835, first in the German states, English-built locomotive | Story | | CHECKING |
-| Industry on the continent grew on coal: the Ruhr, around Liège, near Lille | Story | | CHECKING |
-| Lowell mills from the 1820s, built by Boston merchants, worked by young women from New England farms | Story | | CHECKING |
-| Russia and Japan industrialized mostly after 1870 | Story | | CHECKING |
-| John Hughes, Welsh, ironworks in the Donets basin in the 1870s, at Yuzovka, named after him | Story | | CHECKING |
-| Osaka Spinning Company opened 1883 with British-made spinning machines driven by steam, ran day and night | Story | | CHECKING |
-| Millions of Indian handloom weavers still at work about 1900; many used machine-made yarn | Story | | CHECKING |
-| Wadia master shipbuilders at the Bombay Dockyard built teak warships for the Royal Navy; HMS Trincomalee launched 1817, still afloat | Story | | CHECKING |
-| Chinese farm families kept spinning and weaving cotton at home | Story | | CHECKING |
-| Egypt's workshops kept weaving | Story | | CHECKING |
-| By the 1820s more cotton cloth went from Britain to India than from India to Britain; India exported raw cotton to British mills | Story | | CHECKING |
-| The East India Company let British goods into India at low duties; Britain had kept Indian cloth out with high duties and bans | Story | | CHECKING |
-| Historians argue over the causes of India's falling share, including older troubles that began before the factories | Story | | CHECKING |
-| After the 1850s navies wanted iron and steam ships, built in Britain, and Bombay's teak warship building ended | Story | | CHECKING |
+| About 1750, China made about a third of world manufacturing, India about a quarter, Europe about a quarter, Britain under 2 percent | F10 1; DR 01; LD card 1; Deck 5, 13; BR; Story | Bairoch via Clingingsmith and Williamson Table 3: China 32.8, India 24.5 (whole subcontinent); Digital History and LibreTexts: UK 1.9; LibreTexts: Europe 23.2 | VERIFIED |
+| China and India together made more than half in 1750 | BR; Deck 4 notes | 32.8 + 24.5 = 57.3 | VERIFIED |
+| Britain about a fifth by 1860 | F10 4; DR 04; LD card 2; Deck 13; BR | Digital History: Great Britain 19.9 (1860) | VERIFIED |
+| By 1900 Europe and the US made over four-fifths; the US had passed Britain | F10 4; DR 03, 04; LD card 2; Deck 13, 17, 18 | Digital History: US 23.6, UK 18.5 (1900); LibreTexts: Europe 62.2 (62.0 in other copies); sum about 86. The year the US passed Britain is not settled, so the course says "by 1900" | VERIFIED |
+| China about 6 percent, India under 2 percent, by 1900 | F10 4; DR 04; LD card 2; Deck 13 | LibreTexts: China 6.2, India 1.7; Clingingsmith and Williamson (2008): India "had fallen to only 2 percent by 1900" | VERIFIED |
+| The figures are estimates | F10 1; DR 01; Deck 5 | Baldwin and Martin: the 1750 shares come from population and an assumed per-person output; Clingingsmith and Williamson: shares "could have been driven by fast growth abroad as well as slow growth at home" | VERIFIED |
+| A falling share is not by itself a falling amount; India's output per person also fell | F10 4 callout; DR 04; Deck 13 notes | Clingingsmith and Williamson: Bairoch's per-capita index for India 7 (1750), 6 (1830), 2 (1880); Clark Table 8.3. No source gives total Asian output, so the course claims only per-person decline, in teacher notes | NARROWED |
+| India's cotton cloth sold across Asia, Africa, the Middle East and Europe | F10 1; DR 01; Deck 5 | Parthasarathi: a "global cotton revolution that predated the rise of Manchester," with India's makers "at the centre" | VERIFIED |
+| British law banned skilled textile workers from leaving (repealed 1824) and banned the export of textile machines (lifted 1843) | F10 2, 3; DR 02; LD card 1; Deck 6; BR | Artificers Going Abroad Act, 21 June 1824; Hansard, 10 August 1843 (Gladstone's bill). Clark gives 1825 and 1842; the statute and Hansard are followed | VERIFIED |
+| Slater apprenticed to Strutt, Arkwright's partner, in Derbyshire; sailed 1789; built water-powered spinning machines from memory at Pawtucket, running by December 1790; the mill building 1793 | F10 2; DR 02; LD card 1; Deck 6, 7, 11; BR; CV | NPS Slater Mill: "In December 1790, Slater got the machines running"; "In 1793 ... a new mill"; EBSCO: "the memorized details"; Belper Research: apprenticeship at Belper. The disguise story is legend and not used | NARROWED |
+| Cockerill, son of an English machine maker, opened works at Seraing near Liège in 1817, on a rich coalfield | F10 2; DR 02; LD card 1; Deck 7, 11; BR | Encyclopedia of Europe: production began 25 January 1817; Belgium industrialized on "large coal deposits ... along the Sambre-Meuse river valley" | VERIFIED |
+| The first railway in the German states, Nuremberg to Fürth, 1835, with an English-built locomotive | F10 3; DR 03; LD card 1; Deck 7, 8, 11 | Adler: built by Robert Stephenson and Co., Newcastle; ran officially 7 December 1835 | VERIFIED |
+| Continental industry grew on coal: Liège, the Ruhr, northern France | F10 3; DR 03; LD card 1; Deck 7; BR | Sambre-Meuse coal (Belgium); the Ruhr and northern France are standard and named without numbers | VERIFIED |
+| Boston merchants paid for big cotton mills at Lowell from the 1820s; most workers young women from New England farms | F10 3; DR 03; LD card 1; Deck 8, 11; BR | NPS: the site chosen in 1821; "the daughters of New England Yankee farmers"; the Boston Associates | VERIFIED |
+| Russia and Japan came later, mostly after 1870 | F10 3; DR 03; LD card 1; Deck 9 | Glamorgan Archives (Hughes, 1869 to 1872); Abe (Osaka, 1883); JEH 2025 (1890s growth) | VERIFIED |
+| Hughes, a Welsh engineer, built ironworks in the coal country of southern Russia in the early 1870s; the town Yuzovka named after him | F10 3; DR 03; LD card 1; Deck 7, 9 | Glamorgan Archives: company registered 3 July 1869; Hughes sailed 1870; first blast furnace 24 April 1871; "Hughesovka, later Stalino and today Donetsk" | VERIFIED |
+| Russia's industry grew fastest in the 1890s | Deck 9 | JEH (2025): "grew by 8-9 percent annually between 1890 and 1900" | VERIFIED |
+| Osaka Spinning Company opened 1883 with British-made spinning machines driven by steam, and ran day and night | F10 3; DR 03; LD card 1; Deck 7, 8, 9, 11 | Abe: "English mule spinning machines with 10,500 spindles"; "steam engine was selected as motive power"; "the night shift system in 1883". "Platt Brothers" (first draft of the notes) is unsupported for this mill and was removed; electric light came in 1886 | NARROWED |
+| Indian hand weaving shrank but survived; many weavers used machine-spun thread; about a million people in one province lived from it in 1908 | F10 5; DR 05; LD card 3; Deck 14, 16, 18, 21; BR; CV | Roy: handloom weaving "did not succumb"; market share "roughly stable between the 1890s and the 1930s"; Rai: a 1908 report, "quite a million" in the United Provinces. The first draft's "millions of weavers in 1900" has no all-India source and was replaced | NARROWED |
+| The Wadia shipbuilders at the Bombay Dockyard built teak warships for the Royal Navy; HMS Trincomalee, launched 1817, still afloat at Hartlepool, "Britain's oldest warship still afloat" | F10 5; DR 05; LD card 3; Deck 14, 16; BR | RMG: built of teak at the Wadia yards, "one of 14 ships he would build for the Royal navy"; launched 12 October 1817; NMRN: "Britain's oldest warship still afloat." Never "oldest warship afloat" (USS Constitution is older) | VERIFIED |
+| Bombay's teak warship building ended as navies turned to iron and steam, by the middle of the 1800s | F10 6; DR 05; LD card 3; Deck 15 notes | Kochhar: steam and iron "effectively brought teak-ship building at Bombay to a close"; 39 Wadia ships for the navy 1777 to 1849; iron "replacing teak" by 1847. The first draft's "after the 1850s" was narrowed | NARROWED |
+| Chinese farm families kept weaving cloth at home, more and more from machine-made thread | F10 5; DR 05; LD card 3; Deck 14 | Eyferth: "rural hand spinning and hand weaving held out remarkably well"; by about 1900 half the yarn used in China was machine-made; weavers combined machine and homespun yarn | VERIFIED |
+| Handlooms in Aleppo and Damascus held steady from 1860 to 1914 | F10 5; DR 05; LD card 3; Deck 14 | Pamuk and Williamson: "the handloom numbers in both Aleppo and Damascus show no trend at all between 1860 and World War I" | VERIFIED |
+| India's cotton goods exports fell from £1.3 million (1815) to under £100,000 (1832) while imports from England rose from £26,300 to over £400,000; India a net importer from about 1830 | F10 6; DR 05; LD card 3; Deck 15; BR | Martin (1840), in Dutt (1904), p. 112; Broadberry and Gupta, citing Twomey: "a net importer of cotton cloth from about 1830." The first draft's "by the 1820s" was unsupported and replaced | NARROWED |
+| British cottons entered India at 2½ percent | F10 6; DR 05; LD card 3; Deck 15; PS | Martin (1840): "our cottons at 2½ per cent."; Dutt (1916), p. 293 | VERIFIED |
+| Around 1813 Indian calicoes paid about 70 to 85 percent to be sold in Britain | F10 6; DR 05; LD card 3; Deck 15 notes | Ray (2009): "71-85% in 1813"; H. H. Wilson in Dutt: "duties of 70 and 80 per cent." Muslins paid less; 10 percent by 1832. Limited to calicoes around 1813 | NARROWED |
+| Historians argue over the causes: cheaper machine-made cloth, the trade rules of those in power, and older troubles (the Mughal Empire's breakup, drought) | F10 6; DR 05; LD card 3; Deck 15, 16 | Ray (2009): decay "better explained by technological innovations," while policy "undoubtedly depressed the industry's export outlet"; Clingingsmith and Williamson (2008): "local supply side forces were important from as early as 1700"; Dutt's nationalist case | VERIFIED |
+| In 1838 English cotton cloth sold in Egypt for less than Egypt's own | DR 05; Deck 14 notes | Ahmeti and Rizaj: "in 1838, Egyptian cotton cost its producer 8.7 piastres per yard, while English cotton of the same quality could be bought in Egypt at 7.5 piastres" | VERIFIED |
+| The Porto Novo ironworks failed | Deck 14 notes | Grace's Guide: blast furnaces 1833; "a commercial failure" | VERIFIED |
+| India's village iron smelting declined against imported iron | none | Only weakly sourced (Baldwin and Martin: "a matching, but less dramatic, story"); the course does not state it | REMOVED |
+| Muhammad Ali signed the Treaty of Balta Liman (old lesson) | none | The treaty was signed by the Ottoman Porte and Britain; Egypt complied only by 1842 (Ahmeti and Rizaj). The topic is 5.6's and is not taught here | REMOVED |
+| The US was larger than Britain and Germany combined by 1900 (old lesson) | none | Digital History: US 23.6 against UK 18.5 plus Germany 13.2 | REMOVED |
+| "The bones of the cotton-weavers are bleaching the plains of India" and the composite "adapted account" (old Primary Source) | none | No verified original; replaced by Martin's evidence, quoted word for word | REMOVED |
+| Bismarck's "Free trade is the policy of the strong" and the 1813 "Manchester merchant" testimony (old Evidence Lab) | none | No source found | REMOVED |
+| BeSurreal: a Dacca weaving family in the 1830s meets cheaper Lancashire cloth and machine-spun thread; Dacca's cloth had sold as far as Europe | BS | Martin (1840): "the decay and destruction ... of Dacca"; Ray (2009): Bengal's decline "started around the mid-1820s"; Roy: weavers took up mill-spun yarn. A scene, not a record: the family is invented | VERIFIED |
+| Montgomery Martin's two passages, word for word | PS | Dutt (1904), pp. 112 (questions 3877 and 3879) and 114 (questions 3918 to 3920); "Murshedabad" and "civilisation" as Dutt prints them. Martin "had lived in India" and compiled a history of the British colonies (Dutt, p. 111); he supported equal treatment for Indian goods (p. 112) | VERIFIED |
+| A member of the committee, who spoke for British silk makers, had said India was "an agricultural rather than a manufacturing country" | PS | Dutt, p. 114: Brocklehurst, MP for Macclesfield, for the silk makers: "we have it in evidence that India is an agricultural rather than a manufacturing country" | VERIFIED |
+| The Great Exhibition, 1851, in the Crystal Palace, Hyde Park, showed British machinery and hand-made goods from India, including Dacca muslins | Deck 3; BR | Reports by the Juries (1852): "The plain muslins exhibited by native merchants of Dacca have great merit"; shawls "From Dacca"; British cotton machinery | VERIFIED |
+| Russia, the US and the German states (Zollverein) took part; Japan did not | BR | Reports by the Juries: jurors from Russia 7, United States 24, Zollverein 23; National Diet Library: Japan's first official exposition was Paris 1867 | VERIFIED |
+| Selous's painting, The Opening of the Great Exhibition, V&A | Deck 3 | V&A: "British, 1851-1852. Painted by Henry Courtney Selous," given by Warren W. de la Rue, 1889 | VERIFIED |
 
 ## Review findings
 

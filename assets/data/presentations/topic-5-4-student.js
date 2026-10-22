@@ -206,13 +206,13 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Carried by",
-            "left": "A Welsh engineer and foreign money",
+            "left": "A Welsh engineer and his British team",
             "right": "British machines, driven by steam"
           },
           {
             "label": "Built on",
             "left": "The Donets coal and iron",
-            "right": "Cotton spinning, day and night"
+            "right": "Cotton spinning, with a night shift"
           }
         ]
       }
@@ -428,26 +428,26 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "story-scene",
       "eyebrow": "What Continued · The Old Makers",
       "title": "The old makers kept making.",
-      "footer": "What changed was the share, because the rest of the world's production grew faster.",
+      "footer": "The share shrank: the rest of the world made far more, and the old makers lost buyers.",
       "kc": "KC-5.1.II.B",
       "template": {
         "steps": [
           {
             "label": "Cloth",
-            "text": "Millions of Indian **handloom** weavers were still at work in 1900."
+            "text": "India's **handloom** weaving shrank but survived: a million people in one province lived by it in 1908."
           },
           {
             "label": "Thread",
-            "text": "Many wove with cheaper **machine-spun** thread, and kept weaving."
+            "text": "Many weavers used cheaper **machine-spun** thread, and kept weaving."
           },
           {
             "label": "Ships",
             "text": "Bombay's Wadia shipbuilders built **teak warships** for Britain's navy."
           },
           {
-            "label": "Homes",
+            "label": "Elsewhere",
             "key": true,
-            "text": "Chinese farm families kept spinning and weaving; Egypt's weavers kept weaving."
+            "text": "Chinese farm families kept weaving; handlooms held steady in Aleppo and Damascus."
           }
         ]
       }
@@ -466,11 +466,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Rules",
-            "text": "The East India Company lets British goods into India at low taxes"
+            "text": "British cloth enters India at a 2½ percent tax"
           },
           {
-            "label": "By the 1820s",
-            "text": "More cloth goes from Britain to India than from India to Britain"
+            "label": "By about 1830",
+            "text": "India buys more cotton cloth than it sells"
           },
           {
             "label": "Then",
@@ -494,7 +494,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "rows": [
           {
             "myth": "Asia stopped making things.",
-            "evidence": "It kept making them: millions of Indian weavers in 1900, and teak warships from Bombay. Its share fell.",
+            "evidence": "It kept making them: India's hand weavers, China's farm weavers, Bombay's teak warships. Its share fell.",
             "source": "KC-5.1.II.B"
           },
           {
@@ -535,7 +535,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "tag": "Continued",
           "items": [
             "Indian and Chinese weavers keep weaving",
-            "Bombay builds ships; Egypt weaves",
+            "Bombay builds teak warships",
             "But their **share** shrinks"
           ]
         }
