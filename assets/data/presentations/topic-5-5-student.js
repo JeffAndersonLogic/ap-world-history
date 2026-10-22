@@ -34,6 +34,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "How did new machines change how much the world could make?",
       "subtitle": "And how far could its goods and people go?",
       "template": {
+        "place": "top",
         "visual": {
           "url": "../assets/images/topics/5-5/currier-ives-lightning-express-1874.jpg",
           "alt": "A color print of two black steam locomotives with red cowcatchers pulling out side by side from a busy station, smoke pouring from their stacks; behind them red and yellow freight and mail cars marked From Ocean to Ocean, Through to the Pacific and U.S. Mail, and a river and bridge in the distance",
@@ -118,30 +119,26 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "compounding-stairs",
+      "kind": "equation",
       "eyebrow": "Power · The Fossil Fuels Revolution",
-      "title": "Each gain made the next one possible.",
-      "footer": "Coal and oil are fossil fuels: energy stored underground for millions of years.",
+      "title": "Machines plus fossil fuels: far more energy.",
+      "footer": "Each made the other grow: engines drained deeper mines, and more coal fed more engines.",
       "kc": "KC-5.1.I.B",
       "template": {
-        "steps": [
+        "terms": [
           {
-            "label": "Engines",
-            "text": "Steam pumps drain deeper mines"
+            "word": "Machines",
+            "note": "steam engines; later, internal combustion engines"
           },
           {
-            "label": "More coal",
-            "text": "Britain: about 65 million tons (1854)"
-          },
-          {
-            "label": "Far more",
-            "text": "About 225 million tons (1900)"
-          },
-          {
-            "label": "The world",
-            "text": "By about 1900, coal is about half of all energy used"
+            "word": "Fossil fuels",
+            "note": "Britain's coal: about 65 million tons (1854), about 225 million (1900)"
           }
-        ]
+        ],
+        "result": {
+          "word": "Far more energy",
+          "note": "by about 1900, coal gave about half of all the energy used in the world"
+        }
       }
     },
     {
@@ -552,8 +549,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-subtitle",
       "eyebrow": "The Hand-off",
       "title": "More power. New materials. Longer reach.",
-      "subtitle": "Trains, steamboats and telegraph wires, in a Currier and Ives print of 1876. Next, Topic 5.6: a few governments did not wait for these machines to arrive on their own. They decided to build industry themselves.",
+      "subtitle": "Trains, steamboats and telegraph wires, 1876. Next, Topic 5.6: governments that decided to build industry themselves.",
       "template": {
+        "place": "top",
         "visual": {
           "url": "../assets/images/topics/5-5/currier-ives-night-railway-junction-1876.jpg",
           "alt": "A color print of a railway junction at night under a full moon: locomotives with bright headlamps pull red and yellow passenger cars, workers carry lanterns and baggage, steamboats sit in the harbor behind, and telegraph wires run on tall poles at the upper right",

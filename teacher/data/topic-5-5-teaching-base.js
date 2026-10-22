@@ -67,7 +67,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'first10', label: 'First & 10', range: '5-17', minutes: 12, teacher: 'Module 02: students read "More Power, Longer Reach" in class.', students: 'Build the chain as they read.', slide: 4 },
     { id: 'before', label: 'Energy in 1750', range: '17-19', minutes: 2, teacher: 'Muscles, wood, wind, water, and their limits.', students: 'Name each limit.', slide: 5 },
     { id: 'steam', label: 'The Steam Engine', range: '19-22', minutes: 3, teacher: 'A pump, then an engine that turns wheels.', students: 'Say what Watt changed.', slide: 6 },
-    { id: 'fossil', label: 'The Fossil Fuels Revolution', range: '22-24', minutes: 2, teacher: 'How much more energy.', students: 'Read the numbers.', slide: 7 },
+    { id: 'fossil', label: 'The Fossil Fuels Revolution', range: '22-24', minutes: 2, teacher: 'How much more energy: machines plus fossil fuels.', students: 'Read the numbers.', slide: 7 },
     { id: 'jevons', label: 'A Voice from 1865', range: '24-25', minutes: 1, teacher: 'Jevons on coal.', students: 'Say what he claims.', slide: 8 },
     { id: 'oil', label: 'Oil and a New Engine', range: '25-27', minutes: 2, teacher: 'Drake, Otto, Benz, and 8,000 cars.', students: 'Say when its effects came.', slide: 9 },
     { id: 'model', label: 'Explain a Process', range: '27-29', minutes: 2, teacher: 'Model 1.B on an everyday case.', students: 'Say the four steps aloud.', slide: 10 },
@@ -225,27 +225,26 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'fossil', kind: 'compounding-stairs', eyebrow: 'Power · The Fossil Fuels Revolution',
-      kc: 'KC-5.1.I.B', title: 'Each gain made the next one possible.',
-      footer: 'Coal and oil are fossil fuels: energy stored underground for millions of years.',
+      phase: 'fossil', kind: 'equation', eyebrow: 'Power · The Fossil Fuels Revolution',
+      kc: 'KC-5.1.I.B', title: 'Machines plus fossil fuels: far more energy.',
+      footer: 'Each made the other grow: engines drained deeper mines, and more coal fed more engines.',
       template: {
-        steps: [
-          { label: 'Engines', text: 'Steam pumps drain deeper mines' },
-          { label: 'More coal', text: 'Britain: about 65 million tons (1854)' },
-          { label: 'Far more', text: 'About 225 million tons (1900)' },
-          { label: 'The world', text: 'By about 1900, coal is about half of all energy used' }
-        ]
+        terms: [
+          { word: 'Machines', note: 'steam engines; later, internal combustion engines' },
+          { word: 'Fossil fuels', note: 'Britain\'s coal: about 65 million tons (1854), about 225 million (1900)' }
+        ],
+        result: { word: 'Far more energy', note: 'by about 1900, coal gave about half of all the energy used in the world' }
       },
       notes: {
         minutes: 2,
         land: [
           'KC-5.1.I.B: "The fossil fuels revolution greatly increased the energy available to human societies." This slide is the "greatly increased."',
           'The loop: steam engines drained coal mines, so miners could dig deeper; more coal fed more engines. Each made the other grow.',
-          'Britain\'s coal: NBER Macrohistory Database, 64.7 million long tons in 1854 (the first year of the series) and 225.2 million in 1900. Say "tons"; the unit is the long ton, 2,240 pounds.',
+          'Britain\'s coal: NBER Macrohistory Database, in millions of long tons: 64.7 (1854, the first year of the series), 84.0 (1860), 110.4 (1870), 147.0 (1880), 181.6 (1890), 225.2 (1900). Say "tons"; the unit is the long ton, 2,240 pounds.',
           'The world: Our World in Data, "By the turn of the 20th century, around half of the world\'s energy came from coal; and half still came from biomass." Vaclav Smil (2002) dates the point where coal passed wood and other biomass fuels to the 1890s. So do not say coal "replaced" wood by 1900: they were about equal.',
           'Why it matters for production: a horse or a worker eats food grown on land; coal is energy that took no land to grow this year. E. A. Wrigley calls this the escape from the "organic economy."'
         ],
-        ask: 'Why does "stored for millions of years" matter?',
+        ask: 'Coal and oil were stored underground for millions of years. Why does that matter for how much energy people could use?',
         listenFor: 'You do not have to wait for it to grow back, the way you wait for a forest. So you can use far more, far faster. (And, someday, it runs out: Jevons, slide 8.)',
         ap: 'KC-5.1.I.B (the amount of energy).'
       }
@@ -606,7 +605,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'close', kind: 'frame-subtitle', eyebrow: 'The Hand-off',
       title: 'More power. New materials. Longer reach.',
-      subtitle: 'Trains, steamboats and telegraph wires, in a Currier and Ives print of 1876. Next, Topic 5.6: a few governments did not wait for these machines to arrive on their own. They decided to build industry themselves.',
+      subtitle: 'Trains, steamboats and telegraph wires, 1876. Next, Topic 5.6: governments that decided to build industry themselves.',
       notes: {
         minutes: 2,
         land: [

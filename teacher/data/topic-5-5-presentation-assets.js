@@ -41,9 +41,9 @@ const NEWCOMEN={url:IMG+'newcomen-engine-engraving-1740s.jpg',alt:'An engraving 
 const RIG={url:IMG+'oil-rig-titusville-c1900.jpg',alt:'An old hand-colored photograph of a tall wooden oil derrick on a hillside, with a group of workmen standing beside a steam boiler and a tall smokestack on the right',credit:'Oil rig at Titusville, Pennsylvania, photograph by Mather, about 1900 · Library of Congress · Public domain',ratio:1.466,fit:'cover',position:'40% 50%'};
 const ACROSS={url:IMG+'currier-ives-across-the-continent-1868.jpg',alt:'A black-and-white print looking down on a new log-cabin town beside a railroad; a train puffs west past the town and a line of telegraph poles, covered wagons move along a road, and two Native American riders watch from the right',credit:'Currier & Ives, Across the Continent, lithograph drawn by Fanny Palmer, 1868 · Library of Congress · Public domain',ratio:1.27,fit:'cover',position:'55% 60%'};
 const setTemplate=(phase,add)=>{const s=by(phase);if(s)s.template=Object.assign({},s.template||{},add);return s;};
-setTemplate('question',{visual:Object.assign({},LIGHTNING,{tagPos:'bl'})});
+setTemplate('question',{place:'top',visual:Object.assign({},LIGHTNING,{tagPos:'bl'})});
 setTemplate('steam',{visual:NEWCOMEN,caption:'A Newcomen engine, engraved in the 1740s'});
 setTemplate('oil',{visual:RIG,caption:'An oil rig at Titusville, about 1900'});
 setTemplate('effects',{visual:ACROSS,caption:'Across the Continent, a print of 1868'});
-setTemplate('close',{visual:Object.assign({},NIGHT,{tagPos:'bl'})});
+setTemplate('close',{place:'top',visual:Object.assign({},NIGHT,{tagPos:'bl'})});
 })();
