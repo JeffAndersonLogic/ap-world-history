@@ -1175,190 +1175,231 @@ module.exports = {
   },
   "5.5": {
     "topicKey": "5.5",
-    "topicLabel": "5.5 - Technology of Industrialization",
+    "topicLabel": "5.5 - Technology of the Industrial Age",
     "sourceFile": "first-and-10-topic-5-5-technology-of-industrialization.html",
     "unitDir": "unit-5",
-    "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 5.5 Technology of Industrialization",
+    "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 5.5 Technology of the Industrial Age",
     "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
-    "readingEyebrow": "AP World History · Unit 5: Revolutions · Topic 5.5",
+    "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
-    "headerSubtitle": "Topic 5.5, Technology of Industrialization &nbsp;|&nbsp; AP World History",
-    "titleHtml": "The <em>Iron</em> Road",
-    "deck": "How railroads, telegraphs, and industrial processes shrank the world, and what the cost was for the people and environments they transformed",
+    "showFooterNote": false,
+    "headerSubtitle": "Topic 5.5, Technology of the Industrial Age, 1750 to 1900 &nbsp;|&nbsp; AP World History: Modern",
+    "titleHtml": "More Power, <em>Longer Reach</em>",
+    "deck": "In 1750 almost all the energy used in the world came from muscles, wood, wind, and water. By 1900 about half of it came from coal. This reading follows how machines unlocked that buried energy, what new things it let people make, and how railroads, steamships, and the telegraph carried goods, people, and news farther than ever before. Each step caused the next.",
     "skillTags": [
       "Causation",
-      "Comparison",
-      "Argumentation"
+      "Developments and Processes"
     ],
     "supportCards": {
-      "beforeYouRead": "Industrialization was powered by specific technologies, steam engines, railroads, telegraphs, steel-making processes, that transformed how goods moved, how people communicated, and how resources were extracted. By 1900 these technologies had connected the world in new ways while simultaneously creating new forms of environmental destruction and labor exploitation.",
-      "readingTarget": "Explain how railroads and other industrial technologies transformed economies and societies; evaluate the environmental and social consequences of industrial technology."
+      "beforeYouRead": "<strong>More power. New methods. Longer reach.</strong> As you read, build a chain. Each link is a cause that made the next link possible. Watch for the words \"so,\" \"let,\" and \"made it possible.\"",
+      "readingTarget": "How did technology change how much the world could make, and how far its goods and people could go, between 1750 and 1900?"
     },
     "vocabulary": [
-      "steam locomotive",
-      "railroad",
-      "Stephenson's Rocket",
-      "transcontinental railroad",
-      "Trans-Siberian Railroad",
-      "telegraph",
-      "Morse code",
-      "Bessemer process",
-      "steel",
-      "electricity",
-      "deforestation",
-      "resource extraction",
-      "rubber",
-      "guano",
-      "industrial pollution"
+      "Fossil Fuel",
+      "Steam Engine",
+      "Internal Combustion Engine",
+      "Second Industrial Revolution",
+      "Steel",
+      "Interchangeable Parts",
+      "Telegraph",
+      "Migration"
     ],
     "sections": [
       {
         "number": "1",
-        "label": "Contextualization",
-        "heading": "The World Before Railroads",
+        "label": "The Question",
+        "heading": "Where Did Energy Come From in 1750?",
         "blocks": [
           {
             "type": "p",
-            "html": "To understand why railroads were genuinely revolutionary, you need to understand the constraints they shattered. Before railroads, goods moved by canal and river; people moved by horse and coach. These methods were slow, limited in range, and expensive. A journey from London to Edinburgh took ten days by coach in 1800. By 1850, it took nine hours by rail. That compression of distance and time was not a marginal improvement, it was a transformation of the relationship between geography and human activity."
+            "html": "Topic 5.3 ended at a mill driven by water. Richard Arkwright's mill at Cromford ran on a water wheel, and coal, in 1700, was mostly something people burned to keep warm. Topic 5.4 followed the factory as it spread. This reading asks a different question: how did the machines themselves change what the world could make?"
           },
           {
             "type": "p",
-            "html": "The fundamental constraint of the pre-railroad world was the cost of moving <span class=\"kt\">bulk goods</span> overland. Coal, iron, and grain were extremely expensive to transport on roads or by animal power. This limited where factories could be located and what markets they could reach. Industries clustered near rivers and canals precisely because water transport was the only economically viable way to move heavy materials. A factory even twenty miles from navigable water faced severe competitive disadvantages."
+            "html": "In 1750 almost all the energy used in the world came from things that grow. Food gave energy to the muscles of people and animals. Wood gave fire for heat and cooking. Wind moved ships and turned some mills, and rivers turned water wheels. Every one of these had a limit. A water wheel works only where a stream flows strongly. A forest takes decades to grow back. A horse gets tired. Until about 1900, wood and other things that grow were still the world's largest source of energy."
           },
           {
             "type": "p",
-            "html": "Pre-railroad <span class=\"kt\">communication</span> was equally constrained. News traveled at the speed of a horse. A battle fought in Europe would not be known in the Americas for weeks. Financial decisions were made on information that was days or weeks old. Coordinating complex industrial systems across distances, scheduling deliveries, managing supply chains, synchronizing production, was nearly impossible. The pre-railroad world was, in a fundamental sense, a world of local and regional rather than national or global economics."
-          }
-        ],
-        "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>Contextualization requires explaining what the world looked like <strong>before</strong> the change, so that the significance of the change can be measured. Without understanding pre-railroad transportation, the ten-day coach journey, the prohibitive cost of moving bulk goods overland, the weeks-long lag in communication, it is impossible to understand why railroads were revolutionary rather than merely useful. The contrast is the argument.</p>"
-        }
-      },
-      {
-        "number": "2",
-        "label": "Key Concept",
-        "heading": "Railroads: The Technology That Changed Everything",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Stephenson's Rocket</span> (1829) won the Rainhill Trials for the Liverpool and Manchester Railway, the first public steam railway. The Rocket achieved 29 mph, roughly five times faster than a horse-drawn vehicle. Within twenty years, Britain had 6,000 miles of rail. The speed of railroad adoption was itself an indication of how fundamental the transformation was: no technology spreads this fast unless it is solving a deeply felt problem."
-          },
-          {
-            "type": "p",
-            "html": "Railroads achieved <span class=\"kt\">national market integration</span> by making cheap bulk transportation possible for the first time. A factory in Birmingham could now sell to customers in Edinburgh, Cardiff, and London at similar prices. Regional price differences, which had insulated local producers from competition, collapsed. This integrated national markets and allowed industrial production to scale up dramatically, because producers could now reach customers across an entire country rather than just a local region."
-          },
-          {
-            "type": "p",
-            "html": "Railroad construction also created a self-reinforcing industrial cycle. Every mile of track required <span class=\"kt\">steel rails</span>, iron spikes, and wooden ties. Every locomotive required coal and steel components. Railroad construction thus generated enormous demand for the very industries, steel, coal, that railroads then helped expand. More steel meant more railroads; more railroads meant more demand for steel. This virtuous cycle drove much of the second wave of industrialization after 1850."
-          },
-          {
-            "type": "p",
-            "html": "Railroads also had profound <span class=\"kt\">military implications</span>. The Prussian military's victories over Austria (1866) and France (1870–71) were largely determined by its ability to mobilize troops faster via railroad. After 1870, every major power built railroads partly as military infrastructure. The <span class=\"kt\">Trans-Siberian Railroad</span> (1891–1916, 5,772 miles) was explicitly built to project Russian military and economic power into Asia, a clear demonstration that industrial technology and imperial ambition were inseparable."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Colonial railroads</span> reveal the darker side of railroad expansion. In India and Africa, colonial powers built railroads primarily to move raw materials, cotton, coal, minerals, from the interior to ports, and to move troops rapidly to suppress resistance. Indian railroads served British economic interests more than Indian development; most of the revenues they generated left India. The railroad network's shape told the story: lines ran from mines and plantations to ports, not between Indian cities or agricultural regions."
+            "html": "But there was energy buried underground. Coal and oil are each a <span class=\"kt\">fossil fuel</span>: the remains of plants and tiny sea creatures, buried for millions of years, with energy stored inside them. Britain was already the exception: it burned so much coal for heat that, by 1700, coal gave England about half of its energy (Topic 5.3). The trick was to turn that heat into motion."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p>Explaining how railroads accelerated industrialization requires tracing the mechanism, not just \"railroads helped industry\" but specifically: <strong>railroads reduced transportation costs → factories could reach national markets → production scale increased → demand for steel and coal increased → mining and steel production expanded → more railroads could be built.</strong> Each step in the causal chain must be explained. A general statement without the mechanism is not a complete causation argument.</p>"
+          "raw": "<p><strong>Build a chain.</strong> A causation question asks what made something happen. This topic is a chain of causes: a machine made something possible, and that made the next thing possible. Start your chain here, with the problem: before 1750, energy was limited to what grows, blows, and flows.</p>"
+        }
+      },
+      {
+        "number": "2",
+        "label": "Power, Part 1",
+        "heading": "A Pump, Then an Engine That Turns Wheels",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "The first useful <span class=\"kt\">steam engine</span>s were pumps. In 1712 Thomas Newcomen set up a steam engine near Dudley Castle, in the English Midlands, to pump water out of a coal mine. Burning coal boiled water into steam, and the steam helped move a heavy beam up and down. It worked, but it burned a great deal of coal, because its cylinder was cooled and heated again on every stroke."
+          },
+          {
+            "type": "p",
+            "html": "James Watt, an instrument maker at the University of Glasgow, found the fix in 1765: cool the steam in a separate chamber, so the cylinder stays hot. He patented the idea in 1769. Watt's engines used less than a third of the coal of a Newcomen engine."
+          },
+          {
+            "type": "p",
+            "html": "Then came the change that mattered most for factories. In the 1780s Watt and his business partner, Matthew Boulton, built engines that turned a wheel, so an engine could drive machines. A mill no longer had to sit beside a fast river. It could run on coal, wherever coal could be brought, and cotton mills crowded into towns such as Manchester."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Developments and Processes",
+          "raw": "<p><strong>Explain a process step by step.</strong> To explain how a technology changed production, say four things: what the problem was, what the new machine did, what that made possible, and what followed. Try it on Watt's engine before you read on.</p>"
         }
       },
       {
         "number": "3",
-        "label": "Key Concept",
-        "heading": "Beyond Railroads: Telegraph, Steel, and Electricity",
+        "label": "Power, Part 2",
+        "heading": "More Coal, Then Oil",
         "blocks": [
           {
             "type": "p",
-            "html": "The <span class=\"kt\">telegraph</span>, patented in 1837 by Cooke and Wheatstone in Britain and commercialized in 1844 by Morse in the United States, enabled near-instant communication across vast distances. Its first commercial use was railroad scheduling: single-track lines needed telegraphed coordination to prevent collisions. But the telegraph rapidly transformed financial markets, enabling stock prices and commodity prices to be transmitted instantly between cities and integrating national financial markets into a single system. News agencies, Reuters and the Associated Press, were both built on telegraph access, because whoever controlled telegraph lines controlled the speed of information. The <span class=\"kt\">transatlantic telegraph cable</span> (1866) connected the United States and Britain in near-real-time for the first time, completing the integration of the Atlantic economy."
+            "html": "Steam engines needed coal, and coal mines needed steam engines to pump them dry, so each made the other grow. Britain mined about 65 million tons of coal in 1854 and about 225 million tons in 1900. By about 1900, coal supplied about half of all the energy used in the whole world, nearly as much as wood and other things that grow. Historians call this the fossil fuels revolution: machines let people use energy that had been stored for millions of years, far more than muscles, wood, wind, and water could give."
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Bessemer Process</span> (1856) was perhaps the single most important technological breakthrough of the second industrial revolution. Henry Bessemer discovered that blowing air through molten pig iron removed impurities and produced steel in minutes rather than days. This reduced the cost of steel by approximately 80% between 1860 and 1900. Cheap steel made everything that followed possible: steel bridges, steel-framed skyscrapers, steel ships, steel rails. Without cheap Bessemer steel, the railroad expansion of the late 19th century would have been physically impossible, wrought iron rails wore out too quickly for high-traffic lines."
+            "html": "Oil came next. In 1859 Edwin Drake drilled a well at Titusville, Pennsylvania, and struck oil. For the rest of the 1800s, most oil was turned into kerosene, a fuel for lamps."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Electricity</span> reshaped production and urban life by the end of the 19th century. Thomas Edison's incandescent light bulb (1879) and Pearl Street power station (1882, New York City) launched the electrical era. By 1900, electricity was powering factories, lighting city streets, and running urban transit on electric streetcar lines. Nikola Tesla's alternating current (AC) system allowed electricity to be transmitted over long distances, making regional and eventually national electrical power grids possible, and freeing factories from their dependence on proximity to rivers or steam engines."
+            "html": "A new kind of engine would later make oil far more important. An <span class=\"kt\">internal combustion engine</span> burns its fuel inside the engine itself, instead of boiling water in a separate boiler. In 1876 Nikolaus Otto built a four-stroke gas engine in Germany, and in 1886 Carl Benz patented a car driven by a small engine that burned a fuel made from oil. But in 1900 the United States had only about 8,000 cars. The internal combustion engine's big changes, to cars, trucks, tractors, and airplanes, came after 1900."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Comparison",
-          "raw": "<p>Comparing the telegraph and the railroad reveals an important pattern, both technologies destroyed the constraint of distance, but in different ways. <strong>Railroads destroyed the constraint of distance for physical goods and people; the telegraph destroyed it for information.</strong> Together, they created an integrated global economy in which commodities could be shipped across continents and their prices known instantly worldwide. A meaningful difference: railroads required enormous capital investment and produced physical infrastructure visible across landscapes; telegraphs required much smaller investment and produced invisible infrastructure, information networks, that was just as transformative but far less visible.</p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Effects can come late.</strong> A cause does not always work right away. Watt's engine took decades to spread, and the internal combustion engine changed the world mostly after 1900. When you explain a cause, say when its effects came.</p>"
         }
       },
       {
         "number": "4",
-        "label": "Key Concept",
-        "heading": "The Environmental and Social Costs of Industrial Technology",
+        "label": "New Methods",
+        "heading": "The Second Industrial Revolution",
         "blocks": [
           {
             "type": "p",
-            "html": "Industrial cities were blanketed in <span class=\"kt\">coal pollution</span>. London's \"pea soup\" fogs combined natural fog with coal smoke and sulfur dioxide; they reduced visibility to near-zero and caused severe respiratory disease. Coal mining was dangerous at industrial scale: roof collapses, gas explosions, and flooding killed thousands of miners per year. By the late 19th century, rivers near industrial cities ran toxic with industrial effluent from dye works, tanneries, and chemical plants. The environmental destruction of industrial cities was not an unintended side effect, it was a direct consequence of industrial production's dependence on coal."
+            "html": "After 1850, with so much energy to use, people found new ways to make things. Historians call this the <span class=\"kt\">second industrial revolution</span>. It brought new methods in four areas."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Deforestation</span> followed railroad construction across the globe. Every mile of track required enormous quantities of timber for railroad ties (sleepers). The expansion of railroads into previously forested regions, the American West, Siberia, sub-Saharan Africa, drove rapid deforestation. Steam-powered sawmills could fell and process timber at industrial scale for the first time, making it possible to clear forests faster than they could regenerate."
+            "html": "<strong>Steel.</strong> <span class=\"kt\">Steel</span> is iron with a small, carefully measured amount of carbon. It is stronger and tougher than ordinary iron, but it was slow and costly to make. In 1856 Henry Bessemer showed that blowing air through melted iron burned out the impurities and made steel quickly. The United States made about 69,000 tons of steel in 1870 and about 10 million tons in 1900. Britain went from about 215,000 tons to about 4.9 million. Steel became rails, bridges, ships, and machines."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Resource extraction</span> from colonized regions reveals how industrial technology's environmental consequences were often exported. <span class=\"kt\">Guano</span>, seabird droppings used as fertilizer and essential to industrial agriculture, was extracted from Peru's Chincha Islands using indentured Chinese and Peruvian workers in brutal conditions. <span class=\"kt\">Rubber</span>, essential for industrial machinery belts, telegraph cable insulation, and eventually automobile tires, was extracted from the Amazon basin under debt peonage and from the Congo Free State under King Leopold II using forced labor enforced by systematic violence. Industrial technology demanded raw materials from across the colonized world; the people who provided those materials paid in freedom, health, and lives."
+            "html": "<strong>Chemicals.</strong> In 1856 an eighteen-year-old London chemistry student, William Perkin, made a purple dye, mauve, from chemicals that came from coal tar, a sticky leftover of coal. German chemical companies such as BASF, founded in 1865, built laboratories to invent new dyes, and in 1897 BASF began selling indigo blue made in a factory instead of from a plant. By 1914 Germany made most of the world's dyes."
           },
           {
             "type": "p",
-            "html": "Industrial technology also created new <span class=\"kt\">social roles</span>. Engineers, technicians, and scientists became respected professional classes as industrial systems grew more complex. The railroad system required surveyors, civil engineers, mechanical engineers, telegraph operators, and station managers, a new middle-class occupational identity distinct from both factory owners and factory workers. These technical professions carried social prestige precisely because they represented the application of scientific knowledge to industrial problems, which was increasingly understood as the engine of national progress."
+            "html": "<strong>Electricity.</strong> In 1882 Thomas Edison's Pearl Street Station in New York began selling electric power to light about 400 lamps. Electric motors would let each machine run on its own motor, instead of on a belt from one big steam engine. But this change was slow: in 1899, electric motors gave less than 5 percent of the power in American factories."
+          },
+          {
+            "type": "p",
+            "html": "<strong>Precision machinery.</strong> Machine tools had begun to cut metal parts so exactly that one part fit any copy of the same machine, and after 1850 the method spread widely. These are <span class=\"kt\">interchangeable parts</span>. Standard screw threads helped: Joseph Whitworth set one early, in Britain in 1841, and William Sellers set one in the United States in 1864. They helped machines with interchangeable parts, from typewriters to locomotives, spread."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Was industrial technology primarily a liberating force or a destructive one? A strong argumentation claim requires taking a position and defending it with specific evidence. <strong>Strong arguments acknowledge the other side: you can argue that railroads were primarily liberating, national market integration, faster travel, cheaper goods, while acknowledging that rubber extraction in the Congo was primarily destructive. Then explain why one outweighs the other, or why the answer depends on whose experience you center.</strong> Technology did not have uniform effects; its costs and benefits were distributed very unequally across class, geography, and colonial status.</p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Name the link.</strong> How does the second industrial revolution connect to Section 3? Coal ran the furnaces that made steel, and coal tar gave the first synthetic dyes to sell well. As you read on, ask what the railroads in Section 5 were made of.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "Longer Reach",
+        "heading": "Railroads, Steamships, and the Telegraph Reach the Interior",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Energy and steel built the machines that moved things. Before them, heavy goods moved cheaply only by water. Places far from a river or the sea, the interiors of continents, were hard to reach."
+          },
+          {
+            "type": "p",
+            "html": "<strong>Railroads.</strong> The Liverpool and Manchester Railway, opened in England in 1830, was the world's first railway between two cities, with trains pulled by steam locomotives. Railways then spread fast. Russia had 27 kilometers of railway in 1840 and more than 53,000 in 1900. India's first passenger train ran from Bombay to Thane in 1853. In 1869 the first railroad across the United States was finished at Promontory Summit, Utah. Russia began the Trans-Siberian Railway in 1891, and by 1904 trains could cross to the Pacific Ocean. A railroad could reach farms, mines, and towns in the middle of a continent, where no river or canal went."
+          },
+          {
+            "type": "p",
+            "html": "<strong>Steamships.</strong> Under sail, emigrants from Norway took about 53 days on average for the whole trip to America. By steamship, the Atlantic crossing from England took about 12 days in the 1860s, and the fastest ships of the 1870s crossed in about 7 or 8 days. The Suez Canal, opened in Egypt in 1869, was of little use to sailing ships, because the winds of the Red Sea were hard to sail against, so it mostly served steamships. Steamboats also pushed up rivers into the interior of continents. In 1854 the steamer Pleiad went far up the Niger and Benue rivers in West Africa, and none of its crew died, because they took quinine, a medicine against malaria. What European empires did with this reach is Unit 6."
+          },
+          {
+            "type": "p",
+            "html": "<strong>The telegraph.</strong> A <span class=\"kt\">telegraph</span> sends messages as pulses of electricity along a wire. In 1844 Samuel Morse sent the message \"What hath God wrought?\" from Washington to Baltimore. Before, a message traveled only as fast as a horse or a ship. Now it could travel along a wire in minutes. From 1866, cables under the Atlantic carried messages without a lasting break, and in 1870 another undersea cable, through the Red Sea, reached Bombay, in India."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Developments and Processes",
+          "raw": "<p><strong>Three ways to reach.</strong> Railroads carried goods and people over land. Steamships carried them over oceans and up rivers. The telegraph carried news. For each one, ask: what could people now do that they could not do before?</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "The Effects",
+        "heading": "More Trade, More Migration",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Cheaper, faster transport and fast news joined distant markets. In 1870 wheat cost 57.6 percent more in Liverpool, England, than in Chicago. By 1913 the gap was only 15.6 percent. Wheat grown in the middle of North America, carried by train to the coast and by steamship across the ocean, fed workers in Britain."
+          },
+          {
+            "type": "p",
+            "html": "Trains and ships carried people, too. <span class=\"kt\">Migration</span> means people moving to live in a new place. About 55 million Europeans moved to the Americas and Australia between 1850 and 1914. Between 1846 and 1940, more than 29 million Indians and more than 19 million Chinese moved to Southeast Asia and the lands around the Indian Ocean, and tens of millions of Chinese and Russians moved into Manchuria, Siberia, and Central Asia. Steamships and railways made these journeys faster and cheaper. Why people moved, and what they found, is Unit 6."
+          },
+          {
+            "type": "p",
+            "html": "So, how did technology shape economic production between 1750 and 1900? Machines such as the steam engine, and later the internal combustion engine, let people use the energy stored in coal and oil, which greatly increased the energy available. That energy, and new methods for making steel, chemicals, electricity, and precise machines after 1850, let factories make far more goods, and new kinds of goods. Railroads, steamships, and the telegraph, built of that steel and driven by that coal, carried goods, people, and news into the interiors of continents, which led to more trade and more migration."
+          },
+          {
+            "type": "p",
+            "html": "A few governments did not wait for these machines to arrive on their own. They decided to build industry themselves. That is Topic 5.6."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Three myths to drop.</strong> \"Watt invented the steam engine\": Newcomen's engines were pumping mines from 1712, more than fifty years before Watt's patent; Watt made the engine use far less coal and turn wheels. \"One invention changed everything\": each technology needed the others; railroads needed steam, coal, and then steel. \"By 1900 the world ran on electricity and cars\": electric motors gave under 5 percent of American factory power in 1899, and the United States had about 8,000 cars in 1900. Some of the biggest effects came later.</p>"
         }
       }
     ],
-    "takeaway": "Industrial technology transformed the world in the 19th century through two defining technologies, the <strong>railroad</strong> and the <strong>telegraph</strong>, and two defining processes, the <strong>Bessemer steel process</strong> and <strong>electrical power</strong>. Railroads integrated national markets, created military-strategic infrastructure, and generated self-reinforcing industrial demand; but colonial railroads extracted raw materials without building local economies. The telegraph enabled near-instant global communication and integrated financial markets. Cheap Bessemer steel made the second industrial revolution possible. Electricity was beginning to reshape factory production and urban life by 1900. But industrial technology also produced coal pollution that poisoned industrial cities, deforestation that cleared colonial forests for railroad ties, and brutal resource extraction systems, rubber in the Congo and Amazon, guano in Peru, that exploited colonized labor for industrial inputs. Technology's costs and benefits were very unequally distributed: the benefits went primarily to industrial consumers in wealthy countries; the costs fell primarily on workers in mines and factories and on colonized peoples who provided raw materials.",
+    "takeaway": "In 1750 almost all the energy used in the world came from muscles, wood, wind, and water. Then machines unlocked the energy stored in fossil fuels. Newcomen's steam engine of 1712 pumped water out of a coal mine; Watt's engines used far less coal, and from the 1780s they turned wheels, so factories could run on coal instead of rivers. Britain's coal output rose to about 225 million tons by 1900, when coal supplied about half the world's energy. Oil came next, at first as lamp fuel, and the internal combustion engine's big changes came after 1900. After 1850 a second industrial revolution brought new methods: Bessemer steel, dyes made from coal tar, electric power, and precise machines with interchangeable parts. Railroads, steamships, and the telegraph carried goods, people, and news into the interiors of continents, so trade grew and tens of millions of people migrated. More power. New methods. Longer reach.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
-        "num": "1",
+        "num": "01",
+        "skill": "Developments and Processes",
+        "text": "Using Section 2, explain step by step how Watt's steam engine changed where factories could be built. Say what the problem was, what the engine did, and what that made possible.",
+        "placeholder": "The problem was... Watt's engine... This made it possible to..."
+      },
+      {
+        "num": "02",
+        "skill": "Developments and Processes",
+        "text": "Using Section 4, choose ONE of the four new methods of the second industrial revolution: steel, chemicals, electricity, or precision machinery. Explain what was new about it and what it let people make or do. Use one detail from the reading.",
+        "placeholder": "I chose... What was new was... It let people..."
+      },
+      {
+        "num": "03",
         "skill": "Causation",
-        "text": "Explain how railroads accelerated industrialization. Identify two specific mechanisms, two ways that railroads caused other aspects of industrialization to grow faster. For each, explain the chain of cause and effect: what exactly did railroads do, and how did that specific thing cause what industrial change?",
-        "placeholder": "Identify two specific mechanisms and explain the causal chain for each..."
-      },
-      {
-        "num": "2",
-        "skill": "Comparison",
-        "text": "Compare the railroad and the telegraph as industrial technologies. Identify one meaningful similarity in their effects and one meaningful difference. Then explain: what does comparing these two technologies reveal about how industrial technology changed the relationship between people and distance?",
-        "placeholder": "Identify a similarity and a difference, then explain what the comparison reveals..."
-      },
-      {
-        "num": "3",
-        "skill": "Argumentation",
-        "text": "Write a one-sentence claim answering this question: Was industrial technology in the 19th century primarily a liberating force (expanding human capabilities and connections) or a destructive force (exploiting labor and environments)? Then provide two specific pieces of evidence that support your claim, and acknowledge one piece of counterevidence.",
-        "placeholder": "State your one-sentence claim, provide two supporting pieces of evidence, and acknowledge one counterevidence..."
+        "text": "Using Sections 5 and 6, choose ONE: explain how railroads, steamships, or the telegraph led to more trade, OR how railroads or steamships led to more migration. Give a detail from the reading.",
+        "placeholder": "I chose... It made it possible to... This led to more... For example..."
       }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 5.5, Technology of Industrialization",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true
   },
   "5.6": {
     "topicKey": "5.6",
