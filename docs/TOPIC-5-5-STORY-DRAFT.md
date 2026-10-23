@@ -221,8 +221,8 @@ that moved things.
   who took quinine against malaria. (What European empires did with that reach is Unit 6.)
 - **The telegraph.** In 1844 Samuel Morse sent "What hath God wrought?" by electric telegraph from
   Washington to Baltimore. A message that once traveled only as fast as a horse or a ship now
-  traveled along a wire in minutes. A cable across the Atlantic carried messages without a lasting break from 1866, and one
-  reached Bombay in 1870. Merchants could know prices in distant markets within a day.
+  traveled along a wire in minutes. From 1866, cables under the Atlantic carried messages without a
+  lasting break, and in 1870 another undersea cable, through the Red Sea, reached Bombay. Merchants could know prices in distant markets within a day.
 
 **More trade.** Cheaper, faster transport and instant news joined markets. In 1870 wheat cost 57.6
 percent more in Liverpool, England, than in Chicago; by 1913 the gap was 15.6 percent. Wheat from the
@@ -427,8 +427,8 @@ report.
    replaces the resource-extraction map.
 6. **Evidence Lab:** real objects where they can be sourced, and figures from scholars as text cards;
    never an AI picture.
-7. **BeSurreal:** a passenger's first train ride, 1830s, or a telegraph clerk's day: the change in
-   reach seen by one person. It replaces the Central Pacific strike letter, which is Unit 6's.
+7. **BeSurreal:** a fifteen-year-old clerk in a Liverpool grain merchant's office, 1880, who reads
+   yesterday's Chicago wheat price off the overnight cable: the change in reach seen by one person. It replaces the Central Pacific strike letter, which is Unit 6's.
 8. **BeInTheRoom:** "The Iron Road Contract" (a colonial railway in India, built around extraction
    and imperial control, which is Unit 6's) is replaced by a scenario built on the CED's own sample
    activity: a New York science magazine's writers, at the end of 1900, ranking five technologies

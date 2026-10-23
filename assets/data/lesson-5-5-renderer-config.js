@@ -83,7 +83,7 @@
     ],
     prompt: "Now do it yourself, twice. First, choose ONE technology that gave more power or a new method: Watt's steam engine, the internal combustion engine, or electric power. Explain it with the frame, using one detail from the lesson. Second, choose ONE technology that gave longer reach: the railroad, the steamship, or the telegraph. Explain it with the frame, and make your \"what followed\" step about trade or migration. (If you chose the internal combustion engine or electric power for the first answer, your \"what followed\" step can say how much it had changed by 1900.)",
     criteria: [
-      "I explained two technologies, one for power or materials and one for reach.",
+      "I explained two technologies, one for power or a new method and one for reach.",
       "For each, I said what the problem was before it.",
       "For each, I said what the technology did and what it made possible, with \"which made it possible to.\"",
       "My second answer's \"what followed\" step names more trade or more migration, with a detail from the lesson."
