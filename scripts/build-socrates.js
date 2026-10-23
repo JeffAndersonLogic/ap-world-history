@@ -51,12 +51,11 @@ const path = require('path');
 const { loadCourse, contextBlock } = require("./lib/socrates-course");
 const { PERSONA } = require('./lib/socrates-persona');
 const { TEACH_ME_PERSONA } = require('./lib/socrates-teach-me-persona');
-const { buildTeachMeKnowledgeDocument } = require('./lib/socrates-teach-me-knowledge');
+const { TEACH_ME_GUIDES, buildTeachMeKnowledgeDocument } = require('./lib/socrates-teach-me-knowledge');
 const { buildTeachMePrompt } = require('../assets/js/behistorical-coach-prompt');
 
 const ROOT = path.join(__dirname, '..');
 const RENDERER = path.join(ROOT, 'assets', 'js', 'behistorical-topic-renderer-v1.js');
-const TEACH_ME_GUIDE = path.join(ROOT, 'study-guides', 'era-2-exam-study-guide.html');
 const OUT = path.join(ROOT, 'docs', 'socrates');
 const CHECK = process.argv.includes('--check');
 
@@ -166,7 +165,8 @@ function teachMeInstructionsDoc() {
 }
 
 function teachMeKnowledgeDoc() {
-  return [GEN, '', buildTeachMeKnowledgeDocument(fs.readFileSync(TEACH_ME_GUIDE, 'utf8')).trim(), ''].join('\n');
+  const guides = TEACH_ME_GUIDES.map(g => ({ ...g, html: fs.readFileSync(path.join(ROOT, g.file), 'utf8') }));
+  return [GEN, '', buildTeachMeKnowledgeDocument(guides).trim(), ''].join('\n');
 }
 
 function spineEntry(t) {
@@ -266,7 +266,8 @@ function contractDoc(topics) {
     '   `scripts/lib/first10-page.js` emits into each page;',
     '4. `scripts/lib/socrates-course.js` calls it to produce this document and to',
     '   feed the graded eval.',
-    '5. `study-guides/era-2-exam-study-guide.html` calls it to prepare the',
+    '5. `study-guides/era-2-exam-study-guide.html` and',
+    '   `study-guides/era-3-exam-study-guide.html` call it to prepare the',
     '   separate Teach Me checker paste from the guide cards.',
     '',
     'Three checks hold that together: `build-coach-prompt.js --check` re-derives the',
@@ -348,9 +349,11 @@ function contractDoc(topics) {
     '',
     'The generated `socrates-teach-me-knowledge.md` file carries the guide content',
     'privately through MagicSchool Specific knowledge. The Teach Me persona forbids',
-    'quoting, paraphrasing, revealing, or hinting at it. Topic',
-    '1.7, Topic 2.7, and the six cross-topic comparisons include every guide card',
-    'named in their evidence scope so comparisons are not restricted to one topic.',
+    'quoting, paraphrasing, revealing, or hinting at it. One Teach Me room serves',
+    'every exam study guide, so the file carries each guide\'s cards under its era.',
+    'The comparison topics (1.7, 2.7, 3.4 and 4.8) and each guide\'s six cross-topic',
+    'comparisons include every guide card named in their evidence scope so',
+    'comparisons are not restricted to one topic.',
     ''
   ].join('\n');
 }

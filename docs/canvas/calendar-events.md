@@ -3258,6 +3258,7 @@ deleted row in the schedule and every affected date moves with it.
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;"><a class="inline_disabled" href="https://apclassroom.collegeboard.org/" target="_blank" rel="noopener" style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #6b3e1f; font-weight: bold;">AP Classroom</a></li>
+                    <li style="margin: 0 0 6px 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/study-guides/era-3-exam-study-guide.html" target="_blank" rel="noopener" style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #6b3e1f; font-weight: bold;">Era 3 Exam Study Guide</a> Units 3 and 4, c. 1450 to c. 1750.</li>
                 </ul>
             </td>
         </tr>

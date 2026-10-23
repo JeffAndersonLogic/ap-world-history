@@ -1815,22 +1815,28 @@ section('Enlargeable images are operable buttons');
 }
 
 //
-// The Era 2 guide is the source of Teach Me checker knowledge. The generated
-// private knowledge document goes into MagicSchool, while the student paste
-// carries only routing context. These checks pin both sides of that boundary.
+// The exam study guides are the source of Teach Me checker knowledge. The
+// generated private knowledge document goes into MagicSchool, while the student
+// paste carries only routing context. These checks pin both sides of that
+// boundary, for every guide that feeds the one Teach Me room.
 //
-section('Era 2 Teach Me guide wiring');
+section('Exam study guide Teach Me wiring');
 {
-  const guidePath = path.join(ROOT, 'study-guides', 'era-2-exam-study-guide.html');
+  const { TEACH_ME_GUIDES } = require('./lib/socrates-teach-me-knowledge');
+  // The approved cross-topic evidence scopes for each guide's comparison topics.
+  const COMPARISON_SCOPES = {
+    'Era 2': ["scope:['1.7','1.1','1.4','1.5','1.6']", "scope:['2.7','2.1','2.3','2.4']"],
+    'Era 3': ["scope:['3.4','3.1','3.2','3.3']", "scope:['4.8','4.1','4.3','4.4','4.5','4.7']"]
+  };
   const builderPath = path.join(ROOT, 'assets', 'js', 'behistorical-coach-prompt.js');
   const configPath = path.join(ROOT, 'scripts', 'lib', 'classroom-config.js');
   const knowledgePath = path.join(ROOT, 'docs', 'socrates', 'socrates-teach-me-knowledge.md');
-  const guide = read(guidePath);
   const builder = read(builderPath);
   const config = read(configPath);
   const knowledge = read(knowledgePath);
-  totalChecks += 8;
-  if (!guide) err(guidePath, 'study guide is missing');
+  const expectedTopics = TEACH_ME_GUIDES.reduce((n, g) => n + g.topics, 0);
+  const expectedComparisons = TEACH_ME_GUIDES.reduce((n, g) => n + g.comparisons, 0);
+  totalChecks += 7;
   if (!builder || !/function buildTeachMePrompt\(/.test(builder)) {
     err(builderPath, 'shared prompt builder has no buildTeachMePrompt function');
   }
@@ -1848,14 +1854,23 @@ section('Era 2 Teach Me guide wiring');
   } else {
     const topicHeadings = knowledge.match(/^## Topic \d+\.\d+:/gm) || [];
     const comparisonHeadings = knowledge.match(/^## Comparison:/gm) || [];
-    if (topicHeadings.length !== 14) {
-      err(knowledgePath, `contains ${topicHeadings.length} topic sections, expected 14`);
+    if (topicHeadings.length !== expectedTopics) {
+      err(knowledgePath, `contains ${topicHeadings.length} topic sections, expected ${expectedTopics}`);
     }
-    if (comparisonHeadings.length !== 6) {
-      err(knowledgePath, `contains ${comparisonHeadings.length} comparison sections, expected 6`);
+    if (comparisonHeadings.length !== expectedComparisons) {
+      err(knowledgePath, `contains ${comparisonHeadings.length} comparison sections, expected ${expectedComparisons}`);
+    }
+    for (const g of TEACH_ME_GUIDES) {
+      if (!knowledge.includes(`\n# ${g.era}, `)) err(knowledgePath, `has no ${g.era} section`);
     }
   }
-  if (guide) {
+  let activitiesTotal = 0;
+  for (const g of TEACH_ME_GUIDES) {
+    const guidePath = path.join(ROOT, g.file);
+    const guide = read(guidePath);
+    const expectedActivities = g.topics + g.comparisons;
+    totalChecks++;
+    if (!guide) { err(guidePath, `${g.era} study guide is missing`); continue; }
     const promptAt = guide.indexOf('../assets/js/behistorical-coach-prompt.js');
     const classroomAt = guide.indexOf('../assets/js/behistorical-classroom.js');
     const appAt = guide.indexOf("var ACTIVITIES = [");
@@ -1864,14 +1879,18 @@ section('Era 2 Teach Me guide wiring');
       err(guidePath, 'shared prompt and classroom scripts must load before the Teach Me guide code');
     }
     const activityIds = [...guide.matchAll(/\{id:'([^']+)'/g)].map(m => m[1]);
+    activitiesTotal += activityIds.length;
     totalChecks++;
-    if (activityIds.length !== 20 || new Set(activityIds).size !== 20) {
-      err(guidePath, `maps ${activityIds.length} Teach Me activities with ${new Set(activityIds).size} unique ids, expected 20`);
+    if (activityIds.length !== expectedActivities || new Set(activityIds).size !== expectedActivities) {
+      err(guidePath, `maps ${activityIds.length} Teach Me activities with ${new Set(activityIds).size} unique ids, expected ${expectedActivities}`);
     }
-    for (const topic of ['1-1','1-2','1-3','1-4','1-5','1-6','1-7','2-1','2-2','2-3','2-4','2-5','2-6','2-7']) {
+    const cardIds = [...guide.matchAll(/<div class="topic" id="topic-(\d+-\d+)"/g)].map(m => m[1]);
+    totalChecks++;
+    if (cardIds.length !== g.topics) err(guidePath, `has ${cardIds.length} topic cards, expected ${g.topics}`);
+    for (const topic of cardIds) {
       totalChecks++;
-      if (!guide.includes(`id="topic-${topic}"`) || !activityIds.includes(`topic-${topic}`)) {
-        err(guidePath, `Topic ${topic.replace('-', '.')} is missing its card or Teach Me activity`);
+      if (!activityIds.includes(`topic-${topic}`)) {
+        err(guidePath, `Topic ${topic.replace('-', '.')} has a card but no Teach Me activity`);
       }
     }
     totalChecks++;
@@ -1889,12 +1908,11 @@ section('Era 2 Teach Me guide wiring');
       err(guidePath, 'must keep the student setup out of a textarea and use one combined copy-and-open action');
     }
     totalChecks++;
-    if (!/scope:\['1\.7','1\.1','1\.4','1\.5','1\.6'\]/.test(guide)
-      || !/scope:\['2\.7','2\.1','2\.3','2\.4'\]/.test(guide)) {
+    if (!(COMPARISON_SCOPES[g.era] || []).every(scope => guide.includes(scope))) {
       err(guidePath, 'comparison topics do not carry their approved cross-topic evidence scopes');
     }
   }
-  sectionDone('one launcher serves 20 activities with private knowledge kept out of student pastes');
+  sectionDone(`${TEACH_ME_GUIDES.length} guides, one launcher each, serve ${activitiesTotal} activities with private knowledge kept out of student pastes`);
 }
 
 //

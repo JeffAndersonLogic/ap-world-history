@@ -34,6 +34,7 @@ const path = require('path');
 const { execFileSync } = require('child_process');
 const { PERSONA } = require('../lib/socrates-persona');
 const { TEACH_ME_PERSONA } = require('../lib/socrates-teach-me-persona');
+const { TEACH_ME_GUIDES } = require('../lib/socrates-teach-me-knowledge');
 
 const ROOT = path.join(__dirname, '..', '..');
 const DOCS = path.join(ROOT, 'docs', 'socrates');
@@ -197,10 +198,12 @@ TEACH_REQUIRED.forEach(([re, what]) => {
 const teachKnowledge = fs.readFileSync(path.join(DOCS, 'socrates-teach-me-knowledge.md'), 'utf8');
 const teachKnowledgeTopics = [...teachKnowledge.matchAll(/^## Topic \d\.\d:/gm)].length;
 const teachKnowledgeComparisons = [...teachKnowledge.matchAll(/^## Comparison:/gm)].length;
-if (teachKnowledgeTopics === 14 && teachKnowledgeComparisons === 6) {
-  ok('Teach Me private knowledge covers 14 topics and 6 cross-topic comparisons');
+const wantTopics = TEACH_ME_GUIDES.reduce((n, g) => n + g.topics, 0);
+const wantComparisons = TEACH_ME_GUIDES.reduce((n, g) => n + g.comparisons, 0);
+if (teachKnowledgeTopics === wantTopics && teachKnowledgeComparisons === wantComparisons) {
+  ok(`Teach Me private knowledge covers ${wantTopics} topics and ${wantComparisons} cross-topic comparisons across ${TEACH_ME_GUIDES.length} study guides`);
 } else {
-  fail(`Teach Me private knowledge covers ${teachKnowledgeTopics} topics and ${teachKnowledgeComparisons} comparisons, expected 14 and 6`);
+  fail(`Teach Me private knowledge covers ${teachKnowledgeTopics} topics and ${teachKnowledgeComparisons} comparisons, expected ${wantTopics} and ${wantComparisons}`);
 }
 if (/Never quote,\s+paraphrase, summarize, reveal, or hint/.test(teachKnowledge)) {
   ok('Teach Me private knowledge carries its non-disclosure boundary');
@@ -253,7 +256,8 @@ const contract = fs.readFileSync(path.join(DOCS, 'socrates-paste-contract.md'), 
   'scripts/lib/socrates-teach-me-persona.js',
   'assets/js/behistorical-topic-renderer-v1.js',
   'scripts/lib/first10-page.js',
-  'study-guides/era-2-exam-study-guide.html'
+  'study-guides/era-2-exam-study-guide.html',
+  'study-guides/era-3-exam-study-guide.html'
 ].forEach(f => {
   if (contract.includes(f)) ok(`contract names ${f}`);
   else fail(`contract does not name ${f}, so a change there has nothing pointing at it`);

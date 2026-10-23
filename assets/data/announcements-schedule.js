@@ -1058,7 +1058,10 @@ window.BEHISTORICAL_SCHEDULE = {
         href: 'https://apclassroom.collegeboard.org/',
         tasks: ['Unit 3 Progress Check', 'Unit 4 Progress Check'],
         note: 'Sign in with your College Board account, open AP World History: Modern, and find both progress checks under Assignments. Complete every part your teacher has unlocked there before your Era 3 Exam.'
-      }
+      },
+      resources: [
+        { text: 'Era 3 Exam Study Guide', href: 'study-guides/era-3-exam-study-guide.html', desc: 'Units 3 and 4, c. 1450 to c. 1750.' }
+      ]
     },
     {
       date: '2026-11-20',
@@ -1077,7 +1080,10 @@ window.BEHISTORICAL_SCHEDULE = {
         href: 'https://apclassroom.collegeboard.org/',
         tasks: ['Unit 3 Progress Check', 'Unit 4 Progress Check'],
         note: 'Sign in with your College Board account, open AP World History: Modern, and find both progress checks under Assignments. Complete every part your teacher has unlocked there before your Era 3 Exam.'
-      }
+      },
+      resources: [
+        { text: 'Era 3 Exam Study Guide', href: 'study-guides/era-3-exam-study-guide.html', desc: 'Units 3 and 4, c. 1450 to c. 1750.' }
+      ]
     },
     {
       date: '2026-11-23',
