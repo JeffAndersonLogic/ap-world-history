@@ -1047,7 +1047,10 @@ window.BEHISTORICAL_SCHEDULE = {
       topicTitle: 'Era 3 Study Guide Work Day',
       unit: 'Units 3 and 4',
       learningTargets: ['I can identify which Unit 3 and Unit 4 concepts I need to review before the Era 3 exam.'],
-      successCriteria: ['I can use my study guide to identify gaps and plan my review.']
+      successCriteria: ['I can use my study guide to identify gaps and plan my review.'],
+      resources: [
+        { text: 'Era 3 Exam Study Guide', href: 'study-guides/era-3-exam-study-guide.html', desc: 'Units 3 and 4, c. 1450 to c. 1750.' }
+      ]
     },
     {
       date: '2026-11-20',
@@ -1055,7 +1058,10 @@ window.BEHISTORICAL_SCHEDULE = {
       topicTitle: 'Era 3 Study Guide Work Day',
       unit: 'Units 3 and 4',
       learningTargets: ['I can identify which Unit 3 and Unit 4 concepts I need to review before the Era 3 exam.'],
-      successCriteria: ['I can use my study guide to identify gaps and plan my review.']
+      successCriteria: ['I can use my study guide to identify gaps and plan my review.'],
+      resources: [
+        { text: 'Era 3 Exam Study Guide', href: 'study-guides/era-3-exam-study-guide.html', desc: 'Units 3 and 4, c. 1450 to c. 1750.' }
+      ]
     },
     {
       date: '2026-11-23',
