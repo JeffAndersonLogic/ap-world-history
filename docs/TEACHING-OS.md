@@ -50,7 +50,7 @@ A teacher page may use its own renderer (Topic 2.3 does), but its data still com
 
 ## Slide templates
 
-`assets/js/behistorical-slide-templates.js` is the one implementation of the slide templates: relationships (equation, exchange, split, compounding and their variations, plus a cause chain, a diffusion path, a Venn and continuity and change), timelines (including rise and fall), primary source, HIPP sourcing, claim-evidence-reasoning, rank the causes, myth and evidence, and sharpen-the-claim slides, six BeReady openers, two closers (3-2-1 and retell it), and frames for pictures, including two real sources compared and a route on a map. The second round, from cause chain to route, was added on 2026-09-27. The third round, on 2026-10-04, is four shapes built for Unit 3, land-based empires, and is marked New in the catalog under the group Unit 3 shapes: a **case file** (one event or place taken apart, with a stamp, up to four labeled facts and what it proves), **trunk and branches** (one claim holding up two to four branches with example chips, for the tools of rule and the four tools of empire), a **rivalry face-off** (two states over a contested place and the political, religious or economic disputes between them), and a **sentence frame** (the causal or comparison sentence students will write, with each blank showing what goes in it and one finished example). A fourth round, on 2026-10-06, adds two more Unit 3 shapes: **story steps** (a short story told top to bottom, three to five beats, one label and one sentence each in large type with an arrow between them, which replaces the numbered-circles `process` slide where a sentence needs to be read from the back of the room) and **picture pair** (two tall pictures side by side, each shown whole at one shared height from its `ratio`, with up to three labeled rows and a proves line beside them). A fifth round, on 2026-10-13, puts a picture inside a beat instead of on a slide of its own, built for the 3.3 and 3.4 uploads: **story scene** (story steps beside one or two pictures that fill one edge of the board, each with an optional caption) and **split scenes** (one job done two ways, a picture over each side's name and points, and what the two share along the bottom). A sixth round, on 2026-10-14, replaces the 2x2 grid of small cards, which Jeff found overused and hard to read, on the three Topic 3.4 slides that carried it: the **ledger** (up to five jobs that all pay into one outcome, one row each in large type, a lettered seal, the name, the tool over what it achieved, and a bracket down the right gathering every row into the payoff), the **verdict** (a good comparison beside a bad one, each stamped with the job it shares or a note that the jobs differ, and the questions every comparison then answers underneath) and the **balance** (two cases on the ends of one beam, the job they share on the pivot, and the claim they support underneath). The catalog marks the latest round as New. A template slide is ordinary slide data: `kind` names the template, `eyebrow`, `title`, `subtitle` and `footer` work as usual, and everything else the template needs goes in one `template` object.
+`assets/js/behistorical-slide-templates.js` is the one implementation of the slide templates: relationships (equation, exchange, split, compounding and their variations, plus a cause chain, a diffusion path, a Venn and continuity and change), timelines (including rise and fall), primary source, HIPP sourcing, claim-evidence-reasoning, rank the causes, myth and evidence, and sharpen-the-claim slides, six BeReady openers, two closers (3-2-1 and retell it), and frames for pictures, including two real sources compared and a route on a map. The second round, from cause chain to route, was added on 2026-09-27. The third round, on 2026-10-04, is four shapes built for Unit 3, land-based empires, and is marked New in the catalog under the group Unit 3 shapes: a **case file** (one event or place taken apart, with a stamp, up to four labeled facts and what it proves), **trunk and branches** (one claim holding up two to four branches with example chips, for the tools of rule and the four tools of empire), a **rivalry face-off** (two states over a contested place and the political, religious or economic disputes between them), and a **sentence frame** (the causal or comparison sentence students will write, with each blank showing what goes in it and one finished example). A fourth round, on 2026-10-06, adds two more Unit 3 shapes: **story steps** (a short story told top to bottom, three to five beats, one label and one sentence each in large type with an arrow between them, which replaces the numbered-circles `process` slide where a sentence needs to be read from the back of the room) and **picture pair** (two tall pictures side by side, each shown whole at one shared height from its `ratio`, with up to three labeled rows and a proves line beside them). A fifth round, on 2026-10-13, puts a picture inside a beat instead of on a slide of its own, built for the 3.3 and 3.4 uploads: **story scene** (story steps beside one or two pictures that fill one edge of the board, each with an optional caption) and **split scenes** (one job done two ways, a picture over each side's name and points, and what the two share along the bottom). A sixth round, on 2026-10-14, replaces the 2x2 grid of small cards, which Jeff found overused and hard to read, on the three Topic 3.4 slides that carried it: the **ledger** (up to five jobs that all pay into one outcome, one row each in large type, a lettered seal, the name, the tool over what it achieved, and a bracket down the right gathering every row into the payoff), the **verdict** (a good comparison beside a bad one, each stamped with the job it shares or a note that the jobs differ, and the questions every comparison then answers underneath) and the **balance** (two cases on the ends of one beam, the job they share on the pivot, and the claim they support underneath). On 2026-10-21 Jeff retired the `grid` kind outright: Topic 3.3's four became a split mirror, a hub, a ledger and a matrix, and the architecture test refuses any new one (`GRID_OWED` lists the older decks' box slides until each is revised). The catalog marks the latest round as New. A template slide is ordinary slide data: `kind` names the template, `eyebrow`, `title`, `subtitle` and `footer` work as usual, and everything else the template needs goes in one `template` object.
 
 **The catalog is `teacher/slide-templates.html`**, linked from the teacher command center. It draws every template from `teacher/data/slide-template-examples.js` with a real Unit 2 example and shows the slide data to copy. To use a template, copy an example into a topic's teaching-base or presentation-assets file and change the words. Choosing one is still the visual plan's job in `docs/PRESENTATION-AUTHORING.md`: pick the template whose shape matches the idea, not the one that was used last.
 
@@ -128,6 +128,25 @@ This exists because Topics 2.6, 2.7 and 3.1 to 3.4 shipped the button, and a sho
 
 ### The projector
 
+**Fullscreen and presenter readability are shared behavior.** The teacher cockpit gives
+Teacher Intelligence three fifths of the content width, with 18px notes and a smaller
+16:9 slide preview. Below 760px the panels stack. The preview keeps a 1280x720 drawing
+surface and scales the whole slide, so shrinking it does not crop slide text.
+
+**Full screen** fills the browser while retaining teacher notes. **Present** or **F**
+enters native browser fullscreen with slides only. Esc or the browser's own exit
+restores the teacher cockpit. A projector opened with `?mode=project` has an
+**Enter full screen** button because fullscreen requires a user gesture; exiting
+fullscreen there keeps slides only. A refused request restores the teacher view and
+shows recovery instructions. `teacher/teaching-os-shared.js` owns these controls;
+each renderer listens for `bh-presentation-change` to redraw its current slide and
+preserve the preflight hold screen.
+
+`scripts/test/teaching-os-presenter.browser.test.js` checks native fullscreen, browser
+exit, notes sizing, Run of Show, laptop and narrow layouts on every registered deck,
+plus the projector and refused requests. Negative controls detect the old visual-only
+toggle and cramped notes.
+
 **The projection window is the teacher page with `?mode=project`, and it follows the teacher through the slide number in `T.projection.storageKey`.** Every time the teacher page draws a slide it saves the number there; a projector page listens for the browser's `storage` event and draws the same slide. A teacher page that reloads mid-class resumes on the saved slide rather than dragging the projector back to slide 1.
 
 **Teacher Preflight never reaches a projected screen.** Both the projection window and Present (F) on the teacher's own screen, which is often what is mirrored to the room, draw a neutral title screen in its place, and Escape brings the cockpit back with the preflight in view.
@@ -135,6 +154,26 @@ This exists because Topics 2.6, 2.7 and 3.1 to 3.4 shipped the button, and a sho
 This exists because Topics 2.6, 2.7 and 3.1 to 3.4 shipped a teacher page that saved the slide number and a projector that never read it: the projection window opened on Teacher Preflight and stayed there all lesson. Topics 2.1 and 2.3 to 2.5 hid preflight in the projection window but not in Present. Both were found on 2026-10-09, the same day as the Briefing button, and both had every check green because nothing opened two windows.
 
 **The iPad Remote frames `topic-X-X-os.html` for every topic but the 1.7 pilot**, in `teacher/remote-host.html` and `teacher/ipad-remote.html`. It used to name the topics that had that page and send everything else to `command-center-topic-X-X.html`, a list that fell behind: 3.1, 3.3 and 3.4 framed files that were never made.
+
+**The two-device connection uses `teacher/remote-relay.js`.** It tries ntfy's
+event stream, WebSocket, then finite JSON polling. Sends and polls time out after
+six seconds; an ambiguous send is retried with the same message ID so a slide
+command cannot run twice. Received IDs survive a tab reload. The iPad retries a
+lost hello, applies the saved laptop slide after its frame loads, and reconnects
+on return from sleep. The QR code opens immediately. Both devices offer Retry
+Connection; an unreachable relay or rate limit gets a visible explanation.
+An idle five-minute heartbeat avoids the previous pair of messages every twenty
+seconds. The relay carries slide numbers and controls, never teacher notes or
+student work. A network that cannot reach `ntfy.sh` still needs that host allowed
+or another network; changing transport does not bypass a blocked relay host.
+
+`scripts/test/teaching-os-remote.browser.test.js` runs the actual host and iPad
+pages in separate browser contexts against a controlled relay fixture. It checks
+lost hello recovery, a slow lesson frame, all three receive transports, duplicate
+commands, slide changes from either device, retry after a stalled network, and
+rate-limit backoff. Its negative control removes handshake retry and must fail
+to connect. These tests verify software recovery, not public relay availability
+or a physical iPad's school-network access.
 
 `scripts/test/teaching-os-projection.browser.test.js`, in the browser suite, opens every deck in `DECKS` with its projection window beside it and asserts that the projector opens without Teacher Preflight, follows the teacher, that a reload resumes, that Present never shows preflight and Escape returns, and that the iPad Remote loads the topic. Its negative controls deafen the projector, remove the hold screen and restore the remote's old topic list, and each must be caught. A new deck is covered by being in `DECKS`.
 

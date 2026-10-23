@@ -101,7 +101,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Chinatown, San Francisco, Harper's Weekly, 1880",
           caption: "An illustration from Harper's Weekly, March 1880. Migration produced lasting diaspora communities, and a backlash: the United States barred Chinese labor migration in 1882.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/A_Holiday_in_Chinatown,_San_Francisco_%28P._Frenzeny,_Harper's,_1880-03-20%29.jpg",
+          url: '../assets/images/commons/a-holiday-in-chinatown-san-francisco-p-frenzeny-harper-s-1880-03-20-52fa82.jpg',
           sourceUrl: "https://commons.wikimedia.org/wiki/File:A_Holiday_in_Chinatown,_San_Francisco_%28P._Frenzeny,_Harper's,_1880-03-20%29.jpg"
         }
       },
@@ -291,7 +291,7 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: 'Chinese communities across the Pacific and Americas',
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/A_Holiday_in_Chinatown,_San_Francisco_%28P._Frenzeny,_Harper's,_1880-03-20%29.jpg",
+      url: '../assets/images/commons/a-holiday-in-chinatown-san-francisco-p-frenzeny-harper-s-1880-03-20-52fa82.jpg',
       sourceUrl: "https://commons.wikimedia.org/wiki/File:A_Holiday_in_Chinatown,_San_Francisco_%28P._Frenzeny,_Harper's,_1880-03-20%29.jpg",
       caption: 'Chinese communities across the Pacific and Americas helps explain how power and economic incentives turned a broad trend into a specific historical outcome. Use it to support a claim, then explain why the evidence proves the claim.',
       prompt: 'How does Chinese communities across the Pacific and Americas support or complicate a claim about effects of migration?'

@@ -4,6 +4,12 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
+      "code": "Unit 5: Learning Objective I",
+      "theme": "Learning Objective",
+      "text": "Explain the causes and effects of calls for changes in industrial societies from 1750 to 1900.",
+      "illustrativeExamples": []
+    },
+    {
       "code": "KC-5.1.V.D",
       "theme": "Social Interactions and Organization",
       "text": "In response to the social and economic changes brought about by industrial capitalism, some governments, organizations, and individuals promoted various types of political, social, educational, and urban reforms.",
@@ -47,16 +53,16 @@
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg'
+    map:             '../assets/images/commons/1700-ce-world-map-1696ff.png',
+    first10:         '../assets/images/commons/pillar-of-vasco-da-gama-1533aa.jpg',
+    contentDelivery: '../assets/images/commons/ferdinand-magellan-9de032.jpg',
+    beSurreal:       '../assets/images/commons/casta-painting-all-bdc286.jpg',
+    skill:           '../assets/images/commons/florentinecodex-bk12-f54-smallpox-6163e9.jpg',
+    checkpoint1:     '../assets/images/commons/waldseemuller-map-2-f5c64b.jpg',
+    evidence:        '../assets/images/commons/voc-faaae0.jpg',
+    source:          '../assets/images/commons/loren-mozley-pueblo-revolt-1680-installed-1936-abq-nm-73e5bf.jpg',
+    beInTheRoom:     '../assets/images/commons/columbus-taking-possession-d0d171.jpg',
+    checkpoint2:     '../assets/images/commons/astrolabe-persian-18c-8ebe5d.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -139,14 +145,14 @@
     },
     {
       title: 'The Chartist meeting at Kennington Common, 1848',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/William_Edward_Kilburn_-_View_of_the_Great_Chartist_Meeting_on_Kennington_Common_-_Google_Art_Project.jpg?width=1200',
+      url: '../assets/images/commons/william-edward-kilburn-view-of-the-great-chartist-meeting-on-kenningto-cf2162.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:William_Edward_Kilburn_-_View_of_the_Great_Chartist_Meeting_on_Kennington_Common_-_Google_Art_Project.jpg',
       caption: 'A daguerreotype of the Chartist gathering of 10 April 1848, one of the earliest photographs of a crowd. The Chartists were demanding the vote for working men.',
       prompt: 'NOTICE how many people are present and how they are dressed. INFER what kind of movement this was and who was in it. The photographer was working for the Crown: how does knowing that change how you read the picture?'
     },
     {
       title: '“Capital and Labour”, Punch, 1843',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Punch_1843_-_Reichtum_und_Armut.png?width=1200',
+      url: '../assets/images/commons/punch-1843-reichtum-und-armut-7927a6.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Punch_1843_-_Reichtum_und_Armut.png',
       caption: 'R. J. Hamerton in Punch, July to December 1843, page 49, contrasting a wealthy household above ground with the mine workings beneath it. Published the year after the Mines Act barred women and young children underground.',
       prompt: 'NOTICE what is happening in the upper half and the lower half, and how the two are joined. INFER the argument the cartoonist is making about where wealth comes from. What does a satirical magazine tell you about its readers as well as its subject?'

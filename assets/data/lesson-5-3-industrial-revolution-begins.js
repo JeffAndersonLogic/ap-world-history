@@ -30,19 +30,19 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 5: Revolutions",
     topic: "Topic 5.3",
     title: "The Industrial Revolution Begins",
-    subtitle: "Why industrialization started in Britain — and how the steam engine, factory system, and urbanization transformed labor and society from c. 1750 to c. 1900",
+    subtitle: "1750 to 1900. Nature put coal, iron, and water close together in Britain, and its shortage of wood pushed it to coal. People built the rest: better farms, growing towns, laws that protected property, cotton from abroad, and money to invest. Together they made factories pay, and the factory put the work in one place and split it into small jobs.",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 
   learningTargets: [
     {
-      target: "I can explain why the Industrial Revolution began in Britain, identifying the combination of factors, coal, geography, capital, enclosure, political stability, and scientific culture, that made Britain uniquely positioned for industrialization.",
+      target: "I can explain how Britain's environment (its coal, iron, and timber, and its rivers, coast, and canals) and the things people built (better farming, growing towns, laws that protected property, resources from abroad, and saved-up capital) worked together to cause industrial production to grow, starting in Britain.",
       kc: "KC-5.1.I.A",
       theme: "Humans and the Environment"
     },
     {
-      target: "I can describe the key features of early industrialization, steam engine, factory system, and urbanization, and explain the social effects on workers, including new forms of discipline, child labor, dangerous conditions, and the emergence of working-class resistance.",
+      target: "I can explain how the factory system gathered production in a single place and split the work into specialized jobs, and why that let a mill make more goods.",
       kc: "KC-5.1.I.C",
       theme: "Humans and the Environment"
     }
@@ -50,18 +50,24 @@ window.BEHISTORICAL_LESSON = {
 
   successCriteria: [
     {
-      criteria: "I can identify at least four factors that explain why industrialization began in Britain (coal and iron deposits; geographic advantages, rivers, canals, coastline; Enclosure Acts driving rural workers to cities; capital from colonial and Atlantic trade; political stability and property rights after the Glorious Revolution; scientific culture, Royal Society, patent system). I can explain why no single factor is sufficient, the combination was unique.",
+      criteria: "I can explain two things nature gave Britain (such as coal and iron, the shortage of wood, or rivers, the coast, and canals) and two things people built (such as better farming, towns, patents, cotton from abroad, or saved-up money). For each one, I can say what it made cheaper or possible. I can show one way two of them worked together.",
       kc: "KC-5.1.I.A",
       theme: "Humans and the Environment"
     },
     {
-      criteria: "I can explain three key features of early industrialization: Watt's steam engine (1769, improved efficiency), Arkwright's factory at Cromford (1771, first factory concentrating workers and machines), and the urbanization of Manchester (25,000 in 1772 to 300,000 by 1850). I can describe at least two effects on labor: loss of craft/artisan autonomy, long hours and dangerous conditions, widespread child labor, and the Luddite resistance to deskilling machinery.",
+      criteria: "I can describe the putting-out system, explain how a mill like Arkwright's at Cromford (1771) brought workers to water-powered machines in one building, explain how the work in a cotton mill was split into steps (carding, drawing, roving, and spinning) with each worker tending one, use Adam Smith's pin workshop (1776) to explain why splitting the work made more goods, and connect the factory to one environmental factor, such as the water that turned its wheel.",
       kc: "KC-5.1.I.C",
       theme: "Humans and the Environment"
     }
   ],
 
   collegeBoardKeyConcepts: [
+    {
+      code: 'Unit 5: Learning Objective D',
+      theme: 'Learning Objective',
+      text: 'Explain how environmental factors contributed to industrialization from 1750 to 1900.',
+      illustrativeExamples: []
+    },
     {
       code: 'KC-5.1.I.A',
       theme: 'Humans and the Environment',
@@ -77,124 +83,112 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: "Coal, Steam, and the Factory: How Industrialization Began",
-    intro: "The Industrial Revolution was not a single event but a transformation that unfolded across several generations, changing how goods were made, where people lived, and how work was organized. Understanding it requires answering two questions: Why did it start in Britain? And what did it do to the people who lived through it?",
+    title: "Coal, Water, and One Roof",
+    intro: "Use these cards to see what nature gave Britain, what people built on top of it, how the factors worked together, and what the factory changed about work.",
     videos: [],
     segments: [
       {
-        title: "Why Britain? The Causes of Industrialization",
+        title: "What Nature Gave: Coal, Iron, Wood, and Water",
         bullets: [
-          "**Coal and iron**: Britain sat on enormous coal deposits (Yorkshire, the Midlands, South Wales, northeast England) and iron ore deposits that, when combined, produced the steel and steam power driving industrialization. Coal was abundant, shallow enough to mine, and located near navigable rivers. Without coal, there is no steam engine; without the steam engine, the factory system's scale is impossible. Continental Europe had coal too, but not always in the right places or with the right political conditions to exploit it.",
-          "**Geography**: Britain's rivers, extensive canal system (built rapidly 1750s–1800s), and coastline meant raw materials and finished goods could be transported cheaply. No part of England is more than 70 miles from the sea. The canal network connected the coal fields to the cities before railroads existed. This low transportation cost was essential, industrialization required moving bulk goods (coal, iron, cotton, finished cloth) cheaply and reliably.",
-          "**The Enclosure Acts**: From roughly 1700 to 1850, Parliament passed thousands of local Enclosure Acts that converted common land (on which rural communities had grazing rights) into private farms. Enclosure increased agricultural productivity, better farming on consolidated land, while displacing enormous numbers of rural workers. These displaced rural workers migrated to cities in search of factory wages. Enclosure thus simultaneously increased food supply (needed to feed a growing industrial workforce) and created a cheap urban labor supply.",
-          "**Capital**: Profits from Atlantic trade, including the profits of the slave trade, plantation agriculture, and colonial commerce, provided the investment capital for industrial machinery, factories, and canals. British merchants and landowners were willing to invest in risky industrial ventures; the legal system (joint-stock companies, bankruptcy laws) structured investment to limit personal liability. Without capital, there are no machines, and without Atlantic trade profits, British industrialists would have had much less capital to invest.",
-          "**Political stability and the patent system**: After the Glorious Revolution (1688), Britain's constitutional monarchy protected property rights and provided legal predictability for long-term investment. The patent system (first codified in 1624) gave inventors exclusive commercial rights to their inventions for a limited period, creating financial incentives for invention. James Watt and Richard Arkwright both made fortunes from their patents. No equivalent system existed in France or Germany at this stage.",
-          "**Scientific culture**: The Royal Society (founded 1660), the Lunar Society of Birmingham (Watt, Boulton, Erasmus Darwin, Josiah Wedgwood), and dozens of mechanics' institutes connected scientific curiosity with practical application. Watt improved the steam engine through years of systematic experimentation. Britain's culture of 'useful knowledge', the belief that science should improve industry and commerce, distinguished it from more theoretically oriented continental scientific cultures."
+          "**Before factories:** in 1750 most thread and cloth were made by hand in people's homes. Under the **putting-out system**, a merchant brought raw wool or cotton to families in the countryside, who spun and wove it on their own wheels and looms, and he paid them for each piece. Power came from muscles, horses, wind, and water wheels.",
+          "**Coal and iron:** Britain sat on huge beds of coal, much of it close to the surface and close to rivers or the sea, often near iron ore.",
+          "**Not enough wood:** by the 1600s most of Britain's old forests were gone, so wood was expensive, and much of the iron Britain used was bought from Sweden, and later from Russia. Britons turned to coal: by 1700 it gave England about half its energy. In 1709, at Coalbrookdale beside the River Severn, Abraham Darby made iron using **coke**, a fuel baked from coal, instead of charcoal made from wood. At first coke iron was used mostly for cast pots; it spread slowly, mainly after the 1750s.",
+          "**Water:** before railways, the cheapest way to move something heavy was to float it. Coal from the mines near Newcastle went by ship to London; fast streams turned water wheels. Then people dug **canals**. In 1761 the Duke of Bridgewater's canal opened from his mines at Worsley to Stretford, on the edge of Manchester, and the price of coal in Manchester soon fell by about half. By 1765 the canal reached the town itself."
         ],
         image: {
-          title: "Why Britain first?",
-          caption: "BeHistorical topic artwork for this card. Coal, iron, waterways, agricultural surplus, capital from Atlantic commerce, and access to colonial markets arrived together.",
-          url: "",
-          sourceUrl: ""
+          title: "Coalbrookdale by Night, 1801",
+          caption: "Philip James de Loutherbourg's painting of the Madeley Wood furnaces near Coalbrookdale, beside the River Severn, lit up at night. Loutherbourg also painted scenery for the theater. Science Museum, London.",
+          url: "../assets/images/commons/philipp-jakob-loutherbourg-d-j-002-23c595.jpg",
+          sourceUrl: "https://collection.sciencemuseumgroup.org.uk/objects/co65204/coalbrookdale-by-night-by-philippe-jacques-de-loutherbourg"
         }
       },
       {
-        title: "Steam Power and the Factory System",
+        title: "What People Built: Food, Towns, Laws, Cotton, and Money",
         bullets: [
-          "**James Watt's steam engine** (patented 1769, commercially practical by the 1780s) was not the first steam engine, Thomas Newcomen had built an atmospheric pump in 1712, but it was the first efficient one. Watt added a **separate condenser**, keeping the main cylinder hot and dramatically reducing fuel consumption. By the mid-1780s, Watt's engine (built in partnership with Birmingham industrialist Matthew Boulton) was powering mills, factories, and eventually (after the 1780s) rotary machinery of all types. The steam engine freed industry from dependence on flowing water, factories could now be built anywhere, including in cities.",
-          "**Richard Arkwright's water frame** (1769) was the first machine that could spin cotton thread strong enough to be used as warp (the long threads in weaving). In 1771, Arkwright built the first water-powered cotton spinning mill at Cromford, Derbyshire, and this was the first true factory: workers came to a single location, worked with machines they didn't own, at hours set by the factory owner, under supervision from paid overseers. This was a revolutionary change in the social organization of production.",
-          "**The domestic/putting-out system** that factories replaced had a very different logic. Under the putting-out system, merchants distributed raw materials (raw cotton, raw wool) to rural workers who processed it in their own homes, on their own equipment, at their own pace. Workers had autonomy over their time and tools; they could work seasonally, supplement with farming, and organize their own labor. The factory system eliminated this autonomy entirely, workers came to the factory at the bell and left at the bell, and the machine set the pace.",
-          "**Child labor** was a defining feature of early industrialization. Children as young as 5–7 worked in textile mills, coal mines, and factories. They were valued for their small hands (reaching into dangerous machinery to clear jams), low wages, and (in theory) malleability to factory discipline. Factory owners recruited children from workhouses. The **Factory Act of 1833** was the first effective legislation: it prohibited children under 9 in textile mills, limited those aged 9–13 to 48 hours per week, and crucially established factory inspectors to actually enforce the rules, unlike earlier legislation that relied on self-reporting.",
-          "**Working conditions** in early factories were genuinely dangerous. Unguarded machinery caused frequent injuries, children cleaning under moving looms lost fingers, hands, and lives. Cotton dust caused chronic lung disease (byssinosis). Mines filled with explosive gases and collapsed without warning. Working hours were typically 12–16 hours per day, six days a week. Workers were fined for tardiness, talking, or singing. Wages were paid partly in company scrip redeemable only at company stores (truck system). The legal doctrine of 'master and servant' meant workers had few legal remedies."
+          "**Better farming:** British farmers planted turnips and clover instead of leaving fields empty to rest. Turnips fed animals through the winter, clover enriched the soil, and more animals meant more manure and more grain. Landowners **enclosed** shared village fields into private farms, often by act of Parliament. More food fed more people: Britain grew from about 8 million people in 1761 to about 10.5 million in 1801, and a smaller share of English working men farmed: almost half in 1700, and by about 1800 somewhere between a third and two in five.",
+          "**Towns:** urbanization put workers close together and gave them neighbors to sell to. Manchester had about 23,000 people in 1773 and 70,409 in the census of 1801.",
+          "**Laws that protected property:** Parliament, where landowners and merchants sat, passed the laws that enclosed fields and allowed canals. A law of 1624 banned most monopolies but kept the **patent**, the sole right the crown could grant the true and first inventor to use a new invention for up to fourteen years; Richard Arkwright patented his spinning machine in 1769.",
+          "**Resources from abroad:** cotton does not grow in Britain. By the 1780s most of the cotton spun in Manchester was grown by enslaved people on plantations in the Caribbean and South America, and after the 1790s more and more came from plantations in the United States.",
+          "**Capital:** merchants, bankers, and landowners had grown rich from trade, including the Atlantic slave trade, and some risked their savings on mills. Historians still argue about how much came from slavery. Arkwright's partners, Samuel Need and Jedediah Strutt, had grown rich making stockings, and they spent thousands of pounds before the business made a profit.",
+          "**Working together:** the Bridgewater Canal needed coal at Worsley, water to float it on, acts of Parliament (1759 and 1760), the duke's money and loans, and a growing town to buy the coal. No single factor did it alone."
         ],
         image: {
-          title: "Power-loom weaving, 1835",
-          caption: "Steam-driven looms moved textile work out of homes and into factories, and put the pace of work under the machine's control.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Powerloom_weaving_in_1835.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Powerloom_weaving_in_1835.jpg"
+          title: "A Cotton Plant, 1807",
+          caption: "A hand-colored etching of a cotton plant by J. Pass after a drawing by Maria Sibylla Merian, published in London in 1807. Cotton, the factory's raw material, had to be grown abroad, in warm climates. Wellcome Collection.",
+          url: "../assets/images/topics/5-3/cotton-plant-pass-after-merian-1807.jpg",
+          sourceUrl: "https://wellcomecollection.org/works/r986rsr9"
         }
       },
       {
-        title: "Urbanization and Working-Class Response",
+        title: "The Factory: One Place, One Job Each",
         bullets: [
-          "**Manchester** grew from approximately 25,000 in 1772 to 300,000 by 1850, the fastest sustained urban growth in history to that point. It earned the nickname 'Cottonopolis' for its cotton spinning mills. Friedrich Engels described conditions there in *The Condition of the Working Class in England* (1845): workers lived in back-to-back houses without light or ventilation, sharing privies (outdoor toilets) with dozens of families, drinking water from the same rivers that served as sewers. Cholera epidemics struck Manchester repeatedly, the disease spread through contaminated water, and the city's infrastructure could not keep pace with its growth.",
-          "**Urbanization's human costs** were not invisible to contemporaries. Parliamentary investigations, reform journalism, and fiction (Charles Dickens) documented working-class conditions extensively. But the dominant economic ideology, *laissez-faire* (leave it alone) capitalism, resisted government intervention as distorting the natural market. The reform of working conditions was slow, contested, and occurred through political struggle rather than voluntary employer action.",
-          "**The Luddites** (1811–1816): skilled textile workers, frame-knitters and handloom weavers, who destroyed machinery they believed was being used to displace them. They were not simply 'anti-technology': they objected specifically to the use of machinery to undercut skilled workers with unskilled machine-operators. The government treated Luddism as rebellion: 12,000 troops were deployed to the Midlands and Yorkshire (more than Wellington had in Spain); frame-breaking was made a capital offense in 1812; 17 Luddites were executed after the York trials of 1813.",
-          "**Chartism** (1838–1857) was the first mass working-class political movement in history. The People's Charter (1838) demanded six reforms: universal male suffrage, secret ballot, annual parliaments, payment for MPs, equal electoral districts, and abolition of property qualifications for MPs. None of the six demands were granted in the 1840s, but five of the six were eventually enacted by 1918. Chartism demonstrates that the working class created political responses to industrialization, not only economic ones.",
-          "**The standard of living debate**: Historians continue to argue about whether real wages and living standards rose or fell during the Industrial Revolution's first generation. The evidence suggests that aggregate wealth increased dramatically, but that the distribution was highly unequal. The first generation of factory workers generally experienced worse conditions than the artisans and rural workers they replaced. Improvements in real wages, life expectancy, and consumer access accelerated in the second half of the 19th century, but the costs of the transition were borne disproportionately by the poor."
+          "**One place:** in 1771 Arkwright and his partners built a cotton-spinning mill at **Cromford**, in Derbyshire. A water wheel, fed by a brook and by a tunnel that drained the nearby lead mines, turned the machines. The workers came to the machines, in one building, at the hours the mill set, under an overseer. The village was too small, so Arkwright built houses for them; most were women and children, some as young as seven. UNESCO says the valley \"saw the birth of the factory system.\"",
+          "**One job each:** in a cotton mill, raw cotton was cleaned, carded (combed straight), drawn out, twisted into a loose rope called roving, and spun into thread. Cromford began with machines for spinning; in 1775 Arkwright patented machines for the earlier steps too. From then on each step after cleaning had its own machine, tended by workers who did that job and no other. This is **specialization of labor**.",
+          "**Why it made more:** Adam Smith described a pin workshop in 1776 where ten men who shared about eighteen steps, each doing only one, two, or three of them, \"could make among them upwards of forty-eight thousand pins in a day,\" while a worker who had not learned the trade, working alone, \"could scarce ... make one pin in a day.\" Simple jobs could be learned quickly, so mills could hire workers with no training, many of them children.",
+          "**A writer of the time:** in 1835 Andrew Ure, who admired factories, defined one as many kinds of workers \"tending with assiduous skill a system of productive machines continuously impelled by a central power\": one power source, many machines, each with its own workers.",
+          "**Not the first, not steam:** earlier mills, such as a silk mill at Derby in the 1720s, had some factory features, and Cromford ran on water. Steam power is Topic 5.5."
         ],
         image: {
-          title: "A Court for King Cholera, Punch, 1852",
-          caption: "Industrial cities grew faster than sanitation. Overcrowding and contaminated water made epidemics a predictable feature of factory towns.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Punch-A_Court_for_King_Cholera.png",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Punch-A_Court_for_King_Cholera.png"
+          title: "Carding, Drawing, and Roving",
+          caption: "An engraving of the room in a cotton mill where cotton was combed, drawn out, and twisted, a later printing of the plate made from Thomas Allom's drawing (c. 1834) of the carding room at Swainson, Birley & Co.'s mill near Preston, first engraved for Edward Baines's History of the Cotton Manufacture (1835). It shows a mill decades after Cromford. Each row of machines does one step; belts from the ceiling turn them all. Wellcome Collection.",
+          url: "../assets/images/topics/5-3/carding-drawing-roving-allom-engraving.jpg",
+          sourceUrl: "https://wellcomecollection.org/works/azdqm7t7"
         }
       }
     ]
   },
 
   map: {
-    title: "Britain's Industrial Geography, c. 1800",
+    title: "Britain's Industrial Geography, c. 1770 to 1801",
     url: "../assets/images/instructional-maps/topic-5-3.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-5-3.svg",
-    caption: "Britain's coal and iron deposits, river systems, and canal networks created the geographic infrastructure for industrialization. The clustering of industrial cities in the Midlands and the North reflects the location of coal fields and the water power of Pennine rivers.",
-    intro: "Examine the distribution of Britain's coal deposits, iron ore, rivers, and early industrial cities. Notice how coal fields, navigable rivers, and port cities cluster together, this geographic coincidence is not accidental. Trace how coal from the Midlands could reach Manchester via canal, how finished cloth from Manchester could reach Liverpool's docks, and how Liverpool connected to the Atlantic trade that supplied raw cotton and consumed finished goods.",
-    prompt: "Using the map, explain the relationship between geography and industrialization. Which features of Britain's geography were most important for enabling industrialization? What would have been different if Britain's coal deposits had been in the interior, far from navigable water?"
+    caption: "A BeHistorical map of Britain's main coalfields, its rivers and early canals, and the places this topic names: Coalbrookdale, Cromford, Worsley, Manchester, Liverpool, Newcastle, and London.",
+    intro: "Find the coalfields first. Then find the rivers, the coast, and the canals near them. Then find the four places this topic names in the north and Midlands: Coalbrookdale, Cromford, Worsley, and Manchester.",
+    prompt: "Using the map, explain how one thing nature gave Britain helped industry grow in one place on the map. Name the place, the factor (coal, iron, or water), and what it made cheaper or possible."
   },
 
   deepReading: {
-    title: "Why It Started There",
-    desc: "A textbook-depth companion that tests six candidate causes against places that had each one and did not industrialize, then explains why the steam engine was first built where its own waste fuel was free, why Arkwright&rsquo;s real invention was the working day, and what the Luddites were actually objecting to. Optional, and useful when a checkpoint asks why Britain first.",
+    title: "Coal, Water, and One Roof",
+    desc: "A longer, optional chapter on the same story: how Britain's coal, iron, shortage of wood, and waterways contributed to industrialization; how better farming, growing towns, laws, cotton from abroad, and capital made factories worth building; how the factors worked together; and what the factory system changed about work.",
     url: "deep-reading-topic-5-3-industrial-revolution-begins.html"
   },
 
   first10: {
-    title: 'First & 10: The Age of Steam',
+    title: 'First & 10: Coal, Water, and One Roof',
     embedUrl: 'first-and-10-topic-5-3-industrial-revolution-begins-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 5.3 lesson path.'
+    note: 'Read the First & 10 story, answer the three questions, then return to the 5.3 lesson path.'
   },
 
   evidenceLab: {
-    title: "Evidence Lab: The Industrial Revolution and Its Human Cost",
-    intro: "Use the evidence below to analyze the causes and social effects of the Industrial Revolution. Strong AP causation arguments identify multiple causes and explain the mechanism connecting each cause to its effect. Strong comparison arguments identify specific similarities and differences rather than vague generalizations.",
-    prompt: "Choose one piece of evidence. Explain what it reveals about either the causes of industrialization OR its social effects on the working class. Be specific about the mechanism: how exactly did this condition cause this effect?",
-    items: [
-      { title: "Testimony before Parliament, Factory Commission (1833)", detail: "Samuel Coulson, a factory worker, testified: 'At what time in the morning, in the brisk time, did those girls go to the mills?, In the brisk time, for about six weeks, they have gone at 3 o'clock in the morning, and ended at 10, or nearly half past at night. What intervals were allowed for rest or refreshment during those nineteen hours of labour?, Breakfast a quarter of an hour, and dinner half an hour, and drinking a quarter of an hour. Was any of that time taken up in cleaning the machinery?, They generally had to do what they called dry down; sometimes this took the whole of the time at breakfast or drinking, and they were to get their dinner or breakfast as they could.' Analyze: what does this testimony reveal about the conditions of factory labor, and how does it compare to what you would expect of the domestic putting-out system?" },
-      { title: "James Watt's Steam Engine Patent Description (1769)", detail: "Watt's original patent described his key innovation: 'My method of lessening the consumption of steam, and consequently fuel, in fire engines, consists of the following principles: First, that vessel in which the powers of steam are to be employed to work the engine... is to be maintained always as hot as the steam that enters it; secondly, in steam engines, there is to be no unnecessary condensation of steam; thirdly, a third kind of pump... is to be employed.' Analyze: how does Watt's focus on efficiency, 'lessening the consumption of steam, and consequently fuel', reveal the economic logic that drove technological innovation in the Industrial Revolution? What incentive did factory owners have to adopt more efficient engines?" },
-      { title: "Luddite Letter to a Hosier (c. 1812)", detail: "A letter attributed to Ned Ludd (the Luddites' fictional leader) warned a Nottingham hosier: 'I write on behalf of the whole body of Luddites, to inform you, that we are determined to destroy your frames, unless you immediately discharge from your employ the men who have been placed at them to do the work of our trade at a lower rate than the full price... We are determined to destroy all frames that work at anything less than the full price. Signed by the General of the Army of Redressers, Ned Ludd.' Analyze: how does this letter complicate the popular image of Luddites as simply 'anti-technology'? What does the letter's specific demand (full price for labor) reveal about the economic threat they were responding to?" }
-    ]
+    title: "Evidence Lab: Causes of Industry, and the Factory System",
+    intro: "Use the cards to find causes of industrialization and changes the factory system made, and what each source can and cannot show.",
+    prompt: "Choose two cards. For each, say what kind of source it is, what it shows about a cause of industrialization or about the factory system, and one thing it cannot tell you.",
+    items: []
   },
 
   primarySource: {
-    title: "Primary Source: Parliamentary Testimony, Factory Commission (1833)",
-    intro: "In 1833, the British Parliament commissioned an inquiry into child labor in the textile mills. Parliamentary commissioners traveled to factory districts and took testimony from workers, children, factory owners, and physicians. This adapted testimony was given by a young worker in a textile mill. The Factory Act of 1833, passed the same year, prohibited employment of children under 9 in textile mills and restricted those aged 9–13 to 48 hours per week. It also established factory inspectors to enforce the rules, for the first time making the law enforceable.",
-    text: [
-      "What age are you?, I am turned thirteen years old.",
-      "How long have you worked in the mill?, Since I was about six years old.",
-      "What were your hours of labor when you first began to work?, We began at five in the morning and worked till nine at night in busy times.",
-      "What was done to you if you were late?, We were strapped with a leather strap, or we had to stand on a step for two hours at the end of the day.",
-      "Did your feet hurt you?, Yes, they swelled so at night that I had to have a large bucket of cold water to dip them in to reduce the swelling before I could put my shoes on the next morning.",
-      "Did you receive any schooling?, No. By the time I got home I was too tired to learn anything.",
-      "Were you ever injured in the mill?, Yes. My finger was taken off in the machinery when I was eight. I was reaching in to clear a jam in the rollers when the machine started up."
-    ],
+    title: "Primary Source: Adam Smith and Andrew Ure on Dividing the Work",
+    intro: "Two writers of the time described how splitting work into steps changed how things were made. Adam Smith, a Scottish thinker, wrote The Wealth of Nations in 1776, five years after Arkwright's mill opened at Cromford. He described how a pin workshop divided its work. Andrew Ure, a Scottish scientist who admired factories, wrote The Philosophy of Manufactures in 1835, when steam engines drove many cotton mills. He defined what a factory is.",
+    attribution: "Passages 1 and 2: Adam Smith, An Inquiry into the Nature and Causes of the Wealth of Nations, 1776, Book I, chapter 1. Passage 3: Andrew Ure, The Philosophy of Manufactures, London, 1835, p. 13",
+    text: "<strong>Passage 1, Smith (1776).</strong> One man draws out the wire; another straights it; a third cuts it; a fourth points it; a fifth grinds it at the top for receiving the head ... and the important business of making a pin is, in this manner, divided into about eighteen distinct operations.<br><br><strong>Passage 2, Smith (1776).</strong> I have seen a small manufactory of this kind, where ten men only were employed ... Those ten persons, therefore, could make among them upwards of forty-eight thousand pins in a day. ... But if they had all wrought separately and independently, and without any of them having been educated to this peculiar business, they certainly could not each of them have made twenty, perhaps not one pin in a day.<br><br><strong>Passage 3, Ure (1835).</strong> The term Factory, in technology, designates the combined operation of many orders of work-people, adult and young, in tending with assiduous skill a system of productive machines continuously impelled by a central power.<br><br><em>Words to know: a manufactory is a workshop; wrought means worked; straights means straightens; assiduous means careful and hard-working; impelled means driven; a central power is one engine or water wheel driving every machine.</em>",
     questions: [
-      "What does this testimony reveal about the conditions of child labor in textile mills? Identify at least three specific details, hours, discipline, physical effects, that characterize the worker's experience.",
-      "This child began working at age 6 and lost a finger at age 8. The Factory Act of 1833 prohibited employment of children under 9, passed the same year this testimony was given. What does this reveal about the relationship between political reform and industrial conditions? Why did reform take so long?",
-      "Factory owners argued that factories were beneficial for poor children because they provided wages and kept children out of idleness. How would you respond to this argument using this testimony as evidence? What does this exchange reveal about the relationship between economic interest and humanitarian concern in the early Industrial Revolution?"
+      "In your own words, explain what Smith describes in Passages 1 and 2. How many pins could ten men make in a day by splitting the work, and how many does Smith think each could make working separately, without having learned the trade?",
+      "In Passage 3, Ure defines a factory. His definition names \"a system of productive machines\" and \"a central power.\" Does Smith describe either of these in Passages 1 and 2? What does that tell you about how a factory differs from Smith's workshop?",
+      "Using both writers, explain the factory system as a process: how did gathering workers in one place and splitting the work into steps let a mill make more goods?"
     ]
   },
 
   beSurreal: {
-    title: "BeSurreal: You Are a Handloom Weaver in Lancashire, c. 1812",
-    desc: "You are a handloom weaver in a village in Lancashire, England, c. 1812. Your family has woven woolen cloth for three generations. The power loom being installed in the mill down the road can produce in a day what takes you a week at your loom. Last month, some men from the village went out in the night and broke the frames in the new mill, Luddites, they call themselves. You didn't go, but you understood why.",
-    intro: "Your son Thomas is 12 years old. He has been offered a job in the mill, 12 hours a day, six days a week, for wages that are less than what you used to make in a day but more than the family has now. Your earnings at the handloom have fallen by half in two years as the mills have driven prices down. You can see the future: either Thomas goes to the mill, or the family goes to the workhouse. You know men who chose the workhouse, and you know what that looks like.",
-    detail: "You also know what the mill looks like. You've walked past it at dawn, the noise, the vibration through the ground, the smell of machine oil and damp cotton. You've talked to women who work there. The pace is set by the machine, not by the worker. There are fines for being late, for talking, for going to the outhouse without permission. You have worked at your own loom, in your own house, at your own pace, for as long as you can remember. You are being asked to give Thomas to a world that has no place for that kind of work.",
-    prompt: "Write a letter to Thomas explaining your decision, whether you will send him to the mill or not. Explain to him what is being lost and what must be accepted. Tell him what you hope for him, and what you are afraid of. Don't idealize the old ways (you know the handloom was hard work too) and don't surrender to despair. Write as someone who loves his son and is trying to be honest about a world that is changing faster than he can understand."
+    title: "BeSurreal: Cromford, Derbyshire, 1772",
+    desc: "You are a spinner in a Derbyshire village. All your life you have spun thread at home, on a wheel by the window, from cotton and wool a merchant brings to your door. He pays you for each bundle of thread. Down the valley, a man named Richard Arkwright has built a mill beside the brook, and its water wheel turns all day.",
+    intro: "Your daughter Ann is twelve. The mill has offered her a place. She would walk there with the other girls before it is light, work at one machine all day, every day but Sunday, and bring home wages every week. The merchant still comes to your door, but your neighbors say the mill's thread is cheaper and stronger, and you wonder how long he will keep coming.",
+    detail: "You have watched the mill from the road. Everyone goes into one building at the same hour, when the bell rings. Inside, you hear, nobody spins a whole thread the way you do. One girl only cards cotton by hand, combing it for the machines. Another only watches a row of spindles and mends the broken threads. The machines do the spinning; the people tend the machines. People say Mr. Arkwright wants whole families from other villages to come and work for him, and that he means to build houses for them. You spin at your own pace, and you know every step of the work. Ann would know one.",
+    prompt: "Write a letter to your sister in another village about the offer to Ann. Explain two things that would change if Ann went to the mill instead of spinning at home: where the work happens, and how the work is divided. Say what Ann would gain and what she would lose. Use the words factory, putting-out, and specialization."
   },
 
   beInTheRoom: {
     url: '',
-    desc: "Advise James Watt and Matthew Boulton on the risks of commercializing the steam engine, testify before the Factory Commission as a mill owner defending your labor practices, or join a Luddite cell planning a frame-breaking raid and argue about whether violence or politics is the right response to the power loom."
+    desc: "Nottingham, early 1771. At Richard Arkwright's partners' table, decide where to build the new spinning mill, how to divide the work inside it, and how to pay for it and protect it."
   }
 
 };

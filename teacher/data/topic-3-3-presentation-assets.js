@@ -34,6 +34,24 @@
  *   1528. Saved here at 830x1314 from the thumbnail the Commons API returned,
  *   so the student deck never depends on Wikimedia.
  *
+ * - reformation-story (story-scene) and catholic, 2026-10-21: pictures from Jeff's
+ *   old Reformation presentation, added with the two story slides he asked for.
+ *   - 3.3 - St Peters Basilica.jpg (1585x792) and 3.3 - St Peters Basilica
+ *     interior.jpg (2000x1333): modern photographs of the church Leo X's
+ *     indulgence money was helping to rebuild. No C2PA, no AI tells. Most of what
+ *     they show was finished after 1517; the slide notes say so.
+ *   - 3.3 - Council of Trent painting.jpg (500x345): a real painting of the
+ *     council in session, no C2PA, replacing the AI Trent scene (3.3 - Catholic
+ *     Reformation.jpg, kept in the folder, no longer shown). Small, but it fills
+ *     a 540x357 slot at about 1.1x. Its artist and date were not verified
+ *     (Wikimedia rate-limited the lookup on 2026-10-21), so the credit says only
+ *     that it is a painting.
+ *   Left out on purpose: Ferdinand Pauwels' 1872 painting of Luther nailing up the
+ *   theses (Jeff's call: the deck avoids the disputed door-nailing story), and a
+ *   modern devotional painting of three Jesuit founders under the words "Go forth
+ *   and set the world on fire" (the line is commonly credited to Ignatius but is
+ *   not found in his writings, and Ricci already carries the Jesuit beat).
+ *
  * Still wanted, from the story draft's visual list (section 9): a near-contemporary
  * Chaldiran manuscript painting and a later devotional image of Guru Nanak. Stage
  * and verify any Commons candidate first; never type a filename from memory.
@@ -56,10 +74,15 @@ if(map)map.visual={
 const luther=by('source-luther');
 if(luther&&luther.template)luther.template=Object.assign({},luther.template,{visual:{url:LOCAL+'luther-cranach-1528.jpg',alt:'Painted portrait of Martin Luther from the chest up, in a black scholar\'s cap and black robe against a blue-green background, looking to the side',credit:'Veste Coburg · Public domain',tagPos:'bl'}});
 
+const PHOTO=(name,alt,credit,extra)=>Object.assign({url:LOCAL+encodeURIComponent(name),alt,credit},extra||{});
 const SCENES={
+  'reformation-story':{side:'left',pictures:[
+    {caption:'St. Peter\'s Basilica, Rome',visual:PHOTO('3.3 - St Peters Basilica.jpg','Modern photograph of the front of St. Peter\'s Basilica in Rome at sunrise: a wide stone front with columns and statues along the roof, a great blue-gray dome behind it, and an Egyptian obelisk in the square in front','Modern photograph',{position:'58% 50%'})},
+    {caption:'Inside St. Peter\'s',visual:PHOTO('3.3 - St Peters Basilica interior.jpg','Modern photograph of the inside of St. Peter\'s Basilica: a long nave with a gold coffered ceiling, marble pillars decorated with carved figures, and a tall bronze canopy over the altar at the far end','Modern photograph',{position:'55% 50%'})}
+  ]},
   protestant:{pictures:[{caption:'A German print shop',visual:AI('3.3 - German Printing Shop.jpg','Reconstruction of a German print shop: a pressman pulls the bar of a wooden screw press, a boy holds two leather ink balls, a compositor sets type from a slanted case, and printed sheets hang drying on lines overhead',{position:'38% 50%'})}]},
   catholic:{side:'left',pictures:[
-    {caption:'Council of Trent, 1545 to 1563',visual:AI('3.3 - Catholic Reformation.jpg','Reconstruction of the Council of Trent: rows of bishops in white miters and cardinals in red facing each other across a church nave while clerks write at a table in the center',{position:'50% 55%'})},
+    {caption:'Council of Trent, 1545 to 1563',visual:PHOTO('3.3 - Council of Trent painting.jpg','Painting of the Council of Trent in session inside a church: cardinals in red robes sit on a raised bench at the left, rows of bishops fill curved tiers of seats, and two clerks sit at a table in the open center','Painting',{position:'50% 50%'})},
     {caption:'A Jesuit in China: Matteo Ricci',visual:AI('3.3 - Mateo Ricci.jpg','Reconstruction of Matteo Ricci, a bearded European in a black Chinese scholar\'s robe and hat, writing Chinese characters with a brush beside a Chinese scholar, with a world map and an astrolabe on the desk',{position:'45% 45%'})}
   ]},
   chaldiran:{pictures:[{caption:'Chaldiran, 1514',visual:AI('3.3 - Chaldiran.jpg','Reconstruction of the Battle of Chaldiran: Ottoman infantry in tall white felt hats fire muskets from behind cannons and carts chained together, while Safavid horsemen in red-topped caps charge across a dusty plain',{position:'45% 50%'})}]},

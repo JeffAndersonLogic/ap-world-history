@@ -72,7 +72,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'open', kind: 'hero', eyebrow: 'AP World History · Topic 2.2',
       title: 'The Mongol Empire', subtitle: 'Build. Fragment. Connect. Transfer.',
       visual: {
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/YuanEmperorAlbumGenghisPortrait.jpg',
+        url: '../assets/images/commons/yuanemperoralbumgenghisportrait-a39370.jpg',
         alt: 'Yuan dynasty portrait of Chinggis Khan',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg',
         credit: 'Yuan dynasty imperial portrait album · National Palace Museum · public domain'
@@ -106,7 +106,7 @@ window.BEHISTORICAL_TEACHING = {
       title: 'One empire becomes four Mongol states.',
       mapLabel: 'SUCCESSOR KHANATES · c. 1300',
       visual: {
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/MongolEmpireDivisions1300.png',
+        url: '../assets/images/commons/mongolempiredivisions1300-21e0f5.png',
         alt: 'Map of the Golden Horde, Chagatai Khanate, Ilkhanate, and Yuan dynasty around 1300',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:MongolEmpireDivisions1300.png',
         credit: 'Mongol imperial subdivisions c. 1300 · Wikimedia Commons · CC BY 3.0'
@@ -149,7 +149,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'conquest', kind: 'hero', eyebrow: 'Build 2 · Mobility',
       title: 'Mobility is a weapon.', subtitle: 'Mounted archery + speed + feigned retreat.',
       visual: {
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Anonymous_-_Mongol_with_Horse_and_Camel_-_47.18.139_-_Metropolitan_Museum_of_Art.jpg',
+        url: '../assets/images/commons/anonymous-mongol-with-horse-and-camel-47-18-139-metropolitan-museum-of-3b747a.jpg',
         alt: 'Yuan-era painting of a Mongol with horse and camel',
         sourceUrl: 'https://www.metmuseum.org/art/collection/search/51738',
         credit: 'The Metropolitan Museum of Art · Yuan dynasty · Open Access/Public Domain'
@@ -165,7 +165,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'conquest', kind: 'hero', eyebrow: 'Build 3 · Adaptation',
       title: 'The Mongols borrowed what worked.', subtitle: 'Siege specialists turn mobility into city conquest.',
       visual: {
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bagdad1258.jpg',
+        url: '../assets/images/commons/bagdad1258-6f93c7.jpg',
         alt: 'Medieval manuscript depiction of the Mongol siege of Baghdad in 1258',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bagdad1258.jpg',
         credit: 'Medieval Persian manuscript tradition · public domain'
@@ -192,7 +192,7 @@ window.BEHISTORICAL_TEACHING = {
       title: 'Regional rule solves distance — and creates rivalry.',
       mapLabel: 'SUCCESSOR KHANATES · c. 1300',
       visual: {
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/MongolEmpireDivisions1300.png',
+        url: '../assets/images/commons/mongolempiredivisions1300-21e0f5.png',
         alt: 'Map of the Mongol successor khanates',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:MongolEmpireDivisions1300.png',
         credit: 'Mongol imperial subdivisions c. 1300 · Wikimedia Commons · CC BY 3.0'
@@ -209,7 +209,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'govern', kind: 'hero', eyebrow: 'Governance',
       title: 'Tolerance can be political technology.', subtitle: 'Diversity is easier to rule when cooperation is useful.',
       visual: {
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/HetoumIAtMongolCourt1254.JPG',
+        url: '../assets/images/commons/hetoumiatmongolcourt1254-be6e9c.jpg',
         alt: 'Medieval manuscript depiction of Armenian king Hetoum I at the Mongol court',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:HetoumIAtMongolCourt1254.JPG',
         credit: 'Manuscript image dated 1307 · public domain'
@@ -255,7 +255,7 @@ window.BEHISTORICAL_TEACHING = {
         {
           label: 'OLDER SILK ROAD CORRIDORS · BASELINE',
           visual: {
-            url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_Road_in_the_I_century_AD_-_en.svg',
+            url: '../assets/images/commons/silk-road-in-the-i-century-ad-en-f4ae6b.svg',
             alt: 'Map of older Silk Road routes across Eurasia',
             sourceUrl: 'https://commons.wikimedia.org/wiki/File:Silk_Road_in_the_I_century_AD_-_en.svg',
             credit: 'Wikimedia Commons · CC BY-SA 4.0'
@@ -264,7 +264,7 @@ window.BEHISTORICAL_TEACHING = {
         {
           label: 'MONGOL POLITICAL CONTROL · 1206–1294',
           visual: {
-            url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Expansion_of_the_Mongol_Empire.svg',
+            url: '../assets/images/commons/expansion-of-the-mongol-empire-042caf.svg',
             alt: 'Map showing expansion of Mongol political control',
             sourceUrl: 'https://commons.wikimedia.org/wiki/File:Expansion_of_the_Mongol_Empire.svg',
             credit: 'Wikimedia Commons · CC BY-SA 4.0'
@@ -360,7 +360,7 @@ window.BEHISTORICAL_TEACHING = {
       title: 'Empire changed the conditions of connection.',
       subtitle: 'The Mongols built and fragmented states while facilitating exchange and accelerating cross-cultural transfer.',
       visual: {
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Caravane_Marco_Polo.jpg',
+        url: '../assets/images/commons/caravane-marco-polo-f0cc15.jpg',
         alt: 'Marco Polo caravan depicted in the Catalan Atlas of 1375',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Caravane_Marco_Polo.jpg',
         credit: 'Catalan Atlas, 1375 · public domain'

@@ -61,16 +61,16 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Anopheles_albimanus_mosquito.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Anopheles_albimanus_mosquito.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Life_expectancy_by_world_region%2C_from_1770_to_2018.svg'
+    map: '../assets/images/commons/emergency-hospital-during-influenza-epidemic-camp-funston-kansas-ncp-1-075ee0.jpg',
+    first10: '../assets/images/commons/emergency-hospital-during-influenza-epidemic-camp-funston-kansas-ncp-1-075ee0.jpg',
+    contentDelivery: '../assets/images/commons/emergency-hospital-during-influenza-epidemic-camp-funston-kansas-ncp-1-075ee0.jpg',
+    beSurreal: '../assets/images/commons/emergency-hospital-during-influenza-epidemic-camp-funston-kansas-ncp-1-075ee0.jpg',
+    skill: '../assets/images/commons/anopheles-albimanus-mosquito-c79abe.jpg',
+    checkpoint1: '../assets/images/commons/anopheles-albimanus-mosquito-c79abe.jpg',
+    evidence: '../assets/images/commons/emergency-hospital-during-influenza-epidemic-camp-funston-kansas-ncp-1-075ee0.jpg',
+    source: '../assets/images/commons/emergency-hospital-during-influenza-epidemic-camp-funston-kansas-ncp-1-075ee0.jpg',
+    beInTheRoom: '../assets/images/commons/emergency-hospital-during-influenza-epidemic-camp-funston-kansas-ncp-1-075ee0.jpg',
+    checkpoint2: '../assets/images/commons/life-expectancy-by-world-region-from-1770-to-2018-ef4c6f.svg'
   };
 
   lesson.beInTheRoom = {
@@ -134,21 +134,21 @@
   lesson.images = [
     {
       title: 'Emergency Hospital, Camp Funston, Kansas, 1918',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg',
+      url: '../assets/images/commons/emergency-hospital-during-influenza-epidemic-camp-funston-kansas-ncp-1-075ee0.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Emergency_hospital_during_Influenza_epidemic,_Camp_Funston,_Kansas_-_NCP_1603.jpg',
       caption: 'Crowded military camps during World War I became transmission accelerators for the 1918 influenza pandemic, density and movement shaped the epidemic\'s catastrophic spread.',
       prompt: 'What environmental and population factors visible in this image help explain why the 1918 influenza spread so rapidly among military populations?'
     },
     {
       title: 'Malaria Prevention — Insecticide-Treated Net',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Anopheles_albimanus_mosquito.jpg',
+      url: '../assets/images/commons/anopheles-albimanus-mosquito-c79abe.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Anopheles_albimanus_mosquito.jpg',
       caption: 'Malaria persisted wherever tropical climates, standing water, and poverty intersected, environmental conditions that sustained the mosquito vectors carrying the disease.',
       prompt: 'Why has malaria persisted as a major killer in some regions while being eliminated in others? What environmental and economic factors explain the difference?'
     },
     {
       title: 'Global Life Expectancy Trends',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Life_expectancy_by_world_region%2C_from_1770_to_2018.svg',
+      url: '../assets/images/commons/life-expectancy-by-world-region-from-1770-to-2018-ef4c6f.svg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Life_expectancy_by_world_region,_from_1770_to_2018.svg',
       caption: 'Rising life expectancy shifted the disease burden toward non-communicable conditions, heart disease and Alzheimer\'s, that earlier generations rarely survived to experience.',
       prompt: 'How does rising life expectancy create new public health challenges? What is the connection between longer lives and the diseases of longevity?'

@@ -5,26 +5,43 @@ const css=document.createElement('style');
 css.id='behistorical-teaching-os-shared';
 css.textContent=`
 /* Shared Teaching OS cockpit contract. Topic files own slide composition; this file owns teacher-surface readability. */
-body:not(.project-mode) .cockpit{max-width:1860px!important;grid-template-columns:minmax(0,1fr) 430px!important;gap:16px!important}
+body:not(.project-mode) .cockpit{max-width:1920px!important;grid-template-columns:minmax(0,2fr) minmax(0,3fr)!important;gap:20px!important;align-items:start}
 body:not(.project-mode) .timeline{display:none!important}
-body.ros-open:not(.project-mode) .cockpit{grid-template-columns:240px minmax(0,1fr) 430px!important}
+body.ros-open:not(.project-mode) .cockpit{grid-template-columns:200px minmax(0,2fr) minmax(0,3fr)!important}
 body.ros-open:not(.project-mode) .timeline{display:flex!important}
+body:not(.project-mode) .theater-wrap,body:not(.project-mode) .intel{min-width:0}
+body:not(.project-mode) .theater-wrap{position:sticky;top:80px}
+body:not(.project-mode) .intel{top:80px;max-height:calc(100dvh - var(--bh-intel-top,140px) - 16px)}
+body:not(.project-mode) .intel-scroll{min-height:0;overflow:auto;overflow-wrap:anywhere}
+body:not(.project-mode) .bh-preview-viewport{width:100%;aspect-ratio:16/9;overflow:hidden}
+body:not(.project-mode) .bh-preview-viewport .stage{width:1280px!important;height:720px!important;min-height:0!important;transform:scale(var(--bh-preview-scale,1));transform-origin:top left}
 body:not(.project-mode) .intel-top{padding:16px 17px!important}
-body:not(.project-mode) .intel-top .phase{font-size:.62rem!important}
-body:not(.project-mode) .intel-top h2{font-size:1.18rem!important;line-height:1.18!important}
-body:not(.project-mode) .intel-scroll{padding:13px 15px 17px!important}
-body:not(.project-mode) .cue{padding:13px 14px!important;margin-bottom:10px!important}
-body:not(.project-mode) .cue b{font-size:.62rem!important;margin-bottom:7px!important}
-body:not(.project-mode) .cue p,body:not(.project-mode) .cue li{font-size:.89rem!important;line-height:1.52!important}
-body:not(.project-mode) .cue.source a{font-size:.76rem!important}
+body:not(.project-mode) .intel-top .phase{font-size:.8rem!important}
+body:not(.project-mode) .intel-top h2{font-size:1.4rem!important;line-height:1.25!important}
+body:not(.project-mode) .intel-scroll{padding:18px 20px!important}
+body:not(.project-mode) .cue{padding:16px 18px!important;margin-bottom:14px!important}
+body:not(.project-mode) .cue b{font-size:.8rem!important;margin-bottom:9px!important}
+body:not(.project-mode) .cue p,body:not(.project-mode) .cue li{font-size:1.125rem!important;line-height:1.65!important}
+body:not(.project-mode) .cue.source a{font-size:1rem!important}
 body:not(.project-mode) .mission .question{font-size:.9rem!important;line-height:1.4!important}
 body:not(.project-mode) .flow-card .name{font-size:.75rem!important}
 body:not(.project-mode) .flow-card .range{font-size:.55rem!important}
 .project-mode #runOfShowToggle{display:none!important}
-@media(max-width:1320px){
-  body:not(.project-mode) .cockpit{grid-template-columns:minmax(0,1fr) 390px!important}
-  body.ros-open:not(.project-mode) .cockpit{grid-template-columns:215px minmax(0,1fr) 390px!important}
-  body:not(.project-mode) .cue p,body:not(.project-mode) .cue li{font-size:.84rem!important}
+.project-mode .bh-preview-viewport{height:100dvh;width:100vw;overflow:hidden}
+.bh-screen-tools{display:none;position:fixed;right:16px;bottom:16px;z-index:80}
+.project-mode .bh-screen-tools{display:block}
+.bh-screen-tools[hidden]{display:none!important}
+:root:fullscreen .bh-screen-tools{display:none!important}
+.bh-screen-status{position:fixed;bottom:16px;left:16px;right:16px;z-index:100;background:#171c1e;color:#f5f0e7;border:1px solid #c9a46a;border-radius:8px;padding:14px 18px;font:1rem/1.5 system-ui,sans-serif}
+.bh-screen-status:empty{display:none}
+body:not(.project-mode) .appbar{height:auto;min-height:64px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+@media(max-width:1100px){
+  body.ros-open:not(.project-mode) .cockpit{grid-template-columns:160px minmax(0,2fr) minmax(0,3fr)!important}
+}
+@media(max-width:760px){
+  body:not(.project-mode) .cockpit,body.ros-open:not(.project-mode) .cockpit{grid-template-columns:minmax(0,1fr)!important}
+  body:not(.project-mode) .theater-wrap,body:not(.project-mode) .intel,body:not(.project-mode) .timeline{position:static;max-height:none}
+  body:not(.project-mode) .theater-wrap{width:100%;max-width:420px;justify-self:center}
 }
 `;
 document.head.appendChild(css);
@@ -45,6 +62,105 @@ function installRunOfShowToggle(){
     btn.textContent=open?'Hide Run of Show':'Run of Show';
     btn.setAttribute('aria-pressed',String(open));
   });
+}
+
+/* Fullscreen is a browser operation, separate from hiding the cockpit.
+ * All renderers redraw on bh-presentation-change so preflight stays private.
+ * The projector needs a user click: browsers refuse fullscreen on page load. */
+function installPresentation(){
+  const present=document.getElementById('presentHere');
+  const bar=document.querySelector('.appbar');
+  if(!present||!bar)return;
+  const projector=new URLSearchParams(location.search).get('mode')==='project';
+  const full=document.createElement('button');
+  full.id='fullScreenToggle';full.className='btn';full.type='button';
+  full.title='Fill the screen while keeping your teacher notes visible';
+  bar.insertBefore(full,present);
+  const tools=document.createElement('div');tools.className='bh-screen-tools';
+  const enter=document.createElement('button');
+  enter.id='projectionFullScreen';enter.className='btn';enter.type='button';
+  enter.textContent='Enter full screen';tools.appendChild(enter);document.body.appendChild(tools);
+  const status=document.createElement('div');status.className='bh-screen-status';
+  status.setAttribute('role','status');status.setAttribute('aria-live','polite');document.body.appendChild(status);
+  let busy=false,returnTo=null;
+  const active=()=>!!(document.fullscreenElement||document.webkitFullscreenElement);
+  const redraw=()=>document.dispatchEvent(new Event('bh-presentation-change'));
+  function mode(on){
+    const before=document.body.classList.contains('project-mode');
+    document.body.classList.toggle('project-mode',projector||on);
+    if(before!==document.body.classList.contains('project-mode'))redraw();
+  }
+  function sync(){
+    full.textContent=active()?'Exit full screen':'Full screen';
+    full.setAttribute('aria-pressed',String(active()));
+    tools.hidden=active();
+  }
+  function failure(){
+    mode(false);
+    status.textContent='Full screen was blocked by this browser. Open this Teaching OS page in its own browser tab and try again, or press F11 (Fn + F11 on some laptops).';
+    if(returnTo&&!projector)returnTo.focus();
+    sync();
+  }
+  async function exit(){
+    if(busy)return;
+    mode(false);status.textContent='';
+    if(active()){
+      busy=true;
+      try{await (document.exitFullscreen?document.exitFullscreen():document.webkitExitFullscreen());}
+      catch(e){status.textContent='Use Esc or your browser’s fullscreen control to leave full screen.';}
+      finally{busy=false;sync();}
+    }
+    if(returnTo&&!projector)returnTo.focus();
+  }
+  async function start(slidesOnly){
+    if(busy)return;
+    status.textContent='';returnTo=document.activeElement;
+    const root=document.documentElement;
+    const request=root.requestFullscreen||root.webkitRequestFullscreen;
+    if(!request){failure();return;}
+    busy=true;
+    mode(slidesOnly);
+    try{await request.call(root);sync();}
+    catch(e){failure();}
+    finally{busy=false;}
+  }
+  full.addEventListener('click',()=>active()?exit():start(false));
+  enter.addEventListener('click',()=>start(true));
+  // Capture keeps presentation shortcuts separate from slide navigation.
+  present.addEventListener('click',e=>{
+    e.preventDefault();e.stopImmediatePropagation();
+    document.body.classList.contains('project-mode')&&!projector?exit():start(true);
+  },true);
+  window.addEventListener('keydown',e=>{
+    const typing=/^(INPUT|TEXTAREA|SELECT)$/.test(e.target&&e.target.tagName)||e.target&&e.target.isContentEditable;
+    if(typing||e.ctrlKey||e.metaKey||e.altKey||document.querySelector('#drawer.open,#bhbDrawer.open'))return;
+    if(e.key==='f'||e.key==='F'){
+      e.preventDefault();e.stopImmediatePropagation();
+      active()||document.body.classList.contains('project-mode')&&!projector?exit():start(true);
+    }else if(e.key==='Escape'&&(active()||document.body.classList.contains('project-mode')&&!projector)){
+      e.preventDefault();e.stopImmediatePropagation();exit();
+    }
+  },true);
+  const changed=()=>{if(!active())mode(false);sync();};
+  document.addEventListener('fullscreenchange',changed);
+  document.addEventListener('webkitfullscreenchange',changed);
+  document.addEventListener('fullscreenerror',failure);
+  sync();
+}
+
+function installPreview(){
+  const stage=document.getElementById('stage');
+  if(!stage)return;
+  const viewport=document.createElement('div');viewport.className='bh-preview-viewport';
+  stage.before(viewport);viewport.appendChild(stage);
+  const resize=()=>{
+    viewport.style.setProperty('--bh-preview-scale',String(viewport.clientWidth/1280));
+    const intel=document.querySelector('.intel');
+    if(intel)intel.style.setProperty('--bh-intel-top',Math.max(80,intel.getBoundingClientRect().top)+'px');
+  };
+  new ResizeObserver(resize).observe(viewport);
+  window.addEventListener('resize',resize);
+  window.addEventListener('scroll',resize,{passive:true});resize();
 }
 
 /* Briefing.
@@ -287,7 +403,7 @@ function installBriefing(){
   if(location.hash===BRIEF_HASH)open();
 }
 
-function installAll(){installRunOfShowToggle();installBriefing();}
+function installAll(){installRunOfShowToggle();installBriefing();installPreview();installPresentation();}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',installAll);
 else installAll();
 })();

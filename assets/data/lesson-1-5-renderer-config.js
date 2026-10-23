@@ -3,16 +3,16 @@
   if (!lesson) return;
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Mansa_Musa.jpg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Mosque_of_Djenn%C3%A9_2.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great_Zimbabwe.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Nile_composite_NASA.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Ocean-CIA_WFB_Map.png',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Soapstone_birds_on_pedestals.jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/A_Library_in_Golden_Islamic_Age.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Silk_route.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Mali_Empire.png'
+    map:             '../assets/images/commons/mansa-musa-9eb6fa.jpg',
+    first10:         '../assets/images/commons/great-mosque-of-djenne-2-679fb3.jpg',
+    contentDelivery: '../assets/images/commons/great-zimbabwe-3b6185.jpg',
+    beSurreal:       '../assets/images/commons/nile-composite-nasa-4ec8f6.jpg',
+    skill:           '../assets/images/commons/indian-ocean-cia-wfb-map-1f1fa9.png',
+    checkpoint1:     '../assets/images/commons/tabularogeriana-637cf9.jpg',
+    evidence:        '../assets/images/commons/soapstone-birds-on-pedestals-8394c1.jpg',
+    source:          '../assets/images/commons/a-library-in-golden-islamic-age-18e804.jpg',
+    beInTheRoom:     '../assets/images/commons/silk-route-6f0173.jpg',
+    checkpoint2:     '../assets/images/commons/map-of-the-mali-empire-240b84.png'
   };
   lesson.collegeBoardKeyConcepts = [
     {
@@ -34,14 +34,14 @@
       title: 'Great Zimbabwe, Zimbabwe | Africa’s Cultural Landmarks',
       url: 'https://youtu.be/G-6uKth3JQ0',
       youtubeId: 'G-6uKth3JQ0',
-      previewImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great-Zimbabwe-2.jpg',
+      previewImage: '../assets/images/commons/great-zimbabwe-2-3d7252.jpg',
       prompt: 'Watch for how Great Zimbabwe’s stone architecture, control of resources, and trade connections reveal organized state power.'
     },
     {
       title: 'Inside Lalibela, the Mysterious Holy Site Visited by Ethiopian Christians',
       url: 'https://youtu.be/excYNB26fhs',
       youtubeId: 'excYNB26fhs',
-      previewImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bete_Giyorgis_Lalibela.jpg',
+      previewImage: '../assets/images/commons/bete-giyorgis-lalibela-56c03d.jpg',
       prompt: 'Watch for how Lalibela’s rock-hewn churches connect Christianity, monumental construction, and political legitimacy in medieval Ethiopia.'
     }
   ];
@@ -59,21 +59,21 @@
   lesson.images = [
     {
       title: 'Great Enclosure at Great Zimbabwe',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Great-Zimbabwe-2.jpg',
+      url: '../assets/images/commons/great-zimbabwe-2-3d7252.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Great-Zimbabwe-2.jpg',
       caption: 'Great Zimbabwe evidence. The Great Enclosure was constructed from carefully fitted stone without mortar at a major political and commercial center in southern Africa.',
       prompt: 'NOTICE one feature of scale or construction. What can you INFER about organized labor and political authority? What additional evidence would you need to connect the walls specifically to gold and Indian Ocean trade?'
     },
     {
       title: 'Zimbabwe Birds',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Soapstone_birds_on_pedestals.jpg',
+      url: '../assets/images/commons/soapstone-birds-on-pedestals-8394c1.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Soapstone_birds_on_pedestals.jpg',
       caption: 'Material-culture evidence. This 1892 photograph documents soapstone bird sculptures from Great Zimbabwe, objects associated with the site\'s elite and ritual spaces.',
       prompt: 'NOTICE what kind of objects these are and where they were found. What can you cautiously INFER about elite identity or sacred authority? What can these artifacts not prove about the state\'s economy by themselves?'
     },
     {
       title: 'Bete Giyorgis, Lalibela, Ethiopia',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bete_Giyorgis_Lalibela.jpg',
+      url: '../assets/images/commons/bete-giyorgis-lalibela-56c03d.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bete_Giyorgis_Lalibela.jpg',
       caption: 'Ethiopian evidence. Bete Giyorgis is one of the rock-hewn churches at Lalibela, carved into living stone around the beginning of the period studied in Topic 1.5.',
       prompt: 'NOTICE one feature of the church\'s construction. What can you INFER about skilled labor, resources, and Christian state identity? How could this support a claim about religious legitimacy?'

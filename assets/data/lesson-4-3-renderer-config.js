@@ -68,14 +68,14 @@
 
   lesson.stableImages = {
     map:             '../assets/images/instructional-maps/topic-4-3.svg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Guam%C3%A1n%20Poma%201615%201150%20julio.png?width=1200',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Frumentum%20turcicum%20Gerard%201597%2075.png?width=1200',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Healer%20%28ticitl%29%20tending%20to%20people%20suffering%20from%20smallpox%20in%201520%20in%20Book%2012%20of%20the%20Florentine%20Codex%2C%201577.jpg?width=1200',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Acosta2.jpg?width=1200',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Healer%20%28ticitl%29%20tending%20to%20people%20suffering%20from%20smallpox%20in%201520%20in%20Book%2012%20of%20the%20Florentine%20Codex%2C%201577.jpg?width=1200',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Frans%20Post%20-%20Engenho%20de%20A%C3%A7%C3%BAcar%20%28Dublin%29.jpg?width=1200',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Healer%20%28ticitl%29%20tending%20to%20people%20suffering%20from%20smallpox%20in%201520%20in%20Book%2012%20of%20the%20Florentine%20Codex%2C%201577.jpg?width=1200',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Healer%20%28ticitl%29%20tending%20to%20people%20suffering%20from%20smallpox%20in%201520%20in%20Book%2012%20of%20the%20Florentine%20Codex%2C%201577.jpg?width=1200',
+    first10:         '../assets/images/commons/guaman-poma-1615-1150-julio-c085d5.png',
+    contentDelivery: '../assets/images/commons/frumentum-turcicum-gerard-1597-75-42395d.png',
+    beSurreal:       '../assets/images/commons/healer-ticitl-tending-to-people-suffering-from-smallpox-in-1520-in-boo-fccef7.jpg',
+    skill:           '../assets/images/commons/acosta2-a6b6ea.jpg',
+    checkpoint1:     '../assets/images/commons/healer-ticitl-tending-to-people-suffering-from-smallpox-in-1520-in-boo-fccef7.jpg',
+    evidence:        '../assets/images/commons/frans-post-engenho-de-acucar-dublin-8b593c.jpg',
+    source:          '../assets/images/commons/healer-ticitl-tending-to-people-suffering-from-smallpox-in-1520-in-boo-fccef7.jpg',
+    beInTheRoom:     '../assets/images/commons/healer-ticitl-tending-to-people-suffering-from-smallpox-in-1520-in-boo-fccef7.jpg',
     checkpoint2:     '../assets/images/instructional-maps/topic-4-3.svg'
   };
 
@@ -143,35 +143,35 @@
   lesson.images = [
     {
       title: 'A Nahua Healer and Smallpox Patients, Florentine Codex',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Healer%20%28ticitl%29%20tending%20to%20people%20suffering%20from%20smallpox%20in%201520%20in%20Book%2012%20of%20the%20Florentine%20Codex%2C%201577.jpg?width=1200',
+      url: '../assets/images/commons/healer-ticitl-tending-to-people-suffering-from-smallpox-in-1520-in-boo-fccef7.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Healer_(ticitl)_tending_to_people_suffering_from_smallpox_in_1520_in_Book_12_of_the_Florentine_Codex%2C_1577.jpg',
       caption: 'Painted by Nahua artists for Book 12 of the Florentine Codex, completed about 1577, more than fifty years after the 1520 smallpox epidemic in Tenochtitlan. A Spanish friar, Bernardino de Sahagún, directed the project; Nahua elders supplied the account.',
       prompt: 'NOTICE what covers the skin of the people on the right, and what the healer on the left is doing. INFER what this picture suggests about how the disease affected a whole household or city. What can a picture made fifty years later not tell you?'
     },
     {
       title: 'A Sugar Plantation in Dutch Brazil, Frans Post, 1660s',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Frans%20Post%20-%20Engenho%20de%20A%C3%A7%C3%BAcar%20%28Dublin%29.jpg?width=1200',
+      url: '../assets/images/commons/frans-post-engenho-de-acucar-dublin-8b593c.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Frans_Post_-_Engenho_de_A%C3%A7%C3%BAcar_(Dublin).jpg',
       caption: 'Brazilian Landscape, an oil painting by Frans Post, a Dutch artist who went to Dutch-ruled northeastern Brazil in 1637 and stayed several years. He painted this one in the Netherlands in the 1660s, about twenty years after he left Brazil, for buyers in Europe. National Gallery of Ireland.',
       prompt: 'NOTICE the building on the right, where workers feed the furnaces that boil cane juice into sugar, the ox cart, and the people working beside them, then NOTICE the house on the hill. INFER who did the work on this plantation and who owned it. What might a painting made to sell in Europe leave out?'
     },
     {
       title: 'The July Harvest in the Andes, Guamán Poma, 1615',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Guam%C3%A1n%20Poma%201615%201150%20julio.png?width=1200',
+      url: '../assets/images/commons/guaman-poma-1615-1150-julio-c085d5.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Guam%C3%A1n_Poma_1615_1150_julio.png',
       caption: 'Drawing by Felipe Guamán Poma de Ayala, an Andean nobleman, from the illustrated chronicle he addressed to the King of Spain about 1615. The Quechua heading names July as the month for carrying the harvested maize (written ZARA, today sara) and potatoes (PAPA) to storage.',
       prompt: 'NOTICE what the people are carrying and where they are taking it. INFER how important these two crops were to the people who drew and lived this scene. Both of these crops also traveled to Afro-Eurasia. Choose one: why might it have been welcome there?'
     },
     {
       title: '"Turkie Corne" in an English Herbal, 1597',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Frumentum%20turcicum%20Gerard%201597%2075.png?width=1200',
+      url: '../assets/images/commons/frumentum-turcicum-gerard-1597-75-42395d.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Frumentum_turcicum_Gerard_1597_75.png',
       caption: 'A page of John Gerard\'s The Herball or Generall Historie of Plantes, printed in London in 1597. It pictures maize, a plant first grown in the Americas, under the names "Corne of Asia," "Turkie Corne" and "Turkie Wheate."',
       prompt: 'NOTICE the different names printed on this page for the same plant. INFER what the mixed names suggest about how English readers understood a new plant and where it came from. What does a book about plants show, and what can it not show about who was eating maize?'
     },
     {
       title: 'Sweet Potatoes in a Qing Album of Taiwan, 1740s',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/%E7%95%AA%E8%96%AF%E3%80%81%E9%A6%99%E5%93%A1%E3%80%81%E7%95%AA%E6%9F%BF%E3%80%81%E8%91%AB%E8%98%86%E3%80%81%E7%81%A3%E8%B1%86.jpg?width=1200',
+      url: '../assets/images/commons/image-dcf1c4.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:%E7%95%AA%E8%96%AF%E3%80%81%E9%A6%99%E5%93%A1%E3%80%81%E7%95%AA%E6%9F%BF%E3%80%81%E8%91%AB%E8%98%86%E3%80%81%E7%81%A3%E8%B1%86.jpg',
       caption: 'From an album of Taiwan\'s plants and customs painted for 六十七 (Liushiqi), a Qing official sent to inspect Taiwan in the 1740s. The note beside the red tubers labeled 番薯 (fanshu, "foreign tuber") says, in a translation made for this lesson: "Its seed came from the country of Wenlai [Brunei]. It is planted very widely in Taiwan; settlers and Indigenous people rely on it for food. It is truly a help in years of bad harvest."',
       prompt: 'NOTICE what the label calls this plant and what the note says people use it for. INFER what the name "foreign tuber" suggests. The note says the seed came from Brunei. The plant first grew in the Americas. What does the note know about where the plant came from, and what does it not know? How could it still support a claim about nutrition in Asia?'

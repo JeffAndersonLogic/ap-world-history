@@ -284,11 +284,21 @@ Standing rule:
 
 > **Do not let an available image determine the lesson. Determine the lesson first, then find or create the visual the story deserves.**
 
+### Cinematic question and landing slides
+
+**Standing rule since 2026-10-14 (Jeff): every deck opens and closes on a cinematic picture.** The question slide (the first slide after BeReady, slide 3 in most decks) and the landing slide (the last) each carry a photorealistic cinematic historical reconstruction, or a real historical scene, under their words. Never words alone and never a map: the map belongs on a slide of its own. A multi-case topic may open on a triptych of pictures the deck already has, one per case.
+
+Draw them with `frame-subtitle`, as Topic 3.4 does. Compose each picture so its words do not cover its subject: the caption sits along the bottom, or in the sky with `place: 'top'` when the subject sits low (the Topic 4.1 caravel was hidden under its own caption until this option existed). Ask the generator for a calm band where the words will go, and keep the subject out of the bottom-right corner, which is trimmed off Gemini files to remove its mark.
+
+`scripts/test/teaching-os-architecture.test.js` enforces this. Slides that predate the rule are listed in its `OWED` set, a ratchet that only shrinks, and `docs/QUESTION-AND-LANDING-IMAGE-PROMPTS.md` has a prompt for each one.
+
 Projected slides should feel closer to museum exhibits than textbook pages: a clear argument, purposeful visual evidence, and only enough text to orient the room.
 
 Teacher Intelligence carries the depth.
 
 The slide templates in `teacher/slide-templates.html` are the visual vocabulary for this step. Match the template to the shape of the idea: parts that add up are an equation, a two-way trade is an exchange, one-against-many is a split, gains that build are compounding, and only a true sequence is a timeline. Round two added more shapes: a cause that sets off the next is a cause chain, one thing changing as it travels is a diffusion path, places whose fortunes differ are rise and fall, two things with overlap are a Venn, a turning point with things that carried on is continuity and change, a journey is a route on a map, and a source to question is HIPP. Four numbered boxes were the default for all of these in Unit 2, and most of them were not sequences. The implementation contract is "Slide templates" in `docs/TEACHING-OS.md`.
+
+**No box slides (Jeff, 2026-10-21).** The `grid` kind, a 2x2 grid of small cards, is retired: it was the default for ideas that had a shape of their own, and it is hard to read from the back of the room. Topic 3.4 lost its three on 2026-10-14 (ledger, verdict, balance) and Topic 3.3 its four on 2026-10-21 (split mirror, hub, ledger, matrix). `scripts/test/teaching-os-architecture.test.js` fails any new `grid` slide; `GRID_OWED` lists the older ones, which come off as each deck is revised.
 
 ## 12. Build the canonical teacher presentation
 

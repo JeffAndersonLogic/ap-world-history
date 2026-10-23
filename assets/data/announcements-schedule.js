@@ -790,27 +790,22 @@ window.BEHISTORICAL_SCHEDULE = {
     // Green Tuesday 2026-10-20, Silver Wednesday 2026-10-21 (dates from Jeff,
     // 2026-10-04). Required modules set by Jeff 2026-10-06: 02 (the First &
     // 10, read in class), 06, 07 and 10, so the 3.1 days carry no reading
-    // block for 3.2. The Skill Builder (05) and BeInTheRoom (09) exist and are
-    // optional. No homework line yet, on purpose: a due date derives from each
-    // cohort's next meeting, and Topic 3.3 has no dates. With a homework line
-    // and no due date the board shows homework while the Canvas event prints
-    // "nothing assigned", which schedule-cohorts.test.js rightly fails. When
-    // Jeff gives 3.3's dates, add to both days: homework: 'Finish Checkpoint
-    // 2, and any other required 3.2 module you did not complete in class.'
-    // Never type a homeworkDue in its place. The Checkpoint 2 card already
-    // tells students to finish it at home.
+    // block for 3.2. BeInTheRoom (09) added to the required set by Jeff on
+    // 2026-10-19; the Skill Builder (05) stays optional. The homework due date
+    // derives from each cohort's 3.3 day below; never type a homeworkDue in
+    // its place.
     {
       date: '2026-10-20',
       cohort: 'green',
       topic: '3.2',
-      modules: ['02', '06', '07', '10'],
+      modules: ['02', '06', '07', '09', '10'],
       homework: 'Finish Checkpoint 2, and any other required 3.2 module you did not complete in class.'
     },
     {
       date: '2026-10-21',
       cohort: 'silver',
       topic: '3.2',
-      modules: ['02', '06', '07', '10'],
+      modules: ['02', '06', '07', '09', '10'],
       homework: 'Finish Checkpoint 2, and any other required 3.2 module you did not complete in class.'
     },
 
@@ -818,20 +813,21 @@ window.BEHISTORICAL_SCHEDULE = {
     // Green Thursday 2026-10-22, Silver Friday 2026-10-23, confirmed from
     // Jeff's 2026-27 Green/Silver calendar on 2026-10-06.
     // Required modules approved with the Topic 3.3 story: 02 First & 10,
-    // 06 Checkpoint 1, 07 Evidence Lab and 10 Checkpoint 2. Skill Builder
-    // and BeInTheRoom remain optional.
+    // 06 Checkpoint 1, 07 Evidence Lab and 10 Checkpoint 2. BeInTheRoom (09)
+    // added to the required set by Jeff on 2026-10-19; the Skill Builder
+    // remains optional.
     {
       date: '2026-10-22',
       cohort: 'green',
       topic: '3.3',
-      modules: ['02', '06', '07', '10'],
+      modules: ['02', '06', '07', '09', '10'],
       homework: 'Finish Checkpoint 2, and any other required 3.3 module you did not complete in class.'
     },
     {
       date: '2026-10-23',
       cohort: 'silver',
       topic: '3.3',
-      modules: ['02', '06', '07', '10'],
+      modules: ['02', '06', '07', '09', '10'],
       homework: 'Finish Checkpoint 2, and any other required 3.3 module you did not complete in class.'
     },
 
@@ -839,13 +835,13 @@ window.BEHISTORICAL_SCHEDULE = {
     // Green Monday 2026-10-26 and Silver Tuesday 2026-10-27, confirmed from
     // Jeff's 2026-27 Green/Silver calendar image on 2026-10-06.
     // Required subset approved with the 3.4 story: 02 First & 10, 05 Skill
-    // Builder, 07 Evidence Lab and 10 Checkpoint 2. Checkpoint 1 and
-    // BeInTheRoom remain optional.
+    // Builder, 07 Evidence Lab and 10 Checkpoint 2. BeInTheRoom (09) added to
+    // the required set by Jeff on 2026-10-19; Checkpoint 1 remains optional.
     {
       date: '2026-10-26',
       cohort: 'green',
       topic: '3.4',
-      modules: ['02', '05', '07', '10'],
+      modules: ['02', '05', '07', '09', '10'],
       homework: 'Finish Checkpoint 2, and any other required 3.4 module you did not complete in class. Then review Topics 3.1 to 3.4 for the Unit 3 Quiz.',
       // The Unit 3 Quiz is each cohort's next meeting (Jeff, 2026-10-06).
       // It is an assessment, not a topic day, so the due date is stated here.
@@ -855,7 +851,7 @@ window.BEHISTORICAL_SCHEDULE = {
       date: '2026-10-27',
       cohort: 'silver',
       topic: '3.4',
-      modules: ['02', '05', '07', '10'],
+      modules: ['02', '05', '07', '09', '10'],
       homework: 'Finish Checkpoint 2, and any other required 3.4 module you did not complete in class. Then review Topics 3.1 to 3.4 for the Unit 3 Quiz.',
       // The Unit 3 Quiz is each cohort's next meeting (Jeff, 2026-10-06).
       // It is an assessment, not a topic day, so the due date is stated here.

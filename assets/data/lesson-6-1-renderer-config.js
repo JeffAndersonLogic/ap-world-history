@@ -15,14 +15,14 @@
   lesson.images = [
     {
       "title": "The Rhodes Colossus",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png",
+      "url": "../assets/images/commons/punch-rhodes-colossus-8330fa.png",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Punch_Rhodes_Colossus.png",
       "caption": "Cartoon published in the British magazine Punch, 1892, showing Cecil Rhodes astride Africa. Commentary made for a British readership.",
       "prompt": "NOTICE what the cartoonist exaggerates and what sits outside the frame. INFER what British readers were expected to find plausible. Is a cartoon evidence of what people believed, or of what a magazine thought would sell?"
     },
     {
       "title": "The Berlin Conference, 1884 to 1885",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kongokonferenz.jpg",
+      "url": "../assets/images/commons/kongokonferenz-e96b3e.jpg",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kongokonferenz.jpg",
       "caption": "Contemporary depiction of the conference at which European powers set rules for claims in Africa. No African state was represented.",
       "prompt": "NOTICE who is in the room. INFER, from who is absent, what the conference assumed about the territory being divided. What does a picture of a meeting not tell you about what happened on the ground afterward?"

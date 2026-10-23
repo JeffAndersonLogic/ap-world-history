@@ -59,16 +59,16 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Crowd_outside_nyse.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Lange-MigrantMother02.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Crowd_outside_nyse.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Signing_Of_The_Social_Security_Act.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Lange-MigrantMother02.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Crowd_outside_nyse.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Signing_Of_The_Social_Security_Act.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Emiliano_Zapata,_1914.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/JStalin_Secretary_general_CCCP_1942.jpg'
+    map: '../assets/images/commons/world-1936-empires-colonies-territory-6d7758.png',
+    first10: '../assets/images/commons/crowd-outside-nyse-dd023c.jpg',
+    contentDelivery: '../assets/images/commons/lange-migrantmother02-99276b.jpg',
+    beSurreal: '../assets/images/commons/crowd-outside-nyse-dd023c.jpg',
+    skill: '../assets/images/commons/signing-of-the-social-security-act-7d6214.jpg',
+    checkpoint1: '../assets/images/commons/lange-migrantmother02-99276b.jpg',
+    evidence: '../assets/images/commons/crowd-outside-nyse-dd023c.jpg',
+    source: '../assets/images/commons/signing-of-the-social-security-act-7d6214.jpg',
+    beInTheRoom: '../assets/images/commons/emiliano-zapata-1914-1e927e.jpg',
+    checkpoint2: '../assets/images/commons/jstalin-secretary-general-cccp-1942-4a754d.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -130,21 +130,21 @@
   lesson.images = [
     {
       title: 'Crowd outside the New York Stock Exchange, October 1929',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Crowd_outside_nyse.jpg',
+      url: '../assets/images/commons/crowd-outside-nyse-dd023c.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Crowd_outside_nyse.jpg',
       caption: 'Photograph taken on Wall Street during the October 1929 crash.',
       prompt: 'NOTICE who has gathered and what they appear to be doing. INFER what the crowd suggests about confidence in financial institutions. Why is a crash photograph weak evidence for the causes of a decade-long depression?'
     },
     {
       title: 'Migrant Mother, 1936',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Lange-MigrantMother02.jpg',
+      url: '../assets/images/commons/lange-migrantmother02-99276b.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Lange-MigrantMother02.jpg',
       caption: 'Dorothea Lange, 1936, photographed for the US Farm Security Administration, a federal agency documenting rural poverty to build support for relief programs.',
       prompt: 'NOTICE the composition and where the photographer stood. INFER what a government agency wanted this image to accomplish. How does knowing the commissioner change what the photograph is good evidence for?'
     },
     {
       title: 'Signing of the Social Security Act, 1935',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Signing_Of_The_Social_Security_Act.jpg',
+      url: '../assets/images/commons/signing-of-the-social-security-act-7d6214.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Signing_Of_The_Social_Security_Act.jpg',
       caption: 'Photograph of President Roosevelt signing the Social Security Act, 14 August 1935, surrounded by legislators.',
       prompt: 'NOTICE who is arranged around the desk and how the moment is staged. INFER what the ceremony was meant to communicate about the state\'s new role. What does the signing of a law not tell you about whom it actually reached?'

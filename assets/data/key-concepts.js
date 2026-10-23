@@ -522,6 +522,14 @@ window.BEHISTORICAL_KEY_CONCEPTS = {
   ],
   "5.1": [
     {
+      "code": "Unit 5: Learning Objective A",
+      "text": "Explain the intellectual and ideological context in which revolutions swept the Atlantic world from 1750 to 1900."
+    },
+    {
+      "code": "Unit 5: Learning Objective B",
+      "text": "Explain how the Enlightenment affected societies over time."
+    },
+    {
       "code": "KC-5.3.I.A",
       "text": "Enlightenment philosophies applied new ways of understanding and empiricist approaches to both the natural world and human relationships; they also reexamined the role that religion played in public life and emphasized the importance of reason. Philosophers developed new political ideas about the individual, natural rights, and the social contract."
     },
@@ -543,6 +551,10 @@ window.BEHISTORICAL_KEY_CONCEPTS = {
     }
   ],
   "5.2": [
+    {
+      "code": "Unit 5: Learning Objective C",
+      "text": "Explain causes and effects of the various revolutions in the period from 1750 to 1900."
+    },
     {
       "code": "KC-5.3.II.ii",
       "text": "People around the world developed a new sense of commonality based on language, religion, social customs, and territory. This was sometimes harnessed by governments to foster a sense of unity."
@@ -570,6 +582,10 @@ window.BEHISTORICAL_KEY_CONCEPTS = {
   ],
   "5.3": [
     {
+      "code": "Unit 5: Learning Objective D",
+      "text": "Explain how environmental factors contributed to industrialization from 1750 to 1900."
+    },
+    {
       "code": "KC-5.1.I.A",
       "text": "A variety of factors contributed to the growth of industrial production and eventually resulted in the Industrial Revolution, including: ▪ Proximity to waterways; access to rivers and canals ▪ Geographical distribution of coal, iron, and timber ▪ Urbanization ▪ Improved agricultural productivity ▪ Legal protection of private property ▪ Access to foreign resources ▪ Accumulation of capital"
     },
@@ -580,6 +596,10 @@ window.BEHISTORICAL_KEY_CONCEPTS = {
   ],
   "5.4": [
     {
+      "code": "Unit 5: Learning Objective E",
+      "text": "Explain how different modes and locations of production have developed and changed over time."
+    },
+    {
       "code": "KC-5.1.II.B",
       "text": "The rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions’ share of global manufacturing during the first Industrial Revolution. While Middle Eastern and Asian countries continued to produce manufactured goods, these regions’ share in global manufacturing declined."
     },
@@ -589,6 +609,10 @@ window.BEHISTORICAL_KEY_CONCEPTS = {
     }
   ],
   "5.5": [
+    {
+      "code": "Unit 5: Learning Objective F",
+      "text": "Explain how technology shaped economic production over time."
+    },
     {
       "code": "KC-5.1.I.B",
       "text": "The development of machines, including steam engines and the internal combustion engine, made it possible to take advantage of both existing and vast newly discovered resources of energy stored in fossil fuels, specifically coal and oil. The fossil fuels revolution greatly increased the energy available to human societies."
@@ -604,27 +628,23 @@ window.BEHISTORICAL_KEY_CONCEPTS = {
   ],
   "5.6": [
     {
+      "code": "Unit 5: Learning Objective G",
+      "text": "Explain the causes and effects of economic strategies of different states and empires."
+    },
+    {
       "code": "KC-5.1.V.C",
       "text": "As the influence of the Industrial Revolution grew, a small number of states and governments promoted their own state-sponsored visions of industrialization."
     },
     {
       "code": "KC-5.2.II.A",
       "text": "The expansion of U.S. and European influence in Asia led to internal reform in Japan that supported industrialization and led to the growing regional power of Japan in the Meiji Era."
-    },
-    {
-      "code": "KC-5.1.VI.A",
-      "text": "New social classes, including the middle class and the industrial working class, developed."
-    },
-    {
-      "code": "KC-5.1.VI.B",
-      "text": "While women and often children in working class families typically held wage-earning jobs to supplement their families’ income, middle-class women who did not have the same economic demands to satisfy were increasingly limited to roles in the household or roles focused on child development."
-    },
-    {
-      "code": "KC-5.1.VI.C",
-      "text": "The rapid urbanization that accompanied global capitalism at times led to a variety of challenges, including pollution, poverty, increased crime, public health crises, housing shortages, and insufficient infrastructure to accommodate urban growth."
     }
   ],
   "5.7": [
+    {
+      "code": "Unit 5: Learning Objective H",
+      "text": "Explain the development of economic systems, ideologies, and institutions and how they contributed to change in the period from 1750 to 1900."
+    },
     {
       "code": "KC-5.1.III.A",
       "text": "Western European countries began abandoning mercantilism and adopting free trade policies, partly in response to the growing acceptance of Adam Smith’s theories of laissez-faire capitalism and free markets."
@@ -639,6 +659,10 @@ window.BEHISTORICAL_KEY_CONCEPTS = {
     }
   ],
   "5.8": [
+    {
+      "code": "Unit 5: Learning Objective I",
+      "text": "Explain the causes and effects of calls for changes in industrial societies from 1750 to 1900."
+    },
     {
       "code": "KC-5.1.V.D",
       "text": "In response to the social and economic changes brought about by industrial capitalism, some governments, organizations, and individuals promoted various types of political, social, educational, and urban reforms."
@@ -658,6 +682,10 @@ window.BEHISTORICAL_KEY_CONCEPTS = {
   ],
   "5.9": [
     {
+      "code": "Unit 5: Learning Objective J",
+      "text": "Explain how industrialization caused change in existing social hierarchies and standards of living."
+    },
+    {
       "code": "KC-5.1.VI.A",
       "text": "New social classes, including the middle class and the industrial working class, developed."
     },
@@ -671,6 +699,10 @@ window.BEHISTORICAL_KEY_CONCEPTS = {
     }
   ],
   "5.10": [
+    {
+      "code": "Unit 5: Learning Objective K",
+      "text": "Explain the extent to which industrialization brought change from 1750 to 1900."
+    },
     {
       "code": "KC-5.1",
       "text": "The development of industrial capitalism led to increased standards of living for some, and to continued improvement in manufacturing methods that increased the availability, affordability, and variety of consumer goods."

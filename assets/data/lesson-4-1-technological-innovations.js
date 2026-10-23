@@ -95,7 +95,14 @@ window.BEHISTORICAL_LESSON = {
   lecture: {
     title: "The Tools of the Age of Exploration",
     intro: "Use these cards to see how tools borrowed from older worlds, new ships, and knowledge of winds and currents let ships cross oceans and come back.",
-    videos: [],
+    videos: [
+      {
+        title: "TECHNOLOGY in Sea-Based Empires [AP World History Review—Unit 4 Topic 1]",
+        url: "https://youtu.be/TPaLulRrKuM",
+        youtubeId: "TPaLulRrKuM",
+        prompt: "Use this clip to review the tools that made ocean voyages possible. As you watch, write down where each tool came from and what it let sailors do that they could not do before."
+      }
+    ],
     segments: [
       {
         title: "Finding Your Way: Compass, Astrolabe, and Latitude Navigation",
@@ -108,8 +115,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Persian Astrolabe, 18th Century",
           caption: "An 18th-century Persian astrolabe, an astronomer's instrument from the Islamic tradition that the mariner's astrolabe grew out of. Instruments like this were not used at sea: Portuguese pilots carried a simpler, heavier version that could hang steady on a rolling deck.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg"
+          url: "../assets/images/commons/astrolabe-persian-18c-8ebe5d.jpg",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Astrolabe-Persian-18C.jpg"
         }
       },
       {
@@ -123,7 +130,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Portuguese Caravel, Livro das Armadas, c. 1566",
           caption: "A Portuguese caravel painted in the Livro das Armadas, a 16th-century record of the fleets sent to India. It is a later picture of the ship type, not a drawing made in the 1440s. It shows a later, larger caravel with a square sail on the foremast and lateen sails behind it; the early exploring caravels carried lateen sails only.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Caravela_de_armada_of_Joao_Serrao.jpg",
+          url: "../assets/images/commons/caravela-de-armada-of-joao-serrao-f5f35c.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Caravela_de_armada_of_Joao_Serrao.jpg"
         }
       },

@@ -201,8 +201,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Communication and Transportation',
           caption: 'Evidence anchor 1 for Topic 9.9.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Apollo_11_Launch2.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Apollo_11_Launch2.jpg'
+          url: '../assets/images/commons/apollo-11-launch2-e8deb8.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:Apollo_11_Launch2.jpg'
         }
       },
       {
@@ -336,8 +336,8 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: 'Communication and Transportation',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Apollo_11_Launch2.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Apollo_11_Launch2.jpg',
+      url: '../assets/images/commons/apollo-11-launch2-e8deb8.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Apollo_11_Launch2.jpg',
       caption: 'Radio, cellular communication, and the internet transformed the speed and scale of information exchange.',
       prompt: 'How does this evidence support or qualify a claim about continuity and change in a globalized world?'
     },

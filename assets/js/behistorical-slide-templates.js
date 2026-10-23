@@ -350,9 +350,12 @@ function fEvidence(s){
   const t=s.template||{},ev=t.evidence||{};
   return board('frame-evidence','paper',pad(head(s)+`<div class="bht-fe"><div class="c">${frame(t.scene,'bht-fe-img',{tagPos:'tl'})}<div class="k">${esc(t.sceneLabel||'Imagine it')}</div></div><div class="c">${frame(ev,'bht-fe-img ev',{fit:'contain',tagPos:'tl'})}<div class="k ev">${esc(t.evidenceLabel||'Reason from it')}</div></div></div>`,'tight'));
 }
+/* `place: 'top'` sets the line in the sky instead of along the bottom, for a
+   picture whose subject sits low in the frame (Topic 4.1's lone caravel was
+   covered by its own caption). The AI label then moves to the bottom corner. */
 function fSubtitle(s){
-  const t=s.template||{};
-  return board('frame-subtitle','dark',`${frame(t.visual,'bht-full')}<div class="bht-sub-veil"></div>${s.eyebrow?`<div class="bht-sub-top"></div><div class="bht-sub-eb">${eyebrow(s)}</div>`:''}<div class="bht-sub-line"><p>${rich(t.line||s.title)}</p>${s.subtitle?`<p class="s">${rich(s.subtitle)}</p>`:''}</div>`);
+  const t=s.template||{},top=t.place==='top';
+  return board('frame-subtitle','dark',`${frame(t.visual,'bht-full',top?{tagPos:'br'}:{})}<div class="bht-sub-veil${top?' up':''}"></div>${s.eyebrow?`<div class="bht-sub-top"></div><div class="bht-sub-eb">${eyebrow(s)}</div>`:''}<div class="bht-sub-line${top?' up':''}"><p>${rich(t.line||s.title)}</p>${s.subtitle?`<p class="s">${rich(s.subtitle)}</p>`:''}</div>`);
 }
 /* A strip of small pictures carries one label for the strip: a label per
    frame is cut off by frames this narrow. A strip that mixes AI images with
@@ -725,7 +728,8 @@ function splitScenes(s){
    increased influence, where the 2x2 grid of small cards was hard to read from
    the back of the room: one row per job reads left to right in large type, the
    way a student retells it. A row may carry `text` instead of tool and
-   result. The seal letter defaults to the name's first letter. */
+   result. The seal letter defaults to the name's first letter. `open: true`
+   replaces the panels and seals with open rows and larger projection text. */
 function ledger(s){
   const t=s.template||{},R=arr(t.rows).slice(0,5),n=Math.max(1,R.length);
   // The name column is 230u. Cinzel runs about .76em a letter, so the longest
@@ -733,14 +737,14 @@ function ledger(s){
   const longest=Math.max(1,...R.map(x=>String(x.name||'').length));
   const nameMax=n>=5?30:n===4?36:40;
   const nm=Math.max(20,Math.min(nameMax,Math.floor(214/(longest*.76))));
-  const tx=n>=5?25:n===4?29:32;
+  const tx=t.open?(n>=5?30:n===4?34:40):(n>=5?25:n===4?29:32);
   const body=x=>x.tool||x.result?`${x.tool?`<p class="tool">${rich(x.tool)}</p>`:''}${x.result?`<p class="res"><i aria-hidden="true">&rarr;</i> ${rich(x.result)}</p>`:''}`:`<p class="res">${rich(x.text)}</p>`;
   const rows=R.map(x=>{
     const mark=String(x.mark||String(x.name||'').trim().charAt(0)||'').slice(0,2);
-    return `<li class="bht-lg-row"><span class="seal" aria-hidden="true">${esc(mark)}</span><span class="nm" style="font-size:calc(${nm}*var(--u))">${esc(x.name)}</span><div class="tx" style="font-size:calc(${tx}*var(--u))">${body(x)}</div></li>`;
+    return `<li class="bht-lg-row">${t.open?'':`<span class="seal" aria-hidden="true">${esc(mark)}</span>`}<span class="nm" style="font-size:calc(${nm}*var(--u))">${esc(x.name)}</span><div class="tx" style="font-size:calc(${tx}*var(--u))">${body(x)}</div></li>`;
   }).join('');
   const pay=t.payoff?`<div class="bht-lg-pay"><div class="br" aria-hidden="true"></div><div class="pt">${t.payoffLabel?`<div class="bht-eb">${esc(t.payoffLabel)}</div>`:''}<p>${rich(t.payoff)}</p></div></div>`:'';
-  return board('ledger',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-lg${pay?' has-pay':''}"><ol>${rows}</ol>${pay}</div>`)+foot(s.footer),'tight'));
+  return board('ledger',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-lg${pay?' has-pay':''}${t.open?' open':''}"><ol>${rows}</ol>${pay}</div>`)+foot(s.footer),`tight${t.open?' ledger-open':''}`));
 }
 
 /* A good comparison beside a bad one, each stamped with its verdict: the
@@ -1175,6 +1179,8 @@ const CSS=`
 .bht-sub-top{position:absolute;left:0;right:0;top:0;height:150u;background:linear-gradient(180deg,rgba(5,6,6,.8),rgba(5,6,6,0))}
 .bht-sub-eb{position:absolute;left:76u;top:56u;text-shadow:0 2u 10u rgba(0,0,0,.9)}
 .bht-sub-line{position:absolute;left:140u;right:140u;bottom:64u;text-align:center}
+.bht-sub-veil.up{top:0;bottom:auto;height:330u;background:linear-gradient(0deg,rgba(5,6,6,0),rgba(5,6,6,.82) 55%)}
+.bht-sub-line.up{bottom:auto;top:104u}
 .bht-sub-line p{font-size:30u;line-height:1.45;color:#fffdf7;text-shadow:0 2u 14u rgba(0,0,0,.8)}
 .bht-sub-line p.s{margin-top:10u;font-size:21u;line-height:1.45;color:#e6d3b3}
 .bht-sbd-h{padding-left:20u;display:flex;flex-direction:column;gap:12u}
@@ -1203,8 +1209,8 @@ const CSS=`
 .bht-ph-copy{position:absolute;left:700u;top:0;bottom:0;width:500u;display:flex;flex-direction:column;justify-content:center;gap:20u}
 .bht-ph-copy .bht-h{max-width:13ch}
 .bht-ph-copy .bht-sub{font-size:22u;color:#f5f0e7}
-.bht-nb{position:absolute;inset:0;display:grid;grid-template-columns:700u minmax(0,1fr)}
-.bht-nb-img{height:100%}
+.bht-nb{position:absolute;inset:0;display:grid;grid-template-columns:700u minmax(0,1fr);grid-template-rows:minmax(0,1fr)}
+.bht-nb-img{height:100%;min-height:0}
 .bht-nb-copy{background:#f5f0e7;padding:64u 70u;display:flex;flex-direction:column;justify-content:center;gap:14u}
 .bht-nb-copy .big{font:900 220u/.9 'Cinzel',Georgia,serif;color:#6b3e1f;overflow-wrap:break-word}
 .bht-nb-copy .unit{font:800 34u/1.1 'Cinzel',Georgia,serif;color:#1a1c1d}
@@ -1607,6 +1613,11 @@ const CSS=`
 .bht-lg-pay .pt{position:relative;margin-left:38u;display:flex;flex-direction:column;gap:10u}
 .bht-lg-pay .pt p{font:800 30u/1.12 'Cinzel',Georgia,serif;color:var(--head);overflow-wrap:break-word}
 .bht-lg-pay .pt p b{color:var(--acc)}
+.bht-lg.open ol{row-gap:0}
+.bht-lg.open .bht-lg-row{grid-template-columns:250u minmax(0,1fr);padding:12u 0;column-gap:30u;background:none;border:0;border-radius:0;border-bottom:2u solid var(--acc)}
+.bht-lg.open .bht-lg-row:last-child{border-bottom:0}
+.bht-lg.open .bht-lg-row .nm{letter-spacing:0}
+.bht-ledger .ledger-open .bht-foot p{font-size:28u;line-height:1.3}
 
 `.replace(/(-?)(\d+(?:\.\d+)?)u\b/g,'calc($1$2*var(--u))')
  /* The sign goes inside calc(): -7u used to become -calc(7*var(--u)), which

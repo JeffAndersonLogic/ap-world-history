@@ -52,16 +52,16 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Treaty_of_Versailles,_English_version.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Treaty_of_Versailles,_English_version.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Lange-MigrantMother02.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Treaty_of_Versailles,_English_version.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Neville-Chamberlain.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg'
+    map: '../assets/images/commons/world-1936-empires-colonies-territory-6d7758.png',
+    first10: '../assets/images/commons/infobox-collage-for-wwii-33f084.png',
+    contentDelivery: '../assets/images/commons/bundesarchiv-bild-183-s33882-adolf-hitler-retouched-8a4d19.jpg',
+    beSurreal: '../assets/images/commons/treaty-of-versailles-english-version-21ea91.jpg',
+    skill: '../assets/images/commons/infobox-collage-for-wwii-33f084.png',
+    checkpoint1: '../assets/images/commons/treaty-of-versailles-english-version-21ea91.jpg',
+    evidence: '../assets/images/commons/lange-migrantmother02-99276b.jpg',
+    source: '../assets/images/commons/treaty-of-versailles-english-version-21ea91.jpg',
+    beInTheRoom: '../assets/images/commons/neville-chamberlain-15c5c4.jpg',
+    checkpoint2: '../assets/images/commons/bundesarchiv-bild-183-s33882-adolf-hitler-retouched-8a4d19.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -123,14 +123,14 @@
   lesson.images = [
     {
       title: 'Treaty of Versailles, English version',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Treaty_of_Versailles,_English_version.jpg',
+      url: '../assets/images/commons/treaty-of-versailles-english-version-21ea91.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Treaty_of_Versailles,_English_version.jpg',
       caption: 'The 1919 treaty document itself, in its English printing.',
       prompt: 'NOTICE that this is a bound legal instrument rather than a proclamation. INFER what kind of obligations a document of this form creates and how they might be resisted. How far back can a cause of the 1939 war reasonably be pushed, and what does that risk?'
     },
     {
       title: 'Flag of Manchukuo',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Manchukuo.svg',
+      url: '../assets/images/commons/flag-of-manchukuo-808278.svg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Flag_of_Manchukuo.svg',
       caption: 'The flag of the state Japan established in occupied Manchuria in 1932. Its colors were presented as the harmony of five peoples under one rule.',
       prompt: 'NOTICE that an occupying power designed a flag rather than announcing annexation. INFER why conquest was dressed as a new state. What does this artifact reveal about the limits of international condemnation?'

@@ -159,6 +159,43 @@ const unit4SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'un
 const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
   && gitBlobSha(fs.readFileSync(unit4SourcePath, 'utf8')) === APPROVED_UNIT4_REWRITE_BLOB;
 
+// Unit 5 had no approved fingerprint until its first story-first rewrite.
+// Topic 5.1's rewrite, "By What Right?", was written from the 5.1 story
+// (docs/TOPIC-5-1-STORY-DRAFT.md), built from the Unit 5 CED source file
+// transcribed on 2026-10-20, and went through three independent review
+// passes on 2026-10-20 (six reviewers; findings and dispositions in
+// docs/TOPIC-5-1-CLAIM-LEDGER.md), approved under Jeff's standing rule of
+// 2026-10-12, which delegates story and reading approval to the reviewer
+// loop. The loop ended on its three-pass safety valve, every finding fixed
+// or answered. Against main at 85cf5f9 only the 5.1 entry changed.
+// 2026-10-21: Topic 5.2's rewrite, "How Revolutions Made Nations", written from
+// the 5.2 story (docs/TOPIC-5-2-STORY-DRAFT.md) and the same CED source file,
+// went through three independent review passes on 2026-10-21 (six reviewers;
+// findings and dispositions in docs/TOPIC-5-2-CLAIM-LEDGER.md), approved under
+// Jeff's standing rule of 2026-10-12. The loop again ended on its three-pass
+// safety valve, every finding fixed or answered. Against main at 97156bd
+// (whose unit-5.js is the 5.1 blob fa6d292a) only the 5.2 entry changed;
+// 5.3 to 5.10 are byte-for-byte the readings in the committed fixture.
+// 2026-10-22: Topic 5.3's rewrite, "Coal, Water, and One Roof", written from
+// the 5.3 story (docs/TOPIC-5-3-STORY-DRAFT.md) and the same CED source file,
+// went through three independent review passes on 2026-10-22 (six reviewers;
+// findings and dispositions in docs/TOPIC-5-3-CLAIM-LEDGER.md), approved under
+// Jeff's standing rule of 2026-10-12. The loop ended on its three-pass safety
+// valve, every finding fixed or answered. Against main at e2adf9d (whose
+// unit-5.js is the 5.2 blob a7e7c179) only the 5.3 entry changed; 5.4 to 5.10
+// are byte-for-byte the readings in the committed fixture.
+// 2026-10-22: Topic 5.4's rewrite, "Who Made the World's Goods?", written from
+// the 5.4 story (docs/TOPIC-5-4-STORY-DRAFT.md) and the same CED source file,
+// went through three independent review passes on 2026-10-22 (six reviewers;
+// findings and dispositions in docs/TOPIC-5-4-CLAIM-LEDGER.md), approved under
+// Jeff's standing rule of 2026-10-12. The loop ended on its three-pass safety
+// valve, every finding fixed or answered. Against main at 1161bb82 (whose
+// unit-5.js is the 5.3 blob a491c3f6) only the 5.4 entry changed; 5.5 to 5.10
+// are byte-for-byte the readings in the committed fixture.
+const APPROVED_UNIT5_REWRITE_BLOB = '9b3772292df90e7b063235725964cac7cc3f6748';
+const unit5SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-5.js');
+const approvedUnit5Rewrite = !fromDisk && fs.existsSync(unit5SourcePath)
+  && gitBlobSha(fs.readFileSync(unit5SourcePath, 'utf8')) === APPROVED_UNIT5_REWRITE_BLOB;
 const R = '\x1b[31m', G = '\x1b[32m', Y = '\x1b[33m', W = '\x1b[1m', D = '\x1b[2m', X = '\x1b[0m';
 
 let baseline = null;
@@ -371,6 +408,10 @@ for (const topic of allTopics()) {
   }
   if (approvedUnit4Rewrite && /^4\.[1-8]$/.test(topic.topicKey)) {
     if (all.length) accepted.add('Unit 4 First & 10 Fall 2026 CED realignment approved 2026-09-17; guarded by the exact authored source Git blob hash.');
+    continue;
+  }
+  if (approvedUnit5Rewrite && /^5\.[1234]$/.test(topic.topicKey)) {
+    if (all.length) accepted.add('Topics 5.1 (2026-10-20), 5.2 (2026-10-21), 5.3 and 5.4 (2026-10-22) First & 10 story-first rewrites approved under the standing rule; guarded by the exact authored Unit 5 source Git blob hash.');
     continue;
   }
   const diffs = [];

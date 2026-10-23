@@ -58,7 +58,7 @@
   lesson.images = [
     {
       "title": "Olympic opening ceremony, Turin, 2006",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2006_Olympics_Opening_Ceremony.jpg",
+      "url": "../assets/images/commons/2006-olympics-opening-ceremony-ea6040.jpg",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:2006_Olympics_Opening_Ceremony.jpg",
       "caption": "Photograph of an opening ceremony staged for a worldwide television audience. The spectacle is designed to be watched elsewhere.",
       "prompt": "NOTICE what the ceremony is doing for the camera rather than for the stadium. INFER who the intended audience is. Does a globally broadcast national spectacle evidence homogenization or its opposite?"

@@ -135,8 +135,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Why the United Nations Formed',
           caption: 'Evidence anchor 1 for Topic 9.8.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/UN_General_Assembly_hall.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/UN_General_Assembly_hall.jpg'
+          url: '../assets/images/commons/un-general-assembly-hall-5ecdb6.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:UN_General_Assembly_hall.jpg'
         }
       },
       {
@@ -270,8 +270,8 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: 'Why the United Nations Formed',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/UN_General_Assembly_hall.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/UN_General_Assembly_hall.jpg',
+      url: '../assets/images/commons/un-general-assembly-hall-5ecdb6.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:UN_General_Assembly_hall.jpg',
       caption: 'The failure of the League of Nations and the destruction of World War II shaped the 1945 charter.',
       prompt: 'How does this evidence support or qualify a claim about institutions developing in a globalized world?'
     },

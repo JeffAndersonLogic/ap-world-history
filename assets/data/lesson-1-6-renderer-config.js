@@ -3,16 +3,16 @@
   if (!lesson) return;
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Hereford-Karte.jpg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Chartres-Cathedral-0006.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_mars.jpg',
+    map:             '../assets/images/commons/hereford-karte-8a52a3.jpg',
+    first10:         '../assets/images/commons/chartres-cathedral-0006-be4aa8.jpg',
+    contentDelivery: '../assets/images/commons/les-tres-riches-heures-du-duc-de-berry-mars-07b2b2.jpg',
     beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Les%20Tres%20Riches%20Heures%20du%20duc%20de%20Berry%20janvier.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/TabulaRogeriana.jpg',
+    skill:           '../assets/images/commons/tabularogeriana-637cf9.jpg',
     checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Bayeux_Tapestry.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Plan_mediaeval_manor.jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Cathedral_Notre-Dame_of_Rodez_09.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Ceiling%2C_Notre_Dame%2C_Paris%2C_ZM.JPG',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Laon_cathedral_notre_dame_002.JPG'
+    evidence:        '../assets/images/commons/plan-mediaeval-manor-275844.jpg',
+    source:          '../assets/images/commons/cathedral-notre-dame-of-rodez-09-d3bcf2.jpg',
+    beInTheRoom:     '../assets/images/commons/ceiling-notre-dame-paris-zm-6ce0d8.jpg',
+    checkpoint2:     '../assets/images/commons/laon-cathedral-notre-dame-002-abee34.jpg'
   };
   lesson.collegeBoardKeyConcepts = [
     {
@@ -58,28 +58,28 @@
   lesson.images = [
     {
       title: 'Bayeux Tapestry',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bayeux_Tapestry_scene51_Battle_of_Hastings_Norman_knights_and_archers.jpg?width=1200',
+      url: '../assets/images/commons/bayeux-tapestry-scene51-battle-of-hastings-norman-knights-and-archers-badfe6.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bayeux_Tapestry_scene51_Battle_of_Hastings_Norman_knights_and_archers.jpg',
       caption: 'Political continuity evidence. The Bayeux Tapestry was embroidered in the 11th century, before Topic 1.6, and depicts elite warfare, mounted nobles, and contests over rulership.',
       prompt: 'NOTICE one detail about warriors, leaders, or military service. What can you INFER about elite political relationships that continued into the period after c. 1200? What can this earlier source not prove about later medieval Europe by itself?'
     },
     {
       title: 'Plan of a Medieval Manor',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Plan_mediaeval_manor.jpg',
+      url: '../assets/images/commons/plan-mediaeval-manor-275844.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Plan_mediaeval_manor.jpg',
       caption: 'Economic-organization evidence. A schematic plan of a medieval manor showing fields, village spaces, and land organized around a lordly estate.',
       prompt: 'NOTICE how land and settlement are arranged. What can you INFER about the relationship among agriculture, local lordship, and political decentralization? What does a schematic plan simplify?'
     },
     {
       title: 'March, Très Riches Heures',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_mars.jpg',
+      url: '../assets/images/commons/les-tres-riches-heures-du-duc-de-berry-mars-07b2b2.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_mars.jpg',
       caption: 'Labor evidence. A 15th-century calendar image commissioned for an elite manuscript depicts peasants performing seasonal agricultural work below a noble residence.',
       prompt: 'NOTICE the relationship between workers, land, and elite architecture. What can you INFER about the economic foundation of medieval society? How might the elite patron who commissioned the manuscript shape what is shown?'
     },
     {
       title: 'Chartres Cathedral',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Chartres-Cathedral-0006.jpg',
+      url: '../assets/images/commons/chartres-cathedral-0006-be4aa8.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Chartres-Cathedral-0006.jpg',
       caption: 'Religious and urban evidence. Chartres Cathedral was largely rebuilt in the late 12th and early 13th centuries and became a major center of worship and pilgrimage.',
       prompt: 'NOTICE one feature of scale or design. What can you INFER about the resources and authority of the Church and urban communities? How could Christian institutions create shared culture across politically fragmented kingdoms?'

@@ -46,28 +46,28 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "grid",
+      "kind": "ledger",
       "eyebrow": "The Context",
       "title": "Winning was fast. Holding was hard.",
+      "footer": "Huge conquered lands, powerful local people, and gun armies that cost a fortune.",
       "kc": "Unit 3: Learning Objective B",
-      "cards": [
-        {
-          "title": "JOB ONE",
-          "text": "Find people who will serve you and not turn on you."
-        },
-        {
-          "title": "JOB TWO",
-          "text": "Convince everyone else you deserve to rule."
-        },
-        {
-          "title": "JOB THREE",
-          "text": "Collect enough money to pay for all of it."
-        },
-        {
-          "title": "THE CONTEXT",
-          "text": "Huge conquered lands, powerful local people, and gun armies that cost a fortune."
-        }
-      ]
+      "template": {
+        "open": true,
+        "rows": [
+          {
+            "name": "People",
+            "text": "Find people who will serve you and not turn on you."
+          },
+          {
+            "name": "Symbols",
+            "text": "Convince everyone else you deserve to rule."
+          },
+          {
+            "name": "Money",
+            "text": "Collect enough money to pay for all of it."
+          }
+        ]
+      }
     },
     {
       "kind": "case-file",
@@ -359,28 +359,28 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "grid",
+      "kind": "ledger",
       "eyebrow": "How It Fits Together",
       "title": "The three jobs hold each other up.",
+      "footer": "Every ruler did all three, with tools that fit his own situation.",
       "kc": "Unit 3: Learning Objective B",
-      "cards": [
-        {
-          "title": "MONEY",
-          "text": "paid the people who served."
-        },
-        {
-          "title": "PEOPLE",
-          "text": "collected the money."
-        },
-        {
-          "title": "SYMBOLS",
-          "text": "made serving and paying feel right."
-        },
-        {
-          "title": "SO",
-          "text": "Every ruler did all three, with tools that fit his own situation."
-        }
-      ]
+      "template": {
+        "open": true,
+        "rows": [
+          {
+            "name": "Money",
+            "text": "paid the people who served."
+          },
+          {
+            "name": "People",
+            "text": "collected the money."
+          },
+          {
+            "name": "Symbols",
+            "text": "made serving and paying feel right."
+          }
+        ]
+      }
     },
     {
       "kind": "branch-tree",

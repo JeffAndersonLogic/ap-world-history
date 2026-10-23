@@ -4,6 +4,12 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
+      "code": "Unit 5: Learning Objective E",
+      "theme": "Learning Objective",
+      "text": "Explain how different modes and locations of production have developed and changed over time.",
+      "illustrativeExamples": []
+    },
+    {
       "code": "KC-5.1.II.B",
       "theme": "Technology and Innovation",
       "text": "The rapid development of steam-powered industrial production in European countries and the U.S. contributed to the increase in these regions’ share of global manufacturing during the first Industrial Revolution. While Middle Eastern and Asian countries continued to produce manufactured goods, these regions’ share in global manufacturing declined.",
@@ -23,128 +29,144 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: Beyond Britain',
+    title: "First & 10: Who Made the World's Goods?",
     embedUrl: 'first-and-10-topic-5-4-industrialization-spreads-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 5.4 lesson path.'
+    note: 'Read the First & 10 story, answer the three questions, then return to the 5.4 lesson path.'
   };
 
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'Industrial regions by 1900', detail: 'By 1900, industrial production was concentrated in a narrow geographic band: Britain\'s Midlands and North (textiles, steel, coal); Belgium\'s Liège and Charleroi basins; Germany\'s Ruhr valley (steel, chemicals, coal, the most productive industrial region in the world by 1900); northeastern United States (Pennsylvania steel and coal, New England textiles); and Japan\'s emerging industrial centers (Osaka, Tokyo, Nagasaki). Outside this band, industrial production was minimal. The map reveals the strikingly narrow geographic distribution of 19th-century industrialization, and makes the geographic question unavoidable: why there, and not everywhere?' },
-      { label: 'Japan as the lone non-Western industrializer', detail: 'Japan\'s position on the map is crucial: it is the ONLY non-Western country in the industrial band. This is not because Japan had unique geographic advantages that India, China, or Egypt lacked. Japan had fewer coal deposits than India, less sophisticated pre-existing textile manufacturing than China, and smaller capital reserves than the Ottoman Empire. What Japan had was political sovereignty, the ability to impose protective tariffs, direct state investment, and borrow Western technology on its own terms. The Meiji Restoration (1868) was not primarily a cultural or intellectual revolution; it was a political response to the threat of colonization, and it used state power to industrialize faster than any previous society.' },
-      { label: 'Raw material zones and their colonial relationships', detail: 'The areas outside the industrial band, India, sub-Saharan Africa, Southeast Asia, most of Latin America, are not randomly distributed. They correspond almost perfectly with the zones of European colonial control or economic domination. India (British colony): raw cotton exporter, machine cloth importer. Egypt (informally dominated): cotton exporter after Muhammad Ali\'s factories were destroyed. West Africa: palm oil, groundnuts, and eventually rubber exporters. Latin America (formally independent but economically dependent): silver, copper, guano, rubber, coffee exporters. The geographic pattern of industrialization and non-industrialization mirrors the geographic pattern of colonial and semi-colonial relationships.' },
-      { label: 'The sovereignty pattern: the key to the map', detail: 'The most important pattern on this map is the correlation between political sovereignty and industrialization. Germany (unified under Bismarck, 1871) used sovereign power to impose protective tariffs and direct railroad investment. The United States used the tariff of 1816 and subsequent protectionist legislation to shield domestic industry from British competition. Japan used the Meiji state\'s sovereign power to build factories, send missions abroad, and restructure its economy. India, Egypt, and colonized Latin American territories could not do any of these things, their tariff policy, their trade relationships, and their economic structure were determined by European powers in the interests of European industry. Sovereignty explains industrialization; its absence explains deindustrialization.' }
+      { label: "Britain", detail: "Where the factory began, in the 1770s. The arrows start here." },
+      { label: "Arrows 1 to 4: where the methods went", detail: "Arrow 1: the United States, 1790s. Arrow 2: Belgium and the German states, 1810s to 1830s. Arrow 3: Russia, 1870s. Arrow 4: Japan, 1880s. Each date is the decade of the case this lesson uses, not the first factory there, and an arrow is not a route." },
+      { label: "Shaded regions in Asia and the Middle East", detail: "India, China, and the Syrian cities of the Ottoman Empire, such as Aleppo and Damascus. People there kept making cloth, ships, and other goods, much of it by hand, while their share of the world's manufacturing fell." },
+      { label: "Reading the map", detail: "The shaded areas mark regions, not exact borders. The map shows only the places this topic names." }
     ]
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg'
+    map:             '../assets/images/instructional-maps/topic-5-4.svg',
+    first10:         '../assets/images/topics/5-4/palampore-coromandel-coast-early-1700s.jpg',
+    contentDelivery: '../assets/images/topics/5-4/great-exhibition-1851-hibbert-platt-spinning-machine.jpg',
+    beSurreal:       '../assets/images/topics/5-4/man-weaving-cloth-indian-watercolour-1800s.jpg',
+    skill:           '../assets/images/topics/5-4/augsburg-cotton-mill-c1885.jpg',
+    checkpoint1:     '../assets/images/topics/5-4/slater-mill-pawtucket-c1870.jpg',
+    evidence:        '../assets/images/topics/5-4/great-exhibition-1851-india-ship-models.jpg',
+    source:          '',
+    beInTheRoom:     '../assets/images/commons/the-opening-of-the-great-exhibition-by-queen-victoria-on-1-may-1851-5fa547.jpg',
+    checkpoint2:     '../assets/images/topics/5-4/lowell-mills-merrimack-river-1900s.jpg'
+  };
+
+  lesson.classPresentation = {
+    title: "Class Slides: Who Made the World's Goods?",
+    desc: "Follow the story: where most goods were made in 1750, how factory methods left Britain with skilled people, machines, and money, where they took root, how the world's shares of manufacturing moved, and what the old makers kept making.",
+    url: 'presentation-topic-5-4-student.html'
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-5/the-meiji-investment-ledger.html',
-    desc: "Join Meiji Japan’s 1872 investment council and sequence railways, schools, strategic industry, taxation, and labor policy without surrendering sovereignty."
+    url: '../beintheroom/unit-5/the-great-exhibition.html',
+    desc: "London, 1851, the Great Exhibition. Walk the hall as a visitor from one of the world's making regions, decide what to take home, and explain what has changed and what has stayed the same in who makes the world's goods."
   };
 
   lesson.skillBuilder = {
-    label: 'Comparison practice',
-    title: 'Comparing Paths to Industrialization: Who Industrialized, Who Didn\'t, and Why',
-    intro: 'Comparison for Topic 5.4 requires identifying both similarities and differences among the paths to industrialization, and synthesizing what the comparison reveals. The most common AP error is describing each country separately without identifying the specific point of comparison. A strong comparison argument uses the structure: "Both X and Y shared [similarity], but X differed from Y in [specific difference], which reveals [broader pattern]."',
+    label: "Making connections practice",
+    title: "Find the Pattern",
+    intro: "Topic 5.4 asks you to find patterns. A pattern is something that happens again and again across different cases. To find one, list the cases, say what happened in each, and then name what they all share in one sentence. Watch the move on an example from everyday life, then use it on the history.",
     steps: [
-      { label: 'Identify a meaningful similarity across cases', text: 'Similarity: All successful industrializers, Britain, Germany, the United States, Japan, had access to capital, a labor force, and some form of key resources (coal, iron, or the ability to import them). But more importantly, all successful industrializers had political sovereignty that allowed them to use protective tariffs and state investment to build domestic industry. This is the most important similarity: not the specific resources, but the political capacity to direct economic development. Countries that lacked sovereignty, India, Egypt, colonized Latin America, also had capital (India was one of the wealthiest regions in the world), labor, and resources. The absence that mattered was political, not natural.' },
-      { label: 'Identify a meaningful difference (state-led vs. market-led)', text: 'Difference: Japan and Germany industrialized primarily through state direction, the Meiji government built factories and sold them to zaibatsu; Prussia built railroads and protected heavy industry with tariffs. Britain and the United States industrialized primarily through private enterprise, with the state playing a supporting role (patent law, property rights, tariffs in the US case). The difference produced different industrial structures: Germany and Japan built large industrial conglomerates (Krupp, Mitsui, Mitsubishi) tightly connected to state power; Britain and the US built more fragmented, competitive industrial sectors. Both succeeded, but by different mechanisms. The comparison reveals that there is no single path to industrialization; what matters is having some mechanism to mobilize capital and protect infant industries from established competitors.' },
-      { label: 'Write the synthesis statement', text: 'A strong comparison ends with synthesis: what does the pattern reveal? The pattern of 19th-century industrialization reveals that economic development is not a natural or automatic process, it is a political one. Countries industrialized when and because their governments had the will and the capacity to direct economic change: through tariffs, investment, legal infrastructure, and deliberate technology adoption. Countries did not industrialize when foreign powers prevented those policy tools from being used, either through direct colonial control or through imposed trade treaties. The Meiji slogan "rich country, strong army" was not naive: industrial power and military power were inseparable in the 19th century, and the countries that recognized this early industrialized first.' }
+      { label: "List the cases", text: "Pick at least three cases of the same kind of thing. Example: \"June, July, and August at the town pool.\"" },
+      { label: "Say what happened in each", text: "Give one fact for each case. Example: \"In June, July, and August, the pool was busiest on the hottest afternoons.\"" },
+      { label: "Name what they share", text: "Ask: what is true in every case? Example: \"the busiest days were always the hottest.\"" },
+      { label: "Say the pattern", text: "Put it together with \"so the pattern is\": \"In June, July, and August, the town pool was busiest on the hottest afternoons, so the pattern is that heat brings swimmers.\" Use this frame: \"In [case one], [case two], and [case three], [what happened in each], so the pattern is [what they all share].\"" }
     ],
-    prompt: 'In 3–4 sentences, write a comparison argument about the spread of industrialization. Choose two regions from this set: Germany, Japan, India, Latin America. Identify one meaningful similarity and one meaningful difference in their industrialization experiences. Then write a synthesis statement: what does comparing these two cases reveal about the relationship between political sovereignty and economic development?'
+    prompt: "Now do it yourself, twice. First, choose THREE places the factory methods reached (from the United States, Belgium, the German states, Russia, and Japan). For each, say what carried the methods there, and then state the pattern with the frame. Second, find the pattern in the shares: using two of Bairoch's estimates, say what happened to the share of world manufacturing in Europe and the United States, and in India and China. Use this frame: \"Where [what happened], the share [rose or fell]; where [what happened], the share [rose or fell]; so the pattern is [what explains the difference].\"",
+    criteria: [
+      "I listed three places the factory methods reached, with a detail from the lesson for each.",
+      "I said what carried the methods to each place: people, machines, or money.",
+      "I stated a pattern with \"so the pattern is,\" naming what all three share.",
+      "I stated the pattern in the shares with the second frame, using two of Bairoch's estimates."
+    ]
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: The Spread of Industrialization — Europe, America, and Japan',
-      subtitle: 'Checks Learning Target 1 — how and why industrialization spread to specific regions.',
-      cardDesc: 'Belgium, Germany, the United States, and Japan as case studies in different paths to industrialization.',
+      title: "Checkpoint 1: Where the Factory Went, and What Carried It",
+      subtitle: "Checks Learning Target 1 and Success Criterion 1.",
+      cardDesc: "The four places the new methods spread to, what carried them there, and the pattern.",
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Choose two regions that successfully industrialized (from: Belgium, Germany, United States, Japan). For each, identify one specific factor that shaped its industrialization, and explain the mechanism: how exactly did that factor produce or accelerate industrial development? Then compare the two: in what way did Germany or Japan\'s state-led model differ from the British or American market-led model, and what did each approach sacrifice to achieve its results?',
-      responseType: 'Checkpoint 1',
-      terms: ['Meiji Restoration', 'Iwakura Mission', 'zaibatsu', 'state-led industrialization', 'protective tariffs', 'transcontinental railroad', 'Lowell mills', 'Ruhr valley', 'fukoku kyōhei'],
-      focus: ['Choose two successful industrializers and identify one specific factor for each, be concrete about the mechanism.', 'Compare state-led vs. market-led industrialization, what did each sacrifice?', 'Explain why Japan is significant as the only non-Western successful industrializer.']
+      prompt: "Answer in three steps. (1) Name the four places the College Board says the new factory methods spread to from northwestern Europe. (2) Choose TWO of them. For each, give one case from the lesson and explain what carried the methods there: skilled people, machines, or money. (3) State one pattern in how the methods spread, using \"so the pattern is.\" Your pattern can be about what carried them, or about what was waiting where they took root.",
+      responseType: "Checkpoint 1",
+      terms: ["Europe", "Belgium", "German states", "Germany", "France", "United States", "Russia", "Japan", "Slater", "Pawtucket", "Strutt", "Cockerill", "Seraing", "Liège", "Nuremberg", "railway", "locomotive", "Lowell", "Boston", "Hughes", "Yuzovka", "Osaka", "spinning", "machines", "skilled workers", "money", "coal", "pattern"],
+      focus: ["Name all four places the methods spread to.", "Give a case for two of them, with what carried the methods.", "State the pattern in one sentence."]
     },
     {
-      title: 'Checkpoint 2: Colonialism and the Failure to Industrialize',
-      subtitle: 'Checks Learning Target 2 — why colonialism blocked industrialization in most of Asia, Africa, and Latin America.',
-      cardDesc: 'India\'s deindustrialization, Egypt\'s blocked industrialization, Latin American dependency, and the sovereignty argument.',
+      title: "Checkpoint 2: What Changed, and What Continued, in Who Made the World's Goods",
+      subtitle: "Checks Learning Target 2 and Success Criterion 2, and Unit 5 Learning Objective E: how modes and locations of production changed over time.",
+      cardDesc: "How the shares of world manufacturing changed from 1750 to 1900, one cause of the change, and what India, China, or the Middle East kept making.",
       learningTargets: [lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[1].criteria],
-      prompt: 'Explain why India did not industrialize in the 19th century despite having sophisticated pre-existing textile manufacturing, a large labor force, and raw materials. Be specific about the colonial mechanism, what exactly did British colonial policy do, and how did it prevent Indian industrialization? Then explain the "sovereignty argument": why could Germany impose protective tariffs that India was forbidden to use? End with a synthesis: overall, was the failure of most of Asia, Africa, and Latin America to industrialize primarily a result of natural disadvantages or deliberate colonial policy?',
-      responseType: 'Checkpoint 2',
-      skill: 'Causation and comparison',
-      terms: ['deindustrialization', 'India textile industry', 'protective tariffs', 'Treaty of Balta Liman', 'Muhammad Ali', 'comparative advantage', 'raw material supplier', 'political sovereignty', 'dependency', 'unequal treaties'],
-      focus: ['Explain the specific colonial mechanism that blocked Indian industrialization, not vague, but the actual policy tool.', 'Explain the sovereignty argument, why Germany could do what India could not.', 'Make a supported synthesis claim: natural disadvantages or colonial policy?']
+      prompt: "Explain what changed and what continued in who made the world's goods between 1750 and 1900. (1) Describe how most goods were made in 1750, and where. (2) Using two of Bairoch's estimates, explain how the share of world manufacturing changed for the regions with steam-powered factories and for India or China. (3) Explain what a share is, and why a share can fall while a region keeps making goods. (4) Explain one cause of the change, using India's cloth trade. (5) Give one piece of evidence that India, China, or the Middle East kept making goods.",
+      responseType: "Checkpoint 2",
+      skill: "Continuity and Change",
+      terms: ["1750", "1900", "hand", "by hand", "handloom", "weavers", "Asia", "China", "India", "Europe", "United States", "share", "Bairoch", "estimate", "a third", "a quarter", "four-fifths", "steam", "factory", "machine-made", "cheaper", "Lancashire", "East India Company", "taxes", "raw cotton", "Bombay", "ships", "Trincomalee", "Aleppo", "Damascus", "Ottoman", "continued", "changed"],
+      focus: ["Describe how and where goods were made in 1750.", "Explain the change in shares with two numbers.", "Explain what a share is.", "Explain one cause of the change.", "Give evidence of what continued."]
     }
   ];
 
   // ── Module 07, Evidence Lab ───────────────────────────────────────────────
   lesson.evidenceLab = {
-    title: 'Evidence Lab: Build and Test a Claim',
-    task: 'Choose at least two evidence cards. Decide which historical claim each card is most useful for, name one precise detail from each rather than summarizing it, explain the inference that carries the detail to the claim, and identify one limitation or missing piece of evidence. The caption identifies the object; it does not supply your conclusion.',
-    prompt: 'Compare how industrialization spread beyond Britain. Use evidence from two states and explain one similarity or difference in the role of governments, infrastructure, or access to capital and technology.'
+    title: "Evidence Lab: A Change, or a Continuity",
+    task: "Choose at least two evidence cards. For each, say what kind of source it is and who made it (if the caption says), name one precise detail rather than summarizing it, explain what that detail shows about a change or a continuity in how or where goods were made, and name one thing the source cannot tell you. The caption identifies the source; it does not supply your conclusion.",
+    prompt: "Make a claim about one change or one continuity in how or where the world's goods were made between 1750 and 1900. Support it with evidence from at least two cards."
   };
 
   lesson.images = [
     {
-      title: 'Industrialization spreads',
-      url: '../assets/images/instructional-maps/topic-5-4.svg',
-      sourceUrl: '../assets/images/instructional-maps/topic-5-4.svg',
-      caption: 'BeHistorical reference map. Secondary geographic reconstruction of industrial regions beyond Britain and the routes between them.',
-      prompt: 'NOTICE which regions industrialize and in what order. INFER what the later ones could do that Britain could not. What does a map not show about how the knowledge actually travelled?'
+      title: "Painted Cotton from India, Early 1700s",
+      alt: "A hand-painted Indian cotton hanging: a flowering tree with large red, blue, and purple blossoms grows from stylized rocks on a cream ground, inside a wide red floral border",
+      url: "../assets/images/topics/5-4/palampore-coromandel-coast-early-1700s.jpg",
+      sourceUrl: "https://www.metmuseum.org/art/collection/search/75909",
+      caption: "A palampore, a hanging of cotton painted and dyed by hand by Indian artisans whose names are not known, made on the Coromandel Coast of southeast India in the early 1700s for buyers in Sri Lanka. The Metropolitan Museum of Art.",
+      prompt: "NOTICE the detail in one flower and in the border. INFER what skill and time this took, and what that tells you about where some of the world's finest cloth was made before 1750. One beautiful hanging is one object: what can it not tell you about how much cloth India made?"
     },
     {
-      title: 'Meiji Charter Oath',
-      label: 'Primary-source excerpt · Japan, 1868',
-      sourceText: [
-        '“Knowledge shall be sought throughout the world”',
-        'to strengthen imperial rule.'
-      ],
-      caption: 'A statement of policy issued by a new government in 1868, in the year it took power.',
-      prompt: 'How can this source support a claim about state-directed borrowing of foreign knowledge? What does it not tell you about implementation?'
+      title: "A Weaver at His Loom, about 1840",
+      alt: "An Indian painting of a man in a white turban and white cloth sitting at a hand loom, weaving a long red patterned cloth, with his feet on the treadles and cords hanging from above",
+      url: "../assets/images/topics/5-4/weaver-at-his-loom-tanjore-c1840.jpg",
+      sourceUrl: "https://wellcomecollection.org/works/pjnujb7j",
+      caption: "A painting attributed to a painter from Tanjore (Thanjavur), in south India, about 1840. Indian artists often painted pictures of workers at their trades for European buyers, so this probably shows a typical weaver, not one real person's workshop. Wellcome Collection.",
+      prompt: "NOTICE what powers this loom. INFER whether this picture shows a change or a continuity in how cloth was made in India in the 1840s. Who was this painting made for, and how might that shape what it shows?"
     },
     {
-      title: 'Japan’s first railway',
-      label: 'Infrastructure record · Tokyo–Yokohama line, 1872',
-      sourceText: [
-        'Japan opened its first railway in 1872.',
-        'Rail construction expanded rapidly under Meiji rule.'
-      ],
-      caption: 'The date and the line, so that the pace of state-directed building can be measured rather than described.',
-      prompt: 'What does state-backed transport infrastructure suggest about the mechanism of Japanese industrialization?'
+      title: "British Cotton Machinery, 1851",
+      alt: "An old photograph of a long iron machine on a wooden floor, with rows of upright spindles and bobbins and a rail of large bobbins above",
+      url: "../assets/images/topics/5-4/great-exhibition-1851-hibbert-platt-spinning-machine.jpg",
+      sourceUrl: "https://id.rijksmuseum.nl/200345908",
+      caption: "A photograph, published in 1852 and attributed to the photographers C. M. Ferrier and F. von Martens, of cotton machinery made by Hibbert, Platt and Sons of Oldham, England, on show at the Great Exhibition in London in 1851. Rijksmuseum.",
+      prompt: "NOTICE how many spindles one machine holds. INFER how a machine like this could change the world's share of cloth-making. This machine was shown to visitors from many countries: what might some of them have wanted to do after seeing it?"
     },
     {
-      title: 'Germany’s integrated market',
-      label: 'Policy record · Zollverein, 1834 onward',
-      sourceText: [
-        'Many German states removed internal customs barriers.',
-        'Railways later tied the enlarged market together.'
-      ],
-      caption: 'A customs union among states that were not yet one country, which is the fact to reason from.',
-      prompt: 'How could market integration accelerate industrialization? What would you need to show that policy caused industrial growth rather than merely accompanying it?'
+      title: "India's Ship Models, London, 1851",
+      alt: "A faded photograph inside the Crystal Palace: a hanging sign reads INDIA above model sailing ships with triangular sails and ceremonial parasols, under an iron and glass roof",
+      url: "../assets/images/topics/5-4/great-exhibition-1851-india-ship-models.jpg",
+      sourceUrl: "https://id.rijksmuseum.nl/200345924",
+      caption: "A photograph by Hugh Owen of model ships shown in the India section of the Great Exhibition, London, 1851. These are models, not a real shipyard. Rijksmuseum.",
+      prompt: "NOTICE the kind of ships the models show: sail or steam? INFER what these models tell you about what India chose to show visitors in London in 1851. Models in an exhibition are chosen to impress: what can they not tell you about India's real shipyards?"
     },
     {
-      title: 'Tomioka Silk Mill',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Tomioka_Silk_Mill.JPG?width=1200',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Tomioka_Silk_Mill.JPG',
-      caption: 'The Japanese government’s model silk filature, opened in 1872 with French machinery, a French engineer and a largely female workforce. Photographed during the Meiji era by the Imperial Household Ministry.',
-      prompt: 'NOTICE the construction: the brick, the window rhythm, the length of the range. INFER what the Meiji state was importing besides machinery, and what it wanted the mill to demonstrate beyond producing silk. The government commissioned this photograph of its own model factory: what would it not tell you about the ordinary ones?'
+      title: "Slater Mill, Pawtucket, about 1870",
+      alt: "An old photograph of several wooden mill buildings crowded along a river bank, with a bell tower in the center and a dam at the right",
+      url: "../assets/images/topics/5-4/slater-mill-pawtucket-c1870.jpg",
+      sourceUrl: "https://www.loc.gov/item/ri0102/",
+      caption: "A photograph of about 1870 of the old Slater Mill, begun in 1793 and enlarged several times, and the mills around it on the river at Pawtucket, Rhode Island, by an unknown photographer. Library of Congress (a copy made by the Historic American Engineering Record).",
+      prompt: "NOTICE where the mills stand, and what the river could do for them. INFER why Samuel Slater built here. A photograph taken about eighty years later, of a mill enlarged since: what can it not tell you about how the mill looked in the 1790s?"
+    },
+    {
+      title: "Who Made the World's Goods, 1750 and 1900",
+      label: "Economic historian's estimates · Paul Bairoch, 1982",
+      sourceText: ["Share of world manufacturing, 1750: China about 33 percent, India about 25, Britain under 2, the United States under 1.", "1900: China about 6 percent, India under 2, Britain about 19, the United States about 24."],
+      caption: "Share of world manufacturing, 1750: China about 33 percent, India about 25, Britain under 2, the United States under 1. 1900: China about 6, India under 2, Britain about 19, the United States about 24. Estimates by the economic historian Paul Bairoch, published in 1982, rounded to whole numbers. They are careful estimates built from population and output, not counts made at the time.",
+      prompt: "Compare the two years. INFER which regions' shares changed most, and in which direction. These are shares, not amounts: what can they not tell you about whether India and China made more or less cloth than before?"
     }
   ];
 

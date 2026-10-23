@@ -27,7 +27,8 @@ const TONES = {
   slate: { fill: '#9FB0AE', stroke: '#4E6260', text: INK },
   sage: { fill: '#B6C2A2', stroke: '#5E6B4C', text: INK },
   plum: { fill: '#B49AA8', stroke: '#6B4A5A', text: INK },
-  sand: { fill: SAND, stroke: '#8E7A55', text: INK }
+  sand: { fill: SAND, stroke: '#8E7A55', text: INK },
+  sky: { fill: '#A9BED8', stroke: '#3E5878', text: INK }
 };
 
 function esc(value) {

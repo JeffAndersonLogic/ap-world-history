@@ -4,6 +4,18 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
+      "code": "Unit 5: Learning Objective A",
+      "theme": "Learning Objective",
+      "text": "Explain the intellectual and ideological context in which revolutions swept the Atlantic world from 1750 to 1900.",
+      "illustrativeExamples": []
+    },
+    {
+      "code": "Unit 5: Learning Objective B",
+      "theme": "Learning Objective",
+      "text": "Explain how the Enlightenment affected societies over time.",
+      "illustrativeExamples": []
+    },
+    {
       "code": "KC-5.3.I.A",
       "theme": "Cultural Developments and Interactions",
       "text": "Enlightenment philosophies applied new ways of understanding and empiricist approaches to both the natural world and human relationships; they also reexamined the role that religion played in public life and emphasized the importance of reason. Philosophers developed new political ideas about the individual, natural rights, and the social contract.",
@@ -41,137 +53,151 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: The Age of Reason',
+    title: 'First & 10: By What Right?',
     embedUrl: 'first-and-10-topic-5-1-enlightenment-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 5.1 lesson path.'
+    note: 'Read the First & 10 story, answer the three questions, then return to the 5.1 lesson path.'
   };
 
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'France and Britain as Enlightenment centers', detail: 'Paris and Edinburgh were the intellectual hearts of the Enlightenment. Paris had the philosophes, the Encyclopédie, and the salons; Edinburgh had Adam Smith, David Hume, and the Scottish Enlightenment. But ideas circulated across borders through the "Republic of Letters", an informal network of correspondence among scholars that operated across political boundaries and in multiple languages. By c. 1750, Enlightenment ideas were being debated in the American colonies, in Portugal and Spain, and in Russia.' },
-      { label: 'Print culture and the Republic of Letters', detail: 'Cheap printing and expanding literacy made it possible for Enlightenment ideas to circulate rapidly. The Encyclopédie (1751–1772) reached 25,000 subscribers across Europe despite being banned by the French Crown and the Catholic Church. Newspapers, pamphlets, and pirated editions carried ideas across borders faster than censorship could suppress them. The geographic reach of print culture shaped which ideas reached which audiences, educated Europeans had access to the full canon of Enlightenment thought; enslaved Africans in the Americas had access only to fragments, usually through literate intermediaries.' },
-      { label: 'From the Encyclopédie to the barricades', detail: 'The causal chain from Enlightenment text to Atlantic Revolution is not direct, ideas do not cause revolutions by themselves. The French Revolution required both Enlightenment ideas (the vocabulary of natural rights and popular sovereignty) AND structural conditions (French bankruptcy after the Seven Years War and the American Revolution, aristocratic tax exemption, food shortages of 1788–1789). For AP causation arguments, always identify both the intellectual cause and the structural cause.' },
-      { label: 'The limits of the Enlightenment on the map', detail: 'Enlightenment universalism was geographically and socially selective. The philosophes wrote in French, Latin, and English, languages accessible primarily to the educated European elite. The salons were in Paris drawing rooms, not on Caribbean plantations. The Encyclopédie circulated to paying subscribers, not to enslaved people. Understanding this geographic and social selectivity helps explain why the Haitian Revolution had to use the Enlightenment\'s ideas against the Enlightenment\'s own practitioners, because the practitioners never intended to apply those ideas to the people in Saint-Domingue.' }
+      { label: 'Where the ideas came from', detail: 'France (the salons of Paris and the Encyclopédie, published from 1751 to 1772) and Britain (Locke, who published his arguments about natural rights and consent in 1689). The ideas traveled in books, pamphlets, newspapers, and letters.' },
+      { label: 'Across the Atlantic', detail: 'Arrow 1: the ideas reached Spanish America. In Bogotá, Antonio Nariño secretly printed a Spanish translation of France\'s declaration of rights in 1793 or 1794, and was arrested for it in 1794. Arrow 2: antislavery and rights campaigners in Britain and the United States wrote to each other, traveled, and met, as at the London antislavery convention of 1840.' },
+      { label: 'Where rights were demanded and won, and when', detail: 'Serfdom ended in the Austrian Empire in 1848 and in Russia in 1861. Women met at Seneca Falls, New York, in 1848 to demand equal rights and the vote. Brazil was the last country in the Americas to end slavery, in 1888.' },
+      { label: 'Reading the map', detail: 'The shaded areas mark regions, not exact borders. Read the dates from earliest to latest: the ideas came first, and the rights they promised reached different places decades apart.' }
     ]
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg'
+    map:             '../assets/images/instructional-maps/topic-5-1.svg',
+    first10:         '../assets/images/topics/5-1/air-pump-experiment-green-1769.jpg',
+    contentDelivery: '../assets/images/topics/5-1/encyclopedie-title-lucca-1758.jpg',
+    beSurreal:       '',
+    skill:           '../assets/images/topics/5-1/encyclopedie-plate-fan-maker.jpg',
+    checkpoint1:     '../assets/images/topics/5-1/encyclopedie-title-lucca-1758.jpg',
+    evidence:        '../assets/images/topics/5-1/abolitionist-jug-c1820.jpg',
+    source:          '',
+    beInTheRoom:     '',
+    checkpoint2:     '../assets/images/topics/5-1/liberty-arts-sciences-jennings-c1792.jpg'
+  };
+
+  lesson.classPresentation = {
+    title: 'Class Slides: By What Right?',
+    desc: 'Follow the story: how a new way of finding out what is true led writers to ask every old authority "by what right?", the new answers they gave, how those ideas spread before the Atlantic revolutions, and how reformers and the people left out pressed the same words until rights reached further by 1900, and what stayed the same.',
+    url: 'presentation-topic-5-1-student.html'
   };
 
   lesson.beInTheRoom = {
     url: '../beintheroom/unit-5/the-natural-rights-test.html',
-    desc: "Join a Paris publisher’s salon in 1788–1789 and decide whether natural-rights language will confront its exclusions of women, enslaved people, and the poor."
+    desc: 'Paris, 1788 to 1789. A publisher must decide what a pamphlet on natural rights will claim, whose voices it will print, and who will get to read it, when the people paying for it, the writers, and the people the words leave out all want different things.'
   };
 
   lesson.skillBuilder = {
-    label: 'Causation practice',
-    title: 'Tracing the Intellectual Causes of the Atlantic Revolutions',
-    intro: 'Causation for Topic 5.1 requires explaining how Enlightenment ideas caused the Atlantic Revolutions, and also recognizing that ideas alone are never sufficient causes. Every Atlantic Revolution required both Enlightenment ideas (which provided the vocabulary and the justification) AND structural conditions (which created the crisis that made revolution possible). The most common AP error is treating Enlightenment ideas as the sole cause without explaining the structural conditions that made those ideas explosive.',
+    label: 'Claims and evidence practice',
+    title: 'Find the Claim',
+    intro: 'A claim is what a writer wants you to believe. The Enlightenment was an age of arguments, so its sources are full of claims. To identify a claim, find the sentence that says what the writer wants you to believe. To describe it, say it in your own words, and say what older idea it argues against. Watch the move on one source, then try it on two of three new ones.',
     steps: [
-      { label: 'Identify the intellectual cause and its mechanism', text: 'Intellectual cause: Enlightenment thinkers articulated the concept of natural rights, the idea that all humans possess inherent rights (life, liberty, property) that government cannot legitimately violate. The mechanism: when a government imposed taxation without consent (Britain in the American colonies), or maintained a hereditary aristocracy immune from taxation (France), or maintained a plantation system based on racial slavery (Saint-Domingue), the natural rights framework provided a vocabulary for describing these conditions as illegitimate. Without natural rights theory, the same conditions might have produced rebellion or reform; with it, they produced revolution, because natural rights theory claimed that the existing order was not merely unjust but fundamentally illegitimate.' },
-      { label: 'Identify the structural cause and its mechanism', text: 'Structural cause: The Seven Years War (1756–1763) created a fiscal crisis that destabilized both the British Empire (leading to new colonial taxation) and the French monarchy (leading to the conditions for the French Revolution). Britain\'s attempt to tax its colonies to pay war debts created the immediate grievance that activated Locke\'s natural rights theory. France\'s near-bankruptcy after supporting the American Revolution forced the Crown to call the Estates-General (1789), the first time it had done so in 175 years, which created the political opening for the French Revolution. Structural conditions without Enlightenment ideas produce different outcomes; ideas without structural conditions produce books, not revolutions.' },
-      { label: 'Connect intellectual and structural causes in an argument', text: 'A strong causation argument explains how intellectual causes and structural causes interacted: "The American Revolution was caused by the combination of Enlightenment natural rights theory AND British fiscal policy after the Seven Years War. Enlightenment ideas provided the framework (government requires consent; taxation without representation violates natural rights), while British fiscal policy provided the specific grievance that made those ideas politically explosive. Without both, without the ideas AND the crisis, the Revolution would not have happened when and how it did." This two-part causal argument is stronger than attributing the revolution to either ideas or structural conditions alone.' }
+      { label: 'Read the source', text: 'Montesquieu, The Spirit of the Laws, 1748, in an English translation of 1750: "When the legislative and executive powers are united in the same person, or in the same body of magistrates, there can be no liberty." (The legislative power makes the laws; the executive power carries them out; magistrates are officials.)' },
+      { label: 'Identify the claim', text: 'Find what Montesquieu wants you to believe. Here it is the end of the sentence: when one person or group both makes and carries out the laws, people are not free.' },
+      { label: 'Describe it in your own words', text: 'Montesquieu claims that people stay free only when no one person or group holds all the power.' },
+      { label: 'Say what it argues against', text: 'Montesquieu is arguing against letting any one ruler or group hold all these powers at once. His own example of that was the Ottoman sultan. Use this frame: "[The writer] claims that [the claim in your own words], arguing against [the older idea]."' }
     ],
-    prompt: 'In 3–4 sentences, explain how Enlightenment ideas caused the American or French Revolution. Identify one specific Enlightenment idea and one specific structural condition. Explain how the two interacted, how the structural condition gave the Enlightenment idea its political force. End with a statement about what this reveals about the relationship between intellectual change and political revolution.'
+    prompt: 'Now do it yourself. Choose TWO of these three sources. (1) Jean-Jacques Rousseau, 1762, the first line of his book on the social contract: "Man is born free; and everywhere he is in chains." (2) Immanuel Kant, 1784, in his essay "What Is Enlightenment?", giving the Enlightenment its motto: "Dare to know," which he explained as having the courage to use your own understanding. (3) The motto of a society founded in London in 1787 to end the British slave trade, under a picture of a kneeling African man in chains: "Am I not a man and a brother?" For EACH source you choose, write two sentences: identify and describe the claim in your own words, then say what older idea or practice it argues against.',
+    criteria: [
+      'I identified the claim in each source.',
+      'I described it in my own words, not by copying the quotation.',
+      'I said what older idea or practice it argues against.',
+      'I used two of the three sources.'
+    ]
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: The Philosophes and Their Core Ideas',
-      subtitle: 'Checks Learning Target 1 — Enlightenment ideas and their challenge to traditional authority.',
-      cardDesc: 'Natural rights, social contract, popular sovereignty, separation of powers, and the philosophes who articulated them.',
-      learningTargets: [lesson.learningTargets[0].target],
-      successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Name three Enlightenment philosophes and explain the core idea each contributed to political thought. For each, explain how their idea challenged one of the traditional pillars of European authority (divine right of kings, hereditary aristocracy, or Church authority). Then explain why Locke\'s idea, that government derives authority from the consent of the governed, was the most directly influential for the Atlantic Revolutions.',
+      title: 'Checkpoint 1: The Ideas Behind the Revolutions',
+      subtitle: 'Checks Learning Targets 1 and 2 and Success Criteria 1 and 2.',
+      cardDesc: 'One new Enlightenment idea, the old answer it challenged, how the ideas spread before the Atlantic revolutions, and how the people became the nation.',
+      learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
+      successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
+      prompt: 'Answer in four steps. (1) Before the Enlightenment, most rulers said their power came from God, tradition, and birth. Choose ONE new Enlightenment idea: natural rights, the social contract, or religious toleration. Explain what it said and name a writer who argued it. (2) Explain how that idea challenged the old answer. (3) Explain how Enlightenment ideas spread, using one example (books such as the Encyclopédie, salons, coffeehouses, or letters), and explain what it means that the ideas came before the revolutions that began in 1775, 1789, 1791, and 1810. (4) Explain how the idea that a state belongs to its people turned into loyalty to the nation, called nationalism.',
       responseType: 'Checkpoint 1',
-      terms: ['natural rights', 'social contract', 'popular sovereignty', 'separation of powers', 'Locke', 'Rousseau', 'Montesquieu', 'Voltaire', 'Wollstonecraft', 'divine right of kings'],
-      focus: ['Name three philosophes and their core ideas, be specific about each person\'s contribution.', 'Explain how each idea challenged traditional authority, which pillar (divine right, aristocracy, Church) and how.', 'Explain why Locke\'s consent of the governed was the most directly influential for the Atlantic Revolutions.']
+      terms: ['divine right', 'reason', 'evidence', 'empiricism', 'natural rights', 'social contract', 'consent', 'separation of powers', 'religious toleration', 'deism', 'Locke', 'Rousseau', 'Montesquieu', 'Voltaire', 'Calas', 'Encyclopédie', 'salon', 'print', 'came before', 'preceded', 'revolution', 'nation', 'nationalism'],
+      focus: ['Explain one new idea and name a writer who argued it.', 'Explain how it challenged the old answer: God, tradition, and birth.', 'Explain how the ideas spread, and that they came before the revolutions.', 'Explain how "the people" came to mean the nation.']
     },
     {
-      title: 'Checkpoint 2: The Spread and Limits of Enlightenment Universalism',
-      subtitle: 'Checks Learning Target 2 — how Enlightenment ideas spread and why their universalism was limited.',
-      cardDesc: 'Print culture, salons, the Encyclopédie, and the exclusion of women, enslaved people, and colonial subjects.',
-      learningTargets: [lesson.learningTargets[1].target],
-      successCriteria: [lesson.successCriteria[1].criteria],
-      prompt: 'Describe two mechanisms by which Enlightenment ideas spread (print culture, salons, coffeehouses, universities). Then identify two groups that Enlightenment universalism excluded, women, enslaved Africans, or colonized peoples, and explain the specific structural reasons for each exclusion. End with a synthesis: was Enlightenment universalism a genuine breakthrough for human rights, a hypocritical façade, or something more complex? Defend your position with specific evidence.',
+      title: 'Checkpoint 2: What the Ideas Changed Over Time',
+      subtitle: 'Checks Learning Target 3, Success Criterion 3, and Unit 5 Learning Objective B.',
+      cardDesc: 'One reform movement, what drove it, how far it got by 1900, and what had still not changed.',
+      learningTargets: [lesson.learningTargets[2].target],
+      successCriteria: [lesson.successCriteria[2].criteria],
+      prompt: 'Explain how the Enlightenment affected societies over time, between 1750 and 1900. (1) Choose ONE reform movement: abolishing slavery, ending serfdom, widening the right to vote, or women\'s rights. (2) Explain what pushed it forward: Enlightenment ideas, religious faith, or another cause, such as a ruler\'s fear of revolt. Use at least one specific piece of evidence, for example the 1787 antislavery society in London, Olaudah Equiano, Russia in 1861, France in 1848, Olympe de Gouges, Mary Wollstonecraft, or the Seneca Falls convention. (3) Explain what the movement had changed by 1900, with a date. (4) Explain one thing that had still not changed by 1900.',
       responseType: 'Checkpoint 2',
-      terms: ['Encyclopédie', 'salons', 'print culture', 'Republic of Letters', 'Wollstonecraft', 'Royal African Company', 'universalism', 'exclusion', 'contradiction'],
-      focus: ['Describe two specific mechanisms of spread, be concrete (Encyclopédie, salons, coffeehouses).', 'Identify two excluded groups and explain the structural reasons for each exclusion, be specific.', 'Write a synthesis: was Enlightenment universalism genuine, hypocritical, or complex? Defend with evidence.']
+      skill: 'Continuity and Change',
+      terms: ['reform movement', 'abolition', 'slavery', 'Quakers', 'Equiano', 'serfdom', 'serfs', 'suffrage', 'vote', 'women\'s rights', 'feminism', 'de Gouges', 'Wollstonecraft', 'Seneca Falls', 'Stanton', 'Mott', 'natural rights', 'religious', 'faith', 'continuity', 'change', '1900'],
+      focus: ['Choose one reform movement and explain what drove it: ideas, faith, or another cause.', 'Explain what it had changed by 1900, with a date and a piece of evidence.', 'Explain one thing that had still not changed by 1900.']
     }
   ];
 
   // ── Module 07, Evidence Lab ───────────────────────────────────────────────
   lesson.evidenceLab = {
-    title: 'Evidence Lab: Build and Test a Claim',
-    task: 'Choose at least two evidence cards. Decide which historical claim each card is most useful for, name one precise detail from each rather than summarizing it, explain the inference that carries the detail to the claim, and identify one limitation or missing piece of evidence. The caption identifies the object; it does not supply your conclusion.',
-    prompt: 'Build a claim about how Enlightenment ideas challenged traditional authority OR about the limits of Enlightenment universalism. Use at least two cards and explain how the evidence supports, complicates, or limits your claim.'
+    title: 'Evidence Lab: By What Right?',
+    task: 'Choose TWO cards. For each, decide what claim the source makes or what it shows about Enlightenment ideas and their effects. An object can make a claim too, without a single sentence of argument.',
+    prompt: 'For EACH of your two cards: (1) say what kind of source it is, who made it, and when, (2) identify and describe the claim it makes, or what it shows, in your own words, using one detail you can see or read, and (3) name one thing the source cannot tell you. Finish with one sentence: do your two cards show a change, a continuity, or both?'
   };
 
   lesson.images = [
     {
-      title: 'The Enlightenment world',
-      url: '../assets/images/instructional-maps/topic-5-1.svg',
-      sourceUrl: '../assets/images/instructional-maps/topic-5-1.svg',
-      caption: 'BeHistorical reference map. Secondary geographic reconstruction of the centres and circulation of Enlightenment thought.',
-      prompt: 'NOTICE where the marked centres cluster. INFER what a network of cities, presses and correspondence made possible that a single court could not. What does a map of centres not show about who was reading?'
+      title: 'An Experiment at Home, 1769',
+      alt: 'Black-and-white print of a candlelit room at night: a lecturer with long grey hair stands behind a glass globe with a bird inside, his hand on the valve at the top of the glass globe; around the table a family and their friends watch, two young girls look upset, and a boy by the window holds a birdcage.',
+      url: '../assets/images/topics/5-1/air-pump-experiment-green-1769.jpg',
+      sourceUrl: 'https://www.metmuseum.org/art/collection/search/359795',
+      caption: 'A mezzotint (a kind of print) made by Valentine Green in London in 1769, copying Joseph Wright of Derby\'s painting of 1768. A traveling lecturer pumps the air out of a glass globe with a bird inside, to show that living things need air. Metropolitan Museum of Art.',
+      prompt: 'NOTICE who is watching and how each person reacts. INFER what this scene claims about how people should find out what is true. Science lectures like this were shown to paying audiences. What can this print not tell you about how most people in 1769 learned about the world?'
     },
     {
-      title: 'Locke on political consent',
-      label: 'Primary-source excerpt · John Locke, Two Treatises of Government, 1689',
+      title: 'The Encyclopédie, Printed in Italy, 1758',
+      alt: 'The title page of a large old printed book: ENCYCLOPÉDIE, OU DICTIONNAIRE RAISONNÉ DES SCIENCES, DES ARTS ET DES MÉTIERS, with the names Diderot and d\'Alembert, Tome Premier, a small engraving of classical figures, and A LUCQUES, M.DCC.LVIII at the bottom.',
+      url: '../assets/images/topics/5-1/encyclopedie-title-lucca-1758.jpg',
+      sourceUrl: 'https://www.metmuseum.org/art/collection/search/716639',
+      caption: 'The title page of volume 1 of the Encyclopédie\'s second edition, printed in Lucca, Italy, in 1758, while the first edition was still coming out in Paris. The title means "Encyclopedia, or a Systematic Dictionary of the Sciences, Arts, and Crafts"; the French word raisonné, "reasoned," means organized and explained by reason. Metropolitan Museum of Art.',
+      prompt: 'NOTICE the title and the place and date at the bottom (M.DCC.LVIII is 1758). INFER what it shows about how far Enlightenment ideas spread, and what the title claims about how knowledge should be organized. What can a title page not tell you about who read the book, or what they thought of it?'
+    },
+    {
+      title: '"Am Not I a Man and a Brother," About 1820',
+      alt: 'A small cream-colored pottery jug with a copper-colored rim; printed on its side in black, a man of African descent sits on a rock by the sea holding a chain, a sailing ship behind him, and the words AM NOT I A MAN AND A BROTHER.',
+      url: '../assets/images/topics/5-1/abolitionist-jug-c1820.jpg',
+      sourceUrl: 'https://www.metmuseum.org/art/collection/search/841224',
+      caption: 'A pottery jug made about 1820, printed with a man of African descent holding a chain and a version of the motto ("Am I not a man and a brother?") first used in 1787 by the London society to end the British slave trade. By about 1820 the trade had been banned, and campaigners were working to end slavery itself. Abolitionists put the motto on everyday objects people used at home. Metropolitan Museum of Art.',
+      prompt: 'NOTICE the words and the picture. INFER what claim the jug makes, and why someone would put it on a jug instead of in a book. Objects like this were made and bought by free people, and no enslaved person chose this picture. What can the jug not tell you about what enslaved people themselves thought or did?'
+    },
+    {
+      title: 'John Locke on Consent, 1689',
+      label: 'Primary-source excerpt · John Locke, Second Treatise of Government, 1689, section 95',
       sourceText: [
-        '“Men being by nature all free, equal, and independent…”',
-        'Political power requires consent.'
+        '“Men being ... by nature, all free, equal, and independent, no one can be put out of this estate, and subjected to the political power of another, without his own consent.”',
+        '(“This estate” means this condition: being free and equal.)'
       ],
-      caption: 'Written in 1689, in the year after a king had been removed from the English throne.',
-      prompt: 'Which phrase is most useful for a claim about legitimate government? What does the passage not reveal about who Locke imagined as fully included?'
+      caption: 'Published in 1689, just after the English Parliament replaced King James II. Most historians think Locke wrote most of it in the early 1680s, when some members of Parliament were trying to keep the Catholic James from becoming king.',
+      prompt: 'Identify Locke\'s claim and describe it in your own words. What older idea about where a ruler\'s power comes from is he arguing against? Who might Locke not have had in mind when he wrote "men"?'
     },
     {
-      title: 'Wollstonecraft turns rights toward women',
-      label: 'Primary-source excerpt · A Vindication of the Rights of Woman, 1792',
+      title: 'Mary Wollstonecraft Answers Rousseau, 1792',
+      label: 'Primary-source excerpt · Mary Wollstonecraft, A Vindication of the Rights of Woman, 1792, chapter 4',
       sourceText: [
-        '“I do not wish them to have power over men;',
-        'but over themselves.”'
+        '“‘Educate women like men,’ says Rousseau, ‘and the more they resemble our sex the less power will they have over us.’',
+        'This is the very point I aim at. I do not wish them to have power over men; but over themselves.”'
       ],
-      caption: 'Published in 1792, arguing from inside Enlightenment logic against the people making it.',
-      prompt: 'How could this excerpt extend Enlightenment logic while exposing a limit in earlier versions of universal rights?'
+      caption: 'Wollstonecraft quotes the Geneva-born writer Rousseau, who had argued that a woman\'s education should be planned around men, and then answers him.',
+      prompt: 'Identify Wollstonecraft\'s claim and describe it in your own words. What does she mean by power "over themselves"? Whose argument is she answering, and how?'
     },
     {
-      title: 'The Encyclopédie as a print network',
-      label: 'Publication record · Encyclopédie, 1751–1772',
+      title: 'Seneca Falls, 1848',
+      label: 'Primary-source excerpt · Declaration of Sentiments, Women\'s Rights Convention, Seneca Falls, New York, 1848',
       sourceText: [
-        '17 volumes of text + 11 volumes of plates',
-        'Printed, banned, reprinted, and circulated across Europe'
+        '“We hold these truths to be self-evident; that all men and women are created equal.”',
+        '“He has never permitted her to exercise her inalienable right to the elective franchise.”'
       ],
-      caption: 'The publication record of a work that was banned and printed anyway, over twenty-one years.',
-      prompt: 'What can the scale and persistence of publication support about diffusion? What can publication numbers not prove about how ordinary people interpreted the ideas?'
-    },
-    {
-      title: 'de Gouges rewrites the declaration',
-      label: 'Primary-source excerpt · Declaration of the Rights of Woman, 1791',
-      sourceText: [
-        '“Woman is born free and remains equal to man in rights.”',
-        'A direct rewrite of revolutionary rights language.'
-      ],
-      caption: 'A direct rewrite of the revolutionary declaration of 1789, published two years later. Its author was executed in 1793.',
-      prompt: 'What contradiction does this evidence make visible? How would you use it to qualify a claim that revolutionary rights were universal?'
-    },
-    {
-      title: 'An Enlightenment salon',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Salon_de_Madame_Geoffrin.jpg?width=1200',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Salon_de_Madame_Geoffrin.jpg',
-      caption: 'Anicet Charles Gabriel Lemonnier, painted in 1812, reconstructing a reading in Madame Geoffrin’s Paris salon of the 1750s. A later picture of an earlier room.',
-      prompt: 'NOTICE who is in the room, who is seated where, and who is not present. INFER what kind of space Enlightenment argument actually happened in. This was painted about sixty years after the scene: what does that cost you as evidence?'
+      caption: 'The declaration copied the opening of the Declaration of Independence of 1776, which reads "all men are created equal," and added two words. "The elective franchise" means the right to vote; "he" means men, or the government men ran.',
+      prompt: 'Which two words did the women at Seneca Falls add to the sentence from 1776? Describe the claim the declaration makes. Is it a change, a continuity, or both, compared with the Declaration of Independence?'
     }
   ];
 

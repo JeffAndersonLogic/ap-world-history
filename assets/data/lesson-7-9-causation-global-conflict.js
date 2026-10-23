@@ -80,7 +80,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Heimler's History — AP World Topic 7.9 / Unit 7 Causation",
         url: "https://www.youtube.com/results?search_query=Heimler+AP+World+7.9+causation+global+conflict",
-        previewImage: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG",
+        previewImage: "../assets/images/commons/infobox-collage-for-wwii-33f084.png",
         prompt: "Watch for how Heimler frames 'relative significance', the AP skill that asks you to rank causes, not just list them. Look for how he distinguishes underlying causes (long-term structural factors) from immediate triggers, and how he connects evidence from different topics into a single causal argument."
       }
     ],
@@ -96,7 +96,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "World War II — montage of the global conflict",
           caption: "Unit 7 synthesis: from empire collapse to total war, six topics of evidence now become the raw material for a single causal argument about relative significance.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG",
+          url: "../assets/images/commons/infobox-collage-for-wwii-33f084.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.PNG"
         }
       },
@@ -111,7 +111,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Atomic bombing of Nagasaki, 1945",
           caption: "The atomic bomb, new military technology that drove wartime casualties to unprecedented levels, asking whether technology causes conflict or simply escalates it.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Nagasakibomb.jpg",
+          url: "../assets/images/commons/nagasakibomb-3298c4.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Nagasakibomb.jpg"
         }
       },
@@ -126,7 +126,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Adolf Hitler, c. 1933",
           caption: "The rise of fascist and totalitarian regimes, the CED's own significance claim ('especially') marks this as the weightiest cause of WWII in the Key Concept.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg",
+          url: "../assets/images/commons/bundesarchiv-bild-183-s33882-adolf-hitler-retouched-8a4d19.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg"
         }
       },
@@ -141,7 +141,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "World empires and territories, c. 1936",
           caption: "The world in 1936, imperial competition still covering much of the globe while the Ottoman, Russian, and Qing empires had already collapsed, leaving power vacuums and unresolved tensions.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png",
+          url: "../assets/images/commons/world-1936-empires-colonies-territory-6d7758.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.png"
         }
       },
@@ -156,7 +156,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Treaty of Versailles, English version",
           caption: "The Versailles settlement, an 'unsustainable peace' the CED names as one cause of WWII, braided together with the Depression, imperialist ambitions, and the rise of fascist regimes.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Treaty_of_Versailles,_English_version.jpg",
+          url: "../assets/images/commons/treaty-of-versailles-english-version-21ea91.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Treaty_of_Versailles,_English_version.jpg"
         }
       },
@@ -171,7 +171,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "World War II — montage of the global conflict",
           caption: "Six topics of evidence, one capstone argument, relative significance asks which causes mattered most and why, not which ones existed.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG",
+          url: "../assets/images/commons/infobox-collage-for-wwii-33f084.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.PNG"
         }
       }
@@ -180,7 +180,7 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Map: The World on the Eve of Global Conflict, c. 1936",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png",
+    url: "../assets/images/commons/world-1936-empires-colonies-territory-6d7758.png",
     sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.png",
     caption: "The world in 1936, imperial territories, alliance pressures, and fascist states. Use this map as a synthesis tool: locate the key actors, empires, and regions that appear across all seven Unit 7 topics.",
     intro: "This capstone uses the map as a synthesis tool, not a content delivery tool. Locate the actors and regions across all seven Unit 7 topics: where did empires collapse? Where did nationalist movements rise? Where did the Depression hit hardest? Where did fascist regimes come to power and expand?",
@@ -207,28 +207,28 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "Atomic bombing of Nagasaki, 1945",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Nagasakibomb.jpg",
+      url: "../assets/images/commons/nagasakibomb-3298c4.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Nagasakibomb.jpg",
       caption: "New military technology, the atomic bomb and fire-bombing put civilians in the target zone and drove wartime casualties to unprecedented levels.",
       prompt: "Does military technology CAUSE global conflict, or does it ESCALATE conflicts that are already happening for other reasons? Use evidence from Topics 7.3 and 7.7 to support your answer, and then rank: is technology an underlying cause or an immediate trigger?"
     },
     {
       title: "Adolf Hitler, c. 1933",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg",
+      url: "../assets/images/commons/bundesarchiv-bild-183-s33882-adolf-hitler-retouched-8a4d19.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg",
       caption: "The rise of fascist and totalitarian regimes, the CED calls this 'especially' the cause of WWII, marking it with a significance claim built into the Key Concept itself.",
       prompt: "The CED uses 'especially' to rank the rise of fascist regimes above other WWII causes. What does this word reveal about how historians weigh relative significance? Do you agree with the CED's implicit ranking, and what evidence from Topic 7.6 or 7.7 would you use to defend or challenge it?"
     },
     {
       title: "Dorothea Lange, 'Migrant Mother,' 1936",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Lange-MigrantMother02.jpg",
+      url: "../assets/images/commons/lange-migrantmother02-99276b.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Lange-MigrantMother02.jpg",
       caption: "The Great Depression, the global economic crisis that discredited democracies, enabled extremism, and braided with other causes into the pathway toward WWII.",
       prompt: "Is economic crisis an underlying cause or an immediate trigger of global conflict? How does the Depression (Topic 7.4) connect to the rise of fascist regimes (Topic 7.6), and what does that connection reveal about how causes braid together rather than operate separately?"
     },
     {
       title: "World empires and territories, c. 1936",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png",
+      url: "../assets/images/commons/world-1936-empires-colonies-territory-6d7758.png",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:World_1936_empires_colonies_territory.png",
       caption: "Imperial competition and empire collapse, the Ottoman, Russian, and Qing empires have fallen; European and Japanese imperial ambitions still drive competition for resources and territory.",
       prompt: "How does imperial competition and the collapse of older empires appear as a cause of global conflict on this map? Connect evidence from Topics 7.1, 7.2, and 7.5 to explain why this is an underlying cause, and rank it: is it more or less significant than the rise of fascist regimes?"

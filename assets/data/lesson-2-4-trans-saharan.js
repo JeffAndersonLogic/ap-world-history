@@ -153,7 +153,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Mansa Musa and Mali\'s wider connections',
           caption: 'Mali\'s wealth and Islamic connections demonstrate how empire and exchange reinforced one another.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',
+          url: '../assets/images/commons/catalan-atlas-bnf-sheet-6-mansa-musa-ec09cc.jpg',
           sourceUrl: 'https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg'
         }
       }

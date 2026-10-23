@@ -159,7 +159,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Partition of India, August 1947",
           caption: "The Radcliffe Line dividing British India into India and Pakistan, drawn in six weeks by a British lawyer who had never visited India, cut through Punjab and Bengal, displacing an estimated 10–20 million people.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Partition_of_India_1947_en.svg",
+          url: "../assets/images/commons/partition-of-india-1947-en-5c3271.svg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Partition_of_India_1947_en.svg"
         }
       },
@@ -175,7 +175,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "1948 Arab-Israeli War and Palestinian displacement",
           caption: "Palestinian Arab refugees displaced during the 1948 Arab-Israeli War, approximately 700,000 people fled or were expelled from their homes. The displacement, known as the Nakba, remains unresolved.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Palestinian_refugees_1948.jpg",
+          url: "../assets/images/commons/palestinian-refugees-1948-5baa2a.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Palestinian_refugees_1948.jpg"
         }
       },
@@ -192,7 +192,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Aswan High Dam, Egypt",
           caption: "The Aswan High Dam, funded in part by revenues from Nasser's nationalization of the Suez Canal, is the most visible symbol of state-led economic development in Nasser's Egypt. Built with Soviet technical assistance, it was completed in 1970.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Aswan_High_Dam.jpg",
+          url: "../assets/images/commons/aswan-high-dam-1c45b5.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Aswan_High_Dam.jpg"
         }
       }
@@ -229,21 +229,21 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "Jawaharlal Nehru and Lord Mountbatten, August 1947",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Lord_Mountbatten_swears_in_Jawaharlal_Nehru_as_the_first_Prime_Minister_of_free_India_on_Aug_15%2C_1947.jpg",
+      url: "../assets/images/commons/lord-mountbatten-swears-in-jawaharlal-nehru-as-the-first-prime-ministe-2938fb.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Lord_Mountbatten_swears_in_Jawaharlal_Nehru_as_the_first_Prime_Minister_of_free_India_on_Aug_15%2C_1947.jpg",
       caption: "India's first Prime Minister Jawaharlal Nehru with Lord Mountbatten, the last British Viceroy of India, at independence. The handoff of power was negotiated, but the Partition it accompanied produced one of the largest humanitarian crises of the 20th century.",
       prompt: "What does this image reveal about the relationship between negotiated independence and the human costs of boundary redrawing? How does Nehru's presence here connect to his role in managing the Partition crisis as head of a weeks-old government?"
     },
     {
       title: "Julius Nyerere signs the Arusha Declaration, 1967",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Julius_Nyerere.jpg",
+      url: "../assets/images/commons/julius-nyerere-180669.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Julius_Nyerere.jpg",
       caption: "Julius Nyerere, President of Tanzania, at the time of the 1967 Arusha Declaration, which committed Tanzania to African socialism (ujamaa) and nationalization of banks and major industries as the path to postcolonial development.",
       prompt: "What does Nyerere's African socialist development model reveal about the economic choices newly independent states faced? How does ujamaa compare to Nasser's model in Egypt or Indira Gandhi's in India, what do they share as an approach to postcolonial development?"
     },
     {
       title: "South Asian immigrants arriving in Britain, 1960s",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Passenger_list_header_M.V._%22Empire_Windrush%22%2C_Tilbury_June_1948.jpg",
+      url: "../assets/images/commons/passenger-list-header-m-v-empire-windrush-tilbury-june-1948-b2137d.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Passenger_list_header_M.V._%22Empire_Windrush%22%2C_Tilbury_June_1948.jpg",
       caption: "South Asian Commonwealth citizens arriving in Britain during the 1960s, one of the three CED migration examples illustrating how former colonial subjects moved to imperial metropoles, maintaining cultural and economic ties after independence.",
       prompt: "How does the migration of South Asians to Britain illustrate KC-6.2.III.B? What does it reveal about the economic relationship between former colonies and former colonizers that persisted after formal independence? What 'continuities' does this migration represent?"

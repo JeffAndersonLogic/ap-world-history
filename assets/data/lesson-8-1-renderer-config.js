@@ -51,16 +51,16 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yalta_Conference_%28Churchill%2C_Roosevelt%2C_Stalin%29_%28B%26W%29.jpg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Yalta_Conference_%28Churchill%2C_Roosevelt%2C_Stalin%29_%28B%26W%29.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Berlinermauer.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mahatma-Gandhi%2C_studio%2C_1931.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Atlantic_charter.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kwame_Nkrumah.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_league_of_nations_mandate.png',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Atlantic_charter.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Clement_Attlee.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Berlinermauer.jpg'
+    map: '../assets/images/commons/yalta-conference-churchill-roosevelt-stalin-b-w-ac0276.jpg',
+    first10: '../assets/images/commons/yalta-conference-churchill-roosevelt-stalin-b-w-ac0276.jpg',
+    contentDelivery: '../assets/images/commons/berlinermauer-159a22.jpg',
+    beSurreal: '../assets/images/commons/mahatma-gandhi-studio-1931-84dac4.jpg',
+    skill: '../assets/images/commons/atlantic-charter-fceaef.jpg',
+    checkpoint1: '../assets/images/commons/kwame-nkrumah-abea09.jpg',
+    evidence: '../assets/images/commons/map-of-league-of-nations-mandate-002e87.png',
+    source: '../assets/images/commons/atlantic-charter-fceaef.jpg',
+    beInTheRoom: '../assets/images/commons/clement-attlee-e0746f.jpg',
+    checkpoint2: '../assets/images/commons/berlinermauer-159a22.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -125,21 +125,21 @@
   lesson.images = [
     {
       title: 'League of Nations Mandate Map',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_league_of_nations_mandate.png',
+      url: '../assets/images/commons/map-of-league-of-nations-mandate-002e87.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Map_of_league_of_nations_mandate.png',
       caption: 'The League of Nations Mandate System divided Germany\'s former colonies among the victorious Allied powers, principally Britain and France.',
       prompt: 'How does this map challenge Wilson\'s promise of self-determination? What does it reveal about the difference between the rhetoric of 1918 and the reality of 1919?'
     },
     {
       title: 'Clement Attlee\'s Cabinet, 1945',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Clement_Attlee.jpg',
+      url: '../assets/images/commons/clement-attlee-e0746f.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Clement_Attlee.jpg',
       caption: 'Britain\'s Labour government under Clement Attlee inherited a bankrupted empire in 1945 and faced simultaneous independence crises across Asia and the Middle East.',
       prompt: 'What does a government\'s financial situation reveal about its ability to maintain imperial commitments? How does treasury exhaustion act as an internal factor in imperial decline?'
     },
     {
       title: 'The Marshall Plan, 1948',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Marshall_Plan.png',
+      url: '../assets/images/commons/marshall-plan-d5371c.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Marshall_Plan.png',
       caption: 'The Marshall Plan (1948) committed $13 billion in U.S. aid to rebuild Western Europe, and to anchor it within the American sphere of influence.',
       prompt: 'Is the Marshall Plan better evidence of American generosity or American strategic interest? Can it be both?'

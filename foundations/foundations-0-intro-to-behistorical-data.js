@@ -4,7 +4,7 @@ window.FOUNDATION_TOPIC = {
   code: 'FOUNDATIONS 0',
   title: 'Intro to BeHistorical',
   subtitle: 'You are not learning history. You are becoming a historian.',
-  heroImage: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_Map_Blank_-_with_blue_sea.svg',
+  heroImage: '../assets/images/commons/world-map-blank-with-blue-sea-b28437.svg',
 
   commandCopy: 'Day 0 is the frame for the entire year. Before students learn a single date, they should know what BeHistorical is asking them to become, a historian, with six specific habits of mind, and what they are building over the year: a personal Historian\'s Portfolio drawn from their own writing. This lesson introduces the six AP historical thinking skills in student-friendly language, walks students and families through the 10-module rhythm they will see every class, and captures a baseline snapshot of each student as a historian on Day 1. That baseline becomes the first entry in the portfolio they will receive in May.',
 
@@ -108,21 +108,21 @@ window.FOUNDATION_TOPIC = {
     items: [
       {
         title: 'Artifact 1 (September): An Early Checkpoint Response',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Song%20Imperial%20Examination.JPG',
+        url: '../assets/images/commons/song-imperial-examination-c3124e.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Song_Imperial_Examination.JPG',
         caption: 'Sample: "Song China had a lot of trade because they had a big navy and good boats. Also they invented paper money." A first-week response. Correct, but flat. The student names two facts. They have not yet learned to place Song China in context or connect those facts to causation. This is where every historian starts.',
         prompt: 'What is this response missing that a stronger version of you, in April, would add?'
       },
       {
         title: 'Artifact 2 (January): A BeInTheRoom Decision',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',
+        url: '../assets/images/commons/catalan-atlas-bnf-sheet-6-mansa-musa-ec09cc.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg',
         caption: 'Sample: "As Mansa Musa\'s advisor, I would spend the gold more slowly on the hajj to Mecca, because sudden inflows of West African gold into Egyptian markets crashed local prices, damaging Mali\'s reputation as a trade partner. Long-term influence matters more than one dramatic gesture.", A mid-year BeInTheRoom response. The student is making a decision as a historical actor, weighing evidence, and using causation naturally.',
         prompt: 'What has this student learned to do by January that they were not doing in September?'
       },
       {
         title: 'Artifact 3 (April): A DBQ Opening',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Maqamat_al-Hariri%2C_folio_86r_%28detail%29.jpg',
+        url: '../assets/images/commons/maqamat-al-hariri-folio-86r-detail-ed5e27.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Maqamat_al-Hariri%2C_folio_86r_%28detail%29.jpg',
         caption: 'Sample: "Industrialization did not liberate workers so much as it re-legitimized coercion. From Manchester\'s cotton mills to Belgian rubber camps in the Congo, the surplus that industrial capitalism produced depended on forms of unfree labor that its own political rhetoric claimed to have abolished, a contradiction that shaped both nineteenth-century imperialism and the labor movements that resisted it.", A late-year DBQ thesis. The student has a voice, a position, and a plan.',
         prompt: 'What is different about this student\'s writing that is not just about learning more content?'
@@ -182,7 +182,7 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'Prehistoric Cave Paintings, Lascaux',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Lascaux_painting.jpg',
+        url: '../assets/images/commons/lascaux-painting-464cd9.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Lascaux_painting.jpg',
         caption: 'Long before writing, humans recorded their world on cave walls. History begins not with memorized dates but with people making meaning from what they saw, the same habit of mind you are about to build.'
       }
@@ -199,7 +199,7 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'Confucius, Tang Dynasty depiction',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Confucius_Tang_Dynasty.jpg',
+        url: '../assets/images/commons/confucius-tang-dynasty-763266.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Confucius_Tang_Dynasty.jpg',
         caption: 'The six skills are habits of mind, practiced in writing every week until they become automatic.'
       }
@@ -216,7 +216,7 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'A Library in the Golden Islamic Age',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/A_Library_in_Golden_Islamic_Age.jpg',
+        url: '../assets/images/commons/a-library-in-golden-islamic-age-18e804.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:A_Library_in_Golden_Islamic_Age.jpg',
         caption: 'The 10-module rhythm is the room you enter every class period. The furniture doesn\'t change, the work you do inside it does.'
       }
@@ -233,7 +233,7 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'The Great Isaiah Scroll, Dead Sea Scrolls',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/The_Great_Isaiah_Scroll_MS_A_%281QIsa%29_-_Google_Art_Project.jpg',
+        url: '../assets/images/commons/the-great-isaiah-scroll-ms-a-1qisa-google-art-project-2c4c4a.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:The_Great_Isaiah_Scroll_MS_A_%281QIsa%29_-_Google_Art_Project.jpg',
         caption: 'Ancient scrolls preserved a community\'s words across millennia, a body of writing kept as a single document. Your portfolio is a version of the same idea, your own writing curated into a letter you own.'
       }
@@ -249,7 +249,7 @@ window.FOUNDATION_TOPIC = {
       ],
       image: {
         title: 'Song Dynasty Palace Examinations',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Palastexamen-SongDynastie.jpg',
+        url: '../assets/images/commons/palastexamen-songdynastie-d17b56.jpg',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Palastexamen-SongDynastie.jpg',
         caption: 'The Song civil-service exam was a compact between a state and its citizens about what counted as a serious mind. The BeHistorical compact is smaller and more honest, but it is a compact, and it starts today.'
       }

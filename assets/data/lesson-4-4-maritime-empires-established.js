@@ -147,7 +147,14 @@ window.BEHISTORICAL_LESSON = {
   lecture: {
     title: "Empires from the Sea: How It Worked",
     intro: "The First & 10 tells the story. These cards take four parts of it apart: why Europeans held coasts instead of countries in Africa and Asia, how China and Japan kept control, how Kongo and Asante grew strong, and how to tell old labor and slavery from new.",
-    videos: [],
+    videos: [
+      {
+        title: "Sea-Based EMPIRES ESTABLISHED [AP World History Review—Unit 4 Topic 4]",
+        url: "https://youtu.be/uyN-jFvI9vo",
+        youtubeId: "uyN-jFvI9vo",
+        prompt: "Use this clip to review how European states built empires by sea while strong states in Asia and Africa kept control. As you watch, note one place Europeans held only a coast and one state that set the terms for Europeans."
+      }
+    ],
     segments: [
       {
         title: "Why Coasts, Not Continents",

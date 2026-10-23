@@ -78,12 +78,12 @@
     map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Decolonization_of_the_Americas.png',
     first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Decolonization_of_the_Americas.png',
     contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Decolonization_of_the_Americas.png',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kwame_Nkrumah_Portrait%2C_The_National_Archives_UK.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_Salt_March.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_Salt_March.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gamal_Abd_El-Nasser_1956.png',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ho_Chi_Minh_1946.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kwame_Nkrumah_Portrait%2C_The_National_Archives_UK.jpg',
+    beSurreal: '../assets/images/commons/kwame-nkrumah-portrait-the-national-archives-uk-cabef7.jpg',
+    skill: '../assets/images/commons/gandhi-salt-march-c406ad.jpg',
+    checkpoint1: '../assets/images/commons/gandhi-salt-march-c406ad.jpg',
+    evidence: '../assets/images/commons/gamal-abd-el-nasser-1956-3dc4c4.png',
+    source: '../assets/images/commons/ho-chi-minh-1946-28121c.jpg',
+    beInTheRoom: '../assets/images/commons/kwame-nkrumah-portrait-the-national-archives-uk-cabef7.jpg',
     checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Decolonization_of_the_Americas.png'
   };
 
@@ -128,21 +128,21 @@
   lesson.images = [
     {
       title: 'Mahatma Gandhi, Salt March, 1930',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gandhi_Salt_March.jpg',
+      url: '../assets/images/commons/gandhi-salt-march-c406ad.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Gandhi_Salt_March.jpg',
       caption: 'Gandhi leads the Salt March in 1930, a 240-mile walk to the sea to collect salt illegally, defying British tax law. The march was a mass act of nonviolent civil disobedience that galvanized Indian independence and drew global attention.',
       prompt: 'How does the Salt March illustrate the INC\'s strategy for pursuing independence? What does it reveal about how Gandhi sought to challenge British imperial rule without armed violence, and why that strategy was effective?'
     },
     {
       title: 'Gamal Abdel Nasser after Suez Canal nationalization, 1956',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Gamal_Abd_El-Nasser_1956.png',
+      url: '../assets/images/commons/gamal-abd-el-nasser-1956-3dc4c4.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Gamal_Abd_El-Nasser_1956.png',
       caption: 'Nasser after announcing the nationalization of the Suez Canal in 1956. The nationalization triggered the Suez Crisis, Britain and France invaded, but U.S. pressure forced their withdrawal, demonstrating the limits of European imperial power in the postwar world.',
       prompt: 'What does Nasser\'s nationalization of the Suez Canal reveal about how decolonization extended beyond formal political independence? How does the Suez Crisis illustrate the role of Cold War superpower pressure in accelerating European decolonization?'
     },
     {
       title: 'Biafra, Nigerian Civil War, 1967–1970',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Food_aid_Nigeria.png',
+      url: '../assets/images/commons/food-aid-nigeria-852bc5.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Food_aid_Nigeria.png',
       caption: 'The Biafran War (1967–1970): the secessionist movement of the Igbo-majority southeast challenged Nigeria\'s colonial-era boundaries. An estimated 1–3 million people died, many from the famine produced by the Nigerian blockade of Biafra.',
       prompt: 'How does the Biafra secessionist movement illustrate the argument that inherited imperial boundaries became fault lines after independence? What does the Biafran War reveal about the relationship between colonial boundary-drawing and postcolonial conflict?'

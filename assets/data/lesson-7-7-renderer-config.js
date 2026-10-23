@@ -69,16 +69,16 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/World_1936_empires_colonies_territory.png',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sir_Winston_Churchill_-_19086236948.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Infobox_collage_for_WWII.PNG',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/JStalin_Secretary_general_CCCP_1942.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sir_Winston_Churchill_-_19086236948.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-S33882,_Adolf_Hitler_retouched.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Sir_Winston_Churchill_-_19086236948.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Signing_Of_The_Social_Security_Act.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nagasakibomb.jpg'
+    map: '../assets/images/commons/world-1936-empires-colonies-territory-6d7758.png',
+    first10: '../assets/images/commons/infobox-collage-for-wwii-33f084.png',
+    contentDelivery: '../assets/images/commons/sir-winston-churchill-19086236948-3e1dab.jpg',
+    beSurreal: '../assets/images/commons/infobox-collage-for-wwii-33f084.png',
+    skill: '../assets/images/commons/jstalin-secretary-general-cccp-1942-4a754d.jpg',
+    checkpoint1: '../assets/images/commons/sir-winston-churchill-19086236948-3e1dab.jpg',
+    evidence: '../assets/images/commons/bundesarchiv-bild-183-s33882-adolf-hitler-retouched-8a4d19.jpg',
+    source: '../assets/images/commons/sir-winston-churchill-19086236948-3e1dab.jpg',
+    beInTheRoom: '../assets/images/commons/signing-of-the-social-security-act-7d6214.jpg',
+    checkpoint2: '../assets/images/commons/nagasakibomb-3298c4.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -143,7 +143,7 @@
   lesson.images = [
     {
       title: 'Atomic bombing of Nagasaki, 1945',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nagasakibomb.jpg',
+      url: '../assets/images/commons/nagasakibomb-3298c4.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Nagasakibomb.jpg',
       caption: 'Photograph of the mushroom cloud over Nagasaki, 9 August 1945, taken from an accompanying aircraft.',
       prompt: 'NOTICE where the photographer is and what is therefore not visible. INFER how the vantage point shapes what this image records and what it hides. Which claims about the bomb can a photograph taken from the air support, and which require other evidence entirely?'

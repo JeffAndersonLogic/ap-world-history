@@ -80,16 +80,16 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Communist_countries_1979-1983.png',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Communist_countries_1979-1983.png',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Communist_countries_1979-1983.png',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/Brave_the_wind_and_the_waves.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ho_Chi_Minh_1946.jpg',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mao_proclaiming_establishment_of_PRC.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/Brave_the_wind_and_the_waves.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mao_proclaiming_establishment_of_PRC.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mao_proclaiming_establishment_of_PRC.jpg',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Communist_countries_1979-1983.png'
+    map: '../assets/images/commons/communist-countries-1979-1983-fbc3f6.png',
+    first10: '../assets/images/commons/communist-countries-1979-1983-fbc3f6.png',
+    contentDelivery: '../assets/images/commons/communist-countries-1979-1983-fbc3f6.png',
+    beSurreal: '../assets/images/commons/brave-the-wind-and-the-waves-e1cc19.jpg',
+    skill: '../assets/images/commons/ho-chi-minh-1946-28121c.jpg',
+    checkpoint1: '../assets/images/commons/mao-proclaiming-establishment-of-prc-ef8422.jpg',
+    evidence: '../assets/images/commons/brave-the-wind-and-the-waves-e1cc19.jpg',
+    source: '../assets/images/commons/mao-proclaiming-establishment-of-prc-ef8422.jpg',
+    beInTheRoom: '../assets/images/commons/mao-proclaiming-establishment-of-prc-ef8422.jpg',
+    checkpoint2: '../assets/images/commons/communist-countries-1979-1983-fbc3f6.png'
   };
 
   lesson.beInTheRoom = {
@@ -133,21 +133,21 @@
   lesson.images = [
     {
       title: 'Great Leap Forward propaganda poster, 1958',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Brave_the_wind_and_the_waves.jpg',
+      url: '../assets/images/commons/brave-the-wind-and-the-waves-e1cc19.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Brave_the_wind_and_the_waves.jpg',
       caption: 'A Great Leap Forward propaganda poster (1958) celebrates the simultaneous drive for agricultural and industrial production, imagery that contrasted sharply with the famine unfolding in Chinese villages.',
       prompt: 'What does this propaganda poster reveal about how the CCP government exercised control of the national economy during the Great Leap Forward? How does the imagery relate to the CED\'s description of \'repressive policies with negative repercussions for the population\'?'
     },
     {
       title: 'Ho Chi Minh and Viet Minh forces, 1950s',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ho_Chi_Minh_1946.jpg',
+      url: '../assets/images/commons/ho-chi-minh-1946-28121c.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_1946.jpg',
       caption: 'Ho Chi Minh led the Viet Minh in combining anti-colonial nationalism with communist land redistribution promises, mobilizing Vietnamese peasants against French colonial rule.',
       prompt: 'How does the Vietnamese case illustrate the relationship between communist revolution and land redistribution? What made redistribution promises an effective tool for building rural support for the Viet Minh?'
     },
     {
       title: 'Shah Mohammad Reza Pahlavi announces White Revolution, 1963',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Iranian_women_voting_during_White_Revolution.jpg',
+      url: '../assets/images/commons/iranian-women-voting-during-white-revolution-6aad46.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Iranian_women_voting_during_White_Revolution.jpg',
       caption: 'Shah Mohammad Reza Pahlavi launched the White Revolution in 1963, a top-down land reform program that redistributed holdings from large landlords, partly to preempt communist organizing and satisfy American pressure for modernization.',
       prompt: 'How does the White Revolution in Iran differ from redistribution in Vietnam or Kerala? What does a monarchical, top-down path to land reform reveal about the range of motivations and methods behind resource redistribution movements?'

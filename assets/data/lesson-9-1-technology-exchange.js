@@ -140,7 +140,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "A container ship in port",
           caption: "The standardized shipping container, introduced in the 1960s, made global trade cheaper and faster, a quiet revolution that reshaped the world economy.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg",
+          url: "../assets/images/commons/container-ship-hanjin-taipei-508dd2.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Container_ship_Hanjin_Taipei.jpg"
         }
       },
@@ -155,7 +155,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Oil refinery, 20th century",
           caption: "Petroleum powered the industrial economies of the 20th century, but created strategic dependencies and environmental consequences.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Anacortes_Refinery_31911.JPG",
+          url: "../assets/images/commons/anacortes-refinery-31911-65b28a.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Anacortes_Refinery_31911.JPG"
         }
       },
@@ -171,7 +171,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Norman Borlaug in a wheat field",
           caption: "Norman Borlaug's high-yield wheat varieties helped avert famine in India and Mexico, but the Green Revolution also concentrated agricultural power and increased chemical dependence.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Norman_Borlaug.jpg",
+          url: "../assets/images/commons/norman-borlaug-de735e.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Norman_Borlaug.jpg"
         }
       },
@@ -186,7 +186,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Polio vaccination campaign",
           caption: "Mass vaccination campaigns against polio and other diseases saved millions of lives, but access remained deeply unequal across regions.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Polio_vaccine_poster.jpg",
+          url: "../assets/images/commons/polio-vaccine-poster-a1abe6.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Polio_vaccine_poster.jpg"
         }
       },
@@ -201,7 +201,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Global fertility rate trends",
           caption: "More effective birth control contributed to declining fertility rates across much of the world, transforming demographic patterns and family structures.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/World_population_growth_rate_1950%E2%80%932050.svg",
+          url: "../assets/images/commons/world-population-growth-rate-1950-2050-0f9394.svg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:World_population_growth_rate_1950%E2%80%932050.svg"
         }
       }
@@ -237,21 +237,21 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "Early Radio Broadcast, 1920s",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Atwater_Kent_Radios_-1927A.jpg",
+      url: "../assets/images/commons/atwater-kent-radios-1927a-e5d06e.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Atwater_Kent_Radios_-1927A.jpg",
       caption: "Radio brought news, entertainment, and government messages into millions of homes for the first time, collapsing the distance between states and citizens.",
       prompt: "How did radio change the relationship between governments and the people they governed? What new possibilities, and risks, did instant mass communication create?"
     },
     {
       title: "Green Revolution Wheat Field, India",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Norman_Borlaug.jpg",
+      url: "../assets/images/commons/norman-borlaug-de735e.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Norman_Borlaug.jpg",
       caption: "Norman Borlaug's high-yield wheat varieties transformed Indian agriculture, but at the cost of chemical dependence and the displacement of smallholder farmers.",
       prompt: "What is the strongest evidence that the Green Revolution succeeded? What is the strongest evidence that it created problems it did not intend to create?"
     },
     {
       title: "Chernobyl Nuclear Power Plant",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Chernobyl_Nuclear_Power_Plant%2C_April_1997.jpg",
+      url: "../assets/images/commons/chernobyl-nuclear-power-plant-april-1997-147851.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Chernobyl_Nuclear_Power_Plant%2C_April_1997.jpg",
       caption: "The Chernobyl disaster (1986) exposed the catastrophic risks of nuclear power, an energy technology that had promised abundant, clean electricity.",
       prompt: "How does Chernobyl illustrate the TEC thematic focus, that technological advances shape human development with both intended and unintended consequences?"

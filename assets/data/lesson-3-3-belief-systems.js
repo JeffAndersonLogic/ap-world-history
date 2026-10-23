@@ -101,7 +101,20 @@ window.BEHISTORICAL_LESSON = {
   lecture: {
     title: "Belief Systems in Motion: Reformation, Rivalry, and New Traditions",
     intro: "Use these cards to explain continuity and change within belief systems from c. 1450 to c. 1750: Christianity changed through Protestant and Catholic reform, Ottoman-Safavid rivalry intensified the Sunni-Shia divide, and Sikhism developed in South Asia amid sustained interaction between Hinduism and Islam.",
-    videos: [],
+    videos: [
+      {
+        title: "Empires: BELIEF SYSTEMS [AP World History Review—Unit 3 Topic 3]",
+        url: "https://youtu.be/pPXreKX0JBM",
+        youtubeId: "pPXreKX0JBM",
+        prompt: "Use this clip to review how belief systems changed and stayed the same from 1450 to 1750. As you watch, note one way Christianity split, how the Ottoman and Safavid rivalry deepened the Sunni and Shia divide, and what Sikhism drew from older traditions."
+      },
+      {
+        title: "History 101: The Protestant Reformation | National Geographic",
+        url: "https://youtu.be/IATyzSAjC1w",
+        youtubeId: "IATyzSAjC1w",
+        prompt: "Use this clip to review why Martin Luther challenged the Catholic Church in 1517 and how his protest split western Christianity. As you watch, write down one thing that changed and one thing that stayed the same."
+      }
+    ],
     segments: [
       {
         title: "Christianity Changes: Protestant and Catholic Reformations",
@@ -114,7 +127,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Martin Luther, c. 1530",
           caption: "A reform leader whose challenge to Church authority became part of a major break within western Christianity.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Lucas_Cranach_-_Portrait_of_Martin_Luther%2C_circa_1530.jpg",
+          url: "../assets/images/commons/lucas-cranach-portrait-of-martin-luther-circa-1530-45d549.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Lucas_Cranach_-_Portrait_of_Martin_Luther,_circa_1530.jpg"
         }
       },
@@ -129,7 +142,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Battle of Chaldiran, 1514",
           caption: "Ottoman-Safavid rivalry made an existing Sunni-Shia division more politically consequential.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Chaldiran_miniature._Sel%C4%ABm-n%C4%81ma%2C_by_%C5%9E%C5%ABkr%C4%AB-i_Bitlis%C4%AB%2C_1524_%28National_Library_of_Israel%2C_Ms._Yah._Ar._1116%29.jpg",
+          url: "../assets/images/commons/battle-of-chaldiran-miniature-selim-nama-by-sukri-i-bitlisi-1524-natio-6489e1.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Battle_of_Chaldiran_miniature._Sel%C4%ABm-n%C4%81ma,_by_%C5%9E%C5%ABkr%C4%AB-i_Bitlis%C4%AB,_1524_(National_Library_of_Israel,_Ms._Yah._Ar._1116).jpg"
         }
       },
@@ -144,7 +157,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Guru Nanak, later devotional portrait",
           caption: "A later devotional image of Guru Nanak, whose teachings helped form a distinct Sikh tradition in Punjab.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Guru_Nanak.png",
+          url: "../assets/images/commons/portrait-of-guru-nanak-f94757.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Portrait_of_Guru_Nanak.png"
         }
       }
@@ -153,8 +166,8 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Ottoman-Safavid Rivalry: An Old Divide Gains New Political Weight",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Safavid_Empire%2C_circa_1630.png",
-    sourceUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Safavid_Empire%2C_circa_1630.png",
+    url: "../assets/images/commons/map-of-the-safavid-empire-circa-1630-5b6cf1.png",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Map_of_the_Safavid_Empire%2C_circa_1630.png",
     caption: "The Safavid Empire at its height, showing the Ottoman Empire to the west and the Mughal Empire to the east, each a land-based empire with distinct religious identities and policies.",
     intro: "Use the map to locate the Ottoman and Safavid empires. The Sunni-Shia split was centuries older than either state; the map helps you see where political rivalry gave that older religious division new imperial weight.",
     prompt: "What does this map help explain about the political rivalry between the Ottoman and Safavid empires? Then separate continuity from change: what religious division already existed, and what became more politically important during the rivalry?",

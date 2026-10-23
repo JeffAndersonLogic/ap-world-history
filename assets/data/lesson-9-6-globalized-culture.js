@@ -156,8 +156,8 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: 'Media Technologies and Reach',
           caption: 'Evidence anchor 1 for Topic 9.6.',
-          url: 'https://commons.wikimedia.org/wiki/Special:FilePath/2006_Olympics_Opening_Ceremony.jpg',
-          sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/2006_Olympics_Opening_Ceremony.jpg'
+          url: '../assets/images/commons/2006-olympics-opening-ceremony-ea6040.jpg',
+          sourceUrl: 'https://commons.wikimedia.org/wiki/File:2006_Olympics_Opening_Ceremony.jpg'
         }
       },
       {
@@ -291,8 +291,8 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: 'Media Technologies and Reach',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/2006_Olympics_Opening_Ceremony.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/2006_Olympics_Opening_Ceremony.jpg',
+      url: '../assets/images/commons/2006-olympics-opening-ceremony-ea6040.jpg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:2006_Olympics_Opening_Ceremony.jpg',
       caption: 'Radio and television created mass audiences before digital networks accelerated exchange.',
       prompt: 'How does this evidence support or qualify a claim about globalized culture after 1900?'
     },

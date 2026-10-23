@@ -120,7 +120,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "NATO and Warsaw Pact military alliances, 1955",
           caption: "By 1955 the Cold War's formal alliance structure had institutionalized the ideological divide into two rival military blocs covering most of Europe and North America.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Cold_war_europe_military_alliances_map_en.png",
+          url: "../assets/images/commons/cold-war-europe-military-alliances-map-en-9963d6.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Cold_war_europe_military_alliances_map_en.png"
         }
       },
@@ -136,7 +136,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Nuclear arms race — U.S. and Soviet warhead counts",
           caption: "The nuclear arms race produced tens of thousands of warheads on each side by the 1980s, enough to destroy civilization many times over under the doctrine of Mutually Assured Destruction.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/US_and_USSR_nuclear_stockpiles.svg",
+          url: "../assets/images/commons/us-and-ussr-nuclear-stockpiles-ac0843.svg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:US_and_USSR_nuclear_stockpiles.svg"
         }
       },
@@ -152,7 +152,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Angolan Civil War — MPLA fighters, 1975",
           caption: "Angola's independence in November 1975 immediately became a Cold War battleground: Soviet- and Cuban-backed MPLA forces fought U.S.- and South African-backed UNITA and FNLA fighters in a civil war that lasted until 2002.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Agostinho_Neto_%2C_president_Angolese_bevrijdingsbeweging_MPLA%2C_in_Nederland_over%2C_Bestanddeelnr_927-8480.jpg",
+          url: "../assets/images/commons/agostinho-neto-president-angolese-bevrijdingsbeweging-mpla-in-nederlan-180ddc.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Agostinho_Neto_%2C_president_Angolese_bevrijdingsbeweging_MPLA%2C_in_Nederland_over%2C_Bestanddeelnr_927-8480.jpg"
         }
       }
@@ -161,7 +161,7 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Cold War Proxy Wars, 1950–1990",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Cold_War_Map_1980.svg",
+    url: "../assets/images/commons/cold-war-map-1980-339187.svg",
     sourceUrl: "https://commons.wikimedia.org/wiki/File:Cold_War_Map_1980.svg",
     caption: "Cold War alignment and proxy conflicts across Latin America, Africa, and Asia, the regions where superpower competition turned violent.",
     intro: "Use the map to identify where U.S. and Soviet proxy conflicts occurred. Notice that most Cold War violence happened outside Europe, in postcolonial states in Latin America, Africa, and Asia that were navigating independence while being pulled into superpower competition.",
@@ -188,21 +188,21 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "NATO founding ceremony, 1949",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Truman_signing_North_Atlantic_Treaty.jpg",
+      url: "../assets/images/commons/truman-signing-north-atlantic-treaty-a89d2a.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Truman_signing_North_Atlantic_Treaty.jpg",
       caption: "The signing of the North Atlantic Treaty, April 4, 1949, formalizing the Western military alliance under American leadership as the primary U.S. instrument for maintaining influence in Europe.",
       prompt: "Who signed NATO, and who did not? What does the treaty's membership reveal about how the United States used the alliance system to extend its influence beyond its own borders?"
     },
     {
       title: "Cuban troops in Angola, 1975",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Cuito_Cuanavale_Montage.jpg",
+      url: "../assets/images/commons/cuito-cuanavale-montage-e41d23.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Cuito_Cuanavale_Montage.jpg",
       caption: "Cuban combat troops deployed to Angola in 1975 at the request of the Soviet-backed MPLA, one of the most direct forms of proxy war intervention in Cold War Africa.",
       prompt: "What does Cuba's military deployment to Angola reveal about how the Soviet bloc used local clients and third-party forces to pursue Cold War objectives? How is this similar to or different from U.S. methods in Nicaragua?"
     },
     {
       title: "Sandinista soldiers, Nicaragua, 1980s",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Revoluci%C3%B3n_sandinista.png",
+      url: "../assets/images/commons/revolucion-sandinista-947ab6.png",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Revoluci%C3%B3n_sandinista.png",
       caption: "Sandinista fighters in Nicaragua during the 1980s Contra conflict, a proxy war in which the U.S. funded insurgents to destabilize a Soviet-aligned government.",
       prompt: "How does the Nicaraguan conflict illustrate the comparison the learning objective demands, comparing the ways the United States and the Soviet Union each sought to maintain influence? What methods did the U.S. use to maintain influence, and how did those compare to Soviet methods in Angola or Korea?"

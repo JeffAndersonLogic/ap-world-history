@@ -4,6 +4,12 @@
 
   lesson.collegeBoardKeyConcepts = [
     {
+      "code": "Unit 5: Learning Objective C",
+      "theme": "Learning Objective",
+      "text": "Explain causes and effects of the various revolutions in the period from 1750 to 1900.",
+      "illustrativeExamples": []
+    },
+    {
       "code": "KC-5.3.II.ii",
       "theme": "Governance",
       "text": "People around the world developed a new sense of commonality based on language, religion, social customs, and territory. This was sometimes harnessed by governments to foster a sense of unity.",
@@ -50,137 +56,142 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: The Revolutionary Atlantic',
+    title: 'First & 10: How Revolutions Made Nations',
     embedUrl: 'first-and-10-topic-5-2-nationalism-and-revolutions-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 5.2 lesson path.'
+    note: 'Read the First & 10 story, answer the three questions, then return to the 5.2 lesson path.'
   };
 
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'The Atlantic Revolutionary wave, 1776–1825', detail: 'The four major Atlantic Revolutions happened in a 50-year window: American (1776), French (1789), Haitian (1791–1804), Latin American (1810–1825). They were connected, the American Revolution inspired the French; the French Revolution\'s declaration of universal rights created the context for the Haitian Revolution; and Latin American independence leaders explicitly cited both. But each was also shaped by its local conditions: who was enslaved, who held power, what the colonial relationship looked like, and what structural crises made revolution possible.' },
-      { label: 'Saint-Domingue as the crucible', detail: 'Saint-Domingue (modern Haiti) was France\'s most profitable colony, producing 40% of Europe\'s sugar and 60% of its coffee in the 1780s. Its population was approximately 500,000 enslaved people, 32,000 white colonists, and 28,000 free people of color (many of mixed race). This demography, enormous enslaved majority, small white minority, significant free colored population with ambiguous legal status, made Saint-Domingue uniquely explosive when the French Revolution declared universal rights. The Haitian Revolution was not a generic slave revolt; it was a specific application of Enlightenment principles to a specific colonial situation.' },
-      { label: 'Nationalism and the multiethnic empires', detail: 'After 1825, the most important application of revolutionary-era nationalism was in Europe, where multiethnic empires, Ottoman, Habsburg, and Russian, faced increasingly powerful nationalist movements demanding self-determination. Greek independence (1821–1829) was the first successful nationalist challenge to the Ottoman Empire, with European liberal support. Italian unification (1861) and German unification (1871) reshaped the European state system. For the AP exam, nationalism matters primarily as a cause of imperial instability, it helps explain why the Ottoman, Habsburg, and Austro-Hungarian empires collapsed in the 19th and early 20th centuries.' },
-      { label: 'Revolutionary outcomes: radical vs. conservative', detail: 'The most important geographic and comparative pattern: revolutionary outcomes varied dramatically depending on who led the revolution and who benefited. The American Revolution was led by white colonial property owners and produced a republic that preserved slavery. The French Revolution was led by bourgeois lawyers and produced a republic that briefly abolished slavery and then reimposed it under Napoleon. The Haitian Revolution was led by enslaved people and produced the first Black republic, and paid an enormous price for it. Latin American independence was led by creole elites and mostly reproduced colonial social hierarchies under new management.' }
+      { label: "The four revolutions", detail: "The United States (1775 to 1783), France (1789 to 1799), Haiti (1791 to 1804), and Spanish America (1810 to 1826). In each, a grievance, the words of a document, and a chance to act came together." },
+      { label: "The numbered arrows", detail: "Each arrow runs from one revolution to another, and its label names what traveled between them. Arrow 1 runs from the United States to France, arrow 2 from France to Haiti, and arrow 3 from Haiti to Spanish America. One link is not drawn: Napoleon's invasion of Spain in 1808 left Spanish America with no king to obey." },
+      { label: "New nations in Europe", detail: "Nationalism joined Italy (1861, with Rome added in 1870) and Germany (1871) together, and pulled the Balkans away from the Ottoman Empire: Greece was declared independent in 1830, and Serbia, Montenegro, and Romania in 1878." },
+      { label: "Reading the map", detail: "The shaded areas mark regions, not exact borders. Read the dates from earliest to latest to see the chain of revolutions, then the new nations that followed." }
     ]
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Casta_painting_all.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Columbus_Taking_Possession.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/FlorentineCodex_BK12_F54_smallpox.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Pillar_of_Vasco_da_Gama.jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Magellan.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Voc.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg'
+    map:             '../assets/images/instructional-maps/topic-5-2.svg',
+    first10:         '../assets/images/topics/5-2/storming-of-the-bastille-thevenin-1790.jpg',
+    contentDelivery: '../assets/images/topics/5-2/declaration-of-independence-durand-1823.jpg',
+    beSurreal:       '',
+    skill:           '../assets/images/topics/5-2/declaration-of-independence-durand-1823.jpg',
+    checkpoint1:     '../assets/images/topics/5-2/no-stamp-act-teapot-1766-75.jpg',
+    evidence:        '../assets/images/topics/5-2/toussaint-louverture-on-horseback-1802.jpg',
+    source:          '',
+    beInTheRoom:     '',
+    checkpoint2:     '../assets/images/topics/5-2/hall-of-mirrors-leclerc-1684.jpg'
+  };
+
+  lesson.classPresentation = {
+    title: 'Class Slides: How Revolutions Made Nations',
+    desc: "Follow the story: the grievance, the words, and the chance behind the American, French, Haitian, and Spanish American revolutions, how each one helped another start or win, what they created, and how the nation joined Italy and Germany together and broke the Balkans away from the Ottoman Empire.",
+    url: 'presentation-topic-5-2-student.html'
   };
 
   lesson.beInTheRoom = {
     url: '../beintheroom/unit-5/the-saint-domingue-constitution.html',
-    desc: "Join Saint-Domingue’s 1801 constitutional council and balance emancipation, plantation production, citizenship, and survival under French pressure."
+    desc: "Port-Républicain (Port-au-Prince), Saint-Domingue, spring 1801. The revolution has ended slavery in the colony, and France still claims it. A council must write a constitution that protects that freedom, keeps people fed and the colony defended, and decides how far to stand against France."
   };
 
   lesson.skillBuilder = {
-    label: 'Comparison practice',
-    title: 'Comparing the Atlantic Revolutions: Who Applied Enlightenment Ideals — and Who Did Not?',
-    intro: 'Comparison for Topic 5.2 requires identifying both similarities and differences among the Atlantic Revolutions, and explaining what those comparisons reveal. The most common AP error is describing each revolution separately without identifying the specific similarity or difference being compared. A strong comparison argument uses the structure: "Both X and Y did [similarity], but X differed from Y in [difference], which reveals [broader point]."',
+    label: "Claims and evidence practice",
+    title: "Compare Two Sources",
+    intro: "The revolutions of 1750 to 1900 produced famous documents, and each one makes an argument. To compare two sources, say each one's argument in your own words, say one way they agree and one way they differ, and then explain the difference: what was each document answering? Watch the move on two declarations, then try it yourself.",
     steps: [
-      { label: 'Identify a meaningful similarity (with evidence)', text: 'Similarity: All four Atlantic Revolutions drew on Enlightenment natural rights theory to justify the overthrow of existing authority. Evidence: The American Declaration of Independence (1776) cited Locke\'s natural rights language almost verbatim; the French Declaration of the Rights of Man (1789) declared universal natural rights; Toussaint Louverture\'s writings explicitly invoked French revolutionary principles; Bolívar\'s proclamations cited both Locke and Rousseau. The similarity is not superficial, the same vocabulary appeared in all four because all four revolutionaries were reading the same Enlightenment texts.' },
-      { label: 'Identify a meaningful difference (with evidence)', text: 'Difference: The four revolutions defined the population covered by "natural rights" very differently. The American Revolution explicitly excluded enslaved Africans (Jefferson owned enslaved people while writing "all men are created equal"). The French Revolution briefly included enslaved people (abolition in 1794) then reversed itself (Napoleon\'s reimposition, 1802). The Haitian Revolution included everyone, and is the only Atlantic Revolution where the universal claim was actually applied universally. Latin American independence mostly transferred power from one elite to another without fundamentally changing social hierarchies. The difference reveals that "universal" rights in the Enlightenment era were always defined by who held power.' },
-      { label: 'Write the synthesis statement', text: 'A strong comparison ends with synthesis: what does the pattern of similarities and differences reveal? All Atlantic Revolutions claimed to apply Enlightenment natural rights theory; none applied it without contradiction. The American Revolution preserved slavery while creating a republic. The French Revolution proclaimed universal rights while reimposing slavery in its colonies. The Haitian Revolution applied the universal claim most consistently, and was punished for it by every other Atlantic revolutionary state. The comparison reveals that the Enlightenment\'s promise of universal rights and the practice of Atlantic revolutionary politics were fundamentally in tension, and that the resolution of that tension depended entirely on who led the revolution and who controlled its outcome.' }
+      { label: "Read the two sources", text: "Source A, the Declaration of the Rights of Man and of the Citizen, France, August 1789, Article 1: \"Men are born and remain free and equal in rights.\" Source B, Toussaint Louverture's proclamation to the people of Saint-Domingue, August 1793: \"I want Liberty and Equality to reign in Saint Domingue.\"" },
+      { label: "Say each argument", text: "Source A argues that every man is born free and equal in rights. Source B argues that liberty and equality must rule in Saint-Domingue, a colony where most people were enslaved." },
+      { label: "Say how they agree and differ", text: "They agree that liberty and equality belong to people by right. They differ in who claims them: the French Assembly wrote the words for France, while Toussaint claimed them for enslaved people in a French colony, and called them to fight for them." },
+      { label: "Explain the difference", text: "The difference comes from each grievance. The Assembly was answering privilege in France. Toussaint was answering slavery in Saint-Domingue, which the Assembly's declaration had left in place. Use this frame: \"Both [Source A] and [Source B] argue that [what they share], but [how they differ], because [what caused each one].\"" }
     ],
-    prompt: 'In 3–4 sentences, write a comparison argument about the Atlantic Revolutions. Identify one meaningful similarity and one meaningful difference between the Haitian Revolution and either the American or the French Revolution. Explain what the difference reveals about the relationship between Enlightenment ideals and political reality in the Atlantic Revolutionary era.'
+    prompt: "Now do it yourself. Choose ONE pair. Pair 1: the Declaration of Independence (1776), governments get \"their just powers from the consent of the governed,\" and Simón Bolívar's Letter from Jamaica (1815), \"institutions which are wholly representative are not suited to our character, customs, and present knowledge.\" Pair 2: the Declaration of Independence (1776), governments get \"their just powers from the consent of the governed,\" and the Declaration of the Rights of Man and of the Citizen (1789), \"The principle of all sovereignty resides essentially in the nation.\" (Sovereignty means the highest power in a state.) Write three sentences: say each source's argument in your own words, say one way they agree and one way they differ, and explain what caused the difference.",
+    criteria: [
+      "I said each source's argument in my own words.",
+      "I named one way the two sources agree.",
+      "I named one way they differ.",
+      "I explained what caused the difference, using what I know about each revolution."
+    ]
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: The Atlantic Revolutions and the Haitian Revolution',
-      subtitle: 'Checks Learning Targets 1 and 2 — Atlantic Revolutions and the most radical application of Enlightenment ideas.',
-      cardDesc: 'American, French, Haitian, and Latin American revolutions, causes, outcomes, and the question of who was included.',
+      title: "Checkpoint 1: What Caused a Revolution, and What It Created",
+      subtitle: "Checks Learning Targets 1 and 2 and Success Criteria 1 and 2.",
+      cardDesc: "One revolution's grievance, words, and chance, what it created, and how it was linked to another revolution.",
       learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
-      prompt: 'Choose two Atlantic Revolutions (American, French, Haitian, or Latin American). For each, identify one specific Enlightenment idea it drew on AND one structural condition that also contributed to its outbreak. Then compare the two: in what way was the Haitian Revolution more radical than the other? Be specific about what "most radical" means, what did the Haitian Revolution challenge that the other revolutions did not?',
-      responseType: 'Checkpoint 1',
-      terms: ['natural rights', 'popular sovereignty', 'Toussaint Louverture', 'Bois Caïman', 'Haitian Revolution', 'Declaration of Independence', 'Declaration of Rights of Man', 'Seven Years War', 'Saint-Domingue', 'Napoleon'],
-      focus: ['Identify one Enlightenment idea AND one structural condition for each revolution you choose.', 'Compare: explain specifically what made the Haitian Revolution more radical than your other example.', "Be specific about what 'most radical' means, what did Haiti challenge that others didn't?"]
+      prompt: "Answer in four steps. (1) Choose ONE revolution: the American, the French, the Haitian, or the Spanish American. Name its grievance: what were people angry about? (2) Name its words: a document that named the grievance or rallied people to the cause, and one idea in it. (3) Name its chance: what made the moment possible? (4) Explain what the revolution created, and one way it helped another revolution start or win, or was helped by one. Then name one new idea about government that came out of the revolutions, liberalism or democracy, and say what it means.",
+      responseType: "Checkpoint 1",
+      terms: ["grievance", "words", "chance", "revolution", "Stamp Act", "taxation", "representation", "Declaration of Independence", "consent", "Estates-General", "bankrupt", "Bastille", "Rights of Man", "sovereignty", "nation", "Saint-Domingue", "free people of color", "Toussaint Louverture", "Haiti", "creoles", "peninsulares", "Napoleon", "Bolívar", "Letter from Jamaica", "Pétion", "republic", "independent"],
+      focus: ["Name the grievance, the words, and the chance, with a detail for each.", "Explain what the revolution created.", "Explain one link to another revolution.", "Explain liberalism or democracy as a new idea about government."]
     },
     {
-      title: 'Checkpoint 2: Nationalism and Its Impact on Multiethnic Empires',
-      subtitle: 'Checks Learning Target 3 — nationalism as a destabilizing force in 19th-century politics.',
-      cardDesc: 'Nationalism, self-determination, and the challenge to Ottoman, Habsburg, and Russian empires.',
+      title: "Checkpoint 2: How Nationalism Joined and Broke States",
+      subtitle: "Checks Learning Target 3, Success Criterion 3, and Unit 5 Learning Objective C.",
+      cardDesc: "What a nation is, how governments used shared loyalty, one country nationalism joined together, and one people it pulled away from an empire.",
       learningTargets: [lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[2].criteria],
-      prompt: 'Define nationalism in your own words, what does it mean, and how does it differ from patriotism or loyalty to a monarch? Explain how nationalism emerged from the Atlantic Revolutionary movements. Then give one specific example of a nationalist movement challenging a multiethnic empire in the 19th century. Explain: what specific group wanted self-determination, which empire did it challenge, and what was the outcome?',
-      responseType: 'Checkpoint 2',
-      terms: ['nationalism', 'self-determination', 'multiethnic empire', 'Ottoman Empire', 'Habsburg Empire', 'Greek independence', 'Italian unification', 'German unification', 'Bolívar', 'creole'],
-      focus: ['Define nationalism clearly, how is it different from loyalty to a dynasty or a religion?', 'Explain the causal chain: how did Atlantic Revolutions produce nationalism as an ideology?', 'Give one specific nationalist movement, the empire it challenged, and the outcome, be concrete.']
+      prompt: "Explain how nationalism caused changes to states between 1789 and 1900. (1) Explain what a nation is: what do the people in it share? (2) Choose one government that used shared loyalty, revolutionary France in 1793 or the Ottoman Empire, and explain what it did and why. (3) Choose ONE country that nationalism joined together, Italy or Germany, and explain how and when it was united. (4) Choose ONE people that nationalism pulled away from the Ottoman Empire, Greece in 1830, or Serbia, Montenegro, or Romania in 1878, and explain how and when it became independent. (5) Explain why the same cause, nationalism, could have both effects.",
+      responseType: "Checkpoint 2",
+      skill: "Causation",
+      terms: ["nation", "nationalism", "language", "religion", "customs", "homeland", "unity", "government", "Ottomanism", "Ottoman Empire", "citizen", "unification", "Italy", "Cavour", "Garibaldi", "1861", "Germany", "Bismarck", "Prussia", "1871", "Balkans", "Greece", "1830", "Serbia", "1878", "independent", "cause", "effect"],
+      focus: ["Explain what a nation shares, and one way a government used shared loyalty.", "Explain one state nationalism joined together, with a date.", "Explain one people nationalism pulled away from an empire, with a date.", "Explain why one cause had both effects."]
     }
   ];
 
   // ── Module 07, Evidence Lab ───────────────────────────────────────────────
   lesson.evidenceLab = {
-    title: 'Evidence Lab: Build and Test a Claim',
-    task: 'Choose at least two evidence cards. Decide which historical claim each card is most useful for, name one precise detail from each rather than summarizing it, explain the inference that carries the detail to the claim, and identify one limitation or missing piece of evidence. The caption identifies the object; it does not supply your conclusion.',
-    prompt: 'Make a defensible claim about one similarity or difference among Atlantic revolutions, or about how Enlightenment ideas and nationalism shaped revolutionary movements. Use evidence from at least two different revolutions.'
+    title: 'Evidence Lab: Causes and Effects of the Revolutions',
+    task: "Choose at least two evidence cards. For each, say what kind of source it is and who made it, name one precise detail rather than summarizing it, explain what that detail shows about a cause or an effect of the revolutions, and name one thing the source cannot tell you. The caption identifies the source; it does not supply your conclusion.",
+    prompt: "Make a claim about one cause or one effect of the revolutions of 1750 to 1900. Support it with evidence from at least two cards."
   };
 
   lesson.images = [
     {
-      title: 'The Atlantic revolutions',
-      url: '../assets/images/instructional-maps/topic-5-2.svg',
-      sourceUrl: '../assets/images/instructional-maps/topic-5-2.svg',
-      caption: 'BeHistorical reference map. Secondary geographic reconstruction of the revolutions of the period and their sequence.',
-      prompt: 'NOTICE the order in which the marked revolutions occur and where they sit relative to one another. INFER what travelled between them. What would you need beyond a map to prove influence rather than coincidence?'
+      title: "\"No Stamp Act\" Teapot, 1766 to 1775",
+      alt: "A cream-colored pottery teapot with a twisted handle and spout; on its side, inside a wreath of red and black painted leaves, the words No Stamp Act",
+      url: "../assets/images/topics/5-2/no-stamp-act-teapot-1766-75.jpg",
+      sourceUrl: "https://www.metmuseum.org/art/collection/search/8332",
+      caption: "A pottery teapot made in England between 1766 and 1775 for sale in the American colonies, painted \"No Stamp Act.\" Parliament passed the Stamp Act in 1765 to tax the colonies and repealed it in 1766. Metropolitan Museum of Art.",
+      prompt: "NOTICE the words and where they are painted. INFER what the teapot shows about how ordinary colonists felt about British taxes, and why English potters would make it. What can a teapot not tell you about why the colonists went to war ten years later?"
     },
     {
-      title: 'American independence language',
-      label: 'Primary-source excerpt · Declaration of Independence, 1776',
-      sourceText: [
-        '“all men are created equal”',
-        'Government derives “just powers” from consent'
-      ],
-      caption: 'The founding text of a revolution led largely by slave-owning property holders.',
-      prompt: 'What political principle is visible here? What additional evidence would you need before claiming the Revolution transformed social equality?'
+      title: "The Declaration of Independence, 1776",
+      label: "Primary-source excerpt · Declaration of Independence, 4 July 1776",
+      sourceText: ["“Governments are instituted among Men, deriving their just powers from the consent of the governed, …”", "“… whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it”"],
+      caption: "Adopted by the Continental Congress of the thirteen colonies. Text from the National Archives transcription; the middle of the sentence is cut.",
+      prompt: "What argument does this make about where a government's power comes from? How does it turn a grievance into a reason for independence? What does it leave out about who counted as \"the governed\" in 1776?"
     },
     {
-      title: 'The Bastille falls, 14 July 1789',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Prise_de_la_Bastille.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Prise_de_la_Bastille.jpg',
-      caption: 'Watercolour by Jean-Pierre Houël, made in 1789, the year of the event. The Bastille was a royal prison and armoury holding seven prisoners that day.',
-      prompt: 'NOTICE who is shown doing the fighting, and what kind of building is under attack. INFER what the attackers wanted from this particular target rather than from the monarchy in general. What can a picture made in the same year show you that a painting produced fifty years later could not?'
+      title: "The Storming of the Bastille, 1789",
+      alt: "Black-and-white etching of a fight at the gate of a stone fortress: a crowd of men, some in uniform, push forward with muskets and pikes through smoke, a cannon tipped over on the left, wounded men on the ground, and a man raising a flag on a pole",
+      url: "../assets/images/topics/5-2/storming-of-the-bastille-thevenin-1790.jpg",
+      sourceUrl: "https://www.clevelandart.org/art/2015.21",
+      caption: "An etching by the French artist Charles Thévenin, made in 1790, a year after the crowd of Paris took the Bastille, a royal fortress and prison, on 14 July 1789. Cleveland Museum of Art.",
+      prompt: "NOTICE who is fighting and how the artist shows them. INFER how the artist, a year later, wanted people to remember the day. What can a picture made to celebrate an event not tell you about why the crowd was there?"
     },
     {
-      title: 'French rights declaration',
-      label: 'Primary-source excerpt · Declaration of the Rights of Man and of the Citizen, 1789',
-      sourceText: [
-        '“Men are born and remain free and equal in rights.”',
-        'Sovereignty resides in the nation.'
-      ],
-      caption: 'Adopted in August 1789, six weeks after the fall of the Bastille.',
-      prompt: 'How does this evidence resemble or differ from American revolutionary language? What claim about popular sovereignty could it support?'
+      title: "Toussaint Louverture's Proclamation, 1793",
+      label: "Primary-source excerpt · Toussaint Louverture, Camp Turel, Saint-Domingue, 29 August 1793",
+      sourceText: ["“Brothers and Friends, I am Toussaint Louverture; perhaps my name has made itself known to you. I have undertaken vengeance.”", "“I want Liberty and Equality to reign in Saint Domingue. I am working to make that happen. Unite yourselves to us, brothers, and fight with us for the same cause.”"],
+      caption: "A short public call to the enslaved people of Saint-Domingue, two years into their revolution, in Madison Smartt Bell's English translation (2007). Toussaint was then fighting on Spain's side against France.",
+      prompt: "Which words does Toussaint share with the French declaration of 1789? INFER why he used them. What can this proclamation not tell you about what the people who heard it wanted?"
     },
     {
-      title: 'Haiti abolishes the plantation order',
-      label: 'Legal record · Haitian independence 1804 and Constitution 1805',
-      sourceText: [
-        'Independence followed the only successful large-scale slave revolt.',
-        'The new state rejected legal racial slavery.'
-      ],
-      caption: 'The only one of these revolutions led by the enslaved, and the only one to abolish slavery outright.',
-      prompt: 'What makes Haiti a stronger test of Enlightenment universalism than a revolution led by property-owning colonists? What evidence would you need about postrevolutionary equality?'
+      title: "Toussaint Louverture on Horseback, a French Print of 1802",
+      alt: "A hand-colored print of a Black general in a blue coat with gold braid, a red sash and a plumed hat, raising a curved sword as his horse rears; a lighthouse and the sea behind him; below, the words Toussaint Louverture, Chef des Noirs Insurgés de Saint Domingue",
+      url: "../assets/images/topics/5-2/toussaint-louverture-on-horseback-1802.jpg",
+      sourceUrl: "https://www.metmuseum.org/art/collection/search/852913",
+      caption: "A hand-colored etching made in France in 1802, the year Napoleon's army landed in Saint-Domingue. The caption calls him \"chief of the Black insurgents of Saint-Domingue.\" A French printmaker's idea of him, not a portrait from life. Metropolitan Museum of Art.",
+      prompt: "NOTICE how the print shows Toussaint, and the word the caption uses for him. INFER what a French buyer in 1802 was meant to think of him. What can a French print not tell you about how Haitians saw their own revolution?"
     },
     {
-      title: 'Bolívar on a distinct American identity',
-      label: 'Primary-source excerpt · Jamaica Letter, 1815',
-      sourceText: [
-        '“We are neither Indians nor Europeans…”',
-        'A new political identity is argued into existence.'
-      ],
-      caption: 'Written in exile in 1815, arguing that Spanish America was neither Spain nor its indigenous past.',
-      prompt: 'How can this phrase support a claim about nationalism in Latin American independence? What groups remain blurred by Bolívar’s “we”?'
+      title: "Bismarck on \"Iron and Blood,\" 1862",
+      label: "Primary-source excerpt · Otto von Bismarck to the Prussian parliament's budget committee, 30 September 1862, as summarized in reported speech, not his exact words",
+      sourceText: ["“it is not by speeches and majority resolutions that the great questions of the time are decided”", "“—that was the big mistake of 1848 and 1849—but by iron and blood.”"],
+      caption: "Bismarck had just become Prussia's chief minister. Nine years later Prussia's wars had united Germany. Translation from German History in Documents and Images.",
+      prompt: "What does Bismarck say will decide the great questions of the time? What was \"the big mistake of 1848 and 1849\"? Use the caption to connect his words to Germany. This is a summary of what he said, not his exact words. What can it not tell you for certain?"
     }
   ];
 

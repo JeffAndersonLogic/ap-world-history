@@ -145,7 +145,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Mao Zedong proclaims the People's Republic of China, 1949",
           caption: "On October 1, 1949, Mao Zedong proclaimed the founding of the People's Republic of China from Tiananmen Gate, the culmination of decades of internal tension and anti-Japanese struggle.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mao_proclaiming_establishment_of_PRC.jpg",
+          url: "../assets/images/commons/mao-proclaiming-establishment-of-prc-ef8422.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Mao_proclaiming_establishment_of_PRC.jpg"
         }
       },
@@ -161,7 +161,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Great Leap Forward — backyard steel furnace, 1958",
           caption: "During the Great Leap Forward, Chinese communes operated thousands of backyard steel furnaces, melting down household implements to meet centrally mandated production targets. The resulting steel was largely unusable while agricultural production collapsed.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Backyard_furnace.jpg",
+          url: "../assets/images/commons/backyard-furnace-a7921f.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Backyard_furnace.jpg"
         }
       },
@@ -177,7 +177,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Ho Chi Minh, Vietnamese independence leader",
           caption: "Ho Chi Minh combined Vietnamese nationalism with communist ideology, mobilizing peasant support through promises of land redistribution while fighting French colonialism in the First Indochina War (1946–1954).",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ho_Chi_Minh_1946.jpg",
+          url: "../assets/images/commons/ho-chi-minh-1946-28121c.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_1946.jpg"
         }
       }
@@ -186,7 +186,7 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Communist and Redistribution Movements, 1900–1979",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Communist_countries_1979-1983.png",
+    url: "../assets/images/commons/communist-countries-1979-1983-fbc3f6.png",
     sourceUrl: "https://commons.wikimedia.org/wiki/File:Communist_countries_1979-1983.png",
     caption: "Communist and socialist states at peak Cold War spread, showing the geographic range of movements to redistribute land and resources across Africa, Asia, and Latin America.",
     intro: "Use the map to trace the geographic spread of communist and socialist movements after 1900. China, Vietnam, Ethiopia, and the wider pattern of redistribution movements show how the ideological conflict of the Cold War era intersected with the drive for economic transformation across the postcolonial world.",
@@ -214,21 +214,21 @@ window.BEHISTORICAL_LESSON = {
   images: [
     {
       title: "Great Leap Forward propaganda poster, 1958",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Brave_the_wind_and_the_waves.jpg",
+      url: "../assets/images/commons/brave-the-wind-and-the-waves-e1cc19.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Brave_the_wind_and_the_waves.jpg",
       caption: "A Great Leap Forward propaganda poster (1958) celebrates the simultaneous drive for agricultural and industrial production, imagery that contrasted sharply with the famine unfolding in Chinese villages.",
       prompt: "What does this propaganda poster reveal about how the CCP government exercised control of the national economy during the Great Leap Forward? How does the imagery relate to the CED's description of 'repressive policies with negative repercussions for the population'?"
     },
     {
       title: "Ho Chi Minh and Viet Minh forces, 1950s",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Ho_Chi_Minh_1946.jpg",
+      url: "../assets/images/commons/ho-chi-minh-1946-28121c.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_1946.jpg",
       caption: "Ho Chi Minh led the Viet Minh in combining anti-colonial nationalism with communist land redistribution promises, mobilizing Vietnamese peasants against French colonial rule.",
       prompt: "How does the Vietnamese case illustrate the relationship between communist revolution and land redistribution? What made redistribution promises an effective tool for building rural support for the Viet Minh?"
     },
     {
       title: "Shah Mohammad Reza Pahlavi announces White Revolution, 1963",
-      url: "https://commons.wikimedia.org/wiki/Special:FilePath/Iranian_women_voting_during_White_Revolution.jpg",
+      url: "../assets/images/commons/iranian-women-voting-during-white-revolution-6aad46.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Iranian_women_voting_during_White_Revolution.jpg",
       caption: "Shah Mohammad Reza Pahlavi launched the White Revolution in 1963, a top-down land reform program that redistributed holdings from large landlords, partly to preempt communist organizing and satisfy American pressure for modernization.",
       prompt: "How does the White Revolution in Iran differ from redistribution in Vietnam or Kerala? What does a monarchical, top-down path to land reform reveal about the range of motivations and methods behind resource redistribution movements?"

@@ -65,7 +65,9 @@ const TOPIC_ART = '';
 // a hand edit to one survives exactly until the next rebuild. One authored pool
 // per topic, and every card is either a picture or declared text evidence. See
 // the authenticity gate in docs/module-07-scaffolding-standard.md.
-const COMMONS = name => `https://commons.wikimedia.org/wiki/Special:FilePath/${name}`;
+// Pictures are served from repo-local copies (scripts/mirror-commons-images.js);
+// the Commons file page stays the credit link.
+const { commonsCopy: COMMONS, pageForCopy } = require('./mirror-commons-images');
 const COMMONS_PAGE = name => `https://commons.wikimedia.org/wiki/File:${name}`;
 const picture = (name, title, caption, prompt) => ({ title, url: COMMONS(name), sourceUrl: COMMONS_PAGE(name), caption, prompt });
 const localMap = (file, title, caption, prompt) => ({ title, url: `../assets/images/instructional-maps/${file}`, sourceUrl: `../assets/images/instructional-maps/${file}`, caption, prompt });
@@ -329,7 +331,7 @@ const topics = [
       ['KC-6.3.II.B', 'Changing economic institutions, multinational corporations, and regional trade agreements reflected the spread of principles and practices associated with free-market economics throughout the world.', ['WTO', 'NAFTA', 'ASEAN', 'Nestlé', 'Nissan', 'Mahindra and Mahindra']]
     ],
     cases: ['Deng-era economic reforms', 'Bangladesh garment manufacturing', 'NAFTA and regional trade', 'Multinational corporations'],
-    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Container_ship_Hanjin_Taipei.jpg',
+    image: '../assets/images/commons/container-ship-hanjin-taipei-508dd2.jpg',
     reading: [
       ['A New Rulebook', 'The end of the Cold War accelerated a turn toward economic liberalization. Governments reduced barriers, privatized state enterprises, welcomed investment, and argued that markets would allocate resources more efficiently. Reagan, Thatcher, Deng, and Pinochet pursued different versions under very different political systems.'],
       ['A New Geography of Work', 'Information technology helped knowledge economies grow in Finland, Japan, and the United States while firms placed manufacturing in lower-wage production zones in Vietnam, Bangladesh, Mexico, and Honduras. Globalization connected design, finance, assembly, shipping, and retail across borders.'],
@@ -361,7 +363,7 @@ const topics = [
       ['KC-6.3.II.C', 'Movements throughout the world protested the inequality of the environmental and economic consequences of global integration.', ['Greenpeace', 'Wangari Maathai’s Green Belt Movement', 'World Fair Trade Organization']]
     ],
     cases: ['Universal Declaration of Human Rights', 'Global feminism and expanded education', 'End of apartheid and civil-rights law', 'Green Belt and fair-trade movements'],
-    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Wangari_Maathai.jpg',
+    image: '../assets/images/commons/wangari-maathai-6c555d.jpg',
     reading: [
       ['Rights Become a Global Language', 'The Universal Declaration of Human Rights offered activists a language for challenging discrimination against women, racial and religious minorities, refugees, and children. Negritude, liberation theology, and global feminism translated universal claims into distinct political settings.'],
       ['Doors Open, Unevenly', 'Voting rights, civil-rights legislation, the end of apartheid, caste reservation, female literacy, and expanded higher education changed access to public life. Formal inclusion did not eliminate unequal wealth, violence, prejudice, or institutional barriers.'],
@@ -393,7 +395,7 @@ const topics = [
       ['KC-6.3.IV.iii', 'Consumer culture became globalized and transcended national borders.', ['Alibaba', 'eBay', 'Toyota', 'Coca-Cola']]
     ],
     cases: ['Reggae as global music', 'Bollywood and transnational film audiences', 'World Cup and Olympic spectacle', 'Alibaba, Toyota, and Coca-Cola'],
-    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/2006_Olympics_Opening_Ceremony.jpg',
+    image: '../assets/images/commons/2006-olympics-opening-ceremony-ea6040.jpg',
     reading: [
       ['Signals Cross Borders', 'Radio, television, film, recordings, satellites, and the internet moved culture faster and farther. Reggae emerged from Jamaican history yet became a global language of identity and protest; Bollywood films joined Indian storytelling to worldwide audiences.'],
       ['Shared Spectacles, Different Meanings', 'The BBC, World Cup, Olympics, and social media created simultaneous global audiences. Participation did not make culture identical: viewers translated global forms through language, religion, class, race, and national memory.'],
@@ -421,7 +423,7 @@ const topics = [
     loCode: 'Unit 9: Learning Objective G', lo: 'Explain the various responses to increasing globalization from 1900 to present.',
     kcs: [['KC-6.3.IV.iv', 'Responses to rising cultural and economic globalization took a variety of forms.', ['Anti-IMF and anti-World Bank activism', 'Locally developed social media such as Weibo in China']]],
     cases: ['Anti-IMF activism', 'Anti-World Bank campaigns', 'Seattle WTO protests', 'Weibo and locally developed platforms'],
-    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/WTO_Protests-Seattle-Marchers-29Nov1999.jpg',
+    image: '../assets/images/commons/wto-protests-seattle-marchers-29nov1999-5a3fe3.jpg',
     reading: [
       ['Resistance Is Not Isolation', 'Critics of globalization often opposed particular rules, institutions, or distributions of power rather than all cross-border exchange. Anti-IMF and anti-World Bank activists challenged debt conditions, austerity, labor effects, and environmental costs.'],
       ['Many Coalitions, Many Goals', 'Labor unions, environmentalists, farmers, indigenous groups, nationalists, religious movements, and digital-rights advocates resisted globalization for different reasons. The same institution could be criticized as undemocratic, culturally destructive, or economically unequal.'],
@@ -449,7 +451,7 @@ const topics = [
     loCode: 'Unit 9: Learning Objective H', lo: 'Explain how and why globalization changed international interactions among states.',
     kcs: [['KC-6.3.II.A', 'New international organizations, including the United Nations, formed with the stated goal of maintaining world peace and facilitating international cooperation.', ['United Nations']]],
     cases: ['United Nations General Assembly', 'Security Council and veto power', 'Peacekeeping operations', 'Humanitarian and development agencies'],
-    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/UN_General_Assembly_hall.jpg',
+    image: '../assets/images/commons/un-general-assembly-hall-5ecdb6.jpg',
     reading: [
       ['From Alliance to Institution', 'After two world wars, states created the United Nations to maintain peace and facilitate cooperation. Unlike a world government, it depended on member states for authority, money, personnel, and enforcement.'],
       ['Equality and Power in One Building', 'Every member received a General Assembly seat, but five permanent Security Council members held vetoes. The design joined universal membership to the power realities of 1945.'],
@@ -487,7 +489,7 @@ const topics = [
       ['KC-6.3.IV.i–iii', 'Arts, entertainment, popular culture, and consumer culture increasingly reflected a globalized society and crossed national borders.', []]
     ],
     cases: ['Internet and cellular communication', 'Container shipping and air travel', 'Green Revolution and medicine', 'Birth control and global consumer culture'],
-    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Apollo_11_Launch2.jpg',
+    image: '../assets/images/commons/apollo-11-launch2-e8deb8.jpg',
     reading: [
       ['Distance Collapses, Unevenly', 'Radio, cellular networks, the internet, air travel, and container shipping reduced barriers of distance. People, goods, money, and information moved faster, but borders, surveillance, cost, infrastructure, and inequality continued to shape access.'],
       ['Life and Production Change', 'Petroleum and nuclear power raised productivity; the Green Revolution expanded food output; vaccines and antibiotics extended life; birth control altered fertility. Each innovation produced intended gains and uneven social or environmental consequences.'],
@@ -565,7 +567,7 @@ function conceptArray(topic) {
 
 function buildLesson(topic) {
   const evidenceImages = topic.lectures.slice(0, 3).map((segment, i) => ({
-    title: segment[0], url: i === 0 ? topic.image : TOPIC_ART, sourceUrl: i === 0 ? topic.image : TOPIC_ART,
+    title: segment[0], url: i === 0 ? topic.image : TOPIC_ART, sourceUrl: i === 0 ? pageForCopy(topic.image) : TOPIC_ART,
     caption: segment[1][0], prompt: `How does this evidence support or qualify a claim about ${topic.title.toLowerCase()}?`
   }));
   return {
@@ -610,7 +612,7 @@ function buildLesson(topic) {
       videos: [],
       segments: topic.lectures.map((segment, i) => ({
         title: segment[0], bullets: segment[1],
-        image: { title: segment[0], caption: `Evidence anchor ${i + 1} for Topic ${topic.id}.`, url: i === 0 ? topic.image : TOPIC_ART, sourceUrl: i === 0 ? topic.image : TOPIC_ART }
+        image: { title: segment[0], caption: `Evidence anchor ${i + 1} for Topic ${topic.id}.`, url: i === 0 ? topic.image : TOPIC_ART, sourceUrl: i === 0 ? pageForCopy(topic.image) : TOPIC_ART }
       }))
     },
     beSurreal: {

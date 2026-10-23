@@ -37,14 +37,14 @@
   lesson.images = [
     {
       "title": "The Rhodes Colossus",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Punch_Rhodes_Colossus.png",
+      "url": "../assets/images/commons/punch-rhodes-colossus-8330fa.png",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Punch_Rhodes_Colossus.png",
       "caption": "Punch cartoon, 1892. Ambition and competition between powers, drawn for a domestic audience.",
       "prompt": "NOTICE the pose and the scale. INFER which cause of expansion this image is arguing for. Is a cartoon evidence of a cause, or of how a cause was talked about?"
     },
     {
       "title": "Rubber tapping",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rubber_tapping.jpg",
+      "url": "../assets/images/commons/rubber-tapping-98c7aa.jpg",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rubber_tapping.jpg",
       "caption": "Photograph of latex extraction, the point where industrial demand met colonial labor.",
       "prompt": "NOTICE the labor the process requires. INFER which cause of expansion this image supports. What does it evidence better than the cartoon does, and worse?"

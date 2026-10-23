@@ -46,27 +46,82 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "grid",
+      "kind": "split-mirror",
       "eyebrow": "The Turn",
       "title": "Religion is not only something rulers use.",
-      "cards": [
-        {
-          "title": "3.2",
-          "text": "How rulers used religious ideas to justify power."
+      "footer": "Today's move: what continued, what changed, and what conflict or interaction shaped the change?",
+      "template": {
+        "left": {
+          "name": "3.2 · Rulers"
         },
-        {
-          "title": "3.3",
-          "text": "How belief systems themselves changed."
+        "right": {
+          "name": "3.3 · Belief systems"
         },
-        {
-          "title": "THE MOVE",
-          "text": "What continued? What changed?"
-        },
-        {
-          "title": "THE WHY",
-          "text": "What conflict or interaction shaped the change?"
-        }
-      ]
+        "rows": [
+          {
+            "label": "Asks",
+            "left": "How did rulers use religious ideas to justify power?",
+            "right": "How did belief systems themselves change?"
+          },
+          {
+            "label": "Cases",
+            "left": "Divine right, Mughal mausolea",
+            "right": "Reformation, Sunni-Shia split, Sikhism"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "story-scene",
+      "eyebrow": "Christianity · The Story",
+      "title": "Why a German monk defied the Pope.",
+      "kc": "KC-4.1.VI.i",
+      "template": {
+        "steps": [
+          {
+            "label": "Rome",
+            "text": "Pope Leo X raises money to rebuild St. Peter's Basilica."
+          },
+          {
+            "label": "Indulgences",
+            "text": "Preachers sell indulgences, promises of less punishment for sins already forgiven."
+          },
+          {
+            "label": "1517",
+            "text": "Martin Luther, a German monk, attacks the sale in his 95 Theses."
+          },
+          {
+            "label": "Faith alone",
+            "text": "Luther teaches that God saves people through faith, which no one can buy or earn."
+          },
+          {
+            "label": "1521",
+            "key": true,
+            "text": "Leo X excommunicates Luther, and Luther becomes the symbol of reform."
+          }
+        ],
+        "side": "left",
+        "pictures": [
+          {
+            "caption": "St. Peter's Basilica, Rome",
+            "visual": {
+              "url": "../assets/images/topics/3-3/3.3%20-%20St%20Peters%20Basilica.jpg",
+              "alt": "Modern photograph of the front of St. Peter's Basilica in Rome at sunrise: a wide stone front with columns and statues along the roof, a great blue-gray dome behind it, and an Egyptian obelisk in the square in front",
+              "credit": "Modern photograph",
+              "position": "58% 50%"
+            }
+          },
+          {
+            "caption": "Inside St. Peter's",
+            "visual": {
+              "url": "../assets/images/topics/3-3/3.3%20-%20St%20Peters%20Basilica%20interior.jpg",
+              "alt": "Modern photograph of the inside of St. Peter's Basilica: a long nave with a gold coffered ceiling, marble pillars decorated with carved figures, and a tall bronze canopy over the altar at the far end",
+              "credit": "Modern photograph",
+              "position": "55% 50%"
+            }
+          }
+        ]
+      }
     },
     {
       "kind": "story-scene",
@@ -136,10 +191,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "caption": "Council of Trent, 1545 to 1563",
             "visual": {
-              "url": "../assets/images/topics/3-3/3.3%20-%20Catholic%20Reformation.jpg",
-              "alt": "Reconstruction of the Council of Trent: rows of bishops in white miters and cardinals in red facing each other across a church nave while clerks write at a table in the center",
-              "ai": true,
-              "position": "50% 55%"
+              "url": "../assets/images/topics/3-3/3.3%20-%20Council%20of%20Trent%20painting.jpg",
+              "alt": "Painting of the Council of Trent in session inside a church: cardinals in red robes sit on a raised bench at the left, rows of bishops fill curved tiers of seats, and two clerks sit at a table in the open center",
+              "credit": "Painting",
+              "position": "50% 50%"
             }
           },
           {
@@ -152,6 +207,72 @@ window.BEHISTORICAL_STUDENT_DECK = {
             }
           }
         ]
+      }
+    },
+    {
+      "kind": "split-matrix",
+      "eyebrow": "Christianity · Before and After",
+      "title": "What did each side change?",
+      "footer": "Both stayed Christian and both grew. Bold marks a change from before 1517.",
+      "kc": "KC-4.1.VI.i",
+      "template": {
+        "columns": [
+          {
+            "name": "Before 1517"
+          },
+          {
+            "name": "Lutheran"
+          },
+          {
+            "name": "Catholic (Trent)"
+          }
+        ],
+        "rows": [
+          {
+            "label": "Saved by",
+            "cells": [
+              "Faith and good works",
+              "**Faith alone**",
+              "Faith and good works"
+            ]
+          },
+          {
+            "label": "Authority",
+            "cells": [
+              "The Pope and the Church",
+              "**The Bible alone**",
+              "The Pope and the Church"
+            ]
+          },
+          {
+            "label": "Worship",
+            "cells": [
+              "In Latin",
+              "**In local languages**",
+              "In Latin"
+            ]
+          },
+          {
+            "label": "Clergy",
+            "cells": [
+              "Unmarried, little training",
+              "**Pastors may marry**",
+              "Unmarried, **seminaries**"
+            ]
+          },
+          {
+            "label": "Indulgences",
+            "cells": [
+              "Sold to raise money",
+              "**Rejected**",
+              "Kept, but **the selling ends**"
+            ]
+          }
+        ],
+        "result": {
+          "label": "Pattern",
+          "text": "Lutherans changed beliefs. Catholics reaffirmed beliefs, reformed behavior."
+        }
       }
     },
     {
@@ -212,28 +333,38 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "footer": "BeHistorical instructional map · Unit 3"
     },
     {
-      "kind": "grid",
+      "kind": "exchange-hub",
       "eyebrow": "Sikhism · Context",
       "title": "Punjab was a place of sustained interaction.",
+      "footer": "**Careful:** a context of interaction does not mean a simple blend.",
       "kc": "KC-4.1.VI.iii",
-      "cards": [
-        {
-          "title": "HINDU TRADITIONS",
-          "text": "Long-established communities and devotional practices."
+      "template": {
+        "center": {
+          "name": "Punjab"
         },
-        {
-          "title": "ISLAMIC TRADITIONS",
-          "text": "Muslim communities, rulers, Sufi traditions."
-        },
-        {
-          "title": "INTERACTION",
-          "text": "Trade, migration, political rule, devotion, everyday contact."
-        },
-        {
-          "title": "CAREFUL",
-          "text": "Context of interaction does not mean “simple blend.”"
-        }
-      ]
+        "spokes": [
+          {
+            "name": "Hindu traditions",
+            "note": "long-established communities and devotion",
+            "angle": -150
+          },
+          {
+            "name": "Islamic traditions",
+            "note": "Muslim communities, rulers, Sufis",
+            "angle": -30
+          },
+          {
+            "name": "Trade and migration",
+            "note": "people and goods passing through",
+            "angle": 150
+          },
+          {
+            "name": "Everyday contact",
+            "note": "political rule, devotion, daily life",
+            "angle": 30
+          }
+        ]
+      }
     },
     {
       "kind": "story-scene",
@@ -275,50 +406,71 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "grid",
+      "kind": "ledger",
       "eyebrow": "Retell the Topic",
       "title": "Three ways belief systems changed.",
-      "cards": [
-        {
-          "title": "CHRISTIANITY",
-          "text": "BREAK + REFORM · Protestant division and Catholic reform; Christianity continues and grows."
-        },
-        {
-          "title": "ISLAM",
-          "text": "OLD DIVIDE + NEW POLITICAL WEIGHT · Ottoman-Safavid rivalry intensifies Sunni-Shia division."
-        },
-        {
-          "title": "SIKHISM",
-          "text": "INTERACTION + EMERGENCE · a distinct tradition develops in Punjab."
-        },
-        {
-          "title": "THE AP MOVE",
-          "text": "What changed? What continued? What shaped the change?"
-        }
-      ]
+      "footer": "The AP move: what changed, what continued, and what shaped the change?",
+      "template": {
+        "rows": [
+          {
+            "name": "Christianity",
+            "tool": "Break and reform",
+            "result": "Protestant split, Catholic reform; the faith grows."
+          },
+          {
+            "name": "Islam",
+            "tool": "Old divide, new political weight",
+            "result": "rivalry intensifies the Sunni-Shia split."
+          },
+          {
+            "name": "Sikhism",
+            "tool": "Interaction and emergence",
+            "result": "a distinct tradition develops in Punjab."
+          }
+        ],
+        "payoffLabel": "All three",
+        "payoff": "Religions changed too"
+      }
     },
     {
-      "kind": "grid",
+      "kind": "split-matrix",
       "eyebrow": "Skill 2.B · Sourcing and Situation",
       "title": "A source can only prove what its situation allows.",
-      "cards": [
-        {
-          "title": "REFORM TEXT",
-          "text": "Can show a reformer's argument and purpose; cannot prove why everyone converted."
-        },
-        {
-          "title": "COURT MANUSCRIPT",
-          "text": "Can show official memory of rivalry; cannot serve as neutral evidence about the enemy."
-        },
-        {
-          "title": "LATER DEVOTIONAL PORTRAIT",
-          "text": "Can show memory and reverence; cannot show exactly what Nanak looked like."
-        },
-        {
-          "title": "RULE",
+      "template": {
+        "columns": [
+          {
+            "name": "Reform text"
+          },
+          {
+            "name": "Court manuscript"
+          },
+          {
+            "name": "Later devotional portrait"
+          }
+        ],
+        "rows": [
+          {
+            "label": "Can show",
+            "cells": [
+              "A reformer's argument and purpose",
+              "Official memory of the rivalry",
+              "Memory and reverence"
+            ]
+          },
+          {
+            "label": "Cannot prove",
+            "cells": [
+              "Why everyone converted",
+              "Neutral facts about the enemy",
+              "What Nanak really looked like"
+            ]
+          }
+        ],
+        "result": {
+          "label": "Rule",
           "text": "Source the object before you use it as evidence."
         }
-      ]
+      }
     },
     {
       "kind": "source-hipp",

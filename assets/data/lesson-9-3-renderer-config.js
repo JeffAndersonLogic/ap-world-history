@@ -52,16 +52,16 @@
   };
 
   lesson.stableImages = {
-    map: 'https://commons.wikimedia.org/wiki/Special:FilePath/Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg',
-    first10: 'https://commons.wikimedia.org/wiki/Special:FilePath/Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg',
-    beSurreal: 'https://commons.wikimedia.org/wiki/Special:FilePath/AralSea1989_2014.jpg',
-    skill: 'https://commons.wikimedia.org/wiki/Special:FilePath/Greenhouse_Gas_by_Sector.png',
-    checkpoint1: 'https://commons.wikimedia.org/wiki/Special:FilePath/Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg',
-    evidence: 'https://commons.wikimedia.org/wiki/Special:FilePath/AralSea1989_2014.jpg',
-    source: 'https://commons.wikimedia.org/wiki/Special:FilePath/Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg',
-    beInTheRoom: 'https://commons.wikimedia.org/wiki/Special:FilePath/Greenhouse_Gas_by_Sector.png',
-    checkpoint2: 'https://commons.wikimedia.org/wiki/Special:FilePath/Greenhouse_Gas_by_Sector.png'
+    map: '../assets/images/commons/fires-and-deforestation-on-the-amazon-frontier-rondonia-brazil-august-948a73.jpg',
+    first10: '../assets/images/commons/fires-and-deforestation-on-the-amazon-frontier-rondonia-brazil-august-948a73.jpg',
+    contentDelivery: '../assets/images/commons/fires-and-deforestation-on-the-amazon-frontier-rondonia-brazil-august-948a73.jpg',
+    beSurreal: '../assets/images/commons/aralsea1989-2014-4c61ae.jpg',
+    skill: '../assets/images/commons/greenhouse-gas-by-sector-b6f866.png',
+    checkpoint1: '../assets/images/commons/fires-and-deforestation-on-the-amazon-frontier-rondonia-brazil-august-948a73.jpg',
+    evidence: '../assets/images/commons/aralsea1989-2014-4c61ae.jpg',
+    source: '../assets/images/commons/fires-and-deforestation-on-the-amazon-frontier-rondonia-brazil-august-948a73.jpg',
+    beInTheRoom: '../assets/images/commons/greenhouse-gas-by-sector-b6f866.png',
+    checkpoint2: '../assets/images/commons/greenhouse-gas-by-sector-b6f866.png'
   };
 
   lesson.beInTheRoom = {
@@ -125,21 +125,21 @@
   lesson.images = [
     {
       title: 'Deforestation in Rondônia, Brazil',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg',
+      url: '../assets/images/commons/fires-and-deforestation-on-the-amazon-frontier-rondonia-brazil-august-948a73.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Fires_and_Deforestation_on_the_Amazon_Frontier%2C_Rondonia%2C_Brazil_-_August_12%2C_2007.jpg',
       caption: 'Satellite image of deforestation in the Brazilian state of Rondônia, large-scale clearing for cattle ranching and agriculture transformed the landscape.',
       prompt: 'What human activities caused this deforestation, and what environmental effects would follow from clearing this much forest?'
     },
     {
       title: 'The Aral Sea, 1989 vs. 2014',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/AralSea1989_2014.jpg',
+      url: '../assets/images/commons/aralsea1989-2014-4c61ae.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:AralSea1989_2014.jpg',
       caption: 'The Aral Sea shrank dramatically after Soviet-era irrigation projects diverted its feeder rivers, an extreme example of freshwater consumption reshaping the environment.',
       prompt: 'What human activity caused the Aral Sea to shrink, and what were the environmental and social effects on the communities that depended on it?'
     },
     {
       title: 'Global Greenhouse Gas Emissions by Sector',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Greenhouse_Gas_by_Sector.png',
+      url: '../assets/images/commons/greenhouse-gas-by-sector-b6f866.png',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Greenhouse_Gas_by_Sector.png',
       caption: 'Greenhouse gas emissions from energy, industry, agriculture, and transportation contributed to debates about the causes of climate change.',
       prompt: 'How does this data help explain why the climate debate was so contentious, and why different nations had different views on who should bear the cost of reducing emissions?'

@@ -126,7 +126,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Ottoman Empire expansion, 1359–1839",
           caption: "Ottoman territorial expansion over nearly five centuries, beginning in Anatolia and expanding across three continents.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif",
+          url: "../assets/images/commons/rise-and-fall-of-the-ottoman-empire-1300-1923-0cf219.gif",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif"
         }
       },
@@ -140,7 +140,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Topkapi Palace, Istanbul",
           caption: "The Ottoman palace complex was a seat of government as much as a residence: expansion had to be administered from somewhere.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Istanbul_asv2020-02_img19_Topkap%C4%B1_Palace.jpg",
+          url: "../assets/images/commons/istanbul-asv2020-02-img19-topkap-palace-ff3642.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Istanbul_asv2020-02_img19_Topkap%C4%B1_Palace.jpg"
         }
       },
@@ -163,7 +163,7 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "Ottoman Empire Expansion: A Land-Based Empire in Action",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif",
+    url: "../assets/images/commons/rise-and-fall-of-the-ottoman-empire-1300-1923-0cf219.gif",
     sourceUrl: "https://commons.wikimedia.org/wiki/File:Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif",
     caption: "Ottoman territorial expansion from c. 1359 to 1839, showing the empire's growth from Anatolia across three continents.",
     intro: "Use this map to trace how the Ottoman Empire expanded from a small Anatolian principality into one of the largest land-based empires in history, connecting Europe, Asia, and Africa.",

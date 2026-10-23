@@ -6,6 +6,13 @@ Moved word for word from `CLAUDE.md` on 2026-10-17, the second pass of the 2026-
 
 Every picture a student can see must be on-topic and must be impossible to break:
 
+- **Every picture is served from this site, never hotlinked from Commons (2026-10-21).** On that day the
+  Evidence Labs of 3.1, 3.2 and 3.3 showed fallback art on every card in class: each file existed, but
+  Commons rate-limits by address and a classroom is one address. All 276 live Commons pictures were copied
+  to `assets/images/commons/` (author and license in `manifest.json`) and every link points at the copy;
+  `/wiki/File:` pages stay as the credit links. To add one: link it, run the **Mirror Commons images**
+  workflow on the branch, then `node scripts/mirror-commons-images.js --rewrite`.
+  `scripts/test/no-hotlinked-commons.test.js` fails the push on any hotlinked Commons picture.
 - **Local artwork is the floor.** `assets/images/module-art/` holds generated
   artwork for every module card and every lecture, evidence, and map slot. Both
   renderers wire `onerror` to it, so a dead remote URL degrades to on-topic local

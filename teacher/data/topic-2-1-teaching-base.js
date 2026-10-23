@@ -175,7 +175,7 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-3.3.I.B', title: 'Luxury goods made distance worth it.',
       visual: {
         type: 'image',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Jingdezhen%20blue%20and%20white%20plate%20Yuan%20period%20mid%2014th%20century.jpg',
+        url: '../assets/images/commons/jingdezhen-blue-and-white-plate-yuan-period-mid-14th-century-85e35a.jpg',
         alt: 'Blue and white Jingdezhen porcelain plate from the Yuan dynasty, mid-1300s'
       },
       footer: 'Porcelain · textiles · silk · spices · iron · steel',
@@ -252,7 +252,7 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-3.1.I.A.i', title: 'Trade networks create powerful nodes.',
       visual: {
         type: 'image',
-        url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Registan%20square%20Samarkand.jpg',
+        url: '../assets/images/commons/registan-square-samarkand-29049e.jpg',
         alt: 'Registan square in Samarkand'
       },
       footer: 'Kashgar and Samarkand are evidence, not trivia.',

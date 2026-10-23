@@ -57,15 +57,15 @@
 
   lesson.stableImages = {
     map:             '../assets/images/instructional-maps/topic-4-1.svg',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Astrolabe-Persian-18C.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Caravela_de_armada_of_Joao_Serrao.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Caravela_de_armada_of_Joao_Serrao.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/15th_century_Portolan_chart_by_Petrus_Roselli_-_Carte_marine_de_la_mer_M%C3%A9diterran%C3%A9e_et_de_la_mer_Noire.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/MHS_52528_Astrolabe.jpg',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/15th_century_Portolan_chart_by_Petrus_Roselli_-_Carte_marine_de_la_mer_M%C3%A9diterran%C3%A9e_et_de_la_mer_Noire.jpg',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Caravela_de_armada_of_Joao_Serrao.jpg',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg'
+    first10:         '../assets/images/commons/astrolabe-persian-18c-8ebe5d.jpg',
+    contentDelivery: '../assets/images/commons/caravela-de-armada-of-joao-serrao-f5f35c.jpg',
+    beSurreal:       '../assets/images/commons/caravela-de-armada-of-joao-serrao-f5f35c.jpg',
+    skill:           '../assets/images/commons/15th-century-portolan-chart-by-petrus-roselli-carte-marine-de-la-mer-m-cf7006.jpg',
+    checkpoint1:     '../assets/images/commons/mhs-52528-astrolabe-711dd5.jpg',
+    evidence:        '../assets/images/commons/15th-century-portolan-chart-by-petrus-roselli-carte-marine-de-la-mer-m-cf7006.jpg',
+    source:          '../assets/images/commons/vasco-da-gama-2ab6b1.jpg',
+    beInTheRoom:     '../assets/images/commons/caravela-de-armada-of-joao-serrao-f5f35c.jpg',
+    checkpoint2:     '../assets/images/commons/waldseemuller-map-2-f5c64b.jpg'
   };
 
   lesson.beInTheRoom = {
@@ -120,28 +120,28 @@
   lesson.images = [
     {
       title: 'Portuguese Caravela in the Livro das Armadas, c. 1566',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Caravela_de_armada_of_Joao_Serrao.jpg',
+      url: '../assets/images/commons/caravela-de-armada-of-joao-serrao-f5f35c.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Caravela_de_armada_of_Joao_Serrao.jpg',
       caption: 'A Portuguese caravel, the ship of João Serrão in the 1502 fleet to India, painted in the Livro das Armadas about 1566. It is a later picture of the ship, not a drawing made at sea. It shows a later, larger caravel with a square sail on the foremast and lateen sails behind it; the early exploring caravels carried lateen sails only.',
       prompt: 'NOTICE the shape of the hull and the sails. What can you INFER about how this ship handled the wind? What would you need besides a picture to know how well it really sailed?'
     },
     {
       title: 'European Astronomer\'s Astrolabe, 1500 to 1550',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/MHS_52528_Astrolabe.jpg',
+      url: '../assets/images/commons/mhs-52528-astrolabe-711dd5.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:MHS_52528_Astrolabe.jpg',
       caption: 'A European brass astrolabe made between 1500 and 1550, with star names on its pierced star map. Most names are Latin, but some, like Alramech (the star Arcturus), are Arabic words written in Latin letters. It is an astronomer\'s instrument, not the heavy open-ring mariner\'s astrolabe used at sea. History of Science Museum, Oxford.',
       prompt: 'NOTICE the star names. Find one that does not look Latin. What does that tell you about where this knowledge came from? What would a pilot have to change to use an instrument like this on a rolling deck?'
     },
     {
       title: 'Petrus Roselli Portolan Chart, 15th Century',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/15th_century_Portolan_chart_by_Petrus_Roselli_-_Carte_marine_de_la_mer_M%C3%A9diterran%C3%A9e_et_de_la_mer_Noire.jpg',
+      url: '../assets/images/commons/15th-century-portolan-chart-by-petrus-roselli-carte-marine-de-la-mer-m-cf7006.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:15th_century_Portolan_chart_by_Petrus_Roselli_-_Carte_marine_de_la_mer_M%C3%A9diterran%C3%A9e_et_de_la_mer_Noire.jpg',
       caption: 'A 15th-century portolan chart by Petrus Roselli: a sea chart of the Mediterranean and Black Sea, with detailed coastlines and lines for compass directions. Charts like this were made for sailors before and during the early Atlantic voyages.',
       prompt: 'NOTICE the coastlines and the lines crossing the sea. What can you INFER about what sailors already knew before c. 1500? Why would a chart like this be less help far out in the open Atlantic?'
     },
     {
       title: 'Waldseemüller World Map, 1507',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Waldseemuller_map_2.jpg',
+      url: '../assets/images/commons/waldseemuller-map-2-f5c64b.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Waldseemuller_map_2.jpg',
       caption: 'The 1507 world map by Martin Waldseemüller, printed at Saint-Dié (today in France). It used reports from recent Atlantic voyages and was the first map to name America and draw it as a land separate from Asia.',
       prompt: 'NOTICE the lands on the far left, across the Atlantic. What can you INFER about how the voyages changed what Europeans knew about the world? What can a map made in Europe, by people who never sailed, not tell you about the voyages themselves?'

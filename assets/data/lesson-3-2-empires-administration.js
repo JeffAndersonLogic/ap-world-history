@@ -101,7 +101,14 @@ window.BEHISTORICAL_LESSON = {
   lecture: {
     title: "Holding What You Won: People, Symbols and Money",
     intro: "Use these cards to deepen the First & 10. Each card is one of the three jobs every ruler had to do, and each one compares two rulers who did the same job in different ways. Ask of every example: what situation was this ruler in, and how did this tool help him keep control?",
-    videos: [],
+    videos: [
+      {
+        title: "Land-Based Empires: ADMINISTRATION [AP World History Review - Unit 3 Topic 2]",
+        url: "https://youtu.be/_0X43Prm8Sc",
+        youtubeId: "_0X43Prm8Sc",
+        prompt: "How did rulers use officials, religious ideas, monumental architecture, and tax collection to consolidate power? Compare one method used by two land-based empires."
+      }
+    ],
     segments: [
       {
         title: "The Problem: Three Jobs After the Conquest",
@@ -113,7 +120,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "The Mughal Empire, c. 1700 (a modern map)",
           caption: "A modern map of the Mughal Empire near its greatest size. Ruling land this large and this varied is the problem every tool in this topic tries to solve.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png",
+          url: "../assets/images/topics/3-2/mughal-empire-1700-map.png",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Mughal_Empire_(1700).png"
         }
       },
@@ -127,7 +134,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "Topkapı Palace from the water (modern photograph)",
           caption: "The Ottoman sultans' palace in Istanbul after 1453, photographed in 2007. Its palace school trained the most promising devshirme recruits for high office.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_Bosphorus.JPG",
+          url: "../assets/images/topics/3-2/topkapi-palace-bosphorus.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Topkapi_Palace_Bosphorus.JPG"
         }
       },
@@ -141,7 +148,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "The Qianlong Emperor, by Giuseppe Castiglione",
           caption: "Part of a Qing court painting of the Qianlong Emperor and his consorts. A Manchu ruler shown in the robes of a Chinese emperor.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Qianlong_Emperor.jpg",
+          url: "../assets/images/topics/3-2/qianlong-and-consorts-castiglione.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Qianlong_Emperor.jpg"
         }
       },
@@ -155,7 +162,7 @@ window.BEHISTORICAL_LESSON = {
         image: {
           title: "The Taj Mahal, Agra (modern photograph)",
           caption: "Photographed in 2004. Shah Jahan's mausoleum for his wife took enormous revenue to build: the money job and the symbols job in one building.",
-          url: "https://commons.wikimedia.org/wiki/Special:FilePath/Taj_Mahal_in_March_2004.jpg",
+          url: "../assets/images/topics/3-2/taj-mahal-2004.jpg",
           sourceUrl: "https://commons.wikimedia.org/wiki/File:Taj_Mahal_in_March_2004.jpg"
         }
       }
@@ -164,7 +171,7 @@ window.BEHISTORICAL_LESSON = {
 
   map: {
     title: "The Mughal Empire and Its Administrative Provinces",
-    url: "https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png",
+    url: "../assets/images/topics/3-2/mughal-empire-1700-map.png",
     sourceUrl: "https://commons.wikimedia.org/wiki/File:Mughal_Empire_%281700%29.png",
     caption: "The Mughal Empire at its greatest extent c. 1700, showing the provincial structure administered through the mansabdar system.",
     intro: "Use the map to understand how the Mughal Empire organized vast territories through administrative provinces, each governed by mansabdars who owed military service and revenue to the emperor.",

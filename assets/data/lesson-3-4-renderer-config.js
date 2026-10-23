@@ -21,16 +21,16 @@
   };
 
   lesson.stableImages = {
-    map:             'https://commons.wikimedia.org/wiki/Special:FilePath/1700_CE_world_map.PNG',
-    first10:         'https://commons.wikimedia.org/wiki/Special:FilePath/Suleiman_the_Magnificent_of_the_Ottoman_Empire.jpg',
-    contentDelivery: 'https://commons.wikimedia.org/wiki/Special:FilePath/Shah_Abbas_I.jpg',
-    beSurreal:       'https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg',
-    skill:           'https://commons.wikimedia.org/wiki/Special:FilePath/Qianlong_Emperor.jpg',
-    checkpoint1:     'https://commons.wikimedia.org/wiki/Special:FilePath/Rise_and_Fall_of_the_Ottoman_Empire_1300-1923.gif',
-    evidence:        'https://commons.wikimedia.org/wiki/Special:FilePath/Mughal_Empire_%281700%29.png',
-    source:          'https://commons.wikimedia.org/wiki/Special:FilePath/Istanbul_asv2020-02_img19_Topkap%C4%B1_Palace.jpg',
-    beInTheRoom:     'https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Palace_Bosphorus.JPG',
-    checkpoint2:     'https://commons.wikimedia.org/wiki/Special:FilePath/Map_of_the_Safavid_Empire%2C_circa_1630.png'
+    map:             '../assets/images/commons/1700-ce-world-map-1696ff.png',
+    first10:         '../assets/images/commons/suleiman-the-magnificent-of-the-ottoman-empire-fb65d7.jpg',
+    contentDelivery: '../assets/images/commons/shah-abbas-i-f097b8.jpg',
+    beSurreal:       '../assets/images/commons/court-of-akbar-from-akbarnama-8879e4.jpg',
+    skill:           '../assets/images/commons/qianlong-emperor-1e7a96.jpg',
+    checkpoint1:     '../assets/images/commons/rise-and-fall-of-the-ottoman-empire-1300-1923-0cf219.gif',
+    evidence:        '../assets/images/commons/mughal-empire-1700-29dcf3.png',
+    source:          '../assets/images/commons/istanbul-asv2020-02-img19-topkap-palace-ff3642.jpg',
+    beInTheRoom:     '../assets/images/commons/topkapi-palace-bosphorus-ef2576.jpg',
+    checkpoint2:     '../assets/images/commons/map-of-the-safavid-empire-circa-1630-5b6cf1.png'
   };
 
   lesson.beInTheRoom = {
@@ -137,35 +137,35 @@
   lesson.images = [
     {
       title: 'Battle of Chaldiran, Selim-nama, 1524 — Expand',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Chaldiran_miniature._Sel%C4%ABm-n%C4%81ma%2C_by_%C5%9E%C5%ABkr%C4%AB-i_Bitlis%C4%AB%2C_1524_%28National_Library_of_Israel%2C_Ms._Yah._Ar._1116%29.jpg',
+      url: '../assets/images/commons/battle-of-chaldiran-miniature-selim-nama-by-sukri-i-bitlisi-1524-natio-6489e1.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Battle_of_Chaldiran_miniature._Sel%C4%ABm-n%C4%81ma,_by_%C5%9E%C5%ABkr%C4%AB-i_Bitlis%C4%AB,_1524_(National_Library_of_Israel,_Ms._Yah._Ar._1116).jpg',
       caption: 'Ottoman-Safavid / military expansion. An Ottoman manuscript miniature made about a decade after the 1514 battle depicts the conflict in which Ottoman gunpowder weapons helped defeat Safavid forces.',
       prompt: 'NOTICE how weapons and formations are represented. What can you INFER about military technology as a method of increasing influence? Compare this only with another expansion card, and remember that an Ottoman victory narrative is not neutral evidence about the Safavids.'
     },
     {
       title: 'First Battle of Panipat, 1526 — Expand',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/1526-First_Battle_of_Panipat-Ibrahim_Lodhi_and_Babur.jpg',
+      url: '../assets/images/commons/1526-first-battle-of-panipat-ibrahim-lodhi-and-babur-1c47e6.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:1526-First_Battle_of_Panipat-Ibrahim_Lodhi_and_Babur.jpg',
       caption: 'Mughal / military expansion. A late-16th-century Baburnama illustration commemorates Babur\'s victory at Panipat, where field artillery and firearms helped establish Mughal rule in northern India.',
       prompt: 'NOTICE how troops, commanders, and weapons are represented. What can you INFER about military conquest as a method of increasing Mughal influence? Compare this with Chaldiran and explain what a later court painting cannot prove about the battle by itself.'
     },
     {
       title: 'Court of Akbar — Hold / Justify',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Court_of_Akbar_from_Akbarnama.jpg',
+      url: '../assets/images/commons/court-of-akbar-from-akbarnama-8879e4.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Court_of_Akbar_from_Akbarnama.jpg',
       caption: 'Mughal / elite organization. A court painting from Akbar\'s official history places the emperor at the center of an imperial elite drawn from varied backgrounds.',
       prompt: 'NOTICE the visual hierarchy and the people gathered around Akbar. What can you INFER about incorporating elites as a way to hold a diverse empire or justify the emperor\'s authority? What might an official court history show in its best light?'
     },
     {
       title: 'Qianlong Emperor — Hold / Justify',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Qianlong_Emperor.jpg',
+      url: '../assets/images/commons/qianlong-emperor-1e7a96.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Qianlong_Emperor.jpg',
       caption: 'Qing / ruler representation. A court portrait presents a Manchu emperor ruling a vast multiethnic state while drawing on Chinese traditions of emperorship.',
       prompt: 'NOTICE clothing, pose, and visual conventions. What can you INFER about how representation could help a minority dynasty hold power or justify its rule? Compare with the Akbar card and explain what a portrait cannot prove about everyday administration.'
     },
     {
       title: 'Ottoman Defter — Bayt Nabala Tax Record, 1526 — Pay',
-      url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ottoman_Defter_of_Liwa_of_al-Quds_-_Bayt_Nabala_Tax_Record.jpg',
+      url: '../assets/images/commons/ottoman-defter-of-liwa-of-al-quds-bayt-nabala-tax-record-bfab5e.jpg',
       sourceUrl: 'https://commons.wikimedia.org/wiki/File:Ottoman_Defter_of_Liwa_of_al-Quds_-_Bayt_Nabala_Tax_Record.jpg',
       caption: 'Ottoman / revenue administration. This 1526 tax-register entry from the district of Jerusalem records annual revenue associated with Bayt Nabala in akçe.',
       prompt: 'NOTICE the kind of information a tax register records. What can you INFER about how written revenue administration helped an empire turn territory into usable state income? Compare this with the Mughal revenue card and identify one thing a single local entry cannot prove about the whole Ottoman system.'

@@ -39,7 +39,7 @@
   lesson.images = [
     {
       "title": "Chinatown, San Francisco, 1880",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/A_Holiday_in_Chinatown,_San_Francisco_%28P._Frenzeny,_Harper's,_1880-03-20%29.jpg",
+      "url": "../assets/images/commons/a-holiday-in-chinatown-san-francisco-p-frenzeny-harper-s-1880-03-20-52fa82.jpg",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Holiday_in_Chinatown,_San_Francisco_%28P._Frenzeny,_Harper's,_1880-03-20%29.jpg",
       "caption": "An illustration published in Harper's Weekly, March 1880, two years before Chinese immigration was restricted by federal law. The accompanying article argued the community would not assimilate.",
       "prompt": "NOTICE what the street shows about how the community organized itself, and who this was drawn for. INFER what institutions a migrant population builds when the surrounding society excludes it. What does an illustration made for a national magazine reveal about its own audience, not just its subject?"

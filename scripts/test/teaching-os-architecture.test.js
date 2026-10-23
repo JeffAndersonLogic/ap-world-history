@@ -189,6 +189,80 @@ for (const deck of DECKS) {
   }
 }
 
+// Jeff's standard of 2026-10-14: the question slide (the first slide after
+// BeReady) and the landing slide (the last) each open and close on a cinematic
+// picture, never on words alone and never on a map. A ratchet, the same shape
+// as the style baseline: OWED lists the slides that predate the standard, a
+// deck not on it must comply, and an entry that has been fixed must come off,
+// so the list only shrinks. Prompts for every owed picture are in
+// docs/QUESTION-AND-LANDING-IMAGE-PROMPTS.md.
+console.log('\n  Cinematic question and landing slides\n');
+const OWED = new Set([
+  '2.1 question', '2.7 question', '2.7 landing', '3.1 question', '3.1 landing',
+  '3.2 question', '3.2 landing', '3.3 question', '3.3 landing',
+  '4.1 question', '4.1 landing', '4.2 question', '4.2 landing', '4.3 question', '4.3 landing'
+]);
+function cinematic(s) {
+  const t = s && s.template || {};
+  const vis = [t.visual, s && s.visual, ...(Array.isArray(t.panels) ? t.panels.map(p => p && p.visual) : [])].filter(v => v && v.url);
+  return vis.length > 0 && vis.every(v => !/\.svg(\?|$)/i.test(v.url) && !/map/i.test(decodeURIComponent(v.url.split('/').pop())));
+}
+function bookends(slides) {
+  const b = slides.findIndex(s => s.phase === 'beready');
+  const q = b >= 0 ? b + 1 : slides.findIndex(s => s.phase !== 'preflight');
+  return { question: slides[q], landing: slides[slides.length - 1] };
+}
+// Negative controls: each shape the check must refuse.
+const pic = { url: '../assets/images/topics/9-9/scene.jpg' };
+const ctl = [
+  ['words only', { kind: 'question', title: 'Q' }],
+  ['an instructional map (svg)', { kind: 'frame-question', template: { visual: { url: '../assets/images/instructional-maps/topic-9-9.svg' } } }],
+  ['a map photograph', { kind: 'hero', visual: { url: '../assets/images/topics/9-9/9.9%20-%20Route%20Map.jpg' } }],
+  ['a triptych with one map panel', { kind: 'frame-triptych', template: { panels: [{ visual: pic }, { visual: { url: 'x/topic-9-9.svg' } }] } }]
+];
+for (const [name, slide] of ctl) check(`control: ${name} is not a cinematic bookend`, !cinematic(slide));
+check('control: a scene picture is a cinematic bookend', cinematic({ kind: 'frame-subtitle', template: { visual: pic } }));
+check('control: the question slide is the one after BeReady', bookends([{ phase: 'preflight' }, { phase: 'beready' }, { phase: 'q', id: 1 }, { phase: 'close' }]).question.id === 1);
+for (const deck of DECKS) {
+  const sandbox = { window: {}, console, encodeURIComponent, decodeURIComponent };
+  vm.createContext(sandbox);
+  for (const rel of deck.sources) vm.runInContext(read(rel), sandbox, { filename: rel });
+  const ends = bookends(sandbox.window.BEHISTORICAL_TEACHING.slides);
+  for (const slot of ['question', 'landing']) {
+    const key = `${deck.key} ${slot}`, ok = cinematic(ends[slot]);
+    if (OWED.has(key)) check(`${key} slide is still owed a cinematic picture (remove it from OWED once fixed)`, !ok, ok ? 'fixed: take it off OWED' : 'owed');
+    else check(`${key} slide opens or closes on a cinematic picture`, ok, ends[slot] ? `${ends[slot].phase} · ${ends[slot].kind}` : 'missing');
+  }
+}
+
+// Jeff, 2026-10-21: no more box slides. The `grid` kind, a 2x2 grid of small
+// cards, is overused and hard to read from the back of the room; on 2026-10-14
+// it was replaced on 3.4, and on 2026-10-21 on 3.3. A ratchet of the same
+// shape: GRID_OWED lists the box slides that predate the rule, any other is a
+// failure, and a slide that has been rebuilt must come off the list. Pick the
+// template whose shape matches the idea (docs/PRESENTATION-AUTHORING.md, step 11).
+console.log('\n  No box (grid) slides\n');
+const GRID_OWED = new Set([
+  '2.1 targets', '2.1 systems', '2.1 debrief', '2.2 open', '2.2 conquest', '2.2 transfer', '2.6 spine',
+  '2.7 tools', '2.7 nodes', '2.7 diffusion', '2.7 review', '3.1 pays', '3.1 proofs', '3.1 kandahar',
+  '4.1 borrowed', '4.1 ships', '4.1 payoff', '4.2 posts'
+]);
+check('control: a grid slide not on the list is refused', ![{ kind: 'grid', phase: 'new' }].every(s => s.kind !== 'grid' || GRID_OWED.has(`9.9 ${s.phase}`)));
+for (const deck of DECKS) {
+  const sandbox = { window: {}, console, encodeURIComponent, decodeURIComponent };
+  vm.createContext(sandbox);
+  for (const rel of deck.sources) vm.runInContext(read(rel), sandbox, { filename: rel });
+  const slides = sandbox.window.BEHISTORICAL_TEACHING.slides;
+  for (const s of slides.filter(x => x.kind === 'grid')) {
+    check(`${deck.key} ${s.phase} is a box slide on the owed list`, GRID_OWED.has(`${deck.key} ${s.phase}`), 'new grid slide: use a template that fits the idea');
+  }
+  for (const key of GRID_OWED) {
+    if (!key.startsWith(`${deck.key} `)) continue;
+    const phase = key.slice(deck.key.length + 1);
+    check(`${key} is still a box slide (take it off GRID_OWED once rebuilt)`, slides.some(x => x.phase === phase && x.kind === 'grid'), 'fixed: take it off GRID_OWED');
+  }
+}
+
 console.log('\n  Authoring process discovery\n');
 const authoringPath = 'docs/PRESENTATION-AUTHORING.md';
 const architecturePath = 'docs/TEACHING-OS.md';

@@ -116,7 +116,7 @@ const HOWKNOW_PREFIX = 'How we know';
 const violations = [];
 
 function report(file, where, rule, detail) {
-  violations.push({ file: path.relative(ROOT, file), where, rule, detail });
+  violations.push({ file: path.relative(ROOT, file).split(path.sep).join('/'), where, rule, detail });
 }
 
 /** A short window around a match, so the reader can see what to change. */
