@@ -434,6 +434,10 @@ report.
    activity: a New York science magazine's writers, at the end of 1900, ranking five technologies
    that changed the world. The old file is removed and the lesson links the new one.
 9. **Deep reading:** rebuilt around this story.
-10. **Required modules** (Phase 8): 02 First & 10, 05 Skill Builder, 07 Evidence Lab, 10 Checkpoint 2,
-    the set Unit 4 and 5.1 to 5.4 used. Checkpoint 2 is the causal chain the reading and the deck
-    build to.
+10. **Required modules** (Phase 8, revised at shipping on 2026-10-23): 02 First & 10, 05 Skill
+    Builder, 06 Checkpoint 1, 10 Checkpoint 2. Jeff's rule of 2026-10-23 (AndersonLogic-OS
+    `04_PRODUCTS/BeHistorical/Decisions.md`) makes 02, 06 and 10 required on every topic, plus at
+    least one chosen for how well it carries the CED objective and skill. The chosen one is 05,
+    which practises the CED's suggested skill for 5.5 (1.B) as written. The Evidence Lab, first
+    chosen in the build, becomes optional so the class stays at 80 minutes; the CED's ranking
+    activity still runs on slide 17, and in full in the optional BeInTheRoom room.

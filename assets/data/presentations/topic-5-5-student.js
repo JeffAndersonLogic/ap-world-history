@@ -523,9 +523,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1 · Optional",
+      "eyebrow": "Module 06 · Checkpoint 1",
       "title": "How did machines and new methods change what could be made?",
-      "subtitle": "Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.",
+      "subtitle": "On your own: Checkpoint 1 is the diagnostic, so no coach.",
       "action": {
         "label": "Open Student Lesson",
         "url": "lesson-5-5-technology-of-industrialization.html#modules"
@@ -533,7 +533,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "action",
-      "eyebrow": "Module 07 · Evidence Lab",
+      "eyebrow": "Module 07 · Evidence Lab · Optional",
       "title": "Two sources, one link in the chain.",
       "subtitle": "Choose at least two cards. For each: what kind of source it is, what link in the chain it shows, and one thing it cannot tell you.",
       "action": {

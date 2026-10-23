@@ -26,8 +26,9 @@
  *
  * Class dates: not yet scheduled (the schedule ends with the Era 3 Exam,
  * 2026-11-23 and 2026-11-24).
- * Required modules: 02 First & 10, 05 Skill Builder, 07 Evidence Lab,
- * 10 Checkpoint 2.
+ * Required modules: 02 First & 10, 05 Skill Builder, 06 Checkpoint 1,
+ * 10 Checkpoint 2 (Jeff's rule of 2026-10-23: 02, 06 and 10 on every topic,
+ * plus at least one chosen; 05 practises the CED's suggested skill, 1.B).
  */
 window.BEHISTORICAL_TEACHING = {
   meta: {
@@ -81,8 +82,8 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'myths', label: 'Myth and Evidence', range: '52-54', minutes: 2, teacher: 'Three things people get wrong.', students: 'Correct each myth.', slide: 18 },
     { id: 'retell', label: 'More Power, Longer Reach', range: '54-57', minutes: 3, teacher: 'Students redraw the chain.', students: 'Retell the whole topic.', slide: 19 },
     { id: 'synthesis', label: 'Say It in One Sentence', range: '57-58', minutes: 1, teacher: 'The objective, answered.', students: 'Fill the sentence from memory.', slide: 20 },
-    { id: 'cp1', label: 'Checkpoint 1', range: 'Optional', minutes: 0, teacher: 'Optional diagnostic: power and new methods.', students: 'Work without the coach.', slide: 21 },
-    { id: 'evidence', label: 'Evidence Lab', range: '58-66', minutes: 8, teacher: 'Module 07: two sources, one link in the chain.', students: 'Observe, then infer, then name a limit.', slide: 22 },
+    { id: 'cp1', label: 'Checkpoint 1', range: '58-66', minutes: 8, teacher: 'Module 06: power and new methods, on their own.', students: 'Work without the coach.', slide: 21 },
+    { id: 'evidence', label: 'Evidence Lab', range: 'Optional', minutes: 0, teacher: 'Optional, Module 07: two sources, one link in the chain.', students: 'Observe, then infer, then name a limit.', slide: 22 },
     { id: 'cp2', label: 'Checkpoint 2', range: '66-78', minutes: 12, teacher: 'Module 10: the chain, from reach to trade and migration. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 23 },
     { id: 'close', label: 'Landing Sentence', range: '78-80', minutes: 2, teacher: 'Land the answer and hand off to 5.6.', students: 'Say the topic in one sentence.', slide: 24 }
   ],
@@ -560,28 +561,28 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'cp1', kind: 'action', eyebrow: 'Module 06 · Checkpoint 1 · Optional',
+      phase: 'cp1', kind: 'action', eyebrow: 'Module 06 · Checkpoint 1',
       title: 'How did machines and new methods change what could be made?',
-      subtitle: 'Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.',
+      subtitle: 'On your own: Checkpoint 1 is the diagnostic, so no coach.',
       action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-5-technology-of-industrialization.html#modules' },
       notes: {
-        minutes: 0,
+        minutes: 8,
         land: [
-          'Optional. Checkpoint 1 assesses Target 1: how a machine unlocked fossil-fuel energy, and how one method of the second industrial revolution changed what could be made.'
+          'Module 06 is required. Checkpoint 1 assesses Target 1: how a machine unlocked fossil-fuel energy, and how one method of the second industrial revolution changed what could be made.'
         ],
         ask: 'Which machine did you explain, and what did it make possible?',
         listenFor: 'A machine, a fuel, a new method, and what each made possible.'
       }
     },
     {
-      phase: 'evidence', kind: 'action', eyebrow: 'Module 07 · Evidence Lab',
+      phase: 'evidence', kind: 'action', eyebrow: 'Module 07 · Evidence Lab · Optional',
       title: 'Two sources, one link in the chain.',
       subtitle: 'Choose at least two cards. For each: what kind of source it is, what link in the chain it shows, and one thing it cannot tell you.',
       action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-5-technology-of-industrialization.html#modules' },
       notes: {
-        minutes: 8,
+        minutes: 0,
         land: [
-          'Module 07 is required. The cards pair real objects (an engraving of a Newcomen engine, a diagram of a Bessemer converter, an oil rig, the Great Eastern with the Atlantic cable, the 1868 Across the Continent print) with scholars\' figures on energy and migration.',
+          'Optional today: use it if the room has time, or as homework for students who want more. The cards pair real objects (an engraving of a Newcomen engine, a diagram of a Bessemer converter, an oil rig, the Great Eastern with the Atlantic cable, the 1868 Across the Continent print) with scholars\' figures on energy and migration.',
           'Listen for students who name what kind of source each card is (an engraving for a book, a print made to sell, a photograph, a newspaper picture), and which link in the chain it supports.'
         ],
         ask: 'What can your source not tell you?',
