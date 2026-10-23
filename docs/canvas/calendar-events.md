@@ -2489,7 +2489,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">How tools borrowed from older worlds, new ships, and knowledge of the Atlantic's winds let European ships cross oceans and come home, from 1450 to 1750</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Unit 3 was about empires that grew on land. Unit 4 begins at sea, with a problem: in the 1400s, sailing south along the coast of West Africa was the easy part, because the wind and the current fought every ship that tried to come back. Today you follow how sailors solved it. Europe borrowed tools from older worlds, the compass from China, the astrolabe and tables of the sky from Greek and Islamic astronomers, and the lateen sail from the Mediterranean, built new ships around them, and learned to ride the Atlantic's winds home. For each piece, explain where it came from and what it let sailors do.</p>
             </td>
         </tr>
         <tr>
