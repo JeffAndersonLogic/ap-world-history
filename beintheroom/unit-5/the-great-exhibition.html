@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Great Exhibition | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "5.4",
+  "unit": "5",
+  "topicTitle": "Industrialization Spreads",
+  "file": "the-great-exhibition.html",
+  "title": "The *Great Exhibition*",
+  "location": "The Crystal Palace, London",
+  "date": "1851",
+  "lessonUrl": "../../unit-5/lesson-5-4-industrialization-spreads.html",
+  "alignment": {
+    "theme": "Technology and Innovation (TEC)",
+    "objective": "Explain how different modes and locations of production have developed and changed over time.",
+    "skill": "Continuity and Change, with Making Connections (5.A)",
+    "keyConcepts": [
+      "KC-5.1.II.B",
+      "KC-5.1.I.D"
+    ]
+  },
+  "premise": [
+    "It is 1851. In Hyde Park, London, a giant hall of iron and glass, the Crystal Palace, holds the Great Exhibition: goods and machines sent from Britain and from many other countries, all under one roof. British spinning machines and power looms stand in one part of the hall. Hand-made cloth from India is shown in another.",
+    "Eighty years ago, Arkwright put cotton spinning under one roof at Cromford. Since then the new methods have left Britain. They reached the United States and Belgium with skilled people who carried them in their heads, and they are reaching the German states with British machines and engines. Britain has allowed textile machines to be sold abroad since 1843. Yet most of the world’s goods are still made by hand, and in 1750 most of them were made in Asia.",
+    "You are part of a group of visitors from different making regions, walking the hall together. Each of you must decide what to take home: what to buy, whom to hire, and what to keep doing as before. Then, together, you must write one report: what has changed, and what has stayed the same, in who makes the world’s goods and how."
+  ],
+  "centralQuestion": "Walking the Great Exhibition in 1851, what should visitors from different making regions take home, and what has changed and what has stayed the same in how and where the world’s goods are made?",
+  "roles": [
+    {
+      "id": "bombay",
+      "name": "Bombay Cloth Merchant",
+      "position": "You buy and sell cotton cloth woven by hand in western India, and you have sailed to London to see the exhibition.",
+      "power": "You know the cloth trade of the Indian Ocean, but the East India Company, not you, sets the taxes on what enters India.",
+      "goals": "Keep your weavers working and your trade profitable.",
+      "fears": "Cheaper machine-made cloth from Lancashire may keep taking your buyers, even at home.",
+      "lens": "People still want fine cloth woven by hand, but they buy cheap cloth by price.",
+      "preference": "Buy machine-spun thread for your weavers, and keep selling the finest cloth that machines cannot copy.",
+      "blindSpot": "You may hope that the finest hand-made cloth can carry a whole trade."
+    },
+    {
+      "id": "lowell",
+      "name": "Lowell Mill Agent",
+      "position": "You manage a cotton mill at Lowell, Massachusetts, built with Boston merchants’ money and first worked mostly by young women from New England farms.",
+      "power": "Your mill is already running, but British mills are bigger and their cloth is often cheaper.",
+      "goals": "Find machines and ideas that will make your mill faster and its cloth cheaper.",
+      "fears": "British mills may undersell you in your own country.",
+      "lens": "A new industrial region can learn from the first one and then go its own way.",
+      "preference": "Study the newest British machines and buy the best ones now that they can be exported.",
+      "blindSpot": "You may forget that your mill was started by people who copied British machines."
+    },
+    {
+      "id": "belgian",
+      "name": "Belgian Engineer",
+      "position": "You build engines and machines at Seraing, near Liège, in the works John Cockerill founded on the coalfield.",
+      "power": "You can build machines yourself, but you still hire British-trained workers for the hardest jobs.",
+      "goals": "Sell your own machines to the German states and beyond.",
+      "fears": "British machine makers may take your buyers now that they can export freely.",
+      "lens": "The methods spread fastest where coal, iron, and skilled people meet.",
+      "preference": "Hire skilled workers and copy the best designs, and sell machines to the next places that want them.",
+      "blindSpot": "You may think every region has the coal and iron that Liège has."
+    },
+    {
+      "id": "rhineland",
+      "name": "Rhineland Mill Owner",
+      "position": "You own a cotton-spinning mill in the German states, on a river near the Ruhr coalfields, and you have come to London to see the newest British machines.",
+      "power": "You have money and coal close by, but your machines are older than Britain’s, and you still hire British-trained mechanics.",
+      "goals": "Buy the best British machines, now that they can be exported, and spin cloth cheaply at home.",
+      "fears": "British mills may undersell you in your own market before your new machines are running.",
+      "lens": "The methods spread fastest where coal, rivers, money, and skilled people meet.",
+      "preference": "Buy British machines and hire mechanics who can set them up and mend them.",
+      "blindSpot": "You may think machines alone are enough, without the skilled people to run them."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "hall",
+      "label": "One Roof",
+      "text": "The Great Exhibition shows British spinning machines and power looms in one part of the hall and hand-made goods from India and many other countries in others.",
+      "why": "Shows two modes of production, machines and hands, side by side."
+    },
+    {
+      "id": "shares",
+      "label": "Who Makes the Goods",
+      "text": "In the estimates of the economic historian Paul Bairoch, made long after this exhibition, China and India made over half of the world’s manufactured goods around 1750, and Britain under 2 percent. By 1860, he estimated, Britain made about a fifth.",
+      "why": "Shows the change in where the world’s goods were being made."
+    },
+    {
+      "id": "cloth",
+      "label": "Cloth Turns Around",
+      "text": "In 1815 India sold about £1.3 million worth of cotton cloth abroad and bought about £26,000 worth from England. By 1832 it sold under £100,000 worth and bought over £400,000 worth. India now sells raw cotton to British mills.",
+      "why": "Shows one way the old makers’ share fell."
+    },
+    {
+      "id": "weavers",
+      "label": "Weavers Still Weaving",
+      "text": "In India, Dacca’s weavers have sent fine muslins to this very hall, and across India many weavers still work handlooms, more and more of them with cheaper machine-spun thread.",
+      "why": "Shows that the old makers kept making."
+    },
+    {
+      "id": "ships",
+      "label": "Teak Warships",
+      "text": "At the Bombay Dockyard, the Wadia shipbuilders have built teak warships for Britain’s Royal Navy, among them HMS Trincomalee, launched in 1817.",
+      "why": "Shows Asian makers producing some of the best goods of their kind."
+    },
+    {
+      "id": "laws",
+      "label": "The Secret Let Out",
+      "text": "Britain banned skilled textile workers from leaving to work abroad until 1824, and banned the export of textile machines until 1843. Samuel Slater left anyway, in 1789, and built spinning machines in Rhode Island from memory.",
+      "why": "Shows how the methods spread: first with people, then with machines."
+    },
+    {
+      "id": "lowell",
+      "label": "Money From Merchants",
+      "text": "At Lowell, Massachusetts, wealthy Boston merchants have paid for big cotton mills since the 1820s, beside a river that turns their wheels.",
+      "why": "Shows money as a carrier of the new methods."
+    },
+    {
+      "id": "coal",
+      "label": "Coal and Iron",
+      "text": "The new industries outside Britain are growing where coal and iron are found, as at Liège in Belgium and in the Ruhr valley of the German states.",
+      "why": "Shows the pattern in where the methods took root."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "change",
+      "title": "Choose where your report begins",
+      "prompt": "Which part of the hall should your report point at first, to explain what has changed and what has stayed the same?",
+      "options": [
+        {
+          "id": "machines",
+          "title": "The British spinning machines and power looms",
+          "action": "Point your report at the machines that make cloth faster than any hands.",
+          "benefits": "It names the new mode of production, the steam-powered factory.",
+          "worries": "It may make the hand-made goods in the hall look as if they no longer matter.",
+          "tradeoff": "The machines are the change, but they are not the whole story."
+        },
+        {
+          "id": "india",
+          "title": "India’s hand-made cloth",
+          "action": "Point your report at the cloth from India, still woven by hand, though many weavers now use machine-spun thread.",
+          "benefits": "It shows what continued: skilled hand production, still at work.",
+          "worries": "It may hide how fast the share made by hand is shrinking.",
+          "tradeoff": "The cloth is the continuity, and it is still being made."
+        },
+        {
+          "id": "visitors",
+          "title": "The machines visitors have come to see",
+          "action": "Point your report at the British machines that visitors from many countries have come to London to study.",
+          "benefits": "It shows the methods spreading, carried by people.",
+          "worries": "It may make the spread sound easy, when it needed coal, money, and skill.",
+          "tradeoff": "The spread is a change, but it reached only some places."
+        }
+      ]
+    },
+    {
+      "id": "carry",
+      "title": "Choose what to take home",
+      "prompt": "For a region that wants the new methods, what should it take home first?",
+      "options": [
+        {
+          "id": "buy",
+          "title": "Buy British machines",
+          "action": "Order spinning machines and engines from British makers, now that they can be exported.",
+          "benefits": "Machines arrive quickly, built to the newest designs.",
+          "worries": "Nobody at home may know how to set them up or mend them.",
+          "tradeoff": "Machines carry the method, but only if people can run them."
+        },
+        {
+          "id": "hire",
+          "title": "Hire skilled people",
+          "action": "Hire British-trained engineers and mechanics to come and build and run the mills.",
+          "benefits": "The knowledge comes with the people, as it did with Slater and Cockerill.",
+          "worries": "Skilled workers are expensive, and they may leave.",
+          "tradeoff": "People carry what a machine cannot."
+        },
+        {
+          "id": "copy",
+          "title": "Copy the designs and build your own",
+          "action": "Study the machines in the hall and build copies in your own workshops.",
+          "benefits": "Your own makers learn the method, and the money stays at home.",
+          "worries": "Copies take years and may work worse at first.",
+          "tradeoff": "Building your own is slower, but it lasts."
+        }
+      ]
+    },
+    {
+      "id": "continue",
+      "title": "Advise the hand makers",
+      "prompt": "What should the hand makers of India and other regions do, now that machine-made goods are everywhere?",
+      "options": [
+        {
+          "id": "fine",
+          "title": "Keep making the finest goods",
+          "action": "Sell the finest hand-made cloth and goods to buyers who want what machines cannot copy.",
+          "benefits": "Skilled makers keep their craft and their best buyers.",
+          "worries": "The finest goods are a small trade; most buyers want cheap cloth.",
+          "tradeoff": "A craft can continue while its share shrinks."
+        },
+        {
+          "id": "thread",
+          "title": "Use machine-spun thread",
+          "action": "Buy cheaper machine-spun thread and keep weaving by hand.",
+          "benefits": "Weavers work faster and their cloth costs less.",
+          "worries": "Hand spinners lose their work, and the thread comes from abroad.",
+          "tradeoff": "Old and new modes can work together."
+        },
+        {
+          "id": "raw",
+          "title": "Grow and sell raw cotton",
+          "action": "Stop weaving and grow cotton to sell to the mills.",
+          "benefits": "The mills always need cotton, so it sells.",
+          "worries": "The region becomes a supplier of raw materials, not of finished goods.",
+          "tradeoff": "Selling raw cotton keeps a region in trade, but at the start of the chain."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Step out of the hall. Explain one change in how or where the world’s goods were made between 1750 and 1900, and one thing that continued. Then explain whether your choice of what to take home does or does not fit the pattern you found in how the factory methods spread.",
+  "sources": [
+    {
+      "label": "Victoria and Albert Museum, The Opening of the Great Exhibition (Selous)",
+      "url": "https://collections.vam.ac.uk/item/O8820/the-opening-of-the-great-oil-painting-selous-henry-courtney/"
+    },
+    {
+      "label": "Reports by the Juries, Great Exhibition, 1852 (Internet Archive)",
+      "url": "https://archive.org/details/reportsbyjurieso00grea"
+    },
+    {
+      "label": "National Park Service, Blackstone River Valley, Slater Mill",
+      "url": "https://www.nps.gov/blrv/learn/historyculture/slatermill.htm"
+    },
+    {
+      "label": "Royal Museums Greenwich, HMS Trincomalee",
+      "url": "https://www.rmg.co.uk/collections/objects/rmgc-object-150859"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-beintheroom-capture.js"></script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

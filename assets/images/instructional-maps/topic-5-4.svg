@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="map-title map-desc">
-  <title id="map-title">The Uneven Spread of Industrialization, c. 1850-1900</title>
-  <desc id="map-desc">Topic 5.4 instructional map for AP World History: The Uneven Spread of Industrialization, c. 1850-1900. Topic 5.4 · Industrialization spreads</desc>
+  <title id="map-title">Where the Factory Went, and Who Kept Making Goods, 1750 to 1900</title>
+  <desc id="map-desc">Topic 5.4 instructional map for AP World History: Where the Factory Went, and Who Kept Making Goods, 1750 to 1900. Topic 5.4 · Industrialization spreads</desc>
   <defs>
     <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#FFFDF7"/><stop offset="1" stop-color="#F1E7D5"/>
@@ -68,27 +68,37 @@
 
   <g id="highlights">
     <ellipse cx="791.1" cy="200.0" rx="40.0" ry="33.3" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <ellipse cx="817.8" cy="233.3" rx="62.2" ry="44.4" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <ellipse cx="1417.8" cy="288.9" rx="26.7" ry="33.3" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <ellipse cx="1075.6" cy="166.7" rx="142.2" ry="55.6" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
-    <ellipse cx="1146.7" cy="377.8" rx="53.3" ry="55.6" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
+    <ellipse cx="475.6" cy="266.7" rx="22.2" ry="16.7" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
+    <ellipse cx="831.1" cy="216.7" rx="22.2" ry="16.7" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
+    <ellipse cx="968.9" cy="233.3" rx="22.2" ry="16.7" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
+    <ellipse cx="1404.4" cy="305.6" rx="22.2" ry="16.7" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
+    <ellipse cx="1146.7" cy="377.8" rx="53.3" ry="55.6" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
+    <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
+    <ellipse cx="964.4" cy="305.6" rx="13.3" ry="13.9" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
   </g>
   <g id="flows">
-    <path class="flow" d="M791.1,200.0 Q798.4,221.5 817.8,233.3" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="801.4" cy="219.1" r="17"/>
-    <text class="badgenum" x="801.4" y="226.1" text-anchor="middle">1</text>
-    <path class="flow" d="M791.1,200.0 Q1090.2,344.7 1417.8,288.9" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="1097.3" cy="294.6" r="17"/>
-    <text class="badgenum" x="1097.3" y="301.6" text-anchor="middle">2</text>
+    <path class="flow" d="M791.1,200.0 Q624.8,178.1 482.7,267.2" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <circle class="badge" cx="630.8" cy="205.9" r="17"/>
+    <text class="badgenum" x="630.8" y="212.9" text-anchor="middle">1</text>
+    <path class="flow" d="M791.1,200.0 Q813.7,199.3 824.9,218.9" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <circle class="badge" cx="810.8" cy="204.4" r="17"/>
+    <text class="badgenum" x="810.8" y="211.4" text-anchor="middle">2</text>
+    <path class="flow" d="M791.1,200.0 Q886.9,177.8 968.0,233.3" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <circle class="badge" cx="883.2" cy="197.2" r="17"/>
+    <text class="badgenum" x="883.2" y="204.2" text-anchor="middle">3</text>
+    <path class="flow" d="M791.1,200.0 Q1128.8,70.3 1402.2,307.2" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <circle class="badge" cx="1112.8" cy="161.9" r="17"/>
+    <text class="badgenum" x="1112.8" y="168.9" text-anchor="middle">4</text>
   </g>
   <g id="region-labels">
-    <text class="region halo" x="791.1" y="271.3" text-anchor="middle" fill="#1A1C1D"><tspan x="791.1" dy="0">BRITAIN</tspan></text>
-    <text class="region halo" x="817.8" y="303.8" text-anchor="middle" fill="#1A1C1D"><tspan x="817.8" dy="0">FRANCE, BELGIUM,</tspan><tspan x="817.8" dy="25">GERMANY</tspan></text>
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">UNITED STATES</tspan></text>
-    <text class="region halo" x="1417.8" y="348.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1417.8" dy="0">JAPAN</tspan></text>
-    <text class="region halo" x="1075.6" y="248.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1075.6" dy="0">RUSSIA</tspan></text>
-    <text class="region halo" x="1146.7" y="459.3" text-anchor="middle" fill="#1A1C1D"><tspan x="1146.7" dy="0">DEINDUSTRIALIZED</tspan></text>
+    <text class="region halo" x="733.1" y="171.0" text-anchor="end" fill="#1A1C1D"><tspan x="733.1" dy="0">BRITAIN</tspan></text>
+    <text class="region halo" x="435.3" y="273.7" text-anchor="end" fill="#1A1C1D"><tspan x="435.3" dy="0">US NORTHEAST</tspan></text>
+    <text class="region halo" x="831.1" y="271.3" text-anchor="middle" fill="#1A1C1D"><tspan x="831.1" dy="0">BELGIUM AND</tspan><tspan x="831.1" dy="25">GERMAN STATES</tspan></text>
+    <text class="region halo" x="1009.1" y="240.3" text-anchor="start" fill="#1A1C1D"><tspan x="1009.1" dy="0">RUSSIA</tspan></text>
+    <text class="region halo" x="1444.7" y="312.6" text-anchor="start" fill="#1A1C1D"><tspan x="1444.7" dy="0">JAPAN</tspan></text>
+    <text class="region halo" x="1075.3" y="384.8" text-anchor="end" fill="#1A1C1D"><tspan x="1075.3" dy="0">INDIA</tspan></text>
+    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">CHINA</tspan></text>
+    <text class="region halo" x="933.1" y="336.6" text-anchor="end" fill="#1A1C1D"><tspan x="933.1" dy="0">SYRIA (OTTOMAN)</tspan></text>
   </g>
   <g id="places">
     
@@ -97,23 +107,22 @@
   <g id="titleband">
     <rect x="0" y="0" width="1600" height="118" fill="url(#paper)" opacity=".93"/>
     <rect x="0" y="118" width="1600" height="5" fill="#C9A46A"/>
-    <text class="title" x="46" y="62">The Uneven Spread of Industrialization, c. 1850-1900</text>
+    <text class="title" x="46" y="62">Where the Factory Went, and Who Kept Making Goods, 1750 to 1900</text>
     <text class="subtitle" x="48" y="97">Topic 5.4 · Industrialization spreads</text>
   </g>
 
-  <g id="legend" transform="translate(46,754)">
-    <rect x="0" y="0" width="1030" height="178" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
+  <g id="legend" transform="translate(46,655)">
+    <rect x="0" y="0" width="640" height="277" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
     <text class="small" x="18" y="28" font-weight="700">Map Key</text>
-      <rect x="18" y="38" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="56">First industrial economy</text>
-      <rect x="18" y="71" width="40" height="23" rx="4" fill="#C08552" fill-opacity=".6" stroke="#8C5A2B" stroke-width="3"/><text class="small" x="74" y="89">Continental industrialization after 1830</text>
-      <rect x="18" y="104" width="40" height="23" rx="4" fill="#D2B48C" fill-opacity=".6" stroke="#8E7A55" stroke-width="3"/><text class="small" x="74" y="122">Rapid US industrial growth after 1860</text>
-      <rect x="18" y="137" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="155">Meiji state-led industrialization after 1868</text>
-      <rect x="518" y="38" width="40" height="23" rx="4" fill="#9FB0AE" fill-opacity=".6" stroke="#4E6260" stroke-width="3"/><text class="small" x="574" y="56">State railways and late Russian industry</text>
-      <rect x="518" y="71" width="40" height="23" rx="4" fill="#B49AA8" fill-opacity=".6" stroke="#6B4A5A" stroke-width="3"/><text class="small" x="574" y="89">South Asia and Egypt: deindustrialized by imports</text>
-      <circle class="badge" cx="533" cy="115" r="14"/><text class="badgenum" x="533" y="121" text-anchor="middle" font-size="16">1</text><line x1="551" x2="572" y1="115" y2="115" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,109 L584,115 L572,121 Z" fill="#8C5A2B"/><text class="small" x="594" y="122">technology crosses the Channel</text>
-      <circle class="badge" cx="533" cy="148" r="14"/><text class="badgenum" x="533" y="154" text-anchor="middle" font-size="16">2</text><line x1="551" x2="572" y1="148" y2="148" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M572,142 L584,148 L572,154 Z" fill="#8C5A2B"/><text class="small" x="594" y="155">machinery and engineers</text>
+      <rect x="18" y="38" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="56">Britain: where the factory began, 1770s</text>
+      <rect x="18" y="71" width="40" height="23" rx="4" fill="#C08552" fill-opacity=".6" stroke="#8C5A2B" stroke-width="3"/><text class="small" x="74" y="89">Factory methods arrive</text>
+      <rect x="18" y="104" width="40" height="23" rx="4" fill="#9FB0AE" fill-opacity=".6" stroke="#4E6260" stroke-width="3"/><text class="small" x="74" y="122">Kept making goods, much of it by hand; share fell</text>
+      <circle class="badge" cx="33" cy="148" r="14"/><text class="badgenum" x="33" y="154" text-anchor="middle" font-size="16">1</text><line x1="51" x2="72" y1="148" y2="148" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,142 L84,148 L72,154 Z" fill="#8C5A2B"/><text class="small" x="94" y="155">United States, 1790s</text>
+      <circle class="badge" cx="33" cy="181" r="14"/><text class="badgenum" x="33" y="187" text-anchor="middle" font-size="16">2</text><line x1="51" x2="72" y1="181" y2="181" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,175 L84,181 L72,187 Z" fill="#8C5A2B"/><text class="small" x="94" y="188">Belgium and German states, 1810s to 1830s</text>
+      <circle class="badge" cx="33" cy="214" r="14"/><text class="badgenum" x="33" y="220" text-anchor="middle" font-size="16">3</text><line x1="51" x2="72" y1="214" y2="214" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,208 L84,214 L72,220 Z" fill="#8C5A2B"/><text class="small" x="94" y="221">Russia, 1870s</text>
+      <circle class="badge" cx="33" cy="247" r="14"/><text class="badgenum" x="33" y="253" text-anchor="middle" font-size="16">4</text><line x1="51" x2="72" y1="247" y2="247" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,241 L84,247 L72,253 Z" fill="#8C5A2B"/><text class="small" x="94" y="254">Japan, 1880s</text>
   </g>
 
   <rect x="0" y="948" width="1600" height="52" fill="url(#paper)" opacity=".93"/>
-  <text class="tiny" x="46" y="980">BeHistorical instructional map. Coastlines are simplified for classroom projection; regions and routes are drawn to the standard scholarly picture of this period.</text>
+  <text class="tiny" x="46" y="980">Regions are approximate. Each date is the decade of the case this topic uses, not the first factory there; an arrow is not a route. France is not drawn separately.</text>
 </svg>

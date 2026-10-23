@@ -184,7 +184,15 @@ const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
 // valve, every finding fixed or answered. Against main at e2adf9d (whose
 // unit-5.js is the 5.2 blob a7e7c179) only the 5.3 entry changed; 5.4 to 5.10
 // are byte-for-byte the readings in the committed fixture.
-const APPROVED_UNIT5_REWRITE_BLOB = 'a491c3f6d6f1e716fdd960578d6570acee653a8e';
+// 2026-10-22: Topic 5.4's rewrite, "Who Made the World's Goods?", written from
+// the 5.4 story (docs/TOPIC-5-4-STORY-DRAFT.md) and the same CED source file,
+// went through three independent review passes on 2026-10-22 (six reviewers;
+// findings and dispositions in docs/TOPIC-5-4-CLAIM-LEDGER.md), approved under
+// Jeff's standing rule of 2026-10-12. The loop ended on its three-pass safety
+// valve, every finding fixed or answered. Against main at 1161bb82 (whose
+// unit-5.js is the 5.3 blob a491c3f6) only the 5.4 entry changed; 5.5 to 5.10
+// are byte-for-byte the readings in the committed fixture.
+const APPROVED_UNIT5_REWRITE_BLOB = '9b3772292df90e7b063235725964cac7cc3f6748';
 const unit5SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-5.js');
 const approvedUnit5Rewrite = !fromDisk && fs.existsSync(unit5SourcePath)
   && gitBlobSha(fs.readFileSync(unit5SourcePath, 'utf8')) === APPROVED_UNIT5_REWRITE_BLOB;
@@ -402,8 +410,8 @@ for (const topic of allTopics()) {
     if (all.length) accepted.add('Unit 4 First & 10 Fall 2026 CED realignment approved 2026-09-17; guarded by the exact authored source Git blob hash.');
     continue;
   }
-  if (approvedUnit5Rewrite && /^5\.[123]$/.test(topic.topicKey)) {
-    if (all.length) accepted.add('Topics 5.1 (2026-10-20), 5.2 (2026-10-21) and 5.3 (2026-10-22) First & 10 story-first rewrites approved under the standing rule; guarded by the exact authored Unit 5 source Git blob hash.');
+  if (approvedUnit5Rewrite && /^5\.[1234]$/.test(topic.topicKey)) {
+    if (all.length) accepted.add('Topics 5.1 (2026-10-20), 5.2 (2026-10-21), 5.3 and 5.4 (2026-10-22) First & 10 story-first rewrites approved under the standing rule; guarded by the exact authored Unit 5 source Git blob hash.');
     continue;
   }
   const diffs = [];
