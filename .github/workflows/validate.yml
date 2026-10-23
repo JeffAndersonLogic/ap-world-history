@@ -53,7 +53,11 @@ jobs:
   browser:
     name: Browser contracts
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # 30, not 20 (2026-10-23): the suite checks every Teaching OS deck, so it
+    # grows with each topic built. On main it took 18 to 19 of the 20 minutes,
+    # and with 5.4 and 5.5 added plus a slow Chromium install, a run with every
+    # check passing was cancelled at 20 minutes, partway through 5.5.
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
