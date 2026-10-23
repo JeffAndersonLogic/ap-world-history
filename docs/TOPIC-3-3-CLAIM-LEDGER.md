@@ -81,7 +81,12 @@ Jeff asked for the Church's positions before 1517 to sit beside both reformation
 slide shows continuity and change rather than only a Lutheran-Catholic comparison. The
 `two-answers` split mirror became `before-after`, a three-column split matrix (Before 1517,
 Lutheran, Catholic at Trent), with changes in bold and the pattern row "Lutherans changed
-beliefs. Catholics kept beliefs, changed behavior. Both grew." Same 4 minutes; no slide added.
+beliefs. Catholics reaffirmed beliefs, reformed behavior." (with "both grew" in the footer). Same 4 minutes; no slide added.
+
+Independent review, 2026-10-23: every bold marking confirmed. Two should-fix wording findings,
+both fixed: "kept beliefs" became "reaffirmed beliefs" (Trent defined doctrine more sharply
+without changing it), and "seminary-trained" became "seminaries ordered" (seminaries spread
+over decades after 1563).
 
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|

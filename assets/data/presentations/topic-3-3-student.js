@@ -213,7 +213,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "split-matrix",
       "eyebrow": "Christianity · Before and After",
       "title": "What did each side change?",
-      "footer": "Bold marks a change from before 1517.",
+      "footer": "Both stayed Christian and both grew. Bold marks a change from before 1517.",
       "kc": "KC-4.1.VI.i",
       "template": {
         "columns": [
@@ -257,7 +257,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "cells": [
               "Unmarried, often poorly trained",
               "**Pastors may marry**",
-              "Unmarried, **seminary-trained**"
+              "Unmarried, **seminaries ordered**"
             ]
           },
           {
@@ -271,7 +271,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         ],
         "result": {
           "label": "Pattern",
-          "text": "Lutherans changed beliefs. Catholics kept beliefs, changed behavior. Both grew."
+          "text": "Lutherans changed beliefs. Catholics reaffirmed beliefs, reformed behavior."
         }
       }
     },
