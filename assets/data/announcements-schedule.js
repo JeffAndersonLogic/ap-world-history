@@ -862,7 +862,8 @@ window.BEHISTORICAL_SCHEDULE = {
     // Green Wednesday 2026-10-28 and Silver Thursday 2026-10-29 (Jeff,
     // 2026-10-12), in the same block as the Unit 3 Quiz on each cohort's day.
     // Required subset (Jeff, 2026-10-12): 02 First & 10, 06 Checkpoint 1,
-    // 07 Evidence Lab and 10 Checkpoint 2.
+    // 07 Evidence Lab and 10 Checkpoint 2. Kept at four, the quiz day's load,
+    // in Jeff's Unit 4 module review of 2026-10-23.
     {
       date: '2026-10-28',
       cohort: 'green',
@@ -883,22 +884,23 @@ window.BEHISTORICAL_SCHEDULE = {
     // on 2026-10-12 as each cohort's class after 4.1 (they were 4.1's
     // homeworkDue lines, which these entries replace; 4.1's due dates are now
     // derived from them).
-    // Required subset (4.2 build, 2026-10-12, under Jeff's standing rule): 02
-    // First & 10, 05 Skill Builder (5.B Making Connections, the CED's suggested
-    // skill), 07 Evidence Lab and 10 Checkpoint 2. Checkpoint 1 and BeInTheRoom
-    // stay optional.
+    // Required subset reset by Jeff, 2026-10-23 (Unit 4 module review; 02, 06
+    // and 10 are now required on every topic): 02 First & 10, 06 Checkpoint 1,
+    // 09 BeInTheRoom (the Santa Fe Bargain, whose reflection is the CED's 5.B
+    // Making Connections) and 10 Checkpoint 2. Skill Builder and Evidence Lab
+    // optional. The 4.2 build's subset (02, 05, 07, 10) is superseded.
     {
       date: '2026-10-30',
       cohort: 'green',
       topic: '4.2',
-      modules: ['02', '05', '07', '10'],
+      modules: ['02', '06', '09', '10'],
       homework: 'Finish Checkpoint 2, and any other required 4.2 module you did not complete in class.'
     },
     {
       date: '2026-11-02',
       cohort: 'silver',
       topic: '4.2',
-      modules: ['02', '05', '07', '10'],
+      modules: ['02', '06', '09', '10'],
       homework: 'Finish Checkpoint 2, and any other required 4.2 module you did not complete in class.'
     },
 
@@ -906,131 +908,134 @@ window.BEHISTORICAL_SCHEDULE = {
     // Corrected by Jeff's calendar and clarification, 2026-10-14:
     // 4.2 Green is October 30, Silver November 2; 4.3 follows on
     // Green November 3 and Silver November 4.
-    // Required subset (4.3 build, 2026-10-14, under Jeff's standing rule): 02
-    // First & 10, 05 Skill Builder (3.B, the CED's suggested skill), 07 Evidence
-    // Lab and 10 Checkpoint 2. Checkpoint 1 and BeInTheRoom stay optional.
+    // Required subset reset by Jeff, 2026-10-23 (Unit 4 module review): 02
+    // First & 10, 05 Skill Builder (3.B, the CED's suggested skill), 06
+    // Checkpoint 1, 08 Primary Source (the Nahua smallpox account, 3.B applied)
+    // and 10 Checkpoint 2. Evidence Lab and BeInTheRoom optional.
     {
       date: '2026-11-03',
       cohort: 'green',
       topic: '4.3',
-      modules: ['02', '05', '07', '10'],
+      modules: ['02', '05', '06', '08', '10'],
       homework: 'Finish Checkpoint 2, and any other required 4.3 module you did not complete in class.'
     },
     {
       date: '2026-11-04',
       cohort: 'silver',
       topic: '4.3',
-      modules: ['02', '05', '07', '10'],
+      modules: ['02', '05', '06', '08', '10'],
       homework: 'Finish Checkpoint 2, and any other required 4.3 module you did not complete in class.'
     },
 
     /* ---- Topic 4.4, Maritime Empires Established ------ */
     // Green Thursday 2026-11-05 and Silver Friday 2026-11-06, from Jeff's
     // corrected November calendar (2026-10-14).
-    // Required subset (4.4 build, 2026-10-14, under Jeff's standing rule): 02
-    // First & 10, 05 Skill Builder (2.A Sourcing and Situation, the CED's
-    // suggested skill), 07 Evidence Lab and 10 Checkpoint 2. Checkpoint 1 and
-    // BeInTheRoom stay optional.
+    // Required subset reset by Jeff, 2026-10-23 (Unit 4 module review): 02
+    // First & 10, 06 Checkpoint 1, 08 Primary Source (Afonso I's letter, whose
+    // questions are the CED's 2.A Sourcing and Situation), 09 BeInTheRoom (the
+    // Goa Fort Council) and 10 Checkpoint 2. Skill Builder and Evidence Lab
+    // optional.
     {
       date: '2026-11-05',
       cohort: 'green',
       topic: '4.4',
-      modules: ['02', '05', '07', '10'],
+      modules: ['02', '06', '08', '09', '10'],
       homework: 'Finish Checkpoint 2, and any other required 4.4 module you did not complete in class.'
     },
     {
       date: '2026-11-06',
       cohort: 'silver',
       topic: '4.4',
-      modules: ['02', '05', '07', '10'],
+      modules: ['02', '06', '08', '09', '10'],
       homework: 'Finish Checkpoint 2, and any other required 4.4 module you did not complete in class.'
     },
 
     /* ---- Topic 4.5, Maritime Empires Maintained and Developed ------ */
     // Green Monday 2026-11-09 and Silver Tuesday 2026-11-10, from Jeff's
     // corrected November calendar (2026-10-14).
-    // Required subset (4.5 build, 2026-10-15, under Jeff's standing rule): 02
-    // First & 10, 05 Skill Builder (3.A Claims and Evidence in Sources, the
-    // CED's suggested skill), 07 Evidence Lab and 10 Checkpoint 2. Checkpoint 1
-    // and BeInTheRoom stay optional.
+    // Required subset reset by Jeff, 2026-10-23 (Unit 4 module review): 02
+    // First & 10, 05 Skill Builder (3.A, the CED's suggested skill), 06
+    // Checkpoint 1, 09 BeInTheRoom (the Manila Silver Council) and 10
+    // Checkpoint 2. Evidence Lab and Primary Source optional.
     {
       date: '2026-11-09',
       cohort: 'green',
       topic: '4.5',
-      modules: ['02', '05', '07', '10'],
+      modules: ['02', '05', '06', '09', '10'],
       homework: 'Finish Checkpoint 2, and any other required 4.5 module you did not complete in class.'
     },
     {
       date: '2026-11-10',
       cohort: 'silver',
       topic: '4.5',
-      modules: ['02', '05', '07', '10'],
+      modules: ['02', '05', '06', '09', '10'],
       homework: 'Finish Checkpoint 2, and any other required 4.5 module you did not complete in class.'
     },
 
     /* ---- Topic 4.6, Internal and External Challenges to State Power ------ */
     // Green Wednesday 2026-11-11 and Silver Thursday 2026-11-12, from Jeff's
     // corrected November calendar (2026-10-14).
-    // Required subset (4.6 build, 2026-10-16, under Jeff's standing rule): 02
-    // First & 10, 05 Skill Builder (4.B Contextualization, the CED's suggested
-    // skill), 07 Evidence Lab and 10 Checkpoint 2. Checkpoint 1 and
-    // BeInTheRoom stay optional.
+    // Required subset reset by Jeff, 2026-10-23 (Unit 4 module review): 02
+    // First & 10, 05 Skill Builder (4.B, the CED's suggested skill), 06
+    // Checkpoint 1, 08 Primary Source (Pedro Naranjo, the CED's own sample
+    // activity for 4.6) and 10 Checkpoint 2. Evidence Lab and BeInTheRoom
+    // optional.
     {
       date: '2026-11-11',
       cohort: 'green',
       topic: '4.6',
-      modules: ['02', '05', '07', '10'],
+      modules: ['02', '05', '06', '08', '10'],
       homework: 'Finish Checkpoint 2, and any other required 4.6 module you did not complete in class.'
     },
     {
       date: '2026-11-12',
       cohort: 'silver',
       topic: '4.6',
-      modules: ['02', '05', '07', '10'],
+      modules: ['02', '05', '06', '08', '10'],
       homework: 'Finish Checkpoint 2, and any other required 4.6 module you did not complete in class.'
     },
 
     /* ---- Topic 4.7, Changing Social Hierarchies ------ */
     // Green Friday 2026-11-13 and Silver Monday 2026-11-16, from Jeff's
     // corrected November calendar (2026-10-14).
-    // Required subset (4.7 build, 2026-10-18, under Jeff's standing rule): 02
-    // First & 10, 05 Skill Builder (3.D Claims and Evidence in Sources, the
-    // CED's suggested skill), 07 Evidence Lab and 10 Checkpoint 2. Checkpoint 1
-    // and BeInTheRoom stay optional.
+    // Required subset reset by Jeff, 2026-10-23 (Unit 4 module review): 02
+    // First & 10, 05 Skill Builder (3.D, the CED's suggested skill), 06
+    // Checkpoint 1, 09 BeInTheRoom (the Identity Dossier) and 10 Checkpoint 2.
+    // Evidence Lab and Primary Source optional.
     {
       date: '2026-11-13',
       cohort: 'green',
       topic: '4.7',
-      modules: ['02', '05', '07', '10'],
+      modules: ['02', '05', '06', '09', '10'],
       homework: 'Finish Checkpoint 2, and any other required 4.7 module you did not complete in class.'
     },
     {
       date: '2026-11-16',
       cohort: 'silver',
       topic: '4.7',
-      modules: ['02', '05', '07', '10'],
+      modules: ['02', '05', '06', '09', '10'],
       homework: 'Finish Checkpoint 2, and any other required 4.7 module you did not complete in class.'
     },
 
     /* ---- Topic 4.8, Continuity and Change from 1450 to 1750 ------ */
     // Green Tuesday 2026-11-17 and Silver Wednesday 2026-11-18, from Jeff's
     // corrected November calendar (2026-10-14).
-    // Required subset (4.8 build, 2026-10-18, under Jeff's standing rule): 02
+    // Required subset reset by Jeff, 2026-10-23 (Unit 4 module review): 02
     // First & 10, 05 Skill Builder (6.C Argumentation, the CED's suggested
-    // skill), 07 Evidence Lab and 10 Checkpoint 2, the argument the day builds
-    // to. Checkpoint 1 stays optional; 4.8 has no BeInTheRoom.
+    // skill), 06 Checkpoint 1, 07 Evidence Lab (evidence from 4.3 to 4.7 for
+    // the argument) and 10 Checkpoint 2. 4.8 has no BeInTheRoom.
     {
       date: '2026-11-17',
       cohort: 'green',
       topic: '4.8',
-      modules: ['02', '05', '07', '10'],
+      modules: ['02', '05', '06', '07', '10'],
       homework: 'Finish Checkpoint 2, and any other required 4.8 module you did not complete in class.'
     },
     {
       date: '2026-11-18',
       cohort: 'silver',
       topic: '4.8',
-      modules: ['02', '05', '07', '10'],
+      modules: ['02', '05', '06', '07', '10'],
       homework: 'Finish Checkpoint 2, and any other required 4.8 module you did not complete in class.'
     },
 

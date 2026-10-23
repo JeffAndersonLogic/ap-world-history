@@ -85,7 +85,14 @@ window.BEHISTORICAL_LESSON = {
   lecture: {
     title: "Push and Pushback: How It Worked",
     intro: "The First & 10 tells the story. These cards take four parts of it apart: what a centralizing state took from the people inside it, how many Pueblo towns rose on one day, how a warrior kingdom and a queen held off empires, and what made resistance by enslaved people organized.",
-    videos: [],
+    videos: [
+      {
+        title: "CHALLENGES to STATE Power, 1450-1750 [AP World History Review—Unit 4 Topic 6]",
+        url: "https://youtu.be/bSL0zwBsjQs",
+        youtubeId: "bSL0zwBsjQs",
+        prompt: "Use this clip to review how people pushed back as states grew stronger. As you watch, write down one revolt from inside a state and one fight against an outside empire, and what caused each one."
+      }
+    ],
     segments: [
       {
         title: "What Centralizing Took",
