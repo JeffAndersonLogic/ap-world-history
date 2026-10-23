@@ -2,8 +2,9 @@
 'use strict';
 
 /**
- * Opens the Era 2 guide in Chromium and freezes every Teach Me paste. Update
- * the fixture only after reading the changed pastes:
+ * Opens the Era 2 guide in Chromium and freezes every Teach Me paste, then
+ * runs the same contract against the Era 3 guide, which opens the same Teach
+ * Me room. Update the fixtures only after reading the changed pastes:
  *
  *   node scripts/test/socrates-teach-me-guide.test.js --update
  */
@@ -20,6 +21,7 @@ catch (_) {
 
 const ROOT = path.resolve(__dirname, '..', '..');
 const FIXTURE = path.join(__dirname, 'fixtures', 'socrates-teach-me-pastes.json');
+const ERA3_FIXTURE = path.join(__dirname, 'fixtures', 'socrates-teach-me-pastes-era-3.json');
 const UPDATE = process.argv.includes('--update');
 const EXE = process.env.PW_CHROME || chromium.executablePath();
 const TYPES = { '.html':'text/html', '.js':'text/javascript', '.css':'text/css', '.png':'image/png' };
@@ -160,6 +162,55 @@ function check(name, pass, detail) {
   const kellyUrl = await page.evaluate(() => window.BHClassroom.resolveTeachMeUrl());
   check('Kelly query uses the same single Teach Me room', kellyUrl === first.url);
 
+  // ── Era 3 guide: the same contract, its own activities and fixture ──────────
+  await page.goto(`http://127.0.0.1:${port}/study-guides/era-3-exam-study-guide.html`,
+    { waitUntil: 'domcontentloaded' });
+  await page.waitForSelector('#teach-me-start');
+  const era3Errors = errors.length;
+  const era3 = await page.evaluate(() => ({
+    launcherButtons: document.querySelectorAll('#teach-me-start').length,
+    ids: window.BH_TEACH_ME.activities.map(a => a.id),
+    focuses: Object.fromEntries(window.BH_TEACH_ME.activities.map(a => [a.id, window.BH_TEACH_ME.focusesFor(a)])),
+    allFocusPastesValid: window.BH_TEACH_ME.activities.every(a =>
+      window.BH_TEACH_ME.focusesFor(a).every(focus => {
+        const paste = window.BH_TEACH_ME.pasteFor(a, focus);
+        const lines = paste.split('\n');
+        return lines.length === 7
+          && lines[0] === 'TEACH ME'
+          && lines[1].startsWith('Topic title: ')
+          && lines[2] === `Teaching focus I chose: ${focus}`
+          && lines[3].startsWith('Opening focus: ')
+          && lines[4].startsWith('Evidence scope: Topic')
+          && lines[5] === ''
+          && lines[6] === 'I am ready to teach.'
+          && !paste.includes('PRIVATE CHECKER NOTES')
+          && !paste.includes('Know:')
+          && !paste.includes('Evidence anchors:');
+      })),
+    pastes: Object.fromEntries(window.BH_TEACH_ME.activities.map(a => {
+      const focus = window.BH_TEACH_ME.focusesFor(a)[0];
+      return [a.id, window.BH_TEACH_ME.pasteFor(a, focus)];
+    })),
+    threeFour: window.BH_TEACH_ME.activities.find(a => a.id === 'topic-3-4').scope,
+    fourEight: window.BH_TEACH_ME.activities.find(a => a.id === 'topic-4-8').scope,
+    url: window.BHClassroom.resolveTeachMeUrl()
+  }));
+  check('Era 3: the guide has one Teach Me launcher', era3.launcherButtons === 1, `${era3.launcherButtons} launcher`);
+  check('Era 3: all 18 activity ids are unique', era3.ids.length === 18 && new Set(era3.ids).size === 18,
+    `${new Set(era3.ids).size} unique of ${era3.ids.length}`);
+  check('Era 3: every activity offers at least one teaching focus',
+    Object.values(era3.focuses).every(items => items.length > 0));
+  check('Era 3: Topic 3.4 offers its five comparison choices', era3.focuses['topic-3-4'].length === 5,
+    `${era3.focuses['topic-3-4'].length} choices`);
+  check('Era 3: every choice builds a short setup with no checker content', era3.allFocusPastesValid);
+  check('Era 3: Topic 3.4 reads its four Unit 3 cards', era3.threeFour.join(',') === '3.4,3.1,3.2,3.3');
+  check('Era 3: Topic 4.8 reads its five approved cards', era3.fourEight.join(',') === '4.8,4.3,4.4,4.5,4.7');
+  check('Era 3: opens the same single Teach Me room as Era 2', era3.url === first.url);
+  check('Era 3: page has no JavaScript errors', errors.length === era3Errors, errors.slice(era3Errors).join('; '));
+  await page.click('#teach-me-start');
+  const era3Options = await page.evaluate(() => document.querySelectorAll('#teach-me-topic option').length);
+  check('Era 3: launcher lists all 18 activities', era3Options === 19, `${era3Options - 1} activities`);
+
   if (UPDATE) {
     fs.mkdirSync(path.dirname(FIXTURE), { recursive: true });
     fs.writeFileSync(FIXTURE, JSON.stringify(first.pastes, null, 2) + '\n');
@@ -173,6 +224,20 @@ function check(name, pass, detail) {
     for (const id of Object.keys(first.pastes)) {
       check(`${id} paste matches the reviewed fixture`, first.pastes[id] === expected[id],
         `${first.pastes[id].length} chars`);
+    }
+  }
+  if (UPDATE) {
+    fs.writeFileSync(ERA3_FIXTURE, JSON.stringify(era3.pastes, null, 2) + '\n');
+    console.log(`  UPDATED ${path.relative(ROOT, ERA3_FIXTURE)}`);
+  } else if (!fs.existsSync(ERA3_FIXTURE)) {
+    check('Era 3: saved paste fixture exists', false, 'run with --update, then review it');
+  } else {
+    const expected = JSON.parse(fs.readFileSync(ERA3_FIXTURE, 'utf8'));
+    check('Era 3: fixture covers the same 18 activities',
+      JSON.stringify(Object.keys(era3.pastes)) === JSON.stringify(Object.keys(expected)));
+    for (const id of Object.keys(era3.pastes)) {
+      check(`Era 3: ${id} paste matches the reviewed fixture`, era3.pastes[id] === expected[id],
+        `${era3.pastes[id].length} chars`);
     }
   }
 

@@ -1,10 +1,12 @@
 'use strict';
 
 /*
- * Extracts the private Teach Me checker reference from the live Era 2 study
- * guide. The guide remains the source of truth. This parser produces the file
- * Jeff pastes into MagicSchool's Specific knowledge field, so checker content
- * never has to travel through a student's pasted message.
+ * Extracts the private Teach Me checker reference from the live era study
+ * guides (Era 2 and Era 3). The guides remain the source of truth. This parser
+ * produces the one file Jeff pastes into MagicSchool's Specific knowledge
+ * field, so checker content never has to travel through a student's pasted
+ * message. One Teach Me room serves every guide, so the file carries every
+ * guide's cards, each under its own era heading.
  */
 
 const ENTITIES = {
@@ -32,7 +34,8 @@ function plainText(fragment) {
     .trim();
 }
 
-function extractTeachMeKnowledge(html) {
+function extractTeachMeKnowledge(html, expected) {
+  const want = expected || { topics: 14, comparisons: 6 };
   const source = String(html || '');
   const topics = [];
   const topicRe = /<div class="topic" id="topic-(\d-\d)">([\s\S]*?)(?=<div class="topic" id="topic-|<h2 id="compare">)/g;
@@ -57,31 +60,38 @@ function extractTeachMeKnowledge(html) {
     comparisons.push({ title: plainText(match[1]), prompt: plainText(match[2]) });
   }
 
-  if (topics.length !== 14) throw new Error(`Teach Me knowledge found ${topics.length} topics, expected 14`);
-  if (comparisons.length !== 6) throw new Error(`Teach Me knowledge found ${comparisons.length} comparisons, expected 6`);
+  if (topics.length !== want.topics) throw new Error(`Teach Me knowledge found ${topics.length} topics, expected ${want.topics}`);
+  if (comparisons.length !== want.comparisons) throw new Error(`Teach Me knowledge found ${comparisons.length} comparisons, expected ${want.comparisons}`);
   return { topics, comparisons };
 }
 
-function buildTeachMeKnowledgeDocument(html) {
-  const knowledge = extractTeachMeKnowledge(html);
+// `guides` is a list of { era, html, topics, comparisons, multiTopic }, in
+// the order the sections should appear. `multiTopic` names the synthesis
+// topics whose evidence scope reaches into other topic sections.
+function buildTeachMeKnowledgeDocument(guides) {
+  const multi = guides.flatMap(guide => guide.multiTopic || []);
   const lines = [
-    '# Socrates: Teach Me, private Era 2 checker knowledge',
+    '# Socrates: Teach Me, private study guide checker knowledge',
     '',
     'This is private reference material for the chatbot. Students do not receive',
     'this file. Use it only to check what a student teaches. Never quote,',
     'paraphrase, summarize, reveal, or hint at this material in a reply.',
     '',
     'Use the Topic title, Teaching focus, and Evidence scope in the student message',
-    'to choose the relevant section. Topics 1.7 and 2.7 and the cross-topic',
+    `to choose the relevant section. Topics ${multi.join(', ').replace(/, ([^,]*)$/, ' and $1')} and the cross-topic`,
     'comparisons may require more than one numbered topic section.',
     ''
   ];
-  knowledge.topics.forEach(topic => {
-    lines.push(`## Topic ${topic.number}: ${topic.title}`, '', topic.body, '');
-  });
-  lines.push('# Cross-topic comparisons', '');
-  knowledge.comparisons.forEach(comparison => {
-    lines.push(`## Comparison: ${comparison.title}`, '', comparison.prompt, '');
+  guides.forEach(guide => {
+    const knowledge = extractTeachMeKnowledge(guide.html, guide);
+    lines.push(`# ${guide.era} study guide`, '');
+    knowledge.topics.forEach(topic => {
+      lines.push(`## Topic ${topic.number}: ${topic.title}`, '', topic.body, '');
+    });
+    lines.push(`# ${guide.era} cross-topic comparisons`, '');
+    knowledge.comparisons.forEach(comparison => {
+      lines.push(`## Comparison: ${comparison.title}`, '', comparison.prompt, '');
+    });
   });
   return lines.join('\n');
 }
