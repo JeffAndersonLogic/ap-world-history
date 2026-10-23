@@ -231,9 +231,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "Saved by",
             "cells": [
-              "Faith, good works, sacraments",
+              "Faith and good works",
               "**Faith alone**",
-              "Faith, good works, sacraments"
+              "Faith and good works"
             ]
           },
           {
@@ -255,9 +255,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "Clergy",
             "cells": [
-              "Unmarried, often poorly trained",
+              "Unmarried, little training",
               "**Pastors may marry**",
-              "Unmarried, **seminaries ordered**"
+              "Unmarried, **seminaries**"
             ]
           },
           {

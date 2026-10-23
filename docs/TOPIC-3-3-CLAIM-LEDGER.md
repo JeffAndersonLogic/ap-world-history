@@ -88,6 +88,13 @@ both fixed: "kept beliefs" became "reaffirmed beliefs" (Trent defined doctrine m
 without changing it), and "seminary-trained" became "seminaries ordered" (seminaries spread
 over decades after 1563).
 
+CI's webfont pass then failed (`slide-templates.browser.test.js`: the matrix headers collided with
+the title in Cinzel, 19px). Reproduced locally with the fonts in `BHT_FONT_DIR`, and fixed by
+putting the two wrapped rows on one line each: "Saved by" now reads "Faith and good works" in both
+the Before and Trent columns (the seven sacraments moved to the notes, for both periods), and
+"Clergy" reads "Unmarried, little training" and "Unmarried, **seminaries**" (the notes keep "ordered
+in 1563, spread over decades").
+
 | Claim | Where it appears | Source and what it actually says | Status |
 |---|---|---|---|
 | Before 1517 the Church taught salvation through grace with faith, good works and the sacraments, under the authority of the Pope and the Church, with worship in Latin and unmarried priests. | `before-after` | Standard late-medieval Catholic teaching; Trent's decrees of 1546 to 1563 restated these positions rather than inventing them. | VERIFIED |
