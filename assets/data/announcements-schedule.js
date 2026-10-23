@@ -1047,7 +1047,8 @@ window.BEHISTORICAL_SCHEDULE = {
       topicTitle: 'Era 3 Study Guide Work Day',
       unit: 'Units 3 and 4',
       learningTargets: ['I can identify which Unit 3 and Unit 4 concepts I need to review before the Era 3 exam.'],
-      successCriteria: ['I can use my study guide to identify gaps and plan my review.']
+      successCriteria: ['I can use my study guide to identify gaps and plan my review.'],
+      homework: 'Finish your Era 3 study guide and review Units 3 and 4 for the Era 3 Exam.'
     },
     {
       date: '2026-11-20',
@@ -1055,19 +1056,44 @@ window.BEHISTORICAL_SCHEDULE = {
       topicTitle: 'Era 3 Study Guide Work Day',
       unit: 'Units 3 and 4',
       learningTargets: ['I can identify which Unit 3 and Unit 4 concepts I need to review before the Era 3 exam.'],
-      successCriteria: ['I can use my study guide to identify gaps and plan my review.']
+      successCriteria: ['I can use my study guide to identify gaps and plan my review.'],
+      homework: 'Finish your Era 3 study guide and review Units 3 and 4 for the Era 3 Exam.'
     },
     {
       date: '2026-11-23',
       cohort: 'green',
       topicTitle: 'Era 3 Exam, c. 1450 to c. 1750',
-      unit: 'Units 3 and 4'
+      unit: 'Units 3 and 4',
+      // Targets and criteria written 2026-10-23 from the Unit 3 and Unit 4
+      // CED learning objectives, in the shape of the Eras 2 Exam entries.
+      learningTargets: [
+        'I can explain how land-based empires expanded, administered their territory, and justified their rule, and how belief systems changed, from c. 1450 to c. 1750.',
+        'I can explain the causes and effects of European maritime exploration, the Columbian Exchange, and the maritime empires that grew from them.',
+        'I can explain how state power, resistance to it, labor systems, and social hierarchies changed and continued from c. 1450 to c. 1750.'
+      ],
+      successCriteria: [
+        'I can use specific evidence from more than one empire to compare how rulers expanded and kept their power.',
+        'I can connect new technology, state sponsorship, and economic motives to transoceanic trade, new labor systems, and the Columbian Exchange.',
+        'I can use historical reasoning, especially causation, comparison, and continuity and change, to explain how new connections across the oceans changed societies.'
+      ]
     },
     {
       date: '2026-11-24',
       cohort: 'silver',
       topicTitle: 'Era 3 Exam, c. 1450 to c. 1750',
-      unit: 'Units 3 and 4'
+      unit: 'Units 3 and 4',
+      // Targets and criteria written 2026-10-23 from the Unit 3 and Unit 4
+      // CED learning objectives, in the shape of the Eras 2 Exam entries.
+      learningTargets: [
+        'I can explain how land-based empires expanded, administered their territory, and justified their rule, and how belief systems changed, from c. 1450 to c. 1750.',
+        'I can explain the causes and effects of European maritime exploration, the Columbian Exchange, and the maritime empires that grew from them.',
+        'I can explain how state power, resistance to it, labor systems, and social hierarchies changed and continued from c. 1450 to c. 1750.'
+      ],
+      successCriteria: [
+        'I can use specific evidence from more than one empire to compare how rulers expanded and kept their power.',
+        'I can connect new technology, state sponsorship, and economic motives to transoceanic trade, new labor systems, and the Columbian Exchange.',
+        'I can use historical reasoning, especially causation, comparison, and continuity and change, to explain how new connections across the oceans changed societies.'
+      ]
     }
   ],
 

@@ -2234,7 +2234,11 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       successCriteria: [
         { text: 'I can use my study guide to identify gaps and plan my review.' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish your Era 3 study guide and review Units 3 and 4 for the Era 3 Exam.', due: 'Monday, November 23' }
+      ],
+      homeworkDue: 'Monday, November 23',
+      dueDate: '2026-11-23'
     },
     /* 2026-11-20  <-  written by hand in the schedule */
     {
@@ -2248,7 +2252,11 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       successCriteria: [
         { text: 'I can use my study guide to identify gaps and plan my review.' }
       ],
-      homework: []
+      homework: [
+        { text: 'Finish your Era 3 study guide and review Units 3 and 4 for the Era 3 Exam.', due: 'Tuesday, November 24' }
+      ],
+      homeworkDue: 'Tuesday, November 24',
+      dueDate: '2026-11-24'
     },
     /* 2026-11-23  <-  written by hand in the schedule */
     {
@@ -2256,6 +2264,16 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       cohort: 'green',
       unit: 'Units 3 and 4',
       topic: 'Era 3 Exam, c. 1450 to c. 1750',
+      learningTargets: [
+        { text: 'I can explain how land-based empires expanded, administered their territory, and justified their rule, and how belief systems changed, from c. 1450 to c. 1750.' },
+        { text: 'I can explain the causes and effects of European maritime exploration, the Columbian Exchange, and the maritime empires that grew from them.' },
+        { text: 'I can explain how state power, resistance to it, labor systems, and social hierarchies changed and continued from c. 1450 to c. 1750.' }
+      ],
+      successCriteria: [
+        { text: 'I can use specific evidence from more than one empire to compare how rulers expanded and kept their power.' },
+        { text: 'I can connect new technology, state sponsorship, and economic motives to transoceanic trade, new labor systems, and the Columbian Exchange.' },
+        { text: 'I can use historical reasoning, especially causation, comparison, and continuity and change, to explain how new connections across the oceans changed societies.' }
+      ],
       homework: []
     },
     /* 2026-11-24  <-  written by hand in the schedule */
@@ -2264,6 +2282,16 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
       cohort: 'silver',
       unit: 'Units 3 and 4',
       topic: 'Era 3 Exam, c. 1450 to c. 1750',
+      learningTargets: [
+        { text: 'I can explain how land-based empires expanded, administered their territory, and justified their rule, and how belief systems changed, from c. 1450 to c. 1750.' },
+        { text: 'I can explain the causes and effects of European maritime exploration, the Columbian Exchange, and the maritime empires that grew from them.' },
+        { text: 'I can explain how state power, resistance to it, labor systems, and social hierarchies changed and continued from c. 1450 to c. 1750.' }
+      ],
+      successCriteria: [
+        { text: 'I can use specific evidence from more than one empire to compare how rulers expanded and kept their power.' },
+        { text: 'I can connect new technology, state sponsorship, and economic motives to transoceanic trade, new labor systems, and the Columbian Exchange.' },
+        { text: 'I can use historical reasoning, especially causation, comparison, and continuity and change, to explain how new connections across the oceans changed societies.' }
+      ],
       homework: []
     }
   ],

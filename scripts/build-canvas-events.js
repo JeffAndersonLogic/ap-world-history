@@ -177,6 +177,7 @@ const OVERVIEWS = {
 
   '2.7': "Comparison asks you to explain the networks together rather than retell them one at a time. Today you compare the Silk Roads, Indian Ocean, and trans-Saharan systems through the same categories: environment and transportation, commercial practices and finance, demand and productive capacity, the role of states and cities, and the cultural or environmental effects of exchange. The goal is an AP-style argument built from both meaningful similarities and meaningful differences.",
 
+  'Era 3 Exam, c. 1450 to c. 1750': 'Covers Units 3 and 4 in full. Unit 3 is the land-based empires: how they expanded, how rulers ran their lands and justified their rule, and how belief systems changed and divided them. Unit 4 is the oceans: the voyages, the Columbian Exchange, the maritime empires Europeans built and kept, the resistance they met, and what all of it changed about work and social hierarchies.',
   'Eras 2 Exam, c. 1200 to c. 1450': 'Covers Units 1 and 2 in full: state building across six Unit 1 regions, plus the three Afro-Eurasian trade networks of Unit 2 and their cultural, environmental, and comparative consequences.',
 
   '3.1': "A few empires got huge after 1450, and guns are a big part of why. Today you follow the story: cannons broke the walls that had protected castles and cities, only big states with big treasuries could afford them, and the Ottoman, Safavid, Mughal, and Qing empires grew. Then you see what happened when growing empires ran into each other, through the Safavid and Mughal rivalry and Morocco's war with Songhai.",
@@ -1191,7 +1192,8 @@ function build() {
   for (const topic of topics) {
     out.push(`## ${topic.heading}`);
     out.push('');
-    out.push(`**Event title:** \`APW - ${topic.code}${topic.title ? ' - ' + topic.title : ''}\``);
+    // A day with no topic number (a work day, an exam) has its title as its code; say it once.
+    out.push(`**Event title:** \`APW - ${topic.code}${topic.title && topic.title !== topic.code ? ' - ' + topic.title : ''}\``);
     out.push('');
     out.push('**Assign to, one row per section:**');
     out.push('');
