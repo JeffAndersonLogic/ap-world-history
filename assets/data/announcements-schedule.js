@@ -1048,7 +1048,17 @@ window.BEHISTORICAL_SCHEDULE = {
       unit: 'Units 3 and 4',
       learningTargets: ['I can identify which Unit 3 and Unit 4 concepts I need to review before the Era 3 exam.'],
       successCriteria: ['I can use my study guide to identify gaps and plan my review.'],
-      homework: 'Finish your Era 3 study guide and review Units 3 and 4 for the Era 3 Exam.'
+      homework: [
+        'Complete the Unit 3 and Unit 4 Progress Checks in AP Classroom before your Era 3 Exam.',
+        'Finish your Era 3 study guide and review Units 3 and 4 for the Era 3 Exam.'
+      ],
+      // Progress checks added by Jeff, 2026-10-23, as for the Eras 2 Exam.
+      outsideWork: {
+        where: 'AP Classroom',
+        href: 'https://apclassroom.collegeboard.org/',
+        tasks: ['Unit 3 Progress Check', 'Unit 4 Progress Check'],
+        note: 'Sign in with your College Board account, open AP World History: Modern, and find both progress checks under Assignments. Complete every part your teacher has unlocked there before your Era 3 Exam.'
+      }
     },
     {
       date: '2026-11-20',
@@ -1057,7 +1067,17 @@ window.BEHISTORICAL_SCHEDULE = {
       unit: 'Units 3 and 4',
       learningTargets: ['I can identify which Unit 3 and Unit 4 concepts I need to review before the Era 3 exam.'],
       successCriteria: ['I can use my study guide to identify gaps and plan my review.'],
-      homework: 'Finish your Era 3 study guide and review Units 3 and 4 for the Era 3 Exam.'
+      homework: [
+        'Complete the Unit 3 and Unit 4 Progress Checks in AP Classroom before your Era 3 Exam.',
+        'Finish your Era 3 study guide and review Units 3 and 4 for the Era 3 Exam.'
+      ],
+      // Progress checks added by Jeff, 2026-10-23, as for the Eras 2 Exam.
+      outsideWork: {
+        where: 'AP Classroom',
+        href: 'https://apclassroom.collegeboard.org/',
+        tasks: ['Unit 3 Progress Check', 'Unit 4 Progress Check'],
+        note: 'Sign in with your College Board account, open AP World History: Modern, and find both progress checks under Assignments. Complete every part your teacher has unlocked there before your Era 3 Exam.'
+      }
     },
     {
       date: '2026-11-23',

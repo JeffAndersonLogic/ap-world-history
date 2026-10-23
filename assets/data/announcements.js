@@ -2235,6 +2235,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can use my study guide to identify gaps and plan my review.' }
       ],
       homework: [
+        { text: 'Complete the Unit 3 and Unit 4 Progress Checks in AP Classroom before your Era 3 Exam.', due: 'Monday, November 23' },
         { text: 'Finish your Era 3 study guide and review Units 3 and 4 for the Era 3 Exam.', due: 'Monday, November 23' }
       ],
       homeworkDue: 'Monday, November 23',
@@ -2253,6 +2254,7 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can use my study guide to identify gaps and plan my review.' }
       ],
       homework: [
+        { text: 'Complete the Unit 3 and Unit 4 Progress Checks in AP Classroom before your Era 3 Exam.', due: 'Tuesday, November 24' },
         { text: 'Finish your Era 3 study guide and review Units 3 and 4 for the Era 3 Exam.', due: 'Tuesday, November 24' }
       ],
       homeworkDue: 'Tuesday, November 24',
