@@ -40,7 +40,7 @@ module.exports = {
   docTitle: 'BeHistorical | Deep Reading | Topic 5.5: More Power, Longer Reach',
   eyebrow: 'Topic 5.5 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'More Power, <em>Longer Reach</em>',
-  deck: `In 1750 almost all the energy people used came from muscles, wood, wind and water. By 1900 about half of it came from coal. This chapter follows how machines unlocked that buried energy, what new things it let people make, and how railroads, steamships and the telegraph carried goods, people and news into the interiors of continents.`,
+  deck: `In 1750 almost all the energy used in the world came from muscles, wood, wind and water. By 1900 about half of it came from coal. This chapter follows how machines unlocked that buried energy, what new things it let people make, and how railroads, steamships and the telegraph carried goods, people and news into the interiors of continents.`,
   meta: ['Five sections', 'Energy before 1750, the steam engine, coal and oil, new materials, longer reach', 'Read alongside the First & 10'],
   footerNote: 'Topic 5.5 &nbsp;·&nbsp; More Power, Longer Reach &nbsp;·&nbsp; Companion to the First &amp; 10',
 
@@ -66,13 +66,13 @@ module.exports = {
       name: 'Energy Before 1750',
       navLabel: 'Energy in 1750',
       dates: 'About 1750 &nbsp;·&nbsp; The starting point',
-      thesis: `In 1750 almost all the energy people used came from things that grow, and from wind and water. Each had a limit.`,
+      thesis: `In 1750 almost all the energy used in the world came from things that grow, and from wind and water. Each had a limit.`,
       parts: [
         {
           heading: 'Things that grow, blow and flow',
           blocks: [
             { p: `In <span class="num">1750</span> a farmer plowed with a horse or an ox, a family cooked and kept warm with wood, a ship crossed the ocean by sail, and a mill turned beside a river. Food gave energy to the muscles of people and animals. Wood gave fire. Wind and water turned some machines. All of these came, in the end, from the sun and the land: crops and forests had to grow, every year, to be used.` },
-            { p: `Each had a limit you could see. A horse gets tired and must be fed from land that could grow food for people. A forest takes decades to grow back. A sailing ship waits for the wind. A <span class="kt">water wheel</span> works only beside a fast river, and turns slowly when the river runs low. Topic 5.3's first factory, Arkwright's mill at Cromford, ran on a water wheel.` },
+            { p: `Each had a limit you could see. A horse gets tired and must be fed from land that could grow food for people. A forest takes decades to grow back. A sailing ship waits for the wind. A <span class="kt">water wheel</span> works only where a stream flows strongly, and turns slowly when the water runs low. Topic 5.3's example, Arkwright's mill at Cromford, ran on a water wheel fed by a brook and a mine drain.` },
             { note: {
               kind: 'howknow',
               label: 'How we know: the world\'s energy, measured',
@@ -213,7 +213,7 @@ module.exports = {
         {
           heading: 'Precision machinery',
           blocks: [
-            { p: `Machine tools, such as lathes and milling machines, could now cut metal parts to exact sizes, so that one part fit any copy of the same machine. These are <span class="kt">interchangeable parts</span>. Standard screw threads, set by Joseph Whitworth in Britain in <span class="num">1841</span> and by William Sellers in the United States in <span class="num">1864</span>, helped machines with interchangeable parts, "from typewriters to locomotives," spread.` },
+            { p: `Machine tools, such as lathes and milling machines, had begun to cut metal parts to exact sizes, so that one part fit any copy of the same machine; after 1850 the method spread widely. These are <span class="kt">interchangeable parts</span>. Standard screw threads, set early by Joseph Whitworth in Britain in <span class="num">1841</span> and then by William Sellers in the United States in <span class="num">1864</span>, helped machines with interchangeable parts, "from typewriters to locomotives," spread.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -254,13 +254,13 @@ module.exports = {
         {
           heading: 'Steamships',
           blocks: [
-            { p: `Under sail, emigrants from Norway took about 53 days on average to reach America. By steamship, the Atlantic crossing from England took about 12 days in the 1860s, and the fastest ships of the 1870s crossed in about 7 or 8 days. The Suez Canal, opened in Egypt in <span class="num">1869</span>, cut the voyage from Europe to Asia; it was of little use to sailing ships, because the winds of the Red Sea were hard to sail against, so it mostly served steamships. Steamboats also pushed up rivers into the interior of continents: in <span class="num">1854</span> the steamer Pleiad went far up the Niger and Benue rivers in West Africa, and none of its crew died, because they took quinine, a medicine against malaria. What European empires did with this reach is Unit 6.` }
+            { p: `Under sail, emigrants from Norway took about 53 days on average for the whole trip to America. By steamship, the Atlantic crossing from England took about 12 days in the 1860s, and the fastest ships of the 1870s crossed in about 7 or 8 days. The Suez Canal, opened in Egypt in <span class="num">1869</span>, cut the voyage from Europe to Asia; it was of little use to sailing ships, because the winds of the Red Sea were hard to sail against, so it mostly served steamships. Steamboats also pushed up rivers into the interior of continents: in <span class="num">1854</span> the steamer Pleiad went far up the Niger and Benue rivers in West Africa, and none of its crew died, because they took quinine, a medicine against malaria. What European empires did with this reach is Unit 6.` }
           ]
         },
         {
           heading: 'The telegraph',
           blocks: [
-            { p: `A <span class="kt">telegraph</span> sends messages as pulses of electricity along a wire. In <span class="num">1844</span> Samuel Morse sent "What hath God wrought?" from Washington to Baltimore. A cable under the Atlantic worked only a few weeks in 1858; another worked lastingly from <span class="num">1866</span>, and one reached Bombay in <span class="num">1870</span>. A message that once traveled as fast as a ship could now travel in minutes, so merchants could know prices in distant markets the same day.` }
+            { p: `A <span class="kt">telegraph</span> sends messages as pulses of electricity along a wire. In <span class="num">1844</span> Samuel Morse sent "What hath God wrought?" from Washington to Baltimore. A cable under the Atlantic worked only a few weeks in 1858; from <span class="num">1866</span> cables carried messages across it without a lasting break, and one reached Bombay in <span class="num">1870</span>. A message that once traveled as fast as a ship could now travel in minutes, so merchants could know prices in distant markets within a day.` }
           ]
         },
         {

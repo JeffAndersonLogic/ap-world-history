@@ -134,7 +134,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 4,
         land: [
           'No notes. Take fast answers and do not reteach.',
-          'Accept: a water wheel, on the River Derwent; heat, fires for warmth and cooking; any two of other parts of Europe (Belgium, the German states), the United States, Russia, Japan.',
+          'Accept: a water wheel (fed by a brook and a mine drain, 5.3); heat, fires for warmth and cooking; any two of other parts of Europe (Belgium, the German states), the United States, Russia, Japan.',
           'The bridge is 5.4\'s hand-off line: factories needed coal, and steam engines turned it into power on a scale nobody had seen. Prompt 1 returns on slide 6: a mill no longer had to sit by a river.'
         ],
         ask: 'If a mill runs on a river, where can it be built? If it runs on coal?',
@@ -183,7 +183,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'Muscles', text: 'People and animals, fed by crops. **A horse gets tired.**' },
           { label: 'Wood', text: 'Fire for heat and cooking. **A forest takes decades to grow back.**' },
           { label: 'Wind', text: 'Sails and windmills. **No wind, no work.**' },
-          { label: 'Water', text: 'Water wheels, like Cromford\'s. **Only beside a fast river.**' }
+          { label: 'Water', text: 'Water wheels, like Cromford\'s. **Only where a stream flows strongly.**' }
         ]
       },
       notes: {
@@ -256,7 +256,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         quote: 'With coal almost any feat is possible or easy; without it we are thrown back into the laborious poverty of early times.',
         attribution: { author: 'W. Stanley Jevons', work: 'The Coal Question', year: '1865' },
-        notice: 'What does Jevons say life was like before coal?'
+        notice: 'Why would an economist who feared coal running out write this sentence?'
       },
       notes: {
         minutes: 1,
@@ -289,7 +289,7 @@ window.BEHISTORICAL_TEACHING = {
           'Drake: the American Oil and Gas Historical Society dates the strike at Titusville to August 1859 (sources give the 27th or 28th); refiners turned the oil into kerosene, "the popular lamp fuel." Oil was a lamp fuel for the rest of the century.',
           'The engine: Nikolaus Otto\'s four-stroke engine, Deutz, 1876, patented 1877 (Deutz AG history); Carl Benz\'s patent application of 29 January 1886, DRP 37435, a "vehicle powered by a gas engine" (Mercedes-Benz), running on a light petroleum spirit. Internal combustion means the fuel burns inside the cylinder; a steam engine burns its fuel outside, under a boiler.',
           '8,000: the Federal Highway Administration and Historical Statistics of the United States both give about 8,000 automobiles for 1900, the first year of their tables (no state required registration until New York in 1901, so the figure is an estimate). So the internal combustion engine is in this topic because of where it led, not because it had changed production by 1900.',
-          'The picture is a real photograph: an oil rig at Titusville, about 1900, by the oil-region photographer Mather (Library of Congress, no known restrictions). The Library\'s print is labeled hand-colored; the copy shown is black and white. The boiler and smokestack on the right drove the drilling: a steam engine, burning fuel, helping to get oil.'
+          'The picture is a real photograph: an oil rig at Titusville, about 1900, by the oil-region photographer Mather (Library of Congress, no known restrictions). The Library\'s print is labeled hand-colored; the copy shown is black and white. The boiler on the right raised steam for an engine beside the derrick (see the puff of steam), which drove the drilling: steam power, burning fuel, helping to get oil.'
         ],
         ask: 'If there were only 8,000 cars in 1900, why does the College Board put this engine in a topic that ends in 1900?',
         listenFor: 'Because it was developed then, and the fuel, oil, was being drilled: the cause came before 1900, the big effects after. Causes and effects do not always happen at once.',
@@ -322,11 +322,11 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-5.1.I.E', title: 'The second industrial revolution: four new methods.',
       footer: 'Coal ran the furnaces that made steel, and coal tar gave the first synthetic dyes to sell well.',
       template: {
-        columns: [{ name: 'Steel' }, { name: 'Chemicals' }, { name: 'Electricity' }, { name: 'Precision machinery' }],
+        columns: [{ name: 'Steel' }, { name: 'Chemicals' }, { name: 'Electricity' }, { name: 'Machine tools' }],
         rows: [
-          { label: 'New method', cells: ['Bessemer, 1856: blow air through melted iron', 'Perkin, 1856: a dye made from coal tar', 'Pearl Street, 1882: power sold to light lamps', 'Machine tools cut parts that fit any copy'] },
-          { label: 'It made', cells: ['Rails, bridges, ships, machines', 'New dyes; factory-made indigo, 1897', 'Light; then motors for each machine', 'Interchangeable parts; standard screw threads'] },
-          { label: 'How fast', cells: ['US: 69,000 tons (1870) to 10 million (1900)', 'Germany made most of the world\'s dyes by 1914', 'Under 5 percent of US factory power, 1899', 'Typewriters to locomotives'] }
+          { label: 'New method', cells: ['Bessemer, 1856: air through melted iron', 'Perkin, 1856: dye from coal tar', 'Pearl Street, 1882: power for lamps', 'Parts that fit any copy'] },
+          { label: 'It made', cells: ['Rails, bridges, ships', 'Dyes; factory indigo, 1897', 'Light; motors for machines', 'Standard screw threads, 1841, 1864'] },
+          { label: 'How far', cells: ['US: 69,000 tons (1870), 10 million (1900)', 'Germany: most of the world\'s dyes, 1914', 'Under 5% of US factory power, 1899', 'Typewriters to locomotives'] }
         ]
       },
       notes: {
@@ -336,7 +336,7 @@ window.BEHISTORICAL_TEACHING = {
           'Steel: Henry Bessemer announced his process at the British Association, Cheltenham, in August 1856 (Philip Bishop, The Beginnings of Cheap Steel, Smithsonian). Air blown through melted pig iron burns out carbon and impurities, and the burning keeps the metal hot. Output (NBER): the United States, 69,000 long tons in 1870 and 10.2 million in 1900; Great Britain, 215,000 and 4.9 million. Do not use the popular "80 percent cheaper" figure; no source was found for it.',
           'Chemicals: William Perkin, 18, a student at the Royal College of Chemistry in London, made mauve in 1856, "the first commercially successful synthetic dye" (Britannica), from aniline, a coal-tar chemical. BASF was founded on 6 April 1865 and sold synthetic indigo from 1897 (BASF). Britannica: by 1914 about 90 percent of the world\'s dyes were made in Germany. Bridge only: factory indigo hit indigo growers in India; that story is Unit 6\'s.',
           'Electricity: Edison\'s Pearl Street Station began supplying power on 4 September 1882, lighting about 400 lamps on the first day (IEEE Milestone). Paul David (American Economic Review, 1990): in 1899, electric motors gave "less than 5 percent of factory mechanical drive" in the United States; it took about two decades more to reach half. Factories had to be rebuilt around motors, one per machine, instead of one big engine and belts.',
-          'Precision machinery: machine tools (lathes, milling machines) cut metal to exact sizes, so parts are interchangeable. Joseph Whitworth\'s standard screw threads (Britain, 1841) and William Sellers\'s (United States, April 1864) helped "machines with interchangeable parts, from typewriters to locomotives," spread (ASME Landmark 234).'
+          'Precision machinery (the slide\'s column is headed Machine tools, to fit): machine tools (lathes, milling machines) cut metal to exact sizes, so parts are interchangeable. Joseph Whitworth\'s standard screw threads (Britain, 1841) and William Sellers\'s (United States, April 1864) helped "machines with interchangeable parts, from typewriters to locomotives," spread (ASME Landmark 234).'
         ],
         ask: 'Which of the four depended most on coal?',
         listenFor: 'Steel (coal and coke for the furnaces) and chemicals (coal tar); electricity too, since most power stations burned coal to make steam.',
@@ -432,7 +432,7 @@ window.BEHISTORICAL_TEACHING = {
           'Crossings: Norway Heritage, "The average crossing time on a sailing ship from Norway to America was 53 days"; on the Allan Line, Liverpool to Quebec took about 12 days in 1865; White Star Line steamships could cross "in 7 to 8 days" in the 1870s; by 1900 the record holder, the Deutschland, crossed in under six days. The comparison is not exact: the 53 days is the whole voyage from Norway, and Norwegians who went by steam first crossed to England. In 1867 a steamship ticket cost about three times a sailing passage, but by 1874 the last sailing ships carried Norwegian emigrants to Quebec.',
           'Suez: opened 17 November 1869. Sailing ships rarely used it, because the Red Sea\'s winds were hard to sail against, so it mostly served steamships and hastened the decline of sail (Max Fletcher, Journal of Economic History, 1958); Daudin, Morys and O\'Rourke (2008) put it more absolutely, "could only be used by steamships," which the slide narrows to "mostly."',
           'Up rivers, into the interior: in 1854 the steamer Pleiad went up the Niger and far up the Benue, about 250 miles beyond earlier explorers, with no deaths among its crew, who took quinine every day against malaria (William Balfour Baikie\'s expedition; British Society for the History of Medicine). What European empires did with that reach is Unit 6.',
-          'Telegraph: Samuel Morse sent "What hath God wrought?" from the Capitol in Washington to Baltimore on 24 May 1844 (Library of Congress). The 1858 Atlantic cable worked only a few weeks; the Great Eastern landed a lasting cable at Heart\'s Content, Newfoundland, on 27 July 1866 (IET Archives). The Red Sea cable reached Bombay in 1870. "Minutes," not "seconds": early cables were slow (Queen Victoria\'s 1858 message took about 16 hours to send).'
+          'Telegraph: Samuel Morse sent "What hath God wrought?" from the Capitol in Washington to Baltimore on 24 May 1844 (Library of Congress). The 1858 Atlantic cable worked only a few weeks; the Great Eastern landed a working cable at Heart\'s Content, Newfoundland, on 27 July 1866 (IET Archives). That cable failed in 1872, but from 1866 there was always at least one cable working, so say "cables carried messages without a lasting break," not "one cable lasted." The Red Sea cable reached Bombay in 1870. "Minutes," not "seconds": early cables were slow (Queen Victoria\'s 1858 message took about 16 hours to send).'
         ],
         ask: 'Which one changes trade more: faster ships, or faster news?',
         listenFor: 'Either can be argued: ships move the goods, but news lets a merchant know the price before he ships. The best answers say they worked together.',
@@ -448,7 +448,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'Trade', text: 'Wheat cost **57.6 percent** more in Liverpool than in Chicago in 1870; **15.6 percent** more in 1913.' },
           { label: 'So', text: 'Wheat from the middle of North America, by **rail and steamship**, fed workers in Britain.' },
           { label: 'Europe', text: 'About **55 million** Europeans moved to the Americas and Australia, 1850 to 1914.' },
-          { label: 'Asia', key: true, text: 'Over **29 million** Indians and **19 million** Chinese moved to Southeast Asia and lands around the Indian Ocean, 1846 to 1940.' }
+          { label: 'Asia', key: true, text: '**29 million** Indians, **19 million** Chinese: to Southeast Asia and the Indian Ocean rim, 1846 to 1940.' }
         ]
       },
       notes: {
@@ -467,23 +467,21 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'rank', kind: 'cause-rank', eyebrow: 'Rank the Five',
-      title: 'Which technology changed the world most by 1900?',
-      footer: 'Listed in the College Board\'s order, not ranked. The ranking is yours.',
+      phase: 'rank', kind: 'cause-rank', eyebrow: 'Rank the Five · Listed in the College Board\'s Order, Not Ranked',
+      title: 'Rank them: which changed the world most by 1900?',
       template: {
         causes: [
-          { label: 'The steam engine', note: 'Turned coal into motion' },
-          { label: 'The railroad', note: 'Reached the middle of continents' },
-          { label: 'The internal combustion engine', note: 'Burned oil inside the engine' },
-          { label: 'The steamship', note: 'Crossed oceans in days, not weeks' },
-          { label: 'The telegraph', note: 'Sent news in minutes' }
-        ],
-        prompt: 'Rank them 1 to 5. **Defend your number one** in one sentence, with one piece of evidence.'
+          { label: 'The steam engine', note: 'Coal into motion' },
+          { label: 'The railroad', note: 'Into the middle of continents' },
+          { label: 'The internal combustion engine', note: 'Fuel burned inside' },
+          { label: 'The steamship', note: 'Oceans in days, not weeks' },
+          { label: 'The telegraph', note: 'News in minutes' }
+        ]
       },
       notes: {
         minutes: 3,
         land: [
-          'This is the CED\'s own sample activity for 5.5 (p. 97), quick version: the same five technologies, in the CED\'s order, not ranked. The full debate, as the writers of a New York science magazine in 1900, is the BeInTheRoom scenario.',
+          'This is the CED\'s own sample activity for 5.5 (p. 97), quick version: the same five technologies, in the CED\'s order, not ranked. Say the task aloud: rank them 1 to 5 and defend your number one with one piece of evidence. The full debate, as the writers of a New York science magazine in 1900, is the BeInTheRoom scenario.',
           'There is no single right answer; the evidence is what is graded. Strong number ones: the steam engine, because the railroad and the steamship are steam engines on wheels and hulls; the railroad, because it reached interiors that ships could not.',
           'Watch for students who put the internal combustion engine first. Ask: by 1900? (8,000 US cars.) It belongs on the list because of what came after; the question says "by 1900."',
           'Check the question-slide predictions.'
@@ -500,7 +498,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         rows: [
           { myth: 'Watt invented the steam engine.', evidence: 'Newcomen\'s engine pumped mines from 1712. Watt made it use far less coal, and turn wheels.', source: 'KC-5.1.I.B' },
-          { myth: 'One invention changed everything.', evidence: 'Each needed the others: railroads needed steam, coal, then steel; many telegraph lines ran beside the tracks.', source: 'KC-5.1.I.E, KC-5.1.IV' },
+          { myth: 'One invention changed everything.', evidence: 'Each needed the others: railroads needed steam, coal, then steel; steam and steel built the ships too.', source: 'KC-5.1.I.E, KC-5.1.IV' },
           { myth: 'By 1900 the world ran on electricity and cars.', evidence: 'Motors gave under 5 percent of US factory power in 1899; the US had about 8,000 cars in 1900.', source: 'KC-5.1.I.B, KC-5.1.I.E' }
         ]
       },
@@ -545,9 +543,9 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'synthesis', kind: 'close-retell', eyebrow: 'AP Synthesis',
       kc: 'Unit 5: Learning Objective F', title: 'Say it in one sentence.',
       template: {
-        frame: 'Machines such as the ___ engine let people use the energy in coal and ___. With new methods for making ___, chemicals, electricity and precise machines, factories made far more goods, and railroads, ___ and the telegraph carried goods and people into the ___ of continents, which led to more trade and ___.',
+        frame: 'The ___ engine unlocked coal and ___. New methods made ___ and chemicals. Railroads, ___ and the telegraph reached the ___ of continents, so trade and ___ grew.',
         words: ['steam', 'oil', 'steel', 'steamships', 'interiors', 'migration'],
-        prompt: 'Fill it in from memory, then add one example for one link.'
+        prompt: 'Fill it in from memory, then add one example.'
       },
       notes: {
         minutes: 1,
@@ -591,7 +589,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'cp2', kind: 'action', eyebrow: 'Module 10 · Checkpoint 2',
       title: 'How did railroads, steamships and the telegraph change trade and migration?',
-      subtitle: 'Explain what each did that older ways could not, how one of them reached an interior region, and how that led to more trade or more migration, with a number. Then connect railroads or steamships back to coal, steam or steel. If it is not finished in class, it is homework.',
+      subtitle: 'Choose ONE: explain what it did that older ways could not, how it reached an interior region, and how that led to more trade or more migration, with a number; then name the other effect. Then connect railroads or steamships back to coal, steam or steel. If it is not finished in class, it is homework.',
       action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-5-technology-of-industrialization.html#modules' },
       notes: {
         minutes: 12,

@@ -42,7 +42,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Technology and Innovation"
     },
     {
-      target: "I can explain how railroads, steamships, and the telegraph reached the interiors of continents, and how that led to more trade and more migration.",
+      target: "I can explain how railroads, steamships, and the telegraph reached the interiors of continents, and how they led to more trade and more migration.",
       kc: "KC-5.1.IV",
       theme: "Technology and Innovation"
     }
@@ -55,7 +55,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Technology and Innovation"
     },
     {
-      criteria: "I can explain what railroads, steamships, or the telegraph could do that older ways could not, give one example of an interior region they reached (such as the railroad across the United States in 1869 or the Trans-Siberian Railway), explain how that led to more trade or more migration, using one number from the lesson, and connect railroads or steamships back to the coal, steam, or steel that drove or built them.",
+      criteria: "I can explain what railroads, steamships, or the telegraph could do that older ways could not, give one example of an interior region they reached (such as the railroad across the United States in 1869 or the Trans-Siberian Railway), explain how that led to more trade or more migration, using one number from the lesson, name the other effect, and connect railroads or steamships back to the coal, steam, or steel that drove or built them.",
       kc: "KC-5.1.IV",
       theme: "Technology and Innovation"
     }
@@ -96,11 +96,11 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "More Power: Machines Unlock Fossil Fuels",
         bullets: [
-          "**Before:** in 1750 almost all the energy people used came from muscles, wood, wind, and water. Each had a limit: a water wheel works only beside a fast river, and a forest takes decades to grow back. Until about 1900, wood and other things that grow were the world's largest source of energy.",
+          "**Before:** in 1750 almost all the energy used in the world came from muscles, wood, wind, and water. (Britain was the exception: by 1700 coal, burned for heat, gave England about half of its energy.) Each had a limit: a water wheel works only where a stream flows strongly, and a forest takes decades to grow back. Until about 1900, wood and other things that grow were the world's largest source of energy.",
           "**Fossil fuels:** coal and oil are the remains of plants and tiny sea creatures, buried for millions of years, with energy stored inside them.",
           "**A pump:** in 1712 Thomas Newcomen set up a steam engine near Dudley Castle, in the English Midlands, to pump water out of a coal mine. It burned a great deal of coal.",
           "**Watt:** in 1765 James Watt, an instrument maker at the University of Glasgow, found that cooling the steam in a separate chamber kept the cylinder hot; he patented it in 1769. His engines used less than a third of the coal of a Newcomen engine. In the 1780s Watt and Matthew Boulton built engines that turned wheels, so mills could run on coal instead of rivers.",
-          "**How much more:** Britain mined about 65 million tons of coal in 1854 and about 225 million tons in 1900. By about 1900, coal supplied about half of all the energy used in the world.",
+          "**How much more:** Britain mined about 65 million tons of coal in 1854 and about 225 million tons in 1900. By about 1900, coal supplied about half of all the energy used in the world, nearly as much as wood and other things that grow.",
           "**Oil and a new engine:** in 1859 Edwin Drake struck oil at Titusville, Pennsylvania; for the rest of the century most oil became kerosene, a lamp fuel. The internal combustion engine burns its fuel inside the engine: Nikolaus Otto built a four-stroke engine in 1876, and Carl Benz patented a car in 1886. But the United States had only about 8,000 cars in 1900. The big changes came later."
         ],
         image: {
@@ -117,7 +117,7 @@ window.BEHISTORICAL_LESSON = {
           "**Steel:** in 1856 Henry Bessemer showed that blowing air through melted iron burned out the impurities and made steel quickly. The United States made about 69,000 tons of steel in 1870 and about 10 million tons in 1900. Steel became rails, bridges, ships, and machines.",
           "**Chemicals:** in 1856 William Perkin, an eighteen-year-old chemistry student in London, made a purple dye, mauve, from chemicals that came from coal tar. German companies such as BASF, founded in 1865, built laboratories to invent new dyes, and in 1897 BASF began selling indigo made in a factory. By 1914 Germany made most of the world's dyes.",
           "**Electricity:** in 1882 Thomas Edison's Pearl Street Station in New York began selling electric power, lighting about 400 lamps. Electric motors let each machine run on its own motor. But in 1899, electric motors gave less than 5 percent of the power in American factories.",
-          "**Precision machinery:** machine tools cut metal parts so exactly that one part fit any copy of the same machine: interchangeable parts. Standard screw threads, set by Joseph Whitworth in Britain in 1841 and William Sellers in the United States in 1864, helped them spread."
+          "**Precision machinery:** machine tools had begun to cut metal parts so exactly that one part fit any copy of the same machine: interchangeable parts. After 1850 the method spread widely. Standard screw threads, set early by Joseph Whitworth in Britain in 1841 and then by William Sellers in the United States in 1864, helped them spread."
         ],
         image: {
           title: "A Bessemer Converter",
@@ -130,14 +130,14 @@ window.BEHISTORICAL_LESSON = {
         title: "Longer Reach: Railroads, Steamships, and the Telegraph",
         bullets: [
           "**Railroads:** the Liverpool and Manchester Railway, opened in England in 1830, was the world's first railway between two cities, with trains pulled by steam locomotives. Russia had 27 kilometers of railway in 1840 and more than 53,000 in 1900. India's first passenger train ran from Bombay to Thane in 1853. The first railroad across the United States was finished at Promontory Summit, Utah, in 1869. Russia began the Trans-Siberian Railway in 1891, and by 1904 trains could cross to the Pacific.",
-          "**Steamships:** under sail, emigrants from Norway took about 53 days on average to reach America; by steamship, the Atlantic crossing from England took about 12 days in the 1860s, and the fastest ships of the 1870s crossed in about 7 or 8 days. The Suez Canal, opened in 1869, was of little use to sailing ships, because of the Red Sea's winds, so it mostly served steamships. In 1854 the steamer Pleiad went far up the Niger and Benue rivers in West Africa, and none of its crew died, because they took quinine against malaria.",
-          "**The telegraph:** in 1844 Samuel Morse sent \"What hath God wrought?\" by wire from Washington to Baltimore. A cable under the Atlantic worked lastingly from 1866, and one reached Bombay in 1870. News that once moved as fast as a ship now moved in minutes.",
+          "**Steamships:** under sail, emigrants from Norway took about 53 days on average for the whole trip to America; by steamship, the Atlantic crossing from England took about 12 days in the 1860s, and the fastest ships of the 1870s crossed in about 7 or 8 days. The Suez Canal, opened in 1869, was of little use to sailing ships, because of the Red Sea's winds, so it mostly served steamships. In 1854 the steamer Pleiad went far up the Niger and Benue rivers in West Africa, and none of its crew died, because they took quinine against malaria.",
+          "**The telegraph:** in 1844 Samuel Morse sent \"What hath God wrought?\" by wire from Washington to Baltimore. From 1866, cables under the Atlantic carried messages without a lasting break, and one reached Bombay in 1870. News that once moved as fast as a ship now moved in minutes.",
           "**More trade:** in 1870 wheat cost 57.6 percent more in Liverpool, England, than in Chicago; by 1913 the gap was 15.6 percent. Wheat from the middle of North America, carried by train and steamship, fed workers in Britain.",
           "**More migration:** about 55 million Europeans moved to the Americas and Australia between 1850 and 1914. Between 1846 and 1940, more than 29 million Indians and more than 19 million Chinese moved to Southeast Asia and the lands around the Indian Ocean. Steamships and railways made these journeys faster and cheaper. Why people moved is Unit 6."
         ],
         image: {
           title: "Promontory Summit, Utah, 10 May 1869",
-          caption: "A photograph taken from the top of a locomotive at Promontory Summit, Utah, on 10 May 1869, the day the two halves of the first railroad across the United States met. Crowds line the track, with tents behind them and telegraph poles in the distance. Library of Congress.",
+          caption: "A photograph taken from the top of a locomotive at Promontory Summit, Utah, on 10 May 1869, the day the two halves of the first railroad across the United States met. Soldiers stand in a line along the track, with onlookers, tents, and telegraph poles behind them. The Library of Congress dates it from an old caption card.",
           url: "../assets/images/topics/5-5/promontory-summit-1869.jpg",
           sourceUrl: "https://www.loc.gov/pictures/item/2004679791/"
         }
@@ -188,8 +188,8 @@ window.BEHISTORICAL_LESSON = {
   beSurreal: {
     title: "BeSurreal: A Grain Merchant's Office, Liverpool, 1880",
     desc: "You are fifteen and work as a clerk in a grain merchant's office in Liverpool, the English port where ships from America unload their wheat. Your job is to copy out the messages and keep the books.",
-    intro: "Every morning a boy runs in from the telegraph office with a slip of paper: the price of wheat in Chicago, that same day. Your employer reads it, does a quick sum, and decides whether to buy. The wheat itself was grown on farms in the middle of North America, far from any ocean.",
-    detail: "Your grandfather remembers when most of the bread in England was made from English wheat, and when news from America came by sailing ship, weeks old. Now your employer knows the Chicago price the same day. The office is busy, and wheat is cheaper than your grandfather remembers.",
+    intro: "Every morning a boy runs in from the telegraph office with a slip of paper: yesterday's closing price of wheat in Chicago, sent under the ocean by cable overnight. Your employer reads it, does a quick sum, and decides whether to buy. The wheat itself was grown on farms in the middle of North America, far from any ocean.",
+    detail: "Your grandfather remembers when most of the bread in England was made from English wheat, and when news from America came by sailing ship, weeks old. Now your employer knows the Chicago price within a day. The office is busy, and wheat is cheaper than your grandfather remembers.",
     prompt: "Write a letter to your grandfather explaining how a sack of wheat gets from a farm in the middle of North America to a bakery in Liverpool, and how your employer knows what to pay for it. Name each technology that helps, and say what it made possible. Use the words railroad, steamship, and telegraph."
   },
 

@@ -221,8 +221,8 @@ that moved things.
   who took quinine against malaria. (What European empires did with that reach is Unit 6.)
 - **The telegraph.** In 1844 Samuel Morse sent "What hath God wrought?" by electric telegraph from
   Washington to Baltimore. A message that once traveled only as fast as a horse or a ship now
-  traveled along a wire in minutes. A cable across the Atlantic worked lastingly from 1866, and one
-  reached Bombay in 1870. Merchants could know prices in distant markets the same day.
+  traveled along a wire in minutes. A cable across the Atlantic carried messages without a lasting break from 1866, and one
+  reached Bombay in 1870. Merchants could know prices in distant markets within a day.
 
 **More trade.** Cheaper, faster transport and instant news joined markets. In 1870 wheat cost 57.6
 percent more in Liverpool, England, than in Chicago; by 1913 the gap was 15.6 percent. Wheat from the

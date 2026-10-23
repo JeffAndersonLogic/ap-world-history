@@ -436,7 +436,7 @@ module.exports = [
     subtitle: 'Topic 5.5 · Technology of the Industrial Age',
     highlights: [
       { zone: 'britain', label: 'BRITAIN', labelSide: 'left', tone: 'gold', legend: 'Coal: about 225 million tons mined in 1900' },
-      { zone: [-78.5, 41, 4, 2.4], label: 'PENNSYLVANIA', labelSide: 'right', tone: 'bronze', legend: 'Coal, and oil from 1859' }
+      { zone: [-78.5, 41, 4, 2.4], label: 'PENNSYLVANIA', labelSide: 'above', tone: 'bronze', legend: 'Oil from 1859' }
     ],
     flows: [
       { from: [-95.9, 41.3], to: [-121.5, 38.6], label: 'Across the US, 1869', bow: -0.25 },
@@ -450,7 +450,7 @@ module.exports = [
     ],
     legend: [
       { kind: 'area', tone: 'gold', text: 'Britain: about 225 million tons of coal in 1900' },
-      { kind: 'area', tone: 'bronze', text: 'Pennsylvania: coal, and oil from 1859' },
+      { kind: 'area', tone: 'bronze', text: 'Pennsylvania: oil from 1859, at Titusville' },
       { kind: 'flow', step: 1, text: 'Railroad across the United States, 1869' },
       { kind: 'flow', step: 2, text: 'Trans-Siberian Railway, 1891 to 1904' },
       { kind: 'flow', step: 3, text: 'Telegraph cable across the Atlantic, 1866' },

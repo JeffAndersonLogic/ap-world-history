@@ -86,7 +86,7 @@
   </g>
   <g id="region-labels">
     <text class="region halo" x="733.1" y="171.0" text-anchor="end" fill="#1A1C1D"><tspan x="733.1" dy="0">BRITAIN</tspan></text>
-    <text class="region halo" x="486.9" y="315.2" text-anchor="start" fill="#1A1C1D"><tspan x="486.9" dy="0">PENNSYLVANIA</tspan></text>
+    <text class="region halo" x="439.1" y="234.9" text-anchor="middle" fill="#1A1C1D"><tspan x="439.1" dy="0">PENNSYLVANIA</tspan></text>
   </g>
   <g id="places">
     <circle class="city" cx="445.8" cy="268.9" r="10"/>
@@ -108,7 +108,7 @@
     <rect x="0" y="0" width="640" height="244" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
     <text class="small" x="18" y="28" font-weight="700">Map Key</text>
       <rect x="18" y="38" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="56">Britain: about 225 million tons of coal in 1900</text>
-      <rect x="18" y="71" width="40" height="23" rx="4" fill="#C08552" fill-opacity=".6" stroke="#8C5A2B" stroke-width="3"/><text class="small" x="74" y="89">Pennsylvania: coal, and oil from 1859</text>
+      <rect x="18" y="71" width="40" height="23" rx="4" fill="#C08552" fill-opacity=".6" stroke="#8C5A2B" stroke-width="3"/><text class="small" x="74" y="89">Pennsylvania: oil from 1859, at Titusville</text>
       <circle class="badge" cx="33" cy="115" r="14"/><text class="badgenum" x="33" y="121" text-anchor="middle" font-size="16">1</text><line x1="51" x2="72" y1="115" y2="115" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,109 L84,115 L72,121 Z" fill="#8C5A2B"/><text class="small" x="94" y="122">Railroad across the United States, 1869</text>
       <circle class="badge" cx="33" cy="148" r="14"/><text class="badgenum" x="33" y="154" text-anchor="middle" font-size="16">2</text><line x1="51" x2="72" y1="148" y2="148" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,142 L84,148 L72,154 Z" fill="#8C5A2B"/><text class="small" x="94" y="155">Trans-Siberian Railway, 1891 to 1904</text>
       <circle class="badge" cx="33" cy="181" r="14"/><text class="badgenum" x="33" y="187" text-anchor="middle" font-size="16">3</text><line x1="51" x2="72" y1="181" y2="181" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,175 L84,181 L72,187 Z" fill="#8C5A2B"/><text class="small" x="94" y="188">Telegraph cable across the Atlantic, 1866</text>

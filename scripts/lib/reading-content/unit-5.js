@@ -1190,7 +1190,7 @@ module.exports = {
     "showFooterNote": false,
     "headerSubtitle": "Topic 5.5, Technology of the Industrial Age, 1750 to 1900 &nbsp;|&nbsp; AP World History: Modern",
     "titleHtml": "More Power, <em>Longer Reach</em>",
-    "deck": "In 1750 almost all the energy people used came from muscles, wood, wind, and water. By 1900 about half of it came from coal. This reading follows how machines unlocked that buried energy, what new things it let people make, and how railroads, steamships, and the telegraph carried goods, people, and news farther than ever before. Each step caused the next.",
+    "deck": "In 1750 almost all the energy used in the world came from muscles, wood, wind, and water. By 1900 about half of it came from coal. This reading follows how machines unlocked that buried energy, what new things it let people make, and how railroads, steamships, and the telegraph carried goods, people, and news farther than ever before. Each step caused the next.",
     "skillTags": [
       "Causation",
       "Developments and Processes"
@@ -1217,15 +1217,15 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Topic 5.3 ended at a mill beside a river. Richard Arkwright's mill at Cromford ran on a water wheel, and coal, in 1700, was mostly something people burned to keep warm. Topic 5.4 followed the factory as it spread. This reading asks a different question: how did the machines themselves change what the world could make?"
+            "html": "Topic 5.3 ended at a mill driven by water. Richard Arkwright's mill at Cromford ran on a water wheel, and coal, in 1700, was mostly something people burned to keep warm. Topic 5.4 followed the factory as it spread. This reading asks a different question: how did the machines themselves change what the world could make?"
           },
           {
             "type": "p",
-            "html": "In 1750 almost all the energy people used came from things that grow. Food gave energy to the muscles of people and animals. Wood gave fire for heat and cooking. Wind moved ships and turned some mills, and rivers turned water wheels. Every one of these had a limit. A water wheel works only beside a fast river. A forest takes decades to grow back. A horse gets tired. Until about 1900, wood and other things that grow were still the world's largest source of energy."
+            "html": "In 1750 almost all the energy used in the world came from things that grow. Food gave energy to the muscles of people and animals. Wood gave fire for heat and cooking. Wind moved ships and turned some mills, and rivers turned water wheels. Every one of these had a limit. A water wheel works only where a stream flows strongly. A forest takes decades to grow back. A horse gets tired. Until about 1900, wood and other things that grow were still the world's largest source of energy."
           },
           {
             "type": "p",
-            "html": "But there was energy buried underground. Coal and oil are each a <span class=\"kt\">fossil fuel</span>: the remains of plants and tiny sea creatures, buried for millions of years, with energy stored inside them. Britain already burned coal for heat. The trick was to turn that heat into motion."
+            "html": "But there was energy buried underground. Coal and oil are each a <span class=\"kt\">fossil fuel</span>: the remains of plants and tiny sea creatures, buried for millions of years, with energy stored inside them. Britain was already the exception: it burned so much coal for heat that, by 1700, coal gave England about half of its energy (Topic 5.3). The trick was to turn that heat into motion."
           }
         ],
         "callout": {
@@ -1263,7 +1263,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Steam engines needed coal, and coal mines needed steam engines to pump them dry, so each made the other grow. Britain mined about 65 million tons of coal in 1854 and about 225 million tons in 1900. By about 1900, coal supplied about half of all the energy used in the whole world. Historians call this the fossil fuels revolution: machines let people use energy that had been stored for millions of years, far more than muscles, wood, wind, and water could give."
+            "html": "Steam engines needed coal, and coal mines needed steam engines to pump them dry, so each made the other grow. Britain mined about 65 million tons of coal in 1854 and about 225 million tons in 1900. By about 1900, coal supplied about half of all the energy used in the whole world, nearly as much as wood and other things that grow. Historians call this the fossil fuels revolution: machines let people use energy that had been stored for millions of years, far more than muscles, wood, wind, and water could give."
           },
           {
             "type": "p",
@@ -1302,7 +1302,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>Precision machinery.</strong> Machine tools could now cut metal parts so exactly that one part fit any copy of the same machine. These are <span class=\"kt\">interchangeable parts</span>. Standard screw threads, set by Joseph Whitworth in Britain in 1841 and William Sellers in the United States in 1864, helped machines with interchangeable parts, from typewriters to locomotives, spread."
+            "html": "<strong>Precision machinery.</strong> Machine tools had begun to cut metal parts so exactly that one part fit any copy of the same machine, and after 1850 the method spread widely. These are <span class=\"kt\">interchangeable parts</span>. Standard screw threads helped: Joseph Whitworth set one early, in Britain in 1841, and William Sellers set one in the United States in 1864. They helped machines with interchangeable parts, from typewriters to locomotives, spread."
           }
         ],
         "callout": {
@@ -1325,11 +1325,11 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>Steamships.</strong> Under sail, emigrants from Norway took about 53 days on average to reach America. By steamship, the Atlantic crossing from England took about 12 days in the 1860s, and the fastest ships of the 1870s crossed in about 7 or 8 days. The Suez Canal, opened in Egypt in 1869, was of little use to sailing ships, because the winds of the Red Sea were hard to sail against, so it mostly served steamships. Steamboats also pushed up rivers into the interior of continents. In 1854 the steamer Pleiad went far up the Niger and Benue rivers in West Africa, and none of its crew died, because they took quinine, a medicine against malaria. What European empires did with this reach is Unit 6."
+            "html": "<strong>Steamships.</strong> Under sail, emigrants from Norway took about 53 days on average for the whole trip to America. By steamship, the Atlantic crossing from England took about 12 days in the 1860s, and the fastest ships of the 1870s crossed in about 7 or 8 days. The Suez Canal, opened in Egypt in 1869, was of little use to sailing ships, because the winds of the Red Sea were hard to sail against, so it mostly served steamships. Steamboats also pushed up rivers into the interior of continents. In 1854 the steamer Pleiad went far up the Niger and Benue rivers in West Africa, and none of its crew died, because they took quinine, a medicine against malaria. What European empires did with this reach is Unit 6."
           },
           {
             "type": "p",
-            "html": "<strong>The telegraph.</strong> A <span class=\"kt\">telegraph</span> sends messages as pulses of electricity along a wire. In 1844 Samuel Morse sent the message \"What hath God wrought?\" from Washington to Baltimore. Before, a message traveled only as fast as a horse or a ship. Now it could travel along a wire in minutes. A cable under the Atlantic worked lastingly from 1866, and one reached Bombay, in India, in 1870."
+            "html": "<strong>The telegraph.</strong> A <span class=\"kt\">telegraph</span> sends messages as pulses of electricity along a wire. In 1844 Samuel Morse sent the message \"What hath God wrought?\" from Washington to Baltimore. Before, a message traveled only as fast as a horse or a ship. Now it could travel along a wire in minutes. From 1866, cables under the Atlantic carried messages without a lasting break, and one reached Bombay, in India, in 1870."
           }
         ],
         "callout": {
@@ -1361,11 +1361,11 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>Three myths to drop.</strong> \"Watt invented the steam engine\": Newcomen's engine came first, in 1712; Watt made it use far less coal and turn wheels. \"One invention changed everything\": each technology needed the others; railroads needed steam, coal, and then steel. \"By 1900 the world ran on electricity and cars\": electric motors gave under 5 percent of American factory power in 1899, and the United States had about 8,000 cars in 1900. Some of the biggest effects came later.</p>"
+          "raw": "<p><strong>Three myths to drop.</strong> \"Watt invented the steam engine\": Newcomen's engines were pumping mines from 1712, more than fifty years before Watt's patent; Watt made the engine use far less coal and turn wheels. \"One invention changed everything\": each technology needed the others; railroads needed steam, coal, and then steel. \"By 1900 the world ran on electricity and cars\": electric motors gave under 5 percent of American factory power in 1899, and the United States had about 8,000 cars in 1900. Some of the biggest effects came later.</p>"
         }
       }
     ],
-    "takeaway": "In 1750 almost all the energy people used came from muscles, wood, wind, and water. Then machines unlocked the energy stored in fossil fuels. Newcomen's steam engine of 1712 pumped water out of a coal mine; Watt's engines used far less coal, and from the 1780s they turned wheels, so factories could run on coal instead of rivers. Britain's coal output rose to about 225 million tons by 1900, when coal supplied about half the world's energy. Oil came next, at first as lamp fuel, and the internal combustion engine's big changes came after 1900. After 1850 a second industrial revolution brought new methods: Bessemer steel, dyes made from coal tar, electric power, and precise machines with interchangeable parts. Railroads, steamships, and the telegraph carried goods, people, and news into the interiors of continents, so trade grew and tens of millions of people migrated. More power. New materials. Longer reach.",
+    "takeaway": "In 1750 almost all the energy used in the world came from muscles, wood, wind, and water. Then machines unlocked the energy stored in fossil fuels. Newcomen's steam engine of 1712 pumped water out of a coal mine; Watt's engines used far less coal, and from the 1780s they turned wheels, so factories could run on coal instead of rivers. Britain's coal output rose to about 225 million tons by 1900, when coal supplied about half the world's energy. Oil came next, at first as lamp fuel, and the internal combustion engine's big changes came after 1900. After 1850 a second industrial revolution brought new methods: Bessemer steel, dyes made from coal tar, electric power, and precise machines with interchangeable parts. Railroads, steamships, and the telegraph carried goods, people, and news into the interiors of continents, so trade grew and tens of millions of people migrated. More power. New materials. Longer reach.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
@@ -1384,7 +1384,7 @@ module.exports = {
       {
         "num": "03",
         "skill": "Causation",
-        "text": "Using Sections 5 and 6, explain how ONE of these, railroads, steamships, or the telegraph, led to more trade OR more migration. Give a detail from the reading.",
+        "text": "Using Sections 5 and 6, choose ONE: explain how railroads, steamships, or the telegraph led to more trade, OR how railroads or steamships led to more migration. Give a detail from the reading.",
         "placeholder": "I chose... It made it possible to... This led to more... For example..."
       }
     ],

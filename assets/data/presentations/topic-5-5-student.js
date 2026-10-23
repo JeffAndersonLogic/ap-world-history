@@ -77,7 +77,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Water",
-            "text": "Water wheels, like Cromford's. **Only beside a fast river.**"
+            "text": "Water wheels, like Cromford's. **Only where a stream flows strongly.**"
           }
         ]
       }
@@ -154,7 +154,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "work": "The Coal Question",
           "year": "1865"
         },
-        "notice": "What does Jevons say life was like before coal?"
+        "notice": "Why would an economist who feared coal running out write this sentence?"
       }
     },
     {
@@ -223,34 +223,34 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "name": "Electricity"
           },
           {
-            "name": "Precision machinery"
+            "name": "Machine tools"
           }
         ],
         "rows": [
           {
             "label": "New method",
             "cells": [
-              "Bessemer, 1856: blow air through melted iron",
-              "Perkin, 1856: a dye made from coal tar",
-              "Pearl Street, 1882: power sold to light lamps",
-              "Machine tools cut parts that fit any copy"
+              "Bessemer, 1856: air through melted iron",
+              "Perkin, 1856: dye from coal tar",
+              "Pearl Street, 1882: power for lamps",
+              "Parts that fit any copy"
             ]
           },
           {
             "label": "It made",
             "cells": [
-              "Rails, bridges, ships, machines",
-              "New dyes; factory-made indigo, 1897",
-              "Light; then motors for each machine",
-              "Interchangeable parts; standard screw threads"
+              "Rails, bridges, ships",
+              "Dyes; factory indigo, 1897",
+              "Light; motors for machines",
+              "Standard screw threads, 1841, 1864"
             ]
           },
           {
-            "label": "How fast",
+            "label": "How far",
             "cells": [
-              "US: 69,000 tons (1870) to 10 million (1900)",
-              "Germany made most of the world's dyes by 1914",
-              "Under 5 percent of US factory power, 1899",
+              "US: 69,000 tons (1870), 10 million (1900)",
+              "Germany: most of the world's dyes, 1914",
+              "Under 5% of US factory power, 1899",
               "Typewriters to locomotives"
             ]
           }
@@ -391,7 +391,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "Asia",
             "key": true,
-            "text": "Over **29 million** Indians and **19 million** Chinese moved to Southeast Asia and lands around the Indian Ocean, 1846 to 1940."
+            "text": "**29 million** Indians, **19 million** Chinese: to Southeast Asia and the Indian Ocean rim, 1846 to 1940."
           }
         ],
         "visual": {
@@ -407,33 +407,31 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "cause-rank",
-      "eyebrow": "Rank the Five",
-      "title": "Which technology changed the world most by 1900?",
-      "footer": "Listed in the College Board's order, not ranked. The ranking is yours.",
+      "eyebrow": "Rank the Five · Listed in the College Board's Order, Not Ranked",
+      "title": "Rank them: which changed the world most by 1900?",
       "template": {
         "causes": [
           {
             "label": "The steam engine",
-            "note": "Turned coal into motion"
+            "note": "Coal into motion"
           },
           {
             "label": "The railroad",
-            "note": "Reached the middle of continents"
+            "note": "Into the middle of continents"
           },
           {
             "label": "The internal combustion engine",
-            "note": "Burned oil inside the engine"
+            "note": "Fuel burned inside"
           },
           {
             "label": "The steamship",
-            "note": "Crossed oceans in days, not weeks"
+            "note": "Oceans in days, not weeks"
           },
           {
             "label": "The telegraph",
-            "note": "Sent news in minutes"
+            "note": "News in minutes"
           }
-        ],
-        "prompt": "Rank them 1 to 5. **Defend your number one** in one sentence, with one piece of evidence."
+        ]
       }
     },
     {
@@ -450,7 +448,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "myth": "One invention changed everything.",
-            "evidence": "Each needed the others: railroads needed steam, coal, then steel; many telegraph lines ran beside the tracks.",
+            "evidence": "Each needed the others: railroads needed steam, coal, then steel; steam and steel built the ships too.",
             "source": "KC-5.1.I.E, KC-5.1.IV"
           },
           {
@@ -504,7 +502,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Say it in one sentence.",
       "kc": "Unit 5: Learning Objective F",
       "template": {
-        "frame": "Machines such as the ___ engine let people use the energy in coal and ___. With new methods for making ___, chemicals, electricity and precise machines, factories made far more goods, and railroads, ___ and the telegraph carried goods and people into the ___ of continents, which led to more trade and ___.",
+        "frame": "The ___ engine unlocked coal and ___. New methods made ___ and chemicals. Railroads, ___ and the telegraph reached the ___ of continents, so trade and ___ grew.",
         "words": [
           "steam",
           "oil",
@@ -513,7 +511,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "interiors",
           "migration"
         ],
-        "prompt": "Fill it in from memory, then add one example for one link."
+        "prompt": "Fill it in from memory, then add one example."
       }
     },
     {
@@ -540,7 +538,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "action",
       "eyebrow": "Module 10 · Checkpoint 2",
       "title": "How did railroads, steamships and the telegraph change trade and migration?",
-      "subtitle": "Explain what each did that older ways could not, how one of them reached an interior region, and how that led to more trade or more migration, with a number. Then connect railroads or steamships back to coal, steam or steel. If it is not finished in class, it is homework.",
+      "subtitle": "Choose ONE: explain what it did that older ways could not, how it reached an interior region, and how that led to more trade or more migration, with a number; then name the other effect. Then connect railroads or steamships back to coal, steam or steel. If it is not finished in class, it is homework.",
       "action": {
         "label": "Open Student Lesson",
         "url": "lesson-5-5-technology-of-industrialization.html#modules"

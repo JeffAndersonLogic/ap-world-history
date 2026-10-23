@@ -40,9 +40,9 @@
     ...lesson.map,
     key: [
       { label: "Britain and Pennsylvania", detail: "Two places this lesson names for fossil fuels. Britain mined about 225 million tons of coal in 1900. In Pennsylvania, Edwin Drake struck oil at Titusville in 1859." },
-      { label: "Arrow 1: across the United States, 1869", detail: "The first railroad across the United States, finished at Promontory Summit, Utah, in 1869." },
+      { label: "Arrow 1: across the United States, 1869", detail: "The first railroad across the United States, finished in 1869." },
       { label: "Arrow 2: the Trans-Siberian, 1891 to 1904", detail: "Russia began it in 1891; by 1904 trains could cross to the Pacific Ocean." },
-      { label: "Arrows 3 and 4: wires and ships", detail: "Arrow 3: the telegraph cable across the Atlantic that worked lastingly from 1866. Arrow 4: steamships from Britain to Bombay through the Suez Canal, opened in 1869. Bombay's first passenger train ran in 1853." },
+      { label: "Arrows 3 and 4: wires and ships", detail: "Arrow 3: telegraph cables across the Atlantic, which carried messages without a lasting break from 1866. Arrow 4: steamships from Britain to Bombay through the Suez Canal, opened in 1869. Bombay's first passenger train ran in 1853." },
       { label: "Reading the map", detail: "Each arrow joins the two ends of a line, cable, or voyage; it is not the exact path. The map shows only the places this topic names." }
     ]
   };
@@ -81,7 +81,7 @@
       { label: "What it made possible", text: "Say what people could now do that they could not do before. Example: \"This made it possible to find any address without knowing the city.\"" },
       { label: "What followed", text: "Say the result. Example: \"As a result, a delivery driver can work in a city she has never seen.\" Use this frame: \"Before, [the problem]. Then [the new technology] [what it did], which made it possible to [what it made possible]. As a result, [what followed].\"" }
     ],
-    prompt: "Now do it yourself, twice. First, choose ONE technology that gave more power or made new materials: Watt's steam engine, the internal combustion engine, or electric power. Explain it with the frame, using one detail from the lesson. Second, choose ONE technology that gave longer reach: the railroad, the steamship, or the telegraph. Explain it with the frame, and make your \"what followed\" step about trade or migration.",
+    prompt: "Now do it yourself, twice. First, choose ONE technology that gave more power or made new materials: Watt's steam engine, the internal combustion engine, or electric power. Explain it with the frame, using one detail from the lesson. Second, choose ONE technology that gave longer reach: the railroad, the steamship, or the telegraph. Explain it with the frame, and make your \"what followed\" step about trade or migration. (If you chose the internal combustion engine or electric power for the first answer, your \"what followed\" step can say how much it had changed by 1900.)",
     criteria: [
       "I explained two technologies, one for power or materials and one for reach.",
       "For each, I said what the problem was before it.",
@@ -108,7 +108,7 @@
       cardDesc: "What railroads, steamships, and the telegraph made possible in the interiors of continents, how that led to more trade or migration, and what drove railroads and steamships.",
       learningTargets: [lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[1].criteria],
-      prompt: "Explain how railroads, steamships, and the telegraph changed trade or migration between 1830 and 1900, as a chain of causes. (1) Explain what goods and news moved like before these technologies. (2) Choose ONE of the three, and explain what it could do that older ways could not, with one example of a place it reached. (3) Explain how that led to more trade OR more migration, using one number from the lesson. (4) Connect the reach back to power: say what drove railroads and steamships, or what their rails and hulls were made of (coal, steam, or steel).",
+      prompt: "Explain how railroads, steamships, and the telegraph changed trade or migration, as a chain of causes. (1) Explain what goods and news moved like before these technologies. (2) Choose ONE of the three, and explain what it could do that older ways could not, with one example of a place it reached. (3) Explain how that led to more trade OR more migration, using one number from the lesson. Then name the other effect in one sentence. (4) Connect the reach back to power: say what drove railroads and steamships, or what their rails and hulls were made of (coal, steam, or steel).",
       responseType: "Checkpoint 2",
       skill: "Causation",
       terms: ["railroad", "railway", "steamship", "telegraph", "interior", "continent", "Promontory", "1869", "Trans-Siberian", "Bombay", "Suez", "Atlantic cable", "1866", "Morse", "53 days", "12 days", "7 or 8 days", "minutes", "wheat", "Chicago", "Liverpool", "57.6", "15.6", "price", "trade", "migration", "55 million", "29 million", "19 million", "coal", "steam", "steel", "led to", "made it possible"],
@@ -146,7 +146,7 @@
       url: "../assets/images/topics/5-5/oil-rig-titusville-c1900.jpg",
       sourceUrl: "https://www.loc.gov/pictures/item/2012647896/",
       caption: "A photograph of an oil rig at Titusville, Pennsylvania, where Edwin Drake struck oil in 1859, taken about 1900 by a photographer named Mather. The print is labeled \"hand-colored,\" but the copy shown here is black and white. Library of Congress.",
-      prompt: "NOTICE the machine on the right, with its smokestack. INFER what powered the drilling, and what that tells you about how one fossil fuel helped people get another. One rig is one place: what can it not tell you about how oil was used in 1900?"
+      prompt: "NOTICE the machine on the right, with its smokestack. INFER what powered the drilling. The picture does not show what the boiler burned: what would you need to know to say which fuel helped people get the oil? One rig is one place: what can it not tell you about how oil was used in 1900?"
     },
     {
       title: "The Great Eastern Carries the Atlantic Cable, 1866",

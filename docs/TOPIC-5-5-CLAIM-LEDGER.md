@@ -140,7 +140,7 @@ Primary Source:
 | In 1854 the steamer Pleiad went far up the Niger and Benue with no deaths among its crew, who took quinine against malaria | Story; F10; DR; Deck | Baikie sources: no deaths; daily quinine; about 250 miles beyond earlier explorers on the Benue | VERIFIED |
 | Morse, 1844, "What hath God wrought?", Washington to Baltimore | Story; F10; DR; Deck | Library of Congress: 24 May 1844, the Capitol to Baltimore | VERIFIED |
 | A telegraph message traveled along a wire in minutes | Story; F10; DR; Deck | The 1870 Bombay link: replies in minutes (Porthcurno sources); the 1858 Atlantic cable was far slower (16 hours for Queen Victoria's message), so the course does not say "seconds" or "instantly" | NARROWED |
-| An Atlantic cable worked lastingly from 1866; one reached Bombay in 1870 | Story; F10; DR; Deck | IET: 27 July 1866; the 1858 cable worked only weeks; Subtel Forum: the Red Sea line, 1870 | VERIFIED |
+| From 1866, cables under the Atlantic carried messages without a lasting break; one reached Bombay in 1870 | Story; F10; DR; LD card 3; RC map key; Deck 15; BR | IET: the Great Eastern landed the 1866 cable on 27 July 1866; the 1858 cable worked only weeks; the 1866 cable failed in 1872 and the recovered 1865 cable in 1877, while service continued on other cables (review pass 2). The first draft's "worked lastingly" was narrowed | NARROWED |
 | Merchants could know prices in distant markets the same day | Story; F10; DR | Follows from the cables; stated as "could," a capacity, not a claim about all merchants | VERIFIED |
 | The Liverpool and Chicago wheat price gap, 57.6 percent (1870) to 15.6 percent (1913) | Story; F10; DR; Deck | Daudin, Morys and O'Rourke (2008), citing O'Rourke and Williamson (1994) | VERIFIED |
 | About 55 million Europeans moved to the Americas and Australia, 1850 to 1914 | Story; F10; DR; Deck | Hatton and Williamson (1998), publisher's description; other summaries give "the century after 1820," so the dates are kept with the number | VERIFIED |
@@ -217,3 +217,41 @@ Heritage figures, the Newcomen record, and that each picture shows what its capt
 11. The Across the Continent credit named only Fanny Palmer; the print reads "J. M. Ives, del." and "Drawn by F. F. Palmer." **Fixed:** "drawn by Fanny Palmer from a design by James M. Ives."
 12. BeInTheRoom called "What hath God wrought?" Morse's "first message" (he had sent messages since 1838). **Fixed:** "opened his telegraph line ... with the message."
 13. The 8,000 cars of 1900 were called "registered," though no state required registration until 1901. **Fixed** in the chapter and the slide 9 note; the ledger row is narrowed.
+
+### Pass 2, 2026-10-22 to 2026-10-23
+
+A fresh packet and two fresh reviewers. The history reviewer was cut off by a usage limit and
+resumed, not relaunched, once the limit reset (2026-10-23, 02:10 UTC). The first full browser suite
+in the brand fonts, run alongside, found four 5.5 slides that collide (slides 11, 16, 17 and 20);
+all four were fixed and the slide-template suite then passed all 66 checks.
+
+**Page truth, readability, CED, ownership (14 findings and 4 minor; 15 fixed, 3 rejected).**
+1. Slide 23 said "each" where Checkpoint 2 asks for ONE; Learning Target 2 claimed both effects where the task accepted one. **Fixed:** slide 23 says "Choose ONE ... then name the other effect"; step 3 adds "Then name the other effect in one sentence"; the target and criterion say the same.
+2. Slide 20 said the telegraph carried "goods and people." **Fixed:** the sentence is rebuilt ("Railroads, ___ and the telegraph reached the ___ of continents"), and shorter, which also cured its collision.
+3. Slide 17's title and prompt collided with its list, and the "not ranked" line was illegible. **Fixed:** the instruction is in the eyebrow and title; the prompt is said aloud (notes).
+4. The reading and slide 5 said "almost all the energy people used" in 1750, against 5.3's "by 1700 coal gave England about half of all its energy." **Fixed:** "used in the world," and a sentence naming Britain as the exception, with 5.3's figure.
+5. "A mill beside a river" and "on the River Derwent," against 5.3's brook and mine drain; the chapter's "first factory," against 5.3's myth box. **Fixed** on every surface.
+6. The oil-rig prompt asked which fuel helped get the oil, which the picture cannot show. **Fixed:** the prompt says the picture does not show the fuel and asks what students would need to know.
+7. The 53 days and the steam crossings are different routes. **Fixed:** "for the whole trip to America" on the reading, chapter, card and slide; the routes were already named.
+8. The internal combustion engine and electric power as Skill Builder and Checkpoint 1 choices, with little "what followed" by 1900. **Partly fixed:** the Skill Builder says that for these two the "what followed" step can say how much had changed by 1900; Checkpoint 1's task (how the engine let people use oil's energy) is answerable from the lesson.
+9. First & 10 question 3 allowed telegraph and migration, which the reading does not connect. **Fixed:** "the telegraph ... to more trade, OR how railroads or steamships led to more migration."
+10. The map's key said Pennsylvania had coal (no surface teaches it); the label sat in the Atlantic; the HTML key named an unmarked Promontory Summit. **Fixed:** "oil from 1859, at Titusville"; the label above the shape, on land; the key says "finished in 1869."
+11. BeInTheRoom: later figures in a December 1900 voice; the under-six-days figure untaught; "lead with the railroad" and "rank the engine high" both choosable; KC-5.1.I.E displayed but barely present. **Partly fixed:** a "New Methods" card (dyes, electric power, machine tools) added. **Rejected:** the later figures are labeled "historians later," the device 5.4's room uses (and pass 2's history reviewer asked for more of it, done below); the six days is given on the room's own card; ranking a technology high and leading with another do not contradict.
+12. Slide 8 projected the answer to Primary Source question 3. **Fixed:** the notice asks why an economist who feared coal running out would write the sentence.
+13. Whitworth's 1841 inside "after 1850." **Fixed** with history finding 6 below.
+14. "About half from coal" and "wood still largest" side by side, unexplained. **Fixed:** "about half ... nearly as much as wood and other things that grow."
+15. Minor: slide 11's "How fast" row (**fixed:** "How far"); slide 18's untaught "telegraph lines beside the tracks" (**fixed:** "steam and steel built the ships too"); BeInTheRoom roles printed the reasoning the reflection asks for (**fixed:** each role keeps its position only); no Canvas text (expected until dates exist; **not a defect**).
+
+**History (8 findings; all fixed).** The reviewer re-verified the Jevons passage against both
+editions, the wheat gap, the 55 million, OWID's energy shares, the crossing times, ASME's
+"typewriters to locomotives," the Pleiad, and every caption against the holders' APIs (the Met
+confirms Parsons and Atwater for the 1874 print).
+1. BeSurreal's Liverpool clerk got Chicago's price "that same day" each morning; Chicago is about six hours behind, so a morning slip carries the previous day's close. **Fixed:** "yesterday's closing price ... sent by cable overnight"; "within a day." The chapter's and story's "the same day" are narrowed to "within a day."
+2. "Iron liners" in 1900; the fast liners were steel. **Fixed.**
+3. BeInTheRoom's December 1900 voice stated full-year 1900 figures and the 8,000 cars as known. **Fixed:** each is "historians later counted" or "estimated."
+4. "A cable under the Atlantic worked lastingly from 1866": the 1866 cable failed in 1872; service continued on other cables. **Fixed** on every surface: "From 1866, cables under the Atlantic carried messages without a lasting break."
+5. The reading's myth box said "Newcomen's engine came first" (Savery's pump, 1698). **Fixed:** "Newcomen's engines were pumping mines from 1712, more than fifty years before Watt's patent."
+6. "Machine tools could now cut" put interchangeable parts after 1850 (the US armories made them in the 1820s). **Fixed:** "had begun to ... and after 1850 the method spread widely," on the reading, chapter and card.
+7. The Promontory caption said "crowds"; the holder's record says soldiers lined up along the tracks, from an old caption card. **Fixed:** "Soldiers stand in a line along the track, with onlookers ... The Library of Congress dates it from an old caption card."
+8. Checkpoint 2's "between 1830 and 1900" excluded the lesson's numbers (1913, 1914, 1940). **Fixed:** the window is dropped.
+Minor: slide 9's note said the boiler drove the drilling; the engine beside the derrick did. **Fixed.**
