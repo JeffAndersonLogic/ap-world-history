@@ -145,7 +145,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "source-quote",
       "eyebrow": "A Voice from 1865",
       "title": "What did coal mean to the people who used it?",
-      "footer": "Jevons, a British economist, feared that Britain's cheap coal would run out.",
+      "footer": "Jevons, a British economist, feared that Britain's cheap coal would not last.",
       "kc": "KC-5.1.I.B",
       "template": {
         "quote": "With coal almost any feat is possible or easy; without it we are thrown back into the laborious poverty of early times.",
@@ -154,7 +154,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "work": "The Coal Question",
           "year": "1865"
         },
-        "notice": "Why would an economist who feared coal running out write this sentence?"
+        "notice": "Why would an economist who feared the end of cheap coal write this sentence?"
       }
     },
     {
@@ -189,7 +189,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "credit": "Oil rig at Titusville, Pennsylvania, photograph by Mather, about 1900 · Library of Congress · Public domain",
           "ratio": 1.466,
           "fit": "cover",
-          "position": "40% 50%"
+          "position": "88% 50%"
         },
         "caption": "An oil rig at Titusville, about 1900"
       }
@@ -207,7 +207,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "split-matrix",
-      "eyebrow": "New Materials · After 1850",
+      "eyebrow": "New Methods · After 1850",
       "title": "The second industrial revolution: four new methods.",
       "footer": "Coal ran the furnaces that made steel, and coal tar gave the first synthetic dyes to sell well.",
       "kc": "KC-5.1.I.E",
@@ -233,7 +233,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
               "Bessemer, 1856: air through melted iron",
               "Perkin, 1856: dye from coal tar",
               "Pearl Street, 1882: power for lamps",
-              "Parts that fit any copy"
+              "Tools cut parts to exact sizes"
             ]
           },
           {
@@ -242,7 +242,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
               "Rails, bridges, ships",
               "Dyes; factory indigo, 1897",
               "Light; motors for machines",
-              "Standard screw threads, 1841, 1864"
+              "Interchangeable parts"
             ]
           },
           {
@@ -251,7 +251,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
               "US: 69,000 tons (1870), 10 million (1900)",
               "Germany: most of the world's dyes, 1914",
               "Under 5% of US factory power, 1899",
-              "Typewriters to locomotives"
+              "Standard threads, 1841, 1864"
             ]
           }
         ]
@@ -352,12 +352,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "rows": [
           {
             "label": "Before",
-            "left": "Sail, Norway to America: about 53 days on average",
+            "left": "Sail, Norway to America: about 53 days (whole trip)",
             "right": "A letter: as fast as the ship carrying it"
           },
           {
             "label": "After",
-            "left": "Steam, England to America: about 12 days (1860s); fastest, 7 or 8 (1870s)",
+            "left": "Steam, England to America: about 12 days (crossing only, 1860s)",
             "right": "A message along a wire: minutes"
           },
           {
@@ -406,32 +406,39 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "cause-rank",
-      "eyebrow": "Rank the Five · Listed in the College Board's Order, Not Ranked",
-      "title": "Rank them: which changed the world most by 1900?",
+      "kind": "ledger",
+      "eyebrow": "Rank the Five · In No Particular Order",
+      "title": "Which changed the world most by 1900?",
       "template": {
-        "causes": [
+        "rows": [
           {
-            "label": "The steam engine",
-            "note": "Coal into motion"
+            "name": "Steam engine",
+            "tool": "Coal into motion",
+            "result": "mines, mills, trains and ships."
           },
           {
-            "label": "The railroad",
-            "note": "Into the middle of continents"
+            "name": "Railroad",
+            "tool": "Rails inland",
+            "result": "farms and mines reached."
           },
           {
-            "label": "The internal combustion engine",
-            "note": "Fuel burned inside"
+            "name": "Combustion engine",
+            "tool": "Fuel burned inside",
+            "result": "about 8,000 US cars in 1900."
           },
           {
-            "label": "The steamship",
-            "note": "Oceans in days, not weeks"
+            "name": "Steamship",
+            "tool": "Oceans in days",
+            "result": "wheat and migrants carried."
           },
           {
-            "label": "The telegraph",
-            "note": "News in minutes"
+            "name": "Telegraph",
+            "tool": "News in minutes",
+            "result": "prices known within a day."
           }
-        ]
+        ],
+        "payoffLabel": "Your turn",
+        "payoff": "Rank them 1 to 5, and defend your number one"
       }
     },
     {
@@ -462,7 +469,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "cause-chain",
       "eyebrow": "The Whole Topic",
-      "title": "More power. New materials. Longer reach.",
+      "title": "More power. New methods. Longer reach.",
       "footer": "Each link made the next one possible.",
       "template": {
         "steps": [
@@ -490,7 +497,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         ],
         "links": [
           "so",
-          "and",
+          "so",
           "so",
           "which led to"
         ]
@@ -502,9 +509,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Say it in one sentence.",
       "kc": "Unit 5: Learning Objective F",
       "template": {
-        "frame": "The ___ engine unlocked coal and ___. New methods made ___ and chemicals. Railroads, ___ and the telegraph reached the ___ of continents, so trade and ___ grew.",
+        "frame": "Steam engines unlocked ___; later engines burned fuel from ___. New methods made ___. Railroads, ___ and the telegraph reached the ___ of continents, so trade and ___ grew.",
         "words": [
-          "steam",
+          "coal",
           "oil",
           "steel",
           "steamships",
@@ -547,8 +554,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "frame-subtitle",
       "eyebrow": "The Hand-off",
-      "title": "More power. New materials. Longer reach.",
-      "subtitle": "Trains, steamboats and telegraph wires, 1876. Next, Topic 5.6: governments that decided to build industry themselves.",
+      "title": "More power. New methods. Longer reach.",
+      "subtitle": "Locomotives, rail cars and telegraph wires, 1876. Next, Topic 5.6: governments that decided to build industry themselves.",
       "template": {
         "place": "top",
         "visual": {

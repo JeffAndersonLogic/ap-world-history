@@ -81,7 +81,7 @@
       { label: "What it made possible", text: "Say what people could now do that they could not do before. Example: \"This made it possible to find any address without knowing the city.\"" },
       { label: "What followed", text: "Say the result. Example: \"As a result, a delivery driver can work in a city she has never seen.\" Use this frame: \"Before, [the problem]. Then [the new technology] [what it did], which made it possible to [what it made possible]. As a result, [what followed].\"" }
     ],
-    prompt: "Now do it yourself, twice. First, choose ONE technology that gave more power or made new materials: Watt's steam engine, the internal combustion engine, or electric power. Explain it with the frame, using one detail from the lesson. Second, choose ONE technology that gave longer reach: the railroad, the steamship, or the telegraph. Explain it with the frame, and make your \"what followed\" step about trade or migration. (If you chose the internal combustion engine or electric power for the first answer, your \"what followed\" step can say how much it had changed by 1900.)",
+    prompt: "Now do it yourself, twice. First, choose ONE technology that gave more power or a new method: Watt's steam engine, the internal combustion engine, or electric power. Explain it with the frame, using one detail from the lesson. Second, choose ONE technology that gave longer reach: the railroad, the steamship, or the telegraph. Explain it with the frame, and make your \"what followed\" step about trade or migration. (If you chose the internal combustion engine or electric power for the first answer, your \"what followed\" step can say how much it had changed by 1900.)",
     criteria: [
       "I explained two technologies, one for power or materials and one for reach.",
       "For each, I said what the problem was before it.",
@@ -92,7 +92,7 @@
 
   lesson.checkpoints = [
     {
-      title: "Checkpoint 1: More Power, New Materials",
+      title: "Checkpoint 1: More Power, New Methods",
       subtitle: "Checks Learning Target 1 and Success Criterion 1.",
       cardDesc: "How a machine let people use the energy in coal or oil, how much more energy there was, and what one new method of the second industrial revolution made.",
       learningTargets: [lesson.learningTargets[0].target],
@@ -108,11 +108,11 @@
       cardDesc: "What railroads, steamships, and the telegraph made possible in the interiors of continents, how that led to more trade or migration, and what drove railroads and steamships.",
       learningTargets: [lesson.learningTargets[1].target],
       successCriteria: [lesson.successCriteria[1].criteria],
-      prompt: "Explain how railroads, steamships, and the telegraph changed trade or migration, as a chain of causes. (1) Explain what goods and news moved like before these technologies. (2) Choose ONE of the three, and explain what it could do that older ways could not, with one example of a place it reached. (3) Explain how that led to more trade OR more migration, using one number from the lesson. Then name the other effect in one sentence. (4) Connect the reach back to power: say what drove railroads and steamships, or what their rails and hulls were made of (coal, steam, or steel).",
+      prompt: "Explain how railroads, steamships, and the telegraph changed trade or migration, as a chain of causes. (1) Say how goods and news traveled before these technologies. (2) Choose ONE of the three, and explain what it could do that older ways could not. Then give one example of an interior region that railroads or steamboats reached. (3) Explain how that led to more trade OR more migration, using one number from the lesson. Then name the other effect in one sentence. (4) Connect the reach back to power: say what drove railroads and steamships, or what their rails and hulls were made of (coal, steam, or steel).",
       responseType: "Checkpoint 2",
       skill: "Causation",
       terms: ["railroad", "railway", "steamship", "telegraph", "interior", "continent", "Promontory", "1869", "Trans-Siberian", "Bombay", "Suez", "Atlantic cable", "1866", "Morse", "53 days", "12 days", "7 or 8 days", "minutes", "wheat", "Chicago", "Liverpool", "57.6", "15.6", "price", "trade", "migration", "55 million", "29 million", "19 million", "coal", "steam", "steel", "led to", "made it possible"],
-      focus: ["Describe how goods and news moved before.", "Explain what one technology made possible, with a place.", "Explain how it led to more trade or migration, with a number.", "Connect railroads or steamships back to coal, steam, or steel."]
+      focus: ["Describe how goods and news moved before.", "Explain what one technology made possible, and give an interior region railroads or steamboats reached.", "Explain how it led to more trade or migration, with a number.", "Connect railroads or steamships back to coal, steam, or steel."]
     }
   ];
 
@@ -130,7 +130,7 @@
       url: "../assets/images/topics/5-5/newcomen-engine-engraving-1740s.jpg",
       sourceUrl: "https://wellcomecollection.org/works/gwv62367",
       caption: "An engraving from the 1740s of a Newcomen steam engine, with the parts numbered for a reader. Wellcome Collection.",
-      prompt: "NOTICE where the fire is, and what hangs from the left end of the beam. INFER what job this engine did, and what it burned to do it. An engraving made to explain a machine: what can it not tell you about how many engines like this there were?"
+      prompt: "NOTICE where the fire is, and what hangs from the left end of the beam. INFER what job this engine did, and what the fire was for. An engraving made to explain a machine: what can it not tell you about how many engines like this there were?"
     },
     {
       title: "A Bessemer Converter",
@@ -153,7 +153,7 @@
       alt: "An engraving of a huge iron steamship with six masts, smokestacks and American and British flags, beside a smaller ship with three masts at the left, while men in rowing boats wave in the foreground",
       url: "../assets/images/topics/5-5/great-eastern-atlantic-cable-1866.jpg",
       sourceUrl: "https://www.loc.gov/pictures/item/2022637951/",
-      caption: "An engraving from the Illustrated London News of 14 July 1866: the steamship Great Eastern leaving Sheerness, England, with the Atlantic telegraph cable on board. Later that month it laid the first cable across the Atlantic that kept working. Library of Congress.",
+      caption: "An engraving from the Illustrated London News of 14 July 1866: the steamship Great Eastern leaving Sheerness, England, with the Atlantic telegraph cable on board. Later that month it landed the cable at Heart's Content, Newfoundland, and from then on cables carried messages across the Atlantic without a lasting break. Library of Congress.",
       prompt: "NOTICE the Great Eastern's smokestacks, its paddle box, and its six masts. INFER what drives it, and why the cable needed a ship this large. A newspaper picture made to celebrate: what can it not tell you about how the cable changed trade?"
     },
     {
@@ -169,7 +169,7 @@
       label: "Figures from economic historians · NBER; O'Rourke and Williamson; Hatton and Williamson",
       sourceText: ["Coal mined in Britain: about 65 million tons (1854); about 225 million tons (1900).", "Wheat in Liverpool cost more than in Chicago by 57.6 percent (1870) and by 15.6 percent (1913).", "About 55 million Europeans moved to the Americas and Australia, 1850 to 1914."],
       caption: "Coal mined in Britain: about 65 million tons in 1854 and about 225 million tons in 1900. Wheat in Liverpool cost 57.6 percent more than in Chicago in 1870, and 15.6 percent more in 1913. About 55 million Europeans moved to the Americas and Australia between 1850 and 1914. Figures gathered by economic historians from records of the time.",
-      prompt: "Choose ONE of the three numbers. INFER which link in the chain it shows, and what caused the change. A number counts something: what can it not tell you about the people behind it?"
+      prompt: "Choose ONE of the three facts (coal, wheat prices, or migration). INFER which link in the chain it shows, and what caused the change. A number counts something: what can it not tell you about the people behind it?"
     }
   ];
 

@@ -1,10 +1,10 @@
 # Topic 5.5 Story Draft: Technology of the Industrial Age
 
-**Status: Delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12).** Drafted
-2026-10-22 from the CED source file; the Phase 9 reviewers check it against that file and the
-scholarship before anything ships.
-
-**Resume here (2026-10-22):** Phases 0 to 8 done (pictures from the Library of Congress and the Wellcome Collection; Primary Source is Jevons, 1865; BeInTheRoom "The Five Technologies"; Canvas text staged, no dates). Next: Phase 9, slide screenshots, then review pass 1. The Unit 5 fingerprint has not moved yet.
+**Status: Approved 2026-10-23 by the independent reviewer loop (Jeff's standing rule of 2026-10-12).**
+Drafted 2026-10-22 from the CED source file. Three review passes checked it and every surface built
+from it against that file and the scholarship; the loop closed on the three-pass safety valve with
+every finding fixed or rejected with a reason (`docs/TOPIC-5-5-CLAIM-LEDGER.md`, Review findings).
+Nothing ships until Jeff says "ship it".
 
 **Taught:** no dates yet. The schedule ends with the Era 3 Exam (Green Monday 2026-11-23, Silver
 Tuesday 2026-11-24), and neither the schedule nor the Notion task names a Unit 5 class day (5.1 to
@@ -270,7 +270,7 @@ move is Causation.
 and precise machines" is KC-5.1.I.E; "railroads, steamships and the telegraph ... interiors ... trade and
 migration" is KC-5.1.IV; "make far more than ever before" is the objective's economic production.
 
-Shorter for the wall: **More power. New materials. Longer reach.**
+Shorter for the wall: **More power. New methods. Longer reach.**
 
 ## 5. Must-have evidence and what each one proves
 
@@ -336,7 +336,7 @@ then oil) **→ far more energy** (coal about half the world's energy by about 1
 (steel, chemicals, electricity, precision machinery) **→ longer reach** (railroads, steamships, the
 telegraph into the interiors of continents) **→ more trade and more migration.**
 
-Result line: **More power. New materials. Longer reach.**
+Result line: **More power. New methods. Longer reach.**
 
 Why this shape: the reasoning move is Causation, and the CED's own sentences are a chain ("made it
 possible," "led to," "which led to"). The cause chain template draws one cause setting off the next.

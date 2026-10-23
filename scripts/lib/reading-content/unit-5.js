@@ -1196,7 +1196,7 @@ module.exports = {
       "Developments and Processes"
     ],
     "supportCards": {
-      "beforeYouRead": "<strong>More power. New materials. Longer reach.</strong> As you read, build a chain. Each link is a cause that made the next link possible. Watch for the words \"so,\" \"let,\" and \"made it possible.\"",
+      "beforeYouRead": "<strong>More power. New methods. Longer reach.</strong> As you read, build a chain. Each link is a cause that made the next link possible. Watch for the words \"so,\" \"let,\" and \"made it possible.\"",
       "readingTarget": "How did technology change how much the world could make, and how far its goods and people could go, between 1750 and 1900?"
     },
     "vocabulary": [
@@ -1281,7 +1281,7 @@ module.exports = {
       },
       {
         "number": "4",
-        "label": "New Materials",
+        "label": "New Methods",
         "heading": "The Second Industrial Revolution",
         "blocks": [
           {
@@ -1329,7 +1329,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>The telegraph.</strong> A <span class=\"kt\">telegraph</span> sends messages as pulses of electricity along a wire. In 1844 Samuel Morse sent the message \"What hath God wrought?\" from Washington to Baltimore. Before, a message traveled only as fast as a horse or a ship. Now it could travel along a wire in minutes. From 1866, cables under the Atlantic carried messages without a lasting break, and one reached Bombay, in India, in 1870."
+            "html": "<strong>The telegraph.</strong> A <span class=\"kt\">telegraph</span> sends messages as pulses of electricity along a wire. In 1844 Samuel Morse sent the message \"What hath God wrought?\" from Washington to Baltimore. Before, a message traveled only as fast as a horse or a ship. Now it could travel along a wire in minutes. From 1866, cables under the Atlantic carried messages without a lasting break, and in 1870 another undersea cable, through the Red Sea, reached Bombay, in India."
           }
         ],
         "callout": {
@@ -1365,7 +1365,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "In 1750 almost all the energy used in the world came from muscles, wood, wind, and water. Then machines unlocked the energy stored in fossil fuels. Newcomen's steam engine of 1712 pumped water out of a coal mine; Watt's engines used far less coal, and from the 1780s they turned wheels, so factories could run on coal instead of rivers. Britain's coal output rose to about 225 million tons by 1900, when coal supplied about half the world's energy. Oil came next, at first as lamp fuel, and the internal combustion engine's big changes came after 1900. After 1850 a second industrial revolution brought new methods: Bessemer steel, dyes made from coal tar, electric power, and precise machines with interchangeable parts. Railroads, steamships, and the telegraph carried goods, people, and news into the interiors of continents, so trade grew and tens of millions of people migrated. More power. New materials. Longer reach.",
+    "takeaway": "In 1750 almost all the energy used in the world came from muscles, wood, wind, and water. Then machines unlocked the energy stored in fossil fuels. Newcomen's steam engine of 1712 pumped water out of a coal mine; Watt's engines used far less coal, and from the 1780s they turned wheels, so factories could run on coal instead of rivers. Britain's coal output rose to about 225 million tons by 1900, when coal supplied about half the world's energy. Oil came next, at first as lamp fuel, and the internal combustion engine's big changes came after 1900. After 1850 a second industrial revolution brought new methods: Bessemer steel, dyes made from coal tar, electric power, and precise machines with interchangeable parts. Railroads, steamships, and the telegraph carried goods, people, and news into the interiors of continents, so trade grew and tens of millions of people migrated. More power. New methods. Longer reach.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [

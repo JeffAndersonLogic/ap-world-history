@@ -41,12 +41,12 @@ module.exports = {
   eyebrow: 'Topic 5.5 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
   titleHtml: 'More Power, <em>Longer Reach</em>',
   deck: `In 1750 almost all the energy used in the world came from muscles, wood, wind and water. By 1900 about half of it came from coal. This chapter follows how machines unlocked that buried energy, what new things it let people make, and how railroads, steamships and the telegraph carried goods, people and news into the interiors of continents.`,
-  meta: ['Five sections', 'Energy before 1750, the steam engine, coal and oil, new materials, longer reach', 'Read alongside the First & 10'],
+  meta: ['Five sections', 'Energy before 1750, the steam engine, coal and oil, new methods, longer reach', 'Read alongside the First & 10'],
   footerNote: 'Topic 5.5 &nbsp;·&nbsp; More Power, Longer Reach &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',
-    intro: `The College Board asks you to explain how technology shaped economic production between 1750 and 1900. That is a causation question, and the answer is a chain: each technology made the next one possible. Section 01 sets the starting point; sections 02 and 03 are the power; section 04 is the new materials; section 05 is the reach, and its two effects, trade and migration. Each section ends with a tool, a limit and a comparison you can use in an answer.`,
+    intro: `The College Board asks you to explain how technology shaped economic production between 1750 and 1900. That is a causation question, and the answer is a chain: each technology made the next one possible. Section 01 sets the starting point; sections 02 and 03 are the power; section 04 is the new methods; section 05 is the reach, and its two effects, trade and migration. Each section ends with a tool, a limit and a comparison you can use in an answer.`,
     steps: [
       `<b>01 Energy before 1750:</b> muscles, wood, wind and water, and their limits.`,
       `<b>02 The steam engine:</b> from a mine pump to the power of factories.`,
@@ -188,7 +188,7 @@ module.exports = {
       num: '04',
       accent: 'gold',
       name: 'The Second Industrial Revolution',
-      navLabel: 'New materials',
+      navLabel: 'New methods',
       dates: '1850 to 1900 &nbsp;·&nbsp; Four new methods',
       thesis: `After 1850, with so much energy to use, new methods made steel cheap, made chemicals in factories, sold electric power, and cut machine parts precisely enough to swap.`,
       parts: [
@@ -213,7 +213,7 @@ module.exports = {
         {
           heading: 'Precision machinery',
           blocks: [
-            { p: `Machine tools, such as lathes and milling machines, had begun to cut metal parts to exact sizes, so that one part fit any copy of the same machine; after 1850 the method spread widely. These are <span class="kt">interchangeable parts</span>. Standard screw threads, set early by Joseph Whitworth in Britain in <span class="num">1841</span> and then by William Sellers in the United States in <span class="num">1864</span>, helped machines with interchangeable parts, "from typewriters to locomotives," spread.` },
+            { p: `Machine tools, such as lathes and milling machines, had begun to cut metal parts to exact sizes, so that one part fit any copy of the same machine; after 1850 the method spread widely. These are <span class="kt">interchangeable parts</span>. Standard screw threads, set early by Joseph Whitworth in Britain in <span class="num">1841</span> and then by William Sellers in the United States in <span class="num">1864</span>, helped machines with interchangeable parts, "from typewriters to locomotives," as the American Society of Mechanical Engineers puts it, spread.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
@@ -260,7 +260,7 @@ module.exports = {
         {
           heading: 'The telegraph',
           blocks: [
-            { p: `A <span class="kt">telegraph</span> sends messages as pulses of electricity along a wire. In <span class="num">1844</span> Samuel Morse sent "What hath God wrought?" from Washington to Baltimore. A cable under the Atlantic worked only a few weeks in 1858; from <span class="num">1866</span> cables carried messages across it without a lasting break, and one reached Bombay in <span class="num">1870</span>. A message that once traveled as fast as a ship could now travel in minutes, so merchants could know prices in distant markets within a day.` }
+            { p: `A <span class="kt">telegraph</span> sends messages as pulses of electricity along a wire. In <span class="num">1844</span> Samuel Morse sent "What hath God wrought?" from Washington to Baltimore. A cable under the Atlantic worked only a few weeks in 1858; from <span class="num">1866</span> cables carried messages across it without a lasting break, and in <span class="num">1870</span> another undersea cable, through the Red Sea, reached Bombay. A message that once traveled as fast as a ship could now travel in minutes, so merchants could know prices in distant markets within a day.` }
           ]
         },
         {
@@ -292,7 +292,7 @@ module.exports = {
   closing: {
     heading: 'Building an Answer That Scores',
     navLabel: 'The answer',
-    intro: `Each card gathers the evidence for one link of the chain. The College Board asks how technology shaped economic production over time, so the cards follow the causes in order: power, new materials, reach, and its effects.`,
+    intro: `Each card gathers the evidence for one link of the chain. The College Board asks how technology shaped economic production over time, so the cards follow the causes in order: power, new methods, reach, and its effects.`,
     pairs: [
       {
         category: 'Causation',

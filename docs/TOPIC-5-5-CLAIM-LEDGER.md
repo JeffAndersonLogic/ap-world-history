@@ -1,7 +1,9 @@
 # Topic 5.5 Claim Ledger: Technology of the Industrial Age
 
-**Status: open. Started with the story draft (2026-10-22); every claim in the story was checked against
-sources before the surfaces were written. Review findings and their dispositions are at the end.**
+**Status: closed 2026-10-23. Started with the story draft (2026-10-22); every claim in the story was
+checked against sources before the surfaces were written. Three independent review passes followed;
+the loop closed on the three-pass safety valve with every finding fixed or rejected with a reason.
+Review findings and their dispositions are at the end.**
 
 **The CED decides scope; scholarship decides truth.** The CED (`scripts/lib/ced-source/unit-5.js`,
 p. 104) gives 5.5 one learning objective (F), three Key Concepts (KC-5.1.I.B, KC-5.1.I.E and
@@ -255,3 +257,40 @@ confirms Parsons and Atwater for the 1874 print).
 7. The Promontory caption said "crowds"; the holder's record says soldiers lined up along the tracks, from an old caption card. **Fixed:** "Soldiers stand in a line along the track, with onlookers ... The Library of Congress dates it from an old caption card."
 8. Checkpoint 2's "between 1830 and 1900" excluded the lesson's numbers (1913, 1914, 1940). **Fixed:** the window is dropped.
 Minor: slide 9's note said the boiler drove the drilling; the engine beside the derrick did. **Fixed.**
+
+### Pass 3, 2026-10-23: the third pass, and the loop closes on the safety valve
+
+A fresh packet and two fresh reviewers, neither of whom read the story draft, this ledger or the
+git history. Twenty findings, three of them reported by both reviewers (slide 20, slide 24 and
+slide 11's machine-tools column), so seventeen distinct defects; all were fixed. The severity has
+fallen pass by pass: pass 1 found factual errors, pass 3 found one wrong causal link in a fill-in
+sentence and otherwise wording, layout and consistency. This is the third full pass in a row to find
+supported defects, so under the build-topic skill's safety valve the loop stops here, with every
+pass 3 finding fixed, and the build report leads with that.
+
+**Page truth, readability, CED, ownership (12 findings; all fixed).**
+1. Slide 20, the retelling sentence, filled in as "The steam engine unlocked coal and oil." (also history 2). **Fixed:** "Steam engines unlocked ___; later engines burned fuel from ___," answers coal and oil.
+2. Checkpoint 2's prompt accepted any "place it reached" while its criterion and slide 23 asked for an interior region, which the lesson gives only for railroads and steamboats. **Fixed:** the prompt, checklist and slide ask for "one example of an interior region that railroads or steamboats reached."
+3. Slide 17 said "not ranked" beside numerals 1 to 5, and "the College Board's order" means nothing to a student. **Fixed:** the eyebrow reads "Rank the Five · In No Particular Order," the numerals are gone (each row is marked with its first letter), and the payoff says "Rank them 1 to 5, and defend your number one."
+4. The Unit 5 hub card kept the old title and a factories blurb that belongs to 5.3. **Fixed:** "Technology of the Industrial Age," with a blurb naming fossil-fuel power, the new methods and the reach inland; the status manifest regenerated.
+5. Slide 24 named steamboats the projected crop hides (also history 4). **Fixed:** the subtitle names only what shows: "Locomotives, rail cars and telegraph wires, 1876."
+6. Slide 15 set "53 days" against "12 days" unlabeled. **Fixed:** "(whole trip)" and "(crossing only, 1860s)" on the slide.
+7. Slide 11's machine-tools column put screw threads under "It made" (also history 6). **Fixed:** "Tools cut parts to exact sizes," "Interchangeable parts," and the threads under "How far."
+8. The Evidence Lab number card said "three numbers" and showed five. **Fixed:** "three facts (coal, wheat prices, or migration)."
+9. The Newcomen card asked what the engine burned, which the engraving cannot show. **Fixed:** "what job this engine did, and what the fire was for."
+10. Slide 12's blanks ("slow and costly," "in large amounts") had no source in Content Delivery. **Fixed:** lecture card 2 now says both.
+11. "New materials" in the spine and on slide 11, where the CED says "new methods"; slide 19's "AND" broke the chain. **Fixed:** "More power. New methods. Longer reach." on every surface and the story draft; every link in the chain reads "so."
+12. Checkpoint 2's "what goods and news moved like" and a five-task run-on criterion. **Fixed:** "how goods and news traveled," and the criterion split with semicolons.
+Observation, not a defect: no Canvas text, expected until Unit 5 has class dates.
+
+**History (8 findings; all fixed).** The reviewer re-verified the energy shares (OWID CSV), the wheat
+gap, the crossing times, the steel series, the 55 million, every Library of Congress and Wellcome
+record, the map's arrow ends, and the December 1900 room, and found no anachronism.
+1. The Primary Source task and slide 8 said Jevons feared coal "running out"; his 1866 preface says the mines are "literally inexhaustible" and that fuel would grow dear. **Fixed:** "Britain's cheap coal would not last: as mines went deeper, coal would cost more," on the task, slide 8 and the slide 7 note. (The ledger row was already right.)
+2. Slide 20's causal link. **Fixed** as page truth 1.
+3. The Great Eastern caption said "the first cable across the Atlantic that kept working," which the slide 15 note forbids. **Fixed:** "Later that month it landed the cable at Heart's Content, Newfoundland, and from then on cables carried messages across the Atlantic without a lasting break," the wording every other surface uses.
+4. Slide 24's hidden steamboats. **Fixed** as page truth 5.
+5. Slide 9's note pointed to a boiler the crop removed. **Fixed:** the picture is positioned at 88% so the boiler and smokestack show.
+6. Slide 11's screw threads. **Fixed** as page truth 7.
+7. "One reached Bombay" read as if an Atlantic cable reached India. **Fixed** on the reading, chapter, lecture card and room card: "in 1870 another undersea cable, through the Red Sea, reached Bombay."
+8. The chapter quoted "from typewriters to locomotives" without a source. **Fixed:** "as the American Society of Mechanical Engineers puts it."

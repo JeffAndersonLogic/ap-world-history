@@ -21,7 +21,7 @@
  * let the world make far more than ever before. Railroads, steamships and the
  * telegraph carried goods, people and news into the interiors of continents,
  * and trade and migration grew.
- * Wall version: More power. New materials. Longer reach.
+ * Wall version: More power. New methods. Longer reach.
  * Retelling slide: the cause chain (phase 'retell').
  *
  * Class dates: not yet scheduled (the schedule ends with the Era 3 Exam,
@@ -102,7 +102,7 @@ window.BEHISTORICAL_TEACHING = {
   slides: [
     {
       phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight · 2 Minutes',
-      title: 'More power. New materials. Longer reach.',
+      title: 'More power. New methods. Longer reach.',
       subtitle: 'Causation, with Developments and Processes 1.B. How did new technology change how much the world could make, and how far its goods and people could go?',
       notes: {
         minutes: 2,
@@ -245,23 +245,23 @@ window.BEHISTORICAL_TEACHING = {
           'Why it matters for production: a horse or a worker eats food grown on land; coal is energy that took no land to grow this year. E. A. Wrigley calls this the escape from the "organic economy."'
         ],
         ask: 'Coal and oil were stored underground for millions of years. Why does that matter for how much energy people could use?',
-        listenFor: 'You do not have to wait for it to grow back, the way you wait for a forest. So you can use far more, far faster. (And, someday, it runs out: Jevons, slide 8.)',
+        listenFor: 'You do not have to wait for it to grow back, the way you wait for a forest. So you can use far more, far faster. (And as mines went deeper, it would cost more: Jevons, slide 8.)',
         ap: 'KC-5.1.I.B (the amount of energy).'
       }
     },
     {
       phase: 'jevons', kind: 'source-quote', eyebrow: 'A Voice from 1865',
       kc: 'KC-5.1.I.B', title: 'What did coal mean to the people who used it?',
-      footer: 'Jevons, a British economist, feared that Britain\'s cheap coal would run out.',
+      footer: 'Jevons, a British economist, feared that Britain\'s cheap coal would not last.',
       template: {
         quote: 'With coal almost any feat is possible or easy; without it we are thrown back into the laborious poverty of early times.',
         attribution: { author: 'W. Stanley Jevons', work: 'The Coal Question', year: '1865' },
-        notice: 'Why would an economist who feared coal running out write this sentence?'
+        notice: 'Why would an economist who feared the end of cheap coal write this sentence?'
       },
       notes: {
         minutes: 1,
         land: [
-          'KC-5.1.I.B in a source from the time. William Stanley Jevons was a British economist; The Coal Question (1865) warned that Britain\'s cheap coal would not last forever. This line is from the opening of his introduction, word for word from the second edition (1866), as reprinted by the Library of Economics and Liberty; the first edition prints the same sentence.',
+          'KC-5.1.I.B in a source from the time. William Stanley Jevons was a British economist; The Coal Question (1865) warned that Britain\'s cheap coal would not last forever. Not that coal would run out: his preface calls the mines "literally inexhaustible" and warns only that "we may some day have to pay dear for fuel." This line is from the opening of his introduction, word for word from the second edition (1866), as reprinted by the Library of Economics and Liberty; the first edition prints the same sentence.',
           'Read the line twice. "Laborious poverty of early times" is the before on slide 5: life on muscles, wood, wind and water.',
           'The Primary Source module has a longer passage, with his point that coal yields dyes with "beautiful colours" (slide 11) and that steam and iron depend on coal.'
         ],
@@ -318,15 +318,15 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'methods', kind: 'split-matrix', eyebrow: 'New Materials · After 1850',
+      phase: 'methods', kind: 'split-matrix', eyebrow: 'New Methods · After 1850',
       kc: 'KC-5.1.I.E', title: 'The second industrial revolution: four new methods.',
       footer: 'Coal ran the furnaces that made steel, and coal tar gave the first synthetic dyes to sell well.',
       template: {
         columns: [{ name: 'Steel' }, { name: 'Chemicals' }, { name: 'Electricity' }, { name: 'Machine tools' }],
         rows: [
-          { label: 'New method', cells: ['Bessemer, 1856: air through melted iron', 'Perkin, 1856: dye from coal tar', 'Pearl Street, 1882: power for lamps', 'Parts that fit any copy'] },
-          { label: 'It made', cells: ['Rails, bridges, ships', 'Dyes; factory indigo, 1897', 'Light; motors for machines', 'Standard screw threads, 1841, 1864'] },
-          { label: 'How far', cells: ['US: 69,000 tons (1870), 10 million (1900)', 'Germany: most of the world\'s dyes, 1914', 'Under 5% of US factory power, 1899', 'Typewriters to locomotives'] }
+          { label: 'New method', cells: ['Bessemer, 1856: air through melted iron', 'Perkin, 1856: dye from coal tar', 'Pearl Street, 1882: power for lamps', 'Tools cut parts to exact sizes'] },
+          { label: 'It made', cells: ['Rails, bridges, ships', 'Dyes; factory indigo, 1897', 'Light; motors for machines', 'Interchangeable parts'] },
+          { label: 'How far', cells: ['US: 69,000 tons (1870), 10 million (1900)', 'Germany: most of the world\'s dyes, 1914', 'Under 5% of US factory power, 1899', 'Standard threads, 1841, 1864'] }
         ]
       },
       notes: {
@@ -375,7 +375,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 8,
         land: [
-          'Module 05 is required. It models the frame on an everyday example and asks students to explain two technologies step by step: one that unlocked energy or made new materials, and one that reached the interior.',
+          'Module 05 is required. It models the frame on an everyday example and asks students to explain two technologies step by step: one that unlocked energy or was a new method, and one that reached the interior.',
           'Circulate for the "which made it possible to": a real effect, not a second name or date.'
         ],
         ask: 'Read me your "which made it possible to" step.',
@@ -420,8 +420,8 @@ window.BEHISTORICAL_TEACHING = {
         left: { name: 'Steamships' },
         right: { name: 'The telegraph' },
         rows: [
-          { label: 'Before', left: 'Sail, Norway to America: about 53 days on average', right: 'A letter: as fast as the ship carrying it' },
-          { label: 'After', left: 'Steam, England to America: about 12 days (1860s); fastest, 7 or 8 (1870s)', right: 'A message along a wire: minutes' },
+          { label: 'Before', left: 'Sail, Norway to America: about 53 days (whole trip)', right: 'A letter: as fast as the ship carrying it' },
+          { label: 'After', left: 'Steam, England to America: about 12 days (crossing only, 1860s)', right: 'A message along a wire: minutes' },
           { label: 'Reach', left: 'Suez Canal, 1869: mostly steamships; steamboats up rivers', right: 'Morse, 1844; across the Atlantic, 1866; to Bombay, 1870' }
         ]
       },
@@ -467,21 +467,23 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'rank', kind: 'cause-rank', eyebrow: 'Rank the Five · Listed in the College Board\'s Order, Not Ranked',
-      title: 'Rank them: which changed the world most by 1900?',
+      phase: 'rank', kind: 'ledger', eyebrow: 'Rank the Five · In No Particular Order',
+      title: 'Which changed the world most by 1900?',
       template: {
-        causes: [
-          { label: 'The steam engine', note: 'Coal into motion' },
-          { label: 'The railroad', note: 'Into the middle of continents' },
-          { label: 'The internal combustion engine', note: 'Fuel burned inside' },
-          { label: 'The steamship', note: 'Oceans in days, not weeks' },
-          { label: 'The telegraph', note: 'News in minutes' }
-        ]
+        rows: [
+          { name: 'Steam engine', tool: 'Coal into motion', result: 'mines, mills, trains and ships.' },
+          { name: 'Railroad', tool: 'Rails inland', result: 'farms and mines reached.' },
+          { name: 'Combustion engine', tool: 'Fuel burned inside', result: 'about 8,000 US cars in 1900.' },
+          { name: 'Steamship', tool: 'Oceans in days', result: 'wheat and migrants carried.' },
+          { name: 'Telegraph', tool: 'News in minutes', result: 'prices known within a day.' }
+        ],
+        payoffLabel: 'Your turn',
+        payoff: 'Rank them 1 to 5, and defend your number one'
       },
       notes: {
         minutes: 3,
         land: [
-          'This is the CED\'s own sample activity for 5.5 (p. 97), quick version: the same five technologies, in the CED\'s order, not ranked. Say the task aloud: rank them 1 to 5 and defend your number one with one piece of evidence. The full debate, as the writers of a New York science magazine in 1900, is the BeInTheRoom scenario.',
+          'This is the CED\'s own sample activity for 5.5 (p. 97), quick version: the same five technologies, in no particular order (the CED\'s), each marked with its first letter, not a number, so nothing looks ranked. Say the task aloud: rank them 1 to 5 and defend your number one with one piece of evidence. The full debate, as the writers of a New York science magazine in 1900, is the BeInTheRoom scenario.',
           'There is no single right answer; the evidence is what is graded. Strong number ones: the steam engine, because the railroad and the steamship are steam engines on wheels and hulls; the railroad, because it reached interiors that ships could not.',
           'Watch for students who put the internal combustion engine first. Ask: by 1900? (8,000 US cars.) It belongs on the list because of what came after; the question says "by 1900."',
           'Check the question-slide predictions.'
@@ -516,7 +518,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       retelling: true,
       phase: 'retell', kind: 'cause-chain', eyebrow: 'The Whole Topic',
-      title: 'More power. New materials. Longer reach.',
+      title: 'More power. New methods. Longer reach.',
       footer: 'Each link made the next one possible.',
       template: {
         steps: [
@@ -526,7 +528,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'Longer reach', text: 'Railroads, steamships and the telegraph reach the interiors of continents', key: true },
           { label: 'Effects', text: 'More trade, more migration' }
         ],
-        links: ['so', 'and', 'so', 'which led to']
+        links: ['so', 'so', 'so', 'which led to']
       },
       notes: {
         minutes: 3,
@@ -543,8 +545,8 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'synthesis', kind: 'close-retell', eyebrow: 'AP Synthesis',
       kc: 'Unit 5: Learning Objective F', title: 'Say it in one sentence.',
       template: {
-        frame: 'The ___ engine unlocked coal and ___. New methods made ___ and chemicals. Railroads, ___ and the telegraph reached the ___ of continents, so trade and ___ grew.',
-        words: ['steam', 'oil', 'steel', 'steamships', 'interiors', 'migration'],
+        frame: 'Steam engines unlocked ___; later engines burned fuel from ___. New methods made ___. Railroads, ___ and the telegraph reached the ___ of continents, so trade and ___ grew.',
+        words: ['coal', 'oil', 'steel', 'steamships', 'interiors', 'migration'],
         prompt: 'Fill it in from memory, then add one example.'
       },
       notes: {
@@ -603,13 +605,13 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'close', kind: 'frame-subtitle', eyebrow: 'The Hand-off',
-      title: 'More power. New materials. Longer reach.',
-      subtitle: 'Trains, steamboats and telegraph wires, 1876. Next, Topic 5.6: governments that decided to build industry themselves.',
+      title: 'More power. New methods. Longer reach.',
+      subtitle: 'Locomotives, rail cars and telegraph wires, 1876. Next, Topic 5.6: governments that decided to build industry themselves.',
       notes: {
         minutes: 2,
         land: [
           'Land the spine, then the hand-off to 5.6: states that built industry on purpose.',
-          'The picture is a real print: Currier and Ives, Night Scene at an American Railway Junction: Lightning Express, Flying Mail and Owl Trains, "On Time," chromolithograph, 1876, drawn by Parsons and Atwater (Library of Congress, no known restrictions). Margins trimmed. Find the three links of the reach in one picture: locomotives, steamboats in the harbor behind them, and telegraph wires on the poles at the upper right.',
+          'The picture is a real print: Currier and Ives, Night Scene at an American Railway Junction: Lightning Express, Flying Mail and Owl Trains, "On Time," chromolithograph, 1876, drawn by Parsons and Atwater (Library of Congress, no known restrictions). Margins trimmed. On the projector the words cover the harbor, so point to the locomotives and to the telegraph wires on the pole at the upper right; the full print (Library of Congress) also shows steamboats in the harbor behind them.',
           'Like the question slide, it is a print made to sell, and it shows the railroad as its makers wanted it seen: on time, at night, everywhere at once.'
         ],
         ask: 'Say the topic in one sentence, with one example.',
