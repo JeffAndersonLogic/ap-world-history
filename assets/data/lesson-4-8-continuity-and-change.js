@@ -125,7 +125,14 @@ window.BEHISTORICAL_LESSON = {
   lecture: {
     title: "Follow the Trade to the People: How It Worked",
     intro: "The First & 10 tells the story. These cards take it apart in three steps: how the new trade needed more workers, what that did to society where the work was forced, and what stayed the same, with the moves you need to turn the evidence into an argument.",
-    videos: [],
+    videos: [
+      {
+        title: "AP World History UNIT 4 REVIEW [Everything You NEED to Know!]",
+        url: "https://youtu.be/JnmHOBcILmg",
+        youtubeId: "JnmHOBcILmg",
+        prompt: "Heimler has no separate video for 4.8, so this is his full Unit 4 review. As you watch, track how new trade and new kinds of forced work changed who held power and who did the labor, and one thing that stayed the same."
+      }
+    ],
     segments: [
       {
         title: "From Ships to Demand to Workers",

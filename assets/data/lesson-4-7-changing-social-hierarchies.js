@@ -101,7 +101,14 @@ window.BEHISTORICAL_LESSON = {
   lecture: {
     title: "Who Belongs, Who Rises: How It Worked",
     intro: "The First & 10 tells the story. These cards take four parts of it apart: why a state would make room for a group it did not have to, how a small group of conquerors held China, how the casta ranking sorted people in Spanish America, and how stronger rulers squeezed the nobles who used to share their power.",
-    videos: [],
+    videos: [
+      {
+        title: "Changing SOCIAL HIERARCHIES, 1450-1750 [AP World History Review—Unit 4 Topic 7]",
+        url: "https://youtu.be/RQIEAt2_UoE",
+        youtubeId: "RQIEAt2_UoE",
+        prompt: "Use this clip to review who rose and who fell in society from 1450 to 1750. As you watch, note one group a ruler made room for, one group that lost power, and how the casta system ranked people in Spanish America."
+      }
+    ],
     segments: [
       {
         title: "Why Make Room for a Group",

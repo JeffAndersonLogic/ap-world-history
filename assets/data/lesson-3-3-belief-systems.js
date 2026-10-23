@@ -103,6 +103,12 @@ window.BEHISTORICAL_LESSON = {
     intro: "Use these cards to explain continuity and change within belief systems from c. 1450 to c. 1750: Christianity changed through Protestant and Catholic reform, Ottoman-Safavid rivalry intensified the Sunni-Shia divide, and Sikhism developed in South Asia amid sustained interaction between Hinduism and Islam.",
     videos: [
       {
+        title: "Empires: BELIEF SYSTEMS [AP World History Review—Unit 3 Topic 3]",
+        url: "https://youtu.be/pPXreKX0JBM",
+        youtubeId: "pPXreKX0JBM",
+        prompt: "Use this clip to review how belief systems changed and stayed the same from 1450 to 1750. As you watch, note one way Christianity split, how the Ottoman and Safavid rivalry deepened the Sunni and Shia divide, and what Sikhism drew from older traditions."
+      },
+      {
         title: "History 101: The Protestant Reformation | National Geographic",
         url: "https://youtu.be/IATyzSAjC1w",
         youtubeId: "IATyzSAjC1w",
