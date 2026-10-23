@@ -210,45 +210,69 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "split-mirror",
-      "eyebrow": "Christianity · Two Answers",
-      "title": "One faith, two answers.",
-      "footer": "Both stayed Christian, and both grew. What split was who decides what is true.",
+      "kind": "split-matrix",
+      "eyebrow": "Christianity · Before and After",
+      "title": "What did each side change?",
+      "footer": "Bold marks a change from before 1517.",
       "kc": "KC-4.1.VI.i",
       "template": {
-        "left": {
-          "name": "Lutheran"
-        },
-        "right": {
-          "name": "Catholic, after Trent"
-        },
+        "columns": [
+          {
+            "name": "Before 1517"
+          },
+          {
+            "name": "Lutheran"
+          },
+          {
+            "name": "Catholic (Trent)"
+          }
+        ],
         "rows": [
           {
             "label": "Saved by",
-            "left": "Grace, through faith alone",
-            "right": "Grace, through faith and good works"
+            "cells": [
+              "Faith, good works, sacraments",
+              "**Faith alone**",
+              "Faith, good works, sacraments"
+            ]
           },
           {
-            "label": "Truth",
-            "left": "The Bible alone",
-            "right": "The Church interprets the Bible"
+            "label": "Authority",
+            "cells": [
+              "The Pope and the Church",
+              "**The Bible alone**",
+              "The Pope and the Church"
+            ]
           },
           {
             "label": "Worship",
-            "left": "In local languages, like German",
-            "right": "In Latin"
+            "cells": [
+              "In Latin",
+              "**In local languages**",
+              "In Latin"
+            ]
           },
           {
             "label": "Clergy",
-            "left": "Pastors may marry",
-            "right": "Unmarried priests, trained in seminaries"
+            "cells": [
+              "Unmarried, often poorly trained",
+              "**Pastors may marry**",
+              "Unmarried, **seminary-trained**"
+            ]
           },
           {
             "label": "Indulgences",
-            "left": "Rejected",
-            "right": "Kept, but the selling ends"
+            "cells": [
+              "Sold to raise money",
+              "**Rejected**",
+              "Kept, but **the selling ends**"
+            ]
           }
-        ]
+        ],
+        "result": {
+          "label": "Pattern",
+          "text": "Lutherans changed beliefs. Catholics kept beliefs, changed behavior. Both grew."
+        }
       }
     },
     {

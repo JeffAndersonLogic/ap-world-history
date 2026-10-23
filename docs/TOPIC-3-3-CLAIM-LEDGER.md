@@ -74,3 +74,17 @@ say Trent did not teach that people earn heaven, the indulgence step now says "s
 forgiven", the Language row is now Worship, the door-nailing note says "disputed" rather than
 "myth", and the Trent picture's notes no longer claim more than its unverified provenance allows.
 Kept as Jeff wrote it: "German monk" (Luther was an Augustinian friar; textbooks commonly say monk).
+
+## Before-and-after table, 2026-10-23
+
+Jeff asked for the Church's positions before 1517 to sit beside both reformations, so the
+slide shows continuity and change rather than only a Lutheran-Catholic comparison. The
+`two-answers` split mirror became `before-after`, a three-column split matrix (Before 1517,
+Lutheran, Catholic at Trent), with changes in bold and the pattern row "Lutherans changed
+beliefs. Catholics kept beliefs, changed behavior. Both grew." Same 4 minutes; no slide added.
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| Before 1517 the Church taught salvation through grace with faith, good works and the sacraments, under the authority of the Pope and the Church, with worship in Latin and unmarried priests. | `before-after` | Standard late-medieval Catholic teaching; Trent's decrees of 1546 to 1563 restated these positions rather than inventing them. | VERIFIED |
+| Many priests before 1517 were poorly trained, and indulgences were sold to raise money. | `before-after` | Standard Reformation histories; these were abuses that Catholic reformers also criticized, and the notes say so. | VERIFIED |
+| Trent kept Catholic doctrine on salvation, authority, Latin worship and celibacy, and changed practice: seminaries (1563), condemnation of indulgence abuses (1563), with sales ended by Pius V (1567). | `before-after` | Council of Trent decrees; Pius V, 1567. Same sources as the rows above. | VERIFIED |
