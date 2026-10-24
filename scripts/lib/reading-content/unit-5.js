@@ -1403,186 +1403,227 @@ module.exports = {
   },
   "5.6": {
     "topicKey": "5.6",
-    "topicLabel": "5.6 - Industrialization: Government and Society",
+    "topicLabel": "5.6 - Industrialization: Government’s Role from 1750 to 1900",
     "sourceFile": "first-and-10-topic-5-6-industrialization-government-and-society.html",
     "unitDir": "unit-5",
-    "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 5.6 Industrialization: Government and Society",
+    "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 5.6 Industrialization: Government’s Role from 1750 to 1900",
     "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
-    "readingEyebrow": "AP World History &middot; Unit 5: Revolutions &middot; Topic 5.6",
+    "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
-    "headerSubtitle": "Topic 5.6, Industrialization: Government and Society &nbsp;|&nbsp; AP World History",
-    "titleHtml": "The <em>Class</em> Question",
-    "deck": "How industrialization created new social classes, new political ideologies, and new demands for reform, and why the question of who benefits from industrial wealth has never been fully answered",
+    "showFooterNote": false,
+    "headerSubtitle": "Topic 5.6, Industrialization: Government’s Role, 1750 to 1900 &nbsp;|&nbsp; AP World History: Modern",
+    "titleHtml": "Industry <em>on Purpose</em>",
+    "deck": "In Britain and the United States, private owners built the first factories. A few governments did not wait. Afraid of stronger industrial powers, they built industry themselves. This reading follows two of them, Egypt under Muhammad Ali and Japan in the Meiji era: why each government acted, what it built, and why one strategy lasted while the other mostly ended.",
     "skillTags": [
       "Causation",
-      "Comparison",
-      "Argumentation"
+      "Making Connections"
     ],
     "supportCards": {
-      "beforeYouRead": "Industrialization didn't just change how goods were made, it transformed social order. It created new classes (factory owners and factory workers), new ideologies (liberalism, socialism, Marxism), and new demands for political representation, labor rights, and social welfare. Governments responded, slowly, unevenly, often only under pressure.",
-      "readingTarget": "Explain how industrialization created new social classes and the ideologies that emerged to address class conflict; analyze government responses and the role of women in industrial society."
+      "beforeYouRead": "<strong>The state built the factories. Japan's lasted. Egypt's mostly closed.</strong> As you read, build two chains, one for each country, with the same four links: the threat, the decision, the strategy, the result. Then look for what the two chains share.",
+      "readingTarget": "Why did a few governments build industry themselves between 1750 and 1900, and what happened when they did?"
     },
     "vocabulary": [
-      "bourgeoisie",
-      "proletariat",
-      "class conflict",
-      "liberalism",
-      "conservatism",
-      "socialism",
-      "Marxism",
-      "Communist Manifesto",
-      "Reform Acts",
-      "Factory Acts",
-      "Chartism",
-      "Bismarck",
-      "social insurance",
-      "women's suffrage",
-      "class consciousness"
+      "State-Sponsored Industry",
+      "Monopoly",
+      "Conscription",
+      "Unequal Treaty",
+      "Meiji Restoration",
+      "Zaibatsu",
+      "Regional Power",
+      "Pattern"
     ],
     "sections": [
       {
         "number": "1",
-        "label": "Contextualization",
-        "heading": "Social Order Before Industrialization",
+        "label": "The Question",
+        "heading": "Why Would a Government Build Factories?",
         "blocks": [
           {
             "type": "p",
-            "html": "Pre-industrial social order in Europe was based on <span class=\"kt\">hereditary status</span>: the three estates (nobility, clergy, commoners) or equivalent hierarchies. A person's social position was fixed at birth. <span class=\"kt\">Guilds</span> organized skilled trades and controlled access to craft knowledge. Most people were peasants or agricultural workers."
+            "html": "Topic 5.4 followed the factory as it spread from Britain to other parts of Europe, the United States, Russia, and Japan. Topic 5.5 showed how steam, steel, railroads, and the telegraph made industrial countries far more powerful. In Britain and the United States, most of the first factories were built by private owners and investors, people such as Richard Arkwright or the Boston merchants who paid for the mills at Lowell."
           },
           {
             "type": "p",
-            "html": "The middle class existed in pre-industrial societies (merchants, lawyers, physicians) but was relatively small and politically subordinate to the <span class=\"kt\">landed aristocracy</span>."
+            "html": "A small number of governments did something different. They did not wait for private owners. They paid for factories themselves, owned them, and ran them. This is <span class=\"kt\">state-sponsored industry</span>: industry that a government plans, pays for, and protects."
           },
           {
             "type": "p",
-            "html": "Industrialization shattered this order: it created new forms of wealth (<span class=\"kt\">industrial capital</span>) that competed with land; it created a massive urban working class with no pre-industrial equivalent; and it made old aristocratic justifications for power, birth, land, military service, increasingly irrelevant."
-          }
-        ],
-        "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>Understanding what industrialization changed about social order requires knowing what social order looked like BEFORE. <strong>The key change: from a society where status was inherited to a society where status was increasingly tied to economic position, but where economic position was determined by ownership of capital (bourgeoisie) or by the sale of labor (proletariat), not by birth.</strong> Effective contextualization identifies this shift from hereditary to economic hierarchy as the foundation of 19th-century class conflict.</p>"
-        }
-      },
-      {
-        "number": "2",
-        "label": "Key Concept",
-        "heading": "The New Social Classes: Bourgeoisie and Proletariat",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">bourgeoisie</span> (industrial middle class, from French \"town-dweller\"): factory owners, merchants, bankers, lawyers, doctors, engineers, people who earned their social position through accumulated capital and market success, not inherited land. By mid-19th century, the bourgeoisie was economically dominant in industrial societies, though political power (especially in Britain) still rested partly with the landed aristocracy. The bourgeoisie had its own internal stratifications: the great industrialists (iron masters, cotton manufacturers) at the top; the smaller shopkeepers and craftsmen at the bottom."
-          },
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">industrial proletariat</span> (from Latin \"proletarii\", those who contribute only their children to the state): factory workers, mine workers, urban day laborers, people who owned nothing but their labor power and had to sell it for wages. The proletariat was created by <span class=\"kt\">enclosure</span> (which drove peasants off common land), by the destruction of artisan crafts (by factory competition), and by immigration to industrial cities. By mid-century, the urban proletariat was the largest class in industrialized countries."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Class consciousness</span> and conflict: Marx argued that the proletariat's shared conditions of exploitation would eventually produce class consciousness, the recognition that workers share common interests against the owning class. Whether or not Marx was right about the inevitability of revolution, <span class=\"kt\">class conflict</span> was real: strikes, union organizing, political reform movements, and revolutionary uprisings (Paris Commune, 1871) defined 19th-century industrial politics."
+            "html": "Why would a government do that? Because it was afraid. By the early 1800s, the countries with factories, steam power, and new weapons were becoming the strongest in the world. A ruler watching them could see that a country without industry could be beaten in war, or forced to sign whatever it was told to sign. Two of the clearest cases of a government that decided to build industry itself are Egypt under Muhammad Ali and Japan in the Meiji era."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p>Explaining WHY industrialization created these two classes requires tracing specific mechanisms. <strong>The bourgeoisie emerged because industrial capital (factories, machines) could generate wealth without land, anyone who could invest in machines could become wealthy. The proletariat emerged because enclosure, artisan displacement, and urban migration created a large population with no property and no choice but to sell labor for wages.</strong> Both classes were PRODUCTS of industrialization, not pre-existing groups.</p>"
+          "raw": "<p><strong>Build a chain for each case.</strong> The question for today asks for causes and effects. For each country, find four links: the <em>threat</em> the government feared, the <em>decision</em> it made, the <em>strategy</em> it used, and the <em>result</em>. Start with the threat.</p>"
+        }
+      },
+      {
+        "number": "2",
+        "label": "Egypt, Part 1",
+        "heading": "A Governor Who Wanted Power of His Own",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "In 1798 a French army under Napoleon invaded Egypt and defeated its Mamluk rulers. The French left in 1801. Among the Ottoman troops sent to take Egypt back was Muhammad Ali, an officer from an Albanian family. In 1805 the Ottomans named him governor of Egypt, and by 1811 he had destroyed his rivals and ruled alone."
+          },
+          {
+            "type": "p",
+            "html": "Egypt was a province of the Ottoman Empire, and Muhammad Ali was the sultan's governor. But he wanted Egypt strong enough that he, and his family after him, could hold it, even against the sultan. Strength meant an army, and an army needed guns, uniforms, and ships."
+          },
+          {
+            "type": "p",
+            "html": "So his government took control of Egypt's farming. It told peasants what to grow, bought their crops at low prices, and sold them abroad at higher ones. When only one buyer or seller is allowed, that is a <span class=\"kt\">monopoly</span>. A new crop, long-staple cotton, first grown for sale in 1820, earned a great deal of money."
+          },
+          {
+            "type": "p",
+            "html": "With that money, from the late 1810s, the government built factories: cotton mills, and works for weapons, sugar, and other goods, with machines bought in Europe and European experts to run them. By the early 1830s about 30 cotton mills employed about 30,000 workers, many of them making cloth and uniforms for the army. The workers did not choose these jobs. They were drafted, the way Egyptian peasants had long been made to dig canals. From 1822 peasants were drafted into the army, too. Forcing people to serve is called <span class=\"kt\">conscription</span>, and by the early 1830s the army had about 130,000 soldiers. To protect the new mills, Muhammad Ali kept cheap British cloth out of Egypt."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Follow the money.</strong> A strategy has to be paid for. In Egypt the chain ran: the state buys crops cheaply, sells cotton abroad, and spends the money on factories and an army. Who paid in the end? The peasants, with their crops and their labor.</p>"
         }
       },
       {
         "number": "3",
-        "label": "Key Concept",
-        "heading": "Competing Ideologies: Liberalism, Conservatism, Socialism, and Marxism",
+        "label": "Egypt, Part 2",
+        "heading": "It Worked, Then It Stopped",
         "blocks": [
           {
             "type": "p",
-            "html": "<span class=\"kt\">Liberalism</span> (Adam Smith, John Stuart Mill): freedom of the individual from government interference; free market economics; representative government based on property rights; individual civil liberties. Liberals believed that the market, left to itself, would produce wealth and freedom. They were generally opposed to government regulation of industry. Late 19th-century \"New Liberals\" accepted some social reform (public education, public health) as compatible with individual liberty."
+            "html": "For a while the strategy worked. In 1831 Muhammad Ali's army, led by his son Ibrahim, invaded Syria and beat the sultan's own armies more than once."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Conservatism</span> (Edmund Burke, Metternich): respect for tradition, established institutions (monarchy, Church, aristocracy), and gradual rather than radical change. Conservatives were alarmed by the French Revolution and skeptical of Enlightenment rationalism. In the industrial age, some conservatives (like Disraeli's \"Tory Democracy\" in Britain) accepted reform as a way to prevent revolution, giving the working class enough improvement to keep them loyal to the existing order."
+            "html": "Then it stopped. Britain, Austria, Russia, and Prussia did not want a strong Egypt breaking the Ottoman Empire apart. In 1840 they sided with the sultan, and British warships and Ottoman troops drove Ibrahim out of Syria. In 1841 the sultan made Muhammad Ali's family the governors of Egypt for good, passed from father to son. But Egypt had to give up its conquests except Sudan, and its army was cut to 18,000 men in peacetime. Egypt also had to accept a trade treaty that Britain had signed with the Ottoman sultan in 1838. It ended Muhammad Ali's monopolies and opened Egypt to cheap foreign goods."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Utopian Socialism</span> (Robert Owen, Charles Fourier, Saint-Simon): early socialists believed that industrial society should be reorganized on cooperative rather than competitive principles. Robert Owen built model factory communities (New Lanark, Scotland) with decent housing, schools, and regulated working hours; he believed that improving workers' conditions would increase productivity and that a model community could transform society through example. Utopian socialists rejected private ownership of production but believed in peaceful, gradual transformation."
+            "html": "The factories had problems of their own, too. Egypt had almost no coal, so many machines were turned by animals instead of steam engines. The drafted workers resisted, and the managers had little experience. Within about a decade, most of the new factories had failed. Historians still argue about which cause mattered most, and about how much the factories achieved while they lasted."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Marxism</span> (Karl Marx and Friedrich Engels): Marx's <em>Communist Manifesto</em> (1848) and <em>Das Kapital</em> (1867) provided the most systematic critique of industrial capitalism. Key claims: history is driven by <span class=\"kt\">class conflict</span> (historical materialism); the bourgeoisie exploits the proletariat by extracting surplus value from their labor; capitalism contains inherent contradictions that will produce economic crises; the proletariat will eventually become class-conscious and overthrow the bourgeoisie through revolution; a communist society without classes or private property will follow. By 1900, Marxist political parties (Social Democrats) were major forces in German, French, and Russian politics."
+            "html": "Egypt went on growing more and more cotton, almost all of it sold abroad, much of it to the mills of Britain. What that led to is Unit 6."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Comparison",
-          "raw": "<p>Comparing liberalism and socialism as responses to industrialization reveals different diagnoses of the same problem. <strong>Liberals diagnosed the problem as TOO MUCH government interference (restrictions on trade, monopolies, aristocratic privilege), their prescription was less government and more market. Socialists diagnosed the problem as the WRONG KIND of property relations (private ownership of production), their prescription was collective ownership of the means of production.</strong> Both were responding to the same industrial conditions; they disagreed about the cause of inequality and therefore about the remedy.</p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>More than one cause.</strong> Some causes of the result came from outside Egypt (the powers of 1840 and the 1838 treaty) and some from inside (no coal, forced workers, new managers). A strong answer names at least one of each, and does not pretend one cause explains everything.</p>"
         }
       },
       {
         "number": "4",
-        "label": "Key Concept",
-        "heading": "Government Response and the Women's Question",
+        "label": "Japan, Part 1",
+        "heading": "Ships That Changed a Government",
         "blocks": [
           {
             "type": "p",
-            "html": "<span class=\"kt\">Political reform</span>: British <span class=\"kt\">Reform Acts</span> of 1832, 1867, and 1884 progressively expanded voting rights (from 400,000 voters to ~5 million between 1832 and 1884). <span class=\"kt\">Chartism</span> (1838–1857) demanded universal male suffrage, secret ballot, annual parliaments, and payment for MPs, all eventually enacted. By 1900, universal male suffrage existed in Germany (1871), France (1875), and the United States (formally, with severe suppression of Black voters in the South). The pressure for political reform came primarily from working-class and middle-class movements, not from voluntary elite generosity."
+            "html": "In 1853 an American naval officer, Commodore Matthew Perry, sailed warships into Edo Bay, near today's Tokyo, and demanded that Japan open its ports to trade. Japan had no navy that could stop him. Treaties in 1854 and 1858 opened Japanese ports to Americans and Europeans, let foreigners accused of crimes in Japan be tried in their own countries' courts, and took away Japan's control over its own trade. A treaty forced on a weaker country, giving the stronger side rights it does not give back, is an <span class=\"kt\">unequal treaty</span>. Some samurai blamed the shogun, the military ruler who governed Japan in the emperor's name."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Labor legislation</span>: <span class=\"kt\">Factory Acts</span> (1833, 1844, 1847) restricted child labor, limited women's and children's hours, and established factory inspectors. Public Health Acts (1848, 1875) created sanitation standards for industrial cities. The Ten Hours Act (1847) limited the working day for women and children to 10 hours, which effectively limited men's hours too since factories couldn't run with only half the workforce."
+            "html": "In 1868 a group of young samurai overthrew the shogun and governed in the name of the fifteen-year-old emperor, Meiji. This is the <span class=\"kt\">Meiji Restoration</span>. In April 1868 the new government made a promise, the Charter Oath: \"Knowledge shall be sought throughout the world so as to strengthen the foundations of imperial rule.\" Its slogan was \"Rich country, strong army.\""
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Bismarckian social insurance</span>: Germany under <span class=\"kt\">Bismarck</span> introduced the world's first modern social insurance system: health insurance (1883), accident insurance (1884), old-age and disability insurance (1889). Motivation was explicitly conservative, Bismarck wanted to reduce support for socialist parties by making the state the source of social welfare rather than socialist unions. This model became the template for the 20th-century welfare state."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Women and industrialization</span>: Women and children entered factory work in large numbers, initially because they accepted lower wages. Women's factory work had contradictory effects: it gave women economic independence (their own wages) while subjecting them to exploitation and dangerous conditions. <span class=\"kt\">Separate spheres ideology</span> (the belief that women's proper role was domestic) coexisted uncomfortably with the reality of working-class women laboring in factories. The <span class=\"kt\">women's suffrage</span> movement (beginning at Seneca Falls, 1848, in the US; building momentum in Britain through the 1860s–1900s) drew on the contradiction between universal rights claims and women's political exclusion, the same contradiction Mary Wollstonecraft had identified in 1792."
+            "html": "The Meiji leaders changed Japan itself first. In 1871 they abolished the lands of the old lords and made one central state. The samurai lost their special rights, and men of every class were drafted into a national army. A national school system began in 1872. A new land tax, paid in money instead of rice, gave the government money to spend. From 1871 to 1873 a group of leaders, the Iwakura Mission, toured the United States and Europe to study how they worked."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Did governments respond adequately to the social problems of industrialization in the 19th century? <strong>A strong argument requires defining \"adequate\", adequate by whose standard, and compared to what alternative? Defenders of government response can point to real achievements: child labor restricted, hours limited, public health improved, voting rights expanded. Critics can point to the slow pace, the inadequacy of early reforms, and the suffering that could have been prevented.</strong> A nuanced argument acknowledges both and explains which outweighs the other.</p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Outside pressure, inside reform.</strong> The College Board's Key Concept is itself a chain: U.S. and European influence led to reform inside Japan, and the reform supported industry. Name the outside cause (Perry, the unequal treaties) and one reform it led to.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "Japan, Part 2",
+        "heading": "Build It, Sell It, Grow Strong",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Then the state built industry. The government built Japan's first railway, from Tokyo to Yokohama, which opened in 1872 with British engineers. In the same year it opened the Tomioka Silk Mill, with French machines and a French engineer, Paul Brunat, to teach Japanese workers, mostly young women, to reel silk by machine. It built telegraph lines, shipyards, mines, and factories for weapons and for goods such as cement, glass, and cloth. Farmers paid for much of this through the land tax. Some samurai rebelled against losing their place, and in 1877 the new army of drafted commoners crushed the last great revolt."
+          },
+          {
+            "type": "p",
+            "html": "Running so many businesses cost more than the government could afford. In 1880 it decided to sell most of them to private investors. Business families such as Mitsui and Mitsubishi bought them and grew into huge business groups called <span class=\"kt\">zaibatsu</span>. Private companies such as the Osaka Spinning Company (Topic 5.4) built more. The state had started the industry; private business carried it on."
+          },
+          {
+            "type": "p",
+            "html": "Japan grew strong. In 1894 Britain agreed to end its unequal treaty with Japan, a change that took effect in 1899, and other countries followed. In 1894 and 1895 Japan fought China over Korea and won. In the Treaty of Shimonoseki, China gave up its claim over Korea, gave the island of Taiwan to Japan, and agreed to pay 200 million taels of silver. Japan, forced to open its ports forty years before, was now a <span class=\"kt\">regional power</span>, a state strong enough to win wars and gain land in its own part of the world, with a colony of its own. What empires did with that power is Unit 6."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>The last link.</strong> The Key Concept ends with Japan's \"growing regional power.\" Do not stop your chain at the factories: say what the industry and reforms led to, with one piece of evidence from 1894 or 1895.</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "The Pattern",
+        "heading": "Two Chains, Side by Side",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Put the two cases side by side. Both governments acted because they feared stronger industrial powers. In both, the state, not private owners, paid for the first factories. Both bought foreign machines, hired foreign experts, and sent people abroad to learn. In both, farmers paid much of the bill. And both wanted the same result: a state strong enough to defend itself, with an army to match. When the same links show up in different cases, that is a <span class=\"kt\">pattern</span>."
+          },
+          {
+            "type": "p",
+            "html": "The difference is what happened next. Japan's industry lasted and grew; Egypt's mostly closed. Historians point to several reasons. Japan was an independent country, while Egypt was a province of the Ottoman Empire that European powers forced to cut its army and open its markets. Japan reformed its whole society, while Egypt's factories were one ruler's project, run with drafted workers. Japan had coal of its own, and Egypt had almost none. And Japan's government handed its industries to private companies that kept them running. Japan also had to accept low taxes on foreign goods under its unequal treaties, so outside pressure alone does not explain the difference."
+          },
+          {
+            "type": "p",
+            "html": "So, what caused these economic strategies, and what were their effects? Fear of stronger industrial powers made a small number of governments build industry themselves. Muhammad Ali's Egypt built cotton mills and weapons works to supply an army; it won wars for a while, but European pressure, missing coal, and forced labor closed most of the factories. In Japan, Perry's warships and the unequal treaties led to the Meiji reforms; the state built railways and mills and then sold them to private companies, and the industry it started helped make Japan strong enough to defeat China, take Taiwan, and end the unequal treaties."
+          },
+          {
+            "type": "p",
+            "html": "All this industry made goods, and goods had to be paid for, traded, and financed. Who owned the factories, and how did money move around the industrial world? That is Topic 5.7."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Making Connections",
+          "raw": "<p><strong>Three myths to drop.</strong> \"Japan just copied the West\": Japan's leaders chose what to borrow and from whom, and their aim, in their own words, was to \"strengthen the foundations of imperial rule.\" \"Muhammad Ali was building an Egyptian nation\": he was an Ottoman governor from an Albanian family whose court spoke Turkish, and he built for his own and his family's power. \"One cause explains Egypt's result\": historians weigh European pressure, missing coal, drafted workers, and new managers, and still disagree about how much each mattered.</p>"
         }
       }
     ],
-    "takeaway": "Industrialization created two new defining classes: the <strong>bourgeoisie</strong> (factory owners, merchants, professionals, those who owned capital) and the <strong>proletariat</strong> (factory workers, miners, urban laborers, those who owned only their labor). Four competing ideologies emerged to explain and address this transformation: <strong>liberalism</strong> (free market, individual rights, less government) diagnosed the problem as too much restriction; <strong>conservatism</strong> (tradition, order, gradual change) warned against rapid transformation; <strong>utopian socialism</strong> (Robert Owen) proposed cooperative communities as alternatives; and <strong>Marxism</strong> (<em>Communist Manifesto</em>, 1848) argued that class conflict would inevitably produce revolution and a classless society. Governments responded slowly but eventually: the British Reform Acts expanded voting rights; Factory Acts restricted child labor and limited hours; Bismarck's Germany created the first social insurance system. Women entered industrial work in large numbers, complicating \"separate spheres\" ideology and fueling the women's suffrage movement. By 1900, the social question, who benefits from industrial wealth?, remained the central political question of the century.",
+    "takeaway": "In Britain and the United States, private owners built the first factories, but a small number of governments built industry themselves because they feared stronger industrial powers. In Egypt, Muhammad Ali, an Ottoman governor who wanted to hold power for his family, took control of farming and cotton and used the money to build about 30 cotton mills and weapons works for an army of about 130,000 drafted peasants. The army won wars, but in 1840 and 1841 European powers forced Egypt out of Syria and cut its army to 18,000, the 1838 trade treaty ended its monopolies, and with no coal and forced workers most factories failed within about a decade. In Japan, Perry's warships in 1853 and the unequal treaties led to the Meiji Restoration of 1868. The new government reformed Japan, built railways, the Tomioka Silk Mill, shipyards, and mines, and from 1880 sold them to private companies such as Mitsui and Mitsubishi. In 1894 Britain agreed to end its unequal treaty, and Japan won a war with China in 1894 and 1895 and took Taiwan: it had become a regional power. The state built the factories. Japan's lasted. Egypt's mostly closed.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
-        "num": "1",
+        "num": "01",
         "skill": "Causation",
-        "text": "Explain why industrialization created two new social classes, the bourgeoisie and the proletariat. For each class, identify the specific industrial conditions that produced it: what specific changes caused the bourgeoisie to emerge as a class? What specific changes created the proletariat? Be concrete about the mechanisms.",
-        "placeholder": "For each class, identify the specific mechanisms that caused it to emerge..."
+        "text": "Using Sections 2 and 3, explain ONE reason Muhammad Ali's government built factories and ONE effect of that decision. Use a detail from the reading for each.",
+        "placeholder": "Muhammad Ali built factories because... One effect was... For example..."
       },
       {
-        "num": "2",
-        "skill": "Comparison",
-        "text": "Compare liberalism and socialism as ideological responses to industrialization. Identify what each ideology diagnoses as the fundamental problem of industrial society, and what each prescribes as the remedy. Then explain: what does the difference in diagnosis reveal about what each ideology values most, individual freedom or collective welfare?",
-        "placeholder": "Identify each ideology's diagnosis, remedy, and underlying value..."
+        "num": "02",
+        "skill": "Causation",
+        "text": "Using Sections 4 and 5, explain how pressure from the United States and Europe led to a reform in Japan, and how that reform helped Japan build industry or grow stronger.",
+        "placeholder": "Pressure from... led Japan's leaders to... This helped because..."
       },
       {
-        "num": "3",
-        "skill": "Argumentation",
-        "text": "Write a one-sentence claim answering this question: Did 19th-century governments respond adequately to the social problems created by industrialization? Then provide two specific pieces of evidence, one that supports your claim and one that complicates it. End with a sentence explaining why, on balance, your claim is correct.",
-        "placeholder": "State your claim, provide supporting and complicating evidence, then explain your judgment..."
+        "num": "03",
+        "skill": "Making Connections",
+        "text": "Using Section 6, name ONE thing Egypt and Japan had in common (the pattern) and ONE difference in what happened next. Give a detail from the reading for each.",
+        "placeholder": "Both Egypt and Japan... But Japan... while Egypt..."
       }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 5.6, Industrialization: Government and Society",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true
   },
   "5.7": {
     "topicKey": "5.7",
