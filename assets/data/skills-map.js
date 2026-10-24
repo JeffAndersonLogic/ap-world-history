@@ -7969,7 +7969,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
             "I can explain why a small number of governments built industry themselves, and the causes and effects of Muhammad Ali's strategy in Egypt: what his government built, how it paid for it, and why most of the factories closed."
           ],
           "successCriteria": [
-            "I can explain one reason Muhammad Ali's government built factories (such as his fear of stronger armies, or his aim to hold Egypt for his family), describe what it built and how it paid for it (such as about 30 cotton mills, paid for by the state's control of cotton), and explain two causes of the result, one from outside Egypt (such as the settlement of 1840 and 1841) and one from inside (such as almost no coal, or drafted workers)."
+            "I can explain one reason Muhammad Ali's government built factories (such as wanting an army like the European one that beat Egypt's rulers in 1798, or his aim to hold Egypt for his family), describe what it built and how it paid for it (such as about 30 cotton mills, paid for by the state's control of cotton), and explain two causes of the result, one from outside Egypt (such as the European powers siding with the sultan in 1840, or the army cut to 18,000 in 1841) and one from inside (such as almost no coal, or drafted workers)."
           ]
         },
         "checkpoint-two-response": {
@@ -8034,7 +8034,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
             "I can explain how pressure from the United States and Europe led to reforms in Japan that supported industry and made Japan a regional power, and identify a pattern Japan shares with Egypt and a difference in their results."
           ],
           "successCriteria": [
-            "I can trace Japan's chain from Perry's warships and the unequal treaties to one Meiji reform, to the industry the state built (such as the 1872 railway or the Tomioka Silk Mill), to evidence of regional power (such as the 1895 victory over China and Taiwan); and I can name one link Japan shares with Egypt (the pattern) and one difference in what happened next."
+            "I can trace Japan's chain from Perry's warships and the unequal treaties to one Meiji reform, to the industry the state built (such as the 1872 railway or the Tomioka Silk Mill), to what happened to that industry after 1880, to evidence of regional power (such as the 1895 victory over China and Taiwan); and I can name one link Japan shares with Egypt (the pattern) and one difference in what happened next."
           ]
         },
         "evidence-response": {

@@ -67,7 +67,7 @@ module.exports = {
       name: 'Why a State Builds Factories',
       navLabel: 'Why a state builds',
       dates: 'The early 1800s &nbsp;·&nbsp; The exception',
-      thesis: `Most early factories were built by private owners. A small number of governments built industry themselves, because they feared stronger industrial powers.`,
+      thesis: `Most early factories were built by private owners. A small number of governments built industry themselves, because they feared stronger, better-armed powers.`,
       parts: [
         {
           heading: 'The rule, and the exception',
@@ -107,8 +107,8 @@ module.exports = {
         {
           heading: 'A governor who wanted power of his own',
           blocks: [
-            { p: `In <span class="num">1798</span> a French army under Napoleon invaded Egypt and defeated its Mamluk rulers. The French left in <span class="num">1801</span>. Among the Ottoman troops sent to take Egypt back was Muhammad Ali, an officer from an Albanian family. In <span class="num">1805</span> the Ottomans named him governor of Egypt, and by <span class="num">1811</span>, after his men killed the Mamluk leaders in the Cairo Citadel, he ruled alone.` },
-            { p: `Egypt was a province of the Ottoman Empire, and Muhammad Ali was the sultan's governor. He wanted Egypt strong enough that he, and his family after him, could hold it, even against the sultan. Strength meant an army, and an army needed guns, uniforms and ships.` }
+            { p: `In <span class="num">1798</span> a French army under Napoleon invaded Egypt and easily defeated its rulers, the Mamluks, a class of soldier-lords. The French left in <span class="num">1801</span>. Among the Ottoman troops sent to take Egypt back was Muhammad Ali, an officer from an Albanian family. In <span class="num">1805</span> the Ottomans named him governor of Egypt, and by <span class="num">1811</span>, after his men killed the Mamluk leaders in the Cairo Citadel, he ruled alone.` },
+            { p: `Egypt was a province of the Ottoman Empire, and Muhammad Ali was the sultan's governor. Napoleon's victory had shown what a modern European army could do. Muhammad Ali wanted Egypt strong enough that he, and his family after him, could hold it, even against the sultan. Strength meant an army, and an army needed guns, uniforms and ships.` }
           ]
         },
         {
@@ -161,7 +161,7 @@ module.exports = {
         {
           heading: 'Then it stopped',
           blocks: [
-            { p: `Britain, Austria, Russia and Prussia did not want a strong Egypt breaking the Ottoman Empire apart. In <span class="num">1840</span> they sided with the sultan, and British warships and Ottoman troops drove Ibrahim out of Syria. In <span class="num">1841</span> the sultan made Muhammad Ali's family the governors of Egypt for good, passed from father to son, but Egypt had to give up its conquests except Sudan. The sultan's decree said: "In time of peace, 18,000 men will suffice." Egypt also had to accept a trade treaty that Britain had signed with the Ottoman sultan in <span class="num">1838</span>, which ended Muhammad Ali's monopolies and opened Egypt to cheap foreign goods.` },
+            { p: `Britain, Austria, Russia and Prussia did not want a strong Egypt breaking the Ottoman Empire apart. In <span class="num">1840</span> they sided with the sultan, and British warships and Ottoman troops drove Ibrahim out of Syria. In <span class="num">1841</span> the sultan made the governorship of Egypt <span class="kt">hereditary</span> in Muhammad Ali's family, passed from father to son, but Egypt had to give up its conquests except Sudan. The sultan's decree said: "In time of peace, 18,000 men will suffice." Egypt also had to accept a trade treaty that Britain had signed with the Ottoman sultan in <span class="num">1838</span>, which ended Muhammad Ali's monopolies and opened Egypt to cheap foreign goods.` },
             { p: `The factories had problems of their own, too. Egypt had almost no coal, so many machines were turned by animals instead of steam engines. The drafted workers resisted the work, and the managers had little experience. Within about a decade, most of the new factories had failed. Egypt went on growing more and more cotton, almost all of it sold abroad, much of it to the mills of Britain. What that led to is Unit 6.` },
             { note: {
               kind: 'howknow',
@@ -249,7 +249,7 @@ module.exports = {
         {
           heading: 'A regional power',
           blocks: [
-            { p: `In <span class="num">1894</span> Britain agreed to end its unequal treaty with Japan, a change that took effect in <span class="num">1899</span>, and other countries followed. In 1894 and 1895 Japan fought China over Korea and won. In the Treaty of Shimonoseki, China gave up its claim over Korea, gave the island of Taiwan to Japan, and agreed to pay 200 million taels of silver. Within a week, Russia, Germany and France forced Japan to give back one more piece of land it had won, which angered Japan's leaders. Japan, forced to open its ports forty years before, was now a <span class="kt">regional power</span>, with a colony of its own. What empires did with that power is Unit 6.` },
+            { p: `In <span class="num">1894</span> Britain agreed to end its unequal treaty with Japan, a change that took effect in <span class="num">1899</span>, and other countries followed. In 1894 and 1895 Japan fought China over Korea and won. In the Treaty of Shimonoseki, China gave up its claim over Korea, gave the island of Taiwan to Japan, and agreed to pay an <span class="kt">indemnity</span> of 200 million taels of silver (a tael is a Chinese measure of silver). Within a week, Russia, Germany and France forced Japan to give back one more piece of land it had won, which angered Japan's leaders. Japan, forced to open its ports forty years before, was now a <span class="kt">regional power</span>, with a colony of its own. What empires did with that power is Unit 6.` },
             { note: {
               kind: 'howknow',
               label: 'How we know: the treaty\'s own words',
@@ -289,7 +289,7 @@ module.exports = {
       {
         category: 'Making Connections',
         title: 'The pattern',
-        body: `Both governments feared stronger industrial powers; in both, the state paid for the first factories; both bought foreign machines and hired foreign experts, and sent people abroad to learn; in both, farmers paid much of the bill; both aimed at a strong army. Write it with the word both.`
+        body: `Both governments feared stronger, better-armed powers (for Egypt, European armies like Napoleon's and the sultan; for Japan, Western warships); in both, the state paid for the first factories; both bought foreign machines and hired foreign experts, and sent people abroad to learn; in both, farmers paid much of the bill; both aimed at a strong army. Write it with the word both.`
       },
       {
         category: 'Making Connections',

@@ -41,7 +41,7 @@ Key Concepts, in the CED's order:
   asks for "the causes and effects of economic strategies," which is a causal question in its own
   words, and the second Key Concept is a chain by itself: outside influence "led to" internal reform,
   which "supported" industrialization and "led to" regional power. The answer this story builds is a
-  **chain of causes and effects for each state: a threat from stronger industrial powers made a few
+  **chain of causes and effects for each state: a threat from stronger, better-armed powers made a few
   governments decide not to wait for industry; they built it themselves, with foreign machines and
   experts, paid for by their farmers, to make the state strong; in Japan the strategy lasted and made
   Japan a regional power, and in Egypt most of the factories closed within about twenty years.**
@@ -227,7 +227,7 @@ one more piece of land it had won, which angered Japan's leaders. Japan, which h
 ports forty years before, now had a colony of its own. (What empires did with that power is Unit 6.)
 
 **The pattern, and the difference.** Put the two cases side by side. Both governments acted because
-they feared stronger industrial powers. In both, the state, not private owners, paid for the first
+they feared stronger, better-armed powers. In both, the state, not private owners, paid for the first
 factories. Both bought foreign machines, hired foreign experts and sent people abroad to learn. In
 both, farmers paid much of the bill. And both wanted the same result: a state strong enough to defend
 itself, with an army to match. That is the pattern. The difference is what happened next. Japan's
@@ -259,7 +259,7 @@ financed. Who owned the factories, and how did money move around the industrial 
 
 ## 4. The spine
 
-**Afraid of stronger industrial powers, a few governments decided not to wait for industry and built
+**Afraid of stronger, better-armed powers, a few governments decided not to wait for industry and built
 it themselves, to make their states strong. Muhammad Ali's Egypt built factories for an army, and most
 of them closed within about twenty years; Meiji Japan reformed itself, built railways and mills, sold
 them to private companies, and became a regional power.**
@@ -270,7 +270,7 @@ industrial powers) and the different effects, because the reasoning move is Caus
 objective asks for causes and effects.
 
 "A few governments ... built it themselves" is KC-5.1.V.C; "Meiji Japan reformed itself ... became a
-regional power" is KC-5.2.II.A; "afraid of stronger industrial powers ... to make their states strong"
+regional power" is KC-5.2.II.A; "afraid of stronger, better-armed powers ... to make their states strong"
 and "most of them closed" are the objective's causes and effects.
 
 Shorter for the wall: **The state built the factories. Japan's lasted. Egypt's mostly closed.**

@@ -87,7 +87,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "story-scene",
       "eyebrow": "Egypt · The Ruler",
       "title": "A governor who wanted power of his own.",
-      "footer": "The cause: a ruler who feared stronger armies and wanted power for his family.",
+      "footer": "The cause: a ruler who wanted an army like Napoleon's, strong enough to keep Egypt for his family.",
       "kc": "KC-5.1.V.C",
       "template": {
         "steps": [
@@ -106,7 +106,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "Aim",
             "key": true,
-            "text": "Hold Egypt for **his family**, even against the sultan. That needs an **army**."
+            "text": "Hold Egypt for **his family**, even against the sultan. That needs an **army** like Napoleon's."
           }
         ],
         "visual": {
@@ -153,7 +153,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           1820,
           1850
         ],
-        "tick": 5,
+        "tick": 10,
         "events": [
           {
             "year": 1822,
@@ -211,6 +211,16 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
+      "kind": "action",
+      "eyebrow": "Module 06 · Checkpoint 1",
+      "title": "Why did Muhammad Ali build factories, and what happened to them?",
+      "subtitle": "On your own: Checkpoint 1 is the diagnostic, so no coach.",
+      "action": {
+        "label": "Open Student Lesson",
+        "url": "lesson-5-6-industrialization-government-and-society.html#modules"
+      }
+    },
+    {
       "kind": "sentence-frame",
       "eyebrow": "Making Connections 5.A · Model",
       "title": "Find the pattern, then the difference.",
@@ -250,8 +260,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "x": 0.08,
             "y": 0.72,
-            "label": "The coast",
-            "text": "Uraga, near the mouth of Edo Bay."
+            "label": "The map",
+            "text": "Part of the coast the lords were ordered to guard."
           }
         ],
         "visual": {
@@ -395,7 +405,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "split-venn",
       "eyebrow": "Making Connections 5.A · The Pattern",
       "title": "Two states, one pattern.",
-      "footer": "When the same links show up in different cases, that is a pattern.",
+      "footer": "Both aimed at the same goal: a state strong enough to defend itself, with an army to match.",
       "kc": "KC-5.1.V.C",
       "template": {
         "left": {
@@ -415,11 +425,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
           ]
         },
         "both": [
-          "Feared stronger industrial powers",
+          "Feared stronger, better-armed powers",
           "The state paid for the first factories",
           "Foreign machines and experts",
-          "Farmers paid much of the bill",
-          "The goal: a strong army"
+          "Farmers paid much of the bill"
         ]
       }
     },
@@ -439,7 +448,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "Status",
             "left": "A province of the Ottoman Empire; Europe cut its army",
-            "right": "An independent country; never defeated by Europe"
+            "right": "An independent country; no European power took its land or cut its army"
           },
           {
             "label": "Reform",
@@ -449,7 +458,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "Coal",
             "left": "Almost none: many machines turned by animals",
-            "right": "Coal of its own, such as the Miike mine"
+            "right": "Coal of its own"
           },
           {
             "label": "After the state",
@@ -488,7 +497,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "split-scenes",
       "eyebrow": "The Whole Topic",
       "title": "The state built the factories. Japan's lasted. Egypt's mostly closed.",
-      "footer": "Same strategy, different results: name the pattern, then the difference.",
+      "footer": "With your notes closed, redraw both chains, then name the pattern and the difference.",
       "template": {
         "left": {
           "name": "Egypt, Muhammad Ali",
@@ -522,7 +531,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         },
         "bothLabel": "The pattern",
         "both": [
-          "Fear of stronger industrial powers",
+          "Fear of stronger, better-armed powers",
           "The state builds industry to make itself strong"
         ]
       }
@@ -533,9 +542,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Say it in one sentence.",
       "kc": "Unit 5: Learning Objective G",
       "template": {
-        "frame": "Afraid of stronger ___ powers, Muhammad Ali's Egypt and Meiji ___ built industry with state money. Egypt's mills supplied an ___ until Europe and missing ___ closed most of them; Japan ___ itself, sold its industries to private companies, and became a ___ power.",
+        "frame": "Afraid of stronger ___, Muhammad Ali's Egypt and Meiji ___ built industry with state money. Egypt's mills supplied an ___ until Europe and missing ___ closed most of them; Japan ___ itself, sold its industries to private companies, and became a ___ power.",
         "words": [
-          "industrial",
+          "powers",
           "Japan",
           "army",
           "coal",
@@ -543,16 +552,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "regional"
         ],
         "prompt": "Fill it in from memory, then add one example."
-      }
-    },
-    {
-      "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1",
-      "title": "Why did Muhammad Ali build factories, and what happened to them?",
-      "subtitle": "On your own: Checkpoint 1 is the diagnostic, so no coach.",
-      "action": {
-        "label": "Open Student Lesson",
-        "url": "lesson-5-6-industrialization-government-and-society.html#modules"
       }
     },
     {
@@ -569,7 +568,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "action",
       "eyebrow": "Module 10 · Checkpoint 2",
       "title": "How did outside pressure lead to Japan's industry and power, and what pattern does Japan share with Egypt?",
-      "subtitle": "Trace Japan's chain from Perry to regional power with two pieces of evidence. Then name one link Japan shares with Egypt and one difference in the results. If it is not finished in class, it is homework.",
+      "subtitle": "Trace Japan's chain from Perry to regional power, with evidence for each link, including what happened to the state's businesses after 1880. Then name one link Japan shares with Egypt and one difference in the results. If it is not finished in class, it is homework.",
       "action": {
         "label": "Open Student Lesson",
         "url": "lesson-5-6-industrialization-government-and-society.html#modules"

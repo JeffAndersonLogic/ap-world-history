@@ -38,7 +38,7 @@
       { label: "Egypt and Istanbul", detail: "Muhammad Ali governed Egypt from 1805 to 1848 for the Ottoman sultan, whose capital was Istanbul. His government built cotton mills and an army." },
       { label: "Arrow 1: Egypt into Syria, 1831", detail: "Muhammad Ali's army invaded Syria in 1831. In 1840 British warships and Ottoman troops drove it out, and in 1841 Egypt's army was cut to 18,000 men in peacetime." },
       { label: "Japan", detail: "Commodore Perry's warships came to Edo Bay, near Tokyo, in 1853. From 1868 the Meiji government reformed Japan and built railways and mills." },
-      { label: "Arrow 2: Japan to Taiwan, 1895", detail: "Japan defeated China in a war over Korea in 1894 and 1895. China gave up its claim over Korea and gave Taiwan to Japan." },
+      { label: "Arrow 2: Japan to Taiwan, 1895", detail: "Japan defeated China in a war over Korea in 1894 and 1895. China gave up its claim over Korea and gave Taiwan to Japan, which kept it as a colony." },
       { label: "Reading the map", detail: "Each arrow joins two places; it is not an exact route. The map shows only the places this topic names, and the shaded regions are approximate." }
     ]
   };
@@ -64,7 +64,7 @@
 
   lesson.beInTheRoom = {
     url: '../beintheroom/unit-5/the-factory-sale.html',
-    desc: "Tokyo, 1880. On a government council, decide whether Japan should keep running the factories, mines, and shipyards the state built, or sell them to private companies, with Egypt's mills as a warning."
+    desc: "Tokyo, 1880. On a government council, decide whether Japan should keep running the factories, mines, and shipyards the state built, or sell them to private companies, with Egypt's mills as a comparison."
   };
 
   lesson.skillBuilder = {
@@ -162,6 +162,7 @@
     },
     {
       title: "The Sultan's Decree of 1841",
+      alt: "A text card with two lines from the 1841 decree. First: I grant unto thee the Government of Egypt, together with the additional privilege of hereditary succession. Second: In time of peace, 18,000 men will suffice for the internal service of the province of Egypt; it shall not be allowed to increase their numbers.",
       label: "Ottoman decree granting Muhammad Ali Egypt · 1841 · English text",
       sourceText: ["\"I grant unto thee the Government of Egypt ... together with the additional privilege of hereditary succession.\"", "\"In time of peace, 18,000 men will suffice for the internal service of the province of Egypt; it shall not be allowed to increase their numbers.\""],
       caption: "Two lines from the English text of the decree in which the Ottoman sultan, in 1841, made the governorship of Egypt hereditary in Muhammad Ali's family and limited its army. Egypt's army had been about 130,000 strong in the early 1830s.",

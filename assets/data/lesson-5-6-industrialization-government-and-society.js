@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 5: Revolutions",
     topic: "Topic 5.6",
     title: "Industrialization: Government’s Role from 1750 to 1900",
-    subtitle: "Afraid of stronger industrial powers, a few governments decided not to wait for industry and built it themselves, to make their states strong. Muhammad Ali’s Egypt built factories for an army, and most of them closed within about twenty years; Meiji Japan reformed itself, built railways and mills, sold them to private companies, and became a regional power.",
+    subtitle: "Afraid of stronger, better-armed powers, a few governments decided not to wait for industry and built it themselves, to make their states strong. Muhammad Ali’s Egypt built factories for an army, and most of them closed within about twenty years; Meiji Japan reformed itself, built railways and mills, sold them to private companies, and became a regional power.",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -50,12 +50,12 @@ window.BEHISTORICAL_LESSON = {
 
   successCriteria: [
     {
-      criteria: "I can explain one reason Muhammad Ali's government built factories (such as his fear of stronger armies, or his aim to hold Egypt for his family), describe what it built and how it paid for it (such as about 30 cotton mills, paid for by the state's control of cotton), and explain two causes of the result, one from outside Egypt (such as the settlement of 1840 and 1841) and one from inside (such as almost no coal, or drafted workers).",
+      criteria: "I can explain one reason Muhammad Ali's government built factories (such as wanting an army like the European one that beat Egypt's rulers in 1798, or his aim to hold Egypt for his family), describe what it built and how it paid for it (such as about 30 cotton mills, paid for by the state's control of cotton), and explain two causes of the result, one from outside Egypt (such as the European powers siding with the sultan in 1840, or the army cut to 18,000 in 1841) and one from inside (such as almost no coal, or drafted workers).",
       kc: "KC-5.1.V.C",
       theme: "Governance"
     },
     {
-      criteria: "I can trace Japan's chain from Perry's warships and the unequal treaties to one Meiji reform, to the industry the state built (such as the 1872 railway or the Tomioka Silk Mill), to evidence of regional power (such as the 1895 victory over China and Taiwan); and I can name one link Japan shares with Egypt (the pattern) and one difference in what happened next.",
+      criteria: "I can trace Japan's chain from Perry's warships and the unequal treaties to one Meiji reform, to the industry the state built (such as the 1872 railway or the Tomioka Silk Mill), to what happened to that industry after 1880, to evidence of regional power (such as the 1895 victory over China and Taiwan); and I can name one link Japan shares with Egypt (the pattern) and one difference in what happened next.",
       kc: "KC-5.2.II.A",
       theme: "Governance"
     }
@@ -90,9 +90,9 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Egypt: Factories for an Army",
         bullets: [
-          "**The exception:** in Britain and the United States, private owners built the first factories. A small number of governments built industry themselves, because they feared stronger industrial powers.",
-          "**The ruler:** in 1798 a French army under Napoleon invaded Egypt and defeated its Mamluk rulers. Muhammad Ali, an Ottoman officer from an Albanian family, became governor of Egypt in 1805 and by 1811 ruled alone. He wanted Egypt strong enough that he, and his family after him, could hold it, even against the Ottoman sultan.",
-          "**The strategy:** his government told peasants what to grow, bought their crops at low prices, and sold them abroad at higher ones: a monopoly. Long-staple cotton, first grown for sale in 1820, earned a great deal. From the late 1810s the state built factories with European machines and experts. By the early 1830s about 30 cotton mills employed about 30,000 drafted workers, many making cloth and uniforms for the army.",
+          "**The exception:** in Britain and the United States, private owners built the first factories. A small number of governments built industry themselves, because they feared stronger, better-armed powers.",
+          "**The ruler:** in 1798 a French army under Napoleon invaded Egypt and easily defeated its rulers, the Mamluks, a class of soldier-lords. Muhammad Ali, an Ottoman officer from an Albanian family, became governor of Egypt in 1805 and by 1811 ruled alone. Napoleon's victory had shown what a modern European army could do, and he wanted an army like it, strong enough that he, and his family after him, could hold Egypt, even against the Ottoman sultan.",
+          "**The strategy:** his government told peasants what to grow, bought their crops at low prices, and sold them abroad at higher ones: a monopoly. Long-staple cotton (cotton with long fibers, which makes strong, fine thread), first grown for sale in 1820, earned a great deal. From the late 1810s the state built factories with European machines and experts. By the early 1830s about 30 cotton mills employed about 30,000 drafted workers, many making cloth and uniforms for the army. In the 1820s he also sent Egyptian students to Europe to learn its sciences.",
           "**The army:** from 1822 peasants were drafted into a new army, which reached about 130,000 soldiers by the early 1830s. In 1831 it invaded Syria and beat the sultan's armies.",
           "**It stopped:** in 1840 Britain, Austria, Russia, and Prussia sided with the sultan, and British warships and Ottoman troops drove Egypt out of Syria. In 1841 Egypt's army was cut to 18,000 in peacetime, and Egypt had to accept an 1838 British and Ottoman trade treaty that ended the monopolies. With almost no coal, drafted workers who resisted, and inexperienced managers, most of the factories failed within about a decade. Historians still argue about which cause mattered most."
         ],
@@ -111,7 +111,7 @@ window.BEHISTORICAL_LESSON = {
           "**Reform first:** in 1871 the old lords' domains were abolished. The samurai lost their privileges, and men of every class were drafted into a national army. A national school system began in 1872, and a land tax paid in money gave the government money to spend. From 1871 to 1873 the Iwakura Mission studied the United States and Europe.",
           "**The state builds:** the government opened Japan's first railway, Tokyo to Yokohama, in 1872, with British engineers, and the Tomioka Silk Mill in the same year, with French machines and a French engineer. It built telegraph lines, shipyards, mines, and factories.",
           "**Then it sells:** in 1880 the government decided to sell most of its businesses to private investors. Families such as Mitsui and Mitsubishi bought them and grew into huge business groups, the zaibatsu.",
-          "**A regional power:** in 1894 Britain agreed to end its unequal treaty (from 1899). In 1894 and 1895 Japan fought China over Korea and won: China gave up its claim over Korea, gave Taiwan to Japan, and agreed to pay 200 million taels of silver. What empires did with that power is Unit 6."
+          "**A regional power:** in 1894 Britain agreed to end its unequal treaty (from 1899). In 1894 and 1895 Japan fought China over Korea and won: China gave up its claim over Korea, gave Taiwan to Japan, and agreed to pay 200 million taels of silver (a tael is a Chinese measure of silver). Japan kept Taiwan as a colony. What empires did with that power is Unit 6."
         ],
         image: {
           title: "The First Steam Train Leaving Yokohama, about 1872",
@@ -121,13 +121,15 @@ window.BEHISTORICAL_LESSON = {
         }
       },
       {
-        title: "The Pattern and the Difference",
+        title: "Line Up the Two Cases",
         bullets: [
-          "**The pattern:** both governments acted because they feared stronger industrial powers. In both, the state, not private owners, paid for the first factories. Both bought foreign machines, hired foreign experts, and sent people abroad to learn. In both, farmers paid much of the bill. Both wanted a state strong enough to defend itself, with an army to match.",
-          "**The difference:** Japan's industry lasted and grew; most of Egypt's factories closed.",
-          "**Reasons historians point to:** Japan was an independent country, while Egypt was a province of the Ottoman Empire that European powers forced to cut its army and open its markets. Japan reformed its whole society, while Egypt's factories were one ruler's project, run with drafted workers. Japan had coal of its own, and Egypt had almost none. Japan's government handed its industries to private companies that kept them running.",
-          "**A warning about one cause:** Japan also had to accept low taxes on foreign goods: under its treaties it could charge only about 5 percent on imports until 1911. So outside pressure alone does not explain why the results differed.",
-          "**Myths to drop:** Japan did not \"just copy the West\"; its leaders chose what to borrow, for their own purpose. Muhammad Ali was not building an Egyptian nation; he was an Ottoman governor building power for his family."
+          "**What each government feared:** Egypt, European armies like the one Napoleon brought in 1798, and the sultan Muhammad Ali might have to defy. Japan, the American and European warships that forced its ports open in the 1850s.",
+          "**Who paid for the first factories:** in Egypt, the state, with money from its cotton monopoly. In Japan, the state, with money from the land tax.",
+          "**Where the machines and know-how came from:** Egypt bought machines in Europe, hired European experts, and sent students to Europe in the 1820s. Japan used British engineers for its railway and a French engineer and French machines at Tomioka, and sent the Iwakura Mission abroad from 1871 to 1873.",
+          "**Who did the work:** Egypt drafted peasants into its mills and its army. Japan drafted men of every class into its army and hired workers, many of them young women, for mills such as Tomioka.",
+          "**Fuel:** Egypt had almost no coal, so many machines were turned by animals. Japan had coal of its own.",
+          "**What happened next:** Europe made Egypt cut its army to 18,000 in 1841 and give up its monopolies, and most of its mills failed within about a decade. Japan sold most of its state businesses to private companies from 1880, won back control of its treaties from 1894, and beat China in 1895.",
+          "**Your job:** using these facts, say what the two cases share (the pattern) and what was different, and why. Japan also had to accept low taxes on foreign goods, about 5 percent, until 1911: keep that in mind before you blame one cause."
         ],
         image: {
           title: "The Railway at Takanawa, 1872",
@@ -189,7 +191,7 @@ window.BEHISTORICAL_LESSON = {
 
   beInTheRoom: {
     url: '',
-    desc: "Tokyo, 1880. On a government council, decide whether Japan should keep running the factories, mines, and shipyards the state built, or sell them to private companies, with Egypt's mills as a warning."
+    desc: "Tokyo, 1880. On a government council, decide whether Japan should keep running the factories, mines, and shipyards the state built, or sell them to private companies, with Egypt's mills as a comparison."
   }
 
 };

@@ -1418,7 +1418,7 @@ module.exports = {
     "showFooterNote": false,
     "headerSubtitle": "Topic 5.6, Industrialization: Government’s Role, 1750 to 1900 &nbsp;|&nbsp; AP World History: Modern",
     "titleHtml": "Industry <em>on Purpose</em>",
-    "deck": "In Britain and the United States, private owners built the first factories. A few governments did not wait. Afraid of stronger industrial powers, they built industry themselves. This reading follows two of them, Egypt under Muhammad Ali and Japan in the Meiji era: why each government acted, what it built, and why one strategy lasted while the other mostly ended.",
+    "deck": "In Britain and the United States, private owners built the first factories. A few governments did not wait. Afraid of stronger, better-armed powers, they built industry themselves. This reading follows two of them, Egypt under Muhammad Ali and Japan in the Meiji era: why each government acted, what it built, and why one strategy lasted while the other mostly ended.",
     "skillTags": [
       "Causation",
       "Making Connections"
@@ -1468,19 +1468,19 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "In 1798 a French army under Napoleon invaded Egypt and defeated its Mamluk rulers. The French left in 1801. Among the Ottoman troops sent to take Egypt back was Muhammad Ali, an officer from an Albanian family. In 1805 the Ottomans named him governor of Egypt, and by 1811 he had destroyed his rivals and ruled alone."
+            "html": "In 1798 a French army under Napoleon invaded Egypt and easily defeated its rulers, the Mamluks, a class of soldier-lords. The French left in 1801. Among the Ottoman troops sent to take Egypt back was Muhammad Ali, an officer from an Albanian family. In 1805 the Ottomans named him governor of Egypt, and by 1811 he had destroyed his rivals and ruled alone."
           },
           {
             "type": "p",
-            "html": "Egypt was a province of the Ottoman Empire, and Muhammad Ali was the sultan's governor. But he wanted Egypt strong enough that he, and his family after him, could hold it, even against the sultan. Strength meant an army, and an army needed guns, uniforms, and ships."
+            "html": "Egypt was a province of the Ottoman Empire, and Muhammad Ali was the sultan's governor. But he wanted Egypt strong enough that he, and his family after him, could hold it, even against the sultan. Napoleon's easy victory had shown what a modern European army could do, and Muhammad Ali wanted an army like it. Strength meant an army, and an army needed guns, uniforms, and ships."
           },
           {
             "type": "p",
-            "html": "So his government took control of Egypt's farming. It told peasants what to grow, bought their crops at low prices, and sold them abroad at higher ones. When only one buyer or seller is allowed, that is a <span class=\"kt\">monopoly</span>. A new crop, long-staple cotton, first grown for sale in 1820, earned a great deal of money."
+            "html": "So his government took control of Egypt's farming. It told peasants what to grow, bought their crops at low prices, and sold them abroad at higher ones. When only one buyer or seller is allowed, that is a <span class=\"kt\">monopoly</span>. A new crop, long-staple cotton (cotton with long fibers, which makes strong, fine thread), first grown for sale in 1820, earned a great deal of money."
           },
           {
             "type": "p",
-            "html": "With that money, from the late 1810s, the government built factories: cotton mills, and works for weapons, sugar, and other goods, with machines bought in Europe and European experts to run them. By the early 1830s about 30 cotton mills employed about 30,000 workers, many of them making cloth and uniforms for the army. The workers did not choose these jobs. They were drafted, the way Egyptian peasants had long been made to dig canals. From 1822 peasants were drafted into the army, too. Forcing people to serve is called <span class=\"kt\">conscription</span>, and by the early 1830s the army had about 130,000 soldiers. To protect the new mills, Muhammad Ali kept cheap British cloth out of Egypt."
+            "html": "With that money, from the late 1810s, the government built factories: cotton mills, and works for weapons, sugar, and other goods, with machines bought in Europe and European experts to run them. By the early 1830s about 30 cotton mills employed about 30,000 workers, many of them making cloth and uniforms for the army. The workers did not choose these jobs. They were drafted, the way Egyptian peasants had long been made to dig canals. From 1822 peasants were drafted into the army, too. Forcing people to serve is called <span class=\"kt\">conscription</span>, and by the early 1830s the army had about 130,000 soldiers. In the 1820s he also sent Egyptian students to Europe to learn its sciences. To protect the new mills, Muhammad Ali kept cheap British cloth out of Egypt."
           }
         ],
         "callout": {
@@ -1553,7 +1553,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Japan grew strong. In 1894 Britain agreed to end its unequal treaty with Japan, a change that took effect in 1899, and other countries followed. In 1894 and 1895 Japan fought China over Korea and won. In the Treaty of Shimonoseki, China gave up its claim over Korea, gave the island of Taiwan to Japan, and agreed to pay 200 million taels of silver. Japan, forced to open its ports forty years before, was now a <span class=\"kt\">regional power</span>, a state strong enough to win wars and gain land in its own part of the world, with a colony of its own. What empires did with that power is Unit 6."
+            "html": "Japan grew strong. In 1894 Britain agreed to end its unequal treaty with Japan, a change that took effect in 1899, and other countries followed. In 1894 and 1895 Japan fought China over Korea and won. In the Treaty of Shimonoseki, China gave up its claim over Korea, gave the island of Taiwan to Japan, and agreed to pay 200 million taels of silver (a tael is a Chinese measure of silver). Japan, forced to open its ports forty years before, was now a <span class=\"kt\">regional power</span>, a state strong enough to win wars and gain land in its own part of the world, with a colony of its own. What empires did with that power is Unit 6."
           }
         ],
         "callout": {
@@ -1568,7 +1568,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Put the two cases side by side. Both governments acted because they feared stronger industrial powers. In both, the state, not private owners, paid for the first factories. Both bought foreign machines, hired foreign experts, and sent people abroad to learn. In both, farmers paid much of the bill. And both wanted the same result: a state strong enough to defend itself, with an army to match. When the same links show up in different cases, that is a <span class=\"kt\">pattern</span>."
+            "html": "Put the two cases side by side. Both governments acted because they feared stronger, better-armed powers: for Muhammad Ali, European armies like Napoleon's and the sultan he might have to defy; for Japan, the Western warships. In both, the state, not private owners, paid for the first factories. Both bought foreign machines, hired foreign experts, and sent people abroad to learn. In both, farmers paid much of the bill. And both wanted the same result: a state strong enough to defend itself, with an army to match. When the same links show up in different cases, that is a <span class=\"kt\">pattern</span>."
           },
           {
             "type": "p",
@@ -1576,7 +1576,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "So, what caused these economic strategies, and what were their effects? Fear of stronger industrial powers made a small number of governments build industry themselves. Muhammad Ali's Egypt built cotton mills and weapons works to supply an army; it won wars for a while, but European pressure, missing coal, and forced labor closed most of the factories. In Japan, Perry's warships and the unequal treaties led to the Meiji reforms; the state built railways and mills and then sold them to private companies, and the industry it started helped make Japan strong enough to defeat China, take Taiwan, and end the unequal treaties."
+            "html": "So, what caused these economic strategies, and what were their effects? Fear of stronger, better-armed powers made a small number of governments build industry themselves. Muhammad Ali's Egypt built cotton mills and weapons works to supply an army; it won wars for a while, but European pressure, missing coal, and forced labor closed most of the factories. In Japan, Perry's warships and the unequal treaties led to the Meiji reforms; the state built railways and mills and then sold them to private companies, and the industry it started helped make Japan strong enough to defeat China, take Taiwan, and end the unequal treaties."
           },
           {
             "type": "p",
@@ -1589,7 +1589,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "In Britain and the United States, private owners built the first factories, but a small number of governments built industry themselves because they feared stronger industrial powers. In Egypt, Muhammad Ali, an Ottoman governor who wanted to hold power for his family, took control of farming and cotton and used the money to build about 30 cotton mills and weapons works for an army of about 130,000 drafted peasants. The army won wars, but in 1840 and 1841 European powers forced Egypt out of Syria and cut its army to 18,000, the 1838 trade treaty ended its monopolies, and with no coal and forced workers most factories failed within about a decade. In Japan, Perry's warships in 1853 and the unequal treaties led to the Meiji Restoration of 1868. The new government reformed Japan, built railways, the Tomioka Silk Mill, shipyards, and mines, and from 1880 sold them to private companies such as Mitsui and Mitsubishi. In 1894 Britain agreed to end its unequal treaty, and Japan won a war with China in 1894 and 1895 and took Taiwan: it had become a regional power. The state built the factories. Japan's lasted. Egypt's mostly closed.",
+    "takeaway": "In Britain and the United States, private owners built the first factories, but a small number of governments built industry themselves because they feared stronger, better-armed powers. In Egypt, Muhammad Ali, an Ottoman governor who wanted to hold power for his family, took control of farming and cotton and used the money to build about 30 cotton mills and weapons works for an army of about 130,000 drafted peasants. The army won wars, but in 1840 and 1841 European powers forced Egypt out of Syria and cut its army to 18,000, the 1838 trade treaty ended its monopolies, and with no coal and forced workers most factories failed within about a decade. In Japan, Perry's warships in 1853 and the unequal treaties led to the Meiji Restoration of 1868. The new government reformed Japan, built railways, the Tomioka Silk Mill, shipyards, and mines, and from 1880 sold them to private companies such as Mitsui and Mitsubishi. In 1894 Britain agreed to end its unequal treaty, and Japan won a war with China in 1894 and 1895 and took Taiwan: it had become a regional power. The state built the factories. Japan's lasted. Egypt's mostly closed.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [

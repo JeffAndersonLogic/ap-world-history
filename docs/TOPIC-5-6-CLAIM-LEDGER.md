@@ -227,4 +227,48 @@ Japan:
 
 ## Review findings
 
-(Filled in by Phase 9.)
+### Pass 1, 2026-10-24
+
+Packet: `capture-topic-for-review.js 5.6` (brand fonts, 25 teacher slides). Two fresh reviewers,
+launched together: page truth, readability, CED and ownership on the cheaper model; history on the
+default model.
+
+**Page truth reviewer: 13 findings, all supported; 12 fixed in full, 1 in part.** CED alignment and
+story-map ownership: no findings.
+
+1. Egypt's "threat" link contradicted itself, and "both feared stronger industrial powers" was not
+   supported for Egypt in anything a student reads. **Fixed:** the shared link is now "stronger,
+   better-armed powers" on every surface (story, First & 10, lesson, deck, deep reading); the First &
+   10, lecture card and deep reading add that Napoleon's 1798 victory "had shown what a modern
+   European army could do" and Muhammad Ali wanted an army like it (OER Project: Egypt "lost to
+   Napoleon's French army in 1798 ... Ali put in motion a campaign of modernization, beginning with
+   his military"); Section 6 names each state's rival; slide 6's footer and question no longer imply
+   he saw 1798; Success Criterion 1 matches.
+2. A finished answer to the Skill Builder was printed in lecture card 3, and the synthesis sentence
+   (slide 21) sat just before Checkpoint 1 and carried its answer. **Fixed:** card 3 is now "Line Up
+   the Two Cases," the facts link by link with no stated pattern or difference; Checkpoint 1 moves to
+   slide 10, right after the Egypt slides it assesses and before the synthesis. **Left:** the pattern
+   in First & 10 Section 6, which is the reading's content (the brief excludes content).
+3. "Sent people abroad to learn" had no Egypt support in the required reading. **Fixed:** the First &
+   10 and lecture card 1 add the 1820s student missions (as the deep reading had).
+4. The decree text card had no alt carrying its two quoted lines. **Fixed:** alt added.
+5. Slide 18: Japan "never defeated by Europe." **Fixed:** "no European power took its land or cut its
+   army."
+6. Slide 17's Venn showed four of five shared items, and the notes counted eleven phrases. **Fixed:**
+   the goal moves to the footer; the notes say ten.
+7. Slide 11's pin called the coast strip "Uraga," but the strip's labels read Shimoda and Izu.
+   **Fixed:** "The map: part of the coast the lords were ordered to guard."
+8. The map question asked whether each state kept its land, but nothing said Japan kept Taiwan; arrow
+   1 hid under its badge. **Fixed:** the key and the map legend say Japan kept Taiwan; arrow 1 is
+   longer.
+9. Undefined words: Mamluk, taels, long-staple cotton, "the settlement of 1840 and 1841." **Fixed:**
+   glossed in the First & 10 and lesson; the criterion names the events.
+10. Checkpoint 2's criterion did not include the 1880 sale its prompt asks for; slide 24 said "two
+    pieces of evidence." **Fixed:** both.
+11. The deep reading's term lists defined words its text did not use (hereditary, indemnity).
+    **Fixed:** both used in the text.
+12. "Egypt's mills as a warning" presupposed the council's answer; a double negative in a room card.
+    **Fixed:** "as a comparison"; reworded.
+13. Slide 18 named the Miike mine, which only the deep reading teaches; slide 20's footer asked
+    students to name what it printed; slide 8's axis hid 1840. **Fixed:** "coal of its own"; footer
+    reworded; ticks every ten years.

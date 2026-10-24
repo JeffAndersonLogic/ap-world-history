@@ -38,25 +38,25 @@ window.BEHISTORICAL_TEACHING = {
     subtitle: 'Afraid of stronger industrial powers, a few governments decided not to wait for industry and built it themselves, to make their states strong. Muhammad Ali’s Egypt built factories for an army, and most of them closed within about twenty years; Meiji Japan reformed itself, built railways and mills, sold them to private companies, and became a regional power.',
     essentialQuestion: 'Why did a few governments build industry themselves, and what happened when they did?',
     apFocus: 'Causation, with Making Connections 5.A (patterns)',
-    endTarget: 'Students can explain the causes and effects of two states\' economic strategies from 1750 to 1900: fear of stronger industrial powers led Muhammad Ali\'s Egypt and Meiji Japan to build industry with state money, foreign machines and experts, paid for by farmers; Egypt\'s factories supplied an army that won wars until European pressure, missing coal and forced labor closed most of them; U.S. and European pressure led Japan to reform itself, build industry, sell it to private companies and become a regional power. They can name the pattern the two cases share and the difference in their results.'
+    endTarget: 'Students can explain the causes and effects of two states\' economic strategies from 1750 to 1900: fear of stronger, better-armed powers led Muhammad Ali\'s Egypt and Meiji Japan to build industry with state money, foreign machines and experts, paid for by farmers; Egypt\'s factories supplied an army that won wars until European pressure, missing coal and forced labor closed most of them; U.S. and European pressure led Japan to reform itself, build industry, sell it to private companies and become a regional power. They can name the pattern the two cases share and the difference in their results.'
   },
 
   priorities: {
     must: [
-      'Teach causes AND effects for each state: the threat, the decision, the strategy, the result (the retelling slide, 20).',
+      'Teach causes AND effects for each state: the threat, the decision, the strategy, the result (the retelling slide, 21).',
       'Teach KC-5.1.V.C with the CED\'s own example: Muhammad Ali\'s cotton textile industry (slides 6 to 9), and say "a small number of states" (slide 5).',
-      'Teach all of KC-5.2.II.A as a chain: U.S. and European pressure led to internal reform, which supported industry, which led to regional power (slides 11 to 15).',
-      'Model 5.A: put two cases side by side, name the pattern, then name the difference the pattern does not explain (slides 10, 17 and 18).'
+      'Teach all of KC-5.2.II.A as a chain: U.S. and European pressure led to internal reform, which supported industry, which led to regional power (slides 12 to 16).',
+      'Model 5.A: put two cases side by side, name the pattern, then name the difference the pattern does not explain (slides 11, 18 and 19).'
     ],
     should: [
       'Weigh the causes of Egypt\'s result: European pressure, missing coal, drafted workers, inexperienced managers. Historians still disagree (slide 9).',
-      'Say that Japan\'s state started its industry and private companies carried it on: the 1880 decision to sell (slide 14).',
+      'Say that Japan\'s state started its industry and private companies carried it on: the 1880 decision to sell (slide 15).',
       'Correct three myths: "Japan just copied the West," "Muhammad Ali was building an Egyptian nation," and "one cause explains Egypt\'s result."'
     ],
     could: [
       'Point students who want more depth to the eBook chapter, "Industry on Purpose."',
       'Use the Primary Source, the Charter Oath (1868), as an extension for early finishers.',
-      'For a class that is ahead: Japan also had to accept low tariffs. Why does that matter to the "Europe killed Egypt\'s factories" explanation? (slide 18).'
+      'For a class that is ahead: Japan also had to accept low tariffs. Why does that matter to the "Europe killed Egypt\'s factories" explanation? (slide 19).'
     ]
   },
 
@@ -70,19 +70,19 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'egypt-strategy', label: 'Egypt: The Strategy', range: '21-23', minutes: 2, teacher: 'Crops, cotton, factories, an army.', students: 'Follow the money.', slide: 7 },
     { id: 'egypt-result', label: 'Egypt: It Worked, Then It Stopped', range: '23-25', minutes: 2, teacher: 'From 1822 to the 1840s.', students: 'Say what changed in 1840 and 1841.', slide: 8 },
     { id: 'egypt-why', label: 'Why Did Egypt\'s Factories Close?', range: '25-27', minutes: 2, teacher: 'Rank four causes historians weigh.', students: 'Rank and defend number one.', slide: 9 },
-    { id: 'model', label: 'Find the Pattern', range: '27-29', minutes: 2, teacher: 'Model 5.A on an everyday case.', students: 'Say the pattern and the difference.', slide: 10 },
-    { id: 'japan-threat', label: 'Japan: Ships and Treaties', range: '29-31', minutes: 2, teacher: 'Perry and the unequal treaties.', students: 'Name what the treaties took away.', slide: 11 },
-    { id: 'oath', label: 'The Charter Oath', range: '31-33', minutes: 2, teacher: 'Article 5, read together.', students: 'Say what it promises, and why.', slide: 12 },
-    { id: 'japan-reform', label: 'Japan: Reform First', range: '33-35', minutes: 2, teacher: 'The reforms that supported industry.', students: 'Link one reform to industry.', slide: 13 },
-    { id: 'japan-build', label: 'Japan: Build It, Then Sell It', range: '35-37', minutes: 2, teacher: 'Railway, silk mill, shipyards; the 1880 sale.', students: 'Say who started it and who carried it on.', slide: 14 },
-    { id: 'japan-power', label: 'Japan: A Regional Power', range: '37-39', minutes: 2, teacher: 'Treaty revision, the war with China, Shimonoseki.', students: 'Give one piece of evidence.', slide: 15 },
-    { id: 'skill', label: 'Skill Builder', range: '39-47', minutes: 8, teacher: 'Module 05: Making Connections 5.A.', students: 'Find the pattern across Egypt and Japan.', slide: 16 },
-    { id: 'pattern', label: 'The Pattern', range: '47-50', minutes: 3, teacher: 'What both cases share.', students: 'Sort into the Venn.', slide: 17 },
-    { id: 'difference', label: 'The Difference', range: '50-52', minutes: 2, teacher: 'Four reasons the results differed.', students: 'Choose the strongest reason.', slide: 18 },
-    { id: 'myths', label: 'Myth and Evidence', range: '52-54', minutes: 2, teacher: 'Three things people get wrong.', students: 'Correct each myth.', slide: 19 },
-    { id: 'retell', label: 'Two States, One Pattern', range: '54-57', minutes: 3, teacher: 'Students redraw the two chains.', students: 'Retell the whole topic.', slide: 20 },
-    { id: 'synthesis', label: 'Say It in One Sentence', range: '57-58', minutes: 1, teacher: 'The objective, answered.', students: 'Fill the sentence from memory.', slide: 21 },
-    { id: 'cp1', label: 'Checkpoint 1', range: '58-66', minutes: 8, teacher: 'Module 06: Egypt\'s strategy, on their own.', students: 'Work without the coach.', slide: 22 },
+    { id: 'cp1', label: 'Checkpoint 1', range: '27-35', minutes: 8, teacher: 'Module 06: Egypt\'s strategy, on their own.', students: 'Work without the coach.', slide: 10 },
+    { id: 'model', label: 'Find the Pattern', range: '35-37', minutes: 2, teacher: 'Model 5.A on an everyday case.', students: 'Say the pattern and the difference.', slide: 11 },
+    { id: 'japan-threat', label: 'Japan: Ships and Treaties', range: '37-39', minutes: 2, teacher: 'Perry and the unequal treaties.', students: 'Name what the treaties took away.', slide: 12 },
+    { id: 'oath', label: 'The Charter Oath', range: '39-41', minutes: 2, teacher: 'Article 5, read together.', students: 'Say what it promises, and why.', slide: 13 },
+    { id: 'japan-reform', label: 'Japan: Reform First', range: '41-43', minutes: 2, teacher: 'The reforms that supported industry.', students: 'Link one reform to industry.', slide: 14 },
+    { id: 'japan-build', label: 'Japan: Build It, Then Sell It', range: '43-45', minutes: 2, teacher: 'Railway, silk mill, shipyards; the 1880 sale.', students: 'Say who started it and who carried it on.', slide: 15 },
+    { id: 'japan-power', label: 'Japan: A Regional Power', range: '45-47', minutes: 2, teacher: 'Treaty revision, the war with China, Shimonoseki.', students: 'Give one piece of evidence.', slide: 16 },
+    { id: 'skill', label: 'Skill Builder', range: '47-55', minutes: 8, teacher: 'Module 05: Making Connections 5.A.', students: 'Find the pattern across Egypt and Japan.', slide: 17 },
+    { id: 'pattern', label: 'The Pattern', range: '55-58', minutes: 3, teacher: 'What both cases share.', students: 'Sort into the Venn.', slide: 18 },
+    { id: 'difference', label: 'The Difference', range: '58-60', minutes: 2, teacher: 'Four reasons the results differed.', students: 'Choose the strongest reason.', slide: 19 },
+    { id: 'myths', label: 'Myth and Evidence', range: '60-62', minutes: 2, teacher: 'Three things people get wrong.', students: 'Correct each myth.', slide: 20 },
+    { id: 'retell', label: 'Two States, One Pattern', range: '62-65', minutes: 3, teacher: 'Students redraw the two chains.', students: 'Retell the whole topic.', slide: 21 },
+    { id: 'synthesis', label: 'Say It in One Sentence', range: '65-66', minutes: 1, teacher: 'The objective, answered.', students: 'Fill the sentence from memory.', slide: 22 },
     { id: 'evidence', label: 'Evidence Lab', range: 'Optional', minutes: 0, teacher: 'Optional, Module 07: two sources, one link in a chain.', students: 'Observe, then infer, then name a limit.', slide: 23 },
     { id: 'cp2', label: 'Checkpoint 2', range: '66-78', minutes: 12, teacher: 'Module 10: Japan\'s chain and the pattern. Finish at home if needed.', students: 'Draft, coach, revise.', slide: 24 },
     { id: 'close', label: 'Landing Sentence', range: '78-80', minutes: 2, teacher: 'Land the answer and hand off to 5.7.', students: 'Say the topic in one sentence.', slide: 25 }
@@ -113,7 +113,7 @@ window.BEHISTORICAL_TEACHING = {
           'The CED\'s one illustrative example, which it calls optional, is Muhammad Ali\'s development of a cotton textile industry in Egypt. Japan is named in KC-5.2.II.A itself. This deck uses those two cases and no other, as the unit story map decides. There is no CED sample activity for 5.6.',
           'Owns: state-sponsored industry (KC-5.1.V.C) and Meiji reform, industry and regional power (KC-5.2.II.A). Bridge only: the spread of industry to Japan (5.4); the technologies themselves (5.5); free trade as an idea (5.7); Ottoman and Qing reforms and their resistance (5.8, KC-5.1.V.B); classes, ideologies and reform laws (5.8, 5.9); empire, including what Japan did in Taiwan and Korea and Egypt\'s later debts and the British occupation of 1882 (Unit 6). Russia\'s state-led industry is not a case here.',
           'The old 5.6 taught classes, liberalism, socialism, Marx, British reform laws, Bismarck and women\'s suffrage. The CED gives all of that to 5.8 and 5.9. If a student raises it, say so and park it.',
-          'Three myths, on slide 19: "Japan just copied the West"; "Muhammad Ali was building an Egyptian nation"; "one cause explains Egypt\'s result."'
+          'Three myths, on slide 20: "Japan just copied the West"; "Muhammad Ali was building an Egyptian nation"; "one cause explains Egypt\'s result."'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
         listenFor: 'Afraid of stronger industrial powers, a few governments built industry themselves; Egypt\'s factories supplied an army and mostly closed; Japan reformed, built and sold its industries, and became a regional power.',
@@ -154,7 +154,7 @@ window.BEHISTORICAL_TEACHING = {
           'A print made to sell, not a photograph: the cherry blossoms, the harbor full of ships and the smiling passengers are the artist\'s choices. It shows what the railway meant to people in Tokyo, not exactly what the first train looked like.'
         ],
         ask: 'Predict: who paid for this railway: a company, or the government? Why might a government want to pay?',
-        listenFor: 'The government. Guesses about power, defense, keeping up with Europe and America. Check the guesses on slide 14.'
+        listenFor: 'The government. Guesses about power, defense, keeping up with Europe and America. Check the guesses on slide 15.'
       }
     },
     {
@@ -201,13 +201,13 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'egypt-ruler', kind: 'story-scene', eyebrow: 'Egypt · The Ruler',
       kc: 'KC-5.1.V.C', title: 'A governor who wanted power of his own.',
-      footer: 'The cause: a ruler who feared stronger armies and wanted power for his family.',
+      footer: 'The cause: a ruler who wanted an army like Napoleon\'s, strong enough to keep Egypt for his family.',
       template: {
         steps: [
           { label: '1798', text: 'Napoleon\'s French army **defeats Egypt\'s rulers**.' },
           { label: '1805', text: '**Muhammad Ali**, an Ottoman officer from an Albanian family, becomes governor.' },
           { label: '1811', text: 'He destroys his rivals and **rules alone**.' },
-          { label: 'Aim', key: true, text: 'Hold Egypt for **his family**, even against the sultan. That needs an **army**.' }
+          { label: 'Aim', key: true, text: 'Hold Egypt for **his family**, even against the sultan. That needs an **army** like Napoleon\'s.' }
         ]
       },
       notes: {
@@ -215,10 +215,11 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'The Library of Congress\'s Egypt: A Country Study: the French "defeated the Mamluk army at Shubra Khit and Imbabah, and entered Cairo on July 25" (1798); Muhammad Ali came in 1801 with "the Albanian contingent of Ottoman forces"; the Ottomans appointed him governor in June 1805; in March 1811 his rivals, the Mamluk leaders, were killed in the Cairo Citadel, and "from then on, Muhammad Ali was the sole ruler of Egypt."',
           'His aim: the Country Study says he "wanted to detach Egypt from the Ottoman Empire, and he realized that to do so Egypt had to be strong economically and militarily." The historian Khaled Fahmy argues that the army served his "dynastic needs": hereditary rule for his family, inside the empire. The deck says "hold it for his family, even against the sultan," which both support.',
-          'He was an Ottoman governor, not an Egyptian nationalist: his court\'s official language was Ottoman Turkish (myth 2, slide 19).',
+          'Why the French mattered: the OER Project\'s AP World article says Egypt "lost to Napoleon\'s French army in 1798" and that Muhammad Ali "put in motion a campaign of modernization, beginning with his military." Muhammad Ali himself arrived in 1801, after the French had gone; the lesson says the victory showed what a modern European army could do, not that he saw it.',
+          'He was an Ottoman governor, not an Egyptian nationalist: his court\'s official language was Ottoman Turkish (myth 2, slide 20).',
           'The picture is a real portrait: Auguste Couder, Muhammad Ali, oil on canvas, about 1840 to 1841, commissioned by the French king Louis-Philippe for his history museum at Versailles (public domain, mirrored from Wikimedia Commons). A commissioned portrait is an argument about the sitter: dress, pose and setting are chosen, and here a French painter chose them for a French museum.'
         ],
-        ask: 'What did Muhammad Ali see in 1798 that might make a ruler afraid?',
+        ask: 'What did Egypt\'s rulers lose to in 1798, and what might a new governor learn from it?',
         listenFor: 'A European army with modern weapons beating Egypt\'s rulers easily.',
         ap: 'KC-5.1.V.C (the cause); LO G.'
       }
@@ -253,7 +254,7 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Within about a decade of the early 1830s, most of the new factories had failed.',
       template: {
         range: [1820, 1850],
-        tick: 5,
+        tick: 10,
         events: [
           { year: 1822, label: '1822', text: 'Peasants drafted into a new army' },
           { year: 1831, label: '1831', text: 'The army invades Syria and beats the sultan\'s armies' },
@@ -299,6 +300,20 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
+      phase: 'cp1', kind: 'action', eyebrow: 'Module 06 · Checkpoint 1',
+      title: 'Why did Muhammad Ali build factories, and what happened to them?',
+      subtitle: 'On your own: Checkpoint 1 is the diagnostic, so no coach.',
+      action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-6-industrialization-government-and-society.html#modules' },
+      notes: {
+        minutes: 8,
+        land: [
+          'Module 06 is required. Checkpoint 1 assesses Target 1 (KC-5.1.V.C): why Muhammad Ali\'s government built industry, what it did, and two causes of the result, one from outside Egypt and one from inside.'
+        ],
+        ask: 'Which cause from outside Egypt did you use, and which from inside?',
+        listenFor: 'The 1840 and 1841 settlement or the 1838 treaty; missing coal, drafted workers or new managers.'
+      }
+    },
+    {
       phase: 'model', kind: 'sentence-frame', eyebrow: 'Making Connections 5.A · Model',
       title: 'Find the pattern, then the difference.',
       footer: 'A pattern is what two cases share. The difference is what the pattern does not explain.',
@@ -311,7 +326,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Skill 5.A: "Identify patterns among or connections between historical developments and processes." A pattern is the same links showing up in different cases. The everyday case has the same shape as today\'s history: a threat, a decision to copy, an outside expert, and different results.',
-          'Model it aloud, then ask students to say the frame back with the basketball case before they try it on Egypt and Japan (slide 17).',
+          'Model it aloud, then ask students to say the frame back with the basketball case before they try it on Egypt and Japan (slide 18).',
           'The second sentence matters: a pattern does not explain everything, and naming the difference is what makes the comparison useful.'
         ],
         ask: 'What is the pattern in the basketball case, in one sentence?',
@@ -328,7 +343,7 @@ window.BEHISTORICAL_TEACHING = {
           { x: 0.6, y: 0.8, label: 'The steamship', text: 'Perry\'s warships, 1853. Japan had no navy to stop them.' },
           { x: 0.2, y: 0.5, label: 'The sailor', text: 'Americans who demanded open ports and trade.' },
           { x: 0.5, y: 0.17, label: 'The crests', text: 'Japanese lords ordered to guard the coast.' },
-          { x: 0.08, y: 0.72, label: 'The coast', text: 'Uraga, near the mouth of Edo Bay.' }
+          { x: 0.08, y: 0.72, label: 'The map', text: 'Part of the coast the lords were ordered to guard.' }
         ]
       },
       notes: {
@@ -336,7 +351,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'KC-5.2.II.A begins here: "The expansion of U.S. and European influence in Asia led to internal reform in Japan."',
           'Columbia University\'s Asia for Educators: in 1853 Perry\'s squadron entered the bay near Edo (Tokyo); "It was clear that Commodore Perry could impose his demands by force. The Japanese had no navy with which to defend themselves." The 1854 treaty allowed "trade at two ports"; the 1858 treaty "opened more ports." The treaties "limited its control over its own foreign trade and required that crimes concerning foreigners in Japan be tried not in Japanese but in Western courts." Britain, Russia, France and the Netherlands made treaties too. A tariff convention of 1866 set import duties at a uniform 5 percent (Japan Customs); Japan won back full control of its tariffs only in 1911.',
-          'Some samurai blamed the shogun for giving in, and in 1868 they overthrew him (slide 12).',
+          'Some samurai blamed the shogun for giving in, and in 1868 they overthrew him (slide 13).',
           'The picture is a real Japanese broadsheet: "United States of North America: Perry arrives in Uraga, Sōshū Province," woodblock print (Library of Congress, no known restrictions). It shows Perry\'s steamship, an American sailor, a map of the coast and the crests of the lords ordered to guard it. The Library dates it only to between 1850 and 1900; a note on it gives the date of Perry\'s arrival, 8 July 1853.'
         ],
         ask: 'Which of the treaty terms would anger you most if you were a samurai?',
@@ -382,7 +397,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'KC-5.2.II.A\'s middle link: "internal reform in Japan that supported industrialization." Ask how each reform supported industry.',
           'Columbia, Asia for Educators: "in 1871 these domains were abolished and transformed into prefectures of a unified central state"; "The samurai lost their class privileges"; "a national army based on universal conscription"; "in 1872 the government established a national system to educate the entire population"; "A national land tax system was established that required payment in money instead of rice ... This gave the government money to spend to build up the strength of the nation."',
-          'Links to industry: one central state could plan for the whole country; schools trained workers and engineers; the land tax paid for the railways and factories on slide 14; men freed from class rules could choose new work.',
+          'Links to industry: one central state could plan for the whole country; schools trained workers and engineers; the land tax paid for the railways and factories on slide 15; men freed from class rules could choose new work.',
           'The picture is a real photograph: five leaders of the Iwakura Mission, which toured the United States and Europe from December 1871 to September 1873 to study how they worked. Iwakura Tomomi, in the center, wears Japanese dress; the others wear Western suits (public domain, mirrored from Wikimedia Commons).'
         ],
         ask: 'Pick one reform. How did it help Japan build industry?',
@@ -465,17 +480,17 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'pattern', kind: 'split-venn', eyebrow: 'Making Connections 5.A · The Pattern',
       kc: 'KC-5.1.V.C', title: 'Two states, one pattern.',
-      footer: 'When the same links show up in different cases, that is a pattern.',
+      footer: 'Both aimed at the same goal: a state strong enough to defend itself, with an army to match.',
       template: {
         left: { name: 'Egypt', items: ['A governor inside the Ottoman Empire', 'Drafted workers in state mills', 'Mills mostly closed by about 1850'] },
         right: { name: 'Japan', items: ['An independent country that reformed itself', 'State industries sold to private firms', 'A regional power by 1895'] },
-        both: ['Feared stronger industrial powers', 'The state paid for the first factories', 'Foreign machines and experts', 'Farmers paid much of the bill', 'The goal: a strong army']
+        both: ['Feared stronger, better-armed powers', 'The state paid for the first factories', 'Foreign machines and experts', 'Farmers paid much of the bill']
       },
       notes: {
         minutes: 3,
         land: [
           'The pattern is KC-5.1.V.C in action: two "state-sponsored visions of industrialization," with the same links.',
-          'Have students sort before revealing: give them the eleven phrases and the three regions. The middle is the pattern; the sides hold the differences, which are slide 18.',
+          'Have students sort before revealing: give them the ten phrases and the three regions. The middle is the pattern; the sides hold the differences, which are slide 19.',
           'Both sides are from the reading: Egypt\'s students to Europe in the 1820s and Japan\'s Iwakura Mission are the "learn abroad" link; the cotton monopoly and the land tax are the "farmers paid" link.'
         ],
         ask: 'Which item in the middle is the cause? Which is the goal?',
@@ -491,9 +506,9 @@ window.BEHISTORICAL_TEACHING = {
         left: { name: 'Egypt' },
         right: { name: 'Japan' },
         rows: [
-          { label: 'Status', left: 'A province of the Ottoman Empire; Europe cut its army', right: 'An independent country; never defeated by Europe' },
+          { label: 'Status', left: 'A province of the Ottoman Empire; Europe cut its army', right: 'An independent country; no European power took its land or cut its army' },
           { label: 'Reform', left: 'One ruler\'s project, run with drafted workers', right: 'Reform of the whole society first' },
-          { label: 'Coal', left: 'Almost none: many machines turned by animals', right: 'Coal of its own, such as the Miike mine' },
+          { label: 'Coal', left: 'Almost none: many machines turned by animals', right: 'Coal of its own' },
           { label: 'After the state', left: 'Most mills failed by about 1850', right: 'Sold to private companies that kept them running' }
         ]
       },
@@ -501,7 +516,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Four reasons historians point to; none is the whole answer. Ask students to choose the strongest and defend it with a piece of evidence.',
-          'Status: Egypt\'s army was cut to 18,000 by the 1841 settlement; Japan, though forced into unequal treaties, was never conquered and won them back. Reform: Columbia\'s account of the Meiji reforms (slide 13) against Beinin and Fahmy on Egypt\'s drafted workers. Coal: OER and Beinin on Egypt; the Miike mine, "easily the nation\'s largest," sold to Mitsui (Mitsui Bunko). After the state: Columbia on the 1880 sale; Beinin on Egypt\'s failures.',
+          'Status: Egypt\'s army was cut to 18,000 by the 1841 settlement; Japan, though forced into unequal treaties, was never conquered and won them back. Reform: Columbia\'s account of the Meiji reforms (slide 14) against Beinin and Fahmy on Egypt\'s drafted workers. Coal: OER and Beinin on Egypt; the Miike mine, "easily the nation\'s largest," sold to Mitsui (Mitsui Bunko). After the state: Columbia on the 1880 sale; Beinin on Egypt\'s failures.',
           'The footer is the test of the "Europe did it" explanation: under the 1866 tariff convention Japan could charge only 5 percent on imports until 1911 (Japan Customs), and its industry still grew. So European pressure mattered to Egypt\'s army and monopolies, but low tariffs alone do not explain the different results.'
         ],
         ask: 'Which row is the strongest reason? Why?',
@@ -523,7 +538,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'Myth 1 is slides 12 and 14: the Charter Oath\'s purpose, and the choices of French and British experts.',
+          'Myth 1 is slides 13 and 15: the Charter Oath\'s purpose, and the choices of French and British experts.',
           'Myth 2: Muhammad Ali has been called "the founder of modern Egypt," a label from later Egyptian nationalist history (Fahmy). He was of Albanian origin, and "Ottoman Turkish was the official language of his court rather than Arabic." He built for his family\'s hereditary rule, which the 1841 decree granted.',
           'Myth 3 is slide 9.'
         ],
@@ -535,12 +550,12 @@ window.BEHISTORICAL_TEACHING = {
       retelling: true,
       phase: 'retell', kind: 'split-scenes', eyebrow: 'The Whole Topic',
       title: 'The state built the factories. Japan\'s lasted. Egypt\'s mostly closed.',
-      footer: 'Same strategy, different results: name the pattern, then the difference.',
+      footer: 'With your notes closed, redraw both chains, then name the pattern and the difference.',
       template: {
         left: { name: 'Egypt, Muhammad Ali', items: ['Threat: Napoleon\'s army, 1798', 'State mills supply an army', 'Europe cuts the army; no coal; most mills close'] },
         right: { name: 'Japan, the Meiji era', items: ['Threat: Perry\'s warships, 1853', 'Reform, railways, mills; then sold', 'Beats China, takes Taiwan: a regional power'] },
         bothLabel: 'The pattern',
-        both: ['Fear of stronger industrial powers', 'The state builds industry to make itself strong']
+        both: ['Fear of stronger, better-armed powers', 'The state builds industry to make itself strong']
       },
       notes: {
         minutes: 3,
@@ -557,32 +572,18 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'synthesis', kind: 'close-retell', eyebrow: 'AP Synthesis',
       kc: 'Unit 5: Learning Objective G', title: 'Say it in one sentence.',
       template: {
-        frame: 'Afraid of stronger ___ powers, Muhammad Ali\'s Egypt and Meiji ___ built industry with state money. Egypt\'s mills supplied an ___ until Europe and missing ___ closed most of them; Japan ___ itself, sold its industries to private companies, and became a ___ power.',
-        words: ['industrial', 'Japan', 'army', 'coal', 'reformed', 'regional'],
+        frame: 'Afraid of stronger ___, Muhammad Ali\'s Egypt and Meiji ___ built industry with state money. Egypt\'s mills supplied an ___ until Europe and missing ___ closed most of them; Japan ___ itself, sold its industries to private companies, and became a ___ power.',
+        words: ['powers', 'Japan', 'army', 'coal', 'reformed', 'regional'],
         prompt: 'Fill it in from memory, then add one example.'
       },
       notes: {
         minutes: 1,
         land: [
           'Learning objective G: "Explain the causes and effects of economic strategies of different states and empires." The sentence is the whole answer; one example per state makes it an AP answer.',
-          'A strong version: between 1750 and 1900 a small number of governments built industry themselves because they feared stronger industrial powers; Muhammad Ali, Egypt\'s Ottoman governor, used a monopoly on cotton to pay for about 30 state cotton mills that supplied an army of about 130,000, but after European powers drove his army from Syria and cut it to 18,000 in 1841, and with no coal and drafted workers, most mills failed within about a decade; in Japan, Perry\'s warships and the unequal treaties led the Meiji government to abolish the domains, tax land in money, and build railways and the Tomioka Silk Mill, which it sold to companies such as Mitsui from the 1880s, and the industry and army it built helped Japan defeat China in 1895, take Taiwan and end the unequal treaties.'
+          'A strong version: between 1750 and 1900 a small number of governments built industry themselves because they feared stronger, better-armed powers; Muhammad Ali, Egypt\'s Ottoman governor, used a monopoly on cotton to pay for about 30 state cotton mills that supplied an army of about 130,000, but after European powers drove his army from Syria and cut it to 18,000 in 1841, and with no coal and drafted workers, most mills failed within about a decade; in Japan, Perry\'s warships and the unequal treaties led the Meiji government to abolish the domains, tax land in money, and build railways and the Tomioka Silk Mill, which it sold to companies such as Mitsui from the 1880s, and the industry and army it built helped Japan defeat China in 1895, take Taiwan and end the unequal treaties.'
         ],
         ask: 'Which blank is hardest to fill with an example?',
         listenFor: 'Students who can give one example for each state and say what it caused have the objective.'
-      }
-    },
-    {
-      phase: 'cp1', kind: 'action', eyebrow: 'Module 06 · Checkpoint 1',
-      title: 'Why did Muhammad Ali build factories, and what happened to them?',
-      subtitle: 'On your own: Checkpoint 1 is the diagnostic, so no coach.',
-      action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-6-industrialization-government-and-society.html#modules' },
-      notes: {
-        minutes: 8,
-        land: [
-          'Module 06 is required. Checkpoint 1 assesses Target 1 (KC-5.1.V.C): why Muhammad Ali\'s government built industry, what it did, and two causes of the result, one from outside Egypt and one from inside.'
-        ],
-        ask: 'Which cause from outside Egypt did you use, and which from inside?',
-        listenFor: 'The 1840 and 1841 settlement or the 1838 treaty; missing coal, drafted workers or new managers.'
       }
     },
     {
@@ -603,7 +604,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'cp2', kind: 'action', eyebrow: 'Module 10 · Checkpoint 2',
       title: 'How did outside pressure lead to Japan\'s industry and power, and what pattern does Japan share with Egypt?',
-      subtitle: 'Trace Japan\'s chain from Perry to regional power with two pieces of evidence. Then name one link Japan shares with Egypt and one difference in the results. If it is not finished in class, it is homework.',
+      subtitle: 'Trace Japan\'s chain from Perry to regional power, with evidence for each link, including what happened to the state\'s businesses after 1880. Then name one link Japan shares with Egypt and one difference in the results. If it is not finished in class, it is homework.',
       action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-6-industrialization-government-and-society.html#modules' },
       notes: {
         minutes: 12,

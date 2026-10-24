@@ -471,7 +471,7 @@ module.exports = [
       { zone: [121, 23.7, 2.6, 2.6], label: 'TAIWAN', labelSide: 'right', tone: 'bronze', legend: 'Taiwan: given to Japan, 1895' }
     ],
     flows: [
-      { from: [31.2, 30], to: [38, 34.5], label: '1831', bow: 0.3 },
+      { from: [30.5, 28], to: [39, 36], label: '1831', bow: 0.3 },
       { from: [136, 34.5], to: [121, 23.7], label: '1895', bow: -0.2 }
     ],
     points: [
@@ -485,7 +485,7 @@ module.exports = [
       { kind: 'flow', step: 1, text: 'Egypt\u2019s army invades Syria, 1831' },
       { kind: 'area', tone: 'sage', text: 'Japan: Perry, 1853; reform, railways and mills from 1868' },
       { kind: 'flow', step: 2, text: 'Japan defeats China and takes Taiwan, 1895' },
-      { kind: 'area', tone: 'bronze', text: 'Taiwan: given to Japan by China, 1895' },
+      { kind: 'area', tone: 'bronze', text: 'Taiwan: given to Japan by China in 1895, and kept' },
       { kind: 'area', tone: 'slate', text: 'Korea: China gives up its claim, 1895' }
     ],
     note: 'Arrows join two places; they are not exact routes. Regions are approximate.'
