@@ -125,7 +125,7 @@
       alt: "A painted portrait of Muhammad Ali, an older man with a long white beard, seated on a red chair in a white turban, a dark robe and a striped sash, his right hand on the hilt of a gold-handled sword",
       url: "../assets/images/commons/modernegypt-muhammad-ali-by-auguste-couder-bap-17996-d37493.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:ModernEgypt%2C_Muhammad_Ali_by_Auguste_Couder%2C_BAP_17996.jpg",
-      caption: "A portrait of Muhammad Ali, governor of Egypt from 1805 to 1848, painted by the French artist Auguste Couder about 1840 to 1841 for King Louis-Philippe's history museum at Versailles.",
+      caption: "A portrait of Muhammad Ali, governor of Egypt from 1805 to 1848, painted by the French artist Auguste Couder in 1841 for King Louis-Philippe's history museum at Versailles.",
       prompt: "NOTICE how Muhammad Ali is dressed, how he sits, and what he holds. INFER what the painter wanted viewers to think about him. A French painter made this for a French museum: what can it not tell you about how Egyptians, or his drafted workers, saw him?"
     },
     {
@@ -133,7 +133,7 @@
       alt: "A black-and-white Japanese woodblock broadsheet: rows of feudal lords' crests and spears across the top, an American sailor on the left, and a large steamship with paddle wheel, masts, smoke and a striped flag across the bottom",
       url: "../assets/images/topics/5-6/perry-arrives-uraga-broadsheet-1853.jpg",
       sourceUrl: "https://www.loc.gov/pictures/item/2002700114/",
-      caption: "A Japanese woodblock broadsheet titled \"United States of North America: Perry arrives in Uraga, Sōshū Province.\" It shows Perry's steamship, an American sailor, a map of the coast, and the crests of the Japanese lords ordered to guard it. The Library of Congress dates it only to between 1850 and 1900; a note on it gives 8 July 1853, the day Perry arrived. Library of Congress.",
+      caption: "The right-hand sheet of a two-sheet Japanese woodblock print titled \"United States of North America: Perry arrives in Uraga, Sōshū Province.\" It shows Perry's steamship, an American sailor, a strip of coast labeled Shimoda and Izu, and the crests of the Japanese lords ordered to guard it. The Library of Congress dates the print only to between 1850 and 1900; a later pencil note on the back of its mount gives 8 July 1853, the day Perry arrived. Library of Congress.",
       prompt: "NOTICE what the ship is made to look like, and what fills the top half of the sheet. INFER what news this sheet gave Japanese readers about the threat, and about how Japan answered it. A sheet sold to the public: what can it not tell you about what Japan's rulers decided to do?"
     },
     {

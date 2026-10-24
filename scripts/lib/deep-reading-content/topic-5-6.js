@@ -201,7 +201,7 @@ module.exports = {
         {
           heading: 'A new government',
           blocks: [
-            { p: `Some samurai blamed the shogun, the military ruler who governed Japan in the emperor's name, for giving in. In <span class="num">1868</span> a group of young samurai overthrew him and governed in the name of the fifteen-year-old emperor, Meiji. This is the <span class="kt">Meiji Restoration</span>. In April 1868 the new government issued the Charter Oath, which promised: "Knowledge shall be sought throughout the world so as to strengthen the foundations of imperial rule." Its slogan was "Rich country, strong army."` }
+            { p: `Some samurai blamed the shogun, the military ruler who governed Japan in the emperor's name, for giving in. In <span class="num">1868</span> a group of young samurai overthrew him and governed in the name of the fifteen-year-old emperor, Meiji. This is the <span class="kt">Meiji Restoration</span>. In April 1868 the new government issued the Charter Oath, which promised: "Knowledge shall be sought throughout the world so as to strengthen the foundations of imperial rule." The government's slogan was "Rich country, strong army."` }
           ]
         },
         {
@@ -243,7 +243,7 @@ module.exports = {
         {
           heading: 'Then the state sells',
           blocks: [
-            { p: `Running so many businesses cost more than the government could afford. In <span class="num">1880</span> it decided to sell most of them to private investors. Business families such as Mitsui and Mitsubishi bought them and grew into huge business groups called <span class="kt">zaibatsu</span>: Mitsubishi bought the Nagasaki shipyard in 1887, and Mitsui took over the Miike coal mine, the country's largest, in 1889. Private companies such as the Osaka Spinning Company (Topic 5.4) built more. The state had started the industry; private business carried it on.` }
+            { p: `Running so many businesses cost more than the government could afford. In <span class="num">1880</span> it decided to sell most of them to private investors. Business families such as Mitsui and Mitsubishi bought them and grew into huge business groups called <span class="kt">zaibatsu</span>: Mitsubishi bought the Nagasaki shipyard in 1887, and Mitsui took over the Miike coal mine, the country's largest, in 1889. Private companies such as the Osaka Spinning Company (Topic 5.4) built more. The state started key industries; private companies carried them on and built much more.` }
           ]
         },
         {

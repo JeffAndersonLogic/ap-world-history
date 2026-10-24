@@ -1424,7 +1424,7 @@ module.exports = {
       "Making Connections"
     ],
     "supportCards": {
-      "beforeYouRead": "<strong>The state built the factories. Japan's lasted. Egypt's mostly closed.</strong> As you read, build two chains, one for each country, with the same four links: the threat, the decision, the strategy, the result. Then look for what the two chains share.",
+      "beforeYouRead": "<strong>Two states built industry. Japan's grew. Egypt's mostly closed.</strong> As you read, build two chains, one for each country, with the same four links: the threat, the decision, the strategy, the result. Then look for what the two chains share.",
       "readingTarget": "Why did a few governments build industry themselves between 1750 and 1900, and what happened when they did?"
     },
     "vocabulary": [
@@ -1526,7 +1526,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In 1868 a group of young samurai overthrew the shogun and governed in the name of the fifteen-year-old emperor, Meiji. This is the <span class=\"kt\">Meiji Restoration</span>. In April 1868 the new government made a promise, the Charter Oath: \"Knowledge shall be sought throughout the world so as to strengthen the foundations of imperial rule.\" Its slogan was \"Rich country, strong army.\""
+            "html": "In 1868 a group of young samurai overthrew the shogun and governed in the name of the fifteen-year-old emperor, Meiji. This is the <span class=\"kt\">Meiji Restoration</span>. In April 1868 the new government made a promise, the Charter Oath: \"Knowledge shall be sought throughout the world so as to strengthen the foundations of imperial rule.\" The government\'s slogan was \"Rich country, strong army.\""
           },
           {
             "type": "p",
@@ -1549,7 +1549,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Running so many businesses cost more than the government could afford. In 1880 it decided to sell most of them to private investors. Business families such as Mitsui and Mitsubishi bought them and grew into huge business groups called <span class=\"kt\">zaibatsu</span>. Private companies such as the Osaka Spinning Company (Topic 5.4) built more. The state had started the industry; private business carried it on."
+            "html": "Running so many businesses cost more than the government could afford. In 1880 it decided to sell most of them to private investors. Business families such as Mitsui and Mitsubishi bought them and grew into huge business groups called <span class=\"kt\">zaibatsu</span>. Private companies such as the Osaka Spinning Company (Topic 5.4) built more. The state started key industries; private companies carried them on and built much more."
           },
           {
             "type": "p",
@@ -1589,7 +1589,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "In Britain and the United States, private owners built the first factories, but a small number of governments built industry themselves, wanting armies to match stronger powers. In Egypt, Muhammad Ali, an Ottoman governor who wanted to hold power for his family, took control of farming and cotton and used the money to build about 30 cotton mills and weapons works for an army of about 130,000 drafted peasants. The army won wars, but in 1840 and 1841 European powers forced Egypt out of Syria and cut its army to 18,000, the 1838 trade treaty ended its monopolies, and with no coal and forced workers most factories had failed by the mid-1840s. In Japan, Perry's warships in 1853 and the unequal treaties led to the Meiji Restoration of 1868. The new government reformed Japan, built railways, the Tomioka Silk Mill, shipyards, and mines, and from 1880 sold them to private companies such as Mitsui and Mitsubishi. In 1894 Britain agreed to end its foreign courts in Japan, and Japan won a war with China in 1894 and 1895 and took Taiwan: it had become a regional power. The state built the factories. Japan's lasted. Egypt's mostly closed.",
+    "takeaway": "In Britain and the United States, private owners built the first factories, but a small number of governments built industry themselves, wanting armies to match stronger powers. In Egypt, Muhammad Ali, an Ottoman governor who wanted to hold power for his family, took control of farming and cotton and used the money to build about 30 cotton mills and weapons works for an army of about 130,000 drafted peasants. The army won wars, but in 1840 and 1841 European powers forced Egypt out of Syria and cut its army to 18,000, the 1838 trade treaty ended its monopolies, and with no coal and forced workers most factories had failed by the mid-1840s. In Japan, Perry's warships in 1853 and the unequal treaties led to the Meiji Restoration of 1868. The new government reformed Japan, built railways, the Tomioka Silk Mill, shipyards, and mines, and from 1880 sold them to private companies such as Mitsui and Mitsubishi. In 1894 Britain agreed to end its foreign courts in Japan, and Japan won a war with China in 1894 and 1895 and took Taiwan: it had become a regional power. Two states built industry. Japan's grew. Egypt's mostly closed.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [

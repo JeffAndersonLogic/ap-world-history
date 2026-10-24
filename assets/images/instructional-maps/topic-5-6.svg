@@ -83,15 +83,12 @@
   </g>
   <g id="region-labels">
     <text class="region halo" x="888.7" y="362.6" text-anchor="end" fill="#1A1C1D"><tspan x="888.7" dy="0">EGYPT</tspan></text>
-    <text class="region halo" x="968.9" y="219.7" text-anchor="middle" fill="#1A1C1D"><tspan x="968.9" dy="0">SYRIA</tspan></text>
+    <text class="region halo" x="1004.7" y="315.3" text-anchor="start" fill="#1A1C1D"><tspan x="1004.7" dy="0">SYRIA</tspan></text>
     <text class="region halo" x="1462.4" y="259.9" text-anchor="start" fill="#1A1C1D"><tspan x="1462.4" dy="0">JAPAN</tspan></text>
     <text class="region halo" x="1333.1" y="295.9" text-anchor="end" fill="#1A1C1D"><tspan x="1333.1" dy="0">KOREA</tspan></text>
     <text class="region halo" x="1367.3" y="399.3" text-anchor="start" fill="#1A1C1D"><tspan x="1367.3" dy="0">TAIWAN</tspan></text>
   </g>
   <g id="places">
-    <circle class="city" cx="938.7" cy="333.3" r="10"/>
-    <text class="place halo" x="994.7" y="329.3" text-anchor="start">Cairo</text>
-    
     <circle class="city" cx="928.9" cy="272.2" r="10"/>
     <text class="place halo" x="948.9" y="256.2" text-anchor="start">Istanbul</text>
     <text class="placenote halo" x="948.9" y="278.2" text-anchor="start">the sultan</text>

@@ -343,3 +343,33 @@ ownership: no findings.
     question and BeSurreal letter are answered in their own texts; **rejected**: comprehension-level
     tasks by design. (c) Couder alt text; **fixed** (sash, hand on the sword hilt). (d) Slide 11's note
     pointed at the wrong slide; **fixed**.
+
+**History reviewer: 10 findings, all supported; all fixed (two had already been fixed by the
+page-truth changes in this pass).**
+
+1. The map's SYRIA label sat far north of Syria. **Fixed:** the label sits beside its ring; the Cairo
+   point is dropped so the label can be placed there (Egypt keeps its own label).
+2. The retelling slide gave Egypt's threat as "Napoleon's army, 1798," anachronistic for a governor
+   from 1805; Fahmy: the army was to "confront any probable attempt by the Sultan to dislodge him."
+   **Fixed:** "Rival: the sultan; model: Napoleon's army."
+3. Slide 19's "no European power took its land or cut its army" (the Yokohama garrison, 1862 to 1875;
+   the Triple Intervention). **Already fixed** in this pass: "Never conquered or colonized, though
+   forced into unequal treaties."
+4. The Perry caption called the pencil date a note "on it" and did not say the picture is half the
+   print. **Fixed:** "the right-hand sheet of a two-sheet print"; "a later pencil note on the back of
+   its mount" (LoC 2002700114).
+5. A slide 6 note said Muhammad Ali arrived "after the French had gone." **Fixed:** he arrived in 1801
+   with the troops sent to drive them out (LoC 21).
+6. "The state built the factories. Japan's lasted" overstated the state's role in Japan's industry
+   (Tang, 2008: little research substantiates the efficacy of public investment; much growth was
+   private). **Fixed:** the wall line is now "Two states built industry. Japan's grew. Egypt's mostly
+   closed."; "the state started key industries; private companies carried them on and built much
+   more"; slide 16's title.
+7. A note credited "founder of modern Egypt" to nationalist history alone. **Fixed:** Dodwell (1931),
+   then Egyptian nationalist historians (Fahmy, note 2).
+8. The headman's "does not have to rise again" implied a past rise (the tax was cut in 1877).
+   **Fixed:** "does not have to rise."
+9. The Couder portrait was dated "about 1840 to 1841." **Fixed:** 1841 (Commons: commissioned 1841;
+   Wikidata Q119839774, inception 1841).
+10. "Its slogan" after the Charter Oath read as part of the Oath. **Fixed:** "The government's slogan"
+    (First & 10, deep reading, room).

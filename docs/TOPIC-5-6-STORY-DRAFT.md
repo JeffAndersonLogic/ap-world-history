@@ -5,8 +5,8 @@ Drafted 2026-10-24 from the CED source file, for the build Jeff started with "Bu
 reviewers check this story and every surface built from it against that file and the scholarship.
 Nothing ships until Jeff says "ship it".
 
-**Resume here (2026-10-24):** Review pass 1 is fixed and logged (claim ledger). Next: recapture
-and run pass 2. The Unit 5 reading fingerprint has not moved.
+**Resume here (2026-10-24):** Review passes 1 and 2 are fixed and logged (claim ledger). Next:
+recapture and run pass 3 (the last under the three-pass rule). The Unit 5 reading fingerprint has not moved.
 
 **Taught:** no dates yet. The schedule ends with the Era 3 Exam (Green Monday 2026-11-23, Silver
 Tuesday 2026-11-24), and neither the schedule nor any comment in it names a Unit 5 class day (5.1 to
@@ -196,7 +196,7 @@ blamed the shogun, the military ruler who governed in the emperor's name, for gi
 **A new government, and a new aim.** In 1868 a group of young samurai overthrew the shogun and
 governed in the name of the teenage emperor, Meiji. This is the Meiji Restoration. In April 1868 the
 new government promised, in the Charter Oath, that "Knowledge shall be sought throughout the world so
-as to strengthen the foundations of imperial rule." Its slogan was "Rich country, strong army."
+as to strengthen the foundations of imperial rule." The government's slogan was "Rich country, strong army."
 
 **Reform first.** The Meiji leaders changed Japan itself. In 1871 they abolished the domains of the old
 lords and made one central state. The samurai lost their privileges, and men of every class were
@@ -272,7 +272,7 @@ objective asks for causes and effects.
 regional power" is KC-5.2.II.A; "wanting armies to match stronger powers ... to make their states strong"
 and "most of them closed" are the objective's causes and effects.
 
-Shorter for the wall: **The state built the factories. Japan's lasted. Egypt's mostly closed.**
+Shorter for the wall: **Two states built industry. Japan's grew. Egypt's mostly closed.**
 
 ## 5. Must-have evidence and what each one proves
 
@@ -340,7 +340,7 @@ memory:
 | **Strategy** | State control of crops; cotton mills; drafted workers; foreign machines | Railways, silk mills, shipyards; foreign experts; then sold to private companies |
 | **Result** | Wins wars; then pressure from Europe, no coal and forced labor; most factories close | Industry grows; treaties revised; beats China, takes Taiwan: regional power |
 
-Result line: **The state built the factories. Japan's lasted. Egypt's mostly closed.**
+Result line: **Two states built industry. Japan's grew. Egypt's mostly closed.**
 
 Why this shape: the reasoning move is Causation and the skill is 5.A (patterns). The same four links
 in both chains are the pattern; the last link is the difference.

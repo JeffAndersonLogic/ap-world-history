@@ -103,7 +103,7 @@ window.BEHISTORICAL_TEACHING = {
   slides: [
     {
       phase: 'preflight', kind: 'question', eyebrow: 'Teacher Preflight · 2 Minutes',
-      title: 'The state built the factories. Japan\'s lasted. Egypt\'s mostly closed.',
+      title: 'Two states built industry. Japan\'s grew. Egypt\'s mostly closed.',
       subtitle: 'Causation, with Making Connections 5.A. Why did a few governments build industry themselves, and what happened when they did?',
       notes: {
         minutes: 2,
@@ -215,9 +215,9 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'The Library of Congress\'s Egypt: A Country Study: the French "defeated the Mamluk army at Shubra Khit and Imbabah, and entered Cairo on July 25" (1798); Muhammad Ali came in 1801 with "the Albanian contingent of Ottoman forces"; the Ottomans appointed him governor in June 1805; in March 1811 his rivals, the Mamluk leaders, were killed in the Cairo Citadel, and "from then on, Muhammad Ali was the sole ruler of Egypt."',
           'His aim: the Country Study says he "wanted to detach Egypt from the Ottoman Empire, and he realized that to do so Egypt had to be strong economically and militarily." The historian Khaled Fahmy argues that the army served his "dynastic needs": hereditary rule for his family, inside the empire. The deck says "hold it for his family, even against the sultan," which both support.',
-          'Why the French mattered: the OER Project\'s AP World article says Egypt "lost to Napoleon\'s French army in 1798" and that Muhammad Ali "put in motion a campaign of modernization, beginning with his military." Muhammad Ali himself arrived in 1801, after the French had gone; the lesson says the victory showed what a modern European army could do, not that he saw it.',
+          'Why the French mattered: the OER Project\'s AP World article says Egypt "lost to Napoleon\'s French army in 1798" and that Muhammad Ali "put in motion a campaign of modernization, beginning with his military." Muhammad Ali arrived in 1801 with the Ottoman troops sent to drive the French out; he did not see the 1798 battles himself, and the lesson says the victory showed what a modern European army could do, not that he saw it.',
           'He was an Ottoman governor, not an Egyptian nationalist: his court\'s official language was Ottoman Turkish (myth 2, slide 20).',
-          'The picture is a real portrait: Auguste Couder, Muhammad Ali, oil on canvas, about 1840 to 1841, commissioned by the French king Louis-Philippe for his history museum at Versailles (public domain, mirrored from Wikimedia Commons). A commissioned portrait is an argument about the sitter: dress, pose and setting are chosen, and here a French painter chose them for a French museum.'
+          'The picture is a real portrait: Auguste Couder, Muhammad Ali, oil on canvas, 1841, commissioned by the French king Louis-Philippe for his history museum at Versailles (public domain, mirrored from Wikimedia Commons). A commissioned portrait is an argument about the sitter: dress, pose and setting are chosen, and here a French painter chose them for a French museum.'
         ],
         ask: 'What did Egypt\'s rulers lose to in 1798, and what might a new governor learn from it?',
         listenFor: 'A European army with modern weapons beating Egypt\'s rulers easily.',
@@ -352,7 +352,7 @@ window.BEHISTORICAL_TEACHING = {
           'KC-5.2.II.A begins here: "The expansion of U.S. and European influence in Asia led to internal reform in Japan."',
           'Columbia University\'s Asia for Educators: in 1853 Perry\'s squadron entered the bay near Edo (Tokyo); "It was clear that Commodore Perry could impose his demands by force. The Japanese had no navy with which to defend themselves." The 1854 treaty allowed "trade at two ports"; the 1858 treaty "opened more ports." The treaties "limited its control over its own foreign trade and required that crimes concerning foreigners in Japan be tried not in Japanese but in Western courts." Britain, Russia, France and the Netherlands made treaties too. A tariff convention of 1866 set import duties at a uniform 5 percent (Japan Customs); Japan won back full control of its tariffs only in 1911.',
           'Some samurai blamed the shogun for giving in, and in 1868 they overthrew him (slide 13).',
-          'The picture is a real Japanese broadsheet: "United States of North America: Perry arrives in Uraga, Sōshū Province," woodblock print (Library of Congress, no known restrictions). It shows Perry\'s steamship, an American sailor, a strip of coast labeled Shimoda and Izu, and the crests of the lords ordered to guard the coast. The Library dates it only to between 1850 and 1900; a note on it gives the date of Perry\'s arrival, 8 July 1853.'
+          'The picture is a real Japanese broadsheet: "United States of North America: Perry arrives in Uraga, Sōshū Province," woodblock print (Library of Congress, no known restrictions). It shows Perry\'s steamship, an American sailor, a strip of coast labeled Shimoda and Izu, and the crests of the lords ordered to guard the coast. The Library dates it only to between 1850 and 1900; a later pencil note on the back of its mount gives the date of Perry\'s arrival, 8 July 1853. It is the right-hand sheet of a two-sheet print; the Library says the left sheet has a map of the Sagami (Sōshū) coast.'
         ],
         ask: 'Which of the treaty terms would anger you most if you were a samurai?',
         listenFor: 'Foreigners tried in their own courts; losing control of trade; giving in without a fight.',
@@ -407,7 +407,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'japan-build', kind: 'story-scene', eyebrow: 'Japan · Build It, Then Sell It',
-      kc: 'KC-5.2.II.A', title: 'The state started the industry. Private companies carried it on.',
+      kc: 'KC-5.2.II.A', title: 'The state started key industries. Private companies built on them.',
       footer: 'Business families such as Mitsui and Mitsubishi grew into huge business groups: the zaibatsu.',
       template: {
         steps: [
@@ -539,7 +539,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Myth 1 is slides 13 and 15: the Charter Oath\'s purpose, and the choices of French and British experts.',
-          'Myth 2: Muhammad Ali has been called "the founder of modern Egypt," a label from later Egyptian nationalist history (Fahmy). He was of Albanian origin, and "Ottoman Turkish was the official language of his court rather than Arabic." He built for his family\'s hereditary rule, which the 1841 decree granted.',
+          'Myth 2: Muhammad Ali has been called "the founder of modern Egypt," a label made famous by the British historian Henry Dodwell (The Founder of Modern Egypt, 1931) and taken up by Egyptian nationalist historians (Fahmy, who disputes it). He was of Albanian origin, and "Ottoman Turkish was the official language of his court rather than Arabic." He built for his family\'s hereditary rule, which the 1841 decree granted.',
           'Myth 3 is slide 9.'
         ],
         ask: 'Which myth would most hurt an essay answer, and why?',
@@ -549,10 +549,10 @@ window.BEHISTORICAL_TEACHING = {
     {
       retelling: true,
       phase: 'retell', kind: 'split-scenes', eyebrow: 'The Whole Topic',
-      title: 'The state built the factories. Japan\'s lasted. Egypt\'s mostly closed.',
+      title: 'Two states built industry. Japan\'s grew. Egypt\'s mostly closed.',
       footer: 'With your notes closed, redraw both chains, then name the pattern and the difference.',
       template: {
-        left: { name: 'Egypt, Muhammad Ali', items: ['Threat: Napoleon\'s army, 1798', 'State mills supply an army', 'Europe cuts the army; no coal; most mills close'] },
+        left: { name: 'Egypt, Muhammad Ali', items: ['Rival: the sultan; model: Napoleon\'s army', 'State mills supply an army', 'Europe cuts the army; no coal; most mills close'] },
         right: { name: 'Japan, the Meiji era', items: ['Threat: Perry\'s warships, 1853', 'Reform, railways, mills; then sold', 'Beats China, takes Taiwan: a regional power'] },
         bothLabel: 'The pattern',
         both: ['Armies to match stronger powers', 'The state builds industry to make itself strong']
@@ -618,7 +618,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'close', kind: 'frame-subtitle', eyebrow: 'The Hand-off',
-      title: 'The state built the factories. Japan\'s lasted. Egypt\'s mostly closed.',
+      title: 'Two states built industry. Japan\'s grew. Egypt\'s mostly closed.',
       subtitle: 'The Citadel of Cairo, where Muhammad Ali ruled. Next, Topic 5.7: who owned the industrial world\'s businesses, and how money moved.',
       notes: {
         minutes: 2,

@@ -112,11 +112,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "visual": {
           "url": "../assets/images/commons/modernegypt-muhammad-ali-by-auguste-couder-bap-17996-d37493.jpg",
           "alt": "A painted portrait of Muhammad Ali, an older man with a long white beard, seated on a red chair in a white turban, a dark robe and a striped sash, his right hand on the hilt of a gold-handled sword",
-          "credit": "Auguste Couder, Muhammad Ali, oil on canvas, about 1840 to 1841 · Versailles · Public domain",
+          "credit": "Auguste Couder, Muhammad Ali, oil on canvas, 1841 · Versailles · Public domain",
           "ratio": 0.791,
           "position": "50% 30%"
         },
-        "caption": "Muhammad Ali, painted about 1840 to 1841"
+        "caption": "Muhammad Ali, painted in 1841"
       }
     },
     {
@@ -322,7 +322,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "story-scene",
       "eyebrow": "Japan · Build It, Then Sell It",
-      "title": "The state started the industry. Private companies carried it on.",
+      "title": "The state started key industries. Private companies built on them.",
       "footer": "Business families such as Mitsui and Mitsubishi grew into huge business groups: the zaibatsu.",
       "kc": "KC-5.2.II.A",
       "template": {
@@ -490,13 +490,13 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "split-scenes",
       "eyebrow": "The Whole Topic",
-      "title": "The state built the factories. Japan's lasted. Egypt's mostly closed.",
+      "title": "Two states built industry. Japan's grew. Egypt's mostly closed.",
       "footer": "With your notes closed, redraw both chains, then name the pattern and the difference.",
       "template": {
         "left": {
           "name": "Egypt, Muhammad Ali",
           "items": [
-            "Threat: Napoleon's army, 1798",
+            "Rival: the sultan; model: Napoleon's army",
             "State mills supply an army",
             "Europe cuts the army; no coal; most mills close"
           ],
@@ -571,7 +571,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "frame-subtitle",
       "eyebrow": "The Hand-off",
-      "title": "The state built the factories. Japan's lasted. Egypt's mostly closed.",
+      "title": "Two states built industry. Japan's grew. Egypt's mostly closed.",
       "subtitle": "The Citadel of Cairo, where Muhammad Ali ruled. Next, Topic 5.7: who owned the industrial world's businesses, and how money moved.",
       "template": {
         "visual": {
