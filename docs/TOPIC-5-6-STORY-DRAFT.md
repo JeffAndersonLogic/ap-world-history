@@ -5,6 +5,10 @@ Drafted 2026-10-24 from the CED source file, for the build Jeff started with "Bu
 reviewers check this story and every surface built from it against that file and the scholarship.
 Nothing ships until Jeff says "ship it".
 
+**Resume here (2026-10-24):** Phases 0 to 8 are finished and pushed. Phase 9 review pass 1 is
+running (packet from `capture-topic-for-review.js 5.6`); its findings are not yet logged in the claim
+ledger. Next: fix and log pass 1, recapture, run pass 2. The Unit 5 reading fingerprint has not moved.
+
 **Taught:** no dates yet. The schedule ends with the Era 3 Exam (Green Monday 2026-11-23, Silver
 Tuesday 2026-11-24), and neither the schedule nor any comment in it names a Unit 5 class day (5.1 to
 5.5 are not scheduled either). The build adds no schedule entries; the dates are an open item in the
