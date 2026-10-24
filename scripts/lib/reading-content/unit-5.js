@@ -1512,7 +1512,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>More than one cause.</strong> Some causes of the result came from outside Egypt (the powers of 1840 and the 1838 treaty) and some from inside (no coal, forced workers, new managers). A strong answer names at least one of each, and does not pretend one cause explains everything.</p>"
+          "raw": "<p><strong>More than one cause.</strong> Some causes of the result came from outside Egypt (the powers of 1840 and the 1838 treaty) and some from inside (almost no coal, forced workers, new managers). A strong answer names at least one of each, and does not pretend one cause explains everything.</p>"
         }
       },
       {
@@ -1553,7 +1553,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Japan grew strong. In 1894 Britain agreed to end the foreign courts in Japan from 1899, so that foreigners there would be tried by Japanese law, and other countries followed. Japan won back full control of its taxes on foreign goods only in 1911. In 1894 and 1895 Japan fought China over Korea and won. In the Treaty of Shimonoseki, China gave up its claim over Korea, gave the island of Taiwan to Japan, and agreed to pay 200 million taels of silver (a tael is a Chinese measure of silver). Japan, forced to open its ports forty years before, was now a <span class=\"kt\">regional power</span>, a state strong enough to win wars and gain land in its own part of the world, with a colony of its own. What empires did with that power is Unit 6."
+            "html": "Japan grew strong. To win back its own courts, it rewrote its laws on French and German models, and in July 1894 Britain agreed to end the foreign courts in Japan from 1899, so that foreigners there would be tried by Japanese law; other countries followed. Japan won back full control of its taxes on foreign goods only in 1911. Weeks later, in 1894 and 1895, Japan fought China over Korea and won. In the Treaty of Shimonoseki, China gave up its claim over Korea, gave the island of Taiwan to Japan, and agreed to pay 200 million taels of silver (a tael is a Chinese measure of silver). Japan, forced to open its ports forty years before, was now a <span class=\"kt\">regional power</span>, a state strong enough to win wars and gain land in its own part of the world, with a colony of its own. What empires did with that power is Unit 6."
           }
         ],
         "callout": {
@@ -1576,7 +1576,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "So, what caused these economic strategies, and what were their effects? The wish for armies to match stronger powers made a small number of governments build industry themselves. Muhammad Ali's Egypt built cotton mills and weapons works to supply an army; it won wars for a while, but European pressure, missing coal, and forced labor closed most of the factories. In Japan, Perry's warships and the unequal treaties led to the Meiji reforms; the state built railways and mills and then sold them to private companies, and the industry it started helped make Japan strong enough to defeat China, take Taiwan, and begin ending the unequal treaties."
+            "html": "So, what caused these economic strategies, and what were their effects? The wish for armies to match stronger powers made a small number of governments build industry themselves. Muhammad Ali's Egypt built cotton mills and weapons works to supply an army; it won wars for a while, but European pressure, missing coal, and forced labor closed most of the factories. In Japan, Perry's warships and the unequal treaties led to the Meiji reforms; the state built railways and mills and then sold them to private companies, and the industry it started helped make Japan strong enough to defeat China and take Taiwan, while its legal reforms began ending the unequal treaties."
           },
           {
             "type": "p",
@@ -1589,7 +1589,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "In Britain and the United States, private owners built the first factories, but a small number of governments built industry themselves, wanting armies to match stronger powers. In Egypt, Muhammad Ali, an Ottoman governor who wanted to hold power for his family, took control of farming and cotton and used the money to build about 30 cotton mills and weapons works for an army of about 130,000 drafted peasants. The army won wars, but in 1840 and 1841 European powers forced Egypt out of Syria and cut its army to 18,000, the 1838 trade treaty ended its monopolies, and with no coal and forced workers most factories had failed by the mid-1840s. In Japan, Perry's warships in 1853 and the unequal treaties led to the Meiji Restoration of 1868. The new government reformed Japan, built railways, the Tomioka Silk Mill, shipyards, and mines, and from 1880 sold them to private companies such as Mitsui and Mitsubishi. In 1894 Britain agreed to end its foreign courts in Japan, and Japan won a war with China in 1894 and 1895 and took Taiwan: it had become a regional power. Two states built industry. Japan's grew. Egypt's mostly closed.",
+    "takeaway": "In Britain and the United States, private owners built the first factories, but a small number of governments built industry themselves, wanting armies to match stronger powers. In Egypt, Muhammad Ali, an Ottoman governor who wanted to hold power for his family, took control of farming and cotton and used the money to build about 30 cotton mills and weapons works for an army of about 130,000 drafted peasants. The army won wars, but in 1840 and 1841 European powers forced Egypt out of Syria and cut its army to 18,000, the 1838 trade treaty ended its monopolies, and with almost no coal and forced workers most factories had failed by the mid-1840s. In Japan, Perry's warships in 1853 and the unequal treaties led to the Meiji Restoration of 1868. The new government reformed Japan, built railways, the Tomioka Silk Mill, shipyards, and mines, and from 1880 sold them to private companies such as Mitsui and Mitsubishi. After Japan rewrote its laws, Britain agreed in 1894 to end its foreign courts in Japan, and Japan won a war with China in 1894 and 1895 and took Taiwan: it had become a regional power. Two states built industry. Japan's grew. Egypt's mostly closed.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [

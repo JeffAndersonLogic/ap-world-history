@@ -1,8 +1,14 @@
 # Topic 5.6 Claim Ledger: Industrialization: Government's Role from 1750 to 1900
 
-**Status: open. Started with the story draft (2026-10-24); every claim in the story was checked
-against sources before the surfaces were written. Review findings and their dispositions go at the
-end.**
+**Status: closed 2026-10-24. Started with the story draft; every claim in the story was checked
+against sources before the surfaces were written. Three independent review passes followed; the loop
+closed on the three-pass safety valve with every finding fixed or rejected with a reason. Review
+findings and their dispositions are at the end.**
+
+**Where a claim appears.** Rows marked "Story" were written into the story first and carried, in the
+same wording, into the First & 10, the deep reading and eBook chapter, the lecture cards and the deck;
+rows changed by review name their surfaces. "Where it appears" was not filled surface by surface for
+every Story row.
 
 **The CED decides scope; scholarship decides truth.** The CED (`scripts/lib/ced-source/unit-5.js`,
 p. 105) gives 5.6 one learning objective (G), two Key Concepts (KC-5.1.V.C and KC-5.2.II.A), one
@@ -403,3 +409,31 @@ finding.** CED alignment, ownership and accessibility: no further findings.
    "seeking knowledge ... which the Charter Oath said would 'strengthen the foundations of imperial
    rule'" (First & 10, slide 20); the room card names the slogan for industry.
 9. Checkpoint 2's focus term "independent" is taught nowhere. **Fixed:** "never conquered."
+
+**History reviewer: 4 findings, all supported and fixed.**
+
+1. The 1894 treaty revision was presented as a result of Japan's industrial strength and as evidence
+   of regional power; Columbia ties it to legal reform ("changed its entire legal system ... The
+   Western nations finally agreed to revise the treaties in 1894"), and it was signed on 16 July 1894,
+   before the war with China. **Fixed:** First & 10, lecture card, deep reading, slide 16 (a "Laws"
+   row) and its notes, the synthesis and model-answer notes: Japan rewrote its laws, then Britain agreed
+   to end the foreign courts; the war came weeks later; regional power rests on the war, Taiwan and the
+   indemnity.
+2. "No coal" on four surfaces against "almost no coal" elsewhere. **Fixed:** "almost no coal," "little
+   coal," "too little ___."
+3. "British loans" against "a British loan." **Fixed:** "money raised in Britain" everywhere.
+4. The decree card's alt text dropped the cut, and the card named no source. **Fixed:** the alt text
+   says where the text is cut; the label names the Historical Text Archive's English text.
+
+**Own pass after the fixes:** the slide-template browser test found slide 20's myth row 9px over its
+board in the brand fonts after finding 8 lengthened it. **Fixed:** shorter evidence line; the test
+passes.
+
+### The loop closes
+
+Three full passes in a row found supported defects, so the loop stops on the safety valve. The trend
+was down and to small items: 27 supported findings in pass 1 (a threat link that did not fit Egypt,
+the treaty overclaim, father-to-son succession), 21 in pass 2 (the pattern wording, the spine's claim
+for Japan, the Syria label), 13 in pass 3 (one medium causal claim about the 1894 treaty, the rest
+labels, wording and consistency). No new myth or wrong date after pass 2. Every finding is fixed or
+answered above.

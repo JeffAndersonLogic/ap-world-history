@@ -366,8 +366,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "date": "1894 to 1895",
         "rows": [
           {
-            "label": "Treaties",
-            "text": "1894: Britain agrees to **end the foreign courts** in Japan (from 1899); others follow"
+            "label": "Laws",
+            "text": "Japan rewrites its laws; in July 1894 Britain agrees to **end the foreign courts** (from 1899)"
           },
           {
             "label": "War",
@@ -471,7 +471,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "rows": [
           {
             "myth": "Japan just copied the West.",
-            "evidence": "Its leaders chose what to borrow and from whom, a French silk mill and British railway engineers, seeking knowledge the Charter Oath said would \"strengthen the foundations of imperial rule.\"",
+            "evidence": "Its leaders chose what to borrow and from whom: a French silk mill, British railway engineers.",
             "source": "KC-5.2.II.A"
           },
           {
@@ -498,7 +498,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "items": [
             "Threat: the sultan, and armies like Napoleon's",
             "State mills supply an army",
-            "Europe cuts the army; no coal; most mills close"
+            "Europe cuts the army; little coal; most mills close"
           ],
           "visual": {
             "url": "../assets/images/topics/5-6/cairo-citadel-photochrom-c1900.jpg",
@@ -536,7 +536,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Say it in one sentence.",
       "kc": "Unit 5: Learning Objective G",
       "template": {
-        "frame": "To match stronger ___, Egypt and Meiji ___ built state industry. Egypt's mills fed an ___ until European pressure, no ___ and other problems closed most; Japan ___ itself and became a ___ power.",
+        "frame": "To match stronger ___, Egypt and Meiji ___ built state industry. Egypt's mills fed an ___ until European pressure, too little ___ and other problems closed most; Japan ___ itself and became a ___ power.",
         "words": [
           "powers",
           "Japan",

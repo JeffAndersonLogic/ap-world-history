@@ -162,8 +162,8 @@
     },
     {
       title: "The Sultan's Decree of 1841",
-      alt: "A text card with two lines from the 1841 decree. First: I grant unto thee the Government of Egypt, together with the additional privilege of hereditary succession. Second: In time of peace, 18,000 men will suffice for the internal service of the province of Egypt; it shall not be allowed to increase their numbers.",
-      label: "Ottoman decree granting Muhammad Ali Egypt · 1841 · English text",
+      alt: "A text card with two lines from the 1841 decree. First: I grant unto thee the Government of Egypt, then a cut in the text, then: together with the additional privilege of hereditary succession. Second: In time of peace, 18,000 men will suffice for the internal service of the province of Egypt; it shall not be allowed to increase their numbers.",
+      label: "Ottoman decree granting Muhammad Ali Egypt · 1841 · English text as reprinted by the Historical Text Archive",
       sourceText: ["\"I grant unto thee the Government of Egypt ... together with the additional privilege of hereditary succession.\"", "\"In time of peace, 18,000 men will suffice for the internal service of the province of Egypt; it shall not be allowed to increase their numbers.\""],
       caption: "Two lines from the English text of the decree in which the Ottoman sultan, in 1841, made the governorship of Egypt hereditary in Muhammad Ali's family and limited its army. Egypt's army had been about 130,000 strong in the early 1830s.",
       prompt: "Read both lines. INFER what Muhammad Ali gained and what he lost in 1841. Then explain what cutting the army might mean for factories that made uniforms and guns. A decree says what was ordered: what can it not tell you about what actually happened to the factories?"

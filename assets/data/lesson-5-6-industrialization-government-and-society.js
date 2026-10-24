@@ -111,7 +111,7 @@ window.BEHISTORICAL_LESSON = {
           "**Reform first:** in 1871 the old lords' domains were abolished. The samurai lost their privileges, and men of every class were drafted into a national army. A national school system began in 1872, and a land tax paid in money gave the government money to spend. From 1871 to 1873 the Iwakura Mission studied the United States and Europe.",
           "**The state builds:** the government opened Japan's first railway, Tokyo to Yokohama, in 1872, with British engineers, and the Tomioka Silk Mill in the same year, with French machines and a French engineer. It built telegraph lines, shipyards, mines, and factories.",
           "**Then it sells:** in 1880 the government decided to sell most of its businesses to private investors. Families such as Mitsui and Mitsubishi bought them and grew into huge business groups, the zaibatsu.",
-          "**A regional power:** in 1894 Britain agreed to end the foreign courts in Japan (from 1899); Japan won back full control of its tariffs only in 1911. In 1894 and 1895 Japan fought China over Korea and won: China gave up its claim over Korea, gave Taiwan to Japan, and agreed to pay 200 million taels of silver (a tael is a Chinese measure of silver). Japan kept Taiwan as a colony. What empires did with that power is Unit 6."
+          "**The treaties and a war:** after Japan rewrote its laws on French and German models, Britain agreed in July 1894 to end the foreign courts in Japan (from 1899); Japan won back full control of its tariffs only in 1911. **A regional power:** weeks later, in 1894 and 1895, Japan fought China over Korea and won: China gave up its claim over Korea, gave Taiwan to Japan, and agreed to pay 200 million taels of silver (a tael is a Chinese measure of silver). Japan kept Taiwan as a colony. What empires did with that power is Unit 6."
         ],
         image: {
           title: "The First Steam Train Leaving Yokohama, about 1872",
@@ -124,7 +124,7 @@ window.BEHISTORICAL_LESSON = {
         title: "Line Up the Two Cases",
         bullets: [
           "**Threat:** for Egypt, European armies like the one Napoleon brought in 1798, which Muhammad Ali wanted to match, and the sultan he meant to hold Egypt against. For Japan, the American and European warships that forced its ports open in the 1850s.",
-          "**Strategy, who paid for the first factories:** in Egypt, the state, with money from its cotton monopoly. In Japan, the state, with money from the land tax, and, for the first railway, a British loan.",
+          "**Strategy, who paid for the first factories:** in Egypt, the state, with money from its cotton monopoly. In Japan, the state, with money from the land tax, and, for the first railway, money raised in Britain.",
           "**Strategy, where the machines and know-how came from:** Egypt bought machines in Europe, hired European experts, and sent students to Europe in the 1820s. Japan used British engineers for its railway and a French engineer and French machines at Tomioka, and sent the Iwakura Mission abroad from 1871 to 1873.",
           "**Strategy, who did the work:** Egypt drafted peasants into its mills and its army. Japan drafted men of every class into its army and hired workers, many of them young women, for mills such as Tomioka.",
           "**Fuel:** Egypt had almost no coal, so many machines were turned by animals. Japan had coal of its own.",

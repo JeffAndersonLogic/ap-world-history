@@ -1,13 +1,12 @@
 # Topic 5.6 Story Draft: Industrialization: Government's Role from 1750 to 1900
 
-**Status: Delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12).**
-Drafted 2026-10-24 from the CED source file, for the build Jeff started with "Build 5.6." Phase 9's
-reviewers check this story and every surface built from it against that file and the scholarship.
-Nothing ships until Jeff says "ship it".
-
-**Resume here (2026-10-24):** Review passes 1 and 2 are fixed and logged. Pass 3 (packet
-`review3`) is running; its findings are not yet logged. Next: fix and log pass 3, then close the loop,
-move the Unit 5 reading fingerprint, write the audit record.
+**Status: Approved 2026-10-24 by the independent reviewer loop (Jeff's standing rule of 2026-10-12).**
+Drafted 2026-10-24 from the CED source file, for the build Jeff started with "Build 5.6." Three review
+passes checked it and every surface built from it against that file and the scholarship; the loop
+closed on the three-pass safety valve with every finding fixed or rejected with a reason
+(`docs/TOPIC-5-6-CLAIM-LEDGER.md`, Review findings). Review changed the shared link to "armies to match
+stronger powers" and the wall line to "Two states built industry. Japan's grew. Egypt's mostly
+closed."; the sections below carry those changes. Nothing ships until Jeff says "ship it".
 
 **Taught:** no dates yet. The schedule ends with the Era 3 Exam (Green Monday 2026-11-23, Silver
 Tuesday 2026-11-24), and neither the schedule nor any comment in it names a Unit 5 class day (5.1 to
@@ -219,7 +218,7 @@ Mitsubishi bought them and grew into huge companies, the zaibatsu. Private compa
 Spinning Company (Topic 5.4) built more. The state had started the industry; private business carried
 it on.
 
-**And Japan became a regional power.** In 1894 Britain agreed to end the foreign courts in Japan
+**And Japan became a regional power.** After Japan rewrote its laws on French and German models, in July 1894 Britain agreed to end the foreign courts in Japan
 (the change took effect in 1899), and other powers followed; full control of tariffs came only in 1911. In 1894 and 1895 Japan fought China over
 Korea and won. In the Treaty of Shimonoseki, China gave up its claim over Korea, gave Taiwan to Japan,
 and agreed to pay 200 million taels of silver. Russia, Germany and France forced Japan to give back
