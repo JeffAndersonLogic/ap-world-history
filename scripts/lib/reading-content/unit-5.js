@@ -1418,7 +1418,7 @@ module.exports = {
     "showFooterNote": false,
     "headerSubtitle": "Topic 5.6, Industrialization: Government’s Role, 1750 to 1900 &nbsp;|&nbsp; AP World History: Modern",
     "titleHtml": "Industry <em>on Purpose</em>",
-    "deck": "In Britain and the United States, private owners built the first factories. A few governments did not wait. Afraid of stronger, better-armed powers, they built industry themselves. This reading follows two of them, Egypt under Muhammad Ali and Japan in the Meiji era: why each government acted, what it built, and why one strategy lasted while the other mostly ended.",
+    "deck": "In Britain and the United States, private owners built the first factories. A few governments did not wait. Wanting armies to match stronger powers, they built industry themselves. This reading follows two of them, Egypt under Muhammad Ali and Japan in the Meiji era: why each government acted, what it built, and why one strategy lasted while the other mostly ended.",
     "skillTags": [
       "Causation",
       "Making Connections"
@@ -1453,7 +1453,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Why would a government do that? Because it was afraid. By the early 1800s, the countries with factories, steam power, and new weapons were becoming the strongest in the world. A ruler watching them could see that a country without industry could be beaten in war, or forced to sign whatever it was told to sign. Two of the clearest cases of a government that decided to build industry itself are Egypt under Muhammad Ali and Japan in the Meiji era."
+            "html": "Why would a government do that? To be strong. By the early 1800s, the countries with factories, steam power, and new weapons were becoming the strongest in the world. A ruler watching them could see that a country without industry could be beaten in war, or forced to sign whatever it was told to sign, and that a ruler with a modern army could hold on to power, or win more. Two of the clearest cases of a government that decided to build industry itself are Egypt under Muhammad Ali and Japan in the Meiji era."
           }
         ],
         "callout": {
@@ -1568,15 +1568,15 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Put the two cases side by side. Both governments acted because they feared stronger, better-armed powers: for Muhammad Ali, European armies like Napoleon's and the sultan he might have to defy; for Japan, the Western warships. In both, the state, not private owners, paid for the first factories. Both bought foreign machines, hired foreign experts, and sent people abroad to learn. In both, farmers paid much of the bill. And both wanted the same result: a state strong enough to defend itself, with an army to match. When the same links show up in different cases, that is a <span class=\"kt\">pattern</span>."
+            "html": "Put the two cases side by side. Both governments wanted an army and industry to match stronger powers: Muhammad Ali, to match armies like Napoleon's and to hold Egypt against the sultan; Japan, to answer the Western warships. In both, the state, not private owners, paid for the first factories. Both bought foreign machines, hired foreign experts, and sent people abroad to learn. In both, farmers paid much of the bill. And both wanted the same result: a state strong enough to defend itself, with an army to match. When the same links show up in different cases, that is a <span class=\"kt\">pattern</span>."
           },
           {
             "type": "p",
-            "html": "The difference is what happened next. Japan's industry lasted and grew; Egypt's mostly closed. Historians point to several reasons. Japan was an independent country, while Egypt was a province of the Ottoman Empire that European powers forced to cut its army and open its markets. Japan reformed its whole society, while Egypt's factories were one ruler's project, run with drafted workers. Japan had coal of its own, and Egypt had almost none. And Japan's government handed its industries to private companies that kept them running. Japan also had to accept low taxes on foreign goods under its unequal treaties, about 5 percent from 1866, through the years it was building its industry, so outside pressure alone does not explain the difference."
+            "html": "The difference is what happened next. Japan's industry lasted and grew; Egypt's mostly closed. Historians point to several reasons. Japan was never conquered or colonized, though it was forced into unequal treaties, while Egypt was a province of the Ottoman Empire that European powers forced to cut its army and open its markets. Japan reformed its whole society, while Egypt's factories were one ruler's project, run with drafted workers. Japan had coal of its own, and Egypt had almost none. And Japan's government handed its industries to private companies that kept them running. Japan also had to accept low taxes on foreign goods under its unequal treaties, about 5 percent from 1866, through the years it was building its industry, so outside pressure alone does not explain the difference."
           },
           {
             "type": "p",
-            "html": "So, what caused these economic strategies, and what were their effects? Fear of stronger, better-armed powers made a small number of governments build industry themselves. Muhammad Ali's Egypt built cotton mills and weapons works to supply an army; it won wars for a while, but European pressure, missing coal, and forced labor closed most of the factories. In Japan, Perry's warships and the unequal treaties led to the Meiji reforms; the state built railways and mills and then sold them to private companies, and the industry it started helped make Japan strong enough to defeat China, take Taiwan, and begin ending the unequal treaties."
+            "html": "So, what caused these economic strategies, and what were their effects? The wish for armies to match stronger powers made a small number of governments build industry themselves. Muhammad Ali's Egypt built cotton mills and weapons works to supply an army; it won wars for a while, but European pressure, missing coal, and forced labor closed most of the factories. In Japan, Perry's warships and the unequal treaties led to the Meiji reforms; the state built railways and mills and then sold them to private companies, and the industry it started helped make Japan strong enough to defeat China, take Taiwan, and begin ending the unequal treaties."
           },
           {
             "type": "p",
@@ -1589,7 +1589,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "In Britain and the United States, private owners built the first factories, but a small number of governments built industry themselves because they feared stronger, better-armed powers. In Egypt, Muhammad Ali, an Ottoman governor who wanted to hold power for his family, took control of farming and cotton and used the money to build about 30 cotton mills and weapons works for an army of about 130,000 drafted peasants. The army won wars, but in 1840 and 1841 European powers forced Egypt out of Syria and cut its army to 18,000, the 1838 trade treaty ended its monopolies, and with no coal and forced workers most factories had failed by the mid-1840s. In Japan, Perry's warships in 1853 and the unequal treaties led to the Meiji Restoration of 1868. The new government reformed Japan, built railways, the Tomioka Silk Mill, shipyards, and mines, and from 1880 sold them to private companies such as Mitsui and Mitsubishi. In 1894 Britain agreed to end its foreign courts in Japan, and Japan won a war with China in 1894 and 1895 and took Taiwan: it had become a regional power. The state built the factories. Japan's lasted. Egypt's mostly closed.",
+    "takeaway": "In Britain and the United States, private owners built the first factories, but a small number of governments built industry themselves, wanting armies to match stronger powers. In Egypt, Muhammad Ali, an Ottoman governor who wanted to hold power for his family, took control of farming and cotton and used the money to build about 30 cotton mills and weapons works for an army of about 130,000 drafted peasants. The army won wars, but in 1840 and 1841 European powers forced Egypt out of Syria and cut its army to 18,000, the 1838 trade treaty ended its monopolies, and with no coal and forced workers most factories had failed by the mid-1840s. In Japan, Perry's warships in 1853 and the unequal treaties led to the Meiji Restoration of 1868. The new government reformed Japan, built railways, the Tomioka Silk Mill, shipyards, and mines, and from 1880 sold them to private companies such as Mitsui and Mitsubishi. In 1894 Britain agreed to end its foreign courts in Japan, and Japan won a war with China in 1894 and 1895 and took Taiwan: it had become a regional power. The state built the factories. Japan's lasted. Egypt's mostly closed.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
@@ -1608,7 +1608,7 @@ module.exports = {
       {
         "num": "03",
         "skill": "Making Connections",
-        "text": "Using Section 6, name ONE thing Egypt and Japan had in common (the pattern) and ONE difference in what happened next. Give a detail from the reading for each.",
+        "text": "Using Section 6, name ONE thing Egypt and Japan had in common (the pattern) and ONE difference in what happened next. Then choose the reason for the difference you think mattered most, and explain why, with a detail from the reading.",
         "placeholder": "Both Egypt and Japan... But Japan... while Egypt..."
       }
     ],

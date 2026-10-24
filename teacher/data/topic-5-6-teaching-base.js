@@ -38,7 +38,7 @@ window.BEHISTORICAL_TEACHING = {
     subtitle: 'Afraid of stronger industrial powers, a few governments decided not to wait for industry and built it themselves, to make their states strong. Muhammad Ali’s Egypt built factories for an army, and most of them had closed by the mid-1840s; Meiji Japan reformed itself, built railways and mills, sold them to private companies, and became a regional power.',
     essentialQuestion: 'Why did a few governments build industry themselves, and what happened when they did?',
     apFocus: 'Causation, with Making Connections 5.A (patterns)',
-    endTarget: 'Students can explain the causes and effects of two states\' economic strategies from 1750 to 1900: fear of stronger, better-armed powers led Muhammad Ali\'s Egypt and Meiji Japan to build industry with state money, foreign machines and experts, paid for by farmers; Egypt\'s factories supplied an army that won wars until European pressure, missing coal and forced labor closed most of them; U.S. and European pressure led Japan to reform itself, build industry, sell it to private companies and become a regional power. They can name the pattern the two cases share and the difference in their results.'
+    endTarget: 'Students can explain the causes and effects of two states\' economic strategies from 1750 to 1900: the wish for armies to match stronger powers led Muhammad Ali\'s Egypt and Meiji Japan to build industry with state money, foreign machines and experts, paid for by farmers; Egypt\'s factories supplied an army that won wars until European pressure, missing coal and forced labor closed most of them; U.S. and European pressure led Japan to reform itself, build industry, sell it to private companies and become a regional power. They can name the pattern the two cases share and the difference in their results.'
   },
 
   priorities: {
@@ -320,30 +320,30 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         frame: 'Both {{case A}} and {{case B}} {{did the same things}}. That is the pattern. But {{case A}} {{had one result}}, while {{case B}} {{had another}}, because {{a reason}}.',
         exampleLabel: 'An everyday case',
-        example: 'Both **two small-town basketball teams** lost to a stronger rival, **so each hired a coach from the city and copied the rival\'s plays**. That is the pattern. But **one team kept winning after the coach left**, while **the other fell apart**, because **only the first trained its own players to coach**.'
+        example: 'Both **two friends** trained for a 5K race, **running every morning on the same phone plan**. That is the pattern. But **one finished the race**, while **the other was hurt in the second week**, because **she skipped stretching**.'
       },
       notes: {
         minutes: 2,
         land: [
-          'Skill 5.A: "Identify patterns among or connections between historical developments and processes." A pattern is the same links showing up in different cases. The everyday case has the same shape as today\'s history: a threat, a decision to copy, an outside expert, and different results.',
-          'Model it aloud, then ask students to say the frame back with the basketball case before they try it on Egypt and Japan (slide 18).',
+          'Skill 5.A: "Identify patterns among or connections between historical developments and processes." A pattern is the same links showing up in different cases. The everyday case is deliberately unlike the history, so students learn the move, not the answer.',
+          'Model it aloud, then ask students to say the frame back with the race case before they try it on Egypt and Japan (the Skill Builder, slide 17).',
           'The second sentence matters: a pattern does not explain everything, and naming the difference is what makes the comparison useful.'
         ],
-        ask: 'What is the pattern in the basketball case, in one sentence?',
-        listenFor: 'A team threatened by a stronger rival copies the rival\'s methods with an outside expert.',
+        ask: 'What is the pattern in the race case, in one sentence?',
+        listenFor: 'Both friends prepared for the race the same way.',
         ap: 'Making Connections 5.A.'
       }
     },
     {
-      phase: 'japan-threat', kind: 'annotated', eyebrow: 'Japan · The Threat',
+      phase: 'japan-threat', kind: 'story-scene', eyebrow: 'Japan · The Threat',
       kc: 'KC-5.2.II.A', title: 'Ships that changed a government.',
-      footer: 'Treaties in 1854 and 1858 opened ports, let foreigners be tried in their own courts, and took away Japan\'s control of its own trade.',
+      footer: 'The cause: U.S. and European influence pressed on Japan.',
       template: {
-        pins: [
-          { x: 0.6, y: 0.8, label: 'The steamship', text: 'Perry\'s warships, 1853. Japan had no navy to stop them.' },
-          { x: 0.2, y: 0.5, label: 'The sailor', text: 'Americans who demanded open ports and trade.' },
-          { x: 0.5, y: 0.17, label: 'The crests', text: 'Japanese lords ordered to guard the coast.' },
-          { x: 0.08, y: 0.72, label: 'The map', text: 'A strip of coast labeled Shimoda and Izu.' }
+        steps: [
+          { label: '1853', text: 'Commodore **Perry** sails American warships into Edo Bay. Japan has **no navy** to stop him.' },
+          { label: 'Demand', text: 'Open Japan\'s ports to **trade**.' },
+          { label: '1854, 1858', text: 'Treaties open ports and let foreigners be tried in **their own courts**.' },
+          { label: 'Lost', key: true, text: 'Japan\'s control of its **own trade**: these are unequal treaties.' }
         ]
       },
       notes: {
@@ -352,7 +352,7 @@ window.BEHISTORICAL_TEACHING = {
           'KC-5.2.II.A begins here: "The expansion of U.S. and European influence in Asia led to internal reform in Japan."',
           'Columbia University\'s Asia for Educators: in 1853 Perry\'s squadron entered the bay near Edo (Tokyo); "It was clear that Commodore Perry could impose his demands by force. The Japanese had no navy with which to defend themselves." The 1854 treaty allowed "trade at two ports"; the 1858 treaty "opened more ports." The treaties "limited its control over its own foreign trade and required that crimes concerning foreigners in Japan be tried not in Japanese but in Western courts." Britain, Russia, France and the Netherlands made treaties too. A tariff convention of 1866 set import duties at a uniform 5 percent (Japan Customs); Japan won back full control of its tariffs only in 1911.',
           'Some samurai blamed the shogun for giving in, and in 1868 they overthrew him (slide 13).',
-          'The picture is a real Japanese broadsheet: "United States of North America: Perry arrives in Uraga, Sōshū Province," woodblock print (Library of Congress, no known restrictions). It shows Perry\'s steamship, an American sailor, a map of the coast and the crests of the lords ordered to guard it. The Library dates it only to between 1850 and 1900; a note on it gives the date of Perry\'s arrival, 8 July 1853.'
+          'The picture is a real Japanese broadsheet: "United States of North America: Perry arrives in Uraga, Sōshū Province," woodblock print (Library of Congress, no known restrictions). It shows Perry\'s steamship, an American sailor, a strip of coast labeled Shimoda and Izu, and the crests of the lords ordered to guard the coast. The Library dates it only to between 1850 and 1900; a note on it gives the date of Perry\'s arrival, 8 July 1853.'
         ],
         ask: 'Which of the treaty terms would anger you most if you were a samurai?',
         listenFor: 'Foreigners tried in their own courts; losing control of trade; giving in without a fight.',
@@ -470,7 +470,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 8,
         land: [
-          'Module 05 is required: it practises the CED\'s suggested skill for 5.6, 5.A, on the topic\'s two cases. The module models the frame on the basketball case, then asks for the pattern across Egypt and Japan, then the difference.',
+          'Module 05 is required: it practises the CED\'s suggested skill for 5.6, 5.A, on the topic\'s two cases. The module models the frame on the race case, then asks for the pattern across Egypt and Japan, then the difference.',
           'Circulate for students who name a shared link that is really in both cases (fear of stronger powers; state money; foreign machines and experts; farmers paying; the army as the goal), not a fact true of only one.'
         ],
         ask: 'What is one link that shows up in both chains?',
@@ -483,8 +483,8 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Both aimed at the same goal: a state strong enough to defend itself, with an army to match.',
       template: {
         left: { name: 'Egypt', items: ['A governor inside the Ottoman Empire', 'Drafted workers in state mills', 'Mills mostly closed by the mid-1840s'] },
-        right: { name: 'Japan', items: ['An independent country that reformed itself', 'State industries sold to private firms', 'A regional power by 1895'] },
-        both: ['Feared stronger, better-armed powers', 'The state paid for the first factories', 'Foreign machines and experts', 'Farmers paid much of the bill']
+        right: { name: 'Japan', items: ['Never conquered; reformed itself', 'State industries sold to private firms', 'A regional power by 1895'] },
+        both: ['Wanted armies to match stronger powers', 'The state paid for the first factories', 'Foreign machines and experts', 'Farmers paid much of the bill']
       },
       notes: {
         minutes: 3,
@@ -506,7 +506,7 @@ window.BEHISTORICAL_TEACHING = {
         left: { name: 'Egypt' },
         right: { name: 'Japan' },
         rows: [
-          { label: 'Status', left: 'A province of the Ottoman Empire; Europe cut its army', right: 'An independent country; no European power took its land or cut its army' },
+          { label: 'Status', left: 'A province of the Ottoman Empire; Europe cut its army', right: 'Never conquered or colonized, though forced into unequal treaties' },
           { label: 'Reform', left: 'One ruler\'s project, run with drafted workers', right: 'Reform of the whole society first' },
           { label: 'Coal', left: 'Almost none: many machines turned by animals', right: 'Coal of its own' },
           { label: 'After the state', left: 'Most mills failed by the mid-1840s', right: 'Sold to private companies that kept them running' }
@@ -555,7 +555,7 @@ window.BEHISTORICAL_TEACHING = {
         left: { name: 'Egypt, Muhammad Ali', items: ['Threat: Napoleon\'s army, 1798', 'State mills supply an army', 'Europe cuts the army; no coal; most mills close'] },
         right: { name: 'Japan, the Meiji era', items: ['Threat: Perry\'s warships, 1853', 'Reform, railways, mills; then sold', 'Beats China, takes Taiwan: a regional power'] },
         bothLabel: 'The pattern',
-        both: ['Fear of stronger, better-armed powers', 'The state builds industry to make itself strong']
+        both: ['Armies to match stronger powers', 'The state builds industry to make itself strong']
       },
       notes: {
         minutes: 3,
@@ -572,7 +572,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'synthesis', kind: 'close-retell', eyebrow: 'AP Synthesis',
       kc: 'Unit 5: Learning Objective G', title: 'Say it in one sentence.',
       template: {
-        frame: 'Afraid of stronger ___, Egypt and Meiji ___ built state industry. Egypt\'s mills fed an ___ until Europe and no ___ closed most; Japan ___ itself and became a ___ power.',
+        frame: 'To match stronger ___, Egypt and Meiji ___ built state industry. Egypt\'s mills fed an ___ until European pressure, no ___ and other problems closed most; Japan ___ itself and became a ___ power.',
         words: ['powers', 'Japan', 'army', 'coal', 'reformed', 'regional'],
         prompt: 'Fill it in from memory, then add one example.'
       },
@@ -580,7 +580,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 1,
         land: [
           'Learning objective G: "Explain the causes and effects of economic strategies of different states and empires." The sentence is the whole answer; one example per state makes it an AP answer.',
-          'A strong version: between 1750 and 1900 a small number of governments built industry themselves because they feared stronger, better-armed powers; Muhammad Ali, Egypt\'s Ottoman governor, used a monopoly on cotton to pay for about 30 state cotton mills that supplied an army of about 130,000, but after European powers drove his army from Syria and cut it to 18,000 in 1841, and with no coal and drafted workers, most mills had failed by the mid-1840s; in Japan, Perry\'s warships and the unequal treaties led the Meiji government to abolish the domains, tax land in money, and build railways and the Tomioka Silk Mill, which it sold to companies such as Mitsui from the 1880s, and the industry and army it built helped Japan defeat China in 1895, take Taiwan and begin ending the unequal treaties.'
+          'A strong version: between 1750 and 1900 a small number of governments built industry themselves, wanting armies to match stronger powers; Muhammad Ali, Egypt\'s Ottoman governor, used a monopoly on cotton to pay for about 30 state cotton mills that supplied an army of about 130,000, but after European powers drove his army from Syria and cut it to 18,000 in 1841, and with no coal and drafted workers, most mills had failed by the mid-1840s; in Japan, Perry\'s warships and the unequal treaties led the Meiji government to abolish the domains, tax land in money, and build railways and the Tomioka Silk Mill, which it sold to companies such as Mitsui from the 1880s, and the industry and army it built helped Japan defeat China in 1895, take Taiwan and begin ending the unequal treaties.'
         ],
         ask: 'Which blank is hardest to fill with an example?',
         listenFor: 'Students who can give one example for each state and say what it caused have the objective.'

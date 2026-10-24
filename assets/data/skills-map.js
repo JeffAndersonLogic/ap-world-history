@@ -8087,7 +8087,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "02",
           "module": "First & 10, Question 3",
           "label": "Module 02, First & 10, Question 3",
-          "prompt": "Using Section 6, name ONE thing Egypt and Japan had in common (the pattern) and ONE difference in what happened next. Give a detail from the reading for each.",
+          "prompt": "Using Section 6, name ONE thing Egypt and Japan had in common (the pattern) and ONE difference in what happened next. Then choose the reason for the difference you think mattered most, and explain why, with a detail from the reading.",
           "skill": "",
           "skills": [],
           "skillRaw": "Making Connections",

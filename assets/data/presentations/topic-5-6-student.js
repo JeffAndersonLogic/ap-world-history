@@ -111,7 +111,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         ],
         "visual": {
           "url": "../assets/images/commons/modernegypt-muhammad-ali-by-auguste-couder-bap-17996-d37493.jpg",
-          "alt": "A painted portrait of Muhammad Ali, an older man with a long white beard, wearing a white turban and a dark fur-trimmed robe, seated with a sword",
+          "alt": "A painted portrait of Muhammad Ali, an older man with a long white beard, seated on a red chair in a white turban, a dark robe and a striped sash, his right hand on the hilt of a gold-handled sword",
           "credit": "Auguste Couder, Muhammad Ali, oil on canvas, about 1840 to 1841 · Versailles · Public domain",
           "ratio": 0.791,
           "position": "50% 30%"
@@ -228,49 +228,43 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "frame": "Both {{case A}} and {{case B}} {{did the same things}}. That is the pattern. But {{case A}} {{had one result}}, while {{case B}} {{had another}}, because {{a reason}}.",
         "exampleLabel": "An everyday case",
-        "example": "Both **two small-town basketball teams** lost to a stronger rival, **so each hired a coach from the city and copied the rival's plays**. That is the pattern. But **one team kept winning after the coach left**, while **the other fell apart**, because **only the first trained its own players to coach**."
+        "example": "Both **two friends** trained for a 5K race, **running every morning on the same phone plan**. That is the pattern. But **one finished the race**, while **the other was hurt in the second week**, because **she skipped stretching**."
       }
     },
     {
-      "kind": "annotated",
+      "kind": "story-scene",
       "eyebrow": "Japan · The Threat",
       "title": "Ships that changed a government.",
-      "footer": "Treaties in 1854 and 1858 opened ports, let foreigners be tried in their own courts, and took away Japan's control of its own trade.",
+      "footer": "The cause: U.S. and European influence pressed on Japan.",
       "kc": "KC-5.2.II.A",
       "template": {
-        "pins": [
+        "steps": [
           {
-            "x": 0.6,
-            "y": 0.8,
-            "label": "The steamship",
-            "text": "Perry's warships, 1853. Japan had no navy to stop them."
+            "label": "1853",
+            "text": "Commodore **Perry** sails American warships into Edo Bay. Japan has **no navy** to stop him."
           },
           {
-            "x": 0.2,
-            "y": 0.5,
-            "label": "The sailor",
-            "text": "Americans who demanded open ports and trade."
+            "label": "Demand",
+            "text": "Open Japan's ports to **trade**."
           },
           {
-            "x": 0.5,
-            "y": 0.17,
-            "label": "The crests",
-            "text": "Japanese lords ordered to guard the coast."
+            "label": "1854, 1858",
+            "text": "Treaties open ports and let foreigners be tried in **their own courts**."
           },
           {
-            "x": 0.08,
-            "y": 0.72,
-            "label": "The map",
-            "text": "A strip of coast labeled Shimoda and Izu."
+            "label": "Lost",
+            "key": true,
+            "text": "Japan's control of its **own trade**: these are unequal treaties."
           }
         ],
         "visual": {
           "url": "../assets/images/topics/5-6/perry-arrives-uraga-broadsheet-1853.jpg",
           "alt": "A black-and-white Japanese woodblock broadsheet: rows of feudal lords' crests and spears across the top, an American sailor on the left, and a large steamship with paddle wheel, masts, smoke and a striped flag across the bottom",
-          "credit": "Perry Arrives in Uraga, Japanese woodblock broadsheet, after July 1853 · Library of Congress · Public domain",
+          "credit": "Perry Arrives in Uraga, Japanese woodblock broadsheet, dated between 1850 and 1900 · Library of Congress · Public domain",
           "ratio": 0.765,
           "fit": "contain"
-        }
+        },
+        "caption": "A Japanese broadsheet of Perry's ship"
       }
     },
     {
@@ -419,13 +413,13 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "right": {
           "name": "Japan",
           "items": [
-            "An independent country that reformed itself",
+            "Never conquered; reformed itself",
             "State industries sold to private firms",
             "A regional power by 1895"
           ]
         },
         "both": [
-          "Feared stronger, better-armed powers",
+          "Wanted armies to match stronger powers",
           "The state paid for the first factories",
           "Foreign machines and experts",
           "Farmers paid much of the bill"
@@ -448,7 +442,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "Status",
             "left": "A province of the Ottoman Empire; Europe cut its army",
-            "right": "An independent country; no European power took its land or cut its army"
+            "right": "Never conquered or colonized, though forced into unequal treaties"
           },
           {
             "label": "Reform",
@@ -531,7 +525,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         },
         "bothLabel": "The pattern",
         "both": [
-          "Fear of stronger, better-armed powers",
+          "Armies to match stronger powers",
           "The state builds industry to make itself strong"
         ]
       }
@@ -542,7 +536,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Say it in one sentence.",
       "kc": "Unit 5: Learning Objective G",
       "template": {
-        "frame": "Afraid of stronger ___, Egypt and Meiji ___ built state industry. Egypt's mills fed an ___ until Europe and no ___ closed most; Japan ___ itself and became a ___ power.",
+        "frame": "To match stronger ___, Egypt and Meiji ___ built state industry. Egypt's mills fed an ___ until European pressure, no ___ and other problems closed most; Japan ___ itself and became a ___ power.",
         "words": [
           "powers",
           "Japan",

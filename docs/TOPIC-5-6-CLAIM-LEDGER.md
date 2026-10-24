@@ -303,3 +303,43 @@ story-map ownership: no findings.
 **Own pass after the fixes:** the browser suite (`--strict`, brand fonts) found the synthesis frame
 8px over its board in both font passes. **Fixed:** shorter frame; the slide-template browser test now
 passes.
+
+### Pass 2, 2026-10-24
+
+Fresh packet after pass 1's fixes; two new reviewers, same split.
+
+**Page truth reviewer: 11 findings; 8 fixed, 1 fixed in part, 2 rejected.** CED alignment and
+ownership: no findings.
+
+1. The success criteria name an acceptable example for every part of each checkpoint ("such as").
+   **Rejected:** the house style for success criteria, used the same way on 5.5 and 4.2; the criteria
+   say what success looks like, and the explanation the checkpoint asks for is still the student's.
+2. The pattern and the difference were printed before the tasks that ask for them (First & 10
+   Section 6, lecture card 3, the deep reading's closing cards, slides 18 and 19). **Fixed in part:**
+   the deep reading's closing cards are now evidence to sort, not finished sentences; First & 10
+   question 3 now also asks which reason mattered most and why, which the reading does not answer;
+   lecture card 3 already lines up facts without stating the pattern (pass 1). **Left:** Section 6 is
+   the reading's content (the brief excludes content), and slides 18 and 19 come after the Skill
+   Builder, as the reviewer allows.
+3. The basketball model matched the history link for link (threat, outside expert, training).
+   **Fixed:** a race-training model with no copying or experts, on the lesson and slide 11.
+4. "Feared stronger, better-armed powers" still did not fit Egypt (the sultan was not better armed;
+   Muhammad Ali's motive reads as ambition and emulation). **Fixed:** the shared link is now "armies
+   to match stronger powers" (Egypt: to match armies like Napoleon's and hold Egypt against the
+   sultan; Japan: to answer the Western warships) on every surface.
+5. Who paid for the 1872 railway differed (British loans in the room and notes, the land tax on card
+   3). **Fixed:** card 3 says the land tax and, for the first railway, a British loan.
+6. Slide 12's pin lines did not land on the features they name. **Fixed:** slide 12 is a story scene
+   with the broadsheet beside four steps. The annotated template's overlay offset is an adjacent
+   finding (report).
+7. "An independent country" without the treaties qualifier. **Fixed:** "never conquered or colonized,
+   though forced into unequal treaties" (First & 10, Venn, slide 19).
+8. No Canvas text. **Rejected:** the Canvas events are generated from class dates, and Unit 5 has
+   none; the `OVERVIEWS` text is staged, as on 5.1 to 5.5. Listed for Jeff in the report.
+9. The broadsheet's date differed between slide and lesson. **Fixed:** "dated between 1850 and 1900."
+10. Slide 22's "Europe and no coal closed most" named two causes and was hard to decode; "Both two."
+    **Fixed:** "European pressure, no coal and other problems"; the new model removes "Both two."
+11. Smaller items: (a) conscription defined as workers too; **fixed** (army only). (b) The map
+    question and BeSurreal letter are answered in their own texts; **rejected**: comprehension-level
+    tasks by design. (c) Couder alt text; **fixed** (sash, hand on the sword hilt). (d) Slide 11's note
+    pointed at the wrong slide; **fixed**.

@@ -67,7 +67,7 @@ module.exports = {
       name: 'Why a State Builds Factories',
       navLabel: 'Why a state builds',
       dates: 'The early 1800s &nbsp;·&nbsp; The exception',
-      thesis: `Most early factories were built by private owners. A small number of governments built industry themselves, because they feared stronger, better-armed powers.`,
+      thesis: `Most early factories were built by private owners. A small number of governments built industry themselves, wanting armies to match stronger powers.`,
       parts: [
         {
           heading: 'The rule, and the exception',
@@ -126,7 +126,7 @@ module.exports = {
         {
           heading: 'Drafted workers, drafted soldiers',
           blocks: [
-            { p: `The workers did not choose these jobs. They were drafted, the way Egyptian peasants had long been made to dig canals and repair dams. From <span class="num">1822</span> peasants were drafted into the army too. Forcing people to serve is <span class="kt">conscription</span>. The army reached about 130,000 soldiers by the early 1830s. The historian Khaled Fahmy writes that Muhammad Ali's schools, factories and hospitals "were all founded to serve it." In the 1820s Muhammad Ali also sent Egyptian students to Europe to learn its sciences.` }
+            { p: `The workers did not choose these jobs. They were drafted, the way Egyptian peasants had long been made to dig canals and repair dams. From <span class="num">1822</span> peasants were drafted into the army too. Forcing people to serve in the army is <span class="kt">conscription</span>. The army reached about 130,000 soldiers by the early 1830s. The historian Khaled Fahmy writes that Muhammad Ali's schools, factories and hospitals "were all founded to serve it." In the 1820s Muhammad Ali also sent Egyptian students to Europe to learn its sciences.` }
           ]
         }
       ],
@@ -137,7 +137,7 @@ module.exports = {
       },
       terms: [
         ['Monopoly', 'Control of a trade by one buyer or seller, here the government.'],
-        ['Conscription', 'Forcing people to serve, as soldiers or as workers.'],
+        ['Conscription', 'Forcing people to serve in the army.'],
         ['Long-staple cotton', 'Cotton with long fibers, which makes strong, fine thread.']
       ]
     },
@@ -289,12 +289,12 @@ module.exports = {
       {
         category: 'Making Connections',
         title: 'The pattern',
-        body: `Both governments feared stronger, better-armed powers (for Egypt, European armies like Napoleon's and the sultan; for Japan, Western warships); in both, the state paid for the first factories; both bought foreign machines and hired foreign experts, and sent people abroad to learn; in both, farmers paid much of the bill; both aimed at a strong army. Write it with the word both.`
+        body: `Evidence to sort into "both," "Egypt only" and "Japan only": an army to match stronger powers; state money for the first factories; a cotton monopoly; a land tax paid in money; European machines and experts; students sent to Europe in the 1820s; the Iwakura Mission (1871 to 1873); drafted mill workers; a national school system; an Ottoman province. Then write your own pattern sentence.`
       },
       {
         category: 'Making Connections',
         title: 'The difference',
-        body: `Japan's industry lasted; most of Egypt's did not. Reasons historians point to: Japan was independent, while Egypt was an Ottoman province whose army Europe cut; Japan reformed its whole society, while Egypt's mills were one ruler's project with drafted workers; Japan had coal and Egypt almost none; Japan handed its industries to private companies. Japan also had low tariffs forced on it, so outside pressure alone does not explain the difference.`
+        body: `Evidence to weigh: Egypt's army cut to 18,000 in 1841 and its monopolies ended; almost no coal in Egypt, many machines turned by animals; drafted workers and inexperienced managers; Japan never conquered, though forced into unequal treaties; Japan's reforms of 1871 to 1873; the Miike mine; the 1880 sale to Mitsui and Mitsubishi; Japan's 5 percent tariffs from 1866. Choose the reason you think mattered most, and say why.`
       }
     ]
   }

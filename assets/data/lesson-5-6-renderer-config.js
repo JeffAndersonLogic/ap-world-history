@@ -72,10 +72,10 @@
     title: "Find the Pattern, Then the Difference",
     intro: "Topic 5.6 asks you to make a connection between two cases: find a pattern. A pattern is the same links showing up in different cases. To find one, line the two cases up link by link, name what they share, and then name the difference the pattern does not explain. Watch the move on an example from everyday life, then use it on the history.",
     steps: [
-      { label: "Line up the links", text: "Put the two cases side by side, step by step. Example: \"Two small-town basketball teams both lost to a stronger rival. Both hired a coach from the city. Both copied the rival's plays.\"" },
-      { label: "Name what they share", text: "Pick the links that are really in both cases, not facts that are true of only one. Example: \"Both were threatened by a stronger rival, and both copied the rival's methods with help from an outside expert.\"" },
-      { label: "Write the pattern in one sentence", text: "Use the word both. Example: \"Both teams answered a stronger rival by copying its methods with an outside coach.\"" },
-      { label: "Name the difference", text: "Say what happened next, and why it differed. Example: \"But one team kept winning after the coach left, while the other fell apart, because only the first trained its own players to coach.\" Use this frame: \"Both [case A] and [case B] [the shared links]. That is the pattern. But [case A] [one result], while [case B] [another], because [a reason].\"" }
+      { label: "Line up the links", text: "Put the two cases side by side, step by step. Example: \"Two friends both signed up for a 5K race three weeks ahead. Both ran every morning. Both followed the same phone training plan.\"" },
+      { label: "Name what they share", text: "Pick the links that are really in both cases, not facts that are true of only one. Example: \"Both trained for the same race, on the same schedule, with the same plan.\"" },
+      { label: "Write the pattern in one sentence", text: "Use the word both. Example: \"Both friends prepared for the race the same way.\"" },
+      { label: "Name the difference", text: "Say what happened next, and why it differed. Example: \"But one finished the race, while the other was hurt in the second week, because she skipped stretching.\" Use this frame: \"Both [case A] and [case B] [the shared links]. That is the pattern. But [case A] [one result], while [case B] [another], because [a reason].\"" }
     ],
     prompt: "Now do it with Egypt under Muhammad Ali and Japan in the Meiji era. First, line up the two cases with four links each: the threat each government feared, the decision it made, its strategy, and the result. Second, write the pattern in one sentence using the word both, with two links that are really in both cases. Third, name one difference in the results and give one reason for it, with a detail from the lesson.",
     criteria: [
@@ -122,7 +122,7 @@
   lesson.images = [
     {
       title: "Muhammad Ali, Painted for a French Museum",
-      alt: "A painted portrait of Muhammad Ali, an older man with a long white beard, wearing a white turban and a dark fur-trimmed robe, seated with a sword",
+      alt: "A painted portrait of Muhammad Ali, an older man with a long white beard, seated on a red chair in a white turban, a dark robe and a striped sash, his right hand on the hilt of a gold-handled sword",
       url: "../assets/images/commons/modernegypt-muhammad-ali-by-auguste-couder-bap-17996-d37493.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:ModernEgypt%2C_Muhammad_Ali_by_Auguste_Couder%2C_BAP_17996.jpg",
       caption: "A portrait of Muhammad Ali, governor of Egypt from 1805 to 1848, painted by the French artist Auguste Couder about 1840 to 1841 for King Louis-Philippe's history museum at Versailles.",

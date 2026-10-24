@@ -30,7 +30,7 @@ window.BEHISTORICAL_LESSON = {
     unit: "Unit 5: Revolutions",
     topic: "Topic 5.6",
     title: "Industrialization: Government’s Role from 1750 to 1900",
-    subtitle: "Afraid of stronger, better-armed powers, a few governments decided not to wait for industry and built it themselves, to make their states strong. Muhammad Ali’s Egypt built factories for an army, and most of them had closed by the mid-1840s; Meiji Japan reformed itself, built railways and mills, sold them to private companies, and became a regional power.",
+    subtitle: "Wanting armies to match stronger powers, a few governments decided not to wait for industry and built it themselves, to make their states strong. Muhammad Ali’s Egypt built factories for an army, and most of them had closed by the mid-1840s; Meiji Japan reformed itself, built railways and mills, sold them to private companies, and became a regional power.",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
@@ -90,7 +90,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Egypt: Factories for an Army",
         bullets: [
-          "**The exception:** in Britain and the United States, private owners built the first factories. A small number of governments built industry themselves, because they feared stronger, better-armed powers.",
+          "**The exception:** in Britain and the United States, private owners built the first factories. A small number of governments built industry themselves, wanting armies to match stronger powers.",
           "**The ruler:** in 1798 a French army under Napoleon invaded Egypt and easily defeated its rulers, the Mamluks, a class of soldier-lords. Muhammad Ali, an Ottoman officer from an Albanian family, became governor of Egypt in 1805 and by 1811 ruled alone. Napoleon's victory had shown what a modern European army could do, and he wanted an army like it, strong enough that he, and his family after him, could hold Egypt, even against the Ottoman sultan.",
           "**The strategy:** his government told peasants what to grow, bought their crops at low prices, and sold them abroad at higher ones: a monopoly. Long-staple cotton (cotton with long fibers, which makes strong, fine thread), first grown for sale in 1820, earned a great deal. From the late 1810s the state built factories with European machines and experts. By the early 1830s about 30 cotton mills employed about 30,000 drafted workers, many making cloth and uniforms for the army. In the 1820s he also sent Egyptian students to Europe to learn its sciences.",
           "**The army:** from 1822 peasants were drafted into a new army, which reached about 130,000 soldiers by the early 1830s. In 1831 it invaded Syria and beat the sultan's armies.",
@@ -123,8 +123,8 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Line Up the Two Cases",
         bullets: [
-          "**What each government feared:** Egypt, European armies like the one Napoleon brought in 1798, and the sultan Muhammad Ali might have to defy. Japan, the American and European warships that forced its ports open in the 1850s.",
-          "**Who paid for the first factories:** in Egypt, the state, with money from its cotton monopoly. In Japan, the state, with money from the land tax.",
+          "**What each government wanted to match:** Egypt, European armies like the one Napoleon brought in 1798, and the sultan Muhammad Ali meant to hold Egypt against. Japan, the American and European warships that forced its ports open in the 1850s.",
+          "**Who paid for the first factories:** in Egypt, the state, with money from its cotton monopoly. In Japan, the state, with money from the land tax, and, for the first railway, a British loan.",
           "**Where the machines and know-how came from:** Egypt bought machines in Europe, hired European experts, and sent students to Europe in the 1820s. Japan used British engineers for its railway and a French engineer and French machines at Tomioka, and sent the Iwakura Mission abroad from 1871 to 1873.",
           "**Who did the work:** Egypt drafted peasants into its mills and its army. Japan drafted men of every class into its army and hired workers, many of them young women, for mills such as Tomioka.",
           "**Fuel:** Egypt had almost no coal, so many machines were turned by animals. Japan had coal of its own.",
