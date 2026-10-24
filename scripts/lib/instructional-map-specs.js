@@ -461,16 +461,34 @@ module.exports = [
   {
     id: 'topic-5-6',
     code: 'Topic 5.6',
-    title: 'Industrial Society and Political Change, c. 1830-1900',
-    subtitle: 'Topic 5.6 · Government and society respond',
+    title: 'Two States Build Industry, 1820s to 1895',
+    subtitle: 'Topic 5.6 · Industrialization: Government\u2019s Role',
     highlights: [
-      { zone: 'britain', label: 'BRITAIN', tone: 'gold', legend: 'Factory Acts, reform bills, and trade unions' },
-      { zone: 'westernEurope', label: 'FRANCE & GERMANY', tone: 'bronze', legend: '1848 revolutions; Bismarck\'s social insurance' },
-      { zone: 'unitedStates', label: 'UNITED STATES', tone: 'sand', legend: 'Labor organizing and Progressive reform' },
-      { zone: 'russia', label: 'RUSSIA', tone: 'slate', legend: 'Serf emancipation, 1861; state-led change' },
-      { zone: 'japan', label: 'JAPAN', tone: 'sage', legend: 'Meiji reforms remaking law and schooling' },
-      { zone: 'eastAsia', label: 'QING CHINA', tone: 'plum', legend: 'Self-Strengthening Movement' }
-    ]
+      { zone: 'egypt', label: 'EGYPT', labelSide: 'left', tone: 'gold', legend: 'Egypt: state cotton mills and an army' },
+      { zone: [38, 34.5, 4, 3], label: 'SYRIA', labelSide: 'right', tone: 'sand', legend: 'Syria: taken by Egypt in 1831, lost in 1840' },
+      { zone: 'japan', label: 'JAPAN', labelSide: 'right', tone: 'sage', legend: 'Japan: Meiji reforms, railways and mills' },
+      { zone: 'korea', label: 'KOREA', labelSide: 'left', tone: 'slate', legend: 'Korea: China gives up its claim, 1895' },
+      { zone: [121, 23.7, 2.6, 2.6], label: 'TAIWAN', labelSide: 'right', tone: 'bronze', legend: 'Taiwan: given to Japan, 1895' }
+    ],
+    flows: [
+      { from: [31.2, 30], to: [38, 34.5], label: '1831', bow: 0.3 },
+      { from: [136, 34.5], to: [121, 23.7], label: '1895', bow: -0.2 }
+    ],
+    points: [
+      { at: [31.2, 30], label: 'Cairo' },
+      { at: [29, 41], label: 'Istanbul', note: 'the sultan' },
+      { at: [139.7, 35.7], label: 'Tokyo', note: 'Perry, 1853' }
+    ],
+    legend: [
+      { kind: 'area', tone: 'gold', text: 'Egypt under Muhammad Ali: state cotton mills, an army' },
+      { kind: 'area', tone: 'sand', text: 'Syria: taken by Egypt in 1831, lost in 1840' },
+      { kind: 'flow', step: 1, text: 'Egypt\u2019s army invades Syria, 1831' },
+      { kind: 'area', tone: 'sage', text: 'Japan: Perry, 1853; reform, railways and mills from 1868' },
+      { kind: 'flow', step: 2, text: 'Japan defeats China and takes Taiwan, 1895' },
+      { kind: 'area', tone: 'bronze', text: 'Taiwan: given to Japan by China, 1895' },
+      { kind: 'area', tone: 'slate', text: 'Korea: China gives up its claim, 1895' }
+    ],
+    note: 'Arrows join two places; they are not exact routes. Regions are approximate.'
   },
   {
     id: 'topic-5-7',
