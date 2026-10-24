@@ -373,3 +373,9 @@ page-truth changes in this pass).**
    Wikidata Q119839774, inception 1841).
 10. "Its slogan" after the Charter Oath read as part of the Oath. **Fixed:** "The government's slogan"
     (First & 10, deep reading, room).
+
+### Pass 3, 2026-10-24
+
+Fresh packet after pass 2's fixes; two new reviewers, same split. Both were cut off by the account's
+usage limit partway through and were resumed (not relaunched) when it reset at 19:40 UTC. The full
+browser suite (`--strict`, brand fonts) passed on the pass-2 state: 30 suites, none skipped.

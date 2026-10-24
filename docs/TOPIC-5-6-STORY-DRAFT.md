@@ -5,8 +5,9 @@ Drafted 2026-10-24 from the CED source file, for the build Jeff started with "Bu
 reviewers check this story and every surface built from it against that file and the scholarship.
 Nothing ships until Jeff says "ship it".
 
-**Resume here (2026-10-24):** Review passes 1 and 2 are fixed and logged (claim ledger). Next:
-recapture and run pass 3 (the last under the three-pass rule). The Unit 5 reading fingerprint has not moved.
+**Resume here (2026-10-24):** Review passes 1 and 2 are fixed and logged. Pass 3 (packet
+`review3`) is running; its findings are not yet logged. Next: fix and log pass 3, then close the loop,
+move the Unit 5 reading fingerprint, write the audit record.
 
 **Taught:** no dates yet. The schedule ends with the Era 3 Exam (Green Monday 2026-11-23, Silver
 Tuesday 2026-11-24), and neither the schedule nor any comment in it names a Unit 5 class day (5.1 to
