@@ -177,10 +177,10 @@ Japan:
 | He kept cheap British cloth out of Egypt to protect his mills | Story | LoC 21 (embargoes on "cheap British textiles"); Panza and Williamson (non-tariff barriers) | VERIFIED |
 | His army under Ibrahim invaded Syria in 1831 and beat the sultan's armies more than once | Story | LoC 21 ("invasion of Syria in 1831"); Wikipedia (Konya 1832, Nezib 1839) | VERIFIED |
 | Britain, Austria, Russia and Prussia sided with the sultan; in 1840 British warships and Ottoman troops drove Ibrahim out of Syria | Story | LoC 21 (the powers allied with the Ottomans; "A British fleet bombarded Beirut in September 1840, and an Anglo-Turkish force landed"); the Convention of London, July 1840, signed by the four. The study also lists France, which did not sign; the course names the four | NARROWED |
-| In 1841 his family became hereditary governors; Egypt gave up its conquests except Sudan; the army was cut to 18,000 in peacetime | Story | LoC 21 ("stripped of all the conquered territory except Sudan"; hereditary governorship); the firman ("In time of peace, 18,000 men") | VERIFIED |
+| In 1841 the governorship became hereditary in his family, passing to its eldest male; Egypt gave up its conquests except Sudan; the army was cut to 18,000 in peacetime | F10 3; DR 03; Deck 8; RC Evidence Lab | LoC 21 ("succession going to the eldest male in the family"); the firman ("from the elder to the elder, in the male race among the sons and grandsons"; "In time of peace, 18,000 men"). Was "passed from father to son" (pass 1 history finding 4) | NARROWED |
 | Egypt had to accept the 1838 Anglo-Ottoman trade treaty, which ended his monopolies and opened Egypt to cheap goods | Story | LoC 21 ("compelled to agree to the Anglo-Ottoman Convention of 1838 ... forced to abandon his monopolies"); Ahmeti and Rizaj (signed by the Porte and Britain; Egypt complied by 1842) | VERIFIED |
 | Egypt had almost no coal, so many machines were turned by animals | Story | OER ("ran on animal power"); Beinin (lack of fuel). Wikipedia notes some steam engines and imported coal, so "many," not "all" or "most" | NARROWED |
-| Drafted workers resisted; managers lacked experience; within about a decade most factories had failed | Story | Beinin, word for word | VERIFIED |
+| Drafted workers resisted; managers lacked experience; by the mid-1840s, about a decade after their early-1830s peak, most factories had failed | F10 3; LC 1; DR 03; Deck 8, 9, 18, 19; BR | Beinin ("By the early 1830s ... a decade later most of these new factories had failed"). Was given three different ways (pass 1 history finding 11) | NARROWED |
 | Historians still argue which cause mattered most and how much the factories achieved | Story | Panza and Williamson ("his policies were successful") against Beinin's failure; LoC 21 (Marsot on British interests) | VERIFIED |
 | Egypt went on growing more cotton, almost all sold abroad, much of it to Britain's mills | Story | Owen ("continuous increase in output"; "almost all the crop ... sold for foreign use"; "customers in Lancashire") | VERIFIED |
 | Muhammad Ali's court spoke (Ottoman) Turkish | Story | Wikipedia ("Ottoman Turkish was the official language of his court") | VERIFIED |
@@ -203,13 +203,13 @@ Japan:
 | In 1880 the government decided to sell most of its enterprises, because they cost too much | Story | Columbia AFE ("strained government finances, so in 1880") | VERIFIED |
 | Mitsui and Mitsubishi bought them and grew into the zaibatsu | Story | Columbia AFE (zaibatsu); Mitsubishi (Nagasaki, bought 1887); Mitsui Bunko (Miike, 1888 to 1889); Nippon.com (Tomioka to Mitsui, 1893) | VERIFIED |
 | The Osaka Spinning Company, a private company (5.4) | Story | 5.4's ledger (opened 1883) | VERIFIED |
-| In 1894 Britain agreed to end its unequal treaty (in force 1899), and other powers followed | Story | Wikipedia, Anglo-Japanese Treaty (16 July 1894; in force 17 July 1899); Japan Customs ("spurred the revision ... with other countries") | VERIFIED |
+| In 1894 Britain agreed to end the foreign courts in Japan (from 1899), and other powers followed; full tariff control came only in 1911 | F10 5; LC 2; DR 05; Deck 16 | Wikipedia, Anglo-Japanese Treaty (16 July 1894; in force 17 July 1899; British subjects "became subject to Japanese laws"); Cortazzi ("the question of Japan's tariff autonomy remained unresolved"; autonomy secured 1911); Japan Customs ("completely restored in 1911"). Was "end its unequal treaty" (pass 1 history finding 1) | NARROWED |
 | Japan fought China over Korea in 1894 and 1895 and won | Story | Columbia AFE | VERIFIED |
 | Shimonoseki: China gave up its claim over Korea, gave Taiwan, agreed to pay 200 million taels | Story | The treaty, Articles 1, 2 and 4 | VERIFIED |
-| Russia, Germany and France forced Japan to give back land it had won, which angered its leaders | Story | Columbia AFE (the Triple Intervention; "angered") | VERIFIED |
+| Within a week Russia, Germany and France demanded that Japan give back land it had won, and Japan gave in, which angered its leaders | DR 05; Deck 16 notes | Columbia AFE ("Within a week ... combined to pressure Japan"; "angered"); Wikipedia, Triple Intervention (23 April 1895, withdrawal announced 5 May). Was "forced ... within a week" (pass 1 history finding 12) | NARROWED |
 | Taiwan was Japan's first colony | Story | Columbia AFE ("gained Taiwan as a colony"). "First" is not stated there; the course says "a colony of its own," not "its first" | NARROWED |
 | Japan mined coal of its own | Story | Mitsui Bunko (Miike, "the nation's largest" mines) | VERIFIED |
-| Japan had to accept low tariffs too | Story | Japan Customs; Cortazzi (5 percent from 1866; autonomy only in 1911) | VERIFIED |
+| Japan had to accept low tariffs too: about 5 percent from 1866, through its build-up of the 1870s and 1880s; full control only in 1911 | F10 6; LC 3; DR 04; Deck 19; BR | Cortazzi (1866: "a uniform 5 per cent of the declared value"; autonomy 1911); Japan Customs. Was "about 5 percent ... until 1911"; revised treaties raised rates from 1899 (pass 1 history finding 2) | NARROWED |
 | Japan's leaders chose what to borrow and from whom (a French silk mill, British railway engineers) | Story | Wikipedia, Tomioka and rail transport (the two choices) | VERIFIED |
 | Japan's industry made it strong enough to defeat China and end the unequal treaties | Story | Columbia AFE (Japan "rapidly industrialised ... its rise as a military power by the year 1895" in Wikipedia's words; AFE ties treaty revision to legal reform). The course states the link as one of the reasons, beside the reforms | NARROWED |
 
@@ -272,3 +272,34 @@ story-map ownership: no findings.
 13. Slide 18 named the Miike mine, which only the deep reading teaches; slide 20's footer asked
     students to name what it printed; slide 8's axis hid 1840. **Fixed:** "coal of its own"; footer
     reworded; ticks every ten years.
+
+**History reviewer: 14 findings; 13 supported and fixed, 1 rejected.**
+
+1. "In 1894 Britain agreed to end its unequal treaty": the 1894 treaty ended extraterritoriality from
+   1899, not the tariff limit (full control 1911). **Fixed** on every surface (the claim row above).
+2. "Only about 5 percent on imports until 1911" was wrong for 1899 to 1911. **Fixed:** "about 5
+   percent from 1866, through its build-up," and 1911 for full control.
+3. Slide 18's "never defeated by Europe" (the Shimonoseki campaign, 1863 to 1864). Already **fixed**
+   by page-truth finding 5.
+4. "Passed from father to son": the 1841 firman says the eldest male of the family. **Fixed.**
+5. Slide 11's coast pin is Shimoda and Izu, not Uraga; the crests were cropped. **Fixed:** the pin
+   names the strip's own labels; the broadsheet is shown whole (fit contain).
+6. Slide 15's alt text and notes described the side sheets, not the center sheet shown. **Fixed.**
+7. "Utagawa Kunimasa III, later Kunisada III" matched neither the Library's record nor the reference
+   numbering. **Fixed:** "signed Baidō Kunimasa," with the Library's cataloging named.
+8. The map's SYRIA label sat south of Cairo. **Fixed:** label above its ring.
+9. Slide 13's attribution read as a translation made in 1868. **Fixed.**
+10. The 1946 wording of Article 5 was called a misquote. **Rejected:** the official English
+    translation approved by Japan's Prime Minister and printed in Foreign Relations of the United
+    States, 1946, vol. VIII, doc. 138, reads "Wisdom and knowledge shall be sought throughout the world
+    to promote the prosperity of the Empire" (read in this session); the reviewer quoted a different
+    translation. The note now names the FRUS source.
+11. Three different dates for the mills' failure. **Fixed:** "by the mid-1840s" everywhere.
+12. "Within a week ... forced": the demand came in six days, the withdrawal in May. **Fixed.**
+13. The room's headman wanted the tax to "stop rising," but the land tax was lowered in 1877.
+    **Fixed:** "so the land tax does not have to rise again."
+14. The Iwakura caption committed to "early in a tour" while hedging on the city. **Fixed.**
+
+**Own pass after the fixes:** the browser suite (`--strict`, brand fonts) found the synthesis frame
+8px over its board in both font passes. **Fixed:** shorter frame; the slide-template browser test now
+passes.

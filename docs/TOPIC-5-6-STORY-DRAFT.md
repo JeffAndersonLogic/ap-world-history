@@ -5,11 +5,8 @@ Drafted 2026-10-24 from the CED source file, for the build Jeff started with "Bu
 reviewers check this story and every surface built from it against that file and the scholarship.
 Nothing ships until Jeff says "ship it".
 
-**Resume here (2026-10-24):** Phases 0 to 8 are finished. Review pass 1 is done: the page-truth
-findings (13) are fixed and logged in the claim ledger; the history findings (14) are fixed in the
-surfaces (13 accepted, 1 rejected: the 1946 Charter Oath wording, which the FRUS official translation
-supports) but NOT yet logged in the ledger. Next: log the pass 1 history findings, recapture, run
-pass 2. The Unit 5 reading fingerprint has not moved. Jeff paused the build here.
+**Resume here (2026-10-24):** Review pass 1 is fixed and logged (claim ledger). Next: recapture
+and run pass 2. The Unit 5 reading fingerprint has not moved.
 
 **Taught:** no dates yet. The schedule ends with the Era 3 Exam (Green Monday 2026-11-23, Silver
 Tuesday 2026-11-24), and neither the schedule nor any comment in it names a Unit 5 class day (5.1 to

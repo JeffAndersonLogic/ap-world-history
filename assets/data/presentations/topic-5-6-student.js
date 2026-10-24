@@ -542,7 +542,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Say it in one sentence.",
       "kc": "Unit 5: Learning Objective G",
       "template": {
-        "frame": "Afraid of stronger ___, Muhammad Ali's Egypt and Meiji ___ built industry with state money. Egypt's mills supplied an ___ until Europe and missing ___ closed most of them; Japan ___ itself, sold its industries to private companies, and became a ___ power.",
+        "frame": "Afraid of stronger ___, Egypt and Meiji ___ built state industry. Egypt's mills fed an ___ until Europe and no ___ closed most; Japan ___ itself and became a ___ power.",
         "words": [
           "powers",
           "Japan",
