@@ -107,7 +107,7 @@
       prompt: "Explain Japan's economic strategy as a chain of causes and effects, then compare it with Egypt's. (1) Say what pressure the United States and Europe put on Japan. (2) Name ONE Meiji reform and explain how it supported industry. (3) Give ONE example of industry the government built, and say what happened to its businesses after 1880. (4) Give ONE piece of evidence that Japan became a regional power. (5) Name ONE link Japan's chain shares with Egypt's (the pattern) and ONE difference in what happened next.",
       responseType: "Checkpoint 2",
       skill: "Causation",
-      terms: ["Perry", "1853", "warships", "unequal treaty", "treaties", "courts", "trade", "Meiji", "1868", "Charter Oath", "samurai", "domains", "1871", "land tax", "schools", "army", "drafted", "Iwakura", "railway", "1872", "Tomioka", "silk", "shipyards", "1880", "sold", "private", "Mitsui", "Mitsubishi", "zaibatsu", "1894", "1895", "China", "Korea", "Taiwan", "regional power", "both", "pattern", "Egypt", "coal", "independent"],
+      terms: ["Perry", "1853", "warships", "unequal treaty", "treaties", "courts", "trade", "Meiji", "1868", "Charter Oath", "samurai", "domains", "1871", "land tax", "schools", "army", "drafted", "Iwakura", "railway", "1872", "Tomioka", "silk", "shipyards", "1880", "sold", "private", "Mitsui", "Mitsubishi", "zaibatsu", "1894", "1895", "China", "Korea", "Taiwan", "regional power", "both", "pattern", "Egypt", "coal", "never conquered"],
       focus: ["Name the outside pressure.", "Explain how one reform supported industry.", "Give one example of state industry and what happened after 1880.", "Give evidence of regional power.", "Name the pattern Japan shares with Egypt and one difference."]
     }
   ];
@@ -141,7 +141,7 @@
       alt: "An old black-and-white photograph of five Japanese men posed in a studio: the man seated in the center wears a Japanese robe and topknot, and the four around him wear Western suits",
       url: "../assets/images/commons/iwakura-mission-1f7f61.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Iwakura_mission.jpg",
-      caption: "Five leaders of the Meiji government photographed in 1872, during a tour of the United States and Europe that lasted from 1871 to 1873. From left: Kido Takayoshi, Yamaguchi Masuka, Iwakura Tomomi (seated, in Japanese dress), Itō Hirobumi, and Ōkubo Toshimichi. Sources disagree on which city it was taken in.",
+      caption: "Five leaders of the Meiji government photographed in 1872, during a tour of the United States and Europe that lasted from 1871 to 1873. From left: Kido Takayoshi, Yamaguchi Masuka, Iwakura Tomomi (seated), Itō Hirobumi, and Ōkubo Toshimichi. Sources disagree on which city it was taken in.",
       prompt: "NOTICE what each man is wearing. INFER what decision about Japan's future the photograph shows. A posed photograph is a choice: what can it not tell you about what the leaders learned on their tour?"
     },
     {
@@ -157,7 +157,7 @@
       alt: "A Japanese color woodblock cartoon: a white cat whose body is a Japanese warship flying the Rising Sun flag chases two black rats, shaped like Chinese warships, into a large white bag; a block of Japanese text fills the top",
       url: "../assets/images/topics/5-6/kiyochika-rats-in-a-bag-1895.jpg",
       sourceUrl: "https://www.loc.gov/pictures/item/2009615024/",
-      caption: "A Japanese woodblock cartoon by Kobayashi Kiyochika, 1895, from a series called Long Live Japan: One Hundred Victories, One Hundred Laughs, made during Japan's war with China. A Japanese warship, drawn as a cat, chases two Chinese warships, drawn as rats, into a bag. Library of Congress.",
+      caption: "A Japanese woodblock cartoon by Kobayashi Kiyochika, 1895, from a series called Long Live Japan: One Hundred Victories, One Hundred Laughs, made during Japan's war with China. Library of Congress.",
       prompt: "NOTICE which side is the cat and which side is the rats. INFER how the artist wanted Japanese buyers to feel about their navy, forty years after Perry's ships. A cartoon made in wartime: what can it not tell you about the real battles?"
     },
     {

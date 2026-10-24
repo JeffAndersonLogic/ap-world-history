@@ -1445,7 +1445,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Topic 5.4 followed the factory as it spread from Britain to other parts of Europe, the United States, Russia, and Japan. Topic 5.5 showed how steam, steel, railroads, and the telegraph made industrial countries far more powerful. In Britain and the United States, most of the first factories were built by private owners and investors, people such as Richard Arkwright or the Boston merchants who paid for the mills at Lowell."
+            "html": "Topic 5.4 followed the factory as it spread from Britain to other parts of Europe, the United States, Russia, and Japan. Topic 5.5 showed how steam, steel, railroads, and the telegraph let industry make far more and reach far farther. In Britain and the United States, most of the first factories were built by private owners and investors, people such as Richard Arkwright or the Boston merchants who paid for the mills at Lowell."
           },
           {
             "type": "p",
@@ -1458,7 +1458,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>Build a chain for each case.</strong> The question for today asks for causes and effects. For each country, find four links: the <em>threat</em> the government feared, the <em>decision</em> it made, the <em>strategy</em> it used, and the <em>result</em>. Start with the threat.</p>"
+          "raw": "<p><strong>Build a chain for each case.</strong> The question for today asks for causes and effects. For each country, find four links: the <em>threat</em> (the stronger power or rival the government faced), the <em>decision</em> (to build industry with state money), the <em>strategy</em> (how it paid for it and what it built), and the <em>result</em>. Start with the threat.</p>"
         }
       },
       {
@@ -1585,7 +1585,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Making Connections",
-          "raw": "<p><strong>Three myths to drop.</strong> \"Japan just copied the West\": Japan's leaders chose what to borrow and from whom, and their aim, in their own words, was to \"strengthen the foundations of imperial rule.\" \"Muhammad Ali was building an Egyptian nation\": he was an Ottoman governor from an Albanian family whose court spoke Turkish, and he built for his own and his family's power. \"One cause explains Egypt's result\": historians weigh European pressure, missing coal, drafted workers, and new managers, and still disagree about how much each mattered.</p>"
+          "raw": "<p><strong>Three myths to drop.</strong> \"Japan just copied the West\": Japan's leaders chose what to borrow and from whom, seeking knowledge from many countries, which the Charter Oath said would \"strengthen the foundations of imperial rule.\" \"Muhammad Ali was building an Egyptian nation\": he was an Ottoman governor from an Albanian family whose court spoke Turkish, and he built for his own and his family's power. \"One cause explains Egypt's result\": historians weigh European pressure, missing coal, drafted workers, and new managers, and still disagree about how much each mattered.</p>"
         }
       }
     ],
@@ -1608,7 +1608,7 @@ module.exports = {
       {
         "num": "03",
         "skill": "Making Connections",
-        "text": "Using Section 6, name ONE thing Egypt and Japan had in common (the pattern) and ONE difference in what happened next. Then choose the reason for the difference you think mattered most, and explain why, with a detail from the reading.",
+        "text": "Using Sections 2 to 5, name ONE link the two chains share, with a detail from each country, and ONE difference in what happened next. Then choose the reason for the difference you think mattered most, and explain why, with a detail from the reading.",
         "placeholder": "Both Egypt and Japan... But Japan... while Egypt..."
       }
     ],

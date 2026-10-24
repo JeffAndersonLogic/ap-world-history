@@ -123,17 +123,17 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Line Up the Two Cases",
         bullets: [
-          "**What each government wanted to match:** Egypt, European armies like the one Napoleon brought in 1798, and the sultan Muhammad Ali meant to hold Egypt against. Japan, the American and European warships that forced its ports open in the 1850s.",
-          "**Who paid for the first factories:** in Egypt, the state, with money from its cotton monopoly. In Japan, the state, with money from the land tax, and, for the first railway, a British loan.",
-          "**Where the machines and know-how came from:** Egypt bought machines in Europe, hired European experts, and sent students to Europe in the 1820s. Japan used British engineers for its railway and a French engineer and French machines at Tomioka, and sent the Iwakura Mission abroad from 1871 to 1873.",
-          "**Who did the work:** Egypt drafted peasants into its mills and its army. Japan drafted men of every class into its army and hired workers, many of them young women, for mills such as Tomioka.",
+          "**Threat:** for Egypt, European armies like the one Napoleon brought in 1798, which Muhammad Ali wanted to match, and the sultan he meant to hold Egypt against. For Japan, the American and European warships that forced its ports open in the 1850s.",
+          "**Strategy, who paid for the first factories:** in Egypt, the state, with money from its cotton monopoly. In Japan, the state, with money from the land tax, and, for the first railway, a British loan.",
+          "**Strategy, where the machines and know-how came from:** Egypt bought machines in Europe, hired European experts, and sent students to Europe in the 1820s. Japan used British engineers for its railway and a French engineer and French machines at Tomioka, and sent the Iwakura Mission abroad from 1871 to 1873.",
+          "**Strategy, who did the work:** Egypt drafted peasants into its mills and its army. Japan drafted men of every class into its army and hired workers, many of them young women, for mills such as Tomioka.",
           "**Fuel:** Egypt had almost no coal, so many machines were turned by animals. Japan had coal of its own.",
-          "**What happened next:** Europe made Egypt cut its army to 18,000 in 1841 and give up its monopolies, and most of its mills had failed by the mid-1840s. Japan sold most of its state businesses to private companies from 1880, won an end to the foreign courts in 1894 (from 1899), and beat China in 1895.",
+          "**Result:** Europe made Egypt cut its army to 18,000 in 1841 and give up its monopolies, and most of its mills had failed by the mid-1840s. Japan sold most of its state businesses to private companies from 1880, won an end to the foreign courts in 1894 (from 1899), and beat China in 1895.",
           "**Your job:** using these facts, say what the two cases share (the pattern) and what was different, and why. Japan also had to accept low taxes on foreign goods, about 5 percent from 1866, through the years it was building its industry, and won full control of them only in 1911: keep that in mind before you blame one cause."
         ],
         image: {
           title: "The Railway at Takanawa, 1872",
-          caption: "A Japanese color woodblock print in three sheets by Ikkei, 1872, called Steam Engine of the Iron Railroad at Takanawa: Western visitors stand beside the engine while Tokyo crowds watch from a bridge. The sheets are shown as the Library of Congress photographed them, slightly overlapping. Library of Congress.",
+          caption: "A Japanese color woodblock print in three sheets by Ikkei, 1872, called Steam Engine of the Iron Railroad at Takanawa. The sheets are shown as the Library of Congress photographed them, slightly overlapping. Library of Congress.",
           url: "../assets/images/topics/5-6/ikkei-takanawa-railway-triptych-1872.jpg",
           sourceUrl: "https://www.loc.gov/pictures/item/2008660440/"
         }

@@ -22,7 +22,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Topic 5.5",
-            "text": "Name one technology that made industrial countries stronger."
+            "text": "Name one technology from Topic 5.5 and what it let industry do."
           }
         ],
         "turn": "Factories made some countries **strong**. If you ruled a country without them, and you were **afraid**, would you wait for private owners to build them, **or build them yourself?**"
@@ -471,7 +471,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "rows": [
           {
             "myth": "Japan just copied the West.",
-            "evidence": "Its leaders chose what to borrow and from whom, a French silk mill and British railway engineers, to \"strengthen the foundations of imperial rule.\"",
+            "evidence": "Its leaders chose what to borrow and from whom, a French silk mill and British railway engineers, seeking knowledge the Charter Oath said would \"strengthen the foundations of imperial rule.\"",
             "source": "KC-5.2.II.A"
           },
           {
@@ -496,7 +496,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "left": {
           "name": "Egypt, Muhammad Ali",
           "items": [
-            "Rival: the sultan; model: Napoleon's army",
+            "Threat: the sultan, and armies like Napoleon's",
             "State mills supply an army",
             "Europe cuts the army; no coal; most mills close"
           ],

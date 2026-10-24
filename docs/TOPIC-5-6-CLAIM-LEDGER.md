@@ -379,3 +379,27 @@ page-truth changes in this pass).**
 Fresh packet after pass 2's fixes; two new reviewers, same split. Both were cut off by the account's
 usage limit partway through and were resumed (not relaunched) when it reset at 19:40 UTC. The full
 browser suite (`--strict`, brand fonts) passed on the pass-2 state: 30 suites, none skipped.
+
+**Page truth reviewer: 9 findings; 6 fixed, 1 fixed in part, 1 rejected, 1 reported as an adjacent
+finding.** CED alignment, ownership and accessibility: no further findings.
+
+1. The pattern is printed in First & 10 Section 6 and projected on slides 18 and 19, and question 3
+   sent students to Section 6. **Fixed in part:** question 3 now asks for a shared link with a detail
+   from each country from Sections 2 to 5, and which reason mattered most. **Left:** Section 6 is the
+   reading's content, and slides 18 and 19 follow the Skill Builder (as in pass 2).
+2. The four links (threat, decision, strategy, result) were not defined or labeled consistently.
+   **Fixed:** the First & 10 callout defines each link; lecture card 3's bullets carry the link names;
+   the retelling slide's Egypt row starts with "Threat."
+3. Captions pre-answered their NOTICE prompts (Iwakura dress, Rats in a Bag, the Takanawa lecture
+   caption). **Fixed:** those clauses are cut; maker, date and holder kept. **Rejected** for BeSurreal:
+   the story gives the facts and the letter asks the student to explain them in her own voice.
+4. The map key answers the map question. **Rejected:** reading the map's key is the skill the module
+   practises.
+5. Lecture card 3's first line said Egypt wanted "to match" the sultan. **Fixed.**
+6. 5.6 said 5.5 taught that technology made countries "far more powerful." **Fixed:** "let industry
+   make far more and reach far farther"; the BeReady prompt matches 5.5.
+7. 5.4's lesson card promises a Russian case in 5.6. **Adjacent finding** (5.4's surface): reported.
+8. The Charter Oath quotation was tied to industry more tightly than Article 5 allows. **Fixed:**
+   "seeking knowledge ... which the Charter Oath said would 'strengthen the foundations of imperial
+   rule'" (First & 10, slide 20); the room card names the slogan for industry.
+9. Checkpoint 2's focus term "independent" is taught nowhere. **Fixed:** "never conquered."

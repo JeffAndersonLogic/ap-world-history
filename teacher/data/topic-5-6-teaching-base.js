@@ -127,7 +127,7 @@ window.BEHISTORICAL_TEACHING = {
         questions: [
           { label: 'Topic 5.4', text: 'Name two places outside Britain where factory methods spread.' },
           { label: 'Topics 5.3 and 5.4', text: 'Who paid for the first factories in Britain and the United States?' },
-          { label: 'Topic 5.5', text: 'Name one technology that made industrial countries stronger.' }
+          { label: 'Topic 5.5', text: 'Name one technology from Topic 5.5 and what it let industry do.' }
         ],
         turn: 'Factories made some countries **strong**. If you ruled a country without them, and you were **afraid**, would you wait for private owners to build them, **or build them yourself?**'
       },
@@ -530,7 +530,7 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'The evidence is more interesting than the myths.',
       template: {
         rows: [
-          { myth: 'Japan just copied the West.', evidence: 'Its leaders chose what to borrow and from whom, a French silk mill and British railway engineers, to "strengthen the foundations of imperial rule."', source: 'KC-5.2.II.A' },
+          { myth: 'Japan just copied the West.', evidence: 'Its leaders chose what to borrow and from whom, a French silk mill and British railway engineers, seeking knowledge the Charter Oath said would "strengthen the foundations of imperial rule."', source: 'KC-5.2.II.A' },
           { myth: 'Muhammad Ali was building an Egyptian nation.', evidence: 'He was an Ottoman governor from an Albanian family whose court spoke Turkish, building power for his family.', source: 'KC-5.1.V.C' },
           { myth: 'One cause explains Egypt\'s result.', evidence: 'Historians weigh European pressure, missing coal, drafted workers and new managers, and still disagree.', source: 'KC-5.1.V.C' }
         ]
@@ -552,7 +552,7 @@ window.BEHISTORICAL_TEACHING = {
       title: 'Two states built industry. Japan\'s grew. Egypt\'s mostly closed.',
       footer: 'With your notes closed, redraw both chains, then name the pattern and the difference.',
       template: {
-        left: { name: 'Egypt, Muhammad Ali', items: ['Rival: the sultan; model: Napoleon\'s army', 'State mills supply an army', 'Europe cuts the army; no coal; most mills close'] },
+        left: { name: 'Egypt, Muhammad Ali', items: ['Threat: the sultan, and armies like Napoleon\'s', 'State mills supply an army', 'Europe cuts the army; no coal; most mills close'] },
         right: { name: 'Japan, the Meiji era', items: ['Threat: Perry\'s warships, 1853', 'Reform, railways, mills; then sold', 'Beats China, takes Taiwan: a regional power'] },
         bothLabel: 'The pattern',
         both: ['Armies to match stronger powers', 'The state builds industry to make itself strong']
