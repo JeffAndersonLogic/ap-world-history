@@ -465,7 +465,7 @@ module.exports = [
     subtitle: 'Topic 5.6 · Industrialization: Government\u2019s Role',
     highlights: [
       { zone: 'egypt', label: 'EGYPT', labelSide: 'left', tone: 'gold', legend: 'Egypt: state cotton mills and an army' },
-      { zone: [38, 34.5, 4, 3], label: 'SYRIA', labelSide: 'right', tone: 'sand', legend: 'Syria: taken by Egypt in 1831, lost in 1840' },
+      { zone: [38, 34.5, 4, 3], label: 'SYRIA', labelSide: 'above', tone: 'sand', legend: 'Syria: taken by Egypt in 1831, lost in 1840' },
       { zone: 'japan', label: 'JAPAN', labelSide: 'right', tone: 'sage', legend: 'Japan: Meiji reforms, railways and mills' },
       { zone: 'korea', label: 'KOREA', labelSide: 'left', tone: 'slate', legend: 'Korea: China gives up its claim, 1895' },
       { zone: [121, 23.7, 2.6, 2.6], label: 'TAIWAN', labelSide: 'right', tone: 'bronze', legend: 'Taiwan: given to Japan, 1895' }

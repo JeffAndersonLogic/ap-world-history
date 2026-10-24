@@ -38,7 +38,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "visual": {
           "url": "../assets/images/topics/5-6/kunisada-first-train-leaving-yokohama-1872.jpg",
           "alt": "A Japanese color woodblock print in three sheets: a black steam locomotive pulls a line of red passenger cars along a stone embankment beside a blue bay full of sailing ships, with cherry trees in pink blossom, houses on a cliff and a mountain behind",
-          "credit": "Utagawa Kunimasa III, First Steam Train Leaving Yokohama, woodblock print, about 1872 · Library of Congress · Public domain",
+          "credit": "Baidō Kunimasa, First Steam Train Leaving Yokohama, woodblock print, about 1872 · Library of Congress · Public domain",
           "ratio": 2.042,
           "position": "40% 60%",
           "tagPos": "bl"
@@ -146,7 +146,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "timeline",
       "eyebrow": "Egypt · The Result",
       "title": "It worked. Then it stopped.",
-      "footer": "Within about a decade of the early 1830s, most of the new factories had failed.",
+      "footer": "By the mid-1840s, about a decade after their peak, most of the new factories had failed.",
       "kc": "KC-5.1.V.C",
       "template": {
         "range": [
@@ -261,7 +261,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "x": 0.08,
             "y": 0.72,
             "label": "The map",
-            "text": "Part of the coast the lords were ordered to guard."
+            "text": "A strip of coast labeled Shimoda and Izu."
           }
         ],
         "visual": {
@@ -269,7 +269,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "alt": "A black-and-white Japanese woodblock broadsheet: rows of feudal lords' crests and spears across the top, an American sailor on the left, and a large steamship with paddle wheel, masts, smoke and a striped flag across the bottom",
           "credit": "Perry Arrives in Uraga, Japanese woodblock broadsheet, after July 1853 · Library of Congress · Public domain",
           "ratio": 0.765,
-          "position": "50% 80%"
+          "fit": "contain"
         }
       }
     },
@@ -282,9 +282,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "quote": "Knowledge shall be sought throughout the world so as to strengthen the foundations of imperial rule.",
         "attribution": {
-          "author": "The Charter Oath, Article 5",
-          "work": "translated by Akihiko Tanaka",
-          "year": "1868"
+          "author": "The Charter Oath, 1868",
+          "work": "Article 5, translated by Akihiko Tanaka",
+          "year": ""
         },
         "notice": "Seek knowledge where? And to strengthen what?"
       }
@@ -353,8 +353,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         ],
         "visual": {
           "url": "../assets/images/topics/5-6/ikkei-takanawa-railway-1872.jpg",
-          "alt": "A Japanese color woodblock print: a gold and black steam locomotive with a tall funnel stands by the track while Western men and women in top hats and crinolines watch, and a crowd of Japanese people looks down from a bridge",
-          "credit": "Ikkei, Steam Engine of the Iron Railroad at Takanawa, woodblock print, 1872 · Library of Congress · Public domain",
+          "alt": "A Japanese color woodblock print: a gold and black steam locomotive with a tall funnel and a red carriage, two Western crewmen on the footplate, men in Western jackets and hats beside the train, and a signal post and the stone side of a bridge above",
+          "credit": "Ikkei, Steam Engine of the Iron Railroad at Takanawa, woodblock print, 1872, center sheet · Library of Congress · Public domain",
           "ratio": 0.752,
           "position": "50% 50%"
         },
@@ -373,7 +373,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "rows": [
           {
             "label": "Treaties",
-            "text": "1894: Britain agrees to **end its unequal treaty** with Japan (from 1899); others follow"
+            "text": "1894: Britain agrees to **end the foreign courts** in Japan (from 1899); others follow"
           },
           {
             "label": "War",
@@ -413,7 +413,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "items": [
             "A governor inside the Ottoman Empire",
             "Drafted workers in state mills",
-            "Mills mostly closed by about 1850"
+            "Mills mostly closed by the mid-1840s"
           ]
         },
         "right": {
@@ -462,7 +462,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "After the state",
-            "left": "Most mills failed by about 1850",
+            "left": "Most mills failed by the mid-1840s",
             "right": "Sold to private companies that kept them running"
           }
         ]
@@ -524,7 +524,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "visual": {
             "url": "../assets/images/topics/5-6/kunisada-first-train-leaving-yokohama-1872.jpg",
             "alt": "A Japanese color woodblock print in three sheets: a black steam locomotive pulls a line of red passenger cars along a stone embankment beside a blue bay full of sailing ships, with cherry trees in pink blossom, houses on a cliff and a mountain behind",
-            "credit": "Utagawa Kunimasa III, First Steam Train Leaving Yokohama, woodblock print, about 1872 · Library of Congress · Public domain",
+            "credit": "Baidō Kunimasa, First Steam Train Leaving Yokohama, woodblock print, about 1872 · Library of Congress · Public domain",
             "ratio": 2.042,
             "position": "30% 60%"
           }

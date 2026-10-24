@@ -18,7 +18,7 @@
  * Spine: afraid of stronger industrial powers, a few governments decided not
  * to wait for industry and built it themselves, to make their states strong.
  * Muhammad Ali's Egypt built factories for an army, and most of them closed
- * within about twenty years; Meiji Japan reformed itself, built railways and
+ * by the mid-1840s; Meiji Japan reformed itself, built railways and
  * mills, sold them to private companies, and became a regional power.
  * Wall version: The state built the factories. Japan's lasted. Egypt's mostly
  * closed.
@@ -35,7 +35,7 @@ window.BEHISTORICAL_TEACHING = {
     topic: '5.6',
     minutes: 90,
     title: 'Industrialization: Government’s Role from 1750 to 1900',
-    subtitle: 'Afraid of stronger industrial powers, a few governments decided not to wait for industry and built it themselves, to make their states strong. Muhammad Ali’s Egypt built factories for an army, and most of them closed within about twenty years; Meiji Japan reformed itself, built railways and mills, sold them to private companies, and became a regional power.',
+    subtitle: 'Afraid of stronger industrial powers, a few governments decided not to wait for industry and built it themselves, to make their states strong. Muhammad Ali’s Egypt built factories for an army, and most of them had closed by the mid-1840s; Meiji Japan reformed itself, built railways and mills, sold them to private companies, and became a regional power.',
     essentialQuestion: 'Why did a few governments build industry themselves, and what happened when they did?',
     apFocus: 'Causation, with Making Connections 5.A (patterns)',
     endTarget: 'Students can explain the causes and effects of two states\' economic strategies from 1750 to 1900: fear of stronger, better-armed powers led Muhammad Ali\'s Egypt and Meiji Japan to build industry with state money, foreign machines and experts, paid for by farmers; Egypt\'s factories supplied an army that won wars until European pressure, missing coal and forced labor closed most of them; U.S. and European pressure led Japan to reform itself, build industry, sell it to private companies and become a regional power. They can name the pattern the two cases share and the difference in their results.'
@@ -149,7 +149,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 1,
         land: [
-          'The picture is a real print: Utagawa Kunimasa III (later called Kunisada III), "First Steam Train Leaving Yokohama," color woodblock triptych, about 1872 (Library of Congress, Chadbourne collection, no known restrictions). The three sheets are shown side by side.',
+          'The picture is a real print, signed Baidō Kunimasa: "First Steam Train Leaving Yokohama," color woodblock triptych, about 1872 (Library of Congress, Chadbourne collection, no known restrictions; the Library catalogs it under Utagawa Kunisada, 1823 to 1880, and the signature may be that of the younger Kunimasa, later Kunisada III). The three sheets are shown side by side.',
           'Japan\'s first railway, Tokyo to Yokohama, opened in October 1872. The government built it, with British loans and British engineers. Japanese artists sold prints of the new train to a public that had never seen one.',
           'A print made to sell, not a photograph: the cherry blossoms, the harbor full of ships and the smiling passengers are the artist\'s choices. It shows what the railway meant to people in Tokyo, not exactly what the first train looked like.'
         ],
@@ -251,7 +251,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'egypt-result', kind: 'timeline', eyebrow: 'Egypt · The Result',
       kc: 'KC-5.1.V.C', title: 'It worked. Then it stopped.',
-      footer: 'Within about a decade of the early 1830s, most of the new factories had failed.',
+      footer: 'By the mid-1840s, about a decade after their peak, most of the new factories had failed.',
       template: {
         range: [1820, 1850],
         tick: 10,
@@ -343,7 +343,7 @@ window.BEHISTORICAL_TEACHING = {
           { x: 0.6, y: 0.8, label: 'The steamship', text: 'Perry\'s warships, 1853. Japan had no navy to stop them.' },
           { x: 0.2, y: 0.5, label: 'The sailor', text: 'Americans who demanded open ports and trade.' },
           { x: 0.5, y: 0.17, label: 'The crests', text: 'Japanese lords ordered to guard the coast.' },
-          { x: 0.08, y: 0.72, label: 'The map', text: 'Part of the coast the lords were ordered to guard.' }
+          { x: 0.08, y: 0.72, label: 'The map', text: 'A strip of coast labeled Shimoda and Izu.' }
         ]
       },
       notes: {
@@ -365,14 +365,14 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'The Charter Oath, issued in April 1868 in the name of the fifteen-year-old emperor, Meiji.',
       template: {
         quote: 'Knowledge shall be sought throughout the world so as to strengthen the foundations of imperial rule.',
-        attribution: { author: 'The Charter Oath, Article 5', work: 'translated by Akihiko Tanaka', year: '1868' },
+        attribution: { author: 'The Charter Oath, 1868', work: 'Article 5, translated by Akihiko Tanaka', year: '' },
         notice: 'Seek knowledge where? And to strengthen what?'
       },
       notes: {
         minutes: 2,
         land: [
           'In 1868 a group of young samurai overthrew the shogun and governed in the name of the teenage emperor: the Meiji Restoration. In April 1868 they issued the Charter Oath, five short articles (Columbia, Asia for Educators: written by "a group of the young samurai," in the name of the Emperor Meiji, "who was only 15 years old at the time").',
-          'Article 5, in Akihiko Tanaka\'s translation ("The World and Japan" database, GRIPS and the University of Tokyo). Other translations read "foundation" or, in the 1946 official version, "to promote the prosperity of the Empire." The full Oath is the lesson\'s Primary Source.',
+          'Article 5, in Akihiko Tanaka\'s translation ("The World and Japan" database, GRIPS and the University of Tokyo). Other translations read "foundation" or, in the official English translation of the emperor\'s 1946 rescript, printed in Foreign Relations of the United States, 1946, vol. VIII, "to promote the prosperity of the Empire." The full Oath is the lesson\'s Primary Source.',
           'Read it as a decision: learn from the world, but for Japan\'s own purpose. The new government\'s slogan was "Rich country, strong army" (fukoku kyōhei).'
         ],
         ask: 'Learn from the world, but why? What is the knowledge for?',
@@ -425,7 +425,7 @@ window.BEHISTORICAL_TEACHING = {
           'Columbia, Asia for Educators: the government built "railway and shipping lines, telegraph and telephone systems, three shipyards, ten mines, five munitions works, and fifty-three consumer industries (making sugar, glass, textiles, cement, chemicals, and other important products). This was very expensive, however, and strained government finances, so in 1880 the government decided to sell most of these industries to private investors."',
           'Who bought: Mitsubishi leased the Nagasaki shipyard in 1884 and bought it in 1887 (Mitsubishi); Mitsui took over the Miike coal mine, the country\'s largest, in 1889 (Mitsui Bunko) and bought the Tomioka mill in 1893. Private companies built more, such as the Osaka Spinning Company, 1883 (5.4).',
           'Costs: farmers paid much of it through the land tax, and samurai who lost their place rebelled; the new army of drafted commoners defeated the last great revolt, in Satsuma, in 1877.',
-          'The picture is a real print: Ikkei, "Steam Engine of the Iron Railroad at Takanawa," color woodblock, 1872, center sheet of a triptych (Library of Congress, no known restrictions). Western visitors stand beside the engine; Tokyo crowds watch from the bridge.'
+          'The picture is a real print: Ikkei, "Steam Engine of the Iron Railroad at Takanawa," color woodblock, 1872, center sheet of a triptych (Library of Congress, no known restrictions). Two Western crewmen stand on the engine and men in Western dress stand beside it; the full triptych, on the lesson page, shows Western visitors and Tokyo crowds on a bridge.'
         ],
         ask: 'Check the question-slide prediction: who paid for the railway? And who owned the industry by 1900?',
         listenFor: 'The government paid at first; from the 1880s much of it belonged to private companies such as Mitsui and Mitsubishi.',
@@ -440,7 +440,7 @@ window.BEHISTORICAL_TEACHING = {
         place: 'Korea',
         date: '1894 to 1895',
         rows: [
-          { label: 'Treaties', text: '1894: Britain agrees to **end its unequal treaty** with Japan (from 1899); others follow' },
+          { label: 'Treaties', text: '1894: Britain agrees to **end the foreign courts** in Japan (from 1899); others follow' },
           { label: 'War', text: 'Japan and China fight over **Korea**, and Japan wins' },
           { label: 'Gains', text: 'China gives up its claim over Korea, gives Japan **Taiwan**, and agrees to pay **200 million taels**' },
           { label: 'Limit', text: 'Russia, Germany and France make Japan **give back** one more piece of land' }
@@ -451,13 +451,13 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.2.II.A\'s last link: "the growing regional power of Japan in the Meiji Era."',
-          'Treaty revision: the Anglo-Japanese Treaty of Commerce and Navigation, signed 16 July 1894, in force 17 July 1899, ended extraterritoriality; Japan Customs says it "spurred the revision of unequal commerce treaties with other countries." Columbia ties it to Japan rewriting its laws on European models.',
-          'The war: "In 1894 Japan fought a war against China over its interest in Korea" (Columbia). The Treaty of Shimonoseki, 17 April 1895: China recognized "the full and complete independence and autonomy of Korea" (Article 1), gave up Taiwan, the Penghu Islands and the Liaodong Peninsula (Articles 2 and 3) and agreed to pay "200,000,000 Kuping taels" (Article 4). Within a week Russia, Germany and France forced Japan to give back the Liaodong Peninsula, which angered Japan\'s leaders.',
+          'The foreign courts: the Anglo-Japanese Treaty of Commerce and Navigation, signed 16 July 1894, in force 17 July 1899, ended extraterritoriality, but not the limit on Japan\'s tariffs, which lasted until 1911 (Cortazzi; Japan Customs); Japan Customs says it "spurred the revision of unequal commerce treaties with other countries." Columbia ties it to Japan rewriting its laws on European models.',
+          'The war: "In 1894 Japan fought a war against China over its interest in Korea" (Columbia). The Treaty of Shimonoseki, 17 April 1895: China recognized "the full and complete independence and autonomy of Korea" (Article 1), gave up Taiwan, the Penghu Islands and the Liaodong Peninsula (Articles 2 and 3) and agreed to pay "200,000,000 Kuping taels" (Article 4). Within a week Russia, Germany and France demanded that Japan give back the Liaodong Peninsula, and Japan gave in, which angered its leaders.',
           'Do not say Japan took Korea in 1895: the treaty ended China\'s claim; Japan made Korea a colony in 1910 (Unit 6).',
           'What empires did with that power, in Taiwan and Korea, is Unit 6. The lesson\'s Evidence Lab has a Japanese cartoon of the war from 1895, Kiyochika\'s "Rats in a Bag": wartime propaganda, made for Japanese buyers.'
         ],
         ask: 'What evidence on this slide shows Japan had become a regional power?',
-        listenFor: 'It beat China, took Taiwan and an indemnity, and Britain agreed to end the unequal treaty.',
+        listenFor: 'It beat China, took Taiwan and an indemnity, and Britain agreed to end the foreign courts in Japan.',
         ap: 'KC-5.2.II.A (growing regional power).'
       }
     },
@@ -482,7 +482,7 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'KC-5.1.V.C', title: 'Two states, one pattern.',
       footer: 'Both aimed at the same goal: a state strong enough to defend itself, with an army to match.',
       template: {
-        left: { name: 'Egypt', items: ['A governor inside the Ottoman Empire', 'Drafted workers in state mills', 'Mills mostly closed by about 1850'] },
+        left: { name: 'Egypt', items: ['A governor inside the Ottoman Empire', 'Drafted workers in state mills', 'Mills mostly closed by the mid-1840s'] },
         right: { name: 'Japan', items: ['An independent country that reformed itself', 'State industries sold to private firms', 'A regional power by 1895'] },
         both: ['Feared stronger, better-armed powers', 'The state paid for the first factories', 'Foreign machines and experts', 'Farmers paid much of the bill']
       },
@@ -509,15 +509,15 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'Status', left: 'A province of the Ottoman Empire; Europe cut its army', right: 'An independent country; no European power took its land or cut its army' },
           { label: 'Reform', left: 'One ruler\'s project, run with drafted workers', right: 'Reform of the whole society first' },
           { label: 'Coal', left: 'Almost none: many machines turned by animals', right: 'Coal of its own' },
-          { label: 'After the state', left: 'Most mills failed by about 1850', right: 'Sold to private companies that kept them running' }
+          { label: 'After the state', left: 'Most mills failed by the mid-1840s', right: 'Sold to private companies that kept them running' }
         ]
       },
       notes: {
         minutes: 2,
         land: [
           'Four reasons historians point to; none is the whole answer. Ask students to choose the strongest and defend it with a piece of evidence.',
-          'Status: Egypt\'s army was cut to 18,000 by the 1841 settlement; Japan, though forced into unequal treaties, was never conquered and won them back. Reform: Columbia\'s account of the Meiji reforms (slide 14) against Beinin and Fahmy on Egypt\'s drafted workers. Coal: OER and Beinin on Egypt; the Miike mine, "easily the nation\'s largest," sold to Mitsui (Mitsui Bunko). After the state: Columbia on the 1880 sale; Beinin on Egypt\'s failures.',
-          'The footer is the test of the "Europe did it" explanation: under the 1866 tariff convention Japan could charge only 5 percent on imports until 1911 (Japan Customs), and its industry still grew. So European pressure mattered to Egypt\'s army and monopolies, but low tariffs alone do not explain the different results.'
+          'Status: Egypt\'s army was cut to 18,000 by the 1841 settlement; Japan, though forced into unequal treaties, was never conquered, and it won an end to the foreign courts in 1894 (from 1899) and control of its tariffs in 1911. Reform: Columbia\'s account of the Meiji reforms (slide 14) against Beinin and Fahmy on Egypt\'s drafted workers. Coal: OER and Beinin on Egypt; the Miike mine, "easily the nation\'s largest," sold to Mitsui (Mitsui Bunko). After the state: Columbia on the 1880 sale; Beinin on Egypt\'s failures.',
+          'The footer is the test of the "Europe did it" explanation: under the 1866 tariff convention Japan could charge only about 5 percent on most imports through its build-up of the 1870s and 1880s (Cortazzi; Japan Customs), and its industry still grew. Revised treaties raised the rates from 1899, and full tariff control came only in 1911. So European pressure mattered to Egypt\'s army and monopolies, but low tariffs alone do not explain the different results.'
         ],
         ask: 'Which row is the strongest reason? Why?',
         listenFor: 'A row chosen and defended with evidence, ideally with the footer\'s point about tariffs.',
@@ -580,7 +580,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 1,
         land: [
           'Learning objective G: "Explain the causes and effects of economic strategies of different states and empires." The sentence is the whole answer; one example per state makes it an AP answer.',
-          'A strong version: between 1750 and 1900 a small number of governments built industry themselves because they feared stronger, better-armed powers; Muhammad Ali, Egypt\'s Ottoman governor, used a monopoly on cotton to pay for about 30 state cotton mills that supplied an army of about 130,000, but after European powers drove his army from Syria and cut it to 18,000 in 1841, and with no coal and drafted workers, most mills failed within about a decade; in Japan, Perry\'s warships and the unequal treaties led the Meiji government to abolish the domains, tax land in money, and build railways and the Tomioka Silk Mill, which it sold to companies such as Mitsui from the 1880s, and the industry and army it built helped Japan defeat China in 1895, take Taiwan and end the unequal treaties.'
+          'A strong version: between 1750 and 1900 a small number of governments built industry themselves because they feared stronger, better-armed powers; Muhammad Ali, Egypt\'s Ottoman governor, used a monopoly on cotton to pay for about 30 state cotton mills that supplied an army of about 130,000, but after European powers drove his army from Syria and cut it to 18,000 in 1841, and with no coal and drafted workers, most mills had failed by the mid-1840s; in Japan, Perry\'s warships and the unequal treaties led the Meiji government to abolish the domains, tax land in money, and build railways and the Tomioka Silk Mill, which it sold to companies such as Mitsui from the 1880s, and the industry and army it built helped Japan defeat China in 1895, take Taiwan and begin ending the unequal treaties.'
         ],
         ask: 'Which blank is hardest to fill with an example?',
         listenFor: 'Students who can give one example for each state and say what it caused have the objective.'
@@ -610,7 +610,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 12,
         land: [
           'Module 10 is required: draft, Socrates, revise. It assesses Target 2 (KC-5.2.II.A) and the learning objective, and declares Causation.',
-          'A strong answer: in 1853 Perry\'s warships forced Japan to open its ports, and the treaties of 1854 and 1858 let foreigners be tried in their own courts and took away Japan\'s control of its trade; in 1868 the Meiji leaders took power, abolished the domains in 1871 and created a land tax paid in money, which paid for the state\'s railway from Tokyo to Yokohama and the Tomioka Silk Mill in 1872; from 1880 the government sold most of its industries to companies such as Mitsui and Mitsubishi; by 1894 Britain agreed to end its unequal treaty, and in 1895 Japan defeated China and took Taiwan. Like Egypt, Japan\'s government built industry with foreign machines and experts because it feared stronger powers; unlike Egypt, whose mills mostly closed after Europe cut its army in 1841, Japan\'s industry lasted, because it was independent, reformed its whole society, had coal and handed its industries to private companies.'
+          'A strong answer: in 1853 Perry\'s warships forced Japan to open its ports, and the treaties of 1854 and 1858 let foreigners be tried in their own courts and took away Japan\'s control of its trade; in 1868 the Meiji leaders took power, abolished the domains in 1871 and created a land tax paid in money, which paid for the state\'s railway from Tokyo to Yokohama and the Tomioka Silk Mill in 1872; from 1880 the government sold most of its industries to companies such as Mitsui and Mitsubishi; in 1894 Britain agreed to end its foreign courts in Japan, and in 1895 Japan defeated China and took Taiwan. Like Egypt, Japan\'s government built industry with foreign machines and experts because it feared stronger powers; unlike Egypt, whose mills mostly closed after Europe cut its army in 1841, Japan\'s industry lasted, because it was independent, reformed its whole society, had coal and handed its industries to private companies.'
         ],
         ask: 'Where in your answer is the cause, and where is the effect?',
         listenFor: 'Outside pressure as the cause; reform, industry and regional power as the effects, with the links between them explained.'

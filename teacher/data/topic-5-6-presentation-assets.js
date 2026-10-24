@@ -12,8 +12,9 @@
  * Stored under assets/images/topics/5-6 (new):
  * - kunisada-first-train-leaving-yokohama-1872.jpg: Yokohama tetsudō jōki
  *   shussha no zu (First steam train leaving Yokohama), color woodblock
- *   triptych, about 1872, signed Baidō Kunimasa (Utagawa Kunimasa III, later
- *   Kunisada III), publisher Iseya Kenkichi. Library of Congress 2002700197,
+ *   triptych, about 1872, signed Baidō Kunimasa, publisher Iseya Kenkichi; the Library
+ *   catalogs it under Utagawa Kunisada (1823 to 1880), and the signature may
+ *   be Kunimasa IV's (later Kunisada III). Library of Congress 2002700197,
  *   Chadbourne collection (no known restrictions). The three sheets joined,
  *   paper margins trimmed.
  * - ikkei-takanawa-railway-1872.jpg: Takanawa tetsudō jōkisha no zenzu (Steam
@@ -49,11 +50,11 @@ if(!T||!Array.isArray(T.slides))return;
 const by=id=>T.slides.find(s=>s.phase===id);
 const IMG='../assets/images/topics/5-6/';
 const COMMONS='../assets/images/commons/';
-const TRAIN={url:IMG+'kunisada-first-train-leaving-yokohama-1872.jpg',alt:'A Japanese color woodblock print in three sheets: a black steam locomotive pulls a line of red passenger cars along a stone embankment beside a blue bay full of sailing ships, with cherry trees in pink blossom, houses on a cliff and a mountain behind',credit:'Utagawa Kunimasa III, First Steam Train Leaving Yokohama, woodblock print, about 1872 · Library of Congress · Public domain',ratio:2.042,position:'40% 60%'};
+const TRAIN={url:IMG+'kunisada-first-train-leaving-yokohama-1872.jpg',alt:'A Japanese color woodblock print in three sheets: a black steam locomotive pulls a line of red passenger cars along a stone embankment beside a blue bay full of sailing ships, with cherry trees in pink blossom, houses on a cliff and a mountain behind',credit:'Baidō Kunimasa, First Steam Train Leaving Yokohama, woodblock print, about 1872 · Library of Congress · Public domain',ratio:2.042,position:'40% 60%'};
 const COUDER={url:COMMONS+'modernegypt-muhammad-ali-by-auguste-couder-bap-17996-d37493.jpg',alt:'A painted portrait of Muhammad Ali, an older man with a long white beard, wearing a white turban and a dark fur-trimmed robe, seated with a sword',credit:'Auguste Couder, Muhammad Ali, oil on canvas, about 1840 to 1841 · Versailles · Public domain',ratio:0.791,position:'50% 30%'};
-const PERRY={url:IMG+'perry-arrives-uraga-broadsheet-1853.jpg',alt:'A black-and-white Japanese woodblock broadsheet: rows of feudal lords\' crests and spears across the top, an American sailor on the left, and a large steamship with paddle wheel, masts, smoke and a striped flag across the bottom',credit:'Perry Arrives in Uraga, Japanese woodblock broadsheet, after July 1853 · Library of Congress · Public domain',ratio:0.765,position:'50% 80%'};
+const PERRY={url:IMG+'perry-arrives-uraga-broadsheet-1853.jpg',alt:'A black-and-white Japanese woodblock broadsheet: rows of feudal lords\' crests and spears across the top, an American sailor on the left, and a large steamship with paddle wheel, masts, smoke and a striped flag across the bottom',credit:'Perry Arrives in Uraga, Japanese woodblock broadsheet, after July 1853 · Library of Congress · Public domain',ratio:0.765,fit:'contain'};
 const IWAKURA={url:COMMONS+'iwakura-mission-1f7f61.jpg',alt:'An old black-and-white photograph of five Japanese men posed in a studio: the man seated in the center wears a Japanese robe and topknot, and the four standing and seated around him wear Western suits',credit:'The Iwakura Mission, photograph, 1872 · Public domain',ratio:1.27,position:'50% 40%'};
-const TAKANAWA={url:IMG+'ikkei-takanawa-railway-1872.jpg',alt:'A Japanese color woodblock print: a gold and black steam locomotive with a tall funnel stands by the track while Western men and women in top hats and crinolines watch, and a crowd of Japanese people looks down from a bridge',credit:'Ikkei, Steam Engine of the Iron Railroad at Takanawa, woodblock print, 1872 · Library of Congress · Public domain',ratio:0.752,position:'50% 50%'};
+const TAKANAWA={url:IMG+'ikkei-takanawa-railway-1872.jpg',alt:'A Japanese color woodblock print: a gold and black steam locomotive with a tall funnel and a red carriage, two Western crewmen on the footplate, men in Western jackets and hats beside the train, and a signal post and the stone side of a bridge above',credit:'Ikkei, Steam Engine of the Iron Railroad at Takanawa, woodblock print, 1872, center sheet · Library of Congress · Public domain',ratio:0.752,position:'50% 50%'};
 const CITADEL={url:IMG+'cairo-citadel-photochrom-c1900.jpg',alt:'A colored photograph of the Citadel of Cairo on its hill: long stone walls and white buildings below a large domed mosque with two tall, thin minarets, under a pale sky',credit:'Photoglob Co., Cairo, the Citadel, photochrom, about 1890 to 1910 · Library of Congress · Public domain',ratio:1.298,position:'50% 45%'};
 const setTemplate=(phase,add)=>{const s=by(phase);if(s)s.template=Object.assign({},s.template||{},add);return s;};
 setTemplate('question',{place:'top',visual:Object.assign({},TRAIN,{tagPos:'bl'})});

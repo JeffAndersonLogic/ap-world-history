@@ -731,7 +731,7 @@ Strong answer checklist: Describe how goods and news moved before. Explain what 
 
 ## 5.6 Industrialization: Government’s Role from 1750 to 1900
 
-**Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. Afraid of stronger, better-armed powers, a few governments decided not to wait for industry and built it themselves, to make their states strong. Muhammad Ali’s Egypt built factories for an army, and most of them closed within about twenty years; Meiji Japan reformed itself, built railways and mills, sold them to private companies, and became a regional power.
+**Where this sits.** Unit 5: Revolutions, c. 1750 to c. 1900. Afraid of stronger, better-armed powers, a few governments decided not to wait for industry and built it themselves, to make their states strong. Muhammad Ali’s Egypt built factories for an army, and most of them had closed by the mid-1840s; Meiji Japan reformed itself, built railways and mills, sold them to private companies, and became a regional power.
 
 **College Board key concepts.**
 - Unit 5: Learning Objective G (Learning Objective): Explain the causes and effects of economic strategies of different states and empires.

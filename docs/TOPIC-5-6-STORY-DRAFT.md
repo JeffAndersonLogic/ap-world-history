@@ -5,9 +5,11 @@ Drafted 2026-10-24 from the CED source file, for the build Jeff started with "Bu
 reviewers check this story and every surface built from it against that file and the scholarship.
 Nothing ships until Jeff says "ship it".
 
-**Resume here (2026-10-24):** Phases 0 to 8 are finished and pushed. Phase 9 review pass 1 is
-running (packet from `capture-topic-for-review.js 5.6`); its findings are not yet logged in the claim
-ledger. Next: fix and log pass 1, recapture, run pass 2. The Unit 5 reading fingerprint has not moved.
+**Resume here (2026-10-24):** Phases 0 to 8 are finished. Review pass 1 is done: the page-truth
+findings (13) are fixed and logged in the claim ledger; the history findings (14) are fixed in the
+surfaces (13 accepted, 1 rejected: the 1946 Charter Oath wording, which the FRUS official translation
+supports) but NOT yet logged in the ledger. Next: log the pass 1 history findings, recapture, run
+pass 2. The Unit 5 reading fingerprint has not moved. Jeff paused the build here.
 
 **Taught:** no dates yet. The schedule ends with the Era 3 Exam (Green Monday 2026-11-23, Silver
 Tuesday 2026-11-24), and neither the schedule nor any comment in it names a Unit 5 class day (5.1 to
@@ -44,7 +46,7 @@ Key Concepts, in the CED's order:
   **chain of causes and effects for each state: a threat from stronger, better-armed powers made a few
   governments decide not to wait for industry; they built it themselves, with foreign machines and
   experts, paid for by their farmers, to make the state strong; in Japan the strategy lasted and made
-  Japan a regional power, and in Egypt most of the factories closed within about twenty years.**
+  Japan a regional power, and in Egypt most of the factories had closed by the mid-1840s.**
 - **Suggested skill:** 5.A Making Connections, "Identify patterns among or connections between
   historical developments and processes." Students put two cases side by side, name what they share
   (the pattern), and name the difference that the pattern does not explain.
@@ -177,12 +179,12 @@ own armies more than once.
 **Then it stopped.** Britain, Austria, Russia and Prussia did not want a strong Egypt breaking the
 Ottoman Empire apart. In 1840 they sided with the sultan, and British warships and Ottoman troops drove
 Ibrahim out of Syria. In 1841
-the sultan made Muhammad Ali's family the hereditary governors of Egypt, but Egypt had to give up its
+the sultan made the governorship of Egypt hereditary in Muhammad Ali's family (passing to its eldest male), but Egypt had to give up its
 conquests except Sudan, and its army was cut to 18,000 men in peacetime. Egypt also had to accept a
 trade treaty Britain had signed with the Ottoman sultan in 1838, which ended Muhammad Ali's monopolies
 and opened Egypt to cheap foreign goods. The factories had problems of their own, too. Egypt had almost
 no coal, so many machines were turned by animals instead of steam. The drafted workers resisted, and the managers had
-little experience. Within about a decade most of the new factories had failed. Historians still argue
+little experience. By the mid-1840s, about a decade after their peak, most of the new factories had failed. Historians still argue
 about which cause mattered most, and about how much the factories achieved while they lasted. Egypt
 went on growing more and more cotton, almost all of it sold abroad, much of it to the mills of Britain. (What that led to is
 Unit 6.)
@@ -219,8 +221,8 @@ Mitsubishi bought them and grew into huge companies, the zaibatsu. Private compa
 Spinning Company (Topic 5.4) built more. The state had started the industry; private business carried
 it on.
 
-**And Japan became a regional power.** In 1894 Britain agreed to end its unequal treaty with Japan
-(the change took effect in 1899), and other powers followed. In 1894 and 1895 Japan fought China over
+**And Japan became a regional power.** In 1894 Britain agreed to end the foreign courts in Japan
+(the change took effect in 1899), and other powers followed; full control of tariffs came only in 1911. In 1894 and 1895 Japan fought China over
 Korea and won. In the Treaty of Shimonoseki, China gave up its claim over Korea, gave Taiwan to Japan,
 and agreed to pay 200 million taels of silver. Russia, Germany and France forced Japan to give back
 one more piece of land it had won, which angered Japan's leaders. Japan, which had been forced to open its
@@ -261,7 +263,7 @@ financed. Who owned the factories, and how did money move around the industrial 
 
 **Afraid of stronger, better-armed powers, a few governments decided not to wait for industry and built
 it themselves, to make their states strong. Muhammad Ali's Egypt built factories for an army, and most
-of them closed within about twenty years; Meiji Japan reformed itself, built railways and mills, sold
+of them had closed by the mid-1840s; Meiji Japan reformed itself, built railways and mills, sold
 them to private companies, and became a regional power.**
 
 The story map's spine ("A few governments decided not to wait for industry and built it themselves:

@@ -141,7 +141,7 @@
       alt: "An old black-and-white photograph of five Japanese men posed in a studio: the man seated in the center wears a Japanese robe and topknot, and the four around him wear Western suits",
       url: "../assets/images/commons/iwakura-mission-1f7f61.jpg",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Iwakura_mission.jpg",
-      caption: "Five leaders of the Meiji government photographed in 1872, early in a tour of the United States and Europe that lasted from 1871 to 1873. From left: Kido Takayoshi, Yamaguchi Masuka, Iwakura Tomomi (seated, in Japanese dress), Itō Hirobumi, and Ōkubo Toshimichi. Sources disagree on which city it was taken in.",
+      caption: "Five leaders of the Meiji government photographed in 1872, during a tour of the United States and Europe that lasted from 1871 to 1873. From left: Kido Takayoshi, Yamaguchi Masuka, Iwakura Tomomi (seated, in Japanese dress), Itō Hirobumi, and Ōkubo Toshimichi. Sources disagree on which city it was taken in.",
       prompt: "NOTICE what each man is wearing. INFER what decision about Japan's future the photograph shows. A posed photograph is a choice: what can it not tell you about what the leaders learned on their tour?"
     },
     {
