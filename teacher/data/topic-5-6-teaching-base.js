@@ -199,19 +199,16 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'egypt-ruler', kind: 'case-file', eyebrow: 'Egypt · The Ruler',
+      phase: 'egypt-ruler', kind: 'story-scene', eyebrow: 'Egypt · The Ruler',
       kc: 'KC-5.1.V.C', title: 'A governor who wanted power of his own.',
+      footer: 'The cause: a ruler who feared stronger armies and wanted power for his family.',
       template: {
-        tag: 'Governor',
-        place: 'Egypt',
-        date: '1805 to 1848',
-        rows: [
-          { label: 'Who', text: '**Muhammad Ali**, an Ottoman officer from an Albanian family, made governor in 1805' },
-          { label: 'Saw', text: 'Napoleon\'s French army **defeat Egypt\'s rulers** in 1798' },
-          { label: 'Wanted', text: 'Egypt strong enough to hold for **his family**, even against the sultan' },
-          { label: 'Needed', text: 'An **army**, and guns, uniforms and ships to supply it' }
-        ],
-        proves: 'The cause: a ruler who feared stronger armies and wanted power.'
+        steps: [
+          { label: '1798', text: 'Napoleon\'s French army **defeats Egypt\'s rulers**.' },
+          { label: '1805', text: '**Muhammad Ali**, an Ottoman officer from an Albanian family, becomes governor.' },
+          { label: '1811', text: 'He destroys his rivals and **rules alone**.' },
+          { label: 'Aim', key: true, text: 'Hold Egypt for **his family**, even against the sultan. That needs an **army**.' }
+        ]
       },
       notes: {
         minutes: 2,
@@ -323,19 +320,16 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'japan-threat', kind: 'case-file', eyebrow: 'Japan · The Threat',
+      phase: 'japan-threat', kind: 'annotated', eyebrow: 'Japan · The Threat',
       kc: 'KC-5.2.II.A', title: 'Ships that changed a government.',
+      footer: 'Treaties in 1854 and 1858 opened ports, let foreigners be tried in their own courts, and took away Japan\'s control of its own trade.',
       template: {
-        tag: 'Threat',
-        place: 'Edo Bay',
-        date: '1853',
-        rows: [
-          { label: 'Who', text: 'Commodore **Matthew Perry**, with American warships' },
-          { label: 'Demand', text: 'Open Japan\'s ports to **trade**. Japan had no navy to stop him' },
-          { label: 'Treaties', text: '1854 and 1858: more ports opened; foreigners tried in **their own courts**' },
-          { label: 'Lost', text: 'Control over Japan\'s **own trade**: these were unequal treaties' }
-        ],
-        proves: 'The cause: U.S. and European influence pressed on Japan.'
+        pins: [
+          { x: 0.6, y: 0.8, label: 'The steamship', text: 'Perry\'s warships, 1853. Japan had no navy to stop them.' },
+          { x: 0.2, y: 0.5, label: 'The sailor', text: 'Americans who demanded open ports and trade.' },
+          { x: 0.5, y: 0.17, label: 'The crests', text: 'Japanese lords ordered to guard the coast.' },
+          { x: 0.08, y: 0.72, label: 'The coast', text: 'Uraga, near the mouth of Edo Bay.' }
+        ]
       },
       notes: {
         minutes: 2,
@@ -424,16 +418,19 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'japan-power', kind: 'story-scene', eyebrow: 'Japan · A Regional Power',
+      phase: 'japan-power', kind: 'case-file', eyebrow: 'Japan · A Regional Power',
       kc: 'KC-5.2.II.A', title: 'Forty years after Perry, Japan beat China.',
-      footer: 'Japan, forced to open its ports in the 1850s, now had a colony of its own. What empires did with that power is Unit 6.',
       template: {
-        steps: [
-          { label: '1894', text: 'Britain agrees to **end its unequal treaty** with Japan (from 1899); others follow.' },
-          { label: '1894', text: 'Japan and China go to **war** over Korea.' },
-          { label: '1895', key: true, text: 'Japan wins. China gives up its claim over **Korea** and gives Japan **Taiwan**.' },
-          { label: 'Also', text: 'China agrees to pay **200 million taels** of silver.' }
-        ]
+        tag: 'War',
+        place: 'Korea',
+        date: '1894 to 1895',
+        rows: [
+          { label: 'Treaties', text: '1894: Britain agrees to **end its unequal treaty** with Japan (from 1899); others follow' },
+          { label: 'War', text: 'Japan and China fight over **Korea**, and Japan wins' },
+          { label: 'Gains', text: 'China gives up its claim over Korea, gives Japan **Taiwan**, and agrees to pay **200 million taels**' },
+          { label: 'Limit', text: 'Russia, Germany and France make Japan **give back** one more piece of land' }
+        ],
+        proves: 'Japan, forced open in the 1850s, now had a colony of its own: a regional power.'
       },
       notes: {
         minutes: 2,
@@ -442,7 +439,7 @@ window.BEHISTORICAL_TEACHING = {
           'Treaty revision: the Anglo-Japanese Treaty of Commerce and Navigation, signed 16 July 1894, in force 17 July 1899, ended extraterritoriality; Japan Customs says it "spurred the revision of unequal commerce treaties with other countries." Columbia ties it to Japan rewriting its laws on European models.',
           'The war: "In 1894 Japan fought a war against China over its interest in Korea" (Columbia). The Treaty of Shimonoseki, 17 April 1895: China recognized "the full and complete independence and autonomy of Korea" (Article 1), gave up Taiwan, the Penghu Islands and the Liaodong Peninsula (Articles 2 and 3) and agreed to pay "200,000,000 Kuping taels" (Article 4). Within a week Russia, Germany and France forced Japan to give back the Liaodong Peninsula, which angered Japan\'s leaders.',
           'Do not say Japan took Korea in 1895: the treaty ended China\'s claim; Japan made Korea a colony in 1910 (Unit 6).',
-          'The picture is a real print, made as war news for Japanese buyers: Utagawa Kokunimasa, "Our Army\'s Great Victory at Pyongyang Castle," color woodblock, 1894, right sheet of a triptych (Library of Congress, no known restrictions). Japanese officers in Western uniforms study a map under the Rising Sun flag. It is propaganda, not a photograph.'
+          'What empires did with that power, in Taiwan and Korea, is Unit 6. The lesson\'s Evidence Lab has a Japanese cartoon of the war from 1895, Kiyochika\'s "Rats in a Bag": wartime propaganda, made for Japanese buyers.'
         ],
         ask: 'What evidence on this slide shows Japan had become a regional power?',
         listenFor: 'It beat China, took Taiwan and an indemnity, and Britain agreed to end the unequal treaty.',
@@ -488,7 +485,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'difference', kind: 'split-mirror', eyebrow: 'Making Connections 5.A · The Difference',
-      title: 'Same pattern. Different results. Why?',
+      title: 'Same pattern, different results.',
       footer: 'Japan had to accept low tariffs too, so outside pressure alone does not explain the difference.',
       template: {
         left: { name: 'Egypt' },
@@ -542,6 +539,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         left: { name: 'Egypt, Muhammad Ali', items: ['Threat: Napoleon\'s army, 1798', 'State mills supply an army', 'Europe cuts the army; no coal; most mills close'] },
         right: { name: 'Japan, the Meiji era', items: ['Threat: Perry\'s warships, 1853', 'Reform, railways, mills; then sold', 'Beats China, takes Taiwan: a regional power'] },
+        bothLabel: 'The pattern',
         both: ['Fear of stronger industrial powers', 'The state builds industry to make itself strong']
       },
       notes: {

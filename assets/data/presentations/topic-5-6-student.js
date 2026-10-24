@@ -84,40 +84,39 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "case-file",
+      "kind": "story-scene",
       "eyebrow": "Egypt · The Ruler",
       "title": "A governor who wanted power of his own.",
+      "footer": "The cause: a ruler who feared stronger armies and wanted power for his family.",
       "kc": "KC-5.1.V.C",
       "template": {
-        "tag": "Governor",
-        "place": "Egypt",
-        "date": "1805 to 1848",
-        "rows": [
+        "steps": [
           {
-            "label": "Who",
-            "text": "**Muhammad Ali**, an Ottoman officer from an Albanian family, made governor in 1805"
+            "label": "1798",
+            "text": "Napoleon's French army **defeats Egypt's rulers**."
           },
           {
-            "label": "Saw",
-            "text": "Napoleon's French army **defeat Egypt's rulers** in 1798"
+            "label": "1805",
+            "text": "**Muhammad Ali**, an Ottoman officer from an Albanian family, becomes governor."
           },
           {
-            "label": "Wanted",
-            "text": "Egypt strong enough to hold for **his family**, even against the sultan"
+            "label": "1811",
+            "text": "He destroys his rivals and **rules alone**."
           },
           {
-            "label": "Needed",
-            "text": "An **army**, and guns, uniforms and ships to supply it"
+            "label": "Aim",
+            "key": true,
+            "text": "Hold Egypt for **his family**, even against the sultan. That needs an **army**."
           }
         ],
-        "proves": "The cause: a ruler who feared stronger armies and wanted power.",
         "visual": {
           "url": "../assets/images/commons/modernegypt-muhammad-ali-by-auguste-couder-bap-17996-d37493.jpg",
           "alt": "A painted portrait of Muhammad Ali, an older man with a long white beard, wearing a white turban and a dark fur-trimmed robe, seated with a sword",
           "credit": "Auguste Couder, Muhammad Ali, oil on canvas, about 1840 to 1841 · Versailles · Public domain",
           "ratio": 0.791,
           "position": "50% 30%"
-        }
+        },
+        "caption": "Muhammad Ali, painted about 1840 to 1841"
       }
     },
     {
@@ -223,33 +222,38 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "case-file",
+      "kind": "annotated",
       "eyebrow": "Japan · The Threat",
       "title": "Ships that changed a government.",
+      "footer": "Treaties in 1854 and 1858 opened ports, let foreigners be tried in their own courts, and took away Japan's control of its own trade.",
       "kc": "KC-5.2.II.A",
       "template": {
-        "tag": "Threat",
-        "place": "Edo Bay",
-        "date": "1853",
-        "rows": [
+        "pins": [
           {
-            "label": "Who",
-            "text": "Commodore **Matthew Perry**, with American warships"
+            "x": 0.6,
+            "y": 0.8,
+            "label": "The steamship",
+            "text": "Perry's warships, 1853. Japan had no navy to stop them."
           },
           {
-            "label": "Demand",
-            "text": "Open Japan's ports to **trade**. Japan had no navy to stop him"
+            "x": 0.2,
+            "y": 0.5,
+            "label": "The sailor",
+            "text": "Americans who demanded open ports and trade."
           },
           {
-            "label": "Treaties",
-            "text": "1854 and 1858: more ports opened; foreigners tried in **their own courts**"
+            "x": 0.5,
+            "y": 0.17,
+            "label": "The crests",
+            "text": "Japanese lords ordered to guard the coast."
           },
           {
-            "label": "Lost",
-            "text": "Control over Japan's **own trade**: these were unequal treaties"
+            "x": 0.08,
+            "y": 0.72,
+            "label": "The coast",
+            "text": "Uraga, near the mouth of Edo Bay."
           }
         ],
-        "proves": "The cause: U.S. and European influence pressed on Japan.",
         "visual": {
           "url": "../assets/images/topics/5-6/perry-arrives-uraga-broadsheet-1853.jpg",
           "alt": "A black-and-white Japanese woodblock broadsheet: rows of feudal lords' crests and spears across the top, an American sailor on the left, and a large steamship with paddle wheel, masts, smoke and a striped flag across the bottom",
@@ -348,39 +352,33 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "story-scene",
+      "kind": "case-file",
       "eyebrow": "Japan · A Regional Power",
       "title": "Forty years after Perry, Japan beat China.",
-      "footer": "Japan, forced to open its ports in the 1850s, now had a colony of its own. What empires did with that power is Unit 6.",
       "kc": "KC-5.2.II.A",
       "template": {
-        "steps": [
+        "tag": "War",
+        "place": "Korea",
+        "date": "1894 to 1895",
+        "rows": [
           {
-            "label": "1894",
-            "text": "Britain agrees to **end its unequal treaty** with Japan (from 1899); others follow."
+            "label": "Treaties",
+            "text": "1894: Britain agrees to **end its unequal treaty** with Japan (from 1899); others follow"
           },
           {
-            "label": "1894",
-            "text": "Japan and China go to **war** over Korea."
+            "label": "War",
+            "text": "Japan and China fight over **Korea**, and Japan wins"
           },
           {
-            "label": "1895",
-            "key": true,
-            "text": "Japan wins. China gives up its claim over **Korea** and gives Japan **Taiwan**."
+            "label": "Gains",
+            "text": "China gives up its claim over Korea, gives Japan **Taiwan**, and agrees to pay **200 million taels**"
           },
           {
-            "label": "Also",
-            "text": "China agrees to pay **200 million taels** of silver."
+            "label": "Limit",
+            "text": "Russia, Germany and France make Japan **give back** one more piece of land"
           }
         ],
-        "visual": {
-          "url": "../assets/images/topics/5-6/kokunimasa-pyongyang-victory-1894.jpg",
-          "alt": "A Japanese color woodblock print of Japanese officers in black Western uniforms on horseback and on foot, studying a map spread on the ground beneath a Rising Sun flag, in a winter forest",
-          "credit": "Utagawa Kokunimasa, Our Army's Great Victory at Pyongyang Castle, woodblock print, 1894 · Library of Congress · Public domain",
-          "ratio": 0.683,
-          "position": "50% 40%"
-        },
-        "caption": "War news for Japanese buyers, 1894"
+        "proves": "Japan, forced open in the 1850s, now had a colony of its own: a regional power."
       }
     },
     {
@@ -428,7 +426,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "split-mirror",
       "eyebrow": "Making Connections 5.A · The Difference",
-      "title": "Same pattern. Different results. Why?",
+      "title": "Same pattern, different results.",
       "footer": "Japan had to accept low tariffs too, so outside pressure alone does not explain the difference.",
       "template": {
         "left": {
@@ -522,6 +520,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "position": "30% 60%"
           }
         },
+        "bothLabel": "The pattern",
         "both": [
           "Fear of stronger industrial powers",
           "The state builds industry to make itself strong"
@@ -582,14 +581,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "The state built the factories. Japan's lasted. Egypt's mostly closed.",
       "subtitle": "The Citadel of Cairo, where Muhammad Ali ruled. Next, Topic 5.7: who owned the industrial world's businesses, and how money moved.",
       "template": {
-        "place": "top",
         "visual": {
           "url": "../assets/images/topics/5-6/cairo-citadel-photochrom-c1900.jpg",
           "alt": "A colored photograph of the Citadel of Cairo on its hill: long stone walls and white buildings below a large domed mosque with two tall, thin minarets, under a pale sky",
           "credit": "Photoglob Co., Cairo, the Citadel, photochrom, about 1890 to 1910 · Library of Congress · Public domain",
           "ratio": 1.298,
-          "position": "50% 45%",
-          "tagPos": "bl"
+          "position": "50% 12%"
         }
       }
     }

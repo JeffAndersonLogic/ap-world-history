@@ -29,7 +29,8 @@
  *   trimmed.
  * - kokunimasa-pyongyang-victory-1894.jpg: Pyonyan rakujō shi wagahei daishōri
  *   (Our army's great victory at Pyongyang Castle), Utagawa Kokunimasa, 1894,
- *   right sheet of a triptych. Library of Congress 2008660405.
+ *   right sheet of a triptych. Library of Congress 2008660405 (lesson page only,
+ *   as module art).
  * - kiyochika-rats-in-a-bag-1895.jpg: Fukuro no nezumi (Rats in a bag),
  *   Kobayashi Kiyochika, 1895, from the series Long Live Japan: One Hundred
  *   Victories, One Hundred Laughs. Library of Congress 2009615024 (lesson page
@@ -53,19 +54,17 @@ const COUDER={url:COMMONS+'modernegypt-muhammad-ali-by-auguste-couder-bap-17996-
 const PERRY={url:IMG+'perry-arrives-uraga-broadsheet-1853.jpg',alt:'A black-and-white Japanese woodblock broadsheet: rows of feudal lords\' crests and spears across the top, an American sailor on the left, and a large steamship with paddle wheel, masts, smoke and a striped flag across the bottom',credit:'Perry Arrives in Uraga, Japanese woodblock broadsheet, after July 1853 · Library of Congress · Public domain',ratio:0.765,position:'50% 80%'};
 const IWAKURA={url:COMMONS+'iwakura-mission-1f7f61.jpg',alt:'An old black-and-white photograph of five Japanese men posed in a studio: the man seated in the center wears a Japanese robe and topknot, and the four standing and seated around him wear Western suits',credit:'The Iwakura Mission, photograph, 1872 · Public domain',ratio:1.27,position:'50% 40%'};
 const TAKANAWA={url:IMG+'ikkei-takanawa-railway-1872.jpg',alt:'A Japanese color woodblock print: a gold and black steam locomotive with a tall funnel stands by the track while Western men and women in top hats and crinolines watch, and a crowd of Japanese people looks down from a bridge',credit:'Ikkei, Steam Engine of the Iron Railroad at Takanawa, woodblock print, 1872 · Library of Congress · Public domain',ratio:0.752,position:'50% 50%'};
-const PYONGYANG={url:IMG+'kokunimasa-pyongyang-victory-1894.jpg',alt:'A Japanese color woodblock print of Japanese officers in black Western uniforms on horseback and on foot, studying a map spread on the ground beneath a Rising Sun flag, in a winter forest',credit:'Utagawa Kokunimasa, Our Army\'s Great Victory at Pyongyang Castle, woodblock print, 1894 · Library of Congress · Public domain',ratio:0.683,position:'50% 40%'};
 const CITADEL={url:IMG+'cairo-citadel-photochrom-c1900.jpg',alt:'A colored photograph of the Citadel of Cairo on its hill: long stone walls and white buildings below a large domed mosque with two tall, thin minarets, under a pale sky',credit:'Photoglob Co., Cairo, the Citadel, photochrom, about 1890 to 1910 · Library of Congress · Public domain',ratio:1.298,position:'50% 45%'};
 const setTemplate=(phase,add)=>{const s=by(phase);if(s)s.template=Object.assign({},s.template||{},add);return s;};
 setTemplate('question',{place:'top',visual:Object.assign({},TRAIN,{tagPos:'bl'})});
-setTemplate('egypt-ruler',{visual:COUDER});
+setTemplate('egypt-ruler',{visual:COUDER,caption:'Muhammad Ali, painted about 1840 to 1841'});
 setTemplate('japan-threat',{visual:PERRY});
 setTemplate('japan-reform',{visual:IWAKURA,caption:'The Iwakura Mission, 1872'});
 setTemplate('japan-build',{visual:TAKANAWA,caption:'The railway at Takanawa, a print of 1872'});
-setTemplate('japan-power',{visual:PYONGYANG,caption:'War news for Japanese buyers, 1894'});
 const retell=by('retell');
 if(retell&&retell.template){
   retell.template.left=Object.assign({},retell.template.left,{visual:Object.assign({},CITADEL,{position:'50% 30%'})});
   retell.template.right=Object.assign({},retell.template.right,{visual:Object.assign({},TRAIN,{position:'30% 60%'})});
 }
-setTemplate('close',{place:'top',visual:Object.assign({},CITADEL,{tagPos:'bl'})});
+setTemplate('close',{visual:Object.assign({},CITADEL,{position:'50% 12%'})});
 })();
