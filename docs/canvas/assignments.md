@@ -1855,7 +1855,7 @@ block so the short name can be written from them, not guessed at here.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">How tools borrowed from older worlds, new ships, and knowledge of the Atlantic's winds let European ships cross oceans and come home, from 1450 to 1750</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Unit 3 was about empires that grew on land. Unit 4 begins at sea, with a problem: in the 1400s, sailing south along the coast of West Africa was the easy part, because the wind and the current fought every ship that tried to come back. Today you follow how sailors solved it. Europe borrowed tools from older worlds, the compass from China, the astrolabe and tables of the sky from Greek and Islamic astronomers, and the lateen sail from the Mediterranean, built new ships around them, and learned to ride the Atlantic's winds home. For each piece, explain where it came from and what it let sailors do.</p>
             </td>
         </tr>
         <tr>
@@ -1954,7 +1954,7 @@ block so the short name can be written from them, not guessed at here.
 
 **Topic:** `4.2`  **Full title:** Exploration: Causes and Events
 
-**Required:** 4 of 10 modules, 02, 05, 07, 10
+**Required:** 4 of 10 modules, 02, 06, 09, 10
 
 **Assign to, one row per section:**
 
@@ -1991,8 +1991,8 @@ block so the short name can be written from them, not guessed at here.
                 <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718; margin: 0 0 12px;">Today you are responsible only for the modules listed under <strong>Required Work</strong>. You are welcome to use the other BeHistorical modules for review, support, or enrichment, but they are not required unless your teacher tells you otherwise.</p>
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: Who Paid?</em>, plus all three check questions inside the reading.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Making Connections: How One State's Voyage Led to Another's.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose TWO cards. For each, say what kind of source it is (a monument, a later picture, a map made at the time, or a modern map), what it directly shows, and what it suggests about who paid for exploration or what the voyages produced.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> Why rulers backed ocean voyages, and how: by paying, or by granting rights.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Advise Isabella and Ferdinand at Santa Fe in 1492: decide whether to pay for Columbus's voyage west, what to promise him, and what to do about Portugal's claims.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> One Portuguese or Spanish voyage, one English, French, or Dutch voyage: who paid, why, and what it produced.</li>
                 </ul>
             </td>
@@ -2006,9 +2006,9 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong></li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> You Are a Sailor on Columbus's Fleet, October 11, 1492.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> Why rulers backed ocean voyages, and how: by paying, or by granting rights.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Making Connections: How One State's Voyage Led to Another's.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose TWO cards. For each, say what kind of source it is (a monument, a later picture, a map made at the time, or a modern map), what it directly shows, and what it suggests about who paid for exploration or what the voyages produced.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Columbus's Journal, October 11 to 12, 1492.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Advise Isabella and Ferdinand at Santa Fe in 1492: decide whether to pay for Columbus's voyage west, what to promise him, and what to do about Portugal's claims.</li>
                 </ul>
                 <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
             </td>
@@ -2079,7 +2079,7 @@ block so the short name can be written from them, not guessed at here.
 
 **Topic:** `4.3`  **Full title:** Columbian Exchange
 
-**Required:** 4 of 10 modules, 02, 05, 07, 10
+**Required:** 5 of 10 modules, 02, 05, 06, 08, 10
 
 **Assign to, one row per section:**
 
@@ -2117,7 +2117,8 @@ block so the short name can be written from them, not guessed at here.
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: What the Ships Carried</em>, plus all three check questions inside the reading.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Claims and Evidence: What Did the Writer Use to Prove It?</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose TWO cards: one about something that crossed to the Americas (the Florentine Codex or the sugar plantation) and one about American crops in Afro-Eurasia (the English herbal or the Qing album). The Andes harvest, drawn in 1615, shows maize and potatoes grown in the Americas, where both were farmed long before 1492; use it as background. The English herbal shows a crop arriving and being named, so pair it with a claim about the crops spreading; the Qing album shows people relying on one.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> Why diseases from the Eastern Hemisphere were so deadly in the Americas.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> A Nahua Account of Smallpox in Tenochtitlan, 1520.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> The cause of the Columbian Exchange, and one effect in each hemisphere.</li>
                 </ul>
             </td>
@@ -2131,8 +2132,7 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong></li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> You Are a Healer in Tenochtitlan, Autumn 1520.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> Why diseases from the Eastern Hemisphere were so deadly in the Americas.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> A Nahua Account of Smallpox in Tenochtitlan, 1520.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose TWO cards: one about something that crossed to the Americas (the Florentine Codex or the sugar plantation) and one about American crops in Afro-Eurasia (the English herbal or the Qing album). The Andes harvest, drawn in 1615, shows maize and potatoes grown in the Americas, where both were farmed long before 1492; use it as background. The English herbal shows a crop arriving and being named, so pair it with a claim about the crops spreading; the Qing album shows people relying on one.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Sit on a town council in the Valley of Mexico in 1531, eleven years after smallpox: decide what to plant, what to do about the settlers' animals, and how to care for the sick when a new sickness arrives.</li>
                 </ul>
                 <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
@@ -2168,7 +2168,7 @@ block so the short name can be written from them, not guessed at here.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ol style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Work the four modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
+                    <li style="margin: 0 0 8px 0;">Work the five modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
                     <li style="margin: 0 0 8px 0;">Scroll to the <strong>Save Your Work</strong> panel, below the module cards.</li>
                     <li style="margin: 0 0 8px 0;">Click <strong>Gather All My Work</strong>, then <strong>Copy to Clipboard</strong>.</li>
                     <li style="margin: 0 0 8px 0;">Come back here, paste into the text box, and submit.</li>
@@ -2204,7 +2204,7 @@ block so the short name can be written from them, not guessed at here.
 
 **Topic:** `4.4`  **Full title:** Maritime Empires Established
 
-**Required:** 4 of 10 modules, 02, 05, 07, 10
+**Required:** 5 of 10 modules, 02, 06, 08, 09, 10
 
 **Assign to, one row per section:**
 
@@ -2241,8 +2241,9 @@ block so the short name can be written from them, not guessed at here.
                 <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718; margin: 0 0 12px;">Today you are responsible only for the modules listed under <strong>Required Work</strong>. You are welcome to use the other BeHistorical modules for review, support, or enrichment, but they are not required unless your teacher tells you otherwise.</p>
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: Empires from the Sea</em>, plus all three check questions inside the reading.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Sourcing: Who Wrote It, for Whom, and Why?</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose TWO cards: one you can use to show something that CHANGED when Europeans built empires from the sea, and one you can use to show something that KEPT GOING. Say why each card fits.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> Why rival European states built maritime empires, and where Asian and African states and merchants kept their own power.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Afonso I of Kongo to João III of Portugal, 1526.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Sit on Portugal's council at Goa in 1515 and decide what kind of empire to build in an Indian Ocean whose rulers, merchants and trade networks were there long before you.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> Old and new labor systems in the colonial Americas, and slavery old and new.</li>
                 </ul>
             </td>
@@ -2256,9 +2257,8 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong></li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> You Own a Ship at Surat, c. 1600.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> Why rival European states built maritime empires, and where Asian and African states and merchants kept their own power.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Afonso I of Kongo to João III of Portugal, 1526.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Sit on Portugal's council at Goa in 1515 and decide what kind of empire to build in an Indian Ocean whose rulers, merchants and trade networks were there long before you.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Sourcing: Who Wrote It, for Whom, and Why?</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose TWO cards: one you can use to show something that CHANGED when Europeans built empires from the sea, and one you can use to show something that KEPT GOING. Say why each card fits.</li>
                 </ul>
                 <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
             </td>
@@ -2295,7 +2295,7 @@ block so the short name can be written from them, not guessed at here.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ol style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Work the four modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
+                    <li style="margin: 0 0 8px 0;">Work the five modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
                     <li style="margin: 0 0 8px 0;">Scroll to the <strong>Save Your Work</strong> panel, below the module cards.</li>
                     <li style="margin: 0 0 8px 0;">Click <strong>Gather All My Work</strong>, then <strong>Copy to Clipboard</strong>.</li>
                     <li style="margin: 0 0 8px 0;">Come back here, paste into the text box, and submit.</li>
@@ -2331,7 +2331,7 @@ block so the short name can be written from them, not guessed at here.
 
 **Topic:** `4.5`  **Full title:** Maritime Empires Maintained and Developed
 
-**Required:** 4 of 10 modules, 02, 05, 07, 10
+**Required:** 5 of 10 modules, 02, 05, 06, 09, 10
 
 **Assign to, one row per section:**
 
@@ -2369,7 +2369,8 @@ block so the short name can be written from them, not guessed at here.
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: Making Empires Pay</em>, plus all three check questions inside the reading.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> What Does the Author Want You to Believe?</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose TWO cards: one you can use to show something NEW in this period, and one you can use to show something that KEPT GOING. Say why each card fits.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> How rulers used mercantilism and chartered companies, and what changed and kept going in networks of exchange.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Sit on Manila's council in 1594 and decide how to keep the silver-for-silk trade paying for the colony, when the king of Spain wants to limit it, Chinese merchants run it, and rivals want to take it.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> What the slave trade did to families in Africa, how Atlantic cultures mixed, and how religions spread, clashed, and blended.</li>
                 </ul>
             </td>
@@ -2383,9 +2384,8 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong></li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> You Raise Silkworms near Suzhou, c. 1600.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> How rulers used mercantilism and chartered companies, and what changed and kept going in networks of exchange.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose TWO cards: one you can use to show something NEW in this period, and one you can use to show something that KEPT GOING. Say why each card fits.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Antonio de Morga on the Chinese Trade at Manila, 1609.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Sit on Manila's council in 1594 and decide how to keep the silver-for-silk trade paying for the colony, when the king of Spain wants to limit it, Chinese merchants run it, and rivals want to take it.</li>
                 </ul>
                 <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
             </td>
@@ -2422,7 +2422,7 @@ block so the short name can be written from them, not guessed at here.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ol style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Work the four modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
+                    <li style="margin: 0 0 8px 0;">Work the five modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
                     <li style="margin: 0 0 8px 0;">Scroll to the <strong>Save Your Work</strong> panel, below the module cards.</li>
                     <li style="margin: 0 0 8px 0;">Click <strong>Gather All My Work</strong>, then <strong>Copy to Clipboard</strong>.</li>
                     <li style="margin: 0 0 8px 0;">Come back here, paste into the text box, and submit.</li>
@@ -2458,7 +2458,7 @@ block so the short name can be written from them, not guessed at here.
 
 **Topic:** `4.6`  **Full title:** Internal and External Challenges to State Power
 
-**Required:** 4 of 10 modules, 02, 05, 07, 10
+**Required:** 5 of 10 modules, 02, 05, 06, 08, 10
 
 **Assign to, one row per section:**
 
@@ -2496,7 +2496,8 @@ block so the short name can be written from them, not guessed at here.
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: Push and Pushback</em>, plus all three check questions inside the reading.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Put a Revolt in Its Bigger Story.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose TWO cards. For each, decide what it shows about why people pushed back against a growing state, or how they did it.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> How expansion and centralization led different local groups to resist, in Afro-Eurasia and the Americas.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Pedro Naranjo on the Pueblo Revolt, 1681.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> How enslaved people challenged the authorities through organized resistance, and how the authorities responded.</li>
                 </ul>
             </td>
@@ -2510,8 +2511,7 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong></li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> You Ran to the Don River, Spring 1670.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> How expansion and centralization led different local groups to resist, in Afro-Eurasia and the Americas.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Pedro Naranjo on the Pueblo Revolt, 1681.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose TWO cards. For each, decide what it shows about why people pushed back against a growing state, or how they did it.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Meet with the leaders of the Pueblo alliance in August 1680 and decide how to keep many towns, languages, and communities rising on the same day, and what should hold them together if the Spanish are driven out.</li>
                 </ul>
                 <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
@@ -2545,7 +2545,7 @@ block so the short name can be written from them, not guessed at here.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ol style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Work the four modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
+                    <li style="margin: 0 0 8px 0;">Work the five modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
                     <li style="margin: 0 0 8px 0;">Scroll to the <strong>Save Your Work</strong> panel, below the module cards.</li>
                     <li style="margin: 0 0 8px 0;">Click <strong>Gather All My Work</strong>, then <strong>Copy to Clipboard</strong>.</li>
                     <li style="margin: 0 0 8px 0;">Come back here, paste into the text box, and submit.</li>
@@ -2581,7 +2581,7 @@ block so the short name can be written from them, not guessed at here.
 
 **Topic:** `4.7`  **Full title:** Changing Social Hierarchies
 
-**Required:** 4 of 10 modules, 02, 05, 07, 10
+**Required:** 5 of 10 modules, 02, 05, 06, 09, 10
 
 **Assign to, one row per section:**
 
@@ -2619,7 +2619,8 @@ block so the short name can be written from them, not guessed at here.
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: Who Belongs, Who Rises</em>, plus all three check questions inside the reading.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Test a Source's Argument.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose TWO cards. For each, decide what it shows about who could belong in an empire, who could rise to the top, or who was squeezed.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> How states made room for or used some religious and ethnic groups, and pushed out or limited others.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Join a court hearing in Mexico City around 1715 and decide how much a widow's ancestry, wealth, family, and reputation should count when the colony sorts people into ranks.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> One new elite made by conquest or trade, one old elite squeezed by a stronger ruler, and what stayed the same.</li>
                 </ul>
             </td>
@@ -2633,9 +2634,8 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong></li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> You Left Spain in 1492.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> How states made room for or used some religious and ethnic groups, and pushed out or limited others.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose TWO cards. For each, decide what it shows about who could belong in an empire, who could rise to the top, or who was squeezed.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Lady Mary Wortley Montagu on Ottoman Women, 1717.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Join a court hearing in Mexico City around 1715 and decide how much a widow's ancestry, wealth, family, and reputation should count when the colony sorts people into ranks.</li>
                 </ul>
                 <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
             </td>
@@ -2670,7 +2670,7 @@ block so the short name can be written from them, not guessed at here.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ol style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Work the four modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
+                    <li style="margin: 0 0 8px 0;">Work the five modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
                     <li style="margin: 0 0 8px 0;">Scroll to the <strong>Save Your Work</strong> panel, below the module cards.</li>
                     <li style="margin: 0 0 8px 0;">Click <strong>Gather All My Work</strong>, then <strong>Copy to Clipboard</strong>.</li>
                     <li style="margin: 0 0 8px 0;">Come back here, paste into the text box, and submit.</li>
@@ -2706,7 +2706,7 @@ block so the short name can be written from them, not guessed at here.
 
 **Topic:** `4.8`  **Full title:** Continuity and Change from 1450 to 1750
 
-**Required:** 4 of 9 modules, 02, 05, 07, 10
+**Required:** 5 of 9 modules, 02, 05, 06, 07, 10
 
 **Assign to, one row per section:**
 
@@ -2744,6 +2744,7 @@ block so the short name can be written from them, not guessed at here.
                 <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: Follow the Trade to the People</em>, plus all three check questions inside the reading.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Connect the Evidence.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> Follow one economic development to the workers it needed and to one change in a social structure.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose TWO cards: one that shows a change in a social structure (who was forced to work, who rose, how families lived), and one that shows something that stayed the same.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> A thesis and a short argument: how economic developments changed social structures, and what stayed the same.</li>
                 </ul>
@@ -2758,7 +2759,6 @@ block so the short name can be written from them, not guessed at here.
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong></li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> A Village in West Central Africa, About 1700.</li>
-                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> Follow one economic development to the workers it needed and to one change in a social structure.</li>
                     <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Richard Ligon on Barbados, 1657.</li>
                 </ul>
                 <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
@@ -2794,7 +2794,7 @@ block so the short name can be written from them, not guessed at here.
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
                 <ol style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
-                    <li style="margin: 0 0 8px 0;">Work the four modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
+                    <li style="margin: 0 0 8px 0;">Work the five modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
                     <li style="margin: 0 0 8px 0;">Scroll to the <strong>Save Your Work</strong> panel, below the module cards.</li>
                     <li style="margin: 0 0 8px 0;">Click <strong>Gather All My Work</strong>, then <strong>Copy to Clipboard</strong>.</li>
                     <li style="margin: 0 0 8px 0;">Come back here, paste into the text box, and submit.</li>

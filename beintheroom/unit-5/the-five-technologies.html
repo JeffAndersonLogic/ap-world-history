@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BeInTheRoom | The Five Technologies | BeHistorical</title>
+  <link rel="stylesheet" href="../../assets/css/behistorical-brand-lock.css">
+  <link rel="stylesheet" href="../../assets/css/behistorical-room-v2.css">
+</head>
+<body>
+  <div id="room-app"></div>
+  <script>window.BH_ROOM_SCENARIO = {
+  "id": "5.5",
+  "unit": "5",
+  "topicTitle": "Technology of the Industrial Age",
+  "file": "the-five-technologies.html",
+  "title": "The *Five Technologies*",
+  "location": "A science magazine office, New York",
+  "date": "December 1900",
+  "lessonUrl": "../../unit-5/lesson-5-5-technology-of-industrialization.html",
+  "alignment": {
+    "theme": "Technology and Innovation (TEC)",
+    "objective": "Explain how technology shaped economic production over time.",
+    "skill": "Causation, with Developments and Processes (1.B)",
+    "keyConcepts": [
+      "KC-5.1.I.B",
+      "KC-5.1.I.E",
+      "KC-5.1.IV"
+    ]
+  },
+  "premise": [
+    "It is December 1900, and the century is ending. The editors of a New York science magazine want a special article for the new year: “Five Technologies that Changed the World.” They have chosen the five: the steam engine, the railroad, the steamship, the telegraph, and the internal combustion engine.",
+    "You are part of the writing team, and each of you has studied one of the five. The editors want the five ranked, from the one that changed the world most to the one that changed it least, with a few paragraphs explaining why.",
+    "Every technology on the list needed some of the others. So you must agree on what “changed the world” means, defend your own technology with evidence, and decide what to do with the newest machine on the list, which has barely begun its work."
+  ],
+  "centralQuestion": "Which technology did the most to change how much the world could make, and how far its goods and people could go, by 1900, and how should a team rank the other four?",
+  "roles": [
+    {
+      "id": "steam",
+      "name": "Steam Engine Writer",
+      "position": "You have studied the steam engine, from Newcomen’s mine pump of 1712 to Watt’s engines that turned wheels.",
+      "power": "You can show that the railroad and the steamship are both steam engines on the move, but your machine is old news to readers in 1900.",
+      "goals": "Put the steam engine first, as the root of the others.",
+      "fears": "Readers may think a machine from the 1700s is not exciting enough to lead.",
+      "lens": "The deepest cause matters most: the machine that unlocked coal’s energy.",
+      "preference": "Rank the steam engine first.",
+      "blindSpot": "You may forget that an engine alone made nothing reach farther until rails and hulls carried it."
+    },
+    {
+      "id": "rail",
+      "name": "Railroad Writer",
+      "position": "You have studied the railroad, from the Liverpool and Manchester line of 1830 to the line across the United States and the Trans-Siberian.",
+      "power": "You have the most dramatic evidence of reach, but rails cost enormous sums and took decades to lay.",
+      "goals": "Put the railroad first, for reaching the middle of continents.",
+      "fears": "The team may call the railroad just one use of the steam engine.",
+      "lens": "A technology matters by what it reaches: rails went where no river or canal went.",
+      "preference": "Rank the railroad first.",
+      "blindSpot": "You may forget that rails reached only as far as someone paid to build them."
+    },
+    {
+      "id": "ship",
+      "name": "Steamship Writer",
+      "position": "You have studied the steamship, from paddle steamers to the steel liners that now cross the Atlantic in less than a week.",
+      "power": "You can show that steamships joined the continents, but sailing ships still carry some heavy cargo.",
+      "goals": "Put the steamship near the top, for joining the oceans.",
+      "fears": "The team may treat oceans as less important than land.",
+      "lens": "The world economy is joined by sea; most long-distance trade travels on water.",
+      "preference": "Rank the steamship first or second.",
+      "blindSpot": "You may overlook that ships needed coaling stations and ports, and could not go inland without rails or rivers."
+    },
+    {
+      "id": "wire",
+      "name": "Telegraph Writer",
+      "position": "You have studied the telegraph, from Morse’s line of 1844 to the cables under the Atlantic and to India.",
+      "power": "You can show that news now outruns any ship, but the telegraph moves no goods and no people.",
+      "goals": "Put the telegraph first, for joining markets with news.",
+      "fears": "The team may say a message is not production.",
+      "lens": "Information decides what is bought, where, and at what price.",
+      "preference": "Rank the telegraph first.",
+      "blindSpot": "You may forget that a price on a wire still needs a train and a ship to carry the wheat."
+    },
+    {
+      "id": "engine",
+      "name": "Internal Combustion Engine Writer",
+      "position": "You have studied the newest machine on the list: the engine that burns its fuel inside itself, from Otto’s engine of 1876 to Benz’s car of 1886.",
+      "power": "You can argue about the future, but cars are still rare: historians later estimated about 8,000 in the whole United States in 1900.",
+      "goals": "Keep the internal combustion engine from being dismissed as a toy.",
+      "fears": "The team may rank it last and write nothing about it.",
+      "lens": "A technology can matter most for what it starts, not for what it has done.",
+      "preference": "Rank it last for what it had done by 1900, but write a paragraph on what oil and this engine could do next.",
+      "blindSpot": "You may claim effects that have not happened yet."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "watt",
+      "label": "A Pump, Then Wheels",
+      "text": "Newcomen’s engine of 1712 pumped water from a coal mine. Watt’s engines used less than a third of the coal, and from the 1780s they turned wheels, so mills could run on coal instead of rivers.",
+      "why": "Shows how the steam engine became the power of factories."
+    },
+    {
+      "id": "coal",
+      "label": "More Coal",
+      "text": "Britain mined about 65 million tons of coal in 1854; historians later counted about 225 million tons for 1900. They also estimated that by about 1900 coal gave about half of all the energy used in the world.",
+      "why": "Shows how much energy the machines unlocked."
+    },
+    {
+      "id": "steel",
+      "label": "Steel for Rails and Ships",
+      "text": "Since Bessemer’s process of 1856, steel has become cheap. The United States made about 69,000 tons of steel in 1870; historians later counted about 10 million tons for 1900.",
+      "why": "Shows a new method that built the rails and the ships."
+    },
+    {
+      "id": "methods",
+      "label": "New Methods",
+      "text": "Chemists have made dyes from coal tar since 1856, and German companies now invent new ones in laboratories. New York has sold electric power since 1882. Machine tools cut parts so exactly that they fit any copy of a machine.",
+      "why": "Shows the second industrial revolution building on coal and steam."
+    },
+    {
+      "id": "rail",
+      "label": "Rails Across Continents",
+      "text": "Russia had 27 kilometers of railway in 1840; historians later counted more than 53,000 for 1900. The line across the United States was finished in 1869, and the Trans-Siberian is being built toward the Pacific.",
+      "why": "Shows railroads reaching the interiors of continents."
+    },
+    {
+      "id": "ships",
+      "label": "Days, Not Weeks",
+      "text": "Under sail, emigrants from Norway took about 53 days on average to reach America. The fastest steamships now cross the Atlantic in under six days, and the Suez Canal, opened in 1869, mostly serves steamships, because sailing ships struggle against the Red Sea winds.",
+      "why": "Shows steamships joining the oceans."
+    },
+    {
+      "id": "wire",
+      "label": "News by Wire",
+      "text": "Morse opened his telegraph line from Washington to Baltimore in 1844 with the message “What hath God wrought?” Cables under the Atlantic have carried messages since 1866, and in 1870 another, through the Red Sea, reached Bombay. A message now crosses the ocean in minutes.",
+      "why": "Shows the telegraph joining markets with news."
+    },
+    {
+      "id": "trade",
+      "label": "Prices Come Together",
+      "text": "Historians later measured that wheat cost 57.6 percent more in Liverpool than in Chicago in 1870, and only 15.6 percent more by 1913, as rail, steamships, and news joined the two markets.",
+      "why": "Shows how the reach led to more trade."
+    },
+    {
+      "id": "people",
+      "label": "People on the Move",
+      "text": "Historians later counted about 55 million Europeans who moved to the Americas and Australia between 1850 and 1914, and more than 29 million Indians and 19 million Chinese who moved to Southeast Asia and the lands around the Indian Ocean between 1846 and 1940, many by steamship and rail.",
+      "why": "Shows how the reach led to more migration."
+    },
+    {
+      "id": "cars",
+      "label": "A Machine Just Starting",
+      "text": "Historians later estimated that in 1900 there were only about 8,000 cars in the whole United States. Most oil is still made into kerosene for lamps.",
+      "why": "Shows that the internal combustion engine’s big effects have not come yet."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "measure",
+      "title": "Choose the measure",
+      "prompt": "Before you rank anything, what should “changed the world” mean for this article?",
+      "options": [
+        {
+          "id": "energy",
+          "title": "The power it added",
+          "action": "Rank by how much new energy each technology put to work.",
+          "benefits": "It goes to the root of the change: machines unlocking coal.",
+          "worries": "It may rank the telegraph low, though news changed trade.",
+          "tradeoff": "Power is the first link in the chain, but not the whole chain."
+        },
+        {
+          "id": "reach",
+          "title": "How far it carried goods, people, and news",
+          "action": "Rank by how far each technology extended trade and travel.",
+          "benefits": "It shows what changed for farmers, merchants, and migrants.",
+          "worries": "It may forget that the reach ran on steam and coal.",
+          "tradeoff": "Reach is the visible effect; power is hidden behind it."
+        },
+        {
+          "id": "production",
+          "title": "How much more the world could make",
+          "action": "Rank by how much each technology raised what the world produced and sold.",
+          "benefits": "It answers the question economists ask.",
+          "worries": "It is the hardest to measure for any one machine.",
+          "tradeoff": "Production is the goal, but every machine shared in it."
+        }
+      ]
+    },
+    {
+      "id": "first",
+      "title": "Choose number one",
+      "prompt": "Which technology should lead the article?",
+      "options": [
+        {
+          "id": "steam",
+          "title": "The steam engine",
+          "action": "Lead with the machine that turned coal into motion.",
+          "benefits": "It is the cause behind the railroad and the steamship.",
+          "worries": "Readers may find an eighteenth-century engine less striking than a train.",
+          "tradeoff": "The deepest cause is not always the most visible one."
+        },
+        {
+          "id": "rail",
+          "title": "The railroad",
+          "action": "Lead with the technology that reached the middle of continents.",
+          "benefits": "Its effects on farms, mines, and towns are easy to see.",
+          "worries": "It depended on the steam engine, coal, and steel.",
+          "tradeoff": "A visible effect can hide the causes underneath it."
+        },
+        {
+          "id": "ship",
+          "title": "The steamship",
+          "action": "Lead with the technology that crossed oceans in days, not weeks.",
+          "benefits": "It joined the continents and carried wheat and migrants across the sea.",
+          "worries": "It could not go far inland without rails or rivers.",
+          "tradeoff": "Oceans joined the world, but the interiors needed more than ships."
+        },
+        {
+          "id": "wire",
+          "title": "The telegraph",
+          "action": "Lead with the technology that made news faster than any ship.",
+          "benefits": "It shows that information shaped markets.",
+          "worries": "It carried no goods and no people.",
+          "tradeoff": "Communication joins markets, but goods still need to move."
+        }
+      ]
+    },
+    {
+      "id": "newest",
+      "title": "Place the newest machine",
+      "prompt": "What should the article do with the internal combustion engine?",
+      "options": [
+        {
+          "id": "last",
+          "title": "Rank it last and say little",
+          "action": "Judge it only by what it had done by 1900.",
+          "benefits": "The ranking stays honest about the evidence.",
+          "worries": "Readers may miss what oil and this engine could do next.",
+          "tradeoff": "Evidence of effects, not hopes, decides a ranking."
+        },
+        {
+          "id": "future",
+          "title": "Rank it last, with a paragraph on the future",
+          "action": "Rank it by what it had done, but explain what it might start.",
+          "benefits": "The article is honest and still looks ahead.",
+          "worries": "A prediction can turn out wrong.",
+          "tradeoff": "A cause can come long before its effects."
+        },
+        {
+          "id": "high",
+          "title": "Rank it high for what it will do",
+          "action": "Rank it by what you expect it to change.",
+          "benefits": "The article looks bold and modern.",
+          "worries": "It ranks a machine on effects nobody has seen yet.",
+          "tradeoff": "Guessing the future is not the same as explaining the past."
+        }
+      ]
+    }
+  ],
+  "reflectionPrompt": "Step out of the room. Give your ranking of the five technologies, from most to least important by 1900. Defend your number one with one piece of evidence, explain how it made one other technology on the list possible, and say what it changed in how much the world could make or how far goods and people could go.",
+  "sources": [
+    {
+      "label": "Science Museum Group, Rotative Steam Engine by Boulton and Watt, 1788",
+      "url": "https://collection.sciencemuseumgroup.org.uk/objects/co50948"
+    },
+    {
+      "label": "National Park Service, Golden Spike National Historical Park",
+      "url": "https://www.nps.gov/gosp/index.htm"
+    },
+    {
+      "label": "Library of Congress, Invention of the Telegraph",
+      "url": "https://www.loc.gov/collections/samuel-morse-papers/articles-and-essays/invention-of-the-telegraph/"
+    },
+    {
+      "label": "Norway Heritage, By Steamship Across the Ocean",
+      "url": "https://www.norwayheritage.com/by_steamship.asp"
+    }
+  ]
+};</script>
+  <script src="../../assets/js/behistorical-beintheroom-capture.js"></script>
+  <script src="../../assets/js/behistorical-room-v2.js"></script>
+</body>
+</html>

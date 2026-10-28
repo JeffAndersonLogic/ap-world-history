@@ -567,7 +567,7 @@ deleted row in the schedule and every affected date moves with it.
 
 ## Foundations Assessment
 
-**Event title:** `APW - Foundations Assessment - Foundations Assessment`
+**Event title:** `APW - Foundations Assessment`
 
 **Assign to, one row per section:**
 
@@ -2013,7 +2013,7 @@ deleted row in the schedule and every affected date moves with it.
 
 ## Eras 2 Exam, c. 1200 to c. 1450
 
-**Event title:** `APW - Eras 2 Exam, c. 1200 to c. 1450 - Eras 2 Exam, c. 1200 to c. 1450`
+**Event title:** `APW - Eras 2 Exam, c. 1200 to c. 1450`
 
 **Assign to, one row per section:**
 
@@ -2489,7 +2489,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">How tools borrowed from older worlds, new ships, and knowledge of the Atlantic's winds let European ships cross oceans and come home, from 1450 to 1750</p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Unit 3 was about empires that grew on land. Unit 4 begins at sea, with a problem: in the 1400s, sailing south along the coast of West Africa was the easy part, because the wind and the current fought every ship that tried to come back. Today you follow how sailors solved it. Europe borrowed tools from older worlds, the compass from China, the astrolabe and tables of the sky from Greek and Islamic astronomers, and the lateen sail from the Mediterranean, built new ships around them, and learned to ride the Atlantic's winds home. For each piece, explain where it came from and what it let sailors do.</p>
             </td>
         </tr>
         <tr>
@@ -3185,14 +3185,14 @@ deleted row in the schedule and every affected date moves with it.
 
 ## Era 3 Study Guide Work Day
 
-**Event title:** `APW - Era 3 Study Guide Work Day - Era 3 Study Guide Work Day`
+**Event title:** `APW - Era 3 Study Guide Work Day`
 
 **Assign to, one row per section:**
 
 | Section | Taught | Work due |
 | --- | --- | --- |
-| Green Day | Thursday, November 19 | nothing assigned |
-| Silver Day | Friday, November 20 | nothing assigned |
+| Green Day | Thursday, November 19 | Monday, November 23 |
+| Silver Day | Friday, November 20 | Tuesday, November 24 |
 
 ```html
 <div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
@@ -3239,7 +3239,27 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">TONIGHT'S WORK</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">Nothing tonight.</p>
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 8px 0;">Complete the Unit 3 and Unit 4 Progress Checks in AP Classroom before your Era 3 Exam.
+                    </li>
+                    <li style="margin: 0 0 8px 0;">Finish your Era 3 study guide and review Units 3 and 4 for the Era 3 Exam.
+                    </li>
+                </ul>
+                <p style="margin: 12px 0 0 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px; text-transform: uppercase;">Green due Monday, November 23</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px; text-transform: uppercase;">Silver due Tuesday, November 24</span></span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">STUDY RESOURCES</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;"><a class="inline_disabled" href="https://apclassroom.collegeboard.org/" target="_blank" rel="noopener" style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #6b3e1f; font-weight: bold;">AP Classroom</a></li>
+                    <li style="margin: 0 0 6px 0;"><a class="inline_disabled" href="https://jeffandersonlogic.github.io/ap-world-history/study-guides/era-3-exam-study-guide.html" target="_blank" rel="noopener" style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; color: #6b3e1f; font-weight: bold;">Era 3 Exam Study Guide</a> Units 3 and 4, c. 1450 to c. 1750.</li>
+                </ul>
             </td>
         </tr>
         <tr>
@@ -3264,7 +3284,7 @@ deleted row in the schedule and every affected date moves with it.
 
 ## Era 3 Exam, c. 1450 to c. 1750
 
-**Event title:** `APW - Era 3 Exam, c. 1450 to c. 1750 - Era 3 Exam, c. 1450 to c. 1750`
+**Event title:** `APW - Era 3 Exam, c. 1450 to c. 1750`
 
 **Assign to, one row per section:**
 
@@ -3290,7 +3310,7 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;"></p>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Covers Units 3 and 4 in full. Unit 3 is the land-based empires: how they expanded, how rulers ran their lands and justified their rule, and how belief systems changed and divided them. Unit 4 is the oceans: the voyages, the Columbian Exchange, the maritime empires Europeans built and kept, the resistance they met, and what all of it changed about work and social hierarchies.</p>
             </td>
         </tr>
         <tr>
@@ -3298,7 +3318,11 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">This day assesses the targets from the block it closes.</p>
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can explain how land-based empires expanded, administered their territory, and justified their rule, and how belief systems changed, from c. 1450 to c. 1750.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain the causes and effects of European maritime exploration, the Columbian Exchange, and the maritime empires that grew from them.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how state power, resistance to it, labor systems, and social hierarchies changed and continued from c. 1450 to c. 1750.</li>
+                </ul>
             </td>
         </tr>
         <tr>
@@ -3306,7 +3330,11 @@ deleted row in the schedule and every affected date moves with it.
                 <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
             </td>
             <td style="vertical-align: top; background-color: #fffdf7;">
-                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; color: #57544c; margin: 0;">See the targets for the topics this assessment covers.</p>
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can use specific evidence from more than one empire to compare how rulers expanded and kept their power.</li>
+                    <li style="margin: 0 0 6px 0;">I can connect new technology, state sponsorship, and economic motives to transoceanic trade, new labor systems, and the Columbian Exchange.</li>
+                    <li style="margin: 0 0 6px 0;">I can use historical reasoning, especially causation, comparison, and continuity and change, to explain how new connections across the oceans changed societies.</li>
+                </ul>
             </td>
         </tr>
         <tr>

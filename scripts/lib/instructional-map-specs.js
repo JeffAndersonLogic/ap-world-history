@@ -400,55 +400,94 @@ module.exports = [
   {
     id: 'topic-5-4',
     code: 'Topic 5.4',
-    title: 'The Uneven Spread of Industrialization, c. 1850-1900',
+    title: 'Where the Factory Went, and Who Kept Making Goods, 1750 to 1900',
     subtitle: 'Topic 5.4 · Industrialization spreads',
     highlights: [
-      { zone: 'britain', label: 'BRITAIN', tone: 'gold', legend: 'First industrial economy' },
-      { zone: 'westernEurope', label: 'FRANCE, BELGIUM, GERMANY', tone: 'bronze', legend: 'Continental industrialization after 1830' },
-      { zone: 'unitedStates', label: 'UNITED STATES', tone: 'sand', legend: 'Rapid US industrial growth after 1860' },
-      { zone: 'japan', label: 'JAPAN', tone: 'sage', legend: 'Meiji state-led industrialization after 1868' },
-      { zone: 'russia', label: 'RUSSIA', tone: 'slate', legend: 'State railways and late Russian industry' },
-      { zone: 'southAsia', label: 'DEINDUSTRIALIZED', tone: 'plum', legend: 'South Asia and Egypt: deindustrialized by imports' }
+      { zone: 'britain', label: 'BRITAIN', labelSide: 'left', tone: 'gold', legend: 'Britain: where the factory began, 1770s' },
+      { zone: [-73, 42, 5, 3], label: 'US NORTHEAST', labelSide: 'left', tone: 'bronze', legend: 'Factory methods arrive' },
+      { zone: [7, 51, 5, 3], label: 'BELGIUM AND GERMAN STATES', tone: 'bronze', legend: 'Factory methods arrive' },
+      { zone: [38, 48, 5, 3], label: 'RUSSIA', labelSide: 'right', tone: 'bronze', legend: 'Factory methods arrive' },
+      { zone: [136, 35, 5, 3], label: 'JAPAN', labelSide: 'right', tone: 'bronze', legend: 'Factory methods arrive' },
+      { zone: 'southAsia', label: 'INDIA', labelSide: 'left', tone: 'slate', legend: 'Kept making goods, much of it by hand; share fell' },
+      { zone: 'eastAsia', label: 'CHINA', tone: 'slate', legend: 'Kept making goods, much of it by hand; share fell' },
+      { zone: [37, 35, 3, 2.5], label: 'SYRIA (OTTOMAN)', labelSide: 'left', tone: 'slate', legend: 'Kept making goods, much of it by hand; share fell' }
     ],
     flows: [
-      { from: 'britain', to: 'westernEurope', label: 'technology crosses the Channel' },
-      { from: 'britain', to: 'japan', label: 'machinery and engineers', bow: 0.16 }
-    ]
+      { from: [-2, 54], to: [-71.4, 41.9], label: '1790s', bow: 0.18 },
+      { from: [-2, 54], to: [5.6, 50.6], label: '1810s to 1830s', bow: -0.3 },
+      { from: [-2, 54], to: [37.8, 48], label: '1870s', bow: -0.22 },
+      { from: [-2, 54], to: [135.5, 34.7], label: '1880s', bow: -0.3 }
+    ],
+    legend: [
+      { kind: 'area', tone: 'gold', text: 'Britain: where the factory began, 1770s' },
+      { kind: 'area', tone: 'bronze', text: 'Factory methods arrive' },
+      { kind: 'area', tone: 'slate', text: 'Kept making goods, much of it by hand; share fell' },
+      { kind: 'flow', step: 1, text: 'United States, 1790s' },
+      { kind: 'flow', step: 2, text: 'Belgium and German states, 1810s to 1830s' },
+      { kind: 'flow', step: 3, text: 'Russia, 1870s' },
+      { kind: 'flow', step: 4, text: 'Japan, 1880s' }
+    ],
+    note: 'Regions are approximate. Each date is the decade of the case this topic uses, not the first factory there; an arrow is not a route. France is not drawn separately.'
   },
   {
     id: 'topic-5-5',
     code: 'Topic 5.5',
-    title: 'The Industrial Resource Network, c. 1850-1900',
-    subtitle: 'Topic 5.5 · Technology of industrialization',
+    title: 'Power and Reach, 1830 to 1904',
+    subtitle: 'Topic 5.5 · Technology of the Industrial Age',
     highlights: [
-      { zone: 'britain', label: 'FACTORY CORE', tone: 'gold', legend: 'Industrial core: coal, steel, and steam' },
-      { zone: 'westernEurope', label: 'WESTERN EUROPE', tone: 'bronze', legend: 'Steel, chemicals, and rail networks' },
-      { zone: 'southAsia', label: 'RAW MATERIALS', tone: 'sand', legend: 'Cotton, jute, and indigo' },
-      { zone: 'centralAfrica', label: 'RAW MATERIALS', tone: 'sage', legend: 'Rubber, palm oil, and copper' },
-      { zone: 'southAmerica', label: 'RAW MATERIALS', tone: 'plum', legend: 'Guano, nitrates, rubber, and beef' }
+      { zone: 'britain', label: 'BRITAIN', labelSide: 'left', tone: 'gold', legend: 'Coal: about 225 million tons mined in 1900' },
+      { zone: [-78.5, 41, 4, 2.4], label: 'PENNSYLVANIA', labelSide: 'above', tone: 'bronze', legend: 'Oil from 1859' }
     ],
     flows: [
-      { from: 'southAsia', to: 'britain', label: 'raw materials in', bow: 0.2 },
-      { from: 'centralAfrica', to: 'westernEurope', label: 'rubber and oils in', bow: -0.18 },
-      { from: 'britain', to: 'southAmerica', label: 'manufactures and rail out', bow: 0.26 }
+      { from: [-95.9, 41.3], to: [-121.5, 38.6], label: 'Across the US, 1869', bow: -0.25 },
+      { from: [37.6, 55.8], to: [131.9, 43.1], label: 'Trans-Siberian, 1891 to 1904', bow: -0.12 },
+      { from: [-10.3, 51.9], to: [-53.4, 47.9], label: 'Atlantic cable, 1866', bow: 0.18 },
+      { from: [-1, 50.8], to: [72.8, 19], label: 'By steamship through Suez, from 1869', bow: 0.22 }
     ],
     points: [
-      { at: [32, 30], label: 'Suez Canal, 1869', note: 'steamship shortcut' }
-    ]
+      { at: [-79.7, 41.6], label: 'Titusville' },
+      { at: [72.8, 19], label: 'Bombay', note: 'first train, 1853' }
+    ],
+    legend: [
+      { kind: 'area', tone: 'gold', text: 'Britain: about 225 million tons of coal in 1900' },
+      { kind: 'area', tone: 'bronze', text: 'Pennsylvania: oil from 1859, at Titusville' },
+      { kind: 'flow', step: 1, text: 'Railroad across the United States, 1869' },
+      { kind: 'flow', step: 2, text: 'Trans-Siberian Railway, 1891 to 1904' },
+      { kind: 'flow', step: 3, text: 'Telegraph cable across the Atlantic, 1866' },
+      { kind: 'flow', step: 4, text: 'Steamships through the Suez Canal, from 1869' }
+    ],
+    note: 'Each arrow joins the two ends of a line, cable or voyage; it is not the exact path. Regions are approximate.'
   },
   {
     id: 'topic-5-6',
     code: 'Topic 5.6',
-    title: 'Industrial Society and Political Change, c. 1830-1900',
-    subtitle: 'Topic 5.6 · Government and society respond',
+    title: 'Two States Build Industry, 1820s to 1895',
+    subtitle: 'Topic 5.6 · Industrialization: Government\u2019s Role',
     highlights: [
-      { zone: 'britain', label: 'BRITAIN', tone: 'gold', legend: 'Factory Acts, reform bills, and trade unions' },
-      { zone: 'westernEurope', label: 'FRANCE & GERMANY', tone: 'bronze', legend: '1848 revolutions; Bismarck\'s social insurance' },
-      { zone: 'unitedStates', label: 'UNITED STATES', tone: 'sand', legend: 'Labor organizing and Progressive reform' },
-      { zone: 'russia', label: 'RUSSIA', tone: 'slate', legend: 'Serf emancipation, 1861; state-led change' },
-      { zone: 'japan', label: 'JAPAN', tone: 'sage', legend: 'Meiji reforms remaking law and schooling' },
-      { zone: 'eastAsia', label: 'QING CHINA', tone: 'plum', legend: 'Self-Strengthening Movement' }
-    ]
+      { zone: 'egypt', label: 'EGYPT', labelSide: 'left', tone: 'gold', legend: 'Egypt: state cotton mills and an army' },
+      { zone: [38, 34.5, 4, 3], label: 'SYRIA', labelSide: 'right', tone: 'sand', legend: 'Syria: taken by Egypt in 1831, lost in 1840' },
+      { zone: 'japan', label: 'JAPAN', labelSide: 'right', tone: 'sage', legend: 'Japan: Meiji reforms, railways and mills' },
+      { zone: 'korea', label: 'KOREA', labelSide: 'left', tone: 'slate', legend: 'Korea: China gives up its claim, 1895' },
+      { zone: [121, 23.7, 2.6, 2.6], label: 'TAIWAN', labelSide: 'right', tone: 'bronze', legend: 'Taiwan: given to Japan, 1895' }
+    ],
+    flows: [
+      { from: [30.5, 28], to: [39, 36], label: '1831', bow: 0.3 },
+      { from: [136, 34.5], to: [121, 23.7], label: '1895', bow: -0.2 }
+    ],
+    points: [
+      { at: [29, 41], label: 'Istanbul', note: 'the sultan' },
+      { at: [139.7, 35.7], label: 'Tokyo', note: 'Perry, 1853' }
+    ],
+    legend: [
+      { kind: 'area', tone: 'gold', text: 'Egypt under Muhammad Ali: state cotton mills, an army' },
+      { kind: 'area', tone: 'sand', text: 'Syria: taken by Egypt in 1831, lost in 1840' },
+      { kind: 'flow', step: 1, text: 'Egypt\u2019s army invades Syria, 1831' },
+      { kind: 'area', tone: 'sage', text: 'Japan: Perry, 1853; reform, railways and mills from 1868' },
+      { kind: 'flow', step: 2, text: 'Japan defeats China and takes Taiwan, 1895' },
+      { kind: 'area', tone: 'bronze', text: 'Taiwan: given to Japan by China in 1895, and kept' },
+      { kind: 'area', tone: 'slate', text: 'Korea: China gives up its claim, 1895' }
+    ],
+    note: 'Arrows join two places; they are not exact routes. Regions are approximate.'
   },
   {
     id: 'topic-5-7',

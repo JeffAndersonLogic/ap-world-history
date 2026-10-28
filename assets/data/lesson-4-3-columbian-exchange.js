@@ -113,7 +113,14 @@ window.BEHISTORICAL_LESSON = {
   lecture: {
     title: "What the Ships Carried: The Columbian Exchange, 1492 to 1750",
     intro: "Use these cards after the First & 10. The reading told the story; these cards go underneath it: how to read the map, the pictures and the sources, why things happened the way they did, and the mistakes to avoid.",
-    videos: [],
+    videos: [
+      {
+        title: "The COLUMBIAN EXCHANGE, Explained [AP World History Review—Unit 4 Topic 3]",
+        url: "https://youtu.be/6zo9XQD86uU",
+        youtubeId: "6zo9XQD86uU",
+        prompt: "Use this clip to review what crossed the Atlantic after 1492. As you watch, list one disease, one crop, and one animal that moved, and say which hemisphere each one changed and how."
+      }
+    ],
     segments: [
       {
         title: "Why It Happened: Reading the Map",

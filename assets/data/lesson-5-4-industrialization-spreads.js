@@ -29,20 +29,20 @@ window.BEHISTORICAL_LESSON = {
     course: "AP WORLD HISTORY",
     unit: "Unit 5: Revolutions",
     topic: "Topic 5.4",
-    title: "Industrialization Spreads",
-    subtitle: "How industrialization spread to Europe, North America, and Japan — and why colonial relationships ensured it did NOT spread to most of Asia, Africa, and Latin America",
+    title: "Industrialization Spreads in the Period from 1750 to 1900",
+    subtitle: "Factory methods spread from Britain to other parts of Europe, the United States, Russia, and Japan, carried by people, machines, and money. Europe and the United States made a fast-growing share of the world's goods. India, China, and the Middle East kept making goods, much of it by hand, but a shrinking share.",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 
   learningTargets: [
     {
-      target: "I can explain how and why industrialization spread from Britain to Western Europe, the United States, and Japan, and identify the specific factors that shaped the pace and form of industrialization in each region.",
+      target: "I can explain how new factory methods spread from Britain to other parts of Europe, the United States, Russia, and Japan, what carried them there (skilled people, machines, and money), and the pattern in how they spread.",
       kc: "KC-5.1.I.D",
       theme: "Technology and Innovation"
     },
     {
-      target: "I can explain why industrialization did NOT spread to most of Asia, Africa, and Latin America during the 19th century, and evaluate the role of colonialism, specifically deliberate policy choices, not natural disadvantages, in blocking industrialization in colonized regions.",
+      target: "I can explain how the share of the world's manufactured goods made in Europe and the United States rose between 1750 and 1900 while the share made in Asia and the Middle East fell, and what those regions kept making.",
       kc: "KC-5.1.II.B",
       theme: "Technology and Innovation"
     }
@@ -50,12 +50,12 @@ window.BEHISTORICAL_LESSON = {
 
   successCriteria: [
     {
-      criteria: "I can describe how industrialization spread to Belgium, France, Germany, the United States, and Japan by the late 19th century. I can identify one specific factor that shaped industrialization in each of three regions (Germany: state-led railroad investment and protective tariffs; US: abundant natural resources, immigrant labor, and continental market; Japan: deliberate Meiji government policy, Iwakura Mission, state-built factories, zaibatsu). I can compare state-led industrialization (Germany, Japan) with more market-driven industrialization (Britain, US).",
+      criteria: "I can name the four places the College Board says the new methods spread to (other parts of Europe, the United States, Russia, and Japan), give one case for at least two of them (such as Samuel Slater in Rhode Island, John Cockerill in Belgium, John Hughes in Russia, or the Osaka Spinning Company in Japan), say what carried the methods there, and state the pattern in one sentence.",
       kc: "KC-5.1.I.D",
       theme: "Technology and Innovation"
     },
     {
-      criteria: "I can explain why most of the world did not industrialize in the 19th century by identifying specific colonial mechanisms: British colonial policy destroying India's textile industry through import tariffs; the 1838 Treaty of Balta Liman blocking Egypt's industrialization; Latin America structured as a raw material exporter. I can explain the structural argument: countries with political sovereignty could use protective tariffs and state investment; colonial territories could not. I can give at least one specific example of deindustrialization caused by colonial policy.",
+      criteria: "I can use two of Paul Bairoch's estimates to explain how shares of world manufacturing changed from 1750 to 1900, explain what a share means, explain one cause of the change (such as cheaper machine-made cloth, or the trade rules of Britain and the East India Company), and give evidence that India, China, or the Middle East kept making goods, such as India's handloom weavers or the Bombay Dockyard's ships.",
       kc: "KC-5.1.II.B",
       theme: "Technology and Innovation"
     }
@@ -83,120 +83,113 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: "From Britain to the World: The Uneven Spread of Industrialization",
-    intro: "Industrialization spread from Britain to some parts of the world, and deliberately did not spread to others. Understanding this uneven geography is the most important intellectual task in Topic 5.4. The countries that industrialized successfully in the 19th century shared one critical feature: political sovereignty, which allowed them to use protective tariffs and state investment to build domestic industry. The countries that did not industrialize were largely colonial territories whose economies were structured by European powers to serve European industrial interests.",
+    title: "Who Made the World's Goods?",
+    intro: "Use these cards to follow where the factory went and what carried it there, how the world's shares of manufacturing changed, and what the old makers kept making.",
     videos: [],
     segments: [
       {
-        title: "From Britain to the West: Europe and North America",
+        title: "Where the Factory Went, and What Carried It",
         bullets: [
-          "**Belgium** was the first country to industrialize after Britain (1820s). It had the right combination: coal and iron deposits in the Liège and Charleroi basins, navigable rivers, proximity to British technology (Belgian industrialists brought British engineers and machinery), and a government that supported industrial development. By the 1840s, Belgium had built one of the densest railroad networks in the world, partly because its small geography meant railroads could connect everything cheaply.",
-          "**France** industrialized more slowly and unevenly than Britain or Belgium, partly due to the disruption of the Napoleonic Wars, partly because France's geography (dispersed population, less concentrated coal deposits) didn't favor the kind of rapid urban industrialization seen in Manchester. French industrialization concentrated in textiles (Normandy), iron and steel (northern France), and luxury goods (Paris). The French state played a larger role than in Britain, investing directly in railroads and heavy industry.",
-          "**Germany** is the most important case for the AP exam because it illustrates state-led industrialization most clearly. In the 1840s–1860s, the Prussian state (and then the unified German Empire after 1871) directly invested in building a railroad network, which simultaneously created demand for steel and coal and connected the interior to markets. Germany also built large-scale industrial banks that lent directly to heavy industry. By 1870, German industrial output was approaching Britain's; by 1900, it exceeded it. Crucially, Germany used **high protective tariffs** to shield domestic industry from British competition while it developed, the same tool that colonized territories were forbidden to use.",
-          "**United States**: Abundant natural resources (coal in Pennsylvania, iron in the Great Lakes region, vast agricultural land), a large and rapidly growing immigrant labor force, an enormous continental market protected by high tariffs, and private enterprise together drove American industrialization. Lowell, Massachusetts (1820s) was the first planned industrial city. The **transcontinental railroad** (1869) integrated the continental market and drove enormous demand for steel and coal. By 1900, the United States was the world's largest industrial economy, larger than Britain and Germany combined.",
-          "**The critical pattern**: Germany, the United States, and Japan all used **protective tariffs** during their industrialization to shield domestic industries from foreign (primarily British) competition. Britain argued for free trade, which made sense for Britain as the most advanced industrial power, since free trade allowed British goods to undercut domestic producers everywhere. The countries that industrialized successfully rejected this advice and protected their home markets. This is the most important lesson in comparative industrialization for the AP exam."
+          "**Before:** in 1750 almost everything was made by hand, at home or in workshops, and most of it in Asia. The economic historian Paul Bairoch estimated that China made about a third of the world's manufactured goods, India about a quarter, all of Europe about a quarter, and Britain under 2 percent. His figures are estimates.",
+          "**Keeping the secret:** British law banned skilled textile workers from leaving to work abroad (until 1824) and banned the export of textile machines (until 1843).",
+          "**People:** Samuel Slater learned the cotton trade at Jedediah Strutt's mill in Derbyshire (Strutt had been Arkwright's partner, and his mills ran Arkwright's machines). In 1789 he sailed for the United States, and at Pawtucket, Rhode Island, he built water-powered spinning machines from memory and had them running by the end of 1790; the Slater Mill was begun in 1793 and enlarged several times afterward. In 1817 John Cockerill, son of an English machine maker, began building machines at Seraing, near Liège in Belgium, on a rich coalfield.",
+          "**Machines and money:** the first steam railway in the German states, Nuremberg to Fürth (1835), ran with a locomotive built in England. Boston merchants paid for big cotton mills at Lowell, Massachusetts, from the 1820s. On the continent, industry grew where coal lay: around Liège, in the Ruhr valley, and in northern France.",
+          "**Russia and Japan, later:** their big growth came mostly after 1870. A Welsh engineer, John Hughes, built ironworks in the Donets coal basin of the southern Russian Empire (today eastern Ukraine) in the early 1870s; the town that grew up around them was named Yuzovka, after him (today Donetsk). In Japan the Osaka Spinning Company opened in 1883 with British-made spinning machines driven by steam. Both governments also pushed industry on purpose: that is Topic 5.6.",
+          "**Three carriers:** people, machines, and money. Ask of each case: what carried the methods there, and what was waiting when they arrived?"
         ],
         image: {
-          title: "From Britain to Europe and North America",
-          caption: "BeHistorical topic artwork for this card. Belgium, northern France, the Ruhr, and the northeastern United States industrialized by borrowing British technology and adding state support.",
-          url: "",
-          sourceUrl: ""
+          title: "Slater Mill, Pawtucket, about 1869",
+          caption: "One frame of a stereo photograph of about 1869 showing Slater Mill, begun in 1793 and enlarged several times, beside its dam on the Blackstone River in Pawtucket, Rhode Island. By then another company rented it; its sign is on the gable. Library of Congress (a copy made by the Historic American Engineering Record).",
+          url: "../assets/images/topics/5-4/slater-mill-pawtucket-c1869.jpg",
+          sourceUrl: "https://www.loc.gov/item/ri0102/"
         }
       },
       {
-        title: "Japan's Deliberate Industrialization: The Meiji Model",
+        title: "What Changed: The World's Shares",
         bullets: [
-          "**Context**: In 1853, US Commodore Matthew Perry's 'Black Ships' arrived in Edo Bay and demanded Japan open its ports to American trade. Japan had been largely closed to foreign contact since the early 17th century. The Perry mission, backed by warships that Japan could not match, forced two 'unequal treaties' opening Japan to American trade on American terms. Japanese elites could see what had happened to China after similar forced openings (Opium War, 1839–1842; Treaty of Nanking, 1842): semicolonial status, extraterritoriality, loss of tariff autonomy.",
-          "**The Meiji Restoration** (1868): A coalition of reform-minded samurai overthrew the Tokugawa Shogunate and 'restored' the emperor to nominal power, but the real change was a new government committed to rapid modernization. The Meiji slogan was '**rich country, strong army**' (*fukoku kyōhei*): Japan had to industrialize and build modern military power, or it would face the same fate as China. This was industrialization as a survival strategy.",
-          "**The Iwakura Mission** (1871–1873): The Meiji government sent a delegation of approximately 50 officials, including future prime ministers and senior bureaucrats, on an 18-month tour of the United States and Europe to study Western institutions. They visited factories, schools, military academies, hospitals, legislatures, and government ministries. Their conclusion: Japan should borrow selectively from the best of each Western model. They took German military organization, British naval architecture, American education system, and French legal codes.",
-          "**State-led industrialization**: The Meiji government directly built and operated early factories, textile mills, glass factories, cement plants, shipyards, to demonstrate that modern industrial production was possible in Japan. It then sold these factories to private investors at favorable prices, creating the **zaibatsu** (large family-owned industrial conglomerates: Mitsui, Mitsubishi, Sumitomo, Yasuda). The Bank of Japan (1882) provided industrial capital. The state built a railroad network and telegraph system. This was deliberate, top-down, government-directed industrialization, the opposite of Britain's private-enterprise model.",
-          "**Results**: Japan was the only non-Western country to industrialize successfully in the 19th century. By 1895, Japan defeated China in the First Sino-Japanese War, the first time an Asian power had defeated a major power in modern warfare. By 1905, Japan defeated **Russia** in the Russo-Japanese War, the first time a non-Western country had defeated a European great power. Both victories depended on industrial military capacity. Japan succeeded because it had political sovereignty and used that sovereignty to deliberately adopt Western technology while maintaining Japanese political control."
+          "**Mode:** a steam-powered factory could make cloth far faster and more cheaply than hand spinners and weavers.",
+          "**Location:** as factories spread, the regions that had them made more of the world's goods. In Bairoch's estimates, Britain's share of world manufacturing went from under 2 percent in 1750 to about a fifth by 1860.",
+          "**By 1900:** Europe and the United States together made more than four-fifths of the world's manufactured goods, and the United States had passed Britain as the largest maker.",
+          "**The fall:** China's share fell from about a third (1750) to about 6 percent (1900); India's from about a quarter to under 2 percent.",
+          "**A share is not an amount:** the world was making far more goods in 1900 than in 1750. A region's share can fall even while it keeps making as much as before, because the total grows faster. For India, though, Bairoch's estimates suggest it also made less per person over time: it lost ground, not only share."
         ],
         image: {
-          title: "Japan's deliberate industrialization",
-          caption: "BeHistorical topic artwork for this card. After 1868 the Meiji state treated industrialization as a security policy: it built railways, mills, and schools on purpose.",
-          url: "",
-          sourceUrl: ""
+          title: "British Cotton Machinery, 1851",
+          caption: "A photograph of cotton machinery made by Hibbert, Platt and Sons of Oldham, England, on show at the Great Exhibition in London in 1851: a long iron frame with rows of spindles and bobbins. In a mill, machines like this were driven by a steam engine. Rijksmuseum.",
+          url: "../assets/images/topics/5-4/great-exhibition-1851-hibbert-platt-spinning-machine.jpg",
+          sourceUrl: "https://id.rijksmuseum.nl/200345908"
         }
       },
       {
-        title: "Why Colonialism Blocked Industrialization: India, Egypt, and Latin America",
+        title: "What Continued, and Why the Share Fell",
         bullets: [
-          "**The crucial question**: Why didn't industrialization spread to India, China, Egypt, or Latin America in the 19th century? The standard (incorrect) answer is that these regions lacked the necessary conditions, coal, capital, skilled workers. The correct answer is that many of these regions had the conditions but were prevented from industrializing by colonial relationships that served European industrial interests.",
-          "**India's deindustrialization**: India had the most sophisticated textile industry in the world in the early 18th century. Dacca muslin was the finest cotton cloth in the world; Bengal silk and Indian calicoes were coveted across Asia and Europe. British colonial policy systematically destroyed this industry: import duties on Indian textiles in Britain (as high as 70–80%) blocked Indian exports; meanwhile, British machine-made cloth entered India with low or no tariffs. By the 1820s, textile imports from Lancashire were undercutting Indian handloom weavers in their own markets. By mid-century, India had been transformed from a **manufacturer and exporter** of textiles to an **importer** of British cloth and an **exporter** of raw cotton for British mills. This was not a natural market outcome, it was the result of deliberate colonial tariff policy.",
-          "**Egypt and Muhammad Ali**: Muhammad Ali (ruled Egypt 1805–1848) is one of the most ambitious industrializers of the early 19th century. In the 1820s and 1830s, he built state-owned textile mills, iron foundries, shipyards, and munitions factories, directly modeled on European industrial methods, staffed by European engineers, and protected by Egyptian tariffs. His military used these to fight the Ottoman Empire and expand into Syria. Britain, alarmed by Egyptian power, forced Muhammad Ali to sign the **Treaty of Balta Liman** (1838), which required Egypt to abolish its protective tariffs and open its markets to British goods. Egyptian tariffs gone, British machine-made cloth flooded Egyptian markets; Muhammad Ali's factories could not compete and collapsed. Egypt was restructured as a **cotton exporter**, its fertile Nile Valley land converted to growing raw cotton for British mills.",
-          "**Latin America and the dependency structure**: Even after independence from Spain and Portugal (1810–1825), Latin American economies remained structured as raw material exporters. Silver, copper, guano (fertilizer), rubber, coffee, and sugar flowed to Europe and the United States; manufactured goods and investment capital flowed back. European and American investors owned the railroads, mines, and port facilities, infrastructure that efficiently moved raw materials out but did not build domestic industrial capacity. This 'dependency' structure was enforced not by formal colonialism but by economic relationships and periodic military intervention.",
-          "**The structural argument**: The difference between industrializing countries (Germany, US, Japan) and non-industrializing countries (India, Egypt, Latin America) was not natural endowment, it was political sovereignty. Sovereign countries could impose **protective tariffs** to block foreign competition and use **state investment** to build domestic industry. Colonized territories could not impose tariffs (or were forced to abolish them by unequal treaties). This structural difference, not any natural or cultural deficit, explains why industrialization spread where it did and didn't spread where it didn't."
+          "**Cloth:** India built some steam-powered cotton mills of its own (Bombay's first was founded in 1854), but much of its cloth was still woven by hand. Hand weaving shrank but did not die. Many weavers switched to cheaper machine-spun thread and kept weaving, and in 1908, in one province of northern India alone, about a million people still lived from handloom weaving. Chinese farm families kept weaving cloth at home, more and more from machine-made thread. In the Syrian cities of Aleppo and Damascus, in the Ottoman Empire, the number of handlooms held steady from 1860 to 1914.",
+          "**Ships:** at the Bombay Dockyard the Wadia family of master shipbuilders built teak warships for Britain's Royal Navy. HMS Trincomalee, launched in 1817, is still afloat at Hartlepool, England, where its museum calls it Britain's oldest warship still afloat.",
+          "**Why the share fell:** the rest of the world made far more goods, and the old makers lost buyers. Machine-made cloth from Lancashire, the cotton-mill region of northwest England, was cheaper than hand-made cloth, even in India. In 1815 India sold about £1.3 million worth of cotton cloth abroad and bought about £26,000 worth from England; by 1832 it sold under £100,000 worth and bought over £400,000 worth. From about 1830 India bought more cotton cloth than it sold, and it sold raw cotton to British mills.",
+          "**The rules of those in power:** under the East India Company, which ruled much of India, British cotton cloth entered India at a tax of 2½ percent, while around 1813 Indian calicoes paid about 70 to 85 percent to be sold in Britain. Historians still argue how much each cause mattered: cheaper machine-made cloth, the trade rules of those in power, and troubles in India that began before the factories, such as the breakup of the Mughal Empire and drought.",
+          "**New ships:** by the middle of the 1800s navies were turning to iron ships driven by steam, built mostly in British yards, and Bombay's age of teak warships came to an end."
         ],
         image: {
-          title: "Where colonial rule blocked industry",
-          caption: "BeHistorical topic artwork for this card. India and Egypt had skilled textile production and lost it, because colonial policy favoured raw exports and imported cloth.",
-          url: "",
-          sourceUrl: ""
+          title: "A Weaver at His Loom, about 1840",
+          caption: "A painting of a weaver working a hand loom, about 1840, attributed to a painter from Tanjore (Thanjavur), in south India, in a style Indian artists often made for European buyers who collected pictures of Indian trades. Wellcome Collection.",
+          url: "../assets/images/topics/5-4/weaver-at-his-loom-tanjore-c1840.jpg",
+          sourceUrl: "https://wellcomecollection.org/works/pjnujb7j"
         }
       }
     ]
   },
 
   map: {
-    title: "The Uneven Geography of Industrialization, c. 1850–1900",
+    title: "Where the Factory Went, and Who Kept Making Goods, 1750 to 1900",
     url: "../assets/images/instructional-maps/topic-5-4.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-5-4.svg",
-    caption: "By c. 1850–1900, industrial production was concentrated in a narrow band: Britain, Belgium, northern France, the Ruhr valley in Germany, and the northeastern United States. Japan would join this group by 1900. The rest of the world, including India, China, Egypt, and Latin America, remained structured as raw material suppliers.",
-    intro: "Examine the geographic pattern of industrialization by 1900. Notice the clustering of industrial regions: the British Midlands and North, the Ruhr valley in Germany, the northeastern US, and Japan. Then notice what is absent: no industrial zones in India, sub-Saharan Africa, Southeast Asia, or most of Latin America despite many of these regions having raw materials, labor, and (in India's case) sophisticated pre-existing textile production.",
-    prompt: "Using the map, explain the geographic pattern of industrialization. What do the regions that industrialized have in common? What do the regions that did not industrialize have in common? How does the concept of 'political sovereignty' help explain this geographic pattern?"
+    caption: "A BeHistorical map of the places factory methods reached from Britain, with the decade of the case this lesson uses for each, and of regions that kept making goods, much of it by hand, while their share of the world's manufacturing fell.",
+    intro: "Find Britain first. Then follow the numbered arrows to the cases this lesson uses, in date order. Then find the shaded regions in Asia and the Middle East that kept making goods.",
+    prompt: "Using the map, explain one change and one continuity in where the world's goods were made between 1750 and 1900. Name a place for each."
   },
 
   deepReading: {
-    title: "Who Got to Industrialize",
-    desc: "A textbook-depth companion on why going second is a different problem from going first, the Zollverein and the German model, Meiji Japan&rsquo;s deliberate program and the land tax that paid for it, and the half most answers skip: India, Egypt and Latin America, and the tariff as the instrument that decided who could industrialize. Optional, and the strongest corrective available for this topic.",
+    title: "Who Made the World's Goods?",
+    desc: "A longer, optional chapter on the same story: how factory methods left Britain with skilled people, then machines and money; where they took root, from Belgium and the German states to the United States, Russia, and Japan; how the world's shares of manufacturing moved; and what India, China, and the Middle East kept making while their share fell.",
     url: "deep-reading-topic-5-4-industrialization-spreads.html"
   },
 
   first10: {
-    title: 'First & 10: Beyond Britain',
+    title: "First & 10: Who Made the World's Goods?",
     embedUrl: 'first-and-10-topic-5-4-industrialization-spreads-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 5.4 lesson path.'
+    note: 'Read the First & 10 story, answer the three questions, then return to the 5.4 lesson path.'
   },
 
   evidenceLab: {
-    title: "Evidence Lab: Comparing Paths to Industrialization",
-    intro: "Use the evidence below to analyze how different regions industrialized, or were prevented from industrializing. Strong AP comparison arguments require specific evidence about both similarities and differences, and a synthesis statement about what the comparison reveals.",
-    prompt: "Choose one piece of evidence. Explain what it reveals about either how industrialization spread OR why it was blocked. Then connect your evidence to the broader structural argument: how did political sovereignty (or its absence) shape industrialization outcomes?",
-    items: [
-      { title: "Meiji Charter Oath (1868)", detail: "The Meiji government's foundational document declared five principles, including: 'Knowledge shall be sought throughout the world so as to strengthen the foundation of imperial rule' and 'Evil customs of the past shall be broken off and everything based upon the just laws of Nature.' Analyze: how does the Meiji Charter Oath reveal the Meiji government's approach to industrialization? Why does the document frame Western learning as compatible with imperial rule? How does this contrast with the approach of colonial territories that were forced to adopt Western economic rules rather than choosing to borrow Western technology?" },
-      { title: "British Parliamentary Debate on Indian Tariffs (c. 1813)", detail: "During the 1813 renewal of the East India Company's charter, British manufacturers lobbied Parliament to open India to British goods. A Manchester merchant testified: 'The population of India is vast; the consumers of cotton goods in India, if our manufactured goods could be admitted at reasonable rates, would be many millions. The cotton goods of India are now excluded from our markets by prohibitory duties; we propose only that the reverse should take place, that our goods should have free admission into India.' The Charter Act of 1813 opened India to British manufactures. Analyze: how does this testimony reveal the relationship between British industrial interests and colonial trade policy? What does 'free admission' mean in a context where India's exports to Britain faced high tariffs?" },
-      { title: "German Tariff Law (1879)", detail: "Chancellor Otto von Bismarck introduced the Tariff of 1879 (the 'Iron and Rye' tariff), imposing significant duties on imported iron and grain. He argued: 'Germany must learn to work for itself. German industry must grow behind protective walls until it is strong enough to compete with Britain. Free trade is the policy of the strong; protection is the policy of the developing nation.' Analyze: how does Bismarck's argument for protective tariffs reveal the structural conditions necessary for industrialization? Why could Germany impose protective tariffs that Egypt was forced to abolish?" }
-    ]
+    title: "Evidence Lab: A Change, or a Continuity",
+    intro: "Use the cards to find changes and continuities in how and where the world's goods were made, and what each source can and cannot show.",
+    prompt: "Choose two cards. For each, say what kind of source it is, what it shows about a change or a continuity in how or where goods were made, and one thing it cannot tell you.",
+    items: []
   },
 
   primarySource: {
-    title: "Primary Source: The Decline of Indian Textile Manufacturing, c. 1840",
-    intro: "By the 1830s–1840s, British machine-made textiles were penetrating Indian markets in large quantities, undercutting handloom weavers who had produced the world's finest cloth for centuries. This adapted account draws on reports from British East India Company officials and Indian testimony collected by Parliamentary investigators. The deindustrialization of India is one of the most significant economic transformations of the 19th century, and one of the most directly caused by deliberate colonial policy rather than natural market forces.",
-    text: [
-      "The bones of the cotton-weavers are bleaching the plains of India. Thousands of weavers, who formerly found employment in weaving cotton goods for export to Europe, are now deprived of employment, because European looms can produce goods more cheaply.",
-      "In 1813, India was a net exporter of cotton cloth. By 1830, India had become a net importer. British-made cloth, produced by power looms in Lancashire and Yorkshire, entered Indian markets with import duties of 2.5 percent, while Indian cloth exported to Britain faced duties of 20 to 80 percent. This was not free trade; it was free trade in one direction only.",
-      "The weaver of Dacca had no machine to give him the speed of the Lancashire loom. He had only his hands, which for ten generations had produced the finest cloth in the world. The finest Dacca muslin, so fine it was called 'woven air', could not compete on price with machine-made imitations. A cloth that required thirty days of skilled labor could be produced by a machine in three hours.",
-      "The question is not whether machine production is more efficient. It is. The question is: who bears the cost of this efficiency? The handloom weaver of Dacca bears it. His children, who cannot be fed on the wages of weaving, bear it. And the tariff structure that produced this outcome was designed, implemented, and maintained not by market forces but by the Parliament of Great Britain, in the interests of the manufacturers of Lancashire."
-    ],
+    title: "Primary Source: Montgomery Martin on India's Cloth, 1840",
+    intro: "In 1840 a committee of Britain's House of Commons asked witnesses about the taxes on goods from India. One witness was Robert Montgomery Martin, a British writer who had lived in India and spent years studying the trade of the British Empire. He argued that India's goods were being treated unfairly. A member of the committee, who spoke for British silk makers, had said the committee had evidence that India was \"an agricultural rather than a manufacturing country.\" Martin answered him. The Indian historian Romesh Dutt reprinted Martin's evidence in 1904.",
+    attribution: "Robert Montgomery Martin, evidence to the House of Commons Select Committee on East India Produce, 1840, questions 3877 and 3879 and 3918 to 3920, as printed in Romesh Dutt, India in the Victorian Age (London, 1904), pp. 112 and 114",
+    text: "<strong>Passage 1.</strong> We have during the period of a quarter of a century compelled the Indian territories to receive our manufactures; our woollens, duty free, our cottons at 2½ per cent., and other articles in proportion ... The decay and destruction of Surat, of Dacca, of Murshedabad, and other places where native manufactures have been carried on, is too painful a fact to dwell upon. I do not consider that it has been in the fair course of trade; I think it has been the power of the stronger exercised over the weaker.<br><br><strong>Passage 2.</strong> I do not agree that India is an agricultural country; India is as much a manufacturing country as an agricultural; and he who would seek to reduce her to the position of an agricultural country seeks to lower her in the scale of civilisation. I do not suppose that India is to become the agricultural farm of England; she is a manufacturing country, her manufactures of various descriptions have existed for ages, and have never been able to be competed with by any nation wherever fair play has been given to them.<br><br><em>Words to know: compelled means forced; manufactures means manufactured goods; duty means a tax on goods brought in; 2½ per cent. means a tax of 2½ percent of the goods' value; Surat, Dacca (now Dhaka), and Murshedabad were Indian cloth-making cities; native means made by Indians; decay and destruction means decline and ruin; competed with means matched by a rival; to lower her in the scale of civilisation means to treat her as less advanced.</em>",
     questions: [
-      "What specific mechanism does this source identify as the cause of Indian textile deindustrialization? Is it primarily technological (machine production is more efficient) or political (tariff structure)? How does the source use the phrase 'free trade in one direction only'?",
-      "The source says the 'tariff structure was designed, implemented, and maintained... by the Parliament of Great Britain, in the interests of the manufacturers of Lancashire.' How does this claim differ from the standard argument that deindustrialization was a natural market outcome? What evidence would you need to evaluate which interpretation is correct?",
-      "Compare India's situation to Japan's in the same period. India had sophisticated pre-existing textile manufacturing, a large labor force, and raw cotton. Japan had fewer pre-existing industrial advantages. Yet Japan industrialized and India deindustrialized. What does this comparison reveal about the role of political sovereignty in economic development?"
+      "In Passage 1, what does Martin say Britain \"compelled\" India to do, and at what tax did British cottons enter India? What does he say happened to Indian cloth-making cities such as Dacca?",
+      "In Passage 1, Martin says: \"I do not consider that it has been in the fair course of trade; I think it has been the power of the stronger exercised over the weaker.\" What is he claiming caused the change? Name one other cause from this lesson that historians also weigh.",
+      "Using Passage 2, explain what Martin thought India should be: a country that only grows crops, or one that also makes goods? Then use the lesson to say whether India kept making goods after 1840, and what happened to its share of the world's goods."
     ]
   },
 
   beSurreal: {
-    title: "BeSurreal: You Are a Japanese Official on the Iwakura Mission, 1873",
-    desc: "You are a young Japanese official, a former samurai, now a Meiji government bureaucrat, visiting a Krupp steel factory in Essen, Germany, as part of the Iwakura Mission in January 1873. You have spent the past 14 months traveling through the United States and Europe studying Western institutions.",
-    intro: "The Krupp factory is incomprehensible in scale. The blast furnaces rise six stories. Men look like insects next to them. Drop hammers the size of houses stamp steel for cannon barrels. You can feel the vibration through the ground half a mile away. The foreman tells you: Krupp cannons destroyed the French fortress at Sedan in 1870. The French fortress had held for centuries. Krupp destroyed it in three days.",
-    detail: "You know what Krupp cannons mean for Japan. You know that Perry's Black Ships had Dahlgren guns, cast iron naval cannon, that Japan could not match. You know that China's Qing dynasty had faced cannon like this in 1842 and signed away Hong Kong and five treaty ports. You know that unless Japan builds cannon like Krupp's, Japan will face the same choices China faced: submission or destruction. You are writing a report to the Meiji government recommending what Japan must do. You are also writing a private journal entry for yourself, not the official report, but the honest record of what you actually feel standing in this building.",
-    prompt: "Write the private journal entry, not the official report. Describe the Krupp factory honestly: what it looks like, what it sounds like, what it smells like. Then describe what you understand it means for Japan. What must Japan do, and what will Japan lose, in order to build something like this? Are you confident Japan can do it? Are you afraid of what Japan will become if it succeeds? Write with the full weight of what you are seeing."
+    title: "BeSurreal: A Weaver's House near Dacca, Bengal, 1830s",
+    desc: "You live in a weaving village near Dacca (today Dhaka), in Bengal. Your father weaves cotton cloth on a handloom in the front room, and your mother spins the thread by hand. The cloth from villages like yours was once sold as far away as Europe.",
+    intro: "This year the cloth merchant came back from the market with a bolt of cloth from Lancashire, in Britain, made by machines. He says it sells for less than your father's, and that more of it arrives every season. He also says the mills sell thread spun by machines, cheaper than your mother's.",
+    detail: "Your father is not stopping. He says people still want cloth woven the old way, and that the machine thread is strong and cheap, so he can buy it and weave faster. Your mother is not sure there will be work for her spinning. Your uncle has stopped weaving and now works in the fields. Your grandmother remembers when buyers from many countries came to the village for its cloth.",
+    prompt: "Write a page of your journal about this year. Explain one thing that has changed in how cloth is made and sold, and one thing that has stayed the same in your family's work. Say what your family is doing about it. Use the words handloom, machine-made, and continuity."
   },
 
   beInTheRoom: {
     url: '',
-    desc: "Advise the Meiji government on whether to build state-owned factories or create private zaibatsu, debate with a Lancashire manufacturer whether British tariff policy toward India is free trade or imperialism, or testify before the Meiji reform commission on which Western institutions Japan should borrow, and which it should refuse."
+    desc: "London, 1851, the Great Exhibition. Walk the hall as a visitor from one of the world's making regions, decide what to take home, and explain what has changed and what has stayed the same in who makes the world's goods."
   }
 
 };

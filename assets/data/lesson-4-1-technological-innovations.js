@@ -95,7 +95,14 @@ window.BEHISTORICAL_LESSON = {
   lecture: {
     title: "The Tools of the Age of Exploration",
     intro: "Use these cards to see how tools borrowed from older worlds, new ships, and knowledge of winds and currents let ships cross oceans and come back.",
-    videos: [],
+    videos: [
+      {
+        title: "TECHNOLOGY in Sea-Based Empires [AP World History Review—Unit 4 Topic 1]",
+        url: "https://youtu.be/TPaLulRrKuM",
+        youtubeId: "TPaLulRrKuM",
+        prompt: "Use this clip to review the tools that made ocean voyages possible. As you watch, write down where each tool came from and what it let sailors do that they could not do before."
+      }
+    ],
     segments: [
       {
         title: "Finding Your Way: Compass, Astrolabe, and Latitude Navigation",

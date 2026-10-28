@@ -159,7 +159,14 @@ window.BEHISTORICAL_LESSON = {
   lecture: {
     title: "Making Empires Pay: How It Worked",
     intro: "The First & 10 tells the story. These cards take four parts of it apart: how a company could be sent to war, why silver went to China, who did the extra work and what the slave trade did to families in Africa, and how to compare what religions did when they traveled.",
-    videos: [],
+    videos: [
+      {
+        title: "The ECONOMICS of EMPIRE Building [AP World History Review—Unit 4 Topic 5]",
+        url: "https://youtu.be/Lqt2JvP6-1Q",
+        youtubeId: "Lqt2JvP6-1Q",
+        prompt: "Use this clip to review how rulers and companies made empires pay. As you watch, follow the silver: where it was mined, who was forced to do the work, and where it ended up."
+      }
+    ],
     segments: [
       {
         title: "How a Company Could Fight a War",

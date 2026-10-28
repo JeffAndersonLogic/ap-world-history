@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="map-title map-desc">
-  <title id="map-title">Industrial Society and Political Change, c. 1830-1900</title>
-  <desc id="map-desc">Topic 5.6 instructional map for AP World History: Industrial Society and Political Change, c. 1830-1900. Topic 5.6 · Government and society respond</desc>
+  <title id="map-title">Two States Build Industry, 1820s to 1895</title>
+  <desc id="map-desc">Topic 5.6 instructional map for AP World History: Two States Build Industry, 1820s to 1895. Topic 5.6 · Industrialization: Government’s Role</desc>
   <defs>
     <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#FFFDF7"/><stop offset="1" stop-color="#F1E7D5"/>
@@ -67,46 +67,55 @@
   </g>
 
   <g id="highlights">
-    <ellipse cx="791.1" cy="200.0" rx="40.0" ry="33.3" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
-    <ellipse cx="817.8" cy="233.3" rx="62.2" ry="44.4" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
-    <ellipse cx="364.4" cy="283.3" rx="97.8" ry="44.4" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
-    <ellipse cx="1075.6" cy="166.7" rx="142.2" ry="55.6" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
+    <ellipse cx="933.3" cy="355.6" rx="26.7" ry="27.8" fill="#C9A46A" fill-opacity="0.5" stroke="#6B3E1F" stroke-width="4"/>
+    <ellipse cx="968.9" cy="308.3" rx="17.8" ry="16.7" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
     <ellipse cx="1417.8" cy="288.9" rx="26.7" ry="33.3" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
-    <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
+    <ellipse cx="1368.9" cy="288.9" rx="17.8" ry="22.2" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
+    <ellipse cx="1337.8" cy="368.3" rx="11.6" ry="14.4" fill="#C08552" fill-opacity="0.5" stroke="#8C5A2B" stroke-width="4"/>
   </g>
   <g id="flows">
-    
+    <path class="flow" d="M935.6,344.4 Q967.8,333.6 973.3,300.0" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <circle class="badge" cx="961.1" cy="327.9" r="17"/>
+    <text class="badgenum" x="961.1" y="334.9" text-anchor="middle">1</text>
+    <path class="flow" d="M1404.4,308.3 Q1383.1,351.7 1337.8,368.3" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <circle class="badge" cx="1377.1" cy="345.0" r="17"/>
+    <text class="badgenum" x="1377.1" y="352.0" text-anchor="middle">2</text>
   </g>
   <g id="region-labels">
-    <text class="region halo" x="791.1" y="259.3" text-anchor="middle" fill="#1A1C1D"><tspan x="791.1" dy="0">BRITAIN</tspan></text>
-    <text class="region halo" x="817.8" y="303.8" text-anchor="middle" fill="#1A1C1D"><tspan x="817.8" dy="0">FRANCE &amp; GERMANY</tspan></text>
-    <text class="region halo" x="364.4" y="353.8" text-anchor="middle" fill="#1A1C1D"><tspan x="364.4" dy="0">UNITED STATES</tspan></text>
-    <text class="region halo" x="1075.6" y="248.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1075.6" dy="0">RUSSIA</tspan></text>
-    <text class="region halo" x="1417.8" y="348.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1417.8" dy="0">JAPAN</tspan></text>
-    <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">QING CHINA</tspan></text>
+    <text class="region halo" x="888.7" y="362.6" text-anchor="end" fill="#1A1C1D"><tspan x="888.7" dy="0">EGYPT</tspan></text>
+    <text class="region halo" x="1004.7" y="315.3" text-anchor="start" fill="#1A1C1D"><tspan x="1004.7" dy="0">SYRIA</tspan></text>
+    <text class="region halo" x="1462.4" y="259.9" text-anchor="start" fill="#1A1C1D"><tspan x="1462.4" dy="0">JAPAN</tspan></text>
+    <text class="region halo" x="1333.1" y="295.9" text-anchor="end" fill="#1A1C1D"><tspan x="1333.1" dy="0">KOREA</tspan></text>
+    <text class="region halo" x="1367.3" y="399.3" text-anchor="start" fill="#1A1C1D"><tspan x="1367.3" dy="0">TAIWAN</tspan></text>
   </g>
   <g id="places">
-    
+    <circle class="city" cx="928.9" cy="272.2" r="10"/>
+    <text class="place halo" x="948.9" y="256.2" text-anchor="start">Istanbul</text>
+    <text class="placenote halo" x="948.9" y="278.2" text-anchor="start">the sultan</text>
+    <circle class="city" cx="1420.9" cy="301.7" r="10"/>
+    <text class="place halo" x="1440.9" y="297.7" text-anchor="start">Tokyo</text>
+    <text class="placenote halo" x="1440.9" y="319.7" text-anchor="start">Perry, 1853</text>
   </g>
 
   <g id="titleband">
     <rect x="0" y="0" width="1600" height="118" fill="url(#paper)" opacity=".93"/>
     <rect x="0" y="118" width="1600" height="5" fill="#C9A46A"/>
-    <text class="title" x="46" y="62">Industrial Society and Political Change, c. 1830-1900</text>
-    <text class="subtitle" x="48" y="97">Topic 5.6 · Government and society respond</text>
+    <text class="title" x="46" y="62">Two States Build Industry, 1820s to 1895</text>
+    <text class="subtitle" x="48" y="97">Topic 5.6 · Industrialization: Government’s Role</text>
   </g>
 
-  <g id="legend" transform="translate(46,688)">
-    <rect x="0" y="0" width="640" height="244" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
+  <g id="legend" transform="translate(46,655)">
+    <rect x="0" y="0" width="640" height="277" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
     <text class="small" x="18" y="28" font-weight="700">Map Key</text>
-      <rect x="18" y="38" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="56">Factory Acts, reform bills, and trade unions</text>
-      <rect x="18" y="71" width="40" height="23" rx="4" fill="#C08552" fill-opacity=".6" stroke="#8C5A2B" stroke-width="3"/><text class="small" x="74" y="89">1848 revolutions; Bismarck&apos;s social insurance</text>
-      <rect x="18" y="104" width="40" height="23" rx="4" fill="#D2B48C" fill-opacity=".6" stroke="#8E7A55" stroke-width="3"/><text class="small" x="74" y="122">Labor organizing and Progressive reform</text>
-      <rect x="18" y="137" width="40" height="23" rx="4" fill="#9FB0AE" fill-opacity=".6" stroke="#4E6260" stroke-width="3"/><text class="small" x="74" y="155">Serf emancipation, 1861; state-led change</text>
-      <rect x="18" y="170" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="188">Meiji reforms remaking law and schooling</text>
-      <rect x="18" y="203" width="40" height="23" rx="4" fill="#B49AA8" fill-opacity=".6" stroke="#6B4A5A" stroke-width="3"/><text class="small" x="74" y="221">Self-Strengthening Movement</text>
+      <rect x="18" y="38" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="56">Egypt under Muhammad Ali: state cotton mills, an army</text>
+      <rect x="18" y="71" width="40" height="23" rx="4" fill="#D2B48C" fill-opacity=".6" stroke="#8E7A55" stroke-width="3"/><text class="small" x="74" y="89">Syria: taken by Egypt in 1831, lost in 1840</text>
+      <circle class="badge" cx="33" cy="115" r="14"/><text class="badgenum" x="33" y="121" text-anchor="middle" font-size="16">1</text><line x1="51" x2="72" y1="115" y2="115" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,109 L84,115 L72,121 Z" fill="#8C5A2B"/><text class="small" x="94" y="122">Egypt’s army invades Syria, 1831</text>
+      <rect x="18" y="137" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="155">Japan: Perry, 1853; reform, railways and mills from 1868</text>
+      <circle class="badge" cx="33" cy="181" r="14"/><text class="badgenum" x="33" y="187" text-anchor="middle" font-size="16">2</text><line x1="51" x2="72" y1="181" y2="181" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,175 L84,181 L72,187 Z" fill="#8C5A2B"/><text class="small" x="94" y="188">Japan defeats China and takes Taiwan, 1895</text>
+      <rect x="18" y="203" width="40" height="23" rx="4" fill="#C08552" fill-opacity=".6" stroke="#8C5A2B" stroke-width="3"/><text class="small" x="74" y="221">Taiwan: given to Japan by China in 1895, and kept</text>
+      <rect x="18" y="236" width="40" height="23" rx="4" fill="#9FB0AE" fill-opacity=".6" stroke="#4E6260" stroke-width="3"/><text class="small" x="74" y="254">Korea: China gives up its claim, 1895</text>
   </g>
 
   <rect x="0" y="948" width="1600" height="52" fill="url(#paper)" opacity=".93"/>
-  <text class="tiny" x="46" y="980">BeHistorical instructional map. Coastlines are simplified for classroom projection; regions and routes are drawn to the standard scholarly picture of this period.</text>
+  <text class="tiny" x="46" y="980">Arrows join two places; they are not exact routes. Regions are approximate.</text>
 </svg>

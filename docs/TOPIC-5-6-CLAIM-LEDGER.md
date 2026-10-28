@@ -1,0 +1,439 @@
+# Topic 5.6 Claim Ledger: Industrialization: Government's Role from 1750 to 1900
+
+**Status: closed 2026-10-24. Started with the story draft; every claim in the story was checked
+against sources before the surfaces were written. Three independent review passes followed; the loop
+closed on the three-pass safety valve with every finding fixed or rejected with a reason. Review
+findings and their dispositions are at the end.**
+
+**Where a claim appears.** Rows marked "Story" were written into the story first and carried, in the
+same wording, into the First & 10, the deep reading and eBook chapter, the lecture cards and the deck;
+rows changed by review name their surfaces. "Where it appears" was not filled surface by surface for
+every Story row.
+
+**The CED decides scope; scholarship decides truth.** The CED (`scripts/lib/ced-source/unit-5.js`,
+p. 105) gives 5.6 one learning objective (G), two Key Concepts (KC-5.1.V.C and KC-5.2.II.A), one
+optional illustrative example (Muhammad Ali's cotton textile industry in Egypt), and no sample
+activity. Japan is named in KC-5.2.II.A itself. Every other example on the page is the build's choice
+and is a claim here. Whether a claim is true is checked against original texts and scholarly and
+institutional sources, never against the CED's silence or the old lesson.
+
+Status is exactly one of VERIFIED, NARROWED, REMOVED, NEEDS JEFF.
+
+Surface codes used in "Where it appears": **F10** First & 10; **DR** deep reading and eBook chapter;
+**LD** lesson data (targets, criteria, lecture cards, map text); **RC** renderer config (Skill Builder,
+checkpoints, Evidence Lab, map key); **PS** Primary Source; **BS** BeSurreal; **BR** BeInTheRoom;
+**Deck** teacher deck; **CV** Canvas text; **Map** the instructional map; **Story** the story draft.
+"Where it appears" is filled in as the surfaces are written (Phases 5 to 8).
+
+## Sources leaned on, and in what role
+
+The fact-check (2026-10-24) read every source below; a source that could not be opened is not
+counted. Britannica, UNESCO and several journal pages refused this session (HTTP 403) and are not
+cited.
+
+Egypt:
+- **U.S. Library of Congress, *Egypt: A Country Study* (1990), "The French Invasion and Occupation,
+  1798-1801" and "Muhammad Ali, 1805-48"** (countrystudies.us/egypt/20.htm, 21.htm). The French
+  "defeated the Mamluk army at Shubra Khit and Imbabah, and entered Cairo on July 25"; "the Albanian
+  contingent of Ottoman forces that had come in 1801 to fight against the French"; "in June 1805,
+  they appointed Muhammad Ali governor of Egypt"; "in March 1811, Muhammad Ali had sixty-four Mamluks
+  ... assassinated in the citadel. From then on, Muhammad Ali was the sole ruler of Egypt"; "he
+  wanted to detach Egypt from the Ottoman Empire, and he realized that to do so Egypt had to be strong
+  economically and militarily"; "planted crops specifically for export, such as long-staple cotton";
+  "The surplus income from agricultural production was used ... to finance industrial development and
+  the military"; "the peasants were told what crops to plant ... The government bought directly from
+  the peasants and sold directly to the buyer"; "Workers were drafted into factories to weave on
+  government looms. Factories for sugar, indigo, glass, and tanning were set up with the assistance of
+  foreign advisers and imported machinery"; "The textile industry was protected by embargoes imposed by
+  the government to prohibit the import of the cheap British textiles"; "Muhammad Ali's invasion of
+  Syria in 1831"; "the great powers (Britain, France, Austria, Russia, and Prussia) allied themselves
+  with the Ottoman government to drive the Egyptian forces out of Syria. A British fleet bombarded
+  Beirut in September 1840, and an Anglo-Turkish force landed"; "According to the Treaty of 1841,
+  Muhammad Ali was stripped of all the conquered territory except Sudan but was granted the hereditary
+  governorship of Egypt"; "Muhammad Ali was also compelled to agree to the Anglo-Ottoman Convention of
+  1838, which established 'free trade' in Egypt. This meant that Muhammad Ali was forced to abandon
+  his monopolies and establish new tariffs that were favorable to imports." The study names France
+  among the powers of 1840; the July 1840 Convention of London was signed by Britain, Austria, Prussia
+  and Russia with the Ottomans, and France held back, so the course names the four.
+- **Khaled Fahmy, "The Nation and Its Deserters: Conscription in Mehmed Ali's Egypt," *International
+  Review of Social History* 43 (1998)** (Cambridge open PDF). "Started in the early 1820s, this army
+  was central to all his reforms: the different schools, factories and hospitals were all founded to
+  serve it"; the first order to conscript Egyptian peasants, "around 4,000 men from Upper Egypt,"
+  "Dated early 1822, this was the first conscription order issued by the Pasha in Cairo"; from 4,000
+  men "the number of conscripts was eventually to reach the impressive figure of 130,000 troops less
+  than ten years later"; Egyptians were conscripted "because Mehmed Ali could not satisfy his dynastic
+  needs by using any other source of manpower."
+- **Joel Beinin, "Formation of the Egyptian Working Class," *MERIP Reports* (1981).** "Beginning in
+  1819 his regime built European style factories in three major sectors" (military production,
+  agricultural processing, textiles, "the leading element"); "By the early 1830s 30 cotton mills were
+  in operation with a labor force of 30,000"; "Production in the government factories was not
+  performed by freely contracted labor," recruited by the corvée; "a decade later most of these new
+  factories had failed because of inexperienced management, lack of adequate natural resources
+  (especially fuel), peasant resistance to factory discipline and competition from Europe."
+- **Ahmeti and Rizaj, *Journal of European Economic History* (2/2024)**, as 5.4's ledger quotes them:
+  by the 1830s Egypt had about 30 state textile factories, most losing money; the Treaty of Balta
+  Liman was signed by the Ottoman Porte and Britain, and Egypt complied only by 1842. A second,
+  independent source for "about 30."
+- **Laura Panza and Jeffrey G. Williamson, "Did Muhammad Ali foster industrialization in early
+  nineteenth-century Egypt?" *Economic History Review* 68 (2015)** (abstract, RePEc and the Economic
+  History Society): Ali "intervened in Egyptian markets in an attempt to foster industrialization";
+  "the state purchased agricultural commodities (cotton and wheat) at low prices"; "He also used
+  non-tariff barriers to exclude foreign competition"; "we show that his policies were successful."
+  The other side of the historians' debate, cited so the course does not say the factories achieved
+  nothing.
+- **OER Project, "Muhammad Ali & Egypt's Industrialization"** (a teaching source, used only beside a
+  scholarly one): factories processed cotton into clothing "beginning with the uniforms for the new
+  military"; "They didn't have the coal resources Britain and Europe had, so Egyptian factories ran on
+  animal power." Wikipedia, citing older studies, says some steam engines were installed and coal was
+  imported; so the course says "many machines were turned by animals," not "all."
+- **The firman of 1841** (Historical Text Archive, the English text of the sultan's grant): "I grant
+  unto thee the Government of Egypt ... together with the additional privilege of hereditary
+  succession"; "In time of peace, 18,000 men will suffice for the internal service of the province of
+  Egypt; it shall not be allowed to increase their numbers." Its exact day in 1841 differs between
+  sources (February or June), so the course says only 1841.
+- **Roger Owen, "A Long Look at Nearly Two Centuries of Long Staple Cotton"** (British Academy,
+  Proceedings 96): long-staple cotton's "introduction in 1820"; "from 1820 to 1914 ... a continuous
+  increase in output"; "Up to 1880 ... almost all the crop at that time was sold for foreign use";
+  merchants "linking Egypt directly with its customers in Lancashire and the rest of Europe."
+- **Wikipedia, "Muhammad Ali of Egypt"** (used only for what its cited sources state, beside one of
+  the sources above): an Ottoman commander of Albanian origin; "Ottoman Turkish was the official
+  language of his court rather than Arabic"; the first educational "mission" of Egyptian students to
+  Europe "in the 1820s"; Konya (21 December 1832) and Nezib (24 June 1839), Ibrahim's victories over
+  Ottoman armies.
+
+Japan:
+- **Columbia University, Asia for Educators, "The Meiji Restoration and Modernization"** and
+  **"Commodore Perry and Japan (1853-1854)"**. Perry's squadron in 1853, "It was clear that Commodore
+  Perry could impose his demands by force. The Japanese had no navy with which to defend themselves";
+  treaties in 1854 ("trade at two ports") and 1858 ("opened more ports"); "treaties that limited its
+  control over its own foreign trade and required that crimes concerning foreigners in Japan be tried
+  not in Japanese but in Western courts"; "some samurai leaders began to demand a change in
+  leadership"; 1868, the emperor restored; "in 1871 these domains were abolished and transformed into
+  prefectures"; "The samurai lost their class privileges"; "a national army based on universal
+  conscription"; "A national land tax system was established that required payment in money instead
+  of rice ... This gave the government money to spend to build up the strength of the nation"; the
+  leaders' tour of Europe and the United States; "the 1877 Satsuma rebellion, when the government's
+  newly drafted army ... defeated the last resistance of the traditional samurai warriors"; "The
+  government led the way in this, building railway and shipping lines, telegraph and telephone
+  systems, three shipyards, ten mines, five munitions works, and fifty-three consumer industries
+  (making sugar, glass, textiles, cement, chemicals, and other important products). This was very
+  expensive, however, and strained government finances, so in 1880 the government decided to sell
+  most of these industries to private investors"; "Some of the samurai and merchants who built these
+  industries established major corporate conglomerates called zaibatsu"; "in 1872 the government
+  established a national system to educate the entire population"; "The Western nations finally agreed
+  to revise the treaties in 1894"; "In 1894 Japan fought a war against China over its interest in
+  Korea"; "gained Taiwan as a colony"; "Within a week, France, Russia, and Germany combined to
+  pressure Japan to give up rights on the Liaotung peninsula"; "The Japanese government was angered by
+  this incident." (Its "gained control over Korea" after 1895 is not used: the treaty ended China's
+  claim; Japan's control came after 1905.)
+- **Columbia, Asia for Educators, "The Charter Oath (of the Meiji Restoration), 1868"** (introduction
+  only): issued in April 1868 in the name of the Emperor Meiji, "who was only 15 years old at the
+  time," written by "a group of the young samurai."
+- **"The World and Japan" Database (GRIPS and the University of Tokyo), "The Charter Oath," translation
+  by Akihiko Tanaka**: article 5, "Knowledge shall be sought throughout the world so as to strengthen
+  the foundations of imperial rule." The Primary Source's text. Columbia's reprint of the de Bary
+  translation reads the same for article 5; the 1946 official translation (FRUS 1946, vol. VIII, doc.
+  138) reads "Wisdom and knowledge shall be sought throughout the world to promote the prosperity of
+  the Empire." Wikipedia dates the Oath 6 April 1868.
+- **Wikipedia, "Meiji Restoration"** (citing Jansen and Beasley): *fukoku kyōhei*, "rich nation,
+  strong army"; the 1858 Treaty of Amity and Commerce with "extraterritoriality."
+- **Japan Customs, "History of Japan Customs"** and **Sir Hugh Cortazzi, "The Revision of Japan's
+  Early Commercial Treaties"** (LSE): the 1866 tariff convention set import duties at "a uniform 5 per
+  cent"; the 1894 treaty with Britain "spurred the revision of unequal commerce treaties with other
+  countries"; tariff autonomy "completely restored in 1911." Wikipedia, "Anglo-Japanese Treaty of
+  Commerce and Navigation": signed 16 July 1894, "came into force on 17 July 1899."
+- **Wikipedia, "History of rail transport in Japan"**: the Shimbashi to Yokohama railway opened 14
+  October 1872 (Gregorian), built "using British financing and 300 British and European technical
+  advisors"; Edmund Morel, a British engineer, supervised.
+- **Wikipedia, "Tomioka Silk Mill"** (citing Japanese sources) and **Nippon.com, "The World Heritage
+  Tomioka Silk Mill"**: "established in 1872 by the government to introduce modern machine silk
+  reeling from France"; Paul Brunat, French engineer; operations from 4 November 1872; workers "mainly
+  daughters of former samurai," 404 by January 1873, 556 by April 1873; the government sold it to
+  Mitsui in 1893.
+- **Mitsubishi** ("Origin," mitsubishi.com) and **MHI, Nagasaki Shipyard history**: Mitsubishi leased
+  the Nagasaki shipyard in 1884 and bought it from the government in 1887.
+- **Mitsui Bunko, "Sale of the Miike Mine"**: the government sold the Miike coal mine by bidding in
+  1888; Mitsui took it over from 3 January 1889; the mines were the nation's largest. Evidence that
+  Japan mined coal of its own.
+- **Treaty of Shimonoseki, 17 April 1895** (the treaty text as Wikipedia transcribes it): Article 1,
+  China recognizes "the full and complete independence and autonomy of Korea"; Articles 2 and 3, the
+  cession of Taiwan, the Penghu Islands and the Liaodong Peninsula; Article 4, "200,000,000 Kuping
+  taels"; the Triple Intervention, the Liaodong return for 30 million more taels.
+
+## The claims
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| In Britain and the United States, private owners and investors built the first factories | Story | 5.3 and 5.4 (Arkwright; Boston merchants at Lowell), both verified in their ledgers | VERIFIED |
+| Only a small number of governments sponsored industry | Story | KC-5.1.V.C, word for word | VERIFIED |
+| A French army under Napoleon invaded Egypt in 1798 and defeated its Mamluk rulers; the French left in 1801 | Story | LoC 20; LoC 21 ("come in 1801 to fight against the French") | VERIFIED |
+| Muhammad Ali, from an Albanian family, came with the Ottoman troops sent to retake Egypt | Story | LoC 21; Wikipedia | VERIFIED |
+| Named governor of Egypt in 1805 by the Ottomans | Story | LoC 21 ("in June 1805") | VERIFIED |
+| By 1811 he had destroyed his rivals and ruled alone | Story | LoC 21 (March 1811, the Mamluks killed in the citadel; "the sole ruler") | VERIFIED |
+| He wanted Egypt strong enough that he and his family could hold it, even against the sultan | Story | LoC 21 ("wanted to detach Egypt from the Ottoman Empire"); Fahmy ("dynastic needs"). The course says "hold it, even against the sultan," which both support, not "independence," which Fahmy disputes | NARROWED |
+| The state told peasants what to grow, bought crops low and sold them abroad higher | Story | LoC 21; Panza and Williamson ("purchased ... at low prices") | VERIFIED |
+| Long-staple cotton, grown for sale from 1820, earned a great deal | Story | Owen ("introduction in 1820"); LoC 21 (crops for export); Owen (continuous increase to 1914) | VERIFIED |
+| From the late 1810s the government built factories (cotton mills, weapons, sugar, other goods) with European machines and experts | Story | Beinin ("Beginning in 1819"); LoC 21 (sugar, indigo, glass, tanning; "foreign advisers and imported machinery"); Wikipedia (muskets and cannons in Cairo). Sources give 1816 to 1819 for the first works, so "the late 1810s" | NARROWED |
+| By the early 1830s about 30 cotton mills employed about 30,000 workers | Story | Beinin, word for word; Ahmeti and Rizaj (about 30 factories) | VERIFIED |
+| Many made cloth and uniforms for the army | Story | OER ("beginning with the uniforms for the new military"); Fahmy (factories "founded to serve" the army) | VERIFIED |
+| The workers were drafted, the way peasants were drafted for canal work | Story | LoC 21 ("Workers were drafted into factories"); Beinin (the corvée, used "to repair irrigation works") | VERIFIED |
+| Peasants were drafted into the army from 1822 | Story | Fahmy ("Dated early 1822, this was the first conscription order") | VERIFIED |
+| The army reached about 130,000 by the early 1830s | Story | Fahmy ("130,000 troops less than ten years later" than 1822) | VERIFIED |
+| In the 1820s he sent Egyptian students to Europe | Story | Wikipedia ("In the 1820s, Muhammad Ali sent the first educational 'mission'") | VERIFIED |
+| He kept cheap British cloth out of Egypt to protect his mills | Story | LoC 21 (embargoes on "cheap British textiles"); Panza and Williamson (non-tariff barriers) | VERIFIED |
+| His army under Ibrahim invaded Syria in 1831 and beat the sultan's armies more than once | Story | LoC 21 ("invasion of Syria in 1831"); Wikipedia (Konya 1832, Nezib 1839) | VERIFIED |
+| Britain, Austria, Russia and Prussia sided with the sultan; in 1840 British warships and Ottoman troops drove Ibrahim out of Syria | Story | LoC 21 (the powers allied with the Ottomans; "A British fleet bombarded Beirut in September 1840, and an Anglo-Turkish force landed"); the Convention of London, July 1840, signed by the four. The study also lists France, which did not sign; the course names the four | NARROWED |
+| In 1841 the governorship became hereditary in his family, passing to its eldest male; Egypt gave up its conquests except Sudan; the army was cut to 18,000 in peacetime | F10 3; DR 03; Deck 8; RC Evidence Lab | LoC 21 ("succession going to the eldest male in the family"); the firman ("from the elder to the elder, in the male race among the sons and grandsons"; "In time of peace, 18,000 men"). Was "passed from father to son" (pass 1 history finding 4) | NARROWED |
+| Egypt had to accept the 1838 Anglo-Ottoman trade treaty, which ended his monopolies and opened Egypt to cheap goods | Story | LoC 21 ("compelled to agree to the Anglo-Ottoman Convention of 1838 ... forced to abandon his monopolies"); Ahmeti and Rizaj (signed by the Porte and Britain; Egypt complied by 1842) | VERIFIED |
+| Egypt had almost no coal, so many machines were turned by animals | Story | OER ("ran on animal power"); Beinin (lack of fuel). Wikipedia notes some steam engines and imported coal, so "many," not "all" or "most" | NARROWED |
+| Drafted workers resisted; managers lacked experience; by the mid-1840s, about a decade after their early-1830s peak, most factories had failed | F10 3; LC 1; DR 03; Deck 8, 9, 18, 19; BR | Beinin ("By the early 1830s ... a decade later most of these new factories had failed"). Was given three different ways (pass 1 history finding 11) | NARROWED |
+| Historians still argue which cause mattered most and how much the factories achieved | Story | Panza and Williamson ("his policies were successful") against Beinin's failure; LoC 21 (Marsot on British interests) | VERIFIED |
+| Egypt went on growing more cotton, almost all sold abroad, much of it to Britain's mills | Story | Owen ("continuous increase in output"; "almost all the crop ... sold for foreign use"; "customers in Lancashire") | VERIFIED |
+| Muhammad Ali's court spoke (Ottoman) Turkish | Story | Wikipedia ("Ottoman Turkish was the official language of his court") | VERIFIED |
+| In 1853 Commodore Perry sailed warships into Edo Bay and demanded Japan open its ports; Japan had no navy to stop him | Story | Columbia AFE (Perry) | VERIFIED |
+| Treaties of 1854 and 1858 opened ports, let foreigners be tried in their own courts, and took away Japan's control of its trade | Story | Columbia AFE (both pages); Wikipedia (1858, extraterritoriality) | VERIFIED |
+| Some samurai blamed the shogun | Story | Columbia AFE ("some samurai leaders began to demand a change in leadership") | VERIFIED |
+| In 1868 young samurai overthrew the shogun and governed in the name of the teenage Emperor Meiji | Story | Columbia AFE (Meiji; Charter Oath introduction, "only 15") | VERIFIED |
+| The Charter Oath, April 1868: "Knowledge shall be sought throughout the world so as to strengthen the foundations of imperial rule." | Story | Tanaka's translation, word for word; Wikipedia (6 April 1868) | VERIFIED |
+| The slogan "Rich country, strong army" | Story | Wikipedia, citing Jansen (*fukoku kyōhei*) | VERIFIED |
+| 1871: the domains abolished, one central state | Story | Columbia AFE | VERIFIED |
+| The samurai lost their privileges; men of every class drafted into a national army | Story | Columbia AFE | VERIFIED |
+| A national school system began in 1872 | Story | Columbia AFE | VERIFIED |
+| A land tax paid in money gave the government money to spend | Story | Columbia AFE | VERIFIED |
+| The Iwakura Mission toured the United States and Europe, 1871 to 1873 | Story | Columbia AFE (the leaders' tour); Wikipedia, Iwakura Mission (December 1871 to September 1873) | VERIFIED |
+| Japan's first railway, Tokyo to Yokohama, opened 1872 with British engineers | Story | Wikipedia, History of rail transport in Japan (14 October 1872; British financing and advisers; Morel) | VERIFIED |
+| The Tomioka Silk Mill opened in 1872, with French machines and the French engineer Paul Brunat; workers mostly young women | Story | Wikipedia, Tomioka (4 November 1872; Brunat; "mainly daughters of former samurai"); Nippon.com | VERIFIED |
+| The state built telegraph lines, shipyards, mines and factories for weapons, cement, glass and cloth | Story | Columbia AFE (the list) | VERIFIED |
+| Farmers paid much of it through the land tax | Story | Columbia AFE (the land tax "gave the government money to spend") | VERIFIED |
+| The new conscript army crushed the last great samurai revolt in 1877 | Story | Columbia AFE (Satsuma, 1877) | VERIFIED |
+| In 1880 the government decided to sell most of its enterprises, because they cost too much | Story | Columbia AFE ("strained government finances, so in 1880") | VERIFIED |
+| Mitsui and Mitsubishi bought them and grew into the zaibatsu | Story | Columbia AFE (zaibatsu); Mitsubishi (Nagasaki, bought 1887); Mitsui Bunko (Miike, 1888 to 1889); Nippon.com (Tomioka to Mitsui, 1893) | VERIFIED |
+| The Osaka Spinning Company, a private company (5.4) | Story | 5.4's ledger (opened 1883) | VERIFIED |
+| In 1894 Britain agreed to end the foreign courts in Japan (from 1899), and other powers followed; full tariff control came only in 1911 | F10 5; LC 2; DR 05; Deck 16 | Wikipedia, Anglo-Japanese Treaty (16 July 1894; in force 17 July 1899; British subjects "became subject to Japanese laws"); Cortazzi ("the question of Japan's tariff autonomy remained unresolved"; autonomy secured 1911); Japan Customs ("completely restored in 1911"). Was "end its unequal treaty" (pass 1 history finding 1) | NARROWED |
+| Japan fought China over Korea in 1894 and 1895 and won | Story | Columbia AFE | VERIFIED |
+| Shimonoseki: China gave up its claim over Korea, gave Taiwan, agreed to pay 200 million taels | Story | The treaty, Articles 1, 2 and 4 | VERIFIED |
+| Within a week Russia, Germany and France demanded that Japan give back land it had won, and Japan gave in, which angered its leaders | DR 05; Deck 16 notes | Columbia AFE ("Within a week ... combined to pressure Japan"; "angered"); Wikipedia, Triple Intervention (23 April 1895, withdrawal announced 5 May). Was "forced ... within a week" (pass 1 history finding 12) | NARROWED |
+| Taiwan was Japan's first colony | Story | Columbia AFE ("gained Taiwan as a colony"). "First" is not stated there; the course says "a colony of its own," not "its first" | NARROWED |
+| Japan mined coal of its own | Story | Mitsui Bunko (Miike, "the nation's largest" mines) | VERIFIED |
+| Japan had to accept low tariffs too: about 5 percent from 1866, through its build-up of the 1870s and 1880s; full control only in 1911 | F10 6; LC 3; DR 04; Deck 19; BR | Cortazzi (1866: "a uniform 5 per cent of the declared value"; autonomy 1911); Japan Customs. Was "about 5 percent ... until 1911"; revised treaties raised rates from 1899 (pass 1 history finding 2) | NARROWED |
+| Japan's leaders chose what to borrow and from whom (a French silk mill, British railway engineers) | Story | Wikipedia, Tomioka and rail transport (the two choices) | VERIFIED |
+| Japan's industry made it strong enough to defeat China and end the unequal treaties | Story | Columbia AFE (Japan "rapidly industrialised ... its rise as a military power by the year 1895" in Wikipedia's words; AFE ties treaty revision to legal reform). The course states the link as one of the reasons, beside the reforms | NARROWED |
+
+## Old claims leaving with their surfaces (constraint check, section 2)
+
+| Claim | Where it was | Why | Status |
+|---|---|---|---|
+| New Zealand "granted women full voting rights in 1893, the first country in the world" | RC map key | Women could vote from 1893 but not stand for Parliament until 1919; 5.9's material | REMOVED |
+| Bismarck's Germany introduced "the world's first modern social insurance system" | F10 | A superlative off this topic (5.8) | REMOVED |
+| The German SPD, "the largest socialist party in the world, won 20% of the popular vote in 1890" | RC map key | Off this topic (5.8); unsourced | REMOVED |
+| Chartist demands "all eventually enacted" | F10 | Annual parliaments never were | REMOVED |
+| Witte and Russian rail finance | RC Evidence Lab | Not one of the story map's cases (5.4 review finding 4) | REMOVED |
+| Muhammad Ali "built state arms factories, textile mills and a conscript army in Egypt from the 1810s" | RC Evidence Lab caption | The conscript army dates from 1822 | NARROWED |
+| BeInTheRoom alignment codes `KC-5.6.I–II`, `KC-5.6.II.A–D` | BR | Codes the CED does not have | REMOVED |
+
+## Review findings
+
+### Pass 1, 2026-10-24
+
+Packet: `capture-topic-for-review.js 5.6` (brand fonts, 25 teacher slides). Two fresh reviewers,
+launched together: page truth, readability, CED and ownership on the cheaper model; history on the
+default model.
+
+**Page truth reviewer: 13 findings, all supported; 12 fixed in full, 1 in part.** CED alignment and
+story-map ownership: no findings.
+
+1. Egypt's "threat" link contradicted itself, and "both feared stronger industrial powers" was not
+   supported for Egypt in anything a student reads. **Fixed:** the shared link is now "stronger,
+   better-armed powers" on every surface (story, First & 10, lesson, deck, deep reading); the First &
+   10, lecture card and deep reading add that Napoleon's 1798 victory "had shown what a modern
+   European army could do" and Muhammad Ali wanted an army like it (OER Project: Egypt "lost to
+   Napoleon's French army in 1798 ... Ali put in motion a campaign of modernization, beginning with
+   his military"); Section 6 names each state's rival; slide 6's footer and question no longer imply
+   he saw 1798; Success Criterion 1 matches.
+2. A finished answer to the Skill Builder was printed in lecture card 3, and the synthesis sentence
+   (slide 21) sat just before Checkpoint 1 and carried its answer. **Fixed:** card 3 is now "Line Up
+   the Two Cases," the facts link by link with no stated pattern or difference; Checkpoint 1 moves to
+   slide 10, right after the Egypt slides it assesses and before the synthesis. **Left:** the pattern
+   in First & 10 Section 6, which is the reading's content (the brief excludes content).
+3. "Sent people abroad to learn" had no Egypt support in the required reading. **Fixed:** the First &
+   10 and lecture card 1 add the 1820s student missions (as the deep reading had).
+4. The decree text card had no alt carrying its two quoted lines. **Fixed:** alt added.
+5. Slide 18: Japan "never defeated by Europe." **Fixed:** "no European power took its land or cut its
+   army."
+6. Slide 17's Venn showed four of five shared items, and the notes counted eleven phrases. **Fixed:**
+   the goal moves to the footer; the notes say ten.
+7. Slide 11's pin called the coast strip "Uraga," but the strip's labels read Shimoda and Izu.
+   **Fixed:** "The map: part of the coast the lords were ordered to guard."
+8. The map question asked whether each state kept its land, but nothing said Japan kept Taiwan; arrow
+   1 hid under its badge. **Fixed:** the key and the map legend say Japan kept Taiwan; arrow 1 is
+   longer.
+9. Undefined words: Mamluk, taels, long-staple cotton, "the settlement of 1840 and 1841." **Fixed:**
+   glossed in the First & 10 and lesson; the criterion names the events.
+10. Checkpoint 2's criterion did not include the 1880 sale its prompt asks for; slide 24 said "two
+    pieces of evidence." **Fixed:** both.
+11. The deep reading's term lists defined words its text did not use (hereditary, indemnity).
+    **Fixed:** both used in the text.
+12. "Egypt's mills as a warning" presupposed the council's answer; a double negative in a room card.
+    **Fixed:** "as a comparison"; reworded.
+13. Slide 18 named the Miike mine, which only the deep reading teaches; slide 20's footer asked
+    students to name what it printed; slide 8's axis hid 1840. **Fixed:** "coal of its own"; footer
+    reworded; ticks every ten years.
+
+**History reviewer: 14 findings; 13 supported and fixed, 1 rejected.**
+
+1. "In 1894 Britain agreed to end its unequal treaty": the 1894 treaty ended extraterritoriality from
+   1899, not the tariff limit (full control 1911). **Fixed** on every surface (the claim row above).
+2. "Only about 5 percent on imports until 1911" was wrong for 1899 to 1911. **Fixed:** "about 5
+   percent from 1866, through its build-up," and 1911 for full control.
+3. Slide 18's "never defeated by Europe" (the Shimonoseki campaign, 1863 to 1864). Already **fixed**
+   by page-truth finding 5.
+4. "Passed from father to son": the 1841 firman says the eldest male of the family. **Fixed.**
+5. Slide 11's coast pin is Shimoda and Izu, not Uraga; the crests were cropped. **Fixed:** the pin
+   names the strip's own labels; the broadsheet is shown whole (fit contain).
+6. Slide 15's alt text and notes described the side sheets, not the center sheet shown. **Fixed.**
+7. "Utagawa Kunimasa III, later Kunisada III" matched neither the Library's record nor the reference
+   numbering. **Fixed:** "signed Baidō Kunimasa," with the Library's cataloging named.
+8. The map's SYRIA label sat south of Cairo. **Fixed:** label above its ring.
+9. Slide 13's attribution read as a translation made in 1868. **Fixed.**
+10. The 1946 wording of Article 5 was called a misquote. **Rejected:** the official English
+    translation approved by Japan's Prime Minister and printed in Foreign Relations of the United
+    States, 1946, vol. VIII, doc. 138, reads "Wisdom and knowledge shall be sought throughout the world
+    to promote the prosperity of the Empire" (read in this session); the reviewer quoted a different
+    translation. The note now names the FRUS source.
+11. Three different dates for the mills' failure. **Fixed:** "by the mid-1840s" everywhere.
+12. "Within a week ... forced": the demand came in six days, the withdrawal in May. **Fixed.**
+13. The room's headman wanted the tax to "stop rising," but the land tax was lowered in 1877.
+    **Fixed:** "so the land tax does not have to rise again."
+14. The Iwakura caption committed to "early in a tour" while hedging on the city. **Fixed.**
+
+**Own pass after the fixes:** the browser suite (`--strict`, brand fonts) found the synthesis frame
+8px over its board in both font passes. **Fixed:** shorter frame; the slide-template browser test now
+passes.
+
+### Pass 2, 2026-10-24
+
+Fresh packet after pass 1's fixes; two new reviewers, same split.
+
+**Page truth reviewer: 11 findings; 8 fixed, 1 fixed in part, 2 rejected.** CED alignment and
+ownership: no findings.
+
+1. The success criteria name an acceptable example for every part of each checkpoint ("such as").
+   **Rejected:** the house style for success criteria, used the same way on 5.5 and 4.2; the criteria
+   say what success looks like, and the explanation the checkpoint asks for is still the student's.
+2. The pattern and the difference were printed before the tasks that ask for them (First & 10
+   Section 6, lecture card 3, the deep reading's closing cards, slides 18 and 19). **Fixed in part:**
+   the deep reading's closing cards are now evidence to sort, not finished sentences; First & 10
+   question 3 now also asks which reason mattered most and why, which the reading does not answer;
+   lecture card 3 already lines up facts without stating the pattern (pass 1). **Left:** Section 6 is
+   the reading's content (the brief excludes content), and slides 18 and 19 come after the Skill
+   Builder, as the reviewer allows.
+3. The basketball model matched the history link for link (threat, outside expert, training).
+   **Fixed:** a race-training model with no copying or experts, on the lesson and slide 11.
+4. "Feared stronger, better-armed powers" still did not fit Egypt (the sultan was not better armed;
+   Muhammad Ali's motive reads as ambition and emulation). **Fixed:** the shared link is now "armies
+   to match stronger powers" (Egypt: to match armies like Napoleon's and hold Egypt against the
+   sultan; Japan: to answer the Western warships) on every surface.
+5. Who paid for the 1872 railway differed (British loans in the room and notes, the land tax on card
+   3). **Fixed:** card 3 says the land tax and, for the first railway, a British loan.
+6. Slide 12's pin lines did not land on the features they name. **Fixed:** slide 12 is a story scene
+   with the broadsheet beside four steps. The annotated template's overlay offset is an adjacent
+   finding (report).
+7. "An independent country" without the treaties qualifier. **Fixed:** "never conquered or colonized,
+   though forced into unequal treaties" (First & 10, Venn, slide 19).
+8. No Canvas text. **Rejected:** the Canvas events are generated from class dates, and Unit 5 has
+   none; the `OVERVIEWS` text is staged, as on 5.1 to 5.5. Listed for Jeff in the report.
+9. The broadsheet's date differed between slide and lesson. **Fixed:** "dated between 1850 and 1900."
+10. Slide 22's "Europe and no coal closed most" named two causes and was hard to decode; "Both two."
+    **Fixed:** "European pressure, no coal and other problems"; the new model removes "Both two."
+11. Smaller items: (a) conscription defined as workers too; **fixed** (army only). (b) The map
+    question and BeSurreal letter are answered in their own texts; **rejected**: comprehension-level
+    tasks by design. (c) Couder alt text; **fixed** (sash, hand on the sword hilt). (d) Slide 11's note
+    pointed at the wrong slide; **fixed**.
+
+**History reviewer: 10 findings, all supported; all fixed (two had already been fixed by the
+page-truth changes in this pass).**
+
+1. The map's SYRIA label sat far north of Syria. **Fixed:** the label sits beside its ring; the Cairo
+   point is dropped so the label can be placed there (Egypt keeps its own label).
+2. The retelling slide gave Egypt's threat as "Napoleon's army, 1798," anachronistic for a governor
+   from 1805; Fahmy: the army was to "confront any probable attempt by the Sultan to dislodge him."
+   **Fixed:** "Rival: the sultan; model: Napoleon's army."
+3. Slide 19's "no European power took its land or cut its army" (the Yokohama garrison, 1862 to 1875;
+   the Triple Intervention). **Already fixed** in this pass: "Never conquered or colonized, though
+   forced into unequal treaties."
+4. The Perry caption called the pencil date a note "on it" and did not say the picture is half the
+   print. **Fixed:** "the right-hand sheet of a two-sheet print"; "a later pencil note on the back of
+   its mount" (LoC 2002700114).
+5. A slide 6 note said Muhammad Ali arrived "after the French had gone." **Fixed:** he arrived in 1801
+   with the troops sent to drive them out (LoC 21).
+6. "The state built the factories. Japan's lasted" overstated the state's role in Japan's industry
+   (Tang, 2008: little research substantiates the efficacy of public investment; much growth was
+   private). **Fixed:** the wall line is now "Two states built industry. Japan's grew. Egypt's mostly
+   closed."; "the state started key industries; private companies carried them on and built much
+   more"; slide 16's title.
+7. A note credited "founder of modern Egypt" to nationalist history alone. **Fixed:** Dodwell (1931),
+   then Egyptian nationalist historians (Fahmy, note 2).
+8. The headman's "does not have to rise again" implied a past rise (the tax was cut in 1877).
+   **Fixed:** "does not have to rise."
+9. The Couder portrait was dated "about 1840 to 1841." **Fixed:** 1841 (Commons: commissioned 1841;
+   Wikidata Q119839774, inception 1841).
+10. "Its slogan" after the Charter Oath read as part of the Oath. **Fixed:** "The government's slogan"
+    (First & 10, deep reading, room).
+
+### Pass 3, 2026-10-24
+
+Fresh packet after pass 2's fixes; two new reviewers, same split. Both were cut off by the account's
+usage limit partway through and were resumed (not relaunched) when it reset at 19:40 UTC. The full
+browser suite (`--strict`, brand fonts) passed on the pass-2 state: 30 suites, none skipped.
+
+**Page truth reviewer: 9 findings; 6 fixed, 1 fixed in part, 1 rejected, 1 reported as an adjacent
+finding.** CED alignment, ownership and accessibility: no further findings.
+
+1. The pattern is printed in First & 10 Section 6 and projected on slides 18 and 19, and question 3
+   sent students to Section 6. **Fixed in part:** question 3 now asks for a shared link with a detail
+   from each country from Sections 2 to 5, and which reason mattered most. **Left:** Section 6 is the
+   reading's content, and slides 18 and 19 follow the Skill Builder (as in pass 2).
+2. The four links (threat, decision, strategy, result) were not defined or labeled consistently.
+   **Fixed:** the First & 10 callout defines each link; lecture card 3's bullets carry the link names;
+   the retelling slide's Egypt row starts with "Threat."
+3. Captions pre-answered their NOTICE prompts (Iwakura dress, Rats in a Bag, the Takanawa lecture
+   caption). **Fixed:** those clauses are cut; maker, date and holder kept. **Rejected** for BeSurreal:
+   the story gives the facts and the letter asks the student to explain them in her own voice.
+4. The map key answers the map question. **Rejected:** reading the map's key is the skill the module
+   practises.
+5. Lecture card 3's first line said Egypt wanted "to match" the sultan. **Fixed.**
+6. 5.6 said 5.5 taught that technology made countries "far more powerful." **Fixed:** "let industry
+   make far more and reach far farther"; the BeReady prompt matches 5.5.
+7. 5.4's lesson card promises a Russian case in 5.6. **Adjacent finding** (5.4's surface): reported.
+8. The Charter Oath quotation was tied to industry more tightly than Article 5 allows. **Fixed:**
+   "seeking knowledge ... which the Charter Oath said would 'strengthen the foundations of imperial
+   rule'" (First & 10, slide 20); the room card names the slogan for industry.
+9. Checkpoint 2's focus term "independent" is taught nowhere. **Fixed:** "never conquered."
+
+**History reviewer: 4 findings, all supported and fixed.**
+
+1. The 1894 treaty revision was presented as a result of Japan's industrial strength and as evidence
+   of regional power; Columbia ties it to legal reform ("changed its entire legal system ... The
+   Western nations finally agreed to revise the treaties in 1894"), and it was signed on 16 July 1894,
+   before the war with China. **Fixed:** First & 10, lecture card, deep reading, slide 16 (a "Laws"
+   row) and its notes, the synthesis and model-answer notes: Japan rewrote its laws, then Britain agreed
+   to end the foreign courts; the war came weeks later; regional power rests on the war, Taiwan and the
+   indemnity.
+2. "No coal" on four surfaces against "almost no coal" elsewhere. **Fixed:** "almost no coal," "little
+   coal," "too little ___."
+3. "British loans" against "a British loan." **Fixed:** "money raised in Britain" everywhere.
+4. The decree card's alt text dropped the cut, and the card named no source. **Fixed:** the alt text
+   says where the text is cut; the label names the Historical Text Archive's English text.
+
+**Own pass after the fixes:** the slide-template browser test found slide 20's myth row 9px over its
+board in the brand fonts after finding 8 lengthened it. **Fixed:** shorter evidence line; the test
+passes.
+
+### The loop closes
+
+Three full passes in a row found supported defects, so the loop stops on the safety valve. The trend
+was down and to small items: 27 supported findings in pass 1 (a threat link that did not fit Egypt,
+the treaty overclaim, father-to-son succession), 21 in pass 2 (the pattern wording, the spine's claim
+for Japan, the Syria label), 13 in pass 3 (one medium causal claim about the 1894 treaty, the rest
+labels, wording and consistency). No new myth or wrong date after pass 2. Every finding is fixed or
+answered above.

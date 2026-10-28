@@ -949,550 +949,681 @@ module.exports = {
     "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 5.4 Industrialization Spreads",
     "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
-    "readingEyebrow": "AP World History · Unit 5: Revolutions · Topic 5.4",
+    "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
-    "headerSubtitle": "Topic 5.4, Industrialization Spreads &nbsp;|&nbsp; AP World History",
-    "titleHtml": "Beyond <em>Britain</em>",
-    "deck": "How industrialization spread to Europe and America, and why colonialism made sure it did not spread to most of Asia, Africa, and Latin America.",
+    "showFooterNote": false,
+    "headerSubtitle": "Topic 5.4, Industrialization Spreads, 1750 to 1900 &nbsp;|&nbsp; AP World History: Modern",
+    "titleHtml": "Who Made the <em>World's Goods</em>?",
+    "deck": "In 1750 most of the world's goods were made by hand, and most of them in Asia. Then the factory left Britain. This reading follows where it went and what carried it there, and then asks what happened to the places that had made the world's goods before. Two things changed. One thing did not.",
     "skillTags": [
-      "Causation",
-      "Comparison",
-      "Argumentation"
+      "Continuity and Change",
+      "Making Connections"
     ],
     "supportCards": {
-      "beforeYouRead": "Industrialization started in Britain; by 1900 it had spread to Western Europe, the United States, and Japan, but NOT to most of Asia, Africa, or Latin America, which remained structured as raw material suppliers. Keep that pattern in mind as you read.",
-      "readingTarget": "By the end, you should be able to explain how industrialization spread and why colonialism blocked it from spreading everywhere, identifying the specific mechanisms of both spread and prevention."
+      "beforeYouRead": "<strong>The factory traveled. The share moved. The old makers kept making.</strong> As you read, keep two lists. Changes: where goods were made, and how. Continuity: who kept making goods, and how.",
+      "readingTarget": "How did the ways goods were made, and the places they were made, change between 1750 and 1900, and what stayed the same?"
     },
     "vocabulary": [
-      "Meiji Restoration",
-      "Iwakura Mission",
-      "Zaibatsu",
-      "Deindustrialization",
-      "Comparative Advantage",
-      "Dependency",
-      "Raw Material Supplier",
-      "Muhammad Ali",
-      "Treaty of Balta Liman",
-      "Treaty of Nanking",
-      "Lowell",
-      "Transcontinental Railroad",
-      "State-Led Industrialization",
-      "Protectionism",
-      "Uneven Development"
+      "Manufacturing",
+      "Hand Production",
+      "Skilled Workers",
+      "Share",
+      "Steam Power",
+      "Handloom",
+      "Raw Cotton",
+      "Dockyard"
     ],
     "sections": [
       {
         "number": "1",
-        "label": "Contextualization",
-        "heading": "The World That Industrialization Entered",
+        "label": "The Question",
+        "heading": "Who Made the World's Goods in 1750?",
         "blocks": [
           {
             "type": "p",
-            "html": "By the time industrialization began in Britain, the global economy was already structured by European colonial relationships. <span class=\"kt\">Raw materials</span> flowed from colonies to Europe; manufactured goods flowed back. The Americas supplied cotton, sugar, tobacco, and silver; India supplied textiles and spices; Africa supplied enslaved labor. This existing structure shaped where industrialization could take root, and where it could not."
+            "html": "Topic 5.3 ended with a turn. In 1771 Richard Arkwright's mill at Cromford put cotton spinning under one roof, beside one water wheel. That new way of making things did not stay in Britain. This reading follows where it went, and what happened to the places that had made most of the world's goods before."
           },
           {
             "type": "p",
-            "html": "Countries with <span class=\"kt\">political sovereignty</span> could use tariffs, state investment, and deliberate policy to build industrial capacity. Colonial territories could not. This is the most important framework for understanding why industrialization spread unevenly across the globe in the 19th century."
+            "html": "In 1750 almost everything people bought was made by hand, at home or in small workshops. This is <span class=\"kt\">hand production</span>. And most of the world's <span class=\"kt\">manufacturing</span>, the making of goods such as cloth, tools, and pots, happened in Asia. The economic historian Paul Bairoch estimated that around 1750 China made about a third of all the world's manufactured goods, and India about a quarter. All of Europe together made about a quarter. Britain made under 2 percent."
           },
           {
             "type": "p",
-            "html": "The asymmetry was not accidental. European powers had spent centuries constructing legal, financial, and military systems that locked colonial economies into raw material extraction. When steam-powered manufacturing arrived, those structures determined who could harness it and who would be kept out."
+            "html": "India's cotton cloth was sold across Asia, Africa, the Middle East, and Europe, from fine, thin muslins to cheap printed calicoes, cotton cloths painted or printed with colored patterns. Indian shipbuilders built ocean-going ships out of teak, a hard wood that lasts for decades at sea."
+          },
+          {
+            "type": "p",
+            "html": "Bairoch's numbers are estimates. Nobody in 1750 counted every piece of cloth in the world, and historians who use his figures say so. What the estimates show is the size of the change, not exact amounts."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>Industrialization did not spread into a blank world, it spread into a world already organized by colonial relationships. <strong>The pre-existing global division of labor (colonies as raw material suppliers, Europe as manufacturer) was the single most important contextual factor shaping where industrialization could and could not take hold.</strong> Effective contextualization for Topic 5.4 requires connecting the colonial economic structures of c. 1600–1800 to the uneven spread of industrialization after 1800.</p>"
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Two lists.</strong> A continuity-and-change question asks what changed and what stayed the same over a stretch of time. This topic has two changes, <em>where</em> goods were made and <em>how</em>, and one big continuity. Keep a list of each as you read.</p>"
         }
       },
       {
         "number": "2",
-        "label": "Key Concept",
-        "heading": "From Britain to the West: Europe and North America",
+        "label": "How It Spread, Part 1",
+        "heading": "Britain Tried to Keep the Secret",
         "blocks": [
           {
             "type": "p",
-            "html": "<span class=\"kt\">Belgium</span> was the first country to industrialize after Britain, by the 1820s the Liège and Charleroi regions had developed coal, iron, and textile industries with the help of British engineers. France followed, building a more geographically dispersed industrial base through the 1830s–1850s."
+            "html": "Britain's leaders knew the new machines were valuable. British law banned <span class=\"kt\">skilled workers</span>, people trained to build or run the machines, from leaving to work abroad, and it banned sending textile machines out of the country. A port could search a crate, but not a memory."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Germany</span> offers the clearest example of <span class=\"kt\">state-led industrialization</span>. The Prussian state built a dense railroad network in the 1840s–60s, and large-scale industrial banks channeled capital into manufacturing. By 1870 German industrial output was challenging Britain; by 1900 it had surpassed it in key sectors. Deliberate <span class=\"kt\">protectionism</span>, high tariffs on foreign goods, shielded German industry during its formative decades."
+            "html": "Samuel Slater learned the cotton trade as an apprentice at Jedediah Strutt's mill in Derbyshire. Strutt had been Arkwright's partner, and his mills ran Arkwright's machines, so Slater knew them from the inside. In 1789 he sailed for the United States without telling anyone what he knew. In Pawtucket, Rhode Island, working with American merchants, he built water-powered spinning machines from memory. The mill that still stands there was begun in 1793 and enlarged several times afterward."
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">United States</span> combined abundant natural resources, a large immigrant labor force, a vast internal market, and protective tariffs. <span class=\"kt\">Lowell, Massachusetts</span> became the first planned industrial city in the 1820s, built around water-powered textile mills staffed by farm daughters. The <span class=\"kt\">transcontinental railroad</span> (completed 1869) integrated a continental market. By 1900, US industrial output exceeded Britain's."
-          },
-          {
-            "type": "p",
-            "html": "The critical pattern: <strong>Germany and the United States both used protectionist tariffs to shield domestic industry from cheaper British competition</strong>, the same tool that colonized countries were forbidden to use by the terms of unequal treaties and colonial governance."
+            "html": "In Belgium, John Cockerill, the son of an English machine maker, began building machines at Seraing, near Liège, in 1817, and added ironworks there in the 1820s. Liège sat on one of the richest coalfields on the continent of Europe, and it had rivers to carry goods. The pattern from Topic 5.3, coal near water, was waiting there."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Causation",
-          "raw": "<p>Both ideas (policy choices) and structural conditions (natural resources, labor supply) caused industrialization in each region. <strong>Germany had coal and iron, but so did many places. What distinguished Germany was the deliberate state policy to build railroads, protect industries with tariffs, and channel banking capital into manufacturing. The structural conditions were necessary but not sufficient; the policy choices were the differentiating cause.</strong></p>"
+          "label": "AP Thinking, Making Connections",
+          "raw": "<p><strong>Look for the pattern.</strong> A pattern is something that happens again and again across different cases. Slater and Cockerill were different men in different countries. As you read on, ask what they had in common, and what the later cases share with them. You will name that pattern in Question 01.</p>"
         }
       },
       {
         "number": "3",
-        "label": "Key Concept",
-        "heading": "Japan's Deliberate Industrialization: The Meiji Model",
+        "label": "How It Spread, Part 2",
+        "heading": "Then Came the Machines and the Money",
         "blocks": [
           {
             "type": "p",
-            "html": "Japan is the only non-Western country that successfully industrialized in the 19th century, and the reason is <span class=\"kt\">political sovereignty</span>. After Commodore Perry forced Japan open (1853), Japanese elites recognized the threat. The <span class=\"kt\">Meiji Restoration</span> (1868) established a government committed to <em>fukoku kyōhei</em>, \"rich country, strong army.\""
+            "html": "Britain dropped the ban on skilled workers leaving in 1824 and lifted the ban on sending textile machines abroad in 1843. Machines and money carried the methods too. The first steam railway in the German states, from Nuremberg to Fürth in 1835, ran with a locomotive built in England, a machine the textile ban did not cover."
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Iwakura Mission</span> (1871–1873) sent 50 officials to Europe and America to study institutions. They borrowed German military organization, British naval design, American education systems, and French legal codes. Japan did not copy one model, it studied all of them and selected what fit its goals."
+            "html": "On the continent, factories grew where coal lay, as they had in Britain. Belgium and northern France, close to Britain, became part of the industrial northwest of Europe. From there the methods went on to other parts of Europe, such as the Ruhr valley of the German states. In the United States, wealthy Boston merchants paid for big cotton mills at Lowell, Massachusetts, from the 1820s. Most of the workers were young women from New England farms."
           },
           {
             "type": "p",
-            "html": "The government built factories (textiles, glass, cement) and then sold them to private investors, the great <span class=\"kt\">zaibatsu</span> conglomerates (Mitsui, Mitsubishi, Sumitomo). This public-to-private transfer of industrial assets kept the state in the driver's seat while eventually creating powerful private industrial enterprises. By 1895 Japan defeated China in war; by 1905, Russia. Japan had industrialized in one generation."
+            "html": "In Russia and Japan, the big growth came later, mostly after 1870. A Welsh engineer named John Hughes built ironworks in the coal country of the southern Russian Empire, in what is today eastern Ukraine, in the early 1870s; the town that grew up around them was named Yuzovka, after him (today it is the city of Donetsk). In Japan, the Osaka Spinning Company opened in 1883 with cotton-spinning machines made in Britain, driven by <span class=\"kt\">steam power</span>, and it ran day and night. The Japanese government also pushed industry on purpose; that is Topic 5.6."
+          },
+          {
+            "type": "p",
+            "html": "So, by 1900 the new methods had spread from northwestern Europe to other parts of Europe, to the United States, to Russia, and to Japan."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Comparison",
-          "raw": "<p>Japan's state-led model resembles Germany's (both used government direction, protective tariffs, and deliberate investment) more than Britain's (which industrialized through private enterprise with minimal state direction). <strong>The most important comparison, however, is between Japan and India: both had sophisticated pre-industrial craft economies; both were exposed to British industrial competition; but Japan had sovereignty to respond with tariffs and state investment, while India, under British colonial rule, did not.</strong> Political sovereignty is the decisive variable.</p>"
+          "label": "AP Thinking, Making Connections",
+          "raw": "<p><strong>What did a factory need to start somewhere new?</strong> Think back to Topic 5.3: Britain's factories needed coal, iron, water, and money. As you read each case here, ask two questions: what carried the new methods to this place, and what was waiting for them when they arrived?</p>"
         }
       },
       {
         "number": "4",
-        "label": "Key Concept",
-        "heading": "Why Colonialism Blocked Industrialization: India, Egypt, and Latin America",
+        "label": "What Changed",
+        "heading": "The World's Shares Move",
         "blocks": [
           {
             "type": "p",
-            "html": "India had the most sophisticated textile industry in the world in the early 18th century, <span class=\"kt\">Dacca muslin</span> was finer than anything produced in Britain. British colonial policy systematically destroyed it: import tariffs protected British goods inside India; Indian goods faced tariffs in Britain. By mid-century, India was importing British machine-made cloth and exporting raw cotton. This was not market competition, it was engineered <span class=\"kt\">deindustrialization</span>."
+            "html": "A steam-powered factory could make cloth far faster than hands could, and far more cheaply. As factories spread, the places that had them made more and more of the world's goods."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Muhammad Ali</span> (Egypt, 1805–1848) attempted state-led industrialization, textile mills, iron foundries, a modern army. The British forced him to sign the <span class=\"kt\">Treaty of Balta Liman</span> (1838), abolishing Egypt's protective tariffs and opening Egypt to British manufactured goods. His factories could not survive the competition and collapsed. Egypt was restructured as a cotton exporter, a raw material supplier, not a manufacturer."
+            "html": "A <span class=\"kt\">share</span> is a part of a whole. Bairoch's estimates show the shares moving. Britain's share of the world's manufacturing went from under 2 percent in 1750 to about a fifth by 1860. By 1900 Europe and the United States together made more than four-fifths of the world's manufactured goods, and the United States had passed Britain as the largest maker of all."
           },
           {
             "type": "p",
-            "html": "China was forced to accept similar terms after the <span class=\"kt\">Treaty of Nanking</span> (1842), which opened Chinese ports, capped tariffs at 5%, and gave Britain extraterritorial rights. China's ability to protect emerging industries with tariffs was legally eliminated by treaty."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Latin America</span>: even after independence from Spain and Portugal, most of Latin America remained structured as raw material exporters, silver, copper, guano, rubber, coffee, sugar, with European capital controlling railroads, mines, and ports. Political independence from colonialism did not automatically produce economic independence from the global division of labor built during the colonial era."
+            "html": "Meanwhile, China's share fell from about a third in 1750 to about 6 percent in 1900. India's fell from about a quarter to under 2 percent."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Was deindustrialization the result of market forces (<span class=\"kt\">comparative advantage</span>, India simply couldn't compete with British machines) or of deliberate colonial policy? <strong>How you answer determines your causal argument. The market-forces argument says Indian textiles were outcompeted; the colonial-policy argument says British tariffs, forced treaties, and legal prohibitions rigged the competition. The evidence of Egypt (where industrialization was actively blocked by a forced treaty) and India (where asymmetric tariffs were explicitly colonial policy) strongly supports the deliberate-policy argument.</strong> Your thesis in a DBQ or SAQ should take a clear position on which cause was primary.</p>"
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>A share is not the same as an amount.</strong> Imagine a pizza that gets much bigger. Your slice can stay the same size while your share of the pizza shrinks. The world was making far more goods in 1900 than in 1750. So a falling share does not, by itself, mean a region made less. For India, though, Bairoch's estimates suggest it also made less per person over time: it lost ground, not only share.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "What Continued",
+        "heading": "The Old Makers Kept Making",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "The falling shares do not mean that Asia and the Middle East stopped working. They kept making goods, much of it by hand. India even built its own steam-powered cotton mills: the first in Bombay was founded in 1854 and began spinning in 1856."
+          },
+          {
+            "type": "p",
+            "html": "In India, hand weaving shrank, but it did not die. Weavers kept working cloth on <span class=\"kt\">handloom</span>s, looms worked by hand and foot, and many switched to cheaper machine-spun thread so they could keep weaving. In 1908, in just one province of northern India, about a million people still lived from handloom weaving. In China, farm families kept weaving cloth at home, more and more of it from cheaper machine-made thread. In the Ottoman Empire, the number of handlooms in the Syrian cities of Aleppo and Damascus held steady from 1860 to 1914."
+          },
+          {
+            "type": "p",
+            "html": "Indian shipbuilders kept building, too. At the Bombay <span class=\"kt\">dockyard</span>, the shipyard of the city now called Mumbai, the Wadia family of master shipbuilders built teak warships for Britain's own Royal Navy. One of them, HMS Trincomalee, launched in 1817, is still afloat today in Hartlepool, England, where its museum calls it Britain's oldest warship still afloat."
+          },
+          {
+            "type": "p",
+            "html": "The old makers kept making, but their share of the world's goods shrank. One reason is that the rest of the world's production grew much faster. Another is that the old makers lost buyers, even at home, as the next section shows."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Name the continuity.</strong> The College Board says Middle Eastern and Asian countries \"continued to produce manufactured goods\" while their share \"declined.\" A strong answer says both halves: what continued, and what changed.</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "Why It Changed",
+        "heading": "Why the Old Makers' Share Fell",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Cloth from the machines of Lancashire, the cotton-mill region of northwest England, was cheaper than cloth woven by hand, even in India itself. In 1815 India sold about £1.3 million worth of cotton cloth abroad and bought only about £26,000 worth from England. By 1832 it sold less than £100,000 worth and bought more than £400,000 worth. From about 1830, India bought more cotton cloth than it sold. India, which had sold cloth to the world, now bought British cloth, and it sold <span class=\"kt\">raw cotton</span>, cotton not yet spun or woven, to British mills."
+          },
+          {
+            "type": "p",
+            "html": "Power mattered too. Much of India was ruled by the British East India Company, and British cotton cloth entered India at a tax of only 2½ percent. Earlier, Britain had taxed Indian cloth heavily: around 1813, Indian calicoes paid taxes of about 70 to 85 percent of their value to be sold in Britain. Historians still argue about how much each cause mattered: cheaper machine-made goods, the trade rules of the people in power, and, in India, troubles that had begun before the factories did, such as the breakup of the Mughal Empire and years of drought."
+          },
+          {
+            "type": "p",
+            "html": "Shipbuilding followed the same path. Bombay's teak ships were among the best wooden ships of their day. But by the middle of the 1800s navies were turning to ships of iron, driven by steam, and they came mostly from British shipyards and engine works. Bombay's age of teak warships came to an end."
+          },
+          {
+            "type": "p",
+            "html": "So, how did the ways and places goods were made change between 1750 and 1900? The way goods were made changed from hand work to steam-powered factories, and the places changed with it: factory methods spread from Britain to other parts of Europe, the United States, Russia, and Japan, carried by people, machines, and money, and the share of the world's goods made in Europe and the United States rose. What continued was production in India, China, and the Middle East, much of it by hand, which kept making goods, but a shrinking share of them."
+          },
+          {
+            "type": "p",
+            "html": "Factories needed coal, and steam engines turned that coal into power on a scale nobody had seen before. How did the machines themselves change the world? That is Topic 5.5."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Three myths to drop.</strong> \"Asia stopped making things\": it kept making them, but its share fell. \"Industry spread everywhere\": it spread to a few regions, mostly ones with coal or rivers strong enough to turn water wheels. \"India fell behind only because British machines were better\": the machines mattered, but so did the trade rules made by the people in power, and historians still argue how much.</p>"
         }
       }
     ],
-    "takeaway": "Industrialization spread from Britain to Belgium, France, and Germany by the 1840s–60s, and to the United States (which surpassed Britain by 1900) and Japan (after the Meiji Restoration of 1868). The countries that successfully industrialized in the 19th century, Germany, the US, Japan, shared one critical feature: <strong>political sovereignty</strong>, which allowed them to use protective tariffs and state investment to build industrial capacity. The countries that did NOT industrialize, India, Egypt, most of Latin America, shared a different feature: colonial relationships that structured their economies as raw material suppliers and consumers of European manufactured goods. India's sophisticated textile industry was systematically deindustrialized by British colonial policy. Egypt's early industrialization was blocked by a treaty Britain forced on it. China's tariff sovereignty was eliminated by treaty after 1842. This is the most important pattern in 19th-century economic history: industrialization and deindustrialization were two sides of the same global process, and political sovereignty was the pivot between them.",
+    "takeaway": "In 1750 most of the world's goods were made by hand, and most of them in Asia: Paul Bairoch estimated that China made about a third of the world's manufactured goods and India about a quarter, while Britain made under 2 percent. Then factory methods spread from Britain, first carried by skilled people such as Samuel Slater, who built spinning machines from memory in Rhode Island, and John Cockerill, who opened works at Seraing in Belgium in 1817, and later by machines and money. By 1900 they had reached other parts of Europe, the United States, Russia, and Japan, and Europe and the United States made more than four-fifths of the world's manufactured goods. India's and China's shares fell to a few percent. But the old makers kept making: Indian hand weaving shrank but survived, with about a million people living from it in one province alone in 1908, and Bombay's shipbuilders built teak warships for the Royal Navy. Cheaper machine-made goods and the trade rules of the people in power, among other causes, shrank their share. The factory traveled. The share moved. The old makers kept making.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
-        "num": "1",
-        "skill": "Causation",
-        "text": "Explain why Japan was able to industrialize successfully in the 19th century while India could not. Identify at least two specific factors that explain the difference, and make sure your explanation addresses why having coal and cotton wasn't enough for India.",
-        "placeholder": "Identify at least two specific factors and explain why resources alone weren't sufficient for India..."
+        "num": "01",
+        "skill": "Making Connections",
+        "text": "Choose TWO places from Sections 2 and 3 that the new factory methods reached. For each one, name what carried the methods there: people, machines, or money. Then say the pattern you see in one sentence.",
+        "placeholder": "The first place is... The methods were carried there by... The second place is... The pattern is..."
       },
       {
-        "num": "2",
-        "skill": "Comparison",
-        "text": "Compare the German/Japanese state-led industrialization model to the British/American private-enterprise model. Identify one meaningful similarity and one meaningful difference. Then explain: which model produced faster industrialization, and what did each model sacrifice to achieve its results?",
-        "placeholder": "Identify a similarity and a difference, then evaluate which model was faster and what each sacrificed..."
+        "num": "02",
+        "skill": "Continuity and Change",
+        "text": "Using Section 4, explain how the world's share of manufacturing changed between 1750 and 1900. Use two numbers from the reading, and say what a \"share\" means.",
+        "placeholder": "In 1750... By 1900... A share means..."
       },
       {
-        "num": "3",
-        "skill": "Argumentation",
-        "text": "Write a one-sentence thesis answering this question: Was the failure of most of Asia, Africa, and Latin America to industrialize in the 19th century primarily the result of natural disadvantages (lack of coal, capital, or skilled labor) OR primarily the result of deliberate colonial policy? Then provide one specific piece of evidence that supports your thesis.",
-        "placeholder": "State your one-sentence thesis, then provide one specific piece of supporting evidence..."
+        "num": "03",
+        "skill": "Continuity and Change",
+        "text": "Using Sections 5 and 6, explain ONE thing that continued in India and ONE thing that changed. Give a detail from the reading for each.",
+        "placeholder": "One thing that continued was... One thing that changed was..."
       }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 5.4, Industrialization Spreads",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true
   },
   "5.5": {
     "topicKey": "5.5",
-    "topicLabel": "5.5 - Technology of Industrialization",
+    "topicLabel": "5.5 - Technology of the Industrial Age",
     "sourceFile": "first-and-10-topic-5-5-technology-of-industrialization.html",
     "unitDir": "unit-5",
-    "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 5.5 Technology of Industrialization",
+    "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 5.5 Technology of the Industrial Age",
     "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
-    "readingEyebrow": "AP World History · Unit 5: Revolutions · Topic 5.5",
+    "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
-    "headerSubtitle": "Topic 5.5, Technology of Industrialization &nbsp;|&nbsp; AP World History",
-    "titleHtml": "The <em>Iron</em> Road",
-    "deck": "How railroads, telegraphs, and industrial processes shrank the world, and what the cost was for the people and environments they transformed",
+    "showFooterNote": false,
+    "headerSubtitle": "Topic 5.5, Technology of the Industrial Age, 1750 to 1900 &nbsp;|&nbsp; AP World History: Modern",
+    "titleHtml": "More Power, <em>Longer Reach</em>",
+    "deck": "In 1750 almost all the energy used in the world came from muscles, wood, wind, and water. By 1900 about half of it came from coal. This reading follows how machines unlocked that buried energy, what new things it let people make, and how railroads, steamships, and the telegraph carried goods, people, and news farther than ever before. Each step caused the next.",
     "skillTags": [
       "Causation",
-      "Comparison",
-      "Argumentation"
+      "Developments and Processes"
     ],
     "supportCards": {
-      "beforeYouRead": "Industrialization was powered by specific technologies, steam engines, railroads, telegraphs, steel-making processes, that transformed how goods moved, how people communicated, and how resources were extracted. By 1900 these technologies had connected the world in new ways while simultaneously creating new forms of environmental destruction and labor exploitation.",
-      "readingTarget": "Explain how railroads and other industrial technologies transformed economies and societies; evaluate the environmental and social consequences of industrial technology."
+      "beforeYouRead": "<strong>More power. New methods. Longer reach.</strong> As you read, build a chain. Each link is a cause that made the next link possible. Watch for the words \"so,\" \"let,\" and \"made it possible.\"",
+      "readingTarget": "How did technology change how much the world could make, and how far its goods and people could go, between 1750 and 1900?"
     },
     "vocabulary": [
-      "steam locomotive",
-      "railroad",
-      "Stephenson's Rocket",
-      "transcontinental railroad",
-      "Trans-Siberian Railroad",
-      "telegraph",
-      "Morse code",
-      "Bessemer process",
-      "steel",
-      "electricity",
-      "deforestation",
-      "resource extraction",
-      "rubber",
-      "guano",
-      "industrial pollution"
+      "Fossil Fuel",
+      "Steam Engine",
+      "Internal Combustion Engine",
+      "Second Industrial Revolution",
+      "Steel",
+      "Interchangeable Parts",
+      "Telegraph",
+      "Migration"
     ],
     "sections": [
       {
         "number": "1",
-        "label": "Contextualization",
-        "heading": "The World Before Railroads",
+        "label": "The Question",
+        "heading": "Where Did Energy Come From in 1750?",
         "blocks": [
           {
             "type": "p",
-            "html": "To understand why railroads were genuinely revolutionary, you need to understand the constraints they shattered. Before railroads, goods moved by canal and river; people moved by horse and coach. These methods were slow, limited in range, and expensive. A journey from London to Edinburgh took ten days by coach in 1800. By 1850, it took nine hours by rail. That compression of distance and time was not a marginal improvement, it was a transformation of the relationship between geography and human activity."
+            "html": "Topic 5.3 ended at a mill driven by water. Richard Arkwright's mill at Cromford ran on a water wheel, and coal, in 1700, was mostly something people burned to keep warm. Topic 5.4 followed the factory as it spread. This reading asks a different question: how did the machines themselves change what the world could make?"
           },
           {
             "type": "p",
-            "html": "The fundamental constraint of the pre-railroad world was the cost of moving <span class=\"kt\">bulk goods</span> overland. Coal, iron, and grain were extremely expensive to transport on roads or by animal power. This limited where factories could be located and what markets they could reach. Industries clustered near rivers and canals precisely because water transport was the only economically viable way to move heavy materials. A factory even twenty miles from navigable water faced severe competitive disadvantages."
+            "html": "In 1750 almost all the energy used in the world came from things that grow. Food gave energy to the muscles of people and animals. Wood gave fire for heat and cooking. Wind moved ships and turned some mills, and rivers turned water wheels. Every one of these had a limit. A water wheel works only where a stream flows strongly. A forest takes decades to grow back. A horse gets tired. Until about 1900, wood and other things that grow were still the world's largest source of energy."
           },
           {
             "type": "p",
-            "html": "Pre-railroad <span class=\"kt\">communication</span> was equally constrained. News traveled at the speed of a horse. A battle fought in Europe would not be known in the Americas for weeks. Financial decisions were made on information that was days or weeks old. Coordinating complex industrial systems across distances, scheduling deliveries, managing supply chains, synchronizing production, was nearly impossible. The pre-railroad world was, in a fundamental sense, a world of local and regional rather than national or global economics."
-          }
-        ],
-        "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>Contextualization requires explaining what the world looked like <strong>before</strong> the change, so that the significance of the change can be measured. Without understanding pre-railroad transportation, the ten-day coach journey, the prohibitive cost of moving bulk goods overland, the weeks-long lag in communication, it is impossible to understand why railroads were revolutionary rather than merely useful. The contrast is the argument.</p>"
-        }
-      },
-      {
-        "number": "2",
-        "label": "Key Concept",
-        "heading": "Railroads: The Technology That Changed Everything",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Stephenson's Rocket</span> (1829) won the Rainhill Trials for the Liverpool and Manchester Railway, the first public steam railway. The Rocket achieved 29 mph, roughly five times faster than a horse-drawn vehicle. Within twenty years, Britain had 6,000 miles of rail. The speed of railroad adoption was itself an indication of how fundamental the transformation was: no technology spreads this fast unless it is solving a deeply felt problem."
-          },
-          {
-            "type": "p",
-            "html": "Railroads achieved <span class=\"kt\">national market integration</span> by making cheap bulk transportation possible for the first time. A factory in Birmingham could now sell to customers in Edinburgh, Cardiff, and London at similar prices. Regional price differences, which had insulated local producers from competition, collapsed. This integrated national markets and allowed industrial production to scale up dramatically, because producers could now reach customers across an entire country rather than just a local region."
-          },
-          {
-            "type": "p",
-            "html": "Railroad construction also created a self-reinforcing industrial cycle. Every mile of track required <span class=\"kt\">steel rails</span>, iron spikes, and wooden ties. Every locomotive required coal and steel components. Railroad construction thus generated enormous demand for the very industries, steel, coal, that railroads then helped expand. More steel meant more railroads; more railroads meant more demand for steel. This virtuous cycle drove much of the second wave of industrialization after 1850."
-          },
-          {
-            "type": "p",
-            "html": "Railroads also had profound <span class=\"kt\">military implications</span>. The Prussian military's victories over Austria (1866) and France (1870–71) were largely determined by its ability to mobilize troops faster via railroad. After 1870, every major power built railroads partly as military infrastructure. The <span class=\"kt\">Trans-Siberian Railroad</span> (1891–1916, 5,772 miles) was explicitly built to project Russian military and economic power into Asia, a clear demonstration that industrial technology and imperial ambition were inseparable."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Colonial railroads</span> reveal the darker side of railroad expansion. In India and Africa, colonial powers built railroads primarily to move raw materials, cotton, coal, minerals, from the interior to ports, and to move troops rapidly to suppress resistance. Indian railroads served British economic interests more than Indian development; most of the revenues they generated left India. The railroad network's shape told the story: lines ran from mines and plantations to ports, not between Indian cities or agricultural regions."
+            "html": "But there was energy buried underground. Coal and oil are each a <span class=\"kt\">fossil fuel</span>: the remains of plants and tiny sea creatures, buried for millions of years, with energy stored inside them. Britain was already the exception: it burned so much coal for heat that, by 1700, coal gave England about half of its energy (Topic 5.3). The trick was to turn that heat into motion."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p>Explaining how railroads accelerated industrialization requires tracing the mechanism, not just \"railroads helped industry\" but specifically: <strong>railroads reduced transportation costs → factories could reach national markets → production scale increased → demand for steel and coal increased → mining and steel production expanded → more railroads could be built.</strong> Each step in the causal chain must be explained. A general statement without the mechanism is not a complete causation argument.</p>"
+          "raw": "<p><strong>Build a chain.</strong> A causation question asks what made something happen. This topic is a chain of causes: a machine made something possible, and that made the next thing possible. Start your chain here, with the problem: before 1750, energy was limited to what grows, blows, and flows.</p>"
+        }
+      },
+      {
+        "number": "2",
+        "label": "Power, Part 1",
+        "heading": "A Pump, Then an Engine That Turns Wheels",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "The first useful <span class=\"kt\">steam engine</span>s were pumps. In 1712 Thomas Newcomen set up a steam engine near Dudley Castle, in the English Midlands, to pump water out of a coal mine. Burning coal boiled water into steam, and the steam helped move a heavy beam up and down. It worked, but it burned a great deal of coal, because its cylinder was cooled and heated again on every stroke."
+          },
+          {
+            "type": "p",
+            "html": "James Watt, an instrument maker at the University of Glasgow, found the fix in 1765: cool the steam in a separate chamber, so the cylinder stays hot. He patented the idea in 1769. Watt's engines used less than a third of the coal of a Newcomen engine."
+          },
+          {
+            "type": "p",
+            "html": "Then came the change that mattered most for factories. In the 1780s Watt and his business partner, Matthew Boulton, built engines that turned a wheel, so an engine could drive machines. A mill no longer had to sit beside a fast river. It could run on coal, wherever coal could be brought, and cotton mills crowded into towns such as Manchester."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Developments and Processes",
+          "raw": "<p><strong>Explain a process step by step.</strong> To explain how a technology changed production, say four things: what the problem was, what the new machine did, what that made possible, and what followed. Try it on Watt's engine before you read on.</p>"
         }
       },
       {
         "number": "3",
-        "label": "Key Concept",
-        "heading": "Beyond Railroads: Telegraph, Steel, and Electricity",
+        "label": "Power, Part 2",
+        "heading": "More Coal, Then Oil",
         "blocks": [
           {
             "type": "p",
-            "html": "The <span class=\"kt\">telegraph</span>, patented in 1837 by Cooke and Wheatstone in Britain and commercialized in 1844 by Morse in the United States, enabled near-instant communication across vast distances. Its first commercial use was railroad scheduling: single-track lines needed telegraphed coordination to prevent collisions. But the telegraph rapidly transformed financial markets, enabling stock prices and commodity prices to be transmitted instantly between cities and integrating national financial markets into a single system. News agencies, Reuters and the Associated Press, were both built on telegraph access, because whoever controlled telegraph lines controlled the speed of information. The <span class=\"kt\">transatlantic telegraph cable</span> (1866) connected the United States and Britain in near-real-time for the first time, completing the integration of the Atlantic economy."
+            "html": "Steam engines needed coal, and coal mines needed steam engines to pump them dry, so each made the other grow. Britain mined about 65 million tons of coal in 1854 and about 225 million tons in 1900. By about 1900, coal supplied about half of all the energy used in the whole world, nearly as much as wood and other things that grow. Historians call this the fossil fuels revolution: machines let people use energy that had been stored for millions of years, far more than muscles, wood, wind, and water could give."
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Bessemer Process</span> (1856) was perhaps the single most important technological breakthrough of the second industrial revolution. Henry Bessemer discovered that blowing air through molten pig iron removed impurities and produced steel in minutes rather than days. This reduced the cost of steel by approximately 80% between 1860 and 1900. Cheap steel made everything that followed possible: steel bridges, steel-framed skyscrapers, steel ships, steel rails. Without cheap Bessemer steel, the railroad expansion of the late 19th century would have been physically impossible, wrought iron rails wore out too quickly for high-traffic lines."
+            "html": "Oil came next. In 1859 Edwin Drake drilled a well at Titusville, Pennsylvania, and struck oil. For the rest of the 1800s, most oil was turned into kerosene, a fuel for lamps."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Electricity</span> reshaped production and urban life by the end of the 19th century. Thomas Edison's incandescent light bulb (1879) and Pearl Street power station (1882, New York City) launched the electrical era. By 1900, electricity was powering factories, lighting city streets, and running urban transit on electric streetcar lines. Nikola Tesla's alternating current (AC) system allowed electricity to be transmitted over long distances, making regional and eventually national electrical power grids possible, and freeing factories from their dependence on proximity to rivers or steam engines."
+            "html": "A new kind of engine would later make oil far more important. An <span class=\"kt\">internal combustion engine</span> burns its fuel inside the engine itself, instead of boiling water in a separate boiler. In 1876 Nikolaus Otto built a four-stroke gas engine in Germany, and in 1886 Carl Benz patented a car driven by a small engine that burned a fuel made from oil. But in 1900 the United States had only about 8,000 cars. The internal combustion engine's big changes, to cars, trucks, tractors, and airplanes, came after 1900."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Comparison",
-          "raw": "<p>Comparing the telegraph and the railroad reveals an important pattern, both technologies destroyed the constraint of distance, but in different ways. <strong>Railroads destroyed the constraint of distance for physical goods and people; the telegraph destroyed it for information.</strong> Together, they created an integrated global economy in which commodities could be shipped across continents and their prices known instantly worldwide. A meaningful difference: railroads required enormous capital investment and produced physical infrastructure visible across landscapes; telegraphs required much smaller investment and produced invisible infrastructure, information networks, that was just as transformative but far less visible.</p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Effects can come late.</strong> A cause does not always work right away. Watt's engine took decades to spread, and the internal combustion engine changed the world mostly after 1900. When you explain a cause, say when its effects came.</p>"
         }
       },
       {
         "number": "4",
-        "label": "Key Concept",
-        "heading": "The Environmental and Social Costs of Industrial Technology",
+        "label": "New Methods",
+        "heading": "The Second Industrial Revolution",
         "blocks": [
           {
             "type": "p",
-            "html": "Industrial cities were blanketed in <span class=\"kt\">coal pollution</span>. London's \"pea soup\" fogs combined natural fog with coal smoke and sulfur dioxide; they reduced visibility to near-zero and caused severe respiratory disease. Coal mining was dangerous at industrial scale: roof collapses, gas explosions, and flooding killed thousands of miners per year. By the late 19th century, rivers near industrial cities ran toxic with industrial effluent from dye works, tanneries, and chemical plants. The environmental destruction of industrial cities was not an unintended side effect, it was a direct consequence of industrial production's dependence on coal."
+            "html": "After 1850, with so much energy to use, people found new ways to make things. Historians call this the <span class=\"kt\">second industrial revolution</span>. It brought new methods in four areas."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Deforestation</span> followed railroad construction across the globe. Every mile of track required enormous quantities of timber for railroad ties (sleepers). The expansion of railroads into previously forested regions, the American West, Siberia, sub-Saharan Africa, drove rapid deforestation. Steam-powered sawmills could fell and process timber at industrial scale for the first time, making it possible to clear forests faster than they could regenerate."
+            "html": "<strong>Steel.</strong> <span class=\"kt\">Steel</span> is iron with a small, carefully measured amount of carbon. It is stronger and tougher than ordinary iron, but it was slow and costly to make. In 1856 Henry Bessemer showed that blowing air through melted iron burned out the impurities and made steel quickly. The United States made about 69,000 tons of steel in 1870 and about 10 million tons in 1900. Britain went from about 215,000 tons to about 4.9 million. Steel became rails, bridges, ships, and machines."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Resource extraction</span> from colonized regions reveals how industrial technology's environmental consequences were often exported. <span class=\"kt\">Guano</span>, seabird droppings used as fertilizer and essential to industrial agriculture, was extracted from Peru's Chincha Islands using indentured Chinese and Peruvian workers in brutal conditions. <span class=\"kt\">Rubber</span>, essential for industrial machinery belts, telegraph cable insulation, and eventually automobile tires, was extracted from the Amazon basin under debt peonage and from the Congo Free State under King Leopold II using forced labor enforced by systematic violence. Industrial technology demanded raw materials from across the colonized world; the people who provided those materials paid in freedom, health, and lives."
+            "html": "<strong>Chemicals.</strong> In 1856 an eighteen-year-old London chemistry student, William Perkin, made a purple dye, mauve, from chemicals that came from coal tar, a sticky leftover of coal. German chemical companies such as BASF, founded in 1865, built laboratories to invent new dyes, and in 1897 BASF began selling indigo blue made in a factory instead of from a plant. By 1914 Germany made most of the world's dyes."
           },
           {
             "type": "p",
-            "html": "Industrial technology also created new <span class=\"kt\">social roles</span>. Engineers, technicians, and scientists became respected professional classes as industrial systems grew more complex. The railroad system required surveyors, civil engineers, mechanical engineers, telegraph operators, and station managers, a new middle-class occupational identity distinct from both factory owners and factory workers. These technical professions carried social prestige precisely because they represented the application of scientific knowledge to industrial problems, which was increasingly understood as the engine of national progress."
+            "html": "<strong>Electricity.</strong> In 1882 Thomas Edison's Pearl Street Station in New York began selling electric power to light about 400 lamps. Electric motors would let each machine run on its own motor, instead of on a belt from one big steam engine. But this change was slow: in 1899, electric motors gave less than 5 percent of the power in American factories."
+          },
+          {
+            "type": "p",
+            "html": "<strong>Precision machinery.</strong> Machine tools had begun to cut metal parts so exactly that one part fit any copy of the same machine, and after 1850 the method spread widely. These are <span class=\"kt\">interchangeable parts</span>. Standard screw threads helped: Joseph Whitworth set one early, in Britain in 1841, and William Sellers set one in the United States in 1864. They helped machines with interchangeable parts, from typewriters to locomotives, spread."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Was industrial technology primarily a liberating force or a destructive one? A strong argumentation claim requires taking a position and defending it with specific evidence. <strong>Strong arguments acknowledge the other side: you can argue that railroads were primarily liberating, national market integration, faster travel, cheaper goods, while acknowledging that rubber extraction in the Congo was primarily destructive. Then explain why one outweighs the other, or why the answer depends on whose experience you center.</strong> Technology did not have uniform effects; its costs and benefits were distributed very unequally across class, geography, and colonial status.</p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Name the link.</strong> How does the second industrial revolution connect to Section 3? Coal ran the furnaces that made steel, and coal tar gave the first synthetic dyes to sell well. As you read on, ask what the railroads in Section 5 were made of.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "Longer Reach",
+        "heading": "Railroads, Steamships, and the Telegraph Reach the Interior",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Energy and steel built the machines that moved things. Before them, heavy goods moved cheaply only by water. Places far from a river or the sea, the interiors of continents, were hard to reach."
+          },
+          {
+            "type": "p",
+            "html": "<strong>Railroads.</strong> The Liverpool and Manchester Railway, opened in England in 1830, was the world's first railway between two cities, with trains pulled by steam locomotives. Railways then spread fast. Russia had 27 kilometers of railway in 1840 and more than 53,000 in 1900. India's first passenger train ran from Bombay to Thane in 1853. In 1869 the first railroad across the United States was finished at Promontory Summit, Utah. Russia began the Trans-Siberian Railway in 1891, and by 1904 trains could cross to the Pacific Ocean. A railroad could reach farms, mines, and towns in the middle of a continent, where no river or canal went."
+          },
+          {
+            "type": "p",
+            "html": "<strong>Steamships.</strong> Under sail, emigrants from Norway took about 53 days on average for the whole trip to America. By steamship, the Atlantic crossing from England took about 12 days in the 1860s, and the fastest ships of the 1870s crossed in about 7 or 8 days. The Suez Canal, opened in Egypt in 1869, was of little use to sailing ships, because the winds of the Red Sea were hard to sail against, so it mostly served steamships. Steamboats also pushed up rivers into the interior of continents. In 1854 the steamer Pleiad went far up the Niger and Benue rivers in West Africa, and none of its crew died, because they took quinine, a medicine against malaria. What European empires did with this reach is Unit 6."
+          },
+          {
+            "type": "p",
+            "html": "<strong>The telegraph.</strong> A <span class=\"kt\">telegraph</span> sends messages as pulses of electricity along a wire. In 1844 Samuel Morse sent the message \"What hath God wrought?\" from Washington to Baltimore. Before, a message traveled only as fast as a horse or a ship. Now it could travel along a wire in minutes. From 1866, cables under the Atlantic carried messages without a lasting break, and in 1870 another undersea cable, through the Red Sea, reached Bombay, in India."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Developments and Processes",
+          "raw": "<p><strong>Three ways to reach.</strong> Railroads carried goods and people over land. Steamships carried them over oceans and up rivers. The telegraph carried news. For each one, ask: what could people now do that they could not do before?</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "The Effects",
+        "heading": "More Trade, More Migration",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Cheaper, faster transport and fast news joined distant markets. In 1870 wheat cost 57.6 percent more in Liverpool, England, than in Chicago. By 1913 the gap was only 15.6 percent. Wheat grown in the middle of North America, carried by train to the coast and by steamship across the ocean, fed workers in Britain."
+          },
+          {
+            "type": "p",
+            "html": "Trains and ships carried people, too. <span class=\"kt\">Migration</span> means people moving to live in a new place. About 55 million Europeans moved to the Americas and Australia between 1850 and 1914. Between 1846 and 1940, more than 29 million Indians and more than 19 million Chinese moved to Southeast Asia and the lands around the Indian Ocean, and tens of millions of Chinese and Russians moved into Manchuria, Siberia, and Central Asia. Steamships and railways made these journeys faster and cheaper. Why people moved, and what they found, is Unit 6."
+          },
+          {
+            "type": "p",
+            "html": "So, how did technology shape economic production between 1750 and 1900? Machines such as the steam engine, and later the internal combustion engine, let people use the energy stored in coal and oil, which greatly increased the energy available. That energy, and new methods for making steel, chemicals, electricity, and precise machines after 1850, let factories make far more goods, and new kinds of goods. Railroads, steamships, and the telegraph, built of that steel and driven by that coal, carried goods, people, and news into the interiors of continents, which led to more trade and more migration."
+          },
+          {
+            "type": "p",
+            "html": "A few governments did not wait for these machines to arrive on their own. They decided to build industry themselves. That is Topic 5.6."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Three myths to drop.</strong> \"Watt invented the steam engine\": Newcomen's engines were pumping mines from 1712, more than fifty years before Watt's patent; Watt made the engine use far less coal and turn wheels. \"One invention changed everything\": each technology needed the others; railroads needed steam, coal, and then steel. \"By 1900 the world ran on electricity and cars\": electric motors gave under 5 percent of American factory power in 1899, and the United States had about 8,000 cars in 1900. Some of the biggest effects came later.</p>"
         }
       }
     ],
-    "takeaway": "Industrial technology transformed the world in the 19th century through two defining technologies, the <strong>railroad</strong> and the <strong>telegraph</strong>, and two defining processes, the <strong>Bessemer steel process</strong> and <strong>electrical power</strong>. Railroads integrated national markets, created military-strategic infrastructure, and generated self-reinforcing industrial demand; but colonial railroads extracted raw materials without building local economies. The telegraph enabled near-instant global communication and integrated financial markets. Cheap Bessemer steel made the second industrial revolution possible. Electricity was beginning to reshape factory production and urban life by 1900. But industrial technology also produced coal pollution that poisoned industrial cities, deforestation that cleared colonial forests for railroad ties, and brutal resource extraction systems, rubber in the Congo and Amazon, guano in Peru, that exploited colonized labor for industrial inputs. Technology's costs and benefits were very unequally distributed: the benefits went primarily to industrial consumers in wealthy countries; the costs fell primarily on workers in mines and factories and on colonized peoples who provided raw materials.",
+    "takeaway": "In 1750 almost all the energy used in the world came from muscles, wood, wind, and water. Then machines unlocked the energy stored in fossil fuels. Newcomen's steam engine of 1712 pumped water out of a coal mine; Watt's engines used far less coal, and from the 1780s they turned wheels, so factories could run on coal instead of rivers. Britain's coal output rose to about 225 million tons by 1900, when coal supplied about half the world's energy. Oil came next, at first as lamp fuel, and the internal combustion engine's big changes came after 1900. After 1850 a second industrial revolution brought new methods: Bessemer steel, dyes made from coal tar, electric power, and precise machines with interchangeable parts. Railroads, steamships, and the telegraph carried goods, people, and news into the interiors of continents, so trade grew and tens of millions of people migrated. More power. New methods. Longer reach.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
-        "num": "1",
+        "num": "01",
+        "skill": "Developments and Processes",
+        "text": "Using Section 2, explain step by step how Watt's steam engine changed where factories could be built. Say what the problem was, what the engine did, and what that made possible.",
+        "placeholder": "The problem was... Watt's engine... This made it possible to..."
+      },
+      {
+        "num": "02",
+        "skill": "Developments and Processes",
+        "text": "Using Section 4, choose ONE of the four new methods of the second industrial revolution: steel, chemicals, electricity, or precision machinery. Explain what was new about it and what it let people make or do. Use one detail from the reading.",
+        "placeholder": "I chose... What was new was... It let people..."
+      },
+      {
+        "num": "03",
         "skill": "Causation",
-        "text": "Explain how railroads accelerated industrialization. Identify two specific mechanisms, two ways that railroads caused other aspects of industrialization to grow faster. For each, explain the chain of cause and effect: what exactly did railroads do, and how did that specific thing cause what industrial change?",
-        "placeholder": "Identify two specific mechanisms and explain the causal chain for each..."
-      },
-      {
-        "num": "2",
-        "skill": "Comparison",
-        "text": "Compare the railroad and the telegraph as industrial technologies. Identify one meaningful similarity in their effects and one meaningful difference. Then explain: what does comparing these two technologies reveal about how industrial technology changed the relationship between people and distance?",
-        "placeholder": "Identify a similarity and a difference, then explain what the comparison reveals..."
-      },
-      {
-        "num": "3",
-        "skill": "Argumentation",
-        "text": "Write a one-sentence claim answering this question: Was industrial technology in the 19th century primarily a liberating force (expanding human capabilities and connections) or a destructive force (exploiting labor and environments)? Then provide two specific pieces of evidence that support your claim, and acknowledge one piece of counterevidence.",
-        "placeholder": "State your one-sentence claim, provide two supporting pieces of evidence, and acknowledge one counterevidence..."
+        "text": "Using Sections 5 and 6, choose ONE: explain how railroads, steamships, or the telegraph led to more trade, OR how railroads or steamships led to more migration. Give a detail from the reading.",
+        "placeholder": "I chose... It made it possible to... This led to more... For example..."
       }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 5.5, Technology of Industrialization",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true
   },
   "5.6": {
     "topicKey": "5.6",
-    "topicLabel": "5.6 - Industrialization: Government and Society",
+    "topicLabel": "5.6 - Industrialization: Government’s Role from 1750 to 1900",
     "sourceFile": "first-and-10-topic-5-6-industrialization-government-and-society.html",
     "unitDir": "unit-5",
-    "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 5.6 Industrialization: Government and Society",
+    "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 5.6 Industrialization: Government’s Role from 1750 to 1900",
     "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
-    "readingEyebrow": "AP World History &middot; Unit 5: Revolutions &middot; Topic 5.6",
+    "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
-    "headerSubtitle": "Topic 5.6, Industrialization: Government and Society &nbsp;|&nbsp; AP World History",
-    "titleHtml": "The <em>Class</em> Question",
-    "deck": "How industrialization created new social classes, new political ideologies, and new demands for reform, and why the question of who benefits from industrial wealth has never been fully answered",
+    "showFooterNote": false,
+    "headerSubtitle": "Topic 5.6, Industrialization: Government’s Role, 1750 to 1900 &nbsp;|&nbsp; AP World History: Modern",
+    "titleHtml": "Industry <em>on Purpose</em>",
+    "deck": "In Britain and the United States, private owners built the first factories. A few governments did not wait. Wanting armies to match stronger powers, they built industry themselves. This reading follows two of them, Egypt under Muhammad Ali and Japan in the Meiji era: why each government acted, what it built, and why one strategy lasted while the other mostly ended.",
     "skillTags": [
       "Causation",
-      "Comparison",
-      "Argumentation"
+      "Making Connections"
     ],
     "supportCards": {
-      "beforeYouRead": "Industrialization didn't just change how goods were made, it transformed social order. It created new classes (factory owners and factory workers), new ideologies (liberalism, socialism, Marxism), and new demands for political representation, labor rights, and social welfare. Governments responded, slowly, unevenly, often only under pressure.",
-      "readingTarget": "Explain how industrialization created new social classes and the ideologies that emerged to address class conflict; analyze government responses and the role of women in industrial society."
+      "beforeYouRead": "<strong>Two states built industry. Japan's grew. Egypt's mostly closed.</strong> As you read, build two chains, one for each country, with the same four links: the threat, the decision, the strategy, the result. Then look for what the two chains share.",
+      "readingTarget": "Why did a few governments build industry themselves between 1750 and 1900, and what happened when they did?"
     },
     "vocabulary": [
-      "bourgeoisie",
-      "proletariat",
-      "class conflict",
-      "liberalism",
-      "conservatism",
-      "socialism",
-      "Marxism",
-      "Communist Manifesto",
-      "Reform Acts",
-      "Factory Acts",
-      "Chartism",
-      "Bismarck",
-      "social insurance",
-      "women's suffrage",
-      "class consciousness"
+      "State-Sponsored Industry",
+      "Monopoly",
+      "Conscription",
+      "Unequal Treaty",
+      "Meiji Restoration",
+      "Zaibatsu",
+      "Regional Power",
+      "Pattern"
     ],
     "sections": [
       {
         "number": "1",
-        "label": "Contextualization",
-        "heading": "Social Order Before Industrialization",
+        "label": "The Question",
+        "heading": "Why Would a Government Build Factories?",
         "blocks": [
           {
             "type": "p",
-            "html": "Pre-industrial social order in Europe was based on <span class=\"kt\">hereditary status</span>: the three estates (nobility, clergy, commoners) or equivalent hierarchies. A person's social position was fixed at birth. <span class=\"kt\">Guilds</span> organized skilled trades and controlled access to craft knowledge. Most people were peasants or agricultural workers."
+            "html": "Topic 5.4 followed the factory as it spread from Britain to other parts of Europe, the United States, Russia, and Japan. Topic 5.5 showed how steam, steel, railroads, and the telegraph let industry make far more and reach far farther. In Britain and the United States, most of the first factories were built by private owners and investors, people such as Richard Arkwright or the Boston merchants who paid for the mills at Lowell."
           },
           {
             "type": "p",
-            "html": "The middle class existed in pre-industrial societies (merchants, lawyers, physicians) but was relatively small and politically subordinate to the <span class=\"kt\">landed aristocracy</span>."
+            "html": "A small number of governments did something different. They did not wait for private owners. They paid for factories themselves, owned them, and ran them. This is <span class=\"kt\">state-sponsored industry</span>: industry that a government plans, pays for, and protects."
           },
           {
             "type": "p",
-            "html": "Industrialization shattered this order: it created new forms of wealth (<span class=\"kt\">industrial capital</span>) that competed with land; it created a massive urban working class with no pre-industrial equivalent; and it made old aristocratic justifications for power, birth, land, military service, increasingly irrelevant."
-          }
-        ],
-        "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>Understanding what industrialization changed about social order requires knowing what social order looked like BEFORE. <strong>The key change: from a society where status was inherited to a society where status was increasingly tied to economic position, but where economic position was determined by ownership of capital (bourgeoisie) or by the sale of labor (proletariat), not by birth.</strong> Effective contextualization identifies this shift from hereditary to economic hierarchy as the foundation of 19th-century class conflict.</p>"
-        }
-      },
-      {
-        "number": "2",
-        "label": "Key Concept",
-        "heading": "The New Social Classes: Bourgeoisie and Proletariat",
-        "blocks": [
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">bourgeoisie</span> (industrial middle class, from French \"town-dweller\"): factory owners, merchants, bankers, lawyers, doctors, engineers, people who earned their social position through accumulated capital and market success, not inherited land. By mid-19th century, the bourgeoisie was economically dominant in industrial societies, though political power (especially in Britain) still rested partly with the landed aristocracy. The bourgeoisie had its own internal stratifications: the great industrialists (iron masters, cotton manufacturers) at the top; the smaller shopkeepers and craftsmen at the bottom."
-          },
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">industrial proletariat</span> (from Latin \"proletarii\", those who contribute only their children to the state): factory workers, mine workers, urban day laborers, people who owned nothing but their labor power and had to sell it for wages. The proletariat was created by <span class=\"kt\">enclosure</span> (which drove peasants off common land), by the destruction of artisan crafts (by factory competition), and by immigration to industrial cities. By mid-century, the urban proletariat was the largest class in industrialized countries."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Class consciousness</span> and conflict: Marx argued that the proletariat's shared conditions of exploitation would eventually produce class consciousness, the recognition that workers share common interests against the owning class. Whether or not Marx was right about the inevitability of revolution, <span class=\"kt\">class conflict</span> was real: strikes, union organizing, political reform movements, and revolutionary uprisings (Paris Commune, 1871) defined 19th-century industrial politics."
+            "html": "Why would a government do that? To be strong. By the early 1800s, the countries with factories, steam power, and new weapons were becoming the strongest in the world. A ruler watching them could see that a country without industry could be beaten in war, or forced to sign whatever it was told to sign, and that a ruler with a modern army could hold on to power, or win more. Two of the clearest cases of a government that decided to build industry itself are Egypt under Muhammad Ali and Japan in the Meiji era."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p>Explaining WHY industrialization created these two classes requires tracing specific mechanisms. <strong>The bourgeoisie emerged because industrial capital (factories, machines) could generate wealth without land, anyone who could invest in machines could become wealthy. The proletariat emerged because enclosure, artisan displacement, and urban migration created a large population with no property and no choice but to sell labor for wages.</strong> Both classes were PRODUCTS of industrialization, not pre-existing groups.</p>"
+          "raw": "<p><strong>Build a chain for each case.</strong> The question for today asks for causes and effects. For each country, find four links: the <em>threat</em> (the stronger power or rival the government faced), the <em>decision</em> (to build industry with state money), the <em>strategy</em> (how it paid for it and what it built), and the <em>result</em>. Start with the threat.</p>"
+        }
+      },
+      {
+        "number": "2",
+        "label": "Egypt, Part 1",
+        "heading": "A Governor Who Wanted Power of His Own",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "In 1798 a French army under Napoleon invaded Egypt and easily defeated its rulers, the Mamluks, a class of soldier-lords. The French left in 1801. Among the Ottoman troops sent to take Egypt back was Muhammad Ali, an officer from an Albanian family. In 1805 the Ottomans named him governor of Egypt, and by 1811 he had destroyed his rivals and ruled alone."
+          },
+          {
+            "type": "p",
+            "html": "Egypt was a province of the Ottoman Empire, and Muhammad Ali was the sultan's governor. But he wanted Egypt strong enough that he, and his family after him, could hold it, even against the sultan. Napoleon's easy victory had shown what a modern European army could do, and Muhammad Ali wanted an army like it. Strength meant an army, and an army needed guns, uniforms, and ships."
+          },
+          {
+            "type": "p",
+            "html": "So his government took control of Egypt's farming. It told peasants what to grow, bought their crops at low prices, and sold them abroad at higher ones. When only one buyer or seller is allowed, that is a <span class=\"kt\">monopoly</span>. A new crop, long-staple cotton (cotton with long fibers, which makes strong, fine thread), first grown for sale in 1820, earned a great deal of money."
+          },
+          {
+            "type": "p",
+            "html": "With that money, from the late 1810s, the government built factories: cotton mills, and works for weapons, sugar, and other goods, with machines bought in Europe and European experts to run them. By the early 1830s about 30 cotton mills employed about 30,000 workers, many of them making cloth and uniforms for the army. The workers did not choose these jobs. They were drafted, the way Egyptian peasants had long been made to dig canals. From 1822 peasants were drafted into the army, too. Forcing people to serve is called <span class=\"kt\">conscription</span>, and by the early 1830s the army had about 130,000 soldiers. In the 1820s he also sent Egyptian students to Europe to learn its sciences. To protect the new mills, Muhammad Ali kept cheap British cloth out of Egypt."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Follow the money.</strong> A strategy has to be paid for. In Egypt the chain ran: the state buys crops cheaply, sells cotton abroad, and spends the money on factories and an army. Who paid in the end? The peasants, with their crops and their labor.</p>"
         }
       },
       {
         "number": "3",
-        "label": "Key Concept",
-        "heading": "Competing Ideologies: Liberalism, Conservatism, Socialism, and Marxism",
+        "label": "Egypt, Part 2",
+        "heading": "It Worked, Then It Stopped",
         "blocks": [
           {
             "type": "p",
-            "html": "<span class=\"kt\">Liberalism</span> (Adam Smith, John Stuart Mill): freedom of the individual from government interference; free market economics; representative government based on property rights; individual civil liberties. Liberals believed that the market, left to itself, would produce wealth and freedom. They were generally opposed to government regulation of industry. Late 19th-century \"New Liberals\" accepted some social reform (public education, public health) as compatible with individual liberty."
+            "html": "For a while the strategy worked. In 1831 Muhammad Ali's army, led by his son Ibrahim, invaded Syria and beat the sultan's own armies more than once."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Conservatism</span> (Edmund Burke, Metternich): respect for tradition, established institutions (monarchy, Church, aristocracy), and gradual rather than radical change. Conservatives were alarmed by the French Revolution and skeptical of Enlightenment rationalism. In the industrial age, some conservatives (like Disraeli's \"Tory Democracy\" in Britain) accepted reform as a way to prevent revolution, giving the working class enough improvement to keep them loyal to the existing order."
+            "html": "Then it stopped. Britain, Austria, Russia, and Prussia did not want a strong Egypt breaking the Ottoman Empire apart. In 1840 they sided with the sultan, and British warships and Ottoman troops drove Ibrahim out of Syria. In 1841 the sultan made the governorship of Egypt hereditary in Muhammad Ali's family, passing to its eldest male. But Egypt had to give up its conquests except Sudan, and its army was cut to 18,000 men in peacetime. Egypt also had to accept a trade treaty that Britain had signed with the Ottoman sultan in 1838. It ended Muhammad Ali's monopolies and opened Egypt to cheap foreign goods."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Utopian Socialism</span> (Robert Owen, Charles Fourier, Saint-Simon): early socialists believed that industrial society should be reorganized on cooperative rather than competitive principles. Robert Owen built model factory communities (New Lanark, Scotland) with decent housing, schools, and regulated working hours; he believed that improving workers' conditions would increase productivity and that a model community could transform society through example. Utopian socialists rejected private ownership of production but believed in peaceful, gradual transformation."
+            "html": "The factories had problems of their own, too. Egypt had almost no coal, so many machines were turned by animals instead of steam engines. The drafted workers resisted, and the managers had little experience. By the mid-1840s, about a decade after their peak in the early 1830s, most of the new factories had failed. Historians still argue about which cause mattered most, and about how much the factories achieved while they lasted."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Marxism</span> (Karl Marx and Friedrich Engels): Marx's <em>Communist Manifesto</em> (1848) and <em>Das Kapital</em> (1867) provided the most systematic critique of industrial capitalism. Key claims: history is driven by <span class=\"kt\">class conflict</span> (historical materialism); the bourgeoisie exploits the proletariat by extracting surplus value from their labor; capitalism contains inherent contradictions that will produce economic crises; the proletariat will eventually become class-conscious and overthrow the bourgeoisie through revolution; a communist society without classes or private property will follow. By 1900, Marxist political parties (Social Democrats) were major forces in German, French, and Russian politics."
+            "html": "Egypt went on growing more and more cotton, almost all of it sold abroad, much of it to the mills of Britain. What that led to is Unit 6."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Comparison",
-          "raw": "<p>Comparing liberalism and socialism as responses to industrialization reveals different diagnoses of the same problem. <strong>Liberals diagnosed the problem as TOO MUCH government interference (restrictions on trade, monopolies, aristocratic privilege), their prescription was less government and more market. Socialists diagnosed the problem as the WRONG KIND of property relations (private ownership of production), their prescription was collective ownership of the means of production.</strong> Both were responding to the same industrial conditions; they disagreed about the cause of inequality and therefore about the remedy.</p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>More than one cause.</strong> Some causes of the result came from outside Egypt (the powers of 1840 and the 1838 treaty) and some from inside (almost no coal, forced workers, new managers). A strong answer names at least one of each, and does not pretend one cause explains everything.</p>"
         }
       },
       {
         "number": "4",
-        "label": "Key Concept",
-        "heading": "Government Response and the Women's Question",
+        "label": "Japan, Part 1",
+        "heading": "Ships That Changed a Government",
         "blocks": [
           {
             "type": "p",
-            "html": "<span class=\"kt\">Political reform</span>: British <span class=\"kt\">Reform Acts</span> of 1832, 1867, and 1884 progressively expanded voting rights (from 400,000 voters to ~5 million between 1832 and 1884). <span class=\"kt\">Chartism</span> (1838–1857) demanded universal male suffrage, secret ballot, annual parliaments, and payment for MPs, all eventually enacted. By 1900, universal male suffrage existed in Germany (1871), France (1875), and the United States (formally, with severe suppression of Black voters in the South). The pressure for political reform came primarily from working-class and middle-class movements, not from voluntary elite generosity."
+            "html": "In 1853 an American naval officer, Commodore Matthew Perry, sailed warships into Edo Bay, near today's Tokyo, and demanded that Japan open its ports to trade. Japan had no navy that could stop him. Treaties in 1854 and 1858 opened Japanese ports to Americans and Europeans, let foreigners accused of crimes in Japan be tried in their own countries' courts, and took away Japan's control over its own trade. A treaty forced on a weaker country, giving the stronger side rights it does not give back, is an <span class=\"kt\">unequal treaty</span>. Some samurai blamed the shogun, the military ruler who governed Japan in the emperor's name."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Labor legislation</span>: <span class=\"kt\">Factory Acts</span> (1833, 1844, 1847) restricted child labor, limited women's and children's hours, and established factory inspectors. Public Health Acts (1848, 1875) created sanitation standards for industrial cities. The Ten Hours Act (1847) limited the working day for women and children to 10 hours, which effectively limited men's hours too since factories couldn't run with only half the workforce."
+            "html": "In 1868 a group of young samurai overthrew the shogun and governed in the name of the fifteen-year-old emperor, Meiji. This is the <span class=\"kt\">Meiji Restoration</span>. In April 1868 the new government made a promise, the Charter Oath: \"Knowledge shall be sought throughout the world so as to strengthen the foundations of imperial rule.\" The government\'s slogan was \"Rich country, strong army.\""
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Bismarckian social insurance</span>: Germany under <span class=\"kt\">Bismarck</span> introduced the world's first modern social insurance system: health insurance (1883), accident insurance (1884), old-age and disability insurance (1889). Motivation was explicitly conservative, Bismarck wanted to reduce support for socialist parties by making the state the source of social welfare rather than socialist unions. This model became the template for the 20th-century welfare state."
-          },
-          {
-            "type": "p",
-            "html": "<span class=\"kt\">Women and industrialization</span>: Women and children entered factory work in large numbers, initially because they accepted lower wages. Women's factory work had contradictory effects: it gave women economic independence (their own wages) while subjecting them to exploitation and dangerous conditions. <span class=\"kt\">Separate spheres ideology</span> (the belief that women's proper role was domestic) coexisted uncomfortably with the reality of working-class women laboring in factories. The <span class=\"kt\">women's suffrage</span> movement (beginning at Seneca Falls, 1848, in the US; building momentum in Britain through the 1860s–1900s) drew on the contradiction between universal rights claims and women's political exclusion, the same contradiction Mary Wollstonecraft had identified in 1792."
+            "html": "The Meiji leaders changed Japan itself first. In 1871 they abolished the lands of the old lords and made one central state. The samurai lost their special rights, and men of every class were drafted into a national army. A national school system began in 1872. A new land tax, paid in money instead of rice, gave the government money to spend. From 1871 to 1873 a group of leaders, the Iwakura Mission, toured the United States and Europe to study how they worked."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Did governments respond adequately to the social problems of industrialization in the 19th century? <strong>A strong argument requires defining \"adequate\", adequate by whose standard, and compared to what alternative? Defenders of government response can point to real achievements: child labor restricted, hours limited, public health improved, voting rights expanded. Critics can point to the slow pace, the inadequacy of early reforms, and the suffering that could have been prevented.</strong> A nuanced argument acknowledges both and explains which outweighs the other.</p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Outside pressure, inside reform.</strong> The College Board's Key Concept is itself a chain: U.S. and European influence led to reform inside Japan, and the reform supported industry. Name the outside cause (Perry, the unequal treaties) and one reform it led to.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "Japan, Part 2",
+        "heading": "Build It, Sell It, Grow Strong",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Then the state built industry. The government built Japan's first railway, from Tokyo to Yokohama, which opened in 1872 with British engineers. In the same year it opened the Tomioka Silk Mill, with French machines and a French engineer, Paul Brunat, to teach Japanese workers, mostly young women, to reel silk by machine. It built telegraph lines, shipyards, mines, and factories for weapons and for goods such as cement, glass, and cloth. Farmers paid for much of this through the land tax. Some samurai rebelled against losing their place, and in 1877 the new army of drafted commoners crushed the last great revolt."
+          },
+          {
+            "type": "p",
+            "html": "Running so many businesses cost more than the government could afford. In 1880 it decided to sell most of them to private investors. Business families such as Mitsui and Mitsubishi bought them and grew into huge business groups called <span class=\"kt\">zaibatsu</span>. Private companies such as the Osaka Spinning Company (Topic 5.4) built more. The state started key industries; private companies carried them on and built much more."
+          },
+          {
+            "type": "p",
+            "html": "Japan grew strong. To win back its own courts, it rewrote its laws on French and German models, and in July 1894 Britain agreed to end the foreign courts in Japan from 1899, so that foreigners there would be tried by Japanese law; other countries followed. Japan won back full control of its taxes on foreign goods only in 1911. Weeks later, in 1894 and 1895, Japan fought China over Korea and won. In the Treaty of Shimonoseki, China gave up its claim over Korea, gave the island of Taiwan to Japan, and agreed to pay 200 million taels of silver (a tael is a Chinese measure of silver). Japan, forced to open its ports forty years before, was now a <span class=\"kt\">regional power</span>, a state strong enough to win wars and gain land in its own part of the world, with a colony of its own. What empires did with that power is Unit 6."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>The last link.</strong> The Key Concept ends with Japan's \"growing regional power.\" Do not stop your chain at the factories: say what the industry and reforms led to, with one piece of evidence from 1894 or 1895.</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "The Pattern",
+        "heading": "Two Chains, Side by Side",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Put the two cases side by side. Both governments wanted an army and industry to match stronger powers: Muhammad Ali, to match armies like Napoleon's and to hold Egypt against the sultan; Japan, to answer the Western warships. In both, the state, not private owners, paid for the first factories. Both bought foreign machines, hired foreign experts, and sent people abroad to learn. In both, farmers paid much of the bill. And both wanted the same result: a state strong enough to defend itself, with an army to match. When the same links show up in different cases, that is a <span class=\"kt\">pattern</span>."
+          },
+          {
+            "type": "p",
+            "html": "The difference is what happened next. Japan's industry lasted and grew; Egypt's mostly closed. Historians point to several reasons. Japan was never conquered or colonized, though it was forced into unequal treaties, while Egypt was a province of the Ottoman Empire that European powers forced to cut its army and open its markets. Japan reformed its whole society, while Egypt's factories were one ruler's project, run with drafted workers. Japan had coal of its own, and Egypt had almost none. And Japan's government handed its industries to private companies that kept them running. Japan also had to accept low taxes on foreign goods under its unequal treaties, about 5 percent from 1866, through the years it was building its industry, so outside pressure alone does not explain the difference."
+          },
+          {
+            "type": "p",
+            "html": "So, what caused these economic strategies, and what were their effects? The wish for armies to match stronger powers made a small number of governments build industry themselves. Muhammad Ali's Egypt built cotton mills and weapons works to supply an army; it won wars for a while, but European pressure, missing coal, and forced labor closed most of the factories. In Japan, Perry's warships and the unequal treaties led to the Meiji reforms; the state built railways and mills and then sold them to private companies, and the industry it started helped make Japan strong enough to defeat China and take Taiwan, while its legal reforms began ending the unequal treaties."
+          },
+          {
+            "type": "p",
+            "html": "All this industry made goods, and goods had to be paid for, traded, and financed. Who owned the factories, and how did money move around the industrial world? That is Topic 5.7."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Making Connections",
+          "raw": "<p><strong>Three myths to drop.</strong> \"Japan just copied the West\": Japan's leaders chose what to borrow and from whom, seeking knowledge from many countries, which the Charter Oath said would \"strengthen the foundations of imperial rule.\" \"Muhammad Ali was building an Egyptian nation\": he was an Ottoman governor from an Albanian family whose court spoke Turkish, and he built for his own and his family's power. \"One cause explains Egypt's result\": historians weigh European pressure, missing coal, drafted workers, and new managers, and still disagree about how much each mattered.</p>"
         }
       }
     ],
-    "takeaway": "Industrialization created two new defining classes: the <strong>bourgeoisie</strong> (factory owners, merchants, professionals, those who owned capital) and the <strong>proletariat</strong> (factory workers, miners, urban laborers, those who owned only their labor). Four competing ideologies emerged to explain and address this transformation: <strong>liberalism</strong> (free market, individual rights, less government) diagnosed the problem as too much restriction; <strong>conservatism</strong> (tradition, order, gradual change) warned against rapid transformation; <strong>utopian socialism</strong> (Robert Owen) proposed cooperative communities as alternatives; and <strong>Marxism</strong> (<em>Communist Manifesto</em>, 1848) argued that class conflict would inevitably produce revolution and a classless society. Governments responded slowly but eventually: the British Reform Acts expanded voting rights; Factory Acts restricted child labor and limited hours; Bismarck's Germany created the first social insurance system. Women entered industrial work in large numbers, complicating \"separate spheres\" ideology and fueling the women's suffrage movement. By 1900, the social question, who benefits from industrial wealth?, remained the central political question of the century.",
+    "takeaway": "In Britain and the United States, private owners built the first factories, but a small number of governments built industry themselves, wanting armies to match stronger powers. In Egypt, Muhammad Ali, an Ottoman governor who wanted to hold power for his family, took control of farming and cotton and used the money to build about 30 cotton mills and weapons works for an army of about 130,000 drafted peasants. The army won wars, but in 1840 and 1841 European powers forced Egypt out of Syria and cut its army to 18,000, the 1838 trade treaty ended its monopolies, and with almost no coal and forced workers most factories had failed by the mid-1840s. In Japan, Perry's warships in 1853 and the unequal treaties led to the Meiji Restoration of 1868. The new government reformed Japan, built railways, the Tomioka Silk Mill, shipyards, and mines, and from 1880 sold them to private companies such as Mitsui and Mitsubishi. After Japan rewrote its laws, Britain agreed in 1894 to end its foreign courts in Japan, and Japan won a war with China in 1894 and 1895 and took Taiwan: it had become a regional power. Two states built industry. Japan's grew. Egypt's mostly closed.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
-        "num": "1",
+        "num": "01",
         "skill": "Causation",
-        "text": "Explain why industrialization created two new social classes, the bourgeoisie and the proletariat. For each class, identify the specific industrial conditions that produced it: what specific changes caused the bourgeoisie to emerge as a class? What specific changes created the proletariat? Be concrete about the mechanisms.",
-        "placeholder": "For each class, identify the specific mechanisms that caused it to emerge..."
+        "text": "Using Sections 2 and 3, explain ONE reason Muhammad Ali's government built factories and ONE effect of that decision. Use a detail from the reading for each.",
+        "placeholder": "Muhammad Ali built factories because... One effect was... For example..."
       },
       {
-        "num": "2",
-        "skill": "Comparison",
-        "text": "Compare liberalism and socialism as ideological responses to industrialization. Identify what each ideology diagnoses as the fundamental problem of industrial society, and what each prescribes as the remedy. Then explain: what does the difference in diagnosis reveal about what each ideology values most, individual freedom or collective welfare?",
-        "placeholder": "Identify each ideology's diagnosis, remedy, and underlying value..."
+        "num": "02",
+        "skill": "Causation",
+        "text": "Using Sections 4 and 5, explain how pressure from the United States and Europe led to a reform in Japan, and how that reform helped Japan build industry or grow stronger.",
+        "placeholder": "Pressure from... led Japan's leaders to... This helped because..."
       },
       {
-        "num": "3",
-        "skill": "Argumentation",
-        "text": "Write a one-sentence claim answering this question: Did 19th-century governments respond adequately to the social problems created by industrialization? Then provide two specific pieces of evidence, one that supports your claim and one that complicates it. End with a sentence explaining why, on balance, your claim is correct.",
-        "placeholder": "State your claim, provide supporting and complicating evidence, then explain your judgment..."
+        "num": "03",
+        "skill": "Making Connections",
+        "text": "Using Sections 2 to 5, name ONE link the two chains share, with a detail from each country, and ONE difference in what happened next. Then choose the reason for the difference you think mattered most, and explain why, with a detail from the reading.",
+        "placeholder": "Both Egypt and Japan... But Japan... while Egypt..."
       }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 5.6, Industrialization: Government and Society",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true
   },
   "5.7": {
     "topicKey": "5.7",
