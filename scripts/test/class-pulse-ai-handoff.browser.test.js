@@ -4,7 +4,7 @@
 // marked as suggestions, accept one; and on the real-class page the buttons stay off without approval.
 const assert=require('assert/strict'),fs=require('fs'),http=require('http'),os=require('os'),path=require('path');
 let chromium;try{({chromium}=require('playwright-core'));}catch{console.log('SKIP playwright-core is not installed (npm i --no-save playwright-core).');process.exit(2);}
-const root=path.resolve(__dirname,'../..'),contract=require('../lib/skilllens-pilot-contract')();
+const root=path.resolve(__dirname,'../..'),contract=require('../lib/skilllens-pilot-contract')(require('../lib/class-pulse/config').assignmentId);
 const practice=fs.readFileSync(path.join(root,'teacher/skilllens-pilot.html'),'utf8'),live=fs.readFileSync(path.join(root,'teacher/class-pulse.html'),'utf8');
 const authSource=fs.readFileSync(path.join(root,'teacher/class-pulse/auth.js'),'utf8');
 const authStub="window.ClassPulseAuth=function(){return {user:()=>({uid:'jeff',email:'jeff@zcs.k12.in.us'}),getToken:async()=> 'test-session',signIn:async()=>{},signOut:async()=>{}};};";

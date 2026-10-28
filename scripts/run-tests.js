@@ -38,6 +38,7 @@ const SUITES = {
     ['scripts/test/class-pulse.test.js', 'production Class Pulse contracts and evaluation'],
     ['scripts/test/class-pulse-ai-handoff.test.js', 'Class Pulse AI rating export, import and approval switch'],
     ['scripts/test/class-pulse-practice.test.js', 'Class Pulse practice packet, answer key and AI comparison'],
+    ['scripts/test/class-pulse-rubrics.test.js', 'Class Pulse rubrics cite the CED; no rubric in lesson data'],
     ['scripts/test/skilllens-pilot.test.js', 'Synthetic teacher pilot: evidence validity, judgment integrity, and generated source parity'],
     ['scripts/test/unit45-atlases.test.js', 'Units 4–5 atlases: content, geography, hub integration, and negative controls'],
     ['scripts/test/unit3-atlas.test.js', 'Unit 3 atlas: reviewed evidence, geographic scope, and visual-only hub'],

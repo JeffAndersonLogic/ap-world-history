@@ -4,7 +4,7 @@ const assert=require('assert/strict'),fs=require('fs');
 if(!process.env.FIRESTORE_EMULATOR_HOST||!/^127\.0\.0\.1:\d+$/.test(process.env.FIRESTORE_EMULATOR_HOST))throw Error('A localhost Firestore emulator is required.');
 const {initializeTestEnvironment,assertFails,assertSucceeds}=require('@firebase/rules-unit-testing');
 const {doc,setDoc,getDoc,updateDoc,deleteDoc,collection,getDocs,query,limit,serverTimestamp}=require('firebase/firestore');
-const Data=require('../../teacher/class-pulse/data'),contract=require('../lib/skilllens-pilot-contract')();
+const Data=require('../../teacher/class-pulse/data'),contract=require('../lib/skilllens-pilot-contract')(require('../lib/class-pulse/config').assignmentId);
 const PROJECT='demo-class-pulse',rules=fs.readFileSync('firestore/class-pulse.rules','utf8'),base='tenants/zcs/classes/class-a',assignment=base+'/assignments/'+contract.assignmentId;
 const claims=(email)=>({email,email_verified:true,firebase:{sign_in_provider:'google.com'}});
 function token(uid,email){const b=o=>Buffer.from(JSON.stringify(o)).toString('base64url'),now=Math.floor(Date.now()/1000);return b({alg:'none',typ:'JWT'})+'.'+b({iss:'https://securetoken.google.com/'+PROJECT,aud:PROJECT,sub:uid,user_id:uid,email,email_verified:true,iat:now,exp:now+3600,auth_time:now,firebase:{sign_in_provider:'google.com'}})+'.';}

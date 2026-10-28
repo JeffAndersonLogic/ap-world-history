@@ -6,6 +6,14 @@ slow part. This folder describes how an AI can suggest a first rating for each a
 the teacher then accepts or changes. The AI never assigns a grade, and nothing it suggests is
 saved unless the teacher accepts or changes it.
 
+## Which checkpoint
+
+The live pilot rates **Topic 3.2 Checkpoint 2, Symbols and Revenue** (`assignmentId` in
+`scripts/lib/class-pulse/config.js`). Its rubric is in `scripts/lib/class-pulse/rubrics.js` and
+cites the CED for Topic 3.2 (Learning Objective B, KC-4.3.I.A, KC-4.3.I.D, suggested skill 4.A).
+The invented practice class and the practice files in `practice/` are on Topic 2.3 Checkpoint 1,
+so a practice result says how the AI rates in general, not on the 3.2 rubric.
+
 ## How it works
 
 1. **Export for AI rating** on the Class Pulse page saves a packet file: the question, the

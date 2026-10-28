@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 // Dry-run by default. Authenticated administrative execution only, outside the web app.
-const fs=require('fs'),path=require('path'),assert=require('assert/strict'),contract=require('./lib/skilllens-pilot-contract')(),{segment}=require('../teacher/class-pulse/data');
+const fs=require('fs'),path=require('path'),assert=require('assert/strict'),contract=require('./lib/skilllens-pilot-contract')(require('./lib/class-pulse/config').assignmentId),{segment}=require('../teacher/class-pulse/data');
 function plan(input){
  assert.equal(input.projectId,'behistoric','Use the district project explicitly.');segment(input.classId);
  assert(input.teacher&&input.teacher.uid&&input.teacher.label,'Verified teacher UID and label required.');segment(input.teacher.uid);

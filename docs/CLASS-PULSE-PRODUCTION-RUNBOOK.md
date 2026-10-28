@@ -1,7 +1,10 @@
 # SkillLens successor: first production release
 
 Owner: Jeff Anderson. Class Pulse is the working screen title, not a settled
-commercial product name. Scope: one verified class, Topic 2.3 Checkpoint 1.
+commercial product name. Scope: one verified class, one checkpoint. Since 2026-10-28 the live checkpoint is Topic 3.2
+Checkpoint 2 (Jeff's choice); the invented practice class stays on Topic 2.3 Checkpoint 1.
+Rubrics live in `scripts/lib/class-pulse/rubrics.js`, not in lesson data, and the live one must
+cite the CED source (`scripts/test/class-pulse-rubrics.test.js`).
 Retain the heatmap. Spark/no billing. No changes to the course domain.
 
 This is a release candidate, not a claim of live deployment or AI accuracy.

@@ -43,9 +43,11 @@ for(const [from,to] of [
 checks(core);
 const sandbox={window:{},document:{querySelector:()=>null,createElement:()=>({}),head:{appendChild(){}}}};vm.createContext(sandbox);for(const file of ['lesson-2-3-indian-ocean.js','lesson-2-3-renderer-config.js'])vm.runInContext(fs.readFileSync(path.join(root,'assets/data',file),'utf8'),sandbox);
 const lesson=sandbox.window.BEHISTORICAL_LESSON;
-assert.deepEqual(clone(lesson.checkpoints[0].focus),contract.criteria.map(c=>c.description));
-assert.deepEqual(clone(lesson.checkpoints[0].learningTargets),[lesson.learningTargets[0].target]);
-assert.deepEqual(clone(lesson.checkpoints[1].learningTargets),[lesson.learningTargets[1].target,lesson.learningTargets[2].target]);
+// The practice contract reads the lesson's own prompt and target; the rubric lives in
+// scripts/lib/class-pulse/rubrics.js, so the lesson students see is not changed by it.
+assert.equal(contract.prompt,lesson.checkpoints[0].prompt);
+assert.deepEqual(contract.learningTargets,[lesson.learningTargets[0].target]);
+assert.equal(lesson.checkpoints[0].assessment,undefined);
 const htmlPath=path.join(root,'teacher/skilllens-pilot.html'),html=fs.readFileSync(htmlPath,'utf8');
 try{fs.writeFileSync(htmlPath,html+'\nSTALE');assert.equal(spawnSync(process.execPath,['scripts/build-skilllens-pilot.js','--check'],{cwd:root}).status,1,'Reproducibility check catches stale output');}finally{fs.writeFileSync(htmlPath,html);}
 assert.equal(spawnSync(process.execPath,['scripts/build-skilllens-pilot.js','--check'],{cwd:root}).status,0);

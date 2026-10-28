@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 const assert=require('assert/strict'),fs=require('fs'),http=require('http'),path=require('path');const {chromium}=require('playwright-core');
-const root=path.resolve(__dirname,'../..'),contract=require('../lib/skilllens-pilot-contract')();
+const root=path.resolve(__dirname,'../..'),contract=require('../lib/skilllens-pilot-contract')(require('../lib/class-pulse/config').assignmentId);
 const authSource=fs.readFileSync(path.join(root,'teacher/class-pulse/auth.js'),'utf8');
 const authStub="window.ClassPulseAuth=function(){return {user:()=>({uid:'jeff',email:'jeff@zcs.k12.in.us'}),getToken:async()=> 'test-session',signIn:async()=>{},signOut:async()=>{}};};";
 let teacher=fs.readFileSync(path.join(root,'teacher/class-pulse.html'),'utf8'),student=fs.readFileSync(path.join(root,'student/checkpoint-submit.html'),'utf8'),servedTeacher=teacher,servedStudent=student,failSave=false,failLoad=false,requests=0,useRealAuth=false;
