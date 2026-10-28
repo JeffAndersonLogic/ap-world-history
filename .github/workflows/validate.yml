@@ -99,3 +99,21 @@ jobs:
 
       - name: Student decks and teacher readability
         run: node scripts/test/student-presentations.test.js
+
+  class-pulse-security:
+    name: Class Pulse security rules
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Install emulator dependencies
+        run: npm install --no-save firebase-tools@14.22.0 firebase@12.4.0 @firebase/rules-unit-testing@5.0.0
+      - name: Baseline backup rules and class-scoped release rules
+        run: npx firebase emulators:exec --only firestore --project demo-class-pulse --config firebase.class-pulse.json "node scripts/run-tests.js rules --strict"

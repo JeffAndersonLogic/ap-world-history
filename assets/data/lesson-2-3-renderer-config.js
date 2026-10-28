@@ -81,8 +81,8 @@
       title: 'Checkpoint 1: Environment and Maritime Technology',
       subtitle: 'Checks why the network could expand.',
       cardDesc: 'Monsoons, compass, astrolabe, and larger ships.',
-      learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[2].target],
-      successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[2].criteria],
+      learningTargets: [lesson.learningTargets[0].target],
+      successCriteria: [lesson.successCriteria[0].criteria],
       prompt: 'Explain how knowledge of monsoon winds and TWO maritime technologies helped expand Indian Ocean trade after 1200.',
       responseType: 'Checkpoint 1',
       terms: ['monsoon winds', 'compass', 'astrolabe', 'larger ship designs'],
@@ -92,8 +92,8 @@
       title: 'Checkpoint 2: States, Diasporas, and Zheng He',
       subtitle: 'Checks the effects of expanded Indian Ocean exchange.',
       cardDesc: 'State growth, merchant communities, and interregional contact.',
-      learningTargets: [lesson.learningTargets[1].target],
-      successCriteria: [lesson.successCriteria[1].criteria],
+      learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
+      successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
       prompt: 'Explain TWO effects of expanded Indian Ocean trade. Your response must use one state-growth example and either a diasporic-community example or Zheng He.',
       responseType: 'Checkpoint 2',
       skill: 'Causation',
@@ -101,6 +101,39 @@
       focus: ['Use one state-growth example.', 'Use one diaspora or Zheng He example.', 'Explain how trade growth produced the effect.']
     }
   ];
+
+  // Canonical pilot rubric: the student focus and teacher review use this same
+  // contract. It assesses this checkpoint, not general historical ability.
+  // CED Fall 2026, Topic 2.3, printed pp. 57–58 (LO E and G).
+  lesson.checkpoints[0].assessment = {
+    version: '2.3-checkpoint1-v1',
+    source: 'https://apcentral.collegeboard.org/media/pdf/ap-world-history-modern-course-and-exam-description-effective-fall-2026.pdf',
+    sourcePages: '57–58',
+    criteria: [
+      {
+        id: 'monsoons', label: 'Explain the seasonal winds',
+        description: 'Explain how merchants used predictable seasonal changes in monsoon winds to plan voyages.',
+        guidance: 'Accept varied wording for seasonal reversal and timing outbound or return journeys. Rain alone is not the maritime mechanism; winds do not blow one way all year.',
+        action: 'Sketch an outward voyage and a return voyage. Ask students to explain when a merchant should leave and why.',
+        essential: true
+      },
+      {
+        id: 'technology', label: 'Explain two maritime technologies',
+        description: 'Use two historically appropriate maritime technologies and explain what each enabled sailors or merchants to do.',
+        guidance: 'Examples include a compass for direction, an astrolabe for estimating latitude, and larger ships for carrying more cargo. Accept other historically supported examples. Naming two tools without explaining their functions is partial evidence.',
+        action: 'Compare a list of tools with an explanation of their functions. Have students add a function to each of two technologies.',
+        essential: true
+      },
+      {
+        id: 'connection', label: 'Connect the causes to trade growth',
+        description: 'Connect wind knowledge and the technologies to more reliable voyages, increased trade volume, or a wider geographic range of exchange.',
+        guidance: 'Look for a causal mechanism, not just a claim that trade increased. Preserve a correct causal link even if another criterion has a gap; contradictions affecting this link need review.',
+        action: 'Model a because → enabled → trade grew explanation, then ask students to revise one causal link in their response.',
+        essential: true
+      }
+    ]
+  };
+  lesson.checkpoints[0].focus = lesson.checkpoints[0].assessment.criteria.map(item => item.description);
 
   lesson.evidenceLab = {
     ...lesson.evidenceLab,

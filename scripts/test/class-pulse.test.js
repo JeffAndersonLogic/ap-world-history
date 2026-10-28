@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+'use strict';
+const assert=require('assert/strict'),fs=require('fs'),vm=require('vm'),{spawnSync}=require('child_process');
+const core=require('../lib/skilllens-pilot-core'),contract=require('../lib/skilllens-pilot-contract')(),fixtures=require('../lib/skilllens-pilot-fixtures')(contract),Data=require('../../teacher/class-pulse/data'),evaluate=require('../lib/class-pulse/evaluate');
+const response=fixtures.responses[0],analysis=fixtures.analyses[0];
+function evalInput(){return{split:'development',contract,responses:[response],analyses:[analysis],references:[{responseId:response.id,responseText:response.text,contractId:contract.contractId,reviewer:'Blind test reference',criteria:contract.criteria.map(c=>({criterionId:c.id,band:'meets'}))}]};}
+function evaluateChecks(fn){let input=evalInput();assert.equal(fn(input).exactAgreementRate,1);input.analyses=[];assert.equal(fn(input).exactAgreementRate,0);assert.equal(fn(input).criteria.technology.abstentions,1);input=evalInput();input.references[0].criteria[1].band='partial';const r=fn(input);assert.equal(r.criteria.technology.misleadingPositiveRate,1);assert.equal(r.exactAgreementRate,0);}
+const source=fs.readFileSync('scripts/lib/class-pulse/evaluate.js','utf8'),broken=source.replace("if(predicted==='review')row.abstentions++;",'');assert.notEqual(broken,source);const sandbox={module:{exports:{}},require:()=>core};vm.runInNewContext(broken,sandbox);assert.throws(()=>evaluateChecks(sandbox.module.exports));evaluateChecks(evaluate);
+const bundle={assignment:{contractId:contract.contractId},cl:{label:'One class'},teacher:{uid:'jeff',label:'Jeff'},members:[{_id:'sam',active:true,label:'Student'}],submissions:[{_id:'sam',studentId:'sam',contractId:contract.contractId,revision:2,text:response.text}],analyses:[{_id:'sam',revision:1,payload:JSON.stringify(analysis)}],overrides:[],decisions:[]};
+function staleCheck(api){const out=api.materialize(bundle,contract,core);assert.equal(out.analyses.length,0);assert.equal(out.stale,1);assert.equal(core.summarize(contract,out.responses,out.analyses,[]).counts.not_analyzed,1);}
+const dataSource=fs.readFileSync('teacher/class-pulse/data.js','utf8'),dataBroken=dataSource.replace('stored.revision!==r.revision','false');assert.notEqual(dataSource,dataBroken);const dataSandbox={module:{exports:{}}};vm.runInNewContext(dataBroken,dataSandbox);assert.throws(()=>staleCheck(dataSandbox.module.exports));staleCheck(Data);
+const unknown=structuredClone(bundle);unknown.assignment.contractId='wrong';assert.throws(()=>Data.materialize(unknown,contract,core));
+const gen='teacher/class-pulse.html',original=fs.readFileSync(gen,'utf8');try{fs.writeFileSync(gen,original+'STALE');assert.notEqual(spawnSync(process.execPath,['scripts/build-class-pulse.js','--check']).status,0);}finally{fs.writeFileSync(gen,original);}assert.equal(spawnSync(process.execPath,['scripts/build-class-pulse.js','--check']).status,0);
+assert(!original.includes('const PILOT_DATA ='));
+assert.throws(()=>Data.segment('../other-class'));
+const provision=require('../class-pulse-provision');
+const roster={projectId:'behistoric',classId:'pilot',label:'Test class',teacher:{uid:'jeff',label:'Jeff'},students:[{uid:'sam',label:'Student'}]};
+function rosterChecks(fn){assert.equal(fn(roster).records[0].data.active,false);assert.throws(()=>fn({...roster,students:[roster.students[0],roster.students[0]]}));}
+const provisionSource=fs.readFileSync('scripts/class-pulse-provision.js','utf8'),provisionBroken=provisionSource.replace("assert(!seen.has(student.uid)&&student.uid!==input.teacher.uid,'Duplicate or teacher UID in student roster.');",'');assert.notEqual(provisionSource,provisionBroken);const pv={module:{exports:{}},require:p=>p.includes('skilllens-pilot-contract')?()=>contract:p.includes('class-pulse/data')?Data:require(p)};vm.runInNewContext(provisionBroken,pv);assert.throws(()=>rosterChecks(pv.module.exports));rosterChecks(provision);
+console.log('PASS Class Pulse: stale judgment rejection, explicit unassessed state, evaluation denominators and misleading positives, generated content; negative controls caught.');

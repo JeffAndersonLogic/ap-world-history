@@ -281,7 +281,7 @@ Strong answer checklist: Explain how imperial expansion facilitated exchange. Us
 **AP skill focus.** Making Connections (Skill 5.A) and Causation.
 
 **Checkpoint 1 prompt.** Explain how knowledge of monsoon winds and TWO maritime technologies helped expand Indian Ocean trade after 1200.
-Strong answer checklist: Explain the environmental factor. Use two technologies. Connect both to increased volume or geographic range of exchange.
+Strong answer checklist: Explain how merchants used predictable seasonal changes in monsoon winds to plan voyages. Use two historically appropriate maritime technologies and explain what each enabled sailors or merchants to do. Connect wind knowledge and the technologies to more reliable voyages, increased trade volume, or a wider geographic range of exchange.
 
 **Checkpoint 2 prompt.** Explain TWO effects of expanded Indian Ocean trade. Your response must use one state-growth example and either a diasporic-community example or Zheng He.
 Strong answer checklist: Use one state-growth example. Use one diaspora or Zheng He example. Explain how trade growth produced the effect.

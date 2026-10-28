@@ -1,0 +1,82 @@
+    // Class Pulse additions. Legacy student backups above stay owner-only.
+    match /tenants/{tenantId}/classes/{classId} {
+      function classActive() { return get(/databases/$(database)/documents/tenants/$(tenantId)/classes/$(classId)).data.active == true; }
+      function teacher() {
+        return inTenant(tenantId) && classActive()
+          && get(/databases/$(database)/documents/tenants/$(tenantId)/classes/$(classId)/teachers/$(request.auth.uid)).data.active == true;
+      }
+      function enrolled(uid) {
+        return get(/databases/$(database)/documents/tenants/$(tenantId)/classes/$(classId)/members/$(uid)).data.active == true;
+      }
+      function student() { return inTenant(tenantId) && classActive() && enrolled(request.auth.uid); }
+      allow get: if teacher() || student();
+      allow list, write: if false;
+      match /teachers/{uid} {
+        allow get: if inTenant(tenantId) && request.auth.uid == uid;
+        allow list, write: if false;
+      }
+      match /members/{uid} {
+        allow get: if teacher() || (student() && request.auth.uid == uid);
+        allow list: if teacher() && request.query.limit <= 200;
+        allow write: if false;
+      }
+      match /assignments/{assignmentId} {
+        function assignment() { return get(/databases/$(database)/documents/tenants/$(tenantId)/classes/$(classId)/assignments/$(assignmentId)).data; }
+        function currentSubmission(uid) { return get(/databases/$(database)/documents/tenants/$(tenantId)/classes/$(classId)/assignments/$(assignmentId)/submissions/$(uid)).data; }
+        allow get: if teacher() || student();
+        allow list, write: if false;
+        match /submissions/{uid} {
+          function own() { return student() && request.auth.uid == uid; }
+          function validSubmission() {
+            let d = request.resource.data;
+            return assignment().active == true
+              && d.keys().hasOnly(['studentId','contractId','text','revision','submittedAt'])
+              && d.keys().hasAll(['studentId','contractId','text','revision','submittedAt'])
+              && d.studentId == uid && d.contractId == assignment().contractId
+              && d.text is string && d.text.size() <= 20000
+              && d.revision is int && d.revision > 0
+              && d.submittedAt == request.time;
+          }
+          allow get: if teacher() || own();
+          allow list: if teacher() && request.query.limit <= 200;
+          allow create: if own() && validSubmission() && request.resource.data.revision == 1;
+          allow update: if own() && validSubmission() && request.resource.data.revision == resource.data.revision + 1;
+          allow delete: if false;
+        }
+        match /analyses/{uid} {
+          allow get: if teacher();
+          allow list: if teacher() && request.query.limit <= 200;
+          // An approved administrative analysis importer is the sole writer.
+          allow write: if false;
+        }
+        match /overrides/{id} {
+          function validOverride() {
+            let d = request.resource.data;
+            return d.keys().hasOnly(['studentId','revision','actorUid','payload','createdAt'])
+              && d.keys().hasAll(['studentId','revision','actorUid','payload','createdAt'])
+              && d.actorUid == request.auth.uid && enrolled(d.studentId)
+              && d.revision == currentSubmission(d.studentId).revision
+              && d.payload is string && d.payload.size() <= 50000
+              && d.createdAt == request.time;
+          }
+          allow get: if teacher();
+          allow list: if teacher() && request.query.limit <= 200;
+          allow create: if teacher() && validOverride();
+          allow update, delete: if false;
+        }
+        match /decisions/{id} {
+          function validDecision() {
+            let d = request.resource.data;
+            return d.keys().hasOnly(['actorUid','contractId','payload','createdAt'])
+              && d.keys().hasAll(['actorUid','contractId','payload','createdAt'])
+              && d.actorUid == request.auth.uid && d.contractId == assignment().contractId
+              && d.payload is string && d.payload.size() <= 400000
+              && d.createdAt == request.time;
+          }
+          allow get: if teacher();
+          allow list: if teacher() && request.query.limit <= 200;
+          allow create: if teacher() && validDecision();
+          allow update, delete: if false;
+        }
+      }
+    }
