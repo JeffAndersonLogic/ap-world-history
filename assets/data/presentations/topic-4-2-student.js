@@ -8,7 +8,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
   "slides": [
     {
       "kind": "beready-recall",
-      "eyebrow": "BeReady · 4 Minutes · No Notes",
+      "eyebrow": "BeReady � 4 Minutes � No Notes",
       "title": "Pull the last topic back from memory.",
       "template": {
         "questions": [
@@ -37,7 +37,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "action",
-      "eyebrow": "Module 02 · First & 10 · 12 Minutes",
+      "eyebrow": "Module 02 � First & 10 � 12 Minutes",
       "title": "Read for three questions.",
       "subtitle": "For every state: who paid, what did they want, and what did they get?",
       "action": {
@@ -111,7 +111,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "timeline",
-      "eyebrow": "Portugal · Step by Step",
+      "eyebrow": "Portugal � Step by Step",
       "title": "Each return made the next voyage easier to pay for.",
       "footer": "Spacing is true to scale: nearly a century, step by step.",
       "kc": "KC-4.1.III.A",
@@ -172,15 +172,15 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kc": "KC-4.1.III.A",
       "cards": [
         {
-          "title": "GOLD · ELMINA",
+          "title": "GOLD � ELMINA",
           "text": "A royal trade in gold from the fort built on the Gold Coast in 1482."
         },
         {
-          "title": "PEPPER · LISBON",
+          "title": "PEPPER � LISBON",
           "text": "Lisbon became a major pepper market, and the crown ran the pepper trade itself."
         },
         {
-          "title": "FORTS · GOA AND MALACCA",
+          "title": "FORTS � GOA AND MALACCA",
           "text": "Fortified ports from Africa to India and Southeast Asia, seized in 1510 and 1511."
         },
         {
@@ -191,7 +191,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "case-file",
-      "eyebrow": "Spain · The Contract",
+      "eyebrow": "Spain � The Contract",
       "title": "What two rulers promised a sailor.",
       "kc": "KC-4.1.III.B",
       "template": {
@@ -221,7 +221,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "timeline",
-      "eyebrow": "Spain · The Effect",
+      "eyebrow": "Spain � The Effect",
       "title": "Interest in ocean trade grew fast.",
       "footer": "Three ships in 1492, at least seventeen in 1493.",
       "kc": "KC-4.1.III.B",
@@ -261,36 +261,15 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "face-off",
-      "eyebrow": "Rivals · 1494",
+      "kind": "map",
+      "eyebrow": "Rivals � 1494",
       "title": "Two crowns split the claims.",
+      "visual": {
+        "url": "../assets/images/topics/4-2/treaty-of-tordesillas.png",
+        "alt": "BeHistorical map of Treaty of Tordesillas claims: Spain west of the approximate 1494 line, Portugal east including eastern Brazil; 370 leagues west of Cape Verde. Shading shows claimed spheres, not actual control in 1494."
+      },
       "footer": "Nobody asked the people who lived in those lands, and the northern states ignored the line.",
-      "kc": "KC-4.1.III",
-      "template": {
-        "left": {
-          "name": "Spain",
-          "note": "Lands west of the line"
-        },
-        "right": {
-          "name": "Portugal",
-          "note": "Lands east of the line, and the route around Africa"
-        },
-        "between": {
-          "label": "Divided",
-          "name": "Treaty of Tordesillas",
-          "note": "A line through the Atlantic"
-        },
-        "disputes": [
-          {
-            "tag": "Political",
-            "text": "Both crowns claimed the newly found lands, so they negotiated a line between them."
-          },
-          {
-            "tag": "Economic",
-            "text": "Each wanted its own route to the trade of Asia, closed to the other."
-          }
-        ]
-      }
+      "kc": "KC-4.1.III"
     },
     {
       "kind": "split-matrix",
@@ -466,7 +445,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "action",
-      "eyebrow": "Module 05 · Skill Builder",
+      "eyebrow": "Module 05 � Skill Builder",
       "title": "Connect one state's voyage to another's decision.",
       "subtitle": "What did one state do, and how did it change what another state paid for?",
       "action": {
@@ -476,7 +455,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "action",
-      "eyebrow": "Module 06 · Checkpoint 1 · Optional",
+      "eyebrow": "Module 06 � Checkpoint 1 � Optional",
       "title": "The role of states.",
       "subtitle": "Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.",
       "action": {
@@ -486,7 +465,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "action",
-      "eyebrow": "Module 07 · Evidence Lab",
+      "eyebrow": "Module 07 � Evidence Lab",
       "title": "Build one claim from two sources.",
       "subtitle": "What does each source show about who paid and what they wanted? Name one limit.",
       "action": {
@@ -496,7 +475,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "action",
-      "eyebrow": "Module 10 · Checkpoint 2",
+      "eyebrow": "Module 10 � Checkpoint 2",
       "title": "Two voyages, two sponsors, cause and effect.",
       "subtitle": "Draft, work with Socrates, revise. If it is not finished in class, it is homework.",
       "action": {
@@ -506,7 +485,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "prompt",
-      "eyebrow": "Topic 4.2 · Landing Sentence",
+      "eyebrow": "Topic 4.2 � Landing Sentence",
       "title": "Rulers backed the voyages. Voyages paid back. More ships sailed.",
       "subtitle": "Rulers backed voyages because they wanted the trade of Asia, and every voyage that paid made the next one easier to fund. Next: Columbus was looking for a route to Asia. What he started was an exchange of living things nobody planned.",
       "kc": "Unit 4: Learning Objective C"

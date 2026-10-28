@@ -23,4 +23,15 @@ const by=id=>T.slides.find(s=>s.phase===id);
 const set=(id,visual)=>{const s=by(id);if(s)s.template=Object.assign({},s.template,{visual});};
 
 set('calicut',AI('topics/4-1/'+encodeURIComponent('4.1 - Arriving at Calicut 1498.jpg'),'Reconstruction of two large European ships at anchor off a palm-lined shore, surrounded by many dhows with triangular sails and small rowing boats, under heavy gray clouds'));
+
+// Teacher slide 12: show the treaty's geography without changing its story or notes.
+const treaty=by('line');
+if(treaty){
+  treaty.kind='map';
+  treaty.visual={
+    url:IMG+'topics/4-2/treaty-of-tordesillas.png',
+    alt:'BeHistorical map of Treaty of Tordesillas claims: Spain west of the approximate 1494 line, Portugal east including eastern Brazil; 370 leagues west of Cape Verde. Shading shows claimed spheres, not actual control in 1494.'
+  };
+  delete treaty.template;
+}
 })();
