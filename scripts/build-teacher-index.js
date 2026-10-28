@@ -60,6 +60,8 @@ const TOOLS = [
   // Topic 5.6's deck (topic-5-6-os.html) waits for its dates the same way
   // (2026-10-24).
   { kind: 'primary', label: 'Skills Lens', desc: 'Analyze Canvas submissions for completion, response quality, and AP skill trends across the year.', href: 'skills-lens.html' },
+  // Demo until ZCS approves teacher reads of submitted work; then it moves to primary.
+  { kind: 'authoring', label: 'Class Pulse (demo)', desc: 'Checkpoint 1 and 2 by criterion as students submit, on invented students. Real work is read only after district approval.', href: 'class-pulse.html' },
   { kind: 'authoring', label: 'Slide Templates', desc: 'Reference every Teaching OS slide template with real Unit 2 examples and copy-ready slide data.', href: 'slide-templates.html' },
   { kind: 'legacy', label: 'Run of Show', desc: 'Standalone pacing pages for Topics 1.4–1.6, before those lessons move into the integrated Teaching OS.', href: ROS_INDEX_OUT },
 ];

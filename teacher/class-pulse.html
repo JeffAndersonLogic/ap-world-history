@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<!-- Stage A: invented data only. connect-src 'none' means this page cannot read
+     anyone's work or reach any AI, whatever its scripts try; reading real
+     submitted work is Stage B and needs ZCS's written approval first. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="robots" content="noindex">
+<title>Class Pulse | BeHistorical</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="class-pulse.css">
+<link rel="icon" href="data:,">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <strong>Class Pulse <span>· BeHistorical</span></strong>
+    <span class="gold-pill">Demo: invented students</span>
+  </div>
+</header>
+<div class="wrap">
+  <section class="hero" aria-label="Class at a glance">
+    <div class="copy">
+      <span class="eyebrow">BeHistorical · AP World History</span>
+      <h1>Class Pulse</h1>
+      <p>How each student's Checkpoint 1 and 2 writing meets each criterion, as they submit it. Every student and answer here is invented. Real work is read only after the district approves.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><b id="h-n">0</b><small id="h-n-label">Students</small></div>
+      <div class="stat"><b id="h-in">0</b><small>Submissions in</small></div>
+      <div class="stat"><b id="h-need">0</b><small>Need you now</small></div>
+    </div>
+    <div class="today">
+      <span class="eyebrow">Now teaching</span>
+      <div class="topic" id="h-topic"></div>
+      <div class="time" id="h-min"></div>
+      <p id="h-kind"></p>
+    </div>
+  </section>
+  <nav class="tabs" role="tablist" aria-label="Screens">
+    <button role="tab" data-tab="live" id="tab-live">During class</button>
+    <button role="tab" data-tab="pulse" id="tab-pulse">After class</button>
+    <button role="tab" data-tab="course" id="tab-course">Across the course</button>
+    <button role="tab" data-tab="student" id="tab-student">One student</button>
+  </nav>
+</div>
+
+<main><div class="wrap">
+  <div class="panel" style="margin-bottom:16px">
+    <div class="toolbar">
+      <div><label class="ctl-label" for="topic">Topic</label><select class="sel" id="topic"></select></div>
+      <div><label class="ctl-label" for="section">Class</label><select class="sel" id="section"></select></div>
+      <div><span class="ctl-label">Names</span><span class="seg" id="names"><button type="button" aria-pressed="true" data-v="names">Show</button><button type="button" aria-pressed="false" data-v="anon">Projector safe</button></span></div>
+    </div>
+  </div>
+
+  <section class="view" id="view-live" role="tabpanel" aria-labelledby="tab-live">
+    <div class="viewhead"><h2>During class</h2><p id="live-sub"></p></div>
+    <div class="panel">
+      <div class="toolbar">
+        <div class="clock">
+          <button class="btn primary" type="button" id="play">Play the class period</button>
+          <div class="track" aria-hidden="true"><div class="fill" id="clockfill"></div></div>
+          <b id="clocktxt"></b>
+        </div>
+        <button class="btn" type="button" id="toend">Jump to the bell</button>
+        <button class="btn" type="button" id="reset">Back to minute 0</button>
+        <div><span class="ctl-label">Order</span><span class="seg" id="sort"><button type="button" aria-pressed="true" data-v="roster">Roster</button><button type="button" aria-pressed="false" data-v="need">Most need first</button></span></div>
+      </div>
+      <div class="legend" id="legend-live"></div>
+    </div>
+    <div class="cols">
+      <div class="scroller"><table class="heat m-rn" id="heat"></table></div>
+      <aside class="rail">
+        <div class="panel">
+          <h3>Walk over to</h3>
+          <p class="small">Students whose newest submitted checkpoint is not there yet on two or more criteria.</p>
+          <ul class="watch" id="watch"></ul>
+        </div>
+        <div class="panel">
+          <h3>Weak spot right now</h3>
+          <div id="weak" class="callout"></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="view" id="view-pulse" role="tabpanel" aria-labelledby="tab-pulse" hidden>
+    <div class="viewhead"><h2>After class</h2><p>What the whole class showed, and what to do next</p></div>
+    <div class="panel">
+      <div class="pulse-head">
+        <div style="display:grid;gap:4px">
+          <h2 id="pulse-title"></h2>
+          <p class="small" id="pulse-n"></p>
+        </div>
+        <div class="calib" id="calib"></div>
+      </div>
+    </div>
+    <div class="cols">
+      <div style="display:grid;gap:16px;min-width:0">
+        <div class="panel">
+          <h3>Criterion by criterion</h3>
+          <p class="small">Bars count every student, including anyone not submitted and anyone the tool could not read. Click a segment to see who is in it.</p>
+          <div id="targets"></div>
+        </div>
+        <div class="panel">
+          <h3>Groups for next class</h3>
+          <p class="small">Sorted on the weakest criterion. A suggestion to react to, not a plan.</p>
+          <div class="groups" id="groups"></div>
+        </div>
+      </div>
+      <aside class="rail">
+        <div class="panel">
+          <h3>What tripped them up</h3>
+          <p class="small">Wrong ideas the tool found in the writing. Missing pieces are not counted here.</p>
+          <div class="mis" id="mis"></div>
+        </div>
+        <div class="panel">
+          <h3>Confidence against evidence</h3>
+          <div class="chartbox" id="scatterbox"></div>
+          <p class="small" id="scatter-note"></p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="view" id="view-course" role="tabpanel" aria-labelledby="tab-course" hidden>
+    <div class="viewhead"><h2>Across the course</h2><p>Every unit topic · your sections</p></div>
+    <div class="panel">
+      <div class="toolbar">
+        <div><span class="ctl-label">Number shows</span><span class="seg" id="cmetric"><button type="button" aria-pressed="true" data-v="ev">% demonstrating</button><button type="button" aria-pressed="false" data-v="nd">% not yet</button></span></div>
+      </div>
+      <div class="legend" id="legend-course"></div>
+    </div>
+    <div class="cols">
+      <div class="scroller"><table class="course m-ev" id="coursegrid"></table></div>
+      <aside class="rail">
+        <div class="panel">
+          <h3>How to read it</h3>
+          <p class="small">Each cell is the share of checkpoint criteria students demonstrated in that topic. Only the selected topic and class are computed from this page's invented answers; every other cell is an invented number. Dashed cells are topics past the demo's last taught topic. Click the selected cell to open After class.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="view" id="view-student" role="tabpanel" aria-labelledby="tab-student" hidden>
+    <div class="viewhead"><h2>One student</h2><p>Every topic so far, for one person</p></div>
+    <div class="panel">
+      <div class="toolbar">
+        <div><label class="ctl-label" for="stpick">Student</label><select class="sel" id="stpick"></select></div>
+        <span class="small">Two squares per topic: Checkpoint 1, then Checkpoint 2. Each letter sums up that checkpoint's criteria.</span>
+      </div>
+    </div>
+    <div class="sgrid">
+      <div class="panel m-rn" id="stleft"></div>
+      <div class="panel" id="stright"></div>
+    </div>
+  </section>
+</div></main>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dtitle" hidden>
+  <header>
+    <div style="display:grid;gap:2px"><h2 id="dtitle">Response</h2><span class="small" id="dsub"></span></div>
+    <button class="x" type="button" id="dclose" aria-label="Close">&times;</button>
+  </header>
+  <div class="body" id="dbody"></div>
+</aside>
+<div class="sr" aria-live="polite" id="announce"></div>
+
+<script src="../assets/data/skills-map.js"></script>
+<script src="class-pulse-engine.js"></script>
+<script src="data/class-pulse-calibration.js"></script>
+<script src="data/class-pulse-demo.js"></script>
+<script src="class-pulse-app.js"></script>
+</body>
+</html>

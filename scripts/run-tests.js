@@ -77,6 +77,7 @@ const SUITES = {
   browser: [
     ['scripts/test/sync-page.test.js', 'backup on the real lesson pages: off by default, restore, typing, conflicts, Foundations'],
     ['scripts/test/class-pulse-submit.test.js', 'Class Pulse Submit: off as shipped, receipt fingerprint, kept out of Canvas, restored with the answer'],
+    ['scripts/test/class-pulse-page.test.js', 'Class Pulse teacher page: every topic\'s criteria, no network, projector safe, every student counted'],
     ['scripts/test/unit45-atlases.browser.test.js', 'Units 4–5 atlases: all views, keyboard, responsive hubs, and negative controls'],
     ['scripts/test/unit3-atlas.browser.test.js', 'Unit 3 atlas: direct clicks, keyboard, touch, and responsive hub'],
     ['scripts/test/unit1-atlas.browser.test.js', 'Unit 1 atlas: regional map interaction and responsive embed'],
