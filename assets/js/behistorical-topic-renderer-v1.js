@@ -29,6 +29,10 @@ const WORK_FIRST10_LABELS = {};
 // id. The bridge buttons only carry that id, so the mode and the focus terms
 // have to be stashed here at render time for generateCheckpointPrompt to read.
 const CHECKPOINT_MS = {};
+// The checkpoints a student can submit to Class Pulse, and the suffix their
+// receipt slot carries in the backup. See "Class Pulse submission" below.
+const SUBMIT_IDS = ['checkpoint-one-response', 'checkpoint-two-response'];
+const SUBMIT_SUFFIX = '-submitted';
 
 // ── BEGIN INLINED COACH PROMPT BUILDER ──────────────────────────────────────
 //
@@ -900,6 +904,7 @@ const CHECKPOINT_MS = {};
 window.BH_SYNC_CONFIG = Object.freeze({
   "enabled": true,
   "pilot": false,
+  "submit": false,
   "tenantId": "zcs",
   "courseId": "apwh",
   "allowedDomains": [
@@ -2436,6 +2441,7 @@ function openModule(id) {
   byId('pop-body').innerHTML = mod.render();
   byId('pop-modal').classList.add('show');
   loadAllDrafts();
+  refreshSubmitStatus();
   bhOpenModal('pop-modal', 'pop-title');
 }
 
@@ -2972,9 +2978,123 @@ function responseBlock(id, prompt, responseType, terms = []) {
       <div class="tool-row">
         <button class="btn secondary" type="button" onclick="selfCheck('${id}')">Run Self-Check</button>
       </div>
+      ${submitBlock(id)}
       <div id="${id}-result" class="check-result"></div>
     </div>`;
 }
+
+// ── Class Pulse submission (off unless switched on) ───────────────────────────
+//
+// A student presses Submit on a checkpoint to say "this is my finished answer".
+// That is the only signal Class Pulse reads, because a backup snapshot can be
+// half a sentence. Spec: AndersonLogic-OS
+// 04_PRODUCTS/BeHistorical/Class-Pulse-Spec-2026-10-27.md.
+//
+// The receipt is a fingerprint of exactly what was submitted, the answer and its
+// confidence, made with the backup engine's own valueHash so the teacher side can
+// recompute it from the backed-up record and compare. Editing after submitting
+// changes nothing by itself: the fingerprint stops matching, which the teacher
+// side reads as "changed since submitted", and the student is told to submit
+// again. Confidence stays optional here, as it is everywhere else.
+//
+// The receipt reaches the backup as its own small slot, `<checkpoint>-submitted`,
+// beside the answer. That needs no change to the backup engine or to the
+// Firestore rules: a slot is a slot, with the same derived id, size ceiling and
+// write window as every other. It is stored under `behistorical-submit-`, outside
+// the draft prefix collectLessonWork() sweeps, so it never reaches the Canvas paste.
+//
+// `submit` in scripts/lib/sync-config.js is the switch. It stays false until ZCS
+// approves teacher reads of submitted work, so no student sees a button that
+// sends something nobody reads. SUBMIT_IDS and SUBMIT_SUFFIX are declared at the
+// top of the file, for the temporal-dead-zone reason given there.
+
+function submitOn() {
+  return !!(window.BH_SYNC_CONFIG && window.BH_SYNC_CONFIG.submit === true
+    && window.BHSync && typeof window.BHSync.valueHash === 'function');
+}
+
+function submitKey(id) {
+  const topic = (L && L.meta && L.meta.topic) ? L.meta.topic.replace(/\s+/g, '-').toLowerCase() : 'shared';
+  return `behistorical-submit-${topic}-${id}`;
+}
+
+// What the backup would send for this slot right now: the trimmed text, the way
+// collectLessonWork() and the engine both trim it, and the cleaned confidence.
+function submittedAnswer(id) {
+  const box = byId(id);
+  const text = String((box ? box.value : BHDraftStore.get(draftKey(id))) || '').trim();
+  return { text: text, confidence: confidenceFor(id) };
+}
+
+function receiptFor(id) {
+  const raw = String(BHDraftStore.get(submitKey(id)) || '');
+  const m = /fingerprint ([0-9a-z]+)\s*$/.exec(raw);
+  return m ? { text: raw, print: m[1] } : null;
+}
+
+function submitBlock(id) {
+  if (!submitOn() || SUBMIT_IDS.indexOf(id) === -1) return '';
+  return `
+      <div class="submit-row">
+        <button class="btn" type="button" id="${id}-submit-btn" onclick="submitCheckpoint('${id}')">Submit to your teacher</button>
+        <p class="submit-status" id="${id}-submit-status" role="status" aria-live="polite"></p>
+      </div>`;
+}
+
+function submitCheckpoint(id) {
+  const answer = submittedAnswer(id);
+  const status = byId(id + '-submit-status');
+  if (!answer.text) {
+    if (status) status.textContent = 'Write your answer first, then submit it.';
+    return;
+  }
+  // Save the answer now rather than on the 600ms timer, so the backup's next
+  // look sees the same words the receipt was made from.
+  BHDraftStore.set(draftKey(id), (byId(id) || {}).value || answer.text);
+  const when = new Date().toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+  BHDraftStore.set(submitKey(id), `Submitted ${when} · fingerprint ${window.BHSync.valueHash(answer.text, answer.confidence)}`);
+  updateSubmitStatus(id);
+}
+
+function updateSubmitStatus(id) {
+  const status = byId(id + '-submit-status');
+  const btn = byId(id + '-submit-btn');
+  if (!status || !btn || !submitOn()) return;
+  const receipt = receiptFor(id);
+  const answer = submittedAnswer(id);
+  let state;
+  if (!receipt) state = 'none';
+  else if (answer.text && receipt.print === window.BHSync.valueHash(answer.text, answer.confidence)) state = 'submitted';
+  else state = 'changed';
+  status.dataset.state = state;
+  btn.disabled = state === 'submitted';
+  if (state === 'none') {
+    btn.textContent = 'Submit to your teacher';
+    status.textContent = 'Not submitted yet. Submit when this is your finished answer.';
+  } else if (state === 'submitted') {
+    btn.textContent = 'Submitted';
+    status.textContent = receipt.text.replace(/\s*·\s*fingerprint.*$/, '') + '. You can still edit it, and if you do, submit again.';
+  } else {
+    btn.textContent = 'Submit again';
+    status.textContent = 'You changed this after submitting. Submit again so your teacher sees this version.';
+  }
+}
+
+function refreshSubmitStatus() { SUBMIT_IDS.forEach(updateSubmitStatus); }
+
+// The receipts the backup carries, as slots beside the answers.
+function submitSlots() {
+  if (!submitOn()) return [];
+  return SUBMIT_IDS.map(id => {
+    const receipt = receiptFor(id);
+    return receipt ? { id: id + SUBMIT_SUFFIX, text: receipt.text, confidence: '' } : null;
+  }).filter(Boolean);
+}
+
+document.addEventListener('input', function (event) {
+  const t = event.target;
+  if (t && SUBMIT_IDS.indexOf(t.id) !== -1) updateSubmitStatus(t.id);
+});
 
 // ── Draft / save / copy / self-check ─────────────────────────────────────────
 
@@ -3099,12 +3219,14 @@ function confidenceBlock(id) {
 
 function setConfidence(id, value) {
   BHDraftStore.set(confidenceKey(id), String(value));
+  updateSubmitStatus(id);
 }
 
 function clearConfidence(id) {
   BHDraftStore.set(confidenceKey(id), '');
   const group = byId(id + '-confidence');
   if (group) group.querySelectorAll('input[type="radio"]').forEach(r => { r.checked = false; });
+  updateSubmitStatus(id);
 }
 
 // 1 to 5, or '' when the student did not answer. Anything else is discarded
@@ -3710,6 +3832,17 @@ if (L) renderWorkExportPanel();
 const BH_SYNC_SELF = document.currentScript && document.currentScript.src;
 
 function syncApplyLocal(id, value) {
+  // A Class Pulse receipt restored from the backup goes back to its own key,
+  // never into a draft.
+  if (id.slice(-SUBMIT_SUFFIX.length) === SUBMIT_SUFFIX) {
+    const base = id.slice(0, -SUBMIT_SUFFIX.length);
+    if (SUBMIT_IDS.indexOf(base) !== -1) {
+      BHDraftStore.set(submitKey(base), String(value.text || ''));
+      updateSubmitStatus(base);
+    }
+    return;
+  }
+
   const text = String(value.text || '');
   const conf = /^[1-5]$/.test(String(value.confidence || '')) ? String(value.confidence) : '';
   const topicKey = ((L.meta && L.meta.topic) || '').replace('Topic ', '').trim();
@@ -3755,9 +3888,13 @@ function syncApplyLocal(id, value) {
 if (L && window.BHSync) {
   window.BHSync.mount({
     topicKey: workTopicId(),
-    slots: () => collectLessonWork().map(w => ({ id: w.id, text: w.text, confidence: w.confidence })),
+    slots: () => collectLessonWork().map(w => ({ id: w.id, text: w.text, confidence: w.confidence })).concat(submitSlots()),
     apply: syncApplyLocal,
-    labelFor: id => { const w = WORK_ITEMS.find(i => i.id === id); return w ? w.label : id; },
+    labelFor: id => {
+      const base = id.slice(-SUBMIT_SUFFIX.length) === SUBMIT_SUFFIX ? id.slice(0, -SUBMIT_SUFFIX.length) : id;
+      const w = WORK_ITEMS.find(i => i.id === base);
+      return w ? (base === id ? w.label : w.label + ', submission') : id;
+    },
     transportUrl: BH_SYNC_SELF ? new URL('behistorical-sync-transport.js', BH_SYNC_SELF).href : ''
   });
 }

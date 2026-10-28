@@ -48,6 +48,13 @@ module.exports = {
   enabled: true,
   pilot: false,
 
+  // Class Pulse: the Submit button on Checkpoint 1 and 2 of unit lessons, which
+  // backs up a fingerprint of the finished answer as its own slot. FALSE until ZCS
+  // approves teacher reads of submitted work (Stage B of AndersonLogic-OS
+  // 04_PRODUCTS/BeHistorical/Class-Pulse-Spec-2026-10-27.md), so no student sees a
+  // button whose result nobody can read. It does nothing while `enabled` is false.
+  submit: false,
+
   tenantId: 'zcs',
   courseId: 'apwh',
   // The domains a sign-in is accepted from, checked again after the Google popup.

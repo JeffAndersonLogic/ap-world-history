@@ -437,3 +437,40 @@ Foundations, with its own controls. `sync-transport.test.js` (the `rules` suite)
 runs the real requests and the engine against the emulator with the real rules.
 `firestore-rules.test.js` holds the rules. The last two need the emulator and
 SKIP without it; a SKIP is not a pass.
+
+## Class Pulse submission, added 2026-10-28
+
+Class Pulse, the teacher view of Checkpoint 1 and 2 by criterion, reads only work
+a student has **submitted**, because a backup snapshot can be half a sentence.
+The build spec is AndersonLogic-OS
+`04_PRODUCTS/BeHistorical/Class-Pulse-Spec-2026-10-27.md`.
+
+**It is off.** `submit` in `scripts/lib/sync-config.js` is false, so no student
+sees a Submit button, and it stays false until ZCS approves teacher reads of
+submitted work. Like the rest of the config it is inlined by `build-sync.js`.
+
+**The receipt is a fingerprint, not a copy.** Pressing Submit stores
+`Submitted <date> · fingerprint <hash>` under `behistorical-submit-<topic>-<slot>`,
+where the hash is the backup engine's own `valueHash` of the trimmed answer and its
+confidence. The teacher side recomputes `valueHash` from the backed-up answer and
+compares: equal means submitted and unchanged; different means changed since
+submitted. Editing never unsubmits anything by itself, and confidence stays
+optional, as it is everywhere else on the page.
+
+**It rides the backup as an ordinary slot, so the engine and the rules did not
+change.** The renderer appends receipts to `slots()` as `<checkpoint>-submitted`
+and `syncApplyLocal` routes one back to its own key on restore. That slot has the
+same derived document id, size ceiling and 30-second write window as every other,
+so a receipt is at most one more document per checkpoint per student per topic,
+and it needed no change to `firestore.rules` and no new ZCS review of them.
+
+**The key prefix is load-bearing again.** `behistorical-submit-` sits outside the
+`behistorical-draft-` prefix `collectLessonWork()` sweeps, so a receipt is never
+pasted into Canvas as an answer. The browser test has a negative control that
+moves it under the draft prefix and goes red.
+
+**One check, in the browser suite.** `scripts/test/class-pulse-submit.test.js` runs
+the real lesson page against the stand-in transport: off as shipped, the
+fingerprint, the receipt reaching the backup, the teacher's reading of it, edits
+and rating changes reading as changed, and a wiped device getting the receipt back
+with the answer. Five negative controls.

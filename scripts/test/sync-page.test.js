@@ -406,7 +406,7 @@ async function suite(browser) {
     },
     {
       name: 'the backup is told the lesson has no slots',
-      patch: b => b.replace("slots: () => collectLessonWork().map(w => ({ id: w.id, text: w.text, confidence: w.confidence })),", "slots: () => [],"),
+      patch: b => b.replace("slots: () => collectLessonWork().map(w => ({ id: w.id, text: w.text, confidence: w.confidence })).concat(submitSlots()),", "slots: () => [],"),
       expect: /typed answer reaches the cloud/
     },
     {

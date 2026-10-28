@@ -216,6 +216,11 @@ blockquote{margin:0; padding:20px; background:#f6efe3; border-left:6px solid var
 .response-area{width:100%; min-height:150px; resize:vertical; padding:16px; border:1px solid rgba(90,95,92,.38); border-radius:14px; background:#fff; color:#111; font-family:Georgia,serif; line-height:1.55; font-size:1rem}
 .response-area:focus{outline:3px solid rgba(201,164,106,.35); border-color:var(--burnished-bronze)}
 .tool-row{display:flex; flex-wrap:wrap; gap:10px; margin-top:12px}.check-result{margin-top:12px; font-weight:700; color:var(--oxidized-brown)}
+/* Class Pulse Submit, shown only when sync-config's submit switch is on */
+.submit-row{display:flex; flex-wrap:wrap; align-items:center; gap:10px 14px; margin-top:14px; padding-top:14px; border-top:1px solid var(--paper-line)}
+.submit-row .btn:disabled{opacity:.7; cursor:default}
+.submit-status{margin:0; font-weight:600; color:var(--aged-iron)}
+.submit-status[data-state="changed"]{color:var(--rust-copper)}
 .feedback-panel{display:none; margin-top:12px; padding:16px; background:#f6efe3; color:var(--ink)}.feedback-panel.show{display:block}
 
 /* Footer / lightbox */
