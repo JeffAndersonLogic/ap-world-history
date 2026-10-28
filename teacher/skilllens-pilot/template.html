@@ -19,7 +19,8 @@
 <a href="#sample-meaning" data-view="meaning"><span aria-hidden="true">◇</span> What This Means</a>
 </nav><p class="sidebar-note"><strong>Evidence, not grades.</strong><br>Each color describes writing for this checkpoint, never a student’s permanent ability.</p></aside>
 <main>
-<div class="intro"><div><p class="eyebrow">TEACHER COMMAND CENTER / EVIDENCE EXPLORER</p><h1 id="page-title" tabindex="-1">Class Pulse</h1><p class="lede" id="page-subtitle">The learning picture, with the writing behind it.</p></div><button id="export" type="button" disabled hidden>Download review</button></div>
+<div class="intro"><div><p class="eyebrow">TEACHER COMMAND CENTER / EVIDENCE EXPLORER</p><h1 id="page-title" tabindex="-1">Class Pulse</h1><p class="lede" id="page-subtitle">The learning picture, with the writing behind it.</p></div><div class="intro-actions"><button id="export" type="button" disabled hidden>Download review</button><button id="ai-export" type="button" hidden>Export for AI rating</button><button id="ai-import-button" type="button" hidden>Import AI ratings</button><input id="ai-import" type="file" accept="application/json,.json" hidden></div></div>
+<p id="ai-status" class="muted ai-status" role="status" hidden></p>
 <p class="notice"><strong>Fictional classroom.</strong> All 12 students and their responses are invented. Judgments are authored examples, not AI results. No accuracy evaluation has been run.</p>
 <div class="scope-bar" aria-label="Pilot scope"><div><span>Topic</span><strong>2.3 · Indian Ocean Exchange</strong></div><div><span>Checkpoint</span><strong>1 · Independent response</strong></div><div><span>Class</span><strong>Jeff’s sample class</strong></div></div>
 <div id="load-state" role="status"></div>
@@ -52,6 +53,7 @@
 </main>
 </div>
 <script>/* PILOT_CORE */</script>
+<script>/* PILOT_AI_HANDOFF */</script>
 <script>/* PILOT_DATA */</script>
 <script>/* PILOT_APP */</script>
 </body></html>

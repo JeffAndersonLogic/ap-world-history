@@ -36,6 +36,8 @@ const W = '\x1b[1m', D = '\x1b[2m', X = '\x1b[0m';
 const SUITES = {
   offline: [
     ['scripts/test/class-pulse.test.js', 'production Class Pulse contracts and evaluation'],
+    ['scripts/test/class-pulse-ai-handoff.test.js', 'Class Pulse AI rating export, import and approval switch'],
+    ['scripts/test/class-pulse-practice.test.js', 'Class Pulse practice packet, answer key and AI comparison'],
     ['scripts/test/skilllens-pilot.test.js', 'Synthetic teacher pilot: evidence validity, judgment integrity, and generated source parity'],
     ['scripts/test/unit45-atlases.test.js', 'Units 4–5 atlases: content, geography, hub integration, and negative controls'],
     ['scripts/test/unit3-atlas.test.js', 'Unit 3 atlas: reviewed evidence, geographic scope, and visual-only hub'],
@@ -77,6 +79,7 @@ const SUITES = {
   ],
   browser: [
     ['scripts/test/class-pulse.browser.test.js', 'production Class Pulse workflow'],
+    ['scripts/test/class-pulse-ai-handoff.browser.test.js', 'Class Pulse AI rating loop and approval switch'],
     ['scripts/test/skilllens-pilot.browser.test.js', 'Synthetic teacher pilot: evidence-to-decision flow, corrections, export, and offline boundary'],
     ['scripts/test/sync-page.test.js', 'backup on the real lesson pages: off by default, restore, typing, conflicts, Foundations'],
     ['scripts/test/unit45-atlases.browser.test.js', 'Units 4–5 atlases: all views, keyboard, responsive hubs, and negative controls'],

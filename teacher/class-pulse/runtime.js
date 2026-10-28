@@ -15,7 +15,7 @@
    $('production-note').textContent='Teacher review mode. No automatic analysis service is connected. Unanalyzed writing stays unassessed. '+(data.stale?data.stale+' older judgment records were excluded because responses changed.':'');
    let saving=false;
    async function save(operation){if(saving)throw Error('A save is already in progress.');saving=true;document.querySelectorAll('#workspace button,#workspace select').forEach(el=>el.disabled=true);try{return await operation();}finally{saving=false;document.querySelectorAll('#workspace button,#workspace select').forEach(el=>el.disabled=false);}}
-   window.startClassPulse(data,{saveOverride:(record,response)=>save(()=>db.saveOverride(record,response,crypto.randomUUID())),saveDecision:record=>save(()=>db.saveDecision(record,crypto.randomUUID()))});
+   window.startClassPulse(data,{aiAssist:config.aiAssist,saveOverride:(record,response)=>save(()=>db.saveOverride(record,response,crypto.randomUUID())),saveDecision:record=>save(()=>db.saveDecision(record,crypto.randomUUID()))});
    $('sign-in').hidden=true;$('sign-out').hidden=false;$('refresh').hidden=false;
   }catch(e){status.hidden=false;status.textContent='Class could not load: '+e.message+' No sample data has been substituted.';$('workspace').hidden=true;}finally{opening=false;$('sign-in').disabled=false;}
  });

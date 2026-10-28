@@ -133,6 +133,10 @@ verification has been performed by this build.
 
 ## Analysis and evaluation gate
 
+Added 2026-10-28: a teacher-run AI can now supply first-pass suggestions through an export
+and import on the teacher page, switched off for real students until ZCS approval is recorded.
+See [docs/class-pulse/README.md](class-pulse/README.md). The provider-based path below is unchanged.
+
 The offline command is:
 `node scripts/evaluate-class-pulse.js /private/evaluation.json`.
 Input declares `split` (`development` or `holdout`), `version`, the canonical

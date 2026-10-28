@@ -18,6 +18,7 @@
 @media(max-width:1100px){.app-shell{grid-template-columns:174px minmax(0,1fr)}main{padding:24px 20px}.sidebar a{padding:12px 9px;font-size:12px}.pulse-grid,.lower-grid{grid-template-columns:1fr}.pulse-grid>.heatmap-panel{order:-1}.metric{padding:13px}.metric .metric-label{font-size:11px}.scope-bar{gap:10px}.review-grid{grid-template-columns:1fr}.heatmap-line{grid-template-columns:1fr 1.6fr 43px}}
 @media(max-width:700px){header{padding:14px 16px;gap:10px}.brand{font-size:18px}.product-name{display:none}.app-shell{display:block}.sidebar{padding:10px 14px;border-right:0;border-bottom:1px solid var(--line)}.sidebar>.eyebrow,.sidebar-note{display:none}.sidebar nav{grid-template-columns:1fr 1fr;gap:6px}.sidebar a{font-size:11px;padding:9px;gap:7px}.sidebar a[aria-current=page]{box-shadow:none}main{padding:22px 16px}.intro{align-items:start;gap:8px}.intro button{font-size:10px;padding:8px;max-width:95px}.eyebrow{font-size:8px}.scope-bar{padding:12px;display:grid;gap:9px}.scope-bar>div{font-size:10px}.scope-bar strong{font-size:11px}.metric-grid{grid-template-columns:1fr 1fr;gap:9px}.metric strong{font-size:27px}.panel{padding:18px}.heatmap-line{grid-template-columns:minmax(100px,1fr) minmax(70px,1.2fr) 35px;gap:8px}.heatmap-percent{font-size:11px}.criterion-link{font-size:10px}.filters{flex-direction:column;gap:0}h2{font-size:18px}.notice{font-size:11px}.preview-matches{overflow-wrap:anywhere}}
 @media print{header{color:black;background:white}.sidebar,button,.filters,form,#evidence-choice{display:none}.app-shell{display:block}main{padding:0}.pulse-grid,.lower-grid,.review-grid{display:block}.panel{margin-bottom:18px;box-shadow:none}blockquote{break-inside:avoid}}
+.intro-actions{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}.ai-status{margin:0 0 10px}
 </style>
 <!-- Bundled font licenses
 Cinzel
@@ -322,7 +323,8 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 <a href="#page-title" data-view="meaning"><span aria-hidden="true">◇</span> What This Means</a>
 </nav><p class="sidebar-note"><strong>Evidence, not grades.</strong><br>Each color describes writing for this checkpoint, never a student’s permanent ability.</p></aside>
 <main>
-<div class="intro"><div><p class="eyebrow">TEACHER COMMAND CENTER / EVIDENCE EXPLORER</p><h1 id="page-title" tabindex="-1">Class Pulse</h1><p class="lede" id="page-subtitle">The learning picture, with the writing behind it.</p></div><button id="export" type="button" disabled hidden>Download review</button></div>
+<div class="intro"><div><p class="eyebrow">TEACHER COMMAND CENTER / EVIDENCE EXPLORER</p><h1 id="page-title" tabindex="-1">Class Pulse</h1><p class="lede" id="page-subtitle">The learning picture, with the writing behind it.</p></div><div class="intro-actions"><button id="export" type="button" disabled hidden>Download review</button><button id="ai-export" type="button" hidden>Export for AI rating</button><button id="ai-import-button" type="button" hidden>Import AI ratings</button><input id="ai-import" type="file" accept="application/json,.json" hidden></div></div>
+<p id="ai-status" class="muted ai-status" role="status" hidden></p>
 <p class="notice" id="production-note">Sign in to load only your authorized class. No student writing is embedded in this page.</p>
 <div class="scope-bar" aria-label="Pilot scope"><div><span>Topic</span><strong>2.3 · Indian Ocean Exchange</strong></div><div><span>Checkpoint</span><strong>1 · Independent response</strong></div><div><span>Class</span><strong id="class-label">Your assigned class</strong></div></div>
 <div id="load-state" role="status"></div>
@@ -426,7 +428,73 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   return {bands, labels, validate, snapshot, correct, summarize, decision};
 }));
 </script>
-<script>const CLASS_PULSE_CONFIG={"tenantId":"zcs","firebase":{"apiKey":"AIzaSyDq4oEqKf_tjZJPmC1iyZ9hbrfz0E07Prs","authDomain":"behistoric.firebaseapp.com","projectId":"behistoric","appId":"1:20943260001:web:d639c8b9f833701a62dd20"},"sdkVersion":"12.19.0","allowedDomains":["zcs.k12.in.us","stumail.zcs.k12.in.us"],"assignmentId":"2.3-checkpoint-1","classId":"","analysisMode":"teacher-review","releaseState":"awaiting-class-setup"};const CLASS_PULSE_CONTRACT={"assignmentId":"2.3-checkpoint-1","title":"Checkpoint 1: Environment and Maritime Technology","prompt":"Explain how knowledge of monsoon winds and TWO maritime technologies helped expand Indian Ocean trade after 1200.","learningTargets":["I can explain how monsoon knowledge, the compass, astrolabe, and larger ship designs helped Indian Ocean trade expand after 1200."],"successCriteria":["I can explain how predictable monsoon winds and navigational or shipbuilding innovations lowered the risk and increased the range of maritime trade."],"version":"2.3-checkpoint1-v1","source":"https://apcentral.collegeboard.org/media/pdf/ap-world-history-modern-course-and-exam-description-effective-fall-2026.pdf","sourcePages":"57–58","criteria":[{"id":"monsoons","label":"Explain the seasonal winds","description":"Explain how merchants used predictable seasonal changes in monsoon winds to plan voyages.","guidance":"Accept varied wording for seasonal reversal and timing outbound or return journeys. Rain alone is not the maritime mechanism; winds do not blow one way all year.","action":"Sketch an outward voyage and a return voyage. Ask students to explain when a merchant should leave and why.","essential":true},{"id":"technology","label":"Explain two maritime technologies","description":"Use two historically appropriate maritime technologies and explain what each enabled sailors or merchants to do.","guidance":"Examples include a compass for direction, an astrolabe for estimating latitude, and larger ships for carrying more cargo. Accept other historically supported examples. Naming two tools without explaining their functions is partial evidence.","action":"Compare a list of tools with an explanation of their functions. Have students add a function to each of two technologies.","essential":true},{"id":"connection","label":"Connect the causes to trade growth","description":"Connect wind knowledge and the technologies to more reliable voyages, increased trade volume, or a wider geographic range of exchange.","guidance":"Look for a causal mechanism, not just a claim that trade increased. Preserve a correct causal link even if another criterion has a gap; contradictions affecting this link need review.","action":"Model a because → enabled → trade grew explanation, then ask students to revise one causal link in their response.","essential":true}],"contractId":"52c286a7b648d2f6670cd17c0f8346440b632dfe58b11ca5ab4adc016158dc93"};</script>
+<script>/* AI rating handoff: an export packet a teacher-run AI rates, and the import that checks its
+   ratings. The packet carries the question, the criteria and the answer text only: no name,
+   account ID, roster label or class. Imported ratings live in page memory as suggestions;
+   only a rating the teacher accepts or changes is saved, as that teacher's own judgment.
+   docs/class-pulse/README.md explains the workflow and the approval it waits on. */
+(function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.ClassPulseAIHandoff=api;})(typeof globalThis!=='undefined'?globalThis:this,function(){
+ 'use strict';
+ const PACKET='behistorical-class-pulse-ai-packet-v1',RATINGS='behistorical-class-pulse-ai-ratings-v1',INSTRUCTIONS='class-pulse-ai-rating-v1';
+ const BANDS={meets:'Meets: the answer clearly shows this criterion.',partial:'Partly shown: some of it is there, but it is incomplete or unexplained.',not_yet:'Not yet shown: it is missing or wrong.',review:'Needs your review: too short, off-topic or contradictory to judge.'};
+ const hasText=v=>typeof v==='string'&&v.trim().length>0;
+ async function sha256(text){const bytes=new TextEncoder().encode(text),digest=await globalThis.crypto.subtle.digest('SHA-256',bytes);return Array.from(new Uint8Array(digest),b=>b.toString(16).padStart(2,'0')).join('');}
+ // Real student writing may leave the page only after ZCS approves it in writing, recorded in
+ // scripts/lib/class-pulse/config.js. The invented practice class needs no approval.
+ function gate(synthetic,aiAssist){
+  if(synthetic===true)return{on:true,reason:'Practice class: every student and answer is invented.'};
+  if(aiAssist&&aiAssist.approved===true&&hasText(aiAssist.approvalReference)&&aiAssist.approvalReference.trim().length>=8)return{on:true,reason:'Approved: '+aiAssist.approvalReference.trim()};
+  return{on:false,reason:'AI rating help is off for real student work until ZCS approves it in writing.'};
+ }
+ async function buildPacket(contract,responses,options={}){
+  const seen=new Map();
+  for(const r of responses){if(r.submission==='missing'||!hasText(r.text))continue;const hash=await sha256(r.text);if(!seen.has(hash))seen.set(hash,r.text);}
+  // Sorted by fingerprint, not roster order, so an answer's position says nothing about who wrote it.
+  const answers=Array.from(seen,([textSha256,text])=>({textSha256,text})).sort((a,b)=>a.textSha256.localeCompare(b.textSha256)).map((a,i)=>({key:'A'+String(i+1).padStart(2,'0'),...a}));
+  return{format:PACKET,instructionsVersion:INSTRUCTIONS,synthetic:options.synthetic===true,createdAt:options.now||new Date().toISOString(),contractId:contract.contractId,question:contract.prompt,criteria:contract.criteria.map(c=>({id:c.id,label:c.label,description:c.description,guidance:c.guidance})),bands:BANDS,answers};
+ }
+ async function importRatings(contract,responses,input,core){
+  if(!input||typeof input!=='object'||input.format!==RATINGS)throw Error('This is not a Class Pulse ratings file. Ask the AI to follow the rating instructions exactly.');
+  if(input.contractId!==contract.contractId)throw Error('These ratings are for a different checkpoint or rubric version. Export a new packet and rate it again.');
+  if(!input.rater||!hasText(input.rater.name)||input.rater.name.length>120)throw Error('The ratings file does not say which AI produced it.');
+  if(!Array.isArray(input.ratings)||!input.ratings.length||input.ratings.length>5000)throw Error('The ratings file has no ratings.');
+  const byHash=new Map();
+  for(const r of responses){if(r.submission==='missing'||!hasText(r.text))continue;const hash=await sha256(r.text);if(!byHash.has(hash))byHash.set(hash,[]);byHash.get(hash).push(r);}
+  const provenance={kind:'external-model',author:input.rater.name.trim(),version:hasText(input.rater.instructionsVersion)?input.rater.instructionsVersion.trim():INSTRUCTIONS};
+  const analyses=[],rejected=[],seen=new Set();let unmatched=0,quoteNotFound=0;
+  for(const rating of input.ratings){
+   const key=rating&&hasText(rating.key)?rating.key:'(no key)';
+   if(!rating||typeof rating.textSha256!=='string'||!/^[0-9a-f]{64}$/.test(rating.textSha256)){rejected.push({key,reason:'Missing the answer fingerprint copied from the packet.'});continue;}
+   if(seen.has(rating.textSha256)){rejected.push({key,reason:'This answer was rated twice.'});continue;}
+   seen.add(rating.textSha256);
+   const targets=byHash.get(rating.textSha256);
+   if(!targets){unmatched++;continue;}
+   const list=Array.isArray(rating.criteria)?rating.criteria:[];
+   const ids=list.map(j=>j&&j.criterionId);
+   if(list.length!==contract.criteria.length||new Set(ids).size!==ids.length||!contract.criteria.every(c=>ids.includes(c.id))){rejected.push({key,reason:'It does not rate each criterion exactly once.'});continue;}
+   const bad=list.find(j=>!core.bands.includes(j.band)||!hasText(j.reason)||j.reason.length>1200||(j.quote!==undefined&&typeof j.quote!=='string'));
+   if(bad){rejected.push({key,reason:'A rating has an unknown label, no reason, or a reason that is too long.'});continue;}
+   for(const r of targets){
+    const criteria=contract.criteria.map(c=>{
+     const j=list.find(x=>x.criterionId===c.id),quote=hasText(j.quote)?j.quote:'',at=quote?r.text.indexOf(quote):-1;
+     const evidence=at>=0?[{start:at,end:at+quote.length,quote}]:[];
+     // A positive rating must point at the student's own words. When the quote is not in the
+     // answer word for word, the rating is not trusted and goes back to the teacher.
+     if(['meets','partial'].includes(j.band)&&!evidence.length){quoteNotFound++;return{criterionId:c.id,band:'review',evidence:[],reason:'The AI suggested “'+core.labels[j.band]+'”, but its quote is not in this answer word for word, so it was not used. Read the full response. The AI’s reason: '+j.reason.trim()};}
+     return{criterionId:c.id,band:j.band,evidence,reason:j.reason.trim()};
+    });
+    const analysis={responseId:r.id,responseText:r.text,contractId:contract.contractId,provenance,criteria};
+    const check=core.validate(contract,r,analysis);
+    if(!check.valid){rejected.push({key,reason:check.errors.join(' ')});continue;}
+    analyses.push(analysis);
+   }
+  }
+  return{analyses,report:{rated:analyses.length,unmatched,rejected,quoteNotFound,rater:provenance.author}};
+ }
+ return{PACKET,RATINGS,INSTRUCTIONS,BANDS,sha256,gate,buildPacket,importRatings};
+});
+</script>
+<script>const CLASS_PULSE_CONFIG={"tenantId":"zcs","firebase":{"apiKey":"AIzaSyDq4oEqKf_tjZJPmC1iyZ9hbrfz0E07Prs","authDomain":"behistoric.firebaseapp.com","projectId":"behistoric","appId":"1:20943260001:web:d639c8b9f833701a62dd20"},"sdkVersion":"12.19.0","allowedDomains":["zcs.k12.in.us","stumail.zcs.k12.in.us"],"assignmentId":"2.3-checkpoint-1","classId":"","analysisMode":"teacher-review","releaseState":"awaiting-class-setup","aiAssist":{"approved":false,"approvalReference":""}};const CLASS_PULSE_CONTRACT={"assignmentId":"2.3-checkpoint-1","title":"Checkpoint 1: Environment and Maritime Technology","prompt":"Explain how knowledge of monsoon winds and TWO maritime technologies helped expand Indian Ocean trade after 1200.","learningTargets":["I can explain how monsoon knowledge, the compass, astrolabe, and larger ship designs helped Indian Ocean trade expand after 1200."],"successCriteria":["I can explain how predictable monsoon winds and navigational or shipbuilding innovations lowered the risk and increased the range of maritime trade."],"version":"2.3-checkpoint1-v1","source":"https://apcentral.collegeboard.org/media/pdf/ap-world-history-modern-course-and-exam-description-effective-fall-2026.pdf","sourcePages":"57–58","criteria":[{"id":"monsoons","label":"Explain the seasonal winds","description":"Explain how merchants used predictable seasonal changes in monsoon winds to plan voyages.","guidance":"Accept varied wording for seasonal reversal and timing outbound or return journeys. Rain alone is not the maritime mechanism; winds do not blow one way all year.","action":"Sketch an outward voyage and a return voyage. Ask students to explain when a merchant should leave and why.","essential":true},{"id":"technology","label":"Explain two maritime technologies","description":"Use two historically appropriate maritime technologies and explain what each enabled sailors or merchants to do.","guidance":"Examples include a compass for direction, an astrolabe for estimating latitude, and larger ships for carrying more cargo. Accept other historically supported examples. Naming two tools without explaining their functions is partial evidence.","action":"Compare a list of tools with an explanation of their functions. Have students add a function to each of two technologies.","essential":true},{"id":"connection","label":"Connect the causes to trade growth","description":"Connect wind knowledge and the technologies to more reliable voyages, increased trade volume, or a wider geographic range of exchange.","guidance":"Look for a causal mechanism, not just a claim that trade increased. Preserve a correct causal link even if another criterion has a gap; contradictions affecting this link need review.","action":"Model a because → enabled → trade grew explanation, then ask students to revise one causal link in their response.","essential":true}],"contractId":"52c286a7b648d2f6670cd17c0f8346440b632dfe58b11ca5ab4adc016158dc93"};</script>
 <script>window.startClassPulse = function (data, services) {
   'use strict';
   services=services || {};
@@ -522,7 +590,9 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     while(start<r.text.length){const marked=spans.some(s=>s.start<=start&&s.end>start);let end=start+1;while(end<r.text.length&&spans.some(s=>s.start<=end&&s.end>end)===marked)end++;
       quote.append(marked?node('mark',r.text.slice(start,end)):document.createTextNode(r.text.slice(start,end)));start=end;}
     detail.append(quote);
-    const interpretation=node('div',undefined,'interpretation');interpretation.append(node('h3',j.teacher?'YOUR INTERPRETATION':data.synthetic?'PROVISIONAL INTERPRETATION · AUTHORED EXAMPLE':'PROVISIONAL INTERPRETATION'),node('p',j.reason));
+    const suggestion=data.analyses.find(a=>a.responseId===r.id),fromAI=!j.teacher&&!row.errors.length&&suggestion?.provenance?.kind==='external-model';
+    const interpretation=node('div',undefined,'interpretation');interpretation.append(node('h3',j.teacher?'YOUR INTERPRETATION':fromAI?'AI SUGGESTION · '+suggestion.provenance.author.toUpperCase()+' · NOT SAVED UNLESS YOU ACCEPT OR CHANGE IT':data.synthetic?'PROVISIONAL INTERPRETATION · AUTHORED EXAMPLE':'PROVISIONAL INTERPRETATION'),node('p',j.reason));
+    if(fromAI&&assessedBands.includes(j.band)){const accept=node('button','Accept this suggestion','text-button');accept.type='button';accept.addEventListener('click',()=>saveJudgment(j.band,'Accepted the AI suggestion: '+j.reason,'Accepted the suggestion'));interpretation.append(accept);}
     if(row.status==='not_analyzed')interpretation.firstChild.textContent='NO ANALYSIS SUPPLIED';
     if(row.errors.length)interpretation.append(node('p','Analysis needs review: '+row.errors.join(' '),'notice'));
     detail.append(interpretation);
@@ -547,15 +617,16 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     $('filter').addEventListener('change',()=>{currentId=null;renderEvidence();});
     $('student').addEventListener('change',()=>{currentId=$('student').value;renderEvidence();});
     $('include').addEventListener('change',()=>{if($('include').checked)selected.add(currentId);else selected.delete(currentId);renderSelection();});
-    $('correction').addEventListener('submit',async event=>{event.preventDefault();try{
+    async function saveJudgment(band,reason,verb){try{
       const label=current().label;
-      const nextHistory=core.correct(contract,current(),history,focus,$('band').value,$('reason').value);
+      const nextHistory=core.correct(contract,current(),history,focus,band,reason);
       const change=nextHistory[nextHistory.length-1];if(data.teacher)change.author=data.teacher.label;
       if(services.saveOverride)await services.saveOverride(change,current());
       history=nextHistory;dirty=!services.saveOverride;
       $('filter').value='all';
-      render();flash('Saved your judgment for '+label+'. Class patterns now include your change.');
-    }catch(error){flash(error.message);}});
+      render();flash(verb+' for '+label+'. Class patterns now include your change.');
+    }catch(error){flash(error.message);}}
+    $('correction').addEventListener('submit',event=>{event.preventDefault();saveJudgment($('band').value,$('reason').value,'Saved your judgment');});
     $('decision-form').addEventListener('submit',async event=>{event.preventDefault();try{
       const record=core.decision(contract,data.responses,data.analyses,history,focus,Array.from(selected),$('action').value);
       if(data.teacher)record.author=data.teacher.label;
@@ -567,9 +638,30 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       const output={format:data.synthetic?'behistorical-synthetic-review-v1':'behistorical-class-review-v1',exportedAt:new Date().toISOString(),synthetic:!!data.synthetic,teacher:data.teacher?.label || 'Jeff Anderson',contract,responses:data.responses,originalAnalyses:data.analyses,overrides:history,decisions,summary:summary()};
       const url=URL.createObjectURL(new Blob([JSON.stringify(output,null,2)],{type:'application/json'}));const link=node('a');link.href=url;link.download=data.synthetic?'behistorical-synthetic-review.json':'behistorical-class-review.json';document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);dirty=false;flash('Review download requested. Keep the JSON file as your record; this pilot does not re-import saved reviews.');
     });
+    function download(name,value){const url=URL.createObjectURL(new Blob([JSON.stringify(value,null,2)],{type:'application/json'}));const link=node('a');link.href=url;link.download=name;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+    const ai=window.ClassPulseAIHandoff,aiGate=ai?ai.gate(data.synthetic,services.aiAssist):{on:false,reason:'AI rating help is not available on this page.'};
+    $('ai-export').addEventListener('click',async()=>{try{
+      if(!aiGate.on)throw Error(aiGate.reason);
+      const packet=await ai.buildPacket(contract,data.responses,{synthetic:!!data.synthetic});
+      if(!packet.answers.length)throw Error('There are no submitted answers to export yet.');
+      download(data.synthetic?'class-pulse-practice-ai-packet.json':'class-pulse-ai-packet.json',packet);
+      flash('Saved '+packet.answers.length+' answers for AI rating, with no names or account IDs. Keep the file in your private folder, never in the course project.');
+    }catch(error){flash(error.message);}});
+    $('ai-import-button').addEventListener('click',()=>$('ai-import').click());
+    $('ai-import').addEventListener('change',async()=>{const file=$('ai-import').files[0];$('ai-import').value='';if(!file)return;try{
+      if(!aiGate.on)throw Error(aiGate.reason);
+      if(file.size>2000000)throw Error('That file is too large to be a ratings file for one class.');
+      let parsed;try{parsed=JSON.parse(await file.text());}catch{throw Error('That file is not a readable ratings file.');}
+      const result=await ai.importRatings(contract,data.responses,parsed,core),ids=new Set(result.analyses.map(a=>a.responseId)),n=result.report;
+      if(!n.rated)throw Error('No ratings could be used. '+(n.unmatched?n.unmatched+' answers do not match this class. ':'')+(n.rejected.length?'First problem: '+n.rejected[0].reason:''));
+      data.analyses=data.analyses.filter(a=>!ids.has(a.responseId)).concat(result.analyses);
+      render();
+      flash('Imported suggested ratings for '+n.rated+' answers from '+n.rater+'. They are suggestions only: nothing is saved until you accept or change a rating.'+(n.quoteNotFound?' '+n.quoteNotFound+' ratings quoted words that are not in the answer, so they were sent back to you as Needs your review.':'')+(n.unmatched?' '+n.unmatched+' answers in the file no longer match this class and were skipped.':'')+(n.rejected.length?' '+n.rejected.length+' could not be used; the first: '+n.rejected[0].reason:''));
+    }catch(error){flash(error.message);}});
     window.addEventListener('beforeunload',event=>{if(dirty){event.preventDefault();event.returnValue='';}});
     $('filter').querySelector('[value=all]').textContent='All '+data.responses.length+' students';
     render();renderDecisions();showView('pulse',false);$('workspace').hidden=false;if($('sample-preview'))$('sample-preview').hidden=true;$('load-state').hidden=true;$('export').disabled=false;$('export').hidden=false;
+    if(ai){$('ai-status').textContent=aiGate.reason;$('ai-status').hidden=false;['ai-export','ai-import-button'].forEach(id=>{$(id).hidden=false;$(id).disabled=!aiGate.on;});}
   } catch(error) {
     $('workspace').hidden=true;$('load-state').textContent=(data.synthetic?'The sample could not open. ':'The class could not open. ')+error.message+' ';
     const retry=node('button','Try again');retry.addEventListener('click',()=>location.reload());$('load-state').append(retry);
@@ -652,7 +744,7 @@ window.ClassPulseAuth=function(config){
    $('production-note').textContent='Teacher review mode. No automatic analysis service is connected. Unanalyzed writing stays unassessed. '+(data.stale?data.stale+' older judgment records were excluded because responses changed.':'');
    let saving=false;
    async function save(operation){if(saving)throw Error('A save is already in progress.');saving=true;document.querySelectorAll('#workspace button,#workspace select').forEach(el=>el.disabled=true);try{return await operation();}finally{saving=false;document.querySelectorAll('#workspace button,#workspace select').forEach(el=>el.disabled=false);}}
-   window.startClassPulse(data,{saveOverride:(record,response)=>save(()=>db.saveOverride(record,response,crypto.randomUUID())),saveDecision:record=>save(()=>db.saveDecision(record,crypto.randomUUID()))});
+   window.startClassPulse(data,{aiAssist:config.aiAssist,saveOverride:(record,response)=>save(()=>db.saveOverride(record,response,crypto.randomUUID())),saveDecision:record=>save(()=>db.saveDecision(record,crypto.randomUUID()))});
    $('sign-in').hidden=true;$('sign-out').hidden=false;$('refresh').hidden=false;
   }catch(e){status.hidden=false;status.textContent='Class could not load: '+e.message+' No sample data has been substituted.';$('workspace').hidden=true;}finally{opening=false;$('sign-in').disabled=false;}
  });

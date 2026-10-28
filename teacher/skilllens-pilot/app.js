@@ -93,7 +93,9 @@ window.startClassPulse = function (data, services) {
     while(start<r.text.length){const marked=spans.some(s=>s.start<=start&&s.end>start);let end=start+1;while(end<r.text.length&&spans.some(s=>s.start<=end&&s.end>end)===marked)end++;
       quote.append(marked?node('mark',r.text.slice(start,end)):document.createTextNode(r.text.slice(start,end)));start=end;}
     detail.append(quote);
-    const interpretation=node('div',undefined,'interpretation');interpretation.append(node('h3',j.teacher?'YOUR INTERPRETATION':data.synthetic?'PROVISIONAL INTERPRETATION · AUTHORED EXAMPLE':'PROVISIONAL INTERPRETATION'),node('p',j.reason));
+    const suggestion=data.analyses.find(a=>a.responseId===r.id),fromAI=!j.teacher&&!row.errors.length&&suggestion?.provenance?.kind==='external-model';
+    const interpretation=node('div',undefined,'interpretation');interpretation.append(node('h3',j.teacher?'YOUR INTERPRETATION':fromAI?'AI SUGGESTION · '+suggestion.provenance.author.toUpperCase()+' · NOT SAVED UNLESS YOU ACCEPT OR CHANGE IT':data.synthetic?'PROVISIONAL INTERPRETATION · AUTHORED EXAMPLE':'PROVISIONAL INTERPRETATION'),node('p',j.reason));
+    if(fromAI&&assessedBands.includes(j.band)){const accept=node('button','Accept this suggestion','text-button');accept.type='button';accept.addEventListener('click',()=>saveJudgment(j.band,'Accepted the AI suggestion: '+j.reason,'Accepted the suggestion'));interpretation.append(accept);}
     if(row.status==='not_analyzed')interpretation.firstChild.textContent='NO ANALYSIS SUPPLIED';
     if(row.errors.length)interpretation.append(node('p','Analysis needs review: '+row.errors.join(' '),'notice'));
     detail.append(interpretation);
@@ -118,15 +120,16 @@ window.startClassPulse = function (data, services) {
     $('filter').addEventListener('change',()=>{currentId=null;renderEvidence();});
     $('student').addEventListener('change',()=>{currentId=$('student').value;renderEvidence();});
     $('include').addEventListener('change',()=>{if($('include').checked)selected.add(currentId);else selected.delete(currentId);renderSelection();});
-    $('correction').addEventListener('submit',async event=>{event.preventDefault();try{
+    async function saveJudgment(band,reason,verb){try{
       const label=current().label;
-      const nextHistory=core.correct(contract,current(),history,focus,$('band').value,$('reason').value);
+      const nextHistory=core.correct(contract,current(),history,focus,band,reason);
       const change=nextHistory[nextHistory.length-1];if(data.teacher)change.author=data.teacher.label;
       if(services.saveOverride)await services.saveOverride(change,current());
       history=nextHistory;dirty=!services.saveOverride;
       $('filter').value='all';
-      render();flash('Saved your judgment for '+label+'. Class patterns now include your change.');
-    }catch(error){flash(error.message);}});
+      render();flash(verb+' for '+label+'. Class patterns now include your change.');
+    }catch(error){flash(error.message);}}
+    $('correction').addEventListener('submit',event=>{event.preventDefault();saveJudgment($('band').value,$('reason').value,'Saved your judgment');});
     $('decision-form').addEventListener('submit',async event=>{event.preventDefault();try{
       const record=core.decision(contract,data.responses,data.analyses,history,focus,Array.from(selected),$('action').value);
       if(data.teacher)record.author=data.teacher.label;
@@ -138,9 +141,30 @@ window.startClassPulse = function (data, services) {
       const output={format:data.synthetic?'behistorical-synthetic-review-v1':'behistorical-class-review-v1',exportedAt:new Date().toISOString(),synthetic:!!data.synthetic,teacher:data.teacher?.label || 'Jeff Anderson',contract,responses:data.responses,originalAnalyses:data.analyses,overrides:history,decisions,summary:summary()};
       const url=URL.createObjectURL(new Blob([JSON.stringify(output,null,2)],{type:'application/json'}));const link=node('a');link.href=url;link.download=data.synthetic?'behistorical-synthetic-review.json':'behistorical-class-review.json';document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);dirty=false;flash('Review download requested. Keep the JSON file as your record; this pilot does not re-import saved reviews.');
     });
+    function download(name,value){const url=URL.createObjectURL(new Blob([JSON.stringify(value,null,2)],{type:'application/json'}));const link=node('a');link.href=url;link.download=name;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+    const ai=window.ClassPulseAIHandoff,aiGate=ai?ai.gate(data.synthetic,services.aiAssist):{on:false,reason:'AI rating help is not available on this page.'};
+    $('ai-export').addEventListener('click',async()=>{try{
+      if(!aiGate.on)throw Error(aiGate.reason);
+      const packet=await ai.buildPacket(contract,data.responses,{synthetic:!!data.synthetic});
+      if(!packet.answers.length)throw Error('There are no submitted answers to export yet.');
+      download(data.synthetic?'class-pulse-practice-ai-packet.json':'class-pulse-ai-packet.json',packet);
+      flash('Saved '+packet.answers.length+' answers for AI rating, with no names or account IDs. Keep the file in your private folder, never in the course project.');
+    }catch(error){flash(error.message);}});
+    $('ai-import-button').addEventListener('click',()=>$('ai-import').click());
+    $('ai-import').addEventListener('change',async()=>{const file=$('ai-import').files[0];$('ai-import').value='';if(!file)return;try{
+      if(!aiGate.on)throw Error(aiGate.reason);
+      if(file.size>2000000)throw Error('That file is too large to be a ratings file for one class.');
+      let parsed;try{parsed=JSON.parse(await file.text());}catch{throw Error('That file is not a readable ratings file.');}
+      const result=await ai.importRatings(contract,data.responses,parsed,core),ids=new Set(result.analyses.map(a=>a.responseId)),n=result.report;
+      if(!n.rated)throw Error('No ratings could be used. '+(n.unmatched?n.unmatched+' answers do not match this class. ':'')+(n.rejected.length?'First problem: '+n.rejected[0].reason:''));
+      data.analyses=data.analyses.filter(a=>!ids.has(a.responseId)).concat(result.analyses);
+      render();
+      flash('Imported suggested ratings for '+n.rated+' answers from '+n.rater+'. They are suggestions only: nothing is saved until you accept or change a rating.'+(n.quoteNotFound?' '+n.quoteNotFound+' ratings quoted words that are not in the answer, so they were sent back to you as Needs your review.':'')+(n.unmatched?' '+n.unmatched+' answers in the file no longer match this class and were skipped.':'')+(n.rejected.length?' '+n.rejected.length+' could not be used; the first: '+n.rejected[0].reason:''));
+    }catch(error){flash(error.message);}});
     window.addEventListener('beforeunload',event=>{if(dirty){event.preventDefault();event.returnValue='';}});
     $('filter').querySelector('[value=all]').textContent='All '+data.responses.length+' students';
     render();renderDecisions();showView('pulse',false);$('workspace').hidden=false;if($('sample-preview'))$('sample-preview').hidden=true;$('load-state').hidden=true;$('export').disabled=false;$('export').hidden=false;
+    if(ai){$('ai-status').textContent=aiGate.reason;$('ai-status').hidden=false;['ai-export','ai-import-button'].forEach(id=>{$(id).hidden=false;$(id).disabled=!aiGate.on;});}
   } catch(error) {
     $('workspace').hidden=true;$('load-state').textContent=(data.synthetic?'The sample could not open. ':'The class could not open. ')+error.message+' ';
     const retry=node('button','Try again');retry.addEventListener('click',()=>location.reload());$('load-state').append(retry);

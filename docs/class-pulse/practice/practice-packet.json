@@ -1,0 +1,86 @@
+{
+  "format": "behistorical-class-pulse-ai-packet-v1",
+  "instructionsVersion": "class-pulse-ai-rating-v1",
+  "synthetic": true,
+  "createdAt": "2026-10-28T00:00:00.000Z",
+  "contractId": "52c286a7b648d2f6670cd17c0f8346440b632dfe58b11ca5ab4adc016158dc93",
+  "question": "Explain how knowledge of monsoon winds and TWO maritime technologies helped expand Indian Ocean trade after 1200.",
+  "criteria": [
+    {
+      "id": "monsoons",
+      "label": "Explain the seasonal winds",
+      "description": "Explain how merchants used predictable seasonal changes in monsoon winds to plan voyages.",
+      "guidance": "Accept varied wording for seasonal reversal and timing outbound or return journeys. Rain alone is not the maritime mechanism; winds do not blow one way all year."
+    },
+    {
+      "id": "technology",
+      "label": "Explain two maritime technologies",
+      "description": "Use two historically appropriate maritime technologies and explain what each enabled sailors or merchants to do.",
+      "guidance": "Examples include a compass for direction, an astrolabe for estimating latitude, and larger ships for carrying more cargo. Accept other historically supported examples. Naming two tools without explaining their functions is partial evidence."
+    },
+    {
+      "id": "connection",
+      "label": "Connect the causes to trade growth",
+      "description": "Connect wind knowledge and the technologies to more reliable voyages, increased trade volume, or a wider geographic range of exchange.",
+      "guidance": "Look for a causal mechanism, not just a claim that trade increased. Preserve a correct causal link even if another criterion has a gap; contradictions affecting this link need review."
+    }
+  ],
+  "bands": {
+    "meets": "Meets: the answer clearly shows this criterion.",
+    "partial": "Partly shown: some of it is there, but it is incomplete or unexplained.",
+    "not_yet": "Not yet shown: it is missing or wrong.",
+    "review": "Needs your review: too short, off-topic or contradictory to judge."
+  },
+  "answers": [
+    {
+      "key": "A01",
+      "textSha256": "10c7dce843fd6084c2432a0eedce421b66406fd3b19f863700c09789babb3e39",
+      "text": "Monsoons were important for sailing. Compasses showed which way was north even at night, and bigger ships could carry heavy goods like porcelain. Ships carrying more cargo made each voyage worth more, so more trade happened."
+    },
+    {
+      "key": "A02",
+      "textSha256": "28be2740546ba7e72ee29a9179d3bcb882f22c9b8cc327f1f6e8bf37c91c093d",
+      "text": "Merchants knew the monsoon winds blew from the southwest in summer and from the northeast in winter, so they sailed to India with one season's wind and came home when it reversed. The magnetic compass let sailors keep their direction even when clouds hid the stars, and bigger ships like Chinese junks could carry much more cargo. Because voyages were more predictable and each ship carried more, trade grew and reached more ports."
+    },
+    {
+      "key": "A03",
+      "textSha256": "45e347afeebe911519886b7c963afe9cd6c067518c861ea6f0b8217098d67338",
+      "text": "The monsoon winds always blew toward India, but merchants waited for the winds to change before sailing home. A compass pointed north so sailors would not get lost, and larger ships held more spices and cloth. That meant more goods could be traded."
+    },
+    {
+      "key": "A04",
+      "textSha256": "4d4234e3c751e05bdd6f0da114c4f4d26ccb4f7c43d61e165f83e70baa8b9714",
+      "text": "Seasonal monsoon winds told merchants when to start their journeys and when to come back. The astrolabe told sailors what time of day it was and the compass made the ship go faster. Planning trips around the winds made voyages more dependable, which increased trade."
+    },
+    {
+      "key": "A05",
+      "textSha256": "5cbca33591ffb64657a0e4082382fd75589ec4857fe24e35132cf490b22af6a8",
+      "text": "Traders timed their trips with the monsoon, going east when the winds blew east and waiting months for the winds to turn so they could return. The astrolabe helped sailors figure out how far north or south they were by measuring the sun or stars. With a schedule they could trust and a way to find their position, merchants made more trips across open water."
+    },
+    {
+      "key": "A06",
+      "textSha256": "5f20f5943cd8200844fd15d7a5c900027bbfb2c34c5163278db2cd2f106575d0",
+      "text": "Because merchants learned the monsoon pattern, they knew to leave Arabia in summer and return in winter. They used compasses and astrolabes. Knowing when the winds would turn meant fewer ships were lost, so merchants were willing to send more goods."
+    },
+    {
+      "key": "A07",
+      "textSha256": "90265da1f742aac1f4c4e14318beec8feed92c711c09de41363e5c8aaae07e5c",
+      "text": "The Silk Roads used camels and caravanserais so merchants could cross the desert safely, which helped trade grow across Asia."
+    },
+    {
+      "key": "A08",
+      "textSha256": "b64943af62b1206f7219d81dfce854e72d245232b31514e47c3b7afd06af14b3",
+      "text": "Monsoons brought heavy rain that filled the rivers so boats could travel inland. Sailors also used the astrolabe and the compass. This made trade bigger."
+    },
+    {
+      "key": "A09",
+      "textSha256": "c3a7e9f358c5b87ae1d69ca2a1dcea43e1fa246d6aed4b0f16fcdd93feebc910",
+      "text": "Sailors learned that monsoon winds reverse with the seasons, so a ship could ride one monsoon out to East Africa or India and catch the opposite monsoon home. Lateen sails helped dhows sail at an angle to the wind, and the astrolabe let navigators estimate latitude far from land. Reliable timing plus better sailing and navigation meant merchants could reach farther ports more safely, so the network of trade grew wider."
+    },
+    {
+      "key": "A10",
+      "textSha256": "f851e85ea1d190adc0757f4742b96f09248f8fb3a24476dadeef793206ec73f2",
+      "text": "The monsoon winds changed direction every six months, so merchants planned round trips around them. Europeans invented the compass and gave it to Indian Ocean sailors, and lateen sails let dhows sail closer to the wind. These things made trade grow."
+    }
+  ]
+}

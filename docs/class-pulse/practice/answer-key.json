@@ -1,0 +1,250 @@
+{
+  "format": "behistorical-class-pulse-ai-ratings-v1",
+  "contractId": "52c286a7b648d2f6670cd17c0f8346440b632dfe58b11ca5ab4adc016158dc93",
+  "rater": {
+    "name": "Draft answer key (written by Claude; Jeff to check)",
+    "instructionsVersion": "class-pulse-ai-rating-v1"
+  },
+  "ratings": [
+    {
+      "key": "A01",
+      "textSha256": "10c7dce843fd6084c2432a0eedce421b66406fd3b19f863700c09789babb3e39",
+      "criteria": [
+        {
+          "criterionId": "monsoons",
+          "band": "partial",
+          "reason": "Mentions monsoons but not their seasonal change or how merchants planned around them.",
+          "quote": "Monsoons were important for sailing."
+        },
+        {
+          "criterionId": "technology",
+          "band": "meets",
+          "reason": "Two technologies with functions.",
+          "quote": "Compasses showed which way was north even at night"
+        },
+        {
+          "criterionId": "connection",
+          "band": "partial",
+          "reason": "Connects bigger ships to more trade, but not the winds.",
+          "quote": "Ships carrying more cargo made each voyage worth more"
+        }
+      ]
+    },
+    {
+      "key": "A02",
+      "textSha256": "28be2740546ba7e72ee29a9179d3bcb882f22c9b8cc327f1f6e8bf37c91c093d",
+      "criteria": [
+        {
+          "criterionId": "monsoons",
+          "band": "meets",
+          "reason": "Explains the seasonal reversal and using it for the outward and return trips.",
+          "quote": "came home when it reversed"
+        },
+        {
+          "criterionId": "technology",
+          "band": "meets",
+          "reason": "Two technologies, each with what it did: direction and cargo.",
+          "quote": "could carry much more cargo"
+        },
+        {
+          "criterionId": "connection",
+          "band": "meets",
+          "reason": "Links predictable voyages and bigger loads to trade growing and reaching more ports.",
+          "quote": "Because voyages were more predictable and each ship carried more, trade grew"
+        }
+      ]
+    },
+    {
+      "key": "A03",
+      "textSha256": "45e347afeebe911519886b7c963afe9cd6c067518c861ea6f0b8217098d67338",
+      "criteria": [
+        {
+          "criterionId": "monsoons",
+          "band": "review",
+          "reason": "Contradicts itself: the winds always blow one way, yet change. Ask the student which they mean.",
+          "quote": "always blew toward India, but merchants waited for the winds to change"
+        },
+        {
+          "criterionId": "technology",
+          "band": "meets",
+          "reason": "Two technologies with functions: direction and cargo.",
+          "quote": "larger ships held more spices and cloth"
+        },
+        {
+          "criterionId": "connection",
+          "band": "partial",
+          "reason": "Connects bigger ships to more goods, but not the winds.",
+          "quote": "That meant more goods could be traded."
+        }
+      ]
+    },
+    {
+      "key": "A04",
+      "textSha256": "4d4234e3c751e05bdd6f0da114c4f4d26ccb4f7c43d61e165f83e70baa8b9714",
+      "criteria": [
+        {
+          "criterionId": "monsoons",
+          "band": "meets",
+          "reason": "Seasonal winds set when to leave and when to return.",
+          "quote": "told merchants when to start their journeys and when to come back"
+        },
+        {
+          "criterionId": "technology",
+          "band": "not_yet",
+          "reason": "Both functions are wrong: the astrolabe estimated latitude, and a compass shows direction.",
+          "quote": "the compass made the ship go faster"
+        },
+        {
+          "criterionId": "connection",
+          "band": "partial",
+          "reason": "Connects the winds to dependable voyages and trade; the technology link is wrong.",
+          "quote": "Planning trips around the winds made voyages more dependable, which increased trade."
+        }
+      ]
+    },
+    {
+      "key": "A05",
+      "textSha256": "5cbca33591ffb64657a0e4082382fd75589ec4857fe24e35132cf490b22af6a8",
+      "criteria": [
+        {
+          "criterionId": "monsoons",
+          "band": "meets",
+          "reason": "Explains waiting for the winds to turn to make the return trip.",
+          "quote": "waiting months for the winds to turn so they could return"
+        },
+        {
+          "criterionId": "technology",
+          "band": "partial",
+          "reason": "Explains one technology well; the question asks for two.",
+          "quote": "The astrolabe helped sailors figure out how far north or south they were"
+        },
+        {
+          "criterionId": "connection",
+          "band": "meets",
+          "reason": "Connects a reliable schedule and navigation to more trips.",
+          "quote": "merchants made more trips across open water"
+        }
+      ]
+    },
+    {
+      "key": "A06",
+      "textSha256": "5f20f5943cd8200844fd15d7a5c900027bbfb2c34c5163278db2cd2f106575d0",
+      "criteria": [
+        {
+          "criterionId": "monsoons",
+          "band": "meets",
+          "reason": "Uses the seasonal pattern to time leaving and returning.",
+          "quote": "leave Arabia in summer and return in winter"
+        },
+        {
+          "criterionId": "technology",
+          "band": "partial",
+          "reason": "Names two technologies without explaining either.",
+          "quote": "They used compasses and astrolabes."
+        },
+        {
+          "criterionId": "connection",
+          "band": "meets",
+          "reason": "A causal chain: wind timing, fewer losses, more goods sent.",
+          "quote": "fewer ships were lost, so merchants were willing to send more goods"
+        }
+      ]
+    },
+    {
+      "key": "A07",
+      "textSha256": "90265da1f742aac1f4c4e14318beec8feed92c711c09de41363e5c8aaae07e5c",
+      "criteria": [
+        {
+          "criterionId": "monsoons",
+          "band": "not_yet",
+          "reason": "About overland Silk Road trade; the monsoon winds are not mentioned.",
+          "quote": ""
+        },
+        {
+          "criterionId": "technology",
+          "band": "not_yet",
+          "reason": "No maritime technology.",
+          "quote": ""
+        },
+        {
+          "criterionId": "connection",
+          "band": "not_yet",
+          "reason": "Explains land trade, not Indian Ocean trade.",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "key": "A08",
+      "textSha256": "b64943af62b1206f7219d81dfce854e72d245232b31514e47c3b7afd06af14b3",
+      "criteria": [
+        {
+          "criterionId": "monsoons",
+          "band": "not_yet",
+          "reason": "Treats the monsoon as rain, not as seasonal winds for planning voyages.",
+          "quote": "Monsoons brought heavy rain"
+        },
+        {
+          "criterionId": "technology",
+          "band": "partial",
+          "reason": "Names two technologies but says nothing about what either did.",
+          "quote": "used the astrolabe and the compass"
+        },
+        {
+          "criterionId": "connection",
+          "band": "not_yet",
+          "reason": "States that trade grew with no cause and effect.",
+          "quote": "This made trade bigger."
+        }
+      ]
+    },
+    {
+      "key": "A09",
+      "textSha256": "c3a7e9f358c5b87ae1d69ca2a1dcea43e1fa246d6aed4b0f16fcdd93feebc910",
+      "criteria": [
+        {
+          "criterionId": "monsoons",
+          "band": "meets",
+          "reason": "Seasonal reversal used for outward and return voyages.",
+          "quote": "catch the opposite monsoon home"
+        },
+        {
+          "criterionId": "technology",
+          "band": "meets",
+          "reason": "Lateen sail and astrolabe, each with what it allowed.",
+          "quote": "the astrolabe let navigators estimate latitude far from land"
+        },
+        {
+          "criterionId": "connection",
+          "band": "meets",
+          "reason": "Links timing, sailing and navigation to reaching farther ports and a wider network.",
+          "quote": "merchants could reach farther ports more safely, so the network of trade grew wider"
+        }
+      ]
+    },
+    {
+      "key": "A10",
+      "textSha256": "f851e85ea1d190adc0757f4742b96f09248f8fb3a24476dadeef793206ec73f2",
+      "criteria": [
+        {
+          "criterionId": "monsoons",
+          "band": "meets",
+          "reason": "Seasonal change in direction used to plan round trips.",
+          "quote": "planned round trips around them"
+        },
+        {
+          "criterionId": "technology",
+          "band": "partial",
+          "reason": "Explains the lateen sail, but gives the compass no function and a wrong origin (it came from China).",
+          "quote": "Europeans invented the compass"
+        },
+        {
+          "criterionId": "connection",
+          "band": "partial",
+          "reason": "Says trade grew without explaining how these causes produced it.",
+          "quote": "These things made trade grow."
+        }
+      ]
+    }
+  ]
+}
