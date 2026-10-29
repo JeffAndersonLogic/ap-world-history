@@ -200,7 +200,7 @@ console.log('\n  Cinematic question and landing slides\n');
 const OWED = new Set([
   '2.1 question', '2.7 question', '2.7 landing', '3.1 question', '3.1 landing',
   '3.2 question', '3.2 landing', '3.3 question', '3.3 landing',
-  '4.1 question', '4.1 landing', '4.2 question', '4.2 landing', '4.3 question', '4.3 landing'
+  '4.1 question', '4.2 question', '4.3 question'
 ]);
 function cinematic(s) {
   const t = s && s.template || {};
@@ -245,7 +245,7 @@ console.log('\n  No box (grid) slides\n');
 const GRID_OWED = new Set([
   '2.1 targets', '2.1 systems', '2.1 debrief', '2.2 open', '2.2 conquest', '2.2 transfer', '2.6 spine',
   '2.7 tools', '2.7 nodes', '2.7 diffusion', '2.7 review', '3.1 pays', '3.1 proofs', '3.1 kandahar',
-  '4.1 borrowed', '4.1 ships', '4.1 payoff', '4.2 posts'
+  '4.1 borrowed'
 ]);
 check('control: a grid slide not on the list is refused', ![{ kind: 'grid', phase: 'new' }].every(s => s.kind !== 'grid' || GRID_OWED.has(`9.9 ${s.phase}`)));
 for (const deck of DECKS) {

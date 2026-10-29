@@ -33,6 +33,11 @@ keeps the subject out of the bottom-right corner, which is trimmed off Gemini fi
 its mark. If the subject still lands under the words, the slide can move its caption into the
 sky with `place: 'top'`.
 
+**Filled since the list was written.** On 2026-10-29 Jeff uploaded his own landing pictures
+for 4.1, 4.2 and 4.3 and chose a template for each; they came off `OWED` in that commit, so
+prompts 9, 11 and 13 below are kept only for reference. Each picture's faults are named in its
+deck's `teacher/data/topic-X-Y-presentation-assets.js` comment and slide note.
+
 ## What is owed, at a glance
 
 | Deck | Slide | Picture | Words go |
@@ -47,11 +52,11 @@ sky with `place: 'top'`.
 | 3.3 | 3, question | Triptych of pictures already in the repo (no prompt) | bottom |
 | 3.3 | 18, landing | 7. Old church, new service | bottom |
 | 4.1 | 3, question | 8. Leaving Restelo, 1497 | bottom |
-| 4.1 | 23, landing | 9. Home from India, 1499 | top |
+| 4.1 | 23, landing | Filled 2026-10-29: Jeff's `4.1 - Landing Slide.jpg`, `frame-question` | n/a |
 | 4.2 | 3, question | 10. The royal shipyard | bottom |
-| 4.2 | 23, landing | 11. Pepper at the Casa da Índia | bottom |
+| 4.2 | 23, landing | Filled 2026-10-29: Jeff's `4.2 - Landing Slide.jpg`, `frame-stepin` | n/a |
 | 4.3 | 3, question | 12. Unloading at La Isabela, 1494 | bottom |
-| 4.3 | 24, landing | 13. A valley remade | top |
+| 4.3 | 24, landing | Filled 2026-10-29: Jeff's `4.3 - Landing Slide.jpg`, `frame-stepin` | n/a |
 
 **Two openers need no new picture.** Topic 2.7 asks about three networks and Topic 3.3 about
 three cases of religious change, so each opens on a triptych (`frame-triptych`) of pictures the
