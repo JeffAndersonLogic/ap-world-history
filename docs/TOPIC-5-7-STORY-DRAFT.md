@@ -4,9 +4,9 @@
 Drafted 2026-10-29 from the CED source file, for the build Jeff started with "Build the next unit 5
 topic." Nothing ships until Jeff says "ship it".
 
-**Resume here (2026-10-29):** Phases 0 to 8 done and pushed. Phase 9 review pass 1 running (packet from
-`capture-topic-for-review.js 5.7`, brand fonts). Next: log pass 1 findings in the ledger, fix, run pass
-2; then move `APPROVED_UNIT5_REWRITE_BLOB`, browser suite, topic audit, report.
+**Resume here (2026-10-29):** Phases 0 to 8 done and pushed. Review pass 1 (26 findings) fixed and
+logged in the ledger. Next: review pass 2 from a fresh packet; then move `APPROVED_UNIT5_REWRITE_BLOB`,
+browser suite, topic audit, report.
 
 **Taught:** no dates yet. The schedule ends with the Era 3 Exam (Green Monday 2026-11-23, Silver
 Tuesday 2026-11-24), and neither the schedule nor any comment in it names a Unit 5 class day (5.1 to
@@ -189,16 +189,17 @@ the phrase himself), and the policy of trading without heavy taxes on imports an
 Laws, passed in 1815, taxed imported grain ("corn" meant grain) to keep prices high for British
 landowners. In 1838 factory owners and merchants in Manchester started the campaign that became the
 Anti-Corn Law League, led by Richard Cobden and John Bright. They argued that cheap bread would help
-workers and open foreign markets to British cloth. When a potato blight brought
-famine to Ireland in 1845, Prime Minister Robert Peel decided the Corn Laws had to go, and in 1846
+workers and open foreign markets to British cloth. When a potato blight destroyed
+much of Ireland's potato crop in 1845 and famine began, Prime Minister Robert Peel decided the Corn Laws had to go, and in 1846
 Parliament repealed them, splitting his own party. By 1860 Britain had ended its taxes on
 imported factory goods, keeping a few, such as those on tea, sugar and wine, mainly to raise money. Smith's arguments were part of the reason; so were the interests of
 manufacturers who wanted cheap food and open markets, and the famine.
 
 **Others follow, for a while.** In 1860 Britain and France signed the Cobden-Chevalier Treaty, cutting
 taxes on each other's goods, and in the 1860s a chain of similar treaties lowered tariffs across much of
-Western Europe. But not everyone kept going. From 1879 Germany put taxes back on imported grain and
-iron to protect its farmers and factories, and the United States kept high tariffs on factory goods.
+Western Europe. But not everyone kept going. From 1879 the new German Empire (Germany became one country in 1871) put taxes back on
+imported grain and iron to protect its farmers and factories, and the United States, which had raised
+its tariffs on factory goods in 1861, kept them high.
 Britain stayed with free trade. Western Europe had *begun* to abandon mercantilism, as the CED says,
 but not every country, and not for good.
 
@@ -212,9 +213,9 @@ could lose his house and savings to pay its debts.
 
 **Three new tools.** Industry needed far more money than a family had: a railway or a steamship line
 cost more than any few partners could pay. Three practices in banking and finance changed that.
-- **Limited liability.** Laws of 1855 and 1856 let almost any group of seven or more people in
-  Britain register a company whose shareholders could lose only what they had put in, not everything
-  they owned. France passed similar laws in 1863 and 1867. With less to lose,
+- **Limited liability.** A law of 1855 let companies formed by ordinary investors limit what their
+  owners could lose to what they had put in, not everything they owned, and a law of 1856 let almost
+  any group of seven or more people in Britain register such a company. France passed similar laws in 1863 and 1867. With less to lose,
   thousands of people with modest savings could invest.
 - **Stock markets.** Shares could be bought and sold on a stock exchange, so an investor could get
   money back without waiting for the company to close. London had had a stock exchange since the
@@ -232,7 +233,8 @@ later and in London that summer, and by 1900 it worked in 16 countries and terri
 firms on its first committee, Dent & Co., had grown rich trading opium into China, a trade Britain had
 forced China to accept by war (Unit 6). In England, William Lever began selling Sunlight Soap in 1884, made with oils from tropical
 plants such as coconut and palm kernels; he registered its name in the United States by 1886 and built
-a factory town, Port Sunlight, from 1888. In the Netherlands, the Jurgens and Van den Bergh families
+a factory town, Port Sunlight, from 1888. In 1890 the business became a limited company, Lever Brothers,
+Limited, and from 1894 it sold shares to the public. In the Netherlands, the Jurgens and Van den Bergh families
 turned butter trading into margarine factories and sold across the North Sea to England. In 1929, after
 this unit, Lever Brothers and the Dutch margarine makers joined into one company, Unilever, based in
 both England and the Netherlands and running plantations and trading firms in British West Africa and
@@ -240,15 +242,17 @@ the Belgian Congo: the company the CED names grew out of these nineteenth-centur
 
 **Part 3: the goods people could buy.**
 
-**More, cheaper, more kinds.** Factories kept improving how they made things, so goods became more
+**More, cheaper, more kinds.** Around 1750, cotton thread was spun by hand. Once machines spun it,
+its price fell fast: by 1815 even the coarsest cotton yarn cost about a third of its early 1780s price,
+counting for rising prices (Harley). Factories kept improving how they made things, so goods became more
 available, more affordable and more varied. Machine-spun cotton cloth (Topic 5.3) kept falling in price
 long after the first mills. Soap that grocers had cut from long bars came in wrapped, branded bars like
 Sunlight, advertised to every household. Ships and railways (5.5) brought fruit, tea and wheat from
 far away to city markets.
 
-**For some.** In Britain, historians who measure what wages could buy find that working families'
-standard of living rose very little from the 1780s to the 1850s, and grew much faster from about 1860
-to 1900. But many city workers stayed poor (Topic 5.9),
+**For some.** In Britain, one careful estimate (Feinstein) finds that working families' standard of
+living rose by less than 15 percent from the 1780s to the 1850s (others had found faster gains); most
+historians agree it grew much faster from about 1860 to 1900. But many city workers stayed poor (Topic 5.9),
 and many of the people who grew the cotton, palm oil and tea did not share in the gains (Unit 6). The
 CED's word is exact: standards of living rose "for some."
 

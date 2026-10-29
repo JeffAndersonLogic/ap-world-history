@@ -42,7 +42,7 @@ window.BEHISTORICAL_TEACHING = {
     subtitle: 'Between 1750 and 1900 the rules of the economy changed: Britain, and for a time much of Western Europe, moved from mercantilism toward free trade, partly persuaded by Adam Smith; new practices in banking and finance let big businesses work across borders; and industrial capitalism made goods cheaper and more varied, raising living standards for some. Shares, tariffs and unequal gains carried on.',
     essentialQuestion: 'How did trade, business and the goods people bought change between 1750 and 1900, and what stayed the same?',
     apFocus: 'Continuity and Change, with Making Connections 5.B (how one development relates to another)',
-    endTarget: 'Students can explain how economic systems, ideas and institutions developed between 1750 and 1900 and contributed to change: Britain, and for a time much of Western Europe, moved from mercantilism toward free trade, partly because of Adam Smith\'s ideas and partly because of manufacturers\' interests and the Irish famine (the Corn Laws repealed in 1846), while Germany went back to tariffs from 1879 and the United States kept them; limited liability, stock markets and banks let businesses such as HSBC and Lever Brothers grow large and cross borders; and better factory methods made goods more available, affordable and varied, raising living standards for some. They can say how one of these developments relates to another, and name what carried on.'
+    endTarget: 'Students can explain how economic systems, ideas and institutions developed between 1750 and 1900 and contributed to change: Britain, and for a time much of Western Europe, moved from mercantilism toward free trade, partly because of Adam Smith\'s ideas and partly because of manufacturers\' interests and the Irish famine (the Corn Laws repealed in 1846), while Germany went back to tariffs from 1879 and the United States kept them high; limited liability, stock markets and banks let businesses such as HSBC and Lever Brothers grow large and cross borders; and better factory methods made goods more available, affordable and varied, raising living standards for some. They can say how one of these developments relates to another, and name what carried on.'
   },
 
   priorities: {
@@ -172,7 +172,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'Students read "Freer Trade, Bigger Business" in class. The slides that follow retell it with evidence, so they are retrieval, not a first telling.',
           'Circulate for students who write a before and an after, not a list: "Around 1750 Britain taxed foreign grain; in 1846 it ended the tax," not "Corn Laws, 1846."',
-          'Question 01 asks for one change in Britain\'s trade rules and one thing that did not change for every country; question 02 connects a banking or finance practice to a business that crossed borders; question 03 asks how goods changed and why "for some." The three answers reach Canvas through Gather All My Work.'
+          'Question 01 asks for one change in Britain\'s trade rules and one country where tariffs stayed high or came back; question 02 connects a banking or finance practice to a business that crossed borders; question 03 asks how goods changed and why "for some." The three answers reach Canvas through Gather All My Work.'
         ],
         ask: 'Which row surprised you most?',
         listenFor: 'That a famine helped end the Corn Laws; that Germany went back to tariffs; that companies sold shares in 1602; that living standards rose so little before the 1850s.'
@@ -208,7 +208,7 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Later writers called ideas like his laissez-faire, French for roughly "let them do it." Smith did not use the phrase.',
       template: {
         steps: [
-          { label: '1776', text: 'Adam Smith publishes **The Wealth of Nations**, attacking "the mercantile system."' },
+          { label: '1776', text: 'Smith attacks "the mercantile system" in **The Wealth of Nations**.' },
           { label: 'A family', text: '"The tailor does not attempt to make his own shoes, but **buys them of the shoemaker**."' },
           { label: 'A country', key: true, text: '"If a foreign country can supply us with a commodity cheaper than we ourselves can make it, **better buy it of them**."' }
         ]
@@ -270,7 +270,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'The CED\'s word is "partly": Western European countries adopted free trade "partly in response to the growing acceptance of Adam Smith\'s theories." So Smith is one cause, not the cause.',
           'Interests: the League\'s money and leaders came from manufacturers and merchants. Many Chartists distrusted them: they argued that high prices meant high wages, so the manufacturers\' "cheap bread" really meant cheap labor, lower wages (Mark Hovell, The Chartist Movement, 1918: "if the manufacturers cried \'cheap bread\' they meant \'cheap labour\'"). That is a good challenge for a class that is ahead.',
-          'Crisis: Peel himself argued "economic necessity in the face of famine" (Read, History and Policy).',
+          'Crisis: the historian Charles Read writes that "failed harvests leading to the Irish potato famine contributed to Peel\'s decision that the Corn Laws should be repealed" (History and Policy). In 1845 the blight destroyed much of the crop; the near-total failure came in 1846.',
           'There is no single right answer. Grade the reason, not the rank.'
         ],
         ask: 'Who put Smith first? Who put him last? Defend both.',
@@ -279,7 +279,7 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'others', kind: 'timeline-lanes', eyebrow: 'Trade · What Carried On',
+      phase: 'others', kind: 'timeline-lanes', eyebrow: 'Trade · The Limits',
       kc: 'KC-5.1.III.A', title: 'Others followed, for a while.',
       footer: 'Western Europe "began abandoning mercantilism," as the College Board says: not every country, and not for good.',
       template: {
@@ -287,7 +287,7 @@ window.BEHISTORICAL_TEACHING = {
         tick: 10,
         lanes: [
           { name: 'Britain', events: [{ year: 1846, label: '1846', text: 'Corn Laws repealed' }, { year: 1860, label: '1860', text: 'Treaty with France' }] },
-          { name: 'Germany', events: [{ year: 1865, label: '1860s', text: 'Low tariffs' }, { year: 1879, label: '1879', text: 'Tariffs back on grain and iron' }] },
+          { name: 'German states', events: [{ year: 1865, label: '1860s', text: 'Low tariffs' }, { year: 1879, label: '1879', text: 'The German Empire puts tariffs back' }] },
           { name: 'United States', events: [{ year: 1861, label: '1861', text: 'High tariffs, kept to 1900' }] }
         ]
       },
@@ -295,11 +295,11 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'The change spread: the Cobden-Chevalier Treaty of 23 January 1860 cut tariffs between Britain and France, and was the first of a series of "most favoured nation" treaties Britain negotiated in the 1860s, which were widely copied across Europe (Encyclopedia.com; Wikipedia, citing Nye, Irwin, and O\'Rourke and Williamson).',
-          'Germany\'s states had kept low tariffs (grain duties were abolished in 1853). And partly reversed: from 1879 Germany put duties on grain, livestock and iron after cheap American grain drove prices down (Wikipedia, "German tariff of 1879"; Britannica as quoted). The United States\' Morrill Tariff of 1861 "began a long period of protectionism that lasted until 1913"; the McKinley Tariff of 1890 raised average duties to about 49 percent.',
+          'Germany was not one country until 1871: in the 1860s its states, joined in a customs union (the Zollverein) led by Prussia, kept tariffs low (grain duties were abolished in 1853). And partly reversed: from 1879 Germany put duties on grain, livestock and iron after cheap American grain drove prices down (Wikipedia, "German tariff of 1879"; Britannica as quoted). The United States\' Morrill Tariff of 1861 "began a long period of protectionism that lasted until 1913"; the McKinley Tariff of 1890 raised average duties to about 49 percent.',
           'Britain stayed with free trade through 1900. This slide is the "carried on" of the trade row: tariffs did not disappear.'
         ],
         ask: 'What is the continuity on this slide?',
-        listenFor: 'Tariffs: Germany brought them back and the United States kept them. Only some countries changed, and not all for good.',
+        listenFor: 'Tariffs never disappeared: the United States kept them high, and Germany brought them back. That is a reversal in Germany and a continuity in America.',
         ap: 'KC-5.1.III.A ("began"); Continuity and Change.'
       }
     },
@@ -311,10 +311,10 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 8,
         land: [
-          'Module 06 is required. Checkpoint 1 assesses Target 1 (KC-5.1.III.A): the old rules, one of Smith\'s ideas, one cause of Britain\'s change with a detail, and one thing that did not change for every country.'
+          'Module 06 is required. Checkpoint 1 assesses Target 1 (KC-5.1.III.A): the old rules, one of Smith\'s ideas, one cause of Britain\'s change with a detail, and one country where tariffs stayed high or came back.'
         ],
-        ask: 'What is your "before," and what is your "carried on"?',
-        listenFor: 'Mercantilism\'s tariffs, bans or monopolies; Germany\'s tariffs from 1879, or America\'s.'
+        ask: 'What is your "before," and where did tariffs stay or come back?',
+        listenFor: 'Mercantilism\'s tariffs, bans or monopolies; America kept high tariffs, or Germany brought them back from 1879.'
       }
     },
     {
@@ -344,8 +344,8 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'With less to lose, many more people with modest savings could invest.',
       template: {
         date: '1855',
-        before: { tag: 'Before', items: ['From 1720 to 1825, a company with shares usually needed the government\'s permission', 'Most businesses belonged to a family or a few partners', 'If a partnership failed, a partner could lose his house'] },
-        after: { tag: 'After', items: ['Laws of 1855 and 1856: almost any seven people can register a company', 'Owners can lose only what they put in: limited liability', 'France follows in 1863 and 1867'] },
+        before: { tag: 'Before', items: ['1720 to 1825: a company with shares needed permission', 'Most businesses: a family or a few partners', 'A partner could lose his house'] },
+        after: { tag: 'After', items: ['1855: owners lose only what they put in', '1856: almost any seven people can register', 'France follows, 1863 and 1867'] },
         continued: { tag: 'Continued', items: ['Companies sold shares, as the VOC had in 1602', 'People bought and sold shares in markets'] }
       },
       notes: {
@@ -370,7 +370,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: 'The idea', text: 'At a **stock exchange**, people buy and sell shares in companies.' },
           { label: '1700s', text: 'London has had a **stock exchange** since the 1700s.' },
           { label: '1840s', text: 'In a **railway boom**, crowds of British investors buy railway shares.' },
-          { label: '1886', key: true, text: 'A New York print shows the exchanges of **eight cities** in America and Europe.' }
+          { label: '1886', key: true, text: 'A New York print shows exchanges and trading halls in **eight cities**.' }
         ]
       },
       notes: {
@@ -378,7 +378,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'Stock markets are one of the CED\'s examples for KC-5.1.III.B.',
           'London: organized share trading at Jonathan\'s coffee house from 1698, and a building of the brokers\' own from 1773 (Grub Street Project, from Wheatley and Cunningham). The railway boom ("Railway Mania") peaked in 1845 to 1846, drew in many middle-class investors, and collapsed; share prices fell until about 1850, and many lost their savings (Wikipedia; Focus Economics).',
-          'The picture is a real print: "The World\'s Exchanges," published by Root and Tinker, New York, 1886 (Library of Congress, no known restrictions). The Library\'s record: "Images of stock exchanges in New York, Paris, London, Chicago, Hamburg, Frankfort, Berlin, and Brussels." The Chicago building is the Board of Trade, where grain was traded. The London panel is labeled "Bank of England, London, Stock Exchange."',
+          'The picture is a real print: "The World\'s Exchanges," published by Root and Tinker, New York, 1886 (Library of Congress, no known restrictions). The Library\'s record: "Images of stock exchanges in New York, Paris, London, Chicago, Hamburg, Frankfort, Berlin, and Brussels." The Chicago building is the Board of Trade, where grain was traded. The London panel is labeled "Stock Exchange," but it draws the Bank of England and, with the statue in front, the Royal Exchange (the building on slide 3), not the Stock Exchange itself.',
           'A printer made this to sell: it shows what New York buyers in 1886 thought worth hanging on a wall, not how much money moved through each exchange.'
         ],
         ask: 'Why would an investor be more willing to buy shares if there is a market to sell them in?',
@@ -407,7 +407,7 @@ window.BEHISTORICAL_TEACHING = {
           'HSBC is the CED\'s first example for KC-5.1.III.B.',
           'HSBC\'s own history timeline (hsbc.com): founded by "Thomas Sutherland, a young Scotsman" working in Hong Kong for a shipping firm, who "recognised that businesses needed better local banking facilities"; it opened "in Hong Kong on 3 March 1865, and in Shanghai a month later"; "In July 1865, the bank opened an office in London to facilitate foreign exchange services for clients in China and India"; "By the turn of the 20th century, we operated in 16 countries and territories." Sutherland worked for the P&O steamship company.',
           'The committee: Francis Chomley, a partner in Dent and Company, chaired its first meeting on 6 August 1864; Dent\'s was one of the two great opium-trading houses on the China coast (Wikipedia, "Dent & Co." and "Francis Chomley"; South China Morning Post, "Bank was built on shipping and opium trade"). The Opium Wars and the treaty ports are Unit 6; name them and move on.',
-          'Read the Key Concept as a chain here: "the global nature of trade" (trade between China, India and Europe) "contributed to" a "transnational business" (HSBC) that is itself a "new practice in banking."'
+          'Read the Key Concept as a chain here: "the global nature of trade" (trade between China, India and Europe) "contributed to" a "transnational business" (HSBC), which itself offered banking services, loans and the changing of money, to other traders.'
         ],
         ask: 'Connect it: how did global trade relate to the founding of this bank?',
         listenFor: 'Merchants trading between China and the world needed a bank that could lend and change money in many ports, so global trade made the bank necessary.',
@@ -420,20 +420,21 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         panels: [
           { tag: '1886 · Warrington, England', text: 'Lever registers **Sunlight** in the United States.' },
-          { tag: '1891 · Port Sunlight, England', text: 'The filing carries a full **advertisement**.' }
+          { tag: '1891 · Port Sunlight, England', text: 'A second filing protects an **advertising design**.' }
         ],
         rows: [
-          { label: 'Then', text: 'William Lever sells **Sunlight Soap** from 1884, made with oils from coconut and palm kernels; Port Sunlight from 1888.' },
-          { label: 'Later', text: 'In **1929** Lever Brothers and the Dutch margarine makers join to form **Unilever**, based in England and the Netherlands.' }
+          { label: 'Then', text: '**Sunlight Soap** from 1884; a **limited company** from 1890; shares sold from 1894.' },
+          { label: 'Later', text: 'In **1929** Lever Brothers and Dutch margarine makers form **Unilever**.' }
         ],
-        proves: 'A business that grew across borders, and the start of the company the College Board names.'
+        proves: 'It crossed borders, and grew into the College Board\'s Unilever.'
       },
       notes: {
         minutes: 2,
         land: [
           'Unilever is the CED\'s second example for KC-5.1.III.B: "Unilever based in England and the Netherlands and operating in British West Africa and the Belgian Congo." Say plainly that Unilever was formed on 2 September 1929, when Lever Brothers joined Margarine Unie, itself formed in 1927 from the Dutch firms of Jurgens and Van den Bergh (Wikipedia; Grace\'s Guide). Lever\'s company began its plantations in the Belgian Congo in 1911, where its agents forcibly recruited Congolese workers (Wikipedia, "Huileries du Congo Belge"). That is Unit 6.',
           'The 1880s: Unilever\'s history dates Sunlight to 1884, "a soap that contain[s] copra or [palm] kernel oil"; other sources say 1885. Port Sunlight was developed from 1888. The Jurgens family moved to Oss in 1860; the Van den Berghs were exporting butter to England by 1870 and made margarine from the 1870s.',
-          'The pictures are real documents: two United States trademark registrations for Sunlight Soap, filed by Lever Bros. of Warrington, England (registered 31 August 1886), and Lever Brothers, Limited, of Port Sunlight, England (registered 5 May 1891), each with its label or advertisement pasted in (Library of Congress, no known restrictions). The 1891 advertisement promises that "a girl of twelve or thirteen can do a large wash."',
+          'The pictures are real documents: two United States trademark registrations for Sunlight Soap, filed by Lever Bros. of Warrington, England (registered 31 August 1886), and Lever Brothers, Limited, of Port Sunlight, England (registered 5 May 1891), each with its label or advertisement pasted in (Library of Congress, no known restrictions). The 1891 filing (application filed 24 February 1891) protected a design, "several pictures of hands showing each sign of the deaf-and-dumb alphabet, and the word Sunlight," with the advertisement attached; the advertisement promises that "a girl of twelve or thirteen can do a large wash."',
+          'Finance: Lever and Co. became a private limited company, Lever Brothers, Limited, in 1890, and a public company selling shares in 1894 (Grace\'s Guide; the National Library of Australia\'s guide to the Lever Brothers records). That is the "relied on new practices in banking and finance" link for Lever.',
           'Lever sold soap in wrapped packs bearing the Sunlight name, unusual at the time, where grocers had cut soap from long bars (MyLearning, with the Port Sunlight Museum). That is slide 17\'s "variety" and "availability."'
         ],
         ask: 'Why would an English soap maker bother to protect his brand name in the United States?',
@@ -463,7 +464,7 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Availability, affordability, variety: the College Board\'s three words.',
       template: {
         steps: [
-          { label: 'Cheaper', text: 'Factory **cotton cloth** keeps falling in price long after the first mills.' },
+          { label: 'Cheaper', text: 'Machines spin **cotton thread** once spun by hand; cloth keeps getting cheaper.' },
           { label: 'New kinds', text: 'Soap comes in **wrapped bars with a brand name**, like Sunlight.' },
           { label: 'From afar', text: 'Ships and railways bring **fruit, tea and wheat** to city markets.' },
           { label: 'The cause', key: true, text: '**Continued improvement in manufacturing methods.**' }
@@ -473,7 +474,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.1: "continued improvement in manufacturing methods that increased the availability, affordability, and variety of consumer goods."',
-          'Cloth: the economic historian Knick Harley: cloth prices "fell impressively in real terms before the end of the Napoleonic Wars because the price of yarn had fallen so much. Cloth prices continued to fall thereafter as technology improved in weaving and finishing" (Oxford working paper 81).',
+          'Cloth: around 1750 cotton thread was spun by hand. Harley found that "the real price of even the coarsest weft yarns fell to only a third of their early 1780s level by 1815." The economic historian Knick Harley on cloth: cloth prices "fell impressively in real terms before the end of the Napoleonic Wars because the price of yarn had fallen so much. Cloth prices continued to fall thereafter as technology improved in weaving and finishing" (Oxford working paper 81).',
           'Soap: Lever sold soap in wrapped packs bearing the brand name, unusual at the time (MyLearning, with the Port Sunlight Museum). Food from afar: 5.5 showed wheat prices in Liverpool and Chicago drawing together as rail, steamships and the telegraph joined the markets.',
           'Ask students to sort the three steps under the three words: cheaper cloth is affordability; branded soap is variety; food from afar is availability.'
         ],
@@ -490,7 +491,7 @@ window.BEHISTORICAL_TEACHING = {
         left: { name: 'Gained' },
         right: { name: 'Gained little' },
         rows: [
-          { label: 'When', left: 'British working families, much faster from about 1860', right: 'British working families, 1780s to 1850s: very little' },
+          { label: 'When', left: 'British working families, much faster from about 1860', right: 'British working families, 1780s to 1850s: under 15 percent, by one estimate' },
           { label: 'Where', left: 'Buyers in industrial cities', right: 'Many who grew the cotton, palm oil and tea (Unit 6)' },
           { label: 'Who', left: 'Families with wages to spend on new goods', right: 'Many of the city poor (Topic 5.9)' }
         ]
@@ -499,7 +500,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.1: industrial capitalism "led to increased standards of living for some."',
-          'The measure: the economic historian Charles Feinstein estimated that the average working-class family\'s standard of living in Britain improved "by less than 15 percent between the 1780s and 1850s" (Journal of Economic History, 1998), "very modest until after 1861." Floud and Johnson\'s Cambridge Economic History of Modern Britain: most historians accept that real wages grew significantly from 1851 to 1913, while height and infant mortality give a less optimistic picture up to 1900.',
+          'The measure: the economic historian Charles Feinstein estimated that the average working-class family\'s standard of living in Britain improved "by less than 15 percent between the 1780s and 1850s" (Journal of Economic History, 1998), "very modest until after 1861." Floud and Johnson\'s Cambridge Economic History of Modern Britain: most historians accept that real wages grew significantly from 1851 to 1913, while height and infant mortality give a less optimistic picture up to 1900. Not every historian agrees on the early years: Lindert and Williamson (Economic History Review, 1983) found much faster real-wage growth from 1820 to 1850, and Feinstein\'s paper was written to answer them, so the slide says "by one estimate."',
           'The right column points forward and does not teach: the city poor are 5.9; the growers of raw materials in colonies are Unit 6.'
         ],
         ask: 'Why does the College Board say "for some," not "for all"?',
@@ -514,7 +515,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         rows: [
           { myth: 'Adam Smith said government should do nothing.', evidence: 'He gave government three duties: defense, justice, and public works no private person would build.', source: 'Wealth of Nations, Book IV' },
-          { myth: 'Free trade won everywhere.', evidence: 'Germany brought tariffs back from 1879, and the United States kept them.', source: 'KC-5.1.III.A' },
+          { myth: 'Free trade won everywhere.', evidence: 'Germany brought tariffs back from 1879, and the United States kept them high.', source: 'Tariff laws of 1861 and 1879' },
           { myth: 'Companies that sell shares were invented in the 1800s.', evidence: 'The VOC sold shares in 1602. What changed was who could form one, and how little an owner could lose.', source: 'Topic 4.5' }
         ]
       },
@@ -537,11 +538,11 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         columns: [{ name: 'Around 1750' }, { name: 'By 1900' }, { name: 'Carried on' }],
         rows: [
-          { label: 'Trade', cells: ['Mercantilism: tariffs, bans, monopolies', 'Britain trades freely; much of Europe cut tariffs in the 1860s', 'Germany\'s tariffs from 1879; America\'s high tariffs'] },
+          { label: 'Trade', cells: ['Mercantilism: tariffs, bans, monopolies', 'Britain trades freely; much of Europe cut tariffs in the 1860s', 'Tariffs never vanished: high in America, back in Germany'] },
           { label: 'Business', cells: ['Families and partners; a few chartered companies', 'Limited liability, stock markets, banks; HSBC and Lever cross borders', 'Selling shares, as the VOC did in 1602'] },
-          { label: 'Goods', cells: ['Costly, few kinds', 'Cheaper cloth, branded soap, food from afar', 'Gains for some, not for all'] }
+          { label: 'Goods', cells: ['Thread spun by hand; cloth cost more', 'Cheaper cloth, branded soap, food from afar', 'Gains for some, not for all'] }
         ],
-        result: { label: 'Connect', text: 'Global trade led to businesses that crossed borders; banking and finance made them possible; their factories made goods cheaper.' }
+        result: { label: 'Connect', text: 'Pick two rows. Did one cause the other, make it possible, or answer it? Give a detail for each.' }
       },
       notes: {
         minutes: 3,
@@ -558,7 +559,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'synthesis', kind: 'close-retell', eyebrow: 'AP Synthesis',
       kc: 'Unit 5: Learning Objective H', title: 'Say it in one sentence.',
       template: {
-        frame: 'Partly because of Adam ___, Britain moved from mercantilism to free ___; limited ___, stock markets and banks let businesses cross ___; and better factories made goods ___, for some, while ___ carried on in Germany and America.',
+        frame: 'Partly thanks to Adam ___, Britain moved to free ___; limited ___ and banks let firms cross ___; goods grew ___, for some; and ___ stayed in America and came back in Germany.',
         words: ['Smith', 'trade', 'liability', 'borders', 'cheaper', 'tariffs'],
         prompt: 'Fill it in from memory, then add one example for each part.'
       },

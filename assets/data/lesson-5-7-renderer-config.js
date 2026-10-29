@@ -45,10 +45,10 @@
     ...lesson.map,
     key: [
       { label: "Britain", detail: "Britain's Corn Laws, passed in 1815, taxed imported grain. Parliament repealed them in 1846, and by 1860 Britain had ended its tariffs on imported factory goods." },
-      { label: "Arrow 1 and France: Britain and France, 1860", detail: "In the Cobden-Chevalier Treaty of 1860, Britain and France cut tariffs on each other's goods. France also passed laws in 1863 and 1867 making it easier to form a company with limited liability." },
-      { label: "Germany", detail: "Germany lowered tariffs in the 1860s, then put tariffs back on imported grain and iron from 1879 to protect its farmers and factories." },
-      { label: "Hong Kong and Shanghai, and Arrow 2", detail: "The Hongkong and Shanghai Banking Corporation (HSBC) opened in Hong Kong in March 1865 and in Shanghai a month later. In July 1865 it opened an office in London." },
-      { label: "Arrow 3 and the United States", detail: "William Lever registered the name of his Sunlight Soap in the United States in 1886. The United States kept high tariffs on factory goods." },
+      { label: "France", detail: "In the Cobden-Chevalier Treaty of 1860, Britain and France cut tariffs on each other's goods. France also passed laws in 1863 and 1867 making it easier to form a company with limited liability." },
+      { label: "Germany", detail: "Before Germany became one country in 1871, the German states' customs union kept tariffs low. From 1879 the new German Empire put tariffs back on imported grain and iron to protect its farmers and factories." },
+      { label: "Hong Kong and Shanghai, and Arrow 1", detail: "The Hongkong and Shanghai Banking Corporation (HSBC) opened in Hong Kong in March 1865 and in Shanghai a month later. In July 1865 it opened an office in London." },
+      { label: "Arrow 2 and the United States", detail: "William Lever registered the name of his Sunlight Soap in the United States in 1886. The United States raised its tariffs on factory goods in 1861 and kept them high." },
       { label: "Reading the map", detail: "Each arrow joins two places; it is not an exact route. The map shows only the places this topic names, and the shaded regions are approximate." }
     ]
   };
@@ -87,7 +87,7 @@
       { label: "Explain how, with a detail for each side", text: "Say how the link works. Example: \"The new route brought more shoppers, about twice as many on weekends, so the mall had enough customers to open a food court.\"" },
       { label: "Say the connection in one sentence", text: "Use this frame: \"[Development A] relates to [development B] because A [caused / made possible / answered] B: [detail about A] led to [detail about B].\" Example: \"The new bus route relates to the food court because it made the food court possible: more shoppers on weekends gave the mall enough customers.\"" }
     ],
-    prompt: "Now do it with the history of Topic 5.7. Choose TWO of these developments: Britain's repeal of the Corn Laws and move to free trade (1846 to 1860); limited liability (1855 and 1856); stock markets; the Hongkong and Shanghai Banking Corporation (1865); Lever's Sunlight Soap and its sales across borders (1884 to 1886); cheaper and more varied goods. First, say exactly what changed in each one. Second, choose the kind of link: did one cause the other, make it possible, or answer it? Third, explain how the link works, with a detail from the lesson for each. Fourth, write the connection in one sentence using the frame.",
+    prompt: "Now do it with the history of Topic 5.7. Choose TWO of these developments: Britain's repeal of the Corn Laws and move to free trade (1846 to 1860); limited liability (1855 and 1856); stock markets; the Hongkong and Shanghai Banking Corporation (1865); Lever's Sunlight Soap (1884), its U.S. trademark (1886), and the company's sale of shares (1894); cheaper and more varied goods. First, say exactly what changed in each one. Second, choose the kind of link: did one cause the other, make it possible, or answer it? Third, explain how the link works, with a detail from the lesson for each. Fourth, write the connection in one sentence using the frame.",
     criteria: [
       "I named two developments from Topic 5.7 and said exactly what changed in each.",
       "I chose the kind of link: caused, made possible, or answered.",
@@ -100,21 +100,21 @@
     {
       title: "Checkpoint 1: The Rules of Trade",
       subtitle: "Checks Learning Target 1 and Success Criterion 1.",
-      cardDesc: "What the old rules of trade were, what Adam Smith argued, why Britain changed its rules in 1846, and what did not change for every country.",
+      cardDesc: "What the old rules of trade were, what Adam Smith argued, why Britain changed its rules in 1846, and where tariffs stayed or came back.",
       learningTargets: [lesson.learningTargets[0].target],
       successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: "Answer in four steps. (1) Describe the old rules of trade around 1750 (mercantilism), with one example of how governments controlled trade. (2) Explain ONE idea Adam Smith used to argue against those rules. (3) Explain ONE cause of Britain's change to free trade, with a detail such as the repeal of the Corn Laws in 1846. (4) Name ONE thing about trade that did not change for every Western country by 1900.",
+      prompt: "Answer in four steps. (1) Describe the old rules of trade around 1750 (mercantilism), with one example of how governments controlled trade. (2) Explain ONE idea Adam Smith used to argue against those rules. (3) Explain ONE cause of Britain's change to free trade, with a detail from the lesson. (4) Name ONE country where tariffs stayed high or came back by 1900, and say what happened there.",
       responseType: "Checkpoint 1",
       terms: ["mercantilism", "tariff", "tariffs", "monopoly", "ban", "East India Company", "Adam Smith", "1776", "Wealth of Nations", "tailor", "shoemaker", "cheaper", "mercantile system", "laissez-faire", "free trade", "Corn Laws", "1815", "grain", "landowners", "Anti-Corn Law League", "1838", "Manchester", "Cobden", "Ireland", "famine", "1845", "Peel", "1846", "repealed", "1860", "Cobden-Chevalier", "France", "Germany", "1879", "United States", "partly"],
-      focus: ["Describe the old rules of trade.", "Explain one of Adam Smith's ideas.", "Explain one cause of Britain's change, with a detail.", "Name one thing that did not change for every country."]
+      focus: ["Describe the old rules of trade.", "Explain one of Adam Smith's ideas.", "Explain one cause of Britain's change, with a detail.", "Name one country where tariffs stayed high or came back."]
     },
     {
       title: "Checkpoint 2: Business, Goods, and How They Connect",
-      subtitle: "Checks Learning Target 2 and Success Criterion 2, and Unit 5 Learning Objective H: how economic systems, ideas, and institutions developed and contributed to change from 1750 to 1900.",
+      subtitle: "Checks Learning Targets 2 and 3 and Success Criteria 2 and 3, and Unit 5 Learning Objective H: how economic systems, ideas, and institutions developed and contributed to change from 1750 to 1900.",
       cardDesc: "How new banking and finance helped businesses work across borders, how consumer goods and living standards changed for some, how one change relates to another, and what continued.",
-      learningTargets: [lesson.learningTargets[1].target],
-      successCriteria: [lesson.successCriteria[1].criteria],
-      prompt: "Explain how business and the goods people could buy changed between 1750 and 1900, and how the changes connect. (1) Explain how ONE new practice in banking or finance (limited liability, stock markets, or banks) helped a business work across borders, using HSBC or Lever's soap company as your example. (2) Explain ONE way consumer goods became more available, more affordable, or more varied, with a detail. (3) Explain why living standards rose only for some. (4) Explain how ONE of these developments relates to another: did it cause it, make it possible, or answer it? (5) Name ONE thing that continued from before 1750.",
+      learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
+      successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
+      prompt: "Explain how business and the goods people could buy changed between 1750 and 1900, and how the changes connect. (1) Explain how ONE new practice in banking or finance (limited liability, stock markets, or banks) helped a business work across borders: use HSBC (a bank serving trade between China and the world) or Lever Brothers (a limited company from 1890 that sold shares from 1894). (2) Explain ONE way consumer goods became more available, more affordable, or more varied, with a detail. (3) Explain why living standards rose only for some. (4) Explain how ONE of these developments relates to another: did it cause it, make it possible, or answer it? (5) Name ONE thing that continued from before 1750.",
       responseType: "Checkpoint 2",
       skill: "Continuity and Change",
       terms: ["limited liability", "1855", "1856", "shares", "stock market", "stock exchange", "investors", "bank", "banking", "HSBC", "Hong Kong", "Shanghai", "London", "1865", "Lever", "Sunlight", "soap", "1884", "1886", "United States", "Unilever", "1929", "transnational", "cotton cloth", "cheaper", "affordable", "variety", "branded", "wrapped", "standard of living", "wages", "1860", "for some", "poor", "made possible", "caused", "continued", "VOC", "tariffs"],
@@ -135,7 +135,7 @@
       alt: "A yellowed United States trademark filing for Lever Brothers, Limited, of Port Sunlight, England, registered May 5, 1891. Pasted in the middle is a printed advertisement headed Sunlight Soap, with a large drawing of two hands, a sign-language alphabet from A to Z with a slogan for each letter, and paragraphs of instructions for washing clothes the Sunlight way.",
       url: "../assets/images/topics/5-7/lever-sunlight-soap-trademark-1891.jpg",
       sourceUrl: "https://www.loc.gov/pictures/item/2020713351/",
-      caption: "A United States trademark registration for Lever Brothers, Limited, of Port Sunlight, England, registered on May 5, 1891. To register the Sunlight name, the company filed this printed advertisement with the U.S. Patent Office. Library of Congress.",
+      caption: "A United States trademark registration for Lever Brothers, Limited, of Port Sunlight, England, registered on May 5, 1891. This filing protected an advertising design, pictures of hands spelling out the alphabet in sign language with the word Sunlight. The company had first registered the Sunlight name in the United States in 1886. Library of Congress.",
       prompt: "NOTICE where the company is based, where the filing was made, and what the advertisement promises about washing day. INFER what this shows about a British business selling across the ocean, and about how soap was being sold. A company's own advertisement: what can it not tell you about who could afford the soap?"
     },
     {
@@ -143,8 +143,8 @@
       alt: "A printed sheet of eight drawings of large stone buildings, each labeled: Stock Exchange New York, Bourse Paris, Bank of England London Stock Exchange, Board of Trade Chicago, Stock Exchange Hamburg, Stock Exchange Frankfort, Stock Exchange Berlin, and Bourse Brussels, above the title The World's Exchanges.",
       url: "../assets/images/topics/5-7/worlds-exchanges-root-tinker-1886.jpg",
       sourceUrl: "https://www.loc.gov/pictures/item/98516796/",
-      caption: "A print published in New York in 1886 by Root and Tinker, showing the stock exchanges and trading halls of eight cities in the United States and Europe. The London panel is labeled Bank of England, London, Stock Exchange. Library of Congress.",
-      prompt: "NOTICE how many cities appear and how the buildings are drawn. INFER what the printer expected buyers in 1886 to know or care about. A print sold as a picture: what can it not tell you about who owned shares, or how much they were worth?"
+      caption: "A print published in New York in 1886 by Root and Tinker, showing the stock exchanges and trading halls of eight cities in the United States and Europe. The London panel is labeled Stock Exchange but draws the Bank of England and the Royal Exchange (compare the photograph of the Royal Exchange). Library of Congress.",
+      prompt: "NOTICE how many cities appear and how the buildings are drawn. INFER why a printer in New York would sell a picture of these buildings. A print sold as a picture: what can it not tell you about who owned shares, or how much they were worth?"
     },
     {
       title: "The Royal Exchange, London, 1890s",

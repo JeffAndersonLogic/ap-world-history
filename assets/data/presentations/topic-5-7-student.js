@@ -92,7 +92,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "steps": [
           {
             "label": "1776",
-            "text": "Adam Smith publishes **The Wealth of Nations**, attacking \"the mercantile system.\""
+            "text": "Smith attacks \"the mercantile system\" in **The Wealth of Nations**."
           },
           {
             "label": "A family",
@@ -180,7 +180,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "timeline-lanes",
-      "eyebrow": "Trade · What Carried On",
+      "eyebrow": "Trade · The Limits",
       "title": "Others followed, for a while.",
       "footer": "Western Europe \"began abandoning mercantilism,\" as the College Board says: not every country, and not for good.",
       "kc": "KC-5.1.III.A",
@@ -207,7 +207,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             ]
           },
           {
-            "name": "Germany",
+            "name": "German states",
             "events": [
               {
                 "year": 1865,
@@ -217,7 +217,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
               {
                 "year": 1879,
                 "label": "1879",
-                "text": "Tariffs back on grain and iron"
+                "text": "The German Empire puts tariffs back"
               }
             ]
           },
@@ -266,17 +266,17 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "before": {
           "tag": "Before",
           "items": [
-            "From 1720 to 1825, a company with shares usually needed the government's permission",
-            "Most businesses belonged to a family or a few partners",
-            "If a partnership failed, a partner could lose his house"
+            "1720 to 1825: a company with shares needed permission",
+            "Most businesses: a family or a few partners",
+            "A partner could lose his house"
           ]
         },
         "after": {
           "tag": "After",
           "items": [
-            "Laws of 1855 and 1856: almost any seven people can register a company",
-            "Owners can lose only what they put in: limited liability",
-            "France follows in 1863 and 1867"
+            "1855: owners lose only what they put in",
+            "1856: almost any seven people can register",
+            "France follows, 1863 and 1867"
           ]
         },
         "continued": {
@@ -311,7 +311,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "1886",
             "key": true,
-            "text": "A New York print shows the exchanges of **eight cities** in America and Europe."
+            "text": "A New York print shows exchanges and trading halls in **eight cities**."
           }
         ],
         "visual": {
@@ -319,7 +319,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "alt": "A printed sheet of eight drawings of large stone buildings, each labeled with its city: the stock exchanges of New York, Paris, London, Chicago, Hamburg, Frankfurt, Berlin and Brussels",
           "credit": "The World's Exchanges, Root & Tinker, New York, 1886 · Library of Congress · Public domain",
           "ratio": 1.092,
-          "position": "50% 45%"
+          "position": "50% 45%",
+          "fit": "contain"
         },
         "caption": "The World's Exchanges, New York, 1886"
       }
@@ -373,7 +374,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "tag": "1891 · Port Sunlight, England",
-            "text": "The filing carries a full **advertisement**.",
+            "text": "A second filing protects an **advertising design**.",
             "visual": {
               "url": "../assets/images/topics/5-7/lever-sunlight-soap-trademark-1891.jpg",
               "alt": "A yellowed United States trademark form for Lever Brothers, Limited, registered May 5, 1891, with a printed advertisement pasted in: Sunlight Soap in large letters, a drawing of two hands, a sign-language alphabet with a slogan for each letter, and instructions for washing clothes",
@@ -385,14 +386,14 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "rows": [
           {
             "label": "Then",
-            "text": "William Lever sells **Sunlight Soap** from 1884, made with oils from coconut and palm kernels; Port Sunlight from 1888."
+            "text": "**Sunlight Soap** from 1884; a **limited company** from 1890; shares sold from 1894."
           },
           {
             "label": "Later",
-            "text": "In **1929** Lever Brothers and the Dutch margarine makers join to form **Unilever**, based in England and the Netherlands."
+            "text": "In **1929** Lever Brothers and Dutch margarine makers form **Unilever**."
           }
         ],
-        "proves": "A business that grew across borders, and the start of the company the College Board names."
+        "proves": "It crossed borders, and grew into the College Board's Unilever."
       }
     },
     {
@@ -415,7 +416,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "steps": [
           {
             "label": "Cheaper",
-            "text": "Factory **cotton cloth** keeps falling in price long after the first mills."
+            "text": "Machines spin **cotton thread** once spun by hand; cloth keeps getting cheaper."
           },
           {
             "label": "New kinds",
@@ -450,7 +451,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "When",
             "left": "British working families, much faster from about 1860",
-            "right": "British working families, 1780s to 1850s: very little"
+            "right": "British working families, 1780s to 1850s: under 15 percent, by one estimate"
           },
           {
             "label": "Where",
@@ -479,8 +480,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "myth": "Free trade won everywhere.",
-            "evidence": "Germany brought tariffs back from 1879, and the United States kept them.",
-            "source": "KC-5.1.III.A"
+            "evidence": "Germany brought tariffs back from 1879, and the United States kept them high.",
+            "source": "Tariff laws of 1861 and 1879"
           },
           {
             "myth": "Companies that sell shares were invented in the 1800s.",
@@ -513,7 +514,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "cells": [
               "Mercantilism: tariffs, bans, monopolies",
               "Britain trades freely; much of Europe cut tariffs in the 1860s",
-              "Germany's tariffs from 1879; America's high tariffs"
+              "Tariffs never vanished: high in America, back in Germany"
             ]
           },
           {
@@ -527,7 +528,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "Goods",
             "cells": [
-              "Costly, few kinds",
+              "Thread spun by hand; cloth cost more",
               "Cheaper cloth, branded soap, food from afar",
               "Gains for some, not for all"
             ]
@@ -535,7 +536,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         ],
         "result": {
           "label": "Connect",
-          "text": "Global trade led to businesses that crossed borders; banking and finance made them possible; their factories made goods cheaper."
+          "text": "Pick two rows. Did one cause the other, make it possible, or answer it? Give a detail for each."
         }
       }
     },
@@ -545,7 +546,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Say it in one sentence.",
       "kc": "Unit 5: Learning Objective H",
       "template": {
-        "frame": "Partly because of Adam ___, Britain moved from mercantilism to free ___; limited ___, stock markets and banks let businesses cross ___; and better factories made goods ___, for some, while ___ carried on in Germany and America.",
+        "frame": "Partly thanks to Adam ___, Britain moved to free ___; limited ___ and banks let firms cross ___; goods grew ___, for some; and ___ stayed in America and came back in Germany.",
         "words": [
           "Smith",
           "trade",

@@ -502,18 +502,17 @@ module.exports = [
       { zone: [118.5, 27, 4.5, 6.5], label: 'HONG KONG & SHANGHAI', labelSide: 'right', tone: 'sage', legend: 'Hong Kong and Shanghai: HSBC opens, 1865' }
     ],
     flows: [
-      { from: [-4, 51], to: [-1, 46.5], label: '1860', bow: 0.5 },
       { from: [116, 26], to: [3, 52.5], label: '1865', bow: -0.18 },
-      { from: [-3, 53], to: [-80, 40], label: '1886', bow: 0.2 }
+      { from: [-6, 55], to: [-80, 40], label: '1886', bow: 0.2 }
     ],
     legend: [
       { kind: 'area', tone: 'gold', text: 'Britain: Corn Laws repealed, 1846; free trade by 1860' },
-      { kind: 'flow', step: 1, text: 'Britain and France cut tariffs, 1860' },
+      { kind: 'area', tone: 'sand', text: 'France: Britain and France cut tariffs, 1860' },
       { kind: 'area', tone: 'slate', text: 'Germany: tariffs back on grain and iron from 1879' },
       { kind: 'area', tone: 'sage', text: 'Hong Kong and Shanghai: HSBC opens, 1865' },
-      { kind: 'flow', step: 2, text: 'HSBC opens an office in London, 1865' },
-      { kind: 'flow', step: 3, text: 'Lever registers Sunlight Soap in the U.S., 1886' },
-      { kind: 'area', tone: 'plum', text: 'United States: high tariffs on factory goods' }
+      { kind: 'flow', step: 1, text: 'HSBC opens an office in London, 1865' },
+      { kind: 'flow', step: 2, text: 'Lever registers Sunlight Soap in the U.S., 1886' },
+      { kind: 'area', tone: 'plum', text: 'United States: high tariffs on factory goods from 1861' }
     ],
     note: 'Arrows join two places; they are not exact routes. Regions are approximate.'
   },

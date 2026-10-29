@@ -37,26 +37,36 @@ window.BEHISTORICAL_LESSON = {
 
   learningTargets: [
     {
-      target: "I can explain how and why Britain and other Western European countries began to move from mercantilism to free trade between 1750 and 1900, including Adam Smith's ideas and the repeal of the Corn Laws, and what about trade did not change.",
+      target: "I can explain how and why Britain and other Western European countries began to move from mercantilism to free trade between 1750 and 1900, including Adam Smith's ideas and the repeal of the Corn Laws, and where tariffs stayed or came back.",
       kc: "KC-5.1.III.A",
       theme: "Economic Systems"
     },
     {
-      target: "I can explain how large businesses that crossed borders relied on new practices in banking and finance, and how industrial capitalism changed the goods people could buy and raised living standards for some, and explain how one of these developments relates to another.",
+      target: "I can explain how large businesses that crossed borders relied on new practices in banking and finance, and how one of these developments relates to another.",
       kc: "KC-5.1.III.B",
+      theme: "Economic Systems"
+    },
+    {
+      target: "I can explain how industrial capitalism made goods more available, affordable, and varied, and why living standards rose only for some.",
+      kc: "KC-5.1",
       theme: "Economic Systems"
     }
   ],
 
   successCriteria: [
     {
-      criteria: "I can describe the old rules of trade (mercantilism: tariffs, bans, or trading monopolies), explain one idea from Adam Smith that challenged them, and explain one cause of Britain's change to free trade (such as the Anti-Corn Law League, the Irish famine, or Smith's ideas) with a detail such as the 1846 repeal of the Corn Laws. I can name one thing that did not change for every country, such as Germany's return to tariffs in 1879.",
+      criteria: "I can describe the old rules of trade (mercantilism: tariffs, bans, or trading monopolies), explain one idea from Adam Smith that challenged them, and explain one cause of Britain's change to free trade (such as the Anti-Corn Law League, the Irish famine, or Smith's ideas) with a detail such as the 1846 repeal of the Corn Laws. I can name one country where tariffs stayed high or came back by 1900.",
       kc: "KC-5.1.III.A",
       theme: "Economic Systems"
     },
     {
-      criteria: "I can explain how one new practice in banking or finance (limited liability, stock markets, or banks) helped a business work across borders, using HSBC or Lever's soap company (later part of Unilever) as an example; I can explain one way consumer goods became more available, affordable, or varied, and why living standards rose only for some; and I can say how one of these developments relates to another, and one thing that continued.",
+      criteria: "I can explain how one new practice in banking or finance (limited liability, stock markets, or banks) helped a business work across borders, using HSBC or Lever Brothers (later part of Unilever) as an example; I can say whether one development caused another, made it possible, or answered it; and I can name one thing about business that continued from before 1750.",
       kc: "KC-5.1.III.B",
+      theme: "Economic Systems"
+    },
+    {
+      criteria: "I can explain one way consumer goods became more available, more affordable, or more varied, with a detail, and explain why living standards rose only for some, naming one group that gained little.",
+      kc: "KC-5.1",
       theme: "Economic Systems"
     }
   ],
@@ -100,7 +110,7 @@ window.BEHISTORICAL_LESSON = {
           "**A new argument:** in 1776 Adam Smith, a Scottish thinker, published The Wealth of Nations. He attacked what he called \"the mercantile system\": \"If a foreign country can supply us with a commodity cheaper than we ourselves can make it, better buy it of them.\" Later writers called ideas like his laissez-faire, French for roughly \"let them do it.\" Smith did not use the phrase himself.",
           "**Britain changes the rules:** the Corn Laws of 1815 taxed imported grain to keep prices high for landowners. In 1838 Manchester factory owners and merchants started the campaign that became the Anti-Corn Law League, led by Richard Cobden and John Bright. After famine struck Ireland in 1845, Prime Minister Robert Peel turned against the Corn Laws, and in 1846 Parliament repealed them. By 1860 Britain had ended its tariffs on imported factory goods.",
           "**Partly in response:** Smith's ideas were part of the reason, but only part. Manufacturers who wanted cheap food and open markets, and the famine, mattered too.",
-          "**Others follow, for a while:** the Cobden-Chevalier Treaty of 1860 between Britain and France, and a chain of treaties in the 1860s, lowered tariffs across much of Western Europe. From 1879 Germany put tariffs back on grain and iron, and the United States kept high tariffs on factory goods. Britain stayed with free trade."
+          "**Others follow, for a while:** the Cobden-Chevalier Treaty of 1860 between Britain and France, and a chain of treaties in the 1860s, lowered tariffs across much of Western Europe. From 1879 Germany put tariffs back on grain and iron, and the United States, which had raised its tariffs on factory goods in 1861, kept them high. Britain stayed with free trade."
         ],
         image: {
           title: "Adam Smith, engraved in 1805",
@@ -113,10 +123,10 @@ window.BEHISTORICAL_LESSON = {
         title: "Business: New Tools, Bigger Companies",
         bullets: [
           "**Before:** companies that sold shares were not new. The VOC sold shares in 1602 (Topic 4.5). But from 1720 to 1825, forming one in Britain usually took special permission from the government, and most businesses belonged to one family or a few partners, who could lose everything if the business failed.",
-          "**Limited liability:** laws of 1855 and 1856 let almost any group of seven or more people in Britain register a company whose owners could lose only what they had put in. France passed similar laws in 1863 and 1867.",
-          "**Stock markets:** a stock market is where people buy and sell shares. London had had one since the 1700s, and in the mid-1840s crowds of British investors rushed to buy railway shares. By 1886 an American print could show the stock exchanges of eight cities.",
+          "**Limited liability:** a law of 1855 let a company's owners lose only what they had put in, and a law of 1856 let almost any group of seven or more people in Britain register such a company. France passed similar laws in 1863 and 1867.",
+          "**Stock markets:** a stock market is where people buy and sell shares. London had had one since the 1700s, and in the mid-1840s crowds of British investors rushed to buy railway shares. An American print of 1886 shows the exchanges and trading halls of eight cities.",
           "**A bank across borders:** the Hongkong and Shanghai Banking Corporation (HSBC) opened in Hong Kong in March 1865 to give local businesses better banking for their trade, then in Shanghai and London the same year. By 1900 it worked in 16 countries and territories.",
-          "**Soap and margarine:** William Lever began selling Sunlight Soap in England in 1884, registered the name in the United States by 1886, and built Port Sunlight from 1888. Dutch families in Oss turned butter trading into margarine factories that sold to England. In 1929, after this unit, they joined into Unilever, based in England and the Netherlands."
+          "**Soap and margarine:** William Lever began selling Sunlight Soap in England in 1884, registered the name in the United States by 1886, and built Port Sunlight from 1888. In 1890 his business became a limited company, Lever Brothers, Limited, and from 1894 it sold shares to the public. Dutch families in Oss turned butter trading into margarine factories that sold to England. In 1929, after this unit, they joined into Unilever, based in England and the Netherlands."
         ],
         image: {
           title: "The World's Exchanges, 1886",
@@ -128,10 +138,10 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Goods: Cheaper, for Some",
         bullets: [
-          "**More, cheaper, more kinds:** factories kept improving how they made things. Machine-made cotton cloth (Topic 5.3) kept falling in price. Soap came in wrapped, branded bars like Sunlight instead of being cut from long bars. Ships and railways (Topic 5.5) brought fruit, tea, and wheat from far away.",
-          "**Standards of living:** in Britain, historians who measure what wages could buy find that working families' standard of living rose very little from the 1780s to the 1850s, and much faster from about 1860 to 1900.",
+          "**More, cheaper, more kinds:** around 1750, cotton thread was spun by hand. Once machines spun it (Topic 5.3), its price fell fast: by 1815 even the coarsest cotton yarn cost about a third of what it had in the early 1780s, counting for rising prices. Factories kept improving how they made things. Soap came in wrapped, branded bars like Sunlight instead of being cut from long bars. Ships and railways (Topic 5.5) brought fruit, tea, and wheat from far away.",
+          "**Standards of living:** in Britain, one careful estimate finds that working families' standard of living rose by less than 15 percent from the 1780s to the 1850s; most historians agree it grew much faster from about 1860 to 1900.",
           "**For some:** many city workers stayed poor (Topic 5.9), and many of the people who grew the cotton, palm oil, and tea did not share the gains (Unit 6).",
-          "**What continued:** selling shares was older than industry; many countries kept or went back to tariffs; and the gains went to some people and not others.",
+          "**What continued:** selling shares was older than industry; tariffs never disappeared, since the United States kept them high and Germany brought them back; and the gains went to some people and not others.",
           "**Your job:** pick two developments from these cards and say how one relates to the other: did it cause it, make it possible, or answer it?"
         ],
         image: {
@@ -174,9 +184,9 @@ window.BEHISTORICAL_LESSON = {
 
   primarySource: {
     title: "Primary Source: Adam Smith, The Wealth of Nations, 1776",
-    intro: "Adam Smith was a Scottish professor who wrote about how countries grow rich. In 1776 he published The Wealth of Nations, a long book that attacked what he called \"the mercantile system\": the tariffs, bans, and monopolies European governments used to control trade. These are two short passages from it, in his own words.",
-    attribution: "Adam Smith, An Inquiry into the Nature and Causes of the Wealth of Nations (London, 1776), Book IV, chapter 2 (first two paragraphs) and chapter 8 (third), from the public-domain text at Project Gutenberg",
-    text: "It is the maxim of every prudent master of a family, never to attempt to make at home what it will cost him more to make than to buy. The tailor does not attempt to make his own shoes, but buys them of the shoemaker. The shoemaker does not attempt to make his own clothes, but employs a tailor.<br><br>What is prudence in the conduct of every private family, can scarce be folly in that of a great kingdom. If a foreign country can supply us with a commodity cheaper than we ourselves can make it, better buy it of them with some part of the produce of our own industry, employed in a way in which we have some advantage.<br><br>Consumption is the sole end and purpose of all production; and the interest of the producer ought to be attended to, only so far as it may be necessary for promoting that of the consumer.<br><br><em>Words to know: maxim means a rule to live by; prudent means sensible and careful; master of a family means the head of a household; prudence means good sense; scarce be folly means can hardly be foolish; commodity means a good for sale; produce of our own industry means what our own work makes; consumption means buying and using goods; the sole end and purpose means the only goal; attended to means cared about.</em>",
+    intro: "Adam Smith was a Scottish thinker, once a professor, who wrote about how countries grow rich. In 1776 he published The Wealth of Nations, a long book that attacked what he called \"the mercantile system\": the tariffs, bans, and monopolies European governments used to control trade. These are two short passages from it, in his own words.",
+    attribution: "Adam Smith, An Inquiry into the Nature and Causes of the Wealth of Nations (London, 1776), Book IV, chapter 2 (two passages, shortened) and chapter 8 (one sentence), from the public-domain text at Project Gutenberg",
+    text: "It is the maxim of every prudent master of a family, never to attempt to make at home what it will cost him more to make than to buy. The tailor does not attempt to make his own shoes, but buys them of the shoemaker. The shoemaker does not attempt to make his own clothes, but employs a tailor. ...<br><br>What is prudence in the conduct of every private family, can scarce be folly in that of a great kingdom. If a foreign country can supply us with a commodity cheaper than we ourselves can make it, better buy it of them with some part of the produce of our own industry, employed in a way in which we have some advantage. ...<br><br>Consumption is the sole end and purpose of all production; and the interest of the producer ought to be attended to, only so far as it may be necessary for promoting that of the consumer.<br><br><em>Words to know: maxim means a rule to live by; prudent means sensible and careful; master of a family means the head of a household; prudence means good sense; scarce be folly means can hardly be foolish; commodity means a good for sale; produce of our own industry means what our own work makes; consumption means buying and using goods; the sole end and purpose means the only goal; attended to means cared about.</em>",
     questions: [
       "In the first paragraph, what does the tailor do instead of making his own shoes? In your own words, what rule is Smith drawing from that example?",
       "In the second paragraph, Smith says a \"great kingdom\" should act like a sensible family. Using the lesson, name one British law that did the opposite, and explain what Britain did about it in 1846.",

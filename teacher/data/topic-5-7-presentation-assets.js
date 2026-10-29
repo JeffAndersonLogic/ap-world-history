@@ -45,7 +45,7 @@ const DOCK={url:IMG+'liverpool-dock-fruit-stands-1893.jpg',alt:'An old brown-ton
 const setTemplate=(phase,add)=>{const s=by(phase);if(s)s.template=Object.assign({},s.template||{},add);return s;};
 setTemplate('question',{place:'top',visual:EXCHANGE});
 setTemplate('smith',{visual:SMITH,caption:'Adam Smith, engraved in 1805'});
-setTemplate('stock',{visual:WORLD,caption:'The World\'s Exchanges, New York, 1886'});
+setTemplate('stock',{visual:Object.assign({},WORLD,{fit:'contain'}),caption:'The World\'s Exchanges, New York, 1886'});
 const lever=by('lever');
 if(lever&&lever.template&&Array.isArray(lever.template.panels)){
   lever.template.panels[0]=Object.assign({},lever.template.panels[0],{visual:SOAP1886});

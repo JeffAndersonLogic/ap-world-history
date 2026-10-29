@@ -1727,7 +1727,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In 1838 factory owners and merchants in Manchester started a campaign that became the Anti-Corn Law League, led by Richard Cobden and John Bright. Cheap bread, they argued, would help workers, and if Britain bought other countries' grain, those countries could afford to buy British cloth. Then, in 1845, a disease destroyed the potato crop in Ireland and brought famine. Prime Minister Robert Peel decided the Corn Laws had to go. In 1846 Parliament repealed them, and the fight split Peel's own party."
+            "html": "In 1838 factory owners and merchants in Manchester started a campaign that became the Anti-Corn Law League, led by Richard Cobden and John Bright. Cheap bread, they argued, would help workers, and if Britain bought other countries' grain, those countries could afford to buy British cloth. Then, in 1845, a disease destroyed much of Ireland's potato crop, and famine began. Prime Minister Robert Peel decided the Corn Laws had to go. In 1846 Parliament repealed them, and the fight split Peel's own party."
           },
           {
             "type": "p",
@@ -1735,12 +1735,12 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Other countries followed, for a while. In 1860 Britain and France signed the Cobden-Chevalier Treaty, cutting tariffs on each other's goods, and in the 1860s a chain of similar treaties lowered tariffs across much of Western Europe. But not everyone kept going. From 1879 Germany put tariffs back on imported grain and iron to protect its farmers and factories, and the United States kept high tariffs on factory goods. Britain stayed with free trade. Western European countries had <em>begun</em> to abandon mercantilism, but not every country, and not for good."
+            "html": "Other countries followed, for a while. In 1860 Britain and France signed the Cobden-Chevalier Treaty, cutting tariffs on each other's goods, and in the 1860s a chain of similar treaties lowered tariffs across much of Western Europe. But not everyone kept going. From 1879 Germany put tariffs back on imported grain and iron to protect its farmers and factories, and the United States, which had raised its tariffs on factory goods in 1861, kept them high. Britain stayed with free trade. Western European countries had <em>begun</em> to abandon mercantilism, but not every country, and not for good."
           }
         ],
         "callout": {
           "label": "AP Thinking, Continuity and Change",
-          "raw": "<p><strong>Change, and its limits.</strong> By 1900, your trade row reads: Britain traded freely; much of Western Europe lowered tariffs in the 1860s. What carried on: Germany went back to tariffs from 1879, and the United States kept them.</p>"
+          "raw": "<p><strong>Change, and its limits.</strong> By 1900, your trade row reads: Britain traded freely; much of Western Europe lowered tariffs in the 1860s. What carried on: tariffs did not disappear. Germany brought them back from 1879, and the United States kept them high.</p>"
         }
       },
       {
@@ -1758,11 +1758,11 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>Limited liability.</strong> Laws of 1855 and 1856 let almost any group of seven or more people in Britain register a company whose owners could lose only the money they had put in, not everything they owned. This is <span class=\"kt\">limited liability</span>. France passed similar laws in 1863 and 1867. With less to lose, many more people with modest savings could invest."
+            "html": "<strong>Limited liability.</strong> A law of 1855 let companies formed by ordinary investors limit what their owners could lose to the money they had put in, not everything they owned, and a law of 1856 let almost any group of seven or more people in Britain register such a company. This is <span class=\"kt\">limited liability</span>. France passed similar laws in 1863 and 1867. With less to lose, many more people with modest savings could invest."
           },
           {
             "type": "p",
-            "html": "<strong>Stock markets.</strong> A <span class=\"kt\">stock market</span>, or stock exchange, is a place where people buy and sell shares, so an investor can get money back by selling shares to someone else, without waiting for the company to close. London had had a stock exchange since the 1700s. In a railway boom in the mid-1840s, crowds of British investors rushed to buy railway shares. An American print from 1886 shows the stock exchanges of eight cities, from New York and Chicago to London, Paris, Berlin, Hamburg, Frankfurt, and Brussels."
+            "html": "<strong>Stock markets.</strong> A <span class=\"kt\">stock market</span>, or stock exchange, is a place where people buy and sell shares, so an investor can get money back by selling shares to someone else, without waiting for the company to close. London had had a stock exchange since the 1700s. In a railway boom in the mid-1840s, crowds of British investors rushed to buy railway shares. An American print from 1886, \"The World's Exchanges,\" shows the exchanges and trading halls of eight cities, from New York and Chicago to London, Paris, Berlin, Hamburg, Frankfurt, and Brussels."
           },
           {
             "type": "p",
@@ -1771,7 +1771,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Making Connections",
-          "raw": "<p><strong>How one thing relates to another.</strong> Limited liability did not build a railway. It made investing less risky, so more people invested, so companies could raise more money. When you connect two developments, say <em>how</em>: one caused the other, made it possible, or answered it.</p>"
+          "raw": "<p><strong>How one thing relates to another.</strong> When you connect two developments, say <em>how</em> they are linked: one caused the other, made it possible, or answered it. A date that comes first is not yet a link; say what the first development changed.</p>"
         }
       },
       {
@@ -1789,7 +1789,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>Soap and margarine.</strong> In England, William Lever began selling Sunlight Soap in 1884, made with oils from tropical plants such as coconut and palm kernels. By 1886 he had registered the Sunlight name in the United States, and from 1888 he built a factory town for his workers, Port Sunlight. Across the North Sea, in the Netherlands, the Jurgens and Van den Bergh families turned butter trading into margarine factories and sold to England."
+            "html": "<strong>Soap and margarine.</strong> In England, William Lever began selling Sunlight Soap in 1884, made with oils from tropical plants such as coconut and palm kernels. By 1886 he had registered the Sunlight name in the United States, and from 1888 he built a factory town for his workers, Port Sunlight. To pay for growth, in 1890 the business became a limited company, Lever Brothers, Limited, and from 1894 it sold shares to the public. Across the North Sea, in the Netherlands, the Jurgens and Van den Bergh families turned butter trading into margarine factories and sold to England."
           },
           {
             "type": "p",
@@ -1798,7 +1798,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Making Connections",
-          "raw": "<p><strong>Read the Key Concept as a chain.</strong> The College Board says global trade \"contributed to\" big transnational businesses, which \"relied on\" new banking and finance. HSBC is the chain in one company: trade between China and the world needed a bank, and the bank worked across borders.</p>"
+          "raw": "<p><strong>Read the Key Concept as a chain.</strong> The College Board says global trade \"contributed to\" big transnational businesses, which \"relied on\" new banking and finance. As you read about HSBC and Lever, look for each link of that chain.</p>"
         }
       },
       {
@@ -1808,11 +1808,11 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Factories kept improving how they made things, so goods became more available, more affordable, and more varied. Machine-made cotton cloth (Topic 5.3) kept falling in price long after the first mills opened. Soap that grocers had once cut from long bars now came in wrapped bars with a brand name, like Sunlight, advertised to every household. Ships and railways (Topic 5.5) brought fruit, tea, and wheat from far away to city markets."
+            "html": "Around 1750, cotton thread was still spun by hand, one thread at a time. Once machines spun it (Topic 5.3), its price fell fast: by 1815 even the coarsest cotton yarn cost about a third of what it had in the early 1780s, counting for rising prices, and cloth kept getting cheaper after that. Factories kept improving how they made things, so goods became more available, more affordable, and more varied. Soap that grocers had once cut from long bars now came in wrapped bars with a brand name, like Sunlight, advertised to every household. Ships and railways (Topic 5.5) brought fruit, tea, and wheat from far away to city markets."
           },
           {
             "type": "p",
-            "html": "A family's <span class=\"kt\">standard of living</span> is how well it lives: what it can afford to eat, wear, and buy. In Britain, historians who measure what wages could buy find that working families' standard of living rose very little from the 1780s to the 1850s, and grew much faster from about 1860 to 1900. But many city workers stayed poor (Topic 5.9), and many of the people who grew the cotton, palm oil, and tea did not share in the gains (Unit 6). The College Board's words are exact: standards of living rose \"for some.\""
+            "html": "A family's <span class=\"kt\">standard of living</span> is how well it lives: what it can afford to eat, wear, and buy. In Britain, one careful estimate finds that working families' standard of living rose by less than 15 percent from the 1780s to the 1850s; most historians agree it grew much faster from about 1860 to 1900. But many city workers stayed poor (Topic 5.9), and many of the people who grew the cotton, palm oil, and tea did not share in the gains (Unit 6). The College Board's words are exact: standards of living rose \"for some.\""
           },
           {
             "type": "p",
@@ -1825,18 +1825,18 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Continuity and Change",
-          "raw": "<p><strong>Four myths to drop.</strong> \"Adam Smith said governments should do nothing\": he wrote that government had three duties, defense, justice, and public works that no private person would build. \"Free trade won everywhere\": Germany and the United States kept or brought back tariffs. \"Companies that sell shares were invented in the 1800s\": the VOC sold shares in 1602. \"Industry made everyone richer\": the College Board says \"for some.\"</p>"
+          "raw": "<p><strong>Four myths to drop.</strong> \"Adam Smith said governments should do nothing\": he wrote that government had three duties, defense, justice, and public works that no private person would build. \"Free trade won everywhere\": Germany brought tariffs back, and the United States kept them high. \"Companies that sell shares were invented in the 1800s\": the VOC sold shares in 1602. \"Industry made everyone richer\": the College Board says \"for some.\"</p>"
         }
       }
     ],
-    "takeaway": "Between 1750 and 1900 the rules of the economy changed. Adam Smith's Wealth of Nations (1776) attacked mercantilism and argued for buying goods wherever they were cheapest. Partly persuaded by such ideas, partly pushed by manufacturers and by famine in Ireland, Britain repealed its Corn Laws in 1846 and by 1860 had ended its tariffs on imported factory goods; in the 1860s much of Western Europe lowered tariffs, though Germany went back to them from 1879 and the United States kept them. New practices in banking and finance, limited liability (1855 and 1856), stock markets, and banks, let businesses grow large and cross borders, like HSBC (1865) and Lever's Sunlight Soap (1884), which later became part of Unilever. Factories made goods cheaper and more varied, and living standards rose, much faster after about 1860, for some, not for all. Freer trade. Bigger business. Cheaper goods, for some.",
+    "takeaway": "Between 1750 and 1900 the rules of the economy changed. Adam Smith's Wealth of Nations (1776) attacked mercantilism and argued for buying goods wherever they were cheapest. Partly persuaded by such ideas, partly pushed by manufacturers and by famine in Ireland, Britain repealed its Corn Laws in 1846 and by 1860 had ended its tariffs on imported factory goods; in the 1860s much of Western Europe lowered tariffs, though Germany went back to them from 1879 and the United States kept them high. New practices in banking and finance, limited liability (laws of 1855 and 1856), stock markets, and banks, let businesses grow large and cross borders, like HSBC (1865) and Lever's Sunlight Soap (1884), which later became part of Unilever. Factories made goods cheaper and more varied, and living standards rose, much faster after about 1860, for some, not for all. Freer trade. Bigger business. Cheaper goods, for some.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
         "num": "01",
         "skill": "Continuity and Change",
-        "text": "Using Sections 2 and 3, explain ONE way Britain's rules of trade changed between 1750 and 1860, and ONE thing about trade that did not change for every Western country by 1900. Use a detail from the reading for each.",
+        "text": "Using Sections 2 and 3, explain ONE way Britain's rules of trade changed between 1750 and 1860, and name ONE country where tariffs stayed high or came back by 1900. Use a detail from the reading for each.",
         "placeholder": "Around 1750, Britain... By 1860... But..."
       },
       {

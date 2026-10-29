@@ -202,3 +202,117 @@ Goods and living standards:
 ## Review findings
 
 (Phase 9 passes are logged here.)
+
+### Pass 1, 2026-10-29
+
+Packet: `capture-topic-for-review.js 5.7` (brand fonts, 24 teacher slides). Two fresh reviewers,
+launched together: page truth, readability, CED and ownership on the cheaper model; history on the
+default model. Before the packet, the builder's own read of the slides fixed two layout defects (slide
+13's "1840s" step spilling into the next box; slide 20's title colliding with the table headers).
+
+**Page truth reviewer: 14 findings; 12 supported and fixed, 1 supported in part, 1 rejected.** CED
+wording, objective, reasoning process and skill: no findings.
+
+1. Checkpoint 2, First & 10 Q02 and the criterion offered Lever as a business that "relied on" banking
+   and finance, but no surface tied Lever to any such practice. **Fixed:** every surface now says that
+   Lever's business became a limited company, Lever Brothers, Limited, in 1890 and sold shares to the
+   public from 1894 (Grace's Guide, "Lever Brothers"; National Library of Australia, guide to the
+   Lever Brothers Ltd. records: "registered as a private company in 1890 and converted to a public
+   limited company in 1894"), and Checkpoint 2 names that link. New row below.
+2. "One thing that did not change for every country" was hard to decode, and Germany's 1879 tariff is
+   a reversal, not a continuity. **Fixed:** the prompts (First & 10 Q01, Checkpoint 1, criterion 1,
+   target 1, BeInTheRoom reflection, deck notes) now ask for "one country where tariffs stayed high or
+   came back by 1900"; the continuity is stated as "tariffs never disappeared: the United States kept
+   them high, and Germany brought them back"; slide 9's eyebrow is "The Limits"; slide 21's frame says
+   "stayed in America and came back in Germany."
+3. Near-model answers on the student's page or projected. **Fixed in part:** the First & 10 callouts no
+   longer give the worked limited-liability chain or the worked HSBC chain (they keep the three kinds
+   of link); slide 20's Connect row is now a prompt; Checkpoint 1's prompt no longer supplies "the
+   repeal of the Corn Laws in 1846"; criterion 1 no longer names Germany. **Rejected in part:** the
+   deep reading's "Use this" boxes are optional chapter content that names evidence, not a finished
+   answer to a checkpoint.
+4. The goods row had no 1750 baseline, and slide 20 invented "Costly, few kinds." **Fixed:** the
+   reading, lecture card, deep reading and slide 17 say that around 1750 cotton thread was spun by hand
+   and that by 1815 even the coarsest yarn cost about a third of its early 1780s real price (Harley,
+   working paper 81: "The real price of even the coarsest weft yarns fell to only a third of their
+   early 1780s level by 1815"); slide 20 reads "Thread spun by hand; cloth cost more."
+5. "The United States kept high tariffs" implied an unbroken run from before the 1860s; the Walker
+   Tariff of 1846 and the Tariff of 1857 were low. **Fixed:** "raised its tariffs on factory goods in
+   1861 and kept them high" on every surface and the map key.
+6. The 1891 trademark card said the company filed it "to register the Sunlight name," against the 1886
+   registration elsewhere. **Fixed** with history finding 2.
+7. Slide 13 cropped the 1886 print to about five of its eight panels while saying "eight cities."
+   **Fixed:** the picture is shown whole (`fit: 'contain'`).
+8. Slide 6's key step touched its box edge; slide 15's proves box ran to the slide edge. **Fixed:**
+   shorter text on both (slide 15 also failed the brand-font browser test, below).
+9. Map arrow 1 (Britain and France) could not be read as an arrow at world scale. **Fixed:** France is
+   now a shaded, keyed region; the two remaining arrows are renumbered 1 (HSBC) and 2 (Lever), and
+   the map key on the page matches.
+10. Slide 19's myth credited a tariff fact to KC-5.1.III.A. **Fixed:** "Tariff laws of 1861 and 1879."
+11. The living-standards estimate was stated as settled on student surfaces, and Target 2 did not name
+    KC-5.1. **Fixed:** "one careful estimate finds ... by less than 15 percent ... most historians agree
+    it grew much faster from about 1860"; a third learning target and criterion for KC-5.1, both
+    assessed by Checkpoint 2.
+12. The Chartists, a 5.8 movement, had a full BeInTheRoom role. **Fixed:** the role is "Factory Worker";
+    the Chartists' "cheap bread" argument stays as one attributed evidence card and one sentence.
+13. No Canvas text in the packet. **Rejected:** Canvas events are generated from schedule dates, and
+    Unit 5 has none; the 5.7 overview is staged in `build-canvas-events.js`, as 5.1 to 5.6's are.
+14. An Evidence Lab prompt was hard to decode, and Target 2 was one 45-word sentence. **Fixed:** "INFER
+    why a printer in New York would sell a picture of these buildings"; Target 2 split (finding 11).
+
+**History reviewer: 12 findings, all supported and fixed.** Every Smith quotation, the Corn Law dates
+and the one-shilling duty, the HSBC facts, Feinstein's figure, Read's sentence and four picture credits
+were checked and found accurate.
+
+1. "The 1886 print shows the stock exchanges of eight cities," but its London panel draws the Bank of
+   England and the Royal Exchange (with the Wellington statue), which the course's own photochrom
+   caption says was not the Stock Exchange, and Chicago's is the Board of Trade. **Fixed:** "exchanges
+   and trading halls of eight cities" everywhere; the card and slide 13's notes say what the London
+   panel really draws.
+2. The 1891 filing registered an advertising design (pictures of hands spelling the sign-language
+   alphabet, with the word Sunlight), not the name. **Fixed:** the card says so and that the name was
+   first registered in 1886.
+3. Slide 8's notes quoted Peel's "economic necessity in the face of famine" from Read's article, which
+   does not contain it. **Fixed:** replaced with Read's actual sentence.
+4. The First & 10 said the 1845 blight "destroyed the potato crop." **Fixed:** "destroyed much of
+   Ireland's potato crop, and famine began" (the near-total failure was 1846), matching the other
+   surfaces.
+5. "Germany" in the 1860s is an anachronism (the Empire dates from 1871). **Fixed:** the lane is "German
+   states," the 1879 event "The German Empire puts tariffs back," and the map key and notes explain.
+6. Germany's 1879 tariff was labeled continuity. **Fixed** with page truth finding 2.
+7. HSBC was called itself a "new practice in banking." **Fixed:** a transnational business that offered
+   banking services to other traders (deep reading, slide 14 notes).
+8. Feinstein's estimate was stated as settled; Lindert and Williamson (1983) found faster gains from 1820
+   to 1850. **Fixed** with page truth finding 11; the deep reading and slide 18's notes name the debate;
+   "from about 1860" everywhere.
+9. "Laws of 1855 and 1856 let any seven people" merged two rules (the 1855 Act required 25 members).
+   **Fixed:** "a law of 1855 let owners lose only what they put in, and a law of 1856 let almost any
+   seven people register such a company" on every surface.
+10. The Skill Builder's "Lever's Sunlight Soap and its sales across borders (1884 to 1886)" claimed
+    sales no surface supports. **Fixed:** "Lever's Sunlight Soap (1884), its U.S. trademark (1886), and
+    the company's sale of shares (1894)."
+11. The Primary Source cut text without ellipses, and "first two paragraphs" misdescribed where the
+    passages sit. **Fixed:** ellipses added; cited as "Book IV, chapter 2 (two passages, shortened) and
+    chapter 8 (one sentence)."
+12. "Adam Smith, a Scottish professor" in 1776 (he left his Glasgow chair in 1764). **Fixed:** "a
+    Scottish thinker who had been a professor at Glasgow" (deep reading); "once a professor" (Primary
+    Source).
+
+**Browser suite (brand fonts) on the pass-1 deck:** three overflows the reviewers did not report:
+slide 12's "before" column (10px into the footer), slide 21's frame (8px) and slide 15 (16px off the
+board). **Fixed** by shorter text; `slide-templates.browser.test.js` then passed, 68 assertions.
+
+**New and changed claim rows from pass 1:**
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| In 1890 Lever's business became a limited company, Lever Brothers, Limited, and from 1894 it sold shares to the public | F10, LD, DR, RC (Checkpoint 2, Skill Builder), Deck slide 15 | Grace's Guide ("1890 Lever and Co became a limited company – Lever Brothers Ltd."; 1894 registration as a public company); NLA finding aid ("registered as a private company in 1890 and converted to a public limited company in 1894") | VERIFIED |
+| Around 1750 cotton thread was spun by hand; by 1815 the coarsest yarn cost about a third of its early 1780s real price | F10, LD, DR, Deck slides 17 and 20 | Harley, working paper 81, word for word on the yarn | VERIFIED |
+| The United States raised its tariffs on factory goods in 1861 and kept them high | F10, LD, RC map key, DR, Deck, Map | Wikipedia, Morrill Tariff ("began a long period of protectionism that lasted until 1913") | NARROWED (was "kept high tariffs") |
+| Germany became one country in 1871; the German states' customs union kept tariffs low before; the Empire put tariffs back from 1879 | RC map key, Deck slide 9 | Wikipedia, German tariff of 1879 (grain duties abolished 1853; the 1879 tariff) | NARROWED |
+| In 1845 the blight destroyed much of Ireland's potato crop | F10, BR | The deep reading's wording; the near-total failure came in 1846 (history reviewer, Britannica) | NARROWED |
+| A law of 1855 allowed limited liability; a law of 1856 let almost any seven people register such a company | F10, LD, DR, Deck | Wikipedia, 1855 Act (25 members) and 1856 Act (seven) | NARROWED |
+| "The World's Exchanges" (1886) shows exchanges and trading halls in eight cities; its London panel draws the Bank of England and the Royal Exchange | F10, LD, RC, DR, Deck slide 13 | The print itself, against the photochrom; LoC 98516796 | NARROWED |
+| The 1891 trademark protected a design of hands spelling the sign-language alphabet, with the word Sunlight | RC Evidence Lab, Deck slide 15 notes | The printed slip on the 1891 filing (LoC 2020713351) | VERIFIED |
+| Living standards: "one careful estimate" (Feinstein), under 15 percent to the 1850s; faster from about 1860; Lindert and Williamson found faster early gains | F10, LD, DR, Deck slide 18 | Feinstein 1998; Floud and Johnson; Lindert and Williamson, *Economic History Review* 1983 (as the history reviewer cites them) | NARROWED |
+| Peel "economic necessity in the face of famine" | Deck slide 8 notes | Not in Read's article | REMOVED |
