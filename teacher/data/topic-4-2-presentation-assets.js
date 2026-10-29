@@ -26,7 +26,9 @@
  *   quay where clerks weigh pepper and write it into a ledger. The ship's name
  *   and the "India - Pimenta" sacks are invented by the generator; the note
  *   says so. The step-in panel covers the right of the picture, where the
- *   weighing happens.
+ *   weighing happens. The file has a thin black strip along its bottom edge;
+ *   cropBottom would draw the picture past the board on this full-board
+ *   frame (see 2.6), so the strip stays.
  */
 (function(){
 'use strict';
@@ -62,7 +64,7 @@ const close=by('close');
 if(close){
   close.kind='frame-stepin';
   close.template={
-    visual:AI('topics/4-2/'+encodeURIComponent('4.2 - Landing Slide.jpg'),'Reconstruction of a busy stone quay beside a river harbor: porters carry sacks and barrels off a ship, and at a table in front a clerk writes in a ledger while men weigh dark peppercorns on a brass scale',{cropBottom:.02}),
+    visual:AI('topics/4-2/'+encodeURIComponent('4.2 - Landing Slide.jpg'),'Reconstruction of a busy stone quay beside a river harbor: porters carry sacks and barrels off a ship, and at a table in front a clerk writes in a ledger while men weigh dark peppercorns on a brass scale'),
     lines:['You are on the quay at Lisbon. Pepper from India is weighed and written into the books.','Rulers wanted the trade of Asia, and every voyage that paid made the next one easier to fund.'],
     question:'Rulers backed the voyages. Voyages paid back. More ships sailed.',
     note:'Next: Columbus was looking for a route to Asia. What he started was an exchange of living things nobody planned.'

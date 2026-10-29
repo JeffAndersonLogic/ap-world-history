@@ -483,8 +483,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "visual": {
           "url": "../assets/images/topics/4-2/4.2%20-%20Landing%20Slide.jpg",
           "alt": "Reconstruction of a busy stone quay beside a river harbor: porters carry sacks and barrels off a ship, and at a table in front a clerk writes in a ledger while men weigh dark peppercorns on a brass scale",
-          "ai": true,
-          "cropBottom": 0.02
+          "ai": true
         },
         "lines": [
           "You are on the quay at Lisbon. Pepper from India is weighed and written into the books.",
