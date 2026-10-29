@@ -15,6 +15,7 @@
   const E = window.BHClassPulseEngine;
   const Demo = window.BHClassPulseDemo;
   const Calib = window.BHClassPulseCalibration;
+  const Rubrics = window.BHClassPulseRubrics;
   const MAP = window.BEHISTORICAL_SKILLS_MAP;
   const $ = s => document.querySelector(s);
   const $$ = s => Array.from(document.querySelectorAll(s));
@@ -47,7 +48,7 @@
   // ── Loading a topic and class ─────────────────────────────────────────────
   async function load() {
     const token = ++S.loadToken;
-    const contracts = { cp1: E.contractFor(MAP, S.topic, 'cp1'), cp2: E.contractFor(MAP, S.topic, 'cp2') };
+    const contracts = { cp1: E.contractFor(MAP, S.topic, 'cp1', Rubrics), cp2: E.contractFor(MAP, S.topic, 'cp2', Rubrics) };
     const demo = Demo.build(S.topic, contracts, S.section, Calib);
     const engine = E.createEngine({ provider: demo.provider });
     const results = { cp1: new Map(), cp2: new Map() };
@@ -208,6 +209,10 @@
     else if (e.row.text) h += `<div class="response">${markQuote(e.row.text, crit.evidence)}</div>`;
     if (e.result.status === 'ineligible') h += `<p class="callout">${esc(ELIGIBILITY[e.result.eligibilityReason] || 'Not read.')}</p>`;
     h += `<div class="verdict"><div class="row m-rn"><span class="cell b-${prop}">${LETTER[prop]}</span><b>The tool proposes: ${BANDS[prop]}</b></div><p class="small">${esc(crit.reason)}</p>`;
+    // What this level means here, from the same rubric the provider was given.
+    const ruled = D.contracts[col.cp].criteria[col.ci].rubric;
+    const meaning = ruled && ruled[prop] ? ruled[prop] : D.contracts[col.cp].levels && D.contracts[col.cp].levels[prop];
+    if (meaning) h += `<p class="small rubric-line"><b>${ruled && ruled[prop] ? 'The rubric for this criterion' : 'The rubric'}:</b> ${esc(meaning)}</p>`;
     if (crit.evidence.length && !e.row.placeholder && ['D', 'P'].includes(prop)) h += '<p class="small">The highlighted words are the evidence it used. It cannot propose Demonstrating or Partly there without quoting the student.</p>';
     crit.misconceptions.forEach(m => { h += `<div class="row"><span class="chip">Wrong idea: ${esc(m)}</span></div>`; });
     h += '</div>';

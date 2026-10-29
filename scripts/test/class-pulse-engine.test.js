@@ -23,6 +23,7 @@ const vm = require('node:vm');
 const ROOT = path.resolve(__dirname, '..', '..');
 const ENGINE = path.join(ROOT, 'teacher', 'class-pulse-engine.js');
 const E = require(ENGINE);
+const R = require(path.join(ROOT, 'teacher', 'data', 'class-pulse-rubrics.js'));
 
 const box = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(ROOT, 'assets', 'data', 'skills-map.js'), 'utf8'), box);
@@ -85,11 +86,23 @@ function checkContracts(api) {
   assert.equal(five.criteria.length, MAP.topics['5.3'].slots['checkpoint-two-response'].criteria.length);
   assert.ok(five.criteria.length > 3, '5.3 Checkpoint 2 is the five-criterion case this test depends on');
 
-  // 3. Guidance and coverage notes only where written.
-  assert.ok(E.contractFor(MAP, '2.3', 'cp1').criteria.every(c => c.guidance));
+  // 3. The rubric travels in the contract: course-wide levels and rules for every
+  // topic, per-criterion descriptors where written, refused when its wording drifts.
+  for (const key of Object.keys(R.TOPICS)) for (const cp of ['cp1', 'cp2']) {
+    const c = E.contractFor(MAP, key, cp, R);
+    assert.equal(c.rubricVersion, R.VERSION);
+    assert.ok(c.criteria.every((x, i) => x.rubric && x.rubric.D === R.TOPICS[key][cp][i].D && x.rubric.P && x.rubric.N), key + ' ' + cp + ' carries its rubric');
+  }
+  assert.deepEqual(Object.keys(E.contractFor(MAP, '3.2', 'cp1', R).levels), ['D', 'P', 'N', 'U']);
+  assert.ok(E.contractFor(MAP, '3.2', 'cp1', R).criteria.every(c => !('rubric' in c)), 'no invented descriptors for a topic without them');
+  assert.ok(!('levels' in E.contractFor(MAP, '3.2', 'cp1')), 'no rubric unless one is passed');
+  const drifted = JSON.parse(JSON.stringify(R));
+  drifted.TOPICS['2.3'].cp1[0].criterion += ' (edited)';
+  assert.throws(() => E.contractFor(MAP, '2.3', 'cp1', drifted), /does not match its criteria/);
   assert.match(E.contractFor(MAP, '2.3', 'cp1').coverageNote, /not assessed/);
-  assert.ok(E.contractFor(MAP, '3.2', 'cp1').criteria.every(c => !('guidance' in c)));
   assert.ok(!('coverageNote' in E.contractFor(MAP, '3.2', 'cp2')));
+  assert.match(E.INSTRUCTIONS, /uncertainty field is ONLY for category U/);
+  assert.match(E.INSTRUCTIONS, /choose the lower one/);
 
   // 4. Refusals: Foundations, unknown topics, unknown checkpoints.
   assert.throws(() => E.contractFor(MAP, 'f1', 'cp1'), /unit topics only/);
@@ -164,6 +177,8 @@ function checkContracts(api) {
       m => checkContracts(m)],
     ['reads Foundations topics', "if (topic.kind !== 'unit') throw new Error('Class Pulse reads unit topics only, not ' + topicKey);", '',
       m => assert.throws(() => m.contractFor(MAP, 'f1', 'cp1'), /unit topics only/)],
+    ['applies a rubric whose wording drifted', "if (own && (own.length !== criteria.length || own.some((r, i) => r.criterion !== criteria[i]))) {", 'if (false) {',
+      m => { const d = JSON.parse(JSON.stringify(R)); d.TOPICS['2.3'].cp1[0].criterion += ' (edited)'; assert.throws(() => m.contractFor(MAP, '2.3', 'cp1', d), /does not match/); }],
     ['accepts invented quotes', "if (r.evidence.some(q => !text.includes(q))) throw new Error('Evidence quote absent from response');", '',
       m => { const bad = goodReply(cp, text); bad.criteria[0].evidence = ['Invented quote']; assert.throws(() => m.validateOutput(bad, cp, text)); }],
     ['sends the response key', 'response: { text: row.text }', 'response: { text: row.text, key: row.key }',
