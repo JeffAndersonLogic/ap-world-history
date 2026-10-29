@@ -369,7 +369,7 @@ window.BEHISTORICAL_TEACHING = {
         steps: [
           { label: 'The idea', text: 'At a **stock exchange**, people buy and sell shares in companies.' },
           { label: '1700s', text: 'London has had a **stock exchange** since the 1700s.' },
-          { label: '1840s', text: 'In a **railway boom**, crowds of British investors buy railway shares; many lose savings when prices fall.' },
+          { label: '1840s', text: 'In a **railway boom**, crowds of British investors buy railway shares.' },
           { label: '1886', key: true, text: 'A New York print shows the exchanges of **eight cities** in America and Europe.' }
         ]
       },
@@ -377,7 +377,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Stock markets are one of the CED\'s examples for KC-5.1.III.B.',
-          'London: organized share trading at Jonathan\'s coffee house from 1698, and a building of the brokers\' own from 1773 (Grub Street Project, from Wheatley and Cunningham). The railway boom ("Railway Mania") peaked in 1845 to 1846, drew in many middle-class investors, and collapsed; share prices fell until about 1850 (Wikipedia; Focus Economics).',
+          'London: organized share trading at Jonathan\'s coffee house from 1698, and a building of the brokers\' own from 1773 (Grub Street Project, from Wheatley and Cunningham). The railway boom ("Railway Mania") peaked in 1845 to 1846, drew in many middle-class investors, and collapsed; share prices fell until about 1850, and many lost their savings (Wikipedia; Focus Economics).',
           'The picture is a real print: "The World\'s Exchanges," published by Root and Tinker, New York, 1886 (Library of Congress, no known restrictions). The Library\'s record: "Images of stock exchanges in New York, Paris, London, Chicago, Hamburg, Frankfort, Berlin, and Brussels." The Chicago building is the Board of Trade, where grain was traded. The London panel is labeled "Bank of England, London, Stock Exchange."',
           'A printer made this to sell: it shows what New York buyers in 1886 thought worth hanging on a wall, not how much money moved through each exchange.'
         ],
@@ -532,8 +532,8 @@ window.BEHISTORICAL_TEACHING = {
     {
       retelling: true,
       phase: 'retell', kind: 'split-matrix', eyebrow: 'The Whole Topic',
-      title: 'Freer trade. Bigger business. Cheaper goods, for some.',
-      footer: 'With your notes closed, redraw the table, then connect two of its rows.',
+      title: 'Three rows, one story.',
+      footer: 'Freer trade. Bigger business. Cheaper goods, for some. Redraw the table from memory, then connect two rows.',
       template: {
         columns: [{ name: 'Around 1750' }, { name: 'By 1900' }, { name: 'Carried on' }],
         rows: [

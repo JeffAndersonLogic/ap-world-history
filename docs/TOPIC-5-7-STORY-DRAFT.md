@@ -4,6 +4,10 @@
 Drafted 2026-10-29 from the CED source file, for the build Jeff started with "Build the next unit 5
 topic." Nothing ships until Jeff says "ship it".
 
+**Resume here (2026-10-29):** Phases 0 to 8 done and pushed. Phase 9 review pass 1 running (packet from
+`capture-topic-for-review.js 5.7`, brand fonts). Next: log pass 1 findings in the ledger, fix, run pass
+2; then move `APPROVED_UNIT5_REWRITE_BLOB`, browser suite, topic audit, report.
+
 **Taught:** no dates yet. The schedule ends with the Era 3 Exam (Green Monday 2026-11-23, Silver
 Tuesday 2026-11-24), and neither the schedule nor any comment in it names a Unit 5 class day (5.1 to
 5.6 are not scheduled either). The build adds no schedule entries; the dates are an open item in the

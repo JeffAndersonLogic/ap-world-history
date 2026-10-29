@@ -306,7 +306,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "1840s",
-            "text": "In a **railway boom**, crowds of British investors buy railway shares; many lose savings when prices fall."
+            "text": "In a **railway boom**, crowds of British investors buy railway shares."
           },
           {
             "label": "1886",
@@ -493,8 +493,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "split-matrix",
       "eyebrow": "The Whole Topic",
-      "title": "Freer trade. Bigger business. Cheaper goods, for some.",
-      "footer": "With your notes closed, redraw the table, then connect two of its rows.",
+      "title": "Three rows, one story.",
+      "footer": "Freer trade. Bigger business. Cheaper goods, for some. Redraw the table from memory, then connect two rows.",
       "template": {
         "columns": [
           {
