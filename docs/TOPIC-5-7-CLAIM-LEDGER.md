@@ -507,3 +507,12 @@ phrases. No new myth class appeared after pass 2. Nothing systemic remains that 
 
 **Ledger status at the close:** every row carries one of VERIFIED, NARROWED or REMOVED. No row is NEEDS
 JEFF.
+
+**After the close: CI's brand-font pass.** GitHub's Validate run on the closing commit failed one
+browser assertion that the local brand-font run had passed: slide 9 (13px) and slide 20 (15px)
+collided, as they had on the first session's pass-1 commit (which also flagged slide 6, fixed in pass
+2). Cause: both footers ran almost the full board width, and CI's rendering of Libre Baskerville
+wraps them to a second line, which pushes into the slide above. Shown by a controlled mutation: a
+longer slide 9 footer that wraps locally reproduces CI's exact failure ("timeline-lanes 13px"), and
+the source was restored. **Fixed:** both footers shortened to about two-thirds of the width; the
+wording is unchanged in substance.

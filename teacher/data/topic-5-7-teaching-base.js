@@ -280,7 +280,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'others', kind: 'timeline-lanes', eyebrow: 'Trade · The Limits',
       kc: 'KC-5.1.III.A', title: 'Others followed, for a while.',
-      footer: 'Western Europe "began abandoning mercantilism," as the College Board says: not every country, and not for good.',
+      footer: 'Western Europe "began abandoning mercantilism": not every country, not for good.',
       template: {
         range: [1840, 1900],
         tick: 10,
@@ -533,7 +533,7 @@ window.BEHISTORICAL_TEACHING = {
       retelling: true,
       phase: 'retell', kind: 'split-matrix', eyebrow: 'The Whole Topic',
       title: 'Three rows, one story.',
-      footer: 'Freer trade. Bigger business. Cheaper goods, for some. Redraw the table from memory, then connect two rows.',
+      footer: 'Freer trade. Bigger business. Cheaper goods, for some. Redraw it from memory.',
       template: {
         columns: [{ name: 'Around 1750' }, { name: 'By 1900' }, { name: 'Carried on' }],
         rows: [

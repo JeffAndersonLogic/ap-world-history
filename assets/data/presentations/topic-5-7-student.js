@@ -178,7 +178,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "timeline-lanes",
       "eyebrow": "Trade · The Limits",
       "title": "Others followed, for a while.",
-      "footer": "Western Europe \"began abandoning mercantilism,\" as the College Board says: not every country, and not for good.",
+      "footer": "Western Europe \"began abandoning mercantilism\": not every country, not for good.",
       "kc": "KC-5.1.III.A",
       "template": {
         "range": [
@@ -491,7 +491,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "split-matrix",
       "eyebrow": "The Whole Topic",
       "title": "Three rows, one story.",
-      "footer": "Freer trade. Bigger business. Cheaper goods, for some. Redraw the table from memory, then connect two rows.",
+      "footer": "Freer trade. Bigger business. Cheaper goods, for some. Redraw it from memory.",
       "template": {
         "columns": [
           {
