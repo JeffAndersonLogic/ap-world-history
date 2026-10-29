@@ -242,3 +242,8 @@ table.skills td .pc{width:52px}
 .toolbar > div{min-width:0;max-width:100%}
 select.sel{max-width:100%;text-overflow:ellipsis}
 @media (max-width:520px){.toolbar > div{display:flex;flex-wrap:wrap;align-items:center;gap:6px}select.sel{width:100%}}
+
+/* Every reader's level for the open criterion, side by side (added 2026-10-29). */
+.readers-cmp{display:grid;gap:8px;border-top:1px solid var(--line);padding-top:12px}
+.readers-cmp .row{display:flex;gap:8px;align-items:flex-start;flex-wrap:nowrap}
+.readers-cmp .cell{flex:none}

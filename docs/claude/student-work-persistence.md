@@ -474,3 +474,21 @@ the real lesson page against the stand-in transport: off as shipped, the
 fingerprint, the receipt reaching the backup, the teacher's reading of it, edits
 and rating changes reading as changed, and a wiped device getting the receipt back
 with the answer. Five negative controls.
+
+### Class Pulse readers and calibration, added 2026-10-29
+
+**Which AI reads the work is a setting.** `teacher/data/class-pulse-readers.js` lists the
+readers (Claude's fast, everyday and most capable tiers, named by tier rather than model
+version) and the readings each has recorded on the calibration page. The teacher page's
+Reader menu replays a recorded reader through the real engine, offers a reader only for a
+topic it has read, and the drawer shows every reader's level for the open criterion side by
+side. In real use the menu lists only readers ZCS approves, and changing it reads the work
+again.
+
+**Calibration answers carry no levels.** `teacher/data/class-pulse-calibration-u3.js` is the
+Unit 3 blind set, 104 invented answers judged against the Topic 3.1 to 3.4 descriptors in
+`teacher/data/class-pulse-rubrics.js`. Jeff's blind labels are the only reference, so the
+engine test fails if a row ever gains a field beyond its id, topic, checkpoint and text, and
+Unit 3 readings stay out of the readers file until he has labeled the set. The calibration
+page itself, and the scripts that rebuild it from this repository, live in AndersonLogic-OS
+`04_PRODUCTS/BeHistorical/Class-Pulse-Calibration/`.

@@ -12,6 +12,9 @@
  *     asks nothing of any host but its own and Google Fonts;
  *   - projector-safe mode leaves no student name on the grid;
  *   - after-class bars count every student, including anyone who did not submit;
+ *   - the Reader menu offers an AI reader only where it has recorded readings, and
+ *     choosing one shows that reader's own levels and reasons, with every reader's
+ *     level for the open criterion side by side;
  *   - the drawer quotes evidence that is really in the answer, and a teacher's
  *     agree or change moves the agreement score;
  *   - it fits a phone without sideways scrolling.
@@ -141,6 +144,31 @@ async function suite(browser) {
   check('Projector safe hides every name on the grid', names.length > 0 && names.every(nm => !grid.includes(nm)));
   await s.context.close();
 
+  section('Readers');
+  const r = await open(browser);
+  await choose(r.p, '5.3');
+  const noAi = await r.p.$$eval('#reader option', o => o.filter(x => x.value !== 'invented').every(x => x.disabled));
+  check('an AI reader with no recorded readings for a topic cannot be chosen there', noAi);
+  await choose(r.p, '2.3');
+  const offered = await r.p.$$eval('#reader option:not([disabled])', o => o.map(x => x.value));
+  check('Topic 2.3 offers the everyday reader, which has recorded readings', offered.includes('default'), offered.join(','));
+  await r.p.selectOption('#reader', 'default');
+  await r.p.waitForFunction(() => /Levels read by Claude, everyday/.test(document.getElementById('h-kind').textContent), null, { timeout: 8000 }).catch(() => {});
+  await r.p.click('#toend');
+  await r.p.click('#heat button.cell:not(.b-U) >> nth=0');
+  const same = await r.p.evaluate(() => {
+    const text = document.querySelector('#dbody .response').textContent;
+    const row = window.BHClassPulseCalibration.rows.find(x => x.text === text);
+    const ci = Number(document.getElementById('dsub').textContent.match(/criterion (\d+)/)[1]) - 1;
+    const want = row && window.BHClassPulseReaders.RECORDED.default[row.id];
+    const shown = document.querySelector('#dbody .verdict p.small').textContent;
+    return { ok: !!(want && shown === want.criteria[ci].reason), every: /Every reader/.test(document.getElementById('dbody').textContent) && /Claude, everyday \(shown\)/.test(document.getElementById('dbody').textContent) };
+  });
+  check("choosing a reader shows that recorded reader's levels and reasons", same.ok, JSON.stringify(same));
+  check('the drawer lists every reader that read this answer', same.every);
+  check('switching readers raises no script error', r.errors.length === 0, r.errors.join(' | '));
+  await r.context.close();
+
   section('A phone');
   for (const t of ['live', 'pulse', 'course', 'student']) {
     const m = await open(browser, 390);
@@ -163,6 +191,7 @@ async function suite(browser) {
     { name: 'the grid assumes three criteria', file: 'teacher/class-pulse-app.js', from: 'CPS.forEach(cp => contracts[cp].criteria.forEach(', to: 'CPS.forEach(cp => contracts[cp].criteria.slice(0, 3).forEach(', expect: /follow the topic's criteria/ },
     { name: 'the policy allows the network', file: 'teacher/class-pulse.html', from: "img-src 'self' data:; connect-src 'none'", to: "img-src 'self' data:; connect-src *", expect: /cannot reach the network|fetch from the page is refused/ },
     { name: 'projector mode keeps names', file: 'teacher/class-pulse-app.js', from: "S.names === 'anon' ?", to: 'false ?', expect: /hides every name/ },
+    { name: 'the reader menu changes nothing', file: 'teacher/class-pulse-app.js', from: "S.reader === 'invented' ? demo.provider : recordedProvider(S.reader, demo)", to: 'demo.provider', expect: /recorded reader's levels/ },
     { name: 'bars drop students who did not submit', file: 'teacher/class-pulse-app.js', from: 'D.students.forEach(st => { cnt[endBand(st, c)]++; });', to: "D.students.forEach(st => { const b = endBand(st, c); if (b !== 'none') cnt[b]++; });", expect: /every student counted/ }
   ];
   let controlFailures = 0;

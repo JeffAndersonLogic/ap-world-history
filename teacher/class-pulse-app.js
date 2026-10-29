@@ -8,6 +8,12 @@
  * passed the same validation a model's reply would face. Teacher corrections are
  * kept for this page load only.
  *
+ * The Reader menu picks which AI's levels are shown (data/class-pulse-readers.js).
+ * Where a reader has recorded readings for the topic, they are replayed through the
+ * engine in place of the invented levels, and the drawer shows every reader's level
+ * for the open criterion side by side. In the real tool the menu lists only readers
+ * the district has approved, and changing it reads the work again.
+ *
  * Levels: D Demonstrating, P Partly there, N Not yet, U Can't tell. Colors are
  * Cardinal red, Ridge gold and Teaching navy (Jeff, 2026-10-23). */
 (function () {
@@ -16,6 +22,7 @@
   const Demo = window.BHClassPulseDemo;
   const Calib = window.BHClassPulseCalibration;
   const Rubrics = window.BHClassPulseRubrics;
+  const Readers = window.BHClassPulseReaders;
   const MAP = window.BEHISTORICAL_SKILLS_MAP;
   const $ = s => document.querySelector(s);
   const $$ = s => Array.from(document.querySelectorAll(s));
@@ -41,16 +48,48 @@
   const S = {
     tab: 'live', topic: TOPICS.includes('3.2') ? '3.2' : TOPICS[0], section: 'S2',
     minute: 31, playing: false, timer: null, names: 'names', sort: 'roster', cmetric: 'ev', stu: 0,
-    overrides: new Map(), loadToken: 0
+    overrides: new Map(), loadToken: 0, reader: 'invented'
   };
   let D = null; // { contracts, kind, students, rows, results, cols }
+
+  // ── Readers ───────────────────────────────────────────────────────────────
+  function recordedFor(readerId, topicKey) {
+    const all = (Readers && Readers.RECORDED[readerId]) || {};
+    return Object.keys(all).filter(id => Readers.topicOf(id) === topicKey);
+  }
+  function readerAvailable(readerId, topicKey) { return readerId === 'invented' || recordedFor(readerId, topicKey).length > 0; }
+  function readerLabel(readerId) { const r = Readers && Readers.READERS.find(x => x.id === readerId); return r ? r.label : readerId; }
+  function renderReaderPick() {
+    if (!Readers) { $('#reader').closest('div').hidden = true; return; }
+    $('#reader').innerHTML = Readers.READERS.map(r => {
+      const ok = readerAvailable(r.id, S.topic);
+      return `<option value="${r.id}"${r.id === S.reader ? ' selected' : ''}${ok ? '' : ' disabled'}>${esc(r.label)}${ok ? '' : ' (not run on this topic yet)'}</option>`;
+    }).join('');
+  }
+  // Replays one reader's recorded replies. The engine only ever hands a provider the
+  // response text, so the replies are found by checkpoint and text, as a model would
+  // see them.
+  function recordedProvider(readerId, demo) {
+    const replies = new Map(), rec = Readers.RECORDED[readerId];
+    CPS.forEach(cp => demo.rows[cp].forEach(r => { if (r.caseId && rec[r.caseId]) replies.set(cp + '|' + r.text, rec[r.caseId]); }));
+    return {
+      id: 'recorded-' + readerId, version: 'calibration-page', kind: 'replay',
+      async interpret({ contract, response }) {
+        const reply = replies.get(contract.checkpoint + '|' + response.text);
+        if (!reply) throw new Error('This reader has no recorded reading of this answer');
+        return { criteria: JSON.parse(JSON.stringify(reply.criteria)) };
+      }
+    };
+  }
 
   // ── Loading a topic and class ─────────────────────────────────────────────
   async function load() {
     const token = ++S.loadToken;
     const contracts = { cp1: E.contractFor(MAP, S.topic, 'cp1', Rubrics), cp2: E.contractFor(MAP, S.topic, 'cp2', Rubrics) };
     const demo = Demo.build(S.topic, contracts, S.section, Calib);
-    const engine = E.createEngine({ provider: demo.provider });
+    if (!readerAvailable(S.reader, S.topic)) S.reader = 'invented';
+    renderReaderPick();
+    const engine = E.createEngine({ provider: S.reader === 'invented' ? demo.provider : recordedProvider(S.reader, demo) });
     const results = { cp1: new Map(), cp2: new Map() };
     for (const cp of CPS) {
       const rows = demo.rows[cp].filter(r => r.completionState !== 'missing');
@@ -179,9 +218,10 @@
     $('#h-need').textContent = D.students.filter(needsYou).length;
     $('#h-topic').textContent = title(S.topic);
     $('#h-min').textContent = S.minute >= END ? 'Bell rang' : 'Minute ' + Math.floor(S.minute) + ' of ' + END;
-    $('#h-kind').textContent = D.kind === 'written' ? 'Invented answers with invented writing.'
+    $('#h-kind').textContent = (D.kind === 'written' ? 'Invented answers with invented writing.'
       : D.kind === 'calibration' ? 'The forty invented calibration answers, dealt round the class.'
-      : 'Invented levels only. This topic has no invented writing yet.';
+      : 'Invented levels only. This topic has no invented writing yet.') +
+      (S.reader === 'invented' ? '' : ' Levels read by ' + readerLabel(S.reader) + '.');
   }
   function tick() { S.minute += .75; if (S.minute >= END) { S.minute = END; stop(); } renderLive(); }
   function play() { if (S.minute >= END) S.minute = 0; S.playing = true; S.timer = setInterval(tick, 400); renderLive(); }
@@ -216,6 +256,7 @@
     if (crit.evidence.length && !e.row.placeholder && ['D', 'P'].includes(prop)) h += '<p class="small">The highlighted words are the evidence it used. It cannot propose Demonstrating or Partly there without quoting the student.</p>';
     crit.misconceptions.forEach(m => { h += `<div class="row"><span class="chip">Wrong idea: ${esc(m)}</span></div>`; });
     h += '</div>';
+    h += everyReader(e.row, col);
     if (e.result.status === 'analyzed') {
       h += `<div class="check"><b style="font-size:13px">Your call (optional)</b><div class="row">
         <button class="btn" type="button" data-agree="${si}|${colId}" aria-pressed="${!!(o && o.agreed)}">${o && o.agreed ? 'You agreed' : 'Agree'}</button>
@@ -226,6 +267,17 @@
     h += `<p class="small">Confidence the student reported: <b>${c ? c + ' of 5, ' + CONF[c] : 'not given'}</b>.</p>`;
     $('#dbody').innerHTML = h;
     showDrawer();
+  }
+  // Every AI reader's level for this criterion of this answer, where recorded, so a
+  // disagreement between readers is visible before trusting any one of them.
+  function everyReader(row, col) {
+    if (!Readers || !row.caseId) return '';
+    const got = Readers.READERS.filter(r => r.id !== 'invented' && Readers.RECORDED[r.id] && Readers.RECORDED[r.id][row.caseId]);
+    if (!got.length) return '';
+    return '<div class="readers-cmp"><b style="font-size:13px">Every reader</b>' + got.map(r => {
+      const c = Readers.RECORDED[r.id][row.caseId].criteria[col.ci];
+      return `<div class="row m-rn"><span class="cell b-${c.category}">${LETTER[c.category]}</span><span class="small"><b>${esc(r.label)}${r.id === S.reader ? ' (shown)' : ''}:</b> ${esc(c.reason)}</span></div>`;
+    }).join('') + (got.length < Readers.READERS.length - 1 ? '<p class="small">The other readers have not read this answer yet.</p>' : '') + '</div>';
   }
   function showDrawer() { $('#scrim').hidden = false; $('#drawer').hidden = false; $('#dclose').focus(); }
   function closeDrawer() { $('#scrim').hidden = true; $('#drawer').hidden = true; if (lastFocus && lastFocus.isConnected) lastFocus.focus(); }
@@ -423,6 +475,7 @@
   $('#topic').addEventListener('change', e => { S.topic = e.target.value; S.stu = 0; load(); });
   $('#section').addEventListener('change', e => { S.section = e.target.value; S.stu = 0; load(); });
   $('#stpick').addEventListener('change', e => { S.stu = Number(e.target.value); renderStudent(); });
+  $('#reader').addEventListener('change', e => { S.reader = e.target.value; load(); });
   seg('#names', 'names', renderAll);
   seg('#sort', 'sort', renderLive);
   seg('#cmetric', 'cmetric', renderCourse);

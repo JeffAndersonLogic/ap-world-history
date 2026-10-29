@@ -24,6 +24,9 @@ const ROOT = path.resolve(__dirname, '..', '..');
 const ENGINE = path.join(ROOT, 'teacher', 'class-pulse-engine.js');
 const E = require(ENGINE);
 const R = require(path.join(ROOT, 'teacher', 'data', 'class-pulse-rubrics.js'));
+const U3 = require(path.join(ROOT, 'teacher', 'data', 'class-pulse-calibration-u3.js'));
+const CALIB = require(path.join(ROOT, 'teacher', 'data', 'class-pulse-calibration.js'));
+const READERS = require(path.join(ROOT, 'teacher', 'data', 'class-pulse-readers.js'));
 
 const box = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(ROOT, 'assets', 'data', 'skills-map.js'), 'utf8'), box);
@@ -75,6 +78,17 @@ function checkContracts(api) {
   return checked;
 }
 
+function checkBlindSet(set) {
+  assert.equal(set.rows.length, 104, 'the Unit 3 blind set has 104 answers');
+  assert.equal(new Set(set.rows.map(r => r.id)).size, set.rows.length, 'answer ids are unique');
+  assert.equal(new Set(set.rows.map(r => r.text)).size, set.rows.length, 'no answer is repeated');
+  for (const r of set.rows) {
+    assert.deepEqual(Object.keys(r).sort(), ['checkpoint', 'id', 'text', 'topic'], r.id + ' carries only its id, topic, checkpoint and text: no level');
+    assert.ok(/^3\.[1-4]$/.test(r.topic) && E.SLOTS[r.checkpoint] && r.text.trim(), r.id + ' is a written Unit 3 checkpoint answer');
+    assert.ok(E.contractFor(MAP, r.topic, r.checkpoint, R).criteria.every(c => c.rubric), r.id + ' is judged against written descriptors');
+  }
+}
+
 (async () => {
   // 1. Every unit topic, both checkpoints, verbatim.
   const checked = checkContracts(E);
@@ -93,8 +107,9 @@ function checkContracts(api) {
     assert.equal(c.rubricVersion, R.VERSION);
     assert.ok(c.criteria.every((x, i) => x.rubric && x.rubric.D === R.TOPICS[key][cp][i].D && x.rubric.P && x.rubric.N), key + ' ' + cp + ' carries its rubric');
   }
-  assert.deepEqual(Object.keys(E.contractFor(MAP, '3.2', 'cp1', R).levels), ['D', 'P', 'N', 'U']);
-  assert.ok(E.contractFor(MAP, '3.2', 'cp1', R).criteria.every(c => !('rubric' in c)), 'no invented descriptors for a topic without them');
+  assert.deepEqual(Object.keys(E.contractFor(MAP, '4.1', 'cp1', R).levels), ['D', 'P', 'N', 'U']);
+  assert.ok(E.contractFor(MAP, '4.1', 'cp1', R).criteria.every(c => !('rubric' in c)), 'no invented descriptors for a topic without them');
+  for (const key of ['3.1', '3.2', '3.3', '3.4']) assert.ok(R.TOPICS[key], 'Unit 3 topic ' + key + ' has its rubric');
   assert.ok(!('levels' in E.contractFor(MAP, '3.2', 'cp1')), 'no rubric unless one is passed');
   const drifted = JSON.parse(JSON.stringify(R));
   drifted.TOPICS['2.3'].cp1[0].criterion += ' (edited)';
@@ -103,6 +118,25 @@ function checkContracts(api) {
   assert.ok(!('coverageNote' in E.contractFor(MAP, '3.2', 'cp2')));
   assert.match(E.INSTRUCTIONS, /uncertainty field is ONLY for category U/);
   assert.match(E.INSTRUCTIONS, /choose the lower one/);
+
+  // 3b. The Unit 3 blind calibration set: every answer belongs to a real checkpoint with
+  // a rubric, and no answer carries a level, a label or a reason, because Jeff's blind
+  // labels are the only reference.
+  checkBlindSet(U3);
+  // Recorded readings replay on the teacher page: each must still pass validation
+  // against its case's text and the current contract, under the current rubric.
+  let recorded = 0;
+  for (const [reader, byCase] of Object.entries(READERS.RECORDED)) {
+    assert.ok(READERS.READERS.some(r => r.id === reader), 'recorded reader ' + reader + ' is listed');
+    for (const [id, rec] of Object.entries(byCase)) {
+      const row = CALIB.rows.find(r => r.id === id);
+      assert.ok(row && READERS.topicOf(id) === '2.3', id + ' is a known calibration case');
+      assert.equal(rec.rubricVersion, R.VERSION, id + ' was read under the current rubric');
+      E.validateOutput(rec, E.contractFor(MAP, '2.3', row.checkpoint, R), row.text);
+      recorded++;
+    }
+  }
+  assert.ok(recorded >= 34, 'the settled Topic 2.3 readings are recorded');
 
   // 4. Refusals: Foundations, unknown topics, unknown checkpoints.
   assert.throws(() => E.contractFor(MAP, 'f1', 'cp1'), /unit topics only/);
@@ -181,6 +215,8 @@ function checkContracts(api) {
       m => { const d = JSON.parse(JSON.stringify(R)); d.TOPICS['2.3'].cp1[0].criterion += ' (edited)'; assert.throws(() => m.contractFor(MAP, '2.3', 'cp1', d), /does not match/); }],
     ['accepts invented quotes', "if (r.evidence.some(q => !text.includes(q))) throw new Error('Evidence quote absent from response');", '',
       m => { const bad = goodReply(cp, text); bad.criteria[0].evidence = ['Invented quote']; assert.throws(() => m.validateOutput(bad, cp, text)); }],
+    ['a blind answer carries a level', null, null,
+      () => { const leaked = JSON.parse(JSON.stringify(U3)); leaked.rows[7].level = 'DPN'; checkBlindSet(leaked); }],
     ['sends the response key', 'response: { text: row.text }', 'response: { text: row.text, key: row.key }',
       async m => {
         let seen = null;
@@ -189,12 +225,12 @@ function checkContracts(api) {
       }]
   ];
   for (const [name, from, to, check] of controls) {
-    assert.ok(source.includes(from), 'negative control "' + name + '" no longer matches the engine source');
-    const mutant = load(source.replace(from, to));
+    assert.ok(from === null || source.includes(from), 'negative control "' + name + '" no longer matches the engine source');
+    const mutant = from === null ? E : load(source.replace(from, to));
     let red = false;
     try { await check(mutant); } catch (_) { red = true; }
     assert.ok(red, 'negative control "' + name + '" stayed green: its assertion guards nothing');
   }
 
-  console.log('PASS Class Pulse reader: ' + checked + ' checkpoint contracts verbatim, variable criteria counts, no identifiers sent, finished work only, fail-closed replies, ' + controls.length + ' negative controls red');
+  console.log('PASS Class Pulse reader: ' + checked + ' checkpoint contracts verbatim, variable criteria counts, the Unit 3 blind set unlabeled, recorded readings valid, no identifiers sent, finished work only, fail-closed replies, ' + controls.length + ' negative controls red');
 })().catch(e => { console.error(e); process.exitCode = 1; });
