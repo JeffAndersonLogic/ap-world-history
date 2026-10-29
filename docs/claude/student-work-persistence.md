@@ -486,9 +486,12 @@ side. In real use the menu lists only readers ZCS approves, and changing it read
 again.
 
 **Calibration answers carry no levels.** `teacher/data/class-pulse-calibration-u3.js` is the
-Unit 3 blind set, 104 invented answers judged against the Topic 3.1 to 3.4 descriptors in
-`teacher/data/class-pulse-rubrics.js`. Jeff's blind labels are the only reference, so the
-engine test fails if a row ever gains a field beyond its id, topic, checkpoint and text, and
-Unit 3 readings stay out of the readers file until he has labeled the set. The calibration
+Unit 3 set, 104 invented answers judged against the Topic 3.1 to 3.4 descriptors in
+`teacher/data/class-pulse-rubrics.js`. Their levels are settled on the calibration page by
+review: where all four readers (three Claude tiers and ChatGPT, the last by copy and paste)
+agree, that level stands; where they split, Jeff decides; ten unanimous answers are blind
+spot checks. No other level may sit beside them, so the engine test fails if a row ever
+gains a field beyond its id, topic, checkpoint and text, and Unit 3 readings stay out of the
+readers file until the review is done. The calibration
 page itself, and the scripts that rebuild it from this repository, live in AndersonLogic-OS
 `04_PRODUCTS/BeHistorical/Class-Pulse-Calibration/`.

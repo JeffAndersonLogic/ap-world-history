@@ -9,9 +9,10 @@
  * and rubric, and each reply passed the engine's validation. The page replays them
  * through the engine again.
  *
- * Readers are named by Claude's model tiers, not model versions: a tier keeps its name
- * as models are replaced. Readers from other companies would be added the same way once
- * there is approved access to them.
+ * Claude readers are named by model tier, not model version: a tier keeps its name as
+ * models are replaced. ChatGPT reads on the calibration page by copy and paste through
+ * Jeff's free ChatGPT for Teachers account; using it live would need OpenAI's paid API
+ * and the district's approval.
  *
  * Recorded so far: Topic 2.3, the everyday tier's reading of 2026-10-29, which Jeff
  * accepted as the settled levels after reviewing every disagreement. The fast and most
@@ -29,7 +30,11 @@
     { id: 'invented', label: 'Invented levels', note: 'Levels made up for the demo, not read by any AI.' },
     { id: 'quick', label: 'Claude, fast', note: 'Claude\'s quickest, cheapest tier.' },
     { id: 'default', label: 'Claude, everyday', note: 'Claude\'s balanced tier.' },
-    { id: 'complex', label: 'Claude, most capable', note: 'Claude\'s slowest tier, which thinks longest.' }
+    { id: 'complex', label: 'Claude, most capable', note: 'Claude\'s slowest tier, which thinks longest.' },
+    // Read by copy and paste through ChatGPT for Teachers on the calibration page, 13
+    // answers at a time. It has no way to be called from a page, so it can be a
+    // calibration reader but not a live one.
+    { id: 'chatgpt', label: 'ChatGPT', note: 'OpenAI\'s ChatGPT, by copy and paste, for calibration only.' }
   ];
 
   // reader id -> calibration case id -> { rubricVersion, criteria }
