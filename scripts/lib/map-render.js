@@ -41,6 +41,18 @@ function tone(name) {
   return TONES[name] || TONES.gold;
 }
 
+// Routes are bronze. A route may name a tone instead, drawn in that tone's
+// stroke colour, when a map has to tell several voyages apart that run along
+// the same coast; the numbered badge still names each one, so colour is never
+// the only cue. A route with no tone renders exactly as it always has.
+function routeColor(name) {
+  return name && TONES[name] ? TONES[name].stroke : BRONZE;
+}
+
+function routeMarker(name) {
+  return name && TONES[name] ? `arrow-${name}` : 'arrow';
+}
+
 // A spec names a zone from map-frame.js, or gives explicit coordinates when no
 // named zone fits: [lon, lat, rLon, rLat] for an area, [lon, lat] for a route
 // end. Named zones are the default and render exactly as they always have.
@@ -256,10 +268,15 @@ function renderMap(spec) {
   const highlights = spec.highlights || [];
   const flows = spec.flows || [];
   const points = spec.points || [];
+  const routeMarkers = [...new Set(flows.map((f) => f.tone).filter((name) => name && TONES[name]))]
+    .map((name) => `
+    <marker id="${routeMarker(name)}" markerWidth="20" markerHeight="16" refX="17" refY="8" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L20,8 L0,16 Z" fill="${routeColor(name)}"/>
+    </marker>`).join('');
 
   const legend = spec.legend || [
     ...highlights.filter((h) => h.label).map((h) => ({ kind: 'area', tone: h.tone, text: h.legend || h.label })),
-    ...flows.filter((f) => f.label).map((f, index) => ({ kind: 'flow', step: index + 1, text: f.legend || f.label }))
+    ...flows.filter((f) => f.label).map((f, index) => ({ kind: 'flow', step: index + 1, tone: f.tone, text: f.legend || f.label }))
   ];
 
   const graticule = [];
@@ -371,13 +388,15 @@ function renderMap(spec) {
   const flowLayer = flows.map((f, index) => {
     const { d, mid } = flowGeometry[index];
     const dash = f.style === 'solid' ? '' : ' stroke-dasharray="18 13"';
+    const stroke = f.tone ? ` style="stroke:${routeColor(f.tone)}"` : '';
+    const fill = f.tone ? ` style="fill:${routeColor(f.tone)}"` : '';
     let badge = '';
     if (f.label) {
       const cy = badgeY[index];
-      badge = `<circle class="badge" cx="${mid[0].toFixed(1)}" cy="${cy.toFixed(1)}" r="17"/>
+      badge = `<circle class="badge" cx="${mid[0].toFixed(1)}" cy="${cy.toFixed(1)}" r="17"${fill}/>
     <text class="badgenum" x="${mid[0].toFixed(1)}" y="${(cy + 7).toFixed(1)}" text-anchor="middle">${index + 1}</text>`;
     }
-    return `<path class="flow" d="${d}"${dash} marker-end="url(#arrow)"/>
+    return `<path class="flow" d="${d}"${dash}${stroke} marker-end="url(#${routeMarker(f.tone)})"/>
     ${badge}`;
   }).join('\n    ');
 
@@ -391,8 +410,9 @@ function renderMap(spec) {
     const column = Math.floor(index / perColumn);
     const x = 18 + column * columnWidth;
     const y = 56 + (index % perColumn) * 33;
+    const ink = routeColor(row.tone);
     const swatch = row.kind === 'flow'
-      ? `<circle class="badge" cx="${x + 15}" cy="${y - 7}" r="14"/><text class="badgenum" x="${x + 15}" y="${y - 1}" text-anchor="middle" font-size="16">${row.step || ''}</text><line x1="${x + 33}" x2="${x + 54}" y1="${y - 7}" y2="${y - 7}" stroke="${BRONZE}" stroke-width="5" stroke-dasharray="9 7"/><path d="M${x + 54},${y - 13} L${x + 66},${y - 7} L${x + 54},${y - 1} Z" fill="${BRONZE}"/>`
+      ? `<circle class="badge" cx="${x + 15}" cy="${y - 7}" r="14"${row.tone ? ` style="fill:${ink}"` : ''}/><text class="badgenum" x="${x + 15}" y="${y - 1}" text-anchor="middle" font-size="16">${row.step || ''}</text><line x1="${x + 33}" x2="${x + 54}" y1="${y - 7}" y2="${y - 7}" stroke="${ink}" stroke-width="5" stroke-dasharray="9 7"/><path d="M${x + 54},${y - 13} L${x + 66},${y - 7} L${x + 54},${y - 1} Z" fill="${ink}"/>`
       : `<rect x="${x}" y="${y - 18}" width="40" height="23" rx="4" fill="${tone(row.tone).fill}" fill-opacity=".6" stroke="${tone(row.tone).stroke}" stroke-width="3"/>`;
     return `${swatch}<text class="small" x="${x + (row.kind === 'flow' ? 76 : 56)}" y="${y}">${esc(row.text)}</text>`;
   }).join('\n      ');
@@ -411,7 +431,7 @@ function renderMap(spec) {
     </linearGradient>
     <marker id="arrow" markerWidth="20" markerHeight="16" refX="17" refY="8" orient="auto" markerUnits="userSpaceOnUse">
       <path d="M0,0 L20,8 L0,16 Z" fill="${BRONZE}"/>
-    </marker>
+    </marker>${routeMarkers}
     <style>
       .title{font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:44px;fill:${INK}}
       .subtitle{font-family:Arial,Helvetica,sans-serif;font-size:19px;fill:${SLATE};letter-spacing:1.2px;text-transform:uppercase}

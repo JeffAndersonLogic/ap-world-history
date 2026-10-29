@@ -959,6 +959,35 @@ module.exports = [
     note: 'BeHistorical instructional map. Routes are schematic and coastlines simplified. Magellan\'s fleet crossed the Pacific to the Philippines, where he was killed in 1521; Elcano brought one ship home in 1522. No northern voyage found a sea route to Asia.'
   },
   {
+    id: 'topic-4-2-voyages',
+    code: 'Topic 4.2',
+    title: 'Around Africa, or Across the Atlantic',
+    subtitle: 'Topic 4.2 · Dias, da Gama, and Columbus, 1487–1499',
+    // Explicit coordinates, outward legs only. Each voyage has its own route
+    // tone (bronze, sky, plum) because Dias and da Gama share the West African
+    // coast, and the numbered badges still tell them apart without colour. Dias
+    // keeps near the coast and ends just past the Cape, where his crew made him
+    // turn back; da Gama swings far out into the South Atlantic (the volta),
+    // rounds the Cape, runs up East Africa to Malindi, then crosses to Calicut.
+    // Columbus leaves Palos, calls at the Canaries, and runs west to the Bahamas.
+    highlights: [
+      { zone: [-8.4, 39.6, 2.2, 2.8], label: 'PORTUGAL', labelSide: 'left', tone: 'gold', legend: 'Portugal: the crown that sent Dias and da Gama' },
+      { zone: [-3.2, 40.3, 3.8, 2.9], label: 'SPAIN', labelSide: 'right', tone: 'plum', legend: 'Spain: Isabella and Ferdinand sent Columbus' }
+    ],
+    flows: [
+      { from: [-9.6, 38.2], via: [[-16, 28], [-20, 18], [-14, 4], [0, -4], [4, -16], [9, -29], [17, -39.5]], to: [28.5, -35.2], tone: 'bronze', label: 'Dias, 1487–1488: rounds the tip of Africa, then turns back' },
+      { from: [-10, 37.6], via: [[-20, 26], [-25, 14], [-30, -4], [-27, -24], [-8, -37], [20, -40.5], [37, -30], [41.5, -16], [42.5, -3], [56, 7]], to: [74.3, 11.4], tone: 'sky', label: 'da Gama, 1497–1499: around Africa to India' },
+      { from: [-7.2, 36.6], via: [[-17.5, 27.5], [-45, 27]], to: [-73.6, 24.3], tone: 'plum', label: 'Columbus, 1492–1493: west across the Atlantic' }
+    ],
+    points: [
+      { at: [-74.5, 24.1], label: 'Guanahani (Bahamas)', note: 'Columbus lands, Oct. 1492', side: 'left' },
+      { at: [18.5, -34.4], label: 'Cape of Good Hope', note: 'Dias sails past it, 1488', side: 'left' },
+      { at: [40.1, -3.2], label: 'Malindi', note: 'da Gama hires a guide', side: 'left' },
+      { at: [75.8, 11.2], label: 'Calicut', note: 'da Gama arrives, May 1498' }
+    ],
+    note: 'BeHistorical instructional map. Outward routes only, drawn schematically; coastlines are simplified. All three fleets sailed home: Dias in 1488, Columbus in 1493, da Gama in 1499.'
+  },
+  {
     id: 'topic-4-3',
     code: 'Topic 4.3',
     title: 'What the Ships Carried, and Which Way',
