@@ -492,20 +492,30 @@ module.exports = [
   {
     id: 'topic-5-7',
     code: 'Topic 5.7',
-    title: 'The Global Financial System, c. 1850-1900',
-    subtitle: 'Topic 5.7 · Economic developments and innovations',
+    title: 'Trade and Money, 1838 to 1900',
+    subtitle: 'Topic 5.7 \u00b7 Economic Developments and Innovations in the Industrial Age',
     highlights: [
-      { zone: 'britain', label: 'LONDON', tone: 'gold', legend: 'London: banking, insurance, and the gold standard' },
-      { zone: 'westernEurope', label: 'PARIS & BERLIN', tone: 'bronze', legend: 'Continental banks and stock exchanges' },
-      { zone: 'unitedStates', label: 'NEW YORK', tone: 'sand', legend: 'US corporations and capital markets' },
-      { zone: 'southernCone', label: 'ARGENTINA', tone: 'plum', legend: 'Argentina: British-financed railways and beef' },
-      { zone: 'southAsia', label: 'INDIA', tone: 'slate', legend: 'India: colonial revenue and export crops' }
+      { zone: 'britain', label: 'BRITAIN', labelSide: 'left', tone: 'gold', legend: 'Britain: Corn Laws repealed, 1846; free trade' },
+      { zone: [2.5, 46.5, 4.2, 3], label: 'FRANCE', labelSide: 'left', tone: 'sand', legend: 'France: trade treaty with Britain, 1860' },
+      { zone: [10.5, 51.5, 3.2, 2.4], label: 'GERMANY', labelSide: 'right', tone: 'slate', legend: 'Germany: tariffs back from 1879' },
+      { zone: 'unitedStates', label: 'UNITED STATES', tone: 'plum', legend: 'United States: high tariffs on factory goods' },
+      { zone: [118.5, 27, 4.5, 6.5], label: 'HONG KONG & SHANGHAI', labelSide: 'right', tone: 'sage', legend: 'Hong Kong and Shanghai: HSBC opens, 1865' }
     ],
     flows: [
-      { from: 'britain', to: 'southernCone', label: 'investment capital out' },
-      { from: 'southernCone', to: 'britain', label: 'commodities and interest back', bow: -0.3 },
-      { from: 'britain', to: 'unitedStates', label: 'capital into US railroads', bow: 0.22 }
-    ]
+      { from: [-4, 51], to: [-1, 46.5], label: '1860', bow: 0.5 },
+      { from: [116, 26], to: [3, 52.5], label: '1865', bow: -0.18 },
+      { from: [-3, 53], to: [-80, 40], label: '1886', bow: 0.2 }
+    ],
+    legend: [
+      { kind: 'area', tone: 'gold', text: 'Britain: Corn Laws repealed, 1846; free trade by 1860' },
+      { kind: 'flow', step: 1, text: 'Britain and France cut tariffs, 1860' },
+      { kind: 'area', tone: 'slate', text: 'Germany: tariffs back on grain and iron from 1879' },
+      { kind: 'area', tone: 'sage', text: 'Hong Kong and Shanghai: HSBC opens, 1865' },
+      { kind: 'flow', step: 2, text: 'HSBC opens an office in London, 1865' },
+      { kind: 'flow', step: 3, text: 'Lever registers Sunlight Soap in the U.S., 1886' },
+      { kind: 'area', tone: 'plum', text: 'United States: high tariffs on factory goods' }
+    ],
+    note: 'Arrows join two places; they are not exact routes. Regions are approximate.'
   },
   {
     id: 'topic-5-8',

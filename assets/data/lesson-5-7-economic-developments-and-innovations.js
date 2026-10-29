@@ -29,34 +29,34 @@ window.BEHISTORICAL_LESSON = {
     course: "AP WORLD HISTORY",
     unit: "Unit 5: Revolutions",
     topic: "Topic 5.7",
-    title: "Economic Developments and Innovations",
-    subtitle: "How industrial capitalism invented new financial institutions — corporations, investment banking, stock markets — promoted free trade ideology, and extended economic power through debt and investment rather than armies",
+    title: "Economic Developments and Innovations in the Industrial Age",
+    subtitle: "Between 1750 and 1900 the rules of the economy changed: Britain, and for a time much of Western Europe, moved from mercantilism toward free trade, partly persuaded by Adam Smith; new practices in banking and finance let big businesses work across borders; and industrial capitalism made goods cheaper and more varied, raising living standards for some. Shares, tariffs, and unequal gains carried on.",
     feedbackToolUrl: "https://student.magicschool.ai/s/login?joinCode=czwb9Q",
     canvasSubmissionNote: "Organize your thinking here, submit your final work in Canvas."
   },
 
   learningTargets: [
     {
-      target: "I can explain how industrial capitalism developed new financial institutions, joint-stock companies with limited liability, investment banking, and stock exchanges, and analyze how these institutions made large-scale industrial and infrastructure investment economically possible.",
-      kc: "KC-5.1.III.B",
+      target: "I can explain how and why Britain and other Western European countries began to move from mercantilism to free trade between 1750 and 1900, including Adam Smith's ideas and the repeal of the Corn Laws, and what about trade did not change.",
+      kc: "KC-5.1.III.A",
       theme: "Economic Systems"
     },
     {
-      target: "I can explain how free trade ideology and the gold standard created an integrated global economy in the 19th century, and analyze how economic imperialism, debt, investment, and trade relationships, extended industrial power over regions that were not directly colonized.",
-      kc: "KC-5.1.III.A",
+      target: "I can explain how large businesses that crossed borders relied on new practices in banking and finance, and how industrial capitalism changed the goods people could buy and raised living standards for some, and explain how one of these developments relates to another.",
+      kc: "KC-5.1.III.B",
       theme: "Economic Systems"
     }
   ],
 
   successCriteria: [
     {
-      criteria: "I can define joint-stock company, limited liability, stock exchange, and investment banking, and explain how each institution changed the economics of industrial investment. I can explain the specific mechanism of limited liability: before it, investors faced unlimited personal liability for company debts, which limited investment to those who could afford total loss; after it, investors risked only what they invested, enabling mass participation in industrial enterprise. I can identify the UK Companies Act of 1862 as the key legal turning point. I can give at least one specific example of an investment bank (House of Morgan, Deutsche Bank, Rothschilds) and explain its role in financing industrial enterprise.",
-      kc: "KC-5.1.III.B",
+      criteria: "I can describe the old rules of trade (mercantilism: tariffs, bans, or trading monopolies), explain one idea from Adam Smith that challenged them, and explain one cause of Britain's change to free trade (such as the Anti-Corn Law League, the Irish famine, or Smith's ideas) with a detail such as the 1846 repeal of the Corn Laws. I can name one thing that did not change for every country, such as Germany's return to tariffs in 1879.",
+      kc: "KC-5.1.III.A",
       theme: "Economic Systems"
     },
     {
-      criteria: "I can explain the argument for free trade (comparative advantage, David Ricardo) and its political context: Britain, as the most advanced industrial economy, benefited from free trade because it could undersell domestic producers in every market; countries that were still industrializing used protective tariffs to shield infant industries. I can explain the Corn Laws (1846 repeal) as the defining moment of British free trade policy. I can explain the gold standard as a mechanism for global financial integration and its effect on government economic policy. I can give at least two specific examples of economic imperialism, Latin American debt dependency, Ottoman debt crisis and the Ottoman Public Debt Administration, China's treaty port system, and explain how financial instruments achieved colonial-like control without formal annexation.",
-      kc: "KC-5.1.III.A",
+      criteria: "I can explain how one new practice in banking or finance (limited liability, stock markets, or banks) helped a business work across borders, using HSBC or Lever's soap company (later part of Unilever) as an example; I can explain one way consumer goods became more available, affordable, or varied, and why living standards rose only for some; and I can say how one of these developments relates to another, and one thing that continued.",
+      kc: "KC-5.1.III.B",
       theme: "Economic Systems"
     }
   ],
@@ -78,7 +78,7 @@ window.BEHISTORICAL_LESSON = {
       code: 'KC-5.1.III.B',
       theme: 'Economic Systems',
       text: 'The global nature of trade and production contributed to the proliferation of large-scale transnational businesses that relied on new practices in banking and finance.',
-      illustrativeExamples: ['Hong Kong and Shanghai Banking Corporation (HSBC)', 'Unilever, based in England and the Netherlands and operating in British West Africa and the Belgian Congo', 'Stock markets', 'Limited-liability corporations']
+      illustrativeExamples: ['Hong Kong and Shanghai Banking Corporation (HSBC)', 'Unilever based in England and the Netherlands and operating in British West Africa and the Belgian Congo', 'Stock markets', 'Limited-liability corporations']
     },
     {
       code: 'KC-5.1',
@@ -89,119 +89,112 @@ window.BEHISTORICAL_LESSON = {
   ],
 
   lecture: {
-    title: "The Architecture of Industrial Capitalism: Finance, Free Trade, and Economic Power",
-    intro: "Industrialization required more than technology, it required new ways of organizing and mobilizing capital. The financial innovations of the 19th century, limited liability corporations, stock exchanges, investment banking, the gold standard, were as important as the railroad and the Bessemer process for understanding how industrial capitalism worked. And the ideology of free trade, which Britain promoted globally as the 19th century's dominant industrial power, was simultaneously an economic argument and a tool of economic imperialism. Understanding Topic 5.7 means understanding how the financial architecture of industrial capitalism was built, and how it served some interests more than others.",
+    title: "Freer Trade, Bigger Business",
+    intro: "Use these cards to build three rows, one each for trade, business, and goods. For each row, find what it was like around 1750, what it was like by 1900, and one thing that carried on.",
     videos: [],
     segments: [
       {
-        title: "The Architecture of Industrial Capital: Corporations, Banks, and Markets",
+        title: "Trade: From Mercantilism to Free Trade",
         bullets: [
-          "**The fundamental problem of industrial capitalism**: industrial enterprises, factories, railroads, steamship lines, required more capital than any individual could supply. A single textile factory in Manchester in the 1840s might require £50,000 to build and equip; a railroad line from Liverpool to Manchester required millions. Individual investors could not provide this capital alone, and even partnerships were limited by the wealth of their members. Industrial capitalism required institutions that could pool capital from thousands of investors and direct it toward productive enterprise.",
-          "**The joint-stock company** solved the pooling problem: investors bought 'shares' of a company, entitling them to a proportional share of profits (dividends). The company could thus raise capital from hundreds or thousands of investors rather than relying on a single owner or small partnership. The **Dutch East India Company (VOC, 1602)** and British East India Company had pioneered joint-stock financing in the 17th century. By the early 19th century, joint-stock companies were common in banking and insurance, but still limited by the problem of unlimited liability.",
-          "**Limited liability** was the critical legal innovation. Before limited liability, an investor in a joint-stock company who was personally liable for company debts. If the company went bankrupt owing £1 million, creditors could pursue the personal assets of every shareholder, their house, their savings, everything, until the debt was paid. This was catastrophic in practice and severely limited investment: only those who could afford to lose everything they owned would invest in risky industrial ventures. The **UK Companies Act of 1862** established general limited liability: investors could only lose what they had invested. Their personal assets were protected. This single legal change transformed the economics of industrial investment: millions of middle-class investors with modest savings could now safely participate in large enterprises because their maximum loss was defined and bounded.",
-          "**The stock exchange** solved the liquidity problem. Even with limited liability, investors were reluctant to commit capital to enterprises they could not exit. A factory, once built, could not easily be sold; a railroad bond locked capital up for decades. The stock exchange, a regulated market for buying and selling shares and bonds, made industrial investment liquid. An investor could buy shares in a Lancashire cotton mill on Monday and sell them on Friday if needed. The **London Stock Exchange** (formalized 1801) and **New York Stock Exchange** (organized 1817) became the world's dominant capital markets. By 1850, thousands of railroad, mining, and manufacturing companies were listed; by 1900, billions of dollars of securities changed hands daily.",
-          "**Investment banks** were the connective tissue of industrial capitalism: they underwrote new securities issues (guaranteeing a price to corporations while selling shares to investors), organized mergers and acquisitions, and provided long-term financing for infrastructure. The **House of Morgan** (J.P. Morgan & Co.) financed American railroad consolidation in the 1870s–1890s, eventually controlling one-sixth of American railroad mileage. **Deutsche Bank** (founded 1870) specifically to finance German foreign trade and industrial development, the model of German-style bank-industry partnership that produced Germany's rapid industrialization. The **Rothschild family** network, banking houses in London, Paris, Frankfurt, Vienna, and Naples, financed European governments and railroads across the continent. By 1900, a handful of investment banks exerted more influence over industrial economies than many governments."
+          "**Before:** under mercantilism (Topic 4.5), governments put tariffs (taxes on imported goods) on foreign goods, banned some outright, and gave a few companies the sole right to trade in a region, such as Britain's East India Company in Asia.",
+          "**A new argument:** in 1776 Adam Smith, a Scottish thinker, published The Wealth of Nations. He attacked what he called \"the mercantile system\": \"If a foreign country can supply us with a commodity cheaper than we ourselves can make it, better buy it of them.\" Later writers called ideas like his laissez-faire, French for roughly \"let them do it.\" Smith did not use the phrase himself.",
+          "**Britain changes the rules:** the Corn Laws of 1815 taxed imported grain to keep prices high for landowners. In 1838 Manchester factory owners and merchants started the campaign that became the Anti-Corn Law League, led by Richard Cobden and John Bright. After famine struck Ireland in 1845, Prime Minister Robert Peel turned against the Corn Laws, and in 1846 Parliament repealed them. By 1860 Britain had ended its tariffs on imported factory goods.",
+          "**Partly in response:** Smith's ideas were part of the reason, but only part. Manufacturers who wanted cheap food and open markets, and the famine, mattered too.",
+          "**Others follow, for a while:** the Cobden-Chevalier Treaty of 1860 between Britain and France, and a chain of treaties in the 1860s, lowered tariffs across much of Western Europe. From 1879 Germany put tariffs back on grain and iron, and the United States kept high tariffs on factory goods. Britain stayed with free trade."
         ],
         image: {
-          title: "Corporations, banks, and stock markets",
-          caption: "BeHistorical topic artwork for this card. Limited liability and joint-stock ownership let firms raise sums no family fortune could match.",
-          url: "",
-          sourceUrl: ""
+          title: "Adam Smith, engraved in 1805",
+          caption: "A stipple engraving of Adam Smith by MacKenzie, after a portrait medallion by James Tassie, made for an 1805 edition of The Wealth of Nations, fifteen years after Smith's death. Library of Congress.",
+          url: "../assets/images/topics/5-7/adam-smith-mackenzie-after-tassie-1805.jpg",
+          sourceUrl: "https://www.loc.gov/pictures/item/2004672780/"
         }
       },
       {
-        title: "Free Trade and the Gold Standard: Global Economic Integration",
+        title: "Business: New Tools, Bigger Companies",
         bullets: [
-          "**The free trade argument**: The economist David Ricardo (1817) formalized the argument for free trade through the principle of **comparative advantage**: even if one country could produce everything more efficiently than another, both countries benefit from specializing in what they produce most efficiently (relative to other goods) and trading. Britain could produce both cloth and wine more efficiently than Portugal, but if Britain focused on cloth (where its comparative advantage was greatest) and Portugal focused on wine (where its comparative disadvantage was least), total production increases and both benefit from trade. The policy implication: remove tariffs and barriers; let each country specialize; global wealth increases.",
-          "**The political context**: Free trade served British interests specifically. By the 1840s, Britain was the world's most advanced industrial economy, producing manufactured goods more cheaply than any competitor. **Free trade meant British goods could penetrate every market** without tariff barriers, while British consumers could buy cheap foreign food. Countries that were still industrializing, Germany, the United States, had strong reason to use protective tariffs to shield their infant industries from British competition (and did). The free trade argument was not wrong, but its benefits were distributed unequally: Britain gained dominance of global manufactured goods markets; agricultural and resource-exporting countries got cheaper British manufactured goods but could not easily develop their own industrial capacity.",
-          "**The Corn Laws and their repeal**: The **Corn Laws** were British tariffs on imported grain, protecting British landowners (who dominated Parliament) from cheap foreign competition. Manufacturers and middle-class reformers, led by Richard Cobden's **Anti-Corn Law League**, argued that the Corn Laws raised bread prices for workers (forcing higher wages) and enriched landowners at everyone else's expense. After a decade of political campaigning and the Irish Famine (which made the case for cheap food imports dramatically), Prime Minister Robert Peel pushed through **repeal of the Corn Laws in 1846**. The repeal opened Britain to cheap American, Canadian, and eventually Argentine and Russian grain, transforming British agriculture and cementing Britain's commitment to free trade for the rest of the 19th century.",
-          "**The gold standard**: The gold standard, linking a currency to a fixed weight of gold, solved the exchange rate problem of international trade. When multiple currencies existed with floating exchange rates, international trade involved currency risk: prices agreed today might be paid in a different effective value tomorrow. The gold standard made exchange rates fixed and predictable. Britain adopted the gold standard in 1821; the United States adopted it effectively after the Civil War (officially 1900); most major European economies joined in the 1870s–1880s. By 1890, the international gold standard had created the first genuinely integrated global financial system. Its costs: governments could not print money to stimulate the economy without gold reserves to back it, which meant economic downturns produced deflation and unemployment rather than inflation. The burden fell on workers (through wage cuts) rather than creditors (through inflation). The gold standard was a system that systematically protected financial assets over labor."
+          "**Before:** companies that sold shares were not new. The VOC sold shares in 1602 (Topic 4.5). But from 1720 to 1825, forming one in Britain usually took special permission from the government, and most businesses belonged to one family or a few partners, who could lose everything if the business failed.",
+          "**Limited liability:** laws of 1855 and 1856 let almost any group of seven or more people in Britain register a company whose owners could lose only what they had put in. France passed similar laws in 1863 and 1867.",
+          "**Stock markets:** a stock market is where people buy and sell shares. London had had one since the 1700s, and in the mid-1840s crowds of British investors rushed to buy railway shares. By 1886 an American print could show the stock exchanges of eight cities.",
+          "**A bank across borders:** the Hongkong and Shanghai Banking Corporation (HSBC) opened in Hong Kong in March 1865 to give local businesses better banking for their trade, then in Shanghai and London the same year. By 1900 it worked in 16 countries and territories.",
+          "**Soap and margarine:** William Lever began selling Sunlight Soap in England in 1884, registered the name in the United States by 1886, and built Port Sunlight from 1888. Dutch families in Oss turned butter trading into margarine factories that sold to England. In 1929, after this unit, they joined into Unilever, based in England and the Netherlands."
         ],
         image: {
-          title: "Free trade and the gold standard",
-          caption: "BeHistorical topic artwork for this card. A shared monetary standard and falling tariffs knitted distant economies into one price system.",
-          url: "",
-          sourceUrl: ""
+          title: "The World's Exchanges, 1886",
+          caption: "A print published in New York in 1886 by Root and Tinker: the stock exchanges of New York, Paris, London, Chicago, Hamburg, Frankfurt, Berlin, and Brussels. The London panel is labeled Bank of England, London, Stock Exchange. Library of Congress.",
+          url: "../assets/images/topics/5-7/worlds-exchanges-root-tinker-1886.jpg",
+          sourceUrl: "https://www.loc.gov/pictures/item/98516796/"
         }
       },
       {
-        title: "Economic Imperialism: Power Without Formal Colonialism",
+        title: "Goods: Cheaper, for Some",
         bullets: [
-          "**Economic imperialism** is the extension of economic control over a country through debt, investment, and trade relationships rather than formal political annexation. It was often more efficient than direct colonialism: it extracted profits without the costs of colonial administration, military occupation, and the political backlash that formal colonialism generated. But it could achieve the same coercive effects: forcing debtor countries to restructure their economies in creditors' interests, removing their ability to use protective tariffs, and prioritizing debt repayment over domestic development.",
-          "**Latin America**: After independence from Spain and Portugal (1810s–1820s), Latin American governments needed capital to build infrastructure and pay their armies. They borrowed heavily from British banks, often at unfavorable terms, with customs revenue pledged as collateral. When governments defaulted (as many did in the 1820s and 1830s), British creditors demanded control over customs revenue to ensure repayment. By 1900, British investment in Latin America totaled approximately £1 billion: British banks financed Argentina's railroad system; British companies owned Chilean copper and nitrate mines; British investors held Brazilian government bonds. Latin American economies were formally independent but functionally integrated into the British financial system as raw material exporters and capital importers. This 'informal empire' was enforced not by the British army but by the threat of financial exclusion, default meant inability to borrow, which meant inability to build infrastructure or fund government.",
-          "**The Ottoman Empire**: The Ottoman government, trying to modernize its military and infrastructure to resist European pressure, borrowed heavily from European banks through the 1850s–1870s. Interest payments consumed growing shares of government revenue. In 1875, the Ottoman government defaulted. After negotiation, the **Ottoman Public Debt Administration** (1881) was established: a body controlled by European creditors (primarily British, French, German, and Dutch bondholders) that directly administered the collection of six Ottoman revenue sources (customs duties, salt and tobacco taxes, stamp duties, fishing rights) to guarantee debt repayment. The Ottoman government ceded control of major revenue streams to foreign creditors, a form of financial sovereignty loss that stopped short of formal colonialism but achieved similar effects.",
-          "**China's treaty port system**: After Britain defeated China in the First Opium War (1839–1842), the **Treaty of Nanking** (1842) forced China to open five treaty ports to British trade, cede Hong Kong, pay an indemnity, and grant British merchants **extraterritoriality** (exemption from Chinese law). Subsequent treaties after the Second Opium War (1856–1860) extended these provisions and opened more ports. Foreign merchants in treaty ports operated under their home country's law rather than Chinese law, a profound violation of Chinese sovereignty. British, French, German, and American businesses established factories, warehouses, and banks in treaty ports; foreign gunboats patrolled Chinese rivers to protect foreign property. China was not formally colonized, but its ability to regulate foreign economic activity within its own territory was severely constrained.",
-          "**The key argument**: Economic imperialism reveals that the line between 'free trade' and 'coercion' is less clear than free trade ideology suggests. When Britain demanded that China open its ports under threat of naval bombardment, or when Latin American governments accepted British creditor control over their customs revenue as the price of continued access to capital markets, these were not voluntary agreements between equals. Economic relationships can be as coercive as military relationships, and in many cases, the economic relationship was enforced by the implicit or explicit threat of military force."
+          "**More, cheaper, more kinds:** factories kept improving how they made things. Machine-made cotton cloth (Topic 5.3) kept falling in price. Soap came in wrapped, branded bars like Sunlight instead of being cut from long bars. Ships and railways (Topic 5.5) brought fruit, tea, and wheat from far away.",
+          "**Standards of living:** in Britain, historians who measure what wages could buy find that working families' standard of living rose very little from the 1780s to the 1850s, and much faster from about 1860 to 1900.",
+          "**For some:** many city workers stayed poor (Topic 5.9), and many of the people who grew the cotton, palm oil, and tea did not share the gains (Unit 6).",
+          "**What continued:** selling shares was older than industry; many countries kept or went back to tariffs; and the gains went to some people and not others.",
+          "**Your job:** pick two developments from these cards and say how one relates to the other: did it cause it, make it possible, or answer it?"
         ],
         image: {
-          title: "The port of Buenos Aires",
-          caption: "British capital built Argentina's railways and docks. Economic imperialism could control an economy without ever raising a flag.",
-          url: "../assets/images/commons/port-of-buenos-aires-851c55.jpg",
-          sourceUrl: "https://commons.wikimedia.org/wiki/File:Port_of_Buenos_Aires.jpg"
+          title: "Fruit stands on the dock, Liverpool, 1893",
+          caption: "One half of a stereo photograph by William H. Rau, sold by Griffith and Griffith of Philadelphia, 1893: a woman in a shawl sits at a fruit stand while shoppers walk past, by the warehouses of Liverpool's docks. Library of Congress.",
+          url: "../assets/images/topics/5-7/liverpool-dock-fruit-stands-1893.jpg",
+          sourceUrl: "https://www.loc.gov/pictures/item/2019637949/"
         }
       }
     ]
   },
 
   map: {
-    title: "The Global Financial System, c. 1850–1900",
+    title: "Trade and Money, 1838 to 1900",
     url: "../assets/images/instructional-maps/topic-5-7.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-5-7.svg",
-    caption: "By c. 1850–1900, British financial institutions, banks, insurance companies, stock exchanges, had made London the center of the global financial system. British capital flowed outward to finance railroads in Argentina, mines in Chile, government bonds in the Ottoman Empire, and plantation agriculture in Southeast Asia. The returns flowed back to London.",
-    intro: "Examine the pattern of British overseas investment by 1900. Note that British capital flowed primarily to: (1) formal British colonies (India, Australia, Canada, South Africa); (2) formally independent but economically dependent Latin American countries; (3) the Ottoman Empire and China, where unequal treaties had opened markets to British goods and investment. Notice which regions are NOT major recipients of British investment, continental Europe and the United States were increasingly competitors, not dependencies.",
-    prompt: "Using the map and your knowledge, explain how British financial investment created economic dependencies in Latin America and the Ottoman Empire without formal colonialism. What specific financial mechanisms produced these dependencies? How does the geographic pattern of British investment by 1900 reveal the structure of the global economy that industrial capitalism created?"
+    caption: "A BeHistorical map of the places in this lesson: the cities of Western Europe where trade rules changed and businesses grew, and Hong Kong and Shanghai, where a bank was founded to serve trade with China.",
+    intro: "Find Britain first, then France and Germany. Then find the United States, and Hong Kong and Shanghai in East Asia. Each numbered arrow joins two places, and the key says what it shows.",
+    prompt: "Using the map and its key, choose one place or arrow that shows the rules of trade changing, and one that shows a business working across borders. For each, say what happened and when."
   },
 
   deepReading: {
-    title: "Somebody Else Carries the Risk",
-    desc: "A textbook-depth companion on what an investor faced before limited liability and what the Companies Act of 1862 changed, what a stock exchange and an investment bank actually do, why free trade was the policy of the cheapest producer, and how a loan became a government in Egypt, the Ottoman empire and the treaty ports. Optional, and the bridge from this unit into Unit 6.",
+    title: "Freer Trade, Bigger Business",
+    desc: "A longer, optional chapter on the same story: how Adam Smith's argument and Britain's fight over the Corn Laws moved trade toward free trade, how limited liability, stock markets, and banks let businesses such as HSBC and Lever's soap company grow across borders, and who gained from cheaper goods and who did not.",
     url: "deep-reading-topic-5-7-economic-developments-and-innovations.html"
   },
 
   first10: {
-    title: 'First & 10: The Free Market',
+    title: "First & 10: Freer Trade, Bigger Business",
     embedUrl: 'first-and-10-topic-5-7-economic-developments-and-innovations-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 5.7 lesson path.'
+    note: 'Read the First & 10 story, answer the three questions, then return to the 5.7 lesson path.'
   },
 
   evidenceLab: {
-    title: "Evidence Lab: Free Trade, Finance, and Economic Power",
-    intro: "Use the evidence below to analyze the economic developments and innovations of industrial capitalism. Strong AP argumentation requires using specific evidence to support a claim, not just describing what sources say but explaining what they reveal about the broader pattern.",
-    prompt: "Choose one piece of evidence. Explain what it reveals about how industrial capitalism developed new financial institutions or extended economic power through trade and investment relationships. Then connect your evidence to the broader argument: how did the financial innovations and free trade ideology of the 19th century shape the global economy, and who benefited most?",
-    items: [
-      { title: "Richard Cobden on the Repeal of the Corn Laws (1846)", detail: "Richard Cobden, leader of the Anti-Corn Law League, argued in Parliament: 'I see in the Free Trade principle that which shall act on the moral world as the principle of gravitation in the universe, drawing men together, thrusting aside the antagonism of race, and creed, and language, and uniting us in the bonds of eternal peace. I have speculated, and probably dreamed, in the dim anticipation of the future, and I have seen, through a telescope which has been almost dazzled by its own light, the day when Free Trade shall have a mission to perform, a mission greater than was ever intrusted to the sword or to the cannon... The result of our labours is to increase the power and the resources of a nation already the greatest manufacturing country in the world.' Analyze: how does Cobden's argument for free trade blend economic logic with moral and political claims? How does the phrase 'already the greatest manufacturing country in the world' reveal the political context of Britain's free trade advocacy? Why might countries that were NOT the greatest manufacturing country in the world see free trade differently?" },
-      { title: "The Ottoman Public Debt Administration (1881)", detail: "The Ottoman government decree establishing the Public Debt Administration stated: 'The Administration shall take over the collection of the following revenues, currently assigned to the service of the Ottoman public debt: the tobacco and salt monopolies; stamp duties; customs duties on specified goods; and the fishing tax. These revenues shall be administered by a Council of the Public Debt under the direction of representatives appointed by the principal bondholder groups, British, French, German, Austro-Hungarian, Italian, and Ottoman, in proportion to their bond holdings.' Analyze: what does this decree reveal about the relationship between Ottoman debt and Ottoman sovereignty? What does it mean for a government to cede the collection of its own taxes to foreign creditors? How does the Ottoman Public Debt Administration compare to direct British colonial administration of India, what is similar, what is different?" },
-      { title: "J.P. Morgan on Railroad Consolidation (c. 1890)", detail: "J.P. Morgan explained his approach to railroad consolidation: 'Competition is a destructive force. The railroads of America are running at a loss, cutting rates, poaching each other's traffic, and destroying their own credit in the process. What they need is not more competition but rational organization, combination under unified management, elimination of duplicate costs, and pricing that allows a reasonable return on investment. The capital markets will not continue to finance enterprises that cannot earn their cost of capital. My job is to ensure that they can. The alternative is chaos, and chaos serves no one, not the investor, not the shipper, not the worker, and not the nation.' Analyze: how does Morgan's argument reframe monopolistic consolidation as a service to all parties? What assumptions about markets and competition does it reveal? How does the scale of Morgan's influence, controlling one-sixth of American railroads, relate to the broader question of whether industrial capitalism concentrated or distributed economic power?" }
-    ]
+    title: "Evidence Lab: Before, After, and What Carried On",
+    intro: "Use the cards to find evidence for one row of the topic: trade, business, or goods. Ask what each source can and cannot show.",
+    prompt: "Choose two cards. For each, say what kind of source it is, which row it is evidence for, and one thing it cannot tell you.",
+    items: []
   },
 
   primarySource: {
-    title: "Primary Source: The Anti-Corn Law League — Free Trade as Moral Mission (1843)",
-    intro: "The Anti-Corn Law League, founded in Manchester in 1838, became one of the most effective political lobbying campaigns in British history. By combining economic argument (the Corn Laws raised food prices and depressed industrial wages) with moral argument (the Corn Laws were a corrupt aristocratic subsidy at the expense of the poor) and strategic use of the new railroad network and postal system to distribute pamphlets and organize meetings, the League achieved repeal of the Corn Laws in 1846, the decisive victory of the free trade movement. This adapted excerpt from League publications captures the movement's self-presentation.",
-    text: [
-      "The Corn Laws are not merely bad economics, they are a moral abomination. They exist for one purpose: to maintain the rental income of the English landowning class by restricting the import of foreign grain and thereby keeping bread prices artificially high. The landowners are perhaps five percent of the population. The remaining ninety-five percent, the manufacturers, the merchants, the shopkeepers, and above all the working people of England, pay higher prices for their daily bread so that the Squirearchy may draw higher rents.",
-      "The manufacturer of Manchester employs ten thousand men. He sells his cloth to the world at a price the world will pay. He asks only one thing from Parliament: let him buy his workers' bread where it is cheapest, so that his wages may be lower and his costs competitive. The Corn Laws deny him this. They require him to pay the artificial bread price, which means he must pay higher wages, which means his cloth costs more, which means he loses orders to foreign competitors. The Corn Laws do not protect England; they weaken it.",
-      "But the argument for repeal is not merely economic. It is moral. The man who works twelve hours in a cotton mill earns wages barely sufficient to feed his family at the prices the Corn Laws create. When the harvest fails, as it has in Ireland, with consequences that will shame England for generations, the price of bread rises further, and the factory worker's family goes hungry. The Corn Laws are, in plain language, a tax on bread imposed on the poor for the benefit of the rich.",
-      "Free Trade is the principle of the future. When every nation trades in what it produces best, and buys from others what they produce best, the total product of human labor increases, prices fall, and the people of every nation are better fed, better clothed, and better housed. We do not argue for Free Trade as the interest of England alone, though it is that, too. We argue for it as the interest of all mankind."
-    ],
+    title: "Primary Source: Adam Smith, The Wealth of Nations, 1776",
+    intro: "Adam Smith was a Scottish professor who wrote about how countries grow rich. In 1776 he published The Wealth of Nations, a long book that attacked what he called \"the mercantile system\": the tariffs, bans, and monopolies European governments used to control trade. These are two short passages from it, in his own words.",
+    attribution: "Adam Smith, An Inquiry into the Nature and Causes of the Wealth of Nations (London, 1776), Book IV, chapter 2 (first two paragraphs) and chapter 8 (third), from the public-domain text at Project Gutenberg",
+    text: "It is the maxim of every prudent master of a family, never to attempt to make at home what it will cost him more to make than to buy. The tailor does not attempt to make his own shoes, but buys them of the shoemaker. The shoemaker does not attempt to make his own clothes, but employs a tailor.<br><br>What is prudence in the conduct of every private family, can scarce be folly in that of a great kingdom. If a foreign country can supply us with a commodity cheaper than we ourselves can make it, better buy it of them with some part of the produce of our own industry, employed in a way in which we have some advantage.<br><br>Consumption is the sole end and purpose of all production; and the interest of the producer ought to be attended to, only so far as it may be necessary for promoting that of the consumer.<br><br><em>Words to know: maxim means a rule to live by; prudent means sensible and careful; master of a family means the head of a household; prudence means good sense; scarce be folly means can hardly be foolish; commodity means a good for sale; produce of our own industry means what our own work makes; consumption means buying and using goods; the sole end and purpose means the only goal; attended to means cared about.</em>",
     questions: [
-      "The Anti-Corn Law League presents free trade as both economically efficient (lower costs, competitive industry) and morally superior (cheaper bread for workers, benefit for all mankind). Evaluate these two arguments separately: how strong is the economic argument? How strong is the moral argument? Does the economic argument support the moral one, or are they actually in tension?",
-      "The League argues that 'when every nation trades in what it produces best... the total product of human labor increases.' This is the comparative advantage argument. What does this argument assume about the relationship between nations in trade? What does it leave out, specifically, what happens to a country that specializes in raw materials while another specializes in manufactured goods?",
-      "The League pamphlet was written in Manchester in 1843. Consider the source: the Anti-Corn Law League was funded primarily by Manchester manufacturers. Does the source's origin affect how you evaluate its argument? How would a German or American industrialist, trying to protect their own infant industries from British competition, respond to the League's claim that free trade is 'the interest of all mankind'?"
+      "In the first paragraph, what does the tailor do instead of making his own shoes? In your own words, what rule is Smith drawing from that example?",
+      "In the second paragraph, Smith says a \"great kingdom\" should act like a sensible family. Using the lesson, name one British law that did the opposite, and explain what Britain did about it in 1846.",
+      "In the third paragraph, Smith says the buyer (the consumer) matters more than the maker (the producer). Using the lesson, explain why factory owners in Manchester in the 1840s might agree with him, and why British landowners might not."
     ]
   },
 
   beSurreal: {
-    title: "BeSurreal: You Are a Lancashire Cotton Merchant During the American Civil War, 1862",
-    desc: "You are a cotton merchant in Preston, Lancashire, in the autumn of 1862. Your mill has been running at a fraction of capacity since the American Civil War began in April 1861. The Union naval blockade has cut off American cotton, your primary raw material. Your workers are on short time or laid off. The 'Cotton Famine' is real: families who worked your looms are going hungry.",
-    intro: "You know that the Confederate States of America, the South, is fighting to preserve slavery and its cotton economy. You know that the enslaved people on the plantations that grew your cotton are the same people whose labor fed your mill. You also know that if the Confederacy wins and the blockade ends, your cotton supply will resume, your mill will reopen, and your workers will eat. British textile manufacturers have been lobbying the government to recognize the Confederacy, which would likely cause Britain to break the Union blockade. Some of your friends have already signed the petition.",
-    detail: "Meanwhile, your workers, the people laid off from your mill, have held public meetings declaring their support for the Union cause and opposing Confederate recognition, even at the cost of their own employment and food. They understand that recognizing the Confederacy means prolonging slavery; they are willing to go hungry rather than support it. You are deciding whether to sign the petition for Confederate recognition. Your economic interest points one way. Your workers' moral stand, made at a higher personal cost than your own, points another.",
-    prompt: "Write the letter to your Member of Parliament explaining your decision, and your reasoning. Address the economic argument directly: you understand what recognizing the Confederacy would mean for your workers and your mill. Address the moral argument directly: you understand what it would mean for enslaved people. Make a choice and defend it. Then reflect: what does it reveal about you, and about industrial capitalism's relationship to slavery, that this choice is a genuine dilemma rather than an obvious answer?"
+    title: "BeSurreal: A Grocer's Shop in Lancashire, 1890",
+    desc: "You are fourteen, and you help in your family's grocer's shop in a Lancashire mill town. It is 1890, and a crate of soap has just arrived from Lever Brothers.",
+    intro: "When your grandmother kept this shop, soap came in long bars, and she cut off a piece for each customer and weighed it. The soap in this crate is different. Every bar is already cut and wrapped in paper printed with one name: Sunlight. The crate came by railway, and the oils in the soap, your father says, came by ship from coconut and palm trees on the other side of the world.",
+    detail: "The mill families who shop here can afford a little more than their parents could: cheaper cotton cloth, tea, sugar, and now soap with a name they have seen in the newspaper. But Mrs. Kelly, whose husband lost his place at the mill last winter, still buys the cheapest scrap of anything, and asks you to put it on her account.",
+    prompt: "Write a letter to your grandmother, who has moved away. Tell her what has changed in the shop since her day, and one thing that has not changed. Use the words brand, cheaper, and for some."
   },
 
   beInTheRoom: {
     url: '',
-    desc: "Advise the Ottoman government on whether to accept the Public Debt Administration's terms or risk default; negotiate with Richard Cobden about whether India deserves the same free trade treatment as Britain; or testify before Parliament about whether J.P. Morgan's railroad consolidations serve the public interest."
+    desc: "London, May 1846. In Parliament, decide whether Britain should repeal the Corn Laws and move to free trade, with a factory owner, a landowner, a worker, and news of famine in Ireland in front of you."
   }
 
 };

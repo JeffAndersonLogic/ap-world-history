@@ -1,34 +1,36 @@
 'use strict';
 
 /**
- * Topic 5.7, Economic Developments and Innovations: the deep reading.
+ * Topic 5.7, Economic Developments and Innovations in the Industrial Age: the
+ * deep reading.
  *
- * Why this exists. The success criteria are the most institutionally specific in
- * the unit: joint-stock company, limited liability, stock exchange and
- * investment banking defined, with the exact mechanism of limited liability
- * (unlimited personal liability before, capped exposure after) and the UK
- * Companies Act of 1862 named as the turning point; then comparative advantage
- * and Ricardo, the Corn Laws repeal of 1846, the gold standard, and two examples
- * of economic imperialism from Latin American debt, the Ottoman Public Debt
- * Administration and Chinese treaty ports, with an explanation of how financial
- * instruments achieved colonial-like control without annexation.
+ * Why this exists. The CED gives 5.7 one learning objective, the development
+ * of economic systems, ideologies and institutions and how they contributed to
+ * change from 1750 to 1900, three Key Concepts (KC-5.1.III.A, Western European
+ * countries began abandoning mercantilism and adopting free trade, partly in
+ * response to Adam Smith's ideas; KC-5.1.III.B, global trade and production
+ * contributed to large transnational businesses that relied on new practices
+ * in banking and finance, with HSBC, Unilever, stock markets and
+ * limited-liability corporations as examples; KC-5.1, industrial capitalism
+ * raised living standards for some and made consumer goods more available,
+ * affordable and varied), a reasoning process of Continuity and Change and the
+ * skill 5.B, relating one development to another. The First & 10 tells the
+ * story in one pass. What it has no room for is Smith's own argument at more
+ * length, how the fight over the Corn Laws was won, how limited liability and
+ * stock markets actually worked, and how historians measure "for some."
  *
- * The thread that makes this a chapter rather than a glossary: every institution
- * here solves a risk problem, and solving a risk problem for an investor
- * transfers the risk to somebody else. Limited liability moves it to creditors,
- * free trade moves it to the weaker producer, the gold standard moves it to
- * wage earners, and sovereign debt moves it to a whole population.
+ * Rebuilt from the 5.7 story (docs/TOPIC-5-7-STORY-DRAFT.md) on 2026-10-29.
+ * The old chapter, "Somebody Else Carries the Risk," spent its last part on
+ * debts, informal empire, the Ottoman Public Debt Administration and the
+ * treaty ports, which belong to Topic 6.5, and taught nothing on KC-5.1.
  *
  * Three things carried deliberately:
  *
- *   1. Limited liability gets its counterfactual, because the mechanism only
- *      becomes visible when you can say what an investor faced before 1862.
- *   2. Free trade is written as a policy that follows from a competitive
- *      position rather than as a doctrine, so it connects directly to Topic
- *      5.4's tariff argument instead of contradicting it.
- *   3. The Ottoman Public Debt Administration gets space because it is the
- *      cleanest instance in the course of financial control without conquest:
- *      a foreign body collecting a sovereign state's taxes at source.
+ *   1. A before, an after and a "what carried on" for each of the three Key
+ *      Concepts, so the chapter is Continuity and Change throughout.
+ *   2. The CED's "partly" and "for some," each given its evidence.
+ *   3. The CED's four examples, with Unilever dated honestly: the company
+ *      was formed in 1929, out of businesses that grew in this period.
  */
 
 module.exports = {
@@ -37,231 +39,268 @@ module.exports = {
   sourceFile: 'deep-reading-topic-5-7-economic-developments-and-innovations.html',
   lessonFile: 'lesson-5-7-economic-developments-and-innovations.html',
 
-  docTitle: 'BeHistorical | Deep Reading | Topic 5.7: Somebody Else Carries the Risk',
+  docTitle: 'BeHistorical | Deep Reading | Topic 5.7: Freer Trade, Bigger Business',
   eyebrow: 'Topic 5.7 &nbsp;·&nbsp; Deep Reading &nbsp;·&nbsp; AP World History: Modern',
-  titleHtml: 'Somebody Else Carries the <em>Risk</em>',
-  deck: `Industry needed more money than any partnership could raise, and the money would not come while an investor could lose his house over a company he did not manage. The nineteenth century solved that, brilliantly, with a set of legal and financial instruments. Every one of them works by moving risk somewhere else, and this chapter follows where it went, from a shareholder&rsquo;s balance sheet to an Egyptian tax collector.`,
-  meta: ['Four sections', 'The company, the money, free trade, and control by debt', 'Read alongside the First & 10'],
-  footerNote: 'Topic 5.7 &nbsp;·&nbsp; Somebody Else Carries the Risk &nbsp;·&nbsp; Companion to the First &amp; 10',
+  titleHtml: 'Freer Trade, <em>Bigger Business</em>',
+  deck: `Factories made more goods than ever. Between 1750 and 1900, three things changed around them: the rules of trade, the shape of business, and the goods people could buy. This chapter follows all three, and in each one asks what changed, what carried on, and how one change relates to another.`,
+  meta: ['Five sections', 'The old rules, free trade, new tools for business, businesses across borders, cheaper goods', 'Read alongside the First & 10'],
+  footerNote: 'Topic 5.7 &nbsp;·&nbsp; Freer Trade, Bigger Business &nbsp;·&nbsp; Companion to the First &amp; 10',
 
   howTo: {
     heading: 'How to Use This',
-    intro: `Sections 01 and 02 are the institutions the success criteria ask you to define, each written with the mechanism rather than the definition. Section 03 is free trade as a policy rather than a doctrine. Section 04 is economic imperialism, which is the part that makes this topic matter for Unit 6.`,
+    intro: `The College Board asks you to explain how economic systems, ideas and institutions developed between 1750 and 1900, and how they contributed to change. That is a continuity and change question, and its skill asks you to connect one development to another. Sections 01 and 02 follow the rules of trade; sections 03 and 04 follow business; section 05 follows the goods people could buy. For each, write a before, an after and one thing that carried on, then use the closing section to connect them.`,
     steps: [
-      `<b>01 Limited liability:</b> what an investor faced before 1862, and what changed.`,
-      `<b>02 Exchanges and banks:</b> where the money was raised, and who decided what got built.`,
-      `<b>03 Free trade:</b> Ricardo, the Corn Laws, the gold standard, and whose policy this was.`,
-      `<b>04 Control without conquest:</b> Egypt, the Ottoman debt administration, Latin America and the treaty ports.`,
-      `<b>Then the closing section</b>, which turns all of it into comparison sentences you can write.`
+      `<b>01 The old rules:</b> mercantilism, and Adam Smith's argument against it.`,
+      `<b>02 Britain chooses free trade:</b> the Corn Laws, 1846, and who followed.`,
+      `<b>03 New tools for business:</b> limited liability, stock markets and banks.`,
+      `<b>04 Businesses across borders:</b> HSBC, Lever's soap and the Dutch margarine makers.`,
+      `<b>05 Cheaper goods, for some:</b> what people could buy, and who gained.`,
+      `<b>Then the closing section</b>, which gathers the evidence for an answer.`
     ]
   },
 
   empires: [
-    // ── 01 ────────────────────────────────────────────────────────────────────
+    // ── 01 ─────────────────────────────────────────────────────────────
     {
-      id: 'liability',
+      id: 'old-rules',
       num: '01',
       accent: 'gold',
-      name: 'The Sentence That Unlocked the Money',
-      navLabel: 'Limited liability',
-      dates: '1844 to 1862 &nbsp;·&nbsp; The Companies Acts',
-      thesis: `The single most consequential financial innovation of the century is a legal rule about how much an investor can lose. Get the counterfactual right, what an investor faced before it, and the entire structure of modern industry follows from one change.`,
+      name: 'The Old Rules and a New Argument',
+      navLabel: 'The old rules',
+      dates: 'Around 1750 to 1776 &nbsp;·&nbsp; Mercantilism and Adam Smith',
+      thesis: `Under mercantilism, governments controlled trade with tariffs, bans and monopolies. In 1776 Adam Smith argued that a country, like a sensible family, should buy what others make more cheaply.`,
       parts: [
         {
-          heading: 'What an investor faced before',
+          heading: 'Trade as a contest',
           blocks: [
-            { p: `Under a partnership, and under most company forms before mid-century, liability was <b>unlimited</b>. If the business failed owing money, creditors could pursue the personal assets of every partner or shareholder: house, savings, everything. One investor could be made to pay the whole debt if the others had nothing.` },
-            { p: `Follow the consequence. If putting a hundred pounds into a railway could cost you ten thousand, then you invest only in businesses you can watch personally, run by people you know, in a trade you understand. Capital stays local, concentrated and cautious, and the total pool available to industry is a small fraction of the nation's savings. Meanwhile the Topic 5.5 chapter's railways, steel works and telegraph networks needed sums no group of mutually acquainted merchants could raise.` },
-            { p: `<b>Limited liability</b> reverses it: a shareholder's exposure is capped at the amount invested, and the company is a separate legal person that owes its own debts. Now a schoolteacher can put fifty pounds into a railway in a county she has never visited, because the worst case is losing fifty pounds. Multiply that by a whole propertied and salaried population and you have a capital market.` },
-            { p: `The legislative sequence in Britain is worth knowing precisely, because the success criteria name the endpoint. The Joint Stock Companies Act of <span class="num">1844</span> allowed incorporation by simple registration rather than by an individual act of Parliament or a royal charter, which had been the old route and had kept incorporation a privilege. The Limited Liability Act of <span class="num">1855</span> introduced the cap. And the <b>Companies Act of <span class="num">1862</span></b> consolidated the law into the modern form, general, cheap and available to anyone, which is why it is the turning point.` }
+            { p: `In Topic 4.5 you met <span class="kt">mercantilism</span>, the idea that a kingdom grew strong by selling more to other countries than it bought from them, and by keeping its colonies' trade for itself. Governments acted on it. They put <span class="kt">tariffs</span>, taxes on imported goods, on foreign products; they banned some goods completely; and they gave chartered companies the sole right to trade in a region. Britain's East India Company held the sole right to carry on British trade with Asia.` },
+            { p: `To a mercantilist, trade was a contest. If another country sold more to you than it bought, it was winning and you were losing.` }
           ]
         },
         {
-          heading: 'Where the risk went, and the arguments against',
+          heading: 'The tailor and the shoemaker',
           blocks: [
-            { p: `Nothing here removes risk; it relocates it. If a shareholder cannot be pursued, then a creditor who is not paid, a supplier left with unpaid invoices, a worker owed wages, absorbs the loss instead. That is precisely what contemporaries objected to, and the objection was strong enough to delay the reform for decades: critics argued it would license reckless speculation, encourage fraud and let men trade with other people's money while risking none of their own.` },
-            { p: `The compensating device was <b>disclosure</b>. Registration, published accounts, a register of directors and, over time, audit requirements are the price of the privilege: the public cannot pursue your assets, so the public gets to see your books. That trade, limited exposure in exchange for transparency, is still the basis of company law.` },
-            { p: `And a company is also a <b>perpetual person</b>, which matters as much as the liability cap. A partnership dissolves when a partner dies or withdraws; a company continues, holds property, sues and is sued in its own name, and can therefore commit to a forty-year project. The Topic 4.4 chapter's chartered companies had some of this by special grant; what changes in <span class="num">1862</span> is that it becomes available to anybody who fills in a form.` },
-            { note: {
-              kind: 'misconception',
-              label: 'Common mistake to avoid',
-              html: `Do not write that joint-stock companies were invented in the nineteenth century. The Topic 4.4 chapter has the VOC in <span class="num">1602</span> and the English East India Company in <span class="num">1600</span>, both with tradable shares. Two things are new here and both belong in the sentence. First, incorporation stops being a <b>privilege</b> granted by charter or by act of Parliament to a favored few and becomes a <b>right</b> available by registration to anyone. Second, liability is <b>capped</b>, which is what makes investing in a distant enterprise you cannot supervise a rational act. Together they convert a rare instrument of state-backed monopoly into the ordinary vehicle of business, which is why company numbers rise steeply after 1862.`
-            } }
-          ]
-        }
-      ],
-      useThis: {
-        tool: `Capping the downside to mobilize savings. <em>The mechanism is that an investor facing unlimited personal liability will only fund enterprises he can personally supervise, which confines capital to local and familiar ventures, so capping exposure at the sum invested lets millions of people finance projects they cannot watch, which is the only way a railway network or a steel industry gets built.</em>`,
-        limit: `The risk is transferred rather than removed, falling on unpaid creditors, suppliers and workers, and the compensating disclosure requirements are what the reform&rsquo;s critics extracted in exchange.`,
-        comparison: `Against the <em>VOC charter</em> in Topic 4.4: there, permanent transferable shares and delegated sovereign powers were granted to one company as an instrument of state policy. In 1862 the corporate form is stripped of the sovereignty and handed to everyone, which is the difference between an empire&rsquo;s instrument and an economy&rsquo;s default.`
-      },
-      terms: [
-        ['Unlimited liability', 'The rule making an investor personally answerable for all a business\'s debts, which kept capital local and cautious.'],
-        ['Limited liability', 'The cap restricting a shareholder\'s loss to the sum invested, introduced in Britain in 1855.'],
-        ['Companies Act 1862', 'The consolidation making cheap general incorporation with limited liability available by registration, the turning point.'],
-        ['Legal personality', 'The company\'s status as a person in law that owns, contracts and survives its founders, allowing very long projects.'],
-        ['Disclosure', 'Published accounts and registers, the price extracted for the liability cap and the basis of modern company law.']
-      ]
-    },
-
-    // ── 02 ────────────────────────────────────────────────────────────────────
-    {
-      id: 'money',
-      num: '02',
-      accent: 'iron',
-      name: 'Where the Money Was Raised and Who Decided',
-      navLabel: 'Exchanges and banks',
-      dates: 'c. 1820 to 1900 &nbsp;·&nbsp; Markets and bankers',
-      thesis: `Two institutions turned scattered savings into industrial plant. A <span class="kt">stock exchange</span> made a long-term investment sellable at short notice, and an <span class="kt">investment bank</span> decided which enterprises deserved the money, which made a handful of banking houses among the most powerful actors of the century.`,
-      parts: [
-        {
-          heading: 'The exchange, and the problem it solves',
-          blocks: [
-            { p: `A stock exchange is an organized market where shares and bonds are bought and sold. Its function is <b>liquidity</b>, and liquidity is the point most students miss. A railway takes five years to build and forty to pay off, but an investor may need his money next year for a daughter's dowry or a bad harvest. Without a resale market he must either commit for forty years or not invest; with one, he can sell his shares to somebody else tomorrow while the railway keeps the capital. The exchange therefore converts long-term illiquid projects into holdings people are willing to make, without the project losing its funding.` },
-            { p: `It also produces a continuous public price, which is a judgment on an enterprise's prospects that can be read by anyone, and which allows borrowing against securities as collateral. And it produces speculation and panics, since a market that prices expectations will sometimes price them wrongly and all at once: the railway manias of the <span class="num">1840</span>s, the crash of <span class="num">1873</span> and the recurring panics of the century are the same institution working and failing.` }
-          ]
-        },
-        {
-          heading: 'The banks, and what a banker actually did',
-          blocks: [
-            { p: `An investment bank does not principally take deposits and lend; it <b>underwrites</b>. It agrees to buy an issue of shares or bonds from a company or a government, and then sells them to investors, taking the difference and carrying the risk of failing to place them. Doing that requires the one asset that cannot be bought quickly, which is the trust of investors, so a house whose name on a prospectus was taken as a guarantee of soundness could place an issue that an unknown promoter could not.` },
-            { p: `The success criteria name three and each illustrates a different role. The <b>Rothschilds</b>, operating across London, Paris, Frankfurt, Vienna and Naples, were the great sovereign lenders of the century, financing governments and wars and, through the family network, moving information and money across borders faster than states could. <b>Deutsche Bank</b>, founded in <span class="num">1870</span>, exemplifies the German model of a universal bank that took equity stakes in industrial firms, sat on their boards and coordinated whole sectors, which is a large part of how the state-led industrialization of Topic 5.4 was financed. The <b>House of Morgan</b> in the United States financed and then reorganized railroads and industries, imposing consolidation on chaotic markets, and in the panic of <span class="num">1907</span> J. P. Morgan personally organized the rescue of the American banking system, because there was no central bank to do it, which is a substantial part of why the Federal Reserve was created in <span class="num">1913</span>.` },
-            { p: `Note what that concentration means. A small number of houses decided which railways, mines and steel works were built and which governments could borrow, and they did so on commercial judgment answerable to nobody. That is the fact behind the political anxiety about financial power in the later century, and it is also the mechanism section 04 depends on.` }
-          ]
-        }
-      ],
-      useThis: {
-        tool: `Liquidity through resale. <em>The mechanism is that an investor will not commit money for forty years even to a sound project, because his own circumstances can change, so an organized resale market lets him exit by selling to someone else while the enterprise keeps the capital, which makes long-lived infrastructure financeable out of the savings of people who need their money to be retrievable.</em>`,
-        limit: `A market that prices expectations will misprice them together, so the same institution produces manias and panics, and the crashes of 1847, 1873 and 1907 are not malfunctions but the mechanism under stress.`,
-        comparison: `Against the <em>Amsterdam exchange</em> in Topic 4.4: the Dutch had a share market and a resale mechanism in the seventeenth century, which is why the VOC could hold permanent capital. What is new is scale and reach, since a nineteenth-century exchange funds foreign railways and foreign governments as routinely as domestic firms.`
-      },
-      terms: [
-        ['Stock exchange', 'The organized resale market for shares and bonds, whose function is liquidity rather than raising money directly.'],
-        ['Liquidity', 'The ability to convert a holding into cash quickly, without which long-lived projects cannot be financed by ordinary savers.'],
-        ['Underwriting', 'An investment bank buying an issue and reselling it, carrying the placement risk and lending its name as a guarantee.'],
-        ['Universal bank', 'The German model taking equity stakes and board seats in industrial firms, coordinating whole sectors.'],
-        ['Panic', 'A collective collapse of confidence in a securities market, recurrent in 1847, 1873 and 1907, and inherent to the institution.']
-      ]
-    },
-
-    // ── 03 ────────────────────────────────────────────────────────────────────
-    {
-      id: 'freetrade',
-      num: '03',
-      accent: 'rust',
-      name: 'Free Trade Was a Policy Before It Was a Principle',
-      navLabel: 'Free trade',
-      dates: '1817 to 1900 &nbsp;·&nbsp; Ricardo, the Corn Laws, gold',
-      thesis: `Britain adopted free trade at the exact moment it had the world&rsquo;s cheapest manufactures, and other countries adopted tariffs at the exact moment they did not. That is not hypocrisy on anyone&rsquo;s part; it is what the theory predicts, and saying so is the difference between describing the doctrine and understanding it.`,
-      parts: [
-        {
-          heading: 'Comparative advantage, and what it does and does not say',
-          blocks: [
-            { p: `David Ricardo set out <span class="kt">comparative advantage</span> in <span class="num">1817</span>, and it is one of the genuinely counterintuitive results in economics, so it is worth stating carefully. Even if one country produces everything more efficiently than another, both gain by specializing in what they produce <em>relatively</em> best and trading. His example was English cloth and Portuguese wine. The insight is that what matters is opportunity cost, what you give up to make a thing, rather than absolute efficiency.` },
-            { p: `Now note what it does not say. It says nothing about which specialization you end up with, and it treats that as given rather than as something policy creates. If a country's comparative advantage is in raw cotton because another country's policy destroyed its weaving, as the Topic 5.4 chapter describes for India, then specializing according to comparative advantage locks in that position. Industrial goods and primary products also behave differently over time, since manufacturing generates skills, machinery and further industries while a mine generates a mine. That is the critique the Topic 5.4 chapter's protectionists made and it is the standard argument for infant-industry tariffs.` }
-          ]
-        },
-        {
-          heading: 'The Corn Laws, and the gold standard',
-          blocks: [
-            { p: `The <b>Corn Laws</b> were tariffs on imported grain, kept high after <span class="num">1815</span> to protect landowners' rents by keeping domestic grain prices up. The fight over them was a class fight in plain view. Manufacturers wanted repeal, because cheap bread means workers can live on lower wages and because countries that sold Britain grain would buy British cloth. Landowners wanted them kept. The Anti-Corn Law League, led by Cobden and Bright, ran what was effectively the first modern political campaign, with mass meetings, a periodical press and organized voter registration.` },
-            { p: `Repeal came in <span class="num">1846</span>, pushed through by Peel against most of his own party, with the Irish famine as the immediate occasion, and it split the Conservative Party. It marks the moment industrial interests decisively outweighed landed ones in British policy, and it committed Britain to free trade for the rest of the century.` },
-            { p: `The <b>gold standard</b> is the other half of the international system. Under it a currency is defined as a fixed weight of gold and is convertible into it, so exchange rates between countries on the standard are effectively fixed. Britain was on gold from the early nineteenth century and most major economies joined by the <span class="num">1870</span>s. Its advantage is certainty: a merchant or an investor lending abroad for thirty years knows what he will be repaid in, which is exactly what makes large-scale international investment possible, and it is therefore a precondition for section 04.` },
-            { p: `Its cost is that a government gives up control of its own money. If gold flows out, the money supply must contract, which means falling prices and wages and rising unemployment, and the government cannot expand credit to relieve it without breaking convertibility. So the adjustment falls on wage earners rather than on the exchange rate. That is the risk transfer this chapter is about, applied to a whole economy, and it is why farmers and workers in debt campaigned against gold, most famously in the United States in the <span class="num">1890</span>s.` },
+            { p: `In <span class="num">1776</span> Adam Smith, a Scottish professor, published <em>An Inquiry into the Nature and Causes of the Wealth of Nations</em>. You met the book's pin workshop in Topic 5.3. Much of the rest of it is an attack on what Smith called "the mercantile system."` },
+            { p: `Smith started from an ordinary household. "It is the maxim of every prudent master of a family, never to attempt to make at home what it will cost him more to make than to buy. The tailor does not attempt to make his own shoes, but buys them of the shoemaker." What is sensible for a family, he went on, "can scarce be folly in that of a great kingdom. If a foreign country can supply us with a commodity cheaper than we ourselves can make it, better buy it of them."` },
+            { p: `Tariffs and bans, Smith argued, made ordinary buyers pay more so that a few producers could profit. "Consumption is the sole end and purpose of all production," he wrote, but "in the mercantile system, the interest of the consumer is almost constantly sacrificed to that of the producer."` },
             { note: {
               kind: 'howknow',
-              label: 'How we know: countries change doctrine when their position changes',
-              html: `The clearest evidence that trade doctrine follows competitive position is that states switch sides when their position switches. Britain was intensely protectionist under the mercantilism of Topic 4.5 while it was catching up, and became the champion of free trade once it was ahead. The United States kept high protective tariffs through the whole period of its industrialization and became the leading advocate of open markets in the twentieth century, once it led. Germany moved to protection in <span class="num">1879</span> while building its heavy industry. The German economist Friedrich List made exactly this argument at the time, that a country which has reached the top kicks away the ladder it climbed. When a doctrine correlates that neatly with interest, treat the interest as the better explanation of the policy.`
+              label: 'How we know: Smith did not say "do nothing"',
+              html: `Later writers used the French phrase <span class="kt">laissez-faire</span>, roughly "let them do it," for ideas like Smith's. The phrase is not in his book. And Smith did not want government to do nothing: he wrote that the ruler has "three duties," defense, "an exact administration of justice," and "erecting and maintaining certain public works, and certain public institutions" that no private person would build.`
             } }
           ]
         }
       ],
       useThis: {
-        tool: `Free trade as the policy of the low-cost producer. <em>The mechanism is that open markets favor whoever can already produce most cheaply, so the most advanced industrial economy gains from removing tariffs everywhere while a later industrializer would lose its infant industries, which means the same doctrine is rational for one country and ruinous for another and the disagreement is about position rather than about economics.</em>`,
-        limit: `The gains from trade are real and mutual in the theory, and cheap imported food genuinely raised British working-class living standards, so this is an argument about distribution rather than a claim that trade does not benefit anyone.`,
-        comparison: `Against <em>mercantilism</em> in Topic 4.5: mercantilism assumed a fixed stock of wealth and used monopolies and Navigation Acts to reserve markets, and free trade assumes mutual gain and opens them. Opposite premises, and in both cases the policy Britain adopted was the one that suited British producers at the time, which is the continuity worth naming.`
+        tool: `Start with the before. <em>Name one way governments controlled trade around 1750, then name Smith's argument against it.</em>`,
+        limit: `Smith's book did not change the rules by itself. The rules changed decades later, and for more than one reason (section 02).`,
+        comparison: `Against Topic 5.3: there, Smith's pins showed specialization inside a workshop; here, the same idea is applied to whole countries.`
       },
       terms: [
-        ['Comparative advantage', 'Ricardo\'s 1817 result that both parties gain by specializing where their opportunity cost is lowest, even if one is better at everything.'],
-        ['Corn Laws', 'British tariffs protecting landowners\' grain prices, repealed in 1846 and marking the victory of industrial over landed interest.'],
-        ['Anti-Corn Law League', 'The Cobden and Bright campaign, effectively the first modern political pressure organization.'],
-        ['Gold standard', 'Currency fixed to a weight of gold, giving exchange-rate certainty for international lending at the cost of domestic monetary control.'],
-        ['Infant industry argument', 'The case for protecting new domestic industries until they can compete, which comparative advantage does not address.']
+        ['Mercantilism', 'The idea that a country grows strong by selling more than it buys and controlling its trade.'],
+        ['Tariff', 'A tax on goods brought in from another country.'],
+        ['Laissez-faire', 'A French phrase, roughly "let them do it": the idea that government should let people trade freely.']
       ]
     },
 
-    // ── 04 ────────────────────────────────────────────────────────────────────
+    // ── 02 ─────────────────────────────────────────────────────────────
     {
-      id: 'debt',
-      num: '04',
-      accent: 'oxide',
-      name: 'Control Without Conquest',
-      navLabel: 'Economic imperialism',
-      dates: '1838 to 1900 &nbsp;·&nbsp; Debt, treaties and commissions',
-      thesis: `A state does not have to be annexed to be governed. If a foreign body collects its taxes, foreign treaties set its tariffs and foreign courts try foreigners inside it, it has lost the powers that make sovereignty operative, and the instrument was a loan rather than an army.`,
+      id: 'free-trade',
+      num: '02',
+      accent: 'iron',
+      name: 'Britain Chooses Free Trade',
+      navLabel: 'Free trade',
+      dates: '1815 to 1879 &nbsp;·&nbsp; The Corn Laws and after',
+      thesis: `Britain repealed its Corn Laws in 1846 and ended its tariffs on factory goods by 1860, partly persuaded by Smith's ideas. Much of Western Europe followed in the 1860s, but not every country, and not for good.`,
       parts: [
         {
-          heading: 'How a loan becomes a government',
+          heading: 'Bread and rents',
           blocks: [
-            { p: `The sequence is the same in every case and is worth learning as a sequence. A government borrows on European capital markets, usually for railways, ports, public works or a war. Because it is judged a risky borrower, the terms are hard: high interest, and bonds issued at a discount, so a state that owes a hundred may have received seventy. Servicing the debt requires foreign currency, which requires exports, which pushes the economy further toward primary products. When revenue falls short, it borrows again to service the first loan. At default, bondholders press their own governments, and the settlement is not forgiveness but <b>control of the revenue</b>: a foreign commission takes designated taxes at source to pay the creditors first.` },
-            { p: `<b>Egypt</b> is the case that runs the whole sequence. The Topic 5.4 chapter leaves it stripped of its industry by the Treaty of Balta Liman. It then borrowed enormously under Ismail for the Suez Canal, railways and public works, defaulted in the <span class="num">1870</span>s, sold its Suez shares to the British government, accepted an Anglo-French Dual Control over its finances, and, when a nationalist movement objected to foreign management of the country's money, was invaded and occupied by Britain in <span class="num">1882</span>. Debt to occupation in a generation.` },
-            { p: `<b>The Ottoman empire</b> supplies the purest institutional form. After default in <span class="num">1875</span>, the <b>Ottoman Public Debt Administration</b> was established in <span class="num">1881</span>: a body controlled by European bondholders' representatives, with its own staff of thousands, which collected specified Ottoman revenues, the salt and tobacco monopolies, stamp duties, silk tithes and others, directly, and applied them to the debt before the Ottoman treasury saw them. A sovereign empire with its own army, sultan and law had a foreign agency inside it collecting its taxes, and it lasted until the empire did.` },
-            { p: `<b>Latin America</b> is the diffuse version. British and later American capital financed railways, ports, utilities and government borrowing; the railways were laid to move exports to the coast rather than to integrate an internal market; debt service required export earnings; and when governments defaulted, the pressure ranged from gunboats to the American practice, in the Caribbean and Central America in the early twentieth century, of taking over customs houses directly. No annexation, and comprehensive influence over what these economies produced.` },
-            { p: `<b>China</b> is the treaty-port version. After the Opium Wars, a series of treaties from <span class="num">1842</span> opened ports to foreign residence and trade, capped Chinese tariffs at a low fixed rate, granted <span class="kt">extraterritoriality</span> so foreigners were tried under their own consuls rather than Chinese law, and added indemnities that had to be borrowed to pay. From <span class="num">1854</span> the Chinese Maritime Customs Service, which collected the tariff, was run by foreign inspectors-general. China was never colonized and was not, in the relevant respects, in control of its own commerce.` }
+            { p: `Britain's Corn Laws, passed in <span class="num">1815</span>, put a tariff on imported grain ("corn" meant grain). They kept grain prices high, which kept the rents of Britain's landowners high, and landowners filled Parliament.` },
+            { p: `In <span class="num">1838</span> factory owners and merchants in Manchester started a campaign that became the Anti-Corn Law League, led by Richard Cobden and John Bright. It held meetings, printed pamphlets and raised money across the country. Cheap bread, its speakers said, would help workers; and countries that sold their grain to Britain would have money to buy British cloth.` },
+            { p: `Not every worker trusted them. Many Chartists, members of the workers' movement for the vote, argued that high prices meant high wages, so when manufacturers cried "cheap bread," they meant "cheap labour."` }
           ]
         },
         {
-          heading: 'What is being claimed, precisely',
+          heading: 'Famine and repeal',
           blocks: [
-            { p: `Be exact, because this argument is easy to overstate. These states retained their flags, their rulers, their armies and their internal administration, and in Egypt's case that ended anyway. What they lost was a specific and identifiable set of powers: <b>the tariff</b>, which Topic 5.4 shows is the instrument of industrialization; <b>jurisdiction</b> over foreigners on their own soil; and <b>the disposal of their own tax revenue</b>. Those three are what a state uses to direct its economy, so losing them means the economy is directed elsewhere.` },
-            { p: `And name the local decisions too, or the account becomes one in which things are done to passive states. Ismail chose to borrow at ruinous rates for prestige projects. Ottoman and Latin American governments borrowed to fund wars, courts and patronage as well as infrastructure. Local elites frequently profited from the arrangement and defended it. Structure and decision are both in the record, and a good answer has both.` },
+            { p: `In <span class="num">1845</span> a disease destroyed much of Ireland's potato crop, and famine began. Prime Minister Robert Peel, who had once defended the Corn Laws, decided they had to go. His bill cut the tariff on grain step by step until February 1849, leaving only a small duty after that. In <span class="num">1846</span> Parliament passed it, but most of Peel's own party voted against him, and the party split.` },
+            { p: `Britain kept going. By <span class="num">1860</span> it had ended its tariffs on imported factory goods, keeping a few taxes, such as those on tea, sugar and wine, mainly to raise money. Britain had become a free trade country.` },
             { note: {
-              kind: 'misconception',
-              label: 'Common mistake to avoid',
-              html: `Do not treat economic imperialism as a lesser or partial version of colonialism, and do not treat it as merely ordinary lending. It is a distinct arrangement with its own logic: it is cheaper than conquest, since bondholders pay nothing for an administration, it carries no responsibility for governing, and it is largely invisible, because there is no flag change to point at. That is precisely why it persisted after formal empires ended, and why the Unit 6 chapters on spheres of influence should be read against this one. The test to apply is not whether a country was annexed but whether it controlled its tariff, its courts and its revenue.`
+              kind: 'howknow',
+              label: 'How we know: "partly"',
+              html: `The College Board says Western European countries adopted free trade "partly in response" to Smith's ideas. The history shows why "partly" is the right word: the League's campaign was paid for by manufacturers who wanted cheap food and open markets, and the historian Charles Read notes that the Irish famine "contributed to Peel's decision." Ideas, interests and a crisis worked together.`
+            } }
+          ]
+        },
+        {
+          heading: 'Others follow, for a while',
+          blocks: [
+            { p: `In <span class="num">1860</span> Britain and France signed the Cobden-Chevalier Treaty, cutting tariffs on each other's goods. In the 1860s a chain of similar treaties lowered tariffs across much of Western Europe.` },
+            { p: `Then some countries turned back. From <span class="num">1879</span> Germany put tariffs back on imported grain and iron, to protect its farmers and its factories after cheap grain from America drove prices down. The United States kept high tariffs on factory goods from the Civil War to the end of the century. Britain stayed with free trade.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Give the change, and its limits. <em>Name the change (Britain's repeal, 1846) and one thing that carried on (Germany's tariffs from 1879, or America's).</em>`,
+        limit: `"Began abandoning" is the College Board's phrase: free trade spread, then partly retreated.`,
+        comparison: `Against section 01: Smith's argument came in 1776; Britain's rules changed in 1846 and 1860. Ideas took decades to become laws.`
+      },
+      terms: [
+        ['Free trade', 'A policy of letting goods cross a country\'s borders without heavy tariffs.'],
+        ['Repeal', 'To cancel a law.'],
+        ['Protection', 'Using tariffs to shield a country\'s own producers from foreign competition.']
+      ]
+    },
+
+    // ── 03 ─────────────────────────────────────────────────────────────
+    {
+      id: 'new-tools',
+      num: '03',
+      accent: 'sage',
+      name: 'New Tools for Business',
+      navLabel: 'New tools',
+      dates: '1720 to the 1880s &nbsp;·&nbsp; Limited liability, stock markets, banks',
+      thesis: `Industry needed more money than a family had. Limited liability, stock markets and banks let many people invest in one business, with less to lose.`,
+      parts: [
+        {
+          heading: 'The old way',
+          blocks: [
+            { p: `Companies that sold shares were not new. The Dutch East India Company (VOC) sold shares in <span class="num">1602</span> (Topic 4.5), and people bought and sold them in Amsterdam. But from <span class="num">1720</span> to <span class="num">1825</span>, forming such a company in Britain usually took special permission from the government: a royal charter or an act of Parliament. Most businesses belonged to one family or a few partners, as Richard Arkwright's mill at Cromford did (Topic 5.3). If a partnership failed, each partner could lose his house and savings to pay its debts.` }
+          ]
+        },
+        {
+          heading: 'Limited liability',
+          blocks: [
+            { p: `A railway or a steamship line cost more than any few partners could pay. Laws of <span class="num">1855</span> and <span class="num">1856</span> let almost any group of seven or more people in Britain register a company whose owners could lose only the money they had put in, not everything they owned. This is <span class="kt">limited liability</span>. France passed similar laws in 1863 and 1867. With less to lose, many more people with modest savings could invest.` }
+          ]
+        },
+        {
+          heading: 'Stock markets and banks',
+          blocks: [
+            { p: `A <span class="kt">stock market</span>, or stock exchange, is where people buy and sell shares. An investor who needed money back could sell shares to someone else, without waiting for the company to close. London had had a stock exchange since the 1700s. In a railway boom in the mid-1840s, crowds of British investors rushed to buy railway shares, and many lost their savings when prices fell. An American print from 1886, "The World's Exchanges," shows the exchanges of eight cities, from New York and Chicago to London, Paris, Berlin, Hamburg, Frankfurt and Brussels.` },
+            { p: `Banks did the rest. They lent money to companies, changed one country's money into another's, and paid bills between ports thousands of miles apart.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Connect a tool to growth. <em>Say how one tool worked (less risk, or an easy way to sell) and what it made possible (more people investing in one company).</em>`,
+        limit: `Selling shares was old; what changed was who could form a company, and how little an owner could lose.`,
+        comparison: `Against Topic 5.6: there, governments paid for the first factories; here, many private investors do.`
+      },
+      terms: [
+        ['Share', 'A part of a company that a person can own and sell.'],
+        ['Limited liability', 'A rule that owners of a company can lose only the money they put in.'],
+        ['Stock market', 'A place where people buy and sell shares.']
+      ]
+    },
+
+    // ── 04 ─────────────────────────────────────────────────────────────
+    {
+      id: 'across-borders',
+      num: '04',
+      accent: 'gold',
+      name: 'Businesses Across Borders',
+      navLabel: 'Across borders',
+      dates: '1860s to 1929 &nbsp;·&nbsp; HSBC, Lever, Unilever',
+      thesis: `As trade and production stretched around the world, some businesses grew to work in many countries at once, relying on banking and finance to do it.`,
+      parts: [
+        {
+          heading: 'A bank for trade with China',
+          blocks: [
+            { p: `The Hongkong and Shanghai Banking Corporation, today called HSBC, opened in Hong Kong in March <span class="num">1865</span>. It was started by Thomas Sutherland, a Scot who worked there for a shipping company, with a committee of merchant firms, to give local businesses better banking for their trade. It opened in Shanghai a month later and in London that July, to change money for clients in China and India. By <span class="num">1900</span> it worked in 16 countries and territories.` },
+            { p: `One of the firms on its first committee, Dent and Company, had grown rich trading opium into China, a trade Britain had forced China to accept by war. How that happened is Unit 6.` }
+          ]
+        },
+        {
+          heading: 'Soap and margarine',
+          blocks: [
+            { p: `In England, William Lever began selling Sunlight Soap in <span class="num">1884</span>, made with oils from tropical plants such as coconut and palm kernels. By <span class="num">1886</span> he had registered the Sunlight name in the United States, and from 1888 he built a factory town for his workers, Port Sunlight. In the Netherlands, the Jurgens and Van den Bergh families of Oss turned butter trading into margarine factories and sold across the North Sea to England.` },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know: the dates of Unilever',
+              html: `The College Board names Unilever, "based in England and the Netherlands and operating in British West Africa and the Belgian Congo." That company did not exist until <span class="num">1929</span>, when Lever Brothers joined the Dutch margarine makers, who had merged in 1927. Lever's company began its plantations in the Belgian Congo in 1911, where its agents forced Congolese men to work. So Unilever is where these nineteenth-century businesses ended up, not a company of the years this unit covers.`
             } }
           ]
         }
       ],
       useThis: {
-        tool: `Revenue capture at source. <em>The mechanism is that a defaulting sovereign cannot be sued in any court that matters, so creditors secure repayment instead by taking control of specified taxes before they reach the treasury, which gives a foreign body a permanent claim on the state&rsquo;s income, forecloses any spending priority the government might prefer, and requires no occupation to enforce.</em>`,
-        limit: `It required a creditor state willing to back it with force or diplomatic pressure, and where a borrower had strong alternative backers or strategic value the terms were softer, so this is a relationship of relative power rather than an automatic outcome of debt.`,
-        comparison: `Against the <em>Estado da India</em> in Topic 4.4: Portugal taxed movement through forts, and the Ottoman Public Debt Administration taxed salt and tobacco through an office. Both are extraction without governing, and the nineteenth-century version needs no garrison because the instrument is a contract enforced by the borrower&rsquo;s own state apparatus.`
+        tool: `Use the Key Concept's own links. <em>Global trade "contributed to" big transnational businesses, which "relied on" banking and finance: show both links with one business.</em>`,
+        limit: `Not every business crossed borders: most were still small and local.`,
+        comparison: `Against section 03: HSBC was itself one of the "new practices in banking and finance" that other businesses relied on.`
       },
       terms: [
-        ['Economic imperialism', 'Control of another state\'s economy through investment, debt and treaty terms rather than through annexation.'],
-        ['Ottoman Public Debt Administration', 'The 1881 bondholders\' body that collected specified Ottoman revenues directly, ahead of the treasury.'],
-        ['Extraterritoriality', 'The treaty provision trying foreigners under their own consuls rather than local law, which removes jurisdiction from the host state.'],
-        ['Treaty ports', 'Chinese ports opened to foreign residence and trade under treaties that also capped tariffs and imposed indemnities.'],
-        ['Sovereign default', 'A state\'s failure to service its debt, which in this period led to foreign control of revenue rather than to forgiveness.']
+        ['Transnational business', 'A company that works in more than one country.'],
+        ['Brand', 'A name a company puts on its product so buyers know and ask for it.']
+      ]
+    },
+
+    // ── 05 ─────────────────────────────────────────────────────────────
+    {
+      id: 'cheaper-goods',
+      num: '05',
+      accent: 'iron',
+      name: 'Cheaper Goods, for Some',
+      navLabel: 'Cheaper goods',
+      dates: '1780s to 1900 &nbsp;·&nbsp; Consumer goods and living standards',
+      thesis: `Better factory methods made goods more available, more affordable and more varied, and living standards rose, much faster after about 1860, for some people and not for others.`,
+      parts: [
+        {
+          heading: 'More, cheaper, more kinds',
+          blocks: [
+            { p: `Factories kept improving how they made things. The economic historian Knick Harley found that the price of cotton cloth "fell impressively" while machines spun the yarn, and "continued to fall thereafter as technology improved in weaving and finishing." Soap that grocers had once cut from long bars came in wrapped bars with a <span class="kt">brand</span> name, like Sunlight, advertised to every household. Ships and railways (Topic 5.5) brought fruit, tea and wheat from far away to city markets.` }
+          ]
+        },
+        {
+          heading: 'Who gained',
+          blocks: [
+            { p: `A family's <span class="kt">standard of living</span> is how well it lives: what it can afford to eat, wear and buy. In Britain, historians who measure what wages could buy find that working families' standard of living rose very little from the 1780s to the 1850s, and much faster from about 1860 to 1900.` },
+            { note: {
+              kind: 'howknow',
+              label: 'How we know: measuring "for some"',
+              html: `The economic historian Charles Feinstein estimated that the average working-class family's standard of living rose "by less than 15 percent between the 1780s and 1850s." Most historians agree that real wages, what pay could actually buy, grew much more after 1850. But other measures, such as children's height and how many babies died, look less hopeful up to 1900. Many city workers stayed poor (Topic 5.9), and many of the people who grew the cotton, palm oil and tea did not share the gains (Unit 6).`
+            } },
+            { p: `Not everyone gained from this new economy, and not everyone accepted it. Workers organized, reformers pushed for new laws, and some thinkers imagined a different system. That is Topic 5.8.` }
+          ]
+        }
+      ],
+      useThis: {
+        tool: `Use all three words. <em>The College Board says goods became more available, more affordable and more varied: give an example of one.</em>`,
+        limit: `"For some" is the College Board's phrase: say who gained and who did not.`,
+        comparison: `Against section 02: free trade made imported food cheaper; here, factories made their own goods cheaper.`
+      },
+      terms: [
+        ['Standard of living', 'How well a family lives: what it can afford to eat, wear and buy.'],
+        ['Real wages', 'What pay can actually buy, once prices are counted.'],
+        ['Consumer goods', 'Things people buy for themselves and their homes.']
       ]
     }
   ],
 
   closing: {
     heading: 'Building an Answer That Scores',
-    navLabel: 'Building a comparison',
-    intro: `Each card is a full argument: the claim, the specific evidence, and the reason. The first states a mechanism by giving its counterfactual, which is the technique the whole chapter uses.`,
+    navLabel: 'The answer',
+    intro: `Each card gathers the evidence for one part of the answer. The College Board asks how economic systems, ideas and institutions developed and contributed to change, and its skill for this topic is connecting one development to another, so the cards give each row's before and after, and then the connections.`,
     pairs: [
       {
-        category: 'Mechanism',
-        title: 'Limited liability is a rule about the worst case, and that is why it mattered',
-        body: `Before it, an investor in a failed business could be pursued for its whole debt, house and savings included, so people only funded ventures they could personally supervise and capital stayed local and cautious. Capping exposure at the sum invested lets a saver put fifty pounds into a railway in a county she has never seen, because fifty pounds is the most she can lose, and multiplying that across a whole propertied population creates a capital market able to fund railways, steel and telegraphs. Britain got there in stages: registration without a charter in 1844, the liability cap in 1855, and the Companies Act of 1862 making cheap general incorporation available to anyone. The risk did not vanish; it moved to unpaid creditors, suppliers and workers, which is what disclosure requirements were extracted to offset.`
+        category: 'Continuity and Change',
+        title: 'Trade',
+        body: `Evidence to sort into "before," "after" and "carried on": mercantilism, tariffs, bans and monopolies; Smith's Wealth of Nations (1776); the Corn Laws (1815); the Manchester campaign (1838); the Irish famine (1845); repeal (1846); tariffs on factory goods ended by 1860; the Cobden-Chevalier Treaty (1860) and the treaties of the 1860s; Germany's tariffs from 1879; America's high tariffs.`
       },
       {
-        category: 'Causation',
-        title: 'Britain adopted free trade when it had the cheapest goods',
-        body: `Ricardo showed in 1817 that both parties gain by specializing where their opportunity cost is lowest, even when one produces everything more efficiently. But the theory takes the specialization as given, and open markets favor whoever is already cheapest, so the doctrine was rational for Britain and ruinous for a late industrializer. The Corn Laws fell in 1846 because manufacturers wanted cheap bread and export markets while landowners wanted rents, and Peel split his party to repeal them. The proof that position drives doctrine is that states switch sides: Britain was protectionist under mercantilism while catching up, the United States kept high tariffs throughout its industrialization, and Germany protected iron and steel from 1879.`
+        category: 'Continuity and Change',
+        title: 'Business and goods',
+        body: `Evidence to sort: the VOC's shares (1602); the government's permission needed from 1720 to 1825; family partnerships; limited liability (1855 and 1856); France's laws (1863 and 1867); the railway share boom (mid-1840s); "The World's Exchanges" (1886); HSBC (1865); Sunlight Soap (1884), its U.S. trademark (1886), Port Sunlight (1888); Unilever (1929); cheaper cotton cloth; wrapped, branded soap; living standards rising little to the 1850s and faster after about 1860.`
       },
       {
-        category: 'Trade-off',
-        title: 'The gold standard bought certainty and charged wage earners for it',
-        body: `Defining a currency as a fixed weight of gold makes exchange rates between participating countries effectively fixed, which is what lets an investor lend abroad for thirty years knowing what he will be repaid in, and that certainty is the precondition for the enormous international investment of the period. The cost is that a government gives up control of its money supply: if gold flows out, credit must contract, so prices and wages fall and unemployment rises, and the state cannot relieve it without breaking convertibility. The adjustment therefore falls on wage earners and debtors rather than on the exchange rate, which is why indebted farmers and workers campaigned against gold, most visibly in the United States in the 1890s.`
+        category: 'Making Connections',
+        title: 'How one change relates to another',
+        body: `Pairs to explain: free trade and global trade; global trade and HSBC; limited liability and big companies; stock markets and railway building; better factory methods and cheaper cloth; cheaper goods and living standards. For each pair, say whether one caused the other, made it possible, or answered it, with a detail for each side.`
       },
       {
-        category: 'Structure',
-        title: 'Ask who controls the tariff, the courts and the revenue',
-        body: `Egypt borrowed heavily for the Suez Canal and public works, defaulted in the 1870s, sold its canal shares, accepted Anglo-French Dual Control of its finances, and was occupied by Britain in 1882 when a nationalist movement objected. The Ottoman empire defaulted in 1875 and from 1881 the Ottoman Public Debt Administration, run by European bondholders&rsquo; representatives with thousands of staff, collected salt, tobacco, stamp and silk revenues directly, before the treasury. China after 1842 was capped at a low fixed tariff by treaty, granted extraterritoriality so foreigners answered to their own consuls, and had its Maritime Customs Service run by foreign inspectors from 1854. None was annexed, and each had lost the powers a state uses to direct its own economy.`
+        category: 'Continuity and Change',
+        title: 'For some',
+        body: `Evidence to weigh: Feinstein's estimate (under 15 percent from the 1780s to the 1850s); real wages rising faster after 1850; height and infant deaths up to 1900; city poverty (Topic 5.9); the people who grew cotton, palm oil and tea (Unit 6); Chartists who said "cheap bread" meant "cheap labour." Decide who gained most, and say why.`
       }
     ]
   }
