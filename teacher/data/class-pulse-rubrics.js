@@ -32,9 +32,12 @@
  * his building, a rivalry and its states), the accurate pairing is what it asks for. Where
  * it asks for a change, a reform or a detail, the name has to come with what it did.
  *
- * VERSION changes when LEVELS, RULES or a topic's existing descriptors change, because
- * every earlier label then needs a re-check. Adding a topic's first descriptors does not
- * change it: no earlier label was made against them. */
+ * VERSION changes when LEVELS or RULES change, because every earlier label then needs a
+ * re-check. When one topic's descriptors change, raise that topic's `revision` instead
+ * (a topic without one is revision 1): the engine adds it to that topic's rubric version,
+ * so only that topic's labels and readings go back for a re-check. Adding a topic's first
+ * descriptors changes neither. `changes` lists, in plain words, what each revision changed
+ * and why, for the calibration page to show. */
 (function (root, factory) {
   const api = factory();
   if (typeof module === 'object' && module.exports) module.exports = api;

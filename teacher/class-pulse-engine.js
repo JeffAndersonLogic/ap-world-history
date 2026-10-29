@@ -90,7 +90,10 @@
       })
     };
     if (rubrics && rubrics.LEVELS) {
-      contract.rubricVersion = rubrics.VERSION;
+      // A topic whose descriptors have been revised carries its own revision, so revising
+      // one topic does not send every other topic's labels back for a re-check.
+      const revision = rubrics.TOPICS && rubrics.TOPICS[topicKey] && rubrics.TOPICS[topicKey].revision;
+      contract.rubricVersion = rubrics.VERSION + (revision ? '+' + topicKey + '.r' + revision : '');
       contract.levels = { ...rubrics.LEVELS };
       contract.rules = [...(rubrics.RULES || [])];
     }

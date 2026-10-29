@@ -104,7 +104,7 @@ function checkBlindSet(set) {
   // topic, per-criterion descriptors where written, refused when its wording drifts.
   for (const key of Object.keys(R.TOPICS)) for (const cp of ['cp1', 'cp2']) {
     const c = E.contractFor(MAP, key, cp, R);
-    assert.equal(c.rubricVersion, R.VERSION);
+    assert.equal(c.rubricVersion, R.VERSION + (R.TOPICS[key].revision ? '+' + key + '.r' + R.TOPICS[key].revision : ''));
     assert.ok(c.criteria.every((x, i) => x.rubric && x.rubric.D === R.TOPICS[key][cp][i].D && x.rubric.P && x.rubric.N), key + ' ' + cp + ' carries its rubric');
   }
   assert.deepEqual(Object.keys(E.contractFor(MAP, '4.1', 'cp1', R).levels), ['D', 'P', 'N', 'U']);
@@ -114,6 +114,10 @@ function checkBlindSet(set) {
   const drifted = JSON.parse(JSON.stringify(R));
   drifted.TOPICS['2.3'].cp1[0].criterion += ' (edited)';
   assert.throws(() => E.contractFor(MAP, '2.3', 'cp1', drifted), /does not match its criteria/);
+  const revised = JSON.parse(JSON.stringify(R));
+  revised.TOPICS['3.1'].revision = 2;
+  assert.equal(E.contractFor(MAP, '3.1', 'cp1', revised).rubricVersion, R.VERSION + '+3.1.r2', 'a revised topic carries its own revision');
+  assert.equal(E.contractFor(MAP, '3.2', 'cp1', revised).rubricVersion, E.contractFor(MAP, '3.2', 'cp1', R).rubricVersion, 'and no other topic moves');
   assert.match(E.contractFor(MAP, '2.3', 'cp1').coverageNote, /not assessed/);
   assert.ok(!('coverageNote' in E.contractFor(MAP, '3.2', 'cp2')));
   assert.match(E.INSTRUCTIONS, /uncertainty field is ONLY for category U/);
@@ -131,7 +135,7 @@ function checkBlindSet(set) {
     for (const [id, rec] of Object.entries(byCase)) {
       const row = CALIB.rows.find(r => r.id === id);
       assert.ok(row && READERS.topicOf(id) === '2.3', id + ' is a known calibration case');
-      assert.equal(rec.rubricVersion, R.VERSION, id + ' was read under the current rubric');
+      assert.equal(rec.rubricVersion, E.contractFor(MAP, '2.3', row.checkpoint, R).rubricVersion, id + ' was read under the current rubric');
       E.validateOutput(rec, E.contractFor(MAP, '2.3', row.checkpoint, R), row.text);
       recorded++;
     }
