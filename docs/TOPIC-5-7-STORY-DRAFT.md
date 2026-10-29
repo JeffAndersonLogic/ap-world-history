@@ -5,7 +5,7 @@ Drafted 2026-10-29 from the CED source file, for the build Jeff started with "Bu
 topic." Nothing ships until Jeff says "ship it".
 
 **Resume here (2026-10-29, second session):** Phases 0 to 8 done; review pass 1 (26 findings) fixed and
-logged. Pass 2 under way from a fresh packet. The build continues on `claude/5-7-build-timeout-yjim8a`
+logged. Pass 2 (19 findings) fixed and logged; pass 3 under way from a fresh packet. The build continues on `claude/5-7-build-timeout-yjim8a`
 (the session's assigned branch; it carries every commit of `claude/topic-5-7-build`, which stops at
 pass 1). Then move `APPROVED_UNIT5_REWRITE_BLOB`, browser suite, topic audit, report.
 

@@ -1704,7 +1704,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "A country, Smith argued, should act the same way: \"If a foreign country can supply us with a commodity cheaper than we ourselves can make it, better buy it of them.\" Tariffs and bans, he said, made ordinary buyers pay more so that a few producers could profit. Let people buy and sell freely, and the whole country would grow richer."
+            "html": "A country, Smith argued, should act the same way: \"If a foreign country can supply us with a commodity cheaper than we ourselves can make it, better buy it of them ...\" Tariffs and bans, he said, made ordinary buyers pay more so that a few producers could profit. Let people buy and sell freely, and the whole country would grow richer."
           },
           {
             "type": "p",
@@ -1723,7 +1723,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Smith's ideas spread slowly. The biggest test was food. Britain's Corn Laws, passed in 1815, put a tariff on imported grain (\"corn\" meant grain) to keep grain prices high for Britain's landowners, who sat in Parliament."
+            "html": "Smith's ideas spread slowly. The biggest test was food. Britain's Corn Laws (\"corn\" meant grain) kept out cheap foreign grain to keep grain prices high for Britain's landowners, who sat in Parliament. A law of 1815 banned foreign wheat until British prices rose very high; from 1828 a tariff on imported grain took the ban's place."
           },
           {
             "type": "p",
@@ -1740,7 +1740,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Continuity and Change",
-          "raw": "<p><strong>Change, and its limits.</strong> By 1900, your trade row reads: Britain traded freely; much of Western Europe lowered tariffs in the 1860s. What carried on: tariffs did not disappear. Germany brought them back from 1879, and the United States kept them high.</p>"
+          "raw": "<p><strong>Change, and its limits.</strong> Fill in your trade row for 1900: what changed, and from what? Then read the last paragraph again: what carried on, and where?</p>"
         }
       },
       {
@@ -1754,7 +1754,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Industry needed far more money than a family had. A railway or a steamship line cost more than a few partners could pay. Three new practices in banking and finance helped:"
+            "html": "Industry needed far more money than a family had. A railway or a steamship line cost more than a few partners could pay. Three practices in banking and finance helped:"
           },
           {
             "type": "p",
@@ -1785,7 +1785,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>A bank.</strong> The Hongkong and Shanghai Banking Corporation, today called HSBC, opened in Hong Kong in March 1865. It was started by Thomas Sutherland, a Scot who worked there for a shipping company, with a committee of merchant firms, to give local businesses better banking for their trade. It opened in Shanghai a month later and in London that summer, and by 1900 it worked in 16 countries and territories. One of the firms on its first committee, Dent and Company, had grown rich trading opium into China, a trade Britain had forced China to accept by war. That is Unit 6."
+            "html": "<strong>A bank.</strong> The bank known today as HSBC opened in Hong Kong in March 1865, as the Hongkong and Shanghai Banking Company; in 1866 it became the Hongkong and Shanghai Banking Corporation. It was started by Thomas Sutherland, a Scot who worked there for a shipping company, with a committee of merchant firms, to give local businesses better banking for their trade. It opened in Shanghai a month later and in London that summer, and by 1900 it worked in 16 countries and territories. One of the firms on its first committee, Dent and Company, had grown rich trading opium into China, a trade Britain had forced China to accept by war. That is Unit 6."
           },
           {
             "type": "p",
@@ -1829,7 +1829,7 @@ module.exports = {
         }
       }
     ],
-    "takeaway": "Between 1750 and 1900 the rules of the economy changed. Adam Smith's Wealth of Nations (1776) attacked mercantilism and argued for buying goods wherever they were cheapest. Partly persuaded by such ideas, partly pushed by manufacturers and by famine in Ireland, Britain repealed its Corn Laws in 1846 and by 1860 had ended its tariffs on imported factory goods; in the 1860s much of Western Europe lowered tariffs, though Germany went back to them from 1879 and the United States kept them high. New practices in banking and finance, limited liability (laws of 1855 and 1856), stock markets, and banks, let businesses grow large and cross borders, like HSBC (1865) and Lever's Sunlight Soap (1884), which later became part of Unilever. Factories made goods cheaper and more varied, and living standards rose, much faster after about 1860, for some, not for all. Freer trade. Bigger business. Cheaper goods, for some.",
+    "takeaway": "Between 1750 and 1900 the rules of the economy changed. Adam Smith's Wealth of Nations (1776) attacked mercantilism and argued for buying goods wherever they were cheapest. Partly persuaded by such ideas, partly pushed by manufacturers and by famine in Ireland, Britain repealed its Corn Laws in 1846 and by 1860 had ended its tariffs on imported factory goods; in the 1860s much of Western Europe lowered tariffs, though Germany went back to them from 1879 and the United States kept them high. Practices in banking and finance, limited liability (laws of 1855 and 1856), stock markets, and banks, let businesses grow large and cross borders, like HSBC (1865) and Lever's Sunlight Soap (1884), which later became part of Unilever. Factories made goods cheaper and more varied, and living standards rose, much faster after about 1860, for some, not for all. Freer trade. Bigger business. Cheaper goods, for some.",
     "checkBadge": "Check Your Thinking",
     "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
@@ -1842,7 +1842,7 @@ module.exports = {
       {
         "num": "02",
         "skill": "Making Connections",
-        "text": "Using Sections 4 and 5, choose ONE new practice in banking or finance (limited liability, stock markets, or banks) and explain how it relates to the growth of a business that crossed borders, such as HSBC or Lever's soap company.",
+        "text": "Using Sections 4 and 5, choose ONE practice in banking or finance (limited liability, stock markets, or banks) and explain how it relates to the growth of a business that crossed borders, such as HSBC or Lever's soap company.",
         "placeholder": "Limited liability (or...) made it possible for... For example..."
       },
       {

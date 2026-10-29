@@ -8225,7 +8225,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "10",
           "module": "Checkpoint 2",
           "label": "Module 10, Checkpoint 2",
-          "prompt": "Explain how business and the goods people could buy changed between 1750 and 1900, and how the changes connect. (1) Explain how ONE new practice in banking or finance (limited liability, stock markets, or banks) helped a business work across borders: use HSBC (a bank serving trade between China and the world) or Lever Brothers (a limited company from 1890 that sold shares from 1894). (2) Explain ONE way consumer goods became more available, more affordable, or more varied, with a detail. (3) Explain why living standards rose only for some. (4) Explain how ONE of these developments relates to another: did it cause it, make it possible, or answer it? (5) Name ONE thing that continued from before 1750.",
+          "prompt": "Explain how business and the goods people could buy changed between 1750 and 1900, and how the changes connect. (1) Explain how ONE practice in banking or finance (limited liability, stock markets, or banks) helped a business that crossed borders to grow: use HSBC (a bank serving trade between China and the world) or Lever Brothers (a limited company from 1890 that sold shares from 1894). (2) Explain ONE way consumer goods became more available, more affordable, or more varied, with a detail. (3) Explain why living standards rose only for some. (4) Choose TWO developments from this lesson (for example, the repeal of the Corn Laws, limited liability, HSBC, or cheaper cloth) and explain how one relates to the other: did it cause it, make it possible, or answer it? (5) Name ONE thing that continued from before 1750.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -8272,7 +8272,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
             "tariffs"
           ],
           "criteria": [
-            "Explain how one banking or finance practice helped a business cross borders.",
+            "Explain how one banking or finance practice helped a business that crossed borders to grow.",
             "Explain one change in consumer goods, with a detail.",
             "Explain why living standards rose only for some.",
             "Explain how one development relates to another.",
@@ -8283,7 +8283,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
             "I can explain how industrial capitalism made goods more available, affordable, and varied, and why living standards rose only for some."
           ],
           "successCriteria": [
-            "I can explain how one new practice in banking or finance (limited liability, stock markets, or banks) helped a business work across borders, using HSBC or Lever Brothers (later part of Unilever) as an example; I can say whether one development caused another, made it possible, or answered it; and I can name one thing about business that continued from before 1750.",
+            "I can explain how one practice in banking or finance (limited liability, stock markets, or banks) helped a business that crossed borders to grow, using HSBC or Lever Brothers (later part of Unilever) as an example; I can explain how two developments from this lesson are linked: I can say whether one development caused another, made it possible, or answered it; and I can name one thing about business that continued from before 1750.",
             "I can explain one way consumer goods became more available, more affordable, or more varied, with a detail, and explain why living standards rose only for some, naming one group that gained little."
           ]
         },
@@ -8321,7 +8321,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "02",
           "module": "First & 10, Question 2",
           "label": "Module 02, First & 10, Question 2",
-          "prompt": "Using Sections 4 and 5, choose ONE new practice in banking or finance (limited liability, stock markets, or banks) and explain how it relates to the growth of a business that crossed borders, such as HSBC or Lever's soap company.",
+          "prompt": "Using Sections 4 and 5, choose ONE practice in banking or finance (limited liability, stock markets, or banks) and explain how it relates to the growth of a business that crossed borders, such as HSBC or Lever's soap company.",
           "skill": "",
           "skills": [],
           "skillRaw": "Making Connections",
@@ -8379,7 +8379,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "05",
           "module": "AP Skill Builder",
           "label": "Module 05, AP Skill Builder",
-          "prompt": "Now do it with the history of Topic 5.7. Choose TWO of these developments: Britain's repeal of the Corn Laws and move to free trade (1846 to 1860); limited liability (1855 and 1856); stock markets; the Hongkong and Shanghai Banking Corporation (1865); Lever's Sunlight Soap (1884), its U.S. trademark (1886), and the company's sale of shares (1894); cheaper and more varied goods. First, say exactly what changed in each one. Second, choose the kind of link: did one cause the other, make it possible, or answer it? Third, explain how the link works, with a detail from the lesson for each. Fourth, write the connection in one sentence using the frame.",
+          "prompt": "Now do it with the history of Topic 5.7. Choose TWO of these developments: Britain's repeal of the Corn Laws and move to free trade (1846 to 1860); limited liability (1855 and 1856); stock markets; the bank known today as HSBC (1865); Lever's Sunlight Soap (1884), its U.S. trademark (1886), and the company's sale of shares (1894); cheaper and more varied goods. First, say exactly what changed in each one. Second, choose the kind of link: did one cause the other, make it possible, or answer it? Third, explain how the link works, with a detail from the lesson for each. Fourth, write the connection in one sentence using the frame.",
           "skill": "",
           "skills": [],
           "skillRaw": "Making connections practice",

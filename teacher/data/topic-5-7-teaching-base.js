@@ -72,7 +72,7 @@ window.BEHISTORICAL_TEACHING = {
     { id: 'first10', label: 'First & 10', range: '5-17', minutes: 12, teacher: 'Module 02: students read "Freer Trade, Bigger Business" in class.', students: 'Build three rows as they read.', slide: 4 },
     { id: 'old-rules', label: 'The Old Rules', range: '17-19', minutes: 2, teacher: 'Mercantilism, from 4.5.', students: 'Name one way governments controlled trade.', slide: 5 },
     { id: 'smith', label: 'A New Argument', range: '19-21', minutes: 2, teacher: 'Adam Smith, 1776, in his own words.', students: 'Say Smith\'s rule in their own words.', slide: 6 },
-    { id: 'corn-laws', label: 'Britain Changes the Rules', range: '21-23', minutes: 2, teacher: 'The Corn Laws, 1815 to 1860.', students: 'Name the turning point.', slide: 7 },
+    { id: 'corn-laws', label: 'Britain Changes the Rules', range: '21-23', minutes: 2, teacher: 'The Corn Laws, 1815 to 1860: a ban, then a tariff.', students: 'Name the turning point.', slide: 7 },
     { id: 'partly', label: 'Why "Partly"?', range: '23-25', minutes: 2, teacher: 'Rank three causes of repeal.', students: 'Rank and defend number one.', slide: 8 },
     { id: 'others', label: 'Others Follow, for a While', range: '25-27', minutes: 2, teacher: '1860, the 1860s, 1879.', students: 'Name what carried on.', slide: 9 },
     { id: 'cp1', label: 'Checkpoint 1', range: '27-35', minutes: 8, teacher: 'Module 06: the rules of trade, on their own.', students: 'Work without the coach.', slide: 10 },
@@ -208,9 +208,8 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Later writers called ideas like his laissez-faire, French for roughly "let them do it." Smith did not use the phrase.',
       template: {
         steps: [
-          { label: '1776', text: 'Smith attacks "the mercantile system" in **The Wealth of Nations**.' },
-          { label: 'A family', text: '"The tailor does not attempt to make his own shoes, but **buys them of the shoemaker**."' },
-          { label: 'A country', key: true, text: '"If a foreign country can supply us with a commodity cheaper than we ourselves can make it, **better buy it of them**."' }
+          { label: 'A family', text: '**The Wealth of Nations**, 1776: "The tailor does not attempt to make his own shoes, but **buys them of the shoemaker**."' },
+          { label: 'A country', key: true, text: '"If a foreign country can supply us with a commodity cheaper than we ourselves can make it, **better buy it of them** ..."' }
         ]
       },
       notes: {
@@ -234,7 +233,7 @@ window.BEHISTORICAL_TEACHING = {
         range: [1810, 1865],
         tick: 10,
         events: [
-          { year: 1815, label: '1815', text: 'Corn Laws: a tariff on imported grain' },
+          { year: 1815, label: '1815', text: 'Corn Law: foreign wheat banned unless prices are high' },
           { year: 1838, label: '1838', text: 'Manchester campaign begins: the Anti-Corn Law League' },
           { year: 1845, label: '1845', text: 'Famine begins in Ireland' },
           { year: 1846, label: '1846', text: 'Parliament repeals the Corn Laws' },
@@ -244,7 +243,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'The Corn Laws of 1815 put a tariff on imported grain ("corn" meant grain), which kept grain prices, and landowners\' rents, high. Landowners filled Parliament.',
+          'The Corn Laws ("corn" meant grain) kept grain prices, and landowners\' rents, high. The Importation Act of 1815 did not tax grain: it banned foreign wheat until the British price reached 80 shillings a quarter. The Importation of Corn Act of 1828 replaced the ban with a sliding tariff, highest when British prices were low, which Peel lowered in 1842 (Wikipedia, "Corn Laws": the laws at first worked by "forbidding importation below a set price"). Landowners filled Parliament.',
           'In September 1838 factory owners and merchants in Manchester formed an Anti-Corn Law Association, which led in 1839 to the national Anti-Corn Law League, led by Richard Cobden and John Bright (EBSCO; Encyclopedia.com). Its arguments: cheap bread for workers, and countries that sold grain to Britain would buy British cloth.',
           'In 1845 potato blight brought famine to Ireland. The historian Charles Read: the famine "contributed to Peel\'s decision that the Corn Laws should be repealed." Peel\'s bill cut the duty step by step until 1 February 1849, then left a duty of one shilling a quarter (the bill as printed in The Spectator, 14 March 1846). It passed the Commons in May 1846; most of Peel\'s own party voted against him, and the party split.',
           'By 1860: under the treaty with France, Britain swept away "the duties on all manufactured goods" (Encyclopaedia Britannica, 1911), keeping a few taxes, such as those on tea, sugar and wine, mainly to raise money (The Spectator, February 1860).'
@@ -287,7 +286,7 @@ window.BEHISTORICAL_TEACHING = {
         tick: 10,
         lanes: [
           { name: 'Britain', events: [{ year: 1846, label: '1846', text: 'Corn Laws repealed' }, { year: 1860, label: '1860', text: 'Treaty with France' }] },
-          { name: 'German states', events: [{ year: 1865, label: '1860s', text: 'Low tariffs' }, { year: 1879, label: '1879', text: 'The German Empire puts tariffs back' }] },
+          { name: 'German states', events: [{ year: 1865, label: '1860s', text: 'Low tariffs' }, { year: 1879, label: '1879', text: 'Tariffs come back' }] },
           { name: 'United States', events: [{ year: 1861, label: '1861', text: 'High tariffs, kept to 1900' }] }
         ]
       },
@@ -322,7 +321,7 @@ window.BEHISTORICAL_TEACHING = {
       title: 'How does one change relate to another?',
       footer: 'Three kinds of link: one change can cause another, make it possible, or answer it.',
       template: {
-        frame: '{{Development A}} relates to {{development B}} because A {{caused / made possible / answered}} B: {{a detail about A}} led to {{a detail about B}}.',
+        frame: '{{Development A}} relates to {{development B}} because A {{caused / made possible / answered}} B: {{how the link works, with a detail for each}}.',
         exampleLabel: 'An everyday case',
         example: '**The new bus route to the mall** relates to **the mall\'s new food court** because it **made the food court possible**: **about twice as many weekend shoppers** gave the mall **enough customers to open it**.'
       },
@@ -378,7 +377,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'Stock markets are one of the CED\'s examples for KC-5.1.III.B.',
           'London: organized share trading at Jonathan\'s coffee house from 1698, and a building of the brokers\' own from 1773 (Grub Street Project, from Wheatley and Cunningham). The railway boom ("Railway Mania") peaked in 1845 to 1846, drew in many middle-class investors, and collapsed; share prices fell until about 1850, and many lost their savings (Wikipedia; Focus Economics).',
-          'The picture is a real print: "The World\'s Exchanges," published by Root and Tinker, New York, 1886 (Library of Congress, no known restrictions). The Library\'s record: "Images of stock exchanges in New York, Paris, London, Chicago, Hamburg, Frankfort, Berlin, and Brussels." The Chicago building is the Board of Trade, where grain was traded. The London panel is labeled "Stock Exchange," but it draws the Bank of England and, with the statue in front, the Royal Exchange (the building on slide 3), not the Stock Exchange itself.',
+          'The picture is a real print: "The World\'s Exchanges," published by Root and Tinker, New York, 1886 (Library of Congress, no known restrictions). The Library\'s record: "Images of stock exchanges in New York, Paris, London, Chicago, Hamburg, Frankfort, Berlin, and Brussels." The Chicago building is the Board of Trade, where grain was traded. The London panel is labeled "Bank of England · London · Stock Exchange," but it draws the Bank of England and, with the statue in front, the Royal Exchange (the building on slide 3), not the Stock Exchange itself.',
           'A printer made this to sell: it shows what New York buyers in 1886 thought worth hanging on a wall, not how much money moved through each exchange.'
         ],
         ask: 'Why would an investor be more willing to buy shares if there is a market to sell them in?',
@@ -431,8 +430,8 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'Unilever is the CED\'s second example for KC-5.1.III.B: "Unilever based in England and the Netherlands and operating in British West Africa and the Belgian Congo." Say plainly that Unilever was formed on 2 September 1929, when Lever Brothers joined Margarine Unie, itself formed in 1927 from the Dutch firms of Jurgens and Van den Bergh (Wikipedia; Grace\'s Guide). Lever\'s company began its plantations in the Belgian Congo in 1911, where its agents forcibly recruited Congolese workers (Wikipedia, "Huileries du Congo Belge"). That is Unit 6.',
-          'The 1880s: Unilever\'s history dates Sunlight to 1884, "a soap that contain[s] copra or [palm] kernel oil"; other sources say 1885. Port Sunlight was developed from 1888. The Jurgens family moved to Oss in 1860; the Van den Berghs were exporting butter to England by 1870 and made margarine from the 1870s.',
+          'Unilever is the CED\'s second example for KC-5.1.III.B: "Unilever based in England and the Netherlands and operating in British West Africa and the Belgian Congo." Say plainly that Unilever was formed on 2 September 1929, when Lever Brothers joined Margarine Unie, itself formed in 1927 from the Dutch firms of Jurgens and Van den Bergh (Wikipedia; Grace\'s Guide). Lever\'s company began its plantations in the Belgian Congo in 1911, where its agents forcibly recruited Congolese workers (Wikipedia, "Huileries du Congo Belge"). That is Unit 6: name it as a bridge and move on.',
+          'The 1880s: Unilever\'s history dates Sunlight to 1884, "a soap that contain[s] copra or [palm] kernel oil"; other sources say 1885. Port Sunlight was developed from 1888. The Jurgens family were butter traders in Oss by the early 1800s; two Jurgens brothers formed the firm Gebroeders Jurgens there in 1854, and the family made margarine from 1871 (Unilever Archives, "Formation of Unilever"; Wikipedia, "Antoon Jurgens"); the Van den Berghs were exporting butter to England by 1870 and made margarine from the 1870s.',
           'The pictures are real documents: two United States trademark registrations for Sunlight Soap, filed by Lever Bros. of Warrington, England (registered 31 August 1886), and Lever Brothers, Limited, of Port Sunlight, England (registered 5 May 1891), each with its label or advertisement pasted in (Library of Congress, no known restrictions). The 1891 filing (application filed 24 February 1891) protected a design, "several pictures of hands showing each sign of the deaf-and-dumb alphabet, and the word Sunlight," with the advertisement attached; the advertisement promises that "a girl of twelve or thirteen can do a large wash."',
           'Finance: Lever and Co. became a private limited company, Lever Brothers, Limited, in 1890, and a public company selling shares in 1894 (Grace\'s Guide; the National Library of Australia\'s guide to the Lever Brothers records). That is the "relied on new practices in banking and finance" link for Lever.',
           'Lever sold soap in wrapped packs bearing the Sunlight name, unusual at the time, where grocers had cut soap from long bars (MyLearning, with the Port Sunlight Museum). That is slide 17\'s "variety" and "availability."'
@@ -560,7 +559,7 @@ window.BEHISTORICAL_TEACHING = {
       kc: 'Unit 5: Learning Objective H', title: 'Say it in one sentence.',
       template: {
         frame: 'Partly thanks to Adam ___, Britain moved to free ___; limited ___ and banks let firms cross ___; goods grew ___, for some; and ___ stayed in America and came back in Germany.',
-        words: ['Smith', 'trade', 'liability', 'borders', 'cheaper', 'tariffs'],
+        words: ['tariffs', 'borders', 'Smith', 'cheaper', 'liability', 'trade'],
         prompt: 'Fill it in from memory, then add one example for each part.'
       },
       notes: {
@@ -591,7 +590,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'cp2', kind: 'action', eyebrow: 'Module 10 · Checkpoint 2',
       title: 'How did business and goods change, and how do the changes connect?',
-      subtitle: 'Explain how one banking or finance practice helped a business cross borders, one way goods changed and why only for some, how one development relates to another, and one thing that continued. If it is not finished in class, it is homework.',
+      subtitle: 'Explain how one banking or finance practice helped a business that crossed borders to grow, one way goods changed and why only for some, how one development relates to another, and one thing that continued. If it is not finished in class, it is homework.',
       action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-7-economic-developments-and-innovations.html#modules' },
       notes: {
         minutes: 12,

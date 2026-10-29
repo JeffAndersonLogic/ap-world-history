@@ -60,7 +60,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Economic Systems"
     },
     {
-      criteria: "I can explain how one new practice in banking or finance (limited liability, stock markets, or banks) helped a business work across borders, using HSBC or Lever Brothers (later part of Unilever) as an example; I can say whether one development caused another, made it possible, or answered it; and I can name one thing about business that continued from before 1750.",
+      criteria: "I can explain how one practice in banking or finance (limited liability, stock markets, or banks) helped a business that crossed borders to grow, using HSBC or Lever Brothers (later part of Unilever) as an example; I can explain how two developments from this lesson are linked: I can say whether one development caused another, made it possible, or answered it; and I can name one thing about business that continued from before 1750.",
       kc: "KC-5.1.III.B",
       theme: "Economic Systems"
     },
@@ -107,8 +107,8 @@ window.BEHISTORICAL_LESSON = {
         title: "Trade: From Mercantilism to Free Trade",
         bullets: [
           "**Before:** under mercantilism (Topic 4.5), governments put tariffs (taxes on imported goods) on foreign goods, banned some outright, and gave a few companies the sole right to trade in a region, such as Britain's East India Company in Asia.",
-          "**A new argument:** in 1776 Adam Smith, a Scottish thinker, published The Wealth of Nations. He attacked what he called \"the mercantile system\": \"If a foreign country can supply us with a commodity cheaper than we ourselves can make it, better buy it of them.\" Later writers called ideas like his laissez-faire, French for roughly \"let them do it.\" Smith did not use the phrase himself.",
-          "**Britain changes the rules:** the Corn Laws of 1815 taxed imported grain to keep prices high for landowners. In 1838 Manchester factory owners and merchants started the campaign that became the Anti-Corn Law League, led by Richard Cobden and John Bright. After famine struck Ireland in 1845, Prime Minister Robert Peel turned against the Corn Laws, and in 1846 Parliament repealed them. By 1860 Britain had ended its tariffs on imported factory goods.",
+          "**A new argument:** in 1776 Adam Smith, a Scottish thinker, published The Wealth of Nations. He attacked what he called \"the mercantile system\": \"If a foreign country can supply us with a commodity cheaper than we ourselves can make it, better buy it of them ...\" Later writers called ideas like his laissez-faire, French for roughly \"let them do it.\" Smith did not use the phrase himself.",
+          "**Britain changes the rules:** the Corn Laws kept out cheap foreign grain to keep prices high for landowners: from 1815 a ban on foreign wheat until British prices rose very high, and from 1828 a tariff on imported grain. In 1838 Manchester factory owners and merchants started the campaign that became the Anti-Corn Law League, led by Richard Cobden and John Bright. After famine struck Ireland in 1845, Prime Minister Robert Peel turned against the Corn Laws, and in 1846 Parliament repealed them. By 1860 Britain had ended its tariffs on imported factory goods.",
           "**Partly in response:** Smith's ideas were part of the reason, but only part. Manufacturers who wanted cheap food and open markets, and the famine, mattered too.",
           "**Others follow, for a while:** the Cobden-Chevalier Treaty of 1860 between Britain and France, and a chain of treaties in the 1860s, lowered tariffs across much of Western Europe. From 1879 Germany put tariffs back on grain and iron, and the United States, which had raised its tariffs on factory goods in 1861, kept them high. Britain stayed with free trade."
         ],
@@ -125,12 +125,12 @@ window.BEHISTORICAL_LESSON = {
           "**Before:** companies that sold shares were not new. The VOC sold shares in 1602 (Topic 4.5). But from 1720 to 1825, forming one in Britain usually took special permission from the government, and most businesses belonged to one family or a few partners, who could lose everything if the business failed.",
           "**Limited liability:** a law of 1855 let a company's owners lose only what they had put in, and a law of 1856 let almost any group of seven or more people in Britain register such a company. France passed similar laws in 1863 and 1867.",
           "**Stock markets:** a stock market is where people buy and sell shares. London had had one since the 1700s, and in the mid-1840s crowds of British investors rushed to buy railway shares. An American print of 1886 shows the exchanges and trading halls of eight cities.",
-          "**A bank across borders:** the Hongkong and Shanghai Banking Corporation (HSBC) opened in Hong Kong in March 1865 to give local businesses better banking for their trade, then in Shanghai and London the same year. By 1900 it worked in 16 countries and territories.",
-          "**Soap and margarine:** William Lever began selling Sunlight Soap in England in 1884, registered the name in the United States by 1886, and built Port Sunlight from 1888. In 1890 his business became a limited company, Lever Brothers, Limited, and from 1894 it sold shares to the public. Dutch families in Oss turned butter trading into margarine factories that sold to England. In 1929, after this unit, they joined into Unilever, based in England and the Netherlands."
+          "**A bank across borders:** the bank known today as HSBC opened in Hong Kong in March 1865, as the Hongkong and Shanghai Banking Company (the Corporation from 1866), to give local businesses better banking for their trade, then in Shanghai and London the same year. By 1900 it worked in 16 countries and territories.",
+          "**Soap and margarine:** William Lever began selling Sunlight Soap in England in 1884, registered the name in the United States by 1886, and built Port Sunlight from 1888. To pay for growth, in 1890 his business became a limited company, Lever Brothers, Limited, and from 1894 it sold shares to the public. In the Netherlands, the Jurgens and Van den Bergh families of Oss turned butter trading into margarine factories that sold to England. In 1929, after this unit, Lever Brothers and the Dutch margarine makers joined into Unilever, based in England and the Netherlands."
         ],
         image: {
           title: "The World's Exchanges, 1886",
-          caption: "A print published in New York in 1886 by Root and Tinker: the stock exchanges of New York, Paris, London, Chicago, Hamburg, Frankfurt, Berlin, and Brussels. The London panel is labeled Bank of England, London, Stock Exchange. Library of Congress.",
+          caption: "A print published in New York in 1886 by Root and Tinker: the exchanges of New York, Paris, London, Hamburg, Frankfurt, Berlin, and Brussels, and the Chicago Board of Trade, where grain was traded. The London panel is labeled Bank of England, London, Stock Exchange, but it draws the Bank of England and the Royal Exchange, not the Stock Exchange building. Library of Congress.",
           url: "../assets/images/topics/5-7/worlds-exchanges-root-tinker-1886.jpg",
           sourceUrl: "https://www.loc.gov/pictures/item/98516796/"
         }
@@ -158,7 +158,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Trade and Money, 1838 to 1900",
     url: "../assets/images/instructional-maps/topic-5-7.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-5-7.svg",
-    caption: "A BeHistorical map of the places in this lesson: the cities of Western Europe where trade rules changed and businesses grew, and Hong Kong and Shanghai, where a bank was founded to serve trade with China.",
+    caption: "A BeHistorical map of the places in this lesson: the countries of Western Europe where trade rules changed and businesses grew, the United States,, and Hong Kong and Shanghai, where a bank was founded to serve trade with China.",
     intro: "Find Britain first, then France and Germany. Then find the United States, and Hong Kong and Shanghai in East Asia. Each numbered arrow joins two places, and the key says what it shows.",
     prompt: "Using the map and its key, choose one place or arrow that shows the rules of trade changing, and one that shows a business working across borders. For each, say what happened and when."
   },
@@ -184,7 +184,7 @@ window.BEHISTORICAL_LESSON = {
 
   primarySource: {
     title: "Primary Source: Adam Smith, The Wealth of Nations, 1776",
-    intro: "Adam Smith was a Scottish thinker, once a professor, who wrote about how countries grow rich. In 1776 he published The Wealth of Nations, a long book that attacked what he called \"the mercantile system\": the tariffs, bans, and monopolies European governments used to control trade. These are two short passages from it, in his own words.",
+    intro: "Adam Smith was a Scottish thinker, once a professor, who wrote about how countries grow rich. In 1776 he published The Wealth of Nations, a long book that attacked what he called \"the mercantile system\": the tariffs, bans, and monopolies European governments used to control trade. These are two short passages from Book IV, chapter 2, and one sentence from chapter 8, in his own words.",
     attribution: "Adam Smith, An Inquiry into the Nature and Causes of the Wealth of Nations (London, 1776), Book IV, chapter 2 (two passages, shortened) and chapter 8 (one sentence), from the public-domain text at Project Gutenberg",
     text: "It is the maxim of every prudent master of a family, never to attempt to make at home what it will cost him more to make than to buy. The tailor does not attempt to make his own shoes, but buys them of the shoemaker. The shoemaker does not attempt to make his own clothes, but employs a tailor. ...<br><br>What is prudence in the conduct of every private family, can scarce be folly in that of a great kingdom. If a foreign country can supply us with a commodity cheaper than we ourselves can make it, better buy it of them with some part of the produce of our own industry, employed in a way in which we have some advantage. ...<br><br>Consumption is the sole end and purpose of all production; and the interest of the producer ought to be attended to, only so far as it may be necessary for promoting that of the consumer.<br><br><em>Words to know: maxim means a rule to live by; prudent means sensible and careful; master of a family means the head of a household; prudence means good sense; scarce be folly means can hardly be foolish; commodity means a good for sale; produce of our own industry means what our own work makes; consumption means buying and using goods; the sole end and purpose means the only goal; attended to means cared about.</em>",
     questions: [
@@ -204,7 +204,7 @@ window.BEHISTORICAL_LESSON = {
 
   beInTheRoom: {
     url: '',
-    desc: "London, May 1846. In Parliament, decide whether Britain should repeal the Corn Laws and move to free trade, with a factory owner, a landowner, a worker, and news of famine in Ireland in front of you."
+    desc: "London, May 1846. In Parliament, decide whether Britain should repeal the Corn Laws and move to free trade, as one of five people: a factory owner, a landowner, a factory worker, a relief official from Ireland, or one of the Prime Minister's ministers."
   }
 
 };

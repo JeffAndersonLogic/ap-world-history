@@ -316,3 +316,106 @@ board). **Fixed** by shorter text; `slide-templates.browser.test.js` then passed
 | The 1891 trademark protected a design of hands spelling the sign-language alphabet, with the word Sunlight | RC Evidence Lab, Deck slide 15 notes | The printed slip on the 1891 filing (LoC 2020713351) | VERIFIED |
 | Living standards: "one careful estimate" (Feinstein), under 15 percent to the 1850s; faster from about 1860; Lindert and Williamson found faster early gains | F10, LD, DR, Deck slide 18 | Feinstein 1998; Floud and Johnson; Lindert and Williamson, *Economic History Review* 1983 (as the history reviewer cites them) | NARROWED |
 | Peel "economic necessity in the face of famine" | Deck slide 8 notes | Not in Read's article | REMOVED |
+
+### Pass 2, 2026-10-29 (second session)
+
+Packet: `capture-topic-for-review.js 5.7` (brand fonts, 24 teacher slides), recaptured after pass 1's
+fixes. Two fresh reviewers, launched together: page truth, readability, CED and ownership on the
+cheaper model; history on the default model. The work moved to `claude/5-7-build-timeout-yjim8a`
+when the first session timed out; nothing else changed between the passes.
+
+**History reviewer: 6 findings, all supported and fixed.** Every Smith quotation (Gutenberg 3300),
+Harley's two sentences, Read's sentence, Hovell's chapter 13, Feinstein's figure, HSBC's dates and five
+picture inscriptions were checked and found accurate. The Library of Congress item pages refused the
+reviewer (HTTP 403), so the Liverpool stereograph's makers and date were not re-checked this pass.
+
+1. The 1815 Corn Law was called a tariff on six surfaces. It was a ban: the Importation Act 1815 forbade
+   foreign wheat until the British price reached 80 shillings a quarter, and a sliding tariff replaced
+   the ban only in 1828 (Wikipedia, "Corn Laws": "simply forbidding importation below a set price"; the
+   1828 sliding scale; Peel's 1842 revision; checked by the builder, not only the reviewer). **Fixed** on
+   every surface: the First & 10, lecture card 1, the deep reading (with the 80-shilling figure), the map
+   key, the BeInTheRoom premise and evidence card, slide 7's timeline ("Corn Law: foreign wheat banned
+   unless prices are high") and its notes, and the Run of Show line.
+2. "The World's Exchanges" captions contradicted each other: lecture card 2 and slide 13's alt text said
+   "the stock exchanges of" all eight cities (Chicago's is the Board of Trade), and the Evidence Lab said
+   the London panel was "labeled Stock Exchange" when its label reads "Bank of England · London · Stock
+   Exchange." **Fixed:** all three, and slide 13's notes, now give the full London label, say it draws
+   the Bank of England and the Royal Exchange, not the Stock Exchange building, and name the Chicago
+   Board of Trade as a grain exchange.
+3. The deep reading put the 1861 U.S. tariff "during the Civil War." The Morrill Tariff was signed on 2
+   March 1861 and took effect on 1 April; the war began on 12 April; wartime acts of 1862 and 1864 raised
+   it further. **Fixed:** "in 1861, just before the Civil War began, raised them again during the war."
+4. Smith's sentence was cut at "better buy it of them." with a full stop on five surfaces, dropping the
+   comparative-advantage clause the Primary Source prints. **Fixed:** an ellipsis on the First & 10,
+   lecture card 1, the deep reading, the BeInTheRoom card and slide 6 (whose two rows were re-set so
+   the quotation fits; see below).
+5. The bank opened on 3 March 1865 as the Hongkong and Shanghai Banking Company, Limited, and took the
+   name Corporation in December 1866 under a Hong Kong ordinance (HSBC Global Archives, annual report
+   "of The Hongkong and Shanghai Banking Company, Limited for the year ending 31 Dec 1865"; Hong Kong
+   Monetary Authority, note-issuing banks). **Fixed:** "the bank known today as HSBC opened ... as the
+   Hongkong and Shanghai Banking Company; in 1866 it became the Hongkong and Shanghai Banking
+   Corporation" (First & 10, deep reading, lecture card 2, map key); the Skill Builder says "the bank
+   known today as HSBC (1865)." The CED's own example wording is unchanged.
+6. Slide 15's notes said the Jurgens family "moved to Oss in 1860." **Fixed:** butter traders in Oss by
+   the early 1800s; Gebroeders Jurgens formed there in 1854; margarine from 1871 (Unilever Archives,
+   "Formation of Unilever"; Wikipedia, "Antoon Jurgens").
+
+**Page truth reviewer: 13 findings; 10 supported and fixed, 2 supported in part, 1 rejected in part
+and moved to the report.** CED wording, the objective, Continuity and Change, skill 5.B, both
+checkpoints' targets, four picture captions and the map's arrows were checked and found right.
+
+1. The sentence frame ran backwards for "answered" ("[detail about A] led to [detail about B]").
+   **Fixed:** the Skill Builder and slide 11 end "B: [how the link works, with a detail for each]."
+2. Stock markets were called a "new practice" while the same reading says London had one since the
+   1700s and slide 12 lists share trading as a continuity. **Fixed:** "practice" in the First & 10
+   (section 4 and Q02), the takeaway, criterion 2 and Checkpoint 2. The Key Concept's own words ("new
+   practices") stay where they are quoted.
+3. Checkpoint 2 asked how finance "helped a business work across borders," with Lever as an example,
+   but the page dates Lever's border crossing (1886) before its finance (1890, 1894) and says the
+   finance paid for growth. **Fixed:** "helped a business that crossed borders to grow" in Checkpoint
+   2, its card, its focus line, criterion 2 and slide 23; lecture card 2 now says "To pay for growth," as
+   the First & 10 does.
+4. Slide 21's word bank listed the answers in blank order. **Fixed in part:** the bank is shuffled. The
+   slide stays before Checkpoint 2: it is the deck's synthesis slide, and the retelling is required.
+5. Lecture card 2 said "they [the Dutch families] joined into Unilever." **Fixed:** "Lever Brothers and
+   the Dutch margarine makers joined into Unilever"; the card also names the Jurgens and Van den Bergh
+   families as the First & 10 does.
+6. BeInTheRoom used "Chartists," "duty," "a quarter" and "relief works" without a gloss. **Fixed:**
+   "Chartists (workers campaigning for the right to vote)"; "duty" is now "tariff" throughout the room,
+   with "one shilling (a British coin) on each quarter (a measure of grain)"; "the relief works, where
+   the government pays starving people to build roads."
+7. The two captions of the 1886 print disagreed. **Fixed** with history finding 2.
+8. The Primary Source introduction said "two short passages" over three paragraphs. **Fixed:** "two
+   short passages from Book IV, chapter 2, and one sentence from chapter 8."
+9. Checkpoint 2 step 4's "these developments" had no antecedent. **Fixed:** "Choose TWO developments
+   from this lesson (for example, the repeal of the Corn Laws, limited liability, HSBC, or cheaper cloth)
+   and explain how one relates to the other"; criterion 2 says the same.
+10. Near-model answers. **Fixed in part:** the section 3 callout ("your trade row reads: ...") answered
+    Q01 for the student; it is now a prompt to fill the row in. **Rejected in part:** section 6's
+    summary is the reading's story, the content the course deliberately teaches, not a finished answer
+    to a task; the Smith myth is myth-busting content.
+11. The deep reading stated the Congo forced labor of 1911 outright, beyond a bridge. **Fixed:** "began
+    plantations in the Belgian Congo in 1911, and how it treated the Congolese who worked them is part
+    of Unit 6." The teacher notes keep the sourced fact, marked as a bridge.
+12. The BeInTheRoom card named four people for a five-role scenario; the map caption said "cities" for
+    a map of countries. **Fixed:** "as one of five people: ..."; "the countries of Western Europe ...,
+    the United States, and Hong Kong and Shanghai."
+13. Layout. **Fixed:** slide 9's 1879 label sat on the lane line ("Tariffs come back" now fits on one
+    line; the notes still explain the German Empire); slide 6's quotation box was full before the
+    ellipsis and overflowed after it, so its "1776" row was folded into the "A family" row ("The Wealth
+    of Nations, 1776: ...") and the ellipsis is bound to "them." **Rejected and moved to the report as
+    adjacent findings:** slide 19's grey struck-through text (contrast about 2.65:1) and slide 8's
+    printed 1, 2, 3 beside items students are asked to rank both come from the shared `myth-evidence`
+    and `cause-rank` templates, used by fifteen decks and by 5.6, so they are course-wide, not 5.7's.
+
+**New and changed claim rows from pass 2:**
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| The 1815 Corn Law banned foreign wheat until British prices reached 80 shillings a quarter; from 1828 a sliding tariff on imported grain took the ban's place | F10, LD, DR, RC map key, BR, Deck slide 7 and notes | Wikipedia, "Corn Laws" (Importation Act 1815; Importation of Corn Act 1828; Peel 1842) | NARROWED (was "a tariff on imported grain" from 1815) |
+| The U.S. raised its tariffs in 1861, just before the Civil War began, and again during the war | DR | Wikipedia, "Morrill Tariff" (signed 2 March 1861, in force 1 April; Fort Sumter 12 April; acts of 1862 and 1864) | NARROWED |
+| HSBC opened in March 1865 as the Hongkong and Shanghai Banking Company and became the Corporation in 1866 | F10, LD, DR, RC map key and Skill Builder | HSBC Global Archives (1865 annual report "of The Hongkong and Shanghai Banking Company, Limited"); HKMA | NARROWED |
+| "The World's Exchanges": seven exchanges and the Chicago Board of Trade; the London panel, labeled "Bank of England · London · Stock Exchange," draws the Bank of England and the Royal Exchange | LD, RC Evidence Lab, Deck slide 13 alt and notes | The print itself (2400-pixel file); LoC 98516796 | NARROWED |
+| Smith's sentence, quoted to "better buy it of them," is shortened and marked so | F10, LD, DR, BR, Deck slide 6 | Gutenberg 3300, Book IV, chapter 2 | NARROWED |
+| The Jurgens family traded butter in Oss by the early 1800s, formed Gebroeders Jurgens in 1854 and made margarine from 1871 | Deck slide 15 notes | Unilever Archives, "Formation of Unilever"; Wikipedia, "Antoon Jurgens" | NARROWED (was "moved to Oss in 1860") |
+| Lever's company began plantations in the Belgian Congo in 1911 | DR (bridge only), Deck slide 15 notes | Wikipedia, "Huileries du Congo Belge" | NARROWED (student surface keeps the bridge only) |

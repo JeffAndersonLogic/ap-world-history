@@ -91,17 +91,13 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "steps": [
           {
-            "label": "1776",
-            "text": "Smith attacks \"the mercantile system\" in **The Wealth of Nations**."
-          },
-          {
             "label": "A family",
-            "text": "\"The tailor does not attempt to make his own shoes, but **buys them of the shoemaker**.\""
+            "text": "**The Wealth of Nations**, 1776: \"The tailor does not attempt to make his own shoes, but **buys them of the shoemaker**.\""
           },
           {
             "label": "A country",
             "key": true,
-            "text": "\"If a foreign country can supply us with a commodity cheaper than we ourselves can make it, **better buy it of them**.\""
+            "text": "\"If a foreign country can supply us with a commodity cheaper than we ourselves can make it, **better buy it of them** ...\""
           }
         ],
         "visual": {
@@ -130,7 +126,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "year": 1815,
             "label": "1815",
-            "text": "Corn Laws: a tariff on imported grain"
+            "text": "Corn Law: foreign wheat banned unless prices are high"
           },
           {
             "year": 1838,
@@ -217,7 +213,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
               {
                 "year": 1879,
                 "label": "1879",
-                "text": "The German Empire puts tariffs back"
+                "text": "Tariffs come back"
               }
             ]
           },
@@ -250,7 +246,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "How does one change relate to another?",
       "footer": "Three kinds of link: one change can cause another, make it possible, or answer it.",
       "template": {
-        "frame": "{{Development A}} relates to {{development B}} because A {{caused / made possible / answered}} B: {{a detail about A}} led to {{a detail about B}}.",
+        "frame": "{{Development A}} relates to {{development B}} because A {{caused / made possible / answered}} B: {{how the link works, with a detail for each}}.",
         "exampleLabel": "An everyday case",
         "example": "**The new bus route to the mall** relates to **the mall's new food court** because it **made the food court possible**: **about twice as many weekend shoppers** gave the mall **enough customers to open it**."
       }
@@ -316,7 +312,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         ],
         "visual": {
           "url": "../assets/images/topics/5-7/worlds-exchanges-root-tinker-1886.jpg",
-          "alt": "A printed sheet of eight drawings of large stone buildings, each labeled with its city: the stock exchanges of New York, Paris, London, Chicago, Hamburg, Frankfurt, Berlin and Brussels",
+          "alt": "A printed sheet of eight drawings of large stone buildings, each labeled with its city: the exchanges of New York, Paris, London, Hamburg, Frankfurt, Berlin and Brussels, and the Board of Trade in Chicago",
           "credit": "The World's Exchanges, Root & Tinker, New York, 1886 · Library of Congress · Public domain",
           "ratio": 1.092,
           "position": "50% 45%",
@@ -548,12 +544,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "frame": "Partly thanks to Adam ___, Britain moved to free ___; limited ___ and banks let firms cross ___; goods grew ___, for some; and ___ stayed in America and came back in Germany.",
         "words": [
-          "Smith",
-          "trade",
-          "liability",
+          "tariffs",
           "borders",
+          "Smith",
           "cheaper",
-          "tariffs"
+          "liability",
+          "trade"
         ],
         "prompt": "Fill it in from memory, then add one example for each part."
       }
@@ -572,7 +568,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "action",
       "eyebrow": "Module 10 · Checkpoint 2",
       "title": "How did business and goods change, and how do the changes connect?",
-      "subtitle": "Explain how one banking or finance practice helped a business cross borders, one way goods changed and why only for some, how one development relates to another, and one thing that continued. If it is not finished in class, it is homework.",
+      "subtitle": "Explain how one banking or finance practice helped a business that crossed borders to grow, one way goods changed and why only for some, how one development relates to another, and one thing that continued. If it is not finished in class, it is homework.",
       "action": {
         "label": "Open Student Lesson",
         "url": "lesson-5-7-economic-developments-and-innovations.html#modules"
