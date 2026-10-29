@@ -114,11 +114,11 @@
       cardDesc: "How banking and finance helped businesses that crossed borders to grow, how consumer goods and living standards changed for some, how one change relates to another, and what continued.",
       learningTargets: [lesson.learningTargets[1].target, lesson.learningTargets[2].target],
       successCriteria: [lesson.successCriteria[1].criteria, lesson.successCriteria[2].criteria],
-      prompt: "Explain how business and the goods people could buy changed between 1750 and 1900, and how the changes connect. (1) Explain how ONE practice in banking or finance (limited liability, stock markets, or banks) helped a business that crossed borders to grow: use HSBC (a bank serving trade between China and the world) or Lever Brothers (a limited company from 1890 that sold shares from 1894). (2) Explain ONE way consumer goods became more available, more affordable, or more varied, with a detail. (3) Explain why living standards rose only for some. (4) Choose TWO developments from this lesson (for example, the repeal of the Corn Laws, limited liability, HSBC, or cheaper cloth) and explain how one relates to the other: did it cause it, make it possible, or answer it? (5) Name ONE thing that continued from before 1750.",
+      prompt: "Explain how business and the goods people could buy changed between 1750 and 1900, and how the changes connect. (1) Explain how ONE practice in banking or finance (limited liability, stock markets, or banks) helped a business that crossed borders to grow: use HSBC or Lever Brothers. (2) Explain ONE way consumer goods became more available, more affordable, or more varied, with a detail. (3) Explain why living standards rose only for some, and name one group that gained little. (4) Choose TWO developments from this lesson (for example, the repeal of the Corn Laws, limited liability, HSBC, or cheaper cloth) and explain how one relates to the other: did it cause it, make it possible, or answer it? (5) Name ONE thing that continued from before 1750.",
       responseType: "Checkpoint 2",
       skill: "Continuity and Change",
       terms: ["limited liability", "1855", "1856", "shares", "stock market", "stock exchange", "investors", "bank", "banking", "HSBC", "Hong Kong", "Shanghai", "London", "1865", "Lever", "Sunlight", "soap", "1884", "1886", "United States", "Unilever", "1929", "transnational", "cotton cloth", "cheaper", "affordable", "variety", "branded", "wrapped", "standard of living", "wages", "1860", "for some", "poor", "made possible", "caused", "continued", "VOC", "tariffs"],
-      focus: ["Explain how one banking or finance practice helped a business that crossed borders to grow.", "Explain one change in consumer goods, with a detail.", "Explain why living standards rose only for some.", "Explain how one development relates to another.", "Name one thing that continued."]
+      focus: ["Explain how one banking or finance practice helped a business that crossed borders to grow.", "Explain one change in consumer goods, with a detail.", "Explain why living standards rose only for some, and name one group that gained little.", "Explain how one development relates to another.", "Name one thing that continued."]
     }
   ];
 
@@ -151,7 +151,7 @@
       alt: "A colored photograph of a large stone building with tall columns and a carved triangular top, with a statue of a man on horseback in front. Horse-drawn buses, carriages and crowds in hats fill the street, and tall office buildings line the road on the right.",
       url: "../assets/images/topics/5-7/royal-exchange-london-photochrom-1890s.jpg",
       sourceUrl: "https://www.loc.gov/pictures/item/2002696923/",
-      caption: "A photochrom (a photograph colored by a printing process) of the Royal Exchange in the City of London, London's business district, made about 1890 to 1900 and sold by the Detroit Publishing Company as print number 1504. The Royal Exchange was a meeting place for merchants, not the Stock Exchange, which stood a few streets away. Library of Congress.",
+      caption: "A photochrom (a photograph colored by a printing process) of the Royal Exchange in the City of London, London's business district, made about 1890 to 1900 by the Photoglob Company of Zürich (its print number 1504, marked P.Z. on the picture) and sold in America by the Detroit Publishing Company. The Royal Exchange was a meeting place for merchants, not the Stock Exchange, which stood a few streets away. Library of Congress.",
       prompt: "NOTICE the buildings, the traffic, and the people. INFER what kind of work went on in this part of London. A photograph of a street: what can it not tell you about the banks and businesses inside these buildings?"
     },
     {
@@ -159,7 +159,7 @@
       alt: "An old brown-toned photograph: a woman in a shawl sits beside a wooden stand piled with fruit on a cobbled dock, more stands line the quay, and well-dressed women and a child walk past on the pavement. Brick warehouses and a church spire stand behind.",
       url: "../assets/images/topics/5-7/liverpool-dock-fruit-stands-1893.jpg",
       sourceUrl: "https://www.loc.gov/pictures/item/2019637949/",
-      caption: "One half of a stereo photograph (a card with two nearly identical photographs that look three-dimensional through a viewer) by William H. Rau, sold by Griffith and Griffith of Philadelphia in 1893, titled Fruit Stands on the Dock, Liverpool, England. Library of Congress.",
+      caption: "One half of a stereo photograph (a card with two nearly identical photographs that look three-dimensional through a viewer) by William H. Rau, copyrighted 1893, on a card sold by Griffith and Griffith of Philadelphia, titled Fruit Stands on the Dock, Liverpool, England. Library of Congress.",
       prompt: "NOTICE who is selling and who is buying, and what they are wearing. INFER what this scene shows about goods reaching a British port city, and about who could buy them. A photograph sold to American viewers: what can it not tell you about where the fruit came from?"
     },
     {

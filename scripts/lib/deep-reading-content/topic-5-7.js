@@ -73,7 +73,7 @@ module.exports = {
         {
           heading: 'Trade as a contest',
           blocks: [
-            { p: `In Topic 4.5 you met <span class="kt">mercantilism</span>, the idea that a kingdom grew strong by selling more to other countries than it bought from them, and by keeping its colonies' trade for itself. Governments acted on it. They put <span class="kt">tariffs</span>, taxes on imported goods, on foreign products; they banned some goods completely; and they gave chartered companies the sole right to trade in a region. Britain's East India Company held the sole right to carry on British trade with Asia.` },
+            { p: `In Topic 4.5 you met <span class="kt">mercantilism</span>, the idea that a kingdom grew strong by selling more to other countries than it bought from them, and by keeping its colonies' trade for itself. Governments acted on it. They put <span class="kt">tariffs</span>, taxes on imported goods, on foreign products; they banned some goods completely; and they gave chartered companies the sole right to trade in a region. Britain's East India Company held the sole right to carry on British trade with India and China.` },
             { p: `To a mercantilist, trade was a contest. If another country sold more to you than it bought, it was winning and you were losing.` }
           ]
         },
@@ -186,7 +186,7 @@ module.exports = {
       useThis: {
         tool: `Connect a tool to growth. <em>Say how one tool worked (less risk, or an easy way to sell) and what it made possible (more people investing in one company).</em>`,
         limit: `Selling shares was old; what changed was who could form a company, and how little an owner could lose.`,
-        comparison: `Against Topic 5.6: there, governments paid for the first factories; here, many private investors do.`
+        comparison: `Against Topic 5.6: there, the governments of Egypt and Japan paid for many early factories; here, many private investors do.`
       },
       terms: [
         ['Share', 'A part of a company that a person can own and sell.'],
@@ -248,7 +248,7 @@ module.exports = {
         {
           heading: 'More, cheaper, more kinds',
           blocks: [
-            { p: `Around 1750, cotton thread was still spun by hand, one thread at a time. Once machines spun it (Topic 5.3), its price fell fast: by 1815 even the coarsest cotton yarn cost about a third of its early 1780s price, counting for rising prices. Factories kept improving how they made things. The economic historian Knick Harley found that the price of cotton cloth "fell impressively" while machines spun the yarn, and "continued to fall thereafter as technology improved in weaving and finishing." Soap that grocers had once cut from long bars came in wrapped bars with a <span class="kt">brand</span> name, like Sunlight, advertised to every household. Ships and railways (Topic 5.5) brought fruit, tea and wheat from far away to city markets.` }
+            { p: `Around 1750, cotton thread was still spun by hand, one thread at a time. Once machines spun it (Topic 5.3), its price fell fast: by 1815 even the coarsest cotton yarn cost about a third of its early 1780s price, even after taking rising prices into account. Factories kept improving how they made things. The economic historian Knick Harley found that the price of cotton cloth "fell impressively" while machines spun the yarn, and "continued to fall thereafter as technology improved in weaving and finishing." Soap that grocers had once cut from long bars came in wrapped bars with a <span class="kt">brand</span> name, like Sunlight, advertised to every household. Ships and railways (Topic 5.5) brought fruit, tea and wheat from far away to city markets.` }
           ]
         },
         {

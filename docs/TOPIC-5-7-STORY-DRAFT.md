@@ -1,13 +1,15 @@
 # Topic 5.7 Story Draft: Economic Developments and Innovations in the Industrial Age
 
-**Status: Delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12).**
+**Status: Approved 2026-10-29 by the independent reviewer loop (Jeff's standing rule of 2026-10-12).**
 Drafted 2026-10-29 from the CED source file, for the build Jeff started with "Build the next unit 5
-topic." Nothing ships until Jeff says "ship it".
-
-**Resume here (2026-10-29, second session):** Phases 0 to 8 done; review pass 1 (26 findings) fixed and
-logged. Pass 2 (19 findings) fixed and logged; pass 3 under way from a fresh packet. The build continues on `claude/5-7-build-timeout-yjim8a`
-(the session's assigned branch; it carries every commit of `claude/topic-5-7-build`, which stops at
-pass 1). Then move `APPROVED_UNIT5_REWRITE_BLOB`, browser suite, topic audit, report.
+topic." Three review passes, over two sessions (the first timed out after pass 1; the second
+continued on `claude/5-7-build-timeout-yjim8a`, which carries every commit of `claude/topic-5-7-build`),
+checked it and every surface built from it against that file and the scholarship; the loop closed on
+the three-pass safety valve with every finding fixed or rejected with a reason
+(`docs/TOPIC-5-7-CLAIM-LEDGER.md`, Review findings). Review changed the 1815 Corn Law from "a tariff"
+to a ban replaced by a tariff in 1828, Lever's finance link from "work across borders" to "grow,"
+and the bank's 1865 name to the Hongkong and Shanghai Banking Company. Nothing ships until Jeff says
+"ship it".
 
 **Taught:** no dates yet. The schedule ends with the Era 3 Exam (Green Monday 2026-11-23, Silver
 Tuesday 2026-11-24), and neither the schedule nor any comment in it names a Unit 5 class day (5.1 to

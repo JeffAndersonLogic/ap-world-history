@@ -11,8 +11,8 @@
  *
  * Stored under assets/images/topics/5-7 (new):
  * - royal-exchange-london-photochrom-1890s.jpg: [Royal Exchange, London,
- *   England], photochrom, between about 1890 and 1900, Detroit Publishing Co.
- *   print no. 1504. Library of Congress 2002696923 (no known restrictions).
+ *   England], photochrom, between about 1890 and 1900, Photoglob Co., Zurich,
+ *   print no. 1504 ("P.Z."), sold in America by the Detroit Publishing Co. Library of Congress 2002696923 (no known restrictions).
  *   Paper margins trimmed.
  * - adam-smith-mackenzie-after-tassie-1805.jpg: Adam Smith, stipple engraving
  *   by MacKenzie after James Tassie, "Engraved for Chapman's Edition of Wealth
@@ -26,8 +26,8 @@
  *   Lever Brothers, Limited, Port Sunlight, registered 5 May 1891. Library of
  *   Congress 2020713351.
  * - liverpool-dock-fruit-stands-1893.jpg: Fruit Stands on the Dock,
- *   Liverpool, England, William H. Rau, sold by Griffith & Griffith,
- *   Philadelphia, about 1893, left half of a stereograph. Library of Congress
+ *   Liverpool, England, William H. Rau, photograph copyrighted 1893,
+ *   card sold by Griffith & Griffith, Philadelphia (later), left half of a stereograph. Library of Congress
  *   2019637949. Card mount trimmed.
  */
 (function(){
@@ -41,7 +41,7 @@ const SMITH={url:IMG+'adam-smith-mackenzie-after-tassie-1805.jpg',alt:'A black-a
 const WORLD={url:IMG+'worlds-exchanges-root-tinker-1886.jpg',alt:'A printed sheet of eight drawings of large stone buildings, each labeled with its city: the exchanges of New York, Paris, London, Hamburg, Frankfurt, Berlin and Brussels, and the Board of Trade in Chicago',credit:'The World\'s Exchanges, Root & Tinker, New York, 1886 · Library of Congress · Public domain',ratio:1.092,position:'50% 45%'};
 const SOAP1886={url:IMG+'lever-sunlight-self-washer-trademark-1886.jpg',alt:'A yellowed United States trademark form headed Trade-Mark, Lever Bros., Soap for household and all other purposes, registered August 31, 1886, with a small printed label pasted in the middle reading Sunlight, the Self-Washer Tablet',credit:'Lever Bros., U.S. trademark registration, 1886 · Library of Congress · Public domain',ratio:0.673};
 const SOAP1891={url:IMG+'lever-sunlight-soap-trademark-1891.jpg',alt:'A yellowed United States trademark form for Lever Brothers, Limited, registered May 5, 1891, with a printed advertisement pasted in: Sunlight Soap in large letters, a drawing of two hands, a sign-language alphabet with a slogan for each letter, and instructions for washing clothes',credit:'Lever Brothers, U.S. trademark registration, 1891 · Library of Congress · Public domain',ratio:0.674};
-const DOCK={url:IMG+'liverpool-dock-fruit-stands-1893.jpg',alt:'An old brown-toned photograph of a cobbled dock: a woman in a striped shawl sits beside a wooden stand piled with fruit, more stands line the quay, well-dressed women and a child walk along the pavement, and brick warehouses and a church spire stand behind',credit:'William H. Rau, Fruit Stands on the Dock, Liverpool, stereograph, about 1893 · Library of Congress · Public domain',ratio:1.147,position:'40% 55%'};
+const DOCK={url:IMG+'liverpool-dock-fruit-stands-1893.jpg',alt:'An old brown-toned photograph of a cobbled dock: a woman in a striped shawl sits beside a wooden stand piled with fruit, more stands line the quay, well-dressed women and a child walk along the pavement, and brick warehouses and a church spire stand behind',credit:'William H. Rau, Fruit Stands on the Dock, Liverpool, stereograph, photograph 1893 · Library of Congress · Public domain',ratio:1.147,position:'40% 55%'};
 const setTemplate=(phase,add)=>{const s=by(phase);if(s)s.template=Object.assign({},s.template||{},add);return s;};
 setTemplate('question',{place:'top',visual:EXCHANGE});
 setTemplate('smith',{visual:SMITH,caption:'Adam Smith, engraved in 1805'});

@@ -131,7 +131,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "year": 1838,
             "label": "1838",
-            "text": "Manchester campaign begins: the Anti-Corn Law League"
+            "text": "Manchester campaign begins (later the Anti-Corn Law League)"
           },
           {
             "year": 1845,
@@ -203,17 +203,17 @@ window.BEHISTORICAL_STUDENT_DECK = {
             ]
           },
           {
-            "name": "German states",
+            "name": "Germany",
             "events": [
               {
                 "year": 1865,
                 "label": "1860s",
-                "text": "Low tariffs"
+                "text": "German states: low tariffs"
               },
               {
                 "year": 1879,
                 "label": "1879",
-                "text": "Tariffs come back"
+                "text": "Empire: tariffs back"
               }
             ]
           },
@@ -370,7 +370,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "tag": "1891 · Port Sunlight, England",
-            "text": "A second filing protects an **advertising design**.",
+            "text": "A later filing protects an **advertising design**.",
             "visual": {
               "url": "../assets/images/topics/5-7/lever-sunlight-soap-trademark-1891.jpg",
               "alt": "A yellowed United States trademark form for Lever Brothers, Limited, registered May 5, 1891, with a printed advertisement pasted in: Sunlight Soap in large letters, a drawing of two hands, a sign-language alphabet with a slogan for each letter, and instructions for washing clothes",
@@ -389,7 +389,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "text": "In **1929** Lever Brothers and Dutch margarine makers form **Unilever**."
           }
         ],
-        "proves": "It crossed borders, and grew into the College Board's Unilever."
+        "proves": "It crossed borders, and in 1929 became part of the College Board's Unilever."
       }
     },
     {
@@ -450,12 +450,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "right": "British working families, 1780s to 1850s: under 15 percent, by one estimate"
           },
           {
-            "label": "Where",
-            "left": "Buyers in industrial cities",
+            "label": "Buyers, growers",
+            "left": "Buyers of the new goods",
             "right": "Many who grew the cotton, palm oil and tea (Unit 6)"
           },
           {
-            "label": "Who",
+            "label": "In cities",
             "left": "Families with wages to spend on new goods",
             "right": "Many of the city poor (Topic 5.9)"
           }
@@ -509,7 +509,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "label": "Trade",
             "cells": [
               "Mercantilism: tariffs, bans, monopolies",
-              "Britain trades freely; much of Europe cut tariffs in the 1860s",
+              "Britain trades freely; much of Europe cut tariffs for a time",
               "Tariffs never vanished: high in America, back in Germany"
             ]
           },
@@ -583,7 +583,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "visual": {
           "url": "../assets/images/topics/5-7/liverpool-dock-fruit-stands-1893.jpg",
           "alt": "An old brown-toned photograph of a cobbled dock: a woman in a striped shawl sits beside a wooden stand piled with fruit, more stands line the quay, well-dressed women and a child walk along the pavement, and brick warehouses and a church spire stand behind",
-          "credit": "William H. Rau, Fruit Stands on the Dock, Liverpool, stereograph, about 1893 · Library of Congress · Public domain",
+          "credit": "William H. Rau, Fruit Stands on the Dock, Liverpool, stereograph, photograph 1893 · Library of Congress · Public domain",
           "ratio": 1.147,
           "position": "50% 45%"
         }

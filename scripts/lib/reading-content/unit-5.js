@@ -1692,7 +1692,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "In Topic 4.5 you met <span class=\"kt\">mercantilism</span>: most European rulers believed a kingdom grew strong by selling more to other countries than it bought from them, and by keeping its colonies' trade for itself. So governments taxed goods coming in from abroad, banned some foreign goods completely, and gave a few companies the sole right to trade in a region. A tax on imported goods is a <span class=\"kt\">tariff</span>. Britain's East India Company, for example, had the sole right to carry on British trade with Asia."
+            "html": "In Topic 4.5 you met <span class=\"kt\">mercantilism</span>: most European rulers believed a kingdom grew strong by selling more to other countries than it bought from them, and by keeping its colonies' trade for itself. So governments taxed goods coming in from abroad, banned some foreign goods completely, and gave a few companies the sole right to trade in a region. A tax on imported goods is a <span class=\"kt\">tariff</span>. Britain's East India Company, for example, had the sole right to carry on British trade with India and China."
           },
           {
             "type": "p",
@@ -1808,7 +1808,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Around 1750, cotton thread was still spun by hand, one thread at a time. Once machines spun it (Topic 5.3), its price fell fast: by 1815 even the coarsest cotton yarn cost about a third of what it had in the early 1780s, counting for rising prices, and cloth kept getting cheaper after that. Factories kept improving how they made things, so goods became more available, more affordable, and more varied. Soap that grocers had once cut from long bars now came in wrapped bars with a brand name, like Sunlight, advertised to every household. Ships and railways (Topic 5.5) brought fruit, tea, and wheat from far away to city markets."
+            "html": "Around 1750, cotton thread was still spun by hand, one thread at a time. Once machines spun it (Topic 5.3), its price fell fast: by 1815 even the coarsest cotton yarn cost about a third of what it had in the early 1780s, even after taking rising prices into account, and cloth kept getting cheaper after that. Factories kept improving how they made things, so goods became more available, more affordable, and more varied. Soap that grocers had once cut from long bars now came in wrapped bars with a brand name, like Sunlight, advertised to every household. Ships and railways (Topic 5.5) brought fruit, tea, and wheat from far away to city markets."
           },
           {
             "type": "p",

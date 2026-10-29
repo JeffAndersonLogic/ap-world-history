@@ -153,7 +153,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 1,
         land: [
-          'The picture is a real photochrom (a photograph colored by a printing process) of the Royal Exchange in the City of London, London\'s business district, about 1890 to 1900, sold by the Detroit Publishing Company as print 1504 (Library of Congress, Photochrom Print Collection, no known restrictions).',
+          'The picture is a real photochrom (a photograph colored by a printing process) of the Royal Exchange in the City of London, London\'s business district, about 1890 to 1900, made by the Photoglob Company of Zürich ("1504. P.Z." is printed on the picture) and sold in America by the Detroit Publishing Company (Library of Congress, Photochrom Print Collection, no known restrictions).',
           'The Royal Exchange was a meeting place for merchants; London\'s Stock Exchange stood a few streets away. Banks, insurers, merchants and the Stock Exchange all worked within a few streets of each other in the City.',
           'A photochrom is colored by hand-made printing plates, so the colors are a printer\'s choice, not a color photograph.'
         ],
@@ -234,7 +234,7 @@ window.BEHISTORICAL_TEACHING = {
         tick: 10,
         events: [
           { year: 1815, label: '1815', text: 'Corn Law: foreign wheat banned unless prices are high' },
-          { year: 1838, label: '1838', text: 'Manchester campaign begins: the Anti-Corn Law League' },
+          { year: 1838, label: '1838', text: 'Manchester campaign begins (later the Anti-Corn Law League)' },
           { year: 1845, label: '1845', text: 'Famine begins in Ireland' },
           { year: 1846, label: '1846', text: 'Parliament repeals the Corn Laws' },
           { year: 1860, label: '1860', text: 'Britain ends its tariffs on factory goods' }
@@ -286,7 +286,7 @@ window.BEHISTORICAL_TEACHING = {
         tick: 10,
         lanes: [
           { name: 'Britain', events: [{ year: 1846, label: '1846', text: 'Corn Laws repealed' }, { year: 1860, label: '1860', text: 'Treaty with France' }] },
-          { name: 'German states', events: [{ year: 1865, label: '1860s', text: 'Low tariffs' }, { year: 1879, label: '1879', text: 'Tariffs come back' }] },
+          { name: 'Germany', events: [{ year: 1865, label: '1860s', text: 'German states: low tariffs' }, { year: 1879, label: '1879', text: 'Empire: tariffs back' }] },
           { name: 'United States', events: [{ year: 1861, label: '1861', text: 'High tariffs, kept to 1900' }] }
         ]
       },
@@ -419,13 +419,13 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         panels: [
           { tag: '1886 · Warrington, England', text: 'Lever registers **Sunlight** in the United States.' },
-          { tag: '1891 · Port Sunlight, England', text: 'A second filing protects an **advertising design**.' }
+          { tag: '1891 · Port Sunlight, England', text: 'A later filing protects an **advertising design**.' }
         ],
         rows: [
           { label: 'Then', text: '**Sunlight Soap** from 1884; a **limited company** from 1890; shares sold from 1894.' },
           { label: 'Later', text: 'In **1929** Lever Brothers and Dutch margarine makers form **Unilever**.' }
         ],
-        proves: 'It crossed borders, and grew into the College Board\'s Unilever.'
+        proves: 'It crossed borders, and in 1929 became part of the College Board\'s Unilever.'
       },
       notes: {
         minutes: 2,
@@ -491,15 +491,15 @@ window.BEHISTORICAL_TEACHING = {
         right: { name: 'Gained little' },
         rows: [
           { label: 'When', left: 'British working families, much faster from about 1860', right: 'British working families, 1780s to 1850s: under 15 percent, by one estimate' },
-          { label: 'Where', left: 'Buyers in industrial cities', right: 'Many who grew the cotton, palm oil and tea (Unit 6)' },
-          { label: 'Who', left: 'Families with wages to spend on new goods', right: 'Many of the city poor (Topic 5.9)' }
+          { label: 'Buyers, growers', left: 'Buyers of the new goods', right: 'Many who grew the cotton, palm oil and tea (Unit 6)' },
+          { label: 'In cities', left: 'Families with wages to spend on new goods', right: 'Many of the city poor (Topic 5.9)' }
         ]
       },
       notes: {
         minutes: 2,
         land: [
           'KC-5.1: industrial capitalism "led to increased standards of living for some."',
-          'The measure: the economic historian Charles Feinstein estimated that the average working-class family\'s standard of living in Britain improved "by less than 15 percent between the 1780s and 1850s" (Journal of Economic History, 1998), "very modest until after 1861." Floud and Johnson\'s Cambridge Economic History of Modern Britain: most historians accept that real wages grew significantly from 1851 to 1913, while height and infant mortality give a less optimistic picture up to 1900. Not every historian agrees on the early years: Lindert and Williamson (Economic History Review, 1983) found much faster real-wage growth from 1820 to 1850, and Feinstein\'s paper was written to answer them, so the slide says "by one estimate."',
+          'The measure: the economic historian Charles Feinstein estimated that the average working-class family\'s standard of living in Britain improved "by less than 15 percent between the 1780s and 1850s" (Journal of Economic History, 1998); in his account more substantial gains came only from the 1860s. Floud and Johnson\'s Cambridge Economic History of Modern Britain: most historians accept that real wages grew significantly from 1851 to 1913, while height and infant mortality give a less optimistic picture up to 1900. Not every historian agrees on the early years: Lindert and Williamson (Economic History Review, 1983) found much faster real-wage growth from 1820 to 1850, and Feinstein\'s paper was written to answer them, so the slide says "by one estimate."',
           'The right column points forward and does not teach: the city poor are 5.9; the growers of raw materials in colonies are Unit 6.'
         ],
         ask: 'Why does the College Board say "for some," not "for all"?',
@@ -537,7 +537,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         columns: [{ name: 'Around 1750' }, { name: 'By 1900' }, { name: 'Carried on' }],
         rows: [
-          { label: 'Trade', cells: ['Mercantilism: tariffs, bans, monopolies', 'Britain trades freely; much of Europe cut tariffs in the 1860s', 'Tariffs never vanished: high in America, back in Germany'] },
+          { label: 'Trade', cells: ['Mercantilism: tariffs, bans, monopolies', 'Britain trades freely; much of Europe cut tariffs for a time', 'Tariffs never vanished: high in America, back in Germany'] },
           { label: 'Business', cells: ['Families and partners; a few chartered companies', 'Limited liability, stock markets, banks; HSBC and Lever cross borders', 'Selling shares, as the VOC did in 1602'] },
           { label: 'Goods', cells: ['Thread spun by hand; cloth cost more', 'Cheaper cloth, branded soap, food from afar', 'Gains for some, not for all'] }
         ],
@@ -610,7 +610,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Land the spine, then the hand-off to 5.8: not everyone gained from this new economy, and not everyone accepted it. Workers organized, reformers pushed for new laws, and some thinkers imagined a different system.',
-          'The picture is a real photograph: the left half of a stereo card, "Fruit Stands on the Dock, Liverpool, England," by William H. Rau, sold by Griffith and Griffith of Philadelphia, about 1893 (Library of Congress, no known restrictions). A woman in a shawl sits at a fruit stand; well-dressed shoppers walk past, beside the dock warehouses.',
+          'The picture is a real photograph: the left half of a stereo card, "Fruit Stands on the Dock, Liverpool, England," by William H. Rau, photograph copyrighted 1893, on a card sold by Griffith and Griffith of Philadelphia, a firm founded later in the 1890s, so the card itself may be later than the photograph (Library of Congress, no known restrictions). A woman in a shawl sits at a fruit stand; well-dressed shoppers walk past, beside the dock warehouses.',
           'Ask students to read the picture as the whole topic: goods from far away (availability), people buying them (living standards), and a seller in a shawl (for some).'
         ],
         ask: 'Say the topic in one sentence, with one example from each row.',

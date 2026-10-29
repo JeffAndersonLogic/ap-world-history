@@ -419,3 +419,91 @@ checkpoints' targets, four picture captions and the map's arrows were checked an
 | Smith's sentence, quoted to "better buy it of them," is shortened and marked so | F10, LD, DR, BR, Deck slide 6 | Gutenberg 3300, Book IV, chapter 2 | NARROWED |
 | The Jurgens family traded butter in Oss by the early 1800s, formed Gebroeders Jurgens in 1854 and made margarine from 1871 | Deck slide 15 notes | Unilever Archives, "Formation of Unilever"; Wikipedia, "Antoon Jurgens" | NARROWED (was "moved to Oss in 1860") |
 | Lever's company began plantations in the Belgian Congo in 1911 | DR (bridge only), Deck slide 15 notes | Wikipedia, "Huileries du Congo Belge" | NARROWED (student surface keeps the bridge only) |
+
+### Pass 3, 2026-10-29 (second session), and the close of the loop
+
+Packet recaptured after pass 2's fixes (brand fonts, 24 teacher slides). Two fresh reviewers as before.
+
+**History reviewer: 7 findings, all supported and fixed; none high.** Every Smith quotation, Feinstein's
+abstract, Harley, Read, Hovell, HSBC's timeline, every Library of Congress record (opened as JSON this
+pass), and the dates of the Corn Laws, the League, repeal, 1860, Cobden-Chevalier, 1879, Morrill, 1720
+and 1825, 1855 and 1856, France, Lever and Unilever were checked and found right.
+
+1. The Liverpool stereograph was "sold by Griffith and Griffith of Philadelphia in 1893," but the firm was
+   founded later (1896 by Wikimedia Commons and the Yellowstone stereoview publisher list; 1898 by the
+   Online Archive of California's finding aid); 1893 is the photograph's copyright (LoC 2019637949,
+   "c1893"). **Fixed:** "by William H. Rau, copyrighted 1893, on a card sold by Griffith and Griffith of
+   Philadelphia" (lecture card 3, Evidence Lab); slide 24's credit reads "photograph 1893" and its notes
+   say the card may be later than the photograph.
+2. Slide 18's notes quoted Feinstein as "very modest until after 1861," words not in his paper. **Fixed:**
+   the quotation is gone; the notes say that in his account more substantial gains came only from the
+   1860s.
+3. "The East India Company had the sole right to carry on British trade with Asia" was too broad (its
+   charter ran east of the Cape of Good Hope; the Levant Company held Ottoman trade). **Fixed:** "with
+   India and China" (First & 10, deep reading, lecture card 1); slide 5's notes already said "east of the
+   Cape of Good Hope."
+4. Slide 15 called the 1891 trademark "a second filing"; the Library of Congress holds a third Lever
+   registration between the two (no. 14441, 1887, LoC 2020708393). **Fixed:** "A later filing."
+5. The deep reading's hook said that in 5.6 "governments paid for the first factories." **Fixed:** "the
+   governments of Egypt and Japan paid for many early factories."
+6. The Royal Exchange photochrom was credited to the Detroit Publishing Company; the print itself reads
+   "1504. P.Z.", Photoglob of Zürich, the maker, and Detroit sold it in America. **Fixed** in the Evidence
+   Lab caption and slide 3's notes.
+7. Slide 9's 1879 point sat in a lane named "German states." **Fixed:** the lane is "Germany," with
+   "German states: low tariffs" (1860s) and "Empire: tariffs back" (1879), so neither point is an
+   anachronism.
+
+**Page truth reviewer: 12 findings; 8 supported and fixed, 1 supported in part, 3 rejected.** Every
+cross-topic reference, the CED wording, the reasoning process and skill, all four CED examples, the
+Smith quotations and the captions were checked and found right.
+
+1. Checkpoint 2's prompt printed answer details ("a limited company from 1890 that sold shares from
+   1894"). **Fixed in part:** the descriptions of HSBC and Lever are cut ("use HSBC or Lever Brothers").
+   **Rejected in part:** step 4's examples name developments, not a link, and were added in pass 2 to give
+   "developments" an antecedent; success criterion 1's examples name acceptable evidence, which is what
+   a criterion is for.
+2. Checkpoint 2 displayed "naming one group that gained little" without asking for it. **Fixed:** step 3
+   and the checklist now ask for it.
+3. Slide 20's "By 1900" cell said Europe cut tariffs "in the 1860s." **Fixed:** "much of Europe cut
+   tariffs for a time."
+4. A double comma in the map caption (introduced by pass 2's fix). **Fixed.**
+5. "counting for rising prices" is not plain English. **Fixed:** "even after taking rising prices into
+   account" (First & 10, lecture card 3, deep reading).
+6. Slide 8's printed 1, 2, 3. **Rejected:** the shared `cause-rank` template; already an adjacent finding.
+7. Slide 18's row labels did not fit their rows. **Fixed:** "When," "Buyers, growers" ("Buyers of the new
+   goods" against the growers) and "In cities."
+8. Lecture card 2 never said what a transnational business is or that global trade contributed to them.
+   **Fixed:** a "Bigger than one country" line in the First & 10's words. **Rejected in part:** a sixth
+   step for Checkpoint 2; the first link of KC-5.1.III.B is taught in the First & 10 (section 5 and its
+   callout), on slide 14 and in the Skill Builder.
+9. Slide 15's "grew into the College Board's Unilever" skipped the 1929 merger. **Fixed:** "in 1929 became
+   part of the College Board's Unilever." **Rejected in part:** the "Warrington" tag is the Library of
+   Congress record's, and a caption may say where a filer lived without the town showing on the paper.
+10. Slide 7 dated the Anti-Corn Law League itself to 1838. **Fixed:** "Manchester campaign begins (later
+    the Anti-Corn Law League)." The BeInTheRoom card says the League's people "have campaigned since
+    1838," which is true of the campaign, and stays.
+11. Slides 5 and 13 are crowded. **Rejected:** nothing is clipped, and the brand-font browser test
+    measures every row; a preference about spacing is not a defect.
+12. No Canvas text. **Rejected** as in pass 1: Unit 5 has no class dates, so no Canvas event exists to
+    generate; the overview is staged in `build-canvas-events.js`.
+
+**The loop stops here, on the three-pass safety valve.** Supported findings by pass: 26, 19, then 16
+(7 history, 9 page truth in whole or part). The trend is down in weight more than in count: pass 1
+found a wrong business link, a merged pair of laws and stated-as-settled scholarship; pass 2 found
+one claim wrong on six surfaces (the 1815 Corn Law as a tariff) and the rest local; pass 3 found no
+error in a claim a student is assessed on, only credits, teacher notes, wording and two over-broad
+phrases. No new myth class appeared after pass 2. Nothing systemic remains that another pass would fix.
+
+**New and changed claim rows from pass 3:**
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| Rau's Liverpool photograph is copyrighted 1893; the card was sold by Griffith and Griffith, a firm founded later in the 1890s | LD lecture card 3, RC Evidence Lab, Deck slide 24 credit and notes | LoC 2019637949 ("c1893"); the card mount; Wikimedia Commons and OAC finding aid (1896 or 1898) | NARROWED |
+| Feinstein: under 15 percent, 1780s to 1850s; more substantial gains from the 1860s | Deck slide 18 notes | Feinstein 1998, abstract (as quoted) and p. 649 as the history reviewer quotes it | NARROWED (unsupported quotation removed) |
+| The East India Company had the sole right to British trade with India and China | F10, DR, LD | Slide 5's notes (east of the Cape of Good Hope); the Levant Company held Ottoman trade | NARROWED (was "with Asia") |
+| The 1891 filing was a later one (an 1887 registration lies between) | Deck slide 15 | LoC 2020708393 (no. 14441, 1887) | NARROWED (was "second") |
+| The Royal Exchange photochrom was made by Photoglob of Zürich (print 1504, "P.Z.") and sold in America by Detroit | RC Evidence Lab, Deck slide 3 notes | The print itself; LoC 2002696923 | NARROWED |
+| In 5.6 the governments of Egypt and Japan paid for many early factories | DR (comparison hook) | Topic 5.6's own story and deck | NARROWED |
+
+**Ledger status at the close:** every row carries one of VERIFIED, NARROWED or REMOVED. No row is NEEDS
+JEFF.

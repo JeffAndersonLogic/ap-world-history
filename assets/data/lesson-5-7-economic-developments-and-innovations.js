@@ -106,7 +106,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Trade: From Mercantilism to Free Trade",
         bullets: [
-          "**Before:** under mercantilism (Topic 4.5), governments put tariffs (taxes on imported goods) on foreign goods, banned some outright, and gave a few companies the sole right to trade in a region, such as Britain's East India Company in Asia.",
+          "**Before:** under mercantilism (Topic 4.5), governments put tariffs (taxes on imported goods) on foreign goods, banned some outright, and gave a few companies the sole right to trade in a region, such as Britain's East India Company in India and China.",
           "**A new argument:** in 1776 Adam Smith, a Scottish thinker, published The Wealth of Nations. He attacked what he called \"the mercantile system\": \"If a foreign country can supply us with a commodity cheaper than we ourselves can make it, better buy it of them ...\" Later writers called ideas like his laissez-faire, French for roughly \"let them do it.\" Smith did not use the phrase himself.",
           "**Britain changes the rules:** the Corn Laws kept out cheap foreign grain to keep prices high for landowners: from 1815 a ban on foreign wheat until British prices rose very high, and from 1828 a tariff on imported grain. In 1838 Manchester factory owners and merchants started the campaign that became the Anti-Corn Law League, led by Richard Cobden and John Bright. After famine struck Ireland in 1845, Prime Minister Robert Peel turned against the Corn Laws, and in 1846 Parliament repealed them. By 1860 Britain had ended its tariffs on imported factory goods.",
           "**Partly in response:** Smith's ideas were part of the reason, but only part. Manufacturers who wanted cheap food and open markets, and the famine, mattered too.",
@@ -125,6 +125,7 @@ window.BEHISTORICAL_LESSON = {
           "**Before:** companies that sold shares were not new. The VOC sold shares in 1602 (Topic 4.5). But from 1720 to 1825, forming one in Britain usually took special permission from the government, and most businesses belonged to one family or a few partners, who could lose everything if the business failed.",
           "**Limited liability:** a law of 1855 let a company's owners lose only what they had put in, and a law of 1856 let almost any group of seven or more people in Britain register such a company. France passed similar laws in 1863 and 1867.",
           "**Stock markets:** a stock market is where people buy and sell shares. London had had one since the 1700s, and in the mid-1840s crowds of British investors rushed to buy railway shares. An American print of 1886 shows the exchanges and trading halls of eight cities.",
+          "**Bigger than one country:** by the late 1800s trade and production stretched around the world, and some businesses grew to match. A company that works in more than one country is a transnational business.",
           "**A bank across borders:** the bank known today as HSBC opened in Hong Kong in March 1865, as the Hongkong and Shanghai Banking Company (the Corporation from 1866), to give local businesses better banking for their trade, then in Shanghai and London the same year. By 1900 it worked in 16 countries and territories.",
           "**Soap and margarine:** William Lever began selling Sunlight Soap in England in 1884, registered the name in the United States by 1886, and built Port Sunlight from 1888. To pay for growth, in 1890 his business became a limited company, Lever Brothers, Limited, and from 1894 it sold shares to the public. In the Netherlands, the Jurgens and Van den Bergh families of Oss turned butter trading into margarine factories that sold to England. In 1929, after this unit, Lever Brothers and the Dutch margarine makers joined into Unilever, based in England and the Netherlands."
         ],
@@ -138,7 +139,7 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Goods: Cheaper, for Some",
         bullets: [
-          "**More, cheaper, more kinds:** around 1750, cotton thread was spun by hand. Once machines spun it (Topic 5.3), its price fell fast: by 1815 even the coarsest cotton yarn cost about a third of what it had in the early 1780s, counting for rising prices. Factories kept improving how they made things. Soap came in wrapped, branded bars like Sunlight instead of being cut from long bars. Ships and railways (Topic 5.5) brought fruit, tea, and wheat from far away.",
+          "**More, cheaper, more kinds:** around 1750, cotton thread was spun by hand. Once machines spun it (Topic 5.3), its price fell fast: by 1815 even the coarsest cotton yarn cost about a third of what it had in the early 1780s, even after taking rising prices into account. Factories kept improving how they made things. Soap came in wrapped, branded bars like Sunlight instead of being cut from long bars. Ships and railways (Topic 5.5) brought fruit, tea, and wheat from far away.",
           "**Standards of living:** in Britain, one careful estimate finds that working families' standard of living rose by less than 15 percent from the 1780s to the 1850s; most historians agree it grew much faster from about 1860 to 1900.",
           "**For some:** many city workers stayed poor (Topic 5.9), and many of the people who grew the cotton, palm oil, and tea did not share the gains (Unit 6).",
           "**What continued:** selling shares was older than industry; tariffs never disappeared, since the United States kept them high and Germany brought them back; and the gains went to some people and not others.",
@@ -146,7 +147,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "Fruit stands on the dock, Liverpool, 1893",
-          caption: "One half of a stereo photograph by William H. Rau, sold by Griffith and Griffith of Philadelphia, 1893: a woman in a shawl sits at a fruit stand while shoppers walk past, by the warehouses of Liverpool's docks. Library of Congress.",
+          caption: "One half of a stereo photograph by William H. Rau, copyrighted 1893, on a card sold by Griffith and Griffith of Philadelphia: a woman in a shawl sits at a fruit stand while shoppers walk past, by the warehouses of Liverpool's docks. Library of Congress.",
           url: "../assets/images/topics/5-7/liverpool-dock-fruit-stands-1893.jpg",
           sourceUrl: "https://www.loc.gov/pictures/item/2019637949/"
         }
@@ -158,7 +159,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Trade and Money, 1838 to 1900",
     url: "../assets/images/instructional-maps/topic-5-7.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-5-7.svg",
-    caption: "A BeHistorical map of the places in this lesson: the countries of Western Europe where trade rules changed and businesses grew, the United States,, and Hong Kong and Shanghai, where a bank was founded to serve trade with China.",
+    caption: "A BeHistorical map of the places in this lesson: the countries of Western Europe where trade rules changed and businesses grew, the United States, and Hong Kong and Shanghai, where a bank was founded to serve trade with China.",
     intro: "Find Britain first, then France and Germany. Then find the United States, and Hong Kong and Shanghai in East Asia. Each numbered arrow joins two places, and the key says what it shows.",
     prompt: "Using the map and its key, choose one place or arrow that shows the rules of trade changing, and one that shows a business working across borders. For each, say what happened and when."
   },

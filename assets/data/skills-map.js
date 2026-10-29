@@ -8225,7 +8225,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "ord": "10",
           "module": "Checkpoint 2",
           "label": "Module 10, Checkpoint 2",
-          "prompt": "Explain how business and the goods people could buy changed between 1750 and 1900, and how the changes connect. (1) Explain how ONE practice in banking or finance (limited liability, stock markets, or banks) helped a business that crossed borders to grow: use HSBC (a bank serving trade between China and the world) or Lever Brothers (a limited company from 1890 that sold shares from 1894). (2) Explain ONE way consumer goods became more available, more affordable, or more varied, with a detail. (3) Explain why living standards rose only for some. (4) Choose TWO developments from this lesson (for example, the repeal of the Corn Laws, limited liability, HSBC, or cheaper cloth) and explain how one relates to the other: did it cause it, make it possible, or answer it? (5) Name ONE thing that continued from before 1750.",
+          "prompt": "Explain how business and the goods people could buy changed between 1750 and 1900, and how the changes connect. (1) Explain how ONE practice in banking or finance (limited liability, stock markets, or banks) helped a business that crossed borders to grow: use HSBC or Lever Brothers. (2) Explain ONE way consumer goods became more available, more affordable, or more varied, with a detail. (3) Explain why living standards rose only for some, and name one group that gained little. (4) Choose TWO developments from this lesson (for example, the repeal of the Corn Laws, limited liability, HSBC, or cheaper cloth) and explain how one relates to the other: did it cause it, make it possible, or answer it? (5) Name ONE thing that continued from before 1750.",
           "skill": "",
           "skills": [],
           "skillRaw": "",
@@ -8274,7 +8274,7 @@ window.BEHISTORICAL_SKILLS_MAP = {
           "criteria": [
             "Explain how one banking or finance practice helped a business that crossed borders to grow.",
             "Explain one change in consumer goods, with a detail.",
-            "Explain why living standards rose only for some.",
+            "Explain why living standards rose only for some, and name one group that gained little.",
             "Explain how one development relates to another.",
             "Name one thing that continued."
           ],
