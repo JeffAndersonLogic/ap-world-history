@@ -443,16 +443,18 @@ report.
 4. **Primary Source:** Adam Smith, *The Wealth of Nations* (1776), Book IV, chapter 2 (the tailor and
    the shoemaker) and chapter 8 ("Consumption is the sole end and purpose of all production"), quoted
    exactly from the public-domain text, with three questions. It replaces the adapted League pamphlet.
-5. **Map module:** one map of Western Europe and the world's trade links, with numbered markers for
-   Manchester (the League), London (the Stock Exchange; Parliament's repeal), Paris (the 1860 treaty),
-   Berlin (the 1879 tariff), Port Sunlight, the Dutch margarine towns, Hong Kong and Shanghai (HSBC),
-   printing labels only in the key. It replaces the economic-imperialism map.
-6. **Evidence Lab:** real objects (the Royal Exchange photochrom, "The World's Exchanges," the 1891
-   Sunlight trademark, the Liverpool dock photograph) and text cards for Smith's words, the 1856 Act's
-   rule and HSBC's founding; never an AI picture.
-7. **BeSurreal:** a clerk in a Liverpool grain merchant's office in June 1846, the week the Corn Laws
-   are repealed, writing to a cousin about what cheaper wheat will change. It replaces the Cotton
-   Famine letter.
+5. **Map module:** "Trade and Money, 1838 to 1900," a world map with Britain, France, Germany, the
+   United States, and Hong Kong and Shanghai shaded, and three numbered arrows: Britain and France's 1860
+   treaty, HSBC's London office (1865), and Lever's U.S. trademark (1886). It replaces the
+   economic-imperialism map.
+6. **Evidence Lab:** six cards: five real objects (the 1891 Sunlight trademark advertisement, "The
+   World's Exchanges," the Royal Exchange photochrom, the Liverpool dock photograph, the 1805 engraving
+   of Smith) and one text card, Smith's "three duties" of government; never an AI picture.
+7. **BeSurreal:** a fourteen-year-old helping in a grocer's shop in a Lancashire mill town in 1890, when
+   a crate of wrapped Sunlight Soap arrives by railway, writing to a grandmother about what has changed in
+   the shop since her day and what has not: consumer goods and "for some" seen by one person. It
+   replaces the Cotton Famine letter. (A Liverpool grain clerk was considered and dropped: 5.5's
+   BeSurreal already uses one, and the Corn Laws are the BeInTheRoom.)
 8. **BeInTheRoom:** "The Debt Conversion Table" (the Ottoman Public Debt Administration, 1881, which is
    Unit 6's) is replaced by "The Corn Law Vote": London, May 1846, members of Parliament deciding
    whether to repeal the Corn Laws, with the League, landowners, a worker and the Irish famine in the

@@ -118,7 +118,7 @@ module.exports = {
           blocks: [
             { p: `Britain's Corn Laws, passed in <span class="num">1815</span>, put a tariff on imported grain ("corn" meant grain). They kept grain prices high, which kept the rents of Britain's landowners high, and landowners filled Parliament.` },
             { p: `In <span class="num">1838</span> factory owners and merchants in Manchester started a campaign that became the Anti-Corn Law League, led by Richard Cobden and John Bright. It held meetings, printed pamphlets and raised money across the country. Cheap bread, its speakers said, would help workers; and countries that sold their grain to Britain would have money to buy British cloth.` },
-            { p: `Not every worker trusted them. Many Chartists, members of the workers' movement for the vote, argued that high prices meant high wages, so when manufacturers cried "cheap bread," they meant "cheap labour."` }
+            { p: `Not every worker trusted them. Many Chartists, members of the workers' movement for the vote, argued that high prices meant high wages, so to them the manufacturers' cry of "cheap bread" really meant cheap labor: lower wages.` }
           ]
         },
         {
@@ -300,7 +300,7 @@ module.exports = {
       {
         category: 'Continuity and Change',
         title: 'For some',
-        body: `Evidence to weigh: Feinstein's estimate (under 15 percent from the 1780s to the 1850s); real wages rising faster after 1850; height and infant deaths up to 1900; city poverty (Topic 5.9); the people who grew cotton, palm oil and tea (Unit 6); Chartists who said "cheap bread" meant "cheap labour." Decide who gained most, and say why.`
+        body: `Evidence to weigh: Feinstein's estimate (under 15 percent from the 1780s to the 1850s); real wages rising faster after 1850; height and infant deaths up to 1900; city poverty (Topic 5.9); the people who grew cotton, palm oil and tea (Unit 6); Chartists who said "cheap bread" really meant cheap labor. Decide who gained most, and say why.`
       }
     ]
   }

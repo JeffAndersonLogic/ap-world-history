@@ -238,6 +238,15 @@ const DECKS = [
     ],
     student: 'assets/data/presentations/topic-5-6-student.js',
     backUrl: 'lesson-5-6-industrialization-government-and-society.html#lecture'
+  },
+  {
+    key: '5.7',
+    sources: [
+      'teacher/data/topic-5-7-teaching-base.js',
+      'teacher/data/topic-5-7-presentation-assets.js'
+    ],
+    student: 'assets/data/presentations/topic-5-7-student.js',
+    backUrl: 'lesson-5-7-economic-developments-and-innovations.html#lecture'
   }
 ];
 
@@ -438,7 +447,8 @@ function buildDeck(deck) {
     '5.3': topic31Slides,
     '5.4': topic31Slides,
     '5.5': topic31Slides,
-    '5.6': topic31Slides
+    '5.6': topic31Slides,
+    '5.7': topic31Slides
   };
   return {
     meta: {
