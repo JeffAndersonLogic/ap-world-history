@@ -1627,170 +1627,243 @@ module.exports = {
   },
   "5.7": {
     "topicKey": "5.7",
-    "topicLabel": "5.7 - Economic Developments and Innovations",
+    "topicLabel": "5.7 - Economic Developments and Innovations in the Industrial Age",
     "sourceFile": "first-and-10-topic-5-7-economic-developments-and-innovations.html",
     "unitDir": "unit-5",
-    "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 5.7 Economic Developments and Innovations",
+    "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 5.7 Economic Developments and Innovations in the Industrial Age",
     "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
-    "readingEyebrow": "AP World History · Unit 5: Revolutions · Topic 5.7",
+    "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
-    "headerSubtitle": "Topic 5.7, Economic Developments and Innovations &nbsp;|&nbsp; AP World History",
-    "titleHtml": "The <em>Free</em> Market",
-    "deck": "How industrial capitalism invented new financial institutions, promoted global free trade, and extended economic power far beyond the reach of armies",
+    "showFooterNote": false,
+    "headerSubtitle": "Topic 5.7, Economic Developments and Innovations in the Industrial Age &nbsp;|&nbsp; AP World History: Modern",
+    "titleHtml": "Freer Trade, <em>Bigger Business</em>",
+    "deck": "Factories made more goods than ever. Between 1750 and 1900, three things changed around them: the rules of trade, the shape of business, and the goods people could buy. This reading follows all three, and asks what stayed the same.",
     "skillTags": [
-      "Causation",
-      "Comparison",
-      "Argumentation"
+      "Continuity and Change",
+      "Making Connections"
     ],
     "supportCards": {
-      "beforeYouRead": "Think about how trade worked before industrialization, local markets, guild regulations, mercantilism. Then consider: what new institutions would be needed to finance factories, railroads, and global trade on industrial scale?",
-      "readingTarget": "Understand how corporations, investment banking, and the gold standard created industrial capitalism's financial infrastructure, and how free trade ideology served British industrial interests while blocking development elsewhere."
+      "beforeYouRead": "<strong>Freer trade. Bigger business. Cheaper goods, for some.</strong> As you read, make three rows: trade, business, and goods. For each row, write what it was like around 1750, what it was like by 1900, and one thing that carried on.",
+      "readingTarget": "How did the rules of trade, the shape of business, and the goods people could buy change between 1750 and 1900, and what stayed the same?"
     },
     "vocabulary": [
-      "joint-stock company",
-      "limited liability",
-      "investment banking",
-      "stock exchange",
-      "gold standard",
-      "laissez-faire",
-      "Corn Laws",
-      "free trade",
-      "economic imperialism",
-      "corporation",
-      "dividend",
-      "speculation",
-      "capital",
-      "tariff",
-      "debt bondage"
+      "Mercantilism",
+      "Free Trade",
+      "Laissez-Faire",
+      "Tariff",
+      "Limited Liability",
+      "Stock Market",
+      "Transnational Business",
+      "Standard of Living"
     ],
     "sections": [
       {
-        "number": "01",
-        "label": "Contextualization",
-        "heading": "Before the Market Revolution",
+        "number": "1",
+        "label": "The Question",
+        "heading": "Who Owns It, Who Pays, and by What Rules?",
         "blocks": [
           {
             "type": "p",
-            "html": "Before industrialization, European economies operated under <span class=\"kt\">mercantilism</span>, the theory that national wealth came from accumulating gold and silver through trade surpluses, maintained by tariffs, monopolies, and colonial resource extraction. The Dutch East India Company (VOC) and British East India Company had pioneered <span class=\"kt\">joint-stock financing</span> in the 17th century, but industrial capitalism required a far more elaborate financial system. Factories, railroads, and global trade networks required capital investment at scales individuals could not provide alone. A Manchester factory owner could not personally fund a railroad; a single investor could not finance a transcontinental line."
+            "html": "Topic 5.6 ended with a question. All this industry made goods, and goods had to be paid for, traded, and financed. Who owned the factories, and how did money move around the industrial world?"
           },
           {
             "type": "p",
-            "html": "Industrial capitalism required new institutions that could pool capital from many investors, limit individual risk, and create markets for buying and selling shares of ownership. The financial revolution that accompanied industrialization was as transformative as the technological revolution, and arguably as important for understanding how the industrial world was organized."
+            "html": "This reading answers in three parts. Part one is the rules of trade: what a government let its people buy from other countries. Part two is the shape of business: who owned companies and where they got their money. Part three is the goods themselves: what people could buy, and who could afford it."
+          },
+          {
+            "type": "p",
+            "html": "In each part, something changed between 1750 and 1900, and something else carried on. Your job is to see both."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p><strong>Contextualization:</strong> Explain how the mercantilist system of the 17th and 18th centuries shaped the economic conditions that industrial capitalism emerged from, and what mercantilism's limits were as an economic framework for industrial-scale production.</p>"
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Make three rows.</strong> For trade, business, and goods, write a <em>before</em> (around 1750), an <em>after</em> (by 1900), and one thing that <em>continued</em>. A strong answer about change always says what changed from what, and what did not change.</p>"
         }
       },
       {
-        "number": "02",
-        "label": "Key Concept",
-        "heading": "Corporations, Banks, and Stock Markets",
+        "number": "2",
+        "label": "Trade, Part 1",
+        "heading": "The Old Rules and a New Argument",
         "blocks": [
           {
             "type": "p",
-            "html": "The <span class=\"kt\">joint-stock company</span>, in which investors pool capital and share both profits and risks proportionally, was not new in the 19th century, but the <span class=\"kt\">limited liability corporation</span> was. Before limited liability, investors in a failed company could be held personally liable for all company debts, potentially losing everything they owned beyond their investment. The UK <span class=\"kt\">Companies Act of 1862</span> established general limited liability, investors could only lose what they had invested, not their entire personal wealth. This single legal change transformed the scale of investment: millions of small investors could now safely participate in large enterprises because their maximum loss was defined."
+            "html": "In Topic 4.5 you met <span class=\"kt\">mercantilism</span>: most European rulers believed a kingdom grew strong by selling more to other countries than it bought from them, and by keeping its colonies' trade for itself. So governments taxed goods coming in from abroad, banned some foreign goods completely, and gave a few companies the sole right to trade in a region. A tax on imported goods is a <span class=\"kt\">tariff</span>. Britain's East India Company, for example, had the sole right to carry on British trade with Asia."
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">stock exchange</span>, a market for buying and selling shares of corporations, made investment liquid. The <span class=\"kt\">London Stock Exchange</span> (formalized 1801) and <span class=\"kt\">New York Stock Exchange</span> (1817) allowed investors to sell their shares whenever they wanted, rather than being locked into an investment until the company wound down. <span class=\"kt\">Investment banks</span> (the House of Morgan, Deutsche Bank, Crédit Lyonnais, the Rothschild family's banking network) specialized in financing large industrial enterprises, floating bonds for railroad construction, and organizing mergers. By 1900, a handful of investment banks controlled the financing of American railroads, German industry, and British overseas investment, and the bankers who ran them were arguably more powerful than most governments."
+            "html": "In 1776 a Scottish thinker, Adam Smith, published a book called <em>The Wealth of Nations</em>. You met his pin workshop in Topic 5.3. In the same book, Smith attacked what he called \"the mercantile system.\" A sensible family, he wrote, never makes at home what would cost more to make than to buy:"
+          },
+          {
+            "type": "pull",
+            "html": "\"The tailor does not attempt to make his own shoes, but buys them of the shoemaker.\""
+          },
+          {
+            "type": "p",
+            "html": "A country, Smith argued, should act the same way: \"If a foreign country can supply us with a commodity cheaper than we ourselves can make it, better buy it of them.\" Tariffs and bans, he said, made ordinary buyers pay more so that a few producers could profit. Let people buy and sell freely, and the whole country would grow richer."
+          },
+          {
+            "type": "p",
+            "html": "Later writers called ideas like Smith's <span class=\"kt\">laissez-faire</span>, a French phrase meaning roughly \"let them do it\": let people trade without the government steering them. (Smith did not use the phrase himself.) A government that lets goods cross its borders without heavy tariffs follows a policy of <span class=\"kt\">free trade</span>."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Causation",
-          "raw": "<p><strong>Causation:</strong> Explain how limited liability changed the economics of industrial investment. What specific mechanism did it create, and how did it enable industrial enterprises that would have been impossible under the old unlimited liability system?</p>"
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>The before.</strong> Your first row starts here. Around 1750: mercantilism, with tariffs, bans, and trading monopolies. Smith's book did not change the rules by itself. Watch for <em>when</em> the rules changed, and <em>why</em>.</p>"
         }
       },
       {
-        "number": "03",
-        "label": "Key Concept",
-        "heading": "Free Trade, the Corn Laws, and Global Integration",
+        "number": "3",
+        "label": "Trade, Part 2",
+        "heading": "Britain Changes the Rules",
         "blocks": [
           {
             "type": "p",
-            "html": "The most important economic idea of the 19th century was <span class=\"kt\">free trade</span>, the argument that removing tariffs and trade barriers would allow each country to specialize in what it produced most efficiently (<span class=\"kt\">comparative advantage</span>), increasing total wealth for all participants. The architect of this argument was <span class=\"kt\">David Ricardo</span> (1817); its most effective political champion was <span class=\"kt\">Richard Cobden</span>, who led the campaign to repeal Britain's <span class=\"kt\">Corn Laws</span> (1846). The Corn Laws had imposed tariffs on imported grain to protect British landowners; their repeal opened the British market to cheap foreign grain."
+            "html": "Smith's ideas spread slowly. The biggest test was food. Britain's Corn Laws, passed in 1815, put a tariff on imported grain (\"corn\" meant grain) to keep grain prices high for Britain's landowners, who sat in Parliament."
           },
           {
             "type": "p",
-            "html": "But free trade served British interests specifically: Britain was the most industrially advanced nation, producing manufactured goods cheaper than any competitor. Free trade meant British manufactured goods could penetrate every market, while competitors could not yet protect their infant industries from British competition (hence Germany and the United States used protective tariffs while industrializing)."
+            "html": "In 1838 factory owners and merchants in Manchester started a campaign that became the Anti-Corn Law League, led by Richard Cobden and John Bright. Cheap bread, they argued, would help workers, and if Britain bought other countries' grain, those countries could afford to buy British cloth. Then, in 1845, a disease destroyed the potato crop in Ireland and brought famine. Prime Minister Robert Peel decided the Corn Laws had to go. In 1846 Parliament repealed them, and the fight split Peel's own party."
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">gold standard</span>, linking currencies to a fixed weight of gold, integrated global financial markets. Britain adopted the gold standard in 1821; most major economies joined by the 1870s–1890s. The gold standard made exchange rates stable and predictable, reducing the risk of international trade and investment. It also constrained government economic policy: governments could not print money to stimulate the economy without gold to back it, which meant deflationary pressure during economic downturns fell on workers (through wage cuts) rather than on creditors (through inflation). The gold standard was an international system that primarily served the interests of creditors and investors."
+            "html": "Britain kept going. By 1860 it had ended its tariffs on imported factory goods, keeping a few taxes, such as those on tea, sugar, and wine, mainly to raise money. So Smith's ideas were part of the reason for the change, but only part: manufacturers who wanted cheap food and open markets, and a famine, mattered too."
+          },
+          {
+            "type": "p",
+            "html": "Other countries followed, for a while. In 1860 Britain and France signed the Cobden-Chevalier Treaty, cutting tariffs on each other's goods, and in the 1860s a chain of similar treaties lowered tariffs across much of Western Europe. But not everyone kept going. From 1879 Germany put tariffs back on imported grain and iron to protect its farmers and factories, and the United States kept high tariffs on factory goods. Britain stayed with free trade. Western European countries had <em>begun</em> to abandon mercantilism, but not every country, and not for good."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Comparison",
-          "raw": "<p><strong>Comparison:</strong> Compare the economic arguments for free trade and protective tariffs. Who benefited from free trade in the 19th century context, and who benefited from protective tariffs? How does comparing Britain's advocacy for free trade with Germany and Japan's use of protective tariffs reveal the political dimension of economic ideology?</p>"
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Change, and its limits.</strong> By 1900, your trade row reads: Britain traded freely; much of Western Europe lowered tariffs in the 1860s. What carried on: Germany went back to tariffs from 1879, and the United States kept them.</p>"
         }
       },
       {
-        "number": "04",
-        "label": "Key Concept",
-        "heading": "Economic Power Without Armies: Imperialism Through Finance",
+        "number": "4",
+        "label": "Business, Part 1",
+        "heading": "New Tools for Big Business",
         "blocks": [
           {
             "type": "p",
-            "html": "<span class=\"kt\">Economic imperialism</span> extended industrial power without direct colonial rule, through loans, investment, and trade relationships that created dependency without formal annexation. Latin American governments, newly independent from Spain and Portugal but desperate for capital to build infrastructure, borrowed heavily from British banks in the 1820s–1830s. When they defaulted (as many did), British creditors demanded customs revenue as collateral, giving British financial institutions direct control over government finances. By 1900, <span class=\"kt\">British investment in Latin America</span> totaled £1 billion; British banks controlled Argentina's railroad system, Chilean copper mining, and Brazilian coffee exports."
+            "html": "Companies that sold shares to investors were not new. The Dutch East India Company (VOC) had sold shares in 1602 (Topic 4.5), and people bought and sold them in Amsterdam. But from 1720 to 1825, forming that kind of company in Britain usually took special permission from the government. Most businesses were owned by one family or a few partners, as Richard Arkwright's mill at Cromford was (Topic 5.3). If a partnership failed, each partner could lose his house and savings to pay its debts."
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Ottoman Empire</span> borrowed from European banks to modernize its military and infrastructure; by the 1870s, debt service consumed most of Ottoman government revenues, and the <span class=\"kt\">Ottoman Public Debt Administration</span> (1881), run by European creditors, directly administered Ottoman tax collection to ensure debt repayment. China's <span class=\"kt\">treaty port system</span>, imposed after the Opium Wars, gave foreign merchants <span class=\"kt\">extraterritorial rights</span> and control over treaty port trade."
+            "html": "Industry needed far more money than a family had. A railway or a steamship line cost more than a few partners could pay. Three new practices in banking and finance helped:"
           },
           {
             "type": "p",
-            "html": "These economic relationships, not formal colonialism, structured much of the world economy by 1900. Economic imperialism was more efficient than direct colonial administration: it extracted profits without the costs of administration and military occupation."
+            "html": "<strong>Limited liability.</strong> Laws of 1855 and 1856 let almost any group of seven or more people in Britain register a company whose owners could lose only the money they had put in, not everything they owned. This is <span class=\"kt\">limited liability</span>. France passed similar laws in 1863 and 1867. With less to lose, many more people with modest savings could invest."
+          },
+          {
+            "type": "p",
+            "html": "<strong>Stock markets.</strong> A <span class=\"kt\">stock market</span>, or stock exchange, is a place where people buy and sell shares, so an investor can get money back by selling shares to someone else, without waiting for the company to close. London had had a stock exchange since the 1700s. In a railway boom in the mid-1840s, crowds of British investors rushed to buy railway shares. An American print from 1886 shows the stock exchanges of eight cities, from New York and Chicago to London, Paris, Berlin, Hamburg, Frankfurt, and Brussels."
+          },
+          {
+            "type": "p",
+            "html": "<strong>Banks that worked across borders.</strong> Banks lent money to companies, changed one country's money into another's, and paid bills between ports thousands of miles apart."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p><strong>Argumentation:</strong> Make an argument about whether economic imperialism was fundamentally different from political imperialism, or whether it achieved the same results through different means. What specific evidence would you use to support the claim that economic relationships could be as coercive as military occupation?</p>"
+          "label": "AP Thinking, Making Connections",
+          "raw": "<p><strong>How one thing relates to another.</strong> Limited liability did not build a railway. It made investing less risky, so more people invested, so companies could raise more money. When you connect two developments, say <em>how</em>: one caused the other, made it possible, or answered it.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "Business, Part 2",
+        "heading": "Businesses That Crossed Borders",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "By the late 1800s, trade and production stretched around the world, and some businesses grew to match. A company that works in more than one country is a <span class=\"kt\">transnational business</span>."
+          },
+          {
+            "type": "p",
+            "html": "<strong>A bank.</strong> The Hongkong and Shanghai Banking Corporation, today called HSBC, opened in Hong Kong in March 1865. It was started by Thomas Sutherland, a Scot who worked there for a shipping company, with a committee of merchant firms, to give local businesses better banking for their trade. It opened in Shanghai a month later and in London that summer, and by 1900 it worked in 16 countries and territories. One of the firms on its first committee, Dent and Company, had grown rich trading opium into China, a trade Britain had forced China to accept by war. That is Unit 6."
+          },
+          {
+            "type": "p",
+            "html": "<strong>Soap and margarine.</strong> In England, William Lever began selling Sunlight Soap in 1884, made with oils from tropical plants such as coconut and palm kernels. By 1886 he had registered the Sunlight name in the United States, and from 1888 he built a factory town for his workers, Port Sunlight. Across the North Sea, in the Netherlands, the Jurgens and Van den Bergh families turned butter trading into margarine factories and sold to England."
+          },
+          {
+            "type": "p",
+            "html": "In 1929, after the years this unit covers, Lever's company and the Dutch margarine makers joined into one company, Unilever, based in both England and the Netherlands. It ran plantations and trading companies in British West Africa and the Belgian Congo. The big company the College Board names grew out of these nineteenth-century businesses."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Making Connections",
+          "raw": "<p><strong>Read the Key Concept as a chain.</strong> The College Board says global trade \"contributed to\" big transnational businesses, which \"relied on\" new banking and finance. HSBC is the chain in one company: trade between China and the world needed a bank, and the bank worked across borders.</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "Goods",
+        "heading": "Cheaper Goods, for Some",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Factories kept improving how they made things, so goods became more available, more affordable, and more varied. Machine-made cotton cloth (Topic 5.3) kept falling in price long after the first mills opened. Soap that grocers had once cut from long bars now came in wrapped bars with a brand name, like Sunlight, advertised to every household. Ships and railways (Topic 5.5) brought fruit, tea, and wheat from far away to city markets."
+          },
+          {
+            "type": "p",
+            "html": "A family's <span class=\"kt\">standard of living</span> is how well it lives: what it can afford to eat, wear, and buy. In Britain, historians who measure what wages could buy find that working families' standard of living rose very little from the 1780s to the 1850s, and grew much faster from about 1860 to 1900. But many city workers stayed poor (Topic 5.9), and many of the people who grew the cotton, palm oil, and tea did not share in the gains (Unit 6). The College Board's words are exact: standards of living rose \"for some.\""
+          },
+          {
+            "type": "p",
+            "html": "Put the three rows together. What changed: Britain, and for a time much of Western Europe, moved from mercantilism toward free trade; businesses grew bigger and crossed borders, relying on limited liability, stock markets, and banks; goods became cheaper, more plentiful, and more varied. What continued: companies that sold shares were older than industry; many countries kept or went back to tariffs; and the gains went to some people and not others."
+          },
+          {
+            "type": "p",
+            "html": "Not everyone gained from this new economy, and not everyone accepted it. Workers organized, reformers pushed for new laws, and some thinkers imagined a different system. That is Topic 5.8."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Continuity and Change",
+          "raw": "<p><strong>Four myths to drop.</strong> \"Adam Smith said governments should do nothing\": he wrote that government had three duties, defense, justice, and public works that no private person would build. \"Free trade won everywhere\": Germany and the United States kept or brought back tariffs. \"Companies that sell shares were invented in the 1800s\": the VOC sold shares in 1602. \"Industry made everyone richer\": the College Board says \"for some.\"</p>"
         }
       }
     ],
-    "takeaway": "Industrial capitalism created new financial institutions (corporations, investment banking, stock markets) that pooled capital for large-scale enterprise; promoted free trade ideology that served British industrial interests; integrated global markets through the gold standard; and extended economic power through debt, investment, and trade relationships that made formal colonialism unnecessary in many regions.",
+    "takeaway": "Between 1750 and 1900 the rules of the economy changed. Adam Smith's Wealth of Nations (1776) attacked mercantilism and argued for buying goods wherever they were cheapest. Partly persuaded by such ideas, partly pushed by manufacturers and by famine in Ireland, Britain repealed its Corn Laws in 1846 and by 1860 had ended its tariffs on imported factory goods; in the 1860s much of Western Europe lowered tariffs, though Germany went back to them from 1879 and the United States kept them. New practices in banking and finance, limited liability (1855 and 1856), stock markets, and banks, let businesses grow large and cross borders, like HSBC (1865) and Lever's Sunlight Soap (1884), which later became part of Unilever. Factories made goods cheaper and more varied, and living standards rose, much faster after about 1860, for some, not for all. Freer trade. Bigger business. Cheaper goods, for some.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
-        "num": "Q1",
-        "skill": "Causation",
-        "text": "Explain how limited liability corporations changed the scale of industrial investment. What specific mechanism did limited liability create, and why did it make large-scale industrial enterprise economically possible when unlimited liability had not?",
-        "placeholder": "Explain the mechanism of limited liability and how it changed industrial investment..."
+        "num": "01",
+        "skill": "Continuity and Change",
+        "text": "Using Sections 2 and 3, explain ONE way Britain's rules of trade changed between 1750 and 1860, and ONE thing about trade that did not change for every Western country by 1900. Use a detail from the reading for each.",
+        "placeholder": "Around 1750, Britain... By 1860... But..."
       },
       {
-        "num": "Q2",
-        "skill": "Comparison",
-        "text": "Compare Britain's free trade ideology with Germany and the United States' use of protective tariffs in the same period. Both claimed to support economic development. What does comparing these approaches reveal about the relationship between economic ideology and national interest?",
-        "placeholder": "Compare free trade and protective tariffs, who used each, and what does the comparison reveal?"
+        "num": "02",
+        "skill": "Making Connections",
+        "text": "Using Sections 4 and 5, choose ONE new practice in banking or finance (limited liability, stock markets, or banks) and explain how it relates to the growth of a business that crossed borders, such as HSBC or Lever's soap company.",
+        "placeholder": "Limited liability (or...) made it possible for... For example..."
       },
       {
-        "num": "Q3",
-        "skill": "Argumentation",
-        "text": "Construct an argument about whether economic imperialism (debt, investment, trade relationships) was as coercive as direct political imperialism. Use at least one specific example, Latin America, the Ottoman Empire, or China's treaty port system, to support your argument.",
-        "placeholder": "State your claim and support it with at least one specific example..."
+        "num": "03",
+        "skill": "Continuity and Change",
+        "text": "Using Section 6, explain ONE way the goods people could buy changed by 1900, and why the College Board says standards of living rose \"for some.\" Use a detail from the reading for each.",
+        "placeholder": "By 1900, goods such as... But living standards rose for some because..."
       }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 5.7, Economic Developments and Innovations",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true
   },
   "5.8": {
     "topicKey": "5.8",
