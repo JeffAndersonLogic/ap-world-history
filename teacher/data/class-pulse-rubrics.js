@@ -133,14 +133,12 @@
           N: 'Gives no advantage beyond "they had guns" or "it helped them", or states one wrongly (for example, that opponents had no guns at all when they did, or that gunpowder made an empire unbeatable everywhere).'
         }
       ],
-      // A conflict with the CED, recorded rather than repaired here: the prompt calls the
-      // Safavid and Mughal conflict and Songhai's conflict with Morocco the rivalries "the
-      // College Board names", but the CED lists them as illustrative examples, which it says
-      // are not required. The required content, KC-4.3.III.i, is that political and
-      // religious disputes led to rivalries between states. Criterion 2 therefore accepts
-      // the Ottoman and Safavid rivalry, which the CED does name (KC-4.1.VI.ii), and puts
-      // any other accurate rivalry at Partly there only because the prompt asked for one of
-      // its two. The prompt's wording is Jeff's call.
+      // The prompt calls the Safavid and Mughal conflict and Songhai's conflict with Morocco
+      // the rivalries "the College Board names", but the CED lists them as illustrative
+      // examples, which it says are not required. The required content, KC-4.3.III.i, is
+      // that political and religious disputes led to rivalries between states. So, by Jeff's
+      // decision of 2026-10-29, criterion 2 accepts any accurate rivalry between states from
+      // 1450 to 1750, the CED's examples included, and the prompt's wording is unchanged.
       cp2: [
         {
           criterion: 'Name at least two land-based empires and describe specific regions they conquered.',
@@ -150,9 +148,9 @@
         },
         {
           criterion: 'Name one CED state rivalry and identify the states involved.',
-          D: 'Names a rivalry the CED names and identifies both states: the Safavid and Mughal conflict, Songhai\'s conflict with Morocco, or the Ottoman and Safavid rivalry (named in the CED at KC-4.1.VI.ii). This criterion asks for identification, so the accurate pairing is enough.',
-          P: 'Names one of those rivalries with only one of its states correctly identified, describes it accurately without naming the states (for example, "the Persian empire and the Indian empire"), or names a different accurate rivalry between states from 1450 to 1750 that the prompt did not ask for.',
-          N: 'Names no rivalry, gets the states wrong (for example, Songhai against the Ottomans), or names two states that were not rivals.'
+          D: 'Names an accurate rivalry between states from 1450 to 1750 and identifies both states. The CED\'s examples (the Safavid and Mughal conflict, Songhai\'s conflict with Morocco) and the Ottoman and Safavid rivalry are the usual choices, and any other accurate rivalry counts the same (for example, the Ottomans and the Habsburgs). This criterion asks for identification, so the accurate pairing is enough.',
+          P: 'Names a rivalry with only one of its states correctly identified, or describes an accurate rivalry without naming the states (for example, "the Persian empire and the Indian empire").',
+          N: 'Names no rivalry, gets the states wrong (for example, Songhai against the Ottomans), names two states that were not rivals (for example, the Ottomans and the Mughals), or names a rivalry from outside 1450 to 1750.'
         },
         {
           criterion: 'Explain how a political or religious dispute helped produce or intensify the conflict.',
