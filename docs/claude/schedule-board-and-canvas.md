@@ -159,15 +159,17 @@ resized web derivatives live in `assets/logos/`: `behistorical-wordmark.png`,
 `behistorical-ap-world.png`, and `behistorical-globe.png`.
 
 `assets/css/behistorical-brand-lock.css` applies the same wordmark to shared
-headers. The homepage uses the full AP World History lockup. Dark surfaces use a
-warm-paper backing so the supplied dark lettering stays readable.
+headers. The homepage uses the full AP World History lockup. Dark surfaces use light ivory lettering with no backing; the bronze globe stays
+unchanged. `behistorical-wordmark-light.svg` applies a display filter to the original
+artwork and preserves the unfiltered globe. Its raster export is
+`behistorical-wordmark-on-dark.png`. Light surfaces retain the original dark mark.
 
 Canvas still takes PNG images because it strips site styles. Run
 `node scripts/build-wordmark.js` to copy the canonical transparent mark to
-`behistorical-wordmark-dark.png`, and the warm-paper variant
-`behistorical-wordmark-on-paper.png` to `behistorical-wordmark-light.png`.
+`behistorical-wordmark-dark.png`, and the transparent light variant
+`behistorical-wordmark-on-dark.png` to `behistorical-wordmark-light.png`.
 `--check` fails if either alias drifts. No webfont or browser is needed.
-Use the paper-backed light alias on a dark Canvas masthead.
+Use the transparent light alias on a dark Canvas masthead.
 
 GitHub Pages serves these images from `main`; publish the files before pasting
 an event that uses them.

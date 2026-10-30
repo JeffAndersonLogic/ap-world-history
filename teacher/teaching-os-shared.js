@@ -10,7 +10,7 @@ const bhBrandFavicon=document.createElement('link');bhBrandFavicon.rel='icon';bh
 function bhInstallBrand(){
   const host=document.querySelector('.appbar .brand');if(!host)return;
   const mark=document.createElement('a');mark.className='bh-brand-link bh-cockpit-brand';mark.href=new URL('index.html',bhBrandBase);mark.setAttribute('aria-label','BeHistorical home');
-  const img=document.createElement('img');img.src=new URL('assets/logos/behistorical-wordmark.png',bhBrandBase);img.alt='BeHistorical';img.width=1428;img.height=220;mark.appendChild(img);
+  const img=document.createElement('img');img.src=new URL('assets/logos/behistorical-wordmark-on-dark.png',bhBrandBase);img.alt='BeHistorical';img.width=1428;img.height=220;mark.appendChild(img);
   host.replaceWith(mark);
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',bhInstallBrand,{once:true});else bhInstallBrand();

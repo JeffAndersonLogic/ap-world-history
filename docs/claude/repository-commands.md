@@ -35,7 +35,7 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/build-module-art.js`, rebuild the local module-card and per-slot fallback artwork.
 - `node scripts/build-announcements.js`, rebuild the classroom announcements board from `assets/data/announcements-schedule.js`, pulling each day's learning targets, success criteria and module list out of that topic's lesson data file. Writes the generated `assets/data/announcements.js`, never edit that file by hand. `--check` fails on drift, which is what the offline suite runs. See "Today's Required Modules" below.
 - `node scripts/build-wordmark.js`, copy the supplied canonical Globe O web artwork
-  to the Canvas light/dark PNG aliases. The light alias has a warm-paper backing.
+  to the Canvas light/dark PNG aliases. The light alias has ivory lettering and a transparent background.
   Offline and dependency-free; `--check` fails on drift. See "The wordmark in Canvas"
   in `docs/claude/schedule-board-and-canvas.md`.
 - `node scripts/build-canvas-events.js`, rebuild both paste-ready Canvas documents from the same schedule: the calendar events in `docs/canvas/calendar-events.md`, one per class day, and the assignment bodies in `docs/canvas/assignments.md`, one per topic. `--check` fails on drift in either. One generator, because the two objects share the masthead, the overview, the targets, the criteria, the cohort seals and the row markup, and two scripts would mean two copies of all of it. See "Green and Silver" and "Today's Required Modules" below.

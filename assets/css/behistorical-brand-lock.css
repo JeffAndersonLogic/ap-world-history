@@ -1,31 +1,25 @@
-/* Official supplied Globe O artwork, October 2026. Keep heading/link text accessible. */
+/* Official supplied Globe O artwork. Keep heading and link text accessible. */
 body .logo-title{display:block!important;width:min(620px,100%)!important;height:clamp(44px,8vw,104px)!important;margin:0 auto!important;padding:0!important;background:url('../logos/behistorical-wordmark.png') center/contain no-repeat!important;font-size:0!important;line-height:0!important;text-shadow:none!important;border:0!important}
 body .logo-title *{font-size:0!important;line-height:0!important}
 body .logo-title .globe-o{display:inline!important;width:0!important;height:0!important;margin:0!important;border:0!important;background:none!important}
 body .logo-title::before,body .logo-title::after{content:none!important}
 body .hero .logo-home-link,body .hero>.logo-frame,body .brand-hero>.logo-frame{display:none!important}
-body .brand-mini{display:inline-flex!important;flex:0 1 240px;width:240px;max-width:100%;height:44px;min-height:44px;padding:8px 12px;box-sizing:border-box;border:1px solid rgba(140,90,43,.22);border-radius:7px;background:#f5f0e7 url('../logos/behistorical-wordmark.png') center/calc(100% - 24px) auto no-repeat;font-size:0!important;line-height:0!important}
+body .brand-mini{display:inline-flex!important;flex:0 1 240px;width:240px;max-width:100%;height:44px;min-height:44px;padding:8px 0;box-sizing:border-box;border:0;border-radius:0;background:transparent url('../logos/behistorical-wordmark.png') center/contain no-repeat;font-size:0!important;line-height:0!important}
 body .brand-mini img,body .brand-mini span{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap}
 body .brand-mini:focus-visible,body .bh-brand-link:focus-visible{outline:3px solid #c9a46a;outline-offset:4px}
-body .footer-brand,body .masthead-wordmark{display:block;width:min(260px,100%);height:48px;margin-inline:auto;font-size:0!important;line-height:0!important;border-radius:6px;background:#f5f0e7 url('../logos/behistorical-wordmark.png') center/calc(100% - 24px) auto no-repeat}
+body .top-nav .brand-mini{background-image:url('../logos/behistorical-wordmark-on-dark.png')}
+body .footer-brand,body .masthead-wordmark{display:block;width:min(260px,100%);height:48px;margin-inline:auto;font-size:0!important;line-height:0!important;background:transparent url('../logos/behistorical-wordmark-on-dark.png') center/contain no-repeat}
 body .masthead-wordmark{width:220px;height:36px;margin:0}
-body .wordmark-big.logo-title{width:min(980px,88vw)!important;height:clamp(80px,13vw,170px)!important;background-color:#f5f0e7!important;border-radius:12px;padding:20px!important;background-size:94% auto!important}
-.bh-brand-link{display:inline-block;max-width:100%;border-radius:6px;background:#f5f0e7;padding:9px 14px;box-sizing:border-box;line-height:0;text-decoration:none}
+body .wordmark-big.logo-title{width:min(980px,88vw)!important;height:clamp(80px,13vw,170px)!important;background:transparent url('../logos/behistorical-wordmark-on-dark.png') center/94% auto no-repeat!important}
+.bh-brand-link{display:inline-block;max-width:100%;background:transparent;padding:0;box-sizing:border-box;line-height:0;text-decoration:none}
 .bh-brand-link img{display:block;width:220px;max-width:100%;height:auto}
-.bh-reading-brand{display:block;width:fit-content;margin:0 0 22px}
-.bh-cockpit-brand{display:flex;flex:0 0 174px;width:174px;height:36px;align-items:center;padding:6px 10px}
+.bh-cockpit-brand{display:flex;flex:0 0 174px;width:174px;height:36px;align-items:center}
 .bh-cockpit-brand img{width:154px}
-.bh-student-brand{display:flex;align-items:center;width:158px;flex:0 0 158px;padding:6px 9px}
+.bh-student-brand{display:flex;align-items:center;width:158px;flex:0 0 158px}
 .bh-student-brand img{width:140px}
 .bh-home-logo{margin:4px auto 26px;max-width:900px}
 .bh-home-logo img{display:block;width:100%;height:auto}
-@media(max-width:700px){body .top-nav{flex-wrap:wrap;gap:8px 22px;padding:24px 16px 12px;font-size:.7rem;letter-spacing:.14em}body .brand-hero{padding:20px 18px 28px}body .brand-mini{flex-basis:auto;width:min(240px,100%)}.bh-home-logo{margin-bottom:22px}.bh-cockpit-brand{flex-basis:122px;width:122px;height:32px;padding:5px 7px}.bh-student-brand{width:112px;flex-basis:112px;padding:5px 7px}}
-@media print{.bh-brand-link{background:#f5f0e7;print-color-adjust:exact}}
-
-
-/* Reading surfaces share the same artwork without changing generated content. */
-.module-header::before,.dr-masthead>.dr-wrap::before,.eb-cover>.dr-wrap::before{content:"";display:block;width:min(250px,100%);height:45px;margin:0 0 20px;border-radius:6px;background:#f5f0e7 url('../logos/behistorical-wordmark.png') center/calc(100% - 24px) auto no-repeat}
-
-body .cover .brandline{width:360px;height:65px;max-width:100%;margin:0 0 24px;padding:8px 14px;background:#f5f0e7 url('../logos/behistorical-wordmark.png') center/calc(100% - 28px) auto no-repeat;border-radius:6px;font-size:0;line-height:0}
-
+.module-header::before,.dr-masthead>.dr-wrap::before,.eb-cover>.dr-wrap::before{content:"";display:block;width:min(250px,100%);height:45px;margin:0 0 20px;background:transparent url('../logos/behistorical-wordmark-on-dark.png') left center/contain no-repeat}
+body .cover .brandline{width:360px;height:65px;max-width:100%;margin:0 0 24px;padding:0;background:transparent url('../logos/behistorical-wordmark-on-dark.png') left center/contain no-repeat;font-size:0;line-height:0}
+@media(max-width:700px){body .top-nav{flex-wrap:wrap;gap:8px 22px;padding:24px 16px 12px;font-size:.7rem;letter-spacing:.14em}body .brand-hero{padding:20px 18px 28px}body .brand-mini{flex-basis:auto;width:min(240px,100%)}.bh-home-logo{margin-bottom:22px}.bh-cockpit-brand{flex-basis:122px;width:122px;height:32px}.bh-student-brand{width:112px;flex-basis:112px}}
 @media(max-width:400px){body .eb-cover h1{font-size:1.7rem;overflow-wrap:normal;word-break:normal}}
