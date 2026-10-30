@@ -12,7 +12,10 @@
  *
  * The standard is Jeff's, set on 2026-10-29 from his first calibration labels:
  *   - naming the right thing without explaining it is Not yet;
- *   - Demonstrating needs the course's key term, not only a description of it;
+ *   - Demonstrating needs the course's key term, not only a description of it: the term
+ *     for the thing the criterion asks about, not every term tied to the topic, because
+ *     "students just need to effectively answer the question, not show that they know
+ *     everything associated with the topic" (Jeff, 2026-10-30);
  *   - each technology, example or person has to come with what it did;
  *   - an answer that sits between two levels takes the lower one.
  *
@@ -45,7 +48,11 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
   'use strict';
 
-  const VERSION = '2026-10-29-draft-1';
+  const VERSION = '2026-10-30-draft-2';
+  // Versions earlier labels and readings were made under, kept so a recording can say
+  // which rubric it belongs to. draft-1 to draft-2 (2026-10-30): rule 3 states Jeff's
+  // meaning of the key-term rule for every topic.
+  const PREVIOUS_VERSIONS = ['2026-10-29-draft-1'];
 
   const LEVELS = {
     D: 'Demonstrating: the answer does everything this criterion asks, accurately and specifically, using the course\'s key term for the idea. Where the criterion asks to explain or connect, it says how or why, not just that.',
@@ -57,7 +64,7 @@
   const RULES = [
     'Judge each criterion on its own. One answer can be Demonstrating on one criterion and Not yet on another; do not let the whole answer\'s impression decide every criterion.',
     'Naming the right thing without explaining it is Not yet, not Partly there.',
-    'Demonstrating needs the course\'s key term (for example monsoon, compass, astrolabe). An accurate description without the term earns at most Partly there. Spelling of the term never matters.',
+    'Demonstrating needs the course\'s key term for the thing the criterion asks about (for example monsoon, compass, astrolabe), not every term tied to the topic: the student needs to answer the question effectively, not show everything they know. Terms in a descriptor\'s examples are illustrations, not requirements, and a missing term lowers only the criterion that asks for it. An accurate description without the term earns at most Partly there. Spelling of the term never matters.',
     'Each technology, example or person the criterion asks for has to come with what it did. A bare list is Not yet.',
     'Spelling, grammar and sentence style never lower a level.',
     'Accept any historically accurate example, not only the ones the lesson used.',
@@ -70,8 +77,9 @@
   // Most disagreements between the three readers came from these five questions, not
   // from the history: what counts as the key term, when the tie rule applies, unfinished
   // answers, self-corrections, and everyday place names.
+  // The first of them, what counts as the key term, became course-wide rule 3 on
+  // 2026-10-30 when Jeff confirmed it; the other four stay Unit 3's own.
   const UNIT3_RULES = [
-    'The key term a criterion needs is the term for the thing that criterion asks about: the weapon, the system, the religious group, the building, the method. Terms in a descriptor\'s examples are illustrations, not requirements, and a key term missing from one criterion never lowers another.',
     'Take the lower level only when the descriptors of both levels fit the answer equally well. An answer that matches one level\'s descriptor gets that level, even when it is brief.',
     'When a student says the answer is unfinished, judge each criterion the written part already completes. Use Can\'t tell only for criteria the unfinished part would have covered, or that stop mid-sentence.',
     'When a student corrects a mistake in the same answer, judge the corrected statement.',
@@ -334,5 +342,5 @@
     }
   };
 
-  return { VERSION, LEVELS, RULES, TOPICS };
+  return { VERSION, PREVIOUS_VERSIONS, LEVELS, RULES, TOPICS };
 });

@@ -139,7 +139,9 @@ function checkBlindSet(set) {
     for (const [id, rec] of Object.entries(byCase)) {
       const row = CALIB.rows.find(r => r.id === id);
       assert.ok(row && READERS.topicOf(id) === '2.3', id + ' is a known calibration case');
-      assert.equal(rec.rubricVersion, E.contractFor(MAP, '2.3', row.checkpoint, R).rubricVersion, id + ' was read under the current rubric');
+      // A recording keeps the rubric it was read under: the current one or an earlier one.
+      const now = E.contractFor(MAP, '2.3', row.checkpoint, R).rubricVersion;
+      assert.ok(rec.rubricVersion === now || R.PREVIOUS_VERSIONS.includes(rec.rubricVersion), id + ' names the rubric it was read under');
       E.validateOutput(rec, E.contractFor(MAP, '2.3', row.checkpoint, R), row.text);
       recorded++;
     }
