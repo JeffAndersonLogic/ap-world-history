@@ -147,12 +147,16 @@
 
     function buildTitleCard(day, now) {
       var s = slide('slide-title-card');
-      s.appendChild(eyebrow(DATA.settings.courseName || 'AP World History'));
 
-      var mark = el('div', 'wordmark-big');
-      mark.innerHTML =
-        'Be<span class="hero-h">H</span>ist<span class="globe-o" role="img" aria-label="o as a globe">o</span>rical';
-      mark.classList.add('logo-title');
+      // The supplied lockup, light lettering for the dark board. It already
+      // says AP World History, so the title card carries no separate eyebrow.
+      var mark = el('div', 'title-card-logo');
+      var logo = document.createElement('img');
+      logo.src = 'assets/logos/behistorical-ap-world-on-dark.png';
+      logo.alt = 'BeHistorical, AP World History';
+      logo.width = 1636;
+      logo.height = 305;
+      mark.appendChild(logo);
       s.appendChild(mark);
 
       s.appendChild(el('div', 'title-card-day',

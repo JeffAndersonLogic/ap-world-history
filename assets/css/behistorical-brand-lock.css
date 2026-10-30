@@ -10,7 +10,6 @@ body .brand-mini:focus-visible,body .bh-brand-link:focus-visible{outline:3px sol
 body .top-nav .brand-mini{background-image:url('../logos/behistorical-wordmark-on-dark.png')}
 body .footer-brand,body .masthead-wordmark{display:block;width:min(260px,100%);height:48px;margin-inline:auto;font-size:0!important;line-height:0!important;background:transparent url('../logos/behistorical-wordmark-on-dark.png') center/contain no-repeat}
 body .masthead-wordmark{width:220px;height:36px;margin:0}
-body .wordmark-big.logo-title{width:min(980px,88vw)!important;height:clamp(80px,13vw,170px)!important;background:transparent url('../logos/behistorical-wordmark-on-dark.png') center/94% auto no-repeat!important}
 .bh-brand-link{display:inline-block;max-width:100%;background:transparent;padding:0;box-sizing:border-box;line-height:0;text-decoration:none}
 .bh-brand-link img{display:block;width:220px;max-width:100%;height:auto}
 .bh-cockpit-brand{display:flex;flex:0 0 174px;width:174px;height:36px;align-items:center}

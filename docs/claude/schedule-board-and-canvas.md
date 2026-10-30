@@ -171,5 +171,9 @@ Canvas still takes PNG images because it strips site styles. Run
 `--check` fails if either alias drifts. No webfont or browser is needed.
 Use the transparent light alias on a dark Canvas masthead.
 
+The classroom board's title card shows the full AP World History lockup, as the
+homepage does, in its light-lettered form for the dark board:
+`behistorical-ap-world-on-dark.png`, rendered by `node scripts/build-logo-on-dark.js`.
+
 GitHub Pages serves these images from `main`; publish the files before pasting
 an event that uses them.

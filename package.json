@@ -17,6 +17,7 @@
     "check:canvas": "node scripts/verify-canvas-check.js",
     "build:maps": "node scripts/build-instructional-maps.js",
     "build:art": "node scripts/build-module-art.js",
+    "build:logo-on-dark": "node scripts/build-logo-on-dark.js",
     "build:announcements": "node scripts/build-announcements.js",
     "build:skills-map": "node scripts/build-skills-map.js",
     "build:skills-lens": "node scripts/build-skills-lens.js",

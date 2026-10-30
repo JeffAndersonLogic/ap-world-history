@@ -161,18 +161,11 @@ body::before{
   content:""; flex:0 0 auto;
   width:clamp(40px,5vw,110px); height:1px; background:var(--hairline);
 }
-.wordmark-big{
-  font-family:var(--serif-title); font-weight:900;
-  font-size:clamp(2.6rem,7vw,8.4rem); line-height:.9;
-  letter-spacing:-.055em; color:var(--warm-paper);
-  display:flex; align-items:center; justify-content:center; white-space:nowrap;
-  margin:0 0 clamp(8px,1.4vh,22px);
-  text-shadow:0 3px 0 rgba(140,90,43,.35);
+.title-card-logo{
+  width:min(1180px,82vw); max-width:calc(26vh * 1636 / 305);
+  margin:0 auto clamp(4px,1vh,16px);
 }
-.wordmark-big .hero-h{
-  display:inline-block; font-size:1.15em; line-height:.78;
-  margin:0 -.015em 0 .005em; letter-spacing:-.055em; transform:translateY(.015em);
-}
+.title-card-logo img{display:block; width:100%; height:auto}
 .title-card-day{
   font-family:var(--ui); font-weight:900;
   font-size:clamp(1rem,2.1vw,2.6rem);
@@ -734,9 +727,12 @@ body::before{
     background:linear-gradient(180deg,#1e2122,#191b1c);
     padding:14px 20px;
   }
-  .masthead-wordmark{font-size:1.25rem}
-  .masthead-course{font-size:.6rem; letter-spacing:.22em}
-  .masthead-brand img{width:42px; height:42px}
+  /* The wordmark already carries the globe, and the full lockup sits just
+     below on the title card, so the phone masthead drops the separate globe
+     and keeps the clock on screen. */
+  body .masthead .masthead-wordmark{width:150px; height:24px}
+  .masthead-course{font-size:.56rem; letter-spacing:.18em}
+  .masthead-brand img{display:none}
   .clock-time{font-size:1.35rem}
   .clock-date{font-size:.62rem; letter-spacing:.1em}
 
@@ -759,7 +755,7 @@ body::before{
   .slide-title-card .slide-eyebrow{justify-content:flex-start}
   .slide-title-card .slide-eyebrow::before{display:none}
   .slide-title-card .slide-eyebrow::after{flex:1 1 auto; width:auto}
-  .wordmark-big{display:none}
+  .title-card-logo{width:100%; max-width:440px; margin:0 0 18px}
   .title-card-day{font-size:.95rem; letter-spacing:.2em; margin:0}
   .title-card-topic{font-size:2rem; margin:10px 0 0; max-width:none; text-align:left}
   .title-card-unit{font-size:.68rem; margin-top:12px}
