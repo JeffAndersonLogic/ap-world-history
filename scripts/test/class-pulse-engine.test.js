@@ -114,6 +114,10 @@ function checkBlindSet(set) {
   const drifted = JSON.parse(JSON.stringify(R));
   drifted.TOPICS['2.3'].cp1[0].criterion += ' (edited)';
   assert.throws(() => E.contractFor(MAP, '2.3', 'cp1', drifted), /does not match its criteria/);
+  assert.deepEqual(E.contractFor(MAP, '2.3', 'cp1', R).rules, R.RULES, 'a topic without clarifications gets the course-wide rules only');
+  for (const key of ['3.1', '3.2', '3.3', '3.4']) {
+    assert.deepEqual(E.contractFor(MAP, key, 'cp2', R).rules, R.RULES.concat(R.TOPICS[key].rules), key + ' adds its own clarifications after the course-wide rules');
+  }
   const revised = JSON.parse(JSON.stringify(R));
   revised.TOPICS['3.1'].revision = 2;
   assert.equal(E.contractFor(MAP, '3.1', 'cp1', revised).rubricVersion, R.VERSION + '+3.1.r2', 'a revised topic carries its own revision');
@@ -219,6 +223,8 @@ function checkBlindSet(set) {
       m => { const d = JSON.parse(JSON.stringify(R)); d.TOPICS['2.3'].cp1[0].criterion += ' (edited)'; assert.throws(() => m.contractFor(MAP, '2.3', 'cp1', d), /does not match/); }],
     ['accepts invented quotes', "if (r.evidence.some(q => !text.includes(q))) throw new Error('Evidence quote absent from response');", '',
       m => { const bad = goodReply(cp, text); bad.criteria[0].evidence = ['Invented quote']; assert.throws(() => m.validateOutput(bad, cp, text)); }],
+    ['drops a topic\'s own clarifications', "contract.rules = [...(rubrics.RULES || []), ...((own && own.rules) || [])];", 'contract.rules = [...(rubrics.RULES || [])];',
+      m => assert.deepEqual(m.contractFor(MAP, '3.1', 'cp1', R).rules, R.RULES.concat(R.TOPICS['3.1'].rules))],
     ['a blind answer carries a level', null, null,
       () => { const leaked = JSON.parse(JSON.stringify(U3)); leaked.rows[7].level = 'DPN'; checkBlindSet(leaked); }],
     ['sends the response key', 'response: { text: row.text }', 'response: { text: row.text, key: row.key }',

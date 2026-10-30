@@ -95,7 +95,9 @@
       const revision = rubrics.TOPICS && rubrics.TOPICS[topicKey] && rubrics.TOPICS[topicKey].revision;
       contract.rubricVersion = rubrics.VERSION + (revision ? '+' + topicKey + '.r' + revision : '');
       contract.levels = { ...rubrics.LEVELS };
-      contract.rules = [...(rubrics.RULES || [])];
+      // A topic can add its own clarifications after the course-wide rules.
+      const own = rubrics.TOPICS && rubrics.TOPICS[topicKey];
+      contract.rules = [...(rubrics.RULES || []), ...((own && own.rules) || [])];
     }
     if (note) contract.coverageNote = note;
     return contract;

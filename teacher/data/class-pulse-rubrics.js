@@ -66,6 +66,19 @@
     'When an answer sits between two levels, choose the lower one and say why in the reason.'
   ];
 
+  // Clarifications for Topics 3.1 to 3.4, from the first cross-check round (2026-10-30).
+  // Most disagreements between the three readers came from these five questions, not
+  // from the history: what counts as the key term, when the tie rule applies, unfinished
+  // answers, self-corrections, and everyday place names.
+  const UNIT3_RULES = [
+    'The key term a criterion needs is the term for the thing that criterion asks about: the weapon, the system, the religious group, the building, the method. Terms in a descriptor\'s examples are illustrations, not requirements, and a key term missing from one criterion never lowers another.',
+    'Take the lower level only when the descriptors of both levels fit the answer equally well. An answer that matches one level\'s descriptor gets that level, even when it is brief.',
+    'When a student says the answer is unfinished, judge each criterion the written part already completes. Use Can\'t tell only for criteria the unfinished part would have covered, or that stop mid-sentence.',
+    'When a student corrects a mistake in the same answer, judge the corrected statement.',
+    'An accurate everyday or modern name for a place counts (Turkey for Anatolia, Japan for Tokugawa Japan, Iran for Safavid Persia), as long as the criterion\'s pairing is right. Naming the states in a rivalry still needs the states themselves.'
+  ];
+  const UNIT3_CHANGE = 'After the first cross-check round: five clarifications every Unit 3 topic now follows (what counts as the key term, when a tie goes to the lower level, unfinished answers, self-corrections, everyday place names), because most disagreements between the three readers came from those questions rather than from the history.';
+
   const TOPICS = {
     '2.3': {
       status: 'draft',
@@ -116,22 +129,25 @@
     // to rivalries between states.
     '3.1': {
       status: 'draft',
+      revision: 2,
+      rules: UNIT3_RULES,
+      changes: [{ date: '2026-10-30', text: UNIT3_CHANGE }, { date: '2026-10-30', text: 'Checkpoint 1: any accurate, specific change in fighting counts for criterion 1 (guns panicking war elephants, quickly trained musketeers replacing archers), and criterion 3 can show why the advantage decided the outcome through what happened. An answer that lists an empire, a weapon and a region it took is Partly there on criterion 2.' }],
       cp1: [
         {
           criterion: 'Name at least one specific gunpowder weapon and explain how it changed warfare.',
-          D: 'Names a gunpowder weapon by its key term (cannon, musket or another firearm) and explains how it changed fighting: for example, cannons could break stone walls that once held out for months, or muskets let quickly trained infantry kill armored or mounted fighters from a distance.',
+          D: 'Names a gunpowder weapon by its key term (cannon, musket or another firearm) and explains how it changed fighting: for example, cannons could break stone walls that once held out for months, muskets let quickly trained infantry kill armored or mounted fighters from a distance, or ordinary recruits could be trained quickly instead of skilled archers, or gunfire panicked war elephants. Any accurate, specific change counts.',
           P: 'Names a gunpowder weapon but says it changed warfare only in general terms ("made armies stronger", "more deadly"), or explains the change accurately without naming the weapon (for example, "metal tubes that fired iron balls broke down walls").',
           N: 'Names "gunpowder" or a weapon without explaining any change, names something that is not a gunpowder weapon (swords, crossbows, war elephants), or explains the change wrongly.'
         },
         {
           criterion: 'Connect the military technology to territorial expansion by at least one empire.',
           D: 'Names an empire and a specific place or region it took, and says how gunpowder weapons helped take it: for example, Ottoman cannons breaching the walls of Constantinople in 1453; Babur\'s cannons and muskets at Panipat in 1526 opening northern India to the Mughals; Ottoman guns at Chaldiran in 1514 and the eastern Anatolia that followed; Qing guns against the Zunghar Mongols in Central Asia.',
-          P: 'Names an empire and says it used gunpowder to expand without a specific place or event, or names a specific conquest without saying how gunpowder helped.',
+          P: 'Names an empire and says it used gunpowder to expand without a specific place or event, or names a specific conquest without saying how gunpowder helped. This includes an answer that only lists an empire, a gunpowder weapon and a region it took ("Mughals, cannons, conquered India").',
           N: 'Names no empire, names an empire with no link to gunpowder or expansion, or pairs them wrongly (for example, the Mughals taking Constantinople).'
         },
         {
           criterion: 'Explain what advantage gunpowder weapons gave empires over their opponents.',
-          D: 'Explains a specific advantage over a kind of opponent and why it decided the outcome: for example, walled cities and castles could no longer hold out against cannons; trained musket infantry and artillery beat cavalry armies or war elephants; only large, rich states could afford cannons and gunners, so smaller rivals fell behind.',
+          D: 'Explains a specific advantage over a kind of opponent and why it decided the outcome: for example, walled cities and castles could no longer hold out against cannons; trained musket infantry and artillery beat cavalry armies or war elephants (at Panipat the panicked elephants broke the Lodi army); only large, rich states could afford cannons and gunners, so smaller rivals fell behind. Why it decided the outcome can be shown by what happened ("walls that had held for centuries fell in days").',
           P: 'States an advantage without saying against whom or why it mattered (for example, "they could shoot from far away"), or names the opponent without the advantage.',
           N: 'Gives no advantage beyond "they had guns" or "it helped them", or states one wrongly (for example, that opponents had no guns at all when they did, or that gunpowder made an empire unbeatable everywhere).'
         }
@@ -169,16 +185,19 @@
     // and new tax-collection systems. Reasoning process: Comparison.
     '3.2': {
       status: 'draft',
+      revision: 2,
+      rules: UNIT3_RULES,
+      changes: [{ date: '2026-10-30', text: UNIT3_CHANGE }, { date: '2026-10-30', text: 'Checkpoint 1: Japan counts for Tokugawa Japan, and on criterion 2 the systems\' own names are the key terms; jagir and stipend are examples, not requirements.' }],
       cp1: [
         {
           criterion: 'Name both systems and the empire each belonged to.',
-          D: 'Names the mansabdar system with the Mughal Empire, and either the devshirme with the Ottoman Empire or salaried samurai with Tokugawa Japan. This criterion asks for identification, so the accurate pairings are enough.',
+          D: 'Names the mansabdar system with the Mughal Empire, and either the devshirme with the Ottoman Empire or salaried samurai with Tokugawa Japan ("Japan" counts). This criterion asks for identification, so the accurate pairings are enough.',
           P: 'Names both systems with the empire for only one, or describes both systems accurately without their names.',
           N: 'Names only one system, puts a system in the wrong empire, or names neither.'
         },
         {
           criterion: 'Give one similarity and one difference in how each made officials or soldiers depend on the ruler.',
-          D: 'Gives one accurate similarity and one accurate difference, each about dependence on the ruler, using the systems\' terms: for example, both held rank or pay that came from the ruler and could be taken away rather than inherited land; devshirme boys were taken from Christian families, converted and owned nothing but the sultan\'s favor, while mansabdars were often already powerful nobles, including Hindu Rajputs, given ranks and land revenue (jagirs) that were moved and not passed down; samurai were a hereditary class living on stipends.',
+          D: 'Gives one accurate similarity and one accurate difference, each about dependence on the ruler, using the systems\' terms (the systems\' own names are enough; jagir and stipend are examples, not requirements): for example, both held rank or pay that came from the ruler and could be taken away rather than inherited land; devshirme boys were taken from Christian families, converted and owned nothing but the sultan\'s favor, while mansabdars were often already powerful nobles, including Hindu Rajputs, given ranks and land revenue (jagirs) that were moved and not passed down; samurai were a hereditary class living on stipends.',
           P: 'Gives a similarity or a difference about dependence but not both, gives both where one is not about dependence (for example, only that they were in different places), or gives both accurately without the systems\' terms.',
           N: 'Gives neither, gives only "both were loyal" or "both were strong", or gets the systems wrong (for example, that devshirme recruits volunteered, or that mansabdars were enslaved).'
         },
@@ -218,6 +237,9 @@
     // Reasoning process: Continuity and Change.
     '3.3': {
       status: 'draft',
+      revision: 2,
+      rules: UNIT3_RULES,
+      changes: [{ date: '2026-10-30', text: UNIT3_CHANGE }, { date: '2026-10-30', text: 'Checkpoint 2: "made the split worse" is enough to show the split already existed.' }],
       cp1: [
         {
           criterion: 'Name a specific Protestant Reformation change.',
@@ -241,7 +263,7 @@
       cp2: [
         {
           criterion: 'Make clear that Ottoman-Safavid rivalry intensified an existing Sunni-Shia division rather than creating it.',
-          D: 'Identifies the Ottomans as Sunni and the Safavids as Shi\'a, and makes clear the rivalry deepened or worsened a split that already existed (for example, "an old split over who should lead after Muhammad", "made the existing split worse").',
+          D: 'Identifies the Ottomans as Sunni and the Safavids as Shi\'a, and makes clear the rivalry deepened or worsened a split that already existed (for example, "an old split over who should lead after Muhammad", "made the existing split worse"; "made the split worse" is enough, because worse means it already existed).',
           P: 'Makes clear the split already existed and grew worse but does not say which empire was which, or says which was which but only that they fought over it.',
           N: 'Says the rivalry created or started the split, reverses the sides (Ottomans as Shi\'a), only repeats the prompt\'s words, or never mentions the split.'
         },
@@ -266,10 +288,13 @@
     // as the CED does, so a sea-based empire is evidence there.
     '3.4': {
       status: 'draft',
+      revision: 2,
+      rules: UNIT3_RULES,
+      changes: [{ date: '2026-10-30', text: UNIT3_CHANGE }, { date: '2026-10-30', text: 'Checkpoint 1: the shared method can be named in plain words, and naming the kind of influence without how ("so they get more land") is Partly there on criterion 3.' }],
       cp1: [
         {
           criterion: 'Keep one shared comparison category.',
-          D: 'Compares both empires on the same method (for example, gunpowder conquest, recruiting officials or soldiers, collecting revenue, or religious or architectural legitimation), names the method, and states the similarity or difference.',
+          D: 'Compares both empires on the same method (for example, gunpowder conquest, recruiting officials or soldiers, collecting revenue, or religious or architectural legitimation), names the method (plain words are enough, such as "took people into government who would owe everything to the ruler"), and states the similarity or difference.',
           P: 'Uses the same method for both but never states the similarity or difference, describing each separately, or the method drifts partway through.',
           N: 'Uses a different method for each empire, writes about one empire only, or names no method.'
         },
@@ -282,7 +307,7 @@
         {
           criterion: 'Explain how the method increased territorial, political, economic, or cultural influence.',
           D: 'Explains how the method increased a named kind of influence for both empires: for example, cannons won Constantinople and with it control of trade between Europe and Asia; tax farming and zamindars paid for armies that held and extended territory.',
-          P: 'Explains it for one empire only, or says the method increased influence without how.',
+          P: 'Explains it for one empire only, or says the method increased influence without how, including naming the kind of influence without how ("so they get more land").',
           N: 'Does not explain how influence increased ("both got more powerful"), or explains it wrongly.'
         }
       ],
