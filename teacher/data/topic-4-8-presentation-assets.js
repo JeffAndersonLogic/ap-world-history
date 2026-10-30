@@ -10,8 +10,6 @@
  *
  * - 4-4/sugar-works-du-tertre-1667.jpg: a sugar works in the French Antilles,
  *   engraved by Sébastien Leclerc for Jean-Baptiste Du Tertre (Paris, 1667).
- * - 4-4/potosi-cieza-1553.jpg: the Cerro de Potosí, woodcut in Pedro Cieza de
- *   León, Crónica del Perú (Seville, 1553).
  * - 4-4/canoes-elmina-manfroe-1732.jpg: fishing canoes at Elmina, and canoes
  *   carrying enslaved people to ships at Manfroe, engraving in Churchill's
  *   Collection of Voyages, vol. 5 (London, 1732).
@@ -28,7 +26,14 @@
  *   and an Indian Woman, a Coyote, about 1715 to 1720, Hispanic Society of
  *   America LA2122.
  *
- * No AI-generated picture is used (no generator key was set). No picture of a
+ * One AI-generated picture, added 2026-10-29 at Jeff's request: the landing
+ * slide (26, frame-letterbox) shows "4-4/4.8 - Potosi.jpg", a Historical
+ * Reconstruction he uploaded (C2PA, generator mark bottom right, outside the
+ * crop) of the Cerro Rico with workers carrying ore, a llama train, smelting
+ * fires and a church below. It replaced the 1553 Cieza woodcut, which stays the
+ * real Potosí evidence in the 4.4 deck. Labeled from `ai: true`, never evidence.
+ *
+ * Otherwise no AI-generated picture is used (no generator key was set). No picture of a
  * Barbados sugar works from the 1600s was found, so the Barbados case file has
  * none. The question and landing slides open and close on real historical
  * objects, under Jeff's standard of 2026-10-14.
@@ -40,7 +45,7 @@ if(!T||!Array.isArray(T.slides))return;
 const by=id=>T.slides.find(s=>s.phase===id);
 const IMG='../assets/images/topics/';
 const SUGAR={url:IMG+'4-4/sugar-works-du-tertre-1667.jpg',alt:'Engraving of a Caribbean sugar works: a mill turned by animals under an open timber frame, a roofed boiling house where workers tend kettles over furnaces, workers carrying cane, domed huts of the enslaved workers, and palms',credit:'Sugar works in the French Antilles, engraved by Sébastien Leclerc for Jean-Baptiste Du Tertre, Paris, 1667 · Public domain',ratio:1.588,fit:'contain'};
-const POTOSI={url:IMG+'4-4/potosi-cieza-1553.jpg',alt:'Woodcut of a tall mountain labeled Cero de Potosí, with tiny figures climbing paths to mine entrances and a town with churches at its foot',credit:'Cerro de Potosí, woodcut in Pedro Cieza de León, Crónica del Perú, Seville, 1553 · Public domain',ratio:1.362,fit:'contain'};
+const POTOSI={ai:true,url:IMG+'4-4/'+encodeURIComponent('4.8 - Potosi.jpg'),alt:'Reconstruction of a huge bare mountain under storm clouds, its slopes cut with mine openings and lines of people climbing paths; in front, workers in ponchos carry heavy sacks down a trail, and below them a town of stone houses with a church tower, smoke from furnaces and a llama train',position:'50% 40%'};
 const CANOES={url:IMG+'4-4/canoes-elmina-manfroe-1732.jpg',alt:'Two engraved views of the Gold Coast: fishing canoes off Elmina, and canoes carrying enslaved people out to European ships at anchor',credit:'Fishing canoes at Elmina, and canoes carrying enslaved people to ships at Manfroe, engraving printed in London, 1732 · Public domain',ratio:1.178,position:'50% 80%'};
 const TEXEL={url:IMG+'4-5/battle-texel-van-de-velde-1687.jpg',alt:'Oil painting of a sea battle: a large Dutch warship with a gilded stern and torn sails in the middle, firing its cannons in clouds of white smoke, more warships on both sides, an English flag on the right, and a wrecked boat with men in the water at the lower right',credit:'The Gouden Leeuw at the Battle of Texel, 1673; a studio copy of Willem van de Velde the Younger\'s painting of 1687 · Het Scheepvaartmuseum · Public domain',ratio:2.053,position:'50% 50%'};
 const LOOM={url:IMG+'4-5/gengzhitu-1696-drawloom.jpg',alt:'Black-and-white print of a tall Chinese silk draw loom inside a house, with one weaver seated at the front and a second worker high on the frame working the pattern cords, a poem in Chinese above',credit:'Weaving on a draw loom, Pictures of Tilling and Weaving, China, printed 1696 · Metropolitan Museum of Art · Public domain',ratio:0.86,position:'50% 62%'};
@@ -56,5 +61,5 @@ const same=by('samework');
 if(same&&same.template&&Array.isArray(same.template.panels)){
   [LOOM,PALAMPORE,SPINNER].forEach((v,i)=>{if(same.template.panels[i])same.template.panels[i].visual=v;});
 }
-setTemplate('close',{visual:Object.assign({},POTOSI,{tagPos:'bl'})});
+setTemplate('close',{visual:POTOSI});
 })();

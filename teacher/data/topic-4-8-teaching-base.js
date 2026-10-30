@@ -622,7 +622,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'The picture: Potosí, the silver mountain, in a woodcut from Pedro Cieza de León\'s Crónica del Perú (Seville, 1553), with tiny figures climbing to the mine entrances (verified for 4.4). One mountain, a world economy, and the people sent to dig it.',
+          'The picture: Potosí, the silver mountain. Historical Reconstruction, AI generated; it sets the scene and is not evidence. The real source is the 1553 woodcut from Pedro Cieza de León\'s Crónica del Perú in the 4.4 deck. One mountain, a world economy, and the people sent to dig it: the men carrying ore stand for the mita, the forced labor draft from 4.4.',
           'The slide projects only the hand-off, on purpose: the answer to the learning objective is each student\'s own thesis (Checkpoint 2), so no finished thesis is projected. Ask for answers aloud; the listen-for line below is one defensible thesis for the teacher only.',
           'Hand off to Unit 5 in the words of the unit story map, and no further: Unit 5 is not taught here.'
         ],

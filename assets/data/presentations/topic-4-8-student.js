@@ -577,12 +577,10 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "subtitle": "By 1750 the oceans were joined and states were stronger than ever. That question is Unit 5.",
       "template": {
         "visual": {
-          "url": "../assets/images/topics/4-4/potosi-cieza-1553.jpg",
-          "alt": "Woodcut of a tall mountain labeled Cero de Potosí, with tiny figures climbing paths to mine entrances and a town with churches at its foot",
-          "credit": "Cerro de Potosí, woodcut in Pedro Cieza de León, Crónica del Perú, Seville, 1553 · Public domain",
-          "ratio": 1.362,
-          "fit": "contain",
-          "tagPos": "bl"
+          "ai": true,
+          "url": "../assets/images/topics/4-4/4.8%20-%20Potosi.jpg",
+          "alt": "Reconstruction of a huge bare mountain under storm clouds, its slopes cut with mine openings and lines of people climbing paths; in front, workers in ponchos carry heavy sacks down a trail, and below them a town of stone houses with a church tower, smoke from furnaces and a llama train",
+          "position": "50% 40%"
         }
       }
     }
