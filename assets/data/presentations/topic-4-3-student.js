@@ -526,11 +526,24 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "prompt",
+      "kind": "frame-stepin",
       "eyebrow": "Topic 4.3 · Landing Sentence",
       "title": "The ships carried more than anyone meant them to.",
       "subtitle": "What they carried remade populations on both sides of the ocean. Next: disease emptied the land of workers, and the new crops needed them. Who would do the work, and who would rule?",
-      "kc": "Unit 4: Learning Objective D"
+      "kc": "Unit 4: Learning Objective D",
+      "template": {
+        "visual": {
+          "ai": true,
+          "url": "../assets/images/topics/4-3/4.3%20-%20Landing%20Slide.jpg",
+          "alt": "Reconstruction of a Caribbean shore under storm clouds: a European ship at anchor, a horse led down a gangplank, pigs and a rat near crates and bundled sugarcane, and under a palm-leaf shelter beside a field of young maize, a woman tending a sick elder"
+        },
+        "lines": [
+          "You are on a Caribbean shore, a few years after the ships first came. Horses, pigs and a rat have come off the boats. Beside the maize, someone nurses a sick elder.",
+          "What the ships carried remade populations on both sides of the ocean."
+        ],
+        "question": "The ships carried more than anyone meant them to.",
+        "note": "Next: disease emptied the land of workers, and the new crops needed them. Who would do the work, and who would rule?"
+      }
     }
   ]
 };

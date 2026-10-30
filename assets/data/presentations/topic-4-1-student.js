@@ -182,28 +182,41 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "grid",
+      "kind": "annotated",
       "eyebrow": "New Ships",
       "title": "Three ships, three jobs.",
+      "footer": "Because each design solved a different problem: exploring, surviving long voyages, or carrying goods cheaply.",
       "kc": "KC-4.1.II.A",
-      "cards": [
-        {
-          "title": "CARAVEL · EXPLORE",
-          "text": "Small and light with lateen sails. Works against the wind and slips along unknown coasts."
+      "template": {
+        "imageWidth": 0.52,
+        "ratio": 2.10727969348659,
+        "visual": {
+          "url": "../assets/images/topics/4-1/4.1%20-%20Caravel%2C%20Carruck%2C%20and%20Fluyt.jpg",
+          "alt": "Reconstruction of three sailing ships side by side off a walled port town: a small caravel with three triangular sails, a tall carrack with square sails marked with red crosses, and a Dutch fluyt flying orange, white and blue flags",
+          "ai": true,
+          "cropBottom": 0.13
         },
-        {
-          "title": "CARRACK · HAUL",
-          "text": "Large, square sails and a lateen at the back. Room for months of food, water, cargo and guns."
-        },
-        {
-          "title": "FLUYT · MAKE IT PAY",
-          "text": "Dutch, around 1600. A big cargo with a small, cheap crew."
-        },
-        {
-          "title": "BECAUSE",
-          "text": "Each design solved a different problem: exploring, surviving long voyages, or carrying goods cheaply."
-        }
-      ]
+        "pins": [
+          {
+            "x": 0.19,
+            "y": 0.6,
+            "label": "Caravel · Explore",
+            "text": "Small and light with lateen sails. Works against the wind and slips along unknown coasts."
+          },
+          {
+            "x": 0.52,
+            "y": 0.53,
+            "label": "Carrack · Haul",
+            "text": "Large, square sails and a lateen at the back. Room for months of food, water, cargo and guns."
+          },
+          {
+            "x": 0.82,
+            "y": 0.58,
+            "label": "Fluyt · Make It Pay",
+            "text": "Dutch, around 1600. A big cargo with a small, cheap crew."
+          }
+        ]
+      }
     },
     {
       "kind": "story-steps",
@@ -248,29 +261,48 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "grid",
+      "kind": "frame-route",
       "eyebrow": "The Payoff",
       "title": "The ocean became a road both ways.",
-      "footer": "Why they sailed, and who paid, is Topic 4.2.",
+      "footer": "New patterns: goods and people move by sea between Europe and Asia, and across the Atlantic. Why they sailed is Topic 4.2.",
       "kc": "Unit 4: Learning Objective A",
-      "cards": [
-        {
-          "title": "1488 · DIAS",
-          "text": "Reaches the southern tip of Africa."
+      "template": {
+        "visual": {
+          "url": "../assets/images/topics/4-1/4.1%20-%20Columbus%20Dias%20da%20Gama.png",
+          "alt": "Map of the Atlantic and Indian Oceans with three dashed routes: Dias from Portugal down the African coast to the Cape of Good Hope and back, da Gama out into the Atlantic, around Africa, past Malindi to Calicut, and Columbus from Spain west to Guanahani in the Bahamas",
+          "credit": "BeHistorical instructional map",
+          "tagPos": "tr"
         },
-        {
-          "title": "1492 · COLUMBUS",
-          "text": "Rides the trade winds west and the westerlies home."
+        "ratio": 1.6,
+        "view": {
+          "x": 0.02,
+          "y": 0.122,
+          "w": 0.84,
+          "h": 0.826
         },
-        {
-          "title": "1497 TO 1498 · DA GAMA",
-          "text": "About three months out of sight of land, then around Africa to India."
-        },
-        {
-          "title": "NEW PATTERNS",
-          "text": "Goods and people move by sea between Europe and Asia, and across the Atlantic."
-        }
-      ]
+        "maxWidth": 720,
+        "path": false,
+        "stops": [
+          {
+            "name": "Dias · 1488",
+            "text": "Reaches the southern tip of Africa.",
+            "x": 0.499,
+            "y": 0.521
+          },
+          {
+            "name": "Da Gama · 1497 to 1498",
+            "text": "About three months out of sight of land, then around Africa to India.",
+            "x": 0.516,
+            "y": 0.723
+          },
+          {
+            "name": "Columbus · 1492",
+            "text": "Rides the trade winds west and the westerlies home.",
+            "x": 0.416,
+            "y": 0.351
+          }
+        ]
+      }
     },
     {
       "kind": "frame-letterbox",
@@ -401,11 +433,19 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "prompt",
+      "kind": "frame-question",
       "eyebrow": "Topic 4.1 · Landing Sentence",
       "title": "Borrowed tools. New ships. Learn the wind. Now the ocean goes both ways.",
       "subtitle": "Knowledge from the Classical, Islamic and Asian worlds, new ships and the Atlantic's wind wheel let European ships cross oceans and come home, and new routes for trade and travel opened. Next: who paid for the voyages, and what did they want?",
-      "kc": "Unit 4: Learning Objective A"
+      "kc": "Unit 4: Learning Objective A",
+      "template": {
+        "visual": {
+          "url": "../assets/images/topics/4-1/4.1%20-%20Landing%20Slide.jpg",
+          "alt": "Reconstruction of an older pilot on the deck of a sailing ship holding up a brass ring instrument to the sky, a young sailor beside him, a compass box and a chart on the table in front of them, mountains on the horizon",
+          "ai": true,
+          "position": "84% 50%"
+        }
+      }
     }
   ]
 };
