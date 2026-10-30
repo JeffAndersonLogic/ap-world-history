@@ -17,7 +17,12 @@
  *     level, a reply for another batch is refused, and what a chat app's copy
  *     button adds around the JSON is tolerated;
  *   - through the engine, a pasted rating shows as a model's proposal, and a failed
- *     one as Can't tell.
+ *     one as Can't tell;
+ *   - the check before copying flags what a student may write about themselves (a
+ *     name the course never uses, a family detail, a teacher, contact details, the
+ *     school, a signature) and not the history (Akbar, Zheng He, Malacca), and a
+ *     removed word never reaches the copied text while the reading still lands on
+ *     the student's own answer.
  *
  * Negative controls at the end load deliberately broken copies of the module and
  * prove the assertions that guard each promise go red.
@@ -34,6 +39,8 @@ const E = require(path.join(ROOT, 'teacher', 'class-pulse-engine.js'));
 const H = require(SOURCE);
 const R = require(path.join(ROOT, 'teacher', 'data', 'class-pulse-rubrics.js'));
 const U3 = require(path.join(ROOT, 'teacher', 'data', 'class-pulse-calibration-u3.js'));
+const T23 = require(path.join(ROOT, 'teacher', 'data', 'class-pulse-calibration.js'));
+const WORDS = new Set(require(path.join(ROOT, 'teacher', 'data', 'class-pulse-course-words.js')).words);
 
 const box = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(ROOT, 'assets', 'data', 'skills-map.js'), 'utf8'), box);
@@ -163,6 +170,45 @@ check('through the engine, a pasted rating is a proposal and a failed one is Can
   assert.ok(bad.criteria.every(c => c.category === 'U'));
 });
 
+// An invented answer with everything the check should catch, and history it should not.
+const PERSONAL_ANSWER = 'Akbar used the mansabdar system and Zheng He sailed to Malacca. My grandpa told me about the Mughals when we visited Agra. ' +
+  'Mr. Anderson said the jagirs moved. Jayden Smith helped me with this. Email me at jayden.s@zcs.k12.in.us\n- Jayden';
+
+check('the check flags what could identify a student, by kind', async (M) => {
+  const kinds = M.flagsFor(PERSONAL_ANSWER, WORDS).map(f => f.kind + ':' + f.span);
+  for (const want of ['personal:My grandpa told me about the Mughals when we visited Agra.', 'staff:Mr. Anderson', 'name:Jayden Smith', 'contact:jayden.s@zcs.k12.in.us', 'signature:Jayden']) {
+    assert.ok(kinds.includes(want), 'missing ' + want + ' in ' + JSON.stringify(kinds));
+  }
+});
+
+check('the check leaves the history alone', async (M) => {
+  const spans = M.flagsFor(PERSONAL_ANSWER, WORDS).map(f => f.span).join(' | ');
+  for (const h of ['Akbar', 'Zheng He', 'Malacca']) assert.ok(!spans.split(' | ').some(sp => sp === h || sp.startsWith(h + ' ')), h + ' was flagged');
+  const all = U3.rows.concat(T23.rows).map(r => r.text);
+  const noisy = all.filter(t => M.flagsFor(t, WORDS).length);
+  assert.ok(noisy.length <= 6, noisy.length + ' of ' + all.length + ' invented history answers were flagged; the check would cry wolf');
+});
+
+check('the course word list holds history names, not common first names', async () => {
+  for (const w of ['akbar', 'malacca', 'zheng', 'tokugawa', 'byzantine']) assert.ok(WORDS.has(w), w + ' missing');
+  for (const w of ['jayden', 'emma', 'olivia', 'liam', 'noah', 'aiden', 'grace', 'will']) assert.ok(!WORDS.has(w), w + ' would hide a student name');
+});
+
+check('a removed word never reaches the copied text, and the reading still lands on the answer', async (M) => {
+  const rows2 = rows.slice(0, 4).concat([{ key: 'X', text: PERSONAL_ANSWER, completionState: 'synthetic-complete' }]);
+  const [b] = await M.batches(contract, rows2, { size: 13 });
+  const a = b.answers.find(x => x.text === PERSONAL_ANSWER);
+  const copied = M.redact(b, new Map([[a.key, M.flagsFor(PERSONAL_ANSWER, WORDS).map(f => f.span)]]));
+  const text = M.promptFor(contract, copied);
+  for (const gone of ['grandpa', 'Anderson', 'Jayden', 'zcs.k12']) assert.ok(!text.includes(gone), gone + ' reached the copied text');
+  assert.ok(text.includes('Akbar used the mansabdar system'), 'the history stays');
+  const read = M.readReply(contract, copied, reply(copied, contract));
+  assert.equal(read.passed, copied.answers.length);
+  const engine = E.createEngine({ provider: M.provider([{ checkpoint: 'cp1', read }]) });
+  const out = await engine.analyzeMany(rows2, contract);
+  assert.equal(out[4].source, 'model-proposed', 'the reading of the trimmed copy lands on the student\'s original answer');
+});
+
 async function run(M, quiet) {
   const failed = [];
   for (const c of checks) {
@@ -184,7 +230,12 @@ async function run(M, quiet) {
     { name: 'the response key travels with the answer', from: "({ key: 'A' + String(i + j + 1).padStart(2, '0'), fp, text })", to: "({ key: 'A' + String(i + j + 1).padStart(2, '0'), fp, text, row: rowKeys.get(fp) })", extra: ['const seen = new Map();', 'const seen = new Map(), rowKeys = new Map();\n    for (const r of rows) rowKeys.set(await E.digest(r.text), r.key);'], expect: /no name, response key/ },
     { name: 'answers numbered in roster order', from: '.sort((a, b) => a[0].localeCompare(b[0]))', to: '', expect: /fingerprints, not the roster/ },
     { name: 'drafts are copied too', from: 'if (E.eligibility(r)) continue;', to: 'if (!r.text.trim()) continue;', expect: /unfinished and empty/ },
-    { name: 'replies skip the engine\'s validation', from: "return { key: a.key, text: a.text, status: 'passed', entry, output: E.validateOutput(entry, contract, a.text) };", to: "return { key: a.key, text: a.text, status: 'passed', entry, output: entry };", expect: /invented quote/ },
+    { name: 'replies skip the engine\'s validation', from: "try { return { ...base, status: 'passed', entry, output: E.validateOutput(entry, contract, a.text) }; }", to: "try { return { ...base, status: 'passed', entry, output: entry }; }", expect: /invented quote/ },
+    { name: 'family details go unflagged', from: 're: /\\b(?:my|our) (?:mom', to: 're: /\\b(?:zzqq) (?:mom', expect: /flags what could identify/ },
+    { name: 'every capitalized word counts as course vocabulary', from: 'const isKnown = (w, known) => {', to: 'const isKnown = (w, known) => { return true; ', expect: /flags what could identify/ },
+    { name: 'the first word of every run is skipped', from: 'judged = start && ws.length === 1 ? [] : ws;', to: 'judged = ws.slice(1);', expect: /flags what could identify/ },
+    { name: 'removing changes nothing in the copy', from: ".reduce((t, sp) => t.split(sp).join('[removed]'), a.text);", to: ';', extra: ['const text = spans.slice()', 'const text = a.text; void spans.slice()'], expect: /removed word never reaches/ },
+    { name: 'the reading is matched on the trimmed copy', from: "const base = { key: a.key, text: a.original || a.text, copied: a.text };", to: "const base = { key: a.key, text: a.text, copied: a.text };", expect: /lands on the answer/ },
     { name: 'a reply for another batch is accepted', from: "if (reply.batch != null && reply.batch !== batch.id) throw", to: 'if (false) throw', expect: /another batch/ },
     { name: 'the contract is left out of the copied text', from: "'\\n\\nCONTRACT (JSON):\\n' + JSON.stringify(contract) +", to: '', expect: /word for word/ }
   ];

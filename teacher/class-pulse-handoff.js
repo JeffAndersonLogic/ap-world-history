@@ -19,6 +19,14 @@
  * that quotes words the student did not write, leaves out a criterion or is missing
  * altogether becomes Can't tell.
  *
+ * Removing names from the record is not the same as removing them from the writing,
+ * so before a batch is copied the page checks each answer (flagsFor below) for what
+ * the student may have written about themselves: a name the course never uses, a
+ * family or life detail, a teacher's name, contact details, the school or class, a
+ * name signed at the end. The teacher removes each from the copy or keeps it, and Copy
+ * waits until every one is decided. Removed words become "[removed]" in the copy
+ * only; the student's work is unchanged.
+ *
  * Real student writing is copied out only when APPROVAL below says the district has
  * approved it in writing, naming who and when. Invented answers need no approval. */
 (function (root, factory) {
@@ -73,6 +81,60 @@
     return out;
   }
 
+  // ── The check before copying ───────────────────────────────────────────────
+  // `known` is the course's own list of names (data/class-pulse-course-words.js). A
+  // capitalized word the course never uses is flagged, because it may be a person; a
+  // name that is also a history name (Henry, Victoria) is caught only by the other rules.
+  const COMMON = new Set(('monday tuesday wednesday thursday friday saturday sunday january february march april may june july august ' +
+    'september october november december english american ok christmas thanksgiving google canvas').split(' '));
+  const RULES = [
+    { kind: 'contact', why: 'Contact details.', re: /[\w.+-]+@[\w-]+\.[\w.]+|\(?\b\d{3}\)?[-. ]\d{3}[-. ]\d{4}\b|https?:\/\/\S+/g },
+    { kind: 'personal', sentence: true, why: 'A detail about the student\'s own life or family. Removing it takes out the whole sentence.',
+      re: /\b(?:my|our) (?:mom|mother|dad|father|parents?|step\w+|grandma|grandpa|grandmother|grandfather|grandparents?|nana|papa|brothers?|sisters?|siblings?|aunt|uncle|cousins?|family|friends?|best friend|church|mosque|temple|synagogue|neighborhood|house|home ?town|town|street|job|boss|therapist|doctor|counselor)\b|\bI(?:'m| am| was| have been| got) (?:absent|sick|in the hospital|out of school|suspended|grounded|adopted|born in|from)\b|\b(?:when I (?:went|visited|lived|moved)|I live in|we moved|my name is)\b/gi },
+    { kind: 'staff', why: 'Names a teacher or staff member.', re: /\b(?:Mr|Mrs|Ms|Miss|Mx|Dr|Coach)\.? [A-Z][a-z]+/g },
+    { kind: 'school', sentence: true, why: 'Names the school or the class. Removing it takes out the whole sentence.', re: /\b(?:Zionsville|ZCS|ZCHS|period \d|[SG]\d period)\b/gi }
+  ];
+  function sentenceAround(text, from, to) {
+    let a = from; while (a > 0 && !/[.!?\n]/.test(text[a - 1])) a--;
+    let b = to; while (b < text.length && !/[.!?\n]/.test(text[b])) b++;
+    if (b < text.length) b++;
+    return text.slice(a, b).trim();
+  }
+  const isKnown = (w, known) => { const x = w.toLowerCase(); return COMMON.has(x) || known.has(x) || known.has(x.replace(/e?s$/, '')) || known.has(x.replace(/s$/, '')); };
+  function flagsFor(text, knownWords) {
+    const known = knownWords instanceof Set ? knownWords : new Set(knownWords || []);
+    const out = [], add = (kind, span, why) => { span = span.trim(); if (span && !out.some(f => f.span === span)) out.push({ kind, span, why }); };
+    // Rules run in order over a copy of the text with each flagged span blanked out, so
+    // an email address is one flag, not also a school and a name.
+    let scan = text;
+    const blank = (i, n) => { scan = scan.slice(0, i) + ' '.repeat(n) + scan.slice(i + n); };
+    for (const r of RULES) for (const m of [...scan.matchAll(r.re)]) {
+      add(r.kind, r.sentence ? sentenceAround(text, m.index, m.index + m[0].length) : m[0], r.why);
+      if (r.kind === 'contact' || r.kind === 'staff') blank(m.index, m[0].length);
+    }
+    // A capitalized run whose words the course never uses as names. A lone first word
+    // of a sentence is skipped, since capitals there say nothing; a run of two or more
+    // there ("Jayden Smith helped") is judged whole.
+    for (const m of scan.matchAll(/[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*/g)) {
+      const before = scan.slice(0, m.index).replace(/\s+$/, ''), start = !before || /[.!?:"'(\[\n-]$/.test(before);
+      const ws = m[0].split(/\s+/), judged = start && ws.length === 1 ? [] : ws;
+      if (judged.some(w => !isKnown(w, known))) add('name', m[0], 'A name the course never uses. If it is a person, remove it.');
+    }
+    // A short line or sentence of one or two capitalized words at the very end: a signature.
+    const sig = text.match(/(?:^|[.!?]\s+|\n\s*)(?:-+\s*)?([A-Z][a-z]+(?:\s+[A-Z][a-z]*\.?)?)\s*[.!]?\s*$/);
+    if (sig && !COMMON.has(sig[1].toLowerCase())) add('signature', sig[1], 'Looks like a name signed at the end.');
+    return out;
+  }
+  // The batch as it is copied: each span the teacher removed becomes "[removed]". The
+  // answer keeps its original text, which is what the engine and the page match on.
+  function redact(batch, removed) {
+    return { ...batch, answers: batch.answers.map(a => {
+      const spans = (removed && removed.get ? removed.get(a.key) : removed && removed[a.key]) || [];
+      const text = spans.slice().sort((x, y) => y.length - x.length).reduce((t, sp) => t.split(sp).join('[removed]'), a.text);
+      return { ...a, text, original: a.original || a.text };
+    }) };
+  }
+
   const SHAPE = '{"batch":"BATCH_ID","answers":[{"key":"A01","criteria":[{"criterionId":"criterion-1","category":"D|P|N|U","evidence":["exact words copied from that answer"],"reason":"one or two sentences","misconceptions":[],"uncertainty":[],"reviewRequired":false}]}]}';
 
   // The text the teacher pastes into a new chat. The answer markers carry part of the
@@ -105,12 +167,15 @@
     if (!reply || !Array.isArray(reply.answers)) throw new Error('The reply has no list of answers in it. Paste the batch into a new chat and try again.');
     if (reply.batch != null && reply.batch !== batch.id) throw new Error('This reply is for a different batch. Paste it next to the batch it answers.');
     const results = batch.answers.map(a => {
+      // Quotes are checked against the text that was copied; the page matches on the
+      // original, where a quote that runs across "[removed]" fails and shows Can't tell.
+      const base = { key: a.key, text: a.original || a.text, copied: a.text };
       const got = reply.answers.filter(x => x && x.key === a.key);
-      if (!got.length) return { key: a.key, text: a.text, status: 'missing', why: 'The reply left this answer out.' };
-      if (got.length > 1) return { key: a.key, text: a.text, status: 'failed', why: 'The reply rated this answer twice.' };
+      if (!got.length) return { ...base, status: 'missing', why: 'The reply left this answer out.' };
+      if (got.length > 1) return { ...base, status: 'failed', why: 'The reply rated this answer twice.' };
       const entry = { criteria: got[0].criteria };
-      try { return { key: a.key, text: a.text, status: 'passed', entry, output: E.validateOutput(entry, contract, a.text) }; }
-      catch (err) { return { key: a.key, text: a.text, status: 'failed', entry, why: String(err.message || err) }; }
+      try { return { ...base, status: 'passed', entry, output: E.validateOutput(entry, contract, a.text) }; }
+      catch (err) { return { ...base, status: 'failed', entry, why: String(err.message || err) }; }
     });
     const count = s => results.filter(r => r.status === s).length;
     return { batchId: batch.id, results, passed: count('passed'), failed: count('failed'), missing: count('missing') };
@@ -132,5 +197,5 @@
     };
   }
 
-  return { APPROVAL, SERVICE, READER, BATCH, FORMAT, gate, batches, promptFor, parseReply, readReply, provider };
+  return { APPROVAL, SERVICE, READER, BATCH, FORMAT, gate, batches, flagsFor, redact, promptFor, parseReply, readReply, provider };
 });

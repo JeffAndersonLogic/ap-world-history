@@ -18,7 +18,10 @@
  * each checkpoint's answers in batches, pastes them into Claude for Teachers, and
  * pastes the reply back. The replies become one more reader, "Claude for Teachers,
  * pasted", run through the engine like any other, and are kept for this page load
- * only. Real writing is never offered for copying until the district approves.
+ * only. Before a batch can be copied, each answer is checked for anything that could
+ * identify the student (a name, a family detail, a teacher, the school), and the
+ * teacher removes it from the copy or keeps it. Real writing is never offered for
+ * copying until the district approves.
  *
  * Levels: D Demonstrating, P Partly there, N Not yet, U Can't tell. Colors are
  * Cardinal red, Ridge gold and Teaching navy (Jeff, 2026-10-23). */
@@ -56,7 +59,8 @@
     tab: 'live', topic: TOPICS.includes('3.2') ? '3.2' : TOPICS[0], section: 'S2',
     minute: 31, playing: false, timer: null, names: 'names', sort: 'roster', cmetric: 'ev', stu: 0,
     overrides: new Map(), loadToken: 0, reader: 'invented',
-    pasted: new Map() // topic|section -> Map(batch id -> { checkpoint, read, at })
+    pasted: new Map(), // topic|section -> Map(batch id -> { checkpoint, read, at })
+    checks: new Map()  // batch id -> the teacher's decisions in the check before copying
   };
   let D = null; // { contracts, kind, students, rows, results, cols }
 
@@ -402,8 +406,51 @@
 
   // ── Read by copy and paste ────────────────────────────────────────────────
   // Rendered when a topic or class loads and after each pasted reply, never on the
-  // ordinary redraws, so a reply half pasted into a box is not wiped.
+  // ordinary redraws, so a reply half pasted into a box is not wiped. A decision in the
+  // check before copying redraws only its own batch.
+  const WORDS = new Set((window.BHClassPulseCourseWords && window.BHClassPulseCourseWords.words) || []);
+  const FLAG_KIND = { name: 'Name', personal: 'Personal detail', staff: 'Staff name', contact: 'Contact', school: 'School or class', signature: 'Signature' };
   function batchOf(id) { for (const cp of CPS) { const b = D.batches[cp].find(x => x.id === id); if (b) return { cp, b }; } return null; }
+  // batch id -> Map(answer key -> Map(flagged words -> 'remove' | 'keep')), this visit only.
+  function decisions(id) { if (!S.checks.has(id)) S.checks.set(id, new Map()); return S.checks.get(id); }
+  function flagged(b) { return b.answers.map(a => ({ a, flags: H.flagsFor(a.text, WORDS) })).filter(x => x.flags.length); }
+  function undecided(b) { const d = decisions(b.id); return flagged(b).reduce((n, x) => n + x.flags.filter(f => !(d.get(x.a.key) && d.get(x.a.key).has(f.span))).length, 0); }
+  // The batch exactly as it will be copied, with every removed span replaced.
+  function asCopied(b) {
+    const removed = new Map();
+    decisions(b.id).forEach((m, key) => removed.set(key, [...m].filter(([, v]) => v === 'remove').map(([span]) => span)));
+    return H.redact(b, removed);
+  }
+  function markFlags(text, flags) {
+    let out = esc(text);
+    flags.slice().sort((x, y) => y.span.length - x.span.length).forEach(f => { out = out.split(esc(f.span)).join('<mark>' + esc(f.span) + '</mark>'); });
+    return out;
+  }
+  function checkHtml(b) {
+    const list = flagged(b), d = decisions(b.id);
+    if (!list.length) return '<p class="small check-ok">Checked: no answer in this batch names a person or gives a personal detail.</p>';
+    const left = undecided(b);
+    return `<div class="precheck"><p class="small"><b>Check before copying.</b> ${list.length} ${list.length === 1 ? 'answer mentions' : 'answers mention'} something that could identify a student. Remove it from the copy or keep it; the student's work is not changed. ${left ? left + ' still to decide.' : 'All decided.'}</p>` +
+      list.map(x => `<div class="flagged"><p class="response small">${markFlags(x.a.text, x.flags)}</p>` + x.flags.map(f => {
+        const v = d.get(x.a.key) && d.get(x.a.key).get(f.span);
+        return `<div class="row flagrow"><span class="chip">${esc(FLAG_KIND[f.kind] || f.kind)}</span><span class="small"><b>${esc(f.span.length > 70 ? f.span.slice(0, 67) + '...' : f.span)}</b> ${esc(f.why)}</span>
+          <button class="btn" type="button" data-flag="${b.id}|${x.a.key}|remove" data-span="${esc(f.span)}" aria-pressed="${v === 'remove'}">Remove from the copy</button>
+          <button class="btn" type="button" data-flag="${b.id}|${x.a.key}|keep" data-span="${esc(f.span)}" aria-pressed="${v === 'keep'}">Keep it</button></div>`;
+      }).join('') + '</div>').join('') + '</div>';
+  }
+  function batchHtml(cp, b, n, open) {
+    const got = pastedHere().get(b.id), first = b.answers[0].key, last = b.answers[b.answers.length - 1].key, left = undecided(b);
+    const state = got ? got.read.passed + ' of ' + b.answers.length + ' read' + (got.read.failed + got.read.missing ? ', ' + (got.read.failed + got.read.missing) + ' show as Can\'t tell' : '') : 'Not pasted yet';
+    return `<div class="batch${got ? ' done' : ''}" data-card="${b.id}"><div class="batch-top"><b>${CP_NAME[cp]}, batch ${n + 1} of ${D.batches[cp].length}</b><span class="small">Answers ${first} to ${last} · ${esc(state)}</span></div>
+      ${checkHtml(b)}
+      <div class="row"><button class="btn primary" type="button" data-copy="${b.id}"${left ? ' disabled' : ''}>Copy batch</button><span class="small" data-copied="${b.id}" role="status">${left ? 'Decide each flag above first.' : ''}</span></div>
+      <details data-batch="${b.id}"${open ? ' open' : ''}><summary>Paste the reply</summary>
+        <textarea data-paste="${b.id}" aria-label="${CP_NAME[cp]}, batch ${n + 1}: paste the reply" placeholder="Paste the whole reply here"></textarea>
+        <div class="row"><button class="btn dark" type="button" data-read="${b.id}">Read this reply</button><span class="small" data-said="${b.id}" role="status"></span></div>
+        ${left ? '' : `<p class="small">If Copy does not work on this device, select all of the text below and copy it yourself.</p>
+        <textarea readonly class="batch-text" data-text="${b.id}" aria-label="The text to paste">${esc(H.promptFor(D.contracts[cp], asCopied(b)))}</textarea>`}
+      </details></div>`;
+  }
   function renderPaste() {
     if (!H) { $('#paste-panel').hidden = true; return; }
     const rows = CPS.flatMap(cp => D.rows[cp].filter(r => !E.eligibility(r)));
@@ -413,24 +460,23 @@
     $('#paste-gate').textContent = gate.reason;
     let h = '';
     if (D.kind === 'levels') h = '<p class="small">This topic has invented levels but no invented writing, so there is nothing to copy. Topics 2.3 and 3.2 have writing.</p>';
-    else if (!gate.ok) h = '';
-    else CPS.forEach(cp => D.batches[cp].forEach((b, n) => {
-      const got = pastedHere().get(b.id), first = b.answers[0].key, last = b.answers[b.answers.length - 1].key;
-      const state = got ? got.read.passed + ' of ' + b.answers.length + ' read' + (got.read.failed + got.read.missing ? ', ' + (got.read.failed + got.read.missing) + ' show as Can\'t tell' : '') : 'Not pasted yet';
-      h += `<div class="batch${got ? ' done' : ''}"><div class="batch-top"><b>${CP_NAME[cp]}, batch ${n + 1} of ${D.batches[cp].length}</b><span class="small">Answers ${first} to ${last} · ${esc(state)}</span></div>
-        <div class="row"><button class="btn primary" type="button" data-copy="${b.id}">Copy batch</button><span class="small" data-copied="${b.id}" role="status"></span></div>
-        <details data-batch="${b.id}"${open.has(b.id) ? ' open' : ''}><summary>Paste the reply</summary>
-          <textarea data-paste="${b.id}" aria-label="${CP_NAME[cp]}, batch ${n + 1}: paste the reply" placeholder="Paste the whole reply here"></textarea>
-          <div class="row"><button class="btn dark" type="button" data-read="${b.id}">Read this reply</button><span class="small" data-said="${b.id}" role="status"></span></div>
-          <p class="small">If Copy does not work on this device, select all of the text below and copy it yourself.</p>
-          <textarea readonly class="batch-text" data-text="${b.id}" aria-label="The text to paste">${esc(H.promptFor(D.contracts[cp], b))}</textarea>
-        </details></div>`;
-    }));
+    else if (gate.ok) CPS.forEach(cp => D.batches[cp].forEach((b, n) => { h += batchHtml(cp, b, n, open.has(b.id)); }));
     $('#paste-batches').innerHTML = h;
     $('#paste-steps').hidden = !gate.ok || D.kind === 'levels';
   }
+  function decide(id, key, span, v) {
+    const d = decisions(id);
+    if (!d.has(key)) d.set(key, new Map());
+    d.get(key).set(span, v);
+    const { cp, b } = batchOf(id), card = $(`[data-card="${id}"]`);
+    const open = card && card.querySelector('details').open, paste = card && card.querySelector('[data-paste]').value;
+    card.outerHTML = batchHtml(cp, b, D.batches[cp].indexOf(b), open);
+    const again = $(`[data-card="${id}"] [data-paste]`); if (again && paste) again.value = paste;
+  }
   async function copyBatch(id) {
-    const { cp, b } = batchOf(id), text = H.promptFor(D.contracts[cp], b), note = $(`[data-copied="${id}"]`);
+    const { cp, b } = batchOf(id), note = $(`[data-copied="${id}"]`);
+    if (undecided(b)) { note.textContent = 'Decide each flag above first.'; return; }
+    const text = H.promptFor(D.contracts[cp], asCopied(b));
     let done = false;
     try { await navigator.clipboard.writeText(text); done = true; }
     catch (_) {
@@ -443,7 +489,7 @@
     const { cp, b } = batchOf(id), raw = $(`[data-paste="${id}"]`).value, say = $(`[data-said="${id}"]`);
     if (!raw.trim()) { say.textContent = 'Paste the reply first.'; return; }
     let read;
-    try { read = H.readReply(D.contracts[cp], b, raw); }
+    try { read = H.readReply(D.contracts[cp], asCopied(b), raw); }
     catch (err) { say.textContent = err.message; return; }
     const key = S.topic + '|' + S.section;
     if (!S.pasted.has(key)) S.pasted.set(key, new Map());
@@ -576,7 +622,8 @@
     const sg = e.target.closest('[data-seg]'); if (sg) { showSegment(sg.dataset.seg); return; }
     const go = e.target.closest('[data-goto]'); if (go) { setTab(go.dataset.goto); return; }
     const cp = e.target.closest('[data-copy]'); if (cp) { copyBatch(cp.dataset.copy); return; }
-    const rd = e.target.closest('[data-read]'); if (rd) readPasted(rd.dataset.read);
+    const rd = e.target.closest('[data-read]'); if (rd) { readPasted(rd.dataset.read); return; }
+    const fl = e.target.closest('[data-flag]'); if (fl) { const [id, key, v] = fl.dataset.flag.split('|'); decide(id, key, fl.dataset.span, v); }
   });
 
   setTab((location.hash || '').slice(1) || 'live');

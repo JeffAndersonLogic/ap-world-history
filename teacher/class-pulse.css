@@ -261,3 +261,10 @@ select.sel{max-width:100%;text-overflow:ellipsis}
 .batch textarea{width:100%;min-height:90px;border:1px solid var(--line);border-radius:10px;background:var(--bg);padding:8px 10px;font-size:12px;resize:vertical;margin-top:8px}
 .batch textarea.batch-text{font-family:ui-monospace,Menlo,monospace;font-size:11px;min-height:70px;color:var(--muted)}
 .btn.dark{background:var(--ink);border-color:var(--ink);color:#fff}
+.batch .btn[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.precheck{display:grid;gap:8px;border-left:3px solid var(--gold);padding:8px 12px;background:var(--surface);border-radius:0 10px 10px 0}
+.flagged{display:grid;gap:6px;padding-top:6px;border-top:1px solid var(--line)}
+.flagged .response{font-size:13px;padding:10px 12px;margin:0}
+.flagrow{gap:6px 8px}
+.flagrow .small{flex:1 1 220px;min-width:0}
+.check-ok{margin:0}

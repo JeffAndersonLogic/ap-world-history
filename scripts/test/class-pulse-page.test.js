@@ -21,6 +21,8 @@
  *     exactly that text on the clipboard, a pasted reply becomes the "pasted" reader
  *     with its own reasons, an invented quote shows as Can't tell, and a reply
  *     pasted next to the wrong batch is refused;
+ *   - the check before copying: an answer naming a teacher holds Copy back until
+ *     the teacher decides, and a removed name never reaches the copied text;
  *   - it fits a phone without sideways scrolling.
  *
  *   npm i --no-save playwright-core
@@ -233,6 +235,32 @@ async function suite(browser) {
   check('copying and pasting raises no script error', c.errors.length === 0, c.errors.join(' | '));
   await c.context.close();
 
+  section('The check before copying');
+  // Plant a teacher's name in the invented Topic 3.2 writing, quotes included.
+  const kept = patches;
+  patches = kept.concat([{ file: 'teacher/data/class-pulse-demo.js', from: /The Mughal Empire used the mansabdar system/g, to: 'Mr. Anderson said the Mughal Empire used the mansabdar system' }]);
+  const k = await open(browser);
+  patches = kept;
+  await choose(k.p, '3.2');
+  await k.p.click('#tab-pulse');
+  const card = '#paste-batches .batch:has(.precheck) >> nth=0';
+  const flaggedCard = await k.p.$(card);
+  check('an answer naming a teacher is flagged before copying', !!flaggedCard && /Mr\. Anderson/.test(await flaggedCard.textContent()));
+  if (flaggedCard) {
+    const id = await flaggedCard.getAttribute('data-card');
+    check('Copy waits until every flag is decided', await k.p.$eval(`[data-copy="${id}"]`, b => b.disabled));
+    for (let i = 0; i < 40; i++) {
+      const next = await k.p.$(`[data-card="${id}"] [data-flag$="|remove"][aria-pressed="false"]`);
+      if (!next) break;
+      await next.click();
+    }
+    check('once decided, Copy is offered', !(await k.p.$eval(`[data-copy="${id}"]`, b => b.disabled)));
+    const copied = await k.p.$eval(`[data-text="${id}"]`, t => t.value);
+    check('a removed name never reaches the copied text', copied.length > 0 && !/Anderson/.test(copied) && /the Mughal Empire used the mansabdar system/.test(copied));
+  }
+  check('the check raises no script error', k.errors.length === 0, k.errors.join(' | '));
+  await k.context.close();
+
   section('A phone');
   for (const t of ['live', 'pulse', 'course', 'student']) {
     const m = await open(browser, 390);
@@ -257,6 +285,8 @@ async function suite(browser) {
     { name: 'projector mode keeps names', file: 'teacher/class-pulse-app.js', from: "S.names === 'anon' ?", to: 'false ?', expect: /hides every name/ },
     { name: 'the reader menu changes nothing', file: 'teacher/class-pulse-app.js', from: "S.reader === 'invented' ? demo.provider\n      :", to: 'true ? demo.provider\n      :', expect: /recorded reader's levels/ },
     { name: 'pasted replies are ignored', file: 'teacher/class-pulse-app.js', from: ": H && S.reader === H.READER.id ? H.provider([...pastedHere().values()]) : recordedProvider(S.reader, demo)", to: ": H && S.reader === H.READER.id ? demo.provider : recordedProvider(S.reader, demo)", expect: /pasted reader's reasons/ },
+    { name: 'Copy ignores the check', file: 'teacher/class-pulse-app.js', from: "<button class=\"btn primary\" type=\"button\" data-copy=\"${b.id}\"${left ? ' disabled' : ''}>", to: "<button class=\"btn primary\" type=\"button\" data-copy=\"${b.id}\">", expect: /Copy waits/ },
+    { name: 'removed words are copied anyway', file: 'teacher/class-pulse-app.js', from: "${esc(H.promptFor(D.contracts[cp], asCopied(b)))}", to: "${esc(H.promptFor(D.contracts[cp], b))}", expect: /never reaches the copied text/ },
     { name: 'the copy button copies something else', file: 'teacher/class-pulse-app.js', from: 'await navigator.clipboard.writeText(text);', to: "await navigator.clipboard.writeText(text + ' ');", expect: /exactly that text/ },
     { name: 'bars drop students who did not submit', file: 'teacher/class-pulse-app.js', from: 'D.students.forEach(st => { cnt[endBand(st, c)]++; });', to: "D.students.forEach(st => { const b = endBand(st, c); if (b !== 'none') cnt[b]++; });", expect: /every student counted/ }
   ];

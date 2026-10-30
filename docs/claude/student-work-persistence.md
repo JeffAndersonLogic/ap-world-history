@@ -522,12 +522,28 @@ answer. Only work the engine's `eligibility()` accepts is copied, so drafts neve
 missing criterion, an answer left out or a rating given twice shows as Can't tell, and a
 reply pasted next to the wrong batch is refused.
 
+**A name off the record is not a name out of the writing, so each batch is checked
+before it can be copied** (added the same day). `flagsFor()` in the handoff file flags what
+a student may write about themselves: a capitalized word the course never uses as a name,
+a family or life detail, a teacher's name, contact details, the school or class, and a
+name signed at the end. The teacher removes each from the copy (it becomes `[removed]`;
+a personal detail takes its whole sentence) or keeps it, and Copy waits until every flag
+is decided. The student's work is unchanged, and the reading lands on the original
+answer. "The course never uses" comes from `teacher/data/class-pulse-course-words.js`,
+built by `node scripts/build-class-pulse-words.js` from the skills map, the CED source,
+the readings, the lesson data and the decks, counting only words the course capitalizes
+mid-sentence. A stale list only adds flags, so it is not a drift check in the gate;
+rebuild it after adding a unit. Its limit: a student name that is also a history name
+(Henry, Victoria, Madison) is caught only as a signature, after a title, or in a personal
+sentence. On the 144 invented answers it flags three, all real history names the course
+does not use (Blue Mosque, Counter Reformation, Francis Xavier).
+
 **Real writing is off.** `APPROVAL` in the handoff file is `{ realWork: false }`. Invented
 answers need no approval; real ones are offered for copying only once ZCS approves in
 writing and `APPROVAL.reference` names who and when, and `privacy.html` must say what is
 sent and where before that change reaches students.
 
-**Checks.** `scripts/test/class-pulse-handoff.test.js` in the offline suite (eight negative
-controls), and a copy-and-paste section in `scripts/test/class-pulse-page.test.js` (two
-more). The calibration practice that measures how Claude for Teachers reads a batch lives in
+**Checks.** `scripts/test/class-pulse-handoff.test.js` in the offline suite (thirteen
+negative controls), and copy-and-paste and check-before-copying sections in
+`scripts/test/class-pulse-page.test.js` (four more). The calibration practice that measures how Claude for Teachers reads a batch lives in
 AndersonLogic-OS `04_PRODUCTS/BeHistorical/Class-Pulse-Calibration/`.
