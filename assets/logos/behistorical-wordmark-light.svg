@@ -7,8 +7,20 @@
 <feColorMatrix type="hueRotate" values="180"/>
 <feComponentTransfer><feFuncR type="linear" slope="1.08" intercept="0.01"/><feFuncG type="linear" slope="1.06" intercept="0.005"/><feFuncB type="linear" slope="1.015"/></feComponentTransfer>
 </filter>
-<clipPath id="globe"><rect x="724" y="0" width="145" height="220"/></clipPath>
+<clipPath id="globe"><ellipse cx="795" cy="131.5" rx="69" ry="69.5"/></clipPath>
+<mask id="letters" maskUnits="userSpaceOnUse" x="0" y="0" width="1428" height="220"><rect width="1428" height="220" fill="white"/><ellipse cx="795" cy="131.5" rx="69" ry="69.5" fill="black"/></mask>
+<g id="bronze-globe" clip-path="url(#globe)"><use xlink:href="#art"/></g>
+<filter id="globe-rim" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+<feMorphology in="SourceAlpha" operator="dilate" radius="0.85" result="expanded"/>
+<feComposite in="expanded" in2="SourceAlpha" operator="out" result="rim"/>
+<feFlood flood-color="#f5f0e7" flood-opacity="0.56" result="ivory"/>
+<feComposite in="ivory" in2="rim" operator="in" result="border"/>
+<feGaussianBlur in="SourceAlpha" stdDeviation="2.2" result="blur"/>
+<feFlood flood-color="#f5f0e7" flood-opacity="0.16" result="light"/>
+<feComposite in="light" in2="blur" operator="in" result="halo"/>
+<feMerge><feMergeNode in="halo"/><feMergeNode in="border"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
 </defs>
-<use xlink:href="#art" filter="url(#light)"/>
-<use xlink:href="#art" clip-path="url(#globe)"/>
+<use xlink:href="#art" filter="url(#light)" mask="url(#letters)"/>
+<use xlink:href="#bronze-globe" filter="url(#globe-rim)"/>
 </svg>
