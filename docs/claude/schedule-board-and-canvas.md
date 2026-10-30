@@ -153,32 +153,21 @@ Module 08, and quietly renumbering it here would stop matching the cards.
 
 ## The wordmark in Canvas
 
-On the site the wordmark is live HTML: Cinzel text with the globe O built from
-CSS gradients and a `::before` pseudo-element in
-`assets/css/behistorical-brand-lock.css`. That is right for the site and cannot
-survive Canvas, which strips `<style>` blocks, cannot express a pseudo-element
-inline, and will not load a webfont. Typed into a Canvas event it degrades to
-Georgia with a literal letter o, which is the wordmark not being the wordmark.
+The supplied Globe O artwork is now the canonical brand (Jeff, 2026-10-30).
+The unchanged uploads are preserved in `assets/logos/originals/`. Tightly cropped,
+resized web derivatives live in `assets/logos/`: `behistorical-wordmark.png`,
+`behistorical-ap-world.png`, and `behistorical-globe.png`.
 
-**So Canvas gets a picture, and the picture is rendered from the stylesheet
-rather than drawn by hand.** `scripts/build-wordmark.js` loads the real
-brand-lock CSS and the real font, screenshots the mark, and writes the two PNGs.
-Edit the lock, rerun it, and the image follows. A hand-made PNG is a second copy
-of the brand that stops matching the site the first time the lock changes, and
-nothing would report it.
+`assets/css/behistorical-brand-lock.css` applies the same wordmark to shared
+headers. The homepage uses the full AP World History lockup. Dark surfaces use a
+warm-paper backing so the supplied dark lettering stays readable.
 
-**The font is fetched and the run fails without it.** Cinzel is not in this repo
-and headless Chromium has no webfonts, so the face is downloaded and embedded as
-a data URI before rendering. A run that cannot reach the font host fails rather
-than quietly shipping Georgia: a wordmark in the wrong face looks deliberate,
-which makes it worse than no new file. The proof is metric, comparing the
-rendered width against the fallback, because `document.fonts.check()` answers
-"can this string be rendered in that family" and says yes for a fallback.
+Canvas still takes PNG images because it strips site styles. Run
+`node scripts/build-wordmark.js` to copy the canonical transparent mark to
+`behistorical-wordmark-dark.png`, and the warm-paper variant
+`behistorical-wordmark-on-paper.png` to `behistorical-wordmark-light.png`.
+`--check` fails if either alias drifts. No webfont or browser is needed.
+Use the paper-backed light alias on a dark Canvas masthead.
 
-**Light on steel, dark on paper.** The Canvas masthead is `--blackened-steel`,
-so it takes the light mark. The dark one exists for any light surface. Do not
-put the dark mark on the band.
-
-**The image is served by GitHub Pages from `main`,** so a new or changed
-wordmark is a broken image in every pasted Canvas event until `main` carries it.
-Land it before pasting.
+GitHub Pages serves these images from `main`; publish the files before pasting
+an event that uses them.

@@ -1,6 +1,21 @@
 (function(){
 'use strict';
 
+// Supplied Globe O artwork shared by every presentation header.
+const bhBrandBase=new URL('../',document.currentScript.src);
+const bhBrandStyle=document.createElement('link');
+bhBrandStyle.rel='stylesheet';bhBrandStyle.href=new URL('assets/css/behistorical-brand-lock.css',bhBrandBase);
+document.head.appendChild(bhBrandStyle);
+const bhBrandFavicon=document.createElement('link');bhBrandFavicon.rel='icon';bhBrandFavicon.href=new URL('assets/logos/behistorical-favicon.png',bhBrandBase);document.head.appendChild(bhBrandFavicon);
+function bhInstallBrand(){
+  const host=document.querySelector('.appbar .brand');if(!host)return;
+  const mark=document.createElement('a');mark.className='bh-brand-link bh-cockpit-brand';mark.href=new URL('index.html',bhBrandBase);mark.setAttribute('aria-label','BeHistorical home');
+  const img=document.createElement('img');img.src=new URL('assets/logos/behistorical-wordmark.png',bhBrandBase);img.alt='BeHistorical';img.width=1428;img.height=220;mark.appendChild(img);
+  host.replaceWith(mark);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',bhInstallBrand,{once:true});else bhInstallBrand();
+
+
 const css=document.createElement('style');
 css.id='behistorical-teaching-os-shared';
 css.textContent=`
