@@ -54,6 +54,7 @@ const SUITES = {
     ['scripts/test/slide-templates.test.js', 'slide templates: one library, wired into every renderer, AI label enforced'],
     ['scripts/test/deck-key-concepts.test.js', 'Key Concept band: every deck tags its own topic\'s KCs, and every renderer draws the band'],
     ['scripts/test/asset-versions.test.js', 'deploy-time version stamp changes only tag values'],
+    ['scripts/test/custom-domain.test.js', 'the site stays on behistorical.com: CNAME, Canvas links, no old-address links'],
     ['scripts/test/foundations-golden.js', 'Foundations content vs the hand-authored originals'],
     ['scripts/test/readings-golden.js', '58 unit readings vs the hand-authored originals'],
     ['scripts/test/socrates-contract.test.js', 'AI coach kit reproducible, persona unit-agnostic'],

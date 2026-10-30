@@ -1,3 +1,4 @@
+@import url("behistorical-brand-lock.css");
 /* =========================================================
    BEHISTORICAL OFFICIAL STYLE SYSTEM
    Clean contrast rebuild: dark surfaces use light text;
@@ -739,3 +740,4 @@ blockquote{margin:0; padding:20px; background:#f6efe3; border-left:6px solid var
 .confidence-clear{margin-top:10px; padding:0; border:0; background:none; font-family:"Montserrat",Inter,Arial,sans-serif; font-size:.72rem; color:var(--oxidized-brown); text-decoration:underline; cursor:pointer}
 .confidence-clear:hover{color:var(--rust-copper)}
 @media(max-width:620px){.confidence-option{min-width:calc(33% - 8px)}}
+
