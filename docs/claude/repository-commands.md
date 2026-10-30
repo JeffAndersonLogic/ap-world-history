@@ -38,10 +38,11 @@ Every script below also has an `npm run` alias; see `package.json`.
   to the Canvas light/dark PNG aliases. The light alias has ivory lettering and a transparent background.
   Offline and dependency-free; `--check` fails on drift. See "The wordmark in Canvas"
   in `docs/claude/schedule-board-and-canvas.md`.
-- `node scripts/build-logo-on-dark.js`, render the light-lettered "BeHistorical, AP World
-  History" lockup for dark surfaces to `assets/logos/behistorical-ap-world-on-dark.png`,
-  from the supplied lockup with the globe left untouched and a soft glow behind it
-  (`--glow=none|soft|medium|strong` tries another strength). Needs playwright to render,
+- `node scripts/build-logo-on-dark.js`, render the light-lettered marks for dark
+  surfaces, `assets/logos/behistorical-wordmark-on-dark.png` and the full "AP World
+  History" lockup `behistorical-ap-world-on-dark.png`, from the supplied artwork with the
+  globe left untouched and a soft glow behind it (`--glow=none|soft|medium|strong`
+  tries another strength). Run `build-wordmark.js` after it so Canvas follows. Needs playwright to render,
   so it is not in any suite; it exits 2 when playwright is absent.
 - `node scripts/build-canvas-events.js`, rebuild both paste-ready Canvas documents from the same schedule: the calendar events in `docs/canvas/calendar-events.md`, one per class day, and the assignment bodies in `docs/canvas/assignments.md`, one per topic. `--check` fails on drift in either. One generator, because the two objects share the masthead, the overview, the targets, the criteria, the cohort seals and the row markup, and two scripts would mean two copies of all of it. See "Green and Silver" and "Today's Required Modules" below.
 - `node scripts/test/announcements-refresh.test.js`, prove the classroom board re-reads `announcements.js` when the date rolls over, re-fetches once rather than once per clock tick, and keeps the day it has when the network is down or the file comes back unusable. In the browser suite. See "Today's Required Modules" below.

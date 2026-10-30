@@ -1,24 +1,30 @@
 #!/usr/bin/env node
 'use strict';
-// Light-lettered "BeHistorical, AP World History" lockup for dark surfaces,
-// made from the supplied artwork in assets/logos/behistorical-ap-world.png.
+// Light-lettered BeHistorical marks for dark surfaces, made from the supplied
+// artwork: the wordmark every dark header uses, and the full "AP World
+// History" lockup on the classroom board.
 //
-// The lettering is the supplied artwork with its lightness flipped (the same
-// filter as behistorical-wordmark-light.svg), so the letterforms never change.
-// The bronze globe is the original pixels, untouched, with a fine ivory rim
-// and a soft warm glow behind it. GLOW names the strength in use.
+// The lettering is the supplied artwork with its lightness flipped, so the
+// letterforms never change. The bronze globe is the original pixels,
+// untouched, with a fine ivory rim and a soft warm glow behind it. GLOW names
+// the strength in use (Jeff chose soft, 2026-10-30).
 //
-// Writes behistorical-ap-world-on-dark.png. Needs playwright to rasterise, so
-// it is not in any suite; it exits 2 when playwright is absent.
+// Writes behistorical-wordmark-on-dark.png and behistorical-ap-world-on-dark.png.
+// Run node scripts/build-wordmark.js afterwards so the Canvas light alias
+// follows. Needs playwright to rasterise, so it is not in any suite; it exits 2
+// when playwright is absent.
 //
-//   node scripts/build-logo-on-dark.js            write the PNG
+//   node scripts/build-logo-on-dark.js            write both PNGs
 //   node scripts/build-logo-on-dark.js --glow=X   try another strength
 const fs = require('fs');
 const path = require('path');
 
 const LOGOS = path.join(__dirname, '..', 'assets', 'logos');
-const SOURCE = { file: 'behistorical-ap-world.png', w: 1636, h: 305, cx: 911.5, cy: 152, r: 78.5 };
-const OUT = 'behistorical-ap-world-on-dark';
+// Where the globe sits in each supplied image, in that image's pixels.
+const MARKS = [
+  { file: 'behistorical-wordmark.png', out: 'behistorical-wordmark-on-dark', title: 'BeHistorical, light wordmark for dark backgrounds', w: 1428, h: 220, cx: 795, cy: 131.5, r: 69.25 },
+  { file: 'behistorical-ap-world.png', out: 'behistorical-ap-world-on-dark', title: 'BeHistorical, AP World History, light lockup for dark backgrounds', w: 1636, h: 305, cx: 911.5, cy: 152, r: 78.5 },
+];
 
 // glow is the opacity of the light behind the globe, spread its size and blur
 // its softness, both as a share of the globe's radius.
@@ -37,7 +43,7 @@ function buildSvg(a, p) {
     ? `<circle cx="${a.cx}" cy="${a.cy}" r="${(a.r * p.spread).toFixed(2)}" fill="#f2d9a6" opacity="${p.glow}" filter="url(#glow)"/>\n`
     : '';
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${a.w}" height="${a.h}" viewBox="0 0 ${a.w} ${a.h}">
-<title>BeHistorical, AP World History, light lockup for dark backgrounds</title>
+<title>${a.title}</title>
 <defs>
 <image id="art" width="${a.w}" height="${a.h}" xlink:href="data:image/png;base64,${art}"/>
 <filter id="light" color-interpolation-filters="sRGB">
@@ -78,13 +84,16 @@ async function main() {
       process.exit(2);
     }
   }
-  const svg = buildSvg(SOURCE, PRESETS[name]);
   const browser = await chromium.launch();
-  const page = await browser.newPage({ viewport: { width: SOURCE.w, height: SOURCE.h } });
-  await page.setContent('<html><body style="margin:0;background:transparent">' + svg + '</body></html>');
-  await page.locator('svg').screenshot({ path: path.join(LOGOS, OUT + '.png'), omitBackground: true });
+  const page = await browser.newPage();
+  for (const mark of MARKS) {
+    const svg = buildSvg(mark, PRESETS[name]);
+    await page.setViewportSize({ width: mark.w, height: mark.h });
+    await page.setContent('<html><body style="margin:0;background:transparent">' + svg + '</body></html>');
+    await page.locator('svg').screenshot({ path: path.join(LOGOS, mark.out + '.png'), omitBackground: true });
+    console.log('WROTE ' + mark.out + '.png (glow: ' + name + ')');
+  }
   await browser.close();
-  console.log('WROTE ' + OUT + '.png (glow: ' + name + ')');
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });

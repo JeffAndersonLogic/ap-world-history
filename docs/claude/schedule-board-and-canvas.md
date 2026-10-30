@@ -160,20 +160,19 @@ resized web derivatives live in `assets/logos/`: `behistorical-wordmark.png`,
 
 `assets/css/behistorical-brand-lock.css` applies the same wordmark to shared
 headers. The homepage uses the full AP World History lockup. Dark surfaces use light ivory lettering with no backing; the bronze globe stays
-unchanged. `behistorical-wordmark-light.svg` applies a display filter to the original
-artwork and preserves the unfiltered globe. Its raster export is
-`behistorical-wordmark-on-dark.png`. Light surfaces retain the original dark mark.
+unchanged, with a fine ivory rim and a soft warm glow behind it (Jeff chose the
+soft glow, 2026-10-30). `node scripts/build-logo-on-dark.js` renders both light
+marks from the supplied artwork: `behistorical-wordmark-on-dark.png` for dark
+headers and `behistorical-ap-world-on-dark.png`, the full lockup, for the
+classroom board's title card. Light surfaces retain the original dark mark.
 
 Canvas still takes PNG images because it strips site styles. Run
 `node scripts/build-wordmark.js` to copy the canonical transparent mark to
 `behistorical-wordmark-dark.png`, and the transparent light variant
 `behistorical-wordmark-on-dark.png` to `behistorical-wordmark-light.png`.
 `--check` fails if either alias drifts. No webfont or browser is needed.
-Use the transparent light alias on a dark Canvas masthead.
-
-The classroom board's title card shows the full AP World History lockup, as the
-homepage does, in its light-lettered form for the dark board:
-`behistorical-ap-world-on-dark.png`, rendered by `node scripts/build-logo-on-dark.js`.
+Use the transparent light alias on a dark Canvas masthead. After changing the
+glow, run `build-logo-on-dark.js` first and `build-wordmark.js` second.
 
 GitHub Pages serves these images from `main`; publish the files before pasting
 an event that uses them.
