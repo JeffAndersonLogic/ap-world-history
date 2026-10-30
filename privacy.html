@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Data Privacy and Acceptable Use | BeHistorical AP World History</title>
+  <meta name="description" content="What BeHistorical saves about students, where it is stored, who can see it, and what students agree to when they use it.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/behistorical-unit-hub.css">
+  <style>
+    /* This page is the record ZCS files as the course's privacy and acceptable
+       use policy. Every statement on it describes what the code does today:
+       firestore/firestore.rules, firestore/README.md and the "Student response
+       backup" section of docs/claude/student-work-persistence.md. Change the
+       system and this page changes in the same commit, or it becomes untrue. */
+    .policy-head{text-align:center;padding:20px min(8vw,88px) 34px;border-bottom:1px solid var(--soft-line)}
+    .policy-head h1{font-family:var(--serif-title);font-size:clamp(1.9rem,4.4vw,3.3rem);line-height:1.08;margin:0 0 16px;color:var(--blackened-steel);letter-spacing:-.03em}
+    .policy-meta{font-family:var(--ui);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--aged-iron);margin:0}
+    .policy{max-width:780px;margin:0 auto;padding:44px 26px 64px}
+    .policy h2{font-size:clamp(1.35rem,2.6vw,1.8rem);letter-spacing:-.01em;margin:44px 0 12px;padding-top:18px;border-top:2px solid var(--antique-gold)}
+    .policy h2:first-of-type{margin-top:0}
+    .policy p,.policy li{font-size:1rem;color:#2c2e2f}
+    .policy ul{padding-left:1.3em;margin:0 0 1em}
+    .policy li{margin:0 0 .55em}
+    .policy strong{color:var(--blackened-steel)}
+    .policy .summary{background:var(--blackened-steel);color:var(--warm-paper);padding:22px 24px;margin:0 0 36px;border-left:6px solid var(--antique-gold)}
+    .policy .summary p{color:var(--warm-paper);margin:0}
+    .policy .summary strong{color:var(--muted-sandstone)}
+    .policy .note{background:#ece8df;border:1px solid var(--soft-line);padding:16px 18px}
+    .policy a{color:var(--burnished-bronze);text-decoration:underline;text-underline-offset:2px}
+    .policy a:focus-visible,.top-nav a:focus-visible{outline:3px solid var(--burnished-bronze);outline-offset:3px}
+  </style>
+</head>
+<body>
+  <div class="page-shell"><div class="inner">
+    <nav class="top-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="index.html#units">Units</a><a href="ebook/index.html">eBook</a><a href="announcements.html">Today</a></nav>
+
+    <header class="policy-head">
+      <div class="section-label">Zionsville Community Schools &middot; AP World History: Modern</div>
+      <h1>Student Data Privacy and Acceptable Use</h1>
+      <p class="policy-meta">Effective October 22, 2026 &middot; Last reviewed October 22, 2026</p>
+    </header>
+
+    <main class="policy">
+      <div class="summary">
+        <p><strong>In short:</strong> BeHistorical saves the answers students type in their lessons so the work is not lost. The saved copy is kept in a Google database that Zionsville Community Schools owns. Each student can see only their own work. BeHistorical does not collect grades, sensitive personal information, or advertising data.</p>
+      </div>
+
+      <p>BeHistorical is the website students use for AP World History. This page explains what student information it keeps, where it is kept, who can see it, and what students agree to when they use it.</p>
+
+      <h2 id="what-is-saved">What BeHistorical saves</h2>
+      <p>When a student types an answer in a lesson, it is saved in two places.</p>
+      <ul>
+        <li><strong>On the student's own Chromebook,</strong> in the web browser, as soon as they type. This copy stays on the device.</li>
+        <li><strong>In a backup database,</strong> once the student signs in with their ZCS Google account, so the work survives a cleared browser or a different computer.</li>
+      </ul>
+      <p>For each answer, the backup keeps the text the student wrote, the confidence rating they chose, which topic and question the answer belongs to, when it was saved, and an account ID code. Each answer has a length limit.</p>
+      <p>The browser also keeps a small count of whether saves worked, so problems with saving can be found and fixed. That count contains no student writing and never leaves the device.</p>
+
+      <h2 id="not-collected">What BeHistorical does not collect</h2>
+      <ul>
+        <li><strong>No grades.</strong> Grading happens in Canvas, where students submit their work.</li>
+        <li><strong>No sensitive personal information,</strong> such as Social Security numbers, home addresses, phone numbers, birth dates, or health information.</li>
+        <li><strong>No advertising and no tracking</strong> across other websites. BeHistorical does not use Google Analytics.</li>
+        <li><strong>No artificial intelligence processing today.</strong> Saved work is not sent to any AI service. If AI is ever used to help Mr. Anderson review student writing, it will be turned on only after Zionsville Community Schools approves it in writing, and this page will be updated first to explain what is sent, to which service, and how it is protected.</li>
+      </ul>
+
+      <h2 id="where-stored">Where it is stored, and who owns it</h2>
+      <p>The backup is a Google Firebase project that ZCS Information Technology created inside the district's own Google account. <strong>Zionsville Community Schools owns and controls the student data.</strong> The database is in Google's data center in Columbus, Ohio, and it runs on Google's free plan with no billing attached. ZCS confirmed on September 29, 2026 that this setup meets its FERPA requirements. (FERPA is the federal law that protects the privacy of student education records.)</p>
+
+      <h2 id="who-can-see">Who can see a student's work</h2>
+      <ul>
+        <li><strong>The student,</strong> and only their own work. The database's security rules refuse any attempt by one student to read or change another student's answers, and they accept only verified ZCS Google accounts.</li>
+        <li><strong>The people who administer the project:</strong> Mr. Anderson and ZCS Information Technology staff, who can view the database to help students and keep it running.</li>
+      </ul>
+      <p>No one else has access. Saved answers carry an account ID code rather than a name. Google's sign-in system does keep the student's ZCS email address with that code, which is how the administrators can match saved work to a student who needs help.</p>
+      <p>BeHistorical does not currently have any screen that shows a teacher the saved work of a whole class. If that changes, this page will be updated to say what it shows and who approved it before it is turned on.</p>
+
+      <h2 id="keeping-deleting">Keeping and deleting work</h2>
+      <p>Students cannot delete their saved work, and no one can delete it through the website. That is deliberate: the backup exists because student work was disappearing, and a delete button would be one more way to lose it.</p>
+      <p class="note">ZCS has not yet set a schedule for deleting saved work. Until it does, saved work is kept. When a schedule is set, it will be posted here.</p>
+      <p>A family may ask for a copy of their student's saved work, or ask for it to be deleted, by contacting Mr. Anderson.</p>
+
+      <h2 id="other-tools">Other tools used in this course</h2>
+      <p>BeHistorical links to other tools that have their own district-approved terms: <strong>Canvas</strong> for submitting and grading work, and <strong>MagicSchool</strong> for AI coaching activities. What a student types into those tools is covered by those services and by ZCS policy, not by this page.</p>
+
+      <h2 id="acceptable-use">Acceptable use: what students agree to</h2>
+      <ul>
+        <li><strong>Use your own ZCS account,</strong> on your own Chromebook. Do not sign in on a classmate's device, and do not let a classmate sign in on yours.</li>
+        <li><strong>If the backup box says it is paused or not working, tell Mr. Anderson.</strong> Your work is still saved on your Chromebook in the meantime.</li>
+        <li><strong>Your answers must be your own work,</strong> following the course's academic integrity expectations.</li>
+        <li><strong>Do not try to read, change, or interfere with anyone else's work,</strong> or with the website itself.</li>
+        <li>All use of BeHistorical also falls under the <strong>ZCS Acceptable Use Policy</strong> for technology.</li>
+      </ul>
+
+      <h2 id="questions">Questions</h2>
+      <p>Students and families can contact Mr. Jeff Anderson, Zionsville Community High School, through Canvas or his ZCS email. Questions about district technology go to ZCS Information Technology.</p>
+    </main>
+
+    <footer><div class="footer-brand">BeHistorical</div><p>AP World History &middot; <a href="index.html">Back to the course home page</a></p></footer>
+  </div></div>
+</body>
+</html>

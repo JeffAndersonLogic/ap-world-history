@@ -165,29 +165,19 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "grid",
+      "kind": "frame-letterbox",
       "eyebrow": "What Portugal Got",
       "title": "A trading-post empire.",
-      "footer": "How the posts worked, and how Asian and African rulers answered them, is Topic 4.4.",
+      "subtitle": "Portugal held ports, not lands: forts from Elmina to Goa and Malacca, and a pepper trade the crown ran from Lisbon.",
       "kc": "KC-4.1.III.A",
-      "cards": [
-        {
-          "title": "GOLD · ELMINA",
-          "text": "A royal trade in gold from the fort built on the Gold Coast in 1482."
-        },
-        {
-          "title": "PEPPER · LISBON",
-          "text": "Lisbon became a major pepper market, and the crown ran the pepper trade itself."
-        },
-        {
-          "title": "FORTS · GOA AND MALACCA",
-          "text": "Fortified ports from Africa to India and Southeast Asia, seized in 1510 and 1511."
-        },
-        {
-          "title": "PORTS, NOT LANDS",
-          "text": "Portugal held ports and tried to control the sea trade between them."
+      "template": {
+        "visual": {
+          "url": "../assets/images/topics/4-2/4.2%20-%20Trading%20Post%20Empire.jpg",
+          "alt": "Reconstruction of a busy tropical harbor town seen from a hillside: a stone fort with cannon on a rocky point, a stone quay stacked with sacks and barrels, two large European ships at anchor among many small sailing boats",
+          "ai": true,
+          "position": "50% 58%"
         }
-      ]
+      }
     },
     {
       "kind": "case-file",
@@ -261,36 +251,15 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "face-off",
+      "kind": "map",
       "eyebrow": "Rivals · 1494",
       "title": "Two crowns split the claims.",
+      "visual": {
+        "url": "../assets/images/topics/4-2/treaty-of-tordesillas.png",
+        "alt": "BeHistorical map of Treaty of Tordesillas claims: Spain west of the approximate 1494 line, Portugal east including eastern Brazil; 370 leagues west of Cape Verde. Shading shows claimed spheres, not actual control in 1494."
+      },
       "footer": "Nobody asked the people who lived in those lands, and the northern states ignored the line.",
-      "kc": "KC-4.1.III",
-      "template": {
-        "left": {
-          "name": "Spain",
-          "note": "Lands west of the line"
-        },
-        "right": {
-          "name": "Portugal",
-          "note": "Lands east of the line, and the route around Africa"
-        },
-        "between": {
-          "label": "Divided",
-          "name": "Treaty of Tordesillas",
-          "note": "A line through the Atlantic"
-        },
-        "disputes": [
-          {
-            "tag": "Political",
-            "text": "Both crowns claimed the newly found lands, so they negotiated a line between them."
-          },
-          {
-            "tag": "Economic",
-            "text": "Each wanted its own route to the trade of Asia, closed to the other."
-          }
-        ]
-      }
+      "kc": "KC-4.1.III"
     },
     {
       "kind": "split-matrix",
@@ -505,11 +474,24 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "prompt",
+      "kind": "frame-stepin",
       "eyebrow": "Topic 4.2 · Landing Sentence",
       "title": "Rulers backed the voyages. Voyages paid back. More ships sailed.",
       "subtitle": "Rulers backed voyages because they wanted the trade of Asia, and every voyage that paid made the next one easier to fund. Next: Columbus was looking for a route to Asia. What he started was an exchange of living things nobody planned.",
-      "kc": "Unit 4: Learning Objective C"
+      "kc": "Unit 4: Learning Objective C",
+      "template": {
+        "visual": {
+          "url": "../assets/images/topics/4-2/4.2%20-%20Landing%20Slide.jpg",
+          "alt": "Reconstruction of a busy stone quay beside a river harbor: porters carry sacks and barrels off a ship, and at a table in front a clerk writes in a ledger while men weigh dark peppercorns on a brass scale",
+          "ai": true
+        },
+        "lines": [
+          "You are on the quay at Lisbon. Pepper from India is weighed and written into the books.",
+          "Rulers wanted the trade of Asia, and every voyage that paid made the next one easier to fund."
+        ],
+        "question": "Rulers backed the voyages. Voyages paid back. More ships sailed.",
+        "note": "Next: Columbus was looking for a route to Asia. What he started was an exchange of living things nobody planned."
+      }
     }
   ]
 };

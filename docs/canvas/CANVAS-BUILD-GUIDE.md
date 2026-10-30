@@ -232,7 +232,7 @@ This is the anti-drift rule, and it is the reason this guide exists.
 | OVERVIEW | The lesson data file's `commandCopy` field, rewritten into student-facing voice. `commandCopy` is written to the teacher and must not be pasted raw. |
 | LEARNING TARGETS | The data file's `learningTargets` array, **verbatim, no edits** |
 | SUCCESS CRITERIA | The data file's `successCriteria` array, **verbatim, no edits** |
-| BeHistorical Link | `https://jeffandersonlogic.github.io/ap-world-history/foundations/[shell-filename].html` |
+| BeHistorical Link | `https://behistorical.com/foundations/[shell-filename].html` |
 | ASSIGNMENT | Inserted through the Canvas RCE course-links panel, see Section 5 |
 
 For Foundations the data files are:
@@ -370,7 +370,7 @@ Notes:
   Publishing a module whose external link is wrong is the failure that reaches
   every student at once.
 - The `[External]` Foundations Hub item points at
-  `https://jeffandersonlogic.github.io/ap-world-history/foundations/index.html`.
+  `https://behistorical.com/foundations/index.html`.
 - Never link `teacher/skills-lens.html` from a Canvas module or any student-facing
   surface. It is a teacher tool.
 

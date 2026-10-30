@@ -34,13 +34,16 @@ Every script below also has an `npm run` alias; see `package.json`.
 - `node scripts/build-instructional-maps.js`, rebuild the local Map & Geography maps from `scripts/lib/instructional-map-specs.js`.
 - `node scripts/build-module-art.js`, rebuild the local module-card and per-slot fallback artwork.
 - `node scripts/build-announcements.js`, rebuild the classroom announcements board from `assets/data/announcements-schedule.js`, pulling each day's learning targets, success criteria and module list out of that topic's lesson data file. Writes the generated `assets/data/announcements.js`, never edit that file by hand. `--check` fails on drift, which is what the offline suite runs. See "Today's Required Modules" below.
-- `node scripts/build-wordmark.js`, render the BeHistorical wordmark to
-  `assets/logos/behistorical-wordmark-{light,dark}.png` from the same markup and
-  the same `behistorical-brand-lock.css` the site draws it with. Needs
-  `npm i playwright-core` and reachable Google Fonts, so it is not in any suite;
-  it exits 2 when playwright-core is absent and **fails** rather than rendering
-  in Georgia when the font does not arrive. `--check` fails on drift. See "The
-  wordmark in Canvas" below.
+- `node scripts/build-wordmark.js`, copy the supplied canonical Globe O web artwork
+  to the Canvas light/dark PNG aliases. The light alias has ivory lettering and a transparent background.
+  Offline and dependency-free; `--check` fails on drift. See "The wordmark in Canvas"
+  in `docs/claude/schedule-board-and-canvas.md`.
+- `node scripts/build-logo-on-dark.js`, render the light-lettered marks for dark
+  surfaces, `assets/logos/behistorical-wordmark-on-dark.png` and the full "AP World
+  History" lockup `behistorical-ap-world-on-dark.png`, from the supplied artwork with the
+  globe left untouched and a soft glow behind it (`--glow=none|soft|medium|strong`
+  tries another strength). Run `build-wordmark.js` after it so Canvas follows. Needs playwright to render,
+  so it is not in any suite; it exits 2 when playwright is absent.
 - `node scripts/build-canvas-events.js`, rebuild both paste-ready Canvas documents from the same schedule: the calendar events in `docs/canvas/calendar-events.md`, one per class day, and the assignment bodies in `docs/canvas/assignments.md`, one per topic. `--check` fails on drift in either. One generator, because the two objects share the masthead, the overview, the targets, the criteria, the cohort seals and the row markup, and two scripts would mean two copies of all of it. See "Green and Silver" and "Today's Required Modules" below.
 - `node scripts/test/announcements-refresh.test.js`, prove the classroom board re-reads `announcements.js` when the date rolls over, re-fetches once rather than once per clock tick, and keeps the day it has when the network is down or the file comes back unusable. In the browser suite. See "Today's Required Modules" below.
 - `node scripts/test/schedule-cohorts.test.js`, prove the alternating block contract: every day names a cohort, cohorts alternate, every topic is scheduled for both, and every due date is the assigning cohort's own next meeting. In the offline suite.
