@@ -88,12 +88,14 @@ ok('negative control: every name the Era 2 and Unit 3 assessments used is caught
 });
 
 ok('negative control: the Era 2 exam\'s own markup is caught by content alone', () => {
-  // Lines as they stood in the committed QTI file, under a harmless name.
-  const qti12 = '<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2">\n'
-    + '  <varequal respident="response_q01">q01_c2</varequal>';
+  // Lines as they stood in the committed QTI file, under a harmless name. Split
+  // like the markers, or the scan below finds them in this file.
+  const qti12 = '<' + 'questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2">\n'
+    + '  <' + 'varequal respident="response_q01">q01_c2</varequal>';
   assert.ok(contentProblem(qti12), 'QTI 1.2 not caught');
-  assert.ok(contentProblem('<assessmentItem identifier="q1"><responseDeclaration><correctResponse>'), 'QTI 2.x not caught');
-  assert.ok(contentProblem('<quiz xmlns="http://canvas.instructure.com/xsd/cccv1p0">'), 'Canvas quiz settings not caught');
+  assert.ok(contentProblem('<' + 'assessmentItem identifier="q1"><responseDeclaration>'), 'QTI 2.x item not caught');
+  assert.ok(contentProblem('<' + 'correctResponse><value>B</value>'), 'QTI 2.x answer not caught');
+  assert.ok(contentProblem('<quiz xmlns="http://canvas.instructure.com/xsd/' + 'cccv1p0">'), 'Canvas quiz settings not caught');
   assert.strictEqual(nameProblem('unit-2/notes.xml'), null, 'the harmless name should not be what catches it');
 });
 
