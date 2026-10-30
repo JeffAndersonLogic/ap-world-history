@@ -51,6 +51,7 @@ const SUITES = {
     ['scripts/test/save-health.test.js', 'a failed draft save is counted, not lost'],
     ['scripts/test/sync-engine.test.js', 'backup engine: restore, never overwrite, never write empty, bounded writes, sign-in domains'],
     ['scripts/test/class-pulse-engine.test.js', 'Class Pulse reader: every topic\'s checkpoint contract verbatim, no identifiers sent, fail-closed replies'],
+    ['scripts/test/class-pulse-handoff.test.js', 'Class Pulse by copy and paste: off for real writing, nothing identifying copied, every pasted rating checked'],
     ['scripts/test/teaching-os-architecture.test.js', 'Teaching OS shared architecture and student-deck source of truth'],
     ['scripts/test/slide-templates.test.js', 'slide templates: one library, wired into every renderer, AI label enforced'],
     ['scripts/test/deck-key-concepts.test.js', 'Key Concept band: every deck tags its own topic\'s KCs, and every renderer draws the band'],

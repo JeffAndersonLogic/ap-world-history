@@ -247,3 +247,17 @@ select.sel{max-width:100%;text-overflow:ellipsis}
 .readers-cmp{display:grid;gap:8px;border-top:1px solid var(--line);padding-top:12px}
 .readers-cmp .row{display:flex;gap:8px;align-items:flex-start;flex-wrap:nowrap}
 .readers-cmp .cell{flex:none}
+
+/* read by copy and paste */
+.steps{margin:0;padding-left:20px;display:grid;gap:2px}
+.batches{display:grid;gap:8px}
+.batch{border:1px solid var(--line);border-radius:14px;padding:10px 14px;background:#FFFDF8;display:grid;gap:8px;min-width:0}
+.batch.done{border-color:var(--lv-d)}
+.batch-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;align-items:baseline}
+.batch-top b{font-size:13px}
+.batch .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.batch details{display:grid;gap:8px}
+.batch summary{cursor:pointer;font-weight:700;font-size:12px}
+.batch textarea{width:100%;min-height:90px;border:1px solid var(--line);border-radius:10px;background:var(--bg);padding:8px 10px;font-size:12px;resize:vertical;margin-top:8px}
+.batch textarea.batch-text{font-family:ui-monospace,Menlo,monospace;font-size:11px;min-height:70px;color:var(--muted)}
+.btn.dark{background:var(--ink);border-color:var(--ink);color:#fff}

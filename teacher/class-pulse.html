@@ -101,6 +101,17 @@
         <div class="calib" id="calib"></div>
       </div>
     </div>
+    <div class="panel" id="paste-panel">
+      <h3>Read it with <span id="paste-service"></span></h3>
+      <p class="small">Paste each batch into a new chat and paste the reply back here. The chat gets the question, the criteria, the rubric and the answers, numbered: no names, no class. Every rating it sends back is checked before it shows, and one that quotes words the student did not write shows as Can't tell. <span id="paste-gate"></span></p>
+      <ol class="steps small" id="paste-steps">
+        <li>Press <b>Copy batch</b>.</li>
+        <li>Open a <b>new chat</b>, one for each batch, and paste.</li>
+        <li>When the reply finishes, press the copy button under it.</li>
+        <li>Open <b>Paste the reply</b> on the same batch, paste, and press <b>Read this reply</b>.</li>
+      </ol>
+      <div class="batches" id="paste-batches"></div>
+    </div>
     <div class="cols">
       <div style="display:grid;gap:16px;min-width:0">
         <div class="panel">
@@ -175,6 +186,7 @@
 
 <script src="../assets/data/skills-map.js"></script>
 <script src="class-pulse-engine.js"></script>
+<script src="class-pulse-handoff.js"></script>
 <script src="data/class-pulse-calibration.js"></script>
 <script src="data/class-pulse-rubrics.js"></script>
 <script src="data/class-pulse-readers.js"></script>

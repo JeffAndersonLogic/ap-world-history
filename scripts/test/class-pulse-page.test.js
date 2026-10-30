@@ -17,6 +17,10 @@
  *     level for the open criterion side by side;
  *   - the drawer quotes evidence that is really in the answer, and a teacher's
  *     agree or change moves the agreement score;
+ *   - read by copy and paste: each batch's text carries no student name, Copy puts
+ *     exactly that text on the clipboard, a pasted reply becomes the "pasted" reader
+ *     with its own reasons, an invented quote shows as Can't tell, and a reply
+ *     pasted next to the wrong batch is refused;
  *   - it fits a phone without sideways scrolling.
  *
  *   npm i --no-save playwright-core
@@ -169,6 +173,66 @@ async function suite(browser) {
   check('switching readers raises no script error', r.errors.length === 0, r.errors.join(' | '));
   await r.context.close();
 
+  section('Read by copy and paste');
+  const c = await open(browser);
+  await c.context.grantPermissions(['clipboard-read', 'clipboard-write']);
+  await choose(c.p, '5.3');
+  await c.p.click('#tab-pulse');
+  check('a topic with no writing offers nothing to copy', (await c.p.$$('#paste-batches [data-copy]')).length === 0);
+  await choose(c.p, '3.2');
+  const roster = await c.p.$$eval('#heat td.name', tds => tds.map(t => t.childNodes[0].textContent));
+  const texts = await c.p.$$eval('#paste-batches textarea[data-text]', ts => ts.map(t => t.value));
+  check('each checkpoint is offered in batches to copy', texts.length >= 2, texts.length + ' batches');
+  check('no student name is in the text to copy', roster.length > 0 && texts.every(t => roster.every(nm => !t.includes(nm))));
+  await c.p.click('#paste-batches [data-copy] >> nth=0');
+  await c.p.waitForTimeout(100);
+  const clip = await c.p.evaluate(() => navigator.clipboard.readText()).catch(() => '');
+  check('Copy batch puts exactly that text on the clipboard', clip === texts[0], clip.length + ' vs ' + texts[0].length);
+  // A reply as the chat would send it: every answer Demonstrating with a real quote,
+  // except the first, whose quote is invented.
+  const made = (() => {
+    const id = JSON.parse(texts[0].slice(texts[0].lastIndexOf('{"batch"'))).batch;
+    const answers = [...texts[0].matchAll(/<<<(A\d+)-(\w+)\n([\s\S]*?)\n\1-\2>>>/g)].map(m => ({ key: m[1], text: m[3] }));
+    const n = (texts[0].match(/"id":"criterion-\d+"/g) || []).length;
+    return { answers, json: '```json\n' + JSON.stringify({ batch: id, answers: answers.map((a, i) => ({ key: a.key, criteria: Array.from({ length: n }, (_, j) => ({ criterionId: 'criterion-' + (j + 1), category: 'D', evidence: [i === 0 ? 'words nobody wrote' : a.text.slice(0, 18)], reason: 'PASTED-REASON', misconceptions: [], uncertainty: [], reviewRequired: false })) })) }) + '\n```' };
+  })();
+  await c.p.click('#paste-batches details >> nth=0');
+  await c.p.fill('#paste-batches textarea[data-paste] >> nth=0', made.json);
+  await c.p.click('#paste-batches [data-read] >> nth=0');
+  await c.p.waitForFunction(() => /Levels read by Claude for Teachers, pasted/.test(document.getElementById('h-kind').textContent), null, { timeout: 8000 }).catch(() => {});
+  check('a pasted reply becomes the pasted reader', (await c.p.$eval('#reader', s => s.value)) === 'pasted');
+  const state = await c.p.$eval('#paste-batches .batch >> nth=0', b => b.textContent);
+  check('the batch says how many answers passed the checks', new RegExp((made.answers.length - 1) + ' of ' + made.answers.length + ' read, 1 show').test(state), state.slice(0, 160));
+  await c.p.click('#tab-live');
+  await c.p.click('#toend');
+  await c.p.click('#heat button.cell.b-D >> nth=0');
+  const pastedDrawer = await c.p.evaluate(() => ({ reason: document.querySelector('#dbody .verdict p.small').textContent, text: document.querySelector('#dbody .response').textContent }));
+  check("the drawer shows the pasted reader's reasons", pastedDrawer.reason === 'PASTED-REASON', JSON.stringify(pastedDrawer).slice(0, 200));
+  const badText = made.answers[0].text;
+  await c.p.keyboard.press('Escape');
+  const invented = await c.p.evaluate(async t => {
+    for (const b of document.querySelectorAll('#heat button.cell')) {
+      b.click();
+      const r = document.querySelector('#dbody .response');
+      const hit = r && r.textContent === t;
+      const prop = (document.querySelector('#dbody .verdict b') || {}).textContent || '';
+      document.getElementById('dclose').click();
+      if (hit) return prop;
+    }
+    return 'not found';
+  }, badText);
+  check('the answer with an invented quote shows as Can\'t tell', /Can't tell/.test(invented), invented);
+  await c.p.click('#tab-pulse');
+  if (texts.length > 1) {
+    await c.p.click('#paste-batches details >> nth=1');
+    await c.p.fill('#paste-batches textarea[data-paste] >> nth=1', made.json);
+    await c.p.click('#paste-batches [data-read] >> nth=1');
+    const said = await c.p.$eval('#paste-batches [data-said] >> nth=1', x => x.textContent);
+    check('a reply pasted next to the wrong batch is refused', /different batch/.test(said), said);
+  }
+  check('copying and pasting raises no script error', c.errors.length === 0, c.errors.join(' | '));
+  await c.context.close();
+
   section('A phone');
   for (const t of ['live', 'pulse', 'course', 'student']) {
     const m = await open(browser, 390);
@@ -191,7 +255,9 @@ async function suite(browser) {
     { name: 'the grid assumes three criteria', file: 'teacher/class-pulse-app.js', from: 'CPS.forEach(cp => contracts[cp].criteria.forEach(', to: 'CPS.forEach(cp => contracts[cp].criteria.slice(0, 3).forEach(', expect: /follow the topic's criteria/ },
     { name: 'the policy allows the network', file: 'teacher/class-pulse.html', from: "img-src 'self' data:; connect-src 'none'", to: "img-src 'self' data:; connect-src *", expect: /cannot reach the network|fetch from the page is refused/ },
     { name: 'projector mode keeps names', file: 'teacher/class-pulse-app.js', from: "S.names === 'anon' ?", to: 'false ?', expect: /hides every name/ },
-    { name: 'the reader menu changes nothing', file: 'teacher/class-pulse-app.js', from: "S.reader === 'invented' ? demo.provider : recordedProvider(S.reader, demo)", to: 'demo.provider', expect: /recorded reader's levels/ },
+    { name: 'the reader menu changes nothing', file: 'teacher/class-pulse-app.js', from: "S.reader === 'invented' ? demo.provider\n      :", to: 'true ? demo.provider\n      :', expect: /recorded reader's levels/ },
+    { name: 'pasted replies are ignored', file: 'teacher/class-pulse-app.js', from: ": H && S.reader === H.READER.id ? H.provider([...pastedHere().values()]) : recordedProvider(S.reader, demo)", to: ": H && S.reader === H.READER.id ? demo.provider : recordedProvider(S.reader, demo)", expect: /pasted reader's reasons/ },
+    { name: 'the copy button copies something else', file: 'teacher/class-pulse-app.js', from: 'await navigator.clipboard.writeText(text);', to: "await navigator.clipboard.writeText(text + ' ');", expect: /exactly that text/ },
     { name: 'bars drop students who did not submit', file: 'teacher/class-pulse-app.js', from: 'D.students.forEach(st => { cnt[endBand(st, c)]++; });', to: "D.students.forEach(st => { const b = endBand(st, c); if (b !== 'none') cnt[b]++; });", expect: /every student counted/ }
   ];
   let controlFailures = 0;

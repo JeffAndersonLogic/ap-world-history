@@ -500,3 +500,34 @@ gains a field beyond its id, topic, checkpoint and text, and Unit 3 readings sta
 readers file until the review is done. The calibration
 page itself, and the scripts that rebuild it from this repository, live in AndersonLogic-OS
 `04_PRODUCTS/BeHistorical/Class-Pulse-Calibration/`.
+
+### Class Pulse by copy and paste, added 2026-10-30
+
+**The pilot reads by copy and paste, not through a server.** Claude for Teachers and
+ChatGPT for Teachers, the free accounts Jeff asked ZCS about on 2026-10-28, are chat apps
+with no developer access, so no page can call them. On After class the teacher page offers
+each checkpoint's submitted answers in batches of 15: **Copy batch**, paste into a new chat,
+paste the reply back, **Read this reply**. The replies become one more reader, "Claude for
+Teachers, pasted", and are kept for that page load only. The page still cannot reach the
+network (`connect-src 'none'`); copying is the clipboard, not a request.
+
+**What is copied is what the engine would send a model.** `teacher/class-pulse-handoff.js`
+builds the text from the engine's own `INSTRUCTIONS`, the checkpoint contract with its
+rubric, and the answer text, numbered A01, A02 and so on in fingerprint order. No name,
+response key, class, confidence or timestamp, and two students with the same words are one
+answer. Only work the engine's `eligibility()` accepts is copied, so drafts never are.
+
+**The reply is never trusted.** It is read answer by answer with the engine's
+`validateOutput()`, then run through the engine as a provider, so an invented quote, a
+missing criterion, an answer left out or a rating given twice shows as Can't tell, and a
+reply pasted next to the wrong batch is refused.
+
+**Real writing is off.** `APPROVAL` in the handoff file is `{ realWork: false }`. Invented
+answers need no approval; real ones are offered for copying only once ZCS approves in
+writing and `APPROVAL.reference` names who and when, and `privacy.html` must say what is
+sent and where before that change reaches students.
+
+**Checks.** `scripts/test/class-pulse-handoff.test.js` in the offline suite (eight negative
+controls), and a copy-and-paste section in `scripts/test/class-pulse-page.test.js` (two
+more). The calibration practice that measures how Claude for Teachers reads a batch lives in
+AndersonLogic-OS `04_PRODUCTS/BeHistorical/Class-Pulse-Calibration/`.

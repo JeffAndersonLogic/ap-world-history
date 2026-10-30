@@ -14,6 +14,12 @@
  * for the open criterion side by side. In the real tool the menu lists only readers
  * the district has approved, and changing it reads the work again.
  *
+ * Read by copy and paste (class-pulse-handoff.js): on After class the teacher copies
+ * each checkpoint's answers in batches, pastes them into Claude for Teachers, and
+ * pastes the reply back. The replies become one more reader, "Claude for Teachers,
+ * pasted", run through the engine like any other, and are kept for this page load
+ * only. Real writing is never offered for copying until the district approves.
+ *
  * Levels: D Demonstrating, P Partly there, N Not yet, U Can't tell. Colors are
  * Cardinal red, Ridge gold and Teaching navy (Jeff, 2026-10-23). */
 (function () {
@@ -23,6 +29,7 @@
   const Calib = window.BHClassPulseCalibration;
   const Rubrics = window.BHClassPulseRubrics;
   const Readers = window.BHClassPulseReaders;
+  const H = window.BHClassPulseHandoff;
   const MAP = window.BEHISTORICAL_SKILLS_MAP;
   const $ = s => document.querySelector(s);
   const $$ = s => Array.from(document.querySelectorAll(s));
@@ -48,7 +55,8 @@
   const S = {
     tab: 'live', topic: TOPICS.includes('3.2') ? '3.2' : TOPICS[0], section: 'S2',
     minute: 31, playing: false, timer: null, names: 'names', sort: 'roster', cmetric: 'ev', stu: 0,
-    overrides: new Map(), loadToken: 0, reader: 'invented'
+    overrides: new Map(), loadToken: 0, reader: 'invented',
+    pasted: new Map() // topic|section -> Map(batch id -> { checkpoint, read, at })
   };
   let D = null; // { contracts, kind, students, rows, results, cols }
 
@@ -57,13 +65,22 @@
     const all = (Readers && Readers.RECORDED[readerId]) || {};
     return Object.keys(all).filter(id => Readers.topicOf(id) === topicKey);
   }
-  function readerAvailable(readerId, topicKey) { return readerId === 'invented' || recordedFor(readerId, topicKey).length > 0; }
-  function readerLabel(readerId) { const r = Readers && Readers.READERS.find(x => x.id === readerId); return r ? r.label : readerId; }
+  const pastedHere = () => S.pasted.get(S.topic + '|' + S.section) || new Map();
+  function readerAvailable(readerId, topicKey) {
+    if (H && readerId === H.READER.id) return topicKey === S.topic && pastedHere().size > 0;
+    return readerId === 'invented' || recordedFor(readerId, topicKey).length > 0;
+  }
+  function readerLabel(readerId) {
+    if (H && readerId === H.READER.id) return H.READER.label;
+    const r = Readers && Readers.READERS.find(x => x.id === readerId); return r ? r.label : readerId;
+  }
   function renderReaderPick() {
     if (!Readers) { $('#reader').closest('div').hidden = true; return; }
-    $('#reader').innerHTML = Readers.READERS.map(r => {
+    const list = Readers.READERS.concat(H ? [H.READER] : []);
+    $('#reader').innerHTML = list.map(r => {
       const ok = readerAvailable(r.id, S.topic);
-      return `<option value="${r.id}"${r.id === S.reader ? ' selected' : ''}${ok ? '' : ' disabled'}>${esc(r.label)}${ok ? '' : ' (not run on this topic yet)'}</option>`;
+      const why = H && r.id === H.READER.id ? ' (paste a reply on After class first)' : ' (not run on this topic yet)';
+      return `<option value="${r.id}"${r.id === S.reader ? ' selected' : ''}${ok ? '' : ' disabled'}>${esc(r.label)}${ok ? '' : why}</option>`;
     }).join('');
   }
   // Replays one reader's recorded replies. The engine only ever hands a provider the
@@ -89,19 +106,23 @@
     const demo = Demo.build(S.topic, contracts, S.section, Calib);
     if (!readerAvailable(S.reader, S.topic)) S.reader = 'invented';
     renderReaderPick();
-    const engine = E.createEngine({ provider: S.reader === 'invented' ? demo.provider : recordedProvider(S.reader, demo) });
+    const engine = E.createEngine({ provider: S.reader === 'invented' ? demo.provider
+      : H && S.reader === H.READER.id ? H.provider([...pastedHere().values()]) : recordedProvider(S.reader, demo) });
     const results = { cp1: new Map(), cp2: new Map() };
     for (const cp of CPS) {
       const rows = demo.rows[cp].filter(r => r.completionState !== 'missing');
       const out = await engine.analyzeMany(rows, contracts[cp]);
       out.forEach((r, i) => results[cp].set(rows[i].student, { result: r, row: rows[i] }));
     }
+    const batches = { cp1: [], cp2: [] };
+    if (H) for (const cp of CPS) batches[cp] = await H.batches(contracts[cp], demo.rows[cp]);
     if (token !== S.loadToken) return; // a newer choice arrived while this one loaded
     const cols = [];
     CPS.forEach(cp => contracts[cp].criteria.forEach((c, i) => cols.push({ id: cp + '-' + i, cp, ci: i, criterionId: c.id, text: c.text, group: CP_NAME[cp], short: 'C' + (i + 1) })));
-    D = { contracts, kind: demo.kind, students: demo.students, rows: demo.rows, results, cols };
+    D = { contracts, kind: demo.kind, students: demo.students, rows: demo.rows, results, cols, batches };
     S.overrides = new Map();
     renderAll();
+    renderPaste();
   }
 
   function title(topicKey) { const t = MAP.topics[topicKey]; return t ? topicKey + ' ' + t.title : topicKey; }
@@ -379,6 +400,60 @@
     showDrawer();
   }
 
+  // ── Read by copy and paste ────────────────────────────────────────────────
+  // Rendered when a topic or class loads and after each pasted reply, never on the
+  // ordinary redraws, so a reply half pasted into a box is not wiped.
+  function batchOf(id) { for (const cp of CPS) { const b = D.batches[cp].find(x => x.id === id); if (b) return { cp, b }; } return null; }
+  function renderPaste() {
+    if (!H) { $('#paste-panel').hidden = true; return; }
+    const rows = CPS.flatMap(cp => D.rows[cp].filter(r => !E.eligibility(r)));
+    const gate = H.gate(rows);
+    const open = new Set($$('#paste-batches details[open]').map(d => d.dataset.batch));
+    $('#paste-service').textContent = H.SERVICE;
+    $('#paste-gate').textContent = gate.reason;
+    let h = '';
+    if (D.kind === 'levels') h = '<p class="small">This topic has invented levels but no invented writing, so there is nothing to copy. Topics 2.3 and 3.2 have writing.</p>';
+    else if (!gate.ok) h = '';
+    else CPS.forEach(cp => D.batches[cp].forEach((b, n) => {
+      const got = pastedHere().get(b.id), first = b.answers[0].key, last = b.answers[b.answers.length - 1].key;
+      const state = got ? got.read.passed + ' of ' + b.answers.length + ' read' + (got.read.failed + got.read.missing ? ', ' + (got.read.failed + got.read.missing) + ' show as Can\'t tell' : '') : 'Not pasted yet';
+      h += `<div class="batch${got ? ' done' : ''}"><div class="batch-top"><b>${CP_NAME[cp]}, batch ${n + 1} of ${D.batches[cp].length}</b><span class="small">Answers ${first} to ${last} · ${esc(state)}</span></div>
+        <div class="row"><button class="btn primary" type="button" data-copy="${b.id}">Copy batch</button><span class="small" data-copied="${b.id}" role="status"></span></div>
+        <details data-batch="${b.id}"${open.has(b.id) ? ' open' : ''}><summary>Paste the reply</summary>
+          <textarea data-paste="${b.id}" aria-label="${CP_NAME[cp]}, batch ${n + 1}: paste the reply" placeholder="Paste the whole reply here"></textarea>
+          <div class="row"><button class="btn dark" type="button" data-read="${b.id}">Read this reply</button><span class="small" data-said="${b.id}" role="status"></span></div>
+          <p class="small">If Copy does not work on this device, select all of the text below and copy it yourself.</p>
+          <textarea readonly class="batch-text" data-text="${b.id}" aria-label="The text to paste">${esc(H.promptFor(D.contracts[cp], b))}</textarea>
+        </details></div>`;
+    }));
+    $('#paste-batches').innerHTML = h;
+    $('#paste-steps').hidden = !gate.ok || D.kind === 'levels';
+  }
+  async function copyBatch(id) {
+    const { cp, b } = batchOf(id), text = H.promptFor(D.contracts[cp], b), note = $(`[data-copied="${id}"]`);
+    let done = false;
+    try { await navigator.clipboard.writeText(text); done = true; }
+    catch (_) {
+      const t = $(`[data-text="${id}"]`); t.closest('details').open = true; t.select();
+      try { done = document.execCommand('copy'); } catch (__) { done = false; }
+    }
+    note.textContent = done ? 'Copied. Paste it into a new chat in ' + H.SERVICE + '.' : 'This browser blocked copying. Open "Paste the reply" and copy the text there yourself.';
+  }
+  function readPasted(id) {
+    const { cp, b } = batchOf(id), raw = $(`[data-paste="${id}"]`).value, say = $(`[data-said="${id}"]`);
+    if (!raw.trim()) { say.textContent = 'Paste the reply first.'; return; }
+    let read;
+    try { read = H.readReply(D.contracts[cp], b, raw); }
+    catch (err) { say.textContent = err.message; return; }
+    const key = S.topic + '|' + S.section;
+    if (!S.pasted.has(key)) S.pasted.set(key, new Map());
+    S.pasted.get(key).set(id, { checkpoint: cp, read, at: new Date().toISOString() });
+    const bad = read.failed + read.missing;
+    $('#announce').textContent = read.passed + ' of ' + b.answers.length + ' answers read' + (bad ? '; ' + bad + ' did not pass the checks and show as Can\'t tell' : '');
+    S.reader = H.READER.id;
+    load();
+  }
+
   // ── Across the course (invented numbers except the selected cell) ──────────
   function bucket(v) { return v < 20 ? 1 : v < 40 ? 2 : v < 60 ? 3 : v < 80 ? 4 : 5; }
   function computedShare(which) {
@@ -499,7 +574,9 @@
     const ag = e.target.closest('[data-agree]'); if (ag) { const [s, c] = ag.dataset.agree.split('|'); const col = D.cols.find(x => x.id === c); record(Number(s), c, entry(D.students[Number(s)], col.cp).result.criteria[col.ci].category, true); return; }
     const st = e.target.closest('[data-set]'); if (st) { const [s, c, b] = st.dataset.set.split('|'); record(Number(s), c, b, false); return; }
     const sg = e.target.closest('[data-seg]'); if (sg) { showSegment(sg.dataset.seg); return; }
-    const go = e.target.closest('[data-goto]'); if (go) { setTab(go.dataset.goto); }
+    const go = e.target.closest('[data-goto]'); if (go) { setTab(go.dataset.goto); return; }
+    const cp = e.target.closest('[data-copy]'); if (cp) { copyBatch(cp.dataset.copy); return; }
+    const rd = e.target.closest('[data-read]'); if (rd) readPasted(rd.dataset.read);
   });
 
   setTab((location.hash || '').slice(1) || 'live');
