@@ -23,6 +23,16 @@
  * teacher removes it from the copy or keeps it. Real writing is never offered for
  * copying until the district approves.
  *
+ * My class (live, class-pulse-live.js): the teacher signs in with a school staff
+ * account and the page reads, from the district database, the Checkpoint 1 and 2
+ * answers of students on that teacher's class list, counting only answers whose
+ * Submit receipt still matches. Ratings pasted back are saved to the teacher's own
+ * area of the database and read back on every load, so they are there tomorrow.
+ * A submitted answer with no saved rating shows as "not read yet", never as a
+ * level. Copying real writing out stays locked until the district approves
+ * (APPROVAL in class-pulse-handoff.js). Across the course and One student are
+ * demo-only and are switched off in My class.
+ *
  * Levels: D Demonstrating, P Partly there, N Not yet, U Can't tell. Colors are
  * Cardinal red, Ridge gold and Teaching navy (Jeff, 2026-10-23). */
 (function () {
@@ -60,7 +70,9 @@
     minute: 31, playing: false, timer: null, names: 'names', sort: 'roster', cmetric: 'ev', stu: 0,
     overrides: new Map(), loadToken: 0, reader: 'invented',
     pasted: new Map(), // topic|section -> Map(batch id -> { checkpoint, read, at })
-    checks: new Map()  // batch id -> the teacher's decisions in the check before copying
+    checks: new Map(), // batch id -> the teacher's decisions in the check before copying
+    source: 'demo',    // 'demo' (invented students) or 'live' (my class, from the database)
+    live: null         // { auth, api, roster } once My class is chosen
   };
   let D = null; // { contracts, kind, students, rows, results, cols }
 
@@ -107,26 +119,111 @@
   async function load() {
     const token = ++S.loadToken;
     const contracts = { cp1: E.contractFor(MAP, S.topic, 'cp1', Rubrics), cp2: E.contractFor(MAP, S.topic, 'cp2', Rubrics) };
-    const demo = Demo.build(S.topic, contracts, S.section, Calib);
-    if (!readerAvailable(S.reader, S.topic)) S.reader = 'invented';
-    renderReaderPick();
-    const engine = E.createEngine({ provider: S.reader === 'invented' ? demo.provider
-      : H && S.reader === H.READER.id ? H.provider([...pastedHere().values()]) : recordedProvider(S.reader, demo) });
-    const results = { cp1: new Map(), cp2: new Map() };
+    let src, provider;
+    if (S.source === 'live') {
+      try { src = await liveBuild(); }
+      catch (e) { if (token === S.loadToken) liveSay(e.message); return; }
+      provider = src.provider;
+    } else {
+      src = Demo.build(S.topic, contracts, S.section, Calib);
+      if (!readerAvailable(S.reader, S.topic)) S.reader = 'invented';
+      renderReaderPick();
+      provider = S.reader === 'invented' ? src.provider
+        : H && S.reader === H.READER.id ? H.provider([...pastedHere().values()]) : recordedProvider(S.reader, src);
+    }
+    const engine = E.createEngine({ provider });
+    const results = { cp1: new Map(), cp2: new Map() }, unread = new Set();
     for (const cp of CPS) {
-      const rows = demo.rows[cp].filter(r => r.completionState !== 'missing');
+      const rows = src.rows[cp].filter(r => r.completionState !== 'missing');
       const out = await engine.analyzeMany(rows, contracts[cp]);
-      out.forEach((r, i) => results[cp].set(rows[i].student, { result: r, row: rows[i] }));
+      out.forEach((r, i) => {
+        results[cp].set(rows[i].student, { result: r, row: rows[i] });
+        // Read by nobody yet, as opposed to read and found unclear.
+        if (provider.has && !E.eligibility(rows[i]) && !provider.has(cp, rows[i].text)) unread.add(cp + '|' + rows[i].student);
+      });
     }
     const batches = { cp1: [], cp2: [] };
-    if (H) for (const cp of CPS) batches[cp] = await H.batches(contracts[cp], demo.rows[cp]);
+    if (H) for (const cp of CPS) batches[cp] = await H.batches(contracts[cp], src.rows[cp]);
     if (token !== S.loadToken) return; // a newer choice arrived while this one loaded
     const cols = [];
     CPS.forEach(cp => contracts[cp].criteria.forEach((c, i) => cols.push({ id: cp + '-' + i, cp, ci: i, criterionId: c.id, text: c.text, group: CP_NAME[cp], short: 'C' + (i + 1) })));
-    D = { contracts, kind: demo.kind, students: demo.students, rows: demo.rows, results, cols, batches };
+    D = { contracts, kind: src.kind, students: src.students, rows: src.rows, results, cols, batches, unread };
     S.overrides = new Map();
     renderAll();
     renderPaste();
+    if (S.source === 'live' && S.live && S.live.roster) {
+      const sub = CPS.map(cp => src.rows[cp].filter(r => r.completionState === 'verified-submission').length);
+      liveSay(`${S.live.roster.classLabel}, Topic ${S.topic}: ${sub[0]} submitted Checkpoint 1, ${sub[1]} submitted Checkpoint 2, pulled ${new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}.`);
+    }
+  }
+
+  // ── My class, from the database ───────────────────────────────────────────
+  function liveSay(t) { $('#live-status').textContent = t; }
+  function classLabel() { return S.source === 'live' && S.live && S.live.roster ? S.live.roster.classLabel : S.section; }
+  // The same shape Demo.build returns. With no class list yet, an empty class.
+  async function liveBuild() {
+    const L = S.live;
+    if (!L || !L.roster) return { kind: 'live', students: [], rows: { cp1: [], cp2: [] }, provider: { id: 'none', version: '1', has: () => false, async interpret() { throw new Error('Not read yet'); } } };
+    const rows = await L.api.answers(S.topic, L.roster.students);
+    const ratings = await L.api.ratings(S.topic);
+    const students = L.roster.students.map((st, i) => ({
+      i, name: st.label, uid: st.uid, absent: false, strength: .5,
+      submittedAt: { cp1: rows.cp1[i].completionState === 'verified-submission' ? 0 : null, cp2: rows.cp2[i].completionState === 'verified-submission' ? 0 : null },
+      confidence: { cp1: rows.cp1[i].confidence, cp2: rows.cp2[i].confidence }
+    }));
+    // A saved rating counts only for the very answer it was made from.
+    const byText = new Map();
+    CPS.forEach(cp => rows[cp].forEach(r => {
+      const g = ratings.get(r.uid + '|' + cp);
+      if (g && r.completionState === 'verified-submission' && g.fingerprint === r.fingerprint) byText.set(cp + '|' + r.text, g.criteria);
+    }));
+    return { kind: 'live', students, rows, provider: {
+      id: 'saved-ratings', version: '1', has: (cp, text) => byText.has(cp + '|' + text),
+      async interpret({ contract, response }) {
+        const c = byText.get(contract.checkpoint + '|' + response.text);
+        if (!c) throw new Error('Not read yet');
+        return { criteria: JSON.parse(JSON.stringify(c)) };
+      }
+    } };
+  }
+  function startLive() {
+    if (S.live) return;
+    const cfg = window.BH_CLASS_PULSE_CONFIG, T = window.BHSyncTransport, LV = window.BHClassPulseLive, Sync = window.BHSync;
+    if (!cfg || !T || !LV || !Sync) { liveSay('My class is not available on this copy of the page.'); return; }
+    const auth = T.createAuth(cfg);
+    const api = LV.create({ projectId: cfg.firebase.projectId, tenantId: cfg.tenantId, getUser: () => auth.user(), getToken: () => auth.getToken(), valueHash: Sync.valueHash });
+    S.live = { auth, api, roster: null };
+    liveSay('Loading sign-in...');
+    auth.ready().then(() => { if (auth.user()) connect(); else liveSay('Sign in to see your class.'); },
+      () => liveSay('Sign-in could not load. Check the connection and choose My class again.'));
+  }
+  async function connect() {
+    liveSay('Reading your class list...');
+    try { S.live.roster = await S.live.api.roster(); }
+    catch (e) { liveSay(e.message); return; }
+    $('#live-signin').hidden = true;
+    $('#live-refresh').hidden = false;
+    applySource();
+    load();
+  }
+  function applySource() {
+    const live = S.source === 'live';
+    $$('#source button').forEach(b => b.setAttribute('aria-pressed', b.dataset.v === S.source));
+    $('#live-panel').hidden = !live;
+    ['#play', '#toend', '#reset'].forEach(id => { $(id).hidden = live; });
+    $('.clock').hidden = live;
+    $('#reader').closest('div').hidden = live || !Readers;
+    $('#section').disabled = live;
+    $('#section').innerHTML = live
+      ? `<option>${esc(S.live && S.live.roster ? S.live.roster.classLabel + ' (' + S.live.roster.students.length + ' students)' : 'Sign in first')}</option>`
+      : Demo.SECTIONS.map(x => `<option value="${x.id}"${x.id === S.section ? ' selected' : ''}>${x.id}, ${x.cohort} (${x.size} students)</option>`).join('');
+    ['course', 'student'].forEach(t => { const b = $('#tab-' + t); b.disabled = live; b.title = live ? 'Demo only for now' : ''; });
+    if (live && (S.tab === 'course' || S.tab === 'student')) setTab('live');
+    $('#mode-pill').textContent = live ? 'My class: real students' : 'Demo: invented students';
+    $('#hero-lede').textContent = live
+      ? 'How each student\'s submitted Checkpoint 1 and 2 writing meets each criterion, from the district database. Only you can see this, and only for students on your class list.'
+      : 'How each student\'s Checkpoint 1 and 2 writing meets each criterion, as they submit it. Every student and answer here is invented. Real work is read only after the district approves.';
+    if (live) { stop(); S.minute = END; startLive(); }
   }
 
   function title(topicKey) { const t = MAP.topics[topicKey]; return t ? topicKey + ' ' + t.title : topicKey; }
@@ -139,7 +236,7 @@
     if (at == null) return minute >= END ? 'none' : 'empty';
     if (minute < at) return 'empty';
     if (minute < at + READING_FOR) return 'busy';
-    return entry(st, cp) ? 'done' : 'none';
+    return entry(st, cp) ? (D.unread.has(cp + '|' + st.i) ? 'unread' : 'done') : 'none';
   }
   function overrideFor(e, col) {
     const o = S.overrides.get(e.result.key + '|' + col.criterionId);
@@ -151,13 +248,17 @@
     const o = overrideFor(e, col);
     return o ? o.category : e.result.criteria[col.ci].category;
   }
-  function endBand(st, col) { return st.submittedAt[col.cp] == null || !entry(st, col.cp) ? 'none' : band(st, col); }
+  function endBand(st, col) {
+    if (st.submittedAt[col.cp] == null || !entry(st, col.cp)) return 'none';
+    return D.unread.has(col.cp + '|' + st.i) ? 'wait' : band(st, col);
+  }
 
   // ── During class ──────────────────────────────────────────────────────────
   function legend() {
     return '<span class="m-rn" style="display:contents">' + ['D', 'P', 'N'].map(k => `<span><i class="sw cell b-${k}">${k}</i>${BANDS[k]}</span>`).join('') + '</span>' +
       '<span><i class="sw cell b-U">?</i>Can\'t tell, check it</span><span><i class="sw cell b-busy">&middot;</i>Reading it now</span>' +
       '<span><i class="sw cell b-empty"></i>Not submitted yet</span>' +
+      (D.unread.size ? '<span><i class="sw cell b-wait">&middot;</i>Submitted, not read yet</span>' : '') +
       '<span><i class="sw" style="position:relative;background:var(--inset)"><i style="position:absolute;top:3px;right:3px;width:6px;height:6px;border-radius:50%;background:var(--accent)"></i></i>You changed it</span>';
   }
   function needScore(st) {
@@ -166,7 +267,7 @@
     return n;
   }
   function renderLive() {
-    $('#live-sub').textContent = 'Topic ' + title(S.topic) + ' · ' + S.section + ' · fills in as checkpoints are submitted';
+    $('#live-sub').textContent = 'Topic ' + title(S.topic) + ' · ' + classLabel() + (S.source === 'live' ? ' · submitted answers, as of your last pull' : ' · fills in as checkpoints are submitted');
     $('#legend-live').innerHTML = legend();
     const rows = D.students.slice();
     if (S.sort === 'need') rows.sort((a, b) => needScore(b) - needScore(a) || a.i - b.i);
@@ -194,6 +295,7 @@
         if (s === 'empty') h += '<td><span class="cell b-empty"></span></td>';
         else if (s === 'none') h += '<td><span class="cell b-none" title="Not submitted">&ndash;</span></td>';
         else if (s === 'busy') h += '<td><span class="cell b-busy" title="Reading it now">&middot;</span></td>';
+        else if (s === 'unread') h += '<td><span class="cell b-wait" title="Submitted, not read yet">&middot;</span></td>';
         else {
           const b = band(st, c), e = entry(st, c.cp), o = overrideFor(e, c);
           h += `<td><button type="button" class="cell b-${b}${o && !o.agreed ? ' over' : ''}" data-s="${st.i}" data-c="${c.id}" aria-label="${esc(shown(st))}, ${c.group} ${c.short}: ${BANDS[b]}">${LETTER[b]}</button></td>`;
@@ -238,15 +340,15 @@
     let inN = 0;
     D.students.forEach(st => CPS.forEach(cp => { if (status(st, cp, S.minute) === 'done') inN++; }));
     $('#h-n').textContent = D.students.length;
-    $('#h-n-label').textContent = 'Students in ' + S.section;
+    $('#h-n-label').textContent = 'Students in ' + classLabel();
     $('#h-in').textContent = inN;
     $('#h-need').textContent = D.students.filter(needsYou).length;
     $('#h-topic').textContent = title(S.topic);
-    $('#h-min').textContent = S.minute >= END ? 'Bell rang' : 'Minute ' + Math.floor(S.minute) + ' of ' + END;
-    $('#h-kind').textContent = (D.kind === 'written' ? 'Invented answers with invented writing.'
+    $('#h-min').textContent = S.source === 'live' ? 'Live' : S.minute >= END ? 'Bell rang' : 'Minute ' + Math.floor(S.minute) + ' of ' + END;
+    $('#h-kind').textContent = D.kind === 'live' ? (D.students.length ? 'Your students\' submitted answers. ' + (D.unread.size ? D.unread.size + ' submitted answers are not read yet.' : 'Every submitted answer is read.') : 'Sign in with your school account to see your class.') : ((D.kind === 'written' ? 'Invented answers with invented writing.'
       : D.kind === 'calibration' ? 'The forty invented calibration answers, dealt round the class.'
       : 'Invented levels only. This topic has no invented writing yet.') +
-      (S.reader === 'invented' ? '' : ' Levels read by ' + readerLabel(S.reader) + '.');
+      (S.reader === 'invented' ? '' : ' Levels read by ' + readerLabel(S.reader) + '.'));
   }
   function tick() { S.minute += .75; if (S.minute >= END) { S.minute = END; stop(); } renderLive(); }
   function play() { if (S.minute >= END) S.minute = 0; S.playing = true; S.timer = setInterval(tick, 400); renderLive(); }
@@ -319,7 +421,7 @@
   function renderPulse() {
     const n = D.students.length;
     const sub = CPS.map(cp => D.students.filter(st => st.submittedAt[cp] != null).length);
-    $('#pulse-title').textContent = 'Topic ' + title(S.topic) + ', ' + S.section;
+    $('#pulse-title').textContent = 'Topic ' + title(S.topic) + ', ' + classLabel();
     $('#pulse-n').textContent = `All ${n} students counted. ${sub[0]} submitted Checkpoint 1, ${sub[1]} submitted Checkpoint 2. Anyone missing shows as their own segment.`;
     let checks = 0, agree = 0;
     S.overrides.forEach(o => { checks++; if (o.agreed) agree++; });
@@ -332,11 +434,11 @@
       slot.learningTargets.forEach(t => { h += `<p class="target-q">${esc(t)}</p>`; });
       if (slot.coverageNote) h += `<p class="small">${esc(slot.coverageNote)}</p>`;
       D.cols.filter(c => c.cp === cp).forEach(c => {
-        const cnt = { D: 0, P: 0, N: 0, U: 0, none: 0 };
+        const cnt = { D: 0, P: 0, N: 0, U: 0, wait: 0, none: 0 };
         D.students.forEach(st => { cnt[endBand(st, c)]++; });
         h += `<div class="critrow"><div class="lbl">Criterion ${c.ci + 1}<small>${esc(c.text)}</small></div>
-          <div class="stack m-rn">${['N', 'P', 'D', 'U', 'none'].map(k => cnt[k] ? `<i class="${k === 'none' ? 'b-empty' : 'b-' + k}" style="flex:${cnt[k]}" data-seg="${c.id}|${k}" title="${k === 'none' ? 'Not submitted' : BANDS[k]}: ${cnt[k]}">${cnt[k]}</i>` : '').join('')}</div>
-          <div class="counts">${cnt.D} D · ${cnt.P} P · ${cnt.N} N${cnt.U ? ' · ' + cnt.U + ' ?' : ''}${cnt.none ? ' · ' + cnt.none + ' missing' : ''}</div></div>`;
+          <div class="stack m-rn">${['N', 'P', 'D', 'U', 'wait', 'none'].map(k => cnt[k] ? `<i class="${k === 'none' ? 'b-empty' : 'b-' + k}" style="flex:${cnt[k]}" data-seg="${c.id}|${k}" title="${k === 'none' ? 'Not submitted' : k === 'wait' ? 'Not read yet' : BANDS[k]}: ${cnt[k]}">${cnt[k]}</i>` : '').join('')}</div>
+          <div class="counts">${cnt.D} D · ${cnt.P} P · ${cnt.N} N${cnt.U ? ' · ' + cnt.U + ' ?' : ''}${cnt.wait ? ' · ' + cnt.wait + ' not read yet' : ''}${cnt.none ? ' · ' + cnt.none + ' missing' : ''}</div></div>`;
       });
       h += '</div>';
     });
@@ -351,7 +453,7 @@
       : '<p class="small">No wrong ideas found.</p>';
 
     let weakest = null;
-    D.cols.forEach(c => { let n2 = 0, bad = 0; D.students.forEach(st => { const b = endBand(st, c); if (b !== 'none' && b !== 'U') { n2++; if (b !== 'D') bad++; } }); if (n2 && (!weakest || bad / n2 > weakest.r)) weakest = { c, r: bad / n2 }; });
+    D.cols.forEach(c => { let n2 = 0, bad = 0; D.students.forEach(st => { const b = endBand(st, c); if (b !== 'none' && b !== 'U' && b !== 'wait') { n2++; if (b !== 'D') bad++; } }); if (n2 && (!weakest || bad / n2 > weakest.r)) weakest = { c, r: bad / n2 }; });
     if (weakest) {
       const g = { N: [], P: [], D: [], other: [] };
       D.students.forEach(st => { const b = endBand(st, weakest.c); (g[b] || g.other).push(st); });
@@ -360,7 +462,7 @@
         list('Reteach with you', g.N, 'Model one strong answer aloud, then have them rewrite that part of their own.') +
         list('Revise in pairs', g.P, 'Trade answers, find what the criterion still needs, add it.') +
         list('Stretch', g.D, 'Add another example or write the strongest counterargument.') +
-        (g.other.length ? `<p class="small" style="grid-column:1/-1">Not placed (not submitted, or the tool could not tell): ${g.other.map(st => esc(shown(st))).join(', ')}</p>` : '');
+        (g.other.length ? `<p class="small" style="grid-column:1/-1">Not placed (not submitted, not read yet, or the tool could not tell): ${g.other.map(st => esc(shown(st))).join(', ')}</p>` : '');
     }
     renderScatter();
   }
@@ -373,7 +475,7 @@
       const conf = Number(st.confidence.cp1);
       if (!conf) { blank++; return; }
       let d = 0, n = 0;
-      D.cols.forEach(c => { const b = endBand(st, c); if (b !== 'none') { n++; if (b === 'D') d++; } });
+      D.cols.forEach(c => { const b = endBand(st, c); if (b !== 'none' && b !== 'wait') { n++; if (b === 'D') d++; } });
       pts.push({ st, x: conf, y: n ? d / n : 0 });
     });
     const jit = Demo.mulberry32(77);
@@ -398,9 +500,9 @@
     const col = D.cols.find(c => c.id === colId);
     const who = D.students.filter(st => endBand(st, col) === b);
     lastFocus = document.activeElement;
-    $('#dtitle').textContent = (b === 'none' ? 'Not submitted' : BANDS[b]) + ' · ' + who.length;
+    $('#dtitle').textContent = (b === 'none' ? 'Not submitted' : b === 'wait' ? 'Not read yet' : BANDS[b]) + ' · ' + who.length;
     $('#dsub').textContent = col.group + ', criterion ' + (col.ci + 1);
-    $('#dbody').innerHTML = `<div class="small">${esc(col.text)}</div><ul class="watch">${who.map(st => `<li><b>${esc(shown(st))}</b>${b === 'none' ? '<span>Not submitted</span>' : `<span>${esc(entry(st, col.cp).result.criteria[col.ci].reason)} <button class="btn" type="button" style="padding:2px 8px;font-size:11px" data-s="${st.i}" data-c="${col.id}">Read it</button></span>`}</li>`).join('')}</ul>`;
+    $('#dbody').innerHTML = `<div class="small">${esc(col.text)}</div><ul class="watch">${who.map(st => `<li><b>${esc(shown(st))}</b>${b === 'none' ? '<span>Not submitted</span>' : b === 'wait' ? '<span>Submitted, not read yet</span>' : `<span>${esc(entry(st, col.cp).result.criteria[col.ci].reason)} <button class="btn" type="button" style="padding:2px 8px;font-size:11px" data-s="${st.i}" data-c="${col.id}">Read it</button></span>`}</li>`).join('')}</ul>`;
     showDrawer();
   }
 
@@ -460,9 +562,11 @@
     $('#paste-gate').textContent = gate.reason;
     let h = '';
     if (D.kind === 'levels') h = '<p class="small">This topic has invented levels but no invented writing, so there is nothing to copy. Topics 2.3 and 3.2 have writing.</p>';
+    else if (D.kind === 'live' && !rows.length) h = '<p class="small">No submitted answers for this topic yet. Pull again after students press Submit.</p>';
+    else if (!gate.ok) h = '<p class="small"><b>Locked.</b> ' + esc(gate.reason) + ' The submitted answers are on the grid; reading them waits for that approval.</p>';
     else if (gate.ok) CPS.forEach(cp => D.batches[cp].forEach((b, n) => { h += batchHtml(cp, b, n, open.has(b.id)); }));
     $('#paste-batches').innerHTML = h;
-    $('#paste-steps').hidden = !gate.ok || D.kind === 'levels';
+    $('#paste-steps').hidden = !gate.ok || D.kind === 'levels' || !rows.length;
   }
   function decide(id, key, span, v) {
     const d = decisions(id);
@@ -485,12 +589,27 @@
     }
     note.textContent = done ? 'Copied. Paste it into a new chat in ' + H.SERVICE + '.' : 'This browser blocked copying. Open "Paste the reply" and copy the text there yourself.';
   }
-  function readPasted(id) {
+  async function readPasted(id) {
     const { cp, b } = batchOf(id), raw = $(`[data-paste="${id}"]`).value, say = $(`[data-said="${id}"]`);
     if (!raw.trim()) { say.textContent = 'Paste the reply first.'; return; }
     let read;
     try { read = H.readReply(D.contracts[cp], asCopied(b), raw); }
     catch (err) { say.textContent = err.message; return; }
+    if (S.source === 'live') {
+      // Saved for every student whose submitted answer is these exact words. An answer
+      // that failed the checks is not saved, so it stays "not read yet".
+      const save = [];
+      read.results.filter(x => x.status === 'passed').forEach(x => D.rows[cp].forEach(r => {
+        if (r.text === x.text && r.completionState === 'verified-submission') save.push({ studentUid: r.uid, topic: S.topic, cp, criteria: x.output.criteria, fingerprint: r.fingerprint, rubricVersion: D.contracts[cp].rubricVersion || '' });
+      }));
+      say.textContent = 'Saving ' + save.length + ' ratings...';
+      try { await S.live.api.saveRatings(save); }
+      catch (err) { say.textContent = 'Not saved: ' + err.message; return; }
+      const bad = read.failed + read.missing;
+      $('#announce').textContent = 'Saved ' + save.length + ' ratings' + (bad ? '; ' + bad + ' answers did not pass the checks and stay not read yet' : '');
+      load();
+      return;
+    }
     const key = S.topic + '|' + S.section;
     if (!S.pasted.has(key)) S.pasted.set(key, new Map());
     S.pasted.get(key).set(id, { checkpoint: cp, read, at: new Date().toISOString() });
@@ -578,6 +697,7 @@
   }
   function setTab(t) {
     if (!['live', 'pulse', 'course', 'student'].includes(t)) t = 'live';
+    if (S.source === 'live' && (t === 'course' || t === 'student')) t = 'live';
     S.tab = t;
     ['live', 'pulse', 'course', 'student'].forEach(x => { $('#view-' + x).hidden = x !== t; $('#tab-' + x).setAttribute('aria-selected', x === t); });
     if (D) renderAll();
@@ -597,6 +717,17 @@
   $('#section').addEventListener('change', e => { S.section = e.target.value; S.stu = 0; load(); });
   $('#stpick').addEventListener('change', e => { S.stu = Number(e.target.value); renderStudent(); });
   $('#reader').addEventListener('change', e => { S.reader = e.target.value; load(); });
+  $('#source').addEventListener('click', e => {
+    const b = e.target.closest('button[data-v]'); if (!b || b.dataset.v === S.source) return;
+    S.source = b.dataset.v; S.stu = 0; applySource(); load();
+  });
+  $('#live-signin').addEventListener('click', () => {
+    if (!S.live) return;
+    liveSay('Waiting for Google sign-in...');
+    S.live.auth.signIn().then(() => { if (S.live.auth.user()) connect(); else liveSay('Sign-in did not finish. Try again.'); },
+      e => liveSay(e && e.code === 'denied' ? 'Use your school staff account (zcs.k12.in.us).' : e && e.code === 'offline' ? 'Sign-in could not reach Google. Check the connection.' : 'Sign-in did not finish. If a popup was blocked, allow popups for this page and try again.'));
+  });
+  $('#live-refresh').addEventListener('click', () => { liveSay('Pulling the latest answers...'); load(); });
   seg('#names', 'names', renderAll);
   seg('#sort', 'sort', renderLive);
   seg('#cmetric', 'cmetric', renderCourse);

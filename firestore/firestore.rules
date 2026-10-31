@@ -227,13 +227,17 @@ service cloud.firestore {
       // directions.
       allow get, list: if inTenant(tenantId) && ownsStored();
 
-      // Class Pulse: a teacher reads, one document at a time, the work of a
-      // student on their own class list. The author is taken from the derived id,
-      // so a get of a record not written yet answers "not found" instead of
-      // erroring, and a stored record must agree with its id. Never list: a
-      // teacher cannot query the collection.
+      // Class Pulse: a teacher reads, one document at a time, the Checkpoint 1 and
+      // 2 answers (and their Submit receipts) of a student on their own class
+      // list, and nothing else that student has saved. The author and slot are
+      // taken from the derived id, so a get of a record not written yet answers
+      // "not found" instead of erroring, and a stored record must agree with its
+      // id. Never list: a teacher cannot query the collection.
       function rosterHoldsAuthor() {
         return rosterHolds(tenantId, responseId.split('__')[0])
+          && responseId.split('__').size() == 3
+          && responseId.split('__')[2] in ['checkpoint-one-response', 'checkpoint-one-response-submitted',
+                                           'checkpoint-two-response', 'checkpoint-two-response-submitted']
           && (resource == null || resource.data.studentId == responseId.split('__')[0]);
       }
       allow get: if inTenant(tenantId) && rosterHoldsAuthor();

@@ -293,6 +293,8 @@ async function assertContracts(env, report) {
   report('and look for work that student has not written yet',
     await can(getDoc(doc(teachDb, pathFor(ZCS, idFor(UID_SAM, '3-2', 'checkpoint-two-response'))))));
   report('a teacher cannot read the work of a student not on their list', await cannot(getDoc(doc(teachDb, BRIT_CP2))));
+  report('a teacher cannot read anything but the checkpoints, even for a student on their list',
+    await cannot(getDoc(doc(teachDb, pathFor(ZCS, idFor(UID_SAM, '3-2', 'map-check-response'))))));
   report('a teacher cannot query student work, even for a student on their list',
     await cannot(getDocs(query(collection(teachDb, `tenants/${ZCS}/responses`), where('studentId', '==', UID_SAM)))));
   report('a student with a list under their own id still cannot read a classmate',
@@ -381,6 +383,8 @@ async function makeEnv(rules) {
       s => s.replace(/return rosterHolds\(tenantId, responseId\.split\('__'\)\[0\]\)/, 'return isStaffIn(tenantId)')],
     ['the class list is looked up under the student, not the caller',
       s => s.replace(/rosters\/\$\(request\.auth\.uid\)\/students\/\$\(studentUid\)/, 'rosters/$(studentUid)/students/$(studentUid)')],
+    ['a teacher may read every slot of a student on their list',
+      s => s.replace(/&& responseId\.split\('__'\)\[2\] in \[[^\]]*\]/, '')],
     ['ratings are readable by any staff',
       s => s.replace(/allow get, list: if inTenant\(tenantId\) && ownsPulse\(\);/, 'allow get, list: if isStaffIn(tenantId);')],
     ['a rating may be saved for anyone',
@@ -411,6 +415,10 @@ async function makeEnv(rules) {
       : `  ${R}FAIL${X} ${name} ${D}(NOT caught, these assertions cannot fail)${X}`);
     if (!sawFailure) failures++;
   }
+
+  // Leave the emulator holding the real rules, not the last broken copy, for the
+  // suites that run after this one (sync-transport, class-pulse-live).
+  try { const restore = await makeEnv(rules); await restore.cleanup(); } catch (e) { /* the next suite loads them itself if it must */ }
 
   console.log('');
   if (failures) {

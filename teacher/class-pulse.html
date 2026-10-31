@@ -3,10 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<!-- Stage A: invented data only. connect-src 'none' means this page cannot read
-     anyone's work or reach any AI, whatever its scripts try; reading real
-     submitted work is Stage B and needs ZCS's written approval first. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<!-- The page can reach Google's sign-in and the district's Firestore database and
+     nothing else: no AI service, no analytics, no other host, whatever its scripts
+     try. AI reading is by copy and paste only. Demo mode contacts no Google host at
+     all; the sign-in library loads only when the teacher chooses My class. What a
+     signed-in teacher may read is decided by firestore/firestore.rules: students on
+     their own class list, one document at a time. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.gstatic.com https://apis.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src https://firestore.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com; frame-src https://behistoric.firebaseapp.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="robots" content="noindex">
 <title>Class Pulse | BeHistorical</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +22,7 @@
 <header class="topbar">
   <div class="wrap">
     <strong>Class Pulse <span>· BeHistorical</span></strong>
-    <span class="gold-pill">Demo: invented students</span>
+    <span class="gold-pill" id="mode-pill">Demo: invented students</span>
   </div>
 </header>
 <div class="wrap">
@@ -27,7 +30,7 @@
     <div class="copy">
       <span class="eyebrow">BeHistorical · AP World History</span>
       <h1>Class Pulse</h1>
-      <p>How each student's Checkpoint 1 and 2 writing meets each criterion, as they submit it. Every student and answer here is invented. Real work is read only after the district approves.</p>
+      <p id="hero-lede">How each student's Checkpoint 1 and 2 writing meets each criterion, as they submit it. Every student and answer here is invented. Real work is read only after the district approves.</p>
     </div>
     <div class="stats">
       <div class="stat"><b id="h-n">0</b><small id="h-n-label">Students</small></div>
@@ -52,6 +55,7 @@
 <main><div class="wrap">
   <div class="panel" style="margin-bottom:16px">
     <div class="toolbar">
+      <div><span class="ctl-label">Students</span><span class="seg" id="source"><button type="button" aria-pressed="true" data-v="demo">Demo</button><button type="button" aria-pressed="false" data-v="live">My class</button></span></div>
       <div><label class="ctl-label" for="topic">Topic</label><select class="sel" id="topic"></select></div>
       <div><label class="ctl-label" for="section">Class</label><select class="sel" id="section"></select></div>
       <div><label class="ctl-label" for="reader">Reader</label><select class="sel" id="reader"></select></div>
@@ -59,10 +63,19 @@
     </div>
   </div>
 
+  <div class="panel live-panel" id="live-panel" hidden>
+    <div class="row">
+      <button class="btn primary" type="button" id="live-signin">Sign in with your school Google account</button>
+      <button class="btn" type="button" id="live-refresh" hidden>Pull the latest answers</button>
+      <span class="small" id="live-status" role="status"></span>
+    </div>
+    <p class="small">Reads only answers your students have submitted, for students on your class list, straight from the district database. Nothing is sent anywhere else.</p>
+  </div>
+
   <section class="view" id="view-live" role="tabpanel" aria-labelledby="tab-live">
     <div class="viewhead"><h2>During class</h2><p id="live-sub"></p></div>
     <div class="panel">
-      <div class="toolbar">
+      <div class="toolbar" id="clock-bar">
         <div class="clock">
           <button class="btn primary" type="button" id="play">Play the class period</button>
           <div class="track" aria-hidden="true"><div class="fill" id="clockfill"></div></div>
@@ -186,6 +199,10 @@
 
 <script src="../assets/data/skills-map.js"></script>
 <script src="class-pulse-engine.js"></script>
+<script src="../assets/js/behistorical-sync.js"></script>
+<script src="../assets/js/behistorical-sync-transport.js"></script>
+<script src="data/class-pulse-config.js"></script>
+<script src="class-pulse-live.js"></script>
 <script src="class-pulse-handoff.js"></script>
 <script src="data/class-pulse-course-words.js"></script>
 <script src="data/class-pulse-calibration.js"></script>

@@ -268,3 +268,7 @@ select.sel{max-width:100%;text-overflow:ellipsis}
 .flagrow{gap:6px 8px}
 .flagrow .small{flex:1 1 220px;min-width:0}
 .check-ok{margin:0}
+.b-wait{background:var(--inset);color:var(--muted);outline:1px solid var(--line);outline-offset:-1px}
+.live-panel{margin-bottom:16px}
+.live-panel .row{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+nav.tabs button:disabled{opacity:.45;cursor:default}

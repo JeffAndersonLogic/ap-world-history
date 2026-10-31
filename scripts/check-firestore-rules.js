@@ -214,6 +214,8 @@ function assertRules(rawSource, report) {
   report('no browser can write a class list',
     !!lists && !!students && [lists[1], students[1]].every(b => /allow write: if false;/.test(b)
       && allowStatements(b).every(a => a.condition === 'false' || !a.verbs.some(v => ['write', 'create', 'update', 'delete'].includes(v)))));
+  report('a teacher reads checkpoint answers only, not everything a student has saved',
+    /responseId\.split\('__'\)\[2\] in \['checkpoint-one-response'/.test(fnBody(source, 'rosterHoldsAuthor')));
   report('a teacher\'s read of student work is one document at a time, never a query',
     /allow get: if [^;]*rosterHoldsAuthor\(\)/.test(source) && !/allow [a-z, ]*list[a-z, ]*: if [^;]*rosterHoldsAuthor/.test(source));
 }
@@ -277,6 +279,8 @@ const MUTATIONS = [
     s => s.replace(/return isStaffIn\(tenantId\)\n(\s*)&& exists/, 'return inTenant(tenantId)\n$1&& exists')],
   ['the class list is looked up under any teacher, not the caller',
     s => s.replace(/rosters\/\$\(request\.auth\.uid\)\/students\//, 'rosters/$(studentUid)/students/')],
+  ['a teacher may read every slot of a student on their list',
+    s => s.replace(/&& responseId\.split\('__'\)\[2\] in \[[^\]]*\]/, '')],
   ['a teacher may query all student work',
     s => s.replace(/allow get: if inTenant\(tenantId\) && rosterHoldsAuthor\(\);/, 'allow get, list: if inTenant(tenantId) && rosterHoldsAuthor();')],
   ['a wildcard match is added "temporarily" while debugging',

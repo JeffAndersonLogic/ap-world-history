@@ -8,8 +8,13 @@
  *   - the page lists every unit topic, and its grid has one column per real
  *     criterion of each checkpoint, titled with the criterion's exact words, so a
  *     five-criterion checkpoint gets five columns;
- *   - it cannot reach the network: the policy says connect-src 'none' and the page
- *     asks nothing of any host but its own and Google Fonts;
+ *   - it can reach only Google sign-in and the district's Firestore database, and in
+ *     Demo it asks nothing of any host but its own and Google Fonts;
+ *   - My class, against a stand-in for Google sign-in and an in-memory database:
+ *     the teacher's own class list, only answers whose Submit receipt still
+ *     matches, "not read yet" until a rating is saved, copying locked until the
+ *     district approves, and once approved a pasted reply saved to the database
+ *     with no student name in it and shown again on the next pull;
  *   - projector-safe mode leaves no student name on the grid;
  *   - after-class bars count every student, including anyone who did not submit;
  *   - the Reader menu offers an AI reader only where it has recorded readings, and
@@ -58,7 +63,66 @@ const MAP = box.window.BEHISTORICAL_SKILLS_MAP;
 const UNIT_TOPICS = Object.keys(MAP.topics).filter(k => MAP.topics[k].kind === 'unit');
 const crit = (k, slot) => MAP.topics[k].slots[slot].criteria;
 
+const Sync = require(path.join(ROOT, 'assets', 'js', 'behistorical-sync.js'));
 const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css' };
+const FIREBASE_HOSTS = ['https://firestore.googleapis.com', 'https://identitytoolkit.googleapis.com', 'https://securetoken.googleapis.com'];
+
+// ── A stand-in for Google: the two sign-in modules and the Firestore REST API ──
+// Served through Playwright routes on Google's own addresses, so the page's real
+// policy, sign-in code and requests run unchanged.
+const FAKE_APP = 'export function initializeApp() { return {}; }';
+const FAKE_AUTH = `let user = null; const cbs = [];
+export function getAuth() { return { get currentUser() { return user; }, authStateReady: () => Promise.resolve() }; }
+export function onAuthStateChanged(a, cb) { cbs.push(cb); cb(user); }
+export class GoogleAuthProvider { setCustomParameters() {} }
+export async function signInWithPopup() { user = { uid: 'teach1', email: 'jeff@zcs.k12.in.us', getIdToken: async () => 'token' }; cbs.forEach(f => f(user)); return { user }; }
+export async function signOut() { user = null; cbs.forEach(f => f(user)); }`;
+const ANA = 'Akbar used the mansabdar system to give officials land revenue he could take back.';
+function liveStore() {
+  const P = 'projects/behistoric/databases/(default)/documents/tenants/zcs/';
+  const docs = new Map(), commits = [], requests = [];
+  const put = (name, fields) => docs.set(P + name, { name: P + name, fields, updateTime: new Date().toISOString() });
+  const t = v => ({ stringValue: v });
+  put('rosters/teach1', { classLabel: t('G4') });
+  [['ana1', 'Ana Ruiz'], ['ben1', 'Ben Cole'], ['cal1', 'Cal Ito']].forEach(([u, l]) => put('rosters/teach1/students/' + u, { label: t(l) }));
+  const ans = (u, slot, text, c) => put(`responses/${u}__3-2__${slot}`, { studentId: t(u), topicKey: t('3-2'), slotId: t(slot), text: t(text), confidence: c ? { integerValue: String(c) } : t('') });
+  ans('ana1', 'checkpoint-one-response', ANA, 4);
+  ans('ana1', 'checkpoint-one-response-submitted', 'Submitted Oct 31, 9:14 AM · fingerprint ' + Sync.valueHash(ANA, '4'));
+  ans('ben1', 'checkpoint-one-response', 'The devshirme took boys, and I changed this after submitting.', 3);
+  ans('ben1', 'checkpoint-one-response-submitted', 'Submitted Oct 31, 9:20 AM · fingerprint ' + Sync.valueHash('The devshirme took boys.', '3'));
+  ans('cal1', 'checkpoint-one-response', 'Half an', '');
+  return { P, docs, commits, requests, googleLoaded: false };
+}
+const CORS = { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'authorization,content-type', 'Access-Control-Allow-Methods': 'GET,POST,OPTIONS' };
+async function fakeGoogle(context, store) {
+  await context.route('https://www.gstatic.com/firebasejs/**', route => {
+    store.googleLoaded = true;
+    route.fulfill({ status: 200, headers: Object.assign({ 'Content-Type': 'text/javascript' }, CORS), body: /firebase-auth/.test(route.request().url()) ? FAKE_AUTH : FAKE_APP });
+  });
+  await context.route('https://firestore.googleapis.com/**', route => {
+    const req = route.request(), url = new URL(req.url());
+    if (req.method() === 'OPTIONS') return route.fulfill({ status: 204, headers: CORS });
+    const p = decodeURIComponent(url.pathname.replace(/^\/v1\//, ''));
+    store.requests.push(req.method() + ' ' + p.replace(store.P, ''));
+    const json = (status, body) => route.fulfill({ status, headers: Object.assign({ 'Content-Type': 'application/json' }, CORS), body: JSON.stringify(body) });
+    if (req.method() === 'GET') {
+      if (/\/students$/.test(p)) return json(200, { documents: [...store.docs.values()].filter(d => d.name.startsWith(p + '/') && !d.name.slice(p.length + 1).includes('/')) });
+      const d = store.docs.get(p);
+      return d ? json(200, d) : json(404, { error: { status: 'NOT_FOUND' } });
+    }
+    const body = JSON.parse(req.postData() || '{}');
+    if (p.endsWith(':runQuery')) {
+      const parent = p.slice(0, -':runQuery'.length) + '/ratings/', want = body.structuredQuery.where.fieldFilter.value.stringValue;
+      return json(200, [...store.docs.values()].filter(d => d.name.startsWith(parent) && d.fields.topicKey.stringValue === want).map(document => ({ document })));
+    }
+    if (p.endsWith(':commit')) {
+      store.commits.push(body);
+      body.writes.forEach(w => store.docs.set(w.update.name, { name: w.update.name, fields: Object.assign({}, w.update.fields, { ratedAt: { timestampValue: new Date().toISOString() } }) }));
+      return json(200, { writeResults: body.writes.map(() => ({ updateTime: new Date().toISOString() })) });
+    }
+    return json(400, { error: { status: 'INVALID_ARGUMENT' } });
+  });
+}
 let patches = [];
 const server = http.createServer((req, res) => {
   const rel = decodeURIComponent(req.url.split('?')[0]).replace(/^\/+/, '');
@@ -80,8 +144,9 @@ function check(label, ok, detail) {
 }
 function section(t) { if (!quiet) console.log(`\n\x1b[1m${t}\x1b[0m`); }
 
-async function open(browser, width) {
+async function open(browser, width, setup) {
   const context = await browser.newContext({ viewport: { width: width || 1280, height: 900 } });
+  if (setup) await setup(context);
   const p = await context.newPage();
   const hosts = new Set(), errors = [];
   p.on('request', r => hosts.add(new URL(r.url()).hostname));
@@ -108,11 +173,12 @@ async function suite(browser) {
   }
   await choose(s.p, '3.2');
 
-  section('No network');
+  section('Network');
   const csp = await s.p.$eval('meta[http-equiv="Content-Security-Policy"]', m => m.content);
-  check("the page cannot reach the network (connect-src 'none')", /connect-src 'none'/.test(csp), csp);
+  const connect = ((/connect-src ([^;]+)/.exec(csp) || [])[1] || '').trim().split(/\s+/).sort();
+  check('the page can reach only Google sign-in and the district database', JSON.stringify(connect) === JSON.stringify(FIREBASE_HOSTS.slice().sort()), connect.join(' '));
   const strays = [...s.hosts].filter(h => !['127.0.0.1', 'fonts.googleapis.com', 'fonts.gstatic.com'].includes(h));
-  check('it asks nothing of any other host', strays.length === 0, strays.join(', '));
+  check('in Demo it asks nothing of any host but its own and Google Fonts', strays.length === 0, strays.join(', '));
   const fetchBlocked = await s.p.evaluate(() => fetch('https://example.com/').then(() => false, () => true));
   check('and a fetch from the page is refused', fetchBlocked);
 
@@ -261,6 +327,65 @@ async function suite(browser) {
   check('the check raises no script error', k.errors.length === 0, k.errors.join(' | '));
   await k.context.close();
 
+  section('My class, from the database');
+  const store = liveStore();
+  const L = await open(browser, 1280, ctx => fakeGoogle(ctx, store));
+  await L.p.waitForTimeout(300);
+  check('nothing is asked of Google until My class is chosen', !store.googleLoaded && store.requests.length === 0);
+  await L.p.click('#source [data-v="live"]');
+  await L.p.waitForSelector('#live-signin:not([hidden])', { timeout: 8000 }).catch(() => {});
+  await L.p.click('#live-signin');
+  await L.p.waitForFunction(() => /G4 \(3 students\)/.test(document.getElementById('section').textContent), null, { timeout: 8000 }).catch(() => {});
+  await L.p.waitForFunction(() => document.querySelectorAll('#heat td.name').length === 3, null, { timeout: 8000 }).catch(() => {});
+  const liveNames = await L.p.$$eval('#heat td.name', tds => tds.map(t => t.childNodes[0].textContent));
+  check('signing in shows the teacher\'s own class list', JSON.stringify(liveNames) === JSON.stringify(['Ana Ruiz', 'Ben Cole', 'Cal Ito']), liveNames.join(','));
+  const cells = await L.p.$$eval('#heat tbody tr', trs => trs.map(tr => [...tr.querySelectorAll('td .cell')].slice(0, 3).map(c => c.className.replace('cell ', '')).join(' ')));
+  check('a submitted answer with no saved rating shows as not read yet', /^b-wait b-wait b-wait$/.test(cells[0] || ''), cells.join(' | '));
+  check('an answer changed after Submit shows as not submitted', /^b-none b-none b-none$/.test(cells[1] || ''), cells[1]);
+  check('a draft never submitted shows as not submitted', /^b-none b-none b-none$/.test(cells[2] || ''), cells[2]);
+  check('the database is read one document at a time, never queried for student work',
+    store.requests.length > 0 && !store.requests.some(r => /responses:runQuery|POST .*responses/.test(r)), store.requests.slice(0, 4).join(' ; '));
+  check('Across the course and One student are off in My class', await L.p.$eval('#tab-course', b => b.disabled) && await L.p.$eval('#tab-student', b => b.disabled));
+  await L.p.click('#tab-pulse');
+  check('copying real answers stays locked until the district approves', /Locked/.test(await L.p.$eval('#paste-batches', e => e.textContent)) && (await L.p.$$('#paste-batches [data-copy]')).length === 0);
+  check('My class raises no script error', L.errors.length === 0, L.errors.join(' | '));
+  await L.context.close();
+
+  // The same class once the approval is recorded in the code.
+  const store2 = liveStore();
+  const kept2 = patches;
+  patches = kept2.concat([{ file: 'teacher/class-pulse-handoff.js', from: "const APPROVAL = { realWork: false, reference: '' };", to: "const APPROVAL = { realWork: true, reference: 'Test approval, not real' };" }]);
+  const A = await open(browser, 1280, ctx => fakeGoogle(ctx, store2));
+  patches = kept2;
+  await A.p.click('#source [data-v="live"]');
+  await A.p.waitForSelector('#live-signin:not([hidden])', { timeout: 8000 }).catch(() => {});
+  await A.p.click('#live-signin');
+  await A.p.waitForFunction(() => document.querySelectorAll('#heat td.name').length === 3, null, { timeout: 8000 }).catch(() => {});
+  await A.p.click('#tab-pulse');
+  const text = await A.p.$eval('#paste-batches textarea[data-text]', t => t.value).catch(() => '');
+  check('once approved, only submitted answers are offered to copy', text.includes(ANA) && !text.includes('I changed this after submitting') && !text.includes('Half an') && !/Ana Ruiz|Ruiz|Ben Cole|Cal Ito/.test(text));
+  if (text) {
+    const id = JSON.parse(text.slice(text.lastIndexOf('{"batch"'))).batch;
+    const n = (text.match(/"id":"criterion-\d+"/g) || []).length;
+    const reply = JSON.stringify({ batch: id, answers: [{ key: 'A01', criteria: Array.from({ length: n }, (_, j) => ({ criterionId: 'criterion-' + (j + 1), category: 'D', evidence: [ANA.slice(0, 20)], reason: 'SAVED-REASON', misconceptions: [], uncertainty: [], reviewRequired: false })) }] });
+    await A.p.click('#paste-batches details >> nth=0');
+    await A.p.fill('#paste-batches textarea[data-paste] >> nth=0', reply);
+    await A.p.click('#paste-batches [data-read] >> nth=0');
+    await A.p.waitForFunction(() => /every submitted answer is read|0 submitted answers/i.test(document.getElementById('h-kind').textContent) || document.querySelectorAll('#heat .cell.b-D').length > 0, null, { timeout: 8000 }).catch(() => {});
+  }
+  const saved = JSON.stringify(store2.commits);
+  check('a pasted reply is saved to the database for that student', store2.commits.length === 1 && /ana1__3-2__checkpoint-one-response/.test(saved) && /"codes":\{"stringValue":"D+"\}/.test(saved), saved.slice(0, 160));
+  check('with no student name in what is saved', !/Ana|Ruiz/.test(saved.replace(/ana1/g, '')));
+  await A.p.click('#tab-live');
+  await A.p.click('#live-refresh');
+  await A.p.waitForTimeout(400);
+  const after = await A.p.$$eval('#heat tbody tr', trs => [...trs[0].querySelectorAll('td .cell')].slice(0, 3).map(c => c.className.replace('cell ', '')).join(' '));
+  check('the next pull shows the saved levels', /^b-D b-D b-D$/.test(after), after);
+  await A.p.click('#heat button.cell.b-D >> nth=0');
+  check('with the saved reasons', /SAVED-REASON/.test(await A.p.$eval('#dbody', e => e.textContent)));
+  check('saving and pulling raise no script error', A.errors.length === 0, A.errors.join(' | '));
+  await A.context.close();
+
   section('A phone');
   for (const t of ['live', 'pulse', 'course', 'student']) {
     const m = await open(browser, 390);
@@ -281,10 +406,13 @@ async function suite(browser) {
   section('Negative controls');
   const controls = [
     { name: 'the grid assumes three criteria', file: 'teacher/class-pulse-app.js', from: 'CPS.forEach(cp => contracts[cp].criteria.forEach(', to: 'CPS.forEach(cp => contracts[cp].criteria.slice(0, 3).forEach(', expect: /follow the topic's criteria/ },
-    { name: 'the policy allows the network', file: 'teacher/class-pulse.html', from: "img-src 'self' data:; connect-src 'none'", to: "img-src 'self' data:; connect-src *", expect: /cannot reach the network|fetch from the page is refused/ },
+    { name: 'the policy allows the network', file: 'teacher/class-pulse.html', from: "connect-src https://firestore.googleapis.com", to: "connect-src * https://firestore.googleapis.com", expect: /only Google sign-in and the district database|fetch from the page is refused/ },
+    { name: 'saved ratings are ignored', file: 'teacher/class-pulse-app.js', from: "if (g && r.completionState === 'verified-submission' && g.fingerprint === r.fingerprint) byText.set", to: "if (false) byText.set", expect: /next pull shows the saved levels/ },
+    { name: 'an answer changed after Submit is counted', file: 'teacher/class-pulse-live.js', from: "print && print === fingerprint ? 'verified-submission'", to: "print ? 'verified-submission'", expect: /changed after Submit/ },
+    { name: 'copying real answers is open without approval', file: 'teacher/class-pulse-handoff.js', from: "if (rows.every(r => r.completionState === 'synthetic-complete'))", to: "if (true)", expect: /stays locked/ },
     { name: 'projector mode keeps names', file: 'teacher/class-pulse-app.js', from: "S.names === 'anon' ?", to: 'false ?', expect: /hides every name/ },
-    { name: 'the reader menu changes nothing', file: 'teacher/class-pulse-app.js', from: "S.reader === 'invented' ? demo.provider\n      :", to: 'true ? demo.provider\n      :', expect: /recorded reader's levels/ },
-    { name: 'pasted replies are ignored', file: 'teacher/class-pulse-app.js', from: ": H && S.reader === H.READER.id ? H.provider([...pastedHere().values()]) : recordedProvider(S.reader, demo)", to: ": H && S.reader === H.READER.id ? demo.provider : recordedProvider(S.reader, demo)", expect: /pasted reader's reasons/ },
+    { name: 'the reader menu changes nothing', file: 'teacher/class-pulse-app.js', from: "provider = S.reader === 'invented' ? src.provider\n        :", to: 'provider = true ? src.provider\n        :', expect: /recorded reader's levels/ },
+    { name: 'pasted replies are ignored', file: 'teacher/class-pulse-app.js', from: ": H && S.reader === H.READER.id ? H.provider([...pastedHere().values()]) : recordedProvider(S.reader, src)", to: ": H && S.reader === H.READER.id ? src.provider : recordedProvider(S.reader, src)", expect: /pasted reader's reasons/ },
     { name: 'Copy ignores the check', file: 'teacher/class-pulse-app.js', from: "<button class=\"btn primary\" type=\"button\" data-copy=\"${b.id}\"${left ? ' disabled' : ''}>", to: "<button class=\"btn primary\" type=\"button\" data-copy=\"${b.id}\">", expect: /Copy waits/ },
     { name: 'removed words are copied anyway', file: 'teacher/class-pulse-app.js', from: "${esc(H.promptFor(D.contracts[cp], asCopied(b)))}", to: "${esc(H.promptFor(D.contracts[cp], b))}", expect: /never reaches the copied text/ },
     { name: 'the copy button copies something else', file: 'teacher/class-pulse-app.js', from: 'await navigator.clipboard.writeText(text);', to: "await navigator.clipboard.writeText(text + ' ');", expect: /exactly that text/ },

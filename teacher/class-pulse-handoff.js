@@ -188,7 +188,7 @@
     const byText = new Map();
     for (const r of reads) for (const x of r.read.results) if (x.entry) byText.set(r.checkpoint + '|' + x.text, x.entry);
     return {
-      id: 'pasted', version: FORMAT,
+      id: 'pasted', version: FORMAT, has: (checkpoint, text) => byText.has(checkpoint + '|' + text),
       async interpret({ contract, response }) {
         const entry = byText.get(contract.checkpoint + '|' + response.text);
         if (!entry) throw new Error('No pasted reading of this answer');
