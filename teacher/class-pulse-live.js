@@ -136,7 +136,8 @@
         return out;
       },
 
-      // list: [{ studentUid, topic, cp, criteria (engine-validated), fingerprint, rubricVersion }]
+      // list: [{ studentUid, topic, cp, criteria (engine-validated), fingerprint, rubricVersion, reader }]
+      // reader names the service the reply was pasted from, e.g. 'chatgpt-for-teachers-pasted'.
       async saveRatings(list) {
         const uid = me();
         for (let i = 0; i < list.length; i += PER_COMMIT) {
@@ -149,7 +150,7 @@
                   studentId: { stringValue: r.studentUid }, topicKey: { stringValue: key }, slotId: { stringValue: slot },
                   codes: { stringValue: r.criteria.map(c => c.category).join('') },
                   reading: { stringValue: JSON.stringify({ criteria: r.criteria }) },
-                  reader: { stringValue: READER }, rubricVersion: { stringValue: String(r.rubricVersion || '').slice(0, 96) },
+                  reader: { stringValue: String(r.reader || READER).slice(0, 64) }, rubricVersion: { stringValue: String(r.rubricVersion || '').slice(0, 96) },
                   answerFingerprint: { stringValue: r.fingerprint }, schemaVersion: { integerValue: '1' }
                 }
               },

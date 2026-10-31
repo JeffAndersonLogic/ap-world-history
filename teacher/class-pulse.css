@@ -272,3 +272,4 @@ select.sel{max-width:100%;text-overflow:ellipsis}
 .live-panel{margin-bottom:16px}
 .live-panel .row{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
 nav.tabs button:disabled{opacity:.45;cursor:default}
+#paste-panel > .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}

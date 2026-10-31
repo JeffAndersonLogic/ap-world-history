@@ -629,6 +629,15 @@ Run it again any time to add students who have since signed in.
 3. Jeff sets up the G4 class list (above).
 4. Jeff says "ship it": `submit` in `scripts/lib/sync-config.js` goes true so students see
    **Submit to your teacher**, the renderers are rebuilt, and the page ships to `main`.
-5. Reading by AI waits for Dan's written yes on Claude for Teachers: then `APPROVAL` in
-   `teacher/class-pulse-handoff.js` names it and `privacy.html` says what is sent, before
-   that change ships.
+5. Reading by AI waits for Dan's written yes: then `APPROVAL` in
+   `teacher/class-pulse-handoff.js` names the reference and the service ids it covers
+   (`claude-for-teachers`, `chatgpt-for-teachers`, or both), and `privacy.html` says what
+   is sent and where, before that change ships. Approving one service never opens the
+   other.
+
+**Which AI, added 2026-10-31.** The paste panel has a **Pasting into** choice: Claude for
+Teachers or ChatGPT for Teachers. Both get the same text and the same checks; the choice
+is remembered on the device, recorded with every saved rating (`reader`, for example
+`chatgpt-for-teachers-pasted`), and shown in the drawer as "Read by ...". Only a personal
+account's practice with invented answers needs no approval; real writing needs the
+district's approval of that specific service, and a teacher (not personal) account.

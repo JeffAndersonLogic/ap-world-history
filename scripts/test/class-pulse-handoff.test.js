@@ -81,14 +81,18 @@ check('real student writing cannot be copied out as shipped', async (M) => {
   assert.equal(M.APPROVAL.realWork, false, 'APPROVAL.realWork must stay false until ZCS approves in writing');
   const real = [{ text: 'A real answer.', completionState: 'verified-submission' }];
   assert.equal(M.gate(real).ok, false);
-  assert.equal(M.gate(real, { realWork: true, reference: '' }).ok, false, 'approval needs a named reference');
-  assert.equal(M.gate(real, { realWork: true, reference: 'Dan Layton, email of 2026-11-02' }).ok, true);
+  assert.equal(M.gate(real, { realWork: true, reference: '', services: ['claude-for-teachers'] }).ok, false, 'approval needs a named reference');
+  const claudeOnly = { realWork: true, reference: 'Dan Layton, email of 2026-11-02', services: ['claude-for-teachers'] };
+  assert.equal(M.gate(real, claudeOnly, 'claude-for-teachers').ok, true);
+  assert.equal(M.gate(real, claudeOnly, 'chatgpt-for-teachers').ok, false, 'approving one service must not open the other');
+  assert.equal(M.gate(real, { realWork: true, reference: 'Dan Layton, email of 2026-11-02' }, 'claude-for-teachers').ok, false, 'an approval must name its service');
   assert.equal(M.gate(rows).ok, true, 'invented answers need no approval');
 });
 
-check('the shipped approval names who approved it whenever it is on', async () => {
+check('the shipped approval names who approved it whenever it is on', async (M) => {
   const a = H.APPROVAL;
-  assert.ok(a.realWork === false || (typeof a.reference === 'string' && a.reference.trim().length >= 8));
+  assert.ok(a.realWork === false || (typeof a.reference === 'string' && a.reference.trim().length >= 8 && Array.isArray(a.services) && a.services.length > 0));
+  assert.ok((a.services || []).every(id => M.SERVICES.some(x => x.id === id)), 'every approved service is one the page knows');
 });
 
 check('the copied text carries the instructions, the contract and every answer, word for word', async (M) => {
@@ -226,6 +230,7 @@ async function run(M, quiet) {
   const src = fs.readFileSync(SOURCE, 'utf8');
   const controls = [
     { name: 'approval switched on with no reference', from: 'const APPROVAL = { realWork: false', to: 'const APPROVAL = { realWork: true', expect: /cannot be copied out as shipped/ },
+    { name: 'approving one service opens the other', from: '&& Array.isArray(a.services) && a.services.includes(sid))', to: ')', expect: /cannot be copied out as shipped/ },
     { name: 'the gate waves real writing through', from: "if (rows.every(r => r.completionState === 'synthetic-complete'))", to: 'if (true)', expect: /cannot be copied out as shipped/ },
     { name: 'the response key travels with the answer', from: "({ key: 'A' + String(i + j + 1).padStart(2, '0'), fp, text })", to: "({ key: 'A' + String(i + j + 1).padStart(2, '0'), fp, text, row: rowKeys.get(fp) })", extra: ['const seen = new Map();', 'const seen = new Map(), rowKeys = new Map();\n    for (const r of rows) rowKeys.set(await E.digest(r.text), r.key);'], expect: /no name, response key/ },
     { name: 'answers numbered in roster order', from: '.sort((a, b) => a[0].localeCompare(b[0]))', to: '', expect: /fingerprints, not the roster/ },

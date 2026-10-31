@@ -72,6 +72,7 @@
     pasted: new Map(), // topic|section -> Map(batch id -> { checkpoint, read, at })
     checks: new Map(), // batch id -> the teacher's decisions in the check before copying
     source: 'demo',    // 'demo' (invented students) or 'live' (my class, from the database)
+    service: (() => { try { const v = localStorage.getItem('class-pulse-service'); return H && H.SERVICES.some(x => x.id === v) ? v : 'claude-for-teachers'; } catch (_) { return 'claude-for-teachers'; } })(),
     live: null         // { auth, api, roster } once My class is chosen
   };
   let D = null; // { contracts, kind, students, rows, results, cols }
@@ -87,7 +88,10 @@
     return readerId === 'invented' || recordedFor(readerId, topicKey).length > 0;
   }
   function readerLabel(readerId) {
-    if (H && readerId === H.READER.id) return H.READER.label;
+    if (H && readerId === H.READER.id) {
+      const used = [...new Set([...pastedHere().values()].map(x => H.serviceLabel(x.service)))];
+      return H.READER.label + (used.length ? ' (' + used.join(', ') + ')' : '');
+    }
     const r = Readers && Readers.READERS.find(x => x.id === readerId); return r ? r.label : readerId;
   }
   function renderReaderPick() {
@@ -115,6 +119,13 @@
     };
   }
 
+  // checkpoint|answer text -> the service its pasted reply came from.
+  function pastedServices() {
+    const out = new Map();
+    pastedHere().forEach(x => x.read.results.forEach(r => { if (r.entry) out.set(x.checkpoint + '|' + r.text, H.serviceLabel(x.service)); }));
+    return out;
+  }
+
   // ── Loading a topic and class ─────────────────────────────────────────────
   async function load() {
     const token = ++S.loadToken;
@@ -133,6 +144,9 @@
     }
     const engine = E.createEngine({ provider });
     const results = { cp1: new Map(), cp2: new Map() }, unread = new Set();
+    // Which AI proposed each reading shown, when it came from a pasted reply.
+    const readBy = new Map();
+    const byText = src.readBy || (S.source !== 'live' && H && S.reader === H.READER.id ? pastedServices() : null);
     for (const cp of CPS) {
       const rows = src.rows[cp].filter(r => r.completionState !== 'missing');
       const out = await engine.analyzeMany(rows, contracts[cp]);
@@ -140,6 +154,7 @@
         results[cp].set(rows[i].student, { result: r, row: rows[i] });
         // Read by nobody yet, as opposed to read and found unclear.
         if (provider.has && !E.eligibility(rows[i]) && !provider.has(cp, rows[i].text)) unread.add(cp + '|' + rows[i].student);
+        else if (byText && byText.has(cp + '|' + rows[i].text)) readBy.set(cp + '|' + rows[i].student, byText.get(cp + '|' + rows[i].text));
       });
     }
     const batches = { cp1: [], cp2: [] };
@@ -147,7 +162,7 @@
     if (token !== S.loadToken) return; // a newer choice arrived while this one loaded
     const cols = [];
     CPS.forEach(cp => contracts[cp].criteria.forEach((c, i) => cols.push({ id: cp + '-' + i, cp, ci: i, criterionId: c.id, text: c.text, group: CP_NAME[cp], short: 'C' + (i + 1) })));
-    D = { contracts, kind: src.kind, students: src.students, rows: src.rows, results, cols, batches, unread };
+    D = { contracts, kind: src.kind, students: src.students, rows: src.rows, results, cols, batches, unread, readBy };
     S.overrides = new Map();
     renderAll();
     renderPaste();
@@ -172,12 +187,15 @@
       confidence: { cp1: rows.cp1[i].confidence, cp2: rows.cp2[i].confidence }
     }));
     // A saved rating counts only for the very answer it was made from.
-    const byText = new Map();
+    const byText = new Map(), readBy = new Map();
     CPS.forEach(cp => rows[cp].forEach(r => {
       const g = ratings.get(r.uid + '|' + cp);
-      if (g && r.completionState === 'verified-submission' && g.fingerprint === r.fingerprint) byText.set(cp + '|' + r.text, g.criteria);
+      if (g && r.completionState === 'verified-submission' && g.fingerprint === r.fingerprint) {
+        byText.set(cp + '|' + r.text, g.criteria);
+        readBy.set(cp + '|' + r.text, H ? H.serviceLabel(String(g.reader).replace(/-pasted$/, '')) : g.reader);
+      }
     }));
-    return { kind: 'live', students, rows, provider: {
+    return { kind: 'live', students, rows, readBy, provider: {
       id: 'saved-ratings', version: '1', has: (cp, text) => byText.has(cp + '|' + text),
       async interpret({ contract, response }) {
         const c = byText.get(contract.checkpoint + '|' + response.text);
@@ -376,6 +394,8 @@
     else if (e.row.text) h += `<div class="response">${markQuote(e.row.text, crit.evidence)}</div>`;
     if (e.result.status === 'ineligible') h += `<p class="callout">${esc(ELIGIBILITY[e.result.eligibilityReason] || 'Not read.')}</p>`;
     h += `<div class="verdict"><div class="row m-rn"><span class="cell b-${prop}">${LETTER[prop]}</span><b>The tool proposes: ${BANDS[prop]}</b></div><p class="small">${esc(crit.reason)}</p>`;
+    const by = D.readBy.get(col.cp + '|' + si);
+    if (by) h += `<p class="small read-by">Read by <b>${esc(by)}</b>, pasted.</p>`;
     // What this level means here, from the same rubric the provider was given.
     const ruled = D.contracts[col.cp].criteria[col.ci].rubric;
     const meaning = ruled && ruled[prop] ? ruled[prop] : D.contracts[col.cp].levels && D.contracts[col.cp].levels[prop];
@@ -556,9 +576,9 @@
   function renderPaste() {
     if (!H) { $('#paste-panel').hidden = true; return; }
     const rows = CPS.flatMap(cp => D.rows[cp].filter(r => !E.eligibility(r)));
-    const gate = H.gate(rows);
+    const gate = H.gate(rows, undefined, S.service);
     const open = new Set($$('#paste-batches details[open]').map(d => d.dataset.batch));
-    $('#paste-service').textContent = H.SERVICE;
+    $('#paste-service').innerHTML = H.SERVICES.map(x => `<option value="${x.id}"${x.id === S.service ? ' selected' : ''}>${esc(x.label)}</option>`).join('');
     $('#paste-gate').textContent = gate.reason;
     let h = '';
     if (D.kind === 'levels') h = '<p class="small">This topic has invented levels but no invented writing, so there is nothing to copy. Topics 2.3 and 3.2 have writing.</p>';
@@ -587,7 +607,7 @@
       const t = $(`[data-text="${id}"]`); t.closest('details').open = true; t.select();
       try { done = document.execCommand('copy'); } catch (__) { done = false; }
     }
-    note.textContent = done ? 'Copied. Paste it into a new chat in ' + H.SERVICE + '.' : 'This browser blocked copying. Open "Paste the reply" and copy the text there yourself.';
+    note.textContent = done ? 'Copied. Paste it into a new chat in ' + H.serviceLabel(S.service) + '.' : 'This browser blocked copying. Open "Paste the reply" and copy the text there yourself.';
   }
   async function readPasted(id) {
     const { cp, b } = batchOf(id), raw = $(`[data-paste="${id}"]`).value, say = $(`[data-said="${id}"]`);
@@ -600,7 +620,7 @@
       // that failed the checks is not saved, so it stays "not read yet".
       const save = [];
       read.results.filter(x => x.status === 'passed').forEach(x => D.rows[cp].forEach(r => {
-        if (r.text === x.text && r.completionState === 'verified-submission') save.push({ studentUid: r.uid, topic: S.topic, cp, criteria: x.output.criteria, fingerprint: r.fingerprint, rubricVersion: D.contracts[cp].rubricVersion || '' });
+        if (r.text === x.text && r.completionState === 'verified-submission') save.push({ studentUid: r.uid, topic: S.topic, cp, criteria: x.output.criteria, fingerprint: r.fingerprint, rubricVersion: D.contracts[cp].rubricVersion || '', reader: S.service + '-pasted' });
       }));
       say.textContent = 'Saving ' + save.length + ' ratings...';
       try { await S.live.api.saveRatings(save); }
@@ -612,7 +632,7 @@
     }
     const key = S.topic + '|' + S.section;
     if (!S.pasted.has(key)) S.pasted.set(key, new Map());
-    S.pasted.get(key).set(id, { checkpoint: cp, read, at: new Date().toISOString() });
+    S.pasted.get(key).set(id, { checkpoint: cp, read, service: S.service, at: new Date().toISOString() });
     const bad = read.failed + read.missing;
     $('#announce').textContent = read.passed + ' of ' + b.answers.length + ' answers read' + (bad ? '; ' + bad + ' did not pass the checks and show as Can\'t tell' : '');
     S.reader = H.READER.id;
@@ -726,6 +746,11 @@
     liveSay('Waiting for Google sign-in...');
     S.live.auth.signIn().then(() => { if (S.live.auth.user()) connect(); else liveSay('Sign-in did not finish. Try again.'); },
       e => liveSay(e && e.code === 'denied' ? 'Use your school staff account (zcs.k12.in.us).' : e && e.code === 'offline' ? 'Sign-in could not reach Google. Check the connection.' : 'Sign-in did not finish. If a popup was blocked, allow popups for this page and try again.'));
+  });
+  $('#paste-service').addEventListener('change', e => {
+    S.service = e.target.value;
+    try { localStorage.setItem('class-pulse-service', S.service); } catch (_) { /* a private window */ }
+    renderPaste();
   });
   $('#live-refresh').addEventListener('click', () => { liveSay('Pulling the latest answers...'); load(); });
   seg('#names', 'names', renderAll);

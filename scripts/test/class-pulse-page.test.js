@@ -267,7 +267,7 @@ async function suite(browser) {
   await c.p.click('#paste-batches details >> nth=0');
   await c.p.fill('#paste-batches textarea[data-paste] >> nth=0', made.json);
   await c.p.click('#paste-batches [data-read] >> nth=0');
-  await c.p.waitForFunction(() => /Levels read by Claude for Teachers, pasted/.test(document.getElementById('h-kind').textContent), null, { timeout: 8000 }).catch(() => {});
+  await c.p.waitForFunction(() => /Levels read by pasted replies \(Claude for Teachers\)/.test(document.getElementById('h-kind').textContent), null, { timeout: 8000 }).catch(() => {});
   check('a pasted reply becomes the pasted reader', (await c.p.$eval('#reader', s => s.value)) === 'pasted');
   const state = await c.p.$eval('#paste-batches .batch >> nth=0', b => b.textContent);
   check('the batch says how many answers passed the checks', new RegExp((made.answers.length - 1) + ' of ' + made.answers.length + ' read, 1 show').test(state), state.slice(0, 160));
@@ -276,6 +276,7 @@ async function suite(browser) {
   await c.p.click('#heat button.cell.b-D >> nth=0');
   const pastedDrawer = await c.p.evaluate(() => ({ reason: document.querySelector('#dbody .verdict p.small').textContent, text: document.querySelector('#dbody .response').textContent }));
   check("the drawer shows the pasted reader's reasons", pastedDrawer.reason === 'PASTED-REASON', JSON.stringify(pastedDrawer).slice(0, 200));
+  check('and which service read it', /Read by Claude for Teachers/.test(await c.p.$eval('#dbody', e => e.textContent)));
   const badText = made.answers[0].text;
   await c.p.keyboard.press('Escape');
   const invented = await c.p.evaluate(async t => {
@@ -354,7 +355,7 @@ async function suite(browser) {
   // The same class once the approval is recorded in the code.
   const store2 = liveStore();
   const kept2 = patches;
-  patches = kept2.concat([{ file: 'teacher/class-pulse-handoff.js', from: "const APPROVAL = { realWork: false, reference: '' };", to: "const APPROVAL = { realWork: true, reference: 'Test approval, not real' };" }]);
+  patches = kept2.concat([{ file: 'teacher/class-pulse-handoff.js', from: "const APPROVAL = { realWork: false, reference: '', services: [] };", to: "const APPROVAL = { realWork: true, reference: 'Test approval, not real', services: ['claude-for-teachers', 'chatgpt-for-teachers'] };" }]);
   const A = await open(browser, 1280, ctx => fakeGoogle(ctx, store2));
   patches = kept2;
   await A.p.click('#source [data-v="live"]');
@@ -368,6 +369,7 @@ async function suite(browser) {
     const id = JSON.parse(text.slice(text.lastIndexOf('{"batch"'))).batch;
     const n = (text.match(/"id":"criterion-\d+"/g) || []).length;
     const reply = JSON.stringify({ batch: id, answers: [{ key: 'A01', criteria: Array.from({ length: n }, (_, j) => ({ criterionId: 'criterion-' + (j + 1), category: 'D', evidence: [ANA.slice(0, 20)], reason: 'SAVED-REASON', misconceptions: [], uncertainty: [], reviewRequired: false })) }] });
+    await A.p.selectOption('#paste-service', 'chatgpt-for-teachers');
     await A.p.click('#paste-batches details >> nth=0');
     await A.p.fill('#paste-batches textarea[data-paste] >> nth=0', reply);
     await A.p.click('#paste-batches [data-read] >> nth=0');
@@ -376,13 +378,15 @@ async function suite(browser) {
   const saved = JSON.stringify(store2.commits);
   check('a pasted reply is saved to the database for that student', store2.commits.length === 1 && /ana1__3-2__checkpoint-one-response/.test(saved) && /"codes":\{"stringValue":"D+"\}/.test(saved), saved.slice(0, 160));
   check('with no student name in what is saved', !/Ana|Ruiz/.test(saved.replace(/ana1/g, '')));
+  check('and the service it was pasted into', /"reader":\{"stringValue":"chatgpt-for-teachers-pasted"\}/.test(saved));
   await A.p.click('#tab-live');
   await A.p.click('#live-refresh');
   await A.p.waitForTimeout(400);
   const after = await A.p.$$eval('#heat tbody tr', trs => [...trs[0].querySelectorAll('td .cell')].slice(0, 3).map(c => c.className.replace('cell ', '')).join(' '));
   check('the next pull shows the saved levels', /^b-D b-D b-D$/.test(after), after);
   await A.p.click('#heat button.cell.b-D >> nth=0');
-  check('with the saved reasons', /SAVED-REASON/.test(await A.p.$eval('#dbody', e => e.textContent)));
+  const savedDrawer = await A.p.$eval('#dbody', e => e.textContent);
+  check('with the saved reasons, and which service read it', /SAVED-REASON/.test(savedDrawer) && /Read by ChatGPT for Teachers/.test(savedDrawer));
   check('saving and pulling raise no script error', A.errors.length === 0, A.errors.join(' | '));
   await A.context.close();
 
@@ -407,12 +411,13 @@ async function suite(browser) {
   const controls = [
     { name: 'the grid assumes three criteria', file: 'teacher/class-pulse-app.js', from: 'CPS.forEach(cp => contracts[cp].criteria.forEach(', to: 'CPS.forEach(cp => contracts[cp].criteria.slice(0, 3).forEach(', expect: /follow the topic's criteria/ },
     { name: 'the policy allows the network', file: 'teacher/class-pulse.html', from: "connect-src https://firestore.googleapis.com", to: "connect-src * https://firestore.googleapis.com", expect: /only Google sign-in and the district database|fetch from the page is refused/ },
-    { name: 'saved ratings are ignored', file: 'teacher/class-pulse-app.js', from: "if (g && r.completionState === 'verified-submission' && g.fingerprint === r.fingerprint) byText.set", to: "if (false) byText.set", expect: /next pull shows the saved levels/ },
+    { name: 'saved ratings are ignored', file: 'teacher/class-pulse-app.js', from: "if (g && r.completionState === 'verified-submission' && g.fingerprint === r.fingerprint) {", to: "if (false) {", expect: /next pull shows the saved levels/ },
     { name: 'an answer changed after Submit is counted', file: 'teacher/class-pulse-live.js', from: "print && print === fingerprint ? 'verified-submission'", to: "print ? 'verified-submission'", expect: /changed after Submit/ },
     { name: 'copying real answers is open without approval', file: 'teacher/class-pulse-handoff.js', from: "if (rows.every(r => r.completionState === 'synthetic-complete'))", to: "if (true)", expect: /stays locked/ },
     { name: 'projector mode keeps names', file: 'teacher/class-pulse-app.js', from: "S.names === 'anon' ?", to: 'false ?', expect: /hides every name/ },
     { name: 'the reader menu changes nothing', file: 'teacher/class-pulse-app.js', from: "provider = S.reader === 'invented' ? src.provider\n        :", to: 'provider = true ? src.provider\n        :', expect: /recorded reader's levels/ },
     { name: 'pasted replies are ignored', file: 'teacher/class-pulse-app.js', from: ": H && S.reader === H.READER.id ? H.provider([...pastedHere().values()]) : recordedProvider(S.reader, src)", to: ": H && S.reader === H.READER.id ? src.provider : recordedProvider(S.reader, src)", expect: /pasted reader's reasons/ },
+    { name: 'the service is not recorded', file: 'teacher/class-pulse-app.js', from: "reader: S.service + '-pasted' });", to: "});", expect: /service it was pasted into/ },
     { name: 'Copy ignores the check', file: 'teacher/class-pulse-app.js', from: "<button class=\"btn primary\" type=\"button\" data-copy=\"${b.id}\"${left ? ' disabled' : ''}>", to: "<button class=\"btn primary\" type=\"button\" data-copy=\"${b.id}\">", expect: /Copy waits/ },
     { name: 'removed words are copied anyway', file: 'teacher/class-pulse-app.js', from: "${esc(H.promptFor(D.contracts[cp], asCopied(b)))}", to: "${esc(H.promptFor(D.contracts[cp], b))}", expect: /never reaches the copied text/ },
     { name: 'the copy button copies something else', file: 'teacher/class-pulse-app.js', from: 'await navigator.clipboard.writeText(text);', to: "await navigator.clipboard.writeText(text + ' ');", expect: /exactly that text/ },

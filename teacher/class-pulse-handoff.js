@@ -35,29 +35,39 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function (E) {
   'use strict';
 
-  // FALSE until ZCS approves, in writing, pasting submitted checkpoint writing into the
-  // service named in SERVICE. Set realWork to true and reference to who approved it and
-  // when (for example 'Dan Layton, email of 2026-11-02'), and update privacy.html to
-  // say what is sent and where, before the change reaches students. The privacy page
-  // promises that order. scripts/test/class-pulse-handoff.test.js fails if realWork is
-  // true without a reference.
-  const APPROVAL = { realWork: false, reference: '' };
+  // The chat services a teacher can paste into. Both take exactly the same text, and
+  // their replies get exactly the same checks; the service is recorded with every
+  // reading so a level always says which AI proposed it.
+  const SERVICES = [
+    { id: 'claude-for-teachers', label: 'Claude for Teachers' },
+    { id: 'chatgpt-for-teachers', label: 'ChatGPT for Teachers' }
+  ];
+  const serviceLabel = id => (SERVICES.find(x => x.id === id) || SERVICES[0]).label;
 
-  // The service the district approves. Only the label changes if it picks ChatGPT for
-  // Teachers instead: both take the same pasted text.
-  const SERVICE = 'Claude for Teachers';
-  const READER = { id: 'pasted', label: SERVICE + ', pasted' };
+  // FALSE until ZCS approves, in writing, pasting submitted checkpoint writing into a
+  // named service. Set realWork to true, reference to who approved it and when (for
+  // example 'Dan Layton, email of 2026-11-02'), and services to the ids the approval
+  // names, and update privacy.html to say what is sent and where, before the change
+  // reaches students. The privacy page promises that order. Approving one service
+  // never opens the other. scripts/test/class-pulse-handoff.test.js fails if realWork
+  // is true without a reference and at least one service.
+  const APPROVAL = { realWork: false, reference: '', services: [] };
+
+  // The default service, and the reader every pasted reply becomes on the page.
+  const SERVICE = SERVICES[0].label;
+  const READER = { id: 'pasted', label: 'pasted replies' };
 
   // Answers per paste. Small enough that a reply comes back whole, large enough that a
   // class of 27 is two pastes a checkpoint.
   const BATCH = 15;
   const FORMAT = 'class-pulse-paste/1';
 
-  function gate(rows, approval) {
-    const a = approval || APPROVAL;
+  function gate(rows, approval, serviceId) {
+    const a = approval || APPROVAL, sid = serviceId || SERVICES[0].id, name = serviceLabel(sid);
     if (rows.every(r => r.completionState === 'synthetic-complete')) return { ok: true, invented: true, reason: 'Every answer here is invented, so no approval is needed.' };
-    if (a.realWork === true && typeof a.reference === 'string' && a.reference.trim().length >= 8) return { ok: true, invented: false, reason: 'Approved: ' + a.reference.trim() };
-    return { ok: false, invented: false, reason: 'Copying real student writing into ' + SERVICE + ' stays off until the district approves it in writing.' };
+    if (a.realWork === true && typeof a.reference === 'string' && a.reference.trim().length >= 8
+        && Array.isArray(a.services) && a.services.includes(sid)) return { ok: true, invented: false, reason: 'Approved for ' + name + ': ' + a.reference.trim() };
+    return { ok: false, invented: false, reason: 'Copying real student writing into ' + name + ' stays off until the district approves it in writing.' };
   }
 
   // Only finished, submitted work goes out, under the engine's own rule. Everything
@@ -197,5 +207,5 @@
     };
   }
 
-  return { APPROVAL, SERVICE, READER, BATCH, FORMAT, gate, batches, flagsFor, redact, promptFor, parseReply, readReply, provider };
+  return { APPROVAL, SERVICES, SERVICE, READER, BATCH, FORMAT, serviceLabel, gate, batches, flagsFor, redact, promptFor, parseReply, readReply, provider };
 });
