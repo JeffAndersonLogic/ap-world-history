@@ -79,6 +79,34 @@ service cloud.firestore {
       return tenantOfCaller() != '' && tenantOfCaller() == tenantId;
     }
 
+    // Staff, not students: the staff domain exactly. Both domains are one tenant,
+    // so inTenant alone cannot tell a teacher from a student; this can, and every
+    // Class Pulse allow below requires it. Added 2026-10-31.
+    function isStaffIn(tenantId) {
+      return inTenant(tenantId)
+        && request.auth.token.email.lower().split('@')[1] == 'zcs.k12.in.us';
+    }
+
+    // ── Class Pulse: who may read whose work ─────────────────────────────────
+    //
+    // A teacher's class list is tenants/{tenantId}/rosters/{teacherUid}/students/
+    // {studentUid}. It is written only with administrator credentials (the
+    // setup script, scripts/class-pulse-roster.js), which bypass these rules;
+    // no browser can add a student to anyone's list, a teacher's own included.
+    // That is what makes the list authorization rather than a display filter:
+    // the section a student's device reports is never consulted.
+    //
+    // The caller is staff and this student is on the caller's own list.
+    function rosterHolds(tenantId, studentUid) {
+      return isStaffIn(tenantId)
+        && exists(/databases/$(database)/documents/tenants/$(tenantId)/rosters/$(request.auth.uid)/students/$(studentUid));
+    }
+
+    // The list itself, readable by the teacher it belongs to and nobody else.
+    function ownsRoster(tenantId, teacherUid) {
+      return isStaffIn(tenantId) && request.auth.uid == teacherUid;
+    }
+
     // ── Student responses ──────────────────────────────────────────────────
     //
     // tenants/{tenantId}/responses/{responseId}, flat, as the architecture
@@ -199,6 +227,17 @@ service cloud.firestore {
       // directions.
       allow get, list: if inTenant(tenantId) && ownsStored();
 
+      // Class Pulse: a teacher reads, one document at a time, the work of a
+      // student on their own class list. The author is taken from the derived id,
+      // so a get of a record not written yet answers "not found" instead of
+      // erroring, and a stored record must agree with its id. Never list: a
+      // teacher cannot query the collection.
+      function rosterHoldsAuthor() {
+        return rosterHolds(tenantId, responseId.split('__')[0])
+          && (resource == null || resource.data.studentId == responseId.split('__')[0]);
+      }
+      allow get: if inTenant(tenantId) && rosterHoldsAuthor();
+
       allow create: if inTenant(tenantId)
                     && ownsIncoming()
                     && idIsDerived()
@@ -222,6 +261,71 @@ service cloud.firestore {
       // project was installed to fix. District retention and deletion are
       // administrative operations run with admin credentials, which bypass these
       // rules by design.
+      allow delete: if false;
+    }
+
+    match /tenants/{tenantId}/rosters/{teacherUid} {
+      allow get: if inTenant(tenantId) && ownsRoster(tenantId, teacherUid);
+      allow write: if false;
+    }
+
+    match /tenants/{tenantId}/rosters/{teacherUid}/students/{studentUid} {
+      allow get, list: if inTenant(tenantId) && ownsRoster(tenantId, teacherUid);
+      allow write: if false;
+    }
+
+    // ── Class Pulse: the readings a teacher keeps ────────────────────────────
+    //
+    // tenants/{tenantId}/pulse/{teacherUid}/ratings/{studentUid__topic__slot}.
+    // The levels an AI proposed for one submitted checkpoint answer, saved by the
+    // teacher who pasted them, readable by that teacher only. Students never see
+    // them. The id is derived like a response's, so one answer has one rating.
+    match /tenants/{tenantId}/pulse/{teacherUid}/ratings/{ratingId} {
+
+      function ownsPulse() {
+        return isStaffIn(tenantId) && request.auth.uid == teacherUid;
+      }
+
+      function ratingShapeIsValid() {
+        return request.resource.data.keys().hasOnly([
+                 'studentId', 'topicKey', 'slotId', 'codes', 'reading', 'reader',
+                 'rubricVersion', 'answerFingerprint', 'ratedAt', 'schemaVersion'
+               ])
+            && request.resource.data.keys().hasAll([
+                 'studentId', 'topicKey', 'slotId', 'codes', 'reading', 'reader',
+                 'rubricVersion', 'answerFingerprint', 'ratedAt', 'schemaVersion'
+               ])
+            && ratingId == request.resource.data.studentId + '__'
+                 + request.resource.data.topicKey + '__' + request.resource.data.slotId
+            && request.resource.data.topicKey is string
+            && request.resource.data.topicKey.matches('^[a-z0-9]{1,4}-?[0-9]{0,2}$')
+            && request.resource.data.slotId in ['checkpoint-one-response', 'checkpoint-two-response']
+            // One letter per criterion: Demonstrating, Partly there, Not yet, Can't tell.
+            && request.resource.data.codes is string
+            && request.resource.data.codes.matches('^[DPNU]{1,8}$')
+            // The reasons and quotes, as the engine validated them. Bounded like an answer.
+            && request.resource.data.reading is string
+            && request.resource.data.reading.size() <= 20000
+            && request.resource.data.reader is string
+            && request.resource.data.reader.size() <= 64
+            && request.resource.data.rubricVersion is string
+            && request.resource.data.rubricVersion.size() <= 96
+            // The Submit receipt's fingerprint of the answer that was read, so a
+            // rating of an answer the student has since changed is never shown.
+            && request.resource.data.answerFingerprint is string
+            && request.resource.data.answerFingerprint.matches('^[0-9a-z]{1,32}$')
+            && request.resource.data.ratedAt == request.time
+            && request.resource.data.schemaVersion is int;
+      }
+
+      allow get, list: if inTenant(tenantId) && ownsPulse();
+
+      // A teacher saves ratings only for students on their own list.
+      allow create, update: if inTenant(tenantId)
+                            && ownsPulse()
+                            && rosterHolds(tenantId, request.resource.data.studentId)
+                            && ratingShapeIsValid();
+
       allow delete: if false;
     }
   }

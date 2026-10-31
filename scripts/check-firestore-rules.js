@@ -48,7 +48,9 @@ const RESPONSE_PATH = 'match /tenants/{tenantId}/responses/{responseId}';
 
 // A condition that does not name one of these is not constrained by identity.
 // `false` is the other acceptable answer, and it is checked separately.
-const OWNERSHIP_TOKENS = ['ownsStored', 'ownsIncoming'];
+// The Class Pulse helpers (2026-10-31) name a record too: the teacher's own list,
+// the teacher's own ratings, a student on the teacher's own list.
+const OWNERSHIP_TOKENS = ['ownsStored', 'ownsIncoming', 'ownsRoster', 'ownsPulse', 'rosterHolds'];
 const TENANT_TOKENS = ['inTenant'];
 
 // Comments are stripped before anything is parsed, and this is not tidiness.
@@ -81,6 +83,12 @@ function allowStatements(source) {
     });
   }
   return out;
+}
+
+// The body of one rules function, up to the closing brace on its own line.
+function fnBody(source, name) {
+  const m = new RegExp('function ' + name + '\\([^)]*\\)\\s*\\{([\\s\\S]*?)\\n\\s*\\}').exec(source);
+  return m ? m[1] : '';
 }
 
 // The assertions, factored out so the negative controls below can run the exact
@@ -146,8 +154,11 @@ function assertRules(rawSource, report) {
   // The write shape allowlist. hasOnly is what stops an arbitrary field being
   // parked in an otherwise valid record; a rules file that drops it still works
   // and still passes every other check here.
+  // Every shape function, so a second collection's allowlist cannot stand in for
+  // a missing first one (the case once Class Pulse ratings added their own).
+  const shapes = ['shapeIsValid', 'ratingShapeIsValid'].map(n => fnBody(source, n));
   report('writes are validated against a closed field allowlist',
-    /\.keys\(\)\.hasOnly\(/.test(source));
+    shapes.every(b => /\.keys\(\)\.hasOnly\(/.test(b)));
 
   // The per-document ceiling is this system's only enforceable cost control,
   // since Firestore cannot be spend-capped. Losing it is silent.
@@ -184,6 +195,27 @@ function assertRules(rawSource, report) {
   // enabling another sign-in method later cannot quietly widen who satisfies it.
   report('the sign-in provider is pinned',
     /sign_in_provider\s*==\s*'google\.com'/.test(source));
+
+  // ── Class Pulse, added 2026-10-31 ──────────────────────────────────────────
+  //
+  // A teacher reads a student's work only when that student is on the teacher's
+  // own class list, and the list is written with administrator credentials only.
+  // Each of these is silent if it goes: the rules still compile and still keep
+  // students out of each other's work.
+  const body = name => fnBody(source, name);
+  report('staff means the staff domain exactly, never the student domain',
+    /split\('@'\)\[1\]\s*==\s*'zcs\.k12\.in\.us'/.test(body('isStaffIn')) && body('isStaffIn').includes('inTenant('));
+  report('every Class Pulse grant requires staff',
+    ['rosterHolds', 'ownsRoster', 'ownsPulse'].every(f => body(f).includes('isStaffIn(')));
+  report('a teacher reads only students on their own list, by the caller\'s own id',
+    /rosters\/\$\(request\.auth\.uid\)\/students\//.test(body('rosterHolds')));
+  const lists = /match \/tenants\/\{tenantId\}\/rosters\/\{teacherUid\} \{([\s\S]*?)\n\s*\}/.exec(source);
+  const students = /match \/tenants\/\{tenantId\}\/rosters\/\{teacherUid\}\/students\/\{studentUid\} \{([\s\S]*?)\n\s*\}/.exec(source);
+  report('no browser can write a class list',
+    !!lists && !!students && [lists[1], students[1]].every(b => /allow write: if false;/.test(b)
+      && allowStatements(b).every(a => a.condition === 'false' || !a.verbs.some(v => ['write', 'create', 'update', 'delete'].includes(v)))));
+  report('a teacher\'s read of student work is one document at a time, never a query',
+    /allow get: if [^;]*rosterHoldsAuthor\(\)/.test(source) && !/allow [a-z, ]*list[a-z, ]*: if [^;]*rosterHoldsAuthor/.test(source));
 }
 
 // ── The run ──────────────────────────────────────────────────────────────────
@@ -237,6 +269,16 @@ const MUTATIONS = [
     s => s.replace(/&&\s*request\.auth\.token\.firebase\.sign_in_provider == 'google\.com'/, '')],
   ['delete is opened up to the author',
     s => s.replace(/allow delete: if false;/, 'allow delete: if ownsStored();')],
+  ['a teacher may add students to their own class list',
+    s => s.replace(/(rosters\/\{teacherUid\}\/students\/\{studentUid\} \{[\s\S]*?)allow write: if false;/, '$1allow write: if inTenant(tenantId) && ownsRoster(tenantId, teacherUid);')],
+  ['students count as staff',
+    s => s.replace(/split\('@'\)\[1\] == 'zcs\.k12\.in\.us'/, "split('@')[1] in ['zcs.k12.in.us', 'stumail.zcs.k12.in.us']")],
+  ['the staff check is dropped from the class-list lookup',
+    s => s.replace(/return isStaffIn\(tenantId\)\n(\s*)&& exists/, 'return inTenant(tenantId)\n$1&& exists')],
+  ['the class list is looked up under any teacher, not the caller',
+    s => s.replace(/rosters\/\$\(request\.auth\.uid\)\/students\//, 'rosters/$(studentUid)/students/')],
+  ['a teacher may query all student work',
+    s => s.replace(/allow get: if inTenant\(tenantId\) && rosterHoldsAuthor\(\);/, 'allow get, list: if inTenant(tenantId) && rosterHoldsAuthor();')],
   ['a wildcard match is added "temporarily" while debugging',
     s => s.replace(/service cloud\.firestore \{\n(\s*)match \/databases\/\{database\}\/documents \{/,
       'service cloud.firestore {\n$1match /databases/{database}/documents {\n      match /{document=**} {\n        allow read, write: if request.auth != null;\n      }')]
