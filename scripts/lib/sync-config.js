@@ -49,10 +49,11 @@ module.exports = {
   pilot: false,
 
   // Class Pulse: the Submit button on Checkpoint 1 and 2 of unit lessons, which
-  // backs up a fingerprint of the finished answer as its own slot. FALSE until ZCS
-  // approves teacher reads of submitted work (Stage B of AndersonLogic-OS
-  // 04_PRODUCTS/BeHistorical/Class-Pulse-Spec-2026-10-27.md), so no student sees a
-  // button whose result nobody can read. It does nothing while `enabled` is false.
+  // backs up a fingerprint of the finished answer as its own slot. FALSE until the
+  // teacher-read rules are approved by ZCS and published, and the class list is set
+  // up (docs/claude/student-work-persistence.md, "What has to happen, in order"), so
+  // no student sees a button whose result nobody can read. It does nothing while
+  // `enabled` is false.
   submit: false,
 
   tenantId: 'zcs',

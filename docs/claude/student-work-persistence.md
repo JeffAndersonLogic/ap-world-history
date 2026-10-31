@@ -547,3 +547,88 @@ sent and where before that change reaches students.
 negative controls), and copy-and-paste and check-before-copying sections in
 `scripts/test/class-pulse-page.test.js` (four more). The calibration practice that measures how Claude for Teachers reads a batch lives in
 AndersonLogic-OS `04_PRODUCTS/BeHistorical/Class-Pulse-Calibration/`.
+
+### Class Pulse, My class: reading submitted work and keeping ratings, added 2026-10-31
+
+**What it does.** On the Class Pulse page, **My class** signs the teacher in with a school
+staff account (the backup's own sign-in code, `createAuth` in
+`assets/js/behistorical-sync-transport.js`) and reads, through Firestore's REST API with the
+teacher's token, the Checkpoint 1 and 2 answers and Submit receipts of the students on that
+teacher's class list (`teacher/class-pulse-live.js`). An answer counts as submitted only while
+its receipt's fingerprint still matches it. Ratings pasted back are saved under
+`tenants/zcs/pulse/{teacherUid}/ratings/{studentUid__topic__slot}` and read back on every
+pull; a rating counts only for the exact answer it was made from (`answerFingerprint`). A
+submitted answer with no rating shows as "not read yet", never as a level. Across the course
+and One student stay demo-only and are switched off in My class. The project settings come
+from `scripts/lib/sync-config.js` through `scripts/build-sync.js`, which also writes
+`teacher/data/class-pulse-config.js` (staff domains only) and drift-checks it.
+
+**What the rules allow** (`firestore/firestore.rules`, Jeff and Dan's process: summary and
+exact file to Dan before publishing). A staff account (the staff domain exactly, never
+stumail) may: read its own class list (`rosters/{teacherUid}` and `/students`); read, one
+document at a time and never by query, the four checkpoint slots (`checkpoint-one-response`,
+`checkpoint-two-response` and their `-submitted` receipts) of a student on its own list;
+create and update its own ratings for students on its own list, shape-checked, with the
+server's time. No browser can write a class list, the teacher's own included; it is written
+with administrator credentials by `scripts/class-pulse-roster.js`. Student access is
+unchanged. Each teacher read costs one extra read for the list lookup, so one pull of a
+class of 25 is about 200 reads of the free plan's 50,000 a day.
+
+**The page's network.** `connect-src` names Firestore and Google's two sign-in hosts and
+nothing else; scripts may come from `www.gstatic.com` (the pinned sign-in library) and
+`apis.google.com` (its popup helper). Demo contacts no Google host; the library loads only
+when My class is chosen. AI reading stays copy and paste: no AI host is reachable.
+
+**Checks.** `scripts/test/class-pulse-live.test.js` (rules suite) runs the module against
+the real rules in the emulator, and loads the real rules first: the rules suite's negative
+controls used to leave their last broken copy loaded for the suites after it, which
+`firestore-rules.test.js` now also undoes when it finishes. `firestore-rules.test.js` gains
+the Class Pulse assertions and seven mutations; `check-firestore-rules.js` gains six
+invariants. `class-pulse-page.test.js` runs My class end to end against a stand-in for Google
+served on Google's own addresses, so the real policy and requests run unchanged.
+`class-pulse-roster.test.js` (offline) covers the setup script; it was also run against the
+Auth and Firestore emulators with the real admin library on 2026-10-31. It has not been run
+against the real project.
+
+#### Setting up the class list (Jeff, once per class)
+
+You need: your school staff account, which co-owns the `behistoric` Firebase project, and a
+list of the class's students as a file with two columns, `email,name`, one student per line,
+student addresses ending `@stumail.zcs.k12.in.us`. Each student must have signed in to
+BeHistorical at least once. Keep the file on your own computer, never in this repository.
+
+1. Open **shell.cloud.google.com**, signed in with your school staff account.
+2. In the Cloud Shell window, open the three-dot menu, choose **Upload**, and upload the
+   file, for example `g4.csv`. It lands in your home folder.
+3. Paste these lines, one at a time (until Class Pulse ships, the branch is
+   `claude/busy-pasteur-d7c0wl`; afterwards leave out `-b` and the branch name):
+
+   ```
+   git clone --depth 1 -b claude/busy-pasteur-d7c0wl https://github.com/JeffAndersonLogic/ap-world-history.git
+   cd ap-world-history
+   npm install --no-save firebase-admin
+   gcloud config set project behistoric
+   node scripts/class-pulse-roster.js ~/g4.csv --teacher YOUR-STAFF-EMAIL@zcs.k12.in.us --class G4 --approval "Dan Layton, email of 2026-10-22"
+   ```
+
+4. Read what it prints: how many students it found, and who has not signed in yet. Nothing
+   is written yet.
+5. Run the last line again with ` --apply` at the end. It says **Done**.
+6. Delete the uploaded file from Cloud Shell when you are finished: `rm ~/g4.csv`.
+
+If it stops with a message about credentials or a quota project, run
+`gcloud auth application-default login`, follow the link it prints, and try step 5 again.
+Run it again any time to add students who have since signed in.
+
+#### What has to happen, in order, before My class works for real
+
+1. Dan approves the rules change (summary and exact file, AndersonLogic-OS
+   `04_PRODUCTS/BeHistorical/Rules-Change-Class-Pulse-2026-10-31.md`).
+2. Jeff publishes the rules: Firebase console, Firestore Database, Rules, paste the whole of
+   `firestore/firestore.rules`, Publish. A file in this repository is not a deployed rule.
+3. Jeff sets up the G4 class list (above).
+4. Jeff says "ship it": `submit` in `scripts/lib/sync-config.js` goes true so students see
+   **Submit to your teacher**, the renderers are rebuilt, and the page ships to `main`.
+5. Reading by AI waits for Dan's written yes on Claude for Teachers: then `APPROVAL` in
+   `teacher/class-pulse-handoff.js` names it and `privacy.html` says what is sent, before
+   that change ships.
