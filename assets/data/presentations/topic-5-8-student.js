@@ -183,11 +183,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "name": "Germany",
             "events": [
               {
-                "year": 1875,
-                "label": "1875",
-                "text": "Two parties unite"
-              },
-              {
                 "year": 1878,
                 "label": "1878",
                 "text": "Socialists banned"
@@ -308,27 +303,27 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "rows": [
           {
             "name": "Political",
-            "tool": "Reform Acts, 1867 and 1884",
-            "result": "gave the vote to many working men."
+            "tool": "Reform Acts, 1867, 1884",
+            "result": "more men can vote."
           },
           {
             "name": "Social",
             "tool": "Factory Act, 1833; Mines Act, 1842",
-            "result": "kept young children out of mills and mines."
+            "result": "fewer young children at work."
           },
           {
             "name": "Educational",
-            "tool": "Education Acts, 1870 and 1880",
-            "result": "built schools and required attendance."
+            "tool": "Education Acts, 1870, 1880",
+            "result": "children must attend school."
           },
           {
             "name": "Urban",
             "tool": "London's sewers, after 1858",
-            "result": "carried the city's waste away."
+            "result": "waste carried away."
           }
         ],
         "payoffLabel": "Every reform",
-        "payoff": "Fixed a problem without overthrowing the system"
+        "payoff": "Fix, not overthrow"
       }
     },
     {
@@ -478,7 +473,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Same pressure, two empires.",
       "kc": "KC-5.1.V.B",
       "template": {
-        "job": "Modernize under pressure",
+        "job": "Reform",
         "left": {
           "tag": "Ottoman",
           "name": "Tanzimat",

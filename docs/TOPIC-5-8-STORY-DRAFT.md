@@ -2,10 +2,10 @@
 
 **Status: Delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12).**
 
-**Resume here (2026-11-01):** Phases 0 to 8 done (story, ledger, First & 10, lesson data and renderer
-config, deep reading and eBook, the Tongwen Guan room, the map, the 25-slide deck, Socrates, skills map,
-the staged Canvas overview). Next: Phase 9, the browser suite in brand fonts, then review pass 1.
-The Unit 5 reading fingerprint moves only after the loop (readings-golden.js fails until then, by design).
+**Resume here (2026-11-01):** Phases 0 to 8 done. Phase 9: three slide fits from the builder's read
+fixed; review pass 1 launched (page truth on the cheaper model, history on the default model) from a
+packet in the session's scratchpad; its findings are not yet logged. If this session stops, recapture
+the packet and run pass 1 again. The Unit 5 reading fingerprint moves only after the loop.
 
 Drafted 2026-11-01 from the CED source file, for the build Jeff started with "Build 5.8." The Phase 9
 reviewers check this story and every surface built from it against that file and the scholarship

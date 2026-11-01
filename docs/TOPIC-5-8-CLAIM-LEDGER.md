@@ -298,3 +298,18 @@ Qing China:
 | Haymarket: "seven police officers were killed, along with four workers" by the bomb | LD lecture card 1, PS | One officer was killed by the blast; how the others died is disputed (Avrich; Messer-Kruse) | REMOVED (with the American branch) |
 | Altgeld's pardon "quoted" ("The jury was packed, made up of men hostile ...") | PS | A paraphrase presented as quotation | REMOVED |
 | May Day "established in 1889 by the Second International to commemorate the Haymarket events" | LD lecture card 1 | The 1889 resolution cites the AFL's 1888 decision, not Haymarket; the anniversary link is a historians' reading | REMOVED |
+
+## Review findings
+
+(Phase 9 passes are logged here.)
+
+**Before pass 1, the builder's own read of the slides** (brand fonts, 25 teacher slides) fixed three
+layout defects: slide 8's 1875 and 1878 labels printed over each other in the Germany lane (1875 now
+in the notes only); slide 13's payoff ran off the board ("Fix, not overthrow," with shorter rows); slide
+19's pivot word overflowed its circle ("Reform").
+
+### Pass 1, 2026-11-01
+
+Packet: `capture-topic-for-review.js 5.8` (brand fonts, 25 teacher slides). Two fresh reviewers,
+launched together: page truth, readability, CED and ownership on the cheaper model; history on the
+default model.

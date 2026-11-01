@@ -277,7 +277,7 @@ window.BEHISTORICAL_TEACHING = {
         range: [1860, 1910],
         tick: 10,
         lanes: [
-          { name: 'Germany', events: [ { year: 1875, label: '1875', text: 'Two parties unite' }, { year: 1878, label: '1878', text: 'Socialists banned' }, { year: 1890, label: '1890', text: 'SPD: most votes' } ] },
+          { name: 'Germany', events: [ { year: 1878, label: '1878', text: 'Socialists banned' }, { year: 1890, label: '1890', text: 'SPD: most votes' } ] },
           { name: 'Britain', events: [ { year: 1868, label: '1868', text: 'Unions\' congress' }, { year: 1900, label: '1900', text: 'Workers\' committee' }, { year: 1906, label: '1906', text: 'Labour Party' } ] },
           { name: 'United States', events: [ { year: 1886, label: '1886', text: 'AFL founded' } ] }
         ]
@@ -286,7 +286,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.1.V.A: "Workers\' movements and political parties emerged in different areas, promoting alternative visions of society."',
-          'Germany: Lassalle\'s party (1863) and the Eisenach party of Bebel and Liebknecht (1869) united at Gotha in 1875. The Anti-Socialist Law of October 1878 banned socialist meetings and newspapers until it lapsed in September 1890. That year the party, renamed the Social Democratic Party, won about 20 percent of the vote, more than any other party, but only 35 seats (German History in Documents and Images). It became the largest party in seats in 1912.',
+          'Germany: Lassalle\'s party (1863) and the Eisenach party of Bebel and Liebknecht (1869) united at Gotha in 1875 (not on the slide). The Anti-Socialist Law of October 1878 banned socialist meetings and newspapers until it lapsed in September 1890. That year the party, renamed the Social Democratic Party, won about 20 percent of the vote, more than any other party, but only 35 seats (German History in Documents and Images). It became the largest party in seats in 1912.',
           'Britain: the Labour Representation Committee, February 1900; 29 seats and the name Labour Party in 1906.',
           'United States: the American Federation of Labor, December 1886, Samuel Gompers its first president: skilled workers\' unions for wages, hours and conditions.'
         ],
@@ -380,13 +380,13 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Who pushed each: governments, organizations, or individuals?',
       template: {
         rows: [
-          { name: 'Political', tool: 'Reform Acts, 1867 and 1884', result: 'gave the vote to many working men.' },
-          { name: 'Social', tool: 'Factory Act, 1833; Mines Act, 1842', result: 'kept young children out of mills and mines.' },
-          { name: 'Educational', tool: 'Education Acts, 1870 and 1880', result: 'built schools and required attendance.' },
-          { name: 'Urban', tool: 'London\'s sewers, after 1858', result: 'carried the city\'s waste away.' }
+          { name: 'Political', tool: 'Reform Acts, 1867, 1884', result: 'more men can vote.' },
+          { name: 'Social', tool: 'Factory Act, 1833; Mines Act, 1842', result: 'fewer young children at work.' },
+          { name: 'Educational', tool: 'Education Acts, 1870, 1880', result: 'children must attend school.' },
+          { name: 'Urban', tool: 'London\'s sewers, after 1858', result: 'waste carried away.' }
         ],
         payoffLabel: 'Every reform',
-        payoff: 'Fixed a problem without overthrowing the system'
+        payoff: 'Fix, not overthrow'
       },
       notes: {
         minutes: 3,
@@ -522,7 +522,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'compare', kind: 'balance', eyebrow: 'The Old Empires · Compare', kc: 'KC-5.1.V.B',
       title: 'Same pressure, two empires.',
       template: {
-        job: 'Modernize under pressure',
+        job: 'Reform',
         left: { tag: 'Ottoman', name: 'Tanzimat', when: '1839 to 1876', text: 'Equal rights, factories, telegraph; resisted by Janissaries, scholars, the sultan.' },
         right: { tag: 'Qing', name: 'Self-Strengthening', when: '1860s to 1895', text: 'Arsenals, navy, language school; resisted by Woren, then Cixi.' },
         claimLabel: 'Compare',
