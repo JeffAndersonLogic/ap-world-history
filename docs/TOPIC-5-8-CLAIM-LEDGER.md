@@ -466,3 +466,9 @@ reviewer (HTTP 403); the builder had read them as JSON (section 10 of the story 
 | In February 1890, while still banned, the party won the most votes; the law lapsed in September; in October it renamed itself the SPD | F10, LD, RC map key, DR, Deck slide 8 notes | GHDI (lapse 30 September 1890; 1890 results); the SPD's own history ("1890: SAP wird zur SPD," Halle); the 1890 election of 20 February | NARROWED (order corrected) |
 | Owen shortened working hours | DR, Deck slide 10 notes | OpenLearn; Gale (eleven and three-quarters to ten and three-quarters) | NARROWED (the figures "twelve to ten" REMOVED) |
 | No communist party ruled a country until the twentieth century; no revolution like Marx's won lasting power in an industrial country before 1900; the Paris Commune of 1871, which Marx praised, was crushed within about ten weeks | F10, LD lecture card 2, DR, Deck slides 10 and 20 | Engels, 1891 postscript ("Look at the Paris Commune. That was the Dictatorship of the Proletariat"); the Commune, 18 March to 28 May 1871 | NARROWED (was "no communist government existed until the twentieth century") |
+
+### Pass 2, 2026-11-01
+
+Packet recaptured after pass 1's fixes (brand fonts, 25 teacher slides). Two fresh reviewers, as before.
+Both were cut off by the account's five-hour usage limit soon after starting; both were resumed (not
+relaunched) once it reset, at 11:34 UTC, from their saved work.
