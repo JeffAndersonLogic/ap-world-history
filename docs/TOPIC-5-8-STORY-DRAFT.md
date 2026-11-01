@@ -1,14 +1,20 @@
 # Topic 5.8 Story Draft: Reactions to the Industrial Economy from 1750 to 1900
 
-**Status: Delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12).**
-
-**Resume here (2026-11-01):** Review passes 1 and 2 done, every finding logged and dispositioned in the
-claim ledger. Next: review pass 3 from a fresh packet (the last before the three-pass safety valve).
-The Unit 5 reading fingerprint moves only after the loop.
-
-Drafted 2026-11-01 from the CED source file, for the build Jeff started with "Build 5.8." The Phase 9
-reviewers check this story and every surface built from it against that file and the scholarship
-before anything ships. Nothing ships until Jeff says "ship it".
+**Status: Approved 2026-11-01 by the independent reviewer loop (Jeff's standing rule of 2026-10-12).**
+Drafted 2026-11-01 from the CED source file, for the build Jeff started with "Build 5.8." Three review
+passes (six reviewers; pass 2 paused for the account's usage limit and was resumed) checked it and every
+surface built from it against that file and the scholarship; the loop closed on the three-pass safety
+valve with every finding fixed or rejected with a reason (`docs/TOPIC-5-8-CLAIM-LEDGER.md`, Review
+findings). Review changed the story in these places, and the surfaces carry the corrected wording: the
+Chartists won five of their six points later, the vote for every man over 21 only in 1918; after 1824
+forming a union was legal but limited, legal standing came in 1871 and picketing in 1875; the German
+party won the most votes in February 1890 while banned and took the name SPD that October; the Ottoman
+pressure began with a lost war against Russia (1787 to 1792) before the industrial powers' pressure grew;
+the fez factory was opened in the 1830s and fitted with British and Belgian machines around 1850; the
+language school was Prince Gong's foreign office's; no communist party ruled a country before the
+twentieth century (the Paris Commune of 1871 named); and who pushed each kind of reform (the Reform
+League, Lord Ashley, William Forster and the National Education League, Bazalgette). Nothing ships until
+Jeff says "ship it".
 
 **Taught:** no dates yet. The schedule ends with the Era 3 Exam (Green Monday 2026-11-23, Silver
 Tuesday 2026-11-24), and neither the schedule nor any comment in it names a Unit 5 class day (5.1 to
@@ -463,7 +469,7 @@ report.
    learning objective (causes and effects) and declares Causation.
 4. **Primary Source:** *The Communist Manifesto* (1848), three short passages from the 1888 English
    translation, with three sourcing questions (2.B). It replaces the Haymarket "adapted excerpt."
-5. **Map module:** "Calls for Change, 1824 to 1898," a map with Britain, Germany, the Ottoman Empire and
+5. **Map module:** "Calls for Change, 1799 to 1906," a map with Britain, Germany, the Ottoman Empire and
    Qing China shaded, and the pressures and reforms in the key. It replaces the old map with its 1905 and
    Unit 6 entries.
 6. **Evidence Lab:** real objects (the Kennington Common daguerreotype, the 1839 Convention etching, the

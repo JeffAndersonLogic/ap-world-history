@@ -120,7 +120,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `"After 1824, unions could do as they liked." Not quite. The 1824 repeal ended the ban and forming a union was no longer a crime, but the 1825 law limited what unions could do, and the Tolpuddle laborers were convicted in 1834 under a law against secret oaths. Full legal standing came in 1871. A change can come in steps.`
+              html: `"After 1824, unions could do as they liked." Not quite. The 1824 repeal ended the ban and forming a union was no longer a crime, but the 1825 law limited what unions could do, and the Tolpuddle laborers were convicted in 1834 under a law against secret oaths. A law of 1871 gave unions legal standing, but a law passed the same day made picketing a crime until 1875. A change can come in steps.`
             } }
           ]
         },
@@ -262,7 +262,7 @@ module.exports = {
           heading: 'The Ottoman Empire',
           blocks: [
             { p: `After a lost war with Russia (1787 to 1792), Sultan Selim III built a new infantry in the 1790s, the "New Order," with European-style uniforms, imported guns and French instructors. The Janissaries, the old army corps, saw it as a threat, and important conservative religious scholars sided with them. A revolt overthrew Selim in <span class="num">1807</span>. In June <span class="num">1826</span> Sultan Mahmud II destroyed the Janissaries and built a new army along European lines.` },
-            { p: `On 3 November <span class="num">1839</span>, at Gülhane in Istanbul, the government announced the <span class="kt">Tanzimat</span> ("reorganization"). Its decree promised "perfect security for life, honor, and property," "a regular system of assessing taxes" and a regular system of military service, and it said that "the Muslim and non-Muslim subjects of our lofty Sultanate shall, without exception, enjoy our imperial concessions." Mahmud II's government had opened a state fez factory in Istanbul in the 1830s; in the Tanzimat years it was moved to Eyüp and fitted with steam engines and machines from Britain and Belgium. The state added an ironworks in <span class="num">1843</span> and telegraph lines from <span class="num">1855</span>.` },
+            { p: `On 3 November <span class="num">1839</span>, at Gülhane in Istanbul, the government announced the <span class="kt">Tanzimat</span> ("reorganization"). Its decree promised "perfect security for life, honor, and property," "a regular system of assessing taxes" and a regular system of military service, and it said that "the Muslim and non-Muslim subjects of our lofty Sultanate shall, without exception, enjoy our imperial concessions." Mahmud II's government had opened a state fez factory in Istanbul in the 1830s; around 1850 it was fitted with steam engines and machines from Britain and Belgium. The state added an ironworks in <span class="num">1843</span> and telegraph lines from <span class="num">1855</span>.` },
             { p: `A decree of <span class="num">1856</span> promised equal treatment to Christians and Jews. Many Muslims, who had long held a higher place than Christians and Jews, resented losing it; some Christian church leaders were unhappy too. In December <span class="num">1876</span> the empire got a constitution and a parliament. In February <span class="num">1878</span> Sultan Abdulhamid II suspended the constitution and dissolved the parliament.` }
           ]
         },

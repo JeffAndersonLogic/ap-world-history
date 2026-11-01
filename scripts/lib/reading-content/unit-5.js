@@ -2040,7 +2040,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In 1839 the government announced a program of reforms called the <span class=\"kt\">Tanzimat</span>, Turkish for \"reorganization.\" It promised all subjects safety for their lives, honor and property, fair taxes and a regular system of military service. A decree in 1856 promised equal treatment to Christians and Jews as well as Muslims. In the 1830s, before the Tanzimat, Sultan Mahmud II's government had opened a state fez factory in Istanbul; in the Tanzimat years it moved to a new site and got steam engines and machines from Britain and Belgium, and from 1855 the state built telegraph lines. Many Muslims resented the 1856 promise of equality, because it ended their place as the empire's ruling community. In 1876 the empire got a constitution and an elected parliament. Two years later the new sultan, Abdulhamid II, shut the parliament down."
+            "html": "In 1839 the government announced a program of reforms called the <span class=\"kt\">Tanzimat</span>, Turkish for \"reorganization.\" It promised all subjects safety for their lives, honor and property, fair taxes and a regular system of military service. A decree in 1856 promised equal treatment to Christians and Jews as well as Muslims. In the 1830s, before the Tanzimat, Sultan Mahmud II's government had opened a state fez factory in Istanbul; around 1850 it got steam engines and machines from Britain and Belgium, and from 1855 the state built telegraph lines. Many Muslims resented the 1856 promise of equality, because it ended their place as the empire's ruling community. In 1876 the empire got a constitution and an elected parliament. Two years later the new sultan, Abdulhamid II, shut the parliament down."
           }
         ],
         "callout": {
@@ -2072,7 +2072,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>Three myths to drop.</strong> \"Marx's revolution came in the 1800s\": no communist party ruled a country until the twentieth century. \"After 1824, unions could do as they liked\": an 1825 law limited what they could do, and full legal standing came only in 1871. \"China and the Ottoman Empire refused to change\": both governments tried to modernize; the reforms were resisted from inside.</p>"
+          "raw": "<p><strong>Three myths to drop.</strong> \"Marx's revolution came in the 1800s\": no communist party ruled a country until the twentieth century. \"After 1824, unions could do as they liked\": an 1825 law limited what they could do; a law of 1871 gave unions legal standing, but another law passed the same day made picketing a crime until 1875. \"China and the Ottoman Empire refused to change\": both governments tried to modernize; the reforms were resisted from inside.</p>"
         }
       }
     ],

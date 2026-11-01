@@ -484,7 +484,7 @@ window.BEHISTORICAL_TEACHING = {
           'Selim III\'s New Order: "a new infantry ... with European-style uniforms, imported rifles, and French instructors" (Todorova). The course says "guns": infantry of the 1790s mostly carried muskets. The Janissaries and important conservative ulema opposed it; a revolt overthrew him in May 1807.',
           'June 1826: Mahmud II destroyed the Janissary corps and built a new army along European lines.',
           'The Edict of Gülhane, 3 November 1839 (Inalcik\'s translation): "perfect security for life, honor, and property"; "a regular system of assessing taxes"; regular conscription; "The Muslim and non-Muslim subjects of our lofty Sultanate shall, without exception, enjoy our imperial concessions." The 1856 decree made Muslims and non-Muslims legally equal, which "was not well perceived by many Muslims who traditionally enjoyed a superior status."',
-          'The state fez factory (Feshane) was opened under Mahmud II in the 1830s and fitted with steam engines and machines from Britain and Belgium in the Tanzimat years, about 1843 to 1851 (TDV İslâm Ansiklopedisi; Ergün and Ciritci, 2026); the photograph, by Abdullah Frères for Abdulhamid II\'s albums (1880 to 1893), shows it later. The telegraph from 1855. The constitution of December 1876; parliament dissolved and the constitution suspended in February 1878.'
+          'The state fez factory (Feshane) was opened under Mahmud II in the 1830s and fitted with steam engines and machines from Britain and Belgium around 1850 (TDV İslâm Ansiklopedisi: 1849 to 1851; Ergün and Ciritci, 2026: 1843 to 1851; sources disagree on when it moved to Eyüp); the photograph, by Abdullah Frères for Abdulhamid II\'s albums (1880 to 1893), shows it later. The telegraph from 1855. The constitution of December 1876; parliament dissolved and the constitution suspended in February 1878.'
         ],
         ask: 'Who resisted, and what were they protecting?',
         listenFor: 'The Janissaries (their place in the army), conservative scholars, Muslims who lost their higher status, the sultan (his power).',
@@ -544,7 +544,7 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'The evidence is more interesting than the myths.',
       template: {
         rows: [
-          { myth: 'After 1824, unions could do as they liked.', evidence: 'An 1825 law limited what they could do. Full legal standing came only in 1871.', source: 'Combination laws, 1824, 1825; Trade Union Act, 1871' },
+          { myth: 'After 1824, unions could do as they liked.', evidence: 'An 1825 law limited them. Legal standing came in 1871; picketing was legal only from 1875.', source: 'Union laws, 1825, 1871, 1875' },
           { myth: 'Marx\'s revolution came in the 1800s.', evidence: 'No communist party ruled a country until the twentieth century. By 1900 his ideas lived in parties.', source: 'German socialist program, 1891' },
           { myth: 'China and the Ottoman Empire refused to change.', evidence: 'Both governments built arsenals, factories and schools. Resistance came from inside.', source: 'Tanzimat; Self-Strengthening' }
         ]

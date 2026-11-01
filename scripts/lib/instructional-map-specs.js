@@ -519,7 +519,7 @@ module.exports = [
   {
     id: 'topic-5-8',
     code: 'Topic 5.8',
-    title: 'Calls for Change, 1824 to 1898',
+    title: 'Calls for Change, 1799 to 1906',
     subtitle: 'Topic 5.8 \u00b7 Reactions to the Industrial Economy from 1750 to 1900',
     highlights: [
       { zone: 'britain', label: 'BRITAIN', labelSide: 'left', tone: 'gold', legend: 'Britain: union ban lifted, 1824; Chartists, 1838 to 1848; Labour, 1906' },

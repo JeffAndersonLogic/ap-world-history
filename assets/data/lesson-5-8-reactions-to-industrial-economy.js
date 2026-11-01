@@ -173,7 +173,7 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "**A different pressure:** the Ottoman Empire and Qing China had few factories of their own. Their pressure came from stronger European powers, and more and more from the industrial powers' armies, warships, and trade. Like Egypt and Japan in Topic 5.6, both governments tried to modernize, and both met resistance from inside.",
           "**The Ottoman Empire:** after a lost war with Russia (1787 to 1792), Sultan Selim III built a European-style army, the \"New Order\"; the Janissaries, the old army corps, and conservative religious scholars opposed it, and a revolt overthrew him in 1807. In June 1826 Sultan Mahmud II destroyed the Janissaries.",
-          "**The Tanzimat:** from 1839 the government promised all subjects safety of life, honor, and property, fair taxes, and regular military service; a decree of 1856 promised equal treatment to Christians and Jews. Mahmud II's government had opened a state fez factory in Istanbul in the 1830s; in the Tanzimat years it got steam engines and machines from Britain and Belgium, and from 1855 the state built telegraph lines. Many Muslims resented the 1856 promise of equality. A constitution and parliament came in 1876; in 1878 Sultan Abdulhamid II shut the parliament down.",
+          "**The Tanzimat:** from 1839 the government promised all subjects safety of life, honor, and property, fair taxes, and regular military service; a decree of 1856 promised equal treatment to Christians and Jews. Mahmud II's government had opened a state fez factory in Istanbul in the 1830s; around 1850 it got steam engines and machines from Britain and Belgium, and from 1855 the state built telegraph lines. Many Muslims resented the 1856 promise of equality. A constitution and parliament came in 1876; in 1878 Sultan Abdulhamid II shut the parliament down.",
           "**Qing China:** after defeats in the Opium Wars (Unit 6) and the Taiping Rebellion, officials such as Zeng Guofan and Li Hongzhang led Self-Strengthening from the 1860s: the Jiangnan Arsenal in Shanghai (1865), a navy yard at Fuzhou (1866) and a steamship company (1872); Prince Gong's foreign office opened a school for foreign languages in Beijing (1862).",
           "**Resistance in China:** in 1867 Woren, a senior official and the emperor's tutor, opposed teaching Western mathematics at the language school. Japan defeated China's new navy in 1894 and 1895. In 1898 the Guangxu Emperor's hundred days of reforms were stopped by the Empress Dowager Cixi and officials who opposed them; six reformers were executed."
         ],
@@ -188,7 +188,7 @@ window.BEHISTORICAL_LESSON = {
   },
 
   map: {
-    title: "Calls for Change, 1824 to 1898",
+    title: "Calls for Change, 1799 to 1906",
     url: "../assets/images/instructional-maps/topic-5-8.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-5-8.svg",
     caption: "A BeHistorical map of the places in this lesson: Britain and Germany, where workers organized and governments reformed, and the Ottoman Empire and Qing China, whose governments tried to modernize under pressure from stronger powers.",

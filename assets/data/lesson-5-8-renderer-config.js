@@ -161,7 +161,7 @@
       alt: "An old black-and-white photograph of a long factory hall. Leather belts run at angles from wheels on the ceiling down to rows of machines, and finished brimless hats sit on the workbenches in the front.",
       url: "../assets/images/topics/5-8/ottoman-imperial-fez-factory-interior-1880s.jpg",
       sourceUrl: "https://www.loc.gov/pictures/item/2003675899/",
-      caption: "A photograph by Abdullah Frères, made between 1880 and 1893 for one of Sultan Abdulhamid II's albums, of the inside of the Imperial Fez Factory in Istanbul, the state's factory for fezzes (brimless red hats) and army uniforms. The state had opened a fez factory in the 1830s; in the Tanzimat years it was fitted with steam engines and machines from Britain and Belgium. Library of Congress.",
+      caption: "A photograph by Abdullah Frères, made between 1880 and 1893 for one of Sultan Abdulhamid II's albums, of the inside of the Imperial Fez Factory in Istanbul, the state's factory for fezzes (brimless red hats) and army uniforms. The state had opened a fez factory in the 1830s; around 1850 it was fitted with steam engines and machines from Britain and Belgium. Library of Congress.",
       prompt: "NOTICE how the machines are powered and what they are making. INFER what this shows about the Ottoman government's plans for its economy and its army. The sultan's own album: what might it leave out?"
     },
     {

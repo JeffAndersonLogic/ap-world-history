@@ -218,7 +218,15 @@ const approvedUnit4Rewrite = !fromDisk && fs.existsSync(unit4SourcePath)
 // fixed or answered. Against main at ec768c94 (whose unit-5.js is the 5.6 blob
 // a0c635d9) only the 5.7 entry changed; 5.8 to 5.10 are byte-for-byte the
 // readings in the committed fixture.
-const APPROVED_UNIT5_REWRITE_BLOB = 'ca9371a905ae607357d11c99e905a2fd146d0083';
+// 2026-11-01: Topic 5.8's rewrite, "Calls for Change", written from the 5.8
+// story (docs/TOPIC-5-8-STORY-DRAFT.md) and the same CED source file, went
+// through three independent review passes on 2026-11-01 (six reviewers;
+// findings and dispositions in docs/TOPIC-5-8-CLAIM-LEDGER.md), approved under
+// Jeff's standing rule of 2026-10-12. The loop ended on its three-pass safety
+// valve, every finding fixed or answered. Against main at f8251dda (whose
+// unit-5.js is the 5.7 blob ca9371a9) only the 5.8 entry changed; 5.1 to 5.7,
+// 5.9 and 5.10 are byte-for-byte unchanged.
+const APPROVED_UNIT5_REWRITE_BLOB = 'bf7b3cb8a00c4da799f695a868b18a49b8b5a7b1';
 const unit5SourcePath = path.join(ROOT, 'scripts', 'lib', 'reading-content', 'unit-5.js');
 const approvedUnit5Rewrite = !fromDisk && fs.existsSync(unit5SourcePath)
   && gitBlobSha(fs.readFileSync(unit5SourcePath, 'utf8')) === APPROVED_UNIT5_REWRITE_BLOB;
@@ -436,8 +444,8 @@ for (const topic of allTopics()) {
     if (all.length) accepted.add('Unit 4 First & 10 Fall 2026 CED realignment approved 2026-09-17; guarded by the exact authored source Git blob hash.');
     continue;
   }
-  if (approvedUnit5Rewrite && /^5\.[1234567]$/.test(topic.topicKey)) {
-    if (all.length) accepted.add('Topics 5.1 (2026-10-20), 5.2 (2026-10-21), 5.3 and 5.4 (2026-10-22), 5.5 (2026-10-23), 5.6 (2026-10-24) and 5.7 (2026-10-29) First & 10 story-first rewrites approved under the standing rule; guarded by the exact authored Unit 5 source Git blob hash.');
+  if (approvedUnit5Rewrite && /^5\.[12345678]$/.test(topic.topicKey)) {
+    if (all.length) accepted.add('Topics 5.1 (2026-10-20), 5.2 (2026-10-21), 5.3 and 5.4 (2026-10-22), 5.5 (2026-10-23), 5.6 (2026-10-24), 5.7 (2026-10-29) and 5.8 (2026-11-01) First & 10 story-first rewrites approved under the standing rule; guarded by the exact authored Unit 5 source Git blob hash.');
     continue;
   }
   const diffs = [];

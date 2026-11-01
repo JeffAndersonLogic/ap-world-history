@@ -619,3 +619,44 @@ powers." The clipped credit tags on slides 3 and 25 are the course-wide full-scr
 |---|---|---|---|
 | Selim III's New Order followed a lost war with Russia (1787 to 1792) | F10, LD lecture card 4, DR, Deck slide 16 | Britannica, "Selim III" and "Nizam-ı cedid" (reforms of 1792 to 1793 after the Treaties of Sistova, 1791, and Jassy, 1792), and Shaw, "The Nizam-i Cedid Army under Sultan Selim III" (1965), as returned by search | VERIFIED |
 | The Ottoman and Qing pressure came from stronger European powers, more and more of them industrial | F10, LD, DR, Deck slides 16 and 19 | The CED ("in response to the expansion of industrializing states"); Russia's wars before industrialization; the Opium Wars after | NARROWED (was "from the industrial powers") |
+
+**History reviewer: 2 supported findings and 2 low notes, all fixed.** Verified with no finding: every
+quotation (Engels, the Whellan directory read in the Leicester OCR, the Manifesto and Engels's preface,
+Woren and Prince Gong, Elman, the 1881 message and the 1884 speech, the Gülhane decree), all four Library
+of Congress records (through loc.gov's JSON), the Punch credit, and the dates of every union, Chartist,
+German, British reform and insurance law.
+
+1. "Full legal standing came only in 1871": the Criminal Law Amendment Act, passed the same day as the
+   Trade Union Act, made picketing a crime until the Conspiracy and Protection of Property Act of 1875
+   (the research pass had already read s. 7 of the 1875 Act). **Fixed:** "a law of 1871 gave unions legal
+   standing, but another law passed the same day made picketing a crime until 1875" (First & 10 callout,
+   deep reading); slide 20 "Legal standing came in 1871; picketing was legal only from 1875."
+2. Selim III's New Order presented as an answer to the industrial powers. **Already fixed** by pass 3's
+   page-truth finding 8 ("After losing a war to Russia (1787 to 1792) ..."; "stronger European powers,
+   and more and more ... the industrial powers").
+3. Sources disagree on when the fez factory moved to Eyüp (1833 in the International Review of Social
+   History; 1839 in TDV). **Fixed:** the move is no longer dated; every surface says it got steam engines and
+   machines from Britain and Belgium "around 1850," the date the sources share.
+4. The map's title, "1824 to 1898," against a key from 1799 to 1906. **Fixed:** "Calls for Change, 1799 to
+   1906" (map and lesson).
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| A law of 1871 gave unions legal standing; a law passed the same day made picketing a crime until 1875 | F10 callout, DR, Deck slide 20 | Trade Union Act 1871, s. 2; Criminal Law Amendment Act 1871; Conspiracy and Protection of Property Act 1875, s. 7 (legislation.gov.uk) and s. 17 (repeal) | NARROWED (was "full legal standing came only in 1871") |
+| The state fez factory, opened under Mahmud II in the 1830s, got steam engines and machines from Britain and Belgium around 1850 | F10, LD, RC Evidence Lab, DR, Deck slide 17 notes | TDV İslâm Ansiklopedisi (1849 to 1851); Ergün and Ciritci (1843 to 1851); the move's date disputed (1833 or 1839) and not given | NARROWED |
+
+**The loop stops here, on the three-pass safety valve.** Supported findings by pass (page truth + history,
+fixed in whole or part): 24 (12 + 9, with 3 overlapping, plus 3 adjacent or rejected), 16 (10 + 7, one
+overlap), then 15 (13 + 2, one overlap). The history findings fell steeply, 9, 7, then 2, and pass 3's two
+were a qualification of a qualification (picketing after 1871) and a cause already corrected the same pass;
+no quotation, date or caption was wrong after pass 1. The page-truth findings did not fall as fast, but they
+moved from defects in claims students are assessed on (a slide naming the wrong resisters, a skill answered
+in advance, a reform question with no answer on the page) to a checkpoint step, two map labels, slide
+wording and two disputed dates. No new myth class appeared after pass 1. Nothing systemic remains that a
+fourth pass would fix: the story, the sources and the renderer held throughout. Three page-truth findings
+were rejected with reasons (the synthesis slide twice, the Evidence Lab's "optional" twice), and three are
+adjacent findings for Jeff (Key Concept codes printed in capitals, the myth-evidence template's contrast, and
+5.9's First & 10 crediting housing and sanitation laws to 5.8).
+
+**Ledger status at the close:** every row carries one of VERIFIED, NARROWED or REMOVED. No row is NEEDS
+JEFF.

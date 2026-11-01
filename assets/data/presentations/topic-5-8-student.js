@@ -494,8 +494,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "rows": [
           {
             "myth": "After 1824, unions could do as they liked.",
-            "evidence": "An 1825 law limited what they could do. Full legal standing came only in 1871.",
-            "source": "Combination laws, 1824, 1825; Trade Union Act, 1871"
+            "evidence": "An 1825 law limited them. Legal standing came in 1871; picketing was legal only from 1875.",
+            "source": "Union laws, 1825, 1871, 1875"
           },
           {
             "myth": "Marx's revolution came in the 1800s.",
