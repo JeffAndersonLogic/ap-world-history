@@ -2,10 +2,9 @@
 
 **Status: Delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12).**
 
-**Resume here (2026-11-01):** Phases 0 to 8 done. Phase 9: three slide fits from the builder's read
-fixed; review pass 1 launched (page truth on the cheaper model, history on the default model) from a
-packet in the session's scratchpad; its findings are not yet logged. If this session stops, recapture
-the packet and run pass 1 again. The Unit 5 reading fingerprint moves only after the loop.
+**Resume here (2026-11-01):** Review pass 1 done and every finding logged and dispositioned in the
+claim ledger (page truth 15: 12 fixed, 1 rejected, 2 adjacent; history 9, all fixed). Next: review pass 2
+from a fresh packet. The Unit 5 reading fingerprint moves only after the loop.
 
 Drafted 2026-11-01 from the CED source file, for the build Jeff started with "Build 5.8." The Phase 9
 reviewers check this story and every surface built from it against that file and the scholarship

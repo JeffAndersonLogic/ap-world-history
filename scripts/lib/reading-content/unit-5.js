@@ -1917,12 +1917,12 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In the early 1850s, Whellan and Company, publishers in Manchester, printed a business directory, a book listing the town's firms and their addresses. It opened with a very different picture: \"the innumerable large mills and factories whose tall chimneys shoot up in every direction, betoken the activity, enterprise, and wealth of its inhabitants.\" Same city, two pictures. Which is more accurate? You will decide in the Skill Builder. Either way, industry made some people rich and left many working long hours for low pay in crowded, unhealthy towns. Topic 5.9 takes that city apart. This topic is about what people did about it."
+            "html": "In the early 1850s, Whellan and Company, publishers of directories for towns in the North and Midlands of England, printed a business directory of Manchester, a book listing the town's firms and their addresses. It opened with a very different picture: \"the innumerable large mills and factories whose tall chimneys shoot up in every direction, betoken the activity, enterprise, and wealth of its inhabitants.\" Same city, two pictures. Which is more accurate? You will decide in the Skill Builder. Either way, industry made some people rich and left many working long hours for low pay in crowded, unhealthy towns. Topic 5.9 takes that city apart. This topic is about what people did about it."
           }
         ],
         "callout": {
           "label": "AP Thinking, Sourcing and Situation",
-          "raw": "<p><strong>Ask four questions of any source.</strong> Who made it (point of view)? Why (purpose)? For whom (audience)? When and where (historical situation)? Then say how one of those answers shapes what the source says. A factory owner's directory and a critic's book can describe the same street and both be telling part of the truth.</p>"
+          "raw": "<p><strong>Ask four questions of any source.</strong> Who made it (point of view)? Why (purpose)? For whom (audience)? When and where (historical situation)? Then say how one of those answers shapes what the source says. A directory publisher's book and a critic's book can describe the same town and both be telling part of the truth.</p>"
         }
       },
       {
@@ -1959,7 +1959,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Later in the century, workers built political parties. In Germany, two workers' parties united in 1875. The government banned socialist meetings and newspapers from 1878 to 1890, but the party survived, renamed itself the Social Democratic Party in 1890, and that year won more votes than any other party. In Britain, unions and socialists set up a committee in 1900 to elect working men to Parliament; in 1906 it became the Labour Party. In the United States, the American Federation of Labor, founded in 1886, organized skilled workers for better wages and hours."
+            "html": "Later in the century, workers built political parties. In Germany, two workers' parties united in 1875. The government banned socialist meetings and newspapers from 1878 to 1890, but the party survived. In February 1890, while it was still banned, it won more votes than any other party; that autumn the ban ended and it renamed itself the Social Democratic Party. In Britain, unions and socialists set up a committee in 1900 to elect working men to Parliament; in 1906 it became the Labour Party. In the United States, the American Federation of Labor, founded in 1886, organized skilled workers for better wages and hours."
           },
           {
             "type": "p",
@@ -1994,7 +1994,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "No revolution like the one Marx predicted happened in an industrial country before 1900. But his ideas spread through workers' parties. In 1891 Germany's Social Democrats adopted a program based on Marx's ideas, while they kept winning votes in elections. In 1889 socialist parties from many countries met in Paris and called on workers in every country to march on May 1, 1890, for an eight-hour working day. Socialists kept marching on May 1 in the years after. Communist governments came later, in the twentieth century."
+            "html": "No revolution like the one Marx predicted won lasting power in an industrial country before 1900. But his ideas spread through workers' parties. In 1891 Germany's Social Democrats adopted a program based on Marx's ideas, while they kept winning votes in elections. In 1889 socialist parties from many countries met in Paris and called on workers in every country to march on May 1, 1890, for an eight-hour working day. Socialists kept marching on May 1 in the years after. Communist governments came later, in the twentieth century."
           }
         ],
         "callout": {
@@ -2040,7 +2040,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In 1839 the government announced a program of reforms called the <span class=\"kt\">Tanzimat</span>, Turkish for \"reorganization.\" It promised all subjects safety for their lives, honor and property, fair taxes and a regular system of military service. A decree in 1856 promised equal treatment to Christians and Jews as well as Muslims. Even before the Tanzimat, in 1835, the state had set up a fez factory in Istanbul with machines from Britain and Belgium; after 1839 it added more factories and, from 1855, telegraph lines. Many Muslims resented the 1856 promise of equality, because it ended their place as the empire's ruling community. In 1876 the empire got a constitution and an elected parliament. Two years later the new sultan, Abdulhamid II, shut the parliament down."
+            "html": "In 1839 the government announced a program of reforms called the <span class=\"kt\">Tanzimat</span>, Turkish for \"reorganization.\" It promised all subjects safety for their lives, honor and property, fair taxes and a regular system of military service. A decree in 1856 promised equal treatment to Christians and Jews as well as Muslims. In the 1830s, before the Tanzimat, Sultan Mahmud II's government had opened a state fez factory in Istanbul; in the Tanzimat years it moved to a new site and got steam engines and machines from Britain and Belgium, and from 1855 the state built telegraph lines. Many Muslims resented the 1856 promise of equality, because it ended their place as the empire's ruling community. In 1876 the empire got a constitution and an elected parliament. Two years later the new sultan, Abdulhamid II, shut the parliament down."
           }
         ],
         "callout": {
@@ -2072,7 +2072,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>Three myths to drop.</strong> \"Marx's communism was tried in the 1800s\": no communist government existed until the twentieth century. \"Unions were legal once the 1824 law passed\": an 1825 law limited them, and full legal standing came in 1871. \"China and the Ottoman Empire refused to change\": both governments tried to modernize; the reforms were resisted from inside.</p>"
+          "raw": "<p><strong>Three myths to drop.</strong> \"Marx's revolution came in the 1800s\": no communist party ruled a country until the twentieth century. \"Unions were legal once the 1824 law passed\": an 1825 law limited them, and full legal standing came in 1871. \"China and the Ottoman Empire refused to change\": both governments tried to modernize; the reforms were resisted from inside.</p>"
         }
       }
     ],

@@ -64,7 +64,7 @@ window.BEHISTORICAL_TEACHING = {
     should: [
       'Quote the Manifesto in its 1888 English, "Working Men of All Countries, Unite!", not the popular "Workers of the world, unite!" (slide 9).',
       'Say that the Chartists lost every petition and still won most of their points later (slide 7).',
-      'Correct three myths: "unions became legal in 1824," "Marx\'s communism was tried in the 1800s," "China and the Ottoman Empire refused to change" (slide 20).'
+      'Correct three myths: "unions became legal in 1824," "Marx\'s revolution came in the 1800s," "China and the Ottoman Empire refused to change" (slide 20).'
     ],
     could: [
       'Point students who want more depth to the eBook chapter, "Calls for Change."',
@@ -126,7 +126,7 @@ window.BEHISTORICAL_TEACHING = {
           'The CED gives no illustrative examples for 5.8; every example is the build\'s choice. Its sample activity (p. 97) pairs Engels\'s Manchester with a Manchester business directory; the Skill Builder uses it (slide 15).',
           'Owns: unions, movements and parties; Marx, socialism and communism; reforms of four kinds; the Ottoman and Qing reforms and their resistance. Bridge only: the factory (5.3); "for some" (5.7, the hand-off in); Egypt and Meiji Japan (5.6, the comparison); the city\'s crisis and the classes (5.9, the hand-off out); abolition (5.1); the Opium Wars and the Taiping Rebellion (Unit 6); communist states (Unit 7).',
           'The old 5.8 taught American strikes and abolition and had nothing on Marx or the Ottoman and Qing reforms. If a student raises Haymarket or Pullman, say they are American examples of the same pattern and park them.',
-          'Three myths, on slide 20: "unions became legal in 1824"; "Marx\'s communism was tried in the 1800s"; "China and the Ottoman Empire refused to change."'
+          'Three myths, on slide 20: "unions became legal in 1824"; "Marx\'s revolution came in the 1800s"; "China and the Ottoman Empire refused to change."'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
         listenFor: 'Industrial capitalism and the power of industrial states caused calls for change: workers organized, Marx and the socialists imagined a different society, governments and others reformed, and the Ottoman and Qing courts modernized against resistance from inside.',
@@ -285,7 +285,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'KC-5.1.V.A: "Workers\' movements and political parties emerged in different areas, promoting alternative visions of society."',
-          'Germany: Lassalle\'s party (1863) and the Eisenach party of Bebel and Liebknecht (1869) united at Gotha in 1875 (not on the slide). The Anti-Socialist Law of October 1878 banned socialist meetings and newspapers until it lapsed in September 1890. That year the party, renamed the Social Democratic Party, won about 20 percent of the vote, more than any other party, but only 35 seats (German History in Documents and Images). It became the largest party in seats in 1912.',
+          'Germany: Lassalle\'s party (1863) and the Eisenach party of Bebel and Liebknecht (1869) united at Gotha in 1875 (not on the slide). The Anti-Socialist Law of October 1878 banned socialist meetings and newspapers until it lapsed in September 1890. In the election of February 1890, while still banned, the party won about 20 percent of the vote, more than any other party, but only 35 seats (German History in Documents and Images); in October 1890 it renamed itself the Social Democratic Party. It became the largest party in seats in 1912.',
           'Britain: the Labour Representation Committee, February 1900; 29 seats and the name Labour Party in 1906.',
           'United States: the American Federation of Labor, December 1886, Samuel Gompers its first president: skilled workers\' unions for wages, hours and conditions.'
         ],
@@ -328,9 +328,9 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'Robert Owen managed the New Lanark mills from 1800, cut the adult working day from twelve hours to ten and opened a school for workers\' children in 1816. The word "socialist" first appeared in English in 1827 among his followers; in the 1830s "socialism" and "Owenism" were used interchangeably.',
+          'Robert Owen managed the New Lanark mills from 1800, shortened working hours and opened a school for workers\' children in 1816. The word "socialist" first appeared in English in 1827 among his followers; in the 1830s "socialism" and "Owenism" were used interchangeably.',
           'Engels, 1888 preface: "in 1847, socialism was a middle-class movement, communism a working-class movement," which is why the book was not called a socialist manifesto.',
-          'By 1900: Germany\'s Social Democrats adopted a program based on Marx\'s ideas at Erfurt in 1891 while they kept winning seats; socialist parties met in Paris in July 1889 and called for marches on May 1, 1890, for an eight-hour day. No communist government existed before the twentieth century (Unit 7).'
+          'By 1900: Germany\'s Social Democrats adopted a program based on Marx\'s ideas at Erfurt in 1891 while they kept winning seats; socialist parties met in Paris in July 1889 and called for marches on May 1, 1890, for an eight-hour day. No communist party ruled a country before the twentieth century (Unit 7); the Paris Commune of 1871, which Marx praised as a workers\' government, was crushed within about ten weeks.'
         ],
         ask: 'What did socialists and Marx agree on, and where did they part?',
         listenFor: 'Both wanted the means of making wealth owned in common; Marx said it would take a workers\' revolution.',
@@ -484,7 +484,7 @@ window.BEHISTORICAL_TEACHING = {
           'Selim III\'s New Order: "a new infantry ... with European-style uniforms, imported rifles, and French instructors" (Todorova). The Janissaries and important conservative ulema opposed it; a revolt overthrew him in May 1807.',
           'June 1826: Mahmud II destroyed the Janissary corps and built a new army along European lines.',
           'The Edict of Gülhane, 3 November 1839 (Inalcik\'s translation): "perfect security for life, honor, and property"; "a regular system of assessing taxes"; regular conscription; "The Muslim and non-Muslim subjects of our lofty Sultanate shall, without exception, enjoy our imperial concessions." The 1856 decree made Muslims and non-Muslims legally equal, which "was not well perceived by many Muslims who traditionally enjoyed a superior status."',
-          'The fez factory (Feshane) was set up in 1835 with machines from Britain and Belgium; the photograph, by Abdullah Frères for Abdulhamid II\'s albums (1880 to 1893), shows it later. The telegraph from 1855. The constitution of December 1876; parliament dissolved and the constitution suspended in February 1878.'
+          'The state fez factory (Feshane) was opened under Mahmud II in the 1830s and fitted with steam engines and machines from Britain and Belgium in the Tanzimat years, about 1843 to 1851 (TDV İslâm Ansiklopedisi; Ergün and Ciritci, 2026); the photograph, by Abdullah Frères for Abdulhamid II\'s albums (1880 to 1893), shows it later. The telegraph from 1855. The constitution of December 1876; parliament dissolved and the constitution suspended in February 1878.'
         ],
         ask: 'Who resisted, and what were they protecting?',
         listenFor: 'The Janissaries (their place in the army), conservative scholars, Muslims who lost their higher status, the sultan (his power).',
@@ -534,7 +534,7 @@ window.BEHISTORICAL_TEACHING = {
           'Against 5.6: Japan\'s reforms went furthest, and in 1895 Japan defeated China.'
         ],
         ask: 'Which resistance came from the top of government, and which from elites below it?',
-        listenFor: 'From the top: Abdulhamid II, Cixi. From elites: the Janissaries, the ulema, Woren and the scholars.',
+        listenFor: 'From the top: Abdulhamid II (1878), Cixi (1898). From elites: the Janissaries (against Selim, to 1826), conservative scholars, Muslims who resented 1856, Woren (1867).',
         ap: 'KC-5.1.V.B; Causation across two cases.'
       }
     },
@@ -545,7 +545,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         rows: [
           { myth: 'Unions became legal in 1824.', evidence: 'An 1825 law limited them, and Tolpuddle came in 1834. Legal standing came in 1871.', source: 'Combination laws; Trade Union Act, 1871' },
-          { myth: 'Marx\'s communism was tried in the 1800s.', evidence: 'No communist government existed until the twentieth century. By 1900 his ideas lived in parties.', source: 'Erfurt Program, 1891' },
+          { myth: 'Marx\'s revolution came in the 1800s.', evidence: 'No communist party ruled a country until the 1900s. By 1900 his ideas lived in parties.', source: 'Erfurt Program, 1891' },
           { myth: 'China and the Ottoman Empire refused to change.', evidence: 'Both governments built arsenals, factories and schools. Resistance came from inside.', source: 'Tanzimat; Self-Strengthening' }
         ]
       },

@@ -415,3 +415,54 @@ ownership: no findings.
 | William Forster, a government minister, wrote the 1870 Education Act, after a campaign by the National Education League | F10, LD, DR | UK Parliament, "The 1870 Education Act," and Wikipedia, as returned by search ("drafted by William Forster ... introduced on 17 February 1870 after campaigning by the National Education League"; Forster Vice-President of the Council under Gladstone) | VERIFIED |
 | London's city government had its engineer, Joseph Bazalgette, build the sewers | F10, LD | London Museum (Bazalgette's plan); Bazalgette was chief engineer of the Metropolitan Board of Works | VERIFIED |
 | Five of the Chartists' six points became law, 1858 to 1918; every man over 21 got the vote in 1918 | Deck slide 7, DR, F10 callout | The National Archives podcast ("five out of six of them eventually become law"); Gale; the Representation of the People Act 1918 | VERIFIED (was "most ... 1858 to 1911") |
+
+**History reviewer: 9 findings, all supported and fixed** (3 overlapped the page-truth findings).
+Verified with no finding: both Engels quotations, the Whellan quotation and chapter, every Manifesto
+passage and Engels's 1888 preface, both Woren sentences and both Prince Gong passages (Huters), the
+Tongwen Guan intake (98 and 30), Elman's Summer Palace sentence, the 1881 message and the 1884 speech,
+and the Kilburn, Punch and Grant and Li credits. The Library of Congress item pages refused this
+reviewer (HTTP 403); the builder had read them as JSON (section 10 of the story draft).
+
+1. Slide 19's resisters out of period (Janissaries against the Tanzimat; Cixi inside "1860s to 1895").
+   **Fixed** with page-truth finding 2; the slide's "listen for" note now dates each resister.
+2. Slide 7 "most of the six points became law, 1858 to 1911." **Fixed** with page-truth finding 3.
+3. The fez factory "(1835) with machines from Britain and Belgium," filed under the 1839 Tanzimat. TDV
+   İslâm Ansiklopedisi, "Feshâne": fez making began in 1833 at Kadırga and moved to Eyüp in 1839; the
+   steam engine and machines came from England and Belgium in 1849 to 1851; Ergün and Ciritci (2026):
+   machines from 1843 to 1851. The builder's source (Yıldırım) put the machines at 1835. Two specialist
+   sources against one. **Fixed** everywhere (First & 10, lecture card 4, Evidence Lab caption, deep
+   reading, slide 17 notes): "Mahmud II's government had opened a state fez factory in Istanbul in the
+   1830s; in the Tanzimat years it got steam engines and machines from Britain and Belgium." Row narrowed
+   below.
+4. The deep reading's myth box said the "Chinese learning as the essence" slogan "was coined in that form
+   in 1898." Huters (p. 287, n. 13) finds Zhang Zhidong never used that exact form; Chinese reference works
+   trace it to Shen Shoukang (1895 or 1896). **Fixed:** "The idea goes back that far, but the slogan in
+   this form appeared in the 1890s and was made famous in 1898." Row narrowed below.
+5. The First & 10's sourcing callout called the directory "a factory owner's directory"; the 1853 title
+   page reads "W. Whellan & Co., Proprietors and Publishers of Similar Works for the Northern and Midland
+   Counties," printed in Manchester. **Fixed:** "a directory publisher's book"; the reading names Whellan
+   as "publishers of directories for towns in the North and Midlands of England."
+6. Germany, 1890, told in the wrong order: the election of 20 February came while the party was still
+   banned; the law lapsed on 30 September; the party took the name SPD at Halle in October. **Fixed** in
+   the First & 10, lecture card 1, the map key, the deep reading and slide 8's notes.
+7. Owen "cut the adults' working day from twelve hours to ten": no source gives those figures (Gale:
+   from eleven and three-quarters to ten and three-quarters of work). **Fixed:** "He shortened working
+   hours" (deep reading, slide 10 notes).
+8. Slide 9's notice gave Engels's Manchester to Marx. **Fixed** with page-truth finding 1.
+9. "No communist government existed until the twentieth century" is contestable: Marx and Engels called
+   the Paris Commune of 1871 a workers' government (Engels, 1891 postscript to *The Civil War in
+   France*). **Fixed:** "No communist party ruled a country until the twentieth century"; "no revolution
+   like the one Marx predicted won lasting power in an industrial country before 1900"; the deep reading
+   and slide 10's notes name the Commune, "crushed within about ten weeks"; the myth is now "Marx's
+   revolution came in the 1800s."
+
+**New and changed claim rows from pass 1 (history):**
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| Mahmud II's government opened a state fez factory in Istanbul in the 1830s; in the Tanzimat years it was moved to Eyüp and fitted with steam engines and machines from Britain and Belgium | F10, LD lecture card 4, RC Evidence Lab, DR, Deck slide 17 notes | TDV İslâm Ansiklopedisi, "Feshâne" (1833 Kadırga; 1839 Eyüp; machines 1849 to 1851); Ergün and Ciritci, *Karesi Journal of Architecture* 5:1 (2026) (1843 to 1851) | NARROWED (was "1835, with machines from Britain and Belgium") |
+| The ti-yong slogan in its familiar form appeared in the 1890s and was made famous in 1898; the idea goes back to the 1860s | DR | Huters, p. 287, n. 13; Pohl (Trier) | NARROWED (was "coined in that form in 1898") |
+| Whellan and Company were publishers of directories for the North and Midlands | F10 | The 1853 title page (University of Leicester) | VERIFIED (was "publishers in Manchester"; "a factory owner's directory" REMOVED) |
+| In February 1890, while still banned, the party won the most votes; the law lapsed in September; in October it renamed itself the SPD | F10, LD, RC map key, DR, Deck slide 8 notes | GHDI (lapse 30 September 1890; 1890 results); the SPD's own history ("1890: SAP wird zur SPD," Halle); the 1890 election of 20 February | NARROWED (order corrected) |
+| Owen shortened working hours | DR, Deck slide 10 notes | OpenLearn; Gale (eleven and three-quarters to ten and three-quarters) | NARROWED (the figures "twelve to ten" REMOVED) |
+| No communist party ruled a country until the twentieth century; no revolution like Marx's won lasting power in an industrial country before 1900; the Paris Commune of 1871, which Marx praised, was crushed within about ten weeks | F10, LD lecture card 2, DR, Deck slides 10 and 20 | Engels, 1891 postscript ("Look at the Paris Commune. That was the Dictatorship of the Proletariat"); the Commune, 18 March to 28 May 1871 | NARROWED (was "no communist government existed until the twentieth century") |

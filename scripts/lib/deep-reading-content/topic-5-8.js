@@ -134,7 +134,7 @@ module.exports = {
         {
           heading: 'Parties in different countries',
           blocks: [
-            { p: `In Germany, Ferdinand Lassalle founded a workers' party in <span class="num">1863</span>, and August Bebel and Wilhelm Liebknecht founded another in <span class="num">1869</span>. They united in <span class="num">1875</span>. Chancellor Otto von Bismarck banned socialist meetings and newspapers in <span class="num">1878</span>; the law lapsed in <span class="num">1890</span>, when the party renamed itself the Social Democratic Party and won more votes than any other party, about 20 percent.` },
+            { p: `In Germany, Ferdinand Lassalle founded a workers' party in <span class="num">1863</span>, and August Bebel and Wilhelm Liebknecht founded another in <span class="num">1869</span>. They united in <span class="num">1875</span>. Chancellor Otto von Bismarck banned socialist meetings and newspapers in <span class="num">1878</span>; in February <span class="num">1890</span>, while it was still banned, the party won more votes than any other, about 20 percent; the law lapsed that September, and in October the party renamed itself the Social Democratic Party.` },
             { p: `In Britain, unions and socialists founded the Labour Representation Committee in February <span class="num">1900</span> to elect working men to Parliament; in <span class="num">1906</span> it won 29 seats and took the name Labour Party. In the United States, the American Federation of Labor, founded in December <span class="num">1886</span> with Samuel Gompers as president, joined unions of skilled workers who wanted higher wages, shorter hours and better conditions.` }
           ]
         }
@@ -164,7 +164,7 @@ module.exports = {
         {
           heading: 'Owen and socialism',
           blocks: [
-            { p: `Robert Owen took over the management of the New Lanark cotton mills in Scotland in <span class="num">1800</span>. He cut the adults' working day from twelve hours to ten and opened a school for the workers' children in <span class="num">1816</span>. In <span class="num">1825</span> he bought land at New Harmony, Indiana, for a community where people would share their work and its rewards; it broke up within two years.` },
+            { p: `Robert Owen took over the management of the New Lanark cotton mills in Scotland in <span class="num">1800</span>. He shortened working hours and opened a school for the workers' children in <span class="num">1816</span>. In <span class="num">1825</span> he bought land at New Harmony, Indiana, for a community where people would share their work and its rewards; it broke up within two years.` },
             { p: `In the late 1820s, Owen's followers began to call their ideas <span class="kt">socialism</span>: the idea that land, factories and the other things a society uses to make wealth should be owned and run in common, for everyone, and not by private owners for their own profit.` }
           ]
         },
@@ -183,11 +183,11 @@ module.exports = {
         {
           heading: 'What the ideas did by 1900',
           blocks: [
-            { p: `No revolution like the one Marx predicted happened in an industrial country before 1900. His ideas spread through parties instead. In <span class="num">1891</span> Germany's Social Democrats adopted a program, drafted mainly by Karl Kautsky, based on Marx's ideas, while they kept winning seats in elections. In July <span class="num">1889</span> socialist parties from many countries met in Paris and called for workers everywhere to march on May 1, <span class="num">1890</span>, for an eight-hour working day.` },
+            { p: `No revolution like the one Marx predicted won lasting power in an industrial country before 1900. The Paris Commune of 1871, which Marx praised as a workers' government, was crushed within about ten weeks. His ideas spread through parties instead. In <span class="num">1891</span> Germany's Social Democrats adopted a program, drafted mainly by Karl Kautsky, based on Marx's ideas, while they kept winning seats in elections. In July <span class="num">1889</span> socialist parties from many countries met in Paris and called for workers everywhere to march on May 1, <span class="num">1890</span>, for an eight-hour working day.` },
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `"Marx's communism was tried in the 1800s." No communist government existed in the 1800s. Communist states came in the twentieth century (Unit 7). And "Workers of the world, unite!" is a popular simplification: the 1888 English translation reads "Working Men of All Countries, Unite!"`
+              html: `"Marx's revolution came in the 1800s." No communist party ruled a country until the twentieth century (Unit 7). And "Workers of the world, unite!" is a popular simplification: the 1888 English translation reads "Working Men of All Countries, Unite!"`
             } }
           ]
         }
@@ -262,7 +262,7 @@ module.exports = {
           heading: 'The Ottoman Empire',
           blocks: [
             { p: `In the 1790s Sultan Selim III built a new infantry, the "New Order," with European-style uniforms, imported rifles and French instructors. The Janissaries, the old army corps, saw it as a threat, and important conservative religious scholars sided with them. A revolt overthrew Selim in <span class="num">1807</span>. In June <span class="num">1826</span> Sultan Mahmud II destroyed the Janissaries and built a new army along European lines.` },
-            { p: `On 3 November <span class="num">1839</span>, at Gülhane in Istanbul, the government announced the <span class="kt">Tanzimat</span> ("reorganization"). Its decree promised "perfect security for life, honor, and property," "a regular system of assessing taxes" and a regular system of military service, and it said that "the Muslim and non-Muslim subjects of our lofty Sultanate shall, without exception, enjoy our imperial concessions." Even before the edict, in <span class="num">1835</span>, the state had set up a fez factory in Istanbul with machines from Britain and Belgium; it added an ironworks in <span class="num">1843</span> and telegraph lines from <span class="num">1855</span>.` },
+            { p: `On 3 November <span class="num">1839</span>, at Gülhane in Istanbul, the government announced the <span class="kt">Tanzimat</span> ("reorganization"). Its decree promised "perfect security for life, honor, and property," "a regular system of assessing taxes" and a regular system of military service, and it said that "the Muslim and non-Muslim subjects of our lofty Sultanate shall, without exception, enjoy our imperial concessions." Mahmud II's government had opened a state fez factory in Istanbul in the 1830s; in the Tanzimat years it was moved to Eyüp and fitted with steam engines and machines from Britain and Belgium. The state added an ironworks in <span class="num">1843</span> and telegraph lines from <span class="num">1855</span>.` },
             { p: `A decree of <span class="num">1856</span> promised equal treatment to Christians and Jews. Many Muslims, who had long held a higher place than Christians and Jews, resented losing it; some Christian church leaders were unhappy too. In December <span class="num">1876</span> the empire got a constitution and a parliament. In February <span class="num">1878</span> Sultan Abdulhamid II suspended the constitution and dissolved the parliament.` }
           ]
         },
@@ -275,7 +275,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `"Cixi spent the navy's money, so China lost in 1895." It is a popular story. The historian Benjamin Elman finds that Cixi's spending on the Summer Palace "did not use up the imperial treasury or leave nothing for the Chinese navy," though tight funding did limit the fleet; the deeper problems were a disorganized empire and poorly trained crews. And the slogan "Chinese learning as the essence, Western learning for practical use" was coined in that form in 1898, not in the 1860s.`
+              html: `"Cixi spent the navy's money, so China lost in 1895." It is a popular story. The historian Benjamin Elman finds that Cixi's spending on the Summer Palace "did not use up the imperial treasury or leave nothing for the Chinese navy," though tight funding did limit the fleet; the deeper problems were a disorganized empire and poorly trained crews. And the slogan "Chinese learning as the essence, Western learning for practical use" is often pinned on the 1860s. The idea goes back that far, but the slogan in this form appeared in the 1890s and was made famous in 1898.`
             } }
           ]
         }

@@ -498,8 +498,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "source": "Combination laws; Trade Union Act, 1871"
           },
           {
-            "myth": "Marx's communism was tried in the 1800s.",
-            "evidence": "No communist government existed until the twentieth century. By 1900 his ideas lived in parties.",
+            "myth": "Marx's revolution came in the 1800s.",
+            "evidence": "No communist party ruled a country until the 1900s. By 1900 his ideas lived in parties.",
             "source": "Erfurt Program, 1891"
           },
           {

@@ -46,7 +46,7 @@
     ...lesson.map,
     key: [
       { label: "Britain", detail: "The Combination Acts of 1799 and 1800 banned unions until Parliament repealed them in 1824. From 1838 the Chartists demanded the vote for every man. Unions formed the Trades Union Congress in 1868, and in 1900 unions and socialists founded the committee that became the Labour Party in 1906." },
-      { label: "Germany", detail: "Workers' parties united in 1875. The government banned socialist meetings and newspapers from 1878 to 1890, and gave workers health, accident, and old-age insurance in laws of 1883, 1884, and 1889. In 1890 the Social Democratic Party won more votes than any other party." },
+      { label: "Germany", detail: "Workers' parties united in 1875. The government banned socialist meetings and newspapers from 1878 to 1890, and gave workers health, accident, and old-age insurance in laws of 1883, 1884, and 1889. In February 1890, while still banned, the party won more votes than any other; that autumn it renamed itself the Social Democratic Party." },
       { label: "The Ottoman Empire", detail: "From 1839 the government's Tanzimat reforms promised all subjects security, fair taxes, and regular military service, and built factories and telegraph lines. A constitution and parliament came in 1876; in 1878 Sultan Abdulhamid II shut the parliament down." },
       { label: "Qing China", detail: "From the 1860s, Self-Strengthening officials built arsenals, a navy yard, a language school, and a steamship company. In 1898 the Guangxu Emperor's hundred days of reforms were stopped by the Empress Dowager Cixi and officials who opposed them." },
       { label: "Arrow 1", detail: "Britain's war with China, 1839 to 1842, the first Opium War (Unit 6): one of the defeats that pushed the Qing government to modernize." },
@@ -161,7 +161,7 @@
       alt: "An old black-and-white photograph of a long factory hall. Leather belts run at angles from wheels on the ceiling down to rows of machines, and finished brimless hats sit on the workbenches in the front.",
       url: "../assets/images/topics/5-8/ottoman-imperial-fez-factory-interior-1880s.jpg",
       sourceUrl: "https://www.loc.gov/pictures/item/2003675899/",
-      caption: "A photograph by Abdullah Frères, made between 1880 and 1893 for one of Sultan Abdulhamid II's albums, of the inside of the Imperial Fez Factory in Istanbul, the state's factory for fezzes (brimless red hats) and army uniforms. The factory was first set up in 1835 with machines from Britain and Belgium. Library of Congress.",
+      caption: "A photograph by Abdullah Frères, made between 1880 and 1893 for one of Sultan Abdulhamid II's albums, of the inside of the Imperial Fez Factory in Istanbul, the state's factory for fezzes (brimless red hats) and army uniforms. The state had opened a fez factory in the 1830s; in the Tanzimat years it was fitted with steam engines and machines from Britain and Belgium. Library of Congress.",
       prompt: "NOTICE how the machines are powered and what they are making. INFER what this shows about the Ottoman government's plans for its economy and its army. The sultan's own album: what might it leave out?"
     },
     {
