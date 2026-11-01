@@ -276,7 +276,7 @@ window.BEHISTORICAL_TEACHING = {
         range: [1860, 1910],
         tick: 10,
         lanes: [
-          { name: 'Germany', events: [ { year: 1878, label: '1878', text: 'Socialists banned' }, { year: 1890, label: '1890', text: 'Socialists: most votes' } ] },
+          { name: 'Germany', events: [ { year: 1878, label: '1878', text: 'Socialist meetings banned' }, { year: 1890, label: '1890', text: 'Socialists: most votes' } ] },
           { name: 'Britain', events: [ { year: 1868, label: '1868', text: 'Trades Union Congress' }, { year: 1900, label: '1900', text: 'Labour committee' }, { year: 1906, label: '1906', text: 'Labour Party' } ] },
           { name: 'United States', events: [ { year: 1886, label: '1886', text: 'AFL founded' } ] }
         ]
@@ -297,7 +297,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'manifesto', kind: 'source-quote', eyebrow: 'Thinkers · In Their Own Words', kc: 'KC-5.3.IV.A.ii',
       title: 'Marx and Engels, 1848.',
-      footer: 'Who wrote this, for whom, and what did they want the reader to do?',
+      footer: 'Who wrote this, for whom, and what picture of society did they want readers to see?',
       template: {
         quote: 'The history of all hitherto existing society is the history of class struggles. ... Society as a whole is more and more splitting up into two great hostile camps ...',
         attribution: { author: 'Karl Marx and Friedrich Engels', work: 'Manifesto of the Communist Party, English translation of 1888', year: '1848' },
@@ -321,9 +321,9 @@ window.BEHISTORICAL_TEACHING = {
       title: 'Socialism and communism.',
       footer: 'By 1900: Marx shaped parties that ran in elections; no workers\' revolution won lasting power.',
       template: {
-        left: { name: 'Socialism', items: ['Owen\'s followers, late 1820s', 'A wide family of ideas', 'Change by example or by law'] },
+        left: { name: 'Socialism', items: ['Owen\'s followers, late 1820s', 'A wide family of ideas', 'Some built model communities'] },
         right: { name: 'Marx\'s communism', items: ['Manifesto, 1848', 'Workers overthrow owners', 'A society with no classes'] },
-        both: ['Wealth-making owned in common', 'Anger at who held power']
+        both: ['Land and factories owned in common', 'Anger at who held power']
       },
       notes: {
         minutes: 2,
@@ -340,7 +340,7 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'cp1', kind: 'action', eyebrow: 'Module 06 · Checkpoint 1 · 8 Minutes',
       title: 'Why did workers organize, and what did Marx imagine?',
-      subtitle: 'Explain one cause that led workers to organize, one thing they wanted and one effect, what socialism meant and what Marx predicted, and one thing his ideas did or did not do by 1900. On your own: no coach.',
+      subtitle: 'Explain one cause that led workers to organize, one thing they wanted and one effect, what discontent led socialists and Marx to want, and one thing his ideas did or did not do by 1900. On your own: no coach.',
       big: '8',
       action: { label: 'Open Student Lesson', url: '../unit-5/lesson-5-8-reactions-to-industrial-economy.html#modules' },
       notes: {
@@ -358,7 +358,7 @@ window.BEHISTORICAL_TEACHING = {
       title: 'How do you source a source?',
       footer: 'Four questions: who made it, why, for whom, and when. Then say how one shapes what it says.',
       template: {
-        frame: '{{Source}} says {{what}}, because its maker {{point of view / purpose / audience / situation}}: {{how that explains it}}.',
+        frame: '{{Source}} says {{what}}, because of its maker\'s {{point of view / purpose / audience / situation}}: {{how that explains it}}.',
         exampleLabel: 'An everyday case',
         example: '**The company\'s brochure** says **the new cafeteria is bright and modern** and says nothing about the lines, because **the company wrote it to sell cafeterias to school boards**: **it was printed before anyone had stood in a line**.'
       },
@@ -450,7 +450,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         steps: [
           { label: 'Industrial powers', text: 'Steamships, guns and trade **stronger than theirs**.' },
-          { label: 'Defeats', text: 'China loses the **Opium Wars**, 1839 to 1842 and 1856 to 1860 (Unit 6).' },
+          { label: 'Defeats', text: 'Ottomans lose to **Russia** (1787 to 1792); China loses the **Opium Wars** (Unit 6).' },
           { label: 'Reform from the top', text: 'Governments build **armies, factories and schools**.' },
           { label: 'Resistance', key: true, text: 'People **inside** the government and old elites push back.' }
         ]
@@ -470,7 +470,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'ottoman', kind: 'story-scene', eyebrow: 'The Old Empires · The Ottoman Empire', kc: 'KC-5.1.V.B',
       title: 'Reform, and the people who fought it.',
       template: {
-        caption: 'The sultan\'s fez factory, Istanbul, 1880s',
+        caption: 'The Imperial Fez Factory, Istanbul, 1880s',
         steps: [
           { label: '1790s to 1807', text: 'Selim III\'s **New Order** army; Janissaries and scholars oppose; **a revolt overthrows him**.' },
           { label: '1826', text: 'Mahmud II **destroys the Janissaries**.' },
@@ -497,10 +497,10 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         caption: 'Li Hongzhang, a Self-Strengthening leader, right, with Ulysses S. Grant, 1879',
         steps: [
-          { label: '1860s', text: 'Arsenals, a **navy yard**, a language school, steamships.' },
+          { label: '1860s to 1870s', text: 'Arsenals, a **navy yard**, a language school, steamships.' },
           { label: '1867', text: 'Woren, the emperor\'s tutor, objects; overruled, but **few top scholars apply**.' },
           { label: '1894 to 1895', text: '**Japan defeats** China\'s new navy.' },
-          { label: '1898', key: true, text: 'A hundred days of reform, **stopped by Cixi**.' }
+          { label: '1898', key: true, text: 'The Hundred Days: new reforms, **stopped by Cixi**.' }
         ]
       },
       notes: {
@@ -523,9 +523,9 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         job: 'Reform',
         left: { tag: 'Ottoman', name: 'New Order to constitution', when: '1790s to 1878', text: 'Janissaries resist (to 1826); many Muslims resent equality; the sultan shuts parliament.' },
-        right: { tag: 'Qing', name: 'Self-Strengthening', when: '1860s to 1898', text: 'Woren objects (1867); Cixi stops the reforms of 1898.' },
+        right: { tag: 'Qing', name: 'Self-Strengthening', when: '1860s to 1895; 1898', text: 'Woren objects (1867); Cixi stops the reforms of 1898.' },
         claimLabel: 'Compare',
-        claim: 'Different empires, **shared cause and limit**: pressure from industrial powers pushed both to reform, and people inside resisted.'
+        claim: 'Different empires, **shared cause and limit**: pressure from stronger, more and more industrial powers pushed both to reform, and people inside resisted.'
       },
       notes: {
         minutes: 2,
@@ -545,7 +545,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         rows: [
           { myth: 'After 1824, unions could do as they liked.', evidence: 'An 1825 law limited what they could do. Full legal standing came only in 1871.', source: 'Combination laws, 1824, 1825; Trade Union Act, 1871' },
-          { myth: 'Marx\'s revolution came in the 1800s.', evidence: 'No communist party ruled a country until the twentieth century. By 1900 his ideas lived in parties.', source: 'Paris Commune, 1871; Erfurt Program, 1891' },
+          { myth: 'Marx\'s revolution came in the 1800s.', evidence: 'No communist party ruled a country until the twentieth century. By 1900 his ideas lived in parties.', source: 'German socialist program, 1891' },
           { myth: 'China and the Ottoman Empire refused to change.', evidence: 'Both governments built arsenals, factories and schools. Resistance came from inside.', source: 'Tanzimat; Self-Strengthening' }
         ]
       },
@@ -569,7 +569,7 @@ window.BEHISTORICAL_TEACHING = {
         rows: [
           { label: 'Workers', cells: ['Long hours, low pay, no vote', 'Unions, Charter, parties', 'Unions legal; more men vote'] },
           { label: 'Thinkers', cells: ['Anger at who held power', 'Socialism, communism', 'Parties; no lasting revolution'] },
-          { label: 'Reformers', cells: ['Mills, mines, cities', 'Laws, schools, sewers', 'Reform Acts; insurance'] },
+          { label: 'Reformers', cells: ['Mills, mines, cities', 'Reform laws, sewers', 'More vote; fewer child workers'] },
           { label: 'Old empires', cells: ['Industrial powers', 'Tanzimat; Self-Strengthening', 'Reform, resisted inside'] }
         ],
         result: { label: 'Connect', text: 'Say one row as a cause, a call and an effect.' }
@@ -589,7 +589,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'synthesis', kind: 'close-retell', eyebrow: 'AP Synthesis', kc: 'Unit 5: Learning Objective I',
       title: 'Say it in one sentence.',
       template: {
-        frame: 'Long hours and low pay led workers to form ___, and thinkers like ___ to imagine a new society; governments passed ___; industrial powers pushed old empires to ___, against ___ inside.',
+        frame: 'Low pay led workers to form ___; anger at who held power led thinkers like ___ to imagine a new society; governments passed ___; outside powers pushed old empires to ___, against ___ inside.',
         words: ['modernize', 'unions', 'Marx', 'resistance', 'reforms'],
         prompt: 'Fill it in from memory, then add one example for each part.'
       },
@@ -636,12 +636,12 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'close', kind: 'frame-subtitle', eyebrow: 'The Hand-off',
       title: 'Workers organized. Thinkers imagined. Governments reformed. Old empires modernized, and met resistance.',
-      subtitle: 'Students of the Ottoman Imperial School of Military Engineering, Istanbul, 1880s. Next, Topic 5.9: the society industry left behind.',
+      subtitle: 'Students of the Ottoman Imperial School of Military Engineering, Istanbul, 1880s. Next, Topic 5.9: the society industry made.',
       notes: {
         minutes: 1,
         land: [
           'The photograph, by Abdullah Frères for Sultan Abdulhamid II\'s albums (1880 to 1893), shows the new kind of officer the reforms were meant to make, as the government wanted it seen.',
-          'Hand-off to 5.9: industry had changed who worked, where people lived and how families got by. What kind of society did it leave behind?'
+          'Hand-off to 5.9: industry had changed who worked, where people lived and how families got by. What kind of society had it made?'
         ],
         ask: 'Say the topic in one sentence.',
         listenFor: 'The four rows, each with a cause and an effect.',

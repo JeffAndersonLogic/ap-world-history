@@ -561,3 +561,61 @@ student surface; the notes quote Todorova's word with that caveat.
 | Prince Gong's foreign office opened the language school (1862) | F10, LD lecture card 4 | Huters, p. 29 | NARROWED (was listed among Zeng and Li's works) |
 | The 1833 Factory Act banned children under nine from most textile mills; silk mills were left out | F10, LD, DR | Whitchurch Silk Mill, "1833 Factories Act"; the Act's text (education-uk.org) | NARROWED |
 | Selim III's New Order had imported guns and French instructors | F10, DR | Todorova ("imported rifles"); narrowed to "guns" | NARROWED |
+
+### Pass 3, 2026-11-01
+
+Packet recaptured after pass 2's fixes (brand fonts, 25 teacher slides). Two fresh reviewers, as before.
+
+**Page truth reviewer: 15 findings and five minor items; 13 supported and fixed (some in part), 2
+rejected; four of the minor items fixed.** CED wording and story-map ownership: no findings.
+
+1. Checkpoint 1 displayed Target 2 (discontent encouraged new ideas) but did not ask for the cause.
+   **Fixed:** step 3 now asks "what discontent with who held power led Marx and the socialists to want";
+   criterion 2, the checklist and slide 11 say the same.
+2. Slide 22 made "long hours and low pay" the cause of Marx's ideas. **Fixed:** "Low pay led workers to
+   form ___; anger at who held power led thinkers like ___ to imagine a new society; ... outside powers
+   pushed old empires to ___ ..."
+3. The map's arrow 2 started at a Japan that was not drawn; arrow 1 ran through the Germany marker.
+   **Fixed:** Japan is shaded and labeled ("industrialized from 1868, Topic 5.6"); arrow 1 starts in
+   Britain and bows clear of Germany.
+4. Slide 10's Venn: "by law" taught nowhere, "Wealth-making owned in common" hard to read. **Fixed:**
+   "Some built model communities" (the deep reading's New Harmony); "Land and factories owned in common."
+5. The deep reading's "How we know" box answered the Skill Builder (purpose, audience, verdict) and its
+   "sold to merchants and visitors" answered slide 5's question. **Fixed:** the box now poses the
+   questions and points to the Skill Builder; the sale clause is cut.
+6. The Primary Source's first question was answered by its own introduction. **Fixed:** "why would a
+   small group of radicals want its ideas written down and printed for workers? Quote one line that shows
+   what the authors wanted their readers to do."
+7. Self-Strengthening and the Hundred Days dated as one ("1860s to 1898"); slide 18's "1860s" row
+   included the 1872 steamship company. **Fixed:** slide 19 "1860s to 1895; 1898"; slide 18 rows "1860s to
+   1870s" and "1898: The Hundred Days: new reforms, stopped by Cixi"; the map key "Self-Strengthening,
+   1860s to 1895; reforms stopped, 1898."
+8. "Pressure from industrial powers" applied to the Ottoman reforms of the 1790s, which followed a lost war
+   with Russia. **Fixed:** the First & 10, lecture card 4, the deep reading and slides 16 and 19 now say the
+   pressure came "from stronger European powers, and more and more from the industrial powers," and that
+   Selim's New Order followed the war with Russia of 1787 to 1792 (Britannica, "Selim III," and Shaw, as
+   returned by search). New row below.
+9. Slide 21's reformers row gave reform names as the effect. **Fixed:** "Reform laws, sewers" / "More vote;
+   fewer child workers."
+10. Slide 22 as a finished answer to Checkpoint 2 step 5. **Rejected,** as in pass 1 (finding 12): the
+    synthesis slide is a required function, and step 5 asks for the student's own sentence about one row.
+11. "Five of the six points" (slide 7) against the deep reading's "most." **Fixed** the other way: the deep
+    reading now says "five of their six points later became law, one only roughly," matching the National
+    Archives and Britannica.
+12. Slide 20's tags named the Paris Commune and Erfurt, taught on no required surface. **Fixed:** "German
+    socialist program, 1891."
+13. Slide 9's footer asked what the excerpt wanted readers to do; the excerpt has no call to action.
+    **Fixed:** "what picture of society did they want readers to see?"
+14. The Evidence Lab's "optional." **Rejected,** as in pass 2 (finding 11).
+15. Germany's ban stated three ways. **Fixed:** "Socialist meetings banned" (slide 8) and "with socialist
+    meetings and newspapers banned" (lecture card 1), matching slide 14 and the First & 10.
+
+Minor items: slide 12's frame now reads "because of its maker's [point of view / ...]"; slide 17's caption
+"The Imperial Fez Factory, Istanbul, 1880s"; "the society industry left behind" is now "the society
+industry made" (slide 25, the First & 10's last line); the map caption says "under pressure from stronger
+powers." The clipped credit tags on slides 3 and 25 are the course-wide full-screen button, already known.
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| Selim III's New Order followed a lost war with Russia (1787 to 1792) | F10, LD lecture card 4, DR, Deck slide 16 | Britannica, "Selim III" and "Nizam-ı cedid" (reforms of 1792 to 1793 after the Treaties of Sistova, 1791, and Jassy, 1792), and Shaw, "The Nizam-i Cedid Army under Sultan Selim III" (1965), as returned by search | VERIFIED |
+| The Ottoman and Qing pressure came from stronger European powers, more and more of them industrial | F10, LD, DR, Deck slides 16 and 19 | The CED ("in response to the expansion of industrializing states"); Russia's wars before industrialization; the Opium Wars after | NARROWED (was "from the industrial powers") |

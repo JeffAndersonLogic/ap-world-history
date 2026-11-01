@@ -2032,11 +2032,11 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Outside Europe, the pressure was different. The Ottoman Empire and Qing China had few factories of their own. Their pressure came from the industrial powers: their armies, warships and trade. Like Egypt and Japan in Topic 5.6, both governments tried to reform and modernize their economies and armies. Both met resistance from people inside their own governments and elites."
+            "html": "Outside Europe, the pressure was different. The Ottoman Empire and Qing China had few factories of their own. Their pressure came from stronger European powers, and more and more from the industrial powers: their armies, warships and trade. Like Egypt and Japan in Topic 5.6, both governments tried to reform and modernize their economies and armies. Both met resistance from people inside their own governments and elites."
           },
           {
             "type": "p",
-            "html": "In the 1790s the Ottoman Sultan Selim III built a new army in European-style uniforms, with imported guns and French instructors, called the \"New Order.\" The Janissaries, the empire's old army corps, saw it as a threat, and many conservative religious scholars sided with them. In 1807 a revolt overthrew Selim. In June 1826 Sultan Mahmud II destroyed the Janissaries and built a new army."
+            "html": "After losing a war to Russia (1787 to 1792), the Ottoman Sultan Selim III built a new army in European-style uniforms, with imported guns and French instructors, called the \"New Order.\" The Janissaries, the empire's old army corps, saw it as a threat, and many conservative religious scholars sided with them. In 1807 a revolt overthrew Selim. In June 1826 Sultan Mahmud II destroyed the Janissaries and built a new army."
           },
           {
             "type": "p",
@@ -2067,7 +2067,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Industry had changed who worked, where people lived and how families got by. What kind of society did it leave behind? That is Topic 5.9."
+            "html": "Industry had changed who worked, where people lived and how families got by. What kind of society had it made? That is Topic 5.9."
           }
         ],
         "callout": {

@@ -65,7 +65,7 @@ window.BEHISTORICAL_LESSON = {
       theme: "Social Interactions and Organization"
     },
     {
-      criteria: "I can explain what socialism meant, what Marx predicted and what he meant by communism, and one thing his ideas did, or did not do, by 1900.",
+      criteria: "I can explain how discontent with who held power encouraged new ideas, what socialism meant, what Marx predicted and what he meant by communism, and one thing his ideas did, or did not do, by 1900.",
       kc: "KC-5.3.IV.A.ii",
       theme: "Social Interactions and Organization"
     },
@@ -126,7 +126,7 @@ window.BEHISTORICAL_LESSON = {
           "**The risks:** in 1834 six farm laborers from Tolpuddle, in Dorset, were sentenced to seven years as convicts in Australia for swearing a secret oath when they formed a union. After huge protests, they were pardoned in 1836.",
           "**Unions grow:** a labor union is a group of workers who bargain with their employer together and can strike, stopping work together. Unions formed the Trades Union Congress in 1868, and a law of 1871 gave them legal standing. They fought for better conditions, shorter hours, and higher wages; a law of 1847 limited women and young people in textile mills to ten hours a day from 1848.",
           "**A workers' movement:** from 1838 the Chartists demanded a vote for every man over 21 and five other changes to Parliament, set out in a People's Charter. Parliament rejected their petitions of 1839, 1842, and 1848.",
-          "**Parties in different countries:** in Germany, two workers' parties united in 1875; banned from 1878 to 1890, the party won more votes than any other in February 1890, and that autumn renamed itself the Social Democratic Party. In Britain, unions and socialists founded a committee in 1900 that became the Labour Party in 1906. In the United States, the American Federation of Labor (1886) organized skilled workers for better wages and hours."
+          "**Parties in different countries:** in Germany, two workers' parties united in 1875; with socialist meetings and newspapers banned from 1878 to 1890, the party won more votes than any other in February 1890, and that autumn renamed itself the Social Democratic Party. In Britain, unions and socialists founded a committee in 1900 that became the Labour Party in 1906. In the United States, the American Federation of Labor (1886) organized skilled workers for better wages and hours."
         ],
         image: {
           title: "The Chartists' National Convention, 1839",
@@ -171,8 +171,8 @@ window.BEHISTORICAL_LESSON = {
       {
         title: "Old Empires Modernize, and Meet Resistance",
         bullets: [
-          "**A different pressure:** the Ottoman Empire and Qing China had few factories of their own. Their pressure came from the industrial powers' armies, warships, and trade. Like Egypt and Japan in Topic 5.6, both governments tried to modernize, and both met resistance from inside.",
-          "**The Ottoman Empire:** in the 1790s Sultan Selim III built a European-style army, the \"New Order\"; the Janissaries, the old army corps, and conservative religious scholars opposed it, and a revolt overthrew him in 1807. In June 1826 Sultan Mahmud II destroyed the Janissaries.",
+          "**A different pressure:** the Ottoman Empire and Qing China had few factories of their own. Their pressure came from stronger European powers, and more and more from the industrial powers' armies, warships, and trade. Like Egypt and Japan in Topic 5.6, both governments tried to modernize, and both met resistance from inside.",
+          "**The Ottoman Empire:** after a lost war with Russia (1787 to 1792), Sultan Selim III built a European-style army, the \"New Order\"; the Janissaries, the old army corps, and conservative religious scholars opposed it, and a revolt overthrew him in 1807. In June 1826 Sultan Mahmud II destroyed the Janissaries.",
           "**The Tanzimat:** from 1839 the government promised all subjects safety of life, honor, and property, fair taxes, and regular military service; a decree of 1856 promised equal treatment to Christians and Jews. Mahmud II's government had opened a state fez factory in Istanbul in the 1830s; in the Tanzimat years it got steam engines and machines from Britain and Belgium, and from 1855 the state built telegraph lines. Many Muslims resented the 1856 promise of equality. A constitution and parliament came in 1876; in 1878 Sultan Abdulhamid II shut the parliament down.",
           "**Qing China:** after defeats in the Opium Wars (Unit 6) and the Taiping Rebellion, officials such as Zeng Guofan and Li Hongzhang led Self-Strengthening from the 1860s: the Jiangnan Arsenal in Shanghai (1865), a navy yard at Fuzhou (1866) and a steamship company (1872); Prince Gong's foreign office opened a school for foreign languages in Beijing (1862).",
           "**Resistance in China:** in 1867 Woren, a senior official and the emperor's tutor, opposed teaching Western mathematics at the language school. Japan defeated China's new navy in 1894 and 1895. In 1898 the Guangxu Emperor's hundred days of reforms were stopped by the Empress Dowager Cixi and officials who opposed them; six reformers were executed."
@@ -191,7 +191,7 @@ window.BEHISTORICAL_LESSON = {
     title: "Calls for Change, 1824 to 1898",
     url: "../assets/images/instructional-maps/topic-5-8.svg",
     sourceUrl: "../assets/images/instructional-maps/topic-5-8.svg",
-    caption: "A BeHistorical map of the places in this lesson: Britain and Germany, where workers organized and governments reformed, and the Ottoman Empire and Qing China, whose governments tried to modernize under pressure from industrial powers.",
+    caption: "A BeHistorical map of the places in this lesson: Britain and Germany, where workers organized and governments reformed, and the Ottoman Empire and Qing China, whose governments tried to modernize under pressure from stronger powers.",
     intro: "Find Britain and Germany first, then the Ottoman Empire and Qing China. Read the key for each shaded area, then follow the two numbered arrows, which show pressure on China from outside.",
     prompt: "Using the map and its key, choose one place in Western Europe (Britain or Germany) and one in Asia (the Ottoman Empire or Qing China). For each, say who called for change there and what they did or wanted, with one date from the key. Then use arrow 1 or 2 to say what pressured China."
   },
@@ -221,7 +221,7 @@ window.BEHISTORICAL_LESSON = {
     attribution: "Karl Marx and Friedrich Engels, Manifesto of the Communist Party (London, 1848), English translation by Samuel Moore with Friedrich Engels (1888), sections I, II, and IV, shortened, from the public-domain text at the Marxists Internet Archive",
     text: "The history of all hitherto existing society is the history of class struggles. Freeman and slave, patrician and plebeian, lord and serf, guild-master and journeyman, in a word, oppressor and oppressed, stood in constant opposition to one another ...<br><br>Society as a whole is more and more splitting up into two great hostile camps, into two great classes directly facing each other ...<br><br>In this sense, the theory of the Communists may be summed up in the single sentence: Abolition of private property. ...<br><br>The Communists disdain to conceal their views and aims. They openly declare that their ends can be attained only by the forcible overthrow of all existing social conditions. Let the ruling classes tremble at a Communistic revolution. The proletarians have nothing to lose but their chains. They have a world to win. Working Men of All Countries, Unite!",
     questions: [
-      "Point of view and purpose: who wrote the Manifesto, and for which group? Quote one line that shows what the authors wanted their readers to do.",
+      "Point of view and purpose: why would a small group of radicals want its ideas written down and printed for workers? Quote one line that shows what the authors wanted their readers to do.",
       "Historical situation: Engels had lived in Manchester and published a book about its workers' streets in 1845. Using the lesson, explain how what he saw there might help explain the claim that society was splitting into \"two great hostile camps.\"",
       "Audience: the last line speaks to \"Working Men of All Countries.\" Why might the authors speak to workers everywhere and not in one country? Using the lesson, name one thing that had happened by 1900 that they would have welcomed, and one prediction that had not come true."
     ]

@@ -80,11 +80,11 @@ module.exports = {
         {
           heading: 'The directory\'s Manchester',
           blocks: [
-            { p: `A directory was a book listing a town's businesses and their addresses, sold to merchants and visitors. One of Manchester and Salford, printed by Whellan and Company (the copy that can be read today is dated <span class="num">1853</span>), opens with a chapter called "Sketches of Manchester and its Vicinity." It describes "the innumerable large mills and factories whose tall chimneys shoot up in every direction," which "betoken the activity, enterprise, and wealth of its inhabitants," and it calls the town "the 'workshop of the world'."` },
+            { p: `A directory was a book listing a town's businesses and their addresses. One of Manchester and Salford, printed by Whellan and Company (the copy that can be read today is dated <span class="num">1853</span>), opens with a chapter called "Sketches of Manchester and its Vicinity." It describes "the innumerable large mills and factories whose tall chimneys shoot up in every direction," which "betoken the activity, enterprise, and wealth of its inhabitants," and it calls the town "the 'workshop of the world'."` },
             { note: {
               kind: 'howknow',
               label: 'How we know: sourcing both',
-              html: `Engels wrote to show German readers what industry did to workers; he went on to write <em>The Communist Manifesto</em> with Karl Marx (section 03). The directory was written to sell a book to businesses and to present the town at its best. Neither is lying, and neither is the whole truth. The College Board's sample activity for this topic asks exactly this: how do point of view, purpose and audience explain the difference, and which description is more accurate?`
+              html: `Engels went on to write <em>The Communist Manifesto</em> with Karl Marx (section 03). Before you decide which description to trust, ask of each: who made it, why, and for whom? Who would buy a directory, and what would they want it to say about their town? Who would read a German book about English workers? The College Board's sample activity for this topic asks exactly this: how do point of view, purpose and audience explain the difference, and which description is more accurate? The Skill Builder walks you through it.`
             } }
           ]
         }
@@ -128,7 +128,7 @@ module.exports = {
           heading: 'The Charter',
           blocks: [
             { p: `Workers also wanted a voice in making the laws. In <span class="num">1838</span> the <span class="kt">Chartists</span> published a People's Charter with six points: a vote for every man over 21, a secret ballot, no property requirement for members of Parliament, pay for members, districts of equal size, and a new Parliament elected every year. Over 1.2 million people signed their first petition in <span class="num">1839</span>, and the Chartists claimed over three million for the second in <span class="num">1842</span>. Parliament rejected both, and a third in <span class="num">1848</span>.` },
-            { p: `The Chartists lost every petition, but most of their points later became law: the property requirement went in 1858, the vote reached many working men in 1867 and 1884 and every man over 21 in 1918, the secret ballot came in 1872, districts were redrawn closer to equal size in 1885, and members were paid from 1911. A new Parliament every year never came.` }
+            { p: `The Chartists lost every petition, but five of their six points later became law, one only roughly: the property requirement went in 1858, the vote reached many working men in 1867 and 1884 and every man over 21 in 1918, the secret ballot came in 1872, districts were redrawn closer to equal size in 1885, and members were paid from 1911. A new Parliament every year never came.` }
           ]
         },
         {
@@ -256,12 +256,12 @@ module.exports = {
       name: 'The Old Empires Modernize, and Meet Resistance',
       navLabel: 'Old empires',
       dates: '1789 to 1898 &nbsp;·&nbsp; Istanbul and Beijing',
-      thesis: `For the Ottoman Empire and Qing China, the pressure came from the industrial powers. Both governments tried to modernize their armies and economies, and both met resistance from inside.`,
+      thesis: `For the Ottoman Empire and Qing China, the pressure came from stronger outside powers, more and more of them industrial. Both governments tried to modernize their armies and economies, and both met resistance from inside.`,
       parts: [
         {
           heading: 'The Ottoman Empire',
           blocks: [
-            { p: `In the 1790s Sultan Selim III built a new infantry, the "New Order," with European-style uniforms, imported guns and French instructors. The Janissaries, the old army corps, saw it as a threat, and important conservative religious scholars sided with them. A revolt overthrew Selim in <span class="num">1807</span>. In June <span class="num">1826</span> Sultan Mahmud II destroyed the Janissaries and built a new army along European lines.` },
+            { p: `After a lost war with Russia (1787 to 1792), Sultan Selim III built a new infantry in the 1790s, the "New Order," with European-style uniforms, imported guns and French instructors. The Janissaries, the old army corps, saw it as a threat, and important conservative religious scholars sided with them. A revolt overthrew Selim in <span class="num">1807</span>. In June <span class="num">1826</span> Sultan Mahmud II destroyed the Janissaries and built a new army along European lines.` },
             { p: `On 3 November <span class="num">1839</span>, at Gülhane in Istanbul, the government announced the <span class="kt">Tanzimat</span> ("reorganization"). Its decree promised "perfect security for life, honor, and property," "a regular system of assessing taxes" and a regular system of military service, and it said that "the Muslim and non-Muslim subjects of our lofty Sultanate shall, without exception, enjoy our imperial concessions." Mahmud II's government had opened a state fez factory in Istanbul in the 1830s; in the Tanzimat years it was moved to Eyüp and fitted with steam engines and machines from Britain and Belgium. The state added an ironworks in <span class="num">1843</span> and telegraph lines from <span class="num">1855</span>.` },
             { p: `A decree of <span class="num">1856</span> promised equal treatment to Christians and Jews. Many Muslims, who had long held a higher place than Christians and Jews, resented losing it; some Christian church leaders were unhappy too. In December <span class="num">1876</span> the empire got a constitution and a parliament. In February <span class="num">1878</span> Sultan Abdulhamid II suspended the constitution and dissolved the parliament.` }
           ]

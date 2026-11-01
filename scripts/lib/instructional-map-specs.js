@@ -525,11 +525,12 @@ module.exports = [
       { zone: 'britain', label: 'BRITAIN', labelSide: 'left', tone: 'gold', legend: 'Britain: union ban lifted, 1824; Chartists, 1838 to 1848; Labour, 1906' },
       { zone: [11, 52, 3.4, 2.6], label: 'GERMANY', labelSide: 'right', tone: 'slate', legend: 'Germany: socialist party banned, 1878 to 1890; insurance laws, 1883 to 1889' },
       { zone: 'anatolia', label: 'OTTOMAN EMPIRE', labelSide: 'right', tone: 'sand', legend: 'Ottoman Empire: Tanzimat reforms from 1839; parliament shut, 1878' },
-      { zone: 'eastAsia', label: 'QING CHINA', tone: 'sage', legend: 'Qing China: Self-Strengthening from the 1860s; reforms stopped, 1898' }
+      { zone: 'eastAsia', label: 'QING CHINA', tone: 'sage', legend: 'Qing China: Self-Strengthening from the 1860s; reforms stopped, 1898' },
+      { zone: 'japan', label: 'JAPAN', labelSide: 'right', tone: 'plum', legend: 'Japan: industrialized from 1868 (Topic 5.6)' }
     ],
     flows: [
-      { from: [-2, 53], to: [114, 26], label: '1839', bow: -0.18 },
-      { from: [136, 34.5], to: [121, 37], label: '1894', bow: -0.2 }
+      { from: [-4, 55], to: [114, 26], label: '1839', bow: -0.3 },
+      { from: [137, 36], to: [121, 37], label: '1894', bow: -0.2 }
     ],
     points: [
       { at: [-2.24, 53.48], label: 'Manchester', note: 'Engels, 1845', side: 'left' },
@@ -540,7 +541,8 @@ module.exports = [
       { kind: 'area', tone: 'gold', text: 'Britain: union ban lifted, 1824; Chartists, 1838 to 1848; Labour, 1906' },
       { kind: 'area', tone: 'slate', text: 'Germany: socialists banned, 1878 to 1890; insurance laws, 1883 to 1889' },
       { kind: 'area', tone: 'sand', text: 'Ottoman Empire: Tanzimat reforms from 1839; parliament shut, 1878' },
-      { kind: 'area', tone: 'sage', text: 'Qing China: Self-Strengthening from the 1860s; reforms stopped, 1898' },
+      { kind: 'area', tone: 'sage', text: 'Qing China: Self-Strengthening, 1860s to 1895; reforms stopped, 1898' },
+      { kind: 'area', tone: 'plum', text: 'Japan: industrialized from 1868 (Topic 5.6)' },
       { kind: 'flow', step: 1, text: 'Britain at war with China, 1839 to 1842 (Unit 6)' },
       { kind: 'flow', step: 2, text: 'Japan defeats China\u2019s new navy, 1894 to 1895' }
     ],

@@ -71,31 +71,33 @@
     <ellipse cx="848.9" cy="211.1" rx="15.1" ry="14.4" fill="#9FB0AE" fill-opacity="0.5" stroke="#4E6260" stroke-width="4"/>
     <ellipse cx="946.7" cy="283.3" rx="48.9" ry="27.8" fill="#D2B48C" fill-opacity="0.5" stroke="#8E7A55" stroke-width="4"/>
     <ellipse cx="1297.8" cy="311.1" rx="66.7" ry="61.1" fill="#B6C2A2" fill-opacity="0.5" stroke="#5E6B4C" stroke-width="4"/>
+    <ellipse cx="1417.8" cy="288.9" rx="26.7" ry="33.3" fill="#B49AA8" fill-opacity="0.5" stroke="#6B4A5A" stroke-width="4"/>
   </g>
   <g id="flows">
-    <path class="flow" d="M791.1,205.6 Q1075.9,187.8 1306.7,355.6" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="1062.4" cy="234.2" r="17"/>
-    <text class="badgenum" x="1062.4" y="241.2" text-anchor="middle">1</text>
-    <path class="flow" d="M1404.4,308.3 Q1368.3,314.7 1337.8,294.4" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
-    <circle class="badge" cx="1369.7" cy="308.1" r="17"/>
-    <text class="badgenum" x="1369.7" y="315.1" text-anchor="middle">2</text>
+    <path class="flow" d="M782.2,194.4 Q1092.8,117.7 1306.7,355.6" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <circle class="badge" cx="1068.6" cy="196.3" r="17"/>
+    <text class="badgenum" x="1068.6" y="203.3" text-anchor="middle">1</text>
+    <path class="flow" d="M1408.9,300.0 Q1372.2,311.4 1337.8,294.4" stroke-dasharray="18 13" marker-end="url(#arrow)"/>
+    <circle class="badge" cx="1372.8" cy="304.3" r="17"/>
+    <text class="badgenum" x="1372.8" y="311.3" text-anchor="middle">2</text>
   </g>
   <g id="region-labels">
     <text class="region halo" x="733.1" y="159.0" text-anchor="end" fill="#1A1C1D"><tspan x="733.1" dy="0">BRITAIN</tspan></text>
-    <text class="region halo" x="882.0" y="182.1" text-anchor="start" fill="#1A1C1D"><tspan x="882.0" dy="0">GERMANY</tspan></text>
-    <text class="region halo" x="1001.6" y="350.3" text-anchor="start" fill="#1A1C1D"><tspan x="1001.6" dy="0">OTTOMAN EMPIRE</tspan></text>
+    <text class="region halo" x="882.0" y="230.1" text-anchor="start" fill="#1A1C1D"><tspan x="882.0" dy="0">GERMANY</tspan></text>
+    <text class="region halo" x="1001.6" y="326.3" text-anchor="start" fill="#1A1C1D"><tspan x="1001.6" dy="0">OTTOMAN EMPIRE</tspan></text>
     <text class="region halo" x="1297.8" y="398.2" text-anchor="middle" fill="#1A1C1D"><tspan x="1297.8" dy="0">QING CHINA</tspan></text>
+    <text class="region halo" x="1462.4" y="295.9" text-anchor="start" fill="#1A1C1D"><tspan x="1462.4" dy="0">JAPAN</tspan></text>
   </g>
   <g id="places">
     <circle class="city" cx="790.0" cy="202.9" r="10"/>
-    <text class="place halo" x="770.0" y="198.9" text-anchor="end">Manchester</text>
-    <text class="placenote halo" x="770.0" y="220.9" text-anchor="end">Engels, 1845</text>
+    <text class="place halo" x="758.0" y="198.9" text-anchor="end">Manchester</text>
+    <text class="placenote halo" x="758.0" y="220.9" text-anchor="end">Engels, 1845</text>
     <circle class="city" cx="928.9" cy="272.2" r="10"/>
-    <text class="place halo" x="948.9" y="292.2" text-anchor="start">Istanbul</text>
-    <text class="placenote halo" x="948.9" y="314.2" text-anchor="start">the sultan</text>
+    <text class="place halo" x="948.9" y="268.2" text-anchor="start">Istanbul</text>
+    <text class="placenote halo" x="948.9" y="290.2" text-anchor="start">the sultan</text>
     <circle class="city" cx="1317.3" cy="278.3" r="10"/>
-    <text class="place halo" x="1337.3" y="250.3" text-anchor="start">Beijing</text>
-    <text class="placenote halo" x="1337.3" y="272.3" text-anchor="start">the Qing court</text>
+    <text class="place halo" x="1337.3" y="238.3" text-anchor="start">Beijing</text>
+    <text class="placenote halo" x="1337.3" y="260.3" text-anchor="start">the Qing court</text>
   </g>
 
   <g id="titleband">
@@ -105,15 +107,16 @@
     <text class="subtitle" x="48" y="97">Topic 5.8 · Reactions to the Industrial Economy from 1750 to 1900</text>
   </g>
 
-  <g id="legend" transform="translate(46,688)">
-    <rect x="0" y="0" width="640" height="244" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
+  <g id="legend" transform="translate(46,655)">
+    <rect x="0" y="0" width="640" height="277" rx="14" fill="url(#paper)" stroke="#3E4447" stroke-width="2" opacity=".97"/>
     <text class="small" x="18" y="28" font-weight="700">Map Key</text>
       <rect x="18" y="38" width="40" height="23" rx="4" fill="#C9A46A" fill-opacity=".6" stroke="#6B3E1F" stroke-width="3"/><text class="small" x="74" y="56">Britain: union ban lifted, 1824; Chartists, 1838 to 1848; Labour, 1906</text>
       <rect x="18" y="71" width="40" height="23" rx="4" fill="#9FB0AE" fill-opacity=".6" stroke="#4E6260" stroke-width="3"/><text class="small" x="74" y="89">Germany: socialists banned, 1878 to 1890; insurance laws, 1883 to 1889</text>
       <rect x="18" y="104" width="40" height="23" rx="4" fill="#D2B48C" fill-opacity=".6" stroke="#8E7A55" stroke-width="3"/><text class="small" x="74" y="122">Ottoman Empire: Tanzimat reforms from 1839; parliament shut, 1878</text>
-      <rect x="18" y="137" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="155">Qing China: Self-Strengthening from the 1860s; reforms stopped, 1898</text>
-      <circle class="badge" cx="33" cy="181" r="14"/><text class="badgenum" x="33" y="187" text-anchor="middle" font-size="16">1</text><line x1="51" x2="72" y1="181" y2="181" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,175 L84,181 L72,187 Z" fill="#8C5A2B"/><text class="small" x="94" y="188">Britain at war with China, 1839 to 1842 (Unit 6)</text>
-      <circle class="badge" cx="33" cy="214" r="14"/><text class="badgenum" x="33" y="220" text-anchor="middle" font-size="16">2</text><line x1="51" x2="72" y1="214" y2="214" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,208 L84,214 L72,220 Z" fill="#8C5A2B"/><text class="small" x="94" y="221">Japan defeats China’s new navy, 1894 to 1895</text>
+      <rect x="18" y="137" width="40" height="23" rx="4" fill="#B6C2A2" fill-opacity=".6" stroke="#5E6B4C" stroke-width="3"/><text class="small" x="74" y="155">Qing China: Self-Strengthening, 1860s to 1895; reforms stopped, 1898</text>
+      <rect x="18" y="170" width="40" height="23" rx="4" fill="#B49AA8" fill-opacity=".6" stroke="#6B4A5A" stroke-width="3"/><text class="small" x="74" y="188">Japan: industrialized from 1868 (Topic 5.6)</text>
+      <circle class="badge" cx="33" cy="214" r="14"/><text class="badgenum" x="33" y="220" text-anchor="middle" font-size="16">1</text><line x1="51" x2="72" y1="214" y2="214" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,208 L84,214 L72,220 Z" fill="#8C5A2B"/><text class="small" x="94" y="221">Britain at war with China, 1839 to 1842 (Unit 6)</text>
+      <circle class="badge" cx="33" cy="247" r="14"/><text class="badgenum" x="33" y="253" text-anchor="middle" font-size="16">2</text><line x1="51" x2="72" y1="247" y2="247" stroke="#8C5A2B" stroke-width="5" stroke-dasharray="9 7"/><path d="M72,241 L84,247 L72,253 Z" fill="#8C5A2B"/><text class="small" x="94" y="254">Japan defeats China’s new navy, 1894 to 1895</text>
   </g>
 
   <rect x="0" y="948" width="1600" height="52" fill="url(#paper)" opacity=".93"/>

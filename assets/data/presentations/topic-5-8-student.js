@@ -180,7 +180,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
               {
                 "year": 1878,
                 "label": "1878",
-                "text": "Socialists banned"
+                "text": "Socialist meetings banned"
               },
               {
                 "year": 1890,
@@ -226,7 +226,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "source-quote",
       "eyebrow": "Thinkers · In Their Own Words",
       "title": "Marx and Engels, 1848.",
-      "footer": "Who wrote this, for whom, and what did they want the reader to do?",
+      "footer": "Who wrote this, for whom, and what picture of society did they want readers to see?",
       "kc": "KC-5.3.IV.A.ii",
       "template": {
         "quote": "The history of all hitherto existing society is the history of class struggles. ... Society as a whole is more and more splitting up into two great hostile camps ...",
@@ -250,7 +250,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "items": [
             "Owen's followers, late 1820s",
             "A wide family of ideas",
-            "Change by example or by law"
+            "Some built model communities"
           ]
         },
         "right": {
@@ -262,7 +262,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           ]
         },
         "both": [
-          "Wealth-making owned in common",
+          "Land and factories owned in common",
           "Anger at who held power"
         ]
       }
@@ -271,7 +271,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "action",
       "eyebrow": "Module 06 · Checkpoint 1 · 8 Minutes",
       "title": "Why did workers organize, and what did Marx imagine?",
-      "subtitle": "Explain one cause that led workers to organize, one thing they wanted and one effect, what socialism meant and what Marx predicted, and one thing his ideas did or did not do by 1900. On your own: no coach.",
+      "subtitle": "Explain one cause that led workers to organize, one thing they wanted and one effect, what discontent led socialists and Marx to want, and one thing his ideas did or did not do by 1900. On your own: no coach.",
       "action": {
         "label": "Open Student Lesson",
         "url": "lesson-5-8-reactions-to-industrial-economy.html#modules"
@@ -283,7 +283,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "How do you source a source?",
       "footer": "Four questions: who made it, why, for whom, and when. Then say how one shapes what it says.",
       "template": {
-        "frame": "{{Source}} says {{what}}, because its maker {{point of view / purpose / audience / situation}}: {{how that explains it}}.",
+        "frame": "{{Source}} says {{what}}, because of its maker's {{point of view / purpose / audience / situation}}: {{how that explains it}}.",
         "exampleLabel": "An everyday case",
         "example": "**The company's brochure** says **the new cafeteria is bright and modern** and says nothing about the lines, because **the company wrote it to sell cafeterias to school boards**: **it was printed before anyone had stood in a line**."
       }
@@ -378,7 +378,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Defeats",
-            "text": "China loses the **Opium Wars**, 1839 to 1842 and 1856 to 1860 (Unit 6)."
+            "text": "Ottomans lose to **Russia** (1787 to 1792); China loses the **Opium Wars** (Unit 6)."
           },
           {
             "label": "Reform from the top",
@@ -398,7 +398,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Reform, and the people who fought it.",
       "kc": "KC-5.1.V.B",
       "template": {
-        "caption": "The sultan's fez factory, Istanbul, 1880s",
+        "caption": "The Imperial Fez Factory, Istanbul, 1880s",
         "steps": [
           {
             "label": "1790s to 1807",
@@ -436,7 +436,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "caption": "Li Hongzhang, a Self-Strengthening leader, right, with Ulysses S. Grant, 1879",
         "steps": [
           {
-            "label": "1860s",
+            "label": "1860s to 1870s",
             "text": "Arsenals, a **navy yard**, a language school, steamships."
           },
           {
@@ -450,7 +450,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "1898",
             "key": true,
-            "text": "A hundred days of reform, **stopped by Cixi**."
+            "text": "The Hundred Days: new reforms, **stopped by Cixi**."
           }
         ],
         "visual": {
@@ -478,11 +478,11 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "right": {
           "tag": "Qing",
           "name": "Self-Strengthening",
-          "when": "1860s to 1898",
+          "when": "1860s to 1895; 1898",
           "text": "Woren objects (1867); Cixi stops the reforms of 1898."
         },
         "claimLabel": "Compare",
-        "claim": "Different empires, **shared cause and limit**: pressure from industrial powers pushed both to reform, and people inside resisted."
+        "claim": "Different empires, **shared cause and limit**: pressure from stronger, more and more industrial powers pushed both to reform, and people inside resisted."
       }
     },
     {
@@ -500,7 +500,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "myth": "Marx's revolution came in the 1800s.",
             "evidence": "No communist party ruled a country until the twentieth century. By 1900 his ideas lived in parties.",
-            "source": "Paris Commune, 1871; Erfurt Program, 1891"
+            "source": "German socialist program, 1891"
           },
           {
             "myth": "China and the Ottoman Empire refused to change.",
@@ -547,8 +547,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "label": "Reformers",
             "cells": [
               "Mills, mines, cities",
-              "Laws, schools, sewers",
-              "Reform Acts; insurance"
+              "Reform laws, sewers",
+              "More vote; fewer child workers"
             ]
           },
           {
@@ -572,7 +572,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Say it in one sentence.",
       "kc": "Unit 5: Learning Objective I",
       "template": {
-        "frame": "Long hours and low pay led workers to form ___, and thinkers like ___ to imagine a new society; governments passed ___; industrial powers pushed old empires to ___, against ___ inside.",
+        "frame": "Low pay led workers to form ___; anger at who held power led thinkers like ___ to imagine a new society; governments passed ___; outside powers pushed old empires to ___, against ___ inside.",
         "words": [
           "modernize",
           "unions",
@@ -607,7 +607,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "frame-subtitle",
       "eyebrow": "The Hand-off",
       "title": "Workers organized. Thinkers imagined. Governments reformed. Old empires modernized, and met resistance.",
-      "subtitle": "Students of the Ottoman Imperial School of Military Engineering, Istanbul, 1880s. Next, Topic 5.9: the society industry left behind.",
+      "subtitle": "Students of the Ottoman Imperial School of Military Engineering, Istanbul, 1880s. Next, Topic 5.9: the society industry made.",
       "template": {
         "place": "top",
         "visual": {
