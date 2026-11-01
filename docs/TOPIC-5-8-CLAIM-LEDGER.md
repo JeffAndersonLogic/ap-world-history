@@ -660,3 +660,9 @@ adjacent findings for Jeff (Key Concept codes printed in capitals, the myth-evid
 
 **Ledger status at the close:** every row carries one of VERIFIED, NARROWED or REMOVED. No row is NEEDS
 JEFF.
+
+**After the close: the full browser suite** (`npm run test:browser -- --strict`, brand fonts): 29 of 30
+suites passed. `teaching-os-briefing.browser.test.js` failed one assertion, "5.8 every local link on the
+page resolves": the teacher page's Student Lesson button named `lesson-5-8-economic-developments-and-innovations.html`,
+left from the copy of 5.7's page. **Fixed** to `lesson-5-8-reactions-to-industrial-economy.html`; the
+suite then passed on its own (exit 0).
