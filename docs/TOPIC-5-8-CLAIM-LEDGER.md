@@ -472,3 +472,41 @@ reviewer (HTTP 403); the builder had read them as JSON (section 10 of the story 
 Packet recaptured after pass 1's fixes (brand fonts, 25 teacher slides). Two fresh reviewers, as before.
 Both were cut off by the account's five-hour usage limit soon after starting; both were resumed (not
 relaunched) once it reset, at 11:34 UTC, from their saved work.
+
+**Page truth reviewer: 12 findings; 9 supported and fixed, 1 supported in part, 2 rejected or logged.**
+CED wording, the reasoning process and skill, the checkpoints' targets and story-map ownership: no
+findings.
+
+1. Slide 10's Venn put "Many worked through elections" under socialism only, though the course says
+   Germany's Marxist party ran in elections. **Fixed:** the left circle reads "Change by example or by
+   law," the right "Workers overthrow owners," and the footer "Marx shaped parties that ran in elections;
+   no workers' revolution won lasting power." **Rejected in part:** the circles are drawn whole in the
+   brand-font capture (the browser test also measures every Venn against its circles).
+2. Slides 17 and 19 dated the Tanzimat differently (1839 to 1856; "New Order to Tanzimat, 1790s to
+   1878"). **Fixed:** slide 17 "1839 to 1876," slide 19 "New Order to constitution, 1790s to 1878."
+3. Slide 8 printed "SPD" in February 1890, before the name, and two labels no student surface uses.
+   **Fixed:** "Socialists: most votes," "Trades Union Congress," "Labour committee"; the First & 10's
+   takeaway now says "a socialist party, banned from 1878 to 1890."
+4. Slide 6's "Ten-hour law" read as a ten-hour day for everyone. **Fixed:** "Ten hours for mill women,
+   youths"; the timeline's range now gives 1868 and 1871 a scale mark (1790 to 1880).
+5. Slide 9's notice asked for two classes the slide did not show. **Fixed:** the quotation now includes
+   "Society as a whole is more and more splitting up into two great hostile camps," and the notice asks,
+   "In a factory town, who are the two 'hostile camps'?"
+6. "No revolution came" (slides 10, 21). **Fixed:** "no workers' revolution won lasting power";
+   "Parties; no lasting revolution."
+7. Slide 20's "until the 1900s" and a source tag that supports only half the row. **Fixed:** "until the
+   twentieth century"; tag "Paris Commune, 1871; Erfurt Program, 1891."
+8. Slide 13's education row put compulsion on the 1870 act, and "Every reform" was absolute. **Fixed:**
+   "schools; attendance from 1880"; "These reforms."
+9. Woren unintroduced on slides 18 and 19; Li Hongzhang only in a caption. **Fixed:** "Woren, the
+   emperor's tutor, objects; overruled, but few top scholars apply"; the caption "Li Hongzhang, a
+   Self-Strengthening leader." **Rejected in part:** "senior scholar" (BeInTheRoom) and "senior official"
+   (reading) are both true of a Grand Secretary and tutor; they do not contradict.
+10. Slide 22's frame ("Hard work and anger ... form ___ and ___") was ambiguous and off the course's
+    cause. **Fixed:** "Long hours and low pay led workers to form ___, and thinkers like ___ to imagine a
+    new society ..."
+11. Slide 23 calls the Evidence Lab optional; the page does not. **Rejected:** which modules are required
+    is set by the schedule and the board (`docs/claude/schedule-board-and-canvas.md`), not printed on
+    lesson pages, course-wide; the slide points students to the page's full task.
+12. Slide 20's struck-through myths in a light grey (about 2.9:1). **Adjacent finding:** the shared
+    `myth-evidence` template, every deck that uses it; reported, not fixed here.

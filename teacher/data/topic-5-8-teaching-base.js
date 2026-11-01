@@ -219,13 +219,13 @@ window.BEHISTORICAL_TEACHING = {
       title: 'From a crime to a legal standing.',
       footer: 'Workers organized to improve conditions, limit hours and raise wages.',
       template: {
-        range: [1795, 1875],
+        range: [1790, 1880],
         tick: 10,
         events: [
           { year: 1799, label: '1799', text: 'Combination Acts ban unions' },
           { year: 1824, label: '1824', text: 'Ban repealed; 1825 law limits unions' },
           { year: 1834, label: '1834', text: 'Tolpuddle laborers sentenced' },
-          { year: 1847, label: '1847', text: 'Ten-hour law, in force 1848' },
+          { year: 1847, label: '1847', text: 'Ten hours for mill women, youths' },
           { year: 1868, label: '1868', text: 'Trades Union Congress' },
           { year: 1871, label: '1871', text: 'Unions given legal standing' }
         ]
@@ -276,8 +276,8 @@ window.BEHISTORICAL_TEACHING = {
         range: [1860, 1910],
         tick: 10,
         lanes: [
-          { name: 'Germany', events: [ { year: 1878, label: '1878', text: 'Socialists banned' }, { year: 1890, label: '1890', text: 'SPD: most votes' } ] },
-          { name: 'Britain', events: [ { year: 1868, label: '1868', text: 'Unions\' congress' }, { year: 1900, label: '1900', text: 'Workers\' committee' }, { year: 1906, label: '1906', text: 'Labour Party' } ] },
+          { name: 'Germany', events: [ { year: 1878, label: '1878', text: 'Socialists banned' }, { year: 1890, label: '1890', text: 'Socialists: most votes' } ] },
+          { name: 'Britain', events: [ { year: 1868, label: '1868', text: 'Trades Union Congress' }, { year: 1900, label: '1900', text: 'Labour committee' }, { year: 1906, label: '1906', text: 'Labour Party' } ] },
           { name: 'United States', events: [ { year: 1886, label: '1886', text: 'AFL founded' } ] }
         ]
       },
@@ -299,9 +299,9 @@ window.BEHISTORICAL_TEACHING = {
       title: 'Marx and Engels, 1848.',
       footer: 'Who wrote this, for whom, and what did they want the reader to do?',
       template: {
-        quote: 'The history of all hitherto existing society is the history of class struggles.',
+        quote: 'The history of all hitherto existing society is the history of class struggles. ... Society as a whole is more and more splitting up into two great hostile camps ...',
         attribution: { author: 'Karl Marx and Friedrich Engels', work: 'Manifesto of the Communist Party, English translation of 1888', year: '1848' },
-        notice: 'Marx said industry split society into two classes. Which two?'
+        notice: 'In a factory town, who are the two "hostile camps"?'
       },
       notes: {
         minutes: 2,
@@ -319,10 +319,10 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'socialism', kind: 'split-venn', eyebrow: 'Thinkers · Two Words', kc: 'KC-5.3.IV.A.ii',
       title: 'Socialism and communism.',
-      footer: 'By 1900: Marx shaped workers\' parties, but no revolution came.',
+      footer: 'By 1900: Marx shaped parties that ran in elections; no workers\' revolution won lasting power.',
       template: {
-        left: { name: 'Socialism', items: ['Owen\'s followers, late 1820s', 'A wide family of ideas', 'Many worked through elections'] },
-        right: { name: 'Marx\'s communism', items: ['Manifesto, 1848', 'Workers\' revolution', 'A society with no classes'] },
+        left: { name: 'Socialism', items: ['Owen\'s followers, late 1820s', 'A wide family of ideas', 'Change by example or by law'] },
+        right: { name: 'Marx\'s communism', items: ['Manifesto, 1848', 'Workers overthrow owners', 'A society with no classes'] },
         both: ['Wealth-making owned in common', 'Anger at who held power']
       },
       notes: {
@@ -381,10 +381,10 @@ window.BEHISTORICAL_TEACHING = {
         rows: [
           { name: 'Political', tool: 'Reform Acts, 1867, 1884', result: 'more men can vote.' },
           { name: 'Social', tool: 'Factory Act, 1833; Mines Act, 1842', result: 'fewer young children at work.' },
-          { name: 'Educational', tool: 'Education Acts, 1870, 1880', result: 'children must attend school.' },
+          { name: 'Educational', tool: 'Education Acts, 1870, 1880', result: 'schools; attendance from 1880.' },
           { name: 'Urban', tool: 'London\'s sewers, after 1858', result: 'waste carried away.' }
         ],
-        payoffLabel: 'Every reform',
+        payoffLabel: 'These reforms',
         payoff: 'Fix, not overthrow'
       },
       notes: {
@@ -474,7 +474,7 @@ window.BEHISTORICAL_TEACHING = {
         steps: [
           { label: '1790s to 1807', text: 'Selim III\'s **New Order** army; Janissaries and scholars oppose; **a revolt overthrows him**.' },
           { label: '1826', text: 'Mahmud II **destroys the Janissaries**.' },
-          { label: '1839 to 1856', text: 'The **Tanzimat**: equal rights, more factories, telegraph; many Muslims resent equality.' },
+          { label: '1839 to 1876', text: 'The **Tanzimat**: equal rights promised, factories, telegraph; many Muslims resent equality.' },
           { label: '1876 to 1878', key: true, text: 'A constitution and parliament; **Abdulhamid II shuts it down**.' }
         ]
       },
@@ -495,10 +495,10 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'qing', kind: 'story-scene', eyebrow: 'The Old Empires · Qing China', kc: 'KC-5.1.V.B',
       title: 'Self-Strengthening, and its limits.',
       template: {
-        caption: 'Li Hongzhang, right, with Ulysses S. Grant, 1879',
+        caption: 'Li Hongzhang, a Self-Strengthening leader, right, with Ulysses S. Grant, 1879',
         steps: [
           { label: '1860s', text: 'Arsenals, a **navy yard**, a language school, steamships.' },
-          { label: '1867', text: 'Woren opposes Western mathematics; **few top scholars apply**.' },
+          { label: '1867', text: 'Woren, the emperor\'s tutor, objects; overruled, but **few top scholars apply**.' },
           { label: '1894 to 1895', text: '**Japan defeats** China\'s new navy.' },
           { label: '1898', key: true, text: 'A hundred days of reform, **stopped by Cixi**.' }
         ]
@@ -522,7 +522,7 @@ window.BEHISTORICAL_TEACHING = {
       title: 'Same pressure, two empires.',
       template: {
         job: 'Reform',
-        left: { tag: 'Ottoman', name: 'New Order to Tanzimat', when: '1790s to 1878', text: 'Janissaries resist (to 1826); many Muslims resent equality; the sultan shuts parliament.' },
+        left: { tag: 'Ottoman', name: 'New Order to constitution', when: '1790s to 1878', text: 'Janissaries resist (to 1826); many Muslims resent equality; the sultan shuts parliament.' },
         right: { tag: 'Qing', name: 'Self-Strengthening', when: '1860s to 1898', text: 'Woren objects (1867); Cixi stops the reforms of 1898.' },
         claimLabel: 'Compare',
         claim: 'Different empires, **shared cause and limit**: pressure from industrial powers pushed both to reform, and people inside resisted.'
@@ -545,7 +545,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         rows: [
           { myth: 'Unions became legal in 1824.', evidence: 'An 1825 law limited them, and Tolpuddle came in 1834. Legal standing came in 1871.', source: 'Combination laws; Trade Union Act, 1871' },
-          { myth: 'Marx\'s revolution came in the 1800s.', evidence: 'No communist party ruled a country until the 1900s. By 1900 his ideas lived in parties.', source: 'Erfurt Program, 1891' },
+          { myth: 'Marx\'s revolution came in the 1800s.', evidence: 'No communist party ruled a country until the twentieth century. By 1900 his ideas lived in parties.', source: 'Paris Commune, 1871; Erfurt Program, 1891' },
           { myth: 'China and the Ottoman Empire refused to change.', evidence: 'Both governments built arsenals, factories and schools. Resistance came from inside.', source: 'Tanzimat; Self-Strengthening' }
         ]
       },
@@ -568,7 +568,7 @@ window.BEHISTORICAL_TEACHING = {
         columns: [ { name: 'The pressure' }, { name: 'The call' }, { name: 'What happened' } ],
         rows: [
           { label: 'Workers', cells: ['Long hours, low pay, no vote', 'Unions, Charter, parties', 'Unions legal; more men vote'] },
-          { label: 'Thinkers', cells: ['Anger at who held power', 'Socialism, communism', 'Parties, no revolution'] },
+          { label: 'Thinkers', cells: ['Anger at who held power', 'Socialism, communism', 'Parties; no lasting revolution'] },
           { label: 'Reformers', cells: ['Mills, mines, cities', 'Laws, schools, sewers', 'Reform Acts; insurance'] },
           { label: 'Old empires', cells: ['Industrial powers', 'Tanzimat; Self-Strengthening', 'Reform, resisted inside'] }
         ],
@@ -589,7 +589,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'synthesis', kind: 'close-retell', eyebrow: 'AP Synthesis', kc: 'Unit 5: Learning Objective I',
       title: 'Say it in one sentence.',
       template: {
-        frame: 'Hard work and anger led workers to form ___ and ___ to imagine a new society; governments passed ___; and industrial powers pushed old empires to ___, against ___ from inside.',
+        frame: 'Long hours and low pay led workers to form ___, and thinkers like ___ to imagine a new society; governments passed ___; industrial powers pushed old empires to ___, against ___ inside.',
         words: ['modernize', 'unions', 'Marx', 'resistance', 'reforms'],
         prompt: 'Fill it in from memory, then add one example for each part.'
       },

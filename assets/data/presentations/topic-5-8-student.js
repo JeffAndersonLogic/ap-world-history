@@ -88,8 +88,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kc": "KC-5.1.V.A",
       "template": {
         "range": [
-          1795,
-          1875
+          1790,
+          1880
         ],
         "tick": 10,
         "events": [
@@ -111,7 +111,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "year": 1847,
             "label": "1847",
-            "text": "Ten-hour law, in force 1848"
+            "text": "Ten hours for mill women, youths"
           },
           {
             "year": 1868,
@@ -185,7 +185,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
               {
                 "year": 1890,
                 "label": "1890",
-                "text": "SPD: most votes"
+                "text": "Socialists: most votes"
               }
             ]
           },
@@ -195,12 +195,12 @@ window.BEHISTORICAL_STUDENT_DECK = {
               {
                 "year": 1868,
                 "label": "1868",
-                "text": "Unions' congress"
+                "text": "Trades Union Congress"
               },
               {
                 "year": 1900,
                 "label": "1900",
-                "text": "Workers' committee"
+                "text": "Labour committee"
               },
               {
                 "year": 1906,
@@ -229,20 +229,20 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "footer": "Who wrote this, for whom, and what did they want the reader to do?",
       "kc": "KC-5.3.IV.A.ii",
       "template": {
-        "quote": "The history of all hitherto existing society is the history of class struggles.",
+        "quote": "The history of all hitherto existing society is the history of class struggles. ... Society as a whole is more and more splitting up into two great hostile camps ...",
         "attribution": {
           "author": "Karl Marx and Friedrich Engels",
           "work": "Manifesto of the Communist Party, English translation of 1888",
           "year": "1848"
         },
-        "notice": "Marx said industry split society into two classes. Which two?"
+        "notice": "In a factory town, who are the two \"hostile camps\"?"
       }
     },
     {
       "kind": "split-venn",
       "eyebrow": "Thinkers · Two Words",
       "title": "Socialism and communism.",
-      "footer": "By 1900: Marx shaped workers' parties, but no revolution came.",
+      "footer": "By 1900: Marx shaped parties that ran in elections; no workers' revolution won lasting power.",
       "kc": "KC-5.3.IV.A.ii",
       "template": {
         "left": {
@@ -250,14 +250,14 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "items": [
             "Owen's followers, late 1820s",
             "A wide family of ideas",
-            "Many worked through elections"
+            "Change by example or by law"
           ]
         },
         "right": {
           "name": "Marx's communism",
           "items": [
             "Manifesto, 1848",
-            "Workers' revolution",
+            "Workers overthrow owners",
             "A society with no classes"
           ]
         },
@@ -309,7 +309,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "name": "Educational",
             "tool": "Education Acts, 1870, 1880",
-            "result": "children must attend school."
+            "result": "schools; attendance from 1880."
           },
           {
             "name": "Urban",
@@ -317,7 +317,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "result": "waste carried away."
           }
         ],
-        "payoffLabel": "Every reform",
+        "payoffLabel": "These reforms",
         "payoff": "Fix, not overthrow"
       }
     },
@@ -409,8 +409,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "text": "Mahmud II **destroys the Janissaries**."
           },
           {
-            "label": "1839 to 1856",
-            "text": "The **Tanzimat**: equal rights, more factories, telegraph; many Muslims resent equality."
+            "label": "1839 to 1876",
+            "text": "The **Tanzimat**: equal rights promised, factories, telegraph; many Muslims resent equality."
           },
           {
             "label": "1876 to 1878",
@@ -433,7 +433,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Self-Strengthening, and its limits.",
       "kc": "KC-5.1.V.B",
       "template": {
-        "caption": "Li Hongzhang, right, with Ulysses S. Grant, 1879",
+        "caption": "Li Hongzhang, a Self-Strengthening leader, right, with Ulysses S. Grant, 1879",
         "steps": [
           {
             "label": "1860s",
@@ -441,7 +441,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "1867",
-            "text": "Woren opposes Western mathematics; **few top scholars apply**."
+            "text": "Woren, the emperor's tutor, objects; overruled, but **few top scholars apply**."
           },
           {
             "label": "1894 to 1895",
@@ -471,7 +471,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "job": "Reform",
         "left": {
           "tag": "Ottoman",
-          "name": "New Order to Tanzimat",
+          "name": "New Order to constitution",
           "when": "1790s to 1878",
           "text": "Janissaries resist (to 1826); many Muslims resent equality; the sultan shuts parliament."
         },
@@ -499,8 +499,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "myth": "Marx's revolution came in the 1800s.",
-            "evidence": "No communist party ruled a country until the 1900s. By 1900 his ideas lived in parties.",
-            "source": "Erfurt Program, 1891"
+            "evidence": "No communist party ruled a country until the twentieth century. By 1900 his ideas lived in parties.",
+            "source": "Paris Commune, 1871; Erfurt Program, 1891"
           },
           {
             "myth": "China and the Ottoman Empire refused to change.",
@@ -540,7 +540,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "cells": [
               "Anger at who held power",
               "Socialism, communism",
-              "Parties, no revolution"
+              "Parties; no lasting revolution"
             ]
           },
           {
@@ -572,7 +572,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Say it in one sentence.",
       "kc": "Unit 5: Learning Objective I",
       "template": {
-        "frame": "Hard work and anger led workers to form ___ and ___ to imagine a new society; governments passed ___; and industrial powers pushed old empires to ___, against ___ from inside.",
+        "frame": "Long hours and low pay led workers to form ___, and thinkers like ___ to imagine a new society; governments passed ___; industrial powers pushed old empires to ___, against ___ inside.",
         "words": [
           "modernize",
           "unions",
