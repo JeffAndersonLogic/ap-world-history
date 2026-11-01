@@ -1867,182 +1867,250 @@ module.exports = {
   },
   "5.8": {
     "topicKey": "5.8",
-    "topicLabel": "5.8 - Reactions to the Industrial Economy",
+    "topicLabel": "5.8 - Reactions to the Industrial Economy from 1750 to 1900",
     "sourceFile": "first-and-10-topic-5-8-reactions-to-industrial-economy.html",
     "unitDir": "unit-5",
-    "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 5.8 Reactions to the Industrial Economy",
+    "docTitle": "BeHistorical — Module 02 | First &amp; 10 | Topic 5.8 Reactions to the Industrial Economy from 1750 to 1900",
     "moduleBadge": "Module 02",
     "moduleName": "First &amp; 10 Reading",
-    "readingEyebrow": "AP World History · Unit 5: Revolutions · Topic 5.8",
+    "readingEyebrow": "First &amp; 10 Reading",
     "supportHeadings": {
-      "before": "Before You Read",
-      "target": "Reading Target"
+      "before": "The Story to Hold Onto",
+      "target": "Question for Today"
     },
     "showFooter": true,
-    "showFooterNote": true,
-    "headerSubtitle": "Topic 5.8, Reactions to the Industrial Economy &nbsp;|&nbsp; AP World History",
-    "titleHtml": "The <em>Rising</em>",
-    "deck": "How workers organized unions and strikes, abolitionists challenged slavery's connection to industrial capitalism, and reformers transformed education, public health, and social life in the industrial age",
+    "showFooterNote": false,
+    "headerSubtitle": "Topic 5.8, Reactions to the Industrial Economy from 1750 to 1900 &nbsp;|&nbsp; AP World History: Modern",
+    "titleHtml": "Calls for <em>Change</em>",
+    "deck": "Industry made some people rich and left many working long hours for little pay. It also made a few countries strong enough to push the rest of the world around. This reading follows the people who called for change, why they called, and what their calls changed.",
     "skillTags": [
       "Causation",
-      "Comparison",
-      "Argumentation"
+      "Sourcing and Situation"
     ],
     "supportCards": {
-      "beforeYouRead": "Think about what options workers had when they disagreed with their employer's wages or conditions. Could they quit? Organize? Strike? Vote? Consider: what forms of collective action are available to people who have little individual power?",
-      "readingTarget": "Understand how the labor movement built collective power through unions and strikes; how abolitionism connected to industrial capitalism's cotton economy; and how reform movements transformed education, public health, and prison systems as responses to industrialization's social dislocations."
+      "beforeYouRead": "<strong>Workers organized. Thinkers imagined. Governments reformed. Old empires modernized, and met resistance.</strong> As you read, make four rows: workers, thinkers, reformers and governments, and the Ottoman and Qing courts. For each row, write the pressure (the cause), what they wanted, and what happened (the effect).",
+      "readingTarget": "What caused people in industrial societies to call for change between 1750 and 1900, and what did their calls change?"
     },
     "vocabulary": [
-      "trade union",
-      "collective bargaining",
-      "strike",
-      "Luddite",
-      "abolitionism",
-      "temperance",
-      "public health reform",
-      "Great Railroad Strike",
-      "Pullman Strike",
-      "Haymarket affair",
-      "AFL",
-      "scab",
-      "lockout",
-      "labor injunction",
-      "reformism"
+      "Labor Union",
+      "Strike",
+      "Chartists",
+      "Socialism",
+      "Communism",
+      "Reform",
+      "Tanzimat",
+      "Self-Strengthening"
     ],
     "sections": [
       {
-        "number": "01",
-        "label": "Contextualization",
-        "heading": "The World Before Workers Could Organize",
+        "number": "1",
+        "label": "The Pressure",
+        "heading": "One City, Two Pictures",
         "blocks": [
           {
             "type": "p",
-            "html": "In the early decades of industrialization, workers had almost no legal mechanisms to improve their conditions collectively. Trade unions were illegal in Britain under the Combination Acts (1799, 1800), which prohibited workers from organizing to demand higher wages or shorter hours. In the United States, courts routinely ruled that union organizing was a criminal conspiracy in restraint of trade. The legal framework treated the employment relationship as a voluntary contract between free individuals, which meant any collective action by workers to change the terms of that contract was interference with free market principles."
+            "html": "Topic 5.7 ended with a turn: not everyone gained from the new industrial economy, and not everyone accepted it. This reading is about the people who called for change. In every part, look for the same four things: the pressure that pushed people, who called for change, what they wanted, and what actually happened."
           },
           {
             "type": "p",
-            "html": "Factory owners could fire organizers, blacklist workers who had joined unions, and call in police or military when workers struck. The political system offered little alternative: in Britain, working-class men did not have the vote until the Reform Acts of 1867 and 1884; in the United States, while working-class white men had formal voting rights, political machines and corporate interests dominated both parties."
+            "html": "Start with Manchester, England, the great cotton town. In 1845 a young German named Friedrich Engels published a book about the streets where Manchester's mill workers lived. Engels had been sent to Manchester to work in a cotton business his father partly owned. He described crowded houses, filthy streets and a river, the Irk, that was \"coal-black, foul-smelling ... full of debris and refuse.\" He also noticed that the town was built so that \"a person may live in it for years, and go in and out daily without coming into contact with a working people's quarter or even with workers.\""
           },
           {
             "type": "p",
-            "html": "Working-class people in the industrial era thus faced a fundamental question: if individual bargaining gave them no power, and the political system offered little, how could they change their conditions?"
+            "html": "In the early 1850s, Whellan and Company, publishers in Manchester, printed a business directory, a book listing the town's firms and their addresses. It opened with a very different picture: \"the innumerable large mills and factories whose tall chimneys shoot up in every direction, betoken the activity, enterprise, and wealth of its inhabitants.\" Same city, two pictures. Who wrote each one, why, and for whom explains a lot of the difference. Both had something true to say: industry made some people rich and left many working long hours for low pay in crowded, unhealthy towns. Topic 5.9 takes that city apart. This topic is about what people did about it."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Contextualization",
-          "raw": "<p>Contextualization: Explain the legal and political context that workers faced in the early industrial period. How did the existing legal framework, <strong>treating unions as criminal conspiracies and employment as a free contract</strong>, shape what forms of resistance were possible?</p>"
+          "label": "AP Thinking, Sourcing and Situation",
+          "raw": "<p><strong>Ask four questions of any source.</strong> Who made it (point of view)? Why (purpose)? For whom (audience)? When and where (historical situation)? Then say how one of those answers shapes what the source says. A factory owner's directory and a critic's book can describe the same street and both be telling part of the truth.</p>"
         }
       },
       {
-        "number": "02",
-        "label": "Key Concept",
-        "heading": "Trade Unions, Strikes, and Collective Power",
+        "number": "2",
+        "label": "Workers, Part 1",
+        "heading": "At First, a Crime",
         "blocks": [
           {
             "type": "p",
-            "html": "The labor movement built collective power where individuals had none. The <span class=\"kt\">Combination Acts</span> in Britain were repealed in 1824, legalizing trade unions for the first time, though unions remained legally restricted and employers found other ways to suppress them. Craft unions organized skilled workers by trade (carpenters, printers, ironworkers); industrial unions organized all workers in an industry regardless of skill. The <span class=\"kt\">American Federation of Labor</span> (AFL, 1886), led by <span class=\"kt\">Samuel Gompers</span>, focused on \"pure and simple unionism\", collective bargaining for wages, hours, and conditions, without revolutionary politics."
+            "html": "A single worker who asked for more pay could simply be fired. So workers looked for strength in numbers. A <span class=\"kt\">labor union</span> (in Britain, a trade union) is a group of workers who bargain with their employer together, and who can <span class=\"kt\">strike</span>, stopping work together, when bargaining fails."
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Great Railroad Strike of 1877</span> was the first major labor uprising in the United States: railroad workers walked off the job in response to wage cuts, paralyzing rail traffic in multiple states. State militias and federal troops were called in; dozens of workers were killed. The strike was broken but demonstrated both the potential power of organized workers and the government's willingness to use military force against them."
+            "html": "At first, in Britain, this was a crime. The Combination Acts of 1799 and 1800 made it illegal for workers to join together (\"combine\") to demand higher wages or shorter hours. Parliament repealed them in 1824. A law of 1825 then limited what unions could do, but workers could now form them. The risks stayed real. In 1834 six farm laborers from Tolpuddle, a village in Dorset, were sentenced to seven years as convicts in Australia for swearing a secret oath when they formed a union. Huge protests followed, and in 1836 they were pardoned."
           },
           {
             "type": "p",
-            "html": "The <span class=\"kt\">Haymarket affair</span> (Chicago, 1886) began as a strike for the eight-hour workday; after police opened fire on strikers, someone threw a bomb, killing several officers. Eight anarchist leaders were tried and convicted in a proceeding widely seen as unjust, four were hanged. Haymarket traumatized the American labor movement and was used to associate unionism with radicalism for decades."
-          },
-          {
-            "type": "p",
-            "html": "The <span class=\"kt\">Pullman Strike</span> (1894), in which railroad workers nationwide refused to handle Pullman Palace Car Company cars in solidarity with striking Pullman workers, was broken when President Cleveland sent federal troops over the objection of the Illinois governor. The strike's leader, <span class=\"kt\">Eugene Debs</span>, was imprisoned; after his release he became a socialist. By 1900, the labor movement had achieved some gains, shorter hours in some industries, safety regulations, the legal right to organize in most jurisdictions, but remained politically marginalized in the United States while labor and socialist parties were gaining power in Britain and Europe."
+            "html": "Unions grew anyway. Skilled workers built lasting unions for their trades, and in 1868 unions formed a national body, the Trades Union Congress. A law of 1871 gave unions legal standing. Unions fought for what the College Board names: better working conditions, shorter hours and higher wages. After years of campaigning by workers and their allies, Parliament passed a law in 1847 that limited women and young people in textile mills to ten hours of work a day from 1848."
           }
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p>Causation: Explain how the Pullman Strike of 1894 led to Eugene Debs's conversion to socialism. What specific experience, the strike itself, its suppression, or his imprisonment, caused this ideological shift? <strong>What does this causal chain reveal about the relationship between labor repression and the growth of radical politics?</strong></p>"
+          "raw": "<p><strong>Start your first row.</strong> Workers: what was the pressure, what did they want, and what happened? Notice that one effect (the 1824 repeal) became a cause of the next step (unions growing).</p>"
         }
       },
       {
-        "number": "03",
-        "label": "Key Concept",
-        "heading": "Slavery, Cotton, and the Industrial Economy",
+        "number": "3",
+        "label": "Workers, Part 2",
+        "heading": "A Charter and a Party",
         "blocks": [
           {
             "type": "p",
-            "html": "Abolitionism, the movement to end slavery, was one of the most important reform movements of the industrial era, and it had a direct and complicated relationship with industrial capitalism. The <span class=\"kt\">cotton gin</span> (Eli Whitney, 1793) made short-staple cotton profitable, which massively expanded American cotton cultivation, and with it, demand for <span class=\"kt\">enslaved labor</span>. By 1850, cotton was the United States' largest export, providing two-thirds of American export earnings. The textile mills of Lancashire and Lowell ran on American cotton, which meant they ran, indirectly, on enslaved labor. The relationship between British and American industrial capitalism and American slavery was not incidental: it was structural."
+            "html": "Workers also wanted a voice in making the laws. In 1838 a movement of working people called the <span class=\"kt\">Chartists</span> took its name from a People's Charter of six demands. The first was a vote for every man over 21; most of the others aimed to let working men sit in Parliament and vote without fear. More than a million people signed the first Chartist petition in 1839, and the Chartists claimed over three million for the second in 1842. Parliament rejected both, and a third in 1848. On 10 April 1848, a photographer took pictures of a great Chartist meeting on Kennington Common in London, and Prince Albert, Queen Victoria's husband, bought them."
           },
           {
             "type": "p",
-            "html": "British abolitionists in the early 19th century argued against slavery partly on moral grounds (the Evangelical Christian tradition) and partly on free-labor economic grounds (that free labor was more productive than enslaved labor). The <span class=\"kt\">British Empire abolished slavery</span> in 1833 (effective 1838), largely due to abolitionist organizing, the 1831–32 Baptist War rebellion in Jamaica that demonstrated enslaved people's resistance, and a £20 million payment to slaveholders as compensation."
+            "html": "Later in the century, workers built political parties. In Germany, two workers' parties united in 1875. The government banned socialist meetings and newspapers from 1878 to 1890, but the party survived, renamed itself the Social Democratic Party in 1890, and that year won more votes than any other party. In Britain, unions and socialists set up a committee in 1900 to elect working men to Parliament; in 1906 it became the Labour Party. In the United States, the American Federation of Labor, founded in 1886, organized skilled workers for better wages and hours."
           },
           {
             "type": "p",
-            "html": "In the United States, the abolitionist movement intensified through the 1840s–1850s, led by figures including <span class=\"kt\">Frederick Douglass</span> (formerly enslaved, the movement's most powerful public voice), <span class=\"kt\">William Lloyd Garrison</span> (publisher of The Liberator), and Sojourner Truth. The <span class=\"kt\">American Civil War</span> (1861–1865), which ended with the <span class=\"kt\">Thirteenth Amendment</span> abolishing slavery, was, among other things, a conflict between two economic systems: industrial wage labor in the North and slave-based plantation agriculture in the South. The <span class=\"kt\">Cotton Famine</span> (1861–1865), when the Civil War cut off American cotton to British mills, forced the Lancashire textile industry to seek cotton from Egypt and India, restructuring global cotton supply chains in ways that shaped those economies for generations."
+            "html": "Many of these parties wanted more than better pay. They wanted a different kind of society. The College Board calls these \"alternative visions of society.\" Where did those visions come from?"
           }
         ],
         "callout": {
-          "label": "AP Thinking, Comparison",
-          "raw": "<p>Comparison: Compare the British and American abolitionist movements. Both argued against slavery, but they operated in different contexts (a slaveholding empire vs. a slaveholding republic), used different tactics, and achieved abolition through different means. <strong>What does comparing these two movements reveal about the relationship between abolitionism and political power?</strong></p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Effects can be mixed.</strong> The Chartists lost every petition, yet in the decades after, Parliament gave the vote to many working men (Section 5). When you explain an effect, say what changed, and what did not.</p>"
         }
       },
       {
-        "number": "04",
-        "label": "Key Concept",
-        "heading": "Education, Public Health, and the Reform Impulse",
+        "number": "4",
+        "label": "Thinkers",
+        "heading": "Imagining a Different Society",
         "blocks": [
           {
             "type": "p",
-            "html": "Industrialization generated a broad reform impulse that extended beyond labor and abolitionism. <span class=\"kt\">Public education reform</span> produced mandatory schooling laws: Britain's <span class=\"kt\">Education Act 1870</span> (the <span class=\"kt\">Forster Act</span>) established a system of public elementary schools for children who were not served by existing church schools; subsequent legislation made attendance compulsory and free. In the United States, <span class=\"kt\">mandatory schooling</span> laws spread through the states between 1852 (Massachusetts) and 1918, when the last state (Mississippi) required school attendance. The argument for mandatory education combined humanitarian concern (children working in factories rather than learning) with industrial-era economic logic: an industrial economy needed workers who could read instructions, do arithmetic, and follow written rules."
+            "html": "Some people did not want to fix the factory system. They wanted to replace it. In the 1820s and 1830s, followers of Robert Owen, a businessman who had managed the New Lanark cotton mills in Scotland with shorter hours and a school for workers' children, began to call their ideas <span class=\"kt\">socialism</span>: the idea that land, factories and the other things a society uses to make wealth should be owned and run in common, for everyone, and not by private owners for their own profit."
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Edwin Chadwick</span>'s Report on the Sanitary Condition of the Labouring Population (1842) documented the direct connection between poverty, poor sanitation, and disease. The <span class=\"kt\">germ theory</span> of disease (Pasteur and Koch, 1860s–1870s) provided scientific foundation for sanitation reform. London's <span class=\"kt\">Great Stink 1858</span>, when the Thames, used as an open sewer, became so foul that Parliament was nearly unable to function, directly produced investment in Joseph Bazalgette's sewer system. Public sewer systems, clean water supplies, and building codes spread through industrial cities through the latter half of the 19th century, dramatically reducing death rates from cholera, typhoid, and other waterborne diseases."
+            "html": "In February 1848, the same Friedrich Engels and a German writer, Karl Marx, published <em>The Communist Manifesto</em>. Its first section opens:"
+          },
+          {
+            "type": "pull",
+            "html": "\"The history of all hitherto existing society is the history of class struggles.\""
           },
           {
             "type": "p",
-            "html": "<span class=\"kt\">Temperance</span>, the movement to limit or prohibit alcohol consumption, was one of the largest mass movements of the industrial era, especially in the United States. Temperance advocates argued that alcohol destroyed working-class family life and economic stability; the <span class=\"kt\">WCTU</span> (Women's Christian Temperance Union, founded 1874) was the largest women's organization in 19th-century America. The temperance movement reflected the moral reform impulse of the era: industrialization had created social dislocations that seemed to require moral as well as structural responses."
+            "html": "Marx argued that industry was splitting society into two classes: the owners of factories, and the workers, who owned nothing but their ability to work. One day, he predicted, the workers would overthrow the owners, end private ownership of factories and land, and build a society with no classes at all. He called that end point <span class=\"kt\">communism</span>. The <em>Manifesto</em> ends: \"The proletarians have nothing to lose but their chains. They have a world to win. Working Men of All Countries, Unite!\" (Proletarians was Marx's word for wage workers.) Marx later wrote <em>Capital</em> (1867) in London."
+          },
+          {
+            "type": "p",
+            "html": "No revolution like the one Marx predicted happened in an industrial country before 1900. But his ideas spread through workers' parties. In 1891 Germany's Social Democrats adopted a program based on Marx's ideas, while they kept winning votes in elections. In 1889 socialist parties from many countries met in Paris and called on workers in every country to march on May 1, 1890, for an eight-hour working day. Socialists kept marching on May 1 in the years after. Communist governments came later, in the twentieth century."
           }
         ],
         "callout": {
-          "label": "AP Thinking, Argumentation",
-          "raw": "<p>Argumentation: Construct an argument about whether the reform movements of the industrial era (labor unions, abolitionism, public education, public health reform) represented a fundamental challenge to industrial capitalism, or whether they primarily stabilized and strengthened it by managing its worst social consequences. <strong>Use at least two specific reform movements in your argument.</strong></p>"
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Name the cause exactly.</strong> The College Board says \"discontent with established power structures\" encouraged these ideas: anger at who held power, not only at low wages. Fill in your thinkers row: what pressure, what they wanted, and what their ideas did by 1900.</p>"
+        }
+      },
+      {
+        "number": "5",
+        "label": "Reformers and Governments",
+        "heading": "Fixing the Worst of It",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Not every call for change came from workers. The College Board names three kinds of reformers, \"governments, organizations, and individuals,\" and four kinds of <span class=\"kt\">reform</span>, a change to a law or a system to fix a problem without overthrowing it. Britain had all four:"
+          },
+          {
+            "type": "p",
+            "html": "<strong>Political.</strong> Reform Acts in 1867 and 1884 gave the vote to many working men. No woman could vote in a British national election until 1918. <strong>Social.</strong> A Factory Act of 1833 banned children under nine from working in textile mills and sent inspectors to check, and a law of 1842 stopped women, girls and boys under ten from working inside mines. <strong>Educational.</strong> An Education Act of 1870 set up public elementary schools where church schools were not enough, and from 1880 children had to attend. <strong>Urban.</strong> In the hot summer of 1858 the River Thames, which carried London's sewage, smelled so foul that it was called the \"Great Stink.\" London then built a huge system of new sewers to carry the waste away from the city."
+          },
+          {
+            "type": "p",
+            "html": "Sometimes a government reformed to defeat its critics. In Germany, Chancellor Otto von Bismarck banned the socialists in 1878, and then gave workers health insurance (1883), insurance for injuries at work (1884) and pensions for old age and disability (1889). He hoped, in part, to win workers away from the socialists. Reform could answer workers, and also be a weapon against their parties."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>One cause, several effects.</strong> Workers' pressure helped cause reforms, and reforms changed what workers fought for next. In your reformers row, name one reform of each kind you can, and say who pushed it.</p>"
+        }
+      },
+      {
+        "number": "6",
+        "label": "Old Empires, Part 1",
+        "heading": "A Different Pressure: The Ottoman Empire",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Outside Europe, the pressure was different. The Ottoman Empire and Qing China had few factories of their own. Their pressure came from the industrial powers: their armies, warships and trade. Like Egypt and Japan in Topic 5.6, both governments tried to reform and modernize their economies and armies. Both met resistance from people inside their own governments and elites."
+          },
+          {
+            "type": "p",
+            "html": "In the 1790s the Ottoman Sultan Selim III built a new army in European-style uniforms, with imported rifles and French instructors, called the \"New Order.\" The Janissaries, the empire's old army corps, saw it as a threat, and many conservative religious scholars sided with them. In 1807 a revolt overthrew Selim. In June 1826 Sultan Mahmud II destroyed the Janissaries and built a new army."
+          },
+          {
+            "type": "p",
+            "html": "In 1839 the government announced a program of reforms called the <span class=\"kt\">Tanzimat</span>, Turkish for \"reorganization.\" It promised all subjects safety for their lives, honor and property, fair taxes and a regular system of military service. A decree in 1856 promised equal treatment to Christians and Jews as well as Muslims. The state built factories, such as a fez factory in Istanbul (1835) with machines from Britain and Belgium, and telegraph lines (from 1855). Many Muslims resented the 1856 promise of equality, because it ended their place as the empire's ruling community. In 1876 the empire got a constitution and an elected parliament. Two years later the new sultan, Abdulhamid II, shut the parliament down."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Same pattern, different cause.</strong> In your fourth row, the pressure is not factory conditions at home but the power of the industrial states. Then look for the College Board's last sentence: reforms were \"often resisted by some members of government or established elite groups.\" Who resisted here?</p>"
+        }
+      },
+      {
+        "number": "7",
+        "label": "Old Empires, Part 2",
+        "heading": "Self-Strengthening in Qing China",
+        "blocks": [
+          {
+            "type": "p",
+            "html": "Qing China was defeated by Britain in the Opium War of 1839 to 1842, and by Britain and France again from 1856 to 1860 (Unit 6), while a huge civil war, the Taiping Rebellion, tore through the country. From the 1860s, officials such as Zeng Guofan and Li Hongzhang led what was called <span class=\"kt\">Self-Strengthening</span>: learning Western ways of making weapons and ships while keeping China's own system of rule. They built the Jiangnan Arsenal in Shanghai (1865) and a navy yard at Fuzhou (1866), opened a school for foreign languages in Beijing (1862), and started a Chinese steamship company (1872)."
+          },
+          {
+            "type": "p",
+            "html": "Resistance came from inside. In 1867, when the court planned to teach Western astronomy and mathematics at the language school, Woren, a senior official and the young emperor's tutor, objected: \"establishing a country rests on valuing propriety and righteousness, not on schemes and stratagems.\" The court overruled him and the plan went ahead, but few of the well-educated young officials it hoped for applied. In 1894 and 1895 Japan defeated China's new navy. In 1898 the young Guangxu Emperor ordered sweeping reforms for about a hundred days, until the Empress Dowager Cixi and officials who opposed the reforms stopped them, kept the emperor under guard, and had six reformers executed."
+          },
+          {
+            "type": "p",
+            "html": "Put the four rows together. Industrial capitalism and discontent with who held power caused workers to organize unions and parties and thinkers such as Marx to imagine a different society, and those calls pushed governments, organizations and individuals into reforms. By 1900 many men could vote, children worked less and went to school more, and socialist parties were among the largest in Europe, but many workers stayed poor and no woman could vote. The power of the industrial states caused the Ottoman and Qing governments to modernize, but resistance from inside slowed or reversed the deepest changes."
+          },
+          {
+            "type": "p",
+            "html": "Industry had changed who worked, where people lived and how families got by. What kind of society did it leave behind? That is Topic 5.9."
+          }
+        ],
+        "callout": {
+          "label": "AP Thinking, Causation",
+          "raw": "<p><strong>Three myths to drop.</strong> \"Marx's communism was tried in the 1800s\": no communist government existed until the twentieth century. \"Unions were legal once the 1824 law passed\": an 1825 law limited them, and full legal standing came in 1871. \"China and the Ottoman Empire refused to change\": both governments tried to modernize; the reforms were resisted from inside.</p>"
         }
       }
     ],
-    "takeaway": "Workers built collective power through trade unions and strikes, achieving some reforms while facing violent repression (Haymarket, Pullman); abolitionism challenged slavery's structural connection to the industrial cotton economy and achieved legal abolition in Britain (1833) and the United States (1865); and reform movements transformed education, public health, and social life, partly from humanitarian concern and partly because industrial capitalism required healthy, literate, orderly workers.",
+    "takeaway": "Industrial capitalism made some people rich and left many working long hours for low pay, and workers called for change. In Britain, unions were banned until 1824, grew through the century, and gained legal standing in 1871; the Chartists demanded the vote for working men from 1838; and workers' parties rose in Germany (the Social Democrats, banned from 1878 to 1890) and Britain (the Labour Party, 1900 to 1906). Discontent with who held power encouraged new ideas: socialism, and the communism of Karl Marx and Friedrich Engels, whose Communist Manifesto appeared in 1848. Governments, organizations and individuals pushed reforms of four kinds: political (the Reform Acts of 1867 and 1884), social (the Factory Act of 1833), educational (the Education Act of 1870) and urban (London's sewers after 1858), and Bismarck gave German workers insurance partly to weaken the socialists. Outside Europe, the power of the industrial states pushed the Ottoman Empire (the Tanzimat, from 1839) and Qing China (Self-Strengthening, from the 1860s) to modernize their armies and economies, against resistance from their own elites. Workers organized. Thinkers imagined. Governments reformed. Old empires modernized, and met resistance.",
     "checkBadge": "Check Your Thinking",
-    "checkTitle": "Three Questions, Three AP Skills",
+    "checkTitle": "Three Questions, Supported Answers Only",
     "questions": [
       {
-        "num": "Q1",
+        "num": "01",
         "skill": "Causation",
-        "text": "Explain how the violent suppression of the Pullman Strike of 1894 (federal troops dispatched, Eugene Debs imprisoned) caused the growth of the American socialist movement. What specific mechanism connected government repression to the radicalization of American labor activists?",
-        "placeholder": "Explain the specific mechanism connecting repression to radicalization..."
+        "text": "Using Sections 2 and 3, explain ONE cause that led British or German workers to organize, and ONE effect of their organizing: something they won, or something they failed to win. Use a detail from the reading for each.",
+        "placeholder": "Workers organized because... One effect was..."
       },
       {
-        "num": "Q2",
-        "skill": "Comparison",
-        "text": "Compare the abolitionist movement and the labor movement as responses to industrial capitalism. Both challenged specific features of the industrial economy, but they targeted different victims and used different tactics. What does comparing these two movements reveal about the political possibilities and limits of reform in the industrial era?",
-        "placeholder": "Identify similarities and differences, then explain what the comparison reveals..."
+        "num": "02",
+        "skill": "Sourcing and Situation",
+        "text": "Using Section 1 or Section 4, choose Engels's description of Manchester or Marx and Engels's Communist Manifesto. Explain how the author's point of view or purpose helps explain what the source says.",
+        "placeholder": "Engels (or Marx) was... He wrote this to... That helps explain why the source says..."
       },
       {
-        "num": "Q3",
-        "skill": "Argumentation",
-        "text": "Construct an argument about whether the reform movements of the industrial era (choose at least two: labor unions, abolitionism, public education, public health reform, temperance) challenged industrial capitalism or stabilized it. Use specific evidence from at least two reforms to support your claim.",
-        "placeholder": "State your claim and support it with specific evidence from at least two reforms..."
+        "num": "03",
+        "skill": "Causation",
+        "text": "Using Sections 6 and 7, explain why the Ottoman or Qing government tried to modernize, and name ONE person or group who resisted the reforms. Use a detail from the reading for each.",
+        "placeholder": "The Ottoman (or Qing) government tried to modernize because... One group that resisted was..."
       }
     ],
-    "builderBody": "Build a prompt to share your thinking with your AI Coach. The coach will give you feedback on your historical reasoning, suggest stronger evidence, and push your analysis deeper.",
     "submitNote": "Organize your thinking here, submit your final work in Canvas.",
-    "footerNote": "Topic 5.8, Reactions to the Industrial Economy",
+    "footerNote": "",
     "navPrev": {
       "href": "#",
-      "label": "← Map &amp; Geography"
+      "label": "&#8592; Map &amp; Geography"
     },
     "navNext": {
       "href": "#",
-      "label": "Content Delivery →"
+      "label": "Content Delivery &#8594;"
     },
     "lessonFile": "",
-    "padQuestionNumbers": false,
+    "padQuestionNumbers": true
   },
   "5.9": {
     "topicKey": "5.9",
