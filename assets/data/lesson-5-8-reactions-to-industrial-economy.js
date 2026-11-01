@@ -116,7 +116,7 @@ window.BEHISTORICAL_LESSON = {
 
   lecture: {
     title: "Calls for Change",
-    intro: "Use these cards to build four rows: workers, thinkers, reformers and governments, and the Ottoman and Qing courts. For each row, find the pressure that pushed people (the cause), what they wanted, and what happened (the effect).",
+    intro: "On notebook paper, draw four rows: workers, thinkers, reformers and governments, and the Ottoman and Qing courts. For each row, find the pressure that pushed people (the cause), what they wanted, and what happened (the effect).",
     videos: [],
     segments: [
       {
@@ -155,10 +155,10 @@ window.BEHISTORICAL_LESSON = {
         title: "Reformers and Governments",
         bullets: [
           "**Three kinds of reformers:** the College Board names \"governments, organizations, and individuals.\" A reform changes a law or a system to fix a problem without overthrowing it.",
-          "**Political:** Britain's Reform Acts of 1867 and 1884 gave the vote to many working men. No woman could vote in a British national election until 1918.",
-          "**Social:** the Factory Act of 1833 banned children under nine from textile mills and sent inspectors to check; a law of 1842 stopped women, girls, and boys under ten from working inside mines.",
-          "**Educational:** the Education Act of 1870 set up public elementary schools where church schools were not enough; from 1880 children had to attend.",
-          "**Urban:** in the hot summer of 1858 the River Thames, which carried London's sewage, smelled so foul it was called the \"Great Stink.\" London then built a huge system of new sewers to carry the waste away from the city (Topic 5.9 has the city's problems).",
+          "**Political:** after a workers' organization, the Reform League, held huge meetings for the vote, Britain's Reform Acts of 1867 and 1884 gave the vote to many working men. No woman could vote in a British national election until 1918.",
+          "**Social:** the Factory Act of 1833 banned children under nine from textile mills and sent inspectors to check; a law of 1842, brought in by Lord Ashley, a member of Parliament, stopped women, girls, and boys under ten from working inside mines.",
+          "**Educational:** the Education Act of 1870, written by a government minister, William Forster, after a campaign by the National Education League, set up public elementary schools where church schools were not enough; from 1880 children had to attend.",
+          "**Urban:** in the hot summer of 1858 the River Thames, which carried London's sewage, smelled so foul it was called the \"Great Stink.\" London's city government then had its engineer, Joseph Bazalgette, build a huge system of new sewers to carry the waste away (Topic 5.9 has the city's problems).",
           "**A government reforms to defeat its critics:** Germany's chancellor, Otto von Bismarck, banned the socialists in 1878, then gave workers health insurance (1883), insurance for injuries at work (1884), and pensions for old age and disability (1889), hoping in part to win workers away from the socialists."
         ],
         image: {
@@ -173,7 +173,7 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "**A different pressure:** the Ottoman Empire and Qing China had few factories of their own. Their pressure came from the industrial powers' armies, warships, and trade. Like Egypt and Japan in Topic 5.6, both governments tried to modernize, and both met resistance from inside.",
           "**The Ottoman Empire:** in the 1790s Sultan Selim III built a European-style army, the \"New Order\"; the Janissaries, the old army corps, and conservative religious scholars opposed it, and a revolt overthrew him in 1807. In June 1826 Sultan Mahmud II destroyed the Janissaries.",
-          "**The Tanzimat:** from 1839 the government promised all subjects safety of life, honor, and property, fair taxes, and regular military service; a decree of 1856 promised equal treatment to Christians and Jews. It built factories, such as a fez factory in Istanbul (1835), and telegraph lines (from 1855). Many Muslims resented the 1856 promise of equality. A constitution and parliament came in 1876; in 1878 Sultan Abdulhamid II shut the parliament down.",
+          "**The Tanzimat:** from 1839 the government promised all subjects safety of life, honor, and property, fair taxes, and regular military service; a decree of 1856 promised equal treatment to Christians and Jews. Even before 1839 the state had set up a fez factory in Istanbul (1835); afterward it added more factories and, from 1855, telegraph lines. Many Muslims resented the 1856 promise of equality. A constitution and parliament came in 1876; in 1878 Sultan Abdulhamid II shut the parliament down.",
           "**Qing China:** after defeats in the Opium Wars (Unit 6) and the Taiping Rebellion, officials such as Zeng Guofan and Li Hongzhang led Self-Strengthening from the 1860s: the Jiangnan Arsenal in Shanghai (1865), a navy yard at Fuzhou (1866), a school for foreign languages in Beijing (1862), and a steamship company (1872).",
           "**Resistance in China:** in 1867 Woren, a senior official and the emperor's tutor, opposed teaching Western mathematics at the language school. Japan defeated China's new navy in 1894 and 1895. In 1898 the Guangxu Emperor's hundred days of reforms were stopped by the Empress Dowager Cixi and officials who opposed them; six reformers were executed."
         ],
@@ -193,7 +193,7 @@ window.BEHISTORICAL_LESSON = {
     sourceUrl: "../assets/images/instructional-maps/topic-5-8.svg",
     caption: "A BeHistorical map of the places in this lesson: Britain and Germany, where workers organized and governments reformed, and the Ottoman Empire and Qing China, whose governments tried to modernize under pressure from industrial powers.",
     intro: "Find Britain and Germany first, then the Ottoman Empire and Qing China. Read the key for each shaded area, then follow the two numbered arrows, which show pressure on China from outside.",
-    prompt: "Using the map and its key, choose one place in Europe and one outside Europe. For each, say who called for change there, what the pressure was, and one date from the key."
+    prompt: "Using the map and its key, choose one place in Western Europe (Britain or Germany) and one in Asia (the Ottoman Empire or Qing China). For each, say who called for change there and what they did or wanted, with one date from the key. Then use arrow 1 or 2 to say what pressured China."
   },
 
   deepReading: {

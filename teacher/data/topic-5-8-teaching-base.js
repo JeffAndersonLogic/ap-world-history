@@ -192,14 +192,13 @@ window.BEHISTORICAL_TEACHING = {
     {
       phase: 'pressure', kind: 'split-mirror', eyebrow: 'The Pressure · Sourcing',
       title: 'One city, two pictures.',
-      footer: 'Same city. Who wrote each, why and for whom explains much of the difference.',
+      footer: 'Same city. Before you judge either one, ask: who wrote it, why, and for whom?',
       template: {
         left: { name: 'Engels, 1845' },
         right: { name: 'A directory, early 1850s' },
         rows: [
-          { label: 'Who', left: 'A young German sent to work in his father\'s cotton business', right: 'Whellan and Company, Manchester publishers' },
-          { label: 'Says', left: 'A "coal-black, foul-smelling" river; workers\' streets hidden', right: 'Tall chimneys that show "enterprise, and wealth"' },
-          { label: 'For whom', left: 'Readers in Germany, in German', right: 'Merchants and visitors who bought the book' }
+          { label: 'Says', left: 'A "coal-black, foul-smelling" river; workers\' streets hidden from the well-off', right: 'Tall chimneys that show "activity, enterprise, and wealth"' },
+          { label: 'Ask', left: 'Who was Engels? Who read his book?', right: 'Who made a directory? Who bought it?' }
         ]
       },
       notes: {
@@ -210,8 +209,8 @@ window.BEHISTORICAL_TEACHING = {
           'The directory: A New Alphabetical and Classified Directory of Manchester and Salford, W. Whellan and Co., copy dated 1853, from its opening chapter, "Sketches of Manchester and its Vicinity." The CED calls it the 1852 directory\'s preface; the readable copy is dated 1853, and its preface itself does not describe the town.',
           'Do not let students call one "true" and one "false." Both are telling part of the truth; the skill is explaining why each tells the part it tells.'
         ],
-        ask: 'Why would a business directory leave out the river Engels describes?',
-        listenFor: 'It wanted to sell the book and show the town at its best; its readers were businessmen.',
+        ask: 'What would you need to know about each writer before you trusted it?',
+        listenFor: 'Who they were, why they wrote, and who would read it. Hold the answers for the Skill Builder (slide 15).',
         ap: 'Sourcing and Situation 2.B (point of view, purpose, audience); the cause of the calls for change.'
       }
     },
@@ -246,14 +245,14 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'charter', kind: 'story-scene', eyebrow: 'Workers · A Movement for the Vote', kc: 'KC-5.1.V.A',
-      title: 'The Charter: lost every time, won in the end.',
+      title: 'The Charter: lost at the time, won later.',
       template: {
         caption: 'The Chartists\' convention, London, 1839',
         steps: [
           { label: '1838', text: 'A People\'s Charter: **a vote for every man over 21**, and five more demands.' },
           { label: '1839, 1842', text: 'Petitions of **over a million**, and a claimed **three million**: rejected.' },
           { label: '1848', text: 'A great meeting at **Kennington Common**; a third petition, rejected.' },
-          { label: 'Later', key: true, text: '**Most of the six points became law**, 1858 to 1911.' }
+          { label: 'Later', key: true, text: '**Five of the six points became law**, 1858 to 1918.' }
         ]
       },
       notes: {
@@ -261,7 +260,7 @@ window.BEHISTORICAL_TEACHING = {
         land: [
           'The six points (London Museum): a vote for every man over 21, equal districts, no property requirement for members of Parliament, a Parliament elected every year, the secret ballot, and pay for members.',
           'The first petition (1839) had over 1.2 million signatures; the Chartists\' own newspaper, the Northern Star, counted about 3.3 million for the 1842 petition. All three were rejected.',
-          'Later: the property requirement went in 1858; the vote reached many working men in 1867 and 1884; the secret ballot came in 1872; districts were redrawn closer to equal in 1885; members were paid from 1911. A Parliament every year never came.',
+          'Later: the property requirement went in 1858; the vote reached many working men in 1867 and 1884, and every man over 21 in 1918; the secret ballot came in 1872; districts were redrawn closer to equal in 1885; members were paid from 1911. A Parliament every year never came.',
           'The picture is an etching of the National Convention "as it met on Monday the 4th of February, 1839, at the British Coffee House," Library of Congress; someone has written "Chartist meeting" on it.'
         ],
         ask: 'Did the Chartists fail?',
@@ -270,8 +269,8 @@ window.BEHISTORICAL_TEACHING = {
       }
     },
     {
-      phase: 'parties', kind: 'timeline-lanes', eyebrow: 'Workers · Parties in Different Countries', kc: 'KC-5.1.V.A',
-      title: 'Workers build parties.',
+      phase: 'parties', kind: 'timeline-lanes', eyebrow: 'Workers · In Different Countries', kc: 'KC-5.1.V.A',
+      title: 'Unions and parties spread.',
       footer: 'Many wanted more than pay: "alternative visions of society."',
       template: {
         range: [1860, 1910],
@@ -302,7 +301,7 @@ window.BEHISTORICAL_TEACHING = {
       template: {
         quote: 'The history of all hitherto existing society is the history of class struggles.',
         attribution: { author: 'Karl Marx and Friedrich Engels', work: 'Manifesto of the Communist Party, English translation of 1888', year: '1848' },
-        notice: 'Which two classes did Marx see in Manchester\'s streets?'
+        notice: 'Marx said industry split society into two classes. Which two?'
       },
       notes: {
         minutes: 2,
@@ -404,7 +403,7 @@ window.BEHISTORICAL_TEACHING = {
     },
     {
       phase: 'bismarck', kind: 'cause-chain', eyebrow: 'Reformers · A Government Reforms', kc: 'KC-5.1.V.D',
-      title: 'Ban the party, then insure its voters.',
+      title: 'Ban the meetings, then insure the workers.',
       footer: 'Reform could answer workers, and also be a weapon against their party.',
       template: {
         steps: [
@@ -413,7 +412,7 @@ window.BEHISTORICAL_TEACHING = {
           { label: '1883 to 1889', text: 'Health, accident and old-age insurance laws', key: true },
           { label: 'The aim', text: 'Win workers away from the socialists, in part' }
         ],
-        links: ['so', 'then', 'to']
+        links: ['then', 'then', 'to']
       },
       notes: {
         minutes: 2,
@@ -475,7 +474,7 @@ window.BEHISTORICAL_TEACHING = {
         steps: [
           { label: '1790s to 1807', text: 'Selim III\'s **New Order** army; Janissaries and scholars oppose; **a revolt overthrows him**.' },
           { label: '1826', text: 'Mahmud II **destroys the Janissaries**.' },
-          { label: '1839 to 1856', text: 'The **Tanzimat**: equal rights, factories, telegraph; many Muslims resent equality.' },
+          { label: '1839 to 1856', text: 'The **Tanzimat**: equal rights, more factories, telegraph; many Muslims resent equality.' },
           { label: '1876 to 1878', key: true, text: 'A constitution and parliament; **Abdulhamid II shuts it down**.' }
         ]
       },
@@ -523,8 +522,8 @@ window.BEHISTORICAL_TEACHING = {
       title: 'Same pressure, two empires.',
       template: {
         job: 'Reform',
-        left: { tag: 'Ottoman', name: 'Tanzimat', when: '1839 to 1876', text: 'Equal rights, factories, telegraph; resisted by Janissaries, scholars, the sultan.' },
-        right: { tag: 'Qing', name: 'Self-Strengthening', when: '1860s to 1895', text: 'Arsenals, navy, language school; resisted by Woren, then Cixi.' },
+        left: { tag: 'Ottoman', name: 'New Order to Tanzimat', when: '1790s to 1878', text: 'Janissaries resist (to 1826); many Muslims resent equality; the sultan shuts parliament.' },
+        right: { tag: 'Qing', name: 'Self-Strengthening', when: '1860s to 1898', text: 'Woren objects (1867); Cixi stops the reforms of 1898.' },
         claimLabel: 'Compare',
         claim: 'Different empires, **shared cause and limit**: pressure from industrial powers pushed both to reform, and people inside resisted.'
       },
@@ -565,16 +564,15 @@ window.BEHISTORICAL_TEACHING = {
       retelling: true,
       phase: 'retell', kind: 'split-matrix', eyebrow: 'The Whole Topic',
       title: 'Four rows, one story.',
-      footer: 'Workers organized. Thinkers imagined. Governments reformed. Old empires modernized, and met resistance.',
       template: {
         columns: [ { name: 'The pressure' }, { name: 'The call' }, { name: 'What happened' } ],
         rows: [
-          { label: 'Workers', cells: ['Long hours, low pay, no vote', 'Unions, the Charter, parties', 'Legal unions by 1871; vote for many men'] },
-          { label: 'Thinkers', cells: ['Anger at who held power', 'Socialism; Marx\'s communism', 'Shaped parties; no revolution by 1900'] },
-          { label: 'Reformers', cells: ['Mills, mines, crowded cities', 'Laws on votes, work, schools, sewers', 'Reforms in Britain; insurance in Germany'] },
-          { label: 'Old empires', cells: ['Industrial powers\' guns and trade', 'Tanzimat; Self-Strengthening', 'Arsenals and reforms, resisted from inside'] }
+          { label: 'Workers', cells: ['Long hours, low pay, no vote', 'Unions, Charter, parties', 'Unions legal; more men vote'] },
+          { label: 'Thinkers', cells: ['Anger at who held power', 'Socialism, communism', 'Parties, no revolution'] },
+          { label: 'Reformers', cells: ['Mills, mines, cities', 'Laws, schools, sewers', 'Reform Acts; insurance'] },
+          { label: 'Old empires', cells: ['Industrial powers', 'Tanzimat; Self-Strengthening', 'Reform, resisted inside'] }
         ],
-        result: { label: 'Connect', text: 'Pick one row. Say the cause, the call and the effect in one sentence.' }
+        result: { label: 'Connect', text: 'Say one row as a cause, a call and an effect.' }
       },
       notes: {
         minutes: 3,
@@ -591,7 +589,7 @@ window.BEHISTORICAL_TEACHING = {
       phase: 'synthesis', kind: 'close-retell', eyebrow: 'AP Synthesis', kc: 'Unit 5: Learning Objective I',
       title: 'Say it in one sentence.',
       template: {
-        frame: 'Long hours and anger at who held power led workers to form ___ and thinkers like ___ to imagine a new society; governments passed ___; and pressure from industrial powers pushed the Ottoman and Qing courts to ___, against ___ from inside.',
+        frame: 'Hard work and anger led workers to form ___ and ___ to imagine a new society; governments passed ___; and industrial powers pushed old empires to ___, against ___ from inside.',
         words: ['modernize', 'unions', 'Marx', 'resistance', 'reforms'],
         prompt: 'Fill it in from memory, then add one example for each part.'
       },

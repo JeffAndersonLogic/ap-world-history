@@ -340,3 +340,78 @@ in the notes only); slide 13's payoff ran off the board ("Fix, not overthrow," w
 Packet: `capture-topic-for-review.js 5.8` (brand fonts, 25 teacher slides). Two fresh reviewers,
 launched together: page truth, readability, CED and ownership on the cheaper model; history on the
 default model.
+
+**Browser suite, before pass 1's fixes (brand fonts):** `slide-templates.browser.test.js` failed on
+four 5.8 slides: slide 8's overlapping lane labels and slide 13's payoff (both already fixed from the
+builder's read, so the established check caught the same defects independently), slide 21's table
+spilling into its title, and slide 22's sentence frame spilling. **Fixed:** shorter cells and no footer on
+21 (the wall line stays in the notes and on slide 25); a shorter frame on 22. After pass 1's deck edits
+slide 8's longer title wrapped into its lanes (23 px); fixed with "Unions and parties spread." The suite
+then passed, 71 assertions.
+
+**Page truth reviewer: 15 findings; 12 supported and fixed, 1 rejected, 2 logged as adjacent
+findings.** CED wording, objective, reasoning process, skill, checkpoint targets and story-map
+ownership: no findings.
+
+1. Slide 9's notice asked which classes "Marx" saw "in Manchester's streets," which the slide does not
+   show and the course attributes to Engels. **Fixed:** "Marx said industry split society into two
+   classes. Which two?" (the First & 10, section 4, gives them).
+2. Slide 19 named the Janissaries as resisting the Tanzimat (they were destroyed in 1826) and Cixi as
+   resisting Self-Strengthening "1860s to 1895" (her coup was in 1898). **Fixed:** "New Order to
+   Tanzimat, 1790s to 1878: Janissaries resist (to 1826); many Muslims resent equality; the sultan shuts
+   parliament"; "Self-Strengthening, 1860s to 1898: Woren objects (1867); Cixi stops the reforms of 1898."
+3. Slide 7 "won in the end ... most of the six points became law, 1858 to 1911": the first point, a vote
+   for every man over 21, came only in 1918. **Fixed:** "lost at the time, won later"; "five of the six
+   points became law, 1858 to 1918" (the National Archives' "five out of six of them eventually become
+   law"; the Representation of the People Act 1918 for men over 21); the same in the notes, the deep
+   reading and the First & 10 callout.
+4. Slide 5 and the First & 10 answered the Skill Builder before students did it (who, for whom, and the
+   verdict "both had something true to say"). **Fixed:** slide 5 keeps only what each source says and
+   asks who wrote it and for whom; the First & 10 now says "Which is more accurate? You will decide in the
+   Skill Builder." The writers' backgrounds stay in the reading as context, which the Skill Builder's own
+   prompt also gives.
+5. The map question asked for "the pressure" in places where the key names none, and "in Europe /
+   outside Europe" was ambiguous for the Ottoman Empire. **Fixed:** "one place in Western Europe (Britain
+   or Germany) and one in Asia (the Ottoman Empire or Qing China) ... who called for change there and what
+   they did or wanted ... Then use arrow 1 or 2 to say what pressured China."
+6. The criterion and Checkpoint 2 ask who pushed a reform (a government, an organization or individuals),
+   but no student surface named one. **Fixed** in the First & 10, lecture card 3 and the deep reading:
+   the Reform League's meetings before the 1867 act (an organization); Lord Ashley, who moved the 1842
+   Mines Act in the Commons (an individual; Hansard, 7 June 1842); William Forster, the minister who wrote
+   the 1870 act after a campaign by the National Education League (a government and an organization);
+   London's city government and its engineer, Joseph Bazalgette (a government). New rows below.
+7. "The Tanzimat ... built factories, such as a fez factory (1835)" put an 1835 factory inside a program
+   that began in 1839. **Fixed** in the First & 10, lecture card 4, slide 17 and the deep reading: "even
+   before the Tanzimat, in 1835 ...; after 1839 it added more factories."
+8. Slide 8's title "Workers build parties" over the Trades Union Congress and the AFL, which are unions.
+   **Fixed:** "Unions and parties spread."
+9. "Make four rows" gave no place to make them. **Fixed:** "draw four rows on notebook paper" (First &
+   10 support card, lecture intro).
+10. The Convention etching's prompt assumed the Chartists made it and it was sold, which the caption does
+    not say. **Fixed:** "INFER what impression of the convention this picture gives. The caption does not
+    say who made it or for whom: what can you not know ..."
+11. The Skill Builder's fourth step asked for an accuracy judgment "using the frame," which has no slot
+    for one. **Fixed:** "say which description you think is more accurate about the lives of Manchester's
+    workers, and what other evidence would help you check" (prompt and checklist).
+12. Slides 21 and 22 print a near-finished answer to Checkpoint 2's step 5. **Rejected:** the retelling
+    table and the synthesis sentence are required functions of every deck (`docs/PRESENTATION-AUTHORING.md`
+    sections 7 and 9), slide 22 is a recall exercise with a word bank, and step 5 asks for one row in the
+    student's own sentence with a named cause, call and effect.
+13. Slide 14's "Ban the party" overstated a ban on meetings and newspapers, and its "so" made the 1875
+    union the cause of the 1878 law. **Fixed:** "Ban the meetings, then insure the workers"; the links read
+    "then, then, to."
+14. Key Concept codes print in capitals ("KC-5.3.IV.A.II") in slide bands and the target cards.
+    **Adjacent finding** (course-wide display style; every topic): reported, not fixed here.
+15. The 5.9 First & 10 calls "sanitation laws, public health measures, and housing rules" "the story of
+    Topic 5.8." **Adjacent finding** for the 5.9 build: 5.8 teaches one urban reform (London's sewers) and
+    leaves the city's crisis to 5.9.
+
+**New claim rows from pass 1 (page truth):**
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| The Reform League, a workers' organization, held huge meetings for the vote (Hyde Park, 1866 and 1867) before the 1867 act | F10, LD lecture card 3, DR | Reform League (founded 1865 for manhood suffrage and the ballot; Hyde Park, July 1866 and 6 May 1867), as returned by search from Wikipedia and Spartacus; Minnesota State University, "Popular Agitation and British Parliamentary Reform, 1866-1867" (the 1867 demonstration "a major role in forcing parliament"). The course says "after," not "caused" | VERIFIED |
+| Lord Ashley, a member of Parliament, brought in the 1842 Mines Act, after a government inquiry into children's work in mines | F10, LD, DR | Hansard, 7 June 1842: "Lord Ashley rose to move for leave to bring in the bill"; the 1842 Children's Employment Commission report (National Coal Mining Museum and UK Parliament pages, as returned by search) | VERIFIED |
+| William Forster, a government minister, wrote the 1870 Education Act, after a campaign by the National Education League | F10, LD, DR | UK Parliament, "The 1870 Education Act," and Wikipedia, as returned by search ("drafted by William Forster ... introduced on 17 February 1870 after campaigning by the National Education League"; Forster Vice-President of the Council under Gladstone) | VERIFIED |
+| London's city government had its engineer, Joseph Bazalgette, build the sewers | F10, LD | London Museum (Bazalgette's plan); Bazalgette was chief engineer of the Metropolitan Board of Works | VERIFIED |
+| Five of the Chartists' six points became law, 1858 to 1918; every man over 21 got the vote in 1918 | Deck slide 7, DR, F10 callout | The National Archives podcast ("five out of six of them eventually become law"); Gale; the Representation of the People Act 1918 | VERIFIED (was "most ... 1858 to 1911") |

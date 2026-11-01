@@ -58,7 +58,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "split-mirror",
       "eyebrow": "The Pressure · Sourcing",
       "title": "One city, two pictures.",
-      "footer": "Same city. Who wrote each, why and for whom explains much of the difference.",
+      "footer": "Same city. Before you judge either one, ask: who wrote it, why, and for whom?",
       "template": {
         "left": {
           "name": "Engels, 1845"
@@ -68,19 +68,14 @@ window.BEHISTORICAL_STUDENT_DECK = {
         },
         "rows": [
           {
-            "label": "Who",
-            "left": "A young German sent to work in his father's cotton business",
-            "right": "Whellan and Company, Manchester publishers"
-          },
-          {
             "label": "Says",
-            "left": "A \"coal-black, foul-smelling\" river; workers' streets hidden",
-            "right": "Tall chimneys that show \"enterprise, and wealth\""
+            "left": "A \"coal-black, foul-smelling\" river; workers' streets hidden from the well-off",
+            "right": "Tall chimneys that show \"activity, enterprise, and wealth\""
           },
           {
-            "label": "For whom",
-            "left": "Readers in Germany, in German",
-            "right": "Merchants and visitors who bought the book"
+            "label": "Ask",
+            "left": "Who was Engels? Who read his book?",
+            "right": "Who made a directory? Who bought it?"
           }
         ]
       }
@@ -134,7 +129,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "story-scene",
       "eyebrow": "Workers · A Movement for the Vote",
-      "title": "The Charter: lost every time, won in the end.",
+      "title": "The Charter: lost at the time, won later.",
       "kc": "KC-5.1.V.A",
       "template": {
         "caption": "The Chartists' convention, London, 1839",
@@ -154,7 +149,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           {
             "label": "Later",
             "key": true,
-            "text": "**Most of the six points became law**, 1858 to 1911."
+            "text": "**Five of the six points became law**, 1858 to 1918."
           }
         ],
         "visual": {
@@ -168,8 +163,8 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "timeline-lanes",
-      "eyebrow": "Workers · Parties in Different Countries",
-      "title": "Workers build parties.",
+      "eyebrow": "Workers · In Different Countries",
+      "title": "Unions and parties spread.",
       "footer": "Many wanted more than pay: \"alternative visions of society.\"",
       "kc": "KC-5.1.V.A",
       "template": {
@@ -240,7 +235,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "work": "Manifesto of the Communist Party, English translation of 1888",
           "year": "1848"
         },
-        "notice": "Which two classes did Marx see in Manchester's streets?"
+        "notice": "Marx said industry split society into two classes. Which two?"
       }
     },
     {
@@ -329,7 +324,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     {
       "kind": "cause-chain",
       "eyebrow": "Reformers · A Government Reforms",
-      "title": "Ban the party, then insure its voters.",
+      "title": "Ban the meetings, then insure the workers.",
       "footer": "Reform could answer workers, and also be a weapon against their party.",
       "kc": "KC-5.1.V.D",
       "template": {
@@ -353,7 +348,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           }
         ],
         "links": [
-          "so",
+          "then",
           "then",
           "to"
         ]
@@ -415,7 +410,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "1839 to 1856",
-            "text": "The **Tanzimat**: equal rights, factories, telegraph; many Muslims resent equality."
+            "text": "The **Tanzimat**: equal rights, more factories, telegraph; many Muslims resent equality."
           },
           {
             "label": "1876 to 1878",
@@ -476,15 +471,15 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "job": "Reform",
         "left": {
           "tag": "Ottoman",
-          "name": "Tanzimat",
-          "when": "1839 to 1876",
-          "text": "Equal rights, factories, telegraph; resisted by Janissaries, scholars, the sultan."
+          "name": "New Order to Tanzimat",
+          "when": "1790s to 1878",
+          "text": "Janissaries resist (to 1826); many Muslims resent equality; the sultan shuts parliament."
         },
         "right": {
           "tag": "Qing",
           "name": "Self-Strengthening",
-          "when": "1860s to 1895",
-          "text": "Arsenals, navy, language school; resisted by Woren, then Cixi."
+          "when": "1860s to 1898",
+          "text": "Woren objects (1867); Cixi stops the reforms of 1898."
         },
         "claimLabel": "Compare",
         "claim": "Different empires, **shared cause and limit**: pressure from industrial powers pushed both to reform, and people inside resisted."
@@ -519,7 +514,6 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "kind": "split-matrix",
       "eyebrow": "The Whole Topic",
       "title": "Four rows, one story.",
-      "footer": "Workers organized. Thinkers imagined. Governments reformed. Old empires modernized, and met resistance.",
       "template": {
         "columns": [
           {
@@ -537,38 +531,38 @@ window.BEHISTORICAL_STUDENT_DECK = {
             "label": "Workers",
             "cells": [
               "Long hours, low pay, no vote",
-              "Unions, the Charter, parties",
-              "Legal unions by 1871; vote for many men"
+              "Unions, Charter, parties",
+              "Unions legal; more men vote"
             ]
           },
           {
             "label": "Thinkers",
             "cells": [
               "Anger at who held power",
-              "Socialism; Marx's communism",
-              "Shaped parties; no revolution by 1900"
+              "Socialism, communism",
+              "Parties, no revolution"
             ]
           },
           {
             "label": "Reformers",
             "cells": [
-              "Mills, mines, crowded cities",
-              "Laws on votes, work, schools, sewers",
-              "Reforms in Britain; insurance in Germany"
+              "Mills, mines, cities",
+              "Laws, schools, sewers",
+              "Reform Acts; insurance"
             ]
           },
           {
             "label": "Old empires",
             "cells": [
-              "Industrial powers' guns and trade",
+              "Industrial powers",
               "Tanzimat; Self-Strengthening",
-              "Arsenals and reforms, resisted from inside"
+              "Reform, resisted inside"
             ]
           }
         ],
         "result": {
           "label": "Connect",
-          "text": "Pick one row. Say the cause, the call and the effect in one sentence."
+          "text": "Say one row as a cause, a call and an effect."
         }
       }
     },
@@ -578,7 +572,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "title": "Say it in one sentence.",
       "kc": "Unit 5: Learning Objective I",
       "template": {
-        "frame": "Long hours and anger at who held power led workers to form ___ and thinkers like ___ to imagine a new society; governments passed ___; and pressure from industrial powers pushed the Ottoman and Qing courts to ___, against ___ from inside.",
+        "frame": "Hard work and anger led workers to form ___ and ___ to imagine a new society; governments passed ___; and industrial powers pushed old empires to ___, against ___ from inside.",
         "words": [
           "modernize",
           "unions",

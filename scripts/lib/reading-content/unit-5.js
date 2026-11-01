@@ -1888,7 +1888,7 @@ module.exports = {
       "Sourcing and Situation"
     ],
     "supportCards": {
-      "beforeYouRead": "<strong>Workers organized. Thinkers imagined. Governments reformed. Old empires modernized, and met resistance.</strong> As you read, make four rows: workers, thinkers, reformers and governments, and the Ottoman and Qing courts. For each row, write the pressure (the cause), what they wanted, and what happened (the effect).",
+      "beforeYouRead": "<strong>Workers organized. Thinkers imagined. Governments reformed. Old empires modernized, and met resistance.</strong> As you read, draw four rows on notebook paper: workers, thinkers, reformers and governments, and the Ottoman and Qing courts. For each row, write the pressure (the cause), what they wanted, and what happened (the effect).",
       "readingTarget": "What caused people in industrial societies to call for change between 1750 and 1900, and what did their calls change?"
     },
     "vocabulary": [
@@ -1917,7 +1917,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In the early 1850s, Whellan and Company, publishers in Manchester, printed a business directory, a book listing the town's firms and their addresses. It opened with a very different picture: \"the innumerable large mills and factories whose tall chimneys shoot up in every direction, betoken the activity, enterprise, and wealth of its inhabitants.\" Same city, two pictures. Who wrote each one, why, and for whom explains a lot of the difference. Both had something true to say: industry made some people rich and left many working long hours for low pay in crowded, unhealthy towns. Topic 5.9 takes that city apart. This topic is about what people did about it."
+            "html": "In the early 1850s, Whellan and Company, publishers in Manchester, printed a business directory, a book listing the town's firms and their addresses. It opened with a very different picture: \"the innumerable large mills and factories whose tall chimneys shoot up in every direction, betoken the activity, enterprise, and wealth of its inhabitants.\" Same city, two pictures. Which is more accurate? You will decide in the Skill Builder. Either way, industry made some people rich and left many working long hours for low pay in crowded, unhealthy towns. Topic 5.9 takes that city apart. This topic is about what people did about it."
           }
         ],
         "callout": {
@@ -1968,7 +1968,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>Effects can be mixed.</strong> The Chartists lost every petition, yet in the decades after, Parliament gave the vote to many working men (Section 5). When you explain an effect, say what changed, and what did not.</p>"
+          "raw": "<p><strong>Effects can be mixed.</strong> The Chartists lost every petition, yet in the decades after, Parliament gave the vote to many working men (Section 5), and in 1918 to every man over 21. When you explain an effect, say what changed, and what did not.</p>"
         }
       },
       {
@@ -2013,7 +2013,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>Political.</strong> Reform Acts in 1867 and 1884 gave the vote to many working men. No woman could vote in a British national election until 1918. <strong>Social.</strong> A Factory Act of 1833 banned children under nine from working in textile mills and sent inspectors to check, and a law of 1842 stopped women, girls and boys under ten from working inside mines. <strong>Educational.</strong> An Education Act of 1870 set up public elementary schools where church schools were not enough, and from 1880 children had to attend. <strong>Urban.</strong> In the hot summer of 1858 the River Thames, which carried London's sewage, smelled so foul that it was called the \"Great Stink.\" London then built a huge system of new sewers to carry the waste away from the city."
+            "html": "<strong>Political.</strong> After a workers' organization, the Reform League, held huge meetings for the vote, Parliament passed Reform Acts in 1867 and 1884 that gave the vote to many working men. No woman could vote in a British national election until 1918. <strong>Social.</strong> A Factory Act of 1833 banned children under nine from working in textile mills and sent inspectors to check, and a law of 1842, brought in by Lord Ashley, a member of Parliament who campaigned for factory children, stopped women, girls and boys under ten from working inside mines. <strong>Educational.</strong> An Education Act of 1870, written by a government minister, William Forster, after a campaign by the National Education League, set up public elementary schools where church schools were not enough, and from 1880 children had to attend. <strong>Urban.</strong> In the hot summer of 1858 the River Thames, which carried London's sewage, smelled so foul that it was called the \"Great Stink.\" London's city government then had its engineer, Joseph Bazalgette, build a huge system of new sewers to carry the waste away from the city."
           },
           {
             "type": "p",
@@ -2040,7 +2040,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In 1839 the government announced a program of reforms called the <span class=\"kt\">Tanzimat</span>, Turkish for \"reorganization.\" It promised all subjects safety for their lives, honor and property, fair taxes and a regular system of military service. A decree in 1856 promised equal treatment to Christians and Jews as well as Muslims. The state built factories, such as a fez factory in Istanbul (1835) with machines from Britain and Belgium, and telegraph lines (from 1855). Many Muslims resented the 1856 promise of equality, because it ended their place as the empire's ruling community. In 1876 the empire got a constitution and an elected parliament. Two years later the new sultan, Abdulhamid II, shut the parliament down."
+            "html": "In 1839 the government announced a program of reforms called the <span class=\"kt\">Tanzimat</span>, Turkish for \"reorganization.\" It promised all subjects safety for their lives, honor and property, fair taxes and a regular system of military service. A decree in 1856 promised equal treatment to Christians and Jews as well as Muslims. Even before the Tanzimat, in 1835, the state had set up a fez factory in Istanbul with machines from Britain and Belgium; after 1839 it added more factories and, from 1855, telegraph lines. Many Muslims resented the 1856 promise of equality, because it ended their place as the empire's ruling community. In 1876 the empire got a constitution and an elected parliament. Two years later the new sultan, Abdulhamid II, shut the parliament down."
           }
         ],
         "callout": {
