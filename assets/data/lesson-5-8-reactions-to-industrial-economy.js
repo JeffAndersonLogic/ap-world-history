@@ -130,7 +130,7 @@ window.BEHISTORICAL_LESSON = {
         ],
         image: {
           title: "The Chartists' National Convention, 1839",
-          caption: "An etching of the Chartists' National Convention \"as it met on Monday the 4th of February, 1839, at the British Coffee House\" in London, where delegates gathered to present the People's Charter. Someone has written \"Chartist meeting\" on the sheet. Library of Congress.",
+          caption: "An etching of the Chartists' National Convention \"as it met on Monday the 4th of February, 1839, at the British Coffee House\" in London, where delegates gathered to organize the national petition for the People's Charter. Someone has written \"Chartist meeting\" on the sheet. Library of Congress.",
           url: "../assets/images/topics/5-8/chartist-national-convention-1839.jpg",
           sourceUrl: "https://www.loc.gov/pictures/item/2004669356/"
         }
@@ -156,7 +156,7 @@ window.BEHISTORICAL_LESSON = {
         bullets: [
           "**Three kinds of reformers:** the College Board names \"governments, organizations, and individuals.\" A reform changes a law or a system to fix a problem without overthrowing it.",
           "**Political:** after a workers' organization, the Reform League, held huge meetings for the vote, Britain's Reform Acts of 1867 and 1884 gave the vote to many working men. No woman could vote in a British national election until 1918.",
-          "**Social:** the Factory Act of 1833 banned children under nine from textile mills and sent inspectors to check; a law of 1842, brought in by Lord Ashley, a member of Parliament, stopped women, girls, and boys under ten from working inside mines.",
+          "**Social:** the Factory Act of 1833 banned children under nine from most textile mills (not silk mills) and sent inspectors to check; a law of 1842, brought in by Lord Ashley, a member of Parliament, stopped women, girls, and boys under ten from working inside mines.",
           "**Educational:** the Education Act of 1870, written by a government minister, William Forster, after a campaign by the National Education League, set up public elementary schools where church schools were not enough; from 1880 children had to attend.",
           "**Urban:** in the hot summer of 1858 the River Thames, which carried London's sewage, smelled so foul it was called the \"Great Stink.\" London's city government then had its engineer, Joseph Bazalgette, build a huge system of new sewers to carry the waste away (Topic 5.9 has the city's problems).",
           "**A government reforms to defeat its critics:** Germany's chancellor, Otto von Bismarck, banned the socialists in 1878, then gave workers health insurance (1883), insurance for injuries at work (1884), and pensions for old age and disability (1889), hoping in part to win workers away from the socialists."
@@ -174,7 +174,7 @@ window.BEHISTORICAL_LESSON = {
           "**A different pressure:** the Ottoman Empire and Qing China had few factories of their own. Their pressure came from the industrial powers' armies, warships, and trade. Like Egypt and Japan in Topic 5.6, both governments tried to modernize, and both met resistance from inside.",
           "**The Ottoman Empire:** in the 1790s Sultan Selim III built a European-style army, the \"New Order\"; the Janissaries, the old army corps, and conservative religious scholars opposed it, and a revolt overthrew him in 1807. In June 1826 Sultan Mahmud II destroyed the Janissaries.",
           "**The Tanzimat:** from 1839 the government promised all subjects safety of life, honor, and property, fair taxes, and regular military service; a decree of 1856 promised equal treatment to Christians and Jews. Mahmud II's government had opened a state fez factory in Istanbul in the 1830s; in the Tanzimat years it got steam engines and machines from Britain and Belgium, and from 1855 the state built telegraph lines. Many Muslims resented the 1856 promise of equality. A constitution and parliament came in 1876; in 1878 Sultan Abdulhamid II shut the parliament down.",
-          "**Qing China:** after defeats in the Opium Wars (Unit 6) and the Taiping Rebellion, officials such as Zeng Guofan and Li Hongzhang led Self-Strengthening from the 1860s: the Jiangnan Arsenal in Shanghai (1865), a navy yard at Fuzhou (1866), a school for foreign languages in Beijing (1862), and a steamship company (1872).",
+          "**Qing China:** after defeats in the Opium Wars (Unit 6) and the Taiping Rebellion, officials such as Zeng Guofan and Li Hongzhang led Self-Strengthening from the 1860s: the Jiangnan Arsenal in Shanghai (1865), a navy yard at Fuzhou (1866) and a steamship company (1872); Prince Gong's foreign office opened a school for foreign languages in Beijing (1862).",
           "**Resistance in China:** in 1867 Woren, a senior official and the emperor's tutor, opposed teaching Western mathematics at the language school. Japan defeated China's new navy in 1894 and 1895. In 1898 the Guangxu Emperor's hundred days of reforms were stopped by the Empress Dowager Cixi and officials who opposed them; six reformers were executed."
         ],
         image: {

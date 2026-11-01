@@ -145,7 +145,7 @@
       alt: "An etching of a long, high-ceilinged room with chandeliers and tall windows, where dozens of men in dark coats sit and stand around a long table covered with papers, while one man at the far end raises his arm to speak.",
       url: "../assets/images/topics/5-8/chartist-national-convention-1839.jpg",
       sourceUrl: "https://www.loc.gov/pictures/item/2004669356/",
-      caption: "An etching titled The National Convention, \"as it met on Monday the 4th of February, 1839, at the British Coffee House\" in London: the Chartists' first convention, which gathered to present the People's Charter. Someone has written \"Chartist meeting\" on the sheet. Library of Congress.",
+      caption: "An etching titled The National Convention, \"as it met on Monday the 4th of February, 1839, at the British Coffee House\" in London: the Chartists' first convention, which gathered to organize the national petition for the People's Charter. Someone has written \"Chartist meeting\" on the sheet. Library of Congress.",
       prompt: "NOTICE where the delegates are meeting and how the artist shows them. INFER what impression of the convention this picture gives. The caption does not say who made it or for whom: what can you not know, and what can it not tell you about the workers the delegates spoke for?"
     },
     {

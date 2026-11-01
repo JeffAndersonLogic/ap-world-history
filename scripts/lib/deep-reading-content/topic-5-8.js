@@ -120,7 +120,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `"Unions became legal in 1824." Not quite. The 1824 repeal ended the ban, but the 1825 law limited what unions could do, and the Tolpuddle laborers were convicted in 1834 under a law against secret oaths. Full legal standing came in 1871. A change can come in steps.`
+              html: `"After 1824, unions could do as they liked." Not quite. The 1824 repeal ended the ban and forming a union was no longer a crime, but the 1825 law limited what unions could do, and the Tolpuddle laborers were convicted in 1834 under a law against secret oaths. Full legal standing came in 1871. A change can come in steps.`
             } }
           ]
         },
@@ -172,7 +172,7 @@ module.exports = {
           heading: 'The Manifesto',
           blocks: [
             { p: `In <span class="num">1847</span> a small group of radicals in London, the Communist League, asked Karl Marx and Friedrich Engels to set out its ideas. Their <em>Manifesto of the Communist Party</em> was printed in German in London in February <span class="num">1848</span>. The English translation of 1888, which Engels checked, begins its first section: "The history of all hitherto existing society is the history of class struggles."` },
-            { p: `Industry, Marx argued, was splitting society "into two great hostile camps": the <em>bourgeoisie</em>, who owned the factories, and the <em>proletarians</em>, wage workers who owned nothing but their ability to work. The workers would one day overthrow the owners, end private ownership of the means of production ("the theory of the Communists may be summed up in the single sentence: Abolition of private property"), and build a society without classes: <span class="kt">communism</span>. The Manifesto ends: "The proletarians have nothing to lose but their chains. They have a world to win. Working Men of All Countries, Unite!"` },
+            { p: `Industry, Marx argued, was splitting society "into two great hostile camps": the <em>bourgeoisie</em>, who owned the factories, and the <em>proletarians</em>, wage workers who owned nothing but their ability to work. The workers would one day overthrow the owners, end private ownership of the means of production ("the theory of the Communists may be summed up in the single sentence: Abolition of private property"), and build a society without classes: <span class="kt">communism</span>. The Manifesto ends: "The proletarians have nothing to lose but their chains. They have a world to win. Working Men of All Countries, Unite!" (The German original reads "Proletarians of all countries, unite!"; "Workers of the world, unite!" is a later, popular English version.)` },
             { note: {
               kind: 'howknow',
               label: 'How we know: socialism and communism',
@@ -187,7 +187,7 @@ module.exports = {
             { note: {
               kind: 'misconception',
               label: 'Common mistake to avoid',
-              html: `"Marx's revolution came in the 1800s." No communist party ruled a country until the twentieth century (Unit 7). And "Workers of the world, unite!" is a popular simplification: the 1888 English translation reads "Working Men of All Countries, Unite!"`
+              html: `"Marx's revolution came in the 1800s." No communist party ruled a country until the twentieth century (Unit 7).`
             } }
           ]
         }
@@ -219,7 +219,7 @@ module.exports = {
           blocks: [
             { p: `A <span class="kt">reform</span> changes a law or a system to fix a problem without overthrowing it. The College Board names four kinds, and Britain had all of them.` },
             { p: `<strong>Political.</strong> After the Reform League, a workers' organization, held huge meetings in London's Hyde Park in 1866 and 1867, the Reform Act of <span class="num">1867</span> added about 938,000 voters, many of them working men in towns, and the act of <span class="num">1884</span> brought in many voters in the countryside. No woman could vote in a British national election until <span class="num">1918</span>.` },
-            { p: `<strong>Social.</strong> The Factory Act of <span class="num">1833</span> banned children under nine from textile mills, limited children of nine to thirteen to nine hours a day, and appointed four inspectors. The Mines Act of <span class="num">1842</span>, brought in by Lord Ashley, a member of Parliament, after a government inquiry into children's work in mines, stopped all women and girls, and boys under ten, from working inside mines.` },
+            { p: `<strong>Social.</strong> The Factory Act of <span class="num">1833</span> banned children under nine from most textile mills (silk mills were left out), limited children of nine to thirteen to nine hours a day, and appointed four inspectors. The Mines Act of <span class="num">1842</span>, brought in by Lord Ashley, a member of Parliament, after a government inquiry into children's work in mines, stopped all women and girls, and boys under ten, from working inside mines.` },
             { p: `<strong>Educational.</strong> The Education Act of <span class="num">1870</span>, written by William Forster, a government minister, after a campaign by the National Education League, set up elected school boards to provide elementary schools where church schools fell short, and let them require attendance; a law of <span class="num">1880</span> made every local authority require it.` },
             { p: `<strong>Urban.</strong> In the hot summer of <span class="num">1858</span> the River Thames, which carried London's sewage, smelled so foul it was called the "Great Stink." London's engineer Joseph Bazalgette then built 82 miles of large brick sewers, fed by about 1,100 miles of street sewers, to carry the waste away; the work was completed in <span class="num">1875</span>. The crisis in the cities is Topic 5.9's story.` }
           ]
@@ -227,7 +227,7 @@ module.exports = {
         {
           heading: 'A government reforms to beat its critics',
           blocks: [
-            { p: `Germany's government reformed for another reason. Bismarck banned the socialists in <span class="num">1878</span>. Then a message from the emperor in <span class="num">1881</span> promised to cure workers' discontent "not only through the repression of Social Democratic excesses" but also by "the positive promotion of workers' welfare." The Reichstag passed health insurance in <span class="num">1883</span>, accident insurance in <span class="num">1884</span>, and insurance for old age and disability in <span class="num">1889</span>.` },
+            { p: `Germany's government reformed for another reason. Bismarck banned the socialists in <span class="num">1878</span>. Then a message from the emperor in <span class="num">1881</span> promised to cure social ills "not only through the repression of Social Democratic excesses" but also by "the consistent and positive promotion of workers' welfare." The Reichstag passed health insurance in <span class="num">1883</span>, accident insurance in <span class="num">1884</span>, and insurance for old age and disability in <span class="num">1889</span>.` },
             { note: {
               kind: 'howknow',
               label: 'How we know: Bismarck\'s motive',
@@ -261,7 +261,7 @@ module.exports = {
         {
           heading: 'The Ottoman Empire',
           blocks: [
-            { p: `In the 1790s Sultan Selim III built a new infantry, the "New Order," with European-style uniforms, imported rifles and French instructors. The Janissaries, the old army corps, saw it as a threat, and important conservative religious scholars sided with them. A revolt overthrew Selim in <span class="num">1807</span>. In June <span class="num">1826</span> Sultan Mahmud II destroyed the Janissaries and built a new army along European lines.` },
+            { p: `In the 1790s Sultan Selim III built a new infantry, the "New Order," with European-style uniforms, imported guns and French instructors. The Janissaries, the old army corps, saw it as a threat, and important conservative religious scholars sided with them. A revolt overthrew Selim in <span class="num">1807</span>. In June <span class="num">1826</span> Sultan Mahmud II destroyed the Janissaries and built a new army along European lines.` },
             { p: `On 3 November <span class="num">1839</span>, at Gülhane in Istanbul, the government announced the <span class="kt">Tanzimat</span> ("reorganization"). Its decree promised "perfect security for life, honor, and property," "a regular system of assessing taxes" and a regular system of military service, and it said that "the Muslim and non-Muslim subjects of our lofty Sultanate shall, without exception, enjoy our imperial concessions." Mahmud II's government had opened a state fez factory in Istanbul in the 1830s; in the Tanzimat years it was moved to Eyüp and fitted with steam engines and machines from Britain and Belgium. The state added an ironworks in <span class="num">1843</span> and telegraph lines from <span class="num">1855</span>.` },
             { p: `A decree of <span class="num">1856</span> promised equal treatment to Christians and Jews. Many Muslims, who had long held a higher place than Christians and Jews, resented losing it; some Christian church leaders were unhappy too. In December <span class="num">1876</span> the empire got a constitution and a parliament. In February <span class="num">1878</span> Sultan Abdulhamid II suspended the constitution and dissolved the parliament.` }
           ]

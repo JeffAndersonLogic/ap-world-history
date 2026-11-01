@@ -510,3 +510,54 @@ findings.
     lesson pages, course-wide; the slide points students to the page's full task.
 12. Slide 20's struck-through myths in a light grey (about 2.9:1). **Adjacent finding:** the shared
     `myth-evidence` template, every deck that uses it; reported, not fixed here.
+
+**History reviewer: 7 findings, all supported and fixed; one unverified detail narrowed.** Verified with
+no finding: the Engels and Manifesto quotations, Engels's 1888 preface, Woren and Prince Gong (Huters),
+the Zhu and Meylaerts paraphrase, Elman, Bismarck's 1884 speech, the Gülhane wording, the Feshane dates,
+all four Library of Congress records (the reviewer also noted that the Grant and Li print's "Jan. 1879"
+is wrong, Grant being in China in May and June, which the course already avoids), the Kilburn and Punch
+credits, and the Chartists' five of six.
+
+1. The myth "unions became legal in 1824" called a half-truth false, and slide 20 used Tolpuddle (an
+   oaths-law conviction) as evidence of illegality. **Fixed:** the myth is now "After 1824, unions could do
+   as they liked"; the evidence "An 1825 law limited what they could do. Full legal standing came only in
+   1871" (slide 20, the First & 10 callout, the deep reading, the preflight notes); the deep reading says
+   that from 1824 "forming a union was no longer a crime."
+2. "No woman could vote" (First & 10, section 7): unmarried women ratepayers voted in English local
+   elections from 1869 (History of Parliament, "Women and the municipal franchise"). **Fixed:** "no woman
+   in Britain could vote for Parliament."
+3. The 1839 Convention "gathered to present the People's Charter": it gathered to organize and present
+   the national petition. **Fixed** (lecture card 1, Evidence Lab): "to organize the national petition for
+   the People's Charter."
+4. "the positive promotion of workers' welfare" cut "consistent and" from inside the quotation marks, and
+   "cure workers' discontent" paraphrased "curing social defects." **Fixed:** the full phrase, and "cure
+   social ills" (deep reading, slide 14 notes).
+5. "Workers of the world, unite!" was filed as a mistake; it is a long-standard later English rendering of
+   "Proletarier aller Länder, vereinigt Euch!" **Fixed:** removed from the misconception box; the deep
+   reading and the preflight and slide 20 notes now say the German reads "Proletarians of all countries,
+   unite!", the 1888 English "Working Men of All Countries, Unite!", and the popular phrase is a later
+   version. The constraint-check entry (section 2 of the story) stands as a record: the old card printed
+   the popular phrase as the 1888 text.
+6. The First & 10 and lecture card 4 credited the 1862 language school to Zeng and Li. **Fixed:** "Prince
+   Gong's new foreign office in Beijing opened a school for foreign languages (1862)" (Huters: founded
+   "under the auspices of the Zongli yamen").
+7. The 1833 Factory Act's ban on children under nine excepted silk mills (Whitchurch Silk Mill; the Act's
+   text at education-uk.org). **Fixed:** "most textile mills (silk mills were left out)" in the First & 10,
+   lecture card 3 and the deep reading.
+
+**Narrowed without a finding:** Selim III's New Order "imported rifles" (the reviewer could not open
+Todorova and flagged rifles as possibly anachronistic for the 1790s) now reads "imported guns" on every
+student surface; the notes quote Todorova's word with that caveat.
+
+**New and changed claim rows from pass 2:**
+
+| Claim | Where it appears | Source and what it actually says | Status |
+|---|---|---|---|
+| After 1824 forming a union was no longer a crime; the 1825 law limited what unions could do; full legal standing in 1871 | F10 callout, DR, Deck slide 20 | Gale and historyhome (1824, 1825); EBSCO, "Repeal of the Combination Acts" (as quoted by the reviewer); Trade Union Act 1871, s. 2 | NARROWED (myth recast) |
+| No woman in Britain could vote for Parliament until 1918 | F10 section 7 | Oxford Companion (1918); History of Parliament (local franchise from 1869) | NARROWED (was "no woman could vote") |
+| The 1839 Convention gathered to organize the national petition for the People's Charter | LD lecture card 1, RC Evidence Lab | chartistancestors.co.uk, "First Chartist Convention 1839"; London Museum (the 1839 petition) | NARROWED |
+| Quotation: "the consistent and positive promotion of workers' welfare" (1881) | DR, Deck slide 14 notes | GHDI, the Imperial Message of 17 November 1881 | VERIFIED (corrected from a cut quotation) |
+| The German reads "Proletarians of all countries, unite!"; "Workers of the world, unite!" is a later popular English version | DR, Deck slides 1 and 20 notes | MIA editors' note; the German first edition | VERIFIED (no longer called a mistake) |
+| Prince Gong's foreign office opened the language school (1862) | F10, LD lecture card 4 | Huters, p. 29 | NARROWED (was listed among Zeng and Li's works) |
+| The 1833 Factory Act banned children under nine from most textile mills; silk mills were left out | F10, LD, DR | Whitchurch Silk Mill, "1833 Factories Act"; the Act's text (education-uk.org) | NARROWED |
+| Selim III's New Order had imported guns and French instructors | F10, DR | Todorova ("imported rifles"); narrowed to "guns" | NARROWED |

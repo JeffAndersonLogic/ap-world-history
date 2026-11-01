@@ -2013,7 +2013,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "<strong>Political.</strong> After a workers' organization, the Reform League, held huge meetings for the vote, Parliament passed Reform Acts in 1867 and 1884 that gave the vote to many working men. No woman could vote in a British national election until 1918. <strong>Social.</strong> A Factory Act of 1833 banned children under nine from working in textile mills and sent inspectors to check, and a law of 1842, brought in by Lord Ashley, a member of Parliament who campaigned for factory children, stopped women, girls and boys under ten from working inside mines. <strong>Educational.</strong> An Education Act of 1870, written by a government minister, William Forster, after a campaign by the National Education League, set up public elementary schools where church schools were not enough, and from 1880 children had to attend. <strong>Urban.</strong> In the hot summer of 1858 the River Thames, which carried London's sewage, smelled so foul that it was called the \"Great Stink.\" London's city government then had its engineer, Joseph Bazalgette, build a huge system of new sewers to carry the waste away from the city."
+            "html": "<strong>Political.</strong> After a workers' organization, the Reform League, held huge meetings for the vote, Parliament passed Reform Acts in 1867 and 1884 that gave the vote to many working men. No woman could vote in a British national election until 1918. <strong>Social.</strong> A Factory Act of 1833 banned children under nine from working in most textile mills (silk mills were left out) and sent inspectors to check, and a law of 1842, brought in by Lord Ashley, a member of Parliament who campaigned for factory children, stopped women, girls and boys under ten from working inside mines. <strong>Educational.</strong> An Education Act of 1870, written by a government minister, William Forster, after a campaign by the National Education League, set up public elementary schools where church schools were not enough, and from 1880 children had to attend. <strong>Urban.</strong> In the hot summer of 1858 the River Thames, which carried London's sewage, smelled so foul that it was called the \"Great Stink.\" London's city government then had its engineer, Joseph Bazalgette, build a huge system of new sewers to carry the waste away from the city."
           },
           {
             "type": "p",
@@ -2036,7 +2036,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "In the 1790s the Ottoman Sultan Selim III built a new army in European-style uniforms, with imported rifles and French instructors, called the \"New Order.\" The Janissaries, the empire's old army corps, saw it as a threat, and many conservative religious scholars sided with them. In 1807 a revolt overthrew Selim. In June 1826 Sultan Mahmud II destroyed the Janissaries and built a new army."
+            "html": "In the 1790s the Ottoman Sultan Selim III built a new army in European-style uniforms, with imported guns and French instructors, called the \"New Order.\" The Janissaries, the empire's old army corps, saw it as a threat, and many conservative religious scholars sided with them. In 1807 a revolt overthrew Selim. In June 1826 Sultan Mahmud II destroyed the Janissaries and built a new army."
           },
           {
             "type": "p",
@@ -2055,7 +2055,7 @@ module.exports = {
         "blocks": [
           {
             "type": "p",
-            "html": "Qing China was defeated by Britain in the Opium War of 1839 to 1842, and by Britain and France again from 1856 to 1860 (Unit 6), while a huge civil war, the Taiping Rebellion, tore through the country. From the 1860s, officials such as Zeng Guofan and Li Hongzhang led what was called <span class=\"kt\">Self-Strengthening</span>: learning Western ways of making weapons and ships while keeping China's own system of rule. They built the Jiangnan Arsenal in Shanghai (1865) and a navy yard at Fuzhou (1866), opened a school for foreign languages in Beijing (1862), and started a Chinese steamship company (1872)."
+            "html": "Qing China was defeated by Britain in the Opium War of 1839 to 1842, and by Britain and France again from 1856 to 1860 (Unit 6), while a huge civil war, the Taiping Rebellion, tore through the country. From the 1860s, officials such as Zeng Guofan and Li Hongzhang led what was called <span class=\"kt\">Self-Strengthening</span>: learning Western ways of making weapons and ships while keeping China's own system of rule. They built the Jiangnan Arsenal in Shanghai (1865) and a navy yard at Fuzhou (1866), and started a Chinese steamship company (1872), while Prince Gong's new foreign office in Beijing opened a school for foreign languages (1862)."
           },
           {
             "type": "p",
@@ -2063,7 +2063,7 @@ module.exports = {
           },
           {
             "type": "p",
-            "html": "Put the four rows together. Industrial capitalism and discontent with who held power caused workers to organize unions and parties and thinkers such as Marx to imagine a different society, and those calls pushed governments, organizations and individuals into reforms. By 1900 many men could vote, children worked less and went to school more, and socialist parties were among the largest in Europe, but many workers stayed poor and no woman could vote. The power of the industrial states caused the Ottoman and Qing governments to modernize, but resistance from inside slowed or reversed the deepest changes."
+            "html": "Put the four rows together. Industrial capitalism and discontent with who held power caused workers to organize unions and parties and thinkers such as Marx to imagine a different society, and those calls pushed governments, organizations and individuals into reforms. By 1900 many men could vote, children worked less and went to school more, and socialist parties were among the largest in Europe, but many workers stayed poor and no woman in Britain could vote for Parliament. The power of the industrial states caused the Ottoman and Qing governments to modernize, but resistance from inside slowed or reversed the deepest changes."
           },
           {
             "type": "p",
@@ -2072,7 +2072,7 @@ module.exports = {
         ],
         "callout": {
           "label": "AP Thinking, Causation",
-          "raw": "<p><strong>Three myths to drop.</strong> \"Marx's revolution came in the 1800s\": no communist party ruled a country until the twentieth century. \"Unions were legal once the 1824 law passed\": an 1825 law limited them, and full legal standing came in 1871. \"China and the Ottoman Empire refused to change\": both governments tried to modernize; the reforms were resisted from inside.</p>"
+          "raw": "<p><strong>Three myths to drop.</strong> \"Marx's revolution came in the 1800s\": no communist party ruled a country until the twentieth century. \"After 1824, unions could do as they liked\": an 1825 law limited what they could do, and full legal standing came only in 1871. \"China and the Ottoman Empire refused to change\": both governments tried to modernize; the reforms were resisted from inside.</p>"
         }
       }
     ],

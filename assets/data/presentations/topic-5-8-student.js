@@ -493,9 +493,9 @@ window.BEHISTORICAL_STUDENT_DECK = {
       "template": {
         "rows": [
           {
-            "myth": "Unions became legal in 1824.",
-            "evidence": "An 1825 law limited them, and Tolpuddle came in 1834. Legal standing came in 1871.",
-            "source": "Combination laws; Trade Union Act, 1871"
+            "myth": "After 1824, unions could do as they liked.",
+            "evidence": "An 1825 law limited what they could do. Full legal standing came only in 1871.",
+            "source": "Combination laws, 1824, 1825; Trade Union Act, 1871"
           },
           {
             "myth": "Marx's revolution came in the 1800s.",

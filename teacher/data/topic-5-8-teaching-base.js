@@ -62,9 +62,9 @@ window.BEHISTORICAL_TEACHING = {
       'Model 2.B: who made it, why, for whom, when, and how that shapes what it says (slides 5, 12 and 15).'
     ],
     should: [
-      'Quote the Manifesto in its 1888 English, "Working Men of All Countries, Unite!", not the popular "Workers of the world, unite!" (slide 9).',
+      'Quote the Manifesto in its 1888 English, "Working Men of All Countries, Unite!", which renders the German "Proletarians of all countries, unite!"; "Workers of the world, unite!" is a later popular version (slide 9).',
       'Say that the Chartists lost every petition and still won most of their points later (slide 7).',
-      'Correct three myths: "unions became legal in 1824," "Marx\'s revolution came in the 1800s," "China and the Ottoman Empire refused to change" (slide 20).'
+      'Correct three myths: "after 1824, unions could do as they liked," "Marx\'s revolution came in the 1800s," "China and the Ottoman Empire refused to change" (slide 20).'
     ],
     could: [
       'Point students who want more depth to the eBook chapter, "Calls for Change."',
@@ -126,7 +126,7 @@ window.BEHISTORICAL_TEACHING = {
           'The CED gives no illustrative examples for 5.8; every example is the build\'s choice. Its sample activity (p. 97) pairs Engels\'s Manchester with a Manchester business directory; the Skill Builder uses it (slide 15).',
           'Owns: unions, movements and parties; Marx, socialism and communism; reforms of four kinds; the Ottoman and Qing reforms and their resistance. Bridge only: the factory (5.3); "for some" (5.7, the hand-off in); Egypt and Meiji Japan (5.6, the comparison); the city\'s crisis and the classes (5.9, the hand-off out); abolition (5.1); the Opium Wars and the Taiping Rebellion (Unit 6); communist states (Unit 7).',
           'The old 5.8 taught American strikes and abolition and had nothing on Marx or the Ottoman and Qing reforms. If a student raises Haymarket or Pullman, say they are American examples of the same pattern and park them.',
-          'Three myths, on slide 20: "unions became legal in 1824"; "Marx\'s revolution came in the 1800s"; "China and the Ottoman Empire refused to change."'
+          'Three myths, on slide 20: "after 1824, unions could do as they liked"; "Marx\'s revolution came in the 1800s"; "China and the Ottoman Empire refused to change."'
         ],
         ask: 'What is the one sentence I want every student to leave with?',
         listenFor: 'Industrial capitalism and the power of industrial states caused calls for change: workers organized, Marx and the socialists imagined a different society, governments and others reformed, and the Ottoman and Qing courts modernized against resistance from inside.',
@@ -418,7 +418,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Sickness insurance, May 1883; accident insurance, July 1884; old-age and disability insurance, June 1889.',
-          'The emperor\'s message of November 1881, Bismarck\'s program: cure discontent "not only through the repression of Social Democratic excesses" but by "the positive promotion of workers\' welfare." Bismarck to the Reichstag, March 1884: the socialist leaders need "dissatisfied classes"; "dissatisfied workers are just what they need."',
+          'The emperor\'s message of November 1881, Bismarck\'s program: cure discontent "not only through the repression of Social Democratic excesses" but by "the consistent and positive promotion of workers\' welfare." Bismarck to the Reichstag, March 1884: the socialist leaders need "dissatisfied classes"; "dissatisfied workers are just what they need."',
           'Keep "in part": the message also spoke of a Christian duty to the poor.'
         ],
         ask: 'Was the insurance a win for workers or for Bismarck?',
@@ -481,7 +481,7 @@ window.BEHISTORICAL_TEACHING = {
       notes: {
         minutes: 2,
         land: [
-          'Selim III\'s New Order: "a new infantry ... with European-style uniforms, imported rifles, and French instructors" (Todorova). The Janissaries and important conservative ulema opposed it; a revolt overthrew him in May 1807.',
+          'Selim III\'s New Order: "a new infantry ... with European-style uniforms, imported rifles, and French instructors" (Todorova). The course says "guns": infantry of the 1790s mostly carried muskets. The Janissaries and important conservative ulema opposed it; a revolt overthrew him in May 1807.',
           'June 1826: Mahmud II destroyed the Janissary corps and built a new army along European lines.',
           'The Edict of Gülhane, 3 November 1839 (Inalcik\'s translation): "perfect security for life, honor, and property"; "a regular system of assessing taxes"; regular conscription; "The Muslim and non-Muslim subjects of our lofty Sultanate shall, without exception, enjoy our imperial concessions." The 1856 decree made Muslims and non-Muslims legally equal, which "was not well perceived by many Muslims who traditionally enjoyed a superior status."',
           'The state fez factory (Feshane) was opened under Mahmud II in the 1830s and fitted with steam engines and machines from Britain and Belgium in the Tanzimat years, about 1843 to 1851 (TDV İslâm Ansiklopedisi; Ergün and Ciritci, 2026); the photograph, by Abdullah Frères for Abdulhamid II\'s albums (1880 to 1893), shows it later. The telegraph from 1855. The constitution of December 1876; parliament dissolved and the constitution suspended in February 1878.'
@@ -544,7 +544,7 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'The evidence is more interesting than the myths.',
       template: {
         rows: [
-          { myth: 'Unions became legal in 1824.', evidence: 'An 1825 law limited them, and Tolpuddle came in 1834. Legal standing came in 1871.', source: 'Combination laws; Trade Union Act, 1871' },
+          { myth: 'After 1824, unions could do as they liked.', evidence: 'An 1825 law limited what they could do. Full legal standing came only in 1871.', source: 'Combination laws, 1824, 1825; Trade Union Act, 1871' },
           { myth: 'Marx\'s revolution came in the 1800s.', evidence: 'No communist party ruled a country until the twentieth century. By 1900 his ideas lived in parties.', source: 'Paris Commune, 1871; Erfurt Program, 1891' },
           { myth: 'China and the Ottoman Empire refused to change.', evidence: 'Both governments built arsenals, factories and schools. Resistance came from inside.', source: 'Tanzimat; Self-Strengthening' }
         ]
@@ -553,7 +553,7 @@ window.BEHISTORICAL_TEACHING = {
         minutes: 2,
         land: [
           'Each myth flattens a mixed effect into a single one. The correction keeps the history\'s "and": allowed and limited; influential and unrealized; reformed and resisted.',
-          'A fourth, if it comes up: "Workers of the world, unite!" is a popular simplification. The 1888 English reads "Working Men of All Countries, Unite!"'
+          'If it comes up: "Workers of the world, unite!" is not a myth but a later popular English version of the German "Proletarians of all countries, unite!"; the 1888 English reads "Working Men of All Countries, Unite!"'
         ],
         ask: 'Which myth is the most tempting, and why?',
         listenFor: 'Any, with the reason it flattens the story.',
