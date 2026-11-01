@@ -37,125 +37,148 @@
 
   lesson.first10 = {
     ...lesson.first10,
-    title: 'First & 10: The Rising',
+    title: "First & 10: Calls for Change",
     embedUrl: 'first-and-10-topic-5-8-reactions-to-industrial-economy-capture.html?v=response-id-fix-v1',
-    note: 'Read the First & 10 narrative, answer the three questions, build your AI Coach prompt, then return to the 5.8 lesson path.'
+    note: 'Read the First & 10 story, answer the three questions, then return to the 5.8 lesson path.'
   };
 
   lesson.map = {
     ...lesson.map,
     key: [
-      { label: 'The geography of labor organizing', detail: 'Labor organizing in the 19th century was concentrated in specific industrial regions: Lancashire and Yorkshire textile districts, the South Wales coal fields, and the Tyne and Clyde shipbuilding centers in Britain; the Pittsburgh steel district, New England textile mills, and Chicago railroad yards in the United States. These concentrations were not accidental, industrial geography created the conditions for collective action. Workers in the same industry, living in the same company town or urban neighborhood, sharing the same grievances and the same employers, could organize more easily than dispersed agricultural workers. The factory system thus simultaneously created the working class whose exploitation drove profit and the concentration of workers that made collective action possible. Karl Marx understood this: the factory was not just a site of production, it was a school of solidarity.' },
-      { label: 'The geography of abolition', detail: 'Abolitionist movements were strongest in the industrial regions of Britain and the American Northeast, paradoxically, the regions most economically connected to slavery through the cotton trade. Lancashire textile workers whose mills depended on slave-grown American cotton were among the most vocal British abolitionists; New England merchants who traded with Southern planters produced abolitionist newspapers and financed anti-slavery campaigns. This geographic pattern reveals an important tension: industrial capitalism both depended on slave-produced raw materials and generated the ideological and organizational resources for abolition. The humanitarian and evangelical Protestant religious culture of industrial Britain and the American Northeast produced both the most committed abolitionists and the most sophisticated industrial economy. The connection between industrial capitalism and abolitionism was not simple cause-and-effect, it was a tension within the same economic and cultural world.' },
-      { label: 'The Cotton Famine zone and global cotton restructuring', detail: 'The Union naval blockade of Confederate ports during the American Civil War (1861–1865) cut Lancashire\'s cotton supply, producing the Cotton Famine. British mills turned to alternative sources: Egyptian cotton (Nile valley fields converted to cotton production on a large scale), Indian cotton (Bombay presidency cotton exports expanded dramatically), and eventually Brazilian and West African sources. These substitutions had lasting consequences: Egypt\'s agricultural economy was restructured around cotton export, making it dependent on the global cotton market for decades; Indian cotton fields expanded at the expense of food crops. The geographic map of global cotton production in 1870 looked radically different from 1860, the Civil War had permanently diversified cotton sourcing away from the American South, reducing the Confederate states\' leverage over British policy.' },
-      { label: 'Reform movements: geography of early public health victories', detail: 'Public health reform spread unevenly through industrial cities. London\'s Great Stink (1858) and subsequent Bazalgette sewer system represented the most dramatic case: a single catastrophic event producing political will for large-scale infrastructure investment. Other British industrial cities, Manchester, Birmingham, Liverpool, followed with their own sewer systems and clean water supplies through the 1860s–1880s. American cities lagged: New York began building a comprehensive sewer system in the 1860s; Chicago\'s sewer system, dramatically reversing the Chicago River\'s flow direction (1900), became an engineering marvel. The geographic spread of public sewer systems closely tracks the spread of germ theory acceptance and political capacity to finance infrastructure, larger, wealthier cities with stronger municipal governments built sewers first; smaller, poorer cities with weaker governments waited, and their populations continued to die from waterborne diseases in the interim.' }
+      { label: "Britain", detail: "The Combination Acts of 1799 and 1800 banned unions until Parliament repealed them in 1824. From 1838 the Chartists demanded the vote for every man. Unions formed the Trades Union Congress in 1868, and in 1900 unions and socialists founded the committee that became the Labour Party in 1906." },
+      { label: "Germany", detail: "Workers' parties united in 1875. The government banned socialist meetings and newspapers from 1878 to 1890, and gave workers health, accident, and old-age insurance in laws of 1883, 1884, and 1889. In 1890 the Social Democratic Party won more votes than any other party." },
+      { label: "The Ottoman Empire", detail: "From 1839 the government's Tanzimat reforms promised all subjects security, fair taxes, and regular military service, and built factories and telegraph lines. A constitution and parliament came in 1876; in 1878 Sultan Abdulhamid II shut the parliament down." },
+      { label: "Qing China", detail: "From the 1860s, Self-Strengthening officials built arsenals, a navy yard, a language school, and a steamship company. In 1898 the Guangxu Emperor's hundred days of reforms were stopped by the Empress Dowager Cixi and officials who opposed them." },
+      { label: "Arrow 1", detail: "Britain's war with China, 1839 to 1842, the first Opium War (Unit 6): one of the defeats that pushed the Qing government to modernize." },
+      { label: "Arrow 2", detail: "In 1894 and 1895 Japan, which had industrialized (Topic 5.6), defeated China's new navy." },
+      { label: "Reading the map", detail: "Each arrow joins two places; it is not an exact route. The map shows only the places this topic names, and the shaded regions are approximate." }
     ]
   };
 
   lesson.stableImages = {
-    map:             '../assets/images/commons/1700-ce-world-map-1696ff.png',
-    first10:         '../assets/images/commons/pillar-of-vasco-da-gama-1533aa.jpg',
-    contentDelivery: '../assets/images/commons/ferdinand-magellan-9de032.jpg',
-    beSurreal:       '../assets/images/commons/casta-painting-all-bdc286.jpg',
-    skill:           '../assets/images/commons/florentinecodex-bk12-f54-smallpox-6163e9.jpg',
-    checkpoint1:     '../assets/images/commons/waldseemuller-map-2-f5c64b.jpg',
-    evidence:        '../assets/images/commons/voc-faaae0.jpg',
-    source:          '../assets/images/commons/loren-mozley-pueblo-revolt-1680-installed-1936-abq-nm-73e5bf.jpg',
-    beInTheRoom:     '../assets/images/commons/columbus-taking-possession-d0d171.jpg',
-    checkpoint2:     '../assets/images/commons/astrolabe-persian-18c-8ebe5d.jpg'
+    map:             '../assets/images/instructional-maps/topic-5-8.svg',
+    first10:         '../assets/images/commons/william-edward-kilburn-view-of-the-great-chartist-meeting-on-kenningto-cf2162.jpg',
+    contentDelivery: '../assets/images/topics/5-8/chartist-national-convention-1839.jpg',
+    beSurreal:       '',
+    skill:           '',
+    checkpoint1:     '../assets/images/commons/punch-1843-reichtum-und-armut-7927a6.png',
+    evidence:        '../assets/images/topics/5-8/ottoman-military-engineering-students-1880s.jpg',
+    source:          '',
+    beInTheRoom:     '../assets/images/topics/5-8/grant-and-li-hongzhang-tianjin-1879.jpg',
+    checkpoint2:     '../assets/images/topics/5-8/ottoman-imperial-fez-factory-interior-1880s.jpg'
+  };
+
+  lesson.classPresentation = {
+    title: "Class Slides: Calls for Change",
+    desc: "Build four rows, workers, thinkers, reformers and governments, and the Ottoman and Qing courts: what pushed each to call for change, what they wanted, and what happened.",
+    url: 'presentation-topic-5-8-student.html'
   };
 
   lesson.beInTheRoom = {
-    url: '../beintheroom/unit-5/the-pullman-strike-hearing.html',
-    desc: "Join the 1894 Pullman Strike hearing and weigh collective action, company-town power, federal injunctions, and labor reform."
+    url: '../beintheroom/unit-5/the-tongwen-guan-debate.html',
+    desc: "Beijing, 1867. At the Qing court, decide whether the language school should teach Western astronomy and mathematics, as one of five people: a prince who runs foreign affairs, a senior scholar who opposes the plan, a provincial governor who runs an arsenal, a young scholar studying for the examinations, and an interpreter trained at the school."
   };
 
   lesson.skillBuilder = {
-    label: 'Comparison practice',
-    title: 'Comparing Reactions to Industrial Capitalism: Labor Organizing vs. Reform Movements',
-    intro: 'Comparison for Topic 5.8 requires identifying both what labor organizing and reform movements share and where they fundamentally differed, and synthesizing what the comparison reveals about responses to industrial capitalism. The most common AP error is treating "reactions to industrialization" as a single category rather than identifying the specific differences in strategy, target, and ideology between labor organizing and broader reform movements.',
+    label: "Sourcing practice",
+    title: "Who Made It, Why, and for Whom?",
+    intro: "Topic 5.8 asks you to source a source: explain its point of view (who made it), its purpose (why), its audience (for whom), or its historical situation (when and where), and how that shapes what it says. Two sources can describe the same thing very differently and both be telling part of the truth. Watch the move on an example from everyday life, then use it on two descriptions of Manchester.",
     steps: [
-      { label: 'Identify a meaningful similarity', text: 'Similarity: Both trade union organizing and broader reform movements (abolitionism, public education, public health, temperance) responded to specific social dislocations that industrial capitalism created or intensified. Both used collective organization, meetings, petitions, political pressure, sometimes direct action, to change conditions that individuals could not change alone. Both drew on Enlightenment language about rights, dignity, and human welfare to make their claims. And both faced resistance from interests that benefited from the status quo: factory owners opposed unions; slaveholders opposed abolition; urban property owners sometimes opposed the costs of public health infrastructure; alcohol producers opposed temperance. The shared challenge was mobilizing collective political power against organized resistance from economically powerful interests.' },
-      { label: 'Identify a meaningful difference (scope and strategy)', text: 'Difference: Labor organizing and reform movements differed fundamentally in what they targeted and what they demanded. Labor organizing targeted the specific employment relationship: wages, hours, working conditions, and the right to collective bargaining. It challenged industrial capitalism directly, at the point of production, by organizing those with the most immediate stake in changing conditions, workers themselves. Reform movements, by contrast, targeted the social environment around industrial capitalism (education, sanitation, alcohol), often with middle-class leaders advocating on behalf of working-class populations rather than those populations organizing themselves. Temperance, for example, was largely a middle-class Protestant reform aimed at working-class behavior, not at the wages that made alcohol a tempting escape from industrial misery. The critical difference: labor organizing was adversarial to industrial capitalism at its core; most reform movements sought to manage and humanize capitalism\'s social consequences without challenging its fundamental structure.' },
-      { label: 'Write the synthesis statement', text: 'Synthesis: Comparing labor organizing and reform movements reveals that 19th-century industrial capitalism generated two distinct types of response: challenges to the structure of industrial production (labor organizing, and, at its limit, socialist politics) and efforts to manage or mitigate the social consequences of that structure (education reform, public health, temperance). Both were genuine reactions to real industrial-era suffering. But they had different political implications: labor organizing, if successful at scale, would have restructured the relationship between capital and labor; most reform movements stabilized industrial capitalism by addressing its most destabilizing social effects without questioning the underlying economic system. The history of 20th-century labor and social policy is largely a story of which type of reaction proved more durable, and in most Western democracies, the answer was: welfare-state reform rather than socialist structural transformation.' }
+      { label: "Name the source and its maker", text: "Say who made it: that is its point of view. Example: two descriptions of the same new school cafeteria. One is in a brochure from the company that built it. The other is a student's post on the school news site." },
+      { label: "Ask why, and for whom", text: "Say what the maker wanted (purpose) and who was meant to read it (audience). Example: \"The company wants other schools to buy cafeterias like this one, so it writes for school boards. The student wants classmates to know what lunch is really like.\"" },
+      { label: "Ask when and where", text: "Say what was happening when it was made (historical situation). Example: \"The brochure was printed the week the cafeteria opened, before anyone had eaten there. The student wrote after a month of lunches.\"" },
+      { label: "Say how it shapes what the source says", text: "Use this frame: \"[Source] says [what], because its maker [point of view, purpose, audience, or situation]: [how that explains it].\" Example: \"The brochure praises the bright new tables and says nothing about the lines, because the company wrote it to sell cafeterias to school boards before anyone had stood in a line.\"" }
     ],
-    prompt: 'In 3–4 sentences, compare trade union organizing and one other reform movement from the industrial era (options: abolitionism, public education reform, public health reform, temperance). Identify one meaningful similarity and one meaningful difference in how each movement responded to industrial capitalism. End with a synthesis: what does comparing these two responses reveal about the relationship between industrial capitalism and the reform movements that responded to it?'
+    prompt: "Now do it with two real descriptions of Manchester. Source A: Friedrich Engels, a young German sent to Manchester to work in a cotton business his father partly owned, published a book in Germany, in German, in 1845. In the English translation of 1887 he writes that Manchester is built so that \"a person may live in it for years, and go in and out daily without coming into contact with a working people's quarter or even with workers,\" and that its river, the Irk, is \"coal-black, foul-smelling ... full of debris and refuse.\" Source B: a business directory of Manchester and Salford, a book listing the towns' firms and their addresses, printed in Manchester by Whellan and Company (the copy we can read is dated 1853), opens: \"the innumerable large mills and factories whose tall chimneys shoot up in every direction, betoken the activity, enterprise, and wealth of its inhabitants.\" First, say who made each source and what each says about Manchester. Second, explain the purpose and the audience of each. Third, explain how ONE of these, point of view, purpose, audience, or situation, helps explain why the two describe the same city so differently. Fourth, say which description you think is more accurate, and why, using the frame.",
+    criteria: [
+      "I said who made each source and what each says about Manchester.",
+      "I explained the purpose and the audience of each source.",
+      "I explained how one of point of view, purpose, audience, or situation shapes what a source says.",
+      "I said which description I think is more accurate, and why, using the frame."
+    ]
   };
 
   lesson.checkpoints = [
     {
-      title: 'Checkpoint 1: The Labor Movement — Organizing, Strikes, and Suppression',
-      subtitle: 'Checks Learning Target 1 — trade unions, major strikes, and labor movement development.',
-      cardDesc: 'Legal framework, Great Railroad Strike 1877, Haymarket 1886, Pullman Strike 1894, AFL.',
-      learningTargets: [lesson.learningTargets[0].target],
-      successCriteria: [lesson.successCriteria[0].criteria],
-      prompt: 'Explain why trade unions were illegal under early industrial-era law, what specific legal doctrine made collective bargaining a criminal act, and what assumptions about the employment relationship did this doctrine reflect? Then choose two of the three major labor events (Great Railroad Strike 1877, Haymarket affair 1886, Pullman Strike 1894) and explain: what did each event demonstrate about both workers\' collective power and the government\'s response? End with a synthesis: what does the pattern of labor organizing and government suppression in the 19th century reveal about whose interests the industrial-era state primarily served?',
-      responseType: 'Checkpoint 1',
-      terms: ['Combination Acts', 'criminal conspiracy doctrine', 'trade union', 'collective bargaining', 'Great Railroad Strike', 'Haymarket affair', 'Pullman Strike', 'Eugene Debs', 'American Federation of Labor', 'May Day'],
-      focus: ['Explain the legal framework, what made unions illegal, and what assumptions did this reflect?', 'Explain two major strikes and what they demonstrated about power and government response.', 'Synthesize: whose interests did the industrial-era state serve?']
+      title: "Checkpoint 1: Workers and New Ideas",
+      subtitle: "Checks Learning Targets 1 and 2 and Success Criteria 1 and 2.",
+      cardDesc: "Why workers organized, what they wanted and won, and what Marx and other socialists imagined.",
+      learningTargets: [lesson.learningTargets[0].target, lesson.learningTargets[1].target],
+      successCriteria: [lesson.successCriteria[0].criteria, lesson.successCriteria[1].criteria],
+      prompt: "Answer in four steps. (1) Explain ONE cause that led workers in Britain or Germany to organize, with a detail from the lesson. (2) Explain ONE thing workers organized to get (better conditions, shorter hours, higher wages, or the vote), and ONE effect of their organizing: something they won, or something they failed to win. (3) Explain what socialism meant, and what Karl Marx predicted would happen and called communism. (4) Explain ONE thing Marx's ideas did, or did not do, by 1900.",
+      responseType: "Checkpoint 1",
+      terms: ["union", "labor union", "trade union", "strike", "Combination Acts", "1799", "1800", "1824", "1825", "Tolpuddle", "1834", "Trades Union Congress", "1868", "1871", "ten hours", "1847", "Chartists", "People's Charter", "vote", "petition", "1838", "1848", "Kennington Common", "Social Democratic Party", "1875", "1878", "1890", "Labour Party", "1900", "1906", "American Federation of Labor", "wages", "hours", "conditions", "socialism", "Owen", "Marx", "Engels", "Communist Manifesto", "class struggles", "communism", "private property", "Capital", "1867", "revolution", "1891", "May 1", "eight-hour"],
+      focus: ["Explain one cause that led workers to organize, with a detail.", "Explain one thing workers wanted, and one effect of their organizing.", "Explain socialism, and what Marx predicted and called communism.", "Explain one thing Marx's ideas did, or did not do, by 1900."]
     },
     {
-      title: 'Checkpoint 2: Abolition and Reform Movements',
-      subtitle: 'Checks Learning Target 2 — abolitionism, education, public health, and temperance.',
-      cardDesc: 'British abolition 1833, Frederick Douglass, Cotton Famine, Forster Act, Chadwick, Bazalgette, WCTU.',
-      learningTargets: [lesson.learningTargets[1].target],
-      successCriteria: [lesson.successCriteria[1].criteria],
-      prompt: 'Explain the structural connection between industrial capitalism and American slavery, how were they economically linked through the cotton economy, and what did this connection mean for the abolitionist movement\'s political challenge? Then describe how two non-labor reform movements (choose two: public education reform, public health reform, temperance) addressed specific social dislocations created by industrialization. For each, explain: what specific industrial-era problem did this reform address, and what argument did reformers make for it? End with a synthesis: did these reform movements challenge industrial capitalism or stabilize it?',
-      responseType: 'Checkpoint 2',
-      skill: 'Causation',
-      terms: ['abolitionism', 'Baptist War', 'Frederick Douglass', 'Thirteenth Amendment', 'Cotton Famine', 'Forster Act', 'Edwin Chadwick', 'germ theory', 'Bazalgette sewer', 'WCTU'],
-      focus: ['Explain the structural connection between industrial capitalism and slavery through the cotton economy.', 'Describe two non-labor reform movements and their specific arguments and targets.', 'Synthesize: did reform movements challenge or stabilize industrial capitalism?']
+      title: "Checkpoint 2: Reforms, Old Empires, and Calls for Change",
+      subtitle: "Checks Learning Targets 3 and 4 and Success Criteria 3 and 4, and Unit 5 Learning Objective I: the causes and effects of calls for changes in industrial societies from 1750 to 1900.",
+      cardDesc: "Who pushed reforms and why, why the Ottoman and Qing governments tried to modernize and who resisted, and the causes and effects of calls for change.",
+      learningTargets: [lesson.learningTargets[2].target, lesson.learningTargets[3].target],
+      successCriteria: [lesson.successCriteria[2].criteria, lesson.successCriteria[3].criteria],
+      prompt: "Explain the causes and effects of calls for change between 1750 and 1900. (1) Give ONE reform from the lesson, say what kind it was (political, social, educational, or urban), and say who pushed it: a government, an organization, or individuals. (2) Explain why Germany's government under Bismarck gave workers insurance. (3) Explain what pushed the Ottoman OR the Qing government to modernize, and give ONE reform with a detail. (4) Name ONE person or group who resisted those reforms, and say why. (5) Write one sentence that links a cause to a call for change and to its effect, for any row of the topic.",
+      responseType: "Checkpoint 2",
+      skill: "Causation",
+      terms: ["reform", "political", "social", "educational", "urban", "Reform Act", "1867", "1884", "Factory Act", "1833", "Mines Act", "1842", "Education Act", "1870", "1880", "Great Stink", "1858", "sewers", "government", "organization", "Bismarck", "insurance", "1883", "1884", "1889", "socialists", "Ottoman", "Selim III", "New Order", "Janissaries", "1807", "Mahmud II", "1826", "Tanzimat", "1839", "1856", "equality", "factory", "telegraph", "constitution", "1876", "Abdulhamid II", "1878", "Qing", "Opium War", "Self-Strengthening", "Li Hongzhang", "Zeng Guofan", "arsenal", "Jiangnan", "1865", "Fuzhou", "navy", "Woren", "1867", "Japan", "1895", "Guangxu", "1898", "Cixi", "caused", "led to", "because", "resisted"],
+      focus: ["Give one reform, its kind, and who pushed it.", "Explain why Bismarck gave workers insurance.", "Explain what pushed the Ottoman or Qing government to modernize, with one reform.", "Name one person or group who resisted, and why.", "Link a cause, a call for change, and an effect in one sentence."]
     }
   ];
 
   // ── Module 07, Evidence Lab ───────────────────────────────────────────────
   lesson.evidenceLab = {
-    title: 'Evidence Lab: Build and Test a Claim',
-    task: 'Choose at least two evidence cards. Decide which historical claim each card is most useful for, name one precise detail from each rather than summarizing it, explain the inference that carries the detail to the claim, and identify one limitation or missing piece of evidence. The caption identifies the object; it does not supply your conclusion.',
-    prompt: 'Evaluate reactions to industrial capitalism. Use at least two cards representing different responses—revolutionary, union, reformist, or state welfare—and explain what problem each response identified.'
+    title: "Evidence Lab: Who Called for Change, and Why?",
+    task: "Choose at least two evidence cards. For each, say what kind of source it is and who made it (if the caption says), name one precise detail rather than summarizing it, explain what that detail shows about one row of the topic (workers, thinkers, reformers and governments, or the Ottoman and Qing courts), and say how its maker's point of view or purpose shapes what it shows. The caption identifies the source; it does not supply your conclusion.",
+    prompt: "Make a claim about what caused people to call for change between 1750 and 1900, or what their calls changed. Support it with evidence from at least two cards."
   };
 
   lesson.images = [
     {
-      title: 'Responses to industrial capitalism',
-      url: '../assets/images/instructional-maps/topic-5-8.svg',
-      sourceUrl: '../assets/images/instructional-maps/topic-5-8.svg',
-      caption: 'BeHistorical reference map. Secondary geographic reconstruction of labor movements, reform legislation and socialist organization.',
-      prompt: 'NOTICE which responses appear where. INFER what conditions a reform response needs that a revolutionary one does not. What does the map not show about which response workers preferred?'
+      title: "The Chartist Meeting on Kennington Common, 1848",
+      alt: "An early photograph, pale and slightly blurred, of a huge crowd of men in top hats and caps filling an open field, with a small flag on a pole near the middle, a tall factory chimney and long low buildings behind, and a large pale building on the right.",
+      url: "../assets/images/commons/william-edward-kilburn-view-of-the-great-chartist-meeting-on-kenningto-cf2162.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:William_Edward_Kilburn_-_View_of_the_Great_Chartist_Meeting_on_Kennington_Common_-_Google_Art_Project.jpg",
+      caption: "A daguerreotype (an early kind of photograph) by William Edward Kilburn of the Chartists' great meeting on Kennington Common, London, on 10 April 1848, held to send their third petition for the vote to Parliament. It is one of a pair that Prince Albert, Queen Victoria's husband, bought in 1848. Royal Collection.",
+      prompt: "NOTICE how many people are there and how they are dressed. INFER what kind of movement this was and who was in it. The pictures were bought by the Queen's husband: why might a royal family want a picture of this crowd?"
     },
     {
-      title: 'Communist Manifesto',
-      label: 'Primary-source excerpt · Marx and Engels, 1848',
-      sourceText: [
-        '“Workers of the world, unite!”',
-        'Class conflict is presented as the engine of history.'
-      ],
-      caption: 'Published in 1848, the year revolutions broke out across Europe, by two men in their twenties and thirties.',
-      prompt: 'What diagnosis of industrial society is embedded in this language? What would you need to show that workers actually accepted it?'
+      title: "The Chartists' National Convention, 1839",
+      alt: "An etching of a long, high-ceilinged room with chandeliers and tall windows, where dozens of men in dark coats sit and stand around a long table covered with papers, while one man at the far end raises his arm to speak.",
+      url: "../assets/images/topics/5-8/chartist-national-convention-1839.jpg",
+      sourceUrl: "https://www.loc.gov/pictures/item/2004669356/",
+      caption: "An etching titled The National Convention, \"as it met on Monday the 4th of February, 1839, at the British Coffee House\" in London: the Chartists' first convention, which gathered to present the People's Charter. Someone has written \"Chartist meeting\" on the sheet. Library of Congress.",
+      prompt: "NOTICE where the delegates are meeting and how the artist shows them. INFER what the Chartists wanted people to think of their convention. An etching sold to the public: what can it not tell you about the workers the delegates spoke for?"
     },
     {
-      title: 'Factory Act of 1833',
-      label: 'Legal record · Britain',
-      sourceText: [
-        'Restricted factory work by young children.',
-        'Created inspectors to enforce parts of the law.'
-      ],
-      caption: 'The law, and the inspectors: a state taking responsibility for conditions inside private workplaces.',
-      prompt: 'What does regulation suggest about changing ideas of state responsibility? What labor problems remained outside the law?'
+      title: "\"Capital and Labour,\" Punch, 1843",
+      alt: "A two-part cartoon. In the upper part, a fat man in a fine chair sips wine while servants wait on him and a little dog lies on a cushion. In the lower part, under the ground, thin men, women, and small children drag carts and crouch in a dark mine, some on crutches.",
+      url: "../assets/images/commons/punch-1843-reichtum-und-armut-7927a6.png",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Punch_1843_-_Reichtum_und_Armut.png",
+      caption: "A cartoon by R. J. Hamerton, signed \"Shallabala,\" printed in the London magazine Punch in 1843 (volume 5, page 49), the year after the Mines Act of 1842 barred women, girls, and boys under ten from working inside mines.",
+      prompt: "NOTICE what is happening in the upper half and the lower half, and how they are joined. INFER the argument the cartoonist is making about where wealth comes from. A comic magazine read by the comfortable middle class: what does that tell you about who was being asked to care?"
     },
     {
-      title: 'The Chartist meeting at Kennington Common, 1848',
-      url: '../assets/images/commons/william-edward-kilburn-view-of-the-great-chartist-meeting-on-kenningto-cf2162.jpg',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:William_Edward_Kilburn_-_View_of_the_Great_Chartist_Meeting_on_Kennington_Common_-_Google_Art_Project.jpg',
-      caption: 'A daguerreotype of the Chartist gathering of 10 April 1848, one of the earliest photographs of a crowd. The Chartists were demanding the vote for working men.',
-      prompt: 'NOTICE how many people are present and how they are dressed. INFER what kind of movement this was and who was in it. The photographer was working for the Crown: how does knowing that change how you read the picture?'
+      title: "Inside the Imperial Fez Factory, Istanbul, 1880s",
+      alt: "An old black-and-white photograph of a long factory hall. Leather belts run at angles from wheels on the ceiling down to rows of machines, and finished brimless hats sit on the workbenches in the front.",
+      url: "../assets/images/topics/5-8/ottoman-imperial-fez-factory-interior-1880s.jpg",
+      sourceUrl: "https://www.loc.gov/pictures/item/2003675899/",
+      caption: "A photograph by Abdullah Frères, made between 1880 and 1893 for one of Sultan Abdulhamid II's albums, of the inside of the Imperial Fez Factory in Istanbul, the state's factory for fezzes (brimless red hats) and army uniforms. The factory was first set up in 1835 with machines from Britain and Belgium. Library of Congress.",
+      prompt: "NOTICE how the machines are powered and what they are making. INFER what this shows about the Ottoman government's plans for its economy and its army. The sultan's own album: what might it leave out?"
     },
     {
-      title: '“Capital and Labour”, Punch, 1843',
-      url: '../assets/images/commons/punch-1843-reichtum-und-armut-7927a6.png',
-      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Punch_1843_-_Reichtum_und_Armut.png',
-      caption: 'R. J. Hamerton in Punch, July to December 1843, page 49, contrasting a wealthy household above ground with the mine workings beneath it. Published the year after the Mines Act barred women and young children underground.',
-      prompt: 'NOTICE what is happening in the upper half and the lower half, and how the two are joined. INFER the argument the cartoonist is making about where wealth comes from. What does a satirical magazine tell you about its readers as well as its subject?'
+      title: "Students of the Imperial School of Military Engineering, 1880s",
+      alt: "An old black-and-white photograph of about forty young men in dark military coats and fezzes, standing in rows on a bare parade ground in front of a long two-story building with many windows.",
+      url: "../assets/images/topics/5-8/ottoman-military-engineering-students-1880s.jpg",
+      sourceUrl: "https://www.loc.gov/pictures/item/2002712221/",
+      caption: "A photograph by Abdullah Frères, made between 1880 and 1893 for one of Sultan Abdulhamid II's albums, of the students of the Imperial School of Military Engineering at Tophane, Istanbul. Library of Congress.",
+      prompt: "NOTICE what the students are wearing and how they are posed. INFER what kind of army the Ottoman government was trying to build, and why. Photographs chosen by the sultan: what do they show about how he wanted the world to see his empire?"
+    },
+    {
+      title: "Ulysses S. Grant and Li Hongzhang, 1879",
+      alt: "An old photograph of two men seated on either side of a small table with a vase of flowers: on the left, a bearded American in a dark suit; on the right, a Chinese official in a round hat and long robes.",
+      url: "../assets/images/topics/5-8/grant-and-li-hongzhang-tianjin-1879.jpg",
+      sourceUrl: "https://www.loc.gov/pictures/item/2016647812/",
+      caption: "A photograph by Liang Shitai (who signed his work See Tay) of Ulysses S. Grant, a former president of the United States on a tour around the world, and Li Hongzhang, the Qing official who led many of China's self-strengthening projects, made during Grant's visit to China in 1879. The print is titled as taken at Tianjin. Library of Congress.",
+      prompt: "NOTICE how the two men are dressed and seated. INFER what Li Hongzhang might gain from being photographed as an equal beside a famous American. A posed portrait: what can it not tell you about China's arsenals and navy?"
     }
   ];
 

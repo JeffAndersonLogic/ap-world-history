@@ -2,9 +2,10 @@
 
 **Status: Delegated to the independent reviewer loop (Jeff's standing rule of 2026-10-12).**
 
-**Resume here (2026-11-01):** Phases 0 to 5 done (story, ledger, First & 10 written and rebuilt; map
-rebuilt; the deck's shell files and registrations in place). Next: Phase 6 and 7, the lesson surfaces
-and the teaching base. Pictures staged in `assets/images/topics/5-8/` (four Library of Congress files).
+**Resume here (2026-11-01):** Phases 0 to 8 done (story, ledger, First & 10, lesson data and renderer
+config, deep reading and eBook, the Tongwen Guan room, the map, the 25-slide deck, Socrates, skills map,
+the staged Canvas overview). Next: Phase 9, the browser suite in brand fonts, then review pass 1.
+The Unit 5 reading fingerprint moves only after the loop (readings-golden.js fails until then, by design).
 
 Drafted 2026-11-01 from the CED source file, for the build Jeff started with "Build 5.8." The Phase 9
 reviewers check this story and every surface built from it against that file and the scholarship
@@ -455,11 +456,12 @@ report.
    historical situation, and/or audience of a source": who made it, why, for whom, in what situation, and
    how that shapes what it says. Modeled on a neutral everyday example, then practiced on the CED's own
    sample activity, Engels's Manchester and the 1852 directory.
-3. **Learning targets:** three. Target 1, why workers organized and what new ideas, including Marx's,
-   their discontent produced (KC-5.1.V.A, KC-5.3.IV.A.ii); Target 2, how governments, organizations and
-   individuals pushed reforms of four kinds (KC-5.1.V.D); Target 3, why the Ottoman and Qing governments
-   tried to modernize and who resisted (KC-5.1.V.B). Checkpoint 1 assesses Target 1; Checkpoint 2 assesses
-   Targets 2 and 3 and the learning objective (causes and effects) and declares Causation.
+3. **Learning targets:** four, one per Key Concept. Target 1, why workers organized unions, movements and
+   parties, and what they wanted (KC-5.1.V.A); Target 2, how discontent encouraged new ideas, including
+   Marx's (KC-5.3.IV.A.ii); Target 3, how governments, organizations and individuals pushed reforms of four
+   kinds (KC-5.1.V.D); Target 4, why the Ottoman and Qing governments tried to modernize and who resisted
+   (KC-5.1.V.B). Checkpoint 1 assesses Targets 1 and 2; Checkpoint 2 assesses Targets 3 and 4 and the
+   learning objective (causes and effects) and declares Causation.
 4. **Primary Source:** *The Communist Manifesto* (1848), three short passages from the 1888 English
    translation, with three sourcing questions (2.B). It replaces the Haymarket "adapted excerpt."
 5. **Map module:** "Calls for Change, 1824 to 1898," a map with Britain, Germany, the Ottoman Empire and
