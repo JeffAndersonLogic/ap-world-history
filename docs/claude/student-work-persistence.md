@@ -406,18 +406,23 @@ initial state". It worked once and failed once on the same phone. The fix is
 Google's own sign-in button with `signInWithCredential`, which also stops depending
 on `firebaseapp.com`, which the district filter blocked until JJ Nielsen allowed
 it. It needs the sites added as authorized JavaScript origins on the OAuth client
-(`jeffandersonlogic.github.io`, later `behistorical.com`). Not built.
+(`behistorical.com` and `www.behistorical.com`). Not built.
 
-**Storage belongs to the address, and the site is moving to behistorical.com.**
+**Storage belongs to the address, and the site moved to behistorical.com.**
+The `CNAME` file at the repository root is what puts the site there; deleting it
+sends the site back to `jeffandersonlogic.github.io`, where every student's work
+would again look missing (`custom-domain.test.js` fails the push if it changes).
 `localStorage` is per origin, so a student's saved work, the backup's own record,
-the `?sync=on` pilot flag and Kelly's `?classroom=kelly` choice all stay behind at
+the sign-in itself and Kelly's `?classroom=kelly` choice all stayed behind at
 `jeffandersonlogic.github.io` and are invisible at the new address. GitHub Pages
-also redirects the old address to a custom domain, so a student cannot simply
-revisit it. The new domain has to be added to Firebase Authentication's
-Authorized domains before sign-in works there (the OAuth client uses
+also redirects the old address to the custom domain, so a student cannot simply
+revisit it. The new domain has to be in Firebase Authentication's Authorized
+domains before sign-in works there (the OAuth client uses
 `behistoric.firebaseapp.com` and does not change). The backup is what makes the
 move survivable: the new address looks to the engine exactly like a wiped device,
-so work already uploaded comes back. Work that was never uploaded does not.
+so once a student signs in again, work already uploaded comes back. Work that was
+never uploaded does not, and a Kelly student gets Kelly's classroom back by
+opening Kelly's link once more.
 
 **What it does not cover, stated so nobody assumes it does.** The lesson page has
 to be open for the engine to run: a BeInTheRoom reflection typed in its own tab is

@@ -60,6 +60,11 @@ The **ship-to-main** skill is the procedure; use it whenever a change goes to st
 - `main` is the deploy branch: GitHub Pages serves it, so what is on `main` is what students
   have. It is protected (`.github/branch-ruleset.json`, applied 2026-09-01): it cannot be
   deleted or force-pushed, and both Validate jobs must pass on a commit before it lands there.
+- **No exam, quiz or answer key is ever committed here** (Jeff, 2026-10-19). Every tracked
+  file is served at behistorical.com whether or not a page links to it, and the repository is
+  public. Assessments live in AndersonLogic-OS, `04_PRODUCTS/BeHistorical/Assessments/`; study
+  guides stay here. `scripts/test/no-answer-keys.test.js` fails the push on one, added after
+  the Era 2 exam and its key were found downloadable on 2026-10-30.
 - **Still no pull requests.** Push to a working branch, wait for Validate to pass on it,
   fast-forward `main` to that commit, then **delete the working branch**. Deleting it is part
   of shipping, not tidying afterwards.

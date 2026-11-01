@@ -212,24 +212,40 @@ function compoundingStairs(s){
    width over height after any cropBottom, sizes the box to the picture so
    nothing is cropped away. Pins stay fractions of the box. The lines stretch
    with the box (it is rarely 1128 by 560 once a title and footer take their
-   room) and the rings are drawn in HTML, so both stay on the picture. */
+   room) and the rings are drawn in HTML, so both stay on the picture.
+   With a `ratio` the box is sized in container units against the area it
+   really gets, not the 1128 by 560 design box: that area is usually much
+   wider than 2:1, and a box drawn as a share of it came out the wrong shape,
+   so `cover` cut the top and bottom off the picture (Topic 4.1's three ships,
+   2026-10-30). The pins follow the box, and the leader from each pin is an
+   HTML line turned with atan2(), because an SVG coordinate cannot follow a
+   box whose shape is only known at layout. */
 function annotated(s){
   const t=s.template||{},pins=arr(t.pins).slice(0,5),n=Math.max(1,pins.length);
-  const wide=t.imageWidth!=null||t.ratio!=null;
+  const wide=t.imageWidth!=null||t.ratio!=null,fit=t.ratio!=null;
   const IW=wide?Math.round(1128*Math.max(.2,Math.min(.62,num(t.imageWidth,.39)))):440;
-  const IH=wide&&t.ratio!=null?Math.min(520,IW/Math.max(.2,num(t.ratio,1))):520;
+  const R=Math.max(.2,num(t.ratio,1));
+  const IH=fit?Math.min(520,IW/R):520;
   const IT=10+(520-IH)/2,rowH=520/n,X1=IW+80,X2=IW+120;
+  const cq=(v,d,ax)=>`${(v/d*100).toFixed(2)}cq${ax}`;
   let svg='',dots='',labels='';
   const lab=wide?`left:${((X2+15)/1128*100).toFixed(2)}%;width:${(96-(X2+15)/1128*100).toFixed(2)}%;`:'';
   pins.forEach((p,i)=>{
     const px=num(p.x,.5)*IW,py=IT+num(p.y,.5)*IH,ly=10+rowH*i+rowH/2;
-    svg+=`<line x1="${px.toFixed(0)}" y1="${py.toFixed(0)}" x2="${X1}" y2="${ly.toFixed(0)}"></line><line x1="${X1}" y1="${ly.toFixed(0)}" x2="${X2}" y2="${ly.toFixed(0)}"></line>`;
-    dots+=`<i class="bht-an-pin" style="left:${(px/1128*100).toFixed(2)}%;top:${(py/560*100).toFixed(2)}%"></i>`;
+    if(fit){
+      const x=`calc(${num(p.x,.5)} * var(--aw))`,y=`calc(var(--at) + ${num(p.y,.5)} * var(--ah))`;
+      dots+=`<i class="bht-an-ld" style="left:${x};top:${y};--dx:calc(${cq(X1,1128,'w')} - ${x});--dy:calc(${cq(ly,560,'h')} - ${y})"></i><i class="bht-an-pin" style="left:${x};top:${y}"></i>`;
+    }else{
+      svg+=`<line x1="${px.toFixed(0)}" y1="${py.toFixed(0)}" x2="${X1}" y2="${ly.toFixed(0)}"></line>`;
+      dots+=`<i class="bht-an-pin" style="left:${(px/1128*100).toFixed(2)}%;top:${(py/560*100).toFixed(2)}%"></i>`;
+    }
+    svg+=`<line x1="${X1}" y1="${ly.toFixed(0)}" x2="${X2}" y2="${ly.toFixed(0)}"></line>`;
     labels+=`<div class="bht-an-lab" style="${lab}top:${((ly-20)/560*100).toFixed(2)}%"><b>${esc(p.label)}</b><span>${rich(p.text)}</span></div>`;
   });
-  const box=wide?` style="top:${(IT/560*100).toFixed(2)}%;width:${(IW/1128*100).toFixed(2)}%;height:${(IH/560*100).toFixed(2)}%"`:'';
+  const box=fit?' style="top:var(--at);width:var(--aw);height:var(--ah)"':wide?` style="top:${(IT/560*100).toFixed(2)}%;width:${(IW/1128*100).toFixed(2)}%;height:${(IH/560*100).toFixed(2)}%"`:'';
+  const area=fit?` fit" style="--aw:min(${cq(IW,1128,'w')}, ${(520/560*100*R).toFixed(2)}cqh);--ah:calc(var(--aw) / ${R});--at:calc((100cqh - var(--ah)) / 2)`:'';
   const img=frame(t.visual,'bht-an-img',{placeholder:t.placeholder||'Add the real object this slide annotates'}).replace('<div class="bht-frame bht-an-img">',`<div class="bht-frame bht-an-img"${box}>`);
-  return board('annotated',themeOf(t,'dark'),pad(head(s)+`<div class="bht-an">${img}<svg class="bht-an-svg" viewBox="0 0 1128 560" preserveAspectRatio="none" aria-hidden="true">${svg}</svg>${dots}${labels}</div>`+foot(s.footer)));
+  return board('annotated',themeOf(t,'dark'),pad(head(s)+`<div class="bht-an${area}">${img}<svg class="bht-an-svg" viewBox="0 0 1128 560" preserveAspectRatio="none" aria-hidden="true">${svg}</svg>${dots}${labels}</div>`+foot(s.footer)));
 }
 
 /* ── time ──────────────────────────────────────────────────────────────── */
@@ -1071,6 +1087,9 @@ const CSS=`
 .bht-an-pin{position:absolute;width:18u;height:18u;margin:-9u 0 0 -9u;border:3u solid #c9a46a;border-radius:50%;box-sizing:border-box;pointer-events:none}
 .bht-an-pin::after{content:'';position:absolute;left:50%;top:50%;width:6u;height:6u;margin:-3u 0 0 -3u;border-radius:50%;background:#c9a46a}
 .paper .bht-an-svg line{stroke:#6b3e1f}.paper .bht-an-pin{border-color:#6b3e1f}.paper .bht-an-pin::after{background:#6b3e1f}
+.bht-an.fit{container-type:size}
+.bht-an-ld{position:absolute;width:0;width:hypot(var(--dx),var(--dy));height:0;margin-top:-.75px;border-top:1.5px solid #c9a46a;transform-origin:0 0;transform:rotate(atan2(var(--dy),var(--dx)));pointer-events:none}
+.paper .bht-an-ld{border-top-color:#6b3e1f}
 .bht-an-lab{position:absolute;left:51%;width:45%}
 .bht-an-lab b{display:block;font:800 15u/1.3 'Montserrat',Helvetica,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--acc)}
 .bht-an-lab span{display:block;font-size:20u;line-height:1.4;margin-top:4u}

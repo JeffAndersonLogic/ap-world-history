@@ -5,7 +5,12 @@ Moved word for word from `CLAUDE.md` on 2026-10-17, the second pass of the 2026-
 ## Git
 
 - `main` is the deploy branch: GitHub Pages serves it, so what is on `main` is
-  what students have.
+  what students have, at `https://behistorical.com/`. The one-line `CNAME` file at
+  the root is what puts it there; never delete or edit it. The old address,
+  `jeffandersonlogic.github.io/ap-world-history/`, redirects to the new one, which
+  is why old Canvas links still work. Student work saved in a browser belongs to
+  the address, so see "Storage belongs to the address" in
+  `docs/claude/student-work-persistence.md` before any change of address.
 - Still no pull requests. Push to a working branch, wait for Validate to pass on
   it, then fast-forward `main` to that commit, then **delete the working branch**.
   This is the one change the branch rule forces, and only because a required check

@@ -6,7 +6,7 @@ name: Live check
 # receives, rather than merely committed. A commit on main and a green Pages
 # build do not prove that; a cache or a failed deploy can sit between them.
 #
-# Manual only. Authoring sandboxes usually cannot reach github.io; a runner can.
+# Manual only. Authoring sandboxes usually cannot reach the live site; a runner can.
 #
 # `checks` is one check per line, written as   path :: text that must appear
 # for example
@@ -22,7 +22,7 @@ on:
       base:
         description: 'Site root'
         required: false
-        default: 'https://jeffandersonlogic.github.io/ap-world-history/'
+        default: 'https://behistorical.com/'
 
 permissions:
   contents: read

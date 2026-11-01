@@ -257,6 +257,31 @@ function measureVenn(label) {
   return bad;
 }
 
+/* Runs in the page. An annotated picture that gives its `ratio` must be drawn
+   in a frame of that shape, or `cover` cuts the picture to fit: Topic 4.1's
+   three ships lost their mastheads and hulls in a 2.85:1 frame for a 2.11:1
+   picture. Each pin must sit on the picture and each leader start on its pin.
+   Returns one entry per fault. */
+function measureAnnotatedFit({ label, ratio }) {
+  const bad = [];
+  const f = document.querySelector('.bht-an-img');
+  if (!f) return [`${label}: no frame`];
+  const fr = f.getBoundingClientRect();
+  const shape = fr.width / fr.height;
+  if (Math.abs(shape / ratio - 1) > 0.02) bad.push(`${label}: frame ${shape.toFixed(3)}:1 for a ${Number(ratio).toFixed(3)}:1 picture`);
+  const pins = [...document.querySelectorAll('.bht-an-pin')].map(e => { const r = e.getBoundingClientRect(); return { x: r.left + r.width / 2, y: r.top + r.height / 2 }; });
+  pins.forEach((p, i) => { if (p.x < fr.left || p.x > fr.right || p.y < fr.top || p.y > fr.bottom) bad.push(`${label}: pin ${i + 1} off the picture`); });
+  const lds = [...document.querySelectorAll('.bht-an-ld')];
+  if (lds.length !== pins.length) bad.push(`${label}: ${lds.length} leader(s) for ${pins.length} pin(s)`);
+  lds.forEach((e, i) => {
+    const c = getComputedStyle(e), r = e.offsetParent.getBoundingClientRect();
+    const x = r.left + e.offsetLeft, y = r.top + e.offsetTop + parseFloat(c.borderTopWidth) / 2;
+    if (!(parseFloat(c.width) > 0)) bad.push(`${label}: leader ${i + 1} has no length`);
+    if (pins[i] && Math.hypot(x - pins[i].x, y - pins[i].y) > 2) bad.push(`${label}: leader ${i + 1} starts off its pin`);
+  });
+  return bad;
+}
+
 (async () => {
   await new Promise(r => server.listen(0, r));
   const origin = `http://127.0.0.1:${server.address().port}`;
@@ -321,8 +346,8 @@ function measureVenn(label) {
     // generic class name collides with.
     await page.goto(`${origin}/unit-2/presentation-topic-2-4-student.html`, { waitUntil: 'load' });
     await page.waitForSelector('#stage .slide', { timeout: 15000 });
-    const boards = [], vennBad = [];
-    let vennSeen = 0;
+    const boards = [], vennBad = [], fitBad = [];
+    let vennSeen = 0, fitSeen = 0;
     for (const r of real) {
       const b = await page.evaluate(sl => {
         const stage = document.querySelector('#stage');
@@ -333,8 +358,13 @@ function measureVenn(label) {
       const m = await page.evaluate(measureBoards, r.deck);
       boards.push(...m.map(x => ({ ...x, id: `${r.deck} ${r.slide.id || x.kind}` })));
       if (r.slide.kind === 'split-venn') { vennSeen++; vennBad.push(...await page.evaluate(measureVenn, `${r.deck} ${r.slide.title || ''}`)); }
+      if (r.slide.kind === 'annotated' && r.slide.template && r.slide.template.ratio != null) {
+        fitSeen++;
+        fitBad.push(...await page.evaluate(measureAnnotatedFit, { label: `${r.deck} ${r.slide.title || ''}`, ratio: r.slide.template.ratio }));
+      }
     }
     check('real decks: every Venn line sits inside its own region of the circles', vennBad.length === 0, vennBad.join(' | ') || `${vennSeen} Venn slide(s)`);
+    check('real decks: an annotated picture with a ratio is drawn whole, its pins and leaders on it', fitBad.length === 0, fitBad.join(' | ') || `${fitSeen} slide(s)`);
     check('real decks: template slides measured', boards.length === real.length && real.length > 0, `${boards.length} of ${real.length}`);
     const over = boards.filter(b => b.worst > 2);
     check('real decks: no text is painted outside its board', over.length === 0, over.map(b => `${b.id} +${b.worst}px [${b.what}]`).join(' | ') || 'clean');
@@ -516,6 +546,32 @@ function measureVenn(label) {
     const boards = await page.evaluate(measureBoards, 'control');
     const cut = boards.length === 1 && boards[0].credits.length > 0 && boards[0].credits.some(c => !c.inside);
     check('control: a photo credit cut off by its frame is caught', cut, boards[0] ? `${boards[0].credits.length} credit(s)` : 'nothing measured');
+    await page.close();
+  }
+
+  {
+    // Topic 4.1's three ships, once with the frame squashed back to the
+    // shape that cropped them and once with the leaders pulled off their pins.
+    const box = { window: {} };
+    vm.runInNewContext(fs.readFileSync(path.join(ROOT, 'assets/data/presentations/topic-4-1-student.js'), 'utf8'), box);
+    const ships = box.window.BEHISTORICAL_STUDENT_DECK.slides.find(sl => sl.kind === 'annotated' && sl.template && sl.template.ratio != null);
+    const page = await browser.newPage({ viewport: { width: 1400, height: 900 } });
+    await hermetic(page);
+    await page.goto(`${origin}/unit-4/presentation-topic-4-1-student.html`, { waitUntil: 'load' });
+    await page.waitForSelector('#stage .slide', { timeout: 15000 });
+    const broken = [];
+    for (const css of ['.bht-slide .bht-an-img{height:30%!important}', '.bht-slide .bht-an-ld{left:0!important}']) {
+      await page.evaluate(([sl, css]) => {
+        const stage = document.querySelector('#stage');
+        stage.style.cssText = 'width:1280px;height:720px;aspect-ratio:auto';
+        stage.innerHTML = window.BHSlideTemplates.render(sl);
+        const st = document.createElement('style'); st.className = 'control'; st.textContent = css; document.head.appendChild(st);
+        return new Promise(res => requestAnimationFrame(() => requestAnimationFrame(res)));
+      }, [ships, css]);
+      broken.push((await page.evaluate(measureAnnotatedFit, { label: 'control', ratio: ships.template.ratio })).length);
+      await page.evaluate(() => document.querySelectorAll('style.control').forEach(s => s.remove()));
+    }
+    check('control: a cropped annotated picture and a leader off its pin are each caught', !!ships && broken.every(n => n > 0), `faults found: ${broken.join(', ')}`);
     await page.close();
   }
 

@@ -43,7 +43,7 @@ const crypto = require('crypto');
 const ROOT = path.resolve(__dirname, '..');
 const DIR = 'assets/images/commons';
 const MANIFEST = path.join(ROOT, DIR, 'manifest.json');
-const UA = 'BeHistorical/1.0 (https://jeffandersonlogic.github.io/ap-world-history/; classroom course site)';
+const UA = 'BeHistorical/1.0 (https://behistorical.com/; classroom course site)';
 const WIDTH = 1280;
 
 // A picture link to Commons, in either of the forms the course uses.

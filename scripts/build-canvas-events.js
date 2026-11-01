@@ -66,7 +66,7 @@ const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(ROOT, 'docs', 'canvas', 'calendar-events.md');
 const OUT_ASSIGNMENTS = path.join(ROOT, 'docs', 'canvas', 'assignments.md');
 const SCHEDULE = path.join(ROOT, 'assets', 'data', 'announcements-schedule.js');
-const BASE_URL = 'https://jeffandersonlogic.github.io/ap-world-history';
+const BASE_URL = 'https://behistorical.com';
 
 const warnings = [];
 function warn(msg) { warnings.push(msg); }
