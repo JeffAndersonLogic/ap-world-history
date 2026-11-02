@@ -944,10 +944,22 @@ function build() {
   /* One record per class day first, then folded into one record per topic.
      The day is what the schedule knows; the topic is what Canvas wants. */
   const days = [];
+  /* Days whose Canvas event lives in another file (`canvasEventIn`). Finals
+     week is the case: the dates split by class period, S1 and S2 one day and
+     S3 and S4 the next, which one event per cohort cannot express. Printing
+     a generated event for them anyway would put a second, wrong version next
+     to the right one. They are listed instead, and schedule-cohorts.test.js
+     fails if the named file does not carry each date. */
+  const elsewhere = [];
   for (const entry of calendar) {
     const c = lookupCohort(entry.cohort);
     if (!c) {
       warn(`${entry.date}: no valid cohort, day skipped.`);
+      continue;
+    }
+    if (entry.canvasEventIn) {
+      elsewhere.push({ date: entry.date, cohort: c,
+        title: entry.topicTitle || entry.topic || entry.date, file: entry.canvasEventIn });
       continue;
     }
 
@@ -1233,6 +1245,17 @@ function build() {
       rows: topic.meetings.map((m) => [m.cohort.label, longDate(m.date), m.due || 'nothing assigned']),
       html: eventHtml
     });
+  }
+
+  if (elsewhere.length) {
+    out.push('**Class days with their Canvas event in another file.** These days split');
+    out.push('their dates by class period, which one event per cohort cannot express, so');
+    out.push('their paste-ready events are kept in the file named on each line:');
+    out.push('');
+    for (const d of elsewhere) {
+      out.push(`- ${longDate(d.date)}, ${d.cohort.label}: ${d.title}, in \`${d.file}\``);
+    }
+    out.push('');
   }
 
   if (assessmentEvents.length) {

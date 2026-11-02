@@ -295,11 +295,14 @@ function main() {
 
   /* School days alternate. Two of the same in a row is a typo, and it is the
      kind that reads fine on the page and puts a whole block in front of the
-     wrong room. */
+     wrong room. A repeat the school made on purpose (finals week) says so
+     in `repeatsCohort` and is not flagged; schedule-cohorts.test.js holds
+     the same rule. */
   for (let i = 1; i < calendar.length; i++) {
     const prev = calendar[i - 1];
     const here = calendar[i];
-    if (prev.cohort && here.cohort && here.cohort === prev.cohort) {
+    if (prev.cohort && here.cohort && here.cohort === prev.cohort &&
+        !String(here.repeatsCohort || '').trim()) {
       notes.push(`${prev.date} and ${here.date} are both ${here.cohort}. School days alternate, so check these two.`);
     }
   }

@@ -75,14 +75,26 @@ if (missing.length) {
 
 // School days alternate. Two of the same in a row puts a whole block in front
 // of the wrong room, and the page it renders looks completely normal.
+// The one exception is a repeat the school made on purpose (finals week, when
+// PowerSchool forced two Silver days in a row), and it has to say so on the
+// day itself in `repeatsCohort`. A reason on a day that alternates normally
+// is stale and fails too, so the exception cannot outlive the repeat.
 const runs = [];
+const excused = [];
+const staleExcuse = [];
 for (let i = 1; i < days.length; i++) {
-  if (days[i].cohort && days[i].cohort === days[i - 1].cohort) {
-    runs.push(`${days[i - 1].date} and ${days[i].date} are both ${days[i].cohort}`);
-  }
+  const repeat = days[i].cohort && days[i].cohort === days[i - 1].cohort;
+  const reason = String(days[i].repeatsCohort || '').trim();
+  if (repeat && reason) excused.push(days[i].date);
+  else if (repeat) runs.push(`${days[i - 1].date} and ${days[i].date} are both ${days[i].cohort}`);
+  else if (days[i].repeatsCohort !== undefined) staleExcuse.push(days[i].date);
 }
+if (days.length && days[0].repeatsCohort !== undefined) staleExcuse.push(days[0].date);
 if (runs.length) fail('cohorts do not alternate: ' + runs.join('; '));
-else ok('cohorts alternate across every consecutive pair of school days');
+else ok('cohorts alternate across every consecutive pair of school days' +
+  (excused.length ? ` (school-made repeats, each with a reason: ${excused.join(', ')})` : ''));
+if (staleExcuse.length) fail('repeatsCohort on a day that does not repeat its cohort: ' + staleExcuse.join(', '));
+else ok('every repeatsCohort reason sits on a day that really repeats');
 
 // Every topic is taught to both cohorts, or it is taught to half the course.
 const byTopic = new Map();
@@ -161,9 +173,31 @@ function longDate(iso) {
   return `${WEEKDAY[d.getDay()]}, ${MONTH[d.getMonth()]} ${d.getDate()}`;
 }
 
+// A day with `canvasEventIn` has its event in another file, split by class
+// period. The join for it is weaker but still real: that file must exist and
+// name the day's date, or the board is pointing at an event nobody wrote.
+const elsewhereMissing = [];
+let elsewhereCount = 0;
+for (const d of days) {
+  if (!d.canvasEventIn) continue;
+  elsewhereCount++;
+  const file = path.join(ROOT, String(d.canvasEventIn));
+  if (!fs.existsSync(file)) { elsewhereMissing.push(`${d.date}: ${d.canvasEventIn} does not exist`); continue; }
+  if (!fs.readFileSync(file, 'utf8').includes(longDate(d.date))) {
+    elsewhereMissing.push(`${d.date}: ${d.canvasEventIn} never names ${longDate(d.date)}`);
+  }
+  if (!events.includes(`${longDate(d.date)}, ${COHORT_LABEL[d.cohort]}:`)) {
+    elsewhereMissing.push(`${d.date}: calendar-events.md does not list it as built elsewhere`);
+  }
+}
+if (elsewhereMissing.length) fail(elsewhereMissing.join('; '));
+else if (elsewhereCount) ok(`all ${elsewhereCount} days with an event in another file are named there and listed`);
+
 const mismatched = [];
 for (const day of announcements.days || []) {
   if (!day.homework || !day.homework.length) continue;
+  const sched = days.find((d) => d.date === day.date);
+  if (sched && sched.canvasEventIn) continue;   // checked above
   const label = COHORT_LABEL[day.cohort];
   const taught = longDate(day.date);
   const wanted = `| ${label} | ${taught} | ${day.homeworkDue} |`;
@@ -318,6 +352,27 @@ for (const [cohort, date] of [['green', '2026-11-19'], ['silver', '2026-11-20']]
 const era3 = schedule.assessments.find((a) => a.title === 'Era 3 Exam, c. 1450 to c. 1750');
 if (era3 && era3.greenDate === '2026-11-23' && era3.silverDate === '2026-11-24') ok('Era 3 exam: Green November 23, Silver November 24');
 else fail('Era 3 exam must be November 23 for Green and November 24 for Silver');
+
+// Semester 1 finals week, from the school's Finals Week Schedule Adjustment
+// memo and Jeff (2026-11-02): December 14 became Silver and December 15
+// Green; G4 reviews December 10 and sits its final December 15; Silver
+// reviews December 11 and 14, then S1 and S2 sit theirs December 17 and S3
+// and S4 December 18.
+const finalsWeek = [
+  ['2026-12-10', 'green', 'Semester 1 Final Review'],
+  ['2026-12-11', 'silver', 'Semester 1 Final Review'],
+  ['2026-12-14', 'silver', 'Semester 1 Final Review'],
+  ['2026-12-15', 'green', 'Semester 1 Final Exam'],
+  ['2026-12-17', 'silver', 'Semester 1 Final Exam'],
+  ['2026-12-18', 'silver', 'Semester 1 Final Exam']
+];
+for (const [date, cohort, title] of finalsWeek) {
+  const actual = days.find((d) => d.date === date);
+  if (actual && actual.cohort === cohort && actual.topicTitle === title) ok(`finals week ${date}: ${cohort}, ${title}`);
+  else fail(`finals week ${date} must be ${cohort}, ${title}`);
+}
+if (days.some((d) => d.date === '2026-12-16')) fail('December 16 is G1 and G3 finals; AP World has no class that day');
+else ok('finals week: no AP World class on December 16');
 
 console.log('');
 if (failures) {

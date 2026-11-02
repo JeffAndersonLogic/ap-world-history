@@ -95,6 +95,15 @@
        homeworkDue  optional override, e.g. 'Friday'. Leave it out
                     and the builder uses this cohort's next meeting.
        note         optional one line callout ('Bring your Chromebook')
+       repeatsCohort  only when the school breaks the alternation on
+                    purpose (finals week): a sentence saying why this
+                    day has the same cohort as the class day before it.
+                    Without it, two in a row fails the push.
+       canvasEventIn  only when a day cannot be one generated Canvas
+                    event per cohort (finals, split by period): the
+                    file in docs/canvas/ that holds its event instead.
+                    The generator skips the day and lists it, and the
+                    push fails if that file does not name the date.
 
    OVERRIDES, for when the lesson wording is too long to project:
 
@@ -1181,6 +1190,154 @@ window.BEHISTORICAL_SCHEDULE = {
       modules: ['02', '05', '07', '10'],
       homework: 'Finish Checkpoint 2, and any other required 5.3 module you did not complete in class.',
       homeworkDue: 'Wednesday, December 9'
+    },
+
+    /* ---- Semester 1 Finals Week ------------------------- */
+    // From the school's 2026-2027 Finals Week Schedule Adjustment memo and
+    // Jeff, 2026-11-02. PowerSchool cannot put a Green and a Silver period on
+    // one day, so Monday, December 14 became a Silver Day and Tuesday,
+    // December 15 a Green Day. AP World meets in G4 (Green) and S1 to S4
+    // (Silver). G4's final IS its December 15 class, so its review day is
+    // December 10, its last regular class. Silver meets December 11 and 14 in
+    // a row; Jeff made both review days. Silver finals split by period:
+    // S1 and S2 Thursday, December 17; S3 and S4 Friday, December 18.
+    // Wednesday, December 16 (G1 and G3 finals) has no AP World class.
+    //
+    // `repeatsCohort` marks the two places the memo breaks the alternation on
+    // purpose. `canvasEventIn` sends these days' Canvas events to a
+    // per-period file, because one generated event per cohort cannot say
+    // "S1 and S2 Thursday, S3 and S4 Friday".
+    {
+      date: '2026-12-10',
+      cohort: 'green',
+      topicTitle: 'Semester 1 Final Review',
+      unit: 'Units 1 to 4 and Topics 5.1 to 5.3',
+      learningTargets: [
+        'I can identify which concepts from Units 1 to 4 and Topics 5.1 to 5.3 I need to review before my Semester 1 Final.',
+        'I can explain the major developments of each unit and connect them across time, from c. 1200 to the start of the Industrial Revolution.'
+      ],
+      successCriteria: [
+        'I can name the topics I am least sure of and make a plan to review them before my final.',
+        'I can explain at least one development from each unit using specific historical evidence.'
+      ],
+      homework: [
+        'Review Units 1 to 4 and Topics 5.1 to 5.3 for your Semester 1 Final, starting with the topics you marked as weakest today.',
+        'Bring your questions to MAP on Tuesday, December 15. It meets before your G4 final.'
+      ],
+      resources: [
+        { text: 'Era 2 Exam Study Guide', href: 'study-guides/era-2-exam-study-guide.html', desc: 'Units 1 and 2, c. 1200 to c. 1450.' },
+        { text: 'Era 3 Exam Study Guide', href: 'study-guides/era-3-exam-study-guide.html', desc: 'Units 3 and 4, c. 1450 to c. 1750.' },
+        { text: 'Unit 5 eBook', href: 'ebook/unit-5.html', desc: 'Topics 5.1 to 5.3.' }
+      ],
+      canvasEventIn: 'docs/canvas/finals-week-semester-1.md'
+    },
+    {
+      date: '2026-12-11',
+      cohort: 'silver',
+      topicTitle: 'Semester 1 Final Review',
+      unit: 'Units 1 to 4 and Topics 5.1 to 5.3',
+      learningTargets: [
+        'I can identify which concepts from Units 1 to 4 and Topics 5.1 to 5.3 I need to review before my Semester 1 Final.',
+        'I can explain the major developments of each unit and connect them across time, from c. 1200 to the start of the Industrial Revolution.'
+      ],
+      successCriteria: [
+        'I can name the topics I am least sure of and make a plan to review them before my final.',
+        'I can explain at least one development from each unit using specific historical evidence.'
+      ],
+      homework: [
+        'Review Units 1 to 4 and Topics 5.1 to 5.3 for your Semester 1 Final, starting with the topics you marked as weakest today.',
+        'Bring your list of weakest topics to your second review day on Monday, December 14.'
+      ],
+      resources: [
+        { text: 'Era 2 Exam Study Guide', href: 'study-guides/era-2-exam-study-guide.html', desc: 'Units 1 and 2, c. 1200 to c. 1450.' },
+        { text: 'Era 3 Exam Study Guide', href: 'study-guides/era-3-exam-study-guide.html', desc: 'Units 3 and 4, c. 1450 to c. 1750.' },
+        { text: 'Unit 5 eBook', href: 'ebook/unit-5.html', desc: 'Topics 5.1 to 5.3.' }
+      ],
+      canvasEventIn: 'docs/canvas/finals-week-semester-1.md'
+    },
+    {
+      date: '2026-12-14',
+      cohort: 'silver',
+      repeatsCohort: 'Finals week memo: Monday, December 14 changed from Green to Silver.',
+      topicTitle: 'Semester 1 Final Review',
+      unit: 'Units 1 to 4 and Topics 5.1 to 5.3',
+      learningTargets: [
+        'I can identify which concepts from Units 1 to 4 and Topics 5.1 to 5.3 I need to review before my Semester 1 Final.',
+        'I can explain the major developments of each unit and connect them across time, from c. 1200 to the start of the Industrial Revolution.'
+      ],
+      successCriteria: [
+        'I can name the topics I am least sure of and make a plan to review them before my final.',
+        'I can explain at least one development from each unit using specific historical evidence.'
+      ],
+      homework: [
+        'Keep reviewing Units 1 to 4 and Topics 5.1 to 5.3 for your Semester 1 Final, focusing on the topics you are still least sure of.',
+        'Office hours run 12:40 to 3:40 on Wednesday, December 16 and Thursday, December 17, in person, through Canvas, or by email.'
+      ],
+      // Silver's next meeting is December 17, but S3 and S4 sit their final
+      // on December 18, so the derived date would be wrong for half the room.
+      homeworkDue: 'S1 and S2 Thursday, December 17; S3 and S4 Friday, December 18',
+      note: 'Schedule change: today is a Silver Day, and tomorrow, Tuesday, December 15, is a Green Day.',
+      resources: [
+        { text: 'Era 2 Exam Study Guide', href: 'study-guides/era-2-exam-study-guide.html', desc: 'Units 1 and 2, c. 1200 to c. 1450.' },
+        { text: 'Era 3 Exam Study Guide', href: 'study-guides/era-3-exam-study-guide.html', desc: 'Units 3 and 4, c. 1450 to c. 1750.' },
+        { text: 'Unit 5 eBook', href: 'ebook/unit-5.html', desc: 'Topics 5.1 to 5.3.' }
+      ],
+      canvasEventIn: 'docs/canvas/finals-week-semester-1.md'
+    },
+    {
+      date: '2026-12-15',
+      cohort: 'green',
+      topicTitle: 'Semester 1 Final Exam',
+      unit: 'Units 1 to 4 and Topics 5.1 to 5.3',
+      // Written 2026-11-02 in the shape of the Era exam entries. The third
+      // target is the CED's Unit 5 Learning Objectives A, C and D, the ones
+      // Topics 5.1 to 5.3 carry (scripts/lib/ced-source/unit-5.js).
+      learningTargets: [
+        'I can explain and compare how states formed, kept power, and connected through trade from c. 1200 to c. 1450.',
+        'I can explain how land-based and maritime empires expanded, ruled, and changed societies from c. 1450 to c. 1750.',
+        'I can explain the ideas behind the revolutions of 1750 to 1900, their causes and effects, and how environmental factors helped start industrialization.'
+      ],
+      successCriteria: [
+        'I can support my claims with specific historical evidence from more than one region.',
+        'I can use historical reasoning, especially causation, comparison, and continuity and change, to explain developments across Units 1 to 5.'
+      ],
+      note: 'G4 Semester 1 Final today, in the regular G4 block.',
+      canvasEventIn: 'docs/canvas/finals-week-semester-1.md'
+    },
+    {
+      date: '2026-12-17',
+      cohort: 'silver',
+      topicTitle: 'Semester 1 Final Exam',
+      unit: 'Units 1 to 4 and Topics 5.1 to 5.3',
+      learningTargets: [
+        'I can explain and compare how states formed, kept power, and connected through trade from c. 1200 to c. 1450.',
+        'I can explain how land-based and maritime empires expanded, ruled, and changed societies from c. 1450 to c. 1750.',
+        'I can explain the ideas behind the revolutions of 1750 to 1900, their causes and effects, and how environmental factors helped start industrialization.'
+      ],
+      successCriteria: [
+        'I can support my claims with specific historical evidence from more than one region.',
+        'I can use historical reasoning, especially causation, comparison, and continuity and change, to explain developments across Units 1 to 5.'
+      ],
+      note: 'Half day. S1 final 8:30 to 10:00, S2 final 10:10 to 11:40. Release at 11:40.',
+      canvasEventIn: 'docs/canvas/finals-week-semester-1.md'
+    },
+    {
+      date: '2026-12-18',
+      cohort: 'silver',
+      repeatsCohort: 'Finals week memo: S3 and S4 finals fall on Friday, the day after S1 and S2.',
+      topicTitle: 'Semester 1 Final Exam',
+      unit: 'Units 1 to 4 and Topics 5.1 to 5.3',
+      learningTargets: [
+        'I can explain and compare how states formed, kept power, and connected through trade from c. 1200 to c. 1450.',
+        'I can explain how land-based and maritime empires expanded, ruled, and changed societies from c. 1450 to c. 1750.',
+        'I can explain the ideas behind the revolutions of 1750 to 1900, their causes and effects, and how environmental factors helped start industrialization.'
+      ],
+      successCriteria: [
+        'I can support my claims with specific historical evidence from more than one region.',
+        'I can use historical reasoning, especially causation, comparison, and continuity and change, to explain developments across Units 1 to 5.'
+      ],
+      note: 'Half day. S3 final 8:30 to 10:00, S4 final 10:10 to 11:40. Release at 11:40.',
+      canvasEventIn: 'docs/canvas/finals-week-semester-1.md'
     }
   ],
 
@@ -1243,6 +1400,15 @@ window.BEHISTORICAL_SCHEDULE = {
       type: 'Exam',
       greenDate: '2026-11-23',
       silverDate: '2026-11-24'
+    },
+    {
+      // Dated on the last finals day so it stays on the board through all
+      // three. No greenDate/silverDate on purpose: its Canvas event is
+      // per period, in docs/canvas/finals-week-semester-1.md.
+      date: '2026-12-18',
+      title: 'Semester 1 Final Exam',
+      detail: 'Covers Units 1 to 4 and Topics 5.1 to 5.3. G4: Tuesday, December 15, in the G4 block. S1 and S2: Thursday, December 17. S3 and S4: Friday, December 18.',
+      type: 'Exam'
     }
   ],
 
