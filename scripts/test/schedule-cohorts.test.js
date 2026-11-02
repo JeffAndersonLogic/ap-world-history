@@ -48,7 +48,7 @@ function load(file, globalName) {
 /* ---- 1. the generated files still match their sources ---- */
 for (const [script, label] of [
   ['scripts/build-announcements.js', 'assets/data/announcements.js'],
-  ['scripts/build-canvas-events.js', 'docs/canvas/calendar-events.md and assignments.md']
+  ['scripts/build-canvas-events.js', 'docs/canvas/calendar-events and assignments, .md and .html']
 ]) {
   try {
     execFileSync('node', [path.join(ROOT, script), '--check'], { cwd: ROOT, stdio: 'pipe' });

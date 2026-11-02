@@ -1120,6 +1120,67 @@ window.BEHISTORICAL_SCHEDULE = {
         'I can connect new technology, state sponsorship, and economic motives to transoceanic trade, new labor systems, and the Columbian Exchange.',
         'I can use historical reasoning, especially causation, comparison, and continuity and change, to explain how new connections across the oceans changed societies.'
       ]
+    },
+
+    /* ==== UNIT 5, REVOLUTIONS ==================================== */
+    // Dates from Jeff's Canvas calendar (December 2026) and confirmed by him
+    // on 2026-11-02: the alternation runs straight through Thanksgiving week,
+    // so Monday November 30 is Green. Required modules are the set each
+    // topic's build chose (02 First & 10, 05 Skill Builder, 07 Evidence Lab,
+    // 10 Checkpoint 2), recorded in docs/topic-audits/topic-5-1 to 5-3.
+
+    /* ---- Topic 5.1, The Enlightenment ------ */
+    {
+      date: '2026-11-30',
+      cohort: 'green',
+      topic: '5.1',
+      modules: ['02', '05', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 5.1 module you did not complete in class.'
+    },
+    {
+      date: '2026-12-01',
+      cohort: 'silver',
+      topic: '5.1',
+      modules: ['02', '05', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 5.1 module you did not complete in class.'
+    },
+
+    /* ---- Topic 5.2, Nationalism and Revolutions ------ */
+    {
+      date: '2026-12-02',
+      cohort: 'green',
+      topic: '5.2',
+      modules: ['02', '05', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 5.2 module you did not complete in class.'
+    },
+    {
+      date: '2026-12-03',
+      cohort: 'silver',
+      topic: '5.2',
+      modules: ['02', '05', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 5.2 module you did not complete in class.'
+    },
+
+    /* ---- Topic 5.3, Industrial Revolution Begins ------ */
+    // The next meetings after 5.3, Green Tuesday December 8 (Intro to the SAQ)
+    // and Silver Wednesday December 9, are not on this schedule yet, so the
+    // due dates are typed. Delete both homeworkDue lines once those days are
+    // added and the builder will derive the same dates.
+    {
+      date: '2026-12-04',
+      cohort: 'green',
+      topic: '5.3',
+      modules: ['02', '05', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 5.3 module you did not complete in class.',
+      homeworkDue: 'Tuesday, December 8'
+    },
+    {
+      date: '2026-12-07',
+      cohort: 'silver',
+      topic: '5.3',
+      modules: ['02', '05', '07', '10'],
+      homework: 'Finish Checkpoint 2, and any other required 5.3 module you did not complete in class.',
+      homeworkDue: 'Wednesday, December 9'
     }
   ],
 

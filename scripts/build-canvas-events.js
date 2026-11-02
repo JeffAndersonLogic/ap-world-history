@@ -61,10 +61,15 @@ const path = require('path');
 const vm = require('vm');
 const { cohort: lookupCohort } = require('./lib/cohorts.js');
 const { unitModules, foundationsModules } = require('./lib/module-list.js');
+const { renderPastePage, anchorFor } = require('./lib/canvas-paste-page.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(ROOT, 'docs', 'canvas', 'calendar-events.md');
 const OUT_ASSIGNMENTS = path.join(ROOT, 'docs', 'canvas', 'assignments.md');
+/* The HTML flavours: the same blocks as the two .md documents, with a preview
+   and a Copy button each. See scripts/lib/canvas-paste-page.js. */
+const OUT_HTML = path.join(ROOT, 'docs', 'canvas', 'calendar-events.html');
+const OUT_ASSIGNMENTS_HTML = path.join(ROOT, 'docs', 'canvas', 'assignments.html');
 const SCHEDULE = path.join(ROOT, 'assets', 'data', 'announcements-schedule.js');
 const BASE_URL = 'https://behistorical.com';
 
@@ -1193,11 +1198,16 @@ function build() {
   out.push('---');
   out.push('');
 
+  /* Each block goes into the .md and, as the same string, into the HTML
+     flavour. Collected here so the two documents can never be built from two
+     different calls. */
+  const eventEntries = [];
   for (const topic of topics) {
     out.push(`## ${topic.heading}`);
     out.push('');
     // A day with no topic number (a work day, an exam) has its title as its code; say it once.
-    out.push(`**Event title:** \`APW - ${topic.code}${topic.title && topic.title !== topic.code ? ' - ' + topic.title : ''}\``);
+    const eventTitle = `APW - ${topic.code}${topic.title && topic.title !== topic.code ? ' - ' + topic.title : ''}`;
+    out.push(`**Event title:** \`${eventTitle}\``);
     out.push('');
     out.push('**Assign to, one row per section:**');
     out.push('');
@@ -1207,10 +1217,22 @@ function build() {
       out.push(`| ${m.cohort.label} | ${longDate(m.date)} | ${m.due || 'nothing assigned'} |`);
     }
     out.push('');
+    const eventHtml = buildEvent(topic);
     out.push('```html');
-    out.push(buildEvent(topic));
+    out.push(eventHtml);
     out.push('```');
     out.push('');
+    eventEntries.push({
+      anchor: anchorFor(topic.code),
+      unit: topic.unit,
+      navLabel: /^(\d+\.\d+|F\d+)$/i.test(topic.code) ? topic.code : topic.heading,
+      heading: topic.heading,
+      titleLabel: 'Event title',
+      title: eventTitle,
+      rowHeads: ['Section', 'Taught', 'Work due'],
+      rows: topic.meetings.map((m) => [m.cohort.label, longDate(m.date), m.due || 'nothing assigned']),
+      html: eventHtml
+    });
   }
 
   if (assessmentEvents.length) {
@@ -1235,10 +1257,22 @@ function build() {
         out.push(`| ${m.cohort.label} | ${longDate(m.date)} |`);
       }
       out.push('');
+      const assessmentHtml = buildAssessmentEvent(topic);
       out.push('```html');
-      out.push(buildAssessmentEvent(topic));
+      out.push(assessmentHtml);
       out.push('```');
       out.push('');
+      eventEntries.push({
+        anchor: anchorFor(topic.code),
+        unit: 'Quizzes and Exams',
+        navLabel: topic.code,
+        heading: topic.heading,
+        titleLabel: 'Event title',
+        title: `APW - ${topic.code}`,
+        rowHeads: ['Section', 'Date'],
+        rows: topic.meetings.map((m) => [m.cohort.label, longDate(m.date)]),
+        html: assessmentHtml
+      });
     }
   }
 
@@ -1319,15 +1353,17 @@ function build() {
   asg.push('---');
   asg.push('');
 
+  const assignmentEntries = [];
   for (const topic of built) {
     asg.push(`## ${topic.heading}`);
     asg.push('');
     asg.push(`**Topic:** \`${topic.code}\`  **Full title:** ${topic.title || '(none)'}`);
     asg.push('');
-    asg.push(`**Required:** ${topic.required.length} of ${topic.modules.length} modules, ` +
+    const requiredLine = `${topic.required.length} of ${topic.modules.length} modules, ` +
       `${topic.required.map((m) => m.number).join(', ')}` +
       (topic.outsideWork && topic.outsideWork.tasks && topic.outsideWork.tasks.length
-        ? `, plus in ${topic.outsideWork.where}: ${topic.outsideWork.tasks.join(', ')}` : ''));
+        ? `, plus in ${topic.outsideWork.where}: ${topic.outsideWork.tasks.join(', ')}` : '');
+    asg.push(`**Required:** ${requiredLine}`);
     asg.push('');
     asg.push('**Assign to, one row per section:**');
     asg.push('');
@@ -1337,10 +1373,22 @@ function build() {
       asg.push(`| ${m.cohort.label} | ${longDate(m.date)} | ${m.due || 'no later meeting'} |`);
     }
     asg.push('');
+    const assignmentHtml = buildAssignment(topic);
     asg.push('```html');
-    asg.push(buildAssignment(topic));
+    asg.push(assignmentHtml);
     asg.push('```');
     asg.push('');
+    assignmentEntries.push({
+      anchor: anchorFor(topic.code),
+      unit: topic.unit,
+      navLabel: /^(\d+\.\d+|F\d+)$/i.test(topic.code) ? topic.code : topic.heading,
+      heading: topic.heading,
+      meta: [['Required', requiredLine],
+        ['Assignment name', 'Not generated: it must match PowerSchool character for character. See Section 2 of CANVAS-BUILD-GUIDE.md.']],
+      rowHeads: ['Section', 'Taught', 'Due'],
+      rows: topic.meetings.map((m) => [m.cohort.label, longDate(m.date), m.due || 'no later meeting']),
+      html: assignmentHtml
+    });
   }
 
   /* Pending topics are listed in teaching order rather than collected out of
@@ -1372,7 +1420,44 @@ function build() {
     `out of ${assignmentTopics.length} topics in the schedule.`);
   asg.push('');
 
-  return { events: out.join('\n'), assignments: asg.join('\n') };
+  const eventsSummary = `${topics.length} events` +
+    (assessmentEvents.length ? ` plus ${assessmentEvents.length} quiz/exam event(s).` : '.');
+  const eventsHtml = renderPastePage({
+    kind: 'events',
+    title: 'Canvas Calendar Events',
+    intro: 'One event per topic, shared by both rooms. The dates live in Canvas&rsquo;s <strong>Assign to</strong>, one row per section, using the table printed with each event.',
+    steps: [
+      'Canvas Calendar, click the day, <strong>Edit</strong>, then <strong>More Options</strong>.',
+      'Title the event exactly as given (use <strong>Copy title</strong>).',
+      'In the Rich Content Editor click the <strong>&lt;/&gt;</strong> icon to open the HTML editor. <strong>Never paste into the visual editor</strong>: it collapses the table.',
+      'Press <strong>Copy HTML</strong> and paste the whole block.',
+      'Switch back to the visual editor, delete <code>[INSERT ASSIGNMENT LINK]</code>, and insert the real assignment from the course-links panel on the right. Do not hand-type that link.',
+      'In <strong>Assign to</strong>, add one row per section from the table, remove the Everyone row, and save.'
+    ],
+    entries: eventEntries,
+    summary: eventsSummary
+  });
+  const assignmentsHtml = renderPastePage({
+    kind: 'assignments',
+    title: 'Canvas Assignment Bodies',
+    intro: 'One assignment per topic, the graded companion to its calendar event. Built from the same schedule and lesson data, so the two cannot disagree.',
+    steps: [
+      'Canvas, Assignments, the assignment for this topic, <strong>Edit</strong>.',
+      'In the Rich Content Editor click the <strong>&lt;/&gt;</strong> icon to open the HTML editor. <strong>Never paste into the visual editor</strong>.',
+      'Press <strong>Copy HTML</strong> and paste the whole block.',
+      'In <strong>Assign to</strong>, add one row per section from the table, remove the Everyone row, and save.',
+      'The assignment <strong>name</strong> is yours to type: identical in Canvas and PowerSchool, plain ASCII.'
+    ],
+    entries: assignmentEntries,
+    summary: `${built.length} assignments built, ${pending.length} pending.`
+  });
+
+  return {
+    events: out.join('\n'),
+    assignments: asg.join('\n'),
+    eventsHtml,
+    assignmentsHtml
+  };
 }
 
 function main() {
@@ -1393,7 +1478,9 @@ function main() {
      refusing. See the header of buildAssignment. */
   const files = [
     { path: OUT, text: docs.events, label: 'docs/canvas/calendar-events.md' },
-    { path: OUT_ASSIGNMENTS, text: docs.assignments, label: 'docs/canvas/assignments.md' }
+    { path: OUT_ASSIGNMENTS, text: docs.assignments, label: 'docs/canvas/assignments.md' },
+    { path: OUT_HTML, text: docs.eventsHtml, label: 'docs/canvas/calendar-events.html' },
+    { path: OUT_ASSIGNMENTS_HTML, text: docs.assignmentsHtml, label: 'docs/canvas/assignments.html' }
   ];
 
   if (check) {
@@ -1409,7 +1496,7 @@ function main() {
       console.error('      Run: node scripts/build-canvas-events.js');
       process.exit(1);
     }
-    console.log('OK  calendar-events.md and assignments.md match the schedule and the lesson data.');
+    console.log('OK  calendar-events and assignments (.md and .html) match the schedule and the lesson data.');
     return;
   }
 

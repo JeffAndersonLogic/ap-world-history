@@ -47,6 +47,7 @@ const SUITES = {
     ['scripts/test/canvas-paragraphs.test.js', 'Canvas blank-line round trip'],
     ['scripts/test/canvas-rich-clipboard.test.js', 'Canvas rich hierarchy + HTML/plain clipboard contract'],
     ['scripts/test/canvas-zip.test.js', 'zip reader + CLI/browser CSV parity'],
+    ['scripts/test/canvas-paste-page.test.js', 'Canvas paste pages carry the .md blocks byte for byte'],
     ['scripts/test/readings-reproducible.test.js', 'generated readings match the content model'],
     ['scripts/test/save-health.test.js', 'a failed draft save is counted, not lost'],
     ['scripts/test/sync-engine.test.js', 'backup engine: restore, never overwrite, never write empty, bounded writes, sign-in domains'],

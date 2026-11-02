@@ -2826,6 +2826,379 @@ block so the short name can be written from them, not guessed at here.
 </table>
 ```
 
+## Topic 5.1: The Enlightenment
+
+**Topic:** `5.1`  **Full title:** The Enlightenment
+
+**Required:** 4 of 10 modules, 02, 05, 07, 10
+
+**Assign to, one row per section:**
+
+| Section | Taught | Due |
+| --- | --- | --- |
+| Green Day | Monday, November 30 | Wednesday, December 2 |
+| Silver Day | Tuesday, December 1 | Thursday, December 3 |
+
+```html
+<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
+    <img src="https://behistorical.com/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
+    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 5: Revolutions</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 5.1: The Enlightenment</div>
+    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Monday, November 30</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Tuesday, December 1</span></span>
+    </div>
+</div>
+<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
+    <tbody>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Last unit ended with a question: by 1750 the oceans were joined and states were stronger than ever, so who do those states belong to? Today you meet the writers who asked every king, church, and noble the same question: by what right? You will learn their new answers, natural rights, the social contract, and religious toleration, see how the ideas spread before the Atlantic revolutions, and follow them into the 1800s, as reformers ended slavery and serfdom, widened the vote, and women demanded equal rights. Then you decide how much had really changed by 1900.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">REQUIRED WORK</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718; margin: 0 0 12px;">Today you are responsible only for the modules listed under <strong>Required Work</strong>. You are welcome to use the other BeHistorical modules for review, support, or enrichment, but they are not required unless your teacher tells you otherwise.</p>
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: By What Right?</em>, plus all three check questions inside the reading.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Find the Claim.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose TWO cards. For each, decide what claim the source makes or what it shows about Enlightenment ideas and their effects. An object can make a claim too, without a single sentence of argument.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> One reform movement, what drove it, how far it got by 1900, and what had still not changed.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OPTIONAL SUPPORT / GO DEEPER</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong></li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> Seneca Falls, New York, July 20, 1848.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> One new Enlightenment idea, the old answer it challenged, how the ideas spread before the Atlantic revolutions, and how the people became the nation.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> The Declaration of Sentiments, Seneca Falls, 1848.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Paris, 1788 to 1789. A publisher must decide what a pamphlet on natural rights will claim, whose voices it will print, and who will get to read it, when the people paying for it, the writers, and the people the words leave out all want different things.</li>
+                </ul>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can explain the new way of thinking Enlightenment writers used to question where rulers got their power, and at least one of their new ideas: natural rights, the social contract, or religious toleration.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how Enlightenment ideas spread and came before the revolutions in the Atlantic world, and how the idea that a state belongs to its people became loyalty to the nation.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how reform movements, pushed by Enlightenment ideas, religious faith, and other causes, ended slavery and serfdom, widened the vote, and demanded women's rights between 1750 and 1900, and what had still not changed by 1900.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can explain one new Enlightenment idea (natural rights, the social contract, or religious toleration), name a writer who argued it (Locke, Rousseau, or Voltaire), and explain how it challenged the old answer that rulers' power came from God, tradition, and birth.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain one way Enlightenment ideas spread (books such as the Encyclopédie, salons, coffeehouses, or letters), explain what it means that the ideas came before the revolutions that began in 1775, 1789, 1791, and 1810, and explain how "the people" came to mean the nation.</li>
+                    <li style="margin: 0 0 6px 0;">I can choose one reform movement (abolition, the end of serfdom, the right to vote, or women's rights), explain what pushed it forward (Enlightenment ideas, religious faith, or another cause) with one piece of evidence (such as the 1787 antislavery society, Russia in 1861, Olympe de Gouges, Mary Wollstonecraft, or Seneca Falls), and name what it had changed by 1900 and one thing that had not.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">HOW TO SUBMIT</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ol style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 8px 0;">Work the four modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
+                    <li style="margin: 0 0 8px 0;">Scroll to the <strong>Save Your Work</strong> panel, below the module cards.</li>
+                    <li style="margin: 0 0 8px 0;">Click <strong>Gather All My Work</strong>, then <strong>Copy to Clipboard</strong>.</li>
+                    <li style="margin: 0 0 8px 0;">Come back here, paste into the text box, and submit.</li>
+                </ol>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">The First &amp; 10 answers are the fragile ones. The reading opens in its own window, so if you never open it, those three slots come through blank.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://behistorical.com/unit-5/lesson-5-1-enlightenment.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 5.1 - The Enlightenment</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DUE</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 0 0 10px;">Most of this work is meant to be completed during class. If it is not finished in the block, the next class meeting is the normal soft deadline, and the hard deadline is before the next unit exam, unless your teacher tells you otherwise.</p>
+                <p style="margin: 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px;">Green due Wednesday, December 2</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px;">Silver due Thursday, December 3</span></span>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
+## Topic 5.2: Nationalism and Revolutions
+
+**Topic:** `5.2`  **Full title:** Nationalism and Revolutions
+
+**Required:** 4 of 10 modules, 02, 05, 07, 10
+
+**Assign to, one row per section:**
+
+| Section | Taught | Due |
+| --- | --- | --- |
+| Green Day | Wednesday, December 2 | Friday, December 4 |
+| Silver Day | Thursday, December 3 | Monday, December 7 |
+
+```html
+<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
+    <img src="https://behistorical.com/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
+    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 5: Revolutions</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 5.2: Nationalism and Revolutions</div>
+    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Wednesday, December 2</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Thursday, December 3</span></span>
+    </div>
+</div>
+<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
+    <tbody>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">By 1789 the new ideas about rights were everywhere educated people read, but ideas alone never overthrew a king. Today you find out what else it took: a grievance, the words to name it, and a chance to act, in America, France, Haiti, and Spanish America, and you see how each revolution helped another one start or win. Then you follow what they left behind, new countries, new ideas about government, and a new loyalty to the nation that joined Italy and Germany together and broke the Balkans away from the Ottoman Empire.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">REQUIRED WORK</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718; margin: 0 0 12px;">Today you are responsible only for the modules listed under <strong>Required Work</strong>. You are welcome to use the other BeHistorical modules for review, support, or enrichment, but they are not required unless your teacher tells you otherwise.</p>
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: How Revolutions Made Nations</em>, plus all three check questions inside the reading.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Compare Two Sources.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose at least two evidence cards. For each, say what kind of source it is and who made it, name one precise detail rather than summarizing it, explain what that detail shows about a cause or an effect of the revolutions, and name one thing the source cannot tell you. The caption identifies the source; it does not supply your conclusion.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> What a nation is, how governments used shared loyalty, one country nationalism joined together, and one people it pulled away from an empire.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OPTIONAL SUPPORT / GO DEEPER</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong></li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> Les Cayes, Haiti, March 1816.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> One revolution's grievance, words, and chance, what it created, and how it was linked to another revolution.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Simón Bolívar, the Letter from Jamaica, 1815.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Port-Républicain (Port-au-Prince), Saint-Domingue, spring 1801. The revolution has ended slavery in the colony, and France still claims it. A council must write a constitution that protects that freedom, keeps people fed and the colony defended, and decides how far to stand against France.</li>
+                </ul>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can explain how a grievance, the words of a revolutionary document, and a chance to act came together to cause revolutions against kings and empires between 1750 and 1900.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain what the American, French, Haitian, and Spanish American revolutions created, including independent states in the Americas and new ideas about government such as liberalism and democracy, and how each revolution helped another one start or win.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how a new loyalty to the nation, built on a shared language, religion, customs, and homeland, was used by governments and by nationalists to join some states together and to pull peoples away from empires.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can choose one revolution (American, French, Haitian, or Spanish American) and name its grievance (such as British taxes, noble privilege and bread prices, slavery, or creoles shut out of high office), its words (America: the Declaration of Independence; France: the Declaration of the Rights of Man and of the Citizen; Haiti: that French declaration as free people of color claimed it, or Toussaint Louverture's proclamation of 1793; Spanish America: Bolívar's Letter from Jamaica, written five years into the fighting), and its chance (such as Britain's distance, a bankrupt king, a France in revolution, or Napoleon's invasion of Spain).</li>
+                    <li style="margin: 0 0 6px 0;">I can name what one revolution created (such as the United States, a republic under its 1787 Constitution, Haiti in 1804, or the independent countries of Spanish America by 1826), explain one link in the chain (such as France's debt from the American war, or Haiti's help to Bolívar in 1816), and explain liberalism or democracy as a new idea about government.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain what a nation is (people who share a language, a religion, customs, and a homeland), give one example of a government using national loyalty (revolutionary France in 1793) or building a shared loyalty to hold back nationalism (Ottomanism), and give one example of nationalism joining states (Italy in 1861 or Germany in 1871) and one of it pulling a people away from an empire (Greece in 1830, or Serbia, Montenegro, or Romania in 1878).</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">HOW TO SUBMIT</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ol style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 8px 0;">Work the four modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
+                    <li style="margin: 0 0 8px 0;">Scroll to the <strong>Save Your Work</strong> panel, below the module cards.</li>
+                    <li style="margin: 0 0 8px 0;">Click <strong>Gather All My Work</strong>, then <strong>Copy to Clipboard</strong>.</li>
+                    <li style="margin: 0 0 8px 0;">Come back here, paste into the text box, and submit.</li>
+                </ol>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">The First &amp; 10 answers are the fragile ones. The reading opens in its own window, so if you never open it, those three slots come through blank.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://behistorical.com/unit-5/lesson-5-2-nationalism-and-revolutions.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 5.2 - Nationalism and Revolutions</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DUE</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 0 0 10px;">Most of this work is meant to be completed during class. If it is not finished in the block, the next class meeting is the normal soft deadline, and the hard deadline is before the next unit exam, unless your teacher tells you otherwise.</p>
+                <p style="margin: 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px;">Green due Friday, December 4</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px;">Silver due Monday, December 7</span></span>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
+## Topic 5.3: The Industrial Revolution Begins
+
+**Topic:** `5.3`  **Full title:** The Industrial Revolution Begins
+
+**Required:** 4 of 10 modules, 02, 05, 07, 10
+
+**Assign to, one row per section:**
+
+| Section | Taught | Due |
+| --- | --- | --- |
+| Green Day | Friday, December 4 | Tuesday, December 8 |
+| Silver Day | Monday, December 7 | Wednesday, December 9 |
+
+```html
+<div style="background-color: #1a1c1d; border-top: 4px solid #c9a46a; padding: 14px 18px; color: #f5f0e7;">
+    <img src="https://behistorical.com/assets/logos/behistorical-wordmark-light.png" alt="BeHistorical" style="display: block; height: 30px; width: auto; max-width: 100%; border: 0;">
+    <div style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #c9a46a; padding-top: 4px;">AP World History &middot; Unit 5: Revolutions</div>
+    <div style="font-family: Cinzel, 'Trajan Pro', Georgia, serif; font-size: 17px; font-weight: bold; color: #f5f0e7; padding-top: 6px;">Topic 5.3: The Industrial Revolution Begins</div>
+    <div style="padding-top: 10px; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; color: #f5f0e7;">
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #7FB496;">Green Day</span><span style="padding-left: 8px; color: #f5f0e7;">Friday, December 4</span></span>
+        <span style="display: inline-block; padding-right: 22px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 8px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1C6;">Silver Day</span><span style="padding-left: 8px; color: #f5f0e7;">Monday, December 7</span></span>
+    </div>
+</div>
+<table style="border-collapse: collapse; width: 100%; border-color: #ddd2be; border-style: solid;" border="1" cellpadding="10">
+    <tbody>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OVERVIEW</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.55; color: #151718; margin: 0;">Even before Paris argued about rights, a different revolution had begun in Britain: a change in how things were made. Today you find out why it began there. Nature gave Britain coal, iron, and water close together, and a shortage of wood that pushed it to coal. People built the rest: better farms, growing towns, laws that protected property, cotton from abroad, and money to invest. Then you see what the factory changed: it put the work in one place and gave each worker one small job.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">REQUIRED WORK</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718; margin: 0 0 12px;">Today you are responsible only for the modules listed under <strong>Required Work</strong>. You are welcome to use the other BeHistorical modules for review, support, or enrichment, but they are not required unless your teacher tells you otherwise.</p>
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">02</strong> <strong>First &amp; 10 Reading.</strong> <em>First &amp; 10: Coal, Water, and One Roof</em>, plus all three check questions inside the reading.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">05</strong> <strong>AP Skill Builder.</strong> Explain a Process, Step by Step.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">07</strong> <strong>Evidence Lab.</strong> Choose at least two evidence cards. For each, say what kind of source it is and who made it, name one precise detail rather than summarizing it, explain what that detail shows about a cause of industrialization or about the factory system, and name one thing the source cannot tell you. The caption identifies the source; it does not supply your conclusion.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">10</strong> <strong>Checkpoint 2.</strong> How the factory gathered production in one place, how it split the work into specialized jobs, and why that made more goods.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">OPTIONAL SUPPORT / GO DEEPER</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">01</strong> <strong>Map &amp; Geography Check.</strong></li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">03</strong> <strong>Content Delivery.</strong></li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">04</strong> <strong>BeSurreal.</strong> Cromford, Derbyshire, 1772.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">06</strong> <strong>Checkpoint 1.</strong> Two things nature gave Britain and two things people built, what each made cheaper or possible, and how two of them worked together.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">08</strong> <strong>Primary Source.</strong> Adam Smith and Andrew Ure on Dividing the Work.</li>
+                    <li style="margin: 0 0 6px 0;"><strong style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; color: #4a2a15;">09</strong> <strong>BeInTheRoom.</strong> Nottingham, early 1771. At Richard Arkwright's partners' table, decide where to build the new spinning mill, how to divide the work inside it, and how to pay for it and protect it.</li>
+                </ul>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">These resources are available if you need more explanation, practice, or review. Gather All My Work collects every box on the page, so these will come through empty if you skip them. That is expected, not a mistake.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">LEARNING TARGETS</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can explain how Britain's environment (its coal, iron, and timber, and its rivers, coast, and canals) and the things people built (better farming, growing towns, laws that protected property, resources from abroad, and saved-up capital) worked together to cause industrial production to grow, starting in Britain.</li>
+                    <li style="margin: 0 0 6px 0;">I can explain how the factory system gathered production in a single place and split the work into specialized jobs, and why that let a mill make more goods.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">SUCCESS CRITERIA</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ul style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 6px 0;">I can explain two things nature gave Britain (such as coal and iron, the shortage of wood, or rivers, the coast, and canals) and two things people built (such as better farming, towns, patents, cotton from abroad, or saved-up money). For each one, I can say what it made cheaper or possible. I can show one way two of them worked together.</li>
+                    <li style="margin: 0 0 6px 0;">I can describe the putting-out system, explain how a mill like Arkwright's at Cromford (1771) brought workers to water-powered machines in one building, explain how the work in a cotton mill was split into steps (carding, drawing, roving, and spinning) with each worker tending one, use Adam Smith's pin workshop (1776) to explain why splitting the work made more goods, and connect the factory to one environmental factor, such as the water that turned its wheel.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">HOW TO SUBMIT</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <ol style="margin: 0 0 0 18px; padding: 0; font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.5; color: #151718;">
+                    <li style="margin: 0 0 8px 0;">Work the four modules above in BeHistorical. <strong>Typing saves on this computer only, and saving is not submitting.</strong> Your drafts do not follow you to another Chromebook and your teacher cannot see them.</li>
+                    <li style="margin: 0 0 8px 0;">Scroll to the <strong>Save Your Work</strong> panel, below the module cards.</li>
+                    <li style="margin: 0 0 8px 0;">Click <strong>Gather All My Work</strong>, then <strong>Copy to Clipboard</strong>.</li>
+                    <li style="margin: 0 0 8px 0;">Come back here, paste into the text box, and submit.</li>
+                </ol>
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 10px 0 0 0;">The First &amp; 10 answers are the fragile ones. The reading opens in its own window, so if you never open it, those three slots come through blank.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">BeHistorical Link</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; margin: 0;"><a class="inline_disabled" href="https://behistorical.com/unit-5/lesson-5-3-industrial-revolution-begins.html" target="_blank" rel="noopener" style="color: #6b3e1f; font-weight: bold;">Topic 5.3 - The Industrial Revolution Begins</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 22%; vertical-align: top; background-color: #f5f0e7; border-left: 5px solid #6b3e1f;">
+                <h3 style="font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; letter-spacing: 0.12em; text-transform: uppercase; color: #6b3e1f; margin: 0;">DUE</h3>
+            </td>
+            <td style="vertical-align: top; background-color: #fffdf7;">
+                <p style="font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif; font-size: 14px; color: #57544c; margin: 0 0 10px;">Most of this work is meant to be completed during class. If it is not finished in the block, the next class meeting is the normal soft deadline, and the hard deadline is before the next unit exam, unless your teacher tells you otherwise.</p>
+                <p style="margin: 0;">
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #2F5C46; border: 1px solid #2F5C46; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #2F5C46; border-radius: 50%; background-color: #2F5C46; color: #1a1c1d; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">G</span><span style="padding-left: 7px;">Green due Tuesday, December 8</span></span>
+                    <span style="display: inline-block; margin: 0 10px 6px 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.06em; color: #545B5F; border: 1px solid #8A9298; border-radius: 2px; padding: 4px 9px;"><span style="display: inline-block; width: 22px; height: 22px; line-height: 20px; text-align: center; border: 2px solid #8A9298; border-radius: 50%; background-color: transparent; color: #8A9298; font-family: Montserrat, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; vertical-align: middle;">S</span><span style="padding-left: 7px;">Silver due Wednesday, December 9</span></span>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
 ---
 
 ## Not built yet
@@ -2852,4 +3225,4 @@ in `announcements-schedule.js`, and rerun.
 
 ---
 
-22 assignments built, 12 pending, out of 34 topics in the schedule.
+25 assignments built, 12 pending, out of 37 topics in the schedule.

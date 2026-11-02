@@ -35,7 +35,8 @@ function renderTeacherIndex(tools, rosTopics, cohorts, interactiveTopics = []) {
     const rows = lessons.map(t => (
       '          <a class="tc-lesson-row" data-topic="' + esc(t.key) + '" href="' + esc(t.href) + '">\n' +
       '            <span class="tc-topic-pill">Topic ' + esc(t.key) + '</span>\n' +
-      '            <span class="tc-lesson-title">' + esc(t.title || t.label) + '</span>\n' +
+      '            <span class="tc-lesson-title">' + esc(t.title || t.label) +
+        (t.undated ? ' <small class="tc-undated">(not on the schedule yet)</small>' : '') + '</span>\n' +
       '            <span class="tc-open">Open <span aria-hidden="true">&rarr;</span></span>\n' +
       '          </a>\n'
     )).join('');
@@ -140,6 +141,7 @@ a{color:inherit}
 .tc-lesson-row.active{background:rgba(201,164,106,.12);box-shadow:inset 3px 0 0 var(--antique-gold)}
 .tc-topic-pill{font-family:var(--ui);font-size:.64rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--antique-gold)}
 .tc-lesson-title{font-family:var(--ui);font-size:.84rem;font-weight:650;min-width:0}
+.tc-undated{font-weight:500;opacity:.75;white-space:nowrap}
 .tc-open{font-family:var(--ui);font-size:.68rem;font-weight:800;color:var(--muted-sandstone);white-space:nowrap}
 .tc-utilities{margin-top:2rem}
 .tc-utility-card{display:block;background:var(--warm-paper);color:var(--ink);border-radius:12px;padding:1.15rem 1.25rem;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.2)}

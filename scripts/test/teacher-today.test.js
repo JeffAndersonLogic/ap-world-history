@@ -66,8 +66,17 @@ console.log(`\n${W}The Today panel routes a date to the right teacher surface${X
 // 1. Every registered interactive lesson is reachable on every day it is taught.
 //    Both cohorts, because a topic is taught twice and the second morning is
 //    exactly as easy to strand as the first.
+//    A lesson marked `undated` is built and listed before its class dates
+//    exist (Jeff, 2026-11-02, for Unit 5). It must really have no dates: the
+//    flag on a scheduled topic would be a stale label, so that fails too.
+const UNDATED = new Set(TOOLS.filter(t => t.kind === 'lesson' && t.undated).map(t => t.key));
 for (const entry of INTERACTIVE_TOPICS) {
   const dates = dayFor(entry.key);
+  if (UNDATED.has(entry.key)) {
+    ok(`Topic ${entry.key} is listed before its dates, and really has none`, dates.length === 0,
+      dates.length ? 'scheduled on ' + dates.join(', ') + ': remove `undated` from its TOOLS entry' : 'undated');
+    continue;
+  }
   ok(`Topic ${entry.key} is scheduled at all`, dates.length > 0, dates.join(', ') || 'never scheduled');
   for (const date of dates) {
     const got = resolve(date);

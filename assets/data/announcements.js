@@ -2295,6 +2295,170 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can use historical reasoning, especially causation, comparison, and continuity and change, to explain how new connections across the oceans changed societies.' }
       ],
       homework: []
+    },
+    /* 2026-11-30  <-  lesson-5-1-enlightenment.js */
+    {
+      date: '2026-11-30',
+      cohort: 'green',
+      unit: 'Unit 5: Revolutions',
+      topic: 'The Enlightenment',
+      learningTargets: [
+        { text: 'I can explain the new way of thinking Enlightenment writers used to question where rulers got their power, and at least one of their new ideas: natural rights, the social contract, or religious toleration.', label: 'Cultural Developments and Interactions' },
+        { text: 'I can explain how Enlightenment ideas spread and came before the revolutions in the Atlantic world, and how the idea that a state belongs to its people became loyalty to the nation.', label: 'Cultural Developments and Interactions' },
+        { text: 'I can explain how reform movements, pushed by Enlightenment ideas, religious faith, and other causes, ended slavery and serfdom, widened the vote, and demanded women\'s rights between 1750 and 1900, and what had still not changed by 1900.', label: 'Social Interactions and Organization' }
+      ],
+      successCriteria: [
+        { text: 'I can explain one new Enlightenment idea (natural rights, the social contract, or religious toleration), name a writer who argued it (Locke, Rousseau, or Voltaire), and explain how it challenged the old answer that rulers\' power came from God, tradition, and birth.', label: 'Cultural Developments and Interactions' },
+        { text: 'I can explain one way Enlightenment ideas spread (books such as the Encyclopédie, salons, coffeehouses, or letters), explain what it means that the ideas came before the revolutions that began in 1775, 1789, 1791, and 1810, and explain how "the people" came to mean the nation.', label: 'Cultural Developments and Interactions' },
+        { text: 'I can choose one reform movement (abolition, the end of serfdom, the right to vote, or women\'s rights), explain what pushed it forward (Enlightenment ideas, religious faith, or another cause) with one piece of evidence (such as the 1787 antislavery society, Russia in 1861, Olympe de Gouges, Mary Wollstonecraft, or Seneca Falls), and name what it had changed by 1900 and one thing that had not.', label: 'Social Interactions and Organization' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 5.1 module you did not complete in class.', due: 'Wednesday, December 2' }
+      ],
+      homeworkDue: 'Wednesday, December 2',
+      dueDate: '2026-12-02'
+    },
+    /* 2026-12-01  <-  lesson-5-1-enlightenment.js */
+    {
+      date: '2026-12-01',
+      cohort: 'silver',
+      unit: 'Unit 5: Revolutions',
+      topic: 'The Enlightenment',
+      learningTargets: [
+        { text: 'I can explain the new way of thinking Enlightenment writers used to question where rulers got their power, and at least one of their new ideas: natural rights, the social contract, or religious toleration.', label: 'Cultural Developments and Interactions' },
+        { text: 'I can explain how Enlightenment ideas spread and came before the revolutions in the Atlantic world, and how the idea that a state belongs to its people became loyalty to the nation.', label: 'Cultural Developments and Interactions' },
+        { text: 'I can explain how reform movements, pushed by Enlightenment ideas, religious faith, and other causes, ended slavery and serfdom, widened the vote, and demanded women\'s rights between 1750 and 1900, and what had still not changed by 1900.', label: 'Social Interactions and Organization' }
+      ],
+      successCriteria: [
+        { text: 'I can explain one new Enlightenment idea (natural rights, the social contract, or religious toleration), name a writer who argued it (Locke, Rousseau, or Voltaire), and explain how it challenged the old answer that rulers\' power came from God, tradition, and birth.', label: 'Cultural Developments and Interactions' },
+        { text: 'I can explain one way Enlightenment ideas spread (books such as the Encyclopédie, salons, coffeehouses, or letters), explain what it means that the ideas came before the revolutions that began in 1775, 1789, 1791, and 1810, and explain how "the people" came to mean the nation.', label: 'Cultural Developments and Interactions' },
+        { text: 'I can choose one reform movement (abolition, the end of serfdom, the right to vote, or women\'s rights), explain what pushed it forward (Enlightenment ideas, religious faith, or another cause) with one piece of evidence (such as the 1787 antislavery society, Russia in 1861, Olympe de Gouges, Mary Wollstonecraft, or Seneca Falls), and name what it had changed by 1900 and one thing that had not.', label: 'Social Interactions and Organization' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 5.1 module you did not complete in class.', due: 'Thursday, December 3' }
+      ],
+      homeworkDue: 'Thursday, December 3',
+      dueDate: '2026-12-03'
+    },
+    /* 2026-12-02  <-  lesson-5-2-nationalism-and-revolutions.js */
+    {
+      date: '2026-12-02',
+      cohort: 'green',
+      unit: 'Unit 5: Revolutions',
+      topic: 'Nationalism and Revolutions',
+      learningTargets: [
+        { text: 'I can explain how a grievance, the words of a revolutionary document, and a chance to act came together to cause revolutions against kings and empires between 1750 and 1900.', label: 'Governance' },
+        { text: 'I can explain what the American, French, Haitian, and Spanish American revolutions created, including independent states in the Americas and new ideas about government such as liberalism and democracy, and how each revolution helped another one start or win.', label: 'Governance' },
+        { text: 'I can explain how a new loyalty to the nation, built on a shared language, religion, customs, and homeland, was used by governments and by nationalists to join some states together and to pull peoples away from empires.', label: 'Governance' }
+      ],
+      successCriteria: [
+        { text: 'I can choose one revolution (American, French, Haitian, or Spanish American) and name its grievance (such as British taxes, noble privilege and bread prices, slavery, or creoles shut out of high office), its words (America: the Declaration of Independence; France: the Declaration of the Rights of Man and of the Citizen; Haiti: that French declaration as free people of color claimed it, or Toussaint Louverture\'s proclamation of 1793; Spanish America: Bolívar\'s Letter from Jamaica, written five years into the fighting), and its chance (such as Britain\'s distance, a bankrupt king, a France in revolution, or Napoleon\'s invasion of Spain).', label: 'Governance' },
+        { text: 'I can name what one revolution created (such as the United States, a republic under its 1787 Constitution, Haiti in 1804, or the independent countries of Spanish America by 1826), explain one link in the chain (such as France\'s debt from the American war, or Haiti\'s help to Bolívar in 1816), and explain liberalism or democracy as a new idea about government.', label: 'Governance' },
+        { text: 'I can explain what a nation is (people who share a language, a religion, customs, and a homeland), give one example of a government using national loyalty (revolutionary France in 1793) or building a shared loyalty to hold back nationalism (Ottomanism), and give one example of nationalism joining states (Italy in 1861 or Germany in 1871) and one of it pulling a people away from an empire (Greece in 1830, or Serbia, Montenegro, or Romania in 1878).', label: 'Governance' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 5.2 module you did not complete in class.', due: 'Friday, December 4' }
+      ],
+      homeworkDue: 'Friday, December 4',
+      dueDate: '2026-12-04'
+    },
+    /* 2026-12-03  <-  lesson-5-2-nationalism-and-revolutions.js */
+    {
+      date: '2026-12-03',
+      cohort: 'silver',
+      unit: 'Unit 5: Revolutions',
+      topic: 'Nationalism and Revolutions',
+      learningTargets: [
+        { text: 'I can explain how a grievance, the words of a revolutionary document, and a chance to act came together to cause revolutions against kings and empires between 1750 and 1900.', label: 'Governance' },
+        { text: 'I can explain what the American, French, Haitian, and Spanish American revolutions created, including independent states in the Americas and new ideas about government such as liberalism and democracy, and how each revolution helped another one start or win.', label: 'Governance' },
+        { text: 'I can explain how a new loyalty to the nation, built on a shared language, religion, customs, and homeland, was used by governments and by nationalists to join some states together and to pull peoples away from empires.', label: 'Governance' }
+      ],
+      successCriteria: [
+        { text: 'I can choose one revolution (American, French, Haitian, or Spanish American) and name its grievance (such as British taxes, noble privilege and bread prices, slavery, or creoles shut out of high office), its words (America: the Declaration of Independence; France: the Declaration of the Rights of Man and of the Citizen; Haiti: that French declaration as free people of color claimed it, or Toussaint Louverture\'s proclamation of 1793; Spanish America: Bolívar\'s Letter from Jamaica, written five years into the fighting), and its chance (such as Britain\'s distance, a bankrupt king, a France in revolution, or Napoleon\'s invasion of Spain).', label: 'Governance' },
+        { text: 'I can name what one revolution created (such as the United States, a republic under its 1787 Constitution, Haiti in 1804, or the independent countries of Spanish America by 1826), explain one link in the chain (such as France\'s debt from the American war, or Haiti\'s help to Bolívar in 1816), and explain liberalism or democracy as a new idea about government.', label: 'Governance' },
+        { text: 'I can explain what a nation is (people who share a language, a religion, customs, and a homeland), give one example of a government using national loyalty (revolutionary France in 1793) or building a shared loyalty to hold back nationalism (Ottomanism), and give one example of nationalism joining states (Italy in 1861 or Germany in 1871) and one of it pulling a people away from an empire (Greece in 1830, or Serbia, Montenegro, or Romania in 1878).', label: 'Governance' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 5.2 module you did not complete in class.', due: 'Monday, December 7' }
+      ],
+      homeworkDue: 'Monday, December 7',
+      dueDate: '2026-12-07'
+    },
+    /* 2026-12-04  <-  lesson-5-3-industrial-revolution-begins.js */
+    {
+      date: '2026-12-04',
+      cohort: 'green',
+      unit: 'Unit 5: Revolutions',
+      topic: 'The Industrial Revolution Begins',
+      learningTargets: [
+        { text: 'I can explain how Britain\'s environment (its coal, iron, and timber, and its rivers, coast, and canals) and the things people built (better farming, growing towns, laws that protected property, resources from abroad, and saved-up capital) worked together to cause industrial production to grow, starting in Britain.', label: 'Humans and the Environment' },
+        { text: 'I can explain how the factory system gathered production in a single place and split the work into specialized jobs, and why that let a mill make more goods.', label: 'Humans and the Environment' }
+      ],
+      successCriteria: [
+        { text: 'I can explain two things nature gave Britain (such as coal and iron, the shortage of wood, or rivers, the coast, and canals) and two things people built (such as better farming, towns, patents, cotton from abroad, or saved-up money). For each one, I can say what it made cheaper or possible.', label: 'Humans and the Environment' },
+        { text: 'I can show one way two of them worked together.', label: 'Humans and the Environment' },
+        { text: 'I can describe the putting-out system, explain how a mill like Arkwright\'s at Cromford (1771) brought workers to water-powered machines in one building, explain how the work in a cotton mill was split into steps (carding, drawing, roving, and spinning) with each worker tending one, use Adam Smith\'s pin workshop (1776) to explain why splitting the work made more goods, and connect the factory to one environmental factor, such as the water that turned its wheel.', label: 'Humans and the Environment' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 5.3 module you did not complete in class.', due: 'Tuesday, December 8' }
+      ],
+      homeworkDue: 'Tuesday, December 8'
+    },
+    /* 2026-12-07  <-  lesson-5-3-industrial-revolution-begins.js */
+    {
+      date: '2026-12-07',
+      cohort: 'silver',
+      unit: 'Unit 5: Revolutions',
+      topic: 'The Industrial Revolution Begins',
+      learningTargets: [
+        { text: 'I can explain how Britain\'s environment (its coal, iron, and timber, and its rivers, coast, and canals) and the things people built (better farming, growing towns, laws that protected property, resources from abroad, and saved-up capital) worked together to cause industrial production to grow, starting in Britain.', label: 'Humans and the Environment' },
+        { text: 'I can explain how the factory system gathered production in a single place and split the work into specialized jobs, and why that let a mill make more goods.', label: 'Humans and the Environment' }
+      ],
+      successCriteria: [
+        { text: 'I can explain two things nature gave Britain (such as coal and iron, the shortage of wood, or rivers, the coast, and canals) and two things people built (such as better farming, towns, patents, cotton from abroad, or saved-up money). For each one, I can say what it made cheaper or possible.', label: 'Humans and the Environment' },
+        { text: 'I can show one way two of them worked together.', label: 'Humans and the Environment' },
+        { text: 'I can describe the putting-out system, explain how a mill like Arkwright\'s at Cromford (1771) brought workers to water-powered machines in one building, explain how the work in a cotton mill was split into steps (carding, drawing, roving, and spinning) with each worker tending one, use Adam Smith\'s pin workshop (1776) to explain why splitting the work made more goods, and connect the factory to one environmental factor, such as the water that turned its wheel.', label: 'Humans and the Environment' }
+      ],
+      modules: [
+        { number: '02', title: 'First & 10 Reading' },
+        { number: '05', title: 'AP Skill Builder' },
+        { number: '07', title: 'Evidence Lab' },
+        { number: '10', title: 'Checkpoint 2' }
+      ],
+      homework: [
+        { text: 'Finish Checkpoint 2, and any other required 5.3 module you did not complete in class.', due: 'Wednesday, December 9' }
+      ],
+      homeworkDue: 'Wednesday, December 9'
     }
   ],
 

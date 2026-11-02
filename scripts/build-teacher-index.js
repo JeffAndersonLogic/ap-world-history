@@ -46,23 +46,20 @@ const TOOLS = [
   { kind: 'lesson', unit: '4', key: '4.6', title: 'Internal and External Challenges to State Power', href: 'topic-4-6-os.html' },
   { kind: 'lesson', unit: '4', key: '4.7', title: 'Changing Social Hierarchies', href: 'topic-4-7-os.html' },
   { kind: 'lesson', unit: '4', key: '4.8', title: 'Continuity and Change from 1450 to 1750', href: 'topic-4-8-os.html' },
-  // Topic 5.1's deck (topic-5-1-os.html) is built and in DECKS, but it joins
-  // this list only with its class dates: teacher-today.test.js requires every
-  // lesson here to be on the schedule, and Unit 5 has no dates yet (2026-10-20).
-  // Topic 5.2's deck (topic-5-2-os.html) waits for its dates the same way
-  // (2026-10-21).
-  // Topic 5.3's deck (topic-5-3-os.html) waits for its dates the same way
-  // (2026-10-22).
-  // Topic 5.4's deck (topic-5-4-os.html) waits for its dates the same way
-  // (2026-10-22).
-  // Topic 5.5's deck (topic-5-5-os.html) waits for its dates the same way
-  // (2026-10-22).
-  // Topic 5.6's deck (topic-5-6-os.html) waits for its dates the same way
-  // (2026-10-24).
-  // Topic 5.7's deck (topic-5-7-os.html) waits for its dates the same way
-  // (2026-10-29).
-  // Topic 5.8's deck (topic-5-8-os.html) waits for its dates the same way
-  // (2026-11-01).
+  // Unit 5. Jeff asked on 2026-11-02 for every built Unit 5 deck to be in the
+  // library now, not only the dated ones. 5.1 to 5.3 have class dates (Green
+  // Nov 30 to Silver Dec 7), so Today routes to them. 5.4 to 5.8 are built and
+  // carry `undated: true`: listed and openable, with no Today routing until
+  // their January dates are added. teacher-today.test.js fails an `undated`
+  // entry that has gained dates, so the flag cannot outlive the reason for it.
+  { kind: 'lesson', unit: '5', key: '5.1', title: 'The Enlightenment', href: 'topic-5-1-os.html' },
+  { kind: 'lesson', unit: '5', key: '5.2', title: 'Nationalism and Revolutions', href: 'topic-5-2-os.html' },
+  { kind: 'lesson', unit: '5', key: '5.3', title: 'The Industrial Revolution Begins', href: 'topic-5-3-os.html' },
+  { kind: 'lesson', unit: '5', key: '5.4', title: 'Industrialization Spreads in the Period from 1750 to 1900', href: 'topic-5-4-os.html', undated: true },
+  { kind: 'lesson', unit: '5', key: '5.5', title: 'Technology of the Industrial Age', href: 'topic-5-5-os.html', undated: true },
+  { kind: 'lesson', unit: '5', key: '5.6', title: "Industrialization: Government's Role from 1750 to 1900", href: 'topic-5-6-os.html', undated: true },
+  { kind: 'lesson', unit: '5', key: '5.7', title: 'Economic Developments and Innovations in the Industrial Age', href: 'topic-5-7-os.html', undated: true },
+  { kind: 'lesson', unit: '5', key: '5.8', title: 'Reactions to the Industrial Economy from 1750 to 1900', href: 'topic-5-8-os.html', undated: true },
   { kind: 'primary', label: 'Skills Lens', desc: 'Analyze Canvas submissions for completion, response quality, and AP skill trends across the year.', href: 'skills-lens.html' },
   { kind: 'authoring', label: 'Slide Templates', desc: 'Reference every Teaching OS slide template with real Unit 2 examples and copy-ready slide data.', href: 'slide-templates.html' },
   { kind: 'legacy', label: 'Run of Show', desc: 'Standalone pacing pages for Topics 1.4–1.6, before those lessons move into the integrated Teaching OS.', href: ROS_INDEX_OUT },

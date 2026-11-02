@@ -93,6 +93,15 @@ event in the year from `assets/data/announcements-schedule.js` into
 specification that generator implements, kept here so the shape can be reviewed
 and restored; it is not a template to fill in by hand.
 
+**The HTML flavour is the one to paste from** (added 2026-11-02, Jeff's request
+for Unit 5). The same run writes `docs/canvas/calendar-events.html` and
+`docs/canvas/assignments.html`: open one in a browser beside Canvas, jump to a
+topic (or add `#topic-5-1` to the address), press **Copy title** and **Copy
+HTML**, and check the preview. Each Copy box holds the exact string the `.md`
+prints, and `scripts/test/canvas-paste-page.test.js` fails the push if the two
+ever differ. The page is self-contained, so it works opened straight from disk;
+where the browser blocks the clipboard the button selects the box instead.
+
 Every calendar event body is a masthead `<div>` followed by one table with
 exactly six rows, in this order:
 
