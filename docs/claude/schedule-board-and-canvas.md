@@ -176,3 +176,30 @@ glow, run `build-logo-on-dark.js` first and `build-wordmark.js` second.
 
 GitHub Pages serves these images from `main`; publish the files before pasting
 an event that uses them.
+
+## Finals week
+
+**Finals week breaks the alternation on purpose, and the schedule says so.**
+PowerSchool cannot put a Green period and a Silver period on one day, so the
+school's 2026-2027 Finals Week Schedule Adjustment made Monday, December 14 a
+Silver Day and Tuesday, December 15 a Green Day (and will do the same to May 20
+and 21). For AP World (G4 on Green, S1 to S4 on Silver) that means Silver meets
+December 11 and 14 in a row, and the Silver finals split by period, S1 and S2
+on Thursday, December 17 and S3 and S4 on Friday, December 18.
+
+Two schedule fields carry it, and neither is a general escape hatch:
+
+- `repeatsCohort`, a sentence on the day that repeats its cohort, saying why.
+  `schedule-cohorts.test.js` accepts a repeat only with one, and fails a reason
+  left on a day that alternates normally, so the exception cannot outlive the
+  repeat. `build-announcements.js` stops flagging the pair for the same reason.
+- `canvasEventIn`, the file holding that day's Canvas event. One generated
+  event per cohort cannot say "S1 and S2 Thursday, S3 and S4 Friday", so
+  `build-canvas-events.js` skips those days and lists them instead of printing
+  a second, wrong version. The events are written per period in
+  `docs/canvas/finals-week-semester-1.md`, and the test fails if that file
+  stops naming any of the dates.
+
+The finals days still go through the board like any other day: targets,
+criteria, Tonight's Work, a Heads Up note with the period times, and the
+Semester 1 Final on the Quizzes & Exams slide.

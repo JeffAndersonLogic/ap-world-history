@@ -2295,6 +2295,124 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
         { text: 'I can use historical reasoning, especially causation, comparison, and continuity and change, to explain how new connections across the oceans changed societies.' }
       ],
       homework: []
+    },
+    /* 2026-12-10  <-  written by hand in the schedule */
+    {
+      date: '2026-12-10',
+      cohort: 'green',
+      unit: 'Units 1 to 4 and Topics 5.1 to 5.3',
+      topic: 'Semester 1 Final Review',
+      learningTargets: [
+        { text: 'I can identify which concepts from Units 1 to 4 and Topics 5.1 to 5.3 I need to review before my Semester 1 Final.' },
+        { text: 'I can explain the major developments of each unit and connect them across time, from c. 1200 to the start of the Industrial Revolution.' }
+      ],
+      successCriteria: [
+        { text: 'I can name the topics I am least sure of and make a plan to review them before my final.' },
+        { text: 'I can explain at least one development from each unit using specific historical evidence.' }
+      ],
+      homework: [
+        { text: 'Review Units 1 to 4 and Topics 5.1 to 5.3 for your Semester 1 Final, starting with the topics you marked as weakest today.', due: 'Tuesday, December 15' },
+        { text: 'Bring your questions to MAP on Tuesday, December 15. It meets before your G4 final.', due: 'Tuesday, December 15' }
+      ],
+      homeworkDue: 'Tuesday, December 15',
+      dueDate: '2026-12-15'
+    },
+    /* 2026-12-11  <-  written by hand in the schedule */
+    {
+      date: '2026-12-11',
+      cohort: 'silver',
+      unit: 'Units 1 to 4 and Topics 5.1 to 5.3',
+      topic: 'Semester 1 Final Review',
+      learningTargets: [
+        { text: 'I can identify which concepts from Units 1 to 4 and Topics 5.1 to 5.3 I need to review before my Semester 1 Final.' },
+        { text: 'I can explain the major developments of each unit and connect them across time, from c. 1200 to the start of the Industrial Revolution.' }
+      ],
+      successCriteria: [
+        { text: 'I can name the topics I am least sure of and make a plan to review them before my final.' },
+        { text: 'I can explain at least one development from each unit using specific historical evidence.' }
+      ],
+      homework: [
+        { text: 'Review Units 1 to 4 and Topics 5.1 to 5.3 for your Semester 1 Final, starting with the topics you marked as weakest today.', due: 'Monday, December 14' },
+        { text: 'Bring your list of weakest topics to your second review day on Monday, December 14.', due: 'Monday, December 14' }
+      ],
+      homeworkDue: 'Monday, December 14',
+      dueDate: '2026-12-14'
+    },
+    /* 2026-12-14  <-  written by hand in the schedule */
+    {
+      date: '2026-12-14',
+      cohort: 'silver',
+      unit: 'Units 1 to 4 and Topics 5.1 to 5.3',
+      topic: 'Semester 1 Final Review',
+      learningTargets: [
+        { text: 'I can identify which concepts from Units 1 to 4 and Topics 5.1 to 5.3 I need to review before my Semester 1 Final.' },
+        { text: 'I can explain the major developments of each unit and connect them across time, from c. 1200 to the start of the Industrial Revolution.' }
+      ],
+      successCriteria: [
+        { text: 'I can name the topics I am least sure of and make a plan to review them before my final.' },
+        { text: 'I can explain at least one development from each unit using specific historical evidence.' }
+      ],
+      homework: [
+        { text: 'Keep reviewing Units 1 to 4 and Topics 5.1 to 5.3 for your Semester 1 Final, focusing on the topics you are still least sure of.', due: 'S1 and S2 Thursday, December 17; S3 and S4 Friday, December 18' },
+        { text: 'Office hours run 12:40 to 3:40 on Wednesday, December 16 and Thursday, December 17, in person, through Canvas, or by email.', due: 'S1 and S2 Thursday, December 17; S3 and S4 Friday, December 18' }
+      ],
+      homeworkDue: 'S1 and S2 Thursday, December 17; S3 and S4 Friday, December 18',
+      dueDate: '2026-12-17',
+      note: 'Schedule change: today is a Silver Day, and tomorrow, Tuesday, December 15, is a Green Day.'
+    },
+    /* 2026-12-15  <-  written by hand in the schedule */
+    {
+      date: '2026-12-15',
+      cohort: 'green',
+      unit: 'Units 1 to 4 and Topics 5.1 to 5.3',
+      topic: 'Semester 1 Final Exam',
+      learningTargets: [
+        { text: 'I can explain and compare how states formed, kept power, and connected through trade from c. 1200 to c. 1450.' },
+        { text: 'I can explain how land-based and maritime empires expanded, ruled, and changed societies from c. 1450 to c. 1750.' },
+        { text: 'I can explain the ideas behind the revolutions of 1750 to 1900, their causes and effects, and how environmental factors helped start industrialization.' }
+      ],
+      successCriteria: [
+        { text: 'I can support my claims with specific historical evidence from more than one region.' },
+        { text: 'I can use historical reasoning, especially causation, comparison, and continuity and change, to explain developments across Units 1 to 5.' }
+      ],
+      homework: [],
+      note: 'G4 Semester 1 Final today, in the regular G4 block.'
+    },
+    /* 2026-12-17  <-  written by hand in the schedule */
+    {
+      date: '2026-12-17',
+      cohort: 'silver',
+      unit: 'Units 1 to 4 and Topics 5.1 to 5.3',
+      topic: 'Semester 1 Final Exam',
+      learningTargets: [
+        { text: 'I can explain and compare how states formed, kept power, and connected through trade from c. 1200 to c. 1450.' },
+        { text: 'I can explain how land-based and maritime empires expanded, ruled, and changed societies from c. 1450 to c. 1750.' },
+        { text: 'I can explain the ideas behind the revolutions of 1750 to 1900, their causes and effects, and how environmental factors helped start industrialization.' }
+      ],
+      successCriteria: [
+        { text: 'I can support my claims with specific historical evidence from more than one region.' },
+        { text: 'I can use historical reasoning, especially causation, comparison, and continuity and change, to explain developments across Units 1 to 5.' }
+      ],
+      homework: [],
+      note: 'Half day. S1 final 8:30 to 10:00, S2 final 10:10 to 11:40. Release at 11:40.'
+    },
+    /* 2026-12-18  <-  written by hand in the schedule */
+    {
+      date: '2026-12-18',
+      cohort: 'silver',
+      unit: 'Units 1 to 4 and Topics 5.1 to 5.3',
+      topic: 'Semester 1 Final Exam',
+      learningTargets: [
+        { text: 'I can explain and compare how states formed, kept power, and connected through trade from c. 1200 to c. 1450.' },
+        { text: 'I can explain how land-based and maritime empires expanded, ruled, and changed societies from c. 1450 to c. 1750.' },
+        { text: 'I can explain the ideas behind the revolutions of 1750 to 1900, their causes and effects, and how environmental factors helped start industrialization.' }
+      ],
+      successCriteria: [
+        { text: 'I can support my claims with specific historical evidence from more than one region.' },
+        { text: 'I can use historical reasoning, especially causation, comparison, and continuity and change, to explain developments across Units 1 to 5.' }
+      ],
+      homework: [],
+      note: 'Half day. S3 final 8:30 to 10:00, S4 final 10:10 to 11:40. Release at 11:40.'
     }
   ],
 
@@ -2303,7 +2421,8 @@ window.BEHISTORICAL_ANNOUNCEMENTS = {
     { date: '2026-09-17', title: 'Unit 1 Quiz', detail: 'Covers Topics 1.1 to 1.7, state building and societal organization across six Unit 1 regions, c. 1200 to c. 1450. Given at the start of the block on the same day Topic 2.1 begins, Wednesday, September 16 for Green and Thursday, September 17 for Silver, not on a separate day.', type: 'Quiz', greenDate: '2026-09-16', silverDate: '2026-09-17' },
     { date: '2026-10-08', title: 'Eras 2 Exam, c. 1200 to c. 1450', detail: 'Covers Units 1 and 2 in full: state building across six Unit 1 regions, plus the three Afro-Eurasian trade networks of Unit 2 and their cultural, environmental, and comparative consequences. PSAT scheduling shift: Tuesday, October 6 is not a Green or Silver day; Green takes the exam Wednesday, October 7, and Silver takes it Thursday, October 8.', type: 'Exam', greenDate: '2026-10-07', silverDate: '2026-10-08' },
     { date: '2026-10-29', title: 'Unit 3 Quiz', detail: 'Covers Topics 3.1 to 3.4, land-based empires, c. 1450 to c. 1750: how empires expanded, how rulers administered and justified their rule, how belief systems shaped and divided them, and how to compare them. In class Wednesday, October 28 for Green and Thursday, October 29 for Silver.', type: 'Quiz', greenDate: '2026-10-28', silverDate: '2026-10-29' },
-    { date: '2026-11-24', title: 'Era 3 Exam, c. 1450 to c. 1750', detail: 'Covers Units 3 and 4, c. 1450 to c. 1750. In class Monday, November 23 for Green and Tuesday, November 24 for Silver.', type: 'Exam', greenDate: '2026-11-23', silverDate: '2026-11-24' }
+    { date: '2026-11-24', title: 'Era 3 Exam, c. 1450 to c. 1750', detail: 'Covers Units 3 and 4, c. 1450 to c. 1750. In class Monday, November 23 for Green and Tuesday, November 24 for Silver.', type: 'Exam', greenDate: '2026-11-23', silverDate: '2026-11-24' },
+    { date: '2026-12-18', title: 'Semester 1 Final Exam', detail: 'Covers Units 1 to 4 and Topics 5.1 to 5.3. G4: Tuesday, December 15, in the G4 block. S1 and S2: Thursday, December 17. S3 and S4: Friday, December 18.', type: 'Exam' }
   ],
 
   reminders: [

@@ -3365,6 +3365,17 @@ deleted row in the schedule and every affected date moves with it.
 </table>
 ```
 
+**Class days with their Canvas event in another file.** These days split
+their dates by class period, which one event per cohort cannot express, so
+their paste-ready events are kept in the file named on each line:
+
+- Thursday, December 10, Green Day: Semester 1 Final Review, in `docs/canvas/finals-week-semester-1.md`
+- Friday, December 11, Silver Day: Semester 1 Final Review, in `docs/canvas/finals-week-semester-1.md`
+- Monday, December 14, Silver Day: Semester 1 Final Review, in `docs/canvas/finals-week-semester-1.md`
+- Tuesday, December 15, Green Day: Semester 1 Final Exam, in `docs/canvas/finals-week-semester-1.md`
+- Thursday, December 17, Silver Day: Semester 1 Final Exam, in `docs/canvas/finals-week-semester-1.md`
+- Friday, December 18, Silver Day: Semester 1 Final Exam, in `docs/canvas/finals-week-semester-1.md`
+
 ## Quizzes and Exams
 
 Not a lesson topic, so a much smaller event: a masthead and one
