@@ -39,6 +39,12 @@ function renderTeacherIndex(tools, rosTopics, cohorts, interactiveTopics = []) {
         (t.undated ? ' <small class="tc-undated">(not on the schedule yet)</small>' : '') + '</span>\n' +
       '            <span class="tc-open">Open <span aria-hidden="true">&rarr;</span></span>\n' +
       '          </a>\n'
+    )).join('') + tools.filter(t => t.kind === 'overview' && t.unit === unit).map(t => (
+      '          <a class="tc-lesson-row tc-overview-row" href="' + esc(t.href) + '">\n' +
+      '            <span class="tc-topic-pill">' + esc(t.pill || 'Overview') + '</span>\n' +
+      '            <span class="tc-lesson-title">' + esc(t.title) + (t.note ? ' <small class="tc-undated">(' + esc(t.note) + ')</small>' : '') + '</span>\n' +
+      '            <span class="tc-open">Open <span aria-hidden="true">&rarr;</span></span>\n' +
+      '          </a>\n'
     )).join('');
     return '      <details class="tc-unit">\n' +
       '        <summary><span><b>Unit ' + esc(unit) + '</b><small>' + lessons.length + ' Teaching OS ' + (lessons.length === 1 ? 'lesson' : 'lessons') + '</small></span></summary>\n' +

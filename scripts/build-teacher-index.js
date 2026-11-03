@@ -46,6 +46,11 @@ const TOOLS = [
   { kind: 'lesson', unit: '4', key: '4.6', title: 'Internal and External Challenges to State Power', href: 'topic-4-6-os.html' },
   { kind: 'lesson', unit: '4', key: '4.7', title: 'Changing Social Hierarchies', href: 'topic-4-7-os.html' },
   { kind: 'lesson', unit: '4', key: '4.8', title: 'Continuity and Change from 1450 to 1750', href: 'topic-4-8-os.html' },
+  // A teacher-only overview, not a lesson: Jeff could not teach 4.1 or 4.2
+  // (2026-11-03) and asked for one short deck touching the must-haves of both.
+  // `overview` puts it in its unit's list without entering INTERACTIVE_TOPICS,
+  // so the Today panel keeps routing real topics only.
+  { kind: 'overview', unit: '4', label: 'Topics 4.1 and 4.2 overview', pill: '4.1 + 4.2', title: 'Overview: Technology and Exploration', note: '13-minute catch-up', href: 'topic-4-1-4-2-os.html' },
   // Unit 5. Jeff asked on 2026-11-02 for every built Unit 5 deck to be in the
   // library now, not only the dated ones. 5.1 to 5.3 have class dates (Green
   // Nov 30 to Silver Dec 7), so Today routes to them. 5.4 to 5.8 are built and
