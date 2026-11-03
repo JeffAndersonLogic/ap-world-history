@@ -1,41 +1,104 @@
 /* Topic 4.3 data-only visual assignments. Safe to evaluate in Node: no DOM.
- * Read by the teacher surface and by scripts/build-teaching-os-student-decks.js.
+ * Teacher and generated student decks share these assignments.
  *
- * Every picture in this deck is a real historical object, verified on Wikimedia
- * Commons on 2026-10-14 (scripts/source-evidence-images.js, read against what
- * Commons says each file is) and saved under assets/images/topics/4-3/ so the
- * student deck never depends on an outside host from a school network:
+ * Jeff's five uploaded reconstructions, reviewed 2026-11-03:
+ * - second arrival: opening question, frame-subtitle, copy in the sky
+ * - horse revolution: story-scene, whole image beside the diffusion steps
+ * - sugar and enslaved labor: story-scene alongside Post's historical painting
+ * - American crops in Asia: story-scene beside the nutrition mechanism
+ * - landing: frame-subtitle, copy above the shore rather than over the sick elder
  *
- * - florentine-codex-smallpox-healer.jpg: Florentine Codex, Book 12, about 1577
- * - frans-post-sugar-mill-1660s.jpg: Frans Post, National Gallery of Ireland
- * - gerard-herball-turkie-corne-1597.jpg: Gerard's Herball, London, 1597, p. 75
- * - qing-taiwan-album-sweet-potato-1740s.jpg: album made for Liushiqi, 1740s
- *
- * The build used no AI-generated picture (no generator key was set, and a real
- * object existed for every beat that needed one); those visuals are set in the
- * teaching base itself, beside the slide they belong to.
- *
- * Added 2026-10-29 at Jeff's request, the one AI picture in the deck:
- *
- * - close (slide 24, frame-stepin): "4.3 - Landing Slide.jpg", an AI
- *   Historical Reconstruction he uploaded (C2PA, generator mark bottom
- *   right), labeled from `ai: true`. A Caribbean shore just after contact:
- *   a sick elder nursed beside maize, a horse led off a ship, pigs, a rat on
- *   a crate, sugarcane on the dock. It sets the landing; it is not evidence.
+ * All five are labeled Historical Reconstruction - AI Generated via ai:true.
+ * They set scenes, never serve as source evidence. The historical Codex,
+ * Gerard, Qing album and Post sources remain; no Evidence Lab content changes.
+ * Other files in the folder: the full Post painting stays in the Evidence Lab;
+ * its detail is the source beside the sugar reconstruction. None was rejected.
+ * Scene dates are illustrative, not claims that a camera recorded these events.
  */
 (function(){
 'use strict';
 const T=window.BEHISTORICAL_TEACHING;
 if(!T||!Array.isArray(T.slides))return;
-const close=T.slides.find(s=>s.phase==='close');
-if(close){
-  close.kind='frame-stepin';
-  close.template={
-    visual:{ai:true,url:'../assets/images/topics/4-3/'+encodeURIComponent('4.3 - Landing Slide.jpg'),alt:'Reconstruction of a Caribbean shore under storm clouds: a European ship at anchor, a horse led down a gangplank, pigs and a rat near crates and bundled sugarcane, and under a palm-leaf shelter beside a field of young maize, a woman tending a sick elder'},
-    lines:['You are on a Caribbean shore, a few years after the ships first came. Horses, pigs and a rat have come off the boats. Beside the maize, someone nurses a sick elder.','What the ships carried remade populations on both sides of the ocean.'],
-    question:'The ships carried more than anyone meant them to.',
-    note:'Next: disease emptied the land of workers, and the new crops needed them. Who would do the work, and who would rule?'
+const LOCAL='../assets/images/topics/4-3/';
+const ai=(name,alt,extra)=>Object.assign({ai:true,url:LOCAL+encodeURIComponent(name),alt:alt},extra||{});
+const find=phase=>T.slides.find(s=>s.phase===phase);
+const note=(s,text)=>{if(s&&s.notes)s.notes.land=(s.notes.land||[]).concat([text]);};
+
+const question=find('question');
+if(question){
+  question.kind='frame-subtitle';
+  question.subtitle='Some cargo was chosen. Some was not.';
+  question.template={
+    visual:ai('4.3 - The 2nd Arrival Columbus.JPG','Reconstruction of a Caribbean landing: sailing ships offshore, Europeans unloading barrels, a horse and pigs on the beach, Indigenous people watching, and a rat beside a barrel'),
+    place:'top',
+    line:'What caused the exchange, and what did it change on each side of the ocean?'
   };
-  if(close.notes)close.notes.land=(close.notes.land||[]).concat(['Historical Reconstruction, AI generated, the one AI picture in this deck. It squeezes years of change into one moment, so it sets the scene; it is not evidence. Ask the room to find one thing that crossed on purpose and one that crossed by accident.']);
+  note(question,'This is a reconstruction evoking the second voyage of 1493, not a record of a particular landing. Ships, livestock and cargo introduce the chosen and unchosen transfers. Do not read the invented markings on crates as historical text.');
+}
+
+const horses=find('horses');
+if(horses){
+  const stops=horses.template.stops;
+  horses.kind='story-scene';
+  horses.title='Plains peoples made horses their own';
+  horses.template={
+    visual:ai('4.3 - Horse Revolution.JPG','Reconstruction of three Indigenous riders on the Great Plains with a bison herd behind them under a cloudy sky',{fit:'contain'}),
+    caption:'Great Plains � early 1700s',
+    steps:stops.map((x,i)=>({label:x.date,text:'**'+x.place+'**: '+x.text,key:i===3}))
+  };
+  note(horses,'The scene illustrates Indigenous adoption of horses, not a documented Comanche individual or a verified costume. Read the route beside it as the historical explanation; the image itself cannot establish dates or tribal identity.');
+}
+
+const sugar=find('sugar');
+if(sugar){
+  const source=sugar.template.visual;
+  const sourceCaption=sugar.template.caption;
+  sugar.title='Sugar remade whole societies';
+  sugar.template.pictures=[
+    {visual:ai('4.3 - Sugar and Enslaved Labor.JPG','Reconstruction of a Brazilian sugar plantation: enslaved African workers cut and carry cane, oxen draw a cane cart, and workers boil juice in a furnace house',{fit:'contain'}),caption:'Brazil � sugar, coerced labor, exports'},
+    {visual:Object.assign({},source,{fit:'contain'}),caption:sourceCaption}
+  ];
+  delete sugar.template.visual;
+  delete sugar.template.caption;
+  note(sugar,'The upper picture reconstructs the plantation mechanism; it is not evidence of a specific mill or its machinery. The lower image is Post\'s historical painting. Ask what the real source shows, and what a reconstruction merely imagines. The question about the workers and the building on the hill refers to Post, not the generated scene.');
+}
+
+const nutrition=find('nutrition');
+if(nutrition){
+  const steps=nutrition.template.steps;
+  nutrition.kind='story-scene';
+  nutrition.title='American crops helped feed more people';
+  nutrition.footer='More crops and better nutrition helped populations grow, alongside other causes.';
+  nutrition.template={
+    side:'left',
+    visual:ai('4.3 - American Crops Transform Asia.JPG','Reconstruction of a farming family harvesting sweet potatoes into baskets on a hillside in southern China, with village houses and misty hills behind them',{fit:'contain'}),
+    caption:'Southern China � sweet potatoes as a fallback crop',
+    steps:steps.map((x,i)=>({label:['New ground','More variety','A fallback','More survive'][i],text:x.text,key:x.key}))
+  };
+  // Keep the causal links explicit when the chain is placed beside a scene.
+  nutrition.template.steps[0].text='New crops grow where older crops struggle: dry land, cold ground, poor soil and hillsides.';
+  nutrition.template.steps[1].text='So farmers grow **more food and more kinds of food**.';
+  nutrition.template.steps[2].text='That gives families something to eat when an older harvest fails.';
+  nutrition.template.steps[3].text='Better nutrition helps **more people survive**, alongside other causes.';
+  note(nutrition,'The harvest is a reconstruction of sweet-potato farming, not proof of the 1594 famine or an exact place. The preceding Gerard and Qing sources supply historical evidence; use this picture to connect the crop to the people it fed. Maize, potatoes, cassava and sweet potatoes remain named in the preceding source discussion and the retelling slide.');
+}
+
+const close=find('close');
+if(close){
+  close.kind='frame-subtitle';
+  close.subtitle='Americas: catastrophe and remade land. Afro-Eurasia: new staples and better nutrition.';
+  close.template={
+    visual:ai('4.3 - Landing Slide.jpg','Reconstruction of a Caribbean shore: a ship, a horse on a gangplank, pigs, rats, bundled sugarcane and a woman tending a sick elder beside maize',{cropBottom:0.085}),
+    place:'top',
+    line:'The ships carried more than anyone meant them to.'
+  };
+  note(close,'This reconstruction compresses years of change into one scene. It sets the landing, not evidence. Find one thing that crossed on purpose and one by accident. The crop removes the generator mark; the library supplies the single reconstruction label. Hand off aloud: Who would do the work, and who would rule? Topic 4.4.');
+}
+
+const preflight=find('preflight');
+if(preflight&&preflight.notes){
+  preflight.notes.land=preflight.notes.land.map(x=>x==='Every picture in this deck is a real historical object. None is AI-generated.'
+    ?'Five labeled AI reconstructions set scenes; the Codex, Post, Gerard and Qing images are historical sources. Evidence Lab pictures remain real historical objects.'
+    :x);
 }
 })();
