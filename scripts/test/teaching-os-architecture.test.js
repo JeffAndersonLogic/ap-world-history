@@ -200,7 +200,7 @@ console.log('\n  Cinematic question and landing slides\n');
 const OWED = new Set([
   '2.1 question', '2.7 question', '2.7 landing', '3.1 question', '3.1 landing',
   '3.2 question', '3.2 landing', '3.3 question', '3.3 landing',
-  '4.1 question', '4.2 question', '4.3 question'
+  '4.1 question', '4.2 question'
 ]);
 function cinematic(s) {
   const t = s && s.template || {};
@@ -306,3 +306,4 @@ for (const entry of ['CLAUDE.md', 'AGENTS.md', '.github/copilot-instructions.md'
 
 console.log(`\n  ${failed ? 'FAIL' : 'PASS'}  ${failed ? `${failed} architecture contract(s) failed` : 'Teaching OS architecture is centralized and drift-gated'}`);
 if (failed) process.exit(1);
+

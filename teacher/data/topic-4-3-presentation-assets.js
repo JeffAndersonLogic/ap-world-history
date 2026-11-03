@@ -88,11 +88,11 @@ if(close){
   close.kind='frame-subtitle';
   close.subtitle='Americas: catastrophe and remade land. Afro-Eurasia: new staples and better nutrition.';
   close.template={
-    visual:ai('4.3 - Landing Slide.jpg','Reconstruction of a Caribbean shore: a ship, a horse on a gangplank, pigs, rats, bundled sugarcane and a woman tending a sick elder beside maize',{cropBottom:0.085}),
+    visual:ai('4.3 - Landing Slide.jpg','Reconstruction of a Caribbean shore: a ship, a horse on a gangplank, pigs, rats, bundled sugarcane and a woman tending a sick elder beside maize'),
     place:'top',
     line:'The ships carried more than anyone meant them to.'
   };
-  note(close,'This reconstruction compresses years of change into one scene. It sets the landing, not evidence. Find one thing that crossed on purpose and one by accident. The crop removes the generator mark; the library supplies the single reconstruction label. Hand off aloud: Who would do the work, and who would rule? Topic 4.4.');
+  note(close,'This reconstruction compresses years of change into one scene. It sets the landing, not evidence. Find one thing that crossed on purpose and one by accident. The picture stays inside the slide boundary; the library supplies the single reconstruction label. Hand off aloud: Who would do the work, and who would rule? Topic 4.4.');
 }
 
 const preflight=find('preflight');

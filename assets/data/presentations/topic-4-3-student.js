@@ -568,8 +568,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "visual": {
           "ai": true,
           "url": "../assets/images/topics/4-3/4.3%20-%20Landing%20Slide.jpg",
-          "alt": "Reconstruction of a Caribbean shore: a ship, a horse on a gangplank, pigs, rats, bundled sugarcane and a woman tending a sick elder beside maize",
-          "cropBottom": 0.085
+          "alt": "Reconstruction of a Caribbean shore: a ship, a horse on a gangplank, pigs, rats, bundled sugarcane and a woman tending a sick elder beside maize"
         },
         "place": "top",
         "line": "The ships carried more than anyone meant them to."
