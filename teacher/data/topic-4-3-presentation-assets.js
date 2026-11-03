@@ -43,7 +43,7 @@ if(horses){
   horses.title='Plains peoples made horses their own';
   horses.template={
     visual:ai('4.3 - Horse Revolution.JPG','Reconstruction of three Indigenous riders on the Great Plains with a bison herd behind them under a cloudy sky',{fit:'contain'}),
-    caption:'Great Plains � early 1700s',
+    caption:'Great Plains · early 1700s',
     steps:stops.map((x,i)=>({label:x.date,text:'**'+x.place+'**: '+x.text,key:i===3}))
   };
   note(horses,'The scene illustrates Indigenous adoption of horses, not a documented Comanche individual or a verified costume. Read the route beside it as the historical explanation; the image itself cannot establish dates or tribal identity.');
@@ -55,7 +55,7 @@ if(sugar){
   const sourceCaption=sugar.template.caption;
   sugar.title='Sugar remade whole societies';
   sugar.template.pictures=[
-    {visual:ai('4.3 - Sugar and Enslaved Labor.JPG','Reconstruction of a Brazilian sugar plantation: enslaved African workers cut and carry cane, oxen draw a cane cart, and workers boil juice in a furnace house',{fit:'contain'}),caption:'Brazil � sugar, coerced labor, exports'},
+    {visual:ai('4.3 - Sugar and Enslaved Labor.JPG','Reconstruction of a Brazilian sugar plantation: enslaved African workers cut and carry cane, oxen draw a cane cart, and workers boil juice in a furnace house',{fit:'contain'}),caption:'Brazil · sugar, coerced labor, exports'},
     {visual:Object.assign({},source,{fit:'contain'}),caption:sourceCaption}
   ];
   delete sugar.template.visual;
@@ -72,7 +72,7 @@ if(nutrition){
   nutrition.template={
     side:'left',
     visual:ai('4.3 - American Crops Transform Asia.JPG','Reconstruction of a farming family harvesting sweet potatoes into baskets on a hillside in southern China, with village houses and misty hills behind them',{fit:'contain'}),
-    caption:'Southern China � sweet potatoes as a fallback crop',
+    caption:'Southern China · sweet potatoes as a fallback crop',
     steps:steps.map((x,i)=>({label:['New ground','More variety','A fallback','More survive'][i],text:x.text,key:x.key}))
   };
   // Keep the causal links explicit when the chain is placed beside a scene.
@@ -102,3 +102,4 @@ if(preflight&&preflight.notes){
     :x);
 }
 })();
+

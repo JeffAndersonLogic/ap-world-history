@@ -8,7 +8,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
   "slides": [
     {
       "kind": "beready-recall",
-      "eyebrow": "BeReady � 4 Minutes � No Notes",
+      "eyebrow": "BeReady · 4 Minutes · No Notes",
       "title": "Pull the last topic back from memory.",
       "template": {
         "questions": [
@@ -46,7 +46,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "action",
-      "eyebrow": "Module 02 � First & 10 � 12 Minutes",
+      "eyebrow": "Module 02 · First & 10 · 12 Minutes",
       "title": "Read with two questions in mind.",
       "subtitle": "For everything that crosses: how did it cross, and what did it do to the people at the other end?",
       "action": {
@@ -126,14 +126,14 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Tenochtitlan � 1520",
+      "eyebrow": "Tenochtitlan · 1520",
       "title": "A sickness of pustules, told by those who lived through it.",
       "kc": "KC-4.1.V.A",
       "template": {
         "visual": {
           "url": "../assets/images/topics/4-3/florentine-codex-smallpox-healer.jpg",
           "alt": "Ink drawing from the Florentine Codex: on the left a Nahua healer speaks with a man covered in spots; on the right three people covered in spots lie wrapped on mats",
-          "credit": "Florentine Codex, Book 12, about 1577 � Public domain",
+          "credit": "Florentine Codex, Book 12, about 1577 · Public domain",
           "position": "100% 50%"
         },
         "caption": "Painted by Nahua artists about 1577, from elders' memories",
@@ -149,7 +149,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           },
           {
             "label": "Late 1520",
-            "text": "The new ruler, Cuitl�huac, dies in the epidemic."
+            "text": "The new ruler, Cuitláhuac, dies in the epidemic."
           },
           {
             "label": "1521",
@@ -229,13 +229,13 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "source-quote",
-      "eyebrow": "Going West on Purpose � A Source",
+      "eyebrow": "Going West on Purpose · A Source",
       "title": "",
       "kc": "KC-4.1.V.C",
       "template": {
         "quote": "These wild cattle have so multiplied in Santo Domingo ... that they troop together ... by thousands. ... In the fleet, the year 1587, there came from Santo Domingo 35,444 hides, and from New Spain [Mexico] 64,350.",
         "attribution": {
-          "author": "Jos� de Acosta",
+          "author": "José de Acosta",
           "work": "Natural and Moral History of the Indies",
           "year": "1590"
         },
@@ -254,7 +254,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "alt": "Reconstruction of three Indigenous riders on the Great Plains with a bison herd behind them under a cloudy sky",
           "fit": "contain"
         },
-        "caption": "Great Plains � early 1700s",
+        "caption": "Great Plains · early 1700s",
         "steps": [
           {
             "label": "1493",
@@ -342,13 +342,13 @@ window.BEHISTORICAL_STUDENT_DECK = {
               "alt": "Reconstruction of a Brazilian sugar plantation: enslaved African workers cut and carry cane, oxen draw a cane cart, and workers boil juice in a furnace house",
               "fit": "contain"
             },
-            "caption": "Brazil � sugar, coerced labor, exports"
+            "caption": "Brazil · sugar, coerced labor, exports"
           },
           {
             "visual": {
               "url": "../assets/images/topics/4-3/frans-post-sugar-works-detail-1660s.jpg",
               "alt": "Detail of a painting of a Brazilian sugar plantation: Black workers at an open drying platform and at the arches of the furnace house, a man leading oxen with a cart, and a large house with a lookout on the hill above",
-              "credit": "Frans Post, Brazilian Landscape (detail), 1660s � National Gallery of Ireland � Public domain",
+              "credit": "Frans Post, Brazilian Landscape (detail), 1660s · National Gallery of Ireland · Public domain",
               "fit": "contain"
             },
             "caption": "Painted in the Netherlands, 1660s, years after Post left Brazil"
@@ -371,7 +371,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "visual": {
             "url": "../assets/images/topics/4-3/gerard-herball-turkie-corne-1597.jpg",
             "alt": "Hand-colored woodcut page from Gerard's Herball showing two maize plants and two ears of corn, labeled Turkie Corne and Turkie Wheate",
-            "credit": "John Gerard, The Herball, London, 1597 � Public domain",
+            "credit": "John Gerard, The Herball, London, 1597 · Public domain",
             "position": "50% 5%"
           }
         },
@@ -384,7 +384,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "visual": {
             "url": "../assets/images/topics/4-3/qing-taiwan-album-sweet-potato-1740s.jpg",
             "alt": "Chinese album painting of plants including three red and pale sweet potatoes with vines and a handwritten note beside them",
-            "credit": "Album made for the Qing official Liushiqi, Taiwan, 1740s � Public domain",
+            "credit": "Album made for the Qing official Liushiqi, Taiwan, 1740s · Public domain",
             "position": "70% 45%"
           }
         },
@@ -396,7 +396,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "story-scene",
-      "eyebrow": "Going East � The Effect",
+      "eyebrow": "Going East · The Effect",
       "title": "American crops helped feed more people",
       "footer": "More crops and better nutrition helped populations grow, alongside other causes.",
       "kc": "KC-4.1.V.D",
@@ -408,7 +408,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
           "alt": "Reconstruction of a farming family harvesting sweet potatoes into baskets on a hillside in southern China, with village houses and misty hills behind them",
           "fit": "contain"
         },
-        "caption": "Southern China � sweet potatoes as a fallback crop",
+        "caption": "Southern China · sweet potatoes as a fallback crop",
         "steps": [
           {
             "label": "New ground",
@@ -438,7 +438,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
         "url": "../assets/images/instructional-maps/topic-4-3.svg",
         "alt": "Map with four arrows: animals, crops and germs west from Europe to the Caribbean; enslaved Africans west from West Africa to Brazil; maize and potatoes east to Europe; cassava from Brazil to Central Africa"
       },
-      "footer": "1 West: animals, crops, germs � 2 West by force � 3 East, on purpose: maize, potatoes � 4 Cassava to Central Africa",
+      "footer": "1 West: animals, crops, germs · 2 West by force · 3 East, on purpose: maize, potatoes · 4 Cassava to Central Africa",
       "kc": "KC-4.1.V"
     },
     {
@@ -520,7 +520,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "action",
-      "eyebrow": "Module 05 � Skill Builder",
+      "eyebrow": "Module 05 · Skill Builder",
       "title": "What did the writer use to prove it?",
       "subtitle": "Find the claim a source makes, and two pieces of evidence it gives to support it.",
       "action": {
@@ -530,7 +530,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "action",
-      "eyebrow": "Module 06 � Checkpoint 1 � Optional",
+      "eyebrow": "Module 06 · Checkpoint 1 · Optional",
       "title": "The cargo nobody chose.",
       "subtitle": "Optional today. On your own: Checkpoint 1 is the diagnostic, so no coach.",
       "action": {
@@ -540,7 +540,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "action",
-      "eyebrow": "Module 07 � Evidence Lab",
+      "eyebrow": "Module 07 · Evidence Lab",
       "title": "Build one claim from two sources, one each way.",
       "subtitle": "One card about what crossed to the Americas, one about the American crops. Name one limit.",
       "action": {
@@ -550,7 +550,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "action",
-      "eyebrow": "Module 10 � Checkpoint 2",
+      "eyebrow": "Module 10 · Checkpoint 2",
       "title": "What crossed, and what it did.",
       "subtitle": "Draft, work with Socrates, revise. If it is not finished in class, it is homework.",
       "action": {
@@ -560,7 +560,7 @@ window.BEHISTORICAL_STUDENT_DECK = {
     },
     {
       "kind": "frame-subtitle",
-      "eyebrow": "Topic 4.3 � Landing Sentence",
+      "eyebrow": "Topic 4.3 · Landing Sentence",
       "title": "The ships carried more than anyone meant them to.",
       "subtitle": "Americas: catastrophe and remade land. Afro-Eurasia: new staples and better nutrition.",
       "kc": "Unit 4: Learning Objective D",
