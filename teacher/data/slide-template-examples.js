@@ -24,6 +24,8 @@ const archers=AI('2-2','2.2 - Cinematic Mongol Archers.png','Illustration of Mon
 const siege=AI('2-2','2.2 - Mongols Borrow Siege Technology.jpeg','Illustration of a Mongol army working a counterweight trebuchet beside a burning city');
 const monsoonMap={url:img('2-3','2.3 - Monsoons map.jpg'),alt:'Map of seasonal monsoon wind patterns across the Indian Ocean',credit:'Map · BeHistorical visual'};
 
+const exchangeMap={url:img('4-3','columbian-exchange-map.png'),alt:'Map of the Columbian Exchange with its own key and a causation strip. Dashed arrows go west: animals and crops, disease, and enslaved Africans. Solid arrows go east: American foods and plantation cash crops.'};
+
 const OCEAN_TURN='The ocean ran on a schedule. The Sahara has no monsoon. **What would merchants need to cross a desert again and again?**';
 
 window.BH_SLIDE_TEMPLATE_EXAMPLES=[
@@ -222,5 +224,8 @@ window.BH_SLIDE_TEMPLATE_EXAMPLES=[
   {round:6,group:'Unit 3 shapes',name:'Balance',note:'Two cases weighed on one beam: the job they share on the pivot, each case on an end with its name, date and what it did, and the claim the pair supports underneath. Same job, different tools, when there is no picture worth putting over each side (with pictures, use split scenes).',slide:{
     kind:'balance',eyebrow:'Topic 3.4 · Job One · Expand',title:'Gunpowder increases territorial reach.',
     template:{job:'Expand',left:{tag:'Ottoman',name:'Constantinople',when:'1453',text:'Cannon helped break fortified defenses.'},right:{tag:'Mughal',name:'Panipat',when:'1526',text:'Artillery and firearms contributed to victory.'},claimLabel:'Compare',claim:'Different campaigns, **shared mechanism**: military capacity let both defeat rivals, gain territory and increase influence.'}}},
+  {round:7,group:'Image frames',name:'Full picture',note:'One finished graphic that is the whole slide, shown whole: a map or chart that carries its own title, key and labels, where a heading or footer would only shrink it. Nothing else is drawn, so the slide\'s eyebrow and title only name it in the cockpit, and the alt text must say everything the picture says. Leave kc off: a Key Concept band would shrink the picture to make room above it.',slide:{
+    kind:'frame-full',eyebrow:'Topic 4.3 · The Whole Exchange on One Map',title:'What the ships carried, and which way.',
+    template:{visual:exchangeMap}}}
 ];
 })();
