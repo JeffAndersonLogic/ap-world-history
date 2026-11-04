@@ -354,6 +354,15 @@ function brOdd(s){const t=s.template||{};return beready('beready-odd','Odd One O
 
 /* ── image frames ──────────────────────────────────────────────────────── */
 
+/* Round 7, 2026-11-03: one picture that is the whole slide, shown whole. For a
+   finished graphic that carries its own title, key and labels (Topic 4.3's
+   exchange map), where a slide heading or footer would only shrink it. The
+   slide's eyebrow and title still name it in the cockpit and the student nav,
+   so the picture's alt text must carry everything the picture says. */
+function fFull(s){
+  const t=s.template||{};
+  return board('frame-full','dark',frame(t.visual,'bht-ff-img',{fit:'contain'}));
+}
 function fLetterbox(s){
   const t=s.template||{};
   return board('frame-letterbox','dark',`<div class="bht-lb-top">${eyebrow(s)}</div>${frame(t.visual,'bht-lb-img')}<div class="bht-lb-bot">${title(s)}${sub(s)}</div>`);
@@ -834,7 +843,9 @@ const KINDS={
   /* round 5 */
   'story-scene':storyScene,'split-scenes':splitScenes,
   /* round 6 */
-  'ledger':ledger,'verdict':verdict,'balance':balance
+  'ledger':ledger,'verdict':verdict,'balance':balance,
+  /* round 7 */
+  'frame-full':fFull
 };
 
 /* ── the Key Concept band ─────────────────────────────────────────────── */
@@ -1182,6 +1193,7 @@ const CSS=`
 /* frames */
 .bht-lb-top{position:absolute;left:0;right:0;top:0;height:110u;background:#050606;display:flex;align-items:flex-end;padding:0 76u 18u}
 .bht-lb-img{position:absolute;left:0;right:0;top:110u;height:420u}
+.bht-ff-img{position:absolute;inset:0;background:#030404}
 .bht-lb-bot{position:absolute;left:0;right:0;bottom:0;height:190u;background:#050606;padding:26u 76u;display:flex;flex-direction:column;gap:10u}
 .bht-lb-bot .bht-h{font-size:46u;max-width:none}
 .bht-fq{position:absolute;inset:0;display:grid;grid-template-columns:520u minmax(0,1fr)}
