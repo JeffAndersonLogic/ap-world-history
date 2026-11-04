@@ -431,15 +431,15 @@ window.BEHISTORICAL_STUDENT_DECK = {
       }
     },
     {
-      "kind": "map",
+      "kind": "frame-full",
       "eyebrow": "The Whole Exchange on One Map",
       "title": "What the ships carried, and which way.",
-      "visual": {
-        "url": "../assets/images/instructional-maps/topic-4-3.svg",
-        "alt": "Map with four arrows: animals, crops and germs west from Europe to the Caribbean; enslaved Africans west from West Africa to Brazil; maize and potatoes east to Europe; cassava from Brazil to Central Africa"
-      },
-      "footer": "1 West: animals, crops, germs · 2 West by force · 3 East, on purpose: maize, potatoes · 4 Cassava to Central Africa",
-      "kc": "KC-4.1.V"
+      "template": {
+        "visual": {
+          "url": "../assets/images/topics/4-3/columbian-exchange-map.png",
+          "alt": "Map titled The Columbian Exchange: what crossed the ocean after 1492, and which way it went. Dashed or dotted arrows go west across the southern Atlantic, where ships rode the trade winds. Arrow 1, animals and crops: horses, pigs, cattle, wheat, fruit trees and sugar, from Europe to the Caribbean. Arrow 2, disease by accident: smallpox, measles and malaria, carried with mosquitoes and rats, to Tenochtitlan, where smallpox struck in autumn 1520. Arrow 3, by force: enslaved Africans, who also brought rice and okra, from West Africa to Brazil. Solid arrows go east across the northern Atlantic, on the westerlies. Arrow 4, American foods: maize, potatoes, cassava, tomatoes and cacao, to Europe, where the potato was a main food in Ireland by the 1700s, and cassava from Brazil to the mouth of the Congo. Arrow 5, plantation cash crops grown with coerced labor, sent mostly to Europe and the Middle East. Fujian, China: sweet potato promoted, 1594. A causation strip underneath: European colonization connects the Eastern and Western Hemispheres after 1492; in the Americas, disease devastates Indigenous populations in many areas and Old World animals and crops reshape land and diets; in Afro-Eurasia, American crops become staple foods and improve nutrition across Europe, Asia and Africa. Arrows show direction, not single voyages; coastlines are simplified; sweet potatoes reached China from the Philippines, a route not drawn."
+        }
+      }
     },
     {
       "kind": "myth-evidence",
