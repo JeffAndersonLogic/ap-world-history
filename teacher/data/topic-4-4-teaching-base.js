@@ -93,6 +93,15 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Continuity and Change, with Sourcing and Situation 2.A. Three objectives: who ruled, trade and labor, slavery. For each, one change and one continuity.',
       notes: {
         minutes: 2,
+        keys: [
+          'Spine: empires from the sea, own rules',
+          'Three objectives: who ruled, labor, slavery',
+          'Each one: a change and a continuity',
+          'Teach the Ming and Tokugawa limits',
+          'Kongo and Asante grew stronger',
+          'Save VOC, silver, casta for later',
+          'Three myths to correct'
+        ],
         land: [
           'CED pp. 83 and 84. Three learning objectives. E (Governance): explain the process of state building and expansion among various empires and states, 1450 to 1750. F (Economic Systems): explain the continuities and changes in economic and labor systems. G (Social Interactions and Organization): explain changes and continuities in systems of slavery.',
           'KC-4.3.II.A.i: Europeans established trading posts in Africa and Asia, profitable for the rulers and merchants involved; some Asian states limited European trade with restrictive or isolationist policies. KC-4.3.II.C: driven largely by political, religious and economic rivalries, European states established maritime empires (Portuguese, Spanish, Dutch, French, British). KC-4.3.II.A.ii: maritime trade fostered the growth of Asante and Kongo. KC-4.3.II.A.iii: despite some disruption, Indian Ocean networks continued to flourish, with intra-Asian trade and Asian merchants. KC-4.2.II.D: colonial economies in the Americas largely depended on agriculture, used existing labor systems (the Incan mit’a) and introduced new ones (chattel slavery, indentured servitude, encomienda, hacienda). KC-4.2.II.B: enslavement in Africa continued in its traditional forms (households; export to the Mediterranean and the Indian Ocean). KC-4.2.II.C: plantation growth increased the demand for enslaved labor in the Americas, with significant demographic, social and cultural changes.',
@@ -120,6 +129,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 4,
+        keys: [
+          'Fast answers, no reteaching',
+          '4.3 hand-off: who works, who rules?',
+          'Portugal reached India, Calicut 1498',
+          '2.3 merchants still trading in 1700'
+        ],
         land: [
           'No notes. Take fast answers and do not reteach.',
           'Accept: workers (coerced labor, enslaved Africans); to India, Calicut in 1498, for spices and the trade that carried them; Gujarati, Arab, Swahili, Persian, Malay or Chinese merchants (2.3).',
@@ -137,6 +152,11 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Portuguese traders arriving in Japan, about 1600, as a Japanese painter imagined them for Japanese buyers.',
       notes: {
         minutes: 1,
+        keys: [
+          'Japanese screen, ~1600: arrival seen from shore',
+          'Japan later decided how far ships reached',
+          'Predict one change, one continuity'
+        ],
         land: [
           'The picture is a real historical object: the right-hand screen of Kano Naizen\'s "Arrival of the Southern Barbarians" (nanban-jin), a six-panel folding screen of about 1600, Kobe City Museum. A Portuguese carrack has anchored; merchants, officers and enslaved servants walk up from the shore; Jesuit priests in black wait at the right. "Southern barbarians" was the Japanese name for the Portuguese and Spanish, who came from the south.',
           'It sets the question because it is the arrival seen from the shore: Japanese artists painted these screens for Japanese buyers, and Japan\'s rulers would later decide how far those ships could reach.',
@@ -154,6 +174,13 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open First & 10', url: '../unit-4/first-and-10-topic-4-4-maritime-empires-established-capture.html?v=response-id-fix-v1' },
       notes: {
         minutes: 12,
+        keys: [
+          'Read in class',
+          'Sort each case: change or continuity',
+          'Some are both: cartaz, mit’a',
+          'Q2: Afonso’s audience and purpose',
+          'Answers reach Canvas via Gather'
+        ],
         land: [
           'Students read "Empires from the Sea" in class. The slides that follow retell it with evidence, so they are retrieval, not a first telling.',
           'Circulate for students who sort each case as a change or a continuity, and who notice that some cases are both (the cartaz; the mit’a).',
@@ -178,6 +205,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Cause: rivalries',
+          'Political: Tordesillas, Dutch revolt, England vs. France',
+          'Religious: war on Muslims; Catholic vs. Protestant',
+          'Economic: gold, spices, sugar',
+          'Five: Portugal, Spain, Dutch, France, Britain',
+          'Trading companies wait for 4.5'
+        ],
         land: [
           'KC-4.3.II.C names the cause in three words: political, religious and economic rivalries. The five empires are the CED\'s: Portuguese, Spanish, Dutch, French and British (England until the Union of 1707).',
           'Political: Spain and Portugal divided their claims by the Treaty of Tordesillas (1494); the Dutch Republic fought for its independence from Spain from 1568; England and France fought each other repeatedly for colonies in the 1600s and 1700s.',
@@ -197,6 +232,13 @@ window.BEHISTORICAL_TEACHING = {
       visual: { url: '../assets/images/instructional-maps/topic-4-4.svg', alt: 'World map marking the Gold Coast and Elmina, Kongo, the Swahili coast and Mombasa, Goa, Malacca, Macau, Japan, the Caribbean and Potosí, with arrows for forts on the coast, enslaved Africans carried west and to Brazil, and intra-Asian trade' },
       notes: {
         minutes: 1,
+        keys: [
+          'Shading is schematic, not borders',
+          'European places sit on coasts',
+          'Own terms: Japan, Macau, Kongo',
+          'Oman pushed Portugal from Mombasa, 1698',
+          'Colonies: Potosí, Caribbean'
+        ],
         land: [
           'The course\'s own instructional map, rebuilt for this story. Shaded regions are schematic, not borders.',
           'Point out the pattern: most European places in Africa and Asia sit on a coast; Japan, Macau under Ming officials and Kongo are places that set their own terms; on the Swahili coast merchants kept trading and Oman pushed Portugal out of Mombasa in 1698; Potosí and the Caribbean are colonies.'
@@ -221,6 +263,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'A fort controlled trade, not a country',
+          'Few men could hold a fort',
+          'Elmina, 1482: the gold trade',
+          'Goa, Malacca, Hormuz: Albuquerque',
+          'Profit for rulers and merchants',
+          'Elmina later a slave-trade center'
+        ],
         land: [
           'São Jorge da Mina (Elmina) was built by Diogo de Azambuja in 1482 to control the gold trade of the Gold Coast. The Dutch West India Company took it in 1637. The engraving, from Olfert Dapper\'s description of Africa (Amsterdam, 1668), is titled "Casteel del Mina" and shows the castle in Dutch hands, with the Dutch fort Coenraadsburg on the hill behind (Atlas of Mutual Heritage 6856). Dapper never saw Africa himself; he compiled his book from others\' reports.',
           'Afonso de Albuquerque took Goa (1510), Malacca (1511) and Hormuz (1515). The Portuguese crown held the pepper trade as a royal monopoly and drew customs from its ports: profit for rulers and merchants, the CED\'s words.',
@@ -246,6 +296,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'CED: some Asian states limited European trade',
+          'Macau: Portuguese stayed by Chinese permission',
+          'Japan: orders of 1633 to 1639',
+          'Spanish expelled 1624; English left 1623',
+          'Dutch confined to Dejima, 1641',
+          'Engraving is German, not from life'
+        ],
         land: [
           'This is the second sentence of KC-4.3.II.A.i, which the old 4.4 pages never taught: some Asian states limited the disruptive economic and cultural effects of European trade with restrictive or isolationist policies. Ming China and Tokugawa Japan are the CED\'s examples.',
           'Macau: Portuguese merchants settled from 1557 with the permission of Chinese provincial officials; formal recognition and the annual ground rent are dated variously from 1554 to 1573. Chinese officials kept authority in and around the port.',
@@ -270,6 +328,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Model skill 2.A out loud',
+          'Point of view, purpose, situation, audience',
+          'Audience: Nagasaki officials, not foreigners',
+          'Working orders show real intent',
+          '"Closed country" label came later (1801)',
+          'Japan still traded: Dutch, Chinese, Korea'
+        ],
         land: [
           'Translated in David J. Lu, Japan: A Documentary History (1997), pp. 221 to 222, where the edict is headed "Addressed to the Joint Bugyō of Nagasaki." Articles 1 and 3; other articles order searches for Christians, rewards for informers and rules for selling silk. Ellipsis marks the cut.',
           'This is the topic\'s suggested skill, 2.A: identify a source\'s point of view, purpose, historical situation and audience. Model all four, out loud.',
@@ -293,6 +359,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Changed: the cartaz, a Portuguese pass',
+          'Continued: Gujaratis bought passes, traded on',
+          'Most trade stayed intra-Asian',
+          'Oman pushed Portugal out, 1650 and 1698',
+          'CED merchants: Swahili, Omani, Gujarati, Javanese'
+        ],
         land: [
           'The cartaz was a Portuguese pass: Asian ships were to buy one, call at Portuguese ports and avoid goods Portugal claimed for itself, or risk seizure. Pearson (Merchants and Rulers in Gujarat, 1976) shows Gujarati merchants buying passes and trading on.',
           'Much of the ocean\'s trade stayed intra-Asian: between Asian ports, in Asian goods, and European merchants often made their money by carrying it.',
@@ -319,6 +392,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Trade increased Kongo and Asante influence',
+          'Kongo: Portuguese allies, Christian court',
+          'Crucifix made by Kongo artists',
+          'Asante: Feyiase 1701, gold and guns',
+          'Both also sold captives: next slide'
+        ],
         land: [
           'KC-4.3.II.A.ii: maritime trade fostered the growth of Asante and Kongo, whose participation "led to an increase in their influence."',
           'Kongo: Diogo Cão reached the Congo mouth in 1482 or 1483 (sources differ); envoys came back in 1491 with missionaries and trade goods, including firearms; King Nzinga a Nkuwu was baptized that year. His son Afonso I (king from about 1509 to 1542 or 1543) made Christianity the court religion and expanded the kingdom with Portuguese allies (Heywood, Journal of African History, 2009).',
@@ -342,6 +422,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Students source it: same four questions',
+          'Audience: the king of Portugal',
+          'Purpose: stop kidnapping of his subjects',
+          'Situation: traders going around the king',
+          'He sold foreign captives himself',
+          'About control, not ending slavery'
+        ],
         land: [
           'Letter of 6 July 1526, translated by Luís Madureira in John K. Thornton, Afonso I Mvemba a Nzinga, King of Kongo: His Life and Correspondence (2023), p. 203, as reprinted in Dunn and Willoughby, Panorama (2026). Ellipsis marks the cut.',
           'Students source it themselves, the same four questions as the last model. Audience: the king of Portugal, the one ruler who could order Portuguese traders to obey. Purpose: to stop traders he did not control from kidnapping his free-born subjects. Situation: Portuguese traders were selling goods directly to Kongo nobles, who no longer needed the king, and some were enslaving Kongo subjects.',
@@ -370,6 +458,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Colonies depended on agriculture',
+          'Old: the mit’a, now serving Spain',
+          'Mit’a sent 1 in 7 men to Potosí',
+          'New: encomienda, then hacienda',
+          'New: indentured servants, chattel slavery'
+        ],
         land: [
           'KC-4.2.II.D: colonial economies "largely depended on agriculture, utilized existing labor systems, including the Incan mit’a, and introduced new labor systems." O is old, N is new.',
           'Mit’a: the Inca rotating labor duty. Viceroy Francisco de Toledo reorganized it between 1572 and 1575 to send one-seventh of the adult men of the draft districts to Potosí each year, more than 14,000 men by 1578. An old system kept its name and changed its master.',
@@ -395,6 +490,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Left: Potosí, where the mit’a sent workers',
+          'Right: Nahua codex made for a lawsuit',
+          'Encomendero beating a Nahua man',
+          'Made by the workers, for a Spanish court',
+          'Silver itself is 4.5'
+        ],
         land: [
           'Left: the woodcut of Potosí in Pedro Cieza de León\'s Crónica del Perú (Seville, 1553), which the historian Kris Lane calls the mountain\'s "first iconic image." Show it as the place the mit’a served; what the silver did in the world is Topic 4.5.',
           'Right: the Codex Kingsborough, or Codex of Tepetlaoztoc (British Museum), painted by Nahua artists about the 1550s for a lawsuit: the people of Tepetlaoztoc, near Texcoco, complained to the Spanish crown about the tribute and labor demanded by their encomenderos. This page shows a Spaniard named Espinosa, who had charge of the town, beating a Nahua man.',
@@ -419,6 +521,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Slavery in Africa continued in older forms',
+          'Household slavery: children could join the family',
+          'Still owned, could still be sold',
+          'Exports to Mediterranean and Indian Ocean went on',
+          'Older than the Atlantic trade'
+        ],
         land: [
           'KC-4.2.II.B: enslavement in Africa "continued in its traditional forms, including incorporation of enslaved persons into households and the export of enslaved persons to the Mediterranean and the Indian Ocean regions."',
           'Kongo row: Heywood (2009) on a 1550 letter of King Diogo: "domestic slaves in elite households were considered part of the extended family." Kongo also protected freeborn Kongo from sale abroad, a rule that broke down in the civil wars of the 1600s.',
@@ -439,6 +548,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          '1500s: about 277,000 captives embarked',
+          '1701 to 1750: more than 2.5 million',
+          'About nine times as many',
+          'This is the CED’s "increased demand"',
+          'African traders inside; European ships across',
+          'Say "estimates"'
+        ],
         land: [
           'Slave Voyages (the Trans-Atlantic Slave Trade Database) estimates of captives embarked: 277,505 in 1501 to 1600; 1,088,909 in 1701 to 1725 and 1,471,725 in 1726 to 1750, together 2,560,634. Say "more than 2.5 million" and "estimates."',
           'About nine times as many in fifty years as in the whole sixteenth century: that is the change the CED means by "increased the demand for enslaved labor."',
@@ -463,6 +580,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Plantations raised demand for enslaved labor',
+          'Demographic: Africans outnumbered Europeans',
+          'Social: for life, inherited, tied to race',
+          'Cultural: one sentence; mixing is 4.5',
+          'Engraving shows the work, not the lives'
+        ],
         land: [
           'KC-4.2.II.C: the growth of the plantation economy increased the demand for enslaved labor in the Americas, "leading to significant demographic, social, and cultural changes." The three steps after Demand are those three words, in order.',
           'Demographic: on Barbados, enslaved Africans outnumbered Europeans by the late 1600s, and the pattern spread across the British, French and Dutch Caribbean (Spanish islands had smaller African shares); in Brazil, Africans and their descendants were a large part of the population.',
@@ -488,6 +612,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Myth 1: Europe took over → own rules',
+          'Myth 2: slavery began 1500 → older forms',
+          'Myth 3: Africans powerless → Kongo, Asante',
+          'Power is not innocence: they sold captives'
+        ],
         land: [
           'Row 1 is the spine\'s second half: much of the world kept its own rules.',
           'Row 2: KC-4.2.II.B and II.C together. Do not let a student write that slavery was invented after 1500.',
@@ -511,6 +641,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 5,
+        keys: [
+          'Show it, hide it, redraw from memory',
+          'Rows = the three objectives',
+          'Columns = change and continuity',
+          'Ask "why" in every row',
+          'Biggest change: slavery in the Americas'
+        ],
         land: [
           'This is the slide the lesson drives toward. Show it, then hide it and have students redraw the six cells from memory.',
           'The three rows are the three learning objectives (E, F, G); the two columns are the reasoning move.',
@@ -530,6 +667,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Weak: no continuity, evidence or reason',
+          'Need a change and a continuity, each named',
+          'Add the reason',
+          'Pairs fill the frame aloud',
+          'No finished claim on the board'
+        ],
         land: [
           'The weak claim names no continuity, no evidence and no reason.',
           'The frame asks for a change and a continuity, each with a named example, and the reason: the shape both checkpoints ask for.',
@@ -546,6 +690,11 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-4-maritime-empires-established.html#modules' },
       notes: {
         minutes: 6,
+        keys: [
+          'Skill 2.A: who, for whom, why',
+          'Modeled on 1635, practiced on 1639',
+          'Tie answers to words in the source'
+        ],
         land: [
           'The Skill Builder practices the CED\'s suggested skill, 2.A: identify a source\'s point of view, purpose, historical situation and audience.',
           'It models the 1635 memorandum (the slide students just saw), then gives the 1639 order banning Portuguese ships and asks for its point of view, purpose and situation, and how the situation explains why Japan limited trade with the Portuguese.',
@@ -562,6 +711,11 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-4-maritime-empires-established.html#modules' },
       notes: {
         minutes: 0,
+        keys: [
+          'Optional: early finishers or diagnostic',
+          'Rivalry, change in power, continuity',
+          'Give feedback in the room'
+        ],
         land: [
           'Checkpoint 1 is not required for 4.4. Use it for early finishers or as a quick diagnostic if the room is ahead.',
           'It asks for one cause of the empires, one change in who held power (a trading post, or Kongo or Asante) and one continuity (China or Japan, or Asian merchants trading on in the Indian Ocean). Give feedback in the room: on an alternating block nothing carries over.'
@@ -577,6 +731,12 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-4-maritime-empires-established.html#modules' },
       notes: {
         minutes: 7,
+        keys: [
+          'One claim, two sources',
+          'One change, one continuity',
+          'Five real historical objects',
+          'Observe → infer → name a limit'
+        ],
         land: [
           'Five real objects: the Nanban screen (about 1600), Nagasaki and Dejima (1735 to 1744), Mombasa (Braun and Hogenberg, 1572), the Codex Kingsborough (1550s) and the Du Tertre sugar works (1667).',
           'Observation before inference: what the source shows, then what it suggests, then what it cannot tell you (a European engraving shows the work, not the workers\' view; a Japanese screen shows what its painter saw from the shore).',
@@ -593,6 +753,13 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-4-maritime-empires-established.html#modules' },
       notes: {
         minutes: 10,
+        keys: [
+          'Labor: one continuity, one change',
+          'Slavery: one continuity, one change',
+          'The reason for each change',
+          'Revised answer goes to Canvas',
+          'Unfinished = homework'
+        ],
         land: [
           'The revised answer in the box is what goes to Canvas.',
           'Checkpoint 2 asks for one continuity and one change in labor systems in the Americas, and one continuity and one change in slavery, with the reason for each change. That is Learning Objectives F and G: KC-4.2.II.D, II.B and II.C. Learning Objective E is the First & 10\'s and Checkpoint 1\'s.',
@@ -608,6 +775,12 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Next: the empires exist. How did rulers make them pay, and what did the money do to the people inside them?',
       notes: {
         minutes: 2,
+        keys: [
+          'Dejima: tiny island, Japanese rules',
+          'Painted ~1836, after this period: say so',
+          'The sentence answers all three objectives',
+          'Hand off to 4.5: who made empires pay?'
+        ],
         land: [
           'The picture: Kawahara Keiga\'s folding screen of Nagasaki harbor, painted about 1836 (Museum Volkenkunde, Leiden). Dejima, the fan-shaped island in the foreground, is where the Dutch were confined from 1641; the island\'s shape was the same in this period. A whole European trading empire\'s foothold in Japan is that small island, inside a Japanese harbor, under Japanese rules: the spine in one picture. It was painted almost a century after 1750; say so.',
           'This sentence answers all three learning objectives: Europeans built empires from the sea (E), and much of the world kept its own rules (E, F, G), while some things changed fast (labor and slavery).',
