@@ -70,7 +70,7 @@ try {
 }
 
 const { initializeTestEnvironment, assertFails, assertSucceeds } = testing;
-const { doc, getDoc, setDoc, updateDoc, deleteDoc, collection, query, where, getDocs, serverTimestamp } = fst;
+const { doc, getDoc, setDoc, updateDoc, deleteDoc, collection, query, where, getDocs, serverTimestamp, increment } = fst;
 
 let failures = 0;
 function record(label, ok, detail) {
@@ -261,6 +261,100 @@ async function assertContracts(env, report) {
   // Brit proves the rules are not simply denying everything to everyone, which
   // every assertion above would also be consistent with.
   report('the other student can still read their own record', await can(getDoc(doc(britDb, BRIT_CP2))));
+
+  await assertRemoteSessions(env, report, { alexDb, britDb, samDb, outsiderDb, anonDb, can, cannot });
+}
+
+// ── The iPad remote's sessions (added 2026-11-04) ────────────────────────────
+//
+// The one collection an unauthenticated caller may touch, because the iPad
+// cannot sign in on Safari. The id is the permission, so what has to be proved
+// is that an id is worth only what the rules say: no discovery, no creation
+// without a staff sign-in, no writes after expiry, no iPad write to the
+// laptop's side, and a server-counted cap.
+const remotePath = id => `tenants/${ZCS}/remoteSessions/${id}`;
+const SESSION_LIVE = 'a'.repeat(36);
+const SESSION_OLD = 'b'.repeat(36);
+const SESSION_FULL = 'c'.repeat(36);
+
+async function assertRemoteSessions(env, report, t) {
+  const { alexDb, britDb, samDb, outsiderDb, anonDb, can, cannot } = t;
+  const HOUR = 3600 * 1000;
+  await env.withSecurityRulesDisabled(async ctx => {
+    const db = ctx.firestore();
+    await setDoc(doc(db, remotePath(SESSION_LIVE)), { tenantId: ZCS, ownerUid: UID_ALEX, createdAt: new Date(), ipadWrites: 0 });
+    await setDoc(doc(db, remotePath(SESSION_OLD)), { tenantId: ZCS, ownerUid: UID_ALEX, createdAt: new Date(Date.now() - 17 * HOUR), ipadWrites: 0 });
+    await setDoc(doc(db, remotePath(SESSION_FULL)), { tenantId: ZCS, ownerUid: UID_ALEX, createdAt: new Date(), ipadWrites: 3000 });
+  });
+  const start = (o) => Object.assign({ tenantId: ZCS, ownerUid: UID_ALEX, createdAt: serverTimestamp(), ipadWrites: 0 }, o || {});
+  const press = (o, extra) => Object.assign({ ipad: Object.assign({ type: 'goto', index: 7, id: 'press-1' }, o || {}), ipadAt: serverTimestamp(), ipadWrites: increment(1) }, extra || {});
+  const state = (o) => ({ host: Object.assign({ type: 'state', index: 7, count: '8 / 40', title: 'Topic 3.2', id: 'state-1' }, o || {}), hostAt: serverTimestamp() });
+  const live = (db) => doc(db, remotePath(SESSION_LIVE));
+  let n = 0;
+  const freshId = () => (n++).toString(16).padStart(36, 'd');
+
+  // Starting a session.
+  report('remote: a staff account can start a session', await can(setDoc(doc(alexDb, remotePath(freshId())), start())));
+  report('remote: a student account cannot start a session',
+    await cannot(setDoc(doc(samDb, remotePath(freshId())), start({ ownerUid: 'uid-sam' }))));
+  report('remote: nobody can start a session without signing in',
+    await cannot(setDoc(doc(anonDb, remotePath(freshId())), start({ ownerUid: 'anon' }))));
+  report('remote: an account outside the district cannot start a session',
+    await cannot(setDoc(doc(outsiderDb, remotePath(freshId())), start({ ownerUid: 'uid-out' }))));
+  report('remote: a guessable session id is refused',
+    await cannot(setDoc(doc(alexDb, remotePath('classroom-1')), start())));
+  report('remote: a session started for someone else is refused',
+    await cannot(setDoc(doc(alexDb, remotePath(freshId())), start({ ownerUid: UID_BRIT }))));
+  report('remote: a session cannot start with writes already counted, or reset the cap',
+    await cannot(setDoc(doc(alexDb, remotePath(freshId())), start({ ipadWrites: -5000 }))));
+  report('remote: a client-chosen start time is refused',
+    await cannot(setDoc(doc(alexDb, remotePath(freshId())), start({ createdAt: new Date(Date.now() + 100 * HOUR) }))));
+  report('remote: an extra field is refused',
+    await cannot(setDoc(doc(alexDb, remotePath(freshId())), start({ notes: 'teacher notes' }))));
+
+  // Reading one.
+  report('remote: the iPad can read a live session by its id', await can(getDoc(live(anonDb))));
+  report('remote: sessions cannot be listed, so an id cannot be discovered',
+    await cannot(getDocs(collection(anonDb, `tenants/${ZCS}/remoteSessions`))));
+  report('remote: nor listed by a signed-in staff account',
+    await cannot(getDocs(collection(alexDb, `tenants/${ZCS}/remoteSessions`))));
+  report('remote: an expired session cannot be read', await cannot(getDoc(doc(anonDb, remotePath(SESSION_OLD)))));
+
+  // The iPad's side.
+  report('remote: the iPad can press a button', await can(updateDoc(live(anonDb), press())));
+  report('remote: and again, with the counter going up by one', await can(updateDoc(live(anonDb), press({ type: 'next', id: 'press-2' }))));
+  report('remote: the iPad cannot write the laptop\'s report',
+    await cannot(updateDoc(live(anonDb), Object.assign(press({ id: 'press-3' }), state()))));
+  report('remote: the iPad cannot take over the session',
+    await cannot(updateDoc(live(anonDb), press({ id: 'press-4' }, { ownerUid: 'anon' }))));
+  report('remote: the iPad cannot extend the session',
+    await cannot(updateDoc(live(anonDb), press({ id: 'press-5' }, { createdAt: new Date(Date.now() + 100 * HOUR) }))));
+  report('remote: the iPad cannot reset its write counter',
+    await cannot(updateDoc(live(anonDb), Object.assign(press({ id: 'press-6' }), { ipadWrites: 0 }))));
+  report('remote: the iPad cannot skip its counter ahead',
+    await cannot(updateDoc(live(anonDb), Object.assign(press({ id: 'press-7' }), { ipadWrites: increment(2) }))));
+  report('remote: an unknown command is refused', await cannot(updateDoc(live(anonDb), press({ type: 'eval', id: 'press-8' }))));
+  report('remote: a slide number out of range is refused', await cannot(updateDoc(live(anonDb), press({ index: 99999, id: 'press-9' }))));
+  report('remote: an extra field in a command is refused',
+    await cannot(updateDoc(live(anonDb), press({ id: 'press-10', note: 'x'.repeat(5000) }))));
+  report('remote: a client-chosen press time is refused',
+    await cannot(updateDoc(live(anonDb), Object.assign(press({ id: 'press-11' }), { ipadAt: new Date() }))));
+  report('remote: an expired session cannot be written', await cannot(updateDoc(doc(anonDb, remotePath(SESSION_OLD)), press())));
+  report('remote: a session at its write cap takes no more iPad writes',
+    await cannot(updateDoc(doc(anonDb, remotePath(SESSION_FULL)), press())));
+
+  // The laptop's side.
+  report('remote: the staff member who started it can report the slide', await can(updateDoc(live(alexDb), state())));
+  report('remote: another staff member cannot', await cannot(updateDoc(live(britDb), state({ id: 'state-2' }))));
+  report('remote: an unauthenticated caller cannot', await cannot(updateDoc(live(anonDb), state({ id: 'state-3' }))));
+  report('remote: a deck title over the ceiling is refused',
+    await cannot(updateDoc(live(alexDb), state({ id: 'state-4', title: 'x'.repeat(201) }))));
+  report('remote: the laptop cannot raise the iPad\'s cap',
+    await cannot(updateDoc(live(alexDb), Object.assign(state({ id: 'state-5' }), { ipadWrites: 0 }))));
+  report('remote: an expired session cannot be reported to',
+    await cannot(updateDoc(doc(alexDb, remotePath(SESSION_OLD)), state({ id: 'state-6' }))));
+
+  report('remote: nobody can delete a session, including its owner', await cannot(deleteDoc(live(alexDb))));
 }
 
 async function makeEnv(rules) {
@@ -306,7 +400,21 @@ async function makeEnv(rules) {
     ['the provider pin is dropped',
       s => s.replace(/&&\s*request\.auth\.token\.firebase\.sign_in_provider == 'google\.com'/, '')],
     ['delete is opened to the author',
-      s => s.replace(/allow delete: if false;/, 'allow delete: if ownsStored();')]
+      s => s.replace(/allow delete: if false;/, 'allow delete: if ownsStored();')],
+    ['remote sessions become listable',
+      s => s.replace(/allow get: if idIsCapability\(\) && live\(\);/, 'allow get, list: if true;')],
+    ['remote sessions never expire',
+      s => s.replace(/return resource\.data\.createdAt \+ duration\.value\(16, 'h'\) > request\.time;/, 'return true;')],
+    ['a student account may start a remote session',
+      s => s.replace(/== 'zcs\.k12\.in\.us';/, "in ['zcs.k12.in.us', 'stumail.zcs.k12.in.us'];")],
+    ['the iPad write cap is removed',
+      s => s.replace(/\n\s*&& request\.resource\.data\.ipadWrites <= \d+/, '')],
+    ['the iPad may write the laptop\'s side',
+      s => s.replace(/hasOnly\(\['ipad', 'ipadAt', 'ipadWrites'\]\)/, "hasOnly(['ipad', 'ipadAt', 'ipadWrites', 'host', 'hostAt'])")],
+    ['the iPad counter is trusted from the client',
+      s => s.replace(/request\.resource\.data\.ipadWrites == resource\.data\.ipadWrites \+ 1/, 'request.resource.data.ipadWrites is int')],
+    ['any staff member may report to any session',
+      s => s.replace(/&& ownsSession\(\)/, '&& isStaff()')]
   ];
 
   for (const [name, mutate] of MUTATIONS) {

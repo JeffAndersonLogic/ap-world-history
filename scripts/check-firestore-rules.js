@@ -83,6 +83,27 @@ function allowStatements(source) {
   return out;
 }
 
+// The two collections the rules may protect, and nothing else. Stated here so
+// a rules file that quietly starts protecting some other collection fails
+// rather than passing on a technicality.
+const REMOTE_PATH = 'match /tenants/{tenantId}/remoteSessions/{sessionId}';
+
+// The body of a match block, by brace counting from the header. Conditions in
+// this file contain no braces, so counting is exact.
+function blockBody(source, header) {
+  const at = source.indexOf(header);
+  if (at === -1) return null;
+  let i = source.indexOf('{', at + header.length);
+  if (i === -1) return null;
+  const start = i + 1;
+  let depth = 1;
+  for (i = start; i < source.length && depth; i++) {
+    if (source[i] === '{') depth++;
+    else if (source[i] === '}') depth--;
+  }
+  return depth ? null : source.slice(start, i - 1);
+}
+
 // The assertions, factored out so the negative controls below can run the exact
 // same set against a mutated file. A check whose negative control tests a
 // different thing than the real run is not a negative control.
@@ -94,14 +115,46 @@ function assertRules(rawSource, report) {
   report('the response collection is the one the architecture record specifies',
     source.includes(RESPONSE_PATH), RESPONSE_PATH);
 
-  const allows = allowStatements(source);
-  report('the file contains allow statements to check', allows.length > 0, `${allows.length} found`);
+  const responses = blockBody(source, RESPONSE_PATH) || '';
+  const remote = blockBody(source, REMOTE_PATH) || '';
+
+  // Every grant lives in one of the two named blocks. A third block, or an
+  // allow outside both, is a collection nobody reviewed.
+  const total = allowStatements(source).length;
+  const named = allowStatements(responses).length + allowStatements(remote).length;
+  report('every allow statement is inside a reviewed collection', total === named,
+    `${total} in the file, ${named} in the response and remote-session blocks`);
+
+  assertResponses(source, responses, report);
+  assertRemote(remote, report);
+
+  // A wildcard match that grants anything reaches every collection in the
+  // project at once, including ones nobody has written yet.
+  const wildcard = /match\s+\/\{[A-Za-z_]+=\*\*\}\s*\{([\s\S]*?)\n\s*\}/.exec(source);
+  if (wildcard) {
+    const inner = allowStatements(wildcard[1]);
+    report('no wildcard match grants access', inner.every(a => a.condition === 'false'),
+      inner.map(a => a.condition).join(' | '));
+  } else {
+    report('no wildcard match block is present', true, 'nothing to over-grant');
+  }
+
+  // Verified district email is the real check. Pinning the provider means that
+  // enabling another sign-in method later cannot quietly widen who satisfies it.
+  report('the sign-in provider is pinned',
+    /sign_in_provider\s*==\s*'google\.com'/.test(source));
+}
+
+// ── Student responses ────────────────────────────────────────────────────────
+function assertResponses(source, block, report) {
+  const allows = allowStatements(block);
+  report('the response block contains allow statements to check', allows.length > 0, `${allows.length} found`);
 
   let reads = 0, writes = 0, denies = 0;
 
   for (const a of allows) {
     const cond = a.condition;
-    const label = `allow ${a.verbs.join(', ')}`;
+    const label = `responses: allow ${a.verbs.join(', ')}`;
 
     if (cond === 'false') {
       denies++;
@@ -130,24 +183,13 @@ function assertRules(rawSource, report) {
 
   report('some read path is granted, so the rules are not vacuous', reads > 0, `${reads} read verb(s)`);
   report('some write path is granted, so the rules are not vacuous', writes > 0, `${writes} write verb(s)`);
-  report('delete is refused outright', denies > 0 && /allow\s+delete\s*:\s*if\s+false\s*;/.test(source));
-
-  // A wildcard match that grants anything reaches every collection in the
-  // project at once, including ones nobody has written yet.
-  const wildcard = /match\s+\/\{[A-Za-z_]+=\*\*\}\s*\{([\s\S]*?)\n\s*\}/.exec(source);
-  if (wildcard) {
-    const inner = allowStatements(wildcard[1]);
-    report('no wildcard match grants access', inner.every(a => a.condition === 'false'),
-      inner.map(a => a.condition).join(' | '));
-  } else {
-    report('no wildcard match block is present', true, 'nothing to over-grant');
-  }
+  report('responses: delete is refused outright', denies > 0 && /allow\s+delete\s*:\s*if\s+false\s*;/.test(block));
 
   // The write shape allowlist. hasOnly is what stops an arbitrary field being
   // parked in an otherwise valid record; a rules file that drops it still works
   // and still passes every other check here.
   report('writes are validated against a closed field allowlist',
-    /\.keys\(\)\.hasOnly\(/.test(source));
+    /\.keys\(\)\.hasOnly\(/.test(block));
 
   // The per-document ceiling is this system's only enforceable cost control,
   // since Firestore cannot be spend-capped. Losing it is silent.
@@ -156,7 +198,7 @@ function assertRules(rawSource, report) {
   // bounds: removing the one that matters left three others satisfying it,
   // and the negative control caught that rather than prose.
   report('a per-document size ceiling is enforced on the response body',
-    /text\.size\(\)\s*<=\s*\d+/.test(source));
+    /text\.size\(\)\s*<=\s*\d+/.test(block));
 
   // ── The four invariants an external review added on 2026-09-29 ────────────
   //
@@ -168,22 +210,76 @@ function assertRules(rawSource, report) {
   // by varying the document name, which is unbounded storage and unbounded
   // writes with nothing in the rules to notice.
   report('the document id is derived from author, topic and slot',
-    /responseId\s*==\s*request\.auth\.uid\s*\+/.test(source));
+    /responseId\s*==\s*request\.auth\.uid\s*\+/.test(block));
 
   // A client-supplied updatedAt makes the conflict rule guessable and lets a
   // device backdate a write to win a merge it should have lost.
   report('timestamps are pinned to server time',
-    /updatedAt\s*==\s*request\.time/.test(source));
+    /updatedAt\s*==\s*request\.time/.test(block));
 
   // Without this a student who owns a record can move it to another topic or
   // slot, or rewrite when it was created, and it still passes every other test.
   report('an update may only touch the mutable fields',
-    /affectedKeys\(\)/.test(source) && /\.hasOnly\(\['text'/.test(source));
+    /affectedKeys\(\)/.test(block) && /\.hasOnly\(\['text'/.test(block));
+}
 
-  // Verified district email is the real check. Pinning the provider means that
-  // enabling another sign-in method later cannot quietly widen who satisfies it.
-  report('the sign-in provider is pinned',
-    /sign_in_provider\s*==\s*'google\.com'/.test(source));
+// ── The iPad remote's sessions (added 2026-11-04) ────────────────────────────
+//
+// The one block where a caller need not be signed in: the iPad cannot sign in
+// on Safari, so the 144-bit session id is its permission. Every grant here must
+// therefore name the id shape and either expiry or staff identity, and the
+// bounds that make a leaked id cheap must all be present.
+function assertRemote(block, report) {
+  report('the remote-session block exists', block.length > 0, REMOTE_PATH);
+  const allows = allowStatements(block);
+  let gets = 0, creates = 0, updates = 0;
+  for (const a of allows) {
+    const cond = a.condition;
+    const label = `remoteSessions: allow ${a.verbs.join(', ')}`;
+    if (cond === 'false') continue;
+    report(`${label} never grants list, so an id cannot be discovered`,
+      !a.verbs.some(v => v === 'list' || v === 'read'), a.verbs.join(', '));
+    report(`${label} requires the unguessable id shape`, cond.includes('idIsCapability()'), cond);
+    report(`${label} is not satisfiable by authentication alone`,
+      !/^\s*(true|signedIn\(\)|request\.auth\s*!=\s*null)\s*$/.test(cond), cond);
+    if (a.verbs.includes('get')) { gets++; report(`${label} stops at expiry`, cond.includes('live()'), cond); }
+    if (a.verbs.includes('create')) {
+      creates++;
+      report(`${label} is staff only`, cond.includes('isStaff()'), cond);
+      report(`${label} pins the owner to the caller`, /ownerUid\s*==\s*request\.auth\.uid/.test(cond), cond);
+      report(`${label} pins the start time to the server`, /createdAt\s*==\s*request\.time/.test(cond), cond);
+      report(`${label} is a closed field list`, /\.keys\(\)\.hasOnly\(/.test(cond), cond);
+    }
+    if (a.verbs.includes('update')) {
+      updates++;
+      report(`${label} stops at expiry`, cond.includes('live()'), cond);
+      report(`${label} may only touch its own side's fields`, /affectedKeys\(\)\.hasOnly\(/.test(cond), cond);
+      report(`${label} validates the command shape`, /command\(/.test(cond), cond);
+      if (/'ipad'/.test(cond)) {
+        report(`${label} counts iPad writes on the server`, /ipadWrites\s*==\s*resource\.data\.ipadWrites\s*\+\s*1/.test(cond), cond);
+        report(`${label} caps iPad writes per session`, /ipadWrites\s*<=\s*\d+/.test(cond), cond);
+        // The iPad is the unauthenticated side, so it may touch the iPad's
+        // fields and nothing else: not the laptop's report, not the owner, not
+        // the start time that decides expiry.
+        const touched = (/affectedKeys\(\)\.hasOnly\(\[([^\]]*)\]\)/.exec(cond) || [, ''])[1]
+          .split(',').map(k => k.trim().replace(/'/g, '')).filter(Boolean).sort().join(',');
+        report(`${label} touches only the iPad's own fields`, touched === 'ipad,ipadAt,ipadWrites', touched);
+      } else {
+        report(`${label} belongs to the staff member who started the session`, cond.includes('ownsSession()'), cond);
+      }
+    }
+  }
+  report('remoteSessions: a session can be read by its id', gets > 0);
+  report('remoteSessions: a session can be started', creates > 0);
+  report('remoteSessions: both devices can write', updates >= 2, `${updates} update statement(s)`);
+  report('remoteSessions: delete is refused outright', /allow\s+delete\s*:\s*if\s+false\s*;/.test(block));
+  report('remoteSessions: the id is 144 random bits', /sessionId\.matches\('\^\[a-f0-9\]\{36\}\$'\)/.test(block));
+  report('remoteSessions: sessions expire on server time',
+    /createdAt\s*\+\s*duration\.value\(\s*\d+\s*,\s*'h'\s*\)\s*>\s*request\.time/.test(block));
+  report('remoteSessions: staff means the staff domain exactly, never the student one',
+    /split\('@'\)\[1\]\s*==\s*'zcs\.k12\.in\.us'/.test(block) && !/stumail/.test(block));
+  report('remoteSessions: the command shape is a closed, bounded field list',
+    /m\.keys\(\)\.hasOnly\(/.test(block) && /m\.title\.size\(\)\s*<=\s*\d+/.test(block));
 }
 
 // ── The run ──────────────────────────────────────────────────────────────────
@@ -239,7 +335,22 @@ const MUTATIONS = [
     s => s.replace(/allow delete: if false;/, 'allow delete: if ownsStored();')],
   ['a wildcard match is added "temporarily" while debugging',
     s => s.replace(/service cloud\.firestore \{\n(\s*)match \/databases\/\{database\}\/documents \{/,
-      'service cloud.firestore {\n$1match /databases/{database}/documents {\n      match /{document=**} {\n        allow read, write: if request.auth != null;\n      }')]
+      'service cloud.firestore {\n$1match /databases/{database}/documents {\n      match /{document=**} {\n        allow read, write: if request.auth != null;\n      }')],
+  // The remote-session block, where the id is the permission.
+  ['remote sessions become listable, so ids can be discovered',
+    s => s.replace(/allow get: if idIsCapability\(\) && live\(\);/, 'allow get, list: if idIsCapability() && live();')],
+  ['remote sessions never expire',
+    s => s.replace(/allow get: if idIsCapability\(\) && live\(\);/, 'allow get: if idIsCapability();')],
+  ['a student account may start a remote session',
+    s => s.replace(/== 'zcs\.k12\.in\.us';/, "in ['zcs.k12.in.us', 'stumail.zcs.k12.in.us'];")],
+  ['anyone may start a remote session',
+    s => s.replace(/allow create: if idIsCapability\(\)\n(\s*)&& isStaff\(\)/, 'allow create: if idIsCapability()\n$1&& true')],
+  ['the iPad write cap is removed',
+    s => s.replace(/\n\s*&& request\.resource\.data\.ipadWrites <= \d+/, '')],
+  ['the iPad may rewrite the laptop\'s side',
+    s => s.replace(/hasOnly\(\['ipad', 'ipadAt', 'ipadWrites'\]\)/, "hasOnly(['ipad', 'ipadAt', 'ipadWrites', 'host', 'hostAt', 'ownerUid'])")],
+  ['a grant is added outside the reviewed collections',
+    s => s.replace(/(\n    \/\/ ── The teacher's iPad remote)/, '\n    match /scratch/{id} {\n      allow get: if inTenant(\'zcs\') && ownsStored();\n    }\n$1')]
 ];
 
 for (const [name, mutate] of MUTATIONS) {

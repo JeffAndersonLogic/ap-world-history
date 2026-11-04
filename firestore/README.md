@@ -106,6 +106,46 @@ account could still burn the daily quota by rewriting one document in a loop. On
 the free plan that costs nothing and produces an outage rather than a bill, which
 is the containment, and it is why the free plan is the right place to start.
 
+## The iPad remote's sessions (added 2026-11-04)
+
+`tenants/{tenantId}/remoteSessions/{sessionId}` is the teacher's slide remote,
+moved here from the public ntfy.sh relay because that relay's 250 messages a day
+are counted per internet address and the whole school is one address. **It holds
+no student work and no teacher notes**: who started the session, when, the last
+slide number and deck title the laptop reported, and the last button the iPad
+pressed. The command shape is a closed, bounded field list.
+
+**This is the one block a caller need not be signed in for, and that is a
+deliberate exception.** The iPad cannot sign in, because Google sign-in fails in
+iPad Safari (see "The iPhone sign-in fails" in
+`docs/claude/student-work-persistence.md`). Its permission is the session id
+instead: 144 random bits, shown only in the laptop's QR code, and `list` is never
+granted, so an id can be handed over but not discovered. What one is worth is
+bounded four ways:
+
+1. **Only a signed-in staff account starts a session**, and staff means the
+   `zcs.k12.in.us` domain exactly. A student `stumail` account is refused here even
+   though it is in the tenant.
+2. **A session dies sixteen hours after it starts**, on server time. Nothing reads
+   or writes it after that, so nothing has to clean it up to make it safe.
+3. **The iPad side is capped at 3,000 writes per session**, counted by the server
+   (`ipadWrites` must rise by exactly one per write). This is the answer to "could
+   a leaked code spend the daily quota the student backup depends on": a session
+   cannot spend more than 3,000 of the 20,000, and only staff can make sessions.
+   A rate limit was declined for responses because a rejected write loses a
+   student's offline paragraph; the remote has no such cost, but a count was
+   simpler and does not punish a quick double tap.
+4. **Each side writes only its own fields.** The iPad cannot change the owner, the
+   start time, the counter's base, or what the laptop reported; the laptop must be
+   the staff member who started the session.
+
+`check-firestore-rules.js` checks the response block and this block separately
+and fails if an allow appears anywhere else. `firestore-rules.test.js` asserts
+the remote block against the real engine with its own negative controls. **These
+rules have to be published in the Firebase console before the remote works**, the
+same way the response rules were. The copy ZCS is reviewing predates this block,
+so send them the current file.
+
 ## Deletion is refused for everyone, including the author
 
 This system exists because student work vanishes. A delete path a student can

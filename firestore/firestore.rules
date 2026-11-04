@@ -224,5 +224,108 @@ service cloud.firestore {
       // rules by design.
       allow delete: if false;
     }
+
+    // ── The teacher's iPad remote ──────────────────────────────────────────
+    //
+    // tenants/{tenantId}/remoteSessions/{sessionId}, added 2026-11-04. The laptop
+    // and the iPad pass slide commands through one small document instead of
+    // the public ntfy.sh relay, whose 250-messages-a-day allowance is counted
+    // per internet address. A whole school is one address, so the remote used to
+    // run dry every afternoon.
+    //
+    // NO STUDENT WORK AND NO TEACHER NOTES LIVE HERE. A session holds who started
+    // it, when, the last slide number and deck title the laptop reported, and
+    // the last button the iPad pressed. Nothing else is accepted.
+    //
+    // THIS IS THE ONE PLACE A CALLER NEED NOT BE SIGNED IN, and why that is safe.
+    // Google sign-in does not work in iPad Safari (the pop-up and the page cannot
+    // share storage; see "The iPhone sign-in fails" in
+    // docs/claude/student-work-persistence.md), so the iPad cannot prove who it
+    // is. It proves instead that it was handed the session: the document id is
+    // 144 random bits, shown only in the laptop's QR code, and `list` is never
+    // granted, so an id cannot be discovered, only given. Four things bound what
+    // an id is worth:
+    //   1. Only a signed-in STAFF account can create a session. A student
+    //      stumail account cannot, and nobody can create one without signing in.
+    //   2. A session is dead sixteen hours after it was created. Nothing can read
+    //      or write it after that, without anyone having to delete it.
+    //   3. The iPad side is capped at 3,000 writes per session, counted by the
+    //      server, so a leaked id cannot be used to spend the free plan's daily
+    //      write allowance that the student backup depends on.
+    //   4. The iPad can only write the iPad's fields, and only in a fixed shape.
+    //      It cannot change who owns the session, when it started, or what the
+    //      laptop reported.
+    match /tenants/{tenantId}/remoteSessions/{sessionId} {
+
+      // 36 hex characters, 18 random bytes, made by crypto.getRandomValues.
+      function idIsCapability() {
+        return sessionId.matches('^[a-f0-9]{36}$');
+      }
+
+      // Staff only, exactly the staff domain: a student account in the same
+      // tenant is refused here even though it passes inTenant().
+      function isStaff() {
+        return inTenant(tenantId)
+          && request.auth.token.email.lower().split('@')[1] == 'zcs.k12.in.us';
+      }
+
+      function ownsSession() {
+        return isStaff() && resource.data.ownerUid == request.auth.uid;
+      }
+
+      // Server time decides expiry, never the client.
+      function live() {
+        return resource.data.createdAt + duration.value(16, 'h') > request.time;
+      }
+
+      // One button press or one slide report, and nothing else. A closed field
+      // list, every field typed and bounded.
+      function command(m, types) {
+        return m is map
+          && m.keys().hasOnly(['type', 'index', 'count', 'title', 'id'])
+          && m.keys().hasAll(['type', 'index', 'id'])
+          && m.type in types
+          && m.index is int && m.index >= 0 && m.index <= 500
+          && m.id is string && m.id.size() <= 64
+          && (!('count' in m.keys()) || (m.count is string && m.count.size() <= 24))
+          && (!('title' in m.keys()) || (m.title is string && m.title.size() <= 200));
+      }
+
+      // Knowing the id is the permission to read it, until it expires. There is
+      // deliberately no `list`.
+      allow get: if idIsCapability() && live();
+
+      allow create: if idIsCapability()
+                    && isStaff()
+                    && request.resource.data.keys().hasOnly(['tenantId', 'ownerUid', 'createdAt', 'ipadWrites'])
+                    && request.resource.data.keys().hasAll(['tenantId', 'ownerUid', 'createdAt', 'ipadWrites'])
+                    && request.resource.data.tenantId == tenantId
+                    && request.resource.data.ownerUid == request.auth.uid
+                    && request.resource.data.createdAt == request.time
+                    && request.resource.data.ipadWrites == 0;
+
+      // The laptop, signed in as the staff member who started the session,
+      // reports the slide it is on.
+      allow update: if idIsCapability()
+                    && live()
+                    && ownsSession()
+                    && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['host', 'hostAt'])
+                    && command(request.resource.data.host, ['state'])
+                    && request.resource.data.hostAt == request.time;
+
+      // The iPad presses a button. Its write counter must go up by exactly one
+      // each time, so the cap is counted by the server and cannot be reset.
+      allow update: if idIsCapability()
+                    && live()
+                    && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['ipad', 'ipadAt', 'ipadWrites'])
+                    && command(request.resource.data.ipad,
+                         ['hello', 'ping', 'next', 'prev', 'start', 'goto', 'timer-toggle', 'timer-reset'])
+                    && request.resource.data.ipadAt == request.time
+                    && request.resource.data.ipadWrites == resource.data.ipadWrites + 1
+                    && request.resource.data.ipadWrites <= 3000;
+
+      // Sessions expire instead. Nothing needs to clean them up to make them safe.
+      allow delete: if false;
+    }
   }
 }

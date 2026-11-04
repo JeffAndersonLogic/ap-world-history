@@ -72,13 +72,13 @@ async function makeContext(browser,mode='sse',override){
 async function pair(browser,mode,options={}){
   const hc=await makeContext(browser,mode),ic=await makeContext(browser,mode,options.override),h=await hc.newPage(),i=await ic.newPage(),errors=[];
   for(const p of [h,i])p.on('pageerror',e=>errors.push(e.message));
-  await h.goto(origin+'/teacher/remote-host.html?topic=3-2');
+  await h.goto(origin+'/teacher/remote-host.html?topic=3-2&relay=ntfy');
   const session=await h.evaluate(()=>sessionStorage.getItem('behistorical-remote-session-3-2'));
   const c=channel('behistorical-remote-'+session);Object.assign(c,options);
   await count(h).waitFor();await h.locator('#closeQr').click();
   for(let n=0;n<4;n++)await h.frameLocator('#command').locator('#next').click();
   if(options.delayFrame)await ic.route('**/teacher/topic-3-2-os.html',async r=>{await new Promise(resolve=>setTimeout(resolve,4500));await r.continue();});
-  await i.goto(origin+'/teacher/ipad-remote.html?topic=3-2&session='+session,{waitUntil:options.delayFrame?'domcontentloaded':'load'});
+  await i.goto(origin+'/teacher/ipad-remote.html?topic=3-2&relay=ntfy&session='+session,{waitUntil:options.delayFrame?'domcontentloaded':'load'});
   return{h,i,c,errors,close:async()=>{await hc.close();await ic.close();}};
 }
 async function connected(p){await p.i.waitForFunction(()=>document.querySelector('#status').classList.contains('ok'),null,{timeout:35000});await waitIndex(p.i,await index(p.h));}

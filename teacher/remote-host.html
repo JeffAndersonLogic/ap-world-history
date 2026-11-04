@@ -6,7 +6,7 @@
 <title>BeHistorical | iPad Remote Host</title>
 <style>
 :root{--bg:#17191a;--panel:#24282a;--line:#5a5f5c;--gold:#c9a46a;--paper:#f5f0e7;--ok:#75b777;--warn:#d6a95e;font-family:Montserrat,system-ui,sans-serif}
-*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:var(--bg);color:var(--paper);overflow:hidden}.bar{height:58px;display:flex;align-items:center;gap:12px;padding:8px 14px;background:var(--panel);border-bottom:2px solid var(--gold)}.brand{font-weight:900;color:var(--gold);white-space:nowrap}.status{font-size:.78rem}.code{font-weight:900;letter-spacing:.18em;background:#0f1112;border:1px solid var(--line);border-radius:8px;padding:8px 11px;color:#fff}.spacer{flex:1}.btn{border:1px solid var(--line);border-radius:8px;background:#3e4447;color:#fff;padding:8px 11px;font-weight:800;cursor:pointer}.btn:hover{background:#555d60}.btn.gold{background:var(--gold);color:#151718;border-color:var(--gold)}.connected{color:var(--ok);font-weight:800}.waiting{color:var(--warn);font-weight:800}iframe{display:block;width:100%;height:calc(100vh - 58px);border:0;background:#202426}.qr-backdrop{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:rgba(0,0,0,.68);padding:24px}.qr-backdrop.hidden{display:none}.qr-card{width:min(440px,94vw);background:var(--paper);color:#151718;border-radius:18px;padding:24px;box-shadow:0 20px 70px rgba(0,0,0,.45);text-align:center}.qr-card h2{margin:.1rem 0 .35rem;font-size:1.45rem}.qr-card p{margin:.35rem auto 1rem;max-width:340px;line-height:1.45;color:#444}.qr-code{display:inline-grid;place-items:center;min-width:244px;min-height:244px;padding:12px;background:#fff;border:1px solid #ddd;border-radius:12px;margin:8px auto 14px}.qr-code img,.qr-code canvas{display:block}.qr-pair{font-size:.78rem;color:#666}.qr-pair strong{display:block;margin-top:3px;font-size:1.2rem;letter-spacing:.16em;color:#151718}.qr-actions{display:flex;justify-content:center;gap:8px;margin-top:16px}.qr-actions .btn{font-size:.78rem}.qr-close{background:#fff;color:#151718;border-color:#aaa}@media(max-width:780px){.status{display:none}.brand{font-size:.85rem}.bar{gap:7px;padding:7px 8px}.code{font-size:.82rem}}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:var(--bg);color:var(--paper);overflow:hidden}.bar{height:58px;display:flex;align-items:center;gap:12px;padding:8px 14px;background:var(--panel);border-bottom:2px solid var(--gold)}.brand{font-weight:900;color:var(--gold);white-space:nowrap}.status{font-size:.78rem}.code{font-weight:900;letter-spacing:.18em;background:#0f1112;border:1px solid var(--line);border-radius:8px;padding:8px 11px;color:#fff}.spacer{flex:1}.btn{border:1px solid var(--line);border-radius:8px;background:#3e4447;color:#fff;padding:8px 11px;font-weight:800;cursor:pointer}.btn:hover{background:#555d60}.btn.gold{background:var(--gold);color:#151718;border-color:var(--gold)}.connected{color:var(--ok);font-weight:800}.waiting{color:var(--warn);font-weight:800}iframe{display:block;width:100%;height:calc(100vh - 58px);border:0;background:#202426}.qr-backdrop{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:rgba(0,0,0,.68);padding:24px}.qr-backdrop.hidden{display:none}.qr-card{width:min(440px,94vw);background:var(--paper);color:#151718;border-radius:18px;padding:24px;box-shadow:0 20px 70px rgba(0,0,0,.45);text-align:center}.qr-card h2{margin:.1rem 0 .35rem;font-size:1.45rem}.qr-card p{margin:.35rem auto 1rem;max-width:340px;line-height:1.45;color:#444}.qr-code{display:inline-grid;place-items:center;min-width:244px;min-height:244px;padding:12px;background:#fff;border:1px solid #ddd;border-radius:12px;margin:8px auto 14px}.qr-code img,.qr-code canvas{display:block}.qr-pair{font-size:.78rem;color:#666}.qr-pair strong{display:block;margin-top:3px;font-size:1.2rem;letter-spacing:.16em;color:#151718}.qr-actions{display:flex;justify-content:center;gap:8px;margin-top:16px}.qr-actions .btn{font-size:.78rem}.qr-close{background:#fff;color:#151718;border-color:#aaa}.qr-relay{font-size:.72rem;color:#666;margin:14px auto 0}.qr-relay a{color:#5b4520}.btn[hidden]{display:none}@media(max-width:780px){.status{display:none}.brand{font-size:.85rem}.bar{gap:7px;padding:7px 8px}.code{font-size:.82rem}}
 body{display:flex;flex-direction:column}.bar{height:auto;min-height:58px;flex-shrink:0;flex-wrap:wrap}#connection{max-width:320px;font-size:.8rem}iframe{flex:1;min-height:0;height:auto}
 </style>
 </head>
@@ -17,6 +17,7 @@ body{display:flex;flex-direction:column}.bar{height:auto;min-height:58px;flex-sh
   <div class="code" id="code">------</div>
   <div id="connection" class="waiting">Starting secure relay…</div>
   <div class="spacer"></div>
+  <button class="btn gold" id="signIn" hidden>Sign In</button>
   <button class="btn" id="retryRelay">Retry Connection</button>
   <button class="btn" id="openProjection">Open Projection</button>
   <button class="btn gold" id="showQr">Scan iPad QR</button>
@@ -31,14 +32,17 @@ body{display:flex;flex-direction:column}.bar{height:auto;min-height:58px;flex-sh
     <div class="qr-pair">Session label<strong id="qrPairCode">------</strong></div>
     <p id="qrStatus" role="status">Connecting to the classroom relay…</p>
     <div class="qr-actions">
+      <button class="btn gold" id="qrSignIn" hidden>Sign In</button>
       <button class="btn qr-close" id="closeQr">Close</button>
       <button class="btn" id="qrRetry">Retry Connection</button>
       <button class="btn" id="copyQrLink">Copy Link</button>
     </div>
+    <p class="qr-relay" id="relaySwitch"></p>
   </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
 <script src="remote-relay.js?v=remote-recovery-1"></script>
+<script src="remote-firebase.js?v=remote-firebase-1"></script>
 <script>
 (function(){
 'use strict';
@@ -53,20 +57,29 @@ const qrPairCode=document.getElementById('qrPairCode');
 const qrStatus=document.getElementById('qrStatus');
 /* Every Teaching OS topic has a topic-X-X-os.html entry page (some redirect to a -story-os page); only the 1.7 pilot is a command center. A typed list of topics here fell behind: 3.1, 3.3 and 3.4 framed command-center files that were never made. */frame.src=topic==='1-7'?'command-center-topic-1-7.html':'topic-'+topic+'-os.html';
 let ipadUrl='',lastRemoteIndex=-1,lastIpadSeen=0,frameWatch=null;
+/* Two ways for the devices to talk. Firebase is the default since 2026-11-04:
+   the public ntfy.sh relay allows 250 messages a day per internet address, the
+   whole school is one address, and the remote ran dry every afternoon. ?relay=ntfy
+   keeps the old relay reachable as a backup for a day Firebase is unreachable. */
+const relayKind=params.get('relay')==='ntfy'?'ntfy':'firebase';
 function makeToken(){const a=new Uint8Array(18);crypto.getRandomValues(a);return Array.from(a,b=>b.toString(16).padStart(2,'0')).join('');}
-const sessionKey='behistorical-remote-session-'+topic;
+const sessionKey='behistorical-remote-session-'+topic+(relayKind==='ntfy'?'':'-firebase');
 let session='';
 try{session=sessionStorage.getItem(sessionKey)||'';}catch(e){}
 if(!/^[a-f0-9]{36}$/i.test(session)){
-  session=makeToken();
-  try{sessionStorage.setItem(sessionKey,session);}catch(e){}
+  /* Firebase sessions are made by the server-side check, after sign-in, so a
+     QR is never shown for a session that does not exist yet. */
+  session=relayKind==='ntfy'?makeToken():'';
+  if(session){try{sessionStorage.setItem(sessionKey,session);}catch(e){}}
 }
-const label=session.slice(0,6).toUpperCase();
-const relayTopic='behistorical-remote-'+session;
-const relayUrl='https://ntfy.sh/'+relayTopic;
-codeEl.textContent=label;
-function buildIpadUrl(){const url=new URL('ipad-remote.html',location.href);url.searchParams.set('topic',topic);url.searchParams.set('session',session);return url.href;}
-function renderQr(){ipadUrl=buildIpadUrl();qrPairCode.textContent=label;qrCode.innerHTML='';if(window.QRCode){new QRCode(qrCode,{text:ipadUrl,width:220,height:220,correctLevel:QRCode.CorrectLevel.M});}else{qrCode.textContent='QR code unavailable. Use Copy Link instead.';}qrBackdrop.classList.remove('hidden');}
+function setSession(next){session=next;try{sessionStorage.setItem(sessionKey,session);}catch(e){}codeEl.textContent=session.slice(0,6).toUpperCase();if(!qrBackdrop.classList.contains('hidden'))renderQr();}
+codeEl.textContent=session?session.slice(0,6).toUpperCase():'------';
+function buildIpadUrl(){const url=new URL('ipad-remote.html',location.href);url.searchParams.set('topic',topic);url.searchParams.set('session',session);if(relayKind==='ntfy')url.searchParams.set('relay','ntfy');return url.href;}
+function renderQr(){qrBackdrop.classList.remove('hidden');qrCode.innerHTML='';if(!session){ipadUrl='';qrPairCode.textContent='------';qrCode.textContent='The QR code appears once the laptop is signed in and the session has started.';return;}ipadUrl=buildIpadUrl();qrPairCode.textContent=session.slice(0,6).toUpperCase();if(window.QRCode){new QRCode(qrCode,{text:ipadUrl,width:220,height:220,correctLevel:QRCode.CorrectLevel.M});}else{qrCode.textContent='QR code unavailable. Use Copy Link instead.';}}
+const switchUrl=new URL(location.href);if(relayKind==='ntfy')switchUrl.searchParams.delete('relay');else switchUrl.searchParams.set('relay','ntfy');
+document.getElementById('relaySwitch').innerHTML=relayKind==='ntfy'?'Using the backup relay (ntfy.sh), which runs out later in the day. <a href="'+switchUrl.href+'">Switch back to Firebase</a>.':'Connected through BeHistorical’s Firebase. If it cannot connect, <a href="'+switchUrl.href+'">use the backup relay</a>.';
+const signInButtons=[document.getElementById('signIn'),document.getElementById('qrSignIn')];
+function showSignIn(on){signInButtons.forEach(b=>b.hidden=!on);}
 function frameDoc(){try{return frame.contentDocument||frame.contentWindow.document;}catch(e){return null;}}
 function click(sel){const d=frameDoc(),el=d&&d.querySelector(sel);if(el){el.click();return true;}return false;}
 function readIndex(){const d=frameDoc(),c=d&&d.querySelector('#count');if(!c)return 0;const m=(c.textContent||'').match(/(\d+)\s*\//);return m?Math.max(0,Number(m[1])-1):0;}
@@ -74,10 +87,14 @@ function readState(){const d=frameDoc();if(!d)return null;const count=d.querySel
 function sendState(){const state=readState();if(state){lastRemoteIndex=state.index;relay.publish(state);}}
 function gotoIndex(target){target=Math.min(200,Math.max(0,Number(target)||0));const current=readIndex(),delta=target-current;if(!delta)return;const key=delta>0?'ArrowRight':'ArrowLeft';for(let i=0;i<Math.abs(delta);i++){frame.contentWindow.document.dispatchEvent(new KeyboardEvent('keydown',{key,bubbles:true,cancelable:true}));}}
 function handle(data){if(!data||data.sender!=='ipad')return;lastIpadSeen=Date.now();connEl.textContent='iPad connected';connEl.className='connected';qrBackdrop.classList.add('hidden');switch(data.type){case'hello':case'ping':sendState();return;case'next':click('#next');break;case'prev':click('#prev');break;case'start':click('#start');break;case'goto':gotoIndex(data.index);break;case'timer-toggle':click('#toggleTimer');break;case'timer-reset':click('#resetTimer');break;}setTimeout(sendState,100);}
-const relay=BHRemoteRelay.connect({url:relayUrl,sender:'host',onmessage:handle,
-  onready(){connEl.textContent='Waiting for iPad';qrStatus.textContent='Ready. Scan the code to connect your iPad.';connEl.className='waiting';if(lastIpadSeen)sendState();},
-  onstatus(kind,message){if(kind==='ready')return;connEl.textContent=message;qrStatus.textContent=message;connEl.className='waiting';}
-});
+const callbacks={sender:'host',onmessage:handle,
+  onready(){showSignIn(false);connEl.textContent='Waiting for iPad';qrStatus.textContent='Ready. Scan the code to connect your iPad.';connEl.className='waiting';if(!qrBackdrop.classList.contains('hidden'))renderQr();if(lastIpadSeen)sendState();},
+  onstatus(kind,message){if(kind==='ready')return;showSignIn(kind==='signin');connEl.textContent=message;qrStatus.textContent=message;connEl.className='waiting';}
+};
+const relay=relayKind==='ntfy'
+  ?BHRemoteRelay.connect(Object.assign({url:'https://ntfy.sh/behistorical-remote-'+session},callbacks))
+  :BHRemoteFirebase.connect(Object.assign({session,onsession:setSession},callbacks));
+signInButtons.forEach(b=>b.addEventListener('click',()=>{if(relay.signIn)relay.signIn();}));
 frame.addEventListener('load',()=>{
   clearInterval(frameWatch);lastRemoteIndex=readIndex();
   if(lastIpadSeen)sendState();
@@ -90,7 +107,7 @@ document.getElementById('showQr').addEventListener('click',renderQr);
 document.getElementById('closeQr').addEventListener('click',()=>qrBackdrop.classList.add('hidden'));
 qrBackdrop.addEventListener('click',e=>{if(e.target===qrBackdrop)qrBackdrop.classList.add('hidden');});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')qrBackdrop.classList.add('hidden');});
-async function copyIpadLink(button){const url=ipadUrl||buildIpadUrl();try{await navigator.clipboard.writeText(url);const old=button.textContent;button.textContent='Copied';setTimeout(()=>button.textContent=old,1200);}catch(e){prompt('Open this on the iPad:',url);}}
+async function copyIpadLink(button){if(!session){qrStatus.textContent='Sign in first. The link appears once the session has started.';return;}const url=ipadUrl||buildIpadUrl();try{await navigator.clipboard.writeText(url);const old=button.textContent;button.textContent='Copied';setTimeout(()=>button.textContent=old,1200);}catch(e){prompt('Open this on the iPad:',url);}}
 document.getElementById('copyLink').addEventListener('click',e=>copyIpadLink(e.currentTarget));
 document.getElementById('copyQrLink').addEventListener('click',e=>copyIpadLink(e.currentTarget));
 renderQr();

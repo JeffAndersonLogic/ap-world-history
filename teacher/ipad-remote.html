@@ -26,6 +26,7 @@
 </div>
 <div id="slidebadge" class="slidebadge"></div>
 <script src="remote-relay.js?v=remote-recovery-1"></script>
+<script src="remote-firebase.js?v=remote-firebase-1"></script>
 <script>
 (function(){
 'use strict';
@@ -39,6 +40,12 @@ const offlineText=document.getElementById('offlineText');
 const badge=document.getElementById('slidebadge');
 const exitPresent=document.getElementById('exitPresent');
 /* Same rule as remote-host.html: every Teaching OS topic has a topic-X-X-os.html entry page; only the 1.7 pilot is a command center. */frame.src=topic==='1-7'?'command-center-topic-1-7.html':'topic-'+topic+'-os.html';
+/* Firebase unless the laptop's QR says otherwise; see remote-host.html. */
+const relayKind=params.get('relay')==='ntfy'?'ntfy':'firebase';
+/* Firebase keeps one document per session, and a listener may see only the
+   latest of two quick writes. So in that mode the iPad says where to go, never
+   "next": the last message alone is always enough. */
+const absolute=relayKind==='firebase';
 let suppress=false,lastHostIndex=0,lastHostSeen=0,helloTimer=null,helloAttempt=0;
 function setStatus(text,ok){status.textContent=text;status.className='status'+(ok?' ok':'');}
 function setOffline(text){if(text)offlineText.textContent=text;offline.classList.remove('hidden');}
@@ -47,10 +54,10 @@ function readIndex(){const d=frameDoc(),c=d&&d.querySelector('#count');if(!c)ret
 function localGoto(target){target=Math.min(200,Math.max(0,Number(target)||0));const d=frameDoc();if(!d)return;const current=readIndex(),delta=target-current;if(!delta)return;suppress=true;const key=delta>0?'ArrowRight':'ArrowLeft';for(let i=0;i<Math.abs(delta);i++)d.dispatchEvent(new KeyboardEvent('keydown',{key,bubbles:true,cancelable:true}));setTimeout(()=>suppress=false,120);}
 function setPresentMode(on){const d=frameDoc();if(!d)return;d.body.classList.toggle('project-mode',!!on);d.dispatchEvent(new frame.contentWindow.Event('bh-presentation-change'));exitPresent.classList.toggle('show',!!on);badge.style.display=on?'none':'';}
 if(session.length<20){setStatus('Scan the QR code on the laptop',false);setOffline('This page needs a live classroom session. Open the remote host on the laptop and scan its QR code with the iPad Camera.');return;}
-const relayTopic='behistorical-remote-'+session;
-const relayUrl='https://ntfy.sh/'+relayTopic;
 function publish(type,extra){return relay.publish(Object.assign({type},extra||{}));}
-function bindFrame(){const d=frameDoc();if(!d)return;d.addEventListener('click',e=>{if(suppress)return;const present=e.target.closest&&e.target.closest('#presentHere');if(present){e.preventDefault();e.stopImmediatePropagation();setPresentMode(true);return;}const target=e.target.closest&&e.target.closest('#next,#prev,#start,#toggleTimer,#resetTimer,.flow-card');if(!target)return;if(target.id==='next')publish('next');else if(target.id==='prev')publish('prev');else if(target.id==='start')publish('start');else if(target.id==='toggleTimer')publish('timer-toggle');else if(target.id==='resetTimer')publish('timer-reset');else if(target.classList.contains('flow-card'))publish('goto',{index:Number(target.dataset.slide)||0});},true);d.addEventListener('keydown',e=>{if(suppress)return;if(e.key==='ArrowRight'||e.key==='PageDown')publish('next');else if(e.key==='ArrowLeft'||e.key==='PageUp')publish('prev');else if(e.key==='Home')publish('start');else if(e.key==='Escape')setPresentMode(false);},true);}
+/* After this device's own deck has moved, tell the laptop where it now is. */
+function sendPosition(){setTimeout(()=>publish('goto',{index:readIndex()}),0);}
+function bindFrame(){const d=frameDoc();if(!d)return;d.addEventListener('click',e=>{if(suppress)return;const present=e.target.closest&&e.target.closest('#presentHere');if(present){e.preventDefault();e.stopImmediatePropagation();setPresentMode(true);return;}const target=e.target.closest&&e.target.closest('#next,#prev,#start,#toggleTimer,#resetTimer,.flow-card');if(!target)return;if(absolute&&(target.id==='next'||target.id==='prev'||target.id==='start'))sendPosition();else if(target.id==='next')publish('next');else if(target.id==='prev')publish('prev');else if(target.id==='start')publish('start');else if(target.id==='toggleTimer')publish('timer-toggle');else if(target.id==='resetTimer')publish('timer-reset');else if(target.classList.contains('flow-card'))publish('goto',{index:Number(target.dataset.slide)||0});},true);d.addEventListener('keydown',e=>{if(suppress)return;if(absolute&&['ArrowRight','PageDown','ArrowLeft','PageUp','Home'].includes(e.key))sendPosition();else if(e.key==='ArrowRight'||e.key==='PageDown')publish('next');else if(e.key==='ArrowLeft'||e.key==='PageUp')publish('prev');else if(e.key==='Home')publish('start');else if(e.key==='Escape')setPresentMode(false);},true);}
 frame.addEventListener('load',()=>{setPresentMode(false);bindFrame();localGoto(lastHostIndex);if(lastHostSeen)offline.classList.add('hidden');});
 function handle(data){if(!data||data.sender!=='host'||data.type!=='state')return;lastHostSeen=Date.now();clearTimeout(helloTimer);lastHostIndex=Number(data.index)||0;localGoto(lastHostIndex);badge.textContent=data.count||'';if(frameDoc()&&frameDoc().querySelector('#count'))offline.classList.add('hidden');setStatus('Connected to classroom laptop',true);}
 function findLaptop(){
@@ -66,14 +73,17 @@ function findLaptop(){
   };
   attempt();
 }
-const relay=BHRemoteRelay.connect({url:relayUrl,sender:'ipad',onmessage:handle,onready:findLaptop,
+const callbacks={sender:'ipad',onmessage:handle,onready:findLaptop,
   onstatus(kind,message){if(kind==='ready')return;clearTimeout(helloTimer);setStatus(message,false);if(kind!=='connecting'||!lastHostSeen)setOffline(message);}
-});
+};
+const relay=relayKind==='ntfy'
+  ?BHRemoteRelay.connect(Object.assign({url:'https://ntfy.sh/behistorical-remote-'+session},callbacks))
+  :BHRemoteFirebase.connect(Object.assign({session},callbacks));
 // A quiet heartbeat keeps an idle lesson alive without exhausting the relay's daily message allowance.
 setInterval(()=>{if(document.visibilityState==='visible'&&lastHostSeen)publish('ping');},300000);
 document.getElementById('retryRelay').addEventListener('click',()=>{clearTimeout(helloTimer);relay.retry();});
-document.getElementById('next').addEventListener('click',()=>{publish('next');localGoto(lastHostIndex+1);});
-document.getElementById('back').addEventListener('click',()=>{publish('prev');localGoto(Math.max(0,lastHostIndex-1));});
+document.getElementById('next').addEventListener('click',()=>{if(absolute){localGoto(readIndex()+1);publish('goto',{index:readIndex()});return;}publish('next');localGoto(lastHostIndex+1);});
+document.getElementById('back').addEventListener('click',()=>{if(absolute){localGoto(Math.max(0,readIndex()-1));publish('goto',{index:readIndex()});return;}publish('prev');localGoto(Math.max(0,lastHostIndex-1));});
 exitPresent.addEventListener('click',()=>setPresentMode(false));
 
 })();
