@@ -819,7 +819,61 @@ function balance(s){
   return board('balance',themeOf(t,'dark'),pad(head(s)+grow(`<div class="bht-bl"><div class="beam" aria-hidden="true"></div>${side(L,'l')}${pivot}${side(R,'r')}</div>`)+claim+foot(s.footer),'tight'));
 }
 
+/* Round 9: reusable reasoning layouts. Copyable examples are deliberately
+   topic-neutral: a layout never prescribes a topic's story or evidence.
+   Keep labels short and body entries to one or two projected lines. */
+function reasoningBoard(s,kind,body,def){
+  return board(kind,themeOf(s.template||{},def||'dark'),`<div class="bht-r9">${head(s)}<div class="r9-body">${body}</div>${foot(s.footer)}</div>`);
+}
+const r9Label=x=>`<div class="r9-label">${esc(x)}</div>`;
+const r9Text=x=>`<p>${rich(x)}</p>`;
+function focusLens(s){
+  const t=s.template||{};
+  return reasoningBoard(s,'focus-lens',`<div class="r9-lens"><div class="r9-orbit"><span>${rich(t.concept)}</span></div><div class="r9-definition">${r9Label(t.label||'The idea')}${r9Text(t.meaning)}<div class="r9-rule"></div>${r9Label(t.promptLabel||'Look for')}${r9Text(t.prompt)}</div></div>`);
+}
+function causalFork(s){
+  const t=s.template||{};
+  return reasoningBoard(s,'causal-fork',`<div class="r9-fork"><div class="r9-origin">${r9Label(t.originLabel||'Shared pressure')}${r9Text(t.origin)}</div><div class="r9-fork-arms">${arr(t.branches).slice(0,2).map(b=>`<div class="r9-arm">${r9Label(b.label)}<h3>${rich(b.outcome)}</h3>${r9Text(b.why)}</div>`).join('')}</div></div>`);
+}
+function convergence(s){
+  const t=s.template||{},drivers=arr(t.drivers).slice(0,3);
+  return reasoningBoard(s,'convergence',`<div class="r9-converge"><div class="r9-drivers">${drivers.map(d=>`<div>${r9Label(d.label)}${r9Text(d.text)}</div>`).join('')}</div><div class="r9-gather" aria-hidden="true"></div><div class="r9-result">${r9Label(t.resultLabel||'Together') }<h3>${rich(t.result)}</h3>${r9Text(t.link)}</div></div>`,'paper');
+}
+function perspectiveBands(s){
+  const t=s.template||{};
+  return reasoningBoard(s,'perspective-bands',`<div class="r9-voices">${arr(t.voices).slice(0,3).map((v,i)=>`<div class="r9-voice"><div class="r9-voice-name"><span>${String(i+1).padStart(2,'0')}</span><h3>${rich(v.name)}</h3></div><div>${r9Label(v.label||'Priority')}${r9Text(v.priority)}</div><div>${r9Label(v.responseLabel||'Response')}${r9Text(v.response)}</div></div>`).join('')}</div>`);
+}
+function scaleLadder(s){
+  const t=s.template||{};
+  return reasoningBoard(s,'scale-ladder',`<div class="r9-scales">${arr(t.levels).slice(0,3).map((l,i)=>`<div class="r9-scale" style="--step:${i}"><div class="r9-scale-tag">${r9Label(l.label)}</div><h3>${rich(l.change)}</h3>${r9Text(l.connection)}</div>`).join('')}</div>`,'paper');
+}
+function evidenceWeave(s){
+  const t=s.template||{};
+  return reasoningBoard(s,'evidence-weave',`<div class="r9-weave"><div class="r9-sources">${arr(t.sources).slice(0,2).map(v=>`<div>${r9Label(v.label)}<h3>${rich(v.observation)}</h3>${r9Text(v.limit)}</div>`).join('')}</div><div class="r9-inference">${r9Label(t.label||'Read together')}${r9Text(t.inference)}</div></div>`);
+}
+function periodWindow(s){
+  const t=s.template||{};
+  return reasoningBoard(s,'period-window',`<div class="r9-periods">${arr(t.periods).slice(0,3).map((p,i)=>`<div class="r9-period${i===1?' r9-pivot':''}">${r9Label(p.label)}<h3>${rich(p.when)}</h3>${r9Text(p.text)}<div class="r9-period-note">${rich(p.note)}</div></div>`).join('')}</div>`,'paper');
+}
+function thesisBuild(s){
+  const t=s.template||{};
+  return reasoningBoard(s,'thesis-build',`<div class="r9-thesis"><div class="r9-thesis-claim">${r9Label(t.claimLabel||'Argument')}<h3>${rich(t.claim)}</h3></div><div class="r9-thesis-base"><div>${r9Label(t.evidenceLabel||'Because')}${r9Text(t.evidence)}</div><div>${r9Label(t.qualificationLabel||'Although')}${r9Text(t.qualification)}</div></div></div>`);
+}
+function decisionCrossroads(s){
+  const t=s.template||{};
+  return reasoningBoard(s,'decision-crossroads',`<div class="r9-decision"><div class="r9-constraint">${r9Label(t.contextLabel||'The constraint')}${r9Text(t.context)}</div><div class="r9-options">${arr(t.options).slice(0,2).map(o=>`<div>${r9Label(o.label)}<h3>${rich(o.action)}</h3>${r9Text(o.tradeoff)}</div>`).join('')}</div><div class="r9-decision-question">${rich(t.question)}</div></div>`,'paper');
+}
+function retrievalBridge(s){
+  const t=s.template||{};
+  return reasoningBoard(s,'retrieval-bridge',`<div class="r9-retrieval"><div class="r9-recall">${arr(t.prompts).slice(0,3).map((p,i)=>`<div><span>${i+1}</span>${r9Text(p)}</div>`).join('')}</div><div class="r9-bridge">${r9Label(t.bridgeLabel||'Carry it forward')}<h3>${rich(t.bridge)}</h3></div></div>`);
+}
+
 const KINDS={
+  'focus-lens':focusLens,'causal-fork':causalFork,'convergence':convergence,
+  'perspective-bands':perspectiveBands,'scale-ladder':scaleLadder,
+  'evidence-weave':evidenceWeave,'period-window':periodWindow,
+  'thesis-build':thesisBuild,'decision-crossroads':decisionCrossroads,
+  'retrieval-bridge':retrievalBridge,
 'scene-case':sceneCase,
   'equation':equation,'equation-stack':equationStack,'equation-remove':equationRemove,
   'exchange':exchange,'exchange-flow':exchangeFlow,'exchange-hub':exchangeHub,
@@ -908,6 +962,77 @@ function withKeyConcept(s,html){
 /* ── styles ────────────────────────────────────────────────────────────── */
 
 const CSS=`
+/* Round 9: scoped, fixed 16:9 design units, shared on every surface. */
+.bht-slide .bht-r9{position:absolute;inset:0;padding:48u 60u;display:flex;flex-direction:column;gap:16u}
+.bht-slide .bht-r9 .bht-h{font-size:42u;max-width:none}
+.bht-slide .bht-r9 .bht-sub{font-size:20u;max-width:none}
+.bht-slide .bht-r9 .bht-foot p{font-size:18u}
+.bht-slide .r9-body{flex:1;min-height:0;display:flex;align-items:stretch;padding:8u 0}
+.bht-slide .r9-body>div{width:100%;min-height:0}
+.bht-slide .r9-body h3{font:700 30u/1.22 'Cinzel',Georgia,serif;color:var(--head);margin:0;overflow-wrap:break-word}
+.bht-slide .r9-body p{font:400 24u/1.45 'Libre Baskerville',Georgia,serif;color:var(--fg);margin:0;overflow-wrap:break-word}
+.bht-slide .r9-label{font:800 13u/1.3 'Montserrat',Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:12u}
+.bht-slide .r9-lens{display:grid;grid-template-columns:440u 1fr;align-items:center;gap:76u}
+.bht-slide .r9-orbit{width:390u;height:390u;border:2u solid var(--acc);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative}
+.bht-slide .r9-orbit:before{content:'';position:absolute;inset:16u;border:1u solid var(--rulec);border-radius:50%}
+.bht-slide .r9-orbit span{font:700 46u/1.1 'Cinzel',Georgia,serif;text-align:center;max-width:290u;overflow-wrap:break-word;color:var(--head)}
+.bht-slide .r9-definition{display:flex;flex-direction:column;justify-content:center}
+.bht-slide .r9-rule{height:2u;width:72u;background:var(--acc);margin:24u 0}
+.bht-slide .r9-fork{display:flex;flex-direction:column;justify-content:center;gap:32u}
+.bht-slide .r9-origin{max-width:700u;text-align:center;margin:0 auto;border-bottom:2u solid var(--acc);padding:0 20u 24u}
+.bht-slide .r9-fork-arms{display:grid;grid-template-columns:1fr 1fr;gap:80u;position:relative}
+.bht-slide .r9-arm{padding:18u 0 0 24u;border-left:2u solid var(--acc);display:flex;flex-direction:column;gap:14u}
+.bht-slide .r9-arm .r9-label{margin:0}
+.bht-slide .r9-converge{display:grid;grid-template-columns:1fr 70u 1fr;gap:36u;align-items:center}
+.bht-slide .r9-drivers{display:flex;flex-direction:column;gap:24u}
+.bht-slide .r9-drivers>div{border-bottom:1u solid var(--rulec);padding-bottom:18u}
+.bht-slide .r9-gather{border:2u solid var(--acc);border-left:0;height:80%;position:relative}
+.bht-slide .r9-gather:after{content:'';position:absolute;top:50%;left:100%;width:36u;height:2u;background:var(--acc)}
+.bht-slide .r9-result{padding-left:12u;display:flex;flex-direction:column;gap:20u}
+.bht-slide .r9-result h3{font-size:38u}
+.bht-slide .r9-voices{display:flex;flex-direction:column;justify-content:center}
+.bht-slide .r9-voice{display:grid;grid-template-columns:270u 1fr 1fr;gap:30u;align-items:center;border-top:1u solid var(--rulec);padding:24u 0}
+.bht-slide .r9-voice:last-child{border-bottom:1u solid var(--rulec)}
+.bht-slide .r9-voice-name{display:flex;align-items:center;gap:20u}
+.bht-slide .r9-voice-name span{font:700 18u 'Montserrat',Arial,sans-serif;color:var(--acc)}
+.bht-slide .r9-voice h3{font-size:26u}
+.bht-slide .r9-voice p{font-size:22u}
+.bht-slide .r9-scales{display:flex;flex-direction:column;justify-content:center;gap:20u}
+.bht-slide .r9-scale{margin-left:calc(var(--step)*70*var(--u));padding:24u 0 22u 26u;border-left:4u solid var(--acc);border-bottom:1u solid var(--rulec);display:grid;grid-template-columns:160u 1fr;gap:8u 22u}
+.bht-slide .r9-scale-tag{grid-row:span 2;padding-top:6u}
+.bht-slide .r9-scale h3{font-size:28u}
+.bht-slide .r9-scale p{font-size:22u}
+.bht-slide .r9-weave{display:flex;flex-direction:column;justify-content:center;gap:40u}
+.bht-slide .r9-sources{display:grid;grid-template-columns:1fr 1fr;gap:70u}
+.bht-slide .r9-sources>div{border-top:3u solid var(--acc);padding-top:22u;display:flex;flex-direction:column;gap:12u}
+.bht-slide .r9-sources p{font-size:22u;color:var(--sub)}
+.bht-slide .r9-inference{display:grid;grid-template-columns:210u 1fr;gap:32u;border-top:1u solid var(--rulec);padding-top:26u}
+.bht-slide .r9-inference p{font-size:28u}
+.bht-slide .r9-periods{display:grid;grid-template-columns:1fr 1.15fr 1fr;align-items:stretch;gap:36u;padding:18u 0}
+.bht-slide .r9-period{border-top:2u solid var(--acc);padding:28u 12u;display:flex;flex-direction:column;gap:20u}
+.bht-slide .r9-pivot{background:var(--head);padding:28u;color:var(--bg)}
+.bht-slide .r9-pivot h3,.bht-slide .r9-pivot p{color:var(--bg)}
+.bht-slide .r9-pivot .r9-label{color:#d2b48c}
+.bht-slide .r9-period h3{font-size:34u}
+.bht-slide .r9-period p{font-size:23u}
+.bht-slide .r9-period-note{font:600 16u/1.4 'Montserrat',Arial,sans-serif;margin-top:auto;border-top:1u solid var(--rulec);padding-top:18u}
+.bht-slide .r9-thesis{display:flex;flex-direction:column;justify-content:center;gap:36u}
+.bht-slide .r9-thesis-claim{border-left:5u solid var(--acc);padding:12u 0 12u 30u}
+.bht-slide .r9-thesis-claim h3{font-size:38u;max-width:1000u}
+.bht-slide .r9-thesis-base{display:grid;grid-template-columns:1fr 1fr;gap:60u;padding-left:35u}
+.bht-slide .r9-thesis-base>div{border-top:1u solid var(--rulec);padding-top:22u}
+.bht-slide .r9-decision{display:flex;flex-direction:column;justify-content:center;gap:26u}
+.bht-slide .r9-constraint{display:grid;grid-template-columns:220u 1fr;gap:30u;border-bottom:2u solid var(--acc);padding-bottom:22u}
+.bht-slide .r9-options{display:grid;grid-template-columns:1fr 1fr;gap:70u}
+.bht-slide .r9-options>div{display:flex;flex-direction:column;gap:14u}
+.bht-slide .r9-options p{font-size:23u}
+.bht-slide .r9-decision-question{font:italic 24u/1.4 'Libre Baskerville',Georgia,serif;border-top:1u solid var(--rulec);padding-top:22u;color:var(--sub)}
+.bht-slide .r9-retrieval{display:grid;grid-template-columns:1.4fr 1fr;gap:65u;align-items:center}
+.bht-slide .r9-recall{display:flex;flex-direction:column;gap:26u}
+.bht-slide .r9-recall>div{display:grid;grid-template-columns:42u 1fr;gap:20u;border-bottom:1u solid var(--rulec);padding-bottom:24u}
+.bht-slide .r9-recall span{font:700 32u/1.2 'Cinzel',Georgia,serif;color:var(--acc)}
+.bht-slide .r9-bridge{border-left:3u solid var(--acc);padding:22u 0 22u 30u}
+.bht-slide .r9-bridge h3{font-size:34u;line-height:1.3}
 .bht-slide{position:absolute!important;inset:0!important;width:auto!important;height:auto!important;padding:0!important;margin:0!important;background:#050606!important;container-type:size;overflow:hidden!important}
 .bht{position:absolute;left:50%;top:50%;width:min(100cqw,177.7778cqh);aspect-ratio:16/9;transform:translate(-50%,-50%);container-type:inline-size;overflow:hidden;text-align:left}
 .bht-in{--u:calc(100cqw/1280);position:absolute;inset:0;overflow:hidden;background:var(--bg);color:var(--fg);font-family:'Libre Baskerville',Georgia,serif;font-size:20u;line-height:1.5;letter-spacing:0;text-shadow:none}
@@ -1736,3 +1861,4 @@ const api={
 if(typeof window!=='undefined'){window.BHSlideTemplates=api;installCss();}
 if(typeof module!=='undefined'&&module.exports)module.exports=api;
 })();
+
