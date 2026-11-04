@@ -1669,6 +1669,7 @@ const CSS=`
 .bht-lg.open .bht-lg-row .nm{letter-spacing:0}
 .bht-ledger .ledger-open .bht-foot p{font-size:28u;line-height:1.3}
 
+.bht-scene-case .bht-h{max-width:none;font-size:38u}
 .bht-scase{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:30u;height:100%;min-height:0}
 .bht-scase-media{display:grid;grid-template-rows:minmax(0,1fr);gap:12u;min-height:0}
 .bht-scase-media.with-sources{grid-template-rows:minmax(0,1fr) 142u}
