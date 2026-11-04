@@ -89,6 +89,14 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Causation, with Making Connections 5.B. Who paid, what they wanted, what they got: for Portugal, Spain, and England, France and the Dutch.',
       notes: {
         minutes: 2,
+        keys: [
+          'Spine: rulers backed, voyages paid, more sailed',
+          'Objectives: role of states; economic causes and effects',
+          'Cause as mechanism: skip the middlemen',
+          'Northern crossings get equal time',
+          'Conquests and smallpox are 4.3 and 4.4',
+          'Three myths: 1453, Sagres, Magellan'
+        ],
         land: [
           'CED pp. 79 and 80. Learning Objective B: describe the role of states in the expansion of maritime exploration from 1450 to 1750. Learning Objective C: explain the economic causes and effects of maritime exploration by the various European states. The story answers both: who paid, and what the voyages were for and produced.',
           'KC-4.1.III: new state-supported transoceanic maritime exploration. III.A: Portugal\'s technology and navigation led to more travel and trade with Africa and Asia and a global trading-post empire. III.B: Spanish sponsorship of Columbus and later Atlantic and Pacific voyages dramatically increased European interest in ocean travel and trade. III.C: English, French and Dutch northern crossings, often looking for another route to Asia.',
@@ -116,6 +124,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 4,
+        keys: [
+          'Fast answers, no reteaching',
+          '4.1: trade winds never turn around',
+          'Asian goods cost Europe a lot',
+          'Set up: why pay for a risky voyage?'
+        ],
         land: [
           'No notes. Take fast answers and do not reteach.',
           'Accept: the trade winds blow from the northeast nearly all year and never turn around; compass from China, astrolabe and astronomical charts from Greek and Islamic astronomy, lateen sail from the Mediterranean; spices such as pepper, cotton cloth, silk or porcelain.',
@@ -134,6 +148,11 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Hold that question. Every state in today\'s story answers it differently.',
       notes: {
         minutes: 1,
+        keys: [
+          'Both objectives in ninth-grade words',
+          'Good prediction: a ruler and a motive',
+          'Weak prediction lists explorers'
+        ],
         land: [
           'This is both learning objectives in a ninth grader\'s words: the role of states (who paid) and the economic causes and effects (why, and what they got).',
           'A good prediction names a ruler and a motive. A weak one lists explorers.'
@@ -150,6 +169,12 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open First & 10', url: '../unit-4/first-and-10-topic-4-2-exploration-capture.html?v=response-id-fix-v1' },
       notes: {
         minutes: 12,
+        keys: [
+          'Read in class',
+          'Sort by state, not explorer',
+          'Rulers paid, or granted rights for a share',
+          'Answers reach Canvas via Gather'
+        ],
         land: [
           'Students read "Who Paid?" in class. The slides that follow retell it with evidence, so they are retrieval, not a first telling.',
           'Circulate for students who sort by state (Portugal, Spain, the northern states), not just by explorer.',
@@ -172,6 +197,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Main economic cause: every middleman’s cut',
+          'Sea route: buy at India price, sell at Europe’s',
+          'Red Sea route ran through Mamluk Egypt',
+          'Pepper price figures are in the full notes'
+        ],
         land: [
           'Learning Objective C asks for economic causes. This is the main one, stated as a mechanism: a sea route straight to India meant buying at the India price and selling at the Europe price.',
           'A historian\'s figures, if a student wants a number (M. N. Pearson, as summarized by World History Encyclopedia): a kilo of pepper cost about 1 to 2 grams of silver where it grew, 10 to 14 in Alexandria, 14 to 18 in Venice, and 20 to 30 elsewhere in Europe.',
@@ -198,6 +229,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Two ways: pay for it, or license it',
+          'License: explorer pays, king takes a share',
+          'Cabot, 1496: the king got one-fifth',
+          'Royal monopoly: the crown’s sole right to a trade',
+          'Skip "God, Glory, Gold": it explains nothing'
+        ],
         land: [
           'This is Learning Objective B: the role of states. The CED says "state-supported" and "under ... sponsorship," not "paid for by rulers alone," and the sources show both kinds.',
           'Henry VII\'s letters patent (5 March 1496) let Cabot sail "at their own proper costs and charges" and gave the king "the fifth part of the whole capital gained." Portugal did the same in 1469, leasing the Guinea trade to the merchant Fernão Gomes on condition that he explore a hundred leagues of new coast a year.',
@@ -226,6 +264,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Each return paid for the next step',
+          'Cause: caravels, charts, volta do mar',
+          'Henry paid, never sailed; no Sagres school',
+          'From the 1440s: enslaved Africans brought back',
+          'Dias 1488; da Gama to Calicut 1498',
+          'Never "sixty times the cost"'
+        ],
         land: [
           'KC-4.1.III.A: Portuguese maritime technology and navigational skill led to more travel to and trade with Africa and Asia, and to a global trading-post empire. Name the cause out loud: light caravels, charts made voyage by voyage, and the volta do mar from 4.1. Each voyage\'s charts helped the next one go farther. The rest of the line is the "led to."',
           'Prince Henry, a son of the king, paid for the West African voyages from the 1420s. He did not go on them, and the "school of Sagres" is a legend traced to writers of the 1600s and 1700s.',
@@ -245,6 +291,12 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Da Gama came for pepper, and found a market that had been trading for centuries.',
       notes: {
         minutes: 1,
+        keys: [
+          'AI scene, not evidence',
+          'Came for pepper without the middlemen',
+          'A market already centuries old',
+          'Do not count Portuguese ships'
+        ],
         land: [
           'Historical Reconstruction, AI generated, from the 4.1 deck. It sets the scene; it is not evidence.',
           'What it gets right: the big ships anchor offshore, because Calicut had no deep harbor; local ships far outnumber them; Kerala-style roofs. Some lateen-sailed ships have European-style hulls, so do not ask students to count Portuguese ships.',
@@ -266,6 +318,14 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'How the posts worked, and how Asian and African rulers answered them, is Topic 4.4.',
       notes: {
         minutes: 2,
+        keys: [
+          'CED phrase: "global trading-post empire"',
+          'Ports, not lands: control the sea trade',
+          'Elmina 1482, Goa 1510, Malacca 1511',
+          'Crown monopoly on pepper (Casa da Índia)',
+          'AI scene; its modern flag is an error',
+          'How the posts worked is 4.4'
+        ],
         land: [
           '"Global trading-post empire" is the CED\'s phrase for the effect. Use it.',
           'Goa was taken from the Bijapur Sultanate in 1510, Malacca in 1511, Hormuz in 1515. Ships in Portuguese waters were made to carry licences, the cartaz; that is how the posts worked, and it is 4.4\'s story.',
@@ -291,6 +351,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Santa Fe, April 1492: titles and shares',
+          'Cost the crown nothing up front',
+          'Funding mixed: crown, Palos, backers',
+          'Portugal refused: distance, not a flat earth',
+          'Portugal held Africa, so Spain went west'
+        ],
         land: [
           'The Capitulations of Santa Fe, signed 17 April 1492. Granada surrendered on 2 January 1492.',
           'The promise cost the crown nothing up front. That is the point: rulers paid in titles and shares as well as money.',
@@ -319,6 +386,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Three ships 1492; seventeen-plus in 1493',
+          'Little gold; it paid in news',
+          'Interest in ocean trade grew fast',
+          'Magellan died 1521; Elcano finished 1522',
+          'Reached the Caribbean, not Asia'
+        ],
         land: [
           'KC-4.1.III.B: Spanish sponsorship of Columbus and later voyages across the Atlantic and Pacific dramatically increased European interest in ocean travel and trade. The timeline shows that effect: three ships in 1492, at least seventeen in 1493, then the Pacific.',
           'Elcano brought one ship home in 1522; Magellan was killed in 1521 (myth slide). The 1492 fleet reached the Caribbean, not Asia.',
@@ -346,6 +420,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Tordesillas 1494: ambassadors, not the pope',
+          'The line put Brazil on Portugal’s side',
+          'Nobody asked the people living there',
+          'Everyone else had to look north'
+        ],
         land: [
           'Tordesillas, 7 June 1494, was negotiated by ambassadors of the two crowns (UNESCO Memory of the World). It moved a line the pope had drawn in 1493 to 370 leagues west of the Cape Verde Islands. Do not say the pope drew the Tordesillas line; the old 4.2 reading did.',
           'The line later put Brazil on Portugal\'s side: Cabral reached it in 1500 on his way to India and claimed it.',
@@ -370,6 +450,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 4,
+        keys: [
+          'Equal time with Portugal and Spain',
+          'England: Cabot, 1497, sea "swarming with fish"',
+          'France: Verrazzano 1524; Cartier, furs',
+          'Dutch: Barentsz 1590s; Hudson 1609',
+          'No route to Asia found',
+          'Not a waste: fish, furs, land paid'
+        ],
         land: [
           'KC-4.1.III.C: northern Atlantic crossings under English, French and Dutch sponsorship, often to find alternative sailing routes to Asia. Give this row the same time as Portugal and Spain; the old pages gave it the least.',
           'Henry VII gave John Cabot, a Venetian citizen born in Italy, letters patent in March 1496; Cabot reached North America in June 1497, probably Newfoundland or Cape Breton. A letter from London that December reported the sea "swarming with fish."',
@@ -389,6 +477,13 @@ window.BEHISTORICAL_TEACHING = {
       visual: { url: '../assets/images/instructional-maps/topic-4-2.svg', alt: 'Map of routes: Portugal around Africa to India, Spain west to the Caribbean, England, France and the Dutch across the North Atlantic and toward the Arctic' },
       notes: {
         minutes: 2,
+        keys: [
+          'Read by sponsor: south, west, north',
+          '1 Portugal around Africa; 2 Spain west',
+          '3 Cabot; 4 Cartier; 5 Barentsz',
+          'Key is small: name routes aloud',
+          'Magellan not drawn: say so'
+        ],
         land: [
           'Routes are schematic. Magellan\'s route is not drawn; the note at the bottom of the map describes it.',
           'Read it by sponsor: south and east for Portugal, west for Spain, north for everyone else.',
@@ -412,6 +507,11 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'The spine as a mechanism',
+          '"Paid back" includes news',
+          'Success pulled in rivals'
+        ],
         land: [
           'This is the spine as a mechanism. The last step is the twist: success did not only fund more voyages, it pulled in rivals.',
           '"Paid back" includes news. Columbus\'s first voyage brought little gold and still produced a far bigger second fleet.'
@@ -434,6 +534,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          '1453 did not close the spice road',
+          'Sagres school is a later legend',
+          'Magellan led; Elcano completed it',
+          'Real cause: middlemen’s costs, rulers wanting trade'
+        ],
         land: [
           'Row 1: A. H. Lybyer showed in 1915 that spice prices did not jump after 1453; the conquest "has been imagined to have closed the routes." The main spice route ran through Mamluk Egypt until 1517. The unit story map gives 4.2 this qualified version and no other.',
           'Row 2: the Sagres school is traced to writers such as Samuel Purchas and the Abbé Prévost and was romanticized in the 1800s. Henry fought at Ceuta in 1415 but did not go on the voyages he paid for.',
@@ -457,6 +563,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 5,
+        keys: [
+          'Show it, hide it, redraw nine cells',
+          'Row 1: role of states (objective B)',
+          'Rows 2 and 3: causes and effects (C)',
+          'Each column: one cause-to-effect chain',
+          'Northern effect: wanted Asia, got fish, furs'
+        ],
         land: [
           'This is the slide the lesson drives toward. Show it, then hide it and have students redraw the nine cells from memory.',
           'In row 1, England\'s king licensed Cabot rather than paying; the Dutch Republic had no king: Barentsz\'s voyages were backed by the States-General, Prince Maurice and the city of Amsterdam, and Hudson in 1609 by the Dutch East India Company, founded in 1602.',
@@ -476,6 +589,11 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Weak: a slogan, no state or effect',
+          'Strong: who paid, what they wanted, a connection',
+          'Students try another pair: Spain and England'
+        ],
         land: [
           'The weak claim is a slogan: three categories, no state, no mechanism, no effect.',
           'The strong claim names who paid (role of states), what they wanted (economic cause), and one connection between two states (5.B).',
@@ -492,6 +610,11 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-2-exploration.html#modules' },
       notes: {
         minutes: 7,
+        keys: [
+          'Skill 5.B: connect two developments',
+          'One state acted; another decided because of it',
+          'Join with "because" or "so"'
+        ],
         land: [
           'The Skill Builder practices the CED\'s suggested skill, 5.B Making Connections: explain how one development relates to another.',
           'Strong pairs: Portugal\'s African route and Spain\'s westward bet; Spain and Portugal\'s split at Tordesillas and the northern crossings; Columbus\'s news and the bigger 1493 fleet.'
@@ -507,6 +630,11 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-2-exploration.html#modules' },
       notes: {
         minutes: 0,
+        keys: [
+          'Optional: early finishers or diagnostic',
+          'Ruler, promise, goal',
+          'Give feedback in the room'
+        ],
         land: [
           'Checkpoint 1 is not required for 4.2. Use it for early finishers or as a quick diagnostic if the room is ahead.',
           'Give feedback in the room: on an alternating block nothing carries over.'
@@ -522,6 +650,12 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-2-exploration.html#modules' },
       notes: {
         minutes: 8,
+        keys: [
+          'One claim, two sources',
+          'Say what kind of source each is',
+          'The Calicut AI scene is not evidence',
+          'Observe → infer → name a limit'
+        ],
         land: [
           'Observation before inference: what the source shows, then what it suggests.',
           'Two of the cards are later pictures or modern maps, not eyewitness records. Students should say what kind of source each one is. The Calicut reconstruction from today\'s slides is not in the Evidence Lab and is not evidence.'
@@ -537,6 +671,13 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-2-exploration.html#modules' },
       notes: {
         minutes: 10,
+        keys: [
+          'Two voyages: one Iberian, one northern',
+          'Each: sponsor, cause, effect',
+          'Then one connection between them',
+          'Push past the goal to the effect',
+          'Revised answer goes to Canvas'
+        ],
         land: [
           'The revised answer in the box is what goes to Canvas.',
           'Checkpoint 2 asks for one Portuguese or Spanish voyage and one English, French or Dutch voyage: the state that backed it and what it gave, one economic cause and one economic effect for each, then one connection between them. That covers both learning objectives, KC-4.1.III, KC-4.1.III.C, and III.A or III.B depending on the voyage the student picks; the other Iberian Key Concept is carried by the First & 10 and the Skill Builder.',
@@ -553,6 +694,11 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Rulers backed voyages because they wanted the trade of Asia, and every voyage that paid made the next one easier to fund. Next: Columbus was looking for a route to Asia. What he started was an exchange of living things nobody planned.',
       notes: {
         minutes: 2,
+        keys: [
+          'The sentence answers both objectives',
+          'AI scene: ship name, sack labels invented',
+          'Hand off to 4.3: an exchange nobody planned'
+        ],
         land: [
           'This sentence answers both 4.2 learning objectives: the role of states and the economic causes and effects.',
           'Hand off to 4.3 in the words of the unit story map.'

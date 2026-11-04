@@ -90,6 +90,15 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Causation, with Contextualization 4.A. One problem, getting home, and the borrowed answer to it.',
       notes: {
         minutes: 2,
+        keys: [
+          'Spine: borrowed tools, new ships, learn the wind',
+          'One problem: getting home',
+          'Name each tool’s world: Classical, Islamic, Asian',
+          'Knowledge moved with people',
+          'End on new trade and travel routes',
+          'Motives and sponsors are 4.2',
+          'Two myths: Arab lateen sail, Sagres school'
+        ],
         land: [
           'CED p. 78, Learning Objective A: explain how cross-cultural interactions resulted in the diffusion of technology and facilitated changes in patterns of trade and travel from 1450 to 1750. The story answers both halves: where the tools came from, and what they changed.',
           'KC-4.1.II: knowledge from the Classical, Islamic and Asian worlds spread and helped European technology develop. KC-4.1.II.A: new tools, new ship designs and a better understanding of regional wind and current patterns made transoceanic travel and trade possible.',
@@ -116,6 +125,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 4,
+        keys: [
+          'Fast answers, no reteaching',
+          '3.4: those empires grew over land',
+          '2.3: monsoon winds reverse with seasons',
+          'Do not answer the turn yet'
+        ],
         land: [
           'No notes. Take fast answers and do not reteach.',
           'Accept: gunpowder, devshirme or mansabdars, tax systems, monumental architecture; the monsoon winds reverse with the seasons; the compass, or a tool for measuring the height of the stars. Topic 2.3 named the astrolabe; Indian Ocean pilots mostly used simpler tools such as the kamal and wooden quadrants, so accept the idea and do not dwell on the name.',
@@ -134,6 +149,11 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'And what changed when they could? Hold that question.',
       notes: {
         minutes: 2,
+        keys: [
+          'The objective in ninth-grade words',
+          'Good prediction: a tool and a consequence',
+          'Weak prediction lists explorers'
+        ],
         land: [
           'This is the learning objective in a ninth grader\'s words. Leave it up long enough for a prediction.',
           'A good prediction names a tool and a consequence. A weak one lists explorers.'
@@ -150,6 +170,12 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open First & 10', url: '../unit-4/first-and-10-topic-4-1-technological-innovations-capture.html?v=response-id-fix-v1' },
       notes: {
         minutes: 12,
+        keys: [
+          'Read in class',
+          'Mark each tool’s world of origin',
+          'Getting home was the hard part',
+          'Answers reach Canvas via Gather'
+        ],
         land: [
           'Students read "Getting Home" in class. The slides that follow retell it with pictures and evidence, so they are retrieval, not a first telling.',
           'Circulate for students who note where each tool came from (Classical, Islamic, Asian), not just its name.',
@@ -175,6 +201,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Indian Ocean: monsoon reverses on schedule',
+          'Atlantic trade winds: reliable, never reverse',
+          'Canary Current also runs south',
+          'The real problem: coming home',
+          'Never say "no reliable winds"'
+        ],
         land: [
           'KC-4.1.II.A names "regional wind and currents patterns." This slide sets up why that knowledge mattered.',
           'The Atlantic\'s trade winds are very reliable. What they do not do is reverse like the monsoon. Correct any student who says the Atlantic "had no reliable winds": the old 4.1 reading said that, and it is wrong.',
@@ -193,6 +226,11 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'AI scene, not evidence',
+          'Small caravel, lateen sails, against the wind',
+          'Let the picture pose the problem'
+        ],
         land: [
           'Historical Reconstruction, AI generated. It sets the scene; it is not evidence.',
           'What it gets right: a small caravel with two lateen sails off a desert coast, whitecaps running against it.',
@@ -214,6 +252,14 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Classical, Islamic, Asian: the three worlds the College Board names.',
       notes: {
         minutes: 3,
+        keys: [
+          'Every tool has a world of origin',
+          'Compass: China (Asian)',
+          'Astrolabe, charts: Greek and Islamic astronomy',
+          'Lateen sail: Roman Mediterranean, used across Islam',
+          'Say "astronomical charts" (CED term)',
+          'Compass route west is debated'
+        ],
         land: [
           'KC-4.1.II: knowledge, scientific learning and technology from the Classical, Islamic and Asian worlds spread, facilitating European developments. Every card names its world on purpose.',
           'Compass: Zhu Yu\'s Pingzhou Table Talks (written c. 1111 to 1117) is the earliest record of a compass used at sea; Alexander Neckam mentions it in Europe c. 1190. Historians still debate the route west, so do not teach "via Arab traders" as fact.',
@@ -239,6 +285,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'One body of knowledge, many carriers',
+          'Ptolemy, about 150 → Arabic in Baghdad',
+          'Arabic → Latin in Toledo, 1175',
+          'Zacuto: same tradition, not same book'
+        ],
         land: [
           'This is the "cross-cultural interactions" in the learning objective made visible: one body of knowledge, carried by different people at each stop.',
           'Ptolemy\'s Almagest (c. 150 CE) was translated into Arabic in Baghdad in the 800s; Gerard of Cremona translated it from Arabic into Latin in Toledo, finished 1175.',
@@ -257,6 +309,12 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Christian and Jewish translators turned Arabic books, many by Muslim scholars, into Latin.',
       notes: {
         minutes: 1,
+        keys: [
+          'AI scene, not evidence',
+          'Christian and Jewish translators',
+          'Arabic books into Latin',
+          'The Arabic writing is invented'
+        ],
         land: [
           'Historical Reconstruction, AI generated. It sets the scene; it is not evidence.',
           'What it gets right: handwritten manuscripts, not printed books (printing in Europe begins c. 1450); a flat astronomer\'s astrolabe on the table; Mudéjar arches and tilework.',
@@ -274,6 +332,13 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'The mariner\'s astrolabe: measure the noon sun, check the chart, know your latitude.',
       notes: {
         minutes: 2,
+        keys: [
+          'AI scene, not evidence',
+          'Mariner’s astrolabe: a Portuguese adaptation',
+          'Noon sun → latitude',
+          'Latitude only; no longitude at sea',
+          'Picture errors: no sighting vanes, pencil'
+        ],
         land: [
           'Historical Reconstruction, AI generated. It sets the scene; it is not evidence.',
           'What it gets right: the mariner\'s astrolabe is a heavy, open ring with spokes, hung from the thumb so it stays upright. That is the Portuguese adaptation of the flat instrument on the Toledo slide. Many early sea astrolabes were wood or bronze; da Gama\'s fleet carried a large wooden one and smaller metal ones.',
@@ -296,6 +361,13 @@ window.BEHISTORICAL_TEACHING = {
       ],
       notes: {
         minutes: 3,
+        keys: [
+          'Caravel: small, light, explores coasts',
+          'Carrack (nau): survives long voyages',
+          'Fluyt, 1595: carries goods cheaply',
+          'AI scene: they never sailed together',
+          'Modern Portuguese flags: a picture error'
+        ],
         land: [
           'These are the CED\'s three illustrative examples of ship design. They are optional, but they are the three students will meet.',
           'Caravel: typically two or three lateen-rigged masts (Britannica). Square-rigged caravels came at the end of the 1400s; the old 4.1 lecture said the 1440s caravel "combined" both, which is wrong for that date.',
@@ -320,6 +392,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Wind knowledge could not be borrowed',
+          'Learned over decades of Portuguese voyages',
+          'Volta do mar: sail away from land',
+          'Reach the westerlies, ride home',
+          'Columbus used the same wheel, 1492',
+          'Not the same as latitude sailing'
+        ],
         land: [
           'This is the third item in KC-4.1.II.A: "an improved understanding of regional wind and currents patterns." Unlike the tools, it could not be borrowed. Portuguese sailors learned it over decades of voyages in the 1400s.',
           'The currents turn the same way. The Canary Current runs south along northwest Africa all year (Britannica); that is why the coast route home fought both wind and water.',
@@ -340,6 +420,11 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'AI scene, not evidence',
+          'What is missing: land',
+          'Cross on the sail: uncertain for this date'
+        ],
         land: [
           'Historical Reconstruction, AI generated. It sets the scene; it is not evidence.',
           'The point of the picture is what is missing: land.',
@@ -361,6 +446,14 @@ window.BEHISTORICAL_TEACHING = {
       footer: 'Why they sailed, and who paid, is Topic 4.2.',
       notes: {
         minutes: 3,
+        keys: [
+          'Objective’s second half: new trade and travel',
+          'Voyages prove the tools worked',
+          'Map: 1 Dias, 2 da Gama, 3 Columbus',
+          'Date order: Dias, Columbus, da Gama',
+          'Da Gama: about 3 months out of sight of land',
+          'Avoid "first" claims'
+        ],
         land: [
           'This is the second half of the learning objective: the tools "facilitated changes in patterns of trade and travel." End here, not at the tools.',
           'One line each. The voyages are proof the tools worked. Motives, sponsors and results belong to 4.2.',
@@ -379,6 +472,13 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Da Gama\'s ships anchored among traders who had sailed these waters for centuries.',
       notes: {
         minutes: 1,
+        keys: [
+          'AI scene, not evidence',
+          'Portuguese were newcomers to a busy ocean',
+          'Ships anchor offshore: no deep harbor',
+          'Do not count Portuguese ships',
+          'What they did there is 4.4'
+        ],
         land: [
           'Historical Reconstruction, AI generated. It sets the scene; it is not evidence.',
           'What it gets right: the big ships anchor offshore, because Calicut had no deep harbor; local ships far outnumber them; no Chinese junks, because the Ming voyages had ended in 1433; Kerala-style sloping roofs. What it muddles: some of the lateen-sailed ships have European-style hulls, so do not ask students to count Portuguese ships. Da Gama arrived with three: two naus and a caravel.',
@@ -401,6 +501,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'A combination, not a European invention',
+          'Lateen sail: Roman, not Arab-invented',
+          'Zheng He’s fleets reached East Africa',
+          'Sagres school is a myth',
+          'Europe combined, built ships, learned the wind'
+        ],
         land: [
           'Row 2 corrects what the old 4.1 pages taught. Sources: Campbell, "The Lateen Sail in World History" (1995): in Mediterranean use by the 2nd century AD; Whitewright (2009): fully established by the late 5th century. Both doubt Arab invention.',
           'Row 2: sailors across the Islamic world used the lateen sail too, which is why the CED lists it under "Classical, Islamic, and Asian." The myth is that Arabs invented it and handed it to Europe.',
@@ -428,6 +535,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 6,
+        keys: [
+          'Show it, hide it, redraw five links',
+          'First box = context (4.A)',
+          'Key link: Europe’s assembly, ships, wind',
+          'Every link is needed'
+        ],
         land: [
           'This is the slide the lesson drives toward. Show it, then hide it and have students redraw the five links from memory.',
           'The first box is the context (the suggested skill, 4.A); the rest is the causal chain (the reasoning process, causation).',
@@ -446,6 +559,11 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 4,
+        keys: [
+          'Weak: no tool, origin, mechanism, effect',
+          'Strong: context, cause, mechanism, effect',
+          'Swap "technology" for a named tool and world'
+        ],
         land: [
           'The weak claim is true and scores nothing: no tool, no origin, no mechanism, no effect.',
           'The strong claim names borrowed tools (context), the ships and the wind (mechanism), and new routes (effect).',
@@ -462,6 +580,11 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-1-technological-innovations.html#modules' },
       notes: {
         minutes: 6,
+        keys: [
+          'Skill 4.A: context first',
+          'Name older networks before any voyage',
+          'Others already had the tools'
+        ],
         land: [
           'The Skill Builder practices the CED\'s suggested skill, 4.A Contextualization: identify and describe the context for a development.',
           'A strong answer names the older networks (the Indian Ocean, the Islamic world, China, the Mediterranean) before it names a European voyage.'
@@ -477,6 +600,11 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-1-technological-innovations.html#modules' },
       notes: {
         minutes: 5,
+        keys: [
+          'On their own, no coach',
+          'Every tool needs its problem',
+          'Give feedback in the room'
+        ],
         land: [
           'Independent. Watch for answers that name a tool with no problem attached.',
           'Give feedback in the room: on an alternating block nothing carries over.'
@@ -492,6 +620,11 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-1-technological-innovations.html#modules' },
       notes: {
         minutes: 8,
+        keys: [
+          'Real objects only',
+          'Never cite the AI scenes',
+          'Observe → infer → name a limit'
+        ],
         land: [
           'Observation before inference: what the object shows, then what it suggests.',
           'The Evidence Lab uses real objects only. None of the reconstructions from today\'s slides appears there, and students should not cite them as evidence.'
@@ -507,6 +640,12 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-1-technological-innovations.html#modules' },
       notes: {
         minutes: 9,
+        keys: [
+          'Two traditions, one ship, one wind pattern',
+          'Build them into a chain',
+          'End on a route, not a tool',
+          'Revised answer goes to Canvas'
+        ],
         land: [
           'The revised answer in the box is what goes to Canvas.',
           'Checkpoint 2 asks for two earlier traditions, one ship design and one wind or current pattern, built into a chain. That is KC-4.1.II plus KC-4.1.II.A.',
@@ -523,6 +662,11 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Knowledge from the Classical, Islamic and Asian worlds, new ships and the Atlantic\'s wind wheel let European ships cross oceans and come home, and new routes for trade and travel opened. Next: who paid for the voyages, and what did they want?',
       notes: {
         minutes: 2,
+        keys: [
+          'The sentence answers the objective',
+          'AI scene, not evidence',
+          'Hand off to 4.2: who paid, and why?'
+        ],
         land: [
           'This sentence answers the 4.1 learning objective: how cross-cultural interactions spread technology and changed patterns of trade and travel.',
           'Hand off to 4.2: ships could now go and come back, but every voyage cost a fortune.'
