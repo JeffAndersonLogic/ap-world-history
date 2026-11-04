@@ -114,6 +114,12 @@ The finished deck must still carry the required instructional functions defined 
 
 A future Topic 2.3+ Teaching OS should load this shared layer rather than copying those rules into a topic file.
 
+### MUST LAND keys
+
+**The teacher reads short keys mid-class, not paragraphs** (Jeff, 2026-11-04). The LAND notes had grown into full sentences, citations and paragraphs, too much to teach from. A slide's `notes.keys` is two to seven short phrases, ten words or fewer each, naming the points of the story that slide must land, drawn from that slide's own LAND notes and never adding a fact. The cockpit shows them first, under **MUST LAND**, in large type, and puts the full LAND notes in a drop-down beneath them, closed by default and kept open from slide to slide once the teacher opens it. A slide without keys shows LAND as before.
+
+Topic 4.3 is the first deck with keys. `KEYS_DECKS` in `scripts/test/teaching-os-architecture.test.js` lists the decks that carry them; for each it fails a slide with no keys or a key that has grown into a sentence, and a cockpit that does not draw keys on top with LAND in a drop-down. Add a deck to the list when its keys are written. Keys live inside `notes`, so the student generator strips them with the rest of the teacher notes.
+
 ### The Briefing
 
 **A page gets the briefing by having a `#briefingBtn` in its header, and nothing else.** The shared layer builds the drawer from the deck's own data: `meta.subtitle` (the spine), `meta.essentialQuestion`, `meta.apFocus`, `meta.endTarget`, `priorities.must/should/could`, `flow` (the run of show) and `quickLaunch`. There is no second copy of any of it to keep in step.

@@ -263,6 +263,39 @@ for (const deck of DECKS) {
   }
 }
 
+// Jeff, 2026-11-04: the LAND notes were full sentences and paragraphs, too
+// cumbersome to teach from. A deck on KEYS_DECKS gives every slide a short
+// `notes.keys` list (the MUST LAND points, a few words each) that the cockpit
+// shows on top, with the full LAND notes in a drop-down under it. Checked
+// because a key that grows back into a sentence, or a slide that loses its
+// keys, still renders and looks fine.
+console.log('\n  MUST LAND keys\n');
+const KEYS_DECKS = new Set(['4.3']);
+const KEY_MAX_WORDS = 10;
+function keyProblems(slides) {
+  const out = [];
+  for (const s of slides) {
+    const k = s.notes && s.notes.keys;
+    if (!Array.isArray(k) || k.length < 2 || k.length > 7) { out.push(`${s.phase}: needs 2 to 7 keys`); continue; }
+    for (const x of k) if (typeof x !== 'string' || !x.trim() || x.trim().split(/\s+/).length > KEY_MAX_WORDS) out.push(`${s.phase}: "${String(x).slice(0, 40)}" is not a short key`);
+  }
+  return out;
+}
+const keyPage = src => /n\.keys/.test(src) && /MUST LAND/.test(src) && /<details class="cue \$\{c\[2\]\}"/.test(src) && /land-detail/.test(src);
+check('control: a slide with no keys is refused', keyProblems([{ phase: 'x', notes: { land: ['a'] } }]).length === 1);
+check('control: a key that is a sentence is refused', keyProblems([{ phase: 'x', notes: { keys: ['Short', 'This key has grown back into a full sentence of eleven words or more'] } }]).length === 1);
+check('control: short keys pass', keyProblems([{ phase: 'x', notes: { keys: ['Cause first', 'One effect each side'] } }]).length === 0);
+check('control: a page that shows LAND without keys is refused', !keyPage("if(n.land)cues.push(['LAND',x])"));
+for (const deck of DECKS.filter(d => KEYS_DECKS.has(d.key))) {
+  const sandbox = { window: {}, console, encodeURIComponent, decodeURIComponent };
+  vm.createContext(sandbox);
+  for (const rel of deck.sources) vm.runInContext(read(rel), sandbox, { filename: rel });
+  const problems = keyProblems(sandbox.window.BEHISTORICAL_TEACHING.slides);
+  check(`${deck.key} every slide has short MUST LAND keys`, problems.length === 0, problems.slice(0, 3).join('; ') || `${sandbox.window.BEHISTORICAL_TEACHING.slides.length} slides`);
+  const page = `teacher/topic-${deck.key.replace('.', '-')}-story-os.html`;
+  check(`${deck.key} cockpit shows keys on top and LAND in a drop-down`, exists(page) && keyPage(read(page)));
+}
+
 console.log('\n  Authoring process discovery\n');
 const authoringPath = 'docs/PRESENTATION-AUTHORING.md';
 const architecturePath = 'docs/TEACHING-OS.md';

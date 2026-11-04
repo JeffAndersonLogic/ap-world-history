@@ -309,7 +309,8 @@ The teacher source carries:
 - projected slide content
 - pacing and run-of-show information
 - Teacher Preflight
-- LAND
+- MUST LAND keys (`notes.keys`): two to seven phrases per slide, a few words each, the points of the story that slide must land
+- LAND, the full notes behind the keys (sources, numbers, cautions)
 - STORY
 - ASK
 - LISTEN FOR

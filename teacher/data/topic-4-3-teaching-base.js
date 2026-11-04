@@ -91,6 +91,14 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Causation, with Claims and Evidence in Sources 3.B. What crossed, how it crossed, and what it did on each side of the ocean.',
       notes: {
         minutes: 2,
+        keys: [
+          'Spine: ships carried more than anyone meant',
+          'Causes, plus effects on BOTH hemispheres',
+          'CED word: "unintentional" (germs by accident)',
+          'Deaths: two reasons, never genetics',
+          'Save slavery, silver, casta for later topics',
+          'Three myths to correct'
+        ],
         land: [
           'CED pp. 81 and 82. Learning Objective D: explain the causes of the Columbian Exchange and its effects on the Eastern and Western Hemispheres. The story answers both halves: why things crossed, and what they did at each end.',
           'KC-4.1.V: new connections between the hemispheres resulted in the exchange of plants, animals and diseases. V.A: the unintentional transfer of disease vectors (mosquitoes, rats) and of diseases endemic in the Eastern Hemisphere (smallpox, measles, malaria), with catastrophic effects in many areas. V.B: American foods became staples in Europe, Asia and Africa; cash crops were grown on plantations with coerced labor and exported mostly to Europe and the Middle East. V.C: Afro-Eurasian fruit trees, grains, sugar and animals brought by Europeans; other foods brought by enslaved Africans. V.D: Afro-Eurasian populations benefited nutritionally.',
@@ -118,6 +126,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 4,
+        keys: [
+          'Fast answers, no reteaching',
+          'Columbus wanted a route to Asia',
+          '2.6: routes carried crops and plague',
+          'Bridge: now ships join both halves'
+        ],
         land: [
           'No notes. Take fast answers and do not reteach.',
           'Accept: a route to Asia and its trade; because his news of new lands made the monarchs and investors want more; crops (bananas, rice, citrus) or the plague (2.6).',
@@ -136,6 +150,11 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'Hold that question. Some of what crossed was chosen. Some of it was not.',
       notes: {
         minutes: 1,
+        keys: [
+          'Causes, and effects on each side',
+          'Predict: what crossed, what it did',
+          '"They traded stuff" is too weak'
+        ],
         land: [
           'This is Learning Objective D in a ninth grader\'s words: the causes (what the ships carried, and why) and the effects on both hemispheres.',
           'A good prediction names something that crossed and an effect. A weak one says "they traded stuff."'
@@ -152,6 +171,12 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open First & 10', url: '../unit-4/first-and-10-topic-4-3-columbian-exchange-capture.html?v=response-id-fix-v1' },
       notes: {
         minutes: 12,
+        keys: [
+          'Read in class, 12 minutes',
+          'Track: how it crossed, what it did',
+          'Q2: evidence from the Nahua account',
+          'Answers reach Canvas via Gather'
+        ],
         land: [
           'Students read "What the Ships Carried" in class. The slides that follow retell it with evidence, so they are retrieval, not a first telling.',
           'Circulate for students who sort what crossed into on purpose, by accident and by force.',
@@ -176,6 +201,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Ocean kept the halves apart ~11,000 years',
+          'Each side had what the other lacked',
+          'No horses, cattle or pigs in the Americas',
+          'Disease row matters most',
+          'Why: crowded towns beside farm animals'
+        ],
         land: [
           'The Bering land bridge flooded about eleven thousand years ago (Jakobsson et al., 2017; the NPS says about ten thousand). After that the hemispheres developed apart. Norse sailors reached Newfoundland around 1000, but no lasting exchange followed.',
           'Horses had lived in the Americas and died out there at least ten thousand years ago; the Spanish brought them back.',
@@ -200,6 +232,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Cause: ships crossed AND came back',
+          'Colonies kept the connection open',
+          'On purpose: animals, wheat, sugarcane',
+          'By accident: germs, rats, mosquitoes',
+          'By force: enslaved Africans, rice, okra',
+          'Vector = animal that carries disease'
+        ],
         land: [
           'This is the "causes" half of Learning Objective D, stated as a mechanism: a lasting connection, kept open by colonization, so everything aboard crossed too.',
           'On purpose: Columbus\'s second voyage, 1493, carried horses, cattle, eight pigs bought in the Canary Islands, wheat seed, and sugarcane from the Canaries (Crosby, The Columbian Exchange, 1972, for the animals and wheat; Nunn and Qian 2010 for the sugarcane from the Canaries; Las Casas on the pigs). From the 1560s Spanish ships also crossed the Pacific between Mexico and Manila; that was one road the sweet potato took to China (Ping-ti Ho records it in Yunnan in the 1560s and 1570s, probably overland). Name the route only: what those ships carried west, silver, is Topic 4.5.',
@@ -227,6 +267,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Codex painted ~1577, from memory',
+          'June 1520: Spaniards driven out',
+          'Smallpox: 60 days, many starved',
+          'Ruler Cuitláhuac dies',
+          'Epidemic came BEFORE the 1521 siege'
+        ],
         land: [
           'The picture is from Book 12 of the Florentine Codex, painted by Nahua artists and completed about 1577, more than fifty years after the epidemic. A Nahua healer (ticitl) speaks with a sick man; others lie covered in pustules. It is a record made later from memory, not an eyewitness sketch.',
           'The text is from the same chapter (Book 12, ch. 29), in James Lockhart\'s translation: the sickness began in Tepeilhuitl, which Sahagún says is "at the end of September"; it "lasted a full sixty days"; "many just starved to death; starvation reigned, and no one took care of others any longer"; and "the Mexica warriors were greatly weakened by it."',
@@ -254,6 +301,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Reason 1: nobody had had it',
+          'Everyone sick at once, society stops',
+          'Reason 2: war, forced labor, hunger',
+          'Both reasons needed',
+          'Never "born weak"'
+        ],
         land: [
           'Reason 1: immunity to smallpox or measles comes from surviving it, usually as a child. In Afro-Eurasia most adults had; in the Americas nobody had, so the disease struck every age at once and the society stopped working. That is what the Codex describes.',
           'Reason 2: David S. Jones, "Virgin Soils Revisited" (William and Mary Quarterly, 2003): lack of prior exposure "might have left them vulnerable," but "the fates of individual populations depended on contingent factors of their physical, economic, social, and political environments," and the epidemics may have been driven by "the same forces of poverty, social stress, and environmental vulnerability that cause epidemics in all other times and places." Jones notes that Crosby himself stressed lack of childhood exposure, malnutrition, and "the social chaos generated by European colonization."',
@@ -280,6 +334,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'Central Mexico: lost 2/3 to 9/10',
+          'Estimate, rebuilt from tribute records',
+          'Historians argue size, not catastrophe',
+          'Not disease alone',
+          'Never "largest in history"'
+        ],
         land: [
           'Robert McCaa\'s table of published estimates for Mexico, 1519 to 1595, runs from Rosenblat\'s 22 percent decline to Cook and Borah\'s 78 to 95 percent; most estimates fall between about two-thirds and nine-tenths. Cook and Borah\'s tribute-based series gives about 6.3 million in 1548 and about 1.1 million in 1605. The deck once used Nunn and Qian\'s "15 million to 1.5 million", which carries no citation in their article and matches no published series; do not use it.',
           'For the whole Americas: Koch et al., Quaternary Science Reviews (2019), from 119 regional estimates, put the 1492 population at about 60 million and the loss over the next century at about 90 percent. Other historians give lower totals. Say "historians argue," and give a range if pressed.',
@@ -300,6 +361,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Model skill 3.B: claim, then evidence',
+          'Claim: cattle multiplied enormously',
+          'Evidence: herds "by thousands"',
+          'Evidence: ~100,000 hides, one fleet',
+          'Counts hides, not cattle: still strong'
+        ],
         land: [
           'Acosta, a Spanish Jesuit who had lived in Peru and Mexico, Book 4, chapter 33, in the English translation of 1604 (Hakluyt Society edition, 1880, p. 271), spelling modernized. New Spain is Spanish Mexico.',
           'This is the topic\'s suggested skill, 3.B: identify the evidence a source uses to support an argument. Claim: Spanish cattle have multiplied enormously. Evidence: a description (herds "by thousands") and a number from a fleet record (35,444 plus 64,350 is 99,794 hides, almost a hundred thousand).',
@@ -325,6 +393,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 1,
+        keys: [
+          'Not every effect was a disaster',
+          'Spain brought horses back, 1493',
+          'Plains peoples chose the horse',
+          'Comanche: bison, trade, power'
+        ],
         land: [
           'Not every effect was a disaster. Plains peoples adopted the horse and built new ways of life with it: an Indigenous choice, not something done to them.',
           'Spain founded its colony of New Mexico in 1598. Apaches and others built the first horse cultures of the Plains by the 1650s; the Comanche took up the horse in the late 1600s, moved onto the southern Plains in the early 1700s and dominated them by the mid-1700s (Hämäläinen, The Comanche Empire, 2008, as summarized by the NPS). A 2023 Science study dates Indigenous horse use in the West to the early 1600s, earlier than older accounts.',
@@ -349,6 +423,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'By force: enslaved Africans',
+          'African rice and okra crossed too',
+          'Grown in their own garden plots',
+          'Entered cooking across the Americas',
+          'Skip the "seeds in hair" story',
+          'Slave trade itself is 4.4'
+        ],
         land: [
           'KC-4.1.V.C\'s second half: "other foods were brought by African enslaved persons." The CED\'s examples are okra and rice.',
           'Okra is recorded in Brazil by 1658 and in Suriname by 1686. African rice (Oryza glaberrima) was carried during the slave trade and grown by enslaved Africans; Saramaccan Maroons in Suriname still grow it (van Andel, Economic Botany, 2010).',
@@ -376,6 +458,14 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Sugarcane crossed in 1493',
+          'Cash crop grown on plantations',
+          'Coerced labor: enslaved Africans',
+          'Shipped mostly to Europe',
+          'Tobacco: same pattern',
+          'Labor system details are 4.4'
+        ],
         land: [
           'KC-4.1.V.B\'s second sentence, which no surface of the old 4.3 lesson taught: "Cash crops were grown primarily on plantations with coerced labor and were exported mostly to Europe and the Middle East."',
           'Frans Post went to Dutch-ruled northeastern Brazil in 1637 with its governor, Johan Maurits, and stayed several years (sources give 1642 to 1644 for his return). He painted Brazilian scenes like this one for European buyers for decades after he went home. The gallery titles it Brazilian Landscape and describes the building on the right as the furnace house, where enslaved workers feed the wood-fired boilers that turn cane juice into sugar. It is a planter\'s-eye view. The slide shows a detail cropped from the right side of the painting; the whole painting is in the Evidence Lab. The gallery calls the large building on the hill "an unidentified building": the owner\'s house is a likely reading, not a label.',
@@ -406,6 +496,13 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'American foods became staples in Afro-Eurasia',
+          'England 1597: maize as "Turkie Corne"',
+          'Taiwan 1740s: "foreign tuber," famine help',
+          'Names show: new, from somewhere else',
+          'Cassava to Central Africa'
+        ],
         land: [
           'KC-4.1.V.B\'s first sentence: "American foods became staple crops in various parts of Europe, Asia, and Africa."',
           'Left: John Gerard\'s Herball (London, 1597), page 75, pictures maize as "Corne of Asia," "Turkie Corne" and "Turkie Wheate." Gerard wrote that it was brought into Spain "out of Asia which is in the Turkes Dominions, as also out of America": he was not sure. Maize came from the Americas. He also wrote that it "doth nourish far lesse than either Wheate, Rie, Barly or Otes," a European doubt about the crop.',
@@ -432,6 +529,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          'Grew where old crops struggled',
+          '"Diversity" = more KINDS of food',
+          'A fallback when harvests failed',
+          'Helped populations grow (helped, not caused)'
+        ],
         land: [
           'KC-4.1.V.D: "Populations in Afro-Eurasia benefitted nutritionally from the increased diversity of American food crops." Diversity is the CED\'s word: more kinds of food, not only more food.',
           'Crosby, quoted in Nunn and Qian 2010: American crops "make different demands of soils, weather and cultivation" and let farmers "produce food from soils that prior to 1492, were rated as useless."',
@@ -450,6 +553,12 @@ window.BEHISTORICAL_TEACHING = {
       visual: { url: '../assets/images/instructional-maps/topic-4-3.svg', alt: 'Map with four arrows: animals, crops and germs west from Europe to the Caribbean; enslaved Africans west from West Africa to Brazil; maize and potatoes east to Europe; cassava from Brazil to Central Africa' },
       notes: {
         minutes: 1,
+        keys: [
+          'Arrows = directions, not voyages',
+          'Arrows 1 and 2 go west',
+          'Arrows 3 and 4 go east',
+          'Arrow 1 carried the germs'
+        ],
         land: [
           'Arrows show the direction things moved, not single voyages.',
           'Arrows 1 and 2 go west; 3 and 4 go east. The black dots are Tenochtitlan, Santo Domingo, Ireland, the mouth of the Congo and Fujian.',
@@ -472,6 +581,11 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 3,
+        keys: [
+          'Myth 1: "born weak" → exposure plus colonization',
+          'Myth 2: disease caused slavery → Madeira first',
+          'Myth 3: equal → catastrophe west, nutrition east'
+        ],
         land: [
           'Row 1: Jones (2003) argues that the genetic reading of "no immunity" is unsupported and risks "supporting racial theories." The old 4.3 pages said "zero immunity" and "no evolved defenses."',
           'Row 2: Madeira grew sugar with enslaved workers, including Canary Islanders and Africans, from the mid-1400s; São Tomé, settled by Portugal from the 1480s, followed. Disease emptied land of workers; people decided who would be enslaved. The unit story map allows this chain only in this qualified form, and 4.4 owns the labor systems.',
@@ -495,6 +609,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 5,
+        keys: [
+          'Show it, hide it, redraw from memory',
+          'Columns = the two hemispheres',
+          'Rows 1 and 2 = causes; row 3 = effects',
+          'Spine cell: west, by accident'
+        ],
         land: [
           'This is the slide the lesson drives toward. Show it, then hide it and have students redraw the six cells from memory.',
           'The two columns are the two hemispheres the learning objective names. Rows 1 and 2 are the causes (what crossed, and how); row 3 is the effects.',
@@ -513,6 +633,12 @@ window.BEHISTORICAL_TEACHING = {
       },
       notes: {
         minutes: 2,
+        keys: [
+          '"Trade" implies both sides chose it',
+          'Strong = cause plus effect each side',
+          'Name the example and the people',
+          'Students write their own pair'
+        ],
         land: [
           'The weak claim calls it "a trade," as if both sides chose it, and gives no cause and no effect.',
           'The strong claim names the cause, one thing that crossed by accident and one on purpose, and one effect in each hemisphere with the people it affected: the shape Checkpoint 2 asks for.',
@@ -529,6 +655,11 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-3-columbian-exchange.html#modules' },
       notes: {
         minutes: 7,
+        keys: [
+          'Skill 3.B: find claim and evidence',
+          'Modeled on Acosta, practiced on the Qing note',
+          'Evidence must come from the source'
+        ],
         land: [
           'The Skill Builder practices the CED\'s suggested skill, 3.B: identify the evidence used in a source to support an argument.',
           'It models Acosta (the slide students just saw), then gives the Qing album\'s note on sweet potatoes and asks for the claim, two pieces of evidence, and how one supports the claim. Its claim: the sweet potato is a real help in bad harvest years. Its evidence: it can be eaten raw, cooked or as flour; it is planted very widely; settlers and Indigenous people rely on it.',
@@ -545,6 +676,11 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-3-columbian-exchange.html#modules' },
       notes: {
         minutes: 0,
+        keys: [
+          'Optional: early finishers or diagnostic',
+          'Disease, vector, both reasons',
+          'Give feedback in the room'
+        ],
         land: [
           'Checkpoint 1 is not required for 4.3. Use it for early finishers or as a quick diagnostic if the room is ahead.',
           'It asks for a disease, a disease vector, and the two reasons. Give feedback in the room: on an alternating block nothing carries over.'
@@ -560,6 +696,11 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-3-columbian-exchange.html#modules' },
       notes: {
         minutes: 8,
+        keys: [
+          'One claim, two sources, one each way',
+          'Five real historical objects',
+          'Observe → infer → name a limit'
+        ],
         land: [
           'Five real objects: the Codex smallpox page, Post\'s sugar plantation, Guamán Poma\'s July harvest (1615), Gerard\'s "Turkie Corne" (1597) and the Qing sweet potato page (1740s).',
           'Observation before inference: what the source shows, then what it suggests, then what it cannot tell you (a herbal shows a plant, not who ate it; Post painted for European buyers).',
@@ -576,6 +717,13 @@ window.BEHISTORICAL_TEACHING = {
       action: { label: 'Open Student Lesson', url: '../unit-4/lesson-4-3-columbian-exchange.html#modules' },
       notes: {
         minutes: 10,
+        keys: [
+          'Cause first',
+          'One on purpose, one by accident',
+          'One effect each hemisphere, with people',
+          'Revised answer goes to Canvas',
+          'Unfinished = homework'
+        ],
         land: [
           'The revised answer in the box is what goes to Canvas.',
           'Checkpoint 2 asks for the cause, one thing that crossed on purpose and one by accident, one effect in the Americas (an Afro-Eurasian animal or crop, or rice or okra) and one in Afro-Eurasia (an American crop), each with the people affected. That is Learning Objective D, KC-4.1.V, and V.B, V.C or V.D depending on the examples a student picks. V.A is Checkpoint 1\'s and the First & 10\'s.',
@@ -592,6 +740,11 @@ window.BEHISTORICAL_TEACHING = {
       subtitle: 'What they carried remade populations on both sides of the ocean. Next: disease emptied the land of workers, and the new crops needed them. Who would do the work, and who would rule?',
       notes: {
         minutes: 2,
+        keys: [
+          'This sentence answers the objective',
+          'Remade populations on both sides',
+          'Hand off to 4.4: who does the work?'
+        ],
         land: [
           'This sentence answers Learning Objective D: the causes of the exchange and its effects on both hemispheres.',
           'Hand off to 4.4 in the words of the unit story map.'

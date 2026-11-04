@@ -23,6 +23,8 @@ const LOCAL='../assets/images/topics/4-3/';
 const ai=(name,alt,extra)=>Object.assign({ai:true,url:LOCAL+encodeURIComponent(name),alt:alt},extra||{});
 const find=phase=>T.slides.find(s=>s.phase===phase);
 const note=(s,text)=>{if(s&&s.notes)s.notes.land=(s.notes.land||[]).concat([text]);};
+// A short MUST LAND key to sit beside each picture note, so the teacher sees it at a glance.
+const key=(s,text)=>{if(s&&s.notes)s.notes.keys=(s.notes.keys||[]).concat([text]);};
 
 const question=find('question');
 if(question){
@@ -33,6 +35,7 @@ if(question){
     place:'top',
     line:'What caused the exchange, and what did it change on each side of the ocean?'
   };
+  key(question,'AI scene: sets the stage, not evidence');
   note(question,'This is a reconstruction evoking the second voyage of 1493, not a record of a particular landing. Ships, livestock and cargo introduce the chosen and unchosen transfers. Do not read the invented markings on crates as historical text.');
 }
 
@@ -46,6 +49,7 @@ if(horses){
     caption:'Great Plains · early 1700s',
     steps:stops.map((x,i)=>({label:x.date,text:'**'+x.place+'**: '+x.text,key:i===3}))
   };
+  key(horses,'AI scene: not a documented person');
   note(horses,'The scene illustrates Indigenous adoption of horses, not a documented Comanche individual or a verified costume. Read the route beside it as the historical explanation; the image itself cannot establish dates or tribal identity.');
 }
 
@@ -60,6 +64,7 @@ if(sugar){
   ];
   delete sugar.template.visual;
   delete sugar.template.caption;
+  key(sugar,'Top picture AI; Post is the real source');
   note(sugar,'The upper picture reconstructs the plantation mechanism; it is not evidence of a specific mill or its machinery. The lower image is Post\'s historical painting. Ask what the real source shows, and what a reconstruction merely imagines. The question about the workers and the building on the hill refers to Post, not the generated scene.');
 }
 
@@ -80,6 +85,7 @@ if(nutrition){
   nutrition.template.steps[1].text='So farmers grow **more food and more kinds of food**.';
   nutrition.template.steps[2].text='That gives families something to eat when an older harvest fails.';
   nutrition.template.steps[3].text='Better nutrition helps **more people survive**, alongside other causes.';
+  key(nutrition,'AI scene: not proof of the 1594 famine');
   note(nutrition,'The harvest is a reconstruction of sweet-potato farming, not proof of the 1594 famine or an exact place. The preceding Gerard and Qing sources supply historical evidence; use this picture to connect the crop to the people it fed. Maize, potatoes, cassava and sweet potatoes remain named in the preceding source discussion and the retelling slide.');
 }
 
@@ -92,6 +98,7 @@ if(close){
     place:'top',
     line:'The ships carried more than anyone meant them to.'
   };
+  key(close,'AI scene: sets the landing, not evidence');
   note(close,'This reconstruction compresses years of change into one scene. It sets the landing, not evidence. Find one thing that crossed on purpose and one by accident. The picture stays inside the slide boundary; the library supplies the single reconstruction label. Hand off aloud: Who would do the work, and who would rule? Topic 4.4.');
 }
 
